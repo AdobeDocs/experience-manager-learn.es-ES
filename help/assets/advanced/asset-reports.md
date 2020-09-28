@@ -1,0 +1,65 @@
+---
+title: Uso de informes en AEM Assets
+description: 'AEM Assets proporciona un entorno de sistema de informes de nivel empresarial que se amplía para repositorios de gran tamaño a través de una experiencia intuitiva del usuario. '
+feature: reports
+topics: authoring, operations, performance, metadata
+audience: all
+doc-type: feature video
+activity: use
+version: 6.3, 6.4, 6.5
+kt: 648
+translation-type: tm+mt
+source-git-commit: 3b5dd583a458393a41dbce1d8eeb0095a22db734
+workflow-type: tm+mt
+source-wordcount: '94'
+ht-degree: 2%
+
+---
+
+
+# Uso de informes en AEM Assets{#using-reports-in-aem-assets}
+
+AEM Assets proporciona un entorno de sistema de informes de nivel empresarial que se amplía para repositorios de gran tamaño a través de una experiencia intuitiva del usuario.
+
+>[!VIDEO](https://video.tv.adobe.com/v/22140/?quality=12&learn=on)
+
+## Fórmulas de Microsoft Excel {#excel-formulas}
+
+En el vídeo se utilizan las siguientes fórmulas para generar el gráfico Recursos por tamaño en Microsoft Excel.
+
+### Normalización del tamaño del recurso a bytes {#asset-size-normalization-to-bytes}
+
+```
+=IF(RIGHT(D2,2)="KB",
+      LEFT(D2,(LEN(D2)-2))*1024,
+  IF(RIGHT(D2,2)="MB",
+      LEFT(D2,(LEN(D2)-2))*1024*1024,
+  IF(RIGHT(D2,2)="GB",
+      LEFT(D2,(LEN(D2)-2))*1024*1024*1024,
+  IF(RIGHT(D2,2)="TB",
+      LEFT(D2,(LEN(D2)-2))*1024*1024*1024*1024, 0))))
+```
+
+### Recuento de recursos por tamaño {#asset-count-by-size}
+
+#### Menos de 200 KB {#less-than-kb}
+
+```
+=COUNTIFS(E2:E1000,"< 200000")
+```
+
+#### 200 KB a 500 KB {#kb-to-kb}
+
+```
+=COUNTIFS(E2:E1000,">= 200000", E2:E1000,"<= 500000")
+```
+
+#### Buenos de más de 500 KB {#greater-than-kb}
+
+```
+=COUNTIFS(E2:E1000,"> 500000")
+```
+
+## Recursos adicionales{#additional-resources}
+
+Descargar [todos los recursos del archivo de Excel con gráfico](./assets/asset-reports/all-assets.xlsx)
