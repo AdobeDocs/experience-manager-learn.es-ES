@@ -11,7 +11,7 @@ doc-type: article
 activity: implement
 version: 6.4,6.5
 translation-type: tm+mt
-source-git-commit: e99779b5d42bb9a3b258e2bbe815defde9d40bf7
+source-git-commit: ca4a8f02ea9ec5db15dbe6f322731748da90be6b
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%
@@ -61,7 +61,7 @@ El paquete de muestra utiliza el alias &quot;ares&quot; para certificar los docu
    **DevelopingWithServiceUser.core:getformsresourceolver=fd-service** como se muestra en la captura de pantalla siguiente
    ![User-Mapper](assets/user-mapper-service.PNG)
 * [Importar formulario adaptable de ejemplo](assets/certify-pdf-af.zip)
-* [Importar biblioteca de cliente y envío personalizado](assets/certify-document-assets.zip)
+* [Importar e instalar el envío personalizado](assets/custom-submit-certify.zip)
 * [Abrir el formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/certifypdf/jcr:content?wcmmode=disabled)
 * Cargar documento PDF que necesita certificación
    **opcional** : especifique el campo de firma que desea utilizar para certificar el documento
