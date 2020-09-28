@@ -1,0 +1,147 @@
+---
+title: Personalizar notificación de asignación de Tarea
+description: Incluir datos de formulario en los mensajes de correo electrónico de notificación de tarea de asignación
+sub-product: formularios
+feature: workflow
+topics: integrations
+audience: developer
+doc-type: article
+activity: setup
+version: 6.4,6.5
+kt: 6279
+thumbnail: KT-6279.jpg
+translation-type: tm+mt
+source-git-commit: c7ae9a51800bb96de24ad577863989053d53da6b
+workflow-type: tm+mt
+source-wordcount: '446'
+ht-degree: 0%
+
+---
+
+
+# Personalizar notificación de asignación de Tarea
+
+El componente Asignar Tarea se utiliza para asignar tareas a los participantes del flujo de trabajo. Cuando se asigna una tarea a un usuario o grupo, se envía una notificación por correo electrónico a los usuarios o miembros del grupo definidos.
+Esta notificación por correo electrónico generalmente contendrá datos dinámicos relacionados con la tarea. Estos datos dinámicos se recuperan con las propiedades [de](https://docs.adobe.com/content/help/en/experience-manager-65/forms/publish-process-aem-forms/use-metadata-in-email-notifications.html#using-system-generated-metadata-in-an-email-notification)metadatos generadas por el sistema.
+Para incluir valores de los datos de formulario enviados en la notificación por correo electrónico, es necesario crear una propiedad de metadatos personalizada y, a continuación, utilizar estas propiedades de metadatos personalizados en la plantilla de correo electrónico
+
+
+
+## Creación de una propiedad de metadatos personalizada
+
+El método recomendado es crear un componente OSGI que implemente el método getUserMetadata del [WorkitemUserMetadataService](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/workspace/service/external/WorkitemUserMetadataService.html#getUserMetadataMap--)
+
+El siguiente código crea 4 propiedades de metadatos (_firstName_,_lastName_,_reason_ e _amountRequested_) y establece su valor a partir de los datos enviados. Por ejemplo, el valor de la propiedad de metadatos _firstName_ se establece en el valor del elemento llamado firstName de los datos enviados. El código siguiente supone que los datos enviados del formulario adaptable están en formato xml. Forms adaptable basado en el esquema JSON o el modelo de datos de formulario genera datos en formato JSON.
+
+
+```java
+package com.aemforms.workitemuserservice.core;
+
+import java.io.InputStream;
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.jcr.Session;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.xpath.XPath;
+
+import org.osgi.framework.Constants;
+import org.osgi.service.component.annotations.Component;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.w3c.dom.*;
+
+
+import com.adobe.fd.workspace.service.external.WorkitemUserMetadataService;
+import com.adobe.granite.workflow.WorkflowSession;
+import com.adobe.granite.workflow.exec.WorkItem;
+import com.adobe.granite.workflow.metadata.MetaDataMap;
+@Component(property={Constants.SERVICE_DESCRIPTION+"=A sample implementation of a user metadata service.",
+Constants.SERVICE_VENDOR+"=Adobe Systems",
+"process.label"+"=Sample Custom Metadata Service"})
+
+
+public class WorkItemUserServiceImpl implements WorkitemUserMetadataService {
+private static final Logger log = LoggerFactory.getLogger(WorkItemUserServiceImpl.class);
+
+@Override
+public Map<String, String> getUserMetadata(WorkItem workItem, WorkflowSession workflowSession,MetaDataMap metadataMap)
+{
+HashMap<String, String> customMetadataMap = new HashMap<String, String>();
+String payloadPath = workItem.getWorkflowData().getPayload().toString();
+String dataFilePath = payloadPath + "/Data.xml/jcr:content";
+Session session = workflowSession.adaptTo(Session.class);
+DocumentBuilderFactory factory = null;
+DocumentBuilder builder = null;
+Document xmlDocument = null;
+javax.jcr.Node xmlDataNode = null;
+try
+{
+    xmlDataNode = session.getNode(dataFilePath);
+    InputStream xmlDataStream = xmlDataNode.getProperty("jcr:data").getBinary().getStream();
+    XPath xPath = javax.xml.xpath.XPathFactory.newInstance().newXPath();
+    factory = DocumentBuilderFactory.newInstance();
+    builder = factory.newDocumentBuilder();
+    xmlDocument = builder.parse(xmlDataStream);
+    Node firstNameNode = (org.w3c.dom.Node) xPath.compile("afData/afUnboundData/data/firstName")
+            .evaluate(xmlDocument, javax.xml.xpath.XPathConstants.NODE);
+    log.debug("The value of first name element  is " + firstNameNode.getTextContent());
+    Node lastNameNode = (org.w3c.dom.Node) xPath.compile("afData/afUnboundData/data/lastName")
+            .evaluate(xmlDocument, javax.xml.xpath.XPathConstants.NODE);
+    Node amountRequested = (org.w3c.dom.Node) xPath
+            .compile("afData/afUnboundData/data/amountRequested")
+            .evaluate(xmlDocument, javax.xml.xpath.XPathConstants.NODE);
+    Node reason = (org.w3c.dom.Node) xPath.compile("afData/afUnboundData/data/reason")
+            .evaluate(xmlDocument, javax.xml.xpath.XPathConstants.NODE);
+    customMetadataMap.put("firstName", firstNameNode.getTextContent());
+    customMetadataMap.put("lastName", lastNameNode.getTextContent());
+    customMetadataMap.put("amountRequested", amountRequested.getTextContent());
+    customMetadataMap.put("reason", reason.getTextContent());
+    log.debug("Created  " + customMetadataMap.size() + " metadata  properties");
+
+}
+catch (Exception e)
+{
+    log.debug(e.getMessage());
+}
+return customMetadataMap;
+}
+
+}
+```
+
+## Utilizar las propiedades de metadatos personalizadas en la plantilla de correo electrónico de notificación de tarea
+
+En la plantilla de correo electrónico puede incluir la propiedad metadata utilizando la siguiente sintaxis donde amountRequested es la propiedad metadata `${amountRequested}`
+
+## Configurar Asignar Tarea para utilizar la propiedad de metadatos personalizada
+
+Una vez que el componente OSGi esté integrado e implementado en AEM servidor, configure el componente Asignar Tarea como se muestra a continuación para utilizar las propiedades de metadatos personalizadas.
+
+
+![Notificación de tarea](assets/task-notification.PNG)
+
+## Habilitar el uso de propiedades de metadatos personalizadas
+
+![Propiedades de metadatos personalizados](assets/custom-meta-data-properties.PNG)
+
+## Para probar esto en el servidor
+
+* [Configurar el servicio de correo CQ Day](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)
+* Asociación de un id. de correo electrónico válido con un usuario [administrador](http://localhost:4502/security/users.html)
+* Descargar e instalar la plantilla [de](assets/workflow-and-task-notification-template.zip) flujo de trabajo y notificación mediante [el administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
+* Descargue [Formulario](assets/request-travel-authorization.zip) adaptable e impórtelos en AEM desde la IU de [formularios y documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
+* Implementación y inicio del paquete [personalizado](assets/work-items-user-service-bundle.jar) mediante la consola [web](http://localhost:4502/system/console/bundles)
+* [Previsualización y envío del formulario](http://localhost:4502/content/dam/formsanddocuments/requestfortravelauhtorization/jcr:content?wcmmode=disabled)
+
+Al enviar el formulario, la notificación de asignación de tarea se envía al ID de correo electrónico asociado al usuario administrador. La siguiente captura de pantalla muestra la notificación de asignación de tareas de muestra
+
+![Notificación](assets/task-nitification-email.png)
+
+>[!NOTE]
+>La plantilla de correo electrónico de la notificación de asignación de tarea debe tener el siguiente formato.
+>
+> asunto=Tarea asignada - `${workitem_title}`
+>
+> message=String que representa la plantilla de correo electrónico sin caracteres de línea nuevos.
