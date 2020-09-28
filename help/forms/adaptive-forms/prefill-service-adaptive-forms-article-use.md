@@ -1,0 +1,103 @@
+---
+title: Servicio de cumplimentación previa en Forms adaptable
+seo-title: Servicio de cumplimentación previa en Forms adaptable
+description: Rellenar previamente formularios adaptables recuperando datos de orígenes de datos back-end.
+seo-description: Rellenar previamente formularios adaptables recuperando datos de orígenes de datos back-end.
+sub-product: formularios
+feature: adaptive-forms
+topics: integrations
+audience: developer
+doc-type: article
+activity: implement
+version: 6.4,6.5
+uuid: 26a8cba3-7921-4cbb-a182-216064e98054
+discoiquuid: 936ea5e9-f5f0-496a-9188-1a8ffd235ee5
+translation-type: tm+mt
+source-git-commit: 3d54a8158d0564a3289a2100bbbc59e5ae38f175
+workflow-type: tm+mt
+source-wordcount: '478'
+ht-degree: 0%
+
+---
+
+
+# UsingPrefill Service en Forms adaptable
+
+Puede rellenar previamente los campos de un formulario adaptable utilizando los datos existentes. Cuando un usuario abre un formulario, los valores de esos campos se rellenan previamente. Existen varias formas de rellenar previamente los campos de formularios adaptables. En este artículo analizaremos el formulario adaptable de prefijo utilizando el servicio de cumplimentación previa de AEM Forms.
+
+Para obtener más información sobre los distintos métodos para rellenar formularios adaptables previamente, [siga esta documentación](https://helpx.adobe.com/experience-manager/6-4/forms/using/prepopulate-adaptive-form-fields.html#AEMFormsprefillservice)
+
+Para rellenar previamente un formulario adaptable mediante el servicio de cumplimentación previa, deberá crear una clase que implemente la interfaz DataProvider. El método getPrefillData tendrá la lógica de generar y devolver datos que el formulario adaptable consumirá para rellenar previamente los campos. En este método, puede recuperar los datos de cualquier origen y devolver el flujo de entrada del documento de datos. El siguiente código de ejemplo obtiene la información de perfil del usuario que ha iniciado sesión y construye un documento XML cuya secuencia de entrada se devuelve para que la utilicen los formularios adaptables.
+
+En el siguiente fragmento de código tenemos una clase que implementa la interfaz DataProvider. Obtenemos acceso al usuario que ha iniciado sesión y, a continuación, recuperamos la información de perfil del usuario que ha iniciado sesión. A continuación, creamos un documento XML con un elemento de nodo raíz llamado &quot;data&quot; y anexamos los elementos adecuados a este nodo de datos. Una vez construido el documento XML, se devuelve el flujo de entrada del documento XML.
+
+Esta clase se convierte en un paquete OSGi y se implementa en AEM. Una vez implementado el paquete, este servicio de cumplimentación previa estará disponible para utilizarse como servicio de cumplimentación previa del formulario adaptable.
+
+```java
+public class PrefillAdaptiveForm implements DataProvider {
+ private Logger logger = LoggerFactory.getLogger(PrefillAdaptiveForm.class);
+
+ public String getServiceName() {
+  return "Default Prefill Service";
+ }
+ 
+ public String getServiceDescription() {
+  return "This is default prefill service to prefill adaptive form with user data";
+ }
+ 
+ public PrefillData getPrefillData(final DataOptions dataOptions) throws FormsException {
+  PrefillData prefillData = new PrefillData() {
+   public InputStream getInputStream() {
+    return getData(dataOptions);
+   }
+   
+   public ContentType getContentType() {
+    return ContentType.XML;
+   }
+  };
+  return prefillData;
+ }
+
+ private InputStream getData(DataOptions dataOptions) throws FormsException {  
+  try {
+   Resource aemFormContainer = dataOptions.getFormResource();
+   ResourceResolver resolver = aemFormContainer.getResourceResolver();
+   Session session = resolver.adaptTo(Session.class);
+   UserManager um = ((JackrabbitSession) session).getUserManager();
+   Authorizable loggedinUser = um.getAuthorizable(session.getUserID());
+   DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
+   DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
+   Document doc = docBuilder.newDocument();
+   Element rootElement = doc.createElement("data");
+   doc.appendChild(rootElement);
+   Element firstNameElement = doc.createElement("fname");
+   firstNameElement.setTextContent(loggedinUser.getProperty("profile/givenName")[0].getString());
+     .
+     .
+     .
+   InputStream inputStream = new ByteArrayInputStream(rootElement.getTextContent().getBytes());
+   return inputStream;
+  } catch (Exception e) {
+   logger.error("Error while creating prefill data", e);
+   throw new FormsException(e);
+  }
+ }
+}
+```
+
+Para probar esta capacidad en el servidor, realice lo siguiente
+
+* [Descargue y extraiga el contenido del archivo zip en su equipo](assets/prefillservice.zip)
+* Asegúrese de que la información de perfil [del](http://localhost:4502/libs/granite/security/content/useradmin) usuario que ha iniciado sesión está completa. Es un requisito para que la muestra funcione. El ejemplo no tiene ninguna verificación de errores de las propiedades de perfil del usuario que faltan.
+* Implementar el paquete mediante la consola web [AEM](http://localhost:4502/system/console/bundles)
+* Crear formulario adaptable con XSD
+* Asocie &quot;Servicio de cumplimentación previa de formularios personalizados de Aem&quot; como servicio de cumplimentación previa para el formulario adaptable
+* Arrastrar y soltar elementos de esquema en el formulario
+* Obtener una vista previa del formulario
+
+>[!NOTE]
+>
+>Si el formulario adaptable se basa en XSD, asegúrese de que el documento XML devuelto por el servicio de cumplimentación previa coincide con el XSD en el que se basa el formulario adaptable.
+>
+>Si el formulario adaptable no está basado en XSD, tendrá que enlazar manualmente los campos. Por ejemplo, para enlazar un campo de formulario adaptable al elemento fname de los datos XML, se utilizará `/data/fname` en la referencia Enlace del campo de formulario adaptable.
+
