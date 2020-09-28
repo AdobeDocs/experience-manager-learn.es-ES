@@ -10,7 +10,7 @@ doc-type: tutorial
 activity: understand
 version: 6.5
 translation-type: tm+mt
-source-git-commit: c7ae9a51800bb96de24ad577863989053d53da6b
+source-git-commit: ca4a8f02ea9ec5db15dbe6f322731748da90be6b
 workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 0%
@@ -133,7 +133,7 @@ Dado que utilizamos un objeto de Documento específico de AEM Forms, es necesari
 
 #### Generar e implementar
 
-[Genere el paquete como se describe aquí](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven)[Asegúrese de que el paquete está implementado y en estado activo](http://localhost:450/system/console/bundles)
+[Genere el paquete como se describe aquí](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven)[Asegúrese de que el paquete está implementado y en estado activo](http://localhost:4502/system/console/bundles)
 
 Cree un modelo de flujo de trabajo. Arrastre y suelte el paso del proceso en el modelo de flujo de trabajo. Asocie el paso del proceso con &quot;Guardar datos adjuntos de formulario adaptables al sistema de archivos&quot;.
 
