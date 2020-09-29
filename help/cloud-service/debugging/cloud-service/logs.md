@@ -10,9 +10,9 @@ audience: developer
 kt: 5432
 thumbnail: kt-5432.jpg
 translation-type: tm+mt
-source-git-commit: 1eb15af3d9d2904856218aaad4d5c52233603a71
+source-git-commit: 7fd232d6821f91c342dd04fcdd04b9b505cb7250
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '990'
 ht-degree: 3%
 
 ---
@@ -28,6 +28,12 @@ Los identificadores de pod se proporcionan en cada instrucción de registro y pe
 
 + `cm-p<PROGRAM ID>-e<ENVIRONMENT ID>-aem-<author|publish>-<POD NAME>`
 + Ejemplo: `cm-p12345-e56789-aem-author-abcdefabde-98765`
+
+## Archivos de registro personalizados
+
+AEM como Cloud Services no admite archivos de registro personalizados, pero sí admite el registro personalizado.
+
+Para que los registros de Java estén disponibles en AEM como Cloud Service (mediante [Cloud Manager](#cloud-manager) o [Adobe I/O CLI](#aio)), las sentencias de registro personalizadas deben escribirse en la `error.log`. Los registros escritos en registros con nombres personalizados, como `example.log`por ejemplo, no serán accesibles desde AEM como Cloud Service.
 
 ## Registros de servicio de AEM Author y Publish
 
@@ -54,7 +60,7 @@ Solo AEM Publish Dispatcher proporciona los registros de Dispatcher y del servid
    + Escenario: `WARN`
    + Producción: `ERROR`
 
-## Cloud Manager
+## Cloud Manager{#cloud-manager}
 
 Adobe Cloud Manager permite la descarga de registros, por día, a través de la acción Descargar registros de un entorno.
 
@@ -62,7 +68,7 @@ Adobe Cloud Manager permite la descarga de registros, por día, a través de la 
 
 Estos registros pueden descargarse e inspeccionarse mediante cualquier herramienta de análisis de registros.
 
-## CLI de E/S de Adobe con complemento Cloud Manager
+## CLI de E/S de Adobe con complemento Cloud Manager{#aio}
 
 Adobe Cloud Manager admite el acceso a AEM como registros de Cloud Service mediante la CLI [de E/S de](https://github.com/adobe/aio-cli) Adobe con el complemento [Cloud Manager para la CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)de E/S de Adobe.
 
