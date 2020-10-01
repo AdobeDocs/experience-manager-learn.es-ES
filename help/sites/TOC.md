@@ -4,9 +4,9 @@ user-guide-description: A collection of videos and tutorials for Adobe Experienc
 breadcrumb-title: AEM Sites Tutorials
 sub-product: sitios
 translation-type: tm+mt
-source-git-commit: e13a5171fbeb9e1eb5f78d1c691bc8b4b896a998
+source-git-commit: 25ca90f641aaeb93fc9319692f3b099d6b528dd1
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '457'
 ht-degree: 10%
 
 ---
@@ -101,3 +101,12 @@ ht-degree: 10%
    + Análisis {#analytics}
       + [Recopilación de datos de página con Adobe Analytics](integrations/analytics/collect-data-analytics.md)
       + [Seguimiento del componente en el que se hizo clic con Adobe Analytics](integrations/analytics/track-clicked-component.md)
+   + Adobe Target {#target}
+      + [Información general](integrations/adobe-target/overview.md)
+      + [Añadir Extensión de grupo de destinatarios para iniciar propiedad](integrations/adobe-target/add-target-launch-extension.md)
+      + [Carga y activación de una llamada de Destinatario](integrations/adobe-target/load-and-fire-target.md)
+      + [Crear cuenta de Adobe Target Cloud Service](integrations/adobe-target/setup-aem-target-cloud-service.md)
+      + [Exportar fragmento de experiencia a Adobe Target](integrations/adobe-target/export-experience-fragment-target.md)
+      + [Crear Actividad de Destinatario mediante Ofertas de fragmentos de experiencia](integrations/adobe-target/create-target-activity.md)
+      + [Personalización mediante el Compositor de experiencias visuales](integrations/adobe-target/personalization-using-vec.md)
+      + [Personalización de la experiencia de página web completa](integrations/adobe-target/personalization-web-page.md)
