@@ -12,7 +12,7 @@ version: 6.3, 6.4, 6.5, cloud-service
 kt: 4495
 thumbnail: 31784.jpg
 translation-type: tm+mt
-source-git-commit: d3e2595bf189c937b1023881d84eb1a9739750b6
+source-git-commit: 26760a76cfa523d28399c8e44c8db070cac49496
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 60%
@@ -32,48 +32,15 @@ En este vídeo, se explican las siguientes funciones o características:
 * El panel de navegación global consiste en:
    * Navegación: se representa mediante una brújula   
 
-      <table> 
-    <thead> 
-      <tr> 
-      <th> <p>Consola</p> </th>
-      <th> <p>Función</p> </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr> 
-      <td> <p>Assets</p> </td>
-      <td> <p>Estas consolas le permiten importar y administrar recursos digitales como imágenes, vídeos, documentos y archivos de audio. Estos recursos se pueden utilizar en cualquier sitio web que ejecute la misma instancia de AEM</p> </td>
-      </tr>
-      <tr>
-      <td> <p>Communities</p> </td>
-      <td> <p>Esta consola permite crear y administrar sitios de comunidad para participar en ellos según se vayan activando</p> </td>
-      </tr>
-      <tr>
-      <td> <p>Comercio</p> </td>
-      <td> <p>Esto le permite administrar productos, catálogos de productos y pedidos relacionados con sus sitios de comercio</p> </td>
-      </tr>
-      <tr> 
-      <td> <p>Fragmentos de experiencias</p> </td>
-      <td> <p>Un fragmento de experiencia es una experiencia independiente que puede reutilizarse en diversos canales y tener variaciones, de manera que se evita el problema de copiar y pegar repetidas veces experiencias o partes de experiencias</p> </td>
-      </tr>
-      <tr> 
-      <td> <p>Forms</p> </td>
-      <td> <p>Esta consola permite crear, administrar y procesar sus formularios y documentos</p> </td>
-      </tr>
-      <tr> 
-      <td> <p>Personalización</p> </td>
-      <td> <p>Esta consola ofrece un marco de herramientas para crear contenido dirigido y presentar experiencias personalizadas</p> </td>
-      </tr>
-      <tr> 
-      <td> <p>Proyectos</p> </td>
-      <td> <p>La consola Proyectos le proporciona acceso directo a sus proyectos . Los proyectos son tableros virtuales. Se pueden utilizar para crear un equipo y permitirle acceder a medios, flujos de trabajo y tareas, para que todos los miembros puedan trabajar en un objetivo común</p> </td>
-      </tr>
-      <tr> 
-      <td> <p>Sites</p> </td>
-      <td> <p>La consola Sitios le permite crear, ver y administrar sitios web que se ejecuten en su instancia de AEM. Mediante estas consolas puede crear, editar, copiar, mover y eliminar páginas de sitios web, iniciar flujos de trabajo y publicar páginas</p> </td>
-      </tr>
-    </tbody>
-    </table>
+      | Consola | Función |
+      |---|---|
+      | Assets | Estas consolas le permiten importar y administrar recursos digitales como imágenes, vídeos, documentos y archivos de audio. Estos recursos se pueden utilizar en cualquier sitio web que ejecute la misma instancia de AEM | Communities | Esta consola permite crear y administrar sitios de comunidad para participar en ellos según se vayan activando | Comercio | Esto le permite administrar productos, catálogos de productos y pedidos relacionados con sus sitios de comercio |
+      | Fragmentos de experiencias | Un fragmento de experiencia es una experiencia independiente que puede reutilizarse en diversos canales y tener variaciones, de manera que se evita el problema de copiar y pegar repetidas veces experiencias o partes de experiencias |
+      | Forms | Esta consola permite crear, administrar y procesar sus formularios y documentos |
+      | Personalización | Esta consola ofrece un marco de herramientas para crear contenido dirigido y presentar experiencias personalizadas |
+      | Proyectos | La consola Proyectos le proporciona acceso directo a sus proyectos . Los proyectos son tableros virtuales. Se pueden utilizar para crear un equipo y permitirle acceder a medios, flujos de trabajo y tareas, para que todos los miembros puedan trabajar en un objetivo común |
+      | Sites | La consola Sitios le permite crear, ver y administrar sitios web que se ejecuten en su instancia de AEM. Mediante estas consolas puede crear, editar, copiar, mover y eliminar páginas de sitios web, iniciar flujos de trabajo y publicar páginas |
+
    * Herramientas: se representa mediante un martillo
 * Omni Search
 * Conmutador de soluciones
