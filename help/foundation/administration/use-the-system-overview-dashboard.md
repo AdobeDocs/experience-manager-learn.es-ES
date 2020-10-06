@@ -9,7 +9,7 @@ audience: administrator, architect, developer, implementer
 doc-type: technical video
 contentOwner: dgordon
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: c9a11bcb01a5ec9f7390deab68e6d0e1dec273de
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 0%
@@ -25,7 +25,7 @@ La Información general [!UICONTROL del] sistema de Adobe Experience Manager (AE
 
 1. Se puede acceder a la Información general del sistema desde: **AEM Inicio** > **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > Información general **[!UICONTROL del sistema]**
 
-   Directamente en **[!DNL <server-host>/libs/granite/operations/content/systemoverview.html]**
+   Directamente en **`<server-host>/libs/granite/operations/content/systemoverview.html`**
 
 1. La información de la Información general [!UICONTROL del sistema] se puede exportar haciendo clic en el botón [!UICONTROL Descargar] . La información también se expone a través del siguiente [!DNL REST] punto final:
 1. A continuación se muestra una salida de muestra del JSON que se exporta desde Información general [!UICONTROL del sistema]:
