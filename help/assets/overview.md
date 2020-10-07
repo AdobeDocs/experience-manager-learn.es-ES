@@ -5,9 +5,9 @@ description: Recopilación de vídeos y tutoriales para Adobe Experience Manager
 seo-description: Recopilación de vídeos y tutoriales para Adobe Experience Manager Assets
 sub-product: recursos, Dynamic-media
 translation-type: tm+mt
-source-git-commit: a2772bd8dd65e8bcb4caf660709f6aceb6e28eb4
+source-git-commit: 10784dce34443adfa1fc6dc324242b1c021d2a17
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '244'
 ht-degree: 5%
 
 ---
@@ -18,6 +18,11 @@ ht-degree: 5%
 Adobe Experience Manager Assets es una herramienta de gestión de recursos digitales en AEM plataforma que permite a los usuarios crear, gestionar y compartir sus recursos digitales (imágenes, vídeos, documentos y clips de audio) en un repositorio basado en la Web. Esta guía del usuario contiene vídeos y tutoriales sobre las muchas funciones y capacidades de AEM Assets.
 
 ## Novedades
+
+* **[Marcas de agua (vídeo)](./advanced/watermarks.md)**
+
+   <br>
+   *Obtenga información sobre cómo marcar con agua las representaciones de recursos en AEM como Cloud Service*
 
 * **[Permisos de línea de base (vídeo)](./configuring/baseline-permissions.md)**
 
@@ -38,12 +43,6 @@ Adobe Experience Manager Assets es una herramienta de gestión de recursos digit
 
    <br>
    *Explore cómo las colecciones en AEM Assets proporcionan nuevas formas de organizar y descubrir recursos*
-
-* **[Uso de la Tarea de revisión (vídeo)](./collaboration/review-task.md)**
-
-   <br>
-   *Utilice el flujo de trabajo Revisar Tarea para aprobar (o rechazar) recursos de forma rápida y sencilla*
-
 
 ## Selección de personal
 
