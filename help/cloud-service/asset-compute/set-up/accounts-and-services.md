@@ -10,7 +10,7 @@ doc-type: tutorial
 kt: 6264
 thumbnail: 40377.jpg
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 1%
@@ -39,7 +39,7 @@ Todos los servicios de Adobe deben ser accesibles a través de la misma organiza
 
 ## AEM as a Cloud Service{#aem-as-a-cloud-service}
 
-Se requiere acceso a un AEM como entorno de Cloud Service para configurar los Perfiles de procesamiento de AEM Assets a fin de que invoquen la aplicación de cálculo de recursos personalizada.
+Se requiere el acceso a un AEM como entorno de Cloud Service para configurar los Perfiles de procesamiento de AEM Assets a fin de que invoquen al programa de trabajo de cómputo de recursos personalizado.
 
 Idealmente, hay un programa de simulación de pruebas o un entorno de desarrollo sin simulación de pruebas disponibles para su uso.
 
@@ -47,7 +47,7 @@ Tenga en cuenta que un SDK de AEM local no es suficiente para completar este tut
 
 ## Luciérnagas del proyecto Adobe{#adobe-project-firefly}
 
-El módulo [Adobe Project Firefly](https://www.adobe.io/apis/experienceplatform/project-firefly.html) se utiliza para crear e implementar aplicaciones personalizadas en Adobe I/O Runtime, la plataforma sin servidor de Adobe. Las aplicaciones de AEM Asset Compute son aplicaciones de Firefly especialmente creadas que se integran con AEM Assets a través de Perfiles de procesamiento y proporcionan la capacidad de acceder y procesar binarios de recursos.
+El marco de trabajo [Adobe Project Firefly](https://www.adobe.io/apis/experienceplatform/project-firefly.html) se utiliza para crear e implementar acciones personalizadas en Adobe I/O Runtime, la plataforma sin servidor de Adobe. Los proyectos de AEM Asset Compute son proyectos de Firefly creados especialmente que se integran con AEM Assets a través de Perfiles de procesamiento y permiten acceder y procesar binarios de recursos.
 
 Para obtener acceso a Project Firefly, regístrese en la previsualización.
 
@@ -57,9 +57,9 @@ Para obtener acceso a Project Firefly, regístrese en la previsualización.
 
 ## Almacenamiento de nube
 
-El almacenamiento de nube es necesario para el desarrollo local de aplicaciones de Asset Compute.
+El almacenamiento de nube es necesario para el desarrollo local de proyectos de Asset Compute.
 
-Cuando se implementan aplicaciones de Asset Compute en Adobe I/O Runtime para uso directo de AEM como Cloud Service, este almacenamiento de nube no es estrictamente necesario, ya que AEM proporciona el almacenamiento de nube desde el cual se lee el recurso y se escribe la representación.
+Cuando los trabajadores de Asset Compute se implementan en el Adobe I/O Runtime para uso directo de AEM como Cloud Service, este almacenamiento de nube no es estrictamente necesario porque AEM proporciona el almacenamiento de nube desde el cual se lee el recurso y se escribe la representación.
 
 ### Almacenamiento de blob de Microsoft Azure{#azure-blob-storage}
 
