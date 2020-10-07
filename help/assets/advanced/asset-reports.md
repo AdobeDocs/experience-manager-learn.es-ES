@@ -1,5 +1,5 @@
 ---
-title: Uso de informes en AEM Assets
+title: Informes de recursos en AEM Assets
 description: 'AEM Assets proporciona un entorno de sistema de informes de nivel empresarial que se amplía para repositorios de gran tamaño a través de una experiencia intuitiva del usuario. '
 feature: reports
 topics: authoring, operations, performance, metadata
@@ -9,15 +9,15 @@ activity: use
 version: 6.3, 6.4, 6.5
 kt: 648
 translation-type: tm+mt
-source-git-commit: 3b5dd583a458393a41dbce1d8eeb0095a22db734
+source-git-commit: 10784dce34443adfa1fc6dc324242b1c021d2a17
 workflow-type: tm+mt
-source-wordcount: '94'
+source-wordcount: '91'
 ht-degree: 2%
 
 ---
 
 
-# Uso de informes en AEM Assets{#using-reports-in-aem-assets}
+# Informes de recursos{#using-reports-in-aem-assets}
 
 AEM Assets proporciona un entorno de sistema de informes de nivel empresarial que se amplía para repositorios de gran tamaño a través de una experiencia intuitiva del usuario.
 
