@@ -1,6 +1,6 @@
 ---
 title: Creación de un proyecto de cómputo de recursos para la extensibilidad de cómputo de recursos
-description: Las aplicaciones de Asset Compute son proyectos de Node.js, generados mediante la CLI de E/S de Adobe, que se adhieren a una estructura determinada que les permite implementarse en Adobe I/O Runtime e integrarse con AEM como Cloud Service.
+description: Los proyectos de Asset Compute son proyectos de Node.js, generados mediante la CLI de E/S de Adobe, que se adhieren a una estructura determinada que permite implementarlos en Adobe I/O Runtime e integrarlos con AEM como Cloud Service.
 feature: asset-compute
 topics: renditions, development
 version: cloud-service
@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6269
 thumbnail: 40197.jpg
 translation-type: tm+mt
-source-git-commit: a71c61304bbc9d54490086b3313c823225fbe2e0
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '675'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # Creación de un proyecto de cómputo de recursos
 
-Las aplicaciones de Asset Compute son proyectos de Node.js, generados mediante la CLI de E/S de Adobe, que se adhieren a una estructura determinada que les permite implementarse en Adobe I/O Runtime e integrarse con AEM como Cloud Service. Un solo proyecto de cómputo de recursos puede contener uno o más trabajadores de cómputo de recursos, cada uno de los cuales tiene un punto final HTTP discreto referenciable desde un AEM como Perfil de procesamiento de Cloud Service.
+Los proyectos de Asset Compute son proyectos de Node.js, generados mediante la CLI de E/S de Adobe, que se adhieren a una estructura determinada que les permite implementarse en Adobe I/O Runtime e integrarse con AEM como Cloud Service. Un solo proyecto de cómputo de recursos puede contener uno o más trabajadores de cómputo de recursos, cada uno de los cuales tiene un punto final HTTP discreto referenciable desde un AEM como Perfil de procesamiento de Cloud Service.
 
 ## Generación de un proyecto
 
@@ -51,7 +51,7 @@ Utilice el complemento [](../set-up/development-environment.md#aio-cli) Adobe I/
 
 ## Revisar la anatomía del proyecto
 
-El proyecto de Asset Compute generado es un proyecto Node.js para una aplicación especializada de Adobe Project Firefly; los siguientes proyectos son idiosincráticos para el proyecto Asset Compute:
+El proyecto de cómputo de recursos generado es un proyecto de Node.js para un proyecto de Adobe especializado de proyectos de Firefly; los siguientes proyectos son idiosincrásicos del proyecto de cálculo de recursos:
 
 + `/actions` contiene subcarpetas y cada subcarpeta define un trabajador de cálculo de recursos.
    + `/actions/<worker-name>/index.js` define el JavaScript ejecutado para realizar el trabajo de este trabajador.
@@ -65,6 +65,14 @@ El proyecto de Asset Compute generado es un proyecto Node.js para una aplicació
 + `/.env` define las variables de entorno en una `key=value` sintaxis y contiene secretos que no se deben compartir. Para proteger estos secretos, NO se debe registrar este archivo en Git y se ignora mediante el `.gitignore` archivo predeterminado del proyecto.
    + Las variables definidas en este archivo se pueden anular [exportando variables](../deploy/runtime.md) en la línea de comandos.
 
-Para obtener más detalles sobre la revisión de la estructura del proyecto, revise la aplicación [](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#5-anatomy-of-a-project-firefly-application)Anatomía de un proyecto Adobe Firefly.
+Para obtener más detalles sobre la revisión de la estructura del proyecto, revise el proyecto [Anatomía de un proyecto Adobe Firefly](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#5-anatomy-of-a-project-firefly-application).
 
 La mayor parte del desarrollo se realiza en la `/actions` carpeta que desarrolla implementaciones de trabajador y en pruebas de `/test/asset-compute` escritura para los trabajadores de Asset Compute personalizados.
+
+## Proyecto de cómputo de recursos en Github
+
+El proyecto final de Asset Compute está disponible en Github en:
+
++ [aem-guide-wknd-asset-compute](https://github.com/adobe/aem-guides-wknd-asset-compute)
+
+_Github contiene es el estado final del proyecto, totalmente rellenado con los casos de trabajo y prueba, pero no contiene credenciales, por ejemplo.`.env`,`.config.json`o`.aio`._
