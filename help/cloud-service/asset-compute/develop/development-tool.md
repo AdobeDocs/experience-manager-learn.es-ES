@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6283
 thumbnail: 40241.jpg
 translation-type: tm+mt
-source-git-commit: a71c61304bbc9d54490086b3313c823225fbe2e0
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '703'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Asset Compute Development Tool es un mazo de cables web local que permite a los 
 
 ## Ejecución de la herramienta de desarrollo de cómputo de recursos
 
-La Herramienta de desarrollo de cómputo de recursos se puede ejecutar desde la raíz del proyecto de la aplicación de cómputo de recursos mediante el comando terminal:
+La Herramienta de desarrollo de cómputo de recursos se puede ejecutar desde la raíz del proyecto de cómputo de recursos mediante el comando terminal:
 
 ```
 $ aio app run
@@ -42,9 +42,9 @@ Esto inicio la Herramienta de desarrollo en __http://localhost:9000__ y la abre 
 1. __Definición de perfil de cálculo de recursos:__ Define el trabajador de cómputo de recursos que se va a ejecutar, incluidos los parámetros: incluyendo el punto final de la dirección URL del trabajador, el nombre de la representación resultante y cualquier parámetro
 1. __Ejecutar:__ El botón Ejecutar ejecuta el perfil de cálculo de recursos tal como se define en el editor de perfiles de configuración de cálculo de recursos
 1. __Anular:__ El botón Anular cancela una ejecución iniciada al tocar el botón Ejecutar
-1. __Solicitud/Respuesta:__ Proporciona la solicitud HTTP y la respuesta a/desde la aplicación Asset Compute que se ejecuta en Adobe Runtime. Esto puede resultar útil para la depuración
-1. __Registros de activación:__ Registros que describen la ejecución de la aplicación Asset Compute, junto con cualquier error. Esta información también está disponible en el `aio app run` estándar
-1. __Representaciones:__ Muestra todas las representaciones generadas por la ejecución de la aplicación de cálculo de recursos
+1. __Solicitud/Respuesta:__ Proporciona la solicitud HTTP y la respuesta al/desde el programa de trabajo de cálculo de recursos que se ejecuta en Adobe I/O Runtime. Esto puede resultar útil para la depuración
+1. __Registros de activación:__ Registros que describen la ejecución del trabajador de cómputo de recursos, junto con cualquier error. Esta información también está disponible en el `aio app run` estándar
+1. __Representaciones:__ Muestra todas las representaciones generadas por la ejecución del trabajador de cálculo de recursos
 1. __parámetro de consulta devToolToken:__ El token de la herramienta de desarrollo de cómputo de recursos requiere un parámetro de `devToolToken` consulta válido para estar presente. Este token se genera automáticamente cada vez que se genera una nueva herramienta de desarrollo
 
 ### Ejecutar un trabajador personalizado
@@ -89,9 +89,9 @@ La herramienta de desarrollo de cómputo de recursos puede introducir un estado 
 
 + __Error:__ La lista desplegable de archivos de origen muestra elementos incorrectos.
 + __Causa:__ El estado del explorador en caché antiguo hace que
-+ __Resolución:__ En el explorador, borre por completo el estado de la aplicación de la ficha del explorador, la caché del explorador, el almacenamiento local y el programa de trabajo del servicio.
++ __Resolución:__ En el navegador, borre por completo el &quot;estado de la aplicación&quot; de la ficha del navegador, la caché del navegador, el almacenamiento local y el programa de trabajo del servicio.
 
-### Falta el parámetro de consulta devToolToken{#troubleshooting__devtooltoken}
+### Falta el parámetro de consulta devToolToken o no es válido{#troubleshooting__devtooltoken}
 
 + __Error:__ Notificación &quot;no autorizada&quot; en Asset Compute Development Tool
 + __Causa:__ `devToolToken` falta o no es válido
@@ -101,6 +101,6 @@ La herramienta de desarrollo de cómputo de recursos puede introducir un estado 
 
 + __Error:__ No hay forma de eliminar los archivos de origen agregados de la interfaz de usuario de las herramientas de desarrollo
 + __Causa:__ Esta funcionalidad no se ha implementado
-+ __Resolución:__ Inicie sesión en el proveedor de almacenamiento de nube con las credenciales definidas en `.env`. Busque el contenedor que utilizan las herramientas de desarrollo (también especificadas en `.env`), desplácese hasta la carpeta de __origen__ y elimine las imágenes de origen. Es posible que tenga que realizar los pasos descritos en la lista desplegable Archivos [de origen incorrectos](#troubleshooting__dev-tool-application-cache) si los archivos de origen eliminados siguen mostrándose en la lista desplegable, ya que se pueden almacenar en caché localmente en el estado de la aplicación Herramientas de desarrollo.
++ __Resolución:__ Inicie sesión en el proveedor de almacenamiento de nube con las credenciales definidas en `.env`. Busque el contenedor que utilizan las herramientas de desarrollo (también especificadas en `.env`), desplácese hasta la carpeta de __origen__ y elimine las imágenes de origen. Es posible que tenga que realizar los pasos descritos en la lista desplegable Archivos [de origen incorrectos](#troubleshooting__dev-tool-application-cache) si los archivos de origen eliminados siguen mostrándose en la lista desplegable, ya que se pueden almacenar en caché localmente en el &quot;estado de la aplicación&quot; de las herramientas de desarrollo.
 
    ![Almacenamiento de blob de Microsoft Azure](./assets/development-tool/troubleshooting__remove-source-files.png)
