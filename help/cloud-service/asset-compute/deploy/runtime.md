@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6286
 thumbnail: KT-6286.jpg
 translation-type: tm+mt
-source-git-commit: 50519b9526182b528047069f211498099e3a4c88
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '648'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Debido a que este proyecto se generó usando `aio app init` el `Development` esp
 
 Para implementar en el espacio de trabajo, defina en el archivo de proyectos `.env` :
 
-1. Abra la línea de comandos en la raíz del proyecto de la aplicación Asset Compute
+1. Abra la línea de comandos en la raíz del proyecto de cómputo de recursos
 1. Ejecutar el comando `aio app deploy`
 1. Ejecute el comando `aio app get-url` para obtener la dirección URL del programa de trabajo para utilizarla en el AEM como Perfil de procesamiento de Cloud Service para hacer referencia a este programa de trabajo de cómputo de recursos personalizado. Si el proyecto contiene varios trabajadores, se muestran las direcciones URL discretas de cada trabajador.
 
@@ -54,7 +54,7 @@ La configuración de las variables de entorno reales anula los valores de las va
 El enfoque general, normalmente automatizado por un sistema CI/CD, para la implementación en entornos de fase y producción es:
 
 1. Asegúrese de que el módulo npm de CLI de E/S de [Adobe y el complemento](../set-up/development-environment.md#aio) Asset Compute estén instalados
-1. Consulte la aplicación Asset Compute para implementar desde Git
+1. Consulte el proyecto de cómputo de recursos para implementar desde Git
 1. Configure las variables de entorno con los valores que corresponden al espacio de trabajo de destinatario (fase o producción)
    + Las dos variables requeridas son `AIO_runtime_namespace` y `AIO_runtime_auth` se obtienen por espacio de trabajo en la consola del desarrollador de Adobe I/O mediante la función __Descargar todo__ del espacio de trabajo.
 
@@ -74,7 +74,7 @@ Si los trabajadores de la computación de recursos requieren otras variables, co
 1. Las direcciones URL de trabajo a las que hace referencia el AEM como Perfil de procesamiento de Cloud Service también están disponibles mediante:
    + `aio app get-url`.
 
-Si la versión de la aplicación de cálculo de recursos cambia, las direcciones URL de trabajo también cambian para reflejar la nueva versión y la dirección URL deberá actualizarse en las Perfiles de procesamiento.
+Si la versión del proyecto de cálculo de recursos cambia, las direcciones URL de trabajo también cambian para reflejar la nueva versión y la dirección URL deberá actualizarse en las Perfiles de procesamiento.
 
 ## Aprovisionamiento de API de Workspace{#workspace-api-provisioning}
 
