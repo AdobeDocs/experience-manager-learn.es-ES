@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6284
 thumbnail: KT-6284.jpg
 translation-type: tm+mt
-source-git-commit: 06632b90e5cdaf80b9343e5a69ab9c735d4a70f1
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '818'
 ht-degree: 0%
 
 ---
@@ -109,6 +109,12 @@ Este caso de prueba se prueba para garantizar que el programa de trabajo arroja 
    + Finalización de las instancias de la herramienta de desarrollo en ejecución
 
 ![Prueba - Contraste de errores](./assets/test/error-contrast/result.png)
+
+## Casos de prueba en Github
+
+Los casos de prueba finales están disponibles en Github en:
+
++ [aem-guide-wknd-asset-compute/test/asset-compute/worker](https://github.com/adobe/aem-guides-wknd-asset-compute/tree/master/test/asset-compute/worker)
 
 ## Solución de problemas
 
