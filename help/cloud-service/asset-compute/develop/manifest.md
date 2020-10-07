@@ -1,6 +1,6 @@
 ---
 title: Configurar manifest.yml de un proyecto de Asset Compute
-description: manifest.yml del proyecto de Asset Compute describe todos los trabajadores de esta aplicación que se implementarán.
+description: manifest.yml del proyecto de Asset Compute describe todos los trabajadores de este proyecto que se implementarán.
 feature: asset-compute
 topics: renditions, development
 version: cloud-service
@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6281
 thumbnail: KT-6281.jpg
 translation-type: tm+mt
-source-git-commit: 50519b9526182b528047069f211498099e3a4c88
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '550'
 ht-degree: 0%
 
 ---
@@ -93,6 +93,13 @@ packages:
         annotations:
           require-adobe-auth: true
 ```
+
+## manifest.yml en Github
+
+La final `.manifest.yml` está disponible en Github en:
+
++ [aem-guides-wknd-asset-compute/manifest.yml](https://github.com/adobe/aem-guides-wknd-asset-compute/blob/master/manifest.yml)
+
 
 ## Validación del manifest.yml
 
