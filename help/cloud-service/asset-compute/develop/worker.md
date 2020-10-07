@@ -1,6 +1,6 @@
 ---
 title: Desarrollar un trabajador de cómputo de recursos
-description: Los trabajadores de Asset Compute son el núcleo de una aplicación de Asset Compute, ya que proporcionan una funcionalidad personalizada que realiza u orquesta el trabajo realizado en un recurso para crear una nueva representación.
+description: Los trabajadores de cómputo de recursos son el núcleo de los proyectos de cómputo de recursos que proporcionan una funcionalidad personalizada que realiza u orquesta el trabajo realizado en un recurso para crear una nueva representación.
 feature: asset-compute
 topics: renditions, development
 version: cloud-service
@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6282
 thumbnail: KT-6282.jpg
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
-source-wordcount: '1412'
+source-wordcount: '1508'
 ht-degree: 0%
 
 ---
@@ -20,26 +20,28 @@ ht-degree: 0%
 
 # Desarrollar un trabajador de cómputo de recursos
 
-Los trabajadores de Asset Compute son el núcleo de una aplicación de Asset Compute, ya que proporcionan una funcionalidad personalizada que realiza u orquesta el trabajo realizado en un recurso para crear una nueva representación.
+Los trabajadores de cómputo de recursos son el núcleo de un proyecto de cómputo de recursos, ya que proporcionan una funcionalidad personalizada que realiza u orquesta el trabajo realizado en un recurso para crear una nueva representación.
 
 El proyecto de cálculo de recursos genera automáticamente un programa de trabajo simple que copia el binario original del recurso en una representación con nombre, sin ninguna transformación. En este tutorial modificaremos este programa de trabajo para realizar una representación más interesante, para ilustrar el poder de los trabajadores de Asset Compute.
 
-Crearemos un programa de trabajo de cómputo de recursos que generará una nueva representación de imagen horizontal, que cubrirá el espacio vacío a la izquierda y a la derecha de la representación de recursos con una versión borrosa del recurso. Se parametrizará la anchura, la altura y el desenfoque de la representación final.
+Crearemos un trabajador de cómputo de recursos que generará una nueva representación de imagen horizontal, que cubrirá el espacio vacío a la izquierda y a la derecha de la representación de recursos con una versión borrosa del recurso. Se parametrizará la anchura, la altura y el desenfoque de la representación final.
 
-## Explicación de la ejecución de un trabajador de cómputo de recursos
+## Flujo lógico de una invocación de trabajador de cálculo de recursos
 
-Los trabajadores de Asset Compute implementan el contrato de API de trabajo de Asset Compute SDK, que simplemente es:
+Los trabajadores de Asset Compute implementan el contrato de API de trabajo del SDK de Asset Compute, en la `renditionCallback(...)` función que conceptualmente es:
 
 + __Entrada:__ Parámetros y binario de recursos originales de un recurso AEM
 + __Salida:__ Una o varias representaciones que se van a agregar al recurso AEM
 
-![Flujo de ejecución de trabajador de cálculo de recursos](./assets/worker/execution-flow.png)
+![Flujo lógico del trabajador de cálculo de recursos](./assets/worker/logical-flow.png)
 
 1. Cuando se invoca a un trabajador de cómputo de recursos desde el servicio AEM Author, se compara con un recurso AEM mediante un Perfil de procesamiento. El binario original __(1a)__ del recurso se pasa al programa de trabajo mediante el parámetro `source` de la función de rellamada de representación y __(1b)__ cualquier parámetro definido en el Perfil de procesamiento mediante el conjunto `rendition.instructions` de parámetros.
-1. El código de trabajo Cálculo de recursos transforma el binario de origen proporcionado en __(1a)__ en función de los parámetros proporcionados por __(1b)__ para generar una representación del binario de origen.
+1. La capa del SDK de cálculo de recursos acepta la solicitud del perfil de procesamiento y orquesta la ejecución de la `renditionCallback(...)` función de trabajo de cálculo de recursos personalizada, transformando el binario de origen proporcionado en __(1a)__ en función de los parámetros proporcionados por __(1b)__ para generar una representación del binario de origen.
    + En este tutorial, la representación se crea &quot;en proceso&quot;, lo que significa que el trabajador compone la representación; sin embargo, el binario de origen se puede enviar también a otras API de servicios Web para la generación de representaciones.
 1. El trabajador de cómputo de recursos guarda la representación binaria de la representación en la `rendition.path` que está disponible para guardarse en el servicio de AEM Author.
-1. Una vez finalizados, los datos binarios escritos en `rendition.path` se exponen a través del servicio de creación de AEM como una representación del recurso AEM en el que se invocó el trabajador de cómputo de recursos.
+1. Una vez finalizados, los datos binarios escritos en `rendition.path` se transportan mediante el SDK de Asset Compute y se exponen a través del servicio de creación de AEM como una representación disponible en la interfaz de usuario de AEM.
+
+El diagrama anterior articula las preocupaciones de cara al desarrollador de Asset Compute y el flujo lógico para invocar al trabajador de Asset Compute. Para los curiosos, los detalles [internos de la ejecución](https://docs.adobe.com/content/help/en/asset-compute/using/extend/custom-application-internals.html) de Asset Compute están disponibles, aunque solo deberían depender los contratos públicos de API de Asset Compute.
 
 ## Anatomía de un trabajador
 
@@ -106,7 +108,7 @@ Este es el archivo JavaScript de trabajo que modificaremos en este tutorial.
 
 ## Instalación e importación de módulos npm compatibles
 
-Como aplicaciones de Node.js, las aplicaciones de Asset Compute se benefician del sólido ecosistema [del módulo](https://npmjs.com)npm. Para aprovechar los módulos npm primero debemos instalarlos en nuestro proyecto de la aplicación Asset Compute.
+Al estar basados en Node.js, los proyectos de Asset Compute se benefician del sólido ecosistema [del módulo](https://npmjs.com)npm. Para aprovechar los módulos npm primero debemos instalarlos en nuestro proyecto Asset Compute.
 
 En este programa de trabajo, aprovechamos el [jimp](https://www.npmjs.com/package/jimp) para crear y manipular la imagen de representación directamente en el código Node.js.
 
@@ -380,6 +382,12 @@ Se leen en el programa de trabajo `index.js` mediante:
    ![Representación PNG parametrizada](./assets/worker/parameterized-rendition.png)
 
 1. Cargue otras imágenes en la lista desplegable del archivo ____ de origen e intente ejecutar el programa de trabajo en su contra con parámetros diferentes.
+
+## Worker index.js en Github
+
+La final `index.js` está disponible en Github en:
+
++ [aem-guides-wknd-asset-compute/actions/worker/index.js](https://github.com/adobe/aem-guides-wknd-asset-compute/blob/master/actions/worker/index.js)
 
 ## Solución de problemas
 
