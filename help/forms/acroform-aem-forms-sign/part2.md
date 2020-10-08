@@ -8,7 +8,7 @@ doc-type: tutorial
 activity: implement
 version: 6.3,6.4
 translation-type: tm+mt
-source-git-commit: 1ba56ad44df4dc327cf37d39ac72539b5c7af4a2
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 2%
@@ -32,4 +32,5 @@ El siguiente paso es crear un esquema a partir de la forma de la Acrobat creada 
 Para que esta demostración funcione en su sistema, deberá crear una carpeta llamada `acroforms` en AEM Assets. Cargue Acrobat en esta `acroforms` carpeta.
 
 >[!NOTE]
-El código de ejemplo busca el formulario en esta carpeta. El formulario es necesario para combinar los datos enviados del formulario adaptable.
+>
+>El código de ejemplo busca el formulario en esta carpeta. El formulario es necesario para combinar los datos enviados del formulario adaptable.
