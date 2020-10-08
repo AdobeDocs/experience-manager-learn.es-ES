@@ -10,7 +10,7 @@ doc-type: tutorial
 activity: understand
 version: 6.5
 translation-type: tm+mt
-source-git-commit: ca4a8f02ea9ec5db15dbe6f322731748da90be6b
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 0%
@@ -129,7 +129,8 @@ Líneas 24-26: Get ResourceResolver y, a continuación, el recurso que apunta a 
 El resto del código crea objetos de Documento iterando a través del objeto secundario del recurso que apunta a attachmentFilePath mediante la API. Este objeto documento es específico de AEM Forms. A continuación, se utiliza el método copyToFile del objeto documento para guardar el objeto documento.
 
 >[!NOTE]
-Dado que utilizamos un objeto de Documento específico de AEM Forms, es necesario incluir la dependencia aemfd-client-sdk en el proyecto principal. El identificador de grupo es com.adobe.aemfd y el identificador de artefacto es aemfd-client-sdk.
+>
+>Dado que utilizamos un objeto de Documento específico de AEM Forms, es necesario incluir la dependencia aemfd-client-sdk en el proyecto principal. El identificador de grupo es com.adobe.aemfd y el identificador de artefacto es aemfd-client-sdk.
 
 #### Generar e implementar
 
