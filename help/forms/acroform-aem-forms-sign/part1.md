@@ -8,7 +8,7 @@ doc-type: tutorial
 activity: implement
 version: 6.3,6.4
 translation-type: tm+mt
-source-git-commit: 1e615d1c51fa0c4c0db335607c29a8c284874c8d
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '204'
 ht-degree: 0%
@@ -38,8 +38,12 @@ Las formas son formularios creados con Acrobat. Puede crear un nuevo formulario 
 [documento de etiquetas de texto de Adobe Sign](https://helpx.adobe.com/sign/using/text-tag.html)
 
 >[!NOTE]
-Asegúrese de que el nombre de archivo de la forma de la pantalla no tenga espacios. El código de muestra actual no gestiona espacios.
-Los nombres de campo de formulario sólo pueden contener lo siguiente
-* espacio único
-* subrayado único
-* Caracteres alfanuméricos
+>
+>Asegúrese de que el nombre de archivo de la forma de la pantalla no tenga espacios. El código de muestra actual no gestiona espacios.
+>
+>Los nombres de campo de formulario solo pueden contener lo siguiente:
+>
+>* espacio único
+>* subrayado único
+>* Caracteres alfanuméricos
+
