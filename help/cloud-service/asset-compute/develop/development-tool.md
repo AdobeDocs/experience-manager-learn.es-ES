@@ -10,7 +10,7 @@ doc-type: tutorial
 kt: 6283
 thumbnail: 40241.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 0%
@@ -50,6 +50,7 @@ Esto inicio la Herramienta de desarrollo en __http://localhost:9000__ y la abre 
 ### Ejecutar un trabajador personalizado
 
 >[!VIDEO](https://video.tv.adobe.com/v/40241?quality=12&learn=on)
+
 _Pulsaciones para ejecutar un trabajo de cómputo de recursos en la herramienta de desarrollo (sin audio)_
 
 1. Asegúrese de que la herramienta de desarrollo de cómputo de recursos se inicie desde la raíz del proyecto mediante el `aio app run` comando .
