@@ -11,7 +11,7 @@ doc-type: article
 activity: implement
 version: 6.4,6.5
 translation-type: tm+mt
-source-git-commit: ca4a8f02ea9ec5db15dbe6f322731748da90be6b
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%
@@ -49,8 +49,10 @@ Puede escribir su propio paquete OSGi y utilizar el SDK del cliente de AEM Forms
 * [Uso de la API de servicio de Documento](https://helpx.adobe.com/experience-manager/6-4/forms/using/aem-document-services-programmatically.html)
 
 O bien, puede utilizar el paquete de muestra incluido como parte de este tutorial.
+
 >[!NOTE]
-El paquete de muestra utiliza el alias &quot;ares&quot; para certificar los documentos. Así que asegúrese de que su alias se llame &quot;ares&quot; al utilizar este paquete
+>
+>El paquete de muestra utiliza el alias &quot;ares&quot; para certificar los documentos. Así que asegúrese de que su alias se llame &quot;ares&quot; al utilizar este paquete
 
 ## Prueba de la muestra en el sistema local
 
