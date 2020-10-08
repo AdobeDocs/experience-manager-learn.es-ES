@@ -9,7 +9,7 @@ doc-type: setup
 activity: use
 version: 6.3, 6.4, 6.5
 translation-type: tm+mt
-source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 0%
@@ -22,6 +22,7 @@ ht-degree: 0%
 Los fragmentos de experiencia permiten a los especialistas en marketing anunciar experiencias creadas en AEM en plataformas de medios sociales. El siguiente vídeo detalla la configuración necesaria para publicar fragmentos de experiencia en Facebook y Pinterest.
 
 >[!VIDEO](https://video.tv.adobe.com/v/20592/?quality=9&learn=on)
+
 *[Fragmentos]de experiencias: configuración para anuncios sociales en Facebook y Pinterest*
 
 ## Lista de comprobación para configurar los fragmentos de experiencia para publicarlos en Facebook y Pinterest
