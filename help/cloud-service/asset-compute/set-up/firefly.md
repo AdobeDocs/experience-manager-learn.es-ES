@@ -10,7 +10,7 @@ doc-type: tutorial
 kt: 6268
 thumbnail: 40183.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 0%
@@ -25,6 +25,7 @@ Los proyectos de Asset Compute son proyectos de Adobe Project Firefly especialme
 ## Creación y configuración de la luciérnaga de proyectos de Adobe en Adobe Developer Console{#set-up}
 
 >[!VIDEO](https://video.tv.adobe.com/v/40183/?quality=12&learn=on)
+
 _Pulsaciones para configurar la luciérnaga del proyecto de Adobe (sin audio)_
 
 1. Inicie sesión en [Adobe Developer Console](https://console.adobe.io) con el Adobe ID asociado a las [cuentas y servicios](./accounts-and-services.md)aprovisionados. Asegúrese de que es administrador ____ del sistema o de que está en la función __de__ desarrollador de la organización de Adobe correcta.
