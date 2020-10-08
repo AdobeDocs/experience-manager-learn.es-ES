@@ -10,7 +10,7 @@ doc-type: tutorial
 activity: understand
 version: 6.5
 translation-type: tm+mt
-source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
@@ -29,14 +29,18 @@ La variable XML puede utilizarse para rellenar previamente el formulario adaptab
 Xpathing puede rellenar la variable de cadena en la variable XML. Esta variable de cadena se suele utilizar para rellenar los marcadores de posición de la plantilla de correo electrónico en el componente Enviar correo electrónico
 
 >[!NOTE]
-Si el formulario adaptable no está asociado con XSD, el XPath para obtener el valor de un elemento tendrá este aspecto**:**
+>
+>Si el formulario adaptable no está asociado con XSD, el XPath para obtener el valor de un elemento tendrá el aspecto siguiente
+>
+>**/afData/afUnboundData/data/nombreremitente**
 
 Los datos del formulario adaptable se almacenan bajo el elemento de datos como se muestra arriba. **_En el XPath submitName anterior es el nombre del campo de texto en el formulario adaptable._**
 
 >[!NOTE]
-**AEM Forms 6.5.0** : cuando esté creando una variable de tipo XML para capturar los datos enviados en el modelo de flujo de trabajo, no asocie el XSD con la variable. Esto se debe a que al enviar el formulario adaptable basado en XSD, los datos enviados no son compatibles con el XSD. Los datos de la queja XSD se incluyen en /afData/afBoundData/ element.
-
-**AEM Forms 6.5.1** - Si asocia XSD con la variable XML, puede explorar los elementos de esquema para realizar la asignación de variables. No podrá acceder a los datos de formulario que no estén enlazados a elementos de esquema. Si el caso de uso es para acceder a datos enlazados a elementos de esquema así como a datos no enlazados, no enlazar el esquema con la variable XML en el flujo de trabajo.Tendrá que utilizar la expresión XPath adecuada para llegar a los datos que necesita
+>
+>**AEM Forms 6.5.0** : cuando esté creando una variable de tipo XML para capturar los datos enviados en el modelo de flujo de trabajo, no asocie el XSD con la variable. Esto se debe a que al enviar el formulario adaptable basado en XSD, los datos enviados no son compatibles con el XSD. Los datos de la queja XSD se incluyen en /afData/afBoundData/ element.
+>
+>**AEM Forms 6.5.1** - Si asocia XSD con la variable XML, puede explorar los elementos de esquema para realizar la asignación de variables. No podrá acceder a los datos de formulario que no estén enlazados a elementos de esquema. Si el caso de uso es para acceder a datos enlazados a elementos de esquema así como a datos no enlazados, no enlazar el esquema con la variable XML en el flujo de trabajo.Tendrá que utilizar la expresión XPath adecuada para llegar a los datos que necesita
 
 ## Creación de variables XML
 
@@ -45,6 +49,7 @@ Los datos del formulario adaptable se almacenan bajo el elemento de datos como s
 ### Uso de Esquema con variable XML
 
 **Asignación de una variable XML con esquema. Utilice esta función con AEM Forms 6.5.1 y versiones posteriores**
+
 >[!VIDEO](https://video.tv.adobe.com/v/28098?quality=9&learn=on)
 
 #### Uso de la variable en el correo electrónico de envío
