@@ -11,7 +11,7 @@ audience: developer
 kt: 4679
 thumbnail: 30603.jpg
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '1508'
 ht-degree: 2%
@@ -74,6 +74,7 @@ La versión de Dispatcher Tools es diferente de la del SDK de AEM. Asegúrese de
 Tenga en cuenta que todos los comandos que se emiten a continuación suponen que el directorio de trabajo actual contiene el contenido de las herramientas de Dispatcher en expansión.
 
 >[!VIDEO](https://video.tv.adobe.com/v/30601/?quality=12&learn=on)
+
 *Este vídeo utiliza macOS para fines ilustrativos. Los comandos equivalentes de Windows/Linux pueden utilizarse para obtener resultados similares*
 
 ## Comprender los archivos de configuración de Dispatcher
@@ -86,6 +87,7 @@ Las Herramientas de Dispatcher proporcionan un conjunto de archivos de configura
 Estos archivos están destinados a copiarse en un proyecto de Experience Manager Maven en la `dispatcher/src` carpeta, si no existen en el proyecto de Experience Manager Maven.
 
 >[!VIDEO](https://video.tv.adobe.com/v/30602/?quality=12&learn=on)
+
 *Este vídeo utiliza macOS para fines ilustrativos. Los comandos equivalentes de Windows/Linux pueden utilizarse para obtener resultados similares*
 
 Una descripción completa de los archivos de configuración está disponible en las herramientas de Dispatcher sin empaquetar como `dispatcher-sdk-x.x.x/docs/Config.html`.
@@ -142,6 +144,7 @@ Para ejecutar las herramientas de Dispatcher en la configuración de Dispatcher 
    ```
 
 >[!VIDEO](https://video.tv.adobe.com/v/30603/?quality=12&learn=on)
+
 *Este vídeo utiliza macOS para fines ilustrativos. Los comandos equivalentes de Windows/Linux pueden utilizarse para obtener resultados similares*
 
 ## Registros de herramientas de despachador
@@ -177,6 +180,7 @@ Se pueden pasar uno o varios parámetros a `docker_run`
    ```
 
 >[!VIDEO](https://video.tv.adobe.com/v/30604/?quality=12&learn=on)
+
 *Este vídeo utiliza macOS para fines ilustrativos. Los comandos equivalentes de Windows/Linux pueden utilizarse para obtener resultados similares*
 
 ## Cuándo actualizar las herramientas de Dispatcher{#dispatcher-tools-version}
