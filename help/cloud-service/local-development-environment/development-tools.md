@@ -10,7 +10,7 @@ audience: developer
 kt: 4267
 thumbnail: 25907.jpg
 translation-type: tm+mt
-source-git-commit: 50519b9526182b528047069f211498099e3a4c88
+source-git-commit: cb5f3c323c433c9321ba26ac1194be0cd225a405
 workflow-type: tm+mt
 source-wordcount: '1366'
 ht-degree: 1%
@@ -88,8 +88,10 @@ Si utiliza Homebrew, siga las instrucciones de __Instalación con Homebrew__ que
 ![Node.js y npm](./assets/development-tools/nodejs-and-npm.png)
 
 >[!TIP]
-> [AEM proyectos de AEM basados en arquetipos](https://github.com/adobe/aem-project-archetype)de proyecto instalan una versión aislada de Node.js en el momento de la compilación. Es bueno mantener la versión del sistema de desarrollo local sincronizada (o cercana) con las versiones Node.js y npm especificadas en el reactor pom.xml del proyecto AEM Maven.
-Consulte este ejemplo [AEM Project Reactor pom.xml](https://github.com/adobe/aem-guides-wknd/blob/9ac94f3f40c978a53ec88fae79fbc17dd2db72f2/pom.xml#L117-L118) para ver dónde se localizan las versiones de compilación Node.js y npm.
+>
+>[AEM proyectos de AEM basados en arquetipos](https://github.com/adobe/aem-project-archetype)de proyecto instalan una versión aislada de Node.js en el momento de la compilación. Es bueno mantener la versión del sistema de desarrollo local sincronizada (o cercana) con las versiones Node.js y npm especificadas en el reactor pom.xml del proyecto AEM Maven.
+>
+>Consulte este ejemplo [AEM Project Reactor pom.xml](https://github.com/adobe/aem-guides-wknd/blob/9ac94f3f40c978a53ec88fae79fbc17dd2db72f2/pom.xml#L117-L118) para ver dónde se localizan las versiones de compilación Node.js y npm.
 
 ## Instalar Maven
 
