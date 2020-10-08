@@ -12,7 +12,7 @@ activity: implement
 version: 6.4,6.5
 discoiquuid: 1a7cf095-c5d8-4d92-a018-883cda76fe70
 translation-type: tm+mt
-source-git-commit: 4f51f7bf00827210d2631b9335768a9980f6655c
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 1%
@@ -68,5 +68,7 @@ Inicie sesión en AEM Forms.
 * [Abra getad.html](http://localhost:4502/content/getad.html)
 
 * El código asociado con esta URL obtendrá el número de cuenta del usuario que ha iniciado sesión. A continuación, este número de cuenta se pasa como atributo de solicitud a FDM. El FDM recuperará los datos asociados con este número de cuenta y rellenará el documento de canal web.
+
 >[!NOTE]
-Consulte el archivo **/apps/AEMForms/fetchad/GET.jsp** en crx. Asegúrese de que la variable de cadena webChannelDocument apunte a una ruta de documento de comunicación válida.
+>
+>Consulte el archivo **/apps/AEMForms/fetchad/GET.jsp** en crx. Asegúrese de que la variable de cadena webChannelDocument apunte a una ruta de documento de comunicación válida.
