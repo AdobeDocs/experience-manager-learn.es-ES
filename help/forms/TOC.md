@@ -6,9 +6,9 @@ user-guide-description: Collection of AEM Forms resources for beginners and expe
 breadcrumb-title: AEM Forms Tutorials
 index: y
 translation-type: tm+mt
-source-git-commit: 4c08b09f59be0eb6644aaec729807b92bc339e82
+source-git-commit: 8aed732a0488aa9303ddf35f6c2065eb08ec0c4c
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '843'
 ht-degree: 3%
 
 ---
@@ -169,7 +169,9 @@ ht-degree: 3%
    + [Aplicar derechos de uso a PDF en representación XDP](document-services/rendering-and-reader-extending-xdp-templates-article.md)
    + [Aplicar derechos de uso al PDF cargado](document-services/apply-reader-extension-rights-to-pdf.md)
    + [Certificar Documentos](document-services/certifying-documents-aem-forms-tutorial.md)
-+ Comunicaciones interactivas para Canal impreso {#ic-print-channel-tutorial}
+   + [Compilación de datos adjuntos de formulario](document-services/assemble-form-attachments.md)
++ Comunicaciones interactivas para Canal impreso
+{#ic-print-channel-tutorial}
    + [Introducción](ic-print-channel-tutorial/introduction.md)
    + [Configurar Tomcat](ic-print-channel-tutorial/set-up-tomcat.md)
    + [Crear fuente de datos](ic-print-channel-tutorial/create-data-source.md)
