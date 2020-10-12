@@ -10,9 +10,9 @@ version: 6.4,6.5
 kt: 6406
 thumbnail: kt-6406.jpg
 translation-type: tm+mt
-source-git-commit: 8aed732a0488aa9303ddf35f6c2065eb08ec0c4c
+source-git-commit: a9fbd73f128998bb201ef8715e5e725e94ee1ede
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '619'
 ht-degree: 0%
 
 ---
@@ -137,7 +137,7 @@ A continuación se muestra la estructura de la carpeta de carga útil después d
 * Descargue el formulario [](assets/assemble-form-attachments-af.zip) Compilación de archivos adjuntos de formulario en el sistema local.
 * Importe el formulario desde[la página Formularios y Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) .
 * Descargue [el flujo de trabajo](assets/assemble-form-attachments.zip) e impórtelos en AEM mediante el administrador de paquetes.
-* Descargue el paquete personalizado (assets/assembletaskattachments.assembletaskattachments.core-1.0-SNAPSHOT.jar)
+* Descargar el paquete [personalizado](assets/assembletaskattachments.assembletaskattachments.core-1.0-SNAPSHOT.jar)
 * Implementar y inicio del paquete mediante la consola [web](http://localhost:4502/system/console/bundles)
 * Apunta al explorador para que muestre el formulario [AssembleAttachments](http://localhost:4502/content/dam/formsanddocuments/assembleattachments/jcr:content?wcmmode=disabled)
 * Añadir un archivo adjunto en el Documento de ID y un par de documentos en pdf en la sección de extractos bancarios
