@@ -6,19 +6,19 @@ doc-type: tutorial
 activity: develop
 audience: developer
 user-guide-title: 'Introducción a AEM Sites: Tutorial de WKND'
-user-guide-description: A multi-part tutorial for developers new to AEM. Implement an AEM site for a fictitious lifestyle brand, the WKND.
-breadcrumb-title: AEM Sites WKND Tutorials
+user-guide-description: Un tutorial de varias partes para desarrolladores que van a usar AEM por primera vez. Implementar un sitio AEM para una marca ficticia de ropa, WKND.
+breadcrumb-title: Tutoriales de WKND de AEM Sites
 index: y
 translation-type: tm+mt
 source-git-commit: 172a1369cb572b367c78e04c692db8e02e7287e7
 workflow-type: tm+mt
-source-wordcount: '33'
-ht-degree: 18%
+source-wordcount: '56'
+ht-degree: 76%
 
 ---
 
 
-# Getting Started with AEM Sites - WKND Tutorial {#getting-started-wknd-tutorial-develop}
+# Introducción a AEM Sites: Tutorial de WKND {#getting-started-wknd-tutorial-develop}
 
 + [Información general del tutorial de WKND](overview.md)
 + [Configuración del proyecto](project-setup.md)
