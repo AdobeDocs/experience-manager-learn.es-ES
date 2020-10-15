@@ -1,7 +1,7 @@
 ---
-user-guide-title: Introducción a AEM sin cabeza
-user-guide-description: An end-to-end tutorial illustrating how to build-out and expose content using AEM Headless.
-breadcrumb-title: AEM Headless Tutorial
+user-guide-title: Introducción a AEM sin encabezado
+user-guide-description: Un tutorial completo que ilustra cómo crear y exponer contenido mediante AEM sin encabezado.
+breadcrumb-title: Tutorial de AEM sin encabezado
 version: 6.5
 sub-product: content-services
 doc-type: tutorial
@@ -14,13 +14,13 @@ index: y
 translation-type: tm+mt
 source-git-commit: 172a1369cb572b367c78e04c692db8e02e7287e7
 workflow-type: tm+mt
-source-wordcount: '48'
-ht-degree: 2%
+source-wordcount: '64'
+ht-degree: 42%
 
 ---
 
 
-# Getting Started with AEM Headless{#getting-started-with-aem-headless}
+# Introducción a AEM sin encabezado{#getting-started-with-aem-headless}
 
 + [Información general](./overview.md)
 + [1 - Configuración de tutoriales](./chapter-1.md)
