@@ -10,9 +10,9 @@ version: cloud-service
 kt: 6296
 thumbnail: KT-6296.jpg
 translation-type: tm+mt
-source-git-commit: 97fe98c8c62f5472f7771bbc803b2a47dc97044d
+source-git-commit: 096cdccdf1675480aa0a35d46ce7b62a3906dad1
 workflow-type: tm+mt
-source-wordcount: '1773'
+source-wordcount: '1831'
 ht-degree: 1%
 
 ---
@@ -255,9 +255,13 @@ Actualmente, la regla **Llamada a acción: Clic** simplemente genera una sentenc
 
    * `evar8` - `%Component ID%`
    * `prop8` - `%Component ID%`
-   * `event8` - `CTA Clicked`
+   * `event8`
 
    ![Definir propiedades y eventos de eVar](assets/track-clicked-component/set-evar-prop-event.png)
+
+   >[!NOTE]
+   >
+   > Aquí `%Component ID%` se utiliza, ya que garantiza un identificador único para la llamada a acción en la que se hizo clic. Un posible inconveniente de usar `%Component ID%` es que el informe de Analytics contendrá valores como `button-2e6d32893a`. Usar `%Component Title%` daría un nombre más humano pero el valor podría no ser único.
 
 1. A continuación, agregue una acción adicional a la derecha de las variables **de** Adobe Analytics - Establecer tocando el icono de **signo más** :
 
@@ -265,9 +269,11 @@ Actualmente, la regla **Llamada a acción: Clic** simplemente genera una sentenc
 
 1. Establezca el tipo de **extensión** en **Adobe Analytics** y el tipo **de** acción en **Enviar señalización**.
 1. En **Seguimiento** , establezca el botón de radio en **`s.tl()`**.
-1. Para Tipo **de** vínculo, elija Vínculo **** personalizado y, para Nombre **del** vínculo, defina el valor en el elemento de datos Título **del** componente:
+1. Para Tipo **de** vínculo, elija Vínculo **** personalizado y, para Nombre **del** vínculo, defina el valor en: **`%Component Title%: CTA Clicked`**::
 
    ![Configuración de la señalización Enviar vínculo](assets/track-clicked-component/analytics-send-beacon-link-track.png)
+
+   Esto combinará la variable dinámica del elemento de datos Título **del** componente y la cadena estática **Llamada a acción: Clic**.
 
 1. Guarde los cambios. La regla **Llamada a acción: Clic** ahora debe tener la siguiente configuración:
 
