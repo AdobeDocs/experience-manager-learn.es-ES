@@ -10,9 +10,9 @@ audience: developer
 kt: 4678, 4677
 thumbnail: 32551.jpg
 translation-type: tm+mt
-source-git-commit: ecbd4d21c5f41b2bc6db3b409767b767f00cc5d1
+source-git-commit: 4cfbf975919eb38413be8446b70b107bbfebb845
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1406'
 ht-degree: 1%
 
 ---
@@ -23,12 +23,6 @@ ht-degree: 1%
 Adobe Experience Manager (AEM) se puede ejecutar localmente mediante el AEM como Jar Quickstart de un SDK de Cloud Service. Esto permite que los desarrolladores implementen y prueben el código personalizado, la configuración y el contenido antes de comprometerlo con el control de código fuente e implementarlo en un AEM como entorno de Cloud Service.
 
 Tenga en cuenta que `~` se utiliza como método abreviado para el Directorio del usuario. En Windows, este es el equivalente de `%HOMEPATH%`.
-
->[!VIDEO](https://video.tv.adobe.com/v/32551/?quality=12&learn=on)
-
->[!NOTE]
->
-> Este vídeo muestra cómo instalar y ejecutar una instancia local de Adobe Experience Manager en tan solo unos minutos con el inicio rápido local del SDK de AEM. Este vídeo muestra cómo iniciar el inicio rápido local del SDK de AEM haciendo clic con el doble en el archivo Jar de inicio rápido, aunque esto no funcionará en Java 8 que esté instalado en el equipo. De forma alternativa, el inicio rápido local del SDK de AEM se puede iniciar desde la línea de comandos mediante el `java -jar ...` comando, tal como se [describe en esta página](#set-up-local-aem-author-service).
 
 ## Instalar Java
 
@@ -55,9 +49,6 @@ El AEM como SDK de Cloud Service o SDK de AEM contiene el Jar de inicio rápido 
 ## Extracción de la barra de inicio rápido del zip del SDK de AEM
 
 1. Descomprima el archivo `aem-sdk-XXX.zip` descargado
-1. Asegúrese de que el archivo __license.properties__ del desarrollador Experience Manager esté disponible
-
-Tenga en cuenta que los mismos archivos de Jar de inicio rápido y license.properties se utilizan para el inicio _tanto_ de AEM Author como de los servicios de publicación.
 
 ## Configuración del servicio local de AEM Author{#set-up-local-aem-author-service}
 
@@ -65,7 +56,6 @@ El servicio local de creación de AEM proporciona a los desarrolladores una expe
 
 1. Crear la carpeta `~/aem-sdk/author`
 1. Copie el archivo JAR __de__ inicio rápido en `~/aem-sdk/author` y cambie su nombre a `aem-author-p4502.jar`
-1. Copie el archivo __license.properties__ en  `~/aem-sdk/author`
 1. Inicio del servicio local de creación de AEM ejecutando lo siguiente desde la línea de comandos:
    + `java -jar aem-author-p4502.jar`
       + Proporcione la contraseña de administrador como `admin`. Se acepta cualquier contraseña de administrador, pero se recomienda utilizar el valor predeterminado para el desarrollo local a fin de reducir la necesidad de volver a configurar.
@@ -78,7 +68,6 @@ Windows:
 ```shell
 $ mkdir -p c:\Users\<My User>\aem-sdk\author
 $ copy aem-sdk-Quickstart-XXX.jar c:\Users\<My User>\aem-sdk\author\aem-author-p4502.jar
-$ copy ../license.properties c:\Users\<My User>\aem-sdk\author
 $ cd c:\Users\<My User>\aem-sdk\author
 $ java -jar aem-author-p4502.jar
 ```
@@ -88,7 +77,6 @@ macOS / Linux:
 ```shell
 $ mkdir -p ~/aem-sdk/author
 $ cp aem-sdk-Quickstart-XXX.jar ~/aem-sdk/author/aem-author-p4502.jar
-$ cp ../license.properties ~/aem-sdk/author
 $ cd ~/aem-sdk/author
 $ java -jar aem-author-p4502.jar
 ```
@@ -99,7 +87,6 @@ El servicio de publicación AEM local proporciona a los desarrolladores la exper
 
 1. Crear la carpeta `~/aem-sdk/publish`
 1. Copie el archivo JAR __de__ inicio rápido en `~/aem-sdk/publish` y cambie su nombre a `aem-publish-p4503.jar`
-1. Copie el archivo __license.properties__ en  `~/aem-sdk/publish`
 1. Inicio del servicio de publicación AEM local mediante la ejecución de lo siguiente desde la línea de comandos:
    + `java -jar aem-publish-p4503.jar`
       + Proporcione la contraseña de administrador como `admin`. Se acepta cualquier contraseña de administrador, pero se recomienda utilizar el valor predeterminado para el desarrollo local a fin de reducir la necesidad de volver a configurar.
@@ -112,7 +99,6 @@ Windows:
 ```shell
 $ mkdir -p c:\Users\<My User>\aem-sdk\publish
 $ copy aem-sdk-Quickstart-XXX.jar c:\Users\<My User>\aem-sdk\publish\aem-publish-p4503.jar
-$ copy ../license.properties c:\Users\<My User>\aem-sdk\publish
 $ cd c:\Users\<My User>\aem-sdk\publish
 $ java -jar aem-publish-p4503.jar
 ```
@@ -122,7 +108,6 @@ macOS / Linux:
 ```shell
 $ mkdir -p ~/aem-sdk/publish
 $ cp aem-sdk-Quickstart-XXX.jar ~/aem-sdk/publish/aem-publish-p4503.jar
-$ cp ../license.properties ~/aem-sdk/publish
 $ cd ~/aem-sdk/publish
 $ java -jar aem-publish-p4503.jar
 ```
