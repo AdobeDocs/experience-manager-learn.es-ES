@@ -8,9 +8,9 @@ topics: development, authoring, configuring, renditions, images
 audience: all
 activity: use
 translation-type: tm+mt
-source-git-commit: 5eeeb197f9a2ee4216e1f9220c830751c36f01ab
+source-git-commit: 317fb625e7af57b7ad0079014c341eab9adda376
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '694'
 ht-degree: 1%
 
 ---
@@ -48,7 +48,7 @@ Las imágenes inteligentes funcionan con imágenes enviadas a través de HTTP, H
 
 Las imágenes inteligentes se incluyen en la licencia existente de Dynamic Media Classic. No hay costos adicionales para esta función. Para aprovecharlo, debe cumplir dos requisitos: tienen una CDN integrada en Adobe y un dominio dedicado. A continuación, debe activarlo para su cuenta porque no se habilita automáticamente.
 
-Al habilitar los inicios de imágenes inteligentes, puede enviar una solicitud al servicio de asistencia técnica enviando un correo electrónico a [s7support@adobe.com](mailto:s7support@adobe.com). Trabajarán con usted para configurar un dominio personalizado que asociará con las imágenes inteligentes. Cambiará un parámetro relacionado con el almacenamiento en caché (Tiempo de vida o TTL) y la compatibilidad borrará la caché. También puede realizar un paso de ensayo opcional, si lo desea, antes de ir a producción. A continuación, cuando las imágenes inteligentes estén activadas, entregará a los clientes imágenes de menor tamaño, pero con la misma calidad que solicitaron. Esto significa que experimentan tiempos de carga de página más rápidos. y todo esto se realiza automáticamente porque Adobe Sensei ayuda a elegir el tamaño más eficiente.
+Activación de inicios de imágenes inteligentes mediante el envío de asistencia técnica mediante una solicitud de |creación de un caso de soporte| [https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). La asistencia técnica trabajará con usted para configurar un dominio personalizado que asociará con las imágenes inteligentes. Cambiará un parámetro relacionado con el almacenamiento en caché (Tiempo de vida o TTL) y la compatibilidad borrará la caché. También puede realizar un paso de ensayo opcional, si lo desea, antes de ir a producción. A continuación, cuando las imágenes inteligentes estén activadas, entregará a los clientes imágenes de menor tamaño, pero con la misma calidad que solicitaron. Esto significa que experimentan tiempos de carga de página más rápidos. y todo esto se realiza automáticamente porque Adobe Sensei ayuda a elegir el tamaño más eficiente.
 
 Una vez habilitadas las imágenes inteligentes, deberá comprobar que funcionan correctamente.
 
