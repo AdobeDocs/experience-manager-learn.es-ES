@@ -8,9 +8,9 @@ doc-type: technical video
 activity: setup
 version: 6.4, 6.5
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 1faf22f2e664b775c11e16cb1dfa18b363a7316b
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '426'
 ht-degree: 5%
 
 ---
@@ -40,7 +40,7 @@ Para habilitar las funciones de ContextHub y vincular a las bibliotecas JavaScri
 
 ## Configuración del sitio y segmentos de ContextHub {#site-configuration-and-contexthub-segments}
 
-ContextHub incluye un motor de segmentación que administra segmentos y determina qué segmentos se resuelven para el contexto actual. Se definen varios segmentos. Puede utilizar la API de JavaScript para [determinar los segmentos](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ch-adding.html#DeterminingResolvedContextHubSegments)resueltos. Habilite los segmentos de ContextHub para su sitio en [!UICONTROL Navegador]de configuración.
+ContextHub incluye un motor de segmentación que administra segmentos y determina qué segmentos se resuelven para el contexto actual. Se definen varios segmentos. Puede utilizar la API de JavaScript para [determinar los segmentos](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ch-adding.html#DeterminingResolvedContextHubSegments)resueltos. Habilite los segmentos de ContextHub para su sitio en [[!UICONTROL Navegador]](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html)de configuración.
 
 ## Crear segmentos {#create-segments}
 
