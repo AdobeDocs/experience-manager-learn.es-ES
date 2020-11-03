@@ -2,7 +2,7 @@
 title: Capítulo 5 - Creación de páginas de servicios de contenido
 description: El capítulo 5 del tutorial sin encabezado de AEM cubre la creación de páginas a partir de las plantillas definidas en el capítulo 4. Estas páginas actuarán como puntos finales HTTP JSON.
 translation-type: tm+mt
-source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 0%
@@ -20,7 +20,7 @@ El capítulo 5 del tutorial sin encabezado de AEM cubre la creación de la pági
 
 ## Creación de la página de API de Evento
 
-1. Vaya a **[!UICONTROL AEM]>[!UICONTROL Sitios]>[!DNL WKND Mobile]>[!DNL English]>[!DNL API]**.
+1. Vaya a **[!UICONTROL AEM] > [!UICONTROL Sitios] > [!DNL WKND Mobile] > [!DNL English] >[!DNL API]**.
 1. **Toque la etiqueta de la página** de API, luego toque el botón **Crear** en la barra de acciones superior y cree una nueva página de API de Eventos en la página de API.
    1. Toque **Crear** en la barra de acciones superior
    1. Seleccionar plantilla de API **de** Eventos
@@ -44,7 +44,7 @@ El capítulo 5 del tutorial sin encabezado de AEM cubre la creación de la pági
 1. Añada la línea **** de etiquetas para que se muestre encima de los eventos.
    1. Edición del componente **Texto**
    1. Escriba el texto:
-      1. `The WKND is here.`
+      * `The WKND is here.`
 
 1. Seleccione los **eventos** que desea mostrar:
    1. Defina la siguiente configuración en la ficha **Propiedades** :
