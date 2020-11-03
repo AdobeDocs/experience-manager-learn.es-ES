@@ -10,9 +10,9 @@ audience: developer
 kt: 5802
 thumbnail: KT-5802.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '1028'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 AEM los microservicios de cómputo de activos de Cloud Service admiten el desarrollo y la implementación de trabajadores personalizados que se utilizan para leer y manipular datos binarios de recursos almacenados en AEM, más comúnmente, para crear representaciones de recursos personalizadas.
 
-Mientras que en AEM 6.x los procesos personalizados de flujo de trabajo de AEM se utilizaban para leer, transformar y escribir representaciones de recursos, en AEM como Cloud Service de recursos de cálculo satisfacen esta necesidad.
+Mientras que en AEM 6.x los procesos personalizados de flujo de trabajo de AEM se utilizaban para leer, transformar y escribir representaciones de recursos, en AEM como Cloud Service Asset Compute los trabajadores satisfacen esta necesidad.
 
 ## Qué hará
 
@@ -50,7 +50,7 @@ Las siguientes cuentas y servicios requieren aprovisionamiento y acceso a para c
 
 ### Entorno de desarrollo local
 
-El desarrollo local de los proyectos de Asset Compute requiere un conjunto de herramientas para desarrolladores específico, diferente del desarrollo de AEM tradicional, que incluye: Microsoft Visual Studio Code, Docker Desktop, Node.js y módulos npm compatibles.
+El desarrollo local de los proyectos de Asset Compute requiere un conjunto de herramientas específicas para desarrolladores, diferente del desarrollo de AEM tradicional, que incluye: Microsoft Visual Studio Code, Docker Desktop, Node.js y módulos npm compatibles.
 
 + [Configurar el entorno de desarrollo local](./set-up/development-environment.md)
 
@@ -112,7 +112,7 @@ Los trabajadores de Asset Compute proporcionan varios niveles de depuración des
 
 ## Implementar
 
-Obtenga información sobre cómo integrar a los trabajadores personalizados de Asset Compute con AEM como Cloud Service, implementándolos primero en Adobe I/O Runtime e invocando desde AEM como autor Cloud Service a través de Perfiles de procesamiento de AEM Assets.
+Obtenga información sobre cómo integrar a los trabajadores personalizados de Asset Compute con AEM como Cloud Service, implementándolos primero en Adobe I/O Runtime e invocando desde AEM como autor Cloud Service a través de los Perfiles de procesamiento de AEM Assets.
 
 ### Implementar en Adobe I/O Runtime
 
@@ -126,9 +126,15 @@ Una vez implementados en Adobe I/O Runtime, los trabajadores de Asset Compute pu
 
 + [Integración con Perfiles de procesamiento de AEM](./deploy/processing-profiles.md)
 
-## Tutorial codebase on Github
+## Avanzado 
 
-El tutorial codebase está disponible en Github en:
+Estos tutoriales abreviados abordan casos de uso más avanzados basados en las enseñanzas básicas establecidas en los capítulos anteriores.
+
++ [Desarrollar un trabajador](./advanced/metadata.md) de metadatos de cálculo de recursos que pueda volver a escribir metadatos en el
+
+## El código base en Github
+
+El código base del tutorial está disponible en Github en:
 
 + [adobe/aem-guide-wknd-asset-compute](https://github.com/adobe/aem-guides-wknd-asset-compute) @ ramificación maestra
 
@@ -142,14 +148,13 @@ Los siguientes son varios recursos de Adobe que proporcionan información adicio
 
 + [Documentación de Asset Compute Service](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)
 + [Léame de la herramienta de desarrollo de cómputo de recursos](https://github.com/adobe/asset-compute-devtool)
-
-### Otros ejemplos de código
-
 + [Trabajadores de ejemplo de cálculo de recursos](https://github.com/adobe/asset-compute-example-workers)
 
 ### API y SDK
 
 + [SDK de cómputo de recursos](https://github.com/adobe/asset-compute-sdk)
    + [Asset Compute Commons](https://github.com/adobe/asset-compute-commons)
+   + [XMP de cómputo de recursos](https://github.com/adobe/asset-compute-xmp#readme)
 + [Biblioteca de ajustes de Blobstore de Adobe Cloud](https://github.com/adobe/node-cloud-blobstore-wrapper)
 + [Biblioteca de reintentos de búsqueda de nodos de Adobe](https://github.com/adobe/node-fetch-retry)
++ [Trabajadores de ejemplo de cálculo de recursos](https://github.com/adobe/asset-compute-example-workers)
