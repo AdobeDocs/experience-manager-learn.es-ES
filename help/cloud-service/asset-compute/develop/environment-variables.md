@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6270
 thumbnail: KT-6270.jpg
 translation-type: tm+mt
-source-git-commit: 50519b9526182b528047069f211498099e3a4c88
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
@@ -113,8 +113,4 @@ Para la herramienta de desarrollo de cómputo de recursos de inicio para el proy
 
 ## Solución de problemas
 
-### Las herramientas de desarrollo local de cálculo de recursos no pueden inicio debido a la falta de private.key
-
-+ __Error:__ Error del servidor de desarrollo local: Faltan los archivos necesarios en validatePrivateKeyFile.... (a través de la salida estándar del `aio app run` comando)
-+ __Causa:__ El `ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH` valor del `.env` archivo no apunta a `private.key` o no `private.key` es legible por el usuario actual.
-+ __Resolución:__ Revise el `ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH` valor del `.env` archivo y asegúrese de que contiene la ruta completa y absoluta al `private.key` archivo del sistema de archivos.
++ [La herramienta de desarrollo no puede inicio debido a la falta de private.key](../troubleshooting.md#missing-private-key)
