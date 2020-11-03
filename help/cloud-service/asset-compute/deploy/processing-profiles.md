@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6287
 thumbnail: KT-6287.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '630'
 ht-degree: 2%
 
 ---
@@ -39,7 +39,7 @@ En primer lugar, cree un nuevo Perfil de procesamiento que invoque al programa d
    + __Extensión:__ `png`
       + La extensión de la representación que se generará. Se establece en `png` ya que este es el formato de salida admitido por el servicio Web del trabajador y resulta en un fondo transparente detrás del círculo cortado.
    + __Extremo:__ `https://...adobeioruntime.net/api/v1/web/wkndAemAssetCompute-0.0.1/worker`
-      + Es la dirección URL del trabajador obtenida mediante `aio app get-url`. Asegúrese de que la dirección URL apunte al espacio de trabajo correcto según la AEM como entorno de Cloud Service en el que se está configurando el Perfil de procesamiento. Tenga en cuenta que este subdominio coincide con el `development` espacio de trabajo.
+      + Es la dirección URL del trabajador obtenida mediante `aio app get-url`. Asegúrese de que la dirección URL apunte al espacio de trabajo correcto según la AEM como entorno de Cloud Service.
       + Asegúrese de que la dirección URL del trabajo señala al espacio de trabajo correcto. AEM como etapa de Cloud Service debe utilizar la dirección URL del espacio de trabajo de la fase y AEM como Cloud Service Producción debe utilizar la dirección URL del espacio de trabajo Producción.
    + __Parámetros de servicio__
       + Puntee en __Añadir parámetro__
@@ -54,7 +54,7 @@ En primer lugar, cree un nuevo Perfil de procesamiento que invoque al programa d
       + Estos pares de clave y valor que se pasan al programa de trabajo de cálculo de recursos y están disponibles a través del objeto `rendition.instructions` JavaScript.
    + __Tipos MIME__
       + __Incluye:__ `image/jpeg`, `image/png`, `image/gif`, `image/bmp`, `image/tiff`
-         + Estos tipos MIME son los únicos compatibles con el servicio web del trabajador, lo que limita los recursos que puede procesar el trabajador personalizado.
+         + Estos tipos MIME son los únicos módulos npm del trabajador. Esta lista limita los recursos que procesará el programa de trabajo personalizado.
       + __Excluye:__ `Leave blank`
          + Nunca procese recursos con estos tipos MIME mediante esta configuración de servicio. En este caso, sólo usamos una lista de permitidos.
 1. Toque __Guardar__ en la parte superior derecha
@@ -83,26 +83,9 @@ El proyecto final de Asset Compute está disponible en Github en:
 
 + [aem-guide-wknd-asset-compute](https://github.com/adobe/aem-guides-wknd-asset-compute)
 
-_Github contiene es el estado final del proyecto, totalmente rellenado con los casos de trabajo y prueba, pero no contiene credenciales, por ejemplo.`.env`,`.config.json`o`.aio`._
+_Github contiene es el estado final del proyecto, totalmente rellenado con los casos de trabajo y prueba, pero no contiene credenciales, por ejemplo. `.env`, `.config.json` o `.aio`._
 
 ## Solución de problemas
 
-### Falta la representación personalizada del recurso
-
-+ __Error:__ Los recursos nuevos y reprocesados se procesan correctamente, pero faltan la representación personalizada
-
-#### Perfil de procesamiento no aplicado a la carpeta antecesora
-
-+ __Causa:__ El recurso no existe en una carpeta con el Perfil de procesamiento que utiliza el programa de trabajo personalizado
-+ __Resolución:__ Aplicar el Perfil de procesamiento a una carpeta antecesora del recurso
-
-#### Perfil de procesamiento sustituido por un Perfil de procesamiento inferior
-
-+ __Causa:__ El recurso existe debajo de una carpeta con el Perfil de procesamiento de trabajador personalizado aplicado, pero se ha aplicado un Perfil de procesamiento diferente que no utiliza el programa de trabajo de cliente entre dicha carpeta y el recurso.
-+ __Resolución:__ Combinar o conciliar de otro modo los dos Perfiles de procesamiento y eliminar el Perfil de procesamiento intermedio
-
-### No se pudo procesar el recurso
-
-+ __Error:__ Se muestra el distintivo Error en el procesamiento de recursos en el recurso
-+ __Causa:__ Error al ejecutar el programa de trabajo personalizado
-+ __Resolución:__ Siga las instrucciones para [depurar activaciones](../test-debug/debug.md#aio-app-logs) de Adobe I/O Runtime mediante `aio app logs`.
++ [Falta la representación personalizada del recurso en AEM](../troubleshooting.md#custom-rendition-missing-from-asset)
++ [El procesamiento de recursos falla en AEM](../troubleshooting.md#asset-processing-fails)
