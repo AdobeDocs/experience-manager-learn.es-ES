@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6285
 thumbnail: 40383.jpg
 translation-type: tm+mt
-source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '618'
 ht-degree: 0%
 
 ---
@@ -103,40 +103,9 @@ _Pulsación de depuración de un trabajador de cálculo de recursos mediante wsk
 
 ## Solución de problemas
 
-### El depurador no se adjunta
-
-+ __Error__: Error al procesar el inicio: Error: No se pudo conectar al destinatario de depuración en...
-+ __Causa__: Docker Desktop no se está ejecutando en el sistema local. Para verificar esto, revise la consola de depuración de código VS (Vista > Consola de depuración) y confirme que se ha producido este error.
-+ __Resolución__: Inicio [Docker Desktop y confirme que las imágenes de acoplamiento necesarias están instaladas](../set-up/development-environment.md#docker).
-
-### Puntos de interrupción que no se pausan
-
-+ __Error__: Al ejecutar el trabajador de cálculo de recursos desde la herramienta de desarrollo depurable, VS Code no se pausa en los puntos de interrupción.
-
-#### El depurador de código VS no está adjunto
-
-+ __Causa:__ El depurador de código VS se detuvo o desconectó.
-+ __Resolución:__ Reinicie el depurador de código VS y verifique que se adjunta, mirando la consola de salida de depuración de código VS (Vista > Consola de depuración)
-
-#### El depurador de código VS se adjunta después de iniciarse la ejecución del trabajo
-
-+ __Causa:__ El depurador de código VS no se adjuntó antes de tocar __Ejecutar__ en la herramienta de desarrollo.
-+ __Resolución:__ Asegúrese de que el depurador se ha conectado mediante la revisión de la consola de depuración de VS Code (Vista > Consola de depuración) y, a continuación, vuelva a ejecutar el programa de trabajo de Asset Compute desde la herramienta de desarrollo.
-
-### Se agotó el tiempo de espera del trabajador durante la depuración
-
-+ __Error__: La consola de depuración informa de que la acción se agotará en -XXX milisegundos&quot; o de que la previsualización de representación de la herramienta de desarrollo de cómputo de [](../develop/development-tool.md) recursos gira indefinidamente o
-+ __Causa__: Se ha superado el tiempo de espera de trabajo definido en [manifest.yml](../develop/manifest.md) durante la depuración.
-+ __Resolución__: Aumente temporalmente el tiempo de espera del programa de trabajo en [manifest.yml](../develop/manifest.md) o acelere las actividades de depuración.
-
-### No se puede terminar el proceso de depuración
-
-+ __Error__: `Ctrl-C` en la línea de comandos no termina el proceso de depuración (`npx adobe-asset-compute devtool`).
-+ __Causa__: Un error en `@adobe/aio-cli-plugin-asset-compute` 1.3.x `Ctrl-C` no se reconoce como un comando de finalización.
-+ __Resolución__: Actualización `@adobe/aio-cli-plugin-asset-compute` a la versión 1.4.1+
-
-   ```
-   $ aio update
-   ```
-
-   ![Resolución de problemas: actualización de aio](./assets/debug/troubleshooting__terminate.png)
++ [El depurador no se adjunta](../troubleshooting.md#debugger-does-not-attach)
++ [Puntos de interrupción que no se pausan](../troubleshooting.md#breakpoints-no-pausing)
++ [El depurador de código VS no está adjunto](../troubleshooting.md#vs-code-debugger-not-attached)
++ [El depurador de código VS se adjunta después de iniciarse la ejecución del trabajo](../troubleshooting.md#vs-code-debugger-attached-after-worker-execution-began)
++ [Se agotó el tiempo de espera del trabajador durante la depuración](../troubleshooting.md#worker-times-out-while-debugging)
++ [No se puede terminar el proceso de depuración](../troubleshooting.md#cannot-terminate-debugger-process)
