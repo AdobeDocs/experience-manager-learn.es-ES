@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6281
 thumbnail: KT-6281.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
@@ -122,14 +122,5 @@ Para la herramienta de desarrollo de cómputo de recursos de inicio para el proy
 
 ## Solución de problemas
 
-### Sangría de YAML incorrecta
-
-+ __Error:__ YAMLException: sangría incorrecta de una entrada de asignación en la línea X, columna Y: (mediante salida estándar desde `aio app run` comando)
-+ __Causa:__ Los archivos Yaml distinguen entre espacios en blanco, es probable que la sangría sea incorrecta.
-+ __Resolución:__ Revise `manifest.yml` y asegúrese de que toda la sangría es correcta.
-
-### el límite de memorySize está establecido en demasiado bajo
-
-+ __Error:__  OpenWhiskError del servidor de desarrollo local: PUT https://adobeioruntime.net/api/v1/namespaces/xxx-xxx-xxx/actions/xxx-0.0.1/__secured_workeroverwrite=true HTTP 400 devuelto (solicitud incorrecta) —> &quot;El contenido de la solicitud tenía un formato incorrecto:error de requisito: memoria 64 MB por debajo del umbral permitido de 134217728 B&quot;
-+ __Causa:__ Se estableció un `memorySize` límite en el manifiesto por debajo del umbral mínimo permitido tal como se indica en el mensaje de error en bytes.
-+ __Resolución:__  Revise los `memorySize` límites en el `manifest.yml` y asegúrese de que son todos superiores al umbral mínimo permitido.
++ [Sangría de YAML incorrecta](../troubleshooting.md#incorrect-yaml-indentation)
++ [el límite de memorySize está establecido en demasiado bajo](../troubleshooting.md#memorysize-limit-is-set-too-low)
