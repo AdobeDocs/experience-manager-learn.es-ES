@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6282
 thumbnail: KT-6282.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '1508'
+source-wordcount: '1418'
 ht-degree: 0%
 
 ---
@@ -30,18 +30,20 @@ Crearemos un trabajador de cómputo de recursos que generará una nueva represen
 
 Los trabajadores de Asset Compute implementan el contrato de API de trabajo del SDK de Asset Compute, en la `renditionCallback(...)` función que conceptualmente es:
 
-+ __Entrada:__ Parámetros y binario de recursos originales de un recurso AEM
++ __Entrada:__ Parámetros binarios originales de un recurso AEM y Perfil de procesamiento
 + __Salida:__ Una o varias representaciones que se van a agregar al recurso AEM
 
 ![Flujo lógico del trabajador de cálculo de recursos](./assets/worker/logical-flow.png)
 
-1. Cuando se invoca a un trabajador de cómputo de recursos desde el servicio AEM Author, se compara con un recurso AEM mediante un Perfil de procesamiento. El binario original __(1a)__ del recurso se pasa al programa de trabajo mediante el parámetro `source` de la función de rellamada de representación y __(1b)__ cualquier parámetro definido en el Perfil de procesamiento mediante el conjunto `rendition.instructions` de parámetros.
-1. La capa del SDK de cálculo de recursos acepta la solicitud del perfil de procesamiento y orquesta la ejecución de la `renditionCallback(...)` función de trabajo de cálculo de recursos personalizada, transformando el binario de origen proporcionado en __(1a)__ en función de los parámetros proporcionados por __(1b)__ para generar una representación del binario de origen.
-   + En este tutorial, la representación se crea &quot;en proceso&quot;, lo que significa que el trabajador compone la representación; sin embargo, el binario de origen se puede enviar también a otras API de servicios Web para la generación de representaciones.
-1. El trabajador de cómputo de recursos guarda la representación binaria de la representación en la `rendition.path` que está disponible para guardarse en el servicio de AEM Author.
-1. Una vez finalizados, los datos binarios escritos en `rendition.path` se transportan mediante el SDK de Asset Compute y se exponen a través del servicio de creación de AEM como una representación disponible en la interfaz de usuario de AEM.
+1. El servicio AEM Author invoca al trabajador de Asset Compute, proporcionando el binario original __(1a)__ del recurso (`source` parámetro) y __(1b)__ cualquier parámetro definido en el Perfil de procesamiento (`rendition.instructions` parámetro).
+1. El SDK de cómputo de recursos orquesta la ejecución de la función de trabajo de metadatos de cómputo de recursos personalizada, generando una nueva representación binaria, basada en el binario original del recurso `renditionCallback(...)` (1a) __y en cualquier parámetro__ (1b) ____.
 
-El diagrama anterior articula las preocupaciones de cara al desarrollador de Asset Compute y el flujo lógico para invocar al trabajador de Asset Compute. Para los curiosos, los detalles [internos de la ejecución](https://docs.adobe.com/content/help/en/asset-compute/using/extend/custom-application-internals.html) de Asset Compute están disponibles, aunque solo deberían depender los contratos públicos de API de Asset Compute.
+   + En este tutorial, la representación se crea &quot;en proceso&quot;, lo que significa que el trabajador compone la representación; sin embargo, el binario de origen se puede enviar también a otras API de servicios Web para la generación de representaciones.
+
+1. El trabajador de cálculo de recursos guarda los datos binarios de la nueva representación en `rendition.path`.
+1. Los datos binarios escritos en `rendition.path` se transportan mediante el SDK de Asset Compute al servicio de creación de AEM y se exponen como __(4a)__ una representación de texto y __(4b)__ persisten en el nodo de metadatos del recurso.
+
+El diagrama anterior articula las preocupaciones de cara al desarrollador de Asset Compute y el flujo lógico para invocar al trabajador de Asset Compute. Para los curiosos, los detalles [internos de la ejecución](https://docs.adobe.com/content/help/en/asset-compute/using/extend/custom-application-internals.html) de Asset Compute están disponibles, aunque solo se pueden depender de los contratos públicos de API de Asset Compute.
 
 ## Anatomía de un trabajador
 
@@ -316,7 +318,7 @@ class RenditionInstructionsError extends ClientError {
 Ahora que el código de trabajo está completo y se ha registrado y configurado previamente en [manifest.yml](./manifest.md), se puede ejecutar usando la herramienta de desarrollo de cómputo de recursos local para ver los resultados.
 
 1. Desde la raíz del proyecto de cómputo de recursos
-1. Ejecutar `app aio run`
+1. Ejecutar `aio app run`
 1. Espere a que la herramienta de desarrollo de cómputo de recursos se abra en una ventana nueva
 1. En __Seleccionar un archivo...__ desplegable, seleccione una imagen de muestra para procesar
    + Seleccione un archivo de imagen de ejemplo para utilizarlo como binario de recursos de origen
@@ -391,11 +393,4 @@ La final `index.js` está disponible en Github en:
 
 ## Solución de problemas
 
-### La representación se devuelve parcialmente dibujada
-
-+ __Error__: La representación se procesa de forma incompleta cuando el tamaño total del archivo de representación es grande
-
-   ![Resolución de problemas: la representación se devuelve parcialmente](./assets/worker/troubleshooting__await.png)
-
-+ __Causa__: La `renditionCallback` función del trabajador se está cerrando antes de que la representación se pueda escribir completamente en `rendition.path`.
-+ __Resolución__: Revise el código de trabajo personalizado y asegúrese de que todas las llamadas asincrónicas sean sincrónicas.
++ [Representación devuelta parcialmente dibujada/dañada](../troubleshooting.md#rendition-returned-partially-drawn-or-corrupt)
