@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6284
 thumbnail: KT-6284.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '631'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ La estructura de las pruebas en un proyecto de Asset Compute es la siguiente:
 ...
 /test/
   asset-compute/
-    <worker-name>/           <--- Test suite for the worker
+    <worker-name>/           <--- Test suite for the worker, must match the yaml key for this worker in manifest.yml
         <test-case-1>/       <--- Specific test case 
             file.jpg         <--- Input file (ie. `source.path` or `source.url`)
             params.json      <--- Parameters (ie. `rendition.instructions`)
@@ -118,21 +118,5 @@ Los casos de prueba finales están disponibles en Github en:
 
 ## Solución de problemas
 
-### No se ha generado ninguna representación
-
-El caso de prueba falla sin generar una representación.
-
-+ __Error:__ Error: No se generó ninguna representación.
-+ __Causa:__ El programa de trabajo no pudo generar una representación debido a un error inesperado, como un error de sintaxis de JavaScript.
-+ __Resolución:__ Revise la ejecución de la prueba `test.log` en `/build/test-results/test-worker/test.log`. Busque la sección de este archivo correspondiente al caso de prueba fallido y revise los errores.
-
-   ![Resolución de problemas: no se genera ninguna representación](./assets/test/troubleshooting__no-rendition-generated.png)
-
-### La prueba genera una representación incorrecta
-
-El caso de prueba no puede generar una representación incorrecta.
-
-+ __Error:__ Error: La representación &#39;rendition.xxx&#39; no es la esperada.
-+ __Causa:__ El programa de trabajo genera una representación que no es la misma que la `rendition.<extension>` proporcionada en el caso de prueba.
-   + Si el `rendition.<extension>` archivo esperado no se crea de la misma manera que la representación generada localmente en el caso de prueba, la prueba puede fallar, ya que puede haber alguna diferencia en los bits. Si la representación esperada en el caso de prueba se guarda desde la herramienta de desarrollo, es decir, se genera en Adobe I/O Runtime, los bits técnicamente pueden ser diferentes, lo que provoca que la prueba falle, incluso si, desde una perspectiva humana, los archivos de representación esperados y reales son idénticos.
-+ __Resolución:__ Revise el resultado de la representación de la prueba navegando hasta `/build/test-worker/<worker-name>/<test-run-timestamp>/<test-case>/rendition.<extension>`y compárelo con el archivo de representación esperado en el caso de prueba.
++ [No se generó ninguna representación durante la ejecución de la prueba](../troubleshooting.md#test-no-rendition-generated)
++ [La prueba genera una representación incorrecta](../troubleshooting.md#tests-generates-incorrect-rendition)
