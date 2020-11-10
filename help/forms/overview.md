@@ -5,10 +5,10 @@ description: Recopilación de recursos de AEM Forms para principiantes y desarro
 seo-description: Recopilación de recursos de AEM Forms para principiantes y desarrolladores experimentados de AEM Forms
 sub-product: formularios
 translation-type: tm+mt
-source-git-commit: b085a2c75f8e0b4860d503774ea01a108773ad09
+source-git-commit: 23664bae44b74ee35ab7f7cb415d2ba017ea8752
 workflow-type: tm+mt
 source-wordcount: '303'
-ht-degree: 1%
+ht-degree: 14%
 
 ---
 
@@ -21,18 +21,15 @@ Adobe Experience Manager (AEM) proporciona una solución fácil de usar para cre
 
 * **[Gestión de mensajes de error en Invoke Form Data Model Service Step](./adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)**
 
-   <br>
    *Una variable en un modelo de flujo de trabajo es una manera de almacenar un valor basado en su tipo de datos*
 
 * **[Gráficos multiserie en Documentos interactivos de comunicación (vídeo)](./interactive-communications/multiseriescharts.md)**
 
-   <br>
    *Trazar más de una serie en el mismo gráfico.Los gráficos de varias series generalmente se utilizan en asociación con el tipo de gráfico Línea, Barra y Columna.*
 
 * **[Creación de modelos de flujo de trabajo reutilizables](./adaptive-forms/re-usable-aem-forms-workflow-models-article.md)**
 
-   <br>
-   _Crear modelos de flujo de trabajo no vinculados a un formulario específico_
+   *Crear modelos de flujo de trabajo no vinculados a un formulario específico*
 
 ## Selección de personal
 
@@ -87,7 +84,7 @@ Adobe Experience Manager (AEM) proporciona una solución fácil de usar para cre
 * [AEM Sites Desarrollo de documentación](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html)
 * [Documentación de administración de AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/administering/user-guide.html)
 * [Documentación de implementación de AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/user-guide.html)
-* [AEM como Tutorials Cloud Service](/help/cloud-service/overview.md)
-* [Tutorials de AEM Assets](/help/assets/overview.md)
-* [Tutorials de AEM Forms](/help/forms/overview.md)
-* [Tutorials de AEM Foundation](/help/foundation/overview.md)
+* [Tutoriales de AEM as a Cloud Service](/help/cloud-service/overview.md)
+* [Tutoriales de AEM Assets](/help/assets/overview.md)
+* [Tutoriales de AEM Forms](/help/forms/overview.md)
+* [Tutoriales de AEM Foundation](/help/foundation/overview.md)
