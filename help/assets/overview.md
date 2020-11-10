@@ -1,14 +1,12 @@
 ---
-title: Vídeos y Tutorials de AEM Assets
-seo-title: Vídeos y Tutorials de AEM Assets
-description: Recopilación de vídeos y tutoriales para Adobe Experience Manager Assets
-seo-description: Recopilación de vídeos y tutoriales para Adobe Experience Manager Assets
+title: Vídeos y tutoriales de AEM Assets
+description: Recopilación de vídeos y tutoriales de Adobe Experience Manager Assets
 sub-product: recursos, Dynamic-media
 translation-type: tm+mt
-source-git-commit: 10784dce34443adfa1fc6dc324242b1c021d2a17
+source-git-commit: 23664bae44b74ee35ab7f7cb415d2ba017ea8752
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 5%
+source-wordcount: '228'
+ht-degree: 19%
 
 ---
 
@@ -21,27 +19,22 @@ Adobe Experience Manager Assets es una herramienta de gestión de recursos digit
 
 * **[Marcas de agua (vídeo)](./advanced/watermarks.md)**
 
-   <br>
    *Obtenga información sobre cómo marcar con agua las representaciones de recursos en AEM como Cloud Service*
 
 * **[Permisos de línea de base (vídeo)](./configuring/baseline-permissions.md)**
 
-   <br>
    *Conozca cómo y por qué es importante configurar AEM Assets con permisos de línea de base*
 
 * **[Flujos de trabajo de inicio automático (vídeo)](./configuring/auto-start-workflows.md)**
 
-   <br>
    *Explorar cómo invocar automáticamente AEM flujo de trabajo en recursos cargados o reprocesados*
 
 * **[Perfiles de procesamiento (vídeo)](./configuring/processing-profiles.md)**
 
-   <br>
    *Explore cómo invocar los microservicios de Recursos para procesar recursos*
 
 * **[Uso de colecciones de recursos (vídeo)](./search-and-discovery/collections.md)**
 
-   <br>
    *Explore cómo las colecciones en AEM Assets proporcionan nuevas formas de organizar y descubrir recursos*
 
 ## Selección de personal
@@ -92,7 +85,7 @@ Adobe Experience Manager Assets es una herramienta de gestión de recursos digit
 
 * [Experience League - Explorar AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
 * [Documentación de AEM Assets](https://helpx.adobe.com/es/experience-manager/6-5/assets/user-guide.html)
-* [AEM como Tutorials Cloud Service](/help/cloud-service/overview.md)
-* [Tutorials de AEM Sites](/help/sites/overview.md)
-* [Tutorials de AEM Forms](/help/forms/overview.md)
-* [Tutorials de AEM Foundation](/help/foundation/overview.md)
+* [Tutoriales de AEM as a Cloud Service](/help/cloud-service/overview.md)
+* [Tutoriales de AEM Sites](/help/sites/overview.md)
+* [Tutoriales de AEM Forms](/help/forms/overview.md)
+* [Tutoriales de AEM Foundation](/help/foundation/overview.md)
