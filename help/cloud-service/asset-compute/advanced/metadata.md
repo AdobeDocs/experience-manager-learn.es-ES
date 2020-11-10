@@ -1,6 +1,6 @@
 ---
-title: Desarrollar un trabajador de metadatos de cálculo de recursos
-description: Obtenga información sobre cómo crear un trabajador de metadatos de cálculo de recursos que obtiene los colores más utilizados en un recurso de imagen y escribe los nombres de los colores en los metadatos del recurso en AEM.
+title: Desarrollar un trabajador de metadatos de Asset compute
+description: Obtenga información sobre cómo crear un programa de trabajo de metadatos de Asset compute que obtiene los colores más utilizados en un recurso de imagen y escribe los nombres de los colores en los metadatos del recurso en AEM.
 feature: asset-compute
 topics: metadata, development
 version: cloud-service
@@ -10,49 +10,49 @@ doc-type: tutorial
 kt: 6448
 thumbnail: 327313.jpg
 translation-type: tm+mt
-source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
+source-git-commit: c2a8e6c3ae6dcaa45816b1d3efe569126c6c1e60
 workflow-type: tm+mt
-source-wordcount: '1420'
+source-wordcount: '1434'
 ht-degree: 1%
 
 ---
 
 
-# Desarrollar un trabajador de metadatos de cálculo de recursos
+# Desarrollar un trabajador de metadatos de Asset compute
 
-Los trabajadores de cómputo de recursos personalizados pueden producir datos XMP (XML) que se envían a AEM y se almacenan como metadatos en un recurso.
+Los trabajadores de Assets computes personalizadas pueden producir datos XMP (XML) que se envían de vuelta a AEM y se almacenan como metadatos en un recurso.
 
 Entre los casos de uso común se incluyen:
 
 + Integraciones con sistemas de terceros, como un PIM (sistema de gestión de la información del producto), en las que se deben recuperar y almacenar metadatos adicionales en el recurso
 + Integraciones con servicios de Adobe, como Content and Commerce AI para aumentar los metadatos de los recursos con atributos de aprendizaje automático adicionales
-+ Obtención de metadatos sobre el recurso de su binario y almacenamiento como metadatos de recurso en AEM como Cloud Service
++ Derivación de metadatos sobre el recurso desde su binario y almacenamiento como metadatos de recurso en AEM como Cloud Service
 
 ## Qué hará
 
 >[!VIDEO](https://video.tv.adobe.com/v/327313?quality=12&learn=on)
 
-En este tutorial, crearemos un trabajador de metadatos de cálculo de recursos que obtiene los colores más utilizados en un recurso de imagen y escribe los nombres de los colores en los metadatos del recurso en AEM. Aunque el propio programa de trabajo es básico, este tutorial lo utiliza para explorar cómo se pueden utilizar los trabajadores de cómputo de recursos para recuperar metadatos en recursos de AEM como Cloud Service.
+En este tutorial crearemos un programa de trabajo de metadatos de Asset compute que obtiene los colores más utilizados en un recurso de imagen y escribe los nombres de los colores en los metadatos del recurso en AEM. Aunque el propio programa de trabajo es básico, este tutorial lo utiliza para explorar cómo se pueden utilizar los trabajadores de Asset compute para escribir metadatos en los recursos de AEM como Cloud Service.
 
-## Flujo lógico de una invocación de trabajador de metadatos de cálculo de recursos
+## Flujo lógico de una invocación de trabajador de metadatos de Asset compute
 
-La invocación de los trabajadores de metadatos de cómputo de recursos es casi idéntica a la de los trabajadores [generadores de representaciones](../develop/worker.md)binarias; la diferencia principal es que el tipo de devolución es una representación XMP (XML) cuyos valores también se escriben en los metadatos del recurso.
+La invocación de los trabajadores de metadatos de Asset compute es casi idéntica a la de los trabajadores [generadores de representaciones](../develop/worker.md)binarias; la diferencia principal es que el tipo de devolución es una representación XMP (XML) cuyos valores también se escriben en los metadatos del recurso.
 
-Los trabajadores de Asset Compute implementan el contrato de API de trabajo del SDK de Asset Compute, en la `renditionCallback(...)` función que conceptualmente es:
+Los trabajadores de asset compute implementan el contrato de la API de trabajo del SDK de Asset compute, en la `renditionCallback(...)` función que conceptualmente es:
 
 + __Entrada:__ Parámetros binarios originales de un recurso AEM y Perfil de procesamiento
 + __Salida:__ Se ha mantenido una representación XMP (XML) en el recurso AEM como una representación y en los metadatos del recurso
 
-![Flujo lógico del trabajador de metadatos de cálculo de recursos](./assets/metadata/logical-flow.png)
+![Flujo lógico del trabajador de metadatos de asset compute](./assets/metadata/logical-flow.png)
 
-1. El servicio AEM Author invoca al programa de trabajo de metadatos de cómputo de recursos, proporcionando el binario original __(1a)__ del recurso y __(1b)__ cualquier parámetro definido en el Perfil de procesamiento.
-1. El SDK de cómputo de recursos orquesta la ejecución de la función del trabajador de metadatos de cómputo de recursos personalizado, `renditionCallback(...)` obteniendo una representación XMP (XML), basada en el binario __(1a)__ del recurso y en cualquier parámetro de Perfil de procesamiento __(1b)__.
-1. El trabajador de cómputo de recursos guarda la representación XMP (XML) en `rendition.path`.
-1. Los datos XMP (XML) escritos en `rendition.path` se transportan mediante el SDK de Asset Compute al servicio de creación de AEM y se exponen como __(4a)__ una representación de texto y __(4b)__ persisten en el nodo de metadatos del recurso.
+1. El servicio AEM Author invoca al programa de trabajo de metadatos de la Asset compute, proporcionando el binario original __(1a)__ del recurso y __(1b)__ cualquier parámetro definido en el Perfil de procesamiento.
+1. El SDK de Asset compute orquesta la ejecución de la función `renditionCallback(...)` del trabajador de metadatos de la Asset compute personalizada, obteniendo una representación XMP (XML) basada en el binario del recurso __(1a)__ y en cualquier parámetro de Perfil de procesamiento __(1b)__.
+1. El trabajador de Asset compute guarda la representación XMP (XML) en `rendition.path`.
+1. Los datos XMP (XML) escritos en `rendition.path` se transportan mediante el SDK de Asset compute al servicio de creación de AEM y se exponen como __(4a)__ una representación de texto y __(4b)__ persisten en el nodo de metadatos del recurso.
 
 ## Configure manifest.yml{#manifest}
 
-Todos los trabajadores de Asset Compute deben estar registrados en [manifest.yml](../develop/manifest.md).
+Todos los trabajadores de la Asset compute deben estar registrados en el [manifest.yml](../develop/manifest.md).
 
 Abra el proyecto `manifest.yml` y agregue una entrada de trabajador que configure el nuevo trabajador, en este caso `metadata-colors`.
 
@@ -87,11 +87,11 @@ Los valores `limits` y `require-adobe-auth` se configuran discretamente por trab
 
 ## Desarrollar un trabajador de metadatos{#metadata-worker}
 
-Cree un nuevo archivo JavaScript de trabajo de metadatos en el proyecto de cálculo de recursos en la ruta de acceso [definida manifest.yml para el nuevo programa de trabajo](#manifest), en `/actions/metadata-colors/index.js`
+Cree un nuevo archivo JavaScript del programa de trabajo de metadatos en el proyecto de Asset compute en la ruta de acceso [definida manifest.yml para el nuevo programa de trabajo](#manifest), en `/actions/metadata-colors/index.js`
 
 ### Instalar módulos npm
 
-Instale los módulos npm adicionales ([@adobe/asset-compute-xmp](https://www.npmjs.com/package/@adobe/asset-compute-xmp?activeTab=versions), [get-image-color](https://www.npmjs.com/package/get-image-colors)y [color-namer](https://www.npmjs.com/package/color-namer)) que se utilizarán en este trabajo de Asset Compute.
+Instale los módulos npm adicionales ([@adobe/asset-compute-xmp](https://www.npmjs.com/package/@adobe/asset-compute-xmp?activeTab=versions), [get-image-color](https://www.npmjs.com/package/get-image-colors)y [color-namer](https://www.npmjs.com/package/color-namer)) que se utilizarán en este programa de trabajo de Asset compute.
 
 ```
 $ npm install @adobe/asset-compute-xmp
@@ -180,14 +180,14 @@ function getColorName(colorsFamily, color) {
 
 ## Ejecutar el trabajador de metadatos localmente{#development-tool}
 
-Una vez completado el código de trabajo, se puede ejecutar con la herramienta de desarrollo de cómputo de recursos local.
+Una vez completado el código de trabajo, se puede ejecutar con la herramienta de desarrollo de Assets computes local.
 
-Dado que nuestro proyecto de cómputo de recursos contiene dos trabajadores (la representación [](../develop/worker.md) circular anterior y este `metadata-colors` trabajador), la definición de perfil de la herramienta de desarrollo de cómputo de [](../develop/development-tool.md) recursos lista perfiles de ejecución para ambos trabajadores. La segunda definición de perfil apunta al nuevo `metadata-colors` programa de trabajo.
+Dado que nuestro proyecto de Asset compute contiene dos trabajadores (la representación [del](../develop/worker.md) círculo anterior y este `metadata-colors` trabajador), la definición de perfil de la Herramienta de Desarrollo de [Asset compute (MDA](../develop/development-tool.md) ) lista perfiles de ejecución para ambos trabajadores. La segunda definición de perfil apunta al nuevo `metadata-colors` programa de trabajo.
 
 ![Representación de metadatos XML](./assets/metadata/metadata-rendition.png)
 
-1. Desde la raíz del proyecto de cómputo de recursos
-1. Ejecutar `aio app run` para inicio de la herramienta de desarrollo de cómputo de recursos
+1. Desde la raíz del proyecto de Asset compute
+1. Ejecutar `aio app run` para inicio de la herramienta de desarrollo de Assets computes
 1. En __Seleccionar un archivo...__ desplegable, elija una imagen [de](../assets/samples/sample-file.jpg) ejemplo para procesar
 1. En la segunda configuración de definición de perfil, que apunta al `metadata-colors` programa de trabajo, actualice `"name": "rendition.xml"` a medida que este programa de trabajo genere una representación XMP (XML). Opcionalmente, agregue un `colorsFamily` parámetro (valores admitidos `basic`, `hex`, `html`, `ntc`, `pantone`, `roygbiv`).
 
@@ -208,9 +208,9 @@ Dado que nuestro proyecto de cómputo de recursos contiene dos trabajadores (la 
 
 ## Probar el trabajador{#test}
 
-Los trabajadores de metadatos se pueden probar utilizando el [mismo marco de pruebas de Asset Compute que las representaciones](../test-debug/test.md)binarias. La única diferencia es que el `rendition.xxx` archivo en el caso de prueba debe ser la representación XMP (XML) esperada.
+Los trabajadores de metadatos se pueden probar utilizando el [mismo marco de pruebas de Asset compute que las representaciones](../test-debug/test.md)binarias. La única diferencia es que el `rendition.xxx` archivo en el caso de prueba debe ser la representación XMP (XML) esperada.
 
-1. Cree la siguiente estructura en el proyecto de cálculo de recursos:
+1. Cree la siguiente estructura en el proyecto de Asset compute:
 
    ```
    /test/asset-compute/metadata-colors/success-pantone/
@@ -239,7 +239,7 @@ Los trabajadores de metadatos se pueden probar utilizando el [mismo marco de pru
    <?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:wknd="https://wknd.site/assets/1.0/"><rdf:Description><wknd:colors><rdf:Seq><rdf:li>Silver</rdf:li><rdf:li>Black</rdf:li><rdf:li>Outer Space</rdf:li></rdf:Seq></wknd:colors><wknd:colorsFamily>pantone</wknd:colorsFamily></rdf:Description></rdf:RDF>
    ```
 
-5. Ejecute `aio app test` desde la raíz del proyecto de cálculo de recursos para ejecutar todos los grupos de pruebas.
+5. Ejecute `aio app test` desde la raíz del proyecto de Asset compute para ejecutar todos los grupos de pruebas.
 
 ### Implementar el programa de trabajo en Adobe I/O Runtime{#deploy}
 
@@ -304,15 +304,15 @@ Para revisar los metadatos de colores, asigne dos campos nuevos en el esquema de
 1. Vaya a la carpeta o subcarpeta a la que se aplica el Perfil de procesamiento
 1. Cargue una imagen nueva (JPEG, PNG, GIF o SVG) en la carpeta o vuelva a procesar las imágenes existentes con el Perfil [de procesamiento actualizado](#processing-profile)
 1. Cuando se haya completado el procesamiento, seleccione el recurso y toque __las propiedades__ en la barra de acciones superior para mostrar sus metadatos
-1. Revise los campos `Colors Family` y `Colors` los campos [de](#metadata-schema) metadatos para los metadatos que se han vuelto a escribir desde el programa de trabajo de metadatos de cálculo de recursos personalizado.
+1. Revise los campos `Colors Family` de `Colors` metadatos y [](#metadata-schema) metadatos de los metadatos escritos desde el programa de trabajo de metadatos de la Asset compute personalizada.
 
-Estos metadatos de color ahora están disponibles para escribirse en el archivo binario como datos de XMP (en la siguiente XMP escritura), así como ayudas para la detección de recursos mediante la búsqueda de texto completo.
+Con los metadatos de color escritos en los metadatos del recurso, en el `[dam:Asset]/jcr:content/metadata` recurso, estos metadatos se indexan con una mayor capacidad de detección de recursos mediante la búsqueda, e incluso se pueden escribir en el binario del recurso si se invoca el flujo de trabajo de reescritura __de metadatos__ DAM.
 
 ### Representación de metadatos en AEM Assets
 
 ![Archivo de representación de metadatos de AEM Assets](./assets/metadata/cqdam-metadata-rendition.png)
 
-El archivo de XMP real generado por el trabajador de metadatos de cálculo de recursos también se almacena como una representación discreta en el recurso. Normalmente, este archivo no se utiliza, sino que se utilizan los valores aplicados al nodo de metadatos del recurso, pero la salida XML sin procesar del programa de trabajo está disponible en AEM.
+El archivo de XMP real generado por el trabajador de metadatos de la Asset compute también se almacena como una representación discreta en el recurso. Normalmente, este archivo no se utiliza, sino que se utilizan los valores aplicados al nodo de metadatos del recurso, pero la salida XML sin procesar del programa de trabajo está disponible en AEM.
 
 ## código de trabajo de metadatos-colores en Github
 
