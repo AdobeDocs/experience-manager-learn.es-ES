@@ -4,7 +4,7 @@ description: Recopilación de tutoriales para Adobe Experience Manager (AEM) com
 sub-product: sitios, cloud-manager, fundación, recursos
 kt: 3289
 translation-type: tm+mt
-source-git-commit: 06632b90e5cdaf80b9343e5a69ab9c735d4a70f1
+source-git-commit: 23664bae44b74ee35ab7f7cb415d2ba017ea8752
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 8%
@@ -20,29 +20,24 @@ Adobe Experience Manager (AEM) ya está disponible as a Cloud Service. AEM como 
 
 ## Novedades
 
-* **[Extensibilidad de los microservicios de Asset Compute (tutorial)](./asset-compute/overview.md)**
+* **[Extensibilidad de los microservicios de asset compute (tutorial)](./asset-compute/overview.md)**
 
-   <br>
-   *Obtenga información sobre cómo desarrollar trabajadores de Asset Compute para generar representaciones de recursos personalizadas*
+   *Obtenga información sobre cómo desarrollar trabajadores de Asset compute para generar representaciones de recursos personalizadas*
 
 * **[Configuración del acceso a AEM como Cloud Service (tutorial)](./accessing/overview.md)**
 
-   <br>
    *Obtenga información sobre cómo configurar los usuarios de IMS en Adobe Admin Console para que puedan acceder a AEM*
 
 * **[Depuración AEM como Cloud Service (tutorial)](./debugging/cloud-service/overview.md)**
 
-   <br>
    *Explorar cómo depurar AEM como Cloud Service*
 
 * **[Depuración AEM SDK (tutorial)](./debugging/aem-sdk-local-quickstart/overview.md)**
 
-   <br>
    *Explore las distintas herramientas utilizadas para depurar la aplicación en el AEM como inicio rápido local del SDK de Cloud Service*
 
 * **[Configuración de Entornos de desarrollo local (tutorial)](./local-development-environment/overview.md)**
 
-   <br>
    *Aprenda a configurar su equipo de desarrollo local para AEM como desarrollo de Cloud Service*
 
 ## Selección de personal
