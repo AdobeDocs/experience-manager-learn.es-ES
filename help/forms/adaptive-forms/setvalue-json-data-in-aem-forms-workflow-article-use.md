@@ -12,7 +12,7 @@ activity: setup
 version: 6.4
 discoiquuid: 548fb2ec-cfcf-4fe2-a02a-14f267618d68
 translation-type: tm+mt
-source-git-commit: f07680e73316efb859a675f4b2212d8c3e03f6a0
+source-git-commit: 233ad7184cb48098253a78c07a3913356ac9e774
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Para implementar los recursos en el sistema local:
 
 * [Descargar e implementar DevelopingWitheServiceUserBundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-*[Descargue e implemente el paquete](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)setvalue. Este es el paquete OSGI personalizado que le permite establecer los valores de un elemento en los datos json enviados.
+* [Descargue e implemente el paquete](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)setvalue. Este es el paquete OSGI personalizado que le permite establecer los valores de un elemento en los datos json enviados.
 
 * [Descargar y extraer el contenido del archivo zip](assets/set-value-jsondata.zip)
    * Seleccione el explorador para el administrador de [paquetes](http://localhost:4502/crx/packmgr/index.jsp)
@@ -63,10 +63,8 @@ Para implementar los recursos en el sistema local:
 * Observe que los campos del primer panel están desactivados.
 * Observe que el panel para aprobar o rechazar la solicitud ahora está visible.
 
-
-
 >[!NOTE]
-
+>
 >Dado que estamos rellenando previamente el formulario adaptable con el perfil del usuario, asegúrese de que la información de perfil del [usuario administrador ](http://localhost:4502/security/users.html). Como mínimo, asegúrese de haber establecido los valores de los campos Nombre, Apellido y Correo electrónico.
 >Puede habilitar el registro de depuración habilitando el registrador para com.aemforms.setvalue.core.SetValueInJson [desde aquí](http://localhost:4502/system/console/slinglog)
 
