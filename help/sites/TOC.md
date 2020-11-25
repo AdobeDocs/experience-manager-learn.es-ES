@@ -4,7 +4,7 @@ user-guide-description: Una colección de vídeos y tutoriales para Adobe Experi
 breadcrumb-title: Tutoriales de AEM Sites
 sub-product: sitios
 translation-type: tm+mt
-source-git-commit: 55beee99b91c44f96cd37d161bb3b4ffe38d2687
+source-git-commit: 988e390dd9e1fc6033b3651db151e6a60ce4efaa
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 16%
@@ -107,7 +107,7 @@ ht-degree: 16%
       + [Añadir Extensión de grupo de destinatarios para iniciar propiedad](integrations/adobe-target/add-target-launch-extension.md)
       + [Carga y activación de una llamada de Destinatario](integrations/adobe-target/load-and-fire-target.md)
       + [Crear cuenta de Adobe Target Cloud Service](integrations/adobe-target/setup-aem-target-cloud-service.md)
-      + [Exportar fragmento de experiencia a Adobe Target](integrations/adobe-target/export-experience-fragment-target.md)
+      + [Exportar fragmentos de experiencia a Adobe Target](integrations/adobe-target/export-experience-fragment-target.md)
       + [Crear Actividad de Destinatario mediante Ofertas de fragmentos de experiencia](integrations/adobe-target/create-target-activity.md)
       + [Personalización mediante el Compositor de experiencias visuales](integrations/adobe-target/personalization-using-vec.md)
       + [Personalización de la experiencia de página web completa](integrations/adobe-target/personalization-web-page.md)
