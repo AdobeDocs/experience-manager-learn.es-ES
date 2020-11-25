@@ -1,5 +1,5 @@
 ---
-title: Exportar fragmento de experiencia a Adobe Target
+title: Exportar fragmentos de experiencia a Adobe Target
 description: Obtenga información sobre cómo publicar y exportar AEM fragmento de experiencias como Ofertas de Adobe Target.
 feature: experience-fragments
 topics: integrations, authoring
@@ -10,10 +10,10 @@ version: cloud-service
 kt: 6350
 thumbnail: 41245.jpg
 translation-type: tm+mt
-source-git-commit: 7a830d5a04ce53014b86f9f05238dd64f79edffc
+source-git-commit: 988e390dd9e1fc6033b3651db151e6a60ce4efaa
 workflow-type: tm+mt
-source-wordcount: '70'
-ht-degree: 0%
+source-wordcount: '192'
+ht-degree: 1%
 
 ---
 
@@ -26,9 +26,34 @@ Descubra cómo exportar AEM fragmento de experiencias como Ofertas de Adobe Targ
 
 ## Próximos pasos
 
-1. [Creación de una Actividad de Destinatario mediante Ofertas de fragmentos de experiencia](./create-target-activity.md)
++ [Creación de una Actividad de Destinatario mediante Ofertas de fragmentos de experiencia](./create-target-activity.md)
+
+## Solución de problemas
+
+### Error al exportar fragmentos de experiencia a Destinatario
+
+#### Error
+
+Al exportar fragmento de experiencia a Adobe Target sin los permisos correctos en Adobe Admin Console, se produce el siguiente error en el servicio de AEM Author:
+
+    ![Error de IU de la API de Destinatario](assets/error-target-offer.png)
+
+... y los siguientes mensajes de registro en el `aemerror` registro:
+
+    ![Error de consola de API de Destinatario](assets/target-console-error.png)
+
+#### Resolución
+
+1. Inicie sesión en el [Admin Console](https://adminconsole.adobe.com/) con derechos administrativos para el Perfil de productos de Adobe Target utilizado pero la integración AEM
+2. Seleccione __Productos > Adobe Target > Perfil de productos__
+3. En la ficha __Integraciones__ , seleccione la integración de su AEM como entorno de Cloud Service (el mismo nombre que el proyecto de E/S de Adobe)
+4. Asignar función __de editor__ o __aprobador__
+
+   ![Error de API de destinatario](assets/target-permissions.png)
+
+Añadir el permiso correcto para la integración con Adobe Target debería resolver este error.
 
 ## Vínculos de soporte
 
-* [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
-* [Adobe Experience Cloud Debugger - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
++ [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
++ [Adobe Experience Cloud Debugger - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
