@@ -41,7 +41,7 @@ Para vista del informe de transacciones, inicie sesión en AEM Forms como admini
 
 Seleccionar herramientas | Forms | Informe Transacciones de Vista
 
-o vista del informe de transacciones haciendo clic [aquí](http://localhost:4502/mnt/overlay/fd/transaction/gui/content/report.html)
+o vista el informe de transacciones haciendo clic [aquí](http://localhost:4502/mnt/overlay/fd/transaction/gui/content/report.html)
 
 ![TransctionReporting](assets/transactionreporting.gif)
 
@@ -53,5 +53,5 @@ Las acciones como enviar un formulario PDF, utilizar la interfaz de usuario del 
 
 Si está viendo el informe de transacciones en la instancia de creación, asegúrese de que la replicación inversa está configurada en todas las instancias de publicación.
 
-Para obtener más información sobre el sistema de informes de transacciones, [haga clic aquí](https://helpx.adobe.com/experience-manager/6-4/forms/using/transaction-reports-overview.html)
+Para obtener más información sobre el sistema de informes de transacciones [haga clic aquí](https://helpx.adobe.com/experience-manager/6-4/forms/using/transaction-reports-overview.html)
 
