@@ -76,7 +76,7 @@ Huelga decir que la configuración inicial de los sistemas Dispatcher y Publish 
 
 En un proyecto anterior utilizamos un truco diferente para eliminar un sistema de publicación del equilibrio de carga sin tener acceso directo al propio equilibrador de carga.
 
-El equilibrador de carga generalmente &quot;pings&quot;, una página en particular para ver si el servidor está activo y en ejecución. Una opción trivial es generalmente hacer ping en la página principal. Pero si desea utilizar el ping para indicar al equilibrador de carga que no equilibre el tráfico, elegirá otra cosa. Puede crear una plantilla o un servlet dedicado que se pueda configurar para responder con `"up"` o `"down"` (en el cuerpo o como código de respuesta http). La respuesta de esa página, por supuesto, no debe almacenarse en caché en el despachante, por lo que siempre se obtiene directamente del sistema de publicación. Ahora, si configura el equilibrador de carga para que compruebe esta plantilla o servlet, puede dejar que Publish &quot;pretenda&quot; que esté inactivo. No formaría parte del equilibrio de carga y se puede actualizar.
+El equilibrador de carga generalmente &quot;pings&quot;, una página en particular para ver si el servidor está activo y en ejecución. Una opción trivial es generalmente hacer ping en la página principal. Pero si desea utilizar el ping para indicar al equilibrador de carga que no equilibre el tráfico, elegirá otra cosa. Puede crear una plantilla o servlet dedicada que se pueda configurar para responder con `"up"` o `"down"` (en el cuerpo o como código de respuesta http). La respuesta de esa página, por supuesto, no debe almacenarse en caché en el despachante, por lo que siempre se obtiene directamente del sistema de publicación. Ahora, si configura el equilibrador de carga para que compruebe esta plantilla o servlet, puede dejar que Publish &quot;pretenda&quot; que esté inactivo. No formaría parte del equilibrio de carga y se puede actualizar.
 
 #### Distribución mundial
 
@@ -92,7 +92,7 @@ Incluso en un centro de datos local, una topología de &quot;Escalar fuera&quot;
 
 #### Límites de la topología de escalado de salida
 
-Añadir servidores proxy normalmente incrementará el rendimiento. Sin embargo, existen situaciones en las que la adición de servidores puede reducir el rendimiento. ¿Cómo? Considere que tiene un portal de noticias, donde presenta nuevos artículos y páginas cada minuto. Un despachante invalida por &quot;auto-invalidación&quot;: Cada vez que se publica una página, se invalidan todas las páginas de la caché del mismo sitio. Esta es una característica útil - hemos cubierto esto en el [Capítulo 1](chapter-1.md) de esta serie - pero también significa que cuando usted tiene cambios frecuentes en su sitio web usted está invalidando la caché con bastante frecuencia. Si solo tiene una instancia de Dispatcher por publicación, el primer visitante que solicita una página, se desencadena un nuevo almacenamiento en caché de dicha página. El segundo visitante ya obtiene la versión en caché.
+Añadir servidores proxy normalmente incrementará el rendimiento. Sin embargo, existen situaciones en las que la adición de servidores puede reducir el rendimiento. ¿Cómo? Considere que tiene un portal de noticias, donde presenta nuevos artículos y páginas cada minuto. Un despachante invalida por &quot;auto-invalidación&quot;: Cada vez que se publica una página, se invalidan todas las páginas de la caché del mismo sitio. Esta es una característica útil - hemos cubierto esto en [Capítulo 1](chapter-1.md) de esta serie - pero también significa que cuando se producen cambios frecuentes en el sitio web se invalida la caché con bastante frecuencia. Si solo tiene una instancia de Dispatcher por publicación, el primer visitante que solicita una página, se desencadena un nuevo almacenamiento en caché de dicha página. El segundo visitante ya obtiene la versión en caché.
 
 Si tiene dos despachantes, el segundo visitante tiene un 50 % de probabilidad de que la página no se almacene en caché y, a continuación, experimentará una latencia mayor cuando se vuelva a procesar esa página. Tener incluso más despachantes por publicación empeora las cosas. Lo que sucede es que el servidor de publicación recibe más carga porque tiene que volver a procesar la página para cada despachante por separado.
 
@@ -108,11 +108,11 @@ Puede considerar usar un almacenamiento compartido central para todos los despac
 
 Hemos tenido algunos experimentos con NFS - pero NFS presenta enormes problemas de rendimiento debido al bloqueo de contenido. Esto en realidad disminuyó el rendimiento general.
 
-**Conclusión** : Compartir un sistema de archivos común entre varios despachantes NO es un método recomendado.
+**Conclusión** : Compartir un sistema de archivos común entre varios despachantes NO es un enfoque recomendado.
 
 Si se enfrentan a problemas de rendimiento, aumente la escala de Publicar y Distribuidores de forma equitativa para evitar la carga máxima en las instancias de Publisher. No existe una regla de oro sobre la proporción Publicar/Dispatcher; depende en gran medida de la distribución de las solicitudes y la frecuencia de las publicaciones y las invalidaciones de caché.
 
-Si también le preocupa la latencia que experimenta un visitante, considere el uso de una red de envío de contenido, la recuperación de caché, el calentamiento de caché preventivo, la configuración de un tiempo de gracia como se describe en el [Capítulo 1](chapter-1.md) de esta serie o consulte algunas ideas avanzadas de la [Parte 3](chapter-3.md).
+Si también le preocupa la latencia que experimenta un visitante, considere el uso de una red de envío de contenido, la recuperación de caché, el calentamiento preventivo de la caché, la configuración de un tiempo de gracia como se describe en [Capítulo 1](chapter-1.md) de esta serie o consulte algunas ideas avanzadas de [Parte 3](chapter-3.md).
 
 ### La configuración de &quot;Conexión cruzada&quot;
 
