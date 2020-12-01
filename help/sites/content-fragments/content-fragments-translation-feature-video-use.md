@@ -23,7 +23,7 @@ AEM 6.3 introduce la capacidad de traducir fragmentos de contenido. Los recursos
 
 >[!VIDEO](https://video.tv.adobe.com/v/18131/?quality=9&learn=on)
 
-## Casos de uso de la traducción de fragmentos de contenido {#content-fragment-translation-use-cases}
+## Casos de uso de traducción de fragmentos de contenido {#content-fragment-translation-use-cases}
 
 Los fragmentos de contenido son un tipo de contenido reconocido que AEM extraer para enviarse a un servicio de traducción externo. Se admiten varios casos de uso de forma predeterminada:
 
