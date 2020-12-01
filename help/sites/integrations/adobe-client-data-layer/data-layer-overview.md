@@ -30,14 +30,14 @@ La capa de datos del cliente de Adobe presenta un método estándar para recopil
 
 ## Explorar la capa de datos
 
-Puede hacerse una idea de la funcionalidad integrada de la capa de datos del cliente de Adobe utilizando las herramientas de desarrollo de su navegador y el sitio [de referencia de](https://wknd.site/)WKND en directo.
+Puede hacerse una idea de la funcionalidad integrada de la capa de datos del cliente de Adobe utilizando las herramientas de desarrollo de su navegador y el [sitio de referencia de WKND](https://wknd.site/) activo.
 
 >[!NOTE]
 >
 > Capturas de pantalla tomadas del navegador Chrome.
 
 1. Vaya a [https://wknd.site](https://wknd.site)
-1. Abra las herramientas de desarrollador e introduzca el siguiente comando en la **consola**:
+1. Abra las herramientas de desarrollador e introduzca el siguiente comando en la **Consola**:
 
    ```js
    window.adobeDataLayer.getState();
@@ -60,7 +60,7 @@ Puede hacerse una idea de la funcionalidad integrada de la capa de datos del cli
    });
    ```
 
-1. Ejecute el comando de `adobeDataLayer.getState()` nuevo y busque la entrada para `training-data`.
+1. Vuelva a ejecutar el comando `adobeDataLayer.getState()` y busque la entrada para `training-data`.
 1. A continuación, agregue un parámetro de ruta para devolver solo el estado específico de un componente:
 
    ```js
@@ -92,13 +92,13 @@ Se recomienda activar cualquier código personalizado basado en un evento de la 
    }
    ```
 
-   El código anterior inspeccionará el `event` objeto y utilizará el `adobeDataLayer.getState` método para obtener el estado actual del objeto que activó el evento. El método de ayuda inspeccionará entonces los `filter` criterios y solo se devolverá si el actual `dataObject` cumple el filtro.
+   El código anterior inspeccionará el objeto `event` y utilizará el método `adobeDataLayer.getState` para obtener el estado actual del objeto que activó el evento. El método de ayuda inspeccionará los criterios `filter` y solo se devolverá si el `dataObject` actual cumple el filtro.
 
    >[!CAUTION]
    >
-   > Será importante **no** actualizar el explorador durante este ejercicio; de lo contrario, se perderá JavaScript de la consola.
+   > Será importante **no** actualizar el explorador a lo largo de este ejercicio; de lo contrario, se perderá JavaScript de la consola.
 
-1. A continuación, introduzca un controlador de evento al que se llamará cuando se muestre un componente **Teaser** en un **Carrusel**.
+1. A continuación, introduzca un controlador de evento al que se llamará cuando se muestre un componente **Teaser** dentro de un **Carrusel**.
 
    ```js
    function teaserShownHandler(event) {
@@ -110,9 +110,9 @@ Se recomienda activar cualquier código personalizado basado en un evento de la 
    }
    ```
 
-   El `teaserShownHandler` llamará al `getDataObjectHelper` método y pasará un filtro de `wknd/components/teaser` como `@type` para filtrar eventos activados por otros componentes.
+   El `teaserShownHandler` llamará al método `getDataObjectHelper` y pasará un filtro de `wknd/components/teaser` como `@type` para filtrar los eventos activados por otros componentes.
 
-1. A continuación, inserte un detector de eventos en la capa de datos para detectar el `cmp:show` evento.
+1. A continuación, inserte un detector de evento en la capa de datos para escuchar el evento `cmp:show`.
 
    ```js
    window.adobeDataLayer.push(function (dl) {
@@ -120,13 +120,13 @@ Se recomienda activar cualquier código personalizado basado en un evento de la 
    });
    ```
 
-   El `cmp:show` evento se activa con varios componentes diferentes, como cuando se muestra una nueva diapositiva en el **Carrusel** o cuando se selecciona una nueva ficha en el componente **Tabulador** .
+   El evento `cmp:show` se desencadena con muchos componentes diferentes, como cuando se muestra una nueva diapositiva en el **Carrusel** o cuando se selecciona una nueva ficha en el componente **Tab**.
 
 1. En la página, alterne las diapositivas de carrusel y observe las instrucciones de la consola:
 
    ![Alternar Carrusel y ver el oyente de evento](assets/teaser-console-slides.png)
 
-1. Quite el detector de evento de la capa de datos para dejar de escuchar el `cmp:show` evento:
+1. Quite el detector de evento de la capa de datos para dejar de escuchar el evento `cmp:show`:
 
    ```js
    window.adobeDataLayer = window.adobeDataLayer || [];
@@ -151,7 +151,7 @@ Se recomienda activar cualquier código personalizado basado en un evento de la 
 
    Observe que el tipo de recurso `wknd/components/page` se utiliza para filtrar el evento.
 
-1. A continuación, inserte un detector de eventos en la capa de datos para que escuche el `cmp:show` evento y llame al `pageShownHandler`.
+1. A continuación, inserte un detector de evento en la capa de datos para escuchar el evento `cmp:show`, llamando a `pageShownHandler`.
 
    ```js
    window.adobeDataLayer = window.adobeDataLayer || [];
@@ -164,19 +164,19 @@ Se recomienda activar cualquier código personalizado basado en un evento de la 
 
    ![Datos de presentación de página](assets/page-show-console-data.png)
 
-   El `cmp:show` evento de la página se activa en cada carga de página en la parte superior de la página. Podría preguntar, ¿por qué se activó el controlador de evento cuando la página ya se ha cargado claramente?
+   El evento `cmp:show` de la página se activa en cada carga de página en la parte superior de la página. Podría preguntar, ¿por qué se activó el controlador de evento cuando la página ya se ha cargado claramente?
 
-   Esta es una de las características únicas de la capa de datos del cliente de Adobe, en la que puede registrar oyentes de evento **antes** o **después** de que se haya inicializado la capa de datos. Esta es una característica fundamental para evitar las condiciones de carrera.
+   Esta es una de las características únicas de la capa de datos del cliente de Adobe, en la que puede registrar oyentes de evento **antes** o **después de** que se inicialice la capa de datos. Esta es una característica fundamental para evitar las condiciones de carrera.
 
-   La capa de datos mantiene una matriz de cola de todos los eventos que se han producido en secuencia. De forma predeterminada, la capa de datos activará las rellamadas de evento para eventos que se produjeron en el **pasado** , así como para eventos en el **futuro**. Es posible filtrar los eventos al pasado o al futuro. [Puede encontrar más información en la documentación](https://github.com/adobe/adobe-client-data-layer/wiki#addeventlistener).
+   La capa de datos mantiene una matriz de cola de todos los eventos que se han producido en secuencia. De forma predeterminada, la capa de datos activará rellamadas de evento para eventos que se produjeron en **pasado**, así como eventos en **futuro**. Es posible filtrar los eventos al pasado o al futuro. [Puede encontrar más información en la documentación](https://github.com/adobe/adobe-client-data-layer/wiki#addeventlistener).
 
 
 ## Próximos pasos
 
-Consulte el siguiente tutorial para aprender a utilizar la capa de datos del cliente de Adobe controlada por eventos para [recopilar datos de página y enviarlos a Adobe Analytics](../analytics/collect-data-analytics.md).
+Consulte el siguiente tutorial para aprender a utilizar la capa de datos del cliente de Adobe controlada por evento para [recopilar datos de página y enviarlos a Adobe Analytics](../analytics/collect-data-analytics.md).
 
 
 ## Recursos adicionales {#additional-resources}
 
 * [Documentación de la capa de datos del cliente de Adobe](https://github.com/adobe/adobe-client-data-layer/wiki)
-* [Uso de la capa de datos del cliente de Adobe y de la documentación de componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/developing/data-layer/overview.html)
+* [Uso de la capa de datos del cliente de Adobe y de la documentación de componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html)
