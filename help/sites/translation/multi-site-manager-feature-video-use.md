@@ -22,7 +22,7 @@ ht-degree: 4%
 
 # Uso del administrador de varios sitios {#using-multi-site-manager-with-aem-sites}
 
-[!UICONTROL Live Copy Overview] y [!UICONTROL Blueprint Configuration Manager] son interfaces de AEM Author para trabajar con la función Multi Site Manager de Adobe Experience Manager Sites.
+[!UICONTROL Live Copy ] Overview y  [!UICONTROL Blueprint Configuration ] Manager son interfaces de AEM Author para trabajar con la función Multi Site Manager de Adobe Experience Manager Sites.
 
 ## Información general de Live Copy {#live-copy-overview}
 
