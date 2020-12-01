@@ -11,7 +11,7 @@ doc-type: tutorial
 translation-type: tm+mt
 source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '273'
 ht-degree: 0%
 
 ---
@@ -19,16 +19,16 @@ ht-degree: 0%
 
 # Desarrollar para el uso compartido de recursos entre Orígenes (CORS)
 
-Un ejemplo breve de cómo aprovechar [!DNL CORS] para acceder a contenido AEM desde una aplicación web externa mediante JavaScript del lado del cliente.
+Un ejemplo breve de cómo aprovechar [!DNL CORS] para acceder a contenido AEM desde una aplicación Web externa mediante JavaScript del lado del cliente.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18837/?quality=12&learn=on)
 
 En este vídeo:
 
-* **www.example.com** se asigna a localhost mediante `/etc/hosts`
-* **aem-publish.local** se asigna a localhost mediante `/etc/hosts`
-* [SimpleHTTPServer](https://itunes.apple.com/us/app/simple-http-server/id441002840?mt=12) (un envoltorio para SimpleHTTPServer [de](https://docs.python.org/2/library/simplehttpserver.html)[!DNL Python]) sirve la página HTML a través del puerto 8000.
-* [!DNL AEM Dispatcher] se ejecuta en [!DNL Apache HTTP Web Server] 2.4 y en la solicitud de proxy inverso en `aem-publish.local` a `localhost:4503`.
+* **www.example.** comaps para localhost mediante  `/etc/hosts`
+* **aem-publish.** localmaps a localhost mediante  `/etc/hosts`
+* [SimpleHTTPServer](https://itunes.apple.com/us/app/simple-http-server/id441002840?mt=12) (un contenedor para SimpleHTTPServer [[!DNL Python] de ](https://docs.python.org/2/library/simplehttpserver.html)s) está sirviendo la página HTML a través del puerto 8000.
+* [!DNL AEM Dispatcher] se ejecuta en  [!DNL Apache HTTP Web Server] 2.4 y se realiza una solicitud de proxy inverso  `aem-publish.local` en  `localhost:4503`.
 
 Para obtener más información, consulte [Explicación del uso compartido de recursos entre Orígenes (CORS) en AEM](./understand-cross-origin-resource-sharing.md).
 
@@ -37,9 +37,9 @@ Para obtener más información, consulte [Explicación del uso compartido de rec
 Esta página Web tiene lógica en que
 
 1. Al hacer clic en el botón
-1. Realiza una [!DNL AJAX GET] solicitud para `http://aem-publish.local/content/we-retail/.../experience/_jcr_content.1.json`
+1. Realiza una solicitud [!DNL AJAX GET] a `http://aem-publish.local/content/we-retail/.../experience/_jcr_content.1.json`
 1. Recupera el `jcr:title` formulario de la respuesta JSON
-1. Inyecta el `jcr:title` DOM
+1. Inyecta el `jcr:title` en el DOM
 
 ```xml
 <html>
@@ -94,9 +94,9 @@ Access-Control-Request-Method,Access-Control-Request-Headers]"
 />
 ```
 
-## Dispatcher configuration {#dispatcher-configuration}
+## Configuración de Dispatcher {#dispatcher-configuration}
 
-Para permitir el almacenamiento en caché y el envío de [!DNL CORS] encabezados en contenido en caché, agregue la siguiente configuración a todos los archivos de AEM Publish `dispatcher.any` .
+Para permitir el almacenamiento en caché y el servicio de [!DNL CORS] encabezados en contenido en caché, agregue la siguiente configuración a todos los archivos de AEM Publish `dispatcher.any` compatibles.
 
 ```
 /cache { 
@@ -113,9 +113,9 @@ Para permitir el almacenamiento en caché y el envío de [!DNL CORS] encabezados
 }
 ```
 
-**Reinicie la aplicación** de servidor web después de realizar cambios en el `dispatcher.any` archivo.
+**Reinicie la** aplicación del servidor web después de realizar cambios en el  `dispatcher.any` archivo.
 
-Es probable que borre la caché por completo para garantizar que los encabezados se almacenen correctamente en la caché en la siguiente solicitud después de una actualización de la `/headers` configuración.
+Es probable que borre la caché por completo para garantizar que los encabezados se almacenen correctamente en la caché en la siguiente solicitud después de una actualización de configuración `/headers`.
 
 ## Materiales de apoyo {#supporting-materials}
 
