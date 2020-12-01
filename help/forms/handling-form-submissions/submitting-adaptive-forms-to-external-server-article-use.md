@@ -28,7 +28,7 @@ Normalmente, los clientes desean enviar los datos del formulario a un servidor e
 
 Para enviar datos a un servidor interno, proporcione una ruta del recurso. Los datos se publican en la ruta del recurso. Por ejemplo, &lt;/content/restEndPoint> . Para esas solicitudes de anuncios, se utiliza la información de autenticación de la solicitud de envío.
 
-Para enviar datos a un servidor externo, proporcione una URL. The format of the URL is <http://host:port/path_to_rest_end_point>. Asegúrese de haber configurado la ruta para gestionar la solicitud de POST de forma anónima.
+Para enviar datos a un servidor externo, proporcione una URL. El formato de la dirección URL es <http://host:port/path_to_rest_end_point>. Asegúrese de haber configurado la ruta para gestionar la solicitud de POST de forma anónima.
 
 A los efectos de este artículo, he escrito un simple archivo de guerra que puede ser implementado en tu instancia de tomcat. Si damos por supuesto que tomcat se está ejecutando en el puerto 8080, la dirección URL del POST será
 
@@ -52,13 +52,14 @@ String data = request.getParameter(paramName);System.out.println("The data  is "
 }
 ```
 
-![envío de formulario](assets/formsubmission.gif)Para probar esto en su servidor, haga lo siguiente
+![](assets/formsubmission.gif)
+envío de formularioPara probar esto en su servidor, haga lo siguiente
 
 1. Instale Tomcat si todavía no lo tiene. [Las instrucciones para instalar tomcat están disponibles aquí](https://helpx.adobe.com/experience-manager/kt/forms/using/preparing-datasource-for-form-data-model-tutorial-use.html)
-1. Descargue el archivo [zip](assets/aemformsenablement.zip) asociado a este artículo. Descomprima el archivo para obtener el archivo de guerra.
+1. Descargue el [archivo zip](assets/aemformsenablement.zip) asociado con este artículo. Descomprima el archivo para obtener el archivo de guerra.
 1. Implemente el archivo de guerra en el servidor tomcat.
 1. Cree un formulario adaptable sencillo con el componente de archivo adjunto y configure su acción de envío como se muestra en la captura de pantalla anterior. La dirección URL del POST es <http://localhost:8080/AemFormsEnablement/HandleFormSubmission>. Si su AEM y tomcat no se están ejecutando en localhost, cambie la dirección URL según corresponda.
 1. Para habilitar el envío de datos de formularios de varias partes en tomcat, agregue el atributo siguiente al elemento de contexto de &lt;tomcatInstallDir>\conf\context.xml y reinicie el servidor de Tomcat.
-1. **&lt;Context allowCustomMultipartParsing=&quot;true&quot;>**
+1. **&lt;context allowCasualMultipartParsing=&quot;true&quot;>**
 1. Previsualización del formulario adaptable, agregue un archivo adjunto y envíe el archivo. Compruebe si hay mensajes en la ventana de la consola de tomcat.
 
