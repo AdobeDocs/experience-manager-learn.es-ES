@@ -38,21 +38,21 @@ Este vídeo explora la configuración de la canalización para el Programa en Cl
 
 ## Ejecución de canalización fallida
 
-Este vídeo explora la ejecución de la canalización CI/CD mediante el uso de código que falla en las comprobaciones de calidad requeridas por Cloud Manager, mediante la rama del **[!DNL yellow]** repositorio.
+Este vídeo explora la ejecución de la canalización CI/CD utilizando código que falla en las comprobaciones de calidad requeridas por el Administrador de nube, mediante la rama de repositorio **[!DNL yellow]**.
 
 >[!VIDEO](https://video.tv.adobe.com/v/23084/?quality=12&learn=on)
 
 ## Ejecución correcta de la canalización
 
-Este vídeo explora la ejecución exitosa de la canalización CI/CD utilizando código que pasa las comprobaciones de calidad requeridas por el Administrador de nube mediante la ramificación del **[!DNL master]** repositorio.
+Este vídeo explora la ejecución exitosa de la canalización CI/CD utilizando código que pasa las comprobaciones de calidad requeridas por el Administrador de nube mediante la rama de repositorio **[!DNL master]**.
 
-Este vídeo también toca la consola de [!UICONTROL Actividad] en Cloud Manager, que permite volver a entrar en ejecuciones activas o revisar las ejecuciones finalizadas o fallidas.
+Este vídeo también toca la consola [!UICONTROL Actividad] en Cloud Manager, que permite volver a entrar en ejecuciones activas o revisar las ejecuciones finalizadas o fallidas.
 
 >[!VIDEO](https://video.tv.adobe.com/v/23085/?quality=12&learn=on)
 
 ## Materiales de apoyo
 
 * [Guía del usuario de Cloud Manager](https://helpx.adobe.com/experience-manager/cloud-manager/user-guide.html)
-* [Descargar [!DNL SonarQube] análisis de código](https://helpx.adobe.com/experience-manager/cloud-manager/using/understand-your-test-results.html#CodeQualityTesting)
+* [Descargar  [!DNL SonarQube] análisis de código](https://helpx.adobe.com/experience-manager/cloud-manager/using/understand-your-test-results.html#CodeQualityTesting)
    * *XLSX disponible en la parte inferior de la sección vinculada*
 * [[!DNL SonarQube] Índice de reglas Java](https://rules.sonarsource.com/java/)
