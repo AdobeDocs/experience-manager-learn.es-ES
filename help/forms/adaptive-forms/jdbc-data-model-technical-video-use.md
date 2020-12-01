@@ -28,5 +28,5 @@ Este vídeo muestra cómo crear un modelo de datos de formulario basado en un or
 
 >[!NOTE]
 >
->Se puede utilizar cualquier origen de datos RDBMS, siempre que los controladores de base de datos necesarios se implementen en AEM como un paquete OSGi. La configuración de un origen de datos RDBMS en AEM se trata en la integración de datos de [configuración con AEM Forms](/help/forms/adaptive-forms/data-integration-technical-video-setup.md).
+>Se puede utilizar cualquier origen de datos RDBMS, siempre que los controladores de base de datos necesarios se implementen en AEM como un paquete OSGi. La configuración de un origen de datos RDBMS en AEM se trata en [Configuración de la integración de datos con AEM Forms](/help/forms/adaptive-forms/data-integration-technical-video-setup.md).
 
