@@ -20,12 +20,12 @@ ht-degree: 0%
 
 En estos vídeos, vemos algunas mejoras en la búsqueda de recursos introducidas en AEM. Los autores pueden impulsar ciertos recursos en los resultados de búsqueda de palabras clave actualizando las propiedades de metadatos correspondientes. También observamos algunas configuraciones avanzadas para los predicados OmniSearch de Recursos.
 
-## Búsqueda de aumento con metadatos de recursos {#search-boost-asset}
+## Búsqueda con metadatos de recursos {#search-boost-asset}
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=9&learn=on)
 
 ## Configuración avanzada de predicados de búsqueda de etiquetas y valores múltiples {#multi-value-tag-predicates}
 
-El predicado **de búsqueda de** varios valores está disponible para facilitar la coincidencia de texto en los resultados de búsqueda. También se han realizado varias mejoras en el predicado de etiquetas para filtrar más eficazmente los resultados de la búsqueda de recursos.
+El **predicado de búsqueda de varios valores** está disponible para facilitar la coincidencia de texto en los resultados de búsqueda. También se han realizado varias mejoras en el predicado de etiquetas para filtrar más eficazmente los resultados de la búsqueda de recursos.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16457/?quality=9&learn=on)
