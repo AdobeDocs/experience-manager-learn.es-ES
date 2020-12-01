@@ -23,23 +23,23 @@ Los fragmentos de contenido son una abstracción de contenido en AEM que permite
 
 >[!NOTE]
 >
->La funcionalidad de fragmento de contenido AEM que se incluye en estos vídeos se introdujo por primera vez en [AEM 6.3 + FP 1908 y FP19614](https://helpx.adobe.com/experience-manager/6-3/release-notes/content-services-fragments-featurepack.html).
+>La funcionalidad de fragmento de contenido AEM que se incluye en estos vídeos se introdujo por primera vez en [AEM 6.3 + FP 19008 y FP19614](https://helpx.adobe.com/experience-manager/6-3/release-notes/content-services-fragments-featurepack.html).
 
 
 AEM fragmentos de contenido son contenido editorial basado en texto que puede incluir algunos elementos de datos estructurados asociados pero considerados contenido puro sin información de diseño o diseño. Los fragmentos de contenido se suelen crear como contenido no apto para el canal, que se va a utilizar y reutilizar en canales, lo que a su vez envuelve el contenido en una experiencia específica para el contexto.
 
-Esta serie de vídeos cubre el ciclo de vida de creación de fragmentos de contenido en AEM. Los detalles sobre la [entrega de fragmentos de contenido se pueden encontrar aquí](content-fragments-delivery-feature-video-use.md).
+Esta serie de vídeos cubre el ciclo de vida de creación de fragmentos de contenido en AEM. Puede encontrar más información sobre [la entrega de fragmentos de contenido aquí](content-fragments-delivery-feature-video-use.md).
 
 1. Activación y definición de modelos de fragmentos de contenido
 2. Creación de fragmentos de contenido
 3. Descarga de fragmentos de contenido
 4. Funciones editoriales
 
-## Defining Content Fragment Models {#defining-content-fragment-models}
+## Definición de modelos de fragmento de contenido {#defining-content-fragment-models}
 
 >[!VIDEO](https://video.tv.adobe.com/v/22452/?quality=12&learn=on)
 
-AEM los modelos de fragmentos de contenido, los esquemas de datos de los fragmentos de contenido, deben habilitarse mediante AEM navegador [[!UICONTROL de]](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html)configuración, lo que permite definir los modelos de fragmentos de contenido según la configuración.
+AEM los modelos de fragmentos de contenido, los esquemas de datos de los fragmentos de contenido, deben habilitarse mediante AEM [[!UICONTROL Navegador de configuración]](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html), lo que permite definir los modelos de fragmentos de contenido según la configuración.
 
 ## Creación de fragmentos de contenido {#creating-content-fragments}
 
@@ -61,7 +61,7 @@ Los fragmentos de contenido de AEM se pueden descargar de AEM Author como un arc
 *Ejemplo de archivo Zip de descarga de fragmento de contenido:*\
 **[daniel_schreder.zip](assets/daniel_schreder.zip)**
 
-## Funciones editoriales del fragmento de contenido {#editorial-capabilities}
+## Capacidades editoriales del fragmento de contenido {#editorial-capabilities}
 
 >[!VIDEO](https://video.tv.adobe.com/v/25891/?quality=12&learn=on)
 
@@ -71,7 +71,7 @@ Los fragmentos de contenido de AEM se pueden descargar de AEM Author como un arc
 
 ## Próximos pasos
 
-Obtenga información sobre la [distribución de fragmentos](content-fragments-delivery-feature-video-use.md)de contenido.
+Obtenga más información sobre [envío de fragmentos de contenido](content-fragments-delivery-feature-video-use.md).
 
 ## Recursos adicionales {#additional-resources}
 
