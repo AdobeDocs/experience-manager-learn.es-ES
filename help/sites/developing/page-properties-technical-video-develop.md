@@ -16,7 +16,7 @@ ht-degree: 5%
 ---
 
 
-# Ampliación de las propiedades de la página {#extending-page-properties-in-aem-sites}
+# Extensión de las propiedades de página {#extending-page-properties-in-aem-sites}
 
 La personalización de los campos de metadatos para las propiedades de la página es un requisito común en cualquier implementación de sitios. En este vídeo se detalla la manera más eficaz de lograr esto mediante las funciones de la fusión de recursos de Sling.
 
