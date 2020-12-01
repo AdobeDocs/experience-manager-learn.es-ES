@@ -40,28 +40,28 @@ Experience Manager es una aplicación Java y, por lo tanto, requiere el SDK de J
 El AEM como SDK de Cloud Service o SDK de AEM contiene el Jar de inicio rápido utilizado para ejecutar AEM Author y Publicar localmente para el desarrollo, así como la versión compatible de las herramientas de Dispatcher.
 
 1. Inicie sesión en [https://experience.adobe.com/#/downloads](https://experience.adobe.com/#/downloads) con su Adobe ID
-   + Tenga en cuenta que la organización de Adobe __debe__ estar aprovisionada para AEM como Cloud Service para descargar la AEM como un SDK Cloud Service.
+   + Tenga en cuenta que la organización de Adobe __debe__ aprovisionarse para AEM como Cloud Service para descargar la AEM como un SDK de Cloud Service.
 1. Vaya a la ficha __AEM como Cloud Service__
-1. Ordenar por fecha ____ de publicación en orden __De bajada__
-1. Haga clic en la última fila de resultados del SDK ____ AEM
-1. Revisar y aceptar el EULA y tocar el botón __Descargar__
+1. Ordenar por __Fecha de publicación__ en orden __De bajada__
+1. Haga clic en la última fila de resultados de __AEM SDK__
+1. Revise y acepte el EULA y toque el botón __Descargar__
 
 ## Extracción de la barra de inicio rápido del zip del SDK de AEM
 
 1. Descomprima el archivo `aem-sdk-XXX.zip` descargado
 
-## Configuración del servicio local de AEM Author{#set-up-local-aem-author-service}
+## Configure el servicio local de AEM Author{#set-up-local-aem-author-service}
 
 El servicio local de creación de AEM proporciona a los desarrolladores una experiencia local que los creadores de contenido/especialistas en marketing digital compartirán para crear y administrar contenido.  AEM Author Service está diseñado como un entorno de creación y previsualización, lo que permite realizar la mayoría de las validaciones del desarrollo de funciones en su contra, lo que lo convierte en un elemento vital del proceso de desarrollo local.
 
 1. Crear la carpeta `~/aem-sdk/author`
-1. Copie el archivo JAR __de__ inicio rápido en `~/aem-sdk/author` y cambie su nombre a `aem-author-p4502.jar`
+1. Copie el archivo __JAR de inicio rápido__ en `~/aem-sdk/author` y cámbiele el nombre a `aem-author-p4502.jar`
 1. Inicio del servicio local de creación de AEM ejecutando lo siguiente desde la línea de comandos:
    + `java -jar aem-author-p4502.jar`
       + Proporcione la contraseña de administrador como `admin`. Se acepta cualquier contraseña de administrador, pero se recomienda utilizar el valor predeterminado para el desarrollo local a fin de reducir la necesidad de volver a configurar.
 
-   El inicio de la AEM *no se puede* realizar como Jar de inicio rápido [del Cloud Service haciendo clic](#troubleshooting-double-click)con el doble.
-1. Acceda al servicio local de creación de AEM en [http://localhost:4502](http://localhost:4502) en un navegador web
+   *no puede* inicio el AEM como Jar de inicio rápido del Cloud Service [haciendo clic con el doble](#troubleshooting-double-click).
+1. Acceda al servicio local de creación de AEM en [http://localhost:4502](http://localhost:4502) en un explorador Web
 
 Windows:
 
@@ -83,16 +83,16 @@ $ java -jar aem-author-p4502.jar
 
 ## Configuración del servicio local de AEM Publish
 
-El servicio de publicación AEM local proporciona a los desarrolladores la experiencia local que los usuarios finales de la AEM tendrán, como explorar el sitio web alojado en AEM. Un servicio de publicación AEM local es importante ya que se integra con las herramientas [de](./dispatcher-tools.md) Dispatcher del SDK de AEM y permite a los desarrolladores probar y perfeccionar la experiencia final de cara al usuario final.
+El servicio de publicación AEM local proporciona a los desarrolladores la experiencia local que los usuarios finales de la AEM tendrán, como explorar el sitio web alojado en AEM. Un servicio de publicación AEM local es importante ya que se integra con las [herramientas de despachante](./dispatcher-tools.md) del SDK de AEM y permite a los desarrolladores probar y perfeccionar la experiencia final de cara al usuario final.
 
 1. Crear la carpeta `~/aem-sdk/publish`
-1. Copie el archivo JAR __de__ inicio rápido en `~/aem-sdk/publish` y cambie su nombre a `aem-publish-p4503.jar`
+1. Copie el archivo __JAR de inicio rápido__ en `~/aem-sdk/publish` y cámbiele el nombre a `aem-publish-p4503.jar`
 1. Inicio del servicio de publicación AEM local mediante la ejecución de lo siguiente desde la línea de comandos:
    + `java -jar aem-publish-p4503.jar`
       + Proporcione la contraseña de administrador como `admin`. Se acepta cualquier contraseña de administrador, pero se recomienda utilizar el valor predeterminado para el desarrollo local a fin de reducir la necesidad de volver a configurar.
 
-   El inicio de la AEM *no se puede* realizar como Jar de inicio rápido [del Cloud Service haciendo clic](#troubleshooting-double-click)con el doble.
-1. Acceda al servicio de publicación local de AEM en [http://localhost:4503](http://localhost:4503) desde un navegador web
+   *no puede* inicio el AEM como Jar de inicio rápido del Cloud Service [haciendo clic con el doble](#troubleshooting-double-click).
+1. Acceda al servicio local de AEM Publish en [http://localhost:4503](http://localhost:4503) en un navegador Web
 
 Windows:
 
@@ -114,16 +114,16 @@ $ java -jar aem-publish-p4503.jar
 
 ## Modos de inicio de Jar de inicio rápido
 
-El nombre de la barra de inicio rápido `aem-<tier>_<environment>-p<port number>.jar` especifica cómo se inicio. Una vez AEM se ha iniciado en un nivel, un autor o una publicación específicos, no se puede cambiar al nivel alternativo. Para ello, se debe eliminar la `crx-Quickstart` carpeta generada durante la primera ejecución y volver a ejecutar la barra de inicio rápido. Entorno y puertos se pueden cambiar, pero requieren detención/inicio de la instancia de AEM local.
+El nombre de la barra de inicio rápido, `aem-<tier>_<environment>-p<port number>.jar` especifica cómo se realizará el inicio. Una vez AEM se ha iniciado en un nivel, un autor o una publicación específicos, no se puede cambiar al nivel alternativo. Para ello, debe eliminarse la carpeta `crx-Quickstart` generada durante la primera ejecución y debe ejecutarse de nuevo la barra de inicio rápido. Entorno y puertos se pueden cambiar, pero requieren detención/inicio de la instancia de AEM local.
 
-Cambiar entornos `dev`, `stage` y `prod`, puede resultar útil para los desarrolladores a fin de garantizar que las configuraciones específicas del entorno se definan y resuelvan correctamente por AEM. Se recomienda que el desarrollo local se realice principalmente en el modo de ejecución de `dev` entorno predeterminado.
+Cambiar entornos, `dev`, `stage` y `prod`, puede resultar útil para los programadores a fin de garantizar que las configuraciones específicas del entorno estén correctamente definidas y resueltas por AEM. Se recomienda que el desarrollo local se realice principalmente en el modo de ejecución de entorno predeterminado `dev`.
 
 Las permutaciones disponibles son las siguientes:
 
 + `aem-author-p4502.jar`
    + Como autor en el modo de ejecución Dev en el puerto 4502
 + `aem-author_dev-p4502.jar`
-   + Como autor en el modo de ejecución Dev en el puerto 4502 (igual que `aem-author-p4502.jar`)
+   + Como Autor en el modo de ejecución Dev en el puerto 4502 (igual que `aem-author-p4502.jar`)
 + `aem-author_stage-p4502.jar`
    + Como autor en el modo de ejecución provisional en el puerto 4502
 + `aem-author_prod-p4502.jar`
@@ -131,7 +131,7 @@ Las permutaciones disponibles son las siguientes:
 + `aem-publish-p4503.jar`
    + Como autor en el modo de ejecución Dev en el puerto 4503
 + `aem-publish_dev-p4503.jar`
-   + Como autor en el modo de ejecución Dev en el puerto 4503 (igual que `aem-publish-p4503.jar`)
+   + Como Autor en el modo de ejecución Dev en el puerto 4503 (igual que `aem-publish-p4503.jar`)
 + `aem-publish_stage-p4503.jar`
    + Como autor en el modo de ejecución provisional en el puerto 4503
 + `aem-publish_prod-p4503.jar`
@@ -139,8 +139,8 @@ Las permutaciones disponibles son las siguientes:
 
 Tenga en cuenta que el número de puerto puede ser cualquier puerto disponible en la máquina de desarrollo local, sin embargo por convención:
 
-+ El puerto __4502__ se utiliza para el servicio AEM Author __local__
-+ El puerto __4503__ se utiliza para el servicio de publicación de AEM __local__
++ El puerto __4502__ se utiliza para el __servicio local de AEM Author__
++ El puerto __4503__ se utiliza para el __servicio de AEM Publish local__
 
 Cambiar estas opciones puede requerir ajustes en AEM configuraciones del SDK
 
@@ -161,14 +161,14 @@ Actualice el SDK de AEM al menos mensualmente el último jueves de cada mes o po
 La actualización del SDK de AEM está creando efectivamente un nuevo tiempo de ejecución de AEM, incluido un nuevo repositorio, lo que significa que se perderán los cambios realizados en un repositorio anterior del SDK de AEM. Las siguientes son estrategias viables para ayudar a mantener el contenido entre AEM actualizaciones del SDK y se pueden utilizar de forma discreta o concertada:
 
 1. Cree un paquete de contenido dedicado a contener contenido de &quot;muestra&quot; para ayudar al desarrollo y mantenerlo en Git. Cualquier contenido que debería persistir a través de AEM actualizaciones del SDK se mantendría en este paquete y se volvería a implementar después de actualizar el SDK de AEM.
-1. Utilice [roak-upgrade](https://jackrabbit.apache.org/oak/docs/migration.html) con la `includepaths` directiva para copiar contenido del repositorio AEM SDK anterior al nuevo repositorio AEM SDK.
+1. Utilice [oak-upgrade](https://jackrabbit.apache.org/oak/docs/migration.html) con la directiva `includepaths` para copiar contenido del repositorio anterior del SDK de AEM al nuevo repositorio del SDK de AEM.
 1. Realice una copia de seguridad de cualquier contenido mediante AEM administrador de paquetes y paquetes de contenido en el SDK de AEM anterior, y vuelva a instalarlos en el nuevo SDK de AEM.
 
 Recuerde que, con los enfoques anteriores para mantener el código entre AEM actualizaciones del SDK, indica un patrón de desarrollo anti-patrón. El código no desechable debe originarse en el IDE de desarrollo y fluir al SDK de AEM mediante implementaciones.
 
 ## Solución de problemas
 
-## Al hacer clic en el archivo Jar de inicio rápido con el doble se produce un error{#troubleshooting-double-click}
+## Al hacer clic en el doble del archivo Jar de inicio rápido se produce un error{#troubleshooting-double-click}
 
 Al hacer clic con el doble en el inicio de la barra de inicio rápido, se muestra un modal de error que impide que la AEM se inicie localmente.
 
@@ -176,7 +176,7 @@ Al hacer clic con el doble en el inicio de la barra de inicio rápido, se muestr
 
 Esto se debe a que AEM como Cloud Service Jar de inicio rápido no admite hacer clic en el doble de la Jar de inicio rápido para AEM localmente. En su lugar, debe ejecutar el archivo Jar desde esa línea de comandos.
 
-Para inicio del servicio AEM Author, `cd` vaya al directorio que contiene la barra de inicio rápido y ejecute el comando:
+Para inicio del servicio AEM Author, `cd` en el directorio que contiene la barra de inicio rápido y ejecute el comando:
 
 `$ java -jar aem-author-p4502.jar`
 
@@ -184,7 +184,7 @@ o bien, para inicio del servicio AEM Publish, `cd` en el directorio que contiene
 
 `$ java -jar aem-author-p4503.jar`
 
-## El inicio de la barra de inicio rápido desde la línea de comandos se anula inmediatamente{#troubleshooting-java-8}
+## El inicio de la barra de inicio rápido desde la línea de comandos anula de inmediato{#troubleshooting-java-8}
 
 Al iniciar la barra de inicio rápido desde la línea de comandos, el proceso se anula inmediatamente y el servicio de AEM no se inicio, con el siguiente error:
 
