@@ -25,47 +25,47 @@ Este capítulo trata la habilitación y definición de modelos de fragmento de c
 
 ## Habilitar modelos de fragmento de contenido
 
-Los modelos de fragmento de contenido **deben** habilitarse mediante **[AEM explorador ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html)** de configuración.
+Los modelos de fragmento de contenido **deben** habilitarse mediante **[AEM [!UICONTROL Navegador de configuración]](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html)**.
 
-Si los modelos de fragmento de contenido **no están** habilitados para una configuración, el botón **[!UICONTROL Crear] > Fragmento [!UICONTROL de]** contenido no aparecerá para la configuración de AEM correspondiente.
+Si los modelos de fragmento de contenido **no** están habilitados para una configuración, el botón **[!UICONTROL Crear] > [!UICONTROL Fragmento de contenido]** no aparecerá para la configuración de AEM pertinente.
 
 >[!NOTE]
 >
->AEM configuraciones representan un conjunto de configuraciones [de inquilinos según el](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) contexto almacenadas en `/conf`. Normalmente, las configuraciones de AEM se correlacionan con un sitio Web en particular administrado en AEM Sites o con una unidad de negocio responsable de un subconjunto de contenido (recursos, páginas, etc.) en AEM.
+>AEM configuraciones representan un conjunto de [configuraciones de inquilinos según el contexto](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) almacenadas en `/conf`. Normalmente, las configuraciones de AEM se correlacionan con un sitio Web en particular administrado en AEM Sites o con una unidad de negocio responsable de un subconjunto de contenido (recursos, páginas, etc.) en AEM.
 >
->Para que una configuración afecte a una jerarquía de contenido, se debe hacer referencia a la configuración a través de la `cq:conf` propiedad en esa jerarquía de contenido. (Esto se logra para la [!DNL WKND Mobile] configuración en el **paso 5** siguiente).
+>Para que una configuración afecte a una jerarquía de contenido, se debe hacer referencia a la configuración mediante la propiedad `cq:conf` de esa jerarquía de contenido. (Esto se logra para la configuración [!DNL WKND Mobile] en **Paso 5** a continuación).
 >
->Cuando se utiliza la `global` configuración, ésta se aplica a todo el contenido y `cq:conf` no es necesario configurarla.
+>Cuando se utiliza la configuración `global`, la configuración se aplica a todo el contenido y no es necesario establecer `cq:conf`.
 >
->See the [[!UICONTROL Configuration Browser] documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html) for more information.
+>Consulte la documentación de [[!UICONTROL Configuration Browser]](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html) para obtener más información.
 
 1. Inicie sesión en AEM Author como usuario con los permisos adecuados para modificar la configuración pertinente.
-   * Para este tutorial, se puede utilizar el usuario **administrador** .
-1. Vaya a **[!UICONTROL Herramienta] > [!UICONTROL General] > Navegador [!UICONTROL de configuración]**
-1. Toque el icono **de** carpeta situado junto a **[!DNL WKND Mobile]** para seleccionarlo y, a continuación, toque el botón **[!UICONTROL Editar] de la parte superior izquierda** .
-1. Seleccione Modelos **[!UICONTROL de fragmento de contenido]** y toque **[!UICONTROL Guardar y cerrar]** en la parte superior derecha.
+   * Para este tutorial, se puede utilizar el usuario **admin**.
+1. Vaya a **[!UICONTROL Herramienta] > [!UICONTROL General] > [!UICONTROL Navegador de configuración]**
+1. Toque el icono **carpeta** situado junto a **[!DNL WKND Mobile]** para seleccionarlo y, a continuación, toque el botón **[!UICONTROL Editar]** en la parte superior izquierda.
+1. Seleccione **[!UICONTROL Modelos de fragmento de contenido]** y toque **[!UICONTROL Guardar y cerrar]** en la parte superior derecha.
 
-   Esto habilita los modelos de fragmento de contenido en los árboles de contenido de la carpeta de recursos que tienen aplicada la [!DNL WKND Mobile] configuración.
+   Esto habilita los modelos de fragmento de contenido en los árboles de contenido de la carpeta de recursos que tienen aplicada la configuración [!DNL WKND Mobile].
 
    >[!NOTE]
    >
-   >Este cambio de configuración no es reversible desde la interfaz de usuario web de configuración [!UICONTROL de] AEM. Para deshacer esta configuración:
+   >Este cambio de configuración no es reversible desde la [!UICONTROL interfaz de usuario web de configuración de AEM]. Para deshacer esta configuración:
    >    
    >    1. Abrir [CRXDE Lite](http://localhost:4502/crx/de)
    >    1. Ir a `/conf/wknd-mobile/settings/dam/cfm`
-   >    1. Eliminar el `models` nodo
+   >    1. Eliminar el nodo `models`
 
    >    
-   >Se eliminarán todos los modelos de fragmento de contenido creados con esta configuración, así como sus definiciones se almacenarán en `/conf/wknd-mobile/settings/dam/cfm/models`.
+   >Se eliminarán todos los modelos de fragmento de contenido creados con esta configuración y sus definiciones se almacenarán en `/conf/wknd-mobile/settings/dam/cfm/models`.
 
-1. Aplique la **[!DNL WKND Mobile]** configuración a la carpeta **[!DNL WKND Mobile]** Recursos para permitir que los fragmentos de contenido de los modelos de fragmentos de contenido se creen dentro de la jerarquía de carpetas Recursos:
+1. Aplique la configuración **[!DNL WKND Mobile]** a la carpeta **[!DNL WKND Mobile]Assets** para permitir que los fragmentos de contenido de los modelos de fragmentos de contenido se creen dentro de la jerarquía de carpetas Recursos:
 
    1. Vaya a **[!UICONTROL AEM] > [!UICONTROL Recursos] > [!UICONTROL Archivos]**
    1. Seleccione la carpeta **[!UICONTROL WKND Mobile]**
-   1. Toque el botón **[!UICONTROL Propiedades]** de la barra de acciones superior para abrir Propiedades [!UICONTROL de carpeta]
-   1. En Propiedades [!UICONTROL de la carpeta], toque la ficha **[!UICONTROL Cloud Services]**
-   1. Verifique que el campo Configuración **[!UICONTROL de]** nube esté establecido en **/conf/wknd-mobile**
-   1. Toque **[!UICONTROL Guardar y cerrar]** en la esquina superior derecha para mantener los cambios
+   1. Toque el botón **[!UICONTROL Properties]** en la barra de acciones superior para abrir [!UICONTROL Folder Properties]
+   1. En [!UICONTROL Propiedades de la carpeta], toque la ficha **[!UICONTROL Cloud Services]**
+   1. Verifique que el campo **[!UICONTROL Configuración de la nube]** esté establecido en **/conf/wknd-mobile**
+   1. Toque **[!UICONTROL Guardar y cerrar]** en la esquina superior derecha para continuar con los cambios
 
 >[!VIDEO](https://video.tv.adobe.com/v/28336/?quality=12&learn=on)
 
@@ -81,31 +81,31 @@ Con la asignación podemos definir el fragmento de contenido que se utilizará p
 
 ## Creación del modelo de fragmento de contenido
 
-1. Vaya a **[!UICONTROL Herramientas] > [!UICONTROL Recursos] > Modelos [!UICONTROL de fragmento de contenido]**.
-1. Toque la **[!DNL WKND Mobile]** carpeta para abrirla.
-1. Toque **[!UICONTROL Crear]** para abrir el asistente de creación del modelo de fragmento de contenido.
-1. Introduzca **[!DNL Event]** como título **** de modelo *(la descripción es opcional)* y toque **[!UICONTROL Crear]** para guardarla.
+1. Vaya a **[!UICONTROL Herramientas] > [!UICONTROL Recursos] > [!UICONTROL Modelos de fragmento de contenido]**.
+1. Toque la carpeta **[!DNL WKND Mobile]** para abrirla.
+1. Toque **[!UICONTROL Crear]** para abrir el asistente para la creación del modelo de fragmento de contenido.
+1. Escriba **[!DNL Event]** como **[!UICONTROL Título del modelo]** *(la descripción es opcional)* y toque **[!UICONTROL Crear]** para guardar.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28337/?quality=12&learn=on)
 
 ## Definición de la estructura del modelo de fragmento de contenido
 
-1. Vaya a **[!UICONTROL Herramientas] > [!UICONTROL Recursos] > Modelos [!UICONTROL de fragmentos] de contenido >[!DNL WKND]**.
-1. Seleccione el modelo de fragmento de **[!DNL Event]** contenido y toque **[!UICONTROL Editar]** en la barra de acciones superior.
-1. En la ficha **[!UICONTROL Tipos] de** datos de la derecha, arrastre la entrada **[!UICONTROL de texto de]** una sola línea a la zona desplegable izquierda para definir el **[!DNL Question]** campo.
-1. Asegúrese de que la nueva entrada **[!UICONTROL de texto de]** una sola línea está seleccionada a la izquierda y de que la ficha **** Propiedades está seleccionada a la derecha. Rellene los campos Propiedades como se indica a continuación:
+1. Vaya a **[!UICONTROL Herramientas] > [!UICONTROL Recursos] > [!UICONTROL Modelos de fragmento de contenido] >[!DNL WKND]**.
+1. Seleccione el modelo de fragmento de contenido **[!DNL Event]** y toque **[!UICONTROL Editar]** en la barra de acciones superior.
+1. En la ficha **[!UICONTROL Tipos de datos]** de la derecha, arrastre la **[!UICONTROL entrada de texto de una sola línea]** a la zona desplegable izquierda para definir el campo **[!DNL Question]**.
+1. Asegúrese de que la nueva **[!UICONTROL entrada de texto de una sola línea]** está seleccionada a la izquierda y la ficha **[!UICONTROL Propiedades]** está seleccionada a la derecha. Rellene los campos Propiedades como se indica a continuación:
 
    * [!UICONTROL Procesar como] : `textfield`
    * [!UICONTROL Etiqueta de campo] : `Event Title`
    * [!UICONTROL Nombre de propiedad] : `eventTitle`
-   * [!UICONTROL Longitud] máxima: 25
+   * [!UICONTROL Longitud]  máxima: 25
    * [!UICONTROL Requerido] : `Yes`
 
 Repita estos pasos utilizando las definiciones de entrada definidas a continuación para crear el resto del modelo de fragmento de contenido de Evento.
 
 >[!NOTE]
 >
-> Los campos **Nombre** de propiedad DEBEN coincidir exactamente, ya que la aplicación de Android se programa para eliminar la clave de estos nombres.
+> Los campos **Nombre de propiedad** DEBEN coincidir exactamente, ya que la aplicación de Android se programa para eliminar estos nombres.
 
 ### Descripción del evento
 
@@ -126,7 +126,7 @@ Repita estos pasos utilizando las definiciones de entrada definidas a continuaci
 * [!UICONTROL Tipo de datos] : `Enumeration`
 * [!UICONTROL Etiqueta de campo] : `Event Type`
 * [!UICONTROL Nombre de propiedad] : `eventType`
-* [!UICONTROL Opciones] : `Art,Music,Performance,Photography`
+* [!UICONTROL Opciones] :  `Art,Music,Performance,Photography`
 
 ### Precio de entrada
 
@@ -152,7 +152,7 @@ Repita estos pasos utilizando las definiciones de entrada definidas a continuaci
 * [!UICONTROL Procesar como] : `textfield`
 * [!UICONTROL Etiqueta de campo] : `Venue Name`
 * [!UICONTROL Nombre de propiedad] : `venueName`
-* [!UICONTROL Longitud] máxima: 20
+* [!UICONTROL Longitud]  máxima: 20
 * [!UICONTROL Requerido] : `Yes`
 
 ### Ciudad del lugar
@@ -160,13 +160,13 @@ Repita estos pasos utilizando las definiciones de entrada definidas a continuaci
 * [!UICONTROL Tipo de datos] : `Enumeration`
 * [!UICONTROL Etiqueta de campo] : `Venue City`
 * [!UICONTROL Nombre de propiedad] : `venueCity`
-* [!UICONTROL Opciones] : `Basel,London,Los Angeles,Paris,New York,Tokyo`
+* [!UICONTROL Opciones] :  `Basel,London,Los Angeles,Paris,New York,Tokyo`
 
 >[!VIDEO](https://video.tv.adobe.com/v/28335/?quality=12&learn=on)
 
 >[!NOTE]
 >
->El nombre **[!UICONTROL de]** propiedad indica **tanto** el nombre de la propiedad JCR donde se almacenará este valor como la clave en el archivo JSON. Debe ser un nombre semántico que no cambie durante la vida del modelo de fragmento de contenido.
+>El **[!UICONTROL Nombre de propiedad]** denota el **tanto** nombre de propiedad JCR donde se almacenará este valor como la clave en el archivo JSON. Debe ser un nombre semántico que no cambie durante la vida del modelo de fragmento de contenido.
 
 Después de completar la creación del modelo de fragmento de contenido, debe terminar con una definición similar a:
 
@@ -175,6 +175,6 @@ Después de completar la creación del modelo de fragmento de contenido, debe te
 
 ## Paso siguiente
 
-Opcionalmente, instale el paquete de contenido [com.adobe.aem.guide.wknd-mobile.content.chapter-2.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) en AEM Author mediante [AEM administrador](http://localhost:4502/crx/packmgr/index.jsp)de paquetes. Este paquete contiene las configuraciones y el contenido que se describen en esta parte del tutorial.
+Opcionalmente, instale el paquete de contenido [com.adobe.aem.guide.wknd-mobile.content.chapter-2.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) en AEM Author mediante [Administrador de paquetes AEM](http://localhost:4502/crx/packmgr/index.jsp). Este paquete contiene las configuraciones y el contenido que se describen en esta parte del tutorial.
 
 * [Capítulo 3 - Creación de fragmentos de contenido de Evento](./chapter-3.md)
