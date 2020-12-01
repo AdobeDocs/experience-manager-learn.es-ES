@@ -24,9 +24,9 @@ Los formularios HTML5 se pueden enviar al servlet alojado en AEM. Se puede acced
 
 ## Crear el controlador de envío
 
-Se puede crear un servlet sencillo para gestionar el envío de formularios HTML5. Los datos enviados se pueden extraer utilizando el siguiente código. Este [servlet](assets/html5-submit-handler.zip) está disponible como parte de este tutorial. Instale el [servlet](assets/html5-submit-handler.zip) mediante [el administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
+Se puede crear un servlet sencillo para gestionar el envío de formularios HTML5. Los datos enviados se pueden extraer utilizando el siguiente código. Este [servlet](assets/html5-submit-handler.zip) está disponible como parte de este tutorial. Instale el [servlet](assets/html5-submit-handler.zip) mediante [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
 
-El código de la línea 9 puede utilizarse para invocar el proceso J2EE. Asegúrese de que ha configurado la configuración [del SDK del cliente de](https://helpx.adobe.com/aem-forms/6/submit-form-data-livecycle-process.html) Adobe LiveCycle si desea utilizar el código para invocar el proceso J2EE.
+El código de la línea 9 puede utilizarse para invocar el proceso J2EE. Asegúrese de haber configurado [la configuración del SDK del cliente de Adobe LiveCycle](https://helpx.adobe.com/aem-forms/6/submit-form-data-livecycle-process.html) si desea utilizar el código para invocar el proceso J2EE.
 
 ```java
 StringBuffer stringBuffer = new StringBuffer();
@@ -62,12 +62,12 @@ System.out.println("The submitted form data is " + stringBuffer.toString());
 
 * Puntee en xdp y haga clic en _Propiedades_->_Avanzadas_
 * copie http://localhost:4502/content/AemFormsSamples/handlehml5formsubmission.html y péguelo en el campo de texto Enviar URL
-* Haga clic en el botón _Guardar y cerrar_ .
+* Haga clic en el botón _SaveAndClose_.
 
 ### Añadir entrada en las rutas de exclusión
 
 * Vaya a [configMgr](http://localhost:4502/system/console/configMgr).
-* Buscar el filtro CSRF de _Adobe Granite_
+* Buscar _Filtro CSRF de granito de Adobe_
 * Añada la siguiente entrada en la sección Rutas excluidas
 * _/content/AemFormsSamples/handlehml5formsubmit_
 * Guardar los cambios
