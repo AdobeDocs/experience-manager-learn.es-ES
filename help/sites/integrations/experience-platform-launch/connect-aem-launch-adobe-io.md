@@ -1,6 +1,6 @@
 ---
-title: Conectar AEM con Launch mediante E/S de Adobe
-description: Obtenga información sobre cómo crear una configuración IMS con E/S de Adobe para autenticar AEM con la API de Launch. Una vez que esta integración esté implementada, AEM podrá comunicarse mediante la API de Launch para acceder a las propiedades de Launch.
+title: Conectar AEM con Launch mediante Adobe I/O
+description: Obtenga información sobre cómo crear una configuración de IMS con Adobe I/O para autenticar AEM con la API de Launch. Una vez que esta integración esté implementada, AEM podrá comunicarse mediante la API de Launch para acceder a las propiedades de Launch.
 feature: launch
 topics: integrations
 audience: administrator
@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# Conectar AEM con Launch mediante E/S de Adobe {#connect-aem-launch-adobe-io}
+# Conectar AEM con Launch mediante Adobe I/O {#connect-aem-launch-adobe-io}
 
-Obtenga información sobre cómo crear una configuración IMS con E/S de Adobe para autenticar AEM con la API de Launch. Una vez que esta integración esté implementada, AEM podrá comunicarse mediante la API de Launch para acceder a las propiedades de Launch.
+Obtenga información sobre cómo crear una configuración de IMS con Adobe I/O para autenticar AEM con la API de Launch. Una vez que esta integración esté implementada, AEM podrá comunicarse mediante la API de Launch para acceder a las propiedades de Launch.
 
 >[!VIDEO](https://video.tv.adobe.com/v/38555?quality=12&learn=on)
 
