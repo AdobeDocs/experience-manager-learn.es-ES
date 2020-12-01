@@ -29,7 +29,7 @@ Después de crear y probar su documento de canal de impresión, necesitamos un m
 
 Al configurar una carpeta vigilada en AEM, se asocia una secuencia de comandos ECMA o un código Java que se ejecuta cuando se coloca un archivo en la carpeta vigilada. En este artículo, nos centraremos en la secuencia de comandos ECMA que generará documentos de canal de impresión y los guardará en el sistema de archivos.
 
-La configuración de la carpeta observada y la secuencia de comandos ECMA forman parte de los recursos importados al [principio de este tutorial](introduction.md)
+La configuración de la carpeta observada y la secuencia de comandos ECMA forman parte de los recursos importados al [comienzo de este tutorial](introduction.md)
 
 El archivo de entrada que se suelta en la carpeta controlada tiene la siguiente estructura. La secuencia de comandos ECMA lee los números de cuenta y genera documentos de canal de impresión para cada una de estas cuentas.
 
