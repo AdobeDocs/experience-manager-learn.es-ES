@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Live Copy, consola {#live-copy-console}
+# Consola Live Copy {#live-copy-console}
 
 Aprenda a realizar vistas o administrar la herencia en un sitio o a realizar operaciones de implementación mediante la consola Live Copy Overview.
 
