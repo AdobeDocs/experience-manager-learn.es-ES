@@ -22,13 +22,13 @@ ht-degree: 0%
 
 # Lista de tipos de recursos personalizados en AEM Forms {#listing-custom-asset-types-in-aem-forms}
 
-## Creación de una plantilla personalizada {#creating-custom-template}
+## Creando plantilla personalizada {#creating-custom-template}
 
 
 A los efectos de este artículo, crearemos una plantilla personalizada para mostrar los tipos de recursos personalizados y los tipos de recursos OOTB en la misma página. Para crear una plantilla personalizada, siga las instrucciones siguientes
 
 1. Crear una sling: en /apps. Asigne un nombre a &quot;myportalcomponent&quot;
-1. Añada una propiedad &quot;fpContentType&quot;. Establezca su valor en &quot;**/libs/fd/fp/formTemplate&quot;.**
+1. Añada una propiedad &quot;fpContentType&quot;. Establezca su valor en &quot;**/libs/fd/ fp/formTemplate&quot;.**
 1. Añada una propiedad &quot;title&quot; y defina su valor en &quot;custom template&quot;. Este es el nombre que verá en la lista desplegable del componente Buscar y listar
 1. Cree un archivo &quot;template.html&quot; en esta carpeta. Este archivo contendrá el código para aplicar estilo y mostrar los distintos tipos de recursos.
 
@@ -76,9 +76,9 @@ El siguiente código lista los distintos tipos de recursos mediante el component
 >
 >Para lista de Forms adaptable en esta plantilla, cree un nuevo div y defina su atributo de tipo de datos como &quot;guía&quot;. Puede copiar y pegar el div cuyo data-type=&quot;printForm&quot; y establecer el tipo de datos del div recién copiado en &quot;guide&quot;
 
-## Configurar El Componente Búsqueda Y Lista {#configure-search-and-lister-component}
+## Configurar el componente Búsqueda y listado {#configure-search-and-lister-component}
 
-Una vez definida la plantilla personalizada, ahora debemos asociar esta plantilla personalizada con el componente &quot;Buscar y listar&quot;. Apunta [a esta dirección URL ](http://localhost:4502/editor.html/content/AemForms/CustomPortal.html).
+Una vez definida la plantilla personalizada, ahora debemos asociar esta plantilla personalizada con el componente &quot;Buscar y listar&quot;. Apunte el explorador [a esta dirección URL ](http://localhost:4502/editor.html/content/AemForms/CustomPortal.html).
 
 Cambie al modo Diseño y configure el sistema de párrafos para incluir el componente Buscar y listar en el grupo de componentes permitidos. El componente Buscar y listado forma parte del grupo Servicios de Documento.
 
@@ -108,10 +108,11 @@ La siguiente captura de pantalla muestra los tipos de recursos configurados para
 
 ![assettypes](assets/assettypes.png)
 
-Ahora que ha configurado el componente de Search and Lister Portal, es hora de ver el listado en acción. Apunta [a esta dirección URL ](http://localhost:4502/content/AemForms/CustomPortal.html?wcmmode=disabled). Los resultados deberían ser parecidos a la imagen que se muestra a continuación.
+Ahora que ha configurado el componente de Search and Lister Portal, es hora de ver el listado en acción. Apunte el explorador [a esta dirección URL ](http://localhost:4502/content/AemForms/CustomPortal.html?wcmmode=disabled). Los resultados deberían ser parecidos a la imagen que se muestra a continuación.
 
 >[!NOTE]
 >
 >Si el portal está enumerando tipos de recursos personalizados en un servidor de publicación, asegúrese de dar permiso de &quot;lectura&quot; al usuario &quot;fd-service&quot; en el nodo **/apps/fd/fp/Extensions/querybuilder**
 
-![assettypes](assets/assettypeslistings.png)[Descargue e instale este paquete mediante el administrador de paquetes.](assets/customassettypekt1.zip) Contiene documentos mp4 y de palabras de ejemplo y archivos xdp que se utilizarán como tipos de recursos para la lista mediante el componente de búsqueda y lista
+![](assets/assettypeslistings.png)
+[assettypesDescargue e instale este paquete mediante el administrador de paquetes.](assets/customassettypekt1.zip) Contiene documentos mp4 y de palabras de ejemplo y archivos xdp que se utilizarán como tipos de recursos para la lista mediante el componente de búsqueda y lista
