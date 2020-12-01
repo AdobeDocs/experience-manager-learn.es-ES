@@ -25,14 +25,14 @@ Las etiquetas inteligentes personalizadas o las etiquetas inteligentes mejoradas
 
 >[!VIDEO](https://video.tv.adobe.com/v/22254/?quality=12&learn=on)
 
-## Configuración de etiquetas inteligentes personalizadas para imágenes para AEM 6.x{#set-up}
+## Configurar etiquetas inteligentes personalizadas para imágenes para AEM 6.x{#set-up}
 
 >[!NOTE]
 > Las etiquetas inteligentes personalizadas para imágenes se aprovisionan automáticamente para AEM como Cloud Service.
 
-Las etiquetas inteligentes personalizadas para imágenes requieren etiquetas [inteligentes para configurar](./image-smart-tags.md#set-up)las imágenes.
+Las etiquetas inteligentes personalizadas para imágenes requieren [etiquetas inteligentes para que las imágenes se configuren](./image-smart-tags.md#set-up).
 
-Obtenga información sobre cómo configurar la formación de etiquetas inteligentes en AEM Assets mediante el servicio de contenido inteligente y la E/S de Adobe. Etiquetas inteligentes personalizadas para imágenes
+Obtenga información sobre cómo configurar la formación de etiquetas inteligentes en AEM Assets mediante el servicio de contenido inteligente y Adobe I/O. Etiquetas inteligentes personalizadas para imágenes
 
 >[!VIDEO](https://video.tv.adobe.com/v/23405/?quality=12&learn=on)
 
