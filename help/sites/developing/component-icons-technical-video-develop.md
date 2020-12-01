@@ -15,7 +15,7 @@ ht-degree: 1%
 ---
 
 
-# Personalización de iconos de componentes {#developing-component-icons-in-aem-sites}
+# Personalización de iconos de componente {#developing-component-icons-in-aem-sites}
 
 Los iconos de componente permiten a los autores identificar rápidamente un componente con iconos o abreviaturas significativas. Los autores ahora pueden encontrar los componentes necesarios para crear sus experiencias web más rápido que nunca.
 
@@ -36,9 +36,9 @@ El navegador de componentes ahora se muestra en un tema gris coherente, mostrand
 
 ### Abreviaturas {#abbreviations}
 
-De forma predeterminada, los dos primeros caracteres del título del componente (**[cq:Component]@jcr:title**) se utilizan como abreviatura. Por ejemplo, si **[cq:Component]@jcr:title=Lista** de artículo, la abreviatura se mostrará como &quot;**Ar**&quot;.
+De forma predeterminada, los dos primeros caracteres del título del componente (**[cq:Component]@jcr:title**) se utilizan como abreviatura. Por ejemplo, si **[cq:Component]@jcr:title=Lista del artículo** la abreviatura se mostraría como &quot;**Ar**&quot;.
 
-La abreviatura se puede personalizar mediante la propiedad **[cq:Component]@abbreviation** . Aunque este valor puede aceptar más de 2 caracteres, se recomienda limitar la abreviatura a 2 caracteres para evitar cualquier perturbación visual.
+La abreviatura se puede personalizar mediante la propiedad **[cq:Component]@abbreviation**. Aunque este valor puede aceptar más de 2 caracteres, se recomienda limitar la abreviatura a 2 caracteres para evitar cualquier perturbación visual.
 
 ```plain
 /apps/.../components/content/my-component
@@ -48,7 +48,7 @@ La abreviatura se puede personalizar mediante la propiedad **[cq:Component]@abbr
 
 ### Iconos de CoralUI {#coralui-icons}
 
-Los iconos de CoralUI, proporcionados por AEM, se pueden utilizar para los iconos de componentes. Para configurar un icono de CoralUI, establezca una propiedad **[cq:Component]@cq:icon** en el valor de atributo de icono HTML del icono de CoralUI deseado (enumerado en la documentación [de](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html)CoralUI).
+Los iconos de CoralUI, proporcionados por AEM, se pueden utilizar para los iconos de componentes. Para configurar un icono de CoralUI, establezca una propiedad **[cq:Component]@cq:icon** en el valor de atributo del icono HTML del icono de CoralUI deseado (enumerado en la [documentación de CoralUI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html).
 
 ```plain
 /apps/.../components/content/my-component
@@ -62,7 +62,7 @@ Las imágenes PNG se pueden utilizar para los iconos de componentes. Para config
 
 El PNG debe tener un fondo transparente o un color de fondo definido como **#707070**.
 
-Las imágenes PNG se escalarán a **20 px por 20 px**. Sin embargo, puede que sea preferible admitir pantallas Retina de **40 px** por **40 px** .
+Las imágenes PNG se escalarán a **20 px por 20 px**. Sin embargo, para dar cabida a pantallas de retina **40px** por **40px** puede ser preferible.
 
 ```plain
 /apps/.../components/content/my-component
@@ -73,9 +73,9 @@ Las imágenes PNG se escalarán a **20 px por 20 px**. Sin embargo, puede que se
 
 ### Imágenes SVG {#svg-images}
 
-Las imágenes SVG (basadas en vectores) se pueden utilizar para los iconos de los componentes. Para configurar una imagen SVG como un icono de componente, agregue el archivo SVG deseado como **nt:file** denominado **cq:icon.svg** en **[cq:Component]**.
+Las imágenes SVG (basadas en vectores) se pueden utilizar para los iconos de los componentes. Para configurar una imagen SVG como un icono de componente, agregue el SVG deseado como **nt:file** con el nombre **cq:icon.svg** en **[cq:Component]**.
 
-Las imágenes SVG deben tener un color de fondo definido como **#707070** y un tamaño de **20 px por 20 px.**
+Las imágenes SVG deben tener un color de fondo establecido en **#707070** y un tamaño de **20 px por 20 px.**
 
 ```plain
 /apps/.../components/content/my-component
