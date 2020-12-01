@@ -30,7 +30,7 @@ El caso de uso es activar un flujo de trabajo AEM en un envío de formulario ada
    * Importe StoreAFInDBWorkflow.zip en AEM mediante el administrador de paquetes. El paquete tiene un flujo de trabajo de muestra que almacena los datos AF en la base de datos. Abra el modelo de flujo de trabajo. El flujo de trabajo solo tiene un paso. Este paso llama al código escrito en el paquete para almacenar los datos AF en la base de datos. Estoy pasando un solo argumento al proceso. Es el nombre del formulario adaptable cuyos datos se están guardando.
    * Implemente el archivo insertdata.core-0.0.1-SNAPSHOT.jar con la consola web Felix. Este paquete tiene el código para escribir los datos de formulario enviados en la base de datos
 
-* Ir a [ConfigMgr](http://localhost:4502/system/console/configMgr)
+* Vaya a [ConfigMgr](http://localhost:4502/system/console/configMgr)
 
    * Busque &quot;Grupo de conexiones JDBC&quot;. Crear un nuevo pool de conexiones JDBC Day Commons. Especifique la configuración específica de la base de datos.
 
