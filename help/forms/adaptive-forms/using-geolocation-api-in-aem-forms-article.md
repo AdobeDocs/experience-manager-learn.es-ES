@@ -22,13 +22,13 @@ ht-degree: 0%
 
 # Uso de las API de geolocalización en Forms adaptable{#using-geolocation-api-s-in-adaptive-forms}
 
-Visite la página de ejemplos [de](https://forms.enablementadobe.com/content/samples/samples.html?query=0) AEM Forms para ver un vínculo a una demostración en directo de esta capacidad.
+Visite la página [AEM Forms samples](https://forms.enablementadobe.com/content/samples/samples.html?query=0) para obtener un vínculo a una demostración en directo de esta capacidad.
 
 En este artículo analizaremos el uso de la API de geolocalización de Google para rellenar los campos de un formulario adaptable. Este caso de uso se suele utilizar cuando se desea rellenar los campos de dirección actuales en un formulario.
 
 Se siguieron los pasos siguientes para utilizar la API de geolocalización en Forms adaptable.
 
-1. [Obtenga la clave](https://developers.google.com/maps/documentation/javascript/get-api-key) de API de Google para utilizar la plataforma Google Maps. Puede obtener una clave de prueba válida durante 1 año.
+1. [Obtenga la ](https://developers.google.com/maps/documentation/javascript/get-api-key) clave de API de Google para utilizar la plataforma Google Maps. Puede obtener una clave de prueba válida durante 1 año.
 
 1. El fragmento de formulario adaptable se creó con campos para contener la dirección actual
 
@@ -102,7 +102,7 @@ Para activar esta capacidad en el servidor, siga los pasos siguientes
 * Instale y inicio el servidor AEM Forms.
 
 >!![NOTE] Esta capacidad se probó en AEM Forms 6.3 y posterior
-* [Obtenga la clave](https://developers.google.com/maps/documentation/javascript/get-api-key)de API de Google.
+* [Obtenga la clave](https://developers.google.com/maps/documentation/javascript/get-api-key) de API de Google.
 * [Importe los recursos relacionados con este artículo en AEM.](assets/geolocationapi.zip)
 * [Abra el fragmento Formulario adaptable en modo de edición.](http://localhost:4502/editor.html/content/forms/af/currentaddressfragment.html)
 * Abra el editor de reglas para el componente Elección de imagen.
