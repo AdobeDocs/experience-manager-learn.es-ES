@@ -46,17 +46,17 @@ Para implementar los recursos en el sistema local:
 
 * [Descargar e implementar DevelopingWitheServiceUserBundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-* [Descargue e implemente el paquete](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)setvalue. Este es el paquete OSGI personalizado que le permite establecer los valores de un elemento en los datos json enviados.
+* [Descargue e implemente el paquete](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar) setvalue. Este es el paquete OSGI personalizado que le permite establecer los valores de un elemento en los datos json enviados.
 
 * [Descargar y extraer el contenido del archivo zip](assets/set-value-jsondata.zip)
-   * Seleccione el explorador para el administrador de [paquetes](http://localhost:4502/crx/packmgr/index.jsp)
+   * Apunta a tu explorador para [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
       * Importe e instale SetValueOfElementInJSONDataWorkflow.zip. Este paquete tiene el modelo de flujo de trabajo de ejemplo y el modelo de datos de formulario asociados al formulario.
 
-* Apunta tu navegador a [Forms y Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Apunta a tu explorador para [Forms y Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Haga clic en Crear | Carga de archivos
 * Cargar archivo TimeOffRequestForm.zip
    **Este formulario se creó con AEM Forms 6.4. Asegúrese de que está en AEM Forms 6.4 o superior**
-* Abrir el [formulario](http://localhost:4502/content/dam/formsanddocuments/timeoffrequest/jcr:content?wcmmode=disabled)
+* Abra el [formulario](http://localhost:4502/content/dam/formsanddocuments/timeoffrequest/jcr:content?wcmmode=disabled)
 * Rellene las fechas de Inicio y finalización y envíe el formulario.
 * Ir a [&quot;Bandeja de entrada&quot;](http://localhost:4502/aem/inbox)
 * Abra el formulario asociado a la tarea.
@@ -65,7 +65,7 @@ Para implementar los recursos en el sistema local:
 
 >[!NOTE]
 >
->Dado que estamos rellenando previamente el formulario adaptable con el perfil del usuario, asegúrese de que la información de perfil del [usuario administrador ](http://localhost:4502/security/users.html). Como mínimo, asegúrese de haber establecido los valores de los campos Nombre, Apellido y Correo electrónico.
+>Dado que se está rellenando previamente el formulario adaptable con el perfil del usuario, asegúrese de que la información de perfil del usuario [administrador ](http://localhost:4502/security/users.html). Como mínimo, asegúrese de haber establecido los valores de los campos Nombre, Apellido y Correo electrónico.
 >Puede habilitar el registro de depuración habilitando el registrador para com.aemforms.setvalue.core.SetValueInJson [desde aquí](http://localhost:4502/system/console/slinglog)
 
 >[!NOTE]
