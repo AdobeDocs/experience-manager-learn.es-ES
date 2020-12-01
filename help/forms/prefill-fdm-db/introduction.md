@@ -25,11 +25,12 @@ Una vez completado este curso, habrá aprendido lo siguiente.
 
 * Crear modelo de datos de formulario respaldado por RDBMS
 * Crear asociación entre 2 entidades
-* Rellenar tabla con datos devueltos por _obtener_ el servicio del modelo de datos de formulario
+* Rellene la tabla con los datos devueltos por el servicio _get_ del modelo de datos de formulario
 * Utilizar el atributo de solicitud del modelo de datos de formulario
 
 
-[Haga clic para ver la demostración en directo de la capacidad](https://forms.enablementadobe.com/content/dam/formsanddocuments/fdmwithrequestparameterinurl/jcr:content?wcmmode=disabled&amp;empID=207). El siguiente vídeo le ofrece una descripción general del curso
+[Haga clic para ver la demostración en directo de la ](https://forms.enablementadobe.com/content/dam/formsanddocuments/fdmwithrequestparameterinurl/jcr:content?wcmmode=disabled&amp;empID=207)
+capacidadEl siguiente vídeo le ofrece una descripción general del curso
 >[!VIDEO](https://video.tv.adobe.com/v/36387/quality=9)
 
 ## Requisitos previos
