@@ -34,12 +34,12 @@ Información general de perspectivas de recursos. Instale los componentes princi
 
 >[!CAUTION]
 >
->Asegúrese de descargar la [última versión de Componentes](https://github.com/adobe/aem-core-wcm-components) principales para su implementación.
+>Asegúrese de descargar la [última versión de Componentes principales](https://github.com/adobe/aem-core-wcm-components) para su implementación.
 
 El vídeo utiliza Core Components v2.2.2, que ya no es la última versión; asegúrese de utilizar la versión más reciente antes de pasar a la siguiente sección.
 
-* Descargar contenido de imagen de muestra de [Asset Insights](./assets/asset-insights-launch-tutorial/aem-assets-insights-sample.zip)
-* Descargar [los últimos componentes principales de AEM WCM](https://github.com/adobe/aem-core-wcm-components/releases)
+* Descargar [Contenido de imagen de muestra de Asset Insights](./assets/asset-insights-launch-tutorial/aem-assets-insights-sample.zip)
+* Descargue [los últimos componentes principales de AEM WCM](https://github.com/adobe/aem-core-wcm-components/releases)
 
 ## Parte 2 : Activación del seguimiento de perspectivas de recursos para el componente de imagen de muestra {#sample-image-component-asset-insights}
 
@@ -51,18 +51,18 @@ Mejoras en los componentes principales y el uso del componente proxy (componente
 >
 >El componente principal de imagen incluye la capacidad de desactivar el seguimiento UUID desactivando el seguimiento del UUID del recurso (valor de identificador único para un nodo creado en JCR)
 
-El componente Imagen principal utiliza el atributo ***data-asset-id*** dentro del &lt;div> principal de una etiqueta de imagen para habilitar/deshabilitar esta función. El componente proxy anula el componente principal con los siguientes cambios.
+El componente Imagen principal utiliza el atributo ***data-asset-id*** dentro del atributo principal &lt;div> de una etiqueta de imagen para habilitar/deshabilitar esta función. El componente proxy anula el componente principal con los siguientes cambios.
 
-* Quita ***data-asset-id*** del div principal de un elemento &lt;img> dentro de image.html
-* Añade ***data-aem-asset-id*** directamente en el elemento &lt;img> de la imagen.html
-* Añade el valor ***data-trackable=&#39;true&#39;*** en el elemento &lt;img> de la imagen.html
-* ***data-aem-asset-id*** y ***data-trackable=&#39;true&#39;*** se mantienen en el mismo nivel de nodo
+* Quita el ***data-asset-id*** del div principal de un elemento &lt;img> dentro de image.html
+* Añade ***data-aem-asset-id*** directamente al elemento &lt;img> dentro de image.html
+* Añade el valor ***data-trackable=&#39;true&#39;*** en el elemento &lt;img> dentro de image.html
+* ***data-aem-asset-*** idand  ***data-trackable=&#39;true&#39;*** se mantienen en el mismo nivel de nodo
 
 >[!NOTE]
 >
->*data-aem-asset-id=&#39;image.UUID&#39;* y *data-trackable=&#39;true&#39;* son los atributos clave que deben estar presentes en las impresiones de recursos. Para las perspectivas de clics en recursos, además de los atributos de datos anteriores presentes en la etiqueta &lt;img>, la etiqueta principal &lt;a> debe tener un valor href válido.
+>*data-aem-asset-id=&#39;image.UUID&#39;* y  *data-trackable=&#39;true&#39;* son los atributos clave que deben estar presentes en las impresiones de recursos. Para las perspectivas de clics en recursos, además de los atributos de datos anteriores presentes en la etiqueta &lt;img>, la etiqueta principal &lt;a> debe tener un valor href válido.
 
-## Parte 3: Adobe Analytics — Creación de grupos de informes, activación de la recopilación de datos en tiempo real y AEM Assets Sistema de informes {#adobe-analytics-asset-insights}
+## Parte 3: Adobe Analytics — Creación de grupos de informes, habilitación de la recopilación de datos en tiempo real y el Sistema de informes de AEM Assets {#adobe-analytics-asset-insights}
 
 El grupo de informes con recopilación de datos en tiempo real se crea para el seguimiento de recursos. La configuración de AEM Assets Insights se configura con las credenciales de Adobe Analytics.
 
@@ -76,7 +76,7 @@ Para la configuración de AEM Assets Insights necesita las siguientes credencial
 * Centro de datos
 * Nombre de Compañía de Analytics
 * Nombre de usuario de Analytics
-* Shared Secret (puede obtenerse en *Adobe Analytics > Administración > Configuración de Compañía > Servicio* web).
+* Shared Secret (puede obtenerse en *Adobe Analytics > Administración > Configuración de Compañía > Servicio Web*).
 * Grupo de informes (asegúrese de seleccionar el grupo de informes correcto que se utiliza para el Sistema de informes de recursos)
 
 ## Parte 4: Uso de Adobe Experience Platform Launch para agregar la extensión de Adobe Analytics {#part-using-launch-by-adobe-for-adding-adobe-analytics-extension}
@@ -102,13 +102,13 @@ Asegúrese de replicar todos los cambios de la instancia de autor a la instancia
 
 El rastreador de páginas implementa dos llamadas de retorno (registradas en el código incrustado del recurso)
 
-* **\&lt;code>assetAnalytics.core.assetLoaded\&lt;código>** : se llama cuando se envía el evento &#39;load&#39; para el elemento de DOM-asset.
-* **\&lt;code>assetAnalytics.core.assetClic\&lt;código>** : cuando se envía el evento &#39;click&#39; para el elemento de DOM del recurso, esto solo es relevante cuando el elemento de DOM del recurso tiene una etiqueta de anclaje como elemento principal con un atributo &#39;href&#39; externo válido
+* **\&lt;code>assetAnalytics.core.assetLoaded\&lt;/code>** &lt;code>&lt;code>: se llama cuando se envía el evento &#39;load&#39; para el elemento de DOM-asset.&lt;/code>&lt;/code>
+* **\&lt;code>assetAnalytics.core.assetHaga clic\&lt;/code>** &lt;code>&lt;code>: cuando se envía el evento &#39;click&#39; para el elemento de DOM del recurso, esto solo es relevante cuando el elemento de DOM del recurso tiene una etiqueta de anclaje como elemento principal con un atributo &#39;href&#39; externo válido&lt;/code>&lt;/code>
 
 Finalmente, Pagetracker implementa una función de inicialización como.
 
-* **\&lt;code>assetAnalytics.dispatcher.init()\&lt;code>** : se llama para inicializar el componente Pagetracker. Esto DEBE invocarse antes de que se genere desde la página web cualquiera de los eventos de perspectivas de recursos (impresiones y/o clics).
-* **\&lt;code>assetAnalytics.dispatcher.init()\&lt;code>** : opcionalmente acepta un objeto AppMeasurement — si se proporciona, no intenta crear una nueva instancia del objeto AppMeasurement.
+* **\&lt;code>assetAnalytics.dispatcher.init()\&lt;/code>** &lt;code>&lt;code>: se llama para inicializar el componente Pagetracker.&lt;/code>&lt;/code> Esto DEBE invocarse antes de que se genere desde la página web cualquiera de los eventos de perspectivas de recursos (impresiones y/o clics).
+* **\&lt;code>assetAnalytics.dispatcher.init()\&lt;/code>** &lt;code>&lt;code>: opcionalmente acepta un objeto AppMeasurement — si se proporciona, no intenta crear una nueva instancia del objeto AppMeasurement.&lt;/code>&lt;/code>
 
 ### Artículo 2: Rastreador de imágenes — Acción 1 (asset-insights.js) {#rule-image-tracker-action-asset-insights-js}
 
@@ -190,7 +190,7 @@ En el vídeo se hace referencia a dos extensiones de explorador Google Chrome co
 * [Iniciar la extensión de Chrome Switch](https://chrome.google.com/webstore/detail/launch-and-dtm-switch/nlgdemkdapolikbjimjajpmonpbpmipk?hl=en)
 * [Adobe Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj?hl=en)
 
-También es posible cambiar la DTM al modo de depuración con la siguiente extensión de Chrome: [Iniciar y cambiar](https://chrome.google.com/webstore/detail/launch-and-dtm-switch/nlgdemkdapolikbjimjajpmonpbpmipk?hl=en)de DTM. Esto facilita ver si hay algún error relacionado con la implementación de la DTM. Además, puede cambiar manualmente la DTM al modo de depuración a través de cualquier herramienta de *desarrollo de exploradores -> Consola* JS agregando el siguiente fragmento de código:
+También es posible cambiar la DTM al modo de depuración con la siguiente extensión de Chrome: [Iniciar y conmutador de DTM](https://chrome.google.com/webstore/detail/launch-and-dtm-switch/nlgdemkdapolikbjimjajpmonpbpmipk?hl=en). Esto facilita ver si hay algún error relacionado con la implementación de la DTM. Además, puede cambiar manualmente la DTM al modo de depuración mediante cualquier explorador *herramientas de desarrollador -> Consola JS* agregando el siguiente fragmento de código:
 
 ## Parte 5: Prueba del seguimiento analítico y sincronización de datos de perspectiva{#analytics-tracking-asset-insights}
 
