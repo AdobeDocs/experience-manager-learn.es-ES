@@ -20,7 +20,7 @@ ht-degree: 1%
 ---
 
 
-# Configuración del envío del documento de canal web {#setting-up-the-delivery-of-web-channel-document}
+# Configuración del envío del documento de canal Web {#setting-up-the-delivery-of-web-channel-document}
 
 
 En esta parte, vemos el envío del documento del canal web por correo electrónico.
@@ -50,7 +50,7 @@ Inicie sesión en AEM Forms.
 * Asegúrese de guardar los cambios.
    ![fdm](assets/requestattribute.gif)
 
-## Probar Envío de correo electrónico del Documento de Canal web {#test-email-delivery-of-web-channel-document}
+## Probar Envío de correo electrónico del Documento de Canal Web {#test-email-delivery-of-web-channel-document}
 
 * [Instalación de los recursos de muestra mediante el administrador de paquetes](assets/webchanneldelivery.zip)
 * [Iniciar sesión en crx](http://localhost:4502/crx/de/index.jsp#)
