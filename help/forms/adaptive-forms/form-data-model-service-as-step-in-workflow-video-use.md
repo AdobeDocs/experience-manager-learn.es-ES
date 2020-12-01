@@ -28,17 +28,17 @@ A partir de AEM Forms 6.4, ahora podemos utilizar el modelo de datos de formular
 >[!VIDEO](https://video.tv.adobe.com/v/21719/?quality=9&learn=on)
 
 Para probar esta capacidad en el servidor, siga las instrucciones siguientes
-* [Descargue e implemente el paquete](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)setvalue. Es el paquete OSGI personalizado que establece las propiedades de metadatos.
->!![NOTE]En AEM Forms 6.5 y versiones posteriores, esta capacidad está disponible de forma predeterminada, como [se describe aquí](form-data-model-service-as-step-in-aem65-workflow-video-use.md)
+* [Descargue e implemente el paquete](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar) setvalue. Es el paquete OSGI personalizado que establece las propiedades de metadatos.
+>!![NOTE]En AEM Forms 6.5 y versiones posteriores, esta capacidad está disponible de forma predeterminada, como  [se describe aquí](form-data-model-service-as-step-in-aem65-workflow-video-use.md)
 
-* El programa de instalación se configura con el archivo SampleRest.war como se describe [aquí](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html). El archivo de guerra implementado en Tomcat tiene el código para devolver la puntuación de crédito del solicitante. La puntuación de crédito es un número aleatorio entre 200 y 800
+* Configure el comando tomcat con el archivo SampleRest.war como se describe [aquí](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html). El archivo de guerra implementado en Tomcat tiene el código para devolver la puntuación de crédito del solicitante. La puntuación de crédito es un número aleatorio entre 200 y 800
 
-* [Importe los recursos en AEM mediante el administrador](assets/invoke-fdm-as-service-step.zip)de paquetes. El paquete contiene lo siguiente:
+* [Importe los recursos en AEM mediante el administrador](assets/invoke-fdm-as-service-step.zip) de paquetes. El paquete contiene lo siguiente:
 
    * Modelo de flujo de trabajo que utiliza el paso FDM.
    * Modelo de datos de formulario que se utiliza en el paso FDM.
    * Formulario adaptable para activar el flujo de trabajo al enviar.
-* Abra [MortgageApplicationForm](http://localhost:4502/content/dam/formsanddocuments/loanapplication/jcr:content?wcmmode=disabled). Rellene los detalles y envíe. En el envío del formulario, se activa el flujo de trabajo [de la aplicación de](http://http://localhost:4502/editor.html/conf/global/settings/workflow/models/LoanApplication2.html) préstamo.
+* Abra el [formularioDeAplicaciónHipoteca](http://localhost:4502/content/dam/formsanddocuments/loanapplication/jcr:content?wcmmode=disabled). Rellene los detalles y envíe. En el envío del formulario, se activa el [flujo de trabajo de solicitud de préstamo](http://http://localhost:4502/editor.html/conf/global/settings/workflow/models/LoanApplication2.html).
 
 ![ flujo de trabajo ](assets/fdm-as-service-step-workflow.PNG).
 El flujo de trabajo utiliza el componente O dividir para enrutar la aplicación a la administración si la puntuación de crédito es superior a 500. Si el puntaje de crédito es inferior a 500, la solicitud se distribuye a la entrega
