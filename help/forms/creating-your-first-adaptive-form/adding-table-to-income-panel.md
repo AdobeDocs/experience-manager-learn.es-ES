@@ -32,7 +32,7 @@ Agregaremos una tabla al panel Ingresos. Configure las filas de tabla y utilice 
 
 
 
-## Dinámica de la tabla de ingresos {#make-the-income-table-dynamic}
+## Hacer dinámica la tabla de ingresos {#make-the-income-table-dynamic}
 
 **Asegúrese de que está en el modo de edición. El botón de edición se encuentra en la parte superior derecha del explorador.**
 
