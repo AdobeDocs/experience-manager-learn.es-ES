@@ -31,7 +31,7 @@ Este artículo mostrará el uso del servicio de códigos de barras para rellenar
 
 El código siguiente descodifica el código de barras y rellena un objeto JSON con los valores descodificados. A continuación, el servlet devuelve el objeto JSON en su respuesta a la aplicación que realiza la llamada.
 
-Puede ver esta capacidad en directo, visite el portal [de](https://forms.enablementadobe.com/content/samples/samples.html?query=0) ejemplos y busque la demostración del servicio de códigos de barras
+Puede ver esta capacidad en vivo, visite el [portal de muestras](https://forms.enablementadobe.com/content/samples/samples.html?query=0) y busque la demostración del servicio de códigos de barras
 
 ```java
 public JSONObject extractBarCode(Document pdfDocument) {
@@ -146,11 +146,11 @@ Línea 23 - Llame al método extractBarCode de DocumentServices para que el obje
 
 Para que esto se ejecute en el sistema, siga los pasos siguientes
 
-1. [Descargue BarcodeService.zip](assets/barcodeservice.zip) e importe en AEM mediante el administrador de paquetes
+1. [Descargue BarcodeService.](assets/barcodeservice.zip) zipand import en AEM mediante el administrador de paquetes
 1. [Descargar e instalar el paquete personalizado de Document Services](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 1. [Descargar e instalar el paquete DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 1. [Descargar el formulario PDF de ejemplo](assets/barcode.pdf)
-1. Apunte el navegador al formulario adaptable de [ejemplo](http://localhost:4502/content/dam/formsanddocuments/barcodedemo/jcr:content?wcmmode=disabled)
+1. Apunte el explorador al [formulario adaptable de ejemplo](http://localhost:4502/content/dam/formsanddocuments/barcodedemo/jcr:content?wcmmode=disabled)
 1. Cargar el PDF de muestra proporcionado
 1. Debe ver los formularios rellenados con los datos
 
