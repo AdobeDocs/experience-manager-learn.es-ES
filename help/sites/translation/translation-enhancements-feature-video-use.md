@@ -16,7 +16,7 @@ ht-degree: 0%
 ---
 
 
-# Mejoras en la traducción con el Administrador de multisitio {#translation-enhancements}
+# Mejoras de traducción con Multi-Site Manager {#translation-enhancements}
 
 AEM sólido marco de trabajo de traducción permite que los proveedores de traducción admitidos traduzcan AEM contenido sin problemas.
 
@@ -26,11 +26,11 @@ AEM sólido marco de trabajo de traducción permite que los proveedores de tradu
 
 Las mejoras de traducción de AEM 6.5 incluyen:
 
-**Aprobación automática de trabajos** de traducción: El indicador de aprobación del trabajo de traducción es una propiedad binaria. No conduce ni se integra con los flujos de trabajo de revisión y aprobación predeterminados. Para mantener el número mínimo de pasos en un trabajo de traducción, de forma predeterminada se establece en &quot;aprobar automáticamente&quot; en Propiedades  avanzadas de un proyecto de traducción. Si su organización necesita aprobación para un trabajo de traducción, puede desmarcar la opción &quot;aprobar automáticamente&quot; en Propiedades  avanzadas de un proyecto de traducción.
+**Aprobación automática de trabajos** de traducción: El indicador de aprobación del trabajo de traducción es una propiedad binaria. No conduce ni se integra con los flujos de trabajo de revisión y aprobación predeterminados. Para mantener el número mínimo de pasos en un trabajo de traducción, de forma predeterminada se establece en &quot;aprobar automáticamente&quot; en [!UICONTROL Propiedades avanzadas] de un proyecto de traducción. Si su organización necesita aprobación para un trabajo de traducción, puede desmarcar la opción &quot;aprobar automáticamente&quot; en [!UICONTROL Propiedades avanzadas] de un proyecto de traducción.
 
 **Eliminar automáticamente los inicios** de traducción: En lugar de eliminar manualmente los inicios de traducción en el administrador de inicios después de los hechos, ahora es posible eliminar automáticamente los inicios de traducción después de promocionarlos.
 
-**Exportar objetos de traducción en formato** JSON: AEM 6.4 y versiones anteriores admiten formatos XML y XLIFF de objetos de traducción. Ahora puede configurar el formato de exportación al formato JSON mediante el Administrador [!UICONTROL de configuración]de la consola del sistema. Busque Configuración [!UICONTROL de plataforma de]traducción y, a continuación, puede seleccionar el formato de exportación como JSON.
+**Exportar objetos de traducción en formato** JSON: AEM 6.4 y versiones anteriores admiten formatos XML y XLIFF de objetos de traducción. Ahora puede configurar el formato de exportación al formato JSON mediante la consola de sistemas [!UICONTROL Administrador de configuración]. Busque [!UICONTROL Configuración de la plataforma de traducción] y, a continuación, puede seleccionar el formato de exportación como JSON.
 
 **Actualice el contenido de AEM traducido en la memoria de traducción (TMS)**: el autor local que no tiene acceso a AEM puede realizar actualizaciones de contenido traducido, que ya se ha vuelto a ingerir en AEM, directamente en la TM (Memoria de traducción, en el sistema de administración de etiquetas) y actualizar las traducciones en AEM reenviando el trabajo de traducción del sistema de administración de etiquetas a AEM
 
