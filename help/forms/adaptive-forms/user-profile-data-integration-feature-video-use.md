@@ -29,7 +29,8 @@ Bases de datos relacionales: MySQL, Microsoft SQL Server, IBM DB2 y Oracle RDBMS
 1. perfil del usuario de AEM
 1. Servicios web RESTful
 1. Servicios Web basados en SOAP
-1. Servicios ODataEste artículo resalta la integración de AEM información de perfil del usuario con Forms adaptable.
+1. Servicios OData
+En este artículo se destaca la integración de AEM información de perfil del usuario con Forms adaptable.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17432/?quality=9&learn=on)
 
