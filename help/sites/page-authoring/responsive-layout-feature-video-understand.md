@@ -20,7 +20,7 @@ ht-degree: 21%
 ---
 
 
-# Explicación del diseño adaptable {#understanding-responsive-layout-with-aem-sites}
+# Explicación del diseño interactivo {#understanding-responsive-layout-with-aem-sites}
 
 Adobe Experience Manager Sites permite que un autor administre la anchura de un componente en función del ancho del dispositivo para facilitar un diseño del sitio interactivo. Con el modo de diseño y el Contenedor de diseño, los usuarios pueden crear contenido interactivo para distintos dispositivos y realizar la previsualización de la experiencia del usuario final sin salir de la interfaz de usuario AEM.
 
