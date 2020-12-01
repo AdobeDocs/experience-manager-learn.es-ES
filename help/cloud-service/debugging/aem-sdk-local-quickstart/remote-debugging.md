@@ -36,8 +36,8 @@ $ java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005 -jar a
 
 La mayoría de los IDE de Java son compatibles con la depuración remota de programas Java, aunque los pasos de configuración exactos de cada IDE varían. Revise las instrucciones de configuración de depuración remota del IDE para conocer los pasos exactos. Las configuraciones IDE generalmente requieren:
 
-+ El inicio rápido local del SDK AEM host está escuchando, lo cual es `localhost`.
-+ El puerto AEM inicio rápido local del SDK está escuchando la conexión de depuración remota, que es el puerto especificado por el `address` parámetro al iniciar el inicio rápido local del SDK AEM.
++ El inicio rápido local del SDK AEM host está escuchando, que es `localhost`.
++ El puerto AEM inicio rápido local del SDK está escuchando la conexión de depuración remota, que es el puerto especificado por el parámetro `address` al iniciar el inicio rápido local del SDK AEM.
 + En ocasiones, se deben especificar los proyectos de Maven que proporcionan el código fuente para la depuración remota; este es su(s) proyecto(s) de compilación OSGi.
 
 ### Configurar instrucciones
