@@ -44,18 +44,18 @@ Para implementar los recursos en el sistema local, siga los pasos a continuació
 
 * [Implementar el paquete DevelopmentWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-* [Implemente el paquete](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)de muestra. Este es el paquete OSGI personalizado que le permite establecer los valores de un elemento en los datos XML enviados
+* [Implemente el paquete](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar) de muestra. Este es el paquete OSGI personalizado que le permite establecer los valores de un elemento en los datos XML enviados
 
 * [Descargar y extraer el contenido del archivo zip](assets/setvalueassets.zip)
-* Seleccione el explorador para el administrador de [paquetes](http://localhost:4502/crx/packmgr/index.jsp)
+* Apunta a tu explorador para [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
 * Importe e instale setValueWorkflow.zip. Tiene el modelo de flujo de trabajo de muestra.
-* Apunta tu navegador a [Forms y Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Apunta a tu explorador para [Forms y Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Haga clic en Crear | Carga de archivos
 * Cargar TimeOfRequestForm.zip
-* Abrir el formulario [TimeOffRequest](http://localhost:4502/content/dam/formsanddocuments/timeoffapplication/jcr:content?wcmmode=disabled)
+* Abra [TimeOffRequestform](http://localhost:4502/content/dam/formsanddocuments/timeoffapplication/jcr:content?wcmmode=disabled)
 * Rellene los 3 campos obligatorios y envíe
 * Inicie sesión como &#39;admin&quot; en AEM(si aún no lo ha hecho)
-* Ir a [&quot;Bandeja de entrada AEM&quot;](http://localhost:4502/aem/inbox)
+* Vaya a [&quot;Bandeja de entrada AEM&quot;](http://localhost:4502/aem/inbox)
 * Abrir el formulario &quot;Revisar el tiempo de inactividad de la solicitud&quot;
 * Observe que los campos del primer panel están desactivados. Esto se debe a que el revisor está abriendo el formulario. Además, observe que el panel para aprobar o rechazar la solicitud ahora está visible
 
