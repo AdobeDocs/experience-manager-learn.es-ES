@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Estructura y jerarquía del contenido {#content-hierarchy}
+# Estructura y jerarquía de contenido {#content-hierarchy}
 
 Conozca cómo crear y organizar las páginas del sitio de su organización en AEM Sites.
 
