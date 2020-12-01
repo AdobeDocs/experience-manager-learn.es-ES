@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: d1ab6e59d817ef103b76960b260b7958d1fa5953
 workflow-type: tm+mt
 source-wordcount: '139'
-ht-degree: 1%
+ht-degree: 10%
 
 ---
 
@@ -32,4 +32,4 @@ Experience Platform Launch es la plataforma de administración de etiquetas de �
 
 * [Integraciones Experience Platform con aplicaciones Experience Cloud](https://docs.adobe.com/content/help/en/platform-learn/tutorials/intro-to-platform/integrations-with-experience-cloud-applications.html)
 * [Guía del usuario de Experience Platform Launch](https://docs.adobe.com/content/help/en/launch/using/overview.html)
-* [Implementación del Experience Cloud en sitios web con Launch](https://docs.adobe.com/content/help/en/core-services-learn/implementing-in-websites-with-launch/index.html)
+* [Implementación de Experience Cloud en sitios web con Launch](https://docs.adobe.com/content/help/en/core-services-learn/implementing-in-websites-with-launch/index.html)
