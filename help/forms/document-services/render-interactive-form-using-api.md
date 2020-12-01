@@ -26,7 +26,7 @@ En este artículo echaremos un vistazo al siguiente servicio
 
 * FormsService: Se trata de un servicio muy versátil que le permite exportar e importar datos desde y en archivos PDF y también generar PDF interactivos combinando datos xml en plantillas xdp
 
-El javadoc oficial para la API de AEM Forms se enumera [aquí](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/package-summary.html)
+El javadoc oficial para la API de AEM Forms se muestra [aquí](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/package-summary.html)
 
 El siguiente fragmento de código procesa un PDF interactivo mediante la operación procesePDFForm de FormsService. La plantilla schSchengen.xdp se utiliza para combinar los datos xml.
 
@@ -67,6 +67,6 @@ Línea 11: Devuelve el PDF interactivo generado a la aplicación que realiza la 
 1. El PDF interactivo debe descargarse en el sistema local
 
 
-El paquete de ejemplo contiene el perfil personalizado que está asociado con el formulario móvil. Explore el archivo [custom toolbar.jsp](http://localhost:4502/apps/AEMFormsDemoListings/customprofiles/addImageToMobileForm/demo/customtoolbar.jsp) . Este jsp extrae los datos del formulario móvil y realiza una solicitud de POST para el servlet montado en la ruta ***/bin/generateinteractivepdf*** . El servlet devuelve el PDF interactivo a la aplicación que llama. El código de custom toolbar.jsp descarga el archivo en el sistema local
+El paquete de ejemplo contiene el perfil personalizado que está asociado con el formulario móvil. Explore el archivo [custom toolbar.jsp](http://localhost:4502/apps/AEMFormsDemoListings/customprofiles/addImageToMobileForm/demo/customtoolbar.jsp). Este jsp extrae los datos del formulario móvil y realiza una solicitud de POST para el servlet montado en la ruta ***/bin/generateinteractivepdf***. El servlet devuelve el PDF interactivo a la aplicación que llama. El código de custom toolbar.jsp descarga el archivo en el sistema local
 
 
