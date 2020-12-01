@@ -46,7 +46,7 @@ Para la estrategia de carpetas, considere lo que tiene sentido para su organizac
 
 El modo en que elija nombrar los archivos es quizás la decisión más importante que tomará con respecto a Dynamic Media Classic. Esto se debe a que todos los recursos de Dynamic Media Classic deben tener nombres únicos, independientemente de dónde estén almacenados en la cuenta.
 
-Todas las direcciones URL y transacciones de Dynamic Media Classic están dirigidas por un ID de recurso, que es un identificador único de recurso en la base de datos. Al cargar un archivo, el ID de recurso se crea tomando el nombre de archivo y eliminando la extensión. Por ejemplo, _896649.jpg_ obtiene el _ID de recurso 896649_.
+Todas las direcciones URL y transacciones de Dynamic Media Classic están dirigidas por un ID de recurso, que es un identificador único de recurso en la base de datos. Al cargar un archivo, el ID de recurso se crea tomando el nombre de archivo y eliminando la extensión. Por ejemplo, _896649.jpg_ obtiene el _ID 896649_ del recurso.
 
 Reglas relativas a los ID de recursos:
 
@@ -78,7 +78,7 @@ Este es un sistema muy simple, y bueno si tienes necesidades modestas. Sin embar
 | AA123 | Vistas Alt | AA123_1.tif AA123_2.tif AA123_3.tif | AA123_1 AA123_2 AA123_3 |
 |  | Vistas de color | AA123_BLU.tif AA123_RED.tif AA123_BROWN.tif | AA123_BLU AA123_RED AA123_BROWN |
 |  | Muestras | AA123_BLU_SW.tif | AA123_BLU_SW |
-|  | Conjunto de imágenes o conjunto de muestras |  | AA123 o AA123_SET | -- |
+|  | Conjunto de imágenes o conjunto de muestras |  | AA123 o AA123_SET | — |
 
 Cuando se trata de conjuntos de colecciones, como conjuntos de imágenes y conjuntos de muestras, el conjunto mismo también debe tener un nombre único. En este caso, se podría dar al conjunto el SKU base como su nombre o el SKU con la extensión &quot;_SET&quot;.
 
