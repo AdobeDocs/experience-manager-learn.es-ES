@@ -19,7 +19,8 @@ ht-degree: 3%
 # Bandeja de entrada AEM
 
 AEM Bandeja de entrada consolida las notificaciones y tareas de diversos componentes de AEM, incluidos los flujos de trabajo de Forms. Cuando se activa un flujo de trabajo de formularios que contiene un paso Asignar tarea, la aplicación asociada aparece como una tarea en la Bandeja de entrada del usuario asignado.
-La interfaz de usuario de la Bandeja de entrada proporciona vistas de lista y calendario a tareas de vista. También puede configurar la vista. Puede filtrar tareas en función de varios parámetrosPuede personalizar una Bandeja de entrada de Experience Manager para cambiar el título predeterminado de una columna, reordenar la posición de una columna y mostrar columnas adicionales en función de los datos de un flujo de trabajo
+La interfaz de usuario de la Bandeja de entrada proporciona vistas de lista y calendario a tareas de vista. También puede configurar la vista. Puede filtrar tareas en función de varios parámetros
+Puede personalizar la bandeja de entrada de un Experience Manager para cambiar el título predeterminado de una columna, reordenar la posición de una columna y mostrar columnas adicionales basadas en los datos de un flujo de trabajo
 
 
 >[!NOTE]
@@ -28,7 +29,8 @@ La interfaz de usuario de la Bandeja de entrada proporciona vistas de lista y ca
 
 ## Personalización de columnas
 
-[Iniciar AEM bandeja de entrada](http://localhost:4502/aem/inbox)Abra el control de administración haciendo clic en el icono de Vista _de_ Lista y, a continuación, seleccionando Control _de_ administración como se muestra en la captura de pantalla siguiente
+[Iniciar ](http://localhost:4502/aem/inbox)
+bandeja de entrada AEMAbra el control de administración haciendo clic en el icono de  _vista de_ Lista y, a continuación, seleccionando  _Control de_ administración que se muestra en la captura de pantalla siguiente
 
 ![admin-control](assets/open-customization.png)
 
