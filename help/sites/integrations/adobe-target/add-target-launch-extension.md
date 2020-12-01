@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Añadir Extensión de grupo de destinatarios a una propiedad de inicio {#adobe-target-extension}
 
-Para seguir este vídeo, debe haber [integrado Experience Platform Launch con AEM](../experience-platform-launch/overview.md).
+Para seguir este vídeo, debe tener [Experience Platform Launch integrado con AEM](../experience-platform-launch/overview.md).
 
 Obtenga información sobre cómo habilitar Adobe Target en el sitio web de AEM mediante Experience Platform Launch.
 
