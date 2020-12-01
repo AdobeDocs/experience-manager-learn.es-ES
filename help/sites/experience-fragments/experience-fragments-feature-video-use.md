@@ -56,5 +56,5 @@ AEM 6.5, ahora admite funciones de búsqueda de texto completo para fragmentos d
 
 >[!VIDEO](https://video.tv.adobe.com/v/27720/?quality=9&learn=on)
 
-* **Los autores** de contenido (búsqueda interna) ahora pueden buscar una parte de texto dentro de un fragmento de experiencia y el resultado incluirá los fragmentos de experiencia que contengan el texto, así como la página que hace referencia al fragmento de experiencia.
-* **Los usuarios** del sitio (búsqueda externa) ahora pueden realizar una búsqueda de texto completo utilizando el componente de búsqueda, y el resultado incluiría páginas del sitio que hagan referencia al fragmento de experiencia que contiene la palabra clave de búsqueda.
+* **Los autores**  de contenido (búsqueda interna) ahora pueden buscar una parte de texto dentro de un fragmento de experiencia y el resultado incluirá los fragmentos de experiencia que contengan el texto, así como la página que hace referencia al fragmento de experiencia.
+* **Los usuarios**  del sitio (búsqueda externa) ahora pueden realizar una búsqueda de texto completo utilizando el componente de búsqueda, y el resultado incluiría páginas del sitio que hagan referencia al fragmento de experiencia que contiene la palabra clave de búsqueda.
