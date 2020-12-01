@@ -34,7 +34,7 @@ El servicio de salida es un servicio OSGi que forma parte de AEM Documento Servi
 
 Para obtener más información sobre el servicio de salida, [haga clic aquí](https://helpx.adobe.com/aem-forms/6/output-service.html).
 Para configurar la carpeta vigilada en el sistema, siga los pasos a continuación:
-* [Descargue y extraiga el contenido del archivo](assets/outputservicewatchedfolderkt.zip)zip.Este archivo zip contiene un paquete para crear archivos de ejemplo y carpetas vigiladas para probar el servicio de salida mediante el mecanismo de carpetas vigiladas
+* [Descargue y extraiga el contenido del archivo](assets/outputservicewatchedfolderkt.zip) zip.Este archivo zip contiene un paquete para crear archivos de ejemplo y carpetas vigiladas para probar el servicio de salida mediante el mecanismo de carpetas vigiladas
    * Sistema Windows
 
       * Importe outputservicewatchedfolder.zip en AEM mediante el administrador de paquetes
