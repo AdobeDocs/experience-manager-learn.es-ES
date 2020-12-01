@@ -39,21 +39,21 @@ Una vista consolidada en los mecanismos de autenticación (y, en ocasiones, auto
         </tr>
         <tr>
             <td>Autenticación básica</td>
-            <td>✔</td>
-            <td>✔</td>
-            <td>✔</td>
+            <td>bito</td>
+            <td>bito</td>
+            <td>bito</td>
         </tr>
         <tr>
             <td>Basado en Forms</td>
-            <td>✔</td>
-            <td>✔</td>
-            <td>✔</td>
+            <td>bito</td>
+            <td>bito</td>
+            <td>bito</td>
         </tr>
         <tr>
-            <td>Basado en token (con token <a href="https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/encapsulated-token.html" target="_blank">encapsulado</a>)</td>
-            <td>✔</td>
-            <td>✔</td>
-            <td>✔</td>
+            <td>Basado en token (con <a href="https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/encapsulated-token.html" target="_blank">token encapsulado</a>)</td>
+            <td>bito</td>
+            <td>bito</td>
+            <td>bito</td>
         </tr>
         <tr>
             <td><strong>Sistema no AEM como proveedor de identidad canónico</strong></td>
@@ -62,27 +62,27 @@ Una vista consolidada en los mecanismos de autenticación (y, en ocasiones, auto
             <td></td>
             <tr>
                 <td><a href="https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/ldap-config.html" target="_blank">LDAP</a></td>
-                <td>✔</td>
-                <td>✔</td>
-                <td>✔</td>
+                <td>bito</td>
+                <td>bito</td>
+                <td>bito</td>
             </tr>
             <tr>
                 <td><a href="https://docs.adobe.com/content/help/en/experience-manager-65/deploying/configuring/single-sign-on.html" target="_blank">SSO</a></td>
-                <td>✔</td>
-                <td>✔</td>
-                <td>✔</td>
+                <td>bito</td>
+                <td>bito</td>
+                <td>bito</td>
             </tr>
             <tr>
                 <td><a href="https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/saml-2-0-authenticationhandler.html" target="_blank">SAML 2.0</a></td>
-                <td>✔</td>
-                <td>✔</td>
-                <td>✔</td>
+                <td>bito</td>
+                <td>bito</td>
+                <td>bito</td>
             </tr>
             <tr>
                 <td><a href="https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html" target="_blank">OAuth 1.0a y 2.0</a></td>
-                <td>✔</td>
-                <td>✔</td>
-                <td>✔</td>
+                <td>bito</td>
+                <td>bito</td>
+                <td>bito</td>
             </tr>
             <tr>
                 <td><a href="https://sling.apache.org/documentation/the-sling-engine/authentication/authentication-authenticationhandler/openid-authenticationhandler.html" target="_blank">OpenID</a></td>
@@ -93,4 +93,4 @@ Una vista consolidada en los mecanismos de autenticación (y, en ocasiones, auto
     </tbody>
 </table>
 
-⁕ *Proporcionado a través de proyectos comunitarios, pero no directamente apoyado por Adobe.*
+⁕ *Se proporciona mediante proyectos de comunidad, pero no se admite directamente en Adobe.*
