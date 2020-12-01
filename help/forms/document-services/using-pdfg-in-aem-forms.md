@@ -25,7 +25,7 @@ ht-degree: 0%
 Demostración de la capacidad de arrastrar y soltar para crear archivos PDF con AEM Forms
 
 PDFG significa Generación de PDF. Esto significa que puede convertir una gran variedad de formatos de archivo a PDF. Los más comunes son los documentos de Microsoft Office. PDFG forma parte de AEM Forms desde la versión 6.1.
-[El archivo javadoc para la API de PDFG se muestra aquí](https://helpx.adobe.com/experience-manager/6-3/forms/using/aem-document-services-programmatically.html#PDFGeneratorService)
+[El javadoc para la API de PDFG se encuentra aquí](https://helpx.adobe.com/experience-manager/6-3/forms/using/aem-document-services-programmatically.html#PDFGeneratorService)
 
 Los recursos asociados a este artículo le permitirán arrastrar y soltar documentos de MS office o archivo JPG en la zona de colocación de la página HTML. Una vez que el documento se haya descartado, invocará el servicio PDFG, convertirá el documento en PDF y lo guardará en el sistema de archivos de AEM Server.
 
@@ -34,10 +34,10 @@ Para instalar los recursos de demostración, realice los siguientes pasos
 1. Configure el PDFG como se indica en este documento [aquí](https://helpx.adobe.com/experience-manager/6-4/forms/using/install-configure-pdf-generator.html).
 1. Siga la documentación adecuada relacionada con su versión de AEM Forms.
 1. [Importe e instale recursos relacionados con este artículo mediante el administrador de paquetes.](assets/createpdfgdemov2.zip)
-1. [Navegue hasta post.jsp](http://localhost:4502/apps/AemFormsSamples/components/createPDF/POST.jsp) en su CRX
+1. [Navegue hasta post.](http://localhost:4502/apps/AemFormsSamples/components/createPDF/POST.jsp) jspin en su CRX
 1. Cambie la ubicación de guardado según sus preferencias (línea 9)
 1. Guarde los cambios.
-1. Abra la página [](http://localhost:4502/content/DocumentServices/CreatePDFG.html) html para arrastrar y soltar archivos para la conversión.
+1. Abra la [ página html](http://localhost:4502/content/DocumentServices/CreatePDFG.html) para arrastrar y soltar archivos para la conversión.
 1. Coloque un archivo de palabra o jpg en la zona de colocación.
 1. El documento de entrada se convertirá a PDF y se guardará en la misma ubicación especificada en el punto 4.
 
