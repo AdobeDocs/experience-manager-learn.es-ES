@@ -22,13 +22,13 @@ ht-degree: 0%
 
 El modelo de datos de formulario puede basarse en orígenes RDBMS, RESTfull, SOAP o OData. Este curso se centra en la precreación de formularios adaptables mediante un modelo de datos de formulario respaldado por un origen de datos RDBMS. Para este tutorial se ha utilizado la base de datos MYSQL. Hemos creado las dos tablas siguientes para demostrar el caso de uso
 
-* **tabla newhire** : Esta tabla almacena toda la información
+* **** newhiretable - Esta tabla almacena toda la información
 
    ![newhire](assets/newhire-table.png)
 
 
-* **tabla de beneficiarios** - Esta tabla almacena a los beneficiarios en cualquier momento
+* **** beneficioso - Esto almacena a nuevos beneficiarios
 
    ![beneficiarios](assets/beneficiaries-table.png)
 
-Puede importar el archivo [sql](assets/db-schema.sql) usando el área de trabajo de MySQL para crear tablas con algunos datos de ejemplo.
+Puede importar el [archivo sql](assets/db-schema.sql) utilizando el área de trabajo de MySQL para crear tablas con algunos datos de muestra.
