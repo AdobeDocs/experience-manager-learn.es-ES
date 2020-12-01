@@ -30,7 +30,7 @@ Este tutorial explicará los pasos para crear perfiles de Campaña en el envío 
 * Crear una acción de envío personalizada para gestionar el envío de formulario adaptable
 * Invocar el método createProfile de CampaignService
 
-## Crear AEM servicio {#create-aem-service}
+## Crear servicio de AEM {#create-aem-service}
 
 Cree AEM servicio para crear un Perfil de Adobe Campaign. Este servicio de AEM recuperará las credenciales de Adobe Campaign de la configuración OSGI. Una vez obtenidas las credenciales de campaña, se genera el token de acceso y se utiliza la llamada HTTP Post de token de acceso para crear el perfil en Adobe Campaign. El siguiente es el código para crear perfil .
 
@@ -245,7 +245,7 @@ return null;
 }
 ```
 
-## Custom Submit {#custom-submit}
+## Envío personalizado {#custom-submit}
 
 Cree un controlador de envío personalizado para gestionar el envío del formulario adaptable. En este controlador de envío personalizado, realizaremos una llamada al método createProfile de CampaignService. El método createProfile acepta un objeto JSONObject que representa el perfil que se debe crear.
 
@@ -270,7 +270,7 @@ Una vez definido el servicio y la acción de envío personalizada, estamos listo
 
 
 * [Asegúrese de que ha seguido los pasos descritos aquí](aem-forms-with-campaign-standard-getting-started-tutorial.md)
-* [Importar el formulario adaptable y el controlador de envío personalizado mediante el administrador](assets/create-acs-profile-on-af-submission.zip)de paquetes. Este paquete contiene el formulario adaptable configurado para enviarse a una acción de envío personalizada.
-* Preview the [form](http://localhost:4502/content/dam/formsanddocuments/createcampaignprofile/jcr:content?wcmmode=disabled)
+* [Importar el formulario adaptable y el controlador de envío personalizado mediante el administrador](assets/create-acs-profile-on-af-submission.zip) de paquetes. Este paquete contiene el formulario adaptable configurado para enviarse a una acción de envío personalizada.
+* Previsualización del [formulario](http://localhost:4502/content/dam/formsanddocuments/createcampaignprofile/jcr:content?wcmmode=disabled)
 * Rellene todos los campos y envíe
 * Se creará un nuevo perfil en la instancia de ACS
