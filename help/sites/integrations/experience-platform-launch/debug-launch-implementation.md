@@ -18,7 +18,7 @@ ht-degree: 1%
 ---
 
 
-# Depuración de una implementación de lanzamiento {#debug-launch-implementation}
+# Depuración de una implementación de Launch {#debug-launch-implementation}
 
 Introducción a las herramientas y técnicas comunes utilizadas para depurar una implementación de Launch. Obtenga información sobre cómo utilizar la consola de desarrollador del navegador y la extensión Experience Platform Debugger para identificar y solucionar problemas relacionados con aspectos clave de una implementación de Launch.
 
