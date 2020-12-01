@@ -28,7 +28,7 @@ Cuando se coloca un archivo en la carpeta vigilada, se ejecuta una secuencia de 
 
 El archivo colocado en una carpeta vigilada tiene la siguiente estructura. El código generará instrucciones para todos los números de cuenta enumerados en el documento XML.
 
-&lt;accountnumber>
+&lt;accountnumbers>
 
 &lt;accountnumber>509840&lt;/accountnumber>
 
@@ -38,7 +38,7 @@ El archivo colocado en una carpeta vigilada tiene la siguiente estructura. El c�
 
 &lt;accountnumber>291723&lt;/accountnumber>
 
-&lt;/accountnumber>
+&lt;/accountnumbers>
 
 El siguiente código hace lo siguiente:
 
@@ -112,7 +112,7 @@ resourceResolverHelper.callWith(resourceResolver, {call: function()
 
 * Configure Tomcat tal como se describe en este [artículo.](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md) Tomcat tiene el archivo de guerra que genera los datos de muestra.
 * Configure el servicio conocido como usuario del sistema como se describe en este [artículo](/help/forms/adaptive-forms/service-user-tutorial-develop.md).
-Asegúrese de que este usuario del sistema tenga permisos de lectura en el nodo siguiente. Para otorgar los permisos de inicio de sesión al administrador [de](https://localhost:4502/useradmin) usuarios y buscar los &quot;datos&quot; del usuario del sistema y otorgar los permisos de lectura en el nodo siguiente mediante el tabulador en la ficha Permisos
+Asegúrese de que este usuario del sistema tenga permisos de lectura en el nodo siguiente. Para otorgar los permisos de inicio de sesión a [usuario admin](https://localhost:4502/useradmin) y buscar los &quot;datos&quot; del usuario del sistema y otorgar los permisos de lectura en el nodo siguiente mediante el tabulador a la ficha Permisos
    * /content/dam/formsanddocuments
    * /content/dam/formsanddocuments-fdm
    * /content/forms/af
