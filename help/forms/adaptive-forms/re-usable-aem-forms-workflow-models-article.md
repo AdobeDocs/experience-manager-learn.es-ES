@@ -27,7 +27,7 @@ A partir de la versión 6.5 de AEM Forms, ahora podemos crear modelos de flujo d
 Para diseñar un flujo de trabajo de este tipo, realice los siguientes pasos
 
 1. Iniciar sesión en AEM
-1. Apunte el navegador al modelo [de flujo de trabajo](http://localhost:4502/libs/cq/workflow/admin/console/content/models.html)
+1. Apunta a tu explorador para [modelo de flujo de trabajo](http://localhost:4502/libs/cq/workflow/admin/console/content/models.html)
 1. Haga clic en Crear | Crear modelo para Añadir modelo de flujo de trabajo
 1. Proporcione el nombre y el título adecuados al modelo de flujo de trabajo y, a continuación, haga clic en Finalizado
 1. Abrir el modelo recién creado en modo de edición
@@ -39,7 +39,8 @@ Para diseñar un flujo de trabajo de este tipo, realice los siguientes pasos
 Existen 3 formas de especificar la ruta del formulario
 
 1. Disponible en una ruta absoluta: Esto significa que el flujo de trabajo se acoplará estrechamente con un formulario adaptable. Esto no es lo que queremos aquí
-1. **Enviado al flujo de trabajo** : esto significa que cuando se envía el formulario adaptable, el motor de flujos de trabajo extraerá el nombre del formulario de los datos enviados. Esta es la opción que debe seleccionarse
-1. Disponible en una ruta de acceso en una variable- Esto significa que el formulario adaptable se recogerá de la variable de flujo de trabajoLa siguiente captura de pantalla muestra la opción correcta que debe elegir para desacoplar el flujo de trabajo de un formulario adaptable
+1. **Enviado al flujo de trabajo** : Esto significa que, cuando se envía el formulario adaptable, el motor de flujos de trabajo extraerá el nombre del formulario de los datos enviados. Esta es la opción que debe seleccionarse
+1. Disponible en una ruta de acceso en una variable: esto significa que el formulario adaptable se recogerá de la variable de flujo de trabajo
+La siguiente captura de pantalla muestra la opción correcta que debe elegir para el flujo de trabajo de desacoplamiento del formulario adaptable
 
 ![modelo de flujo de trabajo](assets/workflomodel.PNG)
