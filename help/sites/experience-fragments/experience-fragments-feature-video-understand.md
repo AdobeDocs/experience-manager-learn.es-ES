@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Explicación de los fragmentos de experiencia AEM{#understanding-aem-experience-fragments}
+# Explicación de AEM fragmentos de experiencia{#understanding-aem-experience-fragments}
 
 La administración de productos de Adobe proporciona información general sobre las novedades de los fragmentos de experiencia en la versión AEM 6.3.
 
