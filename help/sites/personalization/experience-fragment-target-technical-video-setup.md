@@ -21,7 +21,7 @@ ht-degree: 1%
 ---
 
 
-# Configuración de fragmentos de experiencias e integración con Adobe Target{#set-up-experience-fragments-and-adobe-target-integration}
+# Configurar fragmentos de experiencias e integración con Adobe Target{#set-up-experience-fragments-and-adobe-target-integration}
 
 Adobe Experience Manager 6.4 reinventa el flujo de trabajo de personalización entre AEM y Destinatario. Las experiencias creadas en AEM ahora se pueden entregar directamente a Adobe Target como Ofertas HTML. Permite a los especialistas en marketing probar y personalizar contenido sin problemas en diferentes canales.
 
