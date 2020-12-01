@@ -32,4 +32,4 @@ Uso de Adobe Sign con AEM Forms
 >
 >Esta función solo está disponible a partir de AEM 6.3.
 
-Visite la página de ejemplos [de](https://forms.enablementadobe.com/content/samples/samples.html?query=0) AEM Forms para ver un vínculo a una demostración en directo de esta capacidad.
+Visite la página [AEM Forms samples](https://forms.enablementadobe.com/content/samples/samples.html?query=0) para obtener un vínculo a una demostración en directo de esta capacidad.
