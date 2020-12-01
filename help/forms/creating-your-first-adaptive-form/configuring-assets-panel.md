@@ -22,7 +22,7 @@ ht-degree: 0%
 ---
 
 
-# Añadir componentes a la sección Recursos {#adding-components-to-assets-section}
+# Añadir componentes a la sección {#adding-components-to-assets-section} de recursos
 
 Configure el diseño de acordeón para el panel Recursos.El diseño de acordeón proporciona una mejor experiencia de usuario final para agregar secciones repetibles.
 
