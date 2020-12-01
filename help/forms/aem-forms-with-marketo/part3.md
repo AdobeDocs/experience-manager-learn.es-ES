@@ -28,7 +28,7 @@ La integración de datos de AEM Forms le permite configurar y conectar fuentes d
 1. Servicios Web basados en SOAP
 1. Servicios OData
 
-Para la integración de AEM Forms con Marketing, utilizaremos los servicios web RESTful. El primer paso en la integración es configurar un origen [de datos.](https://helpx.adobe.com/experience-manager/6-4/forms/using/configure-data-sources.html#ConfigureRESTfulwebservices) Utilice el archivo swagger que se proporciona como parte de este tutorial. La siguiente captura de pantalla muestra las propiedades importantes que deben especificarse al configurar el origen de datos.
+Para la integración de AEM Forms con Marketing, utilizaremos los servicios web RESTful. El primer paso en la integración es configurar un [origen de datos.](https://helpx.adobe.com/experience-manager/6-4/forms/using/configure-data-sources.html#ConfigureRESTfulwebservices) Utilice el archivo swagger que se proporciona como parte de este tutorial. La siguiente captura de pantalla muestra las propiedades importantes que deben especificarse al configurar el origen de datos.
 ![datasource](assets/datasource.jfif)
 
 El archivo &quot;marketo.json&quot; es el archivo swagger y se le proporciona como parte de los recursos de este tutorial.
@@ -39,7 +39,7 @@ El tipo de autenticación es personalizado y la implementación de autenticació
 
 Después de configurar el origen de datos, el siguiente paso es crear un modelo de datos de formulario basado en el origen de datos configurado en el paso anterior. Para crear el modelo de datos de formulario, siga los pasos siguientes:
 
-Seleccione el explorador en la página de integraciones [de datos.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm) Esto lista todas las integraciones de datos creadas en la instancia de AEM.
+Diríjase el explorador a la página [integraciones de datos.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm) Esto lista todas las integraciones de datos creadas en la instancia de AEM.
 
 1. Haga clic en Crear | Modelo de datos de formulario
 1. Proporcione un título significativo como FormsAndMarketing y haga clic en Siguiente
