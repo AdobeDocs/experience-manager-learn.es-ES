@@ -40,14 +40,14 @@ ht-degree: 2%
 >* Microsoft Visual C++ 2013 redistribuible (a partir de 6.5)
 
 
-Aunque recomendamos seguir la documentación [](https://helpx.adobe.com/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html) oficial para instalar AEM Forms. Se pueden seguir los siguientes pasos para instalar y configurar AEM Forms en el entorno de Windows:
+Aunque recomendamos seguir la [documentación oficial](https://helpx.adobe.com/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html) para instalar AEM Forms. Se pueden seguir los siguientes pasos para instalar y configurar AEM Forms en el entorno de Windows:
 
 * Asegúrese de tener instalado el JDK correspondiente
    * AEM 6.2 necesita: Oracle SE 8 JDK 1.8.x (64 bits)
 * 
    * AEM 6.3 y AEM 6.4 necesita: Oracle SE 8 JDK 1.8.x (64 bits)
 * AEM 6.5 necesita JDK 8 o JDK 11
-* [Los requisitos](https://helpx.adobe.com/experience-manager/6-3/sites/deploying/using/technical-requirements.html) oficiales de JDK se enumeran aquí
+* [Los ](https://helpx.adobe.com/experience-manager/6-3/sites/deploying/using/technical-requirements.html) requisitos oficiales de JDK se enumeran aquí
 * Asegúrese de que JAVA_HOME está configurado para que apunte al JDK que ha instalado.
    * Para crear la variable JAVA_HOME en Windows, siga los pasos a continuación:
       * Haga clic con el botón derecho en Mi PC y seleccione Propiedades
@@ -86,12 +86,12 @@ Aunque recomendamos seguir la documentación [](https://helpx.adobe.com/experien
    * **Una vez que todos los paquetes estén activos (excepto el paquete de firmas AEMFD), reinicie el sistema para completar la instalación de AEM Forms**
 
 
-* Añadir `sun.util.calendar` paquete a la lista de permitidos:
+* Añada el paquete `sun.util.calendar` a la lista de permitidos:
 
-   1. Abrir la consola web Felix en la ventana [del navegador](http://localhost:4502/system/console/configMgr)
+   1. Abra la consola web Felix en su [ventana del explorador](http://localhost:4502/system/console/configMgr)
    2. Buscar y abrir Configuración del cortafuegos de deserialización: `com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
    3. Añadir `sun.util.calendar` como una nueva entrada en `com.adobe.cq.deserfw.impl.DeserializationFirewallImpl.firewall.deserialization.whitelist.name`
    4. Guarde los cambios.
 
 Felicitaciones!!! Ya ha instalado y configurado AEM Forms en su sistema.
-Según sus necesidades, puede configurar las extensiones [](https://helpx.adobe.com/experience-manager/6-3/forms/using/configuring-document-services.html) Reader o [ PDFG](https://helpx.adobe.com/experience-manager/6-3/forms/using/install-configure-pdf-generator.html) en el servidor
+Según sus necesidades, puede configurar [Extensiones de Reader](https://helpx.adobe.com/experience-manager/6-3/forms/using/configuring-document-services.html) o [ PDFG](https://helpx.adobe.com/experience-manager/6-3/forms/using/install-configure-pdf-generator.html) en el servidor
