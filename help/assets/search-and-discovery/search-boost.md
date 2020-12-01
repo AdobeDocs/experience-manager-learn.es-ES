@@ -15,11 +15,11 @@ ht-degree: 4%
 ---
 
 
-# Búsqueda de aumento con metadatos de recursos {#search-boost-asset}
+# Búsqueda con metadatos de recursos {#search-boost-asset}
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=12&learn=on)
 
-## Explicación de la expansión de la búsqueda en AEM Assets{#understanding-search-boosting-in-aem-assets}
+## Explicación del Boosting de búsqueda en AEM Assets{#understanding-search-boosting-in-aem-assets}
 
 Una mirada detallada al aumento de búsqueda de AEM Assets y cómo funciona en el contexto más amplio de AEM.
 
