@@ -66,16 +66,16 @@ Obtenemos la persona que inició el flujo de trabajo. Luego obtenemos el valor d
 
 Según cómo se almacene la propiedad manager en su LDAP, es posible que tenga que realizar alguna manipulación de cadenas para obtener la identificación del administrador.
 
-Lea este artículo para implementar su propio [ ParticipantChooser .](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
+Lea este artículo para implementar su propio [ selector de participantes.](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
 
 Para probar esto en el sistema (para empleados de Adobe puede utilizar este ejemplo de forma predeterminada)
 
-* [Descargue e implemente el paquete](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)setvalue. Este es el paquete OSGI personalizado para establecer la propiedad del administrador.
+* [Descargue e implemente el paquete](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar) setvalue. Este es el paquete OSGI personalizado para establecer la propiedad del administrador.
 * [Descargar e instalar DevelopingWithServiceUserBundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-* [Importe los recursos asociados a este artículo en AEM mediante el administrador](assets/aem-forms-ldap.zip)de paquetes. Como parte de este paquete se incluyen los archivos de configuración LDAP, el flujo de trabajo y un formulario adaptable.
+* [Importe los recursos asociados a este artículo en AEM mediante el administrador](assets/aem-forms-ldap.zip) de paquetes. Como parte de este paquete se incluyen los archivos de configuración LDAP, el flujo de trabajo y un formulario adaptable.
 * Configure AEM con su LDAP utilizando las credenciales LDAP apropiadas.
 * Inicie sesión en AEM con sus credenciales LDAP.
-* Abrir el formulario de solicitud de [tiempo libre](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
+* Abra [timeoffrequestform](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
 * Rellene el formulario y envíelo.
 * El administrador del remitente debe obtener el formulario para su revisión.
 
