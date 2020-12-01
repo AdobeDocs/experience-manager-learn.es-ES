@@ -23,12 +23,12 @@ ht-degree: 0%
 
 AEM Forms 6.5 ha introducido la capacidad de agregar elementos dinámicamente a un componente de grupo de opciones de Forms adaptable, como Casilla de verificación, Botón de radio y Lista de imágenes.
 
-[Esta capacidad está disponible en directo en el servidor](https://forms.enablementadobe.com/content/samples/samples.html?query=0)de ejemplos. Busque la tarjeta de elementos de la casilla de verificación dinámica y haga clic en &quot;Probar&quot;
+[Esta capacidad está disponible en directo en el servidor](https://forms.enablementadobe.com/content/samples/samples.html?query=0) de ejemplos. Busque la tarjeta de elementos de la casilla de verificación dinámica y haga clic en &quot;Probar&quot;
 
 
 Puede agregar elementos mediante el editor visual y el editor de código, según el caso de uso.
 
-**Uso del editor visual:** Puede rellenar los elementos del grupo de opciones a partir de los resultados de una llamada de función o de una llamada de servicio. Por ejemplo, puede configurar los elementos del grupo de opciones consumiendo la respuesta de una llamada de API REST.
+**Uso del editor visual:** puede rellenar los elementos del grupo de opciones a partir de los resultados de una llamada de función o de servicio. Por ejemplo, puede configurar los elementos del grupo de opciones consumiendo la respuesta de una llamada de API REST.
 
 En la captura de pantalla de abajo, estamos configurando las opciones de Período(años) de préstamo a los resultados de una llamada de servicio llamada getLoanPeriods.
 
