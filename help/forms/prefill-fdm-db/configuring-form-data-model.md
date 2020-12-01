@@ -25,7 +25,7 @@ ht-degree: 0%
 
 El primer paso para crear un modelo de datos de formulario respaldado por RDBMS es configurar Apache Sling Connection Pooled DataSource. Para configurar la fuente de datos, siga los pasos que se indican a continuación:
 
-* Apunte el navegador a [configMgr](http://localhost:4502/system/console/configMgr)
+* Apunte el explorador para [configMgr](http://localhost:4502/system/console/configMgr)
 * Buscar **Apache Sling Connection Pooled DataSource**
 * Añada una nueva entrada y proporcione los valores como se muestra en la captura de pantalla.
 * ![data-source](assets/data-source.png)
@@ -37,18 +37,18 @@ El primer paso para crear un modelo de datos de formulario respaldado por RDBMS 
 
 ## Creación del modelo de datos de formulario
 
-* Apunte el explorador para integraciones [de datos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm)
-* Click _Create_->_Form Data Model_
-* Proporcionar un nombre y un título significativos al modelo de datos de formulario, como **Empleado**
+* Apunta a tu explorador para [Integraciones de datos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm)
+* Haga clic en _Crear_->_Modelo de datos de formulario_
+* Proporcione un nombre y un título significativos al modelo de datos de formulario, como **Empleado**
 * Haga clic en _Siguiente_
 * Seleccione el origen de datos creado en la sección anterior(foros)
 * Haga clic en _Crear_->Editar para abrir el modelo de datos de formulario recién creado en modo de edición
-* Expanda el nodo de _foros_ para ver el esquema del empleado. Expanda el nodo empleado para ver las dos tablas
+* Expanda el nodo _foros_ para ver el esquema del empleado. Expanda el nodo empleado para ver las dos tablas
 
 ## Añadir entidades al modelo
 
 * Asegúrese de que el nodo de empleado está expandido
-* Seleccione las entidades de beneficiarios y newhir y haga clic en _Añadir selección_
+* Seleccione las entidades newhire y de los beneficiarios y haga clic en _Añadir seleccionados_
 
 ## Añadir servicio de lectura a cualquier entidad
 
@@ -60,8 +60,8 @@ El primer paso para crear un modelo de datos de formulario respaldado por RDBMS 
 * ![get-service](assets/get-service.png)
 >[!NOTE]
 > El servicio get espera un valor asignado a la columna empID de la nueva entidad. Existen varias formas de pasar este valor y en este tutorial el empID se pasará a través del parámetro de solicitud llamado empID.
-* Haga clic en _Listo_ para guardar los argumentos del servicio get
-* Haga clic en _Hecho_ para guardar los cambios en el modelo de datos de formulario
+* Haga clic _Listo_ para guardar los argumentos del servicio get
+* Haga clic en _Listo_ para guardar los cambios en el modelo de datos de formulario
 
 ## Añadir asociación entre 2 entidades
 
@@ -72,19 +72,19 @@ Los siguientes pasos le guiarán por el proceso de creación de la asociación u
 * Proporcione un Título y un identificador significativos a la asociación y otras propiedades, como se muestra en la captura de pantalla siguiente
    ![asociación](assets/association-entities-1.png)
 
-* Haga clic en el icono de _edición_ en la sección Argumentos
+* Haga clic en el icono _editar_ en la sección Argumentos
 
 * Especifique los valores como se muestra en esta captura de pantalla
 * ![asociación-2](assets/association-entities.png)
 * **Estamos vinculando las dos entidades mediante la columna empID de beneficiarios y nuevas entidades.**
-* Click on _Done_ to save your changes
+* Haga clic en _Listo_ para guardar los cambios
 
 ## Probar el modelo de datos de formulario
 
-Nuestro modelo de datos de formulario ahora tiene **_get_** service que acepta empID y devuelve los detalles del newhir y sus beneficiarios. Para probar el servicio get, siga los pasos que se indican a continuación.
+Nuestro modelo de datos de formulario ahora tiene **_servicio get_** que acepta empID y devuelve los detalles del newhir y sus beneficiarios. Para probar el servicio get, siga los pasos que se indican a continuación.
 
 * Seleccionar entidad nueva
-* Haga clic en el objeto _del modelo de prueba_
+* Haga clic en _Test Model Object_
 * Proporcione un empID válido y haga clic en _Prueba_
 * Debería obtener los resultados como se muestra en la captura de pantalla siguiente
 * ![test-fdm](assets/test-form-data-model.png)
