@@ -22,7 +22,7 @@ Las organizaciones tienen una amplia variedad de formularios. Algunos de estos f
 
 >[!NOTE]
 >
->Si utiliza AEM Forms 6.5, utilice la función Conversión automatizada de Forms.
+>Si utiliza AEM Forms 6.5, utilice la función de Automated forms conversion.
 
 ## Requisitos previos
 
@@ -32,14 +32,14 @@ Las organizaciones tienen una amplia variedad de formularios. Algunos de estos f
 
 ### Para que esta capacidad funcione en el sistema, es necesario lo siguiente
 
-* Descargar e implementar los paquetes mediante la consola web [Felix](http://localhost:4502/system/console/bundles)
+* Descargue e implemente los paquetes usando la [Consola Web Felix](http://localhost:4502/system/console/bundles)
 * [DocumentServicesBundle](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 * [DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 * [AcroFormsToAEMFormsBundle](https://forms.enablementadobe.com/content/DemoServerBundles/AcroFormToAEMForm.core-1.0-SNAPSHOT.jar)
 * [Descargue e importe este paquete en AEM](assets/acro-form-aem-form.zip). Este paquete contiene el flujo de trabajo de muestra y la página html para crear XSD a partir de acroform
 * Abra [configMgr](http://localhost:4502/system/console/configMgr)
    * Busque &#39;Apache Sling Service User Mapper Service&#39; y haga clic para abrir las propiedades
-   * Haga clic en el `+` icono (más) para agregar la siguiente asignación de servicios
+   * Haga clic en el icono `+` (más) para agregar la siguiente asignación de servicios
       * `DevelopingWithServiceUser.core:getresourceresolver=data`
       * `DevelopingWithServiceUser.core:getformsresourceresolver=fd-service`
    * Haga clic en &#39;Guardar&#39;
