@@ -68,12 +68,15 @@ A continuación se muestran los datos del envío del formulario adaptable. El fo
 ```
 
 Para inicializar la variable ArrayList de la cadena de subtipo, puede utilizar el modo de asignación JSON Dot Notation o XPath. La siguiente captura de pantalla muestra cómo rellenar una variable ArrayList denominada CustomRoutes mediante la notación de punto JSON. Asegúrese de que está apuntando a un elemento en un objeto de matriz como se muestra en la captura de pantalla siguiente. Se rellena el objeto ArrayList de CustomRoutes con los nombres del objeto de matriz de cadena de administración.
-A continuación, se utiliza la ArrayList de CustomRoutes para rellenar las Rutas en las rutas![personalizadas del componente](assets/arraylist.jpg)AsignartareaUna vez inicializada la variable ArrayList de CustomRoutes con los valores de los datos enviados, las Rutas del componente AsignarTarea se rellenan mediante la variable CustomRoutes. La siguiente captura de pantalla muestra las rutas personalizadas de una tarea de asignación![de tareas](assets/customactions.jpg)
+A continuación, se utiliza la ArrayList de CustomRoutes para rellenar las rutas en el componente AsignarTarea
+![rutas personalizadas](assets/arraylist.jpg)
+Una vez inicializada la variable ArrayList de CustomRoutes con los valores de los datos enviados, las rutas del componente AsignarTarea se rellenan mediante la variable CustomRoutes. La siguiente captura de pantalla muestra las rutas personalizadas de una tarea Asignar
+![asingtask](assets/customactions.jpg)
 
 Para probar este flujo de trabajo en su sistema, siga los pasos siguientes
 
 * Descargue y guarde el archivo ArrayListVariable.zip en el sistema de archivos
-* [Importar el archivo](assets/arraylistvariable.zip) zip mediante el Administrador de paquetes de AEM
+* [Importación del ](assets/arraylistvariable.zip) archivo zip mediante el Administrador de paquetes de AEM
 * [Abrir el formulario TravelCostReport](http://localhost:4502/content/dam/formsanddocuments/helpx/travelexpensereport/jcr:content?wcmmode=disabled)
 * Introduzca un par de gastos y los nombres de los dos gerentes
 * Pulse el botón de envío
