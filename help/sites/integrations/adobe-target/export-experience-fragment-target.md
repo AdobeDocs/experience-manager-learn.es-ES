@@ -18,7 +18,7 @@ ht-degree: 1%
 ---
 
 
-# Export Experience Fragment to Adobe Target {#experience-fragment-target}
+# Exportar fragmento de experiencia a Adobe Target {#experience-fragment-target}
 
 Descubra cómo exportar AEM fragmento de experiencias como Ofertas de Adobe Target.
 
@@ -38,16 +38,16 @@ Al exportar fragmento de experiencia a Adobe Target sin los permisos correctos e
 
     ![Error de IU de la API de Destinatario](assets/error-target-offer.png)
 
-... y los siguientes mensajes de registro en el `aemerror` registro:
+... y los siguientes mensajes de registro en el registro `aemerror`:
 
     ![Error de consola de API de Destinatario](assets/target-console-error.png)
 
 #### Resolución
 
-1. Inicie sesión en el [Admin Console](https://adminconsole.adobe.com/) con derechos administrativos para el Perfil de productos de Adobe Target utilizado pero la integración AEM
-2. Seleccione __Productos > Adobe Target > Perfil de productos__
-3. En la ficha __Integraciones__ , seleccione la integración de su AEM como entorno de Cloud Service (el mismo nombre que el proyecto de E/S de Adobe)
-4. Asignar función __de editor__ o __aprobador__
+1. Inicie sesión en [Admin Console](https://adminconsole.adobe.com/) con derechos administrativos para el Perfil de productos de Adobe Target utilizado pero la integración AEM
+2. Seleccione __Productos > Adobe Target > Perfil del producto__
+3. En la ficha __Integrations__, seleccione la integración de su AEM como entorno de Cloud Service (el mismo nombre que el proyecto de Adobe I/O)
+4. Asignar la función __Editor__ o __Aprobador__
 
    ![Error de API de destinatario](assets/target-permissions.png)
 
