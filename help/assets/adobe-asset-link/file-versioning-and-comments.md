@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Versiones y comentarios de archivos{#file-versioning-and-comments}
+# Versiones de archivos y comentarios{#file-versioning-and-comments}
 
 Con el panel Vínculo de recursos de Adobe, puede acceder a los detalles de los archivos de los recursos de AEM Assets, por ejemplo, miniaturas, metadatos básicos y versiones, desde el panel. Explore cómo crear, previsualización y comparar versiones de archivos.
 
