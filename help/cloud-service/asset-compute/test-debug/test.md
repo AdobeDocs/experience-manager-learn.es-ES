@@ -1,6 +1,6 @@
 ---
-title: Probar un trabajador de cálculo de recursos
-description: El proyecto de cómputo de recursos define un patrón para crear y ejecutar fácilmente pruebas de los trabajadores de cómputo de recursos.
+title: Probar un trabajador de Asset compute
+description: El proyecto de Asset compute define un patrón para crear y ejecutar fácilmente pruebas de los trabajadores de la Asset compute.
 feature: asset-compute
 topics: renditions, development
 version: cloud-service
@@ -18,15 +18,15 @@ ht-degree: 0%
 ---
 
 
-# Probar un trabajador de cálculo de recursos
+# Probar un trabajador de Asset compute
 
-El proyecto de cómputo de recursos define un patrón para crear y ejecutar fácilmente [pruebas de trabajadores](https://docs.adobe.com/content/help/en/asset-compute/using/extend/test-custom-application.html)de computación de recursos.
+El proyecto de Asset compute define un patrón para crear y ejecutar fácilmente [pruebas de los trabajadores de la Asset compute](https://docs.adobe.com/content/help/en/asset-compute/using/extend/test-custom-application.html).
 
 ## Anatomía de una prueba de trabajo
 
-Las pruebas de los trabajadores de Asset Compute se desglosan en grupos de pruebas y, dentro de cada grupo de pruebas, uno o más casos de prueba que afirman una condición para probar.
+Las pruebas de los trabajadores de la asset compute se desglosan en grupos de pruebas y, dentro de cada grupo de pruebas, uno o más casos de prueba que afirman una condición para la prueba.
 
-La estructura de las pruebas en un proyecto de Asset Compute es la siguiente:
+La estructura de los ensayos de un proyecto de Asset compute es la siguiente:
 
 ```
 /actions/<worker-name>/index.js
@@ -55,20 +55,20 @@ Cada serie de pruebas puede tener los siguientes archivos:
    + Opcional
 + `validate`
    + Una secuencia de comandos que obtiene rutas de archivo de representación esperadas y reales como argumentos y debe devolver el código de salida 0 si el resultado es correcto, o un código de salida distinto de cero si falla la validación o comparación.
-   + Opcional, el valor predeterminado es el `diff` comando
+   + Opcional, el valor predeterminado es el comando `diff`
    + Utilice una secuencia de comandos de shell que ajuste un comando de ejecución de docker para utilizar distintas herramientas de validación
 + `mock-<host-name>.json`
-   + Respuestas HTTP con formato JSON para [burlarse de las llamadas](https://www.mock-server.com/mock_server/creating_expectations.html)de servicio externas.
+   + Respuestas HTTP formateadas por JSON para [burlar llamadas de servicio externas](https://www.mock-server.com/mock_server/creating_expectations.html).
    + Opcional, solo se utiliza si el código de trabajo realiza solicitudes HTTP propias
 
 ## Escritura de un caso de prueba
 
 Este caso de prueba confirma la entrada parametrizada (`params.json`) para el archivo de entrada (`file.jpg`) genera la representación PNG esperada (`rendition.png`).
 
-1. Primero elimine el caso de `simple-worker` pruebas generadas automáticamente `/test/asset-compute/simple-worker` porque no es válido, ya que nuestro trabajador ya no copia simplemente el origen en la representación.
+1. Primero elimine el caso de pruebas `simple-worker` generadas automáticamente en `/test/asset-compute/simple-worker` ya que no es válido, ya que nuestro trabajador ya no copia simplemente el origen en la representación.
 1. Cree una nueva carpeta de casos de prueba en `/test/asset-compute/worker/success-parameterized` para probar la ejecución correcta del programa de trabajo que genera una representación PNG.
-1. En la `success-parameterized` carpeta, agregue el archivo [de](./assets/test/success-parameterized/file.jpg) entrada de prueba para este caso de prueba y asígnele un nombre `file.jpg`.
-1. En la `success-parameterized` carpeta, agregue un nuevo archivo denominado `params.json` que defina los parámetros de entrada del programa de trabajo:
+1. En la carpeta `success-parameterized`, agregue el archivo de entrada de prueba [](./assets/test/success-parameterized/file.jpg) para este caso de prueba y asígnele el nombre `file.jpg`.
+1. En la carpeta `success-parameterized`, agregue un nuevo archivo denominado `params.json` que define los parámetros de entrada del programa de trabajo:
 
    ```json
    { 
@@ -77,21 +77,21 @@ Este caso de prueba confirma la entrada parametrizada (`params.json`) para el ar
        "brightness": "-0.50"
    }
    ```
-   Son las mismas claves o valores pasados a la definición [de perfil de cálculo de recursos de la herramienta](../develop/development-tool.md)de desarrollo, menos la `worker` clave.
-1. Añada el archivo [de](./assets/test/success-parameterized/rendition.png) representación esperado a este caso de prueba y asígnele un nombre `rendition.png`. Este archivo representa la salida esperada del programa de trabajo para la entrada determinada `file.jpg`.
-1. Desde la línea de comandos, ejecute las pruebas en la raíz del proyecto mediante la ejecución `aio app test`
-   + Asegúrese de que [Docker Desktop](../set-up/development-environment.md#docker) y las imágenes de acoplamiento compatibles están instaladas e iniciadas
+   Son las mismas claves o valores pasados a la definición de perfil de Asset compute de [Herramienta de desarrollo](../develop/development-tool.md), menos a la clave `worker`.
+1. Añada el [archivo de representación esperado](./assets/test/success-parameterized/rendition.png) en este caso de prueba y asígnele el nombre `rendition.png`. Este archivo representa la salida esperada del programa de trabajo para la entrada `file.jpg` dada.
+1. Desde la línea de comandos, ejecute las pruebas en la raíz del proyecto ejecutando `aio app test`
+   + Asegúrese de que [Docker Desktop](../set-up/development-environment.md#docker) y las imágenes de acoplamiento admitidas están instaladas e iniciadas
    + Finalización de las instancias de la herramienta de desarrollo en ejecución
 
-![Prueba - Éxito ](./assets/test/success-parameterized/result.png)
+![Prueba - Éxito  ](./assets/test/success-parameterized/result.png)
 
 ## Escritura de un caso de prueba de comprobación de errores
 
-Este caso de prueba se prueba para garantizar que el programa de trabajo arroja el error adecuado cuando el `contrast` parámetro se establece en un valor no válido.
+Este caso de prueba se prueba para garantizar que el programa de trabajo arroja el error correspondiente cuando el parámetro `contrast` se establece en un valor no válido.
 
-1. Cree una nueva carpeta de casos de prueba en `/test/asset-compute/worker/error-contrast` para probar una ejecución de error del programa de trabajo debido a un valor de `contrast` parámetro no válido.
-1. En la `error-contrast` carpeta, agregue el archivo [de](./assets/test/error-contrast/file.jpg) entrada de prueba para este caso de prueba y asígnele un nombre `file.jpg`. El contenido de este archivo no es importante para esta prueba, sólo necesita existir para superar la comprobación de &quot;Origen dañado&quot;, para alcanzar las comprobaciones de validez, que este caso de prueba valida. `rendition.instructions`
-1. En la `error-contrast` carpeta, agregue un nuevo archivo denominado `params.json` que defina los parámetros de entrada del trabajo con el contenido:
+1. Cree una nueva carpeta de casos de prueba en `/test/asset-compute/worker/error-contrast` para probar una ejecución de errores del programa de trabajo debido a un valor de parámetro `contrast` no válido.
+1. En la carpeta `error-contrast`, agregue el archivo de entrada de prueba [](./assets/test/error-contrast/file.jpg) para este caso de prueba y asígnele el nombre `file.jpg`. El contenido de este archivo no es importante para esta prueba, sólo necesita existir para superar la comprobación de &quot;Origen dañado&quot;, para alcanzar las `rendition.instructions` comprobaciones de validez, que este caso de prueba valida.
+1. En la carpeta `error-contrast`, agregue un nuevo archivo denominado `params.json` que define los parámetros de entrada del trabajo con el contenido:
 
    ```json
    {
@@ -100,12 +100,12 @@ Este caso de prueba se prueba para garantizar que el programa de trabajo arroja 
    }
    ```
 
-   + Establezca `contrast` parámetros en `10`, un valor no válido, ya que el contraste debe estar entre -1 y 1, para generar un `RenditionInstructionsError`.
-   + Afirmemos que se produce el error adecuado en las pruebas configurando la `errorReason` clave en el &quot;motivo&quot; asociado al error esperado. Este parámetro de contraste no válido emite el error [](../develop/worker.md#errors)personalizado, `RenditionInstructionsError`por lo tanto establezca el `errorReason` en el motivo del error o`rendition_instructions_error` para afirmar que se ha generado.
+   + Configure `contrast` parámetros en `10`, un valor no válido, ya que el contraste debe estar entre -1 y 1, para generar un `RenditionInstructionsError`.
+   + Afirmemos que se produce el error apropiado en las pruebas configurando la clave `errorReason` en el &quot;motivo&quot; asociado al error esperado. Este parámetro de contraste no válido emite el [error personalizado](../develop/worker.md#errors), `RenditionInstructionsError`, por lo tanto establezca el `errorReason` en el motivo de este error, o`rendition_instructions_error` para afirmar que se ha generado.
 
-1. Dado que no debe generarse ninguna representación durante la ejecución de un error, no es necesario ningún `rendition.<extension>` archivo.
+1. Dado que no debe generarse ninguna representación durante una ejecución de error, no es necesario ningún archivo `rendition.<extension>`.
 1. Ejecute el grupo de pruebas desde la raíz del proyecto ejecutando el comando `aio app test`
-   + Asegúrese de que [Docker Desktop](../set-up/development-environment.md#docker) y las imágenes de acoplamiento compatibles están instaladas e iniciadas
+   + Asegúrese de que [Docker Desktop](../set-up/development-environment.md#docker) y las imágenes de acoplamiento admitidas están instaladas e iniciadas
    + Finalización de las instancias de la herramienta de desarrollo en ejecución
 
 ![Prueba - Contraste de errores](./assets/test/error-contrast/result.png)
