@@ -29,7 +29,7 @@ En este artículo veremos lo siguiente
 * Servicio de salida: Normalmente, este servicio se utiliza para combinar datos xml con plantillas xdp o pdf para generar archivos PDF acoplados
 * FormsService: Se trata de un servicio muy versátil que le permite exportar e importar datos desde y en archivos PDF
 
-El javadoc oficial para la API de AEM Forms se enumera [aquí](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/package-summary.html)
+El javadoc oficial para la API de AEM Forms se muestra [aquí](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/package-summary.html)
 
 El siguiente fragmento de código exporta datos desde un archivo PDF
 
@@ -67,10 +67,16 @@ La línea 6 exporta el xmlData desde el archivo PDF
 1. /content/AemFormsSamples/export data
 1. /content/AemFormsSamples/outputservice
 1. Buscar &quot;Sling Remitente del reenvío filter&quot;
-1. Marque la casilla de verificación &quot;Permitir vacío&quot;. (Esta configuración debe ser únicamente para fines de prueba)Existen varias formas de probar el código de muestra. Lo más rápido y sencillo es usar la aplicación Postman. Postman le permite realizar solicitudes de POST a su servidor. Instale la aplicación Postman en su sistema.
+1. Marque la casilla de verificación &quot;Permitir vacío&quot;. (Esta configuración debe ser únicamente para fines de prueba)
+Existen varias formas de probar el código de muestra. Lo más rápido y sencillo es usar la aplicación Postman. Postman le permite realizar solicitudes de POST a su servidor. Instale la aplicación Postman en su sistema.
 Inicie la aplicación e introduzca la siguiente URL para probar la API de datos de exportación
 
-Asegúrese de que ha seleccionado &quot;POST&quot; en la lista desplegablehttp://localhost:4502/content/AemFormsSamples/exportdata.htmlAsegúrese de que especifica &quot;Autorización&quot; como &quot;Autenticación básica&quot;. Especifique el nombre de usuario y la contraseña del servidor de AEMVaya a la ficha &quot;Cuerpo&quot; y especifique los parámetros de solicitud como se muestra en la imagen siguiente![a exportar](assets/postexport.png). A continuación, haga clic en el botón Enviar
+Asegúrese de seleccionar &quot;POST&quot; en la lista desplegable
+http://localhost:4502/content/AemFormsSamples/exportdata.html
+Asegúrese de especificar &quot;Autorización&quot; como &quot;Autenticación básica&quot;. Especifique el nombre de usuario y la contraseña del servidor AEM
+Vaya a la ficha &quot;Cuerpo&quot; y especifique los parámetros de solicitud como se muestra en la imagen siguiente
+![exportar](assets/postexport.png)
+A continuación, haga clic en el botón Enviar
 
 El paquete contiene 3 muestras. En los párrafos siguientes se explica cuándo utilizar el servicio de salida o el servicio de Forms, la dirección URL del servicio, los parámetros de entrada que cada servicio espera
 
@@ -86,7 +92,7 @@ El paquete contiene 3 muestras. En los párrafos siguientes se explica cuándo u
 
 **Importar datos al archivo PDF:**
 * Usar FormsService para importar datos en un archivo PDF
-* **URL** del POST: http://localhost:4502/content/AemFormsSamples/mergedata.html
+* **URL**  del POST: http://localhost:4502/content/AemFormsSamples/mergedata.html
 * **Parámetros de solicitud:**
 
    * pdffile : El archivo PDF con el que desea combinar los datos
