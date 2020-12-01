@@ -25,9 +25,9 @@ El siguiente vídeo muestra el proceso básico de creación de una plantilla de 
 
 >[!VIDEO](https://video.tv.adobe.com/v/37324/quality=9)
 
-Consulte la documentación [de la plantilla de formulario](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html) adaptable para obtener más información
+Consulte la [documentación de la plantilla de formulario adaptable](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html) para obtener más información
 
-Si es necesario, puede descargar la plantilla [de formulario](assets/peak-application-template.zip) adaptable e importarla a AEM mediante el administrador de [paquetes](http://localhost:4502/crx/packmgr/index.jsp)
+Si es necesario, puede descargar la [plantilla de formulario adaptable](assets/peak-application-template.zip) e importarla a AEM mediante el [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
 
 
 
