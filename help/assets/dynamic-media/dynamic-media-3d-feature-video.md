@@ -23,12 +23,12 @@ La compatibilidad 3D de Dynamic Media con Adobe Experience Manager le permite pe
 
 >[!VIDEO](https://video.tv.adobe.com/v/35156/?quality=9&learn=on)
 
-Consulte el visor [3D](http://s7d1.scene7.com/s7viewers/html5/DimensionalViewer.html?asset=DynamicmediaNA1/canBlue-2&amp;config=DynamicmediaNA1/Dimensional&amp;serverUrl=http://s7d1.scene7.com/is/image/&amp;contenturl=http://s7d1.scene7.com/is/content/) dimensional aquí.
+Consulte el visor 3D [dimensional](http://s7d1.scene7.com/s7viewers/html5/DimensionalViewer.html?asset=DynamicmediaNA1/canBlue-2&amp;config=DynamicmediaNA1/Dimensional&amp;serverUrl=http://s7d1.scene7.com/is/image/&amp;contenturl=http://s7d1.scene7.com/is/content/) aquí.
 
 
 ## Uso del visor de experiencias 3D
 
 * **Cambiar cámara** : Para orinar alrededor del objeto: Clic izquierdo + Arrastrar o presionar + Arrastrar
-* **Cámara** de recorrido: Para realizar una panorámica (vista izquierda, derecha, arriba y abajo) - Clic derecho + Arrastrar / Control + Arrastrar / Pulsar dos dedos + Arrastrar
-* **Cámara** de zoom: Para hacer zoom: rueda de desplazamiento o pellizcar
+* **Cámara**  de recorrido: Para realizar una panorámica (vista izquierda, derecha, arriba y abajo) - Clic derecho + Arrastrar / Control + Arrastrar / Pulsar dos dedos + Arrastrar
+* **Cámara**  de zoom: Para hacer zoom: rueda de desplazamiento o pellizcar
 * **Restablecer/Centrar cámara** : Centrar el objeto: Clic en Doble o Tocar en Doble
