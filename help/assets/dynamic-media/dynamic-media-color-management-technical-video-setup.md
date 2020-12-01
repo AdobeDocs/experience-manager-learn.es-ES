@@ -29,11 +29,11 @@ En este vídeo analizamos la administración dinámica de color de los medios y 
 
 >[!NOTE]
 >
->[Active Medios](https://docs.adobe.com/docs/en/aem/6-0/administer/integration/dynamic-media/enabling-dynamic-media.html) dinámicos en AEM para utilizar esta función.
+>[Active Dynamic ](https://docs.adobe.com/docs/en/aem/6-0/administer/integration/dynamic-media/enabling-dynamic-media.html) Media AEM para utilizar esta función.
 
 Esta función está disponible para las versiones AEM 6.1 y 6.2 como Feature Pack.
 
-## Plantilla XML para el nodo de configuración Administración de color {#xml-template-for-the-color-management-configuration-node}
+## Plantilla XML para el nodo de configuración de Administración de color {#xml-template-for-the-color-management-configuration-node}
 
 A continuación se muestra la plantilla XML para el nodo de configuración de Gestión de color. Esta plantilla XML puede copiarse en el proyecto de desarrollo de AEM y configurarse con las configuraciones adecuadas para el proyecto.
 
@@ -91,7 +91,7 @@ A continuación se muestra la plantilla XML para el nodo de configuración de Ge
 />
 ```
 
-### A continuación se muestra la lista de los perfiles de color de Adobe predeterminados {#list-of-default-adobe-color-profiles-are-listed-below}
+### La lista de los perfiles de color de Adobe predeterminados se enumera a continuación {#list-of-default-adobe-color-profiles-are-listed-below}
 
 | Nombre | Espacio color | Descripción |
 | ------------------- | ---------- | ------------------------------------- |
@@ -120,7 +120,7 @@ A continuación se muestra la plantilla XML para el nodo de configuración de Ge
 | SheetfeedUncover | CMYK | U.S. Sheetfeed Uncover v2 |
 | SMPTE | RGB | SMPTE-C |
 | sRGB | RGB sRGB | IEC61966-2.1 |
-| UncoatedFogra29 | CMYK | FOGRA29 sin estucar (ISO 12647-2:2004) |
+| No recubiertoFogra29 | CMYK | FOGRA29 sin estucar (ISO 12647-2:2004) |
 | WebCoated | CMYK | U.S. Web Coated (SWOP) v2 |
 | WebCoatedFogra28 | CMYK | Web Coated FOGRA28 (ISO 12647-2:2004) |
 | WebCoatedGrade3 | CMYK | Papel Web Coated SWOP 2006 de grado 3 |
