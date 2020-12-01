@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Añadir y utilizar un CAPTCHA con AEM Forms adaptable.
 
-Visite la página de ejemplos [de](https://forms.enablementadobe.com/content/samples/samples.html?query=0) AEM Forms para ver un vínculo a una demostración en directo de esta capacidad.
+Visite la página [AEM Forms samples](https://forms.enablementadobe.com/content/samples/samples.html?query=0) para obtener un vínculo a una demostración en directo de esta capacidad.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18336/?quality=9&learn=on)
 
@@ -40,7 +40,7 @@ Visite la página de ejemplos [de](https://forms.enablementadobe.com/content/sam
 >
 >Configurar reCaptach en la instancia de autor
 >
->abrir la consola [web felix](http://localhost:4502/system/console/bundles) en la instancia del autor
+>abra la consola web felix [](http://localhost:4502/system/console/bundles) en la instancia del autor
 >
 >buscar el paquete com.adobe.granite.crypto.file
 >
@@ -51,7 +51,7 @@ Visite la página de ejemplos [de](https://forms.enablementadobe.com/content/sam
 >* &lt;author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle20/data
 * Copiar los archivos principales y HMAC
 
-Abra la consola web [felix](http://localhost:4502/system/console/bundles) en la instancia de publicación. Busque el paquete com.adobe.granite.crypto.file. Tenga en cuenta el ID del paquete
+Abra la [consola web felix](http://localhost:4502/system/console/bundles) en la instancia de publicación. Busque el paquete com.adobe.granite.crypto.file. Tenga en cuenta el ID del paquete
 Vaya al ID del paquete en el sistema de archivos de la instancia de publicación
 * &lt;publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle20/data
 * elimine los archivos principales y HMAC existentes.
