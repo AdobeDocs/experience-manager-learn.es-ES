@@ -25,7 +25,7 @@ ht-degree: 0%
 # Añadir tabla a la sección de contribuciones
 
 En esta parte agregaremos un cuadro a la sección de contribuciones.
-Consulte [Uso de tablas en el Canal](/help/forms/interactive-communications/table-in-print-channel-documents-video-use.md) de impresión para obtener más información sobre el uso de tablas en el documento de canal de impresión.
+Consulte [Uso de tablas en el Canal de impresión](/help/forms/interactive-communications/table-in-print-channel-documents-video-use.md) para obtener más información sobre el uso de tablas en el documento de canal de impresión.
 
 Inicie sesión en AEM Forms y vaya a Adobe Experience Manager > Forms > Forms y Documentos.
 
