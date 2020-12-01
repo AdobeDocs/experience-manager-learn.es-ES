@@ -36,27 +36,27 @@ El sitio WKND rediseñó su página de inicio y quisiera redirigir sus visitante
 ## Pasos para crear una prueba A/B con el Compositor de experiencias visuales (VEC)
 
 1. Inicie sesión en Adobe Target y vaya a la ficha Actividades
-1. Haga clic en el botón **Crear Actividad** y, a continuación, elija actividad de prueba **** A/B
+1. Haga clic en el botón **Crear Actividad** y luego elija la actividad **Prueba A/B**
 
    ![Actividad A/B](assets/ab-target-activity.png)
 
-1. Seleccione la opción Compositor **de experiencias** visuales, proporcione la dirección URL de la Actividad y, a continuación, haga clic en **Siguiente**
+1. Seleccione la opción **Compositor de experiencias visuales**, proporcione la dirección URL de la Actividad y haga clic en **Siguiente**
 
    ![URL de actividad](assets/ab-test-url.png)
 
-1. El Compositor de experiencias visuales muestra dos fichas en el lado izquierdo después de crear una nueva actividad: *Experiencia A* y *experiencia B*. Seleccione una experiencia de la lista. Puede agregar nuevas experiencias a la lista mediante el botón **Añadir experiencia** .
+1. El Compositor de experiencias visuales muestra dos fichas en el lado izquierdo después de crear una nueva actividad: *Experiencia A* y *Experiencia B*. Seleccione una experiencia de la lista. Puede agregar nuevas experiencias a la lista mediante el botón **Añadir experiencia**.
 
    ![Opciones de experiencia](assets/experience-options.png)
 
-1. Opciones de vista disponibles para la experiencia A y, a continuación, seleccione la opción **Redirigir a URL** y proporcione una URL para la nueva página de inicio del sitio WKND.
+1. Opciones de vista disponibles para la Experiencia A y, a continuación, seleccione la opción **Redireccionar a URL** y proporcione una dirección URL para la nueva página de inicio del sitio WKND.
 
    ![Dirección URL de redireccionamiento](assets/redirect-url.png)
 
-1. Cambiar el nombre de *la experiencia A* a la *nueva Página de inicio* WKND y *la experiencia B* a la Página de inicio *WKND*
+1. Cambiar el nombre de *Experiencia A* a *Nueva Página de inicio WKND* y *Experiencia B* a *Página de inicio WKND*
 
    ![Aventuras](assets/new-experiences.png)
 
-1. Haga clic en **Siguiente** para pasar a Objetivo y mantener una asignación de tráfico manual de 50 a 50 entre las dos experiencias.
+1. Haga clic en **Siguiente** para pasar a Objetivo y mantener una asignación manual de tráfico de 50-50 entre las dos experiencias.
 
    ![Direccionamiento](assets/targeting.png)
 
@@ -69,7 +69,7 @@ El sitio WKND rediseñó su página de inicio y quisiera redirigir sus visitante
 
    ![Objetivos](assets/activate.png)
 
-1. Abra la página de su sitio (URL de Actividad del paso 3) en una nueva ficha y debería poder realizar la vista de cualquiera de las experiencias (Página de inicio WKND o Página de inicio WKND nueva) desde nuestra actividad de prueba A/B. `us/en.html` redirige a `us/home.html`.
+1. Abra la página de su sitio (URL de Actividad del paso 3) en una nueva ficha y debería poder realizar la vista de cualquiera de las experiencias (Página de inicio WKND o Página de inicio WKND nueva) desde nuestra actividad de prueba A/B. `us/en.html` redirige a  `us/home.html`.
 
    ![Objetivos](assets/redirect-test.png)
 
