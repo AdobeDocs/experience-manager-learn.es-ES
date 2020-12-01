@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ---
 
-# Cumplimentación previa de formularios adaptables mediante Perfil ACS {#prefilling-adaptive-form-using-acs-profile}
+# Cumplimentación previa del formulario adaptable mediante el Perfil ACS {#prefilling-adaptive-form-using-acs-profile}
 
 En esta parte, rellenaremos previamente el formulario adaptable con la información de perfil obtenida de ACS. AEM Forms tiene esta potente capacidad para rellenar previamente formularios adaptables.
 
