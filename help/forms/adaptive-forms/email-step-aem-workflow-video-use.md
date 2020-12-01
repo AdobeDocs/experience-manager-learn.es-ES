@@ -32,7 +32,7 @@ Como parte de este artículo, le explicaremos el siguiente caso de uso:
 1. Al enviar el formulario, se activa AEM flujo de trabajo
 1. El flujo de trabajo AEM utiliza el componente Enviar correo electrónico para enviar un correo electrónico con el documento de trabajo como datos adjuntos
 
-Antes de utilizar el paso Enviar correo electrónico, asegúrese de configurar el servicio de correo de Day CQ desde [configMgr](http://localhost:4502/system/console/configMgr). Proporcione los valores específicos del entorno
+Antes de usar el paso Enviar correo electrónico, asegúrese de configurar el servicio de correo de CQ de día desde [configMgr](http://localhost:4502/system/console/configMgr). Proporcione los valores específicos del entorno
 
 ![Configurar el servicio de correo CQ Day](assets/mailservice.png)
 
@@ -46,13 +46,13 @@ Para que la muestra se ejecute en el sistema, haga lo siguiente:
 
 1. [Implementar el paquete DevelopmentWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-1. [Descargar e instalar el](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)paquete setvalueEste paquete contiene el código para crear las propiedades de metadatos como parte del paso de proceso del flujo de trabajo.
+1. [Descargar e instalar el ](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)paquete setvalueEste paquete contiene el código para crear las propiedades de metadatos como parte del paso de proceso del flujo de trabajo.
 1. [Configurar el servicio de correo CQ Day](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html)
 1. [Importar e instalar los recursos asociados con este artículo mediante el administrador de paquetes en CRX](assets/emaildoraemformskt.zip)
-1. Inicie el formulario [](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)adaptable. Rellene los campos obligatorios y envíe.
+1. Inicie el [formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled). Rellene los campos obligatorios y envíe.
 1. Debe obtener un correo electrónico con DocumentOfRecord como archivo adjunto
 
-Explorar el modelo de [flujo de trabajo](http://localhost:4502/editor.html/conf/global/settings/workflow/models/emaildor.html)
+Explore el [modelo de flujo de trabajo](http://localhost:4502/editor.html/conf/global/settings/workflow/models/emaildor.html)
 
 Observe el paso del proceso del flujo de trabajo. El código personalizado asociado con el paso del proceso creará nombres de propiedades de metadatos y establecerá sus valores a partir de los datos enviados. Estos valores se utilizarán posteriormente en el componente de envío de correo electrónico.
 
@@ -60,5 +60,6 @@ Observe el paso del proceso del flujo de trabajo. El código personalizado asoci
 >
 >En AEM Forms 6.5 y versiones posteriores no necesita este código personalizado para crear propiedades de metadatos. Utilice la capacidad de variables en AEM flujo de trabajo
 
-Asegúrese de que la ficha Archivos adjuntos del componente Enviar correo electrónico esté configurada según la captura de pantalla debajo![de la ficha Enviar](assets/sendemailcomponentconfigure.jpg)archivo adjunto de correo electrónicoEl valor &quot;DOR.pdf&quot; debe coincidir con el valor especificado en el Documento de la ruta de registro especificado en las opciones de envío del formulario adaptable.
+Asegúrese de que la ficha Datos adjuntos del componente Enviar correo electrónico esté configurada según la captura de pantalla siguiente
+![Ficha Enviar archivo adjunto de correo electrónico](assets/sendemailcomponentconfigure.jpg)El valor &quot;DOR.pdf&quot; debe coincidir con el valor especificado en el Documento de ruta de registro especificado en las opciones de envío del formulario adaptable.
 
