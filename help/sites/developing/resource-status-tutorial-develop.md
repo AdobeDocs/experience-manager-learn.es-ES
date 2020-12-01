@@ -15,7 +15,7 @@ ht-degree: 2%
 ---
 
 
-# Desarrollo de estados de recursos {#developing-resource-statuses-in-aem-sites}
+# Desarrollar estados de recursos {#developing-resource-statuses-in-aem-sites}
 
 Las API de estado de recursos de Adobe Experience Manager son un marco conectable para exponer los mensajes de estado en AEM varias IU web de editor.
 
@@ -33,7 +33,7 @@ Algunos ejemplos de casos de uso para proveedores de estado de recursos personal
 
 ![Descripción general del estado de los recursos del editor de AEM](assets/sample-editor-resource-status-screenshot.png)
 
-## Marco del proveedor de estado de recursos {#resource-status-provider-framework}
+## Marco de proveedores de estado de recursos {#resource-status-provider-framework}
 
 Al desarrollar estados de recursos personalizados, el trabajo de desarrollo consiste en:
 
@@ -42,21 +42,21 @@ Al desarrollar estados de recursos personalizados, el trabajo de desarrollo cons
 
    ![arquitectura de estado de recursos](assets/sample-editor-resource-status-application-architecture.png)
 
-3. El recurso de estado proporcionado como parte de los editores Página, Fragmento de experiencia y Plantilla recibe un tipo a través de la propiedad &quot;[!DNL statusType]&quot; de recursos.
+3. El recurso de estado proporcionado como parte de los editores Página, Fragmento de experiencia y Plantilla recibe un tipo a través de la propiedad de recursos &quot;[!DNL statusType]&quot;.
 
-   * Page editor: `editor`
-   * Experience Fragment editor: `editor`
+   * Editor de páginas: `editor`
+   * Editor de fragmentos de experiencia: `editor`
    * Editor de plantillas: `template-editor`
 
-4. El recurso de estado `statusType` coincide con la propiedad configurada `CompositeStatusType` OSGi registrada `name` .
+4. El `statusType` del recurso de estado coincide con la propiedad `CompositeStatusType` OSGi configurada `name` registrada.
 
-   Para todas las coincidencias, los `CompositeStatusType's` tipos se recopilan y se utilizan para recopilar las `ResourceStatusProvider` implementaciones que tienen este tipo, mediante `ResourceStatusProvider.getType()`.
+   Para todas las coincidencias, se recopilan los tipos `CompositeStatusType's` y se utilizan para recopilar las implementaciones `ResourceStatusProvider` que tienen este tipo, mediante `ResourceStatusProvider.getType()`.
 
-5. La coincidencia `ResourceStatusProvider` se pasa al editor `resource` en el editor y determina si el estado `resource` tiene que mostrarse. Si se necesita el estado, esta implementación es responsable de generar 0 o varios para `ResourceStatuses` que regresen, cada uno de los cuales representa un estado para mostrar.
+5. La coincidencia `ResourceStatusProvider` se pasa a `resource` en el editor y determina si `resource` tiene que mostrarse el estado. Si se necesita el estado, esta implementación es responsable de generar 0 o muchos `ResourceStatuses` para que regresen, cada uno de los cuales representa un estado para mostrar.
 
-   Normalmente, un `ResourceStatusProvider` devuelve 0 o 1 `ResourceStatus` por `resource`.
+   Generalmente, un `ResourceStatusProvider` devuelve 0 o 1 `ResourceStatus` por `resource`.
 
-6. ResourceStatus es una interfaz que el cliente puede implementar, o la ayuda `com.day.cq.wcm.commons.status.EditorResourceStatus.Builder` puede utilizarse para construir un estado. Un estado consta de:
+6. ResourceStatus es una interfaz que el cliente puede implementar o la `com.day.cq.wcm.commons.status.EditorResourceStatus.Builder` útil se puede utilizar para construir un estado. Un estado consta de:
 
    * Título
    * Mensaje
@@ -66,7 +66,7 @@ Al desarrollar estados de recursos personalizados, el trabajo de desarrollo cons
    * Acciones
    * Datos
 
-7. De forma opcional, si `Actions` se proporcionan para el `ResourceStatus` objeto, se requiere que los clientes de soporte técnico enlacen la funcionalidad a los vínculos de acción en la barra de estado.
+7. Opcionalmente, si se proporciona `Actions` para el objeto `ResourceStatus`, se requiere que los clientes de soporte técnico enlacen la funcionalidad a los vínculos de acción en la barra de estado.
 
    ```js
    (function(jQuery, document) {
