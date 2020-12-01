@@ -30,7 +30,7 @@ Para probar esta capacidad, puede probar este [vínculo](https://forms.enablemen
 
 Para llevar a cabo este caso de uso debemos hacer lo siguiente.
 
-* Añada el certificado de Extensiones de Reader al usuario &quot;fd-service&quot;. Los pasos para agregar credenciales de Extensiones de Reader se enumeran [aquí](https://helpx.adobe.com/experience-manager/6-3/forms/using/configuring-document-services.html)
+* Añada el certificado de Extensiones de Reader al usuario &quot;fd-service&quot;. Los pasos para agregar las credenciales de Extensiones de Reader se enumeran [aquí](https://helpx.adobe.com/experience-manager/6-3/forms/using/configuring-document-services.html)
 
 * Cree un servicio OSGi personalizado que procese y aplique derechos de uso. El código para realizar esto se enumera a continuación
 
@@ -203,7 +203,7 @@ Para probar esto en el servidor local, siga los pasos siguientes
 1. [Descargar e importar los recursos relacionados con este artículo en AEM mediante el administrador de paquetes](assets/renderandextendxdp.zip)
    * Este paquete tiene un portal de muestra y un archivo xdp
 1. Añadir el certificado de extensiones de Reader al usuario &quot;fd-service&quot;
-1. Apunte el navegador a la página web [del portal](http://localhost:4502/content/AemForms/ReaderExtensionsXdp.html)
+1. Elija el explorador para [página Web de portal](http://localhost:4502/content/AemForms/ReaderExtensionsXdp.html)
 1. Haga clic en el icono pdf para procesar el xdp y obtener el PDF que es Reader Extended
 
 
