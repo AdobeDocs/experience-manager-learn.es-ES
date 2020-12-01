@@ -46,7 +46,7 @@ tagManager.setTags(metadata, tagArray, true);
 Para que este ejemplo funcione en su sistema, siga los pasos que se indican a continuación:
 * [Implementar el paquete DevelopmentWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-* [Descargue e implemente el paquete](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)setvalue. Es el paquete OSGI personalizado que establece las etiquetas de los datos del formulario enviado.
+* [Descargue e implemente el paquete](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar) setvalue. Es el paquete OSGI personalizado que establece las etiquetas de los datos del formulario enviado.
 
 * [Descargar el formulario adaptable de ejemplo](assets/tag-and-store-in-dam-assets.zip)
 
@@ -54,8 +54,8 @@ Para que este ejemplo funcione en su sistema, siga los pasos que se indican a co
 
 * Haga clic en Crear | Archivo Cargar y cargar el archivo sampleadaptiveform.zip
 
-* [Importación de los recursos](assets/tag-and-store-in-dam-assets.zip) del artículo mediante AEM administrador de paquetes
-* Abra el formulario de [ejemplo en modo](http://localhost:4502/content/dam/formsanddocuments/summit/peakform/jcr:content?wcmmode=disabled)de previsualización. Complete la sección Personas y envíe el formulario.
+* [Importación del ](assets/tag-and-store-in-dam-assets.zip) recurso del artículo mediante AEM administrador de paquetes
+* Abra el formulario de ejemplo [en modo de previsualización](http://localhost:4502/content/dam/formsanddocuments/summit/peakform/jcr:content?wcmmode=disabled). Complete la sección Personas y envíe el formulario.
 * [Vaya a la carpeta Pico de DAM](http://localhost:4502/assets.html/content/dam/Peak). Debería ver el DoR en la carpeta Peak. Compruebe las propiedades del documento. Debe etiquetarse adecuadamente.
 Felicitaciones!! Ha instalado correctamente el ejemplo en el sistema
 
