@@ -30,7 +30,7 @@ Añada ContextHub en sus páginas para habilitar las funciones de ContextHub y v
 
 ## Añadir ContextHub en un componente de página {#adding-contexthub-to-a-page-component}
 
-Para habilitar las funciones de ContextHub y vincular a las bibliotecas JavaScript de ContextHub, incluya el `contexthub` componente en la `<head>` sección de la página web. El código HTML del componente de página se parece al siguiente ejemplo:
+Para habilitar las funciones de ContextHub y vincular a las bibliotecas JavaScript de ContextHub, incluya el componente `contexthub` en la sección `<head>` de la página web. El código HTML del componente de página se parece al siguiente ejemplo:
 
 ```java
 <!--/* Include Context Hub */-->
@@ -40,13 +40,13 @@ Para habilitar las funciones de ContextHub y vincular a las bibliotecas JavaScri
 
 ## Configuración del sitio y segmentos de ContextHub {#site-configuration-and-contexthub-segments}
 
-ContextHub incluye un motor de segmentación que administra segmentos y determina qué segmentos se resuelven para el contexto actual. Se definen varios segmentos. Puede utilizar la API de JavaScript para [determinar los segmentos](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ch-adding.html#DeterminingResolvedContextHubSegments)resueltos. Habilite los segmentos de ContextHub para su sitio en [[!UICONTROL Navegador]](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html)de configuración.
+ContextHub incluye un motor de segmentación que administra segmentos y determina qué segmentos se resuelven para el contexto actual. Se definen varios segmentos. Puede utilizar la API de JavaScript para [determinar los segmentos resueltos](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ch-adding.html#DeterminingResolvedContextHubSegments). Habilite los segmentos de ContextHub para su sitio en [[!UICONTROL Navegador de configuración]](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html).
 
 ## Crear segmentos {#create-segments}
 
 Cree segmentos de AEM que actúen como reglas para los teasers. Es decir, definen el momento en que el contenido de un teaser aparece en una página web. El contenido puede personalizarse específicamente para satisfacer las necesidades y los intereses del visitante, según los segmentos con los que coincidan.
 
-## Asignación de la configuración de la nube, la ruta de segmentos y la ruta de ContextHub a su sitio {#assigning-cloud-configuration-segment-path-and-contexthub-path-to-your-site}
+## Asignación de la configuración de Cloud, la ruta de segmentos y la ruta de ContextHub a su sitio {#assigning-cloud-configuration-segment-path-and-contexthub-path-to-your-site}
 
 Asignación de la ruta de configuración de la nube, la ruta de segmentación y la ruta de ContextHub al nodo raíz del sitio para que pueda crear una experiencia personalizada para su audiencia. Con ContextHub, puede manipular los datos de contexto y probar los segmentos resueltos.
 
