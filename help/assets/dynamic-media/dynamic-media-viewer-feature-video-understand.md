@@ -22,7 +22,7 @@ ht-degree: 0%
 ---
 
 
-# Información sobre el visor de recursos con AEM Dynamic Media{#understanding-the-asset-viewer-with-aem-dynamic-media}
+# Información sobre Asset Viewer con AEM Dynamic Media{#understanding-the-asset-viewer-with-aem-dynamic-media}
 
 AEM mejoras del visor de medios dinámicos permiten a AEM autores definir y personalizar los recursos de experiencia que se presentarán a los usuarios del sitio web.
 
