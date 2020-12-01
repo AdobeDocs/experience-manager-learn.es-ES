@@ -29,11 +29,11 @@ En este vídeo se analizan los siguientes aspectos de la administración de fluj
 + Navegación sencilla a la línea de tiempo del flujo de trabajo desde la vista de lista
 + Copiar y pegar un flujo de trabajo de OOTB existente para personalizar o anular la funcionalidad predeterminada
 + Realice una publicación rápida para [!DNL Workflow Models] y [!DNL Launchers]
-+ Administrar publicación para [!DNL Workflow Models] y [!DNL Launchers].
++ Administre la publicación para [!DNL Workflow Models] y [!DNL Launchers].
 + Notificar a los usuarios con una información de objeto de advertencia cuando intenten editar un modelo de flujo de trabajo o un iniciador OOTB.
 + Capacidad para recuperar los cambios realizados en un modelo de flujo de trabajo de OOTB o en los lanzadores.
 
-Este vídeo se utiliza [!DNL Workflow models] para mostrar este conjunto de funciones, aunque también se pueden aplicar a [!DNL AEM Launchers].
+Este vídeo utiliza [!DNL Workflow models] para demostrar este conjunto de capacidades, pero también se aplican a [!DNL AEM Launchers].
 
 
 >[!NOTE]
