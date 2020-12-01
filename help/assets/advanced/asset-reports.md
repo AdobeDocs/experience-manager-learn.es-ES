@@ -27,7 +27,7 @@ AEM Assets proporciona un entorno de sistema de informes de nivel empresarial qu
 
 En el vídeo se utilizan las siguientes fórmulas para generar el gráfico Recursos por tamaño en Microsoft Excel.
 
-### Normalización del tamaño del recurso a bytes {#asset-size-normalization-to-bytes}
+### Normalización del tamaño del recurso en bytes {#asset-size-normalization-to-bytes}
 
 ```
 =IF(RIGHT(D2,2)="KB",
@@ -54,7 +54,7 @@ En el vídeo se utilizan las siguientes fórmulas para generar el gráfico Recur
 =COUNTIFS(E2:E1000,">= 200000", E2:E1000,"<= 500000")
 ```
 
-#### Buenos de más de 500 KB {#greater-than-kb}
+#### Buenos más de 500 KB {#greater-than-kb}
 
 ```
 =COUNTIFS(E2:E1000,"> 500000")
@@ -62,4 +62,4 @@ En el vídeo se utilizan las siguientes fórmulas para generar el gráfico Recur
 
 ## Recursos adicionales{#additional-resources}
 
-Descargar [todos los recursos del archivo de Excel con gráfico](./assets/asset-reports/all-assets.xlsx)
+Descargar [Todos los recursos del archivo de Excel con Chart](./assets/asset-reports/all-assets.xlsx)
