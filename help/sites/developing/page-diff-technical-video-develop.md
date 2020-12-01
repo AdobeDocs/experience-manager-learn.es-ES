@@ -16,7 +16,7 @@ ht-degree: 2%
 ---
 
 
-# Desarrollo para la diferencia de página {#developing-for-page-difference}
+# Desarrollo de la diferencia de página {#developing-for-page-difference}
 
 Este vídeo muestra cómo proporcionar estilos personalizados para la funcionalidad Diferencia de páginas de AEM Sites.
 
@@ -34,9 +34,9 @@ Debido a esta carga directa de CSS en lugar de utilizar una categoría de biblio
 
 Esto tiene la ventaja de permitir que estas anulaciones de estilo personalizado sean específicas del inquilino.
 
-### Preparación de la clientlib de creación {#prepare-the-authoring-clientlib}
+### Preparar la clientlib {#prepare-the-authoring-clientlib} de creación
 
-Asegúrese de que existe una `authoring` clientlib para su proyecto en `/apps/my-project/clientlib/authoring.`
+Asegúrese de que exista una clientlib `authoring` para su proyecto en `/apps/my-project/clientlib/authoring.`
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -47,7 +47,7 @@ Asegúrese de que existe una `authoring` clientlib para su proyecto en `/apps/my
 
 ### Proporcione la CSS personalizada {#provide-the-custom-css}
 
-Añada a la clientlib `authoring` del proyecto un `css.txt` que señale al archivo menos que proporcionará los estilos de anulación. [Menos](https://lesscss.org/) es preferible debido a sus muchas características prácticas, incluido el ajuste de clase, que se aprovecha en este ejemplo.
+Añada a la clientlib `authoring` del proyecto un `css.txt` que apunta al archivo menos que proporcionará los estilos de reemplazo. [Las ](https://lesscss.org/) Lessis son preferibles debido a sus muchas características prácticas, incluido el ajuste de clases, que se aprovecha en este ejemplo.
 
 ```shell
 base=./css
@@ -55,7 +55,7 @@ base=./css
 htmldiff.less
 ```
 
-Cree el `less` archivo que contiene las anulaciones de estilo en `/apps/my-project/clientlibs/authoring/css/htmldiff.less`y proporcione los estilos de anulación según sea necesario.
+Cree el archivo `less` que contiene las anulaciones de estilo en `/apps/my-project/clientlibs/authoring/css/htmldiff.less` y proporcione los estilos de anulación según sea necesario.
 
 ```css
 /* Wrap with body to gives these rules more specificity than the OOTB */
@@ -101,11 +101,11 @@ body {
 }
 ```
 
-### Incluir el CSS clientlib de creación mediante el componente de página {#include-the-authoring-clientlib-css-via-the-page-component}
+### Incluya el CSS clientlib de creación mediante el componente de página {#include-the-authoring-clientlib-css-via-the-page-component}
 
-Incluya la categoría clientlibs de creación en la página base del proyecto `/apps/my-project/components/structure/page/customheaderlibs.html` directamente antes de la `</head>` etiqueta para garantizar que se carguen los estilos.
+Incluya la categoría clientlibs de creación en la etiqueta `/apps/my-project/components/structure/page/customheaderlibs.html` de la página base del proyecto directamente antes de la etiqueta `</head>` para asegurarse de que se cargan los estilos.
 
-Estos estilos deben limitarse a los modos WCM de [!UICONTROL edición] y [!UICONTROL previsualización] .
+Estos estilos deben limitarse a los modos [!UICONTROL Editar] y [!UICONTROL previsualización] WCM.
 
 ```xml
 <head>
