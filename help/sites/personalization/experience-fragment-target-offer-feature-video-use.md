@@ -21,7 +21,7 @@ ht-degree: 11%
 ---
 
 
-# Uso de Ofertas de fragmentos de experiencia dentro de Adobe Target{#using-experience-fragment-offers-within-adobe-target}
+# Uso de Ofertas de fragmentos de experiencia en Adobe Target{#using-experience-fragment-offers-within-adobe-target}
 
 Adobe Experience Manager 6.4 reinventa el flujo de trabajo de personalización entre AEM y Destinatario. Las experiencias creadas en AEM ahora se pueden entregar directamente a Adobe Target como Ofertas HTML. Permite a los especialistas en marketing probar y personalizar contenido sin problemas en diferentes canales.
 
