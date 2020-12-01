@@ -38,8 +38,8 @@ Un ajuste preestablecido de imagen tiene un signo de dólar ($) en ambos lados d
 >
 >Cree un ajuste preestablecido de imagen por tamaño de imagen único en el sitio. Por ejemplo, si necesita una imagen de 350 X 350 para la página de detalles del producto, una imagen de 120 X 120 para las páginas de búsqueda y búsqueda y una imagen de 90 X 90 para un artículo de venta cruzada/destacado, necesitará tres ajustes preestablecidos de imagen, ya sea que tenga 500 imágenes o 500.000.
 
-- Obtenga más información sobre los ajustes preestablecidos [de imagen](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sizing/setting-image-presets.html).
-- Obtenga información sobre cómo [crear un ajuste preestablecido](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sizing/setting-image-presets.html#creating-an-image-preset)de imagen.
+- Obtenga más información sobre los [ajustes preestablecidos de imagen](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sizing/setting-image-presets.html).
+- Obtenga información sobre cómo [crear un ajuste preestablecido de imagen](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sizing/setting-image-presets.html#creating-an-image-preset).
 
 ## Ajustes preestablecidos de imagen y enfoque
 
@@ -61,12 +61,12 @@ El siguiente gráfico muestra tres niveles de enfoque. De derecha a izquierda no
 
 Dynamic Media Classic permite tres tipos de enfoque: Enfoque simple, Modo de remuestreo y Máscara de enfoque.
 
-Obtenga más información sobre las opciones [de enfoque de](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/sharpening-image.html#sharpening_an_image)Dynamic Media Classic.
+Obtenga más información sobre [Opciones de enfoque de Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/sharpening-image.html#sharpening_an_image).
 
 ## Recursos adicionales
 
-[Guía](https://www.adobe.com/content/dam/www/us/en/experience-manager/pdfs/dynamic-media-image-preset-guide.pdf)de ajustes preestablecidos de imagen. Configuración que se utilizará para optimizar la calidad de imagen y la velocidad de carga.
+[Guía](https://www.adobe.com/content/dam/www/us/en/experience-manager/pdfs/dynamic-media-image-preset-guide.pdf) de ajustes preestablecidos de imagen. Configuración que se utilizará para optimizar la calidad de imagen y la velocidad de carga.
 
 [La Imagen Es Todo Parte 2: Nunca es solo un desenfoque. Calidad frente a velocidad](https://theblog.adobe.com/image-is-everything-part-2-its-never-just-a-blur-quality-versus-speed/). Publicación de blog sobre el uso de ajustes preestablecidos de imagen para la distribución de imágenes de alta calidad y de carga rápida.
 
-[La Imagen Es Todo Seminario Web](https://dynamicmediaseries2019.enterprise.adobeevents.com/). Enlaces a grabaciones de los tres seminarios web de la serie _Image Is Everything_ . [En el seminario web 2](https://seminars.adobeconnect.com/p6lqaotpjnd3) se analizan los ajustes preestablecidos de imagen.
+[La Imagen Es Todo Seminario Web](https://dynamicmediaseries2019.enterprise.adobeevents.com/). Vínculos a grabaciones de los tres seminarios web de la serie _Image Is Everything_. [En el seminario web 2 se ](https://seminars.adobeconnect.com/p6lqaotpjnd3) analizan los ajustes preestablecidos de imagen.
