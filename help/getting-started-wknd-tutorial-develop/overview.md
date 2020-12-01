@@ -1,6 +1,6 @@
 ---
 title: 'Introducción a AEM Sites: Tutorial de WKND'
-description: Tutorial de introducción a AEM Sites - WKND. El tutorial de WKND es un tutorial de varias partes diseñado para desarrolladores nuevos en Adobe Experience Manager. El tutorial avanza a través de la implementación de un sitio AEM para una marca ficticia de estilo de vida, la WKND. El tutorial trata temas fundamentales como la configuración de proyectos, los arquetipos creados, los componentes principales, las plantillas editables, las bibliotecas de clientes y el desarrollo de componentes.
+description: 'Introducción a AEM Sites: Tutorial de WKND. El tutorial de WKND es un tutorial de varias partes diseñado para desarrolladores nuevos en Adobe Experience Manager. El tutorial avanza a través de la implementación de un sitio AEM para una marca ficticia de estilo de vida, la WKND. El tutorial trata temas fundamentales como la configuración de proyectos, los arquetipos creados, los componentes principales, las plantillas editables, las bibliotecas de clientes y el desarrollo de componentes.'
 sub-product: sitios
 topics: development
 version: cloud-service
@@ -15,12 +15,12 @@ translation-type: tm+mt
 source-git-commit: 69c1767098cc9da8ec0ae2bd83d25417d330f393
 workflow-type: tm+mt
 source-wordcount: '970'
-ht-degree: 12%
+ht-degree: 14%
 
 ---
 
 
-# Getting Started with AEM Sites - WKND Tutorial {#introduction}
+# Introducción a AEM Sites: Tutorial de WKND {#introduction}
 
 Bienvenido a un tutorial de varias partes diseñado para desarrolladores nuevos en Adobe Experience Manager (AEM). Este tutorial explora la implementación de un sitio AEM para un estilo de vida ficticio de la marca WKND. El tutorial trata temas fundamentales como la configuración del proyecto, los componentes principales, las plantillas editables, las bibliotecas del lado del cliente y el desarrollo de componentes con Adobe Experience Manager Sites.
 
@@ -47,14 +47,14 @@ WKND es una revista y blog ficticio en línea que se centra en la vida nocturna,
 
 ### Adobe XD UI Kit
 
-Para acercar este tutorial a un escenario real, los talentosos diseñadores UX de un Adobe crearon las maquetas para el sitio con [Adobe XD](https://www.adobe.com/products/xd.html). En el curso del tutorial se implementan varias partes de los diseños en un sitio de AEM totalmente creativo. Un agradecimiento especial a **Lorenzo Buosi** y **Kilian Amendola** que han creado el bello diseño para el sitio WKND.
+Para hacer que este tutorial se acerque más a un escenario real de los talentosos diseñadores UX de un Adobe han creado las maquetas para el sitio con [Adobe XD](https://www.adobe.com/products/xd.html). En el curso del tutorial se implementan varias partes de los diseños en un sitio de AEM totalmente creativo. Agradecimiento especial a **Lorenzo Buosi** y **Kilian Amendola** que crearon el hermoso diseño para el sitio WKND.
 
 Descargue los kits de IU de XD:
 
 * [Kit de interfaz de usuario de componentes principales de AEM](assets/overview/AEM-CoreComponents-UI-Kit.xd)
 * [Kit de IU WKND](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND.xd)
 
-El nombre WKND es adecuado porque esperamos que un desarrollador realice la mejor parte de un ***fin de semana*** para completar el tutorial.
+El nombre WKND es adecuado porque esperamos que un desarrollador tome la mejor parte de un ***fin de semana*** para completar el tutorial.
 
 ### Github {#github}
 
@@ -66,7 +66,7 @@ Además, cada parte del tutorial tiene su propia rama en GitHub. Un usuario pued
 
 >[!NOTE]
 >
-> Si estaba trabajando con la versión anterior de este tutorial, aún puede encontrar los paquetes [de](https://github.com/adobe/aem-guides-wknd/releases/tag/archetype-18.1) soluciones y el [código](https://github.com/adobe/aem-guides-wknd/tree/archetype-18.1) en GitHub.
+> Si estaba trabajando con la versión anterior de este tutorial, aún puede encontrar los [paquetes de soluciones](https://github.com/adobe/aem-guides-wknd/releases/tag/archetype-18.1) y [código](https://github.com/adobe/aem-guides-wknd/tree/archetype-18.1) en GitHub.
 
 ## Entorno de desarrollo local {#local-dev-environment}
 
@@ -74,7 +74,7 @@ Se necesita un entorno de desarrollo local para completar este tutorial. Las cap
 
 **¿Es novato en el uso de AEM as a Cloud Service?** Consulte la [siguiente guía para configurar un entorno de desarrollo local con el SDK de AEM as a Cloud Service](https://docs.adobe.com/content/help/es-ES/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
 
-**¿Es nuevo en AEM 6.5?** Consulte la [siguiente guía para configurar un entorno](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)de desarrollo local.
+**¿Es nuevo en AEM 6.5?** Consulte la  [siguiente guía para configurar un entorno](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html) de desarrollo local.
 
 ### Software necesario
 
@@ -91,15 +91,15 @@ Lo siguiente debe instalarse de manera local:
 
 Este tutorial utiliza [Eclipse](https://www.eclipse.org/) con el [AEM Developer Tool Plugin](https://eclipse.adobe.com/aem/dev-tools/) como IDE, pero se puede utilizar cualquier IDE que admita proyectos Java y Maven. La dependencia de las características específicas de IDE en este tutorial es mínima.
 
-Para ver los pasos detallados para usar Eclipse u otros IDE como [Visual Studio Code](https://code.visualstudio.com/) o [IntelliJ](https://www.jetbrains.com/idea/), [consulte la siguiente guía](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
+Para ver los pasos detallados para usar Eclipse u otros IDE como [Código de Visual Studio](https://code.visualstudio.com/) o [IntelliJ](https://www.jetbrains.com/idea/), [consulte la siguiente guía](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
 
 ## Sitio de referencia {#reference-site}
 
 Una versión terminada del sitio WKND también está disponible como referencia: [https://wknd.site/](https://wknd.site/)
 
-El tutorial cubre las principales habilidades de desarrollo necesarias para un desarrollador AEM, pero *no* construirá todo el sitio de extremo a extremo. El sitio de referencia terminado es otro recurso bueno para explorar y ver más AEM de las funciones integradas.
+El tutorial cubre las principales habilidades de desarrollo necesarias para un desarrollador AEM, pero *no* generará todo el sitio de extremo a extremo. El sitio de referencia terminado es otro recurso bueno para explorar y ver más AEM de las funciones integradas.
 
-Para probar el código más reciente antes de acceder al tutorial, descargue e instale la **[última versión de GitHub](https://github.com/adobe/aem-guides-wknd/releases/latest)**.
+Para probar el código más reciente antes de pasar al tutorial, descargue e instale la **[última versión de GitHub](https://github.com/adobe/aem-guides-wknd/releases/latest)**.
 
 ### Equipado con Adobe Stock
 
@@ -109,4 +109,4 @@ Con Adobe Stock, usted tiene acceso a más de 140 millones de imágenes de alta 
 
 ## Próximos pasos {#next-steps}
 
-¡¿Qué estás esperando?! Inicio el tutorial navegando hasta el capítulo Ajustes [del](project-setup.md) proyecto y aprenda a generar un nuevo proyecto de Adobe Experience Manager con el arquetipo del proyecto AEM.
+¡¿Qué estás esperando?! Inicio el tutorial navegando al capítulo [Configuración del proyecto](project-setup.md) y aprenda a generar un nuevo proyecto de Adobe Experience Manager usando el arquetipo del proyecto AEM.
