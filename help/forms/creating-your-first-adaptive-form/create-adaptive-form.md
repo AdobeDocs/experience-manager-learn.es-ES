@@ -21,7 +21,7 @@ ht-degree: 0%
 ---
 
 
-# Creación de un formulario adaptable {#creating-adaptive-form}
+# Creación de formulario adaptable {#creating-adaptive-form}
 
 En la Parte 1 crearemos un formulario adaptable basado en la plantilla creada en la lección anterior y configuraremos la barra de herramientas con los botones correspondientes.
 
