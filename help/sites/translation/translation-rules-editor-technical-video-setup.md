@@ -22,7 +22,7 @@ La interfaz de usuario de configuración de traducción permite al usuario admin
 
 >[!NOTE]
 >
-> El siguiente video fue grabado en el AEM 6.3. AEM 6.4+ presenta una nueva estructura de repositorio para almacenar el archivo XML de reglas de traducción. Al utilizar la interfaz de usuario de configuración de traducción en AEM 6.4 o posterior, las reglas se guardan en la ubicación `/conf/global/settings/translation/rules/translation_rules.xml`. Consulte [Identificación del contenido para traducir](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-rules.html) para obtener más información.
+> El siguiente video fue grabado en el AEM 6.3. AEM 6.4+ presenta una nueva estructura de repositorio para almacenar el archivo XML de reglas de traducción. Al utilizar la interfaz de usuario de configuración de traducción en AEM 6.4 o posterior, las reglas se guardan en la ubicación `/conf/global/settings/translation/rules/translation_rules.xml`. Consulte [Identificación del contenido para traducir](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-rules.html) para obtener más detalles.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18135/?quality=9&learn=on)
 
@@ -36,9 +36,9 @@ El editor de reglas de traducción que actualizará el archivo xml de traducció
 
 Acceda a la interfaz de usuario de configuración de traducción:
 
-* **[!UICONTROL Menú]Inicio de AEM >[!UICONTROL Herramientas]>[!UICONTROL General]> Configuración[[!UICONTROL de traducción]](http://localhost:4502/libs/cq/translation/translationrules/contexts.html)**
+* **[!UICONTROL Menú]  Inicio AEM>  [!UICONTROL Herramientas] >  [!UICONTROL General] > Configuración  [[!UICONTROL de traducción]](http://localhost:4502/libs/cq/translation/translationrules/contexts.html)**
 
-## Antes del AEM 6.3 {#prior-to-aem}
+## Antes de AEM 6.3 {#prior-to-aem}
 
 En versiones anteriores AEM las reglas de traducción se actualizaban manualmente editando un archivo XML ubicado en el flujo de trabajo de traducción: `/etc/workflow/models/translation/translation_rules.xml`.
 
