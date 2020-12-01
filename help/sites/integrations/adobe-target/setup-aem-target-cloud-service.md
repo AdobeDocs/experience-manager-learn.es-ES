@@ -18,15 +18,15 @@ ht-degree: 0%
 ---
 
 
-# Crear cuenta de Adobe Target Cloud Service {#adobe-target-cloud-service}
+# Crear cuenta de Cloud Service de Adobe Target {#adobe-target-cloud-service}
 
 El siguiente vídeo explica cómo conectar AEM como Cloud Service con Adobe Target.
 
-Esta integración permite que el servicio AEM Author se comunique directamente con Adobe Target y envíe fragmentos de experiencia de AEM a Destinatario como ofertas.  Esta integración *no agrega* JavaScript de Adobe Target (AT.js) a las páginas web de AEM Sites, para que se integren [AEM con Launch mediante la Extensión de grupo de destinatarios](../experience-platform-launch/connect-aem-launch-adobe-io.md).
+Esta integración permite que el servicio AEM Author se comunique directamente con Adobe Target y envíe fragmentos de experiencia de AEM a Destinatario como ofertas.  Esta integración *no* agrega JavaScript de Adobe Target (AT.js) a las páginas Web de AEM Sites, para que integren [AEM con Launch mediante la Extensión de grupo de destinatarios](../experience-platform-launch/connect-aem-launch-adobe-io.md).
 
 >[!VIDEO](https://video.tv.adobe.com/v/41244?quality=12&learn=on)
 
 >[!CAUTION]
 >
->Hay un problema conocido con la configuración de Cloud Services de Adobe Target que se muestra en el vídeo. Hasta que se resuelva este problema, siga los mismos pasos en el vídeo, pero utilice la configuración [de Cloud Services de Adobe Target](https://docs.adobe.com/content/help/en/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-aem-cloud-services.html)heredada.
+>Hay un problema conocido con la configuración de Cloud Services de Adobe Target que se muestra en el vídeo. Hasta que se resuelva este problema, siga los mismos pasos en el vídeo, pero utilice la [configuración heredada de Cloud Services de Adobe Target](https://docs.adobe.com/content/help/en/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-aem-cloud-services.html).
 
