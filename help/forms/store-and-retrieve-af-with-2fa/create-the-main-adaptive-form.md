@@ -24,14 +24,14 @@ El formulario **StoreAFWithAttachments** es el formulario adaptable principal. E
 
 ![formulario de solicitud principal](assets/6552.JPG)
 
-Este formulario está asociado con las bibliotecas de **cliente bootboxjs540,storeAFWithAttachments** creadas anteriormente en el curso y un flujo de trabajo de AEM que se activa al enviar el formulario.
+Este formulario está asociado a bibliotecas de cliente **bootboxjs540,storeAFWithAttachments** creadas anteriormente en el curso y a un flujo de trabajo de AEM que se activa al enviar el formulario.
 
 
-* Los formularios de ejemplo se basan en una plantilla [de formulario adaptable](assets/custom-template-with-page-component.zip) personalizada que debe importarse en AEM para que los formularios de ejemplo se procesen correctamente.
+* Los formularios de ejemplo se basan en [plantilla de formulario adaptable personalizada](assets/custom-template-with-page-component.zip) que debe importarse en AEM para que los formularios de ejemplo se representen correctamente.
 
-* El formulario [](assets/store-af-with-attachments-form.zip) StoreAfWithAttachments completado se puede descargar e importar en la instancia de AEM.
+* El formulario [StoreAfWithAttachments completado](assets/store-af-with-attachments-form.zip) se puede descargar e importar en la instancia de AEM.
 
-* El flujo de trabajo de [AEM asociado con este formulario](assets/workflow-model-store-af-with-attachments.zip) debe importarse en la instancia de AEM para que el formulario funcione.
+* El flujo de trabajo [AEM asociado con este formulario](assets/workflow-model-store-af-with-attachments.zip) debe importarse en la instancia de AEM para que el formulario funcione.
 
 
 
