@@ -16,13 +16,13 @@ ht-degree: 7%
 ---
 
 
-# Uso compartido en medios sociales {#using-social-media-sharing-in-aem-sites}
+# Uso compartido de medios sociales {#using-social-media-sharing-in-aem-sites}
 
 Explore la configuración y el uso del componente Compartir en redes sociales.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18897/?quality=9&learn=on)
 
-Este vídeo explora las siguientes instalaciones del componente Compartir en redes sociales (parte de [AEM componentes](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html)principales) mediante el sitio web de muestra de [We.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail#weretail) .
+Este vídeo explora las siguientes funciones del componente Compartir en redes sociales (parte de [Componentes principales de AEM](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html)) mediante el sitio web de muestra [We.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail#weretail).
 
 * 0:00 - Añadir y configurar el componente Compartir en medios sociales
 * 1:00 - Uso compartido en Facebook
@@ -35,9 +35,9 @@ Este vídeo explora las siguientes instalaciones del componente Compartir en red
 
 [http://localhost:4502/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl](http://localhost:4502/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl)
 
-[AEM externalizador](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html) debe configurarse tanto en AEM Author como en AEM Publish para asignar el modo de ejecución de publicación al dominio público utilizado para acceder a AEM Publish.
+[AEM ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html) externalizador debe configurarse tanto en AEM Author como en AEM Publish para asignar el modo de ejecución de publicación al dominio público utilizado para acceder a AEM Publish.
 
-En este vídeo utilizamos `/etc/hosts` para parodiar *www.example.com* para resolver en localhost y utilizar una configuración [de Dispatcher de AEM](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/getting-started/dispatcher-install.html) básica para permitir que www.example.com se enfrente a AEM Publish.
+En este vídeo, utilizamos `/etc/hosts` para parodiar *www.example.com* para resolver en localhost y utilizar una [configuración básica de AEM Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/getting-started/dispatcher-install.html) para permitir que www.example.com envíe AEM Publish.
 
 ## Materiales de apoyo {#supporting-materials}
 
