@@ -28,5 +28,5 @@ ht-degree: 46%
 + [Personalización de las experiencias de página Web completa](./personalization-use-case-2.md)
 + Implementación {#aem-target-implementation}
    + [Introducción](./implementation.md)
-   + [AEM y Adobe Target mediante Launch y Adobe de E/S](./using-launch-adobe-io.md)
+   + [AEM y Adobe Target mediante Launch y Adobe I/O](./using-launch-adobe-io.md)
    + [AEM y Adobe Target con Cloud Services heredados](./using-aem-cloud-services.md)
