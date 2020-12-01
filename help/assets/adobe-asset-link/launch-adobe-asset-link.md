@@ -18,7 +18,7 @@ ht-degree: 24%
 ---
 
 
-# Acceso al vínculo de recursos de Adobe {#access-adobe-asset-link}
+# Vínculo de recursos de Adobe de acceso {#access-adobe-asset-link}
 
 Adobe Asset Link consolida la colaboración entre los expertos creativos y los especialistas en mercadotecnia en el proceso de creación de contenido. Puede acceder al contenido almacenado en Adobe Experience Manager Assets (AEM Assets) sin salir de las aplicaciones de escritorio de Creative Cloud con las que está más familiarizado. Obtenga información sobre cómo iniciar el panel Vínculo de recursos de Adobe desde la aplicación de escritorio Creative Cloud.
 
