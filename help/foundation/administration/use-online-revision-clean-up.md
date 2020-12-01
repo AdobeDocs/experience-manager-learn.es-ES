@@ -26,5 +26,5 @@ Breve introducción a la Limpieza de revisión en línea que mitiga la necesidad
 
 * [AEM [!DNL JMX MBean - SegmentRevisionGarbageCollection]](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+revision+garbage+collection%2Ctype%3DSegmentRevisionGarbageCollection)
 
-* [AEM [!DNL OSGi Configuration] : servicio [!UICONTROL Oak Segment NodeStore]](http://localhost:4502/system/console/configMgr/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService)
+* [AEM [!DNL OSGi Configuration] : servicio  [!UICONTROL Oak Segment NodeStore]](http://localhost:4502/system/console/configMgr/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService)
 
