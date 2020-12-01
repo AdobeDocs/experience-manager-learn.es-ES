@@ -25,7 +25,7 @@ El siguiente paso es la consulta de los datos enviados y la visualización de lo
 
 [QueryBuilder](https://querybuilder.js.org/) : componente de interfaz de usuario para crear consultas
 
-[Tablas](https://datatables.net/)de datos: para mostrar los resultados de la consulta en forma de tabla.
+[Tablas](https://datatables.net/) de datos: para mostrar los resultados de la consulta en forma de tabla.
 
 Se ha creado la siguiente interfaz de usuario para permitir la consulta de los datos enviados. Sólo los elementos marcados como obligatorios en el esquema JSON están disponibles para la consulta. En la captura de pantalla de abajo, estamos consultando todas las presentaciones donde el proveedor es SMS.
 
@@ -75,6 +75,6 @@ Para que este ejemplo se ejecute en el sistema local, realice los siguientes pas
 1. Creación de un formulario adaptable mediante el esquema json de ejemplo
 1. Configure el formulario adaptable para que se envíe a la acción de envío personalizado &quot;custom submithelpx&quot;
 1. Rellene el formulario y envíe
-1. Apunte el navegador a [panel.html](http://localhost:4502/content/AemForms/dashboard.html)
+1. Seleccione el explorador para [panel.html](http://localhost:4502/content/AemForms/dashboard.html)
 1. Seleccione el formulario y realice una consulta sencilla
 
