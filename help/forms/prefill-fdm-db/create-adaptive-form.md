@@ -22,30 +22,30 @@ ht-degree: 1%
 
 Hasta ahora hemos creado lo siguiente
 
-* Base de datos con 2 tablas `newhire` y `beneficiaries`
+* Base de datos con 2 tablas: `newhire` y `beneficiaries`
 * Origen de datos agrupados de conexión Apache Sling configurada
 * Modelo de datos de formulario basado en RDBMS
 
-El siguiente paso es crear y configurar un formulario adaptable para utilizar el modelo de datos de formulario.  Para obtener el inicio principal, puede [descargar e importar](assets/fdm-demo-af.zip) formularios de ejemplo. El formulario de ejemplo tiene una sección para mostrar los detalles del empleado y otra sección para la lista de los beneficiarios del empleado.
+El siguiente paso es crear y configurar un formulario adaptable para utilizar el modelo de datos de formulario.  Para obtener el inicio principal, puede [descargar e importar](assets/fdm-demo-af.zip) formulario de ejemplo. El formulario de ejemplo tiene una sección para mostrar los detalles del empleado y otra sección para la lista de los beneficiarios del empleado.
 
 ## Asociar formulario con modelo de datos de formulario
 
 El formulario de ejemplo proporcionado con este curso no está asociado con ningún modelo de datos de formulario. Para configurar el formulario para que utilice el modelo de datos de formulario, debemos hacer lo siguiente:
 
 * Seleccione el formulario FDMDemo
-* Haga clic en _Propiedades_->Modelo _de formulario_
+* Haga clic en _Propiedades_->_Modelo de formulario_
 * Seleccione Modelo de datos de formulario en la lista desplegable
 * Busque y seleccione el modelo de datos de formulario creado en la lección anterior.
-* Click on _Save &amp; Close_
+* Haga clic en _Guardar y cerrar_
 
 ## Configurar el servicio Prefill
 
 El primer paso es asociar el servicio de cumplimentación previa para el formulario. Para asociar el servicio de cumplimentación previa, siga los pasos mencionados a continuación
 
-* Seleccione el `FDMDemo` formulario
+* Seleccione el formulario `FDMDemo`
 * Haga clic en _Editar_ para abrir el formulario en modo de edición
 * Seleccione Contenedor de formulario en la jerarquía de contenido y haga clic en el icono de la llave inglesa para abrir la hoja de propiedades
-* Seleccione el servicio _de cumplimentación previa del modelo de datos de_ formulario en la lista desplegable Servicio de cumplimentación previa
+* Seleccione _Servicio de cumplimentación previa del modelo de datos de formulario_ en la lista desplegable Servicio de cumplimentación previa
 * Haga clic en la anchura azul para guardar los cambios
 
 * ![prefill-service](assets/fdm-prefill.png)
@@ -71,7 +71,7 @@ El siguiente paso es mostrar a los beneficiarios del empleado en forma de tabla.
 * Abra el formulario en modo de edición.
 * Expandir panel raíz->Beneficiarios->Tabla
 * Seleccione Fila1 y haga clic en el icono de la llave inglesa para abrir su hoja de propiedades.
-* Establecer la referencia de enlace como **/newhire/GetEmployeeBeneficiaries**
+* Establezca la referencia de enlace en **/newhire/GetEmployeeBeneficiaries**
 * Configure Repetir configuración - Recuento mínimo en 1 y Recuento máximo en 5.
 * La configuración de Fila1 debe tener el aspecto de la captura de pantalla siguiente
    ![row-configure](assets/configure-row.PNG)
@@ -95,7 +95,9 @@ Finalmente, es necesario enlazar las celdas de fila a los elementos del Modelo d
 
 ## Probar el formulario
 
-Ahora necesitamos abrir el formulario con el empID adecuado en la dirección URL. Los dos vínculos siguientes rellenarán formularios con información del[formulario de base de datosCon empID=207](http://localhost:4502/content/dam/formsanddocuments/fdmdemo/jcr:content?wcmmode=disabled&amp;empID=207)[Formulario con empID=208](http://localhost:4502/content/dam/formsanddocuments/fdmdemo/jcr:content?wcmmode=disabled&amp;empID=208)
+Ahora necesitamos abrir el formulario con el empID adecuado en la dirección URL. Los dos vínculos siguientes rellenarán formularios con información de la base de datos
+[Formulario con empID=207](http://localhost:4502/content/dam/formsanddocuments/fdmdemo/jcr:content?wcmmode=disabled&amp;empID=207)
+[Formulario con empID=208](http://localhost:4502/content/dam/formsanddocuments/fdmdemo/jcr:content?wcmmode=disabled&amp;empID=208)
 
 ## Solución de problemas
 
