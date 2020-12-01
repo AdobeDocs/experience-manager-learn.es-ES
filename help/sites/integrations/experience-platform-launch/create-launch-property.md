@@ -26,7 +26,7 @@ Obtenga información sobre cómo crear una propiedad Launch con la configuració
 
 ## Próximos pasos
 
-[Conectar AEM con Launch mediante E/S de Adobe](connect-aem-launch-adobe-io.md)
+[Conectar AEM con Launch mediante Adobe I/O](connect-aem-launch-adobe-io.md)
 
 ## Recursos adicionales {#additional-resources}
 
