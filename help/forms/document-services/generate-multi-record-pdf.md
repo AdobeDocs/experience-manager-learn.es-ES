@@ -23,7 +23,8 @@ A continuación se muestra la captura de pantalla del archivo xml que contiene v
 
 ![multi-record-xml](assets/multi-record-xml.PNG)
 
-El XML de datos tiene 2 registros. Cada registro está representado por el elemento form1. Este xml se pasa al método [OutputService](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/OutputService.html) generatePDFOutputBatch obtenemos la lista de documentos pdf (uno por registro)La firma del método generatePDFOutputBatch toma los siguientes parámetros
+El XML de datos tiene 2 registros. Cada registro está representado por el elemento form1. Este xml se pasa al método OutputService [generatePDFOutputBatch](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/OutputService.html) obtenemos la lista de documentos pdf (uno por registro)
+La firma del método generatePDFOutputBatch toma los siguientes parámetros
 
 * plantillas: mapa que contiene la plantilla, identificada por una clave
 * data: mapa que contiene documentos de datos xml, identificados por clave
@@ -32,13 +33,13 @@ El XML de datos tiene 2 registros. Cada registro está representado por el eleme
 
 >[!NOTE]
 >
->Este caso de uso está disponible como ejemplo activo en este [sitio web](https://forms.enablementadobe.com/content/samples/samples.html?query=0).
+>Este caso de uso está disponible como ejemplo activo en este [sitio Web](https://forms.enablementadobe.com/content/samples/samples.html?query=0).
 
 ## Detalles del caso de uso{#use-case-details}
 
 En este caso de uso vamos a proporcionar una interfaz web sencilla para cargar la plantilla y el archivo data(xml). Una vez que se ha completado la carga de los archivos y se envía la solicitud de POST a AEM servlet. Este servlet extrae los documentos y llama al método generatePDFOutputBatch de OutputService. Los archivos PDF generados se comprimen en un archivo zip y se ponen a disposición del usuario final para descargarlos desde el explorador web.
 
-## Código de servlet{#servlet-code}
+## Código Servlet{#servlet-code}
 
 El siguiente es el fragmento de código del servlet. El código extrae la plantilla (xdp) y el archivo de datos (xml) de la solicitud. El archivo de plantilla se guarda en el sistema de archivos. Se crean dos mapas: templateMap y dataFileMap que contienen la plantilla y los archivos xml(data) respectivamente. A continuación, se realiza una llamada al método generateMultipleRecords del servicio DocumentServices.
 
@@ -128,10 +129,10 @@ public Document generateMultiplePdfs(HashMap < String, String > templateMap, Has
 
 Para probar esta capacidad en el servidor, siga las instrucciones siguientes:
 
-* [Descargue y extraiga el contenido del archivo zip en el sistema](assets/mult-records-template-and-xml-file.zip)de archivos.Este archivo zip contiene la plantilla y el archivo de datos xml.
+* [Descargue y extraiga el contenido del archivo zip en el sistema](assets/mult-records-template-and-xml-file.zip) de archivos.Este archivo zip contiene la plantilla y el archivo de datos xml.
 * [Apunta tu navegador a la consola web Felix](http://localhost:4502/system/console/bundles)
-* [Implementar el paquete](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)DevelopingWithServiceUser.
-* [Implementar el paquete](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)personalizado AEMFormsDocumentServices.Paquete personalizado que genera el archivo PDF mediante la API OutputService
+* [Implementar el paquete](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar) DevelopingWithServiceUser.
+* [Implementar el paquete](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar) personalizado AEMFormsDocumentServices.Paquete personalizado que genera el archivo PDF mediante la API OutputService
 * [Seleccione el explorador para el administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
 * [Importe e instale el paquete](assets/generate-multiple-pdf-from-xml.zip). Este paquete contiene una página html que le permite soltar la plantilla y los archivos de datos.
 * [Seleccione el explorador en MultiRecords.html](http://localhost:4502/content/DocumentServices/Multirecord.html?)
