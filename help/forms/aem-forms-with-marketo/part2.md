@@ -203,5 +203,5 @@ public class MarketoConfigurationService {
 ```
 
 1. Cree e implemente el paquete en su servidor AEM.
-1. [Seleccione el explorador para configMgr](http://localhost:4502/system/console/configMgr) y busque &quot;Configuración del servicio de credenciales de marketing&quot;
+1. [Apunta a tu navegador para ](http://localhost:4502/system/console/configMgr) que busque &quot;Configuración del servicio de credenciales de marketing&quot;
 1. Especifique las propiedades adecuadas específicas de la instancia de Marketing to
