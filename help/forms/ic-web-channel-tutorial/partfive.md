@@ -30,7 +30,7 @@ Los fragmentos de documento contienen el contenido de texto de los documentos de
 
 El editor de texto enriquecido es lo suficientemente intuitivo como para que un usuario empresarial pueda crear texto e insertar elementos de datos de formulario. El editor de fragmentos de documento tiene la capacidad de dar formato al texto, especificar tipos y estilos de fuente, insertar caracteres especiales y crear hipervínculos.
 
-El editor de fragmentos de documento también puede insertar condiciones en línea en el texto, como se muestra en este [vídeo](https://helpx.adobe.com/experience-manager/kt/forms/using/editing-improvements-correspondence-mgmt-feature-video-use.html)
+El editor de fragmentos de documento también tiene la capacidad de insertar condiciones en línea en el texto, como se muestra en este [vídeo](https://helpx.adobe.com/experience-manager/kt/forms/using/editing-improvements-correspondence-mgmt-feature-video-use.html)
 
 >[!NOTE]
 >
