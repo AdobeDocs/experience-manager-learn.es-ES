@@ -22,16 +22,16 @@ ht-degree: 0%
 # Personalizar notificación de asignación de Tarea
 
 El componente Asignar Tarea se utiliza para asignar tareas a los participantes del flujo de trabajo. Cuando se asigna una tarea a un usuario o grupo, se envía una notificación por correo electrónico a los usuarios o miembros del grupo definidos.
-Esta notificación por correo electrónico generalmente contendrá datos dinámicos relacionados con la tarea. Estos datos dinámicos se recuperan con las propiedades [de](https://docs.adobe.com/content/help/en/experience-manager-65/forms/publish-process-aem-forms/use-metadata-in-email-notifications.html#using-system-generated-metadata-in-an-email-notification)metadatos generadas por el sistema.
+Esta notificación por correo electrónico generalmente contendrá datos dinámicos relacionados con la tarea. Estos datos dinámicos se recuperan mediante las propiedades de metadatos [generadas por el sistema](https://docs.adobe.com/content/help/en/experience-manager-65/forms/publish-process-aem-forms/use-metadata-in-email-notifications.html#using-system-generated-metadata-in-an-email-notification).
 Para incluir valores de los datos de formulario enviados en la notificación por correo electrónico, es necesario crear una propiedad de metadatos personalizada y, a continuación, utilizar estas propiedades de metadatos personalizados en la plantilla de correo electrónico
 
 
 
 ## Creación de una propiedad de metadatos personalizada
 
-El método recomendado es crear un componente OSGI que implemente el método getUserMetadata del [WorkitemUserMetadataService](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/workspace/service/external/WorkitemUserMetadataService.html#getUserMetadataMap--)
+El método recomendado es crear un componente OSGI que implemente el método getUserMetadata de [WorkitemUserMetadataService](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/workspace/service/external/WorkitemUserMetadataService.html#getUserMetadataMap--)
 
-El siguiente código crea 4 propiedades de metadatos (_firstName_,_lastName_,_reason_ e _amountRequested_) y establece su valor a partir de los datos enviados. Por ejemplo, el valor de la propiedad de metadatos _firstName_ se establece en el valor del elemento llamado firstName de los datos enviados. El código siguiente supone que los datos enviados del formulario adaptable están en formato xml. Forms adaptable basado en el esquema JSON o el modelo de datos de formulario genera datos en formato JSON.
+El siguiente código crea 4 propiedades de metadatos (_firstName_,_lastName_,_reason_ y _amountRequested_) y establece su valor a partir de los datos enviados. Por ejemplo, el valor de la propiedad de metadatos _firstName_ se establece en el valor del elemento llamado firstName de los datos enviados. El código siguiente supone que los datos enviados del formulario adaptable están en formato xml. Forms adaptable basado en el esquema JSON o el modelo de datos de formulario genera datos en formato JSON.
 
 
 ```java
@@ -113,7 +113,7 @@ return customMetadataMap;
 
 ## Utilizar las propiedades de metadatos personalizadas en la plantilla de correo electrónico de notificación de tarea
 
-En la plantilla de correo electrónico puede incluir la propiedad metadata utilizando la siguiente sintaxis donde amountRequested es la propiedad metadata `${amountRequested}`
+En la plantilla de correo electrónico puede incluir la propiedad metadata utilizando la siguiente sintaxis donde amountRequested es la propiedad de metadatos `${amountRequested}`
 
 ## Configurar Asignar Tarea para utilizar la propiedad de metadatos personalizada
 
@@ -129,10 +129,10 @@ Una vez que el componente OSGi esté integrado e implementado en AEM servidor, c
 ## Para probar esto en el servidor
 
 * [Configurar el servicio de correo CQ Day](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)
-* Asociación de un id. de correo electrónico válido con un usuario [administrador](http://localhost:4502/security/users.html)
-* Descargar e instalar la plantilla [de](assets/workflow-and-task-notification-template.zip) flujo de trabajo y notificación mediante [el administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
-* Descargue [Formulario](assets/request-travel-authorization.zip) adaptable e impórtelos en AEM desde la IU de [formularios y documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
-* Implementación y inicio del paquete [personalizado](assets/work-items-user-service-bundle.jar) mediante la consola [web](http://localhost:4502/system/console/bundles)
+* Asociar un id. de correo electrónico válido con [usuario administrador](http://localhost:4502/security/users.html)
+* Descargue e instale la [plantilla de flujo de trabajo y notificación](assets/workflow-and-task-notification-template.zip) mediante [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
+* Descargue [Formulario adaptable](assets/request-travel-authorization.zip) e impórtelos en AEM desde [formularios y documentos ui](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
+* Implementar y inicio del [Paquete personalizado](assets/work-items-user-service-bundle.jar) mediante la [consola web](http://localhost:4502/system/console/bundles)
 * [Previsualización y envío del formulario](http://localhost:4502/content/dam/formsanddocuments/requestfortravelauhtorization/jcr:content?wcmmode=disabled)
 
 Al enviar el formulario, la notificación de asignación de tarea se envía al ID de correo electrónico asociado al usuario administrador. La siguiente captura de pantalla muestra la notificación de asignación de tareas de muestra
@@ -142,6 +142,6 @@ Al enviar el formulario, la notificación de asignación de tarea se envía al I
 >[!NOTE]
 >La plantilla de correo electrónico de la notificación de asignación de tarea debe tener el siguiente formato.
 >
-> asunto=Tarea asignada - `${workitem_title}`
+> subject=Tarea asignada - `${workitem_title}`
 >
 > message=String que representa la plantilla de correo electrónico sin caracteres de línea nuevos.
