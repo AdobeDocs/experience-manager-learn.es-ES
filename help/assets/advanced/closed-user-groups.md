@@ -36,7 +36,7 @@ Grupos cerrados de usuarios (CUG) es una función que se utiliza para restringir
 
 El grupo de miembros de We.Retail se ha agregado como un grupo de usuarios cerrado a la carpeta: /content/dam/we-retail/es/beta-products
 
-Se aplica una mezcla de **rep:CugMixin** a la carpeta **/content/dam/we-Retail/en/beta-products** . Se agrega un nodo **rep:cugPolicy** debajo de la carpeta y los miembros de venta minorista se especifican como principal. Otra combinación de **granite:AuthenticationRequired** se aplica a la carpeta beta-products y la propiedad** granite:loginPath** especifica la página de inicio de sesión que se utilizará si un usuario no se autentica e intenta solicitar un recurso debajo de la carpeta **beta-products** .
+Se aplica una mezcla de **rep:CugMixin** a la carpeta **/content/dam/we-Retail/en/beta-products**. Se agrega un nodo de **rep:cugPolicy** debajo de la carpeta y se especifica we-Retail-members como principal. Otra combinación de **granite:AuthenticationRequired** se aplica a la carpeta beta-products y la propiedad** granite:loginPath** especifica la página de inicio de sesión que se utilizará si un usuario no está autenticado e intenta solicitar un recurso debajo de la carpeta **beta-products**.
 
 Descripción de JCR a continuación:
 
@@ -56,7 +56,7 @@ Tanto los grupos de usuarios cerrados (CUG) como las Listas de Control de acceso
 
 |  | ACL | CUG |
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| Uso previsto | Configure y aplique permisos para el contenido en la instancia de AEM **actual** . | Configure las directivas de CUG para el contenido en AEM instancia de **autor** . Aplicar directivas de CUG para el contenido en AEM instancia de **publicación** . |
+| Uso previsto | Configure y aplique permisos para el contenido en la instancia de AEM **actual**. | Configure las directivas de CUG para el contenido en AEM instancia **de autor**. Aplique directivas de CUG para el contenido en AEM **instancia de publicación**. |
 | Niveles de permisos | Define permisos concedidos o denegados para usuarios o grupos en todos los niveles: Leer, Modificar, Crear, Eliminar, Leer ACL, Editar ACL, Replicar. | Concede acceso de lectura a un conjunto de usuarios/grupos. Niega el acceso de lectura a todos los demás usuarios/grupos. |
 | Replicación | Las ACL no se replican con contenido. | Las políticas de CUG se replican con contenido. |
 
