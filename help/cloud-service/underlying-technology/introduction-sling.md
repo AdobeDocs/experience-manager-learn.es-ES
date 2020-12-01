@@ -19,6 +19,6 @@ ht-degree: 4%
 
 # Introducción a [!DNL Sling] {#introduction-sling}
 
-Introducción a [!DNL Sling], un marco de trabajo web de código [!DNL RESTful] abierto que forma parte de la pila de tecnología subyacente de Adobe Experience Manager.
+Introducción a [!DNL Sling], un marco de trabajo web de código abierto [!DNL RESTful] que forma parte de la pila de tecnología subyacente de Adobe Experience Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32032/?quality=12&learn=on)
