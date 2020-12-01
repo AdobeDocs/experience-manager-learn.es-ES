@@ -22,7 +22,7 @@ ht-degree: 0%
 ---
 
 
-# Creación de maquetaciones con Forms Designer {#create-layout-using-forms-designer}
+# Crear diseño con Forms Designer {#create-layout-using-forms-designer}
 
 En esta parte, vemos el archivo de diseño creado con AEM Forms Designer.
 
