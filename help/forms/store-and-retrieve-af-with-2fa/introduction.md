@@ -26,7 +26,7 @@ Este tutorial le guiará por los pasos necesarios para guardar y recuperar datos
 
 * Realice una llamada del POST a un servlet. Este servlet almacena los datos en la base de datos y los datos adjuntos del formulario en el repositorio de CRX. Los datos almacenados en la base de datos están asociados a un GUID.
 
-* Si desea rellenar el formulario adaptable con los datos almacenados, recupere los datos asociados con el GUID y rellene el formulario adaptable con el método **request.setAttribute** .
+* Si desea rellenar el formulario adaptable con los datos almacenados, recupere los datos asociados con el GUID y rellene el formulario adaptable con el método **request.setAttribute**.
 
 ## Demostración del caso de uso
 
