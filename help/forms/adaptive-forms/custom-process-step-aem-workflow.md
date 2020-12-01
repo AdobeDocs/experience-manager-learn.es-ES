@@ -36,11 +36,13 @@ El primer paso consiste en crear un proyecto concreto utilizando el arquetipo Ma
 
 ### Crear clase que implemente WorkflowProcess
 
-Abra el proyecto móvil en el IDE de eclipse. Expanda **nombreproyecto** > carpeta **principal** . Expanda la carpeta src/main/java. Debería ver un paquete que termina con &quot;core&quot;. Cree una clase Java que implemente WorkflowProcess en este paquete. Deberá anular el método execute. La firma del método execute es la siguiente: public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments)genera WorkflowExceptionEl método execute proporciona acceso a las siguientes 3 variables
+Abra el proyecto móvil en el IDE de eclipse. Expanda la carpeta **nombreproyecto** > **núcleo**. Expanda la carpeta src/main/java. Debería ver un paquete que termina con &quot;core&quot;. Cree una clase Java que implemente WorkflowProcess en este paquete. Deberá anular el método execute. La firma del método execute es la siguiente
+public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments)genera WorkflowException
+El método execute proporciona acceso a las siguientes 3 variables
 
-**WorkItem**: La variable workItem proporcionará acceso a los datos relacionados con el flujo de trabajo. La documentación pública de API está disponible [aquí.](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
+**WorkItem**: La variable workItem proporcionará acceso a los datos relacionados con el flujo de trabajo. La documentación de API pública está disponible [aquí.](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
 
-**WorkflowSession**: Esta variable workflowSession le permitirá controlar el flujo de trabajo. La documentación pública de API está disponible [aquí](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
+**WorkflowSession**: Esta variable workflowSession le permitirá controlar el flujo de trabajo. La documentación de API pública está disponible [aquí](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
 
 **MetaDataMap**: Todos los metadatos asociados al flujo de trabajo. Todos los argumentos de proceso que se pasan al paso de proceso están disponibles mediante el objeto MetaDataMap.[Documentación de API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)
 
@@ -134,7 +136,8 @@ El resto del código crea objetos de Documento iterando a través del objeto sec
 
 #### Generar e implementar
 
-[Genere el paquete como se describe aquí](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven)[Asegúrese de que el paquete está implementado y en estado activo](http://localhost:4502/system/console/bundles)
+[Genere el paquete como se describe ](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven)
+[aquíAsegúrese de que el paquete está implementado y en estado activo](http://localhost:4502/system/console/bundles)
 
 Cree un modelo de flujo de trabajo. Arrastre y suelte el paso del proceso en el modelo de flujo de trabajo. Asocie el paso del proceso con &quot;Guardar datos adjuntos de formulario adaptables al sistema de archivos&quot;.
 
