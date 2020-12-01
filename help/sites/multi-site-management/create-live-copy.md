@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Creación de una Live Copy {#create-livecopy}
+# Crear una Live Copy {#create-livecopy}
 
 Obtenga información sobre cómo crear una Live Copy para su sitio a partir de un modelo mediante el asistente Crear Live Copy.
 
