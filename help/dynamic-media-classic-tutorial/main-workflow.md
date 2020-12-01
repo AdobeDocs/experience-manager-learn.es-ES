@@ -32,7 +32,7 @@ El flujo de trabajo de las soluciones de Dynamic Media Classic consta de tres pa
 
 Este es el comienzo del flujo de trabajo. En este paso, puede recopilar o crear el contenido de origen que se ajuste al flujo de trabajo que está utilizando y cargarlo en Dynamic Media Classic. El sistema admite varios tipos de archivo para imágenes, vídeo y fuentes, pero también para PDF, Adobe Illustrator y Adobe InDesign.
 
-Consulte la lista completa de los tipos [de archivo](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#supported-asset-file-formats)admitidos.
+Consulte la lista completa de [Tipos de archivo admitidos](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#supported-asset-file-formats).
 
 Puede cargar el contenido de origen de varias formas:
 
@@ -53,23 +53,23 @@ Las dos opciones de carga más importantes están activadas de forma predetermin
 
 Existen cuatro variaciones de la opción Sobrescribir imagen que se pueden configurar para toda la compañía y que a menudo no se comprenden bien. En resumen, puede establecer las reglas de modo que desee que los recursos con el mismo nombre se sobrescriban con más frecuencia o desea que las sobrescrituras se produzcan con menos frecuencia (en cuyo caso se cambiará el nombre de la nueva imagen por una extensión &quot;-1&quot; o &quot;-2&quot;).
 
-- **Sobrescribir en la carpeta actual, con el mismo nombre/extensión**de imagen base.
+- **Sobrescribir en la carpeta actual, con el mismo nombre/extensión** de imagen base.
 Esta opción es la regla más estricta de reemplazo. Requiere que la imagen de sustitución se cargue en la misma carpeta que la imagen original y que la imagen de sustitución tenga la misma extensión de nombre de archivo que la imagen original. Si no se cumplen estos requisitos, se crea un duplicado.
 
 - **Sobrescribir en la carpeta actual, el mismo nombre de recurso base independientemente de la extensión**.
 Requiere que la imagen de sustitución se cargue en la misma carpeta que la original, aunque la extensión del nombre de archivo puede ser diferente a la original. Por ejemplo, silla.tif reemplaza a silla.jpg.
 
-- **Sobrescribir en cualquier carpeta, con el mismo nombre o extensión**de recurso base.
+- **Sobrescribir en cualquier carpeta, con el mismo nombre o extensión** de recurso base.
 Requiere que la imagen de reemplazo tenga la misma extensión de nombre de archivo que la imagen original (por ejemplo, silla.jpg debe reemplazar silla.jpg, no silla.tif ). Sin embargo, puede cargar la imagen de reemplazo en una carpeta distinta a la original. La imagen actualizada reside en la nueva carpeta; el archivo ya no se encuentra en su ubicación original.
 
 - **Sobrescribir en cualquier carpeta, el mismo nombre de recurso base independientemente de la extensión**.
 Esta opción es la regla de reemplazo más inclusiva. Puede cargar una imagen de sustitución en una carpeta distinta a la original, cargar un archivo con una extensión de nombre de archivo diferente y reemplazar el archivo original. Si el archivo original se encuentra en una carpeta diferente, la imagen de reemplazo reside en la nueva carpeta en la que se cargó.
 
-Obtenga más información sobre la opción [](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/application-setup.html#using-the-overwrite-images-option)Sobrescribir imágenes.
+Obtenga más información sobre la [opción Sobrescribir imágenes](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/application-setup.html#using-the-overwrite-images-option).
 
 Aunque no es necesario, al cargar mediante cualquiera de los dos métodos anteriores, puede especificar las opciones de trabajo para esa carga en particular: por ejemplo, para programar una carga recurrente, defina las opciones de recorte al cargarla, entre otras muchas. Estos pueden ser valiosos para algunos flujos de trabajo, así que vale la pena considerar si pueden ser para los tuyos.
 
-Obtenga más información sobre las opciones [de trabajo](https://docs.adobe.com/content/help/es-ES/dynamic-media-classic/using/upload-publish/uploading-files.translate.html#upload-options).
+Obtenga más información sobre [Opciones de trabajo](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-options).
 
 La carga es el primer paso necesario en cualquier flujo de trabajo, ya que Dynamic Media Classic no puede trabajar con contenido que no esté ya en su sistema. Entre bastidores durante la carga, el sistema registra todos los recursos cargados con la base de datos centralizada de Dynamic Media Classic, asigna un ID y lo copia en almacenamiento. Además, el sistema convierte los archivos de imagen a un formato que permite el cambio de tamaño y zoom dinámicos y convierte los archivos de vídeo al formato compatible con la Web MP4.
 
@@ -98,7 +98,7 @@ Del mismo modo, puede cargar el vídeo de origen maestro en Dynamic Media Classi
 
 **Aunque no hay un mínimo de tamaño de imagen, no recomendamos cargar imágenes gigantes.** Una imagen gigante puede considerarse más de 4000 píxeles. Cargar imágenes de este tamaño puede mostrar posibles defectos como granos de polvo o pelos en la imagen. Estas imágenes también ocuparán más espacio en el servidor de Dynamic Media Classic, lo que puede hacer que supere los límites de almacenamiento contraídos.
 
-Obtenga más información sobre la [carga de archivos](https://docs.adobe.com/content/help/es-ES/dynamic-media-classic/using/upload-publish/uploading-files.translate.html#uploading-your-files).
+Obtenga más información sobre [Carga de archivos](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#uploading-your-files).
 
 ## Paso 2: Autor (y publicación)
 
@@ -140,18 +140,18 @@ Los recursos recién cargados y publicados se verán de inmediato, mientras que 
 
 Normalmente, no se trata de un problema a menos que se produzca un error y la imagen o el recurso tengan el mismo nombre que la versión publicada anteriormente, pero haya un problema con la imagen. Por ejemplo, se cargó accidentalmente una versión de baja resolución o el director de arte no aprobó la imagen. En este caso, desea recuperar la imagen original y reemplazarla por una nueva versión con el mismo ID de recurso.
 
-Obtenga información sobre cómo borrar [manualmente la caché de las direcciones URL que deben actualizarse](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/invalidate-cdn-cached-content.html).
+Obtenga información sobre cómo [Borrar manualmente la caché de las direcciones URL que deben actualizarse](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/invalidate-cdn-cached-content.html).
 
 >[!TIP]
 >
 >Para evitar problemas con el retraso del almacenamiento en caché, trabaje siempre con antelación: una noche, un día, dos semanas, etc. Genere a tiempo el control de calidad/aceptación para que las partes internas prueba su trabajo antes de publicarlo al público. Incluso trabajar una noche antes te permite hacer cambios y volver a publicar esa noche. Por la mañana, han pasado 10 horas y la caché se actualiza con la imagen correcta.
 
-- Obtenga más información sobre la [creación de un trabajo](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/publishing-files.html#creating-a-publish-job)de publicación.
+- Obtenga más información sobre [Creación de un trabajo de publicación](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/publishing-files.html#creating-a-publish-job).
 - Obtenga más información sobre [Publicación](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/publishing-files.html).
 
 ## Paso 3: Entregar
 
-Recuerde que el producto final de un flujo de trabajo de Dynamic Media Classic es una URL que apunta al recurso. La dirección URL puede indicar una imagen individual, un conjunto de imágenes, un conjunto de giros o cualquier otra colección o vídeo de conjuntos de imágenes. Debe tomar esa dirección URL y hacer algo con ella, como editar el HTML para que las `<IMG>` etiquetas apunten a la imagen de Dynamic Media Classic en lugar de apuntar a una imagen que proviene del sitio actual.
+Recuerde que el producto final de un flujo de trabajo de Dynamic Media Classic es una URL que apunta al recurso. La dirección URL puede indicar una imagen individual, un conjunto de imágenes, un conjunto de giros o cualquier otra colección o vídeo de conjuntos de imágenes. Debe tomar esa dirección URL y hacer algo con ella, como editar el HTML para que las etiquetas `<IMG>` apunten a la imagen de Dynamic Media Classic en lugar de apuntar a una imagen que proviene del sitio actual.
 
 En el paso Entregar, debe integrar esas direcciones URL en el sitio web, la aplicación móvil, la campaña por correo electrónico o cualquier otro punto táctil digital en el que desee mostrar el recurso.
 
@@ -175,14 +175,14 @@ Ejemplo de vínculo (en rojo) que abrirá un conjunto de imágenes en un visor e
 
 ## Previsualización de recursos
 
-Es probable que desee realizar la previsualización de los recursos que ha cargado o que esté creando o editando para asegurarse de que aparecen como desea cuando los clientes los vista. Para acceder a la ventana Previsualización, haga clic en cualquier botón de **Previsualización** , ya sea en la miniatura del recurso, en la parte superior del panel **Examinar/Generar, o vaya a** Archivo > Previsualización ****. En una ventana del navegador, se previsualización cualquier recurso que esté actualmente en el panel, ya sea una imagen, un vídeo o un recurso generado como un conjunto de imágenes.
+Es probable que desee realizar la previsualización de los recursos que ha cargado o que esté creando o editando para asegurarse de que aparecen como desea cuando los clientes los vista. Puede acceder a la ventana de Previsualización haciendo clic en cualquier botón **Previsualización**, ya sea en la miniatura del recurso, en la parte superior del **Panel Examinar/Generar** o en **Archivo > Previsualización**. En una ventana del navegador, se previsualización cualquier recurso que esté actualmente en el panel, ya sea una imagen, un vídeo o un recurso generado como un conjunto de imágenes.
 
 ### Previsualización de tamaño dinámico (ajustes preestablecidos de imagen)
 
-Puede previsualización de las imágenes en varios tamaños mediante la previsualización **Tamaños** . Esto carga una lista de los ajustes preestablecidos de imagen disponibles. Más adelante analizaremos los ajustes preestablecidos de imagen, pero pensaremos en ellos como &quot;fórmulas&quot; para cargar la imagen a un tamaño con nombre con cantidades específicas de enfoque y calidad de imagen.
+Puede previsualización de las imágenes en varios tamaños mediante la previsualización **Tamaños**. Esto carga una lista de los ajustes preestablecidos de imagen disponibles. Más adelante analizaremos los ajustes preestablecidos de imagen, pero pensaremos en ellos como &quot;fórmulas&quot; para cargar la imagen a un tamaño con nombre con cantidades específicas de enfoque y calidad de imagen.
 
 ### Previsualización de zoom
 
-También puede utilizar la opción **Zoom** para previsualización de la imagen en uno de los muchos ajustes preestablecidos de zoom creados previamente, basados en distintos visores de zoom incluidos.
+También puede utilizar la opción **Zoom** para previsualización de la imagen en uno de los muchos ajustes preestablecidos de zoom creados previamente, que se basan en diferentes visores de zoom incluidos.
 
-Obtenga más información sobre la [vista previa de recursos](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/managing-assets/previewing-asset.html).
+Obtenga más información sobre [Vista previa de recursos](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/managing-assets/previewing-asset.html).
