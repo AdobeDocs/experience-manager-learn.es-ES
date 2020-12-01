@@ -38,7 +38,7 @@ Los datos del formulario adaptable se almacenan bajo el elemento de datos como s
 
 >[!NOTE]
 >
->**AEM Forms 6.5.0** : cuando esté creando una variable de tipo XML para capturar los datos enviados en el modelo de flujo de trabajo, no asocie el XSD con la variable. Esto se debe a que al enviar el formulario adaptable basado en XSD, los datos enviados no son compatibles con el XSD. Los datos de la queja XSD se incluyen en /afData/afBoundData/ element.
+>**AEM Forms 6.5.0** - Cuando esté creando una variable de tipo XML para capturar los datos enviados en el modelo de flujo de trabajo, no asocie el XSD con la variable. Esto se debe a que al enviar el formulario adaptable basado en XSD, los datos enviados no son compatibles con el XSD. Los datos de la queja XSD se incluyen en /afData/afBoundData/ element.
 >
 >**AEM Forms 6.5.1** - Si asocia XSD con la variable XML, puede explorar los elementos de esquema para realizar la asignación de variables. No podrá acceder a los datos de formulario que no estén enlazados a elementos de esquema. Si el caso de uso es para acceder a datos enlazados a elementos de esquema así como a datos no enlazados, no enlazar el esquema con la variable XML en el flujo de trabajo.Tendrá que utilizar la expresión XPath adecuada para llegar a los datos que necesita
 
@@ -48,7 +48,7 @@ Los datos del formulario adaptable se almacenan bajo el elemento de datos como s
 
 ### Uso de Esquema con variable XML
 
-**Asignación de una variable XML con esquema. Utilice esta función con AEM Forms 6.5.1 y versiones posteriores**
+**Asignación de una variable XML con esquema. Utilice esta función con AEM Forms 6.5.1 en adelante**
 
 >[!VIDEO](https://video.tv.adobe.com/v/28098?quality=9&learn=on)
 
@@ -59,7 +59,7 @@ Los datos del formulario adaptable se almacenan bajo el elemento de datos como s
 Para que los recursos funcionen en su sistema, siga los pasos siguientes:
 
 * [Descargar e importar recursos en AEM mediante el administrador de paquetes](assets/xmlandstringvariable.zip)
-* [Explore el modelo](http://localhost:4502/editor.html/conf/global/settings/workflow/models/vacationrequest.html) de flujo de trabajo para comprender las variables que se utilizan en el flujo de trabajo
+* [Explore el ](http://localhost:4502/editor.html/conf/global/settings/workflow/models/vacationrequest.html) modelo de flujo de trabajo para comprender las variables que se utilizan en el flujo de trabajo
 * [Configuración del servicio de correo electrónico](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html#ConfiguringtheMailService)
 * [Abrir el formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/applicationfortimeoff/jcr:content?wcmmode=disabled)
 * Rellene los detalles y envíe el formulario.
