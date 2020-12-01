@@ -26,7 +26,7 @@ ht-degree: 0%
 
 En esta parte, utilizaremos funciones personalizadas y el editor de código para crear reglas comerciales.
 
-ya ha instalado [ClientLib con la función](assets/client-libs-and-logo.zip) personalizada anteriormente en este tutorial.
+ya ha instalado el [ClientLib con la función personalizada](assets/client-libs-and-logo.zip) anteriormente en este tutorial.
 
 Normalmente, una biblioteca de cliente consiste en un archivo CSS y Javascript. Esta biblioteca de cliente contiene un archivo javascript que expone una función para rellenar los valores de lista desplegable.
 
