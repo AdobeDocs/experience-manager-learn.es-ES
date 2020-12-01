@@ -36,7 +36,7 @@ Para configurar tomcat, siga las siguientes instrucciones:
 8. Copie el archivo SampleRest.war en la carpeta webapps de la instalación de Tomcat
 9. Ventana nueva del símbolo del sistema de inicio.
 10. Vaya a &lt;carpeta de instalación de tomcat>\bin y ejecute startup.bat
-11. Una vez que el tomcat haya empezado, pruebe el punto final expuesto por el archivo WAR haciendo [clic aquí](http://localhost:8080/SampleRest/webapi/getStatement/9586)
+11. Una vez que el tomcat haya comenzado, pruebe el punto final expuesto por el archivo WAR [haciendo clic aquí](http://localhost:8080/SampleRest/webapi/getStatement/9586)
 12. Debe obtener datos de muestra como resultado de esta llamada.
 
 Felicitaciones !!!. Ha configurado el comando para implementar el archivo SampleRest.war.
