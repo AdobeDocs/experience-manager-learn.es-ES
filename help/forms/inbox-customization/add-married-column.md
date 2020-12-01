@@ -82,12 +82,12 @@ return isMarried(inboxItem);
 * [Iniciar sesión en AEM consola web](http://localhost:4502/system/console/bundles)
 * [Implementación y inicio del paquete de personalización de bandeja de entrada](assets/inboxcustomization.inboxcustomization.core-1.0-SNAPSHOT.jar)
 * [Abra la bandeja de entrada](http://localhost:4502/aem/inbox)
-* Abra Control de administración haciendo clic en el icono de Vista _de_ Lista junto al botón _Crear_
+* Abra el Control de administración haciendo clic en el icono _Vista de Lista_ junto al botón _Crear_
 * Añadir la columna Casado en la Bandeja de entrada y guardar los cambios
 * [Ir a la interfaz de usuario de FormsAndDocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* [Importar el formulario](assets/snap-form.zip) de ejemplo seleccionando Cargar _archivo_ en el menú _Crear_
+* [Importar el ](assets/snap-form.zip) formulario de ejemplo seleccionando  _Archivo_ Cargar desde  __ Createmenu
 * [Obtener una vista previa del formulario](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
-* Seleccione el estado __ marital y envíe el formulario
+* Seleccione el _estado civil_ y envíe el formulario
    [Bandeja de entrada de vista](http://localhost:4502/aem/inbox)
 
 El envío del formulario activará el flujo de trabajo y se asignará una tarea al usuario &quot;admin&quot;. Debería ver un valor debajo de la columna Casado como se muestra en esta captura de pantalla.
