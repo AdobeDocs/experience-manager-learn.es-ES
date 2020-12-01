@@ -34,7 +34,7 @@ En este artículo se explica la creación de un usuario del sistema y la configu
 1. Configure el tipo userid como &#39; data &#39; y haga clic en el icono verde para completar el proceso de creación del usuario del sistema
 1. [Abrir configMgr](http://localhost:4502/system/console/configMgr)
 1. Busque &#39; Servicio de asignación de usuarios del servicio Apache Sling &#39; y haga clic para abrir las propiedades
-1. Haga clic en el icono *+* (más) para agregar la siguiente asignación de servicios
+1. Haga clic en el icono *+* (signo más) para agregar la siguiente asignación de servicios
 
    * DevelopingWithServiceUser.core:getresourceresolver=data
    * DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
@@ -49,7 +49,7 @@ También podemos obtener la resolución de recursos en nombre del usuario de fd-
 1. Vaya a [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
 1. Carga y inicio del paquete OSGi
 1. Asegúrese de que el paquete está en estado activo
-1. Ahora ha creado correctamente un usuario ** del sistema y también ha implementado el paquete *de usuario del servicio*.
+1. Ha creado correctamente un *usuario del sistema* y también ha implementado el paquete *usuario del servicio*.
 
    Para proporcionar acceso a /content, otorgue al usuario del sistema (&#39; datos &#39;) permisos de lectura en el nodo de contenido.
 
