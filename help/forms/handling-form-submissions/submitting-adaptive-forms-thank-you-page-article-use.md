@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Enviar a página de agradecimiento {#submitting-to-thank-you-page}
+# Enviando a la página de agradecimiento {#submitting-to-thank-you-page}
 
 Enviar a extremo REST pasa los datos rellenados en el formulario a una página de confirmación configurada como parte de la solicitud de GET HTTP. Puede agregar el nombre de los campos que se van a solicitar. El formato de la solicitud es:
 
@@ -39,8 +39,8 @@ También puede enviar al extremo externo mediante POST. Para lograrlo, solo tien
 
 Para probar esta capacidad en su servidor, siga las instrucciones que se mencionan a continuación:
 
-* Importar el archivo de [recursos asociado a este artículo a AEM mediante el administrador de paquetes](assets/submittingtorestendpoint.zip)
-* Seleccione el explorador para el formulario de solicitud de [tiempo de espera](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
+* Importe el archivo de [recursos asociado con este artículo en AEM mediante el administrador de paquetes](assets/submittingtorestendpoint.zip)
+* Apunte el explorador al [Formulario de solicitud de tiempo de inactividad](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
 * Rellene el campo requerido y envíe el formulario
 * Debería obtener la página de agradecimiento con la información rellenada en la página
 
