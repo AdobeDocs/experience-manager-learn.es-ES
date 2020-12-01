@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # Permisos de línea base
 
-La administración del acceso de los usuarios a las carpetas [de recursos](./baseline-folders.md) de línea de base es un aspecto crítico de la gobernanza y garantiza que los procesos se puedan admitir correctamente.
+La administración del acceso de los usuarios a las [carpetas de recursos de línea de base](./baseline-folders.md) es un aspecto crítico de la gobernanza y garantiza que los procesos se puedan admitir correctamente.
 
 >[!VIDEO](https://video.tv.adobe.com/v/37696/?quality=12&learn=on&hidetitle=true)
