@@ -22,14 +22,18 @@ Normalmente, los clientes desean exportar los datos del formulario enviados en f
 >
 >Este ejemplo solo funciona con Forms adaptable que no se basa en el Esquema o en el modelo de datos de formulario
 
-![Estructura](assets/tablestructure.PNG)de tablaComo puede ver, el nombre del esquema es una estructura funcional.Dentro de este esquema se encuentra la tabla de envíos con las siguientes columnas definidas
+![Estructura ](assets/tablestructure.PNG)
+de tablaComo puede ver el nombre del esquema es un formato.Dentro de este esquema se encuentra la tabla de envíos con las siguientes columnas definidas
 
 * formdata: Esta columna contendrá los datos de formulario enviados
 * formname: Esta columna contendrá el nombre del formulario enviado
 * id: Ésta es la clave principal y se establece en incremento automático
 
 El nombre de la tabla y los nombres de dos columnas se exponen como propiedades de configuración OSGi, como se muestra en la siguiente captura de pantalla:
-![osgi-configuration](assets/configuration.PNG)El código leerá estos valores y construirá la consulta SQL adecuada para ejecutar. Por ejemplo, la siguiente consulta se ejecutará en función de los valores **anteriores SELECT formdata FROM aemformstutorial.formupdates donde formname=timeoffrequestform** En la consulta anterior, el nombre del formulario(timeoffrequestform) se pasará como parámetro de solicitud al servlet.
+![osgi-configuration](assets/configuration.PNG)
+El código leerá estos valores y construirá la consulta SQL adecuada para ejecutar. Por ejemplo, la siguiente consulta se ejecutará en función de los valores anteriores
+**SELECCIONAR datos de formulario DESDE aemformstutorial.formups donde formname=timeoffrequestform**
+En la consulta anterior, el nombre del formulario (timeoffrequestform) se pasará como parámetro de solicitud al servlet.
 
 ## **Crear servicio OSGi**
 
@@ -37,7 +41,7 @@ Se creó el siguiente servicio OSGI para exportar los datos enviados en formato 
 
 * Línea 37: Estamos accediendo a Apache Sling Connection Pooled DataSource.
 
-* Línea 89: Este es el punto de entrada al servicio. El método `getCSVFile(..)` toma formName como parámetro de entrada y obtiene los datos enviados pertenecientes al nombre de formulario dado.
+* Línea 89: Es el punto de entrada al servicio. El método `getCSVFile(..)` toma formName como parámetro de entrada y obtiene los datos enviados pertenecientes al nombre de formulario dado.
 
 >[!NOTE]
 >
@@ -257,7 +261,7 @@ public @interface StoreAndExportConfiguration {
 
 ## Servlet
 
-El siguiente es el código servlet que invoca el `getCSVFile(..)` método del servicio. El servicio devuelve el objeto StringBuffer, que luego se transmite a la aplicación que realiza la llamada
+El siguiente es el código servlet que invoca el método `getCSVFile(..)` del servicio. El servicio devuelve el objeto StringBuffer, que luego se transmite a la aplicación que realiza la llamada
 
 ```java
 package com.aemforms.storeandexport.core.servlets;
@@ -299,6 +303,6 @@ public class StreamCSVFile extends SlingAllMethodsServlet {
 
 ### Implementar en el servidor
 
-* Importe el archivo [](assets/formsubmissions.sql) SQL en MySQL Server mediante MySQL Workbench. Esto crea un esquema llamado **documentación** y tabla denominada **envíos** de formularios con algunos datos de ejemplo.
+* Importe el [archivo SQL](assets/formsubmissions.sql) en el servidor MySQL usando MySQL Workbench. Esto crea un esquema llamado **formstutorial** y una tabla llamada **presentaciones de formulario** con algunos datos de ejemplo.
 * Implementar [OSGi Bundle](assets/store-export.jar) mediante la consola web Felix
-* [Para obtener envíos](http://localhost:4502/bin/streamformdata?formName=timeoffrequestform)de TimeOffRequest. Debería recibir un flujo continuo del archivo CSV.
+* [Para obtener envíos](http://localhost:4502/bin/streamformdata?formName=timeoffrequestform) de TimeOffRequest. Debería recibir un flujo continuo del archivo CSV.
