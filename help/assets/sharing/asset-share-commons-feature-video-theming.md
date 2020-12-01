@@ -80,7 +80,7 @@ En este vídeo se creará un nuevo tema basado en el tema Oscuro de Asset Share 
 @msgWarningBackgroundColor: @yellow;
 ```
 
-Descargar tema [personalizado de la biblioteca del cliente](assets/asc-theme-demo.zip)
+Descargar [tema personalizado de la biblioteca del cliente](assets/asc-theme-demo.zip)
 
 ## Recursos adicionales{#additional-resources}
 
