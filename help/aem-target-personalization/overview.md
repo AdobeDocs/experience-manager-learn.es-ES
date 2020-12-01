@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: c4ddafe392f74be8401f3ef6e07fc9d463d7620a
 workflow-type: tm+mt
 source-wordcount: '889'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -22,15 +22,15 @@ En este tutorial, tratamos tres escenarios diferentes para AEM y Destinatario, l
 * Escenario 2: Personalización mediante el Compositor de experiencias visuales
 * Escenario 3: Personalización de las experiencias de página Web completa
 
-## Personalización mediante fragmentos de experiencias AEM {#personalization-using-aem-experience-fragment}
+## Personalización mediante fragmentos de experiencia AEM {#personalization-using-aem-experience-fragment}
 
-Para este escenario, vamos a usar AEM y Destinatario. Claramente, ambos productos tienen sus propias fortalezas, y cuando se trata de ofrecer experiencias personalizadas a los usuarios de su sitio, usted necesita contenido **personalizado (contenido de AEM)** y una manera **inteligente (Destinatario)** para ofrecer este contenido basado en un usuario específico.
+Para este escenario, vamos a usar AEM y Destinatario. Claramente, ambos productos tienen sus propias fortalezas, y cuando se trata de ofrecer experiencias personalizadas a los usuarios del sitio, necesita **contenido personalizado (contenido de AEM)** y una **manera inteligente (Destinatario)** para ofrecer este contenido basado en un usuario específico.
 
 AEM le ayuda a crear contenido personalizado, reuniendo todo su contenido y recursos en una ubicación central para impulsar su estrategia de personalización. AEM le permite crear fácilmente contenido para equipos de escritorio, tabletas y dispositivos móviles en un solo lugar sin necesidad de escribir código. No es necesario crear páginas para cada dispositivo, AEM ajusta automáticamente cada experiencia con el contenido. También puede exportar el contenido de AEM a Adobe Target como ofertas pulsando un botón.
 
 Ahora tenemos contenido personalizado en forma de Ofertas de AEM en Destinatario. Destinatario le permite ofrecer estas ofertas a escala basándose en una combinación de enfoques de aprendizaje automático basados en reglas y dirigidos por AI que incorporan variables de comportamiento, contextuales y sin conexión.  Con Destinatario, puede configurar y ejecutar fácilmente actividades A/B y multivariadas (MVT) para determinar las mejores ofertas, contenido y experiencias.
 
-**Los fragmentos** de experiencia representan un gran paso adelante para vincular a los creadores de contenido y experiencia con los profesionales de personalización que dirigen los resultados empresariales mediante Destinatario.
+**Los** fragmentos de experiencia representan un gran paso adelante para vincular a los creadores de contenido y experiencia con los profesionales de personalización que dirigen los resultados empresariales mediante el uso del Destinatario.
 
 * Autores del editor de contenido de AEM personalizados como fragmentos de experiencia y sus variaciones
 * AEM exporta HTML de fragmento de experiencia a &#x200B; de Destinatario
@@ -41,10 +41,10 @@ Ahora tenemos contenido personalizado en forma de Ofertas de AEM en Destinatario
 
 **Para implementar este escenario, debe:**
 
-* [Integración de AEM y Adobe Target mediante Iniciar y Adobe de E/S](./implementation.md#integrating-aem-target-options)
+* [Integración de AEM y Adobe Target con Launch y Adobe I/O](./implementation.md#integrating-aem-target-options)
 * [AEM y Adobe Target con Cloud Services heredados](./implementation.md#integrating-aem-target-options)
 
-***Después de implementar las integraciones anteriores, exploremos el[escenario en detalle](./personalization-use-case-1.md).***
+***Después de implementar las integraciones anteriores, exploremos el  [escenario en detalle](./personalization-use-case-1.md).***
 
 ## Personalización mediante el Compositor de experiencias visuales
 
@@ -62,9 +62,9 @@ VEC es una de las principales características de Adobe Target. El VEC permite a
 
 **Para implementar este escenario, debe:**
 
-* [Integración de AEM y Adobe Target mediante Iniciar y Adobe de E/S](./implementation.md#integrating-aem-target-options)
+* [Integración de AEM y Adobe Target con Launch y Adobe I/O](./implementation.md#integrating-aem-target-options)
 
-***Después de implementar la integración anterior, exploremos el[escenario en detalle.](./personalization-use-case-3.md)***
+***Después de implementar la integración anterior, exploremos el  [escenario en detalle.](./personalization-use-case-3.md)***
 
 ## Personalización de las experiencias de página Web completa
 
@@ -80,6 +80,6 @@ La integración de Adobe Experience Manager con Adobe Target le ayuda a ofrecer 
 
 **Para implementar este escenario, debe:**
 
-* [Integración de AEM y Adobe Target mediante Iniciar y Adobe de E/S](./implementation.md#integrating-aem-target-options)
+* [Integración de AEM y Adobe Target con Launch y Adobe I/O](./implementation.md#integrating-aem-target-options)
 
-***Después de implementar la integración anterior, exploremos el[escenario en detalle.](./personalization-use-case-2.md)***
+***Después de implementar la integración anterior, exploremos el  [escenario en detalle.](./personalization-use-case-2.md)***
