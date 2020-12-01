@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Creating a Page {#creating-page-aem-sites}
+# Creación de una página {#creating-page-aem-sites}
 
 Obtenga información sobre cómo crear páginas de sitio mediante plantillas de página en Adobe Experience Manager.
 
