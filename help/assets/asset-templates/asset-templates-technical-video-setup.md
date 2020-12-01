@@ -16,7 +16,7 @@ ht-degree: 0%
 ---
 
 
-# Configuración de plantillas de recursos con AEM Assets y InDesign Server{#set-up-asset-templates-with-aem-assets-and-indesign-server}
+# Configure las plantillas de recursos con AEM Assets y InDesign Server{#set-up-asset-templates-with-aem-assets-and-indesign-server}
 
 Las plantillas de recursos permiten a los especialistas en marketing crear, administrar y distribuir recursos digitales para impresión y edición digital. La creación de folletos de marketing, tarjetas de presentación, volantes, anuncios y tarjetas postales resulta mucho más fácil con las plantillas de recursos cuando se integran con el servidor de InDesign. La configuración del servidor de InDesign con AEM se trata en esta sección.
 
@@ -28,9 +28,9 @@ Las plantillas de recursos permiten a los especialistas en marketing crear, admi
 
 ## Descargar prueba de InDesign Server {#download-indesign-server-trial}
 
-Descargar sitio web de descarga de prueba de [InDesign Server](https://www.adobe.com/devnet/indesign/indesign-server-trial-downloads.html)
+Descargar [sitio Web de descarga de prueba de InDesign Server](https://www.adobe.com/devnet/indesign/indesign-server-trial-downloads.html)
 
-## Inicio de InDesign Server {#starting-indesign-server}
+## Iniciando InDesign Server {#starting-indesign-server}
 
 ```shell
 # macOS command
