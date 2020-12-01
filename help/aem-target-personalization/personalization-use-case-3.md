@@ -14,7 +14,7 @@ ht-degree: 2%
 
 # Personalización mediante el Compositor de experiencias visuales
 
-En este capítulo analizaremos la creación de experiencias con el Compositor **de experiencias** visuales arrastrando y soltando, intercambiando y modificando el diseño y el contenido de una página web desde dentro de Destinatario.
+En este capítulo, exploraremos la creación de experiencias mediante el uso del **Compositor de experiencias visuales** arrastrando y soltando, intercambiando y modificando el diseño y el contenido de una página web desde dentro de Destinatario.
 
 ## Información general del escenario
 
@@ -24,8 +24,8 @@ La página de inicio del sitio WKND muestra actividades locales o lo mejor para 
 
 Para este ejercicio, es necesario que participen los siguientes usuarios y que para realizar algunas tareas necesite acceso administrativo.
 
-* **Content Producer/Content Editor** (Adobe Experience Manager)
-* **Especialista en mercadotecnia** (Adobe Target / Equipo de optimización)
+* **Content Producer/Editor**  de contenido (Adobe Experience Manager)
+* **Especialista en mercadotecnia**  (Adobe Target / Equipo de optimización)
 
 ### Página de inicio del sitio WKND
 
@@ -34,7 +34,7 @@ Para este ejercicio, es necesario que participen los siguientes usuarios y que p
 ### Requisitos previos
 
 * **AEM**
-   * [AEM instancia](./implementation.md#getting-aem) de publicación que se ejecuta en 4503
+   * [AEM publicar ](./implementation.md#getting-aem) la instalación en 4503
    * [AEM integrado con Adobe Target mediante Adobe Experience Platform Launch](./using-launch-adobe-io.md#aem-target-using-launch-by-adobe)
 * **Experience Cloud**
    * Acceso a sus organizaciones Adobe Experience Cloud - <https://>`<yourcompany>`.experienceCloud.adobe.com
@@ -43,22 +43,22 @@ Para este ejercicio, es necesario que participen los siguientes usuarios y que p
 ## Actividades de los especialistas en marketing
 
 1. El especialista en marketing crea una actividad de destinatario A/B en Adobe Target.
-   1. Desde la ventana de Adobe Target, vaya a la ficha **Actividades** .
-   2. Haga clic en el botón **Crear Actividad** y seleccione el tipo de actividad como Prueba **A/B**
+   1. Desde la ventana de Adobe Target, vaya a la ficha **Actividades**.
+   2. Haga clic en el botón **Crear Actividad** y seleccione el tipo de actividad como **Prueba A/B**
 
       ![Adobe Target - Crear Actividad](assets/personalization-use-case-2/create-ab-activity.png)
-   3. Seleccione el canal **Web** y elija el Compositor de experiencias **visuales**.
-   4. Introduzca la dirección URL **de la** Actividad y haga clic en **Siguiente** para abrir el Compositor de experiencias visuales.
+   3. Seleccione el canal **Web** y elija el **Compositor de experiencias visuales**.
+   4. Introduzca la **URL de Actividad** y haga clic en **Siguiente** para abrir el Compositor de experiencias visuales.
       ![Adobe Target - Crear Actividad](assets/personalization-use-case-2/create-activity-ab-name.png)
-   5. Para que el Compositor **de experiencias** visuales se cargue, habilite **Permitir cargar secuencias de comandos** no seguras en el explorador y vuelva a cargar la página.
+   5. Para que **Compositor de experiencias visuales** se cargue, habilite **Permitir la carga de secuencias de comandos no seguras** en el explorador y vuelva a cargar la página.
       ![Actividad de segmentación de experiencias](assets/personalization-use-case-1/load-unsafe-scripts.png)
    6. Observe que la página de inicio del sitio WKND se abre en el editor del Compositor de experiencias visuales.
       ![VEC](assets/personalization-use-case-2/vec.png)
-   7. **La experiencia A** proporciona la Página de inicio WKND predeterminada y vamos a editar el diseño de contenido para la **experiencia B**.
+   7. **Experience** Manager proporciona la Página de inicio WKND predeterminada y vamos a editar el diseño de contenido para  **Experience B**.
       ![Experiencia B](assets/personalization-use-case-3/use-case3-experience-b.png)
-   8. Haga clic en uno de los contenedores de diseño de tarjetas (*mejores galerías*) y seleccione la opción **Reorganizar** .
+   8. Haga clic en uno de los contenedores de diseño de tarjetas (*Mejores rascadores*) y seleccione la opción **Reorganizar**.
       ![Selección de contenedor](assets/personalization-use-case-3/container-selection.png)
-   9. Haga clic en el contenedor que desee reorganizar y arrástrelo y colóquelo en la ubicación deseada. Reorganicemos el contenedor *Best Roasters* de la primera fila de la primera columna a la primera fila de la tercera columna. Ahora el *mejor contenedor de aspersión* estará junto al contenedor de *Exposiciones* Fotográficas.
+   9. Haga clic en el contenedor que desee reorganizar y arrástrelo y colóquelo en la ubicación deseada. Reorganicemos el contenedor *Mejores rascadores* de la primera fila de la primera columna a la primera fila de la tercera columna. Ahora, el contenedor *Mejores asadores* estará junto al contenedor *Exposiciones fotográficas*.
       ![Intercambio de contenedores](assets/personalization-use-case-3/container-swap.png)
 
       **Después del intercambio**
@@ -75,13 +75,13 @@ Para este ejercicio, es necesario que participen los siguientes usuarios y que p
 
       ![Añadir texto](assets/personalization-use-case-3/after-changes.png)
    13. Haga clic en **Siguiente** para continuar con la actividad.
-   14. Seleccione el método **de asignación de** tráfico como manual y asigne un 100 % de tráfico a la **experiencia B**.
+   14. Seleccione el **Método de asignación de tráfico** como manual y asigne el 100% de tráfico a **Experiencia B**.
       ![Tráfico de la experiencia B](assets/personalization-use-case-2/traffic.png)
    15. Haga clic en **Siguiente**. 
-   16. Proporcione métricas **de** objetivo para su Actividad y guarde y cierre la prueba A/B.
+   16. Proporcione **Métricas de objetivo** para su Actividad y guarde y cierre la prueba A/B.
       ![Métrica de objetivo de prueba A/B](assets/personalization-use-case-2/goal-metric.png)
-   17. Proporcione un nombre (**WKND Página de inicio Refresh**) para la Actividad y guarde los cambios.
-   18. En la pantalla de detalles de la Actividad, asegúrese de **activar** la actividad.
+   17. Proporcione un nombre (**Actualización de Página de inicio WKND**) para la Actividad y guarde los cambios.
+   18. En la pantalla de detalles de la Actividad, asegúrese de **Activar** su actividad.
       ![Activar Actividad](assets/personalization-use-case-3/save-activity.png)
    19. Vaya a la Página de inicio WKND (http://localhost:4503/content/wknd/en.html) y observe los cambios que hemos agregado a la actividad de prueba A/B de actualización de Página de inicio WKND.
       ![Actualización de Página de inicio WKND](assets/personalization-use-case-3/activity-result.png)
