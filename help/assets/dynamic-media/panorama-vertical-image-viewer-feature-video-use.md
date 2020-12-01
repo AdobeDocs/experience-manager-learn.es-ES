@@ -19,7 +19,7 @@ ht-degree: 1%
 ---
 
 
-# Uso de panoramas y visores de imágenes verticales con AEM Assets Dynamic Media{#using-panorama-and-vertical-image-viewer-with-aem-assets-dynamic-media}
+# Uso de Panorama y Visor de imágenes verticales con AEM Assets Dynamic Media{#using-panorama-and-vertical-image-viewer-with-aem-assets-dynamic-media}
 
 Las mejoras del visor de medios dinámicos de AEM 6.4 incluyen la incorporación del visor de imágenes panorámicas, el visor de imágenes panorámicas de realidad virtual y el visor de imágenes verticales. El visor panorámico ofrece una forma sencilla de ofrecer una experiencia envolvente y atractiva de la habitación, la propiedad, la ubicación o el paisaje sin ningún desarrollo personalizado.
 
