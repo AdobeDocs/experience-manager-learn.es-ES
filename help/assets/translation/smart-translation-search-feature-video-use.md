@@ -29,9 +29,9 @@ AEM búsqueda de traducción inteligente permite a los usuarios realizar búsque
 
 La búsqueda de traducción inteligente es un complemento perfecto para AEM etiquetas inteligentes que se aplican a los recursos en inglés.
 
-Este vídeo supone que se ha configurado [AEM búsqueda](smart-translation-search-technical-video-setup.md) de traducción inteligente.
+Este vídeo supone que [se ha configurado AEM búsqueda de traducción inteligente](smart-translation-search-technical-video-setup.md).
 
-## Funcionamiento de la búsqueda de traducción inteligente {#how-smart-translation-search-works}
+## Cómo funciona la búsqueda de traducción inteligente {#how-smart-translation-search-works}
 
 ![Diagrama de flujo de búsqueda de traducción inteligente](assets/smart-translation-search-flow.png)
 
