@@ -6,9 +6,9 @@ user-guide-description: Recopilación de recursos de AEM Forms para principiante
 breadcrumb-title: Tutoriales de AEM Forms
 index: y
 translation-type: tm+mt
-source-git-commit: 9d4e864f42fa6c0b2f9b895257db03311269ce2e
+source-git-commit: 787a79663472711b78d467977d633e3d410803e5
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '896'
 ht-degree: 6%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 6%
    + [Añadir tabla a panel de ingresos](creating-your-first-adaptive-form/adding-table-to-income-panel.md)
    + [Configuración del panel de recursos](creating-your-first-adaptive-form/configuring-assets-panel.md)
    + [Uso de funciones personalizadas y editor de código](creating-your-first-adaptive-form/using-custom-functions-and-code-editor.md)
-+ Gestión de envíos de formularios {#handling-af-form-submissions}
++ Administración de envíos de formularios {#handling-af-form-submissions}
    + [Creación de un flujo de trabajo de revisión](handling-form-submissions/creating-a-review-workflow.md)
    + [Configuración del formulario adaptable para activar el flujo de trabajo](handling-form-submissions/configuring-adaptive-form-to-trigger-workflow.md)
    + [Mostrar página de agradecimiento](handling-form-submissions/submitting-adaptive-forms-thank-you-page-article-use.md)
@@ -83,7 +83,7 @@ ht-degree: 6%
    + [Rellenado previo de HTML5 Forms](adaptive-forms/prepopulating-html5-forms-in-aem-forms-article.md)
    + [Modelo de datos de formulario con Salesforce](adaptive-forms/using-adaptive-forms-with-sales-force-integration-tutorial.md)
    + [Añadir elementos dinámicamente en el componente de opciones](adaptive-forms/choice-group-items-adding-dynamically-article.md)
-+ cumplimentación previa de formularios adaptables mediante el modelo de datos de formulario{#prefill-fdm-db}
++ cumplimentación previa de formularios adaptables con el modelo de datos de formulario{#prefill-fdm-db}
    + [Introducción](prefill-fdm-db/introduction.md)
    + [Crear tablas de base de datos](prefill-fdm-db/create-database-tables.md)
    + [Configuración del modelo de datos de formulario](prefill-fdm-db/configuring-form-data-model.md)
@@ -132,11 +132,11 @@ ht-degree: 6%
    + [Variable ArrayList](variables-aem-workflow/part4.md)
    + [Variable de modelo de datos de formulario](variables-aem-workflow/form-data-model.md)
    + [Editor de reglas en AEM flujo de trabajo](variables-aem-workflow/part5.md)
-+ Almacenamiento y recuperación de datos de formulario en bases de datos MySQL{#storing-and-retrieving-form-data}
++ Almacenamiento y recuperación de datos de formulario en MySQL DB{#storing-and-retrieving-form-data}
    + [Introducción](storing-retrieving-form-data/introduction.md)
    + [Configurar fuente de datos](storing-retrieving-form-data/part1.md)
-   + [Servlet para almacenar datos](storing-retrieving-form-data/part2.md)
-   + [Servicio para recuperar datos](storing-retrieving-form-data/part3.md)
+   + [Servicio para almacenar datos](storing-retrieving-form-data/part3.md)
+   + [Crear servlet](storing-retrieving-form-data/part2.md)
    + [Biblioteca de cliente](storing-retrieving-form-data/part4.md)
    + [Plantilla de formulario adaptable](storing-retrieving-form-data/part5.md)
    + [Implementación de recursos de muestra](storing-retrieving-form-data/part6.md)
@@ -146,7 +146,7 @@ ht-degree: 6%
    + [Administrar envío de PDF](offline-mobile-form-submission/part-two.md)
    + [Flujo de trabajo para revisar PDF](offline-mobile-form-submission/part-three.md)
    + [Implementar en el sistema](offline-mobile-form-submission/part-four.md)
-+ Consulta de datos enviados{#querying-submitted-data}
++ Consultando datos enviados{#querying-submitted-data}
    + [Introducción](querying-submitted-data/introduction.md)
    + [Creación de formularios basados en Esquema JSON](querying-submitted-data/part1.md)
    + [Almacenar los datos enviados](querying-submitted-data/part2.md)
@@ -155,7 +155,7 @@ ht-degree: 6%
 + Lista de tipos de recursos personalizados en Forms Portal{#listing-custom-asset-types}
    + [Parte 1: Registro de tipos de recursos personalizados](listing-custom-asset-types/part1.md)
    + [Parte 2 - Creación de plantilla personalizada](listing-custom-asset-types/part2.md)
-+ AEM Forms Con Marketing{#aem-forms-with-marketo}
++ AEM Forms con marketing{#aem-forms-with-marketo}
    + [Parte 1 - Introducción](aem-forms-with-marketo/part1.md)
    + [Parte 2: Autenticación personalizada](aem-forms-with-marketo/part2.md)
    + [Parte 3 - Fuente de datos](aem-forms-with-marketo/part3.md)
@@ -204,7 +204,7 @@ ht-degree: 6%
    + [Uso del componente Tabla en el Documento del Canal de impresión de AEM Forms](interactive-communications/table-in-print-channel-documents-video-use.md)
    + [Generación de Documento de comunicaciones interactivas para Canal de impresión mediante carpetas de inspección](interactive-communications/generating-interactive-communications-print-document-using-api-tutorial-use.md)
 
-+ Interactive Communications For Web Channel {#ic-web-channel-tutorial}
++ Comunicaciones Interactivas para Canal Web {#ic-web-channel-tutorial}
    + [Introducción](ic-web-channel-tutorial/introduction.md)
    + [Configurar Tomcat](ic-web-channel-tutorial/partone.md)
    + [Crear fuente de datos](ic-web-channel-tutorial/parttwo.md)
