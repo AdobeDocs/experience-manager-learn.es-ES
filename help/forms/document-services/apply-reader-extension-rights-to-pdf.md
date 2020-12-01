@@ -25,7 +25,7 @@ Extensiones de Reader permite manipular los derechos de uso en documentos PDF. L
 Para probar esta capacidad, puede probar este [vínculo](https://forms.enablementadobe.com/content/samples/samples.html?query=0). El nombre de muestra es &quot;Representar XDP con RE&quot;
 
 Para lograr este caso de uso, debemos hacer lo siguiente:
-* Añada el certificado de Extensiones de Reader al usuario &quot;fd-service&quot;. Los pasos para agregar credenciales de Extensiones de Reader se enumeran [aquí](https://helpx.adobe.com/experience-manager/6-3/forms/using/configuring-document-services.html)
+* Añada el certificado de Extensiones de Reader al usuario &quot;fd-service&quot;. Los pasos para agregar las credenciales de Extensiones de Reader se enumeran [aquí](https://helpx.adobe.com/experience-manager/6-3/forms/using/configuring-document-services.html)
 
 * Cree un servicio OSGi personalizado que aplicará derechos de uso a los documentos. El código para realizar esto se enumera a continuación
 
@@ -71,7 +71,7 @@ public Document applyUsageRights(Document pdfDocument,UsageRights usageRights) {
 
 El siguiente paso es crear un servlet con un método POST para devolver al usuario el PDF ampliado del lector. En este caso, se pedirá al usuario que guarde el PDF en su sistema de archivos. Esto se debe a que el PDF se procesa como PDF dinámico y los visores de PDF que vienen con los navegadores no gestionan archivos PDF dinámicos.
 
-A continuación se muestra el código del servlet. El servlet se invocará desde la acción **custom submit** de Adaptive Form.
+A continuación se muestra el código del servlet. El servlet se invocará desde la acción **custom submit** del formulario adaptable.
 Servlet crea un objeto UsageRights y establece sus propiedades en función de los valores introducidos por el usuario en el formulario adaptable. A continuación, el servlet llama al método **applyUsageRights** del servicio creado con este fin.
 
 ```java
@@ -191,7 +191,7 @@ try {
 
 Para probar esto en el servidor local, siga los pasos siguientes:
 1. [Descargar e instalar el paquete DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-1. [Descargue e instale el paquete](assets/ares.ares.core-ares.jar)ares.ares.core-ares. Tiene el servicio personalizado y el servlet para aplicar derechos de uso y transmitir el PDF
+1. [Descargue e instale el paquete](assets/ares.ares.core-ares.jar) ares.ares.core-ares. Tiene el servicio personalizado y el servlet para aplicar derechos de uso y transmitir el PDF
 1. [Importar las bibliotecas de cliente y el envío personalizado](assets/applyaresdemo.zip)
 1. [Importar el formulario adaptable](assets/applyaresform.zip)
 1. Añadir el certificado de extensiones de Reader al usuario &quot;fd-service&quot;
