@@ -35,24 +35,25 @@ Cree una cuenta de desarrollador con [Nexmo](https://dashboard.nexmo.com/sign-in
 La especificación OpenAPI (anteriormente la especificación Swagger) es un formato de descripción de API para las API de REST. Un archivo OpenAPI le permite describir toda la API, incluyendo:
 
 * Extremos disponibles (/usuarios) y operaciones en cada extremo (GET/usuarios, POST/usuarios)
-* Parámetros de operación Entrada y salida para cada método operationAuthentication
+* Parámetros de operación Entrada y salida para cada operación
+Métodos de autenticación
 * Información de contacto, licencia, condiciones de uso y otra información.
 * Las especificaciones de API se pueden escribir en YAML o JSON. El formato es fácil de aprender y legible tanto para los seres humanos como para las máquinas.
 
-Para crear su primer archivo swagger/OpenAPI, siga la documentación de [OpenAPI](https://swagger.io/docs/specification/2-0/basic-structure/)
+Para crear su primer archivo swagger/OpenAPI, siga la [documentación de OpenAPI](https://swagger.io/docs/specification/2-0/basic-structure/)
 
 >[!NOTE]
 > AEM Forms admite OpenAPI Specification versión 2.0 (fka Swagger).
 
-Utilice el editor [de](https://editor.swagger.io/) swagger para crear el archivo de swagger y describir las operaciones que envían y verifican el código OTP enviado mediante SMS. El archivo swagger se puede crear en formato JSON o YAML. El archivo de swagger completado se puede descargar desde [aquí](assets/two-factore-authentication-swagger.zip)
+Utilice el [editor de swagger](https://editor.swagger.io/) para crear el archivo de swagger y describir las operaciones que envían y verifican el código OTP enviado mediante SMS. El archivo swagger se puede crear en formato JSON o YAML. El archivo de swagger completado se puede descargar desde [aquí](assets/two-factore-authentication-swagger.zip)
 
 ## Crear fuente de datos
 
-Para integrar AEM/AEM Forms con aplicaciones de terceros, necesitamos [crear fuentes](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) de datos en la configuración de servicios en la nube.
+Para integrar AEM/AEM Forms con aplicaciones de terceros, necesitamos [crear fuentes de datos](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) en la configuración de servicios en la nube.
 
 ## Crear modelo de datos de formulario
 
-La integración de datos de AEM Forms proporciona una interfaz de usuario intuitiva para crear y trabajar con modelos [de datos de](https://docs.adobe.com/content/help/en/experience-manager-65/forms/form-data-model/create-form-data-models.html)formularios. Un modelo de datos de formulario depende de los orígenes de datos para el intercambio de datos.
+La integración de datos de AEM Forms proporciona una interfaz de usuario intuitiva para crear y trabajar con [modelos de datos de formulario](https://docs.adobe.com/content/help/en/experience-manager-65/forms/form-data-model/create-form-data-models.html). Un modelo de datos de formulario depende de los orígenes de datos para el intercambio de datos.
 El modelo de datos de formulario completado se puede [descargar desde aquí](assets/sms-2fa-fdm.zip)
 
 ![fdm](assets/2FA-fdm.PNG)
@@ -63,15 +64,15 @@ Integre las invocaciones del POST del modelo de datos de formulario con el formu
 
 Si desea utilizar los recursos de muestra con sus claves de API, siga los siguientes pasos:
 
-* [Descargue el modelo](assets/sms-2fa-fdm.zip) de datos de formulario e impórtelos en AEM mediante [el administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
-* Descargue el formulario adaptable de ejemplo que se puede [descargar desde aquí](assets/sms-2fa-verification-af.zip). Este formulario de ejemplo utiliza las invocaciones de servicio del modelo de datos de formulario que se proporciona como parte de este artículo.
-* Importar el formulario en AEM desde la interfaz de usuario de [Forms y Documento](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* [Descargar la importación de ](assets/sms-2fa-fdm.zip) modelado de datos de formulario en AEM mediante  [el administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
+* Descargue el formulario adaptable de ejemplo que puede [descargarse desde aquí](assets/sms-2fa-verification-af.zip). Este formulario de ejemplo utiliza las invocaciones de servicio del modelo de datos de formulario que se proporciona como parte de este artículo.
+* Importar el formulario en AEM desde la [IU de Forms y Documento](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Abra el formulario en modo de edición. Abra el editor de reglas para el siguiente campo
 
 ![sms-send](assets/check-sms.PNG)
 
 * Edite la regla asociada al campo. Proporcione las claves de API adecuadas
 * Guardar el formulario
-* [Previsualización del formulario](http://localhost:4502/content/dam/formsanddocuments/sms-2fa-verification/jcr:content?wcmmode=disabled) y prueba la funcionalidad
+* [Previsualización del ](http://localhost:4502/content/dam/formsanddocuments/sms-2fa-verification/jcr:content?wcmmode=disabled) formulario y prueba la funcionalidad
 
 
