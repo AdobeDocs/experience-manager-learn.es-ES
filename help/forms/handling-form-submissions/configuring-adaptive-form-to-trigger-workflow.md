@@ -27,14 +27,14 @@ El formulario de ejemplo utilizado en este flujo de trabajo se basa en una plant
 
 ### Obtener las plantillas de formulario adaptables
 
-* Descargar plantilla de formulario [adaptable](assets/af-form-template.zip)
+* Descargar [Plantilla de formulario adaptable](assets/af-form-template.zip)
 * [Importar la plantilla mediante el administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
 * Cargar e instalar la plantilla Formulario adaptable
 
 ### Obtener el formulario adaptable de ejemplo
 
-* Descargar formulario [adaptable](assets/peak-application-form.zip)
-* Buscar [formularios y Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Descargar [Formulario adaptable](assets/peak-application-form.zip)
+* Vaya a [Formulario y Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Haga clic en Crear -> Carga de archivo
 * El formulario adaptable de ejemplo se colocará en una carpeta denominada [Aplicación Forms](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments/applicationforms)
 
