@@ -20,11 +20,11 @@ ht-degree: 0%
 ---
 
 
-# Generar PDF a partir de envío de formulario HTML5 {#generate-pdf-from-htm-form-submission}
+# Generar archivo PDF a partir del envío de formulario HTML5 {#generate-pdf-from-htm-form-submission}
 
 Este artículo le guiará por los pasos necesarios para generar PDF a partir de un envío de formulario HTML5 (también conocido como Mobile Forms). Esta demostración también explicará los pasos necesarios para agregar una imagen a un formulario HTML5 y combinar la imagen en el PDF final.
 
-Para ver una demostración en vivo de esta capacidad, visite el servidor [de](https://forms.enablementadobe.com/content/samples/samples.html?query=0) muestra y busque &quot;Formulario móvil a PDF&quot;.
+Para ver una demostración en vivo de esta capacidad, visite el [servidor de muestra](https://forms.enablementadobe.com/content/samples/samples.html?query=0) y busque &quot;Formulario móvil a PDF&quot;.
 
 Para combinar los datos enviados con la plantilla xdp, se hace lo siguiente
 
@@ -84,7 +84,7 @@ $("#file1").click();
 });
 ```
 
-[Perfil](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html#CreatingCustomProfiles)personalizado. El uso de perfil personalizado facilita la manipulación de objetos DOM HTML del formulario móvil. Se agrega un elemento de archivo oculto al archivo HTML.jsp. Cuando el usuario hace clic en &quot;Añadir la foto&quot; activamos el evento de clic del elemento de archivo. Esto permite al usuario examinar y seleccionar la fotografía que desea adjuntar. A continuación, utilizamos el objeto FileReader de javascript para obtener la cadena codificada base64 de la imagen. La cadena de imagen base64 se almacena en el campo de texto del formulario. Cuando se envía el formulario, se extrae este valor y se inserta en el elemento img del XML. Este XML se utiliza para combinar con el xdp para generar el PDF final.
+[Perfil](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html#CreatingCustomProfiles) personalizado. El uso de perfil personalizado facilita la manipulación de objetos DOM HTML del formulario móvil. Se agrega un elemento de archivo oculto al archivo HTML.jsp. Cuando el usuario hace clic en &quot;Añadir la foto&quot; activamos el evento de clic del elemento de archivo. Esto permite al usuario examinar y seleccionar la fotografía que desea adjuntar. A continuación, utilizamos el objeto FileReader de javascript para obtener la cadena codificada base64 de la imagen. La cadena de imagen base64 se almacena en el campo de texto del formulario. Cuando se envía el formulario, se extrae este valor y se inserta en el elemento img del XML. Este XML se utiliza para combinar con el xdp para generar el PDF final.
 
 El perfil personalizado utilizado para este artículo se ha puesto a su disposición como parte de los recursos de este artículo.
 
@@ -121,7 +121,7 @@ Para probar esta capacidad en su propio servidor, siga los pasos siguientes:
 
 * [Descargue e instale el paquete asociado con este artículo.](assets/pdf-from-mobile-form-submission.zip)
 
-* Asegúrese de que la URL de envío y el perfil de procesamiento HTML están correctamente establecidos al ver la página de propiedades de [xdp](http://localhost:4502/libs/fd/fm/gui/content/forms/formmetadataeditor.html/content/dam/formsanddocuments/schengen.xdp)
+* Asegúrese de que la dirección URL de envío y el perfil de procesamiento HTML están correctamente establecidos al ver la página de propiedades de [xdp](http://localhost:4502/libs/fd/fm/gui/content/forms/formmetadataeditor.html/content/dam/formsanddocuments/schengen.xdp)
 
 * [Previsualización del XDP como html](http://localhost:4502/content/dam/formsanddocuments/schengen.xdp/jcr:content)
 
