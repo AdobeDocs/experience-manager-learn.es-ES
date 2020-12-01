@@ -37,9 +37,9 @@ Existen tres conjuntos de reglas dinámicas que se pueden habilitar para un camp
 >
 >Las reglas en cascada SOLO se pueden crear en función de los valores de un campo desplegable. Es posible aplicar los tres conjuntos de reglas al mismo campo de metadatos, pero se recomienda que cada conjunto de reglas dependa de la misma lista desplegable de metadatos.
 
-Descargar paquete de metadatos [personalizados](assets/cascade-metadata-values-001.zip)
+Descargar [paquete de metadatos personalizados](assets/cascade-metadata-values-001.zip)
 
 ## Recursos adicionales{#additional-resources}
 
-Esquema de metadatos personalizados creado en: `/conf/global/settings/dam/adminui-extension/metadataschema/custom`. El siguiente paquete AEM aplicará esquema personalizado a la carpeta: `/content/dam/we-retail/en/activities`::
+Esquema de metadatos personalizados creado en: `/conf/global/settings/dam/adminui-extension/metadataschema/custom`. El siguiente paquete AEM aplicará esquema personalizado a la carpeta: `/content/dam/we-retail/en/activities`:
 
