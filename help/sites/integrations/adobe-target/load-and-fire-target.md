@@ -18,7 +18,7 @@ ht-degree: 3%
 ---
 
 
-# Carga y activación de una llamada de Destinatario {#load-fire-target}
+# Cargue y active una llamada de Destinatario {#load-fire-target}
 
 Obtenga información sobre cómo cargar, pasar parámetros a una solicitud de página y activar una llamada de Destinatario desde la página del sitio mediante una regla de inicio. La información de la página web se recupera y pasa como parámetros mediante la capa de datos del cliente de Adobe, que permite recopilar y almacenar datos sobre la experiencia de los visitantes en una página web y, a continuación, facilitar el acceso a estos datos.
 
@@ -26,19 +26,19 @@ Obtenga información sobre cómo cargar, pasar parámetros a una solicitud de p�
 
 ## Regla de carga de página
 
-La capa de datos del cliente de Adobe es una capa de datos controlada por eventos. Cuando se carga la capa de datos de la página de AEM, se desencadena un evento `cmp:show` . En el vídeo, la `Launch Library Loaded` regla se invoca mediante un evento personalizado. A continuación, puede encontrar los fragmentos de código utilizados en el vídeo para el evento personalizado, así como para los elementos de datos.
+La capa de datos del cliente de Adobe es una capa de datos controlada por eventos. Cuando se carga la capa de datos de la página de AEM, se activará un evento `cmp:show`. En el vídeo, la regla `Launch Library Loaded` se invoca mediante un evento personalizado. A continuación, puede encontrar los fragmentos de código utilizados en el vídeo para el evento personalizado, así como para los elementos de datos.
 
-### Evento de la página personalizada mostrada{#page-event}
+### Página personalizada Muestra el Evento{#page-event}
 
 ![La página muestra la configuración del evento y el código personalizado](assets/load-and-fire-target-call.png)
 
 En la propiedad Launch, agregue un nuevo **Evento** a la **regla**
 
-+ __Extensión:__ Núcleo
-+ __tipo de evento:__ Código personalizado
-+ __Nombre:__ Controlador de Evento de presentación de página (o algo descriptivo)
++ __Extensión:__ Core
++ __tipo de evento:Código__ personalizado
++ __Nombre:__ Page Show Evento Handler (o algo descriptivo)
 
-Toque el botón __Abrir editor__ y pegue el siguiente fragmento de código. Este código __debe__ agregarse a la Configuración __de__ Evento y a una __Acción__ posterior.
+Toque el botón __Abrir editor__ y pegue el siguiente fragmento de código. Este código __debe__ agregarse a la __Configuración de Evento__ y a una __Acción__ subsiguiente.
 
 ```javascript
 // Define the event handler function
@@ -78,11 +78,11 @@ window.adobeDataLayer.push(function (dataLayer) {
 });
 ```
 
-Una función personalizada define el `pageShownEventHandler`y escucha los eventos emitidos por AEM componentes principales, obtiene la información relevante del componente principal, lo empaqueta en un objeto de evento y activa el Evento Launch con la información de evento derivada en su carga útil.
+Una función personalizada define el `pageShownEventHandler` y escucha los eventos emitidos por AEM componentes principales, obtiene la información relevante del componente principal, lo empaqueta en un objeto evento y activa el Evento Launch con la información de evento derivada en su carga útil.
 
-La regla de inicio se activa mediante la función `trigger(...)` Launch, que __solo__ está disponible en la definición de fragmento de código personalizado de una regla.
+La regla de inicio se activa mediante la función `trigger(...)` de Launch, que __sólo__ está disponible desde la definición de fragmento de código personalizado del Evento de una regla.
 
-La `trigger(...)` función toma un objeto evento como parámetro que, a su vez, se expone en Launch Data Elements, con otro nombre reservado en Launch denominado `event`. Los elementos de datos de Launch ahora pueden hacer referencia a datos de este objeto de evento desde el `event` objeto mediante sintaxis como `event.component['someKey']`.
+La función `trigger(...)` toma un objeto evento como parámetro que, a su vez, se expone en Launch Data Elements, con otro nombre reservado en Launch denominado `event`. Los elementos de datos de Launch ahora pueden hacer referencia a datos de este objeto de evento desde el objeto `event` mediante sintaxis como `event.component['someKey']`.
 
 Si `trigger(...)` se utiliza fuera del contexto del tipo de evento de código personalizado de un Evento (por ejemplo, en una acción), el error de JavaScript `trigger is undefined` se genera en el sitio Web integrado con la propiedad Launch.
 
@@ -91,7 +91,7 @@ Si `trigger(...)` se utiliza fuera del contexto del tipo de evento de código pe
 
 ![Elementos de datos](assets/data-elements.png)
 
-Los elementos de datos de inicio de Adobe asignan los datos del objeto de evento [activado en el evento](#page-event) personalizado Página mostrada a variables disponibles en Adobe Target, a través del tipo de elemento de datos de código personalizado de la extensión Core.
+Los elementos de datos de inicio de Adobe asignan los datos del objeto de evento [activado en el evento personalizado Página mostrada](#page-event) a las variables disponibles en Adobe Target, a través del tipo de elemento de datos de código personalizado de la extensión Core.
 
 #### Elemento de datos de ID de página
 
@@ -140,7 +140,7 @@ Este código devuelve el título de la página de AEM.
 #### Solución
 
 A veces, los clientes de destinatario utilizan instancias basadas en la nube con Destinatario para realizar pruebas o con fines sencillos de prueba del concepto. Estos dominios, y muchos otros, son parte de la Lista de Sufijo Público .
-Los navegadores modernos no guardarán las cookies si utiliza estos dominios a menos que personalice la `cookieDomain` configuración mediante `targetGlobalSettings()`.
+Los navegadores modernos no guardarán las cookies si utiliza estos dominios a menos que personalice la configuración `cookieDomain` mediante `targetGlobalSettings()`.
 
 ```
 window.targetGlobalSettings = {  
