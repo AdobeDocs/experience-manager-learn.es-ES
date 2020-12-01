@@ -28,4 +28,4 @@ La función Recursos conectados permite a un autor de AEM Sites compartir sin pr
 * 03:30 — Uso de una imagen de los recursos conectados
 * 04:42 — Configuraciones de administrador para habilitar la función Recursos conectados
 
-Revise las implementaciones [admitidas para Recursos](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html#prerequisites) conectados para saber si la implementación AEM puede admitir Recursos conectados.
+Revise las [implementaciones admitidas para Recursos conectados](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html#prerequisites) para saber si la implementación de AEM puede admitir Recursos conectados.
