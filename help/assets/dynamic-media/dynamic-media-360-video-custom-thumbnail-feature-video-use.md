@@ -55,7 +55,7 @@ El vídeo de Dynamic Media ahora admite la posibilidad de seleccionar una miniat
    <tr>
       <td>Modo de ejecución de Dynamic Media</td>
       <td>Solo en el modo Scene7 de Dynamic Media</td>
-      <td>Solo en el modo Scene7 de Dynamic Media<br>
+      <td>Solo el modo Scene7 de Dynamic Media<br>
          <br>
       </td>
    </tr>
