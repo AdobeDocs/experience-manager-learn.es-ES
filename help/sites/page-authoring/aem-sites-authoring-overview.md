@@ -20,7 +20,7 @@ ht-degree: 15%
 ---
 
 
-# Descripción general de la creación {#authoring-overview}
+# Descripción general de creación {#authoring-overview}
 
 El siguiente vídeo proporciona información general sobre los conceptos básicos de creación en un entorno de creación de AEM para AEM Sites.
 
