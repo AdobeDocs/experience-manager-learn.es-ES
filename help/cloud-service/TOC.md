@@ -28,8 +28,8 @@ ht-degree: 33%
    + [Herramientas de desarrollo](./local-development-environment/development-tools.md)
    + [AEM en tiempo de ejecución local](./local-development-environment/aem-runtime.md)
    + [Herramientas de despachante local](./local-development-environment/dispatcher-tools.md)
-+ AEM de depuración{#debugging}
-   + Depuración del SDK AEM{#debugging-aem-sdk}
++ Depuración AEM{#debugging}
+   + Depuración del SDK de AEM{#debugging-aem-sdk}
       + [Información general](./debugging/aem-sdk-local-quickstart/overview.md)
       + [Registros](./debugging/aem-sdk-local-quickstart/logs.md)
       + [Depuración remota](./debugging/aem-sdk-local-quickstart/remote-debugging.md)
@@ -51,14 +51,14 @@ ht-degree: 33%
    + [Configuración del acceso a AEM paso](./accessing/walk-through.md)
 + Migración {#migration}
    + [Herramienta de transferencia de contenido](./migration/content-transfer-tool.md)
-+ Extensibilidad de cálculo de recursos{#asset-compute}
++ Extensibilidad de asset compute{#asset-compute}
    + [Información general](./asset-compute/overview.md)
    + Configurar{#set-up}
       + [Aprovisionamiento de cuentas y servicios](./asset-compute/set-up/accounts-and-services.md)
       + [Entorno de desarrollo local](./asset-compute/set-up/development-environment.md)
       + [Luciérnagas del proyecto Adobe](./asset-compute/set-up/firefly.md)
    + Desarrollar{#develop}
-      + [Creación de un proyecto de cómputo de recursos](./asset-compute/develop/project.md)
+      + [Creación de un proyecto de Asset compute](./asset-compute/develop/project.md)
       + [Configuración de variables de entorno](./asset-compute/develop/environment-variables.md)
       + [Configure manifest.yml](./asset-compute/develop/manifest.md)
       + [Desarrollar un trabajador](./asset-compute/develop/worker.md)
