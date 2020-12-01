@@ -40,7 +40,7 @@ ht-degree: 0%
 
 * Seleccione el icono &quot;lápiz&quot; para editar el texto predeterminado.
 
-* Reemplace el texto predeterminado con &quot;**Your Retirement Revenue Outlook&quot; (Perspectivas de ingresos de jubilación).**
+* Reemplazar el texto predeterminado con &quot;**Perspectivas de ingresos de jubilación&quot;**
 
 **Configuración del área de destinatario del panel derecho**
 
@@ -52,15 +52,15 @@ ht-degree: 0%
 
 * Seleccione el icono &quot;lápiz&quot; para editar el texto predeterminado.
 
-* Sustitúyase el texto predeterminado por &quot;Ingresos de jubilación mensuales **estimados&quot;.**
+* Sustitúyase el texto predeterminado por &quot;**Ingresos mensuales estimados por jubilación&quot;**
 
-## Añadir fragmento de Documento de perspectivas de ingresos de jubilación {#add-retirement-income-outlook-document-fragment}
+## Añadir fragmento de Documento de Perspectivas de Ingresos por Jubilación {#add-retirement-income-outlook-document-fragment}
 
 * Haga clic en el icono Recursos y aplique el filtro para mostrar los recursos de tipo &quot;Fragmentos de Documento&quot;. Arrastre y suelte el fragmento de documento RetirementRevenueOutlook en el área de destinatario del panel izquierdo.
 
-* Puede hacer referencia [a esta página](https://helpx.adobe.com/experience-manager/kt/forms/using/interactive-communication-web-channel-aem-forms/9.html) al añadir fragmento de documento a las áreas de contenido.
+* Puede hacer referencia [a esta página](https://helpx.adobe.com/experience-manager/kt/forms/using/interactive-communication-web-channel-aem-forms/9.html) al agregar fragmento de documento a las áreas de contenido.
 
-## Añadir el gráfico de ingresos mensuales estimados {#adding-estimated-monthly-income-chart}
+## Añadiendo el gráfico de ingresos mensuales estimados {#adding-estimated-monthly-income-chart}
 
 * Haga clic en el área de destinatario del panel derecho en el lado derecho. Haga clic en el icono &quot;+&quot; para insertar el componente de gráfico. Utilizaremos un gráfico de columnas para mostrar los ingresos mensuales estimados. Toque suavemente el componente de gráfico recién insertado. Seleccione el icono de &quot;llave inglesa&quot; para abrir la hoja de propiedades de configuración.Configure el gráfico con las siguientes propiedades como se muestra en la captura de pantalla siguiente.
 
