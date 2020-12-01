@@ -32,7 +32,7 @@ La consola Bundles es un catálogo de los paquetes OSGi, y sus detalles, impleme
 La consola Bundles se encuentra en:
 
 + Herramientas > Operaciones > Consola Web > OSGi > Paquetes
-+ Or directly at: [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
++ O directamente en: [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
 
 Al hacer clic en cada paquete, se proporcionan detalles que ayudan a depurar la aplicación.
 
@@ -49,7 +49,7 @@ La consola Componentes es un catálogo de todos los componentes OSGi implementad
 La consola Componentes se encuentra en:
 
 + Herramientas > Operaciones > Consola web > OSGi > Componentes
-+ Or directly at: [http://localhost:4502/system/console/components](http://localhost:4502/system/console/components)
++ O directamente en: [http://localhost:4502/system/console/components](http://localhost:4502/system/console/components)
 
 Aspectos clave que ayudan con las actividades de depuración:
 
@@ -66,7 +66,7 @@ Aspectos clave que ayudan con las actividades de depuración:
 La consola Modelos Sling se encuentra en:
 
 + Herramientas > Operaciones > Consola Web > Estado > Modelos Sling
-+ Or directly at: [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
++ O directamente en: [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
 
 Aspectos clave que ayudan con las actividades de depuración:
 
