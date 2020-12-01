@@ -27,15 +27,15 @@ Las plantillas editables permiten a los autores especializados crear y actualiza
 
 Las plantillas editables son la recomendación para crear un nuevo AEM Sites.
 
-**Experiencia** de creación coherente: las mejoras en la creación de AEM Sites se trasladan a la edición de plantillas, incluidos el modo de diseño en línea y el panel de árbol de contenido.
+**Experiencia**  de creación coherente: las mejoras en la creación de AEM Sites se trasladan a la edición de plantillas, incluidos el modo de diseño en línea y el panel de árbol de contenido.
 
-**Configuraciones** de directiva avanzadas: a continuación se destacan algunas configuraciones de directiva avanzadas disponibles con plantillas editables:
+**Configuraciones**  de directivas avanzadas: a continuación se destacan algunas configuraciones de directivas avanzadas disponibles con plantillas editables:
 
-* **Contenedor** de diseño: capacidad para configurar los componentes permitidos, administrar la asignación de arrastrar y soltar de los recursos y las columnas de cuadrícula adaptable.
-* **Componente** de texto: capacidad para configurar complementos del editor de texto enriquecido con una nueva interfaz de usuario y reutilizar las políticas RTE en las plantillas.
-* **Componente** de imagen: capacidad para activar o desactivar funciones como recortar, cargar archivos de escritorio con una nueva interfaz de usuario y reutilizar políticas de imagen en todas las plantillas.
+* **Contenedor**  de diseño: capacidad para configurar los componentes permitidos, administrar la asignación de arrastrar y soltar de los recursos y las columnas de cuadrícula adaptable.
+* **Componente**  de texto: capacidad para configurar complementos del editor de texto enriquecido con una nueva interfaz de usuario y reutilizar las políticas RTE en las plantillas.
+* **Componente**  de imagen: capacidad para activar o desactivar funciones como recortar, cargar archivos de escritorio con una nueva interfaz de usuario y reutilizar políticas de imagen en todas las plantillas.
 
-Las plantillas editables se encuentran en **Herramientas** `>` General **** Plantillas `>` ****.\
+Las plantillas editables se encuentran en **Herramientas** `>` **General** `>` **Plantillas**.\
 URL de plantillas editables (instancia de AEM local): [http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
 
 ## Recursos adicionales {#additional-resources}
