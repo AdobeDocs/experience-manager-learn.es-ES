@@ -34,6 +34,6 @@ El modelo de datos de formulario depende de una fuente de datos correctamente co
 
 El modelo de datos de formulario es la base de todas las comunicaciones interactivas. La operación Obtener/Leer del Modelo de datos de formulario recuperará los datos del origen de datos del servidor y se utilizará para rellenar el documento de comunicaciones interactivas.
 
-Para obtener más información sobre la configuración de las fuentes de datos, siga este [vínculo&quot;](parttwo.md)
+Para obtener más información sobre la configuración de las fuentes de datos, siga este [vínculo`](parttwo.md)
 
 Una vez creado el modelo de datos de formulario, puede utilizarlo como base para crear fragmentos de documento y Documentos de comunicación interactiva.
