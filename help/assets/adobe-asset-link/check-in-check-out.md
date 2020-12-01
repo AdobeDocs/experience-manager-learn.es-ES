@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Cierre de compra {#check-in-check-out}
+# Registro de entrada y salida {#check-in-check-out}
 
 Adobe Asset le permite extraer AEM Assets directamente de la aplicación creativa en la que está trabajando y puede empezar a realizar modificaciones inmediatamente. Puede volver a registrar los recursos en AEM Assets fácilmente con las versiones y comentarios adecuados una vez que haya terminado de editarlos en la aplicación Creative Cloud.
 
