@@ -24,7 +24,7 @@ ht-degree: 0%
 
 # Añadir paneles secundarios al panel raíz {#adding-child-panels-to-root-panel}
 
-Al agregar paneles secundarios al panel raíz, **asegúrese de que se encuentra en el modo de edición. El botón de edición se encuentra en la parte superior derecha del explorador.**
+Al agregar paneles secundarios al panel raíz, **Asegúrese de que se encuentra en el modo de edición. El botón de edición se encuentra en la parte superior derecha del explorador.**
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/28536?quality=9&learn=on)
