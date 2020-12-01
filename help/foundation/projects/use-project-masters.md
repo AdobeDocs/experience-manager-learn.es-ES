@@ -22,16 +22,16 @@ Project Masters simplifica considerablemente la administración de usuarios y eq
 
 >[!VIDEO](https://video.tv.adobe.com/v/17740/?quality=9&learn=on)
 
-Los administradores ahora pueden crear un equipo **[!DNL Master Project]** y asignar usuarios a funciones o permisos como parte de un equipo de proyecto. Los proyectos se pueden crear a partir de un proyecto maestro y heredarán automáticamente la pertenencia al equipo. Esto oferta varias ventajas:
+Los administradores ahora pueden crear un **[!DNL Master Project]** y asignar usuarios a funciones/permisos como parte de un equipo de proyecto. Los proyectos se pueden crear a partir de un proyecto maestro y heredarán automáticamente la pertenencia al equipo. Esto oferta varias ventajas:
 
 * Reutilización de equipos existentes en varios proyectos
 * Acelera la creación de proyectos, ya que no es necesario volver a crear los equipos manualmente
 * Administrar la pertenencia a equipos desde una ubicación central y los proyectos heredan automáticamente cualquier actualización de los equipos
 * evita la creación de ACL de duplicado que pueden causar problemas de rendimiento
 
-[!DNL Master Projects] puede crearse en la carpeta [!UICONTROL Maestros] , en [!UICONTROL AEM proyectos]. Una vez [!DNL Master Project] creado un proyecto, se mostrará como una opción junto con las plantillas disponibles en el asistente cuando se creen nuevos proyectos.
+[!DNL Master Projects] puede crearse en la carpeta   Mastersen  [!UICONTROL AEM proyectos]. Una vez creado un [!DNL Master Project], se mostrará como una opción junto con las plantillas disponibles en el asistente cuando se creen nuevos proyectos.
 
-[!DNL Project Masters] URL (instancia local de AEM Author): [http://localhost:4502/projects.html/content/projects/masters](http://localhost:4502/projects.html/content/projects/masters)
+[!DNL Project Masters] URL (instancia local de AEM Author):  [http://localhost:4502/projects.html/content/projects/masters](http://localhost:4502/projects.html/content/projects/masters)
 
 ## Eliminar [!DNL Project Masters]
 
@@ -39,7 +39,7 @@ Al eliminar un proyecto maestro, los proyectos derivados no se pueden utilizar.
 
 Antes de eliminar un proyecto maestro, asegúrese de que todos los proyectos derivados se hayan terminado y eliminado de AEM. Asegúrese de guardar los datos del proyecto necesarios antes de eliminar los proyectos derivados. Una vez que se eliminan todos los proyectos derivados de AEM, el proyecto maestro puede eliminarse con seguridad.
 
-## Marcar [!DNL Project Masters] como inactivo
+## Marcar [!DNL Project Masters] como Inactivo
 
 Al cambiar el estado del proyecto maestro a inactivo en las propiedades del proyecto, los proyectos maestros inactivos desaparecen de la lista de proyectos maestros.
 
@@ -51,4 +51,4 @@ Para mostrar los proyectos principales inactivos, active el botón de filtro &qu
 
 [!DNL Project Masters] trabajar definiendo un conjunto de grupos de usuarios AEM (propietarios, editor y observador) y permitiendo que los proyectos derivados hagan referencia y reutilicen esos grupos de usuarios definidos centralmente.
 
-Esto reduce el número total de grupos de usuarios necesarios en AEM. Antes [!DNL Project Masters], cada proyecto creaba 3 grupos de usuarios con las ACE correspondientes para hacer cumplir el permiso, de modo que 100 proyectos producían 300 grupos de usuarios. Project Masters permite que cualquier número de proyectos reutilice los mismos 3 grupos, suponiendo que la pertenencia compartida se ajuste a los requisitos comerciales de todo el proyecto.
+Esto reduce el número total de grupos de usuarios necesarios en AEM. Antes de [!DNL Project Masters], cada proyecto creaba 3 grupos de usuarios con las ACE correspondientes para aplicar permisos, de modo que 100 proyectos producían 300 grupos de usuarios. Project Masters permite que cualquier número de proyectos reutilice los mismos 3 grupos, suponiendo que la pertenencia compartida se ajuste a los requisitos comerciales de todo el proyecto.
