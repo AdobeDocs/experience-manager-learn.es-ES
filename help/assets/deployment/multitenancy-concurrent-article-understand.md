@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Comprensión de la multiplicación y el desarrollo simultáneo {#understanding-multitenancy-and-concurrent-development}
+# Explicación de la Multitenencia y el Desarrollo Simultáneo {#understanding-multitenancy-and-concurrent-development}
 
 ## Introducción {#introduction}
 
@@ -96,7 +96,7 @@ Esto no elimina la necesidad de que varios equipos dependan del mismo conjunto d
 
 Para garantizar que los cambios realizados en este paquete principal no interrumpan la funcionalidad del sistema, recomendamos que un desarrollador o equipo de desarrolladores sénior mantenga la supervisión. Una opción es tener un único equipo que gestione todos los cambios de este paquete; otra es que los equipos envíen solicitudes de extracción que se revisen y combinen con estos recursos. Es importante que los equipos diseñen y acuerden un modelo de gobernanza y que los desarrolladores lo sigan.
 
-## Administración del ámbito y nbsp de la implementación {#managing-deployment-scope}
+## Administración del ámbito de implementación y nbsp {#managing-deployment-scope}
 
 A medida que distintos equipos implementan su código en el mismo repositorio, es importante que no sobrescriban los cambios de los demás. AEM tiene un mecanismo para controlar esto al implementar los paquetes de contenido, el filtro. archivo XML. Es importante que no haya superposición entre filtros.  archivos XML, de lo contrario, la implementación de un equipo podría potencialmente borrar la implementación anterior de otro equipo. Para ilustrar este punto, consulte los siguientes ejemplos de archivos de filtro bien diseñados o problemáticos:
 
