@@ -20,7 +20,7 @@ ht-degree: 2%
 ---
 
 
-# Registro de tipos de recursos personalizados {#registering-custom-asset-types}
+# Registrando tipos de recursos personalizados {#registering-custom-asset-types}
 
 Activación de tipos de recursos personalizados para incluirlos en el portal de AEMForms
 
@@ -41,12 +41,12 @@ Pasos para configurar la ruta base
 1. Asegúrese de que la ubicación de la superposición es &quot;/apps/&quot;
 1. Haga clic en Aceptar
 1. Haga clic en Guardar
-1. Navegue a la nueva estructura creada en **/apps/fd/fp/Extensions/querybuilder/basepath**
+1. Vaya a la nueva estructura creada en **/apps/fd/fp/Extensions/querybuilder/basepath**
 
-1. Cambiar el valor de la propiedad path a **&quot;/content/dam&quot;**
+1. Cambie el valor de la propiedad path a **&quot;/content/dam&quot;**
 1. Haga clic en Guardar
 
-Al especificar la propiedad path en **&quot;/content/dam&quot;** , básicamente está configurando la ruta base en /content/dam. Esto se puede verificar abriendo el componente Búsqueda y listado.
+Al especificar la propiedad path en **&quot;/content/dam&quot;**, básicamente está configurando la ruta base en /content/dam. Esto se puede verificar abriendo el componente Búsqueda y listado.
 
 ![basepath](assets/basepath.png)
 
@@ -61,12 +61,12 @@ Se ha añadido una nueva ficha (Lista de recursos) en el componente de búsqueda
 
 **Pasos para registrar el tipo de recurso personalizado**
 
-1. Crear nodo de superposición de **/libs/fd/fp/extension/querybuilder/assettypes**
+1. Cree un nodo de superposición de **/libs/fd/fp/extension/querybuilder/assettypes**
 
 1. Definir la ubicación de la superposición como &quot;/apps&quot;
 1. Navegue a la nueva estructura creada en **/apps/fd/fp/extension/querybuilder/assettypes **
 
-1. En esta ubicación, cree un nodo &#39;nt:desestructurado&#39; para el tipo que se va a registrar y asigne un nombre al nodo **mp4files. Añadir las dos propiedades siguientes a este nodo mp4files**
+1. En esta ubicación, cree un nodo &#39;nt:desestructurado&#39; para el tipo que se va a registrar, asigne un nombre al nodo **mp4files. Añada las dos propiedades siguientes a este nodo mp4files**
 
    1. Añada la propiedad jcr:title para especificar el nombre para mostrar del tipo de recurso. Establezca el valor de jcr:title en &quot;Archivos Mp4&quot;.
    1. Añada la propiedad &quot;type&quot; y defina su valor en &quot;videos&quot;. Este es el valor que usamos en nuestra plantilla para lista de recursos del tipo de vídeos. Guarde los cambios.
@@ -89,5 +89,5 @@ Después de realizar los pasos anteriores, el nuevo tipo de recurso (Archivos Mp
 
 [Si tiene problemas para que esto funcione, puede importar el siguiente paquete.](assets/assettypeskt1.zip) El paquete tiene dos tipos de recursos personalizados definidos. Archivos y documentos de Word Mp4. Sugerir que eche un vistazo a **/apps/fd/fp/extension/querybuilder/assettypes**
 
-[Instale el paquete](assets/customportalpage.zip)customPortal. Este paquete contiene una página de portal de muestra. Esta página se utilizará en la parte 2 de este tutorial
+[Instale el paquete](assets/customportalpage.zip) customPortal. Este paquete contiene una página de portal de muestra. Esta página se utilizará en la parte 2 de este tutorial
 
