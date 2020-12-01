@@ -28,9 +28,9 @@ La depuración de los registros y el contenido de la caché de Dispatcher Tools 
 
 ## Registros de herramientas de despachador
 
-Los registros de herramientas de despachante están disponibles mediante el comando `stdout` o el `bin/docker_run` , o con más detalle, disponibles en el contenedor de acoplamiento en `/etc/https/logs`.
+Los registros de herramientas de despachante están disponibles mediante el comando `stdout` o `bin/docker_run`, o con más detalles, disponibles en el contenedor de Docker en `/etc/https/logs`.
 
-Consulte [Registros](./logs.md#dispatcher-logs) de Dispatcher para obtener instrucciones sobre cómo acceder directamente a los registros del contenedor del Docker de Dispatcher Tools.
+Consulte [Registros de Dispatcher](./logs.md#dispatcher-logs) para obtener instrucciones sobre cómo acceder directamente a los registros del contenedor del Docker de Dispatcher Tools.
 
 ## Caché de herramientas de despachante
 
@@ -56,7 +56,7 @@ $ docker exec -it <CONTAINER ID> /bin/sh
 
 ### Copia de los registros de Docker al sistema de archivos local
 
-Los registros de Dispatcher se pueden copiar desde el contenedor de Docker en `/mnt/var/www/html` el sistema de archivos local para inspeccionar con sus herramientas favoritas. Tenga en cuenta que se trata de una copia puntual y no proporciona actualizaciones en tiempo real en la caché.
+Los registros de Dispatcher se pueden copiar desde el contenedor de Docker en `/mnt/var/www/html` al sistema de archivos local para su inspección con sus herramientas favoritas. Tenga en cuenta que se trata de una copia puntual y no proporciona actualizaciones en tiempo real en la caché.
 
 ```shell
 $ docker ps
