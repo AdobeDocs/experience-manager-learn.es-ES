@@ -26,7 +26,7 @@ En este artículo, vemos el correo electrónico como un mecanismo de envío para
 
 Veamos el siguiente fragmento de código. Este código forma parte de GET.jsp, que se activa cuando el usuario hace clic en el vínculo del correo electrónico para realizar la vista del documento de canal web. Obtenemos al usuario que ha iniciado sesión usando el comando jackrabbit UserManager. Una vez que recibimos el usuario que ha iniciado sesión, obtenemos el valor de la propiedad accountNumber asociada al perfil del usuario.
 
-A continuación, asociamos el valor accountNumber con una clave denominada accountnumber en el mapa. El **número** de cuenta clave se define en el modo de datos de formulario como un atributo de solicitud. El valor de este atributo se pasa como un parámetro de entrada al método de servicio de lectura de Form Data Modal.
+A continuación, asociamos el valor accountNumber con una clave denominada accountnumber en el mapa. La clave **accountnumber** se define en el modo de datos del formulario como un atributo de solicitud. El valor de este atributo se pasa como un parámetro de entrada al método de servicio de lectura de Form Data Modal.
 
 Línea 7: Estamos enviando la solicitud recibida a otro servlet, en función del tipo de recurso identificado por la dirección URL del Documento de comunicación interactiva. La respuesta devuelta por este segundo servlet se incluye en la respuesta del primer servlet.
 
@@ -49,4 +49,4 @@ Representación visual del código de línea 7
 Atributo de solicitud definido para el servicio de lectura del modal de datos de formulario
 
 
-[Ejemplo de paquete](assets/webchanneldelivery.zip)de AEM.
+[Ejemplo de paquete](assets/webchanneldelivery.zip) de AEM.
