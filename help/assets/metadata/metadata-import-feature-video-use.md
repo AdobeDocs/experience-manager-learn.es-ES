@@ -31,9 +31,9 @@ Las funciones de importación y exportación de metadatos de AEM Assets permiten
 
 >[!VIDEO](https://video.tv.adobe.com/v/21374/?quality=9&learn=on)
 
-Descargar la carpeta de deportes [WeRetail](assets/we-retail-sports.zip)
+Descargar [Carpeta deportiva WeRetail](assets/we-retail-sports.zip)
 
-Descargar paquete de metadatos [de recursos](assets/we-retail-sports-asset-metadata.zip)
+Descargar [paquete de metadatos de recursos](assets/we-retail-sports-asset-metadata.zip)
 
 ## Formato de archivo de metadatos {#metadata-file-format}
 
@@ -59,7 +59,7 @@ Descargar paquete de metadatos [de recursos](assets/we-retail-sports-asset-metad
    * Incorrecto: `Dc:Ttle {{String}}`
 
 * El tipo de propiedad distingue entre mayúsculas y minúsculas
-* Se admiten todos los tipos [de propiedades](https://docs.adobe.com/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/PropertyType.html) JCR válidos
+* Se admiten todos los tipos de propiedades [JCR válidos](https://docs.adobe.com/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/PropertyType.html)
 
 * Formato de propiedad de varios valores: `<metadata property name> {{<property type : MULTI }}`
 
