@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Generar Documento de registros (DOR) mediante programación
 
-Este artículo ilustra el uso del `com.adobe.aemds.guide.addon.dor.DoRService API` para generar el **Documento de Grabaciones** mediante programación. [Documento de registro](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) es una versión PDF de los datos capturados en el formulario adaptable.
+Este artículo ilustra el uso de `com.adobe.aemds.guide.addon.dor.DoRService API` para generar **Documento de registro** mediante programación. [Documento de ](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) grabaciones es una versión PDF de los datos capturados en el formulario adaptable.
 
 1. El siguiente es el fragmento de código. La primera línea recibe el servicio DOR.
 1. Establezca DoROoptions.
@@ -59,7 +59,7 @@ Para probar esto en su sistema local, siga los pasos siguientes
 El PDF no se muestra en la nueva ficha del explorador:
 
 1. Asegúrese de que no está bloqueando las ventanas emergentes en el explorador
-1. Asegúrese de que ha seguido los pasos descritos en este [artículo](service-user-tutorial-develop.md)
-1. Asegúrese de que el paquete &#39;DevelopingWithServiceUser&#39; está en estado *activo*
-1. Asegúrese de que los datos del usuario del sistema &#39; tienen permisos de lectura, modificación y creación en el nodo siguiente `/content/usergenerated/content/aemformsenablement`
+1. Haga que haya seguido los pasos descritos en este [artículo](service-user-tutorial-develop.md)
+1. Asegúrese de que el paquete &#39;DevelopingWithServiceUser&#39; está en *estado activo*
+1. Asegúrese de que los datos &#39; del usuario del sistema &#39; tienen permisos de lectura, modificación y creación en el nodo siguiente `/content/usergenerated/content/aemformsenablement`
 
