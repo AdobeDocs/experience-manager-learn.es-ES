@@ -32,22 +32,22 @@ El paso de validación simplemente garantiza que las configuraciones básicas de
 
 + __Mensaje de error:__ El entorno está en un estado no válido.
    ![El entorno está en un estado no válido](./assets/build-and-deployment/validation__invalid-state.png)
-+ __Causa:__ El entorno de destinatario del oleoducto se encuentra en un estado de transición en el que no puede aceptar nuevas compilaciones.
-+ __Resolución:__ Espere a que el estado se resuelva en un estado de ejecución (o actualización disponible). Si se está eliminando el entorno, vuelva a crear el entorno o elija otro entorno para generarlo.
++ __Causa:__ el entorno de destinatario de la canalización se encuentra en un estado de transición en el que no puede aceptar nuevas compilaciones.
++ __Resolución:__ espere a que el estado se resuelva en un estado en ejecución (o actualice disponible). Si se está eliminando el entorno, vuelva a crear el entorno o elija otro entorno para generarlo.
 
 ### No se encuentra el entorno asociado con la canalización
 
 + __Mensaje de error:__ El entorno se marca como eliminado.
    ![El entorno se marca como eliminado](./assets/build-and-deployment/validation__environment-marked-as-deleted.png)
-+ __Causa:__ Se eliminó el entorno para el que está configurada la canalización.
++ __Causa:__ Se ha eliminado el entorno que está configurado para usar la canalización.
 Aunque se vuelva a crear un nuevo entorno con el mismo nombre, Cloud Manager no volverá a asociar automáticamente la canalización a ese mismo entorno con el mismo nombre.
 + __Resolución:__ Edite la configuración de la canalización y vuelva a seleccionar el entorno en el que se va a implementar.
 
 ### No se encuentra la rama Git asociada con la tubería
 
-+ __Mensaje de error:__ Canalización no válida: XXXXXX. Motivo=Branch=xxxx no encontrado en el repositorio.
++ __Mensaje de error:Canalización__ no válida: XXXXXX. Motivo=Branch=xxxx no encontrado en el repositorio.
    ![Canalización no válida: XXXXXX. Motivo=Branch=xxxx no encontrado en el repositorio](./assets/build-and-deployment/validation__branch-not-found.png)
-+ __Causa:__ Se ha eliminado la rama Git en la que está configurada la canalización.
++ __Causa:__ Se ha eliminado la rama Git que está configurada para utilizar la canalización.
 + __Resolución:__ Vuelva a crear la rama Git que falta con el mismo nombre o vuelva a configurar la canalización para que se genere a partir de una rama diferente existente.
 
 ## Prueba de unidad y compilación
@@ -58,10 +58,10 @@ La fase de generación y prueba unitaria realiza una compilación Maven (`mvn cl
 
 Los errores detectados en esta fase deben ser reproducibles al construir el proyecto localmente, con las siguientes excepciones:
 
-+ Se utiliza una dependencia válida no disponible en [Maven Central](https://search.maven.org/) y el repositorio de Maven que contiene la dependencia es:
++ Se utiliza una dependencia válida no disponible en [Maven Central](https://search.maven.org/) y el repositorio Maven que contiene la dependencia es:
    + Inaccesible desde Cloud Manager, como un repositorio privado interno de Maven o el repositorio de Maven requiere autenticación y se han proporcionado credenciales incorrectas.
-   + No está registrado explícitamente en el `pom.xml`proyecto. Tenga en cuenta que, al incluir repositorios Maven, se desaconseja ya que aumenta los tiempos de compilación.
-+ Las pruebas unitarias fallan debido a problemas de tiempo. Esto puede ocurrir cuando las pruebas unitarias distinguen la distribución de los tiempos. Un indicador sólido se basa `.sleep(..)` en el código de prueba.
+   + No está registrado explícitamente en el `pom.xml` proyecto. Tenga en cuenta que, al incluir repositorios Maven, se desaconseja ya que aumenta los tiempos de compilación.
++ Las pruebas unitarias fallan debido a problemas de tiempo. Esto puede ocurrir cuando las pruebas unitarias distinguen la distribución de los tiempos. Un indicador sólido depende de `.sleep(..)` en el código de prueba.
 + Uso de complementos Maven no admitidos.
 
 ## Análisis de código
@@ -70,11 +70,11 @@ Los errores detectados en esta fase deben ser reproducibles al construir el proy
 
 El análisis de código realiza una análisis de código estático mediante una combinación de optimizaciones específicas de AEM y Java.
 
-El análisis de código resulta en un error de compilación si existe una vulnerabilidad de seguridad crítica en el código. Se pueden anular menos infracciones, pero se recomienda que se corrijan. Tenga en cuenta que la digitalización del código es imperfecta y puede dar como resultado [falsos positivos](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/understand-test-results.html#dealing-with-false-positives).
+El análisis de código resulta en un error de compilación si existe una vulnerabilidad de seguridad crítica en el código. Se pueden anular menos infracciones, pero se recomienda que se corrijan. Tenga en cuenta que el análisis de código es imperfecto y puede resultar en [falsos positivos](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/understand-test-results.html#dealing-with-false-positives).
 
 Para resolver problemas de análisis de código, descargue el informe con formato CSV proporcionado por Cloud Manager mediante el botón **Descargar detalles** y revise las entradas.
 
-Para obtener más información, consulte AEM reglas específicas, consulte las documentaciones de Cloud Manager sobre las reglas [de digitalización de código específicas de AEM](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/how-to-use/custom-code-quality-rules.html)personalizadas.
+Para obtener más información, consulte AEM reglas específicas, consulte las [reglas de digitalización de código específicas de AEM personalizadas de Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/how-to-use/custom-code-quality-rules.html).
 
 ## Generar imágenes
 
@@ -96,27 +96,27 @@ set the ‘mergeConfigurations’ flag to ‘true’ if you want to merge multip
 
 #### Causa 1
 
-+ __Causa:__ El paquete todo del proyecto de AEM contiene varios paquetes de código, y la misma configuración OSGi la proporcionan más de uno de los paquetes de código, lo que resulta en un conflicto, por lo que el paso Generar imagen no puede decidir qué se debe usar, con lo que se produce un error en la compilación. Tenga en cuenta que esto no se aplica a las configuraciones de fábrica de OSGi, siempre que tengan nombres únicos.
-+ __Resolución:__ Revise todos los paquetes de código (incluidos los paquetes de código de terceros incluidos) que se implementan como parte de la aplicación AEM, buscando configuraciones OSGi de duplicado que se resuelven, mediante runmode, en el entorno de destinatario. La guía del mensaje de error de &quot;establecer el indicador mergeConfigurations en true&quot; no es posible en AEM como servicio de nube y debe ignorarse.
++ __Causa:__ el paquete completo del proyecto de AEM contiene varios paquetes de código y más de uno de los paquetes de código proporciona la misma configuración OSGi, lo que provoca un conflicto, por lo que el paso Generar imagen no puede decidir qué se debe usar, con lo que se produce un error en la compilación. Tenga en cuenta que esto no se aplica a las configuraciones de fábrica de OSGi, siempre que tengan nombres únicos.
++ __Resolución:__ Revise todos los paquetes de código (incluidos los paquetes de código de terceros incluidos) que se implementan como parte de la aplicación de AEM, buscando configuraciones OSGi de duplicado que se resuelven, mediante runmode, en el entorno de destinatario. La guía del mensaje de error de &quot;establecer el indicador mergeConfigurations en true&quot; no es posible en AEM como servicio de nube y debe ignorarse.
 
 #### Causa 2
 
-+ __Causa:__ El AEM proyecto incluye incorrectamente el mismo paquete de código dos veces, lo que resulta en la duplicación de cualquier configuración OSGi contenida en dicho paquete.
-+ __Resolución:__ Revise todos los paquetes pom.xml incorporados en el proyecto all y asegúrese de que tienen la `filevault-package-maven-plugin` configuración [configurada en](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#cloud-manager-target) `<cloudManagerTarget>none</cloudManagerTarget>`.
++ __Causa:__ El proyecto de AEM incluye incorrectamente el mismo paquete de código dos veces, lo que resulta en la duplicación de cualquier configuración OSGi contenida en dicho paquete.
++ __Resolución:__ Revise todos los paquetes de pom.xml incrustados en el proyecto completo y asegúrese de que tienen la  `filevault-package-maven-plugin` [](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#cloud-manager-target) configuración establecida en  `<cloudManagerTarget>none</cloudManagerTarget>`.
 
 ### Secuencia de comandos de reenvío mal formada
 
 Las secuencias de comandos de informes definen el contenido de línea de base, los usuarios, las ACL, etc. En AEM como Cloud Service, las secuencias de comandos de informes se aplican durante la generación de imágenes, pero en AEM inicio rápido local del SDK se aplican cuando se activa la configuración de fábrica de informes OSGi. Debido a esto, es posible que las secuencias de comandos de informe no se ejecuten correctamente (con el registro) en AEM inicio rápido local del SDK, pero que se produzca un error en el paso Generar imagen, lo que detendrá la implementación.
 
-+ __Causa:__ La secuencia de comandos de informe no está bien formada. Tenga en cuenta que esto puede dejar el repositorio en un estado incompleto, ya que cualquier secuencia de comandos de informe después de que la secuencia de comandos fallida se ejecute en el repositorio.
-+ __Resolución:__ Revise el inicio rápido local del SDK de AEM cuando se implementa la configuración OSGi de la secuencia de comandos de informe para determinar si los errores son y cuáles.
++ __Causa:__ Una secuencia de comandos de informe tiene un formato incorrecto. Tenga en cuenta que esto puede dejar el repositorio en un estado incompleto, ya que cualquier secuencia de comandos de informe después de que la secuencia de comandos fallida se ejecute en el repositorio.
++ __Resolución:__ Revise el inicio rápido local del SDK de AEM cuando se implemente la configuración OSGi de la secuencia de comandos de informe para determinar si los errores son y cuáles.
 
 ### Dependencia de contenido de informes no satisfecha
 
 Las secuencias de comandos de informes definen el contenido de línea de base, los usuarios, las ACL, etc. En AEM inicio rápido local del SDK, las secuencias de comandos de informes se aplican cuando se activa la configuración de fábrica de OSGi del informe o, en otras palabras, después de que el repositorio esté activo y pueda haber realizado cambios de contenido directamente o a través de paquetes de contenido. En AEM como Cloud Service, las secuencias de comandos de informe se aplican durante la generación de imágenes a un repositorio del que puede no haber contenido del que dependa la secuencia de comandos de informe.
 
-+ __Causa:__ Una secuencia de comandos de informe depende del contenido que no existe.
-+ __Resolución:__ Asegúrese de que existe el contenido del cual depende la secuencia de comandos de informe. A menudo, esto indica que hay secuencias de comandos de informe insuficientemente definidas que carecen de directivas que definan estas estructuras de contenido que faltan, pero que son necesarias. Esto se puede reproducir localmente eliminando AEM, desempaquetando la Jar y agregando la configuración OSGi de informe que contiene la secuencia de comandos de informe a la carpeta de instalación, y comenzando AEM. El error se presentará en el archivo error.log del inicio rápido local del SDK de AEM.
++ __Causa:__ una secuencia de comandos de informe depende del contenido que no existe.
++ __Resolución:__ asegúrese de que existe el contenido del que depende la secuencia de comandos de informe. A menudo, esto indica que hay secuencias de comandos de informe insuficientemente definidas que carecen de directivas que definan estas estructuras de contenido que faltan, pero que son necesarias. Esto se puede reproducir localmente eliminando AEM, desempaquetando la Jar y agregando la configuración OSGi de informe que contiene la secuencia de comandos de informe a la carpeta de instalación, y comenzando AEM. El error se presentará en el archivo error.log del inicio rápido local del SDK de AEM.
 
 
 ### La versión de los componentes principales de la aplicación es buena a la versión implementada
@@ -133,8 +133,8 @@ Es posible que el paso Generar imagen falle cuando:
 Para evitar este error, cada vez que haya disponible una actualización del AEM como entorno de Cloud Service, incluya la actualización como parte de la siguiente compilación/implementación y asegúrese siempre de que las actualizaciones se incluyen después de incrementar la versión de los componentes principales en la base de código de la aplicación.
 
 + __Síntomas:__
-El paso Generar imagen falla con un sistema de informes ERROR que 
-`com.adobe.cq.wcm.core.components...` el `core` proyecto no pudo importar los paquetes en intervalos de versiones específicos.
+el paso Generar imagen falla con un sistema de informes ERROR que 
+`com.adobe.cq.wcm.core.components...` el  `core` proyecto no pudo importar los paquetes en intervalos de versiones específicos.
 
    ```
    [ERROR] Bundle com.example.core:0.0.3-SNAPSHOT is importing package(s) Package com.adobe.cq.wcm.core.components.models;version=[12.13,13) in start level 20 but no bundle is exporting these for that start level in the required version range.
@@ -144,7 +144,7 @@ El paso Generar imagen falla con un sistema de informes ERROR que
    [INFO] ------------------------------------------------------------------------
    ```
 
-+ __Causa:__  El paquete OSGi de la aplicación (definido en el `core` proyecto) importa clases Java de la dependencia principal de los componentes principales, a un nivel de versión diferente al que se implementa en AEM como Cloud Service.
++ __Causa:__  el paquete OSGi de la aplicación (definido en el  `core` proyecto) importa clases Java de la dependencia principal de los componentes principales, en un nivel de versión diferente al que se implementa en AEM como Cloud Service.
 + __Resolución:__
    + Con Git, vuelva a una confirmación de trabajo que exista antes del incremento de la versión del componente principal. Inserte esta confirmación en una rama Git del Administrador de nube y realice una actualización del entorno desde esta rama. Esto actualizará AEM como Cloud Service a la versión de AEM más reciente, que incluirá la versión de componentes principales más reciente. Una vez que el AEM como Cloud Service se haya actualizado a la versión de AEM más reciente, que tendrá la versión más reciente de Componentes principales, vuelva a implementar el código de error original.
    + Para reproducir este problema de forma local, asegúrese de que la versión AEM del SDK sea la misma AEM versión que utiliza el AEM como entorno Cloud Service.
@@ -154,7 +154,7 @@ El paso Generar imagen falla con un sistema de informes ERROR que
 
 Si los enfoques de solución de problemas anteriores no resuelven el problema, cree un caso de soporte de Adobe mediante:
 
-+ [Adobe Admin Console](https://adminconsole.adobe.com) > Ficha Asistencia técnica > Crear caso
++ [Adobe Admin Console](https://adminconsole.adobe.com) > Ficha Asistencia > Crear caso
 
    _Si es miembro de varias organizaciones de Adobe, asegúrese de que la organización de Adobe que tiene una canalización defectuosa esté seleccionada en el conmutador de organizaciones de Adobe antes de crear el caso._
 
@@ -162,7 +162,7 @@ Si los enfoques de solución de problemas anteriores no resuelven el problema, c
 
 El paso Implementar en es responsable de tomar el artefacto de código generado en Generar imagen, inicio los nuevos servicios AEM Author y Publish que lo utilizan y, una vez que se ha realizado correctamente, elimina los antiguos servicios AEM Author y Publish. Los índices y paquetes de contenido mutable también se instalan y actualizan en este paso.
 
-Familiarícese con [AEM como registros](./logs.md) de Cloud Service antes de depurar el paso Implementar en. El `aemerror` registro contiene información sobre el inicio y el cierre de pods que puede ser pertinente para la implementación en problemas. Tenga en cuenta que el registro disponible mediante el botón Descargar registro en el paso Implementar en del Administrador de nube no es el `aemerror` registro y no contiene información detallada relacionada con el inicio de sus aplicaciones.
+Familiarícese con [AEM como registros de Cloud Service](./logs.md) antes de depurar el paso Implementar en. El registro `aemerror` contiene información sobre el inicio y el cierre de pods que puede ser pertinente para la implementación en problemas. Tenga en cuenta que el registro disponible mediante el botón Descargar registro en el paso Implementar en del Administrador de nube no es el registro `aemerror` y no contiene información detallada relacionada con el inicio de sus aplicaciones.
 
 ![Implementar en](./assets/build-and-deployment/deploy-to.png)
 
@@ -181,21 +181,21 @@ Los tres motivos principales por los que el paso Implementar en puede fallar:
 
 El código que se ejecuta durante el inicio del servicio de AEM recientemente implementado lleva tanto tiempo que el tiempo de espera de Cloud Manager finaliza antes de que se pueda completar la implementación. En estos casos, la implementación puede tener éxito, incluso aunque el estado del Administrador de nube haya informado como Fallido.
 
-+ __Causa:__ El código personalizado puede ejecutar operaciones, como grandes consultas o transmisiones de contenido, que se activan al principio en el paquete OSGi o en los ciclos de vida del componente, lo que retrasa considerablemente el tiempo de activación del inicio de AEM.
-+ __Resolución:__ Revise la implementación de código que se ejecute al principio del ciclo vital del OSGi Bundle, y revise los registros de los servicios de AEM Author y Publish en cuanto se produzca el error (hora de inicio de sesión en GMT), como muestra el Administrador de nube, y busque mensajes de registro que indiquen cualquier proceso de registro personalizado que se esté ejecutando. `aemerror`
++ __Causa:El código__ personalizado puede ejecutar operaciones, como grandes consultas o transiciones de contenido, que se activan al principio en ciclos de vida de componentes o paquetes OSGi y retrasan significativamente el tiempo de activación del inicio de AEM.
++ __Resolución:__ Revise la implementación del código que se ejecuta al principio del ciclo vital del OSGi Bundle, y revise los  `aemerror` registros de AEM Author y los servicios de publicación en el momento del error (hora de registro en GMT) como muestra el Administrador de nube, y busque mensajes de registro que indiquen cualquier proceso de registro personalizado que se esté ejecutando.
 
 ### Código o configuración incompatible
 
 La mayoría de las infracciones de código y configuración se detectan anteriormente en la compilación, pero es posible que el código personalizado o la configuración sean incompatibles con la AEM como Cloud Service y no se detecten hasta que se ejecute en el contenedor.
 
-+ __Causa:__ El código personalizado puede provocar operaciones prolongadas, como grandes consultas o transmisiones de contenido, que se activan al principio en el paquete OSGi o ciclos de vida de componentes que retrasan considerablemente el tiempo de activación del inicio de AEM.
-+ __Resolución:__ Revise los `aemerror` registros de los servicios de AEM Author y Publish a la hora (hora de registro en GMT) del error, como muestra el Administrador de nube.
++ __Causa:el código__ personalizado puede provocar operaciones largas, como grandes consultas o transiciones de contenido, que se activan al principio en ciclos de vida de componentes o paquetes OSGi, lo que retrasa considerablemente el tiempo de activación del inicio de AEM.
++ __Resolución:__ Revise los  `aemerror` registros de los servicios de AEM Author y Publish a la hora (hora de registro en GMT) del error, como muestra el Administrador de nube.
    1. Revise los registros de cualquier ERROR generado por las clases de Java proporcionadas por la aplicación personalizada. Si se encuentra algún problema, resuelva, inserte el código fijo y vuelva a generar la canalización.
    1. Revise los registros de cualquier ERROR informado por aspectos de AEM que esté ampliando o interactuando en la aplicación personalizada, e investigue dichos errores; es posible que estos ERRORES no se atribuyan directamente a las clases de Java. Si se encuentra algún problema, resuelva, inserte el código fijo y vuelva a generar la canalización.
 
 ### Inclusión de /var en el paquete de contenido
 
-`/var` es mutable y contiene una variedad de contenido transitorio en tiempo de ejecución. Inclusión `/var` en paquetes de contenido (p. ej. `ui.content`) implementada mediante Cloud Manager puede provocar que el paso de implementación falle.
+`/var` es mutable y contiene una variedad de contenido transitorio en tiempo de ejecución. Inclusión de `/var` en un paquete de contenido (por ejemplo: `ui.content`) implementada mediante Cloud Manager puede provocar que el paso de implementación falle.
 
 Este problema es difícil de identificar, ya que no da lugar a un error en la implementación inicial, sólo en implementaciones posteriores. Los síntomas notables incluyen:
 
@@ -205,7 +205,7 @@ Este problema es difícil de identificar, ya que no da lugar a un error en la im
 
 Validar este problema es la causa del comportamiento fallido:
 
-1. Al determinar que al menos un paquete de contenido que forma parte de la implementación, se escribe en `/var`.
+1. Al determinar que al menos un paquete de contenido que forma parte de la implementación, escribe `/var`.
 1. Verifique que la cola de distribución principal (en negrita) esté bloqueada en:
    + AEM Author > Herramientas > Implementación > Distribución
       ![Cola de distribución bloqueada](./assets/build-and-deployment/deploy-to__var--distribution.png)
@@ -227,16 +227,16 @@ Validar este problema es la causa del comportamiento fallido:
 
    Tenga en cuenta que este registro no contendrá estos indicadores en las implementaciones iniciales que informan de que tienen éxito, sino únicamente en implementaciones que han fallado posteriormente.
 
-+ __Causa:__ AEM usuario del servicio de replicación utilizado para implementar paquetes de contenido en el servicio AEM Publish no puede escribir en AEM Publish `/var` . Esto provoca que falle la implementación del paquete de contenido en el servicio AEM Publish.
++ __Causa:__ AEM usuario del servicio de replicación utilizado para implementar paquetes de contenido en el servicio AEM Publish no puede escribir  `/var` en AEM Publish. Esto provoca que falle la implementación del paquete de contenido en el servicio AEM Publish.
 + __Resolución:__ Las siguientes formas de resolver estos problemas se enumeran en orden de preferencia:
-   1. Si los `/var` recursos no son necesarios, elimine los recursos de los paquetes `/var` de contenido implementados como parte de la aplicación.
-   2. Si los `/var` recursos son necesarios, defina las estructuras de nodos mediante el [informe](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#repoinit). Los scripts de informes se pueden dirigir a AEM Author, AEM Publish o ambos, a través de los modos de ejecución OSGi.
-   3. Si los `/var` recursos solo son necesarios en AEM autor y no se pueden modelar razonablemente con [informes](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#repoinit), muévalos a un paquete de contenido discreto, que solo se instala en AEM Author [incrustándolo](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#embeddeds) en el `all` paquete en una carpeta de modo de ejecución de AEM Author (`<target>/apps/example-packages/content/install.author</target>`).
+   1. Si los `/var` recursos no son necesarios, elimine los recursos de `/var` de los paquetes de contenido que se implementan como parte de la aplicación.
+   2. Si los recursos `/var` son necesarios, defina las estructuras de nodos utilizando [repoinit](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#repoinit). Los scripts de informes se pueden dirigir a AEM Author, AEM Publish o ambos, a través de los modos de ejecución OSGi.
+   3. Si los `/var` recursos solo son necesarios en AEM autor y no se pueden modelar razonablemente mediante [repoinit](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#repoinit), muévalos a un paquete de contenido discreto, que solo se instala en AEM Author mediante [incrustándolo](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#embeddeds) en el paquete `all` de una carpeta de modo de ejecución de AEM Author (`<target>/apps/example-packages/content/install.author</target>`).
 
 ### Creación de un caso de soporte de Adobe
 
 Si los enfoques de solución de problemas anteriores no resuelven el problema, cree un caso de soporte de Adobe mediante:
 
-+ [Adobe Admin Console](https://adminconsole.adobe.com) > Ficha Asistencia técnica > Crear caso
++ [Adobe Admin Console](https://adminconsole.adobe.com) > Ficha Asistencia > Crear caso
 
    _Si es miembro de varias organizaciones de Adobe, asegúrese de que la organización de Adobe que tiene una canalización defectuosa esté seleccionada en el conmutador de organizaciones de Adobe antes de crear el caso._
