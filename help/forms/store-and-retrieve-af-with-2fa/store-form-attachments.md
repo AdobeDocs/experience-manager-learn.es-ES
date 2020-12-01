@@ -31,7 +31,7 @@ A continuación se muestra el archivo FileMap que se envía al servlet. La clave
 }
 ```
 
-A continuación se muestra el código que extrae los datos adjuntos de la solicitud y los almacena en la carpeta **/content/afattachments**
+El siguiente es el código que extrae los datos adjuntos de la solicitud y los almacena en la carpeta **/content/afattachments**
 
 ```java
 public String storeAFAttachments(JSONObject fileMap, SlingHttpServletRequest request) {
