@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Create a multi-language Translation Project {#create-multi-language-translation-projects}
+# Crear un proyecto de traducción en varios idiomas {#create-multi-language-translation-projects}
 
 Obtenga información sobre cómo crear, editar y administrar un proyecto de traducción en varios idiomas para su copia de idioma desde AEM consola de proyecto
 
