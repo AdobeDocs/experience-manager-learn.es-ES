@@ -69,7 +69,7 @@ ht-degree: 16%
    + [Tutorial de Hello World](spa-editor/spa-editor-helloworld-tutorial-use.md)
    + [Introducción a AEM editor de SPA y reaccionar](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
    + [Introducción a AEM Editor de SPA y Angular](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
-+ Multi Site Management {#multi-site-management}
++ Administración de múltiples sitios {#multi-site-management}
    + [Introducción a la copia de idioma](./multi-site-management/language-copy-overview.md)
    + [Live Copy y modelo](./multi-site-management/live-copy-and-blueprint.md)
    + [Creación de una Live Copy](./multi-site-management/create-live-copy.md)
@@ -93,7 +93,7 @@ ht-degree: 16%
    + Experience Platform Launch {#experience-platform-launch}
       + [Información general](integrations/experience-platform-launch/overview.md)
       + [Crear una propiedad de inicio](integrations/experience-platform-launch/create-launch-property.md)
-      + [Conectar AEM con Launch mediante E/S de Adobe](integrations/experience-platform-launch/connect-aem-launch-adobe-io.md)
+      + [Conectar AEM con Launch mediante Adobe I/O](integrations/experience-platform-launch/connect-aem-launch-adobe-io.md)
       + [Crear un Cloud Service de lanzamiento](integrations/experience-platform-launch/create-launch-cloud-service.md)
       + [Depuración de una implementación de lanzamiento](integrations/experience-platform-launch/debug-launch-implementation.md)
    + Capa de datos del cliente de Adobe {#adobe-client-data-layer}
