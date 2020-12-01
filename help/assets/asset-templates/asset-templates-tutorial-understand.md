@@ -24,12 +24,12 @@ En este tutorial de vídeo se explica cómo definir un archivo InDesign y todas 
 
 >[!VIDEO](https://video.tv.adobe.com/v/19293/?quality=9&learn=on)
 
-1. Descargar y abrir la plantilla de archivo [**InDesign**](assets/asset-templates-tutorial-video--supporting-files.zip)
+1. Descargar y abrir la [**plantilla de archivo de InDesign**](assets/asset-templates-tutorial-video--supporting-files.zip)
 2. **Abra el panel Etiquetas,** revise la convención de nomenclatura de etiquetas y tenga en cuenta que los elementos que se pueden crear en el archivo InDesign ya están etiquetados. Recuerde que solo los elementos etiquetados se pueden editar en AEM.
 
    * **Ventana > Utilidades > Etiquetas**
 
-3. En Página, Añada un nuevo elemento de texto, proporcione el texto &quot;Encabezado&quot; y aplique el estilo de párrafo de **encabezado** .
+3. En Página, Añada un nuevo elemento de texto, proporcione el texto &quot;Encabezado&quot; y aplique el estilo de párrafo **Encabezado**.
 
    * **Ventana > Estilos > Estilos de párrafo**
 
@@ -37,8 +37,8 @@ En este tutorial de vídeo se explica cómo definir un archivo InDesign y todas 
 
 4. Añada la imagen del logotipo de FPO ([proporcionada en el zip](assets/asset-templates-tutorial-video--supporting-files.zip)) al elemento Logotipo de la página de formato.
 
-   * **Haga clic con el botón derecho** y seleccione **Encaje > Opciones de encaje de marco... > Ajuste de contenido > Rellenar marco proporcionalmente**
-   [Obtenga más información sobre las opciones](https://helpx.adobe.com/indesign/using/frames-objects.html#fitting_objects_to_frames)de Encaje de marco y cuál es la adecuada para su caso de uso.
+   * **Haga clic con el botón derecho** y **seleccione Encaje > Opciones de encaje de marco... > Ajuste de contenido > Rellenar marco proporcionalmente**
+   [Obtenga más información sobre las opciones](https://helpx.adobe.com/indesign/using/frames-objects.html#fitting_objects_to_frames) de Encaje de marco y cuál es la adecuada para su caso de uso.
 
 5. Copie el encabezado (Logotipo y Nombre de la Compañía) de la plantilla maestra en Página y página mediante Pegar en contexto.
 
@@ -56,24 +56,24 @@ En este tutorial de vídeo se explica cómo definir un archivo InDesign y todas 
 
 >[!VIDEO](https://video.tv.adobe.com/v/19294/?quality=9&learn=on)
 
-1. **InDesign Server** de inicio en el puerto 8080.
-2. Asegúrese de que la instancia de **AEM Author está configurada para interactuar con su InDesign Server**(y viceversa).
+1. **Puerto** Serveron inicio InDesign 8080.
+2. Asegúrese de que la instancia de **AEM Author está configurada para interactuar con su InDesign Server** (y viceversa).
 
    * [Configuración del Cloud Service de IDS Worker](http://localhost:4502/etc/cloudservices/proxy/ids.html)
    * [Configuración del Cloud Service proxy de nube](http://localhost:4502/etc/cloudservices/proxy.html)
    * [Configuración de OSGi de AEM Externalizer](http://localhost:4502/system/console/configMgr)
 
-3. **Se ha cargado el archivo InDesign en AEM Assets** y se permite que AEM flujo de trabajo y InDesign Server procesen completamente los recursos.
-4. **Cree una nueva plantilla** en **Recursos > Plantillas** y seleccione el archivo de InDesign cargado en AEM en el paso 4.
-5. **Edite la plantilla** de recursos creada en el paso 5 y cree los campos editables.
-6. Haga clic en **Hecho** para generar las representaciones finales de alta fidelidad de la plantilla de recursos.
+3. **Se ha cargado el archivo InDesign en AEM** Recursos y permite que AEM flujo de trabajo y InDesign Server procesen los recursos por completo.
+4. **Cree una nueva** plantilla en  **Recursos >** Plantillas y seleccione el archivo de InDesign cargado en AEM en el paso 4.
+5. **Edite la** plantilla de recursos creada en el paso 5 y cree los campos editables.
+6. Haga clic en **Listo** para generar las representaciones finales de alta fidelidad de la plantilla de recursos.
 7. Haga clic en la tarjeta Plantilla de recursos para abrirla y revise las Representaciones de recursos para descargar las representaciones de alta fidelidad.
 
 ## Recursos adicionales {#additional-resources}
 
 Archivo de plantilla de InDesign e imágenes compatibles
 
-Descargar archivo de plantilla de [InDesign e imágenes de soporte](assets/asset-templates-tutorial-video--supporting-files-1.zip)
+Descargar [archivo de plantilla de InDesign e imágenes de soporte](assets/asset-templates-tutorial-video--supporting-files-1.zip)
 
 * [Descarga de prueba de InDesign CC](https://creative.adobe.com/products/download/indesign)
 * [Descarga de prueba de InDesign Server](https://www.adobe.com/devnet/indesign/indesign-server-trial-downloads.html)
