@@ -27,7 +27,7 @@ Este tutorial trata la creación de un proyecto de módulo múltiple de Maven pa
 
 ## Requisitos previos {#prerequisites}
 
-Revise las herramientas y las instrucciones necesarias para configurar un entorno [de desarrollo](overview.md#local-dev-environment)local. Asegúrese de que tiene una instancia nueva de Adobe Experience Manager disponible localmente y de que no se han instalado paquetes de muestra/demostración adicionales (que no sean los Service Packs requeridos).
+Revise las herramientas y las instrucciones necesarias para configurar un [entorno de desarrollo local](overview.md#local-dev-environment). Asegúrese de que tiene una instancia nueva de Adobe Experience Manager disponible localmente y de que no se han instalado paquetes de muestra/demostración adicionales (que no sean los Service Packs requeridos).
 
 ## Objetivo {#objective}
 
@@ -39,17 +39,17 @@ Revise las herramientas y las instrucciones necesarias para configurar un entorn
 
 >[!VIDEO](https://video.tv.adobe.com/v/30152/?quality=12&learn=on)
 
-En este capítulo, generará un nuevo proyecto de Adobe Experience Manager con el [AEM Arquetipo](https://github.com/adobe/aem-project-archetype)de proyecto. El proyecto de AEM contiene todo el código, el contenido y las configuraciones utilizadas para una implementación de sitios. El proyecto generado en este capítulo servirá de base para la implementación del sitio WKND y se basará en futuros capítulos.
+En este capítulo, generará un nuevo proyecto de Adobe Experience Manager usando el [AEM Arquetipo de proyecto](https://github.com/adobe/aem-project-archetype). El proyecto de AEM contiene todo el código, el contenido y las configuraciones utilizadas para una implementación de sitios. El proyecto generado en este capítulo servirá de base para la implementación del sitio WKND y se basará en futuros capítulos.
 
 ## Fondo {#background}
 
-**¿Qué es un proyecto Maven?** - [Apache Maven](https://maven.apache.org/) es una herramienta de gestión de software para construir proyectos. *Todas las implementaciones de Adobe Experience Manager* utilizan proyectos de Maven para crear, administrar e implementar código personalizado además de AEM.
+**¿Qué es un proyecto Maven?** -  [Apache ](https://maven.apache.org/) Mavenis es una herramienta de gestión de software para construir proyectos. *Todas las implementaciones de Adobe Experience* Manager utilizan proyectos de Maven para crear, administrar e implementar código personalizado además de AEM.
 
-**¿Qué es un arquetipo Maven?** - Un arquetipo [Maven](https://maven.apache.org/archetype/index.html) es una plantilla o un patrón para generar nuevos proyectos. El arquetipo AEM Proyecto nos permite generar un nuevo proyecto con una Área de nombres personalizada e incluir una estructura de proyecto que sigue las mejores prácticas, acelerando enormemente nuestro proyecto.
+**¿Qué es un arquetipo Maven?** - Un  [archipiélago ](https://maven.apache.org/archetype/index.html) Maven es una plantilla o un patrón para generar nuevos proyectos. El arquetipo AEM Proyecto nos permite generar un nuevo proyecto con una Área de nombres personalizada e incluir una estructura de proyecto que sigue las mejores prácticas, acelerando enormemente nuestro proyecto.
 
 ## Crear el proyecto {#create}
 
-Hay un par de opciones para crear un proyecto multimódulo Maven para AEM. Este tutorial aprovechará el Arquetipo de proyecto [Maven AEM **22**](https://github.com/adobe/aem-project-archetype). Cloud Manager también [proporciona un asistente](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/getting-started/create-an-application-project.html) de IU para iniciar la creación de un proyecto de aplicación AEM. El proyecto subyacente generado por la interfaz de usuario del Administrador de nube tiene como resultado la misma estructura que el uso directo del arquetipo.
+Hay un par de opciones para crear un proyecto multimódulo Maven para AEM. Este tutorial aprovechará el arquetipo de proyecto [Maven AEM **22**](https://github.com/adobe/aem-project-archetype). Cloud Manager también [proporciona un asistente de IU](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/getting-started/create-an-application-project.html) para iniciar la creación de un proyecto de aplicación AEM. El proyecto subyacente generado por la interfaz de usuario del Administrador de nube tiene como resultado la misma estructura que el uso directo del arquetipo.
 
 >[!NOTE]
 >
@@ -85,15 +85,15 @@ La siguiente serie de pasos se realizará utilizando un terminal de línea de co
    [INFO] Total time:  0.856 s
    ```
 
-   Si **no** ve el **adobe-public** , es una indicación de que no se hace referencia a la repo de Adobe correctamente en el `~/.m2/settings.xml` archivo. Revise los pasos para instalar y configurar Apache Maven en [un entorno](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html#install-apache-maven)de desarrollo local.
+   Si **no** ve el **adobe-public** es una indicación de que no se hace referencia a la repo de Adobe en el archivo `~/.m2/settings.xml`. Revise los pasos para instalar y configurar Apache Maven en [un entorno de desarrollo local](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html#install-apache-maven).
 
-1. Vaya a un directorio en el que desee generar el proyecto de AEM. Puede ser cualquier directorio en el que desee mantener el código fuente del proyecto. Por ejemplo, un directorio denominado `code` debajo del directorio principal del usuario:
+1. Vaya a un directorio en el que desee generar el proyecto de AEM. Puede ser cualquier directorio en el que desee mantener el código fuente del proyecto. Por ejemplo, un directorio llamado `code` debajo del directorio principal del usuario:
 
    ```shell
    $ cd ~/code
    ```
 
-1. Pegue lo siguiente en la línea de comandos para [generar el proyecto en modo](https://maven.apache.org/archetype/maven-archetype-plugin/examples/generate-batch.html)por lotes:
+1. Pegue lo siguiente en la línea de comandos para [generar el proyecto en modo por lotes](https://maven.apache.org/archetype/maven-archetype-plugin/examples/generate-batch.html):
 
    ```shell
    $ mvn archetype:generate -B \
@@ -127,7 +127,7 @@ La siguiente serie de pasos se realizará utilizando un terminal de línea de co
 
    >[!CAUTION]
    >
-   >Si recibe un error como el siguiente: *No se pudo ejecutar el objetivo org.apache.maven.plugins:maven-archetype-plugin:3.1.1:generate (default-cli) en el proyecto standalone-pom: El arquetipo deseado no existe*. Es una indicación de que no se hace referencia a la repo de Adobe en el `~/.m2/settings.xml` archivo. Revise los pasos anteriores y compruebe que el archivo settings.xml hace referencia a la repo de Adobe.
+   >Si recibe un error como el siguiente: *No se pudo ejecutar el objetivo org.apache.maven.plugins:maven-archetype-plugin:3.1.1:generate (default-cli) en el proyecto standalone-pom: El arquetipo deseado no existe*. Es una indicación de que no se hace referencia a la repo de Adobe correctamente en el archivo `~/.m2/settings.xml`. Revise los pasos anteriores y compruebe que el archivo settings.xml hace referencia a la repo de Adobe.
 
    La tabla siguiente lista los valores utilizados en este tutorial:
 
@@ -170,12 +170,12 @@ La siguiente serie de pasos se realizará utilizando un terminal de línea de co
            |--- .gitignore
    ```
 
-## Crear el proyecto {#build}
+## Genere el proyecto {#build}
 
 Ahora que hemos generado un nuevo proyecto, podemos implementar el código de proyecto en una instancia local de AEM.
 
 1. Asegúrese de que tiene una instancia de AEM que se ejecuta localmente en el puerto **4502**.
-1. Desde la línea de comandos, navegue hasta el directorio del `aem-guides-wknd` proyecto.
+1. Desde la línea de comandos navegue hasta el directorio del proyecto `aem-guides-wknd`.
 
    ```shell
    $ cd aem-guides-wknd
@@ -203,15 +203,15 @@ Ahora que hemos generado un nuevo proyecto, podemos implementar el código de pr
    [INFO] ------------------------------------------------------------------------
    ```
 
-   El perfil Maven `autoInstallSinglePackage` recopila los módulos individuales del proyecto e implementa un paquete único en la instancia de AEM. De forma predeterminada, este paquete se implementará en una instancia de AEM que se ejecute localmente en el puerto **4502** y con las credenciales de `admin:admin`.
+   El perfil Maven `autoInstallSinglePackage` compila los módulos individuales del proyecto e implementa un paquete único en la instancia de AEM. De forma predeterminada, este paquete se implementará en una instancia de AEM que se ejecute localmente en el puerto **4502** y con las credenciales de `admin:admin`.
 
-1. Vaya al Administrador de paquetes en la instancia de AEM local: [http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp). Debería ver tres paquetes para `aem-guides-wknd.ui.apps`, `aem-guides-wknd.ui.content`y `aem-guides-wknd.all`.
+1. Vaya al Administrador de paquetes en la instancia de AEM local: [http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp). Debe ver tres paquetes para `aem-guides-wknd.ui.apps`, `aem-guides-wknd.ui.content` y `aem-guides-wknd.all`.
 
-   También debería ver varios paquetes para [AEM componentes](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) principales que están incluidos en el proyecto por el arquetipo. Esto se tratará más adelante en el tutorial.
+   También debería ver varios paquetes para [Componentes principales de AEM](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) que están incluidos en el proyecto por el arquetipo. Esto se tratará más adelante en el tutorial.
 
 1. Vaya a la consola Sitios: [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content). El sitio WKND será uno de los sitios. Incluirá una estructura de sitio con una jerarquía de Estados Unidos y de los Maestros de idioma. Esta jerarquía del sitio se basa en los valores para `language_country` y `isSingleCountryWebsite` al generar el proyecto mediante el arquetipo.
 
-1. Para abrir la página **EE.UU** en `>` inglés **, seleccione la página y haga clic en el botón** Editar **** de la barra de menús:
+1. Abra la página **US** `>` **Inglés** seleccionando la página y haciendo clic en el botón **Editar** en la barra de menús:
 
    ![consola del sitio](assets/project-setup/aem-sites-console.png)
 
@@ -222,18 +222,18 @@ Ahora que hemos generado un nuevo proyecto, podemos implementar el código de pr
 El arquetipo AEM está formado por módulos Maven individuales:
 
 * [núcleo](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/core.html) : paquete Java que contiene toda la funcionalidad básica, como servicios OSGi, oyentes o Planificadoras, así como código Java relacionado con componentes, como servlets o filtros de solicitud.
-* [ui.apps](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uiapps.html) : contiene las partes /apps del proyecto, es decir, clientlibs de JS&amp;CSS, componentes y configuraciones de OSGi
+* [ui.apps](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uiapps.html) - contiene las partes /apps del proyecto, es decir, clientlibs de JS&amp;CSS, componentes y configuraciones de OSGi
 * [ui.content](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uicontent.html) : contiene contenido estructural y configuraciones como plantillas editables, esquemas de metadatos (/content, /conf)
 * ui.testing: paquete Java que contiene pruebas JUnit que se ejecutan en el servidor. Este paquete no debe implementarse en producción.
 * ui.launcher: contiene código de pegado que implementa el paquete ui.testing (y los paquetes dependientes) en el servidor y activa la ejecución remota de JUnit
-* [ui.front](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/developing/archetype/uifrontend.html) : (opcional) contiene los artefactos necesarios para utilizar el módulo de compilación front-end basado en Webpack.
+* [ui.front](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html) - (opcional) contiene los artefactos necesarios para utilizar el módulo de compilación front-end basado en Webpack.
 * todo: es un módulo Maven vacío que combina los módulos anteriores en un único paquete que se puede implementar en un entorno AEM.
 
 ![Maven el diagrama del proyecto](assets/project-setup/project-pom-structure.png)
 
-Consulte la documentación [sobre el Arquetipo del proyecto](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/developing/archetype/overview.html) AEM para obtener más información sobre los módulos Maven.
+Consulte la [documentación de arquetipo del proyecto de AEM](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html) para obtener más información sobre los módulos de Maven.
 
-## Comandos de Maven avanzado {#advanced-maven-commands}
+## Comandos Maven avanzados {#advanced-maven-commands}
 
 Durante el desarrollo puede que esté trabajando con sólo uno de los módulos y desee evitar la generación de todo el proyecto para ahorrar tiempo. También es posible que desee implementar directamente en una instancia de AEM Publish o quizás en una instancia de AEM que no se ejecute en el puerto 4502.
 
@@ -241,9 +241,9 @@ A continuación, veremos algunos perfiles Maven adicionales y comandos que puede
 
 ### Módulo principal {#core-module}
 
-El módulo **[principal](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/core.html)** contiene todo el código Java asociado al proyecto. Cuando se crea, implementa un paquete OSGi para AEM. Para crear solo este módulo:
+El módulo **[core](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/core.html)** contiene todo el código Java asociado al proyecto. Cuando se crea, implementa un paquete OSGi para AEM. Para crear solo este módulo:
 
-1. Desplácese a la `core` carpeta (debajo de `aem-guides-wknd`):
+1. Vaya a la carpeta `core` (debajo de `aem-guides-wknd`):
 
    ```shell
    $ cd core/
@@ -267,21 +267,21 @@ El módulo **[principal](https://docs.adobe.com/content/help/en/experience-manag
 
 1. Vaya a [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles). Esta es la consola Web OSGi y contiene información sobre todos los paquetes instalados en la instancia de AEM.
 
-1. Cambie la columna de ordenación de **Id** y debería ver el paquete WKND instalado y activo.
+1. Cambie la columna de ordenación **Id** y debería ver el paquete WKND instalado y activo.
 
    ![Paquete principal](assets/project-setup/wknd-osgi-console.png)
 
-1. Se puede ver la ubicación &#39;física&#39; del frasco en [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/apps/wknd/install/wknd-sites-guide.core-0.0.1-SNAPSHOT.jar):
+1. Puede ver la ubicación &#39;física&#39; del frasco en [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/apps/wknd/install/wknd-sites-guide.core-0.0.1-SNAPSHOT.jar):
 
    ![Ubicación de Jar en CRXDE](assets/project-setup/jcr-bundle-location.png)
 
 ### Módulos Ui.apps y Ui.content {#apps-content-module}
 
-El módulo **[muven ui.apps](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uiapps.html)** contiene todo el código de procesamiento necesario para el sitio debajo `/apps`. Esto incluye CSS/JS que se almacenarán en un formato AEM llamado [clientlibs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/clientlibs.html). Esto también incluye secuencias de comandos [HTL](https://docs.adobe.com/docs/en/htl/overview.html) para procesar HTML dinámico. Puede pensar en el módulo **ui.apps** como un mapa de la estructura del JCR, pero en un formato que se puede almacenar en un sistema de archivos y transferir al control de código fuente. El módulo **ui.apps** solo contiene código.
+El módulo muven **[ui.apps](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uiapps.html)** contiene todo el código de procesamiento necesario para el sitio debajo de `/apps`. Esto incluye CSS/JS que se almacenarán en un formato AEM llamado [clientlibs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/clientlibs.html). Esto también incluye secuencias de comandos [HTL](https://docs.adobe.com/docs/en/htl/overview.html) para procesar HTML dinámico. Puede pensar en el módulo **ui.apps** como un mapa de la estructura en el JCR pero en un formato que se puede almacenar en un sistema de archivos y transferir al control de código fuente. El módulo **ui.apps** sólo contiene código.
 
 Para crear el módulo justo:
 
-1. Desde la línea de comandos. Desplácese a la `ui.apps` carpeta (debajo de `aem-guides-wknd`):
+1. Desde la línea de comandos. Vaya a la carpeta `ui.apps` (debajo de `aem-guides-wknd`):
 
    ```shell
    $ cd ../ui.apps
@@ -301,11 +301,11 @@ Para crear el módulo justo:
    [INFO] ------------------------------------------------------------------------
    ```
 
-1. Vaya a [http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp). Debería ver el paquete `ui.apps` como el primer paquete instalado y debería tener una marca de tiempo más reciente que cualquiera de los demás paquetes.
+1. Vaya a [http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp). Debe ver el paquete `ui.apps` como el primer paquete instalado y debe tener una marca de tiempo más reciente que cualquiera de los demás paquetes.
 
    ![Paquete Ui.apps instalado](assets/project-setup/ui-apps-package.png)
 
-1. Vuelva a la línea de comandos y ejecute el siguiente comando (dentro de la `ui.apps` carpeta):
+1. Vuelva a la línea de comandos y ejecute el siguiente comando (dentro de la carpeta `ui.apps`):
 
    ```shell
    $ mvn -PautoInstallPackagePublish clean install
@@ -328,7 +328,7 @@ Para crear el módulo justo:
 
    El perfil `autoInstallPackagePublish` está diseñado para implementar el paquete en un entorno de publicación que se ejecuta en el puerto **4503**. Se espera el error anterior si no se encuentra una instancia de AEM que se ejecuta en http://localhost:4503.
 
-1. Finalmente, ejecute el siguiente comando para implementar el `ui.apps` paquete en el puerto **4504**:
+1. Finalmente, ejecute el siguiente comando para implementar el paquete `ui.apps` en el puerto **4504**:
 
    ```shell
    $ mvn -PautoInstallPackage clean install -Daem.port=4504
@@ -346,17 +346,17 @@ Para crear el módulo justo:
    [INFO] --------------------------------------------------------------------
    ```
 
-   De nuevo, se espera que se produzca un error de compilación si no hay disponible ninguna instancia de AEM que se ejecute en el puerto **4504** . El parámetro `aem.port` se define en el archivo POM en `aem-guides-wknd/pom.xml`.
+   De nuevo, se espera que se produzca un error de compilación si no hay disponible ninguna instancia de AEM que se ejecute en el puerto **4504**. El parámetro `aem.port` se define en el archivo POM en `aem-guides-wknd/pom.xml`.
 
-El módulo **[ui.content](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uicontent.htm)** está estructurado del mismo modo que el módulo **ui.apps** . La única diferencia es que el módulo **ui.content** contiene lo que se conoce como contenido **mutable** . **El contenido mutable** se refiere esencialmente a configuraciones sin código como Plantillas, Políticas o estructuras de carpetas que se almacenan en el control de código fuente **pero** se pueden modificar directamente en una instancia de AEM. Esto se analizará con mucho más detalle en el capítulo sobre Páginas y plantillas. Por ahora, lo importante es que los mismos comandos de Maven utilizados para crear el módulo **ui.apps** se puedan utilizar para crear el módulo **ui.content** . No dude en repetir los pasos anteriores desde la carpeta **ui.content** .
+El módulo **[ui.content](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uicontent.htm)** está estructurado del mismo modo que el módulo **ui.apps**. La única diferencia es que el módulo **ui.content** contiene lo que se conoce como contenido **mutable**. **El contenido** múltiple se refiere esencialmente a configuraciones sin código como Plantillas, Políticas o estructuras de carpetas que se almacenan en el control de código fuente, pero que se  **** pueden modificar directamente en una instancia de AEM. Esto se analizará con mucho más detalle en el capítulo sobre Páginas y plantillas. Por ahora, lo importante es que los mismos comandos de Maven utilizados para crear el módulo **ui.apps** se puedan utilizar para generar el módulo **ui.content**. No dude en repetir los pasos anteriores desde la carpeta **ui.content**.
 
-### Módulo Ui.front {#ui-frontend-module}
+### Módulo Ui.frontentender {#ui-frontend-module}
 
-El módulo **[ui.frontender](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/developing/archetype/uifrontend.html)** es un módulo Maven que en realidad es un proyecto de [webpack](https://webpack.js.org/) . Este módulo está configurado para ser un sistema de compilación front-end dedicado que genera archivos JavaScript y CSS, que a su vez se implementan en AEM. El módulo **ui.frontender** permite a los desarrolladores codificar con idiomas como [Sass](https://sass-lang.com/), [TypeScript](https://www.typescriptlang.org/), utilizar módulos [npm](https://www.npmjs.com/) e integrar la salida directamente en AEM.
+El módulo **[ui.front](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html)** es un módulo Maven que en realidad es un proyecto [webpack](https://webpack.js.org/). Este módulo está configurado para ser un sistema de compilación front-end dedicado que genera archivos JavaScript y CSS, que a su vez se implementan en AEM. El módulo **ui.front** permite a los programadores codificar con idiomas como [Sass](https://sass-lang.com/), [TypeScript](https://www.typescriptlang.org/), utilizar los módulos [npm](https://www.npmjs.com/) e integrar la salida directamente en AEM.
 
-El módulo **ui.frontender** se tratará con mucho más detalle en el capítulo sobre bibliotecas del lado del cliente y desarrollo front-end. Por ahora veamos cómo se integra en el proyecto.
+El módulo **ui.front** se tratará con mucho más detalle en el capítulo sobre bibliotecas del lado del cliente y desarrollo del front-end. Por ahora veamos cómo se integra en el proyecto.
 
-1. Desde la línea de comandos. Desplácese a la `ui.frontend` carpeta (debajo de `aem-guides-wknd`):
+1. Desde la línea de comandos. Vaya a la carpeta `ui.frontend` (debajo de `aem-guides-wknd`):
 
    ```shell
    $ cd ../ui.frontend
@@ -387,19 +387,19 @@ El módulo **ui.frontender** se tratará con mucho más detalle en el capítulo 
    [INFO] Finished at: 2019-12-06T15:26:16-08:00
    ```
 
-   Observe las líneas como `copy: dist/clientlib-site/site.js ../ui.apps/src/main/content/jcr_root/apps/wknd/clientlibs/clientlib-site/js/site.js`. Esto indica que el CSS y JS compilados se están copiando en la `ui.apps` carpeta.
+   Observe las líneas como `copy: dist/clientlib-site/site.js ../ui.apps/src/main/content/jcr_root/apps/wknd/clientlibs/clientlib-site/js/site.js`. Esto indica que el CSS y JS compilados se están copiando en la carpeta `ui.apps`.
 
-1. Vista de la marca de tiempo modificada para el archivo `aem-guides-wknd/ui.apps/src/main/content/jcr_root/apps/wknd/clientlibs/clientlib-site/css.txt`. Debe actualizarse más recientemente que los demás archivos del `ui.apps` módulo.
+1. Vista la marca de tiempo modificada para el archivo `aem-guides-wknd/ui.apps/src/main/content/jcr_root/apps/wknd/clientlibs/clientlib-site/css.txt`. Debe actualizarse más recientemente que los demás archivos del módulo `ui.apps`.
 
-   A diferencia de los otros módulos que hemos observado, el módulo **ui.frontender** no se implementa directamente en AEM. En su lugar, CSS y JS se copian en el módulo **ui.apps** y, a continuación, se implementa el módulo **ui.apps** en AEM. Si observa el orden de compilación desde el primer comando Maven, verá que **ui.front** siempre se crea *antes* de **ui.apps**.
+   A diferencia de los otros módulos que hemos observado, el módulo **ui.frontender** no se implementa directamente en AEM. En su lugar, CSS y JS se copian en el módulo **ui.apps** y, a continuación, el módulo **ui.apps** se implementa en AEM. Si observa el orden de compilación desde el primer comando Maven, verá que **ui.front** siempre se genera *antes* **ui.apps**.
 
-   Más adelante en el tutorial veremos las características avanzadas del módulo **ui.frontender** y del servidor de desarrollo de webpack integrado para un rápido desarrollo.
+   Más adelante en el tutorial veremos las características avanzadas del módulo **ui.frontendr** y del servidor de desarrollo de webpack integrado para un rápido desarrollo.
 
 ## Inclusión de componentes principales {#core-components}
 
-El arquetipo incrusta automáticamente [AEM componentes](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) principales en el proyecto. Anteriormente, al inspeccionar los paquetes implementados en AEM, se incluían varios paquetes relacionados con los componentes principales. Componentes principales es un conjunto de componentes básicos diseñado para acelerar el desarrollo de un proyecto de AEM Sites. Los componentes principales son de código abierto y están disponibles en [GitHub](https://github.com/adobe/aem-core-wcm-components). Puede encontrar más información sobre cómo se [incluyen los componentes principales en el proyecto aquí](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html#core-components).
+El arquetipo incrusta automáticamente [Componentes principales de AEM](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) en el proyecto. Anteriormente, al inspeccionar los paquetes implementados en AEM, se incluían varios paquetes relacionados con los componentes principales. Componentes principales es un conjunto de componentes básicos diseñado para acelerar el desarrollo de un proyecto de AEM Sites. Los componentes principales son de código abierto y están disponibles en [GitHub](https://github.com/adobe/aem-core-wcm-components). Puede encontrar más información sobre cómo se incluyen los componentes principales [en el proyecto aquí](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html#core-components).
 
-1. Abra el editor de texto favorito `aem-guides-wknd/pom.xml`.
+1. Con su editor de texto favorito, abra `aem-guides-wknd/pom.xml`.
 
 1. Buscar `core.wcm.components.version`. Esto le mostrará qué versión de los componentes principales se incluye:
 
@@ -409,9 +409,9 @@ El arquetipo incrusta automáticamente [AEM componentes](https://docs.adobe.com/
 
    >[!NOTE]
    >
-   > El arquetipo del proyecto AEM incluirá una versión de AEM componentes principales, aunque estos proyectos tengan diferentes ciclos de lanzamiento, por lo que la versión incluida de los componentes principales puede no ser la última. La práctica recomendada es aprovechar siempre la versión más reciente de Componentes principales. Las nuevas funciones y correcciones de errores se actualizan con frecuencia. Puede encontrar la información más reciente [de la versión en GitHub](https://github.com/adobe/aem-core-wcm-components/releases).
+   > El arquetipo del proyecto AEM incluirá una versión de AEM componentes principales, aunque estos proyectos tengan diferentes ciclos de lanzamiento, por lo que la versión incluida de los componentes principales puede no ser la última. La práctica recomendada es aprovechar siempre la versión más reciente de Componentes principales. Las nuevas funciones y correcciones de errores se actualizan con frecuencia. Puede encontrar la información más reciente de la versión [en GitHub](https://github.com/adobe/aem-core-wcm-components/releases).
 
-1. Si se desplaza hacia abajo hasta la `dependencies` sección, debería ver las dependencias individuales de los componentes principales:
+1. Si se desplaza hacia abajo hasta la sección `dependencies`, debería ver las dependencias individuales de los componentes principales:
 
    ```xml
    <dependency>
@@ -445,9 +445,9 @@ Siempre es recomendable utilizar algún tipo de control de código fuente para a
 
 Maven creará una carpeta de destinatario cada vez que cree e instale el paquete de código. La carpeta de destinatario y el contenido deben excluirse de SCM.
 
-Debajo de ui.apps, también verá muchos archivos .content.xml que se han creado. Estos archivos XML asignan los tipos de nodo y las propiedades del contenido instalado en el JCR. Estos archivos son críticos y **no deben** ignorarse.
+Debajo de ui.apps, también verá muchos archivos .content.xml que se han creado. Estos archivos XML asignan los tipos de nodo y las propiedades del contenido instalado en el JCR. Estos archivos son críticos y deben **no** ignorarse.
 
-El arquetipo del proyecto AEM generará un archivo de muestra `.gitignore` que se puede utilizar como punto de partida para omitir los archivos de forma segura. El archivo se genera en `<src>/aem-guides-wknd/.gitignore`.
+El arquetipo del proyecto AEM generará un archivo `.gitignore` de muestra que se puede utilizar como punto de partida para el cual se pueden ignorar los archivos de forma segura. El archivo se genera en `<src>/aem-guides-wknd/.gitignore`.
 
 ## Crítica {#chapter-review}
 
@@ -459,4 +459,4 @@ Felicitaciones, acaba de crear su primer proyecto AEM!
 
 ### Próximos pasos {#next-steps}
 
-Conozca la tecnología subyacente de un componente Sitios de Adobe Experience Manager (AEM) mediante un sencillo `HelloWorld` ejemplo con el tutorial Conceptos básicos [de componentes](component-basics.md) .
+Comprender la tecnología subyacente de un componente de sitios de Adobe Experience Manager (AEM) mediante un ejemplo sencillo `HelloWorld` con el tutorial [Conceptos básicos de componentes](component-basics.md).
