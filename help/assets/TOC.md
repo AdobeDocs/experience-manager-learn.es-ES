@@ -41,7 +41,7 @@ ht-degree: 32%
    + [Versiones](./collaboration/versions.md)
    + [Revisar la tarea](./collaboration/review-task.md)
 
-+ Búsqueda y descubrimiento{#search-and-discovery}
++ Buscar y descubrir{#search-and-discovery}
    + [Buscar](./search-and-discovery/search.md)
    + [Colecciones](./search-and-discovery/collections.md)
    + [Ampliación de la búsqueda](./search-and-discovery/search-boost.md)
