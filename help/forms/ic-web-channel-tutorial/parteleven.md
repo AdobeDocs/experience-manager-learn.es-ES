@@ -32,7 +32,7 @@ En esta parte, agregaremos gráficos circulares para mostrar la combinación de 
 
 * Agregaremos 2 gráficos circulares para representar la combinación de inversión actual y modelo del titular de la cuenta.
 
-## Combinación de activos actual {#current-asset-mix}
+## Mezcla de recursos actual {#current-asset-mix}
 
 * Toque en el panel &quot;CurrentAssetMix&quot; del lado derecho y seleccione el icono &quot;+&quot; e inserte el componente de texto. Cambie el texto predeterminado a &quot;Mezcla de recursos actual&quot;.
 
