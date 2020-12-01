@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Uso Del Modelo De Datos De Formulario Para Publicar Datos Binario{#using-form-data-model-to-post-binary-data}
+# Uso del modelo de datos de formulario para publicar datos binarios{#using-form-data-model-to-post-binary-data}
 
 A partir de AEM Forms 6.4, ahora podemos invocar el servicio del modelo de datos de formulario como un paso en AEM flujo de trabajo. Este artículo le guiará por un caso de uso de muestra para registrar el Documento de registro mediante el servicio de modelo de datos de formulario.
 
@@ -50,20 +50,20 @@ Entrada de servicio
 
 Para probar esta capacidad en su servidor, siga los pasos que se mencionan a continuación:
 
-1.[Implementar el paquete Development withserviceuser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+1.[Implementar el paquete DevelopmentWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-1. [Descargue e implemente el paquete](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)setvalue.Este paquete OSGI personalizado se utiliza para crear la propiedad metadata y establecer su valor a partir de los datos del formulario enviados.
+1. [Descargue e implemente el paquete](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar) setvalue.Este paquete OSGI personalizado se utiliza para crear la propiedad metadata y establecer su valor a partir de los datos del formulario enviados.
 
-1. [Importe los recursos](assets/postdortodam.zip) asociados con este artículo en AEM mediante el administrador de paquetes.Obtendrá lo siguiente
+1. [Importe los ](assets/postdortodam.zip) recursos asociados a este artículo en AEM mediante el administrador de paquetes.Obtendrá lo siguiente
 
    1. Modelo de flujo de trabajo
    1. Formulario adaptable configurado para enviarse al flujo de trabajo AEM
    1. Fuente de datos configurada para usar el archivo PostToDam.JSON
    1. Modelo de datos de formulario que utiliza la fuente de datos
 
-1. Seleccione el [explorador para abrir el formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
+1. Seleccione el explorador [para abrir el formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
 1. Rellene el formulario y envíelo.
 1. Compruebe la aplicación Assets si se ha creado y almacenado el Documento de registro.
 
 
-[El archivo](http://localhost:4502/conf/global/settings/cloudconfigs/fdm/postdortodam/jcr:content/swaggerFile) Swagger utilizado para crear la fuente de datos está disponible para su referencia
+[Swagger ](http://localhost:4502/conf/global/settings/cloudconfigs/fdm/postdortodam/jcr:content/swaggerFile) File utilizado para crear la fuente de datos está disponible para su referencia
