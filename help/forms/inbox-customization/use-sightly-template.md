@@ -18,13 +18,14 @@ ht-degree: 2%
 
 # Uso de una plantilla ligera para mostrar datos de bandeja de entrada
 
-Puede utilizar una plantilla ligera para dar formato a los datos que se van a mostrar en las columnas de la bandeja de entrada. En este ejemplo se muestran los iconos corales-ui en función del valor de la columna de ingresos. La siguiente captura de pantalla muestra el uso de iconos en los iconos de la columna![de ingresos](assets/income-column.PNG)
+Puede utilizar una plantilla ligera para dar formato a los datos que se van a mostrar en las columnas de la bandeja de entrada. En este ejemplo se muestran los iconos corales-ui en función del valor de la columna de ingresos. La siguiente captura de pantalla muestra el uso de iconos en la columna de ingresos
+![iconos de ingresos](assets/income-column.PNG)
 
-[La plantilla](assets/sightly-template.zip) de suavizado utilizada para mostrar los iconos personalizados de corales ui se proporciona como parte de este artículo.
+[En este artículo se proporciona la ](assets/sightly-template.zip) plantilla de suavizado utilizada para mostrar los iconos personalizados de corales ui.
 
 ## Plantilla Sightly
 
-A continuación se muestra la plantilla de Sightly. El código de la plantilla muestra un icono en función de los ingresos. Los iconos están disponibles como parte de la biblioteca [de iconos de](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) corales ui que se incluye con AEM.
+A continuación se muestra la plantilla de Sightly. El código de la plantilla muestra un icono en función de los ingresos. Los iconos están disponibles como parte de la [biblioteca de iconos de corales ui](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) que se incluye con AEM.
 
 ```java
 <template data-sly-template.incomeTemplate="${@ item}>">
@@ -78,7 +79,7 @@ return val;
 
 >[!NOTE]
 >
->En este artículo se asume que ha instalado en esta serie el flujo de trabajo [de](assets/review-workflow.zip) muestra y el formulario [de](assets/snap-form.zip) ejemplo del artículo [](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/inbox-customization/add-married-column.md) anterior.
+>En este artículo se asume que ha instalado el [flujo de trabajo de muestra](assets/review-workflow.zip) y el [formulario de ejemplo](assets/snap-form.zip) de [artículo anterior](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/inbox-customization/add-married-column.md) en esta serie.
 
 * [Iniciar sesión en crx como usuario administrador](http://localhost:4502/crx/de/index.jsp)
 * [importar plantilla](assets/sightly-template.zip)
@@ -88,7 +89,7 @@ return val;
 * Abra el Control de administración haciendo clic en la Vista de Lista al lado del botón Crear
 * Añadir la columna de ingresos a la Bandeja de entrada y guardar los cambios
 * [Obtener una vista previa del formulario](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
-* Seleccione el estado __ marital y envíe el formulario
+* Seleccione el _estado civil_ y envíe el formulario
 * [Bandeja de entrada de vista](http://localhost:4502/aem/inbox)
 
 El envío del formulario activará el flujo de trabajo y se asignará una tarea al usuario &quot;admin&quot;. Debería ver el icono correspondiente en la columna de ingresos
