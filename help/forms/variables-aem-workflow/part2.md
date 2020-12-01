@@ -37,7 +37,7 @@ Puede asignar el esquema con la variable de tipo JSON en el modelo de flujo de t
 Para que los recursos funcionen en su sistema, siga los pasos siguientes:
 
 * [Descargar e importar recursos en AEM mediante el administrador de paquetes](assets/jsonandstringvariable.zip)
-* [Explore el modelo](http://localhost:4502/editor.html/conf/global/settings/workflow/models/jsonvariable.html) de flujo de trabajo para comprender las variables que se utilizan en el flujo de trabajo
+* [Explore el ](http://localhost:4502/editor.html/conf/global/settings/workflow/models/jsonvariable.html) modelo de flujo de trabajo para comprender las variables que se utilizan en el flujo de trabajo
 * [Configuración del servicio de correo electrónico](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html#ConfiguringtheMailService)
 * [Abrir el formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/afbasedonjson/jcr:content?wcmmode=disabled)
 * Rellene los detalles y envíe el formulario
