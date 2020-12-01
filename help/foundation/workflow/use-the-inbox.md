@@ -31,5 +31,5 @@ Este vídeo trata los aspectos más destacados de AEM Bandeja de entrada.
 * Consola de información de flujo de trabajo
 * Creación de tareas ad-hoc
 * Tarea y visibilidad del elemento de trabajo
-* [!DNL Inbox] y [!DNL Omnisearch] integración
-* [!DNL Inbox] y [!DNL AEM Projects] integración
+* [!DNL Inbox] e  [!DNL Omnisearch] integración
+* [!DNL Inbox] e  [!DNL AEM Projects] integración
