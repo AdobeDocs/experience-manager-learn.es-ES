@@ -2,7 +2,7 @@
 user-guide-title: Introducción a AEM sin encabezado
 user-guide-description: Un tutorial completo que ilustra cómo crear y exponer contenido mediante AEM sin encabezado.
 breadcrumb-title: Tutorial de AEM sin encabezado
-version: 6.5
+version: cloud-service
 sub-product: content-services
 doc-type: tutorial
 feature: content-fragment, core-components
@@ -12,21 +12,31 @@ activity: develop, understand
 kt: 2963
 index: y
 translation-type: tm+mt
-source-git-commit: 172a1369cb572b367c78e04c692db8e02e7287e7
+source-git-commit: 5012433a5f1c7169b1a3996453bfdbd5d78e5b1c
 workflow-type: tm+mt
-source-wordcount: '64'
-ht-degree: 42%
+source-wordcount: '94'
+ht-degree: 31%
 
 ---
 
 
 # Introducción a AEM sin encabezado{#getting-started-with-aem-headless}
 
-+ [Información general](./overview.md)
-+ [1 - Configuración de tutoriales](./chapter-1.md)
-+ [2 - Definición de modelos de fragmentos de contenido de Evento](./chapter-2.md)
-+ [3 - Creación de fragmentos de contenido de Evento](./chapter-3.md)
-+ [4 - Definición de plantillas de Content Services](./chapter-4.md)
-+ [5 - Creación de páginas de servicios de contenido](./chapter-5.md)
-+ [6 - Exposición del contenido en AEM Publish for Envío](./chapter-6.md)
-+ [7 - Uso de AEM Content Services desde una aplicación móvil](./chapter-7.md)
++ [Información general AEM sin cabeza](./overview.md)
++ Content Services {#content-services}
+   + [Información general](./content-services/overview.md)
+   + [1 - Configuración de tutoriales](./content-services/chapter-1.md)
+   + [2 - Definición de modelos de fragmentos de contenido de Evento](./content-services/chapter-2.md)
+   + [3 - Creación de fragmentos de contenido de Evento](./content-services/chapter-3.md)
+   + [4 - Definición de plantillas de Content Services](./content-services/chapter-4.md)
+   + [5 - Creación de páginas de servicios de contenido](./content-services/chapter-5.md)
+   + [6 - Exposición del contenido en AEM Publish for Envío](./content-services/chapter-6.md)
+   + [7 - Uso de AEM Content Services desde una aplicación móvil](./content-services/chapter-7.md)
++ GraphQL {#graphql}
+   + [Información general](./graphql/overview.md)
+   + [1 - Configuración rápida](./graphql/setup.md)
+   + [2 - Definición de modelos de fragmentos de contenido](./graphql/content-fragment-models.md)
+   + [3 - Creación de fragmentos de contenido](./graphql/author-content-fragments.md)
+   + [4 - Explorar las API de GraphQL](./graphql/explore-graphql-api.md)
+   + [5: Consulta desde una aplicación externa](./graphql/graphql-and-external-app.md)
+   + [6 - Modelado de datos avanzado con referencias de fragmento](./graphql/fragment-references.md)
