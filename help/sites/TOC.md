@@ -4,10 +4,10 @@ user-guide-description: Una colección de vídeos y tutoriales para Adobe Experi
 breadcrumb-title: Tutoriales de AEM Sites
 sub-product: sitios
 translation-type: tm+mt
-source-git-commit: 988e390dd9e1fc6033b3651db151e6a60ce4efaa
+source-git-commit: 16c73d19584eefff3c9551d2a3174b5b8ed6d427
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 16%
+source-wordcount: '441'
+ht-degree: 21%
 
 ---
 
@@ -16,36 +16,36 @@ ht-degree: 16%
 
 + [Información general](overview.md)
 + Creación de páginas {#page-authoring}
-   + [Información general sobre la creación](page-authoring/aem-sites-authoring-overview.md)
-   + [Navegación y administración básicas en AEM Sites](page-authoring/basic-handling-sites-feature-video-use.md)
-   + [Jerarquía de contenido en AEM Sites](page-authoring/content-hierarchy-feature-video-use.md)
-   + [Creación de páginas en AEM Sites](page-authoring/page-authoring-overview-feature-video-use.md)
-   + [Creación de una nueva página](page-authoring/creating-page-feature-video-use.md)
-   + [Uso del Editor de páginas](page-authoring/page-editor-feature-video-use.md)
-   + [Explicación del diseño adaptable](page-authoring/responsive-layout-feature-video-understand.md)
-   + [Etiquetado de páginas en AEM Sites](page-authoring/page-tagging-feature-video-use.md)
+   + [Creación  ](page-authoring/aem-sites-authoring-overview.md)
+   + [Navegación](page-authoring/basic-handling-sites-feature-video-use.md)
+   + [Estructura del sitio   ](page-authoring/content-hierarchy-feature-video-use.md)
+   + [Creación de página](page-authoring/creating-page-feature-video-use.md)
+   + [Creación de páginas](page-authoring/page-authoring-overview-feature-video-use.md)
+   + [Editor de página](page-authoring/page-editor-feature-video-use.md)
+   + [Etiquetado de página](page-authoring/page-tagging-feature-video-use.md)
    + [Versiones de página](page-authoring/page-versioning-feature-video-use.md)
    + [Comparación de versiones de página](page-authoring/page-diff-feature-video-use.md)
-   + [Explicación de las propiedades de la página](page-authoring/page-properties-feature-video-understand.md)
-   + [Operaciones de página básica](page-authoring/page-operations-feature-video-use.md)
-   + [Publicación de páginas](page-authoring/publication-management-feature-video-use.md)
-   + [Uso de plantillas de página editables](page-authoring/template-editor-feature-video-use.md)
-   + [Uso del sistema de estilos](page-authoring/style-system-feature-video-use.md)
-   + [Utilizar la Deformación de tiempo](page-authoring/timewarp-feature-video-use.md)
+   + [Propiedades de página](page-authoring/page-properties-feature-video-understand.md)
+   + [Operaciones de página](page-authoring/page-operations-feature-video-use.md)
+   + [Modo de diseño](page-authoring/responsive-layout-feature-video-understand.md)
+   + [Publicación](page-authoring/publication-management-feature-video-use.md)
+   + [Plantillas editables](page-authoring/template-editor-feature-video-use.md)
+   + [Sistema de estilos](page-authoring/style-system-feature-video-use.md)
+   + [Deformación de tiempo  ](page-authoring/timewarp-feature-video-use.md)
 + Componentes {#components}
    + [Desarrollo de componentes](components/component-development.md)
-   + [Explicación de los componentes principales](components/core-components-feature-video-understand.md)
-   + [Uso de la consola Componentes](components/components-console-feature-video-use.md)
+   + [Componentes principales](components/core-components-feature-video-understand.md)
+   + [Consola Componentes](components/components-console-feature-video-use.md)
 + Fragmentos de contenido {#content-fragments}
    + [Creación de fragmentos de contenido](content-fragments/content-fragments-feature-video-use.md)
    + [Distribución de fragmentos de contenido](content-fragments/content-fragments-delivery-feature-video-use.md)
-   + [Uso de la traducción con fragmentos de contenido](content-fragments/content-fragments-translation-feature-video-use.md)
-   + [Comprender los fragmentos de contenido en comparación con los fragmentos de experiencia](content-fragments/understand-content-fragments-and-experience-fragments.md)
+   + [Traducción con fragmentos de contenido](content-fragments/content-fragments-translation-feature-video-use.md)
+   + [Fragmentos de contenido vs. fragmentos de experiencia](content-fragments/understand-content-fragments-and-experience-fragments.md)
 + Fragmentos de experiencias {#experience-fragments}
    + [Uso de fragmentos de experiencias](experience-fragments/experience-fragments-feature-video-use.md)
    + [Explicación de los fragmentos de experiencia](experience-fragments/experience-fragments-feature-video-understand.md)
    + [Configuración de anuncios sociales con fragmentos de experiencia](experience-fragments/experience-fragments-social-technical-video-setup.md)
-   + [Comprender los fragmentos de contenido en comparación con los fragmentos de experiencia](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
+   + [Fragmentos de contenido vs. fragmentos de experiencia](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
 + Desarrollo de {#developing}
    + [Tipo de archivo del proyecto AEM](developing/aem-project-archetype.md)
    + [Introducción a AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
