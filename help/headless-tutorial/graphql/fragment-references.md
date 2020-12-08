@@ -8,12 +8,12 @@ doc-type: tutorial
 activity: develop
 audience: developer
 mini-toc-levels: 1
-kt: null
-thumbnail: null
+kt: 6718
+thumbnail: KT-6718.jpg
 translation-type: tm+mt
-source-git-commit: 5012433a5f1c7169b1a3996453bfdbd5d78e5b1c
+source-git-commit: 2ea667d3bdb73fa4da87b877f14db77d896448a7
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '849'
 ht-degree: 1%
 
 ---
@@ -239,6 +239,12 @@ A continuación, actualice las consultas utilizadas por la aplicación React par
 
    ![Colaborador Añadido en la aplicación](assets/fragment-references/contributor-added-detail.png)
 
+## Recursos adicionales
+
+Para obtener más información sobre los fragmentos de contenido y GraphQL, consulte los siguientes recursos:
+
+* [Envío de contenido sin cabeza mediante fragmentos de contenido con GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html)
+* [API de AEM GraphQL para usar con fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html)
 
 ## Felicitaciones!{#congratulations}
 
