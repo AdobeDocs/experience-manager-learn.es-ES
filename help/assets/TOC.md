@@ -5,9 +5,9 @@ breadcrumb-title: Tutoriales de AEM Assets
 sub-product: activos
 team: TM
 translation-type: tm+mt
-source-git-commit: 159e9d7ea363768f202db91a1d0555c2e57ebb13
+source-git-commit: aa349fba9e0f1df97316105ada62ff9b32501573
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '257'
 ht-degree: 32%
 
 ---
@@ -99,9 +99,10 @@ ht-degree: 32%
    + [Visores](dynamic-media/dynamic-media-viewer-feature-video-understand.md)
    + [Visores de imágenes panorámicas y verticales](dynamic-media/panorama-vertical-image-viewer-feature-video-use.md)
    + [Visores con Adobe Analytics](dynamic-media/dynamic-media-viewer-extension-use.md)
-   + [Aplicación de escritorio de Dynamic Media Classic](dynamic-media/dynamic-media-classic-desktop-application.md)
+   + [Aplicación de escritorio Dynamic Media Classic](dynamic-media/dynamic-media-classic-desktop-application.md)
    + [Dynamic Media 3D](dynamic-media/dynamic-media-3d-feature-video.md)
-   + [Vídeo de recorte inteligente de Dynamic Media](dynamic-media/dynamic-media-smart-crop-video.md)
+   + [Dynamic Media Smart Crop Video](dynamic-media/dynamic-media-smart-crop-video.md)
+   + [Componentes principales de Dynamic Media](dynamic-media/dynamic-media-core-components.md)
 
 + Traducción {#translation}
    + [Traducción del archivo de origen](translation/source-file-translation-feature-video-use.md)
