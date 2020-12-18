@@ -5,10 +5,10 @@ breadcrumb-title: Tutoriales de AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
 translation-type: tm+mt
-source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
+source-git-commit: 322f618469126656dc735263abd55548eb0a3cbf
 workflow-type: tm+mt
-source-wordcount: '201'
-ht-degree: 33%
+source-wordcount: '205'
+ht-degree: 32%
 
 ---
 
@@ -51,6 +51,7 @@ ht-degree: 33%
    + [Configuración del acceso a AEM paso](./accessing/walk-through.md)
 + Migración {#migration}
    + [Herramienta de transferencia de contenido](./migration/content-transfer-tool.md)
+   + [Importación masiva de recursos](./migration/bulk-import.md)
 + Extensibilidad de asset compute{#asset-compute}
    + [Información general](./asset-compute/overview.md)
    + Configurar{#set-up}
