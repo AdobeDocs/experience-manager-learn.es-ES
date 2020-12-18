@@ -10,9 +10,9 @@ version: cloud-service
 kt: 6261
 thumbnail: 41195.jpg
 translation-type: tm+mt
-source-git-commit: e13a5171fbeb9e1eb5f78d1c691bc8b4b896a998
+source-git-commit: aa48c94413f83e794c5d062daaac85c97b451b82
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '788'
 ht-degree: 1%
 
 ---
@@ -174,6 +174,8 @@ Se recomienda activar cualquier código personalizado basado en un evento de la 
 ## Próximos pasos
 
 Consulte el siguiente tutorial para aprender a utilizar la capa de datos del cliente de Adobe controlada por evento para [recopilar datos de página y enviarlos a Adobe Analytics](../analytics/collect-data-analytics.md).
+
+O aprenda a [personalizar la capa de datos del cliente de Adobe con componentes de AEM](./data-layer-customize.md)
 
 
 ## Recursos adicionales {#additional-resources}
