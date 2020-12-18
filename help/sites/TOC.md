@@ -4,9 +4,9 @@ user-guide-description: Una colección de vídeos y tutoriales para Adobe Experi
 breadcrumb-title: Tutoriales de AEM Sites
 sub-product: sitios
 translation-type: tm+mt
-source-git-commit: 16c73d19584eefff3c9551d2a3174b5b8ed6d427
+source-git-commit: aa48c94413f83e794c5d062daaac85c97b451b82
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '447'
 ht-degree: 21%
 
 ---
@@ -98,6 +98,7 @@ ht-degree: 21%
       + [Depuración de una implementación de lanzamiento](integrations/experience-platform-launch/debug-launch-implementation.md)
    + Capa de datos del cliente de Adobe {#adobe-client-data-layer}
       + [Uso de la capa de datos del cliente de Adobe](integrations/adobe-client-data-layer/data-layer-overview.md)
+      + [Personalización de la capa de datos del cliente de Adobe](integrations/adobe-client-data-layer/data-layer-customize.md)
    + Análisis {#analytics}
       + [Recopilación de datos de página con Adobe Analytics](integrations/analytics/collect-data-analytics.md)
       + [Seguimiento del componente en el que se hizo clic con Adobe Analytics](integrations/analytics/track-clicked-component.md)
