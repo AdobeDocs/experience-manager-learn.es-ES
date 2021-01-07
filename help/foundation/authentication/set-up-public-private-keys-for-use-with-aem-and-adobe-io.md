@@ -9,9 +9,9 @@ audience: architect, developer, implementer
 doc-type: tutorial
 kt: 2450
 translation-type: tm+mt
-source-git-commit: c85a59a8bd180d5affe2a5bf5939dabfb2776d73
+source-git-commit: 3f973e36531a2d04cbaf6bb8dd70b39fef7d8b2f
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '768'
 ht-degree: 0%
 
 ---
@@ -114,10 +114,14 @@ Si se le solicita que cree un almacén de claves, hágalo. Este almacén de clav
 En la consola del almacén de claves del usuario, haga clic en **[!UICONTROL Añadir clave privada del archivo KeyStore]** y agregue la siguiente información:
 
 * **[!UICONTROL Nuevo alias]**: alias de la clave en AEM. Esto puede ser cualquier cosa y no tiene por qué corresponderse con el nombre del almacén de claves creado con el comando openssl.
-* **[!UICONTROL Archivo]** Keystore: la salida del comando openssl pkcs12 (keystore.p12)
-* **[!UICONTROL Alias]** de clave privada: La contraseña establecida en el comando openssl pkcs12 mediante  `-  passout` argumento.
+* **[!UICONTROL Archivo]** KeyStore: la salida del comando openssl pkcs12 (keystore.p12)
+* **[!UICONTROL Contraseña]** del archivo KeyStore: La contraseña establecida en el comando openssl pkcs12 mediante  `-passout` argumento.
+* **[!UICONTROL Alias]** de clave privada: Valor proporcionado al  `-name` argumento en el comando openssl pkcs12 anterior (por ejemplo:  `my-key`).
+* **[!UICONTROL Contraseña]** de clave privada: La contraseña establecida en el comando openssl pkcs12 mediante  `-passout` argumento.
 
-* **[!UICONTROL Contraseña]** de clave privada: La contraseña establecida en el comando openssl pkcs12 mediante  `-  passout` argumento.
+>[!CAUTION]
+>
+>La contraseña del archivo KeyStore y la contraseña de clave privada son las mismas para ambas entradas. Si se introduce una contraseña no coincidente, la clave no se importará.
 
 ### Verifique que la clave privada esté cargada en el almacén de claves de AEM {#verify-the-private-key-is-loaded-into-the-aem-keystore}
 
