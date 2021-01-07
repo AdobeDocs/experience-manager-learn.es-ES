@@ -11,7 +11,7 @@ audience: developer
 kt: 5311
 thumbnail: 5311-spa-angular.jpg
 translation-type: tm+mt
-source-git-commit: ab5b92dd9c901075347cc521bf0abe0dfc0e5319
+source-git-commit: 28b5522e094a41d81116acb923dc0390478e2308
 workflow-type: tm+mt
 source-wordcount: '2387'
 ht-degree: 1%
@@ -33,7 +33,7 @@ Este capítulo profundiza en la API del modelo JSON de AEM y en cómo el conteni
 
 ## Qué va a generar
 
-Este capítulo inspeccionará cómo se asigna el componente de SPA proporcionado `Text` al componente de AEM `Text`. Se creará un nuevo componente de SPA `Image` que se puede utilizar en el SPA y crear en AEM. Las funciones predeterminadas de las directivas **Contenedor de diseño** y **Editor de plantillas** también se utilizarán para crear una vista con un aspecto un poco más variado.
+Este capítulo inspeccionará cómo se asigna el componente de SPA `Text` proporcionado al componente de AEM `Text`. Se creará un nuevo componente de SPA `Image` que se puede utilizar en el SPA y crear en AEM. Las funciones predeterminadas de las directivas **Contenedor de diseño** y **Editor de plantillas** también se utilizarán para crear una vista con un aspecto un poco más variado.
 
 ![Creación final de muestra de capítulo](./assets/map-components/final-page.png)
 
@@ -481,7 +481,7 @@ Los siguientes pasos se llevarán a cabo mediante el IDE de código de Visual St
 
    ![Plantilla de importación VSCode](assets/map-components/import-aem-servervscode.png)
 
-4. Repita los pasos para importar contenido pero seleccione la carpeta **políticas** ubicada en `/conf/wknd-spa-angular/settings/wcm/templates/policies`.
+4. Repita los pasos para importar contenido pero seleccione la carpeta **políticas** ubicada en `/conf/wknd-spa-angular/settings/wcm/policies`.
 
 5. Inspect el archivo `filter.xml` ubicado en `ui.content/src/main/content/META-INF/vault/filter.xml`.
 
