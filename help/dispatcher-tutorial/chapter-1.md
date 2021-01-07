@@ -4,7 +4,7 @@ seo-title: Introducción a los servicios de contenido de AEM - Capítulo 1 - Con
 description: Capítulo 1 del tutorial sin encabezado de AEM la configuración de la línea de base de la instancia de AEM para el tutorial.
 seo-description: Capítulo 1 del tutorial sin encabezado de AEM la configuración de la línea de base de la instancia de AEM para el tutorial.
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 52824c178ddf930df134608ecb01bb661d6c514c
 workflow-type: tm+mt
 source-wordcount: '17502'
 ht-degree: 0%
@@ -599,7 +599,7 @@ Nuevamente, esto se basa en la experiencia de la vida real. Ya hemos visto todos
 >
 >Esto es un anti-patrón. No lo use. Nunca.
 
-¿Alguna vez ha visto parámetros de consulta como `?ck=398547283745`? Se les llama asesinos de caché (&quot;ck&quot;). La idea es que, si agrega algún parámetro de consulta, el recurso no se procesará. Además, si agrega un número aleatorio como valor del parámetro (como &quot;398547283745&quot;), la dirección URL se convierte en única y se asegura de que ninguna otra caché entre el sistema de AEM y la pantalla pueda almacenar en caché. Los sospechosos habituales en el medio serían una caché &quot;Varnish&quot; frente al despachante, una CDN o incluso la caché del navegador. Nuevamente: No hagas eso. Desea que los recursos se almacenen en caché tanto como sea posible. La caché es tu amigo. No maten amigos.
+¿Alguna vez ha visto parámetros de consulta como `?ck=398547283745`? Se les llama asesinos de caché (&quot;ck&quot;). La idea es que, si agrega algún parámetro de consulta, el recurso no se almacenará en caché. Además, si agrega un número aleatorio como valor del parámetro (como &quot;398547283745&quot;), la dirección URL se convierte en única y se asegura de que ninguna otra caché entre el sistema de AEM y la pantalla pueda almacenar en caché. Los sospechosos habituales en el medio serían una caché &quot;Varnish&quot; frente al despachante, una CDN o incluso la caché del navegador. Nuevamente: No hagas eso. Desea que los recursos se almacenen en caché tanto como sea posible. La caché es tu amigo. No maten amigos.
 
 #### Invalidación automática
 
