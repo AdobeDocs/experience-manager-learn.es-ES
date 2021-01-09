@@ -5,10 +5,10 @@ breadcrumb-title: Tutoriales de AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
 translation-type: tm+mt
-source-git-commit: 322f618469126656dc735263abd55548eb0a3cbf
+source-git-commit: 81c704240f163ccd151a61643f589f825a288705
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 32%
+source-wordcount: '218'
+ht-degree: 33%
 
 ---
 
@@ -23,6 +23,12 @@ ht-degree: 32%
    + [Introducción a Sling](./underlying-technology/introduction-sling.md)
    + [Introducción al nivel de creación y publicación](./underlying-technology/introduction-author-publish.md)
    + [Introducción a Dispatcher](./underlying-technology/introduction-dispatcher.md)
++ Cloud Manager {#cloud-manager}
+   + [Programas](./cloud-manager/programs.md)
+   + [Entornos](./cloud-manager/environments.md)
+   + [Canalización de producción de CI/CD](./cloud-manager/cicd-production-pipeline.md)
+   + [Canalización de no producción de CI/CD](./cloud-manager/cicd-non-production-pipeline.md)
+   + [Actividad](./cloud-manager/activity.md)
 + Configuración del Entorno de desarrollo local {#local-development-environment-set-up}
    + [Información general](./local-development-environment/overview.md)
    + [Herramientas de desarrollo](./local-development-environment/development-tools.md)
