@@ -10,9 +10,9 @@ audience: developer
 kt: 5802
 thumbnail: KT-5802.jpg
 translation-type: tm+mt
-source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
+source-git-commit: 649d971ecaa67c0d1dd2636f3c212bfee3d13561
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1241'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,15 @@ A continuación se muestra un índice de problemas y errores comunes, junto con 
 + __Resolución__: Revise el código de trabajo personalizado y asegúrese de que todas las llamadas asincrónicas se hacen sincrónicas mediante  `await`.
 
 ## Herramienta de desarrollo{#development-tool}
+
+### Falta el archivo Console.json en el proyecto de Asset compute{#missing-console-json}
+
++ __Error:__ Error: Faltan los archivos necesarios en la validación (.../node_module/@adobe/asset-compute-client/lib/integrationConfiguration.js:XX:YY) en async setupAssetCompute (.../node_module/@adobe/asset-compute-devtool/src/assetComputeDevTool.js:XX:YY)
++ __Causa:__ Falta el  `console.json` archivo en la raíz del proyecto de Asset compute
++ __Resolución:__ Descargar un nuevo  `console.json` formulario del proyecto de Adobe I/O
+   1. En console.adobe.io, abra el proyecto de Adobe I/O que el proyecto de Asset compute está configurado para usar
+   1. Toque el botón __Descargar__ en la parte superior derecha
+   1. Guarde el archivo descargado en la raíz del proyecto de Asset compute utilizando el nombre de archivo `console.json`
 
 ### Sangría YAML incorrecta en manifest.yml{#incorrect-yaml-indentation}
 
@@ -95,7 +104,6 @@ La herramienta de desarrollo de assets computes puede ingresar un estado en el q
    + O bien, valide el archivo generado por la prueba en `/build/test-worker/<worker-name>/<test-run-timestamp>/<test-case>/rendition.<extension>`, valide que es correcto y utilícelo como archivo de representación esperado
 
 ## Depurar
-
 
 ### El depurador no se adjunta{#debugger-does-not-attach}
 
