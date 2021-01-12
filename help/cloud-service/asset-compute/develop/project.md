@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6269
 thumbnail: 40197.jpg
 translation-type: tm+mt
-source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
+source-git-commit: c551eb984d8fefe19a979ce8c556289caa6805d8
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '759'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Desde la raíz del proyecto de Asset compute recién creado, ejecute el siguient
 $ aio app use
 ```
 
-Verifique que los detalles actuales del área de trabajo sean correctos y que sean bonitos `Y` o intro para generar un `console.json`. Si `.env` y `.aio` se detectan como ya existentes, toque `x` para omitir su creación.
+Compruebe que los detalles del espacio de trabajo actual son correctos, presione `Y` o introduzca para generar un `console.json`. Si `.env` y `.aio` se detectan como ya existentes, toque `x` para omitir su creación.
 
 ## Revisar la anatomía del proyecto
 
