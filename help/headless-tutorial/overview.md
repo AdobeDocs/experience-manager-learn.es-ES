@@ -2,9 +2,9 @@
 title: Tutoriales AEM sin encabezado
 description: Una colección de tutoriales sobre cómo usar Adobe Experience Manager como un CMS sin cabeza.
 translation-type: tm+mt
-source-git-commit: 5012433a5f1c7169b1a3996453bfdbd5d78e5b1c
+source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '373'
 ht-degree: 5%
 
 ---
@@ -18,8 +18,8 @@ Adobe Experience Manager tiene varias opciones para definir extremos sin encabez
 
 >[!CAUTION]
 >
-> La API de AEM GraphQL para el Envío de fragmentos de contenido se lanzará a principios de 2021.
-> La documentación correspondiente está disponible para fines de previsualización.
+> El Envío API de GraphQL de AEM para fragmentos de contenido está disponible bajo petición.
+> Póngase en contacto con la asistencia de Adobe para habilitar la API para su AEM como programa de Cloud Service.
 
 API de AEM GraphQL para fragmentos de contenido
 admite escenarios CMS sin encabezado en los que las aplicaciones cliente externas representan experiencias mediante contenido gestionado en AEM.
