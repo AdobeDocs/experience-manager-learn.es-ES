@@ -11,9 +11,9 @@ mini-toc-levels: 1
 kt: 6716
 thumbnail: KT-6716.jpg
 translation-type: tm+mt
-source-git-commit: 2ea667d3bdb73fa4da87b877f14db77d896448a7
+source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1427'
 ht-degree: 0%
 
 ---
@@ -23,8 +23,8 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
-> La API de AEM GraphQL para el Envío de fragmentos de contenido se lanzará a principios de 2021.
-> La documentación correspondiente está disponible para fines de previsualización.
+> El Envío API de GraphQL de AEM para fragmentos de contenido está disponible bajo petición.
+> Póngase en contacto con la asistencia de Adobe para habilitar la API para su AEM como programa de Cloud Service.
 
 En este capítulo analizamos cómo se pueden utilizar las API de GraphQL AEM para impulsar la experiencia en una aplicación externa.
 
@@ -330,7 +330,7 @@ GraphQL tiene un establecimiento inflexible de tipos y, por tanto, puede devolve
    `;
    ```
 
-   Sabemos que `adventurePetPolicy` no es parte del modelo de aventura, por lo que esto debería generar un error.
+   Sabemos que `adventurePetPolicy` no es parte del modelo de aventura, por lo que esto debería déclencheur un error.
 
 1. Guarde los cambios y vuelva al explorador. Debería ver un mensaje de error como el siguiente:
 
