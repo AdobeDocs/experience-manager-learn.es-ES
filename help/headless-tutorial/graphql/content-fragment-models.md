@@ -11,9 +11,9 @@ mini-toc-levels: 1
 kt: 6712
 thumbnail: 22452.jpg
 translation-type: tm+mt
-source-git-commit: 2ea667d3bdb73fa4da87b877f14db77d896448a7
+source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '980'
 ht-degree: 1%
 
 ---
@@ -23,8 +23,8 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
-> La API de AEM GraphQL para el Envío de fragmentos de contenido se lanzará a principios de 2021.
-> La documentación correspondiente está disponible para fines de previsualización.
+> El Envío API de GraphQL de AEM para fragmentos de contenido está disponible bajo petición.
+> Póngase en contacto con la asistencia de Adobe para habilitar la API para su AEM como programa de Cloud Service.
 
 En este capítulo aprenderá a modelar contenido y a crear un esquema con **Modelos de fragmento de contenido**. Revisará los modelos existentes y creará un nuevo modelo. También aprenderá los diferentes tipos de datos que se pueden utilizar para definir un esquema como parte del modelo.
 
