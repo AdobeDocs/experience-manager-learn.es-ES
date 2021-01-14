@@ -11,9 +11,9 @@ mini-toc-levels: 1
 kt: 6714
 thumbnail: KT-6714.jpg
 translation-type: tm+mt
-source-git-commit: 2ea667d3bdb73fa4da87b877f14db77d896448a7
+source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
 workflow-type: tm+mt
-source-wordcount: '1030'
+source-wordcount: '1039'
 ht-degree: 0%
 
 ---
@@ -23,8 +23,8 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
-> La API de AEM GraphQL para el Envío de fragmentos de contenido se lanzará a principios de 2021.
-> La documentación correspondiente está disponible para fines de previsualización.
+> El Envío API de GraphQL de AEM para fragmentos de contenido está disponible bajo petición.
+> Póngase en contacto con la asistencia de Adobe para habilitar la API para su AEM como programa de Cloud Service.
 
 La API de GraphQL de AEM proporciona un potente lenguaje de consulta para exponer los datos de fragmentos de contenido a aplicaciones de flujo descendente. Los modelos de fragmento de contenido definen el esquema de datos que utilizan los fragmentos de contenido. Cada vez que se crea o actualiza un modelo de fragmento de contenido, el esquema se traduce y se agrega al &quot;gráfico&quot; que conforma la API de GraphQL.
 
@@ -63,7 +63,7 @@ Un requisito común será la consulta de varios fragmentos de contenido.
 
    ![Resultados de Lista del colaborador](assets/explore-graphql-api/contributorlist-results.png)
 
-1. Coloque el cursor debajo del texto `_path` e introduzca **CTRL+Espacio** para activar las sugerencias de código. Añada `fullName` y `occupation` a la consulta.
+1. Coloque el cursor debajo del texto `_path` e introduzca **CTRL+Espacio** en las sugerencias de código de déclencheur. Añada `fullName` y `occupation` a la consulta.
 
    ![Actualizar Consulta con la coincidencia de código](assets/explore-graphql-api/update-query-codehinting.png)
 
