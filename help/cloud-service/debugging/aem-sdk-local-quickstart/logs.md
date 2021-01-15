@@ -9,9 +9,9 @@ activity: develop
 audience: developer
 kt: 5252
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 178ba3dbcb6f2050a9c56303bbabbcfcbead3e79
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '394'
 ht-degree: 2%
 
 ---
@@ -51,7 +51,7 @@ A menudo resulta útil &quot;recortar&quot; el `error.log` que transmite su sali
 
 Los registros de Dispatcher se envían a stdout cuando se invoca `bin/docker_run`, pero los registros pueden tener acceso directo en el contenedor de Docker.
 
-### Acceso a los registros en el contenedor del Docker
+### Acceso a los registros en el contenedor del Docker{#dispatcher-tools-access-logs}
 
 Los registros de Dispatcher pueden acceder directamente en el contenedor de Docker en `/etc/httpd/logs`.
 
@@ -73,7 +73,10 @@ $ docker exec -it <CONTAINER ID> /bin/sh
 /# exit
 ```
 
-### Copia de los registros de Docker al sistema de archivos local
+_El  `<CONTAINER ID>` in  `docker exec -it <CONTAINER ID> /bin/sh` debe reemplazarse por el ID de CONTENEDOR del acoplador de destinatario que aparece en el  `docker ps` comando._
+
+
+### Copia de los registros de Docker al sistema de archivos local{#dispatcher-tools-copy-logs}
 
 Los registros de Dispatcher se pueden copiar desde el contenedor de Docker en `/etc/httpd/logs` al sistema de archivos local para su inspección mediante la herramienta de análisis de registros favorita. Tenga en cuenta que se trata de una copia puntual y no proporciona actualizaciones en tiempo real de los registros.
 
@@ -90,3 +93,4 @@ $ ls
     dispatcher.log          healthcheck_access_log  httpd_access.log        httpd_error.log
 ```
 
+_El  `<CONTAINER_ID>` in  `docker cp <CONTAINER_ID>:/var/log/apache2 ./` debe reemplazarse por el ID de CONTENEDOR del acoplador de destinatario que aparece en el  `docker ps` comando._
