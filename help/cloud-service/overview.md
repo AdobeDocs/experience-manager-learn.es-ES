@@ -4,9 +4,9 @@ description: Recopilación de tutoriales para Adobe Experience Manager (AEM) com
 sub-product: sitios, cloud-manager, fundación, recursos
 kt: 3289
 translation-type: tm+mt
-source-git-commit: 322f618469126656dc735263abd55548eb0a3cbf
+source-git-commit: eabd8650886fa78d9d177f3c588374a443ac1ad6
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '277'
 ht-degree: 8%
 
 ---
@@ -19,6 +19,10 @@ Adobe Experience Manager (AEM) ya está disponible as a Cloud Service. AEM como 
 >[!VIDEO](https://video.tv.adobe.com/v/31085/?quality=12&learn=on)
 
 ## Novedades
+
+* **[Autentificación para AEM como Cloud Service desde una aplicación externa (tutorial)](../headless-tutorial/authentication/overview.md)**
+
+   *Aprenda a utilizar la autenticación basada en tokens para interactuar con AEM como Cloud Service a través de HTTP*
 
 * **[Importación masiva (vídeo)](./migration/bulk-import.md)**
 
@@ -36,9 +40,6 @@ Adobe Experience Manager (AEM) ya está disponible as a Cloud Service. AEM como 
 
    *Obtenga información sobre cómo configurar los usuarios de IMS en Adobe Admin Console para que puedan acceder a AEM*
 
-* **[Depuración AEM como Cloud Service (tutorial)](./debugging/cloud-service/overview.md)**
-
-   *Explorar cómo depurar AEM como Cloud Service*
 
 ## Selección de personal
 
