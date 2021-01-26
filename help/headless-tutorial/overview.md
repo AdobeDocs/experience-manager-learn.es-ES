@@ -2,10 +2,10 @@
 title: Tutoriales AEM sin encabezado
 description: Una colección de tutoriales sobre cómo usar Adobe Experience Manager como un CMS sin cabeza.
 translation-type: tm+mt
-source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
+source-git-commit: eabd8650886fa78d9d177f3c588374a443ac1ad6
 workflow-type: tm+mt
-source-wordcount: '373'
-ht-degree: 5%
+source-wordcount: '460'
+ht-degree: 4%
 
 ---
 
@@ -33,13 +33,19 @@ Para superar estos desafíos, GraphQL proporciona una API basada en consultas qu
 
 * Obtenga información sobre cómo utilizar las API de GraphQL de AEM en el tutorial [Introducción a las API de GraphQL de AEM](./graphql/overview.md)
 
+## Tutorial de autenticación basada en tokens
+
+AEM expone una variedad de extremos HTTP con los que se puede interactuar de forma directa, desde GraphQL, AEM Content Services a la API HTTP de Assets. A menudo, estos consumidores sin cabeza pueden necesitar autenticarse para AEM a fin de acceder a contenido o acciones protegidos. Para facilitar esto, AEM admite la autenticación basada en tokens de solicitudes HTTP de aplicaciones, servicios o sistemas externos.
+
+* Obtenga información sobre cómo autenticarse para AEM mediante HTTP mediante tokenes de acceso en [Autenticar para AEM como Cloud Service desde un tutorial de aplicación externo](./authentication/overview.md)
+
 ## Tutorial de servicios de contenido AEM
 
 AEM Content Services aprovecha las páginas AEM tradicionales para componer extremos de API de REST sin encabezado y AEM Componentes define o hace referencia al contenido que se va a exponer en estos extremos.
 
 AEM Content Services permite que las mismas abstracciones de contenido utilizadas para crear páginas web en AEM Sites definan el contenido y los esquemas de estas API HTTP. El uso de AEM páginas y componentes de AEM permite a los especialistas en marketing componer y actualizar rápidamente API de JSON flexibles que pueden activar cualquier aplicación.
 
-* Obtenga información sobre cómo utilizar AEM Content Services en el tutorial [Introducción a los servicios de contenido de AEM](./content-services/overview.md)
+* Obtenga información sobre cómo utilizar AEM Content Services en el [Tutorial de introducción a AEM Content Services](./content-services/overview.md)
 
 ## AEM GraphQL vs. Servicios de contenido AEM
 
