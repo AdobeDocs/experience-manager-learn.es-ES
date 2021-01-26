@@ -11,9 +11,9 @@ mini-toc-levels: 1
 kt: 6714
 thumbnail: KT-6714.jpg
 translation-type: tm+mt
-source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
+source-git-commit: bfcc9dbb70753f985a2e47f329dbb9f43f5805e2
 workflow-type: tm+mt
-source-wordcount: '1039'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ Un requisito común será la consulta de varios fragmentos de contenido.
 
    `fullName` y  `occupation` son propiedades sencillas. Recuerde en el capítulo [Definición de modelos de fragmento de contenido](./content-fragment-models.md) que `fullName` y `occupation` son los valores utilizados al definir el **nombre de propiedad** de los campos respectivos.
 
-1. `pictureReference` y  `biography` representan campos más complejos. Actualice la consulta con lo siguiente para devolver datos sobre los campos `pictureReference` y `biography`.
+1. `pictureReference` y  `biographyText` representan campos más complejos. Actualice la consulta con lo siguiente para devolver datos sobre los campos `pictureReference` y `biographyText`.
 
    ```graphql
    {
@@ -82,7 +82,7 @@ Un requisito común será la consulta de varios fragmentos de contenido.
          _path
          fullName
          occupation
-         biography {
+         biographyText {
            html
          }
          pictureReference {
@@ -97,7 +97,7 @@ Un requisito común será la consulta de varios fragmentos de contenido.
    }
    ```
 
-   `biography` es un campo de texto multilínea y la API de GraphQL nos permite elegir una variedad de formatos para los resultados como  `html`,  `markdown`o  `json` o  `plaintext`.
+   `biographyText` es un campo de texto multilínea y la API de GraphQL nos permite elegir una variedad de formatos para los resultados como  `html`,  `markdown`o  `json` o  `plaintext`.
 
    `pictureReference` es una referencia de contenido y se espera que sea una imagen, por lo que se utiliza un  `ImageRef` objeto integrado. Esto nos permite solicitar datos adicionales sobre la referencia de la imagen, como `width` y `height`.
 
