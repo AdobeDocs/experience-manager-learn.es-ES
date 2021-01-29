@@ -10,9 +10,9 @@ audience: developer
 kt: 6785
 thumbnail: 330477.jpg
 translation-type: tm+mt
-source-git-commit: eabd8650886fa78d9d177f3c588374a443ac1ad6
+source-git-commit: c4f3d437b5ecfe6cb97314076cd3a5e31b184c79
 workflow-type: tm+mt
-source-wordcount: '1044'
+source-wordcount: '1070'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Los desarrolladores que construyen integraciones que requieren acceso programát
 
 ![Obtener un Token de acceso de desarrollo local](assets/local-development-access-token/getting-a-local-development-access-token.png)
 
-El Token de acceso de desarrollo local proporciona acceso a los servicios de AEM Author y Publish como el usuario que generó el token, junto con sus permisos. A pesar de que se trata de un token de desarrollo, no comparta este token.
+El Token de acceso de desarrollo local proporciona acceso a los servicios de AEM Author y Publish como el usuario que generó el token, junto con sus permisos. A pesar de que se trata de un token de desarrollo, no comparta este token ni almacene en el control de código fuente.
 
 1. En [Adobe Admin Console](https://adminconsole.adobe.com/) asegúrese de que usted, el programador, es miembro de:
    + __Cloud Manager: Perfil del producto__ DeveloperIMS (otorga acceso a AEM Developer Console)
@@ -44,7 +44,7 @@ El Token de acceso de desarrollo local proporciona acceso a los servicios de AEM
 
 ![AEM Developer Console - Integraciones - Obtener token de desarrollo local](./assets/local-development-access-token/developer-console.png)
 
-## Descargar el Token de acceso de desarrollo local{#download-local-development-access-token}
+## Se ha utilizado el Token de acceso de desarrollo local{#use-local-development-access-token}
 
 ![Token de acceso de desarrollo local - Aplicación externa](assets/local-development-access-token/local-development-access-token-external-application.png)
 
@@ -55,11 +55,11 @@ El Token de acceso de desarrollo local proporciona acceso a los servicios de AEM
 1. La aplicación externa construye solicitudes HTTP para AEM como Cloud Service, agregando el Token de acceso de desarrollo local como token de portador al encabezado de autorización de las solicitudes HTTP
 1. AEM como Cloud Service recibe la solicitud HTTP, la autentica y realiza el trabajo solicitado por la solicitud HTTP y devuelve una respuesta HTTP a la aplicación externa
 
-### La aplicación externa
+### La aplicación externa de muestra
 
 Crearemos una sencilla aplicación JavaScript externa para ilustrar cómo acceder mediante programación a AEM como Cloud Service a través de HTTPS mediante el token de acceso de programadores local. Esto ilustra cómo _cualquier aplicación o sistema_ que se ejecute fuera de AEM, independientemente del entorno o idioma, puede utilizar el token de acceso para autenticarse mediante programación y acceder a AEM como Cloud Service. En la [siguiente sección](./service-credentials.md) actualizaremos este código de aplicación para admitir el método de generación de un token para uso de producción.
 
-Esta aplicación se ejecuta desde la línea de comandos y actualiza AEM metadatos de recursos mediante las API HTTP de AEM Assets, con el siguiente flujo:
+Esta aplicación de ejemplo se ejecuta desde la línea de comandos y actualiza AEM metadatos de recursos mediante las API HTTP de AEM Assets mediante el siguiente flujo:
 
 1. Lee los parámetros de la línea de comandos (`getCommandLineParams()`)
 1. Obtiene el token de acceso utilizado para autenticarse para AEM como Cloud Service (`getAccessToken(...)`)
@@ -208,11 +208,11 @@ El elemento clave para autenticarse mediante programación con AEM mediante el t
    }
    ```
 
-   Revise las invocaciones `fetch(..)` en `listAssetsByFolder(...)` y `updateMetadata(...)`, y observe `headers` definir el encabezado de solicitud HTTP `Authorization` con un valor de `Bearer <ACCESS TOKEN>`. Así es como la solicitud HTTP procedente de la aplicación externa se autentica para AEM como Cloud Service.
+   Revise las invocaciones `fetch(..)` en `listAssetsByFolder(...)` y `updateMetadata(...)`, y observe `headers` definir el encabezado de solicitud HTTP `Authorization` con un valor de `Bearer ACCESS_TOKEN`. Así es como la solicitud HTTP procedente de la aplicación externa se autentica para AEM como Cloud Service.
 
    ```javascript
    ...
-   return fetch(`${params.aem}${ASSETS_HTTP_API}${folder}.json?configid=ims`, {
+   return fetch(`${params.aem}${ASSETS_HTTP_API}${folder}.json`, {
                method: 'get',
                headers: { 
                    'Content-Type': 'application/json',
@@ -267,4 +267,6 @@ Verifique que los metadatos se hayan actualizado iniciando sesión en el AEM com
 
 ## Pasos siguientes
 
-Ahora que hemos accedido mediante programación a AEM como Cloud Service mediante el token de desarrollo local, necesitamos actualizar el código a.
+Ahora que hemos accedido mediante programación a AEM como Cloud Service mediante el token de desarrollo local, necesitamos actualizar la aplicación para que gestione mediante Credenciales de servicio, de modo que esta aplicación se pueda utilizar en un contexto de producción.
+
++ [Cómo utilizar las credenciales de servicio](./service-credentials.md)
