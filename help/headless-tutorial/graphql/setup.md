@@ -11,20 +11,15 @@ mini-toc-levels: 1
 kt: 6386
 thumbnail: KT-6386.jpg
 translation-type: tm+mt
-source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
+source-git-commit: 8c5b425e6dcf23cbef042097f17db9e51bdf63c9
 workflow-type: tm+mt
-source-wordcount: '1599'
+source-wordcount: '1532'
 ht-degree: 2%
 
 ---
 
 
 # Configuración rápida {#setup}
-
->[!CAUTION]
->
-> El Envío API de GraphQL de AEM para fragmentos de contenido está disponible bajo petición.
-> Póngase en contacto con la asistencia de Adobe para habilitar la API para su AEM como programa de Cloud Service.
 
 Este capítulo oferta una rápida configuración de un entorno local para ver que una aplicación externa consume contenido de AEM mediante API de GraphQL AEM. Los capítulos posteriores del tutorial generarán esta configuración.
 
@@ -67,10 +62,6 @@ Este tutorial utiliza el [AEM como un SDK de Cloud Service](https://experiencele
 1. Proporcione una contraseña de administrador como `admin`. Se acepta cualquier contraseña de administrador, pero se recomienda utilizar el valor predeterminado para el desarrollo local a fin de reducir la necesidad de volver a configurar.
 1. Después de unos minutos, la instancia de AEM finalizará la instalación y se abrirá una nueva ventana del explorador en [http://localhost:4502](http://localhost:4502).
 1. Inicie sesión con el nombre de usuario `admin` y la contraseña `admin`.
-
->[!CAUTION]
->
-> Para continuar con la configuración, la función GraphQL ahora debe habilitarse manualmente en el SDK de inicio rápido. Póngase en contacto con su Adobe para obtener más instrucciones. Este paso manual solo es necesario hasta que la función se publique en 2021.
 
 ## Instalar contenido de muestra{#wknd-site}
 
