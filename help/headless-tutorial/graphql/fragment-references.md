@@ -11,20 +11,15 @@ mini-toc-levels: 1
 kt: 6718
 thumbnail: KT-6718.jpg
 translation-type: tm+mt
-source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
+source-git-commit: 8c5b425e6dcf23cbef042097f17db9e51bdf63c9
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '828'
 ht-degree: 1%
 
 ---
 
 
 # Modelado de datos avanzado con referencias de fragmento
-
->[!CAUTION]
->
-> El Envío API de GraphQL de AEM para fragmentos de contenido está disponible bajo petición.
-> Póngase en contacto con la asistencia de Adobe para habilitar la API para su AEM como programa de Cloud Service.
 
 Es posible hacer referencia a un fragmento de contenido desde otro fragmento de contenido. Esto permite al usuario crear modelos de datos complejos con relaciones entre fragmentos.
 
