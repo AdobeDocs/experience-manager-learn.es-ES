@@ -6,9 +6,9 @@ user-guide-description: Recopilación de recursos de AEM Forms para principiante
 breadcrumb-title: Tutoriales de AEM Forms
 index: y
 translation-type: tm+mt
-source-git-commit: 049574ab2536b784d6b303f474dba0412007e18c
+source-git-commit: 48060b4d8c4b502e0c099ae8081695f97b423037
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '943'
 ht-degree: 6%
 
 ---
@@ -19,6 +19,7 @@ ht-degree: 6%
 + [Información general](overview.md)
 + [Prácticas recomendadas para seguir](adaptive-forms/best-practices-adaptive-forms.md)
 + [Configuración de la autenticación OKTA con AEM Author](adaptive-forms/single-sign-on-with-okta.md)
++ [Cree su primer paquete OSGi](adaptive-forms/create-your-first-osgi-bundle.md)
 + Creación del primer formulario adaptable {#creating-your-first-adaptive-form}
    + [Introducción y configuración](creating-your-first-adaptive-form/introduction-and-setup.md)
    + [Crear plantilla de formulario adaptable](creating-your-first-adaptive-form/create-adaptive-form-template.md)
