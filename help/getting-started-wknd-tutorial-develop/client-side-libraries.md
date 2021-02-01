@@ -10,10 +10,10 @@ audience: developer
 kt: 4083
 thumbnail: 30359.jpg
 translation-type: tm+mt
-source-git-commit: 1e615d1c51fa0c4c0db335607c29a8c284874c8d
+source-git-commit: e03d84f92be11623704602fb448273e461c70b4e
 workflow-type: tm+mt
-source-wordcount: '3003'
-ht-degree: 5%
+source-wordcount: '3257'
+ht-degree: 3%
 
 ---
 
@@ -30,25 +30,34 @@ También se recomienda revisar el tutorial [Conceptos básicos del componente](c
 
 ### Proyecto de inicio
 
+>[!NOTE]
+>
+> Si ha completado correctamente el capítulo anterior, puede volver a utilizar el proyecto y omitir los pasos para extraer el proyecto de inicio.
+
 Consulte el código de línea base que el tutorial genera:
 
-1. Clona el repositorio [github.com/adobe/aem-guides-wknd](https://github.com/adobe/aem-guides-wknd).
-1. Consulte la rama `client-side-libraries/start`
+1. Consulte la rama `tutorial/client-side-libraries-start` de [GitHub](https://github.com/adobe/aem-guides-wknd)
 
    ```shell
-   $ git clone git@github.com:adobe/aem-guides-wknd.git ~/code/aem-guides-wknd
-   $ cd ~/code/aem-guides-wknd
-   $ git checkout client-side-libraries/start
+   $ cd aem-guides-wknd
+   $ git checkout tutorial/client-side-libraries-start
    ```
 
 1. Implemente código base en una instancia de AEM local con sus conocimientos Maven:
 
    ```shell
-   $ cd ~/code/aem-guides-wknd
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-Siempre puede realizar la vista del código terminado en [GitHub](https://github.com/adobe/aem-guides-wknd/tree/client-side-libraries/solution) o extraer el código localmente cambiando a la rama `client-side-libraries/solution`.
+   >[!NOTE]
+   >
+   > Si utiliza AEM 6.5 o 6.4, anexe el perfil `classic` a cualquier comando Maven.
+
+   ```shell
+   $ mvn clean install -PautoInstallSinglePackage -Pclassic
+   ```
+
+Siempre puede realizar la vista del código terminado en [GitHub](https://github.com/adobe/aem-guides-wknd/tree/tutorial/client-side-libraries-solution) o extraer el código localmente cambiando a la rama `tutorial/client-side-libraries-solution`.
 
 ## Objetivo
 
@@ -60,7 +69,9 @@ Siempre puede realizar la vista del código terminado en [GitHub](https://github
 
 En este capítulo, agregará algunos estilos de línea de base para el sitio WKND y la plantilla de página de artículos en un esfuerzo por acercar la implementación a las [maquetas de diseño de la interfaz de usuario](assets/pages-templates/wknd-article-design.xd). Utilizará un flujo de trabajo front-end avanzado para integrar un proyecto de webpack en una biblioteca cliente AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/30359/?quality=12&learn=on)
+![Estilos finalizados](assets/client-side-libraries/finished-styles.png)
+
+*Página de artículos con estilos de línea de base aplicados*
 
 ## Fondo {#background}
 
@@ -88,256 +99,78 @@ Luego exploraremos la organización de clientlibs generada por el [AEM Arquetipo
 >
 > La siguiente organización de biblioteca del lado del cliente es generada por AEM arquetipo del proyecto pero representa simplemente un punto de partida. La forma en que un proyecto gestiona y envía CSS y Javascript en última instancia a una implementación de sitios puede variar considerablemente según los recursos, las habilidades y los requisitos.
 
-1. Si utiliza Eclipse u otro IDE, abra el módulo **ui.apps**.
+1. Con VSCode u otro IDE, abra el módulo **ui.apps**.
 1. Expanda la ruta `/apps/wknd/clientlibs` para vista de los clientlibs generados por el arquetipo.
 
    ![Clientlibs en ui.apps](assets/client-side-libraries/four-clientlib-folders.png)
 
    Inspeccionaremos a estos clientes con buenos detalles a continuación.
 
-1. Inspect las propiedades de `clientlibs/clientlib-base`.
+1. La siguiente tabla resume las bibliotecas de cliente. Puede encontrar más detalles sobre [incluyendo las bibliotecas de cliente aquí](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html?lang=en#developing).
 
-   **clientlib-** baserepresenta el nivel base de CSS y JavaScript necesario para que el sitio WKND funcione. Observe la propiedad `categories` que está establecida en `wknd.base`. `categories` es un mecanismo de etiquetado para clientes y es la forma en que se puede hacer referencia a ellos.
+   | Nombre | Descripción | Notas |
+   |-------------------| ------------| ------|
+   | `clientlib-base` | Nivel base de CSS y JavaScript necesario para que el sitio WKND funcione | incrusta bibliotecas de cliente de componentes principales |
+   | `clientlib-grid` | Genera la CSS necesaria para que funcione el [modo de diseño](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html). | Aquí se pueden configurar los puntos de interrupción de dispositivos móviles y tabletas |
+   | `clientlib-site` | Contiene un tema específico del sitio para el sitio WKND | Generado por el módulo `ui.frontend` |
+   | `clientlib-dependencies` | Incrusta cualquier dependencia de terceros | Generado por el módulo `ui.frontend` |
 
-   Observe la propiedad `embed` y los valores `String[]`. La propiedad `embed` incrusta otros clientes en función de su categoría. **clientlib-** basewill incluirá todas las bibliotecas de clientes de componentes principales de AEM que sean necesarias. Esto incluye artefactos como javascript para el carrusel, componentes de búsqueda rápida para funcionar. **clientlib-** basewill no incluirá ninguna CSS y Javascript propia, sino que solo incorporará otras bibliotecas de cliente. **clientlib-** baseincrusta la  **clientlib-** gridclientlib con la categoría de  `wknd.grid`.
+1. Observe que `clientlib-site` y `clientlib-dependencies` se omiten en el control de código fuente. Esto se hace por diseño, ya que el módulo `ui.frontend` los generará en tiempo de compilación.
 
-   Observe la propiedad `allowProxy` establecida en `true`. Se recomienda configurar siempre `allowProxy=true` en clientlibs. La propiedad `allowProxy` nos permite almacenar los clientlibs con nuestro código de aplicación en `/apps` **pero** luego envía a los clientlibs por una ruta con el prefijo `/etc.clientlibs` para evitar exponer cualquier código de aplicación a los usuarios finales. Puede encontrar más información sobre la propiedad [allowProxy aquí.](https://docs.adobe.com/content/help/es-ES/experience-manager-65/developing/introduction/clientlibs.html#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet).
+## Actualizar estilos base {#base-styles}
 
-1. Inspect las propiedades de `clientlibs/clientlib-grid`.
+A continuación, actualice los estilos base definidos en el módulo **[ui.frontender](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html)**. Los archivos del módulo `ui.frontend` generarán las bibliotecas `clientlib-site` y `clientlib-dependecies` que contienen el tema del sitio y las dependencias de terceros.
 
-   **clientlib-** gridis es responsable de incluir/generar la CSS necesaria para que el  [modelo de ](https://docs.adobe.com/content/help/es-ES/experience-manager-65/authoring/siteandpage/responsive-layout.html) diseño funcione con el editor de AEM Sites. **clientlib-** gridhad tiene una categoría definida  `wknd.grid` y incrustada mediante  **clientlib-base**.
+Las bibliotecas del lado del cliente tienen algunas limitaciones en cuanto a la compatibilidad con lenguajes como [Sass](https://sass-lang.com/) o [TypeScript](https://www.typescriptlang.org/). Existen varias herramientas de código abierto como [NPM](https://www.npmjs.com/) y [webpack](https://webpack.js.org/) que aceleran y optimizan el desarrollo del front-end. El objetivo del módulo **ui.front** es poder utilizar estas herramientas para administrar la mayoría de los archivos de origen front-end.
 
-   La cuadrícula se puede personalizar para utilizar distintas cantidades de columnas y puntos de interrupción. A continuación, se actualizarán los puntos de interrupción predeterminados generados.
+1. Abra el módulo **ui.front** y vaya a `src/main/webpack/site`.
+1. Abra el archivo `main.scss`
 
-1. Actualice el archivo `/apps/wknd/clientlibs/clientlib-grid/less/grid.less`:
+   ![main.scs - punto de entrada](assets/client-side-libraries/main-scss.png)
 
-   ```css
-   @import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";
-   
-   /* maximum amount of grid cells to be provided */
-   @max_col: 12;
-   @screen-small: 767px;
-   @screen-medium: 1024px;
-   @screen-large: 1200px;
-   @gutter-padding: 14px;
-   
-   /* default breakpoint */
-   .aem-Grid {
-       .generate-grid(default, @max_col);
-   }
-   
-   /* phone breakpoint */
-   @media (max-width: @screen-small) {
-       .aem-Grid {
-           .generate-grid(phone, @max_col);
-       }
-   }
-   /* tablet breakpoint */
-   @media (min-width: (@screen-small + 1)) and (max-width: @screen-medium) {
-       .aem-Grid {
-           .generate-grid(tablet, @max_col);
-       }
-   }
-   
-   .aem-GridColumn {
-       padding: 0 @gutter-padding;
-   }
-   
-   .responsivegrid.aem-GridColumn {
-       padding-left: 0;
-       padding-right: 0;
-   }
+   `main.scss` es el punto de entrada a todos los archivos Sass del  `ui.frontend` módulo. Incluirá el archivo `_variables.scss`, que contiene una serie de variables de marca que se utilizarán en distintos archivos de Sass del proyecto. El archivo `_base.scss` también se incluye y define algunos estilos básicos para elementos HTML. Una expresión normal incluye todos los estilos de los estilos de componentes individuales en `src/main/webpack/components`. Otra expresión regular incluye todos los archivos en `src/main/webpack/site/styles`.
+
+1. Inspect el archivo `main.ts`. `main.ts` incluye  `main.scss` e incluye una expresión regular para recopilar cualquier  `.js` o  `.ts` archivo del proyecto. Este punto de entrada será utilizado por los [archivos de configuración del webpack](https://webpack.js.org/configuration/) como punto de entrada para todo el módulo `ui.frontend`.
+
+1. Inspect los archivos debajo de `src/main/webpack/site/styles`:
+
+   ![Archivos de estilo](assets/client-side-libraries/style-files.png)
+
+   Estos estilos de archivo para elementos globales de la plantilla, como Encabezado, Pie de página y contenedor de contenido principal. Las reglas CSS de estos archivos destinatario diferentes elementos HTML `header`, `main` y `footer`. Estos elementos HTML se definieron mediante políticas en el capítulo anterior [Páginas y plantillas](./pages-templates.md).
+
+1. Expanda la carpeta `components` en `src/main/webpack` e inspeccione los archivos.
+
+   ![Archivos Sass de componentes](assets/client-side-libraries/component-sass-files.png)
+
+   Cada archivo se asigna a un componente principal como el [componente de acordeón](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/accordion.html?lang=en#components). Cada componente principal se genera con la notación [Modificador de elementos de bloque](https://getbem.com/) o BEM para facilitar el destinatario de clases CSS específicas con reglas de estilo. Los archivos situados debajo de `/components` han sido rellenados por el arquetipo del proyecto AEM con las distintas reglas de BEM para cada componente.
+
+1. Descargue los estilos base WKND **[wknd-base-style-src.zip](./assets/client-side-libraries/wknd-base-styles-src.zip)** y **descomprima** el archivo.
+
+   ![Estilos base WKND](assets/client-side-libraries/wknd-base-styles-unzipped.png)
+
+   Para acelerar el tutorial, hemos proporcionado varios archivos Sass que implementan la marca WKND en función de los componentes principales y la estructura de la plantilla de página de artículos.
+
+1. Sobrescriba el contenido de `ui.frontend/src` con archivos del paso anterior. El contenido del zip debe sobrescribir las siguientes carpetas:
+
+   ```plain
+   /src/main/webpack
+            /base
+            /components
+            /resources
    ```
 
-   Esto cambiará los puntos de interrupción para que se correspondan con los puntos de interrupción de plantilla establecidos en `/ui.content/src/main/content/jcr_root/conf/wknd/settings/wcm/templates/article-page-template/structure/.content.xml`.
+   ![Archivos cambiados](assets/client-side-libraries/changed-files-uifrontend.png)
 
-   Observe que este archivo en realidad hace referencia a un archivo `grid_base.less` en `/libs` que contiene una mezcla personalizada para generar la cuadrícula.
+   Inspect los archivos modificados para ver los detalles de la implementación de estilo WKND.
 
-1. Inspect las propiedades de `clientlibs/clientlib-site`.
+## Inspect la integración de ui.frontender {#ui-frontend-integration}
 
-   **clientlib-** site contendrá todos los estilos específicos del sitio para la marca WKND. Observe la categoría de `wknd.site`. El CSS y Javascript que generan esta clientlib se mantendrán en el módulo `ui.frontend`. A continuación exploraremos esta integración.
-
-1. Inspect las propiedades de `clientlibs/clientlib-dependencies`.
-
-   **clientlib-** dependencia se ha diseñado para integrar dependencias de terceros. Es una clientlib independiente para que se pueda cargar en la parte superior de la página HTML si es necesario. Observe la categoría de `wknd.dependencies`. El CSS y Javascript que generan esta clientlib se mantendrán en el módulo `ui.frontend`. Exploraremos esta integración más adelante en el tutorial.
-
-## Uso del módulo ui.front {#ui-frontend}
-
-A continuación, exploraremos el uso del módulo **[ui.frontender](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html)**.
-
-### Motivación
-
-Las bibliotecas del lado del cliente tienen algunas limitaciones en cuanto a la compatibilidad con lenguajes como [Sass](https://sass-lang.com/) o [TypeScript](https://www.typescriptlang.org/). También ha habido una explosión de herramientas de código abierto como [NPM](https://www.npmjs.com/) y [webpack](https://webpack.js.org/) que aceleran y optimizan el desarrollo del front-end.
-
-La idea básica detrás del módulo **ui.frontender** es poder utilizar herramientas buenas como NPM y Webpack para administrar la mayoría del desarrollo del front-end. Un elemento de integración clave integrado en el módulo **ui.frontender**, [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator) toma los artefactos CSS y JS compilados de un proyecto de webpack/npm y los transforma en AEM bibliotecas del lado del cliente. Esto brinda a los programadores avanzados buena libertad para elegir diferentes herramientas y tecnologías.
+Un elemento de integración clave integrado en el módulo **ui.frontender**, [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator) toma los artefactos CSS y JS compilados de un proyecto de webpack/npm y los transforma en AEM bibliotecas del lado del cliente.
 
 ![Integración de la arquitectura ui.frontenend](assets/client-side-libraries/ui-frontend-architecture.png)
 
-### Uso
+El arquetipo del proyecto AEM configura automáticamente esta integración. Luego, explore cómo funciona.
 
-Ahora agregaremos algunos estilos de base para la marca WKND agregando algunos archivos Sass (`.scss` extensión) a través del módulo **ui.frontendr**.
-
-1. Abra el módulo **ui.front** y vaya a `src/main/webpack/base/sass`.
-
-   ![módulo ui.frontender](assets/client-side-libraries/ui-frontendmodule-eclipse.png)
-
-1. Cree un nuevo archivo denominado `_variables.scss` debajo de la carpeta `src/main/webpack/base/sass`.
-1. Rellene `_variables.scss` con lo siguiente:
-
-   ```scss
-   //== Colors
-   //
-   //## Gray and brand colors for use across theme.
-   
-   $black:                  #202020;
-   $gray:                   #696969;
-   $gray-light:             #EBEBEB;
-   $gray-lighter:           #F7F7F7;
-   $white:                  #ffffff;
-   $yellow:                 #FFE900;
-   $blue:                   #0045FF;
-   $pink:                   #FF0058;
-   
-   $brand-primary:           $yellow;
-   
-   //== Layout
-   $gutter-padding: 14px;
-   $max-width: 1164px;
-   $max-body-width: 1680px;
-   $screen-xsmall: 475px;
-   $screen-small: 767px;
-   $screen-medium: 1024px;
-   $screen-large: 1200px;
-   
-   //== Scaffolding
-   //
-   //## Settings for some of the most global styles.
-   $body-bg:                   $white;
-   $text-color:                $black;
-   $text-color-inverse:        $gray-light;
-   
-   $brand-secondary:           $black;
-   
-   $brand-third:               $gray-light;
-   $link-color:                $blue;
-   $link-hover-color:          $link-color;
-   $link-hover-decoration:     underline;
-   $nav-link:                  $black;
-   $nav-link-inverse:          $gray-light;
-   
-   //== Typography
-   //
-   //## Font, line-height, and color for body text, headings, and more.
-   
-   $font-family-sans-serif:  "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-   $font-family-serif:       "Asar",Georgia, "Times New Roman", Times, serif;
-   $font-family-base:        $font-family-sans-serif;
-   
-   $font-size-base:          18px;
-   $font-size-large:         24px;
-   $font-size-xlarge:        48px;
-   $font-size-medium:        18px;
-   $font-size-small:         14px;
-   $font-size-xsmall:        12px;
-   
-   $font-size-h1:            40px;
-   $font-size-h2:            36px;
-   $font-size-h3:            24px;
-   $font-size-h4:            16px;
-   $font-size-h5:            14px;
-   $font-size-h6:            10px;
-   
-   $line-height-base:        1.5;
-   $line-height-computed:    floor(($font-size-base * $line-height-base)); // ~20px
-   
-   $font-weight-light:      300;
-   $font-weight-normal:     normal;
-   $font-weight-semi-bold:  400;
-   $font-weight-bold:       600;
-   ```
-
-   Sass nos permite crear variables, que luego pueden utilizarse en distintos archivos para garantizar la coherencia. Observe las familias de fuentes. Más adelante en el tutorial veremos cómo podemos incluir una llamada a las fuentes web de Google para poder utilizar estas fuentes.
-
-1. Cree otro archivo llamado `_elements.scss` debajo de `src/main/webpack/base/sass` y llénelo con lo siguiente:
-
-   ```scss
-   body {
-       background-color: $body-bg;
-       font-family: $font-family-base;
-       margin: 0;
-       padding: 0;
-       font-size: $font-size-base;
-       text-align: left;
-       color: $text-color;
-       line-height: $line-height-base;
-   
-       .root {
-           max-width: $max-width;
-           margin: 0 auto;
-       }
-   }
-   
-   // Headings
-   // -------------------------
-   
-   h1, h2, h3, h4, h5, h6,
-   .h1, .h2, .h3, .h4, .h5, .h6 {
-       line-height: $line-height-base;
-       color: $text-color;
-   }
-   
-   h1, .h1,
-   h2, .h2,
-   h3, .h3 {
-       font-family: $font-family-serif;
-       font-weight: $font-weight-normal;
-       margin-top: $line-height-computed;
-       margin-bottom: ($line-height-computed / 2);
-   }
-   
-   h4, .h4,
-   h5, .h5,
-   h6, .h6 {
-       font-family: $font-family-sans-serif;
-       text-transform: uppercase;
-       font-weight: $font-weight-bold;
-   }
-   
-   h1, .h1 { font-size: $font-size-h1; }
-   h2, .h2 { font-size: $font-size-h2; }
-   h3, .h3 { font-size: $font-size-h3; }
-   h4, .h4 { font-size: $font-size-h4; }
-   h5, .h5 { font-size: $font-size-h5; }
-   h6, .h6 { font-size: $font-size-h6; }
-   
-   a {
-       color: $link-color;
-       text-decoration: none;
-   }
-   
-   h1 a, h2 a, h3 a {
-       color: $pink; /* for wednesdays :-) */
-   }
-   
-   // Body text
-   // -------------------------
-   
-   p {
-       margin: 0 0 ($line-height-computed / 2);
-       font-size: $font-size-base;
-       line-height: $line-height-base + 1;
-       text-align: justify;
-   }
-   ```
-
-   Observe que el archivo `_elements.scss` hace uso de las variables en `_variables.scss`.
-
-1. Actualice `_shared.scss` debajo de `src/main/webpack/base/sass` para incluir los archivos `_elements.scss` y `_variables.scss`.
-
-   ```css
-   @import './variables';
-   @import './elements';
-   ```
 
 1. Abra un terminal de la línea de comandos e instale el módulo **ui.frontendr** mediante el comando `npm install`:
 
@@ -354,25 +187,25 @@ Ahora agregaremos algunos estilos de base para la marca WKND agregando algunos a
 
    ```shell
    $ npm run dev
-   ...
-   Entrypoint site = clientlib-site/css/site.css clientlib-site/js/site.js
-   Entrypoint dependencies = clientlib-dependencies/js/dependencies.js
-   start aem-clientlib-generator
-   ...
-   copy: dist/clientlib-site/css/site.css ../ui.apps/src/main/content/jcr_root/apps/wknd/clientlibs/clientlib-site/css/site.css
    ```
 
-   El comando `npm run dev` debe generar y compilar el código fuente para el proyecto de Webpack y, finalmente, rellenar el módulo **clientlib-site** y **clientlib-dependencias** en el módulo **ui.apps**.
+   >[!CAUTION]
+   >
+   > Puede recibir un error como &quot;ERROR en ./src/main/webpack/site/main.scss&quot;.
+   > Esto suele suceder porque el entorno ha cambiado desde que se ejecutó `npm install`.
+   > Ejecute `npm rebuild node-sass` para solucionar el problema. Esto ocurrirá si la versión de `npm` instalada en el equipo de desarrollo local difiere de la versión utilizada por el Maven `frontend-maven-plugin` en el archivo `aem-guides-wknd/pom.xml`. Esto se puede corregir de forma permanente modificando la versión en el archivo pom para que coincida con la versión local o viceversa.
+
+1. El comando `npm run dev` debe generar y compilar el código fuente para el proyecto de Webpack y, finalmente, rellenar el módulo **clientlib-site** y **clientlib-dependencias** en el módulo **ui.apps**.
 
    >[!NOTE]
    >
    >También hay un perfil `npm run prod` que minimizará el JS y el CSS. Esta es la compilación estándar siempre que la compilación del webpack se activa mediante Maven. Encontrará más detalles sobre el módulo [ui.frontender aquí](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html).
 
-1. Inspect el archivo `site.css` debajo de `ui.frontend/dist/clientlib-site/css/site.css`. Observe que la CSS está compuesta principalmente por el contenido del archivo `_elements.scss` creado anteriormente, pero las variables se han reemplazado por valores reales.
+1. Inspect el archivo `site.css` debajo de `ui.frontend/dist/clientlib-site/css/site.css`. Se trata del CSS compilado basado en los archivos de origen de Sass.
 
    ![Css del sitio distribuido](assets/client-side-libraries/ui-frontend-dist-site-css.png)
 
-1. Inspect el archivo `ui.frontend/clientlib.config.js`. Este es el archivo de configuración para un complemento npm, [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator). **aem-clientlib-** generatores la herramienta responsable de transformar el código CSS/JavaScript compilado y copiarlo en el archivo  **ui.** appsmoap.
+1. Inspect el archivo `ui.frontend/clientlib.config.js`. Este es el archivo de configuración para un complemento npm, [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator) que transforma el contenido de `/dist` en una biblioteca cliente y lo mueve al módulo `ui.apps`.
 
 1. Inspect el archivo `site.css` en el módulo **ui.apps** en `ui.apps/src/main/content/jcr_root/apps/wknd/clientlibs/clientlib-site/css/site.css`. Debe ser una copia idéntica del archivo `site.css` desde el módulo **ui.frontender**. Ahora que está en el módulo **ui.apps** se puede implementar en AEM.
 
@@ -380,17 +213,33 @@ Ahora agregaremos algunos estilos de base para la marca WKND agregando algunos a
 
    >[!NOTE]
    >
-   > Dado que **clientlib-site** se compila realmente durante el tiempo de compilación, usando **npm** o **maven**, en realidad se puede ignorar desde el control de código fuente en el módulo **ui.apps**. Inspect el archivo `.gitignore` debajo de **ui.apps**.
+   > Dado que **clientlib-site** se compila durante el tiempo de compilación, usando **npm** o **maven**, se puede ignorar sin problemas desde el control de código fuente en el módulo **ui.apps**. Inspect el archivo `.gitignore` debajo de **ui.apps**.
+
+1. Sincronice la biblioteca `clientlib-site` con una instancia local de AEM mediante las herramientas de desarrollador o las habilidades de Maven.
+
+   ![Sincronizar sitio de biblioteca de clientes](assets/client-side-libraries/sync-clientlib-site.png)
+
+1. Abra el artículo de LA Skatepark en AEM en: [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html).
+
+   ![Estilos base actualizados para el artículo](assets/client-side-libraries/updated-base-styles.png)
+
+   Ahora debería ver los estilos actualizados del artículo. Es posible que deba realizar una actualización difícil para borrar los archivos CSS almacenados en la caché del navegador.
+
+   ¡Está empezando a mirar mucho más cerca de las maquetas!
+
+   >[!NOTE]
+   >
+   > Los pasos anteriores para crear e implementar el código ui.frontender en AEM se ejecutarán automáticamente cuando se active una compilación de Maven desde la raíz del proyecto `mvn clean install -PautoInstallSinglePackage`.
 
 >[!CAUTION]
 >
-> Puede que no sea necesario utilizar el módulo **ui.front** para todos los proyectos. El módulo **ui.front** agrega complejidad adicional y si no hay necesidad/deseo de usar algunas de estas herramientas avanzadas del front-end (Sass, webpack, npm...) puede ser excesivo. Por este motivo se considera una parte opcional del Arquetipo de proyecto AEM y el uso de bibliotecas estándar del lado del cliente y CSS vanilla y JavaScript sigue siendo totalmente compatible.
+> Puede que no sea necesario utilizar el módulo **ui.front** para todos los proyectos. El módulo **ui.front** agrega complejidad adicional y si no hay necesidad/deseo de usar algunas de estas herramientas avanzadas del front-end (Sass, webpack, npm...) puede que no sea necesario.
 
 ## Inclusión de página y plantilla {#page-inclusion}
 
-A continuación, analizaremos cómo se configura el proyecto para incluir a los clientes en AEM plantillas/páginas. Una práctica recomendada común en el desarrollo Web es incluir CSS en el encabezado HTML `<head>` y JavaScript justo antes de cerrar la etiqueta `</body>`.
+A continuación, vamos a revisar cómo se hace referencia a los clientes en la página de AEM. Una práctica recomendada común en el desarrollo Web es incluir CSS en el encabezado HTML `<head>` y JavaScript justo antes de cerrar la etiqueta `</body>`.
 
-1. En el módulo **ui.apps** navegue a `ui.apps/src/main/content/jcr_root/apps/wknd/components/structure/page`.
+1. En el módulo **ui.apps** navegue a `ui.apps/src/main/content/jcr_root/apps/wknd/components/page`.
 
    ![Componente de página de estructura](assets/client-side-libraries/customheaderlibs-html.png)
 
@@ -398,32 +247,22 @@ A continuación, analizaremos cómo se configura el proyecto para incluir a los 
 
 1. Abra el archivo `customheaderlibs.html`. Observe las líneas `${clientlib.css @ categories='wknd.base'}`. Esto indica que el CSS para la clientlib con una categoría de `wknd.base` se incluirá a través de este archivo, incluyendo efectivamente **clientlib-base** en el encabezado de todas nuestras páginas.
 
-1. Actualice `customheaderlibs.html` para incluir una referencia a los estilos de fuente de Google que especificamos anteriormente en el módulo **ui.frontender**. También comentaremos ContextHub por ahora...
+1. Actualice `customheaderlibs.html` para incluir una referencia a los estilos de fuente de Google que especificamos anteriormente en el módulo **ui.frontender**.
 
    ```html
    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Asar&display=swap" rel="stylesheet">
    <sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"
     data-sly-call="${clientlib.css @ categories='wknd.base'}"/>
    
-   <!--/* Include Context Hub
+   <!--/* Include Context Hub */-->
    <sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>
-   */-->
    ```
 
 1. Inspect el archivo `customfooterlibs.html`. Este archivo, como `customheaderlibs.html`, debe sobrescribirse mediante la implementación de proyectos. Aquí la línea `${clientlib.js @ categories='wknd.base'}` significa que el JavaScript de **clientlib-base** se incluirá en la parte inferior de todas nuestras páginas.
 
-1. Cree e implemente el proyecto en una instancia de AEM local mediante Maven:
+1. Exporte el componente `page` al servidor de AEM mediante las herramientas para desarrolladores o con sus conocimientos de Maven.
 
-   ```shell
-   $ cd ~/code/aem-guides-wknd
-   $ mvn clean install -PautoInstallSinglePackage
-   ```
-
-1. Vaya a las plantillas de WKND en [http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf/wknd](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf/wknd).
-
-1. Seleccione y abra la **Plantilla de página de artículo** en el Editor de plantillas.
-
-   ![Seleccionar plantilla de página de artículo](assets/client-side-libraries/open-article-page-template.png)
+1. Vaya a la plantilla Página del artículo en [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html)
 
 1. Haga clic en el icono **Información de página** y, en el menú, seleccione **Política de página** para abrir el cuadro de diálogo **Política de página**.
 
@@ -439,7 +278,7 @@ A continuación, analizaremos cómo se configura el proyecto para incluir a los 
    >
    > También es posible hacer referencia a `wknd.site` o `wknd.dependencies` desde el componente de página directamente, utilizando la secuencia de comandos `customheaderlibs.html` o `customfooterlibs.html`, como ya vimos anteriormente para la clientlib `wknd.base`. El uso de la plantilla proporciona cierta flexibilidad en cuanto a que puede elegir qué clientes se utilizan por plantilla. Por ejemplo, si tiene una biblioteca JavaScript muy pesada que solo se va a usar en una plantilla seleccionada.
 
-1. Vaya a la página **Parques de Patinaje de LA** creada con la **Plantilla de página de artículo**: [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html). Debe ver una diferencia en las fuentes y algunos estilos básicos aplicados para indicar que el CSS creado en el módulo **ui.frontender** está funcionando.
+1. Vaya a la página **Parques de Patinaje de LA** creada con la **Plantilla de página de artículo**: [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html). Debería ver una diferencia en las fuentes.
 
 1. Haga clic en el icono **Información de página** y, en el menú, seleccione **Vista tal y como se publicó** para abrir la página del artículo fuera del editor de AEM.
 
@@ -450,10 +289,11 @@ A continuación, analizaremos cómo se configura el proyecto para incluir a los 
    ```html
    <head>
    ...
-   <link rel="stylesheet" href="/etc.clientlibs/wknd/clientlibs/clientlib-base.css" type="text/css">
-   <script type="text/javascript" src="/etc.clientlibs/wknd/clientlibs/clientlib-dependencies.js"></script>
-   <link rel="stylesheet" href="/etc.clientlibs/wknd/clientlibs/clientlib-dependencies.css" type="text/css">
-   <link rel="stylesheet" href="/etc.clientlibs/wknd/clientlibs/clientlib-site.css" type="text/css">
+   <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Asar&display=swap" rel="stylesheet"/>
+   <link rel="stylesheet" href="/etc.clientlibs/wknd/clientlibs/clientlib-base.min.css" type="text/css">
+   <script type="text/javascript" src="/etc.clientlibs/wknd/clientlibs/clientlib-dependencies.min.js"></script>
+   <link rel="stylesheet" href="/etc.clientlibs/wknd/clientlibs/clientlib-dependencies.min.css" type="text/css">
+   <link rel="stylesheet" href="/etc.clientlibs/wknd/clientlibs/clientlib-site.min.css" type="text/css">
    ...
    </head>
    ```
@@ -462,37 +302,24 @@ A continuación, analizaremos cómo se configura el proyecto para incluir a los 
 
    ```html
    ...
-   <script type="text/javascript" src="/etc.clientlibs/wknd/clientlibs/clientlib-site.js"></script>
-   <script type="text/javascript" src="/etc.clientlibs/wknd/clientlibs/clientlib-base.js"></script>
+   <script type="text/javascript" src="/etc.clientlibs/wknd/clientlibs/clientlib-site.min.js"></script>
+   <script type="text/javascript" src="/etc.clientlibs/wknd/clientlibs/clientlib-base.min.js"></script>
    ...
    </body>
    ```
 
    >[!WARNING]
    >
-   >En el lado de publicación es fundamental que las bibliotecas cliente **no** se proporcionen desde **/apps**, ya que esta ruta debe restringirse por motivos de seguridad mediante la sección [del filtro Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#example-filter-section). La [propiedad allowProxy](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) de la biblioteca del cliente garantiza que CSS y JS se proporcionen desde **/etc.clientlibs**.
+   >En el lado de publicación es fundamental que las bibliotecas cliente **no** se proporcionen desde **/apps**, ya que esta ruta debe restringirse por motivos de seguridad mediante la sección [del filtro Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#example-filter-section). La [propiedad allowProxy](https://docs.adobe.com/content/help/es-ES/experience-manager-65/developing/introduction/clientlibs.html#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) de la biblioteca del cliente garantiza que CSS y JS se proporcionen desde **/etc.clientlibs**.
 
-## Webpack DevServer {#webpack-dev-server}
+## Webpack DevServer - Marcador estático {#webpack-dev-static}
 
-En el par anterior de ejercicios, pudimos actualizar varios archivos Sass en el módulo **ui.front** y a través de un proceso de compilación, finalmente ver estos cambios reflejados en AEM. Luego analizaremos cómo aprovechar un [webpack-dev-server](https://webpack.js.org/configuration/dev-server/) para desarrollar rápidamente nuestros estilos de front-end.
+En el par anterior de ejercicios, pudimos actualizar varios archivos Sass en el módulo **ui.front** y a través de un proceso de compilación, finalmente ver estos cambios reflejados en AEM. Luego veremos una técnica que aprovecha un [webpack-dev-server](https://webpack.js.org/configuration/dev-server/) para desarrollar rápidamente nuestros estilos front-end contra **static** HTML.
 
->[!VIDEO](https://video.tv.adobe.com/v/30352/?quality=12&learn=on)
+Esta técnica es útil si la mayoría de los estilos y el código de front-end serán realizados por un desarrollador dedicado de Front-End que puede no tener acceso fácil a un entorno de AEM. Esta técnica también permite a la FED realizar modificaciones directamente en el HTML, que luego se pueden transferir a un desarrollador de AEM para implementarlo como componentes.
 
-A continuación se muestran los pasos de alto nivel que se muestran en el vídeo:
-
-1. Inicio el servidor de desarrollo de webpack ejecutando el siguiente comando desde el módulo **ui.frontender**:
-
-   ```shell
-   $ cd ~/code/aem-guides-wknd/ui.frontend/
-   $ npm start
-   
-   > aem-maven-archetype@1.0.0 start code/aem-guides-wknd/ui.frontend
-   > webpack-dev-server --open --config ./webpack.dev.js
-   ```
-
-1. Esto debería abrir una nueva ventana del explorador en [http://localhost:8080/](http://localhost:8080/) con marcado estático.
 1. Copie el origen de página de la página del artículo del skatepark LA en [http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html?wcmmode=disabled](http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html?wcmmode=disabled).
-1. Pegue el marcado copiado de AEM en el `index.html` del módulo **ui.frontender** debajo de `src/main/webpack/static`.
+1. Vuelva a abrir su IDE. Pegue el marcado copiado de AEM en el `index.html` del módulo **ui.frontender** debajo de `src/main/webpack/static`.
 1. Edite el marcado copiado y elimine todas las referencias a **clientlib-site** y **clientlib-dependencias**:
 
    ```html
@@ -506,55 +333,81 @@ A continuación se muestran los pasos de alto nivel que se muestran en el vídeo
 
    Podemos eliminar esas referencias porque el servidor de desarrollo de webpack generará estos artefactos automáticamente.
 
-1. Edite los archivos `.scss` y vea los cambios reflejados automáticamente en el explorador.
+1. Inicio el servidor de desarrollo de webpack desde un nuevo terminal mediante la ejecución del siguiente comando desde el módulo **ui.front**:
+
+   ```shell
+   $ cd ~/code/aem-guides-wknd/ui.frontend/
+   $ npm start
+   
+   > aem-maven-archetype@1.0.0 start code/aem-guides-wknd/ui.frontend
+   > webpack-dev-server --open --config ./webpack.dev.js
+   ```
+
+1. Esto debería abrir una nueva ventana del explorador en [http://localhost:8080/](http://localhost:8080/) con marcado estático.
+
+1. Edite el archivo `src/main/webpack/site/_variables.scss`. Reemplace la regla `$text-color` por lo siguiente:
+
+   ```diff
+   - $text-color:              $black;
+   + $text-color:              $pink;
+   ```
+
+   Guarde los cambios.
+
+1. Debería ver automáticamente los cambios reflejados en el explorador en [http://localhost:8080](http://localhost:8080).
+
+   ![Cambios en el servidor de desarrollo de webpack local](assets/client-side-libraries/local-webpack-dev-server.png)
+
 1. Revise el archivo `/aem-guides-wknd.ui.frontend/webpack.dev.js`. Contiene la configuración del webpack utilizada para el inicio del webpack-dev-server. Tenga en cuenta que reemplaza las rutas `/content` y `/etc.clientlibs` desde una instancia de AEM que se esté ejecutando localmente. Así es como están disponibles las imágenes y otros clientlibs (no administrados por el código **ui.front**).
 
    >[!CAUTION]
    >
-   > El src de imagen del marcado estático apunta a un componente de imagen dinámica en una instancia de AEM local. Las imágenes aparecerán rotas si cambia la ruta de la imagen, si no se ha iniciado la AEM o si el navegador no ha iniciado sesión en la instancia de AEM local.
+   > El src de imagen del marcado estático apunta a un componente de imagen dinámica en una instancia de AEM local. Las imágenes aparecerán rotas si cambia la ruta de la imagen, si no se ha iniciado la AEM o si el explorador no ha iniciado sesión en la instancia de AEM local. Si se transfiere a un recurso externo, también es posible reemplazar las imágenes con referencias estáticas.
+
 1. Puede **detener** el servidor de webpack desde la línea de comandos escribiendo `CTRL+C`.
 
-## Colocarlo en conjunto {#putting-it-together}
+## Webpack DevServer - Watch y aemsync {#webpack-dev-watch}
 
-Este tutorial se centra en las bibliotecas del lado del cliente y en los posibles flujos de trabajo front-end que se integrarán con AEM. Con esto en mente, aceleraremos la implementación instalando [client-side-library-final-style.zip](assets/client-side-libraries/client-side-libraries-final-styles.zip), que proporciona algunos estilos predeterminados para los componentes principales utilizados en la plantilla de página de artículos:
+Otra técnica consiste en que Node.js observe los cambios de archivos en los archivos src del módulo `ui.frontend`. Siempre que un archivo cambie, compilará rápidamente la biblioteca del cliente y utilizará el módulo [aemsync](https://www.npmjs.com/package/aemsync) npm para sincronizar los cambios en un servidor AEM en ejecución.
 
-* [Ruta de navegación](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/breadcrumb.html)
-* [Descargar](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/download.html)
-* [Imagen](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/components/image.html)
-* [Lista](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/list.html)
-* [Navegación](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/navigation.html)
-* [Búsqueda rápida](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/quick-search.html)
-* [Separador](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/separator.html)
-
->[!VIDEO](https://video.tv.adobe.com/v/30351/?quality=12&learn=on)
-
-A continuación se muestran los pasos de alto nivel que se muestran en el vídeo:
-
-1. Descargue [client-side-library-final-style.zip](assets/client-side-libraries/client-side-libraries-final-styles.zip) y descomprima el contenido debajo de `ui.frontend/src/main/webpack`. El contenido del zip debe sobrescribir las siguientes carpetas:
-
-   ```plain
-   /src/main/webpack
-            /base
-            /components
-            /resources
-   ```
-
-1. Previsualización de los nuevos estilos con el servidor de desarrollo de webpack:
+1. Inicio el servidor de desarrollo de webpack en el modo **watch** desde un nuevo terminal ejecutando el siguiente comando desde el módulo **ui.front**:
 
    ```shell
-    $ cd ~/code/aem-guides-wknd/ui.frontend/
-    $ npm start
-   
-    > aem-maven-archetype@1.0.0 start code/aem-guides-wknd/ui.frontend
-    > webpack-dev-server --open --config ./webpack.dev.js
+   $ cd ~/code/aem-guides-wknd/ui.frontend/
+   $ npm run watch
    ```
 
-1. Implemente la base de código en una instancia de AEM local para ver los nuevos estilos aplicados al artículo del parque de patines LA:
+1. Esto compilará los archivos `src` y sincronizará los cambios con AEM en [http://localhost:4502](http://localhost:4502)
 
    ```shell
-    $ cd ~/code/aem-guides-wknd
-    $ mvn -PautoInstallSinglePackage clean install
+   + jcr_root/apps/wknd/clientlibs/clientlib-site/js/site.js
+   + jcr_root/apps/wknd/clientlibs/clientlib-site/js
+   + jcr_root/apps/wknd/clientlibs/clientlib-site
+   + jcr_root/apps/wknd/clientlibs/clientlib-dependencies/css.txt
+   + jcr_root/apps/wknd/clientlibs/clientlib-dependencies/js.txt
+   + jcr_root/apps/wknd/clientlibs/clientlib-dependencies
+   http://admin:admin@localhost:4502 > OK
+   + jcr_root/apps/wknd/clientlibs/clientlib-site/css
+   + jcr_root/apps/wknd/clientlibs/clientlib-site/js/site.js
+   http://admin:admin@localhost:4502 > OK
    ```
+
+1. Navegue hasta AEM y el artículo de parques de patinaje LA: [http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html?wcmmode=disabled](http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html?wcmmode=disabled)
+
+   ![Cambios implementados en AEM](assets/client-side-libraries/changes-deployed-aem-watch.png)
+
+   Los cambios deben implementarse en AEM. Hay un ligero retraso y tendrá que actualizar el explorador manualmente para ver las actualizaciones. Sin embargo, ver los cambios directamente en AEM resulta beneficioso si está trabajando con nuevos componentes y creación de cuadros de diálogo.
+
+1. Vuelva el cambio a `_variables.scss` y guarde los cambios. Los cambios deben sincronizarse de nuevo con la instancia local de AEM después de un ligero retraso.
+
+1. Detenga el servidor de desarrollo de webpack y realice una compilación completa de Maven desde la raíz del proyecto:
+
+   ```shell
+   $ cd aem-guides-wknd
+   $ mvn clean install -PautoInstallSinglePackage
+   ```
+
+   Nuevamente, el módulo `ui.frontend` se compila, se transforma en bibliotecas de clientes y se implementa en AEM mediante el módulo `ui.apps`. Sin embargo, esta vez Maven lo hace todo por nosotros.
 
 ## Felicitaciones! {#congratulations}
 
@@ -564,10 +417,10 @@ Felicitaciones, la página de artículos ahora tiene algunos estilos coherentes 
 
 Aprenda a implementar estilos individuales y a reutilizar los componentes principales mediante el sistema de estilos de Experience Manager. [Desarrollar con las portadas de ](style-system.md) sistemas de estilo mediante el sistema de estilos para ampliar los componentes principales con CSS específica de la marca y configuraciones de políticas avanzadas del Editor de plantillas.
 
-Vista el código terminado en [GitHub](https://github.com/adobe/aem-guides-wknd) o revise e implemente el código de forma local en la plataforma Git `client-side-libraries/solution`.
+Vista el código terminado en [GitHub](https://github.com/adobe/aem-guides-wknd) o revise e implemente el código de forma local en la plataforma Git `tutorial/client-side-libraries-solution`.
 
 1. Clona el repositorio [github.com/adobe/aem-wknd-guides](https://github.com/adobe/aem-guides-wknd).
-1. Compruebe la rama `client-side-libraries/solution`.
+1. Compruebe la rama `tutorial/client-side-libraries-solution`.
 
 ## Herramientas y recursos adicionales {#additional-resources}
 
