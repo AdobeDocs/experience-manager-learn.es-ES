@@ -1,8 +1,7 @@
 ---
 title: Comprensión de la multiplicación y el desarrollo simultáneo
 seo-title: Comprensión de la multiplicación y el desarrollo simultáneo
-description: nulo
-seo-description: nulo
+description: Obtenga información sobre los beneficios, desafíos y técnicas para administrar una implementación de varios usuarios con Adobe Experience Manager Assets.
 uuid: 682093fe-ce55-4ef8-af10-99f7062f8b1b
 discoiquuid: 0dfcdf39-7423-459f-8f35-ee5b4b829f2c
 feature: connected-assets
@@ -12,9 +11,9 @@ doc-type: article
 activity: understand
 version: 6.5
 translation-type: tm+mt
-source-git-commit: 99f2a8cdfe0b4f5f6f1a149d96affd2a9e8bcf75
+source-git-commit: e03d84f92be11623704602fb448273e461c70b4e
 workflow-type: tm+mt
-source-wordcount: '2009'
+source-wordcount: '2024'
 ht-degree: 0%
 
 ---
@@ -120,7 +119,7 @@ Si no se puede llegar a un consenso entre las distintas unidades de negocio, una
 
 ### Lanzadores de flujo de trabajo {#workflow-launchers}
 
-AEM utiliza los iniciadores de flujo de trabajo para desencadenar automáticamente la ejecución del flujo de trabajo cuando se realizan los cambios especificados en el repositorio. AEM proporciona varios lanzadores listos para usar, por ejemplo, para ejecutar procesos de generación de representación y extracción de metadatos en recursos nuevos y actualizados. Si bien es posible dejar estos lanzadores tal cual, en un entorno de varios inquilinos, si los inquilinos tienen diferentes requisitos de modelo de lanzador o flujo de trabajo, es probable que sea necesario crear y mantener lanzadores individuales para cada inquilino. Estos lanzadores deberán configurarse para que se ejecuten en las actualizaciones de sus inquilinos, sin modificar el contenido de otros inquilinos. Esto se logra fácilmente mediante la aplicación de lanzadores a rutas de repositorio específicas para cada usuario.
+AEM utiliza iniciadores de flujo de trabajo para ejecutar automáticamente el flujo de trabajo de déclencheur cuando se realizan cambios especificados en el repositorio. AEM proporciona varios lanzadores listos para usar, por ejemplo, para ejecutar procesos de generación de representación y extracción de metadatos en recursos nuevos y actualizados. Si bien es posible dejar estos lanzadores tal cual, en un entorno de varios inquilinos, si los inquilinos tienen diferentes requisitos de modelo de lanzador o flujo de trabajo, es probable que sea necesario crear y mantener lanzadores individuales para cada inquilino. Estos lanzadores deberán configurarse para que se ejecuten en las actualizaciones de sus inquilinos, sin modificar el contenido de otros inquilinos. Esto se logra fácilmente mediante la aplicación de lanzadores a rutas de repositorio específicas para cada usuario.
 
 ### URL de vanidad {#vanity-urls}
 
