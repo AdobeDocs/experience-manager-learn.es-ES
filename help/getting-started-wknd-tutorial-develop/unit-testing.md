@@ -206,9 +206,9 @@ Las pruebas unitarias suelen asignar 1 a 1 con clases Java. En este capítulo, e
 
    * `src/test/java/com/adobe/aem/guides/wknd/core/models/impl/BylineImplTest.java`
 
-2. Pero también diferenciar el archivo de prueba    El sufijo `Test` del archivo de prueba unitaria, `BylineImplTest.java` es una convención, que nos permite
-1. Identifíquelo fácilmente como el archivo de prueba _para_ `BylineImpl.java`
-2. Pero también, diferencie el archivo de prueba _de_ la clase que se está probando, `BylineImpl.java`
+   Pero también diferenciar el archivo de prueba    El sufijo `Test` del archivo de prueba unitaria, `BylineImplTest.java` es una convención, que nos permite
+      1. Identifíquelo fácilmente como el archivo de prueba _para_ `BylineImpl.java`
+      2. Pero también, diferencie el archivo de prueba _de_ la clase que se está probando, `BylineImpl.java`
 
 ## Revisión de BylineImplTest.java {#reviewing-bylineimpltest-java}
 
