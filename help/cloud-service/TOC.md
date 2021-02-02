@@ -5,10 +5,10 @@ breadcrumb-title: Tutoriales de AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
 translation-type: tm+mt
-source-git-commit: 81c704240f163ccd151a61643f589f825a288705
+source-git-commit: 5ac82928d4b0bf75b348a414793c24c3aca92f36
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 33%
+source-wordcount: '270'
+ht-degree: 32%
 
 ---
 
@@ -16,24 +16,48 @@ ht-degree: 33%
 # Tutoriales de Adobe Experience Manager as a Cloud Service {#cloud-service}
 
 + [Información general](./overview.md)
++ Introducción a AEM as a Cloud Service{#introduction}
+   + [¿Qué es AEM como Cloud Service?](./introduction/what-is-aem-as-a-cloud-service.md)
+   + [Evolución](./introduction/evolution.md)
+   + [Arquitectura](./introduction/architecture.md)
+   + [Cloud Manager](./introduction/cloud-manager.md)
 + Tecnología subyacente {#underlying-technology}
-   + [Introducción a la Arquitectura de AEM](./underlying-technology/introduction-architecture.md)
-   + [Introducción a OSGi](./underlying-technology/introduction-osgi.md)
-   + [Introducción al repositorio de contenido de Java](./underlying-technology/introduction-jcr.md)
-   + [Introducción a Sling](./underlying-technology/introduction-sling.md)
-   + [Introducción al nivel de creación y publicación](./underlying-technology/introduction-author-publish.md)
-   + [Introducción a Dispatcher](./underlying-technology/introduction-dispatcher.md)
+   + [Arquitectura AEM](./underlying-technology/introduction-architecture.md)
+   + [los paquetes](./underlying-technology/introduction-osgi.md)
+   + [Repositorio de contenido Java](./underlying-technology/introduction-jcr.md)
+   + [Sling](./underlying-technology/introduction-sling.md)
+   + [Servicios de creación y publicación](./underlying-technology/introduction-author-publish.md)
+   + [Dispatcher](./underlying-technology/introduction-dispatcher.md)
 + Cloud Manager {#cloud-manager}
    + [Programas](./cloud-manager/programs.md)
    + [Entornos](./cloud-manager/environments.md)
    + [Canalización de producción de CI/CD](./cloud-manager/cicd-production-pipeline.md)
    + [Canalización de no producción de CI/CD](./cloud-manager/cicd-non-production-pipeline.md)
    + [Actividad](./cloud-manager/activity.md)
+   + Opciones de desarrollo{#devops}
+      + [Implementación de código](./cloud-manager/devops/deploy-code.md)
+      + [Combinar proyectos](./cloud-manager/devops/merge-projects.md)
+      + [Configurar tuberías](./cloud-manager/devops/configure-pipelines.md)
+      + [Integración continua](./cloud-manager/devops/continuous-integration.md)
+      + [Analizar los resultados de la prueba](./cloud-manager/devops/analyze-test-results.md)
+      + [Configuraciones del despachante](./cloud-manager/devops/dispatcher-configurations.md)
+      + [API de Cloud Manager](./cloud-manager/devops/cloud-manager-apis.md)
 + Configuración del Entorno de desarrollo local {#local-development-environment-set-up}
    + [Información general](./local-development-environment/overview.md)
    + [Herramientas de desarrollo](./local-development-environment/development-tools.md)
    + [AEM en tiempo de ejecución local](./local-development-environment/aem-runtime.md)
    + [Herramientas de despachante local](./local-development-environment/dispatcher-tools.md)
++ Desarrollo de{#developing}
+   + Conceptos básicos de desarrollo{#basics}
+      + [SDK AEM](./developing/basics/aem-sdk.md)
+      + [Entorno de desarrollo local](./developing/basics/local-development-environment.md)
+      + [Tipo de archivo del proyecto AEM](./developing/basics/aem-project-archetype.md)
+      + [Estructura del proyecto AEM](./developing/basics/project-structure.md)
+      + [Contenido mutable vs. inmutable](./developing/basics/mutable-immutable.md)
+      + [Paquete de estructura de repositorio](./developing/basics/repository-structure-package.md)
+      + [Publicación de contenido](./developing/basics/content-publishing.md)
+      + [Configuraciones de OSGi](./developing/basics/osgi-configurations.md)
+      + [Migración de configuración de Dispatcher](./developing/basics/dispatcher-configuration.md)
 + Depuración AEM{#debugging}
    + Depuración del SDK de AEM{#debugging-aem-sdk}
       + [Información general](./debugging/aem-sdk-local-quickstart/overview.md)
