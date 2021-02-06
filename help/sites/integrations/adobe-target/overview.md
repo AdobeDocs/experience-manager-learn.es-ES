@@ -29,7 +29,7 @@ En este vídeo analizamos tres métodos para utilizar AEM y Destinatarios, y le 
 * __Escenario 1:__ Personalización mediante Ofertas de fragmentos de experiencias AEM
 
    1. [Añadir Adobe Target a su sitio Web AEM](./add-target-launch-extension.md)
-   1. [Activar una llamada de Adobe Target desde el lanzamiento](./load-and-fire-target.md)
+   1. [Déclencheur de una llamada de Adobe Target desde Launch](./load-and-fire-target.md)
    1. [Integración del servicio AEM Author con Adobe Target](./setup-aem-target-cloud-service.md)
    1. [Exportar fragmentos de experiencia AEM a Adobe Target](./export-experience-fragment-target.md)
    1. [Personalización de parte de una página web mediante Ofertas de fragmentos de experiencia](./create-target-activity.md)
@@ -37,13 +37,13 @@ En este vídeo analizamos tres métodos para utilizar AEM y Destinatarios, y le 
 * __Escenario 2:__ Personalización mediante el Compositor de experiencias visuales (VEC)
 
    1. [Añadir Adobe Target a su sitio Web AEM](./add-target-launch-extension.md)
-   1. [Activar una llamada de Adobe Target desde el lanzamiento](./load-and-fire-target.md)
+   1. [Déclencheur de una llamada de Adobe Target desde Launch](./load-and-fire-target.md)
    1. [Personalización de parte de una página web con el Compositor de experiencias visuales](./personalization-using-vec.md)
 
 * __Escenario 3:__ Personalización de las experiencias de página web completas
 
    1. [Añadir Adobe Target a su sitio Web AEM](./add-target-launch-extension.md)
-   1. [Activar una llamada de Adobe Target desde el lanzamiento](./load-and-fire-target.md)
+   1. [Déclencheur de una llamada de Adobe Target desde Launch](./load-and-fire-target.md)
    1. [Personalice la experiencia de página web completa](./personalization-web-page.md)
 
 
