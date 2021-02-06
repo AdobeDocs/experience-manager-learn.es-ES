@@ -1,5 +1,5 @@
 ---
-title: Bienvenido al tutorial de prácticas recomendadas de Dynamic Media Classic
+title: Bienvenido al tutorial de optimizaciones de Dynamic Media Classic
 description: Dynamic Media Classic es el centro en el que los clientes crean, crean y distribuyen contenido multimedia enriquecido. Este tutorial de prácticas recomendadas se ha creado para ayudar a los usuarios actuales y nuevos de Dynamic Media Classic a comprender mejor lo que pueden hacer con esta potente solución de medios enriquecidos de Adobe. En esta parte del tutorial, aprenderá qué es Dynamic Media Classic y obtendrá una breve visión de sus funciones principales y de la interfaz de usuario.
 sub-product: Dynamic-media
 doc-type: tutorial
@@ -15,20 +15,20 @@ ht-degree: 1%
 ---
 
 
-# Bienvenido al tutorial de prácticas recomendadas de Dynamic Media Classic
+# Bienvenido al tutorial de optimizaciones de Dynamic Media Classic
 
 Esta guía está pensada para ayudar a los usuarios actuales y nuevos de Dynamic Media Classic a comprender mejor lo que pueden hacer con su potente solución de medios enriquecidos desde Adobe. Lo haremos:
 
-- Le presentamos a Dynamic Media Classic, en el que se describe lo que es y se ofrece una descripción general de sus funciones principales y de la interfaz de usuario.
+- Presentamos Dynamic Media Classic, en el que se describe lo que es y se ofrece una descripción general de sus funciones principales y de la interfaz de usuario.
 - Explicando el flujo de trabajo general Crear, crear y entregar que seguirá al trabajar con recursos en la solución.
 - Analizar los elementos importantes que se deben configurar antes de saltar y utilizar la solución.
 - Darse una profunda inmersión en el uso de varias de las capacidades principales de la solución.
 
 A lo largo de la guía, proporcionaremos ejemplos, sugerencias y prácticas recomendadas. También explicaremos los términos y conceptos importantes con los que debería estar familiarizado al trabajar con Dynamic Media Classic. Y cuando esté disponible para un tema determinado, le señalaremos a seminarios web relevantes, posts de blogs y documentación en línea.
 
-Esperamos que esta guía le proporcione la información necesaria para desbloquear un valor enorme de su solución de Dynamic Media Classic. Para navegar más fácilmente por los capítulos de esta guía, haga clic en el icono de marcador en la parte izquierda de la guía para ver su contenido.
+Esperamos que esta guía le proporcione la información necesaria para desbloquear un valor enorme de su solución Dynamic Media Classic. Para navegar más fácilmente por los capítulos de esta guía, haga clic en el icono de marcador en la parte izquierda de la guía para ver su contenido.
 
-## Descripción general de Dynamic Media Classic
+## Información general de Dynamic Media Classic
 
 Dynamic Media Classic es el centro en el que los clientes crean, crean y distribuyen contenido multimedia enriquecido. Dynamic Media Classic es un entorno integrado de administración, publicación y servicio de medios enriquecidos. Los medios enriquecidos pueden entregarse a todos los canales de marketing y ventas, incluidos la Web, el material impreso, las campañas por correo electrónico, las aplicaciones web, los equipos de escritorio y los dispositivos.
 
