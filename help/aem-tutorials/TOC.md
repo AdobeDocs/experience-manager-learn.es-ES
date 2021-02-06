@@ -16,7 +16,7 @@ ht-degree: 25%
 + [Información general sobre los Tutorials de AEM](overview.md)
 + [AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html)
 + [AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html)
-+ [Formularios AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/overview.html)
++ [AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/overview.html)
 + [AEM como Cloud Service](https://docs.adobe.com/content/help/es-ES/experience-manager-learn/cloud-service/overview.html)
 + [Fundación AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 + Tutorials de varios pasos {#multi}
