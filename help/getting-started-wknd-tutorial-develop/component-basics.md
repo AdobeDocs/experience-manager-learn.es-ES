@@ -12,9 +12,9 @@ mini-toc-levels: 1
 kt: 4081
 thumbnail: 30177.jpg
 translation-type: tm+mt
-source-git-commit: e03d84f92be11623704602fb448273e461c70b4e
+source-git-commit: 76462bb75ceda1921db2fa37606ed7c5a1eadb81
 workflow-type: tm+mt
-source-wordcount: '1066'
+source-wordcount: '1145'
 ht-degree: 1%
 
 ---
@@ -27,6 +27,8 @@ En este capítulo analizaremos la tecnología subyacente de un componente de sit
 ## Requisitos previos {#prerequisites}
 
 Revise las herramientas y las instrucciones necesarias para configurar un [entorno de desarrollo local](overview.md#local-dev-environment).
+
+El IDE utilizado en los vídeos es [Código de Visual Studio](https://code.visualstudio.com/) y el complemento [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync).
 
 ## Objetivo {#objective}
 
@@ -110,7 +112,7 @@ A continuación se muestran los pasos de alto nivel realizados en el vídeo ante
 
 1. Cambie al IDE y abra el proyecto al módulo `ui.apps`.
 1. Abra el archivo `helloworld.html` y realice un cambio en el código HTML Markup.
-1. Utilice las herramientas IDE para sincronizar el cambio de archivo con la instancia de AEM local.
+1. Utilice las herramientas IDE como [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) para sincronizar el cambio de archivo con la instancia de AEM local.
 1. Vuelva al navegador y observe que el procesamiento del componente ha cambiado.
 1. Abra el archivo `.content.xml` que define el cuadro de diálogo para el componente `HelloWorld` en:
 
@@ -209,14 +211,14 @@ A continuación, realizaremos algunas actualizaciones en el modelo de sling `Hel
        ...
    
        @ValueMapValue
-       protected String title;
+       private String title;
    
        @ValueMapValue
-       protected String text;
+       private String text;
    
-           @PostConstruct
-           protected void init() {
-               ...
+       @PostConstruct
+       protected void init() {
+           ...
    ```
 
 1. Añada el siguiente método `getTitle()` a la clase `HelloWorldModel`, que devuelve el valor de la propiedad denominada `title`. Este método agrega la lógica adicional para devolver un valor de cadena de &quot;Valor predeterminado aquí!&quot; si la propiedad `title` es nula o está en blanco:
@@ -349,6 +351,10 @@ A continuación se muestran los pasos de alto nivel realizados en el vídeo ante
    ```
 
 1. Implemente los cambios en una instancia local de AEM usando el complemento para desarrolladores o sus habilidades con Maven.
+
+   >[!NOTE]
+   >
+   > Por motivos de rendimiento, el navegador almacena con frecuencia en caché CSS y JavaScript. Si no ve inmediatamente el cambio para la biblioteca del cliente, realice una actualización dura y borre la caché del explorador. Puede resultar útil utilizar una ventana de incógnito para garantizar una caché nueva.
 
 ## Felicitaciones! {#congratulations}
 
