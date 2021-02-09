@@ -10,9 +10,9 @@ audience: developer
 kt: 4678, 4677
 thumbnail: 32551.jpg
 translation-type: tm+mt
-source-git-commit: 398b9f855556fc425b034986a7f21159297dcba5
+source-git-commit: 39ea3dd6133477a52fd91ee696936cd226fce5ea
 workflow-type: tm+mt
-source-wordcount: '1614'
+source-wordcount: '1652'
 ht-degree: 1%
 
 ---
@@ -180,6 +180,10 @@ Cambiar estas opciones puede requerir ajustes en AEM configuraciones del SDK
 ## Detener un tiempo de ejecución de AEM local
 
 Para detener un tiempo de ejecución de AEM local, ya sea AEM Author o el servicio Publicar, abra la ventana de línea de comandos que se utilizó para el inicio del AEM en tiempo de ejecución y toque `Ctrl-C`. Espere a que AEM cierre. Cuando se complete el proceso de apagado, estará disponible el símbolo del sistema de la línea de comandos.
+
+## Tareas de configuración del tiempo de ejecución de AEM local opcional
+
++ __Las variables de entorno de configuración OSGi y__ las variables secretas se establecen  [especialmente para el tiempo de ejecución](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development) local AEM, en lugar de administrarlas mediante la CLI de aio.
 
 ## Cuándo actualizar la barra de inicio rápido
 
