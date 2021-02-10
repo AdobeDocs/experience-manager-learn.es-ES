@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6282
 thumbnail: KT-6282.jpg
 translation-type: tm+mt
-source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
+source-git-commit: 2d7ae5e46acb25eaaf7a1a35d9bbf20f7c14042e
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1421'
 ht-degree: 0%
 
 ---
@@ -116,7 +116,7 @@ En este programa de trabajo, aprovechamos el [jimp](https://www.npmjs.com/packag
 
 >[!WARNING]
 >
->No todos los módulos npm para la manipulación de recursos son compatibles con la Asset compute. módulos npm que se basan en las existentes de otras aplicaciones como ImageMagick o bibliotecas dependientes del sistema operativo. Es mejor limitar el uso de módulos npm solo de JavaScript.
+>No todos los módulos npm para la manipulación de recursos son compatibles con la Asset compute. no se admiten los módulos npm que dependen de la existencia de aplicaciones como ImageMagick u otras bibliotecas dependientes del sistema operativo. Es mejor limitar el uso de módulos npm solo de JavaScript.
 
 1. Abra la línea de comandos en la raíz del proyecto de Asset compute (esto se puede hacer en Código VS mediante __Terminal > Nuevo terminal__) y ejecute el comando:
 
