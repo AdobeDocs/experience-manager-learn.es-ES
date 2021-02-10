@@ -10,7 +10,7 @@ audience: developer
 kt: 6785
 thumbnail: 330519.jpg
 translation-type: tm+mt
-source-git-commit: c4f3d437b5ecfe6cb97314076cd3a5e31b184c79
+source-git-commit: 0b1150cd7ca32382cfaa880f9f956b55bfb65a33
 workflow-type: tm+mt
 source-wordcount: '1824'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Las integraciones con AEM como Cloud Service deben poder autenticarse de forma segura en AEM. AEM Developer Console permite acceder a las credenciales de servicio, que se utilizan para facilitar la interacción programática de aplicaciones, sistemas y servicios externos con los servicios de AEM Author o Publish a través de HTTP.
 
->[!VIDEO](https://video.tv.adobe.com/v/330460/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330519/?quality=12&learn=on)
 
 Las Credenciales de Servicio pueden aparecer como [Tokenes de acceso de desarrollo local](./local-development-access-token.md) similares, pero son diferentes en algunos aspectos clave:
 
