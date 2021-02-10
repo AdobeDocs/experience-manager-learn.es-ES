@@ -9,9 +9,9 @@ activity: develop
 audience: developer
 doc-type: tutorial
 translation-type: tm+mt
-source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
+source-git-commit: c657eefa69b383c1b1a9e2845276245d3db00e6f
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -96,12 +96,12 @@ Access-Control-Request-Method,Access-Control-Request-Headers]"
 
 ## Configuración de Dispatcher {#dispatcher-configuration}
 
-Para permitir el almacenamiento en caché y el servicio de [!DNL CORS] encabezados en contenido en caché, agregue la siguiente configuración a todos los archivos de AEM Publish `dispatcher.any` compatibles.
+Para permitir el almacenamiento en caché y el servicio de encabezados CORS en contenido en caché, agregue la siguiente [/configuración de los encabezados de cliente](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders) a todos los archivos de AEM Publish `dispatcher.any` compatibles.
 
 ```
 /cache { 
   ...
-  /headers {
+  /clientheaders {
       "Access-Control-Allow-Origin",
       "Access-Control-Expose-Headers",
       "Access-Control-Max-Age",
@@ -115,7 +115,7 @@ Para permitir el almacenamiento en caché y el servicio de [!DNL CORS] encabezad
 
 **Reinicie la** aplicación del servidor web después de realizar cambios en el  `dispatcher.any` archivo.
 
-Es probable que borre la caché por completo para garantizar que los encabezados se almacenen correctamente en la caché en la siguiente solicitud después de una actualización de configuración `/headers`.
+Es probable que borre la caché por completo para garantizar que los encabezados se almacenen correctamente en la caché en la siguiente solicitud después de una actualización de configuración `/clientheaders`.
 
 ## Materiales de apoyo {#supporting-materials}
 
