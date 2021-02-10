@@ -10,10 +10,10 @@ doc-type: tutorial
 kt: 6269
 thumbnail: 40197.jpg
 translation-type: tm+mt
-source-git-commit: 676d4bfceaaec3ae8d4feb9f66294ec04e1ecd2b
+source-git-commit: 23c91551673197cebeb517089e5ab6591f084846
 workflow-type: tm+mt
-source-wordcount: '772'
-ht-degree: 0%
+source-wordcount: '904'
+ht-degree: 1%
 
 ---
 
@@ -30,11 +30,11 @@ _Pulsación para generar un proyecto de Asset compute (sin audio)_
 
 Utilice el [complemento de Asset compute CLI de Adobe I/O](../set-up/development-environment.md#aio-cli) para generar un nuevo proyecto de Asset compute vacío.
 
-1. Desde la línea de comandos, desplácese hasta la carpeta en la que desee contener el proyecto.
+1. Desde la línea de comandos, desplácese hasta la carpeta en la que desea contener el proyecto.
 1. Desde la línea de comandos, ejecute `aio app init` para iniciar la CLI de generación de proyectos interactiva.
-   + Esto puede generar un explorador Web que solicite autenticación en Adobe I/O. Si es así, proporcione las credenciales de Adobe asociadas con los [productos y servicios de Adobe requeridos](../set-up/accounts-and-services.md). Si no puede iniciar sesión, siga [estas instrucciones sobre cómo generar un proyecto](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#42-developer-is-not-logged-in-as-enterprise-organization-user).
+   + Este comando puede generar un explorador Web que solicite autenticación en Adobe I/O. Si es así, proporcione las credenciales de Adobe asociadas con los [productos y servicios de Adobe requeridos](../set-up/accounts-and-services.md). Si no puede iniciar sesión, siga [estas instrucciones sobre cómo generar un proyecto](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#42-developer-is-not-logged-in-as-enterprise-organization-user).
 1. __Seleccionar organización__
-   + Seleccione la organización de Adobe que tiene AEM como Cloud Service, Project Firefly se registra en
+   + Seleccione la organización de Adobe que tiene AEM como Cloud Service, Project Firefly se registra con
 1. __Seleccionar proyecto__
    + Busque y seleccione el proyecto. Este es el [título del proyecto](../set-up/firefly.md) creado a partir de la plantilla de proyecto de Firefly, en este caso `WKND AEM Asset Compute`
 1. __Seleccionar espacio de trabajo__
@@ -51,34 +51,30 @@ Utilice el [complemento de Asset compute CLI de Adobe I/O](../set-up/development
 
 ## Generate console.json
 
-Desde la raíz del proyecto de Asset compute recién creado, ejecute el siguiente comando para generar un `console.json`.
+La herramienta para desarrolladores requiere un archivo llamado `console.json` que contenga las credenciales necesarias para conectarse a Adobe I/O. Este archivo se descarga desde la consola de Adobe I/O.
 
-```
-$ aio app use
-```
+1. Abra el proyecto [Adobe I/O](https://console.adobe.io) del trabajador de Asset compute
+1. Seleccione el espacio de trabajo del proyecto para el cual descargar las credenciales `console.json`, en este caso seleccione `Development`
+1. Vaya a la raíz del proyecto de Adobe I/O y toque __Descargar todo__ en la esquina superior derecha.
+1. Un archivo se descarga como archivo `.json` con el prefijo proyecto y espacio de trabajo, por ejemplo: `wkndAemAssetCompute-81368-Development.json`
+1. Puede
+   + Cambie el nombre del archivo como `config.json` y muévalo a la raíz del proyecto de trabajo de Asset compute. Este es el enfoque de este tutorial.
+   + Muévalo a una carpeta arbitraria Y haga referencia a esa carpeta desde el archivo `.env` con una entrada de configuración `ASSET_COMPUTE_INTEGRATION_FILE_PATH`. La ruta del archivo puede ser absoluta o relativa a la raíz del proyecto. Por ejemplo:
+      + `ASSET_COMPUTE_INTEGRATION_FILE_PATH=/Users/example-user/secrets/wkndAemAssetCompute-81368-Development.json`
 
-Compruebe que los detalles del espacio de trabajo actual son correctos, presione `Y` o introduzca para generar un `console.json`. Si `.env` y `.aio` se detectan como ya existentes, toque `x` para omitir su creación.
+      O bien
+      + `ASSET_COMPUTE_INTEGRATION_FILE_PATH=../../secrets/wkndAemAssetCompute-81368-Development.json.json`
 
-Si se crean nuevas claves o se sobrescriben `.env`, vuelva a agregar las claves o valores que faltan a la nueva `.env`:
 
-```
-## please provide the following environment variables for the Asset Compute devtool. You can use AWS or Azure, not both:
-#ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH=
-#S3_BUCKET=
-#AWS_ACCESS_KEY_ID=
-#AWS_SECRET_ACCESS_KEY=
-#AWS_REGION=
-#AZURE_STORAGE_ACCOUNT=
-#AZURE_STORAGE_KEY=
-#AZURE_STORAGE_CONTAINER_NAME=
-```
+> NOTA
+> El archivo contiene credenciales. Si almacena el archivo dentro del proyecto, asegúrese de agregarlo al archivo `.gitignore` para evitar que se comparta. Lo mismo se aplica al archivo `.env`: estos archivos de credenciales no deben compartirse ni almacenarse en Git.
 
 ## Revisar la anatomía del proyecto
 
-El proyecto de Asset compute generado es un proyecto de Node.js para un proyecto de Adobe especializado de Firefly, los siguientes son idiosincráticos para el proyecto de Asset compute:
+El proyecto de Asset compute generado es un proyecto de Node.js que se utiliza como un proyecto de Adobe especializado de Firefly. Los siguientes elementos estructurales son idiosincráticos del proyecto de Asset compute:
 
 + `/actions` contiene subcarpetas y cada subcarpeta define un programa de trabajo de Asset compute.
-   + `/actions/<worker-name>/index.js` define el JavaScript ejecutado para realizar el trabajo de este trabajador.
+   + `/actions/<worker-name>/index.js` define el JavaScript utilizado para realizar el trabajo de este trabajador.
       + El nombre de la carpeta `worker` es un valor predeterminado y puede ser cualquier cosa, siempre y cuando esté registrado en `manifest.yml`.
       + Se puede definir más de una carpeta de trabajo en `/actions` según sea necesario; sin embargo, debe estar registrada en `manifest.yml`.
 + `/test/asset-compute` contiene los grupos de pruebas para cada trabajador. De forma similar a la carpeta `/actions`, `/test/asset-compute` puede contener varias subcarpetas, cada una correspondiente al programa de trabajo que prueba.
@@ -89,7 +85,7 @@ El proyecto de Asset compute generado es un proyecto de Node.js para un proyecto
    + Este archivo se puede generar o actualizar mediante el comando `aio app use`.
 + `/.aio` contiene configuraciones utilizadas por la herramienta CLI de aio.
    + Este archivo se puede generar o actualizar mediante el comando `aio app use`.
-+ `/.env` define las variables de entorno en una  `key=value` sintaxis y contiene secretos que no se deben compartir. Esto se puede generar o Para proteger estos secretos, este archivo NO se debe registrar en Git y se ignora a través del archivo `.gitignore` predeterminado del proyecto.
++ `/.env` define las variables de entorno en una  `key=value` sintaxis y contiene secretos que no se deben compartir. Para proteger estos secretos, NO se debe registrar este archivo en Git y se ignora mediante el archivo `.gitignore` predeterminado del proyecto.
    + Este archivo se puede generar o actualizar mediante el comando `aio app use`.
    + Las variables definidas en este archivo se pueden sobrescribir mediante [variables de exportación](../deploy/runtime.md) en la línea de comandos.
 
@@ -97,11 +93,11 @@ Para obtener más detalles sobre la revisión de la estructura del proyecto, con
 
 La mayor parte del desarrollo se lleva a cabo en la carpeta `/actions` que desarrolla implementaciones de trabajador y en `/test/asset-compute` pruebas de escritura para los trabajadores de Asset compute personalizados.
 
-## Proyecto de asset compute en Github
+## Proyecto de asset compute en GitHub
 
-El proyecto de Asset compute final está disponible en Github en:
+El proyecto de Asset compute final está disponible en GitHub en:
 
 + [aem-guide-wknd-asset-compute](https://github.com/adobe/aem-guides-wknd-asset-compute)
 
-_Github contiene es el estado final del proyecto, totalmente rellenado con los casos de trabajo y prueba, pero no contiene credenciales, por ejemplo. `.env`,  `console.json` o  `.aio`._
+_GitHub contiene el estado final del proyecto, totalmente rellenado con los casos de trabajo y prueba, pero no contiene credenciales, es decir,  `.env` `console.json` o  `.aio`._
 
