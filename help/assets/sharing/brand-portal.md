@@ -86,9 +86,9 @@ Tenga en cuenta que la miniatura predeterminada de las carpetas virtuales es la 
 
 ### Compatibilidad con representaciones de vídeo de Dynamic Media
 
-Los usuarios cuya instancia de AEM Author se encuentra en el modo híbrido Dynamic Media pueden realizar previsualizaciones y descargar las representaciones de medios dinámicos, además de los archivos de vídeo originales.
+Los usuarios cuya instancia de AEM Author se encuentra en el modo híbrido de Dynamic Media pueden realizar previsualizaciones y descargar las representaciones de medios dinámicos, además de los archivos de vídeo originales.
 
-Para permitir la previsualización y descarga de representaciones de medios dinámicos en cuentas de inquilino específicas, los administradores deben especificar la configuración de Dynamic Media (URL del servicio de vídeo (URL de DM-Gateway) y el ID de registro para recuperar el vídeo dinámico) en la configuración de vídeo desde el panel Herramientas de administración.
+Para permitir la previsualización y descarga de representaciones de medios dinámicos en cuentas de inquilino específicas, los administradores deben especificar la configuración de Dynamic Media (URL del servicio de vídeo (URL de DM-Gateway) e ID de registro para recuperar el vídeo dinámico) en la configuración de vídeo desde el panel de herramientas de administración.
 
 Los vídeos de Dynamic Media se pueden previsualizar en:
 
@@ -211,6 +211,6 @@ Las nuevas funciones mejoraron la funcionalidad orientada a alinear Brand Portal
 * [Agentes de replicación de AEM Author](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html)
 * [Guía para la descarga acelerada](https://helpx.adobe.com/experience-manager/brand-portal/using/accelerated-download.html#main-pars_header)
 * [Documentos de Adobe de AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal.html)
-* [Documentos de AEM Assets Dynamic Media Adobe](https://docs.adobe.com/docs/es/aem/6-3/author/assets/dynamic-media.html)
+* [AEM Assets Dynamic Media Adobe Docs](https://docs.adobe.com/docs/es/aem/6-3/author/assets/dynamic-media.html)
 * [Descargar Aspera Connect](https://downloads.asperasoft.com/connect2/)
 * [Aspera Connect Test Server](https://test-connect.asperasoft.com/)
