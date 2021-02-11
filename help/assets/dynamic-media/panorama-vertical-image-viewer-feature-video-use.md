@@ -1,8 +1,8 @@
 ---
-title: Uso de panoramas y visores de imágenes verticales con AEM Assets Dynamic Media
-seo-title: Uso de panoramas y visores de imágenes verticales con AEM Assets Dynamic Media
-description: Las mejoras del visor de medios dinámicos de AEM 6.4 incluyen la incorporación del visor de imágenes panorámicas, el visor de imágenes panorámicas de realidad virtual y el visor de imágenes verticales. El visor panorámico ofrece una forma sencilla de ofrecer una experiencia envolvente y atractiva de la habitación, la propiedad, la ubicación o el paisaje sin ningún desarrollo personalizado.
-seo-description: Las mejoras del visor de medios dinámicos de AEM 6.4 incluyen la incorporación del visor de imágenes panorámicas, el visor de imágenes panorámicas de realidad virtual y el visor de imágenes verticales. El visor panorámico ofrece una forma sencilla de ofrecer una experiencia envolvente y atractiva de la habitación, la propiedad, la ubicación o el paisaje sin ningún desarrollo personalizado.
+title: Uso del visor de imágenes panorámicas y verticales con AEM Assets Dynamic Media
+seo-title: Uso del visor de imágenes panorámicas y verticales con AEM Assets Dynamic Media
+description: Las mejoras del visor de Dynamic Media en AEM 6.4 incluyen la incorporación del visor de imágenes panorámicas, el visor de imágenes panorámicas virtuales reales y el visor de imágenes verticales. El visor panorámico ofrece una forma sencilla de ofrecer una experiencia envolvente y atractiva de la habitación, la propiedad, la ubicación o el paisaje sin ningún desarrollo personalizado.
+seo-description: Las mejoras del visor de Dynamic Media en AEM 6.4 incluyen la incorporación del visor de imágenes panorámicas, el visor de imágenes panorámicas virtuales reales y el visor de imágenes verticales. El visor panorámico ofrece una forma sencilla de ofrecer una experiencia envolvente y atractiva de la habitación, la propiedad, la ubicación o el paisaje sin ningún desarrollo personalizado.
 sub-product: Dynamic-media
 feature: video-profiles, video-profiles, vr-360
 topics: videos, renditions, authoring
@@ -21,13 +21,13 @@ ht-degree: 1%
 
 # Uso de Panorama y Visor de imágenes verticales con AEM Assets Dynamic Media{#using-panorama-and-vertical-image-viewer-with-aem-assets-dynamic-media}
 
-Las mejoras del visor de medios dinámicos de AEM 6.4 incluyen la incorporación del visor de imágenes panorámicas, el visor de imágenes panorámicas de realidad virtual y el visor de imágenes verticales. El visor panorámico ofrece una forma sencilla de ofrecer una experiencia envolvente y atractiva de la habitación, la propiedad, la ubicación o el paisaje sin ningún desarrollo personalizado.
+Las mejoras del visor de Dynamic Media en AEM 6.4 incluyen la incorporación del visor de imágenes panorámicas, el visor de imágenes panorámicas virtuales reales y el visor de imágenes verticales. El visor panorámico ofrece una forma sencilla de ofrecer una experiencia envolvente y atractiva de la habitación, la propiedad, la ubicación o el paisaje sin ningún desarrollo personalizado.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24156/?quality=9&learn=on)
 
 >[!NOTE]
 >
->Video supone que la instancia de AEM se está ejecutando en el modo de Dynamic Media S7. [Las instrucciones para configurar AEM con Dynamic Media se pueden encontrar aquí.](https://helpx.adobe.com/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
+>Video supone que la instancia de AEM se está ejecutando en el modo Dynamic Media S7. [Las instrucciones para configurar AEM con Dynamic Media se pueden encontrar aquí.](https://helpx.adobe.com/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
 
 ## Visor panorámico VR
 
@@ -52,7 +52,7 @@ Con las muestras horizontales, en función del tamaño de la pantalla del escrit
   </tr>
   <tr>
    <td>Modo de ejecución de Dynamic Media</td>
-   <td>Solo en el modo Scene7 de Dynamic Media</td>
+   <td>Solo en modo Scene7 de Dynamic Media</td>
    <td>DMS7 y Dynamic Media</td>
   </tr>
   <tr>
@@ -68,7 +68,7 @@ Con las muestras horizontales, en función del tamaño de la pantalla del escrit
  </tbody>
 </table>
 
-[Configuración de Dynamic Media en el modo Scene7](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dms7.html)
+[Configuración de Dynamic Media en modo Scene7](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dms7.html)
 
 [Configuración de Dynamic Media en modo híbrido](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dynamic.html)
 
