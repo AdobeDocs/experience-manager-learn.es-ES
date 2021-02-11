@@ -450,9 +450,9 @@ Sería un poco más allá de esta guía entrar en detalles, pero queremos darles
 
 1. Realmente sé lo que estás haciendo. Es muy difícil corregir la invalidación. Esa es una de las razones por las que la invalidación automática es tan rigurosa; para evitar la entrega de contenido antiguo.
 
-2. Si su agente envía un encabezado HTTP `CQ-Action-Scope: ResourceOnly`, significa que esta única solicitud de invalidación no desencadena una invalidación automática. Esta porción de código ( [https://github.com/cqsupport/webinar-dispatchercache/tree/master/src/refetching-flush-agent/refetch-bundle](https://github.com/cqsupport/webinar-dispatchercache/tree/master/src/refetching-flush-agent/refetch-bundle)) podría ser un buen punto de partida para su propio agente de replicación.
+2. Si su agente envía un encabezado HTTP `CQ-Action-Scope: ResourceOnly`, significa que esta única solicitud de invalidación no déclencheur una invalidación automática. Esta porción de código ( [https://github.com/cqsupport/webinar-dispatchercache/tree/master/src/refetching-flush-agent/refetch-bundle](https://github.com/cqsupport/webinar-dispatchercache/tree/master/src/refetching-flush-agent/refetch-bundle)) podría ser un buen punto de partida para su propio agente de replicación.
 
-3. `ResourceOnly`, solo evita la invalidación automática. Para realmente resolver e invalidar las dependencias necesarias, debe activar las solicitudes de invalidación usted mismo. Puede que desee comprobar las reglas de vaciado del despachante del paquete ([https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-flush-rules/index.html](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-flush-rules/index.html)) para obtener inspiración sobre cómo podría suceder realmente.
+3. `ResourceOnly`, solo evita la invalidación automática. Para realmente resolver e invalidar la dependencia necesaria, debe déclencheur las solicitudes de invalidación usted mismo. Puede que desee comprobar las reglas de vaciado del despachante del paquete ([https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-flush-rules/index.html](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-flush-rules/index.html)) para obtener inspiración sobre cómo podría suceder realmente.
 
 No recomendamos que cree un esquema de resolución de dependencias. Hay demasiado esfuerzo y poco beneficio -y como se dijo antes, hay demasiado que se equivocará.
 
@@ -771,7 +771,7 @@ AEM también sabe poco sobre dependencias. Carece de una semántica adecuada o d
 
 AEM algunas de las referencias. Utiliza este conocimiento para advertirle cuando intenta eliminar o mover una página o recurso al que se hace referencia. Para ello, consulta la búsqueda interna al eliminar un recurso. Las referencias de contenido tienen un formulario muy particular. Son expresiones de ruta que comienzan con &quot;/content&quot;. De modo que pueden indexarse fácilmente con texto completo -y ser consultados cuando sea necesario.
 
-En nuestro caso, necesitaríamos un agente de replicación personalizado en el sistema Publicar, que active una búsqueda de una ruta específica cuando dicha ruta haya cambiado.
+En nuestro caso, necesitaríamos un agente de replicación personalizado en el sistema Publicar, que déclencheur una búsqueda de una ruta específica cuando esa ruta haya cambiado.
 
 Digamos
 
@@ -1255,7 +1255,7 @@ En segundo lugar, deben ser exactos. Cada vez que el sistema detecta un nuevo &q
 
 En nuestro proyecto, las nuevas páginas relativas aparecían con frecuencia. Pero no se materializaron como vínculos &quot;alternativos&quot;. Por ejemplo: cuando la página `de-de/produkte` se publicó en el sitio web alemán, no era visible inmediatamente en los demás sitios.
 
-La razón era que, en nuestra configuración, los sitios debían ser independientes. Por lo tanto, un cambio en el sitio web alemán no desencadenó una invalidación en el sitio web francés.
+La razón era que, en nuestra configuración, los sitios debían ser independientes. Así que un cambio en el sitio web alemán no déclencheur una invalidación en el sitio web francés.
 
 Ya sabes una solución como resolver ese problema. Simplemente disminuya el nivel de los archivos de estado a 2 para ampliar el dominio de invalidación. Por supuesto, esto también reduce la proporción de visitas en caché (especialmente cuando se publican) y, por lo tanto, las invalidaciones se producen con mayor frecuencia.
 
@@ -1616,7 +1616,7 @@ Content-Length: 207
 /content/my-brand/products/product-2.html
 ```
 
-Cuando el despachante vea una solicitud de este tipo, activará la invalidación automática como de costumbre y pondrá inmediatamente en cola las solicitudes para recuperar contenido nuevo del sistema de publicación.
+Cuando el despachante ve una solicitud de este tipo, déclencheur la invalidación automática como de costumbre y pondrá inmediatamente en cola las solicitudes para recuperar contenido nuevo del sistema de publicación.
 
 Como ahora estamos utilizando un cuerpo de solicitud, también necesitamos configurar el tipo de contenido y la longitud de contenido según el estándar HTTP.
 
