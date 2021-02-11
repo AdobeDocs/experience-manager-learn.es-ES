@@ -30,7 +30,7 @@ $ java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005 -jar a
 ```
 
 + `address` especifica el puerto AEM escucha las conexiones de depuración remota y se puede cambiar a cualquier puerto disponible en el equipo de desarrollo local.
-+ El último parámetro (p. ej. `aem-author-p4502.jar`) es el AEM SKD Quickstart Jar. Puede ser el servicio AEM Author (`aem-author-p4502.jar`) o el servicio AEM Publish (`aem-publish-p4503.jar`).
++ El último parámetro (p. ej. `aem-author-p4502.jar`) es la AEM Jar de inicio rápido SKD. Puede ser el servicio AEM Author (`aem-author-p4502.jar`) o el servicio AEM Publish (`aem-publish-p4503.jar`).
 
 ## Instrucciones de configuración de IDE
 
