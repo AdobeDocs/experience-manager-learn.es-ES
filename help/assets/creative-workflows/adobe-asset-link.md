@@ -8,9 +8,9 @@ doc-type: feature video
 activity: use
 version: 6.4, 6.5
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 9102505bbd826e17bf924cec719d7a430eea5095
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1094'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ Adobe Asset Link v1.1 ahora ofrece compatibilidad con la vinculación directa de
 
 >[!NOTE]
 >
->Utilice únicamente a su Enterprise ID o Federated ID de Adobe Creative Cloud. Asegúrese de [configurar AEM para el vínculo de recursos de Adobe](https://helpx.adobe.com/enterprise/using/configure-aem-for-aal-prerelease.html).
+>Utilice únicamente a su Enterprise ID o Federated ID de Adobe Creative Cloud. Asegúrese de [configurar AEM para el vínculo de recursos de Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html).
 
 
 ### Capacidades de vínculo de recursos de Adobe
@@ -73,8 +73,6 @@ Las representaciones de FPO son sustitutos ligeros de los recursos originales. T
 * BMP
 
 Si una representación FPO no está disponible para un recurso específico en AEM Assets, se hace referencia al recurso original de alta resolución. Para las imágenes de FPO, el estado de FPO se muestra en el panel Vínculos de InDesign.
-
-
 
 ## Información sobre la autenticación de Adobe Asset Link con AEM Assets{#understanding-adobe-asset-link-authentication-with-aem-assets}
 
