@@ -9,7 +9,7 @@ activity: understand
 audience: architect, developer
 doc-type: article
 translation-type: tm+mt
-source-git-commit: ecbd4d21c5f41b2bc6db3b409767b767f00cc5d1
+source-git-commit: bc14783840a47fb79ddf1876aca1ef44729d097e
 workflow-type: tm+mt
 source-wordcount: '917'
 ht-degree: 1%
@@ -139,12 +139,12 @@ Para permitir el almacenamiento en caché de encabezados CORS, agregue la siguie
 ```
 /cache { 
   ...
-  /headers {
-      "Access-Control-Allow-Origin",
-      "Access-Control-Expose-Headers",
-      "Access-Control-Max-Age",
-      "Access-Control-Allow-Credentials",
-      "Access-Control-Allow-Methods",
+  /clientheaders {
+      "Access-Control-Allow-Origin"
+      "Access-Control-Expose-Headers"
+      "Access-Control-Max-Age"
+      "Access-Control-Allow-Credentials"
+      "Access-Control-Allow-Methods"
       "Access-Control-Allow-Headers"
   }
   ...
@@ -153,7 +153,7 @@ Para permitir el almacenamiento en caché de encabezados CORS, agregue la siguie
 
 Recuerde **reiniciar la aplicación del servidor Web** después de realizar cambios en el archivo `dispatcher.any`.
 
-Es probable que se borre la caché por completo para garantizar que los encabezados se almacenen correctamente en la caché en la siguiente solicitud después de una actualización de configuración `/headers`.
+Es probable que se borre la caché por completo para garantizar que los encabezados se almacenen correctamente en la caché en la siguiente solicitud después de una actualización de configuración `/clientheaders`.
 
 ## Resolución de problemas de CORS
 
@@ -168,7 +168,7 @@ El registro está disponible en `com.adobe.granite.cors`:
 * Compruebe si el controlador CORS denegó la solicitud y no la autenticación, el filtro de token CSRF, los filtros de distribuidor u otros niveles de seguridad
    * Si el controlador CORS responde con 200 pero el encabezado `Access-Control-Allow-Origin` no está presente en la respuesta, revise los registros para ver si hay denegaciones en [!DNL DEBUG] en `com.adobe.granite.cors`
 * Si está habilitado el almacenamiento en caché de despachantes de [!DNL CORS] solicitudes
-   * Asegúrese de que la configuración `/headers` se aplica a `dispatcher.any` y de que el servidor Web se reinicia correctamente
+   * Asegúrese de que la configuración `/clientheaders` se aplica a `dispatcher.any` y de que el servidor Web se reinicia correctamente
    * Asegúrese de que la caché se borró correctamente después de cualquier cambio de configuración de OSGi o dispatcher.
 * si es necesario, compruebe la presencia de credenciales de autenticación en la solicitud.
 
