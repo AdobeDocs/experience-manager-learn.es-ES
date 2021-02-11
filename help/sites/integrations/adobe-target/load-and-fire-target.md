@@ -10,7 +10,7 @@ version: cloud-service
 kt: 6133
 thumbnail: 41243.jpg
 translation-type: tm+mt
-source-git-commit: 988e390dd9e1fc6033b3651db151e6a60ce4efaa
+source-git-commit: 9102505bbd826e17bf924cec719d7a430eea5095
 workflow-type: tm+mt
 source-wordcount: '613'
 ht-degree: 3%
@@ -26,7 +26,7 @@ Obtenga información sobre cómo cargar, pasar parámetros a una solicitud de p�
 
 ## Regla de carga de página
 
-La capa de datos del cliente de Adobe es una capa de datos controlada por eventos. Cuando se carga la capa de datos de la página de AEM, se activará un evento `cmp:show`. En el vídeo, la regla `Launch Library Loaded` se invoca mediante un evento personalizado. A continuación, puede encontrar los fragmentos de código utilizados en el vídeo para el evento personalizado, así como para los elementos de datos.
+La capa de datos del cliente de Adobe es una capa de datos controlada por eventos. Cuando se carga la capa de datos de la página de AEM, se déclencheur un evento `cmp:show`. En el vídeo, la regla `Launch Library Loaded` se invoca mediante un evento personalizado. A continuación, puede encontrar los fragmentos de código utilizados en el vídeo para el evento personalizado, así como para los elementos de datos.
 
 ### Página personalizada Muestra el Evento{#page-event}
 
@@ -78,7 +78,7 @@ window.adobeDataLayer.push(function (dataLayer) {
 });
 ```
 
-Una función personalizada define el `pageShownEventHandler` y escucha los eventos emitidos por AEM componentes principales, obtiene la información relevante del componente principal, lo empaqueta en un objeto evento y activa el Evento Launch con la información de evento derivada en su carga útil.
+Una función personalizada define el `pageShownEventHandler` y escucha los eventos emitidos por AEM componentes principales, obtiene la información relevante del componente principal, lo empaqueta en un objeto evento y déclencheur el Evento Launch con la información de evento derivada en su carga útil.
 
 La regla de inicio se activa mediante la función `trigger(...)` de Launch, que __sólo__ está disponible desde la definición de fragmento de código personalizado del Evento de una regla.
 
@@ -133,9 +133,13 @@ Este código devuelve el título de la página de AEM.
 
 ### ¿Por qué mis mboxes no se activan en mis páginas web?
 
-#### Mensaje de error cuando la cookie mboxDisable no está configurada**
+#### Mensaje de error cuando no se configuró la cookie mboxDisable
 
 ![Error de dominio de cookie de destinatario](assets/target-cookie-error.png)
+
+```
+> AT: [page-init] Adobe Target content delivery is disabled. Ensure that you can save cookies to your current domain, there is no "mboxDisable" cookie and there is no "mboxDisable" parameter in the query string.
+```
 
 #### Solución
 
