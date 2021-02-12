@@ -26,11 +26,11 @@ La nominación de archivos es generalmente la decisión más importante que toma
 
 ### Jerarquía de carpetas
 
-La jerarquía de carpetas es importante para usted y su compañía únicamente para fines organizativos — las direcciones URL de Dynamic Media Classic solo hacen referencia al nombre del recurso, no a la carpeta o ruta. Independientemente de dónde cargue un archivo, la dirección URL será la misma. Esto es muy diferente a cómo la mayoría de la gente organiza sus imágenes y contenido para la web, pero con Dynamic Media Classic no hay diferencia.
+La jerarquía de carpetas es importante para usted y su compañía únicamente para fines organizativos — las direcciones URL de Dynamic Media Classic solo hacen referencia al nombre del recurso, no a la carpeta o ruta. Independientemente de dónde cargue un archivo, la dirección URL será la misma. Esto es muy diferente a cómo la mayoría de la gente organiza sus imágenes y contenido para la web, pero con Dynamic Media Classic no marca ninguna diferencia.
 
 Otra consideración importante es el número de recursos o carpetas que se almacenarán en cada carpeta. Si hay muchos recursos almacenados en una carpeta, el rendimiento se degradará al visualizar recursos en Dynamic Media Classic. No almacene miles de recursos en una carpeta. En su lugar, desarrolle una jerarquía organizativa con menos de 500 recursos o carpetas dentro de una rama determinada de la jerarquía. Este no es un requisito estricto, pero ayudará a mantener tiempos de respuesta aceptables al ver o buscar recursos. De hecho, la recomendación es crear jerarquías amplias y superficiales en lugar de estrechas y profundas.
 
-La forma más sencilla de crear las carpetas es cargar toda la estructura de carpetas mediante FTP y activar la opción **Incluir subcarpetas**. Esta opción hace que Dynamic Media Classic vuelva a crear la estructura de carpetas en el sitio FTP en Dynamic Media Classic.
+La forma más sencilla de crear las carpetas es cargar toda la estructura de carpetas mediante FTP y activar la opción **Incluir subcarpetas**. Esta opción hace que Dynamic Media Classic vuelva a crear la estructura de carpetas en el sitio FTP de Dynamic Media Classic.
 
 Queremos que tenga en cuenta la estructura de inicios antes de cargar todos los archivos, ya que es mucho más fácil organizar y administrar los archivos y las carpetas localmente en el equipo que dentro de Dynamic Media Classic. Por ejemplo, solo puede arrastrar y soltar archivos, pero no carpetas enteras, dentro de Dynamic Media Classic.
 
@@ -44,9 +44,9 @@ Para la estrategia de carpetas, considere lo que tiene sentido para su organizac
 
 ## Convención de nombres de archivo
 
-El modo en que elija nombrar los archivos es quizás la decisión más importante que tomará con respecto a Dynamic Media Classic. Esto se debe a que todos los recursos de Dynamic Media Classic deben tener nombres únicos, independientemente de dónde estén almacenados en la cuenta.
+El modo en que elija nombrar sus archivos es quizás la decisión más importante que tomará con respecto a Dynamic Media Classic. Esto se debe a que todos los recursos de Dynamic Media Classic deben tener nombres únicos, independientemente de dónde estén almacenados en la cuenta.
 
-Todas las direcciones URL y transacciones de Dynamic Media Classic están dirigidas por un ID de recurso, que es un identificador único de recurso en la base de datos. Al cargar un archivo, el ID de recurso se crea tomando el nombre de archivo y eliminando la extensión. Por ejemplo, _896649.jpg_ obtiene el _ID 896649_ del recurso.
+Todas las direcciones URL y transacciones de Dynamic Media Classic se rigen por un ID de recurso, que es un identificador único del recurso en la base de datos. Al cargar un archivo, el ID de recurso se crea tomando el nombre de archivo y eliminando la extensión. Por ejemplo, _896649.jpg_ obtiene el _ID 896649_ del recurso.
 
 Reglas relativas a los ID de recursos:
 
