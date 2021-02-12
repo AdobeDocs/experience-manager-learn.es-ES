@@ -27,7 +27,7 @@ Obtenga información sobre cómo crear una Actividad de Destinatario de prueba A
 Para utilizar el VEC en un sitio web AEM, se debe completar la siguiente configuración:
 
 1. [Añadir Adobe Target a su sitio Web AEM](./add-target-launch-extension.md)
-1. [Activar una llamada de Adobe Target desde el lanzamiento](./load-and-fire-target.md)
+1. [Déclencheur de una llamada de Adobe Target desde Launch](./load-and-fire-target.md)
 
 ## Información general del escenario
 
