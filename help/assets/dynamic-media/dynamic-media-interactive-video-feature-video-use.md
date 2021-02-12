@@ -1,6 +1,6 @@
 ---
-title: Uso de vídeo interactivo con medios dinámicos AEM
-seo-title: Uso de vídeo interactivo con medios dinámicos AEM
+title: Uso de vídeo interactivo con AEM Dynamic Media
+seo-title: Uso de vídeo interactivo con AEM Dynamic Media
 description: Recursos AEM ahora tiene la capacidad de crear vídeos interactivos, donde los usuarios pueden dividir un vídeo en segmentos más pequeños o combinar segmentos pequeños para crear un segmento grande, lo que permite a los usuarios asociar llamadas a acción.
 seo-description: Recursos AEM ahora tiene la capacidad de crear vídeos interactivos, donde los usuarios pueden dividir un vídeo en segmentos más pequeños o combinar segmentos pequeños para crear un segmento grande, lo que permite a los usuarios asociar llamadas a acción.
 uuid: 84a933a4-43de-4a0f-9563-475f6dafaa9f
@@ -21,7 +21,7 @@ ht-degree: 0%
 ---
 
 
-# Uso de vídeo interactivo con medios dinámicos AEM{#using-interactive-video-with-aem-dynamic-media}
+# Uso de vídeo interactivo con AEM Dynamic Media{#using-interactive-video-with-aem-dynamic-media}
 
 Recursos AEM ahora tiene la capacidad de crear vídeos interactivos, donde los usuarios pueden dividir un vídeo en segmentos más pequeños o combinar segmentos pequeños para crear un segmento grande, lo que permite a los usuarios asociar llamadas a acción.
 
