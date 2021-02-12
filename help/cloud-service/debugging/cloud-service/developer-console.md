@@ -118,7 +118,7 @@ Ayuda de OSGi Services en la depuración mediante:
 
 ### Trabajos sling
 
-Sling Jobs lista todas las colas de trabajos Sling. Esta funcionalidad es similar a [Trabajos de inicio rápido del SDK local de &lt;a0/>AEM](http://localhost:4502/system/console/slingevent) en `/system/console/slingevent`.
+Sling Jobs lista todas las colas de trabajos Sling. Esta funcionalidad es similar a [Trabajos de inicio rápido del SDK local de AEM](http://localhost:4502/system/console/slingevent) en `/system/console/slingevent`.
 
 Ayuda de Sling Jobs en la depuración mediante:
 
