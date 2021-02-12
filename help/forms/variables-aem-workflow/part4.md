@@ -73,7 +73,7 @@ A continuación, se utiliza la ArrayList de CustomRoutes para rellenar las rutas
 Una vez inicializada la variable ArrayList de CustomRoutes con los valores de los datos enviados, las rutas del componente AsignarTarea se rellenan mediante la variable CustomRoutes. La siguiente captura de pantalla muestra las rutas personalizadas de una tarea Asignar
 ![asingtask](assets/customactions.jpg)
 
-Para probar este flujo de trabajo en su sistema, siga los pasos siguientes
+Para probar este flujo de trabajo en el sistema, siga los pasos siguientes
 
 * Descargue y guarde el archivo ArrayListVariable.zip en el sistema de archivos
 * [Importación del ](assets/arraylistvariable.zip) archivo zip mediante el Administrador de paquetes de AEM
