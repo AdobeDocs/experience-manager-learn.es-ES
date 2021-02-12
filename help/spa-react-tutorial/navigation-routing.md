@@ -477,7 +477,7 @@ Ahora que la navegación se ha implementado, inspeccione el enrutamiento en AEM.
 
    ![Página tres Solicitud XHR](assets/navigation-routing/page-3-xhr-request.png)
 
-   El Administrador de modelos de AEM entiende que el contenido **Página 3** JSON no está disponible y activa automáticamente la solicitud XHR adicional.
+   El Administrador de modelos de AEM entiende que el contenido **Página 3** JSON no está disponible y automáticamente déclencheur la solicitud XHR adicional.
 
 1. Continúe navegando por la SPA mediante los distintos vínculos de navegación del componente `Header`. Observe que no se realizan solicitudes XHR adicionales y que no se actualiza la página completa. Esto hace que el SPA sea más rápido para el usuario final y reduce las solicitudes innecesarias a AEM.
 
