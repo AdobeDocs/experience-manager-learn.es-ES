@@ -90,6 +90,6 @@ return isMarried(inboxItem);
 * Seleccione el _estado civil_ y envíe el formulario
    [Bandeja de entrada de vista](http://localhost:4502/aem/inbox)
 
-El envío del formulario activará el flujo de trabajo y se asignará una tarea al usuario &quot;admin&quot;. Debería ver un valor debajo de la columna Casado como se muestra en esta captura de pantalla.
+El envío del formulario déclencheur el flujo de trabajo y se asigna una tarea al usuario &quot;admin&quot;. Debería ver un valor debajo de la columna Casado como se muestra en esta captura de pantalla.
 
 ![columna casada](assets/married-column.PNG)
