@@ -32,7 +32,7 @@ En este formulario se utiliza la invocación del POST del Modelo de datos de for
 >[!NOTE]
 > Deberá proporcionar la clave de API y los valores secretos de API específicos de su cuenta [Nexmo](https://dashboard.nexmo.com/) en los campos correspondientes de MyAccountForm
 
-![desencadenador-envío](assets/trigger-submit.JPG)
+![Enviar déclencheur](assets/trigger-submit.JPG)
 
 
 
