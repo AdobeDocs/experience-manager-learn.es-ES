@@ -71,7 +71,7 @@ Puede hacerse una idea de la funcionalidad integrada de la capa de datos del cli
 
 ## Uso de Eventos
 
-Se recomienda activar cualquier código personalizado basado en un evento de la capa de datos. A continuación, explore la posibilidad de registrar y escuchar diferentes eventos.
+Se recomienda el déclencheur de cualquier código personalizado basado en un evento de la capa de datos. A continuación, explore la posibilidad de registrar y escuchar diferentes eventos.
 
 1. Introduzca el siguiente método de ayuda en la consola:
 
@@ -168,7 +168,7 @@ Se recomienda activar cualquier código personalizado basado en un evento de la 
 
    Esta es una de las características únicas de la capa de datos del cliente de Adobe, en la que puede registrar oyentes de evento **antes** o **después de** que se inicialice la capa de datos. Esta es una característica fundamental para evitar las condiciones de carrera.
 
-   La capa de datos mantiene una matriz de cola de todos los eventos que se han producido en secuencia. De forma predeterminada, la capa de datos activará rellamadas de evento para eventos que se produjeron en **pasado**, así como eventos en **futuro**. Es posible filtrar los eventos al pasado o al futuro. [Puede encontrar más información en la documentación](https://github.com/adobe/adobe-client-data-layer/wiki#addeventlistener).
+   La capa de datos mantiene una matriz de cola de todos los eventos que se han producido en secuencia. De forma predeterminada, la capa de datos déclencheur las rellamadas de evento para eventos que se produjeron en **pasado**, así como eventos en **futuro**. Es posible filtrar los eventos al pasado o al futuro. [Puede encontrar más información en la documentación](https://github.com/adobe/adobe-client-data-layer/wiki#addeventlistener).
 
 
 ## Próximos pasos
