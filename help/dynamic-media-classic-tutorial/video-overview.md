@@ -34,13 +34,13 @@ Al final de esta sección del tutorial, sabrá cómo:
 >
 >Todas las direcciones URL de este capítulo son solo ilustrativas; no son vínculos activos.
 
-## Vídeo de descripción general de Dynamic Media Classic
+## Información general sobre Dynamic Media Classic Video
 
-Primero vamos a conocer mejor las posibilidades de vídeo mediante Dynamic Media Classic.
+Primero vamos a conocer mejor las posibilidades de vídeo con Dynamic Media Classic.
 
 ### Funciones y capacidades
 
-La plataforma de vídeo de Dynamic Media Classic oferta todas las partes de la solución de vídeo: la carga, conversión y gestión de vídeos; la capacidad de agregar rótulos y marcadores de capítulo a un vídeo; y la capacidad de utilizar ajustes preestablecidos para una reproducción sencilla.
+La plataforma de vídeo Dynamic Media Classic oferta todas las partes de la solución de vídeo: la carga, conversión y gestión de vídeos; la capacidad de agregar rótulos y marcadores de capítulo a un vídeo; y la capacidad de utilizar ajustes preestablecidos para una reproducción sencilla.
 
 Facilita la publicación de vídeos adaptables de alta calidad para transmitir en varias pantallas, incluidos los dispositivos móviles de escritorio, iOS, Android, BlackBerry y Windows. Un conjunto de vídeos adaptable agrupa versiones del mismo vídeo codificadas con diferentes velocidades de bits y formatos, como 400 kbps, 800 kbps y 1000 kbps. El equipo de escritorio o dispositivo móvil detecta el ancho de banda disponible.
 
@@ -52,7 +52,7 @@ Trabajar con vídeo puede ser más complejo que trabajar con imágenes digitales
 
 Dynamic Media Classic reconoce y puede trabajar con muchos formatos de origen diferentes disponibles. Sin embargo, leer el video es solo una parte del esfuerzo — también debe convertir el vídeo a un formato compatible con Web. Dynamic Media Classic se encarga de esto permitiéndole convertir vídeo a vídeo H.264.
 
-La conversión del vídeo usted mismo puede resultar muy complicada usando las muchas herramientas profesionales y entusiastas disponibles. Dynamic Media Classic lo mantiene sencillo al ofrecer ajustes preestablecidos fáciles que se han optimizado para diferentes ajustes de calidad. Sin embargo, si desea algo más personalizado, también puede crear sus propios ajustes preestablecidos.
+La conversión del vídeo usted mismo puede resultar muy complicada usando las muchas herramientas profesionales y entusiastas disponibles. Dynamic Media Classic lo mantiene sencillo al ofrecer ajustes preestablecidos sencillos optimizados para diferentes ajustes de calidad. Sin embargo, si desea algo más personalizado, también puede crear sus propios ajustes preestablecidos.
 
 Si tiene muchos vídeos, apreciará la capacidad de administrar todos sus recursos junto con sus imágenes y otros medios en Dynamic Media Classic. Puede organizar, catalogar y buscar sus recursos, incluidos los recursos de vídeo, con una sólida compatibilidad con metadatos de XMP.
 
@@ -62,15 +62,15 @@ De manera similar al problema de conversión de vídeo para que sea accesible y 
 
 Nuevamente, el enfoque de Dynamic Media Classic es permitirle elegir el ajuste preestablecido y el visor que se adapte a sus necesidades. Dispone de muchas opciones de visor diferentes y una biblioteca con numerosos ajustes preestablecidos disponibles.
 
-Puede distribuir fácilmente vídeos a la Web y a los dispositivos móviles, ya que Dynamic Media Classic admite vídeo HTML5, lo que significa que puede hacer destinatario a los usuarios que ejecutan varios navegadores, así como a los usuarios de las plataformas Android e iOS. El vídeo de flujo continuo permite una reproducción suave de contenido de alta definición o más largo, mientras que el vídeo progresivo HTML5 tiene ajustes preestablecidos optimizados para la pantalla pequeña.
+Puede distribuir fácilmente vídeos a la Web y a los dispositivos móviles, ya que Dynamic Media Classic admite vídeo HTML5, lo que significa que puede enviar destinatarios a los usuarios que ejecuten varios navegadores, así como a los usuarios de las plataformas Android e iOS. El vídeo de flujo continuo permite una reproducción suave de contenido de alta definición o más largo, mientras que el vídeo progresivo HTML5 tiene ajustes preestablecidos optimizados para la pantalla pequeña.
 
 Los ajustes preestablecidos de visor para vídeo se pueden configurar parcialmente en función del tipo de visor.
 
-Al igual que todos los visores, la integración se realiza mediante una única URL de Dynamic Media Classic por visor o vídeo.
+Al igual que todos los visores, la integración se realiza mediante una sola URL de Dynamic Media Classic por visor o vídeo.
 
 >[!NOTE]
 >
->La práctica recomendada es utilizar los visores de vídeo HTML5 de Dynamic Media Classic. Los ajustes preestablecidos utilizados en los visores de vídeo HTML5 son reproductores de vídeo sólidos. Al combinar en un solo reproductor la capacidad de diseñar los componentes de reproducción mediante HTML5 y CSS, tener una reproducción incrustada y utilizar flujo adaptable y progresivo en función de la capacidad del explorador, se amplía el alcance del contenido de medios enriquecidos a los usuarios de escritorio, tablet y móvil, y se garantiza una experiencia de vídeo optimizada.
+>Se recomienda utilizar los visores de vídeo HTML5 de Dynamic Media Classic. Los ajustes preestablecidos utilizados en los visores de vídeo HTML5 son reproductores de vídeo sólidos. Al combinar en un solo reproductor la capacidad de diseñar los componentes de reproducción mediante HTML5 y CSS, tener una reproducción incrustada y utilizar flujo adaptable y progresivo en función de la capacidad del explorador, se amplía el alcance del contenido de medios enriquecidos a los usuarios de escritorio, tablet y móvil, y se garantiza una experiencia de vídeo optimizada.
 
 Una última nota sobre el vídeo de Dynamic Media Classic que puede aplicarse a algunos clientes: no todas las compañías pueden tener la conversión automática, el flujo continuo o los ajustes preestablecidos de vídeo activados para su cuenta. Si, por algún motivo, no puede acceder a las direcciones URL para el flujo continuo de vídeo, este puede ser el motivo. Todavía podrá cargar y publicar vídeo descargado progresivamente y tendrá acceso a todos los visores de vídeo. Sin embargo, para aprovechar todas las funciones de vídeo de Dynamic Media Classic, debe ponerse en contacto con el administrador de cuentas o con el administrador de ventas para habilitar estas funciones.
 
@@ -128,11 +128,11 @@ Antes de empezar, hablemos de algunos términos con los que debería estar famil
    - En general, no importa si el material de origen está entrelazado o no — Dynamic Media Classic conservará el método de exploración en el vídeo convertido.
    - Envío progresivo/de flujo continuo. El flujo continuo de vídeo es el envío de medios en un flujo continuo que se puede reproducir a medida que llega, mientras que el vídeo descargado progresivamente se descarga como cualquier otro archivo desde un servidor y se almacena en caché localmente en el navegador.
 
-Con suerte, este manual le ayudará a comprender las distintas opciones que conlleva el uso de vídeo de Dynamic Media Classic.
+Con suerte, este manual le ayudará a comprender las distintas opciones que conlleva el uso del vídeo Dynamic Media Classic.
 
 ## Flujo de trabajo de vídeo
 
-Cuando se trabaja con vídeo en Dynamic Media Classic, se sigue un flujo de trabajo básico similar a trabajar con imágenes.
+Cuando se trabaja con vídeo en Dynamic Media Classic, se sigue un flujo de trabajo básico similar al trabajo con imágenes.
 
 ![image](assets/video-overview/video-overview-2.png)
 
@@ -146,19 +146,19 @@ La transcodificación se definió anteriormente como el proceso de conversión d
 
 Dynamic Media Classic puede gestionar toda la transcodificación por usted, lo que supone una gran ventaja. Puede transcodificar el vídeo usted mismo y cargar los archivos ya convertidos a MP4, pero puede ser un proceso complejo que requiere un software sofisticado. A menos que sepa lo que está haciendo, normalmente no obtendrá buenos resultados en su primer intento.
 
-Dynamic Media Classic no solo convierte los archivos por usted, sino que también facilita el uso de los ajustes preestablecidos. Realmente no necesitas saber mucho sobre el lado técnico de este proceso — todo lo que debe saber es aproximadamente el tamaño final que desea obtener del sistema y una sensación del ancho de banda que tienen los usuarios finales.
+Dynamic Media Classic no sólo convierte los archivos por usted, sino que también facilita el uso de los ajustes preestablecidos. Realmente no necesitas saber mucho sobre el lado técnico de este proceso — todo lo que debe saber es aproximadamente el tamaño final que desea obtener del sistema y una sensación del ancho de banda que tienen los usuarios finales.
 
 Aunque los ajustes preestablecidos son prácticos y cubren la mayoría de las necesidades, a veces se desea algo más personalizado. En ese caso, puede crear su propio ajuste preestablecido de codificación. En Dynamic Media Classic, un ajuste preestablecido de codificación se denomina ajuste preestablecido de vídeo. Esto se explicará más adelante en este capítulo.
 
 ### Acerca del flujo continuo
 
-Otra característica importante que vale la pena destacar es el flujo de vídeo, una característica estándar de la plataforma de vídeo de Dynamic Media Classic. Los medios de transmisión se reciben constantemente y se presentan al usuario final mientras se entregan. Esto es importante y deseable por varias razones.
+Otra característica importante que vale la pena destacar es el flujo de vídeo, una característica estándar de la plataforma de vídeo Dynamic Media Classic. Los medios de transmisión se reciben constantemente y se presentan al usuario final mientras se entregan. Esto es importante y deseable por varias razones.
 
-El flujo continuo suele requerir menos ancho de banda que la descarga progresiva, ya que solo se entrega la parte del vídeo que se ve. Los visores y el servidor de flujo continuo de vídeo de Dynamic Media Classic utilizan la detección automática del ancho de banda para ofrecer el mejor flujo posible para la conexión a Internet de un usuario.
+El flujo continuo suele requerir menos ancho de banda que la descarga progresiva, ya que solo se entrega la parte del vídeo que se ve. Los visores y el servidor de flujo de vídeo Dynamic Media Classic utilizan la detección automática del ancho de banda para ofrecer el mejor flujo posible para la conexión a Internet de un usuario.
 
 Con el flujo continuo, los inicios de vídeo se reproducen antes que con otros métodos. También hace un uso más eficiente de los recursos de red porque solo las partes del vídeo que se ven se envían al cliente.
 
-El otro método de envío es la descarga progresiva. En comparación con el vídeo de flujo continuo, solo hay una ventaja consistente para la descarga progresiva: no necesita un servidor de flujo continuo para distribuir el vídeo. Y esto es, por supuesto, donde entra Dynamic Media Classic. Dynamic Media Classic cuenta con un servidor de transmisión integrado en la plataforma, por lo que no necesita el coste adicional o molesto de mantener este hardware dedicado.
+El otro método de envío es la descarga progresiva. En comparación con el vídeo de flujo continuo, solo hay una ventaja consistente para la descarga progresiva: no necesita un servidor de flujo continuo para distribuir el vídeo. Y esto es, por supuesto, donde entra Dynamic Media Classic. Dynamic Media Classic cuenta con un servidor de transmisión integrado en la plataforma, por lo que no necesita el molesto costo adicional de mantener este hardware dedicado.
 
 El vídeo de descarga progresiva se puede servir desde cualquier servidor web normal. Aunque esto puede ser conveniente y potencialmente rentable, tenga en cuenta que las descargas progresivas tienen capacidades limitadas de búsqueda y navegación y que los usuarios pueden acceder y reutilizar el contenido. En algunas situaciones, como la reproducción detrás de servidores de seguridad de red muy estrictos, el envío de flujo puede bloquearse; en estos casos, puede ser deseable revertir al envío progresivo.
 
@@ -201,7 +201,7 @@ Los ajustes preestablecidos de vídeo determinan cómo se codificará el vídeo 
 
 - **Proporción de aspecto.** Generalmente estándar 4:3 o pantalla ancha16:9.
 - **Tamaño.** Es la misma que la resolución de visualización y se mide en píxeles. Esto está relacionado con la proporción de aspecto. A una proporción de 16:9, un vídeo será de 432 x 240 píxeles, mientras que a 4:3 será de 320 x 240 píxeles.
-- **FPS.** Las velocidades de fotogramas estándar son de 30, 25 o 24 fotogramas por segundo (fps), según el estándar de vídeo: NTSC, PAL o Película. Este ajuste no importa, ya que Dynamic Media Classic siempre usará la misma velocidad de fotogramas que el vídeo de origen.
+- **FPS.** Las velocidades de fotogramas estándar son de 30, 25 o 24 fotogramas por segundo (fps), según el estándar de vídeo: NTSC, PAL o Película. Este ajuste no importa, ya que Dynamic Media Classic utilizará siempre la misma velocidad de fotogramas que el vídeo de origen.
 - **Formato.** Será MP4.
 - **Ancho de banda.** Ésta es la velocidad de conexión deseada del usuario de destino. ¿Tienen una conexión a Internet rápida o lenta? ¿Normalmente utilizan equipos de escritorio o dispositivos móviles? Esto también se relaciona con la resolución (tamaño), ya que cuanto mayor sea el vídeo, mayor será el ancho de banda necesario.
 
@@ -235,7 +235,7 @@ A veces puede que necesite un ajuste preestablecido de vídeo especial que no co
 
 9. Configure la **Proporción de aspecto** del archivo de origen. Esta configuración está directamente ligada al tamaño, más abajo. Si elige _Personalizado_, tendrá que introducir manualmente la anchura y la altura.
 10. Si elige una proporción de aspecto, defina un valor para **Tamaño de resolución** y Dynamic Media Classic rellenará el otro valor automáticamente. Sin embargo, para una relación de aspecto personalizada, rellene ambos valores. Su tamaño debe estar en línea con la velocidad de datos. Si establece una velocidad de datos muy baja y un tamaño grande, se espera que la calidad sea deficiente.
-11. Haga clic en **Guardar** para guardar el ajuste preestablecido. A diferencia de cualquier otro ajuste preestablecido, no es necesario publicar en este momento, ya que los ajustes preestablecidos solo sirven para cargar archivos. Más adelante, tendrá que publicar los vídeos codificados, pero los ajustes preestablecidos solo sirven para el uso interno de Dynamic Media Classic.
+11. Haga clic en **Guardar** para guardar el ajuste preestablecido. A diferencia de cualquier otro ajuste preestablecido, no es necesario publicar en este momento, ya que los ajustes preestablecidos solo sirven para cargar archivos. Más adelante, tendrá que publicar los vídeos codificados, pero los ajustes preestablecidos solo son para uso interno de Dynamic Media Classic.
 12. Para comprobar que el ajuste preestablecido de vídeo está en la lista de carga, vaya a **Cargar**.Elija **Opciones de trabajo** y expanda **Opciones de vídeo**. El ajuste preestablecido se mostrará en la categoría del dispositivo de reproducción elegido (Equipo, Móvil o Tablet).
 
 Obtenga más información sobre [Añadir o editar un ajuste preestablecido de vídeo](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/uploading-encoding-videos.html#adding-or-editing-a-video-encoding-preset).
@@ -262,7 +262,7 @@ El último paso del flujo de trabajo de Dynamic Media Classic es publicar el con
 
 Obtenga información sobre cómo [publicar su vídeo](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#publishing-video).
 
-Una vez que haya ejecutado una publicación de vídeo, podrá obtener una URL para acceder a los vídeos y a los ajustes preestablecidos de visor de Dynamic Media Classic disponibles en un navegador web. Sin embargo, si personaliza o crea su propio ajuste preestablecido de visor de vídeo, deberá ejecutar una publicación independiente del servidor de imágenes.
+Una vez que haya ejecutado una publicación de vídeo, podrá obtener una URL para acceder a los vídeos y a los ajustes preestablecidos de visor Dynamic Media Classic preestablecidos en un navegador web. Sin embargo, si personaliza o crea su propio ajuste preestablecido de visor de vídeo, deberá ejecutar una publicación independiente del servidor de imágenes.
 
 - Obtenga información sobre cómo [vincular una dirección URL a un sitio móvil o a un sitio web](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#linking-a-video-url-to-a-mobile-site-or-a-website).
 - Obtenga información sobre cómo [incrustar el visor de vídeos en una página Web](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#embedding-the-video-viewer-on-a-web-page).
@@ -285,7 +285,7 @@ El proceso de selección y personalización de un ajuste preestablecido de visor
 
 ## Optimización del motor de búsqueda de vídeo
 
-La optimización de los motores de búsqueda (SEO) es el proceso de mejorar la visibilidad de un sitio Web o una página Web en los motores de búsqueda. Aunque los motores de búsqueda destacan en la recopilación de información sobre contenido basado en texto, no pueden adquirir de manera adecuada información sobre video a menos que se les proporcione esta información. Mediante la optimización para motores de búsqueda de vídeos de Dynamic Media Classic, puede utilizar metadatos para proporcionar a los motores de búsqueda descripciones de los vídeos. La función de optimización para motores de búsqueda de vídeos le permite crear mapas de vídeos y recursos mRSS.
+La optimización de los motores de búsqueda (SEO) es el proceso de mejorar la visibilidad de un sitio Web o una página Web en los motores de búsqueda. Aunque los motores de búsqueda destacan en la recopilación de información sobre contenido basado en texto, no pueden adquirir de manera adecuada información sobre video a menos que se les proporcione esta información. Con la optimización para motores de búsqueda de vídeos de Dynamic Media Classic, puede utilizar metadatos para proporcionar a los motores de búsqueda descripciones de los vídeos. La función de optimización para motores de búsqueda de vídeos le permite crear mapas de vídeos y recursos mRSS.
 
 - **Mapa del sitio** de vídeos. Informa a Google exactamente dónde y qué contenido del vídeo se encuentra en un sitio. En consecuencia, los vídeos se pueden buscar completamente en Google. Por ejemplo, un mapa de vídeos puede especificar el tiempo de ejecución y las categorías de los vídeos.
 - **mRSS feed**. Utilizado por los editores de contenido para alimentar archivos de medios en Yahoo! Búsqueda de vídeo. Google admite el protocolo de mapas de vídeos y recursos mRSS para enviar información a los motores de búsqueda.
@@ -304,7 +304,7 @@ Los campos obligatorios son Página de aterrizaje (la dirección URL de la pági
 
 Hay otros dos campos obligatorios — URL de contenido, la URL del recurso de vídeo en sí y la miniatura, una URL para una imagen en miniatura del vídeo: sin embargo, Dynamic Media Classic rellenará automáticamente esos valores.
 
-El flujo de trabajo recomendado consiste en incrustar estos datos en los vídeos antes de cargarlos mediante metadatos de XMP, y Dynamic Media Classic los extraerá al cargarlos. Usaría una aplicación como Adobe Bridge — que se incluye con todas las aplicaciones de Adobe Creative Cloud — para rellenar los datos en campos de metadatos estándar.
+El flujo de trabajo recomendado es incrustar estos datos en los vídeos antes de cargarlos mediante metadatos de XMP y Dynamic Media Classic los extraerá al cargarlos. Usaría una aplicación como Adobe Bridge — que se incluye con todas las aplicaciones de Adobe Creative Cloud — para rellenar los datos en campos de metadatos estándar.
 
 Si sigue este método, no tendrá que introducir manualmente estos datos con Dynamic Media Classic. Sin embargo, también puede utilizar los ajustes preestablecidos de metadatos en Dynamic Media Classic para introducir rápidamente los mismos datos cada vez.
 
@@ -352,7 +352,7 @@ El método para enviar a su motor de búsqueda variará, sin embargo para Google
 
 ### Informe de la optimización para motores de búsqueda de vídeos
 
-Dynamic Media Classic proporciona un informe que muestra cuántos videos se incluyeron correctamente en los archivos y, lo que es más importante, cuáles no se incluyeron debido a errores. Para acceder al informe, vaya a **Ajustes > Ajustes de aplicación > Optimización para motores de búsqueda de vídeos > Informe**.
+Dynamic Media Classic proporciona un informe para mostrar cuántos videos se incluyeron con éxito en los archivos y, lo que es más importante, que no se incluyeron debido a errores. Para acceder al informe, vaya a **Ajustes > Ajustes de aplicación > Optimización para motores de búsqueda de vídeos > Informe**.
 
 ![image](assets/video-overview/video-overview-9.jpg)
 
@@ -380,10 +380,10 @@ Este método también funcionará para la Web de escritorio, aunque puede que te
 
 ### Método 2: Reproducción de aplicaciones en iOS — Media Player Framework
 
-También puede incrustar el vídeo MP4 de Dynamic Media Classic en el código de la aplicación móvil. A continuación se muestra un ejemplo genérico para iOS que utiliza el entorno de Media Player y que se proporciona únicamente con fines ilustrativos:
+También puede incrustar el vídeo Dynamic Media Classic MP4 en el código de la aplicación móvil. A continuación se muestra un ejemplo genérico para iOS que utiliza el entorno de Media Player y que se proporciona únicamente con fines ilustrativos:
 
 ![image](assets/video-overview/app-playback.png)
 
 ## Recursos adicionales
 
-Vea el [Generador de habilidades de Dynamic Media: Vídeo en un seminario web a petición de Dynamic Media Classic](https://seminars.adobeconnect.com/p2ueiaswkuze) para aprender a utilizar las funciones de vídeo en Dynamic Media Classic.
+Vea el [Generador de habilidades de Dynamic Media: Vídeo en un seminario web a petición de Dynamic Media Classic](https://seminars.adobeconnect.com/p2ueiaswkuze) para aprender a utilizar las funciones de vídeo de Dynamic Media Classic.
