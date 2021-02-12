@@ -92,4 +92,4 @@ return val;
 * Seleccione el _estado civil_ y envíe el formulario
 * [Bandeja de entrada de vista](http://localhost:4502/aem/inbox)
 
-El envío del formulario activará el flujo de trabajo y se asignará una tarea al usuario &quot;admin&quot;. Debería ver el icono correspondiente en la columna de ingresos
+El envío del formulario déclencheur el flujo de trabajo y se asigna una tarea al usuario &quot;admin&quot;. Debería ver el icono correspondiente en la columna de ingresos
