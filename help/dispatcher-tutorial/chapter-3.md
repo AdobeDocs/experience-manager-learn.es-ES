@@ -55,7 +55,7 @@ El envío de una página desde un servidor al explorador de un cliente cruza una
 
 <br> 
 
-Vamos a inicio nuestro viaje con un fragmento de datos que se encuentra en un disco duro y que necesita mostrarse en un navegador.
+Vamos a inicio nuestro recorrido con un fragmento de datos que se encuentra en un disco duro y que debe mostrarse en un navegador.
 
 #### Hardware y sistema operativo
 
