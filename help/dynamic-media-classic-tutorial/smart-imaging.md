@@ -1,6 +1,6 @@
 ---
 title: Imágenes inteligentes
-description: Las imágenes inteligentes de Dynamic Media Classic mejoran el rendimiento del envío de imágenes al optimizar automáticamente el formato y la calidad de las imágenes en función de las funciones del navegador del cliente. Para ello, aprovecha las capacidades de Adobe Sensei AI y trabaja con los ajustes preestablecidos de imagen existentes. Obtenga más información sobre las imágenes inteligentes y cómo puede utilizarlas para oferta de mejores experiencias de los clientes mediante cargas de páginas más rápidas.
+description: Las imágenes inteligentes de Dynamic Media Classic mejoran el rendimiento del envío de imágenes al optimizar automáticamente el formato y la calidad de las imágenes en función de las capacidades del navegador del cliente. Para ello, aprovecha las capacidades de Adobe Sensei AI y trabaja con los ajustes preestablecidos de imagen existentes. Obtenga más información sobre las imágenes inteligentes y cómo puede utilizarlas para oferta de mejores experiencias de los clientes mediante cargas de páginas más rápidas.
 sub-product: Dynamic-media
 feature: smart-crop
 doc-type: tutorial
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # Imágenes inteligentes {#smart-imaging}
 
-Uno de los aspectos más importantes de la experiencia del cliente en su sitio web o sitio móvil o aplicación es el tiempo de carga de la página. Los clientes a menudo abandonan un sitio o una aplicación si una página tarda demasiado en cargarse. Las imágenes constituyen la mayor parte del tiempo de carga de la página. Las imágenes inteligentes de Dynamic Media Classic mejoran el rendimiento del envío de imágenes al optimizar automáticamente el formato y la calidad de las imágenes en función de las funciones del navegador del cliente. Para ello, aprovecha las capacidades de Adobe Sensei AI y trabaja con los ajustes preestablecidos de imagen existentes. Las imágenes inteligentes reducen el tamaño de las imágenes en un 30% o más — que se traduce en cargas de página más rápidas y mejores experiencias de los clientes.
+Uno de los aspectos más importantes de la experiencia del cliente en su sitio web o sitio móvil o aplicación es el tiempo de carga de la página. Los clientes a menudo abandonan un sitio o una aplicación si una página tarda demasiado en cargarse. Las imágenes constituyen la mayor parte del tiempo de carga de la página. Las imágenes inteligentes de Dynamic Media Classic mejoran el rendimiento del envío de imágenes al optimizar automáticamente el formato y la calidad de las imágenes en función de las capacidades del navegador del cliente. Para ello, aprovecha las capacidades de Adobe Sensei AI y trabaja con los ajustes preestablecidos de imagen existentes. Las imágenes inteligentes reducen el tamaño de las imágenes en un 30% o más — que se traduce en cargas de página más rápidas y mejores experiencias de los clientes.
 
 Smart Imaging también se beneficia del aumento de rendimiento añadido que supone la integración total con el mejor servicio Premium de Adobe. Este servicio encuentra la ruta de Internet óptima entre servidores, redes y puntos de interrelación que tiene la latencia y/o la tasa de pérdida de paquetes más baja que la ruta predeterminada en Internet.
 
@@ -56,4 +56,4 @@ Probablemente tenga más preguntas sobre las imágenes inteligentes. Hemos compi
 
 ## Recursos adicionales
 
-Vea el [seminario web a petición del Generador de aptitudes para el rendimiento de la página de optimización de Dynamic Media Classic](https://seminars.adobeconnect.com/pzc1gw0cihpv) para obtener más información sobre las imágenes inteligentes.
+Vea el [seminario web a petición del creador de habilidades para el rendimiento de la página de optimización de Dynamic Media Classic](https://seminars.adobeconnect.com/pzc1gw0cihpv) para obtener más información sobre las imágenes inteligentes.
