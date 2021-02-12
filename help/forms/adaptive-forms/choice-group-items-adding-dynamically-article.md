@@ -99,7 +99,7 @@ Para probar esto en el sistema:
 * [Abrir Forms Y Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Haga clic en &quot;Crear&quot; | Carga de archivos&quot; y carga el archivo descargado en el paso anterior
 * [Previsualización de formularios](http://localhost:4502/content/dam/formsanddocuments/amortizationschedule/jcr:content?wcmmode=disabled)
-* Introduzca el importe de préstamo y el tabulador fuera del campo. Esto activará la regla que muestra el campo del período de préstamo.
+* Introduzca el importe de préstamo y el tabulador fuera del campo. Esto déclencheur la regla que muestra el campo del período de préstamo.
 * Seleccione el período de préstamo apropiado(Los artículos para el período de préstamo se rellenan desde la llamada de descanso)
 * Seleccione la tasa de interés y haga clic en &quot;Obtener programa de amortización&quot;
 * La tabla de amortización debe rellenarse. El programa de amortización se obtiene mediante una llamada REST.
