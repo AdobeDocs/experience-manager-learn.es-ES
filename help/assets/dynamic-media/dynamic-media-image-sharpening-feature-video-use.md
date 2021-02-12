@@ -21,7 +21,7 @@ ht-degree: 0%
 ---
 
 
-# Uso del enfoque de imágenes con medios dinámicos AEM{#using-image-sharpening-with-aem-dynamic-media}
+# Uso del enfoque de imagen con AEM Dynamic Media{#using-image-sharpening-with-aem-dynamic-media}
 
 Este vídeo explica por qué el enfoque de una imagen es fundamental para mantener la fidelidad de la imagen y cómo utilizar ajustes avanzados para crear la imagen perfecta.
 
