@@ -21,7 +21,7 @@ ht-degree: 0%
 # Almacenamiento de envíos de formularios adaptables en la base de datos
 
 Existen varias formas de almacenar los datos de formulario enviados en la base de datos que elija. Se puede utilizar una fuente de datos JDBC para almacenar directamente los datos en la base de datos. Se puede escribir un paquete OSGI personalizado para almacenar los datos en la base de datos. Este artículo utiliza pasos de proceso personalizados en AEM flujo de trabajo para almacenar los datos.
-El caso de uso es activar un flujo de trabajo AEM en un envío de formulario adaptable y un paso en el flujo de trabajo almacena los datos enviados en la base de datos.
+El caso de uso es el déclencheur de un flujo de trabajo AEM en un envío de formulario adaptable y un paso en el flujo de trabajo almacena los datos enviados en la base de datos.
 
 **Siga los pasos que se mencionan a continuación para que funcione en su sistema**
 
