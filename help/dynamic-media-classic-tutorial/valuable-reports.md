@@ -1,6 +1,6 @@
 ---
 title: Informes valiosos para administradores
-description: Descubra dos informes valiosos que los administradores de Dynamic Media Classic deben considerar configurar.
+description: Descubrir dos informes valiosos que los administradores de Dynamic Media Classic deben considerar configurar.
 sub-product: Dynamic-media, recursos
 feature: reports
 doc-type: tutorial
@@ -42,9 +42,9 @@ Esperamos que el contenido de esta guía de optimizaciones le resulte útil para
 
 Para obtener más información sobre Dynamic Media Classic, eche un vistazo a los siguientes recursos:
 
-- [Dynamic Media Classic en Experience League: Obtener valor](https://guided.adobe.com/?launch=AEM-5a#recommended/solutions/experience-manager)
+- [Dynamic Media Classic en Experience League: Get to Value](https://guided.adobe.com/?launch=AEM-5a#recommended/solutions/experience-manager)
 - [Dynamic Media Classic en Experience League: Haga más](https://guided.adobe.com/?launch=AEM-6a#recommended/solutions/experience-manager)
-- [Archivos de boletines informativos de Dynamic Media](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/dynamic-media-newsletter.html)
-- [Página de Suscripción de boletines de Dynamic Media](https://www.adobe.com/subscription/dynamic-media-newsletter.html)
+- [Archivos de la newsletter de Dynamic Media](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/dynamic-media-newsletter.html)
+- [Página de Suscripción de la newsletter de Dynamic Media](https://www.adobe.com/subscription/dynamic-media-newsletter.html)
 - [Documentación de Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/home.html)
 - [Publicaciones de blogs de medios enriquecidos](https://theblog.adobe.com/tag/dynamic-media)
