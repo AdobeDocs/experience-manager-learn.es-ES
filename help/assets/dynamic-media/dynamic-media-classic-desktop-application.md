@@ -1,6 +1,6 @@
 ---
-title: Uso de la aplicación de escritorio de Dynamic Media Classic
-seo-title: Uso de la aplicación de escritorio de Dynamic Media Classic
+title: Uso de Dynamic Media Classic Desktop Application
+seo-title: Uso de Dynamic Media Classic Desktop Application
 description: Adobe presenta una aplicación de escritorio para usuarios de Dynamic Media Classic que ya no dependen de la tecnología de Flash de Adobe en el navegador.
 seo-description: Adobe presenta una aplicación de escritorio para usuarios de Dynamic Media Classic que ya no dependen de la tecnología de Flash de Adobe en el navegador.
 sub-product: Dynamic-media
@@ -21,9 +21,9 @@ ht-degree: 0%
 ---
 
 
-# Uso de la aplicación de escritorio de Dynamic Media Classic{#using-dynamic-media-desktop-application}
+# Uso de la aplicación de escritorio Dynamic Media Classic{#using-dynamic-media-desktop-application}
 
-Adobe presenta una aplicación de escritorio para Dynamic Media Classic que ofrece una experiencia similar a un navegador y una interfaz funcionalmente equivalente que no depende del reproductor de Adobe Flash.
+Adobe presenta una aplicación de escritorio para Dynamic Media Classic que proporciona una experiencia similar a un navegador y una interfaz funcionalmente equivalente que no depende del reproductor de Flash de Adobe.
 
 >[!VIDEO](https://video.tv.adobe.com/v/36645/?quality=12)
 
@@ -33,7 +33,7 @@ Adobe presenta una aplicación de escritorio para Dynamic Media Classic que ofre
 
 ## Requisitos del sistema
 
-La aplicación de escritorio Adobe Dynamic Media Classic es compatible con los siguientes sistemas operativos:
+La aplicación de escritorio de Adobe Dynamic Media Classic es compatible con los siguientes sistemas operativos:
 
 * macOS 10.10 o posterior
 * Windows 7 o posterior
@@ -41,6 +41,6 @@ La aplicación de escritorio Adobe Dynamic Media Classic es compatible con los s
 ## Materiales de apoyo
 
 * [Documentación de aplicaciones de escritorio de Adobe Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html)
-* [Preguntas más frecuentes sobre Dynamic Media de Adobe](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/new-ui-2020.html)
+* [Preguntas más frecuentes sobre Adobe Dynamic Media](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/new-ui-2020.html)
 * [Descargar - Archivo de imagen de disco para macOS (.dmg)](http://download.macromedia.com/dynamic-media-classic/20.20.1/adobe-dynamic-media-classic-20.20.1.dmg)
 * [Descargar - Archivo ejecutable para Windows (.exe)](http://download.macromedia.com/dynamic-media-classic/20.20.1/adobe-dynamic-media-classic-20.20.1.exe)
