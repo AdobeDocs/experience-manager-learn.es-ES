@@ -213,7 +213,7 @@ Pasos de alto nivel para el vídeo siguiente:
 1. Vaya a la consola Sitios en [http://localhost:4502/sites.html/content/wknd/us/en/magazine](http://localhost:4502/sites.html/content/wknd/us/en/magazine).
 1. Cree una nueva página debajo de **WKND** > **US** > **EN** > **Revista**.
    * Elija la plantilla **Página del artículo**.
-   * En **Propiedades** establezca el **Título** en &quot;Guía definitiva de parques de patinaje LA&quot;
+   * En **Properties** establezca **Title** en &quot;Ultimate Guide to LA Skateparks&quot;
    * Configure **Name** como &quot;guide-la-skateparks&quot;
 1. Reemplace **By Author** Title por el texto &quot;By Stacey Roswells&quot;.
 1. Actualice el componente **Texto** para incluir un párrafo para rellenar el artículo. Puede utilizar el siguiente archivo de texto como copia: [la-skate-parks-copy.txt](assets/pages-templates/la-skateparks-copy.txt).
