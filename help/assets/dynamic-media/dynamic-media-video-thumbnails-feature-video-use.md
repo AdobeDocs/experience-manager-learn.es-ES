@@ -1,6 +1,6 @@
 ---
-title: Uso de miniaturas de vídeo personalizadas con medios dinámicos AEM
-seo-title: Uso de miniaturas de vídeo personalizadas con medios dinámicos AEM
+title: Uso de miniaturas de vídeo personalizadas con AEM Dynamic Media
+seo-title: Uso de miniaturas de vídeo personalizadas con AEM Dynamic Media
 description: Las miniaturas de vídeo personalizadas de AEM Assets permiten a los autores seleccionar una miniatura adecuada de un conjunto de miniaturas generadas. El número de miniaturas generadas para un vídeo se puede personalizar fácilmente.
 seo-description: Las miniaturas de vídeo personalizadas de AEM Assets permiten a los autores seleccionar una miniatura adecuada de un conjunto de miniaturas generadas. El número de miniaturas generadas para un vídeo se puede personalizar fácilmente.
 uuid: 1559b1bc-daca-49e9-b6de-0b93798658a8
@@ -21,7 +21,7 @@ ht-degree: 0%
 ---
 
 
-# Uso de miniaturas de vídeo personalizadas con medios dinámicos AEM{#using-custom-video-thumbnail-with-aem-dynamic-media}
+# Uso de miniaturas de vídeo personalizadas con AEM Dynamic Media{#using-custom-video-thumbnail-with-aem-dynamic-media}
 
 Las miniaturas de vídeo personalizadas de AEM Assets permiten a los autores seleccionar una miniatura adecuada de un conjunto de miniaturas generadas. El número de miniaturas generadas para un vídeo se puede personalizar fácilmente.
 
