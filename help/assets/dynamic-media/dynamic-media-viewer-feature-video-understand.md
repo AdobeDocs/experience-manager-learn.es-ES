@@ -1,8 +1,8 @@
 ---
-title: Información sobre el visor de recursos con AEM Dynamic Media
-seo-title: Información sobre el visor de recursos con AEM Dynamic Media
-description: AEM mejoras del visor de medios dinámicos permiten a AEM autores definir y personalizar los recursos de experiencia que se presentarán a los usuarios del sitio web.
-seo-description: AEM mejoras del visor de medios dinámicos permiten a AEM autores definir y personalizar los recursos de experiencia que se presentarán a los usuarios del sitio web.
+title: Información sobre Asset Viewer con AEM Dynamic Media
+seo-title: Información sobre Asset Viewer con AEM Dynamic Media
+description: AEM mejoras en el visor de Dynamic Media permiten a AEM autores definir y personalizar los recursos de experiencia que se presentarán a los usuarios del sitio web.
+seo-description: AEM mejoras en el visor de Dynamic Media permiten a AEM autores definir y personalizar los recursos de experiencia que se presentarán a los usuarios del sitio web.
 uuid: 5762c0a2-4371-4719-8400-849c7a11926d
 discoiquuid: a0be2cd0-4fdb-431f-a8c7-e4620b8b129b
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 # Información sobre Asset Viewer con AEM Dynamic Media{#understanding-the-asset-viewer-with-aem-dynamic-media}
 
-AEM mejoras del visor de medios dinámicos permiten a AEM autores definir y personalizar los recursos de experiencia que se presentarán a los usuarios del sitio web.
+AEM mejoras en el visor de Dynamic Media permiten a AEM autores definir y personalizar los recursos de experiencia que se presentarán a los usuarios del sitio web.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17783/?quality=9&learn=on)
 
