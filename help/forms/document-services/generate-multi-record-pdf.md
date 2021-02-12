@@ -140,5 +140,5 @@ Para probar esta capacidad en el servidor, siga las instrucciones siguientes:
 * Descargue el archivo zip creado. Este archivo zip contiene los archivos pdf generados por el servicio de salida.
 
 >[!NOTE]
->Existen varias formas de activar esta capacidad. En este ejemplo hemos utilizado una interfaz web para soltar la plantilla y el archivo de datos para demostrar la capacidad.
+>Existen varias formas de déclencheur de esta capacidad. En este ejemplo hemos utilizado una interfaz web para soltar la plantilla y el archivo de datos para demostrar la capacidad.
 
