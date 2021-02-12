@@ -29,7 +29,7 @@ Obtenga información sobre cómo crear y probar una Actividad de Adobe Target co
 Para crear Actividades de Adobe Target mediante Ofertas de fragmentos de experiencia, se debe completar la siguiente configuración:
 
 1. [Añadir Adobe Target a su sitio Web AEM](./add-target-launch-extension.md)
-1. [Activar una llamada de Adobe Target desde el lanzamiento](./load-and-fire-target.md)
+1. [Déclencheur de una llamada de Adobe Target desde Launch](./load-and-fire-target.md)
 1. [Integración del servicio AEM Author con Adobe Target](./setup-aem-target-cloud-service.md)
 1. [Exportar fragmentos de experiencia AEM a Adobe Target](./export-experience-fragment-target.md)
 
