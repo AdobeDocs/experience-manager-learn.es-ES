@@ -74,7 +74,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 
 Para agregar una imagen al formulario móvil y mostrarla en el PDF, hemos utilizado lo siguiente
 
-Plantilla XDP: en la plantilla xdp hemos añadido un campo de imagen y un botón denominado btnAddImage. El siguiente código controla el evento de clics de btnAddImage en nuestro perfil personalizado. Como puede ver, activamos el evento de clic del archivo1. No se necesita código en xdp para llevar a cabo este caso de uso
+Plantilla XDP: en la plantilla xdp hemos añadido un campo de imagen y un botón denominado btnAddImage. El siguiente código controla el evento de clics de btnAddImage en nuestro perfil personalizado. Como puede ver el déclencheur del archivo1 haga clic en evento. No se necesita código en xdp para llevar a cabo este caso de uso
 
 ```javascript
 $(".btnAddImage").click(function(){
@@ -84,7 +84,7 @@ $("#file1").click();
 });
 ```
 
-[Perfil](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html#CreatingCustomProfiles) personalizado. El uso de perfil personalizado facilita la manipulación de objetos DOM HTML del formulario móvil. Se agrega un elemento de archivo oculto al archivo HTML.jsp. Cuando el usuario hace clic en &quot;Añadir la foto&quot; activamos el evento de clic del elemento de archivo. Esto permite al usuario examinar y seleccionar la fotografía que desea adjuntar. A continuación, utilizamos el objeto FileReader de javascript para obtener la cadena codificada base64 de la imagen. La cadena de imagen base64 se almacena en el campo de texto del formulario. Cuando se envía el formulario, se extrae este valor y se inserta en el elemento img del XML. Este XML se utiliza para combinar con el xdp para generar el PDF final.
+[Perfil](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html#CreatingCustomProfiles) personalizado. El uso de perfil personalizado facilita la manipulación de objetos DOM HTML del formulario móvil. Se agrega un elemento de archivo oculto al archivo HTML.jsp. Cuando el usuario hace clic en &quot;Añadir la foto&quot;, se déclencheur el evento de clic del elemento de archivo. Esto permite al usuario examinar y seleccionar la fotografía que desea adjuntar. A continuación, utilizamos el objeto FileReader de javascript para obtener la cadena codificada base64 de la imagen. La cadena de imagen base64 se almacena en el campo de texto del formulario. Cuando se envía el formulario, se extrae este valor y se inserta en el elemento img del XML. Este XML se utiliza para combinar con el xdp para generar el PDF final.
 
 El perfil personalizado utilizado para este artículo se ha puesto a su disposición como parte de los recursos de este artículo.
 
@@ -106,12 +106,12 @@ function readURL(input) {
         }
 ```
 
-El código anterior se ejecuta cuando activamos el evento de clic del elemento de archivo. Línea 5 extraemos el contenido del archivo cargado como una cadena base64 y lo almacenamos en el campo de texto. Este valor se extrae cuando el formulario se envía a nuestro servlet.
+El código anterior se ejecuta cuando se déclencheur el evento de clic del elemento de archivo. Línea 5 extraemos el contenido del archivo cargado como una cadena base64 y lo almacenamos en el campo de texto. Este valor se extrae cuando el formulario se envía a nuestro servlet.
 
 Luego configuramos las siguientes propiedades (avanzadas) de nuestro formulario móvil en AEM
 
 * Enviar URL: http://localhost:4502/bin/handlemobileformsubmission. Este es nuestro servlet que combinará los datos enviados con la plantilla xdp
-* PERFIL de procesamiento HTML: asegúrese de seleccionar &quot;AddImageToMobileForm&quot;. Esto activará el código para agregar una imagen al formulario.
+* PERFIL de procesamiento HTML: asegúrese de seleccionar &quot;AddImageToMobileForm&quot;. Esto déclencheur el código para agregar una imagen al formulario.
 
 Para probar esta capacidad en su propio servidor, siga los pasos siguientes:
 
