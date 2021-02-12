@@ -127,7 +127,7 @@ La capa de datos del cliente de Adobe es una capa de datos controlada por **even
 
    El fragmento de código anterior agregará un detector de eventos [insertando una función](https://github.com/adobe/adobe-client-data-layer/wiki#pushing-a-function) en la capa de datos. Cuando se activa el evento `cmp:click`, se llama a la función `componentClickedHandler`. En esta función se agregan algunas comprobaciones de integridad y se construye un nuevo objeto `event` con el estado más reciente [de la capa de datos](https://github.com/adobe/adobe-client-data-layer/wiki#getstate) para el componente que activó el evento.
 
-   Después de llamar a `trigger(event)`. `trigger()` es un nombre reservado en Launch y &quot;activará&quot; la regla de inicio. Pasamos el objeto `event` como parámetro que, a su vez, será expuesto por otro nombre reservado en Launch denominado `event`. Los elementos de datos de Launch ahora pueden hacer referencia a varias propiedades como, por ejemplo: `event.component['someKey']`.
+   Después de llamar a `trigger(event)`. `trigger()` es un nombre reservado en Launch y &quot;déclencheur&quot; de la regla Launch. Pasamos el objeto `event` como parámetro que, a su vez, será expuesto por otro nombre reservado en Launch denominado `event`. Los elementos de datos de Launch ahora pueden hacer referencia a varias propiedades como, por ejemplo: `event.component['someKey']`.
 
 1. Guarde los cambios.
 1. A continuación, en **Acciones** haga clic en **Añadir** para abrir el asistente para **Configuración de acción**.
@@ -235,9 +235,9 @@ A continuación, actualice la regla **Llamada a acción: clic** para asegurarse 
 
 1. Guarde los cambios.
 
-## Establecer variables de Analytics y activar la señalización de vínculo de seguimiento
+## Establecer variables de Analytics y señalización de vínculo de seguimiento de déclencheur
 
-Actualmente, la regla **Llamada a acción: clic** simplemente genera una sentencia de consola. A continuación, utilice los elementos de datos y la extensión de Analytics para establecer las variables de Analytics como una **acción**. También estableceremos una acción adicional para activar el **vínculo de seguimiento** y enviar los datos recopilados a Adobe Analytics.
+Actualmente, la regla **Llamada a acción: clic** simplemente genera una sentencia de consola. A continuación, utilice los elementos de datos y la extensión de Analytics para establecer las variables de Analytics como una **acción**. También estableceremos una acción adicional para el déclencheur del **vínculo de seguimiento** y enviaremos los datos recopilados a Adobe Analytics.
 
 1. En la **CTA Clic** regla **eliminar** la acción **Core - Custom Code** (las sentencias de la consola):
 
@@ -306,7 +306,7 @@ Ahora que la regla **Llamada a acción: clic** envía la señalización de Analy
 
 1. Observe en la consola del explorador el mensaje *&quot;Código personalizado&quot; de la regla &quot;Llamada a acción: clic&quot; no se cumplió*.
 
-   Esto se debe a que el componente Navegación activa un evento `cmp:click` *pero* debido a nuestra comprobación del tipo de recurso, no se realiza ninguna acción.
+   Esto se debe a que el componente Navegación no déclencheur un evento `cmp:click` *pero* debido a nuestra comprobación del tipo de recurso, no se realiza ninguna acción.
 
    >[!NOTE]
    >
