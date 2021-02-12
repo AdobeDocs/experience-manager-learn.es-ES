@@ -271,7 +271,7 @@ Invoque al trabajador de AEM creando un nuevo servicio de Perfil de procesamient
       + Toque __Añadir parámetro__
          + Clave: `colorFamily`
          + Value: `pantone`
-            + Valores admitidos: `basic`, `hex`, `html`, `ntc`, `pantone`, `roygbiv`, &lt;a5/>
+            + Valores admitidos: `basic`, `hex`, `html`, `ntc`, `pantone`, `roygbiv`, 
    + __Tipos MIME__
       + __Incluye:__ `image/jpeg`,  `image/png`,  `image/gif`,  `image/svg`
          + Estos son los únicos tipos MIME admitidos por los módulos npm de terceros utilizados para derivar los colores.
