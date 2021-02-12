@@ -159,7 +159,7 @@ El objetivo de este tutorial es ampliar la aplicación de Historial We.Retail co
 
 SPA iteraciones de desarrollo se producen independientemente del AEM. Cuando el SPA está listo para ser desplegado en AEM, se dan los siguientes pasos de alto nivel (como se ilustra más arriba).
 
-1. Se invoca la compilación del proyecto AEM, que a su vez desencadena una compilación del proyecto SPA. El Historial We.Retail utiliza el [**complemento front-maven-plugin**](https://github.com/eirslett/frontend-maven-plugin).
+1. Se invoca la construcción del proyecto AEM, que a su vez déclencheur una construcción del proyecto SPA. El Historial We.Retail utiliza el [**complemento front-maven-plugin**](https://github.com/eirslett/frontend-maven-plugin).
 1. El [**aem-clientlib-generator**](https://www.npmjs.com/package/aem-clientlib-generator) del proyecto de SPA incrusta el SPA compilado como una biblioteca de clientes AEM en el proyecto AEM.
 1. El proyecto de AEM genera un paquete de AEM, incluyendo el SPA compilado, además de cualquier otro código AEM de soporte.
 
