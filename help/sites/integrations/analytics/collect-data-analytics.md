@@ -26,7 +26,7 @@ Aprenda a utilizar las funciones integradas de la [capa de datos del cliente de 
 
 ![Seguimiento de datos de página](assets/collect-data-analytics/analytics-page-data-tracking.png)
 
-En este tutorial, activará una regla de inicio basada en un evento de la capa de datos del cliente de Adobe, agregará condiciones para cuándo se debe activar la regla y enviará a Adobe Analytics los **nombres de página** y **plantillas de página** de una página de AEM.
+En este tutorial, realizará el déclencheur de una regla de inicio basada en un evento de la capa de datos del cliente de Adobe, agregará las condiciones para cuándo se debe activar la regla y enviará el **Nombre de página** y **Plantilla de página** de una página de AEM a Adobe Analytics.
 
 ### Objetivos {#objective}
 
@@ -109,7 +109,7 @@ El [proyecto de referencia WKND](https://github.com/adobe/aem-guides-wknd) se ha
 
 ## Crear una regla de página cargada
 
-La capa de datos del cliente de Adobe es una capa de datos controlada por **evento**. Cuando se carga la capa de datos AEM **Page**, se desencadena un evento `cmp:show`. Cree una regla que se activará según el evento `cmp:show`.
+La capa de datos del cliente de Adobe es una capa de datos controlada por **evento**. Cuando se carga la capa de datos AEM **Page**, se déclencheur un evento `cmp:show`. Cree una regla que se activará según el evento `cmp:show`.
 
 1. Vaya al Experience Platform Launch y a la propiedad Web integrada con el sitio AEM.
 1. Vaya a la sección **Reglas** en la interfaz de usuario de Launch y, a continuación, haga clic en **Crear nueva regla**.
@@ -155,7 +155,7 @@ La capa de datos del cliente de Adobe es una capa de datos controlada por **even
 
    El fragmento de código anterior agregará un detector de eventos [insertando una función](https://github.com/adobe/adobe-client-data-layer/wiki#pushing-a-function) en la capa de datos. Cuando se activa el evento `cmp:show`, se llama a la función `pageShownEventHandler`. En esta función se agregan algunas comprobaciones de integridad y se construye un nuevo `event` con el estado más reciente [de la capa de datos](https://github.com/adobe/adobe-client-data-layer/wiki#getstate) para el componente que activó el evento.
 
-   Después de llamar a `trigger(event)`. `trigger()` es un nombre reservado en Launch y &quot;activará&quot; la regla de inicio. Pasamos el objeto `event` como parámetro que, a su vez, será expuesto por otro nombre reservado en Launch denominado `event`. Los elementos de datos de Launch ahora pueden hacer referencia a varias propiedades como, por ejemplo: `event.component['someKey']`.
+   Después de llamar a `trigger(event)`. `trigger()` es un nombre reservado en Launch y &quot;déclencheur&quot; de la regla Launch. Pasamos el objeto `event` como parámetro que, a su vez, será expuesto por otro nombre reservado en Launch denominado `event`. Los elementos de datos de Launch ahora pueden hacer referencia a varias propiedades como, por ejemplo: `event.component['someKey']`.
 
 1. Guarde los cambios.
 1. A continuación, en **Acciones** haga clic en **Añadir** para abrir el asistente para **Configuración de acción**.
@@ -299,9 +299,9 @@ A continuación, actualice la regla **Página cargada** para utilizar el element
 
 1. Guarde los cambios.
 
-## Establecer variables de Analytics y activar la señalización de Vista de página
+## Establecer variables de Analytics y señalización de Vista de página de déclencheur
 
-Actualmente, la regla **Página cargada** simplemente genera una sentencia de consola. A continuación, utilice los elementos de datos y la extensión de Analytics para establecer las variables de Analytics como una **acción** en la regla **Página cargada**. También configuraremos una acción adicional para activar la **señalización de Vista de página** y enviar los datos recopilados a Adobe Analytics.
+Actualmente, la regla **Página cargada** simplemente genera una sentencia de consola. A continuación, utilice los elementos de datos y la extensión de Analytics para establecer las variables de Analytics como una **acción** en la regla **Página cargada**. También configuraremos una acción adicional para el déclencheur de la **señalización de Vista de página** y enviaremos los datos recopilados a Adobe Analytics.
 
 1. En la regla **Página cargada** **eliminar** la acción **Core - Custom Code** (las sentencias de la consola):
 
@@ -363,7 +363,7 @@ Ahora que la regla **Página cargada** envía la señalización de Analytics, de
 
    ![Condición no cumplida](assets/collect-data-analytics/condition-not-met.png)
 
-   Esto se debe a que el Carrusel activa un evento `cmp:show` *pero* debido a la comprobación del **Tipo de recurso de componente**, no se activa ningún evento.
+   Esto se debe a que el Carrusel déclencheur un evento `cmp:show` *pero* debido a la comprobación del **Tipo de recurso de componente**, no se activa ningún evento.
 
    >[!NOTE]
    >
