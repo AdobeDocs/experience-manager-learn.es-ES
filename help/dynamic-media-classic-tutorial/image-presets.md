@@ -20,7 +20,7 @@ ht-degree: 1%
 
 Un ajuste preestablecido de imagen es esencialmente una fórmula que contiene todos los ajustes necesarios para crear una imagen con un tamaño, formato, calidad y enfoque específicos. Los ajustes preestablecidos de imagen son un componente clave del tamaño dinámico.
 
-Si observa las direcciones URL de prácticamente cualquier cliente de Dynamic Media Classic, probablemente verá un ajuste preestablecido de imagen en uso. Busque $name$ al final de la dirección URL (con cualquier palabra o palabra sustituida por nombre).
+Si observa las direcciones URL de casi cualquier cliente de Dynamic Media Classic, probablemente verá un ajuste preestablecido de imagen en uso. Busque $name$ al final de la dirección URL (con cualquier palabra o palabra sustituida por nombre).
 
 Los ajustes preestablecidos de imagen abrevian la URL, por lo que en lugar de escribir varias instrucciones de servicio de imágenes por solicitud, puede escribir un solo ajuste preestablecido de imagen. Por ejemplo, estas dos direcciones URL producen la misma imagen JPEG de 300 x 300 con enfoque, pero la segunda utiliza un ajuste preestablecido de imagen:
 
