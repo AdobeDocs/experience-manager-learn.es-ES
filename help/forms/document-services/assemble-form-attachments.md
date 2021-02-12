@@ -28,7 +28,7 @@ Al enviar el formulario, cree los anexos del formulario para generar un PDF. Pue
 
 Cree un componente OSGi que implemente la [com.adobe.granite.workflow.exec.WorkflowProcess interfaz](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowProcess.html). El código de este componente puede asociarse con el componente de paso de proceso del flujo de trabajo de AEM. El método execute de la interfaz com.adobe.granite.workflow.exec.WorkflowProcess se implementa en este componente.
 
-Cuando se envía un formulario adaptable para activar un flujo de trabajo AEM, los datos enviados se almacenan en el archivo especificado en la carpeta de carga útil. Por ejemplo, este es el archivo de datos enviado. Tenemos que reunir los datos adjuntos especificados en la etiqueta de identificación y de declaración de billetes.
+Cuando se envía un formulario adaptable a déclencheur y un flujo de trabajo AEM, los datos enviados se almacenan en el archivo especificado en la carpeta de carga útil. Por ejemplo, este es el archivo de datos enviado. Tenemos que reunir los datos adjuntos especificados en la etiqueta de identificación y de declaración de billetes.
 ![submit-data](assets/submitted-data.JPG).
 
 ### Obtener los nombres de las etiquetas
@@ -141,7 +141,7 @@ A continuación se muestra la estructura de la carpeta de carga útil después d
 * Implementar y inicio del paquete mediante la [consola web](http://localhost:4502/system/console/bundles)
 * Apunta a tu explorador para [EnsamblarFormulario de datos adjuntos](http://localhost:4502/content/dam/formsanddocuments/assembleattachments/jcr:content?wcmmode=disabled)
 * Añadir un archivo adjunto en el Documento de ID y un par de documentos en pdf en la sección de extractos bancarios
-* Enviar el formulario para activar el flujo de trabajo
+* Enviar el formulario para déclencheur del flujo de trabajo
 * Consulte la carpeta [payload del flujo de trabajo en crx](http://localhost:4502/crx/de/index.jsp#/var/fd/dashboard/payload) para ver el PDF ensamblado
 
 >[!NOTE]
