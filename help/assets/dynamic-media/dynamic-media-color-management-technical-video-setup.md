@@ -1,8 +1,8 @@
 ---
-title: Explicación de la administración de color con medios dinámicos AEM
-seo-title: Explicación de la administración de color con medios dinámicos AEM
-description: En este vídeo analizamos la administración dinámica de color de los medios y cómo se puede utilizar para proporcionar funciones de previsualización de corrección de color en AEM Assets.
-seo-description: En este vídeo analizamos la administración dinámica de color de los medios y cómo se puede utilizar para proporcionar funciones de previsualización de corrección de color en AEM Assets.
+title: Explicación de la administración de color con AEM Dynamic Media
+seo-title: Explicación de la administración de color con AEM Dynamic Media
+description: En este vídeo analizamos la administración de color de Dynamic Media y cómo se puede utilizar para proporcionar funciones de previsualización de corrección de color en AEM Assets.
+seo-description: En este vídeo analizamos la administración de color de Dynamic Media y cómo se puede utilizar para proporcionar funciones de previsualización de corrección de color en AEM Assets.
 uuid: dc14d067-11a2-4662-acfd-f9f6f1d738ee
 discoiquuid: b2b9ccc9-96b5-4bea-9995-2e6b353c469d
 sub-product: Dynamic-media
@@ -21,9 +21,9 @@ ht-degree: 13%
 ---
 
 
-# Explicación de la administración de color con medios dinámicos AEM{#understanding-color-management-with-aem-dynamic-media}
+# Explicación de la administración de color con AEM Dynamic Media{#understanding-color-management-with-aem-dynamic-media}
 
-En este vídeo analizamos la administración dinámica de color de los medios y cómo se puede utilizar para proporcionar funciones de previsualización de corrección de color en AEM Assets.
+En este vídeo analizamos la administración de color de Dynamic Media y cómo se puede utilizar para proporcionar funciones de previsualización de corrección de color en AEM Assets.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16792/?quality=9&learn=on)
 
@@ -130,4 +130,4 @@ A continuación se muestra la plantilla XML para el nodo de configuración de Ge
 
 ## Recursos adicionales{#additional-resources}
 
-* [Configuración de la administración dinámica de color de medios](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dynamic.html#ConfiguringDynamicMediaColorManagement)
+* [Configuración de la administración de color de Dynamic Media](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dynamic.html#ConfiguringDynamicMediaColorManagement)
