@@ -1,5 +1,5 @@
 ---
-title: Configuración del formulario adaptable para activar AEM flujo de trabajo
+title: Configuración del flujo de trabajo de formulario adaptable a déclencheur AEM
 description: Configurar las opciones de carga útil al activar AEM flujo de trabajo al enviar el formulario
 sub-product: formularios
 feature: workflow
@@ -19,7 +19,7 @@ ht-degree: 0%
 ---
 
 
-# Configuración del formulario adaptable para activar AEM flujo de trabajo
+# Configuración del flujo de trabajo de formulario adaptable a déclencheur AEM
 
 ## Requisitos previos
 
@@ -38,7 +38,7 @@ El formulario de ejemplo utilizado en este flujo de trabajo se basa en una plant
 * Haga clic en Crear -> Carga de archivo
 * El formulario adaptable de ejemplo se colocará en una carpeta denominada [Aplicación Forms](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments/applicationforms)
 
-En el siguiente vídeo se explica cómo configurar un formulario adaptable para activar un flujo de trabajo AEM
+En el siguiente vídeo se explica cómo configurar un formulario adaptable para el déclencheur de un flujo de trabajo AEM
 >[!VIDEO](https://video.tv.adobe.com/v/40258/?quality=9&learn=on)
 
 El siguiente vídeo muestra la carga útil del flujo de trabajo y otros detalles en el repositorio crx
