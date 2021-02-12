@@ -38,7 +38,7 @@ Antes de usar el paso Enviar correo electrónico, asegúrese de configurar el se
 
 Como parte de los recursos asociados con este artículo, obtendrá lo siguiente
 
-1. Formulario adaptable que activará el flujo de trabajo al enviar
+1. Formulario adaptable que déclencheur el flujo de trabajo en el envío
 1. Flujo de trabajo de muestra que enviará un correo electrónico con el DOR como archivo adjunto
 1. Paquete OSGi que crea las propiedades de metadatos
 
