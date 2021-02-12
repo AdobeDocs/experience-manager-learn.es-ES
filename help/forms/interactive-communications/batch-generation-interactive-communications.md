@@ -62,4 +62,4 @@ La siguiente captura de pantalla muestra los parámetros y sus valores
 * Importar [controlador de envío personalizado](assets/BatchAPICustomSubmit.zip) mediante [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
 * Importar [Formulario adaptable](assets/BatchGenerationAPIAF.zip) mediante la [interfaz de Forms y Documento](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Implementar y inicio [paquete OSGI personalizado](assets/batchgenerationapi.batchgenerationapi.core-1.0-SNAPSHOT.jar) mediante [consola web Felix](http://localhost:4502/system/console/bundles)
-* [Activar generación de lotes enviando el formulario](http://localhost:4502/content/dam/formsanddocuments/batchgenerationapi/jcr:content?wcmmode=disabled)
+* [Generación de lotes de déclencheur enviando el formulario](http://localhost:4502/content/dam/formsanddocuments/batchgenerationapi/jcr:content?wcmmode=disabled)
