@@ -1,8 +1,8 @@
 ---
-title: Activar AEM flujo de trabajo en el envío de formulario HTML5
-seo-title: Activar flujo de trabajo AEM en envío de formulario HTML5
-description: Seguir rellenando formularios móviles en modo sin conexión y enviar formularios móviles para activar AEM flujo de trabajo
-seo-description: Seguir rellenando formularios móviles en modo sin conexión y enviar formularios móviles para activar AEM flujo de trabajo
+title: Flujo de trabajo de déclencheur AEM en el envío de formulario HTML5
+seo-title: Flujo de trabajo de déclencheur AEM en envío de formulario HTML5
+description: Siga rellenando el formulario móvil en modo sin conexión y envíe el formulario móvil al flujo de trabajo AEM déclencheur
+seo-description: Siga rellenando el formulario móvil en modo sin conexión y envíe el formulario móvil al flujo de trabajo AEM déclencheur
 feature: mobile-forms
 topics: development
 audience: developer
@@ -147,6 +147,6 @@ public Document mobileFormToInteractivePdf(Document xmlData,String path) {
 ```
 
 Para vista la capacidad de descargar PDF interactivos desde un formulario móvil parcialmente completado, [haga clic aquí](https://forms.enablementadobe.com/content/dam/formsanddocuments/schengen.xdp/jcr:content).
-Una vez descargado el PDF, el siguiente paso es enviar el PDF para activar un flujo de trabajo AEM. Este flujo de trabajo combinará los datos del PDF enviado y generará archivos PDF no interactivos para su revisión.
+Una vez descargado el PDF, el siguiente paso es enviar el PDF a déclencheur y un flujo de trabajo AEM. Este flujo de trabajo combinará los datos del PDF enviado y generará archivos PDF no interactivos para su revisión.
 
 El perfil personalizado creado para este caso de uso está disponible como parte de este tutorial.
