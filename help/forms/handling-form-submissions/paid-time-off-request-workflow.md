@@ -29,7 +29,7 @@ En este artículo analizaremos un flujo de trabajo sencillo que se utiliza para 
 
 Para cumplir con el requisito anterior, se utiliza un campo oculto denominado **primer paso** en el formulario y su valor predeterminado se establece en Sí.Cuando se envía el formulario, el primer paso del flujo de trabajo establece el valor de initialstep en No. El formulario tiene reglas comerciales para ocultar y mostrar las secciones correspondientes en función del valor del paso inicial.
 
-**Configurar formulario para activar AEM flujo de trabajo**
+**Configurar el flujo de trabajo de formulario a Déclencheur AEM**
 
 >[!VIDEO](https://video.tv.adobe.com/v/28406?quality=9&learn=on)
 
