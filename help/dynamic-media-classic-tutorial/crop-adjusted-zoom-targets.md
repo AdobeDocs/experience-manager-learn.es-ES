@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Recorte, imágenes ajustadas y Destinatarios de zoom {#crop-adjusted-zoom-targets}
 
-Una de las principales ventajas del concepto de imagen principal de Dynamic Media Classic es que puede reutilizar el recurso de imagen para muchos usos. Tradicionalmente, tendría que crear versiones separadas recortadas de cada imagen para mostrar detalles o muestras. Al utilizar Dynamic Media Classic, puede realizar las mismas tareas en su único maestro y guardar las versiones recortadas como nuevos archivos físicos o como derivados virtuales que no tienen espacio en almacenamiento.
+Una de las principales ventajas del concepto de imagen principal de Dynamic Media Classic es que puede reutilizar el recurso de imagen para muchos usos. Tradicionalmente, tendría que crear versiones separadas recortadas de cada imagen para mostrar detalles o muestras. Al utilizar Dynamic Media Classic, puede realizar las mismas tareas en el único maestro y guardar las versiones recortadas como nuevos archivos físicos o como derivados virtuales que no necesitan espacio de almacenamiento.
 
 Al final de esta sección del tutorial, sabrá cómo:
 
@@ -28,7 +28,7 @@ Al final de esta sección del tutorial, sabrá cómo:
 
 ## Recortar
 
-Dynamic Media Classic cuenta con algunas herramientas de edición de imágenes que están disponibles en la interfaz de usuario, incluida la herramienta Recortar. Es posible que desee recortar la imagen principal dentro de Dynamic Media Classic por varios motivos. Por ejemplo:
+Dynamic Media Classic cuenta con algunas herramientas de edición de imágenes que están disponibles en la interfaz de usuario, incluida la herramienta Recortar. Es posible que desee recortar la imagen principal dentro de Dynamic Media Classic por varias razones. Por ejemplo:
 
 - No tiene acceso al archivo original. Desea mostrar la imagen con una proporción de aspecto o recorte diferente, pero no tiene el archivo original en el equipo o está trabajando desde casa. En este caso, puede ir a Dynamic Media Classic, buscar la imagen, recortarla y guardarla, o guardarla como una nueva versión.
 - Para eliminar el exceso de espacio en blanco. La imagen fue fotografiada con demasiado espacio en blanco, lo que hace que el producto parezca pequeño. Desea que las imágenes en miniatura rellenen el lienzo todo lo posible.
@@ -48,9 +48,9 @@ Puede acceder a la herramienta Recortar en Dynamic Media Classic desde la págin
 
 ### _Recorte manual_
 
-Al guardar una versión recortada manualmente, parece que la imagen se recorta de forma permanente; En realidad, Dynamic Media Classic está ocultando los píxeles agregando un modificador de URL interno para recortar la imagen. Cuando publique, todos tendrán la impresión de que la imagen se recorta, aunque podrá volver al Editor de recorte y quitarlo posteriormente.
+Al guardar una versión recortada manualmente, parece que la imagen se recorta de forma permanente; Dynamic Media Classic oculta los píxeles agregando un modificador de URL interno para recortar la imagen. Cuando publique, todos tendrán la impresión de que la imagen se recorta, aunque podrá volver al Editor de recorte y quitarlo posteriormente.
 
-A continuación, puede elegir si desea guardar como imagen principal nueva o como Vista adicional del patrón. Un nuevo patrón es un nuevo archivo físico (como un TIFF o JPEG) que ocupa espacio de almacenamiento. Una vista adicional es una imagen virtual que no ocupa espacio en el servidor. No recomendamos que elija Reemplazar original, ya que esto sobrescribirá al patrón y hará que el recorte sea permanente. Si guarda como un nuevo maestro o como una vista adicional, debe elegir un nuevo ID de recurso. Al igual que otros ID de recurso, este debe ser un nombre único en Dynamic Media Classic.
+A continuación, puede elegir si desea guardar como imagen principal nueva o como Vista adicional del patrón. Un nuevo patrón es un nuevo archivo físico (como un TIFF o JPEG) que ocupa espacio de almacenamiento. Una vista adicional es una imagen virtual que no ocupa espacio en el servidor. No recomendamos que elija Reemplazar original, ya que esto sobrescribirá al patrón y hará que el recorte sea permanente. Si guarda como un nuevo maestro o como una vista adicional, debe elegir un nuevo ID de recurso. Al igual que otros ID de recursos, este debe ser un nombre único en Dynamic Media Classic.
 
 ### _Recortar recorte_
 
@@ -80,7 +80,7 @@ Dynamic Media Classic recordará esta opción para la siguiente carga. Si bien e
 
 ### Recorte por dirección URL
 
-Aunque no es obvio en Dynamic Media Classic, también puede recortar únicamente a través de la URL (o incluso agregar el recorte a un ajuste preestablecido de imagen).
+Aunque no es obvio en Dynamic Media Classic, también se puede recortar únicamente a través de la URL (o incluso agregar el recorte a un ajuste preestablecido de imagen).
 
 Siempre que utilice la herramienta Recortar, verá los valores de URL en el campo de la parte inferior. Puede tomar esos valores y aplicarlos directamente a una imagen como modificadores de URL.
 
@@ -131,7 +131,7 @@ Los Destinatarios de zoom también se encuentran en el menú **Editar** y en la 
 
 Dado que los Destinatarios de zoom son esencialmente una característica de comercialización y requieren conocer los puntos de venta de un producto, normalmente los crearía una persona del equipo de mercadotecnia o producto de una compañía.
 
-El proceso es muy fácil — haga clic en la función, asígnele un nombre descriptivo y guárdelo. Los destinatarios se pueden copiar de una imagen a otra si son similares, pero el proceso es manual. En Dynamic Media Classic no hay forma de automatizar la creación de Destinatarios de zoom, ya que cada imagen es diferente y tiene diferentes funciones.
+El proceso es muy fácil — haga clic en la función, asígnele un nombre descriptivo y guárdelo. Los destinatarios se pueden copiar de una imagen a otra si son similares, pero el proceso es manual. Dynamic Media Classic no permite automatizar la creación de Destinatarios de zoom, ya que cada imagen es diferente y tiene diferentes funciones.
 
 Otro factor a la hora de decidir si se utilizan Destinatarios de zoom es la elección del visor. No todos los tipos de visor pueden mostrar Destinatarios de zoom (por ejemplo, el visor de salida rápida no los admite).
 
@@ -155,7 +155,7 @@ Este es el flujo de trabajo para crear destinatarios en Dynamic Media Classic.
 6. Mientras el destinatario está seleccionado, el cuadro tendrá líneas discontinuas verdes alrededor de él, y puede cambiar su tamaño y moverlo. Arrastre las esquinas para cambiar el tamaño o arrastre el cuadro de destinatario para moverlo.
 
    - Esto cargará la imagen dentro del visor de zoom personalizado predeterminado. Asegúrese de que el ajuste preestablecido de visor admite Destinatarios de zoom — en general, todos los ajustes preestablecidos estándar que tienen la palabra &quot;-Guided&quot; se han diseñado para utilizarse con Destinatarios de zoom. Para utilizar los destinatarios, coloque el puntero sobre la miniatura del destinatario (o icono de zona interactiva) para ver la etiqueta y haga clic en ella para ver cómo el visor se acerca a esa función.
-   - Al igual que cualquier otro trabajo que realice en Dynamic Media Classic, debe publicar sus Destinatarios de zoom para que estén activos en la web. Si ya está utilizando un visor que admite destinatarios, aparecerán inmediatamente (una vez que se borre la caché). Sin embargo, si no utiliza un visor con Destinatario de zoom habilitado, permanecerán ocultos.
+   - Al igual que cualquier otro trabajo que realice en Dynamic Media Classic, debe publicar para que los Destinatarios de zoom estén activos en la web. Si ya está utilizando un visor que admite destinatarios, aparecerán inmediatamente (una vez que se borre la caché). Sin embargo, si no utiliza un visor con Destinatario de zoom habilitado, permanecerán ocultos.
 
       ![image](assets/crop-adjusted-zoom-targets/zoom-target-green-box.jpg)
 
