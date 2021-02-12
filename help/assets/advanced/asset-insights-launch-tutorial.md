@@ -163,7 +163,7 @@ document.querySelectorAll('[data-aem-asset-id]').forEach(function(element) {
 });
 ```
 
-* assetAnalytics.core.assetLoaded() : se invoca al finalizar la carga de página y activa Impresiones de recursos para todas las imágenes rastreables
+* assetAnalytics.core.assetLoaded() : se invoca al finalizar la carga de página y es déclencheur Impresiones de recursos para todas las imágenes rastreables
 * Variable de Analytics que lleva la lista de recursos cargada: **contextData[&#39;c.a.assets.idList&#39;]**
 * assetAnalytics.core.assetClicks() : se invoca cuando el elemento DOM del recurso tiene una etiqueta delimitadora con un valor href válido. Cuando se hace clic en un recurso, se crea una cookie con el ID del recurso en el que se hace clic como su valor.**(Nombre de la cookie: a.assets.clickedid)**
 * Variable de Analytics que lleva la lista de recursos cargada: **contextData[&#39;c.a.assets.clickedid&#39;]**
