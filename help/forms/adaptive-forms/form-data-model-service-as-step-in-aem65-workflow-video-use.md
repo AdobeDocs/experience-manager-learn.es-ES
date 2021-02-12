@@ -36,7 +36,7 @@ Para probar esta capacidad en el servidor, siga las instrucciones siguientes
 
    * Modelo de flujo de trabajo que utiliza el paso FDM.
    * Modelo de datos de formulario que se utiliza en el paso FDM.
-   * Formulario adaptable para activar el flujo de trabajo al enviar.
+   * Formulario adaptable para el déclencheur del flujo de trabajo durante el envío.
 * Abra el [formularioDeAplicaciónHipoteca](http://localhost:4502/content/dam/formsanddocuments/loanapplication/jcr:content?wcmmode=disabled). Rellene los detalles y envíe. En el envío del formulario, se activa el [flujo de trabajo de solicitud de préstamo](http://http://localhost:4502/editor.html/conf/global/settings/workflow/models/LoanApplication2.html).
 
 ![ flujo de trabajo ](assets/invokefdm651.PNG).
