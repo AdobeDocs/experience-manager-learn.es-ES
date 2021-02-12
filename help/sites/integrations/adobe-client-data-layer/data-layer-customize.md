@@ -10,9 +10,9 @@ version: cloud-service
 kt: 6265
 thumbnail: KT-6265.jpg
 translation-type: tm+mt
-source-git-commit: aa48c94413f83e794c5d062daaac85c97b451b82
+source-git-commit: 46936876de355de9923f7a755aa6915a13cca354
 workflow-type: tm+mt
-source-wordcount: '2013'
+source-wordcount: '2027'
 ht-degree: 3%
 
 ---
@@ -112,6 +112,8 @@ Para introducir datos sobre el componente en la capa de datos, primero debemos a
 1. Añada las siguientes instrucciones de importación al principio del archivo:
 
    ```java
+   import java.util.HashMap;
+   import java.util.Map;
    import org.apache.sling.api.resource.Resource;
    import com.fasterxml.jackson.core.JsonProcessingException;
    import com.fasterxml.jackson.databind.ObjectMapper;
@@ -159,20 +161,9 @@ Para introducir datos sobre el componente en la capa de datos, primero debemos a
    }
    ```
 
-   En el método anterior se utiliza un nuevo `HashMap` para capturar las propiedades que queremos exponer como JSON. Observe que se utilizan métodos existentes como `getName()` y `getOccupations()`. `@type` representa el tipo de recurso único del componente, lo que permite a un cliente identificar fácilmente eventos y/o activadores según el tipo de componente.
+   En el método anterior se utiliza un nuevo `HashMap` para capturar las propiedades que queremos exponer como JSON. Observe que se utilizan métodos existentes como `getName()` y `getOccupations()`. `@type` representa el tipo de recurso único del componente, lo que permite a un cliente identificar fácilmente eventos y/o déclencheur según el tipo de componente.
 
    El `ObjectMapper` se utiliza para serializar las propiedades y devolver una cadena JSON. Esta cadena JSON se puede insertar en la capa de datos.
-
-1. Abra el archivo `package-info.java` en `core/src/main/java/com/adobe/aem/guides/wknd/core/models/package-info.java` y actualice la versión de `1.0` a `2.0`:
-
-   ```java
-   @Version("2.0")
-   package com.adobe.aem.guides.wknd.core.models;
-   
-   import org.osgi.annotation.versioning.Version;
-   ```
-
-   Dado que la interfaz `Byline.java` ha cambiado, se debe actualizar la versión del paquete Java.
 
 1. Abra una ventana de terminal. Cree e implemente sólo el módulo `core` con sus habilidades Maven:
 
@@ -194,13 +185,11 @@ Se utiliza un atributo de datos especial `data-cmp-data-layer` en cada component
 
 1. Actualice `byline.html` para incluir el atributo `data-cmp-data-layer`:
 
-   ```html
-    <div data-sly-use.byline="com.adobe.aem.guides.wknd.core.models.Byline"
+   ```diff
+     <div data-sly-use.byline="com.adobe.aem.guides.wknd.core.models.Byline"
        data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
        data-sly-test.hasContent="${!byline.empty}"
-       <!--/* Add the data-cmp-data-layer */-->
-       data-cmp-data-layer="${byline.data}"
-   
+   +   data-cmp-data-layer="${byline.data}"
        class="cmp-byline">
        ...
    ```
@@ -247,7 +236,7 @@ Se utiliza un atributo de datos especial `data-cmp-data-layer` en cada component
 
 ## Añadir un Evento de clics {#click-event}
 
-La capa de datos del cliente de Adobe está controlada por eventos y uno de los eventos más comunes para activar una acción es el evento `cmp:click`. Los componentes principales AEM facilitan el registro del componente con la ayuda del elemento de datos: `data-cmp-clickable`.
+La capa de datos del cliente de Adobe está controlada por eventos y uno de los eventos más comunes para el déclencheur de una acción es el evento `cmp:click`. Los componentes principales AEM facilitan el registro del componente con la ayuda del elemento de datos: `data-cmp-clickable`.
 
 Los elementos en los que se puede hacer clic suelen ser un botón de llamada a acción o un vínculo de navegación. Desafortunadamente, el componente Firma no tiene ninguno de estos pero lo registraremos de todas maneras, ya que esto podría ser común para otros componentes personalizados.
 
@@ -256,8 +245,11 @@ Los elementos en los que se puede hacer clic suelen ser un botón de llamada a a
 
 1. Actualice `byline.html` para incluir el atributo `data-cmp-clickable` en el elemento **name** de Byline:
 
-   ```html
-   <h2 class="cmp-byline__name" data-cmp-clickable>${byline.name}</h2>
+   ```diff
+     <h2 class="cmp-byline__name" 
+   +    data-cmp-clickable="${byline.data ? true : false}">
+        ${byline.name}
+     </h2>
    ```
 
 1. Abra un nuevo terminal. Cree e implemente sólo el módulo `ui.apps` con sus habilidades Maven:
@@ -289,7 +281,7 @@ Los elementos en los que se puede hacer clic suelen ser un botón de llamada a a
 
    ```javascript
    window.adobeDataLayer.push(function (dl) {
-        dl.addEventListener("cmp:show", bylineClickHandler);
+        dl.addEventListener("cmp:click", bylineClickHandler);
    });
    ```
 
@@ -305,7 +297,7 @@ Los elementos en los que se puede hacer clic suelen ser un botón de llamada a a
 
    Debe ver el mensaje de la consola `Byline Clicked!` y el nombre de la firma.
 
-   El evento `cmp:click` es el más fácil de conectar. Para componentes más complejos y para rastrear otros comportamientos, es posible agregar javascript personalizado para agregar y registrar nuevos eventos. Un ejemplo bueno es el componente Carrusel, que activa un evento `cmp:show` cada vez que se activa una diapositiva. Consulte el [código fuente para obtener más información](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/carousel/v1/carousel/clientlibs/site/js/carousel.js#L219).
+   El evento `cmp:click` es el más fácil de conectar. Para componentes más complejos y para rastrear otros comportamientos, es posible agregar javascript personalizado para agregar y registrar nuevos eventos. Un ejemplo bueno es el componente Carrusel, que déclencheur un evento `cmp:show` siempre que se alterne una diapositiva. Consulte el [código fuente para obtener más información](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/carousel/v1/carousel/clientlibs/site/js/carousel.js#L219).
 
 ## Utilizar la utilidad DataLayerBuilder {#data-layer-builder}
 
@@ -419,6 +411,13 @@ Existe una clase de utilidades, `DataLayerBuilder`, para realizar la mayor parte
    ```
 
    Observe que ahora hay un objeto `image` dentro de la entrada del componente `byline`. Esto tiene mucha más información sobre el recurso en DAM. También observe que el `@type` y el identificador único (en este caso `byline-136073cfcb`) se han llenado automáticamente, así como el `repo:modifyDate` que indica cuándo se modificó el componente.
+
+## Ejemplos adicionales {#additional-examples}
+
+1. Otro ejemplo de ampliación de la capa de datos se puede ver inspeccionando el componente `ImageList` en la base de código WKND:
+   * `ImageList.java` - Interfaz de Java en el  `core` módulo.
+   * `ImageListImpl.java` - Modelo Sling en el  `core` módulo.
+   * `image-list.html` - Plantilla HTL en el  `ui.apps` módulo.
 
    >[!NOTE]
    >
