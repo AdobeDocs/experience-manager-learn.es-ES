@@ -1,8 +1,8 @@
 ---
-title: Configuración del formulario adaptable para activar AEM flujo de trabajo
-seo-title: Configuración del formulario adaptable para activar AEM flujo de trabajo
-description: Explicación de las distintas opciones de configuración del formulario adaptable para activar AEM flujo de trabajo
-seo-description: Explicación de las distintas opciones de configuración del formulario adaptable para activar AEM flujo de trabajo
+title: Configuración del flujo de trabajo de formulario adaptable a déclencheur AEM
+seo-title: Configuración del flujo de trabajo de formulario adaptable a déclencheur AEM
+description: Explicación de las distintas opciones para configurar el flujo de trabajo de formulario adaptable a déclencheur AEM
+seo-description: Explicación de las distintas opciones para configurar el flujo de trabajo de formulario adaptable a déclencheur AEM
 sub-product: formularios
 feature: workflow
 topics: integrations
@@ -19,7 +19,7 @@ ht-degree: 0%
 ---
 
 
-# Configuración del formulario adaptable para activar AEM flujo de trabajo
+# Configuración del flujo de trabajo de formulario adaptable a déclencheur AEM
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/28316?quality=9&learn=on)
