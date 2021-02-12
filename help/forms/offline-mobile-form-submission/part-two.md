@@ -1,8 +1,8 @@
 ---
-title: Activar AEM flujo de trabajo en el envío de formulario HTML5
-seo-title: Activar flujo de trabajo AEM en envío de formulario HTML5
-description: Seguir rellenando formularios móviles en modo sin conexión y enviar formularios móviles para activar AEM flujo de trabajo
-seo-description: Seguir rellenando formularios móviles en modo sin conexión y enviar formularios móviles para activar AEM flujo de trabajo
+title: Flujo de trabajo de déclencheur AEM en el envío de formulario HTML5
+seo-title: Flujo de trabajo de déclencheur AEM en envío de formulario HTML5
+description: Siga rellenando el formulario móvil en modo sin conexión y envíe el formulario móvil al flujo de trabajo AEM déclencheur
+seo-description: Siga rellenando el formulario móvil en modo sin conexión y envíe el formulario móvil al flujo de trabajo AEM déclencheur
 feature: mobile-forms
 topics: development
 audience: developer
@@ -200,7 +200,7 @@ public class StartWorkflow extends SlingAllMethodsServlet {
 }
 ```
 
-Se configura un iniciador de flujo de trabajo de AEM para que se active cada vez que se crea un nuevo recurso de tipo `nt:file` en el nodo `/content/pdfsubmissions`. Este flujo de trabajo creará un PDF no interactivo o estático combinando los datos enviados con la plantilla xdp. A continuación, el PDF generado se asigna a un usuario para su revisión y aprobación.
+Un iniciador de flujo de trabajo de AEM se configura en déclencheur cada vez que se crea un nuevo recurso de tipo `nt:file` en el nodo `/content/pdfsubmissions`. Este flujo de trabajo creará un PDF no interactivo o estático combinando los datos enviados con la plantilla xdp. A continuación, el PDF generado se asigna a un usuario para su revisión y aprobación.
 
 Para almacenar los datos enviados en el nodo `/content/pdfsubmissions`, utilizamos el servicio OSGi `GetResolver` que nos permite guardar los datos enviados mediante el usuario del sistema `fd-service` que está disponible en cada instalación de AEM Forms.
 
