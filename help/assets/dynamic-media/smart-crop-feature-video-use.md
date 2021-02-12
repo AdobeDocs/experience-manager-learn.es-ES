@@ -29,14 +29,14 @@ Smart Crop utiliza Adobe Sensei para eliminar las tareas costosas y que consumen
 
 >[!NOTE]
 >
->Video supone que la instancia de AEM se está ejecutando en el modo de Dynamic Media S7. [Las instrucciones para configurar AEM con Dynamic Media se pueden encontrar aquí.](https://helpx.adobe.com/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
+>Video supone que la instancia de AEM se está ejecutando en el modo Dynamic Media S7. [Las instrucciones para configurar AEM con Dynamic Media se pueden encontrar aquí.](https://helpx.adobe.com/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
 
-## La función de recorte inteligente de Dynamic Media de Adobe Experience Manager incluye
+## La capacidad de recorte inteligente de Dynamic Media de Adobe Experience Manager incluye
 
 * Los administradores de recursos de AEM pueden crear fácilmente perfiles de imagen para el recorte inteligente en función del ancho y la altura del dispositivo.
 * El recorte inteligente se puede realizar para un recurso individual o para todos los recursos de una carpeta.
 * Se puede cambiar el tamaño del diseño de edición de recorte inteligente para mejorar la visibilidad.
-* El componente Dynamic Media de AEM Sites admite el recorte inteligente.
+* El componente Dynamic Media de AEM Sites es compatible con el recorte inteligente.
 * La URL publicada para el recurso recortado inteligente está disponible para su uso con aplicaciones de terceros que acepten recursos alojados.
 
 >[!NOTE]
