@@ -10,15 +10,20 @@ doc-type: feature video
 kt: 4999
 thumbnail: 39150.jpg
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: f30d15f0578b7e529e4acefb8e1d2e29157ab359
 workflow-type: tm+mt
-source-wordcount: '62'
+source-wordcount: '92'
 ht-degree: 0%
 
 ---
 
 
 # Grupos de usuarios de IMS de Adobe
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_adobeims_usergroups"
+>title="Grupos de usuarios de IMS de Adobe"
+>abstract="Los grupos de usuarios de IMS de Adobe establecen conjuntos lógicos de usuarios expuestos a AEM, donde se pueden aprovechar para definir permisos precisos para AEM usuarios."
 
  Los grupos de usuarios de IMS de Adobe establecen conjuntos lógicos de usuarios expuestos a AEM, donde se pueden aprovechar para definir permisos precisos para AEM usuarios.
 
