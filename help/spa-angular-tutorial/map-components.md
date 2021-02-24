@@ -1,8 +1,8 @@
 ---
-title: Asignación de componentes SPA a componentes AEM | Introducción al Editor de SPA de AEM y a Angular
-description: Obtenga información sobre cómo asignar componentes angulares a componentes de Adobe Experience Manager (AEM) con el SDK de JS Editor de AEM SPA. La asignación de componentes permite a los usuarios realizar actualizaciones dinámicas de SPA componentes en el Editor de SPA de AEM, de forma similar a la creación de AEM tradicional.
+title: Asignación de componentes SPA a componentes AEM | Introducción al Editor y el Angular de AEM SPA
+description: Obtenga información sobre cómo asignar componentes de Angular a componentes de Adobe Experience Manager (AEM) con el SDK de JS del Editor de AEM SPA. La asignación de componentes permite a los usuarios realizar actualizaciones dinámicas de SPA componentes en el Editor de SPA de AEM, de forma similar a la creación de AEM tradicional.
 sub-product: sitios
-feature: SPA Editor
+feature: Editor SPA
 topics: development
 doc-type: tutorial
 version: cloud-service
@@ -13,7 +13,7 @@ thumbnail: 5311-spa-angular.jpg
 translation-type: tm+mt
 source-git-commit: 28b5522e094a41d81116acb923dc0390478e2308
 workflow-type: tm+mt
-source-wordcount: '2387'
+source-wordcount: '2389'
 ht-degree: 1%
 
 ---
@@ -21,15 +21,15 @@ ht-degree: 1%
 
 # Asigne componentes de SPA a componentes de AEM {#map-components}
 
-Obtenga información sobre cómo asignar componentes angulares a componentes de Adobe Experience Manager (AEM) con el SDK de JS Editor de AEM SPA. La asignación de componentes permite a los usuarios realizar actualizaciones dinámicas de SPA componentes en el Editor de SPA de AEM, de forma similar a la creación de AEM tradicional.
+Obtenga información sobre cómo asignar componentes de Angular a componentes de Adobe Experience Manager (AEM) con el SDK de JS del Editor de AEM SPA. La asignación de componentes permite a los usuarios realizar actualizaciones dinámicas de SPA componentes en el Editor de SPA de AEM, de forma similar a la creación de AEM tradicional.
 
-Este capítulo profundiza en la API del modelo JSON de AEM y en cómo el contenido JSON expuesto por un componente AEM se puede insertar automáticamente en un componente angular como props.
+Este capítulo profundiza en la API del modelo JSON de AEM y en cómo el contenido JSON expuesto por un componente de AEM se puede insertar automáticamente en un componente de Angular como props.
 
 ## Objetivo
 
 1. Obtenga información sobre cómo asignar AEM componentes a SPA componentes.
 2. Comprenda la diferencia entre los componentes **Contenedor** y **Contenido**.
-3. Cree un nuevo componente angular que se asigne a un componente de AEM existente.
+3. Cree un nuevo componente de Angular que se asigne a un componente de AEM existente.
 
 ## Qué va a generar
 
@@ -69,9 +69,9 @@ Siempre puede realizar la vista del código terminado en [GitHub](https://github
 
 El concepto básico es asignar un componente SPA a un componente AEM. AEM componentes, ejecute el servidor y exporte contenido como parte de la API de modelo JSON. El contenido JSON lo consume el SPA, y se ejecuta en el navegador en el lado del cliente. Se crea una asignación 1:1 entre SPA componentes y un componente AEM.
 
-![Descripción general de alto nivel de la asignación de un componente AEM a un componente angular](./assets/map-components/high-level-approach.png)
+![Descripción general de alto nivel de la asignación de un componente de AEM a un componente de Angular](./assets/map-components/high-level-approach.png)
 
-*Descripción general de alto nivel de la asignación de un componente AEM a un componente angular*
+*Descripción general de alto nivel de la asignación de un componente de AEM a un componente de Angular*
 
 ## Inspect del componente de texto
 
@@ -109,7 +109,7 @@ Veamos cómo funciona el componente.
 
 3. En el IDE de su elección abra el proyecto AEM para el SPA WKND. Expanda el módulo `ui.frontend` y abra el archivo **text.component.ts** en `ui.frontend/src/app/components/text/text.component.ts`:
 
-   ![Código fuente de componente angular de Text.js](assets/map-components/vscode-ide-text-js.png)
+   ![Código fuente del componente de Angular Text.js](assets/map-components/vscode-ide-text-js.png)
 
 4. El primer área que inspeccionar es la `class TextComponent` en ~línea 35:
 
@@ -132,7 +132,7 @@ Veamos cómo funciona el componente.
 
    [@Input()](https://angular.io/api/core/Input) decorator se utiliza para declarar los campos cuyos valores se establecen mediante el objeto JSON asignado, revisado anteriormente.
 
-   `@HostBinding('innerHtml') get content()` es un método que expone el contenido de texto creado del valor de  `this.text`. En el caso de que el contenido sea texto enriquecido (determinado por el indicador `this.richText`), se omitirá la seguridad integrada de Angular. El [DomSanitizer](https://angular.io/api/platform-browser/DomSanitizer) de Angular se utiliza para &quot;eliminar&quot; el HTML sin procesar y evitar vulnerabilidades de secuencias de comandos en sitios cruzados. El método está enlazado a la propiedad `innerHtml` mediante el decorador [@HostBinding](https://angular.io/api/core/HostBinding).
+   `@HostBinding('innerHtml') get content()` es un método que expone el contenido de texto creado del valor de  `this.text`. En el caso de que el contenido sea texto enriquecido (determinado por el indicador `this.richText`), se omite la seguridad integrada del Angular. El [DomSanitizer](https://angular.io/api/platform-browser/DomSanitizer) de angular se utiliza para &quot;eliminar&quot; el HTML sin procesar y evitar vulnerabilidades de secuencias de comandos en sitios cruzados. El método está enlazado a la propiedad `innerHtml` mediante el decorador [@HostBinding](https://angular.io/api/core/HostBinding).
 
 5. A continuación, inspeccione el `TextEditConfig` en ~line 24:
 
@@ -199,7 +199,7 @@ Veamos cómo funciona el componente.
 
 ## Creación del componente de imagen
 
-A continuación, cree un componente angular `Image` que esté asignado al componente de imagen AEM [](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/components/image.html). El componente `Image` es otro ejemplo de un componente **content**.
+A continuación, cree un componente de Angular `Image` que esté asignado al componente de AEM [Imagen](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/components/image.html). El componente `Image` es otro ejemplo de un componente **content**.
 
 ### Inspect el JSON
 
@@ -253,7 +253,7 @@ Antes de saltar al código de SPA, revise el modelo JSON proporcionado por AEM.
 ### Implementación del componente Imagen
 
 1. Detenga el **servidor de desarrollo de webpack** si se inicia.
-2. Cree un nuevo componente Imagen ejecutando el comando CLI angular `ng generate component` desde la carpeta `ui.frontend`:
+2. Cree un nuevo componente Imagen ejecutando el comando CLI `ng generate component` de Angular desde la carpeta `ui.frontend`:
 
    ```shell
    $ ng generate component components/image
@@ -363,7 +363,7 @@ El componente `ImageComponent` sólo está visible en el **servidor de desarroll
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-2. En la pantalla del Inicio de AEM, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Plantillas]** > **[WKND SPA Angular](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf/wknd-spa-angular)**.
+2. En la pantalla del Inicio de AEM, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Plantillas]** > **[Angular de SPA WKND](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf/wknd-spa-angular)**.
 
    Seleccione y edite la **Página de SPA**:
 
@@ -373,7 +373,7 @@ El componente `ImageComponent` sólo está visible en el **servidor de desarroll
 
    ![Directiva de Contenedor de diseño](./assets/map-components/layout-container-policy.png)
 
-4. En **Componentes permitidos** > **WKND SPA Angular - Contenido** > compruebe el componente **Imagen**:
+4. En **Componentes permitidos** > **Angular de SPA WKND - Contenido** > compruebe el componente **Imagen**:
 
    ![Componente de imagen seleccionado](assets/map-components/check-image-component.png)
 
@@ -463,7 +463,7 @@ Siempre puede realizar la vista del código terminado en [GitHub](https://github
 
 ### Próximos pasos {#next-steps}
 
-[Navegación y Enrutamiento](navigation-routing.md) : Descubra cómo se pueden admitir varias vistas en el SPA asignando a AEM páginas con el SDK del Editor de SPA. La navegación dinámica se implementa mediante Enrutador angular y se agrega a un componente Encabezado existente.
+[Navegación y Enrutamiento](navigation-routing.md) : Descubra cómo se pueden admitir varias vistas en el SPA asignando a AEM páginas con el SDK del Editor de SPA. La navegación dinámica se implementa mediante el enrutador Angular y se agrega a un componente Encabezado existente.
 
 ## Bonificación: Persista configuraciones para control de código fuente {#bonus}
 
