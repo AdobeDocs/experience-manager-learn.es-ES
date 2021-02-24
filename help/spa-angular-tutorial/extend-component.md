@@ -1,8 +1,8 @@
 ---
-title: Ampliación de un componente | Introducción al Editor de SPA de AEM y a Angular
+title: Ampliación de un componente | Introducción al Editor y el Angular de AEM SPA
 description: Obtenga información sobre cómo ampliar un componente principal existente para utilizarlo con el Editor de SPA de AEM. El comprender cómo agregar propiedades y contenido a un componente existente es una técnica eficaz para expandir las capacidades de una implementación de editor de SPA AEM. Aprenda a utilizar el patrón de delegación para ampliar los modelos Sling y las características de Sling Resource Merger.
 sub-product: sitios
-feature: SPA Editor
+feature: Editor SPA
 doc-type: tutorial
 topics: development
 version: cloud-service
@@ -13,7 +13,7 @@ thumbnail: 5871-spa-angular.jpg
 translation-type: tm+mt
 source-git-commit: e99779b5d42bb9a3b258e2bbe815defde9d40bf7
 workflow-type: tm+mt
-source-wordcount: '1984'
+source-wordcount: '1986'
 ht-degree: 2%
 
 ---
@@ -129,7 +129,7 @@ El código de inicio de capítulo ha proporcionado un componente de tarjeta inic
 
 6. En el conmutador IDE al módulo `ui.frontend`, vaya a `ui.frontend/src/app/components/card`:
 
-   ![Inicio de componentes angulares](assets/extend-component/angular-card-component-start.png)
+   ![Inicio de componentes de angular](assets/extend-component/angular-card-component-start.png)
 
 7. Inspect el archivo `card.component.ts`.
 
@@ -139,7 +139,7 @@ El código de inicio de capítulo ha proporcionado un componente de tarjeta inic
    MapTo('wknd-spa-angular/components/card')(CardComponent, CardEditConfig);
    ```
 
-   Revise los tres parámetros `@Input` de la clase para `src`, `alt` y `title`. Estos son valores JSON esperados del componente AEM que se asignarán al componente angular.
+   Revise los tres parámetros `@Input` de la clase para `src`, `alt` y `title`. Estos son valores JSON esperados del componente AEM que se asignarán al componente Angular.
 
 8. Abra el archivo `card.component.html`:
 
@@ -149,7 +149,7 @@ El código de inicio de capítulo ha proporcionado un componente de tarjeta inic
    </div>
    ```
 
-   En este ejemplo hemos elegido reutilizar el componente de imagen angular existente `app-image` pasando simplemente los parámetros `@Input` de `card.component.ts`. Más adelante en el tutorial se agregarán y mostrarán propiedades adicionales.
+   En este ejemplo hemos elegido reutilizar el componente de imagen de Angular existente `app-image` pasando simplemente los parámetros `@Input` de `card.component.ts`. Más adelante en el tutorial se agregarán y mostrarán propiedades adicionales.
 
 ## Actualizar la directiva de plantilla
 
@@ -199,7 +199,7 @@ A continuación, cree el componente `Card` con el Editor de SPA de AEM.
 
 6. Actualice la ficha **Metadatos del recurso** para agregar valores para **Texto alternativo** y **Rótulo**.
 
-   Actualmente no aparecen cambios adicionales después de actualizar el cuadro de diálogo. Para exponer los nuevos campos al componente angular, es necesario actualizar el modelo Sling para el componente `Card`.
+   Actualmente no aparecen cambios adicionales después de actualizar el cuadro de diálogo. Para exponer los nuevos campos al componente Angular, debemos actualizar el modelo Sling para el componente `Card`.
 
 7. Abra una nueva ficha y vaya a [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/content/wknd-spa-angular/us/en/home/jcr%3Acontent/root/responsivegrid/card). Inspect los nodos de contenido debajo de `/content/wknd-spa-angular/us/en/home/jcr:content/root/responsivegrid` para encontrar el contenido del componente `Card`.
 
@@ -209,7 +209,7 @@ A continuación, cree el componente `Card` con el Editor de SPA de AEM.
 
 ## Actualizar modelo Sling de tarjeta
 
-Para exponer finalmente los valores del cuadro de diálogo del componente al componente Angular, es necesario actualizar el modelo de Sling que rellena el JSON para el componente `Card`. También tenemos la oportunidad de implementar dos elementos de lógica empresarial:
+Para exponer finalmente los valores del cuadro de diálogo del componente al componente Angular, debemos actualizar el modelo Sling que rellena el JSON para el componente `Card`. También tenemos la oportunidad de implementar dos elementos de lógica empresarial:
 
 * Si `titleFromPage` es **true**, devuelve el título de la página especificada por `cardPath`; de lo contrario, devuelve el valor de `cardTitle` textfield.
 * Devuelve la última fecha modificada de la página especificada por `cardPath`.
@@ -258,7 +258,7 @@ Vuelva al IDE de su elección y abra el módulo `core`.
    }
    ```
 
-   Estos métodos se exponen mediante la API de modelo JSON y se pasan al componente angular.
+   Estos métodos se exponen mediante la API de modelo JSON y se pasan al componente Angular.
 
 3. Abra `CardImpl.java`. Ésta es la implementación de la interfaz `Card.java`. Esta implementación ya se ha estropeado parcialmente para acelerar el tutorial.  Observe el uso de las anotaciones `@Model` y `@Exporter` para garantizar que el modelo de Sling pueda serializarse como JSON mediante el exportador del modelo de Sling.
 
@@ -379,7 +379,7 @@ Vuelva al IDE de su elección y abra el módulo `core`.
 
    Observe que el modelo JSON se actualiza con pares de clave/valor adicionales después de actualizar los métodos en el modelo Sling `CardImpl`.
 
-## Actualizar componente angular
+## Actualizar componente Angular
 
 Ahora que el modelo JSON se rellena con nuevas propiedades para `ctaLinkURL`, `ctaText`, `cardTitle` y `cardLastModified`, podemos actualizar el componente Angular para que las muestre.
 
@@ -449,7 +449,7 @@ Ahora que el modelo JSON se rellena con nuevas propiedades para `ctaLinkURL`, `c
 
    >[!NOTE]
    >
-   > Puede realizar la vista del [código del componente de la tarjeta angular terminado aquí](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/extend-component-solution/ui.frontend/src/app/components/card).
+   > Puede realizar la vista del código del componente de la tarjeta de Angular [aquí](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/extend-component-solution/ui.frontend/src/app/components/card).
 
 5. Implemente los cambios completos en AEM desde la raíz del proyecto mediante Maven:
 
