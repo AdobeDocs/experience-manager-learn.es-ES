@@ -4,7 +4,7 @@ description: Recopilación de tutoriales para Adobe Experience Manager (AEM) com
 sub-product: sitios, cloud-manager, fundación, recursos
 kt: 3289
 translation-type: tm+mt
-source-git-commit: 3e719ffd035623803c92ec814911413ec571ab30
+source-git-commit: ce4a35f763862c6d6a42795fd5e79d9c59ff645a
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -20,9 +20,13 @@ Adobe Experience Manager (AEM) ya está disponible as a Cloud Service. AEM como 
 
 ## Novedades
 
-* **[Autenticación basada en tokens (tutorial)](../headless-tutorial/authentication/overview.md)**
+* **[Autenticación basada en tokens (tutorial)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)**
 
    *Aprenda a utilizar la autenticación basada en tokens para interactuar con AEM como Cloud Service a través de HTTP*
+
+* **[GraphQL sin encabezado (tutorial)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)**
+
+   *Aprenda a utilizar las API de GraphQL de AEM para potenciar las experiencias en una aplicación externa.*
 
 * **[Importación masiva (vídeo)](./migration/bulk-import.md)**
 
@@ -30,16 +34,11 @@ Adobe Experience Manager (AEM) ya está disponible as a Cloud Service. AEM como 
 
 * **[Trabajador de metadatos de asset compute (tutorial)](./asset-compute/advanced/metadata.md)**
 
-   *Obtenga información sobre cómo volver a escribir metadatos de recursos en AEM de los trabajadores de una Asset compute*
+   *Obtenga información sobre cómo volver a escribir metadatos de recursos en AEM de los trabajadores de un Asset compute*
 
 * **[Extensibilidad de los microservicios de asset compute (tutorial)](./asset-compute/overview.md)**
 
    *Obtenga información sobre cómo desarrollar trabajadores de Asset compute para generar representaciones de recursos personalizadas*
-
-* **[Configuración del acceso a AEM como Cloud Service (tutorial)](./accessing/overview.md)**
-
-   *Obtenga información sobre cómo configurar los usuarios de IMS en Adobe Admin Console para que puedan acceder a AEM*
-
 
 ## Selección de personal
 
