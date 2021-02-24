@@ -1,20 +1,18 @@
 ---
-title: Usar administración de flujo de trabajo
+title: Cómo administrar el flujo de trabajo en AEM
 description: 'AEM administración de flujo de trabajo proporciona a un usuario más visibilidad sobre el contenido en el flujo de trabajo y permite una administración más sencilla de las definiciones de modelo de flujo de trabajo. '
-seo-title: Utilizar la administración de flujos de trabajo en AEM
-seo-description: La administración de flujo de trabajo de EM proporciona a un usuario más visibilidad sobre el contenido en el flujo de trabajo y permite una administración más sencilla de las definiciones de modelo de flujo de trabajo.
-version: 6.5
-sub-product: fundaciones, sitios, recursos
-feature: workflow
-topics: governance, collaboration
-activity: use
-audience: administrator
-doc-type: feature video
+version: 6.5, cloud-service
+feature: Flujo de trabajo
+topic: Administración de contenido
+role: Administrador
+level: Intermedio
+kt: 2557
+thumbnail: 27848.jpg
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 46dead200ec61acf9fdf537f18818f5bb60dbc90
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 0%
+source-wordcount: '136'
+ht-degree: 2%
 
 ---
 
@@ -23,19 +21,18 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/27848/?quality=12&learn=on)
 
-En este vídeo se analizan los siguientes aspectos de la administración de flujos de trabajo, introducidos en AEM 6.5:
+En este vídeo se analizan los siguientes aspectos de la administración de flujos de trabajo:
 
-+ Habilite los metadatos del flujo de trabajo en la configuración de vista de lista.
-+ Navegación sencilla a la línea de tiempo del flujo de trabajo desde la vista de lista
-+ Copiar y pegar un flujo de trabajo de OOTB existente para personalizar o anular la funcionalidad predeterminada
-+ Realice una publicación rápida para [!DNL Workflow Models] y [!DNL Launchers]
-+ Administre la publicación para [!DNL Workflow Models] y [!DNL Launchers].
-+ Notificar a los usuarios con una información de objeto de advertencia cuando intenten editar un modelo de flujo de trabajo o un iniciador OOTB.
-+ Capacidad para recuperar los cambios realizados en un modelo de flujo de trabajo de OOTB o en los lanzadores.
++ Habilitación de metadatos de flujo de trabajo en la configuración de vista de lista.
++ Navegación a la línea de tiempo del flujo de trabajo para contenido en AEM
++ Personalización de un flujo de trabajo proporcionado por AEM
++ Publicación rápida para [!DNL Workflow Models] y [!DNL Launchers]
++ Administración de publicaciones para [!DNL Workflow Models] y [!DNL Launchers]
++ Revertir los cambios realizados en un modelo de flujo de trabajo o en un iniciador
 
-Este vídeo utiliza [!DNL Workflow models] para demostrar este conjunto de capacidades, pero también se aplican a [!DNL AEM Launchers].
+Este vídeo utiliza [!DNL Workflow Models] para demostrar este conjunto de capacidades, pero también se aplican a [!DNL AEM Launchers].
 
 
 >[!NOTE]
 >
-> El vídeo utiliza la interfaz de usuario de AEM Sites para mostrar la capacidad de metadatos del estado del flujo de trabajo. Los metadatos de estado del flujo de trabajo también se aplican a la interfaz de usuario de AEM Assets. Asegúrese de seleccionar la vista de lista para activar los metadatos de estado del flujo de trabajo en la interfaz de usuario.
+> El vídeo utiliza AEM Sites para mostrar la capacidad de metadatos del estado del flujo de trabajo. Los metadatos de estado del flujo de trabajo también se aplican a AEM Assets. Para ver el estado del flujo de trabajo en los recursos, asegúrese de que la vista de lista está activada.
