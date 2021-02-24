@@ -1,6 +1,6 @@
 ---
 title: Introducción al Editor de SPA y Angular de AEM
-description: Cree su primera aplicación de una sola página angular (SPA) que se pueda editar en Adobe Experience Manager, AEM con la SPA WKND. Obtenga información sobre cómo crear una SPA con el marco de trabajo de JS angular con AEM editor SPA. Este tutorial en varias partes va a través de la implementación de una aplicación Angular para una marca de estilo de vida ficticia, la WKND. El tutorial cubre la creación de extremo a extremo del SPA y la integración con AEM.
+description: Cree su primera aplicación Angular de una sola página (SPA) que se pueda editar en Adobe Experience Manager, AEM con la SPA WKND. Obtenga información sobre cómo crear un SPA con el marco de trabajo de JS de Angular con AEM editor SPA. Este tutorial en varias partes explica la implementación de una aplicación de Angular para una marca de estilo de vida ficticia, la WKND. El tutorial cubre la creación de extremo a extremo del SPA y la integración con AEM.
 sub-product: sitios
 topics: development
 version: cloud-service
@@ -18,9 +18,9 @@ ht-degree: 14%
 ---
 
 
-# Cree su primer SPA angular en AEM {#introduction}
+# Cree su primer SPA de Angular en AEM {#introduction}
 
-Bienvenido a un tutorial de varias partes diseñado para desarrolladores que utilizan la función **Editor de SPA** en Adobe Experience Manager (AEM). Este tutorial explica la implementación de una aplicación Angular para una marca ficticia de estilo de vida, la WKND. La aplicación Angular se desarrollará y se diseñará para implementarse con AEM editor SPA, que asigna componentes Angular a AEM componentes. El SPA completado, implementado en AEM, se puede crear dinámicamente con herramientas de edición en línea tradicionales de AEM.
+Bienvenido a un tutorial de varias partes diseñado para desarrolladores que utilizan la función **Editor de SPA** en Adobe Experience Manager (AEM). Este tutorial explica la implementación de una aplicación de Angular para una marca ficticia de estilo de vida, la WKND. La aplicación de Angular se desarrollará y se diseñará para implementarse con AEM editor de SPA, que asigna componentes de Angular a AEM componentes. El SPA completado, implementado en AEM, se puede crear dinámicamente con herramientas de edición en línea tradicionales de AEM.
 
 ![SPA final implementado](assets/wknd-spa-implementation.png)
 
@@ -28,7 +28,7 @@ Bienvenido a un tutorial de varias partes diseñado para desarrolladores que uti
 
 ## Acerca de
 
-El objetivo de este tutorial de varias partes es enseñar a un desarrollador cómo implementar una aplicación angular para trabajar con la función Editor de SPA de AEM. En un escenario real, las actividades de desarrollo se desglosan por persona, con frecuencia involucrando a un **desarrollador de front-end** y a un **desarrollador de back-end**. Creemos que es beneficioso para cualquier desarrollador que esté involucrado en un proyecto de edición SPA AEM completar este tutorial.
+El objetivo de este tutorial de varias partes es enseñar a los desarrolladores cómo implementar una aplicación de Angular para trabajar con la función Editor de SPA de AEM. En un escenario real, las actividades de desarrollo se desglosan por persona, con frecuencia involucrando a un **desarrollador de front-end** y a un **desarrollador de back-end**. Creemos que es beneficioso para cualquier desarrollador que esté involucrado en un proyecto de edición SPA AEM completar este tutorial.
 
 El tutorial está diseñado para funcionar con **AEM como Cloud Service** y es compatible con **AEM 6.5.4+** y **AEM 6.4.8+**. La SPA se implementa mediante:
 
