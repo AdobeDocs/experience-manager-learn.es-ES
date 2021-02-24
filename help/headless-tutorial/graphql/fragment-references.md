@@ -1,6 +1,6 @@
 ---
 title: Modelado de datos avanzado con referencias de fragmento - Introducción a AEM sin encabezado - GraphQL
-description: Introducción a Adobe Experience Manager (AEM) y GraphQL. Conozca cómo utilizar la función Referencia de fragmento para el modelado de datos avanzado y crear una relación entre dos fragmentos de contenido diferentes. Aprenda a modificar una consulta de GraphQL para incluir un campo de un modelo al que se hace referencia.
+description: Introducción a Adobe Experience Manager (AEM) y GraphQL. Aprenda a utilizar la función de referencia de fragmento para el modelado de datos avanzado y a crear una relación entre dos fragmentos de contenido diferentes. Aprenda a modificar una consulta de GraphQL para incluir un campo de un modelo al que se hace referencia.
 sub-product: activos
 topics: headless
 version: cloud-service
@@ -11,10 +11,10 @@ mini-toc-levels: 1
 kt: 6718
 thumbnail: KT-6718.jpg
 translation-type: tm+mt
-source-git-commit: 8c5b425e6dcf23cbef042097f17db9e51bdf63c9
+source-git-commit: ce4a35f763862c6d6a42795fd5e79d9c59ff645a
 workflow-type: tm+mt
-source-wordcount: '828'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -234,13 +234,10 @@ A continuación, actualice las consultas utilizadas por la aplicación React par
 
    ![Colaborador Añadido en la aplicación](assets/fragment-references/contributor-added-detail.png)
 
-## Recursos adicionales
-
-Para obtener más información sobre los fragmentos de contenido y GraphQL, consulte los siguientes recursos:
-
-* [Envío de contenido sin cabeza mediante fragmentos de contenido con GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html)
-* [API de AEM GraphQL para usar con fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html)
-
 ## Felicitaciones!{#congratulations}
 
 Felicitaciones! Ha actualizado un modelo de fragmento de contenido existente para hacer referencia a un fragmento de contenido anidado mediante el campo **Referencia de fragmento**. También ha aprendido a modificar una consulta de GraphQL para incluir campos de un modelo al que se hace referencia.
+
+## Próximos pasos {#next-steps}
+
+En el siguiente capítulo, [Implementación de producción mediante un entorno de AEM Publish](./production-deployment.md), conozca los servicios de AEM Author y Publish y el patrón de implementación recomendado para aplicaciones sin cabezal. Actualizará una aplicación existente para utilizar variables de entorno para cambiar dinámicamente un extremo de GraphQL según el entorno de destinatario. También aprenderá a configurar correctamente AEM para el uso compartido de recursos entre Orígenes (CORS).
