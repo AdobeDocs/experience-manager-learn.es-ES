@@ -11,10 +11,10 @@ mini-toc-levels: 1
 kt: 6712
 thumbnail: 22452.jpg
 translation-type: tm+mt
-source-git-commit: 8c5b425e6dcf23cbef042097f17db9e51bdf63c9
+source-git-commit: ce4a35f763862c6d6a42795fd5e79d9c59ff645a
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +27,7 @@ En este capítulo, creará un nuevo modelo para un **colaborador**, que es el mo
 
 ## Requisitos previos {#prerequisites}
 
-Se trata de un tutorial en varias partes y se da por hecho que se han completado los pasos descritos en [Configuración rápida](./setup.md).
+Este es un tutorial en varias partes y se da por hecho que se han completado los pasos descritos en [Configuración rápida](./setup.md).
 
 ## Objetivos {#objectives}
 
@@ -133,13 +133,13 @@ A continuación, cree un nuevo modelo para un **colaborador**, que es el modelo 
 
 ## Habilitar el modelo de colaborador
 
-Los modelos de fragmento de contenido tienen el estado predeterminado **Borrador** cuando se crean por primera vez. Esto permite a los usuarios refinar el modelo de fragmento de contenido **antes de**, permitiendo que los autores lo utilicen. Recuerde que la modificación del **Nombre de propiedad** de un campo del modelo cambia el esquema de datos subyacente y puede tener efectos descendentes significativos en los fragmentos existentes y las aplicaciones externas. Se recomienda planificar cuidadosamente la convención de nombres utilizada para los campos **Nombre de propiedad**.
+Los modelos de fragmento de contenido deben estar **habilitados** antes de que los autores de contenido puedan usarlos. Es posible **deshabilitar** un modelo de fragmento de contenido, prohibiendo así que los autores lo usen. Recuerde que la modificación del **Nombre de propiedad** de un campo del modelo cambia el esquema de datos subyacente y puede tener efectos descendentes significativos en los fragmentos existentes y las aplicaciones externas. Se recomienda planificar cuidadosamente la convención de nombres utilizada para los campos **Nombre de propiedad** antes de habilitar el modelo de fragmento de contenido para los usuarios.
 
-1. Observe que el modelo **Colaborador** está actualmente en estado **Borrador**.
+1. Asegúrese de que el modelo **Colaborador** está actualmente en un estado **Habilitado**.
 
-1. Habilite el **Modelo de colaborador** pasando el ratón por encima de la tarjeta y haciendo clic en el icono **Habilitar**:
+   ![Modelo colaborador habilitado](assets/content-fragment-models/enable-contributor-model.png)
 
-   ![Habilitar el modelo de colaborador](assets/content-fragment-models/enable-contributor-model.png)
+   Es posible alternar el estado de un modelo de fragmento de contenido pasando el ratón por encima de la tarjeta y haciendo clic en el icono **Deshabilitar** / **Habilitar**.
 
 ## Felicitaciones! {#congratulations}
 
