@@ -11,7 +11,7 @@ mini-toc-levels: 1
 kt: 6716
 thumbnail: KT-6716.jpg
 translation-type: tm+mt
-source-git-commit: 8c5b425e6dcf23cbef042097f17db9e51bdf63c9
+source-git-commit: ce4a35f763862c6d6a42795fd5e79d9c59ff645a
 workflow-type: tm+mt
 source-wordcount: '1397'
 ht-degree: 0%
@@ -68,7 +68,7 @@ El inicio de la aplicación React se describe con más detalle en el capítulo [
 
 1. Revise la aplicación en [http://localhost:3000/](http://localhost:3000/). La aplicación React de muestra consta de dos partes principales:
 
-   * La experiencia doméstica actúa como un índice de las aventuras de WKND, pero consultando los fragmentos de contenido de __aventura__ en AEM usando GraphQL. En este capítulo, modificaremos esta vista para admitir el filtrado de aventuras por actividad.
+   * La experiencia doméstica actúa como un índice de las aventuras de WKND, consultando __Fragmentos de contenido de aventura__ en AEM usando GraphQL. En este capítulo, modificaremos esta vista para admitir el filtrado de aventuras por actividad.
 
       ![Aplicación WKND GraphQL React - Experiencia doméstica](./assets/graphql-and-external-app/react-home-view.png)
 
