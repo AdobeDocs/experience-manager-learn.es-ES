@@ -1,8 +1,8 @@
 ---
-title: Crear un componente personalizado | Introducción al Editor de SPA de AEM y a Angular
+title: Crear un componente personalizado | Introducción al Editor y el Angular de AEM SPA
 description: Obtenga información sobre cómo crear un componente personalizado para utilizarlo con el Editor de SPA de AEM. Obtenga información sobre cómo desarrollar diálogos de autor y modelos Sling para ampliar el modelo JSON y rellenar un componente personalizado.
 sub-product: sitios
-feature: SPA Editor
+feature: Editor SPA
 doc-type: tutorial
 topics: development
 version: cloud-service
@@ -13,7 +13,7 @@ thumbnail: 5831-spa-angular.jpg
 translation-type: tm+mt
 source-git-commit: 1fd4d31770a4eac37a88a7c6960fd51845601bee
 workflow-type: tm+mt
-source-wordcount: '1505'
+source-wordcount: '1507'
 ht-degree: 1%
 
 ---
@@ -161,7 +161,7 @@ Un componente AEM se define como un nodo y propiedades. En el proyecto, estos no
 
 ## Creación del modelo Sling
 
-Los modelos de Sling son Java &quot;POJO&quot; (objetos Java antiguos sin formato) impulsados por anotaciones que facilitan la asignación de datos de las variables JCR a Java. [Sling ](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/component-basics.html#sling-models) Modelstípicamente funciona para encapsular la compleja lógica empresarial del lado del servidor para AEM Componentes.
+Los modelos de Sling son Java &quot;POJO&quot; (Objetos Java antiguos sin formato) impulsados por anotaciones que facilitan la asignación de datos de las variables JCR a Java. [Sling ](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/component-basics.html#sling-models) Modelstípicamente funciona para encapsular la compleja lógica empresarial del lado del servidor para AEM Componentes.
 
 En el contexto del Editor de SPA, los modelos Sling exponen el contenido de un componente a través del modelo JSON mediante una función que utiliza el [Exportador del modelo Sling](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/develop-sling-model-exporter.html).
 
@@ -215,7 +215,7 @@ En el contexto del Editor de SPA, los modelos Sling exponen el contenido de un c
    }
    ```
 
-   Este método es necesario cuando se implementa la interfaz `ComponentExporter` y expone el tipo de recurso que permite la asignación al componente angular.
+   Este método es necesario cuando se implementa la interfaz `ComponentExporter` y expone el tipo de recurso que permite la asignación al componente Angular.
 
 7. Actualice el método `getMessage()` para devolver el valor de la propiedad `message` que persiste en el cuadro de diálogo de creación. Utilice la anotación `@ValueMap` para asignar el valor JCR `message` a una variable Java:
 
@@ -238,9 +238,9 @@ En el contexto del Editor de SPA, los modelos Sling exponen el contenido de un c
    >
    > Puede realizar la vista del [CustomComponentImpl.java terminado aquí](https://github.com/adobe/aem-guides-wknd-spa/blob/Angular/custom-component-solution/core/src/main/java/com/adobe/aem/guides/wknd/spa/angular/core/models/impl/CustomComponentImpl.java).
 
-## Actualizar el componente angular
+## Actualización del componente Angular
 
-El código angular del componente personalizado ya se ha creado. A continuación, realice algunas actualizaciones para asignar el componente Angular al componente AEM.
+El código de Angular del componente personalizado ya se ha creado. A continuación, realice algunas actualizaciones para asignar el componente Angular al componente AEM.
 
 1. En el módulo `ui.frontend` abra el archivo `ui.frontend/src/app/components/custom/custom.component.ts`
 2. Observe la línea `@Input() message: string;`. Se espera que el valor en mayúsculas transformado se asigne a esta variable.
