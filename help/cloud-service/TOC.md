@@ -5,9 +5,9 @@ breadcrumb-title: Tutoriales de AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
 translation-type: tm+mt
-source-git-commit: 91399ff4ab26655de27bbecab4ff773f6666d86a
+source-git-commit: c7b3a6e408e46338a6a540c6403601be8c0893e2
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '329'
 ht-degree: 25%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 25%
       + [Analizar los resultados de la prueba](./cloud-manager/devops/analyze-test-results.md)
       + [Configuraciones del despachante](./cloud-manager/devops/dispatcher-configurations.md)
       + [API de Cloud Manager](./cloud-manager/devops/cloud-manager-apis.md)
-+ Configuración del Entorno de desarrollo local {#local-development-environment-set-up}
++ Configuración de Entorno de desarrollo local {#local-development-environment-setup}
    + [Información general](./local-development-environment/overview.md)
    + [Herramientas de desarrollo](./local-development-environment/development-tools.md)
    + [AEM en tiempo de ejecución local](./local-development-environment/aem-runtime.md)
@@ -58,6 +58,7 @@ ht-degree: 25%
       + [Publicación de contenido](./developing/basics/content-publishing.md)
       + [Configuraciones de OSGi](./developing/basics/osgi-configurations.md)
       + [Migración de configuración de Dispatcher](./developing/basics/dispatcher-configuration.md)
+   + [JavaDocs de la API de SDK de AEM](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/)
 + Depuración AEM{#debugging}
    + Depuración del SDK de AEM{#debugging-aem-sdk}
       + [Información general](./debugging/aem-sdk-local-quickstart/overview.md)
@@ -82,7 +83,7 @@ ht-degree: 25%
 + Migración {#migration}
    + [Herramienta de transferencia de contenido](./migration/content-transfer-tool.md)
    + [Importación masiva de recursos](./migration/bulk-import.md)
-+ Extensibilidad de asset compute{#asset-compute}
++ Extensibilidad del asset compute{#asset-compute}
    + [Información general](./asset-compute/overview.md)
    + Configurar{#set-up}
       + [Aprovisionamiento de cuentas y servicios](./asset-compute/set-up/accounts-and-services.md)
@@ -107,7 +108,7 @@ ht-degree: 25%
    + [Desarrollo de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/develop-wknd-tutorial.html)
    + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)
    + [Editor SPA (Reaccionar)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
-   + [Editor SPA (angular)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/overview.html)
+   + [Editor SPA (Angular)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/overview.html)
    + [AEM Sites y Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html)
    + [Autenticación basada en tokens](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)
 
