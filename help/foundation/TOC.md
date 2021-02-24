@@ -5,10 +5,10 @@ user-guide-description: 'Una colección de vídeos y tutoriales para Adobe Exper
 sub-product: foundation
 index: y
 translation-type: tm+mt
-source-git-commit: 172a1369cb572b367c78e04c692db8e02e7287e7
+source-git-commit: 2760064642002a684b3fd70337a81a7d6e28a343
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 19%
+source-wordcount: '147'
+ht-degree: 21%
 
 ---
 
@@ -46,6 +46,5 @@ ht-degree: 19%
 + Flujo de trabajo {#workflow}
    + [Uso del Editor de flujo de trabajo](./workflow/use-the-workflow-editor.md)
    + [Usar administración de flujo de trabajo](./workflow/use-workflow-management.md)
-   + [Utilizar la Vista Calendario con AEM proyectos y Bandeja de entrada](./workflow/use-the-calendar-view-with-aem-projects-and-inbox.md)
    + [Uso de la bandeja de entrada](./workflow/use-the-inbox.md)
 
