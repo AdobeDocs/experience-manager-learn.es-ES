@@ -4,9 +4,9 @@ user-guide-description: Una colección de vídeos y tutoriales para Adobe Experi
 breadcrumb-title: Tutoriales de AEM Sites
 sub-product: sitios
 translation-type: tm+mt
-source-git-commit: fcfb33f93e57d40b08e0527d38cfce8553095e65
+source-git-commit: 4620acc18a08d71994753903b79247a8ed3fd8f5
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '446'
 ht-degree: 22%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 22%
 + Fragmentos de contenido {#content-fragments}
    + [Creación de fragmentos de contenido](content-fragments/content-fragments-feature-video-use.md)
    + [Distribución de fragmentos de contenido](content-fragments/content-fragments-delivery-feature-video-use.md)
-   + [Traducción con fragmentos de contenido](content-fragments/content-fragments-translation-feature-video-use.md)
+   + [Traducción de fragmentos de contenido](content-fragments/content-fragments-translation-feature-video-use.md)
    + [Fragmentos de contenido vs. fragmentos de experiencia](content-fragments/understand-content-fragments-and-experience-fragments.md)
 + Fragmentos de experiencias {#experience-fragments}
    + [Uso de fragmentos de experiencias](experience-fragments/experience-fragments-feature-video-use.md)
