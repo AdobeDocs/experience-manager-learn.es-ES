@@ -5,7 +5,7 @@ breadcrumb-title: Tutoriales de AEM Assets
 sub-product: activos
 team: TM
 translation-type: tm+mt
-source-git-commit: d302444e74f8c2a548d2e08b5ec2991cc7347324
+source-git-commit: 0d012d61b7740e461e641dddd6c5255a022305ea
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 32%
@@ -59,7 +59,7 @@ ht-degree: 32%
    + [Etiquetas inteligentes para imágenes](metadata/image-smart-tags.md)
    + [Etiquetas inteligentes personalizadas para imágenes](metadata/custom-smart-tags.md)
    + [Etiquetas inteligentes para vídeos](metadata/video-smart-tags.md)
-   + [Importación y exportación de metadatos](metadata/metadata-import-feature-video-use.md)
+   + [Importación y exportación de metadatos](metadata/metadata-import-export.md)
 
 + Uso compartido y distribución{#sharing}
    + [Descargar recursos](./sharing/download.md)
