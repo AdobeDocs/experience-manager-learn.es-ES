@@ -1,21 +1,18 @@
 ---
 title: Uso de Deformación de tiempo con AEM Sites
-seo-title: Uso de Deformación de tiempo con Adobe Experience Manager Sites
 description: Deformación de tiempo es una función de Adobe Experience Manager Sites que proporciona a los autores una forma rápida de revisar el estado de una página en un momento concreto del pasado.
-seo-description: Deformación de tiempo es una función de Adobe Experience Manager Sites que proporciona a los autores una forma rápida de revisar el estado de una página en un momento concreto del pasado.
-feature: timewarp
-topics: authoring
-audience: all
-doc-type: feature video
-activity: use
-version: 6.3, 6.4, 6.5
-uuid: f1bcb8ae-db14-4f3d-b52e-48f589470aec
-discoiquuid: dec419ba-233e-4ba5-9eb8-837035f4b4b8
+topic: Administración de contenido
+feature: 'Creación  '
+role: Profesional del negocio
+level: Intermedio
+version: 6.3, 6.4, 6.5, cloud-service
+kt: 3307
+thumbnail: 17453.jpg
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d1578e1c6fb6208f04953454354e1ed23566e450
 workflow-type: tm+mt
-source-wordcount: '118'
-ht-degree: 3%
+source-wordcount: '86'
+ht-degree: 5%
 
 ---
 
@@ -24,8 +21,8 @@ ht-degree: 3%
 
 Deformación de tiempo es una función de Adobe Experience Manager Sites que proporciona a los autores una forma rápida de revisar el estado de una página en un momento concreto del pasado.
 
->[!VIDEO](https://video.tv.adobe.com/v/17453/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/17453/?quality=12&learn=on)
 
-## Recursos adicionales {#additional-resources}
+## Más recursos {#more-resources}
 
-* [Uso de las versiones de página: Deformación de tiempo](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/siteandpage/working-with-page-versions.html#Timewarp)
+* [Uso de las versiones de página: Deformación de tiempo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/page-versions.html)
