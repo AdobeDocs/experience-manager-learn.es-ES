@@ -17,7 +17,7 @@ ht-degree: 25%
 
 + [Información general](./overview.md)
 + Introducción a AEM as a Cloud Service{#introduction}
-   + [¿Qué es AEM como Cloud Service?](./introduction/what-is-aem-as-a-cloud-service.md)
+   + [¿Qué es AEM as a Cloud Service?](./introduction/what-is-aem-as-a-cloud-service.md)
    + [Evolución](./introduction/evolution.md)
    + [Arquitectura](./introduction/architecture.md)
    + [Cloud Manager](./introduction/cloud-manager.md)
@@ -34,40 +34,40 @@ ht-degree: 25%
    + [Canalización de producción de CI/CD](./cloud-manager/cicd-production-pipeline.md)
    + [Canalización de no producción de CI/CD](./cloud-manager/cicd-non-production-pipeline.md)
    + [Actividad](./cloud-manager/activity.md)
-   + Opciones de desarrollo{#devops}
+   + Operaciones de desarrollo{#devops}
       + [Implementación de código](./cloud-manager/devops/deploy-code.md)
       + [Combinar proyectos](./cloud-manager/devops/merge-projects.md)
-      + [Configurar tuberías](./cloud-manager/devops/configure-pipelines.md)
+      + [Configurar canalizaciones](./cloud-manager/devops/configure-pipelines.md)
       + [Integración continua](./cloud-manager/devops/continuous-integration.md)
-      + [Analizar los resultados de la prueba](./cloud-manager/devops/analyze-test-results.md)
-      + [Configuraciones del despachante](./cloud-manager/devops/dispatcher-configurations.md)
+      + [Analizar resultados de la prueba](./cloud-manager/devops/analyze-test-results.md)
+      + [Configuraciones de Dispatcher](./cloud-manager/devops/dispatcher-configurations.md)
       + [API de Cloud Manager](./cloud-manager/devops/cloud-manager-apis.md)
-+ Configuración de Entorno de desarrollo local {#local-development-environment-set-up}
++ Configuración del entorno de desarrollo local {#local-development-environment-set-up}
    + [Información general](./local-development-environment/overview.md)
    + [Herramientas de desarrollo](./local-development-environment/development-tools.md)
-   + [AEM en tiempo de ejecución local](./local-development-environment/aem-runtime.md)
-   + [Herramientas de despachante local](./local-development-environment/dispatcher-tools.md)
+   + [Tiempo de ejecución local de AEM](./local-development-environment/aem-runtime.md)
+   + [Herramientas locales de Dispatcher](./local-development-environment/dispatcher-tools.md)
 + Desarrollo de{#developing}
    + Conceptos básicos de desarrollo{#basics}
-      + [SDK AEM](./developing/basics/aem-sdk.md)
+      + [SDK de AEM](./developing/basics/aem-sdk.md)
       + [Entorno de desarrollo local](./developing/basics/local-development-environment.md)
       + [Tipo de archivo del proyecto AEM](./developing/basics/aem-project-archetype.md)
       + [Estructura del proyecto AEM](./developing/basics/project-structure.md)
       + [Contenido mutable vs. inmutable](./developing/basics/mutable-immutable.md)
-      + [Paquete de estructura de repositorio](./developing/basics/repository-structure-package.md)
+      + [Paquete de estructura del repositorio](./developing/basics/repository-structure-package.md)
       + [Publicación de contenido](./developing/basics/content-publishing.md)
       + [Configuraciones de OSGi](./developing/basics/osgi-configurations.md)
       + [Migración de configuración de Dispatcher](./developing/basics/dispatcher-configuration.md)
    + [JavaDocs de la API de SDK de AEM](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/)
-+ Depuración AEM{#debugging}
++ Depuración de AEM{#debugging}
    + Depuración del SDK de AEM{#debugging-aem-sdk}
       + [Información general](./debugging/aem-sdk-local-quickstart/overview.md)
       + [Registros](./debugging/aem-sdk-local-quickstart/logs.md)
       + [Depuración remota](./debugging/aem-sdk-local-quickstart/remote-debugging.md)
       + [Consola web OSGi](./debugging/aem-sdk-local-quickstart/osgi-web-consoles.md)
-      + [Herramientas de despachante](./debugging/aem-sdk-local-quickstart/dispatcher-tools.md)
+      + [Herramientas de Dispatcher](./debugging/aem-sdk-local-quickstart/dispatcher-tools.md)
       + [Otras herramientas](./debugging/aem-sdk-local-quickstart/other-tools.md)
-   + Depuración AEM como Cloud Service{#debugging-aem-as-a-cloud-service}
+   + Depuración de AEM as a Cloud Service{#debugging-aem-as-a-cloud-service}
       + [Información general](./debugging/cloud-service/overview.md)
       + [Registros](./debugging/cloud-service/logs.md)
       + [Compilación e implementación](./debugging/cloud-service/build-and-deployment.md)
@@ -77,38 +77,38 @@ ht-degree: 25%
    + [Información general](./accessing/overview.md)
    + [Usuarios de IMS de Adobe](./accessing/adobe-ims-users.md)
    + [Grupos de usuarios de IMS de Adobe](./accessing/adobe-ims-user-groups.md)
-   + [Perfiles del producto IMS de Adobe](./accessing/adobe-ims-product-profiles.md)
+   + [Perfiles de producto de IMS de Adobe](./accessing/adobe-ims-product-profiles.md)
    + [Usuarios, grupos y permisos de AEM](./accessing/aem-users-groups-and-permissions.md)
-   + [Configuración del acceso a AEM paso](./accessing/walk-through.md)
+   + [Configuración del acceso a la guía de AEM](./accessing/walk-through.md)
 + Migración {#migration}
    + [Herramienta de transferencia de contenido](./migration/content-transfer-tool.md)
    + [Importación masiva de recursos](./migration/bulk-import.md)
-+ Extensibilidad del asset compute{#asset-compute}
++ Capacidad de ampliación de Asset Compute{#asset-compute}
    + [Información general](./asset-compute/overview.md)
    + Configurar{#set-up}
       + [Aprovisionamiento de cuentas y servicios](./asset-compute/set-up/accounts-and-services.md)
       + [Entorno de desarrollo local](./asset-compute/set-up/development-environment.md)
-      + [Luciérnagas del proyecto Adobe](./asset-compute/set-up/firefly.md)
+      + [Adobe Project Firefly](./asset-compute/set-up/firefly.md)
    + Desarrollar{#develop}
-      + [Creación de un proyecto de Asset compute](./asset-compute/develop/project.md)
+      + [Creación de un proyecto de Asset Compute](./asset-compute/develop/project.md)
       + [Configuración de variables de entorno](./asset-compute/develop/environment-variables.md)
-      + [Configure manifest.yml](./asset-compute/develop/manifest.md)
-      + [Desarrollar un trabajador](./asset-compute/develop/worker.md)
-      + [Usar la herramienta de desarrollo](./asset-compute/develop/development-tool.md)
-   + Prueba y depuración{#test-debug}
+      + [Configurar manifest.yml](./asset-compute/develop/manifest.md)
+      + [Desarrollo de un trabajador](./asset-compute/develop/worker.md)
+      + [Uso de la herramienta de desarrollo](./asset-compute/develop/development-tool.md)
+   + Probar y depurar{#test-debug}
       + [Probar un trabajador](./asset-compute/test-debug/test.md)
       + [Depurar un trabajador](./asset-compute/test-debug/debug.md)
    + Implementar{#deploy}
       + [Implementar en Adobe I/O Runtime](./asset-compute/deploy/runtime.md)
-      + [Integrar con AEM](./asset-compute/deploy/processing-profiles.md)
+      + [Integración con AEM](./asset-compute/deploy/processing-profiles.md)
    + Avanzado {#advanced}
       + [Trabajadores de metadatos](./asset-compute/advanced/metadata.md)
    + [Solución de problemas](./asset-compute/troubleshooting.md)
-+ Tutorials de varios pasos{#multi-step-tutorials}
++ Tutoriales de varios pasos{#multi-step-tutorials}
    + [Desarrollo de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/develop-wknd-tutorial.html)
    + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)
-   + [Editor SPA (Reaccionar)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
-   + [Editor SPA (Angular)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/overview.html)
+   + [Editor de SPA (React)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
+   + [Editor de SPA (angular)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/overview.html)
    + [AEM Sites y Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html)
    + [Autenticación basada en tokens](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)
 
