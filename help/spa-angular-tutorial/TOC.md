@@ -20,9 +20,9 @@ ht-degree: 71%
 # Introducción al Editor de SPA y Angular de AEM {#spa-angular-tutorial}
 
 + [Información general](overview.md)
-+ [Proyecto del Editor SPA](create-project.md)
-+ [Integrar el SPA](integrate-spa.md)
-+ [Asignar componentes SPA](map-components.md)
++ [Proyecto de SPA Editor](create-project.md)
++ [Integración de la SPA](integrate-spa.md)
++ [Asignación de componentes de SPA](map-components.md)
 + [Navegación y enrutamiento](navigation-routing.md)
 + [Componente personalizado](custom-component.md)
 + [Ampliar componente](extend-component.md)
