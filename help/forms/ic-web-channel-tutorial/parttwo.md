@@ -4,18 +4,21 @@ seo-title: Creación de la configuración de la fuente de datos en AEM Forms
 description: Esta es la parte 2 del tutorial de varios pasos para crear su primer documento interactivo de comunicaciones. En esta parte, crearemos una fuente de datos respaldada por REST.  El siguiente vídeo recorre los pasos para crear la fuente de datos.
 seo-description: Esta es la parte 2 del tutorial de varios pasos para crear su primer documento interactivo de comunicaciones. En esta parte, crearemos una fuente de datos respaldada por REST.  El siguiente vídeo recorre los pasos para crear la fuente de datos.
 uuid: f20abc8d-3512-4a48-9688-524a0dfe732c
-feature: comunicación interactiva
+feature: Comunicación interactiva
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 0e1760ad-c412-4a55-a51a-d0875c55768e
+topic: Desarrollo
+role: Desarrollador
+level: Principiante
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '140'
-ht-degree: 0%
+source-wordcount: '144'
+ht-degree: 2%
 
 ---
 
