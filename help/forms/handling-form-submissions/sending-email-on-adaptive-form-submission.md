@@ -1,50 +1,53 @@
 ---
 title: Envío de correo electrónico en envío de formulario adaptable
 seo-title: Envío de correo electrónico en envío de formulario adaptable
-description: Enviar correo electrónico de confirmación al envío de formulario adaptable mediante el componente Enviar correo electrónico
-seo-description: Enviar correo electrónico de confirmación al envío de formulario adaptable mediante el componente Enviar correo electrónico
+description: Enviar correo electrónico de confirmación sobre el envío de formulario adaptable mediante el componente de envío de correo electrónico
+seo-description: Enviar correo electrónico de confirmación sobre el envío de formulario adaptable mediante el componente de envío de correo electrónico
 uuid: 6c9549ba-cb56-4d69-902c-45272a8fd17e
-feature: adaptive-forms
+feature: Formularios adaptables
 topics: authoring, integrations
 audience: developer
 doc-type: article
 activity: use
 discoiquuid: 1187357f-2f36-4a04-b708-44bb9c174fb5
+topic: Desarrollo
+role: Desarrollador
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 272e43ee4aeb756a3a1fd0ce55eaca94a9553fa4
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 0%
+source-wordcount: '237'
+ht-degree: 1%
 
 ---
 
 
 # Envío de correo electrónico en envío de formulario adaptable {#sending-email-on-adaptive-form-submission}
 
-Una de las acciones comunes es enviar un mensaje de correo electrónico de confirmación al remitente cuando el formulario adaptable se envía correctamente. Para lograrlo, seleccionaremos la acción &quot;Enviar correo electrónico&quot; como envío.
+Una de las acciones comunes es enviar un correo electrónico de confirmación al remitente cuando el formulario adaptable se envía correctamente. Para ello, seleccione &quot;Enviar correo electrónico&quot; como acción de envío.
 
-Puede usar la plantilla de correo electrónico o simplemente escribir el cuerpo del mensaje de correo electrónico como se muestra en esta captura de pantalla a continuación.
+Puede utilizar la plantilla de correo electrónico o simplemente escribir el cuerpo del correo electrónico como se muestra en esta captura de pantalla a continuación.
 
-Observe la sintaxis para insertar valores de campo de formulario en el correo electrónico.También tenemos la opción de incluir datos adjuntos de formulario en el correo electrónico, seleccionando la casilla de verificación &quot;incluir datos adjuntos&quot; en las propiedades de configuración.
+Observe la sintaxis para insertar valores de campo de formulario en el correo electrónico. También tenemos la opción de incluir archivos adjuntos de formulario en el correo electrónico, seleccionando la casilla &quot;incluir archivos adjuntos&quot; en las propiedades de configuración.
 
-Cuando se envía el formulario adaptable, el destinatario recibe un mensaje de correo electrónico.
+Cuando se envía el formulario adaptable, el destinatario recibe un correo electrónico.
 
 ![SendEmail](assets/sendemailaction.gif)
 
 ## Configuraciones necesarias {#configurations-needed}
 
-Tendrá que configurar el servicio Day CQ Mail. Esto se puede configurar señalando el explorador a [Felix Configuration Manager](http://localhost:4502/system/console/configMgr)
+Tendrá que configurar el servicio Day CQ Mail. Esto se puede configurar apuntando su navegador a [Felix Configuration Manager](http://localhost:4502/system/console/configMgr)
 
 La captura de pantalla muestra las propiedades de configuración del servidor de correo de adobe.
 
 ![mailservice](assets/mailservice.png)
 
-Para probar esto en el servidor, siga estas instrucciones:
+Para probar esto en su servidor, siga estas instrucciones:
 
-* [Importe los ](assets/timeoffrequest.zip) recursos asociados a este artículo en AEM con el administrador de paquetes.
+* [Importe los ](assets/timeoffrequest.zip) recursos asociados a este artículo en AEM mediante el administrador de paquetes.
 
 * Abra [TimeOffRequestForm](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled).
 
-* Rellene los detalles.Asegúrese de proporcionar una dirección de correo electrónico válida en el campo Correo electrónico.
+* Rellene los detalles. Asegúrese de proporcionar una dirección de correo electrónico válida en el campo de correo electrónico.
 
 * Envíe el formulario.
