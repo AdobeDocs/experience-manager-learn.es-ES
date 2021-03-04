@@ -1,7 +1,7 @@
 ---
 title: Almacenamiento y recuperación de datos de formulario con datos adjuntos de la base de datos MySQL
 description: Tutorial de varias partes para guiarle por los pasos necesarios para almacenar y recuperar datos de formulario con archivos adjuntos
-feature: formularios adaptables
+feature: Formularios adaptables
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,11 +9,14 @@ activity: implement
 version: 6.4,6.5
 kt: 6593
 thumbnail: 327122.jpg
+topic: Desarrollo
+role: Desarrollador
+level: Con experiencia
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 2%
+source-wordcount: '212'
+ht-degree: 4%
 
 ---
 
