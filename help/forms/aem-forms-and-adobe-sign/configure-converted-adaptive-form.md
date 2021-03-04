@@ -1,24 +1,27 @@
 ---
 title: Configurar formulario adaptable convertido
 description: Configurar formulario adaptable convertido
-feature: adaptive-forms
+feature: Formularios adaptables
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 thumbnail: 39574.jpg
 kt: 6126
+topic: Desarrollo
+role: Profesional empresarial
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 451ca39511b52e90a44bba25c6739280f49a0aac
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '74'
-ht-degree: 0%
+source-wordcount: '80'
+ht-degree: 3%
 
 ---
 
 # Configurar formulario adaptable convertido
 
-Después de convertir el formulario PDF en un formulario adaptable, normalmente tendrá que proporcionar títulos significativos y es posible que también tenga que reorganizar algunos campos. El formulario también deberá configurarse para utilizar la integración de Adobe Sign en la experiencia de firma in situ.
+Después de convertir el formulario PDF en un formulario adaptable, normalmente tendrá que proporcionar algunos títulos significativos y también puede ser necesario reorganizar algunos campos. También será necesario configurar el formulario para que utilice la integración de Adobe Sign para la experiencia de firma in situ.
 
 En el siguiente vídeo se explican los pasos necesarios para configurar el formulario para la experiencia de firma in situ
 
