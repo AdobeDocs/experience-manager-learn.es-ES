@@ -1,26 +1,25 @@
 ---
-title: Información general del panel Vínculo de recursos de Adobe
-description: 'Adobe Asset Link ofrece a los usuarios creativos la posibilidad de examinar, buscar, extraer y registrar recursos almacenados en AEM Assets mediante el panel integrado en la aplicación en InDesign, Photoshop y Illustrator. Obtenga información sobre la interfaz de usuario del panel Vínculo de recursos de Adobe y sus funciones. '
+title: Información general del panel de Adobe Asset Link
+description: 'Adobe Asset Link permite a los usuarios creativos examinar, buscar, extraer y registrar recursos almacenados en AEM Assets mediante el panel integrado en InDesign, Photoshop e Illustrator. Obtenga información sobre la interfaz de usuario del panel Adobe Asset Link y sus capacidades. '
 sub-product: activos
-feature: adobe-asset-link
-topics: authoring, collaboration, operations, sharing, metadata, images
-audience: all
-doc-type: feature video
-activity: use
-version: null
+feature: Adobe Asset Link
+version: cloud-service
 kt: 4905
 thumbnail: 33734.jpg
+topic: Administración de contenido
+role: Profesional empresarial
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '95'
-ht-degree: 0%
+source-wordcount: '103'
+ht-degree: 4%
 
 ---
 
 
-# Información general del panel Vínculo de recursos de Adobe {#adobe-asset-link-panel-overview}
+# Información general del panel de Adobe Asset Link {#adobe-asset-link-panel-overview}
 
-Adobe Asset Link ofrece a los usuarios creativos la posibilidad de examinar, buscar, extraer y registrar recursos almacenados en AEM Assets mediante el panel integrado en la aplicación en InDesign, Photoshop y Illustrator. Obtenga información sobre la interfaz de usuario del panel Vínculo de recursos de Adobe y sus funciones.
+Adobe Asset Link permite a los usuarios creativos examinar, buscar, extraer y registrar recursos almacenados en AEM Assets mediante el panel integrado en InDesign, Photoshop e Illustrator. Obtenga información sobre la interfaz de usuario del panel Adobe Asset Link y sus capacidades.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33734/?quality=12)
