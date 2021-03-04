@@ -2,19 +2,17 @@
 title: Uso del panel Información general del sistema en AEM
 description: En versiones anteriores de los administradores de AEM tenían que ver varias ubicaciones para obtener una imagen completa de la instancia de AEM. El objetivo de la Información general del sistema es solucionarlo proporcionando una vista de alto nivel de la configuración, el hardware y el estado de la instancia de AEM desde un único panel.
 version: 6.4, 6.5
+feature: null
 topics: administration, operations, monitoring
 activity: use
 audience: administrator, architect, developer, implementer
 doc-type: technical video
 contentOwner: dgordon
-topic: Administración
-role: Administrador
-level: Principiante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 1%
+source-wordcount: '142'
+ht-degree: 0%
 
 ---
 
