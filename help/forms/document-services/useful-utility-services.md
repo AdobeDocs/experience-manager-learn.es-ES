@@ -1,24 +1,27 @@
 ---
 title: Servicios de utilidad
-description: Algunos servicios útiles para desarrolladores de AEM Forms
-feature: document-services
+description: Algunos servicios útiles para el desarrollador de AEM Forms
+feature: Formularios adaptables
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
+topic: Desarrollo
+role: Desarrollador
+level: Intermedio
 translation-type: tm+mt
-source-git-commit: 243e26e2403e3d7816a0dd024ffbe73743827c7c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 0%
+source-wordcount: '160'
+ht-degree: 3%
 
 ---
 
 
 # Servicios de utilidad
 
-Este paquete de muestra proporciona servicios de utilidad útiles que puede utilizar un desarrollador de AEM Forms. Los siguientes servicios están disponibles.
+Este paquete de ejemplo proporciona servicios útiles de utilidad que puede utilizar un desarrollador de AEM Forms. Los siguientes servicios están disponibles.
 
 
 ```java
@@ -37,9 +40,9 @@ public abstract String saveDocumentInCrx(String jcrPath,String fileExtension, Do
 
 El paquete de muestra se puede [descargar desde aquí](assets/aemformsutilityfunctions.aemformsutilityfunctions.core-1.0-SNAPSHOT.jar)
 
-## Código de muestra para utilizar los servicios de utilidad
+## Código de ejemplo para utilizar los servicios de utilidad
 
-El siguiente es el código que se utilizó en la página JSP para crear org.w3c.dom.Documento a partir de una cadena y convertir el documento y almacenarlo en el repositorio de CRX, como se muestra en el siguiente fragmento de código.
+El siguiente es el código que se utilizó en la página JSP para crear org.w3c.dom.Document a partir de una cadena y convertir el documento y almacenarlo en el repositorio CRX como se muestra en el siguiente fragmento de código.
 
 ```java
  aemformsutilityfunctions.core.AemFormsUtilities aemFormsUtilities = sling.getService(aemformsutilityfunctions.core.AemFormsUtilities.class);
@@ -50,8 +53,8 @@ aemFormsUtilities.saveDocumentInCrx("/content/xmlfiles",".xml",xmlStringDoc);
 ## Requisitos previos
 
 
-Deberá implementar [DevelopingWithServiceUserBundle](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/DevelopingWithServiceUser.jar) y inicio del paquete.
+Deberá implementar [DevelopingWithServiceUserBundle](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/DevelopingWithServiceUser.jar) e iniciar el paquete.
 
 
-Si va a guardar documentos en el repositorio de CRX mediante este servicio de utilidad, siga el [desarrollo con el artículo del usuario del servicio](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html?lang=en#adaptive-forms). Asegúrese de proporcionar al usuario de fd-service los [permisos requeridos](http://localhost:4502/useradmin) en las carpetas CRX correspondientes.
+Si va a guardar documentos en el repositorio CRX usando este servicio de utilidad, siga el artículo [desarrollo con el usuario del servicio](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html?lang=en#adaptive-forms). Asegúrese de proporcionar los [permisos requeridos](http://localhost:4502/useradmin) en las carpetas CRX correspondientes al usuario del servicio fd.
 
