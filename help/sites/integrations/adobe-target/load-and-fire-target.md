@@ -1,7 +1,7 @@
 ---
-title: Carga y activación de una llamada de Destinatario
-description: Obtenga información sobre cómo cargar, pasar parámetros a una solicitud de página y activar una llamada de Destinatario desde la página del sitio mediante una regla de inicio. La información de la página se recupera y pasa como parámetros mediante la capa de datos del cliente de Adobe, que permite recopilar y almacenar datos sobre la experiencia de los visitantes en una página web y, a continuación, facilitar el acceso a estos datos.
-feature: launch, core-components, data-layer
+title: Carga y activación de una llamada de Target
+description: Obtenga información sobre cómo cargar, pasar parámetros a una solicitud de página y activar una llamada de Target desde la página del sitio mediante una regla de Launch. La información de la página se recupera y pasa como parámetros mediante la capa de datos del cliente de Adobe, que permite recopilar y almacenar datos sobre la experiencia de los visitantes en una página web y, a continuación, facilitar el acceso a estos datos.
+feature: Componentes principales, capa de datos del cliente de Adobe
 topics: integrations, administration, development
 audience: administrator, developer
 doc-type: technical video
@@ -9,36 +9,39 @@ activity: setup
 version: cloud-service
 kt: 6133
 thumbnail: 41243.jpg
+topic: Integraciones
+role: Desarrollador
+level: Intermedio
 translation-type: tm+mt
-source-git-commit: 9102505bbd826e17bf924cec719d7a430eea5095
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '622'
 ht-degree: 3%
 
 ---
 
 
-# Cargue y active una llamada de Destinatario {#load-fire-target}
+# Carga y activación de una llamada de Target {#load-fire-target}
 
-Obtenga información sobre cómo cargar, pasar parámetros a una solicitud de página y activar una llamada de Destinatario desde la página del sitio mediante una regla de inicio. La información de la página web se recupera y pasa como parámetros mediante la capa de datos del cliente de Adobe, que permite recopilar y almacenar datos sobre la experiencia de los visitantes en una página web y, a continuación, facilitar el acceso a estos datos.
+Obtenga información sobre cómo cargar, pasar parámetros a una solicitud de página y activar una llamada de Target desde la página del sitio mediante una regla de Launch. La información de la página web se recupera y pasa como parámetros mediante la capa de datos del cliente de Adobe, que permite recopilar y almacenar datos sobre la experiencia de los visitantes en una página web y, a continuación, facilitar el acceso a estos datos.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41243?quality=12&learn=on)
 
 ## Regla de carga de página
 
-La capa de datos del cliente de Adobe es una capa de datos controlada por eventos. Cuando se carga la capa de datos de la página de AEM, se déclencheur un evento `cmp:show`. En el vídeo, la regla `Launch Library Loaded` se invoca mediante un evento personalizado. A continuación, puede encontrar los fragmentos de código utilizados en el vídeo para el evento personalizado, así como para los elementos de datos.
+La capa de datos del cliente de Adobe es una capa de datos controlada por evento. Cuando se carga la capa de datos de la página de AEM, se activa un evento `cmp:show` . En el vídeo, la regla `Launch Library Loaded` se invoca mediante un evento personalizado. A continuación, puede encontrar los fragmentos de código utilizados en el vídeo para el evento personalizado así como para los elementos de datos.
 
-### Página personalizada Muestra el Evento{#page-event}
+### Evento de página personalizada mostrada{#page-event}
 
-![La página muestra la configuración del evento y el código personalizado](assets/load-and-fire-target-call.png)
+![Página mostrada: configuración de eventos y código personalizado](assets/load-and-fire-target-call.png)
 
-En la propiedad Launch, agregue un nuevo **Evento** a la **regla**
+En la propiedad de Launch, agregue un nuevo **Evento** a la **Regla**
 
 + __Extensión:__ Core
-+ __tipo de evento:Código__ personalizado
-+ __Nombre:__ Page Show Evento Handler (o algo descriptivo)
++ __Tipo de evento:__ código personalizado
++ __Nombre:__ Controlador de eventos de programa de la página (o algo descriptivo)
 
-Toque el botón __Abrir editor__ y pegue el siguiente fragmento de código. Este código __debe__ agregarse a la __Configuración de Evento__ y a una __Acción__ subsiguiente.
+Pulse el botón __Abrir editor__ y pegue el siguiente fragmento de código. Este código __debe__ agregarse a la __Configuración del evento__ y a una __Acción__ posterior.
 
 ```javascript
 // Define the event handler function
@@ -78,22 +81,22 @@ window.adobeDataLayer.push(function (dataLayer) {
 });
 ```
 
-Una función personalizada define el `pageShownEventHandler` y escucha los eventos emitidos por AEM componentes principales, obtiene la información relevante del componente principal, lo empaqueta en un objeto evento y déclencheur el Evento Launch con la información de evento derivada en su carga útil.
+Una función personalizada define el `pageShownEventHandler` y escucha los eventos emitidos por los componentes principales de AEM, obtiene la información relevante del componente principal, la empaqueta en un objeto de evento y activa el evento de Launch con la información de evento derivada en su carga útil.
 
-La regla de inicio se activa mediante la función `trigger(...)` de Launch, que __sólo__ está disponible desde la definición de fragmento de código personalizado del Evento de una regla.
+La regla de Launch se activa utilizando la función `trigger(...)` de Launch, que __solo__ está disponible dentro de la definición de fragmento de código personalizado de un evento de regla.
 
-La función `trigger(...)` toma un objeto evento como parámetro que, a su vez, se expone en Launch Data Elements, con otro nombre reservado en Launch denominado `event`. Los elementos de datos de Launch ahora pueden hacer referencia a datos de este objeto de evento desde el objeto `event` mediante sintaxis como `event.component['someKey']`.
+La función `trigger(...)` toma un objeto de evento como parámetro que, a su vez, se expone en los elementos de datos de Launch, con otro nombre reservado en Launch denominado `event`. Los elementos de datos de Launch ahora pueden hacer referencia a los datos de este objeto de evento desde el objeto `event` mediante sintaxis como `event.component['someKey']`.
 
-Si `trigger(...)` se utiliza fuera del contexto del tipo de evento de código personalizado de un Evento (por ejemplo, en una acción), el error de JavaScript `trigger is undefined` se genera en el sitio Web integrado con la propiedad Launch.
+Si `trigger(...)` se utiliza fuera del contexto del tipo de evento de Custom Code de un Evento (por ejemplo, en una Acción), el error `trigger is undefined` de JavaScript se genera en el sitio web integrado con la propiedad Launch.
 
 
 ### Elementos de datos
 
 ![Elementos de datos](assets/data-elements.png)
 
-Los elementos de datos de inicio de Adobe asignan los datos del objeto de evento [activado en el evento personalizado Página mostrada](#page-event) a las variables disponibles en Adobe Target, a través del tipo de elemento de datos de código personalizado de la extensión Core.
+Los elementos de datos de Adobe Launch asignan los datos del objeto de evento [activado en el evento personalizado Página mostrada](#page-event) a las variables disponibles en Adobe Target, a través del Tipo de elemento de datos de código personalizado de la extensión principal.
 
-#### Elemento de datos de ID de página
+#### Elemento de datos ID de página
 
 ```
 if (event && event.id) {
@@ -101,7 +104,7 @@ if (event && event.id) {
 }
 ```
 
-Este código devuelve el identificador exclusivo de generación del componente principal.
+Este código devuelve el ID exclusivo generado por el componente principal.
 
 ![ID de página](assets/pageid.png)
 
@@ -113,11 +116,11 @@ if (event && event.component && event.component.hasOwnProperty('repo:path')) {
 }
 ```
 
-Este código devuelve la ruta de la página AEM.
+Este código devuelve la ruta de la página de AEM.
 
 ![Ruta de página](assets/pagepath.png)
 
-### Elemento de datos de título de página
+### Elemento de datos Título de página
 
 ```
 if (event && event.component && event.component.hasOwnProperty('dc:title')) {
@@ -131,11 +134,11 @@ Este código devuelve el título de la página de AEM.
 
 ## Solución de problemas
 
-### ¿Por qué mis mboxes no se activan en mis páginas web?
+### ¿Por qué no se activan los mboxes en mis páginas web?
 
-#### Mensaje de error cuando no se configuró la cookie mboxDisable
+#### Mensaje de error cuando no se ha establecido la cookie mboxDisable
 
-![Error de dominio de cookie de destinatario](assets/target-cookie-error.png)
+![Error de dominio de cookie de Target](assets/target-cookie-error.png)
 
 ```
 > AT: [page-init] Adobe Target content delivery is disabled. Ensure that you can save cookies to your current domain, there is no "mboxDisable" cookie and there is no "mboxDisable" parameter in the query string.
@@ -143,8 +146,8 @@ Este código devuelve el título de la página de AEM.
 
 #### Solución
 
-A veces, los clientes de destinatario utilizan instancias basadas en la nube con Destinatario para realizar pruebas o con fines sencillos de prueba del concepto. Estos dominios, y muchos otros, son parte de la Lista de Sufijo Público .
-Los navegadores modernos no guardarán las cookies si utiliza estos dominios a menos que personalice la configuración `cookieDomain` mediante `targetGlobalSettings()`.
+Los clientes de Target a veces utilizan instancias basadas en la nube con Target para realizar pruebas o simplemente exponer conceptos. Estos dominios, y muchos otros, forman parte de la Lista pública de sufijos .
+Los navegadores modernos no guardarán las cookies si utiliza estos dominios, a menos que personalice la configuración `cookieDomain` mediante `targetGlobalSettings()`.
 
 ```
 window.targetGlobalSettings = {  
@@ -152,14 +155,14 @@ window.targetGlobalSettings = {
 };
 ```
 
-## Próximos pasos
+## Pasos siguientes
 
 + [Exportar fragmento de experiencia a Adobe Target](./export-experience-fragment-target.md)
 
-## Vínculos de soporte
+## Compatibilidad con vínculos
 
 + [Documentación de la capa de datos del cliente de Adobe](https://github.com/adobe/adobe-client-data-layer/wiki)
 + [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
-+ [Adobe Experience Cloud Debugger - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
-+ [Uso de la capa de datos del cliente de Adobe y de la documentación de componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/developing/data-layer/overview.html)
++ [Adobe Experience Cloud Debugger: Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
++ [Uso de la capa de datos del cliente de Adobe y la documentación de componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/developing/data-layer/overview.html)
 + [Introducción a Adobe Experience Platform Debugger](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/web-sdk/introduction-to-the-experience-platform-debugger.html)
