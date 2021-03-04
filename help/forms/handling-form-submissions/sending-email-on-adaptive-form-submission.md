@@ -4,20 +4,17 @@ seo-title: Envío de correo electrónico en envío de formulario adaptable
 description: Enviar correo electrónico de confirmación sobre el envío de formulario adaptable mediante el componente de envío de correo electrónico
 seo-description: Enviar correo electrónico de confirmación sobre el envío de formulario adaptable mediante el componente de envío de correo electrónico
 uuid: 6c9549ba-cb56-4d69-902c-45272a8fd17e
-feature: Formularios adaptables
+feature: formularios adaptables
 topics: authoring, integrations
 audience: developer
 doc-type: article
 activity: use
 discoiquuid: 1187357f-2f36-4a04-b708-44bb9c174fb5
-topic: Desarrollo
-role: Desarrollador
-level: Principiante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 1%
+source-wordcount: '233'
+ht-degree: 0%
 
 ---
 
