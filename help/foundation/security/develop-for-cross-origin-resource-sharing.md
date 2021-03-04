@@ -1,45 +1,47 @@
 ---
-title: Desarrollar para uso compartido de recursos entre Orígenes (CORS) con AEM
-description: Un ejemplo breve de cómo aprovechar CORS para acceder a contenido AEM desde una aplicación web externa a través de JavaScript del lado del cliente.
+title: Desarrollo para el uso compartido de recursos de origen cruzado (CORS) con AEM
+description: Un breve ejemplo de cómo aprovechar CORS para acceder al contenido de AEM desde una aplicación web externa a través de JavaScript del lado del cliente.
 version: 6.3, 6,4, 6.5
 sub-product: fundación, servicios de contenido, sitios
-feature: null
 topics: security, development, content-delivery
 activity: develop
 audience: developer
 doc-type: tutorial
+topic: Seguridad
+role: Desarrollador
+level: Principiante
 translation-type: tm+mt
-source-git-commit: bc14783840a47fb79ddf1876aca1ef44729d097e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
 
 
-# Desarrollar para el uso compartido de recursos entre Orígenes (CORS)
+# Desarrollo para el intercambio de recursos de origen cruzado (CORS)
 
-Un ejemplo breve de cómo aprovechar [!DNL CORS] para acceder a contenido AEM desde una aplicación Web externa mediante JavaScript del lado del cliente.
+Un breve ejemplo de cómo aprovechar [!DNL CORS] para acceder al contenido de AEM desde una aplicación web externa a través de JavaScript del lado del cliente.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18837/?quality=12&learn=on)
 
 En este vídeo:
 
-* **www.example.** comaps para localhost mediante  `/etc/hosts`
-* **aem-publish.** localmaps a localhost mediante  `/etc/hosts`
-* [SimpleHTTPServer](https://itunes.apple.com/us/app/simple-http-server/id441002840?mt=12) (un contenedor para SimpleHTTPServer [[!DNL Python] de ](https://docs.python.org/2/library/simplehttpserver.html)s) está sirviendo la página HTML a través del puerto 8000.
-* [!DNL AEM Dispatcher] se ejecuta en  [!DNL Apache HTTP Web Server] 2.4 y se realiza una solicitud de proxy inverso  `aem-publish.local` en  `localhost:4503`.
+* **www.example.** se compila en localhost mediante  `/etc/hosts`
+* **aem-publish.** localmaps para localhost a través de  `/etc/hosts`
+* [SimpleHTTPServer](https://itunes.apple.com/us/app/simple-http-server/id441002840?mt=12)  (un envoltorio para  [[!DNL Python]SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html) de de ) está sirviendo la página HTML a través del puerto 8000.
+* [!DNL AEM Dispatcher] se ejecuta en  [!DNL Apache HTTP Web Server] 2.4 y la solicitud de proxy inverso  `aem-publish.local` a  `localhost:4503`.
 
-Para obtener más información, consulte [Explicación del uso compartido de recursos entre Orígenes (CORS) en AEM](./understand-cross-origin-resource-sharing.md).
+Para obtener más información, consulte [Explicación del uso compartido de recursos de origen cruzado (CORS) en AEM](./understand-cross-origin-resource-sharing.md).
 
 ## www.example.com HTML y JavaScript
 
-Esta página Web tiene lógica en que
+Esta página web tiene lógica que
 
 1. Al hacer clic en el botón
-1. Realiza una solicitud [!DNL AJAX GET] a `http://aem-publish.local/content/we-retail/.../experience/_jcr_content.1.json`
-1. Recupera el `jcr:title` formulario de la respuesta JSON
-1. Inyecta el `jcr:title` en el DOM
+1. Hace una [!DNL AJAX GET] solicitud a `http://aem-publish.local/content/we-retail/.../experience/_jcr_content.1.json`
+1. Recupera el `jcr:title` de la respuesta JSON
+1. Inserta el `jcr:title` en el DOM
 
 ```xml
 <html>
@@ -72,9 +74,9 @@ Esta página Web tiene lógica en que
 </html>
 ```
 
-## Configuración de fábrica OSGi
+## Configuración de fábrica de OSGi
 
-La fábrica de configuración OSGi para [!DNL Cross-Origin Resource Sharing] está disponible mediante:
+La fábrica de configuración OSGi para [!DNL Cross-Origin Resource Sharing] está disponible a través de:
 
 * `http://<host>:<port>/system/console/configMgr > [!UICONTROL Adobe Granite Cross-Origin Resource Sharing Policy]`
 
@@ -96,7 +98,7 @@ Access-Control-Request-Method,Access-Control-Request-Headers]"
 
 ## Configuración de Dispatcher {#dispatcher-configuration}
 
-Para permitir el almacenamiento en caché y el servicio de encabezados CORS en contenido en caché, agregue la siguiente [/configuración de los encabezados de cliente](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders) a todos los archivos de AEM Publish `dispatcher.any` compatibles.
+Para permitir el almacenamiento en caché y la entrega de encabezados CORS en contenido almacenado en caché, añada la siguiente [/configuración de encabezados de clientes](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders) a todos los archivos `dispatcher.any` de AEM Publish compatibles.
 
 ```
 /cache { 
@@ -115,15 +117,15 @@ Para permitir el almacenamiento en caché y el servicio de encabezados CORS en c
 
 **Reinicie la** aplicación del servidor web después de realizar cambios en el  `dispatcher.any` archivo.
 
-Es probable que borre la caché por completo para garantizar que los encabezados se almacenen correctamente en la caché en la siguiente solicitud después de una actualización de configuración `/clientheaders`.
+Es probable que se borre la caché por completo para garantizar que los encabezados se almacenen correctamente en caché en la siguiente solicitud después de una actualización de configuración `/clientheaders`.
 
-## Materiales de apoyo {#supporting-materials}
+## Materiales de soporte {#supporting-materials}
 
-* [AEM fábrica de configuración de OSGi para directivas de uso compartido de recursos entre Orígenes](http://localhost:4502/system/console/configMgr/com.adobe.granite.cors.impl.CORSPolicyImpl)
+* [Fábrica de configuración de AEM OSGi para políticas de intercambio de recursos de origen cruzado](http://localhost:4502/system/console/configMgr/com.adobe.granite.cors.impl.CORSPolicyImpl)
 * [SimpleHTTPServer para macOS](https://itunes.apple.com/us/app/simple-http-server/id441002840?mt=12)
-* [Python SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html) (compatible con Windows/macOS/Linux)
+* [Python SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)  (compatible con Windows/macOS/Linux)
 
-* [Explicación del uso compartido de recursos entre Orígenes (CORS) en AEM](./understand-cross-origin-resource-sharing.md)
-* [Uso compartido de recursos entre Orígenes (W3C)](https://www.w3.org/TR/cors/)
-* [CONTROL DE ACCESO HTTP (Mozilla MDN)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)
+* [Explicación del uso compartido de recursos de origen cruzado (CORS) en AEM](./understand-cross-origin-resource-sharing.md)
+* [Uso compartido de recursos de origen cruzado (W3C)](https://www.w3.org/TR/cors/)
+* [Control de acceso HTTP (MDN Mozilla)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)
 
