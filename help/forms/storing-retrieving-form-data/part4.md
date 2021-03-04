@@ -1,27 +1,30 @@
 ---
 title: Almacenamiento y recuperación de datos de formulario de la base de datos MySQL
 description: Tutorial de varias partes para guiarle por los pasos necesarios para almacenar y recuperar datos de formulario
-feature: adaptive-forms
+feature: Formularios adaptables
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.3,6.4,6.5
+topic: Desarrollo
+role: Desarrollador
+level: Con experiencia
 translation-type: tm+mt
-source-git-commit: 787a79663472711b78d467977d633e3d410803e5
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '144'
-ht-degree: 0%
+source-wordcount: '149'
+ht-degree: 2%
 
 ---
 
 # Crear biblioteca de cliente
 
-AEM biblioteca de clientes administra todo el código JavaScript del lado del cliente. Para este artículo, he creado un JavaScript sencillo para recuperar los datos del formulario adaptable mediante la API de puente de guía. Una vez recuperados los datos del formulario adaptable, el POST llama al servlet para insertar o actualizar los datos del formulario adaptable en la base de datos. La función getALLUrlParams devuelve los parámetros de la dirección URL. Si el parámetro guid está presente en la dirección URL, entonces debemos realizar la operación de actualización, si no es una operación de inserción. El resto de la funcionalidad se gestiona en el código asociado con el evento click de la clase .savebutton.
+La biblioteca de cliente de AEM administra todo el código JavaScript del lado del cliente. Para este artículo, he creado un JavaScript simple para recuperar los datos del formulario adaptable mediante la API del puente de guía. Una vez recuperados los datos del formulario adaptable, se realiza la llamada POST al servlet para insertar o actualizar los datos del formulario adaptable en la base de datos. La función getALLUrlParams devuelve los parámetros de la dirección URL. Si el parámetro guid está presente en la URL, entonces necesitamos realizar la operación de actualización, si no es una operación de inserción. El resto de la funcionalidad se gestiona en el código asociado con el evento click de la clase .savebutton.
 
 >[!NOTE]
 >
->La biblioteca del cliente se proporciona como parte de estos recursos del tutorial
+>La biblioteca del cliente se proporciona como parte de estos recursos de tutorial
 
 ```javascript
 function getAllUrlParams(url) {
