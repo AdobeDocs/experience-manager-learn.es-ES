@@ -1,27 +1,24 @@
 ---
-title: Uso de visores de Dynamic Media con Adobe Analytics y Adobe Launch
-seo-title: Uso de visores de Dynamic Media con Adobe Analytics y Adobe Launch
+title: Uso de visualizadores de Dynamic Media con Adobe Analytics y Adobe Launch
 description: La extensión de visores de Dynamic Media para Adobe Launch, junto con la versión 5.13 de visores de Dynamic Media, permite a los clientes de Dynamic Media, Adobe Analytics y Adobe Launch utilizar eventos y datos específicos para los visores de Dynamic Media en su configuración de Adobe Launch.
-seo-description: 'La extensión de visores de Dynamic Media para Adobe Launch, junto con la versión 5.13 de visores de Dynamic Media, permite a los clientes de Dynamic Media, Adobe Analytics y Adobe Launch utilizar eventos y datos específicos para los visores de Dynamic Media en su configuración de Adobe Launch. '
-sub-product: Dynamic-media, análisis
-feature: asset-insights, media-player
-topics: images, videos, renditions, authoring, integrations, publishing
-doc-type: feature video
-audience: all
-activity: use
+sub-product: Dynamic Media
+feature: 'Información sobre Assets '
 version: 6.3, 6.4, 6.5
+topic: Administración de contenido
+role: Profesional empresarial
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 23%
+source-wordcount: '367'
+ht-degree: 17%
 
 ---
 
 
-# Uso de visores de Dynamic Media con Adobe Analytics y Adobe Launch{#using-dynamic-media-viewers-adobe-analytics-launch}
+# Uso de visualizadores de Dynamic Media con Adobe Analytics y Adobe Launch{#using-dynamic-media-viewers-adobe-analytics-launch}
 
-Para los clientes con Dynamic Media y Adobe Analytics, ahora puede realizar un seguimiento del uso de visores de Dynamic Media en su sitio web mediante Dynamic Media Viewer Extension.
+Para los clientes con Dynamic Media y Adobe Analytics, ahora puede realizar un seguimiento del uso de los visualizadores de Dynamic Media en su sitio web mediante la extensión del visualizador de Dynamic Media.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29308/?quality=12&learn=on)
 
@@ -29,13 +26,13 @@ Para los clientes con Dynamic Media y Adobe Analytics, ahora puede realizar un s
 >
 > Ejecute Adobe Experience Manager en el modo Dynamic Media Scene7 para esta funcionalidad. También debe [integrar Adobe Experience Platform Launch con su instancia de AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html).
 
-Con la introducción de la extensión del visor de Dynamic Media, Adobe Experience Manager ahora oferta la compatibilidad de análisis avanzados con los recursos entregados con visores de Dynamic Media (5.13), lo que proporciona un control más granular del seguimiento de eventos cuando se utiliza un visor de Dynamic Media en una página Sitios.
+Con la introducción de la extensión del visualizador de Dynamic Media, Adobe Experience Manager ahora ofrece compatibilidad avanzada de análisis para los recursos entregados con los visualizadores de Dynamic Media (5.13), lo que proporciona un control más granular sobre el seguimiento de eventos cuando se utiliza un visualizador de Dynamic Media en una página de Sites.
 
-Si ya tiene AEM Assets y Sitios, puede integrar la propiedad Launch con la instancia de creación de AEM. Una vez que la integración de inicio esté asociada con el sitio web, puede agregar componentes de medios dinámicos a la página con el seguimiento de eventos para los visores habilitados.
+Si ya tiene AEM Assets y Sites, puede integrar la propiedad de Launch con la instancia de autor de AEM. Una vez que la integración de launch esté asociada con el sitio web, puede añadir componentes de Dynamic Media a la página con el seguimiento de eventos para los visualizadores habilitado.
 
-Para los clientes solo de AEM Assets o de Dynamic Media Classic, el usuario puede obtener el código incrustado de un visor y agregarlo a la página. Iniciar Las bibliotecas de secuencias de comandos se pueden agregar manualmente a la página para el seguimiento de eventos del visor.
+Para los clientes solo de AEM Assets o los clientes de Dynamic Media Classic, el usuario puede obtener el código incrustado de un visor y añadirlo a la página. Las bibliotecas de script de Launch se pueden agregar manualmente a la página para el seguimiento de eventos del visor.
 
-La tabla siguiente lista los eventos del visor de Dynamic Media y sus argumentos admitidos:
+En la tabla siguiente se enumeran los eventos del visualizador de Dynamic Media y sus argumentos admitidos:
 
 <table>
    <tbody>
@@ -60,7 +57,7 @@ La tabla siguiente lista los eventos del visor de Dynamic Media y sus argumentos
          <td> %event.detail.dm.timeStamp% </td>
       </tr>
       <tr>
-         <td> PANCARTA <br></td>
+         <td> BANNER <br></td>
          <td> %event.detail.dm.BANNER.asset% </td>
       </tr>
       <tr>
@@ -80,7 +77,7 @@ La tabla siguiente lista los eventos del visor de Dynamic Media y sus argumentos
          <td> %event.detail.dm.ITEM.rollover% </td>
       </tr>
       <tr>
-         <td> CARGAR </td>
+         <td> CARGA </td>
          <td> %event.detail.dm.LOAD.applicationname% </td>
       </tr>
       <tr>
@@ -89,7 +86,7 @@ La tabla siguiente lista los eventos del visor de Dynamic Media y sus argumentos
       </tr>
       <tr>
          <td><strong> </strong></td>
-         <td> %event.detail.dm.LOAD.compañía% </td>
+         <td> %event.detail.dm.LOAD.company% </td>
       </tr>
       <tr>
          <td><strong> </strong></td>
@@ -124,7 +121,7 @@ La tabla siguiente lista los eventos del visor de Dynamic Media y sus argumentos
          <td> %event.detail.dm.PAGE.label% </td>
       </tr>
       <tr>
-         <td> PAUSE </td>
+         <td> PAUSA </td>
          <td> %event.detail.dm.PAUSE.timestamp% </td>
       </tr>
       <tr>
@@ -136,7 +133,7 @@ La tabla siguiente lista los eventos del visor de Dynamic Media y sus argumentos
          <td> %event.detail.dm.SPIN.framenumber% </td>
       </tr>
       <tr>
-         <td> DETENER </td>
+         <td> STOP </td>
          <td> %event.detail.dm.STOP.timestamp% </td>
       </tr>
       <tr>
@@ -169,5 +166,5 @@ La tabla siguiente lista los eventos del visor de Dynamic Media y sus argumentos
 ## Recursos adicionales{#additional-resources}
 
 * [Integración de Adobe Experience Manager con Adobe Launch](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html)
-* [Ejecución de Adobe Experience Manager en el modo Scene7 de Dynamic Media](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dms7.html)
+* [Ejecución de Adobe Experience Manager en el modo Dynamic Media Scene7](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dms7.html)
 * [Integración de visualizadores de Dynamic Media con Adobe Analytics y Adobe Launch](https://helpx.adobe.com/experience-manager/6-5/assets/using/launch.html)
