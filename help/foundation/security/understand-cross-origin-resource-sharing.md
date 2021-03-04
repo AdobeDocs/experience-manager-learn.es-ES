@@ -1,37 +1,39 @@
 ---
-title: Comprender el uso compartido de recursos entre Orígenes (CORS) con AEM
-description: El uso compartido de recursos entre Orígenes (CORS, Cross- Resource Sharing ) de Adobe Experience Manager facilita las propiedades web no AEM para realizar llamadas del cliente a AEM, tanto autenticadas como no autenticadas, para recuperar contenido o interactuar directamente con AEM.
+title: Comprender el uso compartido de recursos de origen cruzado (CORS) con AEM
+description: El uso compartido de recursos de origen cruzado (CORS) de Adobe Experience Manager facilita las propiedades web que no son de AEM para realizar llamadas del lado del cliente a AEM, tanto autenticadas como no autenticadas, para recuperar contenido o interactuar directamente con AEM.
 version: 6.3, 6,4, 6.5
 sub-product: fundación, servicios de contenido, sitios
-feature: null
 topics: security, development, content-delivery
 activity: understand
 audience: architect, developer
 doc-type: article
+topic: Seguridad
+role: Desarrollador
+level: Intermedio
 translation-type: tm+mt
-source-git-commit: bc14783840a47fb79ddf1876aca1ef44729d097e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '920'
 ht-degree: 1%
 
 ---
 
 
-# Comprender el uso compartido de recursos entre Orígenes ([!DNL CORS])
+# Comprender el uso compartido de recursos de origen cruzado ([!DNL CORS])
 
-El uso compartido de recursos entre Orígenes ([!DNL CORS]) de Adobe Experience Manager facilita las propiedades web no AEM para realizar llamadas del cliente a AEM, autenticadas y no autenticadas, para recuperar contenido o interactuar directamente con AEM.
+El uso compartido de recursos de origen cruzado ([!DNL CORS]) de Adobe Experience Manager facilita las propiedades web que no son de AEM para realizar llamadas del lado del cliente a AEM, tanto autenticadas como no autenticadas, para recuperar contenido o interactuar directamente con AEM.
 
-## Configuración de OSGi de la directiva de uso compartido de recursos entre Orígenes de granito Adobe
+## Configuración OSGi de la política de uso compartido de recursos de origen cruzado de Adobe Granite
 
 Las configuraciones de CORS se administran como fábricas de configuración de OSGi en AEM, y cada directiva se representa como una instancia de fábrica.
 
 * `http://<host>:<port>/system/console/configMgr > Adobe Granite Cross Origin Resource Sharing Policy`
 
-![Configuración de OSGi de la directiva de uso compartido de recursos entre Orígenes de granito Adobe](./assets/understand-cross-origin-resource-sharing/cors-osgi-config.png)
+![Configuración OSGi de la política de uso compartido de recursos de origen cruzado de Adobe Granite](./assets/understand-cross-origin-resource-sharing/cors-osgi-config.png)
 
 [!DNL Adobe Granite Cross-Origin Resource Sharing Policy] (`com.adobe.granite.cors.impl.CORSPolicyImpl`)
 
-### Selección de directivas
+### Selección de políticas
 
 Una directiva se selecciona comparando la variable
 
@@ -40,34 +42,34 @@ Una directiva se selecciona comparando la variable
 
 Se utilizará la primera directiva que coincida con estos valores. Si no se encuentra ninguna, se denegará cualquier solicitud [!DNL CORS].
 
-Si no hay ninguna directiva configurada, tampoco se responderán las solicitudes [!DNL CORS], ya que el controlador se deshabilitará y, por lo tanto, se denegará de forma efectiva, siempre que ningún otro módulo del servidor responda a [!DNL CORS].
+Si no hay ninguna directiva configurada, las solicitudes [!DNL CORS] tampoco se contestarán, ya que el controlador se desactivará y, por lo tanto, se denegará de forma efectiva, siempre que ningún otro módulo del servidor responda a [!DNL CORS].
 
 ### Propiedades de directiva
 
 #### [!UICONTROL Orígenes permitidos]
 
 * `"alloworigin" <origin> | *`
-* Lista de parámetros `origin` que especifican URI que pueden acceder al recurso. Para las solicitudes sin credenciales, el servidor puede especificar * como comodín, permitiendo así que cualquier origen pueda acceder al recurso. *No se recomienda usar  `Allow-Origin: *` en producción, ya que permite a todos los sitios web extranjeros (es decir, atacantes) realizar solicitudes que los navegadores prohíban estrictamente sin CORS.*
+* Lista de parámetros `origin` que especifican los URI que pueden acceder al recurso. Para las solicitudes sin credenciales, el servidor puede especificar * como comodín, lo que permite que cualquier origen acceda al recurso. *No se recomienda utilizar  `Allow-Origin: *` en producción, ya que permite a todos los sitios web extranjeros (es decir, atacantes) realizar solicitudes de que los navegadores prohíban estrictamente el uso de CORS sin ningún tipo de CORS.*
 
 #### [!UICONTROL Orígenes permitidos (Regexp)]
 
 * `"alloworiginregexp" <regexp>`
-* Lista de `regexp` expresiones regulares que especifican los URI que pueden acceder al recurso. *Las expresiones regulares pueden llevar a coincidencias no deseadas si no se crean cuidadosamente, lo que permite que un atacante utilice un nombre de dominio personalizado que también coincida con la política.* Por lo general, se recomienda tener directivas independientes para cada nombre de host de origen específico, utilizando  `alloworigin`, incluso si esto significa una configuración repetida de las demás propiedades de directiva. Los diferentes orígenes tienden a tener diferentes ciclos de vida y requisitos, por lo que se benefician de una clara separación.
+* Lista de expresiones regulares `regexp` que especifican los URI que pueden acceder al recurso. *Las expresiones regulares pueden provocar coincidencias no deseadas si no se crean cuidadosamente, lo que permite que un atacante utilice un nombre de dominio personalizado que también coincida con la política.* Por lo general, se recomienda tener directivas independientes para cada nombre de host de origen específico, utilizando  `alloworigin`, incluso si esto significa una configuración repetida de las otras propiedades de directiva. Los diferentes orígenes tienden a tener diferentes ciclos de vida y requisitos, beneficiándose así de una clara separación.
 
 #### [!UICONTROL Rutas permitidas]
 
 * `"allowedpaths" <regexp>`
-* Lista de `regexp` expresiones regulares que especifican rutas de recursos para las que se aplica la política.
+* Lista de expresiones regulares `regexp` que especifican las rutas de recursos para las que se aplica la directiva.
 
 #### [!UICONTROL Encabezados expuestos]
 
 * `"exposedheaders" <header>`
-* Lista de parámetros de encabezado que indican encabezados de solicitud a los que los navegadores pueden acceder.
+* Lista de parámetros de encabezado que indican encabezados de solicitud a los que se permite acceder a los navegadores.
 
 #### [!UICONTROL Edad máxima]
 
 * `"maxage" <seconds>`
-* Parámetro `seconds` que indica cuánto tiempo se pueden almacenar en caché los resultados de una solicitud de verificación previa.
+* Un parámetro `seconds` que indica cuánto tiempo se pueden almacenar en caché los resultados de una solicitud de pre-vuelo.
 
 #### [!UICONTROL Encabezados admitidos]
 
@@ -82,11 +84,11 @@ Si no hay ninguna directiva configurada, tampoco se responderán las solicitudes
 #### [!UICONTROL Admite credenciales]
 
 * `"supportscredentials" <boolean>`
-* Un `boolean` que indica si la respuesta a la solicitud puede o no exponerse al explorador. Cuando se utiliza como parte de una respuesta a una solicitud de verificación previa, indica si la solicitud real se puede realizar o no con credenciales.
+* Un `boolean` que indica si la respuesta a la solicitud se puede exponer al explorador. Cuando se utiliza como parte de una respuesta a una solicitud de pre-vuelo, indica si la solicitud real se puede realizar o no con credenciales.
 
 ### Ejemplos de configuraciones
 
-El sitio 1 es un escenario básico, accesible de forma anónima y de sólo lectura donde el contenido se consume mediante solicitudes [!DNL GET]:
+El sitio 1 es un escenario básico, accesible de forma anónima y de solo lectura donde el contenido se consume mediante solicitudes [!DNL GET]:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -104,7 +106,7 @@ Access-Control-Request-Method,Access-Control-Request-Headers]"
 />
 ```
 
-El sitio 2 es más complejo y requiere solicitudes autorizadas y no seguras:
+El sitio 2 es más complejo y requiere solicitudes autorizadas e inseguras:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -122,19 +124,19 @@ Access-Control-Request-Method,Access-Control-Request-Headers,Authorization,CSRF-
 />
 ```
 
-## Problemas y configuración del almacenamiento en caché de Dispatcher {#dispatcher-caching-concerns-and-configuration}
+## Preocupaciones y configuración del almacenamiento en caché de Dispatcher {#dispatcher-caching-concerns-and-configuration}
 
-A partir de Dispatcher 4.1.1+, los encabezados de respuesta se pueden almacenar en caché. Esto permite almacenar en caché [!DNL CORS] encabezados junto con los [!DNL CORS] recursos solicitados, siempre y cuando la solicitud sea anónima.
+A partir de Dispatcher 4.1.1+, los encabezados de respuesta se pueden almacenar en caché. Esto permite almacenar en caché los encabezados [!DNL CORS] junto con los recursos [!DNL CORS] solicitados, siempre que la solicitud sea anónima.
 
-Generalmente, las mismas consideraciones para almacenar contenido en caché en Dispatcher se pueden aplicar a los encabezados de respuesta CORS en caché en el despachante. La siguiente tabla define cuándo [!DNL CORS] encabezados (y por lo tanto [!DNL CORS] solicitudes) se pueden almacenar en caché.
+Por lo general, las mismas consideraciones para almacenar en caché el contenido en Dispatcher se pueden aplicar al almacenamiento en caché de los encabezados de respuesta CORS en Dispatcher. La siguiente tabla define cuándo se pueden almacenar en caché los encabezados [!DNL CORS] (y por lo tanto [!DNL CORS] solicitudes).
 
-| En caché | creación | Estado de autenticación | Explicación |
+| Cacheable | creación | Estado de autenticación | Explicación |
 |-----------|-------------|-----------------------|-------------|
-| No | AEM Publish | Autenticado | El almacenamiento en caché del despachante en AEM Author está limitado a recursos estáticos y no creados. Esto dificulta y dificulta la caché de la mayoría de los recursos en AEM Author, incluidos los encabezados de respuesta HTTP. |
+| No | AEM Publish | Autenticado | El almacenamiento en caché de Dispatcher en AEM Author se limita a recursos estáticos no creados. Esto hace que sea difícil y poco práctico almacenar en caché la mayoría de los recursos en AEM Author, incluidos los encabezados de respuesta HTTP. |
 | No | AEM Publish | Autenticado | Evite almacenar en caché los encabezados CORS en solicitudes autenticadas. Esto se ajusta a la guía común de no almacenar en caché las solicitudes autenticadas, ya que es difícil determinar cómo afectará el estado de autenticación/autorización del usuario solicitante al recurso entregado. |
-| Sí | AEM Publish | Anónimo | Las solicitudes anónimas que se pueden almacenar en caché en el despachante también pueden tener sus encabezados de respuesta en caché, lo que garantiza que las futuras solicitudes CORS puedan acceder al contenido almacenado en caché. Cualquier cambio de configuración de CORS en AEM Publish **debe** ir seguido de una invalidación de los recursos en caché afectados. Las optimizaciones dictan en implementaciones de código o configuración que se depura la caché del despachante, ya que es difícil determinar qué contenido en caché se puede realizar. |
+| Sí | AEM Publish | Anónimo | Las solicitudes anónimas que se pueden almacenar en caché en Dispatcher también pueden almacenar en caché sus encabezados de respuesta, lo que garantiza que las futuras solicitudes CORS puedan acceder al contenido almacenado en caché. Cualquier cambio en la configuración de CORS en AEM Publish **debe** ir seguido de una invalidación de los recursos en caché afectados. Las prácticas recomendadas dictan en las implementaciones de código o configuración que se depura la caché de Dispatcher, ya que es difícil determinar qué contenido almacenado en caché se puede realizar. |
 
-Para permitir el almacenamiento en caché de encabezados CORS, agregue la siguiente configuración a todos los archivos compatibles con Dispatcher.any de AEM Publish.
+Para permitir el almacenamiento en caché de los encabezados CORS, agregue la siguiente configuración a todos los archivos compatibles con Dispatcher.any de AEM Publish.
 
 ```
 /cache { 
@@ -151,29 +153,29 @@ Para permitir el almacenamiento en caché de encabezados CORS, agregue la siguie
 }
 ```
 
-Recuerde **reiniciar la aplicación del servidor Web** después de realizar cambios en el archivo `dispatcher.any`.
+Recuerde **reiniciar la aplicación del servidor web** después de realizar cambios en el archivo `dispatcher.any`.
 
-Es probable que se borre la caché por completo para garantizar que los encabezados se almacenen correctamente en la caché en la siguiente solicitud después de una actualización de configuración `/clientheaders`.
+Es probable que se borre la caché por completo para garantizar que los encabezados se almacenen correctamente en caché en la siguiente solicitud después de una actualización de configuración `/clientheaders`.
 
 ## Resolución de problemas de CORS
 
 El registro está disponible en `com.adobe.granite.cors`:
 
 * habilitar `DEBUG` para ver detalles sobre por qué se denegó una solicitud [!DNL CORS]
-* habilite `TRACE` para ver detalles sobre todas las solicitudes que pasan por el controlador CORS
+* habilitar `TRACE` para ver detalles sobre todas las solicitudes que pasan por el controlador CORS
 
 ### Sugerencias:
 
-* Volver a crear manualmente solicitudes XHR con curl, pero asegúrese de copiar todos los encabezados y detalles, ya que cada uno puede marcar una diferencia; algunas consolas de navegador permiten copiar el comando curl
-* Compruebe si el controlador CORS denegó la solicitud y no la autenticación, el filtro de token CSRF, los filtros de distribuidor u otros niveles de seguridad
-   * Si el controlador CORS responde con 200 pero el encabezado `Access-Control-Allow-Origin` no está presente en la respuesta, revise los registros para ver si hay denegaciones en [!DNL DEBUG] en `com.adobe.granite.cors`
-* Si está habilitado el almacenamiento en caché de despachantes de [!DNL CORS] solicitudes
-   * Asegúrese de que la configuración `/clientheaders` se aplica a `dispatcher.any` y de que el servidor Web se reinicia correctamente
-   * Asegúrese de que la caché se borró correctamente después de cualquier cambio de configuración de OSGi o dispatcher.
+* Volver a crear manualmente solicitudes XHR utilizando curl, pero asegúrese de copiar todos los encabezados y detalles, ya que cada uno puede marcar una diferencia; algunas consolas de navegador permiten copiar el comando curl
+* Verifique si la solicitud fue denegada por el controlador CORS y no por la autenticación, el filtro de token CSRF, los filtros de Dispatcher u otras capas de seguridad
+   * Si el controlador CORS responde con 200, pero el encabezado `Access-Control-Allow-Origin` está ausente en la respuesta, revise los registros para las denegaciones en [!DNL DEBUG] en `com.adobe.granite.cors`
+* Si el almacenamiento en caché de Dispatcher de [!DNL CORS] solicitudes está habilitado
+   * Asegúrese de que la configuración `/clientheaders` se aplica a `dispatcher.any` y que el servidor web se reinicia correctamente
+   * Asegúrese de que la caché se borró correctamente después de cualquier cambio de configuración de OSGi o dispatcher.any.
 * si es necesario, compruebe la presencia de credenciales de autenticación en la solicitud.
 
 ## Materiales de apoyo
 
-* [AEM fábrica de configuración de OSGi para directivas de uso compartido de recursos entre Orígenes](http://localhost:4502/system/console/configMgr/com.adobe.granite.cors.impl.CORSPolicyImpl)
-* [Uso compartido de recursos entre Orígenes (W3C)](https://www.w3.org/TR/cors/)
-* [CONTROL DE ACCESO HTTP (Mozilla MDN)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)
+* [Fábrica de configuración de AEM OSGi para políticas de intercambio de recursos de origen cruzado](http://localhost:4502/system/console/configMgr/com.adobe.granite.cors.impl.CORSPolicyImpl)
+* [Uso compartido de recursos de origen cruzado (W3C)](https://www.w3.org/TR/cors/)
+* [Control de acceso HTTP (MDN Mozilla)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)
