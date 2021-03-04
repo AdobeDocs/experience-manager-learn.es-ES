@@ -1,7 +1,7 @@
 ---
-title: Crear el formulario inicial para Déclencheur del proceso
-description: Cree un formulario inicial para el déclencheur de la notificación por correo electrónico con el fin de inicio del proceso de firma.
-feature: adaptive-forms
+title: Creación del formulario inicial para activar el proceso
+description: Cree un formulario inicial para activar la notificación por correo electrónico para iniciar el proceso de firma.
+feature: Formularios adaptables
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,33 +9,36 @@ activity: implement
 version: 6.4,6.5
 kt: 6892
 thumbnail: 6892.jpg
+topic: Desarrollo
+role: Profesional empresarial
+level: Intermedio
 translation-type: tm+mt
-source-git-commit: 049574ab2536b784d6b303f474dba0412007e18c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 5%
+source-wordcount: '174'
+ht-degree: 6%
 
 ---
 
 
 # Crear formulario inicial
 
-El formulario inicial (formulario de refinanciación) se utiliza para firmar varios formularios activando el flujo de trabajo de AEM **Firmar varios Forms**. Puede introducir los valores que desee pero asegurarse de que se agregan al formulario los campos siguientes.
+El formulario inicial (formulario de refinanciación) se utiliza para firmar varios formularios activando el flujo de trabajo de AEM **Sign Multiple Forms**. Puede introducir valores de su elección, pero asegúrese de que los siguientes campos se añaden al formulario.
 
 
 
 | Tipo de campo | Nombre | Función | Oculto | Valor predeterminado |
 ------------------------|---------------------------------------|--------------------|--------|-----------------
-| TextField | firmado | Para indicar el estado de la firma | Y | N |
-| TextField | guid | Identificar el formulario de forma única | Y | 3889 |
-| TextField | customerName | Para capturar el nombre de los clientes | N |
-| TextField | customerEmail | Correo electrónico del cliente para enviar la notificación | N |
+| CampoTexto | signed | Para indicar el estado de firma | Y | N |
+| CampoTexto | guid | Para identificar formularios de forma única | Y | 3889 |
+| CampoTexto | customerName | Para capturar el nombre de los clientes | N |
+| CampoTexto | customerEmail | Correo electrónico del cliente para enviar una notificación | N |
 | Casilla de verificación | formsToSign | Los elementos identifican los formularios del paquete | N |
 
 
 
-El formulario inicial debe configurarse para que se déclencheur un flujo de trabajo AEM denominado **signmultipleforms**
-Asegúrese de que la ruta del archivo de datos esté configurada en **Data.xml**. Esto es muy importante, ya que el código de muestra busca un archivo llamado Data.xml en la carga útil del proceso de envío del formulario.
+El formulario inicial debe configurarse para activar un flujo de trabajo de AEM denominado **signmultipleforms**
+Asegúrese de que la ruta del archivo de datos esté configurada en **Data.xml**. Esto es muy importante, ya que el código de ejemplo busca un archivo llamado Data.xml en la carga útil para procesar el envío del formulario.
 
 ## Assets
 
