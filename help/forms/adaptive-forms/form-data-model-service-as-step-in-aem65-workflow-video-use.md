@@ -3,20 +3,17 @@ title: Uso del servicio del modelo de datos de formulario como paso en el flujo 
 seo-title: Uso del servicio del modelo de datos de formulario como paso en el flujo de trabajo de AEM 6.5
 description: AEM Forms 6.5 introdujo la capacidad de crear variables en el flujo de trabajo de AEM. Con esta nueva capacidad utilizando el "Invocar el servicio del modelo de datos de formulario" en AEM Workflow se ha vuelto muy fácil. El siguiente vídeo le guiará por los pasos necesarios para utilizar el servicio Invocar modelo de datos de formulario en AEM Workflow.
 seo-description: AEM Forms 6.5 introdujo la capacidad de crear variables en el flujo de trabajo de AEM. Con esta nueva capacidad utilizando el "Invocar el servicio del modelo de datos de formulario" en AEM Workflow se ha vuelto muy fácil. El siguiente vídeo le guiará por los pasos necesarios para utilizar el servicio Invocar modelo de datos de formulario en AEM Workflow.
-feature: Flujo de trabajo
+feature: flujo de trabajo.
 topics: workflow.
 audience: developer.
 doc-type: technical video.
 activity: setup.
 version: 6.5.
-topic: Desarrollo
-role: Desarrollador
-level: Intermedio
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 1%
+source-wordcount: '335'
+ht-degree: 0%
 
 ---
 
