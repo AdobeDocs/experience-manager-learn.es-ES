@@ -1,61 +1,56 @@
 ---
-title: Uso de vídeos y miniaturas de vídeo personalizadas de Dynamic Media 360 con AEM Assets
-seo-title: Uso de vídeos y miniaturas de vídeo personalizadas de Dynamic Media 360 con AEM Assets
-description: Las mejoras del visor de Dynamic Media en AEM 6.5 incluyen la compatibilidad con la representación de vídeo de 360, los visores de medios de 360 (video360Social y video360VR) y la posibilidad de seleccionar miniaturas de vídeo personalizadas.
-seo-description: Las mejoras del visor de Dynamic Media en AEM 6.5 incluyen la compatibilidad con la representación de vídeo de 360, los visores de medios de 360 (video360Social y video360VR) y la posibilidad de seleccionar miniaturas de vídeo personalizadas.
-uuid: 44b91c22-635c-48c2-af27-49bdbfb61639
-discoiquuid: 67d5e0f2-3fde-4ea7-9e53-4fc0cf8b9f2a
-sub-product: Dynamic-media
-feature: video-profiles, viewer-presets
-topics: images, videos, renditions, authoring, integrations, publishing, metadata
-doc-type: feature video
-audience: all
-activity: use
+title: Uso de vídeos de Dynamic Media 360 y miniaturas de vídeo personalizadas con AEM Assets
+description: Las mejoras del visualizador de Dynamic Media en AEM 6.5 incluyen la compatibilidad con la representación de vídeo 360, 360 visualizadores de medios (video360Social y video360VR) y la capacidad de seleccionar miniaturas de vídeo personalizadas.
+sub-product: dynamic-media
+feature: Perfiles de vídeo
 version: 6.3, 6.4, 6.5
+topic: Administración de contenido
+role: Profesional empresarial
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 2%
+source-wordcount: '402'
+ht-degree: 5%
 
 ---
 
 
-# Uso de vídeos y miniaturas de vídeo personalizadas de Dynamic Media 360 con AEM Assets
+# Uso de vídeos de Dynamic Media 360 y miniaturas de vídeo personalizadas con AEM Assets
 
-Las mejoras del visor de Dynamic Media en AEM 6.5 incluyen la compatibilidad con la representación de vídeo de 360, los visores de medios de 360 (video360Social y video360VR) y la posibilidad de seleccionar miniaturas de vídeo personalizadas.
+Las mejoras del visualizador de Dynamic Media en AEM 6.5 incluyen la compatibilidad con la representación de vídeo 360, 360 visualizadores de medios (video360Social y video360VR) y la capacidad de seleccionar miniaturas de vídeo personalizadas.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26391?quality=9&learn=on)
 
 >[!NOTE]
 >
->Video supone que la instancia de AEM se está ejecutando en el modo Dynamic Media S7.  [Las instrucciones para configurar AEM con Dynamic Media se pueden encontrar aquí](https://helpx.adobe.com/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html). Cuando se carga un vídeo, de forma predeterminada, Dynamic Media procesa el material de archivo como un vídeo de 360, si tiene una proporción de aspecto de 2:1. es decir, la relación entre la anchura y la altura es de 2:1.
+>El vídeo supone que la instancia de AEM se está ejecutando en el modo Dynamic Media S7.  [Las instrucciones sobre la configuración de AEM con Dynamic Media se encuentran aquí](https://helpx.adobe.com/es/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html). Al cargar un vídeo, de forma predeterminada, Dynamic Media procesa el material de archivo como un vídeo de 360, si tiene una proporción de aspecto de 2:1. es decir, la relación ancho-alto es 2:1.
 
 >[!NOTE]
 >
->Los componentes de medios de Dynamic Media 360 solo admiten 360 vídeos.
+>Los componentes de Dynamic Media 360 Media solo admiten 360 vídeos.
 
 ## Vídeos de Dynamic Media 360
 
-Los vídeos de 360 grados, también conocidos como vídeos esféricos, son grabaciones de vídeo en las que se graba una vista en todas las direcciones al mismo tiempo, grabadas con una cámara omnidireccional o una colección de cámaras. Durante la reproducción en una pantalla plana, el usuario tiene control de la dirección de visualización y la reproducción en dispositivos móviles suele aprovechar el control integrado del giroscopio.  Le permite expandirse más allá de los límites de la fotografía única. Los especialistas en marketing pueden ofrecer a los usuarios una experiencia atractiva con la ayuda de 360 vídeos.  Empecemos. El criterio de la relación de aspecto de la imagen panorámica se puede modificar en la configuración de DMS7 de la compañía especificando la propiedad de doble s7PanoramicAR en /conf/global/settings/cloudconfigs/dmscene7/jcr:content.
+Los vídeos de 360 grados, también conocidos como vídeos esféricos, son grabaciones de vídeo en las que se graba una vista en todas las direcciones al mismo tiempo, grabadas con una cámara omnidireccional o una colección de cámaras. Durante la reproducción en una pantalla plana, el usuario tiene control de la dirección de visualización y la reproducción en dispositivos móviles suele utilizar el control integrado de giroscopio.  Permite expandir más allá de los límites de la fotografía única. Los especialistas en marketing pueden ofrecer a los usuarios una experiencia atractiva con la ayuda de 360 vídeos.  Empecemos. El criterio de la relación de aspecto de la imagen panorámica se puede modificar en la configuración DMS7 de la empresa especificando la doble propiedad s7PanoramicAR en /conf/global/settings/cloudconfigs/dmscene7/jcr:content.
 
 ## Vídeos de Dynamic Media 360
 
-Ahora, el vídeo de Dynamic Media admite la posibilidad de seleccionar una miniatura personalizada para el vídeo. Un usuario puede seleccionar un recurso existente de AEM Assets o un fotograma de vídeo como miniatura.
+El vídeo de Dynamic Media ahora admite la posibilidad de seleccionar una miniatura personalizada para el vídeo. Un usuario puede seleccionar un recurso existente de AEM Assets o un fotograma de vídeo como miniatura.
 
-## Visores de medios dinámicos 360
+## Visualizadores de medios dinámicos 360
 
 <table> 
  <tbody>
    <tr>
       <td> </td>
-      <td>**Video360Visor social**</td>
-      <td>**Visor Video360VR**</td>
+      <td>**Visor de vídeo360Social**</td>
+      <td>**Visor de Video360VR**</td>
    </tr>
    <tr>
       <td>Modo de ejecución de Dynamic Media</td>
-      <td>Solo en modo Scene7 de Dynamic Media</td>
-      <td>Solo en modo Scene7 de Dynamic Media<br>
+      <td>Solo modo de Dynamic Media Scene7</td>
+      <td>Solo en modo de Dynamic Media Scene7<br>
          <br>
       </td>
    </tr>
@@ -66,11 +61,11 @@ Ahora, el vídeo de Dynamic Media admite la posibilidad de seleccionar una minia
          <p> </p>
       </td>
       <td>
-         <p>Proporciona una experiencia de realidad virtual para un dispositivo que admite giroscopio </p>
+         <p>Proporciona una experiencia de realidad virtual para un dispositivo compatible con giroscopio </p>
       </td>
    </tr>
    <tr>
-      <td>Audio - Modo estéreo</td>
+      <td>Audio: modo estéreo</td>
       <td>No</td>
       <td>Sí</td>
    </tr>
@@ -83,14 +78,14 @@ Ahora, el vídeo de Dynamic Media admite la posibilidad de seleccionar una minia
       <td>Navegación por puntos de vista</td>
       <td>
          <ul>
-            <li>Arrastre del ratón (en sistemas de escritorio)</li>
-            <li>Barrido (dispositivos táctiles)</li>
+            <li>Arrastrar el ratón (en sistemas de escritorio)</li>
+            <li>Deslizar (dispositivos táctiles)</li>
          </ul>
       </td>
       <td>
          <ul>
-            <li>Las opciones de ratón y arrastre están desactivadas</li>
-            <li>Utiliza un giroscopio integrado</li>
+            <li>Las opciones de mouse y arrastre están desactivadas</li>
+            <li>Utiliza el ensanchamiento integrado</li>
          </ul>
       </td>
    </tr>
@@ -109,4 +104,4 @@ Ahora, el vídeo de Dynamic Media admite la posibilidad de seleccionar una minia
 
 ## Recursos adicionales{#additional-resources}
 
-[Configuración de Dynamic Media en modo Scene7](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dms7.html)
+[Configuración de Dynamic Media en el modo Scene7](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dms7.html)
