@@ -1,54 +1,57 @@
 ---
-title: Variables en AEM flujo de trabajo[Parte 1]
-seo-title: Variables en AEM flujo de trabajo[Parte 1]
-description: Uso de variables de tipo xml,json,arraylist,documento en el flujo de trabajo de aem
-seo-description: Uso de variables de tipo xml,json,arraylist,documento en el flujo de trabajo de aem
-feature: workflow
+title: Variables en AEM Workflow[Part1]
+seo-title: Variables en AEM Workflow[Part1]
+description: Uso de variables de tipo xml,json,arraylist,document en el flujo de trabajo de aem
+seo-description: Uso de variables de tipo xml,json,arraylist,document en el flujo de trabajo de aem
+feature: Flujo de trabajo
 topics: development
 audience: developer
 doc-type: tutorial
 activity: understand
 version: 6.5
+topic: Desarrollo
+role: Desarrollador
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
 
 
-# Variables XML en AEM flujo de trabajo
+# Variables XML en el flujo de trabajo de AEM
 
-Las variables de tipo XML se suelen utilizar cuando se tiene un formulario adaptable basado en XSD y se desea extraer valores del envío del formulario adaptable en el flujo de trabajo.
+Las variables de tipo XML generalmente se utilizan cuando se tiene un formulario adaptable basado en XSD y se desea extraer valores del envío del formulario adaptable en el flujo de trabajo.
 
-El siguiente vídeo le guía por los pasos necesarios para crear variables de tipo String y XML y utilizarlas en el flujo de trabajo.
+El siguiente vídeo le explica los pasos necesarios para crear variables de tipo String y XML y utilizarlas en el flujo de trabajo.
 
-La variable XML puede utilizarse para rellenar previamente el formulario adaptable o almacenar los datos de envío del formulario adaptable en el flujo de trabajo.
+La variable XML se puede utilizar para rellenar previamente el formulario adaptable o almacenar los datos de envío del formulario adaptable en el flujo de trabajo.
 
-Xpathing puede rellenar la variable de cadena en la variable XML. Esta variable de cadena se suele utilizar para rellenar los marcadores de posición de la plantilla de correo electrónico en el componente Enviar correo electrónico
-
->[!NOTE]
->
->Si el formulario adaptable no está asociado con XSD, el XPath para obtener el valor de un elemento tendrá el aspecto siguiente
->
->**/afData/afUnboundData/data/nombreremitente**
-
-Los datos del formulario adaptable se almacenan bajo el elemento de datos como se muestra arriba. **_En el XPath submitName anterior es el nombre del campo de texto en el formulario adaptable._**
+Xpathing puede rellenar la variable de cadena en la variable XML. Esta variable de cadena se utiliza generalmente para rellenar los marcadores de posición de plantilla de correo electrónico en el componente Enviar correo electrónico
 
 >[!NOTE]
 >
->**AEM Forms 6.5.0** - Cuando esté creando una variable de tipo XML para capturar los datos enviados en el modelo de flujo de trabajo, no asocie el XSD con la variable. Esto se debe a que al enviar el formulario adaptable basado en XSD, los datos enviados no son compatibles con el XSD. Los datos de la queja XSD se incluyen en /afData/afBoundData/ element.
+>Si el formulario adaptable no está asociado con XSD, el XPath para obtener el valor de un elemento será como
 >
->**AEM Forms 6.5.1** - Si asocia XSD con la variable XML, puede explorar los elementos de esquema para realizar la asignación de variables. No podrá acceder a los datos de formulario que no estén enlazados a elementos de esquema. Si el caso de uso es para acceder a datos enlazados a elementos de esquema así como a datos no enlazados, no enlazar el esquema con la variable XML en el flujo de trabajo.Tendrá que utilizar la expresión XPath adecuada para llegar a los datos que necesita
+>**/afData/afUnboundData/data/submitterName**
+
+Los datos del formulario adaptable se almacenan bajo el elemento de datos como se muestra arriba. **_En el XPath submitName anterior es el nombre del campo de texto del formulario adaptable._**
+
+>[!NOTE]
+>
+>**AEM Forms 6.5.0** : cuando esté creando una variable de tipo XML para capturar los datos enviados en el modelo de flujo de trabajo, no asocie el XSD con la variable . Esto se debe a que al enviar el formulario adaptable basado en XSD, los datos enviados no son compatibles con el XSD. Los datos de queja XSD se incluyen en el elemento /afData/afBoundData/ .
+>
+>**AEM Forms 6.5.1** : si asocia XSD con la variable XML, puede examinar los elementos de esquema para realizar la asignación de variables. No se podrá acceder a los datos de formulario no enlazados a elementos de esquema. Si el caso de uso es acceder a datos enlazados a elementos de esquema así como a datos no enlazados, no enlazar el esquema con la variable XML en el flujo de trabajo. Tendrá que utilizar la expresión XPath adecuada para obtener los datos que necesite
 
 ## Creación de variables XML
 
 >[!VIDEO](https://video.tv.adobe.com/v/26440?quality=12?autoplay=1)
 
-### Uso de Esquema con variable XML
+### Uso del esquema con la variable XML
 
-**Asignación de una variable XML con esquema. Utilice esta función con AEM Forms 6.5.1 en adelante**
+**Asignación de una variable XML con un esquema. Utilice esta capacidad con AEM Forms 6.5.1 en adelante**
 
 >[!VIDEO](https://video.tv.adobe.com/v/28098?quality=9&learn=on)
 
@@ -56,11 +59,11 @@ Los datos del formulario adaptable se almacenan bajo el elemento de datos como s
 
 >[!VIDEO](https://video.tv.adobe.com/v/26441?quality=12&learn=on)
 
-Para que los recursos funcionen en su sistema, siga los pasos siguientes:
+Para que los recursos funcionen en su sistema, siga los siguientes pasos:
 
-* [Descargar e importar recursos en AEM mediante el administrador de paquetes](assets/xmlandstringvariable.zip)
-* [Explore el ](http://localhost:4502/editor.html/conf/global/settings/workflow/models/vacationrequest.html) modelo de flujo de trabajo para comprender las variables que se utilizan en el flujo de trabajo
+* [Descargar e importar los recursos en AEM mediante el administrador de paquetes](assets/xmlandstringvariable.zip)
+* [Explorar el modelo de flujo de trabajo ](http://localhost:4502/editor.html/conf/global/settings/workflow/models/vacationrequest.html) para comprender las variables que se utilizan en el flujo de trabajo
 * [Configuración del servicio de correo electrónico](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html#ConfiguringtheMailService)
 * [Abrir el formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/applicationfortimeoff/jcr:content?wcmmode=disabled)
-* Rellene los detalles y envíe el formulario.
+* Complete los detalles y envíe el formulario.
 
