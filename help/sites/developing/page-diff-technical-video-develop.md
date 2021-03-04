@@ -1,24 +1,27 @@
 ---
-title: Desarrollo de la diferencia de página en AEM Sites
-description: Este vídeo muestra cómo proporcionar estilos personalizados para la funcionalidad Diferencia de páginas de AEM Sites.
-feature: page-diff
+title: Desarrollo de la diferencia de páginas en AEM Sites
+description: Este vídeo muestra cómo proporcionar estilos personalizados para la funcionalidad de diferencia de página de AEM Sites.
+feature: 'Creación  '
 topics: development
 audience: developer
 doc-type: technical video
 activity: develop
 version: 6.3, 6.4, 6.5
+topic: Desarrollo
+role: Desarrollador
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 2%
+source-wordcount: '297'
+ht-degree: 3%
 
 ---
 
 
 # Desarrollo de la diferencia de página {#developing-for-page-difference}
 
-Este vídeo muestra cómo proporcionar estilos personalizados para la funcionalidad Diferencia de páginas de AEM Sites.
+Este vídeo muestra cómo proporcionar estilos personalizados para la funcionalidad de diferencia de página de AEM Sites.
 
 ## Personalización de estilos de diferencia de página {#customizing-page-difference-styles}
 
@@ -26,17 +29,17 @@ Este vídeo muestra cómo proporcionar estilos personalizados para la funcionali
 
 >[!NOTE]
 >
->Este vídeo agrega CSS personalizada a la biblioteca de cliente we.Retail, donde estos cambios deben realizarse en el proyecto de AEM Sites del cliente; en el código de ejemplo siguiente: `my-project`.
+>Este vídeo agrega CSS personalizada a la biblioteca de cliente de we.Retail, donde como estos cambios deben realizarse en el proyecto de AEM Sites del cliente; en el código de ejemplo siguiente: `my-project`.
 
-AEM diferencia de página obtiene el CSS OOTB mediante una carga directa de `/libs/cq/gui/components/common/admin/diffservice/clientlibs/diffservice/css/htmldiff.css`.
+La diferencia de página de AEM obtiene el OOTB CSS a través de una carga directa de `/libs/cq/gui/components/common/admin/diffservice/clientlibs/diffservice/css/htmldiff.css`.
 
-Debido a esta carga directa de CSS en lugar de utilizar una categoría de biblioteca de cliente, debemos encontrar otro punto de inyección para los estilos personalizados, y este punto de inyección personalizado es la clientlib de creación del proyecto.
+Debido a esta carga directa de CSS en lugar de usar una categoría de biblioteca de cliente, debemos encontrar otro punto de inyección para los estilos personalizados, y este punto de inyección personalizado es la clientlib de creación del proyecto.
 
-Esto tiene la ventaja de permitir que estas anulaciones de estilo personalizado sean específicas del inquilino.
+Esto tiene la ventaja de permitir que estas anulaciones de estilo personalizadas sean específicas del inquilino.
 
 ### Preparar la clientlib {#prepare-the-authoring-clientlib} de creación
 
-Asegúrese de que exista una clientlib `authoring` para su proyecto en `/apps/my-project/clientlib/authoring.`
+Asegúrese de que existe una `authoring` clientlib para su proyecto en `/apps/my-project/clientlib/authoring.`
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -45,9 +48,9 @@ Asegúrese de que exista una clientlib `authoring` para su proyecto en `/apps/my
         categories="[my-project.authoring]"/>
 ```
 
-### Proporcione la CSS personalizada {#provide-the-custom-css}
+### Proporcione el CSS personalizado {#provide-the-custom-css}
 
-Añada a la clientlib `authoring` del proyecto un `css.txt` que apunta al archivo menos que proporcionará los estilos de reemplazo. [Las ](https://lesscss.org/) Lessis son preferibles debido a sus muchas características prácticas, incluido el ajuste de clases, que se aprovecha en este ejemplo.
+Agregue a la clientlib `authoring` del proyecto un `css.txt` que apunte al archivo menor que proporcionará los estilos principales. [](https://lesscss.org/) Lessis es preferible debido a sus muchas funciones prácticas, incluido el ajuste de clases que se aprovecha en este ejemplo.
 
 ```shell
 base=./css
@@ -55,7 +58,7 @@ base=./css
 htmldiff.less
 ```
 
-Cree el archivo `less` que contiene las anulaciones de estilo en `/apps/my-project/clientlibs/authoring/css/htmldiff.less` y proporcione los estilos de anulación según sea necesario.
+Cree el archivo `less` que contiene las anulaciones de estilo en `/apps/my-project/clientlibs/authoring/css/htmldiff.less` y proporcione los estilos de anulación que sean necesarios.
 
 ```css
 /* Wrap with body to gives these rules more specificity than the OOTB */
@@ -101,11 +104,11 @@ body {
 }
 ```
 
-### Incluya el CSS clientlib de creación mediante el componente de página {#include-the-authoring-clientlib-css-via-the-page-component}
+### Incluya el CSS clientlib de creación a través del componente de página {#include-the-authoring-clientlib-css-via-the-page-component}
 
-Incluya la categoría clientlibs de creación en la etiqueta `/apps/my-project/components/structure/page/customheaderlibs.html` de la página base del proyecto directamente antes de la etiqueta `</head>` para asegurarse de que se cargan los estilos.
+Incluya la categoría clientlibs de creación en la `/apps/my-project/components/structure/page/customheaderlibs.html` página base del proyecto directamente antes de la etiqueta `</head>` para asegurarse de que se cargan los estilos.
 
-Estos estilos deben limitarse a los modos [!UICONTROL Editar] y [!UICONTROL previsualización] WCM.
+Estos estilos deben limitarse a los modos [!UICONTROL Edit] y [!UICONTROL preview] WCM.
 
 ```xml
 <head>
@@ -115,12 +118,12 @@ Estos estilos deben limitarse a los modos [!UICONTROL Editar] y [!UICONTROL prev
 </head>
 ```
 
-El resultado final de una página de diferencias con los estilos anteriores aplicados sería el siguiente (HTML agregado y Componente modificado).
+El resultado final de una página de comparación de diferencias con los estilos aplicados anteriores tendría este aspecto (HTML añadido y componente cambiado).
 
 ![Diferencia de página](assets/page-diff.png)
 
 ## Recursos adicionales {#additional-resources}
 
-* [Descargar el sitio de muestra de We.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases)
-* [Uso de AEM bibliotecas de cliente](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/clientlibs.html)
+* [Descargue el sitio de muestra de We.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases)
+* [Uso de bibliotecas de cliente de AEM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/clientlibs.html)
 * [Menos documentación de CSS](https://lesscss.org/)
