@@ -1,7 +1,7 @@
 ---
-title: Probar un trabajador de Asset compute
-description: El proyecto de Asset compute define un patrón para crear y ejecutar fácilmente pruebas de los trabajadores de la Asset compute.
-feature: asset-compute
+title: Prueba de un trabajador de Asset Compute
+description: El proyecto Asset Compute define un patrón para crear y ejecutar fácilmente pruebas de los trabajadores de Asset Compute.
+feature: Microservicios de Asset Compute
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,24 +9,27 @@ audience: developer
 doc-type: tutorial
 kt: 6284
 thumbnail: KT-6284.jpg
+topic: Integraciones, desarrollo
+role: Desarrollador
+level: Intermedio, con experiencia
 translation-type: tm+mt
-source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
 
 
-# Probar un trabajador de Asset compute
+# Prueba de un trabajador de Asset Compute
 
-El proyecto de Asset compute define un patrón para crear y ejecutar fácilmente [pruebas de los trabajadores de la Asset compute](https://docs.adobe.com/content/help/en/asset-compute/using/extend/test-custom-application.html).
+El proyecto Asset Compute define un patrón para crear y ejecutar fácilmente [pruebas de los trabajadores de Asset Compute](https://docs.adobe.com/content/help/en/asset-compute/using/extend/test-custom-application.html).
 
-## Anatomía de una prueba de trabajo
+## Anatomía de una prueba de trabajador
 
-Las pruebas de los trabajadores de la asset compute se desglosan en grupos de pruebas y, dentro de cada grupo de pruebas, uno o más casos de prueba que afirman una condición para la prueba.
+Las pruebas de los trabajadores de Asset Compute se desglosan en grupos de pruebas y, dentro de cada grupo de pruebas, uno o más casos de prueba que afirman una condición para probar.
 
-La estructura de los ensayos de un proyecto de Asset compute es la siguiente:
+La estructura de las pruebas de un proyecto de Asset Compute es la siguiente:
 
 ```
 /actions/<worker-name>/index.js
@@ -42,33 +45,33 @@ La estructura de los ensayos de un proyecto de Asset compute es la siguiente:
             ...
 ```
 
-Cada serie de pruebas puede tener los siguientes archivos:
+Cada conversión de prueba puede tener los siguientes archivos:
 
 + `file.<extension>`
-   + Archivo de origen que probar (la extensión puede ser cualquier cosa excepto `.link`)
+   + Archivo de origen a probar (la extensión puede ser cualquier cosa excepto `.link`)
    + Requerido
 + `rendition.<extension>`
    + Representación esperada
-   + Obligatorio, excepto para la prueba de errores
+   + Requerido, excepto para la prueba de errores
 + `params.json`
    + Instrucciones JSON de representación única
    + Opcional
 + `validate`
-   + Una secuencia de comandos que obtiene rutas de archivo de representación esperadas y reales como argumentos y debe devolver el código de salida 0 si el resultado es correcto, o un código de salida distinto de cero si falla la validación o comparación.
-   + Opcional, el valor predeterminado es el comando `diff`
-   + Utilice una secuencia de comandos de shell que ajuste un comando de ejecución de docker para utilizar distintas herramientas de validación
+   + Una secuencia de comandos que obtiene rutas de archivo de representación esperadas y reales como argumentos y debe devolver el código de salida 0 si el resultado es correcto, o un código de salida distinto de cero si la validación o la comparación fallan.
+   + Opcional, de forma predeterminada se usa el comando `diff`
+   + Utilice un script shell que ajuste un comando docker run para utilizar distintas herramientas de validación
 + `mock-<host-name>.json`
-   + Respuestas HTTP formateadas por JSON para [burlar llamadas de servicio externas](https://www.mock-server.com/mock_server/creating_expectations.html).
+   + Respuestas HTTP con formato JSON para [burlas a las llamadas de servicio externas](https://www.mock-server.com/mock_server/creating_expectations.html).
    + Opcional, solo se utiliza si el código de trabajo realiza solicitudes HTTP propias
 
 ## Escritura de un caso de prueba
 
-Este caso de prueba confirma la entrada parametrizada (`params.json`) para el archivo de entrada (`file.jpg`) genera la representación PNG esperada (`rendition.png`).
+Este caso de prueba afirma la entrada parametrizada (`params.json`) para el archivo de entrada (`file.jpg`) genera la representación PNG esperada (`rendition.png`).
 
-1. Primero elimine el caso de pruebas `simple-worker` generadas automáticamente en `/test/asset-compute/simple-worker` ya que no es válido, ya que nuestro trabajador ya no copia simplemente el origen en la representación.
-1. Cree una nueva carpeta de casos de prueba en `/test/asset-compute/worker/success-parameterized` para probar la ejecución correcta del programa de trabajo que genera una representación PNG.
-1. En la carpeta `success-parameterized`, agregue el archivo de entrada de prueba [](./assets/test/success-parameterized/file.jpg) para este caso de prueba y asígnele el nombre `file.jpg`.
-1. En la carpeta `success-parameterized`, agregue un nuevo archivo denominado `params.json` que define los parámetros de entrada del programa de trabajo:
+1. Primero elimine el caso de pruebas `simple-worker` generadas automáticamente en `/test/asset-compute/simple-worker` ya que no es válido, ya que nuestro trabajador ya no copia el origen simplemente en la representación.
+1. Cree una nueva carpeta de casos de prueba en `/test/asset-compute/worker/success-parameterized` para probar una ejecución correcta del trabajador que genera una representación PNG.
+1. En la carpeta `success-parameterized`, añada el archivo de entrada [prueba](./assets/test/success-parameterized/file.jpg) para este caso de prueba y asígnele el nombre `file.jpg`.
+1. En la carpeta `success-parameterized`, añada un nuevo archivo llamado `params.json` que defina los parámetros de entrada del trabajador:
 
    ```json
    { 
@@ -77,21 +80,21 @@ Este caso de prueba confirma la entrada parametrizada (`params.json`) para el ar
        "brightness": "-0.50"
    }
    ```
-   Son las mismas claves o valores pasados a la definición de perfil de Asset compute de [Herramienta de desarrollo](../develop/development-tool.md), menos a la clave `worker`.
-1. Añada el [archivo de representación esperado](./assets/test/success-parameterized/rendition.png) en este caso de prueba y asígnele el nombre `rendition.png`. Este archivo representa la salida esperada del programa de trabajo para la entrada `file.jpg` dada.
+   Son las mismas claves o valores pasados a la definición de perfil de Asset Compute de la [Herramienta de desarrollo](../develop/development-tool.md), menos a la clave `worker`.
+1. Agregue el archivo de representación [esperado](./assets/test/success-parameterized/rendition.png) a este caso de prueba y asígnele el nombre `rendition.png`. Este archivo representa la salida esperada del trabajador para la entrada determinada `file.jpg`.
 1. Desde la línea de comandos, ejecute las pruebas en la raíz del proyecto ejecutando `aio app test`
-   + Asegúrese de que [Docker Desktop](../set-up/development-environment.md#docker) y las imágenes de acoplamiento admitidas están instaladas e iniciadas
-   + Finalización de las instancias de la herramienta de desarrollo en ejecución
+   + Asegúrese de que [Docker Desktop](../set-up/development-environment.md#docker) y las imágenes de Docker compatibles estén instaladas e iniciadas
+   + Finalización de cualquier instancia de herramienta de desarrollo en ejecución
 
-![Prueba - Éxito  ](./assets/test/success-parameterized/result.png)
+![Prueba: Correcto  ](./assets/test/success-parameterized/result.png)
 
 ## Escritura de un caso de prueba de comprobación de errores
 
-Este caso de prueba se prueba para garantizar que el programa de trabajo arroja el error correspondiente cuando el parámetro `contrast` se establece en un valor no válido.
+Este caso de prueba comprueba que el trabajador genera el error apropiado cuando el parámetro `contrast` está establecido en un valor no válido.
 
-1. Cree una nueva carpeta de casos de prueba en `/test/asset-compute/worker/error-contrast` para probar una ejecución de errores del programa de trabajo debido a un valor de parámetro `contrast` no válido.
-1. En la carpeta `error-contrast`, agregue el archivo de entrada de prueba [](./assets/test/error-contrast/file.jpg) para este caso de prueba y asígnele el nombre `file.jpg`. El contenido de este archivo no es importante para esta prueba, sólo necesita existir para superar la comprobación de &quot;Origen dañado&quot;, para alcanzar las `rendition.instructions` comprobaciones de validez, que este caso de prueba valida.
-1. En la carpeta `error-contrast`, agregue un nuevo archivo denominado `params.json` que define los parámetros de entrada del trabajo con el contenido:
+1. Cree una nueva carpeta de casos de prueba en `/test/asset-compute/worker/error-contrast` para probar una ejecución errónea del trabajador debido a un valor de parámetro `contrast` no válido.
+1. En la carpeta `error-contrast`, añada el archivo de entrada [prueba](./assets/test/error-contrast/file.jpg) para este caso de prueba y asígnele el nombre `file.jpg`. El contenido de este archivo no es relevante para esta prueba, solo necesita existir para superar la comprobación &quot;Origen dañado&quot;, para alcanzar las `rendition.instructions` comprobaciones de validez que este caso de prueba valida.
+1. En la carpeta `error-contrast`, añada un nuevo archivo llamado `params.json` que defina los parámetros de entrada del trabajo con el contenido:
 
    ```json
    {
@@ -100,23 +103,23 @@ Este caso de prueba se prueba para garantizar que el programa de trabajo arroja 
    }
    ```
 
-   + Configure `contrast` parámetros en `10`, un valor no válido, ya que el contraste debe estar entre -1 y 1, para generar un `RenditionInstructionsError`.
-   + Afirmemos que se produce el error apropiado en las pruebas configurando la clave `errorReason` en el &quot;motivo&quot; asociado al error esperado. Este parámetro de contraste no válido emite el [error personalizado](../develop/worker.md#errors), `RenditionInstructionsError`, por lo tanto establezca el `errorReason` en el motivo de este error, o`rendition_instructions_error` para afirmar que se ha generado.
+   + Defina los parámetros `contrast` en `10`, un valor no válido, ya que el contraste debe estar entre -1 y 1, para generar un `RenditionInstructionsError`.
+   + Asume que se produce el error apropiado en las pruebas configurando la clave `errorReason` en el &quot;motivo&quot; asociado con el error esperado. Este parámetro de contraste no válido lanza el [error personalizado](../develop/worker.md#errors), `RenditionInstructionsError`, por lo tanto establece el `errorReason` en el motivo del error, o`rendition_instructions_error` para afirmar que se ha generado.
 
-1. Dado que no debe generarse ninguna representación durante una ejecución de error, no es necesario ningún archivo `rendition.<extension>`.
+1. Dado que no se debe generar ninguna representación durante una ejecución errónea, no es necesario ningún archivo `rendition.<extension>`.
 1. Ejecute el grupo de pruebas desde la raíz del proyecto ejecutando el comando `aio app test`
-   + Asegúrese de que [Docker Desktop](../set-up/development-environment.md#docker) y las imágenes de acoplamiento admitidas están instaladas e iniciadas
-   + Finalización de las instancias de la herramienta de desarrollo en ejecución
+   + Asegúrese de que [Docker Desktop](../set-up/development-environment.md#docker) y las imágenes de Docker compatibles estén instaladas e iniciadas
+   + Finalización de cualquier instancia de herramienta de desarrollo en ejecución
 
-![Prueba - Contraste de errores](./assets/test/error-contrast/result.png)
+![Prueba: contraste de error](./assets/test/error-contrast/result.png)
 
 ## Casos de prueba en Github
 
 Los casos de prueba finales están disponibles en Github en:
 
-+ [aem-guide-wknd-asset-compute/test/asset-compute/worker](https://github.com/adobe/aem-guides-wknd-asset-compute/tree/master/test/asset-compute/worker)
++ [aem-guides-wknd-asset-compute/test/asset-compute/worker](https://github.com/adobe/aem-guides-wknd-asset-compute/tree/master/test/asset-compute/worker)
 
 ## Solución de problemas
 
-+ [No se generó ninguna representación durante la ejecución de la prueba](../troubleshooting.md#test-no-rendition-generated)
++ [No se genera ninguna representación durante la ejecución de la prueba](../troubleshooting.md#test-no-rendition-generated)
 + [La prueba genera una representación incorrecta](../troubleshooting.md#tests-generates-incorrect-rendition)
