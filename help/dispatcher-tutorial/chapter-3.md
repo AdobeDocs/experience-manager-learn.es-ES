@@ -1,10 +1,12 @@
 ---
 title: Capítulo 3 - Temas avanzados de almacenamiento en caché
+seo-title: Desmitificación de la caché de AEM Dispatcher - Capítulo 3 - Temas avanzados de almacenamiento en caché
 description: El capítulo 3 del tutorial Desmitificado de caché de Dispatcher de AEM explica cómo superar las limitaciones descritas en el capítulo 2.
+seo-description: El capítulo 3 del tutorial Desmitificado de caché de Dispatcher de AEM explica cómo superar las limitaciones descritas en el capítulo 2.
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '6162'
+source-wordcount: '6187'
 ht-degree: 0%
 
 ---
