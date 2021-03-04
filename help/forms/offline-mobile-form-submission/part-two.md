@@ -3,20 +3,17 @@ title: Activador del flujo de trabajo de AEM en el envío de formularios HTML5
 seo-title: Activar el flujo de trabajo de AEM en el envío de formularios HTML5
 description: Siga rellenando el formulario móvil en modo sin conexión y envíe el formulario móvil para activar el flujo de trabajo de AEM
 seo-description: Siga rellenando el formulario móvil en modo sin conexión y envíe el formulario móvil para activar el flujo de trabajo de AEM
-feature: Mobile Forms
+feature: formularios móviles
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-topic: Desarrollo
-role: Desarrollador
-level: Con experiencia
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 1%
+source-wordcount: '256'
+ht-degree: 0%
 
 ---
 
