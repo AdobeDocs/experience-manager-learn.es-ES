@@ -1,43 +1,46 @@
 ---
-title: Generación de varios archivos PDF a partir de un archivo de datos
-seo-title: Generación de varios archivos PDF a partir de un archivo de datos
-feature: output-service
+title: Generación de varios archivos pdf a partir de un archivo de datos
+seo-title: Generación de varios archivos pdf a partir de un archivo de datos
+feature: Servicio de salida
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
+topic: Desarrollo
+role: Desarrollador
+level: Con experiencia
 translation-type: tm+mt
-source-git-commit: defefc1451e2873e81cd81e3cccafa438aa062e3
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '496'
-ht-degree: 0%
+source-wordcount: '501'
+ht-degree: 1%
 
 ---
 
 
-# Generar un conjunto de Documentos PDF a partir de un archivo de datos xml
+# Generar un conjunto de documentos PDF a partir de un archivo de datos xml
 
-OutputService proporciona una serie de métodos para crear documentos mediante un diseño de formulario y datos para combinarlos con el diseño de formulario. En el siguiente artículo se explica el caso de uso para generar varios archivos PDF a partir de un xml grande que contiene varios registros individuales.
+OutputService proporciona varios métodos para crear documentos utilizando un diseño de formulario y datos para combinarlos con el diseño de formulario. El siguiente artículo explica el caso de uso para generar varios pdf a partir de un xml grande que contiene varios registros individuales.
 A continuación se muestra la captura de pantalla del archivo xml que contiene varios registros.
 
 ![multi-record-xml](assets/multi-record-xml.PNG)
 
-El XML de datos tiene 2 registros. Cada registro está representado por el elemento form1. Este xml se pasa al método OutputService [generatePDFOutputBatch](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/OutputService.html) obtenemos la lista de documentos pdf (uno por registro)
+El xml de datos tiene 2 registros. Cada registro se representa mediante el elemento form1 . Este xml se pasa al método OutputService [generatePDFOutputBatch](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/OutputService.html) obtenemos una lista de documentos pdf (uno por registro)
 La firma del método generatePDFOutputBatch toma los siguientes parámetros
 
-* plantillas: mapa que contiene la plantilla, identificada por una clave
-* data: mapa que contiene documentos de datos xml, identificados por clave
+* plantillas : mapa que contiene la plantilla, identificada con una clave
+* data : mapa que contiene documentos de datos xml, identificados por clave
 * pdfOutputOptions: opciones para configurar la generación de pdf
-* batchOptions: opciones para configurar el lote
+* batchOptions: opciones para configurar batch
 
 >[!NOTE]
 >
->Este caso de uso está disponible como ejemplo activo en este [sitio Web](https://forms.enablementadobe.com/content/samples/samples.html?query=0).
+>Este caso de uso está disponible como ejemplo activo en este [sitio web](https://forms.enablementadobe.com/content/samples/samples.html?query=0).
 
-## Detalles del caso de uso{#use-case-details}
+## Detalles de caso de uso{#use-case-details}
 
-En este caso de uso vamos a proporcionar una interfaz web sencilla para cargar la plantilla y el archivo data(xml). Una vez que se ha completado la carga de los archivos y se envía la solicitud de POST a AEM servlet. Este servlet extrae los documentos y llama al método generatePDFOutputBatch de OutputService. Los archivos PDF generados se comprimen en un archivo zip y se ponen a disposición del usuario final para descargarlos desde el explorador web.
+En este caso de uso vamos a proporcionar una sencilla interfaz web para cargar la plantilla y el archivo data(xml). Una vez finalizada la carga de los archivos y enviada la solicitud POST al servlet de AEM. Este servlet extrae los documentos y llama al método generatePDFOutputBatch del OutputService. Los archivos pdf generados se comprimen en un archivo zip y se ponen a disposición del usuario final para su descarga desde el explorador web.
 
 ## Código Servlet{#servlet-code}
 
@@ -76,7 +79,7 @@ Document zippedDocument = documentServices.generateMultiplePdfs(templateMap, dat
 
 ### Código de implementación de interfaz{#Interface-Implementation-Code}
 
-El siguiente código genera varios archivos PDF mediante el método generatePDFOutputBatch de OutputService y devuelve un archivo zip que contiene los archivos pdf al servlet de llamada
+El siguiente código genera varios pdf utilizando generatePDFOutputBatch de OutputService y devuelve un archivo zip que contiene los archivos pdf al servlet que realiza la llamada
 
 ```java
 public Document generateMultiplePdfs(HashMap < String, String > templateMap, HashMap < String, Document > dataFileMap, String saveLocation) {
@@ -125,20 +128,20 @@ public Document generateMultiplePdfs(HashMap < String, String > templateMap, Has
 }
 ```
 
-### Implementar en el servidor{#Deploy-on-your-server}
+### Implementar en su servidor{#Deploy-on-your-server}
 
-Para probar esta capacidad en el servidor, siga las instrucciones siguientes:
+Para probar esta capacidad en su servidor, siga las siguientes instrucciones:
 
-* [Descargue y extraiga el contenido del archivo zip en el sistema](assets/mult-records-template-and-xml-file.zip) de archivos.Este archivo zip contiene la plantilla y el archivo de datos xml.
-* [Apunta tu navegador a la consola web Felix](http://localhost:4502/system/console/bundles)
-* [Implementar el paquete](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar) DevelopingWithServiceUser.
-* [Implementar el paquete](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar) personalizado AEMFormsDocumentServices.Paquete personalizado que genera el archivo PDF mediante la API OutputService
-* [Seleccione el explorador para el administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
-* [Importe e instale el paquete](assets/generate-multiple-pdf-from-xml.zip). Este paquete contiene una página html que le permite soltar la plantilla y los archivos de datos.
-* [Seleccione el explorador en MultiRecords.html](http://localhost:4502/content/DocumentServices/Multirecord.html?)
+* [Descargue y extraiga el contenido del archivo zip en su sistema](assets/mult-records-template-and-xml-file.zip) de archivos. Este archivo zip contiene la plantilla y el archivo de datos xml.
+* [Apunte el navegador a la consola web Felix](http://localhost:4502/system/console/bundles)
+* [Implementar el paquete DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar).
+* [Implementar el paquete personalizado AEMFormsDocumentServices Bundle](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar).Custom que genera el pdf mediante la API de OutputService
+* [Apunte el navegador al gestor de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
+* [Importe e instale el paquete](assets/generate-multiple-pdf-from-xml.zip). Este paquete contiene una página html que permite soltar la plantilla y los archivos de datos.
+* [Apunte el navegador a MultiRecords.html](http://localhost:4502/content/DocumentServices/Multirecord.html?)
 * Arrastre y suelte la plantilla y el archivo de datos xml juntos
 * Descargue el archivo zip creado. Este archivo zip contiene los archivos pdf generados por el servicio de salida.
 
 >[!NOTE]
->Existen varias formas de déclencheur de esta capacidad. En este ejemplo hemos utilizado una interfaz web para soltar la plantilla y el archivo de datos para demostrar la capacidad.
+>Existen varias formas de activar esta capacidad. En este ejemplo hemos utilizado una interfaz web para soltar la plantilla y el archivo de datos para demostrar la capacidad.
 
