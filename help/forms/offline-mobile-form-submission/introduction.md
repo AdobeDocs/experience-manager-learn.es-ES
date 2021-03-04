@@ -1,35 +1,38 @@
 ---
-title: Flujo de trabajo de déclencheur AEM en el envío de formulario HTML5
-seo-title: Flujo de trabajo de déclencheur AEM en envío de formulario HTML5
-description: Siga rellenando el formulario móvil en modo sin conexión y envíe el formulario móvil al flujo de trabajo AEM déclencheur
-seo-description: Siga rellenando el formulario móvil en modo sin conexión y envíe el formulario móvil al flujo de trabajo AEM déclencheur
-feature: mobile-forms
+title: Activador del flujo de trabajo de AEM en el envío de formularios HTML5
+seo-title: Activar el flujo de trabajo de AEM en el envío de formularios HTML5
+description: Siga rellenando el formulario móvil en modo sin conexión y envíe el formulario móvil para activar el flujo de trabajo de AEM
+seo-description: Siga rellenando el formulario móvil en modo sin conexión y envíe el formulario móvil para activar el flujo de trabajo de AEM
+feature: Mobile Forms
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
+topic: Desarrollo
+role: Desarrollador
+level: Con experiencia
 translation-type: tm+mt
-source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 0%
+source-wordcount: '231'
+ht-degree: 1%
 
 ---
 
 
-# Descarga del formulario móvil parcialmente completado y envío a AEM flujo de trabajo
+# Descarga de formularios móviles parcialmente completados y envío al flujo de trabajo de AEM
 
-Un caso de uso común es tener la capacidad de representar el XDP como HTML para actividades de captura de datos. Esto funciona bien cuando los formularios son simples y se pueden rellenar y enviar en línea. Sin embargo, si el formulario es complejo, es posible que los usuarios no puedan completarlo en línea, necesitamos proporcionar la capacidad de permitir que los usuarios que lo rellenen descarguen la versión interactiva del formulario que se va a rellenar con Acrobat/Reader sin conexión. Una vez completado el formulario, el usuario puede estar en línea para enviarlo.
+Un caso de uso común es tener la capacidad de procesar el XDP como HTML para actividades de captura de datos. Esto funciona bien cuando los formularios son simples y se pueden rellenar y enviar en línea. Sin embargo, si el formulario es complejo y es posible que los usuarios no puedan cumplimentar el formulario en línea, es necesario que se pueda permitir que los usuarios que rellenen el formulario descarguen la versión interactiva del formulario que se rellenará con Acrobat/Reader sin conexión. Una vez rellenado el formulario, el usuario puede estar en línea para enviarlo.
 Para lograr este caso de uso, debemos realizar los siguientes pasos:
 
-* Capacidad para generar un PDF interactivo/rellenable con los datos introducidos en el formulario móvil
-* Gestión del envío de archivos PDF desde Acrobat/Reader
-* Flujo de trabajo de déclencheur Adobe Experience Manager (AEM) para revisar el PDF enviado
+* Capacidad para generar PDF interactivos/rellenables con los datos introducidos en el formulario móvil
+* Gestión del envío de PDF desde Acrobat/Reader
+* Activador del flujo de trabajo de Adobe Experience Manager (AEM) para revisar el PDF enviado
 
-En este tutorial se explican los pasos necesarios para llevar a cabo el caso de uso anterior. El código de muestra y los recursos relacionados con este tutorial están [disponibles aquí.](part-four.md)
+Este tutorial explica los pasos necesarios para lograr el caso de uso anterior. El código de muestra y los recursos relacionados con este tutorial están [disponibles aquí.](part-four.md)
 
-El siguiente vídeo le proporciona información general sobre el caso de uso
+El siguiente vídeo le ofrece una descripción general del caso de uso
 
 >[!VIDEO](https://video.tv.adobe.com/v/29677?quality=9&learn=on)
 
