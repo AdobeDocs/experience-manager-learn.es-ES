@@ -4,17 +4,20 @@ seo-title: Configuración del formulario adaptable para activar el flujo de trab
 description: Explicación de las distintas opciones de configuración del formulario adaptable para activar el flujo de trabajo de AEM
 seo-description: Explicación de las distintas opciones de configuración del formulario adaptable para activar el flujo de trabajo de AEM
 sub-product: formularios
-feature: flujo de trabajo
+feature: Flujo de trabajo
 topics: integrations
 audience: developer
 doc-type: technical video
 activity: setup
 version: 6.4,6.5
+topic: Desarrollo
+role: Desarrollador
+level: Principiante
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '47'
-ht-degree: 2%
+source-wordcount: '50'
+ht-degree: 6%
 
 ---
 
