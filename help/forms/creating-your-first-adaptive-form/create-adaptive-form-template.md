@@ -1,26 +1,29 @@
 ---
 title: Creación de una plantilla de formulario adaptable
 description: La plantilla define la estructura y el contenido inicial del formulario adaptable.
-feature: adaptive-forms
+feature: Formularios adaptables
 topics: authoring
 audience: developer
 doc-type: tutorial
 activity: understand
 thumbnail: 37324.jpg
+topic: Desarrollo
+role: Desarrollador
+level: Principiante
 translation-type: tm+mt
-source-git-commit: b085a2c75f8e0b4860d503774ea01a108773ad09
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 0%
+source-wordcount: '138'
+ht-degree: 6%
 
 ---
 
 
 # Creación de una plantilla de formulario adaptable
 
-Cada formulario adaptable se basa en una plantilla de formulario adaptable. La plantilla define la estructura, el contenido inicial, el tema, etc.; el formulario adaptable heredará. Puede crear una nueva plantilla de formulario adaptable o utilizar la plantilla predeterminada al crear el formulario adaptable.
+Cada formulario adaptable se basa en una plantilla de formulario adaptable. La plantilla define la estructura, el contenido inicial, el tema, etc., que la forma adaptativa heredará. Puede crear una nueva plantilla de formulario adaptable o utilizar la plantilla predeterminada al crear el formulario adaptable.
 La plantilla creada aquí será la base de nuestro formulario adaptable a partir de ahora.
-El siguiente vídeo muestra el proceso básico de creación de una plantilla de formulario adaptable
+El siguiente vídeo muestra el proceso básico de creación de plantillas de formulario adaptables
 
 >[!VIDEO](https://video.tv.adobe.com/v/37324/quality=9)
 
