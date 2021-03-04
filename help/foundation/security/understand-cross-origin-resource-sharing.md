@@ -3,15 +3,17 @@ title: Comprender el uso compartido de recursos de origen cruzado (CORS) con AEM
 description: El uso compartido de recursos de origen cruzado (CORS) de Adobe Experience Manager facilita las propiedades web que no son de AEM para realizar llamadas del lado del cliente a AEM, tanto autenticadas como no autenticadas, para recuperar contenido o interactuar directamente con AEM.
 version: 6.3, 6,4, 6.5
 sub-product: fundación, servicios de contenido, sitios
-feature: null
 topics: security, development, content-delivery
 activity: understand
 audience: architect, developer
 doc-type: article
+topic: Seguridad
+role: Desarrollador
+level: Intermedio
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '920'
 ht-degree: 1%
 
 ---
