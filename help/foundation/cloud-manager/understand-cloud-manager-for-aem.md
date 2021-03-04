@@ -2,18 +2,16 @@
 title: Comprender Adobe Cloud Manager
 description: Adobe Cloud Manager proporciona una solución sencilla pero sólida que permite una administración sencilla, introspectiva y autoservicio de los entornos de AEM.
 sub-product: cloud-manager, foundation
+feature: canalizaciones, programas, proyectos, portones de calidad, informes
 topics: best-practices, cicd, development, operations, governance
 doc-type: feature video
 activity: understand
 audience: developer, implementer, administrator, architect
-topic: Arquitectura
-role: Arquitecto
-level: Principiante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 5%
+source-wordcount: '536'
+ht-degree: 4%
 
 ---
 
