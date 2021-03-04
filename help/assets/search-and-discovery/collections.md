@@ -1,26 +1,25 @@
 ---
 title: Colecciones
-description: Descubra cómo proporcionan las colecciones y la vista alternativa en AEM Assets.
+description: Obtenga información sobre cómo proporcionan las colecciones y la vista alternativa en AEM Assets.
 sub-product: activos
-feature: collections
-topics: authoring
-audience: author
-doc-type: feature video
-activity: use
+feature: Colecciones
 version: cloud-service
 kt: 4301
 thumbnail: 32053.jpg
+topic: Administración de contenido
+role: Profesional empresarial
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '23'
-ht-degree: 8%
+source-wordcount: '29'
+ht-degree: 17%
 
 ---
 
 
 # Colecciones
 
-Descubra cómo proporcionan las colecciones y la vista alternativa en AEM Assets.
+Obtenga información sobre cómo proporcionan las colecciones y la vista alternativa en AEM Assets.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32053/?quality=12&learn=on&hidetitle=true)
