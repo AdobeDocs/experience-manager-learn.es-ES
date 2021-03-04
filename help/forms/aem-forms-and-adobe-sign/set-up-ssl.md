@@ -1,7 +1,7 @@
 ---
 title: Habilitar SSL para AEM
 description: Utilice el asistente de configuración SSL de Adobe Experience Manager para configurar una instancia de AEM para que se ejecute sobre HTTPS.
-feature: Formularios adaptables
+feature: formularios adaptables
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,14 +9,11 @@ activity: implement
 version: 6.4,6.5
 thumbnail: 17993.jpg
 kt: 6046
-topic: Desarrollo
-role: Administrador
-level: Intermedio
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '85'
-ht-degree: 4%
+source-wordcount: '81'
+ht-degree: 0%
 
 ---
 
