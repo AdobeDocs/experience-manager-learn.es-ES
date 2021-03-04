@@ -3,18 +3,15 @@ title: Configuración de Sling Dynamic Include para AEM
 description: Una guía de vídeo sobre la instalación y el uso de Apache Sling Dynamic Include con AEM Dispatcher que se ejecuta en el servidor web HTTP Apache.
 version: 6.3, 6.4, 6.5
 sub-product: fundaciones, sitios
-feature: API
+feature: componentes principales, dispatcher
 topics: caching
 activity: develop
 audience: architect, developer
 doc-type: technical video
-topic: Desarrollo
-role: Desarrollador
-level: Con experiencia
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '265'
 ht-degree: 6%
 
 ---
