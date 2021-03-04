@@ -1,32 +1,31 @@
 ---
 title: Marcas de agua en AEM Assets
-description: AEM como función de marca de agua de Cloud Service permite que las representaciones de imágenes personalizadas se marquen con agua con cualquier imagen PNG.
-feature: watermark
-topics: images
-audience: all
-doc-type: feature video
-activity: use
+description: Las funciones de marca de agua de AEM as a Cloud Service permiten que las representaciones de imágenes personalizadas se marquen con agua con cualquier imagen PNG.
+feature: Microservicios de Asset Compute
 version: cloud-service
 kt: 6357
 thumbnail: 41536.jpg
+topic: Administración de contenido
+role: Desarrollador
+level: Intermedio
 translation-type: tm+mt
-source-git-commit: 10784dce34443adfa1fc6dc324242b1c021d2a17
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '58'
-ht-degree: 0%
+source-wordcount: '65'
+ht-degree: 4%
 
 ---
 
 
 # Marcas de agua
 
-AEM como función de marca de agua de Cloud Service permite que las representaciones de imágenes personalizadas se marquen con agua con cualquier imagen PNG.
+Las funciones de marca de agua de AEM as a Cloud Service permiten que las representaciones de imágenes personalizadas se marquen con agua con cualquier imagen PNG.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41536/?quality=12&learn=on)
 
-## Configuración OSGi
+## Configuración de OSGi
 
-El siguiente código auxiliar de configuración OSGi se puede actualizar y agregar al subproyecto `ui.config` del proyecto de AEM.
+El siguiente código auxiliar de configuración de OSGi se puede actualizar y agregar al subproyecto `ui.config` del proyecto de AEM.
 
 `/apps/example/osgiconfig/config.author/com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json`
 
