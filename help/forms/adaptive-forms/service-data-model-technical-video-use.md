@@ -4,21 +4,18 @@ seo-title: Uso de modelos de datos de servicio con AEM Forms
 description: El editor de reglas de AEM Adaptive Forms puede aprovechar los servicios creados en el Modelo de datos de formulario.
 seo-description: El editor de reglas de AEM Adaptive Forms puede aprovechar los servicios creados en el Modelo de datos de formulario.
 uuid: fb4a331f-231a-4864-9325-6dceb288ad75
-feature: '"Formularios adaptables, Modelo de datos de formulario"'
+feature: adaptive-forms, form-data-model
 topics: integrations
 audience: developer
 doc-type: technical video
 activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: e3ff47c3-9ab3-41cb-83ba-38f3eb7b2299
-topic: Desarrollo
-role: Desarrollador
-level: Principiante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '77'
-ht-degree: 2%
+source-wordcount: '71'
+ht-degree: 0%
 
 ---
 
