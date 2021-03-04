@@ -1,27 +1,20 @@
 ---
-title: Explicación de la experiencia del usuario de Asset Share Commons
-seo-title: Explicación de la experiencia del usuario de Asset Share Commons
-description: Materiales para el entendimiento funcional y técnico Recursos Compartidos por Commons
-seo-description: Materiales para el entendimiento funcional y técnico Recursos Compartidos por Commons
-uuid: 16e58bb3-99de-49cf-a23c-dd46f4c34339
-discoiquuid: 64a45096-6fc4-41c9-8695-33dea5d45a3a
-contentOwner: dgonzale
-feature: asset-share, brand-portal
-topics: authoring, sharing, collaboration, search, integrations, publishing, metadata, images, renditions
-audience: all
-doc-type: feature video
-activity: understand
+title: Explicación de la experiencia de usuario de Asset Share Commons
+description: Materiales para la comprensión funcional y técnica de Assets Share Commons
 version: 6.3, 6.4, 6.5
+topic: Administración de contenido
+role: Profesional empresarial
+level: Intermedio
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 1%
+source-wordcount: '133'
+ht-degree: 3%
 
 ---
 
 
-# Explicación de la experiencia del usuario de Asset Share Commons{#understanding-asset-share-commons}
+# Explicación de la experiencia de usuario de Asset Share Commons{#understanding-asset-share-commons}
 
 Introducción rápida a las experiencias de creación y usuario de Asset Share Commons.
 
@@ -29,13 +22,13 @@ Introducción rápida a las experiencias de creación y usuario de Asset Share C
 
 >[!VIDEO](https://video.tv.adobe.com/v/20497/?quality=9&learn=on)
 
-El video proporciona una breve descripción de la experiencia del usuario para Asset Share Commons. La revisión afecta a las funciones de la página de búsqueda, la página Detalles del recurso, así como a varias acciones como Descargar, Compartir y Añadir al carro de compras.
+El vídeo ofrece una explicación abreviada de la experiencia del usuario para Asset Share Commons. La revisión afecta a las capacidades de la página de búsqueda, la página de detalles de los recursos, así como a varias acciones como Descargar, Compartir y Agregar al carro de compras.
 
 ## Experiencia de creación
 
 >[!VIDEO](https://video.tv.adobe.com/v/20498/?quality=9&learn=on)
 
-Este vídeo ofrece una descripción resumida de las funciones básicas de creación de componentes en Asset Share Commons, para proporcionar una idea del nivel de capacidad de creación.
+Este vídeo ofrece información general abreviada sobre las funciones básicas de creación de componentes en Asset Share Commons, para proporcionar una idea del nivel de capacidad de creación.
 
 ## Recursos adicionales{#additional-resources}
 
