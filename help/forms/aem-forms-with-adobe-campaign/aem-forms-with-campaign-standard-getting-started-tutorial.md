@@ -4,17 +4,20 @@ seo-title: Introducción a AEM Forms y Adobe Campaign Standard
 description: Integre AEM Forms con Adobe Campaign Standard mediante el Modelo de datos de formulario de AEM Forms para recuperar la información de perfil de campaña ACS, etc.
 seo-description: Integre AEM Forms con Adobe Campaign Standard mediante el Modelo de datos de formulario de AEM Forms para recuperar la información de perfil de campaña ACS, etc.
 uuid: 56450c9b-3752-4a64-b1b3-8c78e81f5921
-feature: adaptive-forms, form-data-model
+feature: Formularios adaptables, Modelo de datos de formulario
 topics: integrations
 audience: developer
 doc-type: tutorial
 activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: 89245554-7b99-4e7e-9810-52191f9ea365
+topic: Desarrollo
+role: Desarrollador
+level: Con experiencia
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '288'
 ht-degree: 0%
 
 ---
