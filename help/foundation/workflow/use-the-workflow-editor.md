@@ -1,23 +1,18 @@
 ---
-title: Uso del Editor de flujo de trabajo en AEM
-description: El flujo de trabajo permite la administración de procesos empresariales en Experience Manager y se utilizan para el procesamiento automático de contenido, así como para facilitar la gobernanza y el proceso que requieren la adopción de decisiones por parte de los seres humanos. El flujo de trabajo se define mediante modelos de flujo de trabajo que constan de una serie de pasos y que se crean y administran en el Editor de modelos de flujo de trabajo.
-version: 6.4, 6.5, Cloud Service
-sub-product: fundación, sitios, recursos
+title: Cómo crear flujos de trabajo en AEM
+description: El flujo de trabajo permite la administración de procesos empresariales en Experience Manager y se utiliza para el procesamiento automático del contenido, así como para facilitar la gobernanza y el proceso que requieren la adopción de decisiones por parte de los seres humanos.
+version: 6.4, 6.5, cloud-service
 feature: Flujo de trabajo
-topics: governance, collaboration
-activity: use
-audience: administrator, implementer
-doc-type: feature video
-topic: Colaboración
-role: Desarrollador
-level: Principiante
+topic: Administración de contenido
+level: Intermedio
+role: Administrador, Desarrollador
 kt: 657
 thumbnail: 22201.jpg
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '117'
-ht-degree: 2%
+source-wordcount: '93'
+ht-degree: 3%
 
 ---
 
