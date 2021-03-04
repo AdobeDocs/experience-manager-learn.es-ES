@@ -1,25 +1,25 @@
 ---
 title: Informes de recursos en AEM Assets
-description: 'AEM Assets proporciona un entorno de sistema de informes de nivel empresarial que se amplía para repositorios de gran tamaño a través de una experiencia intuitiva del usuario. '
+description: 'AEM Assets proporciona un marco de informes a nivel empresarial que se adapta a repositorios grandes mediante una experiencia de usuario intuitiva. '
 feature: Informes del recurso
-topics: Administration
-role: Profesional del negocio
+topic: Administración
+role: Profesional empresarial
 level: Intermedio
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 648
 thumbnail: 22140.jpg
 translation-type: tm+mt
-source-git-commit: d34a26fde25ff1f0affcdefd74ed8b711d2ab138
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '48'
-ht-degree: 4%
+source-wordcount: '49'
+ht-degree: 6%
 
 ---
 
 
 # Informes de recursos{#using-reports-in-aem-assets}
 
-AEM Assets proporciona un entorno de sistema de informes de nivel empresarial que se amplía para repositorios de gran tamaño a través de una experiencia intuitiva del usuario.
+AEM Assets proporciona un marco de informes a nivel empresarial que se adapta a repositorios grandes mediante una experiencia de usuario intuitiva.
 
 >[!VIDEO](https://video.tv.adobe.com/v/22140/?quality=12&learn=on)
 
