@@ -2,17 +2,20 @@
 title: Comprender la compatibilidad con la autenticación en AEM
 description: 'Una vista consolidada de los mecanismos de autenticación (y, ocasionalmente, autorización) admitidos por AEM. '
 version: 6.3, 6.4, 6.5
-feature: autenticación
+feature: 'Usuarios y grupos '
 topics: authentication, security
 activity: understand
 audience: architect, developer, implementer
 doc-type: article
 kt: 406
+topic: Arquitectura
+role: Arquitecto
+level: Con experiencia
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 2%
+source-wordcount: '144'
+ht-degree: 5%
 
 ---
 
