@@ -1,26 +1,29 @@
 ---
-title: Flujo de trabajo de déclencheur AEM en el envío de formulario HTML5
-seo-title: Flujo de trabajo de déclencheur AEM en envío de formulario HTML5
-description: Siga rellenando el formulario móvil en modo sin conexión y envíe el formulario móvil al flujo de trabajo AEM déclencheur
-seo-description: Siga rellenando el formulario móvil en modo sin conexión y envíe el formulario móvil al flujo de trabajo AEM déclencheur
-feature: mobile-forms
+title: Activador del flujo de trabajo de AEM en el envío de formularios HTML5
+seo-title: Activar el flujo de trabajo de AEM en el envío de formularios HTML5
+description: Siga rellenando el formulario móvil en modo sin conexión y envíe el formulario móvil para activar el flujo de trabajo de AEM
+seo-description: Siga rellenando el formulario móvil en modo sin conexión y envíe el formulario móvil para activar el flujo de trabajo de AEM
+feature: Mobile Forms
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4, 6.5
+topic: Desarrollo
+role: Desarrollador
+level: Con experiencia
 translation-type: tm+mt
-source-git-commit: defefc1451e2873e81cd81e3cccafa438aa062e3
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 0%
+source-wordcount: '346'
+ht-degree: 1%
 
 ---
 
 
-# Crear Perfil personalizado
+# Crear perfil personalizado
 
-En esta parte crearemos un [perfil personalizado.](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html) Un perfil es responsable de procesar el XDP como HTML. Se proporciona un perfil predeterminado para procesar XDP como HTML. Representa una versión personalizada del servicio de representación de Forms móvil. Puede utilizar el servicio de representación de formularios móviles para personalizar el aspecto, el comportamiento y las interacciones del Forms móvil. En nuestro perfil personalizado capturaremos los datos rellenados en el formulario móvil mediante la API guidebridge. A continuación, estos datos se envían al servlet personalizado para generar un PDF interactivo y retransmitirlo a la aplicación que realiza la llamada.
+En esta parte crearemos un [perfil personalizado.](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html) Un perfil es responsable de procesar el XDP como HTML. Se proporciona un perfil predeterminado listo para usar para procesar XDP como HTML. Representa una versión personalizada del servicio de representación de formularios móviles. Puede utilizar el servicio de representación de formularios móviles para personalizar el aspecto, el comportamiento y las interacciones de los formularios móviles. En nuestro perfil personalizado, capturaremos los datos rellenados en el formulario móvil mediante la API de guía. A continuación, estos datos se envían al servlet personalizado que genera un PDF interactivo y lo reenvía a la aplicación que realiza la llamada.
 
 Obtenga los datos del formulario mediante la API de JavaScript `formBridge`. Utilizamos el método `getDataXML()`:
 
@@ -28,7 +31,7 @@ Obtenga los datos del formulario mediante la API de JavaScript `formBridge`. Uti
 window.formBridge.getDataXML({success:suc,error:err});
 ```
 
-En el método de controlador de éxito realizamos una llamada al servlet personalizado que se ejecuta en AEM. Este servlet procesará y devolverá PDF interactivos con los datos del formulario móvil
+En el método del controlador de éxito hacemos una llamada al servlet personalizado que se ejecuta en AEM. Este servlet procesará y devolverá un pdf interactivo con los datos del formulario móvil
 
 ```javascript
 var suc = function(obj) {
@@ -59,9 +62,9 @@ var suc = function(obj) {
 }
 ```
 
-## Generar archivo PDF interactivo
+## Generar PDF interactivo
 
-El siguiente es el código servlet que se encarga de procesar el PDF interactivo y devolver el PDF a la aplicación que realiza la llamada. El servlet invoca el método `mobileFormToInteractivePdf` del servicio OSGi personalizado de DocumentServices.
+El siguiente es el código servlet que es responsable de procesar el pdf interactivo y devolver el pdf a la aplicación que realiza la llamada. El servlet invoca el método `mobileFormToInteractivePdf` del servicio personalizado DocumentServices OSGi.
 
 ```java
 import java.io.File;
@@ -121,9 +124,9 @@ public class GenerateInteractivePDF extends SlingAllMethodsServlet {
 }
 ```
 
-### Representar PDF interactivo
+### Procesar PDF interactivo
 
-El siguiente código utiliza la [API de servicio de Forms](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/forms/api/FormsService.html) para procesar un PDF interactivo con los datos del formulario móvil.
+El siguiente código utiliza la [API del servicio de formularios](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/forms/api/FormsService.html) para procesar un PDF interactivo con los datos del formulario móvil.
 
 ```java
 public Document mobileFormToInteractivePdf(Document xmlData,String path) {
@@ -146,7 +149,7 @@ public Document mobileFormToInteractivePdf(Document xmlData,String path) {
 }
 ```
 
-Para vista la capacidad de descargar PDF interactivos desde un formulario móvil parcialmente completado, [haga clic aquí](https://forms.enablementadobe.com/content/dam/formsanddocuments/schengen.xdp/jcr:content).
-Una vez descargado el PDF, el siguiente paso es enviar el PDF a déclencheur y un flujo de trabajo AEM. Este flujo de trabajo combinará los datos del PDF enviado y generará archivos PDF no interactivos para su revisión.
+Para ver la capacidad de descargar PDF interactivo desde un formulario móvil parcialmente completado, [haga clic aquí](https://forms.enablementadobe.com/content/dam/formsanddocuments/schengen.xdp/jcr:content).
+Una vez descargado el PDF, el siguiente paso es enviar el PDF para activar un flujo de trabajo de AEM. Este flujo de trabajo combina los datos del PDF enviado y genera un PDF no interactivo para su revisión.
 
-El perfil personalizado creado para este caso de uso está disponible como parte de este tutorial.
+El perfil personalizado creado para este caso de uso está disponible como parte de estos recursos de tutorial.
