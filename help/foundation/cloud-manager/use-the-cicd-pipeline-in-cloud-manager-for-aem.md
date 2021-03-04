@@ -2,17 +2,15 @@
 title: Uso de la canalización de CI/CD en Adobe Cloud Manager
 description: Adobe Cloud Manager proporciona una canalización de CD/CI de autoservicio sencilla pero flexible que permite a los equipos de proyectos de AEM implementar código de forma rápida, segura y coherente en todos los entornos de AEM alojados en AMS. En esta serie de vídeos se analiza la configuración y ejecución de la canalización de CI/CD de Cloud Manager en los casos de error y de éxito.
 sub-product: cloud-manager, foundation
+feature: tuberías, portones de calidad
 topics: cicd, performance, best-practices, development, governance
 doc-type: feature video
 activity: understand
 audience: all
-topic: Arquitectura
-role: Desarrollador
-level: Principiante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
