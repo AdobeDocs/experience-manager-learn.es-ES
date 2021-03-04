@@ -4,21 +4,18 @@ seo-title: Configuración del panel de Outlook de jubilación
 description: Esta es la parte 10 de un tutorial de varios pasos para crear su primer documento interactivo de comunicaciones. En esta parte, configuraremos el Panel de perspectivas de jubilación añadiendo componentes de texto y gráficos.
 seo-description: Esta es la parte 10 de un tutorial de varios pasos para crear su primer documento interactivo de comunicaciones. En esta parte, configuraremos el Panel de perspectivas de jubilación añadiendo componentes de texto y gráficos.
 uuid: 1d5119b5-e797-4bf0-9b10-995b3f051f92
-feature: Comunicación interactiva
+feature: comunicación interactiva
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 2ee2cea2-aefa-4d21-a258-248648f73a68
-topic: Desarrollo
-role: Desarrollador
-level: Principiante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 1%
+source-wordcount: '379'
+ht-degree: 0%
 
 ---
 
