@@ -4,21 +4,18 @@ seo-title: Introducción a los formularios adaptables
 description: 'Este tutorial le guiará por los pasos necesarios para crear formularios adaptables con varias pestañas. Aprenderá a usar Tablas, Diseño de acordeón y Editor de reglas para crear reglas comerciales. '
 seo-description: 'Este tutorial le guiará por los pasos necesarios para crear formularios adaptables con varias pestañas. Aprenderá a usar Tablas, Diseño de acordeón y Editor de reglas para crear reglas comerciales. '
 uuid: 6f73cb1c-94e2-4ac7-89e5-a72141a06bbe
-feature: Formularios adaptables
+feature: formularios adaptables
 topics: authoring
 audience: developer
 doc-type: tutorial
 activity: understand
 version: 6.3,6.4,6.5
 discoiquuid: b6863d3d-8528-4a96-ae37-c8d1aa62d443
-topic: Desarrollo
-role: Desarrollador
-level: Principiante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 4%
+source-wordcount: '242'
+ht-degree: 2%
 
 ---
 
