@@ -1,20 +1,16 @@
 ---
 title: Introducción a AEM Headless - Content Services
 description: Un tutorial completo que ilustra cómo crear y exponer contenido mediante AEM sin encabezado.
-feature: '"Fragmentos de contenido, API"'
-topic: '"Sin encabezado, administración de contenido"'
-role: Desarrollador
-level: Principiante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 6%
+source-wordcount: '215'
+ht-degree: 9%
 
 ---
 
 
-# Introducción a AEM Headless - Content Services
+# Introducción a AEM sin encabezado - Content Services
 
 Un tutorial completo que ilustra cómo crear y exponer contenido con AEM y consumido por una aplicación móvil nativa en un escenario de CMS remoto.
 
