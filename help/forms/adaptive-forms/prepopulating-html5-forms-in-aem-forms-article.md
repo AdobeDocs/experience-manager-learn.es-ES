@@ -1,9 +1,9 @@
 ---
-title: Rellene previamente HTML5 Forms mediante el atributo de datos.
-seo-title: Rellene previamente HTML5 Forms mediante el atributo de datos.
-description: Rellene formularios HTML5 recuperando datos del origen back-end.
-seo-description: Rellene formularios HTML5 recuperando datos del origen back-end.
-feature: integrations
+title: Rellenar previamente formularios HTML5 mediante el atributo data .
+seo-title: Rellenar previamente formularios HTML5 mediante el atributo data .
+description: Rellene formularios HTML5 recuperando datos del origen del servidor.
+seo-description: Rellene formularios HTML5 recuperando datos del origen del servidor.
+feature: Formularios adaptables
 topics: mobile-forms
 audience: developer
 doc-type: article
@@ -11,53 +11,56 @@ activity: implement
 version: 6.3,6.4,6.5.
 uuid: 889d2cd5-fcf2-4854-928b-0c2c0db9dbc2
 discoiquuid: 3aa645c9-941e-4b27-a538-cca13574b21c
+topic: Desarrollo
+role: Desarrollador
+level: Con experiencia
 translation-type: tm+mt
-source-git-commit: 1e615d1c51fa0c4c0db335607c29a8c284874c8d
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
 
 
-# Rellenar previamente HTML5 Forms mediante el atributo de datos {#prepopulate-html-forms-using-data-attribute}
+# Rellenar previamente formularios HTML5 con el atributo de datos {#prepopulate-html-forms-using-data-attribute}
 
-Visite la página [AEM Forms samples](https://forms.enablementadobe.com/content/samples/samples.html?query=0) para obtener un vínculo a una demostración en directo de esta capacidad.
+Visite la página [AEM Forms samples](https://forms.enablementadobe.com/content/samples/samples.html?query=0) para ver un vínculo a una demostración en directo de esta capacidad.
 
-Las plantillas XDP procesadas en formato HTML con AEM Forms se denominan HTML5 o Forms móvil. Un caso de uso común es rellenar previamente estos formularios cuando se procesan.
+Las plantillas XDP procesadas en formato HTML mediante AEM Forms se denominan HTML5 o formularios móviles. Un caso de uso común es rellenar previamente estos formularios cuando se están procesando.
 
-Existen dos formas de combinar datos con la plantilla xdp cuando se procesa como HTML.
+Existen dos maneras de combinar datos con la plantilla xdp cuando se está procesando como HTML.
 
-**dataRef**: Puede utilizar el parámetro dataRef en la dirección URL. Este parámetro especifica la ruta absoluta del archivo de datos que se combina con la plantilla. Este parámetro puede ser una URL a un servicio de descanso que devuelve los datos en formato XML.
+**dataRef**: Puede utilizar el parámetro dataRef en la dirección URL. Este parámetro especifica la ruta absoluta del archivo de datos que se combina con la plantilla. Este parámetro puede ser una URL a un servicio de descanso que devuelva los datos en formato XML.
 
-**data**: Este parámetro especifica los bytes de datos codificados UTF-8 que se combinan con la plantilla. Si se especifica este parámetro, el formulario HTML5 omite el parámetro dataRef. Como práctica recomendada, recomendamos utilizar el enfoque de datos.
+**datos**: Este parámetro especifica los bytes de datos codificados UTF-8 que se combinan con la plantilla. Si se especifica este parámetro, el formulario HTML5 ignora el parámetro dataRef. Como práctica recomendada, se recomienda utilizar el método de los datos.
 
-El método recomendado es establecer el atributo de datos en la solicitud con los datos con los que se desea rellenar previamente el formulario.
+El método recomendado es establecer el atributo de datos en la solicitud con los datos con los que desea rellenar previamente el formulario.
 
-slingRequest.setAttribute(&quot;data&quot;, content);
+slingRequest.setAttribute(&quot;data&quot;, contenido);
 
-En este ejemplo, estamos configurando el atributo de datos con el contenido. El contenido representa los datos con los que se desea rellenar previamente el formulario. Normalmente, se obtiene el &quot;contenido&quot; mediante una llamada REST a un servicio interno.
+En este ejemplo, se configura el atributo de datos con el contenido. El contenido representa los datos con los que desea rellenar previamente el formulario. Normalmente, el &quot;contenido&quot; se recuperaría realizando una llamada REST a un servicio interno.
 
-Para lograr este caso de uso debe crear un perfil personalizado. Los detalles sobre la creación de perfil personalizado están claramente documentados en [documentación de AEM Forms aquí](https://helpx.adobe.com/aem-forms/6/html5-forms/custom-profile.html).
+Para lograr este caso de uso, debe crear un perfil personalizado. Los detalles sobre la creación de perfiles personalizados están claramente documentados en la [documentación de AEM Forms aquí](https://helpx.adobe.com/aem-forms/6/html5-forms/custom-profile.html).
 
-Una vez creado el perfil personalizado, creará un archivo JSP que recuperará los datos haciendo llamadas al sistema back-end. Una vez que se hayan recuperado los datos, se utilizará slingRequest.setAttribute(&quot;data&quot;, contenido); para rellenar previamente el formulario
+Una vez que cree su perfil personalizado, creará un archivo JSP que recuperará los datos realizando llamadas a su sistema back-end. Una vez recuperados los datos, utilizará slingRequest.setAttribute(&quot;data&quot;, content); rellenar previamente el formulario
 
-Cuando se procesa el XDP, también puede pasar algunos parámetros al xdp y, en función del valor del parámetro, puede recuperar los datos del sistema back-end.
+Cuando se procesa el XDP, también se pueden pasar algunos parámetros al xdp y, según el valor del parámetro, se pueden recuperar los datos del sistema back-end.
 
-[Por ejemplo: esta dirección URL tiene el parámetro name](http://localhost:4502/content/dam/formsanddocuments/PrepopulateMobileForm.xdp/jcr:content?name=john)
+[Por ejemplo, esta dirección URL tiene el parámetro name](http://localhost:4502/content/dam/formsanddocuments/PrepopulateMobileForm.xdp/jcr:content?name=john)
 
-El JSP que escriba tendrá acceso al parámetro name a través de request.getParameter(&quot;name&quot;). A continuación, puede pasar el valor de este parámetro al proceso de back-end para recuperar los datos necesarios.
-Para que esta capacidad funcione en su sistema, siga los pasos que se mencionan a continuación:
+El JSP que escriba tendrá acceso al parámetro name a través de request.getParameter(&quot;name&quot;) . A continuación, puede pasar el valor de este parámetro al proceso backend para recuperar los datos necesarios.
+Para que esta capacidad funcione en su sistema, siga los pasos que se indican a continuación:
 
-* [Descargar e importar los recursos en AEM mediante ](assets/prepopulatemobileform.zip)
-el administrador de paquetesEl paquete instalará lo siguiente
+* [Descargue e importe los recursos en AEM mediante el gestor de paquetesEl paquete instalará lo siguiente ](assets/prepopulatemobileform.zip)
 
-   * CustomProfile
+
+   * Perfil personalizado
    * XDP de muestra
-   * Extremo de POST de ejemplo que devolverá datos para rellenar el formulario
+   * Punto final POST de muestra que devolverá datos para rellenar el formulario
 
 >[!NOTE]
 >
->Si desea rellenar el formulario llamando al proceso del área de trabajo, es posible que desee incluir callWorkbenchProcess.jsp en el archivo /apps/AEMFormsDemoListings/customprofiles/PrepopulateForm/html.jsp en lugar del archivo setdata.jsp
+>Si desea rellenar el formulario llamando al proceso del área de trabajo, puede que desee incluir callWorkbenchProcess.jsp en su /apps/AEMFormsDemoListings/customprofiles/PrepopulateForm/html.jsp en lugar de setdata.jsp
 
-* [Apunta tu navegador favorito a esta dirección URL](http://localhost:4502/content/dam/formsanddocuments/PrepopulateMobileForm.xdp/jcr:content?name=Adobe%20Systems). El formulario debe rellenarse previamente con el valor del parámetro name
+* [Apunte su navegador favorito a esta dirección URL](http://localhost:4502/content/dam/formsanddocuments/PrepopulateMobileForm.xdp/jcr:content?name=Adobe%20Systems). El formulario debe rellenarse previamente con el valor del parámetro name
