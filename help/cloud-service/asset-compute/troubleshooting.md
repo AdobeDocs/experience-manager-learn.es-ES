@@ -1,7 +1,7 @@
 ---
-title: Resolución de problemas de extensibilidad de Asset compute para AEM Assets
-description: A continuación se muestra un índice de problemas y errores comunes, junto con las resoluciones, que podrían encontrarse al desarrollar e implementar los trabajadores de Asset compute personalizados para AEM Assets.
-feature: asset-compute
+title: Resolución de problemas de la extensibilidad de Asset Compute para AEM Assets
+description: A continuación se muestra un índice de problemas y errores comunes, junto con las resoluciones, que podrían producirse al desarrollar e implementar trabajadores personalizados de Asset Compute para AEM Assets.
+feature: Microservicios de Asset Compute
 topics: renditions, metadata, development
 version: cloud-service
 doc-type: tutorial
@@ -9,160 +9,163 @@ activity: develop
 audience: developer
 kt: 5802
 thumbnail: KT-5802.jpg
+topic: Integraciones, desarrollo
+role: Desarrollador
+level: Intermedio, con experiencia
 translation-type: tm+mt
-source-git-commit: 649d971ecaa67c0d1dd2636f3c212bfee3d13561
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1249'
 ht-degree: 0%
 
 ---
 
 
-# Resolución de problemas de extensibilidad de Assets computes
+# Resolución de problemas de la extensibilidad de Asset Compute
 
-A continuación se muestra un índice de problemas y errores comunes, junto con las resoluciones, que podrían encontrarse al desarrollar e implementar los trabajadores de Asset compute personalizados para AEM Assets.
+A continuación se muestra un índice de problemas y errores comunes, junto con las resoluciones, que podrían producirse al desarrollar e implementar trabajadores personalizados de Asset Compute para AEM Assets.
 
 ## Desarrollar{#develop}
 
 ### La representación se devuelve parcialmente dibujada/dañada{#rendition-returned-partially-drawn-or-corrupt}
 
-+ __Error__: La representación se procesa de forma incompleta (cuando una imagen está dañada) o no se puede abrir.
++ __Error__: La representación se procesa incompletamente (cuando una imagen está dañada) o no se puede abrir.
 
    ![La representación se devuelve parcialmente dibujada](./assets/troubleshooting/develop__await.png)
 
-+ __Causa__: La  `renditionCallback` función del trabajador se está cerrando antes de que se pueda escribir completamente en la representación  `rendition.path`.
-+ __Resolución__: Revise el código de trabajo personalizado y asegúrese de que todas las llamadas asincrónicas se hacen sincrónicas mediante  `await`.
++ __Causa__: La  `renditionCallback` función del trabajador se cierra antes de que la representación se pueda escribir completamente en  `rendition.path`.
++ __Resolución__: Revise el código de trabajo personalizado y asegúrese de que todas las llamadas asincrónicas se realizan sincrónicamente mediante  `await`.
 
 ## Herramienta de desarrollo{#development-tool}
 
-### Falta el archivo Console.json en el proyecto de Asset compute{#missing-console-json}
+### Falta el archivo Console.json en el proyecto de Asset Compute{#missing-console-json}
 
-+ __Error:__ Error: Faltan los archivos necesarios en la validación (.../node_module/@adobe/asset-compute-client/lib/integrationConfiguration.js:XX:YY) en async setupAssetCompute (.../node_module/@adobe/asset-compute-devtool/src/assetComputeDevTool.js:XX:YY)
-+ __Causa:__ Falta el  `console.json` archivo en la raíz del proyecto de Asset compute
-+ __Resolución:__ Descargar un nuevo  `console.json` formulario del proyecto de Adobe I/O
-   1. En console.adobe.io, abra el proyecto de Adobe I/O que el proyecto de Asset compute está configurado para usar
-   1. Toque el botón __Descargar__ en la parte superior derecha
-   1. Guarde el archivo descargado en la raíz del proyecto de Asset compute utilizando el nombre de archivo `console.json`
++ __Error:__ Error: Faltan archivos requeridos en la validación (.../node_module/@adobe/asset-compute-client/lib/integrationConfiguration.js:XX:YY) en async setupAssetCompute (.../node_modules/@adobe/asset-compute-devtool/src/assetComputeDevTool.js:XX:YY)
++ __Causa:__ falta el  `console.json` archivo en la raíz del proyecto de Asset Compute
++ __Resolución:__ Descargar un nuevo  `console.json` formulario de su proyecto de Adobe I/O
+   1. En console.adobe.io, abra el proyecto de Adobe I/O que el proyecto de Asset Compute está configurado para usar
+   1. Toque el botón __Download__ en la parte superior derecha
+   1. Guarde el archivo descargado en la raíz del proyecto de Asset Compute con el nombre de archivo `console.json`
 
 ### Sangría YAML incorrecta en manifest.yml{#incorrect-yaml-indentation}
 
-+ __Error:__ YAMLException: sangría incorrecta de una entrada de asignación en la línea X, columna Y: (mediante salida estándar desde el  `aio app run` comando)
-+ __Causa:Los archivos__ Yaml distinguen entre espacios en blanco, es probable que la sangría sea incorrecta.
-+ __Resolución:__ revise la sangría  `manifest.yml` y asegúrese de que la sangría es correcta.
++ __Error:__ YAMLException: sangría incorrecta de una entrada de asignación en la línea X, columna Y: (a través de standard out from  `aio app run` command)
++ __Causa:__ Los archivos de Yaml distinguen entre espacios en blanco, es probable que la sangría sea incorrecta.
++ __Solución:__ revise su  `manifest.yml` y asegúrese de que toda la sangría sea correcta.
 
-### el límite de memorySize está establecido en demasiado bajo{#memorysize-limit-is-set-too-low}
+### memorySize limit está configurado en demasiado bajo{#memorysize-limit-is-set-too-low}
 
-+ __Error:__  Local Dev Server OpenWhiskError: PUT https://adobeioruntime.net/api/v1/namespaces/xxx-xxx-xxx/actions/xxx-0.0.1/__secured_workeroverwrite=true HTTP 400 devuelto (solicitud incorrecta) —> &quot;El contenido de la solicitud tenía un formato incorrecto:error de requisito: memoria 64 MB por debajo del umbral permitido de 134217728 B&quot;
-+ __Causa:__ Se  `memorySize` estableció un  `manifest.yml` límite para el trabajador por debajo del umbral mínimo permitido tal como se indica en el mensaje de error en bytes.
-+ __Resolución:__  Revise los  `memorySize` límites en la  `manifest.yml` y asegúrese de que son todos grandes por encima del umbral mínimo permitido.
++ __Error:__  OpenWhiskError del servidor de desarrollo local: PUT https://adobeioruntime.net/api/v1/namespaces/xxx-xxx-xxx/actions/xxx-0.0.1/__secured_workeroverwrite=true HTTP 400 devuelto (solicitud incorrecta) —> &quot;El contenido de la solicitud tenía un formato incorrecto:requisito fallido: memoria 64 MB por debajo del umbral permitido de 134217728 B&quot;
++ __Causa:__ se  `memorySize` estableció un  `manifest.yml` límite para el trabajador en por debajo del umbral mínimo permitido, tal como indica el mensaje de error en bytes.
++ __Solución:__  revise los  `memorySize` límites en  `manifest.yml` y asegúrese de que son todos grandes con respecto al umbral mínimo permitido.
 
-### La herramienta de desarrollo no puede inicio debido a la falta de private.key{#missing-private-key}
+### La herramienta de desarrollo no se puede iniciar debido a la falta de private.key{#missing-private-key}
 
-+ __Error:__ Local Dev ServerError: Faltan los archivos necesarios en validatePrivateKeyFile.... (mediante el comando estándar out de `aio app run`)
-+ __Causa:__ El  `ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH` valor del  `.env` archivo no señala  `private.key` o no  `private.key` es legible por el usuario actual.
-+ __Resolución:__ Revise el  `ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH` valor del  `.env` archivo y asegúrese de que contiene la ruta completa y absoluta al  `private.key` archivo del sistema de archivos.
++ __Error:__ Error del servidor de desarrollo local: Faltan archivos necesarios en validatePrivateKeyFile.... (a través del comando estándar out de `aio app run`)
++ __Causa:__ el  `ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH` valor del  `.env` archivo no apunta a  `private.key` o el usuario actual no  `private.key` puede leerlo.
++ __Solución:__ revise el  `ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH` valor del  `.env` archivo y asegúrese de que contiene la ruta completa y absoluta a  `private.key` la del sistema de archivos.
 
 ### Lista desplegable de archivos de origen incorrecta{#source-files-dropdown-incorrect}
 
-La herramienta de desarrollo de assets computes puede ingresar un estado en el que extrae datos antiguos y se nota más en la lista desplegable __Archivo de origen__ que muestra elementos incorrectos.
+Asset Compute Development Tool puede introducir un estado en el que extrae datos antiguos y es más visible en el menú desplegable __Source file__ que muestra elementos incorrectos.
 
-+ __Error:el menú desplegable__ del archivo de origen muestra elementos incorrectos.
-+ __Causa:el estado__ del explorador en caché antiguo provoca la aparición de
-+ __Resolución:__ En el navegador, borre completamente el &quot;estado de la aplicación&quot; de la ficha del navegador, la caché del navegador, el almacenamiento local y el trabajador del servicio.
++ __Error:__ la lista desplegable Archivo de origen muestra los elementos incorrectos.
++ __Causa:__ el estado del explorador almacenado en caché antiguo hace que la variable
++ __Solución:__ En el explorador, borre completamente el &quot;estado de la aplicación&quot; de la pestaña del explorador, la caché del explorador, el almacenamiento local y el trabajador del servicio.
 
 ### Falta el parámetro de consulta devToolToken o no es válido{#missing-or-invalid-devtooltoken-query-parameter}
 
-+ __Error:__  notificación &quot;no autorizada&quot; en la herramienta de desarrollo de Assets computes
-+ __Causa:__ `devToolToken` falta o no es válida
-+ __Resolución:__ cierre la ventana del navegador de la herramienta de desarrollo de Assets computes, finalice los procesos de la herramienta de desarrollo que se ejecuten iniciados mediante el  `aio app run` comando y vuelva a utilizar la herramienta de desarrollo de inicios (mediante  `aio app run`).
++ __Error: Notificación__ &quot;No autorizada&quot; en la herramienta de desarrollo de Asset Compute
++ __Causa:__ `devToolToken`  falta o no es válido
++ __Solución:__ cierre la ventana del explorador de la herramienta de desarrollo de Asset Compute, termine cualquier proceso de la herramienta de desarrollo que se ejecute a través del  `aio app run` comando y reinicie la herramienta de desarrollo (con  `aio app run`).
 
 ### No se pueden quitar los archivos de origen{#unable-to-remove-source-files}
 
-+ __Error:no__ hay forma de eliminar los archivos de origen agregados de la interfaz de usuario de las herramientas de desarrollo
-+ __Causa:__ Esta funcionalidad no se ha implementado
-+ __Resolución:__ inicie sesión en el proveedor de almacenamiento de nube con las credenciales definidas en  `.env`. Busque el contenedor utilizado por las Herramientas de desarrollo (también especificado en `.env`), navegue hasta la carpeta __source__ y elimine las imágenes de origen. Es posible que tenga que realizar los pasos descritos en la lista desplegable [Archivos de origen incorrectos](#source-files-dropdown-incorrect) si los archivos de origen eliminados siguen mostrándose en la lista desplegable, ya que se pueden almacenar en caché localmente en el &quot;estado de la aplicación&quot; de las Herramientas de desarrollo.
++ __Error:__ no hay forma de eliminar los archivos de origen añadidos de la interfaz de usuario de las herramientas de desarrollo
++ __Causa:__ esta funcionalidad no se ha implementado
++ __Solución:__ inicie sesión en el proveedor de almacenamiento en la nube con las credenciales definidas en  `.env`. Busque el contenedor utilizado por las herramientas de desarrollo (también especificadas en `.env`), navegue hasta la carpeta __source__ y elimine las imágenes de origen. Es posible que tenga que realizar los pasos descritos en la lista desplegable [Source files grepldown incorrecto](#source-files-dropdown-incorrect) si los archivos de origen eliminados siguen mostrándose en la lista desplegable, ya que se pueden almacenar en caché localmente en el &quot;estado de aplicación&quot; de las herramientas de desarrollo.
 
    ![Almacenamiento de blob de Microsoft Azure](./assets/troubleshooting/dev-tool__remove-source-files.png)
 
 ## Probar{#test}
 
-### No se generó ninguna representación durante la ejecución de la prueba{#test-no-rendition-generated}
+### No se genera ninguna representación durante la ejecución de la prueba{#test-no-rendition-generated}
 
-+ __Error:__ Error: No se generó ninguna representación.
-+ __Causa:__ El programa de trabajo no pudo generar una representación debido a un error inesperado, como un error de sintaxis de JavaScript.
-+ __Resolución:__ Revise la ejecución de la prueba  `test.log` en  `/build/test-results/test-worker/test.log`. Busque la sección de este archivo correspondiente al caso de prueba fallido y revise los errores.
++ __Error:__ error: No se generó ninguna representación.
++ __Causa:__ el trabajador no pudo generar una representación debido a un error inesperado, como un error de sintaxis de JavaScript.
++ __Solución:__ revise la ejecución de la prueba  `test.log` en  `/build/test-results/test-worker/test.log`. Busque la sección en este archivo correspondiente al caso de prueba fallido y revise si hay errores.
 
-   ![Resolución de problemas: no se genera ninguna representación](./assets/troubleshooting/test__no-rendition-generated.png)
+   ![Solución de problemas: no se genera ninguna representación](./assets/troubleshooting/test__no-rendition-generated.png)
 
 ### La prueba genera una representación incorrecta, lo que provoca que la prueba falle{#tests-generates-incorrect-rendition}
 
-+ __Error:__ Error: La representación &#39;rendition.xxx&#39; no es la esperada.
-+ __Causa:__ El programa de trabajo genera una representación que no es la misma que la  `rendition.<extension>` proporcionada en el caso de prueba.
-   + Si el archivo `rendition.<extension>` esperado no se crea de la misma manera que la representación generada localmente en el caso de prueba, la prueba puede fallar, ya que puede haber alguna diferencia en los bits. Por ejemplo, si el programa de trabajo de Asset compute cambia el contraste mediante API y el resultado esperado se crea ajustando el contraste en Adobe Photoshop CC, los archivos pueden aparecer del mismo modo, pero las variaciones menores en los bits pueden ser diferentes.
-+ __Resolución:__ Revise la salida de representación de la prueba navegando hasta  `/build/test-worker/<worker-name>/<test-run-timestamp>/<test-case>/rendition.<extension>`y compárela con el archivo de representación esperado en el caso de prueba. Para crear un recurso esperado exacto, haga lo siguiente:
-   + Utilice la herramienta de desarrollo para generar una representación, validar que sea correcta y utilizarla como archivo de representación esperado
-   + O bien, valide el archivo generado por la prueba en `/build/test-worker/<worker-name>/<test-run-timestamp>/<test-case>/rendition.<extension>`, valide que es correcto y utilícelo como archivo de representación esperado
++ __Error:__ error: La representación &quot;rendition.xxx&quot; no se ajusta a lo esperado.
++ __Causa:__ el trabajador genera una representación que no es la misma que la  `rendition.<extension>` proporcionada en el caso de prueba.
+   + Si el archivo `rendition.<extension>` esperado no se crea de la misma manera que la representación generada localmente en el caso de prueba, la prueba puede fallar ya que puede haber alguna diferencia en los bits. Por ejemplo, si el trabajador de Asset Compute cambia el contraste mediante API y el resultado esperado se crea ajustando el contraste en Adobe Photoshop CC, los archivos pueden aparecer del mismo modo, pero las variaciones menores en los bits pueden ser diferentes.
++ __Solución:__ revise la salida de representación de la prueba navegando hasta  `/build/test-worker/<worker-name>/<test-run-timestamp>/<test-case>/rendition.<extension>` y compárela con el archivo de representación esperado en el caso de prueba. Para crear un recurso esperado exacto, haga lo siguiente:
+   + Utilice la herramienta de desarrollo para generar una representación, validar que sea correcta y utilizarla como el archivo de representación esperado
+   + O bien, valide el archivo generado por la prueba en `/build/test-worker/<worker-name>/<test-run-timestamp>/<test-case>/rendition.<extension>`, valide que es correcto y utilícelo como el archivo de representación esperado
 
 ## Depurar
 
-### El depurador no se adjunta{#debugger-does-not-attach}
+### Debugger no adjunta{#debugger-does-not-attach}
 
-+ __Error__: Error al procesar el inicio: Error: No se pudo conectar al destinatario de depuración en...
-+ __Causa__: Docker Desktop no se está ejecutando en el sistema local. Para verificar esto, revise la consola de depuración de código VS (Vista > Consola de depuración) y confirme que se ha producido este error.
-+ __Resolución__: Inicio  [Docker Desktop y confirme que las imágenes de acoplamiento necesarias están instaladas](./set-up/development-environment.md#docker).
++ __Error__: Error al procesar el inicio: Error: No se pudo conectar para depurar el destino en...
++ __Causa__: Docker Desktop no se está ejecutando en el sistema local. Para verificarlo, revise la consola de depuración de código de VS (Ver > Consola de depuración), confirmando este error.
++ __Resolución__: Inicie  [Docker Desktop y confirme que están instaladas](./set-up/development-environment.md#docker) las imágenes de Docker necesarias.
 
-### Los puntos de interrupción no se pausan{#breakpoints-no-pausing}
+### Puntos de interrupción que no se pausan{#breakpoints-no-pausing}
 
-+ __Error__: Al ejecutar el programa de trabajo de Asset compute desde la herramienta de desarrollo depurable, VS Code no se pausa en los puntos de interrupción.
++ __Error__: Al ejecutar el trabajador de Asset Compute desde la herramienta de desarrollo depurable, el código VS no se pausa en los puntos de interrupción.
 
 #### El depurador de código VS no está adjunto{#vs-code-debugger-not-attached}
 
-+ __Causa:__ El depurador de código VS se detuvo o desconectó.
-+ __Resolución:__ Reinicie el depurador de código VS y verifique que se adjunta, mirando la consola de salida de depuración de código VS (Vista > Consola de depuración)
++ __Causa:__ el depurador de código VS se detuvo/desconectó.
++ __Solución:__ reinicie el depurador de código VS y verifique que se adjunte mirando la consola de salida de depuración de código VS (Ver > Consola de depuración)
 
-#### El depurador de código VS se adjunta tras iniciar la ejecución del trabajo{#vs-code-debugger-attached-after-worker-execution-began}
+#### Depurador de código VS adjunto después de iniciar la ejecución del trabajo{#vs-code-debugger-attached-after-worker-execution-began}
 
-+ __Causa:__ El depurador de código VS no se adjuntó antes de tocar  ____ Ejecutar herramienta de desarrollo.
-+ __Resolución:__ asegúrese de que el depurador se ha conectado mediante la revisión de la consola de depuración de VS Code (Vista > Consola de depuración) y, a continuación, vuelva a ejecutar el programa de trabajo de Asset compute desde la herramienta de desarrollo.
++ __Causa:__ el depurador de código VS no se adjuntó antes de pulsar la  ____ Herramienta de desarrollo de ejecución.
++ __Solución:__ asegúrese de que el depurador se ha adjuntado revisando la consola de depuración de VS Code (Ver > Consola de depuración) y, a continuación, vuelva a ejecutar el trabajador de Asset Compute desde la herramienta de desarrollo.
 
-### Se agotó el tiempo de espera del trabajo durante la depuración{#worker-times-out-while-debugging}
+### Se agota el tiempo de espera del trabajo al depurar{#worker-times-out-while-debugging}
 
-+ __Error__: La consola de depuración informa de que la acción se agotará en -XXX milisegundos&quot; o de que la previsualización de la representación de la herramienta de desarrollo de  [ ](./develop/development-tool.md) Assets computes gira indefinidamente o
-+ __Causa__: Se superó el tiempo de espera de trabajo definido en  [manifest.](./develop/manifest.md) ymlis durante la depuración.
-+ __Resolución__: Aumente temporalmente el tiempo de espera del programa de trabajo en  [manifest.](./develop/manifest.md) ymlor y acelere las actividades de depuración.
++ __Error__: La consola de depuración informa de que la acción agotará el tiempo de espera en -XXX milisegundos&quot; o de que la vista previa de la  [Herramienta de desarrollo de cómputo de recursos](./develop/development-tool.md)  gira indefinidamente o
++ __Causa__: Se ha superado el tiempo de espera de trabajador definido en  [manifest.](./develop/manifest.md) ymlis durante la depuración.
++ __Resolución__: Aumente temporalmente el tiempo de espera del trabajador en  [manifest.](./develop/manifest.md) ymlor acelere las actividades de depuración.
 
-### No se puede terminar el proceso de depuración{#cannot-terminate-debugger-process}
+### No se puede finalizar el proceso de depuración{#cannot-terminate-debugger-process}
 
-+ __Error__:  `Ctrl-C` en la línea de comandos no termina el proceso de depuración (`npx adobe-asset-compute devtool`).
-+ __Causa__: Un error en  `@adobe/aio-cli-plugin-asset-compute` 1.3.x  `Ctrl-C` no se reconoce como un comando de finalización.
-+ __Resolución__: Actualización  `@adobe/aio-cli-plugin-asset-compute` a la versión 1.4.1 o posterior
++ __Error__:  `Ctrl-C` en la línea de comandos no finaliza el proceso de depuración (`npx adobe-asset-compute devtool`).
++ __Causa__: Un error en  `@adobe/aio-cli-plugin-asset-compute` 1.3.x  `Ctrl-C` no se reconoce como un comando de terminación.
++ __Resolución__: Actualización  `@adobe/aio-cli-plugin-asset-compute` a la versión 1.4.1+
 
    ```
    $ aio update
    ```
 
-   ![Resolución de problemas: actualización de aio](./assets/troubleshooting/debug__terminate.png)
+   ![Solución de problemas: actualización de aio](./assets/troubleshooting/debug__terminate.png)
 
 ## Implementar{#deploy}
 
-### Falta la representación personalizada del recurso en AEM{#custom-rendition-missing-from-asset}
+### Falta una representación personalizada en el recurso en AEM{#custom-rendition-missing-from-asset}
 
-+ __Error:los recursos__ nuevos y reprocesados se procesan correctamente, pero no se encuentran en la representación personalizada
++ __Error:__ los recursos nuevos y reprocesados se procesan correctamente, pero no tienen la representación personalizada
 
 #### Perfil de procesamiento no aplicado a la carpeta antecesora
 
-+ __Causa:__ el recurso no existe en una carpeta con el Perfil de procesamiento que utiliza el programa de trabajo personalizado
-+ __Resolución:__ Aplicación del Perfil de procesamiento a una carpeta antecesora del recurso
++ __Causa:__ el recurso no existe en una carpeta con el perfil de procesamiento que utiliza el trabajador personalizado
++ __Resolución:__ Aplicar el perfil de procesamiento a una carpeta antecesora del recurso
 
-#### Perfil de procesamiento sustituido por un Perfil de procesamiento inferior
+#### Perfil de procesamiento reemplazado por perfil de procesamiento inferior
 
-+ __Causa:__ El recurso existe debajo de una carpeta con el Perfil de procesamiento de trabajador personalizado aplicado, pero se ha aplicado un Perfil de procesamiento diferente que no utiliza el programa de trabajo de cliente entre esa carpeta y el recurso.
-+ __Resolución:__ Combinar o reconciliar de otro modo los dos Perfiles de procesamiento y quitar el Perfil de procesamiento intermedio
++ __Causa:__ el recurso existe debajo de una carpeta con el perfil de procesamiento de trabajador personalizado aplicado, pero se ha aplicado un perfil de procesamiento diferente que no utiliza el trabajador del cliente entre esa carpeta y el recurso.
++ __Solución:__ combine o reconcilie los dos perfiles de procesamiento y elimine el perfil de procesamiento intermedio
 
-### Error en el procesamiento de recursos en AEM{#asset-processing-fails}
+### El procesamiento de recursos falla en AEM{#asset-processing-fails}
 
-+ __Error:distintivo de error de procesamiento de__ recursos mostrado en el recurso
-+ __Causa:__ error al ejecutar el programa de trabajo personalizado
-+ __Resolución:__ siga las instrucciones para  [depurar la ](./test-debug/debug.md#aio-app-logs) activación de Adobe I/O Runtime mediante  `aio app logs`.
++ __Error:__ se muestra el distintivo Error en el procesamiento de recursos en el recurso
++ __Causa:__ error en la ejecución del trabajador personalizado
++ __Solución:__ siga las instrucciones sobre la  [depuración de la ](./test-debug/debug.md#aio-app-logs) activación de Adobe I/O Runtime mediante  `aio app logs`.
 
 
