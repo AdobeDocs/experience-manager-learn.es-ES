@@ -4,21 +4,18 @@ seo-title: Restricción del Editor de reglas a grupos específicos en AEM Forms
 description: Restricción del Editor de reglas de formulario adaptable a grupos específicos en AEM
 seo-description: Restricción del Editor de reglas de formulario adaptable a grupos específicos en AEM
 uuid: b50f3736-b72e-4154-9ca5-95e10606f4ad
-feature: Formularios adaptables
+feature: formularios adaptables
 topics: authoring
 audience: developer
 doc-type: technical video
 activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: 5aa35204-1c6d-4a1e-b8cd-79170653471a
-topic: Administración
-role: Profesional empresarial
-level: Principiante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '95'
-ht-degree: 3%
+source-wordcount: '90'
+ht-degree: 0%
 
 ---
 
