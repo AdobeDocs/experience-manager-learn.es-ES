@@ -4,17 +4,20 @@ seo-title: Generar PDF a partir de envío de formulario HTML5
 description: Generar PDF a partir del envío de formulario móvil
 seo-description: Generar PDF a partir del envío de formulario móvil
 uuid: 61f07029-d440-44ec-98bc-f2b5eef92b59
-feature: formularios móviles
+feature: Mobile Forms
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
 discoiquuid: 816f1a75-6ceb-457b-ba18-daf229eed057
+topic: Desarrollo
+role: Desarrollador
+level: Con experiencia
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '587'
 ht-degree: 0%
 
 ---
