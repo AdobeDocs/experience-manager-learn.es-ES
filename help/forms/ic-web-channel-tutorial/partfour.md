@@ -4,21 +4,18 @@ seo-title: Creación de una plantilla de documento de canal web en AEM Forms
 description: Esta es la parte 4 del tutorial de varios pasos para crear su primer documento interactivo de comunicaciones. En esta parte, crearemos una plantilla para el documento de canal web.
 seo-description: Esta es la parte 4 del tutorial de varios pasos para crear su primer documento interactivo de comunicaciones. En esta parte, crearemos una plantilla para el documento de canal web.
 uuid: b4c9f68b-3091-4f87-988d-705f0296a8d8
-feature: Comunicación interactiva
+feature: comunicación interactiva
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 95ca401b-69ea-49e2-a9ae-e144444e481e
-topic: Desarrollo
-role: Desarrollador
-level: Principiante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 2%
+source-wordcount: '152'
+ht-degree: 0%
 
 ---
 
