@@ -1,36 +1,39 @@
 ---
 title: Informes valiosos para administradores
-description: Descubrir dos informes valiosos que los administradores de Dynamic Media Classic deben considerar configurar.
-sub-product: Dynamic-media, recursos
-feature: reports
+description: Descubra dos informes valiosos que los administradores de Dynamic Media Classic deben considerar para configurar.
+sub-product: medios dinámicos, recursos
+feature: Dynamic Media Classic
 doc-type: tutorial
 topics: development, authoring, configuring, reports
 audience: all
 activity: use
+topic: Administración de contenido
+role: Administrador
+level: Intermedio
 translation-type: tm+mt
-source-git-commit: ac603e55308f306305482dfdee31a591274c164a
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 2%
+source-wordcount: '344'
+ht-degree: 3%
 
 ---
 
 
 # Informes valiosos para administradores {#valuable-reports}
 
-En este último capítulo, solo queremos que conozca dos valiosos informes que podría considerar configurar si es un administrador: el informe Ancho de banda y Almacenamiento y el informe Errores de imagen.
+En este último capítulo, solo queremos que conozca dos informes valiosos que puede considerar configurar si es un administrador: el informe Ancho de banda y almacenamiento y el informe Errores de imagen .
 
-## Informe Ancho de banda y Almacenamiento
+## Informe Ancho de banda y almacenamiento
 
-El informe Ancho de banda y Almacenamiento detalla cuánto ancho de banda del servidor de imágenes se ha consumido por mes y el almacenamiento que está utilizando en Dynamic Media Classic. El almacenamiento es una cantidad contratada, por lo que es importante que verifique y se asegure de que se mantiene por debajo del límite para evitar tarifas excesivas.
+El informe Ancho de banda y almacenamiento detalla cuánto ancho de banda del servidor de imágenes se ha consumido al mes y el almacenamiento que está ocupando en Dynamic Media Classic. El almacenamiento es una cantidad contratada, por lo que es importante comprobar y asegurarse de que se mantiene por debajo de su límite para evitar cargos adicionales.
 
 ![image](assets/valuable-reports/reports-1.jpg)
 
-_El informe Ancho de banda y Almacenamiento muestra esta cuenta como algo más que su límite de almacenamiento de 30 GB._
+_El informe Ancho de banda y almacenamiento muestra esta cuenta como algo más que su límite de almacenamiento de 30 GB._
 
 ## Informe de errores de imagen
 
-Siempre que una URL solicita una imagen que falta, el servidor de imágenes genera un error. Puede configurar una imagen predeterminada para que aparezca en estos casos, pero debe tener en cuenta los errores. El informe Errores de imagen proporciona una lista de los 20 errores de imagen más frecuentes en las últimas 24 horas con detalles como la cantidad de veces que se ha producido el error, la imagen que da el error y la página con la imagen problemática. Si la respuesta es &quot;PREDETERMINADA&quot;, significa que se ha servido la imagen predeterminada.
+Siempre que una URL solicita una imagen que falta, el servidor de imágenes genera un error. Puede configurar una imagen predeterminada para que aparezca en estos casos, pero debe tener en cuenta los errores. El informe Errores de imagen proporciona una lista de los 20 errores de imagen más frecuentes de las últimas 24 horas con detalles como cuántas veces se ha producido el error, la imagen que lo da y la página con la imagen problemática. Si la respuesta es &quot;PREDETERMINADA&quot;, significa que se ha proporcionado la imagen predeterminada.
 
 ![image](assets/valuable-reports/reports-2.jpg)
 
@@ -38,13 +41,13 @@ _Informe de error de imagen._
 
 ## Conclusión
 
-Esperamos que el contenido de esta guía de optimizaciones le resulte útil para empezar a usar su poderosa solución de medios enriquecidos o para sacar más provecho de ella.
+Esperamos que el contenido de esta guía de prácticas recomendadas le resulte útil para empezar a usar o aprovechar al máximo su potente solución de medios enriquecidos.
 
 Para obtener más información sobre Dynamic Media Classic, eche un vistazo a los siguientes recursos:
 
-- [Dynamic Media Classic en Experience League: Get to Value](https://guided.adobe.com/?launch=AEM-5a#recommended/solutions/experience-manager)
-- [Dynamic Media Classic en Experience League: Haga más](https://guided.adobe.com/?launch=AEM-6a#recommended/solutions/experience-manager)
-- [Archivos de la newsletter de Dynamic Media](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/dynamic-media-newsletter.html)
-- [Página de Suscripción de la newsletter de Dynamic Media](https://www.adobe.com/subscription/dynamic-media-newsletter.html)
+- [Dynamic Media Classic en Experience League: rentabilice](https://guided.adobe.com/?launch=AEM-5a#recommended/solutions/experience-manager)
+- [Dynamic Media Classic en Experience League: Más información](https://guided.adobe.com/?launch=AEM-6a#recommended/solutions/experience-manager)
+- [Archivos de boletines de Dynamic Media](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/dynamic-media-newsletter.html)
+- [Página de suscripción al boletín de Dynamic Media](https://www.adobe.com/subscription/dynamic-media-newsletter.html)
 - [Documentación de Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/home.html)
-- [Publicaciones de blogs de medios enriquecidos](https://theblog.adobe.com/tag/dynamic-media)
+- [Publicaciones de blog de medios enriquecidos](https://theblog.adobe.com/tag/dynamic-media)
