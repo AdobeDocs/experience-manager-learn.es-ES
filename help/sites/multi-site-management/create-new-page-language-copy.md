@@ -1,7 +1,7 @@
 ---
-title: Crear una página de copia de idioma
+title: Creación de una página de copia de idioma
 description: Aprenda a crear una página en una copia de idioma existente y, a continuación, traduzca el contenido a otra copia de idioma.
-feature: language-copy, live-copy, multi-site-manager
+feature: Copia de idioma, administrador de varios sitios
 topics: localization, authoring, content-architecture
 audience: all
 doc-type: feature video
@@ -9,16 +9,19 @@ activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 5848
 thumbnail: 36682.jpg
+topic: Localización
+role: Profesional empresarial
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 0d4d1140dd226bbb02de0b19942b55495e3e2b2c
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '50'
-ht-degree: 0%
+source-wordcount: '59'
+ht-degree: 1%
 
 ---
 
 
-# Crear una página de copia de idioma {#create-language-copy-page}
+# Creación de una página de copia de idioma {#create-language-copy-page}
 
 Aprenda a crear una página en una copia de idioma existente y, a continuación, traduzca el contenido a otra copia de idioma.
 
