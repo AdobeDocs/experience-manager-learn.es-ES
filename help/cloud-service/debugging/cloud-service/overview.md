@@ -1,46 +1,49 @@
 ---
-title: Depuración AEM como Cloud Service
-description: en la infraestructura de nube de autoservicio, escalable, que requiere que los desarrolladores de AEM entiendan cómo comprender y depurar varias facetas de AEM como Cloud Service, desde la compilación y la implementación hasta obtener detalles de la ejecución de aplicaciones AEM.
-feature: null
+title: Depuración de AEM as a Cloud Service
+description: en infraestructura de nube con capacidad de autoservicio, escalable y que hace que sea necesario que los desarrolladores de AEM comprendan cómo comprender y depurar varias facetas de AEM as a Cloud Service, desde la creación y la implementación hasta la obtención de detalles sobre cómo ejecutar aplicaciones AEM.
+feature: Herramientas para desarrolladores
 topics: development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5346
+topic: Desarrollo
+role: Desarrollador
+level: Principiante, intermedio
 translation-type: tm+mt
-source-git-commit: debb65a218ae0b9e5105c3f63018358902330b34
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 1%
+source-wordcount: '314'
+ht-degree: 2%
 
 ---
 
 
-# Depuración AEM como Cloud Service
+# Depuración de AEM as a Cloud Service
 
-AEM como Cloud Service es la manera nativa de la nube de aprovechar las aplicaciones AEM. AEM como Cloud Service se ejecuta en una infraestructura de nube autoservicio, escalable, que requiere que los desarrolladores AEM entiendan cómo entender y depurar varias facetas de AEM como Cloud Service, desde la generación y la implementación hasta obtener detalles de cómo ejecutar aplicaciones AEM.
+AEM as a Cloud Service es la forma nativa de la nube de aprovechar las aplicaciones AEM. AEM as a Cloud Service se ejecuta en una infraestructura en la nube con capacidad de autoservicio, escalable y de autoservicio, lo que requiere que los desarrolladores de AEM comprendan cómo comprender y depurar varias facetas de AEM as a Cloud Service, desde la creación y la implementación hasta la obtención de detalles sobre cómo ejecutar aplicaciones AEM.
 
 ## Registros
 
-Los registros proporcionan detalles sobre el funcionamiento de la aplicación en AEM como Cloud Service, así como información sobre los problemas con las implementaciones.
+Los registros proporcionan detalles sobre cómo funciona su aplicación en AEM as a Cloud Service, así como información sobre los problemas con las implementaciones.
 
-[Depuración de AEM como Cloud Service mediante registros](./logs.md)
+[Depuración de AEM as a Cloud Service mediante registros](./logs.md)
 
-## Creación e implementación
+## Compilación e implementación
 
-Las canalizaciones de Adobe Cloud Manager implementan AEM aplicación mediante una serie de pasos para determinar la calidad y viabilidad del código cuando se implementa en AEM como Cloud Service. Cada uno de los pasos puede dar como resultado un error, lo que hace importante comprender cómo depurar las compilaciones para determinar la causa raíz de y cómo resolver los errores.
+Las canalizaciones de Adobe Cloud Manager implementan la aplicación de AEM mediante una serie de pasos para determinar la calidad y viabilidad del código cuando se implementa en AEM as a Cloud Service. Cada uno de los pasos puede provocar un error, por lo que es importante comprender cómo depurar las compilaciones para determinar la causa raíz de y cómo resolver cualquier error.
 
-[Depuración AEM como una compilación e implementación Cloud Service](./build-and-deployment.md)
+[Depuración de AEM as a Cloud Service: compilación e implementación](./build-and-deployment.md)
 
 ## Developer Console
 
-La consola para desarrolladores proporciona una variedad de información e introspecciones en AEM como entornos de Cloud Service que son útiles para comprender cómo su aplicación es reconocida por y funciona dentro de AEM como Cloud Service.
+La consola de desarrollador proporciona una variedad de información e introspecciones en los entornos de AEM as a Cloud Service que son útiles para comprender cómo AEM as a Cloud Service reconoce y funciona su aplicación.
 
-[Depuración de AEM como Cloud Service con la Consola de programadores](./developer-console.md)
+[Depuración de AEM as a Cloud Service con Developer Console](./developer-console.md)
 
 ## CRXDE Lite
 
-CRXDE Lite es una herramienta clásica pero poderosa para depurar AEM como entornos de desarrollo Cloud Service. CRXDE Lite proporciona un conjunto de funciones que ayudan a depurar desde la inspección de todos los recursos y propiedades, la manipulación de las partes mutables del JCR, la investigación de permisos y la evaluación de consultas.
+CRXDE Lite es una herramienta clásica pero potente para depurar entornos de desarrollo de AEM as a Cloud Service. CRXDE Lite proporciona un conjunto de funcionalidades que ayudan a depurar desde la inspección de todos los recursos y propiedades, la manipulación de las partes mutables del JCR, la investigación de permisos y la evaluación de consultas.
 
-[Depuración de AEM como Cloud Service con CRXDE Lite](./crxde-lite.md)
+[Depuración de AEM as a Cloud Service con CRXDE Lite](./crxde-lite.md)
