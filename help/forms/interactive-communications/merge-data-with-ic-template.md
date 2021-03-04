@@ -3,16 +3,19 @@ title: Generación de documentos de canal de impresión mediante la combinación
 seo-title: Generación de documentos de canal de impresión mediante la combinación de datos
 description: Aprenda a generar el documento de canal de impresión combinando los datos contenidos en el flujo de entrada
 seo-description: Aprenda a generar el documento de canal de impresión combinando los datos contenidos en el flujo de entrada
-feature: comunicación interactiva
+feature: Comunicación interactiva
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
+topic: Desarrollo
+role: Desarrollador
+level: Intermedio
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '506'
 ht-degree: 1%
 
 ---
