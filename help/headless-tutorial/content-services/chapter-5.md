@@ -1,10 +1,14 @@
 ---
 title: Capítulo 5 - Creación de páginas de servicios de contenido - Servicios de contenido
 description: El capítulo 5 del tutorial AEM Headless cubre la creación de páginas a partir de las plantillas definidas en el capítulo 4. Estas páginas actuarán como puntos finales HTTP JSON.
+feature: Fragmentos de contenido, API
+topic: Sin objetivos, Administración de contenido
+role: Desarrollador
+level: Principiante
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
