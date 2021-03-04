@@ -1,26 +1,25 @@
 ---
 title: Carril de búsqueda de administración de recursos
-description: El carril de búsqueda de administración de recursos permite buscar recursos utilizando criterios personalizados en Omniture Search.
+description: El carril de búsqueda de administración de recursos permite buscar recursos utilizando criterios personalizados en Omnisearch.
 sub-product: activos
-feature: omnisearch
-topics: search
-audience: administrator, implementer
-doc-type: feature-video
-activity: setup
+feature: 'Búsqueda  '
 version: cloud-service
 kt: 4995
 thumbnail: 35842.jpg
+topic: Administración de contenido
+role: Administrador
+level: Intermedio
 translation-type: tm+mt
-source-git-commit: 570693c582b4b6e467bcab8253ab5ff36b8f7ca1
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '41'
-ht-degree: 0%
+source-wordcount: '46'
+ht-degree: 8%
 
 ---
 
 
 # Carril de búsqueda de administración de recursos
 
-El carril de búsqueda de administración de recursos permite buscar recursos utilizando criterios personalizados en Omniture Search.
+El carril de búsqueda de administración de recursos permite buscar recursos utilizando criterios personalizados en Omnisearch.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35842/?quality=12&learn=on&hidetitle=true)
