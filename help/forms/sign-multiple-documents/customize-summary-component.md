@@ -1,7 +1,7 @@
 ---
 title: Personalizar componente de resumen
-description: Amplíe el componente de paso de resumen para incluir la capacidad de desplazarse al siguiente formulario en el paquete.
-feature: adaptive-forms
+description: Amplíe el componente de paso de resumen para incluir la capacidad de navegar al siguiente formulario en el paquete.
+feature: Formularios adaptables
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,19 +9,22 @@ activity: implement
 version: 6.4,6.5
 kt: 6894
 thumbnail: 6894.jpg
+topic: Desarrollo
+role: Desarrollador
+level: Con experiencia
 translation-type: tm+mt
-source-git-commit: 049574ab2536b784d6b303f474dba0412007e18c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '177'
-ht-degree: 0%
+source-wordcount: '182'
+ht-degree: 2%
 
 ---
 
 
-# Personalizar paso de resumen
+# Personalización del paso de resumen
 
-El componente de paso de resumen se utiliza para mostrar el resumen del envío del formulario con un vínculo para descargar el formulario firmado. El paso de resumen se coloca generalmente en el último panel del formulario.
-Para este caso de uso hemos creado un nuevo componente basado en el componente Resumen predeterminado y hemos ampliado la capacidad para incluir clientlib personalizado.
+El componente paso de resumen se utiliza para mostrar el resumen del envío del formulario con un vínculo para descargar el formulario firmado. El paso Resumen se suele colocar en el último panel del formulario.
+A los efectos de este caso de uso, hemos creado un nuevo componente basado en el componente Resumen predeterminado y hemos ampliado la capacidad para incluir clientlib personalizado.
 
 Este componente se identifica mediante la etiqueta Firmar formulario múltiple
 
@@ -32,10 +35,10 @@ La siguiente captura de pantalla muestra el nuevo componente que se creó para m
 El nuevo componente se basa en el componente de resumen listo para usar.
 ![component-prop](assets/componentprop.PNG)
 
-Se ha agregado un botón para desplazarse al siguiente formulario para firmar
+Se ha añadido un botón para desplazarse al siguiente formulario para firmar
 ![template-code](assets/template-code.PNG)
 
-Summary.jsp tiene el siguiente código. Tiene una referencia a la biblioteca del cliente identificada por el identificador de categoría **getnextform**
+summary.jsp tiene el siguiente código. Tiene referencia a la biblioteca de cliente identificada por el identificador de categoría **getnextform**
 
 ```java
 <%--
