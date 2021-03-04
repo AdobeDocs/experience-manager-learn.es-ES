@@ -4,20 +4,17 @@ seo-title: Configuración de DataSource con Salesforce en AEM Forms 6.3 y 6.4
 description: Integración de AEM Forms con Salesforce mediante el modelo de datos de formulario
 seo-description: Integración de AEM Forms con Salesforce mediante el modelo de datos de formulario
 uuid: 0124526d-f1a3-4f57-b090-a418a595632e
-feature: '"Formularios adaptables, Modelo de datos de formulario"'
+feature: adaptive-forms, form-data-model
 topics: integrations
 audience: developer
 doc-type: article
 activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: 8e314fc3-62d0-4c42-b1ff-49ee34255e83
-topic: Desarrollo
-role: Desarrollador
-level: Con experiencia
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '930'
 ht-degree: 0%
 
 ---
