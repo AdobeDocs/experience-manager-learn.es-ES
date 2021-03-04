@@ -1,7 +1,7 @@
 ---
-title: Crear flujo de trabajo principal para déclencheur del proceso de firma
-description: Crear flujo de trabajo para almacenar los formularios para firmar en la base de datos
-feature: adaptive-forms
+title: Crear flujo de trabajo principal para activar el proceso de firma
+description: Crear flujo de trabajo para almacenar los formularios para la firma en la base de datos
+feature: Formularios adaptables
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,11 +9,14 @@ activity: implement
 version: 6.4,6.5
 thumbnail: 6887.jpg
 kt: 6887
+topic: Desarrollo
+role: Desarrollador
+level: Intermedio
 translation-type: tm+mt
-source-git-commit: 049574ab2536b784d6b303f474dba0412007e18c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '162'
-ht-degree: 0%
+source-wordcount: '167'
+ht-degree: 2%
 
 ---
 
@@ -24,9 +27,9 @@ El flujo de trabajo principal se activa cuando el usuario envía el formulario i
 
 ![main-workflow](assets/main-workflow.PNG)
 
-**Almacenar Forms en** firmas es un paso de proceso personalizado.
+**Almacenar formularios para** firmar es un paso de proceso personalizado.
 
-La motivación para implementar un paso de proceso personalizado es ampliar un flujo de trabajo AEM. El siguiente código implementa un paso de proceso personalizado. El código extrae los nombres de los formularios para firmar y pasa los datos del formulario enviados al método `insertData` del servicio SignMultipleForms. A continuación, el método `insertData` inserta las filas en la base de datos identificadas por el origen de datos **aemformstutorial**.
+La motivación para implementar un paso de proceso personalizado es ampliar un flujo de trabajo de AEM. El siguiente código implementa un paso de proceso personalizado. El código extrae los nombres de los formularios que se van a firmar y pasa los datos de formulario enviados al método `insertData` del servicio SignMultipleForms. A continuación, el método `insertData` inserta las filas de la base de datos identificadas por el origen de datos **aemformstutorial**.
 
 El código de este paso de proceso personalizado hace referencia al servicio `SignMultipleForms`.
 
@@ -119,7 +122,7 @@ public class StoreFormsToSignWorkflowStep implements WorkflowProcess {
 
 ## Assets
 
-El flujo de trabajo Firmar varios Forms utilizado en este artículo se puede [descargar desde aquí](assets/sign-multiple-forms-workflows.zip)
+El flujo de trabajo Sign Multiple Forms utilizado en este artículo se puede [descargar desde aquí](assets/sign-multiple-forms-workflows.zip)
 
 >[!NOTE]
 > Asegúrese de configurar Day CQ Mail Service para enviar notificaciones por correo electrónico. La plantilla de correo electrónico también se proporciona en el paquete anterior.
