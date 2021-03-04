@@ -3,14 +3,10 @@ title: Capítulo 4 - Definición de plantillas de servicios de contenido - Servi
 seo-title: Introducción a AEM Headless - Capítulo 4 - Definición de plantillas de servicios de contenido
 description: El capítulo 4 del tutorial sin encabezado de AEM cubre el papel de las plantillas editables de AEM en el contexto de los servicios de contenido de AEM. Las plantillas editables se utilizan para definir la estructura de contenido JSON que los servicios de contenido de AEM expondrán en última instancia.
 seo-description: El capítulo 4 del tutorial sin encabezado de AEM cubre el papel de las plantillas editables de AEM en el contexto de los servicios de contenido de AEM. Las plantillas editables se utilizan para definir la estructura de contenido JSON que los servicios de contenido de AEM expondrán en última instancia.
-feature: '"Fragmentos de contenido, API"'
-topic: '"Sin encabezado, administración de contenido"'
-role: Desarrollador
-level: Principiante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '837'
 ht-degree: 0%
 
 ---
