@@ -1,7 +1,7 @@
 ---
 title: Creación de bibliotecas de cliente
-description: Crear clientlibrary para gestionar el evento de clics del botón "Guardar y salir"
-feature: adaptive-forms
+description: Crear clientlibrary para gestionar el evento click del botón "Guardar y salir"
+feature: Formularios adaptables
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,19 +9,22 @@ activity: implement
 version: 6.4,6.5
 kt: 6597
 thumbnail: 6597.pg
+topic: Desarrollo
+role: Desarrollador
+level: Intermedio
 translation-type: tm+mt
-source-git-commit: 9d4e864f42fa6c0b2f9b895257db03311269ce2e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 6%
+source-wordcount: '146'
+ht-degree: 8%
 
 ---
 
 # Crear biblioteca de cliente
 
-Cree [biblioteca de cliente](https://docs.adobe.com/content/help/es-ES/experience-manager-65/developing/introduction/clientlibs.html), que incluirá el código para invocar el método `doAjaxSubmitWithFileAttachment` de la API `guideBridge` en el evento de clic del botón identificado por la clase CSS **savebutton**.  Pasamos los datos del formulario adaptable, `fileMap` y `mobileNumber` al extremo que escucha `**/bin/storeafdatawithattachments`
+Cree [client lib](https://docs.adobe.com/content/help/es-ES/experience-manager-65/developing/introduction/clientlibs.html) que incluirá el código para invocar el método `doAjaxSubmitWithFileAttachment` de la API `guideBridge` en el evento click del botón identificado por la clase CSS **savebutton**.  Pasamos los datos del formulario adaptable, `fileMap` y `mobileNumber` al punto final que escucha en `**/bin/storeafdatawithattachments`
 
-Una vez guardados los datos del formulario, se genera una ID de aplicación única que se presenta al usuario en un cuadro de diálogo. Al cerrar el cuadro de diálogo, el usuario pasa al formulario que le permite recuperar el formulario adaptable guardado con el identificador exclusivo de la aplicación.
+Una vez guardados los datos del formulario, se genera un identificador de aplicación único que se presenta al usuario en un cuadro de diálogo. Al descartar el cuadro de diálogo, el usuario recibe el formulario que le permite recuperar el formulario adaptable guardado con el identificador de aplicación único.
 
 ```java
 $(document).ready(function () {
@@ -67,6 +70,6 @@ $(document).ready(function () {
 ```
 
 >[!NOTE]
-> Hemos utilizado [biblioteca javascript de arranque](http://bootboxjs.com/examples.html) para mostrar el cuadro de diálogo
+> Hemos utilizado la [biblioteca javascript de bootbox](http://bootboxjs.com/examples.html) para mostrar el cuadro de diálogo
 
 Las bibliotecas de cliente utilizadas en este ejemplo se pueden [descargar desde aquí](assets/client-libraries.zip)
