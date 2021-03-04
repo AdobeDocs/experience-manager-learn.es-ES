@@ -1,10 +1,14 @@
 ---
 title: Tutoriales de AEM Headless
 description: Una colección de tutoriales sobre cómo utilizar Adobe Experience Manager como un CMS sin encabezado.
+feature: Fragmentos de contenido, API
+topic: Sin objetivos, Administración de contenido
+role: Desarrollador
+level: Principiante
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '468'
 ht-degree: 4%
 
 ---
