@@ -4,18 +4,21 @@ seo-title: Adición de texto y contenido de imagen al documento de canal web
 description: 'Esta es la parte 7 de un tutorial de varios pasos para crear su primer documento interactivo de comunicaciones. En esta parte, añadiremos imágenes y contenido de texto al panel de encabezado. '
 seo-description: 'Esta es la parte 7 de un tutorial de varios pasos para crear su primer documento interactivo de comunicaciones. En esta parte, añadiremos imágenes y contenido de texto al panel de encabezado. '
 uuid: 440f8b74-3be7-4e58-a46e-4110065b7705
-feature: comunicación interactiva
+feature: Comunicación interactiva
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 3dd64e7d-3f13-4022-bb75-c9dc1884bc19
+topic: Desarrollo
+role: Desarrollador
+level: Principiante
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '182'
-ht-degree: 0%
+source-wordcount: '186'
+ht-degree: 2%
 
 ---
 
