@@ -1,34 +1,37 @@
 ---
-title: Flujo de trabajo de déclencheur AEM en el envío de formulario HTML5
-seo-title: Flujo de trabajo de déclencheur AEM en envío de formulario HTML5
-description: Siga rellenando el formulario móvil en modo sin conexión y envíe el formulario móvil al flujo de trabajo AEM déclencheur
-seo-description: Siga rellenando el formulario móvil en modo sin conexión y envíe el formulario móvil al flujo de trabajo AEM déclencheur
-feature: mobile-forms
+title: Activador del flujo de trabajo de AEM en el envío de formularios HTML5
+seo-title: Activar el flujo de trabajo de AEM en el envío de formularios HTML5
+description: Siga rellenando el formulario móvil en modo sin conexión y envíe el formulario móvil para activar el flujo de trabajo de AEM
+seo-description: Siga rellenando el formulario móvil en modo sin conexión y envíe el formulario móvil para activar el flujo de trabajo de AEM
+feature: Mobile Forms
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
+topic: Desarrollo
+role: Desarrollador
+level: Con experiencia
 translation-type: tm+mt
-source-git-commit: c56942831614b981684861ea78f1bd15f3bb1ab9
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 2%
+source-wordcount: '194'
+ht-degree: 4%
 
 ---
 
 
 # Flujo de trabajo para revisar y aprobar el PDF enviado
 
-El último y último paso es crear AEM flujo de trabajo que generará un PDF estático o no interactivo para su revisión y aprobación. El flujo de trabajo se activará mediante un iniciador de AEM configurado en el nodo `/content/pdfsubmissions`.
+El último y último paso es crear un flujo de trabajo de AEM que genere un PDF estático o no interactivo para su revisión y aprobación. El flujo de trabajo se activará mediante un AEM Launcher configurado en el nodo `/content/pdfsubmissions`.
 
 La siguiente captura de pantalla muestra los pasos involucrados en el flujo de trabajo.
 
 ![flujo de trabajo](assets/workflow.PNG)
 
-## Paso para generar un flujo de trabajo de PDF no interactivo
+## Generar paso del flujo de trabajo de PDF no interactivo
 
-La plantilla XDP y los datos que se combinarán con la plantilla se especifican aquí. Los datos que se combinarán son los datos enviados desde el PDF. Estos datos enviados se almacenan en el nodo `/content/pdfsubmissions`.
+La plantilla XDP y los datos que se van a combinar con la plantilla se especifican aquí. Los datos que se van a combinar son los datos enviados desde el PDF. Los datos enviados se almacenan en el nodo `/content/pdfsubmissions`.
 
 ![flujo de trabajo](assets/generate-pdf1.PNG)
 
@@ -36,8 +39,8 @@ El PDF generado se asigna a la variable de flujo de trabajo denominada `submitte
 
 ![flujo de trabajo](assets/generate-pdf2.PNG)
 
-### Asignar el PDF generado para su revisión y aprobación
+### Asignar el pdf generado para su revisión y aprobación
 
-El componente Asignar flujo de trabajo de tarea se utiliza aquí para asignar el PDF generado para su revisión y aprobación. La variable `submittedPDF` se utiliza en la ficha Forms y Documentos del componente de flujo de trabajo Asignar Tarea.
+El componente Asignar flujo de trabajo de tarea se utiliza aquí para asignar el PDF generado para su revisión y aprobación. La variable `submittedPDF` se utiliza en la pestaña Forms y Documents del componente de flujo de trabajo Asignar tarea.
 
 ![flujo de trabajo](assets/assign-task.PNG)
