@@ -2,7 +2,7 @@
 title: 'Introducción a AEM Sites: conceptos básicos de componentes'
 description: Comprenda la tecnología subyacente de un componente de Adobe Experience Manager (AEM) Sites mediante un sencillo ejemplo de "HelloWorld". Se exploran los temas de HTL, los modelos Sling, las bibliotecas del lado del cliente y los cuadros de diálogo de autor.
 sub-product: sitios
-feature: componentes, modelos sling, htl
+feature: Componentes principales, herramientas para desarrolladores
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -11,10 +11,13 @@ audience: developer
 mini-toc-levels: 1
 kt: 4081
 thumbnail: 30177.jpg
+topic: Gestión de contenido, desarrollo
+role: Desarrollador
+level: Principiante
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1148'
+source-wordcount: '1154'
 ht-degree: 1%
 
 ---
