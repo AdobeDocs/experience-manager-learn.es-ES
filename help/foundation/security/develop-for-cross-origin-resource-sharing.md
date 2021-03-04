@@ -3,17 +3,15 @@ title: Desarrollo para el uso compartido de recursos de origen cruzado (CORS) co
 description: Un breve ejemplo de cómo aprovechar CORS para acceder al contenido de AEM desde una aplicación web externa a través de JavaScript del lado del cliente.
 version: 6.3, 6,4, 6.5
 sub-product: fundación, servicios de contenido, sitios
+feature: null
 topics: security, development, content-delivery
 activity: develop
 audience: developer
 doc-type: tutorial
-topic: Seguridad
-role: Desarrollador
-level: Principiante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
