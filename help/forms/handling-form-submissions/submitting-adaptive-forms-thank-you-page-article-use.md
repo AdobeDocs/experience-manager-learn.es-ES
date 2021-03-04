@@ -4,18 +4,21 @@ seo-title: Enviar A La Página De Agradecimiento
 description: Mostrar una página de agradecimiento al enviar el formulario adaptable
 seo-description: Mostrar una página de agradecimiento al enviar el formulario adaptable
 uuid: ec695b87-083a-47f6-92ac-c9a6dc2b85fb
-feature: formularios adaptables
+feature: Formularios adaptables
 topics: developing
 audience: implementer
 doc-type: article
 activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: 58c6bf42-efe5-41a3-8023-d84f3675f689
+topic: Desarrollo
+role: Desarrollador
+level: Principiante
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 0%
+source-wordcount: '280'
+ht-degree: 1%
 
 ---
 
