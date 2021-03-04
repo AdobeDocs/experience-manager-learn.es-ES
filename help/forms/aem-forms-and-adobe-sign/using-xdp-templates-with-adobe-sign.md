@@ -1,18 +1,21 @@
 ---
 title: Uso de plantillas XDP con AEM Forms y Adobe Sign
 description: Uso de plantillas XDP con AEM Forms y Adobe Sign. Vídeo que explica cómo aprovechar las plantillas XDP existentes con la integración de AEM Forms y Sign.
-feature: adaptive-forms
+feature: Formularios adaptables
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 thumbnail: 39705.jpg
 kt: 6143
+topic: Desarrollo
+role: Desarrollador
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 451ca39511b52e90a44bba25c6739280f49a0aac
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '67'
-ht-degree: 2%
+source-wordcount: '72'
+ht-degree: 8%
 
 ---
 
