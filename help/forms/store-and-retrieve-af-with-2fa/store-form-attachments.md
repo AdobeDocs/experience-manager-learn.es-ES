@@ -1,7 +1,7 @@
 ---
-title: Almacenar archivos adjuntos de formulario
-description: Extraiga los archivos adjuntos del formulario y almacene en una nueva ubicación del repositorio de CRX.
-feature: adaptive-forms
+title: Almacenamiento de archivos adjuntos de formulario
+description: Extraiga los archivos adjuntos del formulario y guárdelo en una nueva ubicación del repositorio CRX.
+feature: Formularios adaptables
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,20 +9,23 @@ activity: implement
 version: 6.4,6.5
 kt: 6537
 thumbnail: 6537.jpg
+topic: Desarrollo
+role: Desarrollador
+level: Con experiencia
 translation-type: tm+mt
-source-git-commit: 9d4e864f42fa6c0b2f9b895257db03311269ce2e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 0%
+source-wordcount: '191'
+ht-degree: 2%
 
 ---
 
-# Almacenar archivos adjuntos de formulario
+# Almacenamiento de archivos adjuntos de formulario
 
-Al agregar datos adjuntos a un formulario adaptable, los datos adjuntos se almacenan en una ubicación temporal en el repositorio de CRX. Para que nuestro caso de uso funcione, necesitamos almacenar los datos adjuntos del formulario en una nueva ubicación en el repositorio de CRX.
+Cuando se añaden archivos adjuntos a un formulario adaptable, los archivos adjuntos se almacenan en una ubicación temporal en el repositorio CRX. Para que nuestro caso de uso funcione, necesitamos almacenar los archivos adjuntos del formulario en una nueva ubicación en el repositorio CRX.
 
-El servicio OSGi se crea para almacenar los datos adjuntos del formulario en una nueva ubicación del repositorio de CRX. Se crea un nuevo mapa de archivos con la nueva ubicación de los archivos adjuntos en el CRX y se devuelve a la aplicación que realiza la llamada.
-A continuación se muestra el archivo FileMap que se envía al servlet. La clave es el campo de formulario adaptable y el valor es la ubicación temporal del archivo adjunto. En nuestro servlet extraeremos el archivo adjunto y lo almacenaremos en una nueva ubicación en el repositorio de AEM y actualizaremos el archivo FileMap con la nueva ubicación
+El servicio OSGi se crea para almacenar los archivos adjuntos del formulario en una nueva ubicación del repositorio CRX. Se crea un nuevo mapa de archivos con la nueva ubicación de los archivos adjuntos en el CRX y se devuelve a la aplicación que realiza la llamada.
+El siguiente es el FileMap que se envía al servlet. La clave es el campo de formulario adaptable y el valor es la ubicación temporal del archivo adjunto. En nuestro servlet extraeremos el archivo adjunto y lo almacenaremos en una nueva ubicación del repositorio de AEM y actualizaremos el FileMap con la nueva ubicación
 
 ```java
 {
@@ -31,7 +34,7 @@ A continuación se muestra el archivo FileMap que se envía al servlet. La clave
 }
 ```
 
-El siguiente es el código que extrae los datos adjuntos de la solicitud y los almacena en la carpeta **/content/afattachments**
+El siguiente es el código que extrae los archivos adjuntos de la solicitud y los almacena en la carpeta **/content/afattachment**
 
 ```java
 public String storeAFAttachments(JSONObject fileMap, SlingHttpServletRequest request) {
@@ -72,7 +75,7 @@ public String storeAFAttachments(JSONObject fileMap, SlingHttpServletRequest req
 }
 ```
 
-Es el nuevo FileMap con la ubicación actualizada de los archivos adjuntos del formulario
+Este es el nuevo FileMap con la ubicación actualizada de los archivos adjuntos del formulario
 
 ```java
 {
