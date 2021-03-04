@@ -1,6 +1,6 @@
 ---
-title: Introducción a AEM sin cabeza - GraphQL
-description: Un tutorial completo que ilustra cómo crear y exponer contenido mediante las API de GraphQL de AEM.
+title: Introducción a AEM Headless - GraphQL
+description: Un tutorial completo que ilustra cómo crear y exponer contenido mediante las API de AEM GraphQL.
 sub-product: sitios
 topics: headless
 version: cloud-service
@@ -10,41 +10,45 @@ audience: developer
 mini-toc-levels: 1
 kt: 6678
 thumbnail: 328618.jpg
+feature: '"Fragmentos de contenido, API de GraphQL"'
+topic: '"Sin encabezado, administración de contenido"'
+role: Desarrollador
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 8c5b425e6dcf23cbef042097f17db9e51bdf63c9
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '239'
 ht-degree: 0%
 
 ---
 
 
-# Introducción a AEM sin cabeza - GraphQL
+# Introducción a AEM Headless - GraphQL
 
-Un tutorial de extremo a extremo que ilustra cómo crear y exponer contenido mediante las API de GraphQL de AEM y consumido por una aplicación externa, en un escenario CMS sin cabeza.
+Un tutorial completo que ilustra cómo crear y exponer contenido mediante las API de GraphQL de AEM y consumido por una aplicación externa, en un escenario de CMS remoto.
 
-En este tutorial se explica cómo se pueden utilizar las API de GraphQL y las funciones sin encabezado para alimentar las experiencias que aparecen en una aplicación externa.
+Este tutorial explora cómo se pueden utilizar las API de GraphQL de AEM y las capacidades sin objetivos para impulsar las experiencias que aparecen en una aplicación externa.
 
-Este tutorial cubrirá los siguientes temas:
+Este tutorial tratará los siguientes temas:
 
-* Crear modelos de fragmento de contenido para modelar los colaboradores en AEM
+* Creación de modelos de fragmento de contenido para modelar colaboradores en AEM
 * Creación de fragmentos de contenido de colaborador mediante el modelo de fragmento de contenido recién creado
-* Explore cómo se pueden consultar los fragmentos de contenido en AEM mediante la herramienta de desarrollo GraphiQL integrada.
-* Consumir API de GraphQL AEM de una aplicación WKND GraphQL React de muestra
-* Realizar modelos avanzados de datos con referencias de fragmento
+* Descubra cómo se pueden consultar los fragmentos de contenido en AEM mediante la herramienta de desarrollo integrada GraphiQL.
+* Utilice las API de GraphQL de AEM de una aplicación WKND GraphQL React de muestra
+* Realizar modelado de datos avanzado con referencias de fragmento
 
 ## Información general de GraphQL
 
-El siguiente vídeo presenta una descripción general de la API de GraphQL implementada en AEM. La API de GraphQL de AEM está diseñada principalmente para entregar datos de fragmentos de contenido a aplicaciones de flujo descendente como parte de una implementación sin cabezal.
+El siguiente vídeo presenta una descripción general de la API de GraphQL implementada en AEM. La API de GraphQL en AEM está diseñada principalmente para entregar datos de fragmento de contenido a aplicaciones descendentes como parte de una implementación sin objetivos.
 
 >[!VIDEO](https://video.tv.adobe.com/v/328618/?quality=12&learn=on)
 
 ## ¡Empecemos!
 
-Inicio el tutorial de AEM GraphQL saltando al capítulo [Configuración rápida](./setup.md)!
+Inicie el tutorial de AEM GraphQL saltando al capítulo [Quick Setup](./setup.md).
 
-## Proyecto GitHub
+## Proyecto de GitHub
 
-El código fuente y los paquetes de contenido están disponibles en el proyecto [Guías de AEM - WKND GraphQL GitHub](https://github.com/adobe/aem-guides-wknd-graphql).
+El código fuente y los paquetes de contenido están disponibles en el [AEM Guides - WKND GraphQL GitHub Project](https://github.com/adobe/aem-guides-wknd-graphql).
 
-Si encuentra algún problema con el tutorial o el código, deje un [problema con GitHub](https://github.com/adobe/aem-guides-wknd-graphql/issues).
+Si encuentra algún problema con el tutorial o el código, deje un [problema de GitHub](https://github.com/adobe/aem-guides-wknd-graphql/issues).
