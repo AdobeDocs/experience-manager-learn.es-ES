@@ -1,9 +1,8 @@
 ---
 title: Uso de la diferencia de página con AEM Sites
 seo-title: Uso de la diferencia de página con AEM Sites
-description: La función de diferencia de página de AEM Sites muestra una vista rápida y con códigos de color del contenido que ha cambiado en una página (versión, Live Copy, inicios, copia de idioma).
-seo-description: La función de diferencia de página de AEM Sites muestra una vista rápida y con códigos de color del contenido que ha cambiado en una página (versión, Live Copy, inicios, copia de idioma).
-feature: page-diff
+description: La función de diferencia de página de AEM Sites proporciona una vista rápida y con códigos de color del contenido que ha cambiado en una página (versión, Live Copy, lanzamientos, copia de idioma).
+seo-description: La función de diferencia de página de AEM Sites proporciona una vista rápida y con códigos de color del contenido que ha cambiado en una página (versión, Live Copy, lanzamientos, copia de idioma).
 topics: authoring
 audience: author, marketer
 doc-type: feature video
@@ -12,18 +11,21 @@ version: 6.3, 6.4, 6.5
 uuid: e096a08b-528d-48c7-93fb-73b10c0a9259
 kt: 4633
 thumbnail: 32152.jpg
+topic: Administración de contenido
+role: Profesional empresarial
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 1%
+source-wordcount: '156'
+ht-degree: 2%
 
 ---
 
 
-# Uso de la función Diferencia de página {#using-page-difference-with-aem-sites}
+# Uso de la función de diferencia de página {#using-page-difference-with-aem-sites}
 
-La función de diferencia de página de AEM Sites muestra una vista rápida y con códigos de color del contenido que ha cambiado en una página (versión, Live Copy, inicios, copia de idioma).
+La función de diferencia de página de AEM Sites proporciona una vista rápida y con códigos de color del contenido que ha cambiado en una página (versión, Live Copy, lanzamientos, copia de idioma).
 
 ## Comparación de versiones de página {#comparing-page-versions}
 
@@ -31,21 +33,21 @@ La función de diferencia de página de AEM Sites muestra una vista rápida y co
 
 **Cambios en HTML**
 
-* **Verde**: Nuevo contenido
+* **Verde**: Contenido nuevo
 * **Rojo**: Contenido eliminado
 
-**Cambios de componentes**
+**Cambios en los componentes**
 
 * **Verde**: Nuevo componente
 * **Rojo**: Componente eliminado
 * **Azul**: Componente modificado
 
-## Comparación de páginas de inicio {#comparing-launch-pages}
+## Comparación de páginas de lanzamiento {#comparing-launch-pages}
 
 >[!VIDEO](https://video.tv.adobe.com/v/17746/?quality=9&learn=on)
 
-La función Diferencia de página también se puede utilizar para identificar la diferencia entre los modelos y las Live Copy, los modelos y las copias de idioma.
+La función Diferencia de página también se puede usar para identificar la diferencia entre planos y copias en vivo, y planos y copias de idioma.
 
 ## Recursos adicionales {#additional-resources}
 
-* [Documentación de diferencias de página](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/siteandpage/page-diff.html)
+* [Documentación de diferencia de página](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/siteandpage/page-diff.html)
