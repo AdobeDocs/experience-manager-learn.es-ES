@@ -1,30 +1,33 @@
 ---
-title: AEM Forms con marketing (parte 2)
-seo-title: AEM Forms con marketing (parte 2)
-description: Tutorial para integrar AEM Forms con Marketing mediante el Modelo de datos de formulario de AEM Forms.
-seo-description: Tutorial para integrar AEM Forms con Marketing mediante el Modelo de datos de formulario de AEM Forms.
-feature: adaptive-forms, form-data-model
+title: AEM Forms con Marketo (parte 2)
+seo-title: AEM Forms con Marketo (parte 2)
+description: Tutorial para integrar AEM Forms con Marketo mediante el Modelo de datos de formulario de AEM Forms.
+seo-description: Tutorial para integrar AEM Forms con Marketo mediante el Modelo de datos de formulario de AEM Forms.
+feature: '"Formularios adaptables, Modelo de datos de formulario"'
 topics: integrations
 audience: developer
 doc-type: tutorial
 activity: setup
 version: 6.3,6.4,6.5
+topic: Desarrollo
+role: Desarrollador
+level: Con experiencia
 translation-type: tm+mt
-source-git-commit: defefc1451e2873e81cd81e3cccafa438aa062e3
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '382'
 ht-degree: 0%
 
 ---
 
 
-# Servicio de autenticación de marketing
+# Servicio de autenticación de Marketo
 
-Las API de REST de Marketo se autentican con OAuth 2.0 con dos patas. Necesitamos crear autenticación personalizada para autenticarnos con Marketing. Esta autenticación personalizada suele escribirse dentro de un paquete OSGI. El siguiente código muestra el autenticador personalizado que se utilizó como parte de este tutorial.
+Las API de REST de Marketo están autenticadas con OAuth 2.0 de 2 patas. Necesitamos crear autenticación personalizada para autenticarnos con Marketo. Esta autenticación personalizada suele escribirse dentro de un paquete OSGI. El siguiente código muestra el autenticador personalizado que se utilizó como parte de este tutorial.
 
 ## Servicio de autenticación personalizado
 
-El código siguiente crea el objeto AuthenticationDetails que tiene el access_token necesario para la autenticación con Marketo
+El siguiente código crea el objeto AuthenticationDetails que tiene el access_token necesario para la autenticación con Marketo
 
 ```java
 package com.marketoandforms.core;
@@ -56,11 +59,11 @@ MarketoService marketoService;
 }
 ```
 
-MarketingtoAuthenticationService implementa la interfaz IAuthauthentication. Esta interfaz forma parte del SDK del cliente de AEM Forms. El servicio obtiene el token de acceso e inserta el token en el HttpHeader de AuthenticationDetails. Una vez que se rellena el objeto HttpHeaders del objeto AuthenticationDetails, el objeto AuthenticationDetails se devuelve a la capa Dermis del Modelo de datos de formulario.
+MarketoAuthenticationService implementa la interfaz IAuthauthentication. Esta interfaz forma parte del SDK de cliente de AEM Forms. El servicio obtiene el token de acceso e inserta el token en el HttpHeader de AuthenticationDetails. Una vez rellenados los HttpHeaders del objeto AuthenticationDetails, el objeto AuthenticationDetails se devuelve a la capa Dermis del Modelo de datos de formulario.
 
-Tenga en cuenta la cadena devuelta por el método getAuthenticationType. Esta cadena se utilizará cuando configure la fuente de datos.
+Preste atención a la cadena devuelta por el método getAuthenticationType. Esta cadena se utilizará cuando esté configurando el origen de datos.
 
-### Obtener Token de acceso
+### Obtener token de acceso
 
 Se define una interfaz sencilla con un método que devuelve el access_token. El código de la clase que implementa esta interfaz se muestra más abajo en la página.
 
@@ -71,7 +74,7 @@ public interface MarketoService {
 }
 ```
 
-El siguiente código es el del servicio que devuelve el access_token que se va a utilizar para realizar las llamadas de la API de REST. El código de este servicio accede a los parámetros de configuración necesarios para realizar la llamada de GET. Como puede ver, pasamos client_id,client_secret en la URL de GET para generar el access_token. A continuación, este access_token se devuelve a la aplicación que llama.
+El siguiente código es del servicio que devuelve el access_token que se utilizará para realizar las llamadas a la API de REST. El código de este servicio accede a los parámetros de configuración necesarios para realizar la llamada GET. Como puede ver, pasamos client_id,client_secret en la URL GET para generar el token de acceso. A continuación, este access_token se devuelve a la aplicación que realiza la llamada.
 
 ```java
 package com.marketoandforms.core.impl;
@@ -130,13 +133,13 @@ MarketoConfigurationService config;
 }
 ```
 
-La captura de pantalla siguiente muestra las propiedades de configuración que deben establecerse. Estas propiedades de configuración se leen en el código anterior para obtener el access_token
+La captura de pantalla siguiente muestra las propiedades de configuración que deben establecerse. Estas propiedades de configuración se leen en el código indicado anteriormente para obtener el access_token
 
 ![config](assets/marketoconfig.jfif)
 
 ### Configuración
 
-Se utilizó el siguiente código para crear las propiedades de configuración. Estas propiedades son específicas de la instancia de Marketing to
+Se utilizó el siguiente código para crear las propiedades de configuración. Estas propiedades son específicas de la instancia de Marketo
 
 ```java
 package com.marketoandforms.core;
@@ -203,5 +206,5 @@ public class MarketoConfigurationService {
 ```
 
 1. Cree e implemente el paquete en su servidor AEM.
-1. [Apunta a tu navegador para ](http://localhost:4502/system/console/configMgr) que busque &quot;Configuración del servicio de credenciales de marketing&quot;
-1. Especifique las propiedades adecuadas específicas de la instancia de Marketing to
+1. [Apunte el navegador para ](http://localhost:4502/system/console/configMgr) configMgrand buscar &quot;Configuración del servicio de credenciales de Marketo&quot;
+1. Especifique las propiedades adecuadas específicas de la instancia de Marketo
