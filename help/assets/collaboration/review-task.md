@@ -1,26 +1,25 @@
 ---
 title: Revisar la tarea
-description: Explore cómo la Tarea de revisión de Recursos AEM facilita los flujos de trabajo de revisión y aprobación más comunes.
+description: Explore cómo la tarea de revisión de AEM Assets facilita los flujos de trabajo de revisión y aprobación más comunes.
 sub-product: activos
-feature: review-task
-topics: authoring, collaboration
-audience: author
-doc-type: feature video
-activity: use
+feature: Colaboración
 version: cloud-service
 kt: 4670
 thumbnail: 32050.jpg
+topic: Colaboración
+role: Profesional empresarial
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '33'
-ht-degree: 12%
+source-wordcount: '38'
+ht-degree: 15%
 
 ---
 
 
 # Revisar la tarea
 
-Explore cómo la Tarea de revisión de Recursos AEM facilita los flujos de trabajo de revisión y aprobación más comunes.
+Explore cómo la tarea de revisión de AEM Assets facilita los flujos de trabajo de revisión y aprobación más comunes.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32050/?quality=12&learn=on&hidetitle=true)
