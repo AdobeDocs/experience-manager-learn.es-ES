@@ -1,6 +1,6 @@
 ---
 title: 'Uso de Adobe Cloud Manager: Entornos'
-description: Los Entornos de Cloud Manager están compuestos por los servicios AEM Author, AEM Publish y Dispatcher. Diferentes entornos admiten funciones y pueden participar utilizando diferentes canalizaciones de CD/CI. Los entornos de Cloud Manager suelen tener un entorno de producción, un entorno de fase y un entorno de desarrollo.
+description: Los entornos de Cloud Manager están compuestos por AEM Author, AEM Publish y Dispatcher. Los distintos entornos admiten funciones y se pueden utilizar con diferentes canalizaciones de CD/CI. Los entornos de Cloud Manager suelen tener un entorno de producción, un entorno de ensayo y un entorno de desarrollo.
 sub-product: cloud-manager
 topics: Administration
 audience: administrator
@@ -9,10 +9,13 @@ activity: use
 version: cloud-service
 kt: 6871
 thumbnail: 26318.jpg
+topic: Arquitectura
+role: Arquitecto, Desarrollador, Administrador
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 81c704240f163ccd151a61643f589f825a288705
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '100'
+source-wordcount: '105'
 ht-degree: 0%
 
 ---
@@ -20,6 +23,6 @@ ht-degree: 0%
 
 # Uso de Adobe Cloud Manager: Entornos
 
-[Los ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html) entornos de Cloud Manager están compuestos por los servicios AEM Author, AEM Publish y Dispatcher. Diferentes entornos admiten funciones y pueden participar utilizando diferentes canalizaciones de CD/CI. Los entornos de Cloud Manager suelen tener un entorno de producción, un entorno de fase y un entorno de desarrollo.
+[Los ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html) entornos de Cloud Manager están compuestos por AEM Author, AEM Publish y Dispatcher. Los distintos entornos admiten funciones y se pueden utilizar con diferentes canalizaciones de CD/CI. Los entornos de Cloud Manager suelen tener un entorno de producción, un entorno de ensayo y un entorno de desarrollo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26318/?quality=12&learn=on&hidetitle=true)
