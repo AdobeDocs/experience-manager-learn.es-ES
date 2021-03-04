@@ -1,34 +1,36 @@
 ---
-title: Utilice el Panel Información general del sistema en AEM
-description: En versiones anteriores de AEM administradores tenían que ver varias ubicaciones para obtener una imagen completa de la instancia de AEM. El objetivo de la Información general del sistema es solucionarlo proporcionando una vista de alto nivel de la configuración, el hardware y el estado de la instancia de AEM desde un solo panel.
+title: Uso del panel Información general del sistema en AEM
+description: En versiones anteriores de los administradores de AEM tenían que ver varias ubicaciones para obtener una imagen completa de la instancia de AEM. El objetivo de la Información general del sistema es solucionarlo proporcionando una vista de alto nivel de la configuración, el hardware y el estado de la instancia de AEM desde un único panel.
 version: 6.4, 6.5
-feature: null
 topics: administration, operations, monitoring
 activity: use
 audience: administrator, architect, developer, implementer
 doc-type: technical video
 contentOwner: dgordon
+topic: Administración
+role: Administrador
+level: Principiante
 translation-type: tm+mt
-source-git-commit: c9a11bcb01a5ec9f7390deab68e6d0e1dec273de
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 0%
+source-wordcount: '145'
+ht-degree: 1%
 
 ---
 
 
-# Usar el Panel Información general del sistema
+# Uso del panel Información general del sistema
 
-Adobe Experience Manager (AEM) [!UICONTROL System Overview] proporciona una vista de alto nivel de la configuración, el hardware y el estado de la instancia de AEM desde un solo panel.
+La [!UICONTROL Información general del sistema] de Adobe Experience Manager (AEM) proporciona una vista de alto nivel de la configuración, el hardware y el estado de la instancia de AEM, todo ello desde un solo panel.
 
 >[!VIDEO](https://video.tv.adobe.com/v/21340?quality=12&learn=on)
 
-1. Se puede acceder a la Información general del sistema desde: **AEM Inicio** > **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Información general del sistema]**
+1. Se puede acceder a la Información general del sistema desde: **Inicio de AEM** > **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Información general del sistema]**
 
    Directamente en **`<server-host>/libs/granite/operations/content/systemoverview.html`**
 
-1. Para exportar la información de [!UICONTROL System Overview], haga clic en el botón [!UICONTROL Download]. La información también se expone a través del siguiente [!DNL REST] punto final:
-1. A continuación se muestra una salida de muestra del JSON que se exporta desde [!UICONTROL System Overview]:
+1. La información de [!UICONTROL System Overview] se puede exportar haciendo clic en el botón [!UICONTROL Download]. La información también se expone a través del siguiente [!DNL REST] punto final:
+1. A continuación se muestra un ejemplo de salida del JSON que se exporta desde [!UICONTROL System Overview]:
 
    ```json
    {
