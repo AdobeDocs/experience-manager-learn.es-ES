@@ -4,21 +4,18 @@ seo-title: Envío del formulario adaptable al servidor externo
 description: Envío del formulario adaptable al extremo REST que se ejecuta en un servidor externo
 seo-description: Envío del formulario adaptable al extremo REST que se ejecuta en un servidor externo
 uuid: 1a46e206-6188-4096-816a-d59e9fb43263
-feature: Formularios adaptables
+feature: formularios adaptables
 topics: developing
 audience: implementer
 doc-type: article
 activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: 9e936885-4e10-4c05-b572-b8da56fcac73
-topic: Desarrollo
-role: Desarrollador
-level: Principiante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 1%
+source-wordcount: '363'
+ht-degree: 0%
 
 ---
 
