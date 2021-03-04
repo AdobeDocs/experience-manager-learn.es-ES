@@ -1,40 +1,43 @@
 ---
 title: Personalización de la bandeja de entrada
-description: 'Personalice la bandeja de entrada agregando nuevas columnas basadas en datos de flujo de trabajo '
-feature: adaptive-forms
+description: 'Personalización de la bandeja de entrada añadiendo nuevas columnas basadas en datos de flujo de trabajo '
+feature: Formularios adaptables
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.5
 kt: 5830
+topic: Desarrollo
+role: Desarrollador
+level: Con experiencia
 translation-type: tm+mt
-source-git-commit: defefc1451e2873e81cd81e3cccafa438aa062e3
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '201'
-ht-degree: 3%
+source-wordcount: '206'
+ht-degree: 5%
 
 ---
 
 # Bandeja de entrada AEM
 
-AEM Bandeja de entrada consolida las notificaciones y tareas de diversos componentes de AEM, incluidos los flujos de trabajo de Forms. Cuando se activa un flujo de trabajo de formularios que contiene un paso Asignar tarea, la aplicación asociada aparece como una tarea en la Bandeja de entrada del usuario asignado.
-La interfaz de usuario de la Bandeja de entrada proporciona vistas de lista y calendario a tareas de vista. También puede configurar la vista. Puede filtrar tareas en función de varios parámetros
-Puede personalizar la bandeja de entrada de un Experience Manager para cambiar el título predeterminado de una columna, reordenar la posición de una columna y mostrar columnas adicionales basadas en los datos de un flujo de trabajo
+La bandeja de entrada AEM consolida las notificaciones y tareas de varios componentes AEM, incluidos los flujos de trabajo de Forms. Cuando se activa un flujo de trabajo de formularios que contiene un paso Asignar tarea , la aplicación asociada aparece como una tarea en la bandeja de entrada del usuario asignado.
+La interfaz de usuario de la Bandeja de entrada proporciona vistas de lista y calendario para ver las tareas. También puede configurar la configuración de vista. Puede filtrar tareas en función de distintos parámetros
+Puede personalizar la bandeja de entrada de Experience Manager para cambiar el título predeterminado de una columna, reordenar la posición de una columna y mostrar columnas adicionales basadas en los datos de un flujo de trabajo
 
 
 >[!NOTE]
 >
->Debe ser miembro de los administradores o administradores de flujo de trabajo para personalizar las columnas de la bandeja de entrada
+>Debe ser miembro de los administradores o de los administradores del flujo de trabajo para personalizar las columnas de la bandeja de entrada
 
 ## Personalización de columnas
 
 [Iniciar ](http://localhost:4502/aem/inbox)
-bandeja de entrada AEMAbra el control de administración haciendo clic en el icono de  _vista de_ Lista y, a continuación, seleccionando  _Control de_ administración que se muestra en la captura de pantalla siguiente
+bandeja de entrada AEMAbra el control de administración haciendo clic en el icono  _Vista de_ lista y seleccionando  _Control_ de administrador en la captura de pantalla siguiente
 
 ![admin-control](assets/open-customization.png)
 
-En la interfaz de usuario de personalización de columnas puede realizar las siguientes operaciones
+En la interfaz de usuario de personalización de columnas, puede realizar las siguientes operaciones
 
 * Eliminar columnas
 * Reordenar las columnas
@@ -44,9 +47,9 @@ En la interfaz de usuario de personalización de columnas puede realizar las sig
 
 En la personalización de la marca puede hacer lo siguiente
 
-* Añadir el logotipo de su organización
+* Añadir el logotipo de la organización
 * Personalizar el texto del encabezado
 * Personalización del vínculo de ayuda
 * Ocultar opciones de navegación
 
-![marca de entrada](assets/branding-customization.PNG)
+![promoción de la marca en la bandeja de entrada](assets/branding-customization.PNG)
