@@ -2,7 +2,7 @@
 title: Personalizar notificación para asignar tareas
 description: Incluir datos de formulario en los mensajes de correo electrónico de notificación de tareas asignadas
 sub-product: formularios
-feature: flujo de trabajo
+feature: Flujo de trabajo
 topics: integrations
 audience: developer
 doc-type: article
@@ -10,11 +10,14 @@ activity: setup
 version: 6.4,6.5
 kt: 6279
 thumbnail: KT-6279.jpg
+topic: Desarrollo
+role: Desarrollador
+level: Con experiencia
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 1%
+source-wordcount: '450'
+ht-degree: 2%
 
 ---
 
