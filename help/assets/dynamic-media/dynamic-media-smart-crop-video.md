@@ -1,25 +1,24 @@
 ---
 title: Uso de Dynamic Media Smart Crop para vídeo
 description: Dynamic Media Smart Crop para vídeo utiliza Adobe Sensei para rastrear de forma inteligente el punto de interés del vídeo, lo que garantiza que los vídeos tengan el mejor aspecto en todos los tamaños de pantalla.
-sub-product: Dynamic-media
-feature: smart-crop, video-profiles, viewer-presets
-topics: videos, renditions, authoring
-doc-type: feature video
-audience: all
-activity: use
+sub-product: dynamic-media
+feature: Recorte inteligente, perfiles de vídeo, ajustes preestablecidos de visor
 version: cloud-service
 kt: 5977
 thumbnail: 37958.jpg
+topic: Administración de contenido
+role: Profesional empresarial
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '103'
-ht-degree: 0%
+source-wordcount: '114'
+ht-degree: 9%
 
 ---
 
 
-# Uso de Dynamic Media Smart Crop para vídeo {#using-smart-crop-video}
+# Uso del recorte inteligente de Dynamic Media para vídeo {#using-smart-crop-video}
 
 Dynamic Media Smart Crop para vídeo utiliza Adobe Sensei para rastrear de forma inteligente el punto de interés del vídeo, lo que garantiza que los vídeos tengan el mejor aspecto en todos los tamaños de pantalla.
 
@@ -27,5 +26,5 @@ Dynamic Media Smart Crop para vídeo utiliza Adobe Sensei para rastrear de forma
 
 >[!NOTE]
 >
->El vídeo anterior supone que el servicio de AEM se está ejecutando en el modo Dynamic Media S7. [Las instrucciones para configurar AEM con Dynamic Media se pueden encontrar aquí.](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html)
+>El vídeo anterior supone que su servicio AEM se está ejecutando en el modo Dynamic Media S7. [Las instrucciones sobre la configuración de AEM con Dynamic Media se encuentran aquí.](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html)
 
