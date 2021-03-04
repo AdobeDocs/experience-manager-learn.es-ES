@@ -3,7 +3,7 @@ title: Modifique la configuración de la fuente de datos.
 seo-title: Modifique la configuración de la fuente de datos.
 description: Modifique el nombre de host y otros ajustes en Configuración de fuentes de datos.
 seo-description: Modifique el nombre de host y otras configuraciones en Configuración de fuentes de datos.
-feature: integraciones
+feature: Formularios adaptables
 topics: form-data-model
 audience: developer
 doc-type: technical video
@@ -11,11 +11,14 @@ activity: setup
 version: 6.5
 uuid: 31e297c9-3d12-4a7a-b1ff-1e347e17b24c
 discoiquuid: de227e8f-0f59-4506-828b-3b6b18b61eb1
+topic: Desarrollo
+role: Desarrollador
+level: Principiante
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 0%
+source-wordcount: '161'
+ht-degree: 2%
 
 ---
 
