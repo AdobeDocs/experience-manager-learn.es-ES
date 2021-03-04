@@ -4,21 +4,18 @@ seo-title: Agregar tabla al panel de saldo de la cuenta
 description: Esta es la parte 9 del tutorial de varios pasos para crear su primer documento de comunicación interactivo. En esta parte, agregaremos una tabla al panel Equilibrio de cuentas.
 seo-description: Esta es la parte 9 del tutorial de varios pasos para crear su primer documento de comunicación interactivo. En esta parte, agregaremos una tabla al panel Equilibrio de cuentas.
 uuid: 8f268c73-c543-418d-b65e-5beaf9660e42
-feature: Comunicación interactiva
+feature: comunicación interactiva
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 28a9d88d-635b-47a2-8a78-54ddeabc4406
-topic: Desarrollo
-role: Desarrollador
-level: Principiante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 2%
+source-wordcount: '182'
+ht-degree: 0%
 
 ---
 
