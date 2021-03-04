@@ -1,19 +1,16 @@
 ---
 title: Configuración de OKTA con AEM
 description: Explicación de los distintos ajustes de configuración para el uso del inicio de sesión único mediante okta
-feature: Formularios adaptables
+feature: administración
 topics: development, authentication, security
 audience: developer
 doc-type: tutorial
 activity: setup
 version: 6.5
-topic: Administración
-role: Administrador
-level: Con experiencia
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '763'
 ht-degree: 0%
 
 ---
