@@ -1,58 +1,60 @@
 ---
-title: Uso de la canalización de CD/CI en Adobe Cloud Manager
-description: Adobe Cloud Manager ofrece una canalización de CD/CI de autoservicio sencilla pero flexible que permite a AEM equipos de proyectos implementar código de forma rápida, segura y coherente en todos los entornos de AEM alojados en AMS. Esta serie de vídeos explora la configuración y ejecución de la canalización CI/CD del Administrador de nube en los escenarios de éxito y de error.
+title: Uso de la canalización de CI/CD en Adobe Cloud Manager
+description: Adobe Cloud Manager proporciona una canalización de CD/CI de autoservicio sencilla pero flexible que permite a los equipos de proyectos de AEM implementar código de forma rápida, segura y coherente en todos los entornos de AEM alojados en AMS. En esta serie de vídeos se analiza la configuración y ejecución de la canalización de CI/CD de Cloud Manager en los casos de error y de éxito.
 sub-product: cloud-manager, foundation
-feature: pipelines, quality-gates
 topics: cicd, performance, best-practices, development, governance
 doc-type: feature video
 activity: understand
 audience: all
+topic: Arquitectura
+role: Desarrollador
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '316'
 ht-degree: 0%
 
 ---
 
 
-# Uso de la canalización de CD/CI en Adobe Cloud Manager
+# Uso de la canalización de CI/CD en Adobe Cloud Manager
 
-Adobe Cloud Manager ofrece una canalización de CD/CI de autoservicio sencilla pero flexible que permite a AEM equipos de proyectos implementar código de forma rápida, segura y coherente en todos los entornos de AEM alojados en AMS. Esta serie de vídeos explora la configuración y ejecución de la canalización CI/CD del Administrador de nube en los escenarios de éxito y de error.
+Adobe Cloud Manager proporciona una canalización de CD/CI de autoservicio sencilla pero flexible que permite a los equipos de proyectos de AEM implementar código de forma rápida, segura y coherente en todos los entornos de AEM alojados en AMS. En esta serie de vídeos se analiza la configuración y ejecución de la canalización de CI/CD de Cloud Manager en los casos de error y de éxito.
 
 ## Introducción
 
-Introducción rápida a los Programas de Cloud Manager y Cloud Manager.
+Introducción rápida a Cloud Manager y a los programas de Cloud Manager.
 
 >[!NOTE]
 >
->A lo largo de estos vídeos, los tiempos de compilación, prueba e implementación se han acelerado para reducir el tiempo del vídeo. La ejecución completa de la canalización suele tardar 45 minutos o más (incluida la prueba de rendimiento obligatoria de 30 minutos), según el tamaño del proyecto, el número de instancias de AEM y los procesos de UAT.
+>A lo largo de estos vídeos, los tiempos de compilación, prueba e implementación se han acelerado para reducir el tiempo de vídeo. Una ejecución completa de la canalización suele tardar 45 minutos o más (incluida la prueba de rendimiento obligatoria de 30 minutos), según el tamaño del proyecto, el número de instancias de AEM y los procesos de UAT.
 
 >[!VIDEO](https://video.tv.adobe.com/v/23082/?quality=12&learn=on)
 
 ## Configuración de la canalización CI/CD
 
-Este vídeo explora la configuración de la canalización para el Programa en Cloud Manager.
+En este vídeo se analiza la configuración de la canalización para el programa en Cloud Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/23083/?quality=12&learn=on)
 
 ## Ejecución de canalización fallida
 
-Este vídeo explora la ejecución de la canalización CI/CD utilizando código que falla en las comprobaciones de calidad requeridas por el Administrador de nube, mediante la rama de repositorio **[!DNL yellow]**.
+En este vídeo se explora la ejecución de la canalización CI/CD mediante el código que falla en las comprobaciones de calidad necesarias de Cloud Manager, utilizando la rama del repositorio **[!DNL yellow]**.
 
 >[!VIDEO](https://video.tv.adobe.com/v/23084/?quality=12&learn=on)
 
 ## Ejecución correcta de la canalización
 
-Este vídeo explora la ejecución exitosa de la canalización CI/CD utilizando código que pasa las comprobaciones de calidad requeridas por el Administrador de nube mediante la rama de repositorio **[!DNL master]**.
+En este vídeo se explora la ejecución correcta de la canalización CI/CD mediante el código que pasa las comprobaciones de calidad necesarias de Cloud Manager, utilizando la rama del repositorio **[!DNL master]**.
 
-Este vídeo también toca la consola [!UICONTROL Actividad] en Cloud Manager, que permite volver a entrar en ejecuciones activas o revisar las ejecuciones finalizadas o fallidas.
+Este vídeo también afecta a la consola [!UICONTROL Activity] en Cloud Manager, que permite volver a entrar en ejecuciones activas o revisar las ejecuciones completadas o fallidas.
 
 >[!VIDEO](https://video.tv.adobe.com/v/23085/?quality=12&learn=on)
 
 ## Materiales de apoyo
 
 * [Guía del usuario de Cloud Manager](https://helpx.adobe.com/experience-manager/cloud-manager/user-guide.html)
-* [Descargar  [!DNL SonarQube] análisis de código](https://helpx.adobe.com/experience-manager/cloud-manager/using/understand-your-test-results.html#CodeQualityTesting)
+* [Descargar  [!DNL SonarQube] paquetes de análisis de código](https://helpx.adobe.com/experience-manager/cloud-manager/using/understand-your-test-results.html#CodeQualityTesting)
    * *XLSX disponible en la parte inferior de la sección vinculada*
 * [[!DNL SonarQube] Índice de reglas Java](https://rules.sonarsource.com/java/)
