@@ -4,17 +4,20 @@ seo-title: Listado de tipos de recursos personalizados en AEM Forms
 description: Parte 2 de la lista de tipos de recursos personalizados en AEM Forms
 seo-description: Parte 2 de la lista de tipos de recursos personalizados en AEM Forms
 uuid: 6467ec34-e452-4c21-9bb5-504f9630466a
-feature: formularios adaptables
+feature: Formularios adaptables
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.3,6.4,6.5
 discoiquuid: 4b940465-0bd7-45a2-8d01-e4d640c9aedf
+topic: Desarrollo
+role: Desarrollador
+level: Con experiencia
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '616'
 ht-degree: 0%
 
 ---
