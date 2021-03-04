@@ -1,8 +1,8 @@
 ---
 title: 'Introducción a AEM Sites: conceptos básicos de componentes'
-description: Comprender la tecnología subyacente de un componente de sitios de Adobe Experience Manager (AEM) a través de un sencillo ejemplo de "HelloWorld". Se exploran los temas de HTL, modelos Sling, bibliotecas del lado del cliente y diálogos de creación.
+description: Comprenda la tecnología subyacente de un componente de Adobe Experience Manager (AEM) Sites mediante un sencillo ejemplo de "HelloWorld". Se exploran los temas de HTL, los modelos Sling, las bibliotecas del lado del cliente y los cuadros de diálogo de autor.
 sub-product: sitios
-feature: components, sling-models, htl
+feature: '"Componentes principales, herramientas para desarrolladores"'
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -11,10 +11,13 @@ audience: developer
 mini-toc-levels: 1
 kt: 4081
 thumbnail: 30177.jpg
+topic: '"Gestión de contenido, desarrollo"'
+role: Desarrollador
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 76462bb75ceda1921db2fa37606ed7c5a1eadb81
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1154'
 ht-degree: 1%
 
 ---
@@ -22,27 +25,27 @@ ht-degree: 1%
 
 # Conceptos básicos de componentes {#component-basics}
 
-En este capítulo analizaremos la tecnología subyacente de un componente de sitios de Adobe Experience Manager (AEM) a través de un ejemplo sencillo `HelloWorld`. Se realizarán pequeñas modificaciones en un componente existente, que abarcará temas de creación, HTL, modelos Sling, bibliotecas del lado del cliente.
+En este capítulo analizaremos la tecnología subyacente de un componente de Adobe Experience Manager (AEM) Sites a través de un ejemplo sencillo `HelloWorld`. Se realizarán pequeñas modificaciones en un componente existente que cubrirá temas como la creación, HTL, modelos Sling y bibliotecas del lado del cliente.
 
 ## Requisitos previos {#prerequisites}
 
-Revise las herramientas y las instrucciones necesarias para configurar un [entorno de desarrollo local](overview.md#local-dev-environment).
+Revise las herramientas e instrucciones necesarias para configurar un [entorno de desarrollo local](overview.md#local-dev-environment).
 
-El IDE utilizado en los vídeos es [Código de Visual Studio](https://code.visualstudio.com/) y el complemento [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync).
+El IDE utilizado en los vídeos es [Visual Studio Code](https://code.visualstudio.com/) y el complemento [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync).
 
 ## Objetivo {#objective}
 
-1. Conozca la función de las plantillas HTL y los modelos Sling para procesar HTML dinámicamente.
-1. Comprender cómo se utilizan los diálogos para facilitar la creación de contenido.
+1. Aprenda la función de las plantillas HTL y los modelos Sling para procesar HTML de forma dinámica.
+1. Comprender cómo se utilizan los cuadros de diálogo para facilitar la creación de contenido.
 1. Conozca los conceptos básicos de las bibliotecas del lado del cliente para incluir CSS y JavaScript para admitir un componente.
 
 ## Qué va a generar {#what-you-will-build}
 
-En este capítulo, realizará varias modificaciones en un componente `HelloWorld` muy sencillo. En el proceso de realizar actualizaciones del componente `HelloWorld`, aprenderá las áreas clave del desarrollo de AEM componente.
+En este capítulo realizará varias modificaciones en un componente `HelloWorld` muy sencillo. En el proceso de realizar actualizaciones del componente `HelloWorld`, aprenderá sobre las áreas clave del desarrollo de componentes de AEM.
 
 ## Proyecto de inicio de capítulo {#starter-project}
 
-Este capítulo se basa en un proyecto genérico generado por el [AEM Arquetipo de proyecto](https://github.com/adobe/aem-project-archetype). Vea el siguiente vídeo y revise los [requisitos previos](#prerequisites) para empezar.
+Este capítulo se basa en un proyecto genérico generado por el [Tipo de archivo del proyecto AEM](https://github.com/adobe/aem-project-archetype). Vea el siguiente vídeo y revise los [requisitos previos](#prerequisites) para empezar.
 
 >[!NOTE]
 >
@@ -52,7 +55,7 @@ Este capítulo se basa en un proyecto genérico generado por el [AEM Arquetipo d
 
 Abra un nuevo terminal de línea de comandos y realice las siguientes acciones.
 
-1. En un directorio vacío, clona el repositorio [aem-guide-wknd](https://github.com/adobe/aem-guides-wknd):
+1. En un directorio vacío, clone el repositorio [aem-guides-wknd](https://github.com/adobe/aem-guides-wknd):
 
    ```shell
    $ git clone git@github.com:adobe/aem-guides-wknd.git --branch tutorial/component-basics-start --single-branch
@@ -62,7 +65,7 @@ Abra un nuevo terminal de línea de comandos y realice las siguientes acciones.
    >
    > Opcionalmente, puede seguir utilizando el proyecto generado en el capítulo anterior, [Configuración del proyecto](./project-setup.md).
 
-1. Vaya a la carpeta `aem-guides-wknd`.
+1. Vaya a la carpeta `aem-guides-wknd` .
 
    ```shell
    $ cd aem-guides-wknd
@@ -86,41 +89,41 @@ Abra un nuevo terminal de línea de comandos y realice las siguientes acciones.
 
 ## Creación de componentes {#component-authoring}
 
-Los componentes pueden considerarse pequeños componentes modulares de una página web. Para reutilizar componentes, estos deben ser configurables. Esto se logra a través del diálogo de creación. A continuación, crearemos un componente sencillo e inspeccionaremos cómo se mantienen los valores del cuadro de diálogo en AEM.
+Los componentes se pueden considerar pequeños componentes modulares de una página web. Para reutilizar componentes, estos deben ser configurables. Esto se logra mediante el cuadro de diálogo de creación. A continuación, crearemos un componente simple e inspeccionaremos cómo se mantienen los valores del cuadro de diálogo en AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330986/?quality=12&learn=on)
 
 A continuación se muestran los pasos de alto nivel realizados en el vídeo anterior.
 
 1. Cree una nueva página con el nombre **Conceptos básicos de componentes** debajo de **Sitio WKND** `>` **EE.UU.** `>` **es**.
-1. Añada el **Componente de Hola Mundo** en la página recién creada.
-1. Abra el cuadro de diálogo del componente e introduzca texto. Guarde los cambios para ver el mensaje mostrado en la página.
-1. Cambie al modo de desarrollador y vista de la ruta de contenido en CRXDE-Lite e inspeccione las propiedades de la instancia de componente.
-1. Utilice CRXDE-Lite para vista de las secuencias de comandos `cq:dialog` y `helloworld.html` ubicadas en `/apps/wknd/components/content/helloworld`.
+1. Añada el **Hello World Component** a la página recién creada.
+1. Abra el cuadro de diálogo del componente e introduzca texto. Guarde los cambios para ver el mensaje que aparece en la página.
+1. Cambie al modo de desarrollador y vea la Ruta de contenido en CRXDE-Lite e inspeccione las propiedades de la instancia de componente.
+1. Utilice CRXDE-Lite para ver el script `cq:dialog` y `helloworld.html` ubicado en `/apps/wknd/components/content/helloworld`.
 
 ## HTL (lenguaje de plantilla HTML) y cuadros de diálogo {#htl-dialogs}
 
-El lenguaje de plantilla HTML o **[HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/getting-started/getting-started.html)** es un lenguaje de plantilla de peso ligero del lado del servidor que utilizan los componentes de AEM para procesar contenido.
+El lenguaje de plantilla HTML o **[HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/getting-started/getting-started.html)** es un lenguaje de plantilla ligero del lado del servidor que utilizan los componentes de AEM para procesar contenido.
 
-**Los** cuadros de diálogo definen las configuraciones disponibles que se pueden realizar para un componente.
+**** Los cuadros de diálogo definen las configuraciones disponibles que se pueden realizar para un componente.
 
-A continuación, se actualizará el script `HelloWorld` HTL para mostrar un saludo adicional antes del mensaje de texto.
+A continuación, actualizaremos el script HTL `HelloWorld` para mostrar un saludo adicional antes del mensaje de texto.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330987/?quality=12&learn=on)
 
 A continuación se muestran los pasos de alto nivel realizados en el vídeo anterior.
 
-1. Cambie al IDE y abra el proyecto al módulo `ui.apps`.
+1. Cambie al IDE y abra el proyecto en el módulo `ui.apps`.
 1. Abra el archivo `helloworld.html` y realice un cambio en el código HTML Markup.
-1. Utilice las herramientas IDE como [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) para sincronizar el cambio de archivo con la instancia de AEM local.
-1. Vuelva al navegador y observe que el procesamiento del componente ha cambiado.
+1. Utilice las herramientas IDE como [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) para sincronizar el cambio de archivo con la instancia local de AEM.
+1. Vuelva al explorador y observe que el procesamiento del componente ha cambiado.
 1. Abra el archivo `.content.xml` que define el cuadro de diálogo para el componente `HelloWorld` en:
 
    ```plain
    <code>/aem-guides-wknd/ui.apps/src/main/content/jcr_root/apps/wknd/components/helloworld/_cq_dialog/.content.xml
    ```
 
-1. Actualice el cuadro de diálogo para agregar un campo de texto adicional llamado **Título** con un nombre `./title`:
+1. Actualice el cuadro de diálogo para agregar un campo de texto adicional denominado **Title** con un nombre `./title`:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -153,7 +156,7 @@ A continuación se muestran los pasos de alto nivel realizados en el vídeo ante
    </jcr:root>
    ```
 
-1. Vuelva a abrir el archivo `helloworld.html`, que representa la secuencia de comandos HTL principal responsable de procesar el componente `HelloWorld`, ubicado en:
+1. Vuelva a abrir el archivo `helloworld.html`, que representa el script HTL principal responsable de procesar el componente `HelloWorld`, ubicado en:
 
    ```plain
        <code>/aem-guides-wknd.ui.apps/src/main/content/jcr_root/apps/wknd/components/helloworld/helloworld.html
@@ -168,13 +171,13 @@ A continuación se muestran los pasos de alto nivel realizados en el vídeo ante
    </div>
    ```
 
-1. Implemente los cambios en una instancia local de AEM usando el complemento para desarrolladores o sus habilidades con Maven.
+1. Implemente los cambios en una instancia local de AEM mediante el complemento para desarrolladores o con sus habilidades con Maven.
 
 ## Modelos Sling {#sling-models}
 
-Los modelos de Sling son objetos Java &quot;POJO&quot; (Plain Old Java Objects) impulsados por anotaciones que facilitan la asignación de datos de JCR a variables Java y proporcionan otras variedades cuando se desarrollan en el contexto de AEM.
+Los modelos Sling son objetos Java &quot;POJO&quot; (antiguos objetos Java comunes) impulsados por anotaciones que facilitan la asignación de datos de JCR a variables Java y proporcionan otras variedades al desarrollar en el contexto de AEM.
 
-A continuación, realizaremos algunas actualizaciones en el modelo de sling `HelloWorldModel` con el fin de aplicar cierta lógica comercial a los valores almacenados en el JCR antes de enviarlos a la página.
+A continuación, realizaremos algunas actualizaciones en el modelo de Sling `HelloWorldModel` para aplicar cierta lógica empresarial a los valores almacenados en el JCR antes de enviarlos a la página.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330988/?quality=12&learn=on)
 
@@ -200,7 +203,7 @@ A continuación, realizaremos algunas actualizaciones en el modelo de sling `Hel
       ...
    ```
 
-1. Añada las siguientes líneas a la clase `HelloWorldModel` para asignar los valores de las propiedades JCR del componente `title` y `text` a las variables Java:
+1. Agregue las siguientes líneas a la clase `HelloWorldModel` para asignar los valores de las propiedades JCR del componente `title` y `text` a las variables Java:
 
    ```java
    ...
@@ -221,7 +224,7 @@ A continuación, realizaremos algunas actualizaciones en el modelo de sling `Hel
            ...
    ```
 
-1. Añada el siguiente método `getTitle()` a la clase `HelloWorldModel`, que devuelve el valor de la propiedad denominada `title`. Este método agrega la lógica adicional para devolver un valor de cadena de &quot;Valor predeterminado aquí!&quot; si la propiedad `title` es nula o está en blanco:
+1. Agregue el siguiente método `getTitle()` a la clase `HelloWorldModel`, que devuelve el valor de la propiedad denominada `title`. Este método agrega la lógica adicional para devolver un valor de cadena de &quot;Valor predeterminado aquí!&quot; si la propiedad `title` es nula o está en blanco:
 
    ```java
    /***
@@ -233,7 +236,7 @@ A continuación, realizaremos algunas actualizaciones en el modelo de sling `Hel
    }
    ```
 
-1. Añada el siguiente método `getText()` a la clase `HelloWorldModel`, que devuelve el valor de la propiedad denominada `text`. Este método transforma la cadena a todos los caracteres en mayúsculas.
+1. Agregue el siguiente método `getText()` a la clase `HelloWorldModel`, que devuelve el valor de la propiedad denominada `text`. Este método transforma la cadena a todos los caracteres en mayúsculas.
 
    ```java
        /***
@@ -277,19 +280,19 @@ A continuación, realizaremos algunas actualizaciones en el modelo de sling `Hel
    </div>
    ```
 
-1. Implemente los cambios en una instancia local de AEM con el complemento Eclipse Developer o con sus conocimientos de Maven.
+1. Implemente los cambios en una instancia local de AEM mediante el complemento para desarrolladores de Eclipse o con sus habilidades con Maven.
 
 ## Bibliotecas de cliente {#client-side-libraries}
 
-Las bibliotecas del lado del cliente, clientlibs para abreviar, proporcionan un mecanismo para organizar y administrar los archivos CSS y JavaScript necesarios para una implementación de AEM Sites. Las bibliotecas de cliente son la forma estándar de incluir CSS y JavaScript en una página de AEM.
+Las bibliotecas del lado del cliente, clientlibs para abreviar, proporcionan un mecanismo para organizar y administrar los archivos CSS y JavaScript necesarios para una implementación de AEM Sites. Las bibliotecas del lado del cliente son la forma estándar de incluir CSS y JavaScript en una página de AEM.
 
-A continuación, incluiremos algunos estilos CSS para el componente `HelloWorld` a fin de comprender los conceptos básicos de las bibliotecas del lado del cliente.
+A continuación, incluiremos algunos estilos CSS para el componente `HelloWorld` para comprender los conceptos básicos de las bibliotecas del lado del cliente.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330989/?quality=12&learn=on)
 
 A continuación se muestran los pasos de alto nivel realizados en el vídeo anterior.
 
-1. debajo de `/aem-guides-wknd.ui.apps/src/main/content/jcr_root/apps/wknd/clientlibs` cree una nueva carpeta con el nombre `clientlib-helloworld`.
+1. debajo de `/aem-guides-wknd.ui.apps/src/main/content/jcr_root/apps/wknd/clientlibs` cree una nueva carpeta denominada `clientlib-helloworld`.
 1. Cree una carpeta y una estructura de archivos como la siguiente debajo de `clientlibs`
 
    ```plain
@@ -339,7 +342,7 @@ A continuación se muestran los pasos de alto nivel realizados en el vídeo ante
        categories="[wknd.helloworld]" />
    ```
 
-1. Actualice el archivo `clientlibs/clientlib-base/.content.xml` a **embed** la categoría `wknd.helloworld`:
+1. Actualice el archivo `clientlibs/clientlib-base/.content.xml` a **incrustar** en la categoría `wknd.helloworld`:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -350,19 +353,19 @@ A continuación se muestran los pasos de alto nivel realizados en el vídeo ante
        embed="[core.wcm.components.accordion.v1,core.wcm.components.tabs.v1,core.wcm.components.carousel.v1,core.wcm.components.image.v2,core.wcm.components.breadcrumb.v2,core.wcm.components.search.v1,core.wcm.components.form.text.v2,core.wcm.components.pdfviewer.v1,core.wcm.components.commons.datalayer.v1,wknd.grid,wknd.helloworld]"/>
    ```
 
-1. Implemente los cambios en una instancia local de AEM usando el complemento para desarrolladores o sus habilidades con Maven.
+1. Implemente los cambios en una instancia local de AEM mediante el complemento para desarrolladores o con sus habilidades con Maven.
 
    >[!NOTE]
    >
-   > Por motivos de rendimiento, el navegador almacena con frecuencia en caché CSS y JavaScript. Si no ve inmediatamente el cambio para la biblioteca del cliente, realice una actualización dura y borre la caché del explorador. Puede resultar útil utilizar una ventana de incógnito para garantizar una caché nueva.
+   > CSS y JavaScript se almacenan con frecuencia en la caché por el explorador por motivos de rendimiento. Si no ve inmediatamente el cambio para la biblioteca de cliente, realice una actualización dura y borre la caché del explorador. Puede resultar útil utilizar una ventana de incógnito para garantizar una nueva caché.
 
 ## Felicitaciones! {#congratulations}
 
-Felicitaciones, acaba de aprender los conceptos básicos del desarrollo de componentes en Adobe Experience Manager!
+¡Enhorabuena, acaba de aprender los conceptos básicos del desarrollo de componentes en Adobe Experience Manager!
 
-### Próximos pasos {#next-steps}
+### Pasos siguientes {#next-steps}
 
-Familiarícese con las páginas y plantillas de Adobe Experience Manager en el capítulo siguiente [Páginas y plantillas](pages-templates.md). Comprenda cómo se procesan los componentes principales en el proyecto y aprenda las configuraciones de políticas avanzadas de las plantillas editables para crear una plantilla de página del artículo bien estructurada.
+Familiarícese con las páginas y plantillas de Adobe Experience Manager en el capítulo siguiente [Páginas y plantillas](pages-templates.md). Comprenda cómo se procesan los componentes principales como proxy en el proyecto y aprenda las configuraciones de políticas avanzadas de las plantillas editables para crear una plantilla de página de artículo bien estructurada.
 
-Vista el código terminado en [GitHub](https://github.com/adobe/aem-guides-wknd) o revise e implemente el código localmente en la rama Git `tutorial/component-basics-solution`.
+Vea el código terminado en [GitHub](https://github.com/adobe/aem-guides-wknd) o revise e implemente el código localmente en la rama `tutorial/component-basics-solution` de Git.
 
