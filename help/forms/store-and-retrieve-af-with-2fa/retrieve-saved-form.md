@@ -1,7 +1,7 @@
 ---
 title: Recuperar formulario adaptable guardado
 description: Servlet para procesar el formulario adaptable con datos guardados
-feature: adaptive-forms
+feature: Formularios adaptables
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,18 +9,21 @@ activity: implement
 version: 6.4,6.5
 kt: 6553
 thumbnail: 6553.jpg
+topic: Desarrollo
+role: Desarrollador
+level: Con experiencia
 translation-type: tm+mt
-source-git-commit: 9d4e864f42fa6c0b2f9b895257db03311269ce2e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '103'
-ht-degree: 0%
+source-wordcount: '108'
+ht-degree: 3%
 
 ---
 
 # Recuperar formulario guardado
 
-El paso siguiente es crear un servlet que procesará el formulario adaptable con los datos guardados y sus archivos adjuntos.
-El siguiente código servlet se ejecuta después de comprobar el código OTP. Los datos del formulario adaptable y su mapa de archivos adjuntos asociado con la identificación única de la aplicación se recuperan de la base de datos. El objeto request se rellena con los datos de formulario adaptable guardados y el mapa de archivos adjuntos. A continuación, se reenvía la solicitud para que el formulario &quot;almacenamiento con datos adjuntos&quot; se rellene previamente con los datos originales y sus datos adjuntos.
+El siguiente paso es crear un servlet que procese el formulario adaptable con los datos guardados y sus archivos adjuntos.
+El siguiente código de servlet se ejecuta después de comprobar el código OTP. Los datos del formulario adaptable y el mapa de archivos adjuntos asociado con el id de aplicación único se recuperan de la base de datos. El objeto de solicitud se rellena con los datos de formulario adaptable guardados y el mapa de archivos adjuntos. A continuación, se reenvía la solicitud para procesar el formulario &quot;storeafwithattachment&quot; previamente rellenado con los datos originales y sus archivos adjuntos.
 
 ```java
 package store.and.fetch.core.servlets;
