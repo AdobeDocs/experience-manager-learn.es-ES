@@ -1,31 +1,34 @@
 ---
 title: Personalización de la bandeja de entrada
-description: Añadir columnas personalizadas para mostrar datos adicionales del flujo de trabajo mediante una plantilla de diseño
-feature: adaptive-forms
+description: Añadir columnas personalizadas para mostrar datos adicionales del flujo de trabajo mediante una plantilla de aspecto
+feature: Formularios adaptables
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.5.5
 kt: 5830
+topic: Desarrollo
+role: Desarrollador
+level: Con experiencia
 translation-type: tm+mt
-source-git-commit: defefc1451e2873e81cd81e3cccafa438aa062e3
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 2%
+source-wordcount: '296'
+ht-degree: 4%
 
 ---
 
-# Uso de una plantilla ligera para mostrar datos de bandeja de entrada
+# Uso de una plantilla sutil para mostrar los datos de la bandeja de entrada
 
-Puede utilizar una plantilla ligera para dar formato a los datos que se van a mostrar en las columnas de la bandeja de entrada. En este ejemplo se muestran los iconos corales-ui en función del valor de la columna de ingresos. La siguiente captura de pantalla muestra el uso de iconos en la columna de ingresos
+Puede utilizar una plantilla sutil para dar formato a los datos que se van a mostrar en las columnas de la bandeja de entrada. En este ejemplo se muestran iconos de coral-ui en función del valor de la columna de ingresos. La siguiente captura de pantalla muestra el uso de iconos en la columna de ingresos
 ![iconos de ingresos](assets/income-column.PNG)
 
-[En este artículo se proporciona la ](assets/sightly-template.zip) plantilla de suavizado utilizada para mostrar los iconos personalizados de corales ui.
+[La ](assets/sightly-template.zip) plantilla sightly utilizada para mostrar los iconos personalizados de la interfaz de usuario de coral se proporciona como parte de este artículo.
 
 ## Plantilla Sightly
 
-A continuación se muestra la plantilla de Sightly. El código de la plantilla muestra un icono en función de los ingresos. Los iconos están disponibles como parte de la [biblioteca de iconos de corales ui](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) que se incluye con AEM.
+A continuación, se muestra la plantilla. El código de la plantilla muestra un icono en función de los ingresos. Los iconos están disponibles como parte de la [biblioteca de iconos de la interfaz de usuario de coral](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) que viene con AEM.
 
 ```java
 <template data-sly-template.incomeTemplate="${@ item}>">
@@ -42,9 +45,9 @@ A continuación se muestra la plantilla de Sightly. El código de la plantilla m
 
 ## Implementación del servicio
 
-El siguiente código es la implementación del servicio para mostrar la columna de ingresos.
+El siguiente código es la implementación de servicio para mostrar la columna de ingresos.
 
-La línea 12 asocia la columna con la plantilla de revisión
+La línea 12 asocia la columna con la plantilla sightly
 
 ```java
 import java.util.Map;
@@ -75,21 +78,21 @@ return val;
 }
 ```
 
-## Probar en el servidor
+## Realizar pruebas en el servidor
 
 >[!NOTE]
 >
->En este artículo se asume que ha instalado el [flujo de trabajo de muestra](assets/review-workflow.zip) y el [formulario de ejemplo](assets/snap-form.zip) de [artículo anterior](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/inbox-customization/add-married-column.md) en esta serie.
+>Este artículo supone que ha instalado el [ejemplo de flujo de trabajo](assets/review-workflow.zip) y el [formulario de ejemplo](assets/snap-form.zip) del [artículo anterior](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/inbox-customization/add-married-column.md) en esta serie.
 
-* [Iniciar sesión en crx como usuario administrador](http://localhost:4502/crx/de/index.jsp)
+* [Inicie sesión en crx como usuario administrador](http://localhost:4502/crx/de/index.jsp)
 * [importar plantilla](assets/sightly-template.zip)
-* [Iniciar sesión en AEM consola web](http://localhost:4502/system/console/bundles)
-* [Implementación y inicio del paquete de personalización de bandeja de entrada](assets/income-column-customization.jar)
+* [Iniciar sesión en la consola web de AEM](http://localhost:4502/system/console/bundles)
+* [Implementar e iniciar el paquete de personalización de la bandeja de entrada](assets/income-column-customization.jar)
 * [Abra la bandeja de entrada](http://localhost:4502/aem/inbox)
-* Abra el Control de administración haciendo clic en la Vista de Lista al lado del botón Crear
-* Añadir la columna de ingresos a la Bandeja de entrada y guardar los cambios
+* Abra Control de administración haciendo clic en Vista de lista junto al botón Crear
+* Agregue la columna de ingresos a la bandeja de entrada y guarde los cambios
 * [Obtener una vista previa del formulario](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
 * Seleccione el _estado civil_ y envíe el formulario
-* [Bandeja de entrada de vista](http://localhost:4502/aem/inbox)
+* [Ver bandeja de entrada](http://localhost:4502/aem/inbox)
 
-El envío del formulario déclencheur el flujo de trabajo y se asigna una tarea al usuario &quot;admin&quot;. Debería ver el icono correspondiente en la columna de ingresos
+Al enviar el formulario, se activará el flujo de trabajo y se asignará una tarea al usuario &quot;admin&quot;. Debería ver el icono apropiado en la columna de ingresos
