@@ -1,19 +1,16 @@
 ---
 title: Creación de su primer paquete OSGi con AEM forms
 description: Cree su primer paquete OSGi usando maven y eclipse
-feature: Formularios adaptables
+feature: administración
 topics: development
 audience: developer
 doc-type: article
 activity: setup
 version: 6.4,6.5
-topic: Desarrollo
-role: Desarrollador
-level: Principiante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '831'
 ht-degree: 2%
 
 ---
