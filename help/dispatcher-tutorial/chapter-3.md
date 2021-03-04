@@ -1,12 +1,14 @@
 ---
-title: Capítulo 3 - Temas avanzados de almacenamiento en caché
-seo-title: Desmitificación de la caché de AEM Dispatcher - Capítulo 3 - Temas avanzados de almacenamiento en caché
-description: El capítulo 3 del tutorial Desmitificado de caché de Dispatcher de AEM explica cómo superar las limitaciones descritas en el capítulo 2.
-seo-description: El capítulo 3 del tutorial Desmitificado de caché de Dispatcher de AEM explica cómo superar las limitaciones descritas en el capítulo 2.
+title: '"Capítulo 3 - Temas avanzados de almacenamiento en caché de Dispatcher"'
+description: Esta es la parte 3 de una serie de tres partes para el almacenamiento en caché en AEM. Donde las dos primeras partes se centraron en el almacenamiento en caché http sin formato en Dispatcher y en las limitaciones que existen. Esta parte analiza algunas ideas sobre cómo superar estas limitaciones.
+feature: Dispatcher
+topic: Arquitectura
+role: Arquitecto
+level: Intermedio
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '6187'
+source-wordcount: '6191'
 ht-degree: 0%
 
 ---
@@ -278,7 +280,7 @@ Hablamos de invalidación y purga mucho. _El_ desalojo de caché está relaciona
 
 #### Almacenamiento en caché preventivo
 
-El almacenamiento en caché preventivo significa volver a crear la entrada con contenido nuevo en el momento en que se invalida o se considera obsoleto. Por supuesto - lo haría solo con unos pocos recursos, a los que está seguro de que se accede con frecuencia e inmediatamente. De lo contrario, malgastaría recursos al crear entradas de caché que podrían no solicitarse nunca. Al crear entradas de caché de forma preventiva, podría reducir la latencia de la primera solicitud a un recurso después de la invalidación de la caché.
+El almacenamiento en caché preventivo significa volver a crear la entrada con contenido nuevo en el momento en que se invalida o se considera obsoleto. Por supuesto, solo lo haría con unos pocos recursos, a los que está seguro de que se accede con frecuencia e inmediatamente. De lo contrario, malgastaría recursos al crear entradas de caché que podrían no solicitarse nunca. Al crear entradas de caché de forma preventiva, podría reducir la latencia de la primera solicitud a un recurso después de la invalidación de la caché.
 
 #### Calentamiento de caché
 
