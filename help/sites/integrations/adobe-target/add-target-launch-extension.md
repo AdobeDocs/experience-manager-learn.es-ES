@@ -1,7 +1,6 @@
 ---
-title: Añadir Extensión de grupo de destinatarios a una propiedad de inicio
-description: Obtenga información sobre cómo agregar la extensión de Adobe Target a una propiedad de Adobe Experience Platform Launch.
-feature: launch
+title: Añadir extensión de Target a una propiedad de Launch
+description: Obtenga información sobre cómo añadir la extensión de Adobe Target a una propiedad de Adobe Experience Platform Launch.
 topics: integrations, administration, development
 audience: administrator, developer
 doc-type: technical video
@@ -9,29 +8,32 @@ activity: setup
 version: cloud-service
 kt: 6131
 thumbnail: 41247.jpg
+topic: Integraciones
+role: Desarrollador
+level: Intermedio
 translation-type: tm+mt
-source-git-commit: 988e390dd9e1fc6033b3651db151e6a60ce4efaa
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 0%
+source-wordcount: '112'
+ht-degree: 1%
 
 ---
 
 
-# Añadir Extensión de grupo de destinatarios a una propiedad de inicio {#adobe-target-extension}
+# Añadir extensión de Target a una propiedad de Launch {#adobe-target-extension}
 
-Para seguir este vídeo, debe tener [Experience Platform Launch integrado con AEM](../experience-platform-launch/overview.md).
+Para seguir este vídeo, ya debe haber [integrado Experience Platform Launch con AEM](../experience-platform-launch/overview.md).
 
-Obtenga información sobre cómo habilitar Adobe Target en el sitio web de AEM mediante Experience Platform Launch.
+Obtenga información sobre cómo habilitar Adobe Target en su sitio web de AEM mediante Experience Platform Launch.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41247?quality=12&learn=on)
 
-## Próximos pasos
+## Pasos siguientes
 
-+ [Carga y activación de una llamada de Destinatario](./load-and-fire-target.md)
++ [Carga y activación de una llamada de Target](./load-and-fire-target.md)
 
-## Vínculos de soporte
+## Compatibilidad con vínculos
 
 + [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
-+ [Adobe Experience Cloud Debugger - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
++ [Adobe Experience Cloud Debugger: Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
 + [Introducción a Adobe Experience Platform Debugger](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/web-sdk/introduction-to-the-experience-platform-debugger.html)
