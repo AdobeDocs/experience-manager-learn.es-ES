@@ -2,22 +2,22 @@
 title: Uso de la importación y exportación de metadatos en AEM Assets
 description: Obtenga información sobre cómo utilizar las funciones de importación y exportación de metadatos de Adobe Experience Manager Assets. Las funciones de importación y exportación permiten a los autores de contenido actualizar de forma masiva los metadatos de los recursos existentes.
 version: 6.3, 6.4, 6.5, cloud-service
-topics: Content Management
+topic: Administración de contenido
 feature: Metadatos
 role: Administrador
 level: Intermedio
 kt: 647, 917
 thumbnail: 22132.jpg
 translation-type: tm+mt
-source-git-commit: 0d012d61b7740e461e641dddd6c5255a022305ea
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 4%
+source-wordcount: '265'
+ht-degree: 5%
 
 ---
 
 
-# Uso de Importación y Exportación de Metadatos en AEM Assets {#metadata-import-and-export}
+# Uso de la importación y exportación de metadatos en AEM Assets {#metadata-import-and-export}
 
 Obtenga información sobre cómo utilizar las funciones de importación y exportación de metadatos de Adobe Experience Manager Assets. Las funciones de importación y exportación permiten a los autores de contenido actualizar de forma masiva los metadatos de los recursos existentes.
 
@@ -31,14 +31,14 @@ Obtenga información sobre cómo utilizar las funciones de importación y export
 
 >[!NOTE]
 >
-> Al preparar un archivo CSV para la importación, es más fácil generar un CSV con la lista de recursos mediante la función Exportación de metadatos. A continuación, puede modificar el archivo CSV generado e importarlo mediante la función Importar.
+> Al preparar un archivo CSV para importar, es más fácil generar un CSV con la lista de recursos mediante la función Exportación de metadatos. A continuación, puede modificar el archivo CSV generado e importarlo mediante la función Importar .
 
 ## Formato de archivo CSV de metadatos {#metadata-file-format}
 
 ### Primera fila
 
 * La primera fila del archivo CSV define el esquema de metadatos.
-* La primera columna tiene el valor predeterminado `assetPath`, que contiene la ruta JCR absoluta para un recurso.
+* La primera columna toma el valor predeterminado `assetPath`, que contiene la ruta JCR absoluta de un recurso.
 
 * Las columnas posteriores de la primera fila apuntan a otras propiedades de metadatos de un recurso.
    * Por ejemplo : `dc:title, dc:description, jcr:title`
@@ -53,12 +53,12 @@ Obtenga información sobre cómo utilizar las funciones de importación y export
    * Correcto : `dc:title {{String}}`
    * Incorrecto: `Dc:Title {{String}}`
 
-* El tipo de propiedad distingue entre mayúsculas y minúsculas
-* Se admiten todos los tipos de propiedades [JCR válidos](https://docs.adobe.com/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/PropertyType.html)
+* El tipo de propiedad no distingue entre mayúsculas y minúsculas
+* Se admiten todos los tipos de propiedades [JCR](https://docs.adobe.com/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/PropertyType.html) válidos
 
 * Formato de propiedad de varios valores: `<metadata property name> {{<property type : MULTI }}`
 
-### Segunda fila a N filas
+### Segunda fila a filas N
 
 * La primera columna contiene la ruta JCR absoluta para un recurso. Por ejemplo: /content/dam/asset1.jpg
 * Puede que falten valores en la propiedad de metadatos de un recurso en el archivo CSV. Las propiedades de metadatos que faltan para ese recurso en particular no se actualizan.
