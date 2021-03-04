@@ -1,28 +1,31 @@
 ---
 title: Creación de la primera comunicación interactiva para el canal de impresión
 seo-title: Creación de la primera comunicación interactiva para el canal de impresión
-description: Interactive Communications es la nueva versión de AEM Forms 6.4. Este documento le guiará por los pasos necesarios para crear una comunicación interactiva para el canal de impresión.
-seo-description: Interactive Communications es la nueva versión de AEM Forms 6.4. Este documento le guiará por los pasos necesarios para crear una comunicación interactiva para el canal de impresión.
-feature: interactive-communication
+description: Interactive Communications es nuevo en AEM Forms 6.4. Este documento le guiará por los pasos necesarios para crear una comunicación interactiva para el canal de impresión.
+seo-description: Interactive Communications es nuevo en AEM Forms 6.4. Este documento le guiará por los pasos necesarios para crear una comunicación interactiva para el canal de impresión.
+feature: Comunicación interactiva
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
+topic: Desarrollo
+role: Desarrollador
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 449202af47b6bbcd9f860d5c5391d1f7096d489e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 2%
+source-wordcount: '229'
+ht-degree: 3%
 
 ---
 
 
 # Creación de la primera comunicación interactiva para el canal de impresión
 
-Interactive Communications es la nueva versión de AEM Forms 6.4. Este documento le guiará por los pasos necesarios para crear una comunicación interactiva para el canal de impresión.
+Interactive Communications es nuevo en AEM Forms 6.4. Este documento le guiará por los pasos necesarios para crear una comunicación interactiva para el canal de impresión.
 
-Visite la página [AEM Forms samples](https://forms.enablementadobe.com/content/samples/samples.html?query=0) para obtener un vínculo a una demostración en directo de esta capacidad.
+Visite la página [AEM Forms samples](https://forms.enablementadobe.com/content/samples/samples.html?query=0) para ver un vínculo a una demostración en directo de esta capacidad.
 
 ## Requisitos previos {#prerequistes}
 
@@ -34,7 +37,7 @@ Al completar este tutorial, habrá aprendido lo siguiente:
 
 * Crear fuente de datos
 * Crear modelo de datos de formulario
-* Crear fragmentos de Documento
-* Configurar tablas y gráficos
+* Crear fragmentos de documento
+* Configuración de tablas y gráficos
 * Usar carpetas vigiladas para generar documentos en modo por lotes
 
