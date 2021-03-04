@@ -3,20 +3,17 @@ title: 'Rellenar tabla de formulario adaptable '
 seo-title: Rellenar tabla de formulario adaptable
 description: Rellenar la tabla Formulario adaptable con los resultados de las invocaciones del servicio del Modelo de datos de formulario
 seo-description: Rellenar la tabla Formulario adaptable con los resultados de las invocaciones del servicio del Modelo de datos de formulario
-feature: Formularios adaptables
+feature: formularios adaptables
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-topic: Desarrollo
-role: Profesional empresarial
-level: Intermedio
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 1%
+source-wordcount: '255'
+ht-degree: 0%
 
 ---
 
