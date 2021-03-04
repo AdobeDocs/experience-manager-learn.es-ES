@@ -1,25 +1,24 @@
 ---
 title: Búsqueda de recursos
-description: Con el panel Vínculo de recursos de Adobe, los usuarios creativos pueden buscar recursos almacenados en AEM Assets mediante palabras clave o realizar una búsqueda en una ubicación específica. Además de las opciones de búsqueda básicas, Adobe Asset Link también permite utilizar un recurso para buscar resultados visualmente similares en AEM Assets. Gracias al aprendizaje automático con Adobe Sensei, la búsqueda visual muestra resultados con características estéticas relacionadas con la imagen de destinatario.
+description: Con el panel Adobe Asset Link, los usuarios creativos pueden buscar recursos almacenados en AEM Assets mediante palabras clave o realizar una búsqueda en una ubicación específica. Además de las opciones de búsqueda básicas, Adobe Asset Link también permite utilizar un recurso para buscar resultados visualmente similares en AEM Assets. Con la tecnología de aprendizaje automático con Adobe Sensei, la búsqueda visual muestra resultados con características estéticas relacionadas con la imagen de destino.
 sub-product: activos
-feature: adobe-asset-link
-topics: authoring, collaboration, operations, sharing, metadata, images, search, operations
-audience: all
-doc-type: feature video
-activity: use
-version: null
+feature: Adobe Asset Link
+version: cloud-service
 thumbnail: 34260.jpg
+topic: Administración de contenido
+role: Profesional empresarial
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '143'
-ht-degree: 0%
+source-wordcount: '151'
+ht-degree: 3%
 
 ---
 
 
 # Búsqueda de recursos {#asset-search}
 
-Con el panel Vínculo de recursos de Adobe, los usuarios creativos pueden buscar recursos almacenados en AEM Assets mediante palabras clave o realizar una búsqueda en una ubicación específica. Además de las opciones de búsqueda básicas, Adobe Asset Link también permite utilizar un recurso para buscar resultados visualmente similares en AEM Assets. Gracias al aprendizaje automático con Adobe Sensei, la búsqueda visual muestra resultados con características estéticas relacionadas con la imagen de destinatario.
+Con el panel Adobe Asset Link, los usuarios creativos pueden buscar recursos almacenados en AEM Assets mediante palabras clave o realizar una búsqueda en una ubicación específica. Además de las opciones de búsqueda básicas, Adobe Asset Link también permite utilizar un recurso para buscar resultados visualmente similares en AEM Assets. Con la tecnología de aprendizaje automático con Adobe Sensei, la búsqueda visual muestra resultados con características estéticas relacionadas con la imagen de destino.
 
 >[!VIDEO](https://video.tv.adobe.com/v/34260/?quality=12)
