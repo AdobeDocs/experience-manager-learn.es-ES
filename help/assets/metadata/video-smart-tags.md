@@ -1,25 +1,24 @@
 ---
 title: Etiquetas inteligentes de vídeo en AEM Assets
-description: Recursos Experience Manager aprovecha Adobe Sensei para etiquetar recursos de vídeo de forma inteligente con palabras clave que describen elementos clave del vídeo, lo que permite descubrirlos fácilmente mediante la búsqueda de palabras clave por parte de los usuarios AEM.
-feature: smart-tags
-topics: metadata, search
-audience: all
-doc-type: feature-video
-activity: setup
+description: Experience Manager Assets aprovecha Adobe Sensei para etiquetar recursos de vídeo de forma inteligente con palabras clave que describen elementos clave del vídeo, lo que permite que los usuarios de AEM los descubran fácilmente mediante la búsqueda de palabras clave.
+feature: Etiquetas inteligentes
 version: cloud-service
 kt: 6445
 thumbnail: 327005.jpg
+topic: Administración de contenido
+role: Profesional empresarial
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 159e9d7ea363768f202db91a1d0555c2e57ebb13
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '73'
-ht-degree: 0%
+source-wordcount: '80'
+ht-degree: 5%
 
 ---
 
 
 # Etiquetas inteligentes de vídeo
 
-Recursos Experience Manager aprovecha Adobe Sensei para etiquetar recursos de vídeo de forma inteligente con palabras clave que describen elementos clave del vídeo, lo que permite descubrirlos fácilmente mediante la búsqueda de palabras clave por parte de los usuarios AEM.
+Experience Manager Assets aprovecha Adobe Sensei para etiquetar recursos de vídeo de forma inteligente con palabras clave que describen elementos clave del vídeo, lo que permite que los usuarios de AEM los descubran fácilmente mediante la búsqueda de palabras clave.
 
 >[!VIDEO](https://video.tv.adobe.com/v/327005/?quality=12&learn=on)
