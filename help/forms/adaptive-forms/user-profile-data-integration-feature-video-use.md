@@ -4,21 +4,18 @@ seo-title: Uso de la integración de datos de perfil de usuario con AEM Forms
 description: Integración de la información de perfil de usuario de AEM con los formularios adaptables
 seo-description: Integración de la información de perfil de usuario de AEM con los formularios adaptables
 uuid: c8cfe575-8732-4d8b-99de-fb09e7c2497d
-feature: Formularios adaptables
+feature: adaptive-forms, form-data-model
 topics: integrations
 audience: developer
 doc-type: feature video
 activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: ca01dfce-abab-4bc1-9c5e-3bafdbed4836
-topic: Desarrollo
-role: Desarrollador
-level: Principiante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '118'
-ht-degree: 3%
+source-wordcount: '115'
+ht-degree: 0%
 
 ---
 
