@@ -3,7 +3,7 @@ title: Estado de la tarea de traducción
 seo-title: Estado de la tarea de traducción
 description: Comprender los distintos estados asociados a un trabajo de traducción o a un elemento del trabajo.
 seo-description: Comprender los distintos estados asociados a un trabajo de traducción o a un elemento del trabajo.
-feature: language-copy, live-copy, multi-site-manager
+feature: Copia de idioma, administrador de varios sitios
 topics: localization, authoring, content-architecture
 audience: all
 doc-type: feature video
@@ -11,11 +11,14 @@ activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 5846
 thumbnail: 36685.jpg
+topic: Localización
+role: Profesional empresarial
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 309bed2f0c137bdd245c017cd1f94d7f6ca2d396
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '54'
-ht-degree: 16%
+source-wordcount: '63'
+ht-degree: 15%
 
 ---
 
