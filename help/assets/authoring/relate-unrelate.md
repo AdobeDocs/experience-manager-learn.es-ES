@@ -1,18 +1,18 @@
 ---
 title: Cómo relacionar y desrelacionar recursos en AEM
 description: Obtenga información sobre cómo establecer y administrar relaciones entre recursos en AEM.
-feature: Asset Management
-topics: Content Management
-role: Business Practitioner
-level: Beginner
+feature: Administración de activos
+role: Profesional empresarial
+level: Principiante
 version: cloud-service
 kt: 6969
 thumbnail: 331107.jpg
+topic: Administración de contenido
 translation-type: tm+mt
-source-git-commit: d89cd051f9fc8800d94ad11851ceaf4212f3c797
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '33'
-ht-degree: 0%
+source-wordcount: '40'
+ht-degree: 5%
 
 ---
 
