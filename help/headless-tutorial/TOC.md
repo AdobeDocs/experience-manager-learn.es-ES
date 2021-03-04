@@ -4,17 +4,18 @@ user-guide-description: Un tutorial completo que ilustra cómo crear y exponer c
 breadcrumb-title: Tutorial de AEM sin encabezado
 version: cloud-service
 sub-product: content-services
-audience: architect, developer, implementer
 doc-type: tutorial
+feature: fragmento de contenido, componentes principales
 topics: content-delivery
+audience: architect, developer, implementer
 activity: develop, understand
 kt: 2963
 index: y
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '105'
-ht-degree: 30%
+source-wordcount: '107'
+ht-degree: 29%
 
 ---
 
