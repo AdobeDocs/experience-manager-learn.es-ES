@@ -1,7 +1,7 @@
 ---
 title: Obtener parámetro de solicitud
-description: Acceso al parámetro de solicitud a un servicio de cumplimentación previa del modelo de datos de formulario
-feature: adaptive-forms
+description: Acceda al parámetro de solicitud al servicio de cumplimentación previa de un modelo de datos de formulario
+feature: Formularios adaptables
 topics: development
 audience: developer
 doc-type: article
@@ -9,11 +9,14 @@ activity: implement
 version: 6.4,6.5
 kt: 5815
 thumbnail: kt-5815.jpg
+topic: Desarrollo
+role: Desarrollador
+level: Principiante
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 0%
+source-wordcount: '184'
+ht-degree: 4%
 
 ---
 
@@ -21,20 +24,20 @@ ht-degree: 0%
 
 ## Obtener parámetro empID
 
-El siguiente paso es acceder al parámetro empID desde la dirección URL. El valor del parámetro de solicitud empID se pasa a la operación de servicio **_get_** del modelo de datos de formulario.
-Para este curso hemos creado y proporcionado lo siguiente
+El siguiente paso es acceder al parámetro empID desde la dirección URL. El valor del parámetro de solicitud empID se pasa entonces a la operación de servicio **_get_** del modelo de datos de formulario.
+A los efectos de este curso hemos creado y proporcionado lo siguiente
 
-* Plantilla de formulario adaptable llamada **_FDMDemo_**
+* Plantilla de formulario adaptable denominada **_FDMDemo_**
 * Componente de página llamado **_fdmdemo_**
-* Se ha incluido nuestro jsp personalizado con el componente de página
-* Se asoció la plantilla de formulario adaptable al componente de página
+* Incluido nuestro jsp personalizado con el componente de página
+* Se ha asociado la plantilla de formulario adaptable al componente de página
 
-Al hacer esto, nuestro código en el jsp personalizado solo se ejecutará cuando se procese un formulario adaptable basado en esta plantilla personalizada
+Al hacer esto, nuestro código en el jsp personalizado solo se ejecuta cuando se procesa el formulario adaptable basado en esta plantilla personalizada
 
 * [Importar el ](assets/template-page-component.zip) paquete mediante el administrador de  [paquetes](http://localhost:4502/crx/packmgr/index.jsp)
-* [Abrir fdmrequest.jsp](http://localhost:4502/crx/de/index.jsp#/apps/fdmdemo/component/page/fdmdemo/fdmrequest.jsp)
-* Quite los comentarios de las líneas comentadas.
-* Guardar los cambios
+* [Abra fdmrequest.jsp](http://localhost:4502/crx/de/index.jsp#/apps/fdmdemo/component/page/fdmdemo/fdmrequest.jsp)
+* Descomente las líneas comentadas.
+* Guarde los cambios
 
 ```java
 if(request.getParameter("empID")!=null)
@@ -50,4 +53,4 @@ El valor de empID está asociado con la clave denominada empID en paraMap. Este 
 
 >[!NOTE]
 >
->La clave empID debe coincidir con el valor de enlace de todas las entidades que obtienen el servicio
+>La clave empID debe coincidir con el valor de enlace de las entidades nuevas que obtienen el servicio
