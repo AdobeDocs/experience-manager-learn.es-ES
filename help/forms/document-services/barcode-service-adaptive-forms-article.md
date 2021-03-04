@@ -1,8 +1,8 @@
 ---
-title: Servicio de códigos de barras con Forms adaptable
-seo-title: Servicio de códigos de barras con Forms adaptable
-description: Uso del servicio de código de barras para descodificar el código de barras y rellenar los campos de formulario de los datos extraídos
-seo-description: Uso del servicio de código de barras para descodificar el código de barras y rellenar los campos de formulario de los datos extraídos
+title: Servicio De Código De Barras Con Formularios Adaptables
+seo-title: Servicio De Código De Barras Con Formularios Adaptables
+description: Uso del servicio de código de barras para descodificar código de barras y rellenar campos de formulario de los datos extraídos
+seo-description: Uso del servicio de código de barras para descodificar código de barras y rellenar campos de formulario de los datos extraídos
 uuid: 42568b81-cbcd-479e-8d9a-cc0b244da4ae
 feature: barcoded-forms
 topics: development
@@ -11,25 +11,28 @@ doc-type: article
 activity: implement
 version: 6.4,6.5
 discoiquuid: 1224de6d-7ca1-4e9d-85fe-cd675d03e262
+topic: Desarrollo
+role: Desarrollador
+level: Intermedio
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
 
 
-# Servicio de códigos de barras con Forms adaptable{#barcode-service-with-adaptive-forms}
+# Servicio de códigos de barras con formularios adaptables{#barcode-service-with-adaptive-forms}
 
-Este artículo mostrará el uso del servicio de códigos de barras para rellenar el formulario adaptable. El caso de uso es el siguiente:
+Este artículo muestra el uso del servicio de códigos de barras para rellenar el formulario adaptable. El caso de uso es el siguiente:
 
-1. El usuario agrega archivos PDF con código de barras como datos adjuntos de formulario adaptable
-1. La ruta del accesorio se envía al servlet
+1. El usuario agrega PDF con código de barras como archivo adjunto de formulario adaptable
+1. La ruta del archivo adjunto se envía al servlet
 1. El servlet descodificó el código de barras y devuelve los datos en formato JSON
-1. A continuación, el formulario adaptable se rellena con los datos descodificados
+1. A continuación, el formulario adaptable se rellena con los datos decodificados
 
-El código siguiente descodifica el código de barras y rellena un objeto JSON con los valores descodificados. A continuación, el servlet devuelve el objeto JSON en su respuesta a la aplicación que realiza la llamada.
+El siguiente código descodifica el código de barras y rellena un objeto JSON con los valores descodificados. A continuación, el servlet devuelve el objeto JSON en su respuesta a la aplicación que realiza la llamada.
 
 Puede ver esta capacidad en vivo, visite el [portal de muestras](https://forms.enablementadobe.com/content/samples/samples.html?query=0) y busque la demostración del servicio de códigos de barras
 
@@ -101,7 +104,7 @@ public class DecodeBarCode extends SlingSafeMethodsServlet {
 }
 ```
 
-El siguiente código forma parte de la biblioteca de clientes a la que hace referencia el formulario adaptable. Cuando un usuario agrega los datos adjuntos al formulario adaptable, se activará este código. El código realiza una llamada de GET al servlet con la ruta del adjunto pasada en el parámetro de solicitud. Los datos recibidos de la llamada al servlet se utilizan para rellenar el formulario adaptable.
+El siguiente código forma parte de la biblioteca de cliente a la que hace referencia el formulario adaptable. Cuando un usuario agrega el archivo adjunto al formulario adaptable, se activa este código. El código realiza una llamada GET al servlet con la ruta del archivo adjunto pasada en el parámetro de solicitud. Los datos recibidos de la llamada al servlet se utilizan para rellenar el formulario adaptable.
 
 ```
 $(document).ready(function()
@@ -138,19 +141,19 @@ $(document).ready(function()
 
 >[!NOTE]
 >
->El formulario adaptable incluido en este paquete se creó con AEM Forms 6.4. Si tiene intención de utilizar este paquete en AEM Forms 6.3 entorno, cree el formulario adaptable en AEM formulario 6.3
+>El formulario adaptable incluido en este paquete se creó con AEM Forms 6.4. Si desea utilizar este paquete en el entorno de AEM Forms 6.3, cree el formulario adaptable en AEM Forms 6.3
 
-Línea 12: código personalizado para obtener la resolución del servicio. Este paquete se incluye como parte de los recursos de este artículo.
+Línea 12: Custom Code para obtener la resolución del servicio. Este paquete se incluye como parte de los recursos de este artículo.
 
-Línea 23 - Llame al método extractBarCode de DocumentServices para que el objeto JSON se rellene con datos descodificados
+Línea 23 - Llame al método extractBarCode de DocumentServices para obtener el objeto JSON rellenado con datos decodificados
 
-Para que esto se ejecute en el sistema, siga los pasos siguientes
+Para que esto se ejecute en su sistema, siga los siguientes pasos
 
 1. [Descargue BarcodeService.](assets/barcodeservice.zip) zipand import en AEM mediante el administrador de paquetes
-1. [Descargar e instalar el paquete personalizado de Document Services](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
+1. [Descargar e instalar el paquete de servicios de documentos personalizados](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 1. [Descargar e instalar el paquete DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 1. [Descargar el formulario PDF de ejemplo](assets/barcode.pdf)
-1. Apunte el explorador al [formulario adaptable de ejemplo](http://localhost:4502/content/dam/formsanddocuments/barcodedemo/jcr:content?wcmmode=disabled)
-1. Cargar el PDF de muestra proporcionado
-1. Debe ver los formularios rellenados con los datos
+1. Apunte el navegador al [formulario adaptable de ejemplo](http://localhost:4502/content/dam/formsanddocuments/barcodedemo/jcr:content?wcmmode=disabled)
+1. Cargue el PDF de muestra proporcionado
+1. Debería ver los formularios rellenados con los datos
 
