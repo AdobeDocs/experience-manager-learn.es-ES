@@ -1,19 +1,22 @@
 ---
-title: AEM Forms con Esquema y datos JSON[Parte 4]
-seo-title: AEM Forms con Esquema y datos JSON[Parte 4]
+title: AEM Forms con esquema JSON y datos[Part4]
+seo-title: AEM Forms con esquema JSON y datos[Part4]
 description: Tutorial de varias partes para guiarle por los pasos necesarios para crear un formulario adaptable con esquema JSON y consultar los datos enviados.
 seo-description: Tutorial de varias partes para guiarle por los pasos necesarios para crear un formulario adaptable con esquema JSON y consultar los datos enviados.
-feature: adaptive-forms
+feature: Formularios adaptables
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.3,6.4,6.5
+topic: Desarrollo
+role: Desarrollador
+level: Con experiencia
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 0%
+source-wordcount: '480'
+ht-degree: 1%
 
 ---
 
@@ -21,15 +24,15 @@ ht-degree: 0%
 # Consulta de datos enviados
 
 
-El siguiente paso es la consulta de los datos enviados y la visualización de los resultados en forma de tabla. Para lograrlo, usaremos el siguiente software
+El siguiente paso es consultar los datos enviados y mostrar los resultados en forma de tabla. Para lograrlo, utilizaremos el siguiente software
 
 [QueryBuilder](https://querybuilder.js.org/) : componente de interfaz de usuario para crear consultas
 
-[Tablas](https://datatables.net/) de datos: para mostrar los resultados de la consulta en forma de tabla.
+[Tablas de datos](https://datatables.net/): para mostrar los resultados de la consulta de forma tabular.
 
-Se ha creado la siguiente interfaz de usuario para permitir la consulta de los datos enviados. Sólo los elementos marcados como obligatorios en el esquema JSON están disponibles para la consulta. En la captura de pantalla de abajo, estamos consultando todas las presentaciones donde el proveedor es SMS.
+La siguiente interfaz de usuario se creó para permitir la consulta de los datos enviados. Solo los elementos marcados como requeridos en el esquema JSON están disponibles para realizar consultas con. En la captura de pantalla de abajo, estamos consultando todos los envíos donde delivery pref es SMS.
 
-La interfaz de usuario de ejemplo para la consulta de los datos enviados no utiliza todas las funciones avanzadas disponibles en QueryBuilder. Se te anima a probarlos por tu cuenta.
+La interfaz de usuario de ejemplo para consultar los datos enviados no utiliza todas las capacidades avanzadas disponibles en QueryBuilder. Se le recomienda que los pruebe por su cuenta.
 
 ![querybuilder](assets/querybuilderui.gif)
 
@@ -37,7 +40,7 @@ La interfaz de usuario de ejemplo para la consulta de los datos enviados no util
 >
 >La versión actual de este tutorial no admite la consulta de varias columnas.
 
-Al seleccionar un formulario para realizar la consulta, se realiza una llamada de GET a **/bin/getdatakeysfromschema**. Esta llamada de GET devuelve los campos requeridos asociados con el esquema de los formularios. A continuación, los campos obligatorios se rellenan en la lista desplegable de QueryBuilder para que pueda crear la consulta.
+Cuando selecciona un formulario para realizar la consulta, se realiza una llamada GET a **/bin/getdatakeysfromschema**. Esta llamada GET devuelve los campos obligatorios asociados al esquema de los formularios. A continuación, los campos obligatorios se rellenan en la lista desplegable de QueryBuilder para que usted pueda crear la consulta.
 
 El siguiente fragmento de código realiza una llamada al método getRequiredColumnsFromSchema del servicio JSONSchemaOperations. Pasamos las propiedades y los elementos requeridos del esquema a esta llamada de método. La matriz devuelta por esta llamada de función se utiliza para rellenar la lista desplegable del generador de consultas
 
@@ -62,19 +65,19 @@ public JSONArray getData(String formName) throws SQLException, IOException {
  }
 ```
 
-Cuando se hace clic en el botón GetResult, se realiza una llamada Get a **&quot;/bin/querydata&quot;**. Pasamos la consulta generada por la interfaz de usuario de QueryBuilder al servlet a través del parámetro de consulta. A continuación, el servlet analiza esta consulta en consulta SQL que se puede utilizar para la consulta de la base de datos. Por ejemplo, si busca recuperar todos los productos con el nombre &#39;Mouse&#39;, la cadena de consulta del Generador de Consultas será $.productname = &#39;Mouse&#39;. Esta consulta se convertirá a continuación
+Cuando se hace clic en el botón GetResult, se realiza una llamada Get a **&quot;/bin/querydata&quot;**. Pasamos la consulta generada por la interfaz de usuario de QueryBuilder al servlet a través del parámetro de consulta . A continuación, el servlet analiza esta consulta en consulta SQL que se puede utilizar para consultar la base de datos. Por ejemplo, si está buscando recuperar todos los productos llamados &quot;Mouse&quot;, la cadena de consulta de Query Builder será $.productname = &quot;Mouse&quot;. Esta consulta se convierte a continuación
 
-SELECT * de aemformswithjson .  formularios de envíos en los que JSON_EXTRACT( para envíos .formdata,&quot;$.productName &quot;)= &#39;Mouse&#39;
+SELECCIONE * en aemformswithjson .  envíos de formularios en los que JSON_EXTRACT( para envíos .formdata,&quot;$.productName &quot;)= &#39;Mouse&#39;
 
-A continuación, se devuelve el resultado de esta consulta para rellenar la tabla en la interfaz de usuario.
+A continuación, se devuelve el resultado de esta consulta para rellenar la tabla en la interfaz de usuario de .
 
-Para que este ejemplo se ejecute en el sistema local, realice los siguientes pasos
+Para que este ejemplo se ejecute en su sistema local, realice los siguientes pasos
 
 1. [Asegúrese de haber seguido todos los pasos mencionados aquí](part2.md)
-1. [Importe Dashboardv2.zip mediante AEM Administrador de paquetes.](assets/dashboardv2.zip) Este paquete contiene todos los paquetes necesarios, la configuración, el envío personalizado y la página de muestra para los datos de consulta.
-1. Creación de un formulario adaptable mediante el esquema json de ejemplo
-1. Configure el formulario adaptable para que se envíe a la acción de envío personalizado &quot;custom submithelpx&quot;
+1. [Importe Dashboardv2.zip mediante el Administrador de paquetes AEM.](assets/dashboardv2.zip) Este paquete contiene todos los paquetes, configuraciones, envíos personalizados y páginas de muestra necesarios para consultar los datos.
+1. Creación de un formulario adaptable utilizando el esquema json de ejemplo
+1. Configurar el formulario adaptable para enviar a la acción de envío personalizada &quot;customsubmithelpx&quot;
 1. Rellene el formulario y envíe
-1. Seleccione el explorador para [panel.html](http://localhost:4502/content/AemForms/dashboard.html)
+1. Apunte el navegador a [dashboard.html](http://localhost:4502/content/AemForms/dashboard.html)
 1. Seleccione el formulario y realice una consulta sencilla
 
