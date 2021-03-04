@@ -1,14 +1,10 @@
 ---
 title: Capítulo 6 - Exposición del contenido en AEM Publish como JSON - Servicios de contenido
 description: El capítulo 6 del tutorial sin encabezado de AEM cubre cómo garantizar que todos los paquetes, la configuración y el contenido necesarios estén en AEM Publish para permitir el consumo desde la aplicación móvil.
-feature: '"Fragmentos de contenido, API"'
-topic: '"Sin encabezado, administración de contenido"'
-role: Desarrollador
-level: Principiante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
