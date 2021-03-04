@@ -1,24 +1,27 @@
 ---
 title: Almacenamiento y recuperación de datos de formulario de la base de datos MySQL
 description: Tutorial de varias partes para guiarle por los pasos necesarios para almacenar y recuperar datos de formulario
-feature: adaptive-forms
+feature: Formularios adaptables
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.3,6.4,6.5
+topic: Desarrollo
+role: Desarrollador
+level: Con experiencia
 translation-type: tm+mt
-source-git-commit: 787a79663472711b78d467977d633e3d410803e5
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '91'
-ht-degree: 0%
+source-wordcount: '96'
+ht-degree: 4%
 
 ---
 
 
 # Servlet para almacenar datos de formulario
 
-El paso siguiente es crear un servlet que insertará o actualizará los datos del formulario. El servlet llama a los métodos adecuados del servicio OSGi para insertar o actualizar la base de datos. Los datos almacenados del formulario adaptable están asociados a un GUID. A continuación, se utiliza el mismo GUID para actualizar los datos del formulario. Se llamará a este servlet cuando se haga clic en el botón &quot;SaveAndContinueLater&quot;.
+El siguiente paso es crear un servlet que inserte o actualice los datos del formulario. El servlet llama a los métodos adecuados del servicio OSGi para insertar o actualizar la base de datos. Los datos del formulario adaptable almacenado están asociados a un GUID. A continuación, se utiliza el mismo GUID para actualizar los datos del formulario. Se llamará a este servlet cuando se haga clic en el botón &quot;SaveAndContinueLater&quot;.
 
 ```java
 package com.aemforms.saveandcontinue.core.servlets;
