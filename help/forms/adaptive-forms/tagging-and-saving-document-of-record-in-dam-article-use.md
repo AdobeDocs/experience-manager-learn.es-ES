@@ -4,17 +4,20 @@ seo-title: Etiquetado y almacenamiento de AEM Forms DoR en DAM
 description: Este artículo tratará el caso de uso de almacenar y etiquetar el DoR generado por AEM Forms en AEM DAM. El etiquetado del documento se realiza en función de los datos de formulario enviados.
 seo-description: Este artículo tratará el caso de uso de almacenar y etiquetar el DoR generado por AEM Forms en AEM DAM. El etiquetado del documento se realiza en función de los datos de formulario enviados.
 uuid: b9ba13ed-52d5-4389-a7d5-bf85e58fea49
-feature: formularios adaptables,flujo de trabajo
+feature: Formularios adaptables,Flujo de trabajo
 topics: developing
 audience: implementer
 doc-type: article
 activity: develop
 version: 6.4,6.5
 discoiquuid: 53961454-633b-4cd8-aef7-e64ab4e528e4
+topic: Desarrollo
+role: Desarrollador
+level: Con experiencia
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '661'
 ht-degree: 0%
 
 ---
