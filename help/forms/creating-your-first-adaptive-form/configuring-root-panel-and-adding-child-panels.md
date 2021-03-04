@@ -4,7 +4,7 @@ seo-title: Adición de paneles secundarios al panel raíz
 description: Configuración del diseño del panel raíz en "Tabs on Left" (Tabulaciones a la izquierda) y adición de paneles secundarios al panel raíz.
 seo-description: Configuración del diseño del panel raíz en "Tabs on Left" (Tabulaciones a la izquierda) y adición de paneles secundarios al panel raíz.
 uuid: ef9f7c02-ead8-4f96-aabd-40d586127aa7
-feature: Formularios adaptables
+feature: formularios adaptables
 topics: authoring
 audience: developer
 doc-type: tutorial
@@ -13,14 +13,11 @@ version: 6.4,6.5
 discoiquuid: e748b7c3-99c9-4caa-98b1-4433046c24b8
 thumbnail: 28536.jpg
 kt: 4209
-topic: Desarrollo
-role: Desarrollador
-level: Principiante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '85'
-ht-degree: 4%
+source-wordcount: '81'
+ht-degree: 0%
 
 ---
 
