@@ -1,65 +1,68 @@
 ---
-title: Uso del paso de envío de correo electrónico del Forms Workflow
-seo-title: Uso del paso de envío de correo electrónico del Forms Workflow
-description: El paso Enviar correo electrónico se introdujo en AEM Forms 6.4. Con este paso podemos crear procesos de negocio o flujo de trabajo que le permitirán enviar correos electrónicos con o sin datos adjuntos. El siguiente vídeo recorre los pasos para configurar el componente de envío de correo electrónico
-seo-description: El paso Enviar correo electrónico se introdujo en AEM Forms 6.4. Con este paso podemos crear procesos de negocio o flujo de trabajo que le permitirán enviar correos electrónicos con o sin datos adjuntos. El siguiente vídeo recorre los pasos para configurar el componente de envío de correo electrónico
+title: Uso del flujo de trabajo Enviar paso de correo electrónico de Forms
+seo-title: Uso del flujo de trabajo Enviar paso de correo electrónico de Forms
+description: El paso Enviar correo electrónico se ha introducido en AEM Forms 6.4. Con este paso, podemos crear procesos o flujos de trabajo empresariales que le permitan enviar correos electrónicos con o sin archivos adjuntos. El siguiente vídeo muestra los pasos para configurar el componente de envío de correo electrónico
+seo-description: El paso Enviar correo electrónico se ha introducido en AEM Forms 6.4. Con este paso, podemos crear procesos o flujos de trabajo empresariales que le permitan enviar correos electrónicos con o sin archivos adjuntos. El siguiente vídeo muestra los pasos para configurar el componente de envío de correo electrónico
 uuid: d054ebfb-3b9b-4ca4-8355-0eb0ee7febcb
-feature: workflow
+feature: Flujo de trabajo
 topics: integrations
 audience: developer
 doc-type: technical video
 activity: setup
 version: 6.4,6.5
 discoiquuid: 3a11f602-2f4c-423a-baef-28824c0325a1
+topic: Desarrollo
+role: Desarrollador
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
 
 
-# Uso del paso de envío de correo electrónico del Forms Workflow {#using-send-email-step-of-forms-workflow}
+# Uso del paso de envío de correo electrónico del flujo de trabajo de formularios {#using-send-email-step-of-forms-workflow}
 
-El paso Enviar correo electrónico se introdujo en AEM Forms 6.4. Con este paso podemos crear procesos de negocio o flujo de trabajo que le permitirán enviar correos electrónicos con o sin datos adjuntos. El siguiente vídeo muestra los pasos para configurar el componente de envío de correo electrónico.
+El paso Enviar correo electrónico se ha introducido en AEM Forms 6.4. Con este paso, podemos crear procesos o flujos de trabajo empresariales que le permitan enviar correos electrónicos con o sin archivos adjuntos. El siguiente vídeo muestra los pasos para configurar el componente de envío de correo electrónico.
 
 >[!VIDEO](https://video.tv.adobe.com/v/21499/?quality=9&learn=on)
 
 Como parte de este artículo, le explicaremos el siguiente caso de uso:
 
 1. Un usuario rellena el formulario de solicitud de tiempo de espera
-1. Al enviar el formulario, se activa AEM flujo de trabajo
-1. El flujo de trabajo AEM utiliza el componente Enviar correo electrónico para enviar un correo electrónico con el documento de trabajo como datos adjuntos
+1. Al enviar el formulario, se activa el flujo de trabajo de AEM
+1. El flujo de trabajo de AEM utiliza el componente Enviar correo electrónico para enviar un correo electrónico con el DoR como archivo adjunto
 
-Antes de usar el paso Enviar correo electrónico, asegúrese de configurar el servicio de correo de CQ de día desde [configMgr](http://localhost:4502/system/console/configMgr). Proporcione los valores específicos del entorno
+Antes de utilizar el paso Enviar correo electrónico, asegúrese de configurar el servicio de correo de CQ Day desde [configMgr](http://localhost:4502/system/console/configMgr). Proporcione los valores específicos de su entorno
 
-![Configurar el servicio de correo CQ Day](assets/mailservice.png)
+![Configurar el servicio Day CQ Mail](assets/mailservice.png)
 
-Como parte de los recursos asociados con este artículo, obtendrá lo siguiente
+Como parte de los recursos asociados con este artículo, recibirá lo siguiente
 
-1. Formulario adaptable que déclencheur el flujo de trabajo en el envío
-1. Flujo de trabajo de muestra que enviará un correo electrónico con el DOR como archivo adjunto
+1. Formulario adaptable que activará el flujo de trabajo en el envío
+1. Flujo de trabajo de muestra que enviará un correo electrónico con DOR como archivo adjunto
 1. Paquete OSGi que crea las propiedades de metadatos
 
-Para que la muestra se ejecute en el sistema, haga lo siguiente:
+Para que la muestra se ejecute en su sistema, haga lo siguiente:
 
-1. [Implementar el paquete DevelopmentWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+1. [Implementar el paquete de usuario Desarrollo con servicio](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-1. [Descargar e instalar el ](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)paquete setvalueEste paquete contiene el código para crear las propiedades de metadatos como parte del paso de proceso del flujo de trabajo.
-1. [Configurar el servicio de correo CQ Day](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html)
-1. [Importar e instalar los recursos asociados con este artículo mediante el administrador de paquetes en CRX](assets/emaildoraemformskt.zip)
-1. Inicie el [formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled). Rellene los campos obligatorios y envíe.
+1. [Descargar e instalar el ](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)paquete setvalueEste paquete contiene el código para crear las propiedades de los metadatos como parte del paso de proceso del flujo de trabajo.
+1. [Configurar el servicio Day CQ Mail](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html)
+1. [Importe e instale los activos asociados con este artículo mediante el administrador de paquetes en CRX](assets/emaildoraemformskt.zip)
+1. Inicie el [formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled). Complete los campos obligatorios y envíe.
 1. Debe obtener un correo electrónico con DocumentOfRecord como archivo adjunto
 
-Explore el [modelo de flujo de trabajo](http://localhost:4502/editor.html/conf/global/settings/workflow/models/emaildor.html)
+Explorar el [modelo de flujo de trabajo](http://localhost:4502/editor.html/conf/global/settings/workflow/models/emaildor.html)
 
-Observe el paso del proceso del flujo de trabajo. El código personalizado asociado con el paso del proceso creará nombres de propiedades de metadatos y establecerá sus valores a partir de los datos enviados. Estos valores se utilizarán posteriormente en el componente de envío de correo electrónico.
+Eche un vistazo al paso del proceso del flujo de trabajo. El código personalizado asociado con el paso de proceso crea nombres de propiedades de metadatos y establece sus valores a partir de los datos enviados. Estos valores los utiliza el componente de envío de correo electrónico.
 
 >[!NOTE]
 >
->En AEM Forms 6.5 y versiones posteriores no necesita este código personalizado para crear propiedades de metadatos. Utilice la capacidad de variables en AEM flujo de trabajo
+>En AEM Forms 6.5 y posteriores no necesita este código personalizado para crear propiedades de metadatos. Utilice la capacidad de variables en el flujo de trabajo de AEM
 
-Asegúrese de que la ficha Datos adjuntos del componente Enviar correo electrónico esté configurada según la captura de pantalla siguiente
-![Ficha Enviar archivo adjunto de correo electrónico](assets/sendemailcomponentconfigure.jpg)El valor &quot;DOR.pdf&quot; debe coincidir con el valor especificado en el Documento de ruta de registro especificado en las opciones de envío del formulario adaptable.
+Asegúrese de que la pestaña Attachments del componente Send Email esté configurada según la captura de pantalla siguiente
+![Send Email Attachment Tab](assets/sendemailcomponentconfigure.jpg)El valor &quot;DOR.pdf&quot; debe coincidir con el valor especificado en la ruta de registro del documento especificada en las opciones de envío del formulario adaptable.
 
