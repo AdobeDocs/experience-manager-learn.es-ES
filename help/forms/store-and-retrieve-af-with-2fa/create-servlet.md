@@ -1,7 +1,7 @@
 ---
 title: Crear servlet
-description: Crear servlet para gestionar las solicitudes de POST para guardar los datos del formulario
-feature: adaptive-forms
+description: Cree un servlet para gestionar las solicitudes POST y guardar los datos del formulario
+feature: Formularios adaptables
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,17 +9,20 @@ activity: implement
 version: 6.4,6.5
 kt: 6539
 thumbnail: 6539.pg
+topic: Desarrollo
+role: Desarrollador
+level: Con experiencia
 translation-type: tm+mt
-source-git-commit: 9d4e864f42fa6c0b2f9b895257db03311269ce2e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '83'
-ht-degree: 0%
+source-wordcount: '88'
+ht-degree: 4%
 
 ---
 
 # Crear servlet
 
-El próximo paso es crear un servlet que llame a los métodos adecuados de nuestro servicio OSGi personalizado. El servlet tiene acceso a los datos del formulario adaptable y a la información de archivos adjuntos. El servlet devolverá un identificador de aplicación único que se puede utilizar para recuperar el formulario adaptable parcialmente completado.
+El siguiente paso es crear un servlet que llame a los métodos adecuados de nuestro servicio OSGi personalizado. El servlet tiene acceso a los datos del formulario adaptable y a la información de archivos adjuntos. El servlet devolverá un identificador de aplicación único que se puede utilizar para recuperar el formulario adaptable parcialmente completado.
 
 Este servlet se invocará cuando el usuario haga clic en el botón Guardar y salir del formulario adaptable
 
