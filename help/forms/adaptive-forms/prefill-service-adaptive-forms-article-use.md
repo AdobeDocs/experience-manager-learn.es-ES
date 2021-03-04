@@ -4,7 +4,7 @@ seo-title: Servicio de relleno previo en formularios adaptables
 description: Rellenar previamente formularios adaptables recuperando datos de orígenes de datos back-end.
 seo-description: Rellenar previamente formularios adaptables recuperando datos de orígenes de datos back-end.
 sub-product: formularios
-feature: formularios adaptables
+feature: Formularios adaptables
 topics: integrations
 audience: developer
 doc-type: article
@@ -12,18 +12,21 @@ activity: implement
 version: 6.4,6.5
 uuid: 26a8cba3-7921-4cbb-a182-216064e98054
 discoiquuid: 936ea5e9-f5f0-496a-9188-1a8ffd235ee5
+topic: Desarrollo
+role: Desarrollador
+level: Intermedio
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 0%
+source-wordcount: '483'
+ht-degree: 1%
 
 ---
 
 
 # Uso del servicio de relleno previo en formularios adaptables
 
-Puede rellenar previamente los campos de un formulario adaptable utilizando los datos existentes. Cuando un usuario abre un formulario, los valores de esos campos se rellenan previamente. Existen varias formas de rellenar previamente los campos de formularios adaptables. En este artículo, analizaremos el prefijo del formulario adaptable mediante el servicio de prerellenado de AEM Forms.
+Puede rellenar previamente los campos de un formulario adaptable utilizando los datos existentes. Cuando un usuario abre un formulario, los valores de esos campos se rellenan previamente. Existen varias formas de rellenar previamente los campos de formularios adaptables. En este artículo, analizaremos el prefijo del formulario adaptable mediante el servicio de cumplimentación previa de AEM Forms.
 
 Para obtener más información sobre los distintos métodos para rellenar previamente formularios adaptables, [siga esta documentación](https://helpx.adobe.com/experience-manager/6-4/forms/using/prepopulate-adaptive-form-fields.html#AEMFormsprefillservice)
 
