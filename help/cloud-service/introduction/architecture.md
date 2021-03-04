@@ -1,23 +1,23 @@
 ---
 title: Arquitectura de AEM as a Cloud Service
-description: Explore la arquitectura subyacente y partes importantes de AEM como Cloud Service. Influye profundamente en el Administrador de nube y en las API.
-role: Architect
-level: Beginner
+description: Explore la arquitectura subyacente y partes importantes de AEM as a Cloud Service. Inmersa profundamente en Cloud Manager y las API.
+role: Arquitecto, Desarrollador
+level: Principiante
 type: Tutorial
-topic: Architecture
+topic: Arquitectura
 kt: 6919
 thumbnail: 330542.jpg
 translation-type: tm+mt
-source-git-commit: 5ac82928d4b0bf75b348a414793c24c3aca92f36
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '56'
-ht-degree: 25%
+source-wordcount: '61'
+ht-degree: 26%
 
 ---
 
 
 # Arquitectura de AEM as a Cloud Service
 
-Explore la arquitectura subyacente y partes importantes de AEM como Cloud Service. Influye profundamente en el Administrador de nube y en las API.
+Explore la arquitectura subyacente y partes importantes de AEM as a Cloud Service. Inmersa profundamente en Cloud Manager y las API.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330542/?quality=12&learn=on)
