@@ -1,18 +1,21 @@
 ---
 title: SMS Dos factores de autenticación
 description: Agregue una capa adicional de seguridad para ayudar a confirmar la identidad de un usuario cuando desee realizar determinadas actividades
-feature: integraciones
+feature: Formularios adaptables
 topics: adaptive forms
 audience: developer
 doc-type: article
 activity: use
 version: 6.4,6.5
 kt: 6317
+topic: Desarrollo
+role: Desarrollador
+level: Con experiencia
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 1%
+source-wordcount: '608'
+ht-degree: 2%
 
 ---
 
