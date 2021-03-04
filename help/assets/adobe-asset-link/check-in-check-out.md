@@ -1,25 +1,25 @@
 ---
-title: Cierre de compra
-description: Adobe Asset Link le permite extraer AEM Assets directamente de la aplicación creativa en la que está trabajando y puede empezar a realizar modificaciones inmediatamente. Puede volver a registrar los recursos en AEM Assets fácilmente con las versiones y comentarios adecuados una vez que haya terminado de editarlos en la aplicación Creative Cloud.
+title: Extracción y registro
+description: Adobe Asset Link le permite extraer AEM Assets directamente de la aplicación creativa en la que está trabajando y puede empezar a realizar ediciones inmediatamente. Puede volver a registrar recursos fácilmente en AEM Assets con el control de versiones y comentarios adecuados una vez que haya terminado de editarlos en la aplicación de Creative Cloud.
 sub-product: activos
-feature: adobe-asset-link
-topics: authoring, collaboration, operations, sharing, metadata, images, operations
-audience: all
-doc-type: feature video
-activity: use
-version: null
+feature: Adobe Asset Link
+version: 6.4, 6.5, cloud-service
+kt: 4910
 thumbnail: 33886.jpg
+topic: Administración de contenido
+role: Profesional empresarial
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '104'
-ht-degree: 0%
+source-wordcount: '112'
+ht-degree: 4%
 
 ---
 
 
-# Registro de entrada y salida {#check-in-check-out}
+# Extracción y registro {#check-in-check-out}
 
-Adobe Asset le permite extraer AEM Assets directamente de la aplicación creativa en la que está trabajando y puede empezar a realizar modificaciones inmediatamente. Puede volver a registrar los recursos en AEM Assets fácilmente con las versiones y comentarios adecuados una vez que haya terminado de editarlos en la aplicación Creative Cloud.
+Adobe Asset le permite extraer AEM Assets directamente de la aplicación creativa en la que está trabajando y puede empezar a realizar ediciones inmediatamente. Puede volver a registrar recursos fácilmente en AEM Assets con el control de versiones y comentarios adecuados una vez que haya terminado de editarlos en la aplicación de Creative Cloud.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33886/?quality=12)
