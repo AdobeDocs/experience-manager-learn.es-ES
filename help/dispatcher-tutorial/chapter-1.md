@@ -1,12 +1,14 @@
 ---
-title: Capítulo 1 - Configuración y descargas del tutorial
-seo-title: Introducción a los servicios de contenido de AEM - Capítulo 1 - Configuración de tutoriales
-description: Capítulo 1 del tutorial AEM Headless en la configuración de línea de base de la instancia AEM para el tutorial.
-seo-description: Capítulo 1 del tutorial AEM Headless en la configuración de línea de base de la instancia AEM para el tutorial.
+title: '"Capítulo 1 - Conceptos, patrones y antipatrones de Dispatcher"'
+description: Este capítulo ofrece una breve introducción sobre el historial y la mecánica de Dispatcher y explica cómo esto influye en cómo un desarrollador de AEM diseñaría sus componentes.
+feature: Dispatcher
+topic: Arquitectura
+role: Arquitecto
+level: Principiante
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '17502'
+source-wordcount: '17489'
 ht-degree: 0%
 
 ---
