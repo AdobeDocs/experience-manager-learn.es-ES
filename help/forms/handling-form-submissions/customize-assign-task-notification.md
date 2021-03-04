@@ -1,8 +1,8 @@
 ---
-title: Personalizar notificación de asignación de Tarea
-description: Incluir datos de formulario en los mensajes de correo electrónico de notificación de tarea de asignación
+title: Personalizar notificación para asignar tareas
+description: Incluir datos de formulario en los mensajes de correo electrónico de notificación de tareas asignadas
 sub-product: formularios
-feature: workflow
+feature: Flujo de trabajo
 topics: integrations
 audience: developer
 doc-type: article
@@ -10,20 +10,23 @@ activity: setup
 version: 6.4,6.5
 kt: 6279
 thumbnail: KT-6279.jpg
+topic: Desarrollo
+role: Desarrollador
+level: Con experiencia
 translation-type: tm+mt
-source-git-commit: c7ae9a51800bb96de24ad577863989053d53da6b
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 0%
+source-wordcount: '450'
+ht-degree: 2%
 
 ---
 
 
-# Personalizar notificación de asignación de Tarea
+# Personalizar notificación para asignar tareas
 
-El componente Asignar Tarea se utiliza para asignar tareas a los participantes del flujo de trabajo. Cuando se asigna una tarea a un usuario o grupo, se envía una notificación por correo electrónico a los usuarios o miembros del grupo definidos.
-Esta notificación por correo electrónico generalmente contendrá datos dinámicos relacionados con la tarea. Estos datos dinámicos se recuperan mediante las propiedades de metadatos [generadas por el sistema](https://docs.adobe.com/content/help/en/experience-manager-65/forms/publish-process-aem-forms/use-metadata-in-email-notifications.html#using-system-generated-metadata-in-an-email-notification).
-Para incluir valores de los datos de formulario enviados en la notificación por correo electrónico, es necesario crear una propiedad de metadatos personalizada y, a continuación, utilizar estas propiedades de metadatos personalizados en la plantilla de correo electrónico
+El componente Asignar tarea se utiliza para asignar tareas a los participantes del flujo de trabajo. Cuando se asigna una tarea a un usuario o grupo, se envía una notificación por correo electrónico a los miembros definidos del usuario o grupo.
+Esta notificación por correo electrónico generalmente contiene datos dinámicos relacionados con la tarea. Estos datos dinámicos se recuperan usando las [propiedades de metadatos](https://docs.adobe.com/content/help/en/experience-manager-65/forms/publish-process-aem-forms/use-metadata-in-email-notifications.html#using-system-generated-metadata-in-an-email-notification) generadas por el sistema.
+Para incluir valores de los datos del formulario enviados en la notificación por correo electrónico, es necesario crear una propiedad de metadatos personalizada y, a continuación, utilizar estas propiedades de metadatos personalizadas en la plantilla de correo electrónico
 
 
 
@@ -31,7 +34,7 @@ Para incluir valores de los datos de formulario enviados en la notificación por
 
 El método recomendado es crear un componente OSGI que implemente el método getUserMetadata de [WorkitemUserMetadataService](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/workspace/service/external/WorkitemUserMetadataService.html#getUserMetadataMap--)
 
-El siguiente código crea 4 propiedades de metadatos (_firstName_,_lastName_,_reason_ y _amountRequested_) y establece su valor a partir de los datos enviados. Por ejemplo, el valor de la propiedad de metadatos _firstName_ se establece en el valor del elemento llamado firstName de los datos enviados. El código siguiente supone que los datos enviados del formulario adaptable están en formato xml. Forms adaptable basado en el esquema JSON o el modelo de datos de formulario genera datos en formato JSON.
+El siguiente código crea 4 propiedades de metadatos (_firstName_,_lastName_,_reason_ y _amountRequested_) y establece su valor a partir de los datos enviados. Por ejemplo, el valor de la propiedad de metadatos _firstName_ se establece en el valor del elemento llamado firstName de los datos enviados. El siguiente código supone que los datos enviados del formulario adaptable están en formato xml. Los formularios adaptables basados en el esquema JSON o en el modelo de datos de formulario generan datos en formato JSON.
 
 
 ```java
@@ -111,37 +114,37 @@ return customMetadataMap;
 }
 ```
 
-## Utilizar las propiedades de metadatos personalizadas en la plantilla de correo electrónico de notificación de tarea
+## Utilizar las propiedades de metadatos personalizadas en la plantilla de correo electrónico de notificación de tareas
 
-En la plantilla de correo electrónico puede incluir la propiedad metadata utilizando la siguiente sintaxis donde amountRequested es la propiedad de metadatos `${amountRequested}`
+En la plantilla de correo electrónico, puede incluir la propiedad metadata utilizando la siguiente sintaxis, donde amountRequested es la propiedad de metadatos `${amountRequested}`
 
-## Configurar Asignar Tarea para utilizar la propiedad de metadatos personalizada
+## Configurar Asignar tarea para que utilice la propiedad de metadatos personalizada
 
-Una vez que el componente OSGi esté integrado e implementado en AEM servidor, configure el componente Asignar Tarea como se muestra a continuación para utilizar las propiedades de metadatos personalizadas.
+Una vez que el componente OSGi se haya creado e implementado en el servidor AEM, configure el componente Asignar tarea como se muestra a continuación para utilizar propiedades de metadatos personalizadas.
 
 
 ![Notificación de tarea](assets/task-notification.PNG)
 
 ## Habilitar el uso de propiedades de metadatos personalizadas
 
-![Propiedades de metadatos personalizados](assets/custom-meta-data-properties.PNG)
+![Propiedades de metadatos personalizadas](assets/custom-meta-data-properties.PNG)
 
-## Para probar esto en el servidor
+## Para probar esto en su servidor
 
-* [Configurar el servicio de correo CQ Day](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)
-* Asociar un id. de correo electrónico válido con [usuario administrador](http://localhost:4502/security/users.html)
-* Descargue e instale la [plantilla de flujo de trabajo y notificación](assets/workflow-and-task-notification-template.zip) mediante [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
-* Descargue [Formulario adaptable](assets/request-travel-authorization.zip) e impórtelos en AEM desde [formularios y documentos ui](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
-* Implementar y inicio del [Paquete personalizado](assets/work-items-user-service-bundle.jar) mediante la [consola web](http://localhost:4502/system/console/bundles)
-* [Previsualización y envío del formulario](http://localhost:4502/content/dam/formsanddocuments/requestfortravelauhtorization/jcr:content?wcmmode=disabled)
+* [Configurar el servicio Day CQ Mail](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)
+* Asociar un id. de correo electrónico válido con [admin user](http://localhost:4502/security/users.html)
+* Descargue e instale la [Workflow-and-notification-template](assets/workflow-and-task-notification-template.zip) utilizando [package manager](http://localhost:4502/crx/packmgr/index.jsp)
+* Descargue [Formulario adaptable](assets/request-travel-authorization.zip) e impórtelo en AEM desde la interfaz de usuario de [forms and documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
+* Implementar e iniciar el [Paquete personalizado](assets/work-items-user-service-bundle.jar) mediante la [consola web](http://localhost:4502/system/console/bundles)
+* [Vista previa y envío del formulario](http://localhost:4502/content/dam/formsanddocuments/requestfortravelauhtorization/jcr:content?wcmmode=disabled)
 
-Al enviar el formulario, la notificación de asignación de tarea se envía al ID de correo electrónico asociado al usuario administrador. La siguiente captura de pantalla muestra la notificación de asignación de tareas de muestra
+En el envío del formulario, la notificación de asignación de tareas se envía al id de correo electrónico asociado al usuario administrador. La siguiente captura de pantalla muestra la notificación de asignación de tareas de ejemplo
 
 ![Notificación](assets/task-nitification-email.png)
 
 >[!NOTE]
->La plantilla de correo electrónico de la notificación de asignación de tarea debe tener el siguiente formato.
+>La plantilla de correo electrónico para la notificación de asignación de tarea debe tener el formato siguiente.
 >
-> subject=Tarea asignada - `${workitem_title}`
+> subject=Task Assigned - `${workitem_title}`
 >
 > message=String que representa la plantilla de correo electrónico sin caracteres de línea nuevos.
