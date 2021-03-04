@@ -2,16 +2,18 @@
 title: Usar limpieza de revisión en línea
 description: 'Breve introducción a la Limpieza de revisiones en línea. La limpieza de revisión en línea mitiga la necesidad de una limpieza de revisión sin conexión frecuente. '
 version: 6.3, 6.4, 6.5
-feature: oak, compactación
 topics: operations, authoring, performance
 activity: use
 audience: administrator, architect, implementer
 doc-type: technical video
+topic: Administración
+role: Administrador
+level: Intermedio
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '76'
-ht-degree: 0%
+source-wordcount: '77'
+ht-degree: 2%
 
 ---
 
