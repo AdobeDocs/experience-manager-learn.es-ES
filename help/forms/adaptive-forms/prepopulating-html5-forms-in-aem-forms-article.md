@@ -3,7 +3,7 @@ title: Rellenar previamente formularios HTML5 mediante el atributo data .
 seo-title: Rellenar previamente formularios HTML5 mediante el atributo data .
 description: Rellene formularios HTML5 recuperando datos del origen del servidor.
 seo-description: Rellene formularios HTML5 recuperando datos del origen del servidor.
-feature: Formularios adaptables
+feature: integraciones
 topics: mobile-forms
 audience: developer
 doc-type: article
@@ -11,13 +11,10 @@ activity: implement
 version: 6.3,6.4,6.5.
 uuid: 889d2cd5-fcf2-4854-928b-0c2c0db9dbc2
 discoiquuid: 3aa645c9-941e-4b27-a538-cca13574b21c
-topic: Desarrollo
-role: Desarrollador
-level: Con experiencia
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '511'
 ht-degree: 0%
 
 ---
