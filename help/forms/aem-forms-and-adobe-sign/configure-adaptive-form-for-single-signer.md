@@ -1,21 +1,18 @@
 ---
 title: Formulario adaptable con un solo firmante
 description: Formulario adaptable con un solo firmante. En el vídeo se explican los distintos pasos necesarios para configurar un formulario adaptable con un solo firmante.
-feature: '"Formularios adaptables,Adobe Sign"'
+feature: formularios adaptables
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 thumbnail: 39475.jpg
 kt: 6103
-topic: Desarrollo
-role: Profesional empresarial
-level: Principiante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '69'
-ht-degree: 1%
+source-wordcount: '62'
+ht-degree: 0%
 
 ---
 
