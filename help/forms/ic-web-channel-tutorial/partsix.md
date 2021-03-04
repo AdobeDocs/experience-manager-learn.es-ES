@@ -5,17 +5,20 @@ description: Esta es la parte 6 de un tutorial de varios pasos para crear su pri
 seo-description: Esta es la parte 6 de un tutorial de varios pasos para crear su primer documento interactivo de comunicaciones. En esta parte, crearemos la comunicación interactiva para el canal web.
 uuid: a1b29c5b-a323-4bda-aa99-5fb98614b690
 discoiquuid: b44ff855-9ead-471e-8f0f-b562b88a5337
-feature: comunicación interactiva
+feature: Comunicación interactiva
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
+topic: Desarrollo
+role: Desarrollador
+level: Principiante
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 2%
+source-wordcount: '204'
+ht-degree: 3%
 
 ---
 
