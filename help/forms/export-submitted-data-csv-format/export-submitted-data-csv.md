@@ -1,51 +1,54 @@
 ---
 title: Exportación de datos de formulario enviados en formato CSV
-description: Exportación de datos de formularios adaptables enviados en formato CSV
-feature: adaptive-forms
+description: Exportar datos de formulario adaptable enviados en formato CSV
+feature: Formularios adaptables
 topics: development
 audience: developer
 doc-type: article
 activity: implement
+topic: Desarrollo
+role: Desarrollador
+level: Con experiencia
 translation-type: tm+mt
-source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 0%
+source-wordcount: '403'
+ht-degree: 1%
 
 ---
 
 # Introducción
 
-Normalmente, los clientes desean exportar los datos del formulario enviados en formato CSV. En este artículo se destacan los pasos necesarios para exportar los datos del formulario en formato CSV. Este artículo supone que los envíos de formularios se almacenan en la tabla RDBMS. La siguiente captura de pantalla detalla la estructura de tabla mínima necesaria para almacenar los envíos de formularios.
+Los clientes suelen querer exportar los datos del formulario enviado en formato CSV. Este artículo resaltará los pasos necesarios para exportar los datos del formulario en formato CSV. Este artículo supone que los envíos de formularios se almacenan en la tabla RDBMS. La siguiente captura de pantalla detalla la estructura de tabla mínima necesaria para almacenar los envíos de formularios.
 
 >[!NOTE]
 >
->Este ejemplo solo funciona con Forms adaptable que no se basa en el Esquema o en el modelo de datos de formulario
+>Este ejemplo solo funciona con formularios adaptables que no están basados en esquemas o en modelos de datos de formulario
 
-![Estructura ](assets/tablestructure.PNG)
-de tablaComo puede ver el nombre del esquema es un formato.Dentro de este esquema se encuentra la tabla de envíos con las siguientes columnas definidas
+![Estructura de ](assets/tablestructure.PNG)
+tablaComo puede ver, el nombre del esquema es una estructura de formato.Dentro de este esquema está la tabla de envíos con las siguientes columnas definidas
 
-* formdata: Esta columna contendrá los datos de formulario enviados
-* formname: Esta columna contendrá el nombre del formulario enviado
-* id: Ésta es la clave principal y se establece en incremento automático
+* formdata: Esta columna contiene los datos de formulario enviados
+* formname: Esta columna contiene el nombre del formulario enviado
+* id: Esta es la clave principal y se configura en incremento automático
 
-El nombre de la tabla y los nombres de dos columnas se exponen como propiedades de configuración OSGi, como se muestra en la siguiente captura de pantalla:
+El nombre de tabla y los nombres de dos columnas se exponen como propiedades de configuración OSGi como se muestra en la captura de pantalla siguiente:
 ![osgi-configuration](assets/configuration.PNG)
-El código leerá estos valores y construirá la consulta SQL adecuada para ejecutar. Por ejemplo, la siguiente consulta se ejecutará en función de los valores anteriores
-**SELECCIONAR datos de formulario DESDE aemformstutorial.formups donde formname=timeoffrequestform**
+El código leerá estos valores y construirá la consulta SQL apropiada para ejecutar. Por ejemplo, la siguiente consulta se ejecutará en función de los valores anteriores
+**SELECCIONE los datos de formulario DE aemformstutorial.formpapers donde formname=timeoffrequestform**
 En la consulta anterior, el nombre del formulario (timeoffrequestform) se pasará como parámetro de solicitud al servlet.
 
-## **Crear servicio OSGi**
+## **Creación del servicio OSGi**
 
-Se creó el siguiente servicio OSGI para exportar los datos enviados en formato CSV.
+El siguiente servicio OSGI se creó para exportar los datos enviados en formato CSV.
 
-* Línea 37: Estamos accediendo a Apache Sling Connection Pooled DataSource.
+* Línea 37: Estamos accediendo a la fuente de datos agrupada de la conexión Apache Sling.
 
-* Línea 89: Es el punto de entrada al servicio. El método `getCSVFile(..)` toma formName como parámetro de entrada y obtiene los datos enviados pertenecientes al nombre de formulario dado.
+* Línea 89: Este es el punto de entrada al servicio. El método `getCSVFile(..)` toma formName como parámetro de entrada y recupera los datos enviados pertenecientes al nombre de formulario dado.
 
 >[!NOTE]
 >
->El código asume que ha definido DataSource agrupado de conexión llamado &quot;aemformstutorial&quot; en la Consola Web Felix. El código también supone que tiene un esquema en la base de datos llamado aformstutorial
+>El código supone que ha definido la conexión agrupada DataSource denominada &quot;aemformstutorial&quot; en la Consola Web Felix. El código también supone que tiene un esquema en la base de datos denominado aemformstutorial
 
 ```java
 package com.aemforms.storeandexport.core;
@@ -261,7 +264,7 @@ public @interface StoreAndExportConfiguration {
 
 ## Servlet
 
-El siguiente es el código servlet que invoca el método `getCSVFile(..)` del servicio. El servicio devuelve el objeto StringBuffer, que luego se transmite a la aplicación que realiza la llamada
+El siguiente es el código servlet que invoca el método `getCSVFile(..)` del servicio. El servicio devuelve el objeto StringBuffer que luego se retransmite a la aplicación que realiza la llamada
 
 ```java
 package com.aemforms.storeandexport.core.servlets;
@@ -303,6 +306,6 @@ public class StreamCSVFile extends SlingAllMethodsServlet {
 
 ### Implementar en el servidor
 
-* Importe el [archivo SQL](assets/formsubmissions.sql) en el servidor MySQL usando MySQL Workbench. Esto crea un esquema llamado **formstutorial** y una tabla llamada **presentaciones de formulario** con algunos datos de ejemplo.
+* Importe el [archivo SQL](assets/formsubmissions.sql) en el servidor MySQL utilizando MySQL Workbench. Esto crea un esquema llamado **formstutorial** y una tabla llamada **formdeliveries** con algunos datos de ejemplo.
 * Implementar [OSGi Bundle](assets/store-export.jar) mediante la consola web Felix
-* [Para obtener envíos](http://localhost:4502/bin/streamformdata?formName=timeoffrequestform) de TimeOffRequest. Debería recibir un flujo continuo del archivo CSV.
+* [Para obtener los envíos de TimeOffRequest](http://localhost:4502/bin/streamformdata?formName=timeoffrequestform). Debería obtener un archivo CSV transmitido de nuevo a usted.
