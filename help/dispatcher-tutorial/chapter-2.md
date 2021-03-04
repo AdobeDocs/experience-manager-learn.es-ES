@@ -1,12 +1,14 @@
 ---
-title: Capítulo 2 - Definición de modelos de fragmentos de contenido de eventos
-seo-title: Introducción a los servicios de contenido de AEM - Capítulo 2 - Definición de modelos de fragmentos de contenido de eventos
-description: El capítulo 2 del tutorial AEM Headless cubre la habilitación y definición de modelos de fragmento de contenido utilizados para definir una estructura de datos normalizada y una interfaz de creación para crear eventos.
-seo-description: El capítulo 2 del tutorial AEM Headless cubre la habilitación y definición de modelos de fragmento de contenido utilizados para definir una estructura de datos normalizada y una interfaz de creación para crear eventos.
+title: '"Capítulo 2 - Infraestructura de Dispatcher"'
+description: Comprender la topología de publicación y Dispatcher. Obtenga información sobre las topologías y configuraciones más comunes.
+feature: Dispatcher
+topic: Arquitectura
+role: Arquitecto
+level: Principiante
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1917'
+source-wordcount: '1868'
 ht-degree: 0%
 
 ---
