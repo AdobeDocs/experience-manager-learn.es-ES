@@ -1,59 +1,62 @@
 ---
-title: Captura de comentarios de flujo de trabajo en el Forms Workflow adaptable
-seo-title: Captura de comentarios de flujo de trabajo en el Forms Workflow adaptable
-description: Captura de comentarios de flujo de trabajo en AEM flujo de trabajo
-seo-description: Captura de comentarios de flujo de trabajo en AEM flujo de trabajo
+title: Captura de los comentarios del flujo de trabajo en el flujo de trabajo de formularios adaptables
+seo-title: Captura de los comentarios del flujo de trabajo en el flujo de trabajo de formularios adaptables
+description: Captura de los comentarios del flujo de trabajo en el flujo de trabajo de AEM
+seo-description: Captura de los comentarios del flujo de trabajo en el flujo de trabajo de AEM
 uuid: df41fc6f-9abf-47b4-a014-b3b9fb58b6f7
-feature: workflow
+feature: Flujo de trabajo
 topics: development
 audience: developer
 doc-type: article
 activity: setup
 version: 6.3,6.4
 discoiquuid: d5e40650-3b1f-4875-91b2-e22d932b5e7c
+topic: Desarrollo
+role: Desarrollador
+level: Con experiencia
 translation-type: tm+mt
-source-git-commit: f07680e73316efb859a675f4b2212d8c3e03f6a0
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 0%
+source-wordcount: '397'
+ht-degree: 1%
 
 ---
 
 
-# Captura de comentarios de flujo de trabajo en Forms Workflow adaptable{#capturing-workflow-comments-in-adaptive-forms-workflow}
+# Captura de los comentarios del flujo de trabajo en el flujo de trabajo de formularios adaptables{#capturing-workflow-comments-in-adaptive-forms-workflow}
 
 >[Solo se aplica a AEM Forms 6.4. En AEM Forms 6.5, utilice la función de variables para lograr este caso de uso]
 
-Una solicitud común es la capacidad de incluir los comentarios introducidos por el revisor de tarea en un mensaje de correo electrónico. En AEM Forms 6.4 no hay ningún mecanismo listo para capturar los comentarios introducidos por el usuario e incluirlos en el correo electrónico.
+Una solicitud común es la capacidad de incluir los comentarios introducidos por el revisor de tareas en un correo electrónico. En AEM Forms 6.4 no hay ningún mecanismo listo para usar para capturar los comentarios introducidos por el usuario e incluirlos en el correo electrónico.
 
-Para cumplir este requisito, se proporciona un paquete OSGi de muestra que puede utilizarse para capturar comentarios y almacenarlos como propiedad de metadatos del flujo de trabajo.
+Para cumplir este requisito, se proporciona un paquete OSGi de muestra que puede utilizarse para capturar comentarios y almacenar estos comentarios como propiedad de metadatos del flujo de trabajo.
 
-La siguiente captura de pantalla muestra cómo utilizar el paso del proceso en [Flujo de trabajo de AEM](http://localhost:4502/editor.html/conf/global/settings/workflow/models/CaptureComments.html) para capturar comentarios y almacenarlos como propiedad de metadatos. &quot;Capturar comentarios del flujo de trabajo&quot; es el nombre de la clase java que debe utilizarse en el paso del proceso. Debe pasar el nombre de la propiedad metadata que contendrá los comentarios. En la siguiente captura de pantalla, managerComments es la propiedad de metadatos que almacenará los comentarios.
+La siguiente captura de pantalla muestra cómo utilizar el paso de proceso en [AEM Workflow](http://localhost:4502/editor.html/conf/global/settings/workflow/models/CaptureComments.html) para capturar comentarios y almacenarlos como propiedad de metadatos. El &quot;Capturar comentarios del flujo de trabajo&quot; es el nombre de la clase java que debe utilizarse en el paso del proceso. Debe pasar el nombre de propiedad de metadatos que contendrá los comentarios. En la captura de pantalla siguiente, managerComments es la propiedad de metadatos que almacenará los comentarios.
 
-![flujos de trabajo comentarios1](assets/workflowcomments1.gif)
+![workflow comments1](assets/workflowcomments1.gif)
 
-Para probar esta capacidad en su sistema, siga los pasos siguientes:
-* [Asegúrese de que el paso del proceso en el flujo de trabajo está configurado para utilizar los comentarios del flujo de trabajo de captura](http://localhost:4502/editor.html/conf/global/settings/workflow/models/CaptureComments.html)
+Para probar esta capacidad en su sistema, siga los siguientes pasos:
+* [Asegúrese de que el paso del proceso en el flujo de trabajo esté configurado para utilizar los comentarios del flujo de trabajo de captura](http://localhost:4502/editor.html/conf/global/settings/workflow/models/CaptureComments.html)
 
-* [Implementar el paquete DevelopmentWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+* [Implementar el paquete de usuario Desarrollo con servicio](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-* [Implemente el paquete](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar) SetValue. Este paquete contiene el código de muestra para capturar los comentarios y almacenarlos como propiedad de metadatos
+* [Implementar el paquete](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar) SetValue. Este paquete contiene el código de muestra para capturar los comentarios y almacenarlos como una propiedad de metadatos
 
-* [Descargue y descomprima los recursos relacionados con este artículo en el ](assets/capturecomments.zip) sistema de archivosLos recursos contienen un modelo de flujo de trabajo y un formulario adaptable de ejemplo.
+* [Descargue y descomprima los recursos relacionados con este artículo en su ](assets/capturecomments.zip) sistema de archivos. Los recursos contienen un modelo de flujo de trabajo y un formulario adaptable de ejemplo.
 
 * Importar los 2 archivos zip en AEM mediante el administrador de paquetes
 
-* [Previsualización del formulario navegando a esta dirección URL](http://localhost:4502/content/dam/formsanddocuments/capturecomments/jcr:content?wcmmode=disabled)
+* [Obtener una vista previa del formulario navegando hasta esta dirección URL](http://localhost:4502/content/dam/formsanddocuments/capturecomments/jcr:content?wcmmode=disabled)
 
 * Rellene los campos del formulario y envíe el formulario
 
-* [Marque la bandeja de entrada AEM](http://localhost:4502/aem/inbox)
+* [Marque la bandeja de entrada de AEM](http://localhost:4502/aem/inbox)
 
-* Abra la tarea desde la bandeja de entrada y envíe el formulario. Escriba algunos comentarios cuando se le solicite.
+* Abra la tarea desde la bandeja de entrada y envíe el formulario. Introduzca algunos comentarios cuando se le solicite.
 
-Los comentarios se almacenarán en la propiedad de metadatos denominada managerComments en crx. Para buscar los comentarios, inicie sesión en crx como administrador. Las instancias de flujo de trabajo se almacenan en la siguiente ruta
+Los comentarios se almacenan en la propiedad metadata llamada managerComments en crx. Para comprobar los comentarios, inicie sesión en crx como administrador. Las instancias de flujo de trabajo se almacenan en la siguiente ruta
 
-/var/workflow/instance/server0
+/var/workflow/instances/server0
 
 Seleccione la instancia de flujo de trabajo adecuada y compruebe la propiedad managerComments en el nodo de metadatos.
 
