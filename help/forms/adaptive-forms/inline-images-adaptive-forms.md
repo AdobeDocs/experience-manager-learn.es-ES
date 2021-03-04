@@ -1,30 +1,33 @@
 ---
-title: Visualización de imágenes en línea en Forms adaptable
-seo-title: Visualización de imágenes en línea en Forms adaptable
-description: Mostrar imágenes cargadas en línea en Forms adaptable
-seo-description: Mostrar imágenes cargadas en línea en Forms adaptable
-feature: adaptive-forms
+title: Visualización de imágenes en línea en formularios adaptables
+seo-title: Visualización de imágenes en línea en formularios adaptables
+description: Mostrar imágenes cargadas en línea en formularios adaptables
+seo-description: Mostrar imágenes cargadas en línea en formularios adaptables
+feature: Formularios adaptables
 topics: development
 audience: developer
 doc-type: article
 activity: setup
 version: 6.3,6.4,6.5
+topic: Desarrollo
+role: Desarrollador
+level: Con experiencia
 translation-type: tm+mt
-source-git-commit: defefc1451e2873e81cd81e3cccafa438aa062e3
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 0%
+source-wordcount: '243'
+ht-degree: 1%
 
 ---
 
 
-# Imágenes en línea en Forms adaptable
+# Imágenes en línea en formularios adaptables
 
-Un caso de uso común es mostrar la imagen cargada como una imagen en línea en el formulario adaptable. De forma predeterminada, la imagen cargada se muestra como vínculo y esta experiencia se puede mejorar mostrando la imagen en Formulario adaptable. Este artículo le guiará por los pasos necesarios para mostrar imágenes en línea.
+Un caso de uso común es mostrar la imagen cargada como una imagen en línea en el formulario adaptable. De forma predeterminada, la imagen cargada se muestra como un vínculo y esta experiencia se puede mejorar mostrando la imagen en el formulario adaptable. Este artículo le guiará por los pasos necesarios para mostrar la imagen en línea.
 
-## Añadir imagen de marcador de posición
+## Agregar imagen de marcador de posición
 
-El primer paso es anteponer un div marcador de posición al componente de datos adjuntos de archivo. En el código que aparece debajo, el componente de archivo adjunto se identifica mediante el nombre de clase CSS de la carga de fotografías. La función JavaScript forma parte de la biblioteca del cliente asociada a los formularios adaptables. Esta función se llama en el evento de inicialización del componente de datos adjuntos del archivo.
+El primer paso es anteponer un div marcador de posición al componente de archivo adjunto. En el código siguiente, el componente de archivo adjunto se identifica con su nombre de clase CSS de carga de foto. La función JavaScript forma parte de la biblioteca de cliente asociada a los formularios adaptables. Se llama a esta función en el suceso initialize del componente de archivo adjunto.
 
 ```javascript
 /**
@@ -39,7 +42,7 @@ function addTempImage(){
 
 ### Mostrar imagen en línea
 
-Después de que el usuario haya cargado la imagen, la función que se muestra a continuación se invoca en el evento de confirmación del componente de archivo adjunto. La función recibe el objeto de archivo cargado como argumento.
+Una vez que el usuario ha cargado la imagen, la función que se muestra a continuación se invoca en el evento commit del componente de archivo adjunto. La función recibe el objeto de archivo cargado como argumento.
 
 ```javascript
 /**
@@ -67,7 +70,7 @@ function consumeImage (file) {
 
 ### Implementar en el servidor
 
-* Descargue e instale la [biblioteca de cliente](assets/inline-image-client-library.zip) en la instancia de AEM mediante AEM administrador de paquetes.
-* Descargue e instale el [formulario de ejemplo](assets/inline-image-af.zip) en su instancia de AEM mediante AEM administrador de paquetes.
-* Apunta a tu explorador para [Añadir imagen en línea](http://localhost:4502/content/dam/formsanddocuments/addinlineimage/jcr:content?wcmmode=disabled)
-* Haga clic en el botón &quot;Adjuntar la foto&quot; para agregar la imagen
+* Descargue e instale la [biblioteca de cliente](assets/inline-image-client-library.zip) en su instancia de AEM mediante el administrador de paquetes de AEM.
+* Descargue e instale el [ejemplo de formulario](assets/inline-image-af.zip) en su instancia de AEM con el administrador de paquetes de AEM.
+* Apunte el navegador para [Agregar imagen en línea](http://localhost:4502/content/dam/formsanddocuments/addinlineimage/jcr:content?wcmmode=disabled)
+* Haga clic en el botón &quot;Adjuntar la foto&quot; para añadir la imagen
