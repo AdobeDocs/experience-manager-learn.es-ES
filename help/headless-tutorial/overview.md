@@ -6,10 +6,10 @@ topic: Sin objetivos, Administración de contenido
 role: Desarrollador
 level: Principiante
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: db9f4d09dcc83f85c8d02d94c383fa456af88c24
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 4%
+source-wordcount: '438'
+ht-degree: 5%
 
 ---
 
@@ -19,11 +19,6 @@ ht-degree: 4%
 Adobe Experience Manager tiene varias opciones para definir extremos sin encabezado y entregar su contenido como JSON. Utilice tutoriales prácticos para explorar cómo utilizar las distintas opciones y elegir lo que es adecuado para usted.
 
 ## Tutorial de las API de AEM GraphQL
-
->[!CAUTION]
->
-> La API de AEM GraphQL para la entrega de fragmentos de contenido está disponible bajo petición.
-> Póngase en contacto con el servicio de asistencia de Adobe para habilitar la API para su programa de AEM as a Cloud Service.
 
 API de GraphQL de AEM para fragmentos de contenido
 admite escenarios CMS sin encabezado en los que las aplicaciones cliente externas procesan experiencias mediante contenido administrado en AEM.
