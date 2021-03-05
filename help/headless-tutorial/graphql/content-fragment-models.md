@@ -15,9 +15,9 @@ topic: Sin objetivos, Administración de contenido
 role: Desarrollador
 level: Principiante
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: cae6e32baa256d4c94fe317eb31cd5163cdae41f
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '1027'
 ht-degree: 1%
 
 ---
@@ -44,6 +44,10 @@ Este es un tutorial en varias partes y se da por hecho que se han completado los
 >[!VIDEO](https://video.tv.adobe.com/v/22452/?quality=12&learn=on)
 
 El vídeo anterior ofrece información general de alto nivel sobre el trabajo con los modelos de fragmento de contenido.
+
+>[!CAUTION]
+>
+> El vídeo anterior muestra la creación del modelo **Contributor** con el nombre `Contributors`. Al realizar los pasos en su propio entorno, asegúrese de que el título utiliza el formulario singular: `Contributor` sin **s**. El nombre del Modelo de fragmento de contenido impulsa las llamadas a la API de GraphQL que se realizarán más adelante en el tutorial.
 
 ## Inspeccionar el modelo de fragmento de contenido de aventura
 
