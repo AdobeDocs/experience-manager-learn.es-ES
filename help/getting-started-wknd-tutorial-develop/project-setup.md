@@ -16,10 +16,10 @@ topic: Gestión de contenido, desarrollo
 role: Desarrollador
 level: Principiante
 translation-type: tm+mt
-source-git-commit: b11039ef9d373685a4279c01dbd08eb6464acd29
+source-git-commit: 600d3e217b93b30cc673af85c1fd1b62ccc37eb1
 workflow-type: tm+mt
-source-wordcount: '1947'
-ht-degree: 4%
+source-wordcount: '1890'
+ht-degree: 5%
 
 ---
 
@@ -50,11 +50,11 @@ En este capítulo, generará un nuevo proyecto de Adobe Experience Manager con e
 
 ## Crear el proyecto {#create}
 
-Hay un par de opciones para crear un proyecto de Maven Multi-module para AEM. Este tutorial utilizará el tipo de archivo [Maven AEM Project **25**](https://github.com/adobe/aem-project-archetype). Cloud Manager también [proporciona un asistente de IU](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/getting-started/create-an-application-project.html) para iniciar la creación de un proyecto de aplicación AEM. El proyecto subyacente generado por la interfaz de usuario de Cloud Manager resulta en la misma estructura que el uso directo del tipo de archivo.
+Hay un par de opciones para crear un proyecto de Maven Multi-module para AEM. Este tutorial utilizará el tipo de archivo [Maven AEM Project **26**](https://github.com/adobe/aem-project-archetype). Cloud Manager también [proporciona un asistente de IU](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/getting-started/create-an-application-project.html) para iniciar la creación de un proyecto de aplicación AEM. El proyecto subyacente generado por la interfaz de usuario de Cloud Manager resulta en la misma estructura que el uso directo del tipo de archivo.
 
 >[!NOTE]
 >
->Este tutorial utiliza la versión **25** del tipo de archivo. Siempre es recomendable utilizar la versión **más reciente** del tipo de archivo para generar un nuevo proyecto.
+>Este tutorial utiliza la versión **26** del tipo de archivo. Siempre es recomendable utilizar la versión **más reciente** del tipo de archivo para generar un nuevo proyecto.
 
 La siguiente serie de pasos se realizará utilizando un terminal de línea de comandos basado en UNIX, pero debe ser similar si se utiliza un terminal de Windows.
 
@@ -100,7 +100,7 @@ La siguiente serie de pasos se realizará utilizando un terminal de línea de co
    mvn -B archetype:generate \
        -D archetypeGroupId=com.adobe.aem \
        -D archetypeArtifactId=aem-project-archetype \
-       -D archetypeVersion=25 \
+       -D archetypeVersion=26 \
        -D appTitle="WKND Sites Project" \
        -D appId="wknd" \
        -D groupId="com.adobe.aem.guides.wknd" \
@@ -111,7 +111,7 @@ La siguiente serie de pasos se realizará utilizando un terminal de línea de co
 
    >[!NOTE]
    >
-   > Si utiliza AEM 6.5.5.0+ o 6.4.8.1+, sustituya `aemVersion="cloud"` por su versión de destino de AEM, por ejemplo `aemVersion="6.5.5"` o `aemVersion="6.4.8.1"`
+   > Si el objetivo es AEM 6.5.5+, reemplace `aemVersion="cloud"` por `aemVersion="6.5.5"`. Si va a ser 6.4.8+, use `aemVersion="6.4.8"`.
 
    Una lista completa de las propiedades disponibles para configurar un proyecto [se puede encontrar aquí](https://github.com/adobe/aem-project-archetype#available-properties).
 
@@ -134,24 +134,6 @@ La siguiente serie de pasos se realizará utilizando un terminal de línea de co
            |--- pom.xml
            |--- README.md
            |--- .gitignore
-   ```
-
-### Actualizar la versión de Project Analyser
-
->[!CAUTION]
->
-> Existe un [problema conocido](https://github.com/adobe/aem-project-archetype/issues/638) en la versión 25 del tipo de archivo que requiere una actualización de la versión de **Project Analyser** en el proyecto generado. Los pasos siguientes son **solo** necesarios para los proyectos generados con `aemVersion="cloud"`.
-
-1. Abra el archivo `aem-guides-wknd/poml.xml` con su editor de texto favorito.
-1. Actualice `aemanalyser.version` a **`0.9.2`**:
-
-   ```diff
-    <properties>
-       ...
-   -   <aemanalyser.version>0.0.18</aemanalyser.version>
-   +   <aemanalyser.version>0.9.2</aemanalyser.version>
-       ...
-    </properties>
    ```
 
 ## Implementar y crear el proyecto {#build}
