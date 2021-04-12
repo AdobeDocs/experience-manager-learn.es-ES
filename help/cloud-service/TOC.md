@@ -5,7 +5,7 @@ breadcrumb-title: Tutoriales de AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
 translation-type: tm+mt
-source-git-commit: 27f21bb9c1b905a2100a5013fe3b75760b9d6821
+source-git-commit: cb4f678be79ad39110cc199b8c66349f311a431d
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 22%
@@ -85,6 +85,7 @@ ht-degree: 22%
    + [Importación masiva de recursos](./migration/bulk-import.md)
 + Forms{#forms}
    + Crear formulario adaptable{#create-first-af}
+      + [Introducción](./forms/create-first-af/introduction.md)
       + [Crear tema](./forms/create-first-af/create-theme.md)
       + [Crear plantilla](./forms/create-first-af/create-template.md)
       + [Crear fragmento](./forms/create-first-af/create-fragments.md)
@@ -98,7 +99,7 @@ ht-degree: 22%
    + Crear flujo de trabajo de revisión{#create-aem-workflow}
       + [Crear modelo de flujo de trabajo](./forms/create-aem-workflow/create-workflow.md)
       + [flujo de trabajo de déclencheur](./forms/create-aem-workflow/configure-af.md)
-   + Adobe Sign con AEM Forms{forms-and-sign}
+   + Adobe Sign con AEM Forms{#forms-and-sign}
       + [Aplicación de API de Adobe Sign](./forms/forms-and-sign/create-sign-api-application.md)
       + [Configuración en la nube de Adobe Sign](./forms/forms-and-sign/create-adobe-sign-cloud-configuration.md)
       + [Crear formulario adaptable](./forms/forms-and-sign/create-adaptive-form.md)
