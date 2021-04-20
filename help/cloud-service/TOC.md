@@ -5,9 +5,9 @@ breadcrumb-title: Tutoriales de AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
 translation-type: tm+mt
-source-git-commit: 0c7759b59e6b6c99da3cd7e7c502445c14964e26
+source-git-commit: 98cfc9e007770e7a8291343bdd63fd523f747bb9
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '415'
 ht-degree: 22%
 
 ---
@@ -100,6 +100,7 @@ ht-degree: 22%
       + [Crear modelo de flujo de trabajo](./forms/create-aem-workflow/create-workflow.md)
       + [flujo de trabajo de déclencheur](./forms/create-aem-workflow/configure-af.md)
    + Adobe Sign con AEM Forms{#forms-and-sign}
+      + [Introducción](./forms/forms-and-sign/introduction.md)
       + [Aplicación de API de Adobe Sign](./forms/forms-and-sign/create-sign-api-application.md)
       + [Configuración en la nube de Adobe Sign](./forms/forms-and-sign/create-adobe-sign-cloud-configuration.md)
       + [Crear formulario adaptable](./forms/forms-and-sign/create-adaptive-form.md)
