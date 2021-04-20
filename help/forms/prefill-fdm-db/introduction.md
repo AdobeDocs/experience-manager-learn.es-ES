@@ -1,21 +1,20 @@
 ---
 title: Relleno previo de formularios utilizando el modelo de datos de formulario
 description: 'Rellene previamente el formulario adaptable utilizando el atributo de solicitud del modelo de datos de formulario '
-feature: Adaptive Forms
-topics: development
+feature: Formularios adaptables
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
 kt: 4419
-thumbnail: kt-4419.jpg
-topic: Development
+thumbnail: 36387.jpg
+topic: desarrollo
 role: Business Practitioner
 level: Intermediate
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 98cfc9e007770e7a8291343bdd63fd523f747bb9
 workflow-type: tm+mt
-source-wordcount: '131'
+source-wordcount: '128'
 ht-degree: 3%
 
 ---
@@ -40,5 +39,5 @@ capacidadEl siguiente vídeo le ofrece una descripción general del curso
 
 * Instancia de trabajo de AEM Forms
 * Familiarizado con la base de datos MySQL y el área de trabajo MySQL
-* Algunas experiencias en la creación de formularios adaptables
+* Algunas experiencias en la creación de Forms adaptable
 
