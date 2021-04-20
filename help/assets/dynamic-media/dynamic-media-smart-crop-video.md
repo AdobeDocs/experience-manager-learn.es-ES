@@ -2,13 +2,13 @@
 title: Uso de Dynamic Media Smart Crop para vídeo
 description: Dynamic Media Smart Crop para vídeo utiliza Adobe Sensei para rastrear de forma inteligente el punto de interés del vídeo, lo que garantiza que los vídeos tengan el mejor aspecto en todos los tamaños de pantalla.
 sub-product: dynamic-media
-feature: Recorte inteligente, perfiles de vídeo, ajustes preestablecidos de visor
+feature: Smart Crop, Video Profiles, Viewer Presets
 version: cloud-service
 kt: 5977
 thumbnail: 37958.jpg
-topic: Administración de contenido
-role: Profesional empresarial
-level: Principiante
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

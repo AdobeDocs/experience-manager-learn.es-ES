@@ -3,15 +3,15 @@ title: AEM Forms con Marketo (parte 2)
 seo-title: AEM Forms con Marketo (parte 2)
 description: Tutorial para integrar AEM Forms con Marketo mediante el Modelo de datos de formulario de AEM Forms.
 seo-description: Tutorial para integrar AEM Forms con Marketo mediante el Modelo de datos de formulario de AEM Forms.
-feature: Formularios adaptables, Modelo de datos de formulario
+feature: Adaptive Forms, Form Data Model
 topics: integrations
 audience: developer
 doc-type: tutorial
 activity: setup
 version: 6.3,6.4,6.5
-topic: Desarrollo
-role: Desarrollador
-level: Con experiencia
+topic: Development
+role: Developer
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

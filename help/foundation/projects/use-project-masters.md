@@ -2,10 +2,10 @@
 title: Cómo utilizar Project Masters en AEM
 description: Project Masters simplifica enormemente la administración de usuarios y equipos con proyectos AEM.
 version: 6.4, 6.5, cloud-service
-topic: Gestión de contenido, colaboración
-feature: Proyectos
-level: Intermedio
-role: Profesional empresarial
+topic: Content Management, Collaboration
+feature: Projects
+level: Intermediate
+role: Business Practitioner
 kt: 256
 thumbnail: 17740.jpg
 translation-type: tm+mt

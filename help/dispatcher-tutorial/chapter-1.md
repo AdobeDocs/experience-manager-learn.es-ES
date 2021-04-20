@@ -2,9 +2,9 @@
 title: '"Capítulo 1 - Conceptos, patrones y antipatrones de Dispatcher"'
 description: Este capítulo ofrece una breve introducción sobre el historial y la mecánica de Dispatcher y explica cómo esto influye en cómo un desarrollador de AEM diseñaría sus componentes.
 feature: Dispatcher
-topic: Arquitectura
-role: Arquitecto
-level: Principiante
+topic: Architecture
+role: Architect
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

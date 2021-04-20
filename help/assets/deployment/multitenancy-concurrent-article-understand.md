@@ -1,11 +1,11 @@
 ---
 title: Comprensión de la multiplicación y el desarrollo concurrente
 description: Obtenga información sobre las ventajas, los desafíos y las técnicas para administrar una implementación de varios usuarios con Adobe Experience Manager Assets.
-feature: Recursos conectados
+feature: Connected Assets
 version: 6.5
-topic: Desarrollo
-role: Desarrollador
-level: Intermedio
+topic: Development
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -1,7 +1,7 @@
 ---
 title: Crear una actividad de Target mediante ofertas de fragmentos de experiencias
 description: Obtenga información sobre cómo crear y probar una actividad de Adobe Target mediante ofertas de fragmento de experiencia de AEM.
-feature: Fragmentos de experiencias
+feature: Experience Fragments
 topics: integrations, authoring, personalization, activity, offers
 audience: all
 doc-type: feature video
@@ -9,9 +9,9 @@ activity: use
 version: cloud-service
 kt: 6351
 thumbnail: 41246.jpg
-topic: Integraciones
-role: Profesional empresarial
-level: Intermedio
+topic: Integrations
+role: Business Practitioner
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -1,10 +1,10 @@
 ---
 title: Uso de Deformación de tiempo con AEM Sites
 description: Deformación de tiempo es una función de Adobe Experience Manager Sites que proporciona a los autores una forma rápida de revisar el estado de una página en un momento concreto del pasado.
-topic: Administración de contenido
-feature: 'Creación  '
-role: Profesional del negocio
-level: Intermedio
+topic: Content Management
+feature: Authoring
+role: Business Practitioner
+level: Intermediate
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 3307
 thumbnail: 17453.jpg

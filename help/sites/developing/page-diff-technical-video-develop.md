@@ -1,15 +1,15 @@
 ---
 title: Desarrollo de la diferencia de páginas en AEM Sites
 description: Este vídeo muestra cómo proporcionar estilos personalizados para la funcionalidad de diferencia de página de AEM Sites.
-feature: 'Creación  '
+feature: Authoring
 topics: development
 audience: developer
 doc-type: technical video
 activity: develop
 version: 6.3, 6.4, 6.5
-topic: Desarrollo
-role: Desarrollador
-level: Principiante
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

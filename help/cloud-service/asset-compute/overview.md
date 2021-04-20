@@ -1,7 +1,7 @@
 ---
 title: Capacidad de extensión de los microservicios de Asset Compute para AEM as a Cloud Service
 description: Este tutorial recorta la creación de un trabajador simple de Asset Compute que crea una representación de recursos recortando el recurso original en un círculo y aplica el contraste y el brillo configurables. Aunque el propio trabajador es básico, este tutorial lo utiliza para explorar la creación, el desarrollo y la implementación de un trabajador personalizado de Asset Compute para utilizarlo con AEM as a Cloud Service.
-feature: Microservicios de Asset Compute
+feature: Asset Compute Microservices
 topics: renditions, development
 version: cloud-service
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: develop
 audience: developer
 kt: 5802
 thumbnail: KT-5802.jpg
-topic: Integraciones, desarrollo
-role: Desarrollador
-level: Intermedio, con experiencia
+topic: Integrations, Development
+role: Developer
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

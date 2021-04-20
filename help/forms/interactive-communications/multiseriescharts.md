@@ -3,15 +3,15 @@ title: Gráficos de varias series en AEM Forms
 seo-title: Gráficos de varias series en AEM Forms
 description: Cree el Modelo de datos de formulario adecuado para crear gráficos de varias series en documentos impresos y de canales web.
 seo-description: Cree el Modelo de datos de formulario adecuado para crear gráficos de varias series en documentos impresos y de canales web.
-feature: Comunicación interactiva
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.5
-topic: Desarrollo
-role: Desarrollador
-level: Principiante
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -1,15 +1,15 @@
 ---
 title: Creación de una plantilla de formulario adaptable
 description: La plantilla define la estructura y el contenido inicial del formulario adaptable.
-feature: Formularios adaptables
+feature: Adaptive Forms
 topics: authoring
 audience: developer
 doc-type: tutorial
 activity: understand
 thumbnail: 37324.jpg
-topic: Desarrollo
-role: Desarrollador
-level: Principiante
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

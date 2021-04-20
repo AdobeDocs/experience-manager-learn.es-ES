@@ -2,9 +2,9 @@
 title: Uso de plantillas de recursos con AEM Assets e InDesign Server
 description: La plantilla AEM Assets permite a los especialistas en marketing crear, administrar y entregar recursos digitales para impresión y dispositivos digitales. La creación de folletos de marketing, tarjetas de visita, folletos, anuncios y tarjetas postales es mucho más fácil con las plantillas de recursos al integrarse con el servidor de InDesign.
 version: 6.3, 6.4, 6.5
-topic: Administración de contenido
-role: Profesional empresarial
-level: Principiante
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

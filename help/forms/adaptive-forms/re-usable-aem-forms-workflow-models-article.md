@@ -3,7 +3,7 @@ title: Cree modelos de flujo de trabajo de AEM Forms reutilizables.
 seo-title: Cree modelos de flujo de trabajo de AEM Forms reutilizables.
 description: modelos de flujo de trabajo independientes de los formularios adaptables.
 seo-description: Modelos de flujo de trabajo independientes de los formularios adaptables.
-feature: Flujo de trabajo
+feature: Workflow
 topics: development
 audience: developer
 doc-type: article
@@ -11,9 +11,9 @@ activity: setup
 version: 6.5
 uuid: 3a082743-3e56-42f4-a44b-24fa34165926
 discoiquuid: 9f18c314-39d1-4c82-b1bc-d905ea472451
-topic: Desarrollo
-role: Desarrollador
-level: Principiante
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

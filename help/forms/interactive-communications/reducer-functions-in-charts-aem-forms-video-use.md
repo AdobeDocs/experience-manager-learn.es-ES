@@ -5,15 +5,15 @@ description: Las funciones reductoras se utilizan para agregar o agrupar valores
 seo-description: Las funciones reductoras se utilizan para agregar o agrupar valores que se muestran en el gráfico. El siguiente vídeo recorre los pasos involucrados en el uso de funciones reductoras.
 uuid: e9bd8bda-48ea-4a02-95c4-02aedafdb640
 discoiquuid: 6fef8341-8fd5-4d82-9f69-2b8be7cd22db
-feature: Comunicación interactiva
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: technical video
 activity: use
 version: 6.4,6.5
-topic: Desarrollo
-role: Desarrollador
-level: Intermedio
+topic: Development
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

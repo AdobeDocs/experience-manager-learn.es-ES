@@ -3,7 +3,7 @@ title: Escritura de un envío personalizado en AEM Forms
 seo-title: Escritura de un envío personalizado en AEM Forms
 description: Forma rápida y sencilla de crear su propia acción de envío personalizada para el formulario adaptable
 seo-description: Forma rápida y sencilla de crear su propia acción de envío personalizada para el formulario adaptable
-feature: Formularios adaptables
+feature: Adaptive Forms
 topics: integrations
 audience: developer
 doc-type: article
@@ -11,9 +11,9 @@ activity: implement
 version: 6.3,6.4,6.5
 uuid: a26db0b9-7db4-4e80-813d-5c0438fabd1e
 discoiquuid: 28611011-2ff9-477e-b654-e62e7374096a
-topic: Desarrollo
-role: Desarrollador
-level: Con experiencia
+topic: Development
+role: Developer
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

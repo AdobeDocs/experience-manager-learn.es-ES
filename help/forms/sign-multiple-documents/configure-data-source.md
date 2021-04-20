@@ -1,7 +1,7 @@
 ---
 title: Configuración de la fuente de datos de AEM
 description: Configurar el origen de datos respaldado por MySQL para almacenar y recuperar datos de formulario
-feature: Formularios adaptables
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: implement
 version: 6.4,6.5
 kt: 6899
 thumbnail: 6899.jpg
-topic: Desarrollo
-role: Desarrollador
-level: Principiante
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

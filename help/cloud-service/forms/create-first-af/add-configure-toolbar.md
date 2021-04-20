@@ -2,12 +2,12 @@
 title: Agregar y configurar barra de herramientas
 description: Permite desplazarse entre los paneles de formulario.
 solution: Experience Manager Forms
-type: Documentación
-role: Desarrollador
-level: Principiante, intermedio
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: Formularios adaptables
-topic: Desarrollo
+feature: Adaptive Forms
+topic: Development
 kt: 7389
 thumbnail: 332236.jpg
 translation-type: tm+mt

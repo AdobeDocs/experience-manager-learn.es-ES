@@ -2,13 +2,13 @@
 title: Descargar
 description: Obtenga información sobre cómo descargar recursos y sus representaciones en su equipo local para usarlos y compartirlos.
 sub-product: activos
-feature: Administración de activos
+feature: Asset Management
 version: cloud-service
 kt: 4300
 thumbnail: 32194.jpg
-topic: Administración de contenido
-role: Profesional empresarial
-level: Principiante
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

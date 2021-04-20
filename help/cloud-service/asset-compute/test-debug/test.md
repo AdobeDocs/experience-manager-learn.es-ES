@@ -1,7 +1,7 @@
 ---
 title: Prueba de un trabajador de Asset Compute
 description: El proyecto Asset Compute define un patrón para crear y ejecutar fácilmente pruebas de los trabajadores de Asset Compute.
-feature: Microservicios de Asset Compute
+feature: Asset Compute Microservices
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,9 +9,9 @@ audience: developer
 doc-type: tutorial
 kt: 6284
 thumbnail: KT-6284.jpg
-topic: Integraciones, desarrollo
-role: Desarrollador
-level: Intermedio, con experiencia
+topic: Integrations, Development
+role: Developer
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

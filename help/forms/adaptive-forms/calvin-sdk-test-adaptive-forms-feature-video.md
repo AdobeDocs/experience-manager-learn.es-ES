@@ -3,7 +3,7 @@ title: Explicación de la prueba automatizada de formularios con AEM Forms
 seo-title: Explicación de la prueba automatizada de formularios con AEM Forms
 description: AEM 6.3 Forms presenta la capacidad de permitir que los usuarios creen casos de prueba en AEM para formularios adaptables mediante el SDK de Calvin integrado en el marco de hobbes.js
 seo-description: AEM 6.3 Forms presenta la capacidad de permitir que los usuarios creen casos de prueba en AEM para formularios adaptables mediante el SDK de Calvin integrado en el marco de hobbes.js
-feature: Formularios adaptables
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: technical video
@@ -11,9 +11,9 @@ activity: develop
 version: 6.3,6.4,6.5
 uuid: 3cea2785-28f0-42c1-9935-3e876c28214a
 discoiquuid: a78936b4-e817-41a0-86cc-f9ac2d6dd08f
-topic: Desarrollo
-role: Desarrollador
-level: Principiante
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

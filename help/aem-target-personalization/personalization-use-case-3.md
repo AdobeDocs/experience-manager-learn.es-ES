@@ -3,10 +3,10 @@ title: Personalización mediante el Compositor de experiencias visuales de Adobe
 seo-title: Personalización mediante el Compositor de experiencias visuales (VEC) de Adobe Target
 description: Un tutorial completo que muestra cómo crear y ofrecer experiencias personalizadas con el Compositor de experiencias visuales (VEC) de Adobe Target.
 seo-description: Un tutorial completo que muestra cómo crear y ofrecer experiencias personalizadas con el Compositor de experiencias visuales (VEC) de Adobe Target.
-feature: Fragmentos de experiencias
-topic: Personalización
-role: Desarrollador
-level: Intermedio
+feature: Experience Fragments
+topic: Personalization
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

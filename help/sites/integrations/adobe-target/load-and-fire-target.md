@@ -1,7 +1,7 @@
 ---
 title: Carga y activación de una llamada de Target
 description: Obtenga información sobre cómo cargar, pasar parámetros a una solicitud de página y activar una llamada de Target desde la página del sitio mediante una regla de Launch. La información de la página se recupera y pasa como parámetros mediante la capa de datos del cliente de Adobe, que permite recopilar y almacenar datos sobre la experiencia de los visitantes en una página web y, a continuación, facilitar el acceso a estos datos.
-feature: Componentes principales, capa de datos del cliente de Adobe
+feature: Core Components, Adobe Client Data Layer
 topics: integrations, administration, development
 audience: administrator, developer
 doc-type: technical video
@@ -9,9 +9,9 @@ activity: setup
 version: cloud-service
 kt: 6133
 thumbnail: 41243.jpg
-topic: Integraciones
-role: Desarrollador
-level: Intermedio
+topic: Integrations
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

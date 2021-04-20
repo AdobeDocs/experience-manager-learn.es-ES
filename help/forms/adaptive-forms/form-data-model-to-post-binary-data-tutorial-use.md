@@ -4,16 +4,16 @@ seo-title: Uso Del Modelo De Datos De Formulario Para Publicar Datos Binarios
 description: Publicación de datos binarios en AEM DAM mediante el modelo de datos de formulario
 seo-description: Publicación de datos binarios en AEM DAM mediante el modelo de datos de formulario
 uuid: dd344ed8-69f7-4d63-888a-3c96993fe99d
-feature: Flujo de trabajo
+feature: Workflow
 topics: integrations
 audience: developer
 doc-type: article
 activity: setup
 version: 6.4,6.5
 discoiquuid: 6e99df7d-c030-416b-83d2-24247f673b33
-topic: Desarrollo
-role: Desarrollador
-level: Intermedio
+topic: Development
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -2,10 +2,10 @@
 title: Cómo administrar el flujo de trabajo en AEM
 description: 'La administración del flujo de trabajo de AEM proporciona a un usuario más visibilidad sobre el contenido del flujo de trabajo y permite una administración más sencilla de las definiciones del modelo de flujo de trabajo. '
 version: 6.5, cloud-service
-feature: Flujo de trabajo
-topic: Administración de contenido
-role: Administrador
-level: Intermedio
+feature: Workflow
+topic: Content Management
+role: Administrator
+level: Intermediate
 kt: 2557
 thumbnail: 27848.jpg
 translation-type: tm+mt

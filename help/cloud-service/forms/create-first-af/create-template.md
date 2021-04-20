@@ -2,12 +2,12 @@
 title: Creación de una plantilla de formulario adaptable
 description: La plantilla de formulario adaptable define la estructura y el contenido inicial del formulario adaptable.
 solution: Experience Manager Forms
-type: Documentación
-role: Desarrollador
-level: Principiante, intermedio
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: Formularios adaptables
-topic: Desarrollo
+feature: Adaptive Forms
+topic: Development
 kt: 7382
 thumbnail: 332223.jpg
 translation-type: tm+mt

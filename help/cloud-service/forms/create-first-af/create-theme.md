@@ -2,12 +2,12 @@
 title: Creación de un tema de formulario adaptable
 description: El tema es una AEM biblioteca de cliente que define el aspecto de su formulario adaptable.
 solution: Experience Manager Forms
-type: Documentación
-role: Desarrollador
-level: Principiante, intermedio
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: Formularios adaptables
-topic: Desarrollo
+feature: Adaptive Forms
+topic: Development
 kt: 7386
 thumbnail: 332229.jpg
 translation-type: tm+mt

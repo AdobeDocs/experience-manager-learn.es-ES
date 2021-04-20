@@ -3,7 +3,7 @@ title: Uso del administrador de varios sitios con AEM Sites
 seo-title: Uso de interfaces de IU táctiles de Multi Site Manager con Adobe Experience Manager
 description: Live Copy Overview y Blueprint Configuration Manager son interfaces activadas para la IU táctil para trabajar con Multi Site Manager.
 seo-description: Live Copy Overview y Blueprint Configuration Manager son interfaces activadas para la IU táctil para trabajar con Multi Site Manager con Adobe Experience Manager.
-feature: Administrador de varios sitios
+feature: Multi Site Manager
 topics: localization, authoring, content-architecture
 audience: all
 doc-type: feature video
@@ -11,9 +11,9 @@ activity: use
 version: 6.3, 6.4, 6.5
 uuid: 76f295d0-78dd-429c-9129-9182b3a706a6
 discoiquuid: a0dc581e-300f-45ef-916a-1cbac0429899
-topic: Localización
-role: Profesional empresarial
-level: Principiante
+topic: Localization
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

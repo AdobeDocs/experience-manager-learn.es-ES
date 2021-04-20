@@ -4,16 +4,16 @@ seo-title: Configuración del panel Mezcla de Inversiones
 description: Esta es la parte 11 del tutorial de varios pasos para crear su primer documento interactivo de comunicaciones. En esta parte, agregaremos gráficos circulares para mostrar la combinación de inversión actual y la del modelo.
 seo-description: Esta es la parte 11 del tutorial de varios pasos para crear su primer documento interactivo de comunicaciones. En esta parte, agregaremos gráficos circulares para mostrar la combinación de inversión actual y la del modelo.
 uuid: b0132912-cb6e-4dec-8309-5125d29ad291
-feature: Comunicación interactiva
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 77de4e76-53ee-467c-a71c-d1d3ea15283b
-topic: Desarrollo
-role: Desarrollador
-level: Principiante
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

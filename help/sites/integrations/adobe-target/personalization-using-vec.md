@@ -8,9 +8,9 @@ activity: use
 version: cloud-service
 kt: 6352
 thumbnail: 6352-personalization-using-vec.jpg
-topic: Integraciones
-role: Desarrollador
-level: Intermedio
+topic: Integrations
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

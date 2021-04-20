@@ -1,7 +1,7 @@
 ---
 title: Implementación de trabajadores de Asset Compute en Adobe I/O Runtime para su uso con AEM as a Cloud Service
 description: 'Los proyectos de Asset Compute y los trabajadores que contienen deben implementarse en Adobe I/O Runtime para que los use AEM as a Cloud Service. '
-feature: Microservicios de Asset Compute
+feature: Asset Compute Microservices
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,9 +9,9 @@ audience: developer
 doc-type: tutorial
 kt: 6286
 thumbnail: KT-6286.jpg
-topic: Integraciones, desarrollo
-role: Desarrollador
-level: Intermedio, con experiencia
+topic: Integrations, Development
+role: Developer
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

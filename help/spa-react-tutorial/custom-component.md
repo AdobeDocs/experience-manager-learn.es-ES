@@ -2,7 +2,7 @@
 title: Crear un componente personalizado | Introducción al Editor de SPA de AEM y React
 description: Aprenda a crear un componente personalizado para utilizarlo con el Editor de SPA de AEM. Aprenda a desarrollar cuadros de diálogo de autor y modelos de Sling para ampliar el modelo JSON y rellenar un componente personalizado.
 sub-product: sitios
-feature: Editor SPA
+feature: SPA Editor
 doc-type: tutorial
 topics: development
 version: cloud-service
@@ -11,8 +11,8 @@ audience: developer
 kt: 5878
 thumbnail: 5878-spa-react.jpg
 topic: SPA
-role: Desarrollador
-level: Principiante
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

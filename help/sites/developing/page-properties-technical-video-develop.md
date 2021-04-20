@@ -1,9 +1,9 @@
 ---
 title: Ampliación de las propiedades de página en AEM Sites
 description: Obtenga información sobre cómo ampliar los campos de metadatos de Propiedades de página en Adobe Experience Manager Sites. En este vídeo se detalla la manera más eficaz de lograr esto mediante las funciones de la fusión de recursos de Sling.
-topic: Desarrollo
-feature: Componentes principales
-role: Desarrollador
+topic: Development
+feature: Core Components
+role: Developer
 version: cloud-service
 kt: 243
 thumbnail: 25173.jpg

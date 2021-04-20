@@ -1,10 +1,10 @@
 ---
 title: Uso de lanzamientos en AEM Sites
 description: Los lanzamientos en AEM Sites permiten crear, crear y revisar contenido para futuras versiones.
-topic: Administración de contenido
-feature: Lanzamientos
-level: Intermedio, con experiencia
-role: Administrador
+topic: Content Management
+feature: Launches
+level: Intermediate, Experienced
+role: Administrator
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 6970
 thumbnail: 331285.jpg

@@ -4,16 +4,16 @@ seo-title: Uso del flujo de trabajo Enviar paso de correo electrónico de Forms
 description: El paso Enviar correo electrónico se ha introducido en AEM Forms 6.4. Con este paso, podemos crear procesos o flujos de trabajo empresariales que le permitan enviar correos electrónicos con o sin archivos adjuntos. El siguiente vídeo muestra los pasos para configurar el componente de envío de correo electrónico
 seo-description: El paso Enviar correo electrónico se ha introducido en AEM Forms 6.4. Con este paso, podemos crear procesos o flujos de trabajo empresariales que le permitan enviar correos electrónicos con o sin archivos adjuntos. El siguiente vídeo muestra los pasos para configurar el componente de envío de correo electrónico
 uuid: d054ebfb-3b9b-4ca4-8355-0eb0ee7febcb
-feature: Flujo de trabajo
+feature: Workflow
 topics: integrations
 audience: developer
 doc-type: technical video
 activity: setup
 version: 6.4,6.5
 discoiquuid: 3a11f602-2f4c-423a-baef-28824c0325a1
-topic: Desarrollo
-role: Desarrollador
-level: Principiante
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -4,7 +4,7 @@ seo-title: Adición de componentes al panel Ingresos
 description: Añadiremos una tabla al panel Ingresos . Configure las filas de tabla y utilice el editor de reglas para calcular el total general.
 seo-description: Añadiremos una tabla al panel Ingresos . Configure las filas de tabla y utilice el editor de reglas para calcular el total general.
 uuid: d5c98561-c559-4624-976a-7a1486da7e69
-feature: Formularios adaptables
+feature: Adaptive Forms
 topics: authoring
 audience: developer
 doc-type: tutorial
@@ -13,9 +13,9 @@ version: 6.4,6.5
 thumbnail: 22198.jpg
 kt: 4211
 discoiquuid: fa483260-38ff-40d8-96a7-1de11d8b792b
-topic: Desarrollo
-role: Desarrollador
-level: Principiante
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

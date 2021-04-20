@@ -2,14 +2,14 @@
 title: Conjuntos de medios mixtos, imágenes, muestras y giros
 description: Una de las capacidades más útiles y poderosas de Dynamic Media Classic es su compatibilidad con la creación de conjuntos de medios enriquecidos como imágenes, muestras, giros y conjuntos de medios mixtos. Descubra qué es cada conjunto de medios enriquecidos y cómo crear cada tipo en Dynamic Media Classic. A continuación, obtenga más información sobre los ajustes preestablecidos de conjuntos de lotes, que automatizan el proceso de creación de conjuntos de medios enriquecidos al cargarlos.
 sub-product: dynamic-media
-feature: Dynamic Media Classic, Conjuntos de imágenes, Conjuntos de medios mixtos, Conjuntos de giros
+feature: Dynamic Media Classic, Image Sets, Mix Media Sets, Spin Sets
 doc-type: tutorial
 topics: sets, development, authoring, configuring
 audience: all
 activity: use
-topic: Administración de contenido
-role: Profesional empresarial
-level: Principiante
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

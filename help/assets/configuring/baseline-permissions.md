@@ -2,13 +2,13 @@
 title: Permisos de línea de base
 description: La administración del acceso de los usuarios en las carpetas de recursos de línea de base es un aspecto crítico de la gobernanza y garantiza que los procesos se puedan admitir correctamente.
 sub-product: activos
-feature: Administración de activos
+feature: Asset Management
 version: cloud-service
 kt: 4870
 thumbnail: 37696.jpg
-topic: Administración de contenido
-role: Profesional empresarial
-level: Principiante
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

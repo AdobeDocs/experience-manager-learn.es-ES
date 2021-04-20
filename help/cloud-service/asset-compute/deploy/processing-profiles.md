@@ -1,7 +1,7 @@
 ---
 title: Integración de los trabajadores de Asset Compute con Perfiles de procesamiento de AEM
 description: AEM as a Cloud Service se integra con los trabajadores de Asset Compute implementados en Adobe I/O Runtime mediante Perfiles de procesamiento de AEM Assets. Los perfiles de procesamiento se configuran en el servicio Autor para procesar recursos específicos mediante trabajadores personalizados y almacenar los archivos generados por los trabajadores como representaciones de recursos.
-feature: Microservicios de Asset Compute
+feature: Asset Compute Microservices
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,9 +9,9 @@ audience: developer
 doc-type: tutorial
 kt: 6287
 thumbnail: KT-6287.jpg
-topic: Integraciones, desarrollo
-role: Desarrollador
-level: Intermedio, con experiencia
+topic: Integrations, Development
+role: Developer
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

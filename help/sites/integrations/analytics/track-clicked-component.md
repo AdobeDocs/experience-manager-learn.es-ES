@@ -1,7 +1,7 @@
 ---
 title: Seguimiento del componente en el que se hizo clic con Adobe Analytics
 description: Utilice la capa de datos del cliente de Adobe impulsada por evento para rastrear clics de componentes específicos en un sitio de Adobe Experience Manager. Obtenga información sobre cómo utilizar las reglas en Experience Platform Launch para detectar estos eventos y enviar datos a un Adobe Analytics con una señalización de seguimiento de vínculos.
-feature: análisis
+feature: analytics
 topics: integrations
 audience: administrator
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: setup
 version: cloud-service
 kt: 6296
 thumbnail: KT-6296.jpg
-topic: Integraciones
-role: Desarrollador
-level: Intermedio
+topic: Integrations
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

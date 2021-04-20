@@ -2,12 +2,12 @@
 title: Creación de fragmentos de formulario adaptables
 description: Un fragmento es una parte reutilizable de un formulario. Por ejemplo, un fragmento puede incluir un bloque de direcciones o texto legal.
 solution: Experience Manager Forms
-type: Documentación
-role: Desarrollador
-level: Principiante, intermedio
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: Formularios adaptables
-topic: Desarrollo
+feature: Adaptive Forms
+topic: Development
 kt: 7383
 thumbnail: 332231.jpg
 translation-type: tm+mt

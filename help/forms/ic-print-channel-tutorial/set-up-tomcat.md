@@ -4,7 +4,7 @@ seo-title: Instalación y configuración de Tomcat
 description: Esta es la parte 1 del tutorial de varios pasos para crear su primer documento interactivo de comunicaciones. En esta parte, instalaremos TOMCAT e implementaremos el archivo sampleRest.war en TOMCAT. El punto final de REST expuesto por este archivo WAR será la base de nuestra fuente de datos y del modelo de datos de formulario.
 seo-description: Esta es la parte 1 del tutorial de varios pasos para crear su primer documento interactivo de comunicaciones. En esta parte, instalaremos TOMCAT e implementaremos el archivo sampleRest.war en TOMCAT. El punto final de REST expuesto por este archivo WAR será la base de nuestra fuente de datos y del modelo de datos de formulario.
 uuid: 835e2342-82b6-4f0c-9a6b-467bbbd8527a
-feature: Comunicación interactiva
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
@@ -12,9 +12,9 @@ activity: implement
 version: 6.4,6.5
 thumbnail: 37815.jpg
 discoiquuid: 5f68be3d-aa35-4a3f-aaea-b8ee213c87ae
-topic: Desarrollo
-role: Desarrollador
-level: Principiante
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

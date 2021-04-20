@@ -4,16 +4,16 @@ seo-title: 'Generación de token web y token de acceso de JSON '
 description: Este artículo explica el código necesario para generar el JWT y el token de acceso necesarios para realizar llamadas REST a Adobe Campaign Standard
 seo-description: Este artículo explica el código necesario para generar el JWT y el token de acceso necesarios para realizar llamadas REST a Adobe Campaign Standard
 uuid: 5b780eee-1e7c-4e1c-a164-49ce64939b91
-feature: Formularios adaptables, Modelo de datos de formulario
+feature: Adaptive Forms, Form Data Model
 topics: integrations
 audience: developer
 doc-type: tutorial
 activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: cc268946-a7e4-42b3-bfad-5509e215871a
-topic: Desarrollo
-role: Desarrollador
-level: Con experiencia
+topic: Development
+role: Developer
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

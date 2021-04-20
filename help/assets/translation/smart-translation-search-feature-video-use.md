@@ -2,10 +2,10 @@
 title: Uso de la búsqueda de traducción inteligente con AEM Assets
 description: La búsqueda de traducción inteligente permite la búsqueda y la detección entre idiomas automáticamente en todo el contenido de AEM, tanto en Assets como en Páginas, admite más de 50 idiomas y reduce la necesidad de la traducción manual del contenido.
 version: 6.3, 6.4, 6.5
-feature: 'Búsqueda  '
-topic: Administración de contenido
-role: Profesional empresarial
-level: Principiante
+feature: Search
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

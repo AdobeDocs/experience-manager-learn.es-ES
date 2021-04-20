@@ -2,7 +2,7 @@
 title: Asignación de componentes de SPA a componentes de AEM | Introducción a AEM SPA Editor y Angular
 description: Obtenga información sobre cómo asignar componentes angulares a componentes de Adobe Experience Manager (AEM) con el SDK de JS del Editor de SPA de AEM. La asignación de componentes permite a los usuarios realizar actualizaciones dinámicas de los componentes de SPA dentro del Editor de SPA de AEM, de forma similar a la creación tradicional de AEM.
 sub-product: sitios
-feature: Editor SPA
+feature: SPA Editor
 topics: development
 doc-type: tutorial
 version: cloud-service
@@ -11,8 +11,8 @@ audience: developer
 kt: 5311
 thumbnail: 5311-spa-angular.jpg
 topic: SPA
-role: Desarrollador
-level: Principiante
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

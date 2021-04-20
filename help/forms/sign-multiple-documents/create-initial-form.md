@@ -1,7 +1,7 @@
 ---
 title: Creación del formulario inicial para activar el proceso
 description: Cree un formulario inicial para activar la notificación por correo electrónico para iniciar el proceso de firma.
-feature: Formularios adaptables
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: implement
 version: 6.4,6.5
 kt: 6892
 thumbnail: 6892.jpg
-topic: Desarrollo
-role: Profesional empresarial
-level: Intermedio
+topic: Development
+role: Business Practitioner
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

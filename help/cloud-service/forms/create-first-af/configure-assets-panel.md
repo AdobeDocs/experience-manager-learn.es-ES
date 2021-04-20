@@ -2,12 +2,12 @@
 title: Configuración del panel de recursos
 description: Agregue un panel Diseño de acordeón al panel Recursos.
 solution: Experience Manager Forms
-type: Documentación
-role: Desarrollador
-level: Principiante, intermedio
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: Formularios adaptables
-topic: Desarrollo
+feature: Adaptive Forms
+topic: Development
 kt: 7380
 thumbnail: 332232.jpg
 translation-type: tm+mt

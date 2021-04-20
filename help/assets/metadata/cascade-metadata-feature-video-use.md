@@ -2,10 +2,10 @@
 title: Uso de metadatos en cascada en AEM Assets
 description: La administración avanzada de metadatos permite a los usuarios crear reglas de campo en cascada para formar relaciones contextuales entre metadatos en AEM Assets. El siguiente vídeo muestra nuevas reglas dinámicas para requisitos de campo, visibilidad y opciones contextuales. El vídeo también detalla los pasos necesarios para que un administrador aplique estas reglas a un esquema de metadatos personalizado.
 version: 6.3, 6.4, 6.5, cloud-service
-topic: Administración de contenido
-feature: Metadatos
-role: Profesional del negocio
-level: Intermedio
+topic: Content Management
+feature: Metadata
+role: Business Practitioner
+level: Intermediate
 kt: 616
 thumbnail: 20702.jpg
 translation-type: tm+mt

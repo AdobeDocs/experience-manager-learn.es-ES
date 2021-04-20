@@ -2,12 +2,12 @@
 title: Cree un archivo de intercambio para describir la API de REST de Salesforce
 description: El archivo Swagger definirá los extremos de la API y los parámetros de entrada y salida
 solution: Experience Manager, Experience Manager Forms
-type: Documentación
-role: Desarrollador
-level: Principiante, intermedio
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: Formularios adaptables
-topic: Desarrollo
+feature: Adaptive Forms
+topic: Development
 kt: 7147
 thumbnail: 331754.jpg
 translation-type: tm+mt

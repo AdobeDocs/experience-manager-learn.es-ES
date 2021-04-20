@@ -2,12 +2,12 @@
 title: Configuración del panel de ingresos
 description: Agregue el componente de tabla al panel de ingresos.
 solution: Experience Manager Forms
-type: Documentación
-role: Desarrollador
-level: Principiante, intermedio
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: Formularios adaptables
-topic: Desarrollo
+feature: Adaptive Forms
+topic: Development
 kt: 7379
 thumbnail: 332233.jpg
 translation-type: tm+mt

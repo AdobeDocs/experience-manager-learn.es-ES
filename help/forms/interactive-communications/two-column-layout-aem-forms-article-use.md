@@ -3,15 +3,15 @@ title: Creación de dos diseños de columna para documentos de canal de impresi�
 seo-title: Creación de dos diseños de columna para documentos de canal de impresión
 description: Creación de dos diseños de columna para el documento de canal de impresión
 seo-description: Creación de dos diseños de columna para el documento de canal de impresión
-feature: Comunicación interactiva
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-topic: Desarrollo
-role: Desarrollador
-level: Intermedio
+topic: Development
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

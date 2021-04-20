@@ -4,14 +4,14 @@ description: Los tokens de acceso de desarrollo local de AEM se utilizan para ac
 version: cloud-service
 doc-type: tutorial
 topics: Development, Security
-feature: API
+feature: APIs
 activity: develop
 audience: developer
 kt: 6785
 thumbnail: 330477.jpg
-topic: Integraciones sin encabezado
-role: Desarrollador
-level: Intermedio, con experiencia
+topic: Headless, Integrations
+role: Developer
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

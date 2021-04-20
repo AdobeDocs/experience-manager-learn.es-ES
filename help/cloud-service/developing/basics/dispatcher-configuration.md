@@ -1,10 +1,10 @@
 ---
 title: Cómo migrar una configuración de AMS Dispatcher existente a AEM as a Cloud Service
 description: Sugerencias y trucos para migrar la configuración de AEM Dispatcher de Adobe Managed Services (AMS) a AEM as a Cloud Service.
-role: Arquitecto, Desarrollador
-level: Principiante
+role: Architect, Developer
+level: Beginner
 type: Tutorial
-topic: Desarrollo, migración
+topic: Development, Migration
 feature: Dispatcher
 kt: 6931
 thumbnail: 330556.jpg

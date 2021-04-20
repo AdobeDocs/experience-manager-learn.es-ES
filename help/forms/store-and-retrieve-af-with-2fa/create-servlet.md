@@ -1,7 +1,7 @@
 ---
 title: Crear servlet
 description: Cree un servlet para gestionar las solicitudes POST y guardar los datos del formulario
-feature: Formularios adaptables
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: implement
 version: 6.4,6.5
 kt: 6539
 thumbnail: 6539.pg
-topic: Desarrollo
-role: Desarrollador
-level: Con experiencia
+topic: Development
+role: Developer
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

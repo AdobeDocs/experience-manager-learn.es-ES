@@ -2,10 +2,10 @@
 title: Cómo utilizar la bandeja de entrada en AEM
 description: La bandeja de entrada de AEM facilita una mayor colaboración y visibilidad de las tareas y el flujo de trabajo.
 version: 6.3, 6.4, 6.5, cloud-service
-topic: Colaboración
-feature: Bandeja de entrada
-role: Profesional empresarial
-level: Intermedio
+topic: Collaboration
+feature: Inbox
+role: Business Practitioner
+level: Intermediate
 kt: 159
 thumbnail: 16827.jpg
 translation-type: tm+mt

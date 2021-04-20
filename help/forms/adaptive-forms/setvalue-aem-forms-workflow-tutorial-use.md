@@ -4,15 +4,15 @@ seo-title: Uso de setvalue en el flujo de trabajo de AEM Forms
 description: Establecer el valor del elemento en los datos enviados por formularios adaptables en AEM Forms OSGI
 seo-description: Establecer el valor del elemento en los datos enviados por formularios adaptables en AEM Forms OSGI
 uuid: fe431e48-f05b-4b23-94d2-95d34d863984
-feature: Formularios adaptables
+feature: Adaptive Forms
 topics: developing
 audience: implementer
 doc-type: article
 activity: setup
 discoiquuid: dbd87302-f770-4e61-b5ad-3fc5831b4613
-topic: Desarrollo
-role: Desarrollador
-level: Con experiencia
+topic: Development
+role: Developer
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

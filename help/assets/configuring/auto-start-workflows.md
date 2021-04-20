@@ -2,13 +2,13 @@
 title: Flujos de trabajo de inicio automático
 description: Los flujos de trabajo de inicio automático amplían el procesamiento de recursos invocando automáticamente el flujo de trabajo personalizado al cargar o al volver a procesar.
 sub-product: activos
-feature: Microservicios de Asset Compute, flujo de trabajo
+feature: Asset Compute Microservices, Workflow
 version: cloud-service
 kt: 4994
 thumbnail: 37323.jpg
-topic: Desarrollo
-role: Desarrollador
-level: Intermedio
+topic: Development
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

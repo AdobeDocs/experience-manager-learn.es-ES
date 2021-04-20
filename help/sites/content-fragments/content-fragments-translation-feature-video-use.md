@@ -1,10 +1,10 @@
 ---
 title: Compatibilidad de traducción para fragmentos de contenido de AEM
 description: Descubra cómo se pueden localizar y traducir los fragmentos de contenido con Adobe Experience Manager. Los recursos de medios mixtos asociados a un fragmento de contenido también pueden extraerse y traducirse.
-feature: Fragmentos de contenido, administrador de varios sitios
-topic: Localización
-role: Profesional empresarial
-level: Intermedio
+feature: Content Fragments, Multi Site Manager
+topic: Localization
+role: Business Practitioner
+level: Intermediate
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 201
 thumbnail: 18131.jpg

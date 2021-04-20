@@ -3,15 +3,15 @@ title: 'Envío de un documento de comunicación interactiva: canal web AEM Forms
 seo-title: 'Envío de un documento de comunicación interactiva: canal web AEM Forms'
 description: Envío del documento del canal web mediante un vínculo en el correo electrónico
 seo-description: Envío del documento del canal web mediante un vínculo en el correo electrónico
-feature: Comunicación interactiva
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-topic: Desarrollo
-role: Desarrollador
-level: Principiante
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

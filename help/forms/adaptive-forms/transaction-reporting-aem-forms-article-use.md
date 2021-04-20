@@ -4,16 +4,16 @@ seo-title: Uso de informes de transacciones en AEM Forms
 description: Los informes de transacciones en AEM Forms le permiten mantener un recuento de todas las transacciones realizadas desde una fecha especificada en su implementación de AEM Forms.
 seo-description: Los informes de transacciones en AEM Forms le permiten mantener un recuento de todas las transacciones realizadas desde una fecha especificada en su implementación de AEM Forms.
 uuid: e6133f7e-c79c-4006-89e7-3bebf7b8229e
-feature: Formularios adaptables
+feature: Adaptive Forms
 topics: developing
 audience: administrator
 doc-type: article
 activity: setup
 version: 6.4.1,6.5
 discoiquuid: 1abdf07a-b9f0-4c58-a1c6-08ae57db2014
-topic: Desarrollo
-role: Desarrollador
-level: Principiante
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

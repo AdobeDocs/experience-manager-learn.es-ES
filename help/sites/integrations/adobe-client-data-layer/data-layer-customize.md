@@ -1,7 +1,7 @@
 ---
 title: Personalización de la capa de datos del cliente de Adobe con componentes AEM
 description: Obtenga información sobre cómo personalizar la capa de datos del cliente de Adobe con contenido de componentes personalizados de AEM. Aprenda a utilizar las API proporcionadas por los componentes principales de AEM para ampliar y personalizar la capa de datos.
-feature: Capa de datos del cliente de Adobe, componente principal
+feature: Adobe Client Data Layer, Core Component
 topics: integrations
 audience: developer
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: use
 version: cloud-service
 kt: 6265
 thumbnail: KT-6265.jpg
-topic: Integraciones
-role: Desarrollador
-level: Intermedio, con experiencia
+topic: Integrations
+role: Developer
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

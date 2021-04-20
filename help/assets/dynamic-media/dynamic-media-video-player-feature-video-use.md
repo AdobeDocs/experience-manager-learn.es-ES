@@ -2,11 +2,11 @@
 title: Uso del reproductor de vídeo en AEM Dynamic Media
 description: El reproductor de vídeo de AEM Dynamic Media solía confiar en el tiempo de ejecución de Flash para admitir la transmisión de vídeo adaptable en clientes de escritorio y los navegadores se volvieron más agresivos con la transmisión de contenido basada en Flash. Con la introducción de HLS (el protocolo de entrega de vídeo de transmisión en directo HTTP de Apple), el contenido ahora se puede transmitir sin depender del flash.
 sub-product: dynamic-media
-feature: Perfiles de vídeo
+feature: Video Profiles
 version: 6.3, 6.4, 6.5
-topic: Administración de contenido
-role: Profesional empresarial
-level: Principiante
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

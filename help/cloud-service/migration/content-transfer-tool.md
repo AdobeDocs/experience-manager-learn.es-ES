@@ -4,14 +4,14 @@ description: La herramienta de transferencia de contenido es la forma recomendad
 version: cloud-service
 doc-type: technical-video
 topics: migration
-feature: Migración
+feature: Migration
 activity: develop
 audience: developer
 kt: 5352
 thumbnail: kt-5352.jpg
-topic: Migración
-role: Arquitecto, Desarrollador
-level: Principiante
+topic: Migration
+role: Architect, Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

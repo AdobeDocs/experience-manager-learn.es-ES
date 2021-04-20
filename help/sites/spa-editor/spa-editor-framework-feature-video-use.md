@@ -3,7 +3,7 @@ title: Uso del Editor de SPA con AEM Sites
 seo-title: Uso del marco del Editor de SPA con AEM Sites
 description: El marco de trabajo del editor de aplicaciones de una sola página de AEM permite a los autores editar contenido para una aplicación de una sola página o SPA. Los desarrolladores que utilizan los marcos React o Angular crean una SPA y, a continuación, asignan áreas de la SPA a los componentes de AEM, lo que permite a los autores utilizar herramientas de edición familiares de AEM Sites.
 sub-product: sitios, servicios de contenido
-feature: Editor de Spa
+feature: Spa Editor
 topics: authoring, single-page-applications
 audience: all
 doc-type: feature video
@@ -12,8 +12,8 @@ version: 6.4, 6.5, cloud-service
 kt: 1047
 thumbnail: 22229.jpg
 topic: SPA
-role: Desarrollador
-level: Principiante
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

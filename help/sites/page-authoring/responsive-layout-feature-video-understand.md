@@ -3,7 +3,7 @@ title: Explicación del diseño interactivo con AEM Sites
 seo-title: Explicación del diseño interactivo con AEM Sites
 description: AEM le permite disponer de un diseño interactivo para sus páginas mediante el uso del componente Contenedor de diseño. Con el diseño interactivo, los autores de contenido pueden crear contenido interactivo para distintos dispositivos y previsualizar la experiencia del usuario final en AEM.
 seo-description: Abarca los pasos para crear un diseño interactivo para diferentes dispositivos
-feature: Editor de páginas, plantillas editables
+feature: Page Editor, Editable Templates
 topics: authoring, responsive
 audience: author, marketer
 doc-type: feature video
@@ -11,9 +11,9 @@ activity: use
 version: 6.3, 6.4, 6.5
 kt: 4252
 thumbnail: 32012.jpg
-topic: Administración de contenido
-role: Profesional empresarial
-level: Intermedio
+topic: Content Management
+role: Business Practitioner
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

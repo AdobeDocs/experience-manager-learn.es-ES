@@ -1,7 +1,7 @@
 ---
 title: Resolución de problemas de la extensibilidad de Asset Compute para AEM Assets
 description: A continuación se muestra un índice de problemas y errores comunes, junto con las resoluciones, que podrían producirse al desarrollar e implementar trabajadores personalizados de Asset Compute para AEM Assets.
-feature: Microservicios de Asset Compute
+feature: Asset Compute Microservices
 topics: renditions, metadata, development
 version: cloud-service
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: develop
 audience: developer
 kt: 5802
 thumbnail: KT-5802.jpg
-topic: Integraciones, desarrollo
-role: Desarrollador
-level: Intermedio, con experiencia
+topic: Integrations, Development
+role: Developer
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

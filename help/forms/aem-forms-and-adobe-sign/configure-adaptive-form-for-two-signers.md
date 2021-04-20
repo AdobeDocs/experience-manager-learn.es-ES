@@ -1,16 +1,16 @@
 ---
 title: Acuerdo de alquiler con 2 firmantes
 description: Acuerdo de alquiler con 2 firmantes. En el vídeo se explican los distintos pasos necesarios para configurar un formulario adaptable con 2 firmantes.
-feature: Formularios adaptables,Adobe Sign
+feature: Adaptive Forms,Adobe Sign
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 thumbnail: 39294.jpg
 kt: 6071
-topic: Desarrollo
-role: Administrador
-level: Principiante
+topic: Development
+role: Administrator
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

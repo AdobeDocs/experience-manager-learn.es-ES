@@ -3,11 +3,11 @@ title: Aplicación de escritorio AEM
 description: Utilice AEM Desktop App para simplificar el acceso a cualquier recurso administrado en AEM en el escritorio, para cualquier aplicación y formato de archivo.
 kt: 2551
 sub-product: activos
-feature: Aplicación de escritorio de Experience Manager
+feature: Experience Manager Desktop App
 version: 6.5, 6.4, 6.3
-topic: Administración de contenido
-role: Profesional empresarial
-level: Principiante
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

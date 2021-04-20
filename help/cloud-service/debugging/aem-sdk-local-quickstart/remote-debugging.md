@@ -1,16 +1,16 @@
 ---
 title: Depuración remota del SDK de AEM
 description: El inicio rápido local del SDK de AEM permite la depuración remota de Java desde su IDE, lo que le permite avanzar en la ejecución del código en directo en AEM para comprender el flujo de ejecución exacto.
-feature: Herramientas para desarrolladores
+feature: Developer Tools
 topics: development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5251
-topic: Desarrollo
-role: Desarrollador
-level: Principiante, intermedio
+topic: Development
+role: Developer
+level: Beginner, Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

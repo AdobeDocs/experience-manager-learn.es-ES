@@ -2,12 +2,12 @@
 title: Cree su primer formulario adaptable
 description: Vídeo de introducción al curso sobre la creación de su primer formulario adaptable
 solution: Experience Manager Forms
-type: Documentación
-role: Desarrollador
-level: Principiante, intermedio
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: Formularios adaptables
-topic: Desarrollo
+feature: Adaptive Forms
+topic: Development
 kt: 7464
 thumbnail: 332571.jpg
 translation-type: tm+mt

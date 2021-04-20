@@ -2,9 +2,9 @@
 title: 'Explicación de los archivos de InDesign y las plantillas de recursos en AEM Assets '
 description: Este tutorial de vídeo explica cómo definir un archivo de InDesign y todas las consideraciones que lo acompañan para utilizarlo en la función de plantillas de recursos de AEM Assets.
 version: 6.3, 6.4, 6.5
-topic: Administración de contenido
-role: Profesional empresarial
-level: Intermedio
+topic: Content Management
+role: Business Practitioner
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -4,7 +4,7 @@ seo-title: Crear diseño con Forms Designer
 description: Esta es la parte 4 del tutorial en varias partes para crear su primer documento de comunicación interactivo para el canal de impresión.En esta parte, se analiza el archivo de diseño creado con AEM Forms Designer.
 seo-description: Esta es la parte 4 del tutorial en varias partes para crear su primer documento de comunicación interactivo para el canal de impresión.En esta parte, se analiza el archivo de diseño creado con AEM Forms Designer.
 uuid: 2f014c58-1ae1-40e8-a45d-7ffe9c86f693
-feature: Comunicación interactiva
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
@@ -13,9 +13,9 @@ version: 6.4,6.5
 discoiquuid: 17f4cdbb-079b-4fe3-861d-cfa0c03d30dd
 kt: 5957
 thumbnail: 37890.jpg
-topic: Desarrollo
-role: Desarrollador
-level: Principiante
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

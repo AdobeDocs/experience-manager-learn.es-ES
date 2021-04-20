@@ -4,16 +4,16 @@ seo-title: Uso del servicio del modelo de datos de formulario como paso del fluj
 description: A partir de AEM Forms 6.4, ahora se puede utilizar el modelo de datos de formulario como parte de AEM Workflow. El siguiente vídeo recorre los pasos necesarios para configurar el paso del Modelo de datos de formulario en AEM Workflow.
 seo-description: A partir de AEM Forms 6.4, ahora se puede utilizar el modelo de datos de formulario como parte de AEM Workflow. El siguiente vídeo recorre los pasos necesarios para configurar el paso del Modelo de datos de formulario en AEM Workflow.
 uuid: ecd5d5aa-01eb-48fb-872f-66c656ae14df.
-feature: Flujo de trabajo
+feature: Workflow
 topics: integrations
 audience: developer
 doc-type: technical video
 activity: setup
 version: 6.4,6.5
 discoiquuid: c442f439-1e5d-4f96-85df-b818c28389ff
-topic: Desarrollo
-role: Desarrollador
-level: Intermedio
+topic: Development
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

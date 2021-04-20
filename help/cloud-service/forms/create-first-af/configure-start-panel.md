@@ -2,12 +2,12 @@
 title: Configuración del panel de inicio
 description: Agregue un componente de texto estático al panel de inicio.
 solution: Experience Manager Forms
-type: Documentación
-role: Desarrollador
-level: Principiante, intermedio
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: Formularios adaptables
-topic: Desarrollo
+feature: Adaptive Forms
+topic: Development
 kt: 7388
 thumbnail: 332235.jpg
 translation-type: tm+mt

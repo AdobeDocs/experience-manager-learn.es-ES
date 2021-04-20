@@ -1,15 +1,15 @@
 ---
 title: Cómo codificar para el sistema de estilos de AEM
 description: En este vídeo, echaremos un vistazo a la anatomía de CSS (o LESS) y JavaScript que se usan para aplicar estilo al componente de título principal de Adobe Experience Manager mediante el sistema de estilos, así como a cómo se aplican estos estilos al HTML y al DOM.
-feature: Sistema de estilos
+feature: Style System
 topics: development, components, front-end-development
 audience: developer, implementer
 doc-type: technical video
 activity: understand
 version: 6.4, 6.5
-topic: Desarrollo
-role: Desarrollador
-level: Intermedio, con experiencia
+topic: Development
+role: Developer
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

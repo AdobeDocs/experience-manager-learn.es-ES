@@ -1,11 +1,11 @@
 ---
 title: Uso de recursos conectados con AEM Sites
 description: La función Recursos conectados permite a un autor de AEM Sites compartir sin problemas recursos digitales alojados en una instancia diferente de AEM.
-feature: Recursos conectados
+feature: Connected Assets
 version: 6.5
-topic: Administración de contenido
-role: Desarrollador
-level: Intermedio
+topic: Content Management
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

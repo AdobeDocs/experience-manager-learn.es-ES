@@ -1,7 +1,7 @@
 ---
 title: Configuración de cuentas y servicios para la extensibilidad de Asset Compute
 description: El desarrollo de los trabajadores de Asset Compute requiere acceso a cuentas y servicios, incluido AEM as a Cloud Service, Adobe Project Firefly y almacenamiento en la nube, que proporciona Microsoft o Amazon.
-feature: Microservicios de Asset Compute
+feature: Asset Compute Microservices
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,9 +9,9 @@ audience: developer
 doc-type: tutorial
 kt: 6264
 thumbnail: 40377.jpg
-topic: Integraciones, desarrollo
-role: Desarrollador
-level: Intermedio, con experiencia
+topic: Integrations, Development
+role: Developer
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

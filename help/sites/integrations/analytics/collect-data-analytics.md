@@ -1,7 +1,7 @@
 ---
 title: Recopilación de datos de página con Adobe Analytics
 description: Utilice la capa de datos del cliente de Adobe impulsada por evento para recopilar datos sobre la actividad del usuario en un sitio web creado con Adobe Experience Manager. Obtenga información sobre cómo utilizar las reglas en Experience Platform Launch para detectar estos eventos y enviar datos a un grupo de informes de Adobe Analytics.
-feature: análisis
+feature: analytics
 topics: integrations
 audience: administrator
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: setup
 version: cloud-service
 kt: 5332
 thumbnail: 5332-collect-data-analytics.jpg
-topic: Integraciones
-role: Desarrollador
-level: Intermedio
+topic: Integrations
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

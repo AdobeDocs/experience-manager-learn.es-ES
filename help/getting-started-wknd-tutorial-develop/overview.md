@@ -11,10 +11,10 @@ KT: 4132
 mini-toc-levels: 1
 index: y
 thumbnail: 30476.jpg
-feature: Componentes principales, Editor de páginas, Plantillas editables, Tipo de archivo del proyecto AEM
-topic: Gestión de contenido, desarrollo
-role: Desarrollador
-level: Principiante
+feature: Core Components, Page Editor, Editable Templates, AEM Project Archetype
+topic: Content Management, Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

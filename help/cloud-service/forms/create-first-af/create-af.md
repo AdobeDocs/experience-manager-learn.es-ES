@@ -2,12 +2,12 @@
 title: Crear formulario adaptable
 description: Cree un formulario adaptable y configúrelo en la plantilla creada.
 solution: Experience Manager Forms
-type: Documentación
-role: Desarrollador
-level: Principiante, intermedio
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: Formularios adaptables
-topic: Desarrollo
+feature: Adaptive Forms
+topic: Development
 kt: 7376
 thumbnail: 332237.jpg
 translation-type: tm+mt

@@ -5,10 +5,10 @@ description: ¿Es novato en el desarrollo de AEM? ¿Necesita un repaso sobre las
 seo-description: ¿Es novato en el desarrollo de AEM? ¿Necesita un repaso sobre las prácticas recomendadas? ¡Este es el lugar para empezar! El objetivo de este tutorial en varias partes es enseñar a un desarrollador nuevo en AEM a implementar un sitio web en AEM utilizando los estándares y tecnologías más recientes.
 content-type: reference
 topic-tags: introduction
-feature: Tipo de archivo del proyecto AEM, Componentes principales, Editor de páginas, Plantillas editables
-topic: Desarrollo
-role: Desarrollador
-level: Principiante
+feature: AEM Project Archetype, Core Components, Page Editor, Editable Templates
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

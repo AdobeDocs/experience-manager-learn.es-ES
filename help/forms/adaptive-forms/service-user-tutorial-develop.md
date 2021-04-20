@@ -4,15 +4,15 @@ seo-title: Desarrollo con usuarios de servicios en AEM Forms
 description: Este artículo lo acompaña durante el proceso de creación de un usuario de servicio en AEM Forms
 seo-description: Este artículo lo acompaña durante el proceso de creación de un usuario de servicio en AEM Forms
 uuid: 996f30df-3fc5-4232-a104-b92e1bee4713
-feature: Formularios adaptables
+feature: Adaptive Forms
 topics: development,administration
 audience: implementer,developer
 doc-type: article
 activity: setup
 discoiquuid: 65bd4695-e110-48ba-80ec-2d36bc53ead2
-topic: Desarrollo
-role: Desarrollador
-level: Con experiencia
+topic: Development
+role: Developer
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

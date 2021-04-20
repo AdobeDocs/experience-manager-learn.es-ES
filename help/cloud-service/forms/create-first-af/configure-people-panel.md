@@ -2,12 +2,12 @@
 title: Configuración del panel Personas
 description: Configure el panel Personas agregando el fragmento de detalles del cónyuge.
 solution: Experience Manager Forms
-type: Documentación
-role: Desarrollador
-level: Principiante, intermedio
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: Formularios adaptables
-topic: Desarrollo
+feature: Adaptive Forms
+topic: Development
 kt: 7378
 thumbnail: 332234.jpg
 translation-type: tm+mt

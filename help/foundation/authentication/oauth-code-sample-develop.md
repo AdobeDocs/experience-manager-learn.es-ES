@@ -2,14 +2,14 @@
 title: Desarrollo de ámbitos de OAuth en AEM
 description: Los ámbitos OAuth ampliables de Adobe Experience Manager permiten el control de acceso para los recursos de una aplicación cliente autorizada por un usuario final. El diagrama siguiente ilustra el flujo de solicitudes en el contexto de AEM.
 version: 6.3, 6.4, 6.5
-feature: 'Usuarios y grupos '
+feature: Users and Groups
 topics: authentication, security
 activity: develop
 audience: developer
 doc-type: code
-topic: Desarrollo
-role: Desarrollador
-level: Con experiencia
+topic: Development
+role: Developer
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

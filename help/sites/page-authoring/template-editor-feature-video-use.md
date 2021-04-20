@@ -3,16 +3,16 @@ title: Uso de plantillas de página editables con AEM Sites
 seo-title: Uso de plantillas de página editables con Adobe Experience Manager Sites
 description: Las plantillas editables permiten a los autores especializados crear y actualizar plantillas de página y administrar configuraciones de políticas avanzadas con AEM Sites.
 seo-description: Las plantillas editables permiten a los autores especializados crear y actualizar plantillas de página y administrar configuraciones de políticas avanzadas con Adobe Experience Manager Sites.
-feature: Plantillas editables
+feature: Editable Templates
 topics: authoring
 audience: all
 doc-type: feature video
 activity: use
 version: 6.3, 6.4, 6.5
 kt: 193
-topic: Administración de contenido
-role: Profesional empresarial
-level: Principiante
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

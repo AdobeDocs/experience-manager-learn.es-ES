@@ -1,10 +1,10 @@
 ---
 title: ¿Qué es el aumento de búsqueda en AEM Assets?
 description: Descubra cómo agregar palabras y frases clave para aumentar la relevancia de búsqueda de un recurso en Adobe Experience Manager.
-topic: Administración de contenido
-feature: 'Búsqueda  '
-role: Profesional del negocio
-level: Intermedio
+topic: Content Management
+feature: Search
+role: Business Practitioner
+level: Intermediate
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 103
 thumbnail: 16766.jpg

@@ -2,12 +2,12 @@
 title: Cree la aplicación conectada a Salesforce.
 description: La aplicación conectada le permite integrar Salesforce con aplicaciones de terceros, como AEM Forms, con Salesforce.
 solution: Experience Manager, Experience Manager Forms
-type: Documentación
-role: Desarrollador
-level: Principiante, intermedio
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: Formularios adaptables
-topic: Desarrollo
+feature: Adaptive Forms
+topic: Development
 kt: 7152
 thumbnail: 331757.jpg
 translation-type: tm+mt

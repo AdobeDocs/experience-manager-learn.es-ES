@@ -1,10 +1,10 @@
 ---
 title: Informes de recursos en AEM Assets
 description: 'AEM Assets proporciona un marco de informes a nivel empresarial que se adapta a repositorios grandes mediante una experiencia de usuario intuitiva. '
-feature: Informes del recurso
-topic: Administración
-role: Profesional empresarial
-level: Intermedio
+feature: Asset Reports
+topic: Administration
+role: Business Practitioner
+level: Intermediate
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 648
 thumbnail: 22140.jpg

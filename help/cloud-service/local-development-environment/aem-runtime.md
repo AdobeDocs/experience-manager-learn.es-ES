@@ -1,7 +1,7 @@
 ---
 title: Configuración del tiempo de ejecución de AEM local para el desarrollo de AEM as a Cloud Service
 description: Configure el tiempo de ejecución de AEM local mediante el Jar de inicio rápido del SDK de AEM as a Cloud Service.
-feature: Herramientas para desarrolladores
+feature: Developer Tools
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: develop
 audience: developer
 kt: 4678, 4677
 thumbnail: 32551.jpg
-topic: Desarrollo
-role: Desarrollador
-level: Principiante
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

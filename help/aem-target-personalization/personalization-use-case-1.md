@@ -3,10 +3,10 @@ title: Personalización mediante Fragmentos de experiencia de AEM y Adobe Target
 seo-title: Personalización mediante fragmentos de experiencia de Adobe Experience Manager (AEM) y Adobe Target
 description: Un tutorial completo que muestra cómo crear y ofrecer experiencias personalizadas con fragmentos de experiencia de Adobe Experience Manager y Adobe Target.
 seo-description: Un tutorial completo que muestra cómo crear y ofrecer experiencias personalizadas con fragmentos de experiencia de Adobe Experience Manager y Adobe Target.
-feature: Fragmentos de experiencias
-topic: Personalización
-role: Desarrollador
-level: Intermedio
+feature: Experience Fragments
+topic: Personalization
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -3,15 +3,15 @@ title: Implementación del paso de proceso personalizado
 seo-title: Implementación del paso de proceso personalizado
 description: Escritura de archivos adjuntos de formularios adaptables en el sistema de archivos mediante el paso de proceso personalizado
 seo-description: Escritura de archivos adjuntos de formularios adaptables en el sistema de archivos mediante el paso de proceso personalizado
-feature: Flujo de trabajo
+feature: Workflow
 topics: development
 audience: developer
 doc-type: tutorial
 activity: understand
 version: 6.5
-topic: Desarrollo
-role: Desarrollador
-level: Con experiencia
+topic: Development
+role: Developer
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

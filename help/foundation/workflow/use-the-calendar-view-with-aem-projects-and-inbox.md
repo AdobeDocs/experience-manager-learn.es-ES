@@ -4,16 +4,16 @@ seo-title: Usar la Vista de calendario con Proyectos AEM y Bandeja de entrada
 description: 'La Vista de calendario de AEM rastrea proyectos y tareas en una vista de calendario para facilitar la gestión y programación de proyectos. Con la vista Calendario, el usuario tendría una visibilidad general sobre los proyectos y tareas que están actualmente en curso, planificados, pendientes pronto y vencidos. '
 seo-description: La Vista de calendario de AEM rastrea proyectos y tareas en una vista de calendario para facilitar la gestión y programación de proyectos. Con la vista Calendario, el usuario tendría una visibilidad general sobre los proyectos y tareas que están actualmente en curso, planificados, pendientes pronto y vencidos.
 version: 6.3, 6.4, 6.5
-feature: Flujo de trabajo, proyectos
+feature: Workflow, Projects
 topics: governance, collaboration
 activity: use
 audience: author, analyst
 doc-type: feature video
 uuid: 3dc9999c-eddf-4e42-9aa9-87a37a47699d
 discoiquuid: 5ad21858-a4a2-486c-98dc-4f5ba46a3bc1
-topic: Colaboración
-role: Profesional empresarial
-level: Principiante
+topic: Collaboration
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

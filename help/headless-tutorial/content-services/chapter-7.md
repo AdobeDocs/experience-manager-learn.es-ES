@@ -1,10 +1,10 @@
 ---
 title: Capítulo 7 - Consumo de AEM Content Services desde una aplicación móvil - Content Services
 description: El capítulo 7 del tutorial ejecuta la aplicación móvil de Android para consumir contenido creado desde AEM Content Services.
-feature: Fragmentos de contenido, API
-topic: Sin objetivos, Administración de contenido
-role: Desarrollador
-level: Principiante
+feature: Content Fragments, APIs
+topic: Headless, Content Management
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

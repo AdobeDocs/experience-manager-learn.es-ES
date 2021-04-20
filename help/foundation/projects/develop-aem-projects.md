@@ -2,14 +2,14 @@
 title: Desarrollo de proyectos en AEM
 description: Un tutorial de desarrollo que ilustra cómo desarrollar para proyectos AEM.  En este tutorial crearemos una plantilla de proyecto personalizada que se pueda utilizar para crear nuevos proyectos en AEM para administrar los flujos de trabajo y las tareas de creación de contenido.
 version: 6.3, 6.4, 6.5
-feature: Proyectos, flujo de trabajo
+feature: Projects, Workflow
 topics: collaboration, development, governance
 activity: develop
 audience: developer, implementer, administrator
 doc-type: tutorial
-topic: Desarrollo
-role: Desarrollador
-level: Principiante
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

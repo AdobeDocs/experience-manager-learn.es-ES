@@ -2,14 +2,14 @@
 title: Información general del vídeo
 description: Dynamic Media Classic incluye conversión automática de vídeo durante la carga, transmisión de vídeo a dispositivos de escritorio y móviles, y conjuntos de vídeos adaptables optimizados para la reproducción en función del dispositivo y el ancho de banda. Obtenga más información sobre vídeo en Dynamic Media Classic y obtenga un manual sobre conceptos y terminología de vídeo. A continuación, descubra en profundidad cómo cargar y codificar vídeo, elija ajustes preestablecidos de vídeo para cargarlo, añada o edite un ajuste preestablecido de vídeo, previsualice los vídeos en un visor de vídeo, implemente vídeos en sitios web y móviles, añada subtítulos y marcadores de capítulo a vídeo y publique visualizadores de vídeo para usuarios de escritorio y móviles.
 sub-product: dynamic-media
-feature: Dynamic Media Classic, Perfiles de vídeo, Ajustes preestablecidos de visor
+feature: Dynamic Media Classic, Video Profiles, Viewer Presets
 doc-type: tutorial
 topics: development, authoring, configuring, videos, video-profiles
 audience: all
 activity: use
-topic: Administración de contenido
-role: Profesional empresarial
-level: Principiante
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

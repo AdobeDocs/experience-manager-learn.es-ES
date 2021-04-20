@@ -2,7 +2,7 @@
 title: Creación de un flujo de trabajo para revisar los datos enviados
 description: Creación del modelo de flujo de trabajo de AEM Forms mediante componentes de flujo de trabajo de AEM Forms para revisar los datos enviados.
 sub-product: formularios
-feature: Flujo de trabajo
+feature: Workflow
 topics: integrations
 audience: developer
 doc-type: article
@@ -10,9 +10,9 @@ activity: setup
 version: 6.4,6.5
 kt: 4271
 thumbnail: 40242.jpg
-topic: Desarrollo
-role: Desarrollador
-level: Principiante
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

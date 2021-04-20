@@ -4,16 +4,16 @@ seo-title: Configuración del valor del elemento de datos Json en el flujo de tr
 description: Como un formulario adaptable se dirige a diferentes usuarios en AEM Workflow, habrá requisitos para ocultar o deshabilitar ciertos campos o paneles en función de la persona que revise el formulario. Para satisfacer estos casos de uso, normalmente establecemos un valor de campo oculto. En función del valor de este campo oculto, se pueden crear reglas comerciales para ocultar o deshabilitar los paneles o campos adecuados.
 seo-description: Como un formulario adaptable se dirige a diferentes usuarios en AEM Workflow, habrá requisitos para ocultar o deshabilitar ciertos campos o paneles en función de la persona que revise el formulario. Para satisfacer estos casos de uso, normalmente establecemos un valor de campo oculto. En función del valor de este campo oculto, se pueden crear reglas comerciales para ocultar o deshabilitar los paneles o campos adecuados.
 uuid: a4ea6aef-a799-49e5-9682-3fa3b7a442fb
-feature: Formularios adaptables
+feature: Adaptive Forms
 topics: developing
 audience: implementer
 doc-type: article
 activity: setup
 version: 6.4
 discoiquuid: 548fb2ec-cfcf-4fe2-a02a-14f267618d68
-topic: Desarrollo
-role: Desarrollador
-level: Con experiencia
+topic: Development
+role: Developer
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -2,7 +2,7 @@
 title: Componente personalizado
 description: Abarca la creación de extremo a extremo de un componente de firma personalizado que muestra contenido creado. Incluye el desarrollo de un modelo de Sling para encapsular la lógica empresarial y rellenar el componente de firma y el HTL correspondiente para procesar el componente.
 sub-product: sitios
-feature: Componentes principales, API
+feature: Core Components, APIs
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -11,9 +11,9 @@ audience: developer
 kt: 4072
 mini-toc-levels: 1
 thumbnail: 30181.jpg
-topic: Gestión de contenido, desarrollo
-role: Desarrollador
-level: Principiante
+topic: Content Management, Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

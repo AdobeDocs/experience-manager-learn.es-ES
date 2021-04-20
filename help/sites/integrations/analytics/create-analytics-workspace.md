@@ -1,7 +1,7 @@
 ---
 title: Analizar datos con Analysis Workspace
 description: Obtenga información sobre cómo asignar datos capturados desde un sitio de Adobe Experience Manager a métricas y dimensiones en grupos de informes de Adobe Analytics. Obtenga información sobre cómo crear un tablero de informes detallado mediante la función Analysis Workspace de Adobe Analytics.
-feature: análisis
+feature: analytics
 topics: integrations
 audience: administrator
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: setup
 version: cloud-service
 kt: 6409
 thumbnail: KT-6296.jpg
-topic: Integraciones
-role: Profesional empresarial
-level: Intermedio
+topic: Integrations
+role: Business Practitioner
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

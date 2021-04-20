@@ -1,7 +1,7 @@
 ---
 title: Uso de la capa de datos del cliente de Adobe con componentes principales de AEM
 description: La capa de datos del cliente de Adobe introduce un método estándar para recopilar y almacenar datos sobre una experiencia de visitante en una página web y, a continuación, facilitar el acceso a estos datos. La capa de datos del cliente de Adobe no depende de la plataforma, pero está completamente integrada en los componentes principales para su uso con AEM.
-feature: componente principal
+feature: core-component
 topics: integrations
 audience: developer
 doc-type: feature video
@@ -9,9 +9,9 @@ activity: use
 version: cloud-service
 kt: 6261
 thumbnail: 41195.jpg
-topic: Integraciones
-role: Desarrollador
-level: Intermedio
+topic: Integrations
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -3,15 +3,15 @@ title: Convenciones de nomenclatura y prácticas recomendadas que se deben segui
 seo-title: Convenciones de nomenclatura y prácticas recomendadas que se deben seguir al crear formularios adaptables
 description: Convenciones de nomenclatura y prácticas recomendadas que se deben seguir al crear formularios adaptables
 seo-description: Convenciones de nomenclatura y prácticas recomendadas que se deben seguir al crear formularios adaptables
-feature: Formularios adaptables
+feature: Adaptive Forms
 topics: best-practices
 audience: developer
 doc-type: article
 activity: setup
 version: 6.3,6.4,6.5
-topic: Desarrollo
-role: Desarrollador
-level: Principiante
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

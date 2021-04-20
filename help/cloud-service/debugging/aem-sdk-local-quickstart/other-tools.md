@@ -1,16 +1,16 @@
 ---
 title: Otras herramientas para depurar el SDK de AEM
 description: Hay otras herramientas que pueden ayudar a depurar el inicio rápido local del SDK de AEM.
-feature: Herramientas para desarrolladores
+feature: Developer Tools
 topics: development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5251
-topic: Desarrollo
-role: Desarrollador
-level: Principiante, intermedio
+topic: Development
+role: Developer
+level: Beginner, Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

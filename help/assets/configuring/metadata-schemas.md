@@ -2,13 +2,13 @@
 title: Esquemas de metadatos
 description: Los esquemas de metadatos definen la interfaz en la que los usuarios interactúan con los metadatos de los recursos en AEM, y su definición y aplicación a los recursos son esenciales para la administración de recursos digitales.
 sub-product: activos
-feature: Metadatos
+feature: Metadata
 version: cloud-service
 kt: 4981
 thumbnail: 33696.jpg
-topic: Administración de contenido
-role: Profesional empresarial
-level: Principiante
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

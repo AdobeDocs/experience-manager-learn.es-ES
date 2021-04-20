@@ -2,9 +2,9 @@
 title: '"Capítulo 2 - Infraestructura de Dispatcher"'
 description: Comprender la topología de publicación y Dispatcher. Obtenga información sobre las topologías y configuraciones más comunes.
 feature: Dispatcher
-topic: Arquitectura
-role: Arquitecto
-level: Principiante
+topic: Architecture
+role: Architect
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

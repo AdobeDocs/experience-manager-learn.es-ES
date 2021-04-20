@@ -2,10 +2,10 @@
 title: Configuración de la búsqueda de traducción inteligente con AEM Assets
 description: La búsqueda de traducción inteligente permite el uso de términos de búsqueda que no estén en inglés para resolver el contenido en inglés. Para configurar AEM para la búsqueda de traducción inteligente, debe instalarse y configurarse el paquete OSGi de traducción de Apache Oak Search Machine, así como los paquetes de idioma Apache Joshua de código abierto y gratuito que contengan las reglas de traducción.
 version: 6.3, 6.4, 6.5
-feature: 'Búsqueda  '
-topic: Administración de contenido
-role: Desarrollador
-level: Principiante
+feature: Search
+topic: Content Management
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

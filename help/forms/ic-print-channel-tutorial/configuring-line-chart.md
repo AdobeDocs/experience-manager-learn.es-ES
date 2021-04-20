@@ -4,7 +4,7 @@ seo-title: Configuración del gráfico de líneas del primer documento interacti
 description: Esta es la parte 8 del tutorial de varios pasos para crear su primer documento interactivo de comunicaciones para el canal de impresión. En esta parte, agregaremos un gráfico de líneas para mostrar el saldo de la cuenta.
 seo-description: Esta es la parte 8 del tutorial de varios pasos para crear su primer documento interactivo de comunicaciones para el canal de impresión. En esta parte, agregaremos un gráfico de líneas para mostrar el saldo de la cuenta.
 uuid: a4394874-a080-4b6a-a3eb-ffc71504919d
-feature: Comunicación interactiva
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
@@ -13,9 +13,9 @@ version: 6.4,6.5
 discoiquuid: 9110e5c6-50ee-4c3e-a779-b680ff49ef23
 kt: 5993
 thumbnail: 22386.jpg
-topic: Desarrollo
-role: Desarrollador
-level: Principiante
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

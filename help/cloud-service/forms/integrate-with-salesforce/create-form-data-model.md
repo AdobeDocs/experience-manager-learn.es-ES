@@ -2,12 +2,12 @@
 title: Creación de un modelo de datos de formulario basado en el origen de datos de Salesforce
 description: Crear modelo de datos de formulario respaldado por el origen de datos RESTful
 solution: Experience Manager, Experience Manager Forms
-type: Documentación
-role: Desarrollador
-level: Principiante, intermedio
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: Formularios adaptables
-topic: Desarrollo
+feature: Adaptive Forms
+topic: Development
 kt: 7149
 thumbnail: 331756.jpg
 translation-type: tm+mt
