@@ -6,9 +6,9 @@ user-guide-description: Recopilación de recursos de AEM Forms para principiante
 breadcrumb-title: Tutoriales de AEM Forms
 index: y
 translation-type: tm+mt
-source-git-commit: 1e945afddda3d7735005029952a9d7ec46828bc6
+source-git-commit: da7837d45a9d5f614a4f6527b7bfe98aaf980d4f
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '952'
 ht-degree: 6%
 
 ---
@@ -32,12 +32,12 @@ ht-degree: 6%
    + [Uso de funciones personalizadas y del editor de código](creating-your-first-adaptive-form/using-custom-functions-and-code-editor.md)
 + Gestión de envíos de formularios {#handling-af-form-submissions}
    + [Creación de un flujo de trabajo de revisión](handling-form-submissions/creating-a-review-workflow.md)
-   + [Configuración del formulario adaptable para activar el flujo de trabajo](handling-form-submissions/configuring-adaptive-form-to-trigger-workflow.md)
+   + [Configuración del formulario adaptable al flujo de trabajo de déclencheur](handling-form-submissions/configuring-adaptive-form-to-trigger-workflow.md)
    + [Visualización de la página de agradecimiento](handling-form-submissions/submitting-adaptive-forms-thank-you-page-article-use.md)
    + [Envío al punto final externo](handling-form-submissions/submitting-adaptive-forms-to-external-server-article-use.md)
    + [Envío de correo electrónico](handling-form-submissions/sending-email-on-adaptive-form-submission.md)
    + [Flujo de trabajo de tiempo de espera pagado](handling-form-submissions/paid-time-off-request-workflow.md)
-   + [Configuración del formulario adaptable para activar el flujo de trabajo de AEM: vídeo](handling-form-submissions/configure-af-to-trigger-aem-workflow.md)
+   + [Configuración del formulario adaptable al flujo de trabajo AEM déclencheur: vídeo](handling-form-submissions/configure-af-to-trigger-aem-workflow.md)
    + [Personalizar notificación para asignar tareas](handling-form-submissions/customize-assign-task-notification.md)
 + Integraciones útiles{#some-useful-integrations}
    + [Dos factores de autenticación](some-useful-integrations/two-factor-authentication.md)
@@ -45,9 +45,10 @@ ht-degree: 6%
 
 + Formularios adaptables {#adaptive-forms}
    + [Instalación de AEM Forms en Windows](adaptive-forms/installing-aem-form-on-windows-tutorial-use.md)
-   + [Servicio de relleno previo en formularios adaptables](adaptive-forms/prefill-service-adaptive-forms-article-use.md)
-   + [Envío personalizado en formularios adaptables](adaptive-forms/custom-submit-aem-forms-article.md)
-   + [Captcha en formularios adaptables](adaptive-forms/forms-captcha-feature-video-use.md)
+   + [Instalación de paquetes de 32 bits en Linux](adaptive-forms/installing-aem-form-on-linux.md)
+   + [Servicio de precarga en Forms adaptable](adaptive-forms/prefill-service-adaptive-forms-article-use.md)
+   + [Envío personalizado en Forms adaptable](adaptive-forms/custom-submit-aem-forms-article.md)
+   + [Captcha en Forms adaptable](adaptive-forms/forms-captcha-feature-video-use.md)
    + [Uso de Definir valor en XML en el flujo de trabajo OSGI](adaptive-forms/setvalue-aem-forms-workflow-tutorial-use.md)
    + [Uso del valor establecido en JSON en el flujo de trabajo OSGI](adaptive-forms/setvalue-json-data-in-aem-forms-workflow-article-use.md)
    + [Enviar componente de correo electrónico en el flujo de trabajo de AEM Forms](adaptive-forms/email-step-aem-workflow-video-use.md)
@@ -61,8 +62,8 @@ ht-degree: 6%
    + [Restricción del acceso al Editor de reglas](adaptive-forms/restricting-rule-editor-aem-forms-technical-video-use.md)
    + [Mejoras en el editor de temas](adaptive-forms/theme-editor-improvements-feature-video-use.md)
    + [Mejoras en el editor de formularios](adaptive-forms/form-editor-improvements-feature-video-use.md)
-   + [Vídeo sobre la prueba automatizada de formularios adaptables](adaptive-forms/calvin-sdk-test-adaptive-forms-feature-video.md)
-   + [Prueba Automatizada De Formularios Adaptables](adaptive-forms/calvin-sdk-test-adaptive-forms-article-use.md)
+   + [Prueba Automatizada Del Vídeo Adaptable De Forms](adaptive-forms/calvin-sdk-test-adaptive-forms-feature-video.md)
+   + [Prueba Automatizada De Forms Adaptable](adaptive-forms/calvin-sdk-test-adaptive-forms-article-use.md)
    + [Integración de LDAP con AEM Forms](adaptive-forms/aem-forms-workflow-with-ldap-article-use.md)
    + [Uso del usuario de servicio en AEM Forms](adaptive-forms/service-user-tutorial-develop.md)
    + [Etiquetado y almacenamiento del DoR en el envío de formulario adaptable](adaptive-forms/tagging-and-saving-document-of-record-in-dam-article-use.md)
@@ -78,11 +79,11 @@ ht-degree: 6%
    + [Modelo de datos de formulario basado en JDBC](adaptive-forms/jdbc-data-model-technical-video-use.md)
    + [Creación de asociaciones entre 2 entidades en el modelo de datos de formulario](adaptive-forms/association-data-model-technical-video-use.md)
    + [Uso del servicio de invocación del Modelo de datos de formulario en el Editor de reglas](adaptive-forms/service-data-model-technical-video-use.md)
-   + [Publicar datos binarios en AEM DAM mediante el modelo de datos de formulario](adaptive-forms/form-data-model-to-post-binary-data-tutorial-use.md)
+   + [Datos binarios posteriores para AEM DAM con el modelo de datos de formulario](adaptive-forms/form-data-model-to-post-binary-data-tutorial-use.md)
    + [Creación de modelos de flujo de trabajo reutilizables](adaptive-forms/re-usable-aem-forms-workflow-models-article.md)
-   + [Flujo de trabajo AEM de paso de proceso personalizado](adaptive-forms/custom-process-step-aem-workflow.md)
+   + [Paso de proceso personalizado AEM flujo de trabajo](adaptive-forms/custom-process-step-aem-workflow.md)
    + [Modificar la configuración de la fuente de datos](adaptive-forms/modify-data-source-configuration-settings-article.md)
-   + [Rellenado previo de formularios HTML5](adaptive-forms/prepopulating-html5-forms-in-aem-forms-article.md)
+   + [Rellenado previo de HTML5 Forms](adaptive-forms/prepopulating-html5-forms-in-aem-forms-article.md)
    + [Modelo de datos de formulario con Salesforce](adaptive-forms/using-adaptive-forms-with-sales-force-integration-tutorial.md)
    + [Adición dinámica de elementos al componente de opciones](adaptive-forms/choice-group-items-adding-dynamically-article.md)
 + Rellenado previo de formularios adaptables mediante el modelo de datos de formulario{#prefill-fdm-db}
@@ -110,7 +111,7 @@ ht-degree: 6%
    + [Implementación del ejemplo](store-and-retrieve-af-with-2fa/deploy-this-sample.md)
 + Exportación de datos enviados en formato CSV{#export-submitted-data-csv-format}
    + [Exportar datos enviados](export-submitted-data-csv-format/export-submitted-data-csv.md)
-+ HTML5 Forms{#html5-forms}
++ Formularios HTML5{#html5-forms}
    + [Crear formulario HTML5](html5-forms/create-html5-form.md)
    + [Gestión del envío de formularios HTML5](html5-forms/handle-html5-form-submission.md)
 + AEM Forms y Adobe Sign{#forms-and-sign}
@@ -122,11 +123,11 @@ ht-degree: 6%
    + [Crear y configurar formularios adaptables](aem-forms-and-adobe-sign/create-and-configure-adaptive-form.md)
    + [Configuración del formulario adaptable para un único firmante](aem-forms-and-adobe-sign/configure-adaptive-form-for-single-signer.md)
    + [Configuración del formulario adaptable para dos firmantes](aem-forms-and-adobe-sign/configure-adaptive-form-for-two-signers.md)
-   + [Configurar el servicio automatizado de conversión de formularios](aem-forms-and-adobe-sign/configure-automated-forms-conversion-service.md)
+   + [Configuración del servicio de Automated forms conversion](aem-forms-and-adobe-sign/configure-automated-forms-conversion-service.md)
    + [Convertir formulario PDF en formulario adaptable](aem-forms-and-adobe-sign/convert-pdf-form-into-adaptive-form.md)
    + [Configurar formulario adaptable convertido](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
    + [Uso de plantillas XDP con Adobe Sign](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
-+ Firmar varios formularios{#sign-multiple-documents}
++ Firmar varios Forms{#sign-multiple-documents}
    + [Introducción](sign-multiple-documents/introduction.md)
    + [Configurar fuentes de datos](sign-multiple-documents/configure-data-source.md)
    + [Creación del servicio OSGi](sign-multiple-documents/create-osgi-service.md)
@@ -136,16 +137,16 @@ ht-degree: 6%
    + [Crear lista de clientes](sign-multiple-documents/create-client-lib.md)
    + [Crear plantilla de formulario](sign-multiple-documents/create-af-template.md)
    + [Crear formulario inicial](sign-multiple-documents/create-initial-form.md)
-   + [Crear formularios para firmar](sign-multiple-documents/create-forms-for-signing.md)
+   + [Crear Forms para firmar](sign-multiple-documents/create-forms-for-signing.md)
    + [Prueba de la solución](sign-multiple-documents/testing-and-trouble-shooting.md)
-+ Variables en AEM Workflow{#variables-aem-workflow}
++ Variables en AEM flujo de trabajo{#variables-aem-workflow}
    + [Introducción: Variables en el flujo de trabajo](variables-aem-workflow/introduction.md)
    + [Variables XML](variables-aem-workflow/part1.md)
    + [Variables JSON](variables-aem-workflow/part2.md)
    + [Variables de documento](variables-aem-workflow/part3.md)
    + [Variable ArrayList](variables-aem-workflow/part4.md)
    + [Variable de modelo de datos de formulario](variables-aem-workflow/form-data-model.md)
-   + [Editor de reglas en el flujo de trabajo de AEM](variables-aem-workflow/part5.md)
+   + [Editor de reglas en AEM flujo de trabajo](variables-aem-workflow/part5.md)
 + Almacenamiento y recuperación de datos de formulario en MySQL DB{#storing-and-retrieving-form-data}
    + [Introducción](storing-retrieving-form-data/introduction.md)
    + [Configurar fuentes de datos](storing-retrieving-form-data/part1.md)
@@ -154,7 +155,7 @@ ht-degree: 6%
    + [Biblioteca de cliente](storing-retrieving-form-data/part4.md)
    + [Plantilla de formulario adaptable](storing-retrieving-form-data/part5.md)
    + [Implementación de recursos de ejemplo](storing-retrieving-form-data/part6.md)
-+ Activación del flujo de trabajo de AEM desde el envío de formulario móvil{#offline-mobile-form-submission}
++ Activación AEM flujo de trabajo desde el envío de formulario móvil{#offline-mobile-form-submission}
    + [Introducción](offline-mobile-form-submission/introduction.md)
    + [Perfil personalizado](offline-mobile-form-submission/part-one.md)
    + [Gestión del envío de PDF](offline-mobile-form-submission/part-two.md)
@@ -183,9 +184,9 @@ ht-degree: 6%
    + [Parte 4: Creación de un perfil ACS mediante el modelo de datos de formulario](aem-forms-with-adobe-campaign/partfour.md)
 
 + Servicios de documento {#document-services}
-   + [Tipos de formularios PDF](document-services/pdf-forms-and-documents.md)
+   + [Tipos de PDF forms](document-services/pdf-forms-and-documents.md)
    + [Uso del servicio Assembler en AEM Forms](document-services/using-assembler-service-in-aem-forms.md)
-   + [Uso de carpetas vigiladas en AEM Forms](document-services/watched-folders-document-services-article-use.md)
+   + [Uso de la carpeta vigilada en AEM Forms](document-services/watched-folders-document-services-article-use.md)
    + [Uso del servicio de códigos de barras en AEM Forms](document-services/barcode-service-adaptive-forms-article.md)
    + [Uso del servicio PDFG en AEM Forms](document-services/using-pdfg-in-aem-forms.md)
    + [Uso de Output y Forms Service en AEM Forms](document-services/output-and-forms-services-article-develop.md)
@@ -203,7 +204,7 @@ ht-degree: 6%
    + [Configurar Tomcat](ic-print-channel-tutorial/set-up-tomcat.md)
    + [Crear fuente de datos](ic-print-channel-tutorial/create-data-source.md)
    + [Crear modelo de datos de formulario](ic-print-channel-tutorial/create-form-data-model.md)
-   + [Crear diseño XDP con Forms Designer](ic-print-channel-tutorial/create-xdp-layout-using-forms-designer.md)
+   + [Creación de un diseño XDP con Forms Designer](ic-print-channel-tutorial/create-xdp-layout-using-forms-designer.md)
    + [Crear fragmento de documento](ic-print-channel-tutorial/create-document-fragment.md)
    + [Crear documento de canal de impresión](ic-print-channel-tutorial/create-print-channel-document.md)
    + [Adición de contenido a áreas de destino](ic-print-channel-tutorial/add-content-to-target-areas.md)
