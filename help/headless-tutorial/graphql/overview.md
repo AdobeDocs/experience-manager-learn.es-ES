@@ -1,54 +1,33 @@
 ---
-title: Introducción a AEM Headless - GraphQL
-description: Un tutorial completo que ilustra cómo crear y exponer contenido mediante las API de AEM GraphQL.
-sub-product: sitios
-topics: headless
-version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
-mini-toc-levels: 1
-kt: 6678
-thumbnail: 328618.jpg
-feature: Content Fragments, GraphQL APIs
-topic: Headless, Content Management
+title: 'Introducción a AEM sin encabezado: GraphQL'
+description: Información general sobre las API y capacidades de AEM GraphQL.
+feature: Fragmentos de contenido, API
+topic: Sin objetivos, Administración de contenido
 role: Developer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 81626b8d853f3f43d9c51130acf02561f91536ac
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '118'
 ht-degree: 0%
 
 ---
 
 
-# Introducción a AEM Headless - GraphQL
-
-Un tutorial completo que ilustra cómo crear y exponer contenido mediante las API de GraphQL de AEM y consumido por una aplicación externa, en un escenario de CMS remoto.
-
-Este tutorial explora cómo se pueden utilizar las API de GraphQL de AEM y las capacidades sin objetivos para impulsar las experiencias que aparecen en una aplicación externa.
-
-Este tutorial tratará los siguientes temas:
-
-* Creación de modelos de fragmento de contenido para modelar colaboradores en AEM
-* Creación de fragmentos de contenido de colaborador mediante el modelo de fragmento de contenido recién creado
-* Descubra cómo se pueden consultar los fragmentos de contenido en AEM mediante la herramienta de desarrollo integrada GraphiQL.
-* Utilice las API de GraphQL de AEM de una aplicación WKND GraphQL React de muestra
-* Realizar modelado de datos avanzado con referencias de fragmento
-
-## Información general de GraphQL
-
-El siguiente vídeo presenta una descripción general de la API de GraphQL implementada en AEM. La API de GraphQL en AEM está diseñada principalmente para entregar datos de fragmento de contenido a aplicaciones descendentes como parte de una implementación sin objetivos.
+# Introducción a AEM sin encabezado: GraphQL
 
 >[!VIDEO](https://video.tv.adobe.com/v/328618/?quality=12&learn=on)
 
-## ¡Empecemos!
+Este vídeo es una descripción general de la API de GraphQL implementada en AEM. La API de GraphQL de AEM está diseñada principalmente para ofrecer AEM fragmento de contenido a aplicaciones descendentes como parte de una implementación sin objetivos.
 
-Inicie el tutorial de AEM GraphQL saltando al capítulo [Quick Setup](./setup.md).
+## AEM serie de vídeos de GraphQL sin encabezado
 
-## Proyecto de GitHub
+Obtenga información sobre AEM capacidades de GraphQL mediante la explicación detallada de los fragmentos de contenido y las API de GraphQL y AEM herramientas de desarrollo.
 
-El código fuente y los paquetes de contenido están disponibles en el [AEM Guides - WKND GraphQL GitHub Project](https://github.com/adobe/aem-guides-wknd-graphql).
++ [AEM serie de vídeos de GraphQL sin encabezado](./video-series/modeling-basics.md)
 
-Si encuentra algún problema con el tutorial o el código, deje un [problema de GitHub](https://github.com/adobe/aem-guides-wknd-graphql/issues).
+## Tutorial de mano de AEM sin encabezado GraphQL
+
+Explore AEM capacidades de GraphQL creando una aplicación React que consume fragmentos de contenido a través de las API de GraphQL de AEM.
+
++ [Tutorial de mano de AEM sin encabezado GraphQL](./multi-step/overview.md)
