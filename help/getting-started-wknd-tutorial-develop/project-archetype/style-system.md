@@ -3,20 +3,17 @@ title: Desarrollo con el sistema de estilos
 seo-title: Desarrollo con el sistema de estilos
 description: Aprenda a implementar estilos individuales y a reutilizar componentes principales mediante el sistema de estilos de Experience Manager. Este tutorial trata el desarrollo del sistema de estilos para ampliar los componentes principales con CSS específica de la marca y las configuraciones de políticas avanzadas del Editor de plantillas.
 sub-product: sitios
-topics: front-end-development,responsive
-version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
-kt: 4128
-mini-toc-levels: 1
-thumbnail: 30386.jpg
+version: 6.4, 6.5, Cloud Service
+type: Tutorial
 feature: Componentes principales, sistema de estilos
 topic: Gestión de contenido, desarrollo
 role: Developer
 level: Beginner
+kt: 4128
+mini-toc-levels: 1
+thumbnail: 30386.jpg
 translation-type: tm+mt
-source-git-commit: fb6c56dfc85fbcb36a68210f068fd496849c352e
+source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
 workflow-type: tm+mt
 source-wordcount: '2003'
 ht-degree: 1%
