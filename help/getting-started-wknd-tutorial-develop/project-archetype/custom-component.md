@@ -2,20 +2,17 @@
 title: Componente personalizado
 description: Abarca la creación de extremo a extremo de un componente de firma personalizado que muestra contenido creado. Incluye el desarrollo de un modelo de Sling para encapsular la lógica empresarial y rellenar el componente de firma y el HTL correspondiente para procesar el componente.
 sub-product: sitios
+version: 6.4, 6.5, Cloud Service
+type: Tutorial
 feature: Componentes principales, API
-topics: development
-version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
-kt: 4072
-mini-toc-levels: 1
-thumbnail: 30181.jpg
 topic: Gestión de contenido, desarrollo
 role: Developer
 level: Beginner
+kt: 4072
+mini-toc-levels: 1
+thumbnail: 30181.jpg
 translation-type: tm+mt
-source-git-commit: fb6c56dfc85fbcb36a68210f068fd496849c352e
+source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
 workflow-type: tm+mt
 source-wordcount: '3967'
 ht-degree: 0%
@@ -744,7 +741,7 @@ Optaremos por el **segundo** enfoque. Es probable que el primer enfoque sea sufi
    }
    ```
 
-   Tenga en cuenta que las llamadas múltiples a `getImage()` no son problemáticas, ya que devuelve la variable de clase `image` inicializada y no invoca `modelFactory.getModelFromWrappedRequest(...)`, lo que no es demasiado costoso, pero vale la pena evitar llamar innecesariamente.
+   Tenga en cuenta que las llamadas múltiples a `getImage()` no son problemáticas, ya que devuelve la variable de clase `image` inicializada y no invoca `modelFactory.getModelFromWrappedRequest(...)`, que no es demasiado costosa, pero vale la pena evitar llamar innecesariamente.
 
 1. El `BylineImpl.java` final debería tener el siguiente aspecto:
 
