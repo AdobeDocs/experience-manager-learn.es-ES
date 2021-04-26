@@ -14,9 +14,9 @@ topic: Gestión de contenido, desarrollo
 role: Developer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: fb6c56dfc85fbcb36a68210f068fd496849c352e
+source-git-commit: e8c36a85bc47adbf76e614f245c3f47d7a50826e
 workflow-type: tm+mt
-source-wordcount: '3022'
+source-wordcount: '3016'
 ht-degree: 0%
 
 ---
@@ -213,7 +213,9 @@ Las pruebas unitarias suelen asignar de 1 a 1 con clases Java. En este capítulo
    El sufijo `Test` del archivo de prueba de unidad, `BylineImplTest.java` es una convención que nos permite
 
    1. Identifíquelo fácilmente como el archivo de prueba _para_ `BylineImpl.java`
-   2. Pero también, diferencie el archivo de prueba _de_ la clase que se está probando, `BylineImpl.java`
+   1. Pero también, diferencie el archivo de prueba _de_ de la clase que se está probando, `BylineImpl.java`
+
+
 
 ## Revisión de BylineImplTest.java {#reviewing-bylineimpltest-java}
 
