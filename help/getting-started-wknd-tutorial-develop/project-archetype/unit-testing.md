@@ -1,22 +1,20 @@
 ---
 title: Prueba de unidad
 description: Este tutorial trata la implementación de una prueba de unidad que valida el comportamiento del modelo Sling del componente Byline, creado en el tutorial Componente personalizado .
-topics: development
-version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
-kt: 4089
-mini-toc-levels: 1
-thumbnail: 30207.jpg
+sub-product: sitios
+version: 6.4, 6.5, Cloud Service
+type: Tutorial
 feature: API, AEM tipo de archivo del proyecto
 topic: Gestión de contenido, desarrollo
 role: Developer
 level: Beginner
+kt: 4089
+mini-toc-levels: 1
+thumbnail: 30207.jpg
 translation-type: tm+mt
-source-git-commit: e8c36a85bc47adbf76e614f245c3f47d7a50826e
+source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
 workflow-type: tm+mt
-source-wordcount: '3016'
+source-wordcount: '3017'
 ht-degree: 0%
 
 ---
