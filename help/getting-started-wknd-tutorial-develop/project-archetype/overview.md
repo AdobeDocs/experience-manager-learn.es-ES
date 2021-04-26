@@ -2,19 +2,16 @@
 title: 'Introducción a AEM Sites: Tipo de archivo del proyecto'
 description: 'Introducción a AEM Sites: Tipo de archivo del proyecto. El tutorial de WKND es un tutorial de varias partes diseñado para desarrolladores que no han llegado a Adobe Experience Manager. El tutorial recorre la implementación de un sitio AEM para una marca ficticia de estilo de vida, la WKND. El tutorial cubre temas fundamentales como la configuración del proyecto, los arquetipos de maven, los componentes principales, las plantillas editables, las bibliotecas de cliente y el desarrollo de componentes.'
 sub-product: sitios
-topics: development
-version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
-mini-toc-levels: 1
-index: y
+version: 6.4, 6.5, Cloud Service
+type: Tutorial
 feature: Componentes principales, Editor de páginas, Plantillas editables, AEM tipo de archivo del proyecto
 topic: Gestión de contenido, desarrollo
 role: Developer
 level: Beginner
+mini-toc-levels: 1
+index: y
 translation-type: tm+mt
-source-git-commit: fb6c56dfc85fbcb36a68210f068fd496849c352e
+source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 20%
