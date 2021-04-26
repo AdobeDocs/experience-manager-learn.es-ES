@@ -16,10 +16,10 @@ topic: Gestión de contenido, desarrollo
 role: Developer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: fb6c56dfc85fbcb36a68210f068fd496849c352e
+source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
 workflow-type: tm+mt
-source-wordcount: '510'
-ht-degree: 5%
+source-wordcount: '632'
+ht-degree: 4%
 
 ---
 
@@ -34,11 +34,19 @@ El objetivo de este tutorial en varias partes es enseñar a los desarrolladores 
 
 >[!VIDEO](https://video.tv.adobe.com/v/30476?quality=12&learn=on)
 
-## Acerca del tutorial {#about-tutorial}
+## Opciones para iniciar un proyecto de Sites
 
-WKND es una revista online ficticia y blog que se centra en la vida nocturna, actividades y eventos en varias ciudades internacionales.
+Existen dos enfoques básicos para iniciar un proyecto de AEM Sites.
 
-### Kit de interfaz de usuario de Adobe XD
+**AEM Tipo de archivo del proyecto** : enfoque tradicional para el desarrollo de AEM mediante la generación de un proyecto de AEM mínimo con una plantilla Maven. Este es el enfoque recomendado para AEM proyectos de la versión 6.5/6.4 y AEM como proyectos Cloud Service que prevén una gran personalización. El tutorial ofrece una profundización en AEM desarrollo.
+
+[Inicie el tutorial con el tipo de archivo del proyecto AEM](./project-archetype/overview.md)
+
+**Plantillas AEM sitio** : un enfoque de código bajo para generar un sitio AEM mediante una plantilla de sitio predefinida. Utilice los componentes y las plantillas listas para usar para poner en marcha un sitio rápidamente. Utilice un flujo de trabajo temático para aplicar estilos y personalizaciones específicos de la marca solo con CSS y JavaScript. Recomendado para nuevos proyectos y desarrolladores. Actualmente solo está disponible para AEM como Cloud Service.
+
+[Iniciar el tutorial con una plantilla de sitio](./site-template/create-site.md)
+
+## Kit de interfaz de usuario de Adobe XD
 
 Para hacer este tutorial más cercano a un escenario real, los talentosos diseñadores de experiencia de usuario crearon las maquetas para el sitio utilizando [Adobe XD](https://www.adobe.com/products/xd.html). A lo largo del tutorial, varias partes de los diseños se implementan en un sitio de AEM totalmente creativo. Agradecimiento especial a **Lorenzo Buosi** y **Kilian Amendola** que crearon el hermoso diseño para el sitio WKND.
 
@@ -63,4 +71,4 @@ Con Adobe Stock, usted tiene acceso a más de 140 millones de imágenes de alta 
 
 ## Pasos siguientes {#next-steps}
 
-¡¿Qué estás esperando?! Inicie el tutorial y aprenda a [generar un nuevo proyecto de Adobe Experience Manager con el tipo de archivo del proyecto AEM](./project-archetype/overview.md).
+¡¿Qué estás esperando?! Obtenga información sobre cómo [generar un nuevo proyecto de Adobe Experience Manager mediante el tipo de archivo del proyecto AEM](./project-archetype/overview.md) o [crear un sitio con una plantilla de sitio](./site-template/create-site.md).
