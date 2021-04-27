@@ -8,9 +8,9 @@ level: Beginner
 kt: 7630
 thumbnail: kt-7630.jpg
 translation-type: tm+mt
-source-git-commit: 0eb086242ecaafa53c59c2018f178e15f98dd76f
+source-git-commit: b6f63110f14ede51fa2dd740aea7cbb623cbec60
 workflow-type: tm+mt
-source-wordcount: '675'
+source-wordcount: '694'
 ht-degree: 6%
 
 ---
@@ -67,35 +67,37 @@ Este tutorial supone:
 
 La configuración rápida le permite poner en marcha la aplicación WKND SPA y AEM SPA Editor en 15 minutos. Esta configuración acelerada le lleva directamente al estado final del tutorial, lo que le permite explorar la creación de la SPA en AEM Editor SPA.
 
-+ [Configuración rápida](./quick-setup.md)
++ [Obtenga información sobre la configuración rápida](./quick-setup.md)
 
-## Configuración de AEM para SPA Editor
+## 1. Configurar AEM para SPA Editor
 
 AEM configuraciones son necesarias para integrar la SPA con AEM Editor SPA. Estas configuraciones se administran e implementan mediante un proyecto AEM. En este capítulo, conozca qué configuraciones son necesarias y cómo definirlas.
 
-+ [Configurar AEM](./aem-configure.md)
++ [Obtenga información sobre cómo configurar AEM para SPA Editor](./aem-configure.md)
 
-## Bootstrap del SPA
+## 2. Bootstrap del SPA
 
 Para que AEM SPA Editor integre una SPA en su contexto de creación, se deben realizar algunas adiciones a la SPA.
 
-+ [Bootstrap del SPA para AEM SPA Editor](./spa-bootstrap.md)
++ [Aprenda a arrancar el SPA para AEM Editor SPA](./spa-bootstrap.md)
 
-## Componentes fijos editables
+## 3. Componentes fijos editables
 
 En primer lugar, explore la posibilidad de añadir un &quot;componente fijo&quot; editable al SPA. Esto ilustra cómo un desarrollador puede colocar un componente editable específico en la SPA. Aunque el autor puede cambiar el contenido del componente, no puede quitarlo ni cambiar su ubicación, posición o tamaño.
 
-+ [Componentes fijos editables](./spa-fixed-component.md)
++ [Obtenga información sobre los componentes fijos editables](./spa-fixed-component.md)
 
-## Componentes de contenedor editables
+## 4. Componentes de contenedor editables
 
 A continuación, explore la posibilidad de agregar un &quot;componente contenedor&quot; editable al SPA. Esto ilustra cómo un desarrollador puede colocar un componente contenedor en el SPA. Los componentes de contenedor permiten a los autores colocar en él el componente permitido y ajustar el diseño de los componentes.
 
-## Rutas dinámicas y componentes editables
++ [Obtenga información sobre los componentes de contenedor editables](./spa-container-component.md)
+
+## 5. Rutas dinámicas y componentes editables
 
 Por último, utilice los conceptos descritos en capítulos anteriores para las rutas dinámicas; rutas que muestran contenido diferente en función del parámetro de ruta. Esto ilustra cómo se puede utilizar AEM editor SPA para crear contenido en rutas que se dirigen mediante programación y se derivan.
 
-+ [Rutas dinámicas y componentes editables](./spa-dynamic-routes.md)
++ [Obtenga información sobre rutas dinámicas y componentes editables](./spa-dynamic-routes.md)
 
 ## Recursos adicionales
 
