@@ -1,6 +1,6 @@
 ---
-title: Instalación de AEM Forms en Linux.
-description: La instalación de bibliotecas de 32 bits para AEM Forms funciona en la instalación de Linux.
+title: Instalación de AEM Forms en Linux
+description: Aprenda a instalar bibliotecas de 32 bits para AEM Forms para que funcionen en la instalación de Linux.
 feature: Formularios adaptables
 audience: developer
 doc-type: article
@@ -11,9 +11,9 @@ role: Developer
 level: Beginner
 kt: 7593
 translation-type: tm+mt
-source-git-commit: da7837d45a9d5f614a4f6527b7bfe98aaf980d4f
+source-git-commit: 9583006352ca6a20a763c9d5ec7ba15c3791e897
 workflow-type: tm+mt
-source-wordcount: '945'
+source-wordcount: '948'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Cuando AEM FORMS OSGi o AEM Forms j2EE se implementan en Linux, debe asegurarse 
 * libXext (Biblioteca para extensiones comunes del protocolo X11)
 * libXinerama (extensión X11) que proporciona soporte para ampliar un escritorio en múltiples pantallas. El nombre es un juego de palabras en Cinerama, un formato de película de pantalla ancha que usa varios proyectores. libXinerama es la biblioteca que interactúa con la extensión RandR)
 * libXrandr (la extensión de Xinerama es en gran medida obsoleta hoy en día - ha sido reemplazada por la extensión RandR)
-* libXrender (biblioteca de cliente de extensión de procesamiento X)
+* libXrender (biblioteca cliente de extensión de procesamiento X)
 nss-softokn-freebl (biblioteca Freebl para Servicios de seguridad de red)
 * zlib (biblioteca de compresión de datos general, sin patente y sin pérdidas)
 
