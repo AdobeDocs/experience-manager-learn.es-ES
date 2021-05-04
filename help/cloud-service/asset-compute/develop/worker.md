@@ -1,7 +1,7 @@
 ---
 title: Desarrollo de un trabajador de Asset compute
 description: Los assets computes son el núcleo de los proyectos de Asset compute, ya que proporcionan una funcionalidad personalizada que organiza el trabajo realizado en un recurso para crear una nueva representación.
-feature: Asset Compute Microservices
+feature: Microservicios de asset compute
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,13 +9,13 @@ audience: developer
 doc-type: tutorial
 kt: 6282
 thumbnail: KT-6282.jpg
-topic: Integrations, Development
+topic: Integraciones, desarrollo
 role: Developer
 level: Intermediate, Experienced
 translation-type: tm+mt
-source-git-commit: 1e5d8171832ec6b26969a8485ae970e295962828
+source-git-commit: 2efb7050b0b0c783c5f34c1f2e375cf21fa7a6cd
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1426'
 ht-degree: 0%
 
 ---
@@ -340,6 +340,7 @@ Ahora que el código de trabajo ha finalizado y se ha registrado y configurado a
        ]
    }
    ```
+
 1. Pulse __Ejecutar__ y espere a que se genere la representación
 1. La sección __Representaciones__ previsualiza la representación generada. Pulse la vista previa de la representación para descargar la representación completa
 
