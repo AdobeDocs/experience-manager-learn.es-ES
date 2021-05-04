@@ -1,7 +1,7 @@
 ---
-title: Prueba de un trabajador de Asset Compute
-description: El proyecto Asset Compute define un patrón para crear y ejecutar fácilmente pruebas de los trabajadores de Asset Compute.
-feature: Asset Compute Microservices
+title: Probar un Asset compute de trabajo
+description: El proyecto Asset compute define un patrón para crear y ejecutar fácilmente pruebas de los trabajadores del Asset compute.
+feature: Microservicios de asset compute
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,27 +9,27 @@ audience: developer
 doc-type: tutorial
 kt: 6284
 thumbnail: KT-6284.jpg
-topic: Integrations, Development
+topic: Integraciones, desarrollo
 role: Developer
 level: Intermediate, Experienced
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 2efb7050b0b0c783c5f34c1f2e375cf21fa7a6cd
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
 
 
-# Prueba de un trabajador de Asset Compute
+# Probar un Asset compute de trabajo
 
-El proyecto Asset Compute define un patrón para crear y ejecutar fácilmente [pruebas de los trabajadores de Asset Compute](https://docs.adobe.com/content/help/en/asset-compute/using/extend/test-custom-application.html).
+El proyecto de Asset compute define un patrón para crear y ejecutar fácilmente [pruebas de Asset compute Workers](https://docs.adobe.com/content/help/en/asset-compute/using/extend/test-custom-application.html).
 
 ## Anatomía de una prueba de trabajador
 
-Las pruebas de los trabajadores de Asset Compute se desglosan en grupos de pruebas y, dentro de cada grupo de pruebas, uno o más casos de prueba que afirman una condición para probar.
+Las pruebas de los trabajadores de asset compute se desglosan en grupos de pruebas y, en cada grupo de pruebas, uno o más casos de prueba que afirman una condición para probar.
 
-La estructura de las pruebas de un proyecto de Asset Compute es la siguiente:
+La estructura de las pruebas de un proyecto de Asset compute es la siguiente:
 
 ```
 /actions/<worker-name>/index.js
@@ -80,7 +80,9 @@ Este caso de prueba afirma la entrada parametrizada (`params.json`) para el arch
        "brightness": "-0.50"
    }
    ```
-   Son las mismas claves o valores pasados a la definición de perfil de Asset Compute de la [Herramienta de desarrollo](../develop/development-tool.md), menos a la clave `worker`.
+
+   Son las mismas claves o valores pasados a la definición de perfil de Asset compute](../develop/development-tool.md) de la `worker` herramienta de desarrollo, menos a la clave [.
+
 1. Agregue el archivo de representación [esperado](./assets/test/success-parameterized/rendition.png) a este caso de prueba y asígnele el nombre `rendition.png`. Este archivo representa la salida esperada del trabajador para la entrada determinada `file.jpg`.
 1. Desde la línea de comandos, ejecute las pruebas en la raíz del proyecto ejecutando `aio app test`
    + Asegúrese de que [Docker Desktop](../set-up/development-environment.md#docker) y las imágenes de Docker compatibles estén instaladas e iniciadas
