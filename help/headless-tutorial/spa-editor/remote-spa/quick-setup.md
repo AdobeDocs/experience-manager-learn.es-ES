@@ -8,9 +8,9 @@ level: Beginner
 kt: 7629
 thumbnail: kt-7629.jpeg
 translation-type: tm+mt
-source-git-commit: 2efb7050b0b0c783c5f34c1f2e375cf21fa7a6cd
+source-git-commit: d3a237b196ac872beda6119c854a0cae29510437
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '794'
 ht-degree: 5%
 
 ---
@@ -32,8 +32,11 @@ Este tutorial requiere lo siguiente:
 + [Java™ 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 + [Maven 3.6+](https://maven.apache.org/)
 + [Git](https://git-scm.com/downloads)
++ Requisitos previos solo de macOS
+   + [](https://developer.apple.com/xcode/) Herramientas de línea de comandos de Xcode o  [Xcode](https://developer.apple.com/xcode/resources/)
 + [aem-guides-wknd.all.0.3.0.zip o buenas](https://github.com/adobe/aem-guides-wknd/releases)
 + [código fuente aem-guides-wknd-graphql](https://github.com/adobe/aem-guides-wknd-graphql)
+
 
 Este tutorial supone:
 
@@ -90,7 +93,8 @@ Descargue el código fuente de la aplicación WKND de Github.com y cambie la ram
 ```
 $ mkdir -p ~/Code/wknd-app
 $ cd ~/Code/wknd-app
-$ git clone git@github.com:adobe/aem-guides-wknd-graphql.git
+$ git clone https://github.com/adobe/aem-guides-wknd-graphql.git
+$ cd aem-guides-wknd-graphql
 $ git checkout -b feature/spa-editor
 $ git pull origin feature/spa-editor
 ```
@@ -146,6 +150,8 @@ Antes de crear contenido, arregle las ventanas del navegador de modo que AEM Aut
 1. Pulse en la tarjeta __Bali Surf Camp__ y navegue hasta su ruta dinámica
 1. Agregar, cambiar o quitar componentes del componente contenedor que se encuentra sobre el encabezado __Itinerario__
 1. Actualice la SPA que se ejecuta en `http://localhost:3000` y vea que los cambios se reflejan
+
+Las páginas de AEM nuevas en la __Página de inicio de la aplicación WKND > Aventura__ _deben_ tener un nombre de página AEM que coincida con el nombre del fragmento de contenido de la aventura correspondiente. Esto se debe a que la ruta SPA a AEM asignación de página se basa en el último segmento de la ruta, que es el nombre del fragmento de contenido.
 
 ## Felicitaciones!
 
