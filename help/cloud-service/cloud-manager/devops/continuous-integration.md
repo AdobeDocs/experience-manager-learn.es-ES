@@ -4,20 +4,26 @@ description: Conozca las prácticas recomendadas y la integración continua medi
 role: Developer
 level: Beginner
 type: Tutorial
-topic: Development
-feature: Developer Tools
+topic: Desarrollo
+feature: Herramientas para desarrolladores
 kt: 6914
 thumbnail: 330536.jpg
 translation-type: tm+mt
-source-git-commit: 5ac82928d4b0bf75b348a414793c24c3aca92f36
+source-git-commit: e295d77a11c99310aaae10ecb8a2eaa20ad49285
 workflow-type: tm+mt
-source-wordcount: '32'
-ht-degree: 0%
+source-wordcount: '64'
+ht-degree: 10%
 
 ---
 
 
-# Integración continua y Administrador de nube
+# Integración continua y Cloud Manager
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_devops_cicd"
+>title="Integración continua y Cloud Manager"
+>abstract="Conozca las prácticas recomendadas y la integración continua mediante Adobe Cloud Manager."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en#non-production-pipelines" text="Configuración de la canalización de CI/CD"
 
 Conozca las prácticas recomendadas y la integración continua mediante Adobe Cloud Manager.
 
