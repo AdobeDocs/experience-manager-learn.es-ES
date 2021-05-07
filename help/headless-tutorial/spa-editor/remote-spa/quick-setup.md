@@ -6,11 +6,11 @@ feature: Editor de SPA, componentes principales, API, desarrollo
 role: Developer, Architect
 level: Beginner
 kt: 7629
-thumbnail: kt-7629.jpeg
+thumbnail: 333181.jpeg
 translation-type: tm+mt
-source-git-commit: d3a237b196ac872beda6119c854a0cae29510437
+source-git-commit: e6dc028a120670d34806def36ad200ed161295e1
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '801'
 ht-degree: 5%
 
 ---
@@ -21,6 +21,10 @@ ht-degree: 5%
 La configuración rápida es una guía rápida que ilustra cómo instalar y ejecutar la aplicación WKND y como SPA remoto, y crearla con AEM SPA Editor.
 
 La configuración rápida le lleva directamente al estado final de este tutorial.
+
+>[!VIDEO](https://video.tv.adobe.com/v/333181/?quality=12&learn=on)
+
+_Un vídeo explicativo de la configuración rápida_
 
 ## Requisitos previos
 
