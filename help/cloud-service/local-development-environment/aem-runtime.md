@@ -13,7 +13,7 @@ topic: Desarrollo
 role: Developer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: 9a78cbdb5fd35e4aa7169382494dd014aa8098e9
+source-git-commit: d49ae402b332ba972a78cdbd8f5bf962b91c83b1
 workflow-type: tm+mt
 source-wordcount: '1734'
 ht-degree: 2%
@@ -229,7 +229,7 @@ Para iniciar el servicio AEM Author, `cd` en el directorio que contiene el Jar d
 
 o bien, para iniciar el servicio AEM Publish, `cd` en el directorio que contiene el Jar de inicio rápido y ejecute el comando:
 
-`$ java -jar aem-author-p4503.jar`
+`$ java -jar aem-publish-p4503.jar`
 
 ## Iniciar el Jar de inicio rápido desde la línea de comandos anula{#troubleshooting-java-8} inmediatamente
 
