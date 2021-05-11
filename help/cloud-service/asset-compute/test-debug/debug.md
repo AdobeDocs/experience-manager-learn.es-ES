@@ -13,7 +13,7 @@ topic: Integraciones, desarrollo
 role: Developer
 level: Intermediate, Experienced
 translation-type: tm+mt
-source-git-commit: 2efb7050b0b0c783c5f34c1f2e375cf21fa7a6cd
+source-git-commit: dbc0a35ae96594fec1e10f411d57d2a3812c1cf2
 workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 0%
@@ -59,6 +59,7 @@ _Pulsación para depurar un Asset compute de trabajo mediante wskdebug (sin audi
    ```
    ℹ Info: Deploying package [wkndAemAssetCompute-0.0.1]...
    ```
+
 
 1. Inicie una nueva instancia de la herramienta de desarrollo de Asset compute mediante el comando `npx adobe-asset-compute devtool`
 1. En Código VS, pulse el icono de depuración en el panel de navegación izquierdo
