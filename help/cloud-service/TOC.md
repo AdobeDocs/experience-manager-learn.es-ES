@@ -4,11 +4,10 @@ user-guide-description: Una recopilación de tutoriales de Adobe Experience Mana
 breadcrumb-title: Tutoriales de AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-translation-type: tm+mt
-source-git-commit: 98cfc9e007770e7a8291343bdd63fd523f747bb9
+source-git-commit: 84499d5a7c8adac87196f08c6328e8cb428c0130
 workflow-type: tm+mt
-source-wordcount: '415'
-ht-degree: 22%
+source-wordcount: '440'
+ht-degree: 21%
 
 ---
 
@@ -96,6 +95,14 @@ ht-degree: 22%
       + [Configuración del panel de recursos](./forms/create-first-af/configure-assets-panel.md)
       + [Configuración del panel de inicio](./forms/create-first-af/configure-start-panel.md)
       + [Agregar y configurar barra de herramientas](./forms/create-first-af/add-configure-toolbar.md)
+   + API de Document Cloud y AEM Forms CS{#doc-cloud-sdk}
+      + [Introducción](./forms/doc-cloud-sdk/introduction.md)
+      + [Crear proyecto de IO de Adobe](./forms/doc-cloud-sdk/create-document-cloud-credentials.md)
+      + [Crear configuración OSGI](./forms/doc-cloud-sdk/create-doc-cloud-configuration.md)
+      + [Definir interfaz](./forms/doc-cloud-sdk/create-interface.md)
+      + [Implementar interfaz](./forms/doc-cloud-sdk/implement-interface.md)
+      + [Crear parte JSON](./forms/doc-cloud-sdk/get-content-analyzer.md)
+      + [Paso de proceso personalizado](./forms/doc-cloud-sdk/custom-process-step.md)
    + Crear flujo de trabajo de revisión{#create-aem-workflow}
       + [Crear modelo de flujo de trabajo](./forms/create-aem-workflow/create-workflow.md)
       + [flujo de trabajo de déclencheur](./forms/create-aem-workflow/configure-af.md)
