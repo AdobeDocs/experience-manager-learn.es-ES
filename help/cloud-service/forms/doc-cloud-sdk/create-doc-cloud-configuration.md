@@ -7,12 +7,11 @@ role: Developer
 level: Beginner, Intermediate
 version: cloud-service
 topic: desarrollo
-thumbnail: 331891.jpg
-kt: 7192
-translation-type: tm+mt
-source-git-commit: dbc0a35ae96594fec1e10f411d57d2a3812c1cf2
+thumbnail: 7818.jpg
+kt: 7818
+source-git-commit: 84499d5a7c8adac87196f08c6328e8cb428c0130
 workflow-type: tm+mt
-source-wordcount: '63'
+source-wordcount: '64'
 ht-degree: 3%
 
 ---
@@ -21,7 +20,11 @@ ht-degree: 3%
 
 Cree una configuración OSGi personalizada para capturar las credenciales de su cuenta de document cloud
 
+
 Para realizar una configuración OSGi personalizada, primero necesitamos crear una interfaz cuyos métodos públicos representen los campos de la configuración.
+
+![doc-cloud-config](assets/doc-cloud-configuration.JPG)
+
 
 Cree una interfaz denominada DocumentCloudConfiguration y pegue el siguiente código en ella.
 
