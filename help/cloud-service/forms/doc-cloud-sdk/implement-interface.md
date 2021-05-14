@@ -7,12 +7,11 @@ role: Developer
 level: Beginner, Intermediate
 version: cloud-service
 topic: desarrollo
-thumbnail: 331891.jpg
-kt: 7192
-translation-type: tm+mt
-source-git-commit: dbc0a35ae96594fec1e10f411d57d2a3812c1cf2
+thumbnail: 7826.jpg
+kt: 7826
+source-git-commit: 84499d5a7c8adac87196f08c6328e8cb428c0130
 workflow-type: tm+mt
-source-wordcount: '48'
+source-wordcount: '44'
 ht-degree: 2%
 
 ---
@@ -20,7 +19,8 @@ ht-degree: 2%
 # Implementación de interfaz
 
 El siguiente es el código completo de la clase que implementa la interfaz.
-Esta clase utiliza 2 métodos de utilidad getAccessToken,getJWTToken y el método estático getContentAnalyserRequest de la clase GetContentAnalyser.
+
+Esta clase utiliza 2 métodos de utilidad `getAccessToken`, `getJWTToken` y el método estático `getContentAnalyserRequest` de la clase `GetContentAnalyser`.
 
 
 ```java
