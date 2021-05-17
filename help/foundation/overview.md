@@ -5,29 +5,29 @@ description: 'Una colección de vídeos y tutoriales para Adobe Experience Manag
 seo-description: Una colección de vídeos y tutoriales para Adobe Experience Manager Foundation
 role: Leader, Architect, Developer, Administrator, Business Practitioner
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 01053f3d8de0405cfc7058f46443647154c508c4
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 21%
+source-wordcount: '261'
+ht-degree: 22%
 
 ---
 
 
 # Información general {#overview}
 
-Adobe Experience Manager proporciona un conjunto común de funciones disponibles para los usuarios de AEM Sites, [!DNL Assets] y [!DNL Forms].
+Adobe Experience Manager proporciona un conjunto común de funcionalidades disponibles para los usuarios de AEM Sites, [!DNL Assets] y [!DNL Forms].
 
 ## Novedades
 
-* **[Uso de la administración de flujos de trabajo en AEM (vídeo)](./workflow/use-workflow-management.md)**
-   *AEM proporciona visibilidad sobre los flujos de trabajo en ejecución y facilita la administración de las  [!DNL Workflow] definiciones.*
+* **[Usar AEM de flujo de trabajo (vídeo)](./workflow/use-workflow.md)**
+
+   *AEM flujo de trabajo proporciona una forma de colaborar, administrar y procesar contenido en AEM.*
 
 * **[Comprender Cloud Manager para AEM (vídeo)](./cloud-manager/understand-cloud-manager-for-aem.md)**\
-   *Cloud Manager para AEM permite una administración, inspección y autoservicio sencillas de los entornos de AEM.*
+   *Cloud Manager para AEM permite una administración, inspección y autoservicio sencillos de los entornos AEM.*
 
 * **[Configuración de claves públicas y privadas para su uso con Adobe I/O (tutorial)](./authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)**\
-   *Descubra cómo se generan las claves y los almacenes de claves mediante  [!DNL openssl] que funcionan con AEM y Adobe I/O.*
+   *Aprenda cómo se generan las claves y las tiendas de claves mediante  [!DNL openssl] que funcionen con AEM y Adobe I/O.*
 
 * **[Uso de la canalización de CI/CD de Cloud Manager (vídeo)](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)**\
    *Aprenda a utilizar la canalización de CD/CI de Cloud Manager para garantizar implementaciones seguras y coherentes.*
@@ -46,7 +46,7 @@ Adobe Experience Manager proporciona un conjunto común de funciones disponibles
     </a>
     </div>
     <p>
-    <em>Cloud Manager para AEM proporciona una solución sencilla pero sólida que permite una administración, inspección y autoservicio sencillos de los entornos de AEM.</em>
+    <em>Cloud Manager para AEM proporciona una solución sencilla pero sólida que permite una administración, inspección y autoservicio sencillos de los entornos AEM.</em>
     <p>
   </td>
    <td>
@@ -59,7 +59,7 @@ Adobe Experience Manager proporciona un conjunto común de funciones disponibles
     </a>
     </div>
     <p>
-    <em>Explore cómo configurar Sling Dynamic Include (SDI) y permitir que los componentes dinámicos de AEM siempre ofrezcan contenido nuevo.</em>
+    <em>Explore cómo configurar Sling Dynamic Include (SDI) y permitir que los componentes de AEM dinámicos siempre ofrezcan contenido nuevo.</em>
     <p>
   </td>
   <td>
@@ -72,7 +72,7 @@ Adobe Experience Manager proporciona un conjunto común de funciones disponibles
     </a>
     </div>
     <p>
-    <em>Un desglose de alto nivel de las funciones clave que debe comprender, cuando se considera actualizar a la última versión de AEM.</em>
+    <em>Un desglose de alto nivel de las funciones clave que se deben comprender, cuando se considera la posibilidad de actualizar a la última versión de AEM.</em>
     </p>
   </td>
 </tr>
