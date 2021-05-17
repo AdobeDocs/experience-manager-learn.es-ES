@@ -4,10 +4,9 @@ breadcrumb-title: Tutoriales de AEM Foundation
 user-guide-description: 'Una colección de vídeos y tutoriales para Adobe Experience Manager Foundation. '
 sub-product: foundation
 index: y
-translation-type: tm+mt
-source-git-commit: 2760064642002a684b3fd70337a81a7d6e28a343
+source-git-commit: 01053f3d8de0405cfc7058f46443647154c508c4
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '146'
 ht-degree: 21%
 
 ---
@@ -36,15 +35,15 @@ ht-degree: 21%
    + [Comprender las prácticas recomendadas de la API de Java](./development/understand-java-api-best-practices.md)
    + [Comprender el exportador del modelo Sling](./development/understand-sling-model-exporter.md)
 + Proyectos {#projects}
-   + [Desarrollo de proyectos de AEM](./projects/develop-aem-projects.md)
+   + [Desarrollar AEM proyectos](./projects/develop-aem-projects.md)
    + [Usar Project Masters](./projects/use-project-masters.md)
 + Seguridad {#security}
-   + [Notificación de seguridad de AEM (noviembre de 2018)](./security/aem-security-notification-2018-11.md)
+   + [Notificación de seguridad AEM (noviembre de 2018)](./security/aem-security-notification-2018-11.md)
    + [Desarrollo para el intercambio de recursos de origen cruzado (CORS)](./security/develop-for-cross-origin-resource-sharing.md)
    + [Comprender el uso compartido de recursos de origen cruzado (CORS)](./security/understand-cross-origin-resource-sharing.md)
    + [Uso del asistente SSL](./security/use-the-ssl-wizard.md)
 + Flujo de trabajo {#workflow}
    + [Uso del Editor de flujo de trabajo](./workflow/use-the-workflow-editor.md)
-   + [Usar la administración de flujos de trabajo](./workflow/use-workflow-management.md)
+   + [Uso del flujo de trabajo](./workflow/use-workflow.md)
    + [Usar la bandeja de entrada](./workflow/use-the-inbox.md)
 
