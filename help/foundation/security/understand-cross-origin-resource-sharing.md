@@ -1,19 +1,18 @@
 ---
 title: Comprender el uso compartido de recursos de origen cruzado (CORS) con AEM
-description: El uso compartido de recursos de origen cruzado (CORS) de Adobe Experience Manager facilita las propiedades web que no son de AEM para realizar llamadas del lado del cliente a AEM, tanto autenticadas como no autenticadas, para recuperar contenido o interactuar directamente con AEM.
+description: El uso compartido de recursos de origen cruzado (CORS) de Adobe Experience Manager facilita las propiedades web no AEM para realizar llamadas del lado del cliente a AEM, tanto autenticadas como no autenticadas, para recuperar contenido o interactuar directamente con AEM.
 version: 6.3, 6,4, 6.5
 sub-product: fundación, servicios de contenido, sitios
 topics: security, development, content-delivery
 activity: understand
 audience: architect, developer
 doc-type: article
-topic: Security
+topic: Seguridad
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 1c99c319fba5048904177fc82c43554b0cf0fc15
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '918'
 ht-degree: 1%
 
 ---
@@ -21,15 +20,15 @@ ht-degree: 1%
 
 # Comprender el uso compartido de recursos de origen cruzado ([!DNL CORS])
 
-El uso compartido de recursos de origen cruzado ([!DNL CORS]) de Adobe Experience Manager facilita las propiedades web que no son de AEM para realizar llamadas del lado del cliente a AEM, tanto autenticadas como no autenticadas, para recuperar contenido o interactuar directamente con AEM.
+El uso compartido de recursos de origen cruzado ([!DNL CORS]) de Adobe Experience Manager facilita las propiedades web no AEM para realizar llamadas del lado del cliente a AEM, tanto autenticadas como no autenticadas, para recuperar contenido o interactuar directamente con AEM.
 
-## Configuración OSGi de la política de uso compartido de recursos de origen cruzado de Adobe Granite
+## Política de uso compartido de recursos de origen cruzado de Adobe Granite Configuración OSGi
 
 Las configuraciones de CORS se administran como fábricas de configuración de OSGi en AEM, y cada directiva se representa como una instancia de fábrica.
 
 * `http://<host>:<port>/system/console/configMgr > Adobe Granite Cross Origin Resource Sharing Policy`
 
-![Configuración OSGi de la política de uso compartido de recursos de origen cruzado de Adobe Granite](./assets/understand-cross-origin-resource-sharing/cors-osgi-config.png)
+![Política de uso compartido de recursos de origen cruzado de Adobe Granite Configuración OSGi](./assets/understand-cross-origin-resource-sharing/cors-osgi-config.png)
 
 [!DNL Adobe Granite Cross-Origin Resource Sharing Policy] (`com.adobe.granite.cors.impl.CORSPolicyImpl`)
 
@@ -141,7 +140,8 @@ Para permitir el almacenamiento en caché de los encabezados CORS, agregue la si
 ```
 /cache { 
   ...
-  /clientheaders {
+  /headers {
+      "Origin",
       "Access-Control-Allow-Origin"
       "Access-Control-Expose-Headers"
       "Access-Control-Max-Age"
@@ -155,7 +155,7 @@ Para permitir el almacenamiento en caché de los encabezados CORS, agregue la si
 
 Recuerde **reiniciar la aplicación del servidor web** después de realizar cambios en el archivo `dispatcher.any`.
 
-Es probable que se borre la caché por completo para garantizar que los encabezados se almacenen correctamente en caché en la siguiente solicitud después de una actualización de configuración `/clientheaders`.
+Es probable que se borre la caché por completo para garantizar que los encabezados se almacenen correctamente en caché en la siguiente solicitud después de una actualización de configuración `/cache/headers`.
 
 ## Resolución de problemas de CORS
 
@@ -170,12 +170,12 @@ El registro está disponible en `com.adobe.granite.cors`:
 * Verifique si la solicitud fue denegada por el controlador CORS y no por la autenticación, el filtro de token CSRF, los filtros de Dispatcher u otras capas de seguridad
    * Si el controlador CORS responde con 200, pero el encabezado `Access-Control-Allow-Origin` está ausente en la respuesta, revise los registros para las denegaciones en [!DNL DEBUG] en `com.adobe.granite.cors`
 * Si el almacenamiento en caché de Dispatcher de [!DNL CORS] solicitudes está habilitado
-   * Asegúrese de que la configuración `/clientheaders` se aplica a `dispatcher.any` y que el servidor web se reinicia correctamente
+   * Asegúrese de que la configuración `/cache/headers` se aplica a `dispatcher.any` y que el servidor web se reinicia correctamente
    * Asegúrese de que la caché se borró correctamente después de cualquier cambio de configuración de OSGi o dispatcher.any.
 * si es necesario, compruebe la presencia de credenciales de autenticación en la solicitud.
 
 ## Materiales de apoyo
 
-* [Fábrica de configuración de AEM OSGi para políticas de intercambio de recursos de origen cruzado](http://localhost:4502/system/console/configMgr/com.adobe.granite.cors.impl.CORSPolicyImpl)
+* [AEM fábrica de configuración OSGi para directivas de intercambio de recursos de origen cruzado](http://localhost:4502/system/console/configMgr/com.adobe.granite.cors.impl.CORSPolicyImpl)
 * [Uso compartido de recursos de origen cruzado (W3C)](https://www.w3.org/TR/cors/)
 * [Control de acceso HTTP (MDN Mozilla)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)
