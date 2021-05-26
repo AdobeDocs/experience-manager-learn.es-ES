@@ -10,7 +10,7 @@ topics: content-delivery
 activity: develop, understand
 kt: 2963
 index: y
-source-git-commit: bfca379bf2722dc1658400f375e65d2943f27ed7
+source-git-commit: 2b2c45e5ceb6f1121ff5b9befa0c79226e4e2efb
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 23%
@@ -27,10 +27,10 @@ ht-degree: 23%
       + [1 - Conceptos básicos de modelos](./graphql/video-series/modeling-basics.md)
       + [2: Modelado avanzado](./graphql/video-series/advanced-modeling.md)
       + [3 - Creación de consultas de GraphQL](./graphql/video-series/creating-graphql-queries.md)
-      + [4 - Consultas persistentes de GraphQL](./graphql/video-series/graphql-persisted-queries.md)
-      + [5: Arquitectura de creación y publicación](./graphql/video-series/author-publish-architecture.md)
-      + [6 - Variaciones de fragmento de contenido](./graphql/video-series/content-fragment-variations.md)
-      + [7 - Puntos finales de GraphQL](./graphql/video-series/graphql-endpoints.md)
+      + [4 - Variaciones de fragmento de contenido](./graphql/video-series/content-fragment-variations.md)
+      + [5 - Puntos finales de GraphQL](./graphql/video-series/graphql-endpoints.md)
+      + [6 - Arquitectura de creación y publicación](./graphql/video-series/author-publish-architecture.md)
+      + [7 - Consultas persistentes de GraphQL](./graphql/video-series/graphql-persisted-queries.md)
    + Tutorial de varios pasos{#multi-step}
       + [Información general](./graphql/multi-step/overview.md)
       + [1 - Configuración rápida](./graphql/multi-step/setup.md)
