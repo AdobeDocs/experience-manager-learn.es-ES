@@ -5,9 +5,9 @@ user-guide-title: Vídeos y tutoriales de AEM Forms
 user-guide-description: Recopilación de recursos de AEM Forms para principiantes y desarrolladores experimentados de AEM Forms.
 breadcrumb-title: Tutoriales de AEM Forms
 index: y
-source-git-commit: e82cc5e5de6db33e82b7c71c73bb606f16b98ea6
+source-git-commit: 540e11c0861eacc795122328b2359c7db6378aec
 workflow-type: tm+mt
-source-wordcount: '973'
+source-wordcount: '977'
 ht-degree: 6%
 
 ---
@@ -98,9 +98,10 @@ ht-degree: 6%
    + [Introducción](inbox-customization/introduction.md)
    + [Añadir columna personalizada](inbox-customization/add-married-column.md)
    + [Uso de una plantilla sightly](inbox-customization/use-sightly-template.md)
-+ Comprimir archivos adjuntos de formulario{#zipping-form-attachments}
++ Archivos adjuntos de formularios de correo electrónico{#zipping-form-attachments}
    + [Introducción](zipping-form-attachments/introduction.md)
-   + [Proceso personalizado](zipping-form-attachments/custom-process-step.md)
+   + [Archivos adjuntos de formulario zip](zipping-form-attachments/custom-process-step.md)
+   + [Archivos adjuntos de formulario de correo electrónico](zipping-form-attachments/populating-list-of-documents.md)
    + [Probar la solución](zipping-form-attachments/test.md)
 + Almacenamiento y recuperación del formulario adaptable{#store-and-retrieve-af-with-2fa}
    + [Introducción](store-and-retrieve-af-with-2fa/introduction.md)
