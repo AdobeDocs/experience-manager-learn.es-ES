@@ -4,10 +4,9 @@ user-guide-description: Recopilación de vídeos y tutoriales de Adobe Experienc
 breadcrumb-title: Tutoriales de AEM Assets
 sub-product: activos
 team: TM
-translation-type: tm+mt
-source-git-commit: 0d012d61b7740e461e641dddd6c5255a022305ea
+source-git-commit: 53312e573ca022f09faa44cbbf51c5b8b0ed90ee
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '265'
 ht-degree: 32%
 
 ---
@@ -67,12 +66,12 @@ ht-degree: 32%
    + [Brand Portal](./sharing/brand-portal.md)
    + Uso compartido de recursos{#assets-share}
       + [Asset Share Commons](./sharing/asset-share-commons-user-experience-feature-video-understand.md)
-      + [Configuración de Asset Share Commons en AEM local](./sharing/asset-share-commons-technical-video-setup.md)
+      + [Configuración de Asset Share Commons en AEM locales](./sharing/asset-share-commons-technical-video-setup.md)
       + [Uso compartido de recursos temáticos Commons](./sharing/asset-share-commons-feature-video-theming.md)
    + [Recursos conectados](./sharing/connected-assets.md)
 
 + Integración con flujos de trabajo creativos{#creative-workflows}
-   + [Aplicación de escritorio AEM](./creative-workflows/aem-desktop-app.md)
+   + [AEM aplicación de escritorio](./creative-workflows/aem-desktop-app.md)
    + [Adobe Asset Link](./creative-workflows/adobe-asset-link.md)
    + [Adobe Stock](./creative-workflows/adobe-stock.md)
 
@@ -88,6 +87,9 @@ ht-degree: 32%
    + [Solo para colocaciones (FPO)](./adobe-asset-link/for-placement-only.md)
    + [Búsqueda de recursos](./adobe-asset-link/asset-search.md)
 
++ Automatización de contenido{#content-automation}
+   + [Información general](./content-automation/overview.md)
+
 + Dynamic Media{#dynamic-media}
    + [Información general de Dynamic Media](dynamic-media/dynamic-media-overview-feature-video-use.md)
    + [Recorte inteligente](dynamic-media/smart-crop-feature-video-use.md)
@@ -101,7 +103,7 @@ ht-degree: 32%
    + [Visores](dynamic-media/dynamic-media-viewer-feature-video-understand.md)
    + [Visualizadores de imágenes panorámicas y verticales](dynamic-media/panorama-vertical-image-viewer-feature-video-use.md)
    + [Visualizadores con Adobe Analytics](dynamic-media/dynamic-media-viewer-extension-use.md)
-   + [Aplicación de escritorio de Dynamic Media Classic](dynamic-media/dynamic-media-classic-desktop-application.md)
+   + [Aplicación de escritorio Dynamic Media Classic](dynamic-media/dynamic-media-classic-desktop-application.md)
    + [Dynamic Media 3D](dynamic-media/dynamic-media-3d-feature-video.md)
    + [Vídeo de recorte inteligente de Dynamic Media](dynamic-media/dynamic-media-smart-crop-video.md)
    + [Componentes principales de Dynamic Media](dynamic-media/dynamic-media-core-components.md)
