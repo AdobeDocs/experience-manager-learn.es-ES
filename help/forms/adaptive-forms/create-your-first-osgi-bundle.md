@@ -1,19 +1,18 @@
 ---
-title: Creación de su primer paquete OSGi con AEM forms
+title: Creación de su primer paquete OSGi con formularios AEM
 description: Cree su primer paquete OSGi usando maven y eclipse
-feature: Adaptive Forms
+feature: Formularios adaptables
 topics: development
 audience: developer
 doc-type: article
 activity: setup
 version: 6.4,6.5
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 3a9778c97d57e55e3da740b492472456768fb32c
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '833'
 ht-degree: 2%
 
 ---
@@ -21,7 +20,7 @@ ht-degree: 2%
 
 # Cree su primer paquete OSGi
 
-Un paquete OSGi es un archivo Java™ que contiene código Java, recursos y un manifiesto que describe el paquete y sus dependencias. El paquete es la unidad de implementación para una aplicación. Este artículo está pensado para desarrolladores que deseen crear un servicio OSGi o un servlet utilizando AEM Forms 6.4 o 6.5. Para crear su primer paquete OSGi, siga los siguientes pasos:
+Un paquete OSGi es un archivo Java™ que contiene código Java, recursos y un manifiesto que describe el paquete y sus dependencias. El paquete es la unidad de implementación para una aplicación. Este artículo está dirigido a los desarrolladores que deseen crear un servicio OSGi o un servlet utilizando AEM Forms 6.4 o 6.5. Para crear su primer paquete OSGi, siga los siguientes pasos:
 
 
 ## Instalación de JDK
@@ -78,7 +77,7 @@ Para crear su primer proyecto de maven, siga los siguientes pasos:
 El proyecto maven se generará de forma interactiva y se le pedirá que proporcione valores a varias propiedades, como
 
 | Nombre de propiedad | Importancia | Value |
-------------------------|---------------------------------------|---------------------
+|------------------------|---------------------------------------|---------------------|
 | groupId | groupId identifica de forma exclusiva el proyecto en todos los proyectos | com.learningaemforms.adobe |
 | appsFolderName | Nombre de la carpeta que contendrá la estructura del proyecto | aprendizaje de aemforms |
 | artifactId | artifactId es el nombre del jar sin versión. Si lo creó, puede elegir el nombre que desee con letras minúsculas y sin símbolos extraños. | aprendizaje de aemforms |
@@ -120,7 +119,7 @@ Expanda `src/main/java` en la carpeta `learningaemforms.core`. Esta es la carpet
 
 ## Cree su proyecto
 
-Una vez que haya escrito su servicio OSGi o servlet, deberá crear su proyecto para generar el paquete OSGi que se puede implementar mediante la consola web Felix. Consulte [AEMFD Client SDK](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) para incluir el SDK de cliente apropiado en su proyecto de Maven. Deberá incluir el SDK de cliente de AEM FD en la sección de dependencias de `pom.xml` del proyecto principal, como se muestra a continuación.
+Una vez que haya escrito su servicio OSGi o servlet, deberá crear su proyecto para generar el paquete OSGi que se puede implementar mediante la consola web Felix. Consulte [AEMFD Client SDK](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) para incluir el SDK de cliente apropiado en su proyecto de Maven. Deberá incluir el SDK de cliente de FD de AEM en la sección de dependencias de `pom.xml` del proyecto principal, como se muestra a continuación.
 
 ```xml
 <dependency>
@@ -135,4 +134,4 @@ Para crear el proyecto, siga los siguientes pasos:
 * Abra la ventana **símbolo del sistema**
 * Ir a `c:\aemformsbundles\learningaemforms\core`
 * Ejecute el comando `mvn clean install`
-Si todo va bien, debería ver el paquete en la siguiente ubicación `C:\AEMFormsBundles\learningaemforms\core\target`. Este paquete ya está listo para implementarse en AEM mediante la consola web Felix.
+Si todo va bien, debería ver el paquete en la siguiente ubicación `C:\AEMFormsBundles\learningaemforms\core\target`. Este paquete ya está listo para implementarse en AEM usando la consola web Felix.
