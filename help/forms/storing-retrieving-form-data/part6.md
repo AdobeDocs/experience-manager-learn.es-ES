@@ -1,20 +1,15 @@
 ---
 title: Almacenamiento y recuperación de datos de formulario de la base de datos MySQL
 description: Tutorial de varias partes para guiarle por los pasos necesarios para almacenar y recuperar datos de formulario
-feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
-version: 6.3,6.4,6.5
-topic: Development
+feature: Formularios adaptables
+topic: Desarrollo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+version: 6.3,6.4,6.5
+source-git-commit: 3569d8b2a38d1cce02f6f4ff8b0c583f4dc118b6
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 4%
+source-wordcount: '280'
+ht-degree: 3%
 
 ---
 
@@ -25,11 +20,11 @@ ht-degree: 4%
 >
 >Para que esto se ejecute en su sistema, es necesario lo siguiente
 >
->* AEM Forms (versión 6.3 o superior)
+>* AEM Forms(versión 6.3 o posterior)
 >* Base de datos MySql
 
 
-Para probar esta capacidad en la instancia de AEM Forms, siga los siguientes pasos
+Para probar esta capacidad en su instancia de AEM Forms, siga los siguientes pasos
 
 * Descargue e implemente los archivos [MySql Driver Jar](assets/mysqldriver.jar) utilizando la consola web [felix](http://localhost:4502/system/console/bundles)
 * Descargue e implemente el [paquete OSGi](assets/SaveAndContinue.SaveAndContinue.core-1.0-SNAPSHOT.jar) utilizando la consola web [felix](http://localhost:4502/system/console/bundles)
@@ -40,11 +35,10 @@ Para probar esta capacidad en la instancia de AEM Forms, siga los siguientes pas
 * Inicie sesión en [configMgr.](http://localhost:4502/system/console/configMgr) Busque Fuente de datos agrupada de la conexión Apache Sling. Cree una nueva entrada de fuente de datos agrupada de conexión Apache Sling llamada **SaveAndContinue** con las siguientes propiedades:
 
 | Nombre de propiedad | Value |
-------------------------|---------------------------------------
+| ------------------------|---------------------------------------|
 | Nombre del origen de datos | SaveAndContinue |
 | Clase de controlador JDBC | com.mysql.cj.jdbc.Driver |
 | URI de conexión JDBC | jdbc:mysql://localhost:3306/aemformstutorial |
-
 
 * Abra el [Formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/demostoreandretrieveformdata/jcr:content?wcmmode=disabled)
 * Rellene algunos detalles y haga clic en el botón &quot;Guardar y continuar más tarde&quot;.
