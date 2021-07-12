@@ -7,35 +7,34 @@ doc-type: tutorial
 activity: develop
 topics: development, authoring, configuring, architecture
 audience: all
-topic: Content Management
-role: Business Practitioner
+topic: Administración de contenido
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '1219'
+source-wordcount: '1216'
 ht-degree: 0%
 
 ---
 
 
-# Determine su estructura de carpetas y la convención de nombres de archivos {#folder-structure-filenaming}
+# Determine la estructura de carpetas y la convención de nombres de archivos {#folder-structure-filenaming}
 
 Antes de entrar y empezar a cargar todo el contenido, es aconsejable tener en cuenta la estructura de carpetas que utilizará y, en particular, la convención de nomenclatura de archivos. Es probable que le ahorre tiempo y tenga que rehacer tareas más tarde. Es mejor coordinar estas decisiones entre todos los grupos.
 
 ## Jerarquía de carpetas y convención de nomenclatura de archivos
 
-La asignación de nombres a archivos es generalmente la decisión más importante que se toma en relación con la implementación de Dynamic Media Classic. Sin embargo, para entender por qué es importante, hablemos primero de la estructura de carpetas.
+La asignación de nombres a archivos es generalmente la decisión más importante que toma en cuanto a la implementación de Dynamic Media Classic. Sin embargo, para entender por qué es importante, hablemos primero de la estructura de carpetas.
 
 ### Jerarquía de carpetas
 
-La jerarquía de carpetas es importante para usted y para su empresa únicamente con fines organizativos: las direcciones URL de Dynamic Media Classic solo hacen referencia al nombre del recurso, no a la carpeta o la ruta. Independientemente de dónde cargue un archivo, la dirección URL será la misma. Esto es muy diferente a cómo la mayoría de la gente organiza sus imágenes y contenido para la web, pero con Dynamic Media Classic no hay diferencia.
+La jerarquía de carpetas es importante para usted y para su empresa únicamente con fines organizativos: las direcciones URL de Dynamic Media Classic solo hacen referencia al nombre del recurso, no a la carpeta o la ruta. Independientemente de dónde cargue un archivo, la dirección URL será la misma. Esto es muy diferente a cómo la mayoría de la gente organiza sus imágenes y contenido para la web, pero con Dynamic Media Classic no marca ninguna diferencia.
 
-Otra consideración importante es el número de recursos o carpetas que se van a almacenar en cada carpeta. Si hay muchos recursos almacenados en una carpeta, el rendimiento se degradará al ver recursos en Dynamic Media Classic. No almacene miles de recursos en una carpeta. En su lugar, desarrolle una jerarquía organizativa con menos de 500 activos o carpetas dentro de una rama determinada de la jerarquía. Este no es un requisito estricto, pero ayudará a mantener tiempos de respuesta aceptables al ver o buscar recursos. De hecho, se recomienda crear jerarquías amplias y superficiales en lugar de estrechas y profundas.
+Otra consideración importante es el número de recursos o carpetas que se van a almacenar en cada carpeta. Si hay muchos recursos almacenados en una carpeta, el rendimiento se degradará al ver los recursos en Dynamic Media Classic. No almacene miles de recursos en una carpeta. En su lugar, desarrolle una jerarquía organizativa con menos de 500 activos o carpetas dentro de una rama determinada de la jerarquía. Este no es un requisito estricto, pero ayudará a mantener tiempos de respuesta aceptables al ver o buscar recursos. De hecho, se recomienda crear jerarquías amplias y superficiales en lugar de estrechas y profundas.
 
 La forma más sencilla de crear las carpetas es cargar toda la estructura de carpetas mediante FTP y activar la opción **Incluir subcarpetas**. Esta opción hace que Dynamic Media Classic vuelva a crear la estructura de carpetas en el sitio FTP de Dynamic Media Classic.
 
-Queremos que tenga en cuenta la estructura de carpetas antes de empezar a cargar todos los archivos, ya que es mucho más fácil organizar y administrar los archivos y carpetas localmente en el equipo que dentro de Dynamic Media Classic. Por ejemplo, solo puede arrastrar y soltar archivos, pero no carpetas enteras, dentro de Dynamic Media Classic.
+Queremos que tenga en cuenta la estructura de carpetas antes de empezar a cargar todos los archivos, ya que es mucho más fácil organizar y administrar los archivos y carpetas localmente en el equipo que en Dynamic Media Classic. Por ejemplo, solo puede arrastrar y soltar archivos, pero no carpetas enteras, dentro de Dynamic Media Classic.
 
 ### Estrategias de carpeta
 
