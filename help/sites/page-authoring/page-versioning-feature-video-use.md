@@ -1,5 +1,5 @@
 ---
-title: Creación de versiones de página para páginas del sitio de AEM
+title: Creación de versiones de página para páginas AEM sitio
 description: El siguiente vídeo resalta cómo crear una versión de página, obtener una vista previa, restaurar una versión de página y comparar la versión de página actual con las versiones de página guardadas.
 topics: authoring
 audience: author, marketer
@@ -8,13 +8,12 @@ activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4630
 thumbnail: 32151.jpg
-topic: Content Management
-role: Business Practitioner
+topic: Administración de contenido
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '145'
 ht-degree: 28%
 
 ---
