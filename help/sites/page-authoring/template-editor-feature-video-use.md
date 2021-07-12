@@ -3,20 +3,19 @@ title: Uso de plantillas de página editables con AEM Sites
 seo-title: Uso de plantillas de página editables con Adobe Experience Manager Sites
 description: Las plantillas editables permiten a los autores especializados crear y actualizar plantillas de página y administrar configuraciones de políticas avanzadas con AEM Sites.
 seo-description: Las plantillas editables permiten a los autores especializados crear y actualizar plantillas de página y administrar configuraciones de políticas avanzadas con Adobe Experience Manager Sites.
-feature: Editable Templates
+feature: Plantillas editables
 topics: authoring
 audience: all
 doc-type: feature video
 activity: use
 version: 6.3, 6.4, 6.5
 kt: 193
-topic: Content Management
-role: Business Practitioner
+topic: Administración de contenido
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '256'
 ht-degree: 9%
 
 ---
@@ -28,9 +27,9 @@ Las plantillas editables permiten a los autores especializados crear y actualiza
 
 >[!VIDEO](https://video.tv.adobe.com/v/326784/?quality=12&learn=on)
 
-Las plantillas editables son la recomendación para crear nuevos AEM Sites.
+Las plantillas editables son la recomendación para crear un nuevo AEM Sites.
 
-**Experiencia de creación coherente** : Las mejoras en la creación de AEM Sites se transfieren a la edición de plantillas, incluido el modo de diseño en línea y el panel de árbol de contenido.
+**Experiencia de creación coherente** : Las mejoras en la creación de AEM Sites se transfieren a la edición de plantillas, incluidos el modo Diseño en línea y el Panel de árbol de contenido.
 
 **Configuraciones de directiva avanzadas** : a continuación se destacan algunas configuraciones de directiva avanzadas que están disponibles con plantillas editables:
 
@@ -39,7 +38,7 @@ Las plantillas editables son la recomendación para crear nuevos AEM Sites.
 * **Componente de imagen** : capacidad para activar o desactivar funciones como recorte, carga de archivos de escritorio con una nueva interfaz de usuario y reutilización de políticas de imagen en todas las plantillas.
 
 Las plantillas editables se encuentran en **Herramientas** `>` **General** `>` **Plantillas**.\
-URL de plantillas editables (instancia local de AEM): [http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
+URL de plantillas editables (instancia AEM local): [http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
 
 ## Recursos adicionales {#additional-resources}
 
