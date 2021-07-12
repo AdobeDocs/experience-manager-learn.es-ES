@@ -1,16 +1,15 @@
 ---
-title: Uso de miniaturas de vídeo personalizadas con Dynamic Media de AEM
+title: Uso de miniaturas de vídeo personalizadas con AEM Dynamic Media
 description: Las miniaturas de vídeo personalizadas de AEM Assets permiten a los autores seleccionar una miniatura adecuada de un conjunto de miniaturas generadas. El número de miniaturas generadas para un vídeo se puede personalizar fácilmente.
 sub-product: dynamic-media
-feature: Video Profiles
+feature: Perfiles de vídeo
 version: 6.3, 6.4, 6.5
-topic: Content Management
-role: Business Practitioner
+topic: Administración de contenido
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '109'
 ht-degree: 11%
 
 ---
@@ -28,4 +27,4 @@ Las miniaturas de vídeo personalizadas de AEM Assets permiten a los autores sel
 
 >[!NOTE]
 >
->Debe ejecutar la instancia [AEM en el modo Dynamic Media](https://docs.adobe.com/docs/es-ES/aem/6-3/administer/content/dynamic-media/config-dynamic.html)
+>Debe ejecutar la instancia de [AEM en modo Dynamic Media](https://docs.adobe.com/docs/es-ES/aem/6-3/administer/content/dynamic-media/config-dynamic.html)
