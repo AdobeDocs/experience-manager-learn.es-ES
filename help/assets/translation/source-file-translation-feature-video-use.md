@@ -1,14 +1,13 @@
 ---
-title: Uso de la traducción de archivos de origen con AEM Assets
-description: Recursos Adobe Experience Manager (AEM) permite identificar recursos que comparten atributos comunes y marcarlos como relacionados mediante la nueva función Recursos relacionados. También permite a los usuarios definir una relación origen/derivada entre recursos, lo que facilita la identificación del origen de un recurso. Al ejecutar el flujo de trabajo de traducción en un recurso derivado, se recuperan todos los recursos a los que hace referencia el archivo de origen y se incluye para su traducción, lo que reduce los esfuerzos por mantener varios sitios.
+title: Uso de la traducción del archivo de origen con AEM Assets
+description: Recursos Adobe Experience Manager (AEM) permite identificar recursos que comparten atributos comunes y marcarlos como relacionados mediante la nueva función Recursos relacionados . También permite a los usuarios definir una relación origen/derivada entre recursos, lo que facilita la identificación del origen de un recurso. Al ejecutar el flujo de trabajo de traducción en un recurso derivado, se recuperan todos los recursos a los que hace referencia el archivo de origen y se incluye para su traducción, lo que reduce los esfuerzos por mantener varios sitios.
 version: 6.3, 6.4, 6.5
-topic: Content Management
-role: Business Practitioner
+topic: Administración de contenido
+role: User
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
@@ -16,9 +15,9 @@ ht-degree: 0%
 
 # Uso de la traducción del archivo de origen con AEM Assets {#using-source-file-translation-with-aem-assets}
 
-Recursos Adobe Experience Manager (AEM) permite identificar recursos que comparten atributos comunes y marcarlos como relacionados mediante la nueva función Recursos relacionados. También permite a los usuarios definir una relación origen/derivada entre recursos, lo que facilita la identificación del origen de un recurso. Al ejecutar el flujo de trabajo de traducción en un recurso derivado, se recuperan todos los recursos a los que hace referencia el archivo de origen y se incluye para su traducción, lo que reduce los esfuerzos por mantener varios sitios.
+Recursos Adobe Experience Manager (AEM) permite identificar recursos que comparten atributos comunes y marcarlos como relacionados mediante la nueva función Recursos relacionados . También permite a los usuarios definir una relación origen/derivada entre recursos, lo que facilita la identificación del origen de un recurso. Al ejecutar el flujo de trabajo de traducción en un recurso derivado, se recuperan todos los recursos a los que hace referencia el archivo de origen y se incluye para su traducción, lo que reduce los esfuerzos por mantener varios sitios.
 
-## Administración de archivos de origen de recursos múltiples {#multisite-asset-source-file-management}
+## Administración de archivos de origen de recursos multisitio {#multisite-asset-source-file-management}
 
 >[!VIDEO](https://video.tv.adobe.com/v/18331/?quality=9&learn=on)
 
