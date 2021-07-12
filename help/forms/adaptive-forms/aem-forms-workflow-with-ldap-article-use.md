@@ -1,9 +1,9 @@
 ---
-title: Uso del flujo de trabajo LDAP con Aem Forms
-seo-title: Uso del flujo de trabajo LDAP con Aem Forms
+title: Uso de LDAP con Aem Forms Workflow
+seo-title: Uso de LDAP con Aem Forms Workflow
 description: Asignación de la tarea de flujo de trabajo de AEM Forms al administrador del remitente
 seo-description: Asignación de la tarea de flujo de trabajo de AEM Forms al administrador del remitente
-feature: Adaptive Forms,Workflow
+feature: Forms adaptable,Flujo de trabajo
 topics: integrations
 audience: developer
 doc-type: article
@@ -11,13 +11,12 @@ activity: setup
 version: 6.3,6.4,6.5
 uuid: 3e32c3a7-387f-4652-8a94-4e6aa6cd5ab8
 discoiquuid: 671872b3-3de0-40da-9691-f8b7e88a9443
-topic: Development
-role: Administrator
+topic: Desarrollo
+role: Admin
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '547'
 ht-degree: 0%
 
 ---
@@ -27,7 +26,7 @@ ht-degree: 0%
 
 Asignación de la tarea de flujo de trabajo de AEM Forms al administrador del remitente.
 
-Al utilizar Formulario adaptable en el flujo de trabajo de AEM, le interesa asignar dinámicamente una tarea al administrador del remitente del formulario. Para lograr este caso de uso, tendremos que configurar AEM con Ldap.
+Al utilizar Formulario adaptable en AEM flujo de trabajo, le interesa asignar dinámicamente una tarea al administrador del remitente del formulario. Para lograr este caso de uso, tendremos que configurar AEM con Ldap.
 
 Los pasos necesarios para configurar AEM con LDAP se explican en [detalle aquí.](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ldap-config.html)
 
@@ -37,7 +36,7 @@ En la captura de pantalla siguiente, estamos recuperando todos los usuarios que 
 
 ![Configuración LDAP](assets/costcenterldap.gif)
 
-En la captura de pantalla siguiente, asignamos los grupos a los usuarios recuperados de LDAP en AEM. Observe el grupo de usuarios de formularios asignado a los usuarios importados. El usuario debe ser miembro de este grupo para interactuar con AEM Forms. También almacenamos la propiedad manager en el nodo profile/manager en AEM.
+En la captura de pantalla siguiente, asignamos los grupos a los usuarios recuperados de LDAP a AEM. Observe el grupo de usuarios de formularios asignado a los usuarios importados. El usuario debe ser miembro de este grupo para interactuar con AEM Forms. También almacenamos la propiedad manager en el nodo profile/manager en AEM.
 
 ![Synchandler](assets/synchandler.gif)
 
@@ -71,11 +70,11 @@ Dependiendo de cómo se almacene la propiedad manager en su LDAP, es posible que
 
 Lea este artículo para implementar su propio [ ParticipantChooser .](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
 
-Para probar esto en su sistema (para empleados de Adobe, puede utilizar este ejemplo de forma predeterminada)
+Para probar esto en su sistema (para empleados de Adobe, puede usar este ejemplo de forma predeterminada)
 
 * [Descargue e implemente el paquete setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Este es el paquete OSGI personalizado para configurar la propiedad del administrador.
 * [Descargar e instalar DevelopingWithServiceUserBundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-* [Importe los recursos asociados a este artículo en AEM mediante el administrador de paquetes](assets/aem-forms-ldap.zip). Se incluyen como parte de este paquete los archivos de configuración LDAP, el flujo de trabajo y un formulario adaptable.
+* [Importe los recursos asociados a este artículo en AEM mediante el administrador de paquetes](assets/aem-forms-ldap.zip). Incluidos como parte de este paquete son archivos de configuración LDAP, flujo de trabajo y un formulario adaptable.
 * Configure AEM con su LDAP utilizando las credenciales LDAP adecuadas.
 * Inicie sesión en AEM con sus credenciales LDAP.
 * Abra [timeoffrequestform](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
@@ -84,4 +83,4 @@ Para probar esto en su sistema (para empleados de Adobe, puede utilizar este eje
 
 >[!NOTE]
 >
->Este código personalizado para extraer el nombre del administrador se ha probado con Adobe LDAP. Si está ejecutando este código contra un LDAP diferente, deberá modificar o escribir su propia implementación de getParticipant para obtener el nombre del administrador.
+>Este código personalizado para extraer el nombre del administrador se ha probado con el Adobe LDAP. Si está ejecutando este código contra un LDAP diferente, deberá modificar o escribir su propia implementación de getParticipant para obtener el nombre del administrador.
