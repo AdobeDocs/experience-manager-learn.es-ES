@@ -1,27 +1,26 @@
 ---
 title: Uso del panel Información general del sistema en AEM
-description: En versiones anteriores de los administradores de AEM tenían que ver varias ubicaciones para obtener una imagen completa de la instancia de AEM. El objetivo de la Información general del sistema es solucionarlo proporcionando una vista de alto nivel de la configuración, el hardware y el estado de la instancia de AEM desde un único panel.
+description: En versiones anteriores de AEM administradores tenían que ver varias ubicaciones para obtener una imagen completa de la instancia de AEM. El objetivo de la Información general del sistema es solucionarlo proporcionando una vista de alto nivel de la configuración, el hardware y el estado de la instancia de AEM desde un único panel.
 version: 6.4, 6.5
 topics: administration, operations, monitoring
 activity: use
 audience: administrator, architect, developer, implementer
 doc-type: technical video
 contentOwner: dgordon
-topic: Administration
-role: Administrator
+topic: Administración
+role: Admin
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 1%
+source-wordcount: '143'
+ht-degree: 0%
 
 ---
 
 
 # Uso del panel Información general del sistema
 
-La [!UICONTROL Información general del sistema] de Adobe Experience Manager (AEM) proporciona una vista de alto nivel de la configuración, el hardware y el estado de la instancia de AEM, todo ello desde un solo panel.
+Adobe Experience Manager (AEM) [!UICONTROL System Overview] proporciona una vista de alto nivel de la configuración, el hardware y el estado de la instancia de AEM desde un solo panel.
 
 >[!VIDEO](https://video.tv.adobe.com/v/21340?quality=12&learn=on)
 
