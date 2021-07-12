@@ -1,19 +1,18 @@
 ---
 title: Configuración de OKTA con AEM
 description: Explicación de los distintos ajustes de configuración para el uso del inicio de sesión único mediante okta
-feature: Adaptive Forms
+feature: Formularios adaptables
 topics: development, authentication, security
 audience: developer
 doc-type: tutorial
 activity: setup
 version: 6.5
-topic: Administration
-role: Administrator
+topic: Administración
+role: Admin
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '762'
 ht-degree: 0%
 
 ---
@@ -24,7 +23,7 @@ ht-degree: 0%
 El primer paso es configurar la aplicación en el portal OKTA. Una vez que el administrador de OKTA haya aprobado la aplicación, tendrá acceso al certificado de IdP y a la URL de inicio de sesión único. A continuación se muestran los ajustes que se utilizan normalmente para registrar una nueva aplicación.
 
 * **Nombre de la aplicación:** es su nombre de aplicación. Asegúrese de asignar un nombre único a la aplicación.
-* **Destinatario de SAML:** después de la autenticación de OKTA, esta es la URL que se visitaría en su instancia de AEM con la respuesta SAML. El controlador de autenticación SAML suele interceptar todas las URL con / saml_login, pero es preferible anexarlas después de la raíz de la aplicación.
+* **Destinatario de SAML:** tras la autenticación de OKTA, esta es la URL que se visitará en la instancia de AEM con la respuesta de SAML. El controlador de autenticación SAML suele interceptar todas las URL con / saml_login, pero es preferible anexarlas después de la raíz de la aplicación.
 * **Audiencia** de SAML: Esta es la URL de dominio de la aplicación. No utilice protocol(http o https) en la dirección URL del dominio.
 * **ID del nombre de SAML:** seleccione Correo electrónico en la lista desplegable.
 * **Entorno**: Elija el entorno apropiado.
@@ -36,7 +35,7 @@ El primer paso es configurar la aplicación en el portal OKTA. Una vez que el ad
 
 ## Añadir el certificado OKTA (IdP) al almacén de confianza de AEM
 
-Dado que las aserciones SAML están cifradas, necesitamos añadir el certificado IdP (OKTA) al almacén de confianza de AEM, para permitir una comunicación segura entre OKTA y AEM.
+Dado que las aserciones de SAML están cifradas, necesitamos agregar el certificado IdP (OKTA) al almacén de confianza de AEM, para permitir una comunicación segura entre OKTA y AEM.
 [Inicializar el almacén de confianza](http://localhost:4502/libs/granite/security/content/truststore.html), si no se ha inicializado ya.
 Recuerde la contraseña del almacén de confianza. Necesitaremos utilizar esta contraseña más adelante en este proceso.
 
@@ -56,13 +55,13 @@ Al añadir el certificado al almacén de confianza, debe obtener un alias de cer
 ### Configuración del controlador de autenticación SAML
 
 Vaya a [configMgr](http://localhost:4502/system/console/configMgr).
-Busque y abra &quot;Gestor de autenticación de Adobe Granite SAML 2.0&quot;.
+Busque y abra &quot;Adobe Granite SAML 2.0 Authentication Handler&quot;.
 Proporcione las siguientes propiedades como se especifica a continuación
 Las siguientes son las propiedades clave que deben especificarse:
 
 * **ruta** : Esta es la ruta en la que se activará el controlador de autenticación
 * **Url** de IdP: esta es su URL de IdP que proporciona OKTA
-* **Alias** de certificado IDP:Este es el alias que obtuvo cuando agregó el certificado IdP al almacén de confianza de AEM
+* **Alias** de certificado IDP:Este es el alias que obtuvo cuando agregó el certificado IdP a AEM almacén de confianza
 * **Id** de entidad del proveedor de servicios:Es el nombre de su servidor AEM
 * **Contraseña del almacén** de claves: Esta es la contraseña del almacén de confianza que utilizó
 * **Redireccionamiento** predeterminado: Esta es la dirección URL a la que se redirige en caso de autenticación correcta
@@ -72,7 +71,7 @@ Las siguientes son las propiedades clave que deben especificarse:
 * **Agregar a grupos**:true
 * **Grupos** predeterminados: Usuarios de cookies (es el grupo al que se agregan los usuarios). Puede proporcionar cualquier grupo existente dentro de AEM)
 * **NamedIDPolicy**: Especifica restricciones en el identificador de nombre que se utilizará para representar el asunto solicitado. Copie y pegue la siguiente cadena resaltada **urn:oasis:names:tc:SAML:2.0:nameidformat:emailAddress**
-* **Atributos sincronizados** : son los atributos que se almacenan a partir de la aserción SAML en el perfil AEM
+* **Atributos sincronizados** : son los atributos que se almacenan desde la aserción SAML en AEM perfil
 
 ![saml-authentication-handler](assets/saml-authentication-settings-blurred.PNG)
 
@@ -89,11 +88,11 @@ Busque y abra &quot;Filtro de referente de Apache Sling&quot;. Defina las siguie
 
 #### Configuración del registro de depuración para la integración de OKTA
 
-Al configurar la integración de OKTA en AEM, puede resultar útil revisar los registros de depuración para el gestor de autenticación SAML de AEM. Para establecer el nivel de registro en DEBUG, cree una nueva configuración de Sling Logger a través de la consola web OSGi de AEM.
+Al configurar la integración de OKTA en AEM, puede resultar útil revisar los registros de depuración para AEM gestor de autenticación SAML. Para establecer el nivel de registro en DEBUG, cree una nueva configuración de Sling Logger a través de la consola web OSGi de AEM.
 
 Recuerde eliminar o deshabilitar este registrador en Fase y Producción para reducir el ruido de registro.
 
-Al configurar la integración de OKTA en AEM, puede resultar útil revisar los registros de depuración para el gestor de autenticación SAML de AEM. Para establecer el nivel de registro en DEBUG, cree una nueva configuración de Sling Logger a través de la consola web OSGi de AEM.
+Al configurar la integración de OKTA en AEM, puede resultar útil revisar los registros de depuración para AEM gestor de autenticación SAML. Para establecer el nivel de registro en DEBUG, cree una nueva configuración de Sling Logger a través de la consola web OSGi de AEM.
 **Recuerde eliminar o deshabilitar este registrador en Fase y Producción para reducir el ruido de registro.**
 * Vaya a [configMgr](http://localhost:4502/system/console/configMgr)
 
