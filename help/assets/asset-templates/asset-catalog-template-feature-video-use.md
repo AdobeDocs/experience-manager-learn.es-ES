@@ -1,22 +1,21 @@
 ---
-title: Uso del Catálogo de recursos con AEM Commerce e InDesign Server
-description: La mejora del catálogo de AEM 6.4 proporciona la capacidad de crear páginas de catálogo mediante plantillas de recursos de AEM y InDesign Server.  Un usuario puede crear una página de catálogo utilizando la plantilla InDesign y asignar propiedades de producto a campos editables, que posteriormente se pueden utilizar para crear páginas similares para distintos productos.
+title: Uso del Catálogo de recursos con AEM comercio y InDesign Server
+description: AEM mejora del catálogo 6.4 proporciona la capacidad de crear páginas de catálogo mediante AEM plantillas de recursos y InDesign Server.  Un usuario puede crear una página de catálogo utilizando la plantilla de InDesign y asignar propiedades de producto a campos editables, que posteriormente pueden utilizarse para crear páginas similares para distintos productos.
 version: 6.3, 6.4, 6.5
-topic: Content Management
-role: Business Practitioner
+topic: Administración de contenido
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '222'
 ht-degree: 0%
 
 ---
 
 
-# Uso del Catálogo de recursos con AEM Commerce e InDesign Server{#using-asset-catalog-with-aem-commerce-and-indesign-server}
+# Uso del Catálogo de recursos con AEM comercio y InDesign Server{#using-asset-catalog-with-aem-commerce-and-indesign-server}
 
-La mejora del catálogo de AEM 6.4 proporciona la capacidad de crear páginas de catálogo mediante plantillas de recursos de AEM y InDesign Server.  Un usuario puede crear una página de catálogo utilizando la plantilla InDesign y asignar propiedades de producto a campos editables, que posteriormente se pueden utilizar para crear páginas similares para distintos productos.
+AEM mejora del catálogo 6.4 proporciona la capacidad de crear páginas de catálogo mediante AEM plantillas de recursos y InDesign Server.  Un usuario puede crear una página de catálogo utilizando la plantilla de InDesign y asignar propiedades de producto a campos editables, que posteriormente pueden utilizarse para crear páginas similares para distintos productos.
 
 >[!VIDEO](https://video.tv.adobe.com/v/22540/)
 
