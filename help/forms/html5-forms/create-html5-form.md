@@ -1,5 +1,5 @@
 ---
-title: Crear formularios HTML5
+title: Crear HTML5 Forms
 description: Creación y configuración de formularios HTML5
 feature: Mobile Forms
 topics: development
@@ -9,13 +9,12 @@ activity: implement
 version: 6.4,6.5
 kt: 4419
 thumbnail: kt-4419.jpg
-topic: Development
-role: Business Practitioner
+topic: Desarrollo
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '488'
 ht-degree: 5%
 
 ---
@@ -27,12 +26,12 @@ HTML5 forms es una nueva funcionalidad en Adobe Experience Manager que ofrece la
 
 ## Requisitos previos
 
-Asegúrese de tener una instancia de AEM Forms en funcionamiento. Siga la [guía de instalación](https://docs.adobe.com/content/help/en/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) para instalar y configurar AEM Forms
+Asegúrese de que tiene una instancia de AEM Forms en funcionamiento. Siga la [guía de instalación](https://docs.adobe.com/content/help/en/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) para instalar y configurar AEM Forms
 
 ## Crear el primer formulario HTML5
 
 1. [Descargue y extraiga el contenido del archivo](assets/assets.zip) zip. El archivo zip contiene xdp y el archivo de datos
-2. [Navegar a formularios y documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+2. [Navegar a Forms y documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 3. Haga clic en Crear -> Carga de archivo
 4. Seleccione la plantilla xdp descargada en el paso 2
 
@@ -43,7 +42,7 @@ La vista previa del xdp se puede realizar en formato HTML5 o PDF. Para obtener u
 * Pulse en el xdp recién cargado y haga clic en _Vista previa -> Vista previa como HTML_. Debería ver el xdp representado como HTML5
 
 >[!NOTE]
->Cuando selecciona la opción _Vista previa como PDF_, el PDF procesado no se muestra en el explorador, ya que los AEM Forms procesan archivos pdf dinámicos que requieren el complemento de Acrobat. Tendrá que descargar el PDF y abrirlo con Adobe Acrobat/Reader para verlo
+>Cuando selecciona la opción _Vista previa como PDF_, el PDF procesado no se muestra en el explorador porque AEM Forms procesa archivos pdf dinámicos que requieren el complemento de Acrobat. Tendrá que descargar el PDF y abrirlo con Adobe Acrobat/Reader para verlo
 
 
 ## Vista previa con datos
