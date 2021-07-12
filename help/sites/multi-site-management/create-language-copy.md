@@ -1,7 +1,7 @@
 ---
 title: Creación de una copia de idioma
-description: 'Explore cómo crear una copia de idioma para su sitio de AEM mediante el asistente Crear copia de idioma .  '
-feature: Language Copy, Multi Site Manager
+description: 'Explore cómo crear una copia de idioma para su sitio AEM con el asistente Crear copia de idioma .  '
+feature: Copia de idioma, administrador de varios sitios
 topics: localization, authoring, content-architecture
 audience: all
 doc-type: feature video
@@ -9,20 +9,19 @@ activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 5371
 thumbnail: 36483.jpg
-topic: Localization
-role: Business Practitioner
+topic: Localización
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '51'
-ht-degree: 1%
+source-wordcount: '48'
+ht-degree: 2%
 
 ---
 
 
-# Crear una copia de idioma {#create-language-copy}
+# Creación de una copia de idioma {#create-language-copy}
 
-Explore cómo crear una copia de idioma para su sitio de AEM mediante el asistente Crear copia de idioma .
+Explore cómo crear una copia de idioma para su sitio AEM con el asistente Crear copia de idioma .
 
 >[!VIDEO](https://video.tv.adobe.com/v/36483?quality=12&learn=on)
