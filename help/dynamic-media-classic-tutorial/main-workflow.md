@@ -7,13 +7,12 @@ doc-type: tutorial
 topics: development, authoring, configuring, architecture, publishing
 audience: all
 activity: use
-topic: Content Management
-role: Business Practitioner
+topic: Administración de contenido
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '2737'
+source-wordcount: '2734'
 ht-degree: 1%
 
 ---
@@ -21,7 +20,7 @@ ht-degree: 1%
 
 # Flujo de trabajo principal de Dynamic Media Classic y vista previa de recursos {#main-workflow}
 
-Dynamic Media admite los procesos de flujo de trabajo Crear (y cargar), Autor (y Publicar) y Entregar . Para empezar, cargue los recursos, luego haga algo con ellos, como crear un conjunto de imágenes, y finalmente publique para hacerlos activos. El paso Generar es opcional para algunos flujos de trabajo. Por ejemplo, si su objetivo es hacer solo el ajuste de tamaño dinámico y el zoom en imágenes, o convertir y publicar vídeo para flujo continuo, no es necesario realizar pasos de compilación.
+Dynamic Media es compatible con los procesos de flujo de trabajo Crear (y Cargar), Autor (y Publicar) y Entregar . Para empezar, cargue los recursos, luego haga algo con ellos, como crear un conjunto de imágenes, y finalmente publique para hacerlos activos. El paso Generar es opcional para algunos flujos de trabajo. Por ejemplo, si su objetivo es hacer solo el ajuste de tamaño dinámico y el zoom en imágenes, o convertir y publicar vídeo para flujo continuo, no es necesario realizar pasos de compilación.
 
 ![image](assets/main-workflow/create-author-deliver.jpg)
 
@@ -33,7 +32,7 @@ El flujo de trabajo de las soluciones de Dynamic Media Classic consta de tres pa
 
 ## Paso 1: Crear (y cargar)
 
-Este es el principio del flujo de trabajo. En este paso, puede recopilar o crear el contenido de origen que se ajuste al flujo de trabajo que está utilizando y cargarlo en Dynamic Media Classic. El sistema admite varios tipos de archivos para imágenes, vídeos y fuentes, pero también para PDF, Adobe Illustrator y Adobe InDesign.
+Este es el principio del flujo de trabajo. En este paso, recopila o crea el contenido de origen que se ajusta al flujo de trabajo que está utilizando y lo carga en Dynamic Media Classic. El sistema admite varios tipos de archivos para imágenes, vídeos y fuentes, pero también para PDF, Adobe Illustrator y Adobe InDesign.
 
 Consulte la lista completa de [Tipos de archivo compatibles](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#supported-asset-file-formats).
 
@@ -84,9 +83,9 @@ Cuando se carga una imagen de cualquier tipo en Dynamic Media Classic, se convie
 
 A medida que la imagen se convierte, Dynamic Media Classic toma una &quot;instantánea&quot; del tamaño completo de la imagen, la escala a la mitad y la guarda, la escala a la mitad de nuevo y la guarda, y así sucesivamente hasta que se rellene con múltiplos pares del tamaño original. Por ejemplo, un TIFF P de 2000 píxeles tendrá tamaños de 1000, 500, 250 y 125 píxeles (y más pequeños) en el mismo archivo. El archivo P-TIFF es el formato de lo que se denomina &quot;imagen maestra&quot; en Dynamic Media Classic.
 
-Cuando se solicita una imagen de cierto tamaño, la creación del P-TIFF permite que el Servidor de imágenes para Dynamic Media Classic encuentre rápidamente el siguiente tamaño mayor y lo reduzca. Por ejemplo, si carga una imagen de 2000 píxeles y solicita una imagen de 100 píxeles, Dynamic Media Classic encontrará la versión de 125 píxeles y la reducirá a 100 píxeles en lugar de escalar de 2000 a 100 píxeles. Esto hace que la operación sea muy rápida. Además, al ampliar una imagen, esto permite al visor de zoom solicitar únicamente un mosaico de la imagen que se está ampliando, en lugar de toda la imagen de resolución completa. Así es como el formato de imagen principal, el archivo P-TIFF, admite el tamaño dinámico y el zoom.
+Cuando se solicita una imagen de cierto tamaño, la creación del P-TIFF permite que el Image Server para Dynamic Media Classic encuentre rápidamente el siguiente tamaño más grande y lo reduzca. Por ejemplo, si carga una imagen de 2000 píxeles y solicita una imagen de 100 píxeles, Dynamic Media Classic encontrará la versión de 125 píxeles y la reducirá a 100 píxeles en lugar de escalar de 2000 a 100 píxeles. Esto hace que la operación sea muy rápida. Además, al ampliar una imagen, esto permite al visor de zoom solicitar únicamente un mosaico de la imagen que se está ampliando, en lugar de toda la imagen de resolución completa. Así es como el formato de imagen principal, el archivo P-TIFF, admite el tamaño dinámico y el zoom.
 
-Del mismo modo, puede cargar el vídeo de origen maestro en Dynamic Media Classic, y al cargarlo, Dynamic Media Classic puede cambiar su tamaño automáticamente y convertirlo al formato compatible con la web de MP4.
+Del mismo modo, puede cargar el vídeo de origen maestro en Dynamic Media Classic y, al cargarlo, Dynamic Media Classic puede cambiar su tamaño automáticamente y convertirlo al formato compatible con la web de MP4.
 
 ### Reglas de rastreo para determinar el tamaño óptimo de las imágenes cargadas
 
@@ -105,13 +104,13 @@ Obtenga más información sobre [Carga de archivos](https://docs.adobe.com/conte
 
 ## Paso 2: Autor (y publicación)
 
-Después de crear y cargar el contenido, puede crear nuevos recursos de medios enriquecidos a partir de los recursos cargados realizando uno o más subflujos de trabajo. Esto incluye todos los tipos de conjuntos de colecciones: conjuntos de imágenes, muestras, giros y medios mixtos, así como plantillas. También incluye vídeo. Más adelante, entraremos en muchos más detalles sobre cada tipo de conjunto de recopilación de imágenes y medios enriquecidos de vídeo. Sin embargo, en casi todos los casos, puede empezar por seleccionar uno o varios recursos (o no tener recursos seleccionados) y elegir el tipo de recurso que desea crear. Por ejemplo, puede seleccionar una imagen principal y unas pocas vistas de esa imagen y elegir crear un conjunto de imágenes, una colección de vistas alternativas del mismo producto.
+Después de crear y cargar el contenido, puede crear nuevos recursos de medios enriquecidos a partir de los recursos cargados realizando uno o más subflujos de trabajo. Esto incluye todos los tipos de conjuntos de colecciones: conjuntos de imágenes, muestras, giros y medios mixtos, así como plantillas. También incluye vídeo. Más adelante veremos muchos buenos detalles sobre cada tipo de conjunto de recopilación de imágenes y medios enriquecidos de vídeo. Sin embargo, en casi todos los casos, puede empezar por seleccionar uno o varios recursos (o no tener recursos seleccionados) y elegir el tipo de recurso que desea crear. Por ejemplo, puede seleccionar una imagen principal y unas pocas vistas de esa imagen y elegir crear un conjunto de imágenes, una colección de vistas alternativas del mismo producto.
 
 >[!IMPORTANT]
 >
 >Asegúrese de que todos los recursos estén marcados para su publicación. Aunque de forma predeterminada todos los recursos se marcan automáticamente para su publicación en la carga, cualquier recurso recién creado del contenido cargado también deberá marcarse para su publicación.
 
-Después de crear el nuevo recurso, ejecutará un trabajo de publicación. Puede hacerlo manualmente o programar un trabajo de publicación que se ejecute automáticamente. La publicación copia todo el contenido de la esfera privada de Dynamic Media Classic en la esfera pública del servidor de publicación de la ecuación. El producto de un trabajo de publicación de Dynamic Media es una URL única para cada recurso publicado.
+Después de crear el nuevo recurso, ejecutará un trabajo de publicación. Puede hacerlo manualmente o programar un trabajo de publicación que se ejecute automáticamente. La publicación copia todo el contenido de la esfera privada de Dynamic Media Classic en la esfera pública del servidor de publicación de la ecuación. El producto de un trabajo de publicación de Dynamic Media es una dirección URL única para cada recurso publicado.
 
 El servidor para el que publica depende del tipo de contenido y del flujo de trabajo. Por ejemplo, todas las imágenes van al servidor de imágenes y transmiten vídeo al servidor FMS. Para su comodidad, hablaremos de una &quot;publicación&quot; como un solo evento en un solo servidor.
 
@@ -166,7 +165,7 @@ La URL en rojo es el único elemento específico de Dynamic Media Classic.
 
 Su equipo de TI o socio de integración puede tomar la iniciativa en la escritura y el cambio de código para integrar las URL de Dynamic Media Classic en su sitio. Adobe cuenta con un equipo de consultoría que puede ayudarle en este esfuerzo, ya sea proporcionando orientación técnica, creativa o general.
 
-Para soluciones más complejas, como visores de zoom o visores que combinan zoom con vistas alternativas, normalmente la URL apunta a un visualizador alojado por Dynamic Media Classic, y también dentro de esa URL es una referencia a un ID de recurso.
+Para soluciones más complejas, como visores de zoom o visores que combinan zoom con vistas alternativas, normalmente la URL apunta a un visor alojado por Dynamic Media Classic, y también dentro de esa URL es una referencia a un ID de recurso.
 
 Ejemplo de vínculo (en rojo) que abrirá un conjunto de imágenes en un visor en una nueva ventana emergente:
 
