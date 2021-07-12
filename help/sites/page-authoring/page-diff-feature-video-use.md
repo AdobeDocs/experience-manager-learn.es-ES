@@ -11,23 +11,22 @@ version: 6.3, 6.4, 6.5
 uuid: e096a08b-528d-48c7-93fb-73b10c0a9259
 kt: 4633
 thumbnail: 32152.jpg
-topic: Content Management
-role: Business Practitioner
+topic: Administración de contenido
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '156'
+source-wordcount: '153'
 ht-degree: 2%
 
 ---
 
 
-# Uso de la función de diferencia de página {#using-page-difference-with-aem-sites}
+# Uso de la función Diferencia de página {#using-page-difference-with-aem-sites}
 
 La función de diferencia de página de AEM Sites proporciona una vista rápida y con códigos de color del contenido que ha cambiado en una página (versión, Live Copy, lanzamientos, copia de idioma).
 
-## Comparación de versiones de página {#comparing-page-versions}
+## Comparación de versiones de páginas {#comparing-page-versions}
 
 >[!VIDEO](https://video.tv.adobe.com/v/32152?quality=9&learn=on)
 
