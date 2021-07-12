@@ -1,16 +1,15 @@
 ---
 title: Uso de vídeos de Dynamic Media 360 y miniaturas de vídeo personalizadas con AEM Assets
-description: Las mejoras del visualizador de Dynamic Media en AEM 6.5 incluyen la compatibilidad con la representación de vídeo 360, 360 visualizadores de medios (video360Social y video360VR) y la capacidad de seleccionar miniaturas de vídeo personalizadas.
+description: Las mejoras en el visor de Dynamic Media de AEM 6.5 incluyen la compatibilidad con la representación de vídeos 360, 360 visualizadores de medios (video360Social y video360VR) y la capacidad de seleccionar miniaturas de vídeo personalizadas.
 sub-product: dynamic-media
-feature: Video Profiles
+feature: Perfiles de vídeo
 version: 6.3, 6.4, 6.5
-topic: Content Management
-role: Business Practitioner
+topic: Administración de contenido
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '399'
 ht-degree: 5%
 
 ---
@@ -18,7 +17,7 @@ ht-degree: 5%
 
 # Uso de vídeos de Dynamic Media 360 y miniaturas de vídeo personalizadas con AEM Assets
 
-Las mejoras del visualizador de Dynamic Media en AEM 6.5 incluyen la compatibilidad con la representación de vídeo 360, 360 visualizadores de medios (video360Social y video360VR) y la capacidad de seleccionar miniaturas de vídeo personalizadas.
+Las mejoras en el visor de Dynamic Media de AEM 6.5 incluyen la compatibilidad con la representación de vídeos 360, 360 visualizadores de medios (video360Social y video360VR) y la capacidad de seleccionar miniaturas de vídeo personalizadas.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26391?quality=9&learn=on)
 
@@ -28,7 +27,7 @@ Las mejoras del visualizador de Dynamic Media en AEM 6.5 incluyen la compatibili
 
 >[!NOTE]
 >
->Los componentes de Dynamic Media 360 Media solo admiten 360 vídeos.
+>Los componentes multimedia de Dynamic Media 360 solo admiten 360 vídeos.
 
 ## Vídeos de Dynamic Media 360
 
@@ -49,8 +48,8 @@ El vídeo de Dynamic Media ahora admite la posibilidad de seleccionar una miniat
    </tr>
    <tr>
       <td>Modo de ejecución de Dynamic Media</td>
-      <td>Solo modo de Dynamic Media Scene7</td>
-      <td>Solo en modo de Dynamic Media Scene7<br>
+      <td>Solo en el modo Scene7 de Dynamic Media</td>
+      <td>Solo en modo Scene7 de Dynamic Media<br>
          <br>
       </td>
    </tr>
@@ -104,4 +103,4 @@ El vídeo de Dynamic Media ahora admite la posibilidad de seleccionar una miniat
 
 ## Recursos adicionales{#additional-resources}
 
-[Configuración de Dynamic Media en el modo Scene7](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dms7.html)
+[Configuración de Dynamic Media en modo Scene7](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dms7.html)
