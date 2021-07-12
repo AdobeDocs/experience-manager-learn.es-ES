@@ -1,16 +1,15 @@
 ---
 title: Uso del reproductor de vídeo en AEM Dynamic Media
-description: El reproductor de vídeo de AEM Dynamic Media solía confiar en el tiempo de ejecución de Flash para admitir la transmisión de vídeo adaptable en clientes de escritorio y los navegadores se volvieron más agresivos con la transmisión de contenido basada en Flash. Con la introducción de HLS (el protocolo de entrega de vídeo de transmisión en directo HTTP de Apple), el contenido ahora se puede transmitir sin depender del flash.
+description: AEM reproductor de vídeo de Dynamic Media solía confiar en el tiempo de ejecución del Flash para admitir el flujo de vídeo adaptable en los clientes de escritorio y los navegadores se volvieron más agresivos con el flujo de contenido basado en flash. Con la introducción de HLS (el protocolo de entrega de vídeo de transmisión en directo HTTP de Apple), el contenido ahora se puede transmitir sin depender del flash.
 sub-product: dynamic-media
-feature: Video Profiles
+feature: Perfiles de vídeo
 version: 6.3, 6.4, 6.5
-topic: Content Management
-role: Business Practitioner
+topic: Administración de contenido
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '218'
 ht-degree: 8%
 
 ---
@@ -18,11 +17,11 @@ ht-degree: 8%
 
 # Uso del reproductor de vídeo en AEM Dynamic Media{#using-the-video-player-in-aem-dynamic-media}
 
-El reproductor de vídeo de AEM Dynamic Media solía confiar en el tiempo de ejecución de Flash para admitir la transmisión de vídeo adaptable en clientes de escritorio y los navegadores se volvieron más agresivos con la transmisión de contenido basada en Flash. Con la introducción de HLS (el protocolo de entrega de vídeo de transmisión en directo HTTP de Apple), el contenido ahora se puede transmitir sin depender del flash.
+AEM reproductor de vídeo de Dynamic Media solía confiar en el tiempo de ejecución del Flash para admitir el flujo de vídeo adaptable en los clientes de escritorio y los navegadores se volvieron más agresivos con el flujo de contenido basado en flash. Con la introducción de HLS (el protocolo de entrega de vídeo de transmisión en directo HTTP de Apple), el contenido ahora se puede transmitir sin depender del flash.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16791/?quality=9&learn=on)
 
-## Vista rápida en el reproductor de vídeo no Flash {#quick-look-into-non-flash-video-player}
+## Quick look to Non Flash Video Player {#quick-look-into-non-flash-video-player}
 
 >[!VIDEO](https://video.tv.adobe.com/v/17429/?quality=9&learn=on)
 
