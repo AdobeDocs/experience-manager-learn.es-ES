@@ -3,19 +3,18 @@ title: Adición de elementos al componente de grupo de opciones
 seo-title: Adición de elementos al componente de grupo de opciones
 description: Agregar elementos al componente de grupo de opciones de forma dinámica
 seo-description: Agregar elementos al componente de grupo de opciones de forma dinámica
-feature: Adaptive Forms
+feature: Formularios adaptables
 topics: authoring
 audience: developer
 doc-type: tutorial
 activity: understand
 version: 6.5
-topic: Development
-role: Business Practitioner
+topic: Desarrollo
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '530'
 ht-degree: 1%
 
 ---
@@ -24,7 +23,7 @@ ht-degree: 1%
 
 # Adición dinámica de elementos al componente de grupo de opciones
 
-AEM Forms 6.5 ha introducido la capacidad de agregar elementos de forma dinámica a un componente de grupo de opciones de formularios adaptables como Casilla de verificación, Botón de radio y Lista de imágenes.
+AEM Forms 6.5 ha introducido la capacidad de agregar elementos de forma dinámica a un componente de grupo de opciones de Forms adaptable, como Casilla de verificación, Botón de radio y Lista de imágenes.
 
 [Esta funcionalidad está disponible en vivo en el servidor de muestras](https://forms.enablementadobe.com/content/samples/samples.html?query=0). Busque elementos de la casilla de verificación dinámica en la tarjeta y haga clic en &quot;Probar&quot;.
 
@@ -86,7 +85,7 @@ Para probar esto en su sistema:
 **Uso del editor de código para agregar elementos**
 
 * [Descargar los recursos](assets/usingthecodeeditor.zip)
-* [Abrir Formularios Y Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* [Abrir Forms Y Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Haga clic en &quot;Crear&quot; | Cargar archivo&quot; y cargar el archivo que descargó en el paso anterior
 * [Vista previa de los formularios](http://localhost:4502/content/dam/formsanddocuments/simpleform/jcr:content?wcmmode=disabled)
 * Especifique el nombre del solicitante y seleccione el estado civil del matrimonio
@@ -99,10 +98,10 @@ Para probar esto en su sistema:
 * [Descargar los recursos](assets/usingthevisualeditor.zip)
 * Instale Tomcat si todavía no lo tiene. [Las instrucciones para instalar tomcat están disponibles aquí](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html)
 * [Implementar el archivo SampleRest.war en Tomcat](https://forms.enablementadobe.com/content/DemoServerBundles/SampleRest.war)
-* [Abrir Formularios Y Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* [Abrir Forms Y Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Haga clic en &quot;Crear&quot; | Cargar archivo&quot; y cargar el archivo que descargó en el paso anterior
 * [Vista previa de los formularios](http://localhost:4502/content/dam/formsanddocuments/amortizationschedule/jcr:content?wcmmode=disabled)
-* Introduzca Loan amount y tab fuera del campo. Esto activará la regla que muestra el campo período de préstamo.
+* Introduzca Loan amount y tab fuera del campo. Esto déclencheur la regla que muestra el campo período de préstamo.
 * Seleccione el período de préstamo adecuado (los artículos del período de préstamo se rellenan desde la llamada de reposo)
 * Seleccione la tasa de interés y haga clic en &quot;Obtener programa de amortización&quot;
 * La tabla de amortización debe rellenarse. La programación de amortización se obtiene mediante una llamada a REST.
