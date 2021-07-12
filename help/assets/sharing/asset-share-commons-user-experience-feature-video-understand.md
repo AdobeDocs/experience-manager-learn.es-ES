@@ -2,13 +2,12 @@
 title: Explicación de la experiencia de usuario de Asset Share Commons
 description: Materiales para la comprensión funcional y técnica de Assets Share Commons
 version: 6.3, 6.4, 6.5
-topic: Content Management
-role: Business Practitioner
+topic: Administración de contenido
+role: User
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '130'
 ht-degree: 3%
 
 ---
