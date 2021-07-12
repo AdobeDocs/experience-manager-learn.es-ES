@@ -1,7 +1,7 @@
 ---
-title: Crear formularios para firmar
+title: Crear Forms para firmar
 description: Cree formularios que deban incluirse en el paquete de firma.
-feature: Adaptive Forms
+feature: Formularios adaptables
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,13 +9,12 @@ activity: implement
 version: 6.4,6.5
 kt: 6893
 thumbnail: 6893.jpg
-topic: Development
-role: Business Practitioner
+topic: Desarrollo
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '329'
 ht-degree: 1%
 
 ---
@@ -31,7 +30,7 @@ El siguiente paso es crear los formularios adaptables que desea incluir en el pa
 * Los formularios también deben asociarse con clientLib llamado **getnextform**
 * Los formularios deben utilizar el componente Paso de firma.
 * El formulario también debe utilizar el componente personalizado **Firmar formulario múltiple**. Este componente le permite navegar al siguiente formulario para iniciar sesión en el paquete.
-* El envío del formulario debe configurarse para activar el flujo de trabajo de AEM **Actualizar estado de firma**
+* El envío del formulario debe configurarse para almacenar en déclencheur AEM flujo de trabajo **Actualizar estado de firma**
 * Asegúrese de que la ruta del archivo de datos esté configurada en **Data.xml**. Esto es muy importante, ya que el código de ejemplo busca un archivo llamado Data.xml en la carga útil para procesar el envío del formulario.
 
 Una vez creado el formulario, incluya el fragmento de formulario adaptable **campos comunes** en el formulario. El fragmento se marcará como oculto. Este fragmento contiene los siguientes campos.
