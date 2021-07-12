@@ -1,16 +1,15 @@
 ---
-title: Uso del Recorte inteligente con Dynamic Media de AEM Assets
+title: Uso del Recorte inteligente con AEM Assets Dynamic Media
 description: Smart Crop utiliza Adobe Sensei para eliminar las costosas y largas tareas de recorte de contenido para un diseño interactivo.
 sub-product: dynamic-media
-feature: Smart Crop, Image Profiles
+feature: Recorte inteligente, perfiles de imagen
 version: 6.4, 6.5
-topic: Content Management
-role: Business Practitioner
+topic: Administración de contenido
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '253'
 ht-degree: 3%
 
 ---
@@ -24,14 +23,14 @@ Smart Crop utiliza Adobe Sensei para eliminar las costosas y largas tareas de re
 
 >[!NOTE]
 >
->El vídeo supone que la instancia de AEM se está ejecutando en el modo Dynamic Media S7. [Las instrucciones sobre la configuración de AEM con Dynamic Media se encuentran aquí.](https://helpx.adobe.com/es/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
+>El vídeo supone que la instancia de AEM se está ejecutando en el modo Dynamic Media S7. [Las instrucciones para configurar AEM con Dynamic Media se encuentran aquí.](https://helpx.adobe.com/es/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
 
 ## La capacidad de recorte inteligente de Dynamic Media de Adobe Experience Manager incluye
 
-* Los administradores de AEM Asset pueden crear fácilmente perfiles de imagen para el recorte inteligente en función del ancho y la altura del dispositivo.
+* AEM administradores de recursos pueden crear fácilmente perfiles de imagen para el recorte inteligente en función del ancho y la altura del dispositivo.
 * El recorte inteligente se puede realizar para un recurso individual o para todos los recursos de una carpeta.
 * Se puede cambiar el tamaño del diseño de edición de recorte inteligente para mejorar la visibilidad.
-* El componente de Dynamic Media de AEM Sites es compatible con el recorte inteligente.
+* El componente Dynamic Media de AEM Sites es compatible con el recorte inteligente.
 * La URL publicada para el recurso recortado inteligente está disponible para su uso con aplicaciones de terceros que acepten recursos alojados.
 
 >[!NOTE]
