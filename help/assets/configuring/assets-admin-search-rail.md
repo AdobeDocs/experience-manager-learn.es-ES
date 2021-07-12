@@ -2,18 +2,17 @@
 title: Carril de búsqueda de administración de recursos
 description: El carril de búsqueda de administración de recursos permite buscar recursos utilizando criterios personalizados en Omnisearch.
 sub-product: activos
-feature: Search
+feature: 'Búsqueda  '
 version: cloud-service
 kt: 4995
 thumbnail: 35842.jpg
-topic: Content Management
-role: Administrator
+topic: Administración de contenido
+role: Admin
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '46'
-ht-degree: 8%
+source-wordcount: '44'
+ht-degree: 6%
 
 ---
 
