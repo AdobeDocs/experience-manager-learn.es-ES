@@ -1,18 +1,17 @@
 ---
 title: Representaciones
 description: Obtenga información sobre las representaciones en AEM Assets y cómo se pueden previsualizar.
-feature: Renditions
-role: Business Practitioner
+feature: Representaciones
+role: User
 level: Beginner
 version: cloud-service
 kt: 4496
 thumbnail: 32047.jpg
-topic: Content Management
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+topic: Administración de contenido
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '32'
-ht-degree: 15%
+source-wordcount: '29'
+ht-degree: 17%
 
 ---
 
