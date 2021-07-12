@@ -1,26 +1,25 @@
 ---
 title: Proteger
-description: Aprenda a utilizar las funciones de registro y verificación de AEM para facilitar la colaboración entre varios usuarios en los recursos.
+description: Aprenda a utilizar AEM características de protección y desprotección para facilitar la colaboración entre varios usuarios en los recursos.
 sub-product: activos
-feature: Asset Management
+feature: Administración de activos
 version: cloud-service
 kt: 4542
 thumbnail: 32048.jpg
-topic: Collaboration
-role: Business Practitioner
+topic: Colaboración
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '51'
-ht-degree: 1%
+source-wordcount: '48'
+ht-degree: 2%
 
 ---
 
 
 # Proteger
 
-Aprenda a utilizar las funciones de registro y verificación de AEM para facilitar la colaboración entre varios usuarios en los recursos.
+Aprenda a utilizar AEM características de protección y desprotección para facilitar la colaboración entre varios usuarios en los recursos.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32048/?quality=12&learn=on&hidetitle=true)
 
