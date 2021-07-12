@@ -1,19 +1,18 @@
 ---
 title: Configuración de reglas de traducción en AEM
 description: La interfaz de usuario de Configuración de traducción permite al usuario administrar las reglas para la traducción de contenido en AEM Sites. Este vídeo detalla la creación de una nueva regla de traducción para un componente personalizado.
-feature: Language Copy
+feature: Copiar idioma
 topics: localization, content-architecture
 audience: developer, administrator
 doc-type: technical video
 activity: setup
 version: 6.4, 6.5
-topic: Localization
-role: Business Practitioner
+topic: Localización
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '324'
 ht-degree: 3%
 
 ---
@@ -25,7 +24,7 @@ La interfaz de usuario de Configuración de traducción permite al usuario admin
 
 >[!NOTE]
 >
-> El siguiente vídeo se grabó en AEM 6.3. AEM 6.4+ presenta una nueva estructura de repositorios para almacenar el archivo XML de reglas de traducción. Al utilizar la interfaz de usuario de Configuración de traducción en AEM 6.4+, las reglas se guardan en la ubicación `/conf/global/settings/translation/rules/translation_rules.xml`. Consulte [Identificación del contenido a la traducción](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-rules.html) para obtener más información.
+> El siguiente vídeo se grabó en AEM 6.3. AEM 6.4+ presenta una nueva estructura de repositorios para almacenar el archivo XML de reglas de traducción. Cuando se utiliza la interfaz de usuario de Configuración de traducción en AEM 6.4+, las reglas se guardan en la ubicación `/conf/global/settings/translation/rules/translation_rules.xml`. Consulte [Identificación del contenido a la traducción](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-rules.html) para obtener más información.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18135/?quality=9&learn=on)
 
@@ -39,11 +38,11 @@ El editor de reglas de traducción que actualizará el archivo xml de traducció
 
 Acceda a la IU de configuración de traducción:
 
-* **[!UICONTROL Menú]  Inicio de AEM >  [!UICONTROL Herramientas]  >  [!UICONTROL General]  > Configuración de la  [[!UICONTROL traducción]](http://localhost:4502/libs/cq/translation/translationrules/contexts.html)**
+* **[!UICONTROL AEM menú]  Inicio >  [!UICONTROL Herramientas]  >  [!UICONTROL General]  > Configuración de la  [[!UICONTROL traducción]](http://localhost:4502/libs/cq/translation/translationrules/contexts.html)**
 
-## Antes de AEM 6.3 {#prior-to-aem}
+## Antes de la AEM 6.3 {#prior-to-aem}
 
-En versiones anteriores de AEM, las reglas de traducción se actualizaban manualmente editando un archivo XML ubicado en el flujo de trabajo de traducción: `/etc/workflow/models/translation/translation_rules.xml`.
+En versiones anteriores AEM las reglas de traducción se actualizaban manualmente editando un archivo XML ubicado en el flujo de trabajo de traducción: `/etc/workflow/models/translation/translation_rules.xml`.
 
 ## Recursos adicionales {#additional-resources}
 
