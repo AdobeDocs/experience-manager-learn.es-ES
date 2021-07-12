@@ -1,7 +1,7 @@
 ---
-title: Grupos de usuarios de IMS de Adobe y AEM
-description:  Los grupos de usuarios de IMS de Adobe establecen conjuntos lógicos de usuarios que están expuestos a AEM, donde se pueden aprovechar para definir permisos precisos para usuarios de AEM.
-feature: Users and Groups
+title: Adobe de grupos de usuarios y AEM de IMS
+description:  Los grupos de usuarios de IMS de Adobe establecen conjuntos lógicos de usuarios que están expuestos a AEM, donde se pueden aprovechar para definir permisos precisos para AEM usuarios.
+feature: 'Usuarios y grupos '
 topics: authentication
 version: cloud-service
 activity: setup
@@ -9,25 +9,24 @@ audience: administrator
 doc-type: feature video
 kt: 4999
 thumbnail: 39150.jpg
-topic: Administration, Security
-role: Administrator
+topic: Administración, seguridad
+role: Admin
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 4%
+source-wordcount: '97'
+ht-degree: 3%
 
 ---
 
 
-# Grupos de usuarios de IMS de Adobe
+# Adobe de grupos de usuarios de IMS
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_adobeims_usergroups"
 >title="Grupos de usuarios de IMS de Adobe"
->abstract="Los grupos de usuarios de IMS de Adobe establecen conjuntos lógicos de usuarios que están expuestos a AEM, donde se pueden aprovechar para definir permisos precisos para usuarios de AEM."
+>abstract="Los grupos de usuarios de IMS de Adobe establecen conjuntos lógicos de usuarios que están expuestos a AEM, donde se pueden aprovechar para definir permisos precisos para AEM usuarios."
 
- Los grupos de usuarios de IMS de Adobe establecen conjuntos lógicos de usuarios que están expuestos a AEM, donde se pueden aprovechar para definir permisos precisos para usuarios de AEM.
+ Los grupos de usuarios de IMS de Adobe establecen conjuntos lógicos de usuarios que están expuestos a AEM, donde se pueden aprovechar para definir permisos precisos para AEM usuarios.
 
 >[!VIDEO](https://video.tv.adobe.com/v/39150/?quality=12&learn=on)
