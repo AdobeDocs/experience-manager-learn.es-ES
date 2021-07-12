@@ -1,7 +1,7 @@
 ---
 title: Analizar datos con Analysis Workspace
 description: Obtenga información sobre cómo asignar datos capturados desde un sitio de Adobe Experience Manager a métricas y dimensiones en grupos de informes de Adobe Analytics. Obtenga información sobre cómo crear un tablero de informes detallado mediante la función Analysis Workspace de Adobe Analytics.
-feature: analytics
+feature: análisis
 topics: integrations
 audience: administrator
 doc-type: tutorial
@@ -9,13 +9,12 @@ activity: setup
 version: cloud-service
 kt: 6409
 thumbnail: KT-6296.jpg
-topic: Integrations
-role: Business Practitioner
+topic: Integraciones
+role: User
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '2207'
+source-wordcount: '2204'
 ht-degree: 0%
 
 ---
@@ -27,7 +26,7 @@ Obtenga información sobre cómo asignar datos capturados desde un sitio de Adob
 
 ## Qué va a generar
 
-El equipo de marketing de WKND desea saber qué botones de Llamada a acción (CTA) funcionan mejor en la página principal. En este tutorial, crearemos un nuevo proyecto en Analysis Workspace para visualizar el rendimiento de diferentes botones de llamada a acción y comprender el comportamiento del usuario en el sitio. La siguiente información se captura mediante Adobe Analytics cuando un usuario hace clic en un botón de Llamada a acción (CTA) de la página principal de WKND.
+El equipo de marketing de WKND desea saber qué botones de Llamada a acción (CTA) funcionan mejor en la página principal. En este tutorial, crearemos un nuevo proyecto en Analysis Workspace para visualizar el rendimiento de los distintos botones de llamada a acción y comprender el comportamiento del usuario en el sitio. La siguiente información se captura mediante Adobe Analytics cuando un usuario hace clic en el botón Llamada a acción (CTA) de la página principal de WKND.
 
 **Variables de Analytics**
 
@@ -52,17 +51,17 @@ A continuación se muestran las variables de Analytics de las que se está reali
 
 ## Requisitos previos
 
-Este tutorial es una continuación del componente [Seguimiento en el que se hizo clic con Adobe Analytics](./track-clicked-component.md) y supone que:
+Este tutorial es una continuación del componente [Track clicked con Adobe Analytics](./track-clicked-component.md) y supone que:
 
 * Una **propiedad de Launch** con la [extensión de Adobe Analytics](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html) habilitada
 * **ID del grupo de informes y servidor de seguimiento de Adobe** Analytics/dev. Consulte la siguiente documentación para [crear un nuevo grupo de informes](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html).
-* [Extensión de explorador de Experience Platform ](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/web-sdk/introduction-to-the-experience-platform-debugger.html) Debugger configurada con la propiedad de Launch cargada en  [https://wknd.site/us/en.](https://wknd.site/us/en.html) htmlor, un sitio de AEM con la capa de datos de Adobe habilitada.
+* [Experience Platform ](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/web-sdk/introduction-to-the-experience-platform-debugger.html) Debugger extensión del explorador configurada con la propiedad Launch cargada en  [https://wknd.site/us/en.](https://wknd.site/us/en.html) htmlor y un sitio AEM con la capa de datos de Adobe habilitada.
 
 ## Variables de conversión (eVars) y eventos de éxito (evento)
 
-La variable de conversión de perspectiva personalizada (o eVar) se coloca en el código de Adobe en las páginas web seleccionadas del sitio. Su principal propósito es segmentar las métricas de éxito de conversión en los informes de marketing personalizados. Una eVar puede basarse en visitas y funcionar de manera similar a las cookies. Los valores convertidos en variables eVar siguen al usuario durante un período predeterminado.
+La variable de conversión de Custom Insight (o eVar) se coloca en el código de Adobe de las páginas web seleccionadas por el sitio. Su principal propósito es segmentar las métricas de éxito de conversión en los informes de marketing personalizados. Un eVar puede basarse en visitas y funcionar de manera similar a las cookies. Los valores convertidos en variables de eVar siguen al usuario durante un período predeterminado.
 
-Cuando una eVar está establecida en el valor de un visitante, Adobe recuerda automáticamente ese valor hasta que caduque. Cualquier evento de éxito que encuentra un visitante mientras la eVar está activa se cuenta hacia el valor eVar.
+Cuando un eVar está establecido en el valor de un visitante, el Adobe recuerda automáticamente ese valor hasta que caduque. Cualquier evento de éxito que encuentre un visitante mientras el valor de eVar esté activo se cuenta hacia el valor de eVar.
 
 La mejor manera de usar las eVars es medir causa y efecto, como:
 
@@ -123,7 +122,7 @@ A continuación, cree un nuevo [proyecto](https://docs.adobe.com/content/help/en
 
    ![Área de trabajo](assets/create-analytics-workspace/create-workspace.png)
 
-1. Elija comenzar desde un **proyecto en blanco** o seleccionar una de las plantillas creadas previamente, proporcionadas por Adobe o plantillas personalizadas creadas por su organización. Hay varias plantillas disponibles, según el análisis o el caso de uso que tenga en mente. [Obtenga ](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) más información sobre las distintas opciones de plantilla disponibles.
+1. Elija comenzar desde un **proyecto en blanco** o seleccionar una de las plantillas creadas previamente, ya sea por Adobe o por plantillas personalizadas creadas por su organización. Hay varias plantillas disponibles, según el análisis o el caso de uso que tenga en mente. [Obtenga ](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) más información sobre las distintas opciones de plantilla disponibles.
 
    En el proyecto de Workspace, se accede a paneles, tablas, visualizaciones y componentes desde el carril izquierdo. Estos son los componentes básicos del proyecto.
 
@@ -145,9 +144,9 @@ A continuación, cree una tabla para crear una representación visual de cómo i
 * `event8` -  `CTA Button Click event`
 * `prop8` -  `CTA Button Id`
 
-1. Arrastre y suelte el componente de dimensión **Página** en la tabla improvisada. Ahora debería poder ver una visualización que muestre el Nombre de página (eVar9) y las Vistas de página correspondientes (Ocurrencias) que se muestran dentro de la tabla.
+1. Arrastre y suelte el componente de dimensión **Página** en la tabla improvisada. Ahora debería poder ver una visualización que muestre el Nombre de página (eVar9) y las Vistas de página (Ocurrencias) correspondientes que se muestran dentro de la tabla.
 
-   ![Dimensión de página](assets/create-analytics-workspace/evar9-dimension.png)
+   ![Dimension de página](assets/create-analytics-workspace/evar9-dimension.png)
 
 1. Arrastre y suelte la métrica **CTA Click** (event8) en la métrica ocurrencias y sustitúyala. Ahora puede ver una visualización que muestre el Nombre de página (eVar9) y un recuento correspondiente de eventos de clics de llamada a acción en una página.
 
@@ -161,9 +160,9 @@ A continuación, cree una tabla para crear una representación visual de cómo i
 
    * **Después**
 
-      ![Métricas de eVar5](assets/create-analytics-workspace/evar5-metrics.png)
+      ![Métricas de eVar 5](assets/create-analytics-workspace/evar5-metrics.png)
 
-1. Para comprender cómo interactúan los usuarios con los botones de llamada a acción cuando se encuentran en las páginas del sitio WKND, es necesario desglosar aún más la métrica Plantilla de página añadiendo la métrica ID de botón (eVar8).
+1. Para comprender cómo interactúan los usuarios con los botones de llamada a acción cuando se encuentran en las páginas del sitio WKND, es necesario desglosar aún más la métrica Plantilla de página añadiendo la métrica ID de botón (eVar8) .
 
    ![eVar8](assets/create-analytics-workspace/evar8.png)
 
@@ -179,7 +178,7 @@ A continuación, cree una tabla para crear una representación visual de cómo i
 
 ### Clasificaciones de conversión
 
-La clasificación de Analytics permite aplicar categorías a los datos de variables de Analytics y mostrarlos de diferentes maneras cuando se generan los informes. Para mejorar el modo en que se muestra el ID de botón en el informe de Analysis Workspace, creemos una variable de clasificación para el Id de botón (eVar8). Al clasificar, se establece una relación entre la variable y los metadatos relacionados con ella.
+La clasificación de Analytics permite aplicar categorías a los datos de variables de Analytics y mostrarlos de diferentes maneras cuando se generan los informes. Para mejorar la forma en que se muestra el ID de botón en el informe de Analysis Workspace, creemos una variable de clasificación para el Id de botón (eVar8). Al clasificar, se establece una relación entre la variable y los metadatos relacionados con ella.
 
 A continuación, vamos a crear una clasificación para la variable de Analytics.
 
@@ -188,7 +187,7 @@ A continuación, vamos a crear una clasificación para la variable de Analytics.
 
    ![Clasificación de conversión](assets/create-analytics-workspace/conversion-classification.png)
 
-1. En la lista desplegable **Seleccionar tipo de clasificación**, seleccione la variable (ID de botón eVar8) para agregar una clasificación.
+1. En la lista desplegable **Seleccionar tipo de clasificación**, seleccione la variable (ID de botón de eVar8) para agregar una clasificación.
 1. Haga clic en la flecha situada junto a la variable Clasificación que aparece en la sección Clasificaciones para agregar una nueva Clasificación.
 
    ![Tipo de clasificación de conversión](assets/create-analytics-workspace/select-classification-variable.png)
@@ -220,15 +219,15 @@ A continuación, vamos a descargar la plantilla Clasificación para la variable 
 
 1. Haga clic en **Descargar** y guarde el archivo de plantilla en el sistema local. El archivo de plantilla es un archivo de datos delimitado por tabuladores (con la extensión de nombre de archivo .tab ) compatible con la mayoría de las aplicaciones de hojas de cálculo.
 1. Abra el archivo de datos delimitado por tabuladores con el editor que desee.
-1. Agregue el ID de botón (eVar9) y un nombre de botón correspondiente al archivo delimitado por tabuladores para cada valor de eVar9 del paso 9 de la sección .
+1. Agregue el ID de botón (eVar9) y un nombre de botón correspondiente al archivo delimitado por tabulaciones para cada valor de eVar9 del paso 9 de la sección .
 
    ![Valor clave](assets/create-analytics-workspace/key-value.png)
 
 1. **** Guarde el archivo delimitado por tabuladores.
 1. Vaya a la pestaña **Import File**.
 1. Configure el destino para la importación de archivos.
-   * **Seleccionar grupo de informes** : AEM (grupo de informes) del sitio WKND
-   * **Conjunto de datos para clasificar** : Id De Botón (Variable De Conversión eVar8)
+   * **Seleccionar grupo de informes** : AEM del sitio WKND (grupo de informes)
+   * **Conjunto de datos para clasificar** : Id De Botón (eVar De Variable De Conversión8)
 1. Haga clic en la opción **Elegir archivo** para cargar el archivo delimitado por tabuladores desde el sistema y, a continuación, haga clic en **Importar archivo**
 
    ![Importador de archivos](assets/create-analytics-workspace/file-importer.png)
