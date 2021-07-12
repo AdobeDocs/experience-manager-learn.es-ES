@@ -1,9 +1,9 @@
 ---
 title: Uso del etiquetado de páginas con AEM Sites
 seo-title: Uso del etiquetado de páginas con Adobe Experience Manager Sites
-description: El siguiente vídeo resalta cómo clasificar rápida y fácilmente contenido dentro de un sitio web en Adobe Experience Manager mediante etiquetas de página.
-seo-description: El siguiente vídeo resalta cómo clasificar rápida y fácilmente contenido dentro de un sitio web en Adobe Experience Manager mediante etiquetas de página.
-feature: Page Editor
+description: En el siguiente vídeo se destaca cómo clasificar rápida y fácilmente el contenido de un sitio web en Adobe Experience Manager mediante etiquetas de página.
+seo-description: En el siguiente vídeo se destaca cómo clasificar rápida y fácilmente el contenido de un sitio web en Adobe Experience Manager mediante etiquetas de página.
+feature: Editor de página
 topics: authoring
 audience: author, marketer
 doc-type: feature video
@@ -11,14 +11,13 @@ activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4632
 thumbnail: 32150.jpg
-topic: Content Management
-role: Business Practitioner
+topic: Administración de contenido
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '81'
-ht-degree: 4%
+source-wordcount: '78'
+ht-degree: 5%
 
 ---
 
