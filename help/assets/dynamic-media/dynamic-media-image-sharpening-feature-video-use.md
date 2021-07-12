@@ -2,15 +2,14 @@
 title: Uso del enfoque de imagen con AEM Dynamic Media
 description: Este vídeo explica por qué el enfoque de una imagen es fundamental para mantener la fidelidad de la imagen y cómo utilizar ajustes avanzados para crear la imagen perfecta.
 sub-product: dynamic-media
-feature: Image Profiles, Viewer Presets
+feature: Perfiles de imagen, ajustes preestablecidos de visor
 version: 6.3, 6.4, 6.5
-topic: Content Management
-role: Business Practitioner
+topic: Administración de contenido
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '125'
+source-wordcount: '122'
 ht-degree: 1%
 
 ---
