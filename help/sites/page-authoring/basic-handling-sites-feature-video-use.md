@@ -1,9 +1,9 @@
 ---
 title: Gestión básica en AEM Sites
 seo-title: Crear una página nueva en Adobe Experience Manager Sites
-description: 'El siguiente vídeo ofrece información general sobre la gestión básica cuando se utiliza el entorno de creación AEM. Utiliza la consola Sitios como base. '
-seo-description: 'El siguiente vídeo ofrece información general sobre la gestión básica cuando se utiliza el entorno de creación AEM. Utiliza la consola Sitios como base. '
-feature: Page Editor, Editable Templates
+description: 'En el siguiente vídeo se ofrece una descripción general de la gestión básica cuando se utiliza el entorno de creación de AEM. Utiliza la consola Sitios como base. '
+seo-description: 'En el siguiente vídeo se ofrece una descripción general de la gestión básica cuando se utiliza el entorno de creación de AEM. Utiliza la consola Sitios como base. '
+feature: Editor de páginas, plantillas editables
 topics: authoring, publishing
 audience: author, marketer
 doc-type: feature video
@@ -11,13 +11,12 @@ activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4495
 thumbnail: 31784.jpg
-topic: Content Management
-role: Business Practitioner
+topic: Administración de contenido
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '376'
 ht-degree: 59%
 
 ---
@@ -25,7 +24,7 @@ ht-degree: 59%
 
 # Interfaz de usuario y navegación de AEM Sites {#basic-handling-aem-sites}
 
-El siguiente vídeo ofrece información general sobre la gestión básica cuando se utiliza el entorno de creación AEM. Utiliza la consola Sitios como base. 
+En el siguiente vídeo se ofrece una descripción general de la gestión básica cuando se utiliza el entorno de creación de AEM. Utiliza la consola Sitios como base. 
 
 >[!VIDEO](https://video.tv.adobe.com/v/31784?quality=12&learn=on)
 
@@ -51,7 +50,7 @@ En este vídeo, se tratan las siguientes funciones o características:
 * Notificaciones
 * Propiedades del usuario
 * Selector de raíl
-* Vistas de la consola del sitio de AEM
+* Vistas de AEM de la consola del sitio
    * Vista de lista   
    * Vista de columna
    * Vista de tarjeta
