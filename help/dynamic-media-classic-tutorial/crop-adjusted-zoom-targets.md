@@ -1,19 +1,18 @@
 ---
 title: Recorte, imágenes ajustadas y destinos de zoom
-description: La imagen maestra de Dynamic Media Classic permite crear versiones recortadas independientes de cada imagen para mostrar detalles o muestras sin tener que crear versiones recortadas independientes de cada imagen. Obtenga información sobre cómo recortar imágenes en Dynamic Media Classic y guardarlas como un nuevo archivo maestro o una imagen virtual, guardar imágenes ajustadas virtuales y utilizarlas en lugar de recursos maestros, y crear destinos de zoom en las imágenes para mostrar detalles resaltados.
+description: La imagen maestra de Dynamic Media Classic permite crear versiones recortadas independientes de cada imagen para mostrar detalles o muestras sin tener que crear versiones recortadas independientes de cada imagen. Aprenda a recortar imágenes en Dynamic Media Classic y guardarlas como un nuevo archivo maestro o una imagen virtual, guardar imágenes ajustadas virtuales y utilizarlas en lugar de recursos maestros, y crear destinos de zoom en las imágenes para mostrar detalles resaltados.
 sub-product: dynamic-media
 feature: Dynamic Media Classic
 doc-type: tutorial
 topics: development, authoring, configuring
 audience: all
 activity: use
-topic: Content Management
-role: Business Practitioner
+topic: Administración de contenido
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '2673'
+source-wordcount: '2670'
 ht-degree: 0%
 
 ---
@@ -31,7 +30,7 @@ Al final de esta sección del tutorial, sabrá cómo:
 
 ## Recortar
 
-Dynamic Media Classic cuenta con algunas herramientas de edición de imágenes disponibles en la interfaz de usuario, incluida la herramienta Recortar. Es posible que desee recortar la imagen principal en Dynamic Media Classic por varios motivos. Por ejemplo:
+Dynamic Media Classic cuenta con algunas herramientas de edición de imágenes disponibles de forma conveniente en la interfaz de usuario, incluida la herramienta Recortar. Es posible que desee recortar la imagen principal en Dynamic Media Classic por varios motivos. Por ejemplo:
 
 - No tiene acceso al archivo original. Desea mostrar la imagen con una relación de aspecto o recorte diferente, pero no tiene el archivo original en el equipo o está trabajando desde casa. En este caso, puede ir a Dynamic Media Classic, buscar la imagen, recortarla y guardarla, o guardarla como una nueva versión.
 - Para eliminar el exceso de espacio en blanco. La imagen fue fotografiada con demasiado espacio en blanco, lo que hace que el producto parezca pequeño. Desea que las imágenes en miniatura llenen el lienzo lo más posible.
@@ -83,7 +82,7 @@ Dynamic Media Classic recordará esta opción para la siguiente carga. Aunque es
 
 ### Recorte por dirección URL
 
-Aunque no es obvio en Dynamic Media Classic, también puede recortar únicamente a través de la URL (o incluso agregar recorte a un ajuste preestablecido de imagen).
+Aunque no es obvio en Dynamic Media Classic, también se puede recortar únicamente a través de la URL (o incluso añadir recorte a un ajuste preestablecido de imagen).
 
 Siempre que utilice la herramienta Recortar, verá los valores de URL en el campo de la parte inferior. Puede tomar esos valores y aplicarlos directamente a una imagen como modificadores de URL.
 
@@ -105,7 +104,7 @@ El recorte ahora forma parte de ese ajuste preestablecido de imagen y se aplica 
 
 ## Imágenes ajustadas
 
-Cuando utiliza la herramienta Recortar, tiene la opción de **Guardar como vista adicional del patrón**. Cuando se guarda, se crea un nuevo tipo de recurso de Dynamic Media Classic, una imagen ajustada. Una imagen ajustada, también denominada derivada, es una imagen virtual. En realidad no es una imagen en absoluto; es una referencia de base de datos (como un alias o acceso directo) a la imagen maestra física.
+Cuando utiliza la herramienta Recortar, tiene la opción de **Guardar como vista adicional del patrón**. Cuando se guarda, se crea un nuevo tipo de recurso de Dynamic Media Classic: una imagen ajustada. Una imagen ajustada, también denominada derivada, es una imagen virtual. En realidad no es una imagen en absoluto; es una referencia de base de datos (como un alias o acceso directo) a la imagen maestra física.
 
 ### ¿Se pondrá en pie la imagen real`?`
 
@@ -134,7 +133,7 @@ Los destinos de zoom también se encuentran en el menú **Edit** y en la página
 
 Debido a que los destinos de zoom son esencialmente una característica de comercialización y requieren conocer los puntos de venta de un producto, normalmente los crearía una persona del equipo de comercialización o producto de una empresa.
 
-El proceso es muy sencillo: haga clic en la función, asígnele un nombre descriptivo y guárdelo. Los objetivos se pueden copiar de una imagen a otra si son similares, aunque el proceso es manual. No hay forma en Dynamic Media Classic de automatizar la creación de destinos de zoom, ya que cada imagen es diferente y tiene diferentes funciones.
+El proceso es muy sencillo: haga clic en la función, asígnele un nombre descriptivo y guárdelo. Los objetivos se pueden copiar de una imagen a otra si son similares, aunque el proceso es manual. Dynamic Media Classic no permite automatizar la creación de destinos de zoom, ya que cada imagen es diferente y tiene diferentes funciones.
 
 Otro factor a la hora de decidir si usar destinos de zoom es su elección de visor. No todos los tipos de visores pueden mostrar Destinos de zoom (por ejemplo, el visor de salida no los admite).
 
@@ -158,11 +157,11 @@ Este es el flujo de trabajo para crear destinos en Dynamic Media Classic.
 6. Mientras se selecciona el objetivo, el cuadro tendrá líneas discontinuas verdes alrededor de él y puede cambiar el tamaño y moverlo. Arrastre las esquinas para cambiar el tamaño o arrastre el cuadro de destino para moverlo.
 
    - Esto cargará la imagen dentro del visor de zoom personalizado predeterminado. Asegúrese de que el ajuste preestablecido de visor sea compatible con los destinos de zoom; en general, todos los ajustes preestablecidos estándar que tienen la palabra &quot;-Guided&quot; se han diseñado para utilizarse con los destinos de zoom. Para utilizar los objetivos, pase el ratón sobre la miniatura de destino (o el icono de zona interactiva) para ver la etiqueta y haga clic en ella para ver cómo el visor amplía esa función.
-   - Al igual que el resto del trabajo que realiza en Dynamic Media Classic, debe publicar para que los destinos de zoom estén activos en la web. Si ya utiliza un visor que admita los objetivos, estos aparecerán inmediatamente (una vez que se borre la caché). Sin embargo, si no utiliza un visor con la opción Destino de zoom habilitada, permanecerán ocultos.
+   - Al igual que todos los demás trabajos que realiza en Dynamic Media Classic, debe publicar para que los destinos de zoom estén activos en la web. Si ya utiliza un visor que admita los objetivos, estos aparecerán inmediatamente (una vez que se borre la caché). Sin embargo, si no utiliza un visor con la opción Destino de zoom habilitada, permanecerán ocultos.
 
       ![image](assets/crop-adjusted-zoom-targets/zoom-target-green-box.jpg)
 
-7. Además, si necesita eliminar un destinatario, selecciónelo haciendo clic en su miniatura y presione el botón **Delete Target** o presione la tecla SUPR en el teclado.
+7. Además, si necesita eliminar un destinatario, selecciónelo haciendo clic en su miniatura y presione el botón **Delete Target** o presione la tecla DELETE del teclado.
 8. Siga haciendo clic en para agregar nuevos destinos, cambiar el nombre o cambiar el tamaño después de agregarlos.
 9. Cuando haya terminado, haga clic en el botón **Save** y, a continuación, en **Preview**.
 
