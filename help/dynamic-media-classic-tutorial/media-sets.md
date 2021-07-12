@@ -1,25 +1,24 @@
 ---
 title: Conjuntos de medios mixtos, imágenes, muestras y giros
-description: Una de las capacidades más útiles y poderosas de Dynamic Media Classic es su compatibilidad con la creación de conjuntos de medios enriquecidos como imágenes, muestras, giros y conjuntos de medios mixtos. Descubra qué es cada conjunto de medios enriquecidos y cómo crear cada tipo en Dynamic Media Classic. A continuación, obtenga más información sobre los ajustes preestablecidos de conjuntos de lotes, que automatizan el proceso de creación de conjuntos de medios enriquecidos al cargarlos.
+description: Una de las capacidades más útiles y potentes de Dynamic Media Classic es su compatibilidad con la creación de conjuntos de medios enriquecidos, como imágenes, muestras, giros y conjuntos de medios mixtos. Descubra qué es cada conjunto de medios enriquecidos y cómo crear cada tipo en Dynamic Media Classic. A continuación, obtenga más información sobre los ajustes preestablecidos de conjuntos de lotes, que automatizan el proceso de creación de conjuntos de medios enriquecidos al cargarlos.
 sub-product: dynamic-media
-feature: Dynamic Media Classic, Image Sets, Mix Media Sets, Spin Sets
+feature: Dynamic Media Classic, Conjuntos de imágenes, Conjuntos de medios mixtos, Conjuntos de giros
 doc-type: tutorial
 topics: sets, development, authoring, configuring
 audience: all
 activity: use
-topic: Content Management
-role: Business Practitioner
+topic: Administración de contenido
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '1471'
+source-wordcount: '1468'
 ht-degree: 1%
 
 ---
 
 
-# Conjuntos de medios mixtos {#media-sets} de imágenes, muestras, giros y conjuntos de medios mixtos
+# Conjuntos de medios mixtos, imágenes, muestras y giros {#media-sets}
 
 Al ir más allá de las imágenes únicas para el tamaño y el zoom dinámicos, las colecciones de conjuntos de Dynamic Media Classic permiten disfrutar de una mejor experiencia en línea. En esta sección del tutorial se explica cómo crear los siguientes conjuntos de medios enriquecidos en Dynamic Media Classic:
 
@@ -61,7 +60,7 @@ Este tipo de conjunto se utiliza generalmente para mostrar vistas de color del m
 
 La diferencia principal entre una muestra y un conjunto de imágenes es que los conjuntos de muestras utilizan una imagen diferente como muestra en la que se puede hacer clic, mientras que los conjuntos de imágenes utilizan una versión en miniatura en miniatura de la imagen original en la que se puede hacer clic.
 
-Los conjuntos de muestras no colorean las imágenes (idea errónea común). Las imágenes simplemente se están intercambiando, exactamente como en un conjunto de imágenes. Las imágenes de minimuestras se podrían haber creado con Photoshop, cada color se podría haber fotografiado por separado o la herramienta Recortar en Dynamic Media Classic se podría haber utilizado para hacer una muestra de una de las imágenes coloreadas.
+Los conjuntos de muestras no colorean las imágenes (idea errónea común). Las imágenes simplemente se están intercambiando, exactamente como en un conjunto de imágenes. Las imágenes de minimuestras podrían haberse creado utilizando Photoshop, cada color podría haberse fotografiado por separado o la herramienta Recortar en Dynamic Media Classic podría haberse utilizado para hacer una muestra de una de las imágenes coloreadas.
 
 ![image](assets/media-sets/image-set-2.jpg)
 
@@ -107,9 +106,9 @@ La dirección URL del conjunto de medios mixtos anterior podría aparecer como:
 
 - Obtenga información sobre cómo [Crear un conjunto de medios mixtos](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/mixed-media-sets/creating-mixed-media-set.html#creating-a-mixed-media-set).
 
-Para mostrar una imagen para zoom, un conjunto o un vídeo en el sitio web, la llama en un &quot;visor&quot; de Dynamic Media Classic. Dynamic Media Classic incluye visores para recursos de medios enriquecidos, como conjuntos de muestras, conjuntos de giros, vídeos y muchos otros.
+Para mostrar una imagen para zoom, un conjunto o un vídeo en su sitio web, la llama en un &quot;visor&quot; de Dynamic Media Classic. Dynamic Media Classic incluye visores para recursos de medios enriquecidos, como conjuntos de muestras, conjuntos de giros, vídeos y muchos otros.
 
-Obtenga más información sobre [Visualizadores para AEM Assets y Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html).
+Obtenga más información sobre [Visores para AEM Assets y Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html).
 
 ## Valores preestablecidos de conjunto por lotes
 
