@@ -7,13 +7,12 @@ doc-type: tutorial
 topics: development, authoring, configuring, reports
 audience: all
 activity: use
-topic: Content Management
-role: Administrator
+topic: Administración de contenido
+role: Admin
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '342'
 ht-degree: 3%
 
 ---
@@ -45,9 +44,9 @@ Esperamos que el contenido de esta guía de prácticas recomendadas le resulte �
 
 Para obtener más información sobre Dynamic Media Classic, eche un vistazo a los siguientes recursos:
 
-- [Dynamic Media Classic en Experience League: rentabilice](https://guided.adobe.com/?launch=AEM-5a#recommended/solutions/experience-manager)
+- [Dynamic Media Classic en Experience League: Obtener valor](https://guided.adobe.com/?launch=AEM-5a#recommended/solutions/experience-manager)
 - [Dynamic Media Classic en Experience League: Más información](https://guided.adobe.com/?launch=AEM-6a#recommended/solutions/experience-manager)
-- [Archivos de boletines de Dynamic Media](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/dynamic-media-newsletter.html)
+- [Los archivos del boletín de Dynamic Media](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/dynamic-media-newsletter.html)
 - [Página de suscripción al boletín de Dynamic Media](https://www.adobe.com/subscription/dynamic-media-newsletter.html)
 - [Documentación de Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/home.html)
 - [Publicaciones de blog de medios enriquecidos](https://theblog.adobe.com/tag/dynamic-media)
