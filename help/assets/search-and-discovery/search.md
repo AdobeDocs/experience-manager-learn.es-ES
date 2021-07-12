@@ -1,24 +1,23 @@
 ---
 title: 'Búsqueda  '
-description: Aprenda a utilizar Omnisearch de AEM para descubrir rápidamente los recursos.
-feature: Search
+description: Aprenda a utilizar AEM Omnisearch para descubrir rápidamente los recursos.
+feature: 'Búsqueda  '
 version: cloud-service
 kt: 4312
 thumbnail: 32054.jpg
-topic: Content Management
-role: Business Practitioner
+topic: Administración de contenido
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '28'
-ht-degree: 17%
+source-wordcount: '25'
+ht-degree: 20%
 
 ---
 
 
-# Búsqueda{#aem-assets-search}
+# Búsqueda  {#aem-assets-search}
 
-Aprenda a utilizar Omnisearch de AEM para descubrir rápidamente los recursos.
+Aprenda a utilizar AEM Omnisearch para descubrir rápidamente los recursos.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32054/?quality=12&learn=on&hidetitle=true)
