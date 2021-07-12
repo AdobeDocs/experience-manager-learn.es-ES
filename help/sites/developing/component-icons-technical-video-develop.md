@@ -6,14 +6,13 @@ audience: administrator, developer
 doc-type: technical video
 activity: develop
 version: 6.3, 6.4, 6.5
-feature: Core Components
-topic: Development
-role: Business Practitioner
+feature: Componentes principales
+topic: Desarrollo
+role: User
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '378'
 ht-degree: 2%
 
 ---
@@ -52,7 +51,7 @@ La abreviación se puede personalizar mediante la propiedad **[cq:Component]@abb
 
 ### Iconos de CoralUI {#coralui-icons}
 
-Los iconos de CoralUI que proporciona AEM se pueden utilizar para los iconos de los componentes. Para configurar un icono de CoralUI, establezca una propiedad **[cq:Component]@cq:icon** en el valor de atributo del icono HTML del icono de CoralUI deseado (enumerado en la [documentación de CoralUI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html).
+Los iconos de CoralUI, proporcionados por AEM, se pueden utilizar para los iconos de los componentes. Para configurar un icono de CoralUI, establezca una propiedad **[cq:Component]@cq:icon** en el valor de atributo del icono HTML del icono de CoralUI deseado (enumerado en la [documentación de CoralUI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html).
 
 ```plain
 /apps/.../components/content/my-component
