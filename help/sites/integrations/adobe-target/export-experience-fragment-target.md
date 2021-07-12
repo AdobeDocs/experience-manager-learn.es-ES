@@ -1,7 +1,7 @@
 ---
 title: Exportar fragmentos de experiencias a Adobe Target
-description: Obtenga información sobre cómo publicar y exportar fragmentos de experiencia de AEM como ofertas de Adobe Target.
-feature: Experience Fragments
+description: Obtenga información sobre cómo publicar y exportar AEM fragmento de experiencia como ofertas de Adobe Target.
+feature: Fragmentos de experiencias
 topics: integrations, authoring
 audience: all
 doc-type: feature video
@@ -9,13 +9,12 @@ activity: use
 version: cloud-service
 kt: 6350
 thumbnail: 41245.jpg
-topic: Integrations
-role: Business Practitioner
+topic: Integraciones
+role: User
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '198'
+source-wordcount: '195'
 ht-degree: 3%
 
 ---
@@ -23,7 +22,7 @@ ht-degree: 3%
 
 # Exportar fragmento de experiencia a Adobe Target {#experience-fragment-target}
 
-Obtenga información sobre cómo exportar fragmentos de experiencia de AEM como ofertas de Adobe Target.
+Obtenga información sobre cómo exportar AEM fragmento de experiencia como ofertas de Adobe Target.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41245?quality=12&learn=on)
 
@@ -47,9 +46,9 @@ Al exportar fragmento de experiencia a Adobe Target sin los permisos correctos e
 
 #### Resolución
 
-1. Inicie sesión en [Admin Console](https://adminconsole.adobe.com/) con derechos administrativos para el perfil de producto de Adobe Target utilizado, pero con la integración de AEM
+1. Inicie sesión en [Admin Console](https://adminconsole.adobe.com/) con derechos administrativos para el perfil de producto de Adobe Target utilizado pero la integración AEM
 2. Seleccione __Productos > Adobe Target > Perfil de producto__
-3. En la pestaña __Integrations__ , seleccione la integración para el entorno de AEM as a Cloud Service (el mismo nombre que el proyecto de Adobe I/O)
+3. En la pestaña __Integrations__ , seleccione la integración de su AEM como entorno de Cloud Service (el mismo nombre que el proyecto de Adobe I/O)
 4. Asignar la función __Editor__ o __Aprobador__
 
    ![Error de API de Target](assets/target-permissions.png)
@@ -58,5 +57,5 @@ Añadir el permiso correcto a la integración de Adobe Target debería resolver 
 
 ## Compatibilidad con vínculos
 
-+ [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
++ [Adobe Experience Cloud Debugger: Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
 + [Adobe Experience Cloud Debugger: Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
