@@ -3,9 +3,9 @@ title: 'Explicación de los archivos de InDesign y las plantillas de recursos en
 description: Este tutorial de vídeo explica cómo definir un archivo de InDesign y todas las consideraciones que lo acompañan para utilizarlo en la función de plantillas de recursos de AEM Assets.
 version: 6.3, 6.4, 6.5
 topic: Administración de contenido
-role: Business Practitioner
+role: User
 level: Intermediate
-source-git-commit: b4fa992abe22e3a546d651e465d6ffc9e415aee2
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 0%
@@ -49,7 +49,7 @@ Este tutorial de vídeo explica cómo definir un archivo de InDesign y todas las
    >
    >Recuerde que un archivo de InDesign mal construido es la causa más común de problemas con las plantillas de recursos de AEM, por lo que asegúrese de que el etiquetado y la estructura sean correctos y limpios.
 
-## Creación y creación de una plantilla de recursos en AEM Assets {#creating-and-authoring-an-asset-template-in-aem-assets}
+## Creación y creación de plantillas de recursos en AEM Assets {#creating-and-authoring-an-asset-template-in-aem-assets}
 
 >[!VIDEO](https://video.tv.adobe.com/v/19294/?quality=9&learn=on)
 
