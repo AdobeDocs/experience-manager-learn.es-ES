@@ -1,25 +1,24 @@
 ---
-title: Información general del panel de Adobe Asset Link
-description: 'Adobe Asset Link permite a los usuarios creativos examinar, buscar, extraer y registrar recursos almacenados en AEM Assets mediante el panel integrado en InDesign, Photoshop e Illustrator. Obtenga información sobre la interfaz de usuario del panel Adobe Asset Link y sus capacidades. '
+title: Información general del panel Vínculo de recursos de Adobe
+description: 'Adobe Asset Link proporciona a los usuarios creativos la capacidad de examinar, buscar, extraer y registrar recursos almacenados en AEM Assets mediante el panel integrado en InDesign, Photoshop y Illustrator. Obtenga información sobre la interfaz de usuario del panel Adobe Asset Link y sus funciones. '
 sub-product: activos
 feature: Adobe Asset Link
 version: cloud-service
 kt: 4905
 thumbnail: 33734.jpg
-topic: Content Management
-role: Business Practitioner
+topic: Administración de contenido
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '103'
-ht-degree: 4%
+source-wordcount: '100'
+ht-degree: 5%
 
 ---
 
 
-# Información general del panel de Adobe Asset Link {#adobe-asset-link-panel-overview}
+# Información general del panel Vínculo de recursos de Adobe {#adobe-asset-link-panel-overview}
 
-Adobe Asset Link permite a los usuarios creativos examinar, buscar, extraer y registrar recursos almacenados en AEM Assets mediante el panel integrado en InDesign, Photoshop e Illustrator. Obtenga información sobre la interfaz de usuario del panel Adobe Asset Link y sus capacidades.
+Adobe Asset Link proporciona a los usuarios creativos la capacidad de examinar, buscar, extraer y registrar recursos almacenados en AEM Assets mediante el panel integrado en InDesign, Photoshop y Illustrator. Obtenga información sobre la interfaz de usuario del panel Adobe Asset Link y sus funciones.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33734/?quality=12)
