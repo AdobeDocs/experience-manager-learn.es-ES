@@ -2,19 +2,18 @@
 title: Explicación de los fragmentos de contenido y los fragmentos de experiencias
 description: Los fragmentos de contenido y los fragmentos de experiencia de Adobe Experience Manager pueden parecer similares en la superficie, pero cada uno desempeña un papel clave en diferentes casos de uso. Descubra cómo los fragmentos de contenido y los fragmentos de experiencias son similares, diferentes, y cuándo y cómo se utilizan cada uno.
 sub-product: recursos, sitios, servicios de contenido
-feature: Content Fragments, Experience Fragments
+feature: Fragmentos de contenido, fragmentos de experiencias
 topics: headless
 version: 6.3, 6.4, 6.5
 doc-type: article
 activity: understand
 audience: all
-topic: Content Management
-role: Business Practitioner
+topic: Administración de contenido
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1004'
 ht-degree: 3%
 
 ---
@@ -36,7 +35,7 @@ Los fragmentos de contenido y los fragmentos de experiencia de Adobe Experience 
 </ul>
 </td>
 <td><ul>
-<li>Una composición reutilizable de uno o más componentes de AEM que definen el contenido y la presentación que forma una <strong>experiencia</strong> que tiene sentido por sí sola</li>
+<li>Una composición reutilizable de uno o más componentes AEM que definen el contenido y la presentación que forma una <strong>experiencia</strong> que tiene sentido por sí sola</li>
 </ul>
 </td>
 </tr><tr><td><strong>Inquilinos principales</strong></td>
@@ -49,7 +48,7 @@ Los fragmentos de contenido y los fragmentos de experiencia de Adobe Experience 
 </td>
 <td><ul>
 <li>Centrado en la presentación</li>
-<li>Definido por la composición no estructurada de los componentes de AEM</li>
+<li>Definido por la composición no estructurada de AEM componentes</li>
 <li>Define el diseño y el diseño del contenido</li>
 <li>Se utiliza "tal cual" en los canales</li>
 </ul>
@@ -101,13 +100,13 @@ Los fragmentos de contenido y los fragmentos de experiencia de Adobe Experience 
 </td>
 </tr><tr><td><strong>Uso</strong></td>
 <td><ul>
-<li><a href="https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html" target="_blank">Componentes principales de AEM </a> Componentes de fragmento de contenido para su uso en AEM Sites, AEM Screens o en fragmentos de experiencias.</li>
-<li>Exportación JSON mediante <a href="https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html" target="_blank">AEM Content Services</a> para consumo de terceros</li>
-<li>JSON a través de las API de AEM HTTP Assets para el consumo de terceros.</li>
+<li><a href="https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html" target="_blank">AEM componente Fragmento de contenido de componentes principales </a> para su uso en AEM Sites, AEM Screens o en fragmentos de experiencias.</li>
+<li>Exportación de JSON mediante <a href="https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html" target="_blank">AEM Content Services</a> para consumo de terceros</li>
+<li>JSON a través de AEM API de recursos HTTP para consumo de terceros.</li>
 </ul>
 </td>
 <td><ul>
-<li>Componente Fragmento de experiencia de AEM para su uso en AEM Sites, AEM Screens u otros fragmentos de experiencias.</li>
+<li>AEM componente Fragmento de experiencia para su uso en AEM Sites, AEM Screens u otros fragmentos de experiencias.</li>
 <li>Exportar como <a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/experience-fragments.html#ThePlainHTMLRendition" target="_blank">HTML sin formato</a> para su uso por sistemas de terceros</li>
 <li><a href="https://helpx.adobe.com/es/experience-manager/6-5/sites/administering/using/experience-fragments-target.html" target="_blank">Exportación de HTML a Adobe </a> Target para ofertas segmentadas</li>
 <li>Exportación de JSON a Adobe Target para ofertas segmentadas</li>
@@ -141,7 +140,7 @@ Los fragmentos de contenido y los fragmentos de experiencia de Adobe Experience 
 
 ## Arquitectura de fragmentos de contenido
 
-El diagrama siguiente ilustra la arquitectura general de los fragmentos de contenido de AEM
+El diagrama siguiente ilustra la arquitectura general de los fragmentos de contenido AEM
 
 !![Arquitectura de fragmentos de contenido](./assets/content-fragments-architecture.png)
 
@@ -158,7 +157,7 @@ El diagrama siguiente ilustra la arquitectura general de los fragmentos de conte
 
 !![Arquitectura de fragmentos de experiencias](./assets/experience-fragments-architecture.png)
 
-+ **Plantillas editables**, que a su vez se definen mediante  **Tipos de plantilla editables** y una implementación de componentes de página de  **AEM**, definen los componentes de AEM permitidos que se pueden utilizar para componer un fragmento de experiencia.
++ **Plantillas editables**, que a su vez se definen mediante  **Tipos de plantilla editables y una** implementación **de componentes de página** AEM, definen los componentes AEM permitidos que se pueden utilizar para componer un fragmento de experiencia.
 + El **fragmento de experiencia** es una instancia de una plantilla editable que representa una experiencia lógica.
 + Sin embargo, las **variaciones** del fragmento de experiencia se adhieren a la plantilla editable y tienen variaciones en la experiencia (contenido y diseño).
 + Los fragmentos de experiencias pueden ser expuestos o consumidos por:
@@ -172,13 +171,13 @@ El diagrama siguiente ilustra la arquitectura general de los fragmentos de conte
 
 + [Guía del usuario de fragmentos de contenido](https://helpx.adobe.com/experience-manager/6-5/assets/user-guide.html?topic=/experience-manager/6-5/assets/morehelp/content-fragments.ug.js)
 + [Uso de fragmentos de contenido en AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-feature-video-use.html)
-+ [Componente de fragmento de contenido de los componentes principales de WCM de AEM](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)
-+ [Uso de fragmentos de contenido y servicios de contenido de AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/structured-fragments-content-services-feature-video-use.html)
-+ [Introducción a los servicios de contenido de AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html)
++ [AEM del componente Fragmento de contenido de los componentes principales de WCM](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)
++ [Uso de fragmentos de contenido y servicios AEM contenido](https://helpx.adobe.com/experience-manager/kt/sites/using/structured-fragments-content-services-feature-video-use.html)
++ [Introducción a AEM Content Services](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html)
 
 ## Materiales de apoyo para fragmentos de experiencias
 
 + [Documentación de Adobe sobre fragmentos de experiencias](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/experience-fragments.html)
-+ [Explicación de los fragmentos de experiencia de AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/experience-fragments-feature-video-understand.html)
-+ [Uso de fragmentos de experiencia de AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/experience-fragments-feature-video-use.html)
-+ [Uso de fragmentos de experiencia de AEM con Adobe Target](https://medium.com/adobetech/experience-fragments-and-adobe-target-d8d74381b9b2)
++ [Explicación de AEM fragmentos de experiencias](https://helpx.adobe.com/experience-manager/kt/sites/using/experience-fragments-feature-video-understand.html)
++ [Uso de AEM fragmentos de experiencias](https://helpx.adobe.com/experience-manager/kt/sites/using/experience-fragments-feature-video-use.html)
++ [Uso de AEM fragmentos de experiencias con Adobe Target](https://medium.com/adobetech/experience-fragments-and-adobe-target-d8d74381b9b2)
