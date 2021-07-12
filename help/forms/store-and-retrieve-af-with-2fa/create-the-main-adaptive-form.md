@@ -1,7 +1,7 @@
 ---
 title: Crear el formulario adaptable principal
 description: Cree formularios adaptables para capturar la información del solicitante y el formulario adaptable para recuperar el formulario adaptable guardado
-feature: Adaptive Forms
+feature: Formularios adaptables
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,13 +9,12 @@ activity: implement
 version: 6.4,6.5
 kt: 6552
 thumbnail: 6552.jpg
-topic: Development
-role: Business Practitioner
+topic: Desarrollo
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '206'
 ht-degree: 1%
 
 ---
@@ -27,14 +26,14 @@ El formulario **StoreAFWithAttachments** es la forma adaptativa principal. Este 
 
 ![formulario de aplicación principal](assets/6552.JPG)
 
-Este formulario está asociado con las **bootboxjs540,storeAFWithAttachments** bibliotecas de cliente creadas anteriormente en el curso y un flujo de trabajo de AEM que se activa al enviar el formulario.
+Este formulario está asociado con las **bootboxjs540,storeAFWithAttachments** bibliotecas de cliente creadas anteriormente en el curso y un flujo de trabajo AEM que se activa al enviar el formulario.
 
 
 * Los formularios de ejemplo se basan en [plantilla de formulario adaptable personalizada](assets/custom-template-with-page-component.zip) que debe importarse en AEM para que los formularios de ejemplo se representen correctamente.
 
 * El [StoreAfWithAttachments Form](assets/store-af-with-attachments-form.zip) completado se puede descargar e importar en la instancia de AEM.
 
-* El flujo de trabajo [AEM asociado con este formulario](assets/workflow-model-store-af-with-attachments.zip) debe importarse en la instancia AEM para que funcione el formulario.
+* El flujo de trabajo [AEM asociado con este formulario](assets/workflow-model-store-af-with-attachments.zip) debe importarse en la instancia de AEM para que funcione el formulario.
 
 
 
