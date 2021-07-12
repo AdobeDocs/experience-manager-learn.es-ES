@@ -1,7 +1,7 @@
 ---
 title: Crear el MyAccountForm
 description: Cree el formulario myaccount para recuperar el formulario parcialmente completado tras la verificación correcta del id de la aplicación y el número de teléfono.
-feature: Adaptive Forms
+feature: Formularios adaptables
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,13 +9,12 @@ activity: implement
 version: 6.4,6.5
 kt: 6599
 thumbnail: 6599.jpg
-topic: Development
-role: Business Practitioner
+topic: Desarrollo
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '258'
 ht-degree: 1%
 
 ---
@@ -30,12 +29,12 @@ El formulario **MyAccountForm** se utiliza para recuperar el formulario adaptabl
 
 Cuando el usuario introduce el id de la aplicación y hace clic en el botón **FetchApplication**, el número de móvil asociado al id de la aplicación se obtiene de la base de datos mediante la operación Get del modelo de datos del formulario.
 
-Este formulario utiliza la invocación POST del Modelo de datos de formulario para verificar el número de móvil mediante OTP. La acción de envío del formulario se activa cuando se verifica correctamente el número de móvil con el siguiente código. Se está activando el suceso click del botón de envío llamado **submitForm**.
+Este formulario utiliza la invocación del POST del Modelo de datos de formulario para comprobar el número de móvil mediante OTP. La acción de envío del formulario se activa cuando se verifica correctamente el número de móvil con el siguiente código. Se está activando el suceso click del botón de envío llamado **submitForm**.
 
 >[!NOTE]
 > Deberá proporcionar la clave de API y los valores de Secreto de API específicos de su cuenta [Nexmo](https://dashboard.nexmo.com/) en los campos correspondientes de MyAccountForm
 
-![trigger-submit](assets/trigger-submit.JPG)
+![Enviar déclencheur](assets/trigger-submit.JPG)
 
 
 
@@ -50,6 +49,6 @@ El código del servlet montado en **/bin/renderaf** reenvía la solicitud para p
 
 * MyAccountForm se puede [descargar desde aquí](assets/my-account-form.zip)
 
-* Los formularios de ejemplo se basan en [plantilla de formulario adaptable personalizada](assets/custom-template-with-page-component.zip) que debe importarse en AEM para que los formularios de ejemplo se representen correctamente.
+* Los formularios de ejemplo se basan en [plantilla de formulario adaptable personalizada](assets/custom-template-with-page-component.zip) que debe importarse en AEM para que los formularios de ejemplo se muestren correctamente.
 
 * [El ](assets/custom-submit-my-account-form.zip) controlador de envío personalizado asociado con el envío MyAccountForm debe importarse en AEM.
