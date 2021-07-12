@@ -1,19 +1,18 @@
 ---
 title: Ajustes preestablecidos de imagen
-description: Los ajustes preestablecidos de imagen en Dynamic Media Classic contienen todos los ajustes necesarios para crear una imagen con un tamaño, formato, calidad y enfoque específicos. Los ajustes preestablecidos de imagen son un componente clave del tamaño dinámico. Cuando observe una URL en Dynamic Media Classic, podrá ver fácilmente si hay un ajuste preestablecido de imagen en uso. Obtenga información sobre los ajustes preestablecidos de imagen, por qué son tan útiles y cómo crearlos.
+description: Los ajustes preestablecidos de imagen en Dynamic Media Classic contienen todos los ajustes necesarios para crear una imagen con un tamaño, formato, calidad y nitidez específicos. Los ajustes preestablecidos de imagen son un componente clave del tamaño dinámico. Al mirar una URL en Dynamic Media Classic, puede ver fácilmente si hay un ajuste preestablecido de imagen en uso. Obtenga información sobre los ajustes preestablecidos de imagen, por qué son tan útiles y cómo crearlos.
 sub-product: dynamic-media
-feature: Dynamic Media Classic, Image Presets
+feature: Dynamic Media Classic, ajustes preestablecidos de imagen
 doc-type: tutorial
 topics: development, authoring, configuring
 audience: all
 activity: use
-topic: Content Management
-role: Business Practitioner
+topic: Administración de contenido
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '712'
 ht-degree: 1%
 
 ---
@@ -23,7 +22,7 @@ ht-degree: 1%
 
 Un ajuste preestablecido de imagen es esencialmente una fórmula que contiene todos los ajustes necesarios para crear una imagen con un tamaño, formato, calidad y nitidez específicos. Los ajustes preestablecidos de imagen son un componente clave del tamaño dinámico.
 
-Si consulta las direcciones URL de prácticamente cualquier cliente de Dynamic Media Classic, probablemente verá un ajuste preestablecido de imagen en uso. Simplemente busque $name$ al final de la dirección URL (con cualquier palabra o palabra sustituida por name).
+Si consulta las direcciones URL de casi cualquier cliente de Dynamic Media Classic, es probable que vea un ajuste preestablecido de imagen en uso. Simplemente busque $name$ al final de la dirección URL (con cualquier palabra o palabra sustituida por name).
 
 Los ajustes preestablecidos de imagen acortan la URL, por lo que en lugar de escribir varias instrucciones de servicio de imágenes por solicitud, puede escribir un único ajuste preestablecido de imagen. Por ejemplo, estas dos direcciones URL producen la misma imagen JPEG de 300 x 300 con nitidez, pero la segunda utiliza un ajuste preestablecido de imagen:
 
@@ -64,7 +63,7 @@ El gráfico siguiente muestra tres niveles de nitidez. De derecha a izquierda no
 
 Dynamic Media Classic permite tres tipos de nitidez: Enfoque simple, modo de remuestreo y máscara de enfoque.
 
-Obtenga más información sobre las [Opciones de enfoque de Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/sharpening-image.html#sharpening_an_image).
+Obtenga más información sobre [Opciones de enfoque de Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/sharpening-image.html#sharpening_an_image).
 
 ## Recursos adicionales
 
