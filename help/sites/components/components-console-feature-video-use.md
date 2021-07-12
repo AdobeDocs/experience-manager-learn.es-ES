@@ -6,14 +6,13 @@ audience: all
 doc-type: feature video
 version: 6.3, 6.4, 6.5
 activity: use
-feature: Core Components
-topic: Content Management
-role: Business Practitioner
+feature: Componentes principales
+topic: Administración de contenido
+role: User
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '181'
+source-wordcount: '178'
 ht-degree: 3%
 
 ---
@@ -27,7 +26,7 @@ La consola Componentes proporciona a los desarrolladores y administradores una u
 
 La consola Componentes proporciona las siguientes funciones:
 
-* Información general: lista de todos los componentes instalados disponibles en la instancia actual de AEM
+* Información general: lista de todos los componentes instalados disponibles en la instancia de AEM actual
 * [!UICONTROL Propiedades]: muestra metadatos como el título, el grupo y la descripción de un componente
 * [!UICONTROL Políticas]: muestra las directivas existentes para un componente determinado y la plantilla asociada
 * [!UICONTROL Uso] en directo: muestra una lista de páginas en las que se incluye el componente
