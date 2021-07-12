@@ -1,19 +1,18 @@
 ---
 title: Le damos la bienvenida al tutorial de prácticas recomendadas de Dynamic Media Classic
-description: Dynamic Media Classic es el centro en el que los clientes crean, crean y distribuyen contenido de medios enriquecidos. Este tutorial de prácticas recomendadas se ha creado para ayudar a los usuarios actuales y nuevos de Dynamic Media Classic a comprender mejor qué pueden hacer con esta potente solución de medios enriquecidos de Adobe. En esta parte del tutorial, aprenderá qué es Dynamic Media Classic y obtendrá una breve descripción de sus funciones principales y de la interfaz de usuario.
+description: Dynamic Media Classic es el centro en el que los clientes crean, crean y distribuyen contenido multimedia enriquecido. Este tutorial de prácticas recomendadas se ha creado para ayudar a los usuarios actuales y nuevos de Dynamic Media Classic a comprender mejor qué pueden hacer con esta potente solución de medios enriquecidos desde Adobe. En esta parte del tutorial, aprenderá qué es Dynamic Media Classic y echará un vistazo a sus funciones principales y a la interfaz de usuario.
 sub-product: dynamic-media
 doc-type: tutorial
 topics: best-practices, development, authoring, configuring
 audience: all
 activity: develop, use
 feature: Dynamic Media Classic
-topic: Content Management
-role: Business Practitioner
+topic: Administración de contenido
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '901'
 ht-degree: 1%
 
 ---
@@ -21,32 +20,32 @@ ht-degree: 1%
 
 # Le damos la bienvenida al tutorial de prácticas recomendadas de Dynamic Media Classic
 
-Esta guía está diseñada para ayudar a los usuarios actuales y nuevos de Dynamic Media Classic a comprender mejor qué pueden hacer con su potente solución de medios enriquecidos de Adobe. Lo haremos de la siguiente manera:
+Esta guía está diseñada para ayudar a los usuarios actuales y nuevos de Dynamic Media Classic a comprender mejor qué pueden hacer con su potente solución de medios enriquecidos desde el Adobe. Lo haremos de la siguiente manera:
 
-- Le presentamos a Dynamic Media Classic, donde describe lo que es y ofrece una descripción general de sus funciones principales y de la interfaz de usuario (IU).
+- Le presentamos Dynamic Media Classic, en el que se describe lo que es y se proporciona información general sobre sus funciones principales y la interfaz de usuario (IU).
 - Explicar el flujo de trabajo general Crear, Autor y Entregar que seguirá cuando trabaje con recursos en la solución.
 - Analizando los elementos importantes que se deben configurar antes de saltar y utilizar la solución.
 - Inmersión en el uso de varias de las funcionalidades principales de la solución.
 
-En toda la guía, se proporcionan ejemplos, sugerencias y prácticas recomendadas. También explicaremos términos y conceptos importantes con los que debe estar familiarizado cuando trabaje con Dynamic Media Classic. Y cuando estén disponibles para un tema determinado, le indicaremos seminarios web relevantes, publicaciones en blogs y documentación en línea.
+En toda la guía, se proporcionan ejemplos, sugerencias y prácticas recomendadas. También explicaremos términos y conceptos importantes con los que debería estar familiarizado al trabajar con Dynamic Media Classic. Y cuando estén disponibles para un tema determinado, le indicaremos seminarios web relevantes, publicaciones en blogs y documentación en línea.
 
-Esperamos que esta guía le proporcione la información necesaria para desbloquear un valor tremendo de su solución de Dynamic Media Classic. Para desplazarse con mayor facilidad por los capítulos de esta guía, haga clic en el icono de marcador que hay en la parte izquierda de la guía para ver su contenido.
+Esperamos que esta guía le proporcione la información necesaria para desbloquear un valor tremendo de su solución Dynamic Media Classic. Para desplazarse con mayor facilidad por los capítulos de esta guía, haga clic en el icono de marcador que hay en la parte izquierda de la guía para ver su contenido.
 
 ## Información general sobre Dynamic Media Classic
 
-Dynamic Media Classic es el centro en el que los clientes crean, crean y distribuyen contenido de medios enriquecidos. Dynamic Media Classic es un entorno de servicio, publicación, administración de medios enriquecidos e integrado. Los medios enriquecidos se pueden entregar a todos los canales de marketing y ventas, incluidos la web, el material impreso, las campañas de correo electrónico, las aplicaciones web, los escritorios y los dispositivos.
+Dynamic Media Classic es el centro en el que los clientes crean, crean y distribuyen contenido multimedia enriquecido. Dynamic Media Classic es un entorno integrado y rico de administración de medios, publicación y servicio. Los medios enriquecidos se pueden entregar a todos los canales de marketing y ventas, incluidos la web, el material impreso, las campañas de correo electrónico, las aplicaciones web, los escritorios y los dispositivos.
 
 El servicio de imágenes es quizás la función más usada de Dynamic Media Classic. De hecho, la mayoría de los clientes utilizan Dynamic Media Classic para mostrar todas las imágenes de sus sitios web, incluidas las imágenes para zoom o medios enriquecidos. Sin embargo, también se puede utilizar para muchos otros fines, como la entrega de vídeo y el uso de IA para optimizar las imágenes entregadas.
 
-## Funciones principales de Dynamic Media Classic
+## Funcionalidades principales de Dynamic Media Classic
 
 En esta guía analizaremos las siguientes funcionalidades principales de Dynamic Media Classic.
 
 - **Imágenes dinámicas.** Término general para la edición, el formato y el tamaño en tiempo real, y zoom y panorámica interactivos; cambio de color y textura; giro de 360 grados; plantillas de imagen; y visualizadores multimedia.
 - **Vídeo.** Cargue vídeos finales, publíquelos y descargue progresivamente los mismos en visualizadores de vídeo configurables.
-- **Imágenes inteligentes.** Tecnología que aprovecha las capacidades de Adobe Sensei AI y funciona con los &quot;ajustes preestablecidos de imagen&quot; existentes para mejorar el rendimiento de la entrega de imágenes optimizando automáticamente el formato, el tamaño y la calidad de la imagen en función de las capacidades del navegador del cliente.
+- **Imágenes inteligentes.** Tecnología que aprovecha las capacidades de Adobe Sensei AI y funciona con los &quot;ajustes preestablecidos de imagen&quot; existentes para mejorar el rendimiento de la entrega de imágenes optimizando automáticamente el formato, el tamaño y la calidad de las imágenes en función de las capacidades del navegador del cliente.
 
-Para descubrir funcionalidades adicionales de la solución, visite la [Documentación para Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/intro/introduction.html).
+Para descubrir funcionalidades adicionales de la solución, visite [Documentation for Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/intro/introduction.html).
 
 ## Interfaz de usuario (IU) de Dynamic Media Classic
 
@@ -76,4 +75,4 @@ _IU de Dynamic Media Classic_
 >
 >Seleccione la casilla **Publicar después de cargar** en el cuadro de diálogo Cargar para publicar automáticamente los recursos al cargarlos.
 
-Obtenga más información sobre [Desplazamiento por la interfaz de usuario de Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/getting-started/navigation-basics.html).
+Obtenga más información sobre [Desplazamiento por la IU de Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/getting-started/navigation-basics.html).
