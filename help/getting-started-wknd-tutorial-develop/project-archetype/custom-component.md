@@ -11,10 +11,9 @@ level: Beginner
 kt: 4072
 mini-toc-levels: 1
 thumbnail: 30181.jpg
-translation-type: tm+mt
-source-git-commit: 255d6bd403d240b2c18a0ca46c15b0bb98cf9593
+source-git-commit: 66d35a41d63d4c33f71a118e9471c5aa58dc48a7
 workflow-type: tm+mt
-source-wordcount: '3967'
+source-wordcount: '4108'
 ht-degree: 0%
 
 ---
@@ -79,7 +78,7 @@ La implementación del componente Byline incluye un cuadro de diálogo que recop
 * Imagen
 * Ocupaciones
 
-## Crear componente de línea {#create-byline-component}
+## Crear componente de firma {#create-byline-component}
 
 En primer lugar, cree la estructura del nodo Componente de línea de bytes y defina un cuadro de diálogo. Esto representa el componente en AEM y define implícitamente el tipo de recurso del componente por su ubicación en el JCR.
 
@@ -106,7 +105,7 @@ El cuadro de diálogo muestra la interfaz que pueden proporcionar los autores de
 
    El archivo XML anterior proporciona la definición del componente, incluido el título, la descripción y el grupo. El `sling:resourceSuperType` apunta a `core/wcm/components/image/v2/image`, que es el [Componente de imagen principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html).
 
-### Cree el script HTL {#create-the-htl-script}
+### Creación del script HTL {#create-the-htl-script}
 
 1. Debajo de la carpeta `byline`, añada un nuevo archivo `byline.html`, que es responsable de la presentación HTML del componente. Es importante nombrar el archivo como la carpeta, ya que se convierte en el script predeterminado que Sling utilizará para procesar este tipo de recurso.
 
@@ -281,7 +280,7 @@ Siguiendo el mismo enfoque que con la creación del cuadro de diálogo, cree un 
 
    Al igual que en la configuración del cuadro de diálogo, [Sling Resource Merger](https://sling.apache.org/documentation/bundles/resource-merger.html) se utiliza para ocultar los campos irrelevantes que, de lo contrario, se heredan de `sling:resourceSuperType`, como se ve en las definiciones de nodos con la propiedad `sling:hideResource="{Boolean}true"`.
 
-### Implementar el código {#deploy-the-code}
+### Implementación del código {#deploy-the-code}
 
 1. Implemente la base de código actualizada en una instancia de AEM local con sus habilidades con Maven:
 
@@ -304,7 +303,7 @@ En primer lugar, cargue una toma de encabezado de muestra en AEM Assets para usa
 
    ![Se cargó un cabezal](assets/custom-component/stacey-roswell-headshot-assets.png)
 
-### Cree el componente {#author-the-component}
+### Creación del componente {#author-the-component}
 
 A continuación, añada el componente Byline a una página de AEM. Como hemos agregado el componente Byline al **Proyecto de WKND Sites - Contenido** Grupo de componentes, a través de la definición `ui.apps/src/main/content/jcr_root/apps/wknd/components/byline/.content.xml`, está disponible automáticamente para cualquier **Contenedor** cuya **Política** permite el **Proyecto de WKND Sites - Contenido** grupo de componentes, que es el contenedor de diseño de página de artículo .
 
@@ -444,7 +443,20 @@ Cree una interfaz pública de Java para el Byline. `Byline.java` define los mét
 
    Observe que no hay ningún método para la imagen; [echaremos un vistazo a por qué es posterior](#tackling-the-image-problem).
 
-### Implementación de bytes {#byline-implementation}
+1. Los paquetes Java que contienen clases públicas de Java, en este caso un modelo de Sling, deben recibir versiones utilizando el archivo `package-info.java` del paquete.
+
+Dado que las declaraciones del paquete Java `com.adobe.aem.guides.wknd.core.models` de la fuente WKND son versiones de `2.0.0` y que agregamos métodos e interfaz pública que no rompe, la versión debe aumentarse a `2.1.0`. Abra el archivo en `core/src/main/java/com/adobe/aem/guides/wknd/core/models/package-info.java` y actualice `@Version("2.0.0")` a `@Version("2.1.0")`.
+
+    &quot;
+    @Version(&quot;2.1.0&quot;)
+     paquete com.adobe.aem.guides.wknd.core.models;
+    
+    importar org.osgi.anottation.versioning.Version;
+    &quot;
+
+Siempre que se realicen cambios en los archivos de este paquete, la versión del paquete [debe ajustarse semánticamente](https://semver.org/). Si no es así, el [bnd-baseline-maven-plugin](https://github.com/bndtools/bnd/tree/master/maven/bnd-baseline-maven-plugin) del proyecto Maven detectará una versión de paquete no válida y romperá la compilación. Por suerte, en caso de error, el complemento Maven informa de la versión no válida del paquete Java así como de la versión que debería ser. Acabo de actualizar la declaración `@Version("...")` en la `package-info.java` versión del paquete Java que infringe las normas  a la versión recomendada por el complemento para corregirla.
+
+### Implementación de firma {#byline-implementation}
 
 `BylineImpl.java` es la implementación del modelo de Sling que implementa la  `Byline.java` interfaz definida anteriormente. El código completo de `BylineImpl.java` se encuentra en la parte inferior de esta sección.
 
@@ -508,7 +520,7 @@ Cree una interfaz pública de Java para el Byline. `Byline.java` define los mét
    * El parámetro `adapters` permite registrar la clase de implementación en la interfaz de Byline. Esto permite que la secuencia de comandos HTL llame al modelo de Sling a través de la interfaz (en lugar del impl directamente). [Puede encontrar más información sobre los adaptadores aquí](https://sling.apache.org/documentation/bundles/models.html#specifying-an-alternate-adapter-class-since-110).
    * El `resourceType` apunta al tipo de recurso de componente Byline (creado anteriormente) y ayuda a resolver el modelo correcto si hay varias implementaciones. [Puede encontrar más información sobre cómo asociar una clase de modelo con un tipo de recurso aquí](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130).
 
-### Implementación de los métodos del modelo de Sling {#implementing-the-sling-model-methods}
+### Implementación de los métodos del modelo Sling {#implementing-the-sling-model-methods}
 
 #### getName() {#implementing-get-name}
 
@@ -836,7 +848,7 @@ Optaremos por el **segundo** enfoque. Es probable que el primer enfoque sea sufi
    ```
 
 
-## Byline HTL {#byline-htl}
+## HTL de firma {#byline-htl}
 
 En el módulo `ui.apps`, abra `/apps/wknd/components/byline/byline.html` que hemos creado en la configuración anterior del componente AEM.
 
@@ -886,7 +898,7 @@ La [Use block statement](https://github.com/adobe/htl-spec/blob/master/SPECIFICA
    </div>
    ```
 
-### Acceso a los métodos del modelo de Sling {#accessing-sling-model-methods}
+### Acceso a los métodos del modelo Sling {#accessing-sling-model-methods}
 
 HTL toma prestado de JSTL y utiliza la misma abreviación de los nombres de los métodos de captador de Java.
 
@@ -990,7 +1002,7 @@ Para ello, es necesario incluir el recurso de línea actual, pero forzar el tipo
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-### Revisión del componente de línea desdiseñado {#reviewing-the-unstyled-byline-component}
+### Revisión del componente de línea sin estilo {#reviewing-the-unstyled-byline-component}
 
 1. Después de implementar la actualización, vaya a la página [Ultimate Guide to LA Skateparks ](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html) o dondequiera que haya agregado el componente Byline anteriormente en el capítulo.
 
@@ -998,7 +1010,7 @@ Para ello, es necesario incluir el recurso de línea actual, pero forzar el tipo
 
    ![componente de firma sin estilo](assets/custom-component/unstyled.png)
 
-### Revisión del registro del modelo de Sling {#reviewing-the-sling-model-registration}
+### Revisión del registro del modelo Sling {#reviewing-the-sling-model-registration}
 
 La vista [AEM Sling Models Status de la consola web](http://localhost:4502/system/console/status-slingmodels) muestra todos los modelos Sling registrados en AEM. El modelo Byline Sling se puede validar como instalado y reconocido revisando esta lista.
 
@@ -1008,7 +1020,7 @@ Si el **BylineImpl** no se muestra en esta lista, es probable que haya un proble
 
 *http://localhost:4502/system/console/status-slingmodels*
 
-## Estilos de línea {#byline-styles}
+## Estilos de firma {#byline-styles}
 
 El componente Byline debe diseñarse para que se ajuste al diseño creativo del componente Byline. Esto se logrará mediante el uso de SCSS, que AEM proporciona soporte para a través del subproyecto **ui.frontend** Maven.
 
@@ -1081,7 +1093,7 @@ Añada estilos predeterminados para el componente Byline. En el proyecto **ui.fr
    >
    >Es posible que tenga que borrar la caché del navegador para asegurarse de que no se sirve el CSS antiguo, y actualizar la página con el componente Byline para obtener el estilo completo.
 
-## Juntos {#putting-it-together}
+## Juntándola {#putting-it-together}
 
 A continuación, se muestra el aspecto que debería tener el componente Byline diseñado y creado completamente en la página AEM.
 
