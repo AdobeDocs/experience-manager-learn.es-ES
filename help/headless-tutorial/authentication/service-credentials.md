@@ -12,9 +12,9 @@ thumbnail: 330519.jpg
 topic: Integraciones sin encabezado
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: e0822ad4aaf4022a849825ef625e1c29eb6e78f3
+source-git-commit: b902ced3d7f7cf827d0a487bf741ff370f7c1f04
 workflow-type: tm+mt
-source-wordcount: '1828'
+source-wordcount: '1863'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,10 @@ Las credenciales de servicio, a diferencia de los tokens de acceso de desarrollo
 
 __Es una inicialización única por AEM como entorno de Cloud Service__
 
-1. Asegúrese de haber iniciado sesión como administrador de su organización de Adobe IMS
+1. Asegúrese de haber iniciado sesión como:
+   + El administrador de su organización de Adobe IMS
+   + Miembro del perfil de producto IMS de __Cloud Manager - Developer__
+   + Miembro del __AEM Usuario__ o __AEM Administradores__ Perfil de producto IMS en __Autor de AEM__
 1. Inicie sesión en [Administrador de la nube de Adobe](https://my.cloudmanager.adobe.com)
 1. Abra el Programa que contiene el AEM como entorno de Cloud Service para integrar y configurar las credenciales de servicio para
 1. Pulse los puntos suspensivos junto al entorno en la sección __Environments__ y seleccione __Developer Console__
@@ -67,8 +70,10 @@ Una vez inicializadas las credenciales de servicio del AEM como entorno de Cloud
 
 La descarga de las credenciales de servicio sigue los mismos pasos que la inicialización. Si la inicialización aún no se ha producido, se mostrará al usuario un error al pulsar el botón __Get Service Credentials__.
 
-1. Asegúrese de que es miembro del perfil de producto de IMS de __Cloud Manager - Developer__ (que concede acceso a AEM Developer Console)
-   + Los entornos de Sandbox AEM as a Cloud Service solo requieren la pertenencia a __AEM Administradores__ o __AEM Usuarios__ Perfil de producto
+1. Asegúrese de haber iniciado sesión como:
+   + Miembro del perfil de producto de IMS de __Cloud Manager - Developer__ (que concede acceso a AEM Developer Console)
+      + Los entornos de Sandbox AEM as a Cloud Service no requieren esta pertenencia a __Cloud Manager - Developer__
+   + Miembro del __AEM Usuario__ o __AEM Administradores__ Perfil de producto IMS en __Autor de AEM__
 1. Inicie sesión en [Administrador de la nube de Adobe](https://my.cloudmanager.adobe.com)
 1. Abra el Programa que contiene el AEM como entorno de Cloud Service con el que desea integrarlo.
 1. Pulse los puntos suspensivos junto al entorno en la sección __Environments__ y seleccione __Developer Console__
