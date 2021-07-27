@@ -4,10 +4,10 @@ breadcrumb-title: Tutoriales de AEM Foundation
 user-guide-description: 'Una colección de vídeos y tutoriales para Adobe Experience Manager Foundation. '
 sub-product: foundation
 index: y
-source-git-commit: 01053f3d8de0405cfc7058f46443647154c508c4
+source-git-commit: 65a40826d3be322673e116d98124c3cbfb1d6eb4
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 21%
+source-wordcount: '221'
+ht-degree: 14%
 
 ---
 
@@ -46,4 +46,14 @@ ht-degree: 21%
    + [Uso del Editor de flujo de trabajo](./workflow/use-the-workflow-editor.md)
    + [Uso del flujo de trabajo](./workflow/use-workflow.md)
    + [Usar la bandeja de entrada](./workflow/use-the-inbox.md)
-
++ Solución de problemas {#troubleshooting}
+   + [Cómo habilitar el informe de descarga de recursos](./troubleshooting/how-to-enable-asset-download-report.md)
+   + [Cómo forzar la recompilación en AEM6.4](./troubleshooting/how-to-force-recompilation.md)
+   + [Cómo investigar los problemas relacionados con la indexación en AEM](./troubleshooting/how-to-investigate-indexing-related-issues.md)
+   + [Cómo investigar los problemas relacionados con SAML en AEM](./troubleshooting/how-to-investigate-saml-related-issues.md)
+   + [Cómo investigar problemas relacionados con la búsqueda en AEM](./troubleshooting/how-to-investigate-search-related-issues.md)
+   + [Configuración de la caducidad de la sesión del token de inicio de sesión de Oak](./troubleshooting/how-to-set-the-oak-login-token-session-expiration.md)
+   + [Solución de problemas relacionados con la configuración de Jetty](./troubleshooting/how-to-troubleshoot-issues-related-to-jetty-configuration.md)
+   + [Solución de problemas relacionados con el rendimiento](./troubleshooting/how-to-troubleshoot-performance-related-issues.md)
+   + [Pasos para resolver los problemas relacionados con la memoria en AEM](./troubleshooting/steps-to-resolve-memory-related-issues.md)
+   + [Pasos para resolver los problemas de replicación en AEM](./troubleshooting/steps-to-resolve-replication-issues.md)
