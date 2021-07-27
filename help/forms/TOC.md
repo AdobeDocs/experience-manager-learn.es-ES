@@ -5,10 +5,10 @@ user-guide-title: Vídeos y tutoriales de AEM Forms
 user-guide-description: Recopilación de recursos de AEM Forms para principiantes y desarrolladores experimentados de AEM Forms.
 breadcrumb-title: Tutoriales de AEM Forms
 index: y
-source-git-commit: 540e11c0861eacc795122328b2359c7db6378aec
+source-git-commit: 65a40826d3be322673e116d98124c3cbfb1d6eb4
 workflow-type: tm+mt
-source-wordcount: '977'
-ht-degree: 6%
+source-wordcount: '1593'
+ht-degree: 3%
 
 ---
 
@@ -242,3 +242,74 @@ ht-degree: 6%
    + [Configuración de gráfico circular](ic-web-channel-tutorial/parteleven.md)
    + [Entrega Del Documento De Canal Web](ic-web-channel-tutorial/parttwelve.md)
    + [Envío por correo electrónico de un documento de canal web](interactive-communications/delivery-of-web-channel-document-tutorial-use.md)
+
++ Solución de problemas {#troubleshooting}
+   + [Servicios de documentos: Pasos para solucionar problemas relacionados con DDX](troubleshooting/steps-to-capture-required-information-to-troubleshoot-ddx-related-issues.md)
+   + [Servicios de documentos: Pasos para solucionar problemas de conversión de PDFA](troubleshooting/steps-to-capture-required-information-to-troubleshoot-pdfa-conversion-issues.md)
+   + [Servicios de documentos: Cómo depurar un problema relacionado con la fuente para Forms y el servicio de salida](troubleshooting/how-to-debug-font-related-issue-for-forms-and-output-service.md)
+   + [Servicios de documentos: Cómo incrustar fuentes para Forms y Output Service](troubleshooting/how-to-embed-fonts-for-forms-and-output-service.md)
+   + [Servicios de documentos: Habilitación del registro de rendimiento para depurar Forms y el servicio de salida](troubleshooting/how-to-enable-performance-logging-to-debug-forms-and-output-service.md)
+   + [Servicios de documentos: Cómo aumentar el tiempo de espera de transacción de aries para la conversión de archivos grandes](troubleshooting/how-to-increase-aries-transaction-timeout-for-conversion-of-large-files.md)
+   + [Servicios de documentos: Ejecución de pruebas de carga mediante FormsIVS y OutputIVS](troubleshooting/how-to-run-load-tests-using-formsivs-and-outputivs.md)
+   + [Servicios de documentos: Actualización de archivos XDP personalizados y archivos de datos en FormsIVS y OutputIVS](troubleshooting/how-to-update-custom-xdps-and-data-files-in-formsivs-and-outputivs.md)
+   + [Servicios de documentos: Pasos para habilitar el seguimiento detallado de ORB](troubleshooting/steps-to-enable-verbose-orb-trace.md)
+   + [Servicios de documentos: Pasos para modificar el tamaño del grupo bmc para XMLFormService, parte 1](troubleshooting/steps-to-tweak-bmc-pool-size-for-xmlformservice-1.md)
+   + [Servicios de documentos: Pasos para modificar el tamaño del grupo bmc para XMLFormService, parte 2](troubleshooting/steps-to-tweak-bmc-pool-size-for-xmlformservice-2.md)
+   + [Servicios de documentos: Pasos para modificar parámetros en la consola JMX](troubleshooting/steps-to-tweak-parameters-on-jmx-console.md)
+   + [PDFG: Cómo cambiar los tiempos de espera de transacción en PDFG](troubleshooting/how-to-change-the-transaction-timeout-in-pdfg.md)
+   + [PDFG: Actualizar el tiempo de espera de CORBA en PDFG](troubleshooting/how-to-update-corba-timeout-in-pdfg.md)
+   + [PDFG: Actualizar los tiempos de espera en PDFG](troubleshooting/how-to-update-the-timeouts-in-pdfg.md)
+   + [PDFG: Pasos para añadir el usuario PDFG en windows server 2016](troubleshooting/steps-to-add-pdfg-user-in-windows-server.md)
+   + [PDFG: Pasos para comprobar e instalar bibliotecas de 32 bits y sus dependencias](troubleshooting/steps-to-check-and-install-32-bit-libraries-and-their-dependencies.md)
+   + [PDFG: Pasos para comprobar el permiso de las carpetas en windows server 2016](troubleshooting/steps-to-check-folder-permission-on-windows-server-2016.md)
+   + [PDFG: Pasos para habilitar el espacio en unix](troubleshooting/steps-to-enable-strace-on-unix-setup.md)
+   + [PDFG: Pasos para instalar los redistribuibles de Microsoft Visual C++ de 32 bits necesarios](troubleshooting/steps-to-install-required-32bit-microsoft-vc-redistributables.md)
+   + [PDFG: Pasos para ejecutar e interpretar la salida de la herramienta de preparación del sistema](troubleshooting/steps-to-run-and-interpret-output-of-system-readiness-tool.md)
+   + [PDFG: Pasos para solucionar problemas específicos de acrobat](troubleshooting/steps-to-troubleshoot-acrobat-specific-issues.md)
+   + [PDFG: Pasos para solucionar problemas de HtmltoPDF en windows](troubleshooting/steps-to-troubleshoot-htmltopdf-issues-on-windows.md)
+   + [PDFG: Pasos para solucionar problemas específicos de HtmltoPDF en unix(PhantomJS)](troubleshooting/steps-to-troubleshoot-htmltopdf-specific-issues-on-unix-phantomjs.md)
+   + [PDFG: Pasos para solucionar problemas específicos de HtmltoPDF en unix(conversión de WebKit)](troubleshooting/steps-to-troubleshoot-htmltopdf-specific-issues-on-unix-webkit.md)
+   + [PDFG: Pasos para solucionar problemas de la conversión PDFG de varios usuarios en unix](troubleshooting/steps-to-troubleshoot-multi-user-pdfg-conversion-on-unix.md)
+   + [PDFG: Pasos para solucionar problemas de la conversión PDFG de varios usuarios en windows](troubleshooting/steps-to-troubleshoot-multi-user-pdfg-conversion-on-windows.md)
+   + [PDFG: Pasos para solucionar problemas específicos de OpenOffice en unix](troubleshooting/steps-to-troubleshoot-openoffice-specific-issues-on-unix.md)
+   + [PDFG: Pasos para solucionar problemas específicos de OpenOffice en windows](troubleshooting/steps-to-troubleshoot-openoffice-specific-issues-on-windows.md)
+   + [Seguridad de documentos: Aplicación de la directiva creada mediante el módulo de seguridad de documentos en Acrobat](troubleshooting/how-to-apply-policy-created-using-document-security-module-in-acrobat.md)
+   + [Administración de usuarios: Cómo añadir usuarios o grupos en AEM Forms JEE](troubleshooting/how-to-add-users-or-groups-in-aem-forms-jee.md)
+   + [Administración de usuarios: Cómo aumentar el tiempo de espera de sesión de mensajería unificada](troubleshooting/how-to-increase-um-session-timeout.md)
+   + [Workbench: Conexión de Workbench mediante https](troubleshooting/connecting-workbench-using-https.md)
+   + [Workbench: Recopilación de registros de Workbench desde el menú de ayuda](troubleshooting/gathering-workbench-logs-from-help-menu.md)
+   + [Workbench: Habilitación de la salida de depuración para Workbench](troubleshooting/how-to-enable-debug-output-for-workbench.md)
+   + [Workbench: Cómo modificar los parámetros de memoria de Workbench](troubleshooting/how-to-tweak-workbench-memory-parameters.md)
+   + [Workbench: Cómo modificar los parámetros de rendimiento de Workbench](troubleshooting/how-to-tweak-workbench-performance-parameters.md)
+   + [Designer: Dependencia de Designer en redistribuible C++](troubleshooting/dependency-of-vc-on-designer.md)
+   + [Designer: Habilitación de la vista previa HTML](troubleshooting/how-to-enable-html-preview.md)
+   + [Designer: Habilitación de la vista previa de PDF](troubleshooting/how-to-enable-pdf-preview.md)
+   + [Designer: Instalación de parches de Designer](troubleshooting/how-to-install-designer-patches.md)
+   + [JEE Foundation: Cambio del valor de entropy](troubleshooting/how-to-change-the-value-of-entropy.md)
+   + [JEE Foundation: Cambio del tiempo de espera de transacción de cualquier servicio en AEM Forms JEE](troubleshooting/how-to-change-transaction-timeout-of-any-service-in-aem-forms-jee.md)
+   + [JEE Foundation: Cómo purgar registros de proceso de la tabla Administrador de trabajos](troubleshooting/how-to-purge-process-records-from-the-job-manager-table.md)
+   + [JEE Foundation: Ejecución de la depuración del proceso desde la línea de comandos](troubleshooting/how-to-run-process-purge-from-command-line.md)
+   + [JEE Foundation: Pasos para arrancar manualmente](troubleshooting/steps-to-bootstrap-manually.md)
+   + [JEE Foundation: Pasos para capturar registros de depuración para formularios móviles](troubleshooting/steps-to-capture-debug-logs-for-mobile-forms.md)
+   + [JEE Foundation: Pasos para mitigar ForcedDesconecteException](troubleshooting/steps-to-mitigate-forceddisconnectexception.md)
+   + [General: Agregar un usuario de administración para la consola de administración de JBoss](troubleshooting/how-to-add-management-user-for-jboss-admin-console.md)
+   + [General: Cómo capturar registros HAR](troubleshooting/how-to-capture-har-logs.md)
+   + [General: Captura de volcados de montículos de una JVM en un servidor unix](troubleshooting/how-to-capture-heap-dumps-of-a-jvm-on-a-unix-server.md)
+   + [General: Captura de volcados de montículos de una JVM en un servidor de Windows](troubleshooting/how-to-capture-heap-dumps-of-a-jvm-on-a-windows-server.md)
+   + [General: Cómo capturar registros de red](troubleshooting/how-to-capture-network-logs.md)
+   + [General: Captura de volcados de subprocesos de una JVM en un servidor unix](troubleshooting/how-to-capture-thread-dumps-of-a-jvm-on-a-unix-server.md)
+   + [General: Captura de volcados de subprocesos de una JVM en un servidor Windows](troubleshooting/how-to-capture-thread-dumps-of-a-jvm-on-a-windows-server.md)
+   + [General: Cómo generar un certificado autofirmado](troubleshooting/how-to-generate-a-self-signed-certificate.md)
+   + [General: Llamada de servicio web desde formulario HTML5](troubleshooting/how-to-make-web-service-call-from-html5-form.md)
+   + [General: Pasos para habilitar el registro de depuración para cualquier clase en AEM Forms OSGI](troubleshooting/steps-to-enable-debug-logging-for-any-classes-in-aem-forms-osgi.md)
+   + [General: Pasos para habilitar el registro de depuración para cualquier clase en el servidor de aplicaciones JBOSS](troubleshooting/steps-to-enable-debug-logging-for-any-classes-in-jboss-application-server.md)
+   + [General: Pasos para habilitar el registro de depuración para cualquier clase en el servidor de aplicaciones de Websphere](troubleshooting/steps-to-enable-debug-logging-for-any-classes-in-websphere-application-server.md)
+   + [General: Pasos para habilitar SSL para AEM Forms OSGi](troubleshooting/steps-to-enable-ssl-for-aem-forms-osgi.md)
+   + [General: Pasos para cifrar la contraseña del almacén de claves para usarla en lc_turnkey.xml](troubleshooting/steps-to-encrypt-keystore-password-to-be-used-in-lc-turnkey-xml.md)
+   + [General: Pasos para restablecer la contraseña predeterminada para los usuarios en AEM Forms-JEE](troubleshooting/steps-to-reset-default-password-for-users-in-aem-forms-jee.md)
+   + [General: Pasos para restablecer-default-password-para-los-usuarios-en-AEM-Forms-OSGI](troubleshooting/steps-to-reset-default-password-for-users-in-aem-forms-osgi.md)
+   + [General: Pasos para configurar localizadores de gemfire en un clúster y realizar configuraciones relacionadas](troubleshooting/steps-to-set-up-gemfire-locators-in-a-cluster-and-perform-related-configuration.md)
+
+
+
+
