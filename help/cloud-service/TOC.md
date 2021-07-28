@@ -4,7 +4,7 @@ user-guide-description: Una recopilación de tutoriales de Adobe Experience Mana
 breadcrumb-title: Tutoriales de AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: 680043f5717bf938bf6f0b960d9ed5939d13544c
+source-git-commit: e442c6d67a02aae4c6ce9241e754c15abc920c67
 workflow-type: tm+mt
 source-wordcount: '460'
 ht-degree: 21%
@@ -59,12 +59,12 @@ ht-degree: 21%
       + [Migración de configuración de Dispatcher](./developing/basics/dispatcher-configuration.md)
    + Proyectos AEM{#aem-projects}
       + [AEM proyecto Maven](./developing/projects/maven-project-structure.md)
-+ Servicios OSGi{#osgi-services}
-   + [Conceptos básicos del servicio OSGi](./developing/osgi-services/basics.md)
-   + [Ciclo de vida de los componentes OSGi](./developing/osgi-services/lifecycle.md)
-   + [Conceptos básicos de configuraciones de OSGi](./developing/osgi-services/configurations.md)
-   + [Configuraciones de OSGi que utilizan OCD](./developing/osgi-services/configurations-ocd.md)
-+ [API de SDK de AEM JavaDocs](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html)
+   + Servicios OSGi{#osgi-services}
+      + [Conceptos básicos del servicio OSGi](./developing/osgi-services/basics.md)
+      + [Ciclo de vida de los componentes OSGi](./developing/osgi-services/lifecycle.md)
+      + [Conceptos básicos de configuraciones de OSGi](./developing/osgi-services/configurations.md)
+      + [Configuraciones de OSGi que utilizan OCD](./developing/osgi-services/configurations-ocd.md)
+   + [API de SDK de AEM JavaDocs](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html)
 + Depuración AEM{#debugging}
    + Depuración del SDK de AEM{#debugging-aem-sdk}
       + [Información general](./debugging/aem-sdk-local-quickstart/overview.md)
