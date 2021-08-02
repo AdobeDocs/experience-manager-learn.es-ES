@@ -1,29 +1,28 @@
 ---
-title: Activador del flujo de trabajo de AEM en el envío de formularios HTML5
-seo-title: Activar el flujo de trabajo de AEM en el envío de formularios HTML5
-description: Siga rellenando el formulario móvil en modo sin conexión y envíe el formulario móvil para activar el flujo de trabajo de AEM
-seo-description: Siga rellenando el formulario móvil en modo sin conexión y envíe el formulario móvil para activar el flujo de trabajo de AEM
+title: Déclencheur AEM flujo de trabajo en envío de formulario HTML5
+seo-title: Déclencheur AEM flujo de trabajo en envío de formulario HTML5
+description: Siga rellenando el formulario móvil en modo sin conexión y envíe el formulario móvil al flujo de trabajo AEM déclencheur
+seo-description: Siga rellenando el formulario móvil en modo sin conexión y envíe el formulario móvil al flujo de trabajo AEM déclencheur
 feature: Mobile Forms
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4, 6.5
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: f2a94910fbc29b705f82a66d8248cbcf54366874
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 1%
+source-wordcount: '345'
+ht-degree: 0%
 
 ---
 
 
 # Crear perfil personalizado
 
-En esta parte crearemos un [perfil personalizado.](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html) Un perfil es responsable de procesar el XDP como HTML. Se proporciona un perfil predeterminado listo para usar para procesar XDP como HTML. Representa una versión personalizada del servicio de representación de formularios móviles. Puede utilizar el servicio de representación de formularios móviles para personalizar el aspecto, el comportamiento y las interacciones de los formularios móviles. En nuestro perfil personalizado, capturaremos los datos rellenados en el formulario móvil mediante la API de guía. A continuación, estos datos se envían al servlet personalizado que genera un PDF interactivo y lo reenvía a la aplicación que realiza la llamada.
+En esta parte crearemos un [perfil personalizado.](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html) Un perfil es responsable de procesar el XDP como HTML. Se proporciona un perfil predeterminado listo para usar para procesar XDP como HTML. Representa una versión personalizada del servicio de representación de Forms móvil. Puede utilizar el servicio de representación de formularios móviles para personalizar el aspecto, el comportamiento y las interacciones de Mobile Forms. En nuestro perfil personalizado, capturaremos los datos rellenados en el formulario móvil mediante la API de guía. A continuación, estos datos se envían al servlet personalizado que genera un PDF interactivo y lo reenvía a la aplicación que realiza la llamada.
 
 Obtenga los datos del formulario mediante la API de JavaScript `formBridge`. Utilizamos el método `getDataXML()`:
 
@@ -126,7 +125,7 @@ public class GenerateInteractivePDF extends SlingAllMethodsServlet {
 
 ### Procesar PDF interactivo
 
-El siguiente código utiliza la [API del servicio de formularios](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/forms/api/FormsService.html) para procesar un PDF interactivo con los datos del formulario móvil.
+El siguiente código utiliza la [Forms Service API](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/forms/api/FormsService.html) para procesar un PDF interactivo con los datos del formulario móvil.
 
 ```java
 public Document mobileFormToInteractivePdf(Document xmlData,String path) {
@@ -149,7 +148,7 @@ public Document mobileFormToInteractivePdf(Document xmlData,String path) {
 }
 ```
 
-Para ver la capacidad de descargar PDF interactivo desde un formulario móvil parcialmente completado, [haga clic aquí](https://forms.enablementadobe.com/content/dam/formsanddocuments/schengen.xdp/jcr:content).
-Una vez descargado el PDF, el siguiente paso es enviar el PDF para activar un flujo de trabajo de AEM. Este flujo de trabajo combina los datos del PDF enviado y genera un PDF no interactivo para su revisión.
+Para ver la capacidad de descargar PDF interactivo desde un formulario móvil parcialmente completado, [haga clic aquí](https://forms.enablementadobe.com/content/dam/formsanddocuments/xdptemplates/schengenvisa.xdp/jcr:content).
+Una vez descargado el PDF, el siguiente paso es enviar el PDF al déclencheur de un flujo de trabajo AEM. Este flujo de trabajo combina los datos del PDF enviado y genera un PDF no interactivo para su revisión.
 
 El perfil personalizado creado para este caso de uso está disponible como parte de estos recursos de tutorial.
