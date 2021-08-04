@@ -11,9 +11,9 @@ version: 6.4,6.5
 topic: Administración
 role: Admin
 level: Beginner
-source-git-commit: 55a6ff5d01898b994aee60f214126c5c18a06a5e
+source-git-commit: 2fc4f748fd3b8f820d1451d08c5fe01d11892029
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '212'
 ht-degree: 0%
 
 ---
@@ -40,6 +40,15 @@ La credencial de extensiones de lector está asociada al usuario de fd-service. 
 Siga el vídeo para añadir las credenciales al usuario del fd-service
 
 >[!VIDEO](https://video.tv.adobe.com/v/335849?quality=9&learn=on)
+
+
+El comando para enumerar los detalles del archivo pfx es . El siguiente comando supone que está en el mismo directorio que el archivo pfx .
+
+**keytool -v -list -storetype pkcs12 -keystore  &lt;name of=&quot;&quot; your=&quot;&quot;>**
+
+Por ejemplo keytool -v -list -storetype pkcs12 -keystore 1005566.pfx donde 1005566.pfx es el nombre de mi archivo pfx
+
+
 
 
 
