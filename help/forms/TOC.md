@@ -5,9 +5,9 @@ user-guide-title: Vídeos y tutoriales de AEM Forms
 user-guide-description: Recopilación de recursos de AEM Forms para principiantes y desarrolladores experimentados de AEM Forms.
 breadcrumb-title: Tutoriales de AEM Forms
 index: y
-source-git-commit: 55a6ff5d01898b994aee60f214126c5c18a06a5e
+source-git-commit: 2fc4f748fd3b8f820d1451d08c5fe01d11892029
 workflow-type: tm+mt
-source-wordcount: '1597'
+source-wordcount: '1603'
 ht-degree: 3%
 
 ---
@@ -51,6 +51,7 @@ ht-degree: 3%
    + [Servicio de precarga en Forms adaptable](adaptive-forms/prefill-service-adaptive-forms-article-use.md)
    + [Envío personalizado en Forms adaptable](adaptive-forms/custom-submit-aem-forms-article.md)
    + [Captcha en Forms adaptable](adaptive-forms/forms-captcha-feature-video-use.md)
+   + [Incrustación de formularios adaptables en una página web](adaptive-forms/embed-af-web-page.md)
    + [Uso de Definir valor en XML en el flujo de trabajo OSGI](adaptive-forms/setvalue-aem-forms-workflow-tutorial-use.md)
    + [Uso del valor establecido en JSON en el flujo de trabajo OSGI](adaptive-forms/setvalue-json-data-in-aem-forms-workflow-article-use.md)
    + [Enviar componente de correo electrónico en el flujo de trabajo de AEM Forms](adaptive-forms/email-step-aem-workflow-video-use.md)
@@ -198,8 +199,8 @@ ht-degree: 3%
    + [Uso de Output y Forms Service en AEM Forms](document-services/output-and-forms-services-article-develop.md)
    + [Generación de varios archivos pdf a partir de un archivo de datos](document-services/generate-multi-record-pdf.md)
    + [Generar PDF en envío de formulario móvil](document-services/generate-pdf-from-mobile-form-submission-article.md)
-   + [Configuración de la credencial de extensiones de Reader](document-services/configuring-reader-extension-osgi.md)
    + [Generar PDF interactivo a partir de formulario móvil](document-services/render-interactive-form-using-api.md)
+   + [Configuración de la credencial de extensiones de Reader](document-services/configuring-reader-extension-osgi.md)
    + [Aplicar derechos de uso a PDF en una representación XDP](document-services/rendering-and-reader-extending-xdp-templates-article.md)
    + [Aplicar derechos de uso al PDF cargado](document-services/apply-reader-extension-rights-to-pdf.md)
    + [Certificar documentos](document-services/certifying-documents-aem-forms-tutorial.md)
