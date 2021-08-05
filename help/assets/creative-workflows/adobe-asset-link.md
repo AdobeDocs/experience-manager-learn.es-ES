@@ -7,9 +7,9 @@ topic: Administración de contenido
 role: User
 level: Beginner
 thumbnail: 28988.jpg
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 0cfa83bdbd534f0fa06b3fa0013971feb188224e
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '1029'
 ht-degree: 2%
 
 ---
@@ -20,6 +20,13 @@ ht-degree: 2%
 Los diseñadores y los usuarios creativos pueden utilizar los recursos de Adobe Experience Manager en sus aplicaciones de escritorio favoritas de Adobe Creative Cloud.
 
 La extensión de vínculo de recursos de Adobe para Adobe Creative Cloud for enterprise amplía la capacidad para buscar, examinar, ordenar, previsualizar, cargar recursos, extraer, modificar, registrar y ver metadatos de AEM recursos en aplicaciones de Creative Cloud.
+
+
+## Adobe Asset Link y flujos de trabajo creativos AEM
+
+El siguiente vídeo ilustra un flujo de trabajo común utilizado por los creativos que trabajan en aplicaciones de Adobe Creative Cloud e integran directamente con AEM mediante Adobe Asset Link.
+
+>[!VIDEO](https://video.tv.adobe.com/v/335927/?quality=12&learn=on)
 
 ## Funciones de Adobe Asset Link
 
