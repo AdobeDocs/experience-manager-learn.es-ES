@@ -4,10 +4,10 @@ user-guide-description: Recopilación de vídeos y tutoriales de Adobe Experienc
 breadcrumb-title: Tutoriales de AEM Assets
 sub-product: activos
 team: TM
-source-git-commit: 46f270c5b26baeb546997f2191cc28801444a290
+source-git-commit: 0cfa83bdbd534f0fa06b3fa0013971feb188224e
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 32%
+source-wordcount: '273'
+ht-degree: 31%
 
 ---
 
@@ -121,3 +121,5 @@ ht-degree: 32%
 
 + Implementación{#deployment}
    + [Desarrollo concurrente y de múltiples alquileres](deployment/multitenancy-concurrent-article-understand.md)
+
++ [Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/overview.html)
