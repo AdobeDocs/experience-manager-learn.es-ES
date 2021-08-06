@@ -4,9 +4,9 @@ user-guide-description: Una colección de vídeos para Adobe Experience Manager 
 breadcrumb-title: Vídeos de AEM Assets Essentials
 sub-product: activos
 team: TM
-source-git-commit: 36346a8a45fc20b5e6d71d6d00345d74b6b04c2a
+source-git-commit: 5438fd521e08b37405f18e5fc2e7fc1f02592a78
 workflow-type: tm+mt
-source-wordcount: '41'
+source-wordcount: '42'
 ht-degree: 9%
 
 ---
@@ -15,6 +15,8 @@ ht-degree: 9%
 # Vídeos de AEM Assets Essentials {#assets-essentials}
 
 + [Información general](overview.md)
+
++ [Aprovisionamiento](./provisioning.md)
 
 + Datos básicos{#basics}
    + [Administración](basics/managing.md)
