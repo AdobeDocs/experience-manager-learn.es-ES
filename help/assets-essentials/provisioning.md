@@ -1,5 +1,5 @@
 ---
-title: "Aprovisionamiento de Assets Essentials\t"
+title: Aprovisionamiento de Assets Essentials
 description: Obtenga información sobre cómo implementar Assets Essentials mediante Cloud Manager y proporcionar acceso a los usuarios.
 version: cloud-service
 feature: Assets Essentials
@@ -8,7 +8,7 @@ role: User
 level: Beginner
 kt: 8020
 thumbnail: 335952.jpeg
-source-git-commit: 5438fd521e08b37405f18e5fc2e7fc1f02592a78
+source-git-commit: b247bb18eab3e610d40d3e01a63ba7e311fafde0
 workflow-type: tm+mt
 source-wordcount: '36'
 ht-degree: 5%
