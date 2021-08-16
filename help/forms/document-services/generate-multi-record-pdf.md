@@ -1,19 +1,18 @@
 ---
 title: Generación de varios archivos pdf a partir de un archivo de datos
-seo-title: Generación de varios archivos pdf a partir de un archivo de datos
-feature: Output Service
+description: OutputService proporciona varios métodos para crear documentos utilizando un diseño de formulario y datos para combinarlos con el diseño de formulario. Aprenda a generar varios pdf a partir de un xml grande que contenga varios registros individuales.
+feature: Servicio de salida
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: fb6c21a9a88b5ebcbfb14213182a9b8cba6fe6ae
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '526'
 ht-degree: 1%
 
 ---
@@ -40,7 +39,7 @@ La firma del método generatePDFOutputBatch toma los siguientes parámetros
 
 ## Detalles de caso de uso{#use-case-details}
 
-En este caso de uso vamos a proporcionar una sencilla interfaz web para cargar la plantilla y el archivo data(xml). Una vez finalizada la carga de los archivos y enviada la solicitud POST al servlet de AEM. Este servlet extrae los documentos y llama al método generatePDFOutputBatch del OutputService. Los archivos pdf generados se comprimen en un archivo zip y se ponen a disposición del usuario final para su descarga desde el explorador web.
+En este caso de uso vamos a proporcionar una sencilla interfaz web para cargar la plantilla y el archivo data(xml). Una vez finalizada la carga de los archivos y enviada la solicitud del POST a AEM servlet. Este servlet extrae los documentos y llama al método generatePDFOutputBatch del OutputService. Los archivos pdf generados se comprimen en un archivo zip y se ponen a disposición del usuario final para su descarga desde el explorador web.
 
 ## Código Servlet{#servlet-code}
 
@@ -128,7 +127,7 @@ public Document generateMultiplePdfs(HashMap < String, String > templateMap, Has
 }
 ```
 
-### Implementar en su servidor{#Deploy-on-your-server}
+### Implementar en el servidor{#Deploy-on-your-server}
 
 Para probar esta capacidad en su servidor, siga las siguientes instrucciones:
 
@@ -143,5 +142,5 @@ Para probar esta capacidad en su servidor, siga las siguientes instrucciones:
 * Descargue el archivo zip creado. Este archivo zip contiene los archivos pdf generados por el servicio de salida.
 
 >[!NOTE]
->Existen varias formas de activar esta capacidad. En este ejemplo hemos utilizado una interfaz web para soltar la plantilla y el archivo de datos para demostrar la capacidad.
+>Existen varias formas de almacenar en déclencheur esta capacidad. En este ejemplo hemos utilizado una interfaz web para soltar la plantilla y el archivo de datos para demostrar la capacidad.
 
