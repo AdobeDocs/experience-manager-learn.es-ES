@@ -1,5 +1,5 @@
 ---
-title: "Colaboración en Assets Essentials\t"
+title: Colaboración en Assets Essentials
 description: Obtenga información sobre cómo colaborar en la administración de recursos mediante comentarios, anotaciones y tareas.
 version: cloud-service
 feature: Assets Essentials
@@ -8,7 +8,7 @@ role: User
 level: Beginner
 kt: 7916
 thumbnail: 335856.jpeg
-source-git-commit: c7da508b500ac64ac2e817c5b6ff40899f71e7f3
+source-git-commit: b247bb18eab3e610d40d3e01a63ba7e311fafde0
 workflow-type: tm+mt
 source-wordcount: '36'
 ht-degree: 5%
