@@ -1,25 +1,24 @@
 ---
-title: Desarrollo de proyectos en AEM
-description: Un tutorial de desarrollo que ilustra cómo desarrollar para proyectos AEM.  En este tutorial crearemos una plantilla de proyecto personalizada que se pueda utilizar para crear nuevos proyectos en AEM para administrar los flujos de trabajo y las tareas de creación de contenido.
+title: Desarrollar proyectos en AEM
+description: Un tutorial de desarrollo que ilustra cómo desarrollar para AEM proyectos.  En este tutorial crearemos una plantilla de proyecto personalizada que se pueda utilizar para crear nuevos proyectos en AEM para administrar los flujos de trabajo y las tareas de creación de contenido.
 version: 6.3, 6.4, 6.5
-feature: Projects, Workflow
+feature: Proyectos, flujo de trabajo
 topics: collaboration, development, governance
 activity: develop
 audience: developer, implementer, administrator
 doc-type: tutorial
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '4654'
+source-wordcount: '4585'
 ht-degree: 0%
 
 ---
 
 
-# Desarrollo de proyectos en AEM
+# Desarrollar proyectos en AEM
 
 Este es un tutorial de desarrollo que ilustra cómo desarrollar para [!DNL AEM Projects].  En este tutorial crearemos una plantilla de proyecto personalizada que se pueda utilizar para crear nuevos proyectos en AEM para administrar los flujos de trabajo y las tareas de creación de contenido.
 
@@ -29,9 +28,9 @@ Este es un tutorial de desarrollo que ilustra cómo desarrollar para [!DNL AEM P
 
 ## Introducción {#introduction}
 
-[[!DNL AEM Projects]](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html) es una función de AEM diseñada para facilitar la gestión y el agrupamiento de todos los flujos de trabajo y tareas asociados con la creación de contenido como parte de una implementación de AEM Sites o Assets.
+[[!DNL AEM Projects]](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html) es una función de AEM diseñada para facilitar la gestión y agrupación de todos los flujos de trabajo y tareas asociados con la creación de contenido como parte de una implementación de AEM Sites o Assets.
 
-AEM Projects viene con varias [plantillas de proyecto OOTB](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html#ProjectTemplates). Al crear un nuevo proyecto, los autores pueden elegir entre estas plantillas disponibles. Las grandes implementaciones de AEM con requisitos empresariales únicos desearán crear plantillas de proyecto personalizadas, adaptadas a sus necesidades. Al crear una plantilla de proyecto personalizada, los desarrolladores pueden configurar el panel del proyecto, conectar los flujos de trabajo personalizados y crear funciones comerciales adicionales para un proyecto. Echaremos un vistazo a la estructura de una plantilla de proyecto y crearemos una plantilla de ejemplo.
+AEM Projects viene con varias [plantillas de proyecto OOTB](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html#ProjectTemplates). Al crear un nuevo proyecto, los autores pueden elegir entre estas plantillas disponibles. Las implementaciones AEM grandes con requisitos empresariales únicos desearán crear plantillas de proyecto personalizadas, adaptadas a sus necesidades. Al crear una plantilla de proyecto personalizada, los desarrolladores pueden configurar el panel del proyecto, conectar los flujos de trabajo personalizados y crear funciones comerciales adicionales para un proyecto. Echaremos un vistazo a la estructura de una plantilla de proyecto y crearemos una plantilla de ejemplo.
 
 ![Tarjeta de proyecto personalizada](./assets/develop-aem-projects/custom-project-card.png)
 
@@ -42,7 +41,7 @@ Este tutorial detalla el código necesario para crear una plantilla de proyecto 
 * [Paquete de tutorial finalizado](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [Repositorio de código completo en GitHub](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
 
-Este tutorial asume algunos conocimientos básicos de [prácticas de desarrollo de AEM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/the-basics.html) y cierta familiaridad con la [configuración del proyecto de AEM Maven](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ht-projects-maven.html). Todo el código mencionado está diseñado para utilizarse como referencia y solo debe implementarse en una [instancia de AEM de desarrollo local](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#GettingStarted).
+Este tutorial asume algunos conocimientos básicos de [AEM prácticas de desarrollo](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/the-basics.html) y cierta familiaridad con [AEM configuración del proyecto Maven](https://helpx.adobe.com/es/experience-manager/6-5/sites/developing/using/ht-projects-maven.html). Todo el código mencionado está pensado para utilizarse como referencia y solo debe implementarse en una [instancia de desarrollo local AEM](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#GettingStarted).
 
 ## Estructura de una plantilla de proyecto
 
@@ -66,7 +65,7 @@ La estructura completa del nodo:
 
 El nodo raíz de la plantilla de proyecto será del tipo **cq:Template**. En este nodo puede configurar las propiedades **jcr:title** y **jcr:description** que se mostrarán en el Asistente para crear proyectos. También hay una propiedad llamada **wizard** que apunta a un formulario que rellenará las Propiedades del proyecto. El valor predeterminado de: **/libs/cq/core/content/projects/wizard/steps/defaultproject.html** debería funcionar bien en la mayoría de los casos, ya que permite al usuario rellenar las propiedades básicas del proyecto y agregar miembros del grupo.
 
-**Tenga en cuenta que el Asistente para crear proyectos no utiliza el servlet Sling POST. En su lugar, los valores se publican en un servlet personalizado:**com.adobe.cq.projects.impl.servlet.ProjectServlet**. Esto debe tenerse en cuenta al agregar campos personalizados.*
+**Tenga en cuenta que el Asistente para crear proyectos no utiliza el servlet de POST de Sling. En su lugar, los valores se publican en un servlet personalizado:**com.adobe.cq.projects.impl.servlet.ProjectServlet**. Esto debe tenerse en cuenta al agregar campos personalizados.*
 
 Puede encontrar un ejemplo de asistente personalizado para la plantilla de proyecto de traducción: **/libs/cq/core/content/projects/wizard/translation/project/defaultproject**.
 
@@ -93,7 +92,7 @@ Una de las razones más atractivas para crear una plantilla de proyecto personal
 
 ## Creación de una plantilla de proyecto {#creating-project-template}
 
-Como principalmente copiaremos/configuraremos nodos, usaremos CRXDE Lite. En la instancia local de AEM, abra [CRXDE Lite](http://localhost:4502/crx/de/index.jsp).
+Como principalmente copiaremos/configuraremos nodos, utilizaremos CRXDE Lite. En la instancia de AEM local, abra [CRXDE Lite](http://localhost:4502/crx/de/index.jsp).
 
 1. Comience creando una nueva carpeta debajo de `/apps/&lt;your-app-folder&gt;` denominada `projects`. Cree otra carpeta debajo del nombre `templates`.
 
@@ -132,7 +131,7 @@ Como principalmente copiaremos/configuraremos nodos, usaremos CRXDE Lite. En la 
    1. Añada un nuevo nodo **nt:unstructured** debajo de authoring-project/gadgets denominado **tasks**.
    1. Agregue propiedades de cadena al nodo de tareas para **cardWeight** = &quot;100&quot;, **jcr:title**=&quot;Tasks&quot; y **sling:resourceType**=&quot;cq/gui/components/projects/admin/pod/taskpod&quot;.
 
-   Ahora, el mosaico [Tareas](https://docs.adobe.com/docs/en/aem/6-3/author/projects.html#Tasks) se mostrará de forma predeterminada cuando se cree un nuevo proyecto.
+   Ahora, el mosaico [Tareas](https://experienceleague.adobe.com/docs/#Tasks) se mostrará de forma predeterminada cuando se cree un nuevo proyecto.
 
    ```shell
    ../projects/templates/authoring-project
@@ -180,7 +179,7 @@ Como principalmente copiaremos/configuraremos nodos, usaremos CRXDE Lite. En la 
    ```
 
 1. Para facilitar a los autores de contenido la identificación de la plantilla de proyecto, puede agregar una miniatura personalizada. El tamaño recomendado sería de 319 x 319 píxeles.
-   1. En CRXDE Lite, cree un nuevo archivo como un elemento del mismo nivel de gadgets, funciones y nodos de flujos de trabajo llamados **thumbnail.png**.
+   1. En CRXDE Lite, cree un nuevo archivo como un elemento del mismo nivel de nodos de gadgets, roles y flujos de trabajo llamados **thumbnail.png**.
    1. Guarde y, a continuación, vaya al nodo `jcr:content` y haga doble clic en la propiedad `jcr:data` (evite hacer clic en &quot;ver&quot;).
       1. Esto debería solicitarle un cuadro de diálogo de edición de `jcr:data` archivo y puede cargar una miniatura personalizada.
 
@@ -267,7 +266,7 @@ Ahora podemos probar nuestra plantilla de proyecto creando un nuevo proyecto.
 
 ## ¿Por qué el flujo de trabajo?
 
-Tradicionalmente, los flujos de trabajo de AEM que se centran en un proceso de aprobación han utilizado los pasos del flujo de trabajo de Participante. La bandeja de entrada de AEM incluye detalles sobre tareas y flujo de trabajo, así como una integración mejorada con proyectos AEM. Estas funciones hacen que el uso de los pasos del proceso Crear tarea de proyectos sea una opción más atractiva.
+Tradicionalmente, AEM flujos de trabajo centrados en un proceso de aprobación han utilizado los pasos del flujo de trabajo Participante. AEM Bandeja de entrada incluye detalles sobre Tareas y Flujo de trabajo, así como una integración mejorada con Proyectos AEM. Estas funciones hacen que el uso de los pasos del proceso Crear tarea de proyectos sea una opción más atractiva.
 
 ### ¿Por qué las tareas?
 
@@ -313,7 +312,7 @@ El último paso del flujo de trabajo utiliza el paso de proceso Activar página/
 
    Para obtener más información relacionada con la [creación de flujos de trabajo, lea aquí](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/workflows-models.html).
 
-1. Como práctica recomendada, los flujos de trabajo personalizados deben agruparse en su propia carpeta debajo de /etc/workflow/models. En CRXDE Lite, cree un nuevo **&#39;nt:folder&#39;** debajo de /etc/workflow/models llamados **&quot;aem-guides&quot;**. Añadir una subcarpeta garantiza que los flujos de trabajo personalizados no se sobrescriban accidentalmente durante las actualizaciones o instalaciones del Service Pack.
+1. Como práctica recomendada, los flujos de trabajo personalizados deben agruparse en su propia carpeta debajo de /etc/workflow/models. En el CRXDE Lite, cree un nuevo **&#39;nt:folder&#39;** debajo de /etc/workflow/models llamados **&quot;aem-guides&quot;**. Añadir una subcarpeta garantiza que los flujos de trabajo personalizados no se sobrescriban accidentalmente durante las actualizaciones o instalaciones del Service Pack.
 
    *Tenga en cuenta que es importante no colocar nunca la carpeta o los flujos de trabajo personalizados bajo subcarpetas ootb como /etc/workflow/models/dam o /etc/workflow/models/projects, ya que todas las subcarpetas también se pueden sobrescribir mediante actualizaciones o service packs.
 
@@ -330,7 +329,7 @@ El último paso del flujo de trabajo utiliza el paso de proceso Activar página/
    ![Definición de flujo de trabajo moderna ](./assets/develop-aem-projects/modern-workflow-definition-location.png)
 ubicaciónUbicación del modelo de flujo de trabajo en la versión 6.4 o posterior
 
-1. La introducción a AEM 6.3 es la capacidad de añadir etapas de flujo de trabajo a un flujo de trabajo determinado. Los pasos aparecerán para el usuario desde la bandeja de entrada en la pestaña Información del flujo de trabajo . Muestra al usuario la fase actual del flujo de trabajo, así como las etapas anteriores y posteriores al flujo de trabajo.
+1. La introducción de AEM 6.3 es la capacidad de añadir etapas de flujo de trabajo a un flujo de trabajo determinado. Los pasos aparecerán para el usuario desde la bandeja de entrada en la pestaña Información del flujo de trabajo . Muestra al usuario la fase actual del flujo de trabajo, así como las etapas anteriores y posteriores al flujo de trabajo.
 
    Para configurar los escenarios, abra el cuadro de diálogo Propiedades de página desde la barra de tareas. La cuarta pestaña se denomina &quot;Etapas&quot;. Añada los siguientes valores para configurar las tres etapas de este flujo de trabajo:
 
@@ -624,7 +623,7 @@ task.setCurrentAssignee(projectApproverGrp);
    }
    ```
 
-## Crear el asistente de &quot;inicio del flujo de trabajo&quot; {#start-workflow-wizard}
+## Creación del asistente de &quot;inicio del flujo de trabajo&quot; {#start-workflow-wizard}
 
 Al iniciar un flujo de trabajo desde un proyecto, debe especificar un asistente para iniciar el flujo de trabajo. El asistente predeterminado: `/libs/cq/core/content/projects/workflowwizards/default_workflow` permite al usuario introducir un título de flujo de trabajo, un comentario de inicio y una ruta de carga útil para que se ejecute el flujo de trabajo. También hay otros ejemplos encontrados en: `/libs/cq/core/content/projects/workflowwizards`.
 
@@ -632,13 +631,13 @@ La creación de un asistente personalizado puede ser muy eficaz, ya que puede re
 
 1. En CRXDE-Lite crearemos una subcarpeta debajo de la carpeta `/apps/aem-guides/projects-tasks/projects` llamada &quot;asistentes&quot;. Copie el asistente predeterminado desde: `/libs/cq/core/content/projects/workflowwizards/default_workflow` debajo de la carpeta de asistentes recién creada y renómbrala a **content-approval-start**. La ruta completa debería ser: `/apps/aem-guides/projects-tasks/projects/wizards/content-approval-start`.
 
-   El asistente predeterminado es un asistente de dos columnas, con la primera columna que muestra el Título, la Descripción y la Miniatura del modelo de flujo de trabajo seleccionado. La segunda columna incluye los campos Título del flujo de trabajo, Comentar inicio y Ruta de carga útil. El asistente es un formulario estándar de interfaz de usuario táctil y utiliza componentes estándar de [Granite UI Form](https://docs.adobe.com/docs/en/aem/6-5/develop/ref/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/index.html) para rellenar los campos.
+   El asistente predeterminado es un asistente de dos columnas, con la primera columna que muestra el Título, la Descripción y la Miniatura del modelo de flujo de trabajo seleccionado. La segunda columna incluye los campos Título del flujo de trabajo, Comentar inicio y Ruta de carga útil. El asistente es un formulario estándar de interfaz de usuario táctil y utiliza componentes estándar de [Granite UI Form](https://experienceleague.adobe.com/docs/) para rellenar los campos.
 
    ![asistente de flujo de trabajo de aprobación de contenido](./assets/develop-aem-projects/content-approval-start-wizard.png)
 
 1. Se agregará un campo adicional al asistente que se utilizará para establecer el usuario asignado de la primera tarea del flujo de trabajo (consulte [Creación del modelo de flujo de trabajo](#create-workflow-model): Paso 5).
 
-   Debajo de `../content-approval-start/jcr:content/items/column2/items` cree un nuevo nodo de tipo `nt:unstructured` denominado **&quot;assign&quot;**. Se utilizará el componente Selector de usuario de proyectos (que se basa en el [Componente Selector de usuario de Granite](https://docs.adobe.com/docs/en/aem/6-5/develop/ref/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/userpicker/index.html)). Este campo de formulario facilita restringir la selección de usuarios y grupos a aquellos que pertenecen al proyecto actual.
+   Debajo de `../content-approval-start/jcr:content/items/column2/items` cree un nuevo nodo de tipo `nt:unstructured` denominado **&quot;assign&quot;**. Se utilizará el componente Selector de usuario de proyectos (que se basa en el [Componente Selector de usuario de Granite](https://experienceleague.adobe.com/docs/)). Este campo de formulario facilita restringir la selección de usuarios y grupos a aquellos que pertenecen al proyecto actual.
 
    A continuación se muestra la representación XML del nodo **assign**:
 
@@ -658,7 +657,7 @@ La creación de un asistente personalizado puede ser muy eficaz, ya que puede re
 
 1. También se añade un campo de selección de prioridad que determina la prioridad de la primera tarea del flujo de trabajo (consulte [Crear el modelo de flujo de trabajo](#create-workflow-model): Paso 5).
 
-   Debajo de `/content-approval-start/jcr:content/items/column2/items` cree un nuevo nodo de tipo `nt:unstructured` denominado **priority**. Utilizaremos el [Granite UI Select component](https://docs.adobe.com/docs/en/aem/6-2/develop/ref/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/select/index.html) para rellenar el campo de formulario.
+   Debajo de `/content-approval-start/jcr:content/items/column2/items` cree un nuevo nodo de tipo `nt:unstructured` denominado **priority**. Utilizaremos el [Granite UI Select component](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html) para rellenar el campo de formulario.
 
    Debajo del nodo **priority** añadiremos un nodo **items** de **nt:unstructured**. Bajo el nodo **items** agregue 3 nodos más para rellenar las opciones de selección de Alto, Medio y Bajo. Cada nodo es de tipo **nt:unstructured** y debe tener una propiedad **text** y **value**. Tanto el texto como el valor deben ser el mismo:
 
@@ -694,7 +693,7 @@ La creación de un asistente personalizado puede ser muy eficaz, ya que puede re
    </priority>
    ```
 
-1. Permitiremos que el iniciador del flujo de trabajo establezca la fecha de vencimiento de la tarea inicial. Se utilizará el campo de formulario [Granite UI DatePicker](https://docs.adobe.com/docs/en/aem/6-5/develop/ref/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/datepicker/index.html) para capturar esta entrada. También se agregará un campo oculto con [TypeHint](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html#typehint) para garantizar que la entrada se almacene como propiedad de tipo Date en el JCR.
+1. Permitiremos que el iniciador del flujo de trabajo establezca la fecha de vencimiento de la tarea inicial. Se utilizará el campo de formulario [Granite UI DatePicker](https://experienceleague.adobe.com/docs/) para capturar esta entrada. También se agregará un campo oculto con [TypeHint](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html#typehint) para garantizar que la entrada se almacene como propiedad de tipo Date en el JCR.
 
    Añada dos nodos **nt:unstructured** con las siguientes propiedades representadas a continuación en XML:
 
@@ -718,7 +717,7 @@ La creación de un asistente personalizado puede ser muy eficaz, ya que puede re
 
 1. Puede ver el código completo del cuadro de diálogo del asistente de inicio [aquí](https://github.com/Adobe-Marketing-Cloud/aem-guides/blob/master/projects-tasks-guide/ui.apps/src/main/content/jcr_root/apps/aem-guides/projects-tasks/projects/wizards/content-approval-start/.content.xml).
 
-## Conexión del flujo de trabajo y la plantilla de proyecto {#connecting-workflow-project}
+## Conexión del flujo de trabajo y la plantilla del proyecto {#connecting-workflow-project}
 
 Lo último que tenemos que hacer es garantizar que el modelo de flujo de trabajo esté disponible para su inicio dentro de uno de los proyectos. Para ello, necesitamos volver a visitar la plantilla de proyecto que creamos en la parte 1 de esta serie.
 
@@ -757,4 +756,4 @@ La configuración de flujo de trabajo es un área de una plantilla de proyecto q
 
 * [Descargar paquete de tutoriales finalizado](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [Repositorio de código completo en GitHub](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
-* [Documentación de proyectos de AEM](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html)
+* [Documentación de AEM Proyectos](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html)
