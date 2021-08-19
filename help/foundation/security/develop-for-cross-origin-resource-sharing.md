@@ -1,20 +1,14 @@
 ---
-title: Desarrollo para el uso compartido de recursos de origen cruzado (CORS) con AEM
-description: Un breve ejemplo de cómo aprovechar CORS para acceder al contenido de AEM desde una aplicación web externa a través de JavaScript del lado del cliente.
+title: Desarrollo para el intercambio de recursos de origen cruzado (CORS) con AEM
+description: Un breve ejemplo de cómo aprovechar CORS para acceder a contenido AEM desde una aplicación web externa a través de JavaScript del lado del cliente.
 version: 6.3, 6,4, 6.5
-sub-product: fundación, servicios de contenido, sitios
-topics: security, development, content-delivery
-activity: develop
-audience: developer
-doc-type: tutorial
-topic: Security
+topic: Seguridad, desarrollo
 role: Developer
 level: Beginner
-feature:  
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+feature: Seguridad
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -22,7 +16,7 @@ ht-degree: 0%
 
 # Desarrollo para el intercambio de recursos de origen cruzado (CORS)
 
-Un breve ejemplo de cómo aprovechar [!DNL CORS] para acceder al contenido de AEM desde una aplicación web externa a través de JavaScript del lado del cliente.
+Un breve ejemplo de cómo aprovechar [!DNL CORS] para acceder a contenido AEM desde una aplicación web externa a través de JavaScript del lado del cliente.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18837/?quality=12&learn=on)
 
@@ -120,9 +114,9 @@ Para permitir el almacenamiento en caché y la entrega de encabezados CORS en co
 
 Es probable que se borre la caché por completo para garantizar que los encabezados se almacenen correctamente en caché en la siguiente solicitud después de una actualización de configuración `/clientheaders`.
 
-## Materiales de soporte {#supporting-materials}
+## Materiales de apoyo {#supporting-materials}
 
-* [Fábrica de configuración de AEM OSGi para políticas de intercambio de recursos de origen cruzado](http://localhost:4502/system/console/configMgr/com.adobe.granite.cors.impl.CORSPolicyImpl)
+* [AEM fábrica de configuración OSGi para directivas de intercambio de recursos de origen cruzado](http://localhost:4502/system/console/configMgr/com.adobe.granite.cors.impl.CORSPolicyImpl)
 * [SimpleHTTPServer para macOS](https://itunes.apple.com/us/app/simple-http-server/id441002840?mt=12)
 * [Python SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)  (compatible con Windows/macOS/Linux)
 
