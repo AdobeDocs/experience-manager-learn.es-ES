@@ -1,19 +1,17 @@
 ---
 title: 'Implementación de producción mediante un servicio de AEM Publish: Introducción a AEM sin encabezado: GraphQL'
 description: Obtenga información sobre los servicios de AEM Author y Publish y el patrón de implementación recomendado para aplicaciones sin encabezado. En este tutorial, aprenda a utilizar variables de entorno para cambiar dinámicamente un extremo de GraphQL en función del entorno de destino. Aprenda a configurar correctamente AEM para el uso compartido de recursos de origen cruzado (CORS).
-sub-product: activos
-topics: headless
 version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
+feature: Fragmentos de contenido, API de GraphQL
+topic: Sin objetivos, Administración de contenido
+role: Developer
+level: Beginner
 mini-toc-levels: 1
 kt: 7131
 thumbnail: KT-7131.jpg
-translation-type: tm+mt
-source-git-commit: 81626b8d853f3f43d9c51130acf02561f91536ac
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2361'
+source-wordcount: '2367'
 ht-degree: 1%
 
 ---
@@ -82,7 +80,7 @@ Aquí](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-se
 
    Se espera que devuelva una página 404 no encontrada. Se trata de una instancia de AEM completamente nueva y no se ha instalado ningún contenido.
 
-## Instale contenido de muestra y extremos de GraphQL {#wknd-site-content-endpoints}
+## Instalación del contenido de ejemplo y los extremos de GraphQL {#wknd-site-content-endpoints}
 
 Al igual que en la instancia de autor, la instancia de publicación debe tener habilitados los extremos de GraphQL y necesita contenido de muestra. A continuación, instale el sitio de referencia de WKND en la instancia de publicación.
 
