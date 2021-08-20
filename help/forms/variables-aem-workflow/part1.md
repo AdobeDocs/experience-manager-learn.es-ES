@@ -1,27 +1,20 @@
 ---
-title: Variables en AEM Workflow[Part1]
-seo-title: Variables en AEM Workflow[Part1]
-description: Uso de variables de tipo xml,json,arraylist,document en el flujo de trabajo de aem
-seo-description: Uso de variables de tipo xml,json,arraylist,document en el flujo de trabajo de aem
-feature: Workflow
-topics: development
-audience: developer
-doc-type: tutorial
-activity: understand
+title: Variables en AEM flujo de trabajo[Parte 1]
+description: Uso de variables de tipo XML, JSON, ArrayList, Document en un flujo de trabajo AEM
+feature: Formularios adaptables
 version: 6.5
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '425'
 ht-degree: 0%
 
 ---
 
 
-# Variables XML en el flujo de trabajo de AEM
+# Variables XML en AEM flujo de trabajo
 
 Las variables de tipo XML generalmente se utilizan cuando se tiene un formulario adaptable basado en XSD y se desea extraer valores del envío del formulario adaptable en el flujo de trabajo.
 
