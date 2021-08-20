@@ -1,19 +1,15 @@
 ---
 title: Paso de proceso personalizado para comprimir archivos adjuntos
 description: Paso de proceso personalizado para agregar archivos adjuntos de formularios adaptables a un archivo zip y almacenar el archivo zip en una variable de flujo de trabajo
-feature: Flujo de trabajo
-topics: adaptive forms
-audience: developer
-doc-type: article
-activity: setup
+feature: Formularios adaptables
 version: 6.5
 topic: Desarrollo
 role: Developer
 level: Beginner
 kt: kt-8049
-source-git-commit: 540e11c0861eacc795122328b2359c7db6378aec
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '150'
+source-wordcount: '151'
 ht-degree: 1%
 
 ---
