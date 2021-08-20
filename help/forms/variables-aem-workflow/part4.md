@@ -1,31 +1,23 @@
 ---
-title: Variables en el flujo de trabajo de AEM[Part4]
-seo-title: Variables en el flujo de trabajo de AEM[Part4]
-description: Uso de variables de tipo xml,json,arraylist,document en el flujo de trabajo de aem
-seo-description: Uso de variables de tipo xml,json,arraylist,document en el flujo de trabajo de aem
-feature: Workflow
-topics: development
-audience: developer
-doc-type: tutorial
-activity: understand
+title: Variables en AEM flujo de trabajo[parte 4]
+description: Uso de variables de tipo XML, JSON, ArrayList, Document en un flujo de trabajo AEM
 version: 6.5
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
 
 
-# Variable ArrayList en el flujo de trabajo de AEM
+# Variable ArrayList en AEM flujo de trabajo
 
-Se han introducido variables de tipo ArrayList en AEM Forms 6.5. Un caso de uso común para usar la variable ArrayList es definir las rutas personalizadas que se utilizarán en AssignTask.
+Las variables de tipo ArrayList se han introducido en AEM Forms 6.5. Un caso de uso común para usar la variable ArrayList es definir las rutas personalizadas que se utilizarán en AssignTask.
 
-Para utilizar la variable ArrayList en un flujo de trabajo de AEM, debe crear un formulario adaptable que genere elementos repetitivos en los datos enviados. Una práctica habitual es definir un esquema que contenga un elemento de matriz. A los efectos de este artículo, he creado un esquema JSON simple que contiene elementos de matriz. El caso de uso es que un empleado rellene un informe de gastos. En el informe de gastos, capturamos el nombre de administrador del remitente y el nombre de administrador del administrador. Los nombres del administrador se almacenan en una matriz denominada cadena de administración. La captura de pantalla siguiente muestra el formulario del informe de gastos y los datos del envío de formularios adaptables.
+Para utilizar la variable ArrayList en un flujo de trabajo AEM, debe crear un formulario adaptable que genere elementos repetitivos en los datos enviados. Una práctica habitual es definir un esquema que contenga un elemento de matriz. A los efectos de este artículo, he creado un esquema JSON simple que contiene elementos de matriz. El caso de uso es que un empleado rellene un informe de gastos. En el informe de gastos, capturamos el nombre de administrador del remitente y el nombre de administrador del administrador. Los nombres del administrador se almacenan en una matriz denominada cadena de administración. La captura de pantalla siguiente muestra el formulario del informe de gastos y los datos del envío de Forms adaptable.
 
 ![informe de gastos](assets/expensereport.jpg)
 
@@ -79,7 +71,7 @@ Una vez que la variable ArrayList de CustomRoutes se inicializa con los valores 
 Para probar este flujo de trabajo en su sistema, siga los siguientes pasos
 
 * Descargue y guarde el archivo ArrayListVariable.zip en su sistema de archivos
-* [Importe el ](assets/arraylistvariable.zip) archivo zip mediante el Administrador de paquetes de AEM
+* [Importe el archivo zip ](assets/arraylistvariable.zip) mediante el Administrador de paquetes de AEM
 * [Abra el formulario Informe de gastos de viaje .](http://localhost:4502/content/dam/formsanddocuments/helpx/travelexpensereport/jcr:content?wcmmode=disabled)
 * Introduzca un par de gastos y los nombres de los 2 gerentes
 * Pulse el botón de envío
