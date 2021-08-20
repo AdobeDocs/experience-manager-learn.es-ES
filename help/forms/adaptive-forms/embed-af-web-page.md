@@ -2,17 +2,13 @@
 title: Incrustación de formularios Forms/HTML5 adaptables en una página web
 description: Pasos de configuración necesarios para incrustar formularios Forms adaptables o HTML5 en una página web que no sea AEM.
 feature: Formularios adaptables
-feature-set: Adaptive Forms
-topics: development
-audience: developer
-doc-type: Tutorial
-activity: implement
+type: Tutorial
 version: 6.4,6.5
-topic: Administración
-role: Admin
+topic: Desarrollo
+role: Developer
 level: Beginner
 kt: 8390
-source-git-commit: 2fc4f748fd3b8f820d1451d08c5fe01d11892029
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 2%
