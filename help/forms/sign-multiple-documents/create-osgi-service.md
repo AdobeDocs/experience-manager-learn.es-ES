@@ -1,21 +1,16 @@
 ---
 title: Creación del servicio OSGi
 description: Creación del servicio OSGi para almacenar los formularios que se van a firmar
-feature: Workflow
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+feature: Flujo de trabajo
 version: 6.4,6.5
 thumbnail: 6886.jpg
 kt: 6886
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '354'
 ht-degree: 1%
 
 ---
@@ -135,7 +130,7 @@ public String getFormData(String guid) {
 
 ## Actualizar estado de firma
 
-La finalización correcta de la ceremonia de firma desencadena un flujo de trabajo de AEM asociado al formulario. El primer paso en el flujo de trabajo es un paso de proceso que actualiza el estado de la base de datos para la fila identificada por la guía y el ID de cliente. También establecemos el valor del elemento firmado en los datos del formulario en Y para indicar que el formulario se ha rellenado y firmado. El formulario adaptable se rellenará con estos datos y el valor del elemento de datos firmado en los datos xml se utilizará para mostrar el mensaje adecuado. El código updateSignatureStatus se invoca desde el paso de proceso personalizado.
+Finalización correcta de los déclencheur de la ceremonia de firma y AEM flujo de trabajo asociado al formulario. El primer paso en el flujo de trabajo es un paso de proceso que actualiza el estado de la base de datos para la fila identificada por la guía y el ID de cliente. También establecemos el valor del elemento firmado en los datos del formulario en Y para indicar que el formulario se ha rellenado y firmado. El formulario adaptable se rellenará con estos datos y el valor del elemento de datos firmado en los datos xml se utilizará para mostrar el mensaje adecuado. El código updateSignatureStatus se invoca desde el paso de proceso personalizado.
 
 
 ```java
