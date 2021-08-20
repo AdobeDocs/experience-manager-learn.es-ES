@@ -1,26 +1,22 @@
 ---
 title: Almacenamiento y recuperación de datos de formulario de la base de datos MySQL
 description: Tutorial de varias partes para guiarle por los pasos necesarios para almacenar y recuperar datos de formulario
-feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+feature: Formularios adaptables
+type: Tutorial
 version: 6.3,6.4,6.5
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '149'
+source-wordcount: '147'
 ht-degree: 2%
 
 ---
 
 # Crear biblioteca de cliente
 
-La biblioteca de cliente de AEM administra todo el código JavaScript del lado del cliente. Para este artículo, he creado un JavaScript simple para recuperar los datos del formulario adaptable mediante la API del puente de guía. Una vez recuperados los datos del formulario adaptable, se realiza la llamada POST al servlet para insertar o actualizar los datos del formulario adaptable en la base de datos. La función getALLUrlParams devuelve los parámetros de la dirección URL. Si el parámetro guid está presente en la URL, entonces necesitamos realizar la operación de actualización, si no es una operación de inserción. El resto de la funcionalidad se gestiona en el código asociado con el evento click de la clase .savebutton.
+AEM biblioteca de cliente administra todo el código JavaScript del lado del cliente. Para este artículo, he creado un JavaScript simple para recuperar los datos del formulario adaptable mediante la API del puente de guía. Una vez recuperados los datos del formulario adaptable, se realiza la llamada del POST al servlet para insertar o actualizar los datos del formulario adaptable en la base de datos. La función getALLUrlParams devuelve los parámetros de la dirección URL. Si el parámetro guid está presente en la URL, entonces necesitamos realizar la operación de actualización, si no es una operación de inserción. El resto de la funcionalidad se gestiona en el código asociado con el evento click de la clase .savebutton.
 
 >[!NOTE]
 >
