@@ -1,33 +1,24 @@
 ---
-title: Captura de los comentarios del flujo de trabajo en el flujo de trabajo de formularios adaptables
-seo-title: Captura de los comentarios del flujo de trabajo en el flujo de trabajo de formularios adaptables
-description: Captura de los comentarios del flujo de trabajo en el flujo de trabajo de AEM
-seo-description: Captura de los comentarios del flujo de trabajo en el flujo de trabajo de AEM
-uuid: df41fc6f-9abf-47b4-a014-b3b9fb58b6f7
-feature: Workflow
-topics: development
-audience: developer
-doc-type: article
-activity: setup
+title: Captura de los comentarios del flujo de trabajo en el Forms Workflow adaptable
+description: Captura de los comentarios del flujo de trabajo en AEM flujo de trabajo
+feature: Flujo de trabajo
 version: 6.3,6.4
-discoiquuid: d5e40650-3b1f-4875-91b2-e22d932b5e7c
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 1%
+source-wordcount: '382'
+ht-degree: 0%
 
 ---
 
 
-# Captura de los comentarios del flujo de trabajo en el flujo de trabajo de formularios adaptables{#capturing-workflow-comments-in-adaptive-forms-workflow}
+# Captura de los comentarios del flujo de trabajo en el Forms Workflow adaptable{#capturing-workflow-comments-in-adaptive-forms-workflow}
 
->[Solo se aplica a AEM Forms 6.4. En AEM Forms 6.5, utilice la función de variables para lograr este caso de uso]
+>[Se aplica solo a AEM Forms 6.4. En AEM Forms 6.5, utilice la función de variables para lograr este caso de uso]
 
-Una solicitud común es la capacidad de incluir los comentarios introducidos por el revisor de tareas en un correo electrónico. En AEM Forms 6.4 no hay ningún mecanismo listo para usar para capturar los comentarios introducidos por el usuario e incluirlos en el correo electrónico.
+Una solicitud común es la capacidad de incluir los comentarios introducidos por el revisor de tareas en un correo electrónico. En AEM Forms 6.4 no hay ningún mecanismo listo para usar para capturar los comentarios introducidos por el usuario e incluir estos comentarios en el correo electrónico.
 
 Para cumplir este requisito, se proporciona un paquete OSGi de muestra que puede utilizarse para capturar comentarios y almacenar estos comentarios como propiedad de metadatos del flujo de trabajo.
 
@@ -50,7 +41,7 @@ Para probar esta capacidad en su sistema, siga los siguientes pasos:
 
 * Rellene los campos del formulario y envíe el formulario
 
-* [Marque la bandeja de entrada de AEM](http://localhost:4502/aem/inbox)
+* [Marque la bandeja de entrada AEM](http://localhost:4502/aem/inbox)
 
 * Abra la tarea desde la bandeja de entrada y envíe el formulario. Introduzca algunos comentarios cuando se le solicite.
 
