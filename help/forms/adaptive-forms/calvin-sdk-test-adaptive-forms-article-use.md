@@ -1,32 +1,26 @@
 ---
-title: 'Uso de pruebas automatizadas con formularios adaptables de AEM '
-seo-title: 'Uso de pruebas automatizadas con formularios adaptables de AEM '
-description: Pruebas automatizadas de formularios adaptables con el SDK de Calvin
-seo-description: Pruebas automatizadas de formularios adaptables con el SDK de Calvin
-feature: Adaptive Forms
-topics: development
-audience: developer
+title: 'Uso de pruebas automatizadas con AEM Forms adaptable '
+description: Pruebas automatizadas de Forms adaptable mediante el SDK de Calvin
+feature: Formularios adaptables
 doc-type: article
 activity: develop
 version: 6.3,6.4,6.5
-uuid: 3ad4e6d6-d3b1-4e4d-9169-847f74ba06be
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '446'
 ht-degree: 1%
 
 ---
 
 
-# Uso de pruebas automatizadas con AEM Adaptive Forms {#using-automated-tests-with-aem-adaptive-forms}
+# Uso de pruebas automatizadas con AEM Forms adaptable {#using-automated-tests-with-aem-adaptive-forms}
 
-Pruebas automatizadas de formularios adaptables con el SDK de Calvin
+Pruebas automatizadas de Forms adaptable mediante el SDK de Calvin
 
-Calvin SDK es una API de utilidad para que los desarrolladores de formularios adaptables prueben los formularios adaptables. El SDK de Calvin se basa en el [marco de pruebas Hobbes.js](https://docs.adobe.com/docs/en/aem/6-3/develop/ref/test-api/index.html). El SDK de Calvin está disponible con AEM Forms 6.3 y posteriores.
+El SDK de Calvin es una API de utilidad para que los desarrolladores de Forms adaptables prueben el Forms adaptable. El SDK de Calvin se basa en el [marco de pruebas Hobbes.js](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html). El SDK de Calvin está disponible a partir de AEM Forms 6.3.
 
 En este tutorial, creará lo siguiente:
 
@@ -36,7 +30,7 @@ En este tutorial, creará lo siguiente:
 
 ## Introducción {#getting-started}
 
-[Descargue e instale los recursos mediante el ](assets/testingadaptiveformsusingcalvinsdk1.zip)Administrador de paquetesEl paquete contiene secuencias de comandos de ejemplo y varios formularios adaptables.Estos formularios adaptables se crean con la versión 6.3 de AEM Forms. Se recomienda crear nuevos formularios específicos de su versión de AEM Forms si está probando esto en AEM Forms 6.4 o superior. Los scripts de ejemplo muestran varias API de SDK de Calvin disponibles para probar los formularios adaptables. Los pasos generales para probar los formularios adaptables de AEM son:
+[Descargue e instale los recursos mediante el ](assets/testingadaptiveformsusingcalvinsdk1.zip)Administrador de paquetesEl paquete contiene secuencias de comandos de ejemplo y varios Forms adaptables.Estos Forms adaptables se crean con la versión 6.3 de AEM Forms. Se recomienda crear nuevos formularios específicos de su versión de AEM Forms si está probando esto en AEM Forms 6.4 o superior. Los scripts de ejemplo muestran varias API de SDK de Calvin disponibles para probar Forms adaptable. Los pasos generales para probar AEM Adaptive Forms son:
 
 * Vaya al formulario que debe probarse
 * Definir el valor del campo
@@ -56,7 +50,7 @@ var mortgageFormTS = new hobs.TestSuite("Mortgage Form Test", {
 El código anterior crea un nuevo grupo de pruebas.
 
 * El nombre de TestSuite en este caso es &#39; `Mortgage Form Test` &#39;.
-* Se proporciona la ruta absoluta de AEM al archivo js que contiene el grupo de pruebas.
+* Se proporciona la ruta absoluta en AEM al archivo js que contiene el grupo de pruebas.
 * El parámetro register cuando se establece en &#39; `true` &#39; &#39;, hace que Test Suite esté disponible en la interfaz de usuario de prueba.
 
 ```javascript
@@ -87,7 +81,7 @@ Se pueden agregar casos de prueba al grupo de pruebas para ejecutarlos en un for
 
 ![calvinsdk](assets/calvinimage.png)
 
-## Pruebe los grupos de prueba de ejemplo {#try-out-the-sample-test-suites}
+## Pruebe los grupos de pruebas de ejemplo {#try-out-the-sample-test-suites}
 
 Como parte del paquete de muestra, hay tres grupos de pruebas adicionales. Puede probarlos incluyendo los archivos adecuados en el archivo js.txt de la biblioteca de clientes como se muestra a continuación:
 
