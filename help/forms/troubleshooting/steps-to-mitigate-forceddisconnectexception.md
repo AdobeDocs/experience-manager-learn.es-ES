@@ -1,18 +1,16 @@
 ---
 title: Obteniendo ForcedDesconecteException. Posibles causas y pasos para mitigar el problema.
-description: 'Pasos para resolver la excepción "ForcedDesconecteException - Este miembro se ha forzado a salir del sistema distribuido" . '
+description: Pasos para resolver la excepción "ForcedDesconecteException - Este miembro ha sido forzado a salir del sistema distribuido".
 type: Troubleshooting
-product: forms
 role: Admin
 level: Intermediate
 version: 6.5
-feature: Base JEE
 topic: 'Administración '
 index: y
-source-git-commit: 65a40826d3be322673e116d98124c3cbfb1d6eb4
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '45'
-ht-degree: 6%
+source-wordcount: '43'
+ht-degree: 2%
 
 ---
 
