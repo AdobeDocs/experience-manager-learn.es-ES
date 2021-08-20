@@ -1,20 +1,14 @@
 ---
 title: Adición de elementos al componente de grupo de opciones
-seo-title: Adición de elementos al componente de grupo de opciones
 description: Agregar elementos al componente de grupo de opciones de forma dinámica
-seo-description: Agregar elementos al componente de grupo de opciones de forma dinámica
 feature: Formularios adaptables
-topics: authoring
-audience: developer
-doc-type: tutorial
-activity: understand
 version: 6.5
 topic: Desarrollo
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '515'
 ht-degree: 1%
 
 ---
@@ -96,7 +90,7 @@ Para probar esto en su sistema:
 **Uso del editor visual para añadir elementos**
 
 * [Descargar los recursos](assets/usingthevisualeditor.zip)
-* Instale Tomcat si todavía no lo tiene. [Las instrucciones para instalar tomcat están disponibles aquí](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html)
+* Instale Tomcat si todavía no lo tiene. [Las instrucciones para instalar tomcat están disponibles aquí](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html)
 * [Implementar el archivo SampleRest.war en Tomcat](https://forms.enablementadobe.com/content/DemoServerBundles/SampleRest.war)
 * [Abrir Forms Y Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Haga clic en &quot;Crear&quot; | Cargar archivo&quot; y cargar el archivo que descargó en el paso anterior
