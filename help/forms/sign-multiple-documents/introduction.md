@@ -1,21 +1,16 @@
 ---
 title: Introducción
 description: Demostración en vídeo del caso de uso de varios formularios de signo
-feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+feature: Formularios adaptables
 version: 6.4,6.5
 thumbnail: 330165.jpg
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '124'
-ht-degree: 5%
+source-wordcount: '122'
+ht-degree: 4%
 
 ---
 
@@ -33,6 +28,6 @@ Este curso supone lo siguiente:
 * Tiene acceso al servidor AEM 6.4 o 6.5 con Forms Add en el paquete instalado y configurado
 * AEM configurado con Adobe Sign
 * Acceso al servidor SMTP
-* Algunas experiencias con AEM/AEM Forms
+* Alguna experiencia con AEM/AEM Forms
 
 Al seguir este tutorial e instalar los recursos proporcionados, tendrá una solución práctica para firmar varios formularios.
