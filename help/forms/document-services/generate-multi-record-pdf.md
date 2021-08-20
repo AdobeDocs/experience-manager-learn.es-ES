@@ -2,15 +2,11 @@
 title: Generación de varios archivos pdf a partir de un archivo de datos
 description: OutputService proporciona varios métodos para crear documentos utilizando un diseño de formulario y datos para combinarlos con el diseño de formulario. Aprenda a generar varios pdf a partir de un xml grande que contenga varios registros individuales.
 feature: Servicio de salida
-topics: development
-audience: developer
-doc-type: article
-activity: implement
 version: 6.4,6.5
 topic: Desarrollo
 role: Developer
 level: Experienced
-source-git-commit: fb6c21a9a88b5ebcbfb14213182a9b8cba6fe6ae
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 1%
