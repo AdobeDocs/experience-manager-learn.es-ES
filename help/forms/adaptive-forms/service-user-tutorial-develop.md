@@ -1,22 +1,13 @@
 ---
 title: Desarrollo con usuarios de servicios en AEM Forms
-seo-title: Desarrollo con usuarios de servicios en AEM Forms
 description: Este artículo lo acompaña durante el proceso de creación de un usuario de servicio en AEM Forms
-seo-description: Este artículo lo acompaña durante el proceso de creación de un usuario de servicio en AEM Forms
-uuid: 996f30df-3fc5-4232-a104-b92e1bee4713
-feature: Adaptive Forms
-topics: development,administration
-audience: implementer,developer
-doc-type: article
-activity: setup
-discoiquuid: 65bd4695-e110-48ba-80ec-2d36bc53ead2
-topic: Development
+feature: Formularios adaptables
+topic: Desarrollo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '427'
 ht-degree: 0%
 
 ---
@@ -26,7 +17,7 @@ ht-degree: 0%
 
 Este artículo lo acompaña durante el proceso de creación de un usuario de servicio en AEM Forms
 
-En versiones anteriores de Adobe Experience Manager (AEM), la resolución de recursos administrativos se utilizaba para el procesamiento back-end que requería acceso al repositorio. El uso de la resolución de recursos administrativos está en desuso en AEM 6.3. En su lugar, se utiliza un usuario del sistema con permisos específicos en el repositorio.
+En versiones anteriores de Adobe Experience Manager (AEM), la resolución de recursos administrativos se utilizaba para el procesamiento back-end que requería acceso al repositorio. El uso de la resolución de recursos administrativos está obsoleto en AEM 6.3. En su lugar, se utiliza un usuario del sistema con permisos específicos en el repositorio.
 
 Este artículo explica la creación de un usuario del sistema y la configuración de las propiedades del asignador de usuarios.
 
