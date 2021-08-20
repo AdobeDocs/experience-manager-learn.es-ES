@@ -1,32 +1,22 @@
 ---
-title: Servicio de relleno previo en formularios adaptables
-seo-title: Servicio de relleno previo en formularios adaptables
+title: Servicio de precarga en Forms adaptable
 description: Rellenar previamente formularios adaptables recuperando datos de orígenes de datos back-end.
-seo-description: Rellenar previamente formularios adaptables recuperando datos de orígenes de datos back-end.
-sub-product: formularios
-feature: Adaptive Forms
-topics: integrations
-audience: developer
-doc-type: article
-activity: implement
+feature: Formularios adaptables
 version: 6.4,6.5
-uuid: 26a8cba3-7921-4cbb-a182-216064e98054
-discoiquuid: 936ea5e9-f5f0-496a-9188-1a8ffd235ee5
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '465'
 ht-degree: 1%
 
 ---
 
 
-# Uso del servicio de relleno previo en formularios adaptables
+# Uso del servicio Prefill en Forms adaptable
 
-Puede rellenar previamente los campos de un formulario adaptable utilizando los datos existentes. Cuando un usuario abre un formulario, los valores de esos campos se rellenan previamente. Existen varias formas de rellenar previamente los campos de formularios adaptables. En este artículo, analizaremos el prefijo del formulario adaptable mediante el servicio de cumplimentación previa de AEM Forms.
+Puede rellenar previamente los campos de un formulario adaptable utilizando los datos existentes. Cuando un usuario abre un formulario, los valores de esos campos se rellenan previamente. Existen varias formas de rellenar previamente los campos de formularios adaptables. En este artículo, analizaremos el prefiriendo formularios adaptables con el servicio de prellenado de AEM Forms.
 
 Para obtener más información sobre los distintos métodos para rellenar previamente formularios adaptables, [siga esta documentación](https://helpx.adobe.com/experience-manager/6-4/forms/using/prepopulate-adaptive-form-fields.html#AEMFormsprefillservice)
 
@@ -34,7 +24,7 @@ Para rellenar previamente un formulario adaptable mediante el servicio de rellen
 
 En el siguiente fragmento de código tenemos una clase que implementa la interfaz DataProvider. Obtenemos acceso al usuario que ha iniciado sesión y, a continuación, recuperamos la información de perfil del usuario que ha iniciado sesión. A continuación, creamos un documento XML con un elemento de nodo raíz llamado &quot;data&quot; y anexamos los elementos adecuados a este nodo de datos. Una vez construido el documento XML, se devuelve el flujo de entrada del documento XML.
 
-Esta clase se integra en el paquete OSGi y se implementa en AEM. Una vez implementado el paquete, este servicio de rellenado previo está disponible para ser utilizado como servicio de rellenado previo del formulario adaptable.
+A continuación, esta clase se convierte en un paquete OSGi y se implementa en AEM. Una vez implementado el paquete, este servicio de rellenado previo está disponible para ser utilizado como servicio de rellenado previo del formulario adaptable.
 
 ```java
 public class PrefillAdaptiveForm implements DataProvider {
@@ -92,7 +82,7 @@ Para probar esta capacidad en el servidor, realice lo siguiente
 
 * [Descargue y extraiga el contenido del archivo zip en su equipo](assets/prefillservice.zip)
 * Asegúrese de que la información del perfil del usuario [usuario](http://localhost:4502/libs/granite/security/content/useradmin) que ha iniciado sesión se rellena por completo. Este es un requisito para que funcione la muestra. El ejemplo no tiene ninguna comprobación de errores para comprobar si faltan propiedades de perfil de usuario.
-* Implemente el paquete utilizando la [consola web de AEM](http://localhost:4502/system/console/bundles)
+* Implemente el paquete utilizando la [AEM consola web](http://localhost:4502/system/console/bundles)
 * Creación de formularios adaptables mediante el XSD
 * Asocie &quot;Servicio de prerellenado de formularios personalizados de Aem&quot; como servicio de precumplimentación del formulario adaptable
 * Arrastrar y soltar elementos de esquema en el formulario
