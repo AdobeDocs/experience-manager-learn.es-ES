@@ -1,22 +1,18 @@
 ---
 title: Implementación del ejemplo
 description: Obtener caso de uso en ejecución en la instancia local de AEM Forms
-feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+feature: Formularios adaptables
+type: Tutorial
 version: 6.4,6.5
 kt: 6602
 thumbnail: 6602.jpg
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 2%
+source-wordcount: '371'
+ht-degree: 1%
 
 ---
 
@@ -27,7 +23,7 @@ ht-degree: 2%
 Para que este caso de uso funcione en su sistema, siga las siguientes instrucciones:
 
 >[!NOTE]
->Se da por hecho que se está ejecutando AEM Forms en el puerto 4502.
+>Se da por hecho que está ejecutando AEM Forms en el puerto 4502.
 
 
 ## Crear base de datos
@@ -49,7 +45,7 @@ Cree una cuenta de desarrollador con [Nexmo](https://dashboard.nexmo.com/) para 
 ## Implementar los siguientes paquetes OSGi
 
 Implemente el paquete que tiene el código [para almacenar y recuperar datos de la base de datos](assets/FetchPartiallyCompletedForm.PartiallyCompletedForm.core-1.0-SNAPSHOT.jar)
-Implemente el [DevelopingWithServiceUser Bundle](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar).
+Implemente el [DevelopingWithServiceUser Bundle](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar).
 
 ## Implementar la biblioteca de cliente
 
@@ -57,11 +53,11 @@ El ejemplo utiliza 2 bibliotecas de cliente. Importe estas [bibliotecas de clien
 
 ## Importación de la plantilla de formulario adaptable personalizada
 
-Los formularios de ejemplo utilizados en esta demostración se basan en una plantilla personalizada. Importar la [plantilla personalizada en AEM](assets/custom-template-with-page-component.zip)
+Los formularios de ejemplo utilizados en esta demostración se basan en una plantilla personalizada. Importar la plantilla personalizada [en AEM](assets/custom-template-with-page-component.zip)
 
 ## Importación de formularios adaptables de ejemplo
 
-Los 2 formularios que componen esta muestra deben importarse en AEM. Los formularios de ejemplo se pueden [descargar desde aquí](assets/sample-forms.zip)
+Los dos formularios que componen esta muestra deben importarse en AEM. Los formularios de ejemplo se pueden [descargar desde aquí](assets/sample-forms.zip)
 
 Abra [MyAccountForm](http://localhost:4502/editor.html/content/forms/af/myaccountform.html) en modo de edición. Especifique los valores Clave de API y Secreto de API en los campos correspondientes del formulario adaptable.
 
