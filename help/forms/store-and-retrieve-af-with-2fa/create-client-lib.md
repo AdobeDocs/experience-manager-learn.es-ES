@@ -1,28 +1,24 @@
 ---
 title: Creación de bibliotecas de cliente
 description: Crear clientlibrary para gestionar el evento click del botón "Guardar y salir"
-feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+feature: Formularios adaptables
+type: Tutorial
 version: 6.4,6.5
 kt: 6597
 thumbnail: 6597.pg
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 8%
+source-wordcount: '142'
+ht-degree: 2%
 
 ---
 
 # Crear biblioteca de cliente
 
-Cree [client lib](https://docs.adobe.com/content/help/es-ES/experience-manager-65/developing/introduction/clientlibs.html) que incluirá el código para invocar el método `doAjaxSubmitWithFileAttachment` de la API `guideBridge` en el evento click del botón identificado por la clase CSS **savebutton**.  Pasamos los datos del formulario adaptable, `fileMap` y `mobileNumber` al punto final que escucha en `**/bin/storeafdatawithattachments`
+Cree [client lib](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html) que incluirá el código para invocar el método `doAjaxSubmitWithFileAttachment` de la API `guideBridge` en el evento click del botón identificado por la clase CSS **savebutton**.  Pasamos los datos del formulario adaptable, `fileMap` y `mobileNumber` al punto final que escucha en `**/bin/storeafdatawithattachments`
 
 Una vez guardados los datos del formulario, se genera un identificador de aplicación único que se presenta al usuario en un cuadro de diálogo. Al descartar el cuadro de diálogo, el usuario recibe el formulario que le permite recuperar el formulario adaptable guardado con el identificador de aplicación único.
 
