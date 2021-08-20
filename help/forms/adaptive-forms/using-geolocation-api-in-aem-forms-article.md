@@ -1,35 +1,26 @@
 ---
-title: Uso de las API de geolocalización en formularios adaptables
-seo-title: Uso de las API de geolocalización en formularios adaptables
-description: Rellene los campos de dirección del formulario con la api de geolocalización
-seo-description: Rellene los campos de dirección del formulario con la api de geolocalización
-uuid: 5a461659-6873-4ea1-9f37-8296e5a9d895
-feature: Adaptive Forms
-topics: integrations
-audience: developer
-doc-type: article
-activity: develop
+title: Uso de las API de geolocalización en Forms adaptable
+description: Rellene los campos de dirección del formulario con la API de geolocalización
+feature: Formularios adaptables
 version: 6.3,6.4,6.5
-discoiquuid: 3400251b-aee0-4d69-994b-e1643fabc868
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '417'
 ht-degree: 1%
 
 ---
 
 
-# Uso de las API de geolocalización en formularios adaptables{#using-geolocation-api-s-in-adaptive-forms}
+# Uso de las API de geolocalización en Forms adaptable{#using-geolocation-api-s-in-adaptive-forms}
 
-Visite la página [AEM Forms samples](https://forms.enablementadobe.com/content/samples/samples.html?query=0) para ver un vínculo a una demostración en directo de esta capacidad.
+Visite la página [AEM Forms samples](https://forms.enablementadobe.com/content/samples/samples.html?query=0#collapse1) para ver un vínculo a una demostración en directo de esta capacidad.
 
 En este artículo analizaremos el uso de la API de geolocalización de Google para rellenar los campos de un formulario adaptable. Este caso de uso se utiliza comúnmente cuando desea rellenar los campos de dirección actuales en un formulario.
 
-Se siguieron los siguientes pasos para utilizar la API de geolocalización en formularios adaptables.
+Se siguieron los siguientes pasos para utilizar la API de geolocalización en Forms adaptable.
 
 1. [Obtenga ](https://developers.google.com/maps/documentation/javascript/get-api-key) clave de API de Google para utilizar la plataforma Google Maps. Puede obtener una clave de prueba que sea válida durante 1 año.
 
