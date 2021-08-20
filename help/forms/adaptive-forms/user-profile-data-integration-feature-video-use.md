@@ -1,43 +1,34 @@
 ---
-title: Uso de la integración de datos de perfil de usuario con AEM Forms
-seo-title: Uso de la integración de datos de perfil de usuario con AEM Forms
-description: Integración de la información de perfil de usuario de AEM con los formularios adaptables
-seo-description: Integración de la información de perfil de usuario de AEM con los formularios adaptables
-uuid: c8cfe575-8732-4d8b-99de-fb09e7c2497d
-feature: Adaptive Forms
-topics: integrations
-audience: developer
-doc-type: feature video
-activity: setup
+title: Uso de la integración de datos del perfil de usuario con AEM Forms
+description: Integración de AEM información de perfil de usuario con Adaptive Forms
+feature: Formularios adaptables
 version: 6.3,6.4,6.5
-discoiquuid: ca01dfce-abab-4bc1-9c5e-3bafdbed4836
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '118'
+source-wordcount: '100'
 ht-degree: 3%
 
 ---
 
 
-# Uso de la integración de datos de perfil de usuario con AEM Forms{#using-user-profile-data-integration-with-aem-forms}
+# Uso de la integración de datos del perfil de usuario con AEM Forms{#using-user-profile-data-integration-with-aem-forms}
 
-La integración de datos de AEM Forms le permite configurar y conectar a diferentes fuentes de datos. Los siguientes son compatibles de serie. Sin embargo, con poca personalización, también puede integrar otras fuentes de datos.
+La integración de datos de AEM Forms le permite configurar y conectarse a fuentes de datos diferentes. Los siguientes son compatibles de serie. Sin embargo, con poca personalización, también puede integrar otras fuentes de datos.
 
 Bases de datos relacionales: MySQL, Microsoft SQL Server, IBM DB2 y Oracle RDBMS
 
-1. Perfil de usuario de AEM
+1. AEM perfil de usuario
 1. Servicios web RESTful
 1. Servicios web basados en SOAP
 1. Servicios OData
-Este artículo resaltará la integración de la información de perfil de usuario de AEM con los formularios adaptables.
+Este artículo resaltará la integración de AEM información de perfil de usuario con Adaptive Forms.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17432/?quality=9&learn=on)
 
 >[!NOTE]
 >
->Esta función solo está disponible con AEM 6.3 y posteriores.
+>Esta función solo está disponible a partir de AEM 6.3.
 
