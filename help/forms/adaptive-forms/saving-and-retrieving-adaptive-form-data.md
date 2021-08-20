@@ -1,18 +1,14 @@
 ---
 title: Guardar y recuperar datos de formulario adaptable
-seo-title: Guardar y recuperar datos de formulario adaptable
 description: Guardar y recuperar datos de formulario adaptables de la base de datos. Esta capacidad permite a los usuarios que rellenen el formulario guardar el formulario y seguir rellenándolo en una fecha posterior.
-seo-description: Guardar y recuperar datos de formulario adaptables de la base de datos. Esta capacidad permite a los usuarios que rellenen el formulario guardar el formulario y seguir rellenándolo en una fecha posterior.
-feature: adaptive-forms
-topics: developing
-audience: developer,implementer
-doc-type: article
-activity: setup
+feature: Formularios adaptables
+topic: Desarrollo
+role: Developer
+type: Tutorial
 version: 6.3,6.4,6.5
-translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '615'
 ht-degree: 0%
 
 ---
@@ -20,31 +16,31 @@ ht-degree: 0%
 
 # Guardar y recuperar datos de formulario adaptable
 
-Este artículo le guiará por los pasos necesarios para guardar y recuperar datos de formulario adaptables de la base de datos. La base de datos MySQL se utilizó para almacenar los datos del formulario adaptable. En un nivel superior, los pasos siguientes son los pasos para lograr el caso de uso:
+Este artículo le guiará por los pasos necesarios para guardar y recuperar los datos del formulario adaptable de la base de datos. La base de datos MySQL se utilizó para almacenar los datos del formulario adaptable. En un nivel superior, los pasos siguientes son los pasos para lograr el caso de uso:
 
-* [Configurar fuente de datos](#Configure-Data-Source)
+* [Configurar fuentes de datos](#Configure-Data-Source)
 * [Crear Servlet para escribir datos en la base de datos](#create-servlet)
-* [Crear un servicio OSGI para recuperar datos almacenados](#create-osgi-service)
+* [Creación del servicio OSGI para recuperar datos almacenados](#create-osgi-service)
 * [Crear biblioteca de cliente](#create-client-library)
 * [Crear plantilla de formulario adaptable y componente de página](#form-template-and-page-component)
 * [Demostración de capacidad](#capability-demo)
 * [Implementar en el servidor](#deploy-on-your-server)
 
-## Configurar fuente de datos {#Configure-Data-Source}
+## Configurar fuentes de datos {#Configure-Data-Source}
 
-Apache Sling Connection Pooled DataSource está configurado para apuntar a la base de datos que se va a utilizar para almacenar los datos del formulario adaptable. La siguiente captura de pantalla muestra la configuración de mi instancia. Se pueden copiar y pegar las siguientes propiedades
+El origen de datos agrupado de la conexión Apache Sling está configurado para señalar a la base de datos que se utilizará para almacenar los datos del formulario adaptable. La siguiente captura de pantalla muestra la configuración de mi instancia. Las siguientes propiedades se pueden copiar y pegar
 
-* Nombre de la fuente de datos:aemformstutorial: es el nombre que se utiliza en mi código.
+* Nombre de la fuente de datos:aemformstutorial: es el nombre que se usa en mi código.
 
-* Clase de controlador JDBC:com.mysql.jdbc.Driver
+* Controlador JDBC Clase:com.mysql.jdbc.Driver
 
 * URL de conexión JDBC:jdbc:mysql://localhost:3306/aemformstutorial
 
-![connectionpool](assets/storingdata.PNG)
+![connection pool](assets/storingdata.PNG)
 
 ### Crear servlet {#create-servlet}
 
-El siguiente es el código del servlet que inserta/actualiza los datos del formulario adaptable en la base de datos. El DataSource agrupado de conexión Apache Sling se configura con el AEM ConfigMgr y se hace referencia a lo mismo en la línea 26. El resto del código es bastante sencillo. El código inserta una fila nueva en la base de datos o actualiza una fila existente. Los datos almacenados del formulario adaptable están asociados a un GUID. A continuación, se utiliza el mismo GUID para actualizar los datos del formulario.
+El siguiente es el código del servlet que inserta/actualiza los datos del formulario adaptable en la base de datos. La fuente de datos agrupada de la conexión Apache Sling se configura con el AEM ConfigMgr y se hace referencia a la misma en la línea 26. El resto del código es bastante sencillo. El código inserta una fila nueva en la base de datos o actualiza una fila existente. Los datos almacenados del formulario adaptable están asociados a un GUID. A continuación, se utiliza el mismo GUID para actualizar los datos del formulario.
 
 ```java
 package com.techmarketing.core.servlets;
@@ -212,9 +208,9 @@ public class StoreDataInDB extends SlingAllMethodsServlet {
 }
 ```
 
-## Crear servicio OSGI para recuperar datos {#create-osgi-service}
+## Crear un servicio OSGI para recuperar datos {#create-osgi-service}
 
-El siguiente código se escribió para recuperar los datos almacenados del formulario adaptable. Se utiliza una consulta sencilla para recuperar los datos del formulario adaptable asociados a un GUID determinado. A continuación, los datos recuperados se devuelven a la aplicación que realiza la llamada. La misma fuente de datos creada en el primer paso al que se hace referencia en este código.
+Se escribió el siguiente código para recuperar los datos almacenados del formulario adaptable. Se utiliza una consulta simple para recuperar los datos del formulario adaptable asociados a un GUID determinado. A continuación, los datos recuperados se devuelven a la aplicación que realiza la llamada. La misma fuente de datos creada en el primer paso al que se hace referencia en este código.
 
 ```java
 package com.techmarketing.core.impl;
@@ -279,7 +275,7 @@ public class AemformWithDB implements AemFormsAndDB {
 
 ## Crear biblioteca de cliente {#create-client-library}
 
-AEM biblioteca de clientes administra todo el código javascript del lado del cliente. Para este artículo, he creado un javascript sencillo para recuperar los datos del formulario adaptable mediante la API de puente de guía. Una vez recuperados los datos del formulario adaptable, el POST llama al servlet para insertar o actualizar los datos del formulario adaptable en la base de datos. La función getALLUrlParams devuelve los parámetros de la dirección URL. Se utiliza cuando se desea actualizar los datos. El resto de la funcionalidad se gestiona en el código asociado con el evento click de la clase .savebutton. Si el parámetro guid está presente en la dirección URL, debemos realizar la operación de actualización, si no es una operación de inserción.
+AEM biblioteca de cliente administra todo el código javascript del lado del cliente. Para este artículo, he creado un javascript sencillo para recuperar los datos del formulario adaptable mediante la API del puente de guía. Una vez recuperados los datos del formulario adaptable, se realiza la llamada del POST al servlet para insertar o actualizar los datos del formulario adaptable en la base de datos. La función getALLUrlParams devuelve los parámetros de la dirección URL. Se utiliza cuando desea actualizar los datos. El resto de la funcionalidad se gestiona en el código asociado con el evento click de la clase .savebutton . Si el parámetro guid está presente en la URL, entonces necesitamos realizar la operación de actualización, si no es una operación de inserción.
 
 ```javascript
 function getAllUrlParams(url) {
@@ -416,15 +412,15 @@ $(document).ready(function()
 
 #### Implementar en el servidor {#deploy-on-your-server}
 
-Para probar esta capacidad en la instancia de AEM Forms, siga los pasos siguientes
+Para probar esta capacidad en su instancia de AEM Forms, siga los siguientes pasos
 
 * [Descargue y descomprima DemoAssets.zip en su sistema local](assets/demoassets.zip)
-* Implemente y inicio los paquetes techMarkingdemos.jar y mysqldriver.jar usando la consola web Felix.
-*** Importe aemformstutorial.sql con MYSQL Workbench. Esto creará el esquema y las tablas necesarios en la base de datos
-* Importe StoreAndRetrieve.zip con AEM administrador de paquetes. Este paquete contiene la plantilla Formulario adaptable, la biblioteca de cliente de componentes de página y la configuración de origen de datos y formulario adaptable de ejemplo.
-* Inicie sesión en configMgr. Busque &quot;Apache Sling Connection Pooled DataSource. Abra la entrada del origen de datos asociada con un tutorial de datos e introduzca el nombre de usuario y la contraseña específicos de la instancia de base de datos.
+* Implemente e inicie los paquetes techmarketingdemos.jar y mysqldriver.jar usando la consola web Felix.
+*** Importe aemformstutorial.sql usando MYSQL Workbench. Esto creará el esquema y las tablas necesarios en la base de datos
+* Importe StoreAndRetrieve.zip mediante AEM administrador de paquetes. Este paquete contiene la plantilla de formulario adaptable, la biblioteca de cliente de componentes de página y la configuración de origen de datos y formulario adaptable de ejemplo.
+* Inicie sesión en configMgr. Busque Fuente de datos agrupada de la conexión Apache Sling. Abra la entrada de fuente de datos asociada a un tutorial e introduzca el nombre de usuario y la contraseña específicos de la instancia de base de datos.
 * Abrir el formulario adaptable
 * Rellene algunos detalles y haga clic en el botón &quot;Guardar y continuar más tarde&quot;
-* Debería recuperar una dirección URL con un GUID.
-* Copie la dirección URL y péguela en una nueva ficha del explorador
+* Debería recuperar una URL con un GUID en ella.
+* Copie la dirección URL y péguela en una nueva pestaña del explorador
 * El formulario adaptable debe rellenarse con los datos del paso anterior**
