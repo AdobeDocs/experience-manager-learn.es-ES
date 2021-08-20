@@ -1,34 +1,25 @@
 ---
 title: Rellenar previamente un formulario adaptable mediante un perfil ACS
-seo-title: Rellenar previamente un formulario adaptable mediante un perfil ACS
-description: Relleno previo de formularios adaptables mediante el perfil ACS
-seo-description: Relleno previo de formularios adaptables mediante el perfil ACS
-uuid: 9bff6f61-96e9-40d4-a977-a80008cfbeee
-feature: Adaptive Forms, Form Data Model
-topics: integrations
-audience: developer
-doc-type: tutorial
-activity: setup
+description: Relleno previo de Forms adaptable mediante el perfil ACS
+feature: Forms adaptable, Modelo de datos de formulario
 version: 6.3,6.4,6.5
-discoiquuid: a2ffcb84-4dd8-45e5-8e2c-0da74202851b
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '339'
 ht-degree: 1%
 
 ---
 
-# Rellenar previamente un formulario adaptable mediante el perfil ACS {#prefilling-adaptive-form-using-acs-profile}
+# Rellenar previamente un formulario adaptable mediante un perfil ACS {#prefilling-adaptive-form-using-acs-profile}
 
 En esta parte, rellenaremos previamente el formulario adaptable con información de perfil recuperada de ACS. AEM Forms tiene esta potente capacidad para rellenar previamente formularios adaptables.
 
 Para obtener más información sobre cómo rellenar previamente formularios adaptables, lea este [tutorial](https://helpx.adobe.com/experience-manager/kt/forms/using/prefill-service-adaptive-forms-article-use.html).
 
-Para rellenar previamente el formulario adaptable recuperando datos de ACS, supondremos que hay un perfil en ACS que tiene el mismo correo electrónico que el usuario de AEM que ha iniciado sesión. Por ejemplo, si el ID de correo electrónico de la persona que ha iniciado sesión en AEM es csimms@adobe.com, esperamos encontrar un perfil en ACS cuyo correo electrónico es csimms@adobe.com.
+Para rellenar previamente el formulario adaptable recuperando datos de ACS, supondremos que hay un perfil en ACS que tiene el mismo correo electrónico que el usuario que ha iniciado sesión AEM. Por ejemplo, si el id. de correo electrónico de la persona que ha iniciado sesión en AEM es csimms@adobe.com, esperamos encontrar un perfil en ACS cuyo correo electrónico es csimms@adobe.com.
 
 Se necesitan los siguientes pasos para recuperar información de perfil de ACS mediante la API de REST
 
@@ -36,7 +27,7 @@ Se necesitan los siguientes pasos para recuperar información de perfil de ACS m
 * Intercambiar JWT por token de acceso
 * Realice una llamada REST a ACS y recupere el perfil por correo electrónico
 * Creación de un documento XML con la información de perfil
-* Devolver InputStream del documento XML que consumirán AEM Forms
+* Devolver InputStream del documento XML que va a consumir AEM Forms
 
 ![prefillservice](assets/prefillserviceaf.gif)
 
@@ -44,7 +35,7 @@ Asociación del servicio de cumplimentación previa con el formulario adaptable
 
 El siguiente es el código para recuperar y devolver información de perfil desde ACS.
 
-En la línea 68, se obtiene el ID de correo electrónico del usuario de AEM. Para obtener los detalles del perfil, realice una llamada REST a Adobe Campaign Standard. A partir de los detalles de perfil recuperados, el documento XML se construye de manera que AEM Forms lo entienda. AEM Forms devuelve el flujo de entrada de este documento para su consumo.
+En la línea 68 se obtiene el id. de correo electrónico del usuario AEM. Los detalles del perfil se recuperan realizando una llamada de REST a Adobe Campaign Standard. A partir de los detalles de perfil recuperados, el documento XML se construye de manera que AEM Forms entienda. AEM Forms devuelve el flujo de entrada de este documento para su consumo.
 
 ```java
 package aemforms.campaign.core;
@@ -239,7 +230,7 @@ return "Pre Fill Forms Using Campaign Profile";
 Para que esto funcione en su sistema, siga las siguientes instrucciones:
 
 * [Asegúrese de haber seguido los pasos descritos aquí](aem-forms-with-campaign-standard-getting-started-tutorial.md)
-* [Importar un formulario adaptable de ejemplo en AEM mediante el administrador de paquetes](assets/pre-fill-af-from-campaign.zip)
-* Asegúrese de iniciar sesión en AEM con un usuario cuyo ID de correo electrónico comparte un perfil en Adobe Campaign. Por ejemplo, si el ID de correo electrónico del usuario de AEM es johndoe@adobe.com, debe tener un perfil en ACS cuyo correo electrónico sea johndoe@adobe.com.
+* [Importar formulario adaptable de ejemplo en AEM mediante el administrador de paquetes](assets/pre-fill-af-from-campaign.zip)
+* Asegúrese de iniciar sesión en AEM con un usuario cuyo ID de correo electrónico comparte un perfil en Adobe Campaign. Por ejemplo, si el ID de correo electrónico del usuario AEM es johndoe@adobe.com, debe tener un perfil en ACS cuyo correo electrónico sea johndoe@adobe.com.
 * [Obtener una vista previa del formulario](http://localhost:4502/content/dam/formsanddocuments/prefillfromcampaign/jcr:content?wcmmode=disabled).
 
