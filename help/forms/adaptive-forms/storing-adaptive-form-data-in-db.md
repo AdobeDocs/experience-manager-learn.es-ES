@@ -1,21 +1,14 @@
 ---
 title: Almacenamiento de datos de formulario adaptable
-seo-title: Almacenamiento de datos de formulario adaptable
-description: Almacenamiento de datos de formulario adaptables en DataBase como parte de su flujo de trabajo de AEM
-seo-description: Almacenamiento de datos de formulario adaptables en DataBase como parte de su flujo de trabajo de AEM
-feature: Adaptive Forms,Workflow,Form Data Model
-topics: integrations
-audience: implementer
-doc-type: article
-activity: setup
+description: Almacenamiento de datos de formulario adaptables en DataBase como parte del flujo de trabajo AEM
+feature: Forms adaptable, Modelo de datos de formulario
 version: 6.3,6.4,6.5
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
@@ -23,8 +16,8 @@ ht-degree: 0%
 
 # Almacenamiento de envíos de formularios adaptables en la base de datos
 
-Existen varias formas de almacenar los datos de formulario enviados en la base de datos que elija. Se puede utilizar una fuente de datos JDBC para almacenar directamente los datos en la base de datos. Se puede escribir un paquete OSGI personalizado para almacenar los datos en la base de datos. Este artículo utiliza el paso de proceso personalizado en el flujo de trabajo de AEM para almacenar los datos.
-El caso de uso es activar un flujo de trabajo de AEM en un envío de formulario adaptable y un paso en el flujo de trabajo almacena los datos enviados en la base de datos.
+Existen varias formas de almacenar los datos de formulario enviados en la base de datos que elija. Se puede utilizar una fuente de datos JDBC para almacenar directamente los datos en la base de datos. Se puede escribir un paquete OSGI personalizado para almacenar los datos en la base de datos. Este artículo utiliza el paso de proceso personalizado en AEM flujo de trabajo para almacenar los datos.
+El caso de uso es el déclencheur de un flujo de trabajo AEM en un envío de formulario adaptable y un paso en el flujo de trabajo almacena los datos enviados en la base de datos.
 
 **Siga los pasos que se indican a continuación para que esto funcione en su sistema**
 
@@ -49,7 +42,7 @@ El caso de uso es activar un flujo de trabajo de AEM en un envío de formulario 
 
 * Crear un formulario adaptable.
 
-* Asocie el formulario adaptable con el flujo de trabajo de AEM (StoreAFValuesinDB) como se muestra en la captura de pantalla siguiente.
+* Asocie el formulario adaptable a AEM flujo de trabajo (StoreAFValuesinDB) como se muestra en la captura de pantalla siguiente.
 
 * Asegúrese de especificar &quot;data.xml&quot; en la ruta del archivo de datos como se muestra en la captura de pantalla siguiente
 
