@@ -1,42 +1,33 @@
 ---
-title: Explicación de la prueba automatizada de formularios con AEM Forms
-seo-title: Explicación de la prueba automatizada de formularios con AEM Forms
-description: AEM 6.3 Forms presenta la capacidad de permitir que los usuarios creen casos de prueba en AEM para formularios adaptables mediante el SDK de Calvin integrado en el marco de hobbes.js
-seo-description: AEM 6.3 Forms presenta la capacidad de permitir que los usuarios creen casos de prueba en AEM para formularios adaptables mediante el SDK de Calvin integrado en el marco de hobbes.js
-feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: technical video
-activity: develop
+title: Explicación de las pruebas automatizadas de Forms con AEM Forms
+description: AEM 6.3 Forms presenta la capacidad de permitir que los usuarios creen casos de prueba en AEM para Forms adaptable mediante el SDK de Calvin integrado en el marco de hobbes.js
+feature: Formularios adaptables
 version: 6.3,6.4,6.5
-uuid: 3cea2785-28f0-42c1-9935-3e876c28214a
-discoiquuid: a78936b4-e817-41a0-86cc-f9ac2d6dd08f
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '135'
-ht-degree: 2%
+source-wordcount: '98'
+ht-degree: 3%
 
 ---
 
 
-# Explicación de la prueba automatizada de formularios con AEM Forms{#understanding-automated-forms-testing-with-aem-forms}
+# Explicación de las pruebas automatizadas de Forms con AEM Forms{#understanding-automated-forms-testing-with-aem-forms}
 
-AEM 6.3 Forms presenta la capacidad de permitir que los usuarios creen casos de prueba en AEM para formularios adaptables mediante el SDK de Calvin integrado en el marco de hobbes.js.
+AEM 6.3 Forms presenta la capacidad de permitir que los usuarios creen casos de prueba en AEM para Forms adaptable mediante el SDK de Calvin integrado en el marco de hobbes.js.
 
 >[!VIDEO](https://video.tv.adobe.com/v/19700/)
 
 >[!NOTE]
 >
->La capacidad de prueba automatizada de formularios adaptables está disponible con AEM 6.3 y posteriores
+>La capacidad de prueba automatizada de Forms adaptable está disponible a partir de AEM 6.3
 
 >[!NOTE]
 >
 >**Vínculos útiles**
 >
 >* [Espacio de nombres del SDK de Calvin](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html)
->* [Documentación de Hobbes.js](https://docs.adobe.com/docs/en/aem/6-3/develop/ref/test-api/index.html)
+>* [Documentación de Hobbes.js](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)
 
