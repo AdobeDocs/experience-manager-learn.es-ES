@@ -1,37 +1,28 @@
 ---
 title: Uso Del Modelo De Datos De Formulario Para Publicar Datos Binarios
-seo-title: Uso Del Modelo De Datos De Formulario Para Publicar Datos Binarios
-description: Publicación de datos binarios en AEM DAM mediante el modelo de datos de formulario
-seo-description: Publicación de datos binarios en AEM DAM mediante el modelo de datos de formulario
-uuid: dd344ed8-69f7-4d63-888a-3c96993fe99d
-feature: Workflow
-topics: integrations
-audience: developer
-doc-type: article
-activity: setup
+description: Registro de datos binarios en AEM DAM mediante el Modelo de datos de formulario
+feature: Flujo de trabajo
 version: 6.4,6.5
-discoiquuid: 6e99df7d-c030-416b-83d2-24247f673b33
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '493'
 ht-degree: 1%
 
 ---
 
 
-# Uso del modelo de datos de formulario para publicar datos binarios{#using-form-data-model-to-post-binary-data}
+# Uso Del Modelo De Datos De Formulario Para Publicar Datos Binarios{#using-form-data-model-to-post-binary-data}
 
-A partir de AEM Forms 6.4, ahora se puede invocar el servicio del modelo de datos de formulario como un paso en AEM Workflow. Este artículo le guiará por un caso de uso de ejemplo para registrar el documento de registro mediante el servicio del modelo de datos de formulario.
+A partir de AEM Forms 6.4, ahora se puede invocar el servicio del modelo de datos de formulario como un paso en AEM flujo de trabajo. Este artículo le guiará por un caso de uso de ejemplo para registrar el documento de registro mediante el servicio del modelo de datos de formulario.
 
 El caso de uso es el siguiente:
 
 1. Un usuario rellena y envía el formulario adaptable.
 1. El formulario adaptable está configurado para generar el documento de registro.
-1. Al enviar estos formularios adaptables, se activa el flujo de trabajo de AEM, que utilizará el servicio de invocar el modelo de datos de formulario para enviar el documento de registro a AEM DAM.
+1. Al enviar estos formularios adaptables, se activa AEM flujo de trabajo que utilizará el servicio de invocar modelo de datos de formulario para POST el documento de registro a AEM DAM.
 
 ![posttodam](assets/posttodamshot1.png)
 
@@ -49,7 +40,7 @@ Entrada de servicio
 
 >[!NOTE]
 >
->Consejos para la resolución de problemas : Si por alguna razón el DOR.pdf no se crea en DAM, restablezca la configuración de autenticación de la fuente de datos haciendo clic [aquí](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2Fglobal%2Fsettings%2Fcloudconfigs%2Ffdm%2Fpostdortodam). Estos son los ajustes de autenticación de AEM, que de forma predeterminada son admin/admin.
+>Consejos para la resolución de problemas : Si por alguna razón el DOR.pdf no se crea en DAM, restablezca la configuración de autenticación de la fuente de datos haciendo clic [aquí](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2Fglobal%2Fsettings%2Fcloudconfigs%2Ffdm%2Fpostdortodam). Estos son los ajustes de autenticación AEM, que de forma predeterminada son admin/admin.
 
 Para probar esta capacidad en su servidor, siga los pasos que se mencionan a continuación:
 
@@ -60,7 +51,7 @@ Para probar esta capacidad en su servidor, siga los pasos que se mencionan a con
 1. [Importe los ](assets/postdortodam.zip) recursos asociados con este artículo a AEM mediante el administrador de paquetes. Obtendrá lo siguiente
 
    1. Modelo de flujo de trabajo
-   1. Formulario adaptable configurado para enviarse al flujo de trabajo de AEM
+   1. Formulario adaptable configurado para enviarse al flujo de trabajo AEM
    1. Fuente de datos configurada para usar el archivo PostToDam.JSON
    1. Modelo de datos de formulario que utiliza la fuente de datos
 
