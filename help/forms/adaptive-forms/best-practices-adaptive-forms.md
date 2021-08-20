@@ -1,28 +1,21 @@
 ---
 title: Convenciones de nomenclatura y prácticas recomendadas que se deben seguir al crear formularios adaptables
-seo-title: Convenciones de nomenclatura y prácticas recomendadas que se deben seguir al crear formularios adaptables
 description: Convenciones de nomenclatura y prácticas recomendadas que se deben seguir al crear formularios adaptables
-seo-description: Convenciones de nomenclatura y prácticas recomendadas que se deben seguir al crear formularios adaptables
-feature: Adaptive Forms
-topics: best-practices
-audience: developer
-doc-type: article
-activity: setup
+feature: Formularios adaptables
 version: 6.3,6.4,6.5
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '290'
 ht-degree: 2%
 
 ---
 
 # Prácticas recomendadas  
 
-Los formularios de Adobe Experience Manager (AEM) pueden ayudarle a transformar transacciones complejas en experiencias digitales simples y atractivas. En el siguiente documento se describen algunas prácticas recomendadas adicionales que deben seguirse al desarrollar formularios adaptables. Este documento está pensado para utilizarse junto con [este documento](https://helpx.adobe.com/experience-manager/6-3/forms/using/adaptive-forms-best-practices.html#Overview)
+Los formularios de Adobe Experience Manager (AEM) pueden ayudarle a transformar transacciones complejas en experiencias digitales simples y atractivas. En el siguiente documento se describen algunas prácticas recomendadas adicionales que deben seguirse al desarrollar Forms adaptable. Este documento está pensado para utilizarse junto con [este documento](https://helpx.adobe.com/experience-manager/6-3/forms/using/adaptive-forms-best-practices.html#Overview)
 
 ## Convenciones de nomenclatura
 
@@ -38,7 +31,7 @@ Los formularios de Adobe Experience Manager (AEM) pueden ayudarle a transformar 
    * Los nombres distinguen entre mayúsculas y minúsculas
    * Las palabras reservadas (como palabras clave de JavaScript) no se pueden usar como nombres. Cuidado con otras palabras reservadas específicas para AF, como   como &quot;panel&quot;,&quot;nombre&quot;.
    * No incluya guiones &quot;-&quot; en sus nombres
-* **Desarrollo de formularios**
+* **Desarrollo de Forms**
    * Los fragmentos de formulario deben tenerse en cuenta al desarrollar formularios grandes. Habilitar la carga diferida de fragmentos de formulario para una carga más rápida   times
    * **Modelo de datos**
       * Se recomienda asociar el formulario adaptable con el modelo de datos apropiado
