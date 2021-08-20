@@ -1,21 +1,16 @@
 ---
 title: Montaje de archivos adjuntos de formulario
 description: Montaje de archivos adjuntos de formulario en el orden especificado
-feature: Assembler
-topics: development
-audience: developer
-doc-type: article
-activity: implement
+feature: Ensamblador
 version: 6.4,6.5
 kt: 6406
 thumbnail: kt-6406.jpg
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
@@ -31,7 +26,7 @@ Al enviar el formulario, ensamblar los archivos adjuntos del formulario para gen
 
 Cree un componente OSGi que implemente la [com.adobe.granite.workflow.exec.WorkflowProcess interface](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowProcess.html). El código de este componente se puede asociar al componente de paso del proceso en el flujo de trabajo de AEM. El método execute de la interfaz com.adobe.granite.workflow.exec.WorkflowProcess se implementa en este componente.
 
-Cuando se envía un formulario adaptable para activar un flujo de trabajo de AEM, los datos enviados se almacenan en el archivo especificado en la carpeta de carga útil. Por ejemplo, este es el archivo de datos enviado. Necesitamos ensamblar los adjuntos especificados en la etiqueta de identificación y de declaración de billetes.
+Cuando se envía un formulario adaptable al déclencheur de un flujo de trabajo AEM, los datos enviados se almacenan en el archivo especificado en la carpeta de carga útil. Por ejemplo, este es el archivo de datos enviado. Necesitamos ensamblar los adjuntos especificados en la etiqueta de identificación y de declaración de billetes.
 ![datos enviados](assets/submitted-data.JPG).
 
 ### Obtener los nombres de las etiquetas
@@ -135,16 +130,16 @@ A continuación se muestra la estructura de la carpeta de carga útil después d
 
 ![payload-structure](assets/payload-structure.JPG)
 
-### Para que esta capacidad funcione en su servidor AEM
+### Para que esta capacidad funcione en el servidor AEM
 
 * Descargue el [Formulario de ensamblados de archivos adjuntos](assets/assemble-form-attachments-af.zip) en su sistema local.
-* Importe el formulario desde la página [Forms and Documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
+* Importe el formulario desde la página [Forms And Documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
 * Descargue [workflow](assets/assemble-form-attachments.zip) e impórtelo en AEM mediante el administrador de paquetes.
 * Descargue el [paquete personalizado](assets/assembletaskattachments.assembletaskattachments.core-1.0-SNAPSHOT.jar)
 * Implemente e inicie el paquete utilizando la [consola web](http://localhost:4502/system/console/bundles)
 * Apunte el navegador a [Assemble Attachments Form](http://localhost:4502/content/dam/formsanddocuments/assembleattachments/jcr:content?wcmmode=disabled)
 * Agregue un adjunto en el documento de ID y un par de documentos pdf a la sección extractos bancarios
-* Enviar el formulario para activar el flujo de trabajo
+* Enviar el formulario para almacenar en déclencheur el flujo de trabajo
 * Compruebe la carpeta [payload del flujo de trabajo en el crx](http://localhost:4502/crx/de/index.jsp#/var/fd/dashboard/payload) para el pdf ensamblado
 
 >[!NOTE]
