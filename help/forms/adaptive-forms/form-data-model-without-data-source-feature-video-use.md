@@ -1,23 +1,14 @@
 ---
 title: Creación de un modelo de datos de formulario sin origen de datos
-seo-title: Creación de un modelo de datos de formulario sin origen de datos
 description: A partir de AEM Forms 6.4, ahora se puede definir el Modelo de datos de formulario (FDM) sin asociarlo a un origen de datos. El siguiente vídeo muestra los pasos para crear FDM sin ninguna fuente de datos.
-seo-description: A partir de AEM Forms 6.4, ahora se puede definir el Modelo de datos de formulario (FDM) sin asociarlo a un origen de datos. El siguiente vídeo muestra los pasos para crear FDM sin ninguna fuente de datos.
-feature: Workflow
-topics: integrations
-audience: developer
-doc-type: technical video
-activity: setup
+feature: Flujo de trabajo
 version: 6.4,6.5
-uuid: eeb6165c-5465-4692-a3a9-8ef10780678d
-discoiquuid: 54fdce05-486b-4fb5-aed4-8552fe2040fd
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '138'
 ht-degree: 1%
 
 ---
@@ -31,8 +22,8 @@ A partir de AEM Forms 6.4, ahora se puede definir el Modelo de datos de formular
 
 Esto le ofrece las siguientes ventajas:
 
-* La velocidad es el desarrollo de documentos/formularios de comunicación interactiva.
-* El desarrollo de documentos/formularios de comunicación interactiva se puede realizar en paralelo con el desarrollo de fuentes de datos.
+* La velocidad es el desarrollo de documentos de comunicación interactiva/Forms.
+* El desarrollo de documentos de comunicación interactiva/Forms se puede realizar en paralelo con el desarrollo de fuentes de datos.
 * Una vez desarrollado el origen de datos, puede hacer los enlaces con el editor visual.
 * La función de enlace automático asigna elementos similares.
 
