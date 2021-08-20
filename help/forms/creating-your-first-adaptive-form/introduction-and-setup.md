@@ -1,29 +1,20 @@
 ---
-title: Introducción a los formularios adaptables
-seo-title: Introducción a los formularios adaptables
+title: Introducción a Forms adaptable
 description: 'Este tutorial le guiará por los pasos necesarios para crear formularios adaptables con varias pestañas. Aprenderá a usar Tablas, Diseño de acordeón y Editor de reglas para crear reglas comerciales. '
-seo-description: 'Este tutorial le guiará por los pasos necesarios para crear formularios adaptables con varias pestañas. Aprenderá a usar Tablas, Diseño de acordeón y Editor de reglas para crear reglas comerciales. '
-uuid: 6f73cb1c-94e2-4ac7-89e5-a72141a06bbe
-feature: Adaptive Forms
-topics: authoring
-audience: developer
-doc-type: tutorial
-activity: understand
+feature: Formularios adaptables
 version: 6.3,6.4,6.5
-discoiquuid: b6863d3d-8528-4a96-ae37-c8d1aa62d443
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '210'
 ht-degree: 4%
 
 ---
 
 
-# Introducción a los formularios adaptables {#getting-started-with-adaptive-forms}
+# Introducción a Forms adaptable {#getting-started-with-adaptive-forms}
 
 Este tutorial le guiará por los pasos necesarios para crear formularios adaptables con varias pestañas. Aprenderá a usar Tablas, Diseño de acordeón y Editor de reglas para crear reglas comerciales.
 
@@ -41,6 +32,6 @@ Necesitará lo siguiente:
 
 * [Descargue client-libs-and-](assets/client-libs-and-logo.zip) log y  [getting-started-](assets/getting-started-fragment.zip) fragmentate en su disco duro.
 
-* Importe los archivos zip a AEM mediante el [gestor de paquetes ](http://localhost:4502/crx/packmgr/index.jsp)
+* Importe los archivos zip a AEM mediante el [administrador de paquetes ](http://localhost:4502/crx/packmgr/index.jsp)
 
 
