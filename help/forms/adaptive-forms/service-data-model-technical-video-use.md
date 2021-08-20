@@ -1,31 +1,22 @@
 ---
 title: Uso de modelos de datos de servicio con AEM Forms
-seo-title: Uso de modelos de datos de servicio con AEM Forms
-description: El editor de reglas de AEM Adaptive Forms puede aprovechar los servicios creados en el Modelo de datos de formulario.
-seo-description: El editor de reglas de AEM Adaptive Forms puede aprovechar los servicios creados en el Modelo de datos de formulario.
-uuid: fb4a331f-231a-4864-9325-6dceb288ad75
-feature: Adaptive Forms, Form Data Model
-topics: integrations
-audience: developer
-doc-type: technical video
-activity: setup
+description: El editor de reglas de AEM Adaptive Forms puede aprovechar los Servicios creados en el Modelo de datos de formulario.
+feature: Forms adaptable, Modelo de datos de formulario
 version: 6.3,6.4,6.5
-discoiquuid: e3ff47c3-9ab3-41cb-83ba-38f3eb7b2299
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '77'
-ht-degree: 2%
+source-wordcount: '52'
+ht-degree: 1%
 
 ---
 
 
 # Uso de modelos de datos de servicio con AEM Forms{#using-service-data-models-with-aem-forms}
 
-El editor de reglas de AEM Adaptive Forms puede aprovechar los servicios creados en el Modelo de datos de formulario.
+El editor de reglas de AEM Adaptive Forms puede aprovechar los Servicios creados en el Modelo de datos de formulario.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17739/?quality=9&learn=on)
 
