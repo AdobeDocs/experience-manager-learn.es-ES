@@ -1,23 +1,14 @@
 ---
 title: Uso del servicio Assembler en AEM Forms
-seo-title: Uso del servicio Assembler en AEM Forms
 description: Uso del servicio Assembler en AEM Forms para ensamblar varios archivos pdf
-seo-description: Uso del servicio Assembler en AEM Forms para ensamblar varios archivos pdf
-uuid: 7895b1a3-6f9d-4413-bb7f-692ea0380fcd
-feature: Assembler
-topics: development
-audience: developer
-doc-type: article
-activity: implement
+feature: Ensamblador
 version: 6.4,6.5
-discoiquuid: a12f52af-7039-4452-a58d-9ad2c0096347
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '209'
 ht-degree: 3%
 
 ---
@@ -108,7 +99,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 }
 ```
 
-Para que esta capacidad funcione en su servidor AEM
+Para que esta capacidad funcione en el servidor AEM
 
 * Descargue el archivo [AssembleMultipleFiles.zip](assets/assemble-multiple-files.zip) en su sistema local.
 * Cargue e instale el paquete utilizando el [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
@@ -120,9 +111,9 @@ Para que esta capacidad funcione en su servidor AEM
 
 >[!NOTE]
 >
->Asegúrese de que la instalación de AEM Forms esté completa. Todos sus paquetes deben estar en estado activo.
+>Asegúrese de que la instalación de AEM Forms se haya completado. Todos sus paquetes deben estar en estado activo.
 >
->Asegúrese de que ha añadido las bibliotecas RSA y BouncyCastle delegadas de inicio tal como se indica en esta [instalación de AEM Forms](https://helpx.adobe.com/aem-forms/6-3/installing-configuring-aem-forms-osgi.html)
+>Asegúrese de que ha agregado las bibliotecas RSA y BouncyCastle delegadas de arranque, tal como se menciona en esta [Instalación de AEM Forms](https://helpx.adobe.com/aem-forms/6-3/installing-configuring-aem-forms-osgi.html)
 >
 >**Advertencias para esta demostración**
 >
