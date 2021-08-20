@@ -1,31 +1,22 @@
 ---
 title: Creación de un perfil de campaña mediante el modelo de datos de formulario
-seo-title: Creación de un perfil de campaña mediante el modelo de datos de formulario
-description: Pasos para crear un perfil de Adobe Campaign Standard mediante el modelo de datos de formulario de AEM Forms
-seo-description: Pasos para crear un perfil de Adobe Campaign Standard mediante el modelo de datos de formulario de AEM Forms
-uuid: 3216827e-e1a2-4203-8fe3-4e2a82ad180a
-feature: Output Service
-topics: integrations
-audience: developer
-doc-type: tutorial
-activity: setup
+description: Pasos necesarios para crear perfiles de Adobe Campaign Standard mediante el modelo de datos de formulario de AEM Forms
+feature: Formularios adaptables
 version: 6.3,6.4,6.5
-discoiquuid: 461c532e-7a07-49f5-90b7-ad0dcde40984
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '429'
 ht-degree: 4%
 
 ---
 
 
-# Crear perfil de campaña utilizando el modelo de datos de formulario {#create-campaign-profile-using-form-data-model}
+# Creación de un perfil de campaña mediante el modelo de datos de formulario {#create-campaign-profile-using-form-data-model}
 
-Pasos para crear un perfil de Adobe Campaign Standard mediante el modelo de datos de formulario de AEM Forms
+Pasos necesarios para crear perfiles de Adobe Campaign Standard mediante el modelo de datos de formulario de AEM Forms
 
 ## Crear autenticación personalizada {#create-custom-authentication}
 
@@ -39,7 +30,7 @@ Al crear una fuente de datos con el archivo de intercambio, AEM Forms admite los
 
 ![campaignfdm](assets/campaignfdm.gif)
 
-Tendremos que utilizar la autenticación personalizada para realizar llamadas de REST a Adobe Campaign Standard.
+Tendremos que usar la autenticación personalizada para realizar llamadas REST a Adobe Campaign Standard.
 
 Para utilizar la autenticación personalizada, tendremos que desarrollar un componente OSGi que implemente la interfaz IAuthauthentication
 
@@ -110,9 +101,9 @@ private Logger log = LoggerFactory.getLogger(CampaignAuthentication.class);
 
 ## Crear fuente de datos {#create-data-source}
 
-El primer paso es crear el archivo swagger. El archivo de intercambio define la API de REST que se utilizará para crear un perfil en Adobe Campaign Standard. El archivo swagger define los parámetros de entrada y los parámetros de salida de la API de REST.
+El primer paso es crear el archivo swagger. El archivo swagger define la API de REST que se utilizará para crear un perfil en Adobe Campaign Standard. El archivo swagger define los parámetros de entrada y los parámetros de salida de la API de REST.
 
-Se crea una fuente de datos mediante el archivo de intercambio. Al crear fuentes de datos, puede especificar el tipo de autenticación. En este caso, utilizaremos la autenticación personalizada para autenticarnos con Adobe Campaign. El código mencionado anteriormente se utilizó para autenticarnos con Adobe Campaign.
+Se crea una fuente de datos mediante el archivo de intercambio. Al crear fuentes de datos, puede especificar el tipo de autenticación. En este caso, vamos a utilizar la autenticación personalizada para autenticarnos con Adobe Campaign. El código mencionado anteriormente se utilizó para autenticarnos con Adobe Campaign.
 
 El archivo de intercambio de muestra se le da como parte del archivo del recurso relacionado con este artículo.**Asegúrese de cambiar el host y basePath en el archivo swagger para que coincidan con su instancia ACS**
 
