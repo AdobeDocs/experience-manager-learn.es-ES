@@ -1,36 +1,29 @@
 ---
-title: Variables en el flujo de trabajo de AEM
-seo-title: Variables en el flujo de trabajo de AEM
+title: Variables en AEM flujo de trabajo
 description: Uso de variables de tipo xml,json,arraylist,document en el flujo de trabajo de aem
-seo-description: Uso de variables de tipo xml,json,arraylist,document en el flujo de trabajo de aem
-feature: Workflow
-topics: development
-audience: developer
-doc-type: tutorial
-activity: understand
 version: 6.5
-topic: Development
+feature: Formularios adaptables
+topic: Desarrollo
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '128'
-ht-degree: 9%
+source-wordcount: '112'
+ht-degree: 10%
 
 ---
 
 
-# Variables en el flujo de trabajo de AEM
+# Variables en AEM flujo de trabajo
 
-A partir de AEM 6.5, ahora puede crear y utilizar variables en AEM Workflow. Antes de esta capacidad, los autores de flujos de trabajo creaban claves utilizando el mapa de metadatos de flujo de trabajo. Esto significaba escribir código personalizado para crear y rellenar estas claves. Con este nuevo flujo de trabajo de capacidades, los autores ahora pueden crear fácilmente variables y utilizar estas variables en cualquier parte del flujo de trabajo.
+A partir de AEM 6.5, ahora puede crear y utilizar variables en AEM flujo de trabajo. Antes de esta capacidad, los autores de flujos de trabajo creaban claves utilizando el mapa de metadatos de flujo de trabajo. Esto significaba escribir código personalizado para crear y rellenar estas claves. Con este nuevo flujo de trabajo de capacidades, los autores ahora pueden crear fácilmente variables y utilizar estas variables en cualquier parte del flujo de trabajo.
 
 Las variables pueden ser de los siguientes tipos
 
 * Largo
 * Doble
 * Booleano
-* Cadena
+* String
 * Fecha
 * JSON
 * XML
@@ -44,4 +37,4 @@ Las variables pueden ser de los siguientes tipos
 * [Variables JSON](part2.md)
 * [Variables de documento](part3.md)
 * [Variable ArrayList](part4.md)
-* [Editor de reglas en el flujo de trabajo de AEM](part5.md)
+* [Editor de reglas en AEM flujo de trabajo](part5.md)
