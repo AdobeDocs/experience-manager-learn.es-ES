@@ -1,21 +1,14 @@
 ---
 title: AEM Forms con Marketo (parte 4)
-seo-title: AEM Forms con Marketo (parte 4)
 description: Tutorial para integrar AEM Forms con Marketo mediante el Modelo de datos de formulario de AEM Forms.
-seo-description: Tutorial para integrar AEM Forms con Marketo mediante el Modelo de datos de formulario de AEM Forms.
-feature: Adaptive Forms, Form Data Model
-topics: integrations
-audience: developer
-doc-type: tutorial
-activity: setup
+feature: Forms adaptable, Modelo de datos de formulario
 version: 6.3,6.4,6.5
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
@@ -24,7 +17,7 @@ ht-degree: 0%
 # Creación de un formulario adaptable mediante el modelo de datos de formulario
 
 El siguiente paso es crear un formulario adaptable y basarlo en el modelo de datos de formulario creado en el paso anterior.
-El usuario introduce el ID de posible cliente y, al desplazarse por el servicio de Marketo para obtener los posibles clientes por id, se invoca. Los resultados de la operación del servicio se asignan a los campos correspondientes de los formularios adaptables.
+El usuario introduce el ID de posible cliente y, al desplazarse por el servicio de Marketo para obtener los posibles clientes mediante el ID, se invoca. Los resultados de la operación de servicio se asignan a los campos correspondientes de la Forms adaptable.
 
 1. Crear un formulario adaptable y basarlo en &quot;Plantilla de formulario en blanco&quot;, asociarlo al Modelo de datos de formulario creado en el paso anterior.
 1. Abrir el formulario en modo de edición
