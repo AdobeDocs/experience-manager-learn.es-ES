@@ -1,33 +1,24 @@
 ---
-title: Rellenar previamente formularios HTML5 mediante el atributo data .
-seo-title: Rellenar previamente formularios HTML5 mediante el atributo data .
+title: Rellene previamente HTML5 Forms mediante el atributo data .
 description: Rellene formularios HTML5 recuperando datos del origen del servidor.
-seo-description: Rellene formularios HTML5 recuperando datos del origen del servidor.
-feature: Adaptive Forms
-topics: mobile-forms
-audience: developer
-doc-type: article
-activity: implement
+feature: Formularios adaptables
 version: 6.3,6.4,6.5.
-uuid: 889d2cd5-fcf2-4854-928b-0c2c0db9dbc2
-discoiquuid: 3aa645c9-941e-4b27-a538-cca13574b21c
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
 
 
-# Rellenar previamente formularios HTML5 con el atributo de datos {#prepopulate-html-forms-using-data-attribute}
+# Rellenar previamente HTML5 Forms mediante un atributo de datos {#prepopulate-html-forms-using-data-attribute}
 
 Visite la página [AEM Forms samples](https://forms.enablementadobe.com/content/samples/samples.html?query=0) para ver un vínculo a una demostración en directo de esta capacidad.
 
-Las plantillas XDP procesadas en formato HTML mediante AEM Forms se denominan HTML5 o formularios móviles. Un caso de uso común es rellenar previamente estos formularios cuando se están procesando.
+Las plantillas XDP procesadas en formato HTML mediante AEM Forms se denominan HTML5 o Forms móvil. Un caso de uso común es rellenar previamente estos formularios cuando se están procesando.
 
 Existen dos maneras de combinar datos con la plantilla xdp cuando se está procesando como HTML.
 
@@ -52,12 +43,12 @@ Cuando se procesa el XDP, también se pueden pasar algunos parámetros al xdp y,
 El JSP que escriba tendrá acceso al parámetro name a través de request.getParameter(&quot;name&quot;) . A continuación, puede pasar el valor de este parámetro al proceso backend para recuperar los datos necesarios.
 Para que esta capacidad funcione en su sistema, siga los pasos que se indican a continuación:
 
-* [Descargue e importe los recursos en AEM mediante el gestor de paquetesEl paquete instalará lo siguiente ](assets/prepopulatemobileform.zip)
-
+* [Descargue e importe los recursos en AEM mediante el gestor de ](assets/prepopulatemobileform.zip)
+paquetesEl paquete instalará lo siguiente
 
    * Perfil personalizado
    * XDP de muestra
-   * Punto final POST de muestra que devolverá datos para rellenar el formulario
+   * Punto final del POST de ejemplo que devolverá datos para rellenar el formulario
 
 >[!NOTE]
 >
