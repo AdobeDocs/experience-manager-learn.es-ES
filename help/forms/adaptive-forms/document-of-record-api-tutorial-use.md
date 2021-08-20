@@ -1,23 +1,14 @@
 ---
 title: Uso de API para generar un documento de registro con AEM Forms
-seo-title: Uso de API para generar un documento de registro con AEM Forms
 description: Generar documento de registro (DOR) mediante programación
-seo-description: Uso de API para generar un documento de registro con AEM Forms
-feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: article
-activity: implement
+feature: Formularios adaptables
 version: 6.4,6.5
-uuid: 94ac3b13-01b4-4198-af81-e5609c80324c
-discoiquuid: ba91d9df-dc61-47d8-8e0a-e3f66cae6a87
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '257'
 ht-degree: 1%
 
 ---
@@ -27,7 +18,7 @@ ht-degree: 1%
 
 Generar documento de registro (DOR) mediante programación
 
-Este artículo ilustra el uso de `com.adobe.aemds.guide.addon.dor.DoRService API` para generar **Documento de registro** mediante programación. [El documento de ](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) grabación es una versión PDF de los datos capturados en el formulario adaptable.
+Este artículo ilustra el uso de `com.adobe.aemds.guide.addon.dor.DoRService API` para generar **Documento de registro** mediante programación. [El documento de ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) grabación es una versión PDF de los datos capturados en el formulario adaptable.
 
 1. El siguiente es el fragmento de código. La primera línea recibe el servicio DOR.
 1. Establezca DoROptions.
