@@ -1,21 +1,14 @@
 ---
 title: AEM Forms con Marketo (parte 3)
-seo-title: AEM Forms con Marketo (parte 3)
 description: Tutorial para integrar AEM Forms con Marketo mediante el Modelo de datos de formulario de AEM Forms.
-seo-description: Tutorial para integrar AEM Forms con Marketo mediante el Modelo de datos de formulario de AEM Forms.
-feature: Adaptive Forms, Form Data Model
-topics: integrations
-audience: developer
-doc-type: tutorial
-activity: setup
+feature: Forms adaptable, Modelo de datos de formulario
 version: 6.3,6.4,6.5
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '385'
 ht-degree: 1%
 
 ---
@@ -23,15 +16,15 @@ ht-degree: 1%
 
 # Configurar fuentes de datos
 
-La integración de datos de AEM Forms le permite configurar y conectar a diferentes fuentes de datos. Los siguientes tipos son compatibles de serie. Sin embargo, con un poco de personalización, también puede integrarse con otras fuentes de datos.
+La integración de datos de AEM Forms le permite configurar y conectarse a fuentes de datos diferentes. Los siguientes tipos son compatibles de serie. Sin embargo, con un poco de personalización, también puede integrarse con otras fuentes de datos.
 
 1. Bases de datos relacionales: MySQL, Microsoft SQL Server, IBM DB2 y Oracle RDBMS
-1. Perfil de usuario de AEM
+1. AEM perfil de usuario
 1. Servicios web RESTful
 1. Servicios web basados en SOAP
 1. Servicios OData
 
-Para la integración de AEM Forms con Marketo, utilizaremos los servicios web RESTful. El primer paso para la integración es configurar un [origen de datos.](https://helpx.adobe.com/experience-manager/6-4/forms/using/configure-data-sources.html#ConfigureRESTfulwebservices) Utilice el archivo de intercambio proporcionado como parte de este tutorial. La siguiente captura de pantalla muestra las propiedades importantes que deben especificarse al configurar el origen de datos.
+Para la integración de AEM Forms con Marketo, utilizaremos los servicios web de RESTful. El primer paso para la integración es configurar un [origen de datos.](https://helpx.adobe.com/experience-manager/6-4/forms/using/configure-data-sources.html#ConfigureRESTfulwebservices) Utilice el archivo de intercambio proporcionado como parte de este tutorial. La siguiente captura de pantalla muestra las propiedades importantes que deben especificarse al configurar el origen de datos.
 ![datasource](assets/datasource.jfif)
 
 El &quot;marketing.json&quot; es el archivo de intercambio y se proporciona como parte de los recursos de este tutorial.
