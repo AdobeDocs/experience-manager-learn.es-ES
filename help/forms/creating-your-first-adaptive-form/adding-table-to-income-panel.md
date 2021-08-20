@@ -1,31 +1,22 @@
 ---
 title: Adición de componentes al panel Ingresos
-seo-title: Adición de componentes al panel Ingresos
 description: Añadiremos una tabla al panel Ingresos . Configure las filas de tabla y utilice el editor de reglas para calcular el total general.
-seo-description: Añadiremos una tabla al panel Ingresos . Configure las filas de tabla y utilice el editor de reglas para calcular el total general.
-uuid: d5c98561-c559-4624-976a-7a1486da7e69
-feature: Adaptive Forms
-topics: authoring
-audience: developer
-doc-type: tutorial
-activity: understand
+feature: Formularios adaptables
 version: 6.4,6.5
 thumbnail: 22198.jpg
 kt: 4211
-discoiquuid: fa483260-38ff-40d8-96a7-1de11d8b792b
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '186'
 ht-degree: 1%
 
 ---
 
 
-# Añadir componentes al panel Ingresos {#adding-components-to-income-panel}
+# Adición de componentes al panel Ingresos {#adding-components-to-income-panel}
 
 Añadiremos una tabla al panel Ingresos . Configure las filas de tabla y utilice el editor de reglas para calcular el total general.
 
@@ -35,7 +26,7 @@ Añadiremos una tabla al panel Ingresos . Configure las filas de tabla y utilice
 
 
 
-## Hacer que la tabla de ingresos sea dinámica {#make-the-income-table-dynamic}
+## Hacer dinámica la tabla de ingresos {#make-the-income-table-dynamic}
 
 **Asegúrese de que está en el modo de edición. El botón de edición se encuentra en la parte superior derecha del explorador.**
 
