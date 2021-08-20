@@ -1,28 +1,20 @@
 ---
-title: Variables en AEM Workflow[Part2]
-seo-title: Variables en AEM Workflow[Part2]
-description: Uso de variables de tipo xml,json,arraylist,document en el flujo de trabajo de aem
-seo-description: Uso de variables de tipo xml,json,arraylist,document en el flujo de trabajo de aem
-feature: Workflow
-topics: development
-audience: developer
-doc-type: tutorial
-activity: understand
+title: Variables en AEM flujo de trabajo[Part2]
+description: Uso de variables de tipo XML, JSON, ArrayList, Document en un flujo de trabajo AEM
 version: 6.5
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 1%
+source-wordcount: '282'
+ht-degree: 0%
 
 ---
 
-# Variables de tipo JSON en el flujo de trabajo de AEM
+# Variables de tipo JSON en AEM flujo de trabajo
 
-A partir de AEM Forms 6.5, ahora podemos crear variables de tipo JSON en AEM Workflow. Normalmente creará variables de tipo JSON si envía formularios adaptables basados en el esquema JSON a un flujo de trabajo de AEM o si desea almacenar los resultados de una operación de invocación del modelo de datos de formulario. El siguiente vídeo le explica los pasos necesarios para crear y utilizar una variable de tipo JSON en el flujo de trabajo de AEM
+A partir de AEM Forms 6.5, ahora podemos crear variables de tipo JSON en AEM flujo de trabajo. Normalmente creará variables de tipo JSON si envía Forms adaptable basado en un esquema JSON a un flujo de trabajo AEM o si desea almacenar los resultados de una operación de invocación del modelo de datos de formulario. El siguiente vídeo le explica los pasos necesarios para crear y utilizar una variable de tipo JSON en AEM flujo de trabajo
 
 **Si utiliza AEM Forms 6.5.0**
 
@@ -31,7 +23,7 @@ Cuando esté creando una variable de tipo JSON para capturar los datos enviados 
 >[!VIDEO](https://video.tv.adobe.com/v/26444?quality=12&learn=on)
 
 
-**Si utiliza AEM Forms 6.5.1 y versiones posteriores**
+**Si utiliza AEM Forms 6.5.1 o superior**
 
 Puede asignar el esquema con la variable de tipo JSON en el modelo de flujo de trabajo. A continuación, puede utilizar el navegador de esquema para asignar los elementos de esquema a las variables de cadena/número del modelo de flujo de trabajo
 
