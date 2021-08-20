@@ -1,31 +1,22 @@
 ---
-title: Cree modelos de flujo de trabajo de AEM Forms reutilizables.
-seo-title: Cree modelos de flujo de trabajo de AEM Forms reutilizables.
-description: modelos de flujo de trabajo independientes de los formularios adaptables.
-seo-description: Modelos de flujo de trabajo independientes de los formularios adaptables.
-feature: Workflow
-topics: development
-audience: developer
-doc-type: article
-activity: setup
+title: Crear modelos de flujo de trabajo de AEM Forms reutilizables.
+description: modelos de flujo de trabajo independientes de Forms adaptable.
+feature: Flujo de trabajo
 version: 6.5
-uuid: 3a082743-3e56-42f4-a44b-24fa34165926
-discoiquuid: 9f18c314-39d1-4c82-b1bc-d905ea472451
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 1%
+source-wordcount: '280'
+ht-degree: 0%
 
 ---
 
 
 # Crear modelos de flujo de trabajo de AEM Forms reutilizables{#create-re-usable-aem-forms-workflow-models}
 
-A partir de la versión 6.5 de AEM Forms, ahora podemos crear modelos de flujo de trabajo que no están vinculados a un formulario adaptable específico. Con esta capacidad, ahora puede crear un modelo de flujo de trabajo que se pueda invocar en diferentes envíos de formularios adaptables. Con esta capacidad, puede tener un flujo de trabajo genérico para gestionar todos los envíos de formularios adaptables para su revisión y aprobación.
+A partir de la versión 6.5 de AEM Forms, ahora podemos crear modelos de flujo de trabajo que no estén vinculados a un formulario adaptable específico. Con esta capacidad, ahora puede crear un modelo de flujo de trabajo que se pueda invocar en diferentes envíos de formularios adaptables. Con esta capacidad, puede tener un flujo de trabajo genérico para gestionar todos los envíos de formularios adaptables para su revisión y aprobación.
 
 Para diseñar un flujo de trabajo de este tipo, realice los siguientes pasos
 
@@ -36,7 +27,7 @@ Para diseñar un flujo de trabajo de este tipo, realice los siguientes pasos
 1. Abra el modelo recién creado en modo de edición
 1. Arrastre y suelte el componente Asignar tarea en el modelo de flujo de trabajo
 1. Abra las propiedades de configuración del componente Asignar tarea
-1. Tabulación a la ficha Formularios y documentos
+1. Tabulación a la ficha Forms y documentos
 1. Seleccione Tipo - Formulario adaptable o Formulario adaptable de solo lectura.
 
 Existen 3 maneras de especificar la ruta del formulario
