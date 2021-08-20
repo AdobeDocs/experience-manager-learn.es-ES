@@ -1,21 +1,14 @@
 ---
 title: AEM Forms con Marketo (parte 2)
-seo-title: AEM Forms con Marketo (parte 2)
 description: Tutorial para integrar AEM Forms con Marketo mediante el Modelo de datos de formulario de AEM Forms.
-seo-description: Tutorial para integrar AEM Forms con Marketo mediante el Modelo de datos de formulario de AEM Forms.
-feature: Adaptive Forms, Form Data Model
-topics: integrations
-audience: developer
-doc-type: tutorial
-activity: setup
+feature: Forms adaptable, Modelo de datos de formulario
 version: 6.3,6.4,6.5
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '362'
 ht-degree: 0%
 
 ---
@@ -74,7 +67,7 @@ public interface MarketoService {
 }
 ```
 
-El siguiente código es del servicio que devuelve el access_token que se utilizará para realizar las llamadas a la API de REST. El código de este servicio accede a los parámetros de configuración necesarios para realizar la llamada GET. Como puede ver, pasamos client_id,client_secret en la URL GET para generar el token de acceso. A continuación, este access_token se devuelve a la aplicación que realiza la llamada.
+El siguiente código es del servicio que devuelve el access_token que se utilizará para realizar las llamadas a la API de REST. El código de este servicio accede a los parámetros de configuración necesarios para realizar la llamada de GET. Como puede ver, pasamos client_id,client_secret en la URL de GET para generar el access_token. A continuación, este access_token se devuelve a la aplicación que realiza la llamada.
 
 ```java
 package com.marketoandforms.core.impl;
