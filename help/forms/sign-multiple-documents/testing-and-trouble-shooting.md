@@ -1,22 +1,17 @@
 ---
 title: Solución de problemas para firmar varios documentos
 description: Prueba y resolución de problemas de la solución
-feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+feature: Formularios adaptables
 version: 6.4,6.5
 kt: 6960
 thumbnail: 6960.jpg
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 2%
+source-wordcount: '392'
+ht-degree: 1%
 
 ---
 
@@ -28,7 +23,7 @@ ht-degree: 2%
 
 El caso de uso se activa cuando el agente de servicio al cliente rellena y envía [formulario de refinanciación](http://localhost:4502/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled).
 
-El flujo de trabajo Firmar varios formularios recibe activadores en este envío de formulario y el cliente recibe una notificación por correo electrónico con un vínculo para iniciar el proceso de cumplimentación y firma del formulario.
+El flujo de trabajo Sign Multiple Forms obtiene déclencheur sobre este envío de formulario y el cliente recibe una notificación por correo electrónico con un vínculo para iniciar el proceso de cumplimentación y firma del formulario.
 
 ## Rellenar formularios en el paquete
 
@@ -42,7 +37,7 @@ La notificación por correo electrónico se envía mediante el componente Enviar
 
 ### El vínculo de la notificación por correo electrónico no funciona
 
-Los vínculos de las notificaciones por correo electrónico se generan de forma dinámica. Si su servidor AEM no se está ejecutando en localhost:4502, proporcione el nombre y puerto del servidor correcto en los argumentos del paso Store Forms To Sign del flujo de trabajo Sign Multiple Forms
+Los vínculos de las notificaciones por correo electrónico se generan de forma dinámica. Si su servidor de AEM no se está ejecutando en localhost:4502, proporcione el nombre y el puerto del servidor correctos en los argumentos del paso Store Forms To Sign del flujo de trabajo Sign Multiple Forms
 
 ### No se puede firmar el formulario
 
