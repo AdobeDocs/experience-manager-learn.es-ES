@@ -1,25 +1,16 @@
 ---
 title: Uso de funciones y editor de código
-seo-title: Uso de funciones y editor de código
 description: Uso de funciones y editor de código para crear reglas comerciales
-seo-description: Uso de funciones y editor de código para crear reglas comerciales
-uuid: 578e91f8-0d93-4192-b7af-1579df2feaf8
-feature: Adaptive Forms
-topics: authoring
-audience: developer
-doc-type: tutorial
-activity: understand
+feature: Formularios adaptables
 version: 6.4,6.5
-discoiquuid: f480ef3e-7e38-4a6b-a223-c102787aea7f
 kt: 4270
 thumbnail: 22282.jpg
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '139'
 ht-degree: 2%
 
 ---
@@ -38,7 +29,7 @@ Normalmente, una biblioteca de cliente consta de un archivo CSS y Javascript. Es
 
 >[!VIDEO](https://video.tv.adobe.com/v/22282?quality=9&learn=on)
 
-### Establecer título de resumen del panel {#set-the-summary-title-of-panels}
+### Definir título de resumen del panel {#set-the-summary-title-of-panels}
 
 >[!VIDEO](https://video.tv.adobe.com/v/28387?quality=9&learn=on)
 
