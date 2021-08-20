@@ -1,41 +1,32 @@
 ---
-title: Uso de CAPTCHA con AEM Adaptive Forms
-seo-title: Uso de CAPTCHA con AEM Adaptive Forms
+title: Uso de CAPTCHA con AEM Forms adaptable
 description: Adición y uso de un CAPTCHA con AEM Adaptive Forms.
-seo-description: Adición y uso de un CAPTCHA con AEM Adaptive Forms.
-feature: Adaptive Forms,Workflow
-topics: integrations
-audience: developer
-doc-type: technical video
-activity: setup
+feature: Forms adaptable,Flujo de trabajo
 version: 6.4,6.5
-uuid: bd63e207-4f4d-4f34-9ac4-7572ed26f646
-discoiquuid: 5e184e44-e385-4df7-b7ed-085239f2a642
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '232'
 ht-degree: 0%
 
 ---
 
 
-# Uso de CAPTCHA con AEM Adaptive Forms{#using-captchas-with-aem-adaptive-forms}
+# Uso de CAPTCHA con AEM Forms adaptable{#using-captchas-with-aem-adaptive-forms}
 
 Adición y uso de un CAPTCHA con AEM Adaptive Forms.
 
-Visite la página [AEM Forms samples](https://forms.enablementadobe.com/content/samples/samples.html?query=0) para ver un vínculo a una demostración en directo de esta capacidad.
+Visite la página [AEM Forms samples](https://forms.enablementadobe.com/content/samples/samples.html?query=0#collapse1) para ver un vínculo a una demostración en directo de esta capacidad.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18336/?quality=9&learn=on)
 
-*Este vídeo explica el proceso de adición de un CAPTCHA a un formulario adaptable de AEM mediante el servicio AEM CAPTCHA incorporado, así como el servicio reCAPTCHA de Google.*
+*Este vídeo explica el proceso de adición de un CAPTCHA a un formulario adaptable AEM utilizando tanto el servicio AEM CAPTCHA integrado como el servicio reCAPTCHA de Google.*
 
 >[!NOTE]
 >
->Esta función solo está disponible con AEM 6.3 y posteriores.
+>Esta función solo está disponible a partir de AEM 6.3.
 
 >[!NOTE]
 >
@@ -43,7 +34,7 @@ Visite la página [AEM Forms samples](https://forms.enablementadobe.com/content/
 >
 >Configurar reCaptach en la instancia de autor
 >
->abra la consola web felix [web](http://localhost:4502/system/console/bundles) en la instancia de autor
+>abra la consola web Felix [](http://localhost:4502/system/console/bundles) en la instancia de autor
 >
 >buscar el paquete com.adobe.granite.crypto.file
 >
@@ -62,7 +53,7 @@ Vaya al ID del paquete en el sistema de archivos de la instancia de publicación
 
 Reinicie el servidor de publicación de AEM
 
-## Materiales de soporte {#supporting-materials}
+## Materiales de apoyo {#supporting-materials}
 
 * [Google reCAPTCHA](https://www.google.com/recaptcha)
 
