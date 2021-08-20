@@ -1,24 +1,15 @@
 ---
 title: Configuración de la integración de datos con AEM Forms
-seo-title: Configuración de la integración de datos con AEM Forms
 description: Configuración de la conexión de datos en una fuente de datos JDBC
-seo-description: Configuración de la conexión de datos en una fuente de datos JDBC
-feature: Adaptive Forms,Workflow
-topics: integrations
-audience: developer
-doc-type: technical video
-activity: setup
+feature: Forms adaptable,Flujo de trabajo
 version: 6.4,6.5
-uuid: 267de794-4462-4421-adee-d40a469fabb3
-discoiquuid: 41864584-cb99-4c54-abda-8eb83829cb90
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '96'
-ht-degree: 2%
+source-wordcount: '78'
+ht-degree: 1%
 
 ---
 
@@ -31,11 +22,11 @@ Configuración de la conexión de datos en una fuente de datos JDBC
 
 >[!NOTE]
 >
->Los controladores JDBC de MySQL deben instalarse a través de paquetes OSGi en la instancia AEM.
+>Los controladores JDBC de MySQL deben instalarse a través de paquetes OSGi en la instancia de AEM.
 
-## Materiales de soporte {#supporting-materials}
+## Materiales de apoyo {#supporting-materials}
 
 * [Descargar paquete MySQL JDBC OSGi](https://dev.mysql.com/downloads/connector/j/)
 
-   * Descargue, descomprima e instale el archivo JAR a través de la [Consola Web AEM](http://localhost:4502/system/console/bundles)
+   * Descargue, descomprima e instale el archivo JAR a través de la [AEM Consola Web](http://localhost:4502/system/console/bundles)
 
