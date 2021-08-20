@@ -1,22 +1,17 @@
 ---
 title: Actualizar el estado de firma del formulario en la base de datos
-description: Actualizar el estado de firma del formulario firmado en la base de datos mediante el flujo de trabajo de AEM
-feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+description: Actualizar el estado de firma del formulario firmado en la base de datos mediante el flujo de trabajo AEM
+feature: Formularios adaptables
 version: 6.4,6.5
 kt: 6888
 thumbnail: 6888.jpg
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 4%
+source-wordcount: '107'
+ht-degree: 3%
 
 ---
 
@@ -28,7 +23,7 @@ El flujo de trabajo UpdateSignatureStatus se activa cuando el usuario ha complet
 ![main-workflow](assets/update-signature.PNG)
 
 Actualizar estado de firma es un paso de proceso personalizado.
-La razón principal para implementar el paso de proceso personalizado es ampliar un flujo de trabajo de AEM. El siguiente es el código personalizado utilizado para actualizar el estado de firma.
+La razón principal para implementar el paso de proceso personalizado es ampliar un flujo de trabajo AEM. El siguiente es el código personalizado utilizado para actualizar el estado de firma.
 El código de este paso de proceso personalizado hace referencia al servicio SignMultipleForms.
 
 
