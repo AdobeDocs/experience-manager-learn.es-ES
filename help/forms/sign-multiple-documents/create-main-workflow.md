@@ -1,21 +1,16 @@
 ---
-title: Crear flujo de trabajo principal para activar el proceso de firma
+title: Crear flujo de trabajo principal para almacenar en déclencheur el proceso de firma
 description: Crear flujo de trabajo para almacenar los formularios para la firma en la base de datos
-feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+feature: Formularios adaptables
 version: 6.4,6.5
 thumbnail: 6887.jpg
 kt: 6887
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '165'
 ht-degree: 2%
 
 ---
@@ -27,9 +22,9 @@ El flujo de trabajo principal se activa cuando el usuario envía el formulario i
 
 ![main-workflow](assets/main-workflow.PNG)
 
-**Almacenar formularios para** firmar es un paso de proceso personalizado.
+**Almacenar Forms para** firmar es un paso de proceso personalizado.
 
-La motivación para implementar un paso de proceso personalizado es ampliar un flujo de trabajo de AEM. El siguiente código implementa un paso de proceso personalizado. El código extrae los nombres de los formularios que se van a firmar y pasa los datos de formulario enviados al método `insertData` del servicio SignMultipleForms. A continuación, el método `insertData` inserta las filas de la base de datos identificadas por el origen de datos **aemformstutorial**.
+La motivación para implementar un paso de proceso personalizado es ampliar un flujo de trabajo AEM. El siguiente código implementa un paso de proceso personalizado. El código extrae los nombres de los formularios que se van a firmar y pasa los datos de formulario enviados al método `insertData` del servicio SignMultipleForms. A continuación, el método `insertData` inserta las filas de la base de datos identificadas por el origen de datos **aemformstutorial**.
 
 El código de este paso de proceso personalizado hace referencia al servicio `SignMultipleForms`.
 
