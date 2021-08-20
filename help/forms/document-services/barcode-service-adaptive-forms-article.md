@@ -1,29 +1,20 @@
 ---
-title: Servicio De Código De Barras Con Formularios Adaptables
-seo-title: Servicio De Código De Barras Con Formularios Adaptables
-description: Uso del servicio de código de barras para descodificar código de barras y rellenar campos de formulario de los datos extraídos
-seo-description: Uso del servicio de código de barras para descodificar código de barras y rellenar campos de formulario de los datos extraídos
-uuid: 42568b81-cbcd-479e-8d9a-cc0b244da4ae
-feature: barcoded-forms
-topics: development
-audience: developer
-doc-type: article
-activity: implement
+title: Servicio De Código De Barras Con Forms Adaptable
+description: Uso del servicio de códigos de barras para descodificar códigos de barras y rellenar campos de formulario de los datos extraídos.
+feature: Forms con códigos de barras
 version: 6.4,6.5
-discoiquuid: 1224de6d-7ca1-4e9d-85fe-cd675d03e262
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
 
 
-# Servicio de códigos de barras con formularios adaptables{#barcode-service-with-adaptive-forms}
+# Servicio De Código De Barras Con Forms Adaptable{#barcode-service-with-adaptive-forms}
 
 Este artículo muestra el uso del servicio de códigos de barras para rellenar el formulario adaptable. El caso de uso es el siguiente:
 
@@ -104,7 +95,7 @@ public class DecodeBarCode extends SlingSafeMethodsServlet {
 }
 ```
 
-El siguiente código forma parte de la biblioteca de cliente a la que hace referencia el formulario adaptable. Cuando un usuario agrega el archivo adjunto al formulario adaptable, se activa este código. El código realiza una llamada GET al servlet con la ruta del archivo adjunto pasada en el parámetro de solicitud. Los datos recibidos de la llamada al servlet se utilizan para rellenar el formulario adaptable.
+El siguiente código forma parte de la biblioteca de cliente a la que hace referencia el formulario adaptable. Cuando un usuario agrega el archivo adjunto al formulario adaptable, se activa este código. El código realiza una llamada de GET al servlet con la ruta del archivo adjunto pasada en el parámetro de solicitud. Los datos recibidos de la llamada al servlet se utilizan para rellenar el formulario adaptable.
 
 ```
 $(document).ready(function()
@@ -141,7 +132,7 @@ $(document).ready(function()
 
 >[!NOTE]
 >
->El formulario adaptable incluido en este paquete se creó con AEM Forms 6.4. Si desea utilizar este paquete en el entorno de AEM Forms 6.3, cree el formulario adaptable en AEM Forms 6.3
+>El formulario adaptable incluido en este paquete se creó con AEM Forms 6.4. Si desea utilizar este paquete en el entorno de AEM Forms 6.3, cree el formulario adaptable en AEM formulario 6.3
 
 Línea 12: Custom Code para obtener la resolución del servicio. Este paquete se incluye como parte de los recursos de este artículo.
 
