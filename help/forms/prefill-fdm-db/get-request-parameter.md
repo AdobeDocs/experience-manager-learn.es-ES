@@ -1,21 +1,16 @@
 ---
 title: Obtener parámetro de solicitud
 description: Acceda al parámetro de solicitud al servicio de cumplimentación previa de un modelo de datos de formulario
-feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: article
-activity: implement
+feature: Formularios adaptables
 version: 6.4,6.5
 kt: 5815
 thumbnail: kt-5815.jpg
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '182'
 ht-degree: 4%
 
 ---
