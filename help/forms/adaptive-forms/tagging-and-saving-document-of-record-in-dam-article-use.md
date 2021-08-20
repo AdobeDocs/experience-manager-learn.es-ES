@@ -1,23 +1,14 @@
 ---
 title: Etiquetado y almacenamiento de AEM Forms DoR en DAM
-seo-title: Etiquetado y almacenamiento de AEM Forms DoR en DAM
 description: Este artículo tratará el caso de uso de almacenar y etiquetar el DoR generado por AEM Forms en AEM DAM. El etiquetado del documento se realiza en función de los datos de formulario enviados.
-seo-description: Este artículo tratará el caso de uso de almacenar y etiquetar el DoR generado por AEM Forms en AEM DAM. El etiquetado del documento se realiza en función de los datos de formulario enviados.
-uuid: b9ba13ed-52d5-4389-a7d5-bf85e58fea49
-feature: Adaptive Forms,Workflow
-topics: developing
-audience: implementer
-doc-type: article
-activity: develop
+feature: Formularios adaptables
 version: 6.4,6.5
-discoiquuid: 53961454-633b-4cd8-aef7-e64ab4e528e4
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '616'
 ht-degree: 0%
 
 ---
@@ -27,12 +18,12 @@ ht-degree: 0%
 
 Este artículo tratará el caso de uso de almacenar y etiquetar el DoR generado por AEM Forms en AEM DAM. El etiquetado del documento se realiza en función de los datos de formulario enviados.
 
-Una solicitud habitual de los clientes es almacenar y etiquetar el documento de registro (DoR) generado por AEM Forms en AEM DAM. El etiquetado del documento debe basarse en los datos enviados por los formularios adaptables. Por ejemplo, si el estado de empleo en los datos enviados es &quot;Retirado&quot;, queremos etiquetar el documento con la etiqueta &quot;Retirado&quot; y almacenarlo en DAM.
+Una solicitud habitual de los clientes es almacenar y etiquetar el documento de registro (DoR) generado por AEM Forms en AEM DAM. El etiquetado del documento debe basarse en los datos enviados por el Forms adaptable. Por ejemplo, si el estado de empleo en los datos enviados es &quot;Retirado&quot;, queremos etiquetar el documento con la etiqueta &quot;Retirado&quot; y almacenarlo en DAM.
 
 El caso de uso es el siguiente:
 
 * Un usuario rellena el formulario adaptable. En la forma adaptativa, se captura el estado civil (ex Single) del usuario y el estado laboral (Ex Retirado).
-* Al enviar el formulario, se activa un flujo de trabajo de AEM. Este flujo de trabajo etiqueta el documento con el estado civil (único) y el estado de empleo (retirado) y almacena el documento en DAM.
+* Al enviar el formulario, se activa un flujo de trabajo AEM. Este flujo de trabajo etiqueta el documento con el estado civil (único) y el estado de empleo (retirado) y almacena el documento en DAM.
 * Una vez que el documento está almacenado en DAM, el administrador debe poder buscar en el documento mediante estas etiquetas. Por ejemplo, la búsqueda en Único o Retirado obtendría los documentos de referencia adecuados.
 
 Para satisfacer este caso de uso, se escribió un paso de proceso personalizado. En este paso, recuperamos los valores de los elementos de datos adecuados de los datos enviados. A continuación, construimos el mosaico de la etiqueta con este valor. Por ejemplo, si el valor del elemento de estado civil es &quot;Single&quot;, el título de la etiqueta se convierte en **Peak:EmployStatus/Single. **Utilizando la API TagManager , encontramos la etiqueta y la aplicamos al DoR.
@@ -53,11 +44,11 @@ Para que este ejemplo funcione en su sistema, siga los pasos que se indican a co
 
 * [Descargar el formulario adaptable de ejemplo](assets/tag-and-store-in-dam-assets.zip)
 
-* [Ir a Formularios y documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* [Vaya a Forms y documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 
 * Haga clic en Crear | Archivo Cargar y cargar el archivo sampleadaptiveform.zip
 
-* [Importe el ](assets/tag-and-store-in-dam-assets.zip) recurso de artículo utilizando el gestor de paquetes AEM
+* [Importar el ](assets/tag-and-store-in-dam-assets.zip) recurso de artículo con AEM administrador de paquetes
 * Abra el [formulario de ejemplo en modo de vista previa](http://localhost:4502/content/dam/formsanddocuments/summit/peakform/jcr:content?wcmmode=disabled). Complete la sección Personas y envíe el formulario.
 * [Vaya a la carpeta Pico de DAM](http://localhost:4502/assets.html/content/dam/Peak). Debería ver DoR en la carpeta Peak. Compruebe las propiedades del documento. Debe etiquetarse adecuadamente.
 Felicitaciones!! Ha instalado correctamente el ejemplo en su sistema
