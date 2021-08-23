@@ -13,9 +13,9 @@ thumbnail: 5831-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: bf9ab30f57faa23721d7d27b837d8e0f0e8cf4f1
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1508'
+source-wordcount: '1502'
 ht-degree: 2%
 
 ---
@@ -77,7 +77,7 @@ Un componente AEM se define como un nodo y propiedades. En el proyecto, estos no
 
 >[!NOTE]
 >
-> Puede resultar útil realizar un repaso rápido sobre los [conceptos básicos de los componentes de AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/component-basics.html).
+> Puede resultar útil realizar un repaso rápido sobre los [conceptos básicos de los componentes de AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html).
 
 1. En el IDE de su elección, abra la carpeta `ui.apps` .
 2. Vaya a `ui.apps/src/main/content/jcr_root/apps/wknd-spa-angular/components` y cree una nueva carpeta denominada `custom-component`.
@@ -159,13 +159,13 @@ Un componente AEM se define como un nodo y propiedades. En el proyecto, estos no
    >
    > Puede ver muchos más [ejemplos de cuadros de diálogo consultando las definiciones de los componentes principales](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components). También puede ver campos de formulario adicionales, como `select`, `textarea`, `pathfield`, disponibles debajo de `/libs/granite/ui/components/coral/foundation/form` en [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/libs/granite/ui/components/coral/foundation/form).
 
-   Con un componente de AEM tradicional, normalmente se requiere un script [HTL](https://docs.adobe.com/content/help/es-ES/experience-manager-htl/using/overview.html). Dado que el SPA procesará el componente, no se necesita ningún script HTL.
+   Con un componente de AEM tradicional, normalmente se requiere un script [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=es). Dado que el SPA procesará el componente, no se necesita ningún script HTL.
 
 ## Creación del modelo Sling
 
-Los modelos Sling son objetos Java Java &quot;POJO&quot; (objetos Java antiguos comunes) impulsados por anotaciones que facilitan la asignación de datos de JCR a variables Java. [Sling ](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/component-basics.html#sling-models) funciona de forma modesta para encapsular una lógica empresarial compleja del lado del servidor para AEM componentes.
+Los modelos Sling son objetos Java Java &quot;POJO&quot; (objetos Java antiguos comunes) impulsados por anotaciones que facilitan la asignación de datos de JCR a variables Java. [Sling ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html#sling-models) funciona de forma modesta para encapsular una lógica empresarial compleja del lado del servidor para AEM componentes.
 
-En el contexto del Editor de SPA, los modelos de Sling exponen el contenido de un componente a través del modelo JSON a través de una función que utiliza el [Exportador del modelo de Sling](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/develop-sling-model-exporter.html).
+En el contexto del Editor de SPA, los modelos de Sling exponen el contenido de un componente a través del modelo JSON a través de una función que utiliza el [Exportador del modelo de Sling](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html).
 
 1. En el IDE de su elección, abra el módulo `core` . `CustomComponent.java` y ya se  `CustomComponentImpl.java` han creado y se han combinado como parte del código de inicio de capítulo.
 
