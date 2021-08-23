@@ -1,21 +1,20 @@
 ---
-title: Activador del flujo de trabajo de AEM en el envío de formularios HTML5
-seo-title: Activar el flujo de trabajo de AEM en el envío de formularios HTML5
-description: Siga rellenando el formulario móvil en modo sin conexión y envíe el formulario móvil para activar el flujo de trabajo de AEM
-seo-description: Siga rellenando el formulario móvil en modo sin conexión y envíe el formulario móvil para activar el flujo de trabajo de AEM
+title: Déclencheur AEM flujo de trabajo en envío de formulario HTML5
+seo-title: Déclencheur AEM flujo de trabajo en envío de formulario HTML5
+description: Siga rellenando el formulario móvil en modo sin conexión y envíe el formulario móvil al flujo de trabajo AEM déclencheur
+seo-description: Siga rellenando el formulario móvil en modo sin conexión y envíe el formulario móvil al flujo de trabajo AEM déclencheur
 feature: Mobile Forms
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
@@ -30,20 +29,20 @@ ht-degree: 0%
 Para que este caso de uso funcione en el sistema local, siga estos pasos:
 
 * Instale la instancia de AEM Author en el puerto 4502 y la instancia de AEM Publish en el puerto 4503
-* [Siga las instrucciones especificadas en desarrollo con el usuario de servicios en AEM Forms](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html). Asegúrese de crear el usuario del servicio e implementar el paquete en la instancia de AEM Author y Publish.
+* [Siga las instrucciones especificadas en desarrollo con el usuario de servicio en AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html). Asegúrese de crear el usuario del servicio e implementar el paquete en la instancia de AEM Author y Publish.
 * [Abra la configuración de osgi  ](http://localhost:4503/system/console/configMgr).
 * Busque **Apache Sling Referrer Filter**. Asegúrese de que la casilla de verificación Permitir vacío esté seleccionada.
 * [Implemente el paquete personalizado AEMFormDocumentService](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar). Este paquete debe implementarse en la instancia de AEM Publish. Este paquete tiene el código para generar un PDF interactivo a partir de un formulario móvil.
 * [Descargue y descomprima los recursos relacionados con este artículo.](assets/offline-pdf-submission-assets.zip) Obtendrá lo siguiente
    * **offline-submit-profile.zip** : este paquete de AEM contiene el perfil personalizado que le permite descargar el pdf interactivo en su sistema de archivos local. Implemente este paquete en la instancia de AEM Publish.
    * **xdp-form-and-workflow.zip** : este paquete de AEM contiene XDP, un flujo de trabajo de muestra, un lanzador configurado en el contenido del nodo/envíos pdf. Implemente este paquete en su instancia de AEM Author y Publish.
-   * **HandlePDFSubmission.HandlePDFSubmission.core-1.0-SNAPSHOT.jar** : este es el paquete de AEM que realiza la mayor parte del trabajo. Este paquete contiene el servlet montado en `/bin/startworkflow`. Este servlet guarda los datos del formulario enviados en el nodo `/content/pdfsubmissions` del repositorio de AEM. Implemente este paquete en su instancia de AEM Author y Publish.
+   * **HandlePDFSubmission.HandlePDFSubmission.core-1.0-SNAPSHOT.jar** : este es el paquete de AEM que realiza la mayor parte del trabajo. Este paquete contiene el servlet montado en `/bin/startworkflow`. Este servlet guarda los datos del formulario enviados en el nodo `/content/pdfsubmissions` en AEM repositorio. Implemente este paquete en su instancia de AEM Author y Publish.
 * [Vista previa del formulario móvil](http://localhost:4503/content/dam/formsanddocuments/testsubmision.xdp/jcr:content)
 * Rellene varios campos y, a continuación, haga clic en el botón de la barra de herramientas para descargar el PDF interactivo.
 * Complete el PDF descargado con Acrobat y pulse el botón Enviar.
 * Debería recibir un mensaje de éxito
 * Inicie sesión en la instancia de AEM Author como administrador
-* [Compruebe la bandeja de entrada de AEM](http://localhost:4502/aem/inbox)
+* [Marque la Bandeja de entrada AEM](http://localhost:4502/aem/inbox)
 * Debe tener un elemento de trabajo para revisar el PDF enviado
 
 >[!NOTE]
