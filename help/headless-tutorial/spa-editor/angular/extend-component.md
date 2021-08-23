@@ -13,10 +13,10 @@ thumbnail: 5871-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: bf9ab30f57faa23721d7d27b837d8e0f0e8cf4f1
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1989'
-ht-degree: 3%
+source-wordcount: '1967'
+ht-degree: 1%
 
 ---
 
@@ -33,13 +33,13 @@ Obtenga información sobre cómo ampliar un componente principal existente para 
 
 ## Qué va a generar
 
-En este capítulo se creará un nuevo componente `Card`. El componente `Card` ampliará el [Componente principal de imagen](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/components/image.html) agregando campos de contenido adicionales como un Título y un botón Llamada a acción para realizar la función de un teaser para otro contenido dentro del SPA.
+En este capítulo se creará un nuevo componente `Card`. El componente `Card` ampliará el [Componente principal de imagen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) agregando campos de contenido adicionales como un Título y un botón Llamada a acción para realizar la función de un teaser para otro contenido dentro del SPA.
 
 ![Creación final del componente de tarjeta](assets/extend-component/final-authoring-card.png)
 
 >[!NOTE]
 >
-> En una implementación real, puede ser más apropiado simplemente utilizar el [Componente teaser](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/components/teaser.html) y luego ampliar el [Componente principal de imagen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) para crear un componente `Card` según los requisitos del proyecto. Siempre se recomienda utilizar [Componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) directamente cuando sea posible.
+> En una implementación real, puede ser más apropiado simplemente utilizar el [Componente teaser](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/teaser.html) y luego ampliar el [Componente principal de imagen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) para crear un componente `Card` según los requisitos del proyecto. Siempre se recomienda utilizar [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) directamente cuando sea posible.
 
 ## Requisitos previos
 
@@ -106,13 +106,13 @@ El código de inicio de capítulo ha proporcionado un componente de tarjeta inic
 
    Observe que `sling:resourceSuperType` apunta a `core/wcm/components/image/v2/image`. Esto indica que el componente WKND SPA Imagen hereda toda la funcionalidad de la imagen del componente principal.
 
-   También conocido como [Proxy pattern](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/guidelines.html#proxy-component-pattern) La herencia de recursos de Sling es un potente patrón de diseño para permitir que los componentes secundarios hereden la funcionalidad y amplíen/anulen el comportamiento si lo desean. La herencia de Sling admite varios niveles de herencia, por lo que en última instancia el nuevo componente `Card` hereda la funcionalidad de la imagen del componente principal.
+   También conocido como [Proxy pattern](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html#proxy-component-pattern) La herencia de recursos de Sling es un potente patrón de diseño para permitir que los componentes secundarios hereden la funcionalidad y amplíen/anulen el comportamiento si lo desean. La herencia de Sling admite varios niveles de herencia, por lo que en última instancia el nuevo componente `Card` hereda la funcionalidad de la imagen del componente principal.
 
    Muchos equipos de desarrollo se esfuerzan por ser D.R.Y. (no se repitan). La herencia de Sling permite hacerlo con AEM.
 
 4. Debajo de la carpeta `card`, abra el archivo `_cq_dialog/.content.xml`.
 
-   Este archivo es la definición de cuadro de diálogo de componente para el componente `Card`. Si se utiliza la herencia de Sling, es posible utilizar las funciones de [fusión de recursos de Sling](https://docs.adobe.com/content/help/en/experience-manager-65/developing/platform/sling-resource-merger.html) para anular o ampliar partes del cuadro de diálogo. En este ejemplo, se ha añadido una nueva pestaña al cuadro de diálogo para capturar datos adicionales de un autor y rellenar el componente de tarjeta.
+   Este archivo es la definición de cuadro de diálogo de componente para el componente `Card`. Si se utiliza la herencia de Sling, es posible utilizar las funciones de [fusión de recursos de Sling](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/sling-resource-merger.html) para anular o ampliar partes del cuadro de diálogo. En este ejemplo, se ha añadido una nueva pestaña al cuadro de diálogo para capturar datos adicionales de un autor y rellenar el componente de tarjeta.
 
    Las propiedades como `sling:orderBefore` permiten a un desarrollador elegir dónde insertar nuevas fichas o campos de formulario. En este caso, la pestaña `Text` se insertará antes de la pestaña `asset`. Para aprovechar al máximo la fusión de recursos de Sling, es importante conocer la estructura de nodos del cuadro de diálogo original para el [cuadro de diálogo del componente Imagen](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/image/v2/image/_cq_dialog/.content.xml).
 
@@ -296,7 +296,7 @@ Vuelva al IDE de su elección y abra el módulo `core` .
    }
    ```
 
-   Siempre se llamará a `@PostConstruct initModel()` cuando se inicialice el modelo Sling, por lo que es una buena oportunidad para inicializar objetos que puedan ser utilizados por otros métodos del modelo. El `pageManager` es uno de varios [objetos globales con respaldo de Java](https://docs.adobe.com/content/help/en/experience-manager-htl/using/htl/global-objects.html#java-backed-objects) que están disponibles para los modelos Sling a través de la anotación `@ScriptVariable`. El método [getPage](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/day/cq/wcm/api/PageManager.html#getPage-java.lang.String-) toma una ruta y devuelve un objeto [Page](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/day/cq/wcm/api/Page.html) AEM o nulo si la ruta no apunta a una página válida.
+   Siempre se llamará a `@PostConstruct initModel()` cuando se inicialice el modelo Sling, por lo que es una buena oportunidad para inicializar objetos que puedan ser utilizados por otros métodos del modelo. El `pageManager` es uno de varios [objetos globales con respaldo de Java](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/global-objects.html#java-backed-objects) que están disponibles para los modelos Sling a través de la anotación `@ScriptVariable`. El método [getPage](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html#getPage-java.lang.String-) toma una ruta y devuelve un objeto [Page](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Page.html) AEM o nulo si la ruta no apunta a una página válida.
 
    Esto inicializará la variable `cardPage` , que los demás métodos nuevos utilizarán para devolver datos sobre la página vinculada subyacente.
 
