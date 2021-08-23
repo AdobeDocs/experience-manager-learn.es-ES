@@ -1,7 +1,6 @@
 ---
 title: Variaciones de fragmento de contenido
 description: Aprenda a crear variaciones de fragmentos de contenido y explore algunos casos de uso comunes.
-sub-product: activos
 version: cloud-service
 topic: Sin objetivos, Administración de contenido
 feature: Fragmentos de contenido, API de GraphQL
@@ -9,9 +8,9 @@ role: Developer
 level: Beginner
 kt: 7874
 thumbnail: 333295.jpg
-source-git-commit: 1853960cce1e17ade43e4b2d7b521f63c4d04d71
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '87'
+source-wordcount: '86'
 ht-degree: 0%
 
 ---
