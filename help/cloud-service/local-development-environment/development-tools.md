@@ -12,9 +12,9 @@ thumbnail: 25907.jpg
 topic: Desarrollo
 role: Developer
 level: Beginner
-source-git-commit: 6b4b9d7039b7b1c60ed1a7e5ec4ed42250499cec
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1428'
 ht-degree: 2%
 
 ---
@@ -66,7 +66,7 @@ Si está usando Homebrew, siga las instrucciones de __Instalar usando Homebrew__
 
 ## Instalar Git
 
-[](https://git-scm.com/) Proporciona el sistema de administración del control de código fuente utilizado por  [Adobe Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/source-code-repository.html) y, por lo tanto, es necesario para el desarrollo.
+[](https://git-scm.com/) Proporciona el sistema de administración del control de código fuente utilizado por  [Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/source-code-repository.html) y, por lo tanto, es necesario para el desarrollo.
 
 + Instalación de Git con Homebrew
    1. Abra el símbolo del sistema/terminal
@@ -118,7 +118,7 @@ Apache Maven es la herramienta de línea de comandos Java de código abierto que
 
 ![Maven](./assets/development-tools/maven.png)
 
-## Configuración de la CLI de Adobe I/O{#aio-cli}
+## Configuración de CLI de Adobe I/O{#aio-cli}
 
 El [Adobe I/O CLI](https://github.com/adobe/aio-cli), o `aio`, proporciona acceso a la línea de comandos a una variedad de servicios de Adobe, incluidos [Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager) y [Asset compute](https://github.com/adobe/aio-cli-plugin-asset-compute). La CLI de Adobe I/O desempeña un papel integral en el desarrollo en AEM como Cloud Service, ya que proporciona a los desarrolladores la capacidad de:
 
@@ -131,13 +131,13 @@ El [Adobe I/O CLI](https://github.com/adobe/aio-cli), o `aio`, proporciona acces
    + Ejecute `node --version` para confirmar
 1. Ejecute `npm install -g @adobe/aio-cli` para instalar el módulo npm `aio` globalmente
 
-### Configure el complemento de Adobe I/O CLI Cloud Manager{#aio-cloud-manager}
+### Configuración del complemento de Adobe I/O CLI Cloud Manager{#aio-cloud-manager}
 
 El complemento de Adobe I/O Cloud Manager permite que la CLI de aio interactúe con Adobe Cloud Manager a través del comando `aio cloudmanager`.
 
 1. Ejecute `aio plugins:install @adobe/aio-cli-plugin-cloudmanager` para instalar el complemento [aio Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 
-### Configure el complemento de Asset compute de CLI de Adobe I/O{#aio-asset-compute}
+### Configuración del complemento de Asset compute de CLI de Adobe I/O{#aio-asset-compute}
 
 El complemento de Adobe I/O Cloud Manager permite que la CLI de aio genere y ejecute Assets computes a través del comando `aio asset-compute`.
 
