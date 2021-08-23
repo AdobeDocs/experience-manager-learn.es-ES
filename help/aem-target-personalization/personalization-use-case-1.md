@@ -1,26 +1,25 @@
 ---
-title: Personalización mediante Fragmentos de experiencia de AEM y Adobe Target
-seo-title: Personalización mediante fragmentos de experiencia de Adobe Experience Manager (AEM) y Adobe Target
+title: Personalización mediante AEM fragmentos de experiencias y Adobe Target
+seo-title: Personalización mediante Fragmentos de experiencia de Adobe Experience Manager (AEM) y Adobe Target
 description: Un tutorial completo que muestra cómo crear y ofrecer experiencias personalizadas con fragmentos de experiencia de Adobe Experience Manager y Adobe Target.
 seo-description: Un tutorial completo que muestra cómo crear y ofrecer experiencias personalizadas con fragmentos de experiencia de Adobe Experience Manager y Adobe Target.
-feature: Experience Fragments
-topic: Personalization
+feature: Fragmentos de experiencias
+topic: Personalización
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1734'
+source-wordcount: '1728'
 ht-degree: 1%
 
 ---
 
 
-# Personalización mediante Fragmentos de experiencia de AEM y Adobe Target
+# Personalización mediante AEM fragmentos de experiencias y Adobe Target
 
-Con la capacidad de exportar fragmentos de experiencia de AEM a Adobe Target como ofertas HTML, puede combinar la facilidad de uso y la potencia de AEM con potentes capacidades de Inteligencia automatizada (AI) y Aprendizaje automático (ML) en Target para probar y personalizar experiencias a escala.
+Con la capacidad de exportar AEM fragmentos de experiencia a Adobe Target como ofertas HTML, puede combinar la facilidad de uso y la potencia de las AEM con potentes capacidades de Inteligencia automatizada (AI) y Aprendizaje automático (ML) en Target para probar y personalizar experiencias a escala.
 
-AEM reúne todo su contenido y recursos en una ubicación central para impulsar su estrategia de personalización. AEM le permite crear fácilmente contenido para escritorios, tabletas y dispositivos móviles en una ubicación sin necesidad de escribir código. No es necesario crear páginas para cada dispositivo: AEM ajusta automáticamente cada experiencia con el contenido.
+AEM reúne todo su contenido y recursos en una ubicación central para impulsar su estrategia de personalización. AEM permite crear fácilmente contenido para escritorios, tabletas y dispositivos móviles en una ubicación sin necesidad de escribir código. No es necesario crear páginas para cada dispositivo: AEM ajusta automáticamente cada experiencia con el contenido.
 
 Target permite ofrecer experiencias personalizadas a escala basada en una combinación de enfoques de aprendizaje automático basados en reglas y dirigidos por IA que incorporan variables de comportamiento, contextuales y sin conexión.  Con Target, puede configurar y ejecutar fácilmente actividades A/B y multivariable (MVT) para determinar las mejores ofertas, contenidos y experiencias.
 
@@ -40,27 +39,27 @@ Para este ejercicio, es necesario involucrar a los siguientes usuarios y para re
 ### Requisitos previos
 
 * **AEM**
-   * [Creación y publicación de ](./implementation.md#getting-aem) instancias de AEM en localhost 4502 y 4503 respectivamente.
+   * [AEM creación y publicación de ](./implementation.md#getting-aem) instancias en localhost 4502 y 4503 respectivamente.
 * **Experience Cloud**
-   * Acceso a sus organizaciones Adobe Experience Cloud: <https://>`<yourcompany>`.experiencecloud.adobe.com
+   * Acceso a sus organizaciones Adobe Experience Cloud - <https://>`<yourcompany>`.experiencecloud.adobe.com
    * Experience Cloud aprovisionado con las siguientes soluciones
       * [Adobe Target](https://experiencecloud.adobe.com)
 
 ### Página principal del sitio WKND
 
-![Escenario 1 de AEM Target](assets/personalization-use-case-1/aem-target-use-case-1-4.png)
+![Escenario de AEM objetivo 1](assets/personalization-use-case-1/aem-target-use-case-1-4.png)
 
-1. El especialista en marketing inicia el debate de la campaña WKND SkateFest con el Editor de contenido de AEM y detalla los requisitos.
+1. El especialista en marketing inicia el debate de la campaña WKND SkateFest con AEM editor de contenido y detalla los requisitos.
    * ***Requisito***: Promocione la campaña WKND SkateFest en la página de inicio del sitio WKND con contenido personalizado para visitantes de cada estado de Estados Unidos. Añada un nuevo bloque de contenido debajo del carrusel de la página principal que contenga una imagen de fondo, texto y un botón.
       * **Imagen** de fondo: La imagen debe ser relevante para el estado desde el que el usuario está visitando la página del sitio WKND.
-      * **Texto**: &quot;Regístrese en las Audiciones&quot;
+      * **Texto**: &quot;Regístrese para los Audition&quot;
       * **Botón**: &quot;Detalles del evento&quot; que apuntan a la página de WKND SkateFest
       * **Página** SkateFest de WKND: una nueva página con detalles del evento, que incluye el lugar de la audiencia, la fecha y la hora.
-1. Según los requisitos, el Editor de contenido de AEM crea un fragmento de experiencia para el bloque de contenido y lo exporta a Adobe Target como una oferta. Para ofrecer contenido personalizado para todos los estados de los Estados Unidos, el autor de contenido puede crear una variación maestra de fragmentos de experiencias y, a continuación, crear otras 50 variaciones, una para cada estado. El contenido de cada variación de estado con imágenes y texto relevantes se puede editar manualmente. Al crear un fragmento de experiencia, los editores de contenido pueden acceder rápidamente a todos los recursos disponibles en AEM Assets mediante la opción del Buscador de recursos . Cuando se exporta un fragmento de experiencia a Adobe Target, todas sus variaciones se envían también a Adobe Target como ofertas.
+1. En función de los requisitos, AEM editor de contenido crea un fragmento de experiencia para el bloque de contenido y lo exporta a Adobe Target como una oferta. Para ofrecer contenido personalizado para todos los estados de los Estados Unidos, el autor de contenido puede crear una variación maestra de fragmentos de experiencias y, a continuación, crear otras 50 variaciones, una para cada estado. El contenido de cada variación de estado con imágenes y texto relevantes se puede editar manualmente. Al crear un fragmento de experiencia, los editores de contenido pueden acceder rápidamente a todos los recursos disponibles en AEM Assets mediante la opción del Buscador de recursos . Cuando se exporta un fragmento de experiencia a Adobe Target, todas sus variaciones también se envían a Adobe Target como ofertas.
 
 1. Después de exportar fragmentos de experiencia de AEM a Adobe Target como ofertas, los especialistas en marketing pueden crear actividades en Target mediante estas ofertas. Según la campaña SkateFest del sitio WKND, el especialista en marketing debe crear y ofrecer una experiencia personalizada a los visitantes del sitio WKND de cada estado. Para crear una actividad de segmentación de experiencias, el especialista en marketing debe identificar las audiencias. Para nuestra campaña WKND SkateFest, necesitamos crear 50 audiencias separadas, en función de su ubicación desde la cual están visitando el sitio web de WKND.
-   * [](https://docs.adobe.com/content/help/en/target/using/introduction/target-key-concepts.html#section_3F32DA46BDF947878DD79DBB97040D01) Las audiencias definen el público objetivo de la actividad y se utilizan en cualquier parte donde esté disponible la segmentación. Las audiencias de destino son un conjunto definido de criterios de visitantes. Las ofertas se pueden dirigir a audiencias (o segmentos) específicas. Solo los visitantes que pertenezcan a esa audiencia verán la experiencia segmentada para ellos.  Por ejemplo, puede enviar una oferta a una audiencia compuesta por visitantes que utilicen un navegador concreto o una ubicación geográfica específica.
-   * Una [oferta](https://docs.adobe.com/content/help/en/target/using/introduction/target-key-concepts.html#section_973D4CC4CEB44711BBB9A21BF74B89E9) es el contenido que se muestra en las páginas web durante campañas o actividades. Al probar las páginas web, se mide el éxito de cada experiencia con diferentes ofertas en las ubicaciones. Una oferta puede contener diferentes tipos de contenido, entre ellos:
+   * [](https://experienceleague.adobe.com/docs/target/using/introduction/target-key-concepts.html#section_3F32DA46BDF947878DD79DBB97040D01) Las audiencias definen el público objetivo de la actividad y se utilizan en cualquier parte donde esté disponible la segmentación. Las audiencias de destino son un conjunto definido de criterios de visitantes. Las ofertas se pueden dirigir a audiencias (o segmentos) específicas. Solo los visitantes que pertenezcan a esa audiencia verán la experiencia segmentada para ellos.  Por ejemplo, puede enviar una oferta a una audiencia compuesta por visitantes que utilicen un navegador concreto o una ubicación geográfica específica.
+   * Una [oferta](https://experienceleague.adobe.com/docs/target/using/introduction/target-key-concepts.html#section_973D4CC4CEB44711BBB9A21BF74B89E9) es el contenido que se muestra en las páginas web durante campañas o actividades. Al probar las páginas web, se mide el éxito de cada experiencia con diferentes ofertas en las ubicaciones. Una oferta puede contener diferentes tipos de contenido, entre ellos:
       * Imagen
       * Texto
       * **HTML**
@@ -86,7 +85,7 @@ Para este ejercicio, es necesario involucrar a los siguientes usuarios y para re
 
    ![Experience Cloud: Adobe Target](assets/personalization-use-case-1/exp-cloud-adobe-target.png)
 
-1. Vaya a la pestaña **Offers** y busque ofertas &quot;WKND&quot;. Debería poder ver la lista de variaciones de fragmentos de experiencias que se exportan desde AEM como ofertas HTML. Cada oferta corresponde a un estado. Por ejemplo, *WKND SkateFest California* es la oferta que se suministra a un visitante del sitio WKND de California.
+1. Vaya a la pestaña **Offers** y busque ofertas &quot;WKND&quot;. Debería poder ver la lista de variaciones de fragmentos de experiencias, exportadas desde AEM como ofertas HTML. Cada oferta corresponde a un estado. Por ejemplo, *WKND SkateFest California* es la oferta que se suministra a un visitante del sitio WKND de California.
 
    ![Experience Cloud: Adobe Target](assets/personalization-use-case-1/html-offers.png)
 
@@ -118,14 +117,14 @@ Para este ejercicio, es necesario involucrar a los siguientes usuarios y para re
 
 1. Seleccione el operador como **coincide con**, proporcione un valor apropiado (Por ejemplo: California) y **Guarde** los cambios. En nuestro caso, proporcione el nombre del estado.
 
-   ![Adobe Target: Regla geográfica](assets/personalization-use-case-1/audience-geo-rule.png)
+   ![Adobe Target: regla geográfica](assets/personalization-use-case-1/audience-geo-rule.png)
 
    >[!NOTE]
    >Puede tener varias reglas asignadas a una audiencia.
 
 1. Repita los pasos 6-9 para crear audiencias para los demás estados.
 
-   ![Adobe Target: audiencias de WKND](assets/personalization-use-case-1/adobe-target-audiences-50.png)
+   ![Adobe Target: Audiencias WKND](assets/personalization-use-case-1/adobe-target-audiences-50.png)
 
 En este punto, hemos creado audiencias correctamente para todos los visitantes del sitio WKND en diferentes estados de Estados Unidos de América y también tenemos la oferta HTML correspondiente para cada estado. Por lo tanto, ahora vamos a crear una actividad de segmentación de experiencias para dirigirse a la audiencia con una oferta correspondiente para la página principal del sitio WKND.
 
@@ -161,7 +160,7 @@ En este punto, hemos creado audiencias correctamente para todos los visitantes d
 1. Repita los pasos del 7 al 10 para añadir Segmentación de experiencias para los demás estados y elegir la oferta HTML correspondiente.
 1. Haga clic en **Siguiente** para continuar y verá una asignación para Audiencias a Experiencias.
 1. Haga clic en **Siguiente** para desplazarse a Objetivos y configuración.
-1. Elija la fuente de informes e identifique un objetivo principal para su actividad. Para nuestro escenario, vamos a seleccionar la fuente de informes como **Adobe Target**, midiendo la actividad como **Conversión**, acción como si se viera una página y URL que apunten a la página Detalles del WKND SkateFest.
+1. Elija la fuente de informes e identifique un objetivo principal para su actividad. Para nuestro escenario, vamos a seleccionar la fuente de informes como **Adobe Target**, midiendo la actividad como **Conversión**, acción como si se viera una página y dirección URL que apunte a la página Detalles del WKND SkateFest.
 
    ![Objetivo y objetivo: Target](assets/personalization-use-case-1/goal-metric-target.png)
 
@@ -191,4 +190,4 @@ En este punto, hemos creado audiencias correctamente para todos los visitantes d
 
 ## Resumen
 
-En este capítulo, un editor de contenido ha podido crear todo el contenido para admitir la campaña WKND SkateFest en Adobe Experience Manager y exportarlo a Adobe Target como ofertas HTML para crear Segmentación de experiencias, en función de la ubicación geográfica de los usuarios.
+En este capítulo, un editor de contenido pudo crear todo el contenido para admitir la campaña WKND SkateFest en Adobe Experience Manager y exportarlo a Adobe Target como ofertas HTML para crear Segmentación de experiencias, en función de la ubicación geográfica de los usuarios.
