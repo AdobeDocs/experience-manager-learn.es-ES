@@ -12,10 +12,9 @@ level: Beginner
 kt: 4128
 mini-toc-levels: 1
 thumbnail: 30386.jpg
-translation-type: tm+mt
-source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2003'
+source-wordcount: '1999'
 ht-degree: 1%
 
 ---
@@ -70,7 +69,7 @@ Siempre puede ver el código terminado en [GitHub](https://github.com/adobe/aem-
 
 ## Qué va a generar {#what-you-will-build}
 
-En este capítulo utilizaremos la función [Sistema de estilos](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html) para crear variaciones de los componentes **Título** y **Texto** utilizados en la página Artículo.
+En este capítulo utilizaremos la función [Sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html) para crear variaciones de los componentes **Título** y **Texto** utilizados en la página Artículo.
 
 ![Estilos disponibles para el título](assets/style-system/styles-added-title.png)
 
@@ -78,7 +77,7 @@ En este capítulo utilizaremos la función [Sistema de estilos](https://docs.ado
 
 ## Fondo {#background}
 
-El [Sistema de estilos](https://docs.adobe.com/content/help/es-ES/experience-manager-65/developing/components/style-system.html) permite a los desarrolladores y editores de plantillas crear varias variaciones visuales de un componente. A su vez, los autores pueden decidir qué estilo utilizar al componer una página. Aprovecharemos el sistema de estilos en el resto del tutorial para lograr varios estilos únicos, mientras aprovechamos los componentes principales en un enfoque de código bajo.
+El [Sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html) permite a los desarrolladores y editores de plantillas crear varias variaciones visuales de un componente. A su vez, los autores pueden decidir qué estilo utilizar al componer una página. Aprovecharemos el sistema de estilos en el resto del tutorial para lograr varios estilos únicos, mientras aprovechamos los componentes principales en un enfoque de código bajo.
 
 La idea general del sistema de estilos es que los autores puedan elegir distintos estilos de aspecto de un componente. Los &quot;estilos&quot; están respaldados por clases CSS adicionales que se insertan en el div exterior de un componente. En las bibliotecas de cliente, las reglas CSS se añaden en función de estas clases de estilo para que el componente cambie de aspecto.
 
@@ -392,7 +391,7 @@ A continuación, añada una nueva política para los componentes Texto .
 
    Como autor, debería poder activar o desactivar el estilo.
 
-## Ancho fijo: contenedor (bono) {#layout-container}
+## Ancho fijo - Contenedor (bono) {#layout-container}
 
 Los componentes de contenedor se han utilizado para crear la estructura básica de la plantilla de página de artículo y proporcionar las zonas de colocación para que los autores de contenido añadan contenido en una página. Los contenedores también pueden aprovechar el sistema de estilos, lo que proporciona a los autores de contenido aún más opciones para diseñar diseños.
 
