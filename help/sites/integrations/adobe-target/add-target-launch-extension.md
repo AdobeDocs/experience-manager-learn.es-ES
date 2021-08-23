@@ -8,23 +8,22 @@ activity: setup
 version: cloud-service
 kt: 6131
 thumbnail: 41247.jpg
-topic: Integrations
+topic: Integraciones
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 1%
+source-wordcount: '107'
+ht-degree: 0%
 
 ---
 
 
 # Añadir extensión de Target a una propiedad de Launch {#adobe-target-extension}
 
-Para seguir este vídeo, ya debe haber [integrado Experience Platform Launch con AEM](../experience-platform-launch/overview.md).
+Para seguir con este vídeo, ya debe tener [Experience Platform Launch integrado con AEM](../experience-platform-launch/overview.md).
 
-Obtenga información sobre cómo habilitar Adobe Target en su sitio web de AEM mediante Experience Platform Launch.
+Obtenga información sobre cómo habilitar Adobe Target en el sitio web de AEM mediante Experience Platform Launch.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41247?quality=12&learn=on)
 
@@ -34,6 +33,6 @@ Obtenga información sobre cómo habilitar Adobe Target en su sitio web de AEM m
 
 ## Compatibilidad con vínculos
 
-+ [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
++ [Adobe Experience Cloud Debugger: Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
 + [Adobe Experience Cloud Debugger: Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
-+ [Introducción a Adobe Experience Platform Debugger](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/web-sdk/introduction-to-the-experience-platform-debugger.html)
++ [Introducción a Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/debugger-learn/tutorials/experience-platform-debugger/introduction-to-the-experience-platform-debugger.html)
