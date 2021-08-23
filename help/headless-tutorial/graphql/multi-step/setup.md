@@ -1,12 +1,7 @@
 ---
 title: 'Configuración rápida: Introducción a AEM sin encabezado - GraphQL'
 description: Introducción a Adobe Experience Manager (AEM) y GraphQL. Instale el SDK de AEM, añada contenido de ejemplo e implemente una aplicación que consuma contenido de AEM con sus API de GraphQL. Consulte cómo AEM las experiencias en todos los canales.
-sub-product: sitios
-topics: headless
 version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
 mini-toc-levels: 1
 kt: 6386
 thumbnail: KT-6386.jpg
@@ -14,10 +9,9 @@ feature: Fragmentos de contenido, API de GraphQL
 topic: Sin objetivos, Administración de contenido
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: 81626b8d853f3f43d9c51130acf02561f91536ac
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1830'
+source-wordcount: '1829'
 ht-degree: 2%
 
 ---
@@ -74,7 +68,7 @@ Este tutorial utiliza el [AEM como Cloud Service SDK](https://experienceleague.a
 1. Después de unos minutos, la instancia de AEM terminará de instalarse y se abrirá una nueva ventana del explorador en [http://localhost:4502](http://localhost:4502).
 1. Inicie sesión con el nombre de usuario `admin` y la contraseña `admin`.
 
-## Instale contenido de muestra y extremos de GraphQL {#wknd-site-content-endpoints}
+## Instalación del contenido de ejemplo y los extremos de GraphQL {#wknd-site-content-endpoints}
 
 Se instalará contenido de muestra del **sitio de referencia de WKND** para acelerar el tutorial. El WKND es una marca ficticia de estilo de vida, que a menudo se utiliza junto con AEM formación.
 
@@ -117,7 +111,7 @@ El sitio de referencia de WKND incluye configuraciones necesarias para exponer u
 >
 > Si utiliza un entorno de Cloud Service, consulte la documentación para saber cómo [implementar una base de código como el sitio de referencia WKND en un entorno de Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#deploying).
 
-## Instale la aplicación de ejemplo{#sample-app}
+## Instalación de la aplicación de ejemplo{#sample-app}
 
 Uno de los objetivos de este tutorial es mostrar cómo utilizar AEM contenido de una aplicación externa mediante las API de GraphQL. Este tutorial utiliza un ejemplo de aplicación React que se ha completado parcialmente para acelerar el tutorial. Las mismas lecciones y conceptos se aplican a las aplicaciones creadas con iOS, Android o cualquier otra plataforma. La aplicación React es intencionalmente sencilla, para evitar complejidad innecesaria; no pretende ser una implementación de referencia.
 
@@ -189,7 +183,7 @@ Ahora que la aplicación React se está ejecutando, actualice el contenido de AE
 
    ![Actualizado Bali Surf Camp Adventure](assets/setup/overnight-bali-surf-camp-changes.png)
 
-## Instale la herramienta GraphiQL {#install-graphiql}
+## Instalación de la herramienta GraphiQL {#install-graphiql}
 
 [](https://github.com/graphql/graphiql) GraphiQL es una herramienta de desarrollo que solo se necesita en entornos de nivel inferior como una instancia local o de desarrollo. El IDE de GraphiQL le permite probar y refinar rápidamente las consultas y los datos devueltos. GraphiQL también proporciona fácil acceso a la documentación, lo que facilita la comprensión de los métodos disponibles.
 
@@ -219,7 +213,7 @@ Felicidades, ahora tiene una aplicación externa que consume AEM contenido con G
 
 En el capítulo siguiente, [Definición de modelos de fragmento de contenido](content-fragment-models.md), aprenda a modelar contenido y a crear un esquema con **Modelos de fragmento de contenido**. Revisará los modelos existentes y creará un nuevo modelo. También aprenderá los diferentes tipos de datos que se pueden utilizar para definir un esquema como parte del modelo.
 
-## (Bono) Configuración de CORS {#cors-config}
+## Configuración CORS (bono) {#cors-config}
 
 AEM, al ser seguro de forma predeterminada, bloquea las solicitudes de origen cruzado, lo que impide que las aplicaciones no autorizadas se conecten a su contenido y lo muestren.
 
