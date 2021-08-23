@@ -1,20 +1,19 @@
 ---
 seo: Set up public and private keys for use with AEM and Adobe I/O
-description: 'AEM utiliza pares de claves pública y privada para comunicarse de forma segura con Adobe I/O y otros servicios web. Este breve tutorial ilustra cómo se pueden generar claves y almacenes de claves compatibles mediante la herramienta de línea de comandos openssl que funciona tanto con AEM como con Adobe I/O. '
+description: 'AEM utiliza pares de claves pública y privada para comunicarse de forma segura con el Adobe I/O y otros servicios web. Este breve tutorial ilustra cómo se pueden generar claves y almacenes de claves compatibles con la herramienta de línea de comandos openssl que funciona tanto con AEM como con Adobe I/O. '
 version: 6.4, 6.5
-feature: Users and Groups
+feature: Usuarios y grupos
 topics: authentication, integrations
 activity: setup
 audience: architect, developer, implementer
 doc-type: tutorial
 kt: 2450
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '772'
 ht-degree: 0%
 
 ---
@@ -22,7 +21,7 @@ ht-degree: 0%
 
 # Configuración de claves públicas y privadas para su uso con Adobe I/O
 
-AEM utiliza pares de claves pública y privada para comunicarse de forma segura con Adobe I/O y otros servicios web. Este breve tutorial ilustra cómo se pueden generar claves y almacenes de claves compatibles mediante la herramienta de línea de comandos [!DNL openssl] que funciona tanto con AEM como con Adobe I/O.
+AEM utiliza pares de claves pública y privada para comunicarse de forma segura con el Adobe I/O y otros servicios web. Este breve tutorial ilustra cómo se pueden generar claves y almacenes de claves compatibles mediante la herramienta de línea de comandos [!DNL openssl] que funciona tanto con AEM como con Adobe I/O.
 
 >[!CAUTION]
 >
@@ -30,13 +29,13 @@ AEM utiliza pares de claves pública y privada para comunicarse de forma segura 
 
 ## Generación del par de claves pública y privada {#generate-the-public-private-key-pair}
 
-El [[!DNL openssl]](https://www.openssl.org/docs/man1.0.2/man1/openssl.html) comando [[!DNL req] de la herramienta de línea de comandos](https://www.openssl.org/docs/man1.0.2/man1/req.html) se puede utilizar para generar un par de claves compatible con Adobe I/O y Adobe Experience Manager.
+El [[!DNL openssl]](https://www.openssl.org/docs/man1.0.2/man1/openssl.html) comando](https://www.openssl.org/docs/man1.0.2/man1/req.html) de la herramienta de línea de comandos [[!DNL req]  se puede utilizar para generar un par de claves compatible con Adobe I/O y Adobe Experience Manager.
 
 ```shell
 $ openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout private.key -out certificate.crt
 ```
 
-Para completar el comando [!DNL openssl generate], proporcione la información del certificado cuando se solicite. A Adobe I/O y AEM no les importa cuáles sean estos valores; sin embargo, deberían alinearse con y describir su clave.
+Para completar el comando [!DNL openssl generate], proporcione la información del certificado cuando se solicite. A Adobe I/O y AEM no les importa cuáles sean estos valores, sin embargo, deberían alinearse con y describir su clave.
 
 ```
 Generating a 2048 bit RSA private key
@@ -94,15 +93,15 @@ my-key, Feb 5, 2019, PrivateKeyEntry,
 Certificate fingerprint (SHA1): 7C:6C:25:BD:52:D3:3B:29:83:FD:A2:93:A8:53:91:6A:25:1F:2D:52
 ```
 
-![Verificar el almacén de claves en Adobe I/O](assets/set-up-public-private-keys-for-use-with-aem-and-adobe-io/adobe-io--public-keys.png)
+![Verificar el almacén de claves en el Adobe I/O](assets/set-up-public-private-keys-for-use-with-aem-and-adobe-io/adobe-io--public-keys.png)
 
 ## Añadir el almacén de claves a AEM {#adding-the-keystore-to-aem}
 
-AEM utiliza la **clave privada** generada para comunicarse de forma segura con Adobe I/O y otros servicios web. Para que AEM pueda acceder a la clave privada, esta debe instalarse en el almacén de claves de un usuario de AEM.
+AEM utiliza la **clave privada** generada para comunicarse de forma segura con el Adobe I/O y otros servicios web. Para que la clave privada sea accesible para AEM, debe instalarse en el almacén de claves de un usuario AEM.
 
 Vaya a **AEM > [!UICONTROL Herramientas] > [!UICONTROL Seguridad] > [!UICONTROL Usuarios]** y **edite el usuario** con el que se va a asociar la clave privada.
 
-### Crear un almacén de claves de AEM {#create-an-aem-keystore}
+### Crear un almacén de claves AEM {#create-an-aem-keystore}
 
 ![Crear KeyStore en ](assets/set-up-public-private-keys-for-use-with-aem-and-adobe-io/aem--create-keystore.png)
 *AEM >  [!UICONTROL Herramientas]  >  [!UICONTROL Seguridad]  >  [!UICONTROL Usuarios]  > Editar usuario*
@@ -133,9 +132,9 @@ En la consola del almacén de claves del usuario, haga clic en **[!UICONTROL Agr
 
 Cuando la clave privada se carga correctamente desde el almacén de claves proporcionado al almacén de claves de AEM, los metadatos de la clave privada se muestran en la consola del almacén de claves del usuario.
 
-## Adición de la clave pública a Adobe I/O {#adding-the-public-key-to-adobe-i-o}
+## Adición de la clave pública al Adobe I/O {#adding-the-public-key-to-adobe-i-o}
 
-La clave pública coincidente debe cargarse en Adobe I/O para permitir que el usuario del servicio AEM, que tiene la clave pública correspondiente privada para comunicarse de forma segura.
+La clave pública coincidente debe cargarse en el Adobe I/O para permitir que el usuario del servicio de AEM, que tiene la clave pública correspondiente como privada, se comunique de forma segura.
 
 ### Crear una nueva integración de Adobe I/O {#create-a-adobe-i-o-new-integration}
 
@@ -143,12 +142,12 @@ La clave pública coincidente debe cargarse en Adobe I/O para permitir que el us
 
 *[[!UICONTROL Crear integración de Adobe I/O]](https://console.adobe.io/)  >  [!UICONTROL Nueva integración]*
 
-Para crear una nueva integración en Adobe I/O es necesario cargar un certificado público. Cargue el **certificate.crt** generado por el comando `openssl req`.
+La creación de una nueva integración en Adobe I/O requiere la carga de un certificado público. Cargue el **certificate.crt** generado por el comando `openssl req`.
 
-### Compruebe que las claves públicas se cargan en Adobe I/O {#verify-the-public-keys-are-loaded-in-adobe-i-o}
+### Verifique que las claves públicas se carguen en el Adobe I/O {#verify-the-public-keys-are-loaded-in-adobe-i-o}
 
-![Comprobación de claves públicas en Adobe I/O](assets/set-up-public-private-keys-for-use-with-aem-and-adobe-io/adobe-io--public-keys.png)
+![Verificar claves públicas en el Adobe I/O](assets/set-up-public-private-keys-for-use-with-aem-and-adobe-io/adobe-io--public-keys.png)
 
-Las claves públicas instaladas y sus fechas de caducidad se enumeran en la consola [!UICONTROL Integrations] de Adobe I/O. Se pueden agregar varias claves públicas mediante el botón **[!UICONTROL Add a public key]**.
+Las claves públicas instaladas y sus fechas de caducidad se enumeran en la consola [!UICONTROL Integrations] en el Adobe I/O. Se pueden agregar varias claves públicas mediante el botón **[!UICONTROL Add a public key]**.
 
-Ahora, AEM tiene la clave privada y la integración de Adobe I/O contiene la clave pública correspondiente, lo que permite a AEM comunicarse de forma segura con Adobe I/O.
+Ahora AEM mantener la clave privada y la integración del Adobe I/O contiene la clave pública correspondiente, lo que permite AEM comunicarse de forma segura con el Adobe I/O.
