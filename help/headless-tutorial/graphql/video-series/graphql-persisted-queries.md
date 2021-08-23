@@ -1,7 +1,6 @@
 ---
 title: Consultas persistentes de GraphQL
 description: Obtenga información sobre cómo habilitar, crear actualizaciones y ejecutar consultas persistentes en AEM.
-sub-product: activos
 version: cloud-service
 topic: Sin objetivos, Administración de contenido
 feature: API de GraphQL
@@ -9,9 +8,9 @@ role: Developer
 level: Beginner
 kt: 7872
 thumbnail: 333429.jpeg
-source-git-commit: 1853960cce1e17ade43e4b2d7b521f63c4d04d71
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '78'
+source-wordcount: '77'
 ht-degree: 0%
 
 ---
