@@ -11,10 +11,10 @@ version: cloud-service
 topic: Administración de contenido
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 8%
+source-wordcount: '372'
+ht-degree: 5%
 
 ---
 
@@ -36,7 +36,7 @@ Esta serie de vídeos cubre el ciclo de vida de creación de fragmentos de conte
 
 >[!VIDEO](https://video.tv.adobe.com/v/22452/?quality=12&learn=on)
 
-AEM los modelos de fragmentos de contenido, los esquemas de datos de los fragmentos de contenido, deben habilitarse mediante AEM [[!UICONTROL Navegador de configuración]](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html), que permite definir los modelos de fragmentos de contenido según la configuración.
+AEM los modelos de fragmentos de contenido, los esquemas de datos de los fragmentos de contenido, deben habilitarse mediante AEM [[!UICONTROL Navegador de configuración]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html), que permite definir los modelos de fragmentos de contenido según la configuración.
 
 ## Creación de fragmentos de contenido {#creating-content-fragments}
 
@@ -73,8 +73,8 @@ Obtenga más información sobre [envío de fragmentos de contenido](content-frag
 ## Recursos adicionales {#additional-resources}
 
 * [Entrega de fragmentos de contenido](content-fragments-delivery-feature-video-use.md)
-* [Componentes principales AEM WCM](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html)
-* [AEM Componente de fragmento de contenido principal de WCM](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)
+* [Componentes principales AEM WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
+* [AEM Componente de fragmento de contenido principal de WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
 
 Para descargar e instalar el paquete siguiente en una instancia de AEM 6.4+ para el estado final de la serie de vídeos:
 
