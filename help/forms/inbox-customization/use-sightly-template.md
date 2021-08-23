@@ -1,21 +1,20 @@
 ---
 title: Personalización de la bandeja de entrada
 description: Añadir columnas personalizadas para mostrar datos adicionales del flujo de trabajo mediante una plantilla de aspecto
-feature: Adaptive Forms
+feature: Formularios adaptables
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.5.5
 kt: 5830
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 4%
+source-wordcount: '292'
+ht-degree: 3%
 
 ---
 
@@ -82,11 +81,11 @@ return val;
 
 >[!NOTE]
 >
->Este artículo supone que ha instalado el [ejemplo de flujo de trabajo](assets/review-workflow.zip) y el [formulario de ejemplo](assets/snap-form.zip) del [artículo anterior](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/inbox-customization/add-married-column.md) en esta serie.
+>Este artículo supone que ha instalado el [ejemplo de flujo de trabajo](assets/review-workflow.zip) y el [formulario de ejemplo](assets/snap-form.zip) del [artículo anterior](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/inbox-customization/add-married-column.md) en esta serie.
 
 * [Inicie sesión en crx como usuario administrador](http://localhost:4502/crx/de/index.jsp)
 * [importar plantilla](assets/sightly-template.zip)
-* [Iniciar sesión en la consola web de AEM](http://localhost:4502/system/console/bundles)
+* [Iniciar sesión en AEM consola web](http://localhost:4502/system/console/bundles)
 * [Implementar e iniciar el paquete de personalización de la bandeja de entrada](assets/income-column-customization.jar)
 * [Abra la bandeja de entrada](http://localhost:4502/aem/inbox)
 * Abra Control de administración haciendo clic en Vista de lista junto al botón Crear
@@ -95,4 +94,4 @@ return val;
 * Seleccione el _estado civil_ y envíe el formulario
 * [Ver bandeja de entrada](http://localhost:4502/aem/inbox)
 
-Al enviar el formulario, se activará el flujo de trabajo y se asignará una tarea al usuario &quot;admin&quot;. Debería ver el icono apropiado en la columna de ingresos
+Si se envía el formulario, se déclencheur el flujo de trabajo y se asigna una tarea al usuario &quot;admin&quot;. Debería ver el icono apropiado en la columna de ingresos
