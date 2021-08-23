@@ -1,17 +1,17 @@
 ---
 title: AEM aplicación de escritorio
 description: Utilice AEM aplicación de escritorio para simplificar el acceso a cualquier recurso administrado en AEM en el escritorio, para cualquier aplicación y formato de archivo.
-kt: 2551
-sub-product: activos
-feature: Aplicación de escritorio de Experience Manager
 version: 6.5, 6.4, 6.3
 topic: Administración de contenido
+feature: Aplicación de escritorio
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+kt: 2551
+thumbnail: 28868.jpeg
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '143'
-ht-degree: 11%
+source-wordcount: '138'
+ht-degree: 5%
 
 ---
 
@@ -33,4 +33,4 @@ Utilice AEM aplicación de escritorio para simplificar el acceso a cualquier rec
 
 ## Recursos adicionales
 
-+ [Descargue la aplicación de escritorio AEM más reciente](https://docs.adobe.com/content/help/es-ES/experience-manager-desktop-app/using/release-notes.html)
++ [Descargue la aplicación de escritorio AEM más reciente](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html)
