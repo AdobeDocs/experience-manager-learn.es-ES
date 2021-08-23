@@ -3,37 +3,36 @@ title: Configuración de Sling Dynamic Include para AEM
 description: Una guía de vídeo sobre la instalación y el uso de Apache Sling Dynamic Include con AEM Dispatcher que se ejecuta en el servidor web HTTP Apache.
 version: 6.3, 6.4, 6.5
 sub-product: fundaciones, sitios
-feature: APIs
+feature: API
 topics: caching
 activity: develop
 audience: architect, developer
 doc-type: technical video
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 6%
+source-wordcount: '261'
+ht-degree: 5%
 
 ---
 
 
 # Configurar [!DNL Sling Dynamic Include]
 
-Un vídeo de introducción a la instalación y el uso de [!DNL Apache Sling Dynamic Include] con [AEM Dispatcher](https://docs.adobe.com/content/help/es-ES/experience-manager-dispatcher/using/dispatcher.html) que se ejecuta en [!DNL Apache HTTP Web Server].
+Un vídeo de introducción a la instalación y el uso de [!DNL Apache Sling Dynamic Include] con [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es) que se ejecuta en [!DNL Apache HTTP Web Server].
 
 >[!VIDEO](https://video.tv.adobe.com/v/17040/?quality=12&learn=on)
 
 >[!NOTE]
 >
-> Asegúrese de que la última versión de AEM Dispatcher esté instalada localmente.
+> Asegúrese de que la versión más reciente de AEM Dispatcher esté instalada localmente.
 
 1. Descargue e instale el [[!DNL Sling Dynamic Include] paquete](https://sling.apache.org/downloads.cgi).
 1. Configure [!DNL Sling Dynamic Include] a través de [!DNL OSGi Configuration Factory] en **http://&lt;host>:&lt;port>/system/console/configMgr/org.apache.sling.dynamicinclude.Configuration**.
 
-   O bien, para añadir a una base de código de AEM, cree el nodo **sling:OsgiConfig** apropiado en:
+   O bien, para agregar a una base de código AEM, cree el nodo **sling:OsgiConfig** apropiado en:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -151,7 +150,7 @@ Un vídeo de introducción a la instalación y el uso de [!DNL Apache Sling Dyna
 
 >[!NOTE]
 >
->Si está utilizando [!DNL Sling Dynamic Includes] para servir las órdenes de inclusión del lado del perímetro (ESI), asegúrese de almacenar en caché los encabezados de respuesta relevantes [en la caché del despachante](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#CachingHTTPResponseHeaders). Los posibles encabezados son los siguientes:
+>Si está utilizando [!DNL Sling Dynamic Includes] para servir las órdenes de inclusión del lado del perímetro (ESI), asegúrese de almacenar en caché los encabezados de respuesta relevantes [en la caché del despachante](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#CachingHTTPResponseHeaders). Los posibles encabezados son los siguientes:
 >
 >* &quot;Cache-Control&quot;
 >* &quot;Disposición de contenido&quot;
