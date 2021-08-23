@@ -4,19 +4,18 @@ seo-title: Tutoriales de AEM Sites
 description: 'Una colección de vídeos y tutoriales para Adobe Experience Manager Sites. '
 seo-description: Una colección de vídeos y tutoriales para Adobe Experience Manager Sites
 sub-product: sitios, servicios de contenido
-topic: Content Management
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+topic: Administración de contenido
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 25%
+source-wordcount: '357'
+ht-degree: 21%
 
 ---
 
 
 # Información general {#overview}
 
-Adobe Experience Manager (AEM) Sites es una plataforma líder de administración de experiencias. Esta guía del usuario contiene vídeos y tutoriales sobre las numerosas funciones y capacidades de AEM Sites.
+Adobe Experience Manager (AEM) Sites es una plataforma líder de administración de experiencias. Esta guía del usuario contiene vídeos y tutoriales sobre las numerosas funciones y funcionalidades de AEM Sites.
 
 ## Novedades
 
@@ -26,7 +25,7 @@ Adobe Experience Manager (AEM) Sites es una plataforma líder de administración
 
 * **[Personalización de la capa de datos del cliente de Adobe con componentes AEM (tutorial)](./integrations/adobe-client-data-layer/data-layer-customize.md)**
 
-   *Obtenga información sobre cómo actualizar la capa de datos del cliente de Adobe con contenido de componentes personalizados de AEM.*
+   *Obtenga información sobre cómo actualizar la capa de datos del cliente de Adobe con contenido de componentes de AEM personalizados.*
 
 * **[Introducción a AEM Headless GraphQL (tutorial)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)**
 
@@ -38,18 +37,18 @@ Adobe Experience Manager (AEM) Sites es una plataforma líder de administración
 
 * **[Uso del Editor de SPA (vídeo)](./spa-editor/spa-editor-framework-feature-video-use.md)**
 
-   *Obtenga información sobre las capacidades de edición de AEM para aplicaciones de una sola página (SPA).*
+   *Obtenga información sobre AEM funciones de edición para aplicaciones de una sola página (SPA).*
 
 ## Selección de personal
 
 <table>
 <tr>
   <td>
-    <a href="https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html">
       <img alt="Introducción a AEM Sites: Tutorial de WKND" src="./assets/aem-wknd-tutorial.png" />
     </a>
     <div>
-      <a href="https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html">
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html">
     <strong>Introducción a AEM Sites</strong>
     </a>
     </div>
@@ -58,25 +57,25 @@ Adobe Experience Manager (AEM) Sites es una plataforma líder de administración
     <p>
   </td>
   <td>
-    <a href="https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-with-aem-headless/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html">
     <img alt="Introducción a AEM sin encabezado" src="./assets/aem-headless-tutorial.png" />
     </a>
     <div>
-    <a href="https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-with-aem-headless/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html">
     <strong>Introducción a AEM sin encabezado</strong>
     </a>
     </div>
     <p>
-    <em>Una guía de introducción para los desarrolladores que buscan utilizar AEM como CMS sin encabezado.</em>
+    <em>Una guía de introducción para desarrolladores que buscan utilizar AEM como CMS sin encabezado.</em>
     </p>
   </td>
   <td>
-    <a href="https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html">
-      <img alt="Introducción al Editor de SPA de AEM" src="./assets/aem-wknd-spa-editor-tutorial.png" />
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html">
+      <img alt="Introducción a AEM Editor de SPA" src="./assets/aem-wknd-spa-editor-tutorial.png" />
     </a>
      <div>
-      <a href="https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html">
-        <strong>Introducción al Editor de SPA de AEM</strong>
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html">
+        <strong>Introducción a AEM Editor de SPA</strong>
       </a>
     </div>
     <p>
