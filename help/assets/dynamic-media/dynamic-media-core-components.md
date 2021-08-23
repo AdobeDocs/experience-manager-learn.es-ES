@@ -1,16 +1,15 @@
 ---
 title: Uso de Dynamic Media con los componentes principales de AEM Sites
 description: Aprenda a utilizar Dynamic Media con Adobe Experience Manager Sites. El componente Imagen, que forma parte de los componentes principales de Experience Manager, tiene compatibilidad integrada con Dynamic Media. El componente Imagen permite que un autor de contenido utilice funciones de Dynamic Media como ajustes preestablecidos de imagen, Recorte inteligente y Modificadores de imagen en una página de AEM Sites.
-sub-product: dynamic-media
-feature: Componentes principales, Recorte inteligente, perfiles de imagen, ajustes preestablecidos de imagen
+feature: Componentes principales, recorte inteligente, perfiles de imagen, ajustes preestablecidos de imagen
 version: cloud-service
-kt: 6630
 topic: Administración de contenido
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+kt: 6630
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '152'
+source-wordcount: '151'
 ht-degree: 2%
 
 ---
