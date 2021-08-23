@@ -13,10 +13,10 @@ kt: 193
 topic: Administración de contenido
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 9%
+source-wordcount: '252'
+ht-degree: 5%
 
 ---
 
@@ -42,5 +42,5 @@ URL de plantillas editables (instancia AEM local): [http://localhost:4502/libs/w
 
 ## Recursos adicionales {#additional-resources}
 
-* [Plantillas de página editables: documentación](https://docs.adobe.com/content/help/es-ES/experience-manager-65/developing/platform/templates/page-templates-editable.html)
-* [Creación de plantillas de página: documentación](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/siteandpage/templates.html)
+* [Plantillas de página editables: documentación](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html)
+* [Creación de plantillas de página: documentación](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/templates.html)
