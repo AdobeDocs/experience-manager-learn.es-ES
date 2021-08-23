@@ -10,9 +10,9 @@ feature: Dynamic Media Classic
 topic: Administración de contenido
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '897'
 ht-degree: 1%
 
 ---
@@ -45,7 +45,7 @@ En esta guía analizaremos las siguientes funcionalidades principales de Dynamic
 - **Vídeo.** Cargue vídeos finales, publíquelos y descargue progresivamente los mismos en visualizadores de vídeo configurables.
 - **Imágenes inteligentes.** Tecnología que aprovecha las capacidades de Adobe Sensei AI y funciona con los &quot;ajustes preestablecidos de imagen&quot; existentes para mejorar el rendimiento de la entrega de imágenes optimizando automáticamente el formato, el tamaño y la calidad de las imágenes en función de las capacidades del navegador del cliente.
 
-Para descubrir funcionalidades adicionales de la solución, visite [Documentation for Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/intro/introduction.html).
+Para descubrir funcionalidades adicionales de la solución, visite [Documentation for Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/introduction.html).
 
 ## Interfaz de usuario (IU) de Dynamic Media Classic
 
@@ -75,4 +75,4 @@ _IU de Dynamic Media Classic_
 >
 >Seleccione la casilla **Publicar después de cargar** en el cuadro de diálogo Cargar para publicar automáticamente los recursos al cargarlos.
 
-Obtenga más información sobre [Desplazamiento por la IU de Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/getting-started/navigation-basics.html).
+Obtenga más información sobre [Desplazamiento por la IU de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/navigation-basics.html).
