@@ -1,29 +1,24 @@
 ---
 title: Personalización de la capa de datos del cliente de Adobe con componentes AEM
-description: Obtenga información sobre cómo personalizar la capa de datos del cliente de Adobe con contenido de componentes personalizados de AEM. Aprenda a utilizar las API proporcionadas por los componentes principales de AEM para ampliar y personalizar la capa de datos.
-feature: Adobe Client Data Layer, Core Component
-topics: integrations
-audience: developer
-doc-type: tutorial
-activity: use
+description: Obtenga información sobre cómo personalizar la capa de datos del cliente de Adobe con contenido de componentes de AEM personalizados. Aprenda a utilizar las API proporcionadas por AEM componentes principales para ampliar y personalizar la capa de datos.
 version: cloud-service
-kt: 6265
-thumbnail: KT-6265.jpg
-topic: Integrations
+topic: Integraciones
+feature: Capa de datos del cliente de Adobe, componentes principales
 role: Developer
 level: Intermediate, Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+kt: 6265
+thumbnail: KT-6265.jpg
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2037'
-ht-degree: 3%
+source-wordcount: '2028'
+ht-degree: 1%
 
 ---
 
 
 # Personalización de la capa de datos del cliente de Adobe con componentes AEM {#customize-data-layer}
 
-Obtenga información sobre cómo personalizar la capa de datos del cliente de Adobe con contenido de componentes personalizados de AEM. Aprenda a utilizar las API proporcionadas por los [Componentes principales de AEM para ampliar](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/extending.html) y personalizar la capa de datos.
+Obtenga información sobre cómo personalizar la capa de datos del cliente de Adobe con contenido de componentes de AEM personalizados. Aprenda a utilizar las API proporcionadas por los [AEM componentes principales para ampliar](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/extending.html) y personalizar la capa de datos.
 
 ## Qué va a generar
 
@@ -39,13 +34,13 @@ En este tutorial, explorará varias opciones para ampliar la capa de datos del c
 
 ## Requisitos previos {#prerequisites}
 
-Se necesita un **entorno de desarrollo local** para completar este tutorial. Las capturas de pantalla y el vídeo se capturan utilizando el SDK de AEM as a Cloud Service que se ejecuta en un macOS. Los comandos y el código son independientes del sistema operativo local a menos que se indique lo contrario.
+Se necesita un **entorno de desarrollo local** para completar este tutorial. Las capturas de pantalla y el vídeo se capturan usando el SDK de AEM as a Cloud Service que se ejecuta en macOS. Los comandos y el código son independientes del sistema operativo local a menos que se indique lo contrario.
 
-**¿Es novato en el uso de AEM as a Cloud Service?** Consulte la [siguiente guía para configurar un entorno de desarrollo local con el SDK de AEM as a Cloud Service](https://docs.adobe.com/content/help/es-ES/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
+**¿Es novato en el uso de AEM as a Cloud Service?** Consulte la [siguiente guía para configurar un entorno de desarrollo local con el SDK de AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
 
-**¿Es novato en AEM 6.5?** Consulte la  [siguiente guía para configurar un entorno](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html) de desarrollo local.
+**¿Es nuevo en AEM 6.5?** Consulte la  [siguiente guía para configurar un entorno](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html) de desarrollo local.
 
-## Descargue e implemente el sitio de referencia WKND {#set-up-wknd-site}
+## Descargar e implementar el sitio de referencia de WKND {#set-up-wknd-site}
 
 Este tutorial amplía el componente Byline en el sitio de referencia de WKND. Clone e instale la base de código WKND en su entorno local.
 
@@ -80,13 +75,13 @@ Este tutorial amplía el componente Byline en el sitio de referencia de WKND. Cl
    window.adobeDataLayer.getState();
    ```
 
-   Inspeccione la respuesta para ver el estado actual de la capa de datos en un sitio de AEM. Debería ver información sobre la página y los componentes individuales.
+   Inspect proporciona la respuesta para ver el estado actual de la capa de datos en un sitio AEM. Debería ver información sobre la página y los componentes individuales.
 
-   ![Respuesta de la capa de datos de Adobe](assets/data-layer-state-response.png)
+   ![Respuesta de capa de datos de Adobe](assets/data-layer-state-response.png)
 
    Observe que el componente Byline no aparece en la capa de datos.
 
-## Actualizar el modelo de Sling de línea {#sling-model}
+## Actualizar el modelo de Sling de firma {#sling-model}
 
 Para insertar datos sobre el componente en la capa de datos, primero debemos actualizar el modelo Sling del componente. A continuación, actualice la interfaz Java de Byline y la implementación del modelo Sling para agregar un nuevo método `getData()`. Este método contendrá las propiedades que queremos insertar en la capa de datos.
 
@@ -123,7 +118,7 @@ Para insertar datos sobre el componente en la capa de datos, primero debemos act
    import com.adobe.cq.wcm.core.components.util.ComponentUtils;
    ```
 
-   Las API `fasterxml.jackson` se utilizarán para serializar los datos que queremos exponer como JSON. El `ComponentUtils` de los componentes principales de AEM se utilizará para comprobar si la capa de datos está habilitada.
+   Las API `fasterxml.jackson` se utilizarán para serializar los datos que queremos exponer como JSON. El `ComponentUtils` de AEM componentes principales se utilizará para comprobar si la capa de datos está habilitada.
 
 1. Agregue el método no implementado `getData()` a `BylineImple.java`:
 
@@ -164,7 +159,7 @@ Para insertar datos sobre el componente en la capa de datos, primero debemos act
    }
    ```
 
-   En el método anterior se utiliza un nuevo `HashMap` para capturar las propiedades que queremos exponer como JSON. Observe que se utilizan métodos existentes como `getName()` y `getOccupations()`. `@type` representa el tipo de recurso único del componente, lo que permite a un cliente identificar fácilmente eventos o activadores en función del tipo de componente.
+   En el método anterior se utiliza un nuevo `HashMap` para capturar las propiedades que queremos exponer como JSON. Observe que se utilizan métodos existentes como `getName()` y `getOccupations()`. `@type` representa el tipo de recurso único del componente, lo que permite a un cliente identificar fácilmente eventos o déclencheur según el tipo de componente.
 
    El `ObjectMapper` se utiliza para serializar las propiedades y devolver una cadena JSON. Esta cadena JSON se puede insertar en la capa de datos.
 
@@ -179,7 +174,7 @@ Para insertar datos sobre el componente en la capa de datos, primero debemos act
 
 A continuación, actualice el `Byline` [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/block-statements.html?lang=en#htl). HTL (lenguaje de plantilla HTML) es la plantilla utilizada para procesar el HTML del componente.
 
-Se utiliza un atributo de datos especial `data-cmp-data-layer` en cada componente de AEM para exponer su capa de datos.  JavaScript proporcionado por los componentes principales de AEM busca este atributo de datos, cuyo valor se rellenará con la cadena JSON devuelta por el método `getData()` del modelo de Sling de línea de bytes e insertará los valores en la capa de datos del cliente de Adobe.
+Se utiliza un atributo de datos especial `data-cmp-data-layer` en cada componente AEM para exponer su capa de datos.  JavaScript proporcionado por AEM componentes principales busca este atributo de datos, cuyo valor se rellenará con la cadena JSON devuelta por el método `getData()` del modelo de Sling de línea de bytes e insertará los valores en la capa de datos del cliente de Adobe.
 
 1. En el IDE, abra el proyecto `aem-guides-wknd`. Vaya al módulo `ui.apps` .
 1. Abra el archivo `byline.html` en `ui.apps/src/main/content/jcr_root/apps/wknd/components/byline/byline.html`.
@@ -239,7 +234,7 @@ Se utiliza un atributo de datos especial `data-cmp-data-layer` en cada component
 
 ## Agregar un evento de clic {#click-event}
 
-La capa de datos del cliente de Adobe depende del evento y uno de los eventos más comunes para activar una acción es el evento `cmp:click`. Los componentes principales de AEM facilitan el registro de su componente con la ayuda del elemento de datos: `data-cmp-clickable`.
+La capa de datos del cliente de Adobe está controlada por eventos y uno de los eventos más comunes para almacenar en déclencheur una acción es el evento `cmp:click`. Los componentes principales de AEM facilitan el registro de su componente con la ayuda del elemento de datos: `data-cmp-clickable`.
 
 Los elementos en los que se puede hacer clic suelen ser un botón de llamada a acción o un vínculo de navegación. Lamentablemente, el componente Byline no tiene ninguno de estos componentes, pero lo registraremos de todas formas, ya que podría ser común para otros componentes personalizados.
 
@@ -264,7 +259,7 @@ Los elementos en los que se puede hacer clic suelen ser un botón de llamada a a
 
 1. Vuelva al explorador y vuelva a abrir la página con el componente Byline añadido: [http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html).
 
-   Para probar nuestro evento, agregaremos manualmente algo de JavaScript usando la consola del desarrollador. Consulte [Uso de la capa de datos del cliente de Adobe con componentes principales de AEM](data-layer-overview.md) para ver un vídeo sobre cómo hacerlo.
+   Para probar nuestro evento, agregaremos manualmente algo de JavaScript usando la consola del desarrollador. Consulte [Uso de la capa de datos del cliente de Adobe con AEM componentes principales](data-layer-overview.md) para ver un vídeo sobre cómo hacerlo.
 
 1. Abra las herramientas para desarrolladores del explorador e introduzca el siguiente método en la **Consola**:
 
@@ -300,11 +295,11 @@ Los elementos en los que se puede hacer clic suelen ser un botón de llamada a a
 
    Debería ver el mensaje de la consola `Byline Clicked!` y el nombre de firma.
 
-   El evento `cmp:click` es el más fácil de conectar. Para componentes más complejos y para rastrear otro comportamiento, es posible añadir javascript personalizado para añadir y registrar nuevos eventos. Un buen ejemplo es el componente Carrusel, que activa un evento `cmp:show` cada vez que se alterne una diapositiva. Consulte el [código fuente para obtener más información](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/carousel/v1/carousel/clientlibs/site/js/carousel.js#L219).
+   El evento `cmp:click` es el más fácil de conectar. Para componentes más complejos y para rastrear otro comportamiento, es posible añadir javascript personalizado para añadir y registrar nuevos eventos. Un ejemplo bueno es el componente Carrusel, que déclencheur un evento `cmp:show` cada vez que se alterne una diapositiva. Consulte el [código fuente para obtener más información](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/carousel/v1/carousel/clientlibs/site/js/carousel.js#L219).
 
-## Usar la utilidad DataLayerBuilder {#data-layer-builder}
+## Uso de la utilidad DataLayerBuilder {#data-layer-builder}
 
-Cuando el modelo de Sling se actualizó [](#sling-model) anteriormente en el capítulo, optamos por crear la cadena JSON utilizando un `HashMap` y configurando cada una de las propiedades manualmente. Este método funciona bien para los componentes pequeños independientes, sin embargo, para los componentes que amplían los componentes principales de AEM, esto podría resultar en un montón de código adicional.
+Cuando el modelo de Sling se actualizó [](#sling-model) anteriormente en el capítulo, optamos por crear la cadena JSON utilizando un `HashMap` y configurando cada una de las propiedades manualmente. Este método funciona bien para los componentes pequeños independientes, pero para los componentes que amplían los componentes principales AEM esto podría resultar en un montón de código adicional.
 
 Existe una clase de utilidad, `DataLayerBuilder`, para realizar la mayor parte del trabajo pesado. Esto permite que las implementaciones amplíen solo las propiedades que desean. Actualicemos el Modelo Sling para utilizar el `DataLayerBuilder`.
 
@@ -325,7 +320,7 @@ Existe una clase de utilidad, `DataLayerBuilder`, para realizar la mayor parte d
    }
    ```
 
-   `ComponentData` es un objeto proporcionado por los componentes principales de AEM. Resulta en una cadena JSON, como en el ejemplo anterior, pero también realiza un gran número de trabajos adicionales.
+   `ComponentData` es un objeto proporcionado por AEM componentes principales. Resulta en una cadena JSON, como en el ejemplo anterior, pero también realiza un gran número de trabajos adicionales.
 
 1. Abra el archivo `BylineImpl.java` en `core/src/main/java/com/adobe/aem/guides/wknd/core/models/impl/BylineImpl.java`.
 
@@ -432,10 +427,10 @@ Existe una clase de utilidad, `DataLayerBuilder`, para realizar la mayor parte d
 
 ## Felicitaciones! {#congratulations}
 
-Solo tiene que explorar varias formas de ampliar y personalizar la capa de datos del cliente de Adobe con componentes de AEM.
+Solo tiene que explorar varias formas de ampliar y personalizar la capa de datos del cliente de Adobe con componentes AEM.
 
 ## Recursos adicionales {#additional-resources}
 
-* [Documentación de la capa de datos del cliente de Adobe](https://github.com/adobe/adobe-client-data-layer/wiki)
+* [Documentación de capa de datos del cliente de Adobe](https://github.com/adobe/adobe-client-data-layer/wiki)
 * [Integración de la capa de datos con los componentes principales](https://github.com/adobe/aem-core-wcm-components/blob/master/DATA_LAYER_INTEGRATION.md)
-* [Uso de la capa de datos del cliente de Adobe y la documentación de componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/developing/data-layer/overview.html)
+* [Uso de la capa de datos del cliente de Adobe y la documentación de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)
