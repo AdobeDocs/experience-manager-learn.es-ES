@@ -11,9 +11,9 @@ level: Beginner
 mini-toc-levels: 1
 kt: 4081
 thumbnail: 30177.jpg
-source-git-commit: 32320905786682a852baf7d777cb06de0072c439
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1152'
+source-wordcount: '1150'
 ht-degree: 1%
 
 ---
@@ -99,7 +99,7 @@ A continuación se muestran los pasos de alto nivel realizados en el vídeo ante
 
 ## HTL (lenguaje de plantilla HTML) y cuadros de diálogo {#htl-dialogs}
 
-El lenguaje de plantilla HTML o **[HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/getting-started/getting-started.html)** es un lenguaje de plantilla ligero del lado del servidor que utilizan los componentes de AEM para procesar contenido.
+El lenguaje de plantilla HTML o **[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html)** es un lenguaje de plantilla ligero del lado del servidor que utilizan los componentes de AEM para procesar contenido.
 
 **** Los cuadros de diálogo definen las configuraciones disponibles que se pueden realizar para un componente.
 
