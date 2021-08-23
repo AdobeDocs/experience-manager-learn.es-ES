@@ -1,12 +1,7 @@
 ---
 title: 'Creación de fragmentos de contenido: Introducción a AEM sin encabezado: GraphQL'
 description: Introducción a Adobe Experience Manager (AEM) y GraphQL. Cree y edite un nuevo fragmento de contenido basado en un modelo de fragmento de contenido. Aprenda a crear variaciones de fragmentos de contenido.
-sub-product: activos
-topics: headless
 version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
 mini-toc-levels: 1
 kt: 6713
 thumbnail: 22451.jpg
@@ -14,10 +9,9 @@ feature: Fragmentos de contenido, API de GraphQL
 topic: Sin objetivos, Administración de contenido
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: 81626b8d853f3f43d9c51130acf02561f91536ac
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '791'
 ht-degree: 0%
 
 ---
