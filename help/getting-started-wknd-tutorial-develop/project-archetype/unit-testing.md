@@ -11,10 +11,9 @@ level: Beginner
 kt: 4089
 mini-toc-levels: 1
 thumbnail: 30207.jpg
-translation-type: tm+mt
-source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '3017'
+source-wordcount: '3013'
 ht-degree: 0%
 
 ---
@@ -77,9 +76,9 @@ Utilizaremos AEM prácticas recomendadas y usaremos:
 * [Marco de pruebas de Mockito](https://site.mockito.org/)
 * [wcm.io Test Framework](https://wcm.io/testing/)  (que se basa en  [Apache Sling Mocks](https://sling.apache.org/documentation/development/sling-mock.html))
 
-## Prueba de unidades y Administrador de nube de Adobe {#unit-testing-and-adobe-cloud-manager}
+## Prueba de unidades y Adobe Cloud Manager {#unit-testing-and-adobe-cloud-manager}
 
-[Adobe Cloud ](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) Manager integra la ejecución de pruebas unitarias y los informes de cobertura de  [ ](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html#code-quality-testing) código en su canalización CI/CD para ayudar a fomentar y promover la mejor práctica de prueba de unidades AEM código.
+[Adobe Cloud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=es) Manager integra la ejecución de pruebas unitarias y los informes de cobertura de  [ ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html#code-quality-testing) código en su canalización CI/CD para ayudar a fomentar y promover la mejor práctica de prueba de unidades AEM código.
 
 Aunque el código de prueba de unidades es una buena práctica para cualquier base de código, al utilizar Cloud Manager es importante aprovechar sus instalaciones de pruebas y creación de informes de calidad de código al proporcionar pruebas de unidades para que Cloud Manager se ejecute.
 
@@ -289,7 +288,7 @@ En este tutorial, se utiliza el último método (ya que ya hemos creado un **Byl
 
 En el contexto de la AEM, el TDD requiere un nivel de experiencia y es mejor que lo adopten los desarrolladores AEM que son expertos en AEM desarrollo y pruebas unitarias de AEM código.
 
-## Configuración AEM contexto de prueba {#setting-up-aem-test-context}
+## Configuración AEM contexto de prueba  {#setting-up-aem-test-context}
 
 La mayoría del código escrito para AEM se basa en las API de JCR, Sling o AEM, que a su vez requieren que el contexto de una AEM en ejecución se ejecute correctamente.
 
@@ -539,7 +538,7 @@ Recuerde que este método debe devolver una lista ordenada alfabéticamente de o
 
    *pasadas testGetOccupations()*
 
-## Prueba isEmpty() {#testing-is-empty}
+## Testing isEmpty() {#testing-is-empty}
 
 El último método para probar **`isEmpty()`**.
 
@@ -721,6 +720,6 @@ Del mismo modo, si cambiamos un método de prueba para que falle, la compilació
 
 ![error en el paquete mvn](assets/unit-testing/mvn-package-fail.png)
 
-## Revise el código {#review-the-code}
+## Revisar el código {#review-the-code}
 
 Vea el código terminado en [GitHub](https://github.com/adobe/aem-guides-wknd) o revise e implemente el código localmente en la rama `tutorial/unit-testing-solution` de Git.
