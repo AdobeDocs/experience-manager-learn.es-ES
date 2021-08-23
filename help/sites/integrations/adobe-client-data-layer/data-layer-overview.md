@@ -1,39 +1,33 @@
 ---
-title: Uso de la capa de datos del cliente de Adobe con componentes principales de AEM
-description: La capa de datos del cliente de Adobe introduce un método estándar para recopilar y almacenar datos sobre una experiencia de visitante en una página web y, a continuación, facilitar el acceso a estos datos. La capa de datos del cliente de Adobe no depende de la plataforma, pero está completamente integrada en los componentes principales para su uso con AEM.
-feature: core-component
-topics: integrations
-audience: developer
-doc-type: feature video
-activity: use
-version: cloud-service
-kt: 6261
-thumbnail: 41195.jpg
-topic: Integrations
+title: Uso de la capa de datos del cliente de Adobe con AEM componentes principales
+description: La capa de datos del cliente de Adobe presenta un método estándar para recopilar y almacenar datos sobre una experiencia de visitante en una página web y, a continuación, facilitar el acceso a estos datos. La capa de datos del cliente de Adobe no depende de la plataforma, pero está completamente integrada en los componentes principales para su uso con AEM.
+topic: Integraciones
+feature: Capa de datos del cliente de Adobe, componentes principales
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+kt: 6261
+thumbnail: 41195.jpg
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '792'
-ht-degree: 1%
+source-wordcount: '791'
+ht-degree: 0%
 
 ---
 
 
-# Uso de la capa de datos del cliente de Adobe con los componentes principales de AEM {#overview}
+# Uso de la capa de datos del cliente de Adobe con AEM componentes principales {#overview}
 
-La capa de datos del cliente de Adobe introduce un método estándar para recopilar y almacenar datos sobre una experiencia de visitante en una página web y, a continuación, facilitar el acceso a estos datos. La capa de datos del cliente de Adobe no depende de la plataforma, pero está completamente integrada en los componentes principales para su uso con AEM.
+La capa de datos del cliente de Adobe presenta un método estándar para recopilar y almacenar datos sobre una experiencia de visitante en una página web y, a continuación, facilitar el acceso a estos datos. La capa de datos del cliente de Adobe no depende de la plataforma, pero está completamente integrada en los componentes principales para su uso con AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41195?quality=12&learn=on)
 
 >[!NOTE]
 >
-> ¿Desea habilitar la capa de datos del cliente de Adobe en su sitio de AEM? [Consulte las instrucciones aquí](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation).
+> ¿Desea habilitar la capa de datos del cliente de Adobe en su sitio AEM? [Consulte las instrucciones aquí](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation).
 
 ## Explorar la capa de datos
 
-Puede hacerse una idea de la funcionalidad integrada de la capa de datos del cliente de Adobe con las herramientas para desarrolladores de su navegador y del [sitio de referencia de WKND en directo](https://wknd.site/).
+Puede hacerse una idea de la funcionalidad integrada de la capa de datos del cliente de Adobe utilizando las herramientas para desarrolladores de su navegador y el [sitio de referencia de WKND](https://wknd.site/) activo.
 
 >[!NOTE]
 >
@@ -46,9 +40,9 @@ Puede hacerse una idea de la funcionalidad integrada de la capa de datos del cli
    window.adobeDataLayer.getState();
    ```
 
-   Inspeccione la respuesta para ver el estado actual de la capa de datos en un sitio de AEM. Debería ver información sobre la página y los componentes individuales.
+   Inspect proporciona la respuesta para ver el estado actual de la capa de datos en un sitio AEM. Debería ver información sobre la página y los componentes individuales.
 
-   ![Respuesta de la capa de datos de Adobe](assets/data-layer-state-response.png)
+   ![Respuesta de capa de datos de Adobe](assets/data-layer-state-response.png)
 
 1. Inserte un objeto de datos en la capa de datos introduciendo lo siguiente en la consola:
 
@@ -74,7 +68,7 @@ Puede hacerse una idea de la funcionalidad integrada de la capa de datos del cli
 
 ## Uso de eventos
 
-Se recomienda activar cualquier código personalizado basado en un evento de la capa de datos. A continuación, explore la posibilidad de registrar y escuchar diferentes eventos.
+Se recomienda almacenar en déclencheur cualquier código personalizado basado en un evento de la capa de datos. A continuación, explore la posibilidad de registrar y escuchar diferentes eventos.
 
 1. Introduzca el siguiente método de ayuda en la consola:
 
@@ -169,19 +163,19 @@ Se recomienda activar cualquier código personalizado basado en un evento de la 
 
    El evento `cmp:show` de la página se activa en cada carga de página en la parte superior de la página. Podría preguntar, ¿por qué se activó el controlador de eventos cuando la página ya se ha cargado?
 
-   Esta es una de las características únicas de la capa de datos del cliente de Adobe, ya que permite registrar los oyentes de eventos **antes** o **después** de que la capa de datos se haya inicializado. Se trata de una característica esencial para evitar condiciones de carrera.
+   Esta es una de las características únicas de la capa de datos del cliente de Adobe, en la que puede registrar los oyentes de eventos **antes** o **después** de que la capa de datos se haya inicializado. Se trata de una característica esencial para evitar condiciones de carrera.
 
-   La capa de datos mantiene una matriz de cola de todos los eventos que se han producido en secuencia. De forma predeterminada, la capa de datos activará las llamadas de retorno de eventos para los eventos que se produjeron en **previous**, así como para los eventos en **Future**. Es posible filtrar los eventos al pasado o al futuro. [Puede encontrar más información en la documentación](https://github.com/adobe/adobe-client-data-layer/wiki#addeventlistener).
+   La capa de datos mantiene una matriz de cola de todos los eventos que se han producido en secuencia. De forma predeterminada, la capa de datos déclencheur las llamadas de retorno de eventos para los eventos que se produjeron en el **pasado**, así como los eventos en el **futuro**. Es posible filtrar los eventos al pasado o al futuro. [Puede encontrar más información en la documentación](https://github.com/adobe/adobe-client-data-layer/wiki#addeventlistener).
 
 
 ## Pasos siguientes
 
-Consulte el siguiente tutorial para aprender a utilizar la capa de datos del cliente de Adobe impulsada por evento para [recopilar datos de página y enviarlos a Adobe Analytics](../analytics/collect-data-analytics.md).
+Consulte el siguiente tutorial para aprender a utilizar la capa de datos del cliente de Adobe impulsada por eventos para [recopilar datos de página y enviarlos a Adobe Analytics](../analytics/collect-data-analytics.md).
 
 O aprenda a [personalizar la capa de datos del cliente de Adobe con componentes AEM](./data-layer-customize.md)
 
 
 ## Recursos adicionales {#additional-resources}
 
-* [Documentación de la capa de datos del cliente de Adobe](https://github.com/adobe/adobe-client-data-layer/wiki)
-* [Uso de la capa de datos del cliente de Adobe y la documentación de componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html)
+* [Documentación de capa de datos del cliente de Adobe](https://github.com/adobe/adobe-client-data-layer/wiki)
+* [Uso de la capa de datos del cliente de Adobe y la documentación de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)
