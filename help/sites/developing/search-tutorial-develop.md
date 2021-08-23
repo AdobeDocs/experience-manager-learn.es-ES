@@ -6,14 +6,13 @@ audience: developer
 doc-type: tutorial
 activity: develop
 version: 6.3, 6.4, 6.5
-feature: Search
-topic: Development
+feature: 'Búsqueda  '
+topic: Desarrollo
 role: Developer
 level: Intermediate, Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '899'
 ht-degree: 2%
 
 ---
@@ -36,7 +35,7 @@ La implementación de búsqueda simple son los materiales del **laboratorio de A
 
 * [Administrador de índices](http://localhost:4502/libs/granite/operations/content/diagnosis/tool.html/granite_oakindexmanager)
 * [Explicar la consulta](http://localhost:4502/libs/granite/operations/content/diagnosis/tool.html/granite_queryperformance)
-* [CRXDE Lite](http://localhost:4502/crx/de/index.jsp#/oak%3Aindex/cqPageLucene) > /oak:index/cqPageLucene
+* [CRXDE Lite](http://localhost:4502/crx/de/index.jsp#/oak%3Aindex/cqPageLucene)  > /oak:index/cqPageLucene
 * [Administrador de paquetes CRX](http://localhost:4502/crx/packmgr/index.jsp)
 * [Depurador de QueryBuilder](http://localhost:4502/libs/cq/search/content/querydebug.html?)
 * [Generador de definiciones de índices Oak](https://oakutils.appspot.com/generate/index)
@@ -78,8 +77,8 @@ La implementación de búsqueda simple son los materiales del **laboratorio de A
 * [Repositorio de Github](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/master/simple-search-guide)
 * [Modelos Sling](https://sling.apache.org/documentation/bundles/models.html)
 * [Exportador de modelo Sling](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130)
-* [API de QueryBuilder](https://docs.adobe.com/docs/en/aem/6-2/develop/search/querybuilder-api.html)
-* [Complemento de AEM Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode)  ([página de documentación](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/))
+* [API de QueryBuilder](https://experienceleague.adobe.com/docs/)
+* [AEM complemento de Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode)  ([página de documentación](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/))
 
 ## Correcciones y seguimiento {#corrections-and-follow-up}
 
@@ -113,7 +112,7 @@ Correcciones y aclaraciones de las discusiones de laboratorio y respuestas a pre
 
 3. **¿Dónde hay una lista de todos los analizadores disponibles?**
 
-   Oak expone un conjunto de elementos de configuración de analizador de lucene que se proporcionan para su uso en AEM.
+   Oak expone un conjunto de elementos de configuración del analizador de lucene que se utilizan en AEM.
 
    * [Documentación de Apache Oak Analyzers](http://jackrabbit.apache.org/oak/docs/query/lucene.html#analyzers)
       * [Tokenizers](https://cwiki.apache.org/confluence/display/solr/Tokenizers)
@@ -122,7 +121,7 @@ Correcciones y aclaraciones de las discusiones de laboratorio y respuestas a pre
 
 4. **¿Cómo se busca Páginas y Recursos en la misma consulta?**
 
-   Una novedad en AEM 6.3 es la capacidad de realizar consultas de varios tipos de nodos en la misma consulta proporcionada. La siguiente consulta de QueryBuilder. Tenga en cuenta que cada &quot;subconsulta&quot; puede resolverse en su propio índice, por lo que en este ejemplo, la subconsulta `cq:Page` se resuelve en `/oak:index/cqPageLucene` y la subconsulta `dam:Asset` se resuelve en `/oak:index/damAssetLucene`.
+   Una novedad en AEM 6.3 es la capacidad de consultar varios tipos de nodos en la misma consulta proporcionada. La siguiente consulta de QueryBuilder. Tenga en cuenta que cada &quot;subconsulta&quot; puede resolverse en su propio índice, por lo que en este ejemplo, la subconsulta `cq:Page` se resuelve en `/oak:index/cqPageLucene` y la subconsulta `dam:Asset` se resuelve en `/oak:index/damAssetLucene`.
 
    ```plain
    group.p.or=true
@@ -140,7 +139,7 @@ Correcciones y aclaraciones de las discusiones de laboratorio y respuestas a pre
    PLAN: [cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) *:* */ union [dam:Asset] as [a] /* lucene:damAssetLucene(/oak:index/damAssetLucene) *:* */
    ```
 
-   Explore la consulta y los resultados a través de [QueryBuilder Debugger](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Ddam%3AAsset%0D%0A%23+add+all+asset+restrictions+to+this+group) y [Complemento de AEM Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US).
+   Explore la consulta y los resultados a través de [QueryBuilder Debugger](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Ddam%3AAsset%0D%0A%23+add+all+asset+restrictions+to+this+group) y [AEM complemento de Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US).
 
 5. **¿Cómo buscar en varias rutas en la misma consulta?**
 
@@ -164,4 +163,4 @@ Correcciones y aclaraciones de las discusiones de laboratorio y respuestas a pre
    PLAN: [cq:Page] as [a] /* traverse "/content/docs/en/6-2//*" where isdescendantnode([a], [/content/docs/en/6-2]) */ union [cq:Page] as [a] /* traverse "/content/docs/en/6-3//*" where isdescendantnode([a], [/content/docs/en/6-3]) */
    ```
 
-   Explore la consulta y los resultados a través de [QueryBuilder Debugger](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0Agroup.1_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-2%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Dcq%3APage%0D%0Agroup.2_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-3%0D%0A%23+add+all+asset+restrictions+to+this+group) y [Complemento de AEM Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US).
+   Explore la consulta y los resultados a través de [QueryBuilder Debugger](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0Agroup.1_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-2%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Dcq%3APage%0D%0Agroup.2_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-3%0D%0A%23+add+all+asset+restrictions+to+this+group) y [AEM complemento de Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US).
