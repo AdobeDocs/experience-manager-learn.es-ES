@@ -9,15 +9,15 @@ thumbnail: 4853-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 24d70ebaa6a63cfd4a73f43188f25b375dc702ec
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1851'
+source-wordcount: '1843'
 ht-degree: 1%
 
 ---
 
 
-# Integración del SPA {#developer-workflow}
+# Integrar el SPA {#developer-workflow}
 
 Comprenda cómo el código fuente de una aplicación de una sola página (SPA) escrita en React se puede integrar con un proyecto de Adobe Experience Manager (AEM). Aprenda a utilizar herramientas front-end modernas, como un servidor de desarrollo de webpack, para desarrollar rápidamente el SPA con la API del modelo JSON de AEM.
 
@@ -50,13 +50,13 @@ El módulo `ui.frontend` es un proyecto [webpack](https://webpack.js.org/) que c
 
 *Descripción general de la integración de SPA.*
 
-La información adicional sobre la compilación del front-end se puede [encontrar aquí](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend-react.html).
+La información adicional sobre la compilación del front-end se puede [encontrar aquí](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html).
 
-## Inspect: integración de SPA {#inspect-spa-integration}
+## Integración de Inspect con SPA {#inspect-spa-integration}
 
-A continuación, inspeccione el módulo `ui.frontend` para comprender el SPA que ha generado automáticamente el [AEM tipo de archivo del proyecto](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend-react.html).
+A continuación, inspeccione el módulo `ui.frontend` para comprender el SPA que ha generado automáticamente el [AEM tipo de archivo del proyecto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html).
 
-1. En el IDE de su elección, abra su proyecto AEM. Este tutorial utilizará el [IDE de código de Visual Studio](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
+1. En el IDE de su elección, abra su proyecto AEM. Este tutorial utilizará el [IDE de código de Visual Studio](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
 
    ![VSCode: AEM proyecto WKND SPA](./assets/integrate-spa/vscode-ide-openproject.png)
 
@@ -76,7 +76,7 @@ A continuación, inspeccione el módulo `ui.frontend` para comprender el SPA que
    "@adobe/aem-core-components-react-spa": "1.1.7",
    ```
 
-   Los módulos anteriores conforman el [AEM SPA Editor JS SDK](https://docs.adobe.com/content/help/en/experience-manager-65/developing/headless/spas/spa-blueprint.html) y proporcionan la funcionalidad para permitir asignar componentes SPA a AEM componentes.
+   Los módulos anteriores conforman el [AEM SPA Editor JS SDK](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-blueprint.html) y proporcionan la funcionalidad para permitir asignar componentes SPA a AEM componentes.
 
    También se incluyen [AEM Componentes WCM - Implementación principal de React](https://github.com/adobe/aem-react-core-wcm-components-base) y [AEM Componentes WCM - Editor de Spa - Implementación principal de React](https://github.com/adobe/aem-react-core-wcm-components-spa). Se trata de un conjunto de componentes de interfaz de usuario reutilizables que se asignan a componentes de AEM listos para usar. Están diseñadas para utilizarse tal cual y para satisfacer las necesidades del proyecto.
 
@@ -130,7 +130,7 @@ A continuación, inspeccione el módulo `ui.frontend` para comprender el SPA que
 
 1. Inspect el archivo `import-component.js` en `ui.frontend/src/import-components.js`. Este archivo importa el **React Core Components** listo para usar y los pone a disposición del proyecto. Inspeccionaremos la asignación de AEM contenido a los componentes de SPA en el capítulo siguiente.
 
-## Añadir un componente de SPA estático {#static-spa-component}
+## Añadir un componente SPA estático {#static-spa-component}
 
 A continuación, agregue un componente nuevo a la SPA e implemente los cambios en una instancia de AEM local. Este será un cambio sencillo, solo para ilustrar cómo se actualiza el SPA.
 
@@ -351,7 +351,7 @@ Felicidades, ha actualizado la SPA y explorado la integración con AEM! Ya sabe 
 
 [Asignación de componentes de SPA a componentes de AEM](map-components.md) : Aprenda a asignar componentes de React a componentes de Adobe Experience Manager (AEM) con el SDK de AEM Editor JS. La asignación de componentes permite a los usuarios realizar actualizaciones dinámicas de los componentes de SPA dentro del AEM SPA Editor, de forma similar a la creación de AEM tradicional.
 
-## Servidor de desarrollo de Webpack (bono): API JSON de prueba {#mock-json}
+## Servidor de desarrollo de Webpack (bono): API de JSON de prueba {#mock-json}
 
 Otro enfoque para el desarrollo rápido es utilizar un archivo JSON estático para actuar como el modelo JSON. Al &quot;burlarse&quot; del JSON, eliminamos la dependencia de una instancia de AEM local. También permite a un desarrollador front-end actualizar el modelo JSON para probar la funcionalidad y dirigir los cambios a la API JSON que luego sería implementada por un desarrollador back-end.
 
