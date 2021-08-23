@@ -10,10 +10,10 @@ activity: use
 topic: Administración de contenido
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 3%
+source-wordcount: '693'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ Uno de los aspectos más importantes de la experiencia del cliente en su sitio w
 
 Las imágenes inteligentes también se benefician del aumento de rendimiento añadido que supone la integración total con el mejor servicio premium de Adobe. Este servicio encuentra la ruta óptima de Internet entre servidores, redes y puntos de interconexión que tiene la latencia más baja y/o la tasa de pérdida de paquetes que la ruta predeterminada de Internet.
 
-Obtenga más información sobre [Imágenes inteligentes](https://docs.adobe.com/content/help/es-ES/experience-manager-64/assets/dynamic/imaging-faq.html).
+Obtenga más información sobre [Imágenes inteligentes](https://experienceleague.adobe.com/docs/experience-manager-64/assets/dynamic/imaging-faq.html).
 
 ## Ventajas de las imágenes inteligentes
 
@@ -36,7 +36,7 @@ Dado que las imágenes constituyen la mayoría del tiempo de carga de una págin
 
 Como se ha señalado anteriormente, Imágenes inteligentes aprovecha las capacidades de Adobe Sensei AI y funciona con ajustes preestablecidos de imagen existentes para convertir automáticamente imágenes a formatos de imagen de próxima generación óptimos, como WebP, manteniendo al mismo tiempo la fidelidad visual.
 
-Obtenga más información sobre [Cómo funciona la imagen inteligente](https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/imaging-faq.html#how-does-smart-imaging-work), incluidos detalles como los formatos de imagen admitidos (y qué sucede si no utiliza esos formatos) y su impacto en los ajustes preestablecidos de imagen existentes que se están utilizando.
+Obtenga más información sobre [Cómo funciona la imagen inteligente](https://experienceleague.adobe.com/docs/experience-manager-64/assets/dynamic/imaging-faq.html#how-does-smart-imaging-work), incluidos detalles como los formatos de imagen admitidos (y qué sucede si no utiliza esos formatos) y su impacto en los ajustes preestablecidos de imagen existentes que se están utilizando.
 
 ## Impacto de las imágenes inteligentes
 
@@ -54,7 +54,7 @@ Al habilitar la imagen inteligente, se inicia con el envío de una solicitud al 
 
 Una vez que haya habilitado las imágenes inteligentes, querrá comprobar que funcionan según lo esperado.
 
-Probablemente tenga preguntas adicionales sobre imágenes inteligentes. Hemos compilado una lista de preguntas más frecuentes con respuestas. Lea las [preguntas más frecuentes](https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/imaging-faq.html).
+Probablemente tenga preguntas adicionales sobre imágenes inteligentes. Hemos compilado una lista de preguntas más frecuentes con respuestas. Lea las [preguntas más frecuentes](https://experienceleague.adobe.com/docs/experience-manager-64/assets/dynamic/imaging-faq.html).
 
 ## Recursos adicionales
 
