@@ -12,15 +12,15 @@ thumbnail: 4988-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 32320905786682a852baf7d777cb06de0072c439
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1625'
-ht-degree: 1%
+source-wordcount: '1623'
+ht-degree: 0%
 
 ---
 
 
-# Agregar navegación y enrutamiento {#navigation-routing}
+# Adición de la navegación y el enrutamiento {#navigation-routing}
 
 Aprenda cómo se pueden admitir varias vistas de la SPA asignando páginas AEM con el SDK del Editor de SPA. La navegación dinámica se implementa mediante el router React y los componentes principales React.
 
@@ -32,7 +32,7 @@ Aprenda cómo se pueden admitir varias vistas de la SPA asignando páginas AEM c
 
 ## Qué va a generar
 
-Este capítulo agregará navegación a un SPA en AEM. El menú de navegación estará impulsado por la jerarquía de páginas AEM y utilizará el modelo JSON proporcionado por el [Componente principal de navegación](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/navigation.html).
+Este capítulo agregará navegación a un SPA en AEM. El menú de navegación estará impulsado por la jerarquía de páginas AEM y utilizará el modelo JSON proporcionado por el [Componente principal de navegación](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html).
 
 ![Navegación agregada](assets/navigation-routing/navigation-added.png)
 
@@ -208,7 +208,7 @@ A continuación, revise el modelo JSON que impulsa la experiencia de visualizaci
 
 1. Experimente con vínculos profundos navegando directamente a: [http://localhost:4502/content/wknd-spa-react/us/en/home/page-2.html](http://localhost:4502/content/wknd-spa-react/us/en/home/page-2.html). También observe que el botón de retroceso del navegador sigue funcionando.
 
-## Enrutamiento React de Inspect {#react-routing}
+## Enrutamiento de Inspect React  {#react-routing}
 
 La navegación y el enrutamiento se implementan con [React Router](https://reactrouter.com/). React Router es una colección de componentes de navegación para aplicaciones React. [AEM los ](https://github.com/adobe/aem-react-core-wcm-components-base) componentes principales de React utilizan las funciones del router React para implementar el componente  **** Navegación utilizado en los pasos anteriores.
 
