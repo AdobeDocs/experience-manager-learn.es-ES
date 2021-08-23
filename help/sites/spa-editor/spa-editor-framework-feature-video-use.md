@@ -1,49 +1,42 @@
 ---
-title: Uso del Editor de SPA con AEM Sites
-seo-title: Uso del marco del Editor de SPA con AEM Sites
-description: El marco de trabajo del editor de aplicaciones de una sola página de AEM permite a los autores editar contenido para una aplicación de una sola página o SPA. Los desarrolladores que utilizan los marcos React o Angular crean una SPA y, a continuación, asignan áreas de la SPA a los componentes de AEM, lo que permite a los autores utilizar herramientas de edición familiares de AEM Sites.
-sub-product: sitios, servicios de contenido
-feature: Spa Editor
-topics: authoring, single-page-applications
-audience: all
-doc-type: feature video
-activity: use
+title: Uso del SPA Editor con AEM Sites
+description: AEM marco del editor de aplicaciones de una sola página permite a los autores editar contenido para una aplicación de una sola página o SPA. Los desarrolladores que utilizan los marcos React o Angular crean un SPA y después asignan áreas del SPA a los componentes de AEM, lo que permite a los autores utilizar herramientas de edición de AEM Sites conocidas.
 version: 6.4, 6.5, cloud-service
-kt: 1047
-thumbnail: 22229.jpg
 topic: SPA
+feature: Editor SPA
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+kt: 1047
+thumbnail: 22229.jpg
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '277'
 ht-degree: 7%
 
 ---
 
 
-# Uso del Editor de SPA con AEM Sites {#using-the-spa-editor-with-aem-sites}
+# Uso del SPA Editor con AEM Sites {#using-the-spa-editor-with-aem-sites}
 
 Vídeo de información general sobre la creación de contenido para una aplicación de una sola página en AEM Sites.
 
-El Editor SPA de AEM ofrece a los autores la capacidad de editar contenido para una aplicación de una sola página o SPA. Los desarrolladores que utilizan el marco de su elección (React o Angular) crean un SPA y luego asignan áreas del SPA a componentes de AEM, lo que permite a los autores utilizar herramientas de edición de AEM Sites familiares. El siguiente vídeo muestra algunas de las funciones de edición en contexto con el sitio de muestra de WKND SPA. El proyecto WKND SPA incluye una implementación React y Angular.
+AEM SPA Editor permite a los autores editar contenido para una aplicación de una sola página o SPA. Los desarrolladores que utilicen el marco de su elección (React o Angular) crean un SPA y después asignan áreas del SPA a componentes AEM, lo que permite a los autores utilizar herramientas de edición de AEM Sites conocidas. El siguiente vídeo muestra algunas de las funciones de edición en contexto con el sitio de muestra de SPA WKND. El proyecto WKND SPA incluye una implementación React y de Angular.
 
 >[!VIDEO](https://video.tv.adobe.com/v/22229?quality=12&learn=on)
 
 >[!NOTE]
 >
-> La función Editor de aplicaciones de una sola página (SPA) requiere el paquete de servicio 2 o posterior de AEM 6.4.
+> La función Editor de aplicaciones de una sola página (SPA) requiere AEM 6.4 service pack 2 o posterior.
 >
-> El Editor de SPA es la solución recomendada para proyectos que requieren una representación del lado del cliente basada en el marco de SPA (por ejemplo, React o Angular).
+> El Editor de SPA es la solución recomendada para proyectos que requieren SPA procesamiento del lado del cliente basado en el marco de trabajo (por ejemplo, React o Angular).
 
 ## Recursos adicionales {#additional-resources}
 
-La implementación de WKND SPA solo es compatible con AEM 6.4.8+, AEM 6.5.5+ y AEM as a Cloud Service.
+La implementación de WKND SPA solo es compatible con AEM 6.4.8+, AEM 6.5.5+ y AEM como Cloud Service.
 
-Descargue e instale el [paquete WKND SPA apropiado](https://github.com/adobe/aem-guides-wknd-spa/releases) en función de su versión de AEM. Existen versiones independientes para **React** y **Angular**.
+Descargue e instale el [WKND SPA paquete](https://github.com/adobe/aem-guides-wknd-spa/releases) correspondiente en función de su versión de AEM. Existen versiones independientes para **React** y **Angular**.
 
 Para ver un tutorial detallado sobre el desarrollo con el Editor de SPA, consulte:
 
-* [Introducción al Editor de SPA y Angular de AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
-* [Introducción al Editor de SPA de AEM y React](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
+* [Introducción al Editor de SPA y Angular de AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html)
+* [Introducción al Editor de SPA de AEM y React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
