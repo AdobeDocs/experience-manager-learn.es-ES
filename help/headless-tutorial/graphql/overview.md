@@ -1,13 +1,13 @@
 ---
 title: 'Introducción a AEM sin encabezado: GraphQL'
 description: Información general sobre las API y capacidades de AEM GraphQL.
-feature: Fragmentos de contenido, API
+feature: Fragmentos de contenido, API de GraphQL, API
 topic: Sin objetivos, Administración de contenido
 role: Developer
 level: Beginner
-source-git-commit: 22829f532f7791af14919af24650b4593fe89ae8
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '252'
 ht-degree: 1%
 
 ---
