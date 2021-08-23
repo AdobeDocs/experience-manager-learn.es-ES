@@ -9,14 +9,13 @@ activity: implement
 version: 6.4,6.5
 kt: 5269
 thumbnail: kt-5269.jpg
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '282'
-ht-degree: 3%
+source-wordcount: '278'
+ht-degree: 2%
 
 ---
 
@@ -29,7 +28,7 @@ Los formularios HTML5 se pueden enviar al servlet alojado en AEM. Se puede acced
 
 Se puede crear un servlet simple para gestionar el envío de formularios HTML5. Los datos enviados se pueden extraer utilizando el siguiente código. Este [servlet](assets/html5-submit-handler.zip) está disponible como parte de este tutorial. Instale el [servlet](assets/html5-submit-handler.zip) utilizando el [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
 
-El código de la línea 9 puede utilizarse para invocar el proceso J2EE. Asegúrese de haber configurado [Adobe LiveCycle Client SDK Configuration](https://helpx.adobe.com/aem-forms/6/submit-form-data-livecycle-process.html) si desea utilizar el código para invocar el proceso J2EE.
+El código de la línea 9 puede utilizarse para invocar el proceso J2EE. Asegúrese de haber configurado la [configuración del SDK del cliente de LiveCycle de Adobe](https://helpx.adobe.com/aem-forms/6/submit-form-data-livecycle-process.html) si desea utilizar el código para invocar el proceso J2EE.
 
 ```java
 StringBuffer stringBuffer = new StringBuffer();
@@ -70,7 +69,7 @@ System.out.println("The submitted form data is " + stringBuffer.toString());
 ### Agregar entrada en Excluir rutas
 
 * Vaya a [configMgr](http://localhost:4502/system/console/configMgr).
-* Buscar _Filtro CSRF de Adobe Granite_
+* Buscar _Adobe Granite CSRF Filter_
 * Agregue la siguiente entrada en la sección Rutas excluidas
 * _/content/AemFormsSamples/handlehml5formsubmit_
 * Guarde los cambios
@@ -84,7 +83,7 @@ System.out.println("The submitted form data is " + stringBuffer.toString());
 
 ### Lectura adicional
 
-También se recomienda este [artículo](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/document-services/generate-pdf-from-mobile-form-submission-article.html) sobre la generación de PDF a partir del envío de formularios HTML5.
+También se recomienda este [artículo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/generate-pdf-from-mobile-form-submission-article.html) sobre la generación de PDF a partir del envío de formularios HTML5.
 
 
 
