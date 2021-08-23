@@ -1,16 +1,15 @@
 ---
 title: Capítulo 2 - Definición de modelos de fragmentos de contenido de eventos - Servicios de contenido
 seo-title: Introducción a los servicios de contenido de AEM - Capítulo 2 - Definición de modelos de fragmentos de contenido de eventos
-description: El capítulo 2 del tutorial AEM Headless cubre la habilitación y definición de modelos de fragmento de contenido utilizados para definir una estructura de datos normalizada y una interfaz de creación para crear eventos.
-seo-description: El capítulo 2 del tutorial AEM Headless cubre la habilitación y definición de modelos de fragmento de contenido utilizados para definir una estructura de datos normalizada y una interfaz de creación para crear eventos.
-feature: Content Fragments, APIs
-topic: Headless, Content Management
+description: El capítulo 2 del tutorial AEM sin encabezado trata la habilitación y definición de los modelos de fragmento de contenido utilizados para definir una estructura de datos normalizada y una interfaz de creación para la creación de eventos.
+seo-description: El capítulo 2 del tutorial AEM sin encabezado trata la habilitación y definición de los modelos de fragmento de contenido utilizados para definir una estructura de datos normalizada y una interfaz de creación para la creación de eventos.
+feature: Fragmentos de contenido, API
+topic: Sin objetivos, Administración de contenido
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1004'
+source-wordcount: '998'
 ht-degree: 7%
 
 ---
@@ -18,7 +17,7 @@ ht-degree: 7%
 
 # Capítulo 2 - Uso de modelos de fragmento de contenido
 
-Los modelos de fragmento de contenido de AEM definen esquemas de contenido que se pueden utilizar para crear plantillas de la creación de contenido sin procesar por parte de los autores de AEM. Este método es similar al scaffolding o a la creación basada en formularios. El concepto clave con los fragmentos de contenido es que el contenido creado no depende de la presentación, lo que significa que está pensado para un uso multicanal en el que la aplicación consumidora, ya sea AEM, una aplicación de una sola página o una aplicación móvil, controla cómo se muestra el contenido al usuario.
+AEM modelos de fragmento de contenido definen esquemas de contenido que se pueden usar para crear plantillas de la creación de contenido sin procesar por parte de AEM autores. Este método es similar al scaffolding o a la creación basada en formularios. El concepto clave con los fragmentos de contenido es que el contenido creado no depende de la presentación, lo que significa que está pensado para un uso multicanal en el que la aplicación que lo consume, ya sea AEM, una aplicación de una sola página o una aplicación móvil, controle cómo se muestra el contenido al usuario.
 
 La principal preocupación del fragmento de contenido es garantizar:
 
@@ -29,19 +28,19 @@ Este capítulo trata sobre la activación y definición de modelos de fragmento 
 
 ## Habilitar modelos de fragmento de contenido
 
-Los modelos de fragmento de contenido **deben** habilitarse mediante el **[Navegador de configuración [!UICONTROL AEM]](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html)**.
+Los modelos de fragmento de contenido **deben** habilitarse mediante **[AEM [!UICONTROL Explorador de configuración]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html)**.
 
-Si los modelos de fragmento de contenido **no** están habilitados para una configuración, el botón **[!UICONTROL Crear] > [!UICONTROL Fragmento de contenido]** no aparecerá para la configuración de AEM relevante.
+Si los modelos de fragmento de contenido **no** están habilitados para una configuración, el botón **[!UICONTROL Crear] > [!UICONTROL Fragmento de contenido]** no aparecerá para la configuración de AEM pertinente.
 
 >[!NOTE]
 >
->Las configuraciones de AEM representan un conjunto de [configuraciones de inquilino según el contexto](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) almacenadas en `/conf`. Normalmente, las configuraciones de AEM se correlacionan con un sitio web concreto administrado en AEM Sites o con una unidad empresarial responsable de un subconjunto de contenido (activos, páginas, etc.) en AEM.
+>AEM configuraciones representan un conjunto de [configuraciones de inquilino según el contexto](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) almacenadas en `/conf`. Normalmente, las configuraciones de AEM se correlacionan con un sitio web concreto administrado en AEM Sites o con una unidad de negocio responsable de un subconjunto de contenido (activos, páginas, etc.) en AEM.
 >
 >Para que una configuración afecte a una jerarquía de contenido, se debe hacer referencia a la configuración a través de la propiedad `cq:conf` en esa jerarquía de contenido. (Esto se logra para la configuración [!DNL WKND Mobile] en **Paso 5** a continuación).
 >
 >Cuando se utiliza la configuración `global`, la configuración se aplica a todo el contenido y no es necesario configurar `cq:conf`.
 >
->Consulte la documentación [[!UICONTROL Configuration Browser]](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html) para obtener más información.
+>Consulte la documentación [[!UICONTROL Configuration Browser]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html) para obtener más información.
 
 1. Inicie sesión en AEM Author como usuario con los permisos adecuados para modificar la configuración relevante.
    * Para este tutorial, se puede utilizar el usuario **admin** .
@@ -179,6 +178,6 @@ Después de completar la creación del modelo de fragmento de contenido, debe te
 
 ## Paso siguiente
 
-Opcionalmente, instale el paquete de contenido [com.adobe.aem.guides.wknd-mobile.content.chapter-2.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) en AEM Author a través del [Administrador de paquetes de AEM](http://localhost:4502/crx/packmgr/index.jsp). Este paquete contiene las configuraciones y el contenido descritos en esta parte del tutorial.
+Opcionalmente, instale el paquete de contenido [com.adobe.aem.guides.wknd-mobile.content.chapter-2.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) en AEM Author a través del [Administrador de paquetes AEM](http://localhost:4502/crx/packmgr/index.jsp). Este paquete contiene las configuraciones y el contenido descritos en esta parte del tutorial.
 
 * [Capítulo 3 - Creación de fragmentos de contenido de eventos](./chapter-3.md)
