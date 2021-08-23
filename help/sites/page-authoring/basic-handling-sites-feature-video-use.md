@@ -14,10 +14,10 @@ thumbnail: 31784.jpg
 topic: Administración de contenido
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 59%
+source-wordcount: '372'
+ht-degree: 60%
 
 ---
 
@@ -62,5 +62,5 @@ En este vídeo, se tratan las siguientes funciones o características:
 
 ## Recursos adicionales {#additional-resources}
 
-* [Edición de la documentación de contenido de una página](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html)
-* [Guía rápida para la creación de páginas](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)
+* [Edición de la documentación de contenido de una página](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html)
+* [Guía rápida para la creación de páginas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)
