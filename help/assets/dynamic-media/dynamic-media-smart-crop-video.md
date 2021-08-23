@@ -9,10 +9,10 @@ thumbnail: 37958.jpg
 topic: Administración de contenido
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 9%
+source-wordcount: '109'
+ht-degree: 1%
 
 ---
 
@@ -25,5 +25,5 @@ Dynamic Media Smart Crop para vídeo utiliza Adobe Sensei para rastrear de forma
 
 >[!NOTE]
 >
->El vídeo anterior supone que el servicio de AEM se está ejecutando en modo Dynamic Media S7. [Las instrucciones para configurar AEM con Dynamic Media se encuentran aquí.](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html)
+>El vídeo anterior supone que el servicio de AEM se está ejecutando en modo Dynamic Media S7. [Las instrucciones para configurar AEM con Dynamic Media se encuentran aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html)
 
