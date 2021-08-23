@@ -1,34 +1,33 @@
 ---
-title: Explicación de la gestión de color con AEM Dynamic Media
-description: En este vídeo analizamos la administración de color de Dynamic Media y cómo se puede utilizar para proporcionar funciones de previsualización de corrección de color en para AEM Assets.
+title: Explicación de la administración de color con AEM Dynamic Media
+description: En este vídeo analizamos la gestión de color de Dynamic Media y cómo se puede utilizar para proporcionar funciones de previsualización de corrección de color en para AEM Assets.
 sub-product: dynamic-media
-feature: Image Profiles, Video Profiles
+feature: Perfiles de imagen, Perfiles de vídeo
 version: 6.3, 6.4, 6.5
-topic: Content Management
+topic: Administración de contenido
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '326'
 ht-degree: 15%
 
 ---
 
 
-# Explicación de la gestión de color con AEM Dynamic Media{#understanding-color-management-with-aem-dynamic-media}
+# Explicación de la administración de color con AEM Dynamic Media{#understanding-color-management-with-aem-dynamic-media}
 
-En este vídeo analizamos la administración de color de Dynamic Media y cómo se puede utilizar para proporcionar funciones de previsualización de corrección de color en para AEM Assets.
+En este vídeo analizamos la gestión de color de Dynamic Media y cómo se puede utilizar para proporcionar funciones de previsualización de corrección de color en para AEM Assets.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16792/?quality=9&learn=on)
 
 >[!NOTE]
 >
->[Habilite Dynamic ](https://docs.adobe.com/docs/en/aem/6-0/administer/integration/dynamic-media/enabling-dynamic-media.html) Media AEM para utilizar esta función.
+>[Active Dynamic ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html) Media AEM para utilizar esta función.
 
-Esta función está disponible para las versiones 6.1 y 6.2 de AEM as a Feature Pack.
+Esta función está disponible para AEM versiones 6.1 y 6.2 como Feature Pack.
 
-## Plantilla XML para el nodo de configuración {#xml-template-for-the-color-management-configuration-node} de Gestión de color
+## Plantilla XML para el nodo de configuración Gestión de color {#xml-template-for-the-color-management-configuration-node}
 
 A continuación se muestra la plantilla XML para el nodo de configuración Gestión de color. Esta plantilla XML se puede copiar en el proyecto de desarrollo de AEM y configurar con las configuraciones adecuadas para el proyecto.
 
@@ -86,7 +85,7 @@ A continuación se muestra la plantilla XML para el nodo de configuración Gesti
 />
 ```
 
-### La lista de perfiles de color predeterminados de Adobe se muestra a continuación {#list-of-default-adobe-color-profiles-are-listed-below}
+### A continuación se enumeran los perfiles de color de Adobe predeterminados {#list-of-default-adobe-color-profiles-are-listed-below}
 
 | Nombre | Espacio color | Descripción |
 | ------------------- | ---------- | ------------------------------------- |
