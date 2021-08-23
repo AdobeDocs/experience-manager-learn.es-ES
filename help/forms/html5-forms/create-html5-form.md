@@ -12,9 +12,9 @@ thumbnail: kt-4419.jpg
 topic: Desarrollo
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '484'
 ht-degree: 5%
 
 ---
@@ -26,7 +26,7 @@ HTML5 forms es una nueva funcionalidad en Adobe Experience Manager que ofrece la
 
 ## Requisitos previos
 
-Asegúrese de que tiene una instancia de AEM Forms en funcionamiento. Siga la [guía de instalación](https://docs.adobe.com/content/help/en/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) para instalar y configurar AEM Forms
+Asegúrese de que tiene una instancia de AEM Forms en funcionamiento. Siga la [guía de instalación](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) para instalar y configurar AEM Forms
 
 ## Crear el primer formulario HTML5
 
@@ -58,7 +58,7 @@ Las propiedades avanzadas de la plantilla xdp permiten especificar la fecha de p
 
 **Dirección URL de envío** : es la dirección URL que gestiona el envío de formulario HTML5. En la siguiente lección trataremos esto. Si no se especifica una dirección URL de envío, se invoca el controlador de envío predeterminado, que devuelve los datos del formulario al explorador.
 
-**Perfil de procesamiento HTML** : los formularios HTML5 tienen la noción de Perfiles que se exponen como extremos REST para permitir el procesamiento móvil de plantillas de formulario. La mayoría de las veces el perfil de procesamiento predeterminado debe ser suficiente para procesar el formulario. Si el perfil de renderización predeterminado no satisface sus necesidades, se puede crear un [perfil personalizado](https://docs.adobe.com/content/help/en/experience-manager-64/forms/html5-forms/custom-profile.html) y asociarlo al formulario.
+**Perfil de procesamiento HTML** : los formularios HTML5 tienen la noción de Perfiles que se exponen como extremos REST para permitir el procesamiento móvil de plantillas de formulario. La mayoría de las veces el perfil de procesamiento predeterminado debe ser suficiente para procesar el formulario. Si el perfil de renderización predeterminado no satisface sus necesidades, se puede crear un [perfil personalizado](https://experienceleague.adobe.com/docs/experience-manager-64/forms/html5-forms/custom-profile.html) y asociarlo al formulario.
 
 **Servicio de relleno previo** : el servicio de cumplimentación previa suele utilizarse para rellenar el formulario con datos recuperados de un origen de datos de servidor.
 
