@@ -1,12 +1,7 @@
 ---
 title: 'Explorar las API de GraphQL: Introducción a AEM sin encabezado: GraphQL'
 description: Introducción a Adobe Experience Manager (AEM) y GraphQL. Explore AEM API de GraphQL mediante el IDE integrado de GrapiQL. Descubra cómo AEM genera automáticamente un esquema de GraphQL basado en un modelo de fragmento de contenido. Experimento en la construcción de consultas básicas mediante la sintaxis de GraphQL.
-sub-product: activos
-topics: headless
 version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
 mini-toc-levels: 1
 kt: 6714
 thumbnail: KT-6714.jpg
@@ -14,10 +9,9 @@ feature: Fragmentos de contenido, API de GraphQL
 topic: Sin objetivos, Administración de contenido
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: 81626b8d853f3f43d9c51130acf02561f91536ac
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1141'
+source-wordcount: '1140'
 ht-degree: 0%
 
 ---
@@ -41,7 +35,7 @@ Este es un tutorial en varias partes y se da por hecho que se han completado los
 * Obtenga información sobre cómo consultar una variación de un fragmento de contenido.
 * Aprenda a unir una consulta de varios modelos de fragmento de contenido
 
-## Instale la herramienta GraphiQL {#install-graphiql}
+## Instalación de la herramienta GraphiQL {#install-graphiql}
 
 El IDE de GraphiQL es una herramienta de desarrollo que solo se necesita en entornos de nivel inferior como un desarrollo o una instancia local. Por lo tanto, no se incluye en el proyecto AEM, sino que se presenta como un paquete independiente que se puede instalar según sea necesario.
 
