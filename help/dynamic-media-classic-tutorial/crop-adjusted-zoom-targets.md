@@ -10,9 +10,9 @@ activity: use
 topic: Administración de contenido
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2670'
+source-wordcount: '2659'
 ht-degree: 0%
 
 ---
@@ -24,9 +24,9 @@ Una de las principales ventajas del concepto de imagen maestra de Dynamic Media 
 
 Al final de esta sección del tutorial, sabrá cómo:
 
-- Recorte imágenes en Dynamic Media Classic y guárdelas como archivos maestros nuevos o como imágenes virtuales. [Más información](https://docs.adobe.com/help/en/dynamic-media-classic/using/master-files/cropping-image.html).
-- Guarde las imágenes virtuales ajustadas y utilícelas en lugar de los recursos maestros. [Más información](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/adjusting-image.html).
-- Cree destinos de zoom en las imágenes para mostrar sus aspectos destacados. [Más información](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/zoom/creating-zoom-targets-guided-zoom.html).
+- Recorte imágenes en Dynamic Media Classic y guárdelas como archivos maestros nuevos o como imágenes virtuales. [Más información](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html).
+- Guarde las imágenes virtuales ajustadas y utilícelas en lugar de los recursos maestros. [Más información](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/adjusting-image.html).
+- Cree destinos de zoom en las imágenes para mostrar sus aspectos destacados. [Más información](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/zoom/creating-zoom-targets-guided-zoom.html).
 
 ## Recortar
 
@@ -45,8 +45,8 @@ Dynamic Media Classic cuenta con algunas herramientas de edición de imágenes d
 
 Puede acceder a la herramienta Recortar en Dynamic Media Classic desde la página Detalles de un recurso o haciendo clic en el botón **Editar**. Puede utilizar la herramienta para recortar de dos formas:
 
-- El modo de recorte predeterminado en el que se arrastran los controles de la ventana de recorte o se escriben valores en el cuadro Tamaño. Aprenda a [Recortar manualmente](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/cropping-image.html#select-an-area-to-crop).
-- Recortar. Utilice esto para eliminar espacios en blanco adicionales alrededor de la imagen calculando el número de píxeles que no coinciden con la imagen. Obtenga información sobre cómo [Recortar recortando](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/cropping-image.html#crop-to-remove-white-space-around-an-image).
+- El modo de recorte predeterminado en el que se arrastran los controles de la ventana de recorte o se escriben valores en el cuadro Tamaño. Aprenda a [Recortar manualmente](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html#select-an-area-to-crop).
+- Recortar. Utilice esto para eliminar espacios en blanco adicionales alrededor de la imagen calculando el número de píxeles que no coinciden con la imagen. Obtenga información sobre cómo [Recortar recortando](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html#crop-to-remove-white-space-around-an-image).
 
 ### _Recorte manual_
 
@@ -137,7 +137,7 @@ El proceso es muy sencillo: haga clic en la función, asígnele un nombre descri
 
 Otro factor a la hora de decidir si usar destinos de zoom es su elección de visor. No todos los tipos de visores pueden mostrar Destinos de zoom (por ejemplo, el visor de salida no los admite).
 
-Obtenga información sobre cómo [Crear destinos de zoom](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/zoom/creating-zoom-targets-guided-zoom.html#creating-and-editing-zoom-targets).
+Obtenga información sobre cómo [Crear destinos de zoom](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/zoom/creating-zoom-targets-guided-zoom.html#creating-and-editing-zoom-targets).
 
 ![image](assets/crop-adjusted-zoom-targets/zoom-targets.jpg)
 
