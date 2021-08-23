@@ -1,19 +1,18 @@
 ---
 title: Uso de la API por lotes para generar documentos de comunicación interactiva
 description: Activos de muestra para generar documentos de canal de impresión mediante la API por lotes
-feature: Interactive Communication
+feature: Comunicación interactiva
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.5
-topic: Development
+topic: Desarrollo
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '417'
 ht-degree: 3%
 
 ---
@@ -23,7 +22,7 @@ ht-degree: 3%
 
 Puede utilizar la API por lotes para producir varias comunicaciones interactivas a partir de una plantilla. La plantilla es una comunicación interactiva sin datos. La API por lotes combina datos con una plantilla para producir una comunicación interactiva. La API es útil en la producción masiva de comunicaciones interactivas. Por ejemplo, facturas telefónicas, extractos de tarjetas de crédito para varios clientes.
 
-[Más información sobre la API de generación de lotes](https://docs.adobe.com/content/help/en/experience-manager-65/forms/interactive-communications/generate-multiple-interactive-communication-using-batch-api.html)
+[Más información sobre la API de generación de lotes](https://experienceleague.adobe.com/docs/experience-manager-65/forms/interactive-communications/generate-multiple-interactive-communication-using-batch-api.html)
 
 Este artículo proporciona recursos de ejemplo para generar documentos de Interactive Communications mediante la API por lotes.
 
@@ -32,7 +31,7 @@ Este artículo proporciona recursos de ejemplo para generar documentos de Intera
 * Importe la [plantilla de comunicación interactiva](assets/Beneficiaries-confirmation.zip) en el servidor de AEM Forms.
 * Importe la [configuración de carpeta observada](assets/batch-generation-api.zip). Esto creará una carpeta llamada `batchAPI` en su unidad C.
 
-**Si está ejecutando AEM Forms en un sistema operativo que no es de Windows, siga los 3 pasos que se indican a continuación:**
+**Si está ejecutando AEM Forms en un sistema operativo que no sea de Windows, siga los 3 pasos que se indican a continuación:**
 
 1. [Abrir carpeta vigilada](http://localhost:4502/libs/fd/core/WatchfolderUI/content/UI.html)
 2. Seleccione BatchAPIWatchedFolder y haga clic en Editar.
@@ -65,4 +64,4 @@ La siguiente captura de pantalla muestra los parámetros y sus valores
 * Importar [Controlador de envío personalizado](assets/BatchAPICustomSubmit.zip) utilizando [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
 * Importar [Formulario adaptable](assets/BatchGenerationAPIAF.zip) mediante la [interfaz de Forms y documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Implementar e iniciar [paquete OSGI personalizado](assets/batchgenerationapi.batchgenerationapi.core-1.0-SNAPSHOT.jar) utilizando [Consola web Felix](http://localhost:4502/system/console/bundles)
-* [Activar la generación de lotes enviando el formulario](http://localhost:4502/content/dam/formsanddocuments/batchgenerationapi/jcr:content?wcmmode=disabled)
+* [Generación de lotes de déclencheur enviando el formulario](http://localhost:4502/content/dam/formsanddocuments/batchgenerationapi/jcr:content?wcmmode=disabled)
