@@ -12,10 +12,9 @@ thumbnail: 32551.jpg
 topic: Desarrollo
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d49ae402b332ba972a78cdbd8f5bf962b91c83b1
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1734'
+source-wordcount: '1732'
 ht-degree: 2%
 
 ---
@@ -60,7 +59,7 @@ El SDK de AEM as a Cloud Service, o SDK de AEM, contiene el Jar de inicio rápid
 
 1. Descomprima el archivo `aem-sdk-XXX.zip` descargado
 
-## Configurar el servicio local de AEM Author{#set-up-local-aem-author-service}
+## Configuración del servicio local de AEM Author{#set-up-local-aem-author-service}
 
 El servicio de creación de AEM local proporciona a los desarrolladores una experiencia local que los especialistas en marketing digital/autores de contenido compartirán para crear y administrar contenido.  El servicio de creación de AEM está diseñado como entorno de creación y previsualización, lo que permite realizar la mayoría de las validaciones del desarrollo de funciones en su contra, lo que lo convierte en un elemento vital del proceso de desarrollo local.
 
@@ -231,7 +230,7 @@ o bien, para iniciar el servicio AEM Publish, `cd` en el directorio que contiene
 
 `$ java -jar aem-publish-p4503.jar`
 
-## Iniciar el Jar de inicio rápido desde la línea de comandos anula{#troubleshooting-java-8} inmediatamente
+## El inicio del Jar de inicio rápido desde la línea de comandos se anula inmediatamente.{#troubleshooting-java-8}
 
 Al iniciar el Jar de inicio rápido desde la línea de comandos, el proceso se interrumpe inmediatamente y el servicio de AEM no se inicia, con el siguiente error:
 
@@ -259,4 +258,4 @@ Una vez instalado el SDK de Java 11, compruebe que es la versión activa ejecuta
 + [Descargar AEM SDK](https://experience.adobe.com/#/downloads)
 + [Adobe Cloud Manager](https://my.cloudmanager.adobe.com/)
 + [Descargar Docker](https://www.docker.com/)
-+ [Documentación de Dispatcher de Experience Manager](https://docs.adobe.com/content/help/es-ES/experience-manager-dispatcher/using/dispatcher.html)
++ [Documentación de Dispatcher de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es)
