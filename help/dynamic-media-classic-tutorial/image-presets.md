@@ -10,9 +10,9 @@ activity: use
 topic: Administración de contenido
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '706'
 ht-degree: 1%
 
 ---
@@ -40,8 +40,8 @@ Un ajuste preestablecido de imagen tiene un signo de dólar ($) a ambos lados de
 >
 >Cree un ajuste preestablecido de imagen por tamaño de imagen único en el sitio. Por ejemplo, si necesita una imagen de 350 X 350 para la página de detalles del producto, una imagen de 120 X 120 para las páginas de navegación/búsqueda y una imagen de 90 X 90 para un artículo de venta cruzada/destacado, necesitará tres ajustes preestablecidos de imagen, independientemente de que tenga 500 imágenes o 500 000.
 
-- Obtenga más información sobre [Ajustes preestablecidos de imagen](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sizing/setting-image-presets.html).
-- Obtenga información sobre cómo [Crear un ajuste preestablecido de imagen](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sizing/setting-image-presets.html#creating-an-image-preset).
+- Obtenga más información sobre [Ajustes preestablecidos de imagen](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sizing/setting-image-presets.html).
+- Obtenga información sobre cómo [Crear un ajuste preestablecido de imagen](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sizing/setting-image-presets.html#creating-an-image-preset).
 
 ## Ajustes preestablecidos de imagen y enfoque
 
@@ -63,7 +63,7 @@ El gráfico siguiente muestra tres niveles de nitidez. De derecha a izquierda no
 
 Dynamic Media Classic permite tres tipos de nitidez: Enfoque simple, modo de remuestreo y máscara de enfoque.
 
-Obtenga más información sobre [Opciones de enfoque de Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/sharpening-image.html#sharpening_an_image).
+Obtenga más información sobre [Opciones de enfoque de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/sharpening-image.html#sharpening_an_image).
 
 ## Recursos adicionales
 
