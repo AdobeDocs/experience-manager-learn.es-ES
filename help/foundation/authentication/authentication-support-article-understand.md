@@ -2,20 +2,19 @@
 title: Comprender la compatibilidad con la autenticación en AEM
 description: 'Una vista consolidada de los mecanismos de autenticación (y, ocasionalmente, autorización) admitidos por AEM. '
 version: 6.3, 6.4, 6.5
-feature: Users and Groups
+feature: Usuarios y grupos
 topics: authentication, security
 activity: understand
 audience: architect, developer, implementer
 doc-type: article
 kt: 406
-topic: Architecture
+topic: Arquitectura
 role: Architect
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '144'
-ht-degree: 5%
+source-wordcount: '134'
+ht-degree: 3%
 
 ---
 
@@ -24,7 +23,7 @@ ht-degree: 5%
 
 Una vista consolidada de los mecanismos de autenticación (y, ocasionalmente, autorización) admitidos por AEM.
 
-*En la tabla siguiente se describe cómo pueden autenticarse los usuarios en AEM.*
+*En la tabla siguiente se describe cómo se pueden autenticar los usuarios en AEM.*
 
 <table>
     <tbody>
@@ -47,13 +46,13 @@ Una vista consolidada de los mecanismos de autenticación (y, ocasionalmente, au
             <td>š</td>
         </tr>
         <tr>
-            <td>Basado en formularios</td>
+            <td>Basado en Forms</td>
             <td>š</td>
             <td>š</td>
             <td>š</td>
         </tr>
         <tr>
-            <td>Basado en tokens (con <a href="https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/encapsulated-token.html" target="_blank">token encapsulado</a>)</td>
+            <td>Basado en tokens (con <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encapsulated-token.html" target="_blank">token encapsulado</a>)</td>
             <td>š</td>
             <td>š</td>
             <td>š</td>
@@ -64,19 +63,19 @@ Una vista consolidada de los mecanismos de autenticación (y, ocasionalmente, au
             <td></td>
             <td></td>
             <tr>
-                <td><a href="https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/ldap-config.html" target="_blank">LDAP</a></td>
+                <td><a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/ldap-config.html" target="_blank">LDAP</a></td>
                 <td>š</td>
                 <td>š</td>
                 <td>š</td>
             </tr>
             <tr>
-                <td><a href="https://docs.adobe.com/content/help/en/experience-manager-65/deploying/configuring/single-sign-on.html" target="_blank">SSO</a></td>
+                <td><a href="https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/single-sign-on.html" target="_blank">SSO</a></td>
                 <td>š</td>
                 <td>š</td>
                 <td>š</td>
             </tr>
             <tr>
-                <td><a href="https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/saml-2-0-authenticationhandler.html" target="_blank">SAML 2.0</a></td>
+                <td><a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/saml-2-0-authenticationhandler.html" target="_blank">SAML 2.0</a></td>
                 <td>š</td>
                 <td>š</td>
                 <td>š</td>
@@ -96,4 +95,4 @@ Una vista consolidada de los mecanismos de autenticación (y, ocasionalmente, au
     </tbody>
 </table>
 
-⁕ *Se proporciona a través de proyectos de la comunidad, pero Adobe no los admite directamente.*
+⁕ *Se proporciona a través de proyectos de la comunidad, pero no directamente compatible con Adobe.*
