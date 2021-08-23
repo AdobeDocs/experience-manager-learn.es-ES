@@ -12,9 +12,9 @@ thumbnail: 4854-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 24d70ebaa6a63cfd4a73f43188f25b375dc702ec
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2273'
+source-wordcount: '2267'
 ht-degree: 1%
 
 ---
@@ -52,7 +52,7 @@ El concepto básico es asignar un componente SPA a un componente AEM. AEM compon
 
 ## Inspect del componente de texto
 
-El [AEM tipo de archivo del proyecto](https://github.com/adobe/aem-project-archetype) proporciona un componente `Text` que está asignado al AEM [Componente de texto](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html). Este es un ejemplo de componente **content**, en el sentido de que procesa *content* desde AEM.
+El [AEM tipo de archivo del proyecto](https://github.com/adobe/aem-project-archetype) proporciona un componente `Text` que está asignado al AEM [Componente de texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html). Este es un ejemplo de componente **content**, en el sentido de que procesa *content* desde AEM.
 
 Veamos cómo funciona el componente.
 
@@ -223,7 +223,7 @@ Inspeccionemos más el contenedor de diseño.
 
    El componente **Contenedor de diseño** tiene un `sling:resourceType` de `wcm/foundation/components/responsivegrid` y el Editor de SPA lo reconoce mediante la propiedad `:type`, al igual que los componentes `Text` y `Image`.
 
-   Las mismas capacidades de cambiar el tamaño de un componente mediante el [Modo de diseño](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/siteandpage/responsive-layout.html#defining-layouts-layout-mode) están disponibles con el Editor de SPA.
+   Las mismas capacidades de cambiar el tamaño de un componente mediante el [Modo de diseño](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html#defining-layouts-layout-mode) están disponibles con el Editor de SPA.
 
 2. Vuelva a [http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html). Añada componentes **Image** adicionales e intente redimensionarlos con la opción **Layout**:
 
@@ -251,7 +251,7 @@ Felicidades, ha aprendido a asignar SPA componentes a los componentes AEM y ha u
 
 [Navegación y enrutamiento](navigation-routing.md) : Descubra cómo se pueden admitir varias vistas de la SPA asignando páginas AEM con el SDK del Editor de SPA. La navegación dinámica se implementa mediante el router React y los componentes principales React.
 
-## (Bono) Conservar configuraciones en control de código fuente {#bonus-configs}
+## (Bono) Persistir configuraciones para control de código fuente {#bonus-configs}
 
 En muchos casos, especialmente al principio de un proyecto AEM, es importante mantener las configuraciones, como las plantillas y las políticas de contenido relacionadas, para el control de código fuente. Esto garantiza que todos los desarrolladores trabajen con el mismo conjunto de contenido y configuraciones, y puede garantizar una coherencia adicional entre entornos. Una vez que un proyecto alcanza un cierto nivel de madurez, la práctica de administrar plantillas se puede transferir a un grupo especial de usuarios avanzados.
 
@@ -286,9 +286,9 @@ Los siguientes pasos se llevarán a cabo utilizando Visual Studio Code IDE y [VS
 
    Compare `ui.content/src/main/content/META-INF/vault/filter.xml` y `ui.apps/src/main/content/META-INF/vault/filter.xml` para comprender los diferentes nodos administrados por cada módulo.
 
-## (Bono) Crear un componente de imagen personalizado {#bonus-image}
+## (Bonos) Crear un componente de imagen personalizado {#bonus-image}
 
-Los componentes principales de React ya han proporcionado un componente de imagen SPA. Sin embargo, si desea realizar prácticas adicionales, cree su propia implementación de React que se asigne al AEM [Componente de imagen](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/components/image.html). El componente `Image` es otro ejemplo de un componente **content**.
+Los componentes principales de React ya han proporcionado un componente de imagen SPA. Sin embargo, si desea realizar prácticas adicionales, cree su propia implementación de React que se asigne al AEM [Componente de imagen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html). El componente `Image` es otro ejemplo de un componente **content**.
 
 ### Inspect JSON
 
