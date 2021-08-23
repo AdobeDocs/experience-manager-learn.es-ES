@@ -14,9 +14,9 @@ thumbnail: 32011.jpg
 topic: Administración de contenido
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '242'
 ht-degree: 7%
 
 ---
@@ -56,5 +56,5 @@ Las funciones del editor de páginas incluyen:
 
 ## Recursos adicionales {#additional-resources}
 
-* [Edición de la documentación de contenido de una página](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/authoring/editing-content.html)
-* [Guía del usuario sobre la creación de sitios](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/home.html)
+* [Edición de la documentación de contenido de una página](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
+* [Guía del usuario sobre la creación de sitios](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
