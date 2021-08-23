@@ -13,15 +13,15 @@ thumbnail: 5309-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: bf9ab30f57faa23721d7d27b837d8e0f0e8cf4f1
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1115'
+source-wordcount: '1111'
 ht-degree: 3%
 
 ---
 
 
-# Proyecto del Editor de SPA {#create-project}
+# Proyecto del Editor SPA {#create-project}
 
 Aprenda a utilizar un proyecto de Adobe Experience Manager (AEM) Maven como punto de partida para una aplicación de Angular integrada con el AEM SPA Editor.
 
@@ -90,7 +90,7 @@ Existen varias opciones para crear un proyecto de Maven Multi-module para AEM. E
 
    >[!NOTE]
    >
-   > Observe la propiedad `frontendModule=angular`. Esto le indica al tipo de archivo del proyecto AEM que arranque el proyecto con un [código de Angular base](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html) que se utilizará con el AEM SPA Editor.
+   > Observe la propiedad `frontendModule=angular`. Esto le indica al tipo de archivo del proyecto AEM que arranque el proyecto con un [código de Angular base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html) que se utilizará con el AEM SPA Editor.
 
 ## Creación del proyecto
 
@@ -149,7 +149,7 @@ A continuación, compile, cree e implemente el código del proyecto en una insta
 
    Todo el código personalizado necesario para el proyecto se incluye en estos paquetes e se instala en el tiempo de ejecución de AEM.
 
-6. También debería ver varios paquetes para `spa.project.core` y `core.wcm.components`. Son dependencias que el tipo de archivo incluye automáticamente. Puede encontrar más información sobre los [AEM componentes principales aquí](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html).
+6. También debería ver varios paquetes para `spa.project.core` y `core.wcm.components`. Son dependencias que el tipo de archivo incluye automáticamente. Puede encontrar más información sobre los [AEM componentes principales aquí](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es).
 
 ## Contenido de autor
 
