@@ -7,10 +7,10 @@ version: 6.3, 6.4, 6.5
 topic: Administración de contenido
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 8%
+source-wordcount: '149'
+ht-degree: 2%
 
 ---
 
@@ -23,7 +23,7 @@ AEM Assets Dynamic Media integra puntos interactivos de recursos con fragmentos 
 
 >[!NOTE]
 >
->El uso de AEM fragmentos de experiencia con zonas interactivas de AEM Assets Dynamic Media requiere que [AEM se ejecute en el modo Dynamic Media](https://docs.adobe.com/docs/es-ES/aem/6-3/administer/content/dynamic-media/config-dynamic.html).
+>El uso de AEM fragmentos de experiencia con zonas interactivas de AEM Assets Dynamic Media requiere que [AEM se ejecute en el modo Dynamic Media](https://experienceleague.adobe.com/docs/).
 
 La variante del fragmento de experiencia emergente que se muestra en el vídeo está disponible como paquete de AEM a continuación.
 
