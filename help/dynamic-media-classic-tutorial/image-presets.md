@@ -2,17 +2,17 @@
 title: Ajustes preestablecidos de imagen
 description: Los ajustes preestablecidos de imagen en Dynamic Media Classic contienen todos los ajustes necesarios para crear una imagen con un tamaño, formato, calidad y nitidez específicos. Los ajustes preestablecidos de imagen son un componente clave del tamaño dinámico. Al mirar una URL en Dynamic Media Classic, puede ver fácilmente si hay un ajuste preestablecido de imagen en uso. Obtenga información sobre los ajustes preestablecidos de imagen, por qué son tan útiles y cómo crearlos.
 sub-product: dynamic-media
-feature: Dynamic Media Classic, ajustes preestablecidos de imagen
+feature: Dynamic Media Classic, Image Presets
 doc-type: tutorial
 topics: development, authoring, configuring
 audience: all
 activity: use
-topic: Administración de contenido
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '670'
 ht-degree: 1%
 
 ---
@@ -70,5 +70,3 @@ Obtenga más información sobre [Opciones de enfoque de Dynamic Media Classic](h
 [Guía de ajustes preestablecidos de imagen](https://www.adobe.com/content/dam/www/us/en/experience-manager/pdfs/dynamic-media-image-preset-guide.pdf). Configuración que se debe utilizar para optimizar la calidad de imagen y la velocidad de carga.
 
 [La Imagen Es Todo Lo Que Figura En La Parte 2: Nunca es solo un desenfoque: calidad frente a velocidad](https://theblog.adobe.com/image-is-everything-part-2-its-never-just-a-blur-quality-versus-speed/). Una entrada de blog que habla sobre el uso de ajustes preestablecidos de imagen para ofrecer imágenes de alta calidad y de carga rápida.
-
-[La Imagen Es Todo Webinars](https://dynamicmediaseries2019.enterprise.adobeevents.com/). Enlaces a grabaciones de los tres seminarios web de la serie _Image Is Everything_. [Seminario web 2](https://seminars.adobeconnect.com/p6lqaotpjnd3) analiza los ajustes preestablecidos de imagen.
