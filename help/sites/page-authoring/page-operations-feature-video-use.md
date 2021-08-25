@@ -1,23 +1,17 @@
 ---
 title: Operaciones de página básicas en AEM Sites
-seo-title: Operaciones de página básicas en AEM Sites
 description: En el siguiente vídeo se destaca cómo realizar operaciones básicas de administración de páginas para una página de Adobe Experience Manager Sites.
-seo-description: En el siguiente vídeo se destaca cómo realizar operaciones básicas de administración de páginas para una página de Adobe Experience Manager Sites.
-feature: Editor de páginas, plantillas editables
-topics: authoring, publishing
-audience: author, marketer
-doc-type: feature video
-activity: use
 version: 6.3, 6.4, 6.5
-kt: 4245
-thumbnail: 32147.jpg
-topic: Administración de contenido
+topic: Content Management
+feature: Page Editor, Editable Templates
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+kt: 4245
+thumbnail: 32147.jpg
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '101'
-ht-degree: 3%
+source-wordcount: '69'
+ht-degree: 11%
 
 ---
 
@@ -32,4 +26,4 @@ Obtenga información sobre cómo realizar operaciones básicas de administració
 ## Recursos adicionales {#additional-resources}
 
 * [Edición de la documentación de contenido de una página](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
-* [Guía del usuario sobre la creación de sitios](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html&amp;topic=/experience-manager/6-5/sites/authoring/morehelp/page-authoring.ug.js)
+* [Guía rápida para la creación de páginas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)
