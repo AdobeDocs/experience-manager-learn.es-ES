@@ -1,19 +1,14 @@
 ---
 title: Informes valiosos para administradores
 description: Descubra dos informes valiosos que los administradores de Dynamic Media Classic deben considerar para configurar.
-sub-product: medios dinámicos, recursos
 feature: Dynamic Media Classic
-doc-type: tutorial
-topics: development, authoring, configuring, reports
-audience: all
-activity: use
-topic: Administración de contenido
+topic: Content Management
 role: Admin
 level: Intermediate
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 1%
+source-wordcount: '314'
+ht-degree: 0%
 
 ---
 
@@ -47,6 +42,4 @@ Para obtener más información sobre Dynamic Media Classic, eche un vistazo a lo
 - [Dynamic Media Classic en Experience League: Obtener valor](https://guided.adobe.com/?launch=AEM-5a#recommended/solutions/experience-manager)
 - [Dynamic Media Classic en Experience League: Más información](https://guided.adobe.com/?launch=AEM-6a#recommended/solutions/experience-manager)
 - [Los archivos del boletín de Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/dynamic-media-newsletter.html)
-- [Página de suscripción al boletín de Dynamic Media](https://www.adobe.com/subscription/dynamic-media-newsletter.html)
 - [Documentación de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html)
-- [Publicaciones de blog de medios enriquecidos](https://theblog.adobe.com/tag/dynamic-media)
