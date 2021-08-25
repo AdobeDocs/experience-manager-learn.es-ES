@@ -1,20 +1,16 @@
 ---
 title: 'Introducción a AEM Sites: Páginas y plantillas'
-seo-title: 'Introducción a AEM Sites: Páginas y plantillas'
 description: Obtenga información sobre la relación entre un componente de página base y plantillas editables. Comprenda cómo se procesan los componentes principales en el proyecto y aprenda las configuraciones de política avanzadas de las plantillas editables para crear una plantilla de página de artículo bien estructurada basada en una maqueta de Adobe XD.
-sub-product: sitios
-version: 6.4, 6.5, Cloud Service
-type: Tutorial
-feature: Componentes principales, plantillas editables, editor de páginas
-topic: Gestión de contenido, desarrollo
+feature: Core Components, Editable Templates, Page Editor
+topic: Content Management, Development
 role: Developer
 level: Beginner
 mini-toc-levels: 1
 kt: 4082
 thumbnail: 30214.jpg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '3100'
+source-wordcount: '3082'
 ht-degree: 1%
 
 ---
@@ -57,7 +53,7 @@ Consulte el código de línea base sobre el que se basa el tutorial:
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-Siempre puede ver el código terminado en [GitHub](https://github.com/adobe/aem-guides-wknd/tree/pages-templates/solution) o extraer el código localmente cambiando a la rama `tutorial/pages-templates-solution`.
+Siempre puede ver el código terminado en [GitHub](https://github.com/adobe/aem-guides-wknd/tree/tutorial/pages-templates-solution) o extraer el código localmente cambiando a la rama `tutorial/pages-templates-solution`.
 
 ## Objetivo
 
