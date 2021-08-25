@@ -2,15 +2,15 @@
 title: Recopilación de datos de página con Adobe Analytics
 description: Utilice la capa de datos del cliente de Adobe impulsada por eventos para recopilar datos sobre la actividad del usuario en un sitio web creado con Adobe Experience Manager. Aprenda a utilizar las reglas en Experience Platform Launch para detectar estos eventos y enviar datos a un grupo de informes de Adobe Analytics.
 version: cloud-service
-topic: Integraciones
-feature: Capa de datos del cliente de Adobe
+topic: Integrations
+feature: Adobe Client Data Layer
 role: Developer
 level: Intermediate
 kt: 5332
 thumbnail: 5332-collect-data-analytics.jpg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '2378'
+source-wordcount: '2375'
 ht-degree: 1%
 
 ---
@@ -52,7 +52,7 @@ Se requieren las siguientes opciones:
 En lugar de configurar un entorno AEM e instalar la base de código WKND, puede utilizar el depurador de Experience Platform para **cambiar** en [https://wknd.site/](https://wknd.site/) activo a *su* propiedad de Launch. Por supuesto, puede usar su propio sitio AEM si ya tiene [Adobe Client Data Layer habilitado](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation)
 
 1. Inicie sesión en el Experience Platform Launch y [cree una propiedad de Launch](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/configure-launch/launch.html) (si aún no lo ha hecho).
-1. Asegúrese de que se ha creado](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html#create-a-library) una biblioteca [de Launch inicial y se ha promocionado a un entorno [de Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments.html).
+1. Asegúrese de que se ha creado](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html#create-a-library) una biblioteca [de Launch inicial y se ha promocionado a un entorno [de Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html).
 1. Copie el código de incrustación de Launch del entorno en el que se ha publicado la biblioteca.
 
    ![Copiar código incrustado de Launch](assets/collect-data-analytics/launch-environment-copy.png)
@@ -172,7 +172,7 @@ La capa de datos del cliente de Adobe es una capa de datos controlada por **even
 
    El objeto `event` se pasa desde el método `trigger()` llamado en el evento personalizado. `component` es la página actual derivada de la capa de datos  `getState` en el evento personalizado. Recuerde desde antes el [Page schema](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#page) expuesto por la capa de datos para ver las distintas claves expuestas fuera del cuadro.
 
-1. Guarde los cambios y ejecute una [compilación](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) en Launch para promocionar el código al [entorno](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments.html) utilizado en el sitio AEM.
+1. Guarde los cambios y ejecute una [compilación](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) en Launch para promocionar el código al [entorno](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html) utilizado en el sitio AEM.
 
    >[!NOTE]
    >
