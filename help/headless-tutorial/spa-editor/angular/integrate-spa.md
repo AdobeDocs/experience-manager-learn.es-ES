@@ -1,8 +1,8 @@
 ---
 title: Integrar un SPA | Introducción al Editor de SPA de AEM y al Angular
 description: Comprender cómo se puede integrar el código fuente de una aplicación de una sola página (SPA) escrita en Angular con un proyecto de Adobe Experience Manager (AEM). Aprenda a utilizar herramientas front-end modernas, como la herramienta CLI del Angular, para desarrollar rápidamente la SPA contra la API del modelo JSON de AEM.
-sub-product: sitios
-feature: Editor SPA
+sub-product: sites
+feature: SPA Editor
 topics: development
 doc-type: tutorial
 version: cloud-service
@@ -13,9 +13,9 @@ thumbnail: 5310-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '2195'
+source-wordcount: '2191'
 ht-degree: 0%
 
 ---
@@ -136,7 +136,7 @@ A continuación, inspeccione el módulo `ui.frontend` para comprender el SPA que
 
 6. Inspect el archivo `ui.frontend/clientlib.config.js`. Este archivo de configuración lo utiliza [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator#clientlibconfigjs) para determinar cómo generar la biblioteca de cliente.
 
-7. Inspect el archivo `ui.frontend/pom.xml`. Este archivo transforma la carpeta `ui.frontend` en un [módulo Maven](http://maven.apache.org/guides/mini/guide-multiple-modules.html). El archivo `pom.xml` se ha actualizado para utilizar el [frontend-maven-plugin](https://github.com/eirslett/frontend-maven-plugin) para **test** y la **compilación** durante una compilación de Maven.
+7. Inspect el archivo `ui.frontend/pom.xml`. Este archivo transforma la carpeta `ui.frontend` en un [módulo Maven](https://maven.apache.org/guides/mini/guide-multiple-modules.html). El archivo `pom.xml` se ha actualizado para utilizar el [frontend-maven-plugin](https://github.com/eirslett/frontend-maven-plugin) para **test** y la **compilación** durante una compilación de Maven.
 
 8. Inspect el archivo `app.component.ts` en `ui.frontend/src/app/app.component.ts`:
 
