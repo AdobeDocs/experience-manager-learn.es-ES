@@ -2,42 +2,32 @@
 title: Cómo codificar para el sistema de estilos de AEM
 description: En este vídeo, echaremos un vistazo a la anatomía de CSS (o LESS) y JavaScript que se usan para aplicar estilo al componente de título principal de Adobe Experience Manager mediante el sistema de estilos, así como a cómo se aplican estos estilos al HTML y al DOM.
 feature: Style System
-topics: development, components, front-end-development
-audience: developer, implementer
-doc-type: technical video
-activity: understand
 version: 6.4, 6.5
 topic: Development
 role: Developer
 level: Intermediate, Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '1151'
-ht-degree: 2%
+source-wordcount: '1092'
+ht-degree: 0%
 
 ---
 
 
-# Cómo se codifica el sistema de estilos{#understanding-how-to-code-for-the-aem-style-system}
+# Cómo codificar para el sistema de estilos{#understanding-how-to-code-for-the-aem-style-system}
 
 En este vídeo, echaremos un vistazo a la anatomía de CSS (o [!DNL LESS]) y JavaScript que se usan para aplicar estilo al componente de título principal de Experience Manager mediante el sistema de estilos, así como a cómo se aplican estos estilos al HTML y al DOM.
 
->[!NOTE]
->
->El sistema de estilos de AEM se introdujo con [AEM 6.3 SP1](https://helpx.adobe.com/experience-manager/6-3/release-notes/sp1-release-notes.html) + [Feature Pack 20593](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-20593).
->
->El vídeo supone que el componente Título We.Retail se ha actualizado para heredar de [Componentes principales v2.0.0+](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/releases).
 
-## Cómo se codifica el sistema de estilos {#understanding-how-to-code-for-the-style-system}
+## Cómo codificar para el sistema de estilos {#understanding-how-to-code-for-the-style-system}
 
->[!VIDEO](https://video.tv.adobe.com/v/21538/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/21538/?quality=12&learn=on)
 
-El paquete AEM proporcionado (**technical-review.sites.style-system-1.0.0.zip**) instala el estilo de título de ejemplo, las políticas de muestra para los componentes Contenedor y Título de diseño de We.Retail y una página de muestra.
+El paquete de AEM proporcionado (**technical-review.sites.style-system-1.0.0.zip**) instala el estilo de título de ejemplo, las políticas de ejemplo para los componentes Contenedor de diseño y Título de We.Retail y una página de muestra.
 
 [technical-review.sites.style-system-1.0.0.zip](assets/technical-review.sites.style-system-1.0.0.zip)
 
-### CSS {#the-css}
+### La CSS {#the-css}
 
 La siguiente es la definición [!DNL LESS] para el estilo de ejemplo que se encuentra en:
 
@@ -71,7 +61,7 @@ Para los que prefieren CSS, bajo este fragmento de código está el CSS en el qu
 }
 ```
 
-Experience Manager compila de forma nativa el [!DNL LESS] anterior en el CSS siguiente.
+El [!DNL LESS] anterior es compilado de forma nativa por el Experience Manager en el siguiente CSS.
 
 ```css
 /* CSS */
@@ -204,7 +194,7 @@ jQuery(function ($) {
 * Organice cada estilo en un archivo discreto.
    * Estos archivos se pueden combinar utilizando LESS/SCSS `@imports` o si se requiere CSS sin procesar, mediante la inclusión de archivos de la biblioteca de cliente HTML o sistemas personalizados de creación de recursos front-end.
 * Evite mezclar muchos estilos complejos.
-   * Cuantos más estilos se puedan aplicar a un componente a la vez, mayor será la variedad de permutaciones. Esto puede resultar difícil de mantener/realizar controles de calidad/garantizar la alineación de la marca.
+   * Cuantos más estilos se puedan aplicar a un componente a la vez, buena es la variedad de permutaciones. Esto puede resultar difícil de mantener/realizar controles de calidad/garantizar la alineación de la marca.
 * Utilice siempre clases CSS (que sigan la notación BEM) para definir reglas CSS.
    * Si la selección de elementos sin clases CSS (es decir, elementos vacíos) es absolutamente necesaria, muévalos más arriba en la definición CSS para dejar claro que tienen una especificidad menor que cualquier conflicto con elementos de ese tipo que tienen clases CSS seleccionables.
 * Evite aplicar estilo al `BLOCK--MODIFIER` directamente, ya que está adjunto a la cuadrícula interactiva. Cambiar la visualización de este elemento puede afectar a la renderización y funcionalidad de la cuadrícula interactiva, por lo que solo el estilo de este nivel cuando la intención es cambiar el comportamiento de la cuadrícula interactiva.
@@ -247,7 +237,7 @@ Las prácticas recomendadas definidas en esta sección están relacionadas con &
 * Style-JavaScript debe utilizarse con cautela y es un caso de uso minoritario.
 * Style-JavaScript debe usarse principalmente para manipular el DOM del componente para admitir el estilo mediante CSS.
 * Vuelva a evaluar el uso de Javascript si los componentes aparecerán muchas veces en una página, y comprenda el coste de cálculo y redibujo.
-* Vuelva a evaluar el uso de Javascript si obtiene nuevos datos/contenido asincrónicamente (mediante AJAX) cuando el componente puede aparecer muchas veces en una página.
+* Vuelva a evaluar el uso de Javascript si obtiene nuevos datos/contenido asincrónicamente (a través de AJAX) cuando el componente puede aparecer muchas veces en una página.
 * Gestione las experiencias de publicación y creación.
 * Vuelva a utilizar style-Javascript cuando sea posible.
    * Por ejemplo, si varios estilos de un componente requieren que su imagen se mueva a una imagen de fondo, el estilo de JavaScript se puede implementar una vez y adjuntar a varios `BLOCK--MODIFIERs`.
@@ -255,7 +245,7 @@ Las prácticas recomendadas definidas en esta sección están relacionadas con &
 * Evalúe el coste de JavaScript y manifieste estos cambios de DOM en el HTML directamente a través de HTL.
    * Cuando un componente que utiliza estilo-JavaScript requiera una modificación del lado del servidor, evalúe si se puede incorporar la manipulación de JavaScript en este momento y cuáles son los efectos/ramificaciones para el rendimiento y la compatibilidad del componente.
 
-#### Consideraciones de rendimiento {#performance-considerations}
+#### Consideraciones sobre el rendimiento {#performance-considerations}
 
 * Style-JavaScript debe mantenerse ligero y delgado.
 * Para evitar parpadeos y redibujamientos innecesarios, oculte inicialmente el componente mediante `BLOCK--MODIFIER BLOCK` y muéstrelo cuando se hayan completado todas las manipulaciones DOM en JavaScript.
