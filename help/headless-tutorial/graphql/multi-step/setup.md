@@ -5,13 +5,13 @@ version: cloud-service
 mini-toc-levels: 1
 kt: 6386
 thumbnail: KT-6386.jpg
-feature: Fragmentos de contenido, API de GraphQL
-topic: Sin objetivos, Administración de contenido
+feature: Content Fragments, GraphQL API
+topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '1829'
+source-wordcount: '1814'
 ht-degree: 2%
 
 ---
@@ -158,11 +158,7 @@ Uno de los objetivos de este tutorial es mostrar cómo utilizar AEM contenido de
 
    ![Solicitud XHR de extremo de GraphQL](assets/setup/endpoint-gql.png)
 
-1. También puede ver los parámetros y la respuesta JSON inspeccionando la solicitud de red. Puede resultar útil instalar una extensión del explorador como [GraphQL Network](https://chrome.google.com/webstore/detail/graphql-network/igbmhmnkobkjalekgiehijefpkdemocm) para Chrome para comprender mejor la consulta y la respuesta.
-
-   ![Extensión de red de GraphQL](assets/setup/GraphQL-extension.png)
-
-   *Uso de la extensión Chrome GraphQL Network*
+1. También puede ver los parámetros y la respuesta JSON inspeccionando la solicitud de red. Puede resultar útil instalar una extensión del explorador como [GraphQL Network Inspector](https://chrome.google.com/webstore/detail/graphql-network-inspector/ndlbedplllcgconngcnfmkadhokfaaln) para Chrome para comprender mejor la consulta y la respuesta.
 
 ## Modificación de un fragmento de contenido
 
