@@ -2,17 +2,12 @@
 title: Comprender las razones para actualizar
 description: Un desglose de alto nivel de las funciones clave para los clientes que se plantean actualizar a la última versión de Adobe Experience Manager.
 version: 6.5
-sub-product: recursos, cloud manager, comercio, servicios de contenido, Dynamic Media, formularios, fundación, pantallas, sitios
-topics: best-practices, upgrade
-audience: all
-activity: understand
-doc-type: article
-topic: Actualización
+topic: Upgrade
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '3529'
+source-wordcount: '3462'
 ht-degree: 3%
 
 ---
@@ -504,7 +499,7 @@ A continuación se muestra una matriz de las funciones clave de Sites que ofrece
             <td>✓<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/es/experience-manager/6-5/release-notes/style-system-fp.html" target="_blank">Sistema de estilos</a>: </strong>
+            <td><strong>Sistema de estilos: </strong>
             aumente AEM reutilización de componentes definiendo su aspecto visual con el sistema de estilos en contexto.</td>
             <td> </td>
             <td> </td>
@@ -559,7 +554,7 @@ A continuación se muestra una matriz de las funciones clave de Sites que ofrece
             <td>š</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-feature-video-understand.html" target="_blank">Fragmentos de contenido</a>: </strong>
+            <td><strong>Fragmentos de contenido: </strong>
             cree y depure contenido editorial desacoplado de la presentación para facilitar su reutilización.</td>
             <td> </td>
             <td> </td>
@@ -581,8 +576,8 @@ A continuación se muestra una matriz de las funciones clave de Sites que ofrece
             <td>✓<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/release-notes/content-services-fragments-featurepack.html" target="_blank">Servicios de contenido</a>: </strong>
-            exporte contenido desde AEM como JSON para consumo en dispositivos y aplicaciones.</td>
+            <td><strong>Servicios de contenido: </strong>
+            exporte contenido desde AEM como JSON para su consumo entre dispositivos y aplicaciones.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -636,7 +631,7 @@ A continuación se muestra una matriz de las funciones clave de Sites que ofrece
             <td>š</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/aem-screens-introduction.html" target="_blank">Pantallas</a>: </strong>
+            <td><strong>Pantallas: </strong>
             administre experiencias para señalización digital y quioscos.</td>
             <td> </td>
             <td> </td>
@@ -993,8 +988,6 @@ A continuación se muestra una matriz de las funciones clave de Assets que ofrec
 
 A continuación se muestra una matriz de las funciones clave del complemento de AEM Forms que ofrece AEM. Algunas de estas funciones se introdujeron en versiones anteriores con mejoras incrementales añadidas en cada versión.
 
-+ [Notas de la versión de AEM Forms](https://helpx.adobe.com/experience-manager/6-5/release-notes/forms.html)
-
 ***✔ <sup>+</sup> mejoras significativas en la función de esta versión.***
 
 ***✔ <sup></sup> SPdenota que la función está disponible a través de un Service Pack o Feature Pack.***
@@ -1149,7 +1142,7 @@ A continuación se muestra una matriz de las funciones clave del complemento de 
             <td>✓<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/pdf/aem-forms/6-5/WorkbenchHelp.pdf" target="_blank">Flujo de trabajo (J2EE) para procesamiento</a> de Forms: </strong>
+            <td><strong>Flujo de trabajo (J2EE) para procesamiento en Forms: </strong>
             genere formularios complejos/flujos de trabajo centrados en documentos utilizando un IDE intuitivo.</td>
             <td></td>
             <td>š</td>
@@ -1188,8 +1181,6 @@ A continuación se muestra una matriz de las funciones clave del complemento de 
 ## Funciones de Communities
 
 A continuación se muestra una matriz de las funciones clave del complemento de AEM Communities que ofrece AEM. Algunas de estas funciones se introdujeron en versiones anteriores con mejoras incrementales añadidas en cada versión.
-
-+ [Resumen de las nuevas funciones de AEM Communities](https://helpx.adobe.com/experience-manager/6-5/communities/using/whats-new-aem-communities.html#main-pars_text)
 
 ***✔ <sup>+</sup> mejoras significativas en la función de esta versión.***
 
@@ -1629,7 +1620,7 @@ A continuación se muestra una matriz de las funciones clave del complemento de 
     </tbody>
 </table>
 
-AEM Communities agrega [mejoras](https://helpx.adobe.com/experience-manager/6-5/communities/using/whats-new-aem-communities.html) mediante versiones que permiten a las organizaciones interactuar y habilitar a sus usuarios mediante:
+AEM Communities agrega mejoras mediante versiones para permitir que las organizaciones interactúen y habiliten a sus usuarios mediante:
 
 + **@** mentionsupport en contenido generado por el usuario.
 + Mejoras de accesibilidad mediante **Navegación por teclado** en los componentes **Habilitación**.
