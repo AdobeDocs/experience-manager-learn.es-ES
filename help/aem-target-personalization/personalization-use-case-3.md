@@ -1,17 +1,16 @@
 ---
 title: Personalización mediante el Compositor de experiencias visuales de Adobe Target
-seo-title: Personalización mediante el Compositor de experiencias visuales (VEC) de Adobe Target
+seo-title: Personalization using Adobe Target Visual Experience Composer (VEC)
 description: Un tutorial completo que muestra cómo crear y ofrecer experiencias personalizadas con el Compositor de experiencias visuales (VEC) de Adobe Target.
-seo-description: Un tutorial completo que muestra cómo crear y ofrecer experiencias personalizadas con el Compositor de experiencias visuales (VEC) de Adobe Target.
+seo-description: An end-to-end tutorial showing how to create and deliver personalized experience using Adobe Target Visual Experience Composer (VEC).
 feature: Experience Fragments
 topic: Personalization
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '615'
-ht-degree: 3%
+source-wordcount: '583'
+ht-degree: 2%
 
 ---
 
@@ -33,20 +32,20 @@ Para este ejercicio, es necesario involucrar a los siguientes usuarios y para re
 
 ### Página principal del sitio WKND
 
-![Escenario 1 de AEM Target](assets/personalization-use-case-3/aem-target-use-case-3.png)
+![Escenario de AEM objetivo 1](assets/personalization-use-case-3/aem-target-use-case-3.png)
 
 ### Requisitos previos
 
 * **AEM**
-   * [Instalación de AEM Publish ](./implementation.md#getting-aem) el 4503
+   * [AEM publicar la ](./implementation.md#getting-aem) instancia el 4503
    * [AEM integrado con Adobe Target mediante Adobe Experience Platform Launch](./using-launch-adobe-io.md#aem-target-using-launch-by-adobe)
 * **Experience Cloud**
-   * Acceso a sus organizaciones Adobe Experience Cloud: <https://>`<yourcompany>`.experiencecloud.adobe.com
+   * Acceso a sus organizaciones Adobe Experience Cloud - `https://<yourcompany>.experiencecloud.adobe.com`
    * Experience Cloud aprovisionado con [Adobe Target](https://experiencecloud.adobe.com)
 
 ## Actividades de marketing
 
-1. El especialista en marketing crea una actividad de segmentación A/B en Adobe Target.
+1. El especialista en marketing crea una actividad de destino A/B dentro de Adobe Target.
    1. En la ventana de Adobe Target, vaya a la pestaña **Actividades**.
    2. Haga clic en el botón **Crear actividad** y seleccione el tipo de actividad como **Prueba A/B**
 
