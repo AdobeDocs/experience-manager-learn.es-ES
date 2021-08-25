@@ -1,17 +1,16 @@
 ---
 title: Uso de la aplicación de escritorio Dynamic Media Classic
 description: Adobe presenta una aplicación de escritorio para usuarios de Dynamic Media Classic que ya no dependen de la tecnología de Flash de Adobe en el navegador.
-sub-product: dynamic-media
 feature: Dynamic Media Classic
 version: 6.5
 kt: 5808
 thumbnail: 36645.jpg
-topic: Administración de contenido
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '189'
 ht-degree: 1%
 
 ---
@@ -21,7 +20,7 @@ ht-degree: 1%
 
 Adobe presenta una aplicación de escritorio para Dynamic Media Classic que proporciona una experiencia similar a un explorador y una interfaz funcionalmente equivalente que no depende del reproductor de Flash de Adobe.
 
->[!VIDEO](https://video.tv.adobe.com/v/36645/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/36645/?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -38,5 +37,4 @@ La aplicación de escritorio Dynamic Media Classic de Adobe es compatible con lo
 
 * [Documentación de la aplicación de escritorio de Dynamic Media Classic de Adobe](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html)
 * [Preguntas más frecuentes sobre Adobe Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/new-ui-2020.html)
-* [Descargar: Archivo de imagen de disco para macOS (.dmg)](http://download.macromedia.com/dynamic-media-classic/20.20.1/adobe-dynamic-media-classic-20.20.1.dmg)
-* [Descargar: Archivo ejecutable para Windows (.exe)](http://download.macromedia.com/dynamic-media-classic/20.20.1/adobe-dynamic-media-classic-20.20.1.exe)
+* [Descargar aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/new-ui-2020.html)
