@@ -7,12 +7,12 @@ doc-type: tutorial
 topics: development, authoring, configuring, architecture, publishing
 audience: all
 activity: use
-topic: Administración de contenido
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '2714'
+source-wordcount: '2710'
 ht-degree: 0%
 
 ---
@@ -142,7 +142,7 @@ Los recursos cargados y publicados recientemente se verán de inmediato, mientra
 
 Normalmente, esto no supone un problema a menos que se produzca un error y la imagen o el recurso tengan el mismo nombre que la versión publicada anteriormente, pero haya un problema con la imagen. Por ejemplo, cargó accidentalmente una versión de baja resolución o su director de arte no aprobó la imagen. En este caso, desea recuperar la imagen original y reemplazarla con una nueva versión utilizando el mismo ID de recurso.
 
-Obtenga información sobre cómo [Borrar manualmente la caché de las direcciones URL que deben actualizarse](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/invalidate-cdn-cached-content.html).
+Obtenga información sobre cómo [Borrar manualmente la caché de las direcciones URL que deben actualizarse](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/invalidate-cdn-cache-dynamic-media.html?lang=en).
 
 >[!TIP]
 >
