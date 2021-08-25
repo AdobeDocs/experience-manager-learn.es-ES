@@ -2,13 +2,13 @@
 title: Desarrollo para el intercambio de recursos de origen cruzado (CORS) con AEM
 description: Un breve ejemplo de cómo aprovechar CORS para acceder a contenido AEM desde una aplicación web externa a través de JavaScript del lado del cliente.
 version: 6.3, 6,4, 6.5
-topic: Seguridad, desarrollo
+topic: Security, Development
 role: Developer
 level: Beginner
-feature: Seguridad
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+feature: Security
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '293'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,8 @@ En este vídeo:
 
 * **www.example.** se compila en localhost mediante  `/etc/hosts`
 * **aem-publish.** localmaps para localhost a través de  `/etc/hosts`
-* [SimpleHTTPServer](https://itunes.apple.com/us/app/simple-http-server/id441002840?mt=12)  (un envoltorio para  [[!DNL Python]SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html) de de ) está sirviendo la página HTML a través del puerto 8000.
+* SimpleHTTPServer (un envoltorio para SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html) de [[!DNL Python]) está sirviendo la página HTML a través del puerto 8000.
+   * _Ya no está disponible en Mac App Store. Usar similar, como [Jeeves](https://apps.apple.com/us/app/jeeves-local-http-server/id980824182?mt=12)._
 * [!DNL AEM Dispatcher] se ejecuta en  [!DNL Apache HTTP Web Server] 2.4 y la solicitud de proxy inverso  `aem-publish.local` a  `localhost:4503`.
 
 Para obtener más información, consulte [Explicación del uso compartido de recursos de origen cruzado (CORS) en AEM](./understand-cross-origin-resource-sharing.md).
@@ -117,7 +118,7 @@ Es probable que se borre la caché por completo para garantizar que los encabeza
 ## Materiales de apoyo {#supporting-materials}
 
 * [AEM fábrica de configuración OSGi para directivas de intercambio de recursos de origen cruzado](http://localhost:4502/system/console/configMgr/com.adobe.granite.cors.impl.CORSPolicyImpl)
-* [SimpleHTTPServer para macOS](https://itunes.apple.com/us/app/simple-http-server/id441002840?mt=12)
+* [Jeeves para macOS](https://apps.apple.com/us/app/jeeves-local-http-server/id980824182?mt=12)
 * [Python SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)  (compatible con Windows/macOS/Linux)
 
 * [Explicación del uso compartido de recursos de origen cruzado (CORS) en AEM](./understand-cross-origin-resource-sharing.md)
