@@ -1,15 +1,15 @@
 ---
 title: Adición de elementos al componente de grupo de opciones
 description: Agregar elementos al componente de grupo de opciones de forma dinámica
-feature: Formularios adaptables
+feature: Adaptive Forms
 version: 6.5
-topic: Desarrollo
+topic: Development
 role: User
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 1%
+source-wordcount: '520'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 AEM Forms 6.5 ha introducido la capacidad de agregar elementos de forma dinámica a un componente de grupo de opciones de Forms adaptable, como Casilla de verificación, Botón de radio y Lista de imágenes.
 
-[Esta funcionalidad está disponible en vivo en el servidor de muestras](https://forms.enablementadobe.com/content/samples/samples.html?query=0). Busque elementos de la casilla de verificación dinámica en la tarjeta y haga clic en &quot;Probar&quot;.
+[Esta funcionalidad está disponible en vivo en el servidor de muestras](https://forms.enablementadobe.com/content/samples/samples.html?query=0#collapse1). Busque elementos de la casilla de verificación dinámica en la tarjeta y haga clic en &quot;Probar&quot;.
 
 
 Puede agregar elementos mediante el editor visual, así como el editor de código, según el caso de uso.
@@ -91,7 +91,7 @@ Para probar esto en su sistema:
 
 * [Descargar los recursos](assets/usingthevisualeditor.zip)
 * Instale Tomcat si todavía no lo tiene. [Las instrucciones para instalar tomcat están disponibles aquí](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html)
-* [Implementar el archivo SampleRest.war en Tomcat](https://forms.enablementadobe.com/content/DemoServerBundles/SampleRest.war)
+* [Implementar el archivo SampleRest.war contenido en este archivo zip](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/assets/common-osgi-bundles/sample-rest.zip)
 * [Abrir Forms Y Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Haga clic en &quot;Crear&quot; | Cargar archivo&quot; y cargar el archivo que descargó en el paso anterior
 * [Vista previa de los formularios](http://localhost:4502/content/dam/formsanddocuments/amortizationschedule/jcr:content?wcmmode=disabled)

@@ -1,15 +1,15 @@
 ---
 title: 'Rellenar tabla de formulario adaptable '
 description: Rellenar la tabla Formulario adaptable con los resultados de las invocaciones del servicio del Modelo de datos de formulario
-feature: Formularios adaptables
+feature: Adaptive Forms
 version: 6.4,6.5
-topic: Desarrollo
+topic: Development
 role: User
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
 workflow-type: tm+mt
-source-wordcount: '240'
-ht-degree: 1%
+source-wordcount: '245'
+ht-degree: 0%
 
 ---
 
@@ -25,9 +25,9 @@ La fila 1 está configurada para crecer según los datos devueltos por la llamad
 
 ## Implemente esto en su servidor
 
-[Instale Tomcat como se especifica ](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md)
-[aquíImplemente el ](https://forms.enablementadobe.com/content/DemoServerBundles/SampleRest.war)
-[archivo SampleRest.warInstale los recursos  ](assets/amortizationschedule.zip) mediante AEM administrador de paquetes 
+[Instale Tomcat tal como se especifica ](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md)
+[aquíImplemente el archivo SampleRest.war contenido en este ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/assets/common-osgi-bundles/sample-rest.zip)
+[archivo zipInstale los recursos  ](assets/amortizationschedule.zip) mediante AEM administrador de paquetes 
 [Abra el ](http://localhost:4502/content/dam/formsanddocuments/amortization/jcr:content?wcmmode=disabled)
 formulario de programación de amortizaciónIntroduzca el valor apropiado y haga clic en calcular programación de amortización debe rellenarse en el formulario
 

@@ -1,8 +1,8 @@
 ---
 title: Configuración del panel de Outlook de jubilación
-seo-title: Configuración del panel de Outlook de jubilación
+seo-title: Configuring Retirement Outlook Panel
 description: Esta es la parte 10 de un tutorial de varios pasos para crear su primer documento interactivo de comunicaciones. En esta parte, configuraremos el Panel de perspectivas de jubilación añadiendo componentes de texto y gráficos.
-seo-description: Esta es la parte 10 de un tutorial de varios pasos para crear su primer documento interactivo de comunicaciones. En esta parte, configuraremos el Panel de perspectivas de jubilación añadiendo componentes de texto y gráficos.
+seo-description: This is part 10 of a multi-step tutorial for creating your first interactive communications document. In this part, we will configure Retirement Outlook Panel by adding text and chart components.
 uuid: 1d5119b5-e797-4bf0-9b10-995b3f051f92
 feature: Interactive Communication
 topics: development
@@ -14,20 +14,19 @@ discoiquuid: 2ee2cea2-aefa-4d21-a258-248648f73a68
 topic: Development
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 1%
+source-wordcount: '344'
+ht-degree: 0%
 
 ---
 
 
-# Configuración del panel Outlook de jubilación{#configuring-retirement-outlook-panel}
+# Configuración del panel de Outlook de jubilación{#configuring-retirement-outlook-panel}
 
 * Esta es la parte 10 de un tutorial de varios pasos para crear su primer documento interactivo de comunicaciones. En esta parte, configuraremos el Panel de perspectivas de jubilación añadiendo componentes de texto y gráficos.
 
-* Inicie sesión en AEM Forms y vaya a Adobe Experience Manager > Formularios > Formularios y documentos.
+* Inicie sesión en AEM Forms y vaya a Adobe Experience Manager > Forms > Forms y documentos.
 
 * Abra la carpeta 401KStatement.
 
@@ -61,9 +60,9 @@ ht-degree: 1%
 
 * Haga clic en el icono Recursos y aplique el filtro para mostrar recursos de tipo &quot;Fragmentos de documento&quot;. Arrastre y suelte el fragmento de documento RetirementRevenueOutlook en el área de destino del panel izquierdo.
 
-* Puede hacer referencia a [esta página](https://helpx.adobe.com/experience-manager/kt/forms/using/interactive-communication-web-channel-aem-forms/9.html) al agregar fragmento de documento a las áreas de contenido.
+* Puede hacer referencia a [esta página](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/partseven.html) al agregar fragmento de documento a las áreas de contenido.
 
-## Adición del gráfico de ingresos mensuales estimados {#adding-estimated-monthly-income-chart}
+## Adición del gráfico de ingresos mensuales estimado {#adding-estimated-monthly-income-chart}
 
 * Haga clic en el área de destino Panel derecho en el lado derecho. Haga clic en el icono &quot;+&quot; para insertar el componente de gráfico. Utilizaremos un gráfico de columnas para mostrar los ingresos mensuales estimados. Pulse con cuidado el componente de gráfico recién insertado. Seleccione el icono &quot;Llave&quot; para abrir la hoja de propiedades de configuración. Configure el gráfico con las siguientes propiedades como se muestra en la captura de pantalla siguiente.
 

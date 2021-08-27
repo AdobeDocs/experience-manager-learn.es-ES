@@ -1,17 +1,17 @@
 ---
 title: Implementación del ejemplo
 description: Obtener caso de uso en ejecución en la instancia local de AEM Forms
-feature: Formularios adaptables
+feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
 kt: 6602
 thumbnail: 6602.jpg
-topic: Desarrollo
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '378'
 ht-degree: 1%
 
 ---
@@ -45,7 +45,8 @@ Cree una cuenta de desarrollador con [Nexmo](https://dashboard.nexmo.com/) para 
 ## Implementar los siguientes paquetes OSGi
 
 Implemente el paquete que tiene el código [para almacenar y recuperar datos de la base de datos](assets/FetchPartiallyCompletedForm.PartiallyCompletedForm.core-1.0-SNAPSHOT.jar)
-Implemente el [DevelopingWithServiceUser Bundle](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar).
+Descargue y descomprima el [developing-with-service-user.zip](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/assets/common-osgi-bundles/developing-with-service-user.zip).
+Implemente el archivo DevelopingWithServiceUser.jar utilizando la consola web Felix.
 
 ## Implementar la biblioteca de cliente
 
