@@ -2,15 +2,15 @@
 title: Seguimiento del componente en el que se hizo clic con Adobe Analytics
 description: Utilice la capa de datos del cliente de Adobe impulsada por eventos para rastrear clics de componentes específicos en un sitio de Adobe Experience Manager. Aprenda a utilizar las reglas en Experience Platform Launch para detectar estos eventos y enviar datos a un Adobe Analytics con una señalización de seguimiento de vínculos.
 version: cloud-service
-topic: Integraciones
-feature: Capa de datos del cliente de Adobe
+topic: Integrations
+feature: Adobe Client Data Layer
 role: Developer
 level: Intermediate
 kt: 6296
 thumbnail: KT-6296.jpg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '1814'
+source-wordcount: '1810'
 ht-degree: 1%
 
 ---
@@ -144,7 +144,7 @@ La capa de datos del cliente de Adobe es una capa de datos controlada por **even
 
    El objeto `event` se pasa desde el método `trigger()` llamado en el evento personalizado. `component` es el estado actual del componente derivado de la capa de datos  `getState` que activó el clic.
 
-1. Guarde los cambios y ejecute una [compilación](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) en Launch para promocionar el código al [entorno](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments.html) utilizado en el sitio AEM.
+1. Guarde los cambios y ejecute una [compilación](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) en Launch para promocionar el código al [entorno](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html) utilizado en el sitio AEM.
 
    >[!NOTE]
    >
