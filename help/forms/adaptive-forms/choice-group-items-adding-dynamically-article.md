@@ -6,9 +6,9 @@ version: 6.5
 topic: Development
 role: User
 level: Beginner
-source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
+source-git-commit: 2b7f0f6c34803672cc57425811db89146b38a70a
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,7 @@ Para probar esto en su sistema:
 
 * [Descargar los recursos](assets/usingthevisualeditor.zip)
 * Instale Tomcat si todavía no lo tiene. [Las instrucciones para instalar tomcat están disponibles aquí](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html)
-* [Implementar el archivo SampleRest.war contenido en este archivo zip](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/assets/common-osgi-bundles/sample-rest.zip)
+* [Implemente el archivo SampleRest.war contenido en este archivo zip en Tomcat.](assets/sample-rest.zip)
 * [Abrir Forms Y Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Haga clic en &quot;Crear&quot; | Cargar archivo&quot; y cargar el archivo que descargó en el paso anterior
 * [Vista previa de los formularios](http://localhost:4502/content/dam/formsanddocuments/amortizationschedule/jcr:content?wcmmode=disabled)
