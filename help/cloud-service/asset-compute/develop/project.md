@@ -7,9 +7,9 @@ topic: Integrations, Development
 feature: Asset Compute Microservices
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+source-git-commit: ac93d6ba636e64ba6d8bbdb0840810b8f47a25c8
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '896'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ Utilice el [complemento de Asset compute CLI de Adobe I/O](../set-up/development
 
 1. Desde la línea de comandos, vaya a la carpeta para contener el proyecto.
 1. Desde la línea de comandos, ejecute `aio app init` para iniciar la CLI de generación de proyectos interactiva.
-   + Este comando puede generar un explorador web que solicite la autenticación en el Adobe I/O. Si es así, proporcione las credenciales de Adobe asociadas con los [servicios de Adobe y productos](../set-up/accounts-and-services.md) necesarios. Si no puede iniciar sesión, siga [estas instrucciones sobre cómo generar un proyecto](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#42-developer-is-not-logged-in-as-enterprise-organization-user).
+   + Este comando puede generar un explorador web que solicite la autenticación en el Adobe I/O. Si es así, proporcione las credenciales de Adobe asociadas con los [servicios y productos de Adobe](../set-up/accounts-and-services.md) necesarios. Si no puede iniciar sesión, siga [estas instrucciones sobre cómo generar un proyecto](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#42-developer-is-not-logged-in-as-enterprise-organization-user).
 1. __Seleccionar organización__
    + Seleccione la organización de Adobe que tiene AEM como Cloud Service, Project Firefly está registrado con
 1. __Seleccionar proyecto__
@@ -86,7 +86,7 @@ El proyecto de Asset compute generado es un proyecto de Node.js para su uso como
    + Este archivo se puede generar o actualizar utilizando el comando `aio app use`.
    + Las variables definidas en este archivo se pueden sobrescribir mediante [variables de exportación](../deploy/runtime.md) en la línea de comandos.
 
-Para obtener más información sobre la revisión de la estructura del proyecto, revise el [Anatomy of an Adobe Project Firefly project](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#5-anatomy-of-a-project-firefly-application).
+Para obtener más información sobre la revisión de la estructura del proyecto, revise el [Anatomy of an Adobe Project Firefly project](https://www.adobe.io/project-firefly/docs/guides/).
 
 La mayor parte del desarrollo se realiza en la carpeta `/actions` que desarrolla implementaciones de trabajador y en `/test/asset-compute` pruebas de escritura para los trabajadores de Asset compute personalizados.
 

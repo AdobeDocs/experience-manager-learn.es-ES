@@ -6,10 +6,10 @@ feature: APIs
 topic: Development
 role: Developer
 level: Beginner
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+source-git-commit: ac93d6ba636e64ba6d8bbdb0840810b8f47a25c8
 workflow-type: tm+mt
-source-wordcount: '2030'
-ht-degree: 3%
+source-wordcount: '2021'
+ht-degree: 2%
 
 ---
 
@@ -61,7 +61,7 @@ Este orden es una regla general, lo que significa que existen excepciones. Los m
 
 AEM API proporcionan abstracciones y funciones específicas de los casos de uso productizados.
 
-Por ejemplo, AEM API [PageManager](https://helpx.adobe.com/es/experience-manager/6-3/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) y [Page](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/foundation/model/Page.html) proporcionan abstracciones para nodos `cq:Page` en AEM que representan páginas web.
+Por ejemplo, AEM API [PageManager](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) y [Page](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/Page.html) proporcionan abstracciones para nodos `cq:Page` en AEM que representan páginas web.
 
 Aunque estos nodos están disponibles a través de las API [!DNL Sling] como recursos y las API de JCR como nodos, AEM API proporcionan abstracciones para casos de uso comunes. El uso de las API de AEM garantiza un comportamiento coherente entre AEM producto y las personalizaciones y extensiones de AEM.
 
@@ -95,7 +95,7 @@ La API preferida es [AEM Query Builder](https://helpx.adobe.com/experience-manag
 * [AEM ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/querybuilder-predicate-reference.html) predicados que admiten requisitos de consulta comunes
 
 * API extensible, que permite el desarrollo de [predicados de consulta](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/implementing-custom-predicate-evaluator.html) personalizados
-* JCR-SQL2 y XPath se pueden ejecutar directamente a través de [[!DNL Sling]](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/ResourceResolver.html#findResources-java.lang.String-java.lang.String-) y [API JCR](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/query/package-summary.html), devolviendo resultados como [[!DNL Sling] Resources](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/Resource.html) o [JCR Nodes](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html), respectivamente.
+* JCR-SQL2 y XPath se pueden ejecutar directamente a través de [[!DNL Sling]](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/ResourceResolver.html#findResources-java.lang.String-java.lang.String-) y [API JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/query/package-summary.html), devolviendo resultados como [[!DNL Sling] Resources](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/Resource.html) o [JCR Nodes](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html), respectivamente.
 
 >[!CAUTION]
 >
@@ -131,9 +131,9 @@ La API preferida es [AEM Query Builder](https://helpx.adobe.com/experience-manag
 
 ## API de JCR
 
-* **[JavaDocs de JCR 2.0](https://docs.adobe.com/content/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html)**
+* **[JavaDocs de JCR 2.0](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)**
 
-Las API [JCR (Repositorio de contenido Java) 2.0](https://docs.adobe.com/content/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html) forman parte de una especificación para implementaciones JCR (en el caso de AEM, [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/)). Toda la implementación de JCR debe cumplir e implementar estas API y, por lo tanto, es la API de nivel más bajo para interactuar con AEM contenido.
+Las API [JCR (Repositorio de contenido Java) 2.0](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) forman parte de una especificación para implementaciones JCR (en el caso de AEM, [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/)). Toda la implementación de JCR debe cumplir e implementar estas API y, por lo tanto, es la API de nivel más bajo para interactuar con AEM contenido.
 
 El propio JCR es un almacén de datos NoSQL basado en árboles y jerárquico que AEM utiliza como repositorio de contenido. El JCR tiene una amplia gama de API compatibles, que van desde el CRUD de contenido hasta la consulta de contenido. A pesar de esta API robusta, es raro que sean preferidos sobre las abstracciones de nivel superior AEM y [!DNL Sling] .
 
@@ -150,7 +150,7 @@ Aunque el JCR es AEM repositorio de contenido, sus API NO son el método preferi
 ### Uso común de las API de JCR
 
 * [Gestión del control de acceso](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html)
-* [Administración autorizada (usuarios/grupos)](https://jackrabbit.apache.org/api/2.8/org/apache/jackrabbit/api/security/user/package-summary.html)
+* [Administración autorizada (usuarios/grupos)](https://jackrabbit.apache.org/api/2.12/org/apache/jackrabbit/api/security/user/package-summary.html)
 * Observación JCR (escucha de eventos JCR)
 * Creación de estructuras de nodos profundos
 
