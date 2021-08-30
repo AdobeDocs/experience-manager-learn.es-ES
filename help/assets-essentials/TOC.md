@@ -4,10 +4,10 @@ user-guide-description: Una colección de vídeos para Adobe Experience Manager 
 breadcrumb-title: Vídeos de AEM Assets Essentials
 feature-set: Experience Manager Assets
 team: TM
-source-git-commit: 2edcaa0e10121f75ac3081eb00e8c1419400a205
+source-git-commit: 32917f4fe6be88b1ee1d1f7da1c02d0f81c20fe7
 workflow-type: tm+mt
-source-wordcount: '64'
-ht-degree: 17%
+source-wordcount: '66'
+ht-degree: 16%
 
 ---
 
@@ -29,6 +29,7 @@ ht-degree: 17%
 
 + Integración de Adobe Workfront{#workfront}
    + [Configuración](./integrations/workfront/configure.md)
+   + [Asignación de metadatos](./integrations/workfront/map-metadata.md)
    + [Envío de documentos y vinculación de recursos](./integrations/workfront/link-send.md)
    + [Historial de versiones](./integrations/workfront/versions.md)
 
