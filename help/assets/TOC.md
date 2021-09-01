@@ -4,9 +4,9 @@ user-guide-description: Recopilación de vídeos y tutoriales de Adobe Experienc
 breadcrumb-title: Tutoriales de AEM Assets
 feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites
 team: TM
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: 519047931bd4cbfb5dd2dd6f2b7b2871512992c5
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '347'
 ht-degree: 26%
 
 ---
@@ -95,6 +95,8 @@ ht-degree: 26%
 
 + Automatización de contenido{#content-automation}
    + [Información general](./content-automation/overview.md)
+   + [Operaciones creativas](./content-automation/creative-operations.md)
+   + [Acciones de Photoshop](./content-automation/photoshop-actions.md)
 
 + Dynamic Media{#dynamic-media}
    + [Información general de Dynamic Media](dynamic-media/dynamic-media-overview-feature-video-use.md)
