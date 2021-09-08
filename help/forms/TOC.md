@@ -5,9 +5,9 @@ user-guide-title: Vídeos y tutoriales de AEM Forms
 user-guide-description: Recopilación de recursos de AEM Forms para principiantes y desarrolladores experimentados de AEM Forms.
 breadcrumb-title: Tutoriales de AEM Forms
 index: y
-source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
+source-git-commit: e01d93591d1c00b2abec3430fdfa695b32165e54
 workflow-type: tm+mt
-source-wordcount: '1597'
+source-wordcount: '1601'
 ht-degree: 3%
 
 ---
@@ -51,6 +51,7 @@ ht-degree: 3%
    + [Envío personalizado en Forms adaptable](adaptive-forms/custom-submit-aem-forms-article.md)
    + [Captcha en Forms adaptable](adaptive-forms/forms-captcha-feature-video-use.md)
    + [Incrustación de formularios adaptables en una página web](adaptive-forms/embed-af-web-page.md)
+   + [Creación de una matriz de cadenas](adaptive-forms/converting-comma-seperated-string-to-array.md)
    + [Uso de Definir valor en XML en el flujo de trabajo OSGI](adaptive-forms/setvalue-aem-forms-workflow-tutorial-use.md)
    + [Uso del valor establecido en JSON en el flujo de trabajo OSGI](adaptive-forms/setvalue-json-data-in-aem-forms-workflow-article-use.md)
    + [Enviar componente de correo electrónico en el flujo de trabajo de AEM Forms](adaptive-forms/email-step-aem-workflow-video-use.md)
