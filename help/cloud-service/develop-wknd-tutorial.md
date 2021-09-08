@@ -1,17 +1,14 @@
 ---
 title: 'Introducción al desarrollo de AEM Sites: Tutorial de WKND'
-seo-title: 'Introducción al desarrollo de AEM Sites: Tutorial de WKND'
 description: ¿Nuevo en desarrollar AEM? ¿Necesita un repaso sobre las prácticas recomendadas? ¡Este es el lugar para empezar! El objetivo de este tutorial en varias partes es enseñar a un desarrollador nuevo a AEM cómo implementar un sitio web en AEM utilizando los estándares y tecnologías más recientes.
-seo-description: ¿Nuevo en desarrollar AEM? ¿Necesita un repaso sobre las prácticas recomendadas? ¡Este es el lugar para empezar! El objetivo de este tutorial en varias partes es enseñar a un desarrollador nuevo a AEM cómo implementar un sitio web en AEM utilizando los estándares y tecnologías más recientes.
-content-type: reference
-topic-tags: introduction
-feature: AEM Tipo de archivo del proyecto, Componentes principales, Editor de páginas, Plantillas editables
-topic: Desarrollo
+feature: AEM Project Archetype, Core Components, Page Editor, Editable Templates
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+thumbnail: 30476.jpeg
+source-git-commit: 0737cd2410b48dbaa9b6dfaaa27b854d44536f15
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '300'
 ht-degree: 7%
 
 ---

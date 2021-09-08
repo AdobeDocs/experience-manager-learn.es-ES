@@ -2,17 +2,13 @@
 title: Configuración de las herramientas de desarrollo para AEM como desarrollo de Cloud Service
 description: Configure una máquina de desarrollo local con todas las herramientas básicas necesarias para desarrollarse frente a AEM localmente.
 feature: Developer Tools
-topics: development
-version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
+version: Cloud Service
 kt: 4267
 thumbnail: 25907.jpg
 topic: Development
 role: Developer
 level: Beginner
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+source-git-commit: 0737cd2410b48dbaa9b6dfaaa27b854d44536f15
 workflow-type: tm+mt
 source-wordcount: '1435'
 ht-degree: 2%
@@ -89,7 +85,7 @@ Si está usando Homebrew, siga las instrucciones de __Instalar usando Homebrew__
    1. Verifique que Node.js esté instalado, utilizando el comando : `node -v`
    1. Verifique que npm esté instalado, usando el comando: `npm -v`
 + O bien, descargue e instale Node.js (macOS, Linux o Windows)
-   1. [Descargar e instalar Node.js](https://nodejs.org/en/download/)
+   1. [Descargar e instalar Node.js](https://nodejs.org/es/download/)
    1. Abra el símbolo del sistema/terminal
    1. Verifique que Node.js esté instalado, utilizando el comando : `node -v`
    1. Verifique que npm esté instalado, usando el comando: `npm -v`
@@ -120,7 +116,7 @@ Apache Maven es la herramienta de línea de comandos Java de código abierto que
 
 ## Configuración de CLI de Adobe I/O{#aio-cli}
 
-El [Adobe I/O CLI](https://github.com/adobe/aio-cli), o `aio`, proporciona acceso a la línea de comandos a una variedad de servicios de Adobe, incluidos [Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager) y [Asset compute](https://github.com/adobe/aio-cli-plugin-asset-compute). La CLI de Adobe I/O desempeña un papel integral en el desarrollo en AEM como Cloud Service, ya que proporciona a los desarrolladores la capacidad de:
+La [CLI de Adobe I/O](https://github.com/adobe/aio-cli), o `aio`, proporciona acceso a la línea de comandos a una variedad de servicios de Adobe, incluidos [Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager) y [Asset compute](https://github.com/adobe/aio-cli-plugin-asset-compute). La CLI de Adobe I/O desempeña un papel integral en el desarrollo en AEM como Cloud Service, ya que proporciona a los desarrolladores la capacidad de:
 
 + Registros de cola de AEM as a Cloud Services Services
 + Administrar canalizaciones de Cloud Manager desde la CLI

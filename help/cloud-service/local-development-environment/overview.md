@@ -1,22 +1,18 @@
 ---
 title: Entorno de desarrollo local para AEM as a Cloud Service
 description: Resumen del entorno de desarrollo local de Adobe Experience Manager (AEM).
-feature: Herramientas para desarrolladores
-topics: development
-version: cloud-service
+feature: Developer Tools
+version: Cloud Service
 doc-type: article
-activity: troubleshoot
-audience: developer
 kt: 3290
 thumbnail: 32565.jpg
-topic: Desarrollo
+topic: Development
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: 9a78cbdb5fd35e4aa7169382494dd014aa8098e9
+source-git-commit: 0737cd2410b48dbaa9b6dfaaa27b854d44536f15
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 2%
+source-wordcount: '546'
+ht-degree: 1%
 
 ---
 
@@ -92,4 +88,4 @@ Esta sección del tutorial muestra cómo:
 + Instalar herramientas [!DNL Dispatcher]
 + Ejecute el tiempo de ejecución local [!DNL Dispatcher]
 
-[Configuración de  [!DNL Dispatcher] LocalRuntime](./dispatcher-tools.md)
+[Configuración del tiempo de ejecución local [!DNL Dispatcher] ](./dispatcher-tools.md)

@@ -1,20 +1,16 @@
 ---
 title: Configuración del tiempo de ejecución de AEM local para AEM como desarrollo de Cloud Service
 description: Configure el tiempo de ejecución de AEM local con el Jar de inicio rápido del SDK de AEM as a Cloud Service.
-feature: Herramientas para desarrolladores
-topics: development
-version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
+feature: Developer Tools
+version: Cloud Service
 kt: 4678, 4677
 thumbnail: 32551.jpg
-topic: Desarrollo
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: 0737cd2410b48dbaa9b6dfaaa27b854d44536f15
 workflow-type: tm+mt
-source-wordcount: '1732'
+source-wordcount: '1729'
 ht-degree: 2%
 
 ---
@@ -145,7 +141,7 @@ Durante el desarrollo, puede ser deseable simular la distribución de contenido 
 
    + **URI**  -  `http://localhost:4503/bin/receive?sling:authRequestLogin=1`
    + **Usuario**  -  `admin`
-   + **Contraseña**  -  `admin`
+   + **Contraseña** - `admin`
 
    ![Configuración del agente de replicación: transporte](assets/aem-runtime/transport-config.png)
 
