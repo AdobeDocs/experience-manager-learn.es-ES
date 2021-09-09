@@ -1,14 +1,14 @@
 ---
 title: Configuración de OKTA con AEM
 description: Explicación de los distintos ajustes de configuración para el uso del inicio de sesión único mediante okta
-feature: Formularios adaptables
+feature: Adaptive Forms
 version: 6.5
-topic: Administración
+topic: Administration
 role: Admin
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+source-git-commit: 3109d406ed4788ab492a148d4eac94f7e5ad9f2d
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '759'
 ht-degree: 0%
 
 ---
@@ -76,11 +76,11 @@ Las siguientes son las propiedades clave que deben especificarse:
 Vaya a [configMgr](http://localhost:4502/system/console/configMgr).
 Busque y abra &quot;Filtro de referente de Apache Sling&quot;. Defina las siguientes propiedades como se especifica a continuación:
 
-* **Permitir vacío**: true
+* **Permitir vacío**: false
 * **Permitir hosts**: Nombre de host de IdP (será diferente en su caso)
 * **Permitir host** Regexp: Nombre de host de IdP (será diferente en su caso) La captura de pantalla de las propiedades del referente de filtro de Sling
 
-![referrer-filter](assets/sling-referrer-filter.PNG)
+![referrer-filter](assets/okta-referrer.png)
 
 #### Configuración del registro de depuración para la integración de OKTA
 
