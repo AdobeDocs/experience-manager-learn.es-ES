@@ -4,9 +4,9 @@ user-guide-description: Una recopilación de tutoriales de Adobe Experience Mana
 breadcrumb-title: Tutoriales de AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: aa90b2c1a066dc36d4ba26ecdb8b58939445ef34
+source-git-commit: 4c9d836881ad7cccd31c55fa5eddc24dff1200cd
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '516'
 ht-degree: 21%
 
 ---
@@ -89,6 +89,18 @@ ht-degree: 21%
 + Migración {#migration}
    + [Herramienta de transferencia de contenido](./migration/content-transfer-tool.md)
    + [Importación masiva de recursos](./migration/bulk-import.md)
+   + Cloud Acceleration Manager {#cloud-acceleration-manager}
+      + [Introducción](./migration/cloud-acceleration-manager/introduction.md)
+      + [Analizador de preparación y prácticas recomendadas](./migration/cloud-acceleration-manager/readiness-and-best-practice-analyzer.md)
+      + [Fase de implementación](./migration/cloud-acceleration-manager/implementation-phase.md)
+      + [Herramienta de transferencia de contenido](./migration/cloud-acceleration-manager/content-transfer-tool.md)
+      + [Herramientas de refactorización de código](./migration/cloud-acceleration-manager/code-refactoring-tools.md)
+      + [Modernizador del repositorio de código](./migration/cloud-acceleration-manager/code-repository-modernizer.md)
+      + [Dispatcher Converter](./migration/cloud-acceleration-manager/dispatcher-converter.md)
+      + [Conversor de índices](./migration/cloud-acceleration-manager/index-converter.md)
+      + [Herramienta de Migración del flujo de trabajo de recursos](./migration/cloud-acceleration-manager/asset-workflow-migration-tool.md)
+      + [Navegación por Cloud Acceleration Manager](./migration/cloud-acceleration-manager/navigating.md)
+      + [Uso del Cloud Acceleration Manager](./migration/cloud-acceleration-manager/using.md)
 + Forms{#forms}
    + Crear formulario adaptable{#create-first-af}
       + [Introducción](./forms/create-first-af/introduction.md)
@@ -104,35 +116,37 @@ ht-degree: 21%
       + [Agregar y configurar barra de herramientas](./forms/create-first-af/add-configure-toolbar.md)
    + API de Document Cloud y AEM Forms CS{#doc-cloud-sdk}
       + [Introducción](./forms/doc-cloud-sdk/introduction.md)
-      + [Crear proyecto de IO de Adobe](./forms/doc-cloud-sdk/create-document-cloud-credentials.md)
-      + [Crear configuración OSGI](./forms/doc-cloud-sdk/create-doc-cloud-configuration.md)
+      + [Crear proyecto de Adobe I/O](./forms/doc-cloud-sdk/create-document-cloud-credentials.md)
+      + [Crear la configuración OSGi](./forms/doc-cloud-sdk/create-doc-cloud-configuration.md)
       + [Definir interfaz](./forms/doc-cloud-sdk/create-interface.md)
       + [Implementar interfaz](./forms/doc-cloud-sdk/implement-interface.md)
-      + [Crear parte JSON](./forms/doc-cloud-sdk/get-content-analyzer.md)
+      + [Crear parte de JSON](./forms/doc-cloud-sdk/get-content-analyzer.md)
       + [Paso de proceso personalizado](./forms/doc-cloud-sdk/custom-process-step.md)
    + Almacenamiento de Azure Portal{#forms-cs-azure-portal}
       + [Introducción](./forms/forms-cs-azure-portal/introduction.md)
       + [Crear modelo de datos de formulario](./forms/forms-cs-azure-portal/create-fdm.md)
       + [Almacenar datos de formulario en Azure Storage](./forms/forms-cs-azure-portal/create-af.md)
-      + [Cumplimentar el formulario previamente](./forms/forms-cs-azure-portal/prefill-af-storage.md)
+      + [Formulario de rellenado previo](./forms/forms-cs-azure-portal/prefill-af-storage.md)
       + [Envíos de consultas](./forms/forms-cs-azure-portal/query-submitted-data.md)
-   + Crear flujo de trabajo de revisión{#create-aem-workflow}
-      + [Crear modelo de flujo de trabajo](./forms/create-aem-workflow/create-workflow.md)
-      + [flujo de trabajo de déclencheur](./forms/create-aem-workflow/configure-af.md)
-   + Adobe Sign con AEM Forms{#forms-and-sign}
-      + [Introducción](./forms/forms-and-sign/introduction.md)
-      + [Aplicación de API de Adobe Sign](./forms/forms-and-sign/create-sign-api-application.md)
-      + [Configuración en la nube de Adobe Sign](./forms/forms-and-sign/create-adobe-sign-cloud-configuration.md)
-      + [Crear formulario adaptable](./forms/forms-and-sign/create-adaptive-form.md)
-      + [Configurar para rellenar y firmar](./forms/forms-and-sign/configure-form-fill-and-sign.md)
-   + Integrar con Salesforce{#integrate-with-salesforce}
-      + [Introducción](./forms/integrate-with-salesforce/introduction.md)
-      + [Crear aplicación conectada](./forms/integrate-with-salesforce/create-connected-app.md)
-      + [Crear archivo de intercambio](./forms/integrate-with-salesforce/describe-rest-api.md)
-      + [Crear fuente de datos](./forms/integrate-with-salesforce/create-data-source.md)
-      + [Crear modelo de datos de formulario](./forms/integrate-with-salesforce/create-form-data-model.md)
-      + [Envío de formulario de prueba](./forms/integrate-with-salesforce/create-lead-submitting-form.md)
-      + [Evento de clic de prueba](./forms/integrate-with-salesforce/create-lead-click-event.md)
+
+
+      + Crear flujo de trabajo de revisión{#create-aem-workflow}
+         + [Crear modelo de flujo de trabajo](./forms/create-aem-workflow/create-workflow.md)
+         + [flujo de trabajo de déclencheur](./forms/create-aem-workflow/configure-af.md)
+      + Adobe Sign con AEM Forms{#forms-and-sign}
+         + [Introducción](./forms/forms-and-sign/introduction.md)
+         + [Aplicación de API de Adobe Sign](./forms/forms-and-sign/create-sign-api-application.md)
+         + [Configuración en la nube de Adobe Sign](./forms/forms-and-sign/create-adobe-sign-cloud-configuration.md)
+         + [Crear formulario adaptable](./forms/forms-and-sign/create-adaptive-form.md)
+         + [Configurar para rellenar y firmar](./forms/forms-and-sign/configure-form-fill-and-sign.md)
+      + Integrar con Salesforce{#integrate-with-salesforce}
+         + [Introducción](./forms/integrate-with-salesforce/introduction.md)
+         + [Crear aplicación conectada](./forms/integrate-with-salesforce/create-connected-app.md)
+         + [Crear archivo de intercambio](./forms/integrate-with-salesforce/describe-rest-api.md)
+         + [Crear fuente de datos](./forms/integrate-with-salesforce/create-data-source.md)
+         + [Crear modelo de datos de formulario](./forms/integrate-with-salesforce/create-form-data-model.md)
+         + [Envío de formulario de prueba](./forms/integrate-with-salesforce/create-lead-submitting-form.md)
+         + [Evento de clic de prueba](./forms/integrate-with-salesforce/create-lead-click-event.md)
 + Extensibilidad de asset compute{#asset-compute}
    + [Información general](./asset-compute/overview.md)
    + Configurar{#set-up}
