@@ -1,6 +1,6 @@
 ---
 title: Colaboración en Assets Essentials
-description: Obtenga información sobre cómo colaborar en la administración de recursos mediante comentarios, anotaciones y tareas.
+description: Obtenga información sobre cómo colaborar dentro de la administración de recursos mediante comentarios, anotaciones y tareas.
 version: cloud-service
 feature: Assets Essentials
 topic: Content Management
@@ -8,12 +8,13 @@ role: User
 level: Beginner
 kt: 7916
 thumbnail: 335856.jpeg
-source-git-commit: 7fde77ac287d01ce2ad4924b2b10939d8df4c3e5
+source-git-commit: 32662a9ad478f30dcd3efeec3aae540393d33d04
 workflow-type: tm+mt
-source-wordcount: '32'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
+
 
 # Colaboración en Assets Essentials
 
