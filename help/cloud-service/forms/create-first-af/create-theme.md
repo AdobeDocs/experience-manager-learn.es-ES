@@ -5,23 +5,21 @@ solution: Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: cloud-service
+version: Cloud Service
 feature: Adaptive Forms
 topic: Development
 kt: 7386
 thumbnail: 332229.jpg
-translation-type: tm+mt
-source-git-commit: 67be45dbd72a8af8b9ab60452ff15081c6f9f192
+exl-id: c8c04528-384b-48b3-abba-04db16fd87c5
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '79'
-ht-degree: 6%
+source-wordcount: '72'
+ht-degree: 0%
 
 ---
-
 
 # Crear tema
 
 Un tema contiene detalles de estilo para componentes y paneles, y se puede reutilizar un tema en distintos formularios. Los estilos incluyen propiedades como colores de fondo, colores de estado, transparencia, alineación y tamaño. Al aplicar el tema al formulario, el estilo especificado se refleja en los componentes correspondientes del formulario.
 
 >[!VIDEO](https://video.tv.adobe.com/v/332229?quality=12&learn=on)
-

@@ -3,19 +3,19 @@ title: Integrar un SPA | Introducción al AEM SPA Editor y React
 description: Comprenda cómo el código fuente de una aplicación de una sola página (SPA) escrita en React se puede integrar con un proyecto de Adobe Experience Manager (AEM). Aprenda a utilizar herramientas front-end modernas, como un servidor de desarrollo de webpack, para desarrollar rápidamente el SPA con la API del modelo JSON de AEM.
 sub-product: sites
 feature: SPA Editor
-version: cloud-service
+version: Cloud Service
 kt: 4853
 thumbnail: 4853-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+exl-id: 31416399-6a4e-47d1-8ed8-be842a01a727
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
 source-wordcount: '1839'
 ht-degree: 1%
 
 ---
-
 
 # Integrar el SPA {#developer-workflow}
 
@@ -347,7 +347,7 @@ Los cambios realizados en `Header` actualmente solo son visibles a través del *
 
 Felicidades, ha actualizado la SPA y explorado la integración con AEM! Ya sabe cómo desarrollar la SPA contra la API del modelo JSON de AEM mediante un **webpack-dev-server**.
 
-### Pasos siguientes {#next-steps}
+### Siguientes pasos {#next-steps}
 
 [Asignación de componentes de SPA a componentes de AEM](map-components.md) : Aprenda a asignar componentes de React a componentes de Adobe Experience Manager (AEM) con el SDK de AEM Editor JS. La asignación de componentes permite a los usuarios realizar actualizaciones dinámicas de los componentes de SPA dentro del AEM SPA Editor, de forma similar a la creación de AEM tradicional.
 

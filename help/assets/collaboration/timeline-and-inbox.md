@@ -1,21 +1,21 @@
 ---
 title: Cronología y bandeja de entrada
 description: Familiarícese con las consolas web clave en AEM Assets que se utilizan para la colaboración.
-sub-product: activos
-feature: Flujo de trabajo
-version: cloud-service
+sub-product: assets
+feature: Workflow
+version: Cloud Service
 kt: 4540
 thumbnail: 32051.jpg
-topic: Colaboración
+topic: Collaboration
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 868dc44b-23ca-4e52-a0bc-229480cfae10
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '39'
-ht-degree: 5%
+source-wordcount: '36'
+ht-degree: 0%
 
 ---
-
 
 # Cronología y bandeja de entrada
 

@@ -1,21 +1,21 @@
 ---
 title: Representación Solo para ubicación (FPO)
-description: 'Los diseñadores y los usuarios creativos ahora pueden utilizar los recursos de Adobe Experience Manager en sus aplicaciones de escritorio de Adobe Creative Cloud favoritas. La extensión de vínculo de recursos de Adobe para Adobe Creative Cloud Enterprise amplía la capacidad para buscar, examinar, ordenar, previsualizar, cargar recursos, retirar, modificar, registrar y ver metadatos de AEM recursos en herramientas de Creative Cloud como Adobe Photoshop, InDesign y Illustrator. '
-sub-product: activos
+description: Los diseñadores y los usuarios creativos ahora pueden utilizar los recursos de Adobe Experience Manager en sus aplicaciones de escritorio de Adobe Creative Cloud favoritas. La extensión de vínculo de recursos de Adobe para Adobe Creative Cloud Enterprise amplía la capacidad para buscar, examinar, ordenar, previsualizar, cargar recursos, retirar, modificar, registrar y ver metadatos de AEM recursos en herramientas de Creative Cloud como Adobe Photoshop, InDesign y Illustrator.
+sub-product: assets
 feature: Adobe Asset Link
-version: cloud-service
+version: Cloud Service
 kt: 4916
 thumbnail: 34259.jpg
-topic: Administración de contenido
+topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 940608db-6e84-441a-b031-e8cf52459597
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 5%
+source-wordcount: '86'
+ht-degree: 0%
 
 ---
-
 
 # Representación Solo para ubicación (FPO){#for-placement-only-rendition}
 

@@ -1,24 +1,24 @@
 ---
 title: Compilación e implementaciones
 description: Adobe Cloud Manager facilita la compilación y las implementaciones de código para AEM como Cloud Service. Pueden producirse errores durante los pasos del proceso de compilación, lo que requiere una acción para resolverlos. Esta guía explica los errores comunes en la implementación y cómo abordarlos mejor.
-feature: Herramientas para desarrolladores
+feature: Developer Tools
 topics: development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5434
 thumbnail: kt-5424.jpg
-topic: Desarrollo
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: b4985c30-3e5e-470e-b68d-0f6c5cbf4690
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '2529'
+source-wordcount: '2526'
 ht-degree: 0%
 
 ---
-
 
 # Depuración AEM como compilación e implementaciones de Cloud Service
 
@@ -199,7 +199,7 @@ La mayoría de las infracciones de código y configuración se detectan anterior
 
 `/var` es mutable con una variedad de contenido transitorio y de tiempo de ejecución. Inclusión de `/var` en paquetes de contenido (por ejemplo, `ui.content`) implementada mediante Cloud Manager puede provocar que el paso Implementar falle.
 
-Este problema es difícil de identificar, ya que no provoca un error en la implementación inicial, solo en implementaciones posteriores. Los síntomas notables incluyen:
+Es difícil identificar este problema, ya que no provoca un error en la implementación inicial, solo en implementaciones posteriores. Los síntomas notables incluyen:
 
 + La implementación inicial se realiza correctamente, aunque el contenido mutable nuevo o modificado, que forma parte de la implementación, no parece existir en el servicio AEM Publish.
 + La activación/desactivación del contenido en AEM Author está bloqueada

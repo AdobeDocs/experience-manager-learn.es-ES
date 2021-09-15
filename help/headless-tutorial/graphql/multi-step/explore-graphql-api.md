@@ -1,21 +1,21 @@
 ---
 title: 'Explorar las API de GraphQL: Introducción a AEM sin encabezado: GraphQL'
 description: Introducción a Adobe Experience Manager (AEM) y GraphQL. Explore AEM API de GraphQL mediante el IDE integrado de GrapiQL. Descubra cómo AEM genera automáticamente un esquema de GraphQL basado en un modelo de fragmento de contenido. Experimento en la construcción de consultas básicas mediante la sintaxis de GraphQL.
-version: cloud-service
+version: Cloud Service
 mini-toc-levels: 1
 kt: 6714
 thumbnail: KT-6714.jpg
-feature: Fragmentos de contenido, API de GraphQL
-topic: Sin objetivos, Administración de contenido
+feature: Content Fragments, GraphQL API
+topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 508b0211-fa21-4a73-b8b4-c6c34e3ba696
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1140'
-ht-degree: 0%
+source-wordcount: '1133'
+ht-degree: 1%
 
 ---
-
 
 # Explorar las API de GraphQL {#explore-graphql-apis}
 
@@ -297,6 +297,6 @@ Para ver muchos más ejemplos de consultas de GraphQL, consulte: [Aprender a uti
 
 ¡Felicidades, acaba de crear y ejecutar varias consultas de GraphQL!
 
-## Pasos siguientes {#next-steps}
+## Siguientes pasos {#next-steps}
 
 En el capítulo siguiente, [Consulta de AEM desde una aplicación React](./graphql-and-external-app.md), explorará cómo una aplicación externa puede consultar los extremos AEM GraphQL. La aplicación externa modifica la aplicación WKND GraphQL React de ejemplo para añadir consultas GraphQL de filtrado, lo que permite al usuario de la aplicación filtrar aventuras por actividad. También se le introducirá en la gestión de errores básica.

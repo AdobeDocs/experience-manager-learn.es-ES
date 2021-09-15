@@ -1,18 +1,18 @@
 ---
 title: Creación de conjuntos de carrusel con AEM Dynamic Media
 description: Configuración del conjunto de carrusel con Dynamic Media
-version: cloud-service
+version: Cloud Service
 role: Developer
 level: Intermediate
-topic: Desarrollo
+topic: Development
 index: y
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 4816c688-abec-4bd5-9215-59c16d8fe65d
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '36'
-ht-degree: 2%
+source-wordcount: '35'
+ht-degree: 0%
 
 ---
-
 
 # Creación de conjuntos de carrusel con AEM Dynamic Media
 

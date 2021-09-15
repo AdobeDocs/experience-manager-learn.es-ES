@@ -1,24 +1,24 @@
 ---
 title: Carga y activación de una llamada de Target
 description: Obtenga información sobre cómo cargar, pasar parámetros a una solicitud de página y activar una llamada de Target desde la página del sitio mediante una regla de Launch. La información de la página se recupera y pasa como parámetros mediante la capa de datos del cliente de Adobe, que permite recopilar y almacenar datos sobre la experiencia de los visitantes en una página web y, a continuación, facilitar el acceso a estos datos.
-feature: Componentes principales, capa de datos del cliente de Adobe
+feature: Core Components, Adobe Client Data Layer
 topics: integrations, administration, development
 audience: administrator, developer
 doc-type: technical video
 activity: setup
-version: cloud-service
+version: Cloud Service
 kt: 6133
 thumbnail: 41243.jpg
-topic: Integraciones
+topic: Integrations
 role: Developer
 level: Intermediate
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: ec048414-2351-4e3d-b5f1-ade035c07897
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '615'
-ht-degree: 1%
+source-wordcount: '608'
+ht-degree: 2%
 
 ---
-
 
 # Carga y activación de una llamada de Target {#load-fire-target}
 
@@ -154,7 +154,7 @@ window.targetGlobalSettings = {
 };
 ```
 
-## Pasos siguientes
+## Siguientes pasos
 
 + [Exportar fragmento de experiencia a Adobe Target](./export-experience-fragment-target.md)
 

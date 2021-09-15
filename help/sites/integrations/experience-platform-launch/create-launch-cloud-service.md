@@ -1,31 +1,30 @@
 ---
-title: Crear una configuración de Launch Cloud Service
-description: Obtenga información sobre cómo crear una nueva configuración de Launch Cloud Services. La configuración de Launch Cloud Service se puede aplicar a un sitio existente y las bibliotecas de Launch se pueden observar cargando tanto en entornos de Autor como de Publicación.
+title: Crear una configuración de Cloud Service de Launch
+description: Obtenga información sobre cómo crear una nueva configuración de Cloud Services de Launch. La configuración del Cloud Service de Launch se puede aplicar a un sitio existente y las bibliotecas de Launch se pueden observar cargando tanto en entornos de Autor como de Publicación.
 topics: integrations
 audience: administrator
 doc-type: technical video
 activity: setup
-version: cloud-service
+version: Cloud Service
 kt: 5982
 thumbnail: 38566.jpg
 topic: Integrations
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: a72ddced-37de-4b62-9e28-fa5b6c8ce5b7
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '99'
+source-wordcount: '96'
 ht-degree: 2%
 
 ---
 
+# Crear una configuración de Cloud Service de Launch {#create-launch-cloud-service}
 
-# Crear una configuración de Launch Cloud Service {#create-launch-cloud-service}
-
-Obtenga información sobre cómo crear una nueva configuración de Launch Cloud Services en Adobe Experience Manager. La configuración de Launch Cloud Service de AEM se puede aplicar a un sitio existente y las bibliotecas de Launch se pueden observar cargando tanto en entornos de Autor como de Publicación.
+Obtenga información sobre cómo crear una nueva configuración de Cloud Services de Launch en Adobe Experience Manager. AEM configuración del Cloud Service de Launch se puede aplicar a un sitio existente y las bibliotecas de Launch se pueden observar cargando tanto en entornos de Autor como de Publicación.
 
 >[!VIDEO](https://video.tv.adobe.com/v/38566?quality=12&learn=on)
 
-## Pasos siguientes
+## Siguientes pasos
 
 [Depuración de una implementación de Launch](debug-launch-implementation.md)

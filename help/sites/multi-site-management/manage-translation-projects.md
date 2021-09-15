@@ -1,26 +1,26 @@
 ---
 title: Proyectos de traducción
-seo-title: Proyectos de traducción
-description: 'Aprenda a crear, editar y administrar un proyecto de traducción para su copia de idioma. '
-seo-description: 'Aprenda a crear, editar y administrar un proyecto de traducción para su copia de idioma.  '
-feature: Copia de idioma, administrador de varios sitios
+seo-title: Translation Projects
+description: Aprenda a crear, editar y administrar un proyecto de traducción para su copia de idioma.
+seo-description: Learn how to create, edit and manage a translation project for your Language Copy.
+feature: Language Copy, Multi Site Manager
 topics: localization, authoring, content-architecture
 audience: all
 doc-type: feature video
 activity: use
-version: 6.3, 6.4, 6.5, cloud-service
+version: 6.3, 6.4, 6.5, Cloud Service
 kt: 5369
 thumbnail: 36486.jpg
-topic: Localización
+topic: Localization
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 1e406454-885d-4215-9304-13e476788c2c
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '54'
+source-wordcount: '32'
 ht-degree: 12%
 
 ---
-
 
 # Proyectos de traducción {#translation-projects}
 

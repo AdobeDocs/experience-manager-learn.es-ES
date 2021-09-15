@@ -1,9 +1,9 @@
 ---
-title: Configuración de Adobe Project Firefly para la extensibilidad de Asset Compute
-description: Los proyectos de Asset Compute son proyectos de Adobe Project Firefly especialmente definidos y, como tales, requieren acceso a Adobe Project Firefly en Adobe Developer Console para configurarlos e implementarlos.
+title: Configuración del proyecto de Adobe Firefly para la extensibilidad del Asset compute
+description: Los proyectos de asset compute son proyectos de Adobe especialmente definidos y como tales, requieren acceso a Proyecto de Adobe Firefly en la consola para desarrolladores de Adobe para configurarlos e implementarlos.
 feature: Asset Compute Microservices
 topics: renditions, development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
@@ -12,29 +12,28 @@ thumbnail: 40183.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 2b1d8786-592e-41f2-80cc-bc0b1c7e1b49
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
 
-
 # Configuración del proyecto de Adobe Firefly
 
-Los proyectos de Asset Compute son proyectos de Adobe Project Firefly especialmente definidos y, como tales, requieren acceso a Adobe Project Firefly en Adobe Developer Console para configurarlos e implementarlos.
+Los proyectos de asset compute son proyectos de Adobe especialmente definidos y como tales, requieren acceso a Proyecto de Adobe Firefly en la consola para desarrolladores de Adobe para configurarlos e implementarlos.
 
-## Crear y configurar Adobe Project Firefly en Adobe Developer Console{#set-up}
+## Crear y configurar el proyecto de Adobe Firefly en Adobe Developer Console{#set-up}
 
 >[!VIDEO](https://video.tv.adobe.com/v/40183/?quality=12&learn=on)
 
-_Pulsación para configurar Adobe Project Firefly (sin audio)_
+_Pulsación para configurar el proyecto de Adobe Firefly (sin audio)_
 
-1. Inicie sesión en [Adobe Developer Console](https://console.adobe.io) mediante el Adobe ID asociado con las [cuentas y servicios](./accounts-and-services.md) aprovisionados. Asegúrese de que es __administrador del sistema__ o está en __rol de desarrollador__ para la organización de Adobe correcta.
+1. Inicie sesión en [Adobe Developer Console](https://console.adobe.io) utilizando el Adobe ID asociado con las [cuentas y servicios](./accounts-and-services.md) aprovisionados. Asegúrese de que es __administrador del sistema__ o está en __rol de desarrollador__ para la organización de Adobe correcta.
 1. Para crear un proyecto de Firefly, pulse __Crear nuevo proyecto > Proyecto a partir de plantilla > Proyecto Firefly__
 
-   _Si no está disponible__ Crear nuevo __botón de proyecto o__ Proyecto __Firefytype , significa que su organización de Adobe no está  [aprovisionada con Project Firefly](#request-adobe-project-firefly)._
+   _Si no está disponible__ Crear nuevo __botón de proyecto o__ Proyecto __Firefytype , significa que la organización de Adobe no está  [aprovisionada con Project Firefly](#request-adobe-project-firefly)._
 
    + __Título__ del proyecto:  `WKND AEM Asset Compute`
    + __Nombre__ de la aplicación:  `wkndAemAssetCompute<YourName>`
@@ -46,28 +45,28 @@ _Pulsación para configurar Adobe Project Firefly (sin audio)_
 1. En el proyecto Adobe Firefly, seleccione `Development` en el selector de espacio de trabajo
 1. Pulse __+ Añadir servicio > API__ para abrir el asistente __Añadir una API__, utilice este método para añadir las siguientes API:
 
-   + __Experience Cloud > Asset Compute__
+   + __Experience Cloud > Asset compute__
       + Seleccione __Generate a key pair__ y pulse el botón __Generate keypair__ y guarde el `config.zip` descargado en una ubicación segura para [utilizarlo posteriormente](#private-key)
       + Toque __Siguiente__
-      + Seleccione el perfil de producto __Integraciones - Cloud Service__ y pulse __Guardar API configurada__
+      + Seleccione el perfil de producto __Integraciones: Cloud Service__ y pulse __Guardar API configurada__
    + __Servicios de Adobe > Eventos de__ E/S y pulse  __Guardar API configurada__
    + __Adobe Services > API de administración de__ E/S y pulse  __Guardar API configurada__
 
 ## Acceda a private.key{#private-key}
 
-Al configurar la [integración de API de Asset Compute](#set-up) se generó un nuevo par de claves y se descargó automáticamente un archivo `config.zip`. Este `config.zip` contiene el certificado público generado y el archivo `private.key` correspondiente.
+Al configurar la [integración de API de Asset compute](#set-up) se generó un nuevo par de claves y se descargó automáticamente un archivo `config.zip`. Este `config.zip` contiene el certificado público generado y el archivo `private.key` correspondiente.
 
 1. Descomprima `config.zip` a un lugar seguro en su sistema de archivos, ya que `private.key` se [utiliza más adelante](../develop/environment-variables.md)
    + Los secretos y las claves privadas nunca deben añadirse a Git como cuestión de seguridad.
 
 ## Revisar las credenciales de la cuenta de servicio (JWT)
 
-Las credenciales de este proyecto de Adobe I/O las utiliza la [Herramienta de desarrollo de Asset Compute](../develop/development-tool.md) local para interactuar con Adobe I/O Runtime, y deberán incorporarse al proyecto de Asset Compute. Familiarícese con las credenciales de la cuenta de servicio (JWT).
+Las credenciales de este proyecto de Adobe I/O las utiliza la [Herramienta de desarrollo de Asset compute](../develop/development-tool.md) local para interactuar con Adobe I/O Runtime, y deberán incorporarse al proyecto de Asset compute. Familiarícese con las credenciales de la cuenta de servicio (JWT).
 
 ![Credenciales de cuenta de Adobe Developer Service](./assets/firefly/service-account.png)
 
-1. En el proyecto de Adobe I/O Project Firefly, asegúrese de que el espacio de trabajo `Development` esté seleccionado
+1. En el proyecto Proyecto de Adobe I/O Firefly, asegúrese de que el espacio de trabajo `Development` esté seleccionado
 1. Pulse en __Cuenta de servicio (JWT)__ en __Credenciales__
-1. Revise las credenciales de Adobe I/O que se muestran
-   + La __clave pública__ que aparece en la parte inferior tiene su __private.key__ contrapartida en la `config.zip` descargada cuando la __API de Asset Compute__ se agregó a este proyecto.
-      + Si la clave privada se pierde o se compromete, la clave pública coincidente se puede eliminar y se puede generar o cargar un nuevo par de claves en Adobe I/O mediante esta interfaz.
+1. Revise las Credenciales de Adobe I/O mostradas
+   + La __clave pública__ que aparece en la parte inferior tiene su __private.key__ contrapartida en la `config.zip` descargada cuando la __API de Asset compute__ se agregó a este proyecto.
+      + Si la clave privada se pierde o se ve comprometida, la clave pública coincidente se puede eliminar y se puede generar un nuevo par de claves en el Adobe I/O o cargarse en él mediante esta interfaz.

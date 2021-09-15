@@ -1,19 +1,19 @@
 ---
 title: Adobe Asset Link y AEM
-description: 'Los diseñadores y los usuarios creativos pueden utilizar los recursos de Adobe Experience Manager en sus aplicaciones de escritorio favoritas de Adobe Creative Cloud. La extensión de vínculo de recursos de Adobe para Adobe Creative Cloud for enterprise amplía la capacidad para buscar, examinar, ordenar, previsualizar, cargar recursos, retirar, modificar, registrar y ver metadatos de AEM recursos en herramientas de Creative Cloud como Adobe XD, Photoshop, InDesign y Illustrator. '
+description: Los diseñadores y los usuarios creativos pueden utilizar los recursos de Adobe Experience Manager en sus aplicaciones de escritorio favoritas de Adobe Creative Cloud. La extensión de vínculo de recursos de Adobe para Adobe Creative Cloud for enterprise amplía la capacidad para buscar, examinar, ordenar, previsualizar, cargar recursos, retirar, modificar, registrar y ver metadatos de AEM recursos en herramientas de Creative Cloud como Adobe XD, Photoshop, InDesign y Illustrator.
 feature: Adobe Asset Link
-version: 6.4, 6.5, cloud-service
-topic: Administración de contenido
+version: 6.4, 6.5, Cloud Service
+topic: Content Management
 role: User
 level: Beginner
 thumbnail: 28988.jpg
-source-git-commit: 0cfa83bdbd534f0fa06b3fa0013971feb188224e
+exl-id: 6c49f8c2-f468-4b29-b7b6-029c8ab39ce9
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1029'
-ht-degree: 2%
+source-wordcount: '1052'
+ht-degree: 1%
 
 ---
-
 
 # Adobe Asset Link 3.0
 
@@ -21,6 +21,9 @@ Los diseñadores y los usuarios creativos pueden utilizar los recursos de Adobe 
 
 La extensión de vínculo de recursos de Adobe para Adobe Creative Cloud for enterprise amplía la capacidad para buscar, examinar, ordenar, previsualizar, cargar recursos, extraer, modificar, registrar y ver metadatos de AEM recursos en aplicaciones de Creative Cloud.
 
+>[!TIP]
+>
+> Obtenga más información sobre cómo el [Programa de capacitación Adobe XD Premium](https://spark.adobe.com/page/wU7OXv8qKGugO/) puede ayudarle a integrar Asset Link con su flujo de trabajo de Adobe Experience Manager.
 
 ## Adobe Asset Link y flujos de trabajo creativos AEM
 
@@ -93,7 +96,7 @@ Cómo funciona la autenticación de Adobe Asset Link en el contexto de Adobe Ide
 1. La extensión de Adobe Asset Link realiza una solicitud de autorización, a través de Adobe Creative Cloud Desktop App, para almacenar en Adobe el servicio de ID Manage (IMS) y, cuando se realiza correctamente, recibe un token de portador.
 1. La extensión de Adobe Asset Link se conecta a AEM Author a través de HTTP(S), incluido el token del portador obtenido en **Paso 1**, utilizando el esquema (HTTP/HTTPS), el host y el puerto proporcionados en la configuración JSON de la extensión.
 1. El gestor de autenticación del portador de AEM extrae el token del portador de la solicitud y lo valida con IMS de Adobe.
-1. Una vez que el IMS de Adobe valida el token del portador, se crea un usuario en AEM (si no existe) y se sincronizan los datos de perfil y de grupo/pertenencia de IMS de Adobe. El usuario AEM recibe un token de inicio de sesión AEM estándar, que se devuelve a la extensión de vínculo de recursos de Adobe como una cookie en la respuesta HTTP(S).
+1. Una vez que Adobe IMS valida el token del portador, se crea un usuario en AEM (si aún no existe) y se sincronizan los datos de perfil y grupo/pertenencia de Adobe IMS. El usuario AEM recibe un token de inicio de sesión AEM estándar, que se devuelve a la extensión de vínculo de recursos de Adobe como una cookie en la respuesta HTTP(S).
 1. Interacciones posteriores (es decir, navegación, búsqueda, desprotección de recursos, etc.) con la extensión Adobe Asset Link resulta en solicitudes HTTP(S) a AEM Author que se validan con el token de inicio de sesión AEM, utilizando el controlador de autenticación de token estándar AEM.
 
 >[!NOTE]

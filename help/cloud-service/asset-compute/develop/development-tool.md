@@ -1,9 +1,9 @@
 ---
-title: Herramienta de desarrollo de Asset Compute
-description: Asset Compute Development Tool es un mazo de cables web local que permite a los desarrolladores configurar y ejecutar los trabajadores de Asset Compute localmente, fuera del contexto del SDK de AEM para los recursos de Asset Compute en Adobe I/O Runtime.
+title: Herramienta de desarrollo de assets computes
+description: La herramienta de desarrollo de Asset compute es un mazo de cables web local que permite a los desarrolladores configurar y ejecutar los trabajadores de Asset Computer localmente, fuera del contexto del SDK de AEM para los recursos de Asset compute en Adobe I/O Runtime.
 feature: Asset Compute Microservices
 topics: renditions, development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
@@ -12,22 +12,21 @@ thumbnail: 40241.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: cbe08570-e353-4daf-94d1-a91a8d63406d
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '536'
 ht-degree: 0%
 
 ---
 
+# Herramienta de desarrollo de assets computes
 
-# Herramienta de desarrollo de Asset Compute
+La herramienta de desarrollo de Asset compute es un mazo de cables web local que permite a los desarrolladores configurar y ejecutar los trabajadores de Asset Computer localmente, fuera del contexto del SDK de AEM para los recursos de Asset compute en Adobe I/O Runtime.
 
-Asset Compute Development Tool es un mazo de cables web local que permite a los desarrolladores configurar y ejecutar los trabajadores de Asset Compute localmente, fuera del contexto del SDK de AEM para los recursos de Asset Compute en Adobe I/O Runtime.
+## Ejecutar la herramienta de desarrollo de Asset compute
 
-## Ejecución de la herramienta de desarrollo de Asset Compute
-
-La herramienta de desarrollo de Asset Compute se puede ejecutar desde la raíz del proyecto Asset Compute a través del comando terminal:
+La herramienta de desarrollo de Assets computes se puede ejecutar desde la raíz del proyecto de Asset compute mediante el comando terminal:
 
 ```
 $ aio app run
@@ -35,32 +34,32 @@ $ aio app run
 
 Esto iniciará la herramienta de desarrollo en __http://localhost:9000__ y la abrirá automáticamente en una ventana del explorador. Para que se ejecute la herramienta de desarrollo, [se debe proporcionar un devToolToken válido y generado automáticamente a través de un parámetro de consulta](#troubleshooting__devtooltoken).
 
-## Comprender la interfaz de las herramientas de desarrollo de Asset Compute{#interface}
+## Explicación de la interfaz de las herramientas de desarrollo de Asset compute{#interface}
 
-![Herramienta de desarrollo de Asset Compute](./assets/development-tool/asset-compute-dev-tool.png)
+![Herramienta de desarrollo de assets computes](./assets/development-tool/asset-compute-dev-tool.png)
 
 1. __Archivo de origen:__  la selección del archivo de origen se utiliza para:
-   + Se ha seleccionado el binario de recursos que será el binario `source` pasado al trabajador de Asset Compute
+   + Se ha seleccionado el binario del recurso que será el binario `source` pasado al trabajador del Asset compute
    + Cargar archivos de origen
-1. __Definición de perfiles de Asset Compute:__ define el trabajador de Asset Compute que se ejecutará, incluidos los parámetros: incluido el punto final de la URL del trabajador, el nombre de la representación resultante y cualquier parámetro
-1. __Ejecutar:__ el botón Ejecutar ejecuta el perfil de Asset Compute tal como se define en el editor de perfiles de configuración de Asset Compute
+1. __Definición de perfil o perfiles de asset compute:__ define el trabajador de Asset compute que se ejecutará incluyendo los parámetros: incluido el punto final de la URL del trabajador, el nombre de la representación resultante y cualquier parámetro
+1. __Ejecutar:__ el botón Ejecutar ejecuta el perfil de Asset compute tal como se define en el editor de perfiles de configuración de Asset compute
 1. __Anular:__ el botón Anular cancela una ejecución iniciada al pulsar el botón Ejecutar
-1. __Solicitud/respuesta:__ proporciona la solicitud y respuesta HTTP al trabajador de Asset Compute que se ejecuta en Adobe I/O Runtime. Esto puede resultar útil para depurar
-1. __Registros de activación:__ los registros que describen la ejecución del trabajador de Asset Compute, junto con cualquier error. Esta información también está disponible en el estándar `aio app run`
-1. __Representaciones:__ muestra todas las representaciones generadas por la ejecución del trabajador de Asset Compute
-1. __parámetro de consulta devToolToken:__ el token de la herramienta de desarrollo de Asset Compute requiere un parámetro de  `devToolToken` consulta válido para estar presente. Este token se genera automáticamente cada vez que se genera una nueva herramienta de desarrollo
+1. __Solicitud/respuesta:__ proporciona la solicitud y respuesta HTTP al Asset compute que se ejecuta en Adobe I/O Runtime. Esto puede resultar útil para depurar
+1. __Registros de activación:__ los registros que describen la ejecución del trabajador de Asset compute, junto con los errores. Esta información también está disponible en el estándar `aio app run`
+1. __Representaciones:__ muestra todas las representaciones generadas por la ejecución del Asset compute de trabajo
+1. __parámetro de consulta devToolToken:__ el token de la herramienta de desarrollo de Asset compute requiere un parámetro de  `devToolToken` consulta válido para estar presente. Este token se genera automáticamente cada vez que se genera una nueva herramienta de desarrollo
 
 ### Ejecutar un trabajador personalizado
 
 >[!VIDEO](https://video.tv.adobe.com/v/40241?quality=12&learn=on)
 
-_Pulsación para ejecutar un trabajo de Asset Compute en la herramienta de desarrollo (sin audio)_
+_Pulsación para ejecutar un trabajo de Asset compute en la herramienta de desarrollo (sin audio)_
 
-1. Asegúrese de que Asset Compute Development Tool se inicie desde la raíz del proyecto mediante el comando `aio app run`.
-1. En la herramienta de desarrollo de Asset Compute, cargue o seleccione un [archivo de imagen de muestra](../assets/samples/sample-file.jpg)
+1. Asegúrese de que la herramienta de desarrollo de Asset compute se inicie desde la raíz del proyecto mediante el comando `aio app run`.
+1. En la herramienta de desarrollo de Asset compute, cargue o seleccione un [archivo de imagen de muestra](../assets/samples/sample-file.jpg)
    + Asegúrese de que el archivo esté seleccionado en la lista desplegable __Source file__
-1. Revise el área de texto __Definición del perfil de Asset Compute__
-   + La clave `worker` define la dirección URL del trabajador de Asset Compute implementado
+1. Revise el área de texto __definición del perfil de Asset compute__
+   + La clave `worker` define la dirección URL del trabajador de Asset compute implementado
    + La clave `name` define el nombre de la representación que se va a generar
    + Se pueden proporcionar otras claves y valores en este objeto JSON y estarán disponibles en el programa de trabajo en el objeto `rendition.instructions`
       + Opcionalmente, agregue valores para `size`, `contrast` y `brightness`:

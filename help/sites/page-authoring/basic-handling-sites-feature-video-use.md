@@ -1,26 +1,26 @@
 ---
 title: Gestión básica en AEM Sites
-seo-title: Crear una página nueva en Adobe Experience Manager Sites
+seo-title: Create a new page in Adobe Experience Manager Sites
 description: 'En el siguiente vídeo se ofrece una descripción general de la gestión básica cuando se utiliza el entorno de creación de AEM. Utiliza la consola Sitios como base. '
-seo-description: 'En el siguiente vídeo se ofrece una descripción general de la gestión básica cuando se utiliza el entorno de creación de AEM. Utiliza la consola Sitios como base. '
-feature: Editor de páginas, plantillas editables
+seo-description: The following video provides an overview of basic handling when using the AEM author environment. It uses the Sites console as a basis.
+feature: Page Editor, Editable Templates
 topics: authoring, publishing
 audience: author, marketer
 doc-type: feature video
 activity: use
-version: 6.3, 6.4, 6.5, cloud-service
+version: 6.3, 6.4, 6.5, Cloud Service
 kt: 4495
 thumbnail: 31784.jpg
-topic: Administración de contenido
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 896d378c-c20e-4343-b592-277f4c71065e
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 60%
+source-wordcount: '334'
+ht-degree: 64%
 
 ---
-
 
 # Interfaz de usuario y navegación de AEM Sites {#basic-handling-aem-sites}
 

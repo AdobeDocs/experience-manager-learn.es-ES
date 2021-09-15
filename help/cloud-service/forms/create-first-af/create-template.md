@@ -5,23 +5,21 @@ solution: Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: cloud-service
+version: Cloud Service
 feature: Adaptive Forms
 topic: Development
 kt: 7382
 thumbnail: 332223.jpg
-translation-type: tm+mt
-source-git-commit: 67be45dbd72a8af8b9ab60452ff15081c6f9f192
+exl-id: 3e6dc8c4-d080-4a95-9fb2-52747fda69d7
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '72'
-ht-degree: 6%
+source-wordcount: '65'
+ht-degree: 0%
 
 ---
-
 
 # Crear una plantilla de formulario adaptable
 
 Una plantilla de formulario adaptable es AEM plantilla de página especializada, con determinadas propiedades y estructura de contenido que se utiliza para crear el formulario adaptable. La plantilla tiene diseños, estilos y estructura de contenido inicial básica preconfigurados. Cada formulario adaptable se basa en una plantilla.
 
 >[!VIDEO](https://video.tv.adobe.com/v/332223?quality=12&learn=on)
-

@@ -5,19 +5,19 @@ topics: integrations
 audience: administrator
 doc-type: technical video
 activity: setup
-version: cloud-service
+version: Cloud Service
 kt: 5979
 thumbnail: 39090.jpg
-topic: Integraciones
+topic: Integrations
 role: Developer
 level: Intermediate
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: bdae56d8-96e7-4b05-9b8b-3c6c2e998bd8
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '134'
-ht-degree: 11%
+source-wordcount: '133'
+ht-degree: 12%
 
 ---
-
 
 # Integración de Experience Platform Launch y AEM {#overview}
 
@@ -25,7 +25,7 @@ Experience Platform Launch es la plataforma de administración de etiquetas de p
 
 >[!VIDEO](https://video.tv.adobe.com/v/39090?quality=12&learn=on)
 
-## Pasos siguientes
+## Siguientes pasos
 
 [Crear una propiedad de Launch](create-launch-property.md)
 

@@ -1,24 +1,24 @@
 ---
 title: Configuración del manifest.yml de un proyecto de Asset compute
 description: manifest.yml del proyecto de Asset compute describe todos los trabajadores en este proyecto que se implementarán.
-feature: Microservicios de asset compute
+feature: Asset Compute Microservices
 topics: renditions, development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
 kt: 6281
 thumbnail: KT-6281.jpg
-topic: Integraciones, desarrollo
+topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 766bfaff-ade0-41c8-a395-e79dfb4b3d76
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---
-
 
 # Configurar manifest.yml
 

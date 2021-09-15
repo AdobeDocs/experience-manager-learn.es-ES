@@ -1,25 +1,24 @@
 ---
 title: Developer Console
 description: AEM as a Cloud Service proporciona una consola de desarrollador para cada entorno que expone varios detalles del servicio de AEM en ejecución que son útiles para la depuración.
-feature: Herramientas para desarrolladores
+feature: Developer Tools
 topics: development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5433
 thumbnail: kt-5433.jpg
-topic: Desarrollo
+topic: Development
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: 048a37a9813e7b61ff069c4606b8d23cc6b6844f
+exl-id: 0499ff9f-d452-459f-b1a2-2853a228efd1
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1348'
 ht-degree: 0%
 
 ---
-
 
 # Depuración AEM como Cloud Service con Developer Console
 
@@ -47,8 +46,8 @@ Si se informa de la descarga de cualquier estado como error 401 no autorizado, s
 
 Para resolver el problema 401 No autorizado:
 
-1. Asegúrese de que el usuario pertenece al perfil de producto IMS de Adobe (AEM administradores o usuarios AEM) correspondiente a la AEM asociada de Developer Console como instancia de producto de Cloud Service.
-   + Recuerde que Developer Console puede acceder a 2 instancias de producto IMS de Adobe; Haga clic en las instancias de producto AEM as a Cloud Service Author y Publish , de modo que asegúrese de que se utilizan los perfiles de producto correctos en función del nivel de servicio que requiera acceso a través de Developer Console.
+1. Asegúrese de que el usuario pertenece al perfil de producto de IMS de Adobe (AEM administradores o usuarios AEM) correspondiente a la AEM asociada de Developer Console como instancia de producto de Cloud Service.
+   + Recuerde que Developer Console accede a 2 instancias de producto de Adobe IMS; Haga clic en las instancias de producto AEM as a Cloud Service Author y Publish , de modo que asegúrese de que se utilizan los perfiles de producto correctos en función del nivel de servicio que requiera acceso a través de Developer Console.
 1. Inicie sesión en el AEM como Cloud Service (autor o publicación) y asegúrese de que el usuario y los grupos se han sincronizado correctamente en AEM.
    + Developer Console requiere que el registro de usuario se cree en el nivel de servicio de AEM correspondiente para que se autentique en dicho nivel de servicio.
 1. Borre las cookies del explorador, el estado de la aplicación (almacenamiento local) y vuelva a iniciar sesión en Developer Console, lo que garantiza que el token de acceso que Developer Console utiliza sea correcto y no haya caducado.

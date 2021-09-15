@@ -1,20 +1,20 @@
 ---
 title: Uso del flujo de trabajo en AEM
 description: AEM flujo de trabajo proporciona una forma de colaborar, administrar y procesar contenido en AEM.
-version: 6.5, cloud-service
-feature: Flujo de trabajo
-topic: Administración de contenido
+version: 6.5, Cloud Service
+feature: Workflow
+topic: Content Management
 role: User
 level: Intermediate
 kt: 2557
 thumbnail: 27848.jpg
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 5a6bf1f2-1dd5-40b4-8ceb-03672a36869d
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '70'
-ht-degree: 4%
+source-wordcount: '67'
+ht-degree: 0%
 
 ---
-
 
 # Uso del flujo de trabajo
 

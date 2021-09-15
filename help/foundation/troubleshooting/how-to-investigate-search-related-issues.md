@@ -4,17 +4,17 @@ description: Pasos para investigar problemas relacionados con la búsqueda
 type: Troubleshooting
 role: Admin
 level: Intermediate
-version: 6.5, cloud-service
-feature: Herramientas de búsqueda y desarrollo
-topic: Administración
+version: 6.5, Cloud Service
+feature: Search, Developer Tools
+topic: Administration
 index: y
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 66571dbe-e5bb-4ced-87a5-33ddc160a69a
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '40'
-ht-degree: 2%
+source-wordcount: '36'
+ht-degree: 0%
 
 ---
-
 
 # Cómo investigar problemas relacionados con la búsqueda en AEM
 

@@ -1,10 +1,10 @@
 ---
 title: Adición de la navegación y el enrutamiento | Introducción al AEM SPA Editor y React
 description: Aprenda cómo se pueden admitir varias vistas de la SPA asignando páginas AEM con el SDK del Editor de SPA. La navegación dinámica se implementa mediante el router React y los componentes principales React.
-sub-product: sitios
-feature: Editor SPA
+sub-product: sites
+feature: SPA Editor
 topics: development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 kt: 4988
@@ -12,13 +12,13 @@ thumbnail: 4988-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 9c3d47c7-1bb9-441c-a0e6-85887a32c817
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1623'
+source-wordcount: '1619'
 ht-degree: 0%
 
 ---
-
 
 # Adición de la navegación y el enrutamiento {#navigation-routing}
 
@@ -329,4 +329,3 @@ A continuación, revise cómo React Router está integrado con el SPA y experime
 ## Felicitaciones! {#congratulations}
 
 Felicidades, ha aprendido cómo se pueden admitir varias vistas en el SPA asignando a AEM páginas con el SDK del Editor de SPA. Se ha implementado la navegación dinámica mediante el enrutador React y se ha agregado al componente `Header`.
-

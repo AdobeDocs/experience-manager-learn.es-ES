@@ -1,9 +1,9 @@
 ---
-title: Depuración del SDK de AEM mediante la consola web OSGi
-description: El inicio rápido local del SDK de AEM tiene una consola web OSGi que proporciona una variedad de información e introspecciones en el tiempo de ejecución local de AEM que son útiles para comprender cómo se reconoce su aplicación y cómo funciona dentro de AEM.
+title: Depuración AEM SDK mediante la consola web OSGi
+description: El inicio rápido local del SDK de AEM tiene una consola web OSGi que proporciona una variedad de información e introspecciones en el tiempo de ejecución de AEM local que son útiles para comprender cómo se reconoce su aplicación y cómo funciona dentro de AEM.
 feature: Developer Tools
 topics: development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
@@ -11,26 +11,25 @@ kt: 5265, 5366, 5267
 topic: Development
 role: Developer
 level: Beginner, Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 0929bc1a-376c-4e16-a540-a276fd5af164
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 3%
+source-wordcount: '393'
+ht-degree: 2%
 
 ---
 
+# Depuración AEM SDK mediante la consola web OSGi
 
-# Depuración del SDK de AEM mediante la consola web OSGi
+El inicio rápido local del SDK de AEM tiene una consola web OSGi que proporciona una variedad de información e introspecciones en el tiempo de ejecución de AEM local que son útiles para comprender cómo se reconoce su aplicación y cómo funciona dentro de AEM.
 
-El inicio rápido local del SDK de AEM tiene una consola web OSGi que proporciona una variedad de información e introspecciones en el tiempo de ejecución local de AEM que son útiles para comprender cómo se reconoce su aplicación y cómo funciona dentro de AEM.
-
-AEM proporciona muchas consolas OSGi, cada una de las cuales proporciona perspectivas clave sobre diferentes aspectos de AEM. Sin embargo, las siguientes suelen ser las más útiles para depurar la aplicación.
+AEM proporciona muchas consolas OSGi, cada una de las cuales proporciona perspectivas clave sobre diferentes aspectos de AEM, aunque las siguientes suelen ser las más útiles para depurar la aplicación.
 
 ## Paquetes
 
 >[!VIDEO](https://video.tv.adobe.com/v/34335/?quality=12&learn=on)
 
-La consola Paquetes es un catálogo de los paquetes OSGi y sus detalles, implementados en AEM, junto con la capacidad ad hoc para iniciarlos y detenerlos.
+La consola Paquetes es un catálogo de los paquetes OSGi, y sus detalles, implementados en AEM, junto con la capacidad ad hoc para iniciarlos y detenerlos.
 
 La consola Paquetes se encuentra en:
 
@@ -47,7 +46,7 @@ Al hacer clic en cada paquete, se proporcionan detalles que ayudan a depurar la 
 
 >[!VIDEO](https://video.tv.adobe.com/v/34336/?quality=12&learn=on)
 
-La consola Componentes es un catálogo de todos los componentes de OSGi implementados en AEM y proporciona toda la información sobre ellos, desde su ciclo de vida de componente OSGi definido, hasta a qué servicios de OSGi pueden hacer referencia
+La consola Componentes es un catálogo de todos los componentes de OSGi implementados en AEM y proporciona toda la información sobre ellos, desde su ciclo de vida de componentes OSGi definido, hasta a qué servicios de OSGi pueden hacer referencia
 
 La consola Componentes se encuentra en:
 

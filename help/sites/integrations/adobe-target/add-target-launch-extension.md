@@ -5,19 +5,19 @@ topics: integrations, administration, development
 audience: administrator, developer
 doc-type: technical video
 activity: setup
-version: cloud-service
+version: Cloud Service
 kt: 6131
 thumbnail: 41247.jpg
-topic: Integraciones
+topic: Integrations
 role: Developer
 level: Intermediate
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: aa48ffef-1105-4d0d-b4b4-12ac5d2eea23
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 0%
+source-wordcount: '106'
+ht-degree: 1%
 
 ---
-
 
 # Añadir extensión de Target a una propiedad de Launch {#adobe-target-extension}
 
@@ -27,7 +27,7 @@ Obtenga información sobre cómo habilitar Adobe Target en el sitio web de AEM m
 
 >[!VIDEO](https://video.tv.adobe.com/v/41247?quality=12&learn=on)
 
-## Pasos siguientes
+## Siguientes pasos
 
 + [Carga y activación de una llamada de Target](./load-and-fire-target.md)
 

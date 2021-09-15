@@ -1,22 +1,22 @@
 ---
 title: Ampliar un componente principal | Introducción al AEM SPA Editor y React
 description: Obtenga información sobre cómo ampliar el modelo JSON para un componente principal existente para utilizarlo con el AEM SPA Editor. Comprender cómo añadir propiedades y contenido a un componente existente es una técnica eficaz para expandir las capacidades de una implementación AEM Editor SPA. Aprenda a utilizar el patrón de delegación para ampliar los modelos Sling y las funciones de fusión de recursos Sling.
-sub-product: sitios
-feature: Editor de SPA, componentes principales
+sub-product: sites
+feature: SPA Editor, Core Components
 doc-type: tutorial
-version: cloud-service
+version: Cloud Service
 kt: 5879
 thumbnail: 5879-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 24d70ebaa6a63cfd4a73f43188f25b375dc702ec
+exl-id: 44433595-08bc-4a82-9232-49d46c31b07b
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1097'
-ht-degree: 1%
+source-wordcount: '1091'
+ht-degree: 2%
 
 ---
-
 
 # Ampliar un componente principal {#extend-component}
 
@@ -324,7 +324,7 @@ Para utilizar el componente Titular con el Editor de SPA, se debe crear un nuevo
    >
    > El cuadro de diálogo le permitirá guardar un valor para **Banner Text**, pero este valor no se refleja en el componente SPA. Para activarlo, es necesario ampliar el modelo Sling para el componente.
 
-## Añadir interfaz de Java {#java-interface}
+## Añadir interfaz Java {#java-interface}
 
 Para exponer finalmente los valores del cuadro de diálogo del componente al componente React, necesitamos actualizar el modelo de Sling que rellena el JSON para el componente `Banner`. Esto se hará en el módulo `core` que contiene todo el código Java para nuestro proyecto SPA.
 
@@ -462,7 +462,7 @@ A continuación, implemente el modelo de Sling para la interfaz `BannerModel`.
    $ mvn clean install -PautoInstallBundle
    ```
 
-## Uniéndolo todo {#put-together}
+## En resumen {#put-together}
 
 1. Vuelva a AEM y abra la página SPA que tiene el componente `Banner`.
 1. Actualice el componente `Banner` para incluir **Banner de texto**:
@@ -495,4 +495,3 @@ A continuación, implemente el modelo de Sling para la interfaz `BannerModel`.
 ## Felicitaciones! {#congratulations}
 
 Felicidades, ha aprendido a ampliar un componente AEM utilizando y cómo funcionan los modelos y diálogos de Sling con el modelo JSON.
-

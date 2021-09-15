@@ -1,24 +1,24 @@
 ---
 title: 'Uso de Adobe Cloud Manager: Canalización de producción de CI/CD'
-description: 'La canalización de producción de CI/CD se utiliza para crear e implementar código a través de Stage en el entorno de producción, lo que reduce el tiempo de respuesta. La configuración de la canalización de producción CI/CD define el déclencheur que iniciará la canalización, parámetros que controlan la implementación de producción y parámetros de prueba de rendimiento. '
+description: La canalización de producción de CI/CD se utiliza para crear e implementar código a través de Stage en el entorno de producción, lo que reduce el tiempo de respuesta. La configuración de la canalización de producción CI/CD define el déclencheur que iniciará la canalización, parámetros que controlan la implementación de producción y parámetros de prueba de rendimiento.
 sub-product: cloud-manager
 topics: Administration
 audience: administrator
 doc-type: feature video
 activity: use
-version: cloud-service
+version: Cloud Service
 kt: 6872, 6875
 thumbnail: 26317.jpg
-topic: Arquitectura
+topic: Architecture
 role: Architect, Developer, Admin
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: c4f5667a-0da2-490b-9d55-9fbde21db595
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '177'
 ht-degree: 2%
 
 ---
-
 
 # Uso de Adobe Cloud Manager: Canalización de producción de CI/CD
 

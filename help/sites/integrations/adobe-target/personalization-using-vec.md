@@ -5,20 +5,19 @@ topics: integrations, authoring, personalization, activity, offers
 audience: all
 doc-type: feature video
 activity: use
-version: cloud-service
+version: Cloud Service
 kt: 6352
 thumbnail: 6352-personalization-using-vec.jpg
 topic: Integrations
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: becf2bed-0541-45e8-9ce2-f9fb023234e0
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 1%
+source-wordcount: '518'
+ht-degree: 0%
 
 ---
-
 
 # Personalización mediante el Compositor de experiencias visuales {#personalization-vec}
 
@@ -26,10 +25,10 @@ Obtenga información sobre cómo crear una actividad de Target de prueba A/B med
 
 ## Requisitos previos
 
-Para utilizar VEC en un sitio web de AEM, se debe completar la siguiente configuración:
+Para utilizar VEC en un sitio web AEM, se debe completar la siguiente configuración:
 
-1. [Añadir Adobe Target al sitio web de AEM](./add-target-launch-extension.md)
-1. [Activación de una llamada de Adobe Target desde Launch](./load-and-fire-target.md)
+1. [Agregar Adobe Target al sitio web AEM](./add-target-launch-extension.md)
+1. [Déclencheur de una llamada de Adobe Target desde Launch](./load-and-fire-target.md)
 
 ## Información general del escenario
 
@@ -39,7 +38,7 @@ La página de inicio del sitio WKND muestra actividades locales o lo mejor para 
 
 1. Inicie sesión en [Adobe Experience Cloud](https://experience.adobe.com/), pulse __Target__, vaya a la pestaña __Actividades__
 
-   + Si no ve __Target__ en el panel de Experience Cloud, asegúrese de que la organización correcta de Adobe esté seleccionada en el conmutador de organización en la esquina superior derecha y de que el usuario haya obtenido acceso a Target en [Adobe Admin Console](https://adminconsole.adobe.com/).
+   + Si no ve __Target__ en el panel del Experience Cloud, asegúrese de que la organización de Adobe correcta esté seleccionada en el conmutador de organización en la esquina superior derecha y de que el usuario haya obtenido acceso a Target en [Adobe Admin Console](https://adminconsole.adobe.com/).
 
 1. Haga clic en el botón **Crear actividad** y, a continuación, elija **Prueba A/B** actividad
 
@@ -89,5 +88,5 @@ En este capítulo, un especialista en marketing pudo crear una experiencia con e
 
 ## Compatibilidad con vínculos
 
-+ [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
++ [Adobe Experience Cloud Debugger: Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
 + [Adobe Experience Cloud Debugger: Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)

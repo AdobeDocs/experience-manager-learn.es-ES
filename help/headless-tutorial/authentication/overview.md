@@ -1,24 +1,24 @@
 ---
 title: Autenticarse en AEM como Cloud Service desde una aplicación externa
 description: Explore cómo una aplicación externa puede autenticarse mediante programación e interactuar con AEM como Cloud Service a través de HTTP mediante Tokens de acceso de desarrollo local y credenciales de servicio.
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 topics: Development, Security
-feature: API
+feature: APIs
 activity: develop
 audience: developer
 kt: 6785
 thumbnail: 330460.jpg
-topic: Integraciones sin encabezado
+topic: Headless, Integrations
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: 22829f532f7791af14919af24650b4593fe89ae8
+exl-id: 63c23f22-533d-486c-846b-fae22a4d68db
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
-
 
 # Autenticación basada en token para AEM como Cloud Service
 
@@ -53,7 +53,7 @@ El flujo de ejecución de la aplicación Node.js es el siguiente:
    + Ruta local al archivo que proporciona las credenciales necesarias para acceder a AEM como Cloud Service (`file`)
 1. El token de acceso utilizado para autenticarse en AEM se deriva del archivo JSON proporcionado mediante el parámetro de línea de comandos `file`
 
-   a. Si las credenciales de servicio utilizadas para el desarrollo no local se proporcionan en el archivo JSON (`file`), el token de acceso se recupera de las API de IMS de Adobe
+   a. Si las credenciales de servicio utilizadas para el desarrollo no local se proporcionan en el archivo JSON (`file`), el token de acceso se recupera de las API de Adobe IMS
 1. La aplicación utiliza el token de acceso para acceder a AEM y mostrar todos los recursos de la carpeta especificada en el parámetro de línea de comandos `folder`
 1. Para cada recurso de la carpeta, la aplicación actualiza sus metadatos en función del nombre y valor de la propiedad especificados en los parámetros de línea de comandos `propertyName` y `propertyValue`
 
@@ -67,7 +67,7 @@ Los tokens de acceso de desarrollo local se generan para un AEM específico como
 
 ## Credenciales de servicio
 
-Las Credenciales de Servicio son las credenciales valiosas utilizadas en cualquier escenario que no sea de desarrollo (lo que es más obvio es la producción) que facilitan la capacidad de una aplicación externa o del sistema para autenticarse e interactuar con AEM como Cloud Service sobre HTTP. Las propias credenciales de servicio no se envían a AEM para su autenticación, sino que la aplicación externa las utiliza para generar un JWT, que se intercambia con las API de IMS de Adobe _para_ un token de acceso, que luego se puede utilizar para autenticar solicitudes HTTP para AEM como Cloud Service.
+Las Credenciales de Servicio son las credenciales valiosas utilizadas en cualquier escenario que no sea de desarrollo (lo que es más obvio es la producción) que facilitan la capacidad de una aplicación externa o del sistema para autenticarse e interactuar con AEM como Cloud Service sobre HTTP. Las propias credenciales de servicio no se envían a AEM para su autenticación, sino que la aplicación externa las utiliza para generar un JWT, que se intercambia con las API de Adobe IMS _para_ un token de acceso, que luego se puede utilizar para autenticar solicitudes HTTP para AEM como Cloud Service.
 
 + [Cómo utilizar las credenciales del servicio](./service-credentials.md)
 

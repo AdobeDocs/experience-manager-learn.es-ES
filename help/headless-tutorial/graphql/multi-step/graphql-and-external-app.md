@@ -1,7 +1,7 @@
 ---
 title: 'AEM de consulta mediante GraphQL desde una aplicación externa: Introducción a AEM sin encabezado: GraphQL'
 description: Introducción a Adobe Experience Manager (AEM) y GraphQL. Explore AEM API de GraphQL con una aplicación WKND GraphQL React de ejemplo. Descubra cómo esta aplicación externa hace llamadas de GraphQL a AEM para potenciar su experiencia. Obtenga información sobre cómo realizar la gestión de errores básica.
-version: cloud-service
+version: Cloud Service
 mini-toc-levels: 1
 kt: 6716
 thumbnail: KT-6716.jpg
@@ -9,13 +9,13 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+exl-id: 772b595d-2a25-4ae6-8c6e-69a646143147
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
 source-wordcount: '1398'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
-
 
 # Consulta AEM con GraphQL desde una aplicación externa
 
@@ -343,6 +343,6 @@ GraphQL tiene un tipo inflexible y, por lo tanto, puede devolver mensajes de err
 
 Felicitaciones! Ha explorado correctamente el código de la aplicación WKND GraphQL React de muestra y lo ha actualizado para que utilice consultas de GraphQL parametrizadas y filtradas para enumerar las aventuras por actividad. También tiene la oportunidad de explorar algunas funciones básicas de gestión de errores.
 
-## Pasos siguientes {#next-steps}
+## Siguientes pasos {#next-steps}
 
 En el siguiente capítulo, [Modelado de datos avanzado con referencias de fragmento](./fragment-references.md) aprenderá a utilizar la función Referencia de fragmento para crear una relación entre dos fragmentos de contenido diferentes. También aprenderá a modificar una consulta de GraphQL para incluir el campo de un modelo al que se hace referencia.

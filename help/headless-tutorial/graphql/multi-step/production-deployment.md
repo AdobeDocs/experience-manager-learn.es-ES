@@ -1,21 +1,21 @@
 ---
 title: 'Implementación de producción mediante un servicio de AEM Publish: Introducción a AEM sin encabezado: GraphQL'
 description: Obtenga información sobre los servicios de AEM Author y Publish y el patrón de implementación recomendado para aplicaciones sin encabezado. En este tutorial, aprenda a utilizar variables de entorno para cambiar dinámicamente un extremo de GraphQL en función del entorno de destino. Aprenda a configurar correctamente AEM para el uso compartido de recursos de origen cruzado (CORS).
-version: cloud-service
-feature: Fragmentos de contenido, API de GraphQL
-topic: Sin objetivos, Administración de contenido
+version: Cloud Service
+feature: Content Fragments, GraphQL API
+topic: Headless, Content Management
 role: Developer
 level: Beginner
 mini-toc-levels: 1
 kt: 7131
 thumbnail: KT-7131.jpg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 8c8b2620-6bc3-4a21-8d8d-8e45a6e9fc70
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '2367'
+source-wordcount: '2360'
 ht-degree: 1%
 
 ---
-
 
 # Implementación de producción con un servicio de AEM Publish
 

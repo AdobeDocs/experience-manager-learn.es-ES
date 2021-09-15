@@ -1,19 +1,19 @@
 ---
 title: Descarga de recursos en AEM aplicación Dynamic Media Classic
 description: Pasos para descargar recursos en la aplicación Dynamic Media Classic
-version: cloud-service
+version: Cloud Service
 role: Developer
 level: Intermediate
-feature: 'Dynamic Media Classic '
-topic: Desarrollo
+feature: Dynamic Media Classic
+topic: Development
 index: y
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 9e845b1c-2045-4755-b6f0-3526396d3126
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '43'
-ht-degree: 2%
+source-wordcount: '39'
+ht-degree: 0%
 
 ---
-
 
 # Descarga de recursos en AEM aplicación Dynamic Media Classic
 

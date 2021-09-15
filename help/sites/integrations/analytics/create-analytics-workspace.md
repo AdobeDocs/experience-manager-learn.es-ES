@@ -1,20 +1,20 @@
 ---
 title: Analizar datos con Analysis Workspace
 description: Obtenga información sobre cómo asignar datos capturados desde un sitio de Adobe Experience Manager a métricas y dimensiones en grupos de informes de Adobe Analytics. Obtenga información sobre cómo crear un tablero de informes detallado mediante la función Analysis Workspace de Adobe Analytics.
-version: cloud-service
-topic: Integraciones
-feature: Capa de datos del cliente de Adobe
+version: Cloud Service
+topic: Integrations
+feature: Adobe Client Data Layer
 role: User
 level: Intermediate
 kt: 6409
 thumbnail: KT-6296.jpg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: b5722fe2-93bf-4b25-8e08-4cb8206771cb
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '2184'
+source-wordcount: '2179'
 ht-degree: 0%
 
 ---
-
 
 # Analizar datos con Analysis Workspace
 
@@ -265,4 +265,3 @@ A continuación, vamos a descargar la plantilla Clasificación para la variable 
 ## Felicitaciones!
 
 Acaba de aprender a asignar datos capturados de un sitio de Adobe Experience Manager a métricas y dimensiones en grupos de informes de Adobe Analytics, realizar una clasificación para las métricas y crear un tablero de informes detallado mediante la función Analysis Workspace de Adobe Analytics.
-

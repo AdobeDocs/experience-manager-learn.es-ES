@@ -1,11 +1,11 @@
 ---
 title: Adición de la navegación y el enrutamiento | Introducción al Editor de SPA de AEM y al Angular
 description: Descubra cómo se admiten varias vistas de la SPA mediante AEM Pages y el SDK de SPA Editor. La navegación dinámica se implementa mediante rutas de Angular y se agrega a un componente de encabezado existente.
-sub-product: sitios
-feature: Editor SPA
+sub-product: sites
+feature: SPA Editor
 topics: development
 doc-type: tutorial
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 kt: 5312
@@ -13,13 +13,13 @@ thumbnail: 5312-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 197a0c1f-4d0a-4b99-ba89-cdff2e6ac4ec
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '2717'
-ht-degree: 0%
+source-wordcount: '2713'
+ht-degree: 1%
 
 ---
-
 
 # Adición de la navegación y el enrutamiento {#navigation-routing}
 
@@ -732,6 +732,6 @@ Felicidades, ha aprendido cómo se pueden admitir varias vistas en el SPA asigna
 
 Siempre puede ver el código terminado en [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/navigation-routing-solution) o extraer el código localmente cambiando a la rama `Angular/navigation-routing-solution`.
 
-### Pasos siguientes {#next-steps}
+### Siguientes pasos {#next-steps}
 
 [Crear un componente personalizado](custom-component.md) : obtenga información sobre cómo crear un componente personalizado para utilizarlo con el AEM SPA Editor. Aprenda a desarrollar cuadros de diálogo de autor y modelos de Sling para ampliar el modelo JSON y rellenar un componente personalizado.

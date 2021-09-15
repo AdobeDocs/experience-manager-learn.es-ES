@@ -1,24 +1,24 @@
 ---
 title: Configuración de un entorno de desarrollo local para la extensibilidad del Asset compute
 description: El desarrollo de los Assets computes, que son aplicaciones JavaScript de Node.js, requiere herramientas de desarrollo específicas que difieren del desarrollo de AEM tradicional, que van desde Node.js y varios módulos npm hasta Docker Desktop y Microsoft Visual Studio Code.
-feature: Microservicios de asset compute
+feature: Asset Compute Microservices
 topics: renditions, development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
 kt: 6266
 thumbnail: KT-6266.jpg
-topic: Integraciones, desarrollo
+topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: fd72f3c85db8a56ec8abfd1609da53492ee54be2
+exl-id: 162e10e5-fcb0-4f16-b6d1-b951826209d9
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
-
 
 # Configuración del entorno de desarrollo local
 

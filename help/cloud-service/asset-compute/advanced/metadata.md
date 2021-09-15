@@ -1,25 +1,24 @@
 ---
 title: Desarrollo de un trabajador de metadatos de Asset compute
 description: Aprenda a crear un Asset compute de trabajo de metadatos que derive los colores más utilizados en un recurso de imagen y escriba los nombres de los colores de nuevo en los metadatos del recurso en AEM.
-feature: Microservicios de asset compute
+feature: Asset Compute Microservices
 topics: metadata, development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
 kt: 6448
 thumbnail: 327313.jpg
-topic: Integraciones, desarrollo
+topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
-translation-type: tm+mt
-source-git-commit: dbc0a35ae96594fec1e10f411d57d2a3812c1cf2
+exl-id: 6ece6e82-efe9-41eb-adf8-78d9deed131e
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1439'
+source-wordcount: '1434'
 ht-degree: 1%
 
 ---
-
 
 # Desarrollo de un trabajador de metadatos de Asset compute
 
@@ -88,7 +87,7 @@ packages:
 
 Los `limits` y `require-adobe-auth` se configuran discretamente por trabajador. En este programa de trabajo, `512 MB` de memoria se asigna a medida que el código inspecciona (potencialmente) los datos de imagen binaria grandes. Los demás `limits` se eliminan para utilizar valores predeterminados.
 
-## Desarrollar un trabajador de metadatos{#metadata-worker}
+## Desarrollo de un trabajador de metadatos{#metadata-worker}
 
 Cree un nuevo archivo JavaScript de trabajador de metadatos en el proyecto de Asset compute en la ruta [manifest.yml definida para el nuevo trabajador](#manifest), en `/actions/metadata-colors/index.js`
 
@@ -257,7 +256,7 @@ $ aio app deploy
 
 Tenga en cuenta que esto implementará todos los trabajadores del proyecto. Revise las [instrucciones de implementación no abreviadas](../deploy/runtime.md) para saber cómo implementar en los espacios de trabajo de fase y producción.
 
-### Integración con perfiles de procesamiento de AEM{#processing-profile}
+### Integración con Perfiles de procesamiento de AEM{#processing-profile}
 
 Invoque el trabajador de AEM creando un nuevo servicio de perfil de procesamiento personalizado existente que invoque a este trabajador implementado o modificándolo.
 

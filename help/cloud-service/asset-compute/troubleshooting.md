@@ -1,9 +1,9 @@
 ---
-title: Resolución de problemas de la extensibilidad de Asset Compute para AEM Assets
-description: A continuación se muestra un índice de problemas y errores comunes, junto con las resoluciones, que podrían producirse al desarrollar e implementar trabajadores personalizados de Asset Compute para AEM Assets.
+title: Resolución de problemas de la extensibilidad del Asset compute para AEM Assets
+description: A continuación se muestra un índice de problemas y errores comunes, junto con las resoluciones, que podrían producirse al desarrollar e implementar Assets computes personalizados para AEM Assets.
 feature: Asset Compute Microservices
 topics: renditions, metadata, development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
@@ -12,18 +12,17 @@ thumbnail: KT-5802.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: d851d315-ed0e-46b8-bcd8-417e1e58c0c4
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1249'
+source-wordcount: '1239'
 ht-degree: 0%
 
 ---
 
+# Resolución de problemas de extensibilidad del Asset compute
 
-# Resolución de problemas de la extensibilidad de Asset Compute
-
-A continuación se muestra un índice de problemas y errores comunes, junto con las resoluciones, que podrían producirse al desarrollar e implementar trabajadores personalizados de Asset Compute para AEM Assets.
+A continuación se muestra un índice de problemas y errores comunes, junto con las resoluciones, que podrían producirse al desarrollar e implementar Assets computes personalizados para AEM Assets.
 
 ## Desarrollar{#develop}
 
@@ -38,14 +37,14 @@ A continuación se muestra un índice de problemas y errores comunes, junto con 
 
 ## Herramienta de desarrollo{#development-tool}
 
-### Falta el archivo Console.json en el proyecto de Asset Compute{#missing-console-json}
+### Falta el archivo Console.json en el proyecto de Asset compute{#missing-console-json}
 
-+ __Error:__ Error: Faltan archivos requeridos en la validación (.../node_module/@adobe/asset-compute-client/lib/integrationConfiguration.js:XX:YY) en async setupAssetCompute (.../node_modules/@adobe/asset-compute-devtool/src/assetComputeDevTool.js:XX:YY)
-+ __Causa:__ falta el  `console.json` archivo en la raíz del proyecto de Asset Compute
-+ __Resolución:__ Descargar un nuevo  `console.json` formulario de su proyecto de Adobe I/O
-   1. En console.adobe.io, abra el proyecto de Adobe I/O que el proyecto de Asset Compute está configurado para usar
++ __Error:__ Error: Faltan archivos requeridos en la validación (.../node_module/@adobe/asset-compute-client/lib/integrationConfiguration.:XX:jsYY) en async setupAssetCompute (.../node_module/@adobe/asset-compute-devtool/src/assetComputeDevTool.:XX:jsYY)
++ __Causa:__ falta el  `console.json` archivo en la raíz del proyecto de Asset compute
++ __Resolución:__ Descargar un nuevo  `console.json` formulario del proyecto de Adobe I/O
+   1. En console.adobe.io, abra el proyecto de Adobe I/O que el proyecto de Asset compute está configurado para usar
    1. Toque el botón __Download__ en la parte superior derecha
-   1. Guarde el archivo descargado en la raíz del proyecto de Asset Compute con el nombre de archivo `console.json`
+   1. Guarde el archivo descargado en la raíz del proyecto de Asset compute con el nombre de archivo `console.json`
 
 ### Sangría YAML incorrecta en manifest.yml{#incorrect-yaml-indentation}
 
@@ -67,7 +66,7 @@ A continuación se muestra un índice de problemas y errores comunes, junto con 
 
 ### Lista desplegable de archivos de origen incorrecta{#source-files-dropdown-incorrect}
 
-Asset Compute Development Tool puede introducir un estado en el que extrae datos antiguos y es más visible en el menú desplegable __Source file__ que muestra elementos incorrectos.
+La herramienta de desarrollo de assets computes puede introducir un estado en el que extrae datos antiguos y es más visible en el menú desplegable __Source file__ que muestra elementos incorrectos.
 
 + __Error:__ la lista desplegable Archivo de origen muestra los elementos incorrectos.
 + __Causa:__ el estado del explorador almacenado en caché antiguo hace que la variable
@@ -75,9 +74,9 @@ Asset Compute Development Tool puede introducir un estado en el que extrae datos
 
 ### Falta el parámetro de consulta devToolToken o no es válido{#missing-or-invalid-devtooltoken-query-parameter}
 
-+ __Error: Notificación__ &quot;No autorizada&quot; en la herramienta de desarrollo de Asset Compute
++ __Error: notificación__ &quot;no autorizada&quot; en la herramienta de desarrollo de Asset compute
 + __Causa:__ `devToolToken`  falta o no es válido
-+ __Solución:__ cierre la ventana del explorador de la herramienta de desarrollo de Asset Compute, termine cualquier proceso de la herramienta de desarrollo que se ejecute a través del  `aio app run` comando y reinicie la herramienta de desarrollo (con  `aio app run`).
++ __Solución:__ cierre la ventana del explorador de la herramienta de desarrollo de Asset compute, finalice los procesos de la herramienta de desarrollo que se ejecuten iniciados mediante el  `aio app run` comando y reinicie la herramienta de desarrollo (con  `aio app run`).
 
 ### No se pueden quitar los archivos de origen{#unable-to-remove-source-files}
 
@@ -101,14 +100,14 @@ Asset Compute Development Tool puede introducir un estado en el que extrae datos
 
 + __Error:__ error: La representación &quot;rendition.xxx&quot; no se ajusta a lo esperado.
 + __Causa:__ el trabajador genera una representación que no es la misma que la  `rendition.<extension>` proporcionada en el caso de prueba.
-   + Si el archivo `rendition.<extension>` esperado no se crea de la misma manera que la representación generada localmente en el caso de prueba, la prueba puede fallar ya que puede haber alguna diferencia en los bits. Por ejemplo, si el trabajador de Asset Compute cambia el contraste mediante API y el resultado esperado se crea ajustando el contraste en Adobe Photoshop CC, los archivos pueden aparecer del mismo modo, pero las variaciones menores en los bits pueden ser diferentes.
+   + Si el archivo `rendition.<extension>` esperado no se crea de la misma manera que la representación generada localmente en el caso de prueba, la prueba puede fallar ya que puede haber alguna diferencia en los bits. Por ejemplo, si el programa de trabajo del Asset compute cambia el contraste mediante API y el resultado esperado se crea ajustando el contraste en Adobe Photoshop CC, los archivos pueden aparecer del mismo modo, pero las variaciones menores en los bits pueden ser diferentes.
 + __Solución:__ revise la salida de representación de la prueba navegando hasta  `/build/test-worker/<worker-name>/<test-run-timestamp>/<test-case>/rendition.<extension>` y compárela con el archivo de representación esperado en el caso de prueba. Para crear un recurso esperado exacto, haga lo siguiente:
    + Utilice la herramienta de desarrollo para generar una representación, validar que sea correcta y utilizarla como el archivo de representación esperado
    + O bien, valide el archivo generado por la prueba en `/build/test-worker/<worker-name>/<test-run-timestamp>/<test-case>/rendition.<extension>`, valide que es correcto y utilícelo como el archivo de representación esperado
 
 ## Depurar
 
-### Debugger no adjunta{#debugger-does-not-attach}
+### Debugger no se adjunta{#debugger-does-not-attach}
 
 + __Error__: Error al procesar el inicio: Error: No se pudo conectar para depurar el destino en...
 + __Causa__: Docker Desktop no se está ejecutando en el sistema local. Para verificarlo, revise la consola de depuración de código de VS (Ver > Consola de depuración), confirmando este error.
@@ -116,7 +115,7 @@ Asset Compute Development Tool puede introducir un estado en el que extrae datos
 
 ### Puntos de interrupción que no se pausan{#breakpoints-no-pausing}
 
-+ __Error__: Al ejecutar el trabajador de Asset Compute desde la herramienta de desarrollo depurable, el código VS no se pausa en los puntos de interrupción.
++ __Error__: Al ejecutar el programa de trabajo de Asset compute desde la herramienta de desarrollo depurable, el código VS no se pausa en los puntos de interrupción.
 
 #### El depurador de código VS no está adjunto{#vs-code-debugger-not-attached}
 
@@ -126,11 +125,11 @@ Asset Compute Development Tool puede introducir un estado en el que extrae datos
 #### Depurador de código VS adjunto después de iniciar la ejecución del trabajo{#vs-code-debugger-attached-after-worker-execution-began}
 
 + __Causa:__ el depurador de código VS no se adjuntó antes de pulsar la  ____ Herramienta de desarrollo de ejecución.
-+ __Solución:__ asegúrese de que el depurador se ha adjuntado revisando la consola de depuración de VS Code (Ver > Consola de depuración) y, a continuación, vuelva a ejecutar el trabajador de Asset Compute desde la herramienta de desarrollo.
++ __Solución:__ asegúrese de que el depurador se ha adjuntado revisando la consola de depuración de VS Code (Ver > Consola de depuración) y, a continuación, vuelva a ejecutar el programa de trabajo de Asset compute desde la herramienta de desarrollo.
 
-### Se agota el tiempo de espera del trabajo al depurar{#worker-times-out-while-debugging}
+### Se agota el tiempo de espera del trabajo durante la depuración{#worker-times-out-while-debugging}
 
-+ __Error__: La consola de depuración informa de que la acción agotará el tiempo de espera en -XXX milisegundos&quot; o de que la vista previa de la  [Herramienta de desarrollo de cómputo de recursos](./develop/development-tool.md)  gira indefinidamente o
++ __Error__: La consola de depuración informa de que la acción agotará el tiempo de espera en -XXX milisegundos&quot; o de que la vista previa de la  [herramienta de desarrollo de Asset compute ](./develop/development-tool.md) gira indefinidamente o
 + __Causa__: Se ha superado el tiempo de espera de trabajador definido en  [manifest.](./develop/manifest.md) ymlis durante la depuración.
 + __Resolución__: Aumente temporalmente el tiempo de espera del trabajador en  [manifest.](./develop/manifest.md) ymlor acelere las actividades de depuración.
 
@@ -167,5 +166,3 @@ Asset Compute Development Tool puede introducir un estado en el que extrae datos
 + __Error:__ se muestra el distintivo Error en el procesamiento de recursos en el recurso
 + __Causa:__ error en la ejecución del trabajador personalizado
 + __Solución:__ siga las instrucciones sobre la  [depuración de la ](./test-debug/debug.md#aio-app-logs) activación de Adobe I/O Runtime mediante  `aio app logs`.
-
-

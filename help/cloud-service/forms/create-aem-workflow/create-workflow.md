@@ -5,23 +5,21 @@ solution: Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: cloud-service
+version: Cloud Service
 feature: Adaptive Forms
 topic: Development
 kt: 7424
 thumbnail: 332434.pg
-translation-type: tm+mt
-source-git-commit: 27f21bb9c1b905a2100a5013fe3b75760b9d6821
+exl-id: 21139665-eef2-4582-a360-bd4b8dafaf6c
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '46'
-ht-degree: 10%
+source-wordcount: '39'
+ht-degree: 0%
 
 ---
-
 
 # Crear un flujo de trabajo AEM
 
 Cree un modelo de flujo de trabajo mediante los componentes de flujo de trabajo de AEM Forms. utilice el componente o-división para ramificar el flujo de trabajo en función del valor de la variable de ingresos totales.
 
 >[!VIDEO](https://video.tv.adobe.com/v/332434?quality=12&learn=on)
-

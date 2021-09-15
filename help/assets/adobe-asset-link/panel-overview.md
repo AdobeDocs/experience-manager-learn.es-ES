@@ -1,21 +1,21 @@
 ---
 title: Información general del panel Vínculo de recursos de Adobe
-description: 'Adobe Asset Link proporciona a los usuarios creativos la capacidad de examinar, buscar, extraer y registrar recursos almacenados en AEM Assets mediante el panel integrado en InDesign, Photoshop y Illustrator. Obtenga información sobre la interfaz de usuario del panel Adobe Asset Link y sus funciones. '
-sub-product: activos
+description: Adobe Asset Link proporciona a los usuarios creativos la capacidad de examinar, buscar, extraer y registrar recursos almacenados en AEM Assets mediante el panel integrado en InDesign, Photoshop y Illustrator. Obtenga información sobre la interfaz de usuario del panel Adobe Asset Link y sus funciones.
+sub-product: assets
 feature: Adobe Asset Link
-version: cloud-service
+version: Cloud Service
 kt: 4905
 thumbnail: 33734.jpg
-topic: Administración de contenido
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: ba8d0cd1-b7d2-4628-a069-5ef21cc214c6
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '100'
-ht-degree: 5%
+source-wordcount: '94'
+ht-degree: 0%
 
 ---
-
 
 # Información general del panel Vínculo de recursos de Adobe {#adobe-asset-link-panel-overview}
 

@@ -1,7 +1,7 @@
 ---
 title: 'Configuración rápida: Introducción a AEM sin encabezado - GraphQL'
 description: Introducción a Adobe Experience Manager (AEM) y GraphQL. Instale el SDK de AEM, añada contenido de ejemplo e implemente una aplicación que consuma contenido de AEM con sus API de GraphQL. Consulte cómo AEM las experiencias en todos los canales.
-version: cloud-service
+version: Cloud Service
 mini-toc-levels: 1
 kt: 6386
 thumbnail: KT-6386.jpg
@@ -9,13 +9,13 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+exl-id: d2da6efa-1f77-4391-adda-e3180c42addc
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
 source-wordcount: '1814'
 ht-degree: 2%
 
 ---
-
 
 # Configuración rápida {#setup}
 
@@ -109,7 +109,7 @@ El sitio de referencia de WKND incluye configuraciones necesarias para exponer u
 
 >[!NOTE]
 >
-> Si utiliza un entorno de Cloud Service, consulte la documentación para saber cómo [implementar una base de código como el sitio de referencia WKND en un entorno de Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#deploying).
+> Si utiliza un entorno de Cloud Service, consulte la documentación para saber cómo [implementar una base de código como el sitio de referencia WKND en un entorno de Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=es).
 
 ## Instalación de la aplicación de ejemplo{#sample-app}
 
@@ -205,7 +205,7 @@ Ahora que la aplicación React se está ejecutando, actualice el contenido de AE
 
 Felicidades, ahora tiene una aplicación externa que consume AEM contenido con GraphQL. No dude en inspeccionar el código en la aplicación React y seguir experimentando con la modificación de los fragmentos de contenido existentes.
 
-## Pasos siguientes {#next-steps}
+## Siguientes pasos {#next-steps}
 
 En el capítulo siguiente, [Definición de modelos de fragmento de contenido](content-fragment-models.md), aprenda a modelar contenido y a crear un esquema con **Modelos de fragmento de contenido**. Revisará los modelos existentes y creará un nuevo modelo. También aprenderá los diferentes tipos de datos que se pueden utilizar para definir un esquema como parte del modelo.
 

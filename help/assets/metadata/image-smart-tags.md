@@ -1,20 +1,20 @@
 ---
 title: Etiquetas inteligentes para imágenes con AEM Assets
 description: Las etiquetas inteligentes para imágenes aumentan AEM capacidades de búsqueda mediante la adición automática e inteligente de etiquetas de metadatos a los recursos de imagen en función del contenido de la imagen.
-topic: Administración de contenido
-feature: Etiquetas inteligentes
+topic: Content Management
+feature: Smart Tags
 role: User
 level: Intermediate
-version: 6.3, 6.4, 6.5, cloud-service
+version: 6.3, 6.4, 6.5, Cloud Service
 kt: 645
 thumbnail: 17019.jpg
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: c72dc489-70e6-48ca-99a8-663d4c0652ba
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '222'
-ht-degree: 13%
+source-wordcount: '218'
+ht-degree: 11%
 
 ---
-
 
 # Etiquetas inteligentes para imágenes
 

@@ -1,23 +1,23 @@
 ---
 title: Crear un componente de clima personalizado | Introducción al AEM SPA Editor y React
 description: Aprenda a crear un componente de clima personalizado para utilizarlo con el AEM SPA Editor. Aprenda a desarrollar cuadros de diálogo de autor y modelos de Sling para ampliar el modelo JSON y rellenar un componente personalizado. Se utilizan los componentes API de tiempo abierto y React Open Weather .
-sub-product: sitios
-feature: Editor SPA
+sub-product: sites
+feature: SPA Editor
 doc-type: tutorial
 topics: development
-version: cloud-service
+version: Cloud Service
 kt: 5878
 thumbnail: 5878-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 82466e0e-b573-440d-b806-920f3585b638
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1228'
-ht-degree: 2%
+source-wordcount: '1224'
+ht-degree: 3%
 
 ---
-
 
 # Crear un componente de clima personalizado {#custom-component}
 
@@ -395,6 +395,6 @@ A continuación, cree el componente `Open Weather` utilizando el AEM SPA Editor.
 
 Felicidades, ha aprendido a crear un componente de AEM personalizado para utilizarlo con el Editor de SPA. También ha aprendido cómo los cuadros de diálogo, las propiedades JCR y los modelos Sling interactúan para generar el modelo JSON.
 
-### Pasos siguientes {#next-steps}
+### Siguientes pasos {#next-steps}
 
 [Ampliar un componente principal](extend-component.md) : obtenga información sobre cómo ampliar un componente principal de AEM existente para utilizarlo con el editor de SPA de AEM. Comprender cómo añadir propiedades y contenido a un componente existente es una técnica eficaz para expandir las capacidades de una implementación AEM Editor SPA.

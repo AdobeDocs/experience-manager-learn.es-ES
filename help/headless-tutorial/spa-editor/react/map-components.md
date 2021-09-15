@@ -1,10 +1,10 @@
 ---
 title: Asignación de componentes de SPA a componentes de AEM | Introducción al AEM SPA Editor y React
 description: Obtenga información sobre cómo asignar componentes de React a componentes de Adobe Experience Manager (AEM) con el SDK de JS de AEM Editor SPA. La asignación de componentes permite a los usuarios realizar actualizaciones dinámicas de los componentes de SPA dentro del AEM SPA Editor, de forma similar a la creación de AEM tradicional. También aprenderá a utilizar fuera de la caja AEM React Core Components.
-sub-product: sitios
-feature: Editor SPA
+sub-product: sites
+feature: SPA Editor
 topics: development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 kt: 4854
@@ -12,13 +12,13 @@ thumbnail: 4854-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 497ce6d7-cd39-4fb3-b5e0-6c60845f7648
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '2267'
+source-wordcount: '2263'
 ht-degree: 1%
 
 ---
-
 
 # Asignación de componentes de SPA a componentes de AEM {#map-components}
 
@@ -247,7 +247,7 @@ Inspeccionemos más el contenedor de diseño.
 
 Felicidades, ha aprendido a asignar SPA componentes a los componentes AEM y ha utilizado los componentes principales de React. También tiene la oportunidad de explorar las capacidades de respuesta del **Contenedor de diseño**.
 
-### Pasos siguientes {#next-steps}
+### Siguientes pasos {#next-steps}
 
 [Navegación y enrutamiento](navigation-routing.md) : Descubra cómo se pueden admitir varias vistas de la SPA asignando páginas AEM con el SDK del Editor de SPA. La navegación dinámica se implementa mediante el router React y los componentes principales React.
 
@@ -432,4 +432,3 @@ Antes de saltar al código SPA, revise el modelo JSON proporcionado por AEM.
    ```
 
    Esta es una buena introducción para ampliar e implementar sus propios componentes.
-

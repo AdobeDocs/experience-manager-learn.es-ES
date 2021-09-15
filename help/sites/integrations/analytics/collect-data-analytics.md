@@ -1,24 +1,24 @@
 ---
 title: Recopilación de datos de página con Adobe Analytics
 description: Utilice la capa de datos del cliente de Adobe impulsada por eventos para recopilar datos sobre la actividad del usuario en un sitio web creado con Adobe Experience Manager. Aprenda a utilizar las reglas en Experience Platform Launch para detectar estos eventos y enviar datos a un grupo de informes de Adobe Analytics.
-version: cloud-service
+version: Cloud Service
 topic: Integrations
 feature: Adobe Client Data Layer
 role: Developer
 level: Intermediate
 kt: 5332
 thumbnail: 5332-collect-data-analytics.jpg
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+exl-id: 33f2fd25-8696-42fd-b496-dd21b88397b2
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
 source-wordcount: '2375'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
-
 # Recopilación de datos de página con Adobe Analytics
 
-Aprenda a utilizar las funciones integradas de la [capa de datos del cliente de Adobe con AEM componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html) para recopilar datos sobre una página en Adobe Experience Manager Sites. [Experience Platform ](https://www.adobe.com/experience-platform/launch.html) Launch y la extensión de  [Adobe Analytics se ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html) utilizarán para crear reglas para enviar datos de página a Adobe Analytics.
+Aprenda a utilizar las funciones integradas de la [capa de datos del cliente de Adobe con AEM componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html) para recopilar datos sobre una página en Adobe Experience Manager Sites. [Experience Platform Launch y la extensión de Adobe Analytics se utilizarán para crear reglas para enviar datos de página a Adobe Analytics.](https://www.adobe.com/experience-platform/launch.html)[](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html)
 
 ## Qué va a generar
 
@@ -373,6 +373,6 @@ Ahora que la regla **Page Loaded** envía la señalización de Analytics, debe p
 
 Solo ha utilizado la capa de datos del cliente de Adobe impulsada por eventos y el Experience Platform Launch para recopilar datos de página de datos de un sitio AEM y enviarlos a Adobe Analytics.
 
-### Pasos siguientes
+### Siguientes pasos
 
 Consulte el siguiente tutorial para aprender a utilizar la capa de datos del cliente de Adobe impulsada por eventos para [rastrear clics de componentes específicos en un sitio de Adobe Experience Manager](track-clicked-component.md).

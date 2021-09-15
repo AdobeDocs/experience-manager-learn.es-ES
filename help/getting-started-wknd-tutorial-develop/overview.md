@@ -1,9 +1,9 @@
 ---
 title: 'Introducción a AEM Sites: Tutorial de WKND'
 description: 'Introducción a AEM Sites: Tutorial de WKND. El tutorial de WKND es un tutorial de varias partes diseñado para desarrolladores que no han llegado a Adobe Experience Manager. El tutorial recorre la implementación de un sitio AEM para una marca ficticia de estilo de vida, la WKND. El tutorial cubre temas fundamentales como la configuración del proyecto, los arquetipos de maven, los componentes principales, las plantillas editables, las bibliotecas de cliente y el desarrollo de componentes.'
-sub-product: sitios
+sub-product: sites
 topics: development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
@@ -11,18 +11,17 @@ KT: 4132
 mini-toc-levels: 1
 index: y
 thumbnail: 30476.jpg
-feature: Componentes principales, Editor de páginas, Plantillas editables, AEM tipo de archivo del proyecto
-topic: Gestión de contenido, desarrollo
+feature: Core Components, Page Editor, Editable Templates, AEM Project Archetype
+topic: Content Management, Development
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
+exl-id: 09a600f4-1ada-4fb7-ae44-586364cff389
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 4%
+source-wordcount: '619'
+ht-degree: 6%
 
 ---
-
 
 # Introducción a AEM Sites: Tutorial de WKND {#introduction}
 
@@ -69,6 +68,6 @@ Muchas de las imágenes del sitio web de referencia de WKND son de [Adobe Stock]
 
 Con Adobe Stock, usted tiene acceso a más de 140 millones de imágenes de alta calidad, libres de derechos de autor, incluyendo fotos, gráficos, videos y plantillas para iniciar sus proyectos creativos.
 
-## Pasos siguientes {#next-steps}
+## Siguientes pasos {#next-steps}
 
 ¡¿Qué estás esperando?! Obtenga información sobre cómo [generar un nuevo proyecto de Adobe Experience Manager mediante el tipo de archivo del proyecto AEM](./project-archetype/overview.md) o [crear un sitio con una plantilla de sitio](./site-template/create-site.md).

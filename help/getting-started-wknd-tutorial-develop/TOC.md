@@ -1,7 +1,7 @@
 ---
-sub-product: sitios
+sub-product: sites
 topics: development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
@@ -9,9 +9,9 @@ user-guide-title: 'Introducción a AEM Sites: Tutorial de WKND'
 user-guide-description: Un tutorial de varias partes para desarrolladores que van a usar AEM por primera vez. Implementar un sitio AEM para una marca ficticia de ropa, WKND.
 breadcrumb-title: Tutoriales de WKND de AEM Sites
 index: y
-source-git-commit: 3c9bff3238a057e976868c13ad185ea687600dea
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '73'
+source-wordcount: '72'
 ht-degree: 56%
 
 ---

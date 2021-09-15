@@ -1,21 +1,21 @@
 ---
 title: Modelado de datos avanzado con referencias de fragmento - Introducción a AEM sin encabezado - GraphQL
 description: Introducción a Adobe Experience Manager (AEM) y GraphQL. Aprenda a utilizar la función Referencia de fragmento para el modelado de datos avanzado y para crear una relación entre dos fragmentos de contenido diferentes. Aprenda a modificar una consulta de GraphQL para incluir el campo de un modelo al que se hace referencia.
-version: cloud-service
+version: Cloud Service
 mini-toc-levels: 1
 kt: 6718
 thumbnail: KT-6718.jpg
-feature: Fragmentos de contenido, API de GraphQL
-topic: Sin objetivos, Administración de contenido
+feature: Content Fragments, GraphQL API
+topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: d85b7ac3-42c1-4655-9394-29a797c0e1d7
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '854'
+source-wordcount: '847'
 ht-degree: 1%
 
 ---
-
 
 # Modelado de datos avanzado con referencias de fragmento
 
@@ -236,6 +236,6 @@ A continuación, actualice las consultas utilizadas por la aplicación React par
 
 Felicitaciones! Ha actualizado un modelo de fragmento de contenido existente para hacer referencia a un fragmento de contenido anidado mediante el campo **Referencia de fragmento**. También ha aprendido a modificar una consulta de GraphQL para incluir campos de un modelo al que se hace referencia.
 
-## Pasos siguientes {#next-steps}
+## Siguientes pasos {#next-steps}
 
 En el capítulo siguiente, [Implementación de producción mediante un entorno de AEM Publish](./production-deployment.md), obtenga información sobre los servicios de AEM Author y Publish y el patrón de implementación recomendado para aplicaciones sin periféricos. Actualizará una aplicación existente para utilizar variables de entorno para cambiar dinámicamente un extremo de GraphQL en función del entorno de destino. También aprenderá a configurar correctamente AEM para el uso compartido de recursos de origen cruzado (CORS).

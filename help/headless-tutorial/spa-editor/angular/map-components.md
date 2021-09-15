@@ -1,11 +1,11 @@
 ---
 title: Asignación de componentes de SPA a componentes de AEM | Introducción al Editor de SPA de AEM y al Angular
 description: Obtenga información sobre cómo asignar componentes de Angular a componentes de Adobe Experience Manager (AEM) con el SDK de JS de AEM Editor SPA. La asignación de componentes permite a los usuarios realizar actualizaciones dinámicas de los componentes de SPA dentro del AEM SPA Editor, de forma similar a la creación de AEM tradicional.
-sub-product: sitios
-feature: Editor SPA
+sub-product: sites
+feature: SPA Editor
 topics: development
 doc-type: tutorial
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 kt: 5311
@@ -13,13 +13,13 @@ thumbnail: 5311-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 19a8917c-a1e7-4293-9ce1-9f4c1a565861
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '2384'
+source-wordcount: '2380'
 ht-degree: 1%
 
 ---
-
 
 # Asignación de componentes de SPA a componentes de AEM {#map-components}
 
@@ -463,7 +463,7 @@ Enhorabuena, ha aprendido a asignar SPA componentes a AEM componentes y ha imple
 
 Siempre puede ver el código terminado en [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/map-components-solution) o extraer el código localmente cambiando a la rama `Angular/map-components-solution`.
 
-### Pasos siguientes {#next-steps}
+### Siguientes pasos {#next-steps}
 
 [Navegación y enrutamiento](navigation-routing.md) : Descubra cómo se pueden admitir varias vistas de la SPA asignando páginas AEM con el SDK del Editor de SPA. La navegación dinámica se implementa mediante el enrutador de Angular y se agrega a un componente de encabezado existente.
 

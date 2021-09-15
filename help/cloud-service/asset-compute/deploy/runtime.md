@@ -1,9 +1,9 @@
 ---
-title: Implementación de trabajadores de Asset Compute en Adobe I/O Runtime para su uso con AEM as a Cloud Service
-description: 'Los proyectos de Asset Compute y los trabajadores que contienen deben implementarse en Adobe I/O Runtime para que los use AEM as a Cloud Service. '
+title: Implementar trabajadores de Asset compute en Adobe I/O Runtime para utilizarlos con AEM como Cloud Service
+description: Los proyectos de asset compute, y los trabajadores que contienen, deben implementarse en Adobe I/O Runtime para que los utilice AEM como Cloud Service.
 feature: Asset Compute Microservices
 topics: renditions, development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
@@ -12,25 +12,24 @@ thumbnail: KT-6286.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 0327cf61-fd51-4fa7-856d-3febd49c01a0
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '648'
 ht-degree: 0%
 
 ---
 
-
 # Implementar en Adobe I/O Runtime
 
-Los proyectos de Asset Compute y los trabajadores que contienen deben implementarse en Adobe I/O Runtime mediante la CLI de Adobe I/O para que la utilice AEM as a Cloud Service.
+Los proyectos de asset compute, y los trabajadores que contienen, deben implementarse en Adobe I/O Runtime a través de la CLI de Adobe I/O para que los utilice AEM como Cloud Service.
 
-Al implementar en Adobe I/O Runtime para uso de AEM as a Cloud Service Author Services, solo se requieren dos variables de entorno:
+Al implementar en Adobe I/O Runtime para su uso por AEM como Cloud Service Author Services, solo se requieren dos variables de entorno:
 
-+ `AIO_runtime_namespace` señala el espacio de trabajo de Adobe Project Firefly que se va a implementar en
++ `AIO_runtime_namespace` señala el Adobe Project Firefly Workspace al que se va a implementar
 + `AIO_runtime_auth` son las credenciales de autenticación del espacio de trabajo de Adobe Project Firefly
 
-Las otras variables estándar definidas en el archivo `.env` son proporcionadas implícitamente por AEM as a Cloud Service cuando invoca el trabajador de Asset Compute.
+Las otras variables estándar definidas en el archivo `.env` son proporcionadas implícitamente por AEM como Cloud Service cuando invoca al trabajador del Asset compute.
 
 ## Espacio de trabajo de desarrollo
 
@@ -40,15 +39,15 @@ Dado que este proyecto se generó utilizando `aio app init` utilizando el espaci
 
 Para implementar en el espacio de trabajo, defina en el archivo `.env` de proyectos:
 
-1. Abra la línea de comandos en la raíz del proyecto Asset Compute.
+1. Abra la línea de comandos en la raíz del proyecto de Asset compute.
 1. Ejecute el comando `aio app deploy`
-1. Ejecute el comando `aio app get-url` para obtener la URL de trabajo para utilizarla en el perfil de procesamiento de AEM as a Cloud Service para hacer referencia a este trabajador personalizado de Asset Compute. Si el proyecto contiene varios trabajadores, se muestran las direcciones URL discretas para cada trabajador.
+1. Ejecute el comando `aio app get-url` para obtener la URL de trabajo para usar en el perfil de procesamiento de AEM as a Cloud Service para hacer referencia a este trabajador de Asset compute personalizado. Si el proyecto contiene varios trabajadores, se muestran las direcciones URL discretas para cada trabajador.
 
-Si los entornos de desarrollo de AEM as a Cloud Service utilizan implementaciones separadas de Asset Compute, las implementaciones en AEM as a Cloud Service Dev se pueden administrar del mismo modo que las implementaciones de [fase y producción](#stage-and-production).
+Si los entornos de desarrollo local y AEM como Cloud Service utilizan implementaciones de Asset compute independientes, las implementaciones en AEM como un Cloud Service Dev se pueden administrar del mismo modo que las [implementaciones de fase y producción](#stage-and-production).
 
 ## Espacios de trabajo de fase y producción{#stage-and-production}
 
-La implementación en los espacios de trabajo de fase y producción se realiza normalmente mediante el sistema de CI/CD que elija. El proyecto Asset Compute debe implementarse en cada espacio de trabajo (fase y producción) de forma discreta.
+La implementación en los espacios de trabajo de fase y producción se realiza normalmente mediante el sistema de CI/CD que elija. El proyecto de Asset compute debe implementarse en cada espacio de trabajo (fase y producción) de forma discreta.
 
 La configuración de variables de entorno verdaderas anula los valores de las variables con el mismo nombre en `.env`.
 
@@ -56,12 +55,12 @@ La configuración de variables de entorno verdaderas anula los valores de las va
 
 El enfoque general, normalmente automatizado por un sistema CI/CD, para la implementación en entornos de fase y producción es:
 
-1. Asegúrese de que el módulo [Adobe I/O CLI npm y el complemento Asset Compute](../set-up/development-environment.md#aio) estén instalados
-1. Consulte el proyecto de Asset Compute para implementar desde Git
+1. Asegúrese de que el módulo [Adobe I/O CLI npm y el complemento de Asset compute](../set-up/development-environment.md#aio) estén instalados
+1. Consulte el proyecto de Asset compute para implementar desde Git
 1. Establezca las variables de entorno con los valores que corresponden al espacio de trabajo de destino (fase o producción)
-   + Las dos variables requeridas son `AIO_runtime_namespace` y `AIO_runtime_auth` y se obtienen por espacio de trabajo en Adobe I/O Developer Console mediante la función __Descargar todo__ de Workspace.
+   + Las dos variables requeridas son `AIO_runtime_namespace` y `AIO_runtime_auth` y se obtienen por espacio de trabajo en Adobe I/O Developer Console mediante la función __Descargar todo__ del espacio de trabajo.
 
-![Adobe Developer Console: Espacio de nombres y autenticación en tiempo de ejecución de AIO](./assets/runtime/stage-auth-namespace.png)
+![Adobe Developer Console: espacio de nombres y autenticación en tiempo de ejecución de AIO](./assets/runtime/stage-auth-namespace.png)
 
 Los valores de estas claves se pueden configurar emitiendo comandos de exportación desde la línea de comandos:
 
@@ -70,17 +69,17 @@ $ export AIO_runtime_namespace=81368-wkndaemassetcompute-stage
 $ export AIO_runtime_auth=27100f9f-2676-4cce-b73d-b3fb6bac47d1:0tDu307W6MboQf5VWB1BAK0RHp8xWqSy1CQc3lKe7f63o3aNtAu0Y3nAmN56502W
 ```
 
-Si los trabajadores de Asset Compute requieren otras variables, como el almacenamiento en la nube, estas también deben exportarse como variables de entorno.
+Si los Assets computes requieren otras variables, como el almacenamiento en la nube, estas también deben exportarse como variables de entorno.
 
 1. Una vez que todas las variables de entorno estén configuradas para que el espacio de trabajo de destino implemente en, ejecute el comando deploy:
    + `aio app deploy`
-1. Las URL de trabajo a las que hace referencia el perfil de procesamiento de AEM as a Cloud Service también están disponibles mediante:
+1. Las URL de trabajo a las que hace referencia el AEM como perfil de procesamiento de Cloud Service también están disponibles mediante:
    + `aio app get-url`.
 
-Si la versión del proyecto de Asset Compute cambia, las direcciones URL de trabajo también cambian para reflejar la nueva versión y la URL deberá actualizarse en Perfiles de procesamiento.
+Si la versión del proyecto de Asset compute cambia, las direcciones URL de trabajo también cambian para reflejar la nueva versión y la URL deberá actualizarse en los perfiles de procesamiento.
 
 ## Aprovisionamiento de API de Workspace{#workspace-api-provisioning}
 
-Cuando [configuró el proyecto de Adobe Project Firefly en Adobe I/O](../set-up/firefly.md) para admitir el desarrollo local, se creó un nuevo espacio de trabajo de desarrollo y se agregaron __Asset Compute, I/O Events__ y __API de administración de eventos de E/S__.
+Cuando [configuró el proyecto de Adobe Firefly en Adobe I/O](../set-up/firefly.md) para admitir el desarrollo local, se creó un nuevo espacio de trabajo de desarrollo y se agregaron __Asset compute, eventos de E/S__ y __API de administración de eventos de E/S__.
 
-Las API __Asset Compute, I/O Events__ y __I/O Events Management API__ solo se agregan explícitamente a los espacios de trabajo utilizados para el desarrollo local. Los espacios de trabajo que se integran (exclusivamente) con entornos de AEM as a Cloud Service __no__ necesitan estas API explícitamente añadidas, ya que las API están disponibles de forma natural para AEM as a Cloud Service.
+Las API de __Asset compute, eventos de E/S__ y __API de administración de eventos de E/S__ solo se agregan explícitamente a los espacios de trabajo utilizados para el desarrollo local. Los espacios de trabajo que se integran (exclusivamente) con AEM como entornos de Cloud Service __no__ necesitan estas API explícitamente agregadas, ya que las API están disponibles de forma natural para AEM como Cloud Service.
