@@ -1,7 +1,7 @@
 ---
 title: Integración de Adobe Experience Manager Forms como Cloud Service con Adobe Sign
 description: Vídeo introductorio al curso sobre la integración de Forms CS con Adobe Sign
-solution: Experience Manager Forms
+solution: Experience Manager,Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -11,7 +11,7 @@ topic: Development
 kt: 7578
 thumbnail: 332706.jpg
 exl-id: bc66c8fb-d1ce-47dc-af6d-dda0c37347e4
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 2f619bc6ebaae36c8b9d05d8c4ff5c1cc8c18332
 workflow-type: tm+mt
 source-wordcount: '25'
 ht-degree: 0%
