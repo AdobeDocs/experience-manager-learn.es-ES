@@ -4,10 +4,10 @@ user-guide-description: Una recopilación de tutoriales de Adobe Experience Mana
 breadcrumb-title: Tutoriales de AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: 4c9d836881ad7cccd31c55fa5eddc24dff1200cd
+source-git-commit: f22a37f80a9c9698718e1c75576b7ca705e658fc
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 21%
+source-wordcount: '560'
+ht-degree: 23%
 
 ---
 
@@ -89,6 +89,24 @@ ht-degree: 21%
 + Migración {#migration}
    + [Herramienta de transferencia de contenido](./migration/content-transfer-tool.md)
    + [Importación masiva de recursos](./migration/bulk-import.md)
+
+   + El paso de AEM as a Cloud Service {#moving-to-aem-as-a-cloud-service}
+      + [Introducción](./migration/moving-to-aem-as-a-cloud-service/introduction.md)
+      + [BPA y CAM](./migration/moving-to-aem-as-a-cloud-service/bpa-and-cam.md)
+      + [AEM Herramientas de modernización](./migration/moving-to-aem-as-a-cloud-service/aem-modernization-tools.md)
+      + [Modernización del repositorio](./migration/moving-to-aem-as-a-cloud-service/repository-modernization.md)
+      + [Incorporación](./migration/moving-to-aem-as-a-cloud-service/onboarding.md)
+      + [Cloud Manager](./migration/moving-to-aem-as-a-cloud-service/cloud-manager.md)
+      + [Dispatcher](./migration/moving-to-aem-as-a-cloud-service/dispatcher.md)
+      + Migración de contenido {#content-migration}
+         + [Servicio de importación masiva](./migration/moving-to-aem-as-a-cloud-service/content-migration/bulk-import-service.md)
+         + [Herramienta de transferencia de contenido](./migration/moving-to-aem-as-a-cloud-service/content-migration/content-transfer-tool.md)
+      + [Buscar e indexar](./migration/moving-to-aem-as-a-cloud-service/search-and-indexing.md)
+      + [Microservicios de asset compute](./migration/moving-to-aem-as-a-cloud-service/asset-compute-microservices.md)
+      + AEM Forms como Cloud Service {#aem-forms}
+         + [Introducción](./migration/moving-to-aem-as-a-cloud-service/aem-forms/introduction.md)
+         + [Inscripción digital](./migration/moving-to-aem-as-a-cloud-service/aem-forms/digital-enrollment.md)
+         + [Comunicaciones](./migration/moving-to-aem-as-a-cloud-service/aem-forms/communications.md)
    + Cloud Acceleration Manager {#cloud-acceleration-manager}
       + [Introducción](./migration/cloud-acceleration-manager/introduction.md)
       + [Analizador de preparación y prácticas recomendadas](./migration/cloud-acceleration-manager/readiness-and-best-practice-analyzer.md)
