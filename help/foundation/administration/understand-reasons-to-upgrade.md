@@ -1,21 +1,21 @@
 ---
 title: Comprender las razones para actualizar
-description: Un desglose de alto nivel de las funciones clave para los clientes que se plantean actualizar a la última versión de Adobe Experience Manager.
+description: Un desglose de alto nivel de las funciones clave para los clientes que se plantean actualizar a la última versión de Adobe Experience Manager 6.
 version: 6.5
 topic: Upgrade
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+exl-id: bf4030b0-67c4-4b00-af95-f63e6f79e995
+source-git-commit: 278433e7d9a2d524198efcebae336dca01a15259
 workflow-type: tm+mt
 source-wordcount: '3462'
 ht-degree: 3%
 
 ---
 
-
 # Explicación de las razones para la actualización
 
-Un desglose de alto nivel de las funciones clave para los clientes que se plantean actualizar a la última versión de Adobe Experience Manager.
+Un desglose de alto nivel de las funciones clave para los clientes que se plantean actualizar a la última versión de Adobe Experience Manager 6.
 
 ## Funciones principales para la actualización a AEM 6.5
 
@@ -317,7 +317,7 @@ A continuación se muestra una matriz de funciones de seguridad clave que ofrece
     </tr>
     <tr>
         <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/csrf-protection.html" target="_blank"><strong></strong> <strong></strong></a>
-            <br> CSRFprotectionProtección contra falsificaciones de solicitudes entre sitios fuera de la caja.</td>
+            <br> CSRFprotectionProtección de falsificación de solicitud entre sitios fuera de la caja.</td>
         <td></td>
         <td></td>
         <td>š</td>
@@ -406,8 +406,8 @@ A continuación se muestra una matriz de funciones de seguridad clave que ofrece
         <td>š</td>
     </tr>
     <tr>
-        <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ims-config-and-admin-console.html" target="_blank">Compatibilidad con la autenticación IMS de AdobeExclusivo para Adobe Managed Services (AMS), administre de forma centralizada el acceso a las instancias de AEM Author a través de Adobe IMS (Identity Management System). </a><br>
- </strong></td>
+        <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ims-config-and-admin-console.html" target="_blank">Compatibilidad con la autenticación IMS de Adobe </a><br>
+ </strong>Exclusivo para Adobe Managed Services (AMS), administre de forma centralizada el acceso a las instancias de AEM Author a través de Adobe IMS (Identity Management System).</td>
         <td> </td>
         <td> </td>
         <td> </td>
@@ -714,8 +714,8 @@ A continuación se muestra una matriz de las funciones clave de Assets que ofrec
             <td>✓<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/task-content.html" target="_blank"></a> Administración de  <a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects-with-workflows.html" target="_blank"></a> tareas y flujos de trabajo:</strong>
-            flujos de trabajo y tareas pregenerados para la revisión y aprobación de recursos digitales aprovechando AEM proyectos.</td>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/task-content.html" target="_blank"></a> Administración de  <a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects-with-workflows.html" target="_blank"></a> flujos de trabajo y tareas:</strong>
+             flujos de trabajo y tareas pregenerados para la revisión y aprobación de recursos digitales aprovechando AEM proyectos.</td>
             <td> </td>
             <td>š</td>
             <td>š</td>
@@ -847,8 +847,8 @@ A continuación se muestra una matriz de las funciones clave de Assets que ofrec
             <td>✓<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/imaging-transcoding-library.html" target="_blank">Biblioteca de imágenes de Adobe</a>:</strong>
-                <br> bibliotecas PDF de Photoshop y Acrobat utilizadas para la manipulación de archivos de alta calidad.</td>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/imaging-transcoding-library.html" target="_blank">Biblioteca de imágenes de Adobe</a>: </strong>
+                <br> bibliotecas de PDF de Photoshop y Acrobat utilizadas para la manipulación de archivos de alta calidad.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -907,10 +907,10 @@ A continuación se muestra una matriz de las funciones clave de Assets que ofrec
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets.html" target="_blank">Imágenes</a>:</strong>
             distribuya de forma dinámica imágenes en diferentes tamaños y formatos, incluido el Recorte inteligente.</td>
             <td> </td>
-            <td>š</td>
-            <td>š</td>
-            <td>š</td>
-            <td>✓<sup>+</sup></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
             <td>✓<sup>+</sup></td>
             <td>š</td>
         </tr>
@@ -1154,7 +1154,7 @@ A continuación se muestra una matriz de las funciones clave del complemento de 
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/aem-forms/6-5/whats-new.html#EnhancedDocumentSecurity" target="_blank">AEM Forms Document Security</a>:</strong>
-            Acceso seguro y autorización de documentos PDF y Office.
+            Acceso seguro y autorización de documentos de PDF y de Office.
             </td>
             <td> </td>
             <td>š</td>
@@ -1292,7 +1292,7 @@ A continuación se muestra una matriz de las funciones clave del complemento de 
         </tr>
         <tr>
             <td rowspan="5">Habilitación</td>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/catalog.html" target="_blank"></a> Administración de  <a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/resource.html" target="_blank">recursos y catálogos</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/catalog.html" target="_blank"></a> Gestión de  <a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/resource.html" target="_blank">recursos y catálogos</a>:</strong>
              Acceda a los recursos de habilitación desde el catálogo.</td>
             <td> </td>
             <td>✓<sup>+</sup></td>
@@ -1537,7 +1537,7 @@ A continuación se muestra una matriz de las funciones clave del complemento de 
             <td>š</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/activities.html" target="_blank"></a> Actividades y  <a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/notifications.html" target="_blank">notificaciones</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/activities.html" target="_blank"></a> Actividades y  <a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/notifications.html" target="_blank">notificaciones</a>: </strong>
             vea el flujo de actividades recientes y obtenga notificaciones sobre eventos de interés.</td>
             <td> </td>
             <td> </td>
