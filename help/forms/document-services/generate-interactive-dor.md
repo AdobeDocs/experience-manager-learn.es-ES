@@ -6,10 +6,11 @@ feature: Forms Service
 topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 72a9edb3edc73cf14f13bb53355a37e707ed4c79
+kt: 9226
+source-git-commit: 2ed78bb8b122acbe69e98d63caee1115615d568f
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 0%
+source-wordcount: '357'
+ht-degree: 1%
 
 ---
 
@@ -20,18 +21,21 @@ Un caso de uso común es poder descargar un DoR interactivo con los datos del Fo
 
 Para lograr este caso de uso necesitamos hacer lo siguiente
 
-## Generar datos de ejemplo para el xdp
+## Generar datos de ejemplo para el XDP
 
-Abra el XDP en AEM Forms designer.
-Haga clic en Archivo | Propiedades del formulario | Vista previa Haga clic en Generar datos de vista previa Haga clic en Generar Proporcione un nombre de archivo significativo como &quot;form-data.xml&quot;
+* Abra el XDP en AEM Forms designer.
+* Haga clic en Archivo | Propiedades del formulario | Vista previa
+* Haga clic en Generar datos de vista previa
+* Haga clic en Generar
+* Proporcionar un nombre de archivo significativo como &quot;form-data.xml&quot;
 
 ## Generar XSD a partir de los datos xml
 
-Puede utilizar cualquiera de las herramientas gratuitas en línea para [generar xsd](https://www.freeformatter.com/xsd-generator.html) a partir de los datos xml generados en el paso anterior.
+Puede utilizar cualquiera de las herramientas gratuitas en línea para [generar XSD](https://www.freeformatter.com/xsd-generator.html) a partir de los datos xml generados en el paso anterior.
 
-## Crear adaptable
+## Crear formulario adaptable
 
-Cree un formulario adaptable basado en el xsd del paso anterior. Asocie el formulario para utilizar el cliente lib &quot;irs&quot;. Esta biblioteca de cliente tiene el código para realizar una llamada de POST al servlet que devuelve el PDF a la aplicación que realiza la llamada. El siguiente código se activa cuando la variable _Descargar PDF_ se hace clic
+Cree un formulario adaptable basado en el XSD del paso anterior. Asocie el formulario para utilizar el cliente lib &quot;irs&quot;. Esta biblioteca de cliente tiene el código para realizar una llamada de POST al servlet que devuelve el PDF a la aplicación que realiza la llamada. El siguiente código se activa cuando la variable _Descargar PDF_ se hace clic
 
 ```javascript
 $(document).ready(function() {
@@ -72,7 +76,7 @@ $(document).ready(function() {
 
 ## Crear servlet personalizado
 
-Cree un servlet personalizado que combine los datos con la plantilla xdp y devuelva el pdf. El código para lograr esto se enumera a continuación. El servlet personalizado forma parte del [Paquete AEMFormsDocumentServices.core-1.0-SNAPSHOT](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)).
+Cree un servlet personalizado que combine los datos con la plantilla XDP y devuelva el pdf. El código para lograr esto se enumera a continuación. El servlet personalizado forma parte del [Paquete AEMFormsDocumentServices.core-1.0-SNAPSHOT](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)).
 
 ```java
 package com.aemformssamples.documentservices.core.servlets;
@@ -191,13 +195,16 @@ public class GenerateIInteractiveDor extends SlingAllMethodsServlet {
 En el código de muestra, el nombre de la plantilla (f8918-r14e_redo-barcode_3 2.xdp) está codificado de forma rígida. Puede pasar fácilmente el nombre de la plantilla al servlet para que este código sea genérico y funcione con todas las plantillas.
 
 
+## Implementar el ejemplo en el servidor
+
 Para probar esto en el servidor local, siga los siguientes pasos:
+
 1. [Descargar e instalar el paquete DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 1. Añada la siguiente entrada en el servicio MAPA de usuario del servicio Apache Sling DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
 1. [Descargar e instalar el paquete personalizado de DocumentServices](/hep/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar). Esto tiene el servlet para combinar los datos con la plantilla XDP y transmitir el pdf hacia atrás
 1. [Importar la biblioteca del cliente](assets/irs.zip)
 1. [Importar el formulario adaptable](assets/f8918complete.zip)
-!. [Importación del esquema y la plantilla XDP](assets/xdp-template-and-xsd.zip)
+1. [Importación del esquema y la plantilla XDP](assets/xdp-template-and-xsd.zip)
 1. [Vista previa del formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/f8918complete/jcr:content?wcmmode=disabled)
 1. Rellene algunos campos del formulario
 1. Haga clic en Descargar PDF para obtener el PDF
