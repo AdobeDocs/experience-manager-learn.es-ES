@@ -2,10 +2,10 @@
 title: Serie de expertos de Adobe Experience Manager as a Cloud Service
 description: Obtenga información sobre Adobe Experience Manager (AEM) as a Cloud Service de los propios ingenieros expertos del Adobe que lo construyen y los servicios profesionales que lo ofrecen.
 sub-product: sites, cloud-manager, assets
-source-git-commit: 5b3dd38d1fa2e3c35bfa2a867f51c7295907ecc7
+source-git-commit: 1e52e29051e219c4cd5ea83e2325fdae62ff833a
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 4%
+source-wordcount: '705'
+ht-degree: 3%
 
 ---
 
@@ -177,6 +177,43 @@ Conozca las funcionalidades únicas de AEM as a Cloud Service de los expertos de
       <p>
         <br/>
         Obtenga información sobre los microservicios de Asset compute de AEM Assets, cómo sustituyen AEM procesamiento de recursos 6 y cómo se pueden ampliar para generar representaciones de recursos personalizadas.
+      </p>
+   </td>   
+   <td>
+      <a href="./migration/moving-to-aem-as-a-cloud-service/content-migration/bulk-import-service.md" target="_aem-experts-series-video">
+      <img alt="Importación masiva de contenido" src="./assets/experts-series/bulk-import.png"/>
+      </a>
+      <div>
+         <a href="./migration/moving-to-aem-as-a-cloud-service/content-migration/bulk-import-service.md" target="_aem-experts-series-video"><strong>Importación masiva de contenido</strong></a>
+         <br/><em>con Kiran Murugulla, arquitecto sénior de la nube</em>
+      </div>
+      <p>
+        <br/>
+        Obtenga información sobre cómo importar contenido de forma segura y eficaz de forma masiva a AEM as a Cloud Service mediante el servicio de importación masiva y el administrador de paquetes de AEM.
+      </p>
+   </td> 
+    <td></td>
+  </tr>
+</table>
+
+## ¿Necesita ayuda con AEM como Cloud Services?
+
+Obtenga información sobre cómo depurar y solucionar problemas AEM as a Cloud Service y el SDK de AEM de los expertos.
+
+<table>
+  <tr>
+   <td>
+      <a href="./migration/moving-to-aem-as-a-cloud-service/troubleshooting.md" target="_aem-experts-series-video">
+      <img alt="Solución de problemas AEM as a Cloud Service" src="./assets/experts-series/troubleshooting.png"/>
+      </a>
+      <div>
+         <a href="/migration/moving-to-aem-as-a-cloud-service/troubleshooting.md" 
+         target="_aem-experts-series-video"><strong>Solución de problemas AEM as a Cloud Service</strong></a>
+         <br/><em>con Kunwar Saluja, arquitecto de la nube</em>
+      </div>
+      <p>
+        <br/>
+        Obtenga información sobre cómo solucionar problemas relacionados con varios aspectos de AEM as a Cloud Service, que van desde la depuración del SDK de AEM y los AEM as a Cloud Service hasta los errores de compilación e implementación de Cloud Manager.
       </p>
    </td>   
     <td></td>
