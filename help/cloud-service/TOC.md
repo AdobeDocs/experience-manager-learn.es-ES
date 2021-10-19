@@ -4,10 +4,10 @@ user-guide-description: Una recopilación de tutoriales de Adobe Experience Mana
 breadcrumb-title: Tutoriales de AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: 5452ab85523fc10d0aaa55e95d42c37ec33fd2ed
+source-git-commit: bec04e6db13b80a8b5c4caa91acb8f2e684e70e9
 workflow-type: tm+mt
-source-wordcount: '564'
-ht-degree: 23%
+source-wordcount: '567'
+ht-degree: 24%
 
 ---
 
@@ -67,7 +67,7 @@ ht-degree: 23%
    + Avanzado {#advanced}
       + [Usuarios de servicio](./developing/advanced/service-users.md)
    + [API de SDK de AEM JavaDocs](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html)
-+ Depuración AEM{#debugging}
++ AEM de depuración{#debugging}
    + Depuración del SDK de AEM{#debugging-aem-sdk}
       + [Información general](./debugging/aem-sdk-local-quickstart/overview.md)
       + [Registros](./debugging/aem-sdk-local-quickstart/logs.md)
@@ -170,7 +170,7 @@ ht-degree: 23%
          + [Evento de clic de prueba](./forms/integrate-with-salesforce/create-lead-click-event.md)
 + Extensibilidad de asset compute{#asset-compute}
    + [Información general](./asset-compute/overview.md)
-   + Configurar{#set-up}
+   + Configuración{#set-up}
       + [Aprovisionamiento de cuentas y servicios](./asset-compute/set-up/accounts-and-services.md)
       + [Entorno de desarrollo local](./asset-compute/set-up/development-environment.md)
       + [Luciérnagas del proyecto Adobe](./asset-compute/set-up/firefly.md)
@@ -180,7 +180,7 @@ ht-degree: 23%
       + [Configurar manifest.yml](./asset-compute/develop/manifest.md)
       + [Desarrollo de un trabajador](./asset-compute/develop/worker.md)
       + [Uso de la herramienta de desarrollo](./asset-compute/develop/development-tool.md)
-   + Probar y depurar{#test-debug}
+   + Prueba y depuración{#test-debug}
       + [Probar un trabajador](./asset-compute/test-debug/test.md)
       + [Depurar un trabajador](./asset-compute/test-debug/debug.md)
    + Implementar{#deploy}
@@ -189,8 +189,9 @@ ht-degree: 23%
    + Avanzado {#advanced}
       + [Trabajadores de metadatos](./asset-compute/advanced/metadata.md)
    + [Solución de problemas](./asset-compute/troubleshooting.md)
++ [AEM serie de expertos](./aem-experts-series.md)
 + Tutorials de varios pasos{#multi-step-tutorials}
-   + [Desarrollo de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+   + [Desarrollo de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es)
    + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)
    + [SPA Editor (React)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
    + [SPA Editor (Angular)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/overview.html)
