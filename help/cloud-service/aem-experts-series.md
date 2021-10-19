@@ -2,7 +2,7 @@
 title: Serie de expertos de Adobe Experience Manager as a Cloud Service
 description: Obtenga información sobre Adobe Experience Manager (AEM) as a Cloud Service de los propios ingenieros expertos del Adobe que lo construyen y los servicios profesionales que lo ofrecen.
 sub-product: sites, cloud-manager, assets
-source-git-commit: bec04e6db13b80a8b5c4caa91acb8f2e684e70e9
+source-git-commit: 5b3dd38d1fa2e3c35bfa2a867f51c7295907ecc7
 workflow-type: tm+mt
 source-wordcount: '592'
 ht-degree: 4%
@@ -179,5 +179,7 @@ Conozca las funcionalidades únicas de AEM as a Cloud Service de los expertos de
         Obtenga información sobre los microservicios de Asset compute de AEM Assets, cómo sustituyen AEM procesamiento de recursos 6 y cómo se pueden ampliar para generar representaciones de recursos personalizadas.
       </p>
    </td>   
+    <td></td>
+    <td></td>
   </tr>
 </table>
