@@ -5,9 +5,9 @@ user-guide-title: Vídeos y tutoriales de AEM Forms
 user-guide-description: Recopilación de recursos de AEM Forms para principiantes y desarrolladores experimentados de AEM Forms.
 breadcrumb-title: Tutoriales de AEM Forms
 index: y
-source-git-commit: e01d93591d1c00b2abec3430fdfa695b32165e54
+source-git-commit: 72a9edb3edc73cf14f13bb53355a37e707ed4c79
 workflow-type: tm+mt
-source-wordcount: '1601'
+source-wordcount: '1607'
 ht-degree: 3%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 3%
 + [Información general](overview.md)
 + [Prácticas recomendadas a seguir](adaptive-forms/best-practices-adaptive-forms.md)
 + [Configuración de la autenticación OKTA con AEM Author](adaptive-forms/single-sign-on-with-okta.md)
-+ Creación del primer formulario adaptable {#creating-your-first-adaptive-form}
++ Creación de su primer formulario adaptable {#creating-your-first-adaptive-form}
    + [Introducción y configuración](creating-your-first-adaptive-form/introduction-and-setup.md)
    + [Crear plantilla de formulario adaptable](creating-your-first-adaptive-form/create-adaptive-form-template.md)
    + [Crear fragmento de formulario](creating-your-first-adaptive-form/create-form-fragment.md)
@@ -40,7 +40,7 @@ ht-degree: 3%
 + Integraciones útiles{#some-useful-integrations}
    + [Dos factores de autenticación](some-useful-integrations/two-factor-authentication.md)
    + [Extracción de datos de OCR](some-useful-integrations/ocr-data-extraction.md)
-+ Creación del paquete OSGi {#creating-your-first-osgi-bundle}
++ Creación de un paquete OSGi {#creating-your-first-osgi-bundle}
    + [Configuración del entorno](creating-your-first-osgi-bundle/create-your-first-osgi-bundle.md)
    + [Creación del servicio OSGi](creating-your-first-osgi-bundle/create-osgi-service.md)
    + [Crear Servlet Sling](creating-your-first-osgi-bundle/create-servlet.md)
@@ -86,7 +86,7 @@ ht-degree: 3%
    + [Creación de modelos de flujo de trabajo reutilizables](adaptive-forms/re-usable-aem-forms-workflow-models-article.md)
    + [Paso de proceso personalizado AEM flujo de trabajo](adaptive-forms/custom-process-step-aem-workflow.md)
    + [Modificar la configuración de la fuente de datos](adaptive-forms/modify-data-source-configuration-settings-article.md)
-   + [Rellenado previo de HTML5 Forms](adaptive-forms/prepopulating-html5-forms-in-aem-forms-article.md)
+   + [HTML de cumplimentación previa5 Forms](adaptive-forms/prepopulating-html5-forms-in-aem-forms-article.md)
    + [Modelo de datos de formulario con Salesforce](adaptive-forms/using-adaptive-forms-with-sales-force-integration-tutorial.md)
    + [Adición dinámica de elementos al componente de opciones](adaptive-forms/choice-group-items-adding-dynamically-article.md)
 + Rellenado previo de formularios adaptables mediante el modelo de datos de formulario{#prefill-fdm-db}
@@ -104,7 +104,7 @@ ht-degree: 3%
    + [Archivos adjuntos de formulario zip](zipping-form-attachments/custom-process-step.md)
    + [Archivos adjuntos de formulario de correo electrónico](zipping-form-attachments/populating-list-of-documents.md)
    + [Probar la solución](zipping-form-attachments/test.md)
-+ Almacenamiento y recuperación del formulario adaptable{#store-and-retrieve-af-with-2fa}
++ Almacenamiento y recuperación de formularios adaptables{#store-and-retrieve-af-with-2fa}
    + [Introducción](store-and-retrieve-af-with-2fa/introduction.md)
    + [Configurar fuentes de datos](store-and-retrieve-af-with-2fa/configure-data-source.md)
    + [Almacenar archivos adjuntos de formulario](store-and-retrieve-af-with-2fa/store-form-attachments.md)
@@ -119,8 +119,8 @@ ht-degree: 3%
 + Exportación de datos enviados en formato CSV{#export-submitted-data-csv-format}
    + [Exportar datos enviados](export-submitted-data-csv-format/export-submitted-data-csv.md)
 + Formularios HTML5{#html5-forms}
-   + [Crear formulario HTML5](html5-forms/create-html5-form.md)
-   + [Gestión del envío de formularios HTML5](html5-forms/handle-html5-form-submission.md)
+   + [Crear formulario de HTML 5](html5-forms/create-html5-form.md)
+   + [Gestión del envío de formulario del HTML 5](html5-forms/handle-html5-form-submission.md)
 + AEM Forms y Adobe Sign{#forms-and-sign}
    + [Introducción](aem-forms-and-adobe-sign/introduction.md)
    + [Configuración de SSL](aem-forms-and-adobe-sign/set-up-ssl.md)
@@ -131,7 +131,7 @@ ht-degree: 3%
    + [Configuración del formulario adaptable para un único firmante](aem-forms-and-adobe-sign/configure-adaptive-form-for-single-signer.md)
    + [Configuración del formulario adaptable para dos firmantes](aem-forms-and-adobe-sign/configure-adaptive-form-for-two-signers.md)
    + [Configuración del servicio de Automated forms conversion](aem-forms-and-adobe-sign/configure-automated-forms-conversion-service.md)
-   + [Convertir formulario PDF en formulario adaptable](aem-forms-and-adobe-sign/convert-pdf-form-into-adaptive-form.md)
+   + [Convertir formulario de PDF en formulario adaptable](aem-forms-and-adobe-sign/convert-pdf-form-into-adaptive-form.md)
    + [Configurar formulario adaptable convertido](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
    + [Uso de plantillas XDP con Adobe Sign](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
 + Firmar varios Forms{#sign-multiple-documents}
@@ -165,8 +165,8 @@ ht-degree: 3%
 + Activación AEM flujo de trabajo desde el envío de formulario móvil{#offline-mobile-form-submission}
    + [Introducción](offline-mobile-form-submission/introduction.md)
    + [Perfil personalizado](offline-mobile-form-submission/part-one.md)
-   + [Gestión del envío de PDF](offline-mobile-form-submission/part-two.md)
-   + [Flujo de trabajo para revisar PDF](offline-mobile-form-submission/part-three.md)
+   + [Gestión del envío del PDF](offline-mobile-form-submission/part-two.md)
+   + [Flujo de trabajo para revisar el PDF](offline-mobile-form-submission/part-three.md)
    + [Implementar en el sistema](offline-mobile-form-submission/part-four.md)
 + Consulta de datos enviados{#querying-submitted-data}
    + [Introducción](querying-submitted-data/introduction.md)
@@ -177,7 +177,7 @@ ht-degree: 3%
 + Listado de tipos de recursos personalizados en Forms Portal{#listing-custom-asset-types}
    + [Parte 1: Registro de tipos de recursos personalizados](listing-custom-asset-types/part1.md)
    + [Parte 2: Creación de una plantilla personalizada](listing-custom-asset-types/part2.md)
-+ AEM Forms con Marketo{#aem-forms-with-marketo}
++ AEM Forms Con Marketo{#aem-forms-with-marketo}
    + [Parte 1 - Introducción](aem-forms-with-marketo/part1.md)
    + [Parte 2: Autenticación personalizada](aem-forms-with-marketo/part2.md)
    + [Parte 3: Fuente de datos](aem-forms-with-marketo/part3.md)
@@ -200,8 +200,9 @@ ht-degree: 3%
    + [Generación de varios archivos pdf a partir de un archivo de datos](document-services/generate-multi-record-pdf.md)
    + [Generar PDF en envío de formulario móvil](document-services/generate-pdf-from-mobile-form-submission-article.md)
    + [Generar PDF interactivo a partir de formulario móvil](document-services/render-interactive-form-using-api.md)
+   + [Generar DoR interactivo a partir de formulario adaptable](document-services/generate-interactive-dor.md)
    + [Configuración de la credencial de extensiones de Reader](document-services/configuring-reader-extension-osgi.md)
-   + [Aplicar derechos de uso a PDF en una representación XDP](document-services/rendering-and-reader-extending-xdp-templates-article.md)
+   + [Aplicar derechos de uso al PDF en la representación XDP](document-services/rendering-and-reader-extending-xdp-templates-article.md)
    + [Aplicar derechos de uso al PDF cargado](document-services/apply-reader-extension-rights-to-pdf.md)
    + [Certificar documentos](document-services/certifying-documents-aem-forms-tutorial.md)
    + [Ensamblar archivos adjuntos de formulario](document-services/assemble-form-attachments.md)
@@ -265,7 +266,7 @@ ht-degree: 3%
    + [PDFG: Pasos para comprobar e instalar bibliotecas de 32 bits y sus dependencias](troubleshooting/steps-to-check-and-install-32-bit-libraries-and-their-dependencies.md)
    + [PDFG: Pasos para comprobar el permiso de las carpetas en windows server 2016](troubleshooting/steps-to-check-folder-permission-on-windows-server-2016.md)
    + [PDFG: Pasos para habilitar el espacio en unix](troubleshooting/steps-to-enable-strace-on-unix-setup.md)
-   + [PDFG: Pasos para instalar los redistribuibles de Microsoft Visual C++ de 32 bits necesarios](troubleshooting/steps-to-install-required-32bit-microsoft-vc-redistributables.md)
+   + [PDFG: Pasos para instalar los redistribuibles Microsoft Visual C++ de 32 bits necesarios](troubleshooting/steps-to-install-required-32bit-microsoft-vc-redistributables.md)
    + [PDFG: Pasos para ejecutar e interpretar la salida de la herramienta de preparación del sistema](troubleshooting/steps-to-run-and-interpret-output-of-system-readiness-tool.md)
    + [PDFG: Pasos para solucionar problemas específicos de acrobat](troubleshooting/steps-to-troubleshoot-acrobat-specific-issues.md)
    + [PDFG: Pasos para solucionar problemas de HtmltoPDF en windows](troubleshooting/steps-to-troubleshoot-htmltopdf-issues-on-windows.md)
@@ -284,8 +285,8 @@ ht-degree: 3%
    + [Workbench: Cómo modificar los parámetros de memoria de Workbench](troubleshooting/how-to-tweak-workbench-memory-parameters.md)
    + [Workbench: Cómo modificar los parámetros de rendimiento de Workbench](troubleshooting/how-to-tweak-workbench-performance-parameters.md)
    + [Designer: Dependencia de Designer en redistribuible C++](troubleshooting/dependency-of-vc-on-designer.md)
-   + [Designer: Habilitación de la vista previa HTML](troubleshooting/how-to-enable-html-preview.md)
-   + [Designer: Habilitación de la vista previa de PDF](troubleshooting/how-to-enable-pdf-preview.md)
+   + [Designer: Habilitación de la vista previa del HTML](troubleshooting/how-to-enable-html-preview.md)
+   + [Designer: Habilitación de la vista previa del PDF](troubleshooting/how-to-enable-pdf-preview.md)
    + [Designer: Instalación de parches de Designer](troubleshooting/how-to-install-designer-patches.md)
    + [JEE Foundation: Cambio del valor de entropy](troubleshooting/how-to-change-the-value-of-entropy.md)
    + [JEE Foundation: Cambio del tiempo de espera de transacción de cualquier servicio en AEM Forms JEE](troubleshooting/how-to-change-transaction-timeout-of-any-service-in-aem-forms-jee.md)
@@ -302,7 +303,7 @@ ht-degree: 3%
    + [General: Captura de volcados de subprocesos de una JVM en un servidor unix](troubleshooting/how-to-capture-thread-dumps-of-a-jvm-on-a-unix-server.md)
    + [General: Captura de volcados de subprocesos de una JVM en un servidor Windows](troubleshooting/how-to-capture-thread-dumps-of-a-jvm-on-a-windows-server.md)
    + [General: Cómo generar un certificado autofirmado](troubleshooting/how-to-generate-a-self-signed-certificate.md)
-   + [General: Llamada de servicio web desde formulario HTML5](troubleshooting/how-to-make-web-service-call-from-html5-form.md)
+   + [General: Llamada de servicio web desde el formulario HTML5](troubleshooting/how-to-make-web-service-call-from-html5-form.md)
    + [General: Pasos para habilitar el registro de depuración para cualquier clase en AEM Forms OSGI](troubleshooting/steps-to-enable-debug-logging-for-any-classes-in-aem-forms-osgi.md)
    + [General: Pasos para habilitar el registro de depuración para cualquier clase en el servidor de aplicaciones JBOSS](troubleshooting/steps-to-enable-debug-logging-for-any-classes-in-jboss-application-server.md)
    + [General: Pasos para habilitar el registro de depuración para cualquier clase en el servidor de aplicaciones de Websphere](troubleshooting/steps-to-enable-debug-logging-for-any-classes-in-websphere-application-server.md)
