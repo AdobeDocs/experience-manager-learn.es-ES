@@ -3,10 +3,10 @@ user-guide-title: Vídeos y tutoriales de AEM Sites
 user-guide-description: Una colección de vídeos y tutoriales para Adobe Experience Manager Sites.
 breadcrumb-title: Tutoriales de AEM Sites
 feature-set: Experience Manager, Experience Manager Sites
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: 5bdff2eafaa28aff722b12607b1278539072be62
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 22%
+source-wordcount: '441'
+ht-degree: 24%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 22%
    + [Fragmentos de contenido vs. Fragmentos de experiencias](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
 + Desarrollo de {#developing}
    + [Tipo de archivo del proyecto AEM](developing/aem-project-archetype.md)
-   + [Introducción a AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+   + [Introducción a AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es)
    + [Introducción a AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
    + [Introducción a AEM Editor de SPA y React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
    + [Introducción a AEM Editor de SPA y Angular](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html)
@@ -64,6 +64,8 @@ ht-degree: 22%
    + [Configuración de fragmentos de experiencias y Adobe Target](personalization/experience-fragment-target-technical-video-setup.md)
    + [Uso de fragmentos de experiencias con Adobe Target](personalization/experience-fragment-target-offer-feature-video-use.md)
    + [Configuración de ContextHub](personalization/context-hub-technical-video-setup.md)
++ SEO {#seo}
+   + [Mapas del sitio](./seo/sitemaps.md)
 + Aplicaciones de una sola página {#spa-editor}
    + [Uso del SPA Editor](spa-editor/spa-editor-framework-feature-video-use.md)
    + [Tutorial Hello World](spa-editor/spa-editor-helloworld-tutorial-use.md)
