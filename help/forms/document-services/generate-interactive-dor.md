@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Experienced
 kt: 9226
-source-git-commit: 2ed78bb8b122acbe69e98d63caee1115615d568f
+source-git-commit: d42fd02b06429be1b847958f23f273cf842d3e1b
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '370'
 ht-degree: 1%
 
 ---
@@ -201,10 +201,12 @@ Para probar esto en el servidor local, siga los siguientes pasos:
 
 1. [Descargar e instalar el paquete DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 1. Añada la siguiente entrada en el servicio MAPA de usuario del servicio Apache Sling DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
-1. [Descargar e instalar el paquete personalizado de DocumentServices](/hep/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar). Esto tiene el servlet para combinar los datos con la plantilla XDP y transmitir el pdf hacia atrás
+1. [Descargar e instalar el paquete personalizado de DocumentServices](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar). Esto tiene el servlet para combinar los datos con la plantilla XDP y transmitir el pdf hacia atrás
 1. [Importar la biblioteca del cliente](assets/irs.zip)
 1. [Importar el formulario adaptable](assets/f8918complete.zip)
 1. [Importación del esquema y la plantilla XDP](assets/xdp-template-and-xsd.zip)
 1. [Vista previa del formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/f8918complete/jcr:content?wcmmode=disabled)
 1. Rellene algunos campos del formulario
-1. Haga clic en Descargar PDF para obtener el PDF
+1. Haga clic en Descargar PDF para obtener el PDF. Es posible que tenga que esperar unos segundos para que el PDF descargue
+
+
