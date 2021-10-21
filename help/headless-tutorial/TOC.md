@@ -6,10 +6,10 @@ version: Cloud Service
 feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites
 kt: 2963
 index: y
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 9c1649247c65a1fa777b7574d1ab6ab49d0f722b
 workflow-type: tm+mt
-source-wordcount: '181'
-ht-degree: 19%
+source-wordcount: '185'
+ht-degree: 20%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 19%
 + [Información general AEM sin encabezado](./overview.md)
 + GraphQL {#graphql}
    + [Información general](./graphql/overview.md)
-   + Serie de vídeo{#video-series}
+   + Serie de vídeos{#video-series}
       + [1 - Conceptos básicos de modelos](./graphql/video-series/modeling-basics.md)
       + [2: Modelado avanzado](./graphql/video-series/advanced-modeling.md)
       + [3 - Creación de consultas de GraphQL](./graphql/video-series/creating-graphql-queries.md)
@@ -36,7 +36,10 @@ ht-degree: 19%
       + [5 - Consulta desde una aplicación externa](./graphql/multi-step/graphql-and-external-app.md)
       + [6 - Modelado de datos avanzado con referencias de fragmento](./graphql/multi-step/fragment-references.md)
       + [7: Implementación de producción](./graphql/multi-step/production-deployment.md)
-+ SPA Editor{#spa-editor}
+   + Ejemplos {#example-apps}
+      + [React](./graphql/example-apps/react-app.md)
+      + [Interfaz de usuario Swift de iOS](./graphql/example-apps/ios-swiftui-app.md)
++ Editor SPA{#spa-editor}
    + React{#react}
       + [Información general](./spa-editor/react/overview.md)
       + [1 - Crear proyecto](./spa-editor/react/create-project.md)
