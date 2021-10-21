@@ -8,9 +8,9 @@ level: Beginner, Intermediate
 version: cloud-service
 topic: Development
 kt: 9006
-source-git-commit: d42fd02b06429be1b847958f23f273cf842d3e1b
+source-git-commit: d38da94bd4164163a16899b565c90b159194580a
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '202'
 ht-degree: 0%
 
 ---
@@ -42,10 +42,11 @@ Incluya la entrada adecuada en el filter.xml del proyecto ui.content
 <filter root="/content/dam/formsanddocuments-fdm/registrations" mode="replace"/>
 ```
 
-Ahora, cuando cree e implemente su proyecto, el modelo de datos de formulario basado en la configuración de los servicios de nube estará disponible en la instancia de nube
 
->!![NOTE]
-Al insertar esta configuración de servicios de nube en la instancia de nube, deberá actualizar manualmente la clave de Azure mediante la interfaz de usuario de AEM. Todos los valores cifrados deberán actualizarse en las instancias de nube mediante la interfaz de usuario.
+>[!NOTE]
+
+>Ahora, cuando cree e implemente su proyecto, el modelo de datos de formulario basado en la configuración de los servicios de nube estará disponible en la instancia de nube
+
 
 
 

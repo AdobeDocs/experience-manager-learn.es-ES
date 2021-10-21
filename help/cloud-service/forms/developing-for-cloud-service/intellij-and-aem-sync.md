@@ -8,18 +8,22 @@ level: Beginner, Intermediate
 version: cloud-service
 topic: Development
 kt: 8844
-source-git-commit: d42fd02b06429be1b847958f23f273cf842d3e1b
+source-git-commit: d38da94bd4164163a16899b565c90b159194580a
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 3%
+source-wordcount: '504'
+ht-degree: 2%
 
 ---
 
 # Instalación de Cygwin
 
+
+Cygwin es un entorno de programación y tiempo de ejecución compatible con POSIX que se ejecuta de forma nativa en Microsoft Windows.
 Instalar [Cygwin](https://www.cygwin.com/). He instalado en C:\cygwin64 folder
->[Nota]
+>[!NOTE]
 > Asegúrese de instalar los paquetes zip, unzip, curl y rsync con su instalación de cygwin
+
+Cree una carpeta denominada adoberepo en c:\cloudmanager.
 
 [Instalación de la herramienta de repositorios].(https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo).Installing la herramienta repo no es más que copiar el archivo repo y colocarlo en su c:\cloudmanger\adoberepo folder.
 
@@ -27,7 +31,12 @@ Agregue lo siguiente a la variable de entorno de rutas C:\cygwin64\bin;C:\CloudM
 
 ## Configuración de herramientas externas
 
-Iniciar IntelliJ Pulse las teclas Ctrl+Alt+S para iniciar la ventana de configuración Seleccione Herramientas->Herramientas externas y, a continuación, haga clic en el signo + e introduzca lo siguiente, tal y como se muestra en la captura de pantalla Asegúrese de crear un grupo llamado repo escribiendo &quot;repo&quot; en el campo desplegable Grupo y todos los comandos que cree pertenezcan al grupo **repo** grupo
+* Iniciar IntelliJ
+* Pulse las teclas Ctrl+Alt+S para iniciar la ventana de configuración.
+* Seleccione Herramientas->Herramientas externas y, a continuación, haga clic en el signo + e introduzca lo siguiente como se muestra en la captura de pantalla.
+   ![rep](assets/repo.png)
+* Asegúrese de crear un grupo llamado repo escribiendo &quot;repo&quot; en el campo desplegable Grupo y todos los comandos que cree pertenezcan al grupo **repo** grupo
+
 
 **Comando Put**
 **Programa**: C:\cygwin64\bin\bash
