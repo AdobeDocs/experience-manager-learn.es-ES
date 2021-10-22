@@ -7,7 +7,7 @@ sub-product: forms
 topic: Development
 role: Developer
 exl-id: c1972937-56c5-47af-9232-f31bdf69dfbe
-source-git-commit: d38da94bd4164163a16899b565c90b159194580a
+source-git-commit: 9063c3dfd9ab9ac537850694ce6545a3fdc840e9
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 7%
@@ -148,7 +148,7 @@ Adobe Experience Manager (AEM) proporciona una solución fácil de usar para cre
   </td>
   <td>
     <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/ndawizard/jcr:content?wcmmode=disabled">
-    <img alt="Acuerdo NDA" src="./assets/nda.png" />
+    <img alt="Acuerdo NDA" src="./assets/nda1.png" />
     </a>
     <div>
     <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/ndawizard/jcr:content?wcmmode=disabled">

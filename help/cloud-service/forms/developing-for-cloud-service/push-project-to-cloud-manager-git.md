@@ -8,9 +8,9 @@ level: Beginner, Intermediate
 version: Cloud Service
 topic: Development
 kt: 8851
-source-git-commit: d38da94bd4164163a16899b565c90b159194580a
+source-git-commit: 9063c3dfd9ab9ac537850694ce6545a3fdc840e9
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '139'
 ht-degree: 0%
 
 ---
@@ -35,10 +35,10 @@ git commit -m "My First AF"
 Esto confirma los archivos a la rama maestra de nuestro repositorio de Git local
 
 ```
-git push -f bankingapp master:"My First AF"
+git push -f bankingapp master:"MyFirstAF"
 ```
 
-En el comando anterior estamos empujando nuestra rama maestra desde nuestro repositorio de Git local a la rama My First AF del repositorio de cloud manager identificada por el nombre descriptivo de la aplicación de banca
+En el comando anterior estamos empujando nuestra rama maestra desde nuestro repositorio de Git local a la rama MyFirstAF del repositorio de cloud manager identificado por el nombre descriptivo de la aplicación de banca.
 
 
 
