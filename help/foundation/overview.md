@@ -1,21 +1,19 @@
 ---
 title: Vídeos y tutoriales de AEM Foundation
-seo-title: Vídeos y tutoriales de AEM Foundation
-description: 'Una colección de vídeos y tutoriales para Adobe Experience Manager Foundation. '
-seo-description: Una colección de vídeos y tutoriales para Adobe Experience Manager Foundation
+description: Una colección de vídeos y tutoriales para Adobe Experience Manager Foundation.
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: af0fe7fb-873b-4d2d-a5a3-59a5a3da9b96
+source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 22%
+source-wordcount: '251'
+ht-degree: 18%
 
 ---
 
+# Vídeos y tutoriales de AEM Foundation {#overview}
 
-# Información general {#overview}
-
-Adobe Experience Manager proporciona un conjunto común de funcionalidades disponibles para los usuarios de AEM Sites, [!DNL Assets] y [!DNL Forms].
+Adobe Experience Manager proporciona un conjunto común de funciones disponibles para los usuarios de AEM Sites, Assets y Forms.
 
 ## Novedades
 
@@ -27,7 +25,7 @@ Adobe Experience Manager proporciona un conjunto común de funcionalidades dispo
    *Cloud Manager para AEM permite una administración, inspección y autoservicio sencillos de los entornos AEM.*
 
 * **[Configuración de claves públicas y privadas para su uso con Adobe I/O (tutorial)](./authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)**\
-   *Aprenda cómo se generan las claves y las tiendas de claves mediante  [!DNL openssl] que funcionen con AEM y Adobe I/O.*
+   *Descubra cómo se generan las claves y los almacenes de claves mediante [!DNL openssl] que trabajan con AEM y Adobe I/O.*
 
 * **[Uso de la canalización de CI/CD de Cloud Manager (vídeo)](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)**\
    *Aprenda a utilizar la canalización de CD/CI de Cloud Manager para garantizar implementaciones seguras y coherentes.*

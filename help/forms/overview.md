@@ -1,20 +1,18 @@
 ---
 title: Tutorials y vídeos de AEM Forms
-seo-title: AEM Forms Tutorials and Videos
 description: Recopilación de recursos de AEM Forms para principiantes y desarrolladores experimentados de AEM Forms
-seo-description: Collection of AEM Forms resources for beginners and experienced AEM Forms developers
 sub-product: forms
 topic: Development
 role: Developer
 exl-id: c1972937-56c5-47af-9232-f31bdf69dfbe
-source-git-commit: 9063c3dfd9ab9ac537850694ce6545a3fdc840e9
+source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 7%
+source-wordcount: '516'
+ht-degree: 6%
 
 ---
 
-# Información general {#overview}
+# Tutorials y vídeos de AEM Forms {#overview}
 
 Adobe Experience Manager (AEM) proporciona una solución fácil de usar para crear, administrar, publicar y actualizar formularios digitales complejos a la vez que se integra con procesos back-end, reglas comerciales y datos. Esta guía del usuario contiene vídeos y tutoriales sobre las numerosas funciones y funcionalidades de AEM Forms
 
@@ -26,7 +24,7 @@ Adobe Experience Manager (AEM) proporciona una solución fácil de usar para cre
 
 * **[Gráficos multiserie en documentos de comunicación interactiva (vídeo)](./interactive-communications/multiseriescharts.md)**
 
-   *Trazar más de una serie en el mismo gráfico. Los gráficos de varias series se utilizan normalmente en asociación con el tipo de gráfico Línea, Barra y Columna.*
+   *Trazar más de una serie en el mismo gráfico. Los gráficos de series múltiples suelen utilizarse en asociación con el tipo de gráfico de líneas, barras y columnas.*
 
 * **[Creación de modelos de flujo de trabajo reutilizables](./adaptive-forms/re-usable-aem-forms-workflow-models-article.md)**
 
@@ -38,7 +36,7 @@ Adobe Experience Manager (AEM) proporciona una solución fácil de usar para cre
 <tr>
   <td>
     <a href="./creating-your-first-adaptive-form/introduction-and-setup.md">
-      <img alt="400 x 225 px" src="./assets/afhero.png" />
+      <img alt="Crear su primer formulario adaptable" src="./assets/afhero.png" />
     </a>
     <div>
       <a href="./creating-your-first-adaptive-form/introduction-and-setup.md">
@@ -51,7 +49,7 @@ Adobe Experience Manager (AEM) proporciona una solución fácil de usar para cre
   </td>
    <td>
     <a href="./ic-print-channel-tutorial/introduction.md">
-      <img alt="400 x 225 px" src="./assets/correspondence-management1.png" />
+      <img alt="Crear el primer documento de canal de impresión" src="./assets/correspondence-management1.png" />
     </a>
     <div>
       <a href="./ic-print-channel-tutorial/introduction.md">
@@ -64,7 +62,7 @@ Adobe Experience Manager (AEM) proporciona una solución fácil de usar para cre
   </td>
   <td>
     <a href="./adaptive-forms/form-data-model-service-as-step-in-workflow-video-use.md">
-      <img alt="400 x 225 px" src="./assets/fdmlogo.png" />
+      <img alt="Uso del modelo de datos de formulario en AEM flujo de trabajo" src="./assets/fdmlogo.png" />
     </a>
     <div>
       <a href="./adaptive-forms/form-data-model-service-as-step-in-workflow-video-use.md">
@@ -80,7 +78,7 @@ Adobe Experience Manager (AEM) proporciona una solución fácil de usar para cre
 
 >[!TIP]
 >
->Esta colección de muestras para demostrar las distintas funciones de AEM Forms. .
+>Esta colección de muestras para demostrar las distintas funciones de AEM Forms.
 
 
 ## Ejemplos de formularios adaptables
@@ -152,11 +150,11 @@ Adobe Experience Manager (AEM) proporciona una solución fácil de usar para cre
     </a>
     <div>
     <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/ndawizard/jcr:content?wcmmode=disabled">
-    <strong>Generar contrato de no revelación</strong>
+    <strong>Generar acuerdo de no divulgación</strong>
     </a>
     </div>
     <p>
-    <em>Cree un NDA de forma dinámica y envíelo para firmarlo con Adobe Sign</em>
+    <em>Cree un NDA de forma dinámica y envíelo para firmar con Adobe Sign</em>
     </p>
   </td>
   <td>
@@ -181,10 +179,10 @@ Adobe Experience Manager (AEM) proporciona una solución fácil de usar para cre
 ## Recursos adicionales
 
 * [Experience League: Explorar AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
-* [Documentación de creación de AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/user-guide.html)
-* [Documentación de desarrollo de AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html)
-* [Documentación de administración de AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/administering/user-guide.html)
-* [Documentación de implementación de AEM Sites](https://helpx.adobe.com/es/experience-manager/6-5/sites/deploying/user-guide.html)
+* [Documentación de creación de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
+* [Documentación de desarrollo de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
+* [Documentación de administración de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html)
+* [Documentación de implementación de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/home.html)
 * [Tutoriales de AEM as a Cloud Service](/help/cloud-service/overview.md)
 * [Tutoriales de AEM Assets](/help/assets/overview.md)
 * [Tutoriales de AEM Forms](/help/forms/overview.md)

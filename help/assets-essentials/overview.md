@@ -1,22 +1,22 @@
 ---
 title: Vídeos de AEM Assets Essentials
 description: Una colección de vídeos para Adobe Experience Manager Assets Essentials
-sub-product: activos
-source-git-commit: 21d6df065fe61614d3bbd68ce2f20d3dc23a9cef
+sub-product: assets
+exl-id: 6a8534fa-bc99-438b-9107-2a428e06619c
+source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
 workflow-type: tm+mt
-source-wordcount: '132'
+source-wordcount: '131'
 ht-degree: 0%
 
 ---
 
-
-# Información general
+# Vídeos de Assets Essentials
 
 ![Assets Essentials](./assets/overview/hero.png)
 
-Experience Manager Assets Essentials proporciona una interfaz de usuario optimizada para una colaboración y administración de recursos liviana.
+Experience Manager Assets Essentials proporciona una interfaz de usuario optimizada para una administración y colaboración de recursos livianas.
 
-Consulte nuestros vídeos sobre cómo utilizar Assets Essentials para gestionar sus recursos, así como cómo se puede integrar con Adobe Recorrido Orchestrator!
+Consulte estos vídeos sobre cómo utilizar Assets Essentials para gestionar sus recursos y cómo se puede integrar con Adobe Recorrido Orchestrator!
 
 ## Más información sobre Assets Essentials
 
