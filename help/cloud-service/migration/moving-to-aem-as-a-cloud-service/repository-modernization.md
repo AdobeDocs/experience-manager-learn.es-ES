@@ -9,10 +9,10 @@ level: Experienced
 kt: 8630
 thumbnail: 336958.jpeg
 exl-id: e9bd9035-1f2d-4a34-a581-9c1ec2c7bc04
-source-git-commit: 53a314c5cd9eaad5a26a0992c750c159f8e3697f
+source-git-commit: 1ddf6154d50a341d9a0fd4234392c37ced878a73
 workflow-type: tm+mt
 source-wordcount: '161'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -24,7 +24,7 @@ Obtenga información sobre la modernización del repositorio, el contenido mutab
 
 ## Herramienta Modernizador de repositorio
 
-![Dispatcher Converter](./assets/repository-modernizer.png)
+![Modernizador de repositorio](./assets/repository-modernizer.png)
 
 Como parte de la refactorización de la base de código, utilice la variable [Herramienta Modernizador de repositorio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html) para reestructurar una base de código 6.x a una estructura más moderna.
 
