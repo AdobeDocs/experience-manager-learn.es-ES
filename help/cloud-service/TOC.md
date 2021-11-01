@@ -4,9 +4,9 @@ user-guide-description: Una recopilación de tutoriales de Adobe Experience Mana
 breadcrumb-title: Tutoriales de AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: 9063c3dfd9ab9ac537850694ce6545a3fdc840e9
+source-git-commit: e8b3bcaeee40b4bfd4f967f929ad664e8d168cb0
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '604'
 ht-degree: 23%
 
 ---
@@ -59,6 +59,7 @@ ht-degree: 23%
       + [Migración de configuración de Dispatcher](./developing/basics/dispatcher-configuration.md)
    + Proyectos AEM{#aem-projects}
       + [AEM proyecto Maven](./developing/projects/maven-project-structure.md)
+      + [Limpieza de un proyecto AEM Maven](./developing/projects/remove-samples.md)
    + Servicios OSGi{#osgi-services}
       + [Conceptos básicos del servicio OSGi](./developing/osgi-services/basics.md)
       + [Ciclo de vida de los componentes OSGi](./developing/osgi-services/lifecycle.md)
