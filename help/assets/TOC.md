@@ -2,9 +2,9 @@
 user-guide-title: Vídeos y tutoriales de AEM Assets
 user-guide-description: Recopilación de vídeos y tutoriales de Adobe Experience Manager Assets.
 breadcrumb-title: Tutoriales de AEM Assets
-feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites
+feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: 519047931bd4cbfb5dd2dd6f2b7b2871512992c5
+source-git-commit: 08146f57235f3de7fd5ab73754166cc85e1f7dda
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 26%
@@ -16,7 +16,7 @@ ht-degree: 26%
 
 + [Información general](overview.md)
 
-+ Configuración{#configuring}
++ Configurar{#configuring}
    + [Carpetas de línea de base](configuring/baseline-folders.md)
    + [Permisos de línea de base](configuring/baseline-permissions.md)
    + [Etiquetado](configuring/tagging.md)
@@ -41,19 +41,19 @@ ht-degree: 26%
    + [Versiones](./collaboration/versions.md)
    + [Revisar la tarea](./collaboration/review-task.md)
 
-+ Search and Discovery{#search-and-discovery}
++ Búsqueda y descubrimiento{#search-and-discovery}
    + [Buscar](./search-and-discovery/search.md)
    + [Colecciones](./search-and-discovery/collections.md)
    + [Ampliación de la búsqueda](./search-and-discovery/search-boost.md)
 
-+ Funciones avanzadas{#advanced}
-   + [Salida de anotaciones en PDF](./advanced/customizing-annotations-pdf-output.md)
++ Capacidades avanzadas{#advanced}
+   + [Salida del PDF de anotaciones](./advanced/customizing-annotations-pdf-output.md)
    + [Información sobre Assets ](./advanced/asset-insights-launch-tutorial.md)
    + [Informes de recursos](./advanced/asset-reports.md)
    + [Permisos (CUG)](./advanced/closed-user-groups.md)
    + [Marcas de agua](./advanced/watermarks.md)
 
-+ Administración avanzada de metadatos{#metadata}
++ Gestión avanzada de metadatos{#metadata}
    + [Metadatos en cascada](metadata/cascade-metadata-feature-video-use.md)
    + [Etiquetas inteligentes para imágenes](metadata/image-smart-tags.md)
    + [Etiquetas inteligentes personalizadas para imágenes](metadata/custom-smart-tags.md)
@@ -93,7 +93,7 @@ ht-degree: 26%
    + [Solo para colocaciones (FPO)](./adobe-asset-link/for-placement-only.md)
    + [Búsqueda de recursos](./adobe-asset-link/asset-search.md)
 
-+ Automatización de contenido{#content-automation}
++ Automatización del contenido{#content-automation}
    + [Información general](./content-automation/overview.md)
    + [Operaciones creativas](./content-automation/creative-operations.md)
    + [Acciones de Photoshop](./content-automation/photoshop-actions.md)
@@ -111,7 +111,7 @@ ht-degree: 26%
    + [Visores](dynamic-media/dynamic-media-viewer-feature-video-understand.md)
    + [Visualizadores de imágenes panorámicas y verticales](dynamic-media/panorama-vertical-image-viewer-feature-video-use.md)
    + [Visualizadores con Adobe Analytics](dynamic-media/dynamic-media-viewer-extension-use.md)
-   + [Aplicación de escritorio Dynamic Media Classic](dynamic-media/dynamic-media-classic-desktop-application.md)
+   + [Aplicación de escritorio de Dynamic Media Classic](dynamic-media/dynamic-media-classic-desktop-application.md)
    + [Dynamic Media 3D](dynamic-media/dynamic-media-3d-feature-video.md)
    + [Vídeo de recorte inteligente de Dynamic Media](dynamic-media/dynamic-media-smart-crop-video.md)
    + [Componentes principales de Dynamic Media](dynamic-media/dynamic-media-core-components.md)

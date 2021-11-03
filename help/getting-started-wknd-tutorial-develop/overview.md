@@ -4,7 +4,6 @@ description: 'Introducción a AEM Sites: Tutorial de WKND. El tutorial de WKND e
 sub-product: sites
 topics: development
 version: Cloud Service
-doc-type: tutorial
 activity: develop
 audience: developer
 KT: 4132
@@ -16,7 +15,8 @@ topic: Content Management, Development
 role: Developer
 level: Beginner
 exl-id: 09a600f4-1ada-4fb7-ae44-586364cff389
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+recommendations: disable
+source-git-commit: 08146f57235f3de7fd5ab73754166cc85e1f7dda
 workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 6%
@@ -37,17 +37,17 @@ El objetivo de este tutorial en varias partes es enseñar a los desarrolladores 
 
 Existen dos enfoques básicos para iniciar un proyecto de AEM Sites.
 
-**AEM Tipo de archivo del proyecto** : enfoque tradicional para el desarrollo de AEM mediante la generación de un proyecto de AEM mínimo con una plantilla Maven. Este es el enfoque recomendado para AEM proyectos de la versión 6.5/6.4 y AEM como proyectos Cloud Service que prevén una gran personalización. El tutorial ofrece una profundización en AEM desarrollo.
+**Tipo de archivo del proyecto AEM** - Enfoque tradicional para el desarrollo de AEM mediante la generación de un proyecto de AEM mínimo utilizando una plantilla Maven. Este es el enfoque recomendado para AEM proyectos de la versión 6.5/6.4 y AEM proyectos as a Cloud Service que prevén una gran personalización. El tutorial ofrece una profundización en AEM desarrollo.
 
 [Inicie el tutorial con el tipo de archivo del proyecto AEM](./project-archetype/overview.md)
 
-**Plantillas AEM sitio** : un enfoque de código bajo para generar un sitio AEM mediante una plantilla de sitio predefinida. Utilice los componentes y las plantillas listas para usar para poner en marcha un sitio rápidamente. Utilice un flujo de trabajo temático para aplicar estilos y personalizaciones específicos de la marca solo con CSS y JavaScript. Recomendado para nuevos proyectos y desarrolladores. Actualmente solo está disponible para AEM como Cloud Service.
+**Plantillas AEM sitio** - Un enfoque de bajo código para generar un sitio AEM mediante el uso de una plantilla de sitio predefinida. Utilice los componentes y las plantillas listas para usar para poner en marcha un sitio rápidamente. Utilice un flujo de trabajo temático para aplicar estilos y personalizaciones específicos de la marca solo con CSS y JavaScript. Recomendado para nuevos proyectos y desarrolladores. Actualmente solo disponible para AEM as a Cloud Service.
 
 [Iniciar el tutorial con una plantilla de sitio](./site-template/create-site.md)
 
 ## Kit de interfaz de usuario de Adobe XD
 
-Para hacer este tutorial más cercano a un escenario real, los talentosos diseñadores de experiencia de usuario crearon las maquetas para el sitio utilizando [Adobe XD](https://www.adobe.com/products/xd.html). A lo largo del tutorial, varias partes de los diseños se implementan en un sitio de AEM totalmente creativo. Agradecimiento especial a **Lorenzo Buosi** y **Kilian Amendola** que crearon el hermoso diseño para el sitio WKND.
+Para hacer este tutorial más cercano a un escenario real, los talentosos diseñadores de experiencia de usuario crearon las maquetas para el sitio utilizando [Adobe XD](https://www.adobe.com/products/xd.html). A lo largo del tutorial, varias partes de los diseños se implementan en un sitio de AEM totalmente creativo. Gracias especiales **Lorenzo Buosi** y **Kilian Amendola** que creó el hermoso diseño para el sitio WKND.
 
 Descargue los kits de interfaz de usuario de XD:
 
@@ -58,16 +58,16 @@ Descargue los kits de interfaz de usuario de XD:
 
 También está disponible como referencia una versión terminada del sitio WKND: [https://wknd.site/](https://wknd.site/)
 
-El tutorial cubre las principales habilidades de desarrollo necesarias para un desarrollador AEM, pero *no* construirá todo el sitio de principio a fin. El sitio de referencia terminado es otro recurso bueno para explorar y ver más AEM funcionalidades listas para usar.
+El tutorial cubre las principales habilidades de desarrollo necesarias para un desarrollador AEM, pero *not* cree todo el sitio de principio a fin. El sitio de referencia terminado es otro recurso bueno para explorar y ver más AEM funcionalidades listas para usar.
 
-Para probar el código más reciente antes de entrar en el tutorial, descargue e instale la **[última versión de GitHub](https://github.com/adobe/aem-guides-wknd/releases/latest)**.
+Para probar el código más reciente antes de pasar al tutorial, descargue e instale el **[última versión de GitHub](https://github.com/adobe/aem-guides-wknd/releases/latest)**.
 
 ### Con la tecnología de Adobe Stock
 
-Muchas de las imágenes del sitio web de referencia de WKND son de [Adobe Stock](https://stock.adobe.com/) y son de terceros tal como se define en los términos adicionales de Demo Asset en [https://www.adobe.com/legal/terms.html](https://www.adobe.com/es/legal/terms.html). Si desea utilizar una imagen de Adobe Stock para otros fines más allá de ver este sitio web de demostración, como incluirla en un sitio web o en materiales de marketing, puede adquirir una licencia en Adobe Stock.
+Muchas de las imágenes del sitio web de referencia WKND son de [Adobe Stock](https://stock.adobe.com/) y son Material de terceros tal como se define en los Términos adicionales de Demo Asset en [https://www.adobe.com/legal/terms.html](https://www.adobe.com/es/legal/terms.html). Si desea utilizar una imagen de Adobe Stock para otros fines más allá de ver este sitio web de demostración, como incluirla en un sitio web o en materiales de marketing, puede adquirir una licencia en Adobe Stock.
 
 Con Adobe Stock, usted tiene acceso a más de 140 millones de imágenes de alta calidad, libres de derechos de autor, incluyendo fotos, gráficos, videos y plantillas para iniciar sus proyectos creativos.
 
 ## Siguientes pasos {#next-steps}
 
-¡¿Qué estás esperando?! Obtenga información sobre cómo [generar un nuevo proyecto de Adobe Experience Manager mediante el tipo de archivo del proyecto AEM](./project-archetype/overview.md) o [crear un sitio con una plantilla de sitio](./site-template/create-site.md).
+¡¿Qué estás esperando?! Obtenga información sobre cómo [genere un nuevo proyecto de Adobe Experience Manager con el tipo de archivo AEM proyecto](./project-archetype/overview.md) o [crear un sitio con una plantilla de sitio](./site-template/create-site.md).
