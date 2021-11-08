@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: d2da6efa-1f77-4391-adda-e3180c42addc
-source-git-commit: 9c1649247c65a1fa777b7574d1ab6ab49d0f722b
+source-git-commit: 846400cd3ac4eb1b04ece055dfcbbd677f11e88e
 workflow-type: tm+mt
-source-wordcount: '1814'
+source-wordcount: '1819'
 ht-degree: 2%
 
 ---
@@ -64,9 +64,9 @@ Este tutorial utiliza la variable [SDK as a Cloud Service AEM](https://experienc
    $ java -jar aem-author-p4502.jar
    ```
 
-1. Proporcione una contraseña de administrador como `admin`. Cualquier contraseña de administrador es aceptable, pero se recomienda utilizar el valor predeterminado para el desarrollo local para reducir la necesidad de volver a configurarla.
+1. Proporcione una contraseña de administrador como `admin`. Cualquier contraseña de administrador es aceptable, pero se recomienda utilizar `admin` para el desarrollo local a fin de reducir la necesidad de reconfigurar.
 1. Después de unos minutos, la instancia de AEM terminará de instalarse y se abrirá una nueva ventana del explorador en [http://localhost:4502](http://localhost:4502).
-1. Inicie sesión con el nombre de usuario `admin` y contraseña `admin`.
+1. Inicie sesión con el nombre de usuario `admin` y la contraseña seleccionada durante AEM inicio inicial (normalmente `admin`).
 
 ## Instalación del contenido de ejemplo y los extremos de GraphQL {#wknd-site-content-endpoints}
 
