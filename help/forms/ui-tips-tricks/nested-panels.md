@@ -8,7 +8,7 @@ topic: Development
 role: Developer
 level: Beginner
 kt: 9335
-source-git-commit: 84a0c78f89f78e161b460574b5927fc4aba2fe3a
+source-git-commit: 20cae7a327131927f831ae9c49fb5eebfb00f5c4
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 0%
@@ -27,6 +27,7 @@ Cuando el formulario ha dejado fichas de navegación y una de las fichas tiene v
 ## Crear formulario adaptable
 
 Cree un formulario adaptable con la siguiente estructura. El panel raíz tiene paneles secundarios que se muestran como fichas a la izquierda. Algunos de estos &quot;**pestañas**&quot; tienen paneles secundarios adicionales. Por ejemplo, la ficha Familia tiene dos paneles secundarios llamados cónyuge e hijos.
+
 También se agrega una barra de herramientas bajo FormContainer con los botones Anterior y Siguiente
 
 ![espaciado de la barra de herramientas](assets/multiple-panels.png)
@@ -61,4 +62,5 @@ Utilice el editor de estilos para ocultar el título de los paneles secundarios 
 >[!VIDEO](https://video.tv.adobe.com/v/338370?quality=9&learn=on)
 
 >[!NOTE]
-> La capacidad descrita en este artículo no funciona en la última pestaña. Por ejemplo, si la ficha Dirección tenía paneles secundarios, esta funcionalidad no funcionaría.
+>
+>La capacidad descrita en este artículo no funciona en la última pestaña. Por ejemplo, si la ficha Dirección tenía paneles secundarios, esta funcionalidad no funcionaría.
