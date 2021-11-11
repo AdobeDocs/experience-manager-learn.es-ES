@@ -8,7 +8,7 @@ level: Beginner, Intermediate
 version: cloud-service
 topic: Development
 kt: 9006
-source-git-commit: d38da94bd4164163a16899b565c90b159194580a
+source-git-commit: 8484897297940ab28619c4b1af5362a5937eadfa
 workflow-type: tm+mt
 source-wordcount: '202'
 ht-degree: 0%
@@ -44,10 +44,5 @@ Incluya la entrada adecuada en el filter.xml del proyecto ui.content
 
 
 >[!NOTE]
-
+>
 >Ahora, cuando cree e implemente su proyecto, el modelo de datos de formulario basado en la configuración de los servicios de nube estará disponible en la instancia de nube
-
-
-
-
-
