@@ -1,105 +1,103 @@
 ---
-title: Creación de contenido y publicación de cambios
-seo-title: 'Introducción a AEM Sites: Creación de contenido y publicación de cambios'
+title: Introducción a la creación y publicación | Creación rápida de sitios AEM
 description: Utilice el editor de páginas de Adobe Experience Manager, AEM, para actualizar el contenido del sitio web. Descubra cómo se utilizan los componentes para facilitar la creación. Comprenda la diferencia entre los entornos de AEM Author y Publish y aprenda a publicar cambios en el sitio activo.
-sub-product: sitios
+sub-product: sites
 version: Cloud Service
 type: Tutorial
-topic: Administración de contenido
-feature: Componentes principales, Editor de páginas
+topic: Content Management
+feature: Core Components, Page Editor
 role: Developer
 level: Beginner
 kt: 7497
 thumbnail: KT-7497.jpg
-translation-type: tm+mt
-source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
+exl-id: 17ca57d1-2b9a-409c-b083-398d38cd6a19
+source-git-commit: 04096fe3c99cdcce2d43b2b29899c2bbe37ac056
 workflow-type: tm+mt
-source-wordcount: '1306'
+source-wordcount: '1364'
 ht-degree: 2%
 
 ---
 
-
-# Creación de contenido y publicación de cambios {#author-content-publish}
+# Introducción a la creación y publicación {#author-content-publish}
 
 >[!CAUTION]
 >
-> Las funciones de creación rápida de sitios que se muestran aquí se lanzarán en el segundo semestre de 2021. La documentación relacionada está disponible con fines de vista previa.
+> La herramienta Creación rápida de sitios es actualmente una vista previa técnica. Está disponible con fines de ensayo y evaluación y no está pensado para su uso en producción a menos que se acuerde con la asistencia al Adobe.
 
-Es importante comprender cómo un usuario actualizará el contenido del sitio web. En este capítulo adoptaremos la imagen de **Autor de contenido** y haremos algunas actualizaciones editoriales del sitio generadas en el capítulo anterior. Al final del capítulo, publicaremos los cambios para comprender cómo se actualiza el sitio en directo.
+Es importante comprender cómo un usuario actualizará el contenido del sitio web. En este capítulo adoptaremos la personalidad de una **Autor de contenido** y haga algunas actualizaciones editoriales del sitio generadas en el capítulo anterior. Al final del capítulo, publicaremos los cambios para comprender cómo se actualiza el sitio en directo.
 
 ## Requisitos previos {#prerequisites}
 
-Este es un tutorial en varias partes y se da por hecho que los pasos descritos en el capítulo [Crear un sitio](./create-site.md) se han completado.
+Este es un tutorial de varias partes y se da por hecho que los pasos descritos en la sección [Crear un sitio](./create-site.md) se ha completado el capítulo.
 
 ## Objetivo {#objective}
 
-1. Comprender los conceptos de **Pages** y **Components** en AEM Sites.
+1. Comprender los conceptos de **Páginas** y **Componentes** en AEM Sites.
 1. Aprenda a actualizar el contenido del sitio web.
 1. Obtenga información sobre cómo publicar cambios en el sitio activo.
 
-## Crear una nueva página {#create-page}
+## Crear una página nueva {#create-page}
 
 Un sitio web suele dividirse en páginas para formar una experiencia de varias páginas. AEM estructura el contenido de la misma manera. A continuación, cree una nueva página para el sitio.
 
-1. Inicie sesión en el servicio AEM **Author** utilizado en el capítulo anterior.
-1. En la pantalla Inicio de AEM, haga clic en **Sitios** > **Sitio de WKND** > **Inglés** > **Artículo**
+1. Inicie sesión en la AEM **Autor** Servicio utilizado en el capítulo anterior.
+1. En la pantalla Inicio de AEM, haga clic en **Sitios** > **Sitio WKND** > **Inglés** > **Artículo**
 1. En la esquina superior derecha, haga clic en **Crear** > **Página**.
 
    ![Crear página](assets/author-content-publish/create-page-button.png)
 
-   Esto abrirá el asistente **Crear página**.
+   Esto abrirá las **Crear página** asistente.
 
-1. Seleccione la plantilla **Article Page** y haga clic en **Next**.
+1. Elija la **Página de artículos** plantilla y haga clic en **Siguiente**.
 
-   Las páginas de AEM se crean a partir de una plantilla de página. Las plantillas de página se explorarán con buenos detalles en el capítulo [Plantillas de página](page-templates.md).
+   Las páginas de AEM se crean a partir de una plantilla de página. Las plantillas de página se explorarán con buenos detalles en el [Plantillas de página](page-templates.md) capítulo.
 
-1. En **Properties** introduzca un **Title** de &quot;Hello World&quot;.
-1. Establezca el **Name** en `hello-world` y haga clic en **Crear**.
+1. En **Propiedades** introduzca un **Título** de &quot;Hello World&quot;.
+1. Configure las variables **Nombre** a `hello-world` y haga clic en **Crear**.
 
    ![Propiedades de la página inicial](assets/author-content-publish/initial-page-properties.png)
 
-1. En el cuadro de diálogo emergente, haga clic en **Abrir** para abrir la página recién creada.
+1. En la ventana emergente del cuadro de diálogo, haga clic en **Apertura** para abrir la página recién creada.
 
 ## Crear un componente {#author-component}
 
 AEM Los componentes se pueden considerar pequeños componentes modulares de una página web. Al dividir la interfaz de usuario en fragmentos lógicos o componentes, resulta mucho más fácil administrarla. Para reutilizar componentes, estos deben ser configurables. Esto se logra mediante el cuadro de diálogo de creación.
 
-AEM proporciona un conjunto de [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) que están listos para su uso en la producción. Los **componentes principales** van desde elementos básicos como [Texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html) y [Imagen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) a elementos de interfaz de usuario más complejos como un [Carrusel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html).
+AEM proporciona un conjunto de [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) que están listos para usar en la producción. La variable **Componentes principales** rango desde elementos básicos como [Texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html) y [Imagen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) para elementos de interfaz de usuario más complejos como una [Carrusel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html).
 
-A continuación, vamos a crear algunos componentes con AEM Editor de páginas.
+A continuación, cree algunos componentes con el Editor de páginas AEM.
 
-1. Vaya a la página **Hello World** creada en el ejercicio anterior.
-1. Asegúrese de que está en modo **Edit** y, en el carril lateral izquierdo, haga clic en el icono **Components**.
+1. Vaya a la **Hello World** creada en el ejercicio anterior.
+1. Asegúrese de que está en **Editar** y en el carril lateral izquierdo, haga clic en el botón **Componentes** icono.
 
    ![Carril lateral del editor de páginas](assets/author-content-publish/page-editor-siderail.png)
 
    Se abrirá la biblioteca Componentes y se enumerarán los componentes disponibles que se pueden utilizar en la página.
 
-1. Desplácese hacia abajo y **Arrastre y suelte** un componente **Texto (v2)** en la región editable principal de la página.
+1. Desplácese hacia abajo y **Arrastrar y soltar** a **Texto (v2)** a la región editable principal de la página.
 
    ![Arrastrar y soltar componente de texto](assets/author-content-publish/drag-drop-text-cmp.png)
 
-1. Haga clic en el componente **Texto** para resaltarlo y, a continuación, haga clic en el icono **llave inglesa** ![icono de llave inglesa](assets/author-content-publish/wrench-icon.png) para abrir el cuadro de diálogo del componente. Introduzca texto y guarde los cambios en el cuadro de diálogo.
+1. Haga clic en el **Texto** para resaltar el componente y, a continuación, haga clic en el botón **llave** icono ![Icono de llave inglesa](assets/author-content-publish/wrench-icon.png) para abrir el cuadro de diálogo del componente. Introduzca texto y guarde los cambios en el cuadro de diálogo.
 
    ![Componente de texto enriquecido](assets/author-content-publish/rich-text-populated-component.png)
 
-   El componente **Texto** debería mostrar ahora el texto enriquecido en la página.
+   La variable **Texto** ahora debe mostrar el texto enriquecido en la página.
 
-1. Repita los pasos anteriores, excepto arrastre una instancia del componente **Image(v2)** a la página. Abra el cuadro de diálogo del componente **Image**.
+1. Repita los pasos anteriores, excepto arrastre una instancia de la función **Imagen(v2)** en la página. Abra el **Imagen** cuadro de diálogo del componente.
 
-1. En el carril izquierdo, cambie al **Buscador de recursos** haciendo clic en el icono **Recursos** ![icono de recursos](assets/author-content-publish/asset-icon.png).
-1. **Arrastre+** Cargar imagen al cuadro de diálogo del componente y haga clic en  **** Donar para guardar los cambios.
+1. En el carril izquierdo, cambie a la **Buscador de recursos** haciendo clic en el botón **Recursos** icono ![icono de recurso](assets/author-content-publish/asset-icon.png).
+1. **Arrastrar y soltar** una imagen en el cuadro de diálogo del componente y haga clic en **Listo** para guardar los cambios.
 
    ![Agregar recurso al cuadro de diálogo](assets/author-content-publish/add-asset-dialog.png)
 
-1. Observe que hay componentes en la página, como **Title**, **Navigation**, **Search** que están corregidos. Estas áreas están configuradas como parte de la plantilla de página y no se pueden modificar en una página individual. Esto se explorará más en el próximo capítulo.
+1. Observe que hay componentes en la página, como el **Título**, **Navegación**, **Buscar** que están corregidos. Estas áreas están configuradas como parte de la plantilla de página y no se pueden modificar en una página individual. Esto se explorará más en el próximo capítulo.
 
-Siéntase libre de experimentar con algunos de los otros componentes. La documentación sobre cada [componente principal se puede encontrar aquí](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). Aquí](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/aem-sites-authoring-overview.html) puede encontrar una serie de vídeos detallados sobre [Creación de páginas.
+Siéntase libre de experimentar con algunos de los otros componentes. Documentación sobre cada [El componente principal se puede encontrar aquí](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). Una serie detallada de vídeos sobre [La creación de páginas se puede encontrar aquí](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/aem-sites-authoring-overview.html).
 
 ## Publicar actualizaciones {#publish-updates}
 
-AEM entornos se dividen entre un **Author Service** y un **Publish Service**. En este capítulo hemos realizado varias modificaciones en el sitio en el **Servicio de autor**. Para que los visitantes del sitio puedan ver los cambios, debemos publicarlos en el **Servicio de publicación**.
+AEM entornos se dividen entre una **Servicio de autor** y **Servicio de publicación**. En este capítulo hemos realizado varias modificaciones en el sitio en la **Servicio de autor**. Para que los visitantes del sitio puedan ver los cambios, debemos publicarlos en la **Servicio de publicación**.
 
 ![Diagrama de alto nivel](assets/author-content-publish/author-publish-high-level-flow.png)
 
@@ -115,63 +113,70 @@ AEM entornos se dividen entre un **Author Service** y un **Publish Service**. En
 
 A continuación, publicemos los cambios.
 
-1. En la pantalla Inicio de AEM, vaya a **Sitios** y seleccione **Sitio de WKND**.
-1. Haga clic en **Administrar publicación** en la barra de menú.
+1. Desde la pantalla Inicio de AEM vaya a **Sitios** y seleccione **Sitio WKND**.
+1. Haga clic en el **Administrar publicación** en la barra de menús.
 
    ![Administrar publicación](assets/author-content-publish/click-manage-publiciation.png)
 
    Dado que este es un sitio completamente nuevo, queremos publicar todas las páginas y podemos usar el asistente Administrar publicación para definir exactamente lo que debe publicarse.
 
-1. En **Opciones**, deje la configuración predeterminada en **Publicar** y programarla para **Ahora**. Haga clic en **Siguiente**. 
-1. En **Ámbito**, seleccione **Sitio WKND** y haga clic en **Incluir elementos secundarios**. En el cuadro de diálogo, desmarque todas las casillas. Queremos publicar el sitio completo.
+1. En **Opciones** deje la configuración predeterminada en **Publicación** y programarlo para **Ahora**. Haga clic en **Siguiente**. 
+1. En **Ámbito**, seleccione **Sitio WKND** y haga clic en **Incluir configuración secundaria**. En el cuadro de diálogo, marque **Incluir elementos secundarios**. Anule la selección del resto de las casillas para asegurarse de que se publica todo el sitio.
 
    ![Actualizar ámbito de publicación](assets/author-content-publish/update-scope-publish.png)
 
-1. Haga clic en el botón **Referencias publicadas**. En el cuadro de diálogo, verifique que todo esté marcado. Esto incluirá la **Plantilla básica AEM sitio** y varias configuraciones generadas por la Plantilla del sitio. Haga clic en **Listo** para actualizar.
+1. Haga clic en el **Referencias publicadas** botón. En el cuadro de diálogo, verifique que todo esté marcado. Esto incluirá la variable **Plantilla de sitio estándar** y varias configuraciones generadas por la plantilla de sitio. Haga clic en **Listo** para actualizar.
 
    ![Publicar referencias](assets/author-content-publish/publish-references.png)
 
-1. Finalmente, haga clic en **Publicar** en la esquina superior derecha para publicar el contenido.
+1. Finalmente, marque la casilla situada junto a **Sitio WKND** y haga clic en **Siguiente** en la esquina superior derecha.
+1. En el **Flujos de trabajo** , introduzca un **Título del flujo de trabajo**. Puede ser cualquier texto y puede ser útil como parte de una pista de auditoría más adelante. Introduzca &quot;Initial publish&quot; y haga clic en **Publicación**.
+
+![Publicación inicial del paso del flujo de trabajo](assets/author-content-publish/workflow-step-publish.png)
 
 ## Ver contenido publicado {#publish}
 
 A continuación, vaya al servicio Publicar para ver los cambios.
 
-1. Una forma sencilla de obtener la URL del servicio de publicación es copiar la URL del autor y reemplazar la palabra `author` por `publish`. Por ejemplo:
+1. Una forma sencilla de obtener la URL del servicio de publicación es copiar la URL del autor y reemplazar el `author` word con `publish`. Por ejemplo:
 
    * **URL del autor** - `https://author-pYYYY-eXXXX.adobeaemcloud.com/`
-   * **URL de publicación** :  `https://publish-pYYYY-eXXXX.adobeaemcloud.com/`
+   * **Publicar URL** - `https://publish-pYYYY-eXXXX.adobeaemcloud.com/`
 
-1. Agregue `/content/wknd.html` a la URL de publicación para que la URL final tenga el aspecto siguiente: `https://publish-pYYYY-eXXXX.adobeaemcloud.com/content/wknd.html`.
+1. Agregar `/content/wknd.html` a la URL de publicación para que tenga el aspecto siguiente: `https://publish-pYYYY-eXXXX.adobeaemcloud.com/content/wknd.html`.
 
    >[!NOTE]
    >
-   > Cambie `wknd.html` para que coincida con el nombre del sitio, si proporcionó un nombre único durante la [creación del sitio](create-site.md).
+   > Cambiar `wknd.html` para que coincida con el nombre del sitio, si ha proporcionado un nombre único durante [creación del sitio](create-site.md).
 
 1. Al navegar a la URL de publicación, debería ver el sitio, sin ninguna de las funciones de creación de AEM.
 
    ![Sitio publicado](assets/author-content-publish/publish-url-update.png)
 
-1. Con el menú **Navegación** haga clic en **Artículo** > **Hola a mundo** para navegar a la página Hola Mundo creada anteriormente.
-1. Vuelva al **AEM Author Service** y realice algunos cambios de contenido adicionales en el Editor de páginas.
-1. Publique estos cambios directamente desde el editor de páginas haciendo clic en el icono **Propiedades de página** > **Publicar página**
+1. Al usar la variable **Navegación** haga clic en el menú **Artículo** > **Hello World** para navegar a la página Hello World creada anteriormente.
+1. Vuelva a la **AEM Author Service** y realice algunos cambios adicionales en el contenido en el Editor de páginas.
+1. Publique estos cambios directamente desde el editor de páginas haciendo clic en el **Propiedades de página** icono > **Publicar página**
 
    ![publicar directamente](assets/author-content-publish/page-editor-publish.png)
 
-1. Vuelva al **Servicio de publicación de AEM** para ver los cambios. Lo más probable es que **no** vea inmediatamente las actualizaciones. Esto se debe a que el **Servicio de publicación de AEM** incluye [almacenamiento en caché a través de un servidor web Apache y CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/caching.html). De forma predeterminada, el contenido HTML se almacena en caché durante ~5 minutos.
+1. Vuelva a la **Servicio de AEM Publish** para ver los cambios. Lo más probable es que **not** consulte las actualizaciones inmediatamente. Esto se debe a que la variable **Servicio de AEM Publish** incluye [almacenamiento en caché a través de un servidor web Apache y CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/caching.html). De forma predeterminada, el contenido del HTML se almacena en caché durante ~5 minutos.
 
-1. Para evitar la caché con fines de prueba/depuración, simplemente agregue un parámetro de consulta como `?nocache=true`. La dirección URL sería `https://publish-pYYYY-eXXXX.adobeaemcloud.com/content/wknd/en/article/hello-world.html?nocache=true`. Puede encontrar más detalles sobre la estrategia de almacenamiento en caché y las configuraciones disponibles [aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/overview.html).
+1. Para evitar la caché con fines de prueba/depuración, simplemente agregue un parámetro de consulta como `?nocache=true`. La dirección URL sería como `https://publish-pYYYY-eXXXX.adobeaemcloud.com/content/wknd/en/article/hello-world.html?nocache=true`. Más detalles sobre la estrategia de almacenamiento en caché y las configuraciones disponibles [se puede encontrar aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/overview.html).
 
-1. También puede encontrar la URL del servicio de publicación en Cloud Manager. Vaya al **Programa de Cloud Manager** > **Entornos** > **Entorno**.
+1. También puede encontrar la URL del servicio de publicación en Cloud Manager. Vaya a la **Programa de Cloud Manager** > **Entornos** > **Entorno**.
 
    ![Ver servicio de publicación](assets/author-content-publish/view-environment-segments.png)
 
-   En **Segmentos de entorno** puede encontrar vínculos a los servicios **Author** y **Publish**.
+   En **Segmentos de entorno** puede encontrar vínculos a la **Autor** y **Publicación** servicios.
 
 ## Felicitaciones! {#congratulations}
 
 ¡Felicidades, acaba de crear y publicar cambios en su Sitio AEM!
 
-### Pasos siguientes {#next-steps}
+### Siguientes pasos {#next-steps}
 
-Obtenga información sobre cómo crear y modificar [Plantillas de página](./page-templates.md). Comprenda la relación entre una plantilla de página y una página. Obtenga información sobre cómo configurar las políticas de una plantilla de página para proporcionar control granular y coherencia de marca para el contenido.  Se creará una plantilla de artículo de revista bien estructurada basada en una maqueta de Adobe XD.
+En una implementación real, la planificación de un sitio con maquetas y diseños de interfaz de usuario suele preceder a la creación del sitio. Descubra cómo se pueden usar los kits de IU de Adobe XD para diseñar y acelerar la implementación de Adobe Experience Manager Sites en [Planificación de la interfaz de usuario con Adobe XD](./ui-planning-adobe-xd.md).
+
+¿Quiere seguir explorando las funcionalidades de AEM Sites? Siéntase libre de saltar directamente al capítulo en [Plantillas de página](./page-templates.md) para comprender la relación entre una plantilla de página y una página.
+
+

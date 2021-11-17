@@ -16,9 +16,9 @@ role: Developer
 level: Beginner
 exl-id: 09a600f4-1ada-4fb7-ae44-586364cff389
 recommendations: disable
-source-git-commit: 08146f57235f3de7fd5ab73754166cc85e1f7dda
+source-git-commit: 04096fe3c99cdcce2d43b2b29899c2bbe37ac056
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '624'
 ht-degree: 6%
 
 ---
@@ -41,7 +41,7 @@ Existen dos enfoques básicos para iniciar un proyecto de AEM Sites.
 
 [Inicie el tutorial con el tipo de archivo del proyecto AEM](./project-archetype/overview.md)
 
-**Plantillas AEM sitio** - Un enfoque de bajo código para generar un sitio AEM mediante el uso de una plantilla de sitio predefinida. Utilice los componentes y las plantillas listas para usar para poner en marcha un sitio rápidamente. Utilice un flujo de trabajo temático para aplicar estilos y personalizaciones específicos de la marca solo con CSS y JavaScript. Recomendado para nuevos proyectos y desarrolladores. Actualmente solo disponible para AEM as a Cloud Service.
+**Plantillas AEM sitio** - También conocido como Creación rápida del sitio, un enfoque de código bajo para generar un sitio AEM usando una plantilla de sitio predefinida. Utilice los componentes y las plantillas listas para usar para poner en marcha un sitio rápidamente. Utilice un flujo de trabajo temático para aplicar estilos y personalizaciones específicos de la marca solo con CSS y JavaScript. Recomendado para nuevos proyectos y desarrolladores. Solo disponible para AEM as a Cloud Service.
 
 [Iniciar el tutorial con una plantilla de sitio](./site-template/create-site.md)
 
