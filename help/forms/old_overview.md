@@ -7,8 +7,8 @@ role: Developer
 exl-id: c1972937-56c5-47af-9232-f31bdf69dfbe
 source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 10%
+source-wordcount: '516'
+ht-degree: 6%
 
 ---
 
@@ -76,6 +76,102 @@ Adobe Experience Manager (AEM) proporciona una solución fácil de usar para cre
 </tr>
 </table>
 
+>[!TIP]
+>
+>Esta colección de muestras para demostrar las distintas funciones de AEM Forms.
+
+
+## Ejemplos de formularios adaptables
+
+<table>
+<tr>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html">
+      <img alt= "Captch en AEM Forms" src="./assets/captcha1.png" />
+    </a>
+    <div>
+      <a href="https://forms.enablementadobe.com/content/forms/af/registerfornewsletter.html">
+    <strong>Google Captcha en forma adaptable</strong>
+    </a>
+    </div>
+    <p>
+    <em> Distinguir entre el acceso humano y automatizado a los formularios</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/summaryscreen/jcr:content?wcmmode=disabled">
+    <img alt="Vista previa de datos del formulario" src="./assets/preview.png" />
+    </a>
+    <div>
+    <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/summaryscreen/jcr:content?wcmmode=disabled">
+    <strong>Revisar datos de formulario</strong>
+    </a>
+    </div>
+    <p>
+    <em>Previsualice los datos del formulario antes de enviarlo.</em>
+    </p>
+  </td>
+  <td>
+    <a href="https://forms.enablementadobe.com/content/forms/af/addinlineimage.html">
+      <img alt=" Imagen en línea" src="./assets/preview.png" />
+    </a>
+     <div>
+      <a href="https://forms.enablementadobe.com/content/forms/af/addinlineimage.html">
+        <strong>Mostrar imagen en línea</strong>
+      </a>
+    </div>
+    <p>
+    <em>Muestra la imagen añadida al formulario.</em>
+    <p>
+  </td>
+</tr>
+</table>
+
+## Formularios adaptables y ejemplos de firma
+
+<table>
+<tr>
+  <td>
+    <a href="https://forms.enablementadobe.com/content/forms/af/rentalagreement.html">
+      <img alt="Acuerdo de alquiler" src="./assets/rental-agreement.png" />
+    </a>
+    <div>
+      <a href="https://forms.enablementadobe.com/content/forms/af/rentalagreement.html">
+    <strong>Formulario de contrato de alquiler de muestra</strong>
+    </a>
+    </div>
+    <p>
+    <em>Acuerdo de alquiler entre arrendatario y propietario rellenado y firmado con AEM Forms y Adobe Sign</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/ndawizard/jcr:content?wcmmode=disabled">
+    <img alt="Acuerdo NDA" src="./assets/nda1.png" />
+    </a>
+    <div>
+    <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/ndawizard/jcr:content?wcmmode=disabled">
+    <strong>Generar acuerdo de no divulgación</strong>
+    </a>
+    </div>
+    <p>
+    <em>Cree un NDA de forma dinámica y envíelo para firmar con Adobe Sign</em>
+    </p>
+  </td>
+  <td>
+    <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled">
+      <img alt="Firmar paquete de documento" src="./assets/sign.png" />
+    </a>
+     <div>
+      <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled">
+        <strong>Firmar paquete de documentos</strong>
+      </a>
+    </div>
+    <p>
+    <em>Firme sin problemas varios documentos con Forms y Adobe Sign</em>
+    <p>
+  </td>
+</tr>
+</table>
 
 
 

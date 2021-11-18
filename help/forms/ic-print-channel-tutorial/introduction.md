@@ -1,8 +1,8 @@
 ---
 title: Creación de la primera comunicación interactiva para el canal de impresión
-seo-title: Creación de la primera comunicación interactiva para el canal de impresión
+seo-title: Creating your first interactive communication for the print channel
 description: Interactive Communications es nuevo en AEM Forms 6.4. Este documento le guiará por los pasos necesarios para crear una comunicación interactiva para el canal de impresión.
-seo-description: Interactive Communications es nuevo en AEM Forms 6.4. Este documento le guiará por los pasos necesarios para crear una comunicación interactiva para el canal de impresión.
+seo-description: Interactive Communications is new to AEM Forms 6.4. This document will walk you through the steps needed to create an interactive communication for the print channel.
 feature: Interactive Communication
 topics: development
 audience: developer
@@ -12,20 +12,17 @@ version: 6.4,6.5
 topic: Development
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 1949aeff-ae56-4abd-8e63-23c2fb4859f2
+source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '229'
-ht-degree: 3%
+source-wordcount: '167'
+ht-degree: 2%
 
 ---
-
 
 # Creación de la primera comunicación interactiva para el canal de impresión
 
 Interactive Communications es nuevo en AEM Forms 6.4. Este documento le guiará por los pasos necesarios para crear una comunicación interactiva para el canal de impresión.
-
-Visite la página [AEM Forms samples](https://forms.enablementadobe.com/content/samples/samples.html?query=0) para ver un vínculo a una demostración en directo de esta capacidad.
 
 ## Requisitos previos {#prerequistes}
 
@@ -40,4 +37,3 @@ Al completar este tutorial, habrá aprendido lo siguiente:
 * Crear fragmentos de documento
 * Configuración de tablas y gráficos
 * Usar carpetas vigiladas para generar documentos en modo por lotes
-

@@ -6,31 +6,28 @@ version: 6.5
 topic: Development
 role: User
 level: Beginner
-source-git-commit: 2b7f0f6c34803672cc57425811db89146b38a70a
+exl-id: 8fbea634-7949-417f-a4d6-9e551fff63f3
+source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '489'
 ht-degree: 0%
 
 ---
-
-
 
 # Adición dinámica de elementos al componente de grupo de opciones
 
 AEM Forms 6.5 ha introducido la capacidad de agregar elementos de forma dinámica a un componente de grupo de opciones de Forms adaptable, como Casilla de verificación, Botón de radio y Lista de imágenes.
 
-[Esta funcionalidad está disponible en vivo en el servidor de muestras](https://forms.enablementadobe.com/content/samples/samples.html?query=0#collapse1). Busque elementos de la casilla de verificación dinámica en la tarjeta y haga clic en &quot;Probar&quot;.
-
 
 Puede agregar elementos mediante el editor visual, así como el editor de código, según el caso de uso.
 
-**Uso del editor visual:** puede rellenar los elementos del grupo de opciones a partir de los resultados de una llamada de función o de una llamada de servicio. Por ejemplo, puede configurar los elementos del grupo de opciones consumiendo la respuesta de una llamada a la API de REST.
+**Uso del editor visual:** Puede rellenar los elementos del grupo de opciones a partir de los resultados de una llamada de función o de una llamada de servicio. Por ejemplo, puede configurar los elementos del grupo de opciones consumiendo la respuesta de una llamada a la API de REST.
 
 En la captura de pantalla siguiente, estamos configurando las opciones de Periodo(años) de préstamo en los resultados de una llamada de servicio llamada getLoanPeriods.
 
 ![Editor de reglas](assets/ruleeditor.png)
 
-**Uso del editor** de código: Cuando desee definir los elementos del grupo de opciones de forma dinámica en función de los valores introducidos en el formulario. Por ejemplo, el siguiente fragmento de código establece los elementos de la casilla de verificación en los valores introducidos en los campos de nombre de solicitante y cónyuge del formulario adaptable.
+**Uso del editor de código**: Cuando desee definir los elementos del grupo de opciones de forma dinámica en función de los valores introducidos en el formulario. Por ejemplo, el siguiente fragmento de código establece los elementos de la casilla de verificación en los valores introducidos en los campos de nombre de solicitante y cónyuge del formulario adaptable.
 
 En el fragmento de código, se configuran los elementos de WorkingMembers que es un componente de casilla de verificación. La matriz de los elementos se está creando dinámicamente recuperando los valores de los campos de texto de nombre de solicitante y cónyuge de los formularios adaptables
 

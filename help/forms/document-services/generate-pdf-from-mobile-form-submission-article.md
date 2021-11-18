@@ -1,28 +1,27 @@
 ---
-title: Generar PDF a partir de envío de formulario HTML5
+title: Generar PDF a partir del envío de formulario HTML5
 description: Generar PDF a partir del envío de formulario móvil
 feature: Mobile Forms
 version: 6.4,6.5
-topic: Desarrollo
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 91b4a134-44a7-474e-b769-fe45562105b2
+source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '544'
 ht-degree: 0%
 
 ---
 
+# Generar PDF a partir del envío de formulario HTML5 {#generate-pdf-from-htm-form-submission}
 
-# Generar PDF a partir de envío de formulario HTML5 {#generate-pdf-from-htm-form-submission}
+Este artículo le guiará por los pasos involucrados en la generación de pdf a partir de un envío de formulario del HTML5 (también conocido como Forms móvil). Esta demostración también explicará los pasos necesarios para agregar una imagen al formulario HTML5 y combinar la imagen en el pdf final.
 
-Este artículo le guiará por los pasos necesarios para generar pdf a partir de un envío de formulario HTML5 (también conocido como Forms móvil). Esta demostración también explicará los pasos necesarios para agregar una imagen al formulario HTML5 y combinar la imagen en el pdf final.
-
-Para ver una demostración en vivo de esta capacidad, visite el [servidor de muestra](https://forms.enablementadobe.com/content/samples/samples.html?query=0) y busque &quot;Formulario móvil a PDF&quot;.
 
 Para combinar los datos enviados con la plantilla xdp, se hace lo siguiente
 
-Escriba un servlet para gestionar el envío de formularios HTML5
+Escriba un servlet para gestionar el envío de formularios de HTML5
 
 * Dentro de este servlet, obtenga los datos enviados
 * Combine estos datos con la plantilla xdp para generar pdf
@@ -78,7 +77,7 @@ $("#file1").click();
 });
 ```
 
-[Perfil personalizado](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html#CreatingCustomProfiles). El uso de perfiles personalizados facilita la manipulación de objetos DOM HTML del formulario móvil. Se agrega un elemento de archivo oculto al archivo HTML.jsp. Cuando el usuario hace clic en &quot;Añadir su foto&quot;, se déclencheur el evento click del elemento del archivo. Esto permite al usuario examinar y seleccionar la fotografía que desea adjuntar. A continuación, utilizamos el objeto FileReader de javascript para obtener la cadena codificada base64 de la imagen. La cadena de imagen base64 se almacena en el campo de texto del formulario. Cuando se envía el formulario, se extrae este valor e se inserta en el elemento img del XML. Este XML se utiliza para combinar con el xdp para generar el pdf final.
+[Perfil personalizado](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html#CreatingCustomProfiles). El uso de perfiles personalizados facilita la manipulación de objetos DOM HTML del formulario móvil. Se agrega un elemento de archivo oculto al HTML.jsp. Cuando el usuario hace clic en &quot;Añadir su foto&quot;, se déclencheur el evento click del elemento del archivo. Esto permite al usuario examinar y seleccionar la fotografía que desea adjuntar. A continuación, utilizamos el objeto FileReader de javascript para obtener la cadena codificada base64 de la imagen. La cadena de imagen base64 se almacena en el campo de texto del formulario. Cuando se envía el formulario, se extrae este valor e se inserta en el elemento img del XML. Este XML se utiliza para combinar con el xdp para generar el pdf final.
 
 El perfil personalizado utilizado para este artículo se ha puesto a su disposición como parte de los recursos de este artículo.
 
@@ -105,7 +104,7 @@ El código anterior se ejecuta cuando se déclencheur el evento click del elemen
 A continuación, configuramos las siguientes propiedades (avanzadas) de nuestro formulario móvil en AEM
 
 * Dirección URL de envío: http://localhost:4502/bin/handlemobileformsubmission. Este es nuestro servlet que combina los datos enviados con la plantilla xdp
-* Perfil de procesamiento HTML: asegúrese de seleccionar &quot;AddImageToMobileForm&quot;. Esto colocará el código en déclencheur para agregar una imagen al formulario.
+* Perfil de procesamiento del HTML: asegúrese de seleccionar &quot;AddImageToMobileForm&quot;. Esto colocará el código en déclencheur para agregar una imagen al formulario.
 
 Para probar esta capacidad en su propio servidor, siga los siguientes pasos:
 
@@ -115,9 +114,8 @@ Para probar esta capacidad en su propio servidor, siga los siguientes pasos:
 
 * [Descargue e instale el paquete asociado a este artículo.](assets/pdf-from-mobile-form-submission.zip)
 
-* Asegúrese de que la URL de envío y el perfil de renderización HTML estén correctamente configurados viendo la página de propiedades de [xdp](http://localhost:4502/libs/fd/fm/gui/content/forms/formmetadataeditor.html/content/dam/formsanddocuments/schengen.xdp)
+* Asegúrese de que la URL de envío y el perfil de procesamiento del HTML estén correctamente configurados viendo la página de propiedades de la variable  [xdp](http://localhost:4502/libs/fd/fm/gui/content/forms/formmetadataeditor.html/content/dam/formsanddocuments/schengen.xdp)
 
 * [Vista previa del XDP como html](http://localhost:4502/content/dam/formsanddocuments/schengen.xdp/jcr:content)
 
-* Agregue una imagen al formulario y envíelo. Debería recuperar el PDF con la imagen en él.
-
+* Agregue una imagen al formulario y envíelo. Debe volver a obtener el PDF con la imagen que contiene.

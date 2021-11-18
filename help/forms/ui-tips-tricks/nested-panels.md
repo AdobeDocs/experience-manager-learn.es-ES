@@ -8,9 +8,9 @@ topic: Development
 role: Developer
 level: Beginner
 kt: 9335
-source-git-commit: 458f1c2df6472be2b4704bb68eafb92b58f48a97
+source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '247'
 ht-degree: 0%
 
 ---
@@ -18,11 +18,6 @@ ht-degree: 0%
 # Pestañas de navegación con varios paneles
 
 Cuando el formulario ha dejado fichas de navegación y una de las fichas tiene varios paneles, es posible que desee ocultar el título de los paneles secundarios y poder navegar entre las fichas y los paneles secundarios de estas fichas
-
-[Esta capacidad está activa en este formulario](https://forms.enablementadobe.com/content/forms/af/testnav1.html)
-
-
-
 
 ## Crear formulario adaptable
 

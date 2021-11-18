@@ -1,25 +1,23 @@
 ---
 title: Visualización de imágenes en línea en Forms adaptable
 description: Mostrar imágenes cargadas en línea en Forms adaptable
-feature: Formularios adaptables
+feature: Adaptive Forms
 topics: development
 version: 6.3,6.4,6.5
-topic: Desarrollo
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 4a69513d-992c-435a-a520-feb9085820e7
+source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '240'
-ht-degree: 1%
+source-wordcount: '225'
+ht-degree: 0%
 
 ---
-
 
 # Imágenes en línea en Adaptive Forms
 
 Un caso de uso común es mostrar la imagen cargada como una imagen en línea en el formulario adaptable. De forma predeterminada, la imagen cargada se muestra como un vínculo y esta experiencia se puede mejorar mostrando la imagen en el formulario adaptable. Este artículo le guiará por los pasos necesarios para mostrar la imagen en línea.
-
-[Ejemplo activo de esta capacidad](https://forms.enablementadobe.com/content/samples/samples.html?query=0#collapse1)
 
 ## Agregar imagen de marcador de posición
 
@@ -66,7 +64,7 @@ function consumeImage (file) {
 
 ### Implementar en el servidor
 
-* Descargue e instale la [biblioteca de cliente](assets/inline-image-client-library.zip) en la instancia de AEM mediante AEM administrador de paquetes.
-* Descargue e instale el [ejemplo de formulario](assets/inline-image-af.zip) en su instancia de AEM con AEM administrador de paquetes.
-* Apunte el navegador para [Agregar imagen en línea](http://localhost:4502/content/dam/formsanddocuments/addinlineimage/jcr:content?wcmmode=disabled)
+* Descargue e instale el [biblioteca cliente](assets/inline-image-client-library.zip) en la instancia de AEM mediante AEM administrador de paquetes.
+* Descargue e instale el [formulario de ejemplo](assets/inline-image-af.zip) en su instancia de AEM usando AEM administrador de paquetes.
+* Especifique el explorador para [Agregar imagen en línea](http://localhost:4502/content/dam/formsanddocuments/addinlineimage/jcr:content?wcmmode=disabled)
 * Haga clic en el botón &quot;Adjuntar la foto&quot; para añadir la imagen

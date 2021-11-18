@@ -8,9 +8,9 @@ topic: Development
 role: Developer
 level: Beginner
 kt: 9270
-source-git-commit: 96b78ff5056bd9c2be39fb2cf21b4f92863af089
+source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '167'
 ht-degree: 4%
 
 ---
@@ -20,9 +20,7 @@ ht-degree: 4%
 Un caso de uso común es permitir que los usuarios que rellenen el formulario puedan acceder al texto introducido en el campo de contraseña.
 Para lograr este caso de uso, he utilizado el icono de ojo del [Biblioteca Awesome de fuentes](https://fontawesome.com/). El CSS requerido y el eye.svg se incluyen en la biblioteca de cliente creada para esta demostración.
 
-## Muestra en vivo
 
-[Esta funcionalidad está disponible para probar aquí](https://forms.enablementadobe.com/content/dam/formsanddocuments/simpleuitips/jcr:content?wcmmode=disabled)
 
 ## Código de muestra
 
