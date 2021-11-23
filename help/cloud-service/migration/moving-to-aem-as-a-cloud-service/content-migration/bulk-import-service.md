@@ -8,7 +8,7 @@ level: Experienced
 kt: 8918
 thumbnail: 336969.jpeg
 exl-id: 4944d3d9-52a0-4255-9e6c-eb119160e400
-source-git-commit: 3657e7798774f9cc673ff6ccd8af1a555b1d4013
+source-git-commit: 1dcb66bc3535231c89f3e7fc127688fcf96f2b61
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 0%
@@ -27,13 +27,13 @@ Descubra cómo se puede utilizar AEM as a Bulk Import Service de los Cloud Servi
 
 El servicio de importación masiva se utiliza para transferir archivos almacenados en el almacenamiento Azure Blob o Amazon S3 a AEM as a Cloud Service como recursos.
 
-### Actividades clave
+## Actividades clave
 
 + Cargue los archivos que desea importar a su proveedor de almacenamiento en la nube (Azure Blob Storage o Amazon S3).
 + Configure y ejecute el servicio de importación masiva desde AEM servicio Autor as a Cloud Service.
 + Ejecute el Importador de servicios masivos como una única importación o programe una importación periódica.
 
-### Otros recursos
+## Otros recursos
 
 + [Sesión en directo de desarrolladores de Adobe sobre la ingesta de recursos](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/feb2021/asset-bulk-ingestion.html?lang=en)
 
