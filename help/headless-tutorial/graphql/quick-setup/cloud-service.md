@@ -8,9 +8,9 @@ role: Developer
 level: Beginner
 kt: 9442
 thumbnail: 339073.jpg
-source-git-commit: f13f32de11bda924a2d255678e58e7c982d0d004
+source-git-commit: 0dae6243f2a30147bed7079ad06144ad35b781d8
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1075'
 ht-degree: 2%
 
 ---
@@ -193,5 +193,7 @@ _Descripción general de los pasos_
 Felicitaciones! ¡Ha utilizado correctamente AEM sin encabezado para activar una aplicación React!
 
 Para comprender en detalle cómo la aplicación React consume contenido de AEM as a Cloud Service, consulte [tutorial AEM Headless](../multi-step/overview.md). El tutorial explora cómo se crean los fragmentos de contenido en AEM y cómo esta aplicación React consume su contenido como JSON.
+
+### Siguientes pasos
 
 + [Iniciar el tutorial AEM sin encabezado](../multi-step/overview.md)

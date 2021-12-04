@@ -10,7 +10,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: d85b7ac3-42c1-4655-9394-29a797c0e1d7
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 0dae6243f2a30147bed7079ad06144ad35b781d8
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Es posible hacer referencia a un fragmento de contenido desde otro fragmento de contenido. Esto permite al usuario crear modelos de datos complejos con relaciones entre fragmentos.
 
-En este capítulo, actualizará el modelo de aventura para incluir una referencia al modelo colaborador mediante el campo **Referencia de fragmento**. También aprenderá a modificar una consulta de GraphQL para incluir campos de un modelo al que se hace referencia.
+En este capítulo, actualizará el modelo de aventura para incluir una referencia al modelo colaborador mediante el uso de la variable **Referencia de fragmento** campo . También aprenderá a modificar una consulta de GraphQL para incluir campos de un modelo al que se hace referencia.
 
 ## Requisitos previos
 
@@ -39,21 +39,21 @@ En este capítulo, aprenderemos a:
 Actualice el modelo de fragmento de contenido de aventura para añadir una referencia al modelo colaborador.
 
 1. Abra un explorador nuevo y vaya a AEM.
-1. En el menú **Inicio de AEM** vaya a **Herramientas** > **Recursos** > **Modelos de fragmento de contenido** > **Sitio WKND**.
-1. Abra el modelo de fragmento de contenido **Adventure**
+1. En el **Inicio de AEM** vaya a **Herramientas** > **Recursos** > **Modelos de fragmento de contenido** > **Sitio WKND**.
+1. Abra el **Aventura** Modelo de fragmento de contenido
 
    ![Abrir el modelo de fragmento de contenido de aventura](assets/fragment-references/adventure-content-fragment-edit.png)
 
-1. En **Tipos de datos**, arrastre y suelte un campo **Referencia de fragmento** en el panel principal.
+1. En **Tipos de datos**, arrastre y suelte una **Referencia de fragmento** en el panel principal.
 
    ![Campo Agregar referencia de fragmento](assets/fragment-references/add-fragment-reference-field.png)
 
-1. Actualice **Properties** para este campo con lo siguiente:
+1. Actualice el **Propiedades** para este campo con lo siguiente:
 
    * Procesar como - `fragmentreference`
    * Etiqueta de campo - **Colaborador de aventura**
    * Nombre de propiedad - `adventureContributor`
-   * Tipo de modelo: seleccione el modelo **Contributor**
+   * Tipo de modelo: seleccione el **Colaborador** model
    * Ruta de acceso raíz - `/content/dam/wknd`
 
    ![Propiedades de referencia de fragmento](assets/fragment-references/fragment-reference-properties.png)
@@ -64,14 +64,14 @@ Actualice el modelo de fragmento de contenido de aventura para añadir una refer
 
 ## Asignar un colaborador a una aventura
 
-Ahora que el modelo de fragmento de contenido de aventura se ha actualizado, podemos editar un fragmento existente y hacer referencia a un colaborador. Cabe señalar que la edición del modelo de fragmento de contenido *afecta* a cualquier fragmento de contenido existente creado a partir de él.
+Ahora que el modelo de fragmento de contenido de aventura se ha actualizado, podemos editar un fragmento existente y hacer referencia a un colaborador. Cabe señalar que la edición del modelo de fragmento de contenido *afecta* cualquier fragmento de contenido existente creado a partir de él.
 
-1. Vaya a **Assets** > **Files** > **WKND Site** > **English** > **Adventures** > **[Bali Surf Camp](http://localhost:4502/assets.html/content/dam/wknd/en/adventures/bali-surf-camp)**.
+1. Vaya a **Recursos** > **Archivos** > **Sitio WKND** > **Inglés** > **Aventuras** > **[Campo de surf de Bali](http://localhost:4502/assets.html/content/dam/wknd/en/adventures/bali-surf-camp)**.
 
-   ![Carpeta del Campamento Surf de Bali](assets/setup/bali-surf-camp-folder.png)
+   ![Carpeta del Campamento Surf de Bali](../quick-setup/assets/setup/bali-surf-camp-folder.png)
 
-1. Haga clic en el fragmento de contenido **Bali Surf Camp** para abrir el Editor de fragmentos de contenido.
-1. Actualice el campo **Colaborador de aventura** y seleccione un colaborador haciendo clic en el icono de carpeta.
+1. Haga clic en **Campo de surf de Bali** fragmento de contenido para abrir el Editor de fragmentos de contenido.
+1. Actualice el **Colaborador de aventura** y seleccione un colaborador haciendo clic en el icono de carpeta.
 
    ![Seleccione Stacey Roswells como colaborador](assets/fragment-references/stacey-roswell-contributor.png)
 
@@ -79,11 +79,11 @@ Ahora que el modelo de fragmento de contenido de aventura se ha actualizado, pod
 
    ![ruta rellenada al colaborador](assets/fragment-references/populated-path.png)
 
-   Observe que solo los fragmentos creados con el modelo **Contributor** pueden seleccionarse.
+   Observe que solo los fragmentos creados con la variable **Colaborador** se pueden seleccionar.
 
 1. Guarde los cambios en el fragmento.
 
-1. Repita los pasos anteriores para asignar un colaborador a aventuras como [Yosemite Backpacking](http://localhost:4502/editor.html/content/dam/wknd/en/adventures/yosemite-backpacking/yosemite-backpacking) y [Colorado Rock Climbing](http://localhost:4502/editor.html/content/dam/wknd/en/adventures/colorado-rock-climbing/colorado-rock-climbing)
+1. Repita los pasos anteriores para asignar un colaborador a aventuras como [Mochila yosemite](http://localhost:4502/editor.html/content/dam/wknd/en/adventures/yosemite-backpacking/yosemite-backpacking) y [Colorado Rock Climbing](http://localhost:4502/editor.html/content/dam/wknd/en/adventures/colorado-rock-climbing/colorado-rock-climbing)
 
 ## Consultar fragmento de contenido anidado con GraphiQL
 
@@ -113,7 +113,7 @@ A continuación, realice una consulta para una aventura y añada propiedades ani
    }
    ```
 
-   La consulta anterior es para una sola Aventura por su ruta. La propiedad `adventureContributor` hace referencia al modelo del colaborador y, a continuación, podemos solicitar propiedades desde el fragmento de contenido anidado.
+   La consulta anterior es para una sola Aventura por su ruta. La variable `adventureContributor` hace referencia al modelo de colaborador y, a continuación, podemos solicitar propiedades desde el fragmento de contenido anidado.
 
 1. Ejecute la consulta y debe obtener un resultado como el siguiente:
 
@@ -137,7 +137,7 @@ A continuación, realice una consulta para una aventura y añada propiedades ani
    }
    ```
 
-1. Experimente con otras consultas como `adventureList` y agregue propiedades para el fragmento de contenido al que se hace referencia en `adventureContributor`.
+1. Experimente con otras consultas como `adventureList` y agregar propiedades para el fragmento de contenido al que se hace referencia en `adventureContributor`.
 
 ## Actualizar la aplicación React para mostrar el contenido del colaborador
 
@@ -149,7 +149,7 @@ A continuación, actualice las consultas utilizadas por la aplicación React par
 
    ![IDE de componente de detalle de aventura](assets/fragment-references/adventure-detail-ide.png)
 
-1. Busque la función `adventureDetailQuery(_path)`. La función `adventureDetailQuery(..)` simplemente ajusta una consulta GraphQL de filtrado, que utiliza AEM sintaxis `<modelName>ByPath` para consultar un solo fragmento de contenido identificado por su ruta JCR.
+1. Buscar la función `adventureDetailQuery(_path)`. La variable `adventureDetailQuery(..)` simplemente ajusta una consulta GraphQL de filtrado, que usa AEM `<modelName>ByPath` para consultar un solo fragmento de contenido identificado por su ruta JCR.
 
 1. Actualice la consulta para incluir información sobre el colaborador al que se hace referencia:
 
@@ -197,11 +197,11 @@ A continuación, actualice las consultas utilizadas por la aplicación React par
    }
    ```
 
-   Con esta actualización, se incluirán en la consulta propiedades adicionales sobre `adventureContributor`, `fullName`, `occupation` y `pictureReference`.
+   Con esta actualización, propiedades adicionales sobre la variable `adventureContributor`, `fullName`, `occupation`y `pictureReference` se incluye en la consulta.
 
-1. Inspect el componente `Contributor` incrustado en el archivo `AdventureDetail.js` en `function Contributor(...)`. Este componente renderizará el nombre, la ocupación y la imagen del colaborador si existen las propiedades.
+1. Inspect la variable `Contributor` componente incrustado en el `AdventureDetail.js` file at `function Contributor(...)`. Este componente renderizará el nombre, la ocupación y la imagen del colaborador si existen las propiedades.
 
-   Se hace referencia al componente `Contributor` en el método `AdventureDetail(...)` `return`:
+   La variable `Contributor` se hace referencia al componente en la variable `AdventureDetail(...)` `return` método:
 
    ```javascript
    function AdventureDetail(props) {
@@ -228,14 +228,14 @@ A continuación, actualice las consultas utilizadas por la aplicación React par
    $ npm start
    ```
 
-1. Vaya a [http://localhost:3000](http://localhost:3000/) y haga clic en una aventura que tenga un colaborador al que se haga referencia. Ahora debería ver la información del colaborador listada debajo del **itinerario**:
+1. Vaya a [http://localhost:3000](http://localhost:3000/) y haga clic en una aventura que tenga un colaborador al que se hace referencia. Ahora debería ver la información de colaborador que aparece a continuación del **Itinerario**:
 
    ![Colaborador añadido en la aplicación](assets/fragment-references/contributor-added-detail.png)
 
 ## Felicitaciones!{#congratulations}
 
-Felicitaciones! Ha actualizado un modelo de fragmento de contenido existente para hacer referencia a un fragmento de contenido anidado mediante el campo **Referencia de fragmento**. También ha aprendido a modificar una consulta de GraphQL para incluir campos de un modelo al que se hace referencia.
+Felicitaciones! Ha actualizado un modelo de fragmento de contenido existente para que haga referencia a un fragmento de contenido anidado mediante la variable **Referencia de fragmento** campo . También ha aprendido a modificar una consulta de GraphQL para incluir campos de un modelo al que se hace referencia.
 
 ## Siguientes pasos {#next-steps}
 
-En el capítulo siguiente, [Implementación de producción mediante un entorno de AEM Publish](./production-deployment.md), obtenga información sobre los servicios de AEM Author y Publish y el patrón de implementación recomendado para aplicaciones sin periféricos. Actualizará una aplicación existente para utilizar variables de entorno para cambiar dinámicamente un extremo de GraphQL en función del entorno de destino. También aprenderá a configurar correctamente AEM para el uso compartido de recursos de origen cruzado (CORS).
+En el capítulo siguiente, [Implementación de producción mediante un entorno de publicación de AEM](./production-deployment.md), obtenga información sobre los servicios de AEM Author y Publish y el patrón de implementación recomendado para aplicaciones sin encabezado. Actualizará una aplicación existente para utilizar variables de entorno para cambiar dinámicamente un extremo de GraphQL en función del entorno de destino. También aprenderá a configurar correctamente AEM para el uso compartido de recursos de origen cruzado (CORS).
