@@ -6,10 +6,10 @@ version: Cloud Service
 feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites
 kt: 2963
 index: y
-source-git-commit: 0dae6243f2a30147bed7079ad06144ad35b781d8
+source-git-commit: f3f373b2bc553b0ebd570a65ddc526784e504198
 workflow-type: tm+mt
 source-wordcount: '190'
-ht-degree: 20%
+ht-degree: 22%
 
 ---
 
@@ -19,8 +19,9 @@ ht-degree: 20%
 + [Información general AEM sin encabezado](./overview.md)
 + GraphQL {#graphql}
    + [Información general](./graphql/overview.md)
-   + [Configuración rápida](./graphql/quick-setup/cloud-service.md)
-   + [Configuración rápida del SDK local](./graphql/quick-setup/local-sdk.md)
+   + Configuración rápida {#quick-setup}
+      + [Servicio de nube](./graphql/quick-setup/cloud-service.md)
+      + [SDK local](./graphql/quick-setup/local-sdk.md)
    + Serie de vídeos{#video-series}
       + [1 - Conceptos básicos de modelos](./graphql/video-series/modeling-basics.md)
       + [2: Modelado avanzado](./graphql/video-series/advanced-modeling.md)
