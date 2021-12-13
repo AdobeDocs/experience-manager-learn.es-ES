@@ -8,13 +8,13 @@ role: Architect, Developer
 level: Intermediate
 kt: 9355
 thumbnail: KT-9355.jpeg
-source-git-commit: 6f047a76693bc05e64064fce6f25348037749f4c
+exl-id: c1a26dcb-b2ae-4015-b865-2ce32f4fa869
+source-git-commit: 6ed26e5c9bf8f5e6473961f667f9638e39d1ab0e
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 0%
 
 ---
-
 
 # Conexiones SQL usando DataSourcePool de JDBC
 
@@ -32,7 +32,7 @@ El siguiente ejemplo de código es compatible con las siguientes opciones avanza
 
 La cadena de conexión de la configuración OSGi utiliza:
 
-+ `AEM_PROXY_HOST` a través de la variable [Variable de entorno de configuración OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#environment-specific-configuration-values) `$[env:AEM_PROXY_HOST]` como host de la conexión
++ `AEM_PROXY_HOST` a través de la variable [Variable de entorno de configuración OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#environment-specific-configuration-values) `$[env:AEM_PROXY_HOST;default=proxy.tunnel]` como host de la conexión
 + `30001` que es el `portOrig` valor para la asignación de reenvío de puerto de Cloud Manager `30001` → `mysql.example.com:3306`
 
 Dado que los secretos no deben almacenarse en código, el nombre de usuario y la contraseña de la conexión SQL se proporcionan mejor a través de variables de configuración OSGi, configuradas mediante la CLI de AIO o las API de Cloud Manager.
@@ -43,7 +43,7 @@ Dado que los secretos no deben almacenarse en código, el nombre de usuario y la
 {
   "datasource.name": "wknd-examples-mysql",
   "jdbc.driver.class": "com.mysql.jdbc.Driver",
-  "jdbc.connection.uri": "jdbc:mysql://$[env:AEM_PROXY_HOST]:30001/wknd-examples",
+  "jdbc.connection.uri": "jdbc:mysql://$[env:AEM_PROXY_HOST;default=proxy.tunnel]:30001/wknd-examples",
   "jdbc.username": "$[env:MYSQL_USERNAME;default=mysql-user]",
   "jdbc.password": "$[secret:MYSQL_PASSWORD]"
 }
