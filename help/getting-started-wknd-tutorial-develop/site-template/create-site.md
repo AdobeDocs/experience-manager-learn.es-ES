@@ -11,18 +11,14 @@ level: Beginner
 kt: 7496
 thumbnail: KT-7496.jpg
 exl-id: 6d0fdc4d-d85f-4966-8f7d-d53506a7dd08
-source-git-commit: 04096fe3c99cdcce2d43b2b29899c2bbe37ac056
+source-git-commit: 0225b7f2e495d5c020ea5192302691e3466808ed
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '924'
 ht-degree: 0%
 
 ---
 
 # Crear un sitio {#create-site}
-
->[!CAUTION]
->
-> La herramienta Creación rápida de sitios es actualmente una vista previa técnica. Está disponible con fines de ensayo y evaluación y no está pensado para su uso en producción a menos que se acuerde con la asistencia al Adobe.
 
 Como parte de la Creación rápida de sitios, utilice el Asistente para la creación de sitios en Adobe Experience Manager, AEM, para generar un nuevo sitio web. La plantilla de sitio estándar proporcionada por el Adobe, se utiliza como punto de partida para el nuevo sitio.
 

@@ -11,18 +11,14 @@ level: Beginner
 kt: 7498
 thumbnail: KT-7498.jpg
 exl-id: 98946462-1536-45f9-94e2-9bc5d41902d4
-source-git-commit: 04096fe3c99cdcce2d43b2b29899c2bbe37ac056
+source-git-commit: 0225b7f2e495d5c020ea5192302691e3466808ed
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
 
 # Flujo de trabajo temático {#theming}
-
->[!CAUTION]
->
-> La herramienta Creación rápida de sitios es actualmente una vista previa técnica. Está disponible con fines de ensayo y evaluación y no está pensado para su uso en producción a menos que se acuerde con la asistencia al Adobe.
 
 En este capítulo actualizaremos las fuentes temáticas de un sitio de Adobe Experience Manager para aplicar estilos específicos de marca. Aprenderemos a utilizar un servidor proxy para ver una vista previa de las actualizaciones de CSS y Javascript a medida que se codifica en el sitio activo. Este tutorial también tratará sobre cómo implementar actualizaciones de temas en un sitio AEM mediante la canalización front-end de Adobe Cloud Manager.
 

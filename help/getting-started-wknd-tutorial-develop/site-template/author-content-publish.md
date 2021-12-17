@@ -11,18 +11,14 @@ level: Beginner
 kt: 7497
 thumbnail: KT-7497.jpg
 exl-id: 17ca57d1-2b9a-409c-b083-398d38cd6a19
-source-git-commit: 04096fe3c99cdcce2d43b2b29899c2bbe37ac056
+source-git-commit: 0225b7f2e495d5c020ea5192302691e3466808ed
 workflow-type: tm+mt
-source-wordcount: '1364'
+source-wordcount: '1333'
 ht-degree: 2%
 
 ---
 
 # Introducción a la creación y publicación {#author-content-publish}
-
->[!CAUTION]
->
-> La herramienta Creación rápida de sitios es actualmente una vista previa técnica. Está disponible con fines de ensayo y evaluación y no está pensado para su uso en producción a menos que se acuerde con la asistencia al Adobe.
 
 Es importante comprender cómo un usuario actualizará el contenido del sitio web. En este capítulo adoptaremos la personalidad de una **Autor de contenido** y haga algunas actualizaciones editoriales del sitio generadas en el capítulo anterior. Al final del capítulo, publicaremos los cambios para comprender cómo se actualiza el sitio en directo.
 
