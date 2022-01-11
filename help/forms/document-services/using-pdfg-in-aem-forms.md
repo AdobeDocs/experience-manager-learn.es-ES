@@ -1,39 +1,39 @@
 ---
 title: Uso de PDFG en AEM Forms
-description: Demostración de la capacidad de arrastrar y soltar para crear PDF con AEM Forms
-feature: Generador de PDF
+description: Demostración de la capacidad de arrastrar y soltar para crear un PDF con AEM Forms
+feature: PDF Generator
 version: 6.4,6.5
-topic: Desarrollo
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: bc79fcbf-b8b3-4d3a-9cd6-0bcd9321c7d5
+source-git-commit: 8d83d01fca3bfc9e6f674f7d73298b42f98a5d46
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 3%
+source-wordcount: '271'
+ht-degree: 2%
 
 ---
 
-
 # Uso de PDFG en AEM Forms{#using-pdfg-in-aem-forms}
 
-Demostración de la capacidad de arrastrar y soltar para crear PDF con AEM Forms
+Demostración de la capacidad de arrastrar y soltar para crear un PDF con AEM Forms
 
-PDFG significa Generación de PDF. Esto significa que puede convertir una gran variedad de formatos de archivo a PDF. Los más comunes son documentos de Microsoft Office. PDFG forma parte de AEM Forms desde la versión 6.1.
-[El javadoc para la API PDFG está listado aquí](https://helpx.adobe.com/experience-manager/6-3/forms/using/aem-document-services-programmatically.html#PDFGeneratorService)
+PDFG significa Generación de PDF. Esto significa que puede convertir una variedad de formatos de archivo en PDF. Los más comunes son los documentos de Microsoft Office. PDFG forma parte de AEM Forms desde la versión 6.1.
+[El archivo javadoc para la API PDFG está listado aquí](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html)
 
-Los recursos asociados con este artículo le permitirán arrastrar y soltar documentos de MS office o archivos JPG en la zona de colocación de la página HTML. Una vez que el documento se haya colocado, invocará el servicio PDFG, convertirá el documento a PDF y lo guardará en el sistema de archivos de AEM Server.
+Los recursos asociados con este artículo le permitirán arrastrar y soltar documentos de MS office o archivos de JPG en la zona de colocación de la página de HTML. Una vez que se suelte el documento, invocará el servicio PDFG, convertirá el documento en PDF y lo guardará en el sistema de archivos de AEM Server.
 
 Para instalar los recursos de demostración, realice los siguientes pasos
 
-1. Configure el PDFG como se menciona en este documento [aquí](https://helpx.adobe.com/es/experience-manager/6-4/forms/using/install-configure-pdf-generator.html).
+1. Configurar PDFG como se menciona en este documento [here](https://helpx.adobe.com/es/experience-manager/6-4/forms/using/install-configure-pdf-generator.html).
 1. Siga la documentación apropiada relacionada con su versión de AEM Forms.
 1. [Importe e instale recursos relacionados con este artículo mediante el administrador de paquetes.](assets/createpdfgdemov2.zip)
-1. [Vaya a post.](http://localhost:4502/apps/AemFormsSamples/components/createPDF/POST.jsp) jspin your CRX
+1. [Vaya a post.jsp](http://localhost:4502/apps/AemFormsSamples/components/createPDF/POST.jsp) en su CRX
 1. Cambie la ubicación de guardado según sus preferencias (línea 9)
 1. Guarde los cambios.
-1. Abra la [ página html](http://localhost:4502/content/DocumentServices/CreatePDFG.html) para arrastrar y soltar archivos para la conversión.
+1. Abra el [  página html](http://localhost:4502/content/DocumentServices/CreatePDFG.html) para arrastrar y soltar archivos para la conversión.
 1. Coloque un archivo de palabra o jpg en la zona de colocación.
-1. El documento de entrada se convertirá a PDF y se guardará en la misma ubicación especificada en el punto 4.
+1. El documento de entrada se convertirá en PDF y se guardará en la misma ubicación especificada en el punto 4.
 
 El siguiente fragmento de código muestra el uso del servicio PDFG para convertir archivos a PDF
 
@@ -42,4 +42,3 @@ com.adobe.pdfg.service.api.GeneratePDFService pdfService = sling.getService(com.
 System.out.println("Got PDF Service");
 java.util.Map map = pdfService.createPDF(uploadedDocument,fileName,"","Standard","No Security", null, null);
 ```
-

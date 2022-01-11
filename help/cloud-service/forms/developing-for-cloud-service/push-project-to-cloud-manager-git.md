@@ -8,13 +8,13 @@ level: Beginner, Intermediate
 version: Cloud Service
 topic: Development
 kt: 8851
-source-git-commit: 9063c3dfd9ab9ac537850694ce6545a3fdc840e9
+exl-id: e61cea37-b931-49c6-9e5d-899628535480
+source-git-commit: 8d83d01fca3bfc9e6f674f7d73298b42f98a5d46
 workflow-type: tm+mt
 source-wordcount: '139'
 ht-degree: 0%
 
 ---
-
 
 # Insertar AEM proyecto en el repositorio de Git de Cloud Manager
 
@@ -23,7 +23,7 @@ Ahora necesitamos agregar estos cambios a nuestro repositorio de Git local y lue
 Abra el símbolo del sistema y vaya a c:\cloudmanager\aem-banking-app Execute the following commands
 
 ```
-git add .**
+git add .
 ```
 
 Esto agrega los nuevos archivos a la rama de etapa del repositorio de Git local
@@ -39,6 +39,3 @@ git push -f bankingapp master:"MyFirstAF"
 ```
 
 En el comando anterior estamos empujando nuestra rama maestra desde nuestro repositorio de Git local a la rama MyFirstAF del repositorio de cloud manager identificado por el nombre descriptivo de la aplicación de banca.
-
-
-
