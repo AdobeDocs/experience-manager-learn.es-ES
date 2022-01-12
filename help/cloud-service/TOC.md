@@ -4,9 +4,9 @@ user-guide-description: Una recopilación de tutoriales de Adobe Experience Mana
 breadcrumb-title: Tutoriales de AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: 6ed26e5c9bf8f5e6473961f667f9638e39d1ab0e
+source-git-commit: f712e86600ed18aee43187a5fb105324b14b7b89
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '650'
 ht-degree: 21%
 
 ---
@@ -157,14 +157,14 @@ ht-degree: 21%
       + [Configuración del panel de recursos](./forms/create-first-af/configure-assets-panel.md)
       + [Configuración del panel de inicio](./forms/create-first-af/configure-start-panel.md)
       + [Agregar y configurar barra de herramientas](./forms/create-first-af/add-configure-toolbar.md)
-   + API de Document Cloud y AEM Forms CS{#doc-cloud-sdk}
-      + [Introducción](./forms/doc-cloud-sdk/introduction.md)
-      + [Crear proyecto de IO de Adobe](./forms/doc-cloud-sdk/create-document-cloud-credentials.md)
-      + [Crear configuración OSGI](./forms/doc-cloud-sdk/create-doc-cloud-configuration.md)
-      + [Definir interfaz](./forms/doc-cloud-sdk/create-interface.md)
-      + [Implementar interfaz](./forms/doc-cloud-sdk/implement-interface.md)
-      + [Crear parte JSON](./forms/doc-cloud-sdk/get-content-analyzer.md)
-      + [Paso de proceso personalizado](./forms/doc-cloud-sdk/custom-process-step.md)
+   + Generación de documentos en AEM Forms CS{#doc-gen-formscs}
+      + [Introducción](./forms/doc-gen-forms-cs/introduction.md)
+      + [Crear credenciales de servicio](./forms/doc-gen-forms-cs/service-credentials.md)
+      + [Crear token JWT](./forms/doc-gen-forms-cs/create-jwt.md)
+      + [Crear token de acceso](./forms/doc-gen-forms-cs/create-access-token.md)
+      + [Combinar datos con plantilla](./forms/doc-gen-forms-cs/merge-data-with-template.md)
+      + [Probar la solución](./forms/doc-gen-forms-cs/test.md)
+      + [Desafío](./forms/doc-gen-forms-cs/challenge.md)
    + Almacenamiento de Azure Portal{#forms-cs-azure-portal}
       + [Introducción](./forms/forms-cs-azure-portal/introduction.md)
       + [Crear modelo de datos de formulario](./forms/forms-cs-azure-portal/create-fdm.md)
