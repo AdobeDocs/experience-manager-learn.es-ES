@@ -4,9 +4,9 @@ user-guide-description: Una recopilación de tutoriales de Adobe Experience Mana
 breadcrumb-title: Tutoriales de AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: f712e86600ed18aee43187a5fb105324b14b7b89
+source-git-commit: cea9a9dc003b76369db1b7fedb9549062885258d
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '656'
 ht-degree: 21%
 
 ---
@@ -145,6 +145,7 @@ ht-degree: 21%
       + [Incluir Cloud Services y FDM](./forms/developing-for-cloud-service/azure-storage-fdm.md)
       + [Insertar en Cloud Manager](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
       + [Implementar en entorno de desarrollo](./forms/developing-for-cloud-service/deploy-to-dev-environment.md)
+      + [Actualización del tipo de archivo maven](./forms/developing-for-cloud-service/updating-project-archetype.md)
    + Crear formulario adaptable{#create-first-af}
       + [Introducción](./forms/create-first-af/introduction.md)
       + [Crear tema](./forms/create-first-af/create-theme.md)
@@ -172,6 +173,7 @@ ht-degree: 21%
       + [Cumplimentar el formulario previamente](./forms/forms-cs-azure-portal/prefill-af-storage.md)
       + [Envíos de consultas](./forms/forms-cs-azure-portal/query-submitted-data.md)
    + Crear flujo de trabajo de revisión{#create-aem-workflow}
+      + [Externalización del almacenamiento del flujo de trabajo](./forms/create-aem-workflow/externalize-workflow.md)
       + [Crear modelo de flujo de trabajo](./forms/create-aem-workflow/create-workflow.md)
       + [flujo de trabajo de déclencheur](./forms/create-aem-workflow/configure-af.md)
    + Adobe Sign con AEM Forms{#forms-and-sign}
