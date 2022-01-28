@@ -6,10 +6,10 @@ version: Cloud Service
 feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites
 kt: 2963
 index: y
-source-git-commit: 922248133a12e05ea9068a0646324f2370e743e9
+source-git-commit: 83e16ea87847182139982ea2378d8ff9f079c968
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 21%
+source-wordcount: '221'
+ht-degree: 19%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 21%
       + [5 - Puntos finales de GraphQL](./graphql/video-series/graphql-endpoints.md)
       + [6 - Arquitectura de creación y publicación](./graphql/video-series/author-publish-architecture.md)
       + [7 - Consultas persistentes de GraphQL](./graphql/video-series/graphql-persisted-queries.md)
-   + Tutorial de varios pasos{#multi-step}
+   + Tutorial básico{#multi-step}
       + [Información general](./graphql/multi-step/overview.md)
       + [1 - Definición de modelos de fragmento de contenido](./graphql/multi-step/content-fragment-models.md)
       + [2 - Creación de fragmentos de contenido](./graphql/multi-step/author-content-fragments.md)
@@ -39,6 +39,13 @@ ht-degree: 21%
       + [4 - Consulta desde una aplicación externa](./graphql/multi-step/graphql-and-external-app.md)
       + [5 - Modelado de datos avanzado con referencias de fragmento](./graphql/multi-step/fragment-references.md)
       + [6 - Implementación de producción](./graphql/multi-step/production-deployment.md)
+   + Tutorial avanzado{#advanced-tutorial}
+      + [Información general](/help/headless-tutorial/graphql/advanced-graphql/overview.md)
+      + [1 - Crear modelos de fragmento de contenido](/help/headless-tutorial/graphql/advanced-graphql/create-content-fragment-models.md)
+      + [2 - Crear fragmentos de contenido](/help/headless-tutorial/graphql/advanced-graphql/author-content-fragments.md)
+      + [3 - Explorar la API de AEM GraphQL](/help/headless-tutorial/graphql/advanced-graphql/explore-graphql-api.md)
+      + [4 - Consultas persistentes de GraphQL](/help/headless-tutorial/graphql/advanced-graphql/graphql-persisted-queries.md)
+      + [5 - Integración de aplicaciones de cliente](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md)
    + Ejemplos {#example-apps}
       + [React](./graphql/example-apps/react-app.md)
       + [Interfaz de usuario Swift de iOS](./graphql/example-apps/ios-swiftui-app.md)
