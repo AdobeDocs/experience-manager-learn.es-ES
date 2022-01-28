@@ -13,7 +13,7 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: d0bd64bd-9e6c-4a28-a8d9-52bb37b27a09
-source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
+source-git-commit: 2685f2553349d6f0b48e03f2ed24dcea7ad9ac70
 workflow-type: tm+mt
 source-wordcount: '999'
 ht-degree: 3%
@@ -189,7 +189,7 @@ Una alternativa a establecer niveles de registro de Java estáticos y conocidos 
 
 Esto requiere actualizar las configuraciones OSGi de registro para utilizar los marcadores de posición de variables específicas del entorno. [Valores predeterminados](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#default-values) para los niveles de registro, debe establecerse como [Recomendaciones de Adobe](#log-levels). Por ejemplo:
 
-`/apps/example/config/org.apache.sling.commons.log.LogManager.factory.config-example.cfg.json`
+`/apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json`
 
 ```
 {
