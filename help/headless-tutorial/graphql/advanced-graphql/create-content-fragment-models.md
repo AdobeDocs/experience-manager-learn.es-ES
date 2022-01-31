@@ -131,18 +131,18 @@ A continuación, cree un modelo que contenga información sobre una persona.
 
 10. En **Aceptar solo el ancho de imagen especificado**, seleccione &quot;Ancho máximo&quot;. En el **Máx. (píxeles)** que aparece, escriba &quot;500&quot;. Seleccione las mismas opciones para **Aceptar solo una altura de imagen especificada**.
 
-   Estas validaciones garantizan que las imágenes añadidas no superen los valores especificados. Las reglas de validación deben tener este aspecto:
-   ![Reglas de validación de referencia de contenido](assets/define-content-fragment-models/content-reference-validation.png)
+    Estas validaciones garantizan que las imágenes añadidas no superen los valores especificados. Las reglas de validación deben tener este aspecto:
+    ![Reglas de validación de referencia de contenido](assets/define-content-fragment-models/content-reference-validation.png)
 
 11. Agregue un **Texto de varias líneas** y asígnele un **Etiqueta de campo** de &quot;Biografía&quot;. Deje el **Tipo predeterminado** como opción predeterminada &quot;Texto enriquecido&quot;.
 
-   ![Opciones de biografía](assets/define-content-fragment-models/biography.png)
+    ![Opciones de biografía](assets/define-content-fragment-models/biography.png)
 
 12. Vaya a la **Tipos de datos** y, a continuación, arrastre una **Enumeración** debajo de &quot;Imagen de perfil&quot;. En lugar del valor predeterminado **Representar como** , seleccione **Lista desplegable**. Introduzca una selección de opciones de nivel de experiencia del instructor, como Experto, Avanzado e Intermedio.
 
 13. A continuación, arrastre otro **Enumeración** en &quot;Nivel de experiencia del instructor&quot; y seleccione &quot;casillas de verificación&quot; en **Representar como** . Introduce diferentes habilidades, como escalada de rock, surf, ciclismo, esquí y moto acuática. La etiqueta de opción y el valor de opción deben coincidir como se muestra a continuación:
 
-   ![Enumeración de habilidades](assets/define-content-fragment-models/skills-enum.png)
+    ![Enumeración de habilidades](assets/define-content-fragment-models/skills-enum.png)
 
 14. Por último, cree una etiqueta de campo &quot;Detalles del administrador&quot; utilizando una **Texto multilínea** campo .
 
