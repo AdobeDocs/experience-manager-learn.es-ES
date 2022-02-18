@@ -4,10 +4,10 @@ user-guide-description: Recopilación de vídeos y tutoriales de Adobe Experienc
 breadcrumb-title: Tutoriales de AEM Assets
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: a5c128d92f4a4625279b6ef76c61f1afb6ed45d5
+source-git-commit: c6caa39075bc3c26dedeca4246e7e1f85887b124
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 26%
+source-wordcount: '378'
+ht-degree: 25%
 
 ---
 
@@ -137,6 +137,12 @@ ht-degree: 26%
    + Conector mejorado{#enhanced-connector}
       + [Conceptos básicos del conector mejorado](./workfront/enhanced-connector/basics.md)
       + [Carpetas de proyecto](./workfront/enhanced-connector/project-folders.md)
+      + AEM serie de expertos{#aem-experts-series}
+         + [Información general](./workfront/enhanced-connector/aem-experts-series/overview.md)
+         + [Configuración](./workfront/enhanced-connector/aem-experts-series/setup.md)
+         + [Workfront forms y metadatos de AEM](./workfront/enhanced-connector/aem-experts-series/custom-forms.md)
+         + [Etiquetas, carpetas vinculadas a proyectos y metadatos de carpetas](./workfront/enhanced-connector/aem-experts-series/aem-tags-project-linked-folders-and-folder-metadata.md)
+         + [Configuración y flujos de trabajo avanzados](./workfront/enhanced-connector/aem-experts-series/advanced-settings-and-workflows.md)
 
 + Traducción {#translation}
    + [Traducción del archivo de origen](translation/source-file-translation-feature-video-use.md)
