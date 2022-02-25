@@ -2,7 +2,7 @@
 title: 'Introducción a AEM Sites: Tipo de archivo del proyecto'
 description: 'Introducción a AEM Sites: Tipo de archivo del proyecto. El tutorial de WKND es un tutorial de varias partes diseñado para desarrolladores que no han llegado a Adobe Experience Manager. El tutorial recorre la implementación de un sitio AEM para una marca ficticia de estilo de vida, la WKND. El tutorial cubre temas fundamentales como la configuración del proyecto, los arquetipos de maven, los componentes principales, las plantillas editables, las bibliotecas de cliente y el desarrollo de componentes.'
 sub-product: sites
-version: 6.4, 6.5, Cloud Service
+version: 6.5, Cloud Service
 type: Tutorial
 feature: Core Components, Page Editor, Editable Templates, AEM Project Archetype
 topic: Content Management, Development
@@ -12,10 +12,10 @@ mini-toc-levels: 1
 index: y
 exl-id: 90d14734-f644-4a45-9361-1e47a5b52fff
 recommendations: disable
-source-git-commit: a366d485da3f473bd4c1ef31538231965acc825c
+source-git-commit: df9ff5e6811d35118d1beee6baaffa51081cb3c3
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 19%
+source-wordcount: '475'
+ht-degree: 20%
 
 ---
 
@@ -25,7 +25,7 @@ Le damos la bienvenida a un tutorial de varias partes diseñado para desarrollad
 
 Este tutorial comienza con el uso de [Tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) para generar un nuevo proyecto.
 
-El tutorial está diseñado para funcionar con **AEM as a Cloud Service** y es compatible con **AEM 6.5.5.0+** y **AEM 6.4.8.1+**. El sitio se implementa mediante:
+El tutorial está diseñado para funcionar con **AEM as a Cloud Service** y es compatible con **AEM 6.5.10+**. El sitio se implementa mediante:
 
 * [Tipo de archivo del proyecto Maven AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 * [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
@@ -44,7 +44,7 @@ Se necesita un entorno de desarrollo local para completar este tutorial. Las cap
 
 Lo siguiente debe instalarse de manera local:
 
-* [AEM local **Autor** instancia](https://experience.adobe.com/#/downloads) (Cloud Service SDK, 6.5.5+ o 6.4.8.1+)
+* [AEM local **Autor** instancia](https://experience.adobe.com/#/downloads) (Cloud Service SDK, 6.5.10+)
 * [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 * [Apache Maven](https://maven.apache.org/) (3.3.9 o posterior)
 * [Node.js](https://nodejs.org/en/) (LTS: compatibilidad a largo plazo)
