@@ -11,9 +11,9 @@ level: Beginner
 kt: 4083
 thumbnail: 30359.jpg
 exl-id: 8d3026e9-a7e2-4a76-8a16-a8197a5e04e3
-source-git-commit: df9ff5e6811d35118d1beee6baaffa51081cb3c3
+source-git-commit: 1a73d7ee1f71a5bd78114398f04e98a894847957
 workflow-type: tm+mt
-source-wordcount: '2889'
+source-wordcount: '2882'
 ht-degree: 1%
 
 ---
@@ -145,7 +145,7 @@ client-side-library/main-scss
 
    Cada archivo se asigna a un componente principal como el [Componente Acordeón](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/accordion.html?lang=en#components). Cada componente principal se crea con [Modificador de elemento de bloque](https://getbem.com/) o notación BEM para facilitar la segmentación de clases CSS específicas con reglas de estilo. Los archivos situados debajo de `/components` el tipo de archivo del proyecto de AEM se ha atascado con las distintas reglas de BEM para cada componente.
 
-1. Descargar los estilos base de WKND **[wknd-base-style-src-v3.zip]/(help/getting-started-wknd-tutorial-develop/project-archetype/assets/client-side-libraries/wknd-base-styles-src-v3.zip)** y **descomprimir** el archivo .
+1. Descargar los estilos base de WKND **[wknd-base-style-src-v3.zip](/help/getting-started-wknd-tutorial-develop/project-archetype/assets/client-side-libraries/wknd-base-styles-src-v3.zip)** y **descomprimir** el archivo .
 
    ![Estilos base de WKND](assets/client-side-libraries/wknd-base-styles-unzipped.png)
 
