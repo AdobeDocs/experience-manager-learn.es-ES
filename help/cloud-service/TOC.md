@@ -4,10 +4,10 @@ user-guide-description: Una recopilación de tutoriales de Adobe Experience Mana
 breadcrumb-title: Tutoriales de AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: 228da29e7ac0d61359c2b94131495b5b433a09dc
+source-git-commit: 0848419e4da935787c351469925cc900d4eb21df
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 21%
+source-wordcount: '679'
+ht-degree: 23%
 
 ---
 
@@ -36,11 +36,11 @@ ht-degree: 21%
    + Operaciones de desarrollo{#devops}
       + [Implementación de código](./cloud-manager/devops/deploy-code.md)
       + [Combinar proyectos](./cloud-manager/devops/merge-projects.md)
-      + [Configure Pipelines](./cloud-manager/devops/configure-pipelines.md)
+      + [Configurar canalizaciones](./cloud-manager/devops/configure-pipelines.md)
       + [Integración continua](./cloud-manager/devops/continuous-integration.md)
       + [Analizar resultados de la prueba](./cloud-manager/devops/analyze-test-results.md)
       + [Configuraciones de Dispatcher](./cloud-manager/devops/dispatcher-configurations.md)
-      + [Cloud Manager APIs](./cloud-manager/devops/cloud-manager-apis.md)
+      + [API de Cloud Manager](./cloud-manager/devops/cloud-manager-apis.md)
 + Configuración del entorno de desarrollo local {#local-development-environment-set-up}
    + [Información general](./local-development-environment/overview.md)
    + [Herramientas de desarrollo](./local-development-environment/development-tools.md)
@@ -48,14 +48,14 @@ ht-degree: 21%
    + [Herramientas locales de Dispatcher](./local-development-environment/dispatcher-tools.md)
 + Desarrollo de{#developing}
    + Conceptos básicos de desarrollo{#basics}
-      + [AEM SDK](./developing/basics/aem-sdk.md)
+      + [SDK AEM](./developing/basics/aem-sdk.md)
       + [Entorno de desarrollo local](./developing/basics/local-development-environment.md)
       + [Tipo de archivo del proyecto AEM](./developing/basics/aem-project-archetype.md)
       + [Estructura del proyecto AEM](./developing/basics/project-structure.md)
       + [Contenido mutable vs. inmutable](./developing/basics/mutable-immutable.md)
       + [Paquete de estructura del repositorio](./developing/basics/repository-structure-package.md)
       + [Publicación de contenido](./developing/basics/content-publishing.md)
-      + [OSGi Configurations](./developing/basics/osgi-configurations.md)
+      + [Configuraciones de OSGi](./developing/basics/osgi-configurations.md)
       + [Migración de configuración de Dispatcher](./developing/basics/dispatcher-configuration.md)
    + Proyectos AEM{#aem-projects}
       + [AEM proyecto Maven](./developing/projects/maven-project-structure.md)
@@ -64,12 +64,12 @@ ht-degree: 21%
       + [Conceptos básicos del servicio OSGi](./developing/osgi-services/basics.md)
       + [Ciclo de vida de los componentes OSGi](./developing/osgi-services/lifecycle.md)
       + [Conceptos básicos de configuraciones de OSGi](./developing/osgi-services/configurations.md)
-      + [OSGi Configurations using OCD](./developing/osgi-services/configurations-ocd.md)
+      + [Configuraciones de OSGi que utilizan OCD](./developing/osgi-services/configurations-ocd.md)
    + Avanzado {#advanced}
       + [Usuarios de servicio](./developing/advanced/service-users.md)
    + [API de SDK de AEM JavaDocs](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html)
 + AEM de depuración{#debugging}
-   + Debugging the AEM SDK{#debugging-aem-sdk}
+   + Depuración del SDK de AEM{#debugging-aem-sdk}
       + [Información general](./debugging/aem-sdk-local-quickstart/overview.md)
       + [Registros](./debugging/aem-sdk-local-quickstart/logs.md)
       + [Depuración remota](./debugging/aem-sdk-local-quickstart/remote-debugging.md)
@@ -82,7 +82,7 @@ ht-degree: 21%
       + [Compilación e implementación](./debugging/cloud-service/build-and-deployment.md)
       + [Developer Console](./debugging/cloud-service/developer-console.md)
       + [CRXDE Lite](./debugging/cloud-service/crxde-lite.md)
-+ Accessing AEM{#accessing}
++ Acceso a AEM{#accessing}
    + [Información general](./accessing/overview.md)
    + [Usuarios de IMS de Adobe](./accessing/adobe-ims-users.md)
    + [Grupos de usuarios de IMS de Adobe](./accessing/adobe-ims-user-groups.md)
@@ -124,16 +124,16 @@ ht-degree: 21%
          + [Comunicaciones](./migration/moving-to-aem-as-a-cloud-service/aem-forms/communications.md)
    + Cloud Acceleration Manager {#cloud-acceleration-manager}
       + [Introducción](./migration/cloud-acceleration-manager/introduction.md)
-      + [Readiness and Best Practice Analyzer](./migration/cloud-acceleration-manager/readiness-and-best-practice-analyzer.md)
+      + [Analizador de preparación y prácticas recomendadas](./migration/cloud-acceleration-manager/readiness-and-best-practice-analyzer.md)
       + [Fase de implementación](./migration/cloud-acceleration-manager/implementation-phase.md)
       + [Herramienta de transferencia de contenido](./migration/cloud-acceleration-manager/content-transfer-tool.md)
-      + [Code Refactoring tools](./migration/cloud-acceleration-manager/code-refactoring-tools.md)
+      + [Herramientas de refactorización de código](./migration/cloud-acceleration-manager/code-refactoring-tools.md)
       + [Modernizador del repositorio de código](./migration/cloud-acceleration-manager/code-repository-modernizer.md)
       + [Dispatcher Converter](./migration/cloud-acceleration-manager/dispatcher-converter.md)
       + [Conversor de índices](./migration/cloud-acceleration-manager/index-converter.md)
-      + [Migración del flujo de trabajo de recursos Herramienta](./migration/cloud-acceleration-manager/asset-workflow-migration-tool.md)
+      + [Herramienta de migración del flujo de trabajo de recursos](./migration/cloud-acceleration-manager/asset-workflow-migration-tool.md)
       + [Navegación por Cloud Acceleration Manager](./migration/cloud-acceleration-manager/navigating.md)
-      + [Using the Cloud Acceleration Manager](./migration/cloud-acceleration-manager/using.md)
+      + [Uso del Cloud Acceleration Manager](./migration/cloud-acceleration-manager/using.md)
 + Forms{#forms}
 
    + Desarrollo para Forms as a Cloud Service{#developing-for-cloud-service}
@@ -143,8 +143,8 @@ ht-degree: 21%
       + [Sincronizar IntelliJ con AEM](./forms/developing-for-cloud-service/intellij-and-aem-sync.md)
       + [Creación de un formulario](./forms/developing-for-cloud-service/deploy-your-first-form.md)
       + [Incluir Cloud Services y FDM](./forms/developing-for-cloud-service/azure-storage-fdm.md)
-      + [Push to Cloud Manager](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
-      + [Deploy to development environment](./forms/developing-for-cloud-service/deploy-to-dev-environment.md)
+      + [Insertar en Cloud Manager](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
+      + [Implementar en entorno de desarrollo](./forms/developing-for-cloud-service/deploy-to-dev-environment.md)
       + [Actualización del tipo de archivo maven](./forms/developing-for-cloud-service/updating-project-archetype.md)
    + Crear formulario adaptable{#create-first-af}
       + [Introducción](./forms/create-first-af/introduction.md)
@@ -162,7 +162,7 @@ ht-degree: 21%
       + [Introducción](./forms/doc-gen-forms-cs/introduction.md)
       + [Crear credenciales de servicio](./forms/doc-gen-forms-cs/service-credentials.md)
       + [Crear token JWT](./forms/doc-gen-forms-cs/create-jwt.md)
-      + [Create Access Token](./forms/doc-gen-forms-cs/create-access-token.md)
+      + [Crear token de acceso](./forms/doc-gen-forms-cs/create-access-token.md)
       + [Combinar datos con plantilla](./forms/doc-gen-forms-cs/merge-data-with-template.md)
       + [Probar la solución](./forms/doc-gen-forms-cs/test.md)
       + [Desafío](./forms/doc-gen-forms-cs/challenge.md)
@@ -177,7 +177,7 @@ ht-degree: 21%
       + [Crear modelo de datos de formulario](./forms/forms-cs-azure-portal/create-fdm.md)
       + [Almacenar datos de formulario en Azure Storage](./forms/forms-cs-azure-portal/create-af.md)
       + [Cumplimentar el formulario previamente](./forms/forms-cs-azure-portal/prefill-af-storage.md)
-      + [Query submissions](./forms/forms-cs-azure-portal/query-submitted-data.md)
+      + [Envíos de consultas](./forms/forms-cs-azure-portal/query-submitted-data.md)
    + Crear flujo de trabajo de revisión{#create-aem-workflow}
       + [Externalización del almacenamiento del flujo de trabajo](./forms/create-aem-workflow/externalize-workflow.md)
       + [Crear modelo de flujo de trabajo](./forms/create-aem-workflow/create-workflow.md)
@@ -187,14 +187,14 @@ ht-degree: 21%
       + [Aplicación de API de Adobe Sign](./forms/forms-and-sign/create-sign-api-application.md)
       + [Configuración en la nube de Adobe Sign](./forms/forms-and-sign/create-adobe-sign-cloud-configuration.md)
       + [Crear formulario adaptable](./forms/forms-and-sign/create-adaptive-form.md)
-      + [Configure for fill and sign](./forms/forms-and-sign/configure-form-fill-and-sign.md)
+      + [Configurar para rellenar y firmar](./forms/forms-and-sign/configure-form-fill-and-sign.md)
    + Integrar con Salesforce{#integrate-with-salesforce}
       + [Introducción](./forms/integrate-with-salesforce/introduction.md)
       + [Crear aplicación conectada](./forms/integrate-with-salesforce/create-connected-app.md)
       + [Crear archivo de intercambio](./forms/integrate-with-salesforce/describe-rest-api.md)
       + [Crear fuente de datos](./forms/integrate-with-salesforce/create-data-source.md)
-      + [Create form data model](./forms/integrate-with-salesforce/create-form-data-model.md)
-      + [Test form submission](./forms/integrate-with-salesforce/create-lead-submitting-form.md)
+      + [Crear modelo de datos de formulario](./forms/integrate-with-salesforce/create-form-data-model.md)
+      + [Envío de formulario de prueba](./forms/integrate-with-salesforce/create-lead-submitting-form.md)
       + [Evento de clic de prueba](./forms/integrate-with-salesforce/create-lead-click-event.md)
 + Extensibilidad de asset compute{#asset-compute}
    + [Información general](./asset-compute/overview.md)
@@ -204,8 +204,8 @@ ht-degree: 21%
       + [Luciérnagas del proyecto Adobe](./asset-compute/set-up/firefly.md)
    + Desarrollar{#develop}
       + [Creación de un proyecto de Asset compute](./asset-compute/develop/project.md)
-      + [Configure environment variables](./asset-compute/develop/environment-variables.md)
-      + [Configure the manifest.yml](./asset-compute/develop/manifest.md)
+      + [Configuración de variables de entorno](./asset-compute/develop/environment-variables.md)
+      + [Configurar manifest.yml](./asset-compute/develop/manifest.md)
       + [Desarrollo de un trabajador](./asset-compute/develop/worker.md)
       + [Uso de la herramienta de desarrollo](./asset-compute/develop/development-tool.md)
    + Prueba y depuración{#test-debug}
@@ -217,9 +217,12 @@ ht-degree: 21%
    + Avanzado {#advanced}
       + [Trabajadores de metadatos](./asset-compute/advanced/metadata.md)
    + [Solución de problemas](./asset-compute/troubleshooting.md)
++ Nube 5{#cloud-5}
+   + [Introducción](./cloud-5/cloud5-introduction.md)
+   + [Diferencia profunda de CDN](./cloud-5/cloud5-aem-cdn-part1.md)
 + [AEM serie de expertos](./aem-experts-series.md)
 + Tutorials de varios pasos{#multi-step-tutorials}
-   + [AEM Sites development](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es)
+   + [Desarrollo de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es)
    + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)
    + [SPA Editor (React)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
    + [SPA Editor (Angular)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/overview.html)
