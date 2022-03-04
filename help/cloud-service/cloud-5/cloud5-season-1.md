@@ -1,0 +1,96 @@
+---
+title: Adobe Experience Manager as a Cloud Service Cloud 5 - Temporada 1
+description: Obtenga información sobre Adobe Experience Manager (AEM) as a Cloud Service de los propios ingenieros expertos del Adobe que lo crean y los servicios expertos que lo ofrecen.
+sub-product: sites, cloud-manager, assets
+recommendations: noDisplay
+source-git-commit: 5da75b172a7dda29452954990f6ab2374e7698d9
+workflow-type: tm+mt
+source-wordcount: '258'
+ht-degree: 1%
+
+---
+
+# Introducción a Cloud 5
+
+Bienvenido a la serie Cloud 5 de AEM Engineering. Uno de los principales problemas en la fase de implementación de cualquier producto es tener suficientes muestras de código y/o demostraciones en vivo de esas muestras, herramientas o API. El objetivo de esta serie es proporcionar información útil sobre AEM as a Cloud Service en 5 minutos o menos.
+
+## Temporada 1
+
+Cada temporada varía en longitud y se libera en un horario fijo. Los temas de la primera temporada se basan principalmente en las solicitudes anteriores que hemos encontrado en nuestros compromisos diarios con clientes y socios. Visite esta página para actualizaciones semanales o síganos en la red social de su elección.
+
+<table>
+  <tr>
+   <td>
+      <a href="./cloud5-aem-cdn-part1.md">
+      <img alt="AEM CDN Parte 1" src="./imgs/001-thumb.png"/>
+      </a>
+      <div>
+         <a href="./cloud5-aem-cdn-part1.md"><strong>AEM CDN Deep Dive (parte 1)</strong></a>         
+         <br/><em>con Darin Kuntze y James Talbot, arquitectos sénior de la nube</em>
+      </div>
+      <p>
+        <br/>
+         La parte 1 muestra AEM CDN de as a Cloud Service y cómo utilizarla en su implementación.
+      </p>
+     </td>   
+     <td>
+      <img alt="AEM CDN Parte 2" src="./imgs/coming-soon.png"/>
+      <div>
+         <strong>AEM CDN Deep Dive (parte 2)</strong>
+         <br/><em>con Darin Kuntze y James Talbot, arquitectos sénior de la nube</em>
+      </div>
+      <p>
+        <br/>
+         Próximo 11 de marzo de 2022
+      </p>
+   </td>     
+   </td>   
+     <td>
+      <img alt="Archivos de registro y registro" src="./imgs/coming-soon.png"/>
+      <div>
+         <strong>Archivos de registro y registro</strong>
+         <br/><em>con Darin Kuntze y James Talbot, arquitectos sénior de la nube</em>
+      </div>
+      <p>
+        <br/>
+         Próximo 18 de marzo de 2022
+      </p>
+   </td> 
+  </tr>
+  <tr>
+   <td>
+      <img alt="Tokens de acceso" src="./imgs/coming-soon.png"/>
+      <div>
+        <strong>Integración con tokens de acceso</strong>        
+         <br/><em>con Darin Kuntze y James Talbot, arquitectos sénior de la nube</em>
+      </div>
+      <p>
+        <br/>
+         Próximo 25 de marzo de 2022
+      </p>
+     </td>   
+     <td>
+      <img alt="Dispatcher en la nube" src="./imgs/coming-soon.png"/>
+      <div>
+         <strong>Dispatcher en la nube</strong>
+         <br/><em>con Darin Kuntze y James Talbot, arquitectos sénior de la nube</em>
+      </div>
+      <p>
+        <br/>
+         A partir del 1 de abril de 2022
+      </p>
+   </td>     
+   </td>   
+     <td>
+      <img alt="Migración (parte 1)" src="./imgs/coming-soon.png"/>
+      <div>
+         <strong>Migración (parte 1)</strong>
+         <br/><em>con Darin Kuntze y James Talbot, arquitectos sénior de la nube</em>
+      </div>
+      <p>
+        <br/>
+         Próxima 8 de abril de 2022
+      </p>
+   </td> 
+  </tr>
+</table>
