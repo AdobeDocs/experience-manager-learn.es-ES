@@ -1,22 +1,28 @@
 ---
-title: Adobe Experience Manager as a Cloud Service Cloud 5 - Temporada 1
-description: Obtenga información sobre Adobe Experience Manager (AEM) as a Cloud Service de los propios ingenieros expertos del Adobe que lo crean y los servicios expertos que lo ofrecen.
+title: Nube 5 - Temporada 1
+description: Obtenga información sobre Adobe Experience Manager (AEM) as a Cloud Service de los propios ingenieros expertos del Adobe que lo construyen y los servicios expertos que lo ofrecen.
 sub-product: sites, cloud-manager, assets
-recommendations: noDisplay
-source-git-commit: 5da75b172a7dda29452954990f6ab2374e7698d9
+solution: Experience Manager as a Cloud Service, Experience Manager
+recommendations: noDisplay, noCatalog
+exl-id: 210e5483-d79e-47ac-aa09-b6956cca2e62
+source-git-commit: 4fc95c69f3c15122f9e4b87be469f8bc15097042
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '256'
 ht-degree: 1%
 
 ---
 
-# Introducción a Cloud 5
+# Nube 5
+
+![AEM serie de expertos](./imgs/masthead.png)
+
+## Introducción
 
 Bienvenido a la serie Cloud 5 de AEM Engineering. Uno de los principales problemas en la fase de implementación de cualquier producto es tener suficientes muestras de código y/o demostraciones en vivo de esas muestras, herramientas o API. El objetivo de esta serie es proporcionar información útil sobre AEM as a Cloud Service en 5 minutos o menos.
 
 ## Temporada 1
 
-Cada temporada varía en longitud y se libera en un horario fijo. Los temas de la primera temporada se basan principalmente en las solicitudes anteriores que hemos encontrado en nuestros compromisos diarios con clientes y socios. Visite esta página para actualizaciones semanales o síganos en la red social de su elección.
+Cada temporada varía en longitud y se publicará con un calendario fijo. Los temas de la primera temporada se basan principalmente en las solicitudes anteriores que hemos encontrado en nuestros compromisos diarios con clientes y socios. Visite esta página para actualizaciones semanales o síganos en la red social de su elección.
 
 <table>
   <tr>
