@@ -4,10 +4,10 @@ user-guide-description: Una recopilación de tutoriales de Adobe Experience Mana
 breadcrumb-title: Tutoriales de AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: ebbd31f7ffe677668bf8d351212b7b2957106595
+source-git-commit: 7994860f6d0ea017aa48e326482bc8e77af6f555
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 24%
+source-wordcount: '703'
+ht-degree: 23%
 
 ---
 
@@ -227,6 +227,7 @@ ht-degree: 24%
    + [Temporada 1](./cloud-5/cloud5-season-1.md)
    + [AEM CDN Parte 1](./cloud-5/cloud5-aem-cdn-part1.md)
    + [AEM CDN Parte 2](./cloud-5/cloud5-aem-cdn-part2.md)
+   + [Archivos de registro AEM](./cloud-5/cloud5-aem-log-files.md)
 + [AEM serie de expertos](./aem-experts-series.md)
 + Tutorials de varios pasos{#multi-step-tutorials}
    + [Desarrollo de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es)
