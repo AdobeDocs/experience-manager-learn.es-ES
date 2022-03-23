@@ -1,16 +1,17 @@
 ---
-title: Almacenamiento y recuperación de datos de formulario de la base de datos MySQL
+title: 'Almacenamiento y recuperación de datos de formulario de la base de datos MySQL: Crear biblioteca de cliente'
 description: Tutorial de varias partes para guiarle por los pasos necesarios para almacenar y recuperar datos de formulario
-feature: Formularios adaptables
+feature: Adaptive Forms
 type: Tutorial
 version: 6.3,6.4,6.5
-topic: Desarrollo
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: eef98a55-80d0-4598-abf2-02a6c5247b64
+source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
 workflow-type: tm+mt
 source-wordcount: '147'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 

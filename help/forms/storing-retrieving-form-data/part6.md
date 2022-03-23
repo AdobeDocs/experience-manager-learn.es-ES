@@ -1,18 +1,18 @@
 ---
-title: Almacenamiento y recuperación de datos de formulario de la base de datos MySQL
+title: Almacenamiento y recuperación de datos de formulario de la base de datos MySQL - Implementación
 description: Tutorial de varias partes para guiarle por los pasos necesarios para almacenar y recuperar datos de formulario
-feature: Formularios adaptables
-topic: Desarrollo
+feature: Adaptive Forms
+topic: Development
 role: Developer
 level: Experienced
 version: 6.3,6.4,6.5
-source-git-commit: 3569d8b2a38d1cce02f6f4ff8b0c583f4dc118b6
+exl-id: f520e7a4-d485-4515-aebc-8371feb324eb
+source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 3%
+source-wordcount: '278'
+ht-degree: 2%
 
 ---
-
 
 # Implemente esto en su servidor
 
@@ -26,12 +26,12 @@ ht-degree: 3%
 
 Para probar esta capacidad en su instancia de AEM Forms, siga los siguientes pasos
 
-* Descargue e implemente los archivos [MySql Driver Jar](assets/mysqldriver.jar) utilizando la consola web [felix](http://localhost:4502/system/console/bundles)
-* Descargue e implemente el [paquete OSGi](assets/SaveAndContinue.SaveAndContinue.core-1.0-SNAPSHOT.jar) utilizando la consola web [felix](http://localhost:4502/system/console/bundles)
-* Descargue e instale el paquete [que contiene la biblioteca de cliente, la plantilla de formulario adaptable y el componente de página personalizado](assets/store-and-fetch-af-with-data.zip) utilizando el [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
-* Importe el [formulario adaptable de ejemplo](assets/sample-adaptive-form.zip) utilizando la interfaz [FormsAndDocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Descargue e implemente el [Jar de controlador MySql](assets/mysqldriver.jar) los archivos que utilizan la variable [consola web felix](http://localhost:4502/system/console/bundles)
+* Descargue e implemente el [Paquete OSGi](assets/SaveAndContinue.SaveAndContinue.core-1.0-SNAPSHOT.jar) usando la variable [consola web felix](http://localhost:4502/system/console/bundles)
+* Descargue e instale el [paquete que contiene la biblioteca de cliente, la plantilla de formulario adaptable y el componente de página personalizado](assets/store-and-fetch-af-with-data.zip) usando la variable [gestor de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
+* Importe el [ejemplo Formulario adaptable](assets/sample-adaptive-form.zip) usando la variable [Interfaz FormsAndDocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 
-* Importe el [form-data-db.sql](assets/form-data-db.sql) utilizando MySql Workbench. Esto creará el esquema y las tablas necesarios en la base de datos para que funcione este tutorial.
+* Importe el [form-data-db.sql](assets/form-data-db.sql) usando MySql Workbench. Esto creará el esquema y las tablas necesarios en la base de datos para que funcione este tutorial.
 * Inicie sesión en [configMgr.](http://localhost:4502/system/console/configMgr) Busque Fuente de datos agrupada de la conexión Apache Sling. Cree una nueva entrada de fuente de datos agrupada de conexión Apache Sling llamada **SaveAndContinue** con las siguientes propiedades:
 
 | Nombre de propiedad | Value |

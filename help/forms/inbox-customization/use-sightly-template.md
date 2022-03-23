@@ -1,5 +1,5 @@
 ---
-title: Personalización de la bandeja de entrada
+title: Uso de una plantilla sutil para mostrar los datos de la bandeja de entrada
 description: Añadir columnas personalizadas para mostrar datos adicionales del flujo de trabajo mediante una plantilla de aspecto
 feature: Adaptive Forms
 topics: development
@@ -11,9 +11,10 @@ kt: 5830
 topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
+exl-id: d09b46ed-3516-44cf-a616-4cb6e9dfdf41
+source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '294'
 ht-degree: 2%
 
 ---
@@ -23,11 +24,11 @@ ht-degree: 2%
 Puede utilizar una plantilla sutil para dar formato a los datos que se van a mostrar en las columnas de la bandeja de entrada. En este ejemplo se muestran iconos de coral-ui en función del valor de la columna de ingresos. La siguiente captura de pantalla muestra el uso de iconos en la columna de ingresos
 ![iconos de ingresos](assets/income-column.PNG)
 
-[La ](assets/sightly-template.zip) plantilla sightly utilizada para mostrar los iconos personalizados de la interfaz de usuario de coral se proporciona como parte de este artículo.
+[La plantilla sightly](assets/sightly-template.zip) se utiliza para mostrar los iconos personalizados de la interfaz de usuario de coral como parte de este artículo.
 
 ## Plantilla Sightly
 
-A continuación, se muestra la plantilla. El código de la plantilla muestra un icono en función de los ingresos. Los iconos están disponibles como parte de la [biblioteca de iconos de la interfaz de usuario de coral](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) que viene con AEM.
+A continuación, se muestra la plantilla. El código de la plantilla muestra un icono en función de los ingresos. Los iconos están disponibles como parte del [biblioteca de iconos de la interfaz de usuario de coral](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) que viene con AEM.
 
 ```java
 <template data-sly-template.incomeTemplate="${@ item}>">
@@ -81,7 +82,7 @@ return val;
 
 >[!NOTE]
 >
->Este artículo supone que ha instalado el [ejemplo de flujo de trabajo](assets/review-workflow.zip) y el [formulario de ejemplo](assets/snap-form.zip) del [artículo anterior](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/inbox-customization/add-married-column.html) en esta serie.
+>Este artículo supone que ha instalado el [flujo de trabajo de muestra](assets/review-workflow.zip) y [formulario de ejemplo](assets/snap-form.zip) from [artículo anterior](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/inbox-customization/add-married-column.html) en esta serie.
 
 * [Inicie sesión en crx como usuario administrador](http://localhost:4502/crx/de/index.jsp)
 * [importar plantilla](assets/sightly-template.zip)
@@ -91,7 +92,7 @@ return val;
 * Abra Control de administración haciendo clic en Vista de lista junto al botón Crear
 * Agregue la columna de ingresos a la bandeja de entrada y guarde los cambios
 * [Obtener una vista previa del formulario](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
-* Seleccione el _estado civil_ y envíe el formulario
+* Seleccione el _estado civil_ y enviar el formulario
 * [Ver bandeja de entrada](http://localhost:4502/aem/inbox)
 
 Si se envía el formulario, se déclencheur el flujo de trabajo y se asigna una tarea al usuario &quot;admin&quot;. Debería ver el icono apropiado en la columna de ingresos

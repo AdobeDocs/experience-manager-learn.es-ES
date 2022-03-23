@@ -1,5 +1,5 @@
 ---
-title: Personalización de la bandeja de entrada
+title: Añadir columnas personalizadas
 description: Añadir columnas personalizadas para mostrar datos adicionales del flujo de trabajo
 feature: Adaptive Forms
 topics: development
@@ -11,14 +11,13 @@ kt: 5830
 topic: Development
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 0b141b37-6041-4f87-bd50-dade8c0fee7d
+source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
 workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 3%
+source-wordcount: '307'
+ht-degree: 2%
 
 ---
-
 
 # Añadir columnas personalizadas
 
@@ -28,7 +27,7 @@ Para mostrar los datos de flujo de trabajo en la bandeja de entrada, es necesari
 * [Importación del flujo de trabajo de revisión](assets/review-workflow.zip)
 * [Consulte el flujo de trabajo](http://localhost:4502/editor.html/conf/global/settings/workflow/models/reviewworkflow.html)
 
-Este flujo de trabajo tiene dos variables definidas (isMarried e revenue) y sus valores se establecen mediante el componente de variable set . Estas variables estarán disponibles como columnas para agregarlas a la bandeja de entrada de AEM
+Este flujo de trabajo tiene dos variables definidas (isMarried e revenue) y sus valores se establecen mediante el componente de variable set . Estas variables estarán disponibles como columnas para agregarlas a AEM bandeja de entrada
 
 ## Crear servicio
 
@@ -82,17 +81,17 @@ return isMarried(inboxItem);
 
 ## Realizar pruebas en el servidor
 
-* [Iniciar sesión en la consola web de AEM](http://localhost:4502/system/console/bundles)
+* [Iniciar sesión en AEM consola web](http://localhost:4502/system/console/bundles)
 * [Implementar e iniciar el paquete de personalización de la bandeja de entrada](assets/inboxcustomization.inboxcustomization.core-1.0-SNAPSHOT.jar)
 * [Abra la bandeja de entrada](http://localhost:4502/aem/inbox)
-* Abra Control de administración haciendo clic en el icono _Vista de lista_ situado junto al botón _Crear_
+* Abra Control de administración haciendo clic en _Vista de lista_ junto a _Crear_ botón
 * Agregue la columna Casado a la bandeja de entrada y guarde los cambios
 * [Vaya a la interfaz de usuario de FormsAndDocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* [Importe el ](assets/snap-form.zip) formulario de ejemplo seleccionando  _File_ Uploadfrom  __ Createmenu
+* [Importación del formulario de ejemplo](assets/snap-form.zip) seleccionando _Carga de archivo_ from _Crear_ menú
 * [Obtener una vista previa del formulario](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
-* Seleccione el _estado civil_ y envíe el formulario
+* Seleccione el _estado civil_ y enviar el formulario
    [ver bandeja de entrada](http://localhost:4502/aem/inbox)
 
-Al enviar el formulario, se activará el flujo de trabajo y se asignará una tarea al usuario &quot;admin&quot;. Debería ver un valor debajo de la columna Casado como se muestra en esta captura de pantalla.
+Si se envía el formulario, se déclencheur el flujo de trabajo y se asigna una tarea al usuario &quot;admin&quot;. Debería ver un valor debajo de la columna Casado como se muestra en esta captura de pantalla.
 
 ![mary-column](assets/married-column.PNG)

@@ -1,19 +1,19 @@
 ---
-title: Almacenamiento y recuperación de datos de formulario de la base de datos MySQL
+title: Almacenamiento y recuperación de datos de formulario desde la introducción a la base de datos MySQL
 description: Tutorial de varias partes para guiarle por los pasos necesarios para almacenar y recuperar datos de formulario
-feature: Formularios adaptables
+feature: Adaptive Forms
 type: Tutorial
 version: 6.3,6.4,6.5
-topic: Desarrollo
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 95795102-4278-4556-8e0f-1b8a359ab093
+source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
 workflow-type: tm+mt
-source-wordcount: '167'
-ht-degree: 1%
+source-wordcount: '165'
+ht-degree: 0%
 
 ---
-
 
 # Almacenamiento y recuperación de datos de formulario adaptable de la base de datos MySQL
 
@@ -23,7 +23,7 @@ Este tutorial le guiará por los pasos necesarios para guardar y recuperar los d
 
 * Realice una llamada del POST a un servlet. Este servlet almacena los datos en la base de datos. Los datos almacenados están asociados a un GUID
 
-* Si desea rellenar el formulario adaptable con los datos almacenados, recupere los datos asociados con el GUID y rellene el formulario adaptable con el método **request.setAttribute** .
+* Si desea rellenar el formulario adaptable con los datos almacenados, recupere los datos asociados con el GUID y rellene el formulario adaptable utilizando la variable **request.setAttribute** método.
 
 ## Demostración del caso de uso
 

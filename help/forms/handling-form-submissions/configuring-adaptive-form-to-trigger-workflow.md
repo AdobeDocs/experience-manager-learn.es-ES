@@ -1,7 +1,7 @@
 ---
-title: Configuración del formulario adaptable para activar el flujo de trabajo de AEM
-description: Configurar las opciones de carga útil al activar el flujo de trabajo de AEM en el envío del formulario
-sub-product: formularios
+title: Información general sobre la configuración del formulario adaptable al déclencheur AEM flujo de trabajo
+description: Configurar las opciones de carga útil al activar AEM flujo de trabajo al enviar el formulario
+sub-product: forms
 feature: Workflow
 topics: integrations
 audience: developer
@@ -13,20 +13,19 @@ thumbnail: 40258.jpg
 topic: Development
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 9f1dbd02-774a-4b84-90fa-02d4e468cbac
+source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 5%
+source-wordcount: '166'
+ht-degree: 3%
 
 ---
 
-
-# Configuración del formulario adaptable para activar el flujo de trabajo de AEM
+# Configuración del formulario adaptable al flujo de trabajo AEM déclencheur
 
 ## Requisitos previos
 
-El formulario de ejemplo utilizado en este flujo de trabajo se basa en una plantilla de formulario adaptable personalizada que debe importarse en su servidor AEM. El formulario de ejemplo que se proporciona debe importarse después de importar la plantilla.
+El formulario de ejemplo utilizado en este flujo de trabajo se basa en una plantilla de formulario adaptable personalizada que debe importarse en el servidor de AEM. El formulario de ejemplo que se proporciona debe importarse después de importar la plantilla.
 
 ### Obtener las plantillas de formulario adaptables
 
@@ -37,15 +36,13 @@ El formulario de ejemplo utilizado en este flujo de trabajo se basa en una plant
 ### Obtener el formulario adaptable de ejemplo
 
 * Descargar [Formulario adaptable](assets/peak-application-form.zip)
-* Vaya a [Formulario y documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Vaya a [Formularios Y Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Haga clic en Crear -> Cargar archivo
-* El formulario adaptable de ejemplo se colocará en una carpeta llamada [Formularios de aplicación](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments/applicationforms)
+* El formulario adaptable de ejemplo se coloca en una carpeta llamada [Forms de aplicaciones](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments/applicationforms)
 
-En el siguiente vídeo se explica cómo configurar un formulario adaptable para activar un flujo de trabajo de AEM
+En el siguiente vídeo se explica cómo configurar un formulario adaptable para el déclencheur de un flujo de trabajo AEM
 >[!VIDEO](https://video.tv.adobe.com/v/40258/?quality=9&learn=on)
 
 El siguiente vídeo muestra la carga útil del flujo de trabajo y otros detalles en el repositorio crx
 
 >[!VIDEO](https://video.tv.adobe.com/v/40259/?quality=9&learn=on)
-
-

@@ -1,8 +1,8 @@
 ---
-title: Activador del flujo de trabajo de AEM en el envío de formularios HTML5
-seo-title: Activar el flujo de trabajo de AEM en el envío de formularios HTML5
-description: Siga rellenando el formulario móvil en modo sin conexión y envíe el formulario móvil para activar el flujo de trabajo de AEM
-seo-description: Siga rellenando el formulario móvil en modo sin conexión y envíe el formulario móvil para activar el flujo de trabajo de AEM
+title: 'Déclencheur AEM flujo de trabajo en el envío de formulario HTML5: envío de PDF de gestión'
+seo-title: Trigger AEM Workflow on HTML5 Form Submission
+description: Siga rellenando el formulario móvil en modo sin conexión y envíe el formulario móvil al flujo de trabajo AEM déclencheur
+seo-description: Continue filling mobile form in offline mode and submit mobile form to trigger AEM workflow
 feature: Mobile Forms
 topics: development
 audience: developer
@@ -12,20 +12,19 @@ version: 6.4,6.5
 topic: Development
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: eafeafe1-7a72-4023-b5bb-d83b056ba207
+source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 1%
+source-wordcount: '236'
+ht-degree: 0%
 
 ---
 
+# Gestión del envío del PDF
 
-# Gestión del envío de PDF
+En esta parte crearemos un servlet simple que se ejecuta en AEM Publish para gestionar el envío del PDF desde Acrobat/Reader. Este servlet a su vez hará una solicitud de POST HTTP a un servlet que se ejecuta en una instancia de autor de AEM responsable de guardar los datos enviados como un `nt:file` en el repositorio de AEM Author.
 
-En esta parte crearemos un servlet sencillo que se ejecuta en AEM Publish para gestionar el envío de PDF desde Acrobat/Reader. Este servlet a su vez hará una solicitud HTTP POST a un servlet que se ejecuta en una instancia de autor de AEM responsable de guardar los datos enviados como un nodo `nt:file` en el repositorio de AEM Author.
-
-El siguiente es el código del servlet que gestiona el envío de PDF. En este servlet hacemos una llamada POST a un servlet montado en **/bin/startworkflow** en una instancia de AEM Author. Este servlet guarda los datos del formulario en el repositorio de AEM Author.
+El siguiente es el código del servlet que gestiona el envío del PDF. En este servlet hacemos una llamada de POST a un servlet montado en **/bin/startworkflow** en una instancia de autor de AEM. Este servlet guarda los datos del formulario en el repositorio de AEM Author.
 
 
 ## Servlet de AEM Publish
@@ -203,7 +202,6 @@ public class StartWorkflow extends SlingAllMethodsServlet {
 }
 ```
 
-Un iniciador de flujo de trabajo de AEM está configurado para activarse cada vez que se crea un nuevo recurso de tipo `nt:file` en el nodo `/content/pdfsubmissions`. Este flujo de trabajo crea un PDF no interactivo o estático al combinar los datos enviados con la plantilla xdp. A continuación, el pdf generado se asigna a un usuario para su revisión y aprobación.
+Un iniciador de flujo de trabajo de AEM está configurado para el déclencheur cada vez que se crea un nuevo recurso de tipo `nt:file` se crea en la variable `/content/pdfsubmissions` nodo . Este flujo de trabajo crea un PDF no interactivo o estático al combinar los datos enviados con la plantilla xdp. A continuación, el pdf generado se asigna a un usuario para su revisión y aprobación.
 
-Para almacenar los datos enviados en el nodo `/content/pdfsubmissions`, utilizamos el servicio `GetResolver` OSGi que nos permite guardar los datos enviados utilizando el usuario del sistema `fd-service` que está disponible en cada instalación de AEM Forms.
-
+Para almacenar los datos enviados en `/content/pdfsubmissions` nodo, utilizamos `GetResolver` El servicio OSGi nos permite guardar los datos enviados mediante el `fd-service` usuario del sistema que está disponible en cada instalación de AEM Forms.
