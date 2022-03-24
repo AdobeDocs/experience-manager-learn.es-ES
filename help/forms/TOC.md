@@ -5,9 +5,9 @@ user-guide-title: Vídeos y tutoriales de AEM Forms
 user-guide-description: Recopilación de recursos de AEM Forms para principiantes y desarrolladores experimentados de AEM Forms.
 breadcrumb-title: Tutoriales de AEM Forms
 index: y
-source-git-commit: 160471fdc34439da6c312d65b252eaa941b7c7a2
+source-git-commit: b7ff98dccc1381abe057a80b96268742d0a0629b
 workflow-type: tm+mt
-source-wordcount: '1654'
+source-wordcount: '1657'
 ht-degree: 3%
 
 ---
@@ -41,6 +41,7 @@ ht-degree: 3%
    + [Dos factores de autenticación](some-useful-integrations/two-factor-authentication.md)
    + [Extracción de datos de OCR](some-useful-integrations/ocr-data-extraction.md)
    + [Listas desplegables en cascada](some-useful-integrations/geonames-org.md)
+   + [Integrar con ServiceNow](some-useful-integrations/service-now.md)
 + Creación de un paquete OSGi {#creating-your-first-osgi-bundle}
    + [Configuración del entorno](creating-your-first-osgi-bundle/create-your-first-osgi-bundle.md)
    + [Creación del servicio OSGi](creating-your-first-osgi-bundle/create-osgi-service.md)
@@ -172,7 +173,7 @@ ht-degree: 3%
    + [Biblioteca de cliente](storing-retrieving-form-data/part4.md)
    + [Plantilla de formulario adaptable](storing-retrieving-form-data/part5.md)
    + [Implementación de recursos de ejemplo](storing-retrieving-form-data/part6.md)
-+ Activación AEM flujo de trabajo desde el envío de formulario móvil{#offline-mobile-form-submission}
++ Activación AEM flujo de trabajo desde el envío de formularios de Mobile{#offline-mobile-form-submission}
    + [Introducción](offline-mobile-form-submission/introduction.md)
    + [Perfil personalizado](offline-mobile-form-submission/part-one.md)
    + [Gestión del envío del PDF](offline-mobile-form-submission/part-two.md)
