@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 7e4cb782-836d-4ec0-97d0-645b91ea43e0
-source-git-commit: 697b2c11f91899c56869a24b06c690a8e278df0c
+source-git-commit: 2f8f76b3f7a340784584f967deeea39684bf630e
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '251'
 ht-degree: 6%
 
 ---
@@ -30,7 +30,7 @@ La compatibilidad con navegadores HLS es la siguiente: para exploradores no comp
 
 >[!NOTE]
 >
-> Dynamic Media Hybrid NO admitirá la transmisión de vídeo en Internet Explorer 11 a partir del 15 de marzo de 2022. Para volver a la reproducción progresiva, actualice a la versión 6.5.12.
+> Dynamic Media Hybrid NO es compatible con la transmisión de vídeo en Internet Explorer 11 a partir del 15 de marzo de 2022. Actualice a la versión 6.5.12 o superior para volver a la reproducción progresiva en IE 11.
 
 <table> 
  <thead> 
