@@ -2,16 +2,16 @@
 title: '"Capítulo 1 - Conceptos, patrones y antipatrones de Dispatcher"'
 description: Este capítulo ofrece una breve introducción sobre el historial y la mecánica de Dispatcher y analiza cómo esto influye en cómo un desarrollador AEM diseñaría sus componentes.
 feature: Dispatcher
-topic: Arquitectura
+topic: Architecture
 role: Architect
 level: Beginner
-source-git-commit: 67e55e92cf95e03388ab3de49eff5a80786fb3a7
+exl-id: 3bdb6e36-4174-44b5-ba05-efbc870c3520
+source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
 workflow-type: tm+mt
-source-wordcount: '17487'
+source-wordcount: '17468'
 ht-degree: 0%
 
 ---
-
 
 # Capítulo 1 - Conceptos, patrones y antipatrones de Dispatcher
 
@@ -23,7 +23,7 @@ Este capítulo ofrece una breve introducción sobre el historial y la mecánica 
 
 Dispatcher es una parte esencial de la mayoría, si no de todas las instalaciones AEM. Puede encontrar muchos artículos en línea que describen cómo configurar Dispatcher, así como consejos y trucos.
 
-Sin embargo, estos fragmentos de información siempre comienzan a un nivel muy técnico - suponiendo que ya sabe lo que desea hacer y, por lo tanto, solo proporciona detalles sobre cómo lograr lo que desea. Nunca hemos encontrado ningún documento conceptual que describa el _qué es y por qué es_ cuando se trata de lo que puede y no puede hacer con Dispatcher.
+Sin embargo, estos fragmentos de información siempre comienzan a un nivel muy técnico - suponiendo que ya sabe lo que desea hacer y, por lo tanto, proporcionando solo detalles sobre cómo lograr lo que desea. Nunca hemos encontrado ningún documento conceptual que describa la _¿qué es y por qué?_ cuando se trata de lo que puede y no puede hacer con Dispatcher.
 
 ### Antipatrón: Dispatcher como un pensamiento alternativo
 
@@ -35,7 +35,7 @@ Esta falta de información básica lleva a una serie de anti-patrones que hemos 
 
 ### &quot;Primero haga que funcione - luego hágalo rápido&quot; No siempre es correcto
 
-Puede que haya escuchado el consejo de programación _&quot;Primero haga que funcione - luego hágalo rápido&quot;._. No está del todo mal. Sin embargo, sin el contexto adecuado, tiende a malinterpretarse y no aplicarse correctamente.
+Es posible que haya oído el consejo de programación _&quot;Primero haga que funcione - luego hágalo rápido&quot;._. No está del todo mal. Sin embargo, sin el contexto adecuado, tiende a malinterpretarse y no aplicarse correctamente.
 
 El consejo debe evitar que el desarrollador optimice el código de forma prematura, que puede que nunca se ejecute (o que se ejecute tan raramente) que una optimización no tendría un impacto suficiente para justificar el esfuerzo que se está realizando en la optimización. Además, la optimización podría llevar a un código más complejo y, por lo tanto, a la introducción de errores. Por lo tanto, si es desarrollador, no dedique demasiado tiempo a la microoptimización de cada línea de código. Asegúrese de elegir las estructuras de datos, los algoritmos y las bibliotecas adecuados y espere a que se realice un análisis del punto interactivo de un perfilador para ver dónde puede aumentar el rendimiento general una optimización más completa.
 
@@ -69,7 +69,7 @@ Dispatcher es
 
 * Un módulo para el servidor web httpd de Apache, que agrega AEM funciones relacionadas a la versatilidad de Apache y funciona sin problemas junto con todos los demás módulos de Apache (como SSL o incluso SSI incluye como veremos más adelante)
 
-En los primeros días de la web, se esperan algunos cientos de visitantes para un sitio. Una configuración de un Dispatcher, &quot;despachado&quot; o equilibrada la carga de solicitudes a una serie de servidores de publicación AEM y que normalmente era suficiente, por lo tanto, el nombre &quot;Dispatcher&quot;. Sin embargo, en la actualidad, esta configuración ya no se utiliza con mucha frecuencia.
+En los primeros días de la web, recibirá unos cuantos cientos de visitantes a un sitio. Una configuración de un Dispatcher, &quot;despachado&quot; o equilibrada la carga de solicitudes a una serie de servidores de publicación AEM y que normalmente era suficiente, por lo tanto, el nombre &quot;Dispatcher&quot;. Sin embargo, en la actualidad, esta configuración ya no se utiliza con mucha frecuencia.
 
 Más adelante en este artículo veremos diferentes formas de configurar los Dispatcher y los sistemas de publicación. Primero, empecemos con algunos conceptos básicos del almacenamiento en caché http.
 
@@ -94,7 +94,7 @@ Hablábamos de &quot;páginas&quot; en la última sección. Pero el mismo esquem
 
 #### Cómo se almacenan los datos en caché
 
-El módulo de Dispatcher aprovecha las instalaciones que proporciona el servidor Apache de alojamiento. Recursos como páginas HTML, descargas e imágenes se almacenan como archivos simples en el sistema de archivos Apache. Es así de simple.
+El módulo de Dispatcher aprovecha las instalaciones que proporciona el servidor Apache de alojamiento. Recursos como páginas de HTML, descargas e imágenes se almacenan como archivos simples en el sistema de archivos Apache. Es así de simple.
 
 El nombre de archivo se deriva de la dirección URL del recurso solicitado. Si solicita un archivo `/foo/bar.html` se almacena, por ejemplo, en /`var/cache/docroot/foo/bar.html`.
 
@@ -128,17 +128,17 @@ En AEM,
 
 * `#fragment`, la parte de fragmento de una URL no se pasa a AEM se usa solo en el explorador; en los marcos de JavaScript como &quot;parámetros de enrutamiento&quot; o para ir a una parte determinada de la página.
 
-En Apache (*haga referencia al siguiente diagrama*),
+En Apache (*haga referencia al diagrama siguiente*),
 
 * `pagename.selectors.html` se utiliza como nombre de archivo en el sistema de archivos de la caché.
 
-Si la dirección URL tiene un sufijo `path/suffix.ext`, entonces,
+Si la dirección URL tiene un sufijo `path/suffix.ext` entonces,
 
 * `pagename.selectors.html` se crea como una carpeta
 
-* `path` una carpeta de la  `pagename.selectors.html` carpeta
+* `path` una carpeta de la `pagename.selectors.html` carpeta
 
-* `suffix.ext` es un archivo de la  `path` carpeta . Nota: Si el sufijo no tiene una extensión, el archivo no se almacena en caché.
+* `suffix.ext` es un archivo de la variable `path` carpeta. Nota: Si el sufijo no tiene una extensión, el archivo no se almacena en caché.
 
 ![Diseño del sistema de archivos después de obtener las direcciones URL de Dispatcher](assets/chapter-1/filesystem-layout-urls-from-dispatcher.png)
 
@@ -152,7 +152,7 @@ La asignación entre una dirección URL, el recurso y el nombre de archivo es ba
 
 Sin embargo, es posible que haya notado algunas trampas,
 
-1. Las direcciones URL pueden llegar a ser muy largas. Añadir la porción &quot;path&quot; de un `/docroot` en el sistema de archivos local podría exceder fácilmente los límites de algunos sistemas de archivos. Ejecutar Dispatcher en NTFS en Windows puede ser un desafío. Sin embargo, está a salvo con Linux.
+1. Las direcciones URL pueden llegar a ser muy largas. Adición de la porción &quot;ruta&quot; de una `/docroot` en el sistema de archivos local podría exceder fácilmente los límites de algunos filesystems. Ejecutar Dispatcher en NTFS en Windows puede ser un desafío. Sin embargo, está a salvo con Linux.
 
 2. Las direcciones URL pueden contener caracteres especiales y diéresis. Esto no suele ser un problema para Dispatcher. No obstante, tenga en cuenta que la URL se interpreta en muchos lugares de la aplicación. La mayoría de las veces, hemos visto comportamientos extraños de una aplicación, solo para averiguar que una parte del código (personalizado) raramente utilizado no se ha probado a fondo para buscar caracteres especiales. Deberías evitarlas si puedes. Y si no puedes, planea realizar pruebas exhaustivas.
 
@@ -164,17 +164,17 @@ Las direcciones URL siempre deben tener una extensión. Aunque puede ofrecer dir
 
 **Ejemplos**
 
-`http://domain.com/home.html` es  **almacenable en caché**
+`http://domain.com/home.html` es **almacenable en caché**
 
-`http://domain.com/home` no  **se puede almacenar en caché**
+`http://domain.com/home` es **no almacenado en caché**
 
 La misma regla se aplica cuando la dirección URL contiene un sufijo. El sufijo debe tener una extensión para que se pueda almacenar en caché.
 
 **Ejemplos**
 
-`http://domain.com/home.html/path/suffix.html` es  **almacenable en caché**
+`http://domain.com/home.html/path/suffix.html` es **almacenable en caché**
 
-`http://domain.com/home.html/path/suffix` no  **se puede almacenar en caché**
+`http://domain.com/home.html/path/suffix` es **no almacenado en caché**
 
 Podría preguntarse, ¿qué sucede si la parte de recurso no tiene extensión, pero el sufijo tiene una? Bueno, en este caso la URL no tiene ningún sufijo. Observe el siguiente ejemplo:
 
@@ -182,7 +182,7 @@ Podría preguntarse, ¿qué sucede si la parte de recurso no tiene extensión, p
 
 `http://domain.com/home/path/suffix.ext`
 
-El `/home/path/suffix` es la ruta al recurso... por lo que no hay sufijo en la dirección URL.
+La variable `/home/path/suffix` es la ruta al recurso... por lo que no hay sufijo en la dirección URL.
 
 **Conclusión**
 
@@ -204,9 +204,9 @@ Entonces... ¿cuál es el problema?
 
 `home.html` en un sistema de archivos puede ser un archivo o una carpeta. No ambos al mismo tiempo que en AEM.
 
-Si primero solicita `home.html`, se creará como archivo.
+Si lo solicita `home.html` en primer lugar, se creará como archivo.
 
-Las solicitudes posteriores a `home.html/suffix.html` devuelven resultados válidos, pero como el archivo `home.html` &quot;bloquea&quot; la posición en el sistema de archivos, `home.html` no se puede crear por segunda vez como una carpeta y, por lo tanto, `home.html/suffix.html` no se almacena en caché.
+Solicitudes posteriores a `home.html/suffix.html` devuelven resultados válidos, pero como el archivo `home.html` &quot;bloquea&quot; la posición en el sistema de ficheros,  `home.html` no se puede crear por segunda vez como una carpeta y, por lo tanto, `home.html/suffix.html` no se almacena en caché.
 
 ![Posición de bloqueo de archivos en el sistema de archivos que impide que los subrecursos se almacenen en caché](assets/chapter-1/file-blocking-position-in-filesystem.png)
 
@@ -214,7 +214,7 @@ Las solicitudes posteriores a `home.html/suffix.html` devuelven resultados váli
 
 <br> 
 
-Si lo hace al revés, primero solicita `home.html/suffix.html` y luego `suffix.html` se almacena en caché en una carpeta `/home.html` al principio. Sin embargo, esta carpeta se elimina y se reemplaza por un archivo `home.html` cuando posteriormente solicita `home.html` como recurso.
+Si lo hace al revés, primero debe solicitar `home.html/suffix.html` then `suffix.html` se almacena en caché en una carpeta `/home.html` al principio. Sin embargo, esta carpeta se elimina y se reemplaza por un archivo `home.html` cuando posteriormente solicite `home.html` como recurso.
 
 ![Eliminación de una estructura de ruta cuando se busca un elemento principal como recurso](assets/chapter-1/deleting-path-structure.png)
 
@@ -265,11 +265,11 @@ Revisemos un breve resumen del último capítulo más algunas excepciones. Dispa
 
 ### Información general
 
-El último capítulo enumeraba un gran número de excepciones, cuando Dispatcher no puede almacenar en caché una solicitud. Pero hay más cosas que considerar: Solo porque Dispatcher _puede_ almacenar en caché una solicitud, no significa necesariamente que _deba_.
+El último capítulo enumeraba un gran número de excepciones, cuando Dispatcher no puede almacenar en caché una solicitud. Pero hay más cosas que considerar: Solo porque el Dispatcher _can_ almacenar en caché una solicitud, no significa necesariamente que _should_.
 
 El punto es: El almacenamiento en caché generalmente es fácil. Dispatcher solo necesita almacenar el resultado de una respuesta y devolverlo la próxima vez que se reciba la misma solicitud. Derecha? ¡Incorrecto!
 
-La parte difícil es el _invalidación_ o _vaciado_ de la caché. Dispatcher debe averiguarlo cuando un recurso ha cambiado y debe volver a procesarse.
+La parte difícil es la _invalidación_ o _rubor_ de la caché. Dispatcher debe averiguarlo cuando un recurso ha cambiado y debe volver a procesarse.
 
 Esto parece ser una tarea trivial a primera vista... pero no lo es. Lea más y encontrará algunas diferencias complicadas entre los recursos simples y los simples y las páginas que dependen de una estructura muy maltrecha de varios recursos.
 
@@ -310,7 +310,7 @@ Dispatcher puede eliminar de forma segura el recurso con todas las representacio
 
 `$ rm /content/dam/path/to/image.*`
 
-quitar `image.png` y `image.thumb.png` y todas las demás representaciones que coincidan con ese patrón.
+remove `image.png` y `image.thumb.png` y todas las demás representaciones que coinciden con ese patrón.
 
 Supersimple, de hecho... siempre y cuando utilice un solo recurso para responder a una solicitud.
 
@@ -345,7 +345,7 @@ Imaginen, han publicado su sitio web. El título de la página de Canadá es &qu
 </div>
 ```
 
-** en la página principal. Dispatcher almacena la página principal como un archivo .html estático, que incluye el teaser y su titular en el archivo .
+*into* la página principal. Dispatcher almacena la página principal como un archivo .html estático, que incluye el teaser y su titular en el archivo .
 
 Ahora el especialista en marketing ha aprendido que los titulares de teaser deben ser procesables. Así que decide cambiar el título de &quot;Canadá&quot; a &quot;Visita Canadá&quot;, y actualiza la imagen también.
 
@@ -365,7 +365,7 @@ La página &quot;Oferta especial de invierno&quot; aún no se ha procesado, por 
 
 Podría pensar que Dispatcher mantendría un seguimiento de cada recurso que toca mientras procesa y vacía todas las páginas que han usado este recurso, cuando ese recurso cambia. Pero Dispatcher no procesa las páginas. La renderización se realiza mediante el sistema de publicación. Dispatcher no sabe qué recursos van a un archivo .html procesado.
 
-¿Todavía no está convencido? Puede pensar *&quot;debe haber una forma de implementar algún tipo de seguimiento de dependencias&quot;*. Bueno, existe, o más exactamente ahí *era*. Communiqué 3 el bueno-bueno-bueno-abuelo de AEM tenía un rastreador de dependencias implementado en la _sesión_ que se usaba para renderizar una página.
+¿Todavía no está convencido? Puede pensar *&quot;debe haber una forma de implementar algún tipo de seguimiento de dependencias&quot;*. Bueno, hay, o más exactamente ahí *was*. El Comunicado 3 el bueno-bueno-bueno abuelo de AEM tenía un rastreador de dependencias implementado en el _session_ que se utilizó para procesar una página.
 
 Durante una solicitud, cada recurso adquirido mediante esta sesión se seguía como una dependencia de la URL que se estaba procesando actualmente.
 
@@ -411,7 +411,7 @@ Todos los archivos del despachante, que tienen una fecha de creación anterior a
 
 <br> 
 
-¿Puede preguntar por qué se llama &quot;.stat&quot;? ¿Y no tal vez &quot;.invalidado&quot;? Bueno, puede imaginarse, tener ese archivo en su sistema de archivos ayuda a Dispatcher a determinar qué recursos podrían *estáticamente* servirse, al igual que con un servidor web estático. Estos archivos ya no necesitan procesarse dinámicamente.
+¿Puede preguntar por qué se llama &quot;.stat&quot;? ¿Y no tal vez &quot;.invalidado&quot;? Bueno, puede imaginarse, tener ese archivo en su sistema de archivos ayuda a Dispatcher a determinar qué recursos podrían *estático* , igual que un servidor web estático. Estos archivos ya no necesitan procesarse dinámicamente.
 
 Sin embargo, la verdadera naturaleza del nombre es menos metafórica. Se deriva de la llamada del sistema Unix `stat()`, que devuelve el tiempo de modificación de un archivo (entre otras propiedades).
 
@@ -427,7 +427,7 @@ Dispatcher decide sobre la extensión de archivo, si se aplica o no el esquema d
 
 Los extremos de archivo para la invalidación automática se pueden configurar. En teoría, puede incluir todas las extensiones para la invalidación automática. Pero tengan en cuenta que esto tiene un precio muy alto. No verá recursos antiguos entregados de forma no intencionada, pero el rendimiento de la entrega se degrada enormemente debido a una invalidación excesiva.
 
-Imagine, por ejemplo, que implementa un esquema en el que los PNG y JPG se procesan de forma dinámica y dependen de otros recursos para hacerlo. Es posible que desee volver a escalar las imágenes de alta resolución a una resolución compatible con web más pequeña. Mientras esté en él, también cambiará la velocidad de compresión. La resolución y la tasa de compresión en este ejemplo no son constantes fijas, sino parámetros configurables en el componente que utiliza la imagen. Ahora, si se cambia este parámetro, es necesario invalidar las imágenes.
+Imagine, por ejemplo, que implementa un esquema en el que los PNG y los JPG se procesan de forma dinámica y dependen de otros recursos para hacerlo. Es posible que desee volver a escalar las imágenes de alta resolución a una resolución compatible con web más pequeña. Mientras esté en él, también cambiará la velocidad de compresión. La resolución y la tasa de compresión en este ejemplo no son constantes fijas, sino parámetros configurables en el componente que utiliza la imagen. Ahora, si se cambia este parámetro, es necesario invalidar las imágenes.
 
 No hay problema - acabamos de aprender que podemos añadir imágenes a la invalidación automática y siempre tener imágenes recién procesadas cada vez que algo cambia.
 
@@ -451,9 +451,9 @@ Sería un poco más allá de esta guía entrar en los detalles, pero queremos da
 
 1. De verdad sé lo que estás haciendo. Es muy difícil corregir la invalidación. Esa es una de las razones por las que la invalidación automática es tan rigurosa; para evitar la entrega de contenido obsoleto.
 
-2. Si su agente envía un encabezado HTTP `CQ-Action-Scope: ResourceOnly`, significa que esta única solicitud de invalidación no déclencheur una invalidación automática. Este fragmento de código ( [https://github.com/cqsupport/webinar-dispatchercache/tree/master/src/refetching-flush-agent/refetch-bundle](https://github.com/cqsupport/webinar-dispatchercache/tree/master/src/refetching-flush-agent/refetch-bundle)) puede ser un buen punto de partida para su propio agente de replicación.
+2. Si su agente envía un encabezado HTTP `CQ-Action-Scope: ResourceOnly`, lo que significa que esta única solicitud de invalidación no déclencheur una invalidación automática. Esto ( [https://github.com/cqsupport/webinar-dispatchercache/tree/master/src/refetching-flush-agent/refetch-bundle](https://github.com/cqsupport/webinar-dispatchercache/tree/master/src/refetching-flush-agent/refetch-bundle)) puede ser un buen punto de partida para su propio agente de replicación.
 
-3. `ResourceOnly`, solo evita la invalidación automática. Para hacer realmente la resolución y las invalidaciones de dependencia necesarias, debe déclencheur usted mismo de las solicitudes de invalidación. Puede que desee comprobar las reglas de vaciado del paquete de Dispatcher ([https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-flush-rules/index.html](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-flush-rules/index.html)) para obtener información sobre cómo podría ocurrir esto.
+3. `ResourceOnly`, solo evita la invalidación automática. Para hacer realmente la resolución y las invalidaciones de dependencia necesarias, debe déclencheur usted mismo de las solicitudes de invalidación. Puede que desee comprobar las reglas de vaciado del paquete de Dispatcher ([https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-flush-rules/index.html](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-flush-rules/index.html)) para inspirarse en cómo esto podría realmente suceder.
 
 No se recomienda crear un esquema de resolución de dependencias. Hay demasiado esfuerzo y poco beneficio -y como se dijo antes, hay demasiado que te equivoques.
 
@@ -477,7 +477,7 @@ Ahora queremos aplicar estos mecanismos a un tipo de componentes que probablemen
 
 Ilustremos un patrón común (o anti-patrón) de un componente con binarios interconectados. Crearemos un componente &quot;respi&quot; para &quot;responsive-image&quot;. Este componente debería poder adaptar la imagen mostrada al dispositivo en el que se muestra. En escritorios y tabletas muestra la resolución completa de la imagen, en teléfonos una versión más pequeña con un recorte estrecho - o incluso un motivo completamente diferente (esto se llama &quot;dirección de arte&quot; en el mundo interactivo).
 
-Los recursos se cargan en el área DAM de AEM y solo _se hace referencia_ en el componente de imagen interactiva.
+Los recursos se cargan en el área DAM de AEM y solo _referenciado_ en el componente de imagen interactiva.
 
 El respi-component se encarga de procesar el marcado y de enviar los datos de imagen binarios.
 
@@ -491,11 +491,11 @@ El término original &quot;spooling&quot; hace referencia a periféricos sin con
 
 Así es como se implementa nuestro componente de imagen interactiva:
 
-El componente consta de dos partes: la primera parte representa el marcado HTML de la imagen, la segunda parte &quot;estropea&quot; los datos binarios de la imagen a la que se hace referencia. Como se trata de un sitio web moderno con un diseño interactivo, no se está procesando una etiqueta `<img src"…">` simple, sino un conjunto de imágenes en la etiqueta `<picture/>`. Para cada dispositivo, cargamos dos imágenes diferentes en DAM y las hacemos referencia desde nuestro componente de imagen.
+El componente consta de dos partes: la primera parte representa el marcado del HTML de la imagen, la segunda parte &quot;estropea&quot; los datos binarios de la imagen a la que se hace referencia. Como se trata de un sitio web moderno con un diseño interactivo, no estamos procesando un `<img src"…">` , pero un conjunto de imágenes en `<picture/>` etiqueta. Para cada dispositivo, cargamos dos imágenes diferentes en DAM y las hacemos referencia desde nuestro componente de imagen.
 
 El componente tiene tres secuencias de comandos de renderización (implementadas en JSP, HTL o como servlet), cada una de las cuales se aborda con un selector dedicado:
 
-1. `/respi.jsp` - sin selector para representar el marcado HTML
+1. `/respi.jsp` - sin selector para representar el marcado del HTML
 2. `/respi.img.java` para procesar la versión de escritorio
 3. `/respi.img.mobile.java` para procesar la versión móvil.
 
@@ -600,7 +600,7 @@ De nuevo, esto se basa en la experiencia de la vida real. Ya hemos visto todos e
 >
 >Esto es un anti-patrón. No lo use. Nunca.
 
-¿Alguna vez ha visto parámetros de consulta como `?ck=398547283745`? Se llaman asesinos de caché (&quot;ck&quot;). La idea es que, si agrega cualquier parámetro de consulta, el recurso no se almacene en caché. Además, si agrega un número aleatorio como valor del parámetro (como &quot;398547283745&quot;), la URL se vuelve única y se asegura de que ninguna otra caché entre el sistema de AEM y la pantalla puede almacenar en caché. Los sospechosos habituales entre ellos serían una caché &quot;Varnish&quot; frente a Dispatcher, una CDN o incluso la caché del navegador. De nuevo: No hagas eso. Desea que los recursos se almacenen en caché en la mayor cantidad posible. La caché es tu amigo. No maten amigos.
+¿Ha visto parámetros de consulta como `?ck=398547283745`? Se llaman asesinos de caché (&quot;ck&quot;). La idea es que, si agrega cualquier parámetro de consulta, el recurso no se almacene en caché. Además, si agrega un número aleatorio como valor del parámetro (como &quot;398547283745&quot;), la URL se vuelve única y se asegura de que ninguna otra caché entre el sistema de AEM y la pantalla puede almacenar en caché. Los sospechosos habituales entre ellos serían una caché &quot;Varnish&quot; frente a Dispatcher, una CDN o incluso la caché del navegador. De nuevo: No hagas eso. Desea que los recursos se almacenen en caché en la mayor cantidad posible. La caché es tu amigo. No maten amigos.
 
 #### Invalidación automática
 
@@ -620,19 +620,19 @@ La huella de una dirección URL parece un asesino en caché. Pero no lo es. No e
 
 Una marca de tiempo Unix es lo suficientemente buena como para una implementación real. Para mejorar la legibilidad utilizamos un formato más legible en este tutorial: `2018 31.12 23:59 or fp-2018-31-12-23-59`.
 
-La huella digital no debe utilizarse como parámetro de consulta, como direcciones URL con parámetros de consulta   no se puede almacenar en caché. Puede utilizar un selector o el sufijo para la huella digital.
+La huella digital no debe utilizarse como parámetro de consulta, ya que las direcciones URL con parámetros de consulta no se pueden almacenar en caché. Puede utilizar un selector o el sufijo para la huella digital.
 
-Supongamos que el archivo `/content/dam/flower.jpg` tiene una `jcr:lastModified` fecha del 31 de diciembre de 2018, 23:59. La dirección URL con la huella digital es `/content/home/jcr:content/par/respi.fp-2018-31-12-23-59.jpg`.
+Supongamos que el archivo `/content/dam/flower.jpg` tiene un `jcr:lastModified` fecha del 31 de diciembre de 2018, 23:59. La dirección URL con la huella digital es `/content/home/jcr:content/par/respi.fp-2018-31-12-23-59.jpg`.
 
-Esta dirección URL permanece estable, siempre y cuando el archivo de recurso al que se hace referencia (`flower.jpg`) no se cambie. Así que se puede almacenar en caché durante una cantidad indefinida de tiempo y no es un asesino en caché.
+Esta URL permanece estable, siempre y cuando el recurso al que se hace referencia (`flower.jpg`) no ha cambiado. Así que se puede almacenar en caché durante una cantidad indefinida de tiempo y no es un asesino en caché.
 
 Tenga en cuenta que el componente de imagen interactiva debe crear y servir esta URL. No es una funcionalidad de AEM predeterminada.
 
 Ese es el concepto básico. Sin embargo, hay algunos detalles que pueden pasarse por alto fácilmente.
 
-En nuestro ejemplo, el componente se procesó y se almacenó en caché a las 23:59. Ahora la imagen ha cambiado digamos a las 00:00.  El componente _generaría_ una nueva URL con huella digital en su marcado.
+En nuestro ejemplo, el componente se procesó y se almacenó en caché a las 23:59. Ahora la imagen ha cambiado digamos a las 00:00.  El componente _will_ genere una nueva URL con huella digital en su marcado.
 
-Puede pensar que _debería_... pero no lo hace. Como solo se ha cambiado el binario de la imagen y no se ha tocado la página de inclusión, no es necesario volver a procesar el marcado HTML. Así que Dispatcher sirve a la página con la huella antigua, y por lo tanto la versión antigua de la imagen.
+Puede pensarlo _should_... pero no es así. Como solo se ha cambiado el binario de la imagen y no se ha tocado la página de inclusión, no es necesario volver a procesar el marcado del HTML. Así que Dispatcher sirve a la página con la huella antigua, y por lo tanto la versión antigua de la imagen.
 
 ![Componente de imagen más reciente que la imagen a la que se hace referencia, sin huella digital nueva representada.](assets/chapter-1/recent-image-component.png)
 
@@ -650,9 +650,9 @@ Pero no activamos la página principal, ¿verdad? ¿Y por qué deberíamos activ
 >
 >Esto es un anti-patrón. Úselo sólo a corto plazo para ganar tiempo y encontrar una solución más sofisticada.
 
-El administrador diferido generalmente &quot;_establece la invalidación automática en jpgs y el nivel de statfile en cero - eso siempre ayuda con problemas de almacenamiento en caché de todo tipo_&quot;. Encontrará ese asesoramiento en foros técnicos y le ayudará con su problema de invalidación.
+El administrador diferido normalmente &quot;_establece la invalidación automática en jpgs y el nivel de statfile en cero, lo que siempre ayuda a almacenar en caché problemas de todo tipo_.&quot; Encontrará ese asesoramiento en foros técnicos y le ayudará con su problema de invalidación.
 
-Hasta ahora no hemos hablado del nivel de archivo de estado. Básicamente, la invalidación automática solo funciona para archivos en el mismo subárbol. Sin embargo, el problema es que las páginas y los recursos no suelen vivir en el mismo subárbol. Las páginas están por debajo de `/content/mysite` mientras que los recursos están por debajo de `/content/dam`.
+Hasta ahora no hemos hablado del nivel de archivo de estado. Básicamente, la invalidación automática solo funciona para archivos en el mismo subárbol. Sin embargo, el problema es que las páginas y los recursos no suelen vivir en el mismo subárbol. Las páginas están en algún lugar debajo `/content/mysite` Considerando que los activos se encuentran por debajo `/content/dam`.
 
 El &quot;nivel de archivo de estado&quot; define en qué parte de la profundidad están los nodos raíz de los subárboles. En el ejemplo anterior, el nivel sería &quot;2&quot; (1=/content, 2=/mysite,dam)
 
@@ -662,7 +662,7 @@ Comprenderá los beneficios completos de los niveles de archivo de estado más p
 
 #### Implementación de un agente de invalidación personalizado
 
-De todos modos: tenemos que decirle a Dispatcher de alguna manera, para invalidar las páginas HTML si un &quot;.jpg&quot; o &quot;.png&quot; ha cambiado para permitir la renderización con una nueva dirección URL.
+De todos modos: tenemos que decirle a Dispatcher de alguna manera, para invalidar las páginas del HTML si un &quot;.jpg&quot; o &quot;.png&quot; ha cambiado para permitir la renderización con una nueva URL.
 
 Lo que hemos visto en los proyectos es - por ejemplo - agentes de replicación especiales en el sistema de publicación que envían solicitudes de invalidación para un sitio cada vez que se publica una imagen de ese sitio.
 
@@ -714,7 +714,7 @@ La ruta,
 
 `/content/mysite/home/jcr:content/par/respi.img.fp-2018-31-12-23-59.jpg`
 
-no se refiere a ninguno de los recursos invalidados. Recordar? Solo invalidamos un recurso &quot;ficticio&quot; y confiamos en la invalidación automática para considerar que &quot;home&quot; no es válido. Es posible que la imagen misma no se elimine _físicamente_. Por lo tanto, la caché crecerá y crecerá. Cuando las imágenes se cambian y activan, obtienen nuevos nombres de archivo en el sistema de archivos de Dispatcher.
+no se refiere a ninguno de los recursos invalidados. Recordar? Solo invalidamos un recurso &quot;ficticio&quot; y confiamos en la invalidación automática para considerar que &quot;home&quot; no es válido. Es posible que la imagen en sí misma nunca se _físicamente_ eliminado. Por lo tanto, la caché crecerá y crecerá. Cuando las imágenes se cambian y activan, obtienen nuevos nombres de archivo en el sistema de archivos de Dispatcher.
 
 Hay tres problemas con no eliminar físicamente los archivos en caché y mantenerlos indefinidamente:
 
@@ -748,9 +748,9 @@ Así que... en lugar de usar la huella digital como un simple asesino en caché,
 
 Puede utilizar el esquema de huellas digitales no solo para recursos procedentes de DAM, sino también para archivos JS y CSS y recursos relacionados.
 
-[Clientlibsis ](https://adobe-consulting-services.github.io/acs-aem-commons/features/versioned-clientlibs/index.html) con versiones es un módulo que utiliza este enfoque.
+[Clientlibs con versiones](https://adobe-consulting-services.github.io/acs-aem-commons/features/versioned-clientlibs/index.html) es un módulo que utiliza este enfoque.
 
-Pero aquí se puede encontrar otra advertencia teniendo huellas de URL: Vincula la dirección URL al contenido. No puede cambiar el contenido sin cambiar también la dirección URL (es decir, actualizar la fecha de modificación). Para eso están diseñadas las huellas digitales. Pero tenga en cuenta que está desarrollando una nueva versión, con nuevos archivos CSS y JS y, por lo tanto, nuevas direcciones URL con nuevas huellas digitales. Todas las páginas HTML aún tienen referencias a las antiguas direcciones URL con huella digital. Por lo tanto, para que la nueva versión funcione de forma coherente, debe invalidar todas las páginas HTML a la vez para forzar una renderización con referencias a los archivos recién imprimidos. Si tiene varios sitios que dependen de las mismas bibliotecas, puede ser una cantidad considerable de reprocesamiento, y aquí no puede aprovechar el `statfiles`. Por lo tanto, esté preparado para ver los picos de carga en los sistemas de publicación después de un lanzamiento. Puede considerar una implementación azul-verde con calentamiento de caché o quizá una caché basada en TTL frente de su Dispatcher ... las posibilidades son interminables.
+Pero aquí se puede encontrar otra advertencia teniendo huellas de URL: Vincula la dirección URL al contenido. No puede cambiar el contenido sin cambiar también la dirección URL (es decir, actualizar la fecha de modificación). Para eso están diseñadas las huellas digitales. Pero tenga en cuenta que está desarrollando una nueva versión, con nuevos archivos CSS y JS y, por lo tanto, nuevas direcciones URL con nuevas huellas digitales. Todas las páginas HTML aún tienen referencias a las antiguas direcciones URL con huella digital. Por lo tanto, para que la nueva versión funcione de forma coherente, debe invalidar todas las páginas HTML a la vez para forzar una renderización con referencias a los archivos recién impresos mediante huellas digitales. Si tiene varios sitios que dependen de las mismas bibliotecas, puede ser una cantidad considerable de reprocesamiento, y aquí no puede aprovechar el `statfiles`. Por lo tanto, esté preparado para ver los picos de carga en los sistemas de publicación después de un lanzamiento. Puede considerar una implementación azul-verde con calentamiento de caché o quizá una caché basada en TTL frente de su Dispatcher ... las posibilidades son interminables.
 
 #### Breve pausa
 
@@ -806,7 +806,7 @@ Nuestro ejemplo se resuelve fácilmente:
 
 Utilizamos las rutas de recursos originales de los recursos para procesar los datos. Si necesitamos procesar la imagen original tal cual, solo podemos usar AEM procesador predeterminado para los recursos.
 
-Si necesitamos hacer un procesamiento especial para un componente específico, registraríamos un servlet dedicado en esa ruta y el selector para realizar la transformación en nombre del componente. Lo hicimos aquí como ejemplo con &quot;.respi&quot;. selector. Es aconsejable realizar un seguimiento de los nombres de selector que se utilizan en el espacio de URL global (como `/content/dam`) y tener una convención de nombres adecuada para evitar conflictos de nombres.
+Si necesitamos hacer un procesamiento especial para un componente específico, registraríamos un servlet dedicado en esa ruta y el selector para realizar la transformación en nombre del componente. Lo hicimos aquí como ejemplo con &quot;.respi&quot;. selector. Es aconsejable realizar un seguimiento de los nombres de selectores que se utilizan en el espacio de URL global (como `/content/dam`) y tienen una buena convención de nombres para evitar conflictos de nombres.
 
 Por cierto, no vemos ningún problema con la coherencia del código. El servlet se puede definir en el mismo paquete Java que el modelo sling de componentes.
 
@@ -842,7 +842,7 @@ El componente respi2 es un componente que muestra una imagen interactiva, al igu
 
 <br> 
 
-Las imágenes son jpegs y los jpegs se pueden comprimir. Cuando comprime una imagen jpeg, intercambia la calidad por el tamaño del archivo. La compresión se define como un parámetro numérico de &quot;calidad&quot; que va de &quot;1&quot; a &quot;100&quot;. &quot;1&quot; significa &quot;pequeña pero mala calidad&quot;, &quot;100&quot; significa &quot;excelente calidad pero archivos grandes&quot;. Entonces, ¿cuál es el valor perfecto?
+Las imágenes son jpegs y los jpegs se pueden comprimir. Cuando comprime una imagen jpeg, intercambia la calidad por el tamaño del archivo. La compresión se define como un parámetro numérico de &quot;calidad&quot; que va de &quot;1&quot; a &quot;100&quot;. &quot;1&quot; significa &quot;pequeña pero mala calidad&quot;, &quot;100&quot; significa &quot;excelente calidad, pero archivos grandes&quot;. Entonces, ¿cuál es el valor perfecto?
 
 Como en todas las cosas de TI, la respuesta es: &quot;Depende&quot;.
 
@@ -864,7 +864,7 @@ En el último capítulo, nuestra URL de imagen representada por el componente te
 
 `/content/dam/flower.respi.jpg`
 
-Lo único que falta es el valor de la calidad. El componente sabe qué propiedad introduce el autor... Podría pasarse fácilmente al servlet de renderización de imágenes como parámetro de consulta cuando se procesa el marcado, como `flower.respi2.jpg?quality=60`:
+Lo único que falta es el valor de la calidad. El componente sabe qué propiedad introduce el autor... Podría pasarse fácilmente al servlet de renderización de imágenes como parámetro de consulta cuando se representa el marcado, como `flower.respi2.jpg?quality=60`:
 
 ```plain
   <div class="respi2">
@@ -904,7 +904,7 @@ Esto es mucho mejor, pero ¿recuerdan a ese desagradable guionista del último c
   …
 ```
 
-De nuevo, esto evita la caché y crea carga en el sistema de publicación. Así que puede ser una mala idea. Puede mitigarlo filtrando solo un pequeño subconjunto de parámetros. Desea permitir solo `q-20, q-40, q-60, q-80, q-100`.
+De nuevo, esto evita la caché y crea carga en el sistema de publicación. Así que puede ser una mala idea. Puede mitigarlo filtrando solo un pequeño subconjunto de parámetros. Solo desea permitir `q-20, q-40, q-60, q-80, q-100`.
 
 #### Filtrado de solicitudes no válidas al utilizar selectores
 
@@ -954,9 +954,9 @@ Mejor es devolver un `301 – Moved permanently`:
   Location: /content/dam/flower.respi.q-40.jpg
 ```
 
-Aquí AEM se lo dice al navegador. &quot;No tengo `q-41`. Pero hey - puedes preguntarme acerca de `q-40` &quot;.
+Aquí AEM se lo dice al navegador. &quot;No tengo `q-41`. Pero hey, puedes preguntarme acerca de `q-40` &quot;.
 
-Esto agrega un bucle de respuesta de solicitud adicional a la conversación, que es un poco sobrecargado, pero es más barato que hacer el procesamiento completo en `q-41`. Y puede aprovechar el archivo que ya se ha almacenado en la caché en `q-40`. Sin embargo, debe comprender que las respuestas 302 no se almacenan en caché en Dispatcher, estamos hablando de la lógica que se ejecuta en la AEM. Una y otra vez. Así que es mejor que sea delgado y rápido.
+Esto añade un bucle de respuesta de solicitud adicional a la conversación, que es un poco sobrecargado, pero es más barato que realizar el procesamiento completo en `q-41`. Y puede aprovechar el archivo que ya está almacenado en la caché en `q-40`. Sin embargo, debe comprender que las respuestas 302 no se almacenan en caché en Dispatcher, estamos hablando de la lógica que se ejecuta en la AEM. Una y otra vez. Así que es mejor que sea delgado y rápido.
 
 Personalmente, nos gusta que el 404 responda más. Hace que sea muy obvio lo que está pasando. Y ayuda a detectar errores en su sitio web cuando está analizando archivos de registro. 301s puede ser destinado, donde siempre debe analizarse y eliminarse el 404.
 
@@ -1026,7 +1026,7 @@ Desacreditamos el patrón de Spooler en el último capítulo. Es hora de rehabil
 
 El patrón de administrador de trabajos evita el problema de exponer una API que se ha discutido en el último capítulo. Las propiedades se almacenan y encapsulan en el componente . Todo lo que necesitamos para acceder a estas propiedades es la ruta al componente. No es necesario usar la URL como vehículo para transmitir los parámetros entre marcado y procesamiento binario:
 
-1. El cliente procesa el marcado HTML cuando se solicita el componente dentro del bucle de solicitud principal
+1. El cliente procesa el marcado del HTML cuando se solicita el componente dentro del bucle de solicitud principal
 
 2. La ruta del componente sirve como referencia desde el marcado hasta el componente
 
@@ -1044,7 +1044,7 @@ Eso nos lleva a la pregunta. ¿Por qué no podemos sacar lo mejor de ambos mundo
 
 Tenemos que admitir que no lo hemos visto en un proyecto real en vivo. Pero, de todos modos, nos atrevamos a un pequeño experimento mental -como punto de partida para su propia solución.
 
-Llamaremos a este patrón el _Depurador invertido_. El gestor de datos invertido debe basarse en el recurso de imágenes para tener todas las propiedades de invalidación de caché correctas.
+Llamaremos a este patrón el _Depurador invertido_... El gestor de datos invertido debe basarse en el recurso de imágenes para tener todas las propiedades de invalidación de caché correctas.
 
 Pero no debe exponer ningún parámetro. Todas las propiedades deben encapsularse en el componente . Pero podemos exponer la ruta de los componentes, como una referencia opaca a las propiedades.
 
@@ -1070,43 +1070,43 @@ Wow... la discusión del spooler se hizo más y más complicada de lo esperado. 
 
 #### Introducción
 
-Ya hemos mencionado brevemente el _archivo de estado_ antes. Está relacionado con la invalidación automática:
+Ya mencionamos brevemente el _statfile_ antes. Está relacionado con la invalidación automática:
 
-Todos los archivos de caché del sistema de archivos de Dispatcher que están configurados para ser invalidados automáticamente se consideran no válidos si su fecha de última modificación es anterior a la fecha `statfile's` de la última modificación.
+Todos los archivos de caché del sistema de archivos de Dispatcher configurados para ser invalidados automáticamente se consideran no válidos si su fecha de última modificación es anterior a la del `statfile's` fecha de la última modificación.
 
 >[!NOTE]
 >
->La última fecha modificada de la que hablamos es el archivo almacenado en caché, es la fecha en la que el archivo fue solicitado desde el navegador del cliente y finalmente creado en el sistema de archivos. No es la fecha `jcr:lastModified` del recurso.
+>La última fecha modificada de la que hablamos es el archivo almacenado en caché, es la fecha en la que el archivo fue solicitado desde el navegador del cliente y finalmente creado en el sistema de archivos. No es el `jcr:lastModified` fecha del recurso.
 
-La fecha de la última modificación del archivo de estado (`.stat`) es la fecha en que se recibió la solicitud de invalidación de AEM en Dispatcher.
+La fecha de la última modificación del archivo de estado (`.stat`) es la fecha en la que se recibió la solicitud de invalidación de AEM en Dispatcher.
 
 Si tiene más de un Dispatcher, esto puede producir efectos extraños. Su navegador puede tener una versión más reciente de Dispatcher (si tiene más de un Dispatcher). O un Dispatcher podría pensar que la versión del explorador que emitió el otro Dispatcher está obsoleta y envía una copia nueva de forma innecesaria. Estos efectos no tienen un impacto significativo en el rendimiento o en los requisitos funcionales. Y se nivelarán con el tiempo, cuando el navegador tenga la última versión. Sin embargo, puede resultar un poco confuso cuando está optimizando y depurando el comportamiento de almacenamiento en caché del explorador. Así que hay que advertirlo.
 
 #### Configuración de dominios de invalidación con /statfileslevel
 
-Cuando introdujimos la invalidación automática y el archivo de estado que dijimos, que *todos los archivos* se consideran no válidos cuando hay algún cambio y que todos los archivos son interdependientes de todos modos.
+Cuando introdujimos la invalidación automática y el archivo de estado dijimos: *all* Los archivos se consideran no válidos cuando hay algún cambio y de todos modos todos los archivos son interdependientes.
 
-Eso no es muy preciso. Normalmente, todos los archivos que comparten una raíz de navegación principal común son interdependientes. Pero una instancia AEM puede alojar varios sitios web - *sitios web independientes*. No compartir una navegación común - de hecho, no compartir nada.
+Eso no es muy preciso. Normalmente, todos los archivos que comparten una raíz de navegación principal común son interdependientes. Pero una instancia AEM puede alojar varios sitios web - *independiente* sitios web. No compartir una navegación común - de hecho, no compartir nada.
 
 ¿No sería un desperdicio invalidar el Sitio B porque hay un cambio en el Sitio A? Sí, lo es. Y no tiene que ser así.
 
-Dispatcher proporciona un medio sencillo para separar los sitios entre sí: El `statfiles-level`.
+Dispatcher proporciona un medio sencillo para separar los sitios entre sí: La variable `statfiles-level`.
 
 Es un número que define desde qué nivel en el sistema de archivos, dos subárboles se consideran &quot;independientes&quot;.
 
 Veamos el caso predeterminado en el que statfileslevel es 0.
 
-![/statfileslevel &quot;0&quot;: El parámetro_  _.stat_ _se crea en docroot. El dominio de invalidación abarca toda la instalación, incluidos todos los sitios](assets/chapter-1/statfile-level-0.png)
+![/statfileslevel &quot;0&quot;: El _.stat_ _se crea en docroot. El dominio de invalidación abarca toda la instalación, incluidos todos los sitios](assets/chapter-1/statfile-level-0.png)
 
-`/statfileslevel "0":` El  `.stat` archivo se crea en la carpeta docroot. El dominio de invalidación abarca toda la instalación, incluidos todos los sitios.
+`/statfileslevel "0":` La variable `.stat` se crea en docroot. El dominio de invalidación abarca toda la instalación, incluidos todos los sitios.
 
-Cualquiera que sea el archivo invalidado, el archivo `.stat` en la parte superior del docroot de Dispatcher siempre se actualiza. Por lo tanto, cuando invalida `/content/site-b/home`, también se invalidan todos los archivos de `/content/site-a`, ya que ahora son más antiguos que el archivo `.stat` en docroot. Claramente no lo que necesita, cuando invalida `site-b`.
+Cualquiera que sea el archivo invalidado, la variable `.stat` en la parte superior del docroot de dispatchers siempre se actualiza. Por lo tanto, cuando se invalida `/content/site-b/home`, también todos los archivos de `/content/site-a` también se invalidan, ya que ahora son más antiguas que el `.stat` en la carpeta docroot. Claramente no lo que necesita, cuando invalida `site-b`.
 
-En este ejemplo, preferiría establecer el `statfileslevel` en `1`.
+En este ejemplo, preferiría establecer la variable `statfileslevel` a `1`.
 
-Ahora, si publica y, por lo tanto, invalida `/content/site-b/home` o cualquier otro recurso por debajo de `/content/site-b`, el archivo `.stat` se crea en `/content/site-b/`.
+Ahora, si publica y, por lo tanto, invalida `/content/site-b/home` o cualquier otro recurso inferior `/content/site-b`, el `.stat` el archivo se crea en `/content/site-b/`.
 
-El contenido inferior a `/content/site-a/` no se ve afectado. Este contenido se compararía con un archivo `.stat` en `/content/site-a/`. Hemos creado dos dominios de invalidación independientes.
+Contenido debajo `/content/site-a/` no se ve afectado. Este contenido se compararía con un `.stat` file at `/content/site-a/`. Hemos creado dos dominios de invalidación independientes.
 
 ![Un nivel de archivos de estado &quot;1&quot; crea diferentes dominios de invalidación](assets/chapter-1/statfiles-level-1.png)
 
@@ -1114,7 +1114,7 @@ El contenido inferior a `/content/site-a/` no se ve afectado. Este contenido se 
 
 <br> 
 
-Las grandes instalaciones normalmente están estructuradas un poco más complejas y más profundas. Un esquema común es estructurar los sitios por marca, país e idioma. En ese caso, puede establecer el nivel de archivos de estado aún más alto. _1_ crearía dominios de invalidación por marca,  _2_ por país y  _3_ por idioma.
+Las grandes instalaciones normalmente están estructuradas un poco más complejas y más profundas. Un esquema común es estructurar los sitios por marca, país e idioma. En ese caso, puede establecer el nivel de archivos de estado aún más alto. _1_ crearía dominios de invalidación por marca, _2_ por país y _3_ por idioma.
 
 ### Necesidad de una estructura de sitio homogénea
 
@@ -1143,11 +1143,11 @@ Considere que tiene algunas marcas en su portafolio que se venden sólo en unos 
   ..
 ```
 
-El primero requeriría un `statfileslevel` de _2_, mientras que el segundo requiere _3_.
+El primero requeriría un `statfileslevel` de _2_, mientras que la última requiere _3_.
 
-No es una situación ideal. Si lo establece en _3_, la invalidación automática no funcionará en los sitios más pequeños entre las subramas `/home`, `/products` y `/about`.
+No es una situación ideal. Si lo establece en _3_, la invalidación automática no funcionaría en los sitios más pequeños entre las subramas `/home`, `/products` y `/about`.
 
-Si se establece en _2_ significa que en los sitios más grandes se declaran `/canada/en` y `/canada/fr` dependientes, lo que podría no ser así. Por lo tanto, cada invalidación en `/en` también invalidaría `/fr`. Esto reducirá ligeramente la tasa de visitas a la caché, pero es mejor que ofrecer contenido almacenado en caché obsoleto.
+Configurándolo en _2_ significa que en los sitios más grandes está declarando `/canada/en` y `/canada/fr` dependiente, lo que puede que no sea así. Por lo tanto, cada invalidación en `/en` también invalidaría `/fr`. Esto reducirá ligeramente la tasa de visitas a la caché, pero es mejor que ofrecer contenido almacenado en caché obsoleto.
 
 La mejor solución, por supuesto, es hacer que las raíces de todos los sitios sean igualmente profundas:
 
@@ -1163,9 +1163,9 @@ La mejor solución, por supuesto, es hacer que las raíces de todos los sitios s
 
 ### Vinculación entre sitios
 
-¿Cuál es el nivel correcto? Eso depende del número de dependencias que tenga entre los sitios. Las inclusiones que resuelve para procesar una página se consideran &quot;dependencias duras&quot;. Hemos demostrado dicha _inclusión_ cuando presentamos el componente _Teaser_ al principio de esta guía.
+¿Cuál es el nivel correcto? Eso depende del número de dependencias que tenga entre los sitios. Las inclusiones que resuelve para procesar una página se consideran &quot;dependencias duras&quot;. Demostramos que _inclusión_ cuando presentamos el _Teaser_ al principio de esta guía.
 
-__ Los hipervínculos son una forma más suave de dependencias. Es muy probable que usted tenga hipervínculos dentro de un sitio web... y no es improbable que tenga vínculos entre sus sitios web. Los hipervínculos simples generalmente no crean dependencias entre sitios web. Piense en un vínculo externo que configuró desde su sitio a facebook... No tendría que presentar su página si algo cambia en facebook y viceversa, ¿verdad?
+_Hipervínculos_ son una forma más suave de dependencias. Es muy probable que usted tenga hipervínculos dentro de un sitio web... y no es improbable que tenga vínculos entre sus sitios web. Los hipervínculos simples generalmente no crean dependencias entre sitios web. Piense en un vínculo externo que configuró desde su sitio a facebook... No tendría que presentar su página si algo cambia en facebook y viceversa, ¿verdad?
 
 Se produce una dependencia cuando se lee contenido del recurso vinculado (por ejemplo, el título de navegación). Estas dependencias se pueden evitar solo si se confía en títulos de navegación introducidos localmente y no se dibujan desde la página de destino (como haría con los vínculos externos).
 
@@ -1204,9 +1204,9 @@ No había vínculos navegables entre los sitios de idiomas y no había inclusion
 
 Básicamente, todos los sitios sirven el mismo contenido. La única diferencia importante fue el idioma.
 
-Los motores de búsqueda como Google consideran que tener el mismo contenido en diferentes URL es &quot;engañoso&quot;. Es posible que un usuario desee clasificar más o listar más a menudo creando granjas que ofrezcan contenido idéntico. Los motores de búsqueda reconocen estos intentos y clasifican las páginas por debajo, simplemente reciclan el contenido.
+Los motores de búsqueda como Google consideran que tener el mismo contenido en distintas URL es &quot;engañoso&quot;. Es posible que un usuario desee clasificar más o listar más a menudo creando granjas que ofrezcan contenido idéntico. Los motores de búsqueda reconocen estos intentos y clasifican las páginas por debajo, simplemente reciclan el contenido.
 
-Puede evitar que se clasifique en una clasificación inferior haciendo transparente, que en realidad tenga más de una página con el mismo contenido y que no esté intentando &quot;jugar&quot; al sistema (consulte [&quot;Más información sobre las versiones localizadas de su página&quot;](https://support.google.com/webmasters/answer/189077?hl=en)) configurando etiquetas `<link rel="alternate">` en cada página relacionada en la sección del encabezado de cada página:
+Puede evitar clasificarse en una clasificación inferior si se hace transparente, si en realidad tiene más de una página con el mismo contenido y si no está intentando &quot;jugar&quot; con el sistema (consulte [&quot;Informe a Google sobre las versiones localizadas de su página&quot;](https://support.google.com/webmasters/answer/189077?hl=en)) estableciendo `<link rel="alternate">` a cada página relacionada en la sección del encabezado de cada página:
 
 ```
 # URL: www.shiny-brand.fr/fr/home/produits.html
@@ -1252,13 +1252,13 @@ Puede evitar que se clasifique en una clasificación inferior haciendo transpare
 
 Algunos expertos en SEO incluso argumentan que esto podría transferir la reputación o &quot;el jugo de vínculo&quot; de un sitio web de alto rango en un idioma al mismo sitio web en un idioma diferente.
 
-Este esquema creó no sólo una serie de enlaces, sino también algunos problemas. El número de vínculos necesarios para _p_ en _n_ idiomas es _p x (n<sup>2</sup>-n)_: Cada página se vincula entre sí (_n x n_) excepto a sí misma (_-n_). Este esquema se aplica a cada página. Si tenemos un sitio pequeño en 4 idiomas con 20 páginas, cada uno equivale a _240_ vínculos.
+Este esquema creó no sólo una serie de enlaces, sino también algunos problemas. El número de vínculos necesarios para _p_ en _n_ language is _p x (n<sup>2</sup>-n)_: Cada página se vincula entre sí (_n x n_) excepto para sí (_-n_). Este esquema se aplica a cada página. Si tenemos un sitio pequeño en 4 idiomas con 20 páginas, cada uno equivale a _240_ vínculos.
 
 En primer lugar, no desea que un editor tenga que mantener manualmente estos vínculos, ya que el sistema los debe generar automáticamente.
 
 En segundo lugar, deben ser precisos. Siempre que el sistema detecte un nuevo &quot;pariente&quot;, querrá vincularlo desde todas las demás páginas con el mismo contenido (pero en un idioma diferente).
 
-En nuestro proyecto, las nuevas páginas relativas aparecían con frecuencia. Pero no se materializaron como vínculos &quot;alternativos&quot;. Por ejemplo, cuando la página `de-de/produkte` se publicó en el sitio web alemán, no era visible inmediatamente en los demás sitios.
+En nuestro proyecto, las nuevas páginas relativas aparecían con frecuencia. Pero no se materializaron como vínculos &quot;alternativos&quot;. Por ejemplo, cuando la variable `de-de/produkte` fue publicada en el sitio web alemán, no era inmediatamente visible en los otros sitios.
 
 La razón era que, en nuestra configuración, los sitios debían ser independientes. Así que un cambio en el sitio web alemán no déclencheur una invalidación en el sitio web francés.
 
@@ -1268,7 +1268,7 @@ En nuestro caso, fue aún más complicado:
 
 Aunque teníamos el mismo contenido, los nombres de marca no eran diferentes en cada país.
 
-`shiny-brand` fue llamado  `marque-brillant` en Francia y  `blitzmarke` en Alemania:
+`shiny-brand` se llama `marque-brillant` en Francia y `blitzmarke` en Alemania:
 
 ```
 /content/marque-brillant/france/fr
@@ -1278,7 +1278,7 @@ Aunque teníamos el mismo contenido, los nombres de marca no eran diferentes en 
 …
 ```
 
-Esto habría significado establecer el nivel `statfiles` en 1, lo que habría resultado en un dominio de invalidación demasiado grande.
+Eso habría significado establecer la variable `statfiles` level to 1 - que habría resultado en un dominio de invalidación demasiado grande.
 
 Reestructurar el sitio habría solucionado eso. Combinar todas las marcas en una raíz común. Pero no teníamos la capacidad en ese entonces, y - eso nos hubiera dado solamente un nivel 2.
 
@@ -1300,7 +1300,7 @@ Si instala un Autor de AEM y Publish fuera de la caja, la topología es un poco 
 
 Si un cliente solicita ese contenido mientras tanto, Dispatcher solicitará y almacenará contenido obsoleto.
 
-Una configuración más fiable está enviando la solicitud de invalidación desde los sistemas de publicación _después_ de haber recibido el contenido. El artículo &quot;[Invalidación de la caché de Dispatcher desde una instancia de publicación](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#InvalidatingDispatcherCachefromaPublishingInstance)&quot; describe los detalles.
+Una configuración más fiable envía la solicitud de invalidación desde los sistemas de publicación _after_ han recibido el contenido. El artículo &quot;[Invalidación de la caché de Dispatcher desde una instancia de publicación](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#InvalidatingDispatcherCachefromaPublishingInstance)&quot; describe los detalles.
 
 **Referencias**
 
@@ -1310,9 +1310,9 @@ Una configuración más fiable está enviando la solicitud de invalidación desd
 
 En los viejos tiempos, Dispatcher solo almacenaba archivos simples en el sistema de archivos. Si necesitaba que los encabezados HTTP se enviaran al cliente, lo hizo configurando Apache en función de la poca información que tenía del archivo o la ubicación. Eso fue especialmente molesto cuando implementó una aplicación web en AEM que dependía en gran medida de encabezados HTTP. Todo funcionó bien en la instancia de solo AEM, pero no cuando se utilizó Dispatcher.
 
-Normalmente, se empezaron a volver a aplicar los encabezados que faltan a los recursos del servidor Apache con `mod_headers` mediante el uso de información que se podía derivar de la ruta de acceso y el sufijo de los recursos. Pero eso no siempre fue suficiente.
+Normalmente, se empieza a volver a aplicar los encabezados que faltan a los recursos del servidor Apache con `mod_headers` al utilizar información, puede derivar de la ruta de recursos y del sufijo . Pero eso no siempre fue suficiente.
 
-Lo que resulta especialmente molesto es que, incluso con Dispatcher, la primera respuesta _uncached_ al explorador proviene del sistema de publicación con una gama completa de encabezados, mientras que las respuestas posteriores fueron generadas por Dispatcher con un conjunto limitado de encabezados.
+Especialmente molesto fue, que incluso con Dispatcher el primero _uncached_ la respuesta al explorador provino del sistema de publicación con una gama completa de encabezados, mientras que las respuestas posteriores fueron generadas por Dispatcher con un conjunto limitado de encabezados.
 
 A partir de Dispatcher 4.1.11, Dispatcher puede almacenar encabezados generados por los sistemas de publicación.
 
@@ -1336,7 +1336,7 @@ Puede que desee almacenar en caché todas las páginas e imágenes en general, p
   response.setHeader("Pragma: no-cache");
 ```
 
-Cache-Control y Pragma son encabezados oficiales HTTP, que se propagan e interpretan por capas superiores de almacenamiento en caché, como una CDN. El encabezado `Dispatcher` es solo una sugerencia para que Dispatcher no almacene en caché. Se puede utilizar para indicar a Dispatcher que no almacene en caché, mientras que permite que las capas de almacenamiento en caché superiores lo hagan. En realidad, es difícil encontrar un caso en el que esto pueda ser útil. Pero estamos seguros de que hay algunos, en algún lugar.
+Cache-Control y Pragma son encabezados oficiales HTTP, que se propagan e interpretan por capas superiores de almacenamiento en caché, como una CDN. La variable `Dispatcher` solo es una sugerencia para que Dispatcher no almacene en caché. Se puede utilizar para indicar a Dispatcher que no almacene en caché, mientras que permite que las capas superiores de almacenamiento en caché lo hagan. En realidad, es difícil encontrar un caso en el que esto pueda ser útil. Pero estamos seguros de que hay algunos, en algún lugar.
 
 **Referencias**
 
@@ -1348,43 +1348,43 @@ La respuesta http más rápida es la respuesta dada por el propio explorador. Do
 
 Puede ayudar al explorador a decidir cuándo solicitar al servidor una nueva versión del archivo estableciendo una fecha de caducidad en un recurso.
 
-Normalmente, lo hace estáticamente utilizando el `mod_expires` de Apache o almacenando el Cache-Control y el Encabezado Expires que provienen de AEM si necesita un control más individual.
+Normalmente, se hace de forma estática utilizando el `mod_expires` o almacenando el Cache-Control y Expires Header que provienen de AEM si necesita un control más individual.
 
 Un documento almacenado en caché en el explorador puede tener tres niveles de actualización.
 
-1. _Garantizado nuevo_ : El navegador puede utilizar el documento almacenado en caché.
+1. _Nuevo garantizado_ - El navegador puede utilizar el documento almacenado en caché.
 
-2. _Potencialmente obsoleto_ : el navegador debe preguntar primero al servidor si el documento almacenado en caché sigue estando actualizado,
+2. _Potencialmente obsoleto_ - El navegador debe preguntar al servidor primero si el documento almacenado en caché sigue estando actualizado,
 
-3. _Stale_ : el explorador debe solicitar al servidor una versión nueva.
+3. _Stale_ : El explorador debe solicitar al servidor una versión nueva.
 
 El primero está garantizado por la fecha de caducidad establecida por el servidor. Si un recurso no ha caducado, no es necesario volver a preguntar al servidor.
 
 Si el documento ha alcanzado su fecha de caducidad, puede seguir siendo nuevo. La fecha de caducidad se establece cuando se entrega el documento. Pero a menudo no se sabe de antemano cuándo hay nuevo contenido disponible - así que esto es solo una estimación conservadora.
 
-Para determinar si el documento de la caché del explorador sigue siendo el mismo que se entregaría en una nueva solicitud, el explorador puede utilizar la fecha `Last-Modified` del documento. El navegador pregunta al servidor:
+Para determinar si el documento de la caché del explorador sigue siendo el mismo que se entregaría en una nueva solicitud, el explorador puede utilizar la variable `Last-Modified` fecha del documento. El navegador pregunta al servidor:
 
 &quot;_Tengo una versión del 10 de junio... ¿necesito una actualización?_&quot; Y el servidor podría responder con
 
 &quot;_304 - Su versión aún está actualizada_&quot; sin retransmitir el recurso, o el servidor podría responder con
 
-&quot;_200 - aquí hay una versión más reciente_&quot; en el encabezado HTTP y el contenido más reciente en el cuerpo HTTP.
+&quot;_200 - Esta es una versión más reciente_&quot; en el encabezado HTTP y el contenido más reciente en el cuerpo HTTP.
 
-Para que la segunda parte funcione, asegúrese de transmitir la fecha `Last-Modified` al explorador para que tenga un punto de referencia para solicitar actualizaciones.
+Para que la segunda parte funcione, asegúrese de transmitir la variable `Last-Modified` haga una fecha al explorador, de modo que tenga un punto de referencia para solicitar actualizaciones.
 
-Explicamos anteriormente que cuando Dispatcher genera la fecha `Last-Modified`, puede variar entre diferentes solicitudes porque el archivo almacenado en caché (y su fecha) se genera cuando el explorador solicita el archivo. Una alternativa sería utilizar &quot;etiquetas electrónicas&quot;: son números que identifican el contenido real (por ejemplo, generando un código hash) en lugar de una fecha.
+Explicamos anteriormente que cuando la variable `Last-Modified` La fecha la genera Dispatcher, puede variar entre diferentes solicitudes porque el archivo en caché (y su fecha) se genera cuando el explorador solicita el archivo. Una alternativa sería utilizar &quot;etiquetas electrónicas&quot;: son números que identifican el contenido real (por ejemplo, generando un código hash) en lugar de una fecha.
 
-&quot;[Compatibilidad con etiquetas](https://adobe-consulting-services.github.io/acs-aem-commons/features/etag/index.html)&quot; del _Paquete ACS Commons_ usa este enfoque. Sin embargo, esto tiene un precio: Como la E-Tag debe enviarse como un encabezado, pero la cálculo del código hash requiere leer completamente la respuesta, la respuesta debe almacenarse en el búfer en la memoria principal antes de enviarse. Esto puede tener un impacto negativo en la latencia cuando es más probable que el sitio web tenga recursos sin almacenar en caché y, por supuesto, debe estar atento a la memoria consumida por el sistema de AEM.
+&quot;[Compatibilidad con etiquetas electrónicas](https://adobe-consulting-services.github.io/acs-aem-commons/features/etag/index.html)&quot; de _Paquete ACS Commons_ utiliza este método. Sin embargo, esto tiene un precio: Como la E-Tag debe enviarse como un encabezado, pero la cálculo del código hash requiere leer completamente la respuesta, la respuesta debe almacenarse en el búfer en la memoria principal antes de enviarse. Esto puede tener un impacto negativo en la latencia cuando es más probable que el sitio web tenga recursos sin almacenar en caché y, por supuesto, debe estar atento a la memoria consumida por el sistema de AEM.
 
 Si utiliza huellas de URL, puede establecer fechas de caducidad muy largas. Puede almacenar en caché los recursos de huellas digitales para siempre en el explorador. Una versión nueva se marca con una dirección URL nueva y las versiones anteriores no se tienen que actualizar nunca.
 
-Utilizamos huellas digitales de URL cuando introdujimos el patrón de cola de impresión. Los archivos estáticos procedentes de `/etc/design` (CSS, JS) rara vez cambian, lo que también los convierte en buenos candidatos para utilizarlos como huellas digitales.
+Utilizamos huellas digitales de URL cuando introdujimos el patrón de cola de impresión. Archivos estáticos procedentes de la variable `/etc/design` (CSS, JS) raramente cambian, lo que también los convierte en buenos candidatos para utilizarlos como huellas digitales.
 
-Para archivos normales normalmente configuramos un esquema fijo, como volver a comprobar HTML cada 30 minutos, imágenes cada 4 horas, etc.
+Para archivos normales normalmente configuramos un esquema fijo, como volver a comprobar el HTML cada 30 minutos, imágenes cada 4 horas, etc.
 
 El almacenamiento en caché del explorador es extremadamente útil en el sistema de creación. Desea almacenar en caché todo lo posible en el explorador para mejorar la experiencia de edición. Desafortunadamente, los recursos más caros, las páginas html no se pueden almacenar en caché... se supone que cambian con frecuencia en el autor.
 
-Las bibliotecas de granito, que conforman AEM interfaz de usuario, se pueden almacenar en caché durante bastante tiempo. También puede almacenar en caché los archivos estáticos de los sitios (fuentes, CSS y JavaScript) en el explorador. Incluso las imágenes en `/content/dam` generalmente se pueden almacenar en caché durante unos 15 minutos, ya que no se cambian tan a menudo como copiar texto en las páginas. Las imágenes no se editan de forma interactiva en AEM. Se editan y aprueban primero, antes de que se carguen en AEM. Por lo tanto, se puede suponer que no cambian con tanta frecuencia como el texto.
+Las bibliotecas de granito, que conforman AEM interfaz de usuario, se pueden almacenar en caché durante bastante tiempo. También puede almacenar en caché los archivos estáticos de los sitios (fuentes, CSS y JavaScript) en el explorador. Inclusión de imágenes en `/content/dam` normalmente se pueden almacenar en caché durante unos 15 minutos, ya que no se cambian tan a menudo como copiar texto en las páginas. Las imágenes no se editan de forma interactiva en AEM. Se editan y aprueban primero, antes de que se carguen en AEM. Por lo tanto, se puede suponer que no cambian con tanta frecuencia como el texto.
 
 El almacenamiento en caché de archivos de IU, archivos de biblioteca de sitios e imágenes puede acelerar la recarga de páginas de forma significativa cuando se encuentra en modo de edición.
 
@@ -1420,15 +1420,15 @@ querrías tener,
 
 Debe implementar esa asignación en AEM, ya que AEM saber cómo procesar vínculos según ese formato truncado.
 
-Pero no dependan de AEM, sólo. Si lo hace, tendrá rutas como `/home.html` en el directorio raíz de la caché. Ahora, ¿es ese el &quot;hogar&quot; para los finlandeses, los alemanes o el sitio web canadiense? Y si hay un archivo `/home.html` en Dispatcher, ¿cómo sabe Dispatcher que esto debe invalidarse cuando ingresa una solicitud de invalidación para `/content/brand/fi/fi/home`?
+Pero no dependan de AEM, sólo. Si lo hace, tendrá rutas como `/home.html` en el directorio raíz de la caché. Ahora, ¿es ese el &quot;hogar&quot; para los finlandeses, los alemanes o el sitio web canadiense? Y si hay un archivo `/home.html` en Dispatcher, ¿cómo sabe Dispatcher que esto debe invalidarse cuando una solicitud de invalidación de `/content/brand/fi/fi/home` entra.
 
 Hemos visto un proyecto que tenía bases de datos independientes para cada dominio. Fue una pesadilla depurar y mantener - y en realidad nunca lo vimos funcionar sin problemas.
 
 Podríamos resolver los problemas reestructurando la caché. Teníamos un único docroot para todos los dominios, y las solicitudes de invalidación podían manejarse 1:1 ya que todos los archivos del servidor empezaban con `/content`.
 
-La parte truncada también fue muy fácil.  AEM generó vínculos truncados debido a una configuración de acuerdo en `/etc/map`.
+La parte truncada también fue muy fácil.  AEM vínculos truncados generados debido a una configuración de acuerdo con en `/etc/map`.
 
-Ahora, cuando una solicitud `/home.html` está llegando a Dispatcher, lo primero que sucede es aplicar una regla de reescritura que expande internamente la ruta.
+Ahora, cuando se solicita `/home.html` está pulsando Dispatcher, lo primero que sucede es aplicar una regla de reescritura que expande internamente la ruta.
 
 Esa regla se configuró estáticamente en cada configuración de vhost. En pocas palabras, las reglas se veían así,
 
@@ -1438,7 +1438,7 @@ Esa regla se configuró estáticamente en cada configuración de vhost. En pocas
   RewriteRule "^(.\*\.html)" "/content/shiny-brand/finland/fi/$1"
 ```
 
-En el sistema de archivos ahora tenemos rutas simples basadas en `/content`, que también se encontrarían en el Autor y Publicación - lo que ayudó mucho a depurar. Sin mencionar la invalidación correcta, ya no era un problema.
+En el sistema de archivos ahora tenemos un `/content`Las rutas basadas en , que también se encontrarían en el Autor y en la Publicación , lo que ayudó mucho a depurar. Sin mencionar la invalidación correcta, ya no era un problema.
 
 Tenga en cuenta que solo lo hicimos para direcciones URL &quot;visibles&quot;, direcciones URL que se muestran en la ranura de URL del explorador. Las direcciones URL de imágenes, por ejemplo, seguían siendo direcciones URL puras de &quot;/content&quot;. Creemos que embellecer la URL &quot;principal&quot; es suficiente en términos de optimización de los motores de búsqueda.
 
@@ -1458,13 +1458,13 @@ Tener un docroot común también tuvo otra característica agradable. Cuando alg
 
 En AEM clases, aprenderá a programar un gestor de errores en Sling. Esto no es tan diferente a escribir una plantilla habitual. Simplemente escribe una plantilla en JSP o HTL, ¿verdad?
 
-Sí - pero esta es la parte AEM, sólo. Recuerde: Dispatcher no almacena en caché las respuestas `404 – not found` o `500 – internal server error`.
+Sí - pero esta es la parte AEM, sólo. Recuerde: Dispatcher no almacena en caché `404 – not found` o `500 – internal server error` respuestas.
 
 Si está procesando estas páginas de forma dinámica en cada solicitud (fallida), tendrá una carga alta innecesaria en los sistemas de publicación.
 
 Lo que nos pareció útil es no representar la página de error completa cuando se produce un error, sino solo una versión supersimplificada y pequeña, incluso estática de esa página, sin ningún ornamento ni lógica.
 
-Esto, por supuesto, no es lo que el cliente vio. En Dispatcher, registramos `ErrorDocuments` de esta manera:
+Esto, por supuesto, no es lo que el cliente vio. En Dispatcher, nos registramos `ErrorDocuments` así:
 
 ```
 ErrorDocument 404 "/content/shiny-brand/fi/fi/edocs/error-404.html"
@@ -1475,9 +1475,9 @@ Ahora el sistema AEM sólo podía notificar al Dispatcher que algo estaba mal, y
 
 Hay que señalar dos cosas aquí.
 
-En primer lugar, `error-404.html` siempre es la misma página. Por lo tanto, no hay ningún mensaje individual como &quot;Su búsqueda de &quot;_product_&quot; no produjo ningún resultado&quot;. Podríamos vivir fácilmente con eso.
+En primer lugar, el `error-404.html` siempre es la misma página. Por lo tanto, no hay ningún mensaje individual como &quot;Su búsqueda por &quot;_produkten_&quot; no dio resultado&quot;. Podríamos vivir fácilmente con eso.
 
-Segundo... bueno, si vemos un error interno del servidor - o peor aún si nos encontramos con una interrupción del sistema AEM, no hay forma de pedir AEM para procesar una página de error, ¿verdad? La solicitud posterior necesaria, tal como se define en la directiva `ErrorDocument`, también fallaría. Para solucionar este problema, ejecutamos un cron-job que periódicamente extraía las páginas de error de sus ubicaciones definidas a través de `wget` y las almacenaba en ubicaciones de archivos estáticos definidas en la directiva `ErrorDocuments`.
+Segundo... bueno, si vemos un error interno del servidor - o peor aún si nos encontramos con una interrupción del sistema AEM, no hay forma de pedir AEM para procesar una página de error, ¿verdad? La solicitud posterior necesaria, tal como se define en la variable `ErrorDocument` la directiva también fracasaría. Trabajamos en ese problema ejecutando un cron-job que periódicamente extraería las páginas de error de sus ubicaciones definidas a través de `wget` y almacenarlas en ubicaciones de archivos estáticos definidas en la variable `ErrorDocuments` directiva.
 
 **Referencias**
 
@@ -1499,7 +1499,7 @@ Y por supuesto, se puede aplicar su propia combinación de los tres enfoques.
 
 >[!NOTE]
 >
->Este patrón requiere un _Gateway_ que _intercepte_ cada solicitud y realice la _autorización_ real: otorgando o denegando solicitudes al Dispatcher. Si su sistema SSO es un _autenticador_, solo establece la identidad de un usuario que debe implementar la Opción 3. Si lee términos como &quot;SAML&quot; u &quot;OAauth&quot; en el manual de su sistema SSO, ese es un indicador sólido de que debe implementar la Opción 3.
+>Este patrón requiere un _Gateway_ that _interceptaciones_ cada solicitud y realiza el _autorización_ - concesión o denegación de solicitudes al Dispatcher. Si su sistema SSO es _autenticador_, que solo establece la identidad de un usuario que debe implementar la Opción 3. Si lee términos como &quot;SAML&quot; u &quot;OAauth&quot; en el manual de su sistema SSO, ese es un indicador sólido de que debe implementar la Opción 3.
 
 
 **Opción 2**. &quot;No almacenar en caché&quot; generalmente es una mala idea. Si lo hace, asegúrese de que la cantidad de tráfico y el número de recursos confidenciales que se excluyen sean pequeños. O asegúrese de tener instalado algún caché en memoria en el sistema de publicación, que los sistemas de publicación puedan gestionar la carga resultante, más que en la parte III de esta serie.
@@ -1522,19 +1522,19 @@ El diagrama siguiente ilustra una posible temporización al acceder a una sola p
 
 <br> 
 
-Para mitigar el problema de esta &quot;tormenta de invalidación de caché&quot;, como a veces se la llama, puede ser menos riguroso con respecto a la interpretación `statfile`.
+Para mitigar el problema de esta &quot;tormenta de invalidación de caché&quot;, como a veces se la llama, puede ser menos riguroso sobre la variable `statfile` interpretación.
 
-Puede configurar Dispatcher para que utilice un `grace period` para la invalidación automática. Esto agregaría internamente algún tiempo adicional a la fecha de modificación `statfiles`.
+Puede configurar Dispatcher para que use un `grace period` para invalidación automática. Esto agregaría un tiempo adicional al `statfiles` fecha de modificación.
 
-Digamos que su `statfile` tiene un tiempo de modificación de hoy a las 12:00 y su `gracePeriod` está configurado a 2 minutos. A continuación, todos los archivos invalidados automáticamente se considerarán válidos a las 12:01 y a las 12:02. Se renderizarán después de las 12:02.
+Digamos, su `statfile` tiene una hora de modificación de hoy a las 12:00 y su `gracePeriod` se establece en 2 minutos. A continuación, todos los archivos invalidados automáticamente se considerarán válidos a las 12:01 y a las 12:02. Se renderizarán después de las 12:02.
 
-La configuración de referencia propone un `gracePeriod` de dos minutos por un buen motivo. ¿Puede pensar &quot;Dos minutos? Eso es casi nada. Puedo esperar fácilmente 10 minutos para que el contenido aparezca...&quot;.  Por lo tanto, es posible que esté tentado a establecer un periodo más largo, digamos, 10 minutos, suponiendo que el contenido se muestre al menos después de estos 10 minutos.
+La configuración de referencia propone una `gracePeriod` de dos minutos por una buena razón. ¿Puede pensar &quot;Dos minutos? Eso es casi nada. Puedo esperar fácilmente 10 minutos para que el contenido aparezca...&quot;.  Por lo tanto, es posible que esté tentado a establecer un periodo más largo, digamos, 10 minutos, suponiendo que el contenido se muestre al menos después de estos 10 minutos.
 
 >[!WARNING]
 >
->No es así como funciona `gracePeriod`. El período de gracia es _no_ el tiempo después del cual se garantiza la invalidación de un documento, pero no se produce un intervalo de tiempo para la invalidación. Cada invalidación posterior que se encuentre dentro de este marco _prolonga_ el lapso de tiempo, que puede ser indefinidamente largo.
+>Así no es `gracePeriod` funciona. El periodo de gracia es _not_ tiempo después del cual se garantiza la invalidación de un documento, pero no se produce ninguna invalidación. Cada invalidación subsiguiente que entra dentro de este marco _prolongaciones_ el lapso de tiempo: esto puede ser indefinidamente largo.
 
-Veamos cómo `gracePeriod` funciona realmente con un ejemplo:
+Veamos cómo `gracePeriod` realmente está trabajando con un ejemplo:
 
 Supongamos que opera un sitio multimedia y que su personal de edición proporciona actualizaciones regulares de contenido cada 5 minutos. Considere que establece el período de gracia en 5 minutos.
 
@@ -1546,21 +1546,21 @@ Empezaremos con un ejemplo rápido a las 12:00.
 
 12:05 - Otro editor publica su artículo - prolongando el tiempo de gracia por otro período de gracia a las 12:10.
 
-Y así sucesivamente... el contenido nunca se invalida. Cada invalidación *dentro de* el período de gracia prolonga efectivamente el tiempo de gracia. El `gracePeriod` está diseñado para capear la tormenta de invalidación... pero usted debe salir a la lluvia eventualmente... así que mantenga el `gracePeriod` considerablemente corto para evitar esconderse en el refugio para siempre.
+Y así sucesivamente... el contenido nunca se invalida. Cada invalidación *en* el período de gracia prolonga efectivamente el tiempo de gracia. La variable `gracePeriod` está diseñado para capear la tormenta de invalidación... pero debes salir a la lluvia eventualmente... así que mantened la `gracePeriod` es bastante corto para evitar esconderse en el refugio para siempre.
 
 #### Un período de gracia determinístico
 
 Nos gustaría presentar otra idea de cómo puede capear una tormenta de invalidación. Es sólo una idea. No lo hemos probado en producción, pero encontramos el concepto lo suficientemente interesante como para compartirlo con ustedes.
 
-El `gracePeriod` puede llegar a ser impredeciblemente largo, si el intervalo de replicación normal es más corto que el `gracePeriod`.
+La variable `gracePeriod` puede llegar a ser impredeciblemente largo si su intervalo de replicación regular es menor que su `gracePeriod`.
 
 La idea alternativa es la siguiente: Solo se invalida en intervalos de tiempo fijos. El tiempo transcurrido entre siempre significa servir contenido obsoleto. La invalidación se producirá eventualmente, pero varias invalidaciones se recopilan en una invalidación &quot;masiva&quot;, de modo que Dispatcher tiene la oportunidad de servir contenido almacenado en caché mientras tanto y darle al sistema de publicación algo de aire que respirar.
 
 La implementación tendría este aspecto:
 
-Utiliza un &quot;Script de invalidación personalizado&quot; (consulte la referencia) que se ejecuta después de que se produzca la invalidación. Esta secuencia de comandos leería la fecha de la última modificación `statfile's` y la redondearía hasta la siguiente parada del intervalo. El comando shell de Unix `touch --time`, le permite especificar una hora.
+Utiliza un &quot;Script de invalidación personalizado&quot; (consulte la referencia) que se ejecuta después de que se produzca la invalidación. Esta secuencia de comandos leería el `statfile's` fecha de la última modificación y redondearla hasta la siguiente parada del intervalo. El comando shell de Unix `touch --time`, vamos a especificar una hora.
 
-Por ejemplo, si establece el período de gracia en 30 segundos, Dispatcher redondeará la última fecha modificada del archivo de estado a los 30 segundos siguientes. Las solicitudes de invalidación que se producen en el medio simplemente se configuran en el mismo lugar, 30 segundos completos.
+Por ejemplo, si establece el período de gracia en 30 segundos, Dispatcher redondeará la última fecha modificada del archivo de estado a los 30 segundos siguientes. Las solicitudes de invalidación que se producen en el medio simplemente se configuran en el mismo período completo siguiente de 30 segundos.
 
 ![Posponer la invalidación a los siguientes 30 segundos completos aumenta la tasa de visitas individuales.](assets/chapter-1/postponing-the-invalidation.png)
 
@@ -1574,7 +1574,7 @@ Este enfoque podría ayudar a definir períodos de gracia más largos sin tener 
 
 **Referencias**
 
-[helpx.adobe.com: Configuración de Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html)
+[helpx.adobe.com: Configuración de Dispatcher](https://helpx.adobe.com/es/experience-manager/dispatcher/using/dispatcher-configuration.html)
 
 ### Recuperación automática
 
@@ -1592,7 +1592,7 @@ Como ahora la caché no es válida, todas las solicitudes a la página principal
 
 *Solicitudes paralelas al mismo recurso en la caché vacía: Las solicitudes se reenvían a Publish*
 
-Con la recuperación automática, puede mitigar esto en cierta medida. La mayoría de las páginas invalidadas se almacenan físicamente en Dispatcher después de la invalidación automática. Solo se consideran _obsoletos_. _La_ recuperación automática significa que aún conserva estas páginas obsoletas durante unos segundos al iniciar  _una_ sola solicitud al sistema de publicación para recuperar el contenido obsoleto:
+Con la recuperación automática, puede mitigar esto en cierta medida. La mayoría de las páginas invalidadas se almacenan físicamente en Dispatcher después de la invalidación automática. Solo son _considered_ obsoleto. _Recuperación automática_ significa que, al iniciar, seguirá sirviendo estas páginas obsoletas durante unos segundos. _una sola_ solicite al sistema de publicación que recupere el contenido obsoleto:
 
 ![Entrega de contenido obsoleto mientras se recupera en segundo plano](assets/chapter-1/fetching-background.png)
 
@@ -1637,7 +1637,7 @@ Si busca en el directorio de caché de Dispatcher, verá archivos temporales mar
 
 ### Protección del sistema de publicación
 
-Dispatcher proporciona un poco de seguridad adicional al proteger el sistema de publicación de las solicitudes que solo están destinadas a fines de mantenimiento. Por ejemplo, no desea exponer al público sus `/crx/de` o `/system/console` URL.
+Dispatcher proporciona un poco de seguridad adicional al proteger el sistema de publicación de las solicitudes que solo están destinadas a fines de mantenimiento. Por ejemplo, no desea exponerle `/crx/de` o `/system/console` Direcciones URL al público.
 
 No supone ningún daño tener un firewall de aplicaciones web (WAF) instalado en el sistema. Pero eso añade un número significativo a tu presupuesto y no todos los proyectos están en una situación en la que pueden permitirse y -para no olvidar- operar y mantener una WAF.
 
@@ -1672,7 +1672,7 @@ Puede reducir el enlace del controlador en primer lugar. `SetHandler` simplement
 
 Si lo hace, no olvide enlazar siempre el controlador de Dispatcher a la URL de invalidación de Dispatcher; de lo contrario, no podrá enviar solicitudes de invalidación de AEM a Dispatcher.
 
-Otra alternativa para usar Dispatcher como filtro es configurar directivas de filtro en el `dispatcher.any`
+Otra alternativa para usar Dispatcher como filtro es configurar directivas de filtro en la variable `dispatcher.any`
 
 ```
 /filter {
@@ -1712,19 +1712,19 @@ Afortunadamente eso ha cambiado en las versiones posteriores de Dispatcher. Ahor
 
 ¿Ves la diferencia?
 
-La versión B utiliza comillas simples `'` para marcar un _patrón de expresión regular_. &quot;Cualquier carácter&quot; se expresa utilizando `.*`.
+La versión B utiliza comillas simples `'` para marcar una _patrón de expresión regular_. &quot;Cualquier carácter&quot; se expresa utilizando `.*`.
 
-_Los patrones_ de globalización, en cambio, utilizan comillas dobles  `"` y solo puede utilizar marcadores de posición simples como  `*`.
+_Patrones de globalización_, por el contrario, utilice comillas dobles `"` y solo puede utilizar marcadores de posición simples como `*`.
 
 Si sabes esa diferencia, es trivial - pero si no, puedes mezclar fácilmente las comillas y pasar una tarde soleada depurando tu configuración. Ahora te advierten.
 
-&quot;Reconozco `'/url'` en la configuración ... Pero, ¿qué es ese `'/glob'` en el filtro que puede preguntar?
+&quot;Reconozco `'/url'` en la configuración ... Pero ¿qué es eso? `'/glob'` en el filtro que puede preguntar?
 
 Esa directiva representa toda la cadena de solicitud, incluido el método y la ruta. Podría significar
 
 `"GET /content/foo/bar.html HTTP/1.1"`
 
-esta es la cadena con la que se compararía su patrón. Los principiantes tienden a olvidar la primera parte, el `method` (GET, POST, ...). Entonces, un patrón
+esta es la cadena con la que se compararía su patrón. Los principiantes tienden a olvidar la primera parte, la `method` (GET, POST, ...). Entonces, un patrón
 
 `/0002  { /glob "/content/\*" /type "allow" }`
 
@@ -1837,7 +1837,7 @@ Lo más probable es que agregue una regla nueva a uno de los grupos o incluso cr
 
 >[!WARNING]
 >
->Las configuraciones más sofisticadas dividen las reglas de filtrado en una serie de archivos, que se incluyen en el archivo de configuración principal `dispatcher.any`. Sin embargo, un nuevo archivo no introduce un nuevo espacio de nombres. Por lo tanto, si tiene una regla &quot;001&quot; en un archivo y &quot;001&quot; en otro, obtendrá un error. Aún más razones para encontrar nombres semánticamente fuertes.
+>Las configuraciones más sofisticadas dividen las reglas de filtrado en una serie de archivos, que se incluyen en el `dispatcher.any` archivo de configuración. Sin embargo, un nuevo archivo no introduce un nuevo espacio de nombres. Por lo tanto, si tiene una regla &quot;001&quot; en un archivo y &quot;001&quot; en otro, obtendrá un error. Aún más razones para encontrar nombres semánticamente fuertes.
 
 **Referencias**
 
@@ -1873,17 +1873,17 @@ CQ-Handle: <path-pattern>
 
 `CQ-Action: <action>` - Qué debe suceder. `<action>` es:
 
-* `Activate:` eliminaciones  `/path-pattern.*`
-* `Deactive:` eliminar  `/path-pattern.*`
-AND  `/path-pattern/*`
-* `Delete:`   eliminar  `/path-pattern.*`
-AND 
+* `Activate:` eliminaciones `/path-pattern.*`
+* `Deactive:` delete `/path-pattern.*`
+Y eliminar `/path-pattern/*`
+* `Delete:`   delete `/path-pattern.*`
+Y eliminar 
 `/path-pattern/*`
 * `Test:`   Devuelve &quot;ok&quot; pero no hace nada
 
-`CQ-Handle: <path-pattern>` - La ruta de contenido-recurso que se va a invalidar. Tenga en cuenta que `<path-pattern>` es en realidad una &quot;ruta&quot; y no un &quot;patrón&quot;.
+`CQ-Handle: <path-pattern>` - La ruta de contenido-recurso que se va a invalidar. Nota: `<path-pattern>` es en realidad una &quot;ruta&quot; y no un &quot;patrón&quot;.
 
-`CQ-Action-Scope: ResourceOnly` - Opcional: Si se establece este encabezado, no se tocará el  `.stat` archivo.
+`CQ-Action-Scope: ResourceOnly` - Opcional: Si se establece este encabezado, la variable `.stat` no se ha tocado.
 
 ```
 [Content-Type: Text/Plain]
@@ -1907,11 +1907,9 @@ Enumere las direcciones URL que desea recuperar inmediatamente después de la in
 
 Una buena descripción general e introducción al almacenamiento en caché de Dispatcher: [https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)
 
-Más sugerencias y trucos para la optimización: [https://helpx.adobe.com/experience-manager/kb/optimizing-the-dispatcher-cache.html#use-ttls](https://helpx.adobe.com/experience-manager/kb/optimizing-the-dispatcher-cache.html#use-ttls)
-
 Documentación de Dispatcher con todas las directivas explicadas: [https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html)
 
-Algunas preguntas frecuentes: [https://helpx.adobe.com/experience-manager/using/dispatcher-faq.html](https://helpx.adobe.com/experience-manager/using/dispatcher-faq.html)
+Algunas preguntas frecuentes: [https://helpx.adobe.com/experience-manager/using/dispatcher-faq.html](https://helpx.adobe.com/es/experience-manager/using/dispatcher-faq.html)
 
 Grabación de un seminario web sobre la optimización de Dispatcher: muy recomendable: [https://my.adobeconnect.com/p7th2gf8k43?proto=true](https://my.adobeconnect.com/p7th2gf8k43?proto=true)
 

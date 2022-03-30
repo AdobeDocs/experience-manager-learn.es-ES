@@ -1,28 +1,26 @@
 ---
 title: Uso de las API de geolocalización en Forms adaptable
 description: Rellene los campos de dirección del formulario con la API de geolocalización
-feature: Formularios adaptables
+feature: Adaptive Forms
 version: 6.3,6.4,6.5
-topic: Desarrollo
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 50db6155-ee83-4ddb-9e3a-56e8709222db
+source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 1%
+source-wordcount: '390'
+ht-degree: 0%
 
 ---
 
-
 # Uso de las API de geolocalización en Forms adaptable{#using-geolocation-api-s-in-adaptive-forms}
-
-Visite la página [AEM Forms samples](https://forms.enablementadobe.com/content/samples/samples.html?query=0#collapse1) para ver un vínculo a una demostración en directo de esta capacidad.
 
 En este artículo analizaremos el uso de la API de geolocalización de Google para rellenar los campos de un formulario adaptable. Este caso de uso se utiliza comúnmente cuando desea rellenar los campos de dirección actuales en un formulario.
 
 Se siguieron los siguientes pasos para utilizar la API de geolocalización en Forms adaptable.
 
-1. [Obtenga ](https://developers.google.com/maps/documentation/javascript/get-api-key) clave de API de Google para utilizar la plataforma Google Maps. Puede obtener una clave de prueba que sea válida durante 1 año.
+1. [Obtener clave de API](https://developers.google.com/maps/documentation/javascript/get-api-key) de Google para utilizar la plataforma Google Maps. Puede obtener una clave de prueba que sea válida durante 1 año.
 
 1. El fragmento de formulario adaptable se creó con campos para contener la dirección actual
 
@@ -77,7 +75,7 @@ var url = "https://maps.googleapis.com/maps/api/geocode/json?latlng="+position.c
 
 ![Campos rellenados con la api de geoloacción](assets/capture-4.gif)
 
-En la línea 1 utilizamos la API de geolocalización HTML para obtener la ubicación actual. Una vez obtenida la ubicación actual, pasamos la ubicación actual a la función showPosition.
+En la línea 1 utilizamos la API de geolocalización del HTML para obtener la ubicación actual. Una vez obtenida la ubicación actual, pasamos la ubicación actual a la función showPosition.
 
 En la función showPosition, se utiliza la API de Google para recuperar los detalles de dirección de la latitud y longitud dadas.
 
@@ -100,7 +98,7 @@ Para obtener esta capacidad en su servidor, siga los siguientes pasos
 * [Importe los recursos relacionados con este artículo en AEM.](assets/geolocationapi.zip)
 * [Abra el fragmento Formulario adaptable en modo de edición.](http://localhost:4502/editor.html/content/forms/af/currentaddressfragment.html)
 * Abra el editor de reglas para el componente Opción de imagen .
-* Reemplace &lt;your_api_key> por la clave de API de Google.
+* Sustituya el &lt;your_api_key> con la clave de API de Google.
 * Guarde los cambios.
 * [Obtener una vista previa del formulario](http://localhost:4502/content/dam/formsanddocuments/currentaddressfragment/jcr:content?wcmmode=disabled).
 * Haga clic en el icono &quot;geolocalización&quot;.

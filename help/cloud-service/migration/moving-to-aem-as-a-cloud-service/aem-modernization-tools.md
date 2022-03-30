@@ -8,9 +8,9 @@ level: Experienced
 kt: 8629
 thumbnail: 336965.jpeg
 exl-id: 310f492c-0095-4015-81a4-27d76f288138
-source-git-commit: 1dcb66bc3535231c89f3e7fc127688fcf96f2b61
+source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '438'
 ht-degree: 2%
 
 ---
@@ -33,22 +33,18 @@ AEM herramientas de modernización convierten automáticamente las páginas de A
 + Clone la producción de AEM 6.x para ejecutar AEM herramientas de modernización
 + Descargue e instale el [herramientas de modernización de AEM más recientes](https://github.com/adobe/aem-modernize-tools/releases/latest) sobre el clon de producción de AEM 6.x mediante el Administrador de paquetes
 
-+ [Conversor de estructura de página](https://opensource.adobe.com/aem-modernize-tools/pages/tools/page-structure.html) actualiza el contenido de una página existente de una plantilla estática a una plantilla editable asignada mediante contenedores de diseño
++ [Conversor de estructura de página](https://opensource.adobe.com/aem-modernize-tools/pages/structure/about.html) actualiza el contenido de una página existente de una plantilla estática a una plantilla editable asignada mediante contenedores de diseño
    + Definir reglas de conversión mediante la configuración OSGi
    + Ejecutar el conversor de estructura de página con páginas existentes
 
-+ [Conversor de componentes](https://opensource.adobe.com/aem-modernize-tools/pages/tools/component.html) actualiza el contenido de una página existente de una plantilla estática a una plantilla editable asignada mediante contenedores de diseño
++ [Conversor de componentes](https://opensource.adobe.com/aem-modernize-tools/pages/component/about.html) actualiza el contenido de una página existente de una plantilla estática a una plantilla editable asignada mediante contenedores de diseño
    + Definir reglas de conversión mediante definiciones de nodos JCR/XML
    + Ejecutar la herramienta Conversor de componentes en páginas existentes
 
-+ [Importador de políticas](https://opensource.adobe.com/aem-modernize-tools/pages/tools/policy-importer.html) crea directivas a partir de la configuración de diseño
++ [Importador de políticas](https://opensource.adobe.com/aem-modernize-tools/pages/policy/about.html) crea directivas a partir de la configuración de diseño
    + Definir reglas de conversión utilizando definiciones de nodo JCR/XML
    + Ejecutar el Importador de directivas con definiciones de diseño existentes
    + Aplicar políticas importadas a componentes y contenedores de AEM
-
-+ [Conversor de diálogos](https://opensource.adobe.com/aem-modernize-tools/pages/tools/dialog.html) convierte los cuadros de diálogo de componentes basados en Classic(ExtJS) y CoralUI 2 en cuadros de diálogo basados en CoralUI 3 TouchUI.
-   + Ejecute la herramienta Conversor de diálogos con los cuadros de diálogo existentes basados en la interfaz de usuario de ExtJS o Coral2
-   + Sincronizar los cuadros de diálogo convertidos de nuevo en el repositorio de Git
 
 ## Ejercicio práctico
 
@@ -94,6 +90,5 @@ Además, asegúrese de haber completado el ejercicio práctico anterior:
 + [AEM Gems: presentación de AEM Modernization Suite](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/Introducing-the-AEM-Modernization-Suite.html)
 
 
-
-1. Implemente el sitio heredado de wknd recién modernizado en el SDK del Cloud Service local. Disponible para descargar aquí:
-+ [Portal de distribución de software](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.htm).
+1. Implemente el sitio heredado de wknd recién modernizado en el SDK de AEM local. AEM ASK está disponible para su descarga aquí:
++ [Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html).
