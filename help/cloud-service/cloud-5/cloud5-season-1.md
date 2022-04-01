@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 210e5483-d79e-47ac-aa09-b6956cca2e62
-source-git-commit: 4976bc72228b76c02609cf63c7067cc7bad65861
+source-git-commit: cc434164a4474b71f23653f33cb7e3d99c271595
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '413'
 ht-degree: 1%
 
 ---
@@ -81,14 +81,16 @@ Cada temporada varía en longitud y se publicará con un calendario fijo. Los te
       </p>
      </td>   
      <td>
-      <img alt="Dispatcher en la nube" src="./imgs/coming-soon.png"/>
+      <a href="./cloud5-aem-dispatcher-cloud.md">
+      <img alt="Dispatcher en la nube" src="./imgs/005-thumb.png"/>
+       </a>  
       <div>
-         <strong>Dispatcher en la nube</strong>
+        <a href="./cloud5-aem-dispatcher-cloud.md"><strong>Dispatcher en la nube</strong></a>
          <br/><em>con Darin Kuntze y James Talbot, arquitectos sénior de la nube</em>
       </div>
       <p>
         <br/>
-         A partir del 1 de abril de 2022
+        Darin y James discuten sobre Dispatcher en AEM Cloud, incluidas algunas prácticas recomendadas y diferencias con respecto a AMS/On-Prem. 
       </p>
    </td>
      <td>
@@ -138,4 +140,18 @@ Cada temporada varía en longitud y se publicará con un calendario fijo. Los te
       </p>
    </td> 
   </tr>
+    <tr>
+        <td>
+            <img alt="Adobe App Builder" src="./imgs/coming-soon.png"/>
+            <div>
+                <strong>Migración (parte 2)</strong><br/>        
+                <em>con Darin Kuntze y James Talbot, arquitectos sénior y invitado especial de Cloud</em>
+            </div>
+            <p><br/>
+                Próxima 6 de mayo de 2022
+            </p>
+        </td>
+        <td></td>
+        <td></td>
+    </tr>
 </table>
