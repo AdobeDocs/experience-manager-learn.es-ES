@@ -4,9 +4,9 @@ user-guide-description: Una recopilación de tutoriales de Adobe Experience Mana
 breadcrumb-title: Tutoriales de AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: 8631d0b23e2befa22032d0b677e0f1c7122f2cb5
+source-git-commit: 0a52ea9f5a475814740bb0701a09f1a6735c6b72
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '731'
 ht-degree: 22%
 
 ---
@@ -178,6 +178,7 @@ ht-degree: 22%
       + [Crear token JWT](./forms/forms-cs-assembler/create-jwt.md)
       + [Crear token de acceso](./forms/forms-cs-assembler/create-access-token.md)
       + [Archivos de PDF de ensamblado](./forms/forms-cs-assembler/assemble-pdf-files.md)
+      + [Utilidades de PDF/A](./forms/forms-cs-assembler/pdfa-utilities.md)
       + [Probar la solución](./forms/forms-cs-assembler/test.md)
       + [Desafío](./forms/forms-cs-assembler/challenge.md)
    + Almacenamiento de Azure Portal{#forms-cs-azure-portal}
@@ -224,7 +225,7 @@ ht-degree: 22%
    + Prueba y depuración{#test-debug}
       + [Probar un trabajador](./asset-compute/test-debug/test.md)
       + [Depurar un trabajador](./asset-compute/test-debug/debug.md)
-   + Implementar{#deploy}
+   + Implementación de{#deploy}
       + [Implementar en Adobe I/O Runtime](./asset-compute/deploy/runtime.md)
       + [Integrar con AEM](./asset-compute/deploy/processing-profiles.md)
    + Avanzado {#advanced}
