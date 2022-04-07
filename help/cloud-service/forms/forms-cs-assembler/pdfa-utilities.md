@@ -8,14 +8,15 @@ version: Cloud Service
 feature: Output Service
 topic: Development
 kt: 10105
-source-git-commit: 0a52ea9f5a475814740bb0701a09f1a6735c6b72
+exl-id: a4955104-8a87-4add-85c7-c3e3395f5f1a
+source-git-commit: db99787c48e49a9861de893e6cb7fbb7b31807b8
 workflow-type: tm+mt
-source-wordcount: '100'
-ht-degree: 4%
+source-wordcount: '102'
+ht-degree: 3%
 
 ---
 
-# Realizar la llamada del POST
+# Creación y validación de documentos de PDF/A
 
 El PDF/A es una versión normalizada por ISO del Portable Document Format (PDF) especializada en el archivo y conservación a largo plazo de documentos electrónicos. El PDF/A difiere del PDF al prohibir características que no son adecuadas para archiving a largo plazo, como la vinculación de fuentes (a diferencia de la incrustación de fuentes) y el cifrado.
 
@@ -131,4 +132,3 @@ public void validatePDFA(String postURL) {
   }
 }
 ```
-

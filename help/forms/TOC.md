@@ -5,7 +5,7 @@ user-guide-title: Vídeos y tutoriales de AEM Forms
 user-guide-description: Recopilación de recursos de AEM Forms para principiantes y desarrolladores experimentados de AEM Forms.
 breadcrumb-title: Tutoriales de AEM Forms
 index: y
-source-git-commit: 0a52ea9f5a475814740bb0701a09f1a6735c6b72
+source-git-commit: db99787c48e49a9861de893e6cb7fbb7b31807b8
 workflow-type: tm+mt
 source-wordcount: '1667'
 ht-degree: 3%
@@ -173,7 +173,7 @@ ht-degree: 3%
    + [Biblioteca de cliente](storing-retrieving-form-data/part4.md)
    + [Plantilla de formulario adaptable](storing-retrieving-form-data/part5.md)
    + [Implementación de recursos de ejemplo](storing-retrieving-form-data/part6.md)
-+ Activación AEM flujo de trabajo desde el envío de formulario móvil{#offline-mobile-form-submission}
++ Activación AEM flujo de trabajo desde el envío de formularios de Mobile{#offline-mobile-form-submission}
    + [Introducción](offline-mobile-form-submission/introduction.md)
    + [Perfil personalizado](offline-mobile-form-submission/part-one.md)
    + [Gestión del envío del PDF](offline-mobile-form-submission/part-two.md)
@@ -235,7 +235,7 @@ ht-degree: 3%
    + [Apertura de la interfaz de usuario del agente en el envío del formulario](ic-print-channel-tutorial/opening-agent-ui-on-form-submission.md)
 + Guardar y recuperar letras de borrador {#store-retrieve-letters}
    + [Introducción](store-retrieve-letters/introduction.md)
-   + [implementación](store-retrieve-letters/save-draft-letters.md)
+   + [Implementación](store-retrieve-letters/save-draft-letters.md)
    + [Implementación del ejemplo](store-retrieve-letters/deploy-on-your-server.md)
 + Comunicaciones interactivas {#interactive-communications}
    + [Uso de la API por lotes](interactive-communications/batch-generation-interactive-communications.md)

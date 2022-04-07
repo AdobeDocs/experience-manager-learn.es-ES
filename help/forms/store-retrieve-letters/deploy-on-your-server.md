@@ -11,10 +11,11 @@ topic: Development
 role: Developer
 level: Intermediate
 kt: 10208
-source-git-commit: 0a52ea9f5a475814740bb0701a09f1a6735c6b72
+exl-id: 9053ee29-436a-439a-b592-c3fef9852ea4
+source-git-commit: db99787c48e49a9861de893e6cb7fbb7b31807b8
 workflow-type: tm+mt
-source-wordcount: '149'
-ht-degree: 0%
+source-wordcount: '165'
+ht-degree: 2%
 
 ---
 
@@ -22,13 +23,18 @@ ht-degree: 0%
 
 Siga las siguientes instrucciones para que esta funcionalidad funcione en su servidor AEM
 
-* Cree una carpeta llamada icrecluts en la unidad c
 * [Crear el esquema de la base de datos](assets/icdrafts.sql)
 * [Importar la biblioteca del cliente](assets/icdrafts.zip)
 * [Importar el formulario adaptable](assets/SavedDraftsAdaptiveForm.zip)
 * Cree una fuente de datos llamada _SaveAndContinue_
 
 ![Crear fuente de datos](assets/data-source.png)
+
+| Nombre de propiedad | Valor de propiedad |
+|---|---|
+| Nombre del origen de datos | SaveAndContinue |
+| Clase de controlador JDBC | com.mysql.cj.jdbc.Driver |
+| URL de conexión JDBC | jdbc:mysql://localhost:3306/aemformstutorial?autoReconnect=true&amp;useSSL=false&amp;characterEncoding=utf8&amp;useUnicode=true |
 
 * [Implementar el paquete icrecluts](assets/icdrafts.icdrafts.core-1.0-SNAPSHOT.jar)
 * Asegúrese de que _Habilitar Guardar usando CCRDocumentInstanceService_ en la configuración OSGI como se muestra a continuación
