@@ -8,9 +8,10 @@ role: Architect, Developer
 level: Intermediate
 kt: 9354
 thumbnail: KT-9354.jpeg
-source-git-commit: c53277241e54c757492dbc72e53f89127af389ac
+exl-id: c8cc0385-9e94-4120-9fb1-aeccbfcc8aa4
+source-git-commit: d00e47895d1b2b6fb629b8ee9bcf6b722c127fd3
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '239'
 ht-degree: 0%
 
 ---
@@ -22,6 +23,8 @@ Las conexiones HTTP/HTTPS en puertos no estándar (no 80/443) deben procesarse c
 ## Compatibilidad avanzada con redes
 
 El siguiente ejemplo de código es compatible con las siguientes opciones avanzadas de red.
+
+Asegúrese de que la variable [apropiado](../advanced-networking.md#advanced-networking) se ha configurado la configuración avanzada de redes antes de seguir este tutorial.
 
 | Sin redes avanzadas | [Salida de puerto flexible](../flexible-port-egress.md) | [Dirección IP de salida dedicada](../dedicated-egress-ip-address.md) | [Red privada virtual](../vpn.md) |
 |:-----:|:-----:|:------:|:---------:|

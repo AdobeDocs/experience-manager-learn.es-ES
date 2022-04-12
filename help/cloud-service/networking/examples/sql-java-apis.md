@@ -9,9 +9,9 @@ level: Intermediate
 kt: 9356
 thumbnail: KT-9356.jpeg
 exl-id: ec9d37cb-70b6-4414-a92b-3b84b3f458ab
-source-git-commit: 6ed26e5c9bf8f5e6473961f667f9638e39d1ab0e
+source-git-commit: d00e47895d1b2b6fb629b8ee9bcf6b722c127fd3
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '305'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,8 @@ La excepción a esta regla es cuando [dirección ip de salida dedicada](../dedic
 ## Compatibilidad avanzada con redes
 
 El siguiente ejemplo de código es compatible con las siguientes opciones avanzadas de red.
+
+Asegúrese de que la variable [apropiado](../advanced-networking.md#advanced-networking) se ha configurado la configuración avanzada de redes antes de seguir este tutorial.
 
 | Sin redes avanzadas | [Salida de puerto flexible](../flexible-port-egress.md) | [Dirección IP de salida dedicada](../dedicated-egress-ip-address.md) | [Red privada virtual](../vpn.md) |
 |:-----:|:-----:|:------:|:---------:|
