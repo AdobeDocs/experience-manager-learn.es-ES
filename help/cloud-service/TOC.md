@@ -4,7 +4,7 @@ user-guide-description: Una recopilación de tutoriales de Adobe Experience Mana
 breadcrumb-title: Tutoriales de AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: bc14a89433ef603ef981a05efb1eb931dabcb777
+source-git-commit: 95535c3ae68d1319e1d75c9df599456d7f977d66
 workflow-type: tm+mt
 source-wordcount: '732'
 ht-degree: 22%
