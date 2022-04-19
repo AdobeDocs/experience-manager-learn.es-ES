@@ -8,7 +8,7 @@ kt: 10054
 hidefromtoc: true
 recommendations: noDisplay, noCatalog
 thumbnail: 342067.jpeg
-source-git-commit: cc4b565aeeaa1419138d459c2d144e944ffb0e67
+source-git-commit: 0b6e16d7263bc14c1824643b77678071694bcb7e
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Darin y James discuten sobre Dispatcher en AEM Cloud, incluidas algunas prácticas recomendadas y diferencias con respecto a AMS/On-Prem. También se refieren a la migración a la nube.
 
->[!VIDEO](https://video.tv.adobe.com/v/342067/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342067/)
 
 ## Contenido cubierto en este vídeo
 
