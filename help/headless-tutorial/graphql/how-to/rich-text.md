@@ -1,5 +1,5 @@
 ---
-title: Trabajo con texto enriquecido | AEM sin cabeza
+title: Uso de texto enriquecido con AEM sin encabezado
 description: Aprenda a crear contenido e incruste contenido referenciado mediante un editor de texto enriquecido multilínea con fragmentos de contenido de Adobe Experience Manager, y cómo las API de GraphQL AEM texto enriquecido como JSON lo consumen aplicaciones sin encabezado.
 version: Cloud Service
 doc-type: article
@@ -7,22 +7,21 @@ kt: 9985
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
-source-git-commit: 88797cf950dae46d0f856330df12c59a4efe6456
+exl-id: 790a33a9-b4f4-4568-8dfe-7e473a5b68b6
+source-git-commit: 4966a48c29ae1b5d0664cb43feeb4ad94f43b4e1
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1376'
 ht-degree: 0%
 
 ---
 
-
-# Trabajo con texto enriquecido en Adobe Experience Manager sin encabezado
+# Texto enriquecido con AEM sin encabezado
 
 El campo Texto multilínea es un tipo de datos de fragmentos de contenido que permite a los autores crear contenido de texto enriquecido. Las referencias a otro contenido, como imágenes u otros fragmentos de contenido, se pueden insertar dinámicamente en línea dentro del flujo del texto. AEM API de GraphQL ofrece una sólida capacidad para devolver texto enriquecido como HTML, texto sin formato o como JSON puro. La representación JSON es potente, ya que proporciona a la aplicación cliente control total sobre cómo procesar el contenido.
 
 ## Editor multilínea
 
 >[!VIDEO](https://video.tv.adobe.com/v/342104/?quality=12&learn=on)
-
 
 En el Editor de fragmentos de contenido, la barra de menús del campo de texto de varias líneas proporciona a los autores capacidades estándar de formato de texto enriquecido, como **bold**, *cursiva* y subrayado. Al abrir el campo Multi line en el modo de pantalla completa, se habilita [herramientas de formato adicionales, como el tipo de párrafo, buscar y reemplazar, revisión ortográfica, etc.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html).
 
