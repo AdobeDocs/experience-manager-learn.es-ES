@@ -8,16 +8,18 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 exl-id: 790a33a9-b4f4-4568-8dfe-7e473a5b68b6
-source-git-commit: 4966a48c29ae1b5d0664cb43feeb4ad94f43b4e1
+source-git-commit: 22d5aa7299ceacd93771bd73a6b89d1903edc561
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1460'
 ht-degree: 0%
 
 ---
 
 # Texto enriquecido con AEM sin encabezado
 
-El campo Texto multilínea es un tipo de datos de fragmentos de contenido que permite a los autores crear contenido de texto enriquecido. Las referencias a otro contenido, como imágenes u otros fragmentos de contenido, se pueden insertar dinámicamente en línea dentro del flujo del texto. AEM API de GraphQL ofrece una sólida capacidad para devolver texto enriquecido como HTML, texto sin formato o como JSON puro. La representación JSON es potente, ya que proporciona a la aplicación cliente control total sobre cómo procesar el contenido.
+El campo Texto multilínea es un tipo de datos de fragmentos de contenido que permite a los autores crear contenido de texto enriquecido. Las referencias a otro contenido, como imágenes u otros fragmentos de contenido, se pueden insertar dinámicamente en línea dentro del flujo del texto. El campo de texto Una sola línea es otro tipo de datos de fragmentos de contenido que debe utilizarse para elementos de texto simples.
+
+AEM API de GraphQL ofrece una sólida capacidad para devolver texto enriquecido como HTML, texto sin formato o como JSON puro. La representación JSON es potente, ya que proporciona a la aplicación cliente control total sobre cómo procesar el contenido.
 
 ## Editor multilínea
 
@@ -25,13 +27,25 @@ El campo Texto multilínea es un tipo de datos de fragmentos de contenido que pe
 
 En el Editor de fragmentos de contenido, la barra de menús del campo de texto de varias líneas proporciona a los autores capacidades estándar de formato de texto enriquecido, como **bold**, *cursiva* y subrayado. Al abrir el campo Multi line en el modo de pantalla completa, se habilita [herramientas de formato adicionales, como el tipo de párrafo, buscar y reemplazar, revisión ortográfica, etc.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html).
 
+>[!NOTE]
+>
+> Los complementos de texto enriquecido del editor de líneas múltiples no se pueden personalizar.
+
 ## Tipo de datos de varias líneas de texto {#multi-line-data-type}
 
 Utilice la variable **Texto de varias líneas** tipo de datos al definir el modelo de fragmento de contenido para permitir la creación de texto enriquecido.
 
 ![Tipo de datos de texto enriquecido de varias líneas](assets/rich-text/multi-line-rich-text.png)
 
-Al utilizar el tipo de datos Multi-line text , puede establecer la variable **Tipo predeterminado** a:
+Se pueden configurar varias propiedades del campo Multi line .
+
+La variable **Procesar como** se puede establecer en:
+
+* Área de texto: procesa un solo campo de varias líneas
+* Múltiples campos: procesa varios campos de líneas múltiples
+
+
+La variable **Tipo predeterminado** se puede configurar como:
 
 * Texto enriquecido
 * Markdown
@@ -40,6 +54,8 @@ Al utilizar el tipo de datos Multi-line text , puede establecer la variable **Ti
 La variable **Tipo predeterminado** influye directamente en la experiencia de edición y determina si están presentes las herramientas de texto enriquecido.
 
 También puede [habilitar referencias en línea](#insert-fragment-references) a otros fragmentos de contenido comprobando la variable **Permitir referencia de fragmento** y configurar la variable **Modelos de fragmento de contenido permitidos**.
+
+Si el contenido se va a localizar, marque la **Translatable** en la ventana Solo se puede localizar texto enriquecido y texto sin formato. Consulte [trabajar con contenido localizado para obtener más información](./localized-content.md).
 
 ## Respuesta de texto enriquecido con la API de GraphQL
 
@@ -364,10 +380,12 @@ Utilice la variable `json` tipo de devolución e incluya la variable `_reference
         _path
         _publishUrl
         width
+        __typename
       }
       ...on ArticleModel {
         _path
         author
+        __typename
       }
       
     }
@@ -444,12 +462,14 @@ En la consulta anterior, la variable `main` se devuelve como JSON. La variable `
       "_references": [
         {
           "_path": "/content/dam/wknd/en/activities/climbing/sport-climbing.jpg",
-          "_publishUrl": "http://localhost:4503/content/dam/wknd/en/activities/climbing/sport-climbing.jpg",
-          "width": 1920
+          "_publishUrl": "http://publish-p123-e456.adobeaemcloud.com/content/dam/wknd/en/activities/climbing/sport-climbing.jpg",
+          "width": 1920,
+          "__typename": "ImageRef"
         },
         {
           "_path": "/content/dam/wknd/en/magazine/la-skateparks/ultimate-guide-to-la-skateparks",
           "author": "Stacey Roswells",
+          "__typename": "ArticleModel"
         }
       ]
     }
@@ -498,11 +518,11 @@ const renderReference = {
     // node contains merged properties of the in-line reference and _references object
     'ImageRef': (node) => {
         // when __typename === ImageRef
-        return <img src={node._path} alt={'in-line reference'} /> 
+        return <img src={node._publishUrl} alt={'in-line reference'} /> 
     },
-    'AdventureModel': (node) => {
-        // when __typename === AdventureModel
-        return <Link to={`/adventure:${node._path}`}>{`${node.adventureTitle}: ${node.adventurePrice}`}</Link>;
+    'ArticleModel': (node) => {
+        // when __typename === ArticleModel
+        return <Link to={`/article:${node._path}`}>{`${node.value}`}</Link>;
     }
     ...
 }
