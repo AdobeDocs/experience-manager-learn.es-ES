@@ -5,9 +5,9 @@ user-guide-title: Vídeos y tutoriales de AEM Forms
 user-guide-description: Recopilación de recursos de AEM Forms para principiantes y desarrolladores experimentados de AEM Forms.
 breadcrumb-title: Tutoriales de AEM Forms
 index: y
-source-git-commit: db99787c48e49a9861de893e6cb7fbb7b31807b8
+source-git-commit: cb5b3eb77a57fa8a2918710b7dbcd1b0a58b74bd
 workflow-type: tm+mt
-source-wordcount: '1667'
+source-wordcount: '1671'
 ht-degree: 3%
 
 ---
@@ -173,7 +173,7 @@ ht-degree: 3%
    + [Biblioteca de cliente](storing-retrieving-form-data/part4.md)
    + [Plantilla de formulario adaptable](storing-retrieving-form-data/part5.md)
    + [Implementación de recursos de ejemplo](storing-retrieving-form-data/part6.md)
-+ Activación AEM flujo de trabajo desde el envío de formularios de Mobile{#offline-mobile-form-submission}
++ Activación AEM flujo de trabajo desde el envío de formulario móvil{#offline-mobile-form-submission}
    + [Introducción](offline-mobile-form-submission/introduction.md)
    + [Perfil personalizado](offline-mobile-form-submission/part-one.md)
    + [Gestión del envío del PDF](offline-mobile-form-submission/part-two.md)
@@ -204,13 +204,14 @@ ht-degree: 3%
 + Servicios de documento {#document-services}
    + [Tipos de PDF forms](document-services/pdf-forms-and-documents.md)
    + [Incrustar pdf en forma adaptable](document-services/embed-pdf-inline.md)
+   + [PDF en componente carrusel](document-services/display-pdf-in-carousel.md)
    + [Uso del servicio Assembler en AEM Forms](document-services/using-assembler-service-in-aem-forms.md)
    + [Uso de la carpeta vigilada en AEM Forms](document-services/watched-folders-document-services-article-use.md)
    + [Uso del servicio de códigos de barras en AEM Forms](document-services/barcode-service-adaptive-forms-article.md)
    + [Uso del servicio PDFG en AEM Forms](document-services/using-pdfg-in-aem-forms.md)
    + [Uso de Output y Forms Service en AEM Forms](document-services/output-and-forms-services-article-develop.md)
    + [Generación de varios archivos pdf a partir de un archivo de datos](document-services/generate-multi-record-pdf.md)
-   + [Generar PDF en envío de formulario móvil](document-services/generate-pdf-from-mobile-form-submission-article.md)
+   + [Generar PDF en envío de formulario de Mobile](document-services/generate-pdf-from-mobile-form-submission-article.md)
    + [Generar PDF interactivo desde formulario de Mobile](document-services/render-interactive-form-using-api.md)
    + [Generar DoR interactivo a partir de formulario adaptable](document-services/generate-interactive-dor.md)
    + [Configuración de la credencial de extensiones de Reader](document-services/configuring-reader-extension-osgi.md)
