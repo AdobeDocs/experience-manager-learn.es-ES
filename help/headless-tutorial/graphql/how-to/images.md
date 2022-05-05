@@ -8,13 +8,13 @@ role: Developer
 level: Intermediate
 kt: 10253
 thumbnail: KT-10253.jpeg
-source-git-commit: 4966a48c29ae1b5d0664cb43feeb4ad94f43b4e1
+exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
+source-git-commit: cca9ea744f938470b82b61d11269c1f9e8250bbe
 workflow-type: tm+mt
 source-wordcount: '1084'
 ht-degree: 2%
 
 ---
-
 
 # Imágenes con AEM sin encabezado
 
@@ -90,7 +90,7 @@ La respuesta JSON resultante contiene los campos solicitados que contienen las d
 
 Para cargar la imagen a la que se hace referencia en la aplicación, utilice el campo correspondiente. `_path`, `_authorUrl`o `_publishUrl` del `adventurePrimaryImage` como URL de origen de la imagen.
 
-Los dominios de la variable `_authorUrl` y `_publishUrl` se definen automáticamente mediante AEM as a Cloud Service mediante la variable [Externalize](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/externalizer.htmli).
+Los dominios de la variable `_authorUrl` y `_publishUrl` se definen automáticamente mediante AEM as a Cloud Service mediante la variable [Externalizador](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/externalizer.html).
 
 En React, la visualización de la imagen desde AEM Publish tiene el siguiente aspecto:
 
