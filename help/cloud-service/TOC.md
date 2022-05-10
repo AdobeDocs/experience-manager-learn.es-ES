@@ -4,10 +4,10 @@ user-guide-description: Una recopilación de tutoriales de Adobe Experience Mana
 breadcrumb-title: Tutoriales de AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: 0b6e16d7263bc14c1824643b77678071694bcb7e
+source-git-commit: 55583effd0400bac2e38756483d69f5bd114cb21
 workflow-type: tm+mt
-source-wordcount: '741'
-ht-degree: 22%
+source-wordcount: '745'
+ht-degree: 23%
 
 ---
 
@@ -142,6 +142,7 @@ ht-degree: 22%
       + [Configuración de Git](./forms/developing-for-cloud-service/setup-git.md)
       + [Sincronizar IntelliJ con AEM](./forms/developing-for-cloud-service/intellij-and-aem-sync.md)
       + [Creación de un formulario](./forms/developing-for-cloud-service/deploy-your-first-form.md)
+      + [Habilitar componentes de Forms Portal](./forms/developing-for-cloud-service/forms-portal-components.md)
       + [Incluir Cloud Services y FDM](./forms/developing-for-cloud-service/azure-storage-fdm.md)
       + [Insertar en Cloud Manager](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
       + [Implementar en entorno de desarrollo](./forms/developing-for-cloud-service/deploy-to-dev-environment.md)
