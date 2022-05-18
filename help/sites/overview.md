@@ -1,13 +1,13 @@
 ---
 title: Vídeos y tutoriales de AEM Sites
-description: Una colección de vídeos y tutoriales para Adobe Experience Manager Sites.
+description: Obtenga más información sobre AEM con nuestros vídeos y tutoriales para Adobe Experience Manager Sites.
 sub-product: sites, content-services
 topic: Content Management
 exl-id: cde4ce7f-0afe-4632-8c1c-354586f296d5
-source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
+source-git-commit: efa33aa8cf8288d48ae56d2e96ed9d3a6c4e9627
 workflow-type: tm+mt
-source-wordcount: '345'
-ht-degree: 21%
+source-wordcount: '348'
+ht-degree: 25%
 
 ---
 
@@ -25,7 +25,7 @@ Adobe Experience Manager (AEM) Sites es una plataforma líder de administración
 
    *Obtenga información sobre cómo actualizar la capa de datos del cliente de Adobe con contenido de componentes de AEM personalizados.*
 
-* **[Introducción a AEM Headless GraphQL (tutorial)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)**
+* **[Introducción a AEM Headless GraphQL (tutorial)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=es)**
 
    *Cómo exponer contenido de AEM para que lo consuma una aplicación móvil nativa mediante las API de GraphQL de AEM.*
 
@@ -55,7 +55,7 @@ Adobe Experience Manager (AEM) Sites es una plataforma líder de administración
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es">
     <img alt="Introducción a AEM sin encabezado" src="./assets/aem-headless-tutorial.png" />
     </a>
     <div>
@@ -85,7 +85,7 @@ Adobe Experience Manager (AEM) Sites es una plataforma líder de administración
 
 ## Recursos adicionales
 
-* [Experience League: Explorar AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
+* [Experience League: Explorar AEM](https://experienceleague.adobe.com/?lang=es#recommended/solutions/experience-manager)
 * [Documentación de creación de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
 * [Documentación de desarrollo de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
 * [Documentación de administración de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html)
