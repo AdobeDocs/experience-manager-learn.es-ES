@@ -4,7 +4,8 @@ description: La segunda temporada le permite aprender sobre Adobe Experience Man
 sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
-source-git-commit: 99424ae98bd85a8d0203f8f5d4bf24a4e4d7cb53
+exl-id: e2fabf7c-7fda-4391-ae77-709aa9f7dc0a
+source-git-commit: c42e37c6bebb59189000d5382ccab2c8656455ee
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 2%
@@ -30,9 +31,9 @@ Cada temporada varía en longitud y se publicará con un calendario fijo. Los te
 <table>
   <tr>
    <td>
-      <img alt="Admin Console" src="./imgs/coming-soon.png"/>
+      <img alt="Fragmentos" src="./imgs/coming-soon.png"/>
       <div>
-         <strong>Admin Console</strong>        
+         <strong>Fragmentos</strong>        
          <br/><em>con Darin Kuntze y James Talbot, arquitectos sénior de la nube</em>
       </div>
       <p>
@@ -41,9 +42,9 @@ Cada temporada varía en longitud y se publicará con un calendario fijo. Los te
       </p>
      </td>   
      <td>
-         <img alt="Fragmentos" src="./imgs/coming-soon.png"/>
+         <img alt="Modernizador de repositorio" src="./imgs/coming-soon.png"/>
       <div>
-         <strong>Fragmentos</strong>
+         <strong>Modernizador de repositorio</strong>
          <br/><em>con Darin Kuntze y James Talbot, arquitectos sénior de la nube</em>
       </div>
       <p>
@@ -52,9 +53,9 @@ Cada temporada varía en longitud y se publicará con un calendario fijo. Los te
       </p>
    </td>
      <td>
-            <img alt="Modernizador de repositorio" src="./imgs/coming-soon.png"/>
+            <img alt="Admin Console" src="./imgs/coming-soon.png"/>
       <div>
-            <strong>Modernizador de repositorio</strong>
+            <strong>Admin Console</strong>
          <br/><em>con Darin Kuntze y James Talbot, arquitectos sénior de la nube</em>
       </div>
       <p>
