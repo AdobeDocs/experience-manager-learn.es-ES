@@ -8,9 +8,9 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: 93a177b0-7852-44da-89cc-836d127be4e7
-source-git-commit: 81a15fb0182760aaac8cb58cccbfe28de7323492
+source-git-commit: b918afdddf1f047b478e0521883a633f7b0610c6
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '289'
 ht-degree: 2%
 
 ---
@@ -28,6 +28,7 @@ Crear y mostrar incidencias en [!DNL ServiceNow] uso del modelo de datos de form
 ## Recursos de ejemplo
 
 Los recursos de ejemplo que se proporcionan con este artículo son los siguientes
+
 * Configuración del servicio en la nube
 * Intercambiar archivos para crear un incidente y recuperar todos los incidentes
 * Modelo de datos de formulario basado en los archivos de cambio
@@ -37,8 +38,18 @@ Los recursos de ejemplo que se proporcionan con este artículo son los siguiente
 
 * Descargue el [recursos de ejemplo](assets/service-now.zip)
 * Importar los recursos en AEM mediante [gestor de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
+* El archivo swagger utilizado para esta integración se encuentra en la sección ```/conf/9957/settings/cloudconfigs/fdm``` carpeta en el repositorio crx
 * Edite el [Configuración del servicio en la nube CreateIncidente](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2F9957%2Fsettings%2Fcloudconfigs%2Ffdm%2Fcreateincident)para que coincida con su instancia de ServiceNow.
-* Edite el [Configuración del servicio en la nube GetAllIncidents](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2F9957%2Fsettings%2Fcloudconfigs%2Ffdm%2Fgetallincidents) para que coincida con su instancia de ServiceNow
+* Edite el [Configuración del servicio en la nube GetAllIncidents](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2F9957%2Fsettings%2Fcloudconfigs%2Ffdm%2Fgetallincidents) para que coincida con su instancia de ServiceNow. Deberá cambiar el host, el nombre de usuario y la contraseña para que coincidan con sus credenciales de instancia de ServiceNow.
+
+## Acceso a las credenciales de instancia de ServiceNow
+
+* Haga clic en su perfil de usuario
+   ![haga clic en perfil de usuario](assets/snow-1.png)
+
+* Haga clic en Administrar contraseña de instancia
+* Los detalles de la instancia se mostrarán de la siguiente manera
+   ![detalles de instancias](assets/snow-3.png)
 
 ## Probar la integración
 
