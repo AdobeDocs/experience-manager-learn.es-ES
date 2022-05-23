@@ -8,13 +8,13 @@ role: Architect, Developer
 level: Intermediate
 kt: 9351
 thumbnail: 343040.jpeg
-source-git-commit: e666e38d6b2a7057f7016b35ad1034a4487e9bc7
+exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
+source-git-commit: e4cd87e5d2d78c3113ef860b9f357cfacb2c874a
 workflow-type: tm+mt
-source-wordcount: '2720'
+source-wordcount: '2775'
 ht-degree: 2%
 
 ---
-
 
 # Autenticación SAML 2.0{#saml-2-0-authentication}
 
@@ -65,7 +65,7 @@ A la hora de configurar la autenticación SAML 2.0, es necesario lo siguiente:
 + Acceso del administrador de implementación a Cloud Manager
 + AEM acceso del administrador a AEM entorno as a Cloud Service
 + Acceso del administrador al IDP
-+ Opcionalmente, puede acceder a un par de claves pública y privada que se utiliza para cifrar cargas de SAML
++ Opcionalmente, acceso a un par de claves pública y privada utilizado para encriptar cargas SAML
 
 SAML 2.0 solo es compatible para autenticar usuarios en AEM Publish o Preview. Para administrar la autenticación de AEM Author mediante y IDP, [integrar el IDP con Adobe IMS](https://helpx.adobe.com/es/enterprise/using/set-up-identity.html).
 
@@ -398,6 +398,10 @@ Después de la autenticación correcta para el IDP, el IDP orquestará un POST H
 ```
 
 Si la reescritura de URL en el servidor web Apache está configurada (`dispatcher/src/conf.d/rewrites/rewrite.rules`), asegúrese de que las solicitudes a la variable `.../saml_login` los puntos finales no se manipulan accidentalmente.
+
+## Habilitar la sincronización de datos
+
+Los registros de usuario deben sincronizarse en el nivel de AEM Publish, una vez que el flujo de autenticación SAML crea un usuario en AEM Publish. Hasta [activar sincronización de datos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#data-synchronization), envíe una solicitud al servicio de asistencia al cliente de Adobe (a través de [Consola de administración](https://adminconsole.adobe.com) > Asistencia técnica) solicitando que se habilite.
 
 ## Implementación de la configuración de SAML
 
