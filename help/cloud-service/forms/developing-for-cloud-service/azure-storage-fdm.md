@@ -8,17 +8,17 @@ level: Beginner, Intermediate
 version: cloud-service
 topic: Development
 kt: 9006
-source-git-commit: 8484897297940ab28619c4b1af5362a5937eadfa
+exl-id: 77c00a35-43bf-485f-ac12-0fffb307dc16
+source-git-commit: 2ac0f6b3964590e5443700f730a3fc02cb3f63bc
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '221'
 ht-degree: 0%
 
 ---
 
-
 # Incluya la configuración de servicios de nube en su proyecto
 
-Cree un contenedor de configuración denominado &quot;FormsTutorial&quot; para guardar la configuración de los servicios de nube Cree una configuración de servicios de nube para Azure Storage denominada &quot;Store Form Submission in Azure&quot; en el contenedor &quot;FormsTutorial&quot;. Proporcione los detalles de la cuenta de almacenamiento de Azure y la clave de cuenta
+Cree un contenedor de configuración llamado &quot;FormTutorial&quot; para guardar la configuración de los servicios de nube Cree una configuración de servicios de nube para Azure Storage denominada &quot;FormsCSAndAzureBlob&quot; en el contenedor &quot;FormTutorial&quot;. Para ello, proporcione los detalles de la cuenta de almacenamiento de Azure y la clave de acceso de Azure.
 
 Abra el proyecto AEM en IntelliJ. Asegúrese de añadir la carpeta FormTutorial como se muestra a continuación en el proyecto ui.content
 ![cloud-services-configuration](assets/cloud-services-configuration.png)
@@ -45,4 +45,4 @@ Incluya la entrada adecuada en el filter.xml del proyecto ui.content
 
 >[!NOTE]
 >
->Ahora, cuando cree e implemente su proyecto, el modelo de datos de formulario basado en la configuración de los servicios de nube estará disponible en la instancia de nube
+>Ahora, al crear e implementar el proyecto mediante el administrador de nube, tendrá que volver a introducir la clave de acceso de Azure en la configuración de los servicios de nube. Para evitar volver a introducir la clave de acceso, se recomienda crear una configuración según el contexto utilizando las variables de entorno como se explica en la sección [artículo siguiente](./context-aware-fdm.md)

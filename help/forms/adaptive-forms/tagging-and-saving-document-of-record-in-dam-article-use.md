@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 832f04b4-f22f-4cf9-8136-e3c1081de7a9
-source-git-commit: 55583effd0400bac2e38756483d69f5bd114cb21
+source-git-commit: 2ac0f6b3964590e5443700f730a3fc02cb3f63bc
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '611'
 ht-degree: 0%
 
 ---
@@ -160,14 +160,14 @@ Para que este ejemplo funcione en su sistema, siga los pasos que se indican a co
 
 * [Descargar e implementar el paquete setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Este es el paquete OSGI personalizado que establece las etiquetas de los datos del formulario enviado.
 
-* [Descargar el formulario adaptable de ejemplo](assets/tag-and-store-in-dam-assets.zip)
+* [Descargue el formulario adaptable de ejemplo](assets/tag-and-store-in-dam-adaptive-form.zip)
 
 * [Vaya a Forms y documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 
-* Haga clic en Crear | Archivo Cargar y cargar el archivo sampleadaptiveform.zip
+* Haga clic en Crear | Cargar y cargar el archivo tag-and-store-in-dam-adaptive-form.zip
 
 * [Importación de los recursos del artículo](assets/tag-and-store-in-dam-assets.zip) uso de AEM administrador de paquetes
-* Abra el [formulario de ejemplo en modo de vista previa](http://localhost:4502/content/dam/formsanddocuments/summit/peakform/jcr:content?wcmmode=disabled). Complete la sección Personas y envíe el formulario.
+* Abra el [formulario de ejemplo en modo de vista previa](http://localhost:4502/content/dam/formsanddocuments/tagandstoreindam/jcr:content?wcmmode=disabled). **Rellene todos los campos** y envíe el formulario.
 * [Vaya a la carpeta Pico de DAM](http://localhost:4502/assets.html/content/dam/Peak). Debería ver DoR en la carpeta Peak. Compruebe las propiedades del documento. Debe etiquetarse adecuadamente.
 Felicitaciones!! Ha instalado correctamente el ejemplo en su sistema
 
