@@ -9,10 +9,10 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 19f72254-2087-450b-909d-2d90c9821486
-source-git-commit: 1aba21ea777a58fe8efc8a6af455b0a8ba965b66
+source-git-commit: 3a9615177acb5475d9b2b4ef22907c11e7da2bf7
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1801'
+ht-degree: 2%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 >title="Tiempo de ejecución de AEM local"
 >abstract="Adobe Experience Manager (AEM) se puede ejecutar localmente mediante el Jar de inicio rápido del SDK as a Cloud Service de AEM. Esto permite a los desarrolladores implementar y probar el código, la configuración y el contenido personalizados antes de comprometerlo con el control de código fuente e implementarlo en un entorno as a Cloud Service AEM."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=es" text="SDK de AEM as a Cloud Service"
->additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/es-ES/aemcloud.html" text="Descargar AEM SDK as a Cloud Service"
+>additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html" text="Descargar AEM SDK as a Cloud Service"
 
 Adobe Experience Manager (AEM) se puede ejecutar localmente mediante el Jar de inicio rápido del SDK as a Cloud Service de AEM. Esto permite a los desarrolladores implementar y probar el código, la configuración y el contenido personalizados antes de comprometerlo con el control de código fuente e implementarlo en un entorno as a Cloud Service AEM.
 
@@ -115,6 +115,18 @@ $ mkdir -p ~/aem-sdk/publish
 $ cp aem-sdk-Quickstart-XXX.jar ~/aem-sdk/publish/aem-publish-p4503.jar
 $ cd ~/aem-sdk/publish
 $ java -jar aem-publish-p4503.jar
+```
+
+## Configuración de los servicios de AEM locales en el modo de prelanzamiento
+
+El tiempo de ejecución de AEM local se puede iniciar en [modo de prelanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es) permitir a un desarrollador compilar según las funciones de la próxima versión del as a Cloud Service AEM. La versión previa se habilita pasando la variable `-r prerelease` en el primer inicio del motor de ejecución de AEM local. Esto se puede utilizar con los servicios locales de AEM Author y AEM Publish.
+
+```shell
+# For AEM Author service in prerelease mode
+$ java -jar aem-author-p4502.jar -r prerelease
+
+# For AEM Publish service in prerelease mode
+$ java -jar aem-publish-p4503.jar -r prerelease
 ```
 
 ## Simular la distribución de contenido {#content-distribution}
