@@ -1,18 +1,18 @@
 ---
 title: Creación del primer servlet en AEM Forms
 description: Cree el primer servlet de sling para combinar los datos con la plantilla de formulario.
-feature: Formularios adaptables
+feature: Adaptive Forms
 version: 6.4,6.5
-topic: Desarrollo
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 72728ed7-80a2-48b5-ae7f-d744db8a524d
+source-git-commit: f4e86059d29acf402de5242f033a25f913febf36
 workflow-type: tm+mt
-source-wordcount: '210'
-ht-degree: 2%
+source-wordcount: '207'
+ht-degree: 0%
 
 ---
-
 
 # Sling Servlet
 
@@ -25,8 +25,8 @@ Un servlet en AEM puede registrarse como servicio OSGi: puede ampliar SlingSafeM
 ## Código Servlet
 
 ```java
+package com.mysite.core.servlets;
 import javax.servlet.Servlet;
-
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.SlingHttpServletResponse;
 import org.apache.sling.api.servlets.SlingAllMethodsServlet;
@@ -73,19 +73,19 @@ public class MyFirstAEMFormsServlet extends SlingAllMethodsServlet
 
 Para crear el proyecto, siga los siguientes pasos:
 
-* Abra la ventana **símbolo del sistema**
-* Ir a `c:\aemformsbundles\learningaemforms\core`
-* Ejecute el comando `mvn clean install -PautoInstallBundle`
+* Apertura **ventana del símbolo del sistema**
+* Vaya a `c:\aemformsbundles\mysite\core`
+* Ejecutar el comando `mvn clean install -PautoInstallBundle`
 * El comando anterior creará e implementará automáticamente el paquete en su instancia de AEM que se ejecuta en localhost:4502
 
-El paquete también estará disponible en la siguiente ubicación `C:\AEMFormsBundles\learningaemforms\core\target`. El paquete también se puede implementar en AEM usando la consola web [Felix.](http://localhost:4502/system/console/bundles)
+El paquete también estará disponible en la siguiente ubicación `C:\AEMFormsBundles\mysite\core\target`. El paquete también se puede implementar en AEM usando la variable [Consola web Felix.](http://localhost:4502/system/console/bundles)
 
 
 ## Probar el Servlet Resolver
 
-Apunte el navegador a la URL de resolución del [servlet](http://localhost:4502/system/console/servletresolver?url=%2Fbin%2FmergedataWithAcroform&amp;method=POST). Esto le indicará el servlet que se invocará para una ruta determinada, como se ve en la captura de pantalla siguiente
-![resolución de servlet](assets/servlet-resolver.JPG)
+Apunte el navegador a [URL de resolución de servlet](http://localhost:4502/system/console/servletresolver?url=%2Fbin%2FmergedataWithAcroform&amp;method=POST). Esto le indicará el servlet que se invocará para una ruta determinada, como se ve en la captura de pantalla siguiente
+![servlet-resolver](assets/servlet-resolver.JPG)
 
-## Probar el servlet utilizando Postman
+## Probar el servlet con Postman
 
 ![test-servlet-postman](assets/test-servlet-postman.JPG)

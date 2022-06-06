@@ -5,9 +5,9 @@ user-guide-title: Vídeos y tutoriales de AEM Forms
 user-guide-description: Recopilación de recursos de AEM Forms para principiantes y desarrolladores experimentados de AEM Forms.
 breadcrumb-title: Tutoriales de AEM Forms
 index: y
-source-git-commit: cb5b3eb77a57fa8a2918710b7dbcd1b0a58b74bd
+source-git-commit: f4e86059d29acf402de5242f033a25f913febf36
 workflow-type: tm+mt
-source-wordcount: '1671'
+source-wordcount: '1676'
 ht-degree: 3%
 
 ---
@@ -76,6 +76,7 @@ ht-degree: 3%
    + [Rellenar tabla con los resultados de la invocación del servicio del modelo de datos de formulario](adaptive-forms/populatetable.md)
    + [Captura de los comentarios del flujo de trabajo](adaptive-forms/capturing-workflow-comments-aem-workflow-article.md)
    + [Almacenamiento de datos de formulario enviados en la base de datos](adaptive-forms/storing-adaptive-form-data-in-db.md)
+   + [Inserción de datos adjuntos de formulario en DB](adaptive-forms/inserting-form-attachment-in-db.md)
    + [Servicio de modelo de datos de formulario en el flujo de trabajo de AEM 6.4](adaptive-forms/form-data-model-service-as-step-in-workflow-video-use.md)
    + [Gestión de mensajes de error en el paso del servicio del Modelo de datos de formulario](adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)
    + [Servicio de modelo de datos de formulario en el flujo de trabajo de AEM 6.5.1](adaptive-forms/form-data-model-service-as-step-in-aem65-workflow-video-use.md)
@@ -211,8 +212,8 @@ ht-degree: 3%
    + [Uso del servicio PDFG en AEM Forms](document-services/using-pdfg-in-aem-forms.md)
    + [Uso de Output y Forms Service en AEM Forms](document-services/output-and-forms-services-article-develop.md)
    + [Generación de varios archivos pdf a partir de un archivo de datos](document-services/generate-multi-record-pdf.md)
-   + [Generar PDF en envío de formulario de Mobile](document-services/generate-pdf-from-mobile-form-submission-article.md)
-   + [Generar PDF interactivo desde formulario de Mobile](document-services/render-interactive-form-using-api.md)
+   + [Generar PDF en envío de formulario móvil](document-services/generate-pdf-from-mobile-form-submission-article.md)
+   + [Generar PDF interactivo a partir de formulario móvil](document-services/render-interactive-form-using-api.md)
    + [Generar DoR interactivo a partir de formulario adaptable](document-services/generate-interactive-dor.md)
    + [Configuración de la credencial de extensiones de Reader](document-services/configuring-reader-extension-osgi.md)
    + [Aplicar derechos de uso al PDF en la representación XDP](document-services/rendering-and-reader-extending-xdp-templates-article.md)

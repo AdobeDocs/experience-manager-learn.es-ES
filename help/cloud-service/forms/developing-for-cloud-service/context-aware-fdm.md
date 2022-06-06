@@ -8,9 +8,10 @@ level: Beginner, Intermediate
 version: cloud-service
 topic: Development
 kt: 10423
-source-git-commit: 2ac0f6b3964590e5443700f730a3fc02cb3f63bc
+exl-id: 2ce0c07b-1316-4170-a84d-23430437a9cc
+source-git-commit: f4e86059d29acf402de5242f033a25f913febf36
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
@@ -24,14 +25,14 @@ Se necesitan los siguientes pasos para crear la configuración de nube según el
 
 ## Crear variables de entorno
 
-Las variables de entorno estándar se pueden configurar y administrar mediante Cloud Manager. Se proporcionan al entorno de tiempo de ejecución y se pueden utilizar en configuraciones OSGi. Las variables de entorno pueden ser valores específicos de entorno o secretos de entorno, según lo que se esté cambiando.
+Las variables de entorno estándar se pueden configurar y administrar mediante Cloud Manager. Se proporcionan al entorno de tiempo de ejecución y se pueden utilizar en configuraciones OSGi. [Las variables de entorno pueden ser valores específicos de entorno o secretos de entorno, según lo que se esté cambiando.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html?lang=en)
 
-[Variables de entorno](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html?lang=en)
+
 
 La siguiente captura de pantalla muestra las variables de entorno azure_key y azure_connection_string definidas
 ![environment_variables](assets/environment-variables.png)
 
-Estas variables de entorno se pueden especificar en los archivos de configuración para utilizarlos en los entornos adecuados. Por ejemplo, si desea que todas las instancias de autor utilicen estas variables de entorno, definirá el archivo de configuración en la carpeta config.author como se especifica a continuación
+Estas variables de entorno se pueden especificar en los archivos de configuración para utilizarlos en el entorno adecuado. Por ejemplo, si desea que todas las instancias de autor utilicen estas variables de entorno, definirá el archivo de configuración en la carpeta config.author como se especifica a continuación
 
 ## Crear archivo de configuración
 
