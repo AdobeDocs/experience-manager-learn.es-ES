@@ -4,9 +4,9 @@ user-guide-description: Una recopilación de tutoriales de Adobe Experience Mana
 breadcrumb-title: Tutoriales de AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: a18bea7986062ff9cb731d794187760ff6e0339f
+source-git-commit: 726cf83f3cabe46c12abb79288368407ebf4d525
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '760'
 ht-degree: 23%
 
 ---
@@ -253,6 +253,9 @@ ht-degree: 23%
    + Temporada 2{#season-2}
       + [Fragmentos](./cloud-5/season-2/cloud5-experience-v-content-fragments.md)
       + [Modernizador de repositorios](./cloud-5/season-2/cloud5-repo-modernizer.md)
+      + [Admin Console](./cloud-5/season-2/cloud5-admin-console.md)
+      + [REPOINIT](./cloud-5/season-2/cloud5-repoinit.md)
+      + [Programador de trabajos de Sling](./cloud-5/season-2/cloud5-sling-job-scheduler.md)
 + [AEM serie de expertos](./aem-experts-series.md)
 + Tutorials de varios pasos{#multi-step-tutorials}
    + [Desarrollo de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es)
