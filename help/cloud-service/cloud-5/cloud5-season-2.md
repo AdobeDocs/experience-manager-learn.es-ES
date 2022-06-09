@@ -5,10 +5,10 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: e2fabf7c-7fda-4391-ae77-709aa9f7dc0a
-source-git-commit: 85e00a237c09867247a0b3ccffa0bf843826ee26
+source-git-commit: 59bcd6f2501b324222de7e68f2f7c311cb595788
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 2%
+source-wordcount: '360'
+ht-degree: 1%
 
 ---
 
@@ -44,17 +44,19 @@ Cada temporada varía en longitud y se publicará con un calendario fijo. Los te
                 Una visión colorida de las diferencias entre la experiencia y los fragmentos de contenido. Deflector: todos ganan.
             </p>
         </td>   
-     <td>
-         <img alt="Modernizador de repositorio" src="./imgs/coming-soon.png"/>
-      <div>
-         <strong>Modernizador de repositorio</strong>
-         <br/><em>con Darin Kuntze y James Talbot, arquitectos sénior de la nube</em>
-      </div>
-      <p>
-        <br/>
-         Próximo 10 de junio de 2022
-      </p>
-   </td>
+         <td>
+            <a href="season-2/cloud5-repo-modernizer.md">
+                 <img alt="Modernizador de repositorio" src="./imgs/s2/001-thumb.png"/>
+            </a>
+            <div>
+                <a href="season-2/cloud5-repo-modernizer.md"><strong>Modernizador de repositorio</strong></a> 
+               <br/><em>con Darin Kuntze y James Talbot, arquitectos sénior de la nube</em>
+            </div>
+            <p>
+                <br/>
+                Información rápida sobre el uso del modernizador de repositorios para reestructurar los paquetes de proyectos existentes en paquetes discretos compatibles con AEM as a cloud service.
+            </p>
+         </td>
      <td>
             <img alt="Admin Console" src="./imgs/coming-soon.png"/>
       <div>
