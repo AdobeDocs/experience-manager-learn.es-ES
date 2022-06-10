@@ -10,15 +10,18 @@ hidefromtoc: true
 hide: true
 index: false
 thumbnail: kt-10427.jpg
-source-git-commit: 45061581322e23efb936e91c11be48ceac64183b
+exl-id: 8fcc9364-b84c-4458-82e2-66b47429cd4b
+source-git-commit: d30641b3a9565dd3b7121dfdf6b6969a2b401e92
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '834'
 ht-degree: 3%
 
 ---
 
-
 # Advertencias transitorias
+
+>[!TIP]
+>Marque esta página para referencia futura.
 
 _¿Qué son las advertencias transversales?_
 
@@ -271,5 +274,3 @@ Consulte estos otros recursos útiles para comprender AEM índices, búsquedas y
 </div>
 
 </div>
-
-
