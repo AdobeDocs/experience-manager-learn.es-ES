@@ -6,7 +6,7 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 5fa3d52a-6a71-45c4-9b1a-0e6686dd29bc
-source-git-commit: f1afccdad8d819604c510421204f59e7b3dc68e4
+source-git-commit: c462d48d26c9a7aa0e4cfc4f24005b41e8e82cb8
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 0%
@@ -29,8 +29,8 @@ Este artículo explica la creación de un usuario del sistema y la configuració
 1. Haga clic en &quot;Crear usuario del sistema&quot;
 1. Establezca el tipo userid como &#39; data &#39; y haga clic en el icono verde para completar el proceso de creación del usuario del sistema
 1. [Abrir configMgr](http://localhost:4502/system/console/configMgr)
-1. Busque el servicio Apache Sling Service User Mapper y haga clic en para abrir las propiedades
-1. Haga clic en el icono *+* (signo más) para agregar la siguiente asignación de servicios
+1. Buscar _Servicio de asignador de usuarios del servicio Apache Sling_ y haga clic en para abrir las propiedades
+1. Haga clic en el *+* icono (más) para añadir la siguiente asignación de servicios
 
    * DevelopingWithServiceUser.core:getresourceresolver=data
    * DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
@@ -45,7 +45,7 @@ También podemos obtener la resolución de recursos en nombre del usuario de fd-
 1. Vaya a [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
 1. Carga e inicio del paquete OSGi
 1. Asegúrese de que el paquete esté en estado activo
-1. Ahora ha creado correctamente un *System User* y también ha implementado el *Service User bundle*.
+1. Ya ha creado correctamente un *Usuario del sistema* y también implementó el *Paquete de usuario de servicio*.
 
    Para proporcionar acceso a /content, otorgue al usuario del sistema (&#39; data &#39;) permisos de lectura en el nodo de contenido.
 
