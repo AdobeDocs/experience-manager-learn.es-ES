@@ -9,10 +9,10 @@ level: Intermediate
 kt: 9165
 thumbnail: 337960.jpeg
 exl-id: 40bb55f9-011d-4261-9f44-b1104a591252
-source-git-commit: 71f1d32c12742cdb644dec50050d147395c3f3b6
+source-git-commit: 7cfc150989453eec776eb34eac9b4598c46b0d7c
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 1%
+source-wordcount: '224'
+ht-degree: 6%
 
 ---
 
@@ -45,6 +45,23 @@ Define el [Configuración de fábrica de OSGi](http://localhost:4502/system/cons
   "searchPath": "/content/wknd"
 }
 ```
+
+### Direcciones URL absolutas del mapa del sitio
+
+AEM mapa del sitio admite direcciones URL absolutas mediante [Asignación de Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html). Esto se realiza creando nodos de asignación en los servicios de AEM que generan mapas del sitio.
+
+Un ejemplo de definición de nodo de asignación de Sling para `https://wknd.com` se puede definir en `/etc/map/https` de la siguiente manera:
+
+| Ruta | Nombre de la propiedad | Tipo de propiedad | Valor de propiedad |
+|------|----------|---------------|-------|
+| `/etc/map/https/wknd-site` | `jcr:primaryType` | Cadena | `nt:unstructured` |
+| `/etc/map/https/wknd-site` | `sling:internalRedirect` | Cadena | `/content/wknd/(.*)` |
+| `/etc/map/https/wknd-site` | `sling:match` | Cadena | `wknd.com/$1` |
+
+La captura de pantalla siguiente ilustra una configuración similar, pero para `http://wknd.local` (una asignación de nombre de host local que se ejecuta en `http`).
+
+![Configuración de direcciones URL absolutas del mapa del sitio](../assets/sitemaps/sitemaps-absolute-urls.jpg)
+
 
 ### Regla de filtro de permiso de Dispatcher
 

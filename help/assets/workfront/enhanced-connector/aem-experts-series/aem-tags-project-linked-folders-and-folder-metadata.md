@@ -9,9 +9,9 @@ kt: 9720
 thumbnail: 340333.jpeg
 hidefromtoc: false
 exl-id: 520a75cd-757a-4ae9-acf6-3c1f5e1f3747
-source-git-commit: 485f968e6f8c508b5e81c54e03ca17996e4c1b63
+source-git-commit: 49707940e1a980ade97dab82270ab1263bef94d8
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '109'
 ht-degree: 0%
 
 ---
@@ -28,4 +28,4 @@ _Parte 3 bis [cuatro partes de la serie de expertos sobre el conector mejorado W
 
 ## Correcciones
 
-+ __@ 4:34__ AEM sintaxis de las etiquetas es incorrecta. Visualizaciones de vídeo `we-retail:apparel/footwear`. La sintaxis correcta es `["we-retail:apparel/footwear"]` o más generalmente `["namespace:tag/childtag"]`.
++ __@ 4:34 y 6:20__ AEM sintaxis de las etiquetas es incorrecta. Visualizaciones de vídeo `we-retail:apparel/footwear`. La sintaxis correcta es `["we-retail:apparel/footwear"]` o más generalmente `["namespace:tag/childtag"]`.
