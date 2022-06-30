@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: e2fabf7c-7fda-4391-ae77-709aa9f7dc0a
-source-git-commit: e10617d81287a291d16aed3400ef0c01266586e6
+source-git-commit: c3d3eae47c17a7efed15f14e98e2f3ded719cef0
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '407'
 ht-degree: 1%
 
 ---
@@ -84,18 +84,20 @@ Cada temporada varía en longitud y se publicará con un calendario fijo. Los te
             <br/>
                Darin y James discuten sobre las dificultades y cosas que hay que tener en cuenta para la programación de trabajos y el consumo en AEM as a cloud service.
             </p>
+         </td> 
+         <td>
+            <a href="season-2/cloud5-repoinit.md">
+                 <img alt="Inicializador de repositorios (informe)" src="./imgs/s2/004-thumb.png"/>
+            </a>
+            <div>
+                  <a href="season-2/cloud5-repoinit.md"><strong>Inicializador del repositorio de Sling</strong></a>
+               <br/><em>con Darin Kuntze y James Talbot, arquitectos sénior de la nube</em>
+            </div>
+            <p>
+            <br/>
+              Aprenda algunos trucos para desbloquear el poder de usar el Inicializador del repositorio de Sling, también conocido como punto de partida.
+            </p>
          </td>   
-     <td>
-        <img alt="Inicializador de repositorios (informe)" src="./imgs/coming-soon.png"/>
-      <div>
-        <strong>Inicializador de repositorios (informe)</strong>
-         <br/><em>con Darin Kuntze y James Talbot, arquitectos sénior de la nube</em>
-      </div>
-      <p>
-        <br/>
-            Próximos 1 de julio de 2022
-      </p>
-   </td>
      <td>
             <img alt="Corregir su... Caché" src="./imgs/coming-soon.png"/>
       <div>
