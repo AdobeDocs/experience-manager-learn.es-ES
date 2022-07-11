@@ -2,7 +2,7 @@
 title: 'Aplicación Android: ejemplo AEM sin encabezado'
 description: Las aplicaciones de ejemplo son una buena manera de explorar las capacidades sin objetivos de Adobe Experience Manager (AEM). Esta aplicación de Android muestra cómo consultar contenido mediante las API de GraphQL de AEM.
 version: Cloud Service
-mini-toc-levels: 1
+mini-toc-levels: 2
 kt: 9166
 thumbnail: KT-9166.jpg
 feature: Content Fragments, GraphQL API
@@ -10,7 +10,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 7873e263-b05a-4170-87a9-59e8b7c65faa
-source-git-commit: 0204d9aaf7b79b0745adbe749f44245716203b88
+source-git-commit: 8b2c116ceb6ab8c3a009dcec6629c2e97d815b7b
 workflow-type: tm+mt
 source-wordcount: '765'
 ht-degree: 4%
@@ -136,7 +136,7 @@ query($slug: String!) {
         slug: {
           _expressions: [ { value: $slug } ]
         }
-  	}) {
+      }) {
     items {
       _path
       title
@@ -178,7 +178,7 @@ query($slug: String!) {
 }
 ```
 
-## Ejecutar consulta persistente de GraphQL
+### Ejecutar consulta persistente de GraphQL
 
 AEM las consultas persistentes se ejecutan a través de GET HTTP y, por lo tanto, la variable [AEM cliente sin encabezado para Java](https://github.com/adobe/aem-headless-client-java) se utiliza para ejecutar las consultas de GraphQL persistentes con AEM y cargar el contenido de aventura en la aplicación.
 

@@ -1,8 +1,8 @@
 ---
-title: 'Aplicación SwiftUI de iOS: ejemplo AEM sin encabezado'
+title: 'Aplicación iOS: ejemplo AEM sin encabezado'
 description: Las aplicaciones de ejemplo son una buena manera de explorar las capacidades sin objetivos de Adobe Experience Manager (AEM). Esta aplicación de iOS muestra cómo consultar contenido mediante las API de GraphQL AEM mediante consultas persistentes.
 version: Cloud Service
-mini-toc-levels: 1
+mini-toc-levels: 2
 kt: 9166
 thumbnail: KT-9166.jpg
 feature: Content Fragments, GraphQL API
@@ -10,14 +10,14 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 6c5373db-86ec-410b-8a3b-9d4f86e06812
-source-git-commit: bcedb190fba7b6bc044da06bd36d097d553172a1
+source-git-commit: 8b2c116ceb6ab8c3a009dcec6629c2e97d815b7b
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '981'
 ht-degree: 3%
 
 ---
 
-# Aplicación iOS SwiftUI
+# aplicación iOS
 
 Las aplicaciones de ejemplo son una buena manera de explorar las capacidades sin objetivos de Adobe Experience Manager (AEM). Esta aplicación de iOS muestra cómo consultar contenido mediante las API de GraphQL AEM mediante consultas persistentes.
 
@@ -131,7 +131,7 @@ query($slug: String!) {
         slug: {
           _expressions: [ { value: $slug } ]
         }
-  	}) {
+      }) {
     items {
       _path
       title
@@ -173,7 +173,7 @@ query($slug: String!) {
 }
 ```
 
-## Ejecutar consulta persistente de GraphQL
+### Ejecutar consulta persistente de GraphQL
 
 AEM las consultas persistentes se ejecutan a través de GET HTTP y, por lo tanto, no se pueden utilizar las bibliotecas comunes de GraphQL que utilizan POST HTTP como Apollo. En su lugar, cree una clase personalizada que ejecute las solicitudes de GET HTTP de consulta persistentes a AEM.
 
