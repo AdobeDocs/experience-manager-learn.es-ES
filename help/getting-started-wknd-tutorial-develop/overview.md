@@ -1,6 +1,6 @@
 ---
-title: 'Introducción a AEM Sites: Tutorial de WKND'
-description: 'Introducción a AEM Sites: Tutorial de WKND. El tutorial de WKND es un tutorial de varias partes diseñado para desarrolladores que no han llegado a Adobe Experience Manager. El tutorial recorre la implementación de un sitio AEM para una marca ficticia de estilo de vida, la WKND. El tutorial cubre temas fundamentales como la configuración del proyecto, los arquetipos de maven, los componentes principales, las plantillas editables, las bibliotecas de cliente y el desarrollo de componentes.'
+title: 'Introducción a AEM Sites: tutorial de WKND'
+description: Aprenda a implementar un sitio AEM para una marca ficticia de estilo de vida llamada WKND. Obtenga información detallada sobre los temas fundamentales del Experience Manager, como la configuración del proyecto, los arquetipos de maven, los componentes principales, las plantillas editables, las bibliotecas de cliente y el desarrollo de componentes.
 sub-product: sites
 topics: development
 version: Cloud Service
@@ -16,20 +16,20 @@ role: Developer
 level: Beginner
 exl-id: 09a600f4-1ada-4fb7-ae44-586364cff389
 recommendations: disable
-source-git-commit: 04096fe3c99cdcce2d43b2b29899c2bbe37ac056
+source-git-commit: 72abe1cddcf6a012403887203d38509bde8f2d23
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 6%
+source-wordcount: '599'
+ht-degree: 3%
 
 ---
 
-# Introducción a AEM Sites: Tutorial de WKND {#introduction}
+# Introducción a AEM Sites: tutorial de WKND {#introduction}
 
-Le damos la bienvenida a un tutorial de varias partes diseñado para desarrolladores que utilicen Adobe Experience Manager (AEM) por primera vez. Este tutorial recorre la implementación de un sitio AEM para una marca ficticia de estilo de vida WKND. El tutorial trata temas fundamentales como la configuración del proyecto, los componentes principales, las plantillas editables, las bibliotecas del lado del cliente y el desarrollo de componentes con Adobe Experience Manager Sites.
+Le damos la bienvenida a un tutorial de varias partes diseñado para desarrolladores que utilicen Adobe Experience Manager (AEM) por primera vez. Este tutorial recorre la implementación de un sitio AEM para una marca ficticia de estilo de vida, la WKND. El tutorial trata temas fundamentales como la configuración del proyecto, los componentes principales, las plantillas editables, las bibliotecas del lado del cliente y el desarrollo de componentes con Adobe Experience Manager Sites.
 
 ## Información general {#wknd-tutorial-overview}
 
-El objetivo de este tutorial en varias partes es enseñar a los desarrolladores a implementar un sitio web utilizando los estándares y tecnologías más recientes en Adobe Experience Manager (AEM). Después de completar este tutorial, un desarrollador debe comprender la base básica de la plataforma y con conocimientos de patrones de diseño comunes en AEM.
+El objetivo de este tutorial en varias partes es enseñar a los desarrolladores a implementar un sitio web utilizando los estándares y tecnologías más recientes en Adobe Experience Manager (AEM). Después de completar este tutorial, un desarrollador debe comprender la base básica de la plataforma y los patrones de diseño comunes en AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/30476?quality=12&learn=on)
 
