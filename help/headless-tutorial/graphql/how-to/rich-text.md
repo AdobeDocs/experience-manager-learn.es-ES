@@ -8,16 +8,16 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 exl-id: 790a33a9-b4f4-4568-8dfe-7e473a5b68b6
-source-git-commit: 22d5aa7299ceacd93771bd73a6b89d1903edc561
+source-git-commit: 68970493802c7194bcb3ac3ac9ee10dbfb0fc55d
 workflow-type: tm+mt
-source-wordcount: '1460'
+source-wordcount: '1463'
 ht-degree: 0%
 
 ---
 
 # Texto enriquecido con AEM sin encabezado
 
-El campo Texto multilínea es un tipo de datos de fragmentos de contenido que permite a los autores crear contenido de texto enriquecido. Las referencias a otro contenido, como imágenes u otros fragmentos de contenido, se pueden insertar dinámicamente en línea dentro del flujo del texto. El campo de texto Una sola línea es otro tipo de datos de fragmentos de contenido que debe utilizarse para elementos de texto simples.
+El campo de texto multilínea es un tipo de datos de fragmentos de contenido que permite a los autores crear contenido de texto enriquecido. Las referencias a otro contenido, como imágenes u otros fragmentos de contenido, se pueden insertar dinámicamente en línea dentro del flujo del texto. El campo de texto de una sola línea es otro tipo de datos de fragmentos de contenido que debe utilizarse para elementos de texto simples.
 
 AEM API de GraphQL ofrece una sólida capacidad para devolver texto enriquecido como HTML, texto sin formato o como JSON puro. La representación JSON es potente, ya que proporciona a la aplicación cliente control total sobre cómo procesar el contenido.
 
@@ -25,23 +25,23 @@ AEM API de GraphQL ofrece una sólida capacidad para devolver texto enriquecido 
 
 >[!VIDEO](https://video.tv.adobe.com/v/342104/?quality=12&learn=on)
 
-En el Editor de fragmentos de contenido, la barra de menús del campo de texto de varias líneas proporciona a los autores capacidades estándar de formato de texto enriquecido, como **bold**, *cursiva* y subrayado. Al abrir el campo Multi line en el modo de pantalla completa, se habilita [herramientas de formato adicionales, como el tipo de párrafo, buscar y reemplazar, revisión ortográfica, etc.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html).
+En el Editor de fragmentos de contenido, la barra de menús del campo de texto multilínea proporciona a los autores capacidades estándar de formato de texto enriquecido, como **bold**, *cursiva* y subrayado. Al abrir el campo multilínea en modo de pantalla completa, se habilita [herramientas de formato adicionales, como el tipo de párrafo, buscar y reemplazar, revisión ortográfica, etc.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html).
 
 >[!NOTE]
 >
-> Los complementos de texto enriquecido del editor de líneas múltiples no se pueden personalizar.
+> Los complementos de texto enriquecido del editor de varias líneas no se pueden personalizar.
 
-## Tipo de datos de varias líneas de texto {#multi-line-data-type}
+## Tipo de datos de texto multilínea {#multi-line-data-type}
 
-Utilice la variable **Texto de varias líneas** tipo de datos al definir el modelo de fragmento de contenido para permitir la creación de texto enriquecido.
+Utilice la variable **Texto multilínea** tipo de datos al definir el modelo de fragmento de contenido para permitir la creación de texto enriquecido.
 
 ![Tipo de datos de texto enriquecido de varias líneas](assets/rich-text/multi-line-rich-text.png)
 
-Se pueden configurar varias propiedades del campo Multi line .
+Se pueden configurar varias propiedades del campo multilínea.
 
 La variable **Procesar como** se puede establecer en:
 
-* Área de texto: procesa un solo campo de varias líneas
+* Área de texto: procesa un solo campo multilínea
 * Múltiples campos: procesa varios campos de líneas múltiples
 
 
@@ -55,25 +55,23 @@ La variable **Tipo predeterminado** influye directamente en la experiencia de ed
 
 También puede [habilitar referencias en línea](#insert-fragment-references) a otros fragmentos de contenido comprobando la variable **Permitir referencia de fragmento** y configurar la variable **Modelos de fragmento de contenido permitidos**.
 
-Si el contenido se va a localizar, marque la **Translatable** en la ventana Solo se puede localizar texto enriquecido y texto sin formato. Consulte [trabajar con contenido localizado para obtener más información](./localized-content.md).
+Marque la **Translatable** , si el contenido se va a localizar. Solo se puede localizar texto enriquecido y texto sin formato. Consulte [trabajar con contenido localizado para obtener más información](./localized-content.md).
 
 ## Respuesta de texto enriquecido con la API de GraphQL
 
-Al crear una consulta de GraphQL, los desarrolladores pueden elegir diferentes tipos de respuesta de `html`, `plaintext`, `markdown`y `json` desde un campo Multi line .
+Al crear una consulta de GraphQL, los desarrolladores pueden elegir diferentes tipos de respuesta de `html`, `plaintext`, `markdown`y `json` desde un campo multilínea.
 
 Los desarrolladores pueden utilizar el [Vista previa de JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html) en el editor de fragmentos de contenido para mostrar todos los valores del fragmento de contenido actual que se pueden devolver mediante la API de GraphQL.
 
-### Ejemplo de JSON
+## Consulta persistente de GraphQL
 
-La variable `json` response ofrece la mayor flexibilidad para los desarrolladores de front-end cuando trabajan con contenido de texto enriquecido. El contenido de texto enriquecido se entrega como una matriz de tipos de nodos JSON que se pueden procesar de forma única en función de la plataforma del cliente.
+Al seleccionar la variable `json` el formato de respuesta para el campo multilínea ofrece la mayor flexibilidad al trabajar con contenido de texto enriquecido. El contenido de texto enriquecido se entrega como una matriz de tipos de nodos JSON que se pueden procesar de forma única en función de la plataforma del cliente.
 
 A continuación se muestra un tipo de respuesta JSON de un campo multilínea denominado `main` que contiene un párrafo: &quot;*Este es un párrafo que incluye **important**contenido.*&quot; donde &quot;importante&quot; está marcado como **bold**.
 
-**Consulta de GraphQL:**
-
 ```graphql
-{
-  articleByPath(_path: "/content/dam/wknd/en/magazine/sample-article")
+query ($path: String!) {
+  articleByPath(_path: $path)
   {
     item {
       _path
@@ -84,6 +82,8 @@ A continuación se muestra un tipo de respuesta JSON de un campo multilínea den
   }
 }
 ```
+
+La variable `$path` se usa en la variable `_path` requiere la ruta completa al fragmento de contenido (por ejemplo `/content/dam/wknd/en/magazine/sample-article`).
 
 **Respuesta de GraphQL:**
 
@@ -131,11 +131,11 @@ A continuación se muestran varios ejemplos de tipos de respuesta de un campo mu
 
 ++ejemplo de HTML
 
-**Consulta de GraphQL:**
+**Consulta persistente de GraphQL:**
 
 ```graphql
-{
-  articleByPath(_path: "/content/dam/wknd/en/magazine/sample-article")
+query ($path: String!) {
+  articleByPath(_path: $path)
   {
     item {
       _path
@@ -168,11 +168,11 @@ A continuación se muestran varios ejemplos de tipos de respuesta de un campo mu
 
 ++Ejemplo de Markdown
 
-**Consulta de GraphQL:**
+**Consulta persistente de GraphQL:**
 
 ```graphql
-{
-  articleByPath(_path: "/content/dam/wknd/en/magazine/sample-article")
+query ($path: String!) {
+  articleByPath(_path: $path)
   {
     item {
       _path
@@ -205,11 +205,11 @@ A continuación se muestran varios ejemplos de tipos de respuesta de un campo mu
 
 +++Ejemplo de texto sin formato
 
-**Consulta de GraphQL:**
+**Consulta persistente de GraphQL:**
 
 ```graphql
-{
-  articleByPath(_path: "/content/dam/wknd/en/magazine/sample-article")
+query ($path: String!) {
+  articleByPath(_path: $path)
   {
     item {
       _path
@@ -245,9 +245,9 @@ La variable `plaintext` procesar elimina cualquier formato.
 
 ## Representación de una respuesta JSON de texto enriquecido {#render-multiline-json-richtext}
 
-La respuesta JSON de texto enriquecido del campo Multi line se estructura como un árbol jerárquico. Cada objeto o nodo representa un bloque de HTML diferente del texto enriquecido.
+La respuesta JSON de texto enriquecido del campo de varias líneas se estructura como un árbol jerárquico. Cada objeto o nodo representa un bloque de HTML diferente del texto enriquecido.
 
-A continuación, se muestra una respuesta JSON de ejemplo de un campo de texto Multi line . Observe que cada objeto, o nodo, incluye un `nodeType` que representa el bloque de HTML del texto enriquecido como `paragraph`, `link`y `text`. Cada nodo contiene opcionalmente `content` que es una submatriz que contiene cualquier elemento secundario del nodo actual.
+A continuación, se muestra una respuesta JSON de ejemplo de un campo de texto multilínea. Observe que cada objeto, o nodo, incluye un `nodeType` que representa el bloque de HTML del texto enriquecido como `paragraph`, `link`y `text`. Cada nodo contiene opcionalmente `content` que es una submatriz que contiene cualquier elemento secundario del nodo actual.
 
 ```json
 "json": [// root "content" or child nodes
@@ -298,7 +298,7 @@ function renderNodeList(childNodes) {
 }
 ```
 
-La variable `renderNodeList` es el punto de entrada en el algoritmo recursivo. La variable `renderNodeList` espera una matriz de `childNodes`. A continuación, cada nodo de la matriz se pasa a una función `renderNode`.
+`renderNodeList` es una función recursiva que toma una matriz de `childNodes`. A continuación, cada nodo de la matriz se pasa a una función `renderNode`, que a su vez llama a `renderNodeList` si el nodo tiene elementos secundarios.
 
 ```javascript
 // renderNode - renders an individual node
@@ -331,29 +331,29 @@ La variable `nodeMap` es un literal de objeto JavaScript que se utiliza como map
 
 ### Ejemplo de código completo
 
-Se puede encontrar una utilidad de renderización de texto enriquecido reutilizable en el [Ejemplo de WKND GraphQL React](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app).
+Se puede encontrar una utilidad de renderización de texto enriquecido reutilizable en la variable [Ejemplo de WKND GraphQL React](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app).
 
-* [renderRichText.js](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app/src/utils/renderRichText.js) - utilidad reutilizable que expone una función `mapJsonRichText`. Esta utilidad la pueden utilizar los componentes que desean renderizar una respuesta JSON de texto enriquecido como React JSX.
+* [renderRichText.js](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/react-app/src/utils/renderRichText.js) - utilidad reutilizable que expone una función `mapJsonRichText`. Esta utilidad la pueden utilizar los componentes que desean renderizar una respuesta JSON de texto enriquecido como React JSX.
 * [AdventureDetail.js](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/react-app/src/components/AdventureDetail.js) : componente de ejemplo que realiza una solicitud de GraphQL que incluye texto enriquecido. El componente utiliza la variable `mapJsonRichText` para procesar el texto enriquecido y cualquier referencia.
 
 
 ## Agregar referencias en línea a texto enriquecido {#insert-fragment-references}
 
-El campo Línea múltiple permite a los autores insertar imágenes u otros recursos digitales desde AEM Assets en el flujo del texto enriquecido.
+El campo Multilínea permite a los autores insertar imágenes u otros recursos digitales desde AEM Assets en el flujo del texto enriquecido.
 
 ![insertar imagen](assets/rich-text/insert-image.png)
 
-La captura de pantalla anterior muestra una imagen insertada en el campo Línea múltiple con el **Insertar recurso** botón.
+La captura de pantalla anterior representa una imagen insertada en el campo multilínea utilizando la variable **Insertar recurso** botón.
 
-Las referencias a otros fragmentos de contenido también se pueden vincular o insertar en el campo Multilínea usando la variable **Insertar fragmento de contenido** botón.
+Las referencias a otros fragmentos de contenido también se pueden vincular o insertar en el campo multilínea mediante la función **Insertar fragmento de contenido** botón.
 
 ![Insertar referencia de fragmento de contenido](assets/rich-text/insert-contentfragment.png)
 
-La captura de pantalla de arriba representa otro fragmento de contenido, la Guía Ultimate para los Parques de Skate LA, insertándolo en el campo multilínea. Los tipos de fragmentos de contenido que se pueden insertar en el campo están controlados por la variable **Modelos de fragmento de contenido permitidos** en el [Tipo de datos de varias líneas](#multi-line-data-type) en el Modelo de fragmento de contenido.
+La captura de pantalla de arriba representa otro fragmento de contenido, la Guía Ultimate para los Parques de Skate LA, insertándolo en el campo multilínea. Los tipos de fragmentos de contenido que se pueden insertar en el campo están controlados por la variable **Modelos de fragmento de contenido permitidos** en el [tipo de datos multilínea](#multi-line-data-type) en el Modelo de fragmento de contenido.
 
 ## Consultar referencias en línea con GraphQL
 
-La API de GraphQL permite a los desarrolladores crear una consulta que incluya propiedades adicionales sobre cualquier referencia insertada en un campo de varias líneas. La respuesta JSON incluye una `_references` objeto que enumera estas propiedades adicionales. La respuesta JSON proporciona a los desarrolladores control total sobre cómo procesar las referencias o los vínculos en lugar de tener que lidiar con un HTML de opinión.
+La API de GraphQL permite a los desarrolladores crear una consulta que incluya propiedades adicionales sobre cualquier referencia insertada en un campo multilínea. La respuesta JSON incluye una `_references` objeto que enumera estas propiedades adicionales. La respuesta JSON proporciona a los desarrolladores control total sobre cómo procesar las referencias o los vínculos en lugar de tener que lidiar con un HTML de opinión.
 
 Por ejemplo, puede que desee:
 
@@ -363,11 +363,11 @@ Por ejemplo, puede que desee:
 
 Utilice la variable `json` tipo de devolución e incluya la variable `_references` al crear una consulta de GraphQL:
 
-**Consulta de GraphQL:**
+**Consulta persistente de GraphQL:**
 
 ```graphql
-{
-  articleByPath(_path: "/content/dam/wknd/en/magazine/sample-article")
+query ($path: String!) {
+  articleByPath(_path: $path)
   {
     item {
       _path
@@ -540,7 +540,7 @@ Puede encontrar un ejemplo completo de cómo escribir un procesador de referenci
 
 El vídeo anterior muestra un ejemplo completo:
 
-1. Actualización del campo de texto Multi line de un Modelo de fragmento de contenido para permitir referencias de fragmento
-1. Uso del editor de fragmentos de contenido para incluir una imagen y hacer referencia a otro fragmento en un campo de texto de varias líneas.
+1. Actualización del campo de texto multilínea de un modelo de fragmento de contenido para permitir referencias de fragmento
+1. Uso del editor de fragmentos de contenido para incluir una imagen y hacer referencia a otro fragmento en un campo de texto multilínea.
 1. Creación de una consulta de GraphQL que incluya la respuesta de texto multilínea como JSON y cualquier `_references` se utiliza.
 1. Escribir una SPA React que muestre las referencias en línea de la respuesta de texto enriquecido.
