@@ -9,9 +9,9 @@ level: Intermediate
 kt: 9351
 thumbnail: KT-9351.jpeg
 exl-id: 311cd70f-60d5-4c1d-9dc0-4dcd51cad9c7
-source-git-commit: a18bea7986062ff9cb731d794187760ff6e0339f
+source-git-commit: e9aeb54f0e2b52ad2d1cc914820bd6e232e509a0
 workflow-type: tm+mt
-source-wordcount: '1238'
+source-wordcount: '1146'
 ht-degree: 1%
 
 ---
@@ -185,15 +185,7 @@ Las solicitudes HTTP/HTTPS de AEM en puertos estándar (80/443) están permitida
 
 ### HTTP/HTTPS
 
-Al crear conexiones HTTP/HTTPS desde AEM, para obtener una dirección IP de salida dedicada, la conexión debe realizarse mediante hosts y puertos especiales, proporcionados mediante marcadores de posición.
-
-AEM proporciona dos conjuntos de variables especiales del sistema Java™ que se asignan a AEM proxies HTTP/HTTPS.
-
-| Nombre de variable | Uso | Código Java™ | Configuración de OSGi | Configuración del servidor web mod_proxy de Apache | | - | - | - | - | - | | `AEM_HTTP_PROXY_HOST` | Host proxy para conexiones HTTP | `System.getenv("AEM_HTTP_PROXY_HOST")` | `$[env:AEM_HTTP_PROXY_HOST]` | `${AEM_HTTP_PROXY_HOST}` | | `AEM_HTTP_PROXY_PORT` | Puerto proxy para conexiones HTTP | `System.getenv("AEM_HTTP_PROXY_PORT")` | `$[env:AEM_HTTP_PROXY_PORT]` |  `${AEM_HTTP_PROXY_PORT}` | | `AEM_HTTPS_PROXY_HOST` | Host proxy para conexiones HTTPS | `System.getenv("AEM_HTTPS_PROXY_HOST")` | `$[env:AEM_HTTPS_PROXY_HOST]` | `${AEM_HTTPS_PROXY_HOST}` | | `AEM_HTTPS_PROXY_PORT` | Puerto proxy para conexiones HTTPS | `System.getenv("AEM_HTTPS_PROXY_PORT")` | `$[env:AEM_HTTPS_PROXY_PORT]` | `${AEM_HTTPS_PROXY_PORT}` |
-
-Las solicitudes a los servicios externos HTTP/HTTPS deben realizarse configurando la configuración proxy del cliente HTTP Java™ mediante AEM valores de puertos/hosts proxy.
-
-Al realizar llamadas HTTP/HTTPS a servicios externos en cualquier puerto, no se corresponde con `portForwards` debe definirse mediante la API de Cloud Manager `enableEnvironmentAdvancedNetworkingConfiguration` , ya que las &quot;reglas&quot; de reenvío de puertos se definen &quot;en código&quot;.
+Al crear conexiones HTTP/HTTPS desde AEM, al utilizar direcciones IP de salida dedicadas, las conexiones HTTP/HTTPS se procesan automáticamente como proxy AEM utilizando la dirección IP de salida dedicada. No se requiere código o configuración adicional para admitir conexiones HTTP/HTTPS.
 
 #### Ejemplos de código
 
