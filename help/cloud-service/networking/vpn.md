@@ -9,9 +9,9 @@ level: Intermediate
 kt: 9352
 thumbnail: KT-9352.jpeg
 exl-id: 74cca740-bf5e-4cbd-9660-b0579301a3b4
-source-git-commit: a18bea7986062ff9cb731d794187760ff6e0339f
+source-git-commit: 6958b1f82c609af2998d94fd868e67bf1578e848
 workflow-type: tm+mt
-source-wordcount: '1370'
+source-wordcount: '1264'
 ht-degree: 1%
 
 ---
@@ -229,15 +229,7 @@ Las solicitudes HTTP/HTTPS de AEM en puertos estándar (80/443) están permitida
 
 ### HTTP/HTTPS
 
-Al crear conexiones HTTP/HTTPS desde AEM, para obtener una dirección IP de salida dedicada o ser enrutada a través de la VPN, la conexión debe realizarse a través de puertos y host especiales, proporcionados a través de marcadores de posición.
-
-AEM proporciona dos conjuntos de variables especiales del sistema Java™ que se asignan a AEM proxies HTTP/HTTPS.
-
-| Nombre de variable | Uso | Código Java™ | Configuración de OSGi | Configuración del servidor web mod_proxy de Apache | | - | - | - | - | - | | `AEM_HTTP_PROXY_HOST` | Host proxy para conexiones HTTP | `System.getenv("AEM_HTTP_PROXY_HOST")` | `$[env:AEM_HTTP_PROXY_HOST]` | `${AEM_HTTP_PROXY_HOST}` | | `AEM_HTTP_PROXY_PORT` | Puerto proxy para conexiones HTTP | `System.getenv("AEM_HTTP_PROXY_PORT")` | `$[env:AEM_HTTP_PROXY_PORT]` |  `${AEM_HTTP_PROXY_PORT}` | | `AEM_HTTPS_PROXY_HOST` | Host proxy para conexiones HTTPS | `System.getenv("AEM_HTTPS_PROXY_HOST")` | `$[env:AEM_HTTPS_PROXY_HOST]` | `${AEM_HTTPS_PROXY_HOST}` | | `AEM_HTTPS_PROXY_PORT` | Puerto proxy para conexiones HTTPS | `System.getenv("AEM_HTTPS_PROXY_PORT")` | `$[env:AEM_HTTPS_PROXY_PORT]` | `${AEM_HTTPS_PROXY_PORT}` |
-
-Las solicitudes a los servicios externos HTTP/HTTPS deben realizarse configurando la configuración proxy del cliente HTTP Java™ a través de los valores de puertos/hosts proxy AEM.
-
-Al realizar llamadas HTTP/HTTPS a servicios externos en cualquier puerto, no se corresponde con `portForwards` debe definirse mediante la API de Cloud Manager `__enableEnvironmentAdvancedNetworkingConfiguration` , ya que las &quot;reglas&quot; de reenvío de puertos se definen &quot;en código&quot;.
+Al crear conexiones HTTP/HTTPS desde AEM, al utilizar VPN, las conexiones HTTP/HTTPS se procesan automáticamente como proxy fuera de AEM. No se requiere código o configuración adicional para admitir conexiones HTTP/HTTPS.
 
 >[!TIP]
 >
