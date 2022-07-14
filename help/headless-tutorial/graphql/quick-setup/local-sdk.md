@@ -10,10 +10,10 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: d2da6efa-1f77-4391-adda-e3180c42addc
-source-git-commit: 0dae6243f2a30147bed7079ad06144ad35b781d8
+source-git-commit: a49e56b6f47e477132a9eee128e62fe5a415b262
 workflow-type: tm+mt
 source-wordcount: '1768'
-ht-degree: 2%
+ht-degree: 9%
 
 ---
 
@@ -38,7 +38,7 @@ Esta configuración utiliza la variable [SDK as a Cloud Service AEM](https://exp
 >
 > También es posible seguir el tutorial con un [AEM entorno as a Cloud Service](./cloud-service.md). Se incluyen notas adicionales sobre el uso de un entorno de Cloud en todo el tutorial.
 
-1. Vaya a la **[Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es-ES/aemcloud.html)** > **AEM as a Cloud Service** y descargue la última versión de **SDK AEM**.
+1. Vaya a la **[Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html)** > **AEM as a Cloud Service** y descargue la última versión de **SDK AEM**.
 
    ![Portal de distribución de software](assets/setup/software-distribution-portal-download.png)
 
@@ -74,7 +74,7 @@ El sitio de referencia WKND incluye configuraciones necesarias para exponer un [
    >
    > Asegúrese de descargar la versión estándar compatible con AEM as a Cloud Service y **not** el `classic` versión.
 
-1. En el **Inicio de AEM** vaya a **Herramientas** > **Implementación** > **Paquetes**.
+1. En el menú **Inicio de AEM** vaya a **Herramientas** > **Implementación** > **Paquetes**.
 
    ![Navegar a paquetes](assets/setup/navigate-to-packages.png)
 
@@ -128,7 +128,7 @@ Uno de los objetivos de este tutorial es mostrar cómo utilizar AEM contenido de
 
    >[!NOTE]
    >
-   > En un escenario de producción, la aplicación se conectará a un AEM **Publicación** entorno. Esto se explica con más detalle en la sección [Implementación de producción](../multi-step/production-deployment.md) capítulo.
+   > En un escenario de producción, la aplicación se conectará a un AEM **Publicación** entorno. Esto se explica con más detalle en la sección _Implementación de producción_ para obtener más información.
 
 1. Vaya a `aem-guides-wknd-graphql/react-app` carpeta. Instale e inicie la aplicación:
 
@@ -177,15 +177,15 @@ Ahora que la aplicación React se está ejecutando, actualice el contenido de AE
 
 [GraphiQL](https://github.com/graphql/graphiql) es una herramienta de desarrollo y solo se necesita en entornos de nivel inferior como un desarrollo o una instancia local. El IDE de GraphiQL le permite probar y refinar rápidamente las consultas y los datos devueltos. GraphiQL también proporciona fácil acceso a la documentación, lo que facilita la comprensión de los métodos disponibles.
 
-1. Vaya a la **[Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)** > **AEM as a Cloud Service**.
-1. Busque &quot;GraphiQL&quot; (asegúrese de incluir la variable **i** en **GraphiQL**.
-1. Descargue la última **Paquete de contenido de GraphiQL v.x.x.x**
+1. Vaya a **[Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)** > **AEM as a Cloud Service**.
+1. Busque “GraphiQL” (asegúrese de incluir la **i** de **GraphiQL**.
+1. Descargue el último **Paquete de contenido de GraphiQL v.x.x.x**
 
    ![Descargar paquete de GraphiQL](../multi-step/assets/explore-graphql-api/software-distribution.png)
 
    El archivo zip es un paquete AEM que se puede instalar directamente.
 
-1. En el **Inicio de AEM** vaya a **Herramientas** > **Implementación** > **Paquetes**.
+1. En el menú **Inicio de AEM** vaya a **Herramientas** > **Implementación** > **Paquetes**.
 1. Haga clic en **Cargar paquete** y elija el paquete descargado en el paso anterior. Haga clic en **Instalar** para instalar el paquete.
 
    ![Instalación del paquete GraphiQL](../multi-step/assets/explore-graphql-api/install-graphiql-package.png)
@@ -217,7 +217,7 @@ Para ver la configuración implementada:
 
    >[!NOTE]
    >
-   > La consola web solo está disponible en el SDK. En un entorno as a Cloud Service AEM, esta información se puede ver mediante [Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html).
+   > La consola web solo está disponible en el SDK. En un entorno as a Cloud Service AEM, esta información se puede ver mediante [Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=es).
 
 1. En el menú superior, haga clic en **OSGI** > **Configuración** para que aparezca todo el [Configuraciones de OSGi](http://localhost:4502/system/console/configMgr).
 1. Desplácese hacia abajo por la página **Uso compartido de recursos de origen cruzado de Adobe Granite**.

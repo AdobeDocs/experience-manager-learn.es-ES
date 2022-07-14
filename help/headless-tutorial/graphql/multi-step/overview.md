@@ -10,10 +10,10 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 41e15a2c-758b-4e7d-9d23-ef671c1dc155
-source-git-commit: 0dae6243f2a30147bed7079ad06144ad35b781d8
+source-git-commit: a49e56b6f47e477132a9eee128e62fe5a415b262
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 0%
+source-wordcount: '455'
+ht-degree: 4%
 
 ---
 
@@ -25,19 +25,61 @@ Este tutorial explora cómo se pueden utilizar AEM API de GraphQL y capacidades 
 
 Este tutorial tratará los siguientes temas:
 
-* Crear modelos de fragmento de contenido para modelar colaboradores en AEM
-* Creación de fragmentos de contenido de colaborador mediante el modelo de fragmento de contenido recién creado
+* Crear una nueva configuración de proyecto
+* Crear nuevos modelos de fragmento de contenido para modelar datos
+* Cree nuevos fragmentos de contenido basados en los modelos creados anteriormente.
 * Explore cómo se pueden consultar los fragmentos de contenido en AEM mediante la herramienta de desarrollo integrada GraphiQL.
-* Consumir AEM API de GraphQL de una aplicación WKND GraphQL React de ejemplo
-* Realizar modelado de datos avanzado con referencias de fragmento
+* Para almacenar o mantener las consultas de GraphQL en AEM
+* Consumir consultas de GraphQL persistentes desde una aplicación React de muestra
+
+
+## Requisitos previos {#prerequisites}
+
+Se requieren las siguientes opciones para seguir este tutorial:
+
+* Capacidades básicas de HTML y JavaScript
+* Las siguientes herramientas deben instalarse localmente:
+   * [Node.js v10+](https://nodejs.org/en/)
+   * [npm 6+](https://www.npmjs.com/)
+   * [Git](https://git-scm.com/)
+   * Un IDE (por ejemplo, [Código Microsoft® Visual Studio](https://code.visualstudio.com/))
+
+### Entorno AEM
+
+Se requiere un entorno de Adobe Experience Manager para completar este tutorial. Se puede utilizar cualquiera de las siguientes opciones (las capturas de pantalla se registran desde un entorno as a Cloud Service AEM):
+
+* AEM entorno as a Cloud Service con:
+   * [Acceso a AEM as a Cloud Service y Cloud Manager](/help/cloud-service/accessing/overview.md)
+      * **Administrador AEM** acceso a AEM as a Cloud Service
+      * **Cloud Manager: desarrollador** acceso a Cloud Manager
+* [SDK de inicio rápido as a Cloud Service AEM local](/help/cloud-service/local-development-environment/aem-runtime.md).
+* [AEM 6.5.13+](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=es)
+
+### Instalar contenido de ejemplo {#install-sample-content}
+
+Puede resultar útil que el contenido de muestra ya esté disponible en el entorno de AEM para utilizarlo como referencia.
+
+1. Vaya a la [AEM proyecto compartido WKND](https://github.com/adobe/aem-guides-wknd-shared/releases).
+1. Descargue el recurso más reciente: `aem-guides-wknd-shared.ui.content-x.x.x.zip`.
+1. Inicie sesión en el entorno de creación de AEM que se utilizará para el tutorial.
+1. En la pantalla de inicio de AEM, vaya a **Herramientas** > **Implementación** > **Paquetes**:
+
+   ![Navegar por el gestor de paquetes](assets/overview/navigate-package-manager.png)
+1. Toque **Cargar paquete** y seleccione `aem-guides-wknd-shared.ui.content-x.x.x.zip` archivo descargado anteriormente. Toque **Ok** para cargar.
+1. Una vez que el paquete haya terminado de cargarse, pulse **Instalar** para instalar el contenido.
+
+   ![Instalación del paquete de contenido de ejemplo](assets/overview/install-sample-content-package.png)
+
+1. Se instalarán fragmentos de contenido de muestra, modelos de fragmentos de contenido, imágenes y mucho más para la ficticia [Marca WKND](https://wknd.site/). Se hará referencia al contenido de muestra más adelante en el tutorial.
 
 ## ¡Empecemos!
 
-1. Configuración de un entorno de desarrollo mediante [AEM as a Cloud Service](../quick-setup/cloud-service.md) o [el SDK local](../quick-setup/local-sdk.md).
-2. Inicie el tutorial con [Definición de modelos de fragmento de contenido](content-fragment-models.md).
+1. Inicie el tutorial con [Definición de modelos de fragmento de contenido](content-fragment-models.md).
 
 ## Proyecto de GitHub
 
 El código fuente y los paquetes de contenido están disponibles en la [Guías de AEM: proyecto de GitHub de WKND GraphQL](https://github.com/adobe/aem-guides-wknd-graphql).
 
 Si encuentra algún problema con el tutorial o el código, deje un [Problema de GitHub](https://github.com/adobe/aem-guides-wknd-graphql/issues).
+
+Puede encontrar fragmentos de contenido de muestra, modelos y consultas en la [AEM proyecto compartido WKND](https://github.com/adobe/aem-guides-wknd-shared)

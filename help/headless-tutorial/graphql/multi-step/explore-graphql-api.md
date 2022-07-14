@@ -10,10 +10,10 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 508b0211-fa21-4a73-b8b4-c6c34e3ba696
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: a49e56b6f47e477132a9eee128e62fe5a415b262
 workflow-type: tm+mt
-source-wordcount: '1133'
-ht-degree: 1%
+source-wordcount: '1527'
+ht-degree: 7%
 
 ---
 
@@ -25,273 +25,365 @@ En este capítulo, exploraremos algunas consultas comunes de GraphQL para recopi
 
 ## Requisitos previos {#prerequisites}
 
-Este es un tutorial en varias partes y se da por hecho que se han completado los pasos descritos en [Creación de fragmentos de contenido](./author-content-fragments.md).
+Este es un tutorial de varias partes y se da por hecho que los pasos descritos en la sección [Creación de fragmentos de contenido](./author-content-fragments.md) se han completado.
 
 ## Objetivos {#objectives}
 
 * Aprenda a utilizar la herramienta GraphiQL para construir una consulta utilizando la sintaxis GraphQL.
 * Obtenga información sobre cómo consultar una lista de fragmentos de contenido y un solo fragmento de contenido.
 * Obtenga información sobre cómo filtrar y solicitar atributos de datos específicos.
-* Obtenga información sobre cómo consultar una variación de un fragmento de contenido.
 * Aprenda a unir una consulta de varios modelos de fragmento de contenido
+* Obtenga información sobre cómo mantener la consulta de GraphQL.
 
-## Instalación de la herramienta GraphiQL {#install-graphiql}
+## Habilitación del punto de conexión de GraphQL {#enable-graphql-endpoint}
 
-El IDE de GraphiQL es una herramienta de desarrollo que solo se necesita en entornos de nivel inferior como un desarrollo o una instancia local. Por lo tanto, no se incluye en el proyecto AEM, sino que se presenta como un paquete independiente que se puede instalar según sea necesario.
+Se necesita configurar un extremo de GraphQL para habilitar las consultas de API de GraphQL para los fragmentos de contenido.
 
-1. Vaya al **[Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/es-ES/aemcloud.html)** > **AEM como Cloud Service**.
-1. Busque &quot;GraphiQL&quot; (asegúrese de incluir el **i** en **GraphiQL**.
-1. Descargue el paquete de contenido más reciente de **GraphiQL v.x.x.x**
+1. Desde la pantalla Inicio de AEM vaya a **Herramientas** > **General** > **GraphQL**.
 
-   ![Descargar paquete de GraphiQL](assets/explore-graphql-api/software-distribution.png)
+   ![Vaya al extremo GraphQL](assets/explore-graphql-api/navigate-to-graphql-endpoint.png)
 
-   El archivo zip es un paquete AEM que se puede instalar directamente.
+1. Toque **Crear** en la esquina superior derecha. En el cuadro de diálogo, introduzca los siguientes valores:
 
-1. En el menú **Inicio de AEM** vaya a **Herramientas** > **Implementación** > **Paquetes**.
-1. Haga clic en **Cargar paquete** y elija el paquete descargado en el paso anterior. Haga clic en **Install** para instalar el paquete.
+   * Nombre*: **My Project Endpoint**.
+   * Utilice el esquema GraphQL proporcionado por ... *: **Mi proyecto**
 
-   ![Instalación del paquete GraphiQL](assets/explore-graphql-api/install-graphiql-package.png)
+   ![Crear extremo de GraphQL](assets/explore-graphql-api/create-graphql-endpoint.png)
 
-## Consultar una lista de fragmentos de contenido {#query-list-cf}
+   Toque **Crear** para guardar el extremo.
+
+   Los extremos de GraphQL creados en función de una configuración de proyecto solo habilitarán consultas con modelos que pertenezcan a ese proyecto. En este caso, las únicas consultas con la variable **Persona** y **Equipo** se pueden usar modelos.
+
+   >[!NOTE]
+   >
+   > También se puede crear un punto final global que habilite consultas con modelos de diferentes proyectos. Por ejemplo, si desea combinar una consulta que involucre a los modelos en la variable **WKND compartido** y en el **Mi proyecto**. Debe usarse con precaución y solo si es necesario, ya que potencialmente abre el entorno a vulnerabilidades de seguridad adicionales.
+
+1. Ahora debería ver dos extremos de GraphQL habilitados en su entorno (suponiendo que haya instalado el contenido compartido de WKND).
+
+   ![Puntos finales de graphql habilitados](assets/explore-graphql-api/enabled-graphql-endpoints.png)
+
+## Uso del IDE de GraphiQL
+
+La variable [Herramienta GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) permite a los desarrolladores crear y probar consultas con contenido del entorno de AEM actual. La herramienta GraphiQL también permite a los usuarios **persist** o guardar consultas para utilizarlas en aplicaciones cliente en una configuración de producción.
+
+A continuación, explore la potencia de AEM API de GraphQL mediante el IDE integrado de GraphiQL.
+
+1. Desde la pantalla Inicio de AEM vaya a **Herramientas** > **General** > **Editor de consultas de GraphQL**.
+
+   ![Vaya al IDE de GraphiQL](assets/explore-graphql-api/navigate-graphql-query-editor.png)
+
+   >[!NOTE]
+   >
+   > Para versiones anteriores de AEM, es posible que GraphiQL IDE no esté integrado. Se puede instalar manualmente después de estos [instrucciones](#install-graphiql).
+
+1. En la esquina superior derecha, establezca la variable **Punto final** a **My Project Endpoint**.
+
+   ![Establecer extremo de GraphQL](assets/explore-graphql-api/set-my-project-endpoint.png)
+
+   Esto abarcará todas las consultas a los modelos creados en la variable **Mi proyecto** proyecto. Tenga en cuenta que también hay un punto final para **WKND compartido**.
+
+### Consultar una lista de fragmentos de contenido {#query-list-cf}
 
 Un requisito habitual es consultar varios fragmentos de contenido.
 
-1. Vaya al IDE de GraphiQL en [http://localhost:4502/content/graphiql.html](http://localhost:4502/content/graphiql.html).
-1. Pegue la siguiente consulta en el panel izquierdo (debajo de la lista de comentarios):
+1. Pegue la siguiente consulta en el panel principal (reemplace la lista de comentarios):
 
    ```graphql
-   {
-     contributorList {
+   query allTeams {
+     teamList {
        items {
-           _path
-         }
+         _path
+         title
+       }
      }
-   }
+   } 
    ```
 
-1. Pulse el botón **Play** en el menú superior para ejecutar la consulta. Debería ver los resultados de los fragmentos de contenido de los colaboradores del capítulo anterior:
+1. Pulse el botón **Play** en el menú superior para ejecutar la consulta. Debería ver los resultados de los fragmentos de contenido del capítulo anterior:
 
-   ![Resultados de la lista de colaboradores](assets/explore-graphql-api/contributorlist-results.png)
+   ![Resultados de la lista de personas](assets/explore-graphql-api/all-teams-list.png)
 
-1. Sitúe el cursor debajo del texto `_path` e introduzca **CTRL+Espacio** en las sugerencias de código de déclencheur. Agregue `fullName` y `occupation` a la consulta.
+1. Coloque el cursor debajo de la variable `title` texto e introduzca **CTRL+Espacio** a sugerencias de código de déclencheur. Agregar `shortname` y `description` a la consulta.
 
    ![Actualizar consulta con coincidencia de código](assets/explore-graphql-api/update-query-codehinting.png)
 
-1. Vuelva a ejecutar la consulta presionando el botón **Play** y debería ver los resultados que incluyen las propiedades adicionales `fullName` y `occupation`.
+1. Vuelva a ejecutar la consulta presionando el botón **Play** y debería ver los resultados que incluyen las propiedades adicionales de `shortname` y `description`.
 
-   ![Nombres completos y resultados de ocupación](assets/explore-graphql-api/updated-query-fullname-occupation.png)
+   ![resultados de nombre corto y descripción](assets/explore-graphql-api/updated-query-shortname-description.png)
 
-   `fullName` y  `occupation` son propiedades simples. Recuerde del capítulo [Definición de modelos de fragmento de contenido](./content-fragment-models.md) que `fullName` y `occupation` son los valores utilizados al definir el **Nombre de propiedad** de los campos respectivos.
+   La variable `shortname` es una propiedad sencilla y `description` es un campo de texto multilínea y la API de GraphQL nos permite elegir una variedad de formatos para los resultados como `html`, `markdown`, `json` o `plaintext`.
 
-1. `pictureReference` y  `biographyText` representan campos más complejos. Actualice la consulta con lo siguiente para devolver datos sobre los campos `pictureReference` y `biographyText`.
+### Consulta de fragmentos anidados
+
+A continuación, experimente con consultas para recuperar fragmentos anidados, recuerde que la variable **Equipo** el modelo hace referencia a la variable **Persona** modelo.
+
+1. Actualice la consulta para incluir el `teamMembers` propiedad. Recuerde que se trata de un **Referencia de fragmento** al Modelo de persona. Se pueden devolver propiedades del modelo Persona :
 
    ```graphql
-   {
-   contributorList {
-       items {
-         _path
-         fullName
-         occupation
-         biographyText {
-           html
-         }
-         pictureReference {
-           ... on ImageRef {
+   query allTeams {
+       teamList {
+           items {
                _path
-               width
-               height
+               title
+               shortName
+               description {
+                   plaintext
+               }
+               teamMembers {
+                   fullName
+                   occupation
                }
            }
        }
-     }
    }
    ```
 
-   `biographyText` es un campo de texto multilínea y la API de GraphQL nos permite elegir una variedad de formatos para los resultados como  `html`,  `markdown`,  `json` o  `plaintext`.
+   Respuesta JSON:
 
-   `pictureReference` es una referencia de contenido y se espera que sea una imagen, por lo que se utiliza un  `ImageRef` objeto integrado. Esto nos permite solicitar datos adicionales sobre la imagen a la que se hace referencia, como `width` y `height`.
-
-1. A continuación, experimente consultando una lista de **aventuras**. Ejecute la siguiente consulta:
-
-   ```graphql
+   ```json
    {
-     adventureList {
-       items {
-         adventureTitle
-         adventureType
-         adventurePrimaryImage {
-           ...on ImageRef {
-             _path
-             mimeType
+       "data": {
+           "teamList": {
+           "items": [
+               {
+               "_path": "/content/dam/my-project/en/team-alpha",
+               "title": "Team Alpha",
+               "shortName": "team-alpha",
+               "description": {
+                   "plaintext": "This is a description of Team Alpha!"
+               },
+               "teamMembers": [
+                   {
+                   "fullName": "John Doe",
+                   "occupation": [
+                       "Artist",
+                       "Influencer"
+                   ]
+                   },
+                   {
+                   "fullName": "Alison Smith",
+                   "occupation": [
+                       "Photographer"
+                   ]
+                   }
+                 ]
            }
-         }
+           ]
+           }
        }
-     }
    }
    ```
 
-   Debería ver una lista de **Advertencias** devueltas. No dude en experimentar añadiendo campos adicionales a la consulta.
+   La capacidad de realizar consultas con fragmentos anidados es una ventaja de la API AEM GraphQL. En este ejemplo sencillo, el anidado tiene solo dos niveles de profundidad. Sin embargo, es posible anidar fragmentos aún más. Por ejemplo, si había un **Dirección** modelo asociado a un **Persona** sería posible devolver datos de los tres modelos en una sola consulta.
 
-## Filtrar una lista de fragmentos de contenido {#filter-list-cf}
+### Filtrar una lista de fragmentos de contenido {#filter-list-cf}
 
 A continuación, veamos cómo es posible filtrar los resultados por un subconjunto de fragmentos de contenido basado en un valor de propiedad.
 
 1. Introduzca la siguiente consulta en la interfaz de usuario de GraphiQL:
 
    ```graphql
-   {
-   contributorList(filter: {
-     occupation: {
-       _expressions: {
-         value: "Photographer"
+   query personByName($name:String!){
+     personList(
+       filter:{
+         fullName:{
+           _expressions:[{
+             value:$name
+             _operator:EQUALS
+           }]
          }
        }
-     }) {
-       items {
+     ){
+       items{
          _path
          fullName
          occupation
        }
      }
-   }
+   }  
    ```
 
-   La consulta anterior realiza una búsqueda con todos los colaboradores del sistema. El filtro añadido al principio de la consulta realizará una comparación en el campo `occupation` y en la cadena &quot;**Photograph**&quot;.
+   La consulta anterior realiza una búsqueda con todos los fragmentos de persona del sistema. El filtro añadido al principio de la consulta realizará una comparación en la variable `name` y la cadena variable `$name`.
 
-1. Ejecute la consulta, se espera que solo se devuelva un único **colaborador**.
-1. Introduzca la siguiente consulta para consultar una lista de **Adventures** donde `adventureActivity` es **no** igual a **&quot;Surfing&quot;**:
+1. En el **Variables de consulta** introduzca lo siguiente:
+
+   ```json
+   {"name": "John Doe"}
+   ```
+
+1. Ejecute la consulta, se espera que solo **Personas** se devuelve con el valor &quot;John Doe&quot;.
+
+   ![Utilizar variables de consulta para filtrar](assets/explore-graphql-api/using-query-variables-filter.png)
+
+   Hay muchas otras opciones para filtrar y crear consultas complejas; consulte [Aprender a utilizar GraphQL con AEM: contenido de muestra y consultas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html?lang=es).
+
+1. Mejorar la consulta anterior para recuperar la imagen del perfil
 
    ```graphql
-   {
-     adventureList(filter: {
-       adventureActivity: {
-           _expressions: {
-               _operator: EQUALS_NOT
-               value: "Surfing"
+   query personByName($name:String!){
+     personList(
+       filter:{
+         fullName:{
+           _expressions:[{
+             value:$name
+             _operator:EQUALS
+           }]
+         }
+       }
+     ){
+       items{  
+         _path
+         fullName
+         occupation
+         profilePicture{
+           ... on ImageRef{
+             _path
+             _authorUrl
+             _publishUrl
+             height
+             width
+   
+           }
+         }
+       }
+     }
+   } 
+   ```
+
+   La variable `profilePicture` es una referencia de contenido y se espera que sea una imagen, por lo tanto integrada `ImageRef` se utiliza. Esto nos permite solicitar datos adicionales sobre la imagen que es referencia, como el `width` y `height`.
+
+### Consultar un solo fragmento de contenido {#query-single-cf}
+
+También es posible consultar directamente un solo fragmento de contenido. El contenido de AEM se almacena de forma jerárquica y el identificador único de un fragmento se basa en la ruta del fragmento.
+
+1. Introduzca la siguiente consulta en el editor de GraphiQL:
+
+   ```graphql
+   query personByPath($path: String!) {
+       personByPath(_path: $path) {
+           item {
+           fullName
+           occupation
            }
        }
-   }) {
-       items {
-       _path
-       adventureTitle
-       adventureActivity
-       }
-     }
    }
    ```
 
-1. Ejecute la consulta e inspeccione los resultados. Observe que ninguno de los resultados incluye un `adventureType` igual a **&quot;Surfing&quot;**.
+1. Introduzca lo siguiente para el **Variables de consulta**:
 
-Hay muchas otras opciones para filtrar y crear consultas complejas; los ejemplos anteriores son solo algunos ejemplos.
+   ```json
+   {"path": "/content/dam/my-project/en/alison-smith"}
+   ```
 
-## Consultar un solo fragmento de contenido {#query-single-cf}
+1. Ejecute la consulta y observe que se devuelve el resultado único.
 
-También es posible consultar directamente un solo fragmento de contenido. El contenido de AEM se almacena de forma jerárquica y el identificador único de un fragmento se basa en la ruta del fragmento. Si el objetivo es devolver datos sobre un solo fragmento, se prefiere utilizar la ruta y consultar el modelo directamente. El uso de esta sintaxis significa que la complejidad de la consulta será muy baja y generará un resultado más rápido.
+## Conservar consultas {#persist-queries}
 
-1. Introduzca la siguiente consulta en el editor de GraphiQL:
+Una vez que un desarrollador esté satisfecho con la consulta y los datos devueltos, el siguiente paso es almacenar o mantener la consulta para AEM. [Consultas persistentes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html) es el mecanismo preferido para exponer la API de GraphQL a aplicaciones cliente. Una vez que se ha mantenido una consulta, esta se puede solicitar utilizando una solicitud de GET y almacenar en caché en las capas de Dispatcher y CDN. El rendimiento de las consultas persistentes es mucho mejor. Además de las ventajas de rendimiento, las consultas persistentes garantizan que los datos adicionales no se expongan accidentalmente a las aplicaciones del cliente. Más detalles sobre [Las consultas persistentes se pueden encontrar aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html).
+
+A continuación, persista en dos consultas simples, que se utilizarán en el capítulo siguiente.
+
+1. En el IDE de GraphiQL, introduzca la siguiente consulta:
 
    ```graphql
-   {
-    contributorByPath(_path: "/content/dam/wknd/en/contributors/stacey-roswells") {
-       item {
+   query allTeams {
+       teamList {
+           items {
+               _path
+               title
+               shortName
+               description {
+                   plaintext
+               }
+               teamMembers {
+                   fullName
+                   occupation
+               }
+           }
+       }
+   }
+   ```
+
+   Compruebe que la consulta funcione.
+
+1. Siguiente toque **Guardar como** y escriba `all-teams` como el **Nombre de consulta**.
+
+   La consulta debería mostrarse en **Consultas persistentes** en el carril izquierdo.
+
+   ![Consulta persistente de todos los equipos](assets/explore-graphql-api/all-teams-persisted-query.png)
+1. A continuación, pulse las elipses **...** junto a la consulta persistente y pulse **Copiar URL** para copiar la ruta en el portapapeles.
+
+   ![Copiar URL de consulta persistente](assets/explore-graphql-api/copy-persistent-query-url.png)
+
+1. Abra una nueva pestaña y pegue la ruta copiada en el explorador:
+
+   ```plain
+   https://$YOUR-AEMasCS-INSTANCEID$.adobeaemcloud.com/graphql/execute.json/my-project/all-teams
+   ```
+
+   Debería ser similar a la ruta anterior. Debería ver los resultados JSON de la consulta devuelta.
+
+   Desglosar la dirección URL:
+
+   | Nombre | Descripción |
+   | ---------|---------- |
+   | `/graphql/execute.json` | Punto final de consulta persistente |
+   | `/my-project` | Configuración del proyecto para `/conf/my-project` |
+   | `/all-teams` | Nombre de la consulta persistente |
+
+1. Vuelva al IDE de GraphiQL y utilice el botón más **+** para continuar con la NUEVA consulta
+
+   ```graphql
+   query personByName($name: String!) {
+     personList(
+       filter: {
+         fullName:{
+           _expressions: [{
+             value: $name
+             _operator:EQUALS
+           }]
+         }
+       }){
+       items {
          _path
          fullName
+         occupation
          biographyText {
-           html
+           json
+         }
+         profilePicture {
+           ... on ImageRef {
+             _path
+             _authorUrl
+             _publishUrl
+             width
+             height
+           }
          }
        }
      }
    }
    ```
 
-1. Ejecute la consulta y observe que se devuelve el resultado único del fragmento **Stacey Roswells**.
+1. Guarde la consulta como: **person-by-name**.
+1. Debe tener 2 consultas persistentes guardadas:
 
-   En el ejercicio anterior, se utilizaba un filtro para reducir la lista de resultados. Puede utilizar una sintaxis similar para filtrar por ruta, aunque la sintaxis anterior es preferible por motivos de rendimiento.
+   ![Consultas persistentes finales](assets/explore-graphql-api/final-persisted-queries.png)
 
-1. Recuerde en el capítulo [Creación de fragmentos de contenido](./author-content-fragments.md) que se creó una variación **Resumen** para **Stacey Roswells**. Actualice la consulta para devolver la variación **Summary**:
+## Archivos de solución {#solution-files}
 
-   ```graphql
-   {
-   contributorByPath
-   (
-       _path: "/content/dam/wknd/en/contributors/stacey-roswells"
-       variation: "summary"
-   ) {
-       item {
-         _path
-         fullName
-         biographyText {
-           html
-         }
-       }
-     }
-   }
-   ```
+Descargue el contenido, los modelos y las consultas persistentes creados en los tres últimos capítulos: [tutorial-solution-content.zip](assets/explore-graphql-api/tutorial-solution-content.zip)
 
-   Aunque la variación se denominó **Resumen**, las variaciones se conservan en minúsculas y, por lo tanto, se utiliza `summary`.
+## Explorar consultas persistentes de WKND (opcional) {#explore-wknd-content-fragments}
 
-1. Ejecute la consulta y observe que el campo `biography` contiene un resultado mucho más corto `html`.
+Si [se ha instalado el contenido de muestra WKND Shared](./overview.md#install-sample-content) puede revisar y ejecutar consultas persistentes como aventuras-todas, aventura-por-actividad, aventura-por-ruta, etc.
 
-## Consulta de varios modelos de fragmento de contenido {#query-multiple-models}
+![Consultas persistentes WKND](assets/explore-graphql-api/wknd-persisted-queries.png)
 
-También es posible combinar consultas independientes en una sola consulta. Esto resulta útil para minimizar el número de solicitudes HTTP necesarias para activar la aplicación. Por ejemplo, la vista *Home* de una aplicación puede mostrar contenido basado en **dos** diferentes modelos de fragmento de contenido. En lugar de ejecutar **dos** consultas independientes, podemos combinar las consultas en una sola solicitud.
-
-1. Introduzca la siguiente consulta en el editor de GraphiQL:
-
-   ```graphql
-   {
-     adventureList {
-       items {
-         _path
-         adventureTitle
-       }
-     }
-     contributorList {
-       items {
-         _path
-         fullName
-       }
-     }
-   }
-   ```
-
-1. Ejecute la consulta y observe que el conjunto de resultados contiene datos de **Adventures** y **Contributors**:
-
-```json
-{
-  "data": {
-    "adventureList": {
-      "items": [
-        {
-          "_path": "/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp",
-          "adventureTitle": "Bali Surf Camp"
-        },
-        {
-          "_path": "/content/dam/wknd/en/adventures/beervana-portland/beervana-in-portland",
-          "adventureTitle": "Beervana in Portland"
-        },
-        ...
-      ]
-    },
-    "contributorList": {
-      "items": [
-        {
-          "_path": "/content/dam/wknd/en/contributors/jacob-wester",
-          "fullName": "Jacob Wester"
-        },
-        {
-          "_path": "/content/dam/wknd/en/contributors/stacey-roswells",
-          "fullName": "Stacey Roswells"
-        }
-      ]
-    }
-  }
-}
-```
 
 ## Recursos adicionales
 
-Para ver muchos más ejemplos de consultas de GraphQL, consulte: [Aprender a utilizar GraphQL con AEM: Contenido de muestra y consultas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html).
+Para ver muchos más ejemplos de consultas de GraphQL, consulte: [Aprender a utilizar GraphQL con AEM: contenido de muestra y consultas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html).
 
 ## Felicitaciones! {#congratulations}
 
@@ -299,4 +391,21 @@ Para ver muchos más ejemplos de consultas de GraphQL, consulte: [Aprender a uti
 
 ## Siguientes pasos {#next-steps}
 
-En el capítulo siguiente, [Consulta de AEM desde una aplicación React](./graphql-and-external-app.md), explorará cómo una aplicación externa puede consultar los extremos AEM GraphQL. La aplicación externa modifica la aplicación WKND GraphQL React de ejemplo para añadir consultas GraphQL de filtrado, lo que permite al usuario de la aplicación filtrar aventuras por actividad. También se le introducirá en la gestión de errores básica.
+En el capítulo siguiente, [Generar aplicación React](./graphql-and-react-app.md), explorará cómo una aplicación externa puede consultar AEM extremos de GraphQL y aprovechar estas dos consultas persistentes. También se le introducirá en la gestión de errores básica.
+
+## Instalación de la herramienta GraphiQL (opcional) {#install-graphiql}
+
+Para algunas versiones de AEM la herramienta GraphiQL IDE debe instalarse manualmente. Siga las instrucciones siguientes para instalar manualmente:
+
+1. Vaya a **[Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html)** > **AEM as a Cloud Service**.
+1. Busque “GraphiQL” (asegúrese de incluir la **i** de **GraphiQL**.
+1. Descargue el último **Paquete de contenido de GraphiQL v.x.x.x**
+
+   ![Descargar paquete de GraphiQL](assets/explore-graphql-api/software-distribution.png)
+
+   El archivo zip es un paquete AEM que se puede instalar directamente.
+
+1. En el menú **Inicio de AEM** vaya a **Herramientas** > **Implementación** > **Paquetes**.
+1. Haga clic en **Cargar paquete** y elija el paquete descargado en el paso anterior. Haga clic en **Instalar** para instalar el paquete.
+
+   ![Instalación del paquete GraphiQL](assets/explore-graphql-api/install-graphiql-package.png)
