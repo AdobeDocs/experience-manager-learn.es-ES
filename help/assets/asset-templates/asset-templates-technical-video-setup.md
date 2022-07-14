@@ -5,13 +5,13 @@ version: 6.3, 6.4, 6.5
 topic: Content Management
 role: Developer
 level: Intermediate
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+exl-id: 5b764d86-8ced-46ed-838e-4bd2e75fd64c
+source-git-commit: 6dd7164f5ec045b4cffd7732fd83ad9a91fdd511
 workflow-type: tm+mt
-source-wordcount: '159'
+source-wordcount: '154'
 ht-degree: 0%
 
 ---
-
 
 # Configuración de plantillas de recursos con AEM Assets y InDesign Server{#set-up-asset-templates-with-aem-assets-and-indesign-server}
 
@@ -21,11 +21,11 @@ Las plantillas de recursos permiten a los especialistas en marketing crear, admi
 
 >[!NOTE]
 >
->AEM **debe** conectarse a un servidor de InDesign en ejecución cuando se cargue la plantilla INDD. Parte del procesamiento inicial en el archivo INDD requiere el servidor de InDesign.
+>AEM **must** estar conectado a un servidor de InDesign en ejecución cuando se cargue la plantilla INDD. Parte del procesamiento inicial en el archivo INDD requiere el servidor de InDesign.
 
 ## Descargar versión de prueba de InDesign Server {#download-indesign-server-trial}
 
-Descargar [Sitio Web de descarga de prueba de InDesign Server](https://www.adobe.com/devnet/premiere/sdk/cs5/indesign-server-trial-downloads.html)
+Descargar [Sitio web de descarga de prueba de InDesign Server](https://www.adobeprerelease.com/)
 
 ## Inicio del InDesign Server {#starting-indesign-server}
 
