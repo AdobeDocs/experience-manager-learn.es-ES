@@ -1,23 +1,23 @@
 ---
 title: Comprender la compatibilidad con la autenticación en AEM
-description: 'Una vista consolidada de los mecanismos de autenticación (y, ocasionalmente, autorización) admitidos por AEM. '
+description: Una vista consolidada de los mecanismos de autenticación (y, ocasionalmente, autorización) admitidos por AEM.
 version: 6.3, 6.4, 6.5
-feature: Usuarios y grupos
+feature: User and Groups
 topics: authentication, security
 activity: understand
 audience: architect, developer, implementer
 doc-type: article
 kt: 406
-topic: Arquitectura
+topic: Architecture
 role: Architect
 level: Experienced
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 96c542ae-6ab6-4d8a-94df-a58b03469320
+source-git-commit: 84d7230071544e7cdc63ecc0faa32c03ab337cd6
 workflow-type: tm+mt
-source-wordcount: '134'
-ht-degree: 3%
+source-wordcount: '130'
+ht-degree: 8%
 
 ---
-
 
 # Comprender la compatibilidad con la autenticación en AEM 6.x
 
@@ -52,7 +52,7 @@ Una vista consolidada de los mecanismos de autenticación (y, ocasionalmente, au
             <td>š</td>
         </tr>
         <tr>
-            <td>Basado en tokens (con <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encapsulated-token.html" target="_blank">token encapsulado</a>)</td>
+            <td>Basado en tokens (w/ <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encapsulated-token.html" target="_blank">token encapsulado</a>)</td>
             <td>š</td>
             <td>š</td>
             <td>š</td>
@@ -69,7 +69,7 @@ Una vista consolidada de los mecanismos de autenticación (y, ocasionalmente, au
                 <td>š</td>
             </tr>
             <tr>
-                <td><a href="https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/single-sign-on.html" target="_blank">SSO</a></td>
+                <td><a href="https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/single-sign-on.html?lang=es" target="_blank">SSO</a></td>
                 <td>š</td>
                 <td>š</td>
                 <td>š</td>
@@ -81,7 +81,7 @@ Una vista consolidada de los mecanismos de autenticación (y, ocasionalmente, au
                 <td>š</td>
             </tr>
             <tr>
-                <td><a href="https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html" target="_blank">OAuth 1.0a y 2.0</a></td>
+                <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/assets/oauth-server-functionality-in-aem-7-23-14.pdf" target="_blank">OAuth 1.0a y 2.0</a></td>
                 <td>š</td>
                 <td>š</td>
                 <td>š</td>
@@ -95,4 +95,4 @@ Una vista consolidada de los mecanismos de autenticación (y, ocasionalmente, au
     </tbody>
 </table>
 
-⁕ *Se proporciona a través de proyectos de la comunidad, pero no directamente compatible con Adobe.*
+⁕ *Se proporciona a través de proyectos de la comunidad, pero no directamente soportado por el Adobe.*
