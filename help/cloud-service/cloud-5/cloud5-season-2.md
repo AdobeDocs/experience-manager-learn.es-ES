@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: e2fabf7c-7fda-4391-ae77-709aa9f7dc0a
-source-git-commit: c3d3eae47c17a7efed15f14e98e2f3ded719cef0
+source-git-commit: 52587c1131620d62428ecfc464a97dce00d8a1d8
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '423'
 ht-degree: 1%
 
 ---
@@ -99,14 +99,16 @@ Cada temporada varía en longitud y se publicará con un calendario fijo. Los te
             </p>
          </td>   
      <td>
-            <img alt="Corregir su... Caché" src="./imgs/coming-soon.png"/>
+            <a href="season-2/cloud5-fix-your-cache.md">
+               <img alt="Corrección de la caché" src="./imgs/s2/005-thumb.png"/>
+            </a>
       <div>
-         <strong>Corregir su... Caché</strong>
-         <br/><em>con Darin Kuntze y James Talbot, arquitectos sénior de la nube</em>
+         <a href="season-2/cloud5-fix-your-cache.md"><strong>Corregir su... Caché</strong></a>
+         <br/><em>con Damian Langsweirdt y James Talbot, arquitectos sénior de la nube</em>
       </div>
       <p>
-        <br/>
-         Próximo 15 de julio de 2022
+         <br/>
+             Explore las áreas para optimizar la caché y acelerar la ejecución del sitio en AEM as a Cloud Service.
       </p>
    </td> 
   </tr>
