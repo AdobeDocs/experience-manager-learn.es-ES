@@ -10,7 +10,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 6c5373db-86ec-410b-8a3b-9d4f86e06812
-source-git-commit: 8b2c116ceb6ab8c3a009dcec6629c2e97d815b7b
+source-git-commit: 5d32899a58e591b535dab991f89a8f7467b7b435
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 3%
@@ -23,7 +23,7 @@ Las aplicaciones de ejemplo son una buena manera de explorar las capacidades sin
 
 ![Aplicación iOS SwiftUI con AEM sin encabezado](./assets/ios-swiftui-app/ios-app.png)
 
-Consulte la [código fuente en GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/ios-swiftui-app)
+Consulte la [código fuente en GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/ios-app)
 
 ## Requisitos previos {#prerequisites}
 
@@ -50,7 +50,7 @@ La aplicación iOS está diseñada para conectarse a un __AEM Publish__ , sin em
    git clone git@github.com:adobe/aem-guides-wknd-graphql.git
    ```
 
-1. Launch [Xcode](https://developer.apple.com/xcode/) y abra la carpeta `ios-swiftui-app`
+1. Launch [Xcode](https://developer.apple.com/xcode/) y abra la carpeta `ios-app`
 1. Modificación del archivo `Config.xcconfig` archivo y actualizar `AEM_SCHEME` y `AEM_HOST` para que coincida con el servicio de publicación de AEM de Target.
 
    ```plain
@@ -86,7 +86,7 @@ La aplicación iOS está diseñada para conectarse a un __AEM Publish__ , sin em
 
 ## El código
 
-A continuación se muestra un resumen de cómo se crea la aplicación de iOS, cómo se conecta a AEM sin encabezado para recuperar contenido mediante consultas persistentes de GraphQL y cómo se presentan esos datos. El código completo se puede encontrar en [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/ios-swiftui-app).
+A continuación se muestra un resumen de cómo se crea la aplicación de iOS, cómo se conecta a AEM sin encabezado para recuperar contenido mediante consultas persistentes de GraphQL y cómo se presentan esos datos. El código completo se puede encontrar en [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/ios-app).
 
 ### Consultas persistentes
 
