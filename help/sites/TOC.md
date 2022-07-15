@@ -5,8 +5,8 @@ breadcrumb-title: Tutoriales de AEM Sites
 feature-set: Experience Manager Sites, Experience Manager
 source-git-commit: 6f930acd0b51c1f398be7a84efa99944dd3ce704
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 25%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -34,8 +34,8 @@ ht-degree: 25%
    + [Lanzamientos](page-authoring/launches.md)
 + Componentes {#components}
    + [Desarrollo de componentes](components/component-development.md)
-   + [Componentes principales](components/core-components-feature-video-understand.md)
-   + [La consola Componentes](components/components-console-feature-video-use.md)
+   + [Componentes principales ](components/core-components-feature-video-understand.md)
+   + [Consola Componentes](components/components-console-feature-video-use.md)
 + Fragmentos de contenido {#content-fragments}
    + [Creación de fragmentos de contenido](content-fragments/content-fragments-feature-video-use.md)
    + [Entrega de fragmentos de contenido](content-fragments/content-fragments-delivery-feature-video-use.md)
@@ -48,7 +48,7 @@ ht-degree: 25%
 + Desarrollo de {#developing}
    + [Tipo de archivo del proyecto AEM](developing/aem-project-archetype.md)
    + [Introducción a AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es)
-   + [Introducción a AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+   + [Introducción a AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es)
    + [Introducción a AEM Editor de SPA y React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
    + [Introducción a AEM Editor de SPA y Angular](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html)
    + [Ampliación de las propiedades de página](developing/page-properties-technical-video-develop.md)
@@ -73,7 +73,7 @@ ht-degree: 25%
 + Administración de varios sitios {#multi-site-management}
    + [Introducción a la copia de idioma](./multi-site-management/language-copy-overview.md)
    + [Live Copy y modelos](./multi-site-management/live-copy-and-blueprint.md)
-   + [Crear una Live Copy](./multi-site-management/create-live-copy.md)
+   + [Cree una Live Copy](./multi-site-management/create-live-copy.md)
    + [Administración de los datos heredados de Live Copy en un componente](./multi-site-management/manage-component-inheritance-live-copy.md)
    + [Administración de los datos heredados de Live Copy en una página](./multi-site-management/manage-page-inheritance-live-copy.md)
    + [Consola de información general de Live Copy](./multi-site-management/live-copy-overview-console.md)

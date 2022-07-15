@@ -6,8 +6,8 @@ feature-set: Experience Manager Assets, Experience Manager Sites, Experience Man
 team: TM
 source-git-commit: c6caa39075bc3c26dedeca4246e7e1f85887b124
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 25%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 25%
    + [Perfiles de procesamiento](configuring/processing-profiles.md)
    + [Flujos de trabajo de inicio automático](configuring/auto-start-workflows.md)
 
-+ Creación{#authoring}
++ Creación {#authoring}
    + [Navegación](./authoring/navigation.md)
    + [Operaciones básicas](./authoring/basic-operations.md)
    + [Metadatos](./authoring/metadata.md)
@@ -158,4 +158,4 @@ ht-degree: 25%
 + Implementación{#deployment}
    + [Desarrollo concurrente y de múltiples alquileres](deployment/multitenancy-concurrent-article-understand.md)
 
-+ [Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/overview.html)
++ [Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/overview.html?lang=es)

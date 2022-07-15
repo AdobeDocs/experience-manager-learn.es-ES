@@ -4,8 +4,8 @@ user-guide-title: Tutoriales de AEM
 index: y
 source-git-commit: 08146f57235f3de7fd5ab73754166cc85e1f7dda
 workflow-type: tm+mt
-source-wordcount: '134'
-ht-degree: 29%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
