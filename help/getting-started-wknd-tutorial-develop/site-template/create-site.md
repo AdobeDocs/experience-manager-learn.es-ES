@@ -1,6 +1,6 @@
 ---
 title: Crear un sitio | Creación rápida de sitios AEM
-description: Como parte de la Creación rápida de sitios, utilice el Asistente para la creación de sitios en Adobe Experience Manager, AEM, para generar un nuevo sitio web. La plantilla de sitio estándar proporcionada por el Adobe, se utiliza como punto de partida para el nuevo sitio.
+description: Aprenda a utilizar el asistente para la creación de sitios para generar un nuevo sitio web. La plantilla de sitio estándar que proporciona el Adobe es un punto de partida para el nuevo sitio.
 sub-product: sites
 version: Cloud Service
 type: Tutorial
@@ -11,10 +11,10 @@ level: Beginner
 kt: 7496
 thumbnail: KT-7496.jpg
 exl-id: 6d0fdc4d-d85f-4966-8f7d-d53506a7dd08
-source-git-commit: 0225b7f2e495d5c020ea5192302691e3466808ed
+source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
 workflow-type: tm+mt
-source-wordcount: '924'
-ht-degree: 0%
+source-wordcount: '914'
+ht-degree: 1%
 
 ---
 
@@ -78,7 +78,7 @@ La mayoría del tutorial se realizará utilizando la variable **Servicio de auto
 Una plantilla de sitio proporciona un punto de partida para un nuevo sitio. Una plantilla de sitio incluye temas básicos, plantillas de página, configuraciones y contenido de muestra. Exactamente lo que se incluye en la plantilla del sitio corresponde al desarrollador. El Adobe proporciona un **Plantilla básica del sitio** para acelerar las nuevas implementaciones.
 
 1. Abra una nueva pestaña del explorador y vaya al proyecto de plantilla de sitio básica en GitHub: [https://github.com/adobe/aem-site-template-standard](https://github.com/adobe/aem-site-template-standard). El proyecto es de código abierto y tiene licencia para ser utilizado por cualquier persona.
-1. Haga clic en **Versiones** y vaya a la [última versión](https://github.com/adobe/aem-site-template-standard/releases/latest).
+1. Haga clic en **Versiones** y vaya a la [última versión](https://github.com/adobe/aem-site-template-standard/releases/última).
 1. Expanda el **Recursos** y descargue el archivo zip de la plantilla:
 
    ![Código postal básico del sitio](assets/create-site/template-basic-zip-file.png)
