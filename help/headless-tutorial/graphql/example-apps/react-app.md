@@ -3,14 +3,14 @@ title: 'Aplicación React: Ejemplo AEM sin encabezado'
 description: Las aplicaciones de ejemplo son una buena manera de explorar las capacidades sin objetivos de Adobe Experience Manager (AEM). Esta aplicación React muestra cómo consultar contenido mediante las API de GraphQL AEM mediante consultas persistentes.
 version: Cloud Service
 mini-toc-levels: 1
-kt: 9166
-thumbnail: KT-9166.jpg
+kt: 10715
+thumbnail: KT-10715.jpg
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: b1ab2a13-8b0e-4d7f-82b5-78b1dda248ba
-source-git-commit: 4b8f7d9c6def8c121f3c975218b7214d271fa77f
+source-git-commit: 3ef802d4e87b7dc8132dae25c9dbb801dfdce0fe
 workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 5%
