@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 508b0211-fa21-4a73-b8b4-c6c34e3ba696
-source-git-commit: a49e56b6f47e477132a9eee128e62fe5a415b262
+source-git-commit: 410eb23534e083940bf716194576e099d22ca205
 workflow-type: tm+mt
-source-wordcount: '1527'
+source-wordcount: '1532'
 ht-degree: 7%
 
 ---
@@ -56,9 +56,9 @@ Se necesita configurar un extremo de GraphQL para habilitar las consultas de API
 
    >[!NOTE]
    >
-   > También se puede crear un punto final global que habilite consultas con modelos de diferentes proyectos. Por ejemplo, si desea combinar una consulta que involucre a los modelos en la variable **WKND compartido** y en el **Mi proyecto**. Debe usarse con precaución y solo si es necesario, ya que potencialmente abre el entorno a vulnerabilidades de seguridad adicionales.
+   > También se puede crear un punto final global para habilitar consultas con modelos en varias configuraciones. Debe usarse con precaución, ya que puede abrir el entorno a vulnerabilidades de seguridad adicionales y agregar complejidad general a la administración de AEM.
 
-1. Ahora debería ver dos extremos de GraphQL habilitados en su entorno (suponiendo que haya instalado el contenido compartido de WKND).
+1. Ahora debería ver un extremo de GraphQL habilitado en su entorno.
 
    ![Puntos finales de graphql habilitados](assets/explore-graphql-api/enabled-graphql-endpoints.png)
 
@@ -76,11 +76,11 @@ A continuación, explore la potencia de AEM API de GraphQL mediante el IDE integ
    >
    > Para versiones anteriores de AEM, es posible que GraphiQL IDE no esté integrado. Se puede instalar manualmente después de estos [instrucciones](#install-graphiql).
 
-1. En la esquina superior derecha, establezca la variable **Punto final** a **My Project Endpoint**.
+1. En la esquina superior derecha, asegúrese de que la variable **Punto final** está configurado como **My Project Endpoint**.
 
    ![Establecer extremo de GraphQL](assets/explore-graphql-api/set-my-project-endpoint.png)
 
-   Esto abarcará todas las consultas a los modelos creados en la variable **Mi proyecto** proyecto. Tenga en cuenta que también hay un punto final para **WKND compartido**.
+Esto abarcará todas las consultas a los modelos creados en la variable **Mi proyecto** proyecto.
 
 ### Consultar una lista de fragmentos de contenido {#query-list-cf}
 
@@ -370,16 +370,28 @@ A continuación, persista en dos consultas simples, que se utilizarán en el cap
 
    ![Consultas persistentes finales](assets/explore-graphql-api/final-persisted-queries.png)
 
+
+## Publicar extremo de GraphQL y consultas persistentes
+
+Tras revisión y verificación, publique el `GraphQL Endpoint` &amp; `Persisted Queries`
+
+1. Desde la pantalla Inicio de AEM vaya a **Herramientas** > **General** > **GraphQL**.
+
+1. Pulse la casilla de verificación situada junto a **My Project Endpoint** y toque **Publicación**
+
+   ![Publicar extremo de GraphQL](assets/explore-graphql-api/publish-graphql-endpoint.png)
+
+1. Desde la pantalla Inicio de AEM vaya a **Herramientas** > **General** > **Editor de consultas de GraphQL**
+
+1. Toque . *todos los equipos* en el panel Consultas persistentes y pulse **Publicación**
+
+   ![Publicar consultas persistentes](assets/explore-graphql-api/publish-persisted-query.png)
+
+1. Repita el paso anterior para `person-by-name` query
+
 ## Archivos de solución {#solution-files}
 
 Descargue el contenido, los modelos y las consultas persistentes creados en los tres últimos capítulos: [tutorial-solution-content.zip](assets/explore-graphql-api/tutorial-solution-content.zip)
-
-## Explorar consultas persistentes de WKND (opcional) {#explore-wknd-content-fragments}
-
-Si [se ha instalado el contenido de muestra WKND Shared](./overview.md#install-sample-content) puede revisar y ejecutar consultas persistentes como aventuras-todas, aventura-por-actividad, aventura-por-ruta, etc.
-
-![Consultas persistentes WKND](assets/explore-graphql-api/wknd-persisted-queries.png)
-
 
 ## Recursos adicionales
 

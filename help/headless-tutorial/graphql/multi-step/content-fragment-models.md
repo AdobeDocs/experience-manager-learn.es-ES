@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 9400d9f2-f828-4180-95a7-2ac7b74cd3c9
-source-git-commit: a49e56b6f47e477132a9eee128e62fe5a415b262
+source-git-commit: 410eb23534e083940bf716194576e099d22ca205
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1134'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ También puede crear su propio modelo siguiendo los pasos básicos y modificar l
 
 ## Requisitos previos {#prerequisites}
 
-Este es un tutorial de varias partes y se da por hecho que se ha configurado un [AEM entorno de creación está disponible](./overview.md#prerequisites) y, opcionalmente, la variable [WKND El contenido de muestra compartido se ha instalado](./overview.md#install-sample-content).
+Este es un tutorial de varias partes y se da por hecho que se ha configurado un [AEM entorno de creación está disponible](./overview.md#prerequisites)
 
 ## Objetivos {#objectives}
 
@@ -39,7 +39,7 @@ Este es un tutorial de varias partes y se da por hecho que se ha configurado un 
 
 Una configuración de proyecto contiene todos los modelos de fragmento de contenido asociados a un proyecto en particular y proporciona un medio para organizar los modelos. Se debe crear al menos un proyecto **before** crear nuevo modelo de fragmento de contenido.
 
-1. Inicie sesión en el AEM **Autor** entorno.
+1. Inicie sesión en el AEM **Autor** entorno (p. ej. `https://author-pYYYY-eXXXX.adobeaemcloud.com/`)
 1. En la pantalla Inicio de AEM, vaya a **Herramientas** > **General** > **Explorador de configuración**.
 
    ![Navegar al explorador de configuración](assets/content-fragment-models/navigate-config-browser.png)
@@ -65,7 +65,6 @@ Cree un nuevo modelo para un **Persona**, que es el modelo de datos que represen
 
    ![Navegar a los modelos de fragmento de contenido](assets/content-fragment-models/navigate-cf-models.png)
 
-   Si ha instalado el [contenido de muestra](overview.md#install-sample-content) a continuación, verá dos carpetas: **Mi proyecto** y **WKND compartido**.
 1. Vaya a **Mi proyecto** carpeta.
 1. Toque **Crear** en la esquina superior derecha para que aparezca la variable **Crear modelo** asistente.
 1. Para **Título de modelo** introduzca: **Persona** y toque **Crear**.
@@ -165,23 +164,23 @@ Cree un nuevo modelo para un **Equipo**, que es el modelo de datos para un equip
 
    ![Dos modelos](assets/content-fragment-models/two-new-models.png)
 
-## Inspect: modelos de fragmento de contenido WKND (opcional)
+## Publicar configuración de proyecto y modelos de fragmento de contenido
 
-Si [se ha instalado el contenido de muestra WKND Shared](./overview.md#install-sample-content) puede inspeccionar los modelos Aventura, Artículo y Autor para obtener más ideas sobre técnicas de modelado de datos.
+Tras revisión y verificación, publique el `Project Configuration` &amp; `Content Fragment Model`
 
-1. En el **Inicio de AEM** vaya a **Herramientas** > **General** > **Modelos de fragmento de contenido**.
+1. En la pantalla Inicio de AEM, vaya a **Herramientas** > **General** > **Explorador de configuración**.
 
-1. Vaya a **WKND compartido** y debería ver tres modelos: Artículo, aventura y autor.
+1. Pulse la casilla de verificación situada junto a **Mi proyecto** y toque **Publicación**
 
-1. Inspect los modelos pasando el puntero sobre la tarjeta y pulsando el icono de edición (lápiz)
+   ![Publicar configuración de proyecto](assets/content-fragment-models/publish-project-config.png)
 
-   ![Modelos WKND](assets/content-fragment-models/wknd-shared-models.png)
+1. En la pantalla Inicio de AEM, vaya a **Herramientas** > **General** > **Modelos de fragmento de contenido**.
 
-1. Esto abre el **Editor del modelo de fragmento de contenido** para el modelo y puede inspeccionar los distintos tipos de datos utilizados.
+1. Vaya a **Mi proyecto** carpeta.
 
-   >[!CAUTION]
-   >
-   > Modificación del modelo **after** Se han creado los fragmentos de contenido, tienen efectos descendentes. Ya no se hará referencia a los valores de campo de los fragmentos existentes y el esquema de datos expuesto por GraphQL cambiará, lo que afectará a las aplicaciones existentes.
+1. Toque **Persona** y **Equipo** modelos y toque **Publicación**
+
+   ![Publicar modelos de fragmento de contenido](assets/content-fragment-models/publish-content-fragment-model.png)
 
 ## Felicitaciones! {#congratulations}
 
