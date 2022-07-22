@@ -1,5 +1,5 @@
 ---
-title: Configuración de las herramientas de Dispatcher para AEM como desarrollo de Cloud Service
+title: Configuración de las herramientas de Dispatcher para AEM desarrollo as a Cloud Service
 description: Las herramientas de Dispatcher del SDK de AEM facilitan el desarrollo local de los proyectos de Adobe Experience Manager (AEM), ya que facilitan la instalación, ejecución y resolución de problemas de Dispatcher localmente.
 version: Cloud Service
 topic: Development
@@ -8,34 +8,34 @@ role: Developer
 level: Beginner
 kt: 4679
 thumbnail: 30603.jpg
-source-git-commit: 0737cd2410b48dbaa9b6dfaaa27b854d44536f15
+exl-id: 9320e07f-be5c-42dc-a4e3-aab80089c8f7
+source-git-commit: bca51ece7a9b249727b8746cc9654503059116fb
 workflow-type: tm+mt
 source-wordcount: '1380'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
-
-# Configuración de las herramientas locales de Dispatcher
+# Configuración de las herramientas locales de Dispatcher {#set-up-local-dispatcher-tools}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_localdev_dispatcher"
 >title="Herramientas locales de Dispatcher"
->abstract="Dispatcher es una parte integral de la arquitectura general del Experience Manager y debe formar parte de la configuración de desarrollo local. El SDK de AEM as a Cloud Service incluye la versión de herramientas de Dispatcher recomendada, que facilita la configuración, validación y simulación de Dispatcher localmente."
+>abstract="Dispatcher es una parte integral de la arquitectura general del Experience Manager y debe formar parte de la configuración de desarrollo local. El SDK as a Cloud Service AEM incluye la versión de las herramientas de Dispatcher recomendadas, que facilita la configuración, validación y simulación de Dispatcher localmente."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html" text="Dispatcher en la nube"
->additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/es-ES/aemcloud.html" text="Descargar AEM como SDK de Cloud Service"
+>additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html" text="Descargar AEM SDK as a Cloud Service"
 
 Dispatcher de Adobe Experience Manager (AEM) es un módulo de servidor web HTTP Apache que proporciona una capa de seguridad y rendimiento entre el nivel de CDN y AEM Publish. Dispatcher es una parte integral de la arquitectura general del Experience Manager y debe formar parte de la configuración de desarrollo local.
 
-El SDK de AEM as a Cloud Service incluye la versión de herramientas de Dispatcher recomendada, que facilita la configuración, validación y simulación de Dispatcher localmente. Las herramientas de Dispatcher constan de:
+El SDK as a Cloud Service AEM incluye la versión de las herramientas de Dispatcher recomendadas, que facilita la configuración, validación y simulación de Dispatcher localmente. Las herramientas de Dispatcher constan de:
 
 + un conjunto de línea de base de los archivos de configuración del servidor web HTTP Apache y Dispatcher, ubicados en `.../dispatcher-sdk-x.x.x/src`
-+ una herramienta CLI de validación de configuración ubicada en `.../dispatcher-sdk-x.x.x/bin/validate`
++ una herramienta CLI del validador de la configuración, ubicada en `.../dispatcher-sdk-x.x.x/bin/validate`
 + una herramienta CLI de generación de configuración ubicada en `.../dispatcher-sdk-x.x.x/bin/validator`
 + una herramienta CLI de implementación de configuración ubicada en `.../dispatcher-sdk-x.x.x/bin/docker_run`
 + una imagen Docker que ejecuta el servidor web HTTP Apache con el módulo Dispatcher
 
-Tenga en cuenta que `~` se utiliza como método abreviado para el Directorio del usuario. En Windows, este es el equivalente de `%HOMEPATH%`.
+Tenga en cuenta que `~` se utiliza como abreviatura para el Directorio del usuario. En Windows, es el equivalente de `%HOMEPATH%`.
 
 >[!NOTE]
 >
@@ -44,32 +44,32 @@ Tenga en cuenta que `~` se utiliza como método abreviado para el Directorio del
 ## Requisitos previos
 
 1. Los usuarios de Windows deben utilizar Windows 10 Professional (o una versión compatible con Docker)
-1. Instale [Experience Manager Publish Quickstart Jar](./aem-runtime.md) en el equipo de desarrollo local.
-   + Opcionalmente, instale el [AEM sitio web de referencia](https://github.com/adobe/aem-guides-wknd/releases) más reciente en el servicio AEM Publish local. Este sitio web se utiliza en este tutorial para visualizar un Dispatcher en funcionamiento.
-1. Instale e inicie la versión más reciente de [Docker](https://www.docker.com/) (Docker Desktop 2.2.0.5+ / Docker Engine v19.03.9+) en el equipo de desarrollo local.
+1. Instalar [Jar de inicio rápido de publicación del Experience Manager](./aem-runtime.md) en la máquina de desarrollo local.
+   + Opcionalmente, instale la última [AEM sitio web de referencia](https://github.com/adobe/aem-guides-wknd/releases) en el servicio AEM Publish local. Este sitio web se utiliza en este tutorial para visualizar un Dispatcher en funcionamiento.
+1. Instale e inicie la última versión de [Docker](https://www.docker.com/) (Docker Desktop 2.2.0.5+ / Docker Engine v19.03.9+) en el equipo de desarrollo local.
 
 ## Descargar las herramientas de Dispatcher (como parte del SDK de AEM)
 
-El SDK de AEM as a Cloud Service, o SDK de AEM, contiene las herramientas de Dispatcher utilizadas para ejecutar el servidor web HTTP Apache con el módulo de Dispatcher localmente para el desarrollo, así como el Jar de inicio rápido compatible.
+El SDK as a Cloud Service AEM, o SDK AEM, contiene las herramientas de Dispatcher utilizadas para ejecutar el servidor web HTTP Apache con el módulo de Dispatcher localmente para el desarrollo, así como el Jar de inicio rápido compatible.
 
-Si el SDK de AEM as a Cloud Service ya se ha descargado para [configurar el tiempo de ejecución de AEM local](./aem-runtime.md), no es necesario volver a descargarlo.
+Si el SDK as a Cloud Service de AEM ya se ha descargado en [configuración del tiempo de ejecución de AEM local](./aem-runtime.md), no es necesario volver a descargarlo.
 
-1. Inicie sesión en [experience.adobe.com/#/downloads](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=AEM*+SDK*&amp;1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout list&amp;p.offset=0&amp;p.limit=1) con su Adobe ID
-   + La organización de Adobe __debe__ aprovisionarse para AEM como Cloud Service para descargar el SDK de AEM as a Cloud Service
-1. Haga clic en la última fila de resultados de __AEM SDK__ para descargar
+1. Iniciar sesión en [experience.adobe.com/#/downloads](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=AEM*+SDK*&amp;1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout list&amp;p.offset=0&amp;p.limit=1) con su Adobe ID
+   + Su organización de Adobe __must__ estar aprovisionado para AEM as a Cloud Service a descargar el SDK as a Cloud Service de AEM
+1. Haga clic en la última __SDK AEM__ fila de resultados para descargar
 
 ## Extraer las herramientas de Dispatcher del zip del SDK de AEM
 
 >[!TIP]
 >
-> Los usuarios de Windows no pueden tener espacios ni caracteres especiales en la ruta de acceso a la carpeta que contiene las herramientas locales de Dispatcher. Si existen espacios en la ruta, el `docker_run.cmd` fallará.
+> Los usuarios de Windows no pueden tener espacios ni caracteres especiales en la ruta de acceso a la carpeta que contiene las herramientas locales de Dispatcher. Si existen espacios en la ruta, la variable `docker_run.cmd` fallará.
 
-La versión de las herramientas de Dispatcher es diferente de la del SDK de AEM. Asegúrese de que la versión de las herramientas de Dispatcher se proporcione a través de la versión de AEM SDK que coincida con la AEM como versión de Cloud Service.
+La versión de las herramientas de Dispatcher es diferente de la del SDK de AEM. Asegúrese de que la versión de las herramientas de Dispatcher se proporciona a través de la versión de AEM SDK que coincide con la versión as a Cloud Service de AEM.
 
-1. Descomprima el archivo `aem-sdk-xxx.zip` descargado
+1. Descomprima el `aem-sdk-xxx.zip` file
 1. Desempaquete las herramientas de Dispatcher en `~/aem-sdk/dispatcher`
-   + Windows: Descomprimir `aem-sdk-dispatcher-tools-x.x.x-windows.zip` en `C:\Users\<My User>\aem-sdk\dispatcher` (creando carpetas que faltan según sea necesario)
-   + macOS / Linux: Ejecute el script shell `aem-sdk-dispatcher-tools-x.x.x-unix.sh` que lo acompaña para desempaquetar las herramientas de Dispatcher
+   + Windows: Descartar `aem-sdk-dispatcher-tools-x.x.x-windows.zip` into `C:\Users\<My User>\aem-sdk\dispatcher` (crear carpetas que faltan según sea necesario)
+   + macOS / Linux: Ejecutar el script shell que lo acompaña `aem-sdk-dispatcher-tools-x.x.x-unix.sh` para desempaquetar las herramientas de Dispatcher
       + `chmod a+x aem-sdk-dispatcher-tools-x.x.x-unix.sh && ./aem-sdk-dispatcher-tools-x.x.x-unix.sh`
 
 Tenga en cuenta que todos los comandos que se emiten a continuación suponen que el directorio de trabajo actual contiene el contenido expandido de las herramientas de Dispatcher.
@@ -81,17 +81,17 @@ Tenga en cuenta que todos los comandos que se emiten a continuación suponen que
 ## Explicación de los archivos de configuración de Dispatcher
 
 >[!TIP]
-> Los proyectos de Experience Manager creados a partir del [AEM tipo de archivo Maven del proyecto](https://github.com/adobe/aem-project-archetype) se rellenan previamente con este conjunto de archivos de configuración de Dispatcher, por lo que no es necesario copiar desde la carpeta src de las herramientas de Dispatcher.
+> proyectos de Experience Manager creados a partir de la variable [Tipo de archivo Maven del proyecto AEM](https://github.com/adobe/aem-project-archetype) están rellenados previamente con este conjunto de archivos de configuración de Dispatcher, por lo que no es necesario copiar desde la carpeta src de las herramientas de Dispatcher.
 
 Las herramientas de Dispatcher proporcionan un conjunto de archivos de configuración de Dispatcher y del servidor web HTTP Apache que definen el comportamiento de todos los entornos, incluido el desarrollo local.
 
-Estos archivos están pensados para copiarse en un proyecto Maven de Experience Manager a la carpeta `dispatcher/src` si no existen en el proyecto Maven de Experience Manager.
+Estos archivos están pensados para copiarse en un proyecto Maven de Experience Manager al `dispatcher/src` carpeta, si no existen en el proyecto Maven de Experience Manager.
 
 Una descripción completa de los archivos de configuración está disponible en las herramientas de Dispatcher desempaquetadas como `dispatcher-sdk-x.x.x/docs/Config.html`.
 
 ## Validar configuraciones
 
-Opcionalmente, las configuraciones del servidor web Dispatcher y Apache (a través de `httpd -t`) se pueden validar usando el script `validate` (no confundir con el ejecutable `validator`). La secuencia de comandos `validate` proporciona una forma conveniente de ejecutar las [3 fases](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/validation-debug.html?lang=en#local-validation-flexible-mode) de la `validator`.
+Opcionalmente, las configuraciones del servidor web Dispatcher y Apache (a través de `httpd -t`) se puede validar utilizando la variable `validate` script (no confundir con el `validator` ejecutable). La variable `validate` la secuencia de comandos proporciona una forma cómoda de ejecutar el [3 fases](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/validation-debug.html?lang=en#local-validation-flexible-mode) del `validator`.
 
 + Uso:
    + Windows: `bin\validate src`
@@ -99,13 +99,13 @@ Opcionalmente, las configuraciones del servidor web Dispatcher y Apache (a trav�
 
 ## Ejecutar Dispatcher localmente
 
-AEM Dispatcher se ejecuta localmente usando Docker con los archivos de configuración del servidor web `src` Dispatcher y Apache.
+AEM Dispatcher se ejecuta localmente mediante Docker con el `src` Archivos de configuración del servidor web Dispatcher y Apache.
 
 + Uso:
    + Windows: `bin\docker_run <src-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>`
    + macOS / Linux: `./bin/docker_run.sh <src-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>`
 
-El `<aem-publish-host>` se puede establecer en `host.docker.internal`, proporciona un nombre DNS especial Docker en el contenedor que se resuelve en la IP del equipo host. Si `host.docker.internal` no se resuelve, consulte la sección [solución de problemas](#troubleshooting-host-docker-internal) a continuación.
+La variable `<aem-publish-host>` se puede configurar como `host.docker.internal`, un Docker de nombre DNS especial proporciona en el contenedor que se resuelve a la IP del equipo host. Si `host.docker.internal` no resuelve, consulte la [solución de problemas](#troubleshooting-host-docker-internal) a continuación.
 
 Por ejemplo, para iniciar el contenedor de Docker de Dispatcher utilizando los archivos de configuración predeterminados proporcionados por las herramientas de Dispatcher:
 
@@ -114,9 +114,9 @@ Inicie el contenedor de Docker de Dispatcher que proporciona la ruta a la carpet
 + Windows: `bin\docker_run src host.docker.internal:4503 8080`
 + macOS / Linux: `./bin/docker_run.sh ./src host.docker.internal:4503 8080`
 
-El servicio de publicación del SDK de AEM as a Cloud Service, que se ejecuta localmente en el puerto 4503, estará disponible a través de Dispatcher en `http://localhost:8080`.
+El servicio de publicación del SDK as a Cloud Service AEM, que se ejecuta localmente en el puerto 4503, estará disponible a través de Dispatcher en `http://localhost:8080`.
 
-Para ejecutar las herramientas de Dispatcher con la configuración de Dispatcher de un proyecto de Experience Manager, elija la carpeta `dispatcher/src` del proyecto.
+Para ejecutar las herramientas de Dispatcher con la configuración de Dispatcher de un proyecto de Experience Manager, elija el `dispatcher/src` carpeta.
 
 + Windows:
 
@@ -134,7 +134,7 @@ Para ejecutar las herramientas de Dispatcher con la configuración de Dispatcher
 
 Los registros de Dispatcher son útiles durante el desarrollo local para comprender si las solicitudes HTTP están bloqueadas y por qué. El nivel de registro se puede configurar prefiriendo la ejecución de `docker_run` con parámetros de entorno.
 
-Los registros de las herramientas de Dispatcher se emiten al estándar cuando se ejecuta `docker_run`.
+Los registros de las herramientas de Dispatcher se emiten al estándar cuando `docker_run` se ejecuta.
 
 Los parámetros útiles para depurar Dispatcher incluyen:
 
@@ -144,7 +144,7 @@ Los parámetros útiles para depurar Dispatcher incluyen:
    + El valor predeterminado es: `Warn`
 + `DISP_RUN_MODE` establece el &quot;modo de ejecución&quot; del entorno de Dispatcher, cargando los modos de ejecución correspondientes archivos de configuración de Dispatcher.
    + El valor predeterminado es `dev`
-+ Valores válidos: `dev`, `stage` o `prod`
++ Valores válidos: `dev`, `stage`o `prod`
 
 Se pueden pasar uno o varios parámetros a `docker_run`
 
@@ -171,9 +171,9 @@ Se puede acceder directamente a los registros del servidor web Apache y AEM Disp
 
 Las versiones de las herramientas de Dispatcher aumentan con menor frecuencia que el Experience Manager, por lo que las herramientas de Dispatcher requieren menos actualizaciones en el entorno de desarrollo local.
 
-La versión recomendada de las herramientas de Dispatcher es la que se incluye con el SDK de AEM as a Cloud Service que coincide con el Experience Manager como versión de Cloud Service. La versión de AEM as a Cloud Service se puede encontrar a través de [Cloud Manager](https://my.cloudmanager.adobe.com/).
+La versión recomendada de las herramientas de Dispatcher es la que se incluye con el SDK as a Cloud Service de AEM que coincide con la versión as a Cloud Service de Experience Manager. La versión de AEM as a Cloud Service se puede encontrar a través de [Cloud Manager](https://my.cloudmanager.adobe.com/).
 
-+ __Cloud Manager > Entornos__, por entorno especificado por la etiqueta  __AEM__ Versiones
++ __Cloud Manager > Entornos__, por entorno especificado por el __Versión AEM__ label
 
 ![Versión del Experience Manager](./assets/dispatcher-tools/aem-version.png)
 
@@ -187,17 +187,17 @@ _Tenga en cuenta que la versión de las herramientas de Dispatcher no coincidir�
 
 > A partir de Docker 18.03, nuestra recomendación es conectarse al nombre DNS especial host.docker.internal, que se resuelve a la dirección IP interna utilizada por el host
 
-Si, cuando `bin/docker_run src host.docker.internal:4503 8080` resulta en el mensaje __Esperando hasta que host.docker.internal esté disponible__, entonces:
+Si, cuando `bin/docker_run src host.docker.internal:4503 8080` resultados en el mensaje __Esperando hasta que host.docker.internal esté disponible__ y, a continuación:
 
 1. Asegúrese de que la versión instalada de Docker es 18.03 o buena
-2. Es posible que tenga una máquina local configurada que impida el registro/resolución del nombre `host.docker.internal`. En su lugar, utilice su IP local.
+2. Es posible que tenga una máquina local configurada que impida el registro/resolución del `host.docker.internal` nombre. En su lugar, utilice su IP local.
    + Windows:
-      + Desde el símbolo del sistema, ejecute `ipconfig` y registre la __dirección IPv4__ del host.
-      + A continuación, ejecute `docker_run` utilizando esta dirección IP:
+      + Desde el símbolo del sistema, ejecute `ipconfig`y registre el __Dirección IPv4__ del equipo host.
+      + A continuación, ejecute `docker_run` usando esta dirección IP:
          `bin\docker_run src <HOST IP>:4503 8080`
    + macOS / Linux:
-      + Desde Terminal, ejecute `ifconfig` y registre la dirección IP del host __inet__, normalmente el dispositivo __en0__.
-      + A continuación, ejecute `docker_run` utilizando la dirección IP del host:
+      + Desde terminal, ejecute `ifconfig` y registrar el host __inet__ Dirección IP, normalmente la variable __en0__ dispositivo.
+      + A continuación, ejecute `docker_run` usando la dirección IP del host:
          `bin/docker_run.sh src <HOST IP>:4503 8080`
 
 #### Error de ejemplo
@@ -213,7 +213,7 @@ Waiting until host.docker.internal is available
 
 ### docker_run no se inicia en Windows{#troubleshooting-windows-compatible}
 
-La ejecución de `docker_run` en Windows puede dar como resultado el siguiente error, impidiendo que Dispatcher se inicie. Este es un problema del que se informa con Dispatcher en Windows y se solucionará en una versión futura.
+Ejecución `docker_run` en Windows puede provocar el siguiente error, impidiendo que Dispatcher se inicie. Este es un problema del que se informa con Dispatcher en Windows y se solucionará en una versión futura.
 
 #### Error de ejemplo
 

@@ -13,14 +13,14 @@ topic: Architecture
 role: Architect, Developer, Admin
 level: Beginner
 exl-id: c4f5667a-0da2-490b-9d55-9fbde21db595
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: bca51ece7a9b249727b8746cc9654503059116fb
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 2%
 
 ---
 
-# Uso de Adobe Cloud Manager: Canalización de producción de CI/CD
+# Uso de Adobe Cloud Manager: Canalización de producción de CI/CD {#using-adobe-cloud-manager-ci-cd-production-pipeline}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_devops_prodpipeline"
@@ -31,12 +31,12 @@ ht-degree: 2%
 
 ## Configuración
 
-La configuración [CI/CD Production Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html) define el déclencheur que iniciará la canalización, los parámetros que controlan la implementación de producción y los parámetros de prueba de rendimiento.
+La variable [Canalización de producción de CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html) define el déclencheur que iniciará la canalización, los parámetros que controlan la implementación de producción y los parámetros de prueba de rendimiento.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26314/?quality=12&learn=on)
 
 ### Ejecución de canalización
 
-La [Canalización de producción de CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) se utiliza para generar e implementar código a través de Stage en el entorno de producción, lo que reduce el tiempo de respuesta al valor.
+La variable [Canalización de producción de CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) se utiliza para crear e implementar código mediante Stage en el entorno de producción, lo que reduce el tiempo de respuesta.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26317/?quality=12&learn=on)
