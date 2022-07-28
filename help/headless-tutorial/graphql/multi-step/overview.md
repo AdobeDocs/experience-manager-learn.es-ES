@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 41e15a2c-758b-4e7d-9d23-ef671c1dc155
-source-git-commit: 410eb23534e083940bf716194576e099d22ca205
+source-git-commit: 93d50e79853429f420803c28807ee8018d0ff78f
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '298'
 ht-degree: 4%
 
 ---
@@ -46,15 +46,11 @@ Se requieren las siguientes opciones para seguir este tutorial:
 
 ### Entorno AEM
 
-Se requiere un entorno de Adobe Experience Manager para completar este tutorial. Se puede utilizar cualquiera de las siguientes opciones (las capturas de pantalla se registran desde un entorno as a Cloud Service AEM):
-
-* AEM entorno as a Cloud Service con:
-   * [Acceso a AEM as a Cloud Service y Cloud Manager](/help/cloud-service/accessing/overview.md)
-      * **Administrador AEM** acceso a AEM as a Cloud Service
+Para completar este tutorial, se recomienda AEM acceso de administrador a un entorno as a Cloud Service AEM.  Si no tiene acceso a AEM entorno as a Cloud Service, puede usar la variable [SDK de inicio rápido as a Cloud Service AEM local](/help/cloud-service/local-development-environment/aem-runtime.md). Sin embargo, es importante tener en cuenta que algunas pantallas de la interfaz de usuario del producto, como la navegación por fragmentos de contenido, serán diferentes.
 
 ## ¡Empecemos!
 
-1. Inicie el tutorial con [Definición de modelos de fragmento de contenido](content-fragment-models.md).
+Inicie el tutorial con [Definición de modelos de fragmento de contenido](content-fragment-models.md).
 
 ## Proyecto de GitHub
 
