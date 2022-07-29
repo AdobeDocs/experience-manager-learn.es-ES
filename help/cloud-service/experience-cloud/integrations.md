@@ -10,10 +10,10 @@ kt: 10718
 thumbnail: KT-10718.jpeg
 mini-toc-levels: 1
 exl-id: 9e856dcc-f042-4e9d-bf97-dd4f72e837e3
-source-git-commit: 4a902d838c99b3452581066ee568876ad16ec1a3
+source-git-commit: fda7b74e7659daf61a9f5478d6bfabe439b923ae
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 11%
+source-wordcount: '873'
+ht-degree: 12%
 
 ---
 
@@ -81,12 +81,9 @@ La integración de Adobe Campaign Classic con AEM as a Cloud Service le permite 
 
 ### AEM Sites
 
-+ [Configuración de la integración con Adobe Campaign Classic](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaignonpremise.html)
-   + __Vínculos de documentación a AEM 6.5; sin embargo, los pasos son los mismos en AEM as a Cloud Service__
-+ [Integración de AEM Sites con Adobe Campaign Classic](https://github.com/adobe/aem-core-email-components/wiki/Integrating-AEM-with-ACC)
-+ [Envío de correos electrónicos desde AEM Sites con Adobe Campaign Classic](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/aem-adobe-campaign/campaign.html)
++ [Integración con Adobe Campaign Classic](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-campaign-classic.html#configure-user)
++ [Creación de una newsletter de Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/creating-newsletter.html)
 + [Documentación de los componentes principales de AEM correo electrónico](https://github.com/adobe/aem-core-email-components#aem-email-core-components)
-
 
 ## Adobe Commerce
 
