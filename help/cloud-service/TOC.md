@@ -4,9 +4,9 @@ user-guide-description: Una recopilación de tutoriales de Adobe Experience Mana
 breadcrumb-title: Tutoriales de AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: 3fb0fb5b8f43dc925da2ffa05808f24bf6d5ada3
+source-git-commit: 043842912132336a4ec52b54776fab1525b09d16
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '822'
 ht-degree: 22%
 
 ---
@@ -212,6 +212,7 @@ ht-degree: 22%
       + [Configurar para rellenar y firmar](./forms/forms-and-sign/configure-form-fill-and-sign.md)
    + Integración con Microsoft Power Automate{#forms-cs-and-power-automate}
       + [Configuración de la integración](./forms/forms-cs-and-power-automate/integrate-formscs-power-automate.md)
+      + [Analizar datos de formulario enviados](./forms/forms-cs-and-power-automate/send-email-notification.md)
    + Integración con Microsoft Dynamics{#formscs-dynamics-crm}
       + [Crear aplicación de Dynamics](./forms/formscs-dynamics-crm/create-dynamics-account.md)
       + [Configurar fuentes de datos](./forms/formscs-dynamics-crm/configure-odata-data-source.md)
