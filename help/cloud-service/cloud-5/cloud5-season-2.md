@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: e2fabf7c-7fda-4391-ae77-709aa9f7dc0a
-source-git-commit: 3fb0fb5b8f43dc925da2ffa05808f24bf6d5ada3
+source-git-commit: 2cfa5039e69ef23e58428e17b45877170930820e
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '503'
 ht-degree: 1%
 
 ---
@@ -141,7 +141,7 @@ Cada temporada varía en longitud y se publicará con un calendario fijo. Los te
    </td>
      <td>
             <a href="season-2/cloud5-MoCM-unit-tests.md">
-               <img alt="Misterios de Cloud Manager... Pruebas de unidad" src="./imgs/s2/009-thumb.png"/>
+               <img alt="Misterios de Cloud Manager... Pruebas de unidad" src="./imgs/s2/008-thumb.png"/>
             </a>
       <div>
             <a href="season-2/cloud5-MoCM-unit-tests.md"><strong>Misterios de Cloud Manager... Pruebas de unidad</strong></a>
@@ -155,13 +155,15 @@ Cada temporada varía en longitud y se publicará con un calendario fijo. Los te
   </tr>
     <tr>
         <td>
-                <img alt="Misterios de Cloud Manager... Pruebas funcionales" src="./imgs/coming-soon.png"/>
+               <a href="season-2/cloud5-MoCM-functional-tests.md">
+                   <img alt="Misterios de Cloud Manager... Pruebas funcionales" src="./imgs/s2/009-thumb.png"/>
+               </a>
             <div>
-                <strong>Misterios de Cloud Manager... Pruebas funcionales</strong><br/>        
+                <a href="season-2/cloud5-MoCM-functional-tests.md"><strong>Misterios de Cloud Manager... Pruebas funcionales</strong><br/></a>        
                 <em>con Darin Kuntze y Bryan Stopp, arquitectos sénior de la nube</em>
             </div>
             <p><br/>
-                Próximo 12 de agosto de 2022
+                Darin y Bryan discuten diferentes tipos de pruebas funcionales incorporadas en el proceso de implementación as a Cloud Service AEM para garantizar la calidad y fiabilidad de su código.
             </p>
         </td>
         <td></td>
