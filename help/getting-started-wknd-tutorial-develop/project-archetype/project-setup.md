@@ -12,9 +12,9 @@ mini-toc-levels: 1
 kt: 3418
 thumbnail: 30152.jpg
 exl-id: bb0cae58-79bd-427f-9116-d46afabdca59
-source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
+source-git-commit: 819188cabb784a2bbfa097dc4c47f75e38231b53
 workflow-type: tm+mt
-source-wordcount: '1816'
+source-wordcount: '1848'
 ht-degree: 5%
 
 ---
@@ -332,3 +332,11 @@ Los mismos comandos Maven utilizados para crear la variable **ui.apps** se puede
 ## Solución de problemas
 
 Si tiene problemas para generar el proyecto mediante el tipo de archivo del proyecto AEM, consulte la lista de [problemas conocidos](https://github.com/adobe/aem-project-archetype#known-issues) y lista de aperturas [problemas](https://github.com/adobe/aem-project-archetype/issues).
+
+## ¡Felicitaciones de nuevo! {#congratulations-bonus}
+
+Felicidades, por pasar por el material de bonificación.
+
+### Siguientes pasos {#next-steps-bonus}
+
+Comprender la tecnología subyacente de un componente de sitios de Adobe Experience Manager (AEM) mediante una sencilla `HelloWorld` ejemplo con la variable [Conceptos básicos de componentes](component-basics.md) tutorial.
