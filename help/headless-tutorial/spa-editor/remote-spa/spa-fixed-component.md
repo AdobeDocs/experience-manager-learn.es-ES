@@ -1,20 +1,19 @@
 ---
 title: Agregar componentes fijos editables a un SPA remoto
 description: Aprenda a añadir componentes fijos editables a una SPA remota.
-topic: Sin cabeza, SPA, desarrollo
-feature: Editor de SPA, componentes principales, API, desarrollo
+topic: Headless, SPA, Development
+feature: SPA Editor, Core Components, APIs, Developing
 role: Developer, Architect
 level: Beginner
 kt: 7634
 thumbnail: kt-7634.jpeg
-translation-type: tm+mt
-source-git-commit: 0eb086242ecaafa53c59c2018f178e15f98dd76f
+exl-id: edd18f2f-6f24-4299-a31a-54ccc4f6d86e
+source-git-commit: fe056006ab59a3955e5f16a23e96e9e208408cf5
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '511'
 ht-degree: 1%
 
 ---
-
 
 # Componentes fijos editables
 
@@ -22,27 +21,27 @@ Los componentes React editables se pueden &quot;corregir&quot; o codificar en la
 
 ![Componentes fijos](./assets/spa-fixed-component/intro.png)
 
-En este capítulo, reemplazamos el título de la vista Inicio, &quot;Aventuras actuales&quot;, que es texto codificado en `Home.js` con un componente de Título fijo pero editable. Los componentes fijos garantizan la colocación del título, pero también permiten que el texto del título se cree y cambie fuera del ciclo de desarrollo.
+En este capítulo, reemplazamos el título de la vista Inicio, &quot;Aventuras actuales&quot;, que es texto codificado en `Home.js` con un componente de título fijo pero editable. Los componentes fijos garantizan la colocación del título, pero también permiten que el texto del título se cree y cambie fuera del ciclo de desarrollo.
 
 ## Actualizar la aplicación WKND
 
-Para añadir un componente Fijo a la vista Inicio:
+Para agregar un __Fijo__ a la vista Inicio:
 
 + Importe el componente Título del componente principal de React de AEM y regístrelo en el tipo de recurso del Título del proyecto
 + Coloque el componente Título editable en la vista Inicio de SPA
 
 ### Importar en el componente Título del componente principal de React de AEM
 
-En la vista Inicio de SPA, sustituya el texto codificado `<h2>Current Adventures</h2>` por el componente Título de los componentes principales de React AEM. Antes de poder utilizar el componente Título , debemos:
+En la vista Inicio de SPA, sustituya el texto codificado `<h2>Current Adventures</h2>` con el componente Título de los componentes principales de React de AEM. Antes de poder utilizar el componente Título , debemos:
 
 1. Importar el componente Título desde `@adobe/aem-core-components-react-base`
-1. Regístrela mediante `withMappable` para que los desarrolladores puedan colocarla en el SPA
-1. Además, regístrese con `MapTo` para que se pueda utilizar en el [componente contenedor más adelante](./spa-container-component.md).
+1. Regístrelo usando `withMappable` para que los desarrolladores puedan colocarlo en el SPA
+1. Además, regístrese con `MapTo` para que se pueda usar en [componente contenedor más tarde](./spa-container-component.md).
 
 Para ello:
 
 1. Abra el proyecto SPA remoto en `~/Code/wknd-app/aem-guides-wknd-graphql/react-app` en su IDE
-1. Crear un componente React en `react-app/src/components/aem/AEMTitle.js`
+1. Cree un componente React en `react-app/src/components/aem/AEMTitle.js`
 1. Agregue el siguiente código a `AEMTitle.js`.
 
    ```
@@ -73,7 +72,7 @@ Para ello:
 
 Lea los comentarios del código para conocer los detalles de implementación.
 
-El archivo `AEMTitle.js` debería tener el siguiente aspecto:
+La variable `AEMTitle.js` debe tener el siguiente aspecto:
 
 ![AEMTitle.js](./assets/spa-fixed-component/aem-title-js.png)
 
@@ -81,8 +80,8 @@ El archivo `AEMTitle.js` debería tener el siguiente aspecto:
 
 Ahora que el componente Título del componente principal de React de AEM está registrado en y disponible para su uso en la aplicación React, reemplace el texto de título codificado en la vista Inicio.
 
-1. Editar `react-app/src/App.js`
-1. en `Home()` en la parte inferior, sustituya el título codificado por el nuevo componente `AEMTitle`:
+1. Editar `react-app/src/Home.js`
+1. En el `Home()` en la parte inferior, sustituya el título codificado por el nuevo `AEMTitle` componente:
 
    ```
    <h2>Current Adventures</h2>
@@ -96,11 +95,11 @@ Ahora que el componente Título del componente principal de React de AEM está r
        itemPath='root/title'/>
    ```
 
-   Actualice `Apps.js` con el siguiente código:
+   Actualizar `Home.js` con el siguiente código:
 
    ```
    ...
-   import { AEMTitle } from './components/aem/AEMTitle';
+   import { AEMTitle } from './aem/AEMTitle';
    ...
    function Home() {
        return (
@@ -116,18 +115,18 @@ Ahora que el componente Título del componente principal de React de AEM está r
    }
    ```
 
-El archivo `Apps.js` debería tener el siguiente aspecto:
+La variable `Home.js` debe tener el siguiente aspecto:
 
-![App.js](./assets/spa-fixed-component/app-js.png)
+![Home.js](./assets/spa-fixed-component/home-js.png)
 
 ## Cree el componente Título en AEM
 
 1. Iniciar sesión en AEM Author
-1. Vaya a __Sites > WKND App__
-1. Pulse __Inicio__ y seleccione __Editar__ en la barra de acciones superior
-1. Seleccione __Editar__ en el selector de modo de edición en la parte superior derecha del Editor de páginas
+1. Vaya a __Sites > Aplicación WKND__
+1. Toque __Página principal__ y seleccione __Editar__ desde la barra de acciones superior
+1. Select __Editar__ desde el selector de modo de edición en la parte superior derecha del Editor de páginas
 1. Pase el ratón sobre el texto predeterminado del título debajo del logotipo de WKND y encima de la lista de aventuras, hasta que aparezca el contorno azul de edición
-1. Pulse para exponer la barra de acciones del componente y, a continuación, pulse la __llave inglesa__ para editar
+1. Toque para exponer la barra de acciones del componente y, a continuación, toque la __llave__  para editar
 
    ![Barra de acciones del componente Título](./assets/spa-fixed-component/title-action-bar.png)
 
@@ -139,7 +138,7 @@ El archivo `Apps.js` debería tener el siguiente aspecto:
 
 1. Toque __Listo__ para guardar
 1. Previsualizar los cambios en AEM Editor SPA
-1. Actualice la aplicación WKND que se ejecuta localmente en [http://localhost:3000](http://localhost:3000) y vea los cambios de título creados inmediatamente reflejados.
+1. Actualice la aplicación WKND que se ejecuta localmente en [http://localhost:3000](http://localhost:3000) y vea que el título creado cambia inmediatamente reflejado.
 
    ![Componente de título en SPA](./assets/spa-fixed-component/title-final.png)
 
@@ -154,4 +153,4 @@ El archivo `Apps.js` debería tener el siguiente aspecto:
 
 ## Pasos siguientes
 
-Los siguientes pasos son [agregar un componente de contenedor AEM ResponsiveGrid](./spa-container-component.md) a la SPA que permite al autor agregar y editar componentes a la SPA!
+Los siguientes pasos son para [añadir un componente contenedor AEM ResponsiveGrid](./spa-container-component.md) a la SPA que permite al autor añadir y editar componentes a la SPA!
