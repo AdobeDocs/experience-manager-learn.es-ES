@@ -2,10 +2,10 @@
 title: Tutoriales de AEM
 description: Una colección de vídeos y tutoriales para Adobe Experience Manager.
 exl-id: fe83a2dc-b43a-4e71-9b03-d31ec4f6a6ff
-source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
+source-git-commit: 34fbb22916cf8a8df0e3240835c71e0979fd11bd
 workflow-type: tm+mt
-source-wordcount: '177'
-ht-degree: 31%
+source-wordcount: '161'
+ht-degree: 37%
 
 ---
 
@@ -26,7 +26,6 @@ Adobe Experience Manager (AEM) es la plataforma líder de administración de exp
 + [Introducción a AEM Sites: Tutorial de WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 + [Introducción a AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
 + [Introducción a AEM Editor de SPA y React](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
-+ [Introducción a AEM Editor de SPA y Angular](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html)
 + [Introducción a AEM y Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html)
 + [Tutorial de caché de AEM 6.x Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html)
 + [Tutorial de Dynamic Media Classic de AEM 6.x](https://experienceleague.adobe.com/docs/experience-manager-learn/dynamic-media-classic-tutorial/overview.html)

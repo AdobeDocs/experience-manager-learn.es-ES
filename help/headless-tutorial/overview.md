@@ -7,10 +7,10 @@ role: Developer
 level: Beginner
 recommendations: disable, exclude
 exl-id: 57f88d79-9879-4bb9-a3db-9fec95e3a0bd
-source-git-commit: 25a1a40f42d37443db9edc0e09b1691b1c19e848
+source-git-commit: 34fbb22916cf8a8df0e3240835c71e0979fd11bd
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 6%
+source-wordcount: '496'
+ht-degree: 7%
 
 ---
 
@@ -162,23 +162,10 @@ Examine los siguientes tutoriales en función de la tecnología utilizada. Descu
     <p>
   </td>
 </tr>
-<tr>
-  <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html">
-      <img alt="React: sin encabezado" src="./assets/angular-spa-editor.png" />
-    </a>
-    <div>
-      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html">
-    <strong>Angular: SPA Editor</strong>
-    </a>
-    </div>
-    <p>
-    <em>Utilice el AEM SPA editor para administrar la experiencia completa de la aplicación de Angular.</em>
-    <p>
-  </td>
+<tr>  
   <td>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html">
-    <img alt="Angular: Servicios de contenido" src="./assets/android.png" />
+    <img alt="Android: servicios de contenido" src="./assets/android.png" />
     </a>
     <div>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html">
@@ -202,5 +189,6 @@ Examine los siguientes tutoriales en función de la tecnología utilizada. Descu
     <em>Cree una aplicación Node.js utilizando el desarrollador y los tokens de servicio para autenticarse.</em>
     <p>
   </td>
+  <td></td>
 </tr>
 </table>

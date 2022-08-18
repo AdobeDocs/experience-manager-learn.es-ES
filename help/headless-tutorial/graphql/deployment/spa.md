@@ -9,9 +9,9 @@ level: Intermediate
 kt: 10587
 thumbnail: KT-10587.jpg
 mini-toc-levels: 2
-source-git-commit: b98f567e05839db78a1a0a593c106b87af931a49
+source-git-commit: 34fbb22916cf8a8df0e3240835c71e0979fd11bd
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '612'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 # AEM implementaciones de SPA sin encabezado
 
 
-AEM implementaciones de aplicaciones de una sola página (SPA) sin encabezado implican aplicaciones basadas en JavaScript creadas mediante marcos como React, Vue o Angular, que consumen contenido e interactúan con él de forma AEM y sin encabezado.
+AEM implementaciones de aplicaciones de una sola página (SPA) sin encabezado implican aplicaciones basadas en JavaScript creadas mediante marcos como React o Vue, que consumen contenido e interactúan con él de forma AEM y sin encabezado.
 
 La implementación de una SPA que interactúa con los AEM de una manera incompleta implica alojar el SPA y hacer que sea accesible a través de un explorador web.
 
