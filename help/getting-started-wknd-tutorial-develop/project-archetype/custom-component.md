@@ -12,10 +12,10 @@ kt: 4072
 mini-toc-levels: 1
 thumbnail: 30181.jpg
 exl-id: f54f3dc9-6ec6-4e55-9043-7a006840c905
-source-git-commit: df9ff5e6811d35118d1beee6baaffa51081cb3c3
+source-git-commit: 79d41d833ab0659f26f988678e124daa18b857f3
 workflow-type: tm+mt
 source-wordcount: '4138'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -103,7 +103,7 @@ El cuadro de diálogo muestra la interfaz que pueden proporcionar los autores de
        sling:resourceSuperType="core/wcm/components/image/v2/image"/>
    ```
 
-   El archivo XML anterior proporciona la definición del componente, incluido el título, la descripción y el grupo. La variable `sling:resourceSuperType` señala a `core/wcm/components/image/v2/image`, que es el [Componente de imagen principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html).
+   El archivo XML anterior proporciona la definición del componente, incluido el título, la descripción y el grupo. La variable `sling:resourceSuperType` señala a `core/wcm/components/image/v2/image`, que es el [Componente de imagen principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=es).
 
 ### Creación del script HTL {#create-the-htl-script}
 
@@ -447,7 +447,7 @@ Cree una interfaz pública de Java para el Byline. `Byline.java` define los mét
        importar org.osgi.anottation.versioning.Version;
        &quot;
    
-   Siempre que se realicen cambios en los archivos de este paquete, la variable [la versión del paquete debe ajustarse semánticamente](https://semver.org/). Si no, el proyecto Maven [bnd-baseline-maven-plugin](https://github.com/bndtools/bnd/tree/master/maven/bnd-baseline-maven-plugin) detectará una versión de paquete no válida y romperá el compilado. Por suerte, en caso de error, el complemento Maven informa de la versión no válida del paquete Java así como de la versión que debería ser. Acabo de actualizar el `@Version("...")` declaración en el paquete Java que viola `package-info.java` a la versión recomendada por el complemento para corregir.
+Siempre que se realicen cambios en los archivos de este paquete, la variable [la versión del paquete debe ajustarse semánticamente](https://semver.org/). Si no, el proyecto Maven [bnd-baseline-maven-plugin](https://github.com/bndtools/bnd/tree/master/maven/bnd-baseline-maven-plugin) detectará una versión de paquete no válida y romperá el compilado. Por suerte, en caso de error, el complemento Maven informa de la versión no válida del paquete Java así como de la versión que debería ser. Actualice el `@Version("...")` declaración en el paquete Java que viola `package-info.java` a la versión recomendada por el complemento para corregir.
 
 ### Implementación de firma {#byline-implementation}
 

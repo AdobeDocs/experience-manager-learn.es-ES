@@ -11,7 +11,7 @@ level: Beginner
 kt: 4083
 thumbnail: 30359.jpg
 exl-id: 8d3026e9-a7e2-4a76-8a16-a8197a5e04e3
-source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
+source-git-commit: d49dbfae3292f93b7f63f424731966934dc6a5ba
 workflow-type: tm+mt
 source-wordcount: '2878'
 ht-degree: 2%
@@ -206,7 +206,7 @@ El tipo de archivo del proyecto AEM configura automáticamente esta integración
    http://admin:admin@localhost:4502 > OK
    ```
 
-1. El comando `npm run watch` rellena finalmente la variable **clientlib-site** y **clientlib-dependencias** en el **ui.apps** módulo que se sincroniza automáticamente con AEM.
+1. El comando `npm run watch` rellena finalmente la variable **clientlib-site** y **clientlib-dependencias** en el **ui.apps** que se sincroniza automáticamente con AEM.
 
    >[!NOTE]
    >
@@ -333,7 +333,7 @@ Ver el código terminado en [GitHub](https://github.com/adobe/aem-guides-wknd) o
 
 ### Servidor de desarrollo de Webpack: marcado estático {#webpack-dev-static}
 
-En el anterior par de ejercicios pudimos actualizar varios archivos Sass en la **ui.frontend** y a través de un proceso de compilación, finalmente verán estos cambios reflejados en AEM. A continuación, analizaremos las técnicas que aprovechan un [webpack-dev-server](https://webpack.js.org/configuration/dev-server/) desarrollar rápidamente nuestros estilos front-end contra **static** HTML.
+En el anterior par de ejercicios pudimos actualizar varios archivos Sass en la **ui.frontend** y a través de un proceso de compilación, finalmente verán estos cambios reflejados en AEM. A continuación, veremos una técnica que aprovecha un [webpack-dev-server](https://webpack.js.org/configuration/dev-server/) desarrollar rápidamente nuestros estilos front-end contra **static** HTML.
 
 Esta técnica es útil si la mayoría de los estilos y el código front-end lo realiza un desarrollador de Front-End dedicado que puede no tener acceso fácil a un entorno AEM. Esta técnica también permite a la FED realizar modificaciones directamente al HTML, que luego se puede entregar a un desarrollador AEM para que las implemente como componentes.
 
@@ -389,9 +389,9 @@ Esta técnica es útil si la mayoría de los estilos y el código front-end lo r
 
 [**aemfeed**](https://aemfed.io/) es una herramienta de código abierto de línea de comandos que puede utilizarse para acelerar el desarrollo del front-end. Está alimentado por  [aemsync](https://www.npmjs.com/package/aemsync), [Browsersync](https://www.npmjs.com/package/browser-sync) y [Seguimiento de registros de Sling](https://sling.apache.org/documentation/bundles/log-tracers.html).
 
-A un nivel superior **aemfeed** está diseñado para escuchar los cambios de archivos dentro del **ui.apps** y los sincroniza automáticamente directamente en una instancia de AEM en ejecución. En función de los cambios, un explorador local se actualizará automáticamente, acelerando así el desarrollo del front-end. También está construido para funcionar con el rastreador de registros de Sling para mostrar automáticamente cualquier error del lado del servidor directamente en el terminal.
+A un nivel superior **aemfeed** está diseñado para escuchar los cambios de archivos dentro del **ui.apps** y sincronizarlos automáticamente directamente con una instancia de AEM en ejecución. En función de los cambios, un explorador local se actualizará automáticamente, acelerando así el desarrollo del front-end. También está construido para funcionar con el rastreador de registros de Sling para mostrar automáticamente cualquier error del lado del servidor directamente en el terminal.
 
-Si está haciendo mucho trabajo dentro del **ui.apps** módulo, modificación de secuencias de comandos HTL y creación de componentes personalizados, **aemfeed** puede ser una herramienta muy poderosa para usar. [Puede encontrar la documentación completa aquí .](https://github.com/abmaonline/aemfed).
+Si está haciendo mucho trabajo dentro del **ui.apps** módulo, modificación de secuencias de comandos HTL y creación de componentes personalizados, **aemfeed** puede ser una herramienta muy poderosa para usar. [Puede encontrar la documentación completa aquí](https://github.com/abmaonline/aemfed).
 
 ### Depuración de bibliotecas del lado del cliente {#debugging-clientlibs}
 
