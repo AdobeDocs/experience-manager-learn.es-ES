@@ -5,10 +5,11 @@ solution: Experience Manager
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: cloud-service
+version: Cloud Service
 topic: Development
 kt: 8844
-source-git-commit: d38da94bd4164163a16899b565c90b159194580a
+exl-id: 9a7ed792-ca0d-458f-b8dd-9129aba37df6
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 2%
@@ -70,7 +71,7 @@ Seleccione cualquier proyecto dentro de su proyecto aem-banking-application como
 ## Configuración de la instancia de autor de AEM
 
 Se pueden seguir los siguientes pasos para configurar rápidamente la instancia preparada para la nube en su sistema local.
-* [Descargar el SDK de AEM más reciente](https://experience.adobe.com/#/downloads/content/software-distribution/es-ES/aemcloud.html)
+* [Descargar el SDK de AEM más reciente](https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html)
 
 * [Descargue el último complemento de AEM Forms](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)
 
@@ -84,22 +85,3 @@ Se pueden seguir los siguientes pasos para configurar rápidamente la instancia 
 * Cree la siguiente estructura de carpetas.C:\aemformscs\aem-sdk\author\crx-quickstart\install
 * Copiar aem-forms-addon-xxxxxx.far en la carpeta de instalación
 * Abra el símbolo del sistema y vaya a c:\aemformscs\aem-sdk\author enter the following command java -jar aem-author-p4502.jar -gui. Esto implementará el complemento de formularios en el paquete de la instancia de AEM.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

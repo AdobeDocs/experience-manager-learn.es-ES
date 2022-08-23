@@ -1,27 +1,27 @@
 ---
 title: Entrega de fragmentos de contenido en AEM
-seo-title: Envío de fragmentos de contenido en Adobe Experience Manager
+seo-title: Delivering Content Fragments in Adobe Experience Manager
 description: Los fragmentos de contenido, independientemente del diseño, se pueden utilizar directamente en AEM Sites con componentes principales o se pueden enviar de forma automática a canales descendentes.
-seo-description: Los fragmentos de contenido, independientemente del diseño, se pueden utilizar directamente en AEM Sites con componentes principales o se pueden enviar de forma automática a canales descendentes.
+seo-description: Content Fragments, independent of layout, can be used directly in AEM Sites with Core Components or can be delivered in a headless manner to downstream channels.
 sub-product: content-services
-feature: Fragmentos de contenido
+feature: Content Fragments
 topics: authoring, content-architecture
 audience: all
 doc-type: feature video
 activity: use
-version: 6.3, 6.4, 6.5
+version: 6.4, 6.5
 uuid: 045473d2-5abe-4414-b91c-d369f3069ead
 discoiquuid: 912e0c41-83cf-49f7-b515-09519b6718c1
-topic: Administración de contenido
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 525cd30c-05bf-4f17-b61b-90609ce757ea
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 2%
+source-wordcount: '548'
+ht-degree: 5%
 
 ---
-
 
 # Entrega de fragmentos de contenido {#delivering-content-fragments}
 
@@ -29,7 +29,7 @@ Los fragmentos de contenido de Adobe Experience Manager (AEM) son contenido edit
 
 Los fragmentos de contenido, independientemente del diseño, se pueden utilizar directamente en AEM Sites con componentes principales o se pueden enviar de forma automática a canales descendentes.
 
-Esta serie de vídeos cubre las opciones de envío para utilizar fragmentos de contenido. Los detalles sobre la definición y [creación de fragmentos de contenido se encuentran aquí](content-fragments-feature-video-use.md).
+Esta serie de vídeos cubre las opciones de envío para utilizar fragmentos de contenido. Detalles sobre la definición y [creación de fragmentos de contenido puede encontrarse aquí](content-fragments-feature-video-use.md).
 
 1. Uso de fragmentos de contenido en páginas web
 2. Exposición de fragmentos de contenido como JSON mediante AEM servicios de contenido
@@ -39,7 +39,7 @@ Esta serie de vídeos cubre las opciones de envío para utilizar fragmentos de c
 
 >[!VIDEO](https://video.tv.adobe.com/v/22449/?quality=12&learn=on)
 
-Los fragmentos de contenido se pueden usar en páginas de AEM Sites o de forma similar en fragmentos de experiencias utilizando el componente de fragmento de contenido [AEM de los componentes principales de WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html).
+Los fragmentos de contenido se pueden usar en páginas de AEM Sites o de forma similar en fragmentos de experiencias utilizando los componentes principales de WCM de AEM [Componente Fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=es).
 
 Los componentes de fragmento de contenido se pueden diseñar con AEM sistema de estilos para mostrar el contenido según sea necesario.
 
@@ -49,7 +49,7 @@ Los componentes de fragmento de contenido se pueden diseñar con AEM sistema de 
 
 AEM Content Services facilita la creación de puntos finales HTTP basados en AEM página que representen contenido en un formato JSON normalizado.
 
-El vídeo anterior utiliza el [Componente de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) para exponer fragmentos de contenido individuales. El [Componente de lista de fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-list.html) es un componente nuevo que permite a un autor definir una consulta que rellenará dinámicamente la página con una lista de fragmentos de contenido. Se prefiere el componente Lista de fragmentos de contenido cuando es necesario exponer varios fragmentos de contenido.
+El vídeo anterior utiliza la variable [Componente de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) para exponer fragmentos de contenido individuales. La variable [Componente de lista de fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-list.html) es un componente nuevo que permite a un autor definir una consulta que rellenará dinámicamente la página con una lista de fragmentos de contenido. Se prefiere el componente Lista de fragmentos de contenido cuando es necesario exponer varios fragmentos de contenido.
 
 *Ejemplo de carga útil JSON de punto final de Content Services:*\
 **[atletas.json](assets/athletes.json)**
@@ -60,7 +60,7 @@ El vídeo anterior utiliza el [Componente de fragmento de contenido](https://exp
 
 La primera introducción en AEM 6.5 es la compatibilidad mejorada con los fragmentos de contenido con la API HTTP de recursos. Esto proporciona una manera fácil para que los desarrolladores realicen operaciones de Crear, Leer, Actualizar y Eliminar (CRUD) con fragmentos de contenido.
 
-*Ejemplos de solicitudes POSTMAN:*
+*Ejemplos de solicitudes de POSTMAN:*
 **[CRUD-CFM-API-We.Retail.postman_collection.json](assets/CRUD-CFM-API-We.Retail.postman_collection.json)**
 
 ## Qué método de envío utilizar
@@ -69,7 +69,7 @@ La primera introducción en AEM 6.5 es la compatibilidad mejorada con los fragme
 
 El método para enviar un fragmento de contenido a través de un canal web es sencillo mediante el uso del componente Fragmento de contenido con AEM Sites.
 
-### Sin encabezado
+### Headless
 
 Existen dos opciones para exponer fragmento de contenido como JSON para admitir un canal de terceros en un caso de uso remoto:
 

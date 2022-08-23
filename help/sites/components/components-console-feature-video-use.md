@@ -4,19 +4,19 @@ description: La consola Componentes proporciona a los desarrolladores y administ
 topics: components
 audience: all
 doc-type: feature video
-version: 6.3, 6.4, 6.5
+version: 6.4, 6.5
 activity: use
-feature: Componentes principales
-topic: Administración de contenido
+feature: Core Components
+topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 6f33f121-5564-4c46-ab56-7ea382a0ab5a
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 3%
+source-wordcount: '174'
+ht-degree: 1%
 
 ---
-
 
 # Uso de la consola Componentes {#using-the-components-console-with-aem-sites}
 
@@ -29,7 +29,7 @@ La consola Componentes proporciona las siguientes funciones:
 * Información general: lista de todos los componentes instalados disponibles en la instancia de AEM actual
 * [!UICONTROL Propiedades]: muestra metadatos como el título, el grupo y la descripción de un componente
 * [!UICONTROL Políticas]: muestra las directivas existentes para un componente determinado y la plantilla asociada
-* [!UICONTROL Uso] en directo: muestra una lista de páginas en las que se incluye el componente
+* [!UICONTROL Uso de Live]: muestra una lista de páginas en las que se incluye el componente
 
 La consola Componentes se encuentra en **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL Componentes]**.
 URL de la consola Componentes (autor local de AEM): [http://localhost:4502/libs/wcm/core/content/sites/components.html](http://localhost:4502/libs/wcm/core/content/sites/components.html)

@@ -2,17 +2,17 @@
 title: Uso de Brand Portal
 description: Tutoriales en vídeo de la integración de AEM Author y AEM Assets Brand Portal.
 feature: Brand Portal
-version: 6.3, 6.4, 6.5
+version: 6.4, 6.5
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+exl-id: 42f13a19-52bf-413d-a141-63f1f0910dce
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '1764'
 ht-degree: 2%
 
 ---
-
 
 # Uso de Brand Portal con AEM Assets{#using-brand-portal-with-aem-assets}
 
@@ -30,7 +30,7 @@ La fuente de recursos de Brand Portal se utiliza para recopilar recursos de agen
 
 *Se requiere el Experience Manager Autor 6.5 SP2 (6.5.2) o bueno para utilizar Asset Sourcing*
 
-Consulte [Habilitar Autor de Experience Manager para el abastecimiento de recursos](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en) para obtener instrucciones sobre cómo configurar el abastecimiento de recursos en Autor de Experience Manager.
+Consulte [Habilitar el autor Experience Manager para el abastecimiento de recursos](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=es) para obtener instrucciones sobre cómo configurar el abastecimiento de recursos en el autor del Experience Manager.
 
 ## Mejoras y funciones de Brand Portal de febrero de 2019{#brand-portal-features-and-enhancements-644}
 
@@ -48,7 +48,7 @@ Continúe leyendo para obtener más información sobre la búsqueda de texto par
 
 Ahora puede buscar recursos especificando solo una parte (es decir, una palabra o dos) de la frase buscada en el panel de filtrado.
 
-**Caso**  de uso: La búsqueda parcial de frases resulta útil cuando no está seguro de la combinación exacta de palabras que se producen en la frase buscada.
+**Caso de uso** : La búsqueda parcial de frases resulta útil cuando no está seguro de la combinación exacta de palabras que se producen en la frase buscada.
 
 Por ejemplo, si el formulario de búsqueda en Brand Portal utiliza Predicado de propiedades para la búsqueda parcial del título de los recursos, al especificar el término &quot;campo&quot; se devuelven todos los activos con la palabra &quot;campo&quot; en la frase del título.
 
@@ -56,7 +56,7 @@ Por ejemplo, si el formulario de búsqueda en Brand Portal utiliza Predicado de 
 
 Brand Portal permite utilizar el asterisco (*) en la consulta de búsqueda junto con una parte de la palabra de la frase buscada.
 
-**Caso**  de uso: si no está seguro de las palabras exactas que se producen en la frase buscada, puede utilizar una búsqueda comodín para rellenar los huecos en la consulta de búsqueda.
+**Caso de uso** : si no está seguro de las palabras exactas que se producen en la frase buscada, puede utilizar una búsqueda comodín para rellenar los huecos en la consulta de búsqueda.
 
 Por ejemplo, si especifica escalar*, se devuelven todos los recursos que tengan palabras que empiecen por los caracteres escalar en la frase de título si el formulario de búsqueda en Brand Portal utiliza Predicado de propiedades para la búsqueda parcial del título de los recursos.
 
@@ -68,12 +68,12 @@ Del mismo modo, especificando:
 #### Habilitar la jerarquía de carpetas
 
 Los administradores ahora pueden configurar cómo se muestran las carpetas a los usuarios no administradores (editores, visualizadores y usuarios invitados) al iniciar sesión.
-[La opción Habilitar ](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal-general-configuration.html) jerarquía de carpetas se agrega en Configuración general, en el panel Herramientas de administración. Si la configuración es:
+[Habilitar jerarquía de carpetas](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal-general-configuration.html) La configuración se agrega en Configuración general, en el panel Herramientas de administración. Si la configuración es:
 
 * Habilitado, el árbol de carpetas que comienza desde la carpeta raíz es visible para los usuarios que no son administradores. Por lo tanto, concederles una experiencia de navegación similar a la de los administradores.
 * Deshabilitado, solo las carpetas compartidas se muestran en la página de aterrizaje.
 
-[Habilitar la funcionalidad ](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal-general-configuration.html) Jerarquía de carpetas (cuando está habilitada) ayuda a diferenciar las carpetas con los mismos nombres compartidos de jerarquías diferentes. Al iniciar sesión, los usuarios no administradores ven ahora las carpetas principales virtuales (y antecesoras) de las carpetas compartidas.
+[Habilitar jerarquía de carpetas](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal-general-configuration.html) (cuando está habilitada) le ayuda a diferenciar las carpetas con los mismos nombres compartidos de jerarquías diferentes. Al iniciar sesión, los usuarios no administradores ven ahora las carpetas principales virtuales (y antecesoras) de las carpetas compartidas.
 
 Las carpetas compartidas están organizadas dentro de los directorios respectivos en carpetas virtuales. Puede reconocer estas carpetas virtuales con un icono de bloqueo.
 
@@ -98,7 +98,7 @@ Las codificaciones de vídeo de Dynamic Media se pueden descargar desde:
 
 ### Publicación programada en Brand Portal
 
-El flujo de trabajo de publicación de recursos (y carpetas) de [AEM (6.4.2.0)](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html#main-pars_header_9658011) La instancia de autor en Brand Portal se puede programar para una fecha y hora posteriores.
+Flujo de trabajo de publicación de recursos (y carpetas) desde [AEM (6.4.2.0)](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html#main-pars_header_9658011) La instancia de autor en Brand Portal se puede programar para una fecha y hora posteriores.
 
 Del mismo modo, los recursos publicados se pueden eliminar del portal en una fecha (hora) posterior, programando el flujo de trabajo Cancelar publicación desde Brand Portal .
 
@@ -107,11 +107,11 @@ Del mismo modo, los recursos publicados se pueden eliminar del portal en una fec
 Las organizaciones pueden personalizar la dirección URL del portal si tienen un prefijo alternativo en la dirección URL. Para obtener un alias para el nombre de inquilino en la URL de su portal existente, las organizaciones deben ponerse en contacto con el servicio de asistencia técnica de Adobe.
 
 Tenga en cuenta que solo se puede personalizar el prefijo de la URL de Brand Portal y no la URL completa.
-Por ejemplo, una organización con un dominio existente `wknd.brand-portal.adobe.com` puede obtener `wkndinc.brand-portal.adobe.com` creado si se solicita.
+Por ejemplo, una organización con dominio existente `wknd.brand-portal.adobe.com` can `wkndinc.brand-portal.adobe.com` creada a petición.
 
-Sin embargo, la instancia de Autor de AEM solo puede [configurarse](https://helpx.adobe.com/es/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html) con la dirección URL de identificación del inquilino y no con la dirección URL de alias del inquilino (alternativa).
+Sin embargo, la instancia de autor de AEM puede ser [configurado](https://helpx.adobe.com/es/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html) solo con la dirección URL de identificación del inquilino y no con la dirección URL de alias del inquilino (alternativa).
 
-**Caso**  de uso: Las organizaciones pueden satisfacer sus necesidades de promoción de la marca personalizando la URL del portal, en lugar de atenerse a la URL proporcionada por Adobe.
+**Caso de uso** : Las organizaciones pueden satisfacer sus necesidades de promoción de la marca personalizando la URL del portal, en lugar de atenerse a la URL proporcionada por Adobe.
 
 ## Mejoras y funciones de diciembre de 2018 de Brand Portal{#brand-portal-features-and-enhancements-642}
 
@@ -151,12 +151,12 @@ Se añaden seis nuevas configuraciones para que los administradores habiliten o 
 
 ### Otras mejoras
 
-* *Ruta de jerarquía de carpetas en las vistas*  de tarjeta y lista: permite a los usuarios saber la ubicación de las carpetas almacenadas dentro de una instancia de Brand Portal. Ayuda a los usuarios a diferenciar carpetas con el mismo nombre dentro de una jerarquía de carpetas diferente.
-* *Opción Información general* : proporciona metadatos sobre el recurso o la carpeta a los usuarios que no son administradores. Para ello, seleccione el recurso o la carpeta y, a continuación, seleccione la opción Información general en la barra de herramientas. Actualmente, muestra el título, la fecha de creación y la ruta
+* *Ruta de jerarquía de carpetas en las vistas de tarjeta y lista* permite a los usuarios conocer la ubicación de las carpetas almacenadas en una instancia de Brand Portal. Ayuda a los usuarios a diferenciar carpetas con el mismo nombre dentro de una jerarquía de carpetas diferente.
+* *Opción Información general* — proporciona metadatos sobre el recurso o la carpeta a los usuarios que no son administradores. para ello, seleccione el recurso o la carpeta y, a continuación, seleccione la opción Información general en la barra de herramientas. Actualmente, muestra el título, la fecha de creación y la ruta
 
 ### La interfaz de usuario de los hosts de Adobe I/O para configurar las integraciones de oAuth
 
-Brand Portal utiliza la interfaz [https://legacy-oauth.cloud.adobe.io/](https://legacy-oauth.cloud.adobe.io/) de Adobe I/O para crear la aplicación JWT, que permite configurar integraciones oAuth para permitir la integración de AEM Assets con Brand Portal. Anteriormente, la interfaz de usuario para configurar integraciones de OAuth estaba alojada en `https://marketing.adobe.com/developer/`. Para obtener más información sobre la integración de AEM Assets con Brand Portal para la publicación de recursos y colecciones en Brand Portal, consulte [Configuración de la integración de AEM Assets con Brand Portal](https://helpx.adobe.com/es/experience-manager/6-4/assets/using/brand-portal-configuring-integration.html).
+Brand Portal utiliza el Adobe I/O [https://legacy-oauth.cloud.adobe.io/](https://legacy-oauth.cloud.adobe.io/) para crear la aplicación JWT, que permite configurar integraciones oAuth para permitir la integración de AEM Assets con Brand Portal. Anteriormente, la interfaz de usuario para configurar integraciones de OAuth estaba alojada en `https://marketing.adobe.com/developer/`. Para obtener más información sobre la integración de AEM Assets con Brand Portal para la publicación de recursos y colecciones en Brand Portal, consulte [Configuración de la integración de AEM Assets con Brand Portal](https://helpx.adobe.com/es/experience-manager/6-4/assets/using/brand-portal-configuring-integration.html).
 
 ## Mejoras y funciones de Brand Portal de febrero de 2018{#brand-portal-features-and-enhancements-632}
 

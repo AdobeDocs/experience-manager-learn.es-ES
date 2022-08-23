@@ -1,18 +1,17 @@
 ---
 title: Introducción al tema en Asset Share Commons
 description: Materiales para la comprensión funcional y técnica de Assets Share Commons
-version: 6.3, 6.4, 6.5
+version: 6.4, 6.5
 topic: Content Management
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: b7d0b6b1-145a-4987-a9dc-7263efa4d9fb
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '117'
-ht-degree: 4%
+source-wordcount: '113'
+ht-degree: 1%
 
 ---
-
 
 # Introducción al tema en Asset Share Commons {#asset-share-commons-theme}
 
@@ -73,7 +72,7 @@ En este vídeo se creará un nuevo tema basado en el tema oscuro de Asset Share 
 @msgWarningBackgroundColor: @yellow;
 ```
 
-Descargar [Tema de biblioteca de cliente personalizado](assets/asc-theme-demo.zip)
+Descargar [Tema personalizado de la biblioteca del cliente](assets/asc-theme-demo.zip)
 
 ## Recursos adicionales{#additional-resources}
 

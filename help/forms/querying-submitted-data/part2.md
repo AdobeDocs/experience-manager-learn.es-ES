@@ -1,25 +1,24 @@
 ---
 title: AEM Forms con esquema JSON y datos[Part2]
-seo-title: AEM Forms con esquema JSON y datos[Part2]
+seo-title: AEM Forms with JSON Schema and Data[Part2]
 description: Tutorial de varias partes para guiarle por los pasos necesarios para crear un formulario adaptable con esquema JSON y consultar los datos enviados.
-seo-description: Tutorial de varias partes para guiarle por los pasos necesarios para crear un formulario adaptable con esquema JSON y consultar los datos enviados.
+seo-description: Multi-Part tutorial to walk you through the steps involved in creating Adaptive Form with JSON schema and querying the submitted data.
 feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
-version: 6.3,6.4,6.5
+version: 6.4,6.5
 topic: Development
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 29195c70-af12-4a22-8484-3c87a1e07378
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 1%
+source-wordcount: '342'
+ht-degree: 0%
 
 ---
-
 
 # Almacenamiento de datos enviados en la base de datos
 
@@ -32,7 +31,7 @@ Para almacenar los datos enviados en la base de datos, se escribirá un servlet 
 
 Hemos creado un envío personalizado para gestionar el envío del formulario. En post.POST.jsp de este envío personalizado reenviamos la solicitud a nuestro servlet.
 
-Para obtener más información sobre los ruegos de envío personalizados, lea este [artículo](https://helpx.adobe.com/experience-manager/kt/forms/using/custom-submit-aem-forms-article.html)
+Para obtener más información sobre los formularios de envío personalizados, lea esta [article](https://helpx.adobe.com/experience-manager/kt/forms/using/custom-submit-aem-forms-article.html)
 
 com.adobe.aemds.guide.utils.GuideSubmitUtils.setForwardPath(slingRequest,&quot;/bin/storeafsubmit&quot;,null,null);
 

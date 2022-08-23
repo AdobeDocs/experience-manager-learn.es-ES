@@ -5,16 +5,16 @@ solution: Experience Manager
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: cloud-service
+version: Cloud Service
 topic: Development
 kt: 8842
-source-git-commit: d38da94bd4164163a16899b565c90b159194580a
+exl-id: 274018b9-91fe-45ad-80f2-e7826fddb37e
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 2%
 
 ---
-
 
 # Instalación del software requerido
 
@@ -34,8 +34,3 @@ Este tutorial hace referencia a esta estructura de carpetas a partir de ahora.
 * Abra la ventana del símbolo del sistema y vaya a **c:\cloudmanager**
 * Copie y pegue el contenido del [archivo de texto](assets/creating-maven-project.txt) en la ventana del símbolo del sistema. Puede que tenga que cambiar el tipo de archivoVersión=30 según la variable [última versión](https://github.com/adobe/aem-project-archetype/releases). La última versión era 30 en el momento de escribir este artículo.
 * Ejecute el comando pulsando la tecla Intro. Si todo va correctamente, debería ver el mensaje de éxito de la compilación.
-
-
-
-
-

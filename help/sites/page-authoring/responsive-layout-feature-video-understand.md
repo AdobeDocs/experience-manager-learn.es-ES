@@ -1,26 +1,26 @@
 ---
 title: Explicación del diseño interactivo con AEM Sites
-seo-title: Explicación del diseño interactivo con AEM Sites
+seo-title: Understanding Responsive Layout with AEM Sites
 description: AEM le permite disponer de un diseño interactivo para sus páginas mediante el uso del componente Contenedor de diseño. Con el diseño interactivo, los autores de contenido pueden crear contenido interactivo para distintos dispositivos y previsualizar la experiencia del usuario final en AEM.
-seo-description: Abarca los pasos para crear un diseño interactivo para diferentes dispositivos
-feature: Editor de páginas, plantillas editables
+seo-description: Covers the steps to author responsive layout for different devices
+feature: Page Editor, Editable Templates
 topics: authoring, responsive
 audience: author, marketer
 doc-type: feature video
 activity: use
-version: 6.3, 6.4, 6.5
+version: 6.4, 6.5
 kt: 4252
 thumbnail: 32012.jpg
-topic: Administración de contenido
+topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: c125c0e0-1ed2-463e-bd34-767d009479eb
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 15%
+source-wordcount: '110'
+ht-degree: 17%
 
 ---
-
 
 # Explicación del diseño interactivo {#understanding-responsive-layout-with-aem-sites}
 

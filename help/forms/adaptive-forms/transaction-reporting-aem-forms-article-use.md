@@ -1,18 +1,18 @@
 ---
 title: Uso de informes de transacciones en AEM Forms
 description: Los informes de transacciones de AEM Forms permiten mantener un recuento de todas las transacciones realizadas desde una fecha especificada en la implementación de AEM Forms.
-feature: Formularios adaptables
-version: 6.4.1,6.5
-topic: Desarrollo
+feature: Adaptive Forms
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 36c38cb6-6f6a-4328-abf5-7a30059b66ce
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 0%
+source-wordcount: '367'
+ht-degree: 1%
 
 ---
-
 
 # Uso de informes de transacciones en AEM Forms{#using-transaction-reporting-in-aem-forms}
 
@@ -35,7 +35,7 @@ Para ver el informe de transacciones, inicie sesión en AEM Forms como administr
 
 Seleccionar herramientas | Forms | Ver informe de transacciones
 
-o ver el informe de transacciones haciendo clic [aquí](http://localhost:4502/mnt/overlay/fd/transaction/gui/content/report.html)
+o ver el informe de transacciones haciendo clic en [here](http://localhost:4502/mnt/overlay/fd/transaction/gui/content/report.html)
 
 ![Informes de transacciones](assets/transactionreporting.gif)
 
@@ -43,9 +43,8 @@ En la captura de pantalla de arriba Document Processed es el número de document
 
 Una transacción permanece en el búfer durante un período especificado (tiempo de búfer de vaciado + tiempo de replicación inversa). De forma predeterminada, el recuento de transacciones tarda aproximadamente 90 segundos en reflejarse en el informe de transacciones.
 
-Las acciones como enviar un formulario PDF, utilizar la interfaz de usuario del agente para obtener una vista previa de una comunicación interactiva o utilizar métodos de envío de formularios no estándar no se contabilizan como transacciones. AEM Forms proporciona una API para registrar estas transacciones. Llame a la API desde las implementaciones personalizadas para registrar una transacción.
+Las acciones como enviar un formulario de PDF, usar la interfaz de usuario del agente para obtener una vista previa de una comunicación interactiva o usar métodos de envío de formularios no estándar no se contabilizan como transacciones. AEM Forms proporciona una API para registrar estas transacciones. Llame a la API desde las implementaciones personalizadas para registrar una transacción.
 
 Si está viendo el informe de transacción en la instancia de autor, asegúrese de que la replicación inversa esté configurada en todas las instancias de publicación.
 
 Para obtener más información sobre los informes de transacciones [haga clic aquí](https://helpx.adobe.com/experience-manager/6-4/forms/using/transaction-reports-overview.html)
-

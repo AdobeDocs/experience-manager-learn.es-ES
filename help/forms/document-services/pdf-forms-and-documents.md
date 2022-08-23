@@ -4,12 +4,12 @@ description: PDF es en realidad una familia de formatos de archivo, y este artí
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: 6.3,6.4, 6.5
+version: 6.4, 6.5
 feature: PDF Generator
 kt: 7071
 topic: Development
 exl-id: ffa9d243-37e5-420c-91dc-86c73a824083
-source-git-commit: 228da29e7ac0d61359c2b94131495b5b433a09dc
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '1277'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Los archivos de muestra pueden [descargado desde aquí](assets/pdf-file-types.zi
 
 ## PDF de arquitectura de Forms XML (PDF XFA)
 
-Adobe utiliza el término formulario de PDF XFA para hacer referencia al Forms dinámico e interactivo que crea con AEM Forms Designer. El Forms y los archivos que crea con Designer se basan en XML Forms Architecture (XFA) de Adobe. En muchos aspectos, el formato de archivo del PDF XFA está más cerca de un archivo de HTML que de un archivo de PDF tradicional. Por ejemplo, el siguiente código muestra el aspecto de un objeto de texto simple en un archivo PDF XFA.
+Adobe utiliza el término formulario de PDF XFA para hacer referencia al Forms dinámico e interactivo que crea con AEM Forms Designer. La Forms y los archivos que crea con Designer se basan en la arquitectura de Forms XML (XFA) de Adobe. En muchos aspectos, el formato de archivo del PDF XFA está más cerca de un archivo de HTML que de un archivo de PDF tradicional. Por ejemplo, el siguiente código muestra el aspecto de un objeto de texto simple en un archivo PDF XFA.
 
 ![Campo de texto](assets/text-field.JPG)
 
@@ -41,7 +41,7 @@ XFA Forms se basa en XML. Este formato flexible y bien estructurado permite a un
 El diseño estático de los PDF forms XFA nunca cambia en el tiempo de ejecución, pero puede ser interactivo para el usuario. Las siguientes son algunas ventajas de los PDF forms XFA estáticos:
 
 * El diseño estático de los PDF forms XFA nunca cambia en el tiempo de ejecución, pero puede ser interactivo para el usuario.
-* Forms estático es compatible con las herramientas de Comentario y marcado de Acrobat.
+* Forms estático admite las herramientas de Comentario y Marcado de Acrobat.
 * Forms estático permite importar y exportar comentarios de Acrobat.
 * Forms estático admite la subconfiguración de fuentes, que es una técnica que se puede realizar en un servidor de AEM Forms.
 * El Forms estático se puede representar con el visor de PDF integrado que viene con los navegadores modernos.
@@ -82,7 +82,7 @@ Un documento certificado proporciona a los destinatarios de documentos PDF y for
 
 ### Acróformularios
 
-Las formas son la tecnología de formulario interactivo más antigua de Adobe; datan de la versión 3 de Acrobat. El Adobe proporciona la variable [Referencia de la API de Acrobat Forms](assets/FormsAPIReference.pdf), de mayo de 2003, para facilitar los detalles técnicos de esta tecnología. Las formas son una combinación de los siguientes elementos:
+Las formas son la tecnología de formulario interactivo más antigua del Adobe; datan de la versión 3 de Acrobat. El Adobe proporciona la variable [Referencia de la API de Acrobat Forms](assets/FormsAPIReference.pdf), de mayo de 2003, para facilitar los detalles técnicos de esta tecnología. Las formas son una combinación de los siguientes elementos:
 
 * PDF tradicional que define la presentación estática y los gráficos del formulario.
 * Campos de formulario interactivos con tornillos en la parte superior con las herramientas de formulario del programa Adobe Acrobat. Estas herramientas de formulario son un pequeño subconjunto de lo que está disponible en AEM Forms Designer.
@@ -97,7 +97,7 @@ Al igual que el PDF, el PDF/A es una especificación estándar ISO. Fue desarrol
 * Todas las fuentes deben estar incrustadas, y deben ser fuentes que tengan una licencia de uso ilimitado para documentos electrónicos.
 * JavaScript no está permitido
 * No se permite la transparencia
-* No se permite la codificación
+* No se permite el cifrado
 * No se permite el contenido de audio y vídeo
 * Los espacios de color deben definirse de forma independiente del dispositivo
 * Todos los metadatos deben seguir ciertos estándares
@@ -113,7 +113,7 @@ Aunque los documentos tienen el mismo aspecto, el archivo PDF/A se abre con una 
 
 ![Pdf-img](assets/pdfa-message.png)
 
-La barra de mensajes del documento incluye instrucciones y posiblemente botones para ayudarle a completar una tarea. Está codificado por colores y verá el color azul cuando abra tipos especiales de PDF (como este archivo de PDF/A), así como PDF certificados y firmados digitalmente. La barra cambia a morada para los PDF forms y a amarilla cuando participa en una revisión para PDF.
+La barra de mensajes del documento incluye instrucciones y posiblemente botones para ayudarle a completar una tarea. Está codificado por colores y verá el color azul cuando abra tipos especiales de PDF (como este archivo PDF/A), así como PDF certificados y firmados digitalmente. La barra cambia a morada para los PDF forms y a amarilla cuando participa en una revisión para PDF.
 
 >[!NOTE]
 >

@@ -1,14 +1,15 @@
 ---
 title: Rellenar previamente un formulario adaptable mediante un perfil ACS
 description: Relleno previo de Forms adaptable mediante el perfil ACS
-feature: Forms adaptable, Modelo de datos de formulario
-version: 6.3,6.4,6.5
-topic: Desarrollo
+feature: Adaptive Forms, Form Data Model
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 502f4bdf-d4af-409f-a611-62b7a1a6065a
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '333'
 ht-degree: 1%
 
 ---
@@ -17,7 +18,7 @@ ht-degree: 1%
 
 En esta parte, rellenaremos previamente el formulario adaptable con información de perfil recuperada de ACS. AEM Forms tiene esta potente capacidad para rellenar previamente formularios adaptables.
 
-Para obtener más información sobre cómo rellenar previamente formularios adaptables, lea este [tutorial](https://helpx.adobe.com/experience-manager/kt/forms/using/prefill-service-adaptive-forms-article-use.html).
+Para obtener más información sobre cómo rellenar previamente formularios adaptables, lea esta [tutorial](https://helpx.adobe.com/experience-manager/kt/forms/using/prefill-service-adaptive-forms-article-use.html).
 
 Para rellenar previamente el formulario adaptable recuperando datos de ACS, supondremos que hay un perfil en ACS que tiene el mismo correo electrónico que el usuario que ha iniciado sesión AEM. Por ejemplo, si el id. de correo electrónico de la persona que ha iniciado sesión en AEM es csimms@adobe.com, esperamos encontrar un perfil en ACS cuyo correo electrónico es csimms@adobe.com.
 
@@ -233,4 +234,3 @@ Para que esto funcione en su sistema, siga las siguientes instrucciones:
 * [Importar formulario adaptable de ejemplo en AEM mediante el administrador de paquetes](assets/pre-fill-af-from-campaign.zip)
 * Asegúrese de iniciar sesión en AEM con un usuario cuyo ID de correo electrónico comparte un perfil en Adobe Campaign. Por ejemplo, si el ID de correo electrónico del usuario AEM es johndoe@adobe.com, debe tener un perfil en ACS cuyo correo electrónico sea johndoe@adobe.com.
 * [Obtener una vista previa del formulario](http://localhost:4502/content/dam/formsanddocuments/prefillfromcampaign/jcr:content?wcmmode=disabled).
-

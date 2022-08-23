@@ -1,22 +1,22 @@
 ---
 title: Guía de implementación de búsqueda simple
 description: La implementación de búsqueda simple son los materiales del laboratorio de la Cumbre 2017 AEM Search Demystified. Esta página contiene los materiales de este laboratorio. Para una visita guiada al laboratorio, por favor vea el libro de Lab en la sección Presentación de esta página.
-version: 6.3, 6.4, 6.5
+version: 6.4, 6.5
 feature: Search
 topic: Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+exl-id: aa268c5f-d29e-4868-a58b-444379cb83be
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '897'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
-
 # Guía de implementación de búsqueda simple{#simple-search-implementation-guide}
 
-La implementación de búsqueda simple son los materiales del **laboratorio de Adobe Summit AEM Search Demystified**. Esta página contiene los materiales de este laboratorio. Para una visita guiada al laboratorio, por favor vea el libro de Lab en la sección Presentación de esta página.
+La implementación de búsqueda simple son los materiales del **Adobe Summit lab AEM búsqueda Demystified**. Esta página contiene los materiales de este laboratorio. Para una visita guiada al laboratorio, por favor vea el libro de Lab en la sección Presentación de esta página.
 
 ![Información general sobre la arquitectura de búsqueda](assets/l4080/simple-search-application.png)
 
@@ -31,14 +31,14 @@ La implementación de búsqueda simple son los materiales del **laboratorio de A
 
 * [Administrador de índices](http://localhost:4502/libs/granite/operations/content/diagnosis/tool.html/granite_oakindexmanager)
 * [Explicar la consulta](http://localhost:4502/libs/granite/operations/content/diagnosis/tool.html/granite_queryperformance)
-* [CRXDE Lite](http://localhost:4502/crx/de/index.jsp#/oak%3Aindex/cqPageLucene)  > /oak:index/cqPageLucene
+* [CRXDE Lite](http://localhost:4502/crx/de/index.jsp#/oak%3Aindex/cqPageLucene) > /oak:index/cqPageLucene
 * [Administrador de paquetes CRX](http://localhost:4502/crx/packmgr/index.jsp)
 * [Depurador de QueryBuilder](http://localhost:4502/libs/cq/search/content/querydebug.html?)
 * [Generador de definiciones de índices Oak](https://oakutils.appspot.com/generate/index)
 
 ### Capítulos {#chapters}
 
-*Los vínculos de capítulo siguientes suponen que los  [paquetes ](#initialpackages) iniciales están instalados en AEM Author en`http://localhost:4502`*
+*Los vínculos de capítulo siguientes asumen que la variable [Paquetes iniciales](#initialpackages) están instalados en AEM Author en`http://localhost:4502`*
 
 * [Capítulo 1](http://localhost:4502/editor.html/content/summit/l4080/chapter-1.html)
 * [Capítulo 2](http://localhost:4502/editor.html/content/summit/l4080/chapter-2.html)
@@ -74,7 +74,7 @@ La implementación de búsqueda simple son los materiales del **laboratorio de A
 * [Modelos Sling](https://sling.apache.org/documentation/bundles/models.html)
 * [Exportador de modelo Sling](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130)
 * [API de QueryBuilder](https://experienceleague.adobe.com/docs/)
-* [AEM complemento de Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode)  ([página de documentación](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/))
+* [Complemento AEM Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode) ([Página de documentación](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/))
 
 ## Correcciones y seguimiento {#corrections-and-follow-up}
 
@@ -82,18 +82,18 @@ Correcciones y aclaraciones de las discusiones de laboratorio y respuestas a pre
 
 1. **¿Cómo dejar de reindexar?**
 
-   La reindexación se puede detener a través de IndexStats MBean disponible a través de [AEM Web Console > JMX](http://localhost:4502/system/console/jmx)
+   La reindexación se puede detener a través de IndexStats MBean disponible a través de [Consola web de AEM > JMX](http://localhost:4502/system/console/jmx)
 
    * [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
-      * Ejecute `abortAndPause()` para anular la reindexación. Esto bloqueará el índice para volver a indexarlo hasta que se invoque `resume()`.
-      * Al ejecutar `resume()` se reiniciará el proceso de indexación.
+      * Ejecutar `abortAndPause()` para anular la reindexación. Esto bloqueará el índice para volver a indexarlo hasta `resume()` se invoca a .
+      * En ejecución `resume()` reiniciará el proceso de indexación.
    * Documentación: [https://jackrabbit.apache.org/oak/docs/query/indexing.html#async-index-mbean](https://jackrabbit.apache.org/oak/docs/query/indexing.html#async-index-mbean)
 
 2. **¿Cómo pueden los índices oak soportar múltiples inquilinos?**
 
-   Oak admite la colocación de índices a través del árbol de contenido, y estos índices solo indexarán dentro de ese sub-árbol. Por ejemplo, **`/content/site-a/oak:index/cqPageLucene`** se puede crear para indexar contenido solo bajo **`/content/site-a`.**
+   Oak admite la colocación de índices a través del árbol de contenido, y estos índices solo indexarán dentro de ese sub-árbol. Por ejemplo **`/content/site-a/oak:index/cqPageLucene`** se puede crear para indexar contenido solo bajo **`/content/site-a`.**
 
-   Un enfoque equivalente es usar las propiedades **`includePaths`** y **`queryPaths`** en un índice en **`/oak:index`**. Por ejemplo:
+   Un enfoque equivalente es usar la variable **`includePaths`** y **`queryPaths`** propiedades en un índice bajo **`/oak:index`**. Por ejemplo:
 
    * `/oak:index/siteAcqPageLucene@includePaths=/content/site-a`
    * `/oak:index/siteAcqPageLucene@queryPaths=/content/site-a`
@@ -101,7 +101,7 @@ Correcciones y aclaraciones de las discusiones de laboratorio y respuestas a pre
    Las consideraciones con este enfoque son:
 
    * Las consultas DEBEN especificar una restricción de ruta que sea igual al alcance de la ruta de consulta del índice, o ser un descendiente de allí.
-   * Los índices de ámbitos más amplios (por ejemplo `/oak:index/cqPageLucene`) TAMBIÉN indexarán los datos, lo que dará como resultado una ingesta duplicada y costo de uso del disco.
+   * Índices de ámbito más amplio (por ejemplo `/oak:index/cqPageLucene`) TAMBIÉN indexará los datos, lo que dará como resultado una ingesta duplicada y costo de uso del disco.
    * Puede requerir una administración de configuración duplicada (por ejemplo, agregar el mismo indexRules en varios índices de inquilino si deben satisfacer los mismos conjuntos de consultas)
    * Este enfoque se sirve mejor en el nivel de AEM Publish para la búsqueda de sitio personalizada, como en AEM Author, es común que las consultas se ejecuten en la parte superior del árbol de contenido para diferentes inquilinos (por ejemplo, a través de OmniSearch): diferentes definiciones de índice pueden resultar en un comportamiento diferente solo en función de la restricción de ruta.
 
@@ -117,7 +117,7 @@ Correcciones y aclaraciones de las discusiones de laboratorio y respuestas a pre
 
 4. **¿Cómo se busca Páginas y Recursos en la misma consulta?**
 
-   Una novedad en AEM 6.3 es la capacidad de consultar varios tipos de nodos en la misma consulta proporcionada. La siguiente consulta de QueryBuilder. Tenga en cuenta que cada &quot;subconsulta&quot; puede resolverse en su propio índice, por lo que en este ejemplo, la subconsulta `cq:Page` se resuelve en `/oak:index/cqPageLucene` y la subconsulta `dam:Asset` se resuelve en `/oak:index/damAssetLucene`.
+   Una novedad en AEM 6.3 es la capacidad de consultar varios tipos de nodos en la misma consulta proporcionada. La siguiente consulta de QueryBuilder. Tenga en cuenta que cada &quot;subconsulta&quot; puede resolver en su propio índice, por lo que en este ejemplo, la variable `cq:Page` la subconsulta se resuelve en `/oak:index/cqPageLucene` y `dam:Asset` la subconsulta se resuelve en `/oak:index/damAssetLucene`.
 
    ```plain
    group.p.or=true
@@ -135,7 +135,7 @@ Correcciones y aclaraciones de las discusiones de laboratorio y respuestas a pre
    PLAN: [cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) *:* */ union [dam:Asset] as [a] /* lucene:damAssetLucene(/oak:index/damAssetLucene) *:* */
    ```
 
-   Explore la consulta y los resultados a través de [QueryBuilder Debugger](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Ddam%3AAsset%0D%0A%23+add+all+asset+restrictions+to+this+group) y [AEM complemento de Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US).
+   Explorar la consulta y los resultados mediante [Depurador de QueryBuilder](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Ddam%3AAsset%0D%0A%23+add+all+asset+restrictions+to+this+group) y [Complemento AEM Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US).
 
 5. **¿Cómo buscar en varias rutas en la misma consulta?**
 
@@ -159,4 +159,4 @@ Correcciones y aclaraciones de las discusiones de laboratorio y respuestas a pre
    PLAN: [cq:Page] as [a] /* traverse "/content/docs/en/6-2//*" where isdescendantnode([a], [/content/docs/en/6-2]) */ union [cq:Page] as [a] /* traverse "/content/docs/en/6-3//*" where isdescendantnode([a], [/content/docs/en/6-3]) */
    ```
 
-   Explore la consulta y los resultados a través de [QueryBuilder Debugger](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0Agroup.1_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-2%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Dcq%3APage%0D%0Agroup.2_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-3%0D%0A%23+add+all+asset+restrictions+to+this+group) y [AEM complemento de Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US).
+   Explorar la consulta y los resultados mediante [Depurador de QueryBuilder](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0Agroup.1_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-2%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Dcq%3APage%0D%0Agroup.2_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-3%0D%0A%23+add+all+asset+restrictions+to+this+group) y [Complemento AEM Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US).

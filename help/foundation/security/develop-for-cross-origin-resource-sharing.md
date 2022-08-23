@@ -1,32 +1,32 @@
 ---
 title: Desarrollo para el intercambio de recursos de origen cruzado (CORS) con AEM
 description: Un breve ejemplo de cómo aprovechar CORS para acceder a contenido AEM desde una aplicación web externa a través de JavaScript del lado del cliente.
-version: 6.3, 6,4, 6.5
+version: 6,4, 6.5
 topic: Security, Development
 role: Developer
 level: Beginner
 feature: Security
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+exl-id: 867cf74e-44e7-431b-ac8f-41b63c370635
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 0%
 
 ---
 
-
 # Desarrollo para el intercambio de recursos de origen cruzado (CORS)
 
-Un breve ejemplo de cómo aprovechar [!DNL CORS] para acceder a contenido AEM desde una aplicación web externa a través de JavaScript del lado del cliente.
+Un breve ejemplo de apalancamiento [!DNL CORS] para acceder a AEM contenido desde una aplicación web externa a través de JavaScript del lado del cliente.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18837/?quality=12&learn=on)
 
 En este vídeo:
 
-* **www.example.** se compila en localhost mediante  `/etc/hosts`
-* **aem-publish.** localmaps para localhost a través de  `/etc/hosts`
-* SimpleHTTPServer (un envoltorio para SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html) de [[!DNL Python]) está sirviendo la página HTML a través del puerto 8000.
-   * _Ya no está disponible en Mac App Store. Usar similar, como [Jeeves](https://apps.apple.com/us/app/jeeves-local-http-server/id980824182?mt=12)._
-* [!DNL AEM Dispatcher] se ejecuta en  [!DNL Apache HTTP Web Server] 2.4 y la solicitud de proxy inverso  `aem-publish.local` a  `localhost:4503`.
+* **www.example.com** se asigna a localhost mediante `/etc/hosts`
+* **aem-publish.local** se asigna a localhost mediante `/etc/hosts`
+* SimpleHTTPServer (un envoltorio para [[!DNL Python]s SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)) sirve la página del HTML a través del puerto 8000.
+   * _Ya no está disponible en Mac App Store. Usar de forma similar como [Jeeves](https://apps.apple.com/us/app/jeeves-local-http-server/id980824182?mt=12)._
+* [!DNL AEM Dispatcher] se está ejecutando en [!DNL Apache HTTP Web Server] 2.4 y solicitud de proxy inverso a `aem-publish.local` a `localhost:4503`.
 
 Para obtener más información, consulte [Explicación del uso compartido de recursos de origen cruzado (CORS) en AEM](./understand-cross-origin-resource-sharing.md).
 
@@ -35,9 +35,9 @@ Para obtener más información, consulte [Explicación del uso compartido de rec
 Esta página web tiene lógica que
 
 1. Al hacer clic en el botón
-1. Hace una [!DNL AJAX GET] solicitud a `http://aem-publish.local/content/we-retail/.../experience/_jcr_content.1.json`
-1. Recupera el `jcr:title` de la respuesta JSON
-1. Inserta el `jcr:title` en el DOM
+1. Hace un [!DNL AJAX GET] solicitar a `http://aem-publish.local/content/we-retail/.../experience/_jcr_content.1.json`
+1. Recupera la variable `jcr:title` formulario de la respuesta JSON
+1. Inyecta el `jcr:title` en el DOM
 
 ```xml
 <html>
@@ -94,7 +94,7 @@ Access-Control-Request-Method,Access-Control-Request-Headers]"
 
 ## Configuración de Dispatcher {#dispatcher-configuration}
 
-Para permitir el almacenamiento en caché y la entrega de encabezados CORS en contenido almacenado en caché, añada la siguiente [/configuración de encabezados de clientes](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders) a todos los archivos `dispatcher.any` de AEM Publish compatibles.
+Para permitir el almacenamiento en caché y la entrega de encabezados CORS en contenido almacenado en caché, agregue lo siguiente [/clientheaders configuración](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders) a todos los que admiten AEM Publish `dispatcher.any` archivos.
 
 ```
 /cache { 
@@ -111,17 +111,16 @@ Para permitir el almacenamiento en caché y la entrega de encabezados CORS en co
 }
 ```
 
-**Reinicie la** aplicación del servidor web después de realizar cambios en el  `dispatcher.any` archivo.
+**Reinicio de la aplicación del servidor web** después de realizar cambios en `dispatcher.any` archivo.
 
-Es probable que se borre la caché por completo para garantizar que los encabezados se almacenen correctamente en caché en la siguiente solicitud después de una actualización de configuración `/clientheaders`.
+Es probable que se borre la caché por completo para garantizar que los encabezados se almacenen correctamente en caché en la siguiente solicitud después de una `/clientheaders` actualización de configuración.
 
 ## Materiales de apoyo {#supporting-materials}
 
 * [AEM fábrica de configuración OSGi para directivas de intercambio de recursos de origen cruzado](http://localhost:4502/system/console/configMgr/com.adobe.granite.cors.impl.CORSPolicyImpl)
 * [Jeeves para macOS](https://apps.apple.com/us/app/jeeves-local-http-server/id980824182?mt=12)
-* [Python SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)  (compatible con Windows/macOS/Linux)
+* [Servidor Python SimpleHTTPS](https://docs.python.org/2/library/simplehttpserver.html) (compatible con Windows/macOS/Linux)
 
 * [Explicación del uso compartido de recursos de origen cruzado (CORS) en AEM](./understand-cross-origin-resource-sharing.md)
 * [Uso compartido de recursos de origen cruzado (W3C)](https://www.w3.org/TR/cors/)
 * [Control de acceso HTTP (MDN Mozilla)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)
-

@@ -1,18 +1,18 @@
 ---
 title: Introducción a Forms adaptable
-description: 'Este tutorial le guiará por los pasos necesarios para crear formularios adaptables con varias pestañas. Aprenderá a usar Tablas, Diseño de acordeón y Editor de reglas para crear reglas comerciales. '
-feature: Formularios adaptables
-version: 6.3,6.4,6.5
-topic: Desarrollo
+description: Este tutorial le guiará por los pasos necesarios para crear formularios adaptables con varias pestañas. Aprenderá a usar Tablas, Diseño de acordeón y Editor de reglas para crear reglas comerciales.
+feature: Adaptive Forms
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 8c90fe1c-0c83-4287-9766-08d806b8815a
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '210'
-ht-degree: 4%
+source-wordcount: '207'
+ht-degree: 2%
 
 ---
-
 
 # Introducción a Forms adaptable {#getting-started-with-adaptive-forms}
 
@@ -30,8 +30,6 @@ Necesitará lo siguiente:
 
 * **Se da por hecho que está ejecutando AEM Forms versión 6.4 o superior en localhost:4502.**
 
-* [Descargue client-libs-and-](assets/client-libs-and-logo.zip) log y  [getting-started-](assets/getting-started-fragment.zip) fragmentate en su disco duro.
+* [Descargue client-libs-and-logo](assets/client-libs-and-logo.zip) y [getting-started-fragment](assets/getting-started-fragment.zip) a su disco duro.
 
-* Importe los archivos zip a AEM mediante el [administrador de paquetes ](http://localhost:4502/crx/packmgr/index.jsp)
-
-
+* Importe los archivos zip en AEM mediante [gestor de paquetes ](http://localhost:4502/crx/packmgr/index.jsp)

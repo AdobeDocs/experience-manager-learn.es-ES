@@ -1,20 +1,20 @@
 ---
 title: Uso de la importación y exportación de metadatos en AEM Assets
 description: Obtenga información sobre cómo utilizar las funciones de importación y exportación de metadatos de Adobe Experience Manager Assets. Las funciones de importación y exportación permiten a los autores de contenido actualizar de forma masiva los metadatos de los recursos existentes.
-version: 6.3, 6.4, 6.5, Cloud Service
+version: 6.4, 6.5, Cloud Service
 topic: Content Management
 feature: Metadata
 role: Admin
 level: Intermediate
 kt: 647, 917
 thumbnail: 22132.jpg
-source-git-commit: ac93d6ba636e64ba6d8bbdb0840810b8f47a25c8
+exl-id: 0681e2c4-8661-436c-9170-9aa841a6fa27
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 3%
 
 ---
-
 
 # Uso de la importación y exportación de metadatos en AEM Assets {#metadata-import-and-export}
 
@@ -37,7 +37,7 @@ Obtenga información sobre cómo utilizar las funciones de importación y export
 ### Primera fila
 
 * La primera fila del archivo CSV define el esquema de metadatos.
-* La primera columna toma el valor predeterminado `assetPath`, que contiene la ruta JCR absoluta de un recurso.
+* El valor predeterminado de la primera columna es `assetPath`, que contiene la ruta JCR absoluta para un recurso.
 
 * Las columnas posteriores de la primera fila apuntan a otras propiedades de metadatos de un recurso.
    * Por ejemplo : `dc:title, dc:description, jcr:title`
@@ -53,9 +53,9 @@ Obtenga información sobre cómo utilizar las funciones de importación y export
    * Incorrecto: `Dc:Title {{String}}`
 
 * El tipo de propiedad no distingue entre mayúsculas y minúsculas
-* Se admiten todos los tipos de propiedades [JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/PropertyType.html) válidos
+* Todas son válidas [Tipos de propiedades JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/PropertyType.html) son compatibles
 
-* Formato de propiedad de varios valores: `<metadata property name> {{<property type : MULTI }}`
+* Formato de propiedad de varios valores - `<metadata property name> {{<property type : MULTI }}`
 
 ### Segunda fila a filas N
 

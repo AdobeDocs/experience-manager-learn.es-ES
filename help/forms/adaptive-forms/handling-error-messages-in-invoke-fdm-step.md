@@ -1,18 +1,18 @@
 ---
 title: Captura de mensajes de error en el servicio del modelo de datos de formulario como paso en el flujo de trabajo
 description: A partir de AEM Forms 6.5.1, ahora se pueden capturar mensajes de error generados al invocar el servicio del modelo de datos de formulario como paso en AEM flujo de trabajo. Flujo de trabajo.
-feature: Flujo de trabajo
-version: 6.5.1,6.5.2
-topic: Desarrollo
+feature: Workflow
+version: 6.5
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 8cae155c-c393-4ac3-a412-bf14fc411aac
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 1%
+source-wordcount: '246'
+ht-degree: 0%
 
 ---
-
 
 # Captura de mensajes de error al invocar el paso del servicio del modelo de datos de formulario
 
@@ -45,5 +45,3 @@ Con estos cambios, el paso Invocar el servicio del modelo de datos de formulario
 
 }
 ```
-
-

@@ -1,29 +1,28 @@
 ---
 title: Listado de tipos de recursos personalizados en AEM Forms
-seo-title: Listado de tipos de recursos personalizados en AEM Forms
+seo-title: Listing Custom Asset Types in AEM Forms
 description: Parte 2 de la lista de tipos de recursos personalizados en AEM Forms
-seo-description: Parte 2 de la lista de tipos de recursos personalizados en AEM Forms
+seo-description: Part 2 of Listing Custom Asset Types in AEM Forms
 uuid: 6467ec34-e452-4c21-9bb5-504f9630466a
 feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
-version: 6.3,6.4,6.5
+version: 6.4,6.5
 discoiquuid: 4b940465-0bd7-45a2-8d01-e4d640c9aedf
 topic: Development
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: f221d8ee-0452-4690-a936-74bab506d7ca
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '595'
 ht-degree: 0%
 
 ---
 
-
-# Lista de tipos de recursos personalizados en AEM Forms {#listing-custom-asset-types-in-aem-forms}
+# Listado de tipos de recursos personalizados en AEM Forms {#listing-custom-asset-types-in-aem-forms}
 
 ## Creación de una plantilla personalizada {#creating-custom-template}
 
@@ -37,7 +36,7 @@ A los efectos de este artículo, crearemos una plantilla personalizada para most
 
 ![appsfolder](assets/appsfolder_.png)
 
-El siguiente código enumera los distintos tipos de recursos que utilizan el componente de búsqueda y lista. Creamos elementos html independientes para cada tipo de recurso como se muestra en la etiqueta data-type = &quot;videos&quot;. Para el tipo de recurso de &quot;vídeos&quot;, utilizamos el elemento &lt;video> para reproducir el vídeo en línea. Para el tipo de recurso de &quot;documentos de palabras&quot; usamos diferentes marcas html.
+El siguiente código enumera los distintos tipos de recursos que utilizan el componente de búsqueda y lista. Creamos elementos html independientes para cada tipo de recurso como se muestra en la etiqueta data-type = &quot;videos&quot;. Para el tipo de recurso &quot;vídeos&quot; utilizamos la variable &lt;video> para reproducir el vídeo en línea. Para el tipo de recurso de &quot;documentos de palabras&quot; usamos diferentes marcas html.
 
 ```html
 <div class="__FP_boxes-container __FP_single-color">
@@ -77,11 +76,11 @@ El siguiente código enumera los distintos tipos de recursos que utilizan el com
 >
 >Línea 11 - Cambie la imagen src para que apunte a una imagen de su elección en DAM.
 >
->Para enumerar los formularios adaptables en esta plantilla, cree un nuevo div y establezca su atributo de tipo de datos en &quot;guía&quot;. Puede copiar y pegar el div cuyos datos-type=&quot;printForm&quot; y establecer el tipo de datos del div recién copiado en &quot;guide&quot;
+>Para incluir Forms adaptable en esta plantilla, cree un nuevo div y establezca su atributo de tipo de datos en &quot;guía&quot;. Puede copiar y pegar el div cuyos datos-type=&quot;printForm&quot; y establecer el tipo de datos del div recién copiado en &quot;guide&quot;
 
-## Configurar el componente Búsqueda y lista {#configure-search-and-lister-component}
+## Configurar El Componente Búsqueda Y Lister {#configure-search-and-lister-component}
 
-Una vez que hemos definido la plantilla personalizada, ahora tenemos que asociar esta plantilla personalizada con el componente &quot;Buscar y listar&quot;. Apunte el navegador [a esta dirección URL ](http://localhost:4502/editor.html/content/AemForms/CustomPortal.html).
+Una vez que hemos definido la plantilla personalizada, ahora tenemos que asociar esta plantilla personalizada con el componente &quot;Buscar y listar&quot;. Apunte al explorador [a esta url ](http://localhost:4502/editor.html/content/AemForms/CustomPortal.html).
 
 Cambie al modo Diseño y configure el sistema de párrafos para incluir el componente Buscar y listar en el grupo de componentes permitidos. El componente Búsqueda y lista forma parte del grupo Servicios de documentos.
 
@@ -111,11 +110,11 @@ La siguiente captura de pantalla muestra los tipos de recursos configurados para
 
 ![assettypes](assets/assettypes.png)
 
-Ahora que ha configurado el componente del portal de búsqueda y lista, es hora de ver el listado en acción. Apunte el navegador [a esta dirección URL ](http://localhost:4502/content/AemForms/CustomPortal.html?wcmmode=disabled). Los resultados deberían ser como la imagen que se muestra a continuación.
+Ahora que ha configurado el componente del portal de búsqueda y lista, es hora de ver el listado en acción. Apunte al explorador [a esta url ](http://localhost:4502/content/AemForms/CustomPortal.html?wcmmode=disabled). Los resultados deberían ser como la imagen que se muestra a continuación.
 
 >[!NOTE]
 >
 >Si su portal enumera tipos de recursos personalizados en un servidor de publicación, asegúrese de dar permiso de &quot;lectura&quot; al usuario &quot;fd-service&quot; al nodo **/apps/fd/fp/extensions/querybuilder**
 
-![](assets/assettypeslistings.png)
-[assettypesDescargue e instale este paquete mediante el gestor de paquetes.](assets/customassettypekt1.zip) Contiene ejemplos de documentos mp4 y word y archivos xdp que se utilizarán como tipos de recursos para enumerarlos con el componente de búsqueda y lista
+![assettypes](assets/assettypeslistings.png)
+[Descargue e instale este paquete mediante el gestor de paquetes.](assets/customassettypekt1.zip) Contiene ejemplos de documentos mp4 y word y archivos xdp que se utilizarán como tipos de recursos para enumerarlos con el componente de búsqueda y lista

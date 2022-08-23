@@ -1,7 +1,7 @@
 ---
 title: Grupos de usuarios cerrados en AEM Assets
 description: Grupos de usuarios cerrados (CUG) es una función que se utiliza para restringir el acceso al contenido a un grupo selecto de usuarios en un sitio publicado. Este vídeo muestra cómo se pueden utilizar los grupos de usuarios cerrados con Adobe Experience Manager Assets para restringir el acceso a una carpeta específica de recursos.
-version: 6.3, 6.4, 6.5, Cloud Service
+version: 6.4, 6.5, Cloud Service
 topic: Administration, Security
 feature: User and Groups
 role: Admin
@@ -9,7 +9,7 @@ level: Intermediate
 kt: 649
 thumbnail: 22155.jpg
 exl-id: a2bf8a82-15ee-478c-b7c3-de8a991dfeb8
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%
@@ -36,9 +36,9 @@ Los grupos de usuarios cerrados (CUG) y las listas de control de acceso (ACL) se
 
 |  | ACL | CUG |
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| Uso previsto | Configure y aplique permisos para contenido en la instancia de AEM **current**. | Configure las directivas CUG para el contenido en AEM instancia **author**. Aplique directivas CUG para contenido en AEM instancia **publish** . |
+| Uso previsto | Configure y aplique permisos para contenido en la variable **current** AEM instancia. | Configurar directivas de CUG para contenido en AEM **author** instancia. Aplicar directivas CUG para contenido en AEM **publicar** instancias. |
 | Niveles de permisos | Define los permisos concedidos/denegados para usuarios/grupos en todos los niveles: Leer, Modificar, Crear, Eliminar, Leer ACL, Editar ACL, Replicar. | Otorga acceso de lectura a un conjunto de usuarios/grupos. Deniega el acceso de lectura a *todos los demás* usuarios/grupos. |
-| Publicación | Las ACL se *no* publican con contenido. | Las directivas CUG *se* publican con contenido. |
+| Publicación | Las ACL son *not* publicado con contenido. | Políticas de CUG *are* publicado con contenido. |
 
 ## Compatibilidad con vínculos {#supporting-links}
 

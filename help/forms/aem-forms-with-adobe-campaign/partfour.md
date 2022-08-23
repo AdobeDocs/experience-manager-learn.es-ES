@@ -1,18 +1,18 @@
 ---
 title: Creación de un perfil de campaña mediante el modelo de datos de formulario
 description: Pasos necesarios para crear perfiles de Adobe Campaign Standard mediante el modelo de datos de formulario de AEM Forms
-feature: Formularios adaptables
-version: 6.3,6.4,6.5
-topic: Desarrollo
+feature: Adaptive Forms
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 59d5ba6d-91c1-48c7-8c87-8e0caf4f2d7e
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 4%
+source-wordcount: '426'
+ht-degree: 3%
 
 ---
-
 
 # Creación de un perfil de campaña mediante el modelo de datos de formulario {#create-campaign-profile-using-form-data-model}
 
@@ -22,7 +22,7 @@ Pasos necesarios para crear perfiles de Adobe Campaign Standard mediante el mode
 
 Al crear una fuente de datos con el archivo de intercambio, AEM Forms admite los siguientes tipos de autenticación
 
-* Ninguna
+* Ninguno
 * OAuth 2.0
 * Autenticación básica
 * Clave de API
@@ -112,8 +112,7 @@ El archivo de intercambio de muestra se le da como parte del archivo del recurso
 Para probar la solución, siga los siguientes pasos:
 * [Asegúrese de haber seguido los pasos descritos aquí](aem-forms-with-campaign-standard-getting-started-tutorial.md)
 * [Descargue y descomprima este archivo para obtener el archivo swagger](assets/create-acs-profile-swagger-file.zip)
-* Creación de una fuente de datos mediante el archivo de intercambio
-Crear modelo de datos de formulario y basarlo en el origen de datos creado en el paso anterior
+* Crear un origen de datos con el archivo de intercambio Crear modelo de datos de formulario y basarlo en el origen de datos creado en el paso anterior
 * Cree un formulario adaptable basado en el modelo de datos de formulario creado en el paso anterior.
 * Arrastre y suelte los siguientes elementos de la ficha orígenes de datos en el formulario adaptable
 

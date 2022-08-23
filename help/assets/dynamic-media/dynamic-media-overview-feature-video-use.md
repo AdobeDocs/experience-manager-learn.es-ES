@@ -1,23 +1,23 @@
 ---
 title: Descripción general de Dynamic Media con AEM Assets
-description: Esta serie de vídeos le ofrece información general sobre cómo se administra y accede al contenido multimedia mediante Adobe Experience Manager Dynamic Media como servicio de contenido. Dynamic Media permite administrar y publicar experiencias digitales dinámicas, una función exclusiva de Recursos Experience Manager. Nuestro marco y conjunto de componentes permiten a los especialistas en marketing personalizar y ofrecer experiencias interactivas y multimedia en todos los dispositivos.
+description: Esta serie de vídeos le ofrece información general sobre cómo se administra y accede al contenido multimedia mediante Adobe Experience Manager Dynamic Media como servicio de contenido. Dynamic Media permite administrar y publicar experiencias digitales dinámicas, una función exclusiva de Experience Manager Assets. Nuestro marco y conjunto de componentes permiten a los especialistas en marketing personalizar y ofrecer experiencias interactivas y multimedia en todos los dispositivos.
 sub-product: dynamic-media
-feature: Recorte inteligente, Perfiles de vídeo, Perfiles de imagen, Ajustes preestablecidos de visor, Vídeo VR 360, Conjuntos de imágenes, Conjuntos de giros
-version: 6.3, 6.4, 6.5
-topic: Administración de contenido
+feature: Smart Crop, Video Profiles, Image Profiles, Viewer Presets, 360 VR Video, Image Sets, Spin Sets
+version: 6.4, 6.5
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 59462cb4-d379-4e58-b786-ff8dbae6191c
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '871'
 ht-degree: 0%
 
 ---
 
-
 # Uso de Dynamic Media con AEM Assets {#understanding-aem-dynamic-media}
 
-Esta serie de vídeos de varias partes le ofrece una descripción general de cómo se administra y accede al contenido multimedia mediante Adobe Experience Manager Dynamic Media como servicio de contenido. Dynamic Media permite administrar y publicar experiencias digitales dinámicas, una función exclusiva de Recursos Experience Manager. Nuestro marco y conjunto de componentes permiten a los especialistas en marketing personalizar y ofrecer experiencias interactivas y multimedia en todos los dispositivos.
+Esta serie de vídeos de varias partes le ofrece una descripción general de cómo se administra y accede al contenido multimedia mediante Adobe Experience Manager Dynamic Media como servicio de contenido. Dynamic Media permite administrar y publicar experiencias digitales dinámicas, una función exclusiva de Experience Manager Assets. Nuestro marco y conjunto de componentes permiten a los especialistas en marketing personalizar y ofrecer experiencias interactivas y multimedia en todos los dispositivos.
 
 ## Información general de Dynamic Media
 
@@ -96,7 +96,7 @@ En este vídeo se describe cómo no cambiar el tamaño de las imágenes para apr
 >
 >La CALIDAD de la imagen se mide en porcentajes de compresión inversa, donde la calidad del 100% está menos comprimida, lo que da como resultado imágenes de alta calidad pero tamaños de archivo relativamente grandes. La compresión Jpeg es un esquema de compresión con pérdidas en el que la configuración de compresión determina la calidad de la imagen y el tamaño del archivo.
 
-Equilibre la calidad de la imagen jpeg con el tamaño de archivo resultante (en kilobytes) para mejorar la velocidad de carga de la página, utilizando 2 comandos para ajustar la configuración de compresión jpeg. QLT define la calidad de la imagen ajustando los ajustes de calidad de compresión de jpeg. El comando Tamaño JPEG permite designar el tamaño del archivo que debe conseguirse mediante compresión.
+Equilibre la calidad de la imagen jpeg con el tamaño de archivo resultante (en kilobytes) para mejorar la velocidad de carga de la página, utilizando 2 comandos para ajustar la configuración de compresión jpeg. QLT define la calidad de la imagen ajustando los ajustes de calidad de compresión de jpeg. El comando Tamaño del JPEG le permite designar qué tamaño de archivo debe conseguirse mediante compresión.
 
 ## Añadir subtítulos CC a un vídeo de Dynamic Media
 

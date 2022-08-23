@@ -2,18 +2,18 @@
 title: Explicación de la administración de color con AEM Dynamic Media
 description: En este vídeo analizamos la gestión de color de Dynamic Media y cómo se puede utilizar para proporcionar funciones de previsualización de corrección de color en para AEM Assets.
 sub-product: dynamic-media
-feature: Perfiles de imagen, Perfiles de vídeo
-version: 6.3, 6.4, 6.5
-topic: Administración de contenido
+feature: Image Profiles, Video Profiles
+version: 6.4, 6.5
+topic: Content Management
 role: Developer
 level: Intermediate
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: a733532b-db64-43f6-bc43-f7d422d5071a
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 15%
+source-wordcount: '319'
+ht-degree: 17%
 
 ---
-
 
 # Explicación de la administración de color con AEM Dynamic Media{#understanding-color-management-with-aem-dynamic-media}
 
@@ -23,7 +23,7 @@ En este vídeo analizamos la gestión de color de Dynamic Media y cómo se puede
 
 >[!NOTE]
 >
->[Active Dynamic ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html) Media AEM para utilizar esta función.
+>[Habilitar Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es) en AEM para utilizar esta función.
 
 Esta función está disponible para AEM versiones 6.1 y 6.2 como Feature Pack.
 
@@ -90,12 +90,12 @@ A continuación se muestra la plantilla XML para el nodo de configuración Gesti
 | Nombre | Espacio color | Descripción |
 | ------------------- | ---------- | ------------------------------------- |
 | AdobeRGB | RGB | Adobe RGB (1998) |
-| AppleRGB | RGB | Apple RGB |
-| CIERGB | RGB | CIE RGB |
+| AppleRGB | RGB | RGB de Apple |
+| CIERGB | RGB | RGB del CIE |
 | CoatedFogra27 | CMYK | Recubierto FOGRA27 (ISO 12647-2:2004) |
 | CoatedFogra39 | CMYK | Recubierto FOGRA39 (ISO 12647-2:2004) |
 | CoatedGraCol | CMYK | Recubierto GRACoL 2006 (ISO 12647-2:2004) |
-| ColorMatchRGB | RGB | ColorMatch RGB |
+| ColorMatchRGB | RGB | RGB ColorMatch |
 | EuropeISOCoated | CMYK | Europa ISO Coated FOGRA27 |
 | EuroscaleCoated | CMYK | Euroscale Coated v2 |
 | EuroscaleUncovered | CMYK | Euroscale Uncovered v2 |
@@ -107,13 +107,13 @@ A continuación se muestra la plantilla XML para el nodo de configuración Gesti
 | NewsprintSNAP2007 | CMYK | US Newsprint (SNAP 2007) |
 | NTSC | RGB | NTSC (1953) |
 | PAL | RGB | PAL/SECAM |
-| ProPhoto | RGB | ProPhoto RGB |
+| ProPhoto | RGB | RGB ProPhoto |
 | PS4Default | CMYK | CMYK predeterminado de Photoshop 4 |
 | PS5Default | CMYK | CMYK predeterminado de Photoshop 5 |
 | Coated | CMYK | U.S. Sheetfeed Coated v2 |
 | SheetedUncovered | CMYK | U.S. Sheetfeed Uncovered v2 |
 | SMPTE | RGB | SMPTE-C |
-| sRGB | RGB sRGB | IEC61966-2.1 |
+| sRGB | sRGB del RGB | IEC61966-2.1 |
 | FograNoCubierta29 | CMYK | FOGRA29 no recubierto (ISO 12647-2:2004) |
 | WebCoated | CMYK | U.S. Web Coated (SWOP) v2 |
 | WebCoatedFogra28 | CMYK | Web Coated FOGRA28 (ISO 12647-2:2004) |

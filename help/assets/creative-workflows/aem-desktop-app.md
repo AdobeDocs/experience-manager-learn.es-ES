@@ -1,20 +1,20 @@
 ---
 title: AEM aplicación de escritorio
 description: Utilice AEM aplicación de escritorio para simplificar el acceso a cualquier recurso administrado en AEM en el escritorio, para cualquier aplicación y formato de archivo.
-version: 6.5, 6.4, 6.3
-topic: Administración de contenido
-feature: Aplicación de escritorio
+version: 6.5, 6.4
+topic: Content Management
+feature: Desktop App
 role: User
 level: Beginner
 kt: 2551
 thumbnail: 28868.jpeg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 6765758f-0719-4ed9-83be-8ed192a75b41
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 5%
+source-wordcount: '134'
+ht-degree: 4%
 
 ---
-
 
 # Uso de la aplicación de escritorio de AEM
 
@@ -29,7 +29,7 @@ Utilice AEM aplicación de escritorio para simplificar el acceso a cualquier rec
 
 >[!NOTE]
 >
-> [Adobe Asset ](./adobe-asset-link.md) Linkis La solución dedicada del Adobe para trabajar con AEM recursos dentro de aplicaciones de Adobe Creative Cloud: Photoshop, Illustrator, InDesign. Cuando se utiliza AEM Assets en estas aplicaciones, se prefiere Adobe Asset Link sobre AEM Aplicación de escritorio.
+> [Vínculo de recurso de Adobe](./adobe-asset-link.md) es la solución específica de Adobe para trabajar con AEM recursos dentro de aplicaciones de Adobe Creative Cloud: Photoshop, Illustrator, InDesign. Cuando se utiliza AEM Assets en estas aplicaciones, se prefiere Adobe Asset Link sobre AEM Aplicación de escritorio.
 
 ## Recursos adicionales
 

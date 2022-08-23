@@ -1,44 +1,43 @@
 ---
-title: Se ajusta a AEM Forms
-seo-title: Combinar datos de formulario adaptable con Acroform
-description: Parte 3 de un tutorial que integra Acroforms con AEM Forms. Pruebe el flujo de trabajo y el formulario adaptable en el sistema.
+title: Se adapta a AEM Forms
+seo-title: Merge Adaptive Form data with Acroform
+description: Parte 3 de un tutorial que integra Acroforms con AEM Forms. Pruebe el flujo de trabajo y el formulario adaptable en su sistema.
 feature: adaptive-forms
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
-version: 6.3,6.4
-translation-type: tm+mt
-source-git-commit: 451ca39511b52e90a44bba25c6739280f49a0aac
+version: 6.4
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 1%
+source-wordcount: '230'
+ht-degree: 2%
 
 ---
 
 
 # Probar esta capacidad en el sistema
 
-[Descargue e importe este paquete en ](assets/acro-form-aem-form.zip)
-AEMTeste paquete contiene el flujo de trabajo de muestra y la página html que le permite crear el esquema a partir de la Acrobat cargada.
+[Descargue e importe este paquete en AEM](assets/acro-form-aem-form.zip)
+Este paquete contiene el flujo de trabajo de ejemplo y la página html que permite crear el esquema a partir de la Acrobat cargada.
 
 ## Configurar flujo de trabajo
 
-1. [Abra el modelo de workflow en modo](http://localhost:4502/editor.html/conf/global/settings/workflow/models/MergeAcroformData.html) de edición.
-2. Abra las propiedades de configuración del paso MergeAcroformData.
-3. Haga clic en la ficha Proceso.
-4. Asegúrese de que los argumentos que está pasando son una carpeta válida en el servidor.
+1. [Abrir el modelo de flujo de trabajo en modo de edición](http://localhost:4502/editor.html/conf/global/settings/workflow/models/MergeAcroformData.html).
+2. Abra las propiedades de configuración del paso MergeAcrobatData .
+3. Haga clic en la ficha Proceso .
+4. Asegúrese de que los argumentos que está pasando sean una carpeta válida en su servidor.
 5. Guarde los cambios.
 
 ## Crear formulario adaptable
 
-1. Cree un formulario adaptable con el esquema creado en el paso anterior.
+1. Cree un formulario adaptable utilizando el esquema creado en el paso anterior.
 2. Arrastre y suelte algunos elementos de esquema en el formulario adaptable.
-3. Configure la acción de envío del formulario adaptable para enviarla a AEM flujo de trabajo (MergeAcroformData).
-4. **Asegúrese de especificar la ruta del archivo de datos como &quot;Data.xml&quot;. Esto es muy importante, ya que el código de muestra busca un archivo llamado Data.xml en la carga útil del flujo de trabajo.**
-5. Formulario adaptable de previsualización, rellene el formulario y envíe.
-6. Debe ver el PDF con los datos combinados guardados en la carpeta especificada en el paso 4 en el flujo de trabajo de configuración
+3. Configure la acción de envío del formulario adaptable para enviarlo a AEM flujo de trabajo (MergeAcrobatData).
+4. **Asegúrese de especificar la ruta del archivo de datos como &quot;Data.xml&quot;. Esto es muy importante, ya que el código de ejemplo busca un archivo llamado Data.xml en la carga útil del flujo de trabajo.**
+5. Vista previa del formulario adaptable, rellene el formulario y envíelo.
+6. Debería ver PDF con los datos combinados guardados en la carpeta especificada en el paso 4 del flujo de trabajo de configuración
 
 >[!NOTE]
 >
->El archivo PDF generado por la combinación de datos con el formulario se guarda como pdfdocument.pdf en la carpeta de carga útil del flujo de trabajo. Este documento se puede utilizar para seguir procesando como parte del flujo de trabajo
+>El pdf generado por la combinación de datos con el acroform se guarda como pdfdocument.pdf en la carpeta de carga del flujo de trabajo. Este documento se puede utilizar para un procesamiento posterior como parte del flujo de trabajo

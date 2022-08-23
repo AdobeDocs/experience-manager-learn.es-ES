@@ -1,18 +1,18 @@
 ---
 title: Uso de LDAP con el flujo de trabajo de AEM Forms
 description: Asignación de la tarea de flujo de trabajo de AEM Forms al administrador del remitente
-feature: Forms adaptable, flujo de trabajo
-topic: Integraciones
+feature: Adaptive Forms, Workflow
+topic: Integrations
 role: Developer
-version: 6.3,6.4,6.5
+version: 6.4,6.5
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 2e9754ff-49fe-4260-b911-796bcc4fd266
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '528'
 ht-degree: 0%
 
 ---
-
 
 # Uso de LDAP con el flujo de trabajo de AEM Forms
 
@@ -60,16 +60,16 @@ Obtenemos la persona que inició el flujo de trabajo. Luego obtenemos el valor d
 
 Dependiendo de cómo se almacene la propiedad manager en su LDAP, es posible que tenga que realizar alguna manipulación de cadenas para obtener el id del administrador.
 
-Lea este artículo para implementar su propio [ ParticipantChooser .](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
+Lea este artículo para implementar su propia [  Selector de participantes .](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
 
 Para probar esto en su sistema (para empleados de Adobe, puede usar este ejemplo de forma predeterminada)
 
-* [Descargue e implemente el paquete setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Este es el paquete OSGI personalizado para configurar la propiedad del administrador.
+* [Descargar e implementar el paquete setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Este es el paquete OSGI personalizado para configurar la propiedad del administrador.
 * [Descargar e instalar DevelopingWithServiceUserBundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-* [Importe los recursos asociados a este artículo en AEM mediante el administrador de paquetes](assets/aem-forms-ldap.zip). Incluidos como parte de este paquete son archivos de configuración LDAP, flujo de trabajo y un formulario adaptable.
+* [Importe los recursos asociados a este artículo en AEM mediante el administrador de paquetes](assets/aem-forms-ldap.zip).Incluidos como parte de este paquete son los archivos de configuración LDAP, el flujo de trabajo y un formulario adaptable.
 * Configure AEM con su LDAP utilizando las credenciales LDAP adecuadas.
 * Inicie sesión en AEM con sus credenciales LDAP.
-* Abra [timeoffrequestform](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
+* Abra el [timeoffrequestform](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
 * Complete el formulario y envíe.
 * El administrador del remitente debe obtener el formulario para su revisión.
 

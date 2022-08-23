@@ -1,30 +1,30 @@
 ---
 title: AEM Forms con Marketo (parte 3)
 description: Tutorial para integrar AEM Forms con Marketo mediante el Modelo de datos de formulario de AEM Forms.
-feature: Forms adaptable, Modelo de datos de formulario
-version: 6.3,6.4,6.5
-topic: Desarrollo
+feature: Adaptive Forms, Form Data Model
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 7096340b-8ccf-4f5e-b264-9157232e96ba
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '379'
 ht-degree: 1%
 
 ---
-
 
 # Configurar fuentes de datos
 
 La integración de datos de AEM Forms le permite configurar y conectarse a fuentes de datos diferentes. Los siguientes tipos son compatibles de serie. Sin embargo, con un poco de personalización, también puede integrarse con otras fuentes de datos.
 
-1. Bases de datos relacionales: MySQL, Microsoft SQL Server, IBM DB2 y Oracle RDBMS
+1. Bases de datos relacionales: MySQL, Microsoft SQL Server, IBM DB2 y RDBMS de Oracle
 1. AEM perfil de usuario
 1. Servicios web RESTful
 1. Servicios web basados en SOAP
 1. Servicios OData
 
-Para la integración de AEM Forms con Marketo, utilizaremos los servicios web de RESTful. El primer paso para la integración es configurar un [origen de datos.](https://helpx.adobe.com/experience-manager/6-4/forms/using/configure-data-sources.html#ConfigureRESTfulwebservices) Utilice el archivo de intercambio proporcionado como parte de este tutorial. La siguiente captura de pantalla muestra las propiedades importantes que deben especificarse al configurar el origen de datos.
+Para la integración de AEM Forms con Marketo, utilizaremos los servicios web de RESTful. El primer paso para la integración es configurar un [fuente de datos.](https://helpx.adobe.com/experience-manager/6-4/forms/using/configure-data-sources.html#ConfigureRESTfulwebservices) Utilice el archivo de intercambio proporcionado como parte de este tutorial. La siguiente captura de pantalla muestra las propiedades importantes que deben especificarse al configurar el origen de datos.
 ![datasource](assets/datasource.jfif)
 
 El &quot;marketing.json&quot; es el archivo de intercambio y se proporciona como parte de los recursos de este tutorial.
@@ -35,7 +35,7 @@ El tipo de autenticación es personalizado y la implementación de autenticació
 
 Después, al configurar el origen de datos, el siguiente paso es crear un Modelo de datos de formulario basado en el origen de datos configurado en el paso anterior. Para crear el Modelo de datos de formulario, siga los siguientes pasos:
 
-dirija el navegador a la página [integraciones de datos.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm) Esto enumera todas las integraciones de datos creadas en la instancia de AEM.
+Apunte el navegador a [integraciones de datos .](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm) Esto enumera todas las integraciones de datos creadas en la instancia de AEM.
 
 1. Haga clic en Crear | Modelo de datos de formulario
 1. Proporcione un título significativo como FormsAndMarketo y haga clic en Siguiente

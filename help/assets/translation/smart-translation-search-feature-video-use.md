@@ -1,18 +1,18 @@
 ---
 title: Uso de la búsqueda de traducción inteligente con AEM Assets
 description: La búsqueda de traducción inteligente permite la búsqueda y la detección entre idiomas automáticamente en AEM contenido, tanto en Assets como en las páginas, admite más de 50 idiomas y reduce la necesidad de la traducción manual del contenido.
-version: 6.3, 6.4, 6.5
-feature: 'Búsqueda  '
-topic: Administración de contenido
+version: 6.4, 6.5
+feature: Search
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 4f35e3f7-ae29-4f93-bba9-48c60b800238
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 1%
+source-wordcount: '266'
+ht-degree: 0%
 
 ---
-
 
 # Uso de la búsqueda de traducción inteligente con AEM Assets{#using-smart-translation-search-with-aem-assets}
 
@@ -24,7 +24,7 @@ AEM búsqueda de traducción inteligente permite a los usuarios realizar búsque
 
 La búsqueda de traducción inteligente es un complemento perfecto para AEM etiquetas inteligentes que se aplican a los recursos en inglés.
 
-Este vídeo supone que se ha configurado la [AEM búsqueda de traducción inteligente](smart-translation-search-technical-video-setup.md).
+Este vídeo asume [Búsqueda de traducción inteligente AEM](smart-translation-search-technical-video-setup.md) se ha configurado.
 
 ## Funcionamiento de la búsqueda de traducción inteligente {#how-smart-translation-search-works}
 

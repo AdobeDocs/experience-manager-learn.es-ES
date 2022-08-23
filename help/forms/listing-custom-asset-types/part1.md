@@ -1,27 +1,26 @@
 ---
 title: Registro de tipos de recursos personalizados
-seo-title: Registro de tipos de recursos personalizados
+seo-title: Registering Custom Asset Types
 description: Activación de los tipos de recursos personalizados para su inclusión en el portal de AEMForms
-seo-description: Activación de los tipos de recursos personalizados para su inclusión en el portal de AEMForms
+seo-description: Enabling custom asset types for listing in AEMForms Portal
 uuid: eaf29eb0-a0f6-493e-b267-1c5c4ddbe6aa
 feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
-version: 6.3,6.4,6.5
+version: 6.4,6.5
 discoiquuid: 99944f44-0985-4320-b437-06c5adfc60a1
 topic: Development
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: da613092-e03b-467c-9b9e-668142df4634
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '653'
 ht-degree: 2%
 
 ---
-
 
 # Registro de tipos de recursos personalizados {#registering-custom-asset-types}
 
@@ -29,7 +28,7 @@ Activación de los tipos de recursos personalizados para su inclusión en el por
 
 >[!NOTE]
 >
->Asegúrese de tener instalado AEM 6.3 con SP1 y el correspondiente complemento de AEM Forms. Esta función solo funciona con AEM Forms 6.3 SP1 y superior
+>Asegúrese de tener AEM 6.3 con SP1 y el correspondiente AEM Forms Add On Installed. Esta función solo funciona con AEM Forms 6.3 SP1 y superior
 
 ## Especificar ruta base {#specify-base-path}
 
@@ -49,7 +48,7 @@ Pasos para configurar la ruta base
 1. Cambie el valor de la propiedad path a **&quot;/content/dam&quot;**
 1. Haga clic en Guardar
 
-Al especificar la propiedad de ruta a **&quot;/content/dam&quot;**, básicamente está configurando Ruta base en /content/dam. Esto se puede comprobar abriendo el componente Búsqueda y lista .
+Si especifica la propiedad de ruta de acceso a **&quot;/content/dam&quot;** básicamente está configurando la ruta base en /content/dam. Esto se puede comprobar abriendo el componente Búsqueda y lista .
 
 ![basepath](assets/basepath.png)
 
@@ -59,7 +58,7 @@ Se ha añadido una nueva pestaña (Lista de recursos) en el componente de búsqu
 
 1. Formularios adaptables
 1. Plantillas de formulario
-1. Formularios PDF
+1. PDF forms
 1. Documento (PDF estáticos)
 
 **Pasos para registrar el tipo de recurso personalizado**
@@ -69,7 +68,7 @@ Se ha añadido una nueva pestaña (Lista de recursos) en el componente de búsqu
 1. Establecer la ubicación de la superposición en &quot;/apps&quot;
 1. Vaya a la nueva estructura creada en **/apps/fd/fp/extensions/querybuilder/assettypes **
 
-1. En esta ubicación, cree un nodo &#39;nt:unstructured&#39; para el tipo que se va a registrar, asigne un nombre al nodo **mp4files. Agregue las dos propiedades siguientes a este nodo de archivos mp4A**
+1. En esta ubicación, cree un nodo &#39;nt:unstructured&#39; para el tipo que desea registrar y asigne un nombre al nodo **mp4files. Agregue las dos propiedades siguientes a este nodo de archivos mp4files**
 
    1. Agregue la propiedad jcr:title para especificar el nombre para mostrar del tipo de recurso. Establezca el valor de jcr:title en &quot;Archivos Mp4&quot;.
    1. Agregue la propiedad &quot;type&quot; y establezca su valor en &quot;videos&quot;. Este es el valor que usamos en nuestra plantilla para enumerar los recursos de los vídeos de tipo . Guarde los cambios.
@@ -90,7 +89,6 @@ Después de realizar los pasos anteriores, el nuevo tipo de recurso (archivos Mp
 
 ![mp4files](assets/mp4files.png)
 
-[Si tiene problemas para que esto funcione, puede importar el siguiente paquete.](assets/assettypeskt1.zip) El paquete tiene dos tipos de recursos personalizados definidos. Archivos y documentos de Word Mp4. Sugiera que eche un vistazo a **/apps/fd/fp/extensions/querybuilder/assettypes**
+[Si tiene problemas para que esto funcione, puede importar el siguiente paquete.](assets/assettypeskt1.zip) El paquete tiene dos tipos de recursos personalizados definidos. Archivos y documentos de Word Mp4. Le sugerimos que eche un vistazo a la **/apps/fd/fp/extensions/querybuilder/assettypes**
 
-[Instale el paquete](assets/customportalpage.zip) customeportal. Este paquete contiene una página de portal de muestra. Esta página se utilizará en la parte 2 de este tutorial.
-
+[Instalación del paquete customeportal](assets/customportalpage.zip). Este paquete contiene una página de portal de muestra. Esta página se utilizará en la parte 2 de este tutorial.

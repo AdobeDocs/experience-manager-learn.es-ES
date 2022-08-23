@@ -5,11 +5,11 @@ topic: Content Management
 feature: Smart Tags
 role: User
 level: Intermediate
-version: 6.3, 6.4, 6.5, Cloud Service
+version: 6.4, 6.5, Cloud Service
 kt: 645
 thumbnail: 17019.jpg
 exl-id: c72dc489-70e6-48ca-99a8-663d4c0652ba
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 11%
@@ -25,7 +25,7 @@ Las etiquetas inteligentes de AEM Assets para imágenes aumentan la búsqueda de
 ## Configuración para AEM 6.x{#set-up}
 
 >[!NOTE]
-> Las etiquetas inteligentes para imágenes se aprovisionan automáticamente para AEM como Cloud Service.
+> Las etiquetas inteligentes para imágenes se aprovisionan automáticamente para AEM as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17023/?quality=12&learn=on)
 

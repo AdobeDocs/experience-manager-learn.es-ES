@@ -1,18 +1,18 @@
 ---
 title: Captura de los comentarios del flujo de trabajo en el Forms Workflow adaptable
 description: Captura de los comentarios del flujo de trabajo en AEM flujo de trabajo
-feature: Flujo de trabajo
-version: 6.3,6.4
-topic: Desarrollo
+feature: Workflow
+version: 6.4
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 5c250bbb-bac6-427d-8aca-1fbb1229e02c
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
-
 
 # Captura de los comentarios del flujo de trabajo en el Forms Workflow adaptable{#capturing-workflow-comments-in-adaptive-forms-workflow}
 
@@ -22,7 +22,7 @@ Una solicitud común es la capacidad de incluir los comentarios introducidos por
 
 Para cumplir este requisito, se proporciona un paquete OSGi de muestra que puede utilizarse para capturar comentarios y almacenar estos comentarios como propiedad de metadatos del flujo de trabajo.
 
-La siguiente captura de pantalla muestra cómo utilizar el paso de proceso en [AEM Workflow](http://localhost:4502/editor.html/conf/global/settings/workflow/models/CaptureComments.html) para capturar comentarios y almacenarlos como propiedad de metadatos. El &quot;Capturar comentarios del flujo de trabajo&quot; es el nombre de la clase java que debe utilizarse en el paso del proceso. Debe pasar el nombre de propiedad de metadatos que contendrá los comentarios. En la captura de pantalla siguiente, managerComments es la propiedad de metadatos que almacenará los comentarios.
+La siguiente captura de pantalla muestra cómo usar el paso de proceso en [Flujo de trabajo AEM](http://localhost:4502/editor.html/conf/global/settings/workflow/models/CaptureComments.html) para capturar comentarios y almacenarlos como propiedad de metadatos. El &quot;Capturar comentarios del flujo de trabajo&quot; es el nombre de la clase java que debe utilizarse en el paso del proceso. Debe pasar el nombre de propiedad de metadatos que contendrá los comentarios. En la captura de pantalla siguiente, managerComments es la propiedad de metadatos que almacenará los comentarios.
 
 ![workflow comments1](assets/workflowcomments1.gif)
 
@@ -31,9 +31,9 @@ Para probar esta capacidad en su sistema, siga los siguientes pasos:
 
 * [Implementar el paquete de usuario Desarrollo con servicio](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-* [Implementar el paquete](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar) SetValue. Este paquete contiene el código de muestra para capturar los comentarios y almacenarlos como una propiedad de metadatos
+* [Implementar el paquete SetValue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Este paquete contiene el código de muestra para capturar los comentarios y almacenarlos como una propiedad de metadatos
 
-* [Descargue y descomprima los recursos relacionados con este artículo en su ](assets/capturecomments.zip) sistema de archivos. Los recursos contienen un modelo de flujo de trabajo y un formulario adaptable de ejemplo.
+* [Descargue y descomprima los recursos relacionados con este artículo en su sistema de archivos](assets/capturecomments.zip) Los recursos contienen un modelo de flujo de trabajo y un ejemplo de formulario adaptable.
 
 * Importar los 2 archivos zip en AEM mediante el administrador de paquetes
 
@@ -50,4 +50,3 @@ Los comentarios se almacenan en la propiedad metadata llamada managerComments en
 /var/workflow/instances/server0
 
 Seleccione la instancia de flujo de trabajo adecuada y compruebe la propiedad managerComments en el nodo de metadatos.
-
