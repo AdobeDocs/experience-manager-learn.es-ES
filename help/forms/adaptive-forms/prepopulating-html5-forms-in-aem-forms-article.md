@@ -2,12 +2,12 @@
 title: Rellene previamente el Forms del HTML 5 mediante el atributo de datos.
 description: Rellene los formularios HTML5 recuperando datos del origen del servidor.
 feature: Adaptive Forms
-version: 6.4,6.5.
+version: 6.4,6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: ab0f5282-383b-4be6-9c57-cded6ab37528
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: d7b1ab815d9c8a0d0342f7b57d1efb08fb39a26a
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 0%
