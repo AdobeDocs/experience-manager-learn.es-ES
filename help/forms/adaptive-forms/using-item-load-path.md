@@ -7,9 +7,9 @@ kt: 10961
 topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 614db8b03a823b60846ab8ccfa8fbc29a41f7791
+source-git-commit: abf5522b948c950c3ace28a8da43907959be10b4
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '180'
 ht-degree: 0%
 
 ---
@@ -18,15 +18,13 @@ ht-degree: 0%
 
 Configure y rellene la lista desplegable con la propiedad ruta de carga del elemento.
 El campo Ruta de carga del elemento permite que un autor proporcione una dirección URL desde la que carga las opciones disponibles en una lista desplegable.
-Para crear un nodo de este tipo en crx, siga los pasos que se mencionan a continuación
-
+Para crear un nodo de este tipo en crx, siga los pasos mencionados a continuación:
 * Iniciar sesión en crx
 * Cree un nodo llamado assets (puede asignar un nombre a este nodo según sus necesidades) en el tipo sling:folder , en el contenido.
 * Guardar
 * Haga clic en el nodo de recursos recién creado y defina sus propiedades como se muestra a continuación
-* Deberá crear una propiedad de tipo String denominada assettypes (puede asignarle el nombre que necesite) con multivalor. Proporcione los valores que desee y guarde.
-
-![item-load-path](assets/item-load-path-crx.png)
+* Deberá crear una propiedad de tipo String denominada assettypes (puede asignarle un nombre según sus necesidades). Asegúrese de que la propiedad sea un valor multivalor. Proporcione los valores que desee y guarde.
+   ![item-load-path](assets/item-load-path-crx.png)
 
 Para cargar estos valores en la lista desplegable, proporcione la siguiente ruta en la propiedad ruta de carga del elemento  **/content/assets/assettypes**
 
