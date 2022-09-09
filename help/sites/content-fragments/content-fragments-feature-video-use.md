@@ -12,10 +12,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: d33c033a-9577-4d4e-99be-f3c7e2a4ce73
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 9aae58c3301a7067baca374d6499f1afc3c95b06
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 5%
+source-wordcount: '383'
+ht-degree: 9%
 
 ---
 
@@ -25,18 +25,23 @@ Los fragmentos de contenido son una abstracción de contenido en AEM que permite
 
 AEM los fragmentos de contenido son contenido editorial basado en texto que puede incluir algunos elementos de datos estructurados asociados pero considerados contenido puro sin información de diseño o diseño. Los fragmentos de contenido se suelen crear como contenido no agnóstico del canal, que está diseñado para utilizarse y reutilizarse en varios canales, lo que a su vez envuelve el contenido en una experiencia específica del contexto.
 
-Esta serie de vídeos cubre el ciclo de vida de creación de fragmentos de contenido en AEM. Los detalles sobre la [entrega de fragmentos de contenido se pueden encontrar aquí](content-fragments-delivery-feature-video-use.md).
+Esta serie de vídeos cubre el ciclo de vida de creación de fragmentos de contenido en AEM. Detalles sobre [puede encontrar la entrega de fragmentos de contenido aquí](content-fragments-delivery-feature-video-use.md).
 
 1. Activación y definición de modelos de fragmento de contenido
 2. Creación de fragmentos de contenido
 3. Descarga de fragmentos de contenido
 4. Funciones editoriales
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_admin_content_fragments"
+>title="Administrar fragmentos"
+>abstract="Descubra cómo los fragmentos de contenido le permiten diseñar, crear, depurar y utilizar contenido independiente de las páginas."
+
 ## Definición de modelos de fragmento de contenido {#defining-content-fragment-models}
 
 >[!VIDEO](https://video.tv.adobe.com/v/22452/?quality=12&learn=on)
 
-AEM los modelos de fragmentos de contenido, los esquemas de datos de los fragmentos de contenido, deben habilitarse mediante AEM [[!UICONTROL Navegador de configuración]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html), que permite definir los modelos de fragmentos de contenido según la configuración.
+AEM los modelos de fragmentos de contenido, los esquemas de datos de los fragmentos de contenido, deben habilitarse mediante AEM [[!UICONTROL Explorador de configuración]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html?lang=es), que permite definir los modelos de fragmento de contenido según la configuración.
 
 ## Creación de fragmentos de contenido {#creating-content-fragments}
 
@@ -64,17 +69,17 @@ AEM fragmentos de contenido se pueden descargar desde AEM Author como archivo zi
 
 >[!NOTE]
 >
-> La anotación y la comparación de versiones para fragmentos de contenido se introdujeron en [AEM 6.4 Service Pack 2](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=es) y [AEM 6.3 Service Pack 3](https://helpx.adobe.com/es/experience-manager/6-3/release-notes/sp3-release-notes.html).
+> Las anotaciones y la comparación de versiones para fragmentos de contenido se introdujeron en [AEM 6.4 Service Pack 2](https://helpx.adobe.com/es/experience-manager/aem-releases-updates.html) y [AEM 6.3 Service Pack 3](https://helpx.adobe.com/es/experience-manager/6-3/release-notes/sp3-release-notes.html).
 
 ## Siguientes pasos
 
-Obtenga más información sobre [envío de fragmentos de contenido](content-fragments-delivery-feature-video-use.md).
+Obtenga información sobre [envío de fragmentos de contenido](content-fragments-delivery-feature-video-use.md).
 
 ## Recursos adicionales {#additional-resources}
 
 * [Entrega de fragmentos de contenido](content-fragments-delivery-feature-video-use.md)
 * [Componentes principales AEM WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
-* [AEM Componente de fragmento de contenido principal de WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
+* [AEM Componente de fragmento de contenido principal de WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=es)
 
 Para descargar e instalar el paquete siguiente en una instancia de AEM 6.4+ para el estado final de la serie de vídeos:
 
