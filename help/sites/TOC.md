@@ -3,9 +3,9 @@ user-guide-title: Vídeos y tutoriales de AEM Sites
 user-guide-description: Una colección de vídeos y tutoriales para Adobe Experience Manager Sites.
 breadcrumb-title: Tutoriales de AEM Sites
 feature-set: Experience Manager Sites, Experience Manager
-source-git-commit: 34fbb22916cf8a8df0e3240835c71e0979fd11bd
+source-git-commit: 552e5fbeb5dafc6d82763d5c3b31cc6d17131739
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '409'
 ht-degree: 30%
 
 ---
@@ -32,6 +32,8 @@ ht-degree: 30%
    + [Sistema de estilos](page-authoring/style-system-feature-video-use.md)
    + [Deformación de tiempo  ](page-authoring/timewarp-feature-video-use.md)
    + [Lanzamientos](page-authoring/launches.md)
+   + Consejo de expertos {#expert-advice}
+      + [Sugerencias de jerarquía de sitios](page-authoring/expert-advice/site-hierarchy.md)
 + Componentes {#components}
    + [Desarrollo de componentes](components/component-development.md)
    + [Componentes principales ](components/core-components-feature-video-understand.md)
