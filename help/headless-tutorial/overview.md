@@ -7,20 +7,25 @@ role: Developer
 level: Beginner
 recommendations: disable, exclude
 exl-id: 57f88d79-9879-4bb9-a3db-9fec95e3a0bd
-source-git-commit: 34fbb22916cf8a8df0e3240835c71e0979fd11bd
+source-git-commit: b20a29e67da0bcbf53ae8089a7cde0dfde800214
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '517'
 ht-degree: 7%
 
 ---
 
-# Tutorials AEM sin encabezado
+# Tutorials AEM sin encabezado{#aem-headless-tutorials}
 
 Adobe Experience Manager (AEM) tiene varias opciones para definir extremos sin encabezado y entregar su contenido como JSON. Utilice tutoriales prácticos para explorar cómo utilizar las distintas opciones y elegir lo que es adecuado para usted.
 
 >[!TIP]
 >
 >Esta colección de tutoriales está diseñada para aquellos que prefieran **aprenda haciendo**. Si prefiere aprender conceptos desde cero, consulte la [recorrido para desarrolladores AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/developer/overview.html). Este conjunto de tutoriales y el recorrido se complementan entre sí.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_edit_inline_content"
+>title="Editar contenido en línea"
+>abstract="Obtenga información sobre cómo editar contenido directamente en la página desde la que se hace referencia mediante el conjunto de funciones sin encabezado."
 
 ## Tutorials por API
 
