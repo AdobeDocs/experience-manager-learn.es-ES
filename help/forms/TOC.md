@@ -5,9 +5,9 @@ user-guide-title: Vídeos y tutoriales de AEM Forms
 user-guide-description: Recopilación de recursos de AEM Forms para principiantes y desarrolladores experimentados de AEM Forms.
 breadcrumb-title: Tutoriales de AEM Forms
 index: y
-source-git-commit: 614db8b03a823b60846ab8ccfa8fbc29a41f7791
+source-git-commit: 164741ce5ae7d00f904365589438c2eaaf1e05db
 workflow-type: tm+mt
-source-wordcount: '1686'
+source-wordcount: '1695'
 ht-degree: 3%
 
 ---
@@ -279,6 +279,7 @@ ht-degree: 3%
    + [Servicios de documentos: Pasos para modificar el tamaño del grupo bmc para XMLFormService, parte 1](troubleshooting/steps-to-tweak-bmc-pool-size-for-xmlformservice-1.md)
    + [Servicios de documentos: Pasos para modificar el tamaño del grupo bmc para XMLFormService, parte 2](troubleshooting/steps-to-tweak-bmc-pool-size-for-xmlformservice-2.md)
    + [Servicios de documentos: Pasos para modificar parámetros en la consola JMX](troubleshooting/steps-to-tweak-parameters-on-jmx-console.md)
+   + [Habilitar la combinación de archivos de datos xml grandes con una plantilla](troubleshooting/fix-timeout-errors-when-merging-large-xml-wth-template.md)
    + [PDFG: Cómo cambiar los tiempos de espera de transacción en PDFG](troubleshooting/how-to-change-the-transaction-timeout-in-pdfg.md)
    + [PDFG: Actualizar el tiempo de espera de CORBA en PDFG](troubleshooting/how-to-update-corba-timeout-in-pdfg.md)
    + [PDFG: Actualizar los tiempos de espera en PDFG](troubleshooting/how-to-update-the-timeouts-in-pdfg.md)
