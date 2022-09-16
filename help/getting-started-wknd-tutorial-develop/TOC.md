@@ -5,13 +5,13 @@ version: Cloud Service
 activity: develop
 audience: developer
 user-guide-title: 'Introducción a AEM Sites: Tutorial de WKND'
-user-guide-description: Un tutorial de varias partes para desarrolladores que van a usar AEM por primera vez. Implementar un sitio AEM para una marca ficticia de ropa, WKND.
+user-guide-description: Un tutorial de varias partes para desarrolladores que van a usar AEM por primera vez. Implementar un sitio AEM para una marca ficticia de ropa, WKND. Active la canalización front-end para acelerar el desarrollo hasta el ciclo de implementación.
 breadcrumb-title: Tutoriales de WKND de AEM Sites
 index: y
-source-git-commit: 04096fe3c99cdcce2d43b2b29899c2bbe37ac056
+source-git-commit: 96e1c95b7cd672aa5d4f79707735abc86dae7b8a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '93'
+ht-degree: 43%
 
 ---
 
@@ -33,5 +33,9 @@ ht-degree: 0%
    + [1 - Crear un sitio](./site-template/create-site.md)
    + [2 - Introducción a la creación y publicación](./site-template/author-content-publish.md)
    + [3: Planificación de la interfaz de usuario con Adobe XD](./site-template/ui-planning-adobe-xd.md)
-   + [3: Plantillas de página](./site-template/page-templates.md)
-   + [4 - Tema](./site-template/theming.md)
+   + [4: Plantillas de página](./site-template/page-templates.md)
+   + [5 - Tema](./site-template/theming.md)
++ Habilitar canalización de front-end: operaciones de desarrollo{#enable-frontend-pipeline-devops}
+   + [Información general](./enable-frontend-pipeline/overview.md)
+
+
