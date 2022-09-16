@@ -6,9 +6,9 @@ version: Cloud Service
 feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites
 kt: 2963
 index: y
-source-git-commit: efb15b8eda84c68614e2fba9e4adc7680cb080f1
+source-git-commit: 680ed62141b853daf104a827067ca6d5a209796d
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '256'
 ht-degree: 21%
 
 ---
@@ -106,3 +106,8 @@ ht-degree: 21%
    + [5 - Creación de páginas de servicios de contenido](./content-services/chapter-5.md)
    + [6: Exposición del contenido en AEM Publish para su entrega](./content-services/chapter-6.md)
    + [7 - Consumo de AEM Content Services desde una aplicación móvil](./content-services/chapter-7.md)
++ Ejemplos de código {#code-samples}
+   + [React app](./graphql/code-samples/react-app.md)
+   + [aplicación de angular](./graphql/code-samples/angular-app.md)
+   + [React, componente](./graphql/code-samples/react-component.md)
+   + [Filtro JavaScript](./graphql/code-samples/javascript-filter.md)
