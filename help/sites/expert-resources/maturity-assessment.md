@@ -3,7 +3,7 @@ title: Jerarquía del sitio, taxonomía y consejos de etiquetado
 description: Jerarquía del sitio, taxonomía y consejos sobre etiquetado Prácticas recomendadas
 hide: true
 hidefromtoc: true
-source-git-commit: 6f4d811e796b34985fa9d5af335239948e59c1ef
+source-git-commit: 3eb429039589ae26a81bc6d24f020a77517133e8
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 1%
@@ -34,3 +34,4 @@ En la mayoría de los casos, la evaluación de la madurez AEM ayudará a realiza
 Ámbitos de interés recomendados AEM evaluación de vencimientos: Diseño y arquitectura, gestión y estrategia de productos, administración y entrega de activos digitales, análisis, pruebas y seguridad.
 
 Enorme grito al AEM campeón Greg Dimeris por agregar esta información de varios artículos Experience League, así como sus propias prácticas recomendadas!
+
