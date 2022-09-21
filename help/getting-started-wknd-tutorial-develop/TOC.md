@@ -8,10 +8,10 @@ user-guide-title: 'Introducción a AEM Sites: Tutorial de WKND'
 user-guide-description: Un tutorial de varias partes para desarrolladores que van a usar AEM por primera vez. Implementar un sitio AEM para una marca ficticia de ropa, WKND. Active la canalización front-end para acelerar el desarrollo hasta el ciclo de implementación.
 breadcrumb-title: Tutoriales de WKND de AEM Sites
 index: y
-source-git-commit: 96e1c95b7cd672aa5d4f79707735abc86dae7b8a
+source-git-commit: 2e3615e9e9305165ca9c3c93b38ac7e9bdcc51fb
 workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 43%
+source-wordcount: '108'
+ht-degree: 37%
 
 ---
 
@@ -37,5 +37,8 @@ ht-degree: 43%
    + [5 - Tema](./site-template/theming.md)
 + Habilitar canalización de front-end: operaciones de desarrollo{#enable-frontend-pipeline-devops}
    + [Información general](./enable-frontend-pipeline/overview.md)
-
+   + [1 - Revisar proyecto de pila completa](./enable-frontend-pipeline/review-uifrontend-module.md)
+   + [2 - Actualizar proyecto para utilizar la canalización front-end](./enable-frontend-pipeline/update-project.md)
+   + [3 - Implementar utilizando la canalización front-end](./enable-frontend-pipeline/create-frontend-pipeline.md)
+   + [4 - Consideraciones](./enable-frontend-pipeline/considerations.md)
 
