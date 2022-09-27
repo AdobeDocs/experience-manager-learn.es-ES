@@ -1,11 +1,24 @@
 ---
 title: Jerarquía del sitio, taxonomía y consejos de etiquetado
-description: Jerarquía del sitio, taxonomía y consejos sobre etiquetado Prácticas recomendadas
+seo-title: Overview of Authoring in AEM Sites
+description: En el siguiente vídeo se ofrece una descripción general de los conceptos básicos de creación en un entorno de creación AEM. Utiliza la consola Sitios como base.
+seo-description: The following video provides an overview of basic concepts of authoring in an AEM author environment. It uses the Sites console as a basis.
+feature: Page Editor, Editable Templates
+topics: authoring, publishing
+audience: author, marketer
+doc-type: feature video
+activity: use
+version: 6.4, 6.5, Cloud Service
+kt: 4242
+thumbnail: 33594.jpg
+topic: Content Management
+role: User
+level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 3eb429039589ae26a81bc6d24f020a77517133e8
+source-git-commit: 3335069883db38a2748af114ab7505cc34dec270
 workflow-type: tm+mt
-source-wordcount: '2053'
+source-wordcount: '2033'
 ht-degree: 0%
 
 ---
@@ -16,8 +29,6 @@ ht-degree: 0%
 Los metadatos y las etiquetas son fundamentales para mejorar la eficacia de las AEM. Los usuarios, los líderes y la administración se dan cuenta de la necesidad de una estrategia integral, pero les resulta difícil avanzar. A menudo, el conocimiento se mantiene aislado entre los usuarios, lo que dificulta la estrategia holística, y hace que los ajustes sean aún más problemáticos.
 
 ¿Cuál es la diferencia entre metadatos y etiquetas? ¿Cuáles son los aspectos empresariales que hay que tener en cuenta al impulsar su estrategia?
-
-Se puede encontrar un resumen más intensivo [here](https://adobe.sharepoint.com/:w:/r/sites/ACSSuccessServices/_layouts/15/Doc.aspx?sourcedoc=%7BFE5E873A-A3B6-4F40-BF22-A2C9F1269802%7D&amp;file=AEM_TagTaxonomyAndMetadata_BestPractice_en%20(2).docx&amp;action=default&amp;mobileredirect=true).
 
 ## ¿Cuál es el propósito de los metadatos?
 
