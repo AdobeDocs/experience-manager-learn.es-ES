@@ -5,9 +5,9 @@ user-guide-title: Vídeos y tutoriales de AEM Forms
 user-guide-description: Recopilación de recursos de AEM Forms para principiantes y desarrolladores experimentados de AEM Forms.
 breadcrumb-title: Tutoriales de AEM Forms
 index: y
-source-git-commit: 164741ce5ae7d00f904365589438c2eaaf1e05db
+source-git-commit: 5277b7a6ceba4473ab2808f980c8faa5bf69c757
 workflow-type: tm+mt
-source-wordcount: '1695'
+source-wordcount: '1701'
 ht-degree: 3%
 
 ---
@@ -147,19 +147,20 @@ ht-degree: 3%
    + [Uso de plantillas XDP con Adobe Sign](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
 + Firmar varios Forms{#sign-multiple-documents}
    + [Introducción](sign-multiple-documents/introduction.md)
-   + [Configurar fuentes de datos](sign-multiple-documents/configure-data-source.md)
+   + [Configurar el origen de datos](sign-multiple-documents/configure-data-source.md)
    + [Creación del servicio OSGi](sign-multiple-documents/create-osgi-service.md)
    + [Crear flujo de trabajo principal](sign-multiple-documents/create-main-workflow.md)
-   + [Actualizar flujo de trabajo del estado de firma](sign-multiple-documents/update-signature-status.md)
+   + [Actualizar el flujo de trabajo del estado de firma](sign-multiple-documents/update-signature-status.md)
    + [Personalizar componente de resumen](sign-multiple-documents/customize-summary-component.md)
-   + [Crear lista de clientes](sign-multiple-documents/create-client-lib.md)
+   + [Crear biblioteca de cliente](sign-multiple-documents/create-client-lib.md)
    + [Crear plantilla de formulario](sign-multiple-documents/create-af-template.md)
    + [Crear formulario inicial](sign-multiple-documents/create-initial-form.md)
-   + [Crear Forms para firmar](sign-multiple-documents/create-forms-for-signing.md)
+   + [Creación de formularios para firmar](sign-multiple-documents/create-forms-for-signing.md)
    + [Prueba de la solución](sign-multiple-documents/testing-and-trouble-shooting.md)
 + Pasos personalizados del flujo de trabajo{#custom-workflow-steps}
    + [Extraer nodo del documento xml](custom-workflow-steps/extract-xml-node.md)
    + [Guardar documento en sistema de archivos](custom-workflow-steps/write-payload-document.md)
+   + [Guardar datos enviados en una variable de cadena](custom-workflow-steps/save-submitted-data-in-string-variable.md)
 + Variables en AEM flujo de trabajo{#variables-aem-workflow}
    + [Introducción: Variables en el flujo de trabajo](variables-aem-workflow/introduction.md)
    + [Variables XML](variables-aem-workflow/part1.md)
