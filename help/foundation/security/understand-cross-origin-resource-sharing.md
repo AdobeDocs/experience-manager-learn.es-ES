@@ -11,9 +11,9 @@ topic: Security
 role: Developer
 level: Intermediate
 exl-id: 6009d9cf-8aeb-4092-9e8c-e2e6eec46435
-source-git-commit: 41be8c934bba16857d503398b5c7e327acd8d20b
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '910'
 ht-degree: 1%
 
 ---
@@ -39,9 +39,9 @@ Una directiva se selecciona comparando la variable
 * `Allowed Origin` con la variable `Origin` encabezado de solicitud
 * y `Allowed Paths` con la ruta de solicitud.
 
-Se utilizará la primera directiva que coincida con estos valores. Si no se encuentra ninguno, se muestra [!DNL CORS] se denegará.
+Se utilizan las primeras directivas que coinciden con estos valores. Si no se encuentra ninguno, se muestra [!DNL CORS] solicitud denegada.
 
-Si no hay ninguna directiva configurada, [!DNL CORS] tampoco se responderán las solicitudes, ya que el controlador se desactivará y, por lo tanto, se denegará de forma efectiva, siempre que ningún otro módulo del servidor responda [!DNL CORS].
+Si no hay ninguna directiva configurada, [!DNL CORS] tampoco se responderán las solicitudes, ya que el controlador está deshabilitado y, por lo tanto, se deniega de forma efectiva, siempre que ningún otro módulo del servidor responda a [!DNL CORS].
 
 ### Propiedades de directiva
 

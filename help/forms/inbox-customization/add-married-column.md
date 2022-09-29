@@ -12,9 +12,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 0b141b37-6041-4f87-bd50-dade8c0fee7d
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '306'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ Para mostrar los datos de flujo de trabajo en la bandeja de entrada, es necesari
 * [Importación del flujo de trabajo de revisión](assets/review-workflow.zip)
 * [Consulte el flujo de trabajo](http://localhost:4502/editor.html/conf/global/settings/workflow/models/reviewworkflow.html)
 
-Este flujo de trabajo tiene dos variables definidas (isMarried e revenue) y sus valores se establecen mediante el componente de variable set . Estas variables estarán disponibles como columnas para agregarlas a AEM bandeja de entrada
+Este flujo de trabajo tiene dos variables definidas (isMarried e revenue) y sus valores se establecen mediante el componente de variable set . Estas variables están disponibles como columnas para agregarlas a AEM bandeja de entrada
 
 ## Crear servicio
 

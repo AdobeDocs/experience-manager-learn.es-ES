@@ -4,9 +4,10 @@ description: Aprenda a configurar y utilizar AEM as a cloud service para admitir
 role: Architect, Developer
 topic: Development
 feature: CDN Cache, Dispatcher
-source-git-commit: fa85f0270e21cc9857f95c541a06e87cf26d5798
+exl-id: fdf62074-1a16-437b-b5dc-5fb4e11f1355
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '559'
 ht-degree: 1%
 
 ---
@@ -27,7 +28,7 @@ Aprenda a configurar y utilizar AEM as a cloud service para admitir variantes de
 
 + AEM código debe configurar la cookie __&quot;x-aem-variant&quot;__ al estado preferido del visitante (p. ej. `Set-Cookie: x-aem-variant=NY`) en la respuesta HTTP correspondiente de la solicitud HTTP inicial.
 
-+ Las solicitudes posteriores del visitante envían esa cookie (p. ej. `“Cookie: x-aem-variant=NY”`) y la cookie se transformará en el nivel de CDN en un encabezado predefinido (p. ej. `x-aem-variant:NY`) que se pasa al despachante.
++ Las solicitudes posteriores del visitante envían esa cookie (p. ej. `"Cookie: x-aem-variant=NY"`) y la cookie se transforma en el nivel de CDN en un encabezado predefinido (p. ej. `x-aem-variant:NY`) que se pasa al despachante.
 
 + Una regla de reescritura de Apache modifica la ruta de solicitud para incluir el valor del encabezado en la URL de la página como un Selector de Apache Sling (p. ej. `/page.variant=NY.html`). Esto permite que AEM Publish ofrezca contenido diferente en función del selector y el despachante para almacenar en caché una página por variante.
 

@@ -9,9 +9,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 19f72254-2087-450b-909d-2d90c9821486
-source-git-commit: bca51ece7a9b249727b8746cc9654503059116fb
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1801'
+source-wordcount: '1800'
 ht-degree: 3%
 
 ---
@@ -190,7 +190,7 @@ Para cambiar estas opciones es posible que sea necesario realizar ajustes en AEM
 
 ## Detención de un tiempo de ejecución de AEM local
 
-Para detener un tiempo de ejecución de AEM local, ya sea AEM Author o Publish, abra la ventana de línea de comandos que se utilizó para iniciar el tiempo de ejecución de AEM y pulse `Ctrl-C`. Espere a que AEM cierre. Cuando se complete el proceso de apagado, el símbolo del sistema de la línea de comandos estará disponible.
+Para detener un tiempo de ejecución de AEM local, ya sea AEM Author o Publish, abra la ventana de línea de comandos que se utilizó para iniciar el tiempo de ejecución de AEM y pulse `Ctrl-C`. Espere a que AEM cierre. Cuando se completa el proceso de apagado, el símbolo del sistema de la línea de comandos está disponible.
 
 ## Tareas opcionales de configuración de tiempo de ejecución de AEM local
 

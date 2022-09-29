@@ -2,18 +2,18 @@
 title: Uso del Recorte inteligente con AEM Assets Dynamic Media
 description: Smart Crop utiliza Adobe Sensei para eliminar las costosas y largas tareas de recorte de contenido para un diseño interactivo.
 sub-product: dynamic-media
-feature: Recorte inteligente, perfiles de imagen
+feature: Smart Crop, Image Profiles
 version: 6.4, 6.5
-topic: Administración de contenido
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 295bbfb6-241f-41c0-972d-d9688863cea1
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 3%
+source-wordcount: '245'
+ht-degree: 2%
 
 ---
-
 
 # Uso del Recorte inteligente con AEM Assets Dynamic Media{#using-smart-crop-with-aem-assets-dynamic-media}
 
@@ -35,4 +35,4 @@ Smart Crop utiliza Adobe Sensei para eliminar las costosas y largas tareas de re
 
 >[!NOTE]
 >
->Las coordenadas de recorte inteligentes dependen de la relación de aspecto. Es decir, para los distintos ajustes de recorte inteligente de un perfil de imagen, si la proporción de aspecto es la misma para las dimensiones agregadas en el perfil de imagen, se envía la misma proporción de aspecto a Dynamic Media. Debido a esto, se sugerirá el mismo área de recorte en el Editor de recorte inteligente. Por ejemplo, si se configura un recorte de 100 x 100 y 200 x 200, el sistema generará el mismo recorte inteligente.
+>Las coordenadas de recorte inteligentes dependen de la relación de aspecto. Es decir, para los distintos ajustes de recorte inteligente de un perfil de imagen, si la proporción de aspecto es la misma para las dimensiones agregadas en el perfil de imagen, se envía la misma proporción de aspecto a Dynamic Media. Debido a esto, el mismo área de recorte se sugiere en el Editor de recorte inteligente. Por ejemplo, si se configura un recorte de 100 x 100 y 200 x 200, el sistema generará el mismo recorte inteligente.

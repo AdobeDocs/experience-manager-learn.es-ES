@@ -6,9 +6,9 @@ topic: Content Management
 role: Developer
 level: Intermediate
 exl-id: b7d0b6b1-145a-4987-a9dc-7263efa4d9fb
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '113'
+source-wordcount: '112'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ Breve introducción al tema en Asset Share Commons. El vídeo recorre el proceso
 
 >[!VIDEO](https://video.tv.adobe.com/v/20572/?quality=9&learn=on)
 
-En este vídeo se creará un nuevo tema basado en el tema oscuro de Asset Share Commons. El esquema de colores coincidirá con un logotipo personalizado para que el sitio tenga una apariencia uniforme.
+En este vídeo se crea un nuevo tema basado en el tema oscuro de Asset Share Commons. El esquema de colores coincidirá con un logotipo personalizado para que el sitio tenga una apariencia uniforme.
 
 ## Variables de tema
 

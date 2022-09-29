@@ -1,6 +1,6 @@
 ---
 title: Plantillas de página
-description: Obtenga información sobre cómo crear y modificar plantillas de página. Comprenda la relación entre una plantilla de página y una página. Obtenga información sobre cómo configurar las políticas de una plantilla de página para proporcionar control granular y coherencia de marca para el contenido.  Se creará una plantilla de artículo de revista bien estructurada basada en una maqueta de Adobe XD.
+description: Obtenga información sobre cómo crear y modificar plantillas de página. Comprenda la relación entre una plantilla de página y una página. Obtenga información sobre cómo configurar las políticas de una plantilla de página para proporcionar control granular y coherencia de marca para el contenido.  Se crea una plantilla de artículo de revista bien estructurada basada en una maqueta de Adobe XD.
 sub-product: sites
 version: Cloud Service
 type: Tutorial
@@ -11,10 +11,10 @@ level: Beginner
 kt: 7498
 thumbnail: KT-7498.jpg
 exl-id: 261ec68f-36f4-474f-a6e4-7a2f9cea691b
-source-git-commit: 0225b7f2e495d5c020ea5192302691e3466808ed
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '660'
-ht-degree: 5%
+source-wordcount: '652'
+ht-degree: 2%
 
 ---
 
@@ -34,17 +34,17 @@ Este es un tutorial de varias partes y se da por hecho que los pasos descritos e
 
 ## Qué va a generar {#what-you-will-build}
 
-En esta parte del tutorial, creará una nueva plantilla Página de artículos de revistas que se puede utilizar para crear nuevos artículos de revistas y se ajusta a una estructura común. La plantilla se basará en diseños y en un kit de interfaz de usuario creado en Adobe XD. Este capítulo se centra únicamente en la construcción de la estructura o el esqueleto de la plantilla. No se implementará ningún estilo, pero la plantilla y las páginas funcionarán.
+En esta parte del tutorial, creará una nueva plantilla Página de artículos de revistas que se puede utilizar para crear nuevos artículos de revistas y se ajusta a una estructura común. La plantilla se basa en diseños y en un kit de interfaz de usuario creado en Adobe XD. Este capítulo se centra únicamente en la construcción de la estructura o el esqueleto de la plantilla. No se han implementado estilos, pero la plantilla y las páginas funcionan.
 
 ## Crear la plantilla de página de artículo de la revista
 
-Al crear una página, debe seleccionar una plantilla, que se utilizará como base para crear la página nueva. La plantilla define la estructura de la página resultante, el contenido inicial y los componentes permitidos.
+Al crear una página, debe seleccionar una plantilla, que se utiliza como base para crear la nueva página. La plantilla define la estructura de la página resultante, el contenido inicial y los componentes permitidos.
 
 Hay 3 zonas principales [Plantillas de página](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=es):
 
-1. **Estructura** : define los componentes que forman parte de la plantilla. Los autores de contenido no podrán editarlos.
-1. **Contenido inicial** : define los componentes con los que comenzará la plantilla, que los autores de contenido pueden editar o eliminar
-1. **Políticas** : define las configuraciones sobre cómo se comportarán los componentes y las opciones que tendrán disponibles los autores.
+1. **Estructura** : define los componentes que forman parte de la plantilla. Los autores de contenido no pueden editarlos.
+1. **Contenido inicial** : define los componentes con los que comienza la plantilla, que los autores de contenido pueden editar o eliminar
+1. **Políticas** : define las configuraciones sobre cómo se comportan los componentes y las opciones que tendrán disponibles los autores.
 
 A continuación, cree una nueva plantilla en AEM que coincida con la estructura de las maquetas. Esto ocurre en una instancia local de AEM. Siga los pasos del siguiente vídeo:
 

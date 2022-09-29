@@ -1,5 +1,5 @@
 ---
-title: Credenciales de servicio
+title: Credenciales del servicio de AEM Developer Console
 description: AEM Credenciales de servicio se utilizan para facilitar las aplicaciones, sistemas y servicios externos con el fin de interactuar mediante programación con AEM Author o Publish Services a través de HTTP.
 version: Cloud Service
 doc-type: tutorial
@@ -13,14 +13,14 @@ topic: Headless, Integrations
 role: Developer
 level: Intermediate, Experienced
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
-source-git-commit: ef4579a44c1c940a3b7441e336db3790a0c7afd7
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
 source-wordcount: '1901'
 ht-degree: 0%
 
 ---
 
-# Credenciales de servicio
+# Credenciales del servicio
 
 Las integraciones con AEM as a Cloud Service deben poder autenticarse de forma segura en AEM. AEM Developer Console otorga acceso a las credenciales de servicio, que se utilizan para facilitar la interacción mediante programación de aplicaciones, sistemas y servicios externos con AEM Author o Publish Services a través de HTTP.
 
@@ -59,7 +59,7 @@ __Es una inicialización única por AEM entorno as a Cloud Service__
 1. Pulse los puntos suspensivos junto al entorno en la __Entornos__ y seleccione __Developer Console__
 1. Toque en la __Integraciones__ ficha
 1. Toque __Obtener credenciales de servicio__ botón
-1. Las credenciales del servicio se inicializarán y se mostrarán como JSON
+1. Las credenciales del servicio se inicializan y se muestran como JSON
 
 ![AEM Developer Console - Integraciones - Obtención de credenciales de servicio](./assets/service-credentials/developer-console.png)
 
@@ -69,7 +69,7 @@ Una vez inicializadas las credenciales de servicio del AEM como entorno de Cloud
 
 ![Descargar credenciales del servicio](assets/service-credentials/download-service-credentials.png)
 
-La descarga de las credenciales de servicio sigue los mismos pasos que la inicialización. Si la inicialización aún no se ha producido, se mostrará al usuario un error al tocar el botón __Obtener credenciales de servicio__ botón.
+La descarga de las credenciales de servicio sigue los mismos pasos que la inicialización. Si la inicialización aún no se ha producido, se muestra al usuario un error al tocar el botón __Obtener credenciales de servicio__ botón.
 
 1. Asegúrese de haber iniciado sesión como:
    + Miembro de __Cloud Manager: desarrollador__ Perfil de producto IMS (que otorga acceso a AEM Developer Console)
@@ -85,7 +85,7 @@ La descarga de las credenciales de servicio sigue los mismos pasos que la inicia
 
 ## Instalación de las credenciales del servicio
 
-Las credenciales del servicio proporcionan los detalles necesarios para generar un JWT, que se intercambia por un token de acceso utilizado para autenticarse con AEM as a Cloud Service. Las Credenciales de Servicio deben almacenarse en una ubicación segura accesible a través de las aplicaciones, sistemas o servicios externos que la utilizan para acceder a AEM. Cómo y dónde se administran las credenciales de servicio serán únicas para cada cliente.
+Las credenciales del servicio proporcionan los detalles necesarios para generar un JWT, que se intercambia por un token de acceso utilizado para autenticarse con AEM as a Cloud Service. Las Credenciales de Servicio deben almacenarse en una ubicación segura accesible a través de las aplicaciones, sistemas o servicios externos que la utilizan para acceder a AEM. Cómo y dónde se administran las credenciales de servicio son únicas por cliente.
 
 Para simplificar, este tutorial pasa las credenciales de servicio a través de la línea de comandos, sin embargo, trabaje con su equipo de seguridad de TI para comprender cómo almacenar y acceder a estas credenciales de acuerdo con las directrices de seguridad de su organización.
 

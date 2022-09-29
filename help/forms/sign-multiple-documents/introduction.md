@@ -1,22 +1,23 @@
 ---
 title: Introducción
 description: Demostración en vídeo del caso de uso de varios formularios de signo
-feature: Formularios adaptables
+feature: Adaptive Forms
 version: 6.4,6.5
 thumbnail: 330165.jpg
-topic: Desarrollo
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 0260d4b6-8615-4d78-a920-b36766a0f8e9
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '122'
-ht-degree: 4%
+source-wordcount: '118'
+ht-degree: 2%
 
 ---
 
 # Introducción
 
-Tanto si solicita una hipoteca como si abre una nueva cuenta bancaria, deberá rellenar y firmar varios formularios. La integración entre AEM Forms y Adobe Sign facilita la cumplimentación y firma de varios formularios.
+Tanto si solicita una hipoteca como si abre una nueva cuenta bancaria, debe rellenar y firmar varios formularios. La integración entre AEM Forms y Adobe Sign facilita la cumplimentación y firma de varios formularios.
 El siguiente vídeo lo acompaña durante el caso de uso de firmar varios formularios.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330165?quality=9&learn=on)

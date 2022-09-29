@@ -13,9 +13,9 @@ topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: cbe08570-e353-4daf-94d1-a91a8d63406d
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '535'
 ht-degree: 0%
 
 ---
@@ -32,22 +32,22 @@ La herramienta de desarrollo de Assets computes se puede ejecutar desde la raíz
 $ aio app run
 ```
 
-Esto iniciará la herramienta de desarrollo en __http://localhost:9000__ y la abrirá automáticamente en una ventana del explorador. Para que se ejecute la herramienta de desarrollo, [se debe proporcionar un devToolToken válido y generado automáticamente a través de un parámetro de consulta](#troubleshooting__devtooltoken).
+Esto iniciará la herramienta de desarrollo en __http://localhost:9000__ y ábralo automáticamente en una ventana del explorador. Para que se ejecute la herramienta de desarrollo, [se debe proporcionar un devToolToken válido y generado automáticamente mediante un parámetro de consulta](#troubleshooting__devtooltoken).
 
 ## Explicación de la interfaz de las herramientas de desarrollo de Asset compute{#interface}
 
 ![Herramienta de desarrollo de assets computes](./assets/development-tool/asset-compute-dev-tool.png)
 
-1. __Archivo de origen:__  la selección del archivo de origen se utiliza para:
-   + Se ha seleccionado el binario del recurso que será el binario `source` pasado al trabajador del Asset compute
+1. __Archivo de origen:__ La selección del archivo de origen se utiliza para:
+   + Seleccione el binario de recursos que actúa como el `source` binario transferido al trabajador de Asset compute
    + Cargar archivos de origen
-1. __Definición de perfil o perfiles de asset compute:__ define el trabajador de Asset compute que se ejecutará incluyendo los parámetros: incluido el punto final de la URL del trabajador, el nombre de la representación resultante y cualquier parámetro
-1. __Ejecutar:__ el botón Ejecutar ejecuta el perfil de Asset compute tal como se define en el editor de perfiles de configuración de Asset compute
-1. __Anular:__ el botón Anular cancela una ejecución iniciada al pulsar el botón Ejecutar
-1. __Solicitud/respuesta:__ proporciona la solicitud y respuesta HTTP al Asset compute que se ejecuta en Adobe I/O Runtime. Esto puede resultar útil para depurar
-1. __Registros de activación:__ los registros que describen la ejecución del trabajador de Asset compute, junto con los errores. Esta información también está disponible en el estándar `aio app run`
-1. __Representaciones:__ muestra todas las representaciones generadas por la ejecución del Asset compute de trabajo
-1. __parámetro de consulta devToolToken:__ el token de la herramienta de desarrollo de Asset compute requiere un parámetro de  `devToolToken` consulta válido para estar presente. Este token se genera automáticamente cada vez que se genera una nueva herramienta de desarrollo
+1. __Definición de perfil o perfiles de asset compute:__ Define el Asset compute de trabajo que se va a ejecutar, incluidos los parámetros: incluido el punto final de la URL del trabajador, el nombre de la representación resultante y cualquier parámetro
+1. __Ejecutar:__ El botón Ejecutar ejecuta el perfil de Asset compute tal como se define en el editor de perfiles de configuración de Asset compute
+1. __Anular:__ El botón Anular cancela una ejecución iniciada al pulsar el botón Ejecutar
+1. __Solicitud/respuesta:__ Proporciona la solicitud y respuesta HTTP al/desde el Asset compute de trabajo que se ejecuta en Adobe I/O Runtime. Esto puede resultar útil para depurar
+1. __Registros de activación:__ Los registros que describen la ejecución del trabajador de Asset compute, junto con cualquier error. Esta información también está disponible en la `aio app run` salida estándar
+1. __Representaciones:__ Muestra todas las representaciones generadas por la ejecución del Asset compute de trabajo
+1. __parámetro de consulta devToolToken:__ El token de la herramienta de desarrollo de Asset compute requiere una `devToolToken` parámetro de consulta para estar presente. Este token se genera automáticamente cada vez que se genera una nueva herramienta de desarrollo
 
 ### Ejecutar un trabajador personalizado
 
@@ -55,14 +55,14 @@ Esto iniciará la herramienta de desarrollo en __http://localhost:9000__ y la ab
 
 _Pulsación para ejecutar un trabajo de Asset compute en la herramienta de desarrollo (sin audio)_
 
-1. Asegúrese de que la herramienta de desarrollo de Asset compute se inicie desde la raíz del proyecto mediante el comando `aio app run`.
-1. En la herramienta de desarrollo de Asset compute, cargue o seleccione un [archivo de imagen de muestra](../assets/samples/sample-file.jpg)
-   + Asegúrese de que el archivo esté seleccionado en la lista desplegable __Source file__
-1. Revise el área de texto __definición del perfil de Asset compute__
-   + La clave `worker` define la dirección URL del trabajador de Asset compute implementado
-   + La clave `name` define el nombre de la representación que se va a generar
-   + Se pueden proporcionar otras claves y valores en este objeto JSON y estarán disponibles en el programa de trabajo en el objeto `rendition.instructions`
-      + Opcionalmente, agregue valores para `size`, `contrast` y `brightness`:
+1. Asegúrese de que la herramienta de desarrollo de Asset compute se inicie desde la raíz del proyecto mediante `aio app run` comando.
+1. En la herramienta de desarrollo de Asset compute, cargue o seleccione una [archivo de imagen de ejemplo](../assets/samples/sample-file.jpg)
+   + Asegúrese de que el archivo esté seleccionado en la variable __Archivo de origen__ lista desplegable
+1. Consulte la __Definición de perfil de asset compute__ área de texto
+   + La variable `worker` define la dirección URL del trabajador de Asset compute implementado
+   + La variable `name` key define el nombre de la representación que se va a generar
+   + Se pueden proporcionar otras claves y valores en este objeto JSON y están disponibles en el programa de trabajo en la sección `rendition.instructions` object
+      + Si lo desea, puede agregar valores para `size`, `contrast` y `brightness`:
 
          ```json
          {
@@ -78,8 +78,8 @@ _Pulsación para ejecutar un trabajo de Asset compute en la herramienta de desar
          }
          ```
 
-1. Pulse el botón __Ejecutar__
-1. La sección __Representaciones__ se rellenará con un marcador de posición de representación
+1. Toque . __Ejecutar__ botón
+1. La variable __Sección Representaciones__ se rellenará con un marcador de posición de representación
 1. Una vez que el trabajador haya terminado, el marcador de posición de representación mostrará la representación generada
 
 Si se realizan cambios en el código de trabajo mientras se ejecuta la herramienta de desarrollo, los cambios se &quot;implementarán en caliente&quot;. La &quot;implementación activa&quot; tarda varios segundos, por lo que debe permitir que la implementación se complete antes de volver a ejecutar el programa de trabajo desde la herramienta de desarrollo.

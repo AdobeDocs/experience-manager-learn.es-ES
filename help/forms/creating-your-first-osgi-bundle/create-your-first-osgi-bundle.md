@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 307cc3b2-87e5-4429-8f21-5266cf03b78f
-source-git-commit: f4e86059d29acf402de5242f033a25f913febf36
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '667'
 ht-degree: 1%
 
 ---
@@ -56,7 +56,7 @@ Instale la última versión de [eclipse](https://www.eclipse.org/downloads/)
 
 ## Crear el primer proyecto
 
-Arquetipo es un conjunto de herramientas de creación de plantillas de proyecto Maven. Un arquetipo se define como un patrón o modelo original desde el cual se realizan todas las demás cosas del mismo tipo. El nombre se ajusta a como intentamos proporcionar un sistema que proporcione un medio coherente de generar proyectos Maven. El tipo de archivo ayudará a los autores a crear plantillas de proyecto de Maven para los usuarios y les proporcionará los medios para generar versiones parametrizadas de esas plantillas de proyecto.
+Arquetipo es un conjunto de herramientas de creación de plantillas de proyecto Maven. Un arquetipo se define como un patrón o modelo original desde el cual se realizan todas las demás cosas del mismo tipo. El nombre se ajusta a como intentamos proporcionar un sistema que proporcione un medio coherente de generar proyectos Maven. El tipo de archivo ayuda a los autores a crear plantillas de proyecto de Maven para los usuarios y proporciona a los usuarios los medios para generar versiones parametrizadas de esas plantillas de proyecto.
 Para crear su primer proyecto de maven, siga los siguientes pasos:
 
 * Cree una nueva carpeta llamada `aemformsbundles` en su unidad C
@@ -72,7 +72,7 @@ Al completarse correctamente, debería ver un mensaje de éxito de compilación 
 ## Crear un proyecto eclipse a partir de su proyecto de maven
 
 * Cambie el directorio de trabajo a `mysite`
-* Ejecutar `mvn eclipse:eclipse` desde la línea de comandos. El comando lee el archivo pom y crea proyectos de Eclipse con metadatos correctos para que Eclipse comprenda los tipos de proyectos, las relaciones, la ruta de clase, etc.
+* Ejecutar `mvn eclipse:eclipse` desde la línea de comandos. El comando lee el archivo pom y crea proyectos de Eclipse con metadatos correctos para que Eclipse entienda los tipos de proyectos, las relaciones, la ruta de clase, etc.
 
 ## Importar el proyecto en eclipse
 
@@ -95,13 +95,13 @@ Haga clic en **Finalizar** para iniciar el proceso de importación
 
 El proyecto se importa en Eclipse y verá una serie de `mysite.xxxx` carpetas
 
-Expanda el `src/main/java` en el `mysite.core` carpeta. Esta es la carpeta en la que escribirá la mayor parte del código.
+Expanda el `src/main/java` en el `mysite.core` carpeta. Esta es la carpeta en la que está escribiendo la mayor parte del código.
 
 ![fuente de datos](assets/mysite-core-project.png)
 
 ## Incluir SDK de cliente de AEMFD
 
-Deberá incluir el sdk del cliente AEMFD en su proyecto para aprovechar los distintos servicios que se incluyen con AEM Forms. Consulte [SDK de cliente de AEMFD](https://mvnrepository.com/artifact/com.adobe.aemfd/aemfd-client-sdk) para incluir el SDK de cliente apropiado en su proyecto de Maven. Tendrá que incluir el SDK de cliente de FD de AEM en la sección de dependencias de `pom.xml` del proyecto principal como se muestra a continuación.
+Debe incluir el sdk del cliente AEMFD en el proyecto para aprovechar los distintos servicios que se incluyen con AEM Forms. Consulte [SDK de cliente de AEMFD](https://mvnrepository.com/artifact/com.adobe.aemfd/aemfd-client-sdk) para incluir el SDK de cliente apropiado en su proyecto de Maven. Debe incluir el SDK de cliente de FD de AEM en la sección de dependencias de `pom.xml` del proyecto principal como se muestra a continuación.
 
 ```xml
 <dependency>
@@ -116,5 +116,5 @@ Para crear el proyecto, siga los siguientes pasos:
 * Apertura **ventana del símbolo del sistema**
 * Vaya a `c:\aemformsbundles\mysite\core`
 * Ejecutar el comando `mvn clean install -PautoInstallBundle`
-El comando anterior crea e instala el paquete en el servidor de AEM que se ejecuta en `http://localhost:4502`. El paquete también estará disponible en el sistema de archivos en
+El comando anterior crea e instala el paquete en el servidor de AEM que se ejecuta en `http://localhost:4502`. El paquete también está disponible en el sistema de archivos en
    `C:\AEMFormsBundles\mysite\core\target` y se pueden implementar utilizando [Consola web Felix](http://localhost:4502/system/console/bundles)

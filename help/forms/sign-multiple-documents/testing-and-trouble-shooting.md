@@ -1,20 +1,20 @@
 ---
 title: Solución de problemas para firmar varios documentos
 description: Prueba y resolución de problemas de la solución
-feature: Formularios adaptables
+feature: Adaptive Forms
 version: 6.4,6.5
 kt: 6960
 thumbnail: 6960.jpg
-topic: Desarrollo
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 99cba29e-4ae3-4160-a4c7-a5b6579618c0
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '388'
 ht-degree: 1%
 
 ---
-
 
 # Comprobación y solución de problemas
 
@@ -27,7 +27,7 @@ El flujo de trabajo Sign Multiple Forms obtiene déclencheur sobre este envío d
 
 ## Rellenar formularios en el paquete
 
-El cliente se presenta para rellenar y firmar el primer formulario del paquete. Al firmar correctamente el formulario, el cliente puede acceder al siguiente formulario del paquete. Una vez que se han rellenado y firmado todos los formularios, el cliente recibe el formulario &quot;**AllDone**&quot;.
+El cliente se presenta para rellenar y firmar el primer formulario del paquete. Al firmar correctamente el formulario, el cliente puede acceder al siguiente formulario del paquete. Una vez que se han rellenado y firmado todos los formularios, el cliente recibe la etiqueta &quot;**AllDone**&quot;.
 
 ## Solución de problemas
 
@@ -49,15 +49,4 @@ Al firmar correctamente un formulario en el paquete, se activa el flujo de traba
 
 ### No ver el formulario AllDone
 
-Cuando no hay más formularios para iniciar sesión en el paquete, el formulario AllDone se presenta al usuario. Si no ve el formulario AllDone, compruebe la URL utilizada en la línea 33 del archivo GetNextFormToSign.js que forma parte de la biblioteca de cliente **getnextform**.
-
-
-
-
-
-
-
-
-
-
-
+Cuando no hay más formularios para iniciar sesión en el paquete, el formulario AllDone se presenta al usuario. Si no ve el formulario AllDone, compruebe la URL utilizada en la línea 33 del archivo GetNextFormToSign.js que forma parte del **getnextform** biblioteca de cliente.

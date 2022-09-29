@@ -15,10 +15,10 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 85e1b450-39c0-4bb8-be5d-d7f50b102f3d
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 0%
+source-wordcount: '260'
+ht-degree: 1%
 
 ---
 
@@ -28,16 +28,15 @@ La opción Enviar a extremo REST pasa los datos rellenados en el formulario a un
 
 \{fieldName\} = \{parameterName\}. Por ejemplo, el nombre del remitente es el nombre de un campo de formulario adaptable y el remitente es el nombre del parámetro. En la página de agradecimiento, puede acceder al parámetro de remitente utilizando request.getParameter(&quot;submitter&quot;) para obtener el valor del campo de nombre del remitente.
 
-submitterName=submitter
+`submitterName=submitter`
 
-En la captura de pantalla siguiente, presentamos el formulario adaptable para agradecerle a la página ubicada en /content/thankyou. A esta página de agradecimiento, se pasan 3 atributos de solicitud que albergarán los valores de campo del formulario.
+En la captura de pantalla siguiente, presentamos el formulario adaptable para agradecerle a la página ubicada en /content/thankyou. A esta página de agradecimiento, se pasan 3 atributos de solicitud que contienen los valores de campo del formulario.
 
-![thank](assets/thankyoupage.gif)
+![Página de agradecimiento](assets/thankyoupage.gif)
 
-También puede enviar al extremo externo a través de un POST. Para ello, solo tiene que seleccionar la casilla de verificación &quot;habilitar solicitud posterior&quot; y proporcionar la URL para el punto final externo. Al enviar el formulario, obtendrá la página de agradecimiento y el punto final del POST se invocará simultáneamente.
+También puede enviar al extremo externo a través de un POST. Para ello, solo tiene que seleccionar la casilla de verificación &quot;habilitar solicitud posterior&quot; y proporcionar la URL para el punto final externo. Al enviar el formulario, se obtiene una página de agradecimiento y el punto final del POST se invoca simultáneamente.
 
-![captura](assets/capture.gif)
-
+![Configuración de captación](assets/capture.gif)
 
 Para probar esta capacidad en su servidor, siga las instrucciones que se mencionan a continuación:
 

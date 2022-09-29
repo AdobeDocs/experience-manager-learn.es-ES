@@ -11,9 +11,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '4582'
+source-wordcount: '4571'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ La estructura completa del nodo:
 
 ### Raíz de plantilla del proyecto
 
-El nodo raíz de la plantilla de proyecto será del tipo **cq:Template**. En este nodo puede configurar las propiedades **jcr:title** y **jcr:description** que se mostrará en el Asistente para crear proyectos. También hay una propiedad llamada **asistente** que señala a un formulario que rellenará las propiedades del proyecto. El valor predeterminado de: **/libs/cq/core/content/projects/wizard/steps/defaultproject.html** debería funcionar bien en la mayoría de los casos, ya que permite al usuario rellenar las propiedades básicas de Project y agregar miembros de grupo.
+El nodo raíz de la plantilla de proyecto es del tipo **cq:Template**. En este nodo puede configurar las propiedades **jcr:title** y **jcr:description** que se muestra en el Asistente para crear proyectos. También hay una propiedad llamada **asistente** que señala a un formulario que rellenará las propiedades del proyecto. El valor predeterminado de: **/libs/cq/core/content/projects/wizard/steps/defaultproject.html** debería funcionar bien en la mayoría de los casos, ya que permite al usuario rellenar las propiedades básicas de Project y agregar miembros de grupo.
 
 *&#42;Tenga en cuenta que el Asistente para crear proyectos no utiliza el servlet de POST de Sling. En su lugar, los valores se publican en un servlet personalizado:**com.adobe.cq.projects.impl.servlet.ProjectServlet**. Esto debe tenerse en cuenta al añadir campos personalizados.*
 
@@ -92,7 +92,7 @@ Una de las razones más atractivas para crear una plantilla de proyecto personal
 
 ## Creación de una plantilla de proyecto {#creating-project-template}
 
-Como principalmente copiaremos/configuraremos nodos, utilizaremos CRXDE Lite. En la instancia de AEM local, abra [CRXDE Lite](http://localhost:4502/crx/de/index.jsp).
+Como principalmente copiamos/configuramos nodos, utilizaremos CRXDE Lite. En la instancia de AEM local, abra [CRXDE Lite](http://localhost:4502/crx/de/index.jsp).
 
 1. Comience creando una nueva carpeta debajo de `/apps/&lt;your-app-folder&gt;` named `projects`. Cree otra carpeta debajo de ese nombre `templates`.
 
@@ -288,7 +288,7 @@ Aunque las tareas tienen algunas ventajas con respecto a los pasos de los partic
 
 El diagrama anterior describe los requisitos de alto nivel para nuestro flujo de trabajo de aprobación de muestras.
 
-El primer paso será crear una tarea para finalizar la edición de un fragmento de contenido. Permitiremos que el iniciador del flujo de trabajo elija el usuario asignado de esta primera tarea.
+El primer paso es crear una tarea para finalizar la edición de un fragmento de contenido. Permitiremos que el iniciador del flujo de trabajo elija el usuario asignado de esta primera tarea.
 
 Una vez finalizada la primera tarea, el usuario asignado tendrá tres opciones para enrutar el flujo de trabajo:
 
@@ -324,7 +324,7 @@ El último paso del flujo de trabajo utiliza el paso de proceso Activar página/
    >
    >Si se utiliza AEM 6.4+, la ubicación del flujo de trabajo ha cambiado. Consulte [aquí para más detalles.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/workflows-best-practices.html#LocationsWorkflowModels)
 
-   Si se utiliza AEM 6.4 o posterior, el modelo de flujo de trabajo se creará en `/conf/global/settings/workflow/models`. Repita los pasos anteriores con el directorio /conf y añada una subcarpeta llamada `aem-guides` y mueva el `content-approval-workflow` debajo.
+   Si se utiliza AEM 6.4+, el modelo de flujo de trabajo se crea en `/conf/global/settings/workflow/models`. Repita los pasos anteriores con el directorio /conf y añada una subcarpeta llamada `aem-guides` y mueva el `content-approval-workflow` debajo.
 
    ![Ubicación moderna de la definición del flujo de trabajo](./assets/develop-aem-projects/modern-workflow-definition-location.png)
 Ubicación del modelo de flujo de trabajo en 6.4+
@@ -345,7 +345,7 @@ Ubicación del modelo de flujo de trabajo en 6.4+
 
    La barra de progreso del flujo de trabajo tal como se ve desde la bandeja de entrada de AEM.
 
-   Si lo desea, puede cargar un **Imagen** a las Propiedades de página que se utilizarán como la miniatura del flujo de trabajo cuando los usuarios lo seleccionen. Las dimensiones de la imagen deben ser de 319 x 319 píxeles. Adición de un **Descripción** a Propiedades de página también se mostrará cuando un usuario vaya a seleccionar el flujo de trabajo.
+   Si lo desea, puede cargar un **Imagen** a las Propiedades de página que se utilizan como la miniatura del flujo de trabajo cuando los usuarios la seleccionan. Las dimensiones de la imagen deben ser de 319 x 319 píxeles. Adición de un **Descripción** a Propiedades de página también se mostrará cuando un usuario vaya a seleccionar el flujo de trabajo.
 
 1. El proceso de flujo de trabajo Crear tarea de proyecto está diseñado para crear una tarea como paso en el flujo de trabajo. Solo después de completar la tarea avanzará el flujo de trabajo. Un aspecto importante del paso Crear tarea de proyecto es que puede leer los valores de metadatos del flujo de trabajo y utilizarlos para crear la tarea de forma dinámica.
 
@@ -393,7 +393,7 @@ Ubicación del modelo de flujo de trabajo en 6.4+
       Pre-Create Task Script = "/apps/aem-guides/projects/scripts/start-task-config.ecma"
    ```
 
-1. En el paso anterior hemos hecho referencia a un script de tarea de precreación. Ahora crearemos esa secuencia de comandos en la que estableceremos el usuario asignado de la tarea en función del valor de un valor de metadatos de flujo de trabajo &quot;**usuario asignado**&quot;. La variable **&quot;cesionario&quot;** se establecerá cuando se inicie el flujo de trabajo. También leeremos los metadatos del flujo de trabajo para elegir dinámicamente la prioridad de la tarea leyendo el &quot;**taskPriority&quot;** de los metadatos del flujo de trabajo, así como el **&quot;taskDueDate&quot; **para establecer dinámicamente cuando se debe realizar la primera tarea.
+1. En el paso anterior hemos hecho referencia a un script de tarea de precreación. Ahora crearemos esa secuencia de comandos en la que estableceremos el usuario asignado de la tarea en función del valor de un valor de metadatos de flujo de trabajo &quot;**usuario asignado**&quot;. La variable **&quot;cesionario&quot;** se establece cuando se inicia el flujo de trabajo. También leeremos los metadatos del flujo de trabajo para elegir dinámicamente la prioridad de la tarea leyendo el &quot;**taskPriority&quot;** de los metadatos del flujo de trabajo, así como el **&quot;taskDueDate&quot; **para establecer dinámicamente cuando se debe realizar la primera tarea.
 
    Con fines organizativos, hemos creado una carpeta debajo de la carpeta de la aplicación para guardar todos los scripts relacionados con el proyecto: **/apps/aem-guides/projects-tasks/projects/scripts**. Cree un nuevo archivo debajo de esta carpeta con el nombre **&quot;start-task-config.ecma&quot;**. &#42;Tenga en cuenta que la ruta al archivo start-task-config.ecma coincide con la ruta establecida en la ficha Configuración avanzada del paso 4.
 
@@ -418,7 +418,7 @@ Ubicación del modelo de flujo de trabajo en 6.4+
    task.setProperty("taskPriority", taskPriority);
    ```
 
-1. Vuelva al flujo de trabajo de aprobación de contenido. Arrastrar y soltar el **División OR** componente (que se encuentra en la barra de tareas dentro de la categoría &quot;Flujo de trabajo&quot;) debajo de **Iniciar tarea** Paso. En el cuadro de diálogo común, seleccione el botón de opción para 3 ramas. La división OR leerá el valor de los metadatos del flujo de trabajo **&quot;lastTaskAction&quot;** para determinar la ruta del flujo de trabajo. La variable **&quot;lastTaskAction&quot;** se establecerá en uno de los valores de la ficha Enrutamiento configurada en el paso 4. Para cada una de las fichas Rama, rellene el **Secuencia de comandos** área de texto con los siguientes valores:
+1. Vuelva al flujo de trabajo de aprobación de contenido. Arrastrar y soltar el **División OR** componente (que se encuentra en la barra de tareas dentro de la categoría &quot;Flujo de trabajo&quot;) debajo de **Iniciar tarea** Paso. En el cuadro de diálogo común, seleccione el botón de opción para 3 ramas. La división OR leerá el valor de los metadatos del flujo de trabajo **&quot;lastTaskAction&quot;** para determinar la ruta del flujo de trabajo. La variable **&quot;lastTaskAction&quot;** se establece en uno de los valores de la ficha Enrutamiento configurada en el paso 4. Para cada una de las fichas Rama, rellene el **Secuencia de comandos** área de texto con los siguientes valores:
 
    ```
    function check() {
@@ -482,7 +482,7 @@ Ubicación del modelo de flujo de trabajo en 6.4+
 
    Dado que esta es la ruta de aprobación normal, la prioridad de la tarea se establece en Media. Además, damos al grupo Aprobadores 5 días para completar la tarea. El usuario asignado se deja en blanco en la ficha Tarea, ya que lo asignaremos de forma dinámica en la ficha Configuración avanzada . Asignamos al grupo Aprobadores dos rutas posibles al completar esta tarea: **&quot;Aprobar y publicar&quot;** si aprueban el contenido y puede publicarse y **&quot;Enviar para revisión&quot;** si hay problemas que el editor original debe corregir. El aprobador puede dejar comentarios que el editor original verá si se le devuelve el flujo de trabajo.
 
-Anteriormente, en este tutorial, creamos una plantilla de proyecto que incluía una función de aprobadores. Cada vez que se crea un nuevo proyecto a partir de esta plantilla, se crea un grupo específico para el proyecto para la función Aprobadores . Al igual que una etapa de participante, una tarea solo se puede asignar a un usuario o grupo. Queremos asignar esta tarea al grupo de proyectos que corresponda al Grupo de Aprobadores. Todos los flujos de trabajo que se inician desde un proyecto tienen metadatos que asignan las funciones del proyecto al grupo específico del proyecto.
+Anteriormente, en este tutorial, creamos una plantilla de proyecto que incluía una función de aprobadores. Cada vez que se crea un nuevo proyecto a partir de esta plantilla, se crea un grupo específico del proyecto para la función Aprobadores . Al igual que una etapa de participante, una tarea solo se puede asignar a un usuario o grupo. Queremos asignar esta tarea al grupo de proyectos que corresponda al Grupo de Aprobadores. Todos los flujos de trabajo que se inician desde un proyecto tienen metadatos que asignan las funciones del proyecto al grupo específico del proyecto.
 
 Copie y pegue el siguiente código en la sección **Secuencia de comandos** área de texto de la pestaña **Configuración avanzada **. Este código leerá los metadatos del flujo de trabajo y asignará la tarea al grupo Aprobadores del proyecto. Si no encuentra el valor del grupo aprobadores, volverá a asignar la tarea al grupo Administradores .
 

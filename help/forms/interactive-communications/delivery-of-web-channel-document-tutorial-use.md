@@ -1,33 +1,28 @@
 ---
-title: 'Envío de un documento de comunicación interactiva: canal web AEM Forms'
-seo-title: 'Envío de un documento de comunicación interactiva: canal web AEM Forms'
+title: 'Entrega del documento de comunicación interactiva: AEM Forms de canal web'
 description: Envío del documento del canal web mediante un vínculo en el correo electrónico
-seo-description: Envío del documento del canal web mediante un vínculo en el correo electrónico
 feature: Interactive Communication
-topics: development
 audience: developer
-doc-type: article
 activity: implement
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 50858100-3d0c-42bd-87b8-f626212669e2
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 1%
+source-wordcount: '277'
+ht-degree: 0%
 
 ---
-
 
 # Envío por correo electrónico de un documento de canal web
 
 Una vez que haya definido y probado el documento de comunicación interactiva del canal web, necesita un mecanismo de envío para enviar el documento del canal web al destinatario.
 
-En este artículo, echamos un vistazo al correo electrónico como un mecanismo de envío para el documento de canal web. El destinatario obtiene un vínculo al documento del canal web por correo electrónico. Al hacer clic en el vínculo, se le pedirá al usuario que se autentique y el documento del canal web se rellenará con los datos específicos del usuario que ha iniciado sesión.
+En este artículo, echamos un vistazo al correo electrónico como un mecanismo de envío para el documento de canal web. El destinatario obtiene un vínculo al documento del canal web por correo electrónico. Al hacer clic en el vínculo, se solicita al usuario que se autentique y el documento del canal web se rellena con los datos específicos del usuario que ha iniciado sesión.
 
-Veamos el siguiente fragmento de código. Este código forma parte de GET.jsp que se activa cuando el usuario hace clic en el vínculo del correo electrónico para ver el documento del canal web. Obtenemos el usuario que ha iniciado sesión utilizando el UserManager de jackrabbit. Una vez que recibimos el usuario que ha iniciado sesión, obtenemos el valor de la propiedad accountNumber asociada al perfil del usuario.
+Veamos el siguiente fragmento de código. Este código forma parte de GET.jsp, que se activa cuando el usuario hace clic en el vínculo del correo electrónico para ver el documento del canal web. Obtenemos el usuario que ha iniciado sesión utilizando el UserManager de jackrabbit. Una vez que recibimos el usuario que ha iniciado sesión, obtenemos el valor de la propiedad accountNumber asociada al perfil del usuario.
 
 A continuación, asociamos el valor accountNumber con una clave denominada número de cuenta en el mapa. La clave **accountnumber** se define en el modal de datos del formulario como un atributo de solicitud. El valor de este atributo se pasa como parámetro de entrada al método de servicio de lectura del modo de datos del formulario.
 
@@ -43,13 +38,12 @@ CustomParameterRequest wrapperRequest = new CustomParameterRequest(slingRequest,
 wrapperRequest.getRequestDispatcher("/content/forms/af/401kstatement/irastatement/channels/web.html").include(wrapperRequest, response);
 ```
 
-![includemethod](assets/includemethod.jpg)
+![Método de inclusión](assets/includemethod.jpg)
 
 Representación visual del código de línea 7
 
-![requestparameter](assets/requestparameter.png)
+![Configuración del parámetro de solicitud](assets/requestparameter.png)
 
 Atributo de solicitud definido para el servicio de lectura del modal de datos del formulario
 
-
-[Paquete AEM de muestra](assets/webchanneldelivery.zip).
+[Paquete de AEM de ejemplo](assets/webchanneldelivery.zip).

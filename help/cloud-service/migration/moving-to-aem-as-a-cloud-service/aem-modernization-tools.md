@@ -8,10 +8,10 @@ level: Experienced
 kt: 8629
 thumbnail: 336965.jpeg
 exl-id: 310f492c-0095-4015-81a4-27d76f288138
-source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
 source-wordcount: '438'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
@@ -91,4 +91,4 @@ Además, asegúrese de haber completado el ejercicio práctico anterior:
 
 
 1. Implemente el sitio heredado de wknd recién modernizado en el SDK de AEM local. AEM ASK está disponible para su descarga aquí:
-+ [Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html).
+   + [Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html).

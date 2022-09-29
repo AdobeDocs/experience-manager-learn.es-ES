@@ -8,9 +8,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 7a4fd109-514a-41a8-a3fe-53c1de32cb6d
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '892'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## Requisitos previos {#prerequisites}
 
-En este artículo, explicaremos el proceso de creación de fuentes de datos con Salesforce
+En este artículo, explicamos el proceso de creación de fuentes de datos con Salesforce
 
 Requisitos previos para este tutorial:
 
@@ -29,18 +29,18 @@ Requisitos previos para este tutorial:
    * [Documentación oficial para habilitar SSL en AEM 6.3](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/ssl-by-default.html)
    * [Documentación oficial para habilitar SSL en AEM 6.4](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/ssl-by-default.html)
 
-* Necesitará tener la cuenta de Salesforce
-* Deberá crear una aplicación conectada. Se muestra la documentación oficial de Salesforce para crear la aplicación [here](https://help.salesforce.com/articleView?id=connected_app_create.htm&amp;type=0).
+* Necesita tener la cuenta de Salesforce
+* Debe crear una aplicación conectada. Se muestra la documentación oficial de Salesforce para crear la aplicación [here](https://help.salesforce.com/articleView?id=connected_app_create.htm&amp;type=0).
 * Proporcionar los ámbitos de OAuth adecuados para la aplicación (he seleccionado todos los ámbitos de OAuth disponibles para realizar pruebas)
 * Proporcione la URL de devolución de llamada. La URL de devolución de llamada en mi caso era
 
-   * Si está utilizando **AEM Forms 6.3**, la URL de devolución de llamada será https://gbedekar-w7-1:6443/etc/cloudservices/fdm/createlead.html. En esta URL creada, leída es el nombre de mi modelo de datos de formulario.
+   * Si está utilizando **AEM Forms 6.3**, la URL de devolución de llamada es https://gbedekar-w7-1:6443/etc/cloudservices/fdm/createlead.html. En esta URL creada, leída es el nombre de mi modelo de datos de formulario.
 
-   * Si utiliza** AEM Forms 6.4**, la URL de devolución de llamada será https://gbedekar-w7-:6443/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
+   * Si utiliza** AEM Forms 6.4**, la URL de devolución de llamada es https://gbedekar-w7-:6443/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
 
 En este ejemplo, gbedekar -w7-1:6443 es el nombre de mi servidor y el puerto en el que se está ejecutando AEM.
 
-Una vez que haya creado la aplicación conectada, anote la **Clave de consumidor y clave secreta**. Los necesitará al crear la fuente de datos en AEM Forms.
+Una vez que haya creado la aplicación conectada, anote la **Clave de consumidor y clave secreta**. Los necesita al crear la fuente de datos en AEM Forms.
 
 Ahora que ha creado la aplicación conectada, debe crear un archivo de intercambio para las operaciones que debe realizar en salesforce. Se incluye un archivo de intercambio de muestras como parte de los recursos descargables. Este archivo de intercambio le permite crear el objeto &quot;Posible cliente&quot; en el envío del formulario adaptable. Explore este archivo de intercambio.
 

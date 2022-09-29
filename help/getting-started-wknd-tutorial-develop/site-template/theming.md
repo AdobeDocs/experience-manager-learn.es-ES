@@ -11,18 +11,18 @@ level: Beginner
 kt: 7498
 thumbnail: KT-7498.jpg
 exl-id: 98946462-1536-45f9-94e2-9bc5d41902d4
-source-git-commit: 25a1a40f42d37443db9edc0e09b1691b1c19e848
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '482'
-ht-degree: 0%
+source-wordcount: '479'
+ht-degree: 1%
 
 ---
 
 # Flujo de trabajo temático {#theming}
 
-En este capítulo actualizaremos las fuentes temáticas de un sitio de Adobe Experience Manager para aplicar estilos específicos de marca. Aprenderemos a utilizar un servidor proxy para ver una vista previa de las actualizaciones de CSS y Javascript a medida que se codifica en el sitio activo. Este tutorial también tratará sobre cómo implementar actualizaciones de temas en un sitio AEM mediante la canalización front-end de Adobe Cloud Manager.
+En este capítulo actualizamos las fuentes temáticas de un sitio de Adobe Experience Manager para aplicar estilos específicos de marca. Aprendemos a utilizar un servidor proxy para ver una vista previa de las actualizaciones de CSS y Javascript a medida que codificamos con el sitio activo. Este tutorial también tratará sobre cómo implementar actualizaciones de temas en un sitio AEM mediante la canalización front-end de Adobe Cloud Manager.
 
-Al final, nuestro sitio se actualizará para incluir estilos que coincidan con la marca WKND.
+Al final, nuestro sitio se actualiza para incluir estilos que coincidan con la marca WKND.
 
 ## Requisitos previos {#prerequisites}
 

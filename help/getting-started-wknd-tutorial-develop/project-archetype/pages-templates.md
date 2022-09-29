@@ -9,9 +9,9 @@ mini-toc-levels: 1
 kt: 4082
 thumbnail: 30214.jpg
 exl-id: e9d06dc2-ac3b-48c5-ae00-fdaf5bb45b54
-source-git-commit: d49dbfae3292f93b7f63f424731966934dc6a5ba
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '3081'
+source-wordcount: '3066'
 ht-degree: 1%
 
 ---
@@ -63,7 +63,7 @@ Siempre puede ver el código terminado en [GitHub](https://github.com/adobe/aem-
 
 ## Qué va a generar {#what-you-will-build}
 
-En esta parte del tutorial, creará una nueva plantilla de página de artículo que se puede utilizar para crear páginas de artículos nuevas y se ajusta a una estructura común. La plantilla de página de artículos se basará en diseños y en un kit de interfaz de usuario creado en Adobe XD. Este capítulo se centra únicamente en la construcción de la estructura o el esqueleto de la plantilla. No se implementará ningún estilo, pero la plantilla y las páginas funcionarán.
+En esta parte del tutorial, creará una nueva plantilla de página de artículo que se puede utilizar para crear páginas de artículos nuevas y se ajusta a una estructura común. La plantilla de página de artículos se basa en diseños y en un kit de interfaz de usuario creado en Adobe XD. Este capítulo se centra únicamente en la construcción de la estructura o el esqueleto de la plantilla. No se han implementado estilos, pero la plantilla y las páginas funcionan.
 
 ![Diseño de página de artículos y versión sin estilo](assets/pages-templates/what-you-will-build.png)
 
@@ -81,13 +81,13 @@ En la mayoría de los casos, la planificación de un nuevo sitio web comienza co
 
 ## Crear la plantilla de página de artículo
 
-Al crear una página, debe seleccionar una plantilla, que se utilizará como base para crear la página nueva. La plantilla define la estructura de la página resultante, el contenido inicial y los componentes permitidos.
+Al crear una página, debe seleccionar una plantilla, que se utiliza como base para crear la nueva página. La plantilla define la estructura de la página resultante, el contenido inicial y los componentes permitidos.
 
 Hay 3 zonas principales [Plantillas editables](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html):
 
-1. **Estructura** : define los componentes que forman parte de la plantilla. Los autores de contenido no podrán editarlos.
-1. **Contenido inicial** : define los componentes con los que comenzará la plantilla, que los autores de contenido pueden editar o eliminar
-1. **Políticas** : define las configuraciones sobre cómo se comportarán los componentes y las opciones que tendrán disponibles los autores.
+1. **Estructura** : define los componentes que forman parte de la plantilla. Los autores de contenido no pueden editarlos.
+1. **Contenido inicial** : define los componentes con los que comienza la plantilla, que los autores de contenido pueden editar o eliminar
+1. **Políticas** : define las configuraciones sobre cómo se comportan los componentes y las opciones que tendrán disponibles los autores.
 
 A continuación, cree una nueva plantilla en AEM que coincida con la estructura de las maquetas. Esto ocurre en una instancia local de AEM. Siga los pasos del siguiente vídeo:
 
@@ -101,12 +101,12 @@ Pasos de alto nivel para el vídeo anterior:
 1. Cambiar a **Estructura** en el menú contextual.
 1. Agregue un **Fragmento de experiencia** para que actúe como el **Encabezado** en la parte superior de la plantilla.
    * Configure el componente para que apunte a `/content/experience-fragments/wknd/us/en/site/header/master`.
-   * Configure la directiva en **Encabezado de página** y asegúrese de que **Elemento predeterminado** está configurado como `header`. La variable `header`se dirigirá a CSS en el capítulo siguiente.
+   * Configure la directiva en **Encabezado de página** y asegúrese de que **Elemento predeterminado** está configurado como `header`. La variable `header`se incluye en CSS en el capítulo siguiente.
 1. Agregue un **Fragmento de experiencia** para que actúe como el **Pie de página** en la parte inferior de la plantilla.
    * Configure el componente para que apunte a `/content/experience-fragments/wknd/us/en/site/footer/master`.
-   * Configure la directiva en **Pie de página** y asegúrese de que **Elemento predeterminado** está configurado como `footer`. La variable `footer` se dirigirá a CSS en el capítulo siguiente.
+   * Configure la directiva en **Pie de página** y asegúrese de que **Elemento predeterminado** está configurado como `footer`. La variable `footer` se incluye en CSS en el capítulo siguiente.
 1. Bloqueo de la variable **main** contenedor que se incluyó cuando la plantilla se creó inicialmente.
-   * Configure la directiva en **Página principal** y asegúrese de que **Elemento predeterminado** está configurado como `main`. La variable `main` se dirigirá a CSS en el capítulo siguiente.
+   * Configure la directiva en **Página principal** y asegúrese de que **Elemento predeterminado** está configurado como `main`. La variable `main` se incluye en CSS en el capítulo siguiente.
 1. Agregue un **Imagen** al **main** contenedor.
    * Desbloquear **Imagen** componente.
 1. Agregue un **Ruta de navegación** debajo del **Imagen** en el contenedor principal.
@@ -130,9 +130,9 @@ Pasos de alto nivel para el vídeo anterior:
 ### Configuraciones de contenido inicial
 
 1. Cambie a **Contenido inicial** en el menú contextual.
-1. Agregue un **Título** al **Contenedor de contenido**. Esto actuará como el título del artículo. Cuando se deje vacío, se mostrará automáticamente el Título de la página actual.
+1. Agregue un **Título** al **Contenedor de contenido**. Actúa como título del artículo. Cuando se deje vacío, se mostrará automáticamente el Título de la página actual.
 1. Añadir un segundo **Título** debajo del primer componente Título.
-   * Configure el componente con el texto: &quot;Por autor&quot;. Será un marcador de posición de texto.
+   * Configure el componente con el texto: &quot;Por autor&quot;. Es un marcador de posición de texto.
    * Defina el tipo que desea `H4`.
 1. Agregue un **Texto** debajo del **Por autor** Componente Título .
 1. Agregue un **Título** al **Contenedor de raíl lateral**.
@@ -348,13 +348,13 @@ Los siguientes pasos se llevarán a cabo utilizando el IDE de VSCode utilizando 
    </workspaceFilter>
    ```
 
-   La variable `filter.xml` es responsable de identificar las rutas de los nodos que se instalarán con el paquete. Observe que `mode="merge"` en cada uno de los filtros que indica que el contenido existente no se modificará, solo se añadirá contenido nuevo. Dado que los autores de contenido pueden estar actualizando estas rutas, es importante que una implementación de código **not** sobrescribir contenido. Consulte la [Documentación de FileVault](https://jackrabbit.apache.org/filevault/filter.html) para obtener más información sobre cómo trabajar con elementos de filtro.
+   La variable `filter.xml` es responsable de identificar las rutas de los nodos instalados con el paquete. Observe que `mode="merge"` en cada uno de los filtros que indica que el contenido existente no se modificará, solo se añadirá contenido nuevo. Dado que los autores de contenido pueden estar actualizando estas rutas, es importante que una implementación de código **not** sobrescribir contenido. Consulte la [Documentación de FileVault](https://jackrabbit.apache.org/filevault/filter.html) para obtener más información sobre cómo trabajar con elementos de filtro.
 
    Comparar `ui.content/src/main/content/META-INF/vault/filter.xml` y `ui.apps/src/main/content/META-INF/vault/filter.xml` para comprender los diferentes nodos administrados por cada módulo.
 
    >[!WARNING]
    >
-   > Para garantizar implementaciones coherentes para el sitio de referencia de WKND, algunas ramas del proyecto están configuradas de modo que `ui.content` sobrescribirá cualquier cambio en el JCR. Esto es por diseño, es decir, para las ramas de soluciones, ya que el código o los estilos se escribirán para políticas específicas.
+   > Para garantizar implementaciones coherentes para el sitio de referencia de WKND, algunas ramas del proyecto están configuradas de modo que `ui.content` sobrescribe cualquier cambio en el JCR. Esto es por diseño, es decir, para las ramas de soluciones, ya que el código o los estilos se escriben para políticas específicas.
 
 ## Felicitaciones! {#congratulations}
 

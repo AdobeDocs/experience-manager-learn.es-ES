@@ -12,16 +12,16 @@ topic: Integrations
 role: Developer
 level: Intermediate
 exl-id: d5de62ef-a2aa-4283-b500-e1f7cb5dec3b
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 3%
+source-wordcount: '106'
+ht-degree: 15%
 
 ---
 
 # Crear una propiedad de Launch {#create-launch-property}
 
-Obtenga información sobre cómo crear una propiedad de Launch con la configuración mínima necesaria para configurar el resto de la integración con Adobe Experience Manager. Los usuarios se familiarizarán con la interfaz de usuario de Launch y conocerán las extensiones, las reglas y los flujos de trabajo de publicación.
+Obtenga información sobre cómo crear una propiedad de Launch con la configuración mínima necesaria para configurar el resto de la integración con Adobe Experience Manager. Los usuarios se familiarizan con la interfaz de usuario de Launch y aprenden sobre las extensiones, las reglas y los flujos de trabajo de publicación.
 
 >[!VIDEO](https://video.tv.adobe.com/v/38553?quality=12&learn=on)
 

@@ -8,9 +8,9 @@ level: Beginner
 kt: 7636
 thumbnail: kt-7636.jpeg
 exl-id: 4accc1ca-6f4b-449e-bf2e-06f19d2fe17d
-source-git-commit: fe056006ab59a3955e5f16a23e96e9e208408cf5
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '916'
 ht-degree: 1%
 
 ---
@@ -176,8 +176,3 @@ Felicitaciones! ¡Ha añadido la capacidad de creación a las rutas dinámicas e
 + Contenido creado sobre la dinámica ruta del campamento de surf de Bali.
 
 Ya ha terminado de explorar los primeros pasos de cómo se puede utilizar AEM editor de SPA para agregar áreas editables específicas a un SPA remoto.
-
-
->[!NOTE]
->
->¡Manténgase atento! Este tutorial se ampliará para incluir las prácticas recomendadas y recomendaciones de Adobe sobre cómo implementar la solución Editor de SPA en entornos de producción y as a Cloud Service.

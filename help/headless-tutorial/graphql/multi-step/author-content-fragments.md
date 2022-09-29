@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 701fae92-f740-4eb6-8133-1bc45a472d0f
-source-git-commit: 410eb23534e083940bf716194576e099d22ca205
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '819'
+source-wordcount: '817'
 ht-degree: 2%
 
 ---
@@ -59,7 +59,7 @@ Los fragmentos de contenido se almacenan en carpetas de AEM Assets. Para crear f
 
    ![Modelos de fragmento de contenido permitidos](assets/author-content-fragments/allowed-content-fragment-models.png)
 
-   Todas las subcarpetas heredarán estas directivas automáticamente y se pueden sobrescribir. Tenga en cuenta que también puede permitir modelos mediante etiquetas o habilitar modelos desde otras configuraciones de proyecto. Este mecanismo proporciona una manera poderosa de administrar la jerarquía de contenido.
+   Estas directivas las hereda automáticamente cualquier subcarpeta y se pueden sobrescribir. Tenga en cuenta que también puede permitir modelos mediante etiquetas o habilitar modelos desde otras configuraciones de proyecto. Este mecanismo proporciona una manera poderosa de administrar la jerarquía de contenido.
 
 1. Toque **Guardar y cerrar** para guardar los cambios en las propiedades de la carpeta.
 
@@ -75,7 +75,7 @@ Los fragmentos de contenido se almacenan en carpetas de AEM Assets. Para crear f
 
 ## Crear un fragmento de contenido {#create-content-fragment}
 
-Los siguientes fragmentos de contenido se crearán en función de la variable **Equipo** y **Persona** modelos.
+A continuación, se crean varios fragmentos de contenido en función de la variable **Equipo** y **Persona** modelos.
 
 1. En la pantalla de inicio de AEM, pulse **Fragmentos de contenido** para abrir la interfaz de usuario de fragmentos de contenido.
 

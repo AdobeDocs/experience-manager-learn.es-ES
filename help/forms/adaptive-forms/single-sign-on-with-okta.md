@@ -6,22 +6,22 @@ version: 6.5
 topic: Administration
 role: Admin
 level: Experienced
-source-git-commit: 3109d406ed4788ab492a148d4eac94f7e5ad9f2d
+exl-id: 85c9b51e-92bb-4376-8684-57c9c3204b2f
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '759'
-ht-degree: 0%
+source-wordcount: '756'
+ht-degree: 1%
 
 ---
-
 
 # Autenticar con AEM Author mediante OKTA
 
 El primer paso es configurar la aplicación en el portal OKTA. Una vez que el administrador de OKTA haya aprobado la aplicación, tendrá acceso al certificado de IdP y a la URL de inicio de sesión único. A continuación se muestran los ajustes que se utilizan normalmente para registrar una nueva aplicación.
 
-* **Nombre de la aplicación:** es su nombre de aplicación. Asegúrese de asignar un nombre único a la aplicación.
-* **Destinatario de SAML:** tras la autenticación de OKTA, esta es la URL que se visitará en la instancia de AEM con la respuesta de SAML. El controlador de autenticación SAML suele interceptar todas las URL con / saml_login, pero es preferible anexarlas después de la raíz de la aplicación.
-* **Audiencia** de SAML: Esta es la URL de dominio de la aplicación. No utilice protocol(http o https) en la dirección URL del dominio.
-* **ID del nombre de SAML:** seleccione Correo electrónico en la lista desplegable.
+* **Nombre de la aplicación:** Este es su nombre de aplicación. Asegúrese de asignar un nombre único a la aplicación.
+* **Destinatario de SAML:** Después de la autenticación de OKTA, esta es la URL que se visitaría en la instancia de AEM con la respuesta SAML. El controlador de autenticación SAML suele interceptar todas las URL con / saml_login, pero es preferible anexarlas después de la raíz de la aplicación.
+* **Audiencia de SAML**: Esta es la URL de dominio de la aplicación. No utilice protocol(http o https) en la dirección URL del dominio.
+* **ID del nombre SAML:** Seleccione Correo electrónico en la lista desplegable.
 * **Entorno**: Elija el entorno apropiado.
 * **Atributos**: Estos son los atributos que obtiene sobre el usuario en la respuesta SAML. Especificarlos según sus necesidades.
 
@@ -32,10 +32,10 @@ El primer paso es configurar la aplicación en el portal OKTA. Una vez que el ad
 ## Añadir el certificado OKTA (IdP) al almacén de confianza de AEM
 
 Dado que las aserciones de SAML están cifradas, necesitamos agregar el certificado IdP (OKTA) al almacén de confianza de AEM, para permitir una comunicación segura entre OKTA y AEM.
-[Inicializar el almacén de confianza](http://localhost:4502/libs/granite/security/content/truststore.html), si no se ha inicializado ya.
+[Inicializar almacén de confianza](http://localhost:4502/libs/granite/security/content/truststore.html), si no se ha inicializado ya.
 Recuerde la contraseña del almacén de confianza. Necesitaremos utilizar esta contraseña más adelante en este proceso.
 
-* Vaya a [Global Trust Store](http://localhost:4502/libs/granite/security/content/truststore.html).
+* Vaya a [Almacén de confianza global](http://localhost:4502/libs/granite/security/content/truststore.html).
 * Haga clic en &quot;Añadir certificado del archivo CER&quot;. Agregue el certificado IdP proporcionado por OKTA y haga clic en enviar.
 
    >[!NOTE]
@@ -46,28 +46,27 @@ Al añadir el certificado al almacén de confianza, debe obtener un alias de cer
 
 ![Alias de certificado](assets/cert-alias.PNG)
 
-**Anote el alias del certificado. Necesitará esto en los pasos posteriores.**
+**Anote el alias del certificado. Lo necesita en los pasos posteriores.**
 
 ### Configuración del controlador de autenticación SAML
 
 Vaya a [configMgr](http://localhost:4502/system/console/configMgr).
 Busque y abra &quot;Adobe Granite SAML 2.0 Authentication Handler&quot;.
-Proporcione las siguientes propiedades como se especifica a continuación
-Las siguientes son las propiedades clave que deben especificarse:
+Proporcione las siguientes propiedades como se especifica a continuación Las siguientes son las propiedades clave que deben especificarse:
 
-* **ruta** : Esta es la ruta en la que se activará el controlador de autenticación
-* **Url** de IdP: esta es su URL de IdP que proporciona OKTA
-* **Alias** de certificado IDP:Este es el alias que obtuvo cuando agregó el certificado IdP a AEM almacén de confianza
-* **Id** de entidad del proveedor de servicios:Es el nombre de su servidor AEM
-* **Contraseña del almacén** de claves: Esta es la contraseña del almacén de confianza que utilizó
-* **Redireccionamiento** predeterminado: Esta es la dirección URL a la que se redirige en caso de autenticación correcta
-* **Atributo** UserID:uid
+* **ruta** - Esta es la ruta en la que se activa el controlador de autenticación
+* **Url IdP**: Esta es su URL de IdP que proporciona OKTA
+* **Alias de certificado IDP**:Este es el alias que obtuvo cuando agregó el certificado IdP a AEM almacén de confianza
+* **Id De Entidad De Proveedor De Servicio**:Este es el nombre de su servidor AEM
+* **Contraseña del almacén de claves**: Esta es la contraseña del almacén de confianza que utilizó
+* **Redirección predeterminada**: Esta es la dirección URL a la que se redirige en caso de autenticación correcta
+* **Atributo UserID**:uid
 * **Usar codificación**:false
-* **Creación automática de usuarios** CRX:true
+* **Creación automática de usuarios de CRX**:true
 * **Agregar a grupos**:true
-* **Grupos** predeterminados: Usuarios de cookies (es el grupo al que se agregan los usuarios). Puede proporcionar cualquier grupo existente dentro de AEM)
-* **NamedIDPolicy**: Especifica restricciones en el identificador de nombre que se utilizará para representar el asunto solicitado. Copie y pegue la siguiente cadena resaltada **urn:oasis:names:tc:SAML:2.0:nameidformat:emailAddress**
-* **Atributos sincronizados** : son los atributos que se almacenan desde la aserción SAML en AEM perfil
+* **Grupos predeterminados**:oktausers(Es el grupo al que se agregan los usuarios. Puede proporcionar cualquier grupo existente dentro de AEM)
+* **NamedIDPolicy**: Especifica restricciones en el identificador de nombre que se utilizará para representar el asunto solicitado. Copie y pegue la siguiente cadena resaltada **urn:oasis:name:tc:SAML:2.0:nameidformat:emailAddress**
+* **Atributos sincronizados** - Estos son los atributos que se almacenan desde la afirmación SAML en AEM perfil
 
 ![saml-authentication-handler](assets/saml-authentication-settings-blurred.PNG)
 
@@ -77,8 +76,8 @@ Vaya a [configMgr](http://localhost:4502/system/console/configMgr).
 Busque y abra &quot;Filtro de referente de Apache Sling&quot;. Defina las siguientes propiedades como se especifica a continuación:
 
 * **Permitir vacío**: false
-* **Permitir hosts**: Nombre de host de IdP (será diferente en su caso)
-* **Permitir host** Regexp: Nombre de host de IdP (será diferente en su caso) La captura de pantalla de las propiedades del referente de filtro de Sling
+* **Permitir hosts**: Nombre de host de IdP (esto es diferente en su caso)
+* **Permitir host Regexp**: Nombre de host de IdP (Esto es diferente en su caso) La captura de pantalla de las propiedades del referente de filtro de Sling
 
 ![referrer-filter](assets/okta-referrer.png)
 
@@ -94,12 +93,10 @@ Al configurar la integración de OKTA en AEM, puede resultar útil revisar los r
 
 * Busque y abra &quot;Configuración del registrador de Apache Sling&quot;
 * Cree un registrador con la siguiente configuración:
-   * **Nivel** de registro: Depuración
-   * **Archivo** de registro: logs/saml.log
+   * **Nivel de registro**: Depuración
+   * **Archivo de registro**: logs/saml.log
    * **Registrador**: com.adobe.granite.auth.saml
 * Haga clic en Guardar para guardar la configuración
-
-
 
 #### Probar la configuración de OKTA
 

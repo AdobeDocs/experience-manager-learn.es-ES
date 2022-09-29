@@ -1,14 +1,14 @@
 ---
-title: '"Capítulo 1 - Conceptos, patrones y antipatrones de Dispatcher"'
+title: "Capítulo 1 - Conceptos, patrones y antipatrones de Dispatcher"
 description: Este capítulo ofrece una breve introducción sobre el historial y la mecánica de Dispatcher y analiza cómo esto influye en cómo un desarrollador AEM diseñaría sus componentes.
 feature: Dispatcher
 topic: Architecture
 role: Architect
 level: Beginner
 exl-id: 3bdb6e36-4174-44b5-ba05-efbc870c3520
-source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '17468'
+source-wordcount: '17460'
 ht-degree: 0%
 
 ---
@@ -198,13 +198,13 @@ y
 
 `http://domain.com/home.html/suffix.html`
 
-Son absolutamente válidos en AEM. No vería ningún problema en su equipo de desarrollo local (sin Dispatcher). Lo más probable es que tampoco encuentre ningún problema en las pruebas de carga o UAT. El problema que enfrentamos es tan sutil que pasa por la mayoría de las pruebas.  Le afectará duro cuando esté en tiempo punta y estará limitado a tiempo para solucionarlo, probablemente no tenga acceso al servidor ni recursos para solucionarlo. Hemos estado allí...
+Son absolutamente válidos en AEM. No vería ningún problema en su equipo de desarrollo local (sin Dispatcher). Lo más probable es que tampoco encuentre ningún problema en las pruebas de carga o UAT. El problema que enfrentamos es tan sutil que pasa por la mayoría de las pruebas.  Le afectará duro cuando esté en tiempo punta y se le limita el tiempo para solucionarlo, probablemente no tenga acceso al servidor ni recursos para solucionarlo. Hemos estado allí...
 
 Entonces... ¿cuál es el problema?
 
 `home.html` en un sistema de archivos puede ser un archivo o una carpeta. No ambos al mismo tiempo que en AEM.
 
-Si lo solicita `home.html` en primer lugar, se creará como archivo.
+Si lo solicita `home.html` en primer lugar, se crea como un archivo.
 
 Solicitudes posteriores a `home.html/suffix.html` devuelven resultados válidos, pero como el archivo `home.html` &quot;bloquea&quot; la posición en el sistema de ficheros,  `home.html` no se puede crear por segunda vez como una carpeta y, por lo tanto, `home.html/suffix.html` no se almacena en caché.
 
@@ -304,7 +304,7 @@ invalidate-path:  /content/dam/path/to/image
 
 La invalidación es tan fácil: Una simple solicitud de GET a una URL especial &quot;/invalidate&quot; en Dispatcher. No se requiere un cuerpo HTTP, la &quot;carga útil&quot; es solo el encabezado &quot;ruta de acceso no válida&quot;. Tenga en cuenta también que la ruta de invalidación del encabezado es el recurso que AEM conoce, y no el archivo o archivos que Dispatcher ha almacenado en caché. AEM solo conoce los recursos. Las extensiones, selectores y sufijos se utilizan durante la ejecución cuando se solicita un recurso. AEM no realiza ninguna contabilidad sobre los selectores que se han utilizado en un recurso, por lo que la ruta del recurso es todo lo que sabe con seguridad al activar un recurso.
 
-Esto es suficiente en nuestro caso. Si un recurso ha cambiado, podemos suponer con seguridad que todas las representaciones de ese recurso también han cambiado. En nuestro ejemplo, si la imagen ha cambiado, también se representará una nueva miniatura.
+Esto es suficiente en nuestro caso. Si un recurso ha cambiado, podemos suponer con seguridad que todas las representaciones de ese recurso también han cambiado. En nuestro ejemplo, si la imagen ha cambiado, también se representa una nueva miniatura.
 
 Dispatcher puede eliminar de forma segura el recurso con todas las representaciones que haya almacenado en caché. Hará algo como,
 
@@ -361,7 +361,7 @@ Publica la página editada &quot;Canadá&quot; y vuelve a visitar la página de 
 
 Dispatcher, siendo un simple servidor web basado en filesystem, es rápido pero también relativamente simple. Si un recurso incluido cambia, no se da cuenta de eso. Todavía se aferra al contenido que estaba allí cuando se procesó la página de inclusión.
 
-La página &quot;Oferta especial de invierno&quot; aún no se ha procesado, por lo que no hay ninguna versión estática en Dispatcher y, por lo tanto, se mostrará con el nuevo teaser, ya que se procesará recién cuando se solicite.
+La página &quot;Oferta especial de invierno&quot; aún no se ha procesado, por lo que no hay ninguna versión estática en Dispatcher y, por lo tanto, se muestra con el nuevo teaser, ya que se procesa recién cuando se solicita.
 
 Podría pensar que Dispatcher mantendría un seguimiento de cada recurso que toca mientras procesa y vacía todas las páginas que han usado este recurso, cuando ese recurso cambia. Pero Dispatcher no procesa las páginas. La renderización se realiza mediante el sistema de publicación. Dispatcher no sabe qué recursos van a un archivo .html procesado.
 
@@ -582,7 +582,7 @@ Hay una excepción natural, en la que este patrón, incluso en su forma sencilla
 
 Desde la perspectiva de un AEM desarrollador, el patrón lucía super elegante. Pero con Dispatcher tomado en la ecuación, puede estar de acuerdo, que el enfoque ingenuo podría no ser suficiente.
 
-Les dejamos que decidan si este es un patrón o un anti-patrón por ahora. ¿Y tal vez ya tienen algunas buenas ideas en mente sobre cómo mitigar los problemas explicados arriba? Bien. Entonces estará ansioso por ver cómo otros proyectos han resuelto estos problemas.
+Les dejamos que decidan si este es un patrón o un anti-patrón por ahora. ¿Y tal vez ya tienen algunas buenas ideas en mente sobre cómo mitigar los problemas explicados arriba? Bien. Entonces debería estar ansioso por ver cómo otros proyectos han resuelto estos problemas.
 
 ### Solución de problemas comunes de Dispatcher
 
@@ -756,7 +756,7 @@ Pero aquí se puede encontrar otra advertencia teniendo huellas de URL: Vincula 
 
 Wow - Son muchos detalles a considerar, ¿verdad? Y se niega a ser comprendida, probada y depurada fácilmente. Y todo por una solución aparentemente elegante. Hay que reconocer que es elegante, pero sólo desde una perspectiva AEM. Junto con el Dispatcher se vuelve desagradable.
 
-Y aún así - no resuelve una advertencia básica, si una imagen se usa varias veces en diferentes páginas, se almacenarán en caché bajo esas páginas. No hay mucha sinergia de almacenamiento en caché allí.
+Y aún así - no resuelve una advertencia básica, si una imagen se usa varias veces en diferentes páginas, se almacenan en caché bajo esas páginas. No hay mucha sinergia de almacenamiento en caché allí.
 
 En general, la huella digital de la URL es una buena herramienta que se puede tener en el kit de herramientas, pero es necesario aplicarla con cuidado, ya que puede causar nuevos problemas al mismo tiempo que resuelve solo algunos de los existentes.
 
@@ -1526,7 +1526,7 @@ Para mitigar el problema de esta &quot;tormenta de invalidación de caché&quot;
 
 Puede configurar Dispatcher para que use un `grace period` para invalidación automática. Esto agregaría un tiempo adicional al `statfiles` fecha de modificación.
 
-Digamos, su `statfile` tiene una hora de modificación de hoy a las 12:00 y su `gracePeriod` se establece en 2 minutos. A continuación, todos los archivos invalidados automáticamente se considerarán válidos a las 12:01 y a las 12:02. Se renderizarán después de las 12:02.
+Digamos, su `statfile` tiene una hora de modificación de hoy a las 12:00 y su `gracePeriod` se establece en 2 minutos. A continuación, todos los archivos invalidados automáticamente se consideran válidos a las 12:01 y a las 12:02. Se vuelven a procesar después de las 12:02.
 
 La configuración de referencia propone una `gracePeriod` de dos minutos por una buena razón. ¿Puede pensar &quot;Dos minutos? Eso es casi nada. Puedo esperar fácilmente 10 minutos para que el contenido aparezca...&quot;.  Por lo tanto, es posible que esté tentado a establecer un periodo más largo, digamos, 10 minutos, suponiendo que el contenido se muestre al menos después de estos 10 minutos.
 

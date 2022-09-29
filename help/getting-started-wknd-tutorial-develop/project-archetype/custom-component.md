@@ -12,9 +12,9 @@ kt: 4072
 mini-toc-levels: 1
 thumbnail: 30181.jpg
 exl-id: f54f3dc9-6ec6-4e55-9043-7a006840c905
-source-git-commit: 79d41d833ab0659f26f988678e124daa18b857f3
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '4138'
+source-wordcount: '4131'
 ht-degree: 1%
 
 ---
@@ -66,7 +66,7 @@ Siempre puede ver el código terminado en [GitHub](https://github.com/adobe/aem-
 
 ## Qué va a generar {#byline-component}
 
-En esta parte del tutorial de WKND, se crea un componente de firma que se utilizará para mostrar información creada sobre el colaborador de un artículo.
+En esta parte del tutorial de WKND, se crea un componente de firma que se utiliza para mostrar información creada sobre el colaborador de un artículo.
 
 ![ejemplo de componente de firma](assets/custom-component/byline-design.png)
 
@@ -82,7 +82,7 @@ La implementación del componente Byline incluye un cuadro de diálogo que recop
 
 En primer lugar, cree la estructura del nodo Componente de línea de bytes y defina un cuadro de diálogo. Esto representa el componente en AEM y define implícitamente el tipo de recurso del componente por su ubicación en el JCR.
 
-El cuadro de diálogo muestra la interfaz que pueden proporcionar los autores de contenido. Para esta implementación, el componente principal de WCM de AEM **Imagen** se aprovechará para gestionar la creación y renderización de la imagen de Byline, de modo que se establecerá como el de nuestro componente `sling:resourceSuperType`.
+El cuadro de diálogo muestra la interfaz que pueden proporcionar los autores de contenido. Para esta implementación, el componente principal de WCM de AEM **Imagen** se aprovecha para gestionar la creación y renderización de la imagen de Byline, por lo que debe configurarse como el `sling:resourceSuperType`.
 
 ### Crear definición de componente {#create-component-definition}
 
@@ -372,7 +372,7 @@ El modelo Byline Sling se basará en varias API de Java proporcionadas por AEM. 
    ...
    ```
 
-   La variable `uber-jar` solo se incluye cuando la variable `classic` se invoca a `mvn clean install -PautoInstallSinglePackage -Pclassic`. De nuevo, esto es exclusivo de este proyecto. En un proyecto en el mundo real, generado a partir del tipo de archivo del proyecto AEM, escriba el `uber-jar` será el valor predeterminado si la versión de AEM especificada es 6.5 o 6.4.
+   La variable `uber-jar` solo se incluye cuando la variable `classic` se invoca a `mvn clean install -PautoInstallSinglePackage -Pclassic`. De nuevo, esto es exclusivo de este proyecto. En un proyecto en el mundo real, generado a partir del tipo de archivo del proyecto AEM, escriba el `uber-jar` es el valor predeterminado si la versión de AEM especificada es 6.5 o 6.4.
 
    La variable [uber-jar](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html#experience-manager-api-dependencies) contiene todas las API de Java públicas expuestas por AEM 6.x. La versión se mantiene en el reactor principal pom, ubicado en la raíz del proyecto `aem-guides-wknd/pom.xml`.
 
@@ -458,7 +458,7 @@ Siempre que se realicen cambios en los archivos de este paquete, la variable [la
 
    ![Archivo Impl de firma](assets/custom-component/byline-impl-file.png)
 
-1. Abra `BylineImpl.java`. Especifique que implementa el `Byline` interfaz. Utilice las funciones de autocompletar del IDE o actualice manualmente el archivo para incluir los métodos necesarios para implementar el `Byline` interfaz:
+1. Abrir `BylineImpl.java`. Especifique que implementa el `Byline` interfaz. Utilice las funciones de autocompletar del IDE o actualice manualmente el archivo para incluir los métodos necesarios para implementar el `Byline` interfaz:
 
    ```java
    package com.adobe.aem.guides.wknd.core.models.impl;
@@ -616,7 +616,7 @@ Hay dos maneras de enfrentarlo:
 
 Compruebe si la variable `fileReference` La propiedad JCR se resuelve en un recurso. *O* Convierta este recurso en un modelo Sling de imagen de componente principal y asegúrese de que `getSrc()` El método no está vacío.
 
-Optaremos por el **segundo** enfoque. Es probable que el primer enfoque sea suficiente, pero en este tutorial el último se utilizará para permitirnos explorar otras características de los modelos Sling.
+Optamos por el **segundo** enfoque. Es probable que el primer enfoque sea suficiente, pero en este tutorial el último se utiliza para permitirnos explorar otras características de los modelos Sling.
 
 1. Cree un método privado que obtenga la imagen. Este método se deja en privado porque no necesitamos exponer el objeto de imagen en el propio HTL y su único uso para conducir `isEmpty().`
 
@@ -705,7 +705,7 @@ Optaremos por el **segundo** enfoque. Es probable que el primer enfoque sea sufi
 
    Recuerde que los modelos Sling son **NOT** OSGi Services, por lo que es seguro mantener el estado de la clase. A menudo `@PostConstruct` deriva y configura el estado de la clase del Modelo Sling para su uso posterior, similar a lo que hace un constructor sin formato.
 
-   Tenga en cuenta que si la variable `@PostConstruct` lanza una excepción, el modelo de Sling no creará una instancia (será nulo).
+   Tenga en cuenta que si la variable `@PostConstruct` lanza una excepción, el modelo de Sling no creará una instancia (es nulo).
 
 1. **getImage()** ahora se puede actualizar para devolver simplemente el objeto de imagen.
 
@@ -790,7 +790,7 @@ Optaremos por el **segundo** enfoque. Es probable que el primer enfoque sea sufi
        /**
        * @PostConstruct is immediately called after the class has been initialized
        * but BEFORE any of the other public methods. 
-       * It is a good method to initialize variables that will be used by methods in the rest of the model
+       * It is a good method to initialize variables that is used by methods in the rest of the model
        *
        */
        @PostConstruct
@@ -1027,7 +1027,7 @@ Si la variable **BylineImpl** no se muestra en esta lista, probablemente haya un
 
 ## Estilos de firma {#byline-styles}
 
-El componente Byline debe diseñarse para que se ajuste al diseño creativo del componente Byline. Esto se logrará mediante el uso de SCSS, que AEM ofrece compatibilidad con **ui.frontend** Subproyecto Maven.
+El componente Byline debe diseñarse para que se ajuste al diseño creativo del componente Byline. Esto se logra mediante el uso de SCSS, que AEM ofrece compatibilidad con **ui.frontend** Subproyecto Maven.
 
 ### Agregar un estilo predeterminado
 

@@ -1,5 +1,5 @@
 ---
-title: Crear un token de acceso
+title: Intercambiar JWT por token de acceso
 description: Intercambie el token web de JSON (JWT) con las API de Adobe IMS para obtener un token de acceso de AEM.
 type: Documentation
 role: Developer
@@ -10,9 +10,9 @@ topic: Development
 kt: 8185
 thumbnail: KT-8185.jpg
 exl-id: ab7b8a06-3009-477d-9e98-590912e8e176
-source-git-commit: a8f5d75848838540173e7beb66ebc69f3b1fcddc
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '87'
 ht-degree: 0%
 
 ---

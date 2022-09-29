@@ -1,21 +1,20 @@
 ---
 title: Configuración del modelo de datos de formulario
 description: Crear un modelo de datos de formulario basado en el origen de datos RDBMS
-feature: Formularios adaptables
+feature: Adaptive Forms
 version: 6.4,6.5
 kt: 5812
 thumbnail: kt-5812.jpg
-topic: Desarrollo
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 5fa4638f-9faa-40e0-a20d-fdde3dbb528a
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '491'
 ht-degree: 1%
 
 ---
-
-
 
 # Configuración del modelo de datos de formulario
 
@@ -23,8 +22,8 @@ ht-degree: 1%
 
 El primer paso para crear un modelo de datos de formulario respaldado por RDBMS es configurar la fuente de datos agrupada de la conexión Apache Sling. Para configurar la fuente de datos, siga los pasos que se indican a continuación:
 
-* Apunte el navegador a [configMgr](http://localhost:4502/system/console/configMgr)
-* Busque la fuente de datos agrupada de la conexión Apache Sling **Apache Sling**
+* Especifique el explorador para [configMgr](http://localhost:4502/system/console/configMgr)
+* Buscar **Fuente de datos obtenida de una conexión Apache Sling**
 * Agregue una nueva entrada y proporcione los valores como se muestra en la captura de pantalla.
 * ![fuente de datos](assets/data-source.png)
 * Guarde los cambios
@@ -35,18 +34,18 @@ El primer paso para crear un modelo de datos de formulario respaldado por RDBMS 
 
 ## Creación de un modelo de datos de formulario
 
-* Apunte el navegador a [Integraciones de datos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm)
+* Especifique el explorador para [Integraciones de datos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm)
 * Haga clic en _Crear_->_Modelo de datos de formulario_
-* Proporcione un nombre y un título significativos al modelo de datos de formulario, como **Empleado**
+* Proporcionar un nombre y un título significativos al modelo de datos de formulario, como **Empleado**
 * Haga clic en _Siguiente_
 * Seleccione la fuente de datos creada en la sección(foros) anterior
 * Haga clic en _Crear_->Editar para abrir el modelo de datos de formulario recién creado en modo de edición
-* Expanda el nodo _forums_ para ver el esquema de empleado. Expanda el nodo empleado para ver las 2 tablas
+* Expanda el _foros_ para ver el esquema de empleado. Expanda el nodo empleado para ver las 2 tablas
 
 ## Añadir entidades al modelo
 
 * Asegúrese de que el nodo de empleado esté expandido
-* Seleccione las entidades de beneficiarios y nuevas y haga clic en _Agregar seleccionado_
+* Seleccione las entidades newhir y recipients y haga clic en _Agregar selección_
 
 ## Añadir el servicio de lectura a toda la entidad
 
@@ -57,9 +56,9 @@ El primer paso para crear un modelo de datos de formulario respaldado por RDBMS 
 * Especifique los valores tal y como se muestra en la captura de pantalla
 * ![get-service](assets/get-service.png)
 >[!NOTE]
-> El servicio get espera un valor asignado a la columna empID de cualquier entidad. Existen varias formas de pasar este valor y en este tutorial, el empID se pasará a través del parámetro de solicitud denominado empID.
+> El servicio get espera un valor asignado a la columna empID de cualquier entidad. Existen varias formas de pasar este valor y en este tutorial el empID se pasa a través del parámetro de solicitud denominado empID.
 * Haga clic en _Listo_ para guardar los argumentos del servicio get
-* Haga clic en _Listo_ para guardar los cambios en el modelo de datos de formulario
+* Haga clic en _Listo_ guardar cambios en el modelo de datos de formulario
 
 ## Añadir asociación entre 2 entidades
 
@@ -70,7 +69,7 @@ Los siguientes pasos le guían a través del proceso de creación de la asociaci
 * Proporcione un Título e identificador significativo a la asociación y a otras propiedades como se muestra en la captura de pantalla siguiente
    ![asociación](assets/association-entities-1.png)
 
-* Haga clic en el icono _editar_ en la sección Argumentos
+* Haga clic en el _editar_ bajo la sección Argumentos
 
 * Especifique los valores tal y como se muestra en esta captura de pantalla
 * ![associated-2](assets/association-entities.png)
@@ -79,10 +78,10 @@ Los siguientes pasos le guían a través del proceso de creación de la asociaci
 
 ## Probar el modelo de datos del formulario
 
-Nuestro modelo de datos de formulario ahora tiene **_get_** servicio que acepta empID y devuelve los detalles del nuevo y sus beneficiarios. Para probar el servicio get, siga los pasos que se indican a continuación.
+Nuestro modelo de datos de formulario ahora tiene **_get_** que acepta empID y devuelve los detalles del newhire y sus beneficiarios. Para probar el servicio get, siga los pasos que se indican a continuación.
 
 * Seleccionar entidad nueva
-* Haga clic en _Test Model Object_
-* Proporcione un empID válido y haga clic en _Test_
+* Haga clic en _Objeto de modelo de prueba_
+* Proporcione un empID válido y haga clic en _Prueba_
 * Debería obtener resultados como se muestra en la captura de pantalla siguiente
 * ![test-fdm](assets/test-form-data-model.png)

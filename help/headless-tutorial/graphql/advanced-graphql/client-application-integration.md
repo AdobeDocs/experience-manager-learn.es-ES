@@ -6,13 +6,13 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Intermediate
-source-git-commit: 83e16ea87847182139982ea2378d8ff9f079c968
+exl-id: d0576962-a86a-4742-8635-02be1ec3243f
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1228'
-ht-degree: 1%
+source-wordcount: '1227'
+ht-degree: 2%
 
 ---
-
 
 # Integración de aplicaciones de cliente
 
@@ -76,7 +76,7 @@ Para acelerar el tutorial, se proporciona una aplicación React JS de inicio.
 
    ![POST GraphQL](assets/client-application-integration/post-query-graphql.png)
 
-   Debería ver un `POST` al extremo de GraphQL. Visualización del `Payload`, puede ver la consulta completa de GraphQL que se envió. En las siguientes secciones, la aplicación se actualizará para su uso **persisted** consultas.
+   Debería ver un `POST` al extremo de GraphQL. Visualización del `Payload`, puede ver la consulta completa de GraphQL que se envió. En las siguientes secciones, la aplicación se actualiza para su uso **persisted** consultas.
 
 
 ## Introducción
@@ -141,7 +141,7 @@ Crear un nuevo vínculo para usar **persisted** consultas. A continuación, la a
 
 El archivo `src/api/queries.js` contiene las consultas de GraphQL utilizadas para impulsar la aplicación `adventureDetailQuery` devuelve detalles de una aventura individual utilizando la solicitud estándar de POST GraphQL. A continuación, actualice la variable `AdventureDetail` para utilizar el componente persistente `wknd/all-adventure-details` consulta.
 
-1. Abra `src/screens/AdventureDetail.js`.
+1. Abrir `src/screens/AdventureDetail.js`.
 1. En primer lugar, comente la siguiente línea:
 
    ```javascript

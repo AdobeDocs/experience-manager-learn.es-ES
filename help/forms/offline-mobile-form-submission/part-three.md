@@ -13,16 +13,16 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: a767d8f8-d75e-4472-9139-c08d804ee076
-source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '170'
 ht-degree: 2%
 
 ---
 
 # Flujo de trabajo para revisar y aprobar el PDF enviado
 
-El último y último paso es crear AEM flujo de trabajo que genere un PDF estático o no interactivo para su revisión y aprobación. El flujo de trabajo se activará mediante un AEM Launcher configurado en el nodo `/content/pdfsubmissions`.
+El último y último paso es crear AEM flujo de trabajo que genere un PDF estático o no interactivo para su revisión y aprobación. El flujo de trabajo se activa mediante un Iniciador de AEM configurado en el nodo `/content/pdfsubmissions`.
 
 La siguiente captura de pantalla muestra los pasos involucrados en el flujo de trabajo.
 

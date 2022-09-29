@@ -6,24 +6,23 @@ version: 6.5
 topic: Development
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: c9ee29d4-a8a5-4e61-bc99-498674887da5
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '2024'
+source-wordcount: '2017'
 ht-degree: 0%
 
 ---
 
-
-# Comprensión de la Multitenencia y el Desarrollo Simultáneo {#understanding-multitenancy-and-concurrent-development}
+# Comprensión de la multiplicación y el desarrollo concurrente {#understanding-multitenancy-and-concurrent-development}
 
 ## Introducción {#introduction}
 
-Cuando varios equipos implementan su código en los mismos entornos de AEM, hay prácticas que deben seguir para garantizar que los equipos puedan trabajar de la manera más independiente posible, sin pisar los pies de otros equipos. Aunque nunca se pueden eliminar por completo, estas técnicas minimizarán las dependencias entre equipos. Para que un modelo de desarrollo concurrente tenga éxito, es fundamental que exista una buena comunicación entre los equipos de desarrollo.
+Cuando varios equipos implementan su código en los mismos entornos de AEM, hay prácticas que deben seguir para garantizar que los equipos puedan trabajar de forma lo más independiente posible, sin pisar los pies de otros equipos. Aunque nunca se pueden eliminar por completo, estas técnicas minimizarán las dependencias entre equipos. Para que un modelo de desarrollo concurrente tenga éxito, es fundamental que exista una buena comunicación entre los equipos de desarrollo.
 
-Además, cuando varios equipos de desarrollo trabajan en el mismo entorno de AEM, es probable que haya un cierto grado de inquilino múltiple en juego. Se ha escrito mucho sobre las consideraciones prácticas de intentar apoyar a varios inquilinos en un entorno AEM, especialmente en torno a los desafíos que enfrentan al administrar la gobernanza, las operaciones y el desarrollo. En este documento se analizan algunos de los desafíos técnicos relacionados con la implementación de AEM en un entorno de varios usuarios, pero muchas de estas recomendaciones se aplicarán a cualquier organización con varios equipos de desarrollo.
+Además, cuando varios equipos de desarrollo trabajan en el mismo entorno de AEM, es probable que haya un cierto grado de inquilino múltiple en juego. Se ha escrito mucho sobre las consideraciones prácticas de intentar apoyar a varios inquilinos en un entorno AEM, en particular sobre los desafíos que afrontan al gestionar la gestión de los asuntos públicos, las operaciones y el desarrollo. En este documento se analizan algunos de los desafíos técnicos relacionados con la implementación de AEM en un entorno de varios usuarios, pero muchas de estas recomendaciones se aplicarán a cualquier organización con varios equipos de desarrollo.
 
-Es importante señalar en primer lugar que, aunque AEM puede admitir varios sitios e incluso marcas múltiples que se implementan en un solo entorno, no ofrece una verdadera inquilina múltiple. Algunas configuraciones de entorno y recursos de sistemas siempre se compartirán entre todos los sitios implementados en un entorno. El presente documento ofrece orientación para reducir al mínimo los efectos de esos recursos compartidos y ofrece sugerencias para racionalizar la comunicación y la colaboración en esas esferas.
+Es importante señalar en primer lugar que, aunque AEM puede admitir varios sitios e incluso varias marcas que se implementen en un solo entorno, no ofrece verdadera inquilina múltiple. Algunas configuraciones de entorno y recursos de sistemas siempre se compartirán entre todos los sitios implementados en un entorno. El presente documento ofrece orientación para reducir al mínimo los efectos de esos recursos compartidos y ofrece sugerencias para racionalizar la comunicación y la colaboración en esas esferas.
 
 ## Ventajas y desafíos {#benefits-and-challenges}
 
@@ -66,7 +65,7 @@ Tenga en cuenta que esto no elimina la necesidad de que estos equipos compartan 
 
 Cuando se trabaja en varios proyectos, es importante asegurarse de que el código no esté duplicado. La duplicación de código aumenta la probabilidad de ocurrencias de defectos, el costo de los cambios en el sistema y la rigidez general en la base de código. Para evitar la duplicación, refactorice la lógica común en bibliotecas reutilizables que se pueden usar en varios proyectos.
 
-Para satisfacer esta necesidad, recomendamos el desarrollo y mantenimiento de un proyecto básico del que todos los equipos puedan depender y contribuir. Al hacerlo, es importante garantizar que este proyecto básico no dependa, a su vez, de ninguno de los proyectos de cada equipo; esto permite una capacidad de implementación independiente y, a la vez, promueve la reutilización del código.
+Para satisfacer esta necesidad, recomendamos el desarrollo y mantenimiento de un proyecto básico del que todos los equipos puedan depender y contribuir. Al hacerlo, es importante asegurarse de que este proyecto básico no dependa, a su vez, de ninguno de los proyectos de cada equipo; esto permite una capacidad de implementación independiente y, a la vez, promueve la reutilización del código.
 
 Algunos ejemplos de código que normalmente se encuentran en un módulo principal son:
 
@@ -75,7 +74,7 @@ Algunos ejemplos de código que normalmente se encuentran en un módulo principa
    * Filtros servlet
    * Asignaciones de ResourceResolver
    * Canalizaciones Sling Transformer
-   * Controladores de errores (o use el gestor de páginas de error ACS AEM Commons 1)
+   * Gestores de errores (o use el gestor de páginas de error ACS AEM Commons1)
    * Servlets de autorización para almacenamiento en caché que distingue entre permisos
 * Clases de utilidad
 * Lógica principal de la empresa
@@ -91,9 +90,9 @@ Esto no elimina la necesidad de que varios equipos dependan del mismo conjunto d
 
 Para garantizar que los cambios realizados en este paquete principal no interrumpan la funcionalidad del sistema, se recomienda que un desarrollador o equipo de desarrolladores de categoría superior mantenga la supervisión. Una opción es tener un único equipo que administre todos los cambios a este paquete; otro es que los equipos envíen solicitudes de extracción que se revisen y fusionen con estos recursos. Es importante que los equipos diseñen y acuerden un modelo de gobernanza y que los desarrolladores lo sigan.
 
-## Administración del ámbito de implementación y nbsp {#managing-deployment-scope}
+## Administración del ámbito de implementación  {#managing-deployment-scope}
 
-A medida que distintos equipos implementan su código en el mismo repositorio, es importante que no sobrescriban los cambios de los demás. AEM tiene un mecanismo para controlar esto al implementar paquetes de contenido, el filtro. archivo xml. Es importante que no haya superposición entre filtros.  archivos xml, de lo contrario, la implementación de un equipo podría borrar la implementación anterior de otro equipo. Para ilustrar este punto, consulte los siguientes ejemplos de archivos de filtro bien diseñados o problemáticos:
+A medida que distintos equipos implementan su código en el mismo repositorio, es importante que no sobrescriban los cambios de los demás. AEM tiene un mecanismo para controlar esto al implementar paquetes de contenido, el filtro. archivo xml. Es importante que no haya superposición entre filtros.  archivos xml; de lo contrario, la implementación de un equipo podría borrar la implementación anterior de otro equipo. Para ilustrar este punto, consulte los siguientes ejemplos de archivos de filtro bien diseñados o problemáticos:
 
 /apps/my-company vs. /apps/my-company/my-site
 
@@ -101,7 +100,7 @@ A medida que distintos equipos implementan su código en el mismo repositorio, e
 
 /etc/designs/my-company vs. /etc/designs/my-company/my-site
 
-Si cada equipo configura explícitamente su archivo de filtro según los sitios en los que esté trabajando, cada equipo puede implementar sus componentes, bibliotecas de cliente y diseños de sitio de forma independiente sin necesidad de borrar los cambios de los demás.
+Si cada equipo configura explícitamente su archivo de filtro según los sitios en los que esté trabajando, cada equipo puede implementar sus componentes, bibliotecas de cliente y diseños de sitio de forma independiente sin borrar los cambios de los demás.
 
 Dado que es una ruta de sistema global y no es específica de un sitio, el siguiente servlet debe incluirse en el proyecto principal, ya que los cambios realizados aquí podrían afectar a cualquier equipo:
 
@@ -109,13 +108,13 @@ Dado que es una ruta de sistema global y no es específica de un sitio, el sigui
 
 ### Superposiciones {#overlays}
 
-Las superposiciones se utilizan frecuentemente para ampliar o reemplazar la funcionalidad de AEM predeterminada, pero el uso de una superposición afecta a toda la aplicación de AEM (es decir, todos los inquilinos tendrán acceso a los cambios de funcionalidad). Esto se complicaría aún más si los inquilinos tuvieran requisitos diferentes para la superposición. Lo ideal es que los grupos de negocios trabajen juntos para acordar la funcionalidad y apariencia de las consolas administrativas de AEM.
+Las superposiciones se utilizan frecuentemente para ampliar o reemplazar la funcionalidad de AEM preestablecida, pero el uso de una superposición afecta a toda la aplicación de AEM (es decir, cualquier cambio de funcionalidad superpuesto está disponible para todos los inquilinos). Esto se complicaría aún más si los inquilinos tuvieran requisitos diferentes para la superposición. Lo ideal sería que los grupos empresariales colaboraran para acordar la funcionalidad y la apariencia de AEM consolas administrativas.
 
 Si no se puede llegar a un consenso entre las distintas unidades de negocio, una posible solución sería simplemente no utilizar superposiciones. En su lugar, cree una copia personalizada de la funcionalidad y expárela a través de una ruta diferente para cada inquilino. Esto permite que cada inquilino tenga una experiencia de usuario completamente diferente, pero este enfoque también aumenta el coste de la implementación y los posteriores esfuerzos de actualización.
 
 ### Lanzadores de flujo de trabajo {#workflow-launchers}
 
-AEM utiliza iniciadores de flujo de trabajo para activar automáticamente la ejecución del flujo de trabajo cuando se realizan los cambios especificados en el repositorio. AEM proporciona varios lanzadores listos para usar, por ejemplo, para ejecutar procesos de generación de representación y extracción de metadatos en recursos nuevos y actualizados. Si bien es posible dejar estos lanzadores tal cual, en un entorno de varios inquilinos, si los inquilinos tienen diferentes requisitos de modelo de lanzador o flujo de trabajo, es probable que haya que crear y mantener lanzadores individuales para cada inquilino. Estos iniciadores deberán configurarse para que se ejecuten en las actualizaciones de sus inquilinos sin modificar el contenido de otros inquilinos. Lleve a cabo esto fácilmente mediante la aplicación de lanzadores a rutas de repositorio especificadas que son específicas del inquilino.
+AEM utiliza iniciadores de flujo de trabajo para almacenar en déclencheur automáticamente la ejecución del flujo de trabajo cuando se realizan los cambios especificados en el repositorio. AEM proporciona varios lanzadores listos para usar, por ejemplo, para ejecutar procesos de generación de representación y extracción de metadatos en recursos nuevos y actualizados. Si bien es posible dejar estos lanzadores tal cual, en un entorno de varios inquilinos, si los inquilinos tienen diferentes requisitos de modelo de lanzador o flujo de trabajo, es probable que haya que crear y mantener lanzadores individuales para cada inquilino. Estos iniciadores deberán configurarse para que se ejecuten en las actualizaciones de sus inquilinos sin modificar el contenido de otros inquilinos. Lleve a cabo esto fácilmente mediante la aplicación de lanzadores a rutas de repositorio especificadas que son específicas del inquilino.
 
 ### URL de vanidad {#vanity-urls}
 
@@ -127,17 +126,17 @@ Al desarrollar componentes y plantillas para varios grupos de creación, es impo
 
 ### Pruebas {#testing}
 
-Aunque una buena arquitectura y canales de comunicación abiertos pueden ayudar a evitar la introducción de defectos en áreas inesperadas del sitio, estos enfoques no son infalibles. Por este motivo, es importante probar completamente lo que se está implementando en la plataforma antes de lanzar cualquier cosa en producción. Esto requiere la coordinación entre los equipos en sus ciclos de lanzamiento y refuerza la necesidad de un conjunto de pruebas automatizadas que cubran la mayor funcionalidad posible. Además, como un sistema será compartido por varios equipos, el rendimiento, la seguridad y las pruebas de carga se vuelven más importantes que nunca.
+Aunque una buena arquitectura y canales de comunicación abiertos pueden ayudar a evitar la introducción de defectos en áreas inesperadas del sitio, estos enfoques no son infalibles. Por este motivo, es importante probar completamente lo que se está implementando en la plataforma antes de lanzar cualquier cosa en producción. Esto requiere la coordinación entre los equipos en sus ciclos de lanzamiento y refuerza la necesidad de un conjunto de pruebas automatizadas que cubran la mayor funcionalidad posible. Además, como varios equipos comparten un sistema, el rendimiento, la seguridad y las pruebas de carga cobran más importancia que nunca.
 
 ## Consideraciones operativas {#operational-considerations}
 
 ### Recursos compartidos {#shared-resources}
 
-AEM se ejecuta en una sola JVM; todas las aplicaciones de AEM implementadas comparten recursos entre sí, además de los recursos ya consumidos en la ejecución normal de AEM. Dentro del propio espacio de JVM, no habrá una separación lógica de los subprocesos, y los recursos finitos disponibles para AEM, como memoria, CPU e i/o de disco también se compartirán. Cualquier inquilino que consuma recursos afectará inevitablemente a otros inquilinos del sistema.
+AEM se ejecuta dentro de una sola JVM; las aplicaciones de AEM implementadas comparten recursos entre sí de forma inherente, además de los recursos ya consumidos en la ejecución normal de AEM. Dentro del propio espacio de JVM, no hay una separación lógica de los subprocesos, y los recursos finitos disponibles para AEM, como memoria, CPU y E/S de disco también se comparten. Cualquier inquilino que consuma recursos afectará inevitablemente a otros inquilinos del sistema.
 
 ### Actuación {#performance}
 
-Si no se siguen las prácticas recomendadas de AEM, es posible desarrollar aplicaciones que consuman recursos por encima de lo que se considera normal. Algunos ejemplos de esto son la activación de muchas operaciones de flujo de trabajo pesadas (como DAM Update Asset), el uso de operaciones push de MSM en muchos nodos o el uso de consultas JCR costosas para procesar contenido en tiempo real. Esto inevitablemente tendrá un impacto en el rendimiento de otras aplicaciones de inquilino.
+Si no se siguen AEM prácticas recomendadas, es posible desarrollar aplicaciones que consuman recursos por encima de lo que se considera normal. Algunos ejemplos de esto son la activación de muchas operaciones de flujo de trabajo pesadas (como DAM Update Asset), el uso de operaciones push de MSM en muchos nodos o el uso de consultas JCR costosas para procesar contenido en tiempo real. Esto inevitablemente tendrá un impacto en el rendimiento de otras aplicaciones de inquilino.
 
 ### Registro {#logging}
 

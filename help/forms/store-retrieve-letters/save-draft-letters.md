@@ -1,8 +1,6 @@
 ---
-title: Guardar y reanudar letras
-seo-title: Save and resume letters
+title: Guardar y recuperar letras de borrador
 description: Obtenga información sobre cómo guardar y recuperar letras de borrador
-seo-description: Learn how to save and retrieve draft letters
 feature: Interactive Communication
 topics: development
 audience: developer
@@ -13,14 +11,15 @@ topic: Development
 role: Developer
 level: Intermediate
 kt: 10208
-source-git-commit: 0a52ea9f5a475814740bb0701a09f1a6735c6b72
+exl-id: dc6f64a0-7059-4392-9c29-e66bdef4fd4d
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '227'
 ht-degree: 0%
 
 ---
 
-# Guardar borradores
+# Guardar y recuperar letras de borrador
 
 El siguiente código se utiliza para guardar la instancia de letra. Los metadatos de la instancia de la carta se almacenan en la variable _icrecluts_ tabla. Se genera y devuelve una cadena única (DraftID). Esta cadena única se utiliza para recuperar la instancia de letra guardada.
 
@@ -106,19 +105,19 @@ El siguiente código se utilizó para actualizar la instancia de letra guardada.
 
 ```java
 public void update(CCRDocumentInstance letterInstanceToUpdate) throws CCRDocumentException {
-		Document icData = letterInstanceToUpdate.getData();
-		String draftID = letterInstanceToUpdate.getId();
-		log.debug("updating letter instance with draft id =  "+draftID);
-		try
-			{
-				icData.copyToFile(new File(draftID+".xml"));
-			} 
-		catch (IOException e)
-			{
-				log.debug("Error updating "+e.getMessage());;
-			}
-		
-	}
+        Document icData = letterInstanceToUpdate.getData();
+        String draftID = letterInstanceToUpdate.getId();
+        log.debug("updating letter instance with draft id =  "+draftID);
+        try
+            {
+                icData.copyToFile(new File(draftID+".xml"));
+            } 
+        catch (IOException e)
+            {
+                log.debug("Error updating "+e.getMessage());;
+            }
+        
+    }
 ```
 
 ### Obtener todas las letras guardadas
@@ -127,49 +126,48 @@ AEM Forms no proporciona ninguna interfaz de usuario predeterminada para enumera
 Puede personalizar la consulta para recuperar las instancias de letras guardadas. En este ejemplo, estoy consultando la instancia de carta guardada por &quot;admin&quot;.
 
 ```java
-	public List < CCRDocumentInstance > getAll(String arg0, Date arg1, Date arg2, Map < String, Object > arg3) throws CCRDocumentException {
-	  String selectStatement = "Select * from aemformstutorial.icdrafts where owner = 'admin'";
-	  Connection connection = getConnection();
-	  Statement statement = null;
-	  String documentID = "";
-	  List < CCRDocumentInstance > listOfDrafts = new ArrayList < CCRDocumentInstance > ();
-	  String draftID;
-	  String savedInstanceName = "";
-	  try {
-	    statement = connection.createStatement();
-	    ResultSet rs = statement.executeQuery(selectStatement);
-	    while (rs.next()) {
-	      documentID = rs.getString("documentID");
-	      draftID = rs.getString("draftID");
-	      savedInstanceName = rs.getString("name");
-	      Document draftData = new Document(new File(draftID + ".xml"));
-	      CCRDocumentInstance draftLetter = new CCRDocumentInstance(draftData, savedInstanceName, documentID, CCRDocumentInstance.Status.DRAFT);
-	      listOfDrafts.add(draftLetter);
-	    }
-	  } catch (SQLException e) {
-	    log.debug("The error is " + e.getMessage());
-	  } finally {
-	    if (statement != null) {
-	      try {
-	        statement.close();
-	      } catch (SQLException e) {
-	        log.debug("error in closing statement" + e.getMessage());
-	      }
-	    }
-	    if (connection != null) {
-	      try {
-	        connection.close();
-	      } catch (SQLException e) {
-	        log.debug("error in closing connection" + e.getMessage());
-	      }
-	    }
-	  }
+    public List < CCRDocumentInstance > getAll(String arg0, Date arg1, Date arg2, Map < String, Object > arg3) throws CCRDocumentException {
+      String selectStatement = "Select * from aemformstutorial.icdrafts where owner = 'admin'";
+      Connection connection = getConnection();
+      Statement statement = null;
+      String documentID = "";
+      List < CCRDocumentInstance > listOfDrafts = new ArrayList < CCRDocumentInstance > ();
+      String draftID;
+      String savedInstanceName = "";
+      try {
+        statement = connection.createStatement();
+        ResultSet rs = statement.executeQuery(selectStatement);
+        while (rs.next()) {
+          documentID = rs.getString("documentID");
+          draftID = rs.getString("draftID");
+          savedInstanceName = rs.getString("name");
+          Document draftData = new Document(new File(draftID + ".xml"));
+          CCRDocumentInstance draftLetter = new CCRDocumentInstance(draftData, savedInstanceName, documentID, CCRDocumentInstance.Status.DRAFT);
+          listOfDrafts.add(draftLetter);
+        }
+      } catch (SQLException e) {
+        log.debug("The error is " + e.getMessage());
+      } finally {
+        if (statement != null) {
+          try {
+            statement.close();
+          } catch (SQLException e) {
+            log.debug("error in closing statement" + e.getMessage());
+          }
+        }
+        if (connection != null) {
+          try {
+            connection.close();
+          } catch (SQLException e) {
+            log.debug("error in closing connection" + e.getMessage());
+          }
+        }
+      }
 
-	  return listOfDrafts;
-	}
+      return listOfDrafts;
+    }
 ```
 
 ### Proyecto Eclipse
 
 El proyecto eclipse con implementación de muestra puede ser [descargado desde aquí](assets/icdrafts-eclipse-project.zip)
-

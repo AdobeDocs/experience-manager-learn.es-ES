@@ -13,9 +13,9 @@ topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 707657ad-221e-4dab-ac2a-46a4fcbc55bc
-source-git-commit: eb6a7ef343a43000855f8d5cc69bde0fae81d3e6
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '621'
 ht-degree: 1%
 
 ---
@@ -55,7 +55,7 @@ Para obtener acceso a App Builder, regístrese en la vista previa.
 
 1. [Regístrese para obtener una versión de prueba de App Builder](https://developer.adobe.com/app-builder/trial/).
 1. Espere aproximadamente 2 a 10 días hasta que se le notifique por correo electrónico que está aprovisionado antes de continuar con el tutorial.
-   + Si no está seguro de si ha sido aprovisionado, continúe con los siguientes pasos y si no puede crear un __Creador de aplicaciones__ proyecto en [Adobe Developer Console](https://developer.adobe.com/console/) todavía no se ha aprovisionado.
+   + Si no está seguro de si ha sido aprovisionado, continúe con los siguientes pasos y si no puede crear un __Creador de aplicaciones__ proyecto en [Consola de Adobe Developer](https://developer.adobe.com/console/) todavía no se ha aprovisionado.
 
 ## Almacenamiento en la nube
 
@@ -78,7 +78,7 @@ _Pulsación del aprovisionamiento del almacenamiento del blob de Azure (sin audi
 1. Toque __+ Agregar__ para crear una nueva cuenta de almacenamiento de blob
 1. Cree una nueva __Grupo de recursos__ según sea necesario, por ejemplo: `aem-as-a-cloud-service`
 1. Proporcione un __Nombre de la cuenta de almacenamiento__, por ejemplo: `aemguideswkndassetcomput`
-   + La variable __Nombre de la cuenta de almacenamiento__ se utilizará para [configuración del almacenamiento en la nube](../develop/environment-variables.md) para la herramienta de desarrollo del Asset compute local
+   + La variable __Nombre de la cuenta de almacenamiento__  usado para [configuración del almacenamiento en la nube](../develop/environment-variables.md) en la herramienta de desarrollo del Asset compute local
    + La variable __Teclas de acceso__ asociados a la cuenta de almacenamiento también son necesarios cuando [configuración del almacenamiento en la nube](../develop/environment-variables.md).
 1. Deje todo lo demás como predeterminado y pulse el botón __Revisar + crear__ botón
    + De forma opcional, seleccione la __ubicación__ cerca de usted.

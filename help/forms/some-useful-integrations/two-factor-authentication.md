@@ -1,20 +1,19 @@
 ---
 title: SMS Dos factores de autenticación
 description: Agregue una capa adicional de seguridad para ayudar a confirmar la identidad de un usuario cuando desee realizar determinadas actividades
-feature: Formularios adaptables
+feature: Adaptive Forms
 version: 6.4,6.5
 kt: 6317
-topic: Desarrollo
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: c2c55406-6da6-42be-bcc0-f34426b3291a
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 1%
+source-wordcount: '598'
+ht-degree: 2%
 
 ---
-
-
 
 # Verificar usuarios con sus números de teléfono móvil
 
@@ -26,33 +25,32 @@ Se siguieron los siguientes pasos para implementar el SMS 2FA con AEM Forms medi
 
 ## Crear cuenta de desarrollador
 
-Cree una cuenta de desarrollador con [Nexmo](https://dashboard.nexmo.com/sign-in). Anote la clave de API y la clave secreta de API. Estas claves serán necesarias para invocar las API de REST del servicio de Nexmo.
+Cree una cuenta de desarrollador con [Nexmo](https://dashboard.nexmo.com/sign-in). Anote la clave de API y la clave secreta de API. Estas claves son necesarias para invocar las API de REST del servicio de Nexmo.
 
 ## Crear archivo Swagger/OpenAPI
 
 La especificación OpenAPI (anteriormente la especificación Swagger) es un formato de descripción de API para las API de REST. Un archivo OpenAPI le permite describir toda la API, lo que incluye:
 
 * Puntos finales disponibles (/usuarios) y operaciones en cada punto final (GET/usuarios, POST/usuarios)
-* Parámetros de operación Entrada y salida para cada operación
-Métodos de autenticación
+* Parámetros de operación Entrada y salida para cada operación Métodos de autenticación
 * Información de contacto, licencia, términos de uso y otra información.
 * Las especificaciones de API se pueden escribir en YAML o JSON. El formato es fácil de aprender y de leer tanto para humanos como para máquinas.
 
-Para crear su primer archivo swagger/OpenAPI, siga la [documentación de OpenAPI](https://swagger.io/docs/specification/2-0/basic-structure/)
+Para crear su primer archivo swagger/OpenAPI, siga el [Documentación de OpenAPI](https://swagger.io/docs/specification/2-0/basic-structure/)
 
 >[!NOTE]
 > AEM Forms admite OpenAPI Specification versión 2.0 (fka Swagger).
 
-Utilice el [editor de swagger](https://editor.swagger.io/) para crear el archivo de intercambio y describir las operaciones que envían y verifican el código OTP enviado mediante SMS. El archivo de intercambio se puede crear en formato JSON o YAML. El archivo de cambio completado se puede descargar desde [aquí](assets/two-factore-authentication-swagger.zip)
+Utilice la variable [editor de swagger](https://editor.swagger.io/) para crear el archivo swagger para describir las operaciones que envían y verifican el código OTP enviado mediante SMS. El archivo de intercambio se puede crear en formato JSON o YAML. El archivo de cambio completado se puede descargar desde [here](assets/two-factore-authentication-swagger.zip)
 
 ## Crear fuente de datos
 
-Para integrar AEM/AEM Forms con aplicaciones de terceros, necesitamos [crear la fuente de datos](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) en la configuración de los servicios en la nube.
+Para integrar AEM/AEM Forms con aplicaciones de terceros, necesitamos [crear fuente de datos](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) en la configuración de cloud services.
 
 ## Crear modelo de datos de formulario
 
 La integración de datos de AEM Forms proporciona una interfaz de usuario intuitiva para crear y trabajar con [modelos de datos de formulario](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html). Un modelo de datos de formulario se basa en fuentes de datos para el intercambio de datos.
-El modelo de datos de formulario completado se puede [descargar desde aquí](assets/sms-2fa-fdm.zip)
+El modelo de datos de formulario completado se puede [descargado desde aquí](assets/sms-2fa-fdm.zip)
 
 ![fdm](assets/2FA-fdm.PNG)
 
@@ -62,15 +60,13 @@ Integre las invocaciones del POST del Modelo de datos de formulario con el formu
 
 Si desea utilizar los recursos de ejemplo con las claves de API, siga los siguientes pasos:
 
-* [Descargue la importación de ](assets/sms-2fa-fdm.zip) modeland de datos de formulario en AEM mediante el administrador de  [paquetes](http://localhost:4502/crx/packmgr/index.jsp)
-* Descargue el formulario adaptable de ejemplo que puede [descargarse desde aquí](assets/sms-2fa-verification-af.zip). Este formulario de ejemplo utiliza las invocaciones de servicio del modelo de datos de formulario que se proporciona como parte de este artículo.
-* Importar el formulario en AEM desde [Forms y la IU de documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* [Descargar el modelo de datos de formulario](assets/sms-2fa-fdm.zip) e importar en AEM usando [gestor de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
+* Descargue el formulario adaptable de ejemplo [descargado desde aquí](assets/sms-2fa-verification-af.zip). Este formulario de ejemplo utiliza las invocaciones de servicio del modelo de datos de formulario que se proporciona como parte de este artículo.
+* Importe el formulario en AEM desde el [Interfaz de usuario de Forms y documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Abra el formulario en modo de edición. Abra el editor de reglas para el siguiente campo
 
 ![sms-send](assets/check-sms.PNG)
 
 * Edite la regla asociada al campo . Proporcione las claves de API adecuadas
 * Guarde el formulario
-* [Obtenga una vista previa del ](http://localhost:4502/content/dam/formsanddocuments/sms-2fa-verification/jcr:content?wcmmode=disabled) formulario y pruebe la funcionalidad
-
-
+* [Vista previa del formulario](http://localhost:4502/content/dam/formsanddocuments/sms-2fa-verification/jcr:content?wcmmode=disabled) y probar la funcionalidad

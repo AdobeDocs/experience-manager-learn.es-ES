@@ -7,16 +7,16 @@ doc-type: tutorial
 activity: develop
 topics: development, authoring, configuring, architecture
 audience: all
-topic: Administración de contenido
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 15121896-9196-4ce0-aff2-9178563326b4
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1207'
 ht-degree: 0%
 
 ---
-
 
 # Determine la estructura de carpetas y la convención de nombres de archivos {#folder-structure-filenaming}
 
@@ -28,9 +28,9 @@ La asignación de nombres a archivos es generalmente la decisión más important
 
 ### Jerarquía de carpetas
 
-La jerarquía de carpetas es importante para usted y para su empresa únicamente con fines organizativos: las direcciones URL de Dynamic Media Classic solo hacen referencia al nombre del recurso, no a la carpeta o la ruta. Independientemente de dónde cargue un archivo, la dirección URL será la misma. Esto es muy diferente a cómo la mayoría de la gente organiza sus imágenes y contenido para la web, pero con Dynamic Media Classic no marca ninguna diferencia.
+La jerarquía de carpetas es importante para usted y para su empresa únicamente con fines organizativos: las direcciones URL de Dynamic Media Classic solo hacen referencia al nombre del recurso, no a la carpeta o a la ruta. Independientemente de dónde cargue un archivo, la dirección URL es la misma. Esto es muy diferente a cómo la mayoría de la gente organiza sus imágenes y contenido para la web, pero con Dynamic Media Classic no hay diferencia.
 
-Otra consideración importante es el número de recursos o carpetas que se van a almacenar en cada carpeta. Si hay muchos recursos almacenados en una carpeta, el rendimiento se degradará al ver los recursos en Dynamic Media Classic. No almacene miles de recursos en una carpeta. En su lugar, desarrolle una jerarquía organizativa con menos de 500 activos o carpetas dentro de una rama determinada de la jerarquía. Este no es un requisito estricto, pero ayudará a mantener tiempos de respuesta aceptables al ver o buscar recursos. De hecho, se recomienda crear jerarquías amplias y superficiales en lugar de estrechas y profundas.
+Otra consideración importante es el número de recursos o carpetas que se van a almacenar en cada carpeta. Si hay muchos recursos almacenados en una carpeta, el rendimiento se degrada al ver los recursos en Dynamic Media Classic. No almacene miles de recursos en una carpeta. En su lugar, desarrolle una jerarquía organizativa con menos de 500 activos o carpetas dentro de una rama determinada de la jerarquía. Este no es un requisito estricto, pero ayuda a mantener tiempos de respuesta aceptables al ver o buscar recursos. De hecho, se recomienda crear jerarquías amplias y superficiales en lugar de estrechas y profundas.
 
 La forma más sencilla de crear las carpetas es cargar toda la estructura de carpetas mediante FTP y activar la opción **Incluir subcarpetas**. Esta opción hace que Dynamic Media Classic vuelva a crear la estructura de carpetas en el sitio FTP de Dynamic Media Classic.
 
@@ -46,9 +46,9 @@ Para la estrategia de carpetas, considere lo que tiene sentido para su organizac
 
 ## Convención de nomenclatura de archivos
 
-La forma en que elija nombrar sus archivos es quizás la decisión temprana más importante que tomará con respecto a Dynamic Media Classic. Esto se debe a que todos los recursos de Dynamic Media Classic deben tener nombres únicos, independientemente de dónde se almacenen en la cuenta.
+La forma en que elija nombrar sus archivos es quizás la decisión temprana más importante que tome con respecto a Dynamic Media Classic. Esto se debe a que todos los recursos de Dynamic Media Classic deben tener nombres únicos, independientemente de dónde se almacenen en la cuenta.
 
-Todas las direcciones URL y transacciones en Dynamic Media Classic están impulsadas por un ID de recurso, que es el identificador único de un recurso en la base de datos. Al cargar un archivo, el ID del recurso se crea tomando el nombre de archivo y eliminando la extensión. Por ejemplo, _896649.jpg_ obtiene el _ID 896649_ del recurso.
+Todas las direcciones URL y transacciones en Dynamic Media Classic están impulsadas por un ID de recurso, que es el identificador único de un recurso en la base de datos. Al cargar un archivo, el ID del recurso se crea tomando el nombre de archivo y eliminando la extensión. Por ejemplo, _896649.jpg_ obtiene un recurso _ID 896649_.
 
 Reglas relativas a los ID de recurso:
 

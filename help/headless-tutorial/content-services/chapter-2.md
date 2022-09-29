@@ -8,9 +8,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 8b05fc02-c0c5-48ad-a53e-d73b805ee91f
-source-git-commit: cfb7ed39ecb85998192ba854b34161f7e1dba19a
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '962'
 ht-degree: 10%
 
 ---
@@ -59,7 +59,7 @@ Si los modelos de fragmento de contenido son **not** habilitado para una configu
    >    1. Elimine el `models` node
 
    >    
-   >Cualquier modelo de fragmento de contenido existente creado con esta configuración se eliminará, así como sus definiciones se almacenarán en `/conf/wknd-mobile/settings/dam/cfm/models`.
+   >Se eliminará cualquier modelo de fragmento de contenido existente creado con esta configuración, así como sus definiciones se almacenarán en `/conf/wknd-mobile/settings/dam/cfm/models`.
 
 1. Aplique la variable **[!DNL WKND Mobile]** para **[!DNL WKND Mobile]Carpeta de recursos** para permitir que los fragmentos de contenido de los modelos de fragmento de contenido se creen dentro de esa jerarquía de carpetas de recursos:
 
@@ -84,7 +84,7 @@ Podemos dividir los puntos de datos que definen un evento de la siguiente manera
 
 ![Creación del modelo de fragmento de contenido](assets/chapter-2/design-to-model-mapping.png)
 
-Con la asignación podemos definir el fragmento de contenido que se utilizará para recopilar y, en última instancia, exponer los datos de evento.
+Con la asignación podemos definir el fragmento de contenido que se utiliza para recopilar y, en última instancia, exponer los datos de evento.
 
 ## Creación del modelo de fragmento de contenido
 
@@ -173,7 +173,7 @@ Repita estos pasos utilizando las definiciones de entrada definidas a continuaci
 
 >[!NOTE]
 >
->La variable **[!UICONTROL Nombre de propiedad]** denota que **both** el nombre de la propiedad JCR donde se almacenará este valor, así como la clave en el archivo JSON . Debe ser un nombre semántico que no cambie durante la vida del modelo de fragmento de contenido.
+>La variable **[!UICONTROL Nombre de propiedad]** denota que **both** el nombre de la propiedad JCR donde se almacena este valor, así como la clave en el archivo JSON . Debe ser un nombre semántico que no cambie durante la vida del modelo de fragmento de contenido.
 
 Después de completar la creación del modelo de fragmento de contenido, debe terminar con una definición similar a:
 

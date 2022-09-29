@@ -1,8 +1,6 @@
 ---
 title: Listado de tipos de recursos personalizados en AEM Forms
-seo-title: Listing Custom Asset Types in AEM Forms
 description: Parte 2 de la lista de tipos de recursos personalizados en AEM Forms
-seo-description: Part 2 of Listing Custom Asset Types in AEM Forms
 uuid: 6467ec34-e452-4c21-9bb5-504f9630466a
 feature: Adaptive Forms
 topics: development
@@ -15,9 +13,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: f221d8ee-0452-4690-a936-74bab506d7ca
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '593'
 ht-degree: 0%
 
 ---
@@ -26,8 +24,7 @@ ht-degree: 0%
 
 ## Creación de una plantilla personalizada {#creating-custom-template}
 
-
-A los efectos de este artículo, crearemos una plantilla personalizada para mostrar los tipos de recurso personalizados y los tipos de recurso OOTB en la misma página. Para crear una plantilla personalizada, siga las siguientes instrucciones
+A los efectos de este artículo, creamos una plantilla personalizada para mostrar los tipos de recurso personalizados y los tipos de recurso OOTB en la misma página. Para crear una plantilla personalizada, siga las siguientes instrucciones
 
 1. Crear un sling: en /apps. Denomínela &quot;myportalcomponent&quot;
 1. Agregue la propiedad &quot;fpContentType&quot;. Establezca su valor en &quot;**/libs/fd/ fp/formTemplate&quot;.**
@@ -117,4 +114,4 @@ Ahora que ha configurado el componente del portal de búsqueda y lista, es hora 
 >Si su portal enumera tipos de recursos personalizados en un servidor de publicación, asegúrese de dar permiso de &quot;lectura&quot; al usuario &quot;fd-service&quot; al nodo **/apps/fd/fp/extensions/querybuilder**
 
 ![assettypes](assets/assettypeslistings.png)
-[Descargue e instale este paquete mediante el gestor de paquetes.](assets/customassettypekt1.zip) Contiene ejemplos de documentos mp4 y word y archivos xdp que se utilizarán como tipos de recursos para enumerarlos con el componente de búsqueda y lista
+[Descargue e instale este paquete mediante el gestor de paquetes.](assets/customassettypekt1.zip) Contiene ejemplos de documentos mp4 y word y archivos xdp que se utilizan como tipos de recursos para enumerarlos mediante el componente de búsqueda y lista

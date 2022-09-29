@@ -12,9 +12,9 @@ kt: 4089
 mini-toc-levels: 1
 thumbnail: 30207.jpg
 exl-id: b926c35e-64ad-4507-8b39-4eb97a67edda
-source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '3020'
+source-wordcount: '3014'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Siempre puede ver el código terminado en [GitHub](https://github.com/adobe/aem-
 
 En este tutorial, exploraremos cómo escribir [Pruebas de unidad](https://en.wikipedia.org/wiki/Unit_testing) para el componente Byline [Modelo de Sling](https://sling.apache.org/documentation/bundles/models.html) (creado en el [Creación de un componente de AEM personalizado](custom-component.md)). Las pruebas unitarias son pruebas en tiempo de compilación escritas en Java que verifican el comportamiento esperado del código Java. Cada prueba unitaria suele ser pequeña y valida la salida de un método (o unidades de trabajo) frente a los resultados esperados.
 
-Utilizaremos AEM prácticas recomendadas y usaremos:
+Utilizamos AEM prácticas recomendadas y empleamos:
 
 * [JUnit 5](https://junit.org/junit5/)
 * [Marco de pruebas de Mockito](https://site.mockito.org/)
@@ -238,7 +238,7 @@ Dado que las pruebas unitarias se ejecutan en la compilación, fuera del context
 
    Esta variable, `ctx`, expone un contexto de AEM de simulación que proporciona una serie de abstracciones de AEM y Sling:
 
-   * El modelo de Sling de BylineImpl se registrará en este contexto
+   * El modelo de Sling de BylineImpl está registrado en este contexto
    * Se crean estructuras de contenido JCR simuladas en este contexto
    * Los servicios personalizados de OSGi se pueden registrar en este contexto
    * Proporciona una variedad de objetos de prueba y elementos de ayuda requeridos, como objetos SlingHttpServletRequest , una variedad de servicios de Sling y OSGi AEM como ModelFactory, PageManager, Page, Template, ComponentManager, Component, TagManager, Tag, etc.
@@ -382,7 +382,7 @@ Ahora que tenemos una configuración básica de contexto de prueba, vamos a escr
    * **`@ExtendWith({AemContextExtension.class, MockitoExtension.class})`** marca la clase de mayúsculas y minúsculas de prueba que se ejecutará con la variable [Extensión de Mockito JUnit Jupiter](https://www.javadoc.io/page/org.mockito/mockito-junit-jupiter/latest/org/mockito/junit/jupiter/MockitoExtension.html) que permite el uso de las @Mock anotaciones para definir objetos simulados en el nivel Class.
    * **`@Mock private Image`** crea un objeto de simulación de tipo `com.adobe.cq.wcm.core.components.models.Image`. Tenga en cuenta que esto se define en el nivel de clase para que, según sea necesario, `@Test` los métodos pueden modificar su comportamiento según sea necesario.
    * **`@Mock private ModelFactory`** crea un objeto de simulación de tipo ModelFactory. Tenga en cuenta que esta es una burla pura de Mockito y no tiene métodos implementados en ella. Tenga en cuenta que esto se define en el nivel de clase para que, según sea necesario, `@Test`los métodos pueden modificar su comportamiento según sea necesario.
-   * **`when(modelFactory.getModelFromWrappedRequest(..)`** registra el comportamiento de prueba para cuándo `getModelFromWrappedRequest(..)` se llama en el objeto ModelFactory falso. El resultado definido en `thenReturn (..)` es devolver el objeto de imagen de prueba. Tenga en cuenta que este comportamiento solo se invoca cuando: el primer parámetro es igual a la variable `ctx`del objeto de solicitud de , el segundo parámetro es cualquier objeto de recurso y el tercer parámetro debe ser la clase de imagen de los componentes principales . Aceptamos cualquier recurso porque durante nuestras pruebas estableceremos la variable `ctx.currentResource(...)` a varios recursos de prueba definidos en la variable **BylineImplTest.json**. Tenga en cuenta que agregamos la variable **lenient()** restricción porque más tarde desearemos anular este comportamiento de ModelFactory.
+   * **`when(modelFactory.getModelFromWrappedRequest(..)`** registra el comportamiento de prueba para cuándo `getModelFromWrappedRequest(..)` se llama en el objeto ModelFactory falso. El resultado definido en `thenReturn (..)` es devolver el objeto de imagen de prueba. Tenga en cuenta que este comportamiento solo se invoca cuando: el primer parámetro es igual a la variable `ctx`del objeto de solicitud de , el segundo parámetro es cualquier objeto de recurso y el tercer parámetro debe ser la clase de imagen de los componentes principales . Aceptamos cualquier recurso porque a lo largo de nuestras pruebas establecemos la variable `ctx.currentResource(...)` a varios recursos de prueba definidos en la variable **BylineImplTest.json**. Tenga en cuenta que agregamos la variable **lenient()** restricción porque más tarde desearemos anular este comportamiento de ModelFactory.
    * **`ctx.registerService(..)`.** registra el objeto ModelFactory falso en AemContext, con la clasificación de servicio más alta. Esto es necesario, ya que ModelFactory se usa en el `init()` se inyecta mediante la variable `@OSGiService ModelFactory model` campo . Para que AemContext se inyecte **our** objeto de prueba, que gestiona las llamadas a `getModelFromWrappedRequest(..)`, debemos registrarlo como el Servicio de mayor rango de ese tipo (ModelFactory).
 
 1. Vuelva a ejecutar la prueba y, de nuevo, falla, pero esta vez el mensaje es claro por qué ha fallado.
@@ -412,7 +412,7 @@ Ahora que tenemos una configuración básica de contexto de prueba, vamos a escr
 
 ## Prueba de getOccupations() {#testing-get-occupations}
 
-¡Ok, bueno! ¡Nuestra primera prueba ha pasado! Sigamos adelante y probemos `getOccupations()`. Dado que la inicialización del contexto de prueba se realiza en la variable `@Before setUp()`método , estará disponible para todos `@Test` métodos en este caso de prueba, incluidos `getOccupations()`.
+¡Ok, bueno! ¡Nuestra primera prueba ha pasado! Sigamos adelante y probemos `getOccupations()`. Dado que la inicialización del contexto de prueba se realiza en la variable `@Before setUp()`método, está disponible para todos `@Test` métodos en este caso de prueba, incluidos `getOccupations()`.
 
 Recuerde que este método debe devolver una lista ordenada alfabéticamente de ocupaciones (descendente) almacenadas en la propiedad occupations .
 
@@ -447,7 +447,7 @@ Recuerde que este método debe devolver una lista ordenada alfabéticamente de o
 
 1. Recuerde, igual que **`getName()`** arriba, la variable **BylineImplTest.json** no define ocupaciones, por lo que esta prueba fallará si la ejecutamos, ya que `byline.getOccupations()` devolverá una lista vacía.
 
-   Actualizar **BylineImplTest.json** para incluir una lista de ocupaciones, y se establecerán en orden no alfabético para garantizar que nuestras pruebas validen que las ocupaciones se ordenen alfabéticamente por **`getOccupations()`**.
+   Actualizar **BylineImplTest.json** para incluir una lista de ocupaciones, y se establecen en orden no alfabético para garantizar que nuestras pruebas validen que las ocupaciones se ordenen alfabéticamente por **`getOccupations()`**.
 
    ```json
    {

@@ -3,9 +3,9 @@ title: Cómo impulsar la velocidad de contenido con Adobe Experience Manager
 description: Obtenga información sobre la velocidad de contenido y su valor en las organizaciones empresariales. Sumérjase en cuatro principios de implementación efectiva y en los escollos que hay que tener en cuenta a lo largo del camino.
 solution: Experience Manager
 exl-id: 9d2e05c3-c8eb-4d92-bad0-931e63550438
-source-git-commit: 471f0fe940abb8241428beb14896d83e140136b3
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '2823'
+source-wordcount: '2815'
 ht-degree: 0%
 
 ---
@@ -75,11 +75,11 @@ Para ilustrar este punto, veamos un ejemplo de una organización empresarial con
 
 La pregunta es: ¿va a mantener el tiempo de reimaginar el contenido hasta que todas las marcas funcionen de manera unificada? ¿Es sensato resolver el cambio para todos ellos?
 
-La respuesta es no. Esto aumentaría la complejidad. Además, muchos de los interesados se sentirán frustrados con las interminables conversaciones sobre lo antiguo, frustrando así los intentos de construir lo nuevo. Uno se bloqueará en una conversación _about_ cambiar, en lugar de hacerlo.
+La respuesta es no. Esto aumentaría la complejidad. Además, muchos de los interesados se sentirán frustrados con las interminables conversaciones sobre lo antiguo, frustrando así los intentos de construir lo nuevo. Uno se bloquea en una conversación _about_ cambiar, en lugar de hacerlo.
 
 Lo que se necesita es un marco tangible. Un nuevo paradigma para trabajar. Algo que la gente pueda ver y sentir. En el pasado, el contenido puede haber sido considerado una página, una campaña o cualquier cosa imaginada en singular. El cambio fundamental consiste en ver el contenido como contenido en sí: para su reutilización, rediseño y reciclado en el equipo de creación. El nuevo desarrollo básico debe utilizarse para experiencias con muchos objetivos.
 
-Para muchos clientes, la mejor manera de inculcar el cambio es crear un minisitio, una marca o una sección separada del sitio que se pueda utilizar como caso de prueba para el nuevo marco de trabajo. Elegir una parte de la organización para que actúe como prueba de concepto le permitirá:
+Para muchos clientes, la mejor manera de inculcar el cambio es crear un minisitio, una marca o una sección separada del sitio que se pueda utilizar como caso de prueba para el nuevo marco de trabajo. Elegir una parte de la organización para que actúe como prueba de concepto le permite:
 
 * Crear un grupo integrado de partes interesadas dedicado a comprender el nuevo marco
 * Reduzca las sesiones de descubrimiento cíclico y cree más rápidamente
@@ -94,19 +94,19 @@ _&quot;Sabíamos que había demasiado contenido saliendo. Así que hicimos una i
 
 AEM, es una solución de nivel empresarial que afecta a muchas partes de la empresa o marca y su eficacia, como herramienta de CMS, tiene dependencias de flujo ascendente.
 
-Al crear el marco de trabajo, hay algunos paradigmas comunes para los que necesitará encontrar la solución correcta. Algunos de estos elementos pueden ser desafiantes, pero hay que tomar decisiones, por eso el paradigma fundacional de arriba es tan importante. Este marco que se está creando será el que se aproveche para escalar en toda la organización.
+Al crear el marco de trabajo, hay algunos paradigmas comunes para los que necesitará encontrar la solución correcta. Algunos de estos elementos pueden ser desafiantes, pero hay que tomar decisiones, por eso el paradigma fundacional de arriba es tan importante. Este marco que se está creando es el que se aprovecha para escalar en toda la organización.
 
 Estos son cuatro hitos que se deben desarrollar durante la fase de ejecución:
 
 1. **Defina las bases de su taxonomía global organizativa.**
 
-   Cuando hablamos de taxonomía no solo hacemos referencia a la estructura de carpetas, sino que entendemos quién va a crear qué y cuándo. Además, tendremos que considerar la [permiso diferente](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html?lang=en) estructuras que deberán diseñarse para cada tipo de autor.
+   Cuando hablamos de taxonomía no solo hacemos referencia a la estructura de carpetas, sino que también entendemos quién es el autor de qué y cuándo. Además, tendremos que considerar la [permiso diferente](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html?lang=en) estructuras que deberán diseñarse para cada tipo de autor.
 
    En este punto, considere si desea un modelo de gobierno centralizado o uno descentralizado. Por un lado, un modelo de gobierno centralizado crea una estrategia taxonómica consolidada que ofrezca un control de calidad y perspectivas de proceso más estrictos que serían imposibles o al menos difíciles en un marco descentralizado.
 
-   Por otro lado, un modelo centralizado, especialmente si proviene de una experiencia de creación que actualmente es excesivamente flexible, puede ser un obstáculo demasiado grande para el equipo. La estructura debe permitir diferenciadores comunes de idiomas y regiones, así como prácticas en torno al control de calidad. Además, puede haber menos autonomía para cada faceta de la experiencia de creación, es decir, solo se permitirá a ciertos autores trabajar en grupos específicos de páginas y solo los autores limitados tendrán permisos editables.
+   Por otro lado, un modelo centralizado, especialmente si proviene de una experiencia de creación que actualmente es excesivamente flexible, puede ser un obstáculo demasiado grande para el equipo. La estructura debe permitir diferenciadores comunes de idiomas y regiones, así como prácticas en torno al control de calidad. Además, puede haber menos autonomía para cada faceta de la experiencia de creación, es decir, solo se permite a ciertos autores trabajar en grupos específicos de páginas y solo los autores limitados tienen permisos editables.
 
-   Aunque inicialmente un modo centralizado de gobernancia puede parecer más lento, al final, con las perspectivas del proceso reunidas y la transparencia en la rendición de cuentas entre los usuarios del negocio que se instiga, la trayectoria general será más rápida.
+   Aunque inicialmente un modo centralizado de gobierno puede parecer más lento, al final, con la recopilación de perspectivas del proceso y la transparencia en la rendición de cuentas entre los usuarios del negocio que se instiga, la trayectoria general es más rápida.
 
    La decisión sobre la dirección a seguir dependerá en última instancia del objetivo estratégico general de la organización. Puede deberse a elegir entre una flexibilidad mejorada para los usuarios empresariales o una experiencia unificada para las marcas. La alineación en el modelo adecuado es fundamental para una ejecución de sonido.
 
@@ -116,7 +116,7 @@ Estos son cuatro hitos que se deben desarrollar durante la fase de ejecución:
 
    El contenido interactivo (que a menudo se encuentra en la página principal) puede requerir experiencias altamente interactivas y, por lo tanto, los diseñadores de CSS de front-end deberán trabajar con autores empresariales para actualizarlo. El mantenimiento de la página principal requeriría una estructura de permisos y un proceso de aprobación diferentes a los de una página de referencia, que sería más fácil actualizar. La buena gobernanza, la eficiencia y la calidad comienzan con una clara propiedad del contenido. Considere realizar una auditoría de contenido que responda a estas preguntas:
 
-   * ¿Quién va a crear qué? ¿Y cuándo?
+   * ¿Quién está creando qué? ¿Y cuándo?
    * ¿Cuáles son las diferentes estructuras de permisos que deben aplicarse a cada tipo de contenido?
    * ¿Cuáles son las experiencias en el sitio que cambiarán y cuáles permanecerán relativamente estáticas?
    * ¿Quién es el propietario de qué contenido?
@@ -145,7 +145,7 @@ Estos son cuatro hitos que se deben desarrollar durante la fase de ejecución:
 En general, hablando es mejor seguir estas reglas generales:
 
 * Intente que no menos del 80 % de las experiencias pasen por alto [Componentes predeterminados](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) y [Sistemas de estilos](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=en). Gracias al testimonio de los clientes, esto no solo creará una base más escalable que le permitirá aprovechar la hoja de ruta del producto, sino que también aumentará la velocidad hasta en un 50%.
-* [Configuración](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en)[e](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en)[plantillas editables](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en) y abandonar las plantillas estáticas. Al configurar plantillas editables (necesarias para utilizar los sistemas de estilos), será necesario asignar un autor de plantillas que controle los distintos estilos disponibles para una página o sección del sitio web. Estas actualizaciones de la plantilla en sí son mínimas en términos de trabajo diario.
+* [Configuración](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en)[e](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en)[plantillas editables](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en) y abandonar las plantillas estáticas. Al configurar plantillas editables (necesarias para utilizar sistemas de estilos), es necesario asignar un autor de plantillas que controle los distintos estilos disponibles para una página o sección del sitio web. Estas actualizaciones de la plantilla en sí son mínimas en términos de trabajo diario.
 * Uso [Fragmentos de experiencias](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=en) siempre que sea posible. Aunque el caso de uso general de los fragmentos de experiencia es la distribución multicanal, también se pueden utilizar de forma eficaz en todo el sitio para rellenar el contenido en un área a la vez en lugar de actualizar el contenido manualmente en varias áreas. Esto puede ahorrar tiempo y esfuerzo excesivos y liberará al equipo de creación para que trabaje en experiencias más específicas y enriquecidas.
 * Cree experiencias más enriquecidas. Al utilizar la regla 80/20 (por encima), una organización puede utilizar CSS específica y desarrollo del back-end para experiencias seleccionadas en lugar de actualizaciones de mantenimiento comunes.
 * Opte por una base escalable y por un cambio de marca rápido. Los sistemas de estilos que se ejecutan en función de una implementación moderna pueden permitir un cambio de marca eficiente en toda la plataforma. La actualización de amplios sectores de contenido mediante el cambio de las máscaras CSS permite realizar pruebas y validaciones rápidas y aumenta la calidad de la experiencia de un sitio con un impacto directo en el ROI.
@@ -177,4 +177,4 @@ Estos son algunos de los posibles inconvenientes que debe evitar:
 
 Para un análisis más profundo de la velocidad de contenido, escuche esta hora [panel de discusión](https://primetime.bluejeans.com/a2m/events/playback/e63686d4-158f-4f73-aea0-f03ebee4606d) presenta a Monique Misrahi (T-Mobile), Amy Bergstrom (Deloitte) y Anuradha Pentareddy, Adobe.
 
-Obtenga más información sobre la estrategia y el liderazgo mental en [Éxito del cliente](https://experienceleague.corp.adobe.com/docs/customer-success/customer-success/overview.html) hub.
+Obtenga más información sobre la estrategia y el liderazgo mental en [Éxito del cliente](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html) hub.

@@ -13,9 +13,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: a8d8118d-f4a1-483f-83b4-77190f6a42a4
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '442'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 # Consulta de datos enviados
 
 
-El siguiente paso es consultar los datos enviados y mostrar los resultados en forma de tabla. Para lograrlo, utilizaremos el siguiente software
+El siguiente paso es consultar los datos enviados y mostrar los resultados en forma de tabla. Para lograrlo, utilizamos el siguiente software:
 
 [QueryBuilder](https://querybuilder.js.org/) - Componente de interfaz de usuario para crear consultas
 
@@ -64,7 +64,7 @@ public JSONArray getData(String formName) throws SQLException, IOException {
  }
 ```
 
-Cuando se hace clic en el botón GetResult, se realiza una llamada Get a **&quot;/bin/querydata&quot;**. Pasamos la consulta generada por la interfaz de usuario de QueryBuilder al servlet a través del parámetro de consulta . A continuación, el servlet analiza esta consulta en consulta SQL que se puede utilizar para consultar la base de datos. Por ejemplo, si está buscando recuperar todos los productos llamados &quot;Mouse&quot;, la cadena de consulta de Query Builder será $.productname = &quot;Mouse&quot;. Esta consulta se convierte a continuación
+Cuando se hace clic en el botón GetResult, se realiza una llamada Get a **&quot;/bin/querydata&quot;**. Pasamos la consulta generada por la interfaz de usuario de QueryBuilder al servlet a través del parámetro de consulta . A continuación, el servlet analiza esta consulta en consulta SQL que se puede utilizar para consultar la base de datos. Por ejemplo, si está buscando recuperar todos los productos llamados &quot;Mouse&quot;, la cadena de consulta de Query Builder es `$.productname = 'Mouse'`. Esta consulta se convierte a continuación
 
 SELECT &#42; desde aemformswithjson .  envíos de formularios en los que JSON_EXTRACT( para envíos .formdata,&quot;$.productName &quot;)= &#39;Mouse&#39;
 

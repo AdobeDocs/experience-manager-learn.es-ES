@@ -8,9 +8,9 @@ level: Beginner
 kt: 7635
 thumbnail: kt-7635.jpeg
 exl-id: e5e6204c-d88c-4e79-a7f4-0cfc140bc51c
-source-git-commit: fe056006ab59a3955e5f16a23e96e9e208408cf5
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1169'
+source-wordcount: '1167'
 ht-degree: 2%
 
 ---
@@ -323,4 +323,4 @@ Ha agregado un componente contenedor que permite que los autores añadan compone
 
 ## Siguientes pasos
 
-El siguiente paso será utilizar esta misma técnica para [añadir un componente editable a una ruta de detalles de aventura](./spa-dynamic-routes.md) en el SPA.
+El siguiente paso utiliza esta misma técnica para [añadir un componente editable a una ruta de detalles de aventura](./spa-dynamic-routes.md) en el SPA.

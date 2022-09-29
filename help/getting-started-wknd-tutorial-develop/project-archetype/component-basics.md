@@ -12,16 +12,16 @@ mini-toc-levels: 1
 kt: 4081
 thumbnail: 30177.jpg
 exl-id: 7fd021ef-d221-4113-bda1-4908f3a8629f
-source-git-commit: 25a1a40f42d37443db9edc0e09b1691b1c19e848
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1146'
-ht-degree: 1%
+source-wordcount: '1145'
+ht-degree: 2%
 
 ---
 
 # Conceptos básicos de componentes {#component-basics}
 
-En este capítulo analizaremos la tecnología subyacente de un componente de Adobe Experience Manager (AEM) Sites a través de una sencilla `HelloWorld` ejemplo. Se realizarán pequeñas modificaciones en un componente existente que cubrirá temas como la creación, HTL, modelos Sling y bibliotecas del lado del cliente.
+En este capítulo analizaremos la tecnología subyacente de un componente de Adobe Experience Manager (AEM) Sites a través de una sencilla `HelloWorld` ejemplo. Se realizan pequeñas modificaciones en un componente existente que cubre temas como la creación, HTL, modelos Sling y bibliotecas del lado del cliente.
 
 ## Requisitos previos {#prerequisites}
 

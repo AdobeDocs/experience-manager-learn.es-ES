@@ -14,9 +14,9 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 19a8917c-a1e7-4293-9ce1-9f4c1a565861
-source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '2380'
+source-wordcount: '2372'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ Este capítulo profundiza en la API del modelo JSON de AEM y en cómo el conteni
 
 ## Qué va a generar
 
-Este capítulo inspeccionará cómo se proporciona `Text` SPA componente está asignado al AEM `Text`componente. Un nuevo `Image` Se creará SPA componente que se puede utilizar en el SPA y crear en AEM. Las funciones predeterminadas de la variable **Contenedor de diseño** y **Editor de plantillas** las políticas también se utilizarán para crear una vista que tenga un aspecto un poco más variado.
+Este capítulo inspeccionará cómo se proporciona `Text` SPA componente está asignado al AEM `Text`componente. Un nuevo `Image` SPA componente se crea que se puede utilizar en el SPA y crear en AEM. Las funciones predeterminadas de la variable **Contenedor de diseño** y **Editor de plantillas** las políticas también se utilizarán para crear una vista que tenga un aspecto un poco más variado.
 
 ![Creación final de un ejemplo de capítulo](./assets/map-components/final-page.png)
 
@@ -92,7 +92,7 @@ Veamos cómo funciona el componente.
 
    `:type` es una propiedad reservada que muestra la variable `sling:resourceType` (o ruta) del componente AEM. El valor de `:type` es lo que se utiliza para asignar el componente AEM al componente SPA.
 
-   `text` y `richText` son propiedades adicionales que se expondrán al componente SPA.
+   `text` y `richText` son propiedades adicionales que se exponen al componente SPA.
 
 ### Inspect del componente Texto
 
@@ -178,7 +178,7 @@ Veamos cómo funciona el componente.
 
 8. Inspect **text.component.html** at `ui.frontend/src/app/components/text/text.component.html`.
 
-   Este archivo está vacío, ya que todo el contenido del componente será configurado por el `innerHTML` propiedad.
+   Este archivo está vacío, ya que todo el contenido del componente lo establece la variable `innerHTML` propiedad.
 
 9. Inspect la variable **app.module.ts** at `ui.frontend/src/app/app.module.ts`.
 
@@ -211,11 +211,11 @@ Antes de saltar al código SPA, revise el modelo JSON proporcionado por AEM.
 
    ![JSON, componente principal de imagen](./assets/map-components/image-json.png)
 
-   Propiedades de `src`, `alt`y `title` se utilizará para rellenar el SPA `Image` componente.
+   Propiedades de `src`, `alt`y `title` se usan para rellenar el SPA `Image` componente.
 
    >[!NOTE]
    >
-   > Hay otras propiedades de imagen expuestas (`lazyEnabled`, `widths`) que permiten a un desarrollador crear un componente adaptable y de carga diferida. El componente integrado en este tutorial será sencillo y **not** utilice estas propiedades avanzadas.
+   > Hay otras propiedades de imagen expuestas (`lazyEnabled`, `widths`) que permiten a un desarrollador crear un componente adaptable y de carga diferida. El componente creado en este tutorial es sencillo y **not** utilice estas propiedades avanzadas.
 
 2. Vuelva a su IDE y abra el `en.model.json` at `ui.frontend/src/mocks/json/en.model.json`. Dado que este es un nuevo componente para nuestro proyecto, necesitamos &quot;burlarnos&quot; del JSON de imagen.
 
@@ -244,7 +244,7 @@ Antes de saltar al código SPA, revise el modelo JSON proporcionado por AEM.
            ],
    ```
 
-   El proyecto incluye una imagen de ejemplo en `/mock-content/adobestock-140634652.jpeg` que se utilizará con la variable **servidor de desarrollo de webpack**.
+   El proyecto incluye una imagen de ejemplo en `/mock-content/adobestock-140634652.jpeg` que se usa con la variable **servidor de desarrollo de webpack**.
 
    Puede ver la información completa [en.model.json aquí](https://github.com/adobe/aem-guides-wknd-spa/blob/Angular/map-components-solution/ui.frontend/src/mocks/json/en.model.json).
 
@@ -498,6 +498,6 @@ Los siguientes pasos se llevarán a cabo utilizando el IDE de código de Visual 
     </workspaceFilter>
    ```
 
-   La variable `filter.xml` es responsable de identificar las rutas de los nodos que se instalarán con el paquete. Observe que `mode="merge"` en cada uno de los filtros que indica que el contenido existente no se modificará, solo se añadirá contenido nuevo. Dado que los autores de contenido pueden estar actualizando estas rutas, es importante que una implementación de código **not** sobrescribir contenido. Consulte la [Documentación de FileVault](https://jackrabbit.apache.org/filevault/filter.html) para obtener más información sobre cómo trabajar con elementos de filtro.
+   La variable `filter.xml` es responsable de identificar las rutas de los nodos instalados con el paquete. Observe que `mode="merge"` en cada uno de los filtros que indica que el contenido existente no se modificará, solo se añadirá contenido nuevo. Dado que los autores de contenido pueden estar actualizando estas rutas, es importante que una implementación de código **not** sobrescribir contenido. Consulte la [Documentación de FileVault](https://jackrabbit.apache.org/filevault/filter.html) para obtener más información sobre cómo trabajar con elementos de filtro.
 
    Comparar `ui.content/src/main/content/META-INF/vault/filter.xml` y `ui.apps/src/main/content/META-INF/vault/filter.xml` para comprender los diferentes nodos administrados por cada módulo.

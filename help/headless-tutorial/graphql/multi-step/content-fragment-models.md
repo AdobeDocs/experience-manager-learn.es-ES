@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 9400d9f2-f828-4180-95a7-2ac7b74cd3c9
-source-git-commit: 410eb23534e083940bf716194576e099d22ca205
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1134'
+source-wordcount: '1132'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 En este capítulo, aprenda a modelar contenido y a crear un esquema con **Modelos de fragmento de contenido**. Aprenderá los diferentes tipos de datos que se pueden usar para definir un esquema como parte del modelo.
 
-En este capítulo se crean dos modelos simples, **Equipo** y **Persona**. La variable **Equipo** el modelo de datos tiene nombre, nombre corto y descripción, y hace referencia a la variable **Persona** modelo de datos, que tiene nombre completo, detalles de biografía, imagen de perfil y lista de ocupaciones.
+En este capítulo se crean dos modelos simples: **Equipo** y **Persona**. La variable **Equipo** el modelo de datos tiene nombre, nombre corto y descripción, y hace referencia a la variable **Persona** modelo de datos, que tiene nombre completo, detalles de biografía, imagen de perfil y lista de ocupaciones.
 
 También puede crear su propio modelo siguiendo los pasos básicos y modificar los pasos respectivos, como las consultas de GraphQL y el código de la aplicación React , o simplemente seguir los pasos descritos en estos capítulos.
 
@@ -79,7 +79,7 @@ Cree un nuevo modelo para un **Persona**, que es el modelo de datos que represen
 
    ![Campo de propiedad Nombre completo](assets/content-fragment-models/full-name-property-field.png)
 
-   La variable **Nombre de propiedad** define el nombre de la propiedad que se mantiene en AEM. La variable **Nombre de propiedad** también define el **key** nombre para esta propiedad como parte del esquema de datos. Esta **key** se utilizará cuando los datos del fragmento de contenido se expongan mediante las API de GraphQL.
+   La variable **Nombre de propiedad** define el nombre de la propiedad que se mantiene en AEM. La variable **Nombre de propiedad** también define el **key** nombre para esta propiedad como parte del esquema de datos. Esta **key** se utiliza cuando los datos del fragmento de contenido se exponen mediante las API de GraphQL.
 
 1. Toque . **Tipos de datos** y arrastre y suelte una **Texto de varias líneas** debajo del **Nombre completo** campo . Introduzca las siguientes propiedades:
 

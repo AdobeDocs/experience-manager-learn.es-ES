@@ -7,10 +7,10 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: d268d5d6-f24f-4db9-b8e0-07dd769c6005
-source-git-commit: 228da29e7ac0d61359c2b94131495b5b433a09dc
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '601'
-ht-degree: 0%
+source-wordcount: '597'
+ht-degree: 1%
 
 ---
 
@@ -60,7 +60,7 @@ La línea 6 exporta el xmlData desde el archivo PDF
 1. /content/AemFormsSamples/exportdata
 1. /content/AemFormsSamples/outputservice
 1. Buscar &quot;Filtro de referente de Sling&quot;
-1. Marque la casilla de verificación &quot;Permitir vacío&quot;. (Esta configuración solo debe utilizarse con fines de prueba) Existen varias formas de probar el código de muestra. Lo más rápido y fácil es usar la aplicación Postman. Postman le permite realizar solicitudes de POST a su servidor. Instale la aplicación Postman en su sistema.
+1. Marque la casilla de verificación &quot;Permitir vacío&quot;. (Esta configuración solo debe utilizarse con fines de prueba) Existen varias formas de probar el código de muestra. Lo más rápido y sencillo es usar la aplicación Postman. Postman le permite realizar solicitudes de POST al servidor. Instale la aplicación de Postman en su sistema.
 Inicie la aplicación e introduzca la siguiente URL para probar la API de datos de exportación
 
 Asegúrese de haber seleccionado &quot;POST&quot; en la lista desplegable http://localhost:4502/content/AemFormsSamples/exportdata.html Asegúrese de especificar &quot;Autorización&quot; como &quot;Auth básica&quot;. Especifique el nombre de usuario y la contraseña del servidor de AEM Vaya a la pestaña &quot;Cuerpo&quot; y especifique los parámetros de solicitud, tal y como se muestra en la imagen siguiente
@@ -76,18 +76,18 @@ El paquete contiene 3 muestras. En los párrafos siguientes se explica cuándo u
 * **Parámetros de solicitud -**
 
    * **xdp_or_pdf_file** : El archivo xdp o pdf con el que desea combinar los datos
-   * **xmlfile**: El archivo de datos xml que se combinará con xdp_or_pdf_file
+   * **xmlfile**: El archivo de datos xml que se combina con xdp_or_pdf_file
    * **saveLocation**: Ubicación para guardar el documento procesado en el sistema de archivos. Por ejemplo c:\\documents\\sample.pdf
 
 ### Importar datos en archivo PDF
 
-* Usar FormsService para importar datos en un archivo de PDF
+* Utilice FormsService para importar datos en un archivo de PDF
 * **URL del POST** - http://localhost:4502/content/AemFormsSamples/mergedata.html
 * **Parámetros de solicitud:**
 
    * **pdffile** : El archivo pdf con el que desea combinar los datos
-   * **xmlfile**: El archivo de datos xml que se combinará con el archivo pdf
-   * **saveLocation**: Ubicación para guardar el documento procesado en el sistema de archivos. Por ejemplo, c:\\outputsample.pdf.
+   * **xmlfile**: El archivo de datos xml que se combina con el archivo pdf
+   * **saveLocation**: Ubicación para guardar el documento procesado en el sistema de archivos. Por ejemplo `c:\\outputsample.pdf`.
 
 **Exportar datos de un archivo de PDF**
 * Usar FormsService para exportar datos desde el archivo PDF

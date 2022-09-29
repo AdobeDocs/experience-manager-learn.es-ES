@@ -9,9 +9,9 @@ version: Cloud Service
 topic: Development
 kt: 9534
 exl-id: c2cd9c52-6f00-4cfe-a972-665093990e5d
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '324'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ Dado que estamos creando el nuevo proyecto maven en la carpeta cloudmanager que 
 
 >[!NOTE]
 >
->Si implementa este nuevo proyecto tal cual es, la instancia del servicio en la nube no tendrá HandleFormSubmission ni SubmitToAEMServlet. Esto se debe a que cada vez que implemente un proyecto mediante el administrador de la nube, se eliminará y sobrescribirá cualquier elemento que se encuentre en la carpeta de aplicaciones.
+>Si implementa este nuevo proyecto tal cual es, la instancia del servicio en la nube no tendrá HandleFormSubmission ni SubmitToAEMServlet. Esto se debe a que cada vez que implementa un proyecto mediante Cloud Manager, cualquier elemento de la sección `/apps` se elimina y sobrescribe.
 
 ## Copiar el código java
 

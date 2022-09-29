@@ -7,21 +7,21 @@ topic: Development
 role: Developer
 level: Intermediate
 kt: 8507
-source-git-commit: e01d93591d1c00b2abec3430fdfa695b32165e54
+exl-id: 9ad69407-2413-416f-9cec-43f88989b31d
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
 
-
 # Conversión de una cadena separada por comas en una matriz de cadenas {#setting-value-of-json-data-element-in-aem-forms-workflow}
 
-Cuando el formulario se basa en un modelo de datos de formulario que tiene una matriz de cadenas como parámetro de entrada, deberá manipular los datos del formulario adaptable enviado para insertar una matriz de cadenas. Por ejemplo, si ha enlazado un campo de casilla de verificación a un elemento del modelo de datos de formulario de una matriz de cadenas de tipo , los datos del campo de casilla de verificación estarán en un formato de cadena separado por comas. El código de ejemplo que se muestra a continuación muestra cómo reemplazar la cadena separada por comas con una matriz de cadenas.
+Cuando el formulario se basa en un modelo de datos de formulario que tiene una matriz de cadenas como parámetro de entrada, es necesario manipular los datos del formulario adaptable enviado para insertar una matriz de cadenas. Por ejemplo, si ha enlazado un campo de casilla de verificación a un elemento del modelo de datos de formulario de una matriz de cadenas de tipo , los datos del campo de casilla de verificación se encuentran en un formato de cadena separado por comas. El código de ejemplo que se muestra a continuación muestra cómo reemplazar la cadena separada por comas con una matriz de cadenas.
 
 ## Crear un paso del proceso
 
-Se utiliza un paso de proceso en un flujo de trabajo AEM cuando queremos que nuestro flujo de trabajo ejecute una lógica determinada. El paso del proceso se puede asociar con un script ECMA o un servicio OSGi. Nuestro paso de proceso personalizado ejecutará el servicio OSGi
+Se utiliza un paso de proceso en un flujo de trabajo AEM cuando queremos que nuestro flujo de trabajo ejecute una lógica determinada. El paso del proceso se puede asociar con un script ECMA o un servicio OSGi. Nuestro paso de proceso personalizado ejecuta el servicio OSGi.
 
 Los datos enviados tienen el siguiente formato. El valor del elemento businessUnits es una cadena separada por comas que debe convertirse en una matriz de cadenas.
 
@@ -31,7 +31,7 @@ Los datos de entrada para el resto del extremo asociado con el modelo de datos d
 
 ![fdm-string-array](assets/string-array-fdm.png)
 
-Pasamos la ruta del objeto JSON y el nombre del elemento al paso del proceso. El código del paso de proceso reemplazará los valores separados por comas del elemento en una matriz de cadenas.
+Pasamos la ruta del objeto JSON y el nombre del elemento al paso del proceso. El código del paso de proceso reemplaza los valores separados por comas del elemento en una matriz de cadenas.
 ![paso del proceso](assets/create-string-array.png)
 
 >[!NOTE]
@@ -140,4 +140,4 @@ public class CreateStringArray implements WorkflowProcess {
 }
 ```
 
-El paquete de muestra se puede [descargar desde aquí](assets/CreateStringArray.CreateStringArray.core-1.0-SNAPSHOT.jar)
+El paquete de muestra puede ser [descargado desde aquí](assets/CreateStringArray.CreateStringArray.core-1.0-SNAPSHOT.jar)

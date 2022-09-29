@@ -3,7 +3,7 @@ title: Modelos y arquetipos de gobernanza y dotación de personal
 description: Aprenda a poner en marcha la plataforma de Adobe Experience Manager (AEM) y sacar el máximo partido a sus esfuerzos.
 solution: Experience Manager
 exl-id: 808ab7a6-5ec5-4bbd-9a6e-cfc0b447430d
-source-git-commit: 471f0fe940abb8241428beb14896d83e140136b3
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
 source-wordcount: '1133'
 ht-degree: 0%
@@ -133,4 +133,4 @@ Los siguientes son ejemplos de funciones para un escenario cliente ligero y pesa
 
 Para un debate más profundo sobre Gobernanza y Modelos de Personal y Arquetipos, escuche esta mesa redonda de una hora: [Arquetipos de funciones y creación de un marco operativo para [!DNL AEM Assets] y [!DNL Sites]](https://adobecustomersuccess.adobeconnect.com/p8ml5nmy0758mp4/)
 
-Obtenga más información sobre la estrategia y el liderazgo mental en [Éxito del cliente](https://experienceleague.corp.adobe.com/docs/customer-success/customer-success/overview.html) hub.
+Obtenga más información sobre la estrategia y el liderazgo mental en [Éxito del cliente](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html) hub.

@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 3dd552da-fc7c-4fc7-97ec-f20b6cc33df0
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '414'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ El caso de uso es el déclencheur de un flujo de trabajo AEM en un envío de for
 
    * Busque &quot;JDBC Connection Pool&quot;. Cree un nuevo grupo de conexiones JDBC Day Commons. Especifique la configuración específica de la base de datos.
 
-   * ![grupo de conexiones jdbc](assets/aemformstutorial-jdbc.png)
+   * ![Configuración OSGi del grupo de conexiones JDBC](assets/aemformstutorial-jdbc.png)
 
 ## Especificar detalles de base de datos
 
@@ -38,7 +38,7 @@ El caso de uso es el déclencheur de un flujo de trabajo AEM en un envío de for
    * FormName - Nombre de columna que contiene el nombre del formulario
    * ColumnName - Nombre de columna para contener los datos AF
 
-![insertdata](assets/specify-database-details.png)
+   ![Especificar detalles de la base de datos Configuración de OSGi](assets/specify-database-details.png)
 
 
 

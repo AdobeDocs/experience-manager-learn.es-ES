@@ -10,10 +10,11 @@ role: Developer
 level: Beginner
 kt: 9371
 thumbnail: 338680.jpg
-source-git-commit: 04096fe3c99cdcce2d43b2b29899c2bbe37ac056
+exl-id: 3155e0fa-56b7-4a52-8eef-fee488e95f68
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 2%
+source-wordcount: '405'
+ht-degree: 4%
 
 ---
 
@@ -35,7 +36,7 @@ Para seguir los vídeos que necesite [Adobe XD](https://www.adobe.com/products/x
 
 ## Qué va a generar {#what-you-will-build}
 
-En este capítulo se inspeccionarán dos archivos Adobe XD, uno para la variable [Plantilla de sitio estándar](https://github.com/adobe/aem-site-template-standard) y otro para el sitio WKND propuesto. El
+En este capítulo se inspeccionan dos archivos Adobe XD, uno para la variable [Plantilla de sitio estándar](https://github.com/adobe/aem-site-template-standard) y otro para el sitio WKND propuesto. El
 
 ## Kit de IU de plantilla de sitio estándar {#standard-site-template-uikit}
 
@@ -64,6 +65,6 @@ Adicional [Los Kits de IU están disponibles](https://www.adobe.com/products/xd/
 
 ### Siguientes pasos {#next-steps}
 
-En el capítulo siguiente se creará una nueva plantilla de página basada en el diseño del artículo WKND.
+En el capítulo siguiente, se crea una nueva plantilla de página basada en el diseño del artículo WKND.
 
-Obtenga información sobre cómo crear y modificar [Plantillas de página](./page-templates.md). Comprenda la relación entre una plantilla de página y una página. Obtenga información sobre cómo configurar las políticas de una plantilla de página para proporcionar control granular y coherencia de marca para el contenido.  Se creará una plantilla de artículo de revista bien estructurada basada en una maqueta de Adobe XD.
+Obtenga información sobre cómo crear y modificar [Plantillas de página](./page-templates.md). Comprenda la relación entre una plantilla de página y una página. Obtenga información sobre cómo configurar las políticas de una plantilla de página para proporcionar control granular y coherencia de marca para el contenido.  Se crea una plantilla de artículo de revista bien estructurada basada en una maqueta de Adobe XD.

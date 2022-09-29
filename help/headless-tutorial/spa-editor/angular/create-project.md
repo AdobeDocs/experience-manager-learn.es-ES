@@ -14,9 +14,9 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 49fcd603-ab1a-4f1e-ae1f-49d3ff373439
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1097'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,7 @@ Aprenda a utilizar un proyecto de Adobe Experience Manager (AEM) Maven como punt
 
 ## Qué va a generar
 
-En este capítulo, se implementará un nuevo proyecto de AEM, basado en el [AEM tipo de archivo del proyecto](https://github.com/adobe/aem-project-archetype). El proyecto AEM se arrancará con un punto de partida muy sencillo para la SPA de Angular. El proyecto utilizado en este capítulo servirá de base para la aplicación del SPA WKND y se basará en futuros capítulos.
+En este capítulo, se implementa un nuevo proyecto de AEM, basado en la variable [Tipo de archivo del proyecto AEM](https://github.com/adobe/aem-project-archetype). El proyecto AEM se arranca con un punto de partida muy sencillo para la SPA de Angular. El proyecto utilizado en este capítulo servirá de base para la aplicación de la SPA WKND y se basará en futuros capítulos.
 
 ![Proyecto de inicio de WKND SPA Angular](./assets/create-project/what-you-will-build.png)
 
@@ -40,15 +40,15 @@ En este capítulo, se implementará un nuevo proyecto de AEM, basado en el [AEM 
 
 ## Requisitos previos
 
-Revise las herramientas e instrucciones necesarias para configurar un [entorno de desarrollo local](overview.md#local-dev-environment). Asegúrese de que se esté ejecutando localmente una nueva instancia de Adobe Experience Manager, iniciada en modo **author**.
+Revise las herramientas e instrucciones necesarias para configurar un [entorno de desarrollo local](overview.md#local-dev-environment). Asegúrese de que se ha iniciado una nueva instancia de Adobe Experience Manager en **author** se está ejecutando localmente.
 
 ## Obtener el proyecto
 
-Existen varias opciones para crear un proyecto de Maven Multi-module para AEM. Este tutorial utilizó el último [AEM tipo de archivo del proyecto](https://github.com/adobe/aem-project-archetype) como base para el código del tutorial. Se han realizado modificaciones en el código del proyecto para admitir varias versiones de AEM. Revise [la nota sobre la compatibilidad con versiones anteriores](overview.md#compatibility).
+Existen varias opciones para crear un proyecto de Maven Multi-module para AEM. Este tutorial ha utilizado las [Tipo de archivo del proyecto AEM](https://github.com/adobe/aem-project-archetype) como base para el código del tutorial. Se han realizado modificaciones en el código del proyecto para admitir varias versiones de AEM. Consulte [la nota sobre la compatibilidad con versiones anteriores](overview.md#compatibility).
 
 >[!CAUTION]
 >
->Se recomienda utilizar la versión **más reciente** del [arquetipo](https://github.com/adobe/aem-project-archetype) para generar un nuevo proyecto para una implementación real. AEM proyectos deben dirigirse a una sola versión de AEM utilizando la propiedad `aemVersion` del tipo de archivo.
+>Se recomienda utilizar la variable **última versión** versión de [arquetipo](https://github.com/adobe/aem-project-archetype) para generar un nuevo proyecto para una implementación real. AEM proyectos deben dirigirse a una única versión de AEM usando la variable `aemVersion` propiedad del tipo de archivo.
 
 1. Descargue el punto de partida para este tutorial mediante Git:
 
@@ -76,7 +76,7 @@ Existen varias opciones para crear un proyecto de Maven Multi-module para AEM. E
        |--- archetype.properties
    ```
 
-3. Se utilizaron las siguientes propiedades al generar el proyecto AEM desde el [AEM tipo de archivo del proyecto](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype/releases/tag/aem-project-archetype-14):
+3. Se utilizaron las siguientes propiedades al generar el proyecto de AEM desde el [AEM tipo de archivo del proyecto](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype/releases/tag/aem-project-archetype-14):
 
    | Propiedad | Value |
    |-----------------|---------------------------------------|
@@ -90,7 +90,7 @@ Existen varias opciones para crear un proyecto de Maven Multi-module para AEM. E
 
    >[!NOTE]
    >
-   > Observe la propiedad `frontendModule=angular`. Esto le indica al tipo de archivo del proyecto AEM que arranque el proyecto con un [código de Angular base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html) que se utilizará con el AEM SPA Editor.
+   > Observe que `frontendModule=angular` propiedad. Esto indica al tipo de archivo del proyecto AEM que arranque el proyecto con un inicio [base de código de angular](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html) para usar con el AEM SPA Editor.
 
 ## Creación del proyecto
 
@@ -106,13 +106,13 @@ A continuación, compile, cree e implemente el código del proyecto en una insta
    Java version: 11.0.4, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk-11.0.4.jdk/Contents/Home
    ```
 
-3. Ejecute el siguiente comando Maven desde el directorio `aem-guides-wknd-spa` para crear e implementar el proyecto para AEM:
+3. Ejecute el comando Maven siguiente desde la `aem-guides-wknd-spa` para crear e implementar el proyecto para AEM:
 
    ```shell
    $ mvn -PautoInstallSinglePackage clean install
    ```
 
-   Si utiliza [AEM 6.x](overview.md#compatibility):
+   Si usa [AEM 6.x](overview.md#compatibility):
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
@@ -139,9 +139,9 @@ A continuación, compile, cree e implemente el código del proyecto en una insta
    [INFO] ------------------------------------------------------------------------
    ```
 
-   El perfil de Maven ***autoInstallSinglePackage*** compila los módulos individuales del proyecto e implementa un paquete único en la instancia de AEM. De forma predeterminada, este paquete se implementará en una instancia de AEM que se ejecute localmente en el puerto **4502** y con las credenciales de **admin:admin**.
+   El perfil de Maven ***autoInstallSinglePackage*** compila los módulos individuales del proyecto e implementa un paquete único en la instancia de AEM. De forma predeterminada, este paquete se implementa en una instancia de AEM que se ejecuta localmente en el puerto **4502** y con las credenciales de **admin:admin**.
 
-4. Vaya al **[!UICONTROL Administrador de paquetes]** en la instancia de AEM local: [http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp).
+4. Vaya a **[!UICONTROL Administrador de paquetes]** en la instancia de AEM local: [http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp).
 
 5. Debería ver tres paquetes para `wknd-spa-angular.all`, `wknd-spa-angular.ui.apps` y `wknd-spa-angular.ui.content`.
 
@@ -149,39 +149,39 @@ A continuación, compile, cree e implemente el código del proyecto en una insta
 
    Todo el código personalizado necesario para el proyecto se incluye en estos paquetes e se instala en el tiempo de ejecución de AEM.
 
-6. También debería ver varios paquetes para `spa.project.core` y `core.wcm.components`. Son dependencias que el tipo de archivo incluye automáticamente. Puede encontrar más información sobre los [AEM componentes principales aquí](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es).
+6. También debería ver varios paquetes para `spa.project.core` y `core.wcm.components`. Son dependencias que el tipo de archivo incluye automáticamente. Más información sobre [Los componentes principales de AEM se pueden encontrar aquí](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es).
 
 ## Contenido de autor
 
 A continuación, abra el SPA de inicio generado por el tipo de archivo y actualice parte del contenido.
 
-1. Vaya a la consola **[!UICONTROL Sites]**: [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content).
+1. Vaya a la **[!UICONTROL Sitios]** consola: [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content).
 
-   La SPA WKND incluye una estructura básica del sitio con un país, idioma y página de inicio. Esta jerarquía se basa en los valores predeterminados del tipo de archivo para `language_country` y `isSingleCountryWebsite`. Estos valores se pueden sobrescribir actualizando las [propiedades disponibles](https://github.com/adobe/aem-project-archetype#available-properties) al generar un proyecto.
+   La SPA WKND incluye una estructura básica del sitio con un país, idioma y página de inicio. Esta jerarquía se basa en los valores predeterminados del tipo de archivo para `language_country` y `isSingleCountryWebsite`. Estos valores se pueden sobrescribir actualizando la variable [propiedades disponibles](https://github.com/adobe/aem-project-archetype#available-properties) al generar un proyecto.
 
-2. Abra la página **[!DNL us]** > **[!DNL en]** > **[!DNL WKND SPA Angular Home Page]** seleccionando la página y haciendo clic en el botón **[!UICONTROL Editar]** en la barra de menús:
+2. Abra el **[!DNL us]** > **[!DNL en]** > **[!DNL WKND SPA Angular Home Page]** seleccionando la página y haciendo clic en el botón **[!UICONTROL Editar]** en la barra de menús:
 
    ![consola del sitio](./assets/create-project/open-home-page.png)
 
-3. Ya se ha agregado un componente **[!UICONTROL Texto]** a la página. Puede editar este componente como cualquier otro componente de AEM.
+3. A **[!UICONTROL Texto]** ya se ha agregado a la página. Puede editar este componente como cualquier otro componente de AEM.
 
    ![Actualizar componente de texto](./assets/create-project/update-text-component.gif)
 
-4. Agregue un componente **[!UICONTROL Texto]** adicional a la página.
+4. Agregue un **[!UICONTROL Texto]** a la página.
 
-   Tenga en cuenta que la experiencia de creación es similar a la de una página de AEM Sites tradicional. Actualmente hay un número limitado de componentes disponibles para usar. Se agregará más durante el tutorial.
+   Tenga en cuenta que la experiencia de creación es similar a la de una página de AEM Sites tradicional. Actualmente hay un número limitado de componentes disponibles para usar. Se ha añadido más información a lo largo del tutorial.
 
 ## Inspect: aplicación de una sola página
 
 A continuación, compruebe que se trata de una aplicación de una sola página con las herramientas para desarrolladores del explorador.
 
-1. En el **[!UICONTROL Editor de página]**, haga clic en el menú **[!UICONTROL Información de página]** > **[!UICONTROL Ver como aparece publicado]**:
+1. En el **[!UICONTROL Editor de página]**, haga clic en **[!UICONTROL Información de la página]** menú > **[!UICONTROL Ver tal y como aparece publicado]**:
 
    ![Botón Ver tal y como aparece publicado](./assets/create-project/view-as-published.png)
 
-   Se abrirá una nueva pestaña con el parámetro de consulta `?wcmmode=disabled` que desactiva efectivamente el editor de AEM: [http://localhost:4502/content/wknd-spa-angular/us/en/home.html?wcmmode=disabled](http://localhost:4502/content/wknd-spa-angular/us/en/home.html?wcmmode=disabled)
+   Se abrirá una nueva pestaña con el parámetro de consulta `?wcmmode=disabled` que desactiva el editor de AEM: [http://localhost:4502/content/wknd-spa-angular/us/en/home.html?wcmmode=disabled](http://localhost:4502/content/wknd-spa-angular/us/en/home.html?wcmmode=disabled)
 
-2. Vea la fuente de la página y observe que no se encuentra el contenido de texto **[!DNL Hello World]** o cualquiera de los demás contenidos. En su lugar, debería ver HTML como el siguiente:
+2. Vea la fuente de la página y observe que el contenido de texto **[!DNL Hello World]** o cualquier otro contenido no se encuentra. En su lugar, debería ver un HTML como el siguiente:
 
    ```html
    ...
@@ -199,15 +199,15 @@ A continuación, compruebe que se trata de una aplicación de una sola página c
    *¿De dónde viene el contenido?*
 
 3. Vuelva a la pestaña : [http://localhost:4502/content/wknd-spa-angular/us/en/home.html?wcmmode=disabled](http://localhost:4502/content/wknd-spa-angular/us/en/home.html?wcmmode=disabled)
-4. Abra las herramientas para desarrolladores del explorador e inspeccione el tráfico de red de la página durante una actualización. Ver las solicitudes **XHR**:
+4. Abra las herramientas para desarrolladores del explorador e inspeccione el tráfico de red de la página durante una actualización. Consulte la **XHR** solicitudes:
 
    ![Solicitudes XHR](./assets/create-project/xhr-requests.png)
 
-   Debería haber una solicitud a [http://localhost:4502/content/wknd-spa-angular/us/en.model.json](http://localhost:4502/content/wknd-spa-angular/us/en.model.json). Contiene todo el contenido, con formato JSON, que dirigirá el SPA.
+   Debe haber una solicitud para [http://localhost:4502/content/wknd-spa-angular/us/en.model.json](http://localhost:4502/content/wknd-spa-angular/us/en.model.json). Contiene todo el contenido, con formato JSON, que dirigirá el SPA.
 
 5. En una pestaña nueva, abra [http://localhost:4502/content/wknd-spa-angular/us/en.model.json](http://localhost:4502/content/wknd-spa-angular/us/en.model.json)
 
-   La solicitud `en.model.json` representa el modelo de contenido que dirigirá la aplicación. Inspect utiliza la salida JSON y debe poder encontrar el fragmento que representa los componentes **[!UICONTROL Text]** .
+   La solicitud `en.model.json` representa el modelo de contenido que dirigirá la aplicación. Inspect utiliza la salida JSON y debe poder encontrar el fragmento que representa la variable **[!UICONTROL Texto]** componentes.
 
    ```json
    ...
@@ -235,8 +235,8 @@ A continuación, compruebe que se trata de una aplicación de una sola página c
 
 ¡Felicidades, acaba de crear su primer proyecto AEM SPA Editor!
 
-Ahora es bastante sencillo, pero en los próximos capítulos se agregará más funcionalidad.
+Ahora es bastante sencillo pero en los próximos capítulos se añade más funcionalidad.
 
 ### Siguientes pasos {#next-steps}
 
-[Integrar el SPA](integrate-spa.md) : Descubra cómo el código fuente de SPA está integrado con el proyecto de AEM y comprenda las herramientas disponibles para desarrollar rápidamente el SPA.
+[Integrar el SPA](integrate-spa.md) - Aprenda cómo el código fuente SPA está integrado con el proyecto AEM y comprenda las herramientas disponibles para desarrollar rápidamente el SPA.

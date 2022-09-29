@@ -7,10 +7,10 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: ce1793d1-f727-4bc4-9994-f495b469d1e3
-source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
 source-wordcount: '425'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -23,7 +23,7 @@ Por ejemplo, en el portal de formularios de AEM Forms, cuando un usuario hace cl
 
 Para lograr este caso de uso necesitamos hacer lo siguiente.
 
-* Agregue el certificado de Extensiones de Reader al usuario &quot;fd-service&quot;. Se enumeran los pasos para agregar las credenciales de Extensiones de Reader [here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=en)
+* Agregue el certificado de Extensiones de Reader al usuario &quot;fd-service&quot;. Se enumeran los pasos para agregar las credenciales de Extensiones de Reader [here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=es)
 
 
 * También puede consultar el vídeo en [configuración de las credenciales de las extensiones de Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html)
@@ -83,7 +83,7 @@ Para lograr este caso de uso necesitamos hacer lo siguiente.
 
 La siguiente captura de pantalla muestra las propiedades de configuración expuestas. La mayoría de los derechos de uso comunes se exponen a través de esta configuración.
 
-![](assets/configurationproperties.gif)
+![Propiedades de configuración](assets/configurationproperties.gif)
 
 El siguiente código muestra el código que se usa para crear los ajustes de configuración de OSGi
 
@@ -122,7 +122,7 @@ public @interface DocSvcConfiguration {
 
 ## Creación de un servlet para transmitir el PDF {#create-servlet-to-stream-the-pdf}
 
-El siguiente paso es crear un servlet con un método de GET para devolver al usuario el PDF ampliado del lector. En este caso, se pedirá al usuario que guarde el PDF en su sistema de archivos. Esto se debe a que el PDF se representa como PDF dinámico y los visualizadores de pdf que se incluyen con los exploradores no gestionan los pdf dinámicos.
+El siguiente paso es crear un servlet con un método de GET para devolver al usuario el PDF ampliado del lector. En este caso, se solicita al usuario que guarde el PDF en su sistema de archivos. Esto se debe a que el PDF se representa como PDF dinámico y los visualizadores de pdf que se incluyen con los exploradores no gestionan los pdf dinámicos.
 
 El siguiente es el código del servlet. Pasamos la ruta del XDP en el repositorio CRX a este servlet.
 

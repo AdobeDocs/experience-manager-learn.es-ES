@@ -7,10 +7,11 @@ kt: 9724
 topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 15b57ec6792bc47d0041946014863b13867adf22
+exl-id: f1f2cacc-9ec4-46d6-a6af-dac3f663de78
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '607'
-ht-degree: 0%
+source-wordcount: '606'
+ht-degree: 1%
 
 ---
 
@@ -29,7 +30,7 @@ Se siguieron los siguientes pasos para implementar listas desplegables en cascad
 
 ## Crear cuenta de desarrollador
 
-Cree una cuenta de desarrollador con [Geonames](https://www.geonames.org/login). Anote el nombre de usuario. Este nombre de usuario será necesario para invocar las API de REST de geonames.org.
+Cree una cuenta de desarrollador con [Geonames](https://www.geonames.org/login). Anote el nombre de usuario. Este nombre de usuario es necesario para invocar las API de REST de geonames.org.
 
 ## Crear archivo Swagger/OpenAPI
 
@@ -82,8 +83,3 @@ Es necesario rellenar la lista desplegable Estado/provincia en función del paí
 
 Agregue 2 listas desplegables llamadas condados y ciudades en el formulario para enumerar los condados y la ciudad según el país y el estado/provincia seleccionados.
 ![ejercicio](assets/cascading-drop-down-exercise.png)
-
-
-
-
-

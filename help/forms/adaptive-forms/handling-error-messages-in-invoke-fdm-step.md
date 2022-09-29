@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: 8cae155c-c393-4ac3-a412-bf14fc411aac
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
@@ -21,27 +21,20 @@ A partir de AEM Forms 6.5.1, ahora tenemos la opción de capturar mensajes de er
 * Se proporciona una opción para la validación de tres niveles (&quot;OFF&quot;, &quot;BASIC&quot; y &quot;FULL&quot;) para gestionar las excepciones que se encuentran al invocar el servicio del modelo de datos de formulario. Las 3 opciones indican sucesivamente una versión más estricta de la comprobación de los requisitos específicos de la base de datos.
    ![niveles de validación](assets/validation-level.PNG)
 
-* Proporcionar una casilla de verificación para personalizar la ejecución del flujo de trabajo. Por lo tanto, el usuario tendrá la flexibilidad de continuar con la ejecución del flujo de trabajo, incluso si el paso Invocar el modelo de datos de formulario genera excepciones.
+* Proporcionar una casilla de verificación para personalizar la ejecución del flujo de trabajo. Por lo tanto, el usuario ahora tiene la flexibilidad para continuar con la ejecución del flujo de trabajo, incluso si el paso Invocar el modelo de datos de formulario genera excepciones.
 
 * Almacenamiento de información importante sobre Error producido debido a excepciones de validación. Se han incorporado tres selectores de variables de tipo Autocomplete para seleccionar variables relevantes y almacenar los parámetros ErrorCode(String), ErrorMessage(String) y ErrorDetails(JSON). Sin embargo, ErrorDetails se establecería en nulo si la excepción no es DermisValidationException.
    ![captura de mensajes de error](assets/fdm-error-details.PNG)
 
-Con estos cambios, el paso Invocar el servicio del modelo de datos de formulario garantizará que los valores de entrada se ajusten a las restricciones de datos proporcionadas en el archivo de intercambio. Por ejemplo, se generará el siguiente mensaje de error cuando los valores accountId y balance no cumplan las restricciones de datos especificadas en el archivo swagger.
+Con estos cambios, el paso Invocar el servicio del modelo de datos de formulario garantiza que los valores de entrada se ajusten a las restricciones de datos proporcionadas en el archivo de intercambio. Por ejemplo, se genera el siguiente mensaje de error cuando los valores accountId y balance no cumplen las restricciones de datos especificadas en el archivo swagger.
 
 ```json
 {
-
-"errorCode": "AEM-FDM-001-049"
-
-"errorMessage": "Input validations failed during operation execution"
-
-"violations": {
-
-"/accountId": ["numeric instance is greater than the required maximum (maximum: 20, found: 97)"],
-
-"/newAccount/balance": ["instance type (string) does not match any allowed primitive type (allowed: [\"integer\",\"number\"])"]
-
-}
-
+    "errorCode": "AEM-FDM-001-049"
+    "errorMessage": "Input validations failed during operation execution"
+    "violations": {
+        "/accountId": ["numeric instance is greater than the required maximum (maximum: 20, found: 97)"],
+        "/newAccount/balance": ["instance type (string) does not match any allowed primitive type (allowed: [\"integer\",\"number\"])"]
+    }   
 }
 ```

@@ -14,9 +14,9 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 197a0c1f-4d0a-4b99-ba89-cdff2e6ac4ec
-source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '2713'
+source-wordcount: '2712'
 ht-degree: 1%
 
 ---
@@ -63,7 +63,7 @@ Revise las herramientas e instrucciones necesarias para configurar un [entorno d
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-3. Instale el paquete terminado para el [Sitio de referencia WKND](https://github.com/adobe/aem-guides-wknd/releases/latest). Las imágenes proporcionadas por [Sitio de referencia WKND](https://github.com/adobe/aem-guides-wknd/releases/latest) se reutilizará en la SPA WKND. El paquete se puede instalar mediante [Administrador de paquetes AEM](http://localhost:4502/crx/packmgr/index.jsp).
+3. Instale el paquete terminado para el [Sitio de referencia WKND](https://github.com/adobe/aem-guides-wknd/releases/latest). Las imágenes proporcionadas por [Sitio de referencia WKND](https://github.com/adobe/aem-guides-wknd/releases/latest) se reutilizan en la SPA WKND. El paquete se puede instalar mediante [Administrador de paquetes AEM](http://localhost:4502/crx/packmgr/index.jsp).
 
    ![Package Manager instalar wknd.all](./assets/map-components/package-manager-wknd-all.png)
 
@@ -213,7 +213,7 @@ A continuación, cree páginas adicionales en AEM que sirvan como las diferentes
    }
    ```
 
-   En `:children` debería ver una entrada para cada una de las páginas creadas. El contenido de todas las páginas se encuentra en esta solicitud JSON inicial. Una vez implementado el enrutamiento de navegación, las vistas posteriores del SPA se cargarán rápidamente, ya que el contenido ya está disponible en el lado del cliente.
+   En `:children` debería ver una entrada para cada una de las páginas creadas. El contenido de todas las páginas se encuentra en esta solicitud JSON inicial. Una vez implementado el enrutamiento de navegación, las vistas posteriores del SPA se cargan rápidamente, ya que el contenido ya está disponible en el lado del cliente.
 
    No es aconsejable cargar **ALL** del contenido de una SPA en la solicitud inicial JSON, ya que esto ralentizaría la carga inicial de la página. A continuación, veamos cómo se recopila la profundidad de la jerarquía de las páginas.
 
@@ -313,7 +313,7 @@ A continuación, implemente el menú de navegación con una nueva `NavigationCom
    ":type": "wknd-spa-angular/components/header"
    ```
 
-   La naturaleza jerárquica de las páginas AEM se modela en el JSON que se puede usar para rellenar un menú de navegación. Recuerde que la variable `Header` hereda toda la funcionalidad del [Componente principal de navegación](https://www.aemcomponents.dev/content/core-components-examples/library/core-structure/navigation.html) y el contenido expuesto a través del JSON se asignará automáticamente al Angular `@Input` anotación.
+   La naturaleza jerárquica de las páginas AEM se modela en el JSON que se puede usar para rellenar un menú de navegación. Recuerde que la variable `Header` hereda toda la funcionalidad del [Componente principal de navegación](https://www.aemcomponents.dev/content/core-components-examples/library/core-structure/navigation.html) y el contenido expuesto a través del JSON se asigna automáticamente al Angular `@Input` anotación.
 
 2. Abra una nueva ventana de terminal y vaya a la `ui.frontend` carpeta del proyecto SPA. Cree una nueva `NavigationComponent` uso de la herramienta CLI de Angular:
 
@@ -365,7 +365,7 @@ A continuación, implemente el menú de navegación con una nueva `NavigationCom
    }
    ```
 
-   Se trata de una clase sencilla que representa un vínculo de navegación individual. En el constructor de clase esperamos `data` para que sea el objeto JSON transferido desde AEM. Esta clase se utilizará dentro de las dos `NavigationComponent` y `HeaderComponent` para rellenar fácilmente la estructura de navegación.
+   Se trata de una clase sencilla que representa un vínculo de navegación individual. En el constructor de clase esperamos `data` para que sea el objeto JSON transferido desde AEM. Esta clase se utiliza dentro de las dos `NavigationComponent` y `HeaderComponent` para rellenar fácilmente la estructura de navegación.
 
    No se realiza ninguna transformación de datos; esta clase se crea principalmente para escribir con fuerza el modelo JSON. Observe que `this.children` se escribe como `NavigationLink[]` y que el constructor crea recursivamente nuevas `NavigationLink` objetos para cada uno de los elementos del `children` matriz. Recuerde el modelo JSON para la variable `Header` es jerárquico.
 
@@ -637,7 +637,7 @@ Ahora que la navegación se ha implementado, revise el enrutamiento en AEM.
 
    `AemPageMatcher` es un enrutador de Angular personalizado [UrlMatcher](https://angular.io/api/router/UrlMatcher), que coincide con cualquier página que &quot;se parezca&quot; a AEM que forme parte de esta aplicación de Angular.
 
-   `PageComponent` es el componente de Angular que representa una página en AEM y se invocarán las rutas coincidentes. La variable `PageComponent` se inspeccionarán más a fondo.
+   `PageComponent` es el componente Angular que representa una página en AEM y se usa para procesar las rutas coincidentes. La variable `PageComponent` se revisa más adelante en el tutorial.
 
    `AemPageDataResolver`, proporcionado por AEM SPA Editor JS SDK, es un [Resolución de enrutador de angular](https://angular.io/api/router/Resolve) se utiliza para transformar la dirección URL de ruta, que es la ruta en AEM que incluye la extensión .html, en la ruta de recurso en AEM, que es la ruta de página menos la extensión.
 

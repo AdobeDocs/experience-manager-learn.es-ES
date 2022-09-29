@@ -1,8 +1,6 @@
 ---
 title: Generación de documentos de canal de impresión mediante la combinación de datos
-seo-title: Generación de documentos de canal de impresión mediante la combinación de datos
 description: Aprenda a generar el documento de canal de impresión combinando los datos contenidos en el flujo de entrada
-seo-description: Aprenda a generar el documento de canal de impresión combinando los datos contenidos en el flujo de entrada
 feature: Interactive Communication
 topics: development
 audience: developer
@@ -12,10 +10,10 @@ version: 6.4,6.5
 topic: Development
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 3bfbb4ef-0c51-445a-8d7b-43543a5fa191
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '479'
 ht-degree: 1%
 
 ---
@@ -26,7 +24,7 @@ Los documentos de canal de impresión generalmente se generan recuperando datos 
 
 ## Crear servicio de prerelleno
 
-El nombre de servicio &quot;ccm-print-test&quot; se utilizará para acceder a este servicio . Una vez definido este servicio de rellenado previo, puede acceder a este servicio en la implementación de pasos del proceso de flujo de trabajo o servlet para generar el documento del canal de impresión.
+El nombre de servicio &quot;ccm-print-test&quot; se utiliza para acceder a este servicio . Una vez definido este servicio de rellenado previo, puede acceder a este servicio en la implementación de pasos del proceso de flujo de trabajo o servlet para generar el documento del canal de impresión.
 
 ```java
 import java.io.InputStream;
@@ -68,7 +66,7 @@ public PrefillData getPrefillData(DataOptions options) throws FormsException {
 
 ### Creación de la implementación de WorkflowProcess
 
-El fragmento de código de implementación workflowProcess se muestra a continuación. Este código se ejecuta cuando el paso del proceso en el flujo de trabajo de AEM está asociado a esta implementación. Esta implementación espera 3 argumentos de proceso que se describen a continuación:
+El fragmento de código de implementación workflowProcess se muestra a continuación. Este código se ejecuta cuando el paso de proceso del flujo de trabajo AEM está asociado a esta implementación. Esta implementación espera 3 argumentos de proceso que se describen a continuación:
 
 * Nombre de la ruta del archivo de datos especificada al configurar el formulario adaptable
 * Nombre de la plantilla de canal de impresión
@@ -170,17 +168,17 @@ Para probar esto en el servidor, siga los siguientes pasos:
 * Asegúrese de haber añadido la siguiente entrada en la configuración del servicio MAPA de usuario del servicio Apache Sling
 * **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service**
 * [Descargue y descomprima los recursos relacionados con este artículo en su sistema de archivos](assets/prefillservice.zip)
-* [Importe los siguientes paquetes mediante el administrador de paquetes de AEM](http://localhost:4502/crx/packmgr/index.jsp)
+* [Importe los siguientes paquetes mediante el Administrador de paquetes de AEM](http://localhost:4502/crx/packmgr/index.jsp)
    1. beneficiaryconfirmationic.zip
    2. changeofbeneficiaryform.zip
    3. generatebeneficiaryworkflow.zip
-* [Implemente lo siguiente mediante la consola web AEM Felix](http://localhost:4502/system/console/bundles)
+* [Implementar lo siguiente mediante AEM Felix Web Console](http://localhost:4502/system/console/bundles)
 
    * GenerateIC.GenerateIC.core-1.0-SNAPSHOT.jar. Este paquete contiene el código mencionado en este artículo.
 
 * [Abrir ChangeOfBeneficiaryForm](http://localhost:4502/content/dam/formsanddocuments/changebeneficiary/jcr:content?wcmmode=disabled)
-* Asegúrese de que el formulario adaptable esté configurado para enviarse al flujo de trabajo de AEM como se muestra a continuación
-   ![image](assets/generateic.PNG)
+* Asegúrese de que el formulario adaptable esté configurado para enviarse a AEM flujo de trabajo como se muestra a continuación
+   ![imagen](assets/generateic.PNG)
 * [Configure el modelo de flujo de trabajo.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/ChangesToBeneficiary.html)Asegúrese de que el paso del proceso y el envío de componentes de correo electrónico estén configurados según su entorno
 * [Previsualice ChangeOfBeneficiaryForm.](http://localhost:4502/content/dam/formsanddocuments/changebeneficiary/jcr:content?wcmmode=disabled) Rellene algunos detalles y envíe
 * El flujo de trabajo debe invocarse y el documento del canal de impresión IC debe enviarse al destinatario especificado en el componente de envío de correo electrónico como un archivo adjunto

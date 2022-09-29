@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 508b0211-fa21-4a73-b8b4-c6c34e3ba696
-source-git-commit: 410eb23534e083940bf716194576e099d22ca205
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1532'
+source-wordcount: '1529'
 ht-degree: 7%
 
 ---
@@ -211,7 +211,7 @@ A continuación, veamos cómo es posible filtrar los resultados por un subconjun
    {"name": "John Doe"}
    ```
 
-1. Ejecute la consulta, se espera que solo **Personas** se devuelve con el valor &quot;John Doe&quot;.
+1. Ejecute la consulta, se espera que solo **Personas** devuelve el valor &quot;John Doe&quot;.
 
    ![Utilizar variables de consulta para filtrar](assets/explore-graphql-api/using-query-variables-filter.png)
 
@@ -281,7 +281,7 @@ También es posible consultar directamente un solo fragmento de contenido. El co
 
 Una vez que un desarrollador esté satisfecho con la consulta y los datos devueltos, el siguiente paso es almacenar o mantener la consulta para AEM. [Consultas persistentes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html) es el mecanismo preferido para exponer la API de GraphQL a aplicaciones cliente. Una vez que se ha mantenido una consulta, esta se puede solicitar utilizando una solicitud de GET y almacenar en caché en las capas de Dispatcher y CDN. El rendimiento de las consultas persistentes es mucho mejor. Además de las ventajas de rendimiento, las consultas persistentes garantizan que los datos adicionales no se expongan accidentalmente a las aplicaciones del cliente. Más detalles sobre [Las consultas persistentes se pueden encontrar aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html).
 
-A continuación, persista en dos consultas simples, que se utilizarán en el capítulo siguiente.
+A continuación, persiste dos consultas simples, que se utilizan en el capítulo siguiente.
 
 1. En el IDE de GraphiQL, introduzca la siguiente consulta:
 

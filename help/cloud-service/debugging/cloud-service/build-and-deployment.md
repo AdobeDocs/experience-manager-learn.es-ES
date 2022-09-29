@@ -13,9 +13,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: b4985c30-3e5e-470e-b68d-0f6c5cbf4690
-source-git-commit: 7a4585146b52d14f32645c6889c9c015e9991809
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '2524'
+source-wordcount: '2523'
 ht-degree: 0%
 
 ---
@@ -92,8 +92,8 @@ Cuando se resuelven varias configuraciones de OSGi mediante el modo de ejecució
 
 ```
 [ERROR] Unable to convert content-package [/tmp/packages/enduser.all-1.0-SNAPSHOT.zip]: 
-Configuration ‘com.example.ExampleComponent’ already defined in Feature Model ‘com.example.groupId:example.all:slingosgifeature:xxxxx:X.X’, 
-set the ‘mergeConfigurations’ flag to ‘true’ if you want to merge multiple configurations with same PID
+Configuration 'com.example.ExampleComponent' already defined in Feature Model 'com.example.groupId:example.all:slingosgifeature:xxxxx:X.X', 
+set the 'mergeConfigurations' flag to 'true' if you want to merge multiple configurations with same PID
 ```
 
 #### Causa 1
@@ -110,7 +110,7 @@ set the ‘mergeConfigurations’ flag to ‘true’ if you want to merge multip
 
 Las secuencias de comandos de informe definen el contenido de línea de base, los usuarios, las ACL, etc. En AEM as a Cloud Service, los scripts de informe se aplican durante la Imagen de compilación, pero en AEM inicio rápido local del SDK se aplican cuando se activa la configuración de fábrica de informes OSGi. Debido a esto, los scripts de Report pueden fallar silenciosamente (con el inicio de sesión) en AEM inicio rápido local del SDK, pero pueden provocar que el paso Generar imagen falle y detener la implementación.
 
-+ __Causa:__ El formato de una secuencia de comandos de informe no es correcto. Tenga en cuenta que esto puede dejar el repositorio en un estado incompleto, ya que cualquier secuencia de comandos de informe después de que la secuencia de comandos fallida se ejecutará en el repositorio.
++ __Causa:__ El formato de una secuencia de comandos de informe no es correcto. Esto puede dejar el repositorio en un estado incompleto, ya que cualquier secuencia de comandos de informe después de que la secuencia de comandos fallida no se ejecute en el repositorio.
 + __Resolución:__ Revise el inicio rápido local del SDK de AEM cuando se implementa la configuración OSGi del script de informe para determinar si los errores son y cuáles son.
 
 ### Dependencia de contenido de informe insatisfactoria

@@ -13,9 +13,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: c588bdca-b8a8-4de2-97e0-ba08b195699f
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ La capacidad de crear Forms adaptable basado en el esquema JSON se introdujo en 
 
 Una vez que cree un formulario adaptable basado en el esquema JSON, el siguiente paso es almacenar los datos enviados en la base de datos. Para este fin, utilizaremos el nuevo tipo de datos JSON introducido por varios proveedores de bases de datos. A los efectos de este artículo, utilizaremos la base de datos MySql 8 para almacenar los datos enviados.
 
-La base de datos MySql 8 se utilizó para este artículo. MySQL introdujo un nuevo tipo de datos llamado [JSON](https://dev.mysql.com/doc/refman/8.0/en/json.html). Esto facilita el almacenamiento y la consulta de objetos JSON. Almacenaremos los datos enviados en una columna de tipo JSON en nuestra base de datos.
+La base de datos MySql 8 se utilizó para este artículo. MySQL introdujo un nuevo tipo de datos llamado [JSON](https://dev.mysql.com/doc/refman/8.0/en/json.html). Esto facilita el almacenamiento y la consulta de objetos JSON. Almacenamos los datos enviados en una columna de tipo JSON en nuestra base de datos.
 
 La siguiente captura de pantalla muestra los datos del formulario enviados almacenados en el tipo de datos JSON. La columna &quot;formdata&quot; es de tipo JSON. También se ha almacenado el nombre del formulario asociado con los datos en la columna nombre del formulario
 

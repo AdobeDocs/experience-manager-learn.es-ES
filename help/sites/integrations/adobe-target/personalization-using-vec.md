@@ -12,10 +12,10 @@ topic: Integrations
 role: Developer
 level: Intermediate
 exl-id: becf2bed-0541-45e8-9ce2-f9fb023234e0
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 0%
+source-wordcount: '517'
+ht-degree: 1%
 
 ---
 
@@ -36,36 +36,36 @@ La página de inicio del sitio WKND muestra actividades locales o lo mejor para 
 
 ## Pasos para crear una prueba A/B con el Compositor de experiencias visuales (VEC)
 
-1. Inicie sesión en [Adobe Experience Cloud](https://experience.adobe.com/), pulse __Target__, vaya a la pestaña __Actividades__
+1. Inicie sesión en [Adobe Experience Cloud](https://experience.adobe.com/), toque __Target__, vaya a la __Actividades__ ficha
 
-   + Si no ve __Target__ en el panel del Experience Cloud, asegúrese de que la organización de Adobe correcta esté seleccionada en el conmutador de organización en la esquina superior derecha y de que el usuario haya obtenido acceso a Target en [Adobe Admin Console](https://adminconsole.adobe.com/).
+   + Si no ve __Target__ en el panel del Experience Cloud, asegúrese de que la organización de Adobe correcta esté seleccionada en el conmutador de organización en la parte superior derecha y de que el usuario haya obtenido acceso a Target en [Adobe Admin Console](https://adminconsole.adobe.com/).
 
-1. Haga clic en el botón **Crear actividad** y, a continuación, elija **Prueba A/B** actividad
+1. Haga clic en **Crear actividad** y, a continuación, elija **Prueba A/B** actividad
 
    ![Actividad A/B](assets/ab-target-activity.png)
 
-1. Seleccione la opción **Compositor de experiencias visuales**, proporcione la URL de actividad y haga clic en **Siguiente**
+1. Seleccione el **Compositor de experiencias visuales** , proporcione la dirección URL de actividad y haga clic en **Siguiente**
 
    ![URL de actividad](assets/ab-test-url.png)
 
-1. El Compositor de experiencias visuales muestra dos fichas en el lado izquierdo después de crear una nueva actividad: *Experiencia A* y *Experiencia B*. Seleccione una experiencia de la lista. Puede añadir nuevas experiencias a la lista mediante el botón **Añadir experiencia**.
+1. El Compositor de experiencias visuales muestra dos fichas en el lado izquierdo después de crear una nueva actividad: *Experiencia A* y *Experiencia B*. Seleccione una experiencia de la lista. Puede añadir nuevas experiencias a la lista, utilizando la variable **Añadir experiencia** botón.
 
    ![Experiencia A](assets/experience.png)
 
-1. Seleccione una imagen o texto en la página para comenzar a realizar modificaciones o utilice el editor de código para elegir un elemento HTML.
+1. Seleccione una imagen o texto en la página para comenzar a realizar modificaciones o utilice el editor de código para elegir y HTML el elemento .
 
    ![Elemento](assets/select-element.png)
 
-1. Cambie el texto de *Camping in Western Australia* a *Adventures of Australia*. Se mostrará una lista de los cambios agregados a una experiencia en Modificaciones. Puede hacer clic y editar el elemento modificado para ver su selector CSS y el nuevo contenido que se le ha agregado.
+1. Cambiar el texto de *Camping en Australia Occidental* a *Aventuras de Australia*. Una lista de los cambios agregados a una experiencia se muestra en Modificaciones. Puede hacer clic y editar el elemento modificado para ver su selector CSS y el nuevo contenido que se le ha agregado.
 
    ![Aventuras](assets/adventures.png)
 
-1. Cambiar el nombre de *Experiencia A* a *Aventura*
-1. Del mismo modo, actualice el texto de *Experiencia B* de *Camping in Western Australia* a *Explorar el salvaje australiano*.
+1. Cambiar nombre *Experiencia A* a *Aventura*
+1. Del mismo modo, actualice el texto en *Experiencia B* from *Camping en Australia Occidental* a *Explorar el salvaje australiano*.
 
    ![Explorar](assets/explore.png)
 
-1. Haga clic en **Siguiente** para pasar a Segmentación y conserve una asignación de tráfico manual de 50-50 entre las dos experiencias.
+1. Haga clic en **Siguiente** para pasar a Segmentación y mantengamos una asignación de tráfico manual del 50 al 50 entre las dos experiencias.
 
    ![Direccionamiento](assets/targeting.png)
 

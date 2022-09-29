@@ -15,9 +15,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: da613092-e03b-467c-9b9e-668142df4634
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '645'
 ht-degree: 2%
 
 ---
@@ -66,7 +66,7 @@ Se ha añadido una nueva pestaña (Lista de recursos) en el componente de búsqu
 1. Crear nodo de superposición de **/libs/fd/fp/extensions/querybuilder/assettypes**
 
 1. Establecer la ubicación de la superposición en &quot;/apps&quot;
-1. Vaya a la nueva estructura creada en **/apps/fd/fp/extensions/querybuilder/assettypes **
+1. Vaya a la nueva estructura creada en `/apps/fd/fp/extensions/querybuilder/assettypes`
 
 1. En esta ubicación, cree un nodo &#39;nt:unstructured&#39; para el tipo que desea registrar y asigne un nombre al nodo **mp4files. Agregue las dos propiedades siguientes a este nodo de archivos mp4files**
 
@@ -81,7 +81,7 @@ Se ha añadido una nueva pestaña (Lista de recursos) en el componente de búsqu
    1. name: ./jcr:content/metadata/dc:format
    1. valor: video/mp4
 
-1. Esto significa que los recursos que tengan la propiedad dc:format igual a video/mp4 se considerarán un tipo de recurso &quot;Vídeos Mp4&quot;. Puede utilizar cualquier propiedad enumerada en el nodo &quot;jcr:content/metadata&quot; para los criterios de búsqueda
+1. Esto significa que los recursos con la propiedad dc:format igual a video/mp4 se consideran un tipo de recurso &quot;Vídeos Mp4&quot;. Puede utilizar cualquier propiedad enumerada en el nodo &quot;jcr:content/metadata&quot; para los criterios de búsqueda
 
 1. **Asegúrese de guardar su trabajo**
 
@@ -91,4 +91,4 @@ Después de realizar los pasos anteriores, el nuevo tipo de recurso (archivos Mp
 
 [Si tiene problemas para que esto funcione, puede importar el siguiente paquete.](assets/assettypeskt1.zip) El paquete tiene dos tipos de recursos personalizados definidos. Archivos y documentos de Word Mp4. Le sugerimos que eche un vistazo a la **/apps/fd/fp/extensions/querybuilder/assettypes**
 
-[Instalación del paquete customeportal](assets/customportalpage.zip). Este paquete contiene una página de portal de muestra. Esta página se utilizará en la parte 2 de este tutorial.
+[Instalación del paquete customeportal](assets/customportalpage.zip). Este paquete contiene una página de portal de muestra. Esta página se utiliza en la parte 2 de este tutorial.

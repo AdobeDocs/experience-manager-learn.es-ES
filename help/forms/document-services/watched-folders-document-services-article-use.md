@@ -1,22 +1,22 @@
 ---
 title: Uso de carpetas vigiladas en AEM Forms
 description: Configuración y uso de carpetas vigiladas en AEM Forms
-feature: Servicio de salida
+feature: Output Service
 version: 6.4,6.5
-topic: Desarrollo
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: abb74d44-d1b9-44d6-a49f-36c01acfecb4
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '423'
 ht-degree: 0%
 
 ---
 
-
 # Uso de carpetas vigiladas en AEM Forms{#using-watched-folders-in-aem-forms}
 
-Un administrador puede configurar una carpeta de red, conocida como carpeta vigilada, de modo que cuando un usuario coloque un archivo (como un archivo PDF) en la carpeta vigilada, se inicie un flujo de trabajo, servicio o operación de secuencia de comandos preconfigurados para procesar el archivo añadido. Una vez que el servicio realiza la operación especificada, guarda el archivo de resultados en una carpeta de salida especificada. Para obtener más información sobre el flujo de trabajo, el servicio y la secuencia de comandos.
+Un administrador puede configurar una carpeta de red, conocida como carpeta vigilada, de modo que cuando un usuario coloque un archivo (como un archivo PDF) en la carpeta vigilada, se inicie un flujo de trabajo preconfigurado, un servicio o una operación de secuencia de comandos para procesar el archivo añadido. Una vez que el servicio realiza la operación especificada, guarda el archivo de resultados en una carpeta de salida especificada. Para obtener más información sobre el flujo de trabajo, el servicio y la secuencia de comandos.
 
 Para obtener más información sobre la creación de una carpeta vigilada, [haga clic aquí](https://helpx.adobe.com/experience-manager/6-4/forms/using/Creating-Configure-watched-folder.html)
 
@@ -28,16 +28,16 @@ El servicio de salida es un servicio OSGi que forma parte de AEM Document Servic
 
 Para obtener más información sobre el servicio de salida, [haga clic aquí](https://helpx.adobe.com/aem-forms/6/output-service.html).
 Para configurar la carpeta vigilada en su sistema, siga los pasos a continuación:
-* [Descargue y extraiga el contenido del archivo zip](assets/outputservicewatchedfolderkt.zip). Este archivo zip contiene el paquete para crear carpetas vigiladas y archivos de muestra para probar el servicio de salida mediante el mecanismo de carpetas vigiladas
+* [Descargue y extraiga el contenido del archivo zip](assets/outputservicewatchedfolderkt.zip).Este archivo zip contiene un paquete para crear carpetas vigiladas y archivos de muestra para probar el servicio de salida mediante el mecanismo de carpetas vigiladas
    * Sistema Windows
 
       * Importe outputservicewatchedfolder.zip en AEM mediante el administrador de paquetes
-      * Esto creará una carpeta vigilada llamada outputservicewatchedfolder en su unidad C.
+      * Esto crea una carpeta vigilada denominada outputservicewatchedfolder en la unidad C.
    * Sistema no Windows
       * [Abra la configuración de la carpeta vigilada](http://localhost:4502/crx/de/index.jsp#/etc/fd/watchfolder/config/outputservice)
       * Establezca la propiedad de ruta de carpeta del nodo de servicio saliente para que apunte a una ubicación adecuada
       * Guarde los cambios
-      * La ubicación mencionada anteriormente será su carpeta vigilada.
+      * La ubicación mencionada anteriormente es su carpeta vigilada.
 
 Coloque las carpetas SamplePdfFile y SampleXdpFile en la carpeta de entrada de la carpeta vigilada. Cuando el procesamiento de los archivos se realiza correctamente, los resultados se colocan en la carpeta de resultados de la carpeta vigilada.
 
@@ -47,4 +47,3 @@ Coloque las carpetas SamplePdfFile y SampleXdpFile en la carpeta de entrada de l
 >Si la secuencia de comandos asociada a la carpeta observada necesita más de un archivo, debe crear una carpeta, colocar todos los archivos necesarios en la carpeta y soltar la carpeta en la carpeta de entrada de la carpeta vigilada.
 >
 >Si la secuencia de comandos asociada a la carpeta vigilada solo necesita un archivo de entrada, puede soltar el archivo directamente en la carpeta de entrada de la carpeta vigilada
-

@@ -13,24 +13,24 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 65b1af30-9e22-4df0-ab91-479d5406df61
-source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '154'
 ht-degree: 3%
 
 ---
 
 # Creación de la primera comunicación interactiva para el canal web
 
-Interactive Communications es nuevo en AEM Forms 6.4. Este documento le guiará por los pasos necesarios para crear una comunicación interactiva para el canal de impresión.
+Interactive Communications es nuevo en AEM Forms 6.4. Este documento le guía por los pasos necesarios para crear una comunicación interactiva para el canal de impresión.
 
 ## Requisitos previos {#prerequistes}
 
-[Descargue e importe el recurso relacionado con este tutorial en AEM mediante el administrador de paquetes.](assets/gettingstartedassets.zip). Este archivo zip contiene imágenes y fragmentos de documento que se utilizarán en este tutorial.
+[Descargue e importe el recurso relacionado con este tutorial en AEM mediante el administrador de paquetes.](assets/gettingstartedassets.zip). Este archivo zip contiene imágenes y fragmentos de documento que se utilizan en este tutorial
 
 [Descargue y descomprima este archivo.](assets/warfileandswaggerfile.zip) Este archivo contiene el archivo SampleRest.war que debe implementarse en Tomcat y en el archivo swagger que debe utilizarse para configurar el origen de datos.
 
-Al completar este tutorial, habrá aprendido lo siguiente:
+Al completar este tutorial, ha aprendido lo siguiente:
 
 * Crear fuente de datos
 * Crear modelo de datos de formulario

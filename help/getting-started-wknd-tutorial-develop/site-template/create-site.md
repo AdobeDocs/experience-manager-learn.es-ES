@@ -11,9 +11,9 @@ level: Beginner
 kt: 7496
 thumbnail: KT-7496.jpg
 exl-id: 6d0fdc4d-d85f-4966-8f7d-d53506a7dd08
-source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '912'
 ht-degree: 1%
 
 ---
@@ -63,7 +63,7 @@ La mayoría del tutorial se realizará utilizando la variable **Servicio de auto
    >
    >Se recomienda utilizar un **Desarrollo** para este tutorial.
 
-1. Se iniciará una nueva pestaña en el AEM **Servicio de autor**. Haga clic en **Iniciar sesión con Adobe** y debe iniciar sesión automáticamente con las mismas credenciales de Experience Cloud.
+1. Se inicia una nueva pestaña en el AEM **Servicio de autor**. Haga clic en **Iniciar sesión con Adobe** y debe iniciar sesión automáticamente con las mismas credenciales de Experience Cloud.
 
 1. Después de ser redirigido y autenticado, debería ver la pantalla de inicio AEM.
 
@@ -83,7 +83,7 @@ Una plantilla de sitio proporciona un punto de partida para un nuevo sitio. Una 
 
    ![Código postal básico del sitio](assets/create-site/template-basic-zip-file.png)
 
-   Este archivo zip se utilizará en el siguiente ejercicio.
+   Este archivo zip se utiliza en el siguiente ejercicio.
 
    >[!NOTE]
    >
