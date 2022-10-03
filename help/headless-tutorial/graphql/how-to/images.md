@@ -9,14 +9,14 @@ level: Intermediate
 kt: 10253
 thumbnail: KT-10253.jpeg
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
-source-git-commit: 68970493802c7194bcb3ac3ac9ee10dbfb0fc55d
+source-git-commit: 332ad831b6c49e8599aa2181caf978d5626c1aba
 workflow-type: tm+mt
-source-wordcount: '1155'
-ht-degree: 2%
+source-wordcount: '1171'
+ht-degree: 3%
 
 ---
 
-# Imágenes con AEM sin encabezado
+# Imágenes con AEM sin encabezado {#images-with-aem-headless}
 
 Las imágenes son un aspecto crítico de [desarrollo de experiencias ricas, atractivas AEM sin objetivos](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=es). AEM sin encabezado admite la administración de recursos de imagen y su entrega optimizado.
 
@@ -39,6 +39,11 @@ La mejor forma de utilizar los campos es según los siguientes criterios:
 | `_publishUrl` | ü | ü | š |
 
 Uso de `_authorUrl` y `_publishUrl` debe coincidir con el extremo de AEM GraphQL que se está utilizando para generar la respuesta de GraphQL.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_learn_headless_graphql_images"
+>title="Uso de imágenes"
+>abstract="Descubra cómo AEM Headless admite la administración de recursos de imagen y su entrega optimizado."
 
 ## Modelo de fragmento de contenido
 
@@ -121,9 +126,9 @@ En este ejemplo se crean tres representaciones:
 
 | Nombre de representación | Extensión | Anchura máxima |
 |----------------|:---------:|----------:|
-| grande | jpeg | 1200 px |
-| Media | jpeg | 900 px |
-| pequeño | jpeg | 600 px |
+| grande | jpeg | 1200px |
+| Media | jpeg | 900px |
+| pequeño | jpeg | 600px |
 
 Los atributos que se señalan en la tabla anterior son importantes:
 
