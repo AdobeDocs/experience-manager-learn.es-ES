@@ -1,12 +1,13 @@
 ---
-title: Consejos y trucos para el mantenimiento del sitio
-description: Consejos y trucos para el mantenimiento del sitio
-hide: true
-hidefromtoc: true
-source-git-commit: 3eb429039589ae26a81bc6d24f020a77517133e8
+title: Guía de mantenimiento de su sitio de rutina
+seo-title: Your Routine Site Maintenance Guide
+description: Ya sea administrador, autor o desarrollador, el mantenimiento del sitio afecta a todos los aspectos de la instancia de AEM Sites. Utilice esta guía para asegurarse de que la estrategia está configurada para el éxito.
+seo-description: Whether you're an admin, author, or developer, site maintenance touches every aspect of your AEM Sites instance. Use this guide to ensure your strategy is set up for success.
+audience: author, marketer, developer
+source-git-commit: d545e7bb5e937959e2ede2b3c1ecfc312df5a044
 workflow-type: tm+mt
-source-wordcount: '1070'
-ht-degree: 4%
+source-wordcount: '1094'
+ht-degree: 5%
 
 ---
 
@@ -59,7 +60,7 @@ Al minimizar el número de instancias de flujo de trabajo, aumenta el rendimient
 
 Los eventos de AEM que cumplen los requisitos para el registro de auditoría generan una gran cantidad de datos archivados. Estos datos pueden crecer rápidamente con el tiempo debido a las réplicas, cargas de recursos y otras actividades del sistema.
 
-#### [Seguridad](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=en)
+#### [Seguridad](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=es)
 
 Asegúrese de que las prácticas recomendadas de la lista de comprobación de seguridad se siguen de cerca para garantizar la instancia más segura de AEM.
 
