@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Beginner
 kt: kt-11245
-source-git-commit: 061077fb6cd8ac7b760aa30b884ced6d4d3c3b20
+source-git-commit: 8944a4feaefbc4cf0db52011a0d49b22341780c0
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '268'
 ht-degree: 0%
 
 ---
@@ -59,6 +59,6 @@ mvn clean install -pAutoInstallSinglePackage
 
 Si todo va bien, el paquete se instala junto con el paquete de terceros en la instancia de AEM. Puede comprobar si el paquete utiliza [consola web felix](http://localhost:4502/system/console/bundles). El paquete de terceros está disponible en la carpeta /apps de la `crx` repositorio como se muestra a continuación
 ![terceros](assets/custom-bundle1.png)
-![terceros](assets/custom-bundle1.png)
+
 
 
