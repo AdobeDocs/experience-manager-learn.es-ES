@@ -10,16 +10,16 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 701fae92-f740-4eb6-8133-1bc45a472d0f
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 25c289b093297e870c52028a759d05628d77f634
 workflow-type: tm+mt
-source-wordcount: '817'
+source-wordcount: '810'
 ht-degree: 2%
 
 ---
 
 # Creación de fragmentos de contenido {#authoring-content-fragments}
 
-En este capítulo creará y editará un nuevo fragmento de contenido basado en la variable [Modelo de fragmento de contenido definido recientemente](./content-fragment-models.md). También aprenderá a crear variaciones de fragmentos de contenido.
+En este capítulo, se crea y edita un nuevo fragmento de contenido basado en la variable [Modelo de fragmento de contenido definido recientemente](./content-fragment-models.md). También aprenderá a crear variaciones de fragmentos de contenido.
 
 ## Requisitos previos {#prerequisites}
 
@@ -34,11 +34,11 @@ Este es un tutorial de varias partes y se da por hecho que los pasos descritos e
 
 Los fragmentos de contenido se almacenan en carpetas de AEM Assets. Para crear fragmentos de contenido a partir de los modelos creados en el capítulo anterior, se debe crear una carpeta para almacenarlos. Se requiere una configuración en la carpeta para permitir la creación de fragmentos de modelos específicos.
 
-1. Desde la pantalla Inicio de AEM vaya a **Recursos** > **Archivos**.
+1. En la pantalla Inicio de AEM, vaya a **Recursos** > **Archivos**.
 
    ![Navegar a archivos de recursos](assets/author-content-fragments/navigate-assets-files.png)
 
-1. Toque **Crear** en la esquina y pulse **Carpeta**. En el cuadro de diálogo resultante, introduzca:
+1. Toque **Crear** en la esquina superior derecha y pulse **Carpeta**. En el cuadro de diálogo resultante, introduzca:
 
    * Título*: **Mi proyecto**
    * Nombre: **my-project**
@@ -49,17 +49,17 @@ Los fragmentos de contenido se almacenan en carpetas de AEM Assets. Para crear f
 
    ![Abrir propiedades de carpeta](assets/author-content-fragments/open-folder-properties.png)
 
-1. Toque . **Cloud Services** pestaña . En **Configuración de nube** utilice el buscador de rutas para seleccionar la variable **Mi proyecto** configuración. El valor debe ser `/conf/my-project`.
+1. Toque . **Cloud Services** pestaña . En la pestaña Configuración de nube , utilice el buscador de rutas para seleccionar la variable **Mi proyecto** configuración. El valor debe ser `/conf/my-project`.
 
    ![Configurar nube](assets/author-content-fragments/set-cloud-config-my-project.png)
 
-   Al establecer esta propiedad, se habilitarán los fragmentos de contenido que se crearán con los modelos creados en el capítulo anterior.
+   La configuración de esta propiedad permite crear fragmentos de contenido utilizando los modelos creados en el capítulo anterior.
 
-1. Toque . **Políticas** pestaña . En **Modelos de fragmento de contenido permitidos** utilice el buscador de rutas para seleccionar la variable **Persona** y **Equipo** modelo creado anteriormente.
+1. Toque . **Políticas** en la **Modelos de fragmento de contenido permitidos** utilice el buscador de rutas para seleccionar la variable **Persona** y **Equipo** modelo creado anteriormente.
 
    ![Modelos de fragmento de contenido permitidos](assets/author-content-fragments/allowed-content-fragment-models.png)
 
-   Estas directivas las hereda automáticamente cualquier subcarpeta y se pueden sobrescribir. Tenga en cuenta que también puede permitir modelos mediante etiquetas o habilitar modelos desde otras configuraciones de proyecto. Este mecanismo proporciona una manera poderosa de administrar la jerarquía de contenido.
+   Estas directivas las hereda automáticamente cualquier subcarpeta y se pueden sobrescribir. También puede permitir modelos mediante etiquetas o habilitar modelos desde otras configuraciones de proyecto. Este mecanismo proporciona una manera poderosa de administrar la jerarquía de contenido.
 
 1. Toque **Guardar y cerrar** para guardar los cambios en las propiedades de la carpeta.
 
@@ -90,26 +90,26 @@ A continuación, se crean varios fragmentos de contenido en función de la varia
    * Nombre: `john-doe`
 
    ![Fragmento de contenido nuevo](assets/author-content-fragments/new-content-fragment-john-doe.png)
-1. Toque **Crear**.
-1. Repita los pasos anteriores para crear un nuevo fragmento que represente **Alison Smith**:
+1. Pulse **Crear**.
+1. Repita los pasos anteriores para crear un fragmento que represente **Alison Smith**:
 
    * Lugar de residencia: `/content/dam/my-project/en`
    * Modelo de fragmento de contenido: **Persona**
    * Título: **Alison Smith**
    * Nombre: `alison-smith`
 
-   Toque **Crear** para crear el nuevo fragmento de persona.
+   Toque **Crear** para crear el fragmento de persona.
 
-1. A continuación, repita los pasos para crear una nueva **Equipo** representación de fragmentos **Team Alpha**:
+1. A continuación, repita los pasos para crear un **Equipo** representación de fragmentos **Team Alpha**:
 
    * Lugar de residencia: `/content/dam/my-project/en`
    * Modelo de fragmento de contenido: **Equipo**
    * Título: **Team Alpha**
    * Nombre: `team-alpha`
 
-   Toque **Crear** para crear el nuevo fragmento de equipo.
+   Toque **Crear** para crear el fragmento de equipo.
 
-1. Ahora debe haber tres fragmentos de contenido debajo de **Mi proyecto** > **Inglés**:
+1. Debe haber tres fragmentos de contenido debajo de **Mi proyecto** > **Inglés**:
 
    ![Nuevos fragmentos de contenido](assets/author-content-fragments/new-content-fragments.png)
 
@@ -139,7 +139,7 @@ A continuación, rellene los fragmentos recién creados con datos.
 
    >[!NOTE]
    >
-   >También puede crear nuevos fragmentos de contenido en línea utilizando la variable **Nuevo fragmento de contenido** botón.
+   >También puede crear fragmentos de contenido en línea utilizando la variable **Nuevo fragmento de contenido** botón.
 
 1. Toque **Guardar y cerrar** para guardar los cambios en el fragmento Team Alpha.
 
@@ -151,13 +151,12 @@ Tras revisión y verificación, publique el `Content Fragments`
 
 1. En el carril izquierdo, expanda **Mi proyecto** y toque **Inglés**.
 
-1. Pulse la casilla de verificación situada junto a los fragmentos de contenido y pulse **Publicación**
-
+1. Pulse la casilla de verificación situada junto a los fragmentos de contenido y pulse **Publicación**.
    ![Publicar fragmento de contenido](assets/author-content-fragments/publish-content-fragment.png)
 
 ## Felicitaciones! {#congratulations}
 
-Felicidades, acaba de crear varios fragmentos de contenido y crear una variación.
+Felicitaciones, creó varios fragmentos de contenido y creó una variación.
 
 ## Siguientes pasos {#next-steps}
 
