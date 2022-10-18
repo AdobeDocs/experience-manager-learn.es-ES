@@ -8,10 +8,10 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 8b05fc02-c0c5-48ad-a53e-d73b805ee91f
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 30c882da3a89820b5e11bc2902bb92dd0629efe9
 workflow-type: tm+mt
 source-wordcount: '962'
-ht-degree: 10%
+ht-degree: 11%
 
 ---
 
@@ -40,7 +40,7 @@ Si los modelos de fragmento de contenido son **not** habilitado para una configu
 >
 >Cuando la variable `global` se utiliza la configuración, se aplica a todo el contenido y `cq:conf` no es necesario configurarlo.
 >
->Consulte la [[!UICONTROL Explorador de configuración] documentación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html) para obtener más información.
+>Consulte la documentación del [[!UICONTROL Explorador de configuración] para obtener más información.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html)
 
 1. Inicie sesión en AEM Author como usuario con los permisos adecuados para modificar la configuración relevante.
    * Para este tutorial, la variable **admin** se puede utilizar.
@@ -78,7 +78,7 @@ Si los modelos de fragmento de contenido son **not** habilitado para una configu
 
 ## Explicación del modelo de fragmento de contenido que se va a crear
 
-Antes de definir el modelo de fragmento de contenido, vamos a revisar la experiencia que vamos a generar para asegurarnos de que estamos capturando todos los puntos de datos necesarios. Para ello, analizaremos el diseño de las aplicaciones móviles y asignaremos los elementos de diseño al contenido que se va a recopilar.
+Antes de definir nuestro modelo de fragmento de contenido, vamos a revisar la experiencia que vamos a generar para asegurarnos de que estamos capturando todos los puntos de datos necesarios. Para ello, analizaremos el diseño de las aplicaciones móviles y asignaremos los elementos de diseño al contenido que se va a recopilar.
 
 Podemos dividir los puntos de datos que definen un evento de la siguiente manera:
 
@@ -180,7 +180,7 @@ Después de completar la creación del modelo de fragmento de contenido, debe te
 
 ![Modelo de fragmento de contenido de evento](assets/chapter-2/event-content-fragment-model.png)
 
-## Paso siguiente
+## Siguiente paso
 
 De forma opcional, instale la variable [com.adobe.aem.guides.wknd-mobile.content.chapter-2.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) paquete de contenido en AEM Author a través de [Administrador de paquetes AEM](http://localhost:4502/crx/packmgr/index.jsp). Este paquete contiene las configuraciones y el contenido descritos en esta parte del tutorial.
 
