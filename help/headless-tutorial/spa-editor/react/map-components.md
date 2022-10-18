@@ -13,9 +13,9 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 497ce6d7-cd39-4fb3-b5e0-6c60845f7648
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 09f6c4b0bec10edd306270a7416fcaff8a584e76
 workflow-type: tm+mt
-source-wordcount: '2256'
+source-wordcount: '2257'
 ht-degree: 1%
 
 ---
@@ -112,7 +112,7 @@ Veamos cómo funciona el componente.
 
    Para evitar un posible ataque XSS, el texto enriquecido se escapa mediante `DOMPurify` antes de utilizar [peligrosamenteSetInnerHTML](https://reactjs.org/docs/dom-elements.html#dangerouslysetinnerhtml) para procesar el contenido. Recuerde `richText` y `text` propiedades del modelo JSON anteriormente en el ejercicio.
 
-1. A continuación, eche un vistazo a la `TextEditConfig` en ~line 29:
+1. A continuación, abra `ui.frontend/src/components/import-components.js` eche un vistazo a `TextEditConfig` en ~line 86:
 
    ```js
    const TextEditConfig = {
@@ -126,10 +126,10 @@ Veamos cómo funciona el componente.
 
    El código anterior es responsable de determinar cuándo procesar el marcador de posición en el entorno de creación de AEM. Si la variable `isEmpty` devuelve el método **true** a continuación, se representa el marcador de posición.
 
-1. Finalmente, eche un vistazo a la `MapTo` llamada a ~line 62:
+1. Finalmente, eche un vistazo a la `MapTo` llamada a ~line 94:
 
    ```js
-   export default MapTo('wknd-spa-react/components/text')(Text, TextEditConfig);
+   export default MapTo('wknd-spa-react/components/text')(LazyTextComponent, TextEditConfig);
    ```
 
    `MapTo` es proporcionado por AEM SPA Editor JS SDK (`@adobe/aem-react-editable-components`). La ruta `wknd-spa-react/components/text` representa la variable `sling:resourceType` del componente AEM. Esta ruta se corresponde con la variable `:type` expuesto por el modelo JSON observado anteriormente. `MapTo` se encarga de analizar la respuesta del modelo JSON y pasar los valores correctos como `props` al componente SPA.
@@ -247,7 +247,7 @@ Inspeccionemos más el contenedor de diseño.
 
 Felicidades, ha aprendido a asignar SPA componentes a los componentes AEM y ha utilizado los componentes principales de React. También tiene la oportunidad de explorar las capacidades de respuesta del **Contenedor de diseño**.
 
-### Siguientes pasos {#next-steps}
+### Pasos siguientes {#next-steps}
 
 [Navegación y enrutamiento](navigation-routing.md) : Aprenda cómo se pueden admitir varias vistas de la SPA asignando páginas AEM con el SDK del Editor de SPA. La navegación dinámica se implementa mediante el router React y los componentes principales React.
 

@@ -12,7 +12,7 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 82466e0e-b573-440d-b806-920f3585b638
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 09f6c4b0bec10edd306270a7416fcaff8a584e76
 workflow-type: tm+mt
 source-wordcount: '1216'
 ht-degree: 4%
@@ -164,13 +164,9 @@ En el contexto del Editor de SPA, los modelos de Sling exponen el contenido de u
    
    // Sling Models intended to be used with SPA Editor must extend ComponentExporter interface
    public interface OpenWeatherModel extends ComponentExporter {
-   
        public String getLabel();
-   
        public double getLat();
-   
        public double getLon();
-   
    }
    ```
 
@@ -196,11 +192,11 @@ En el contexto del Editor de SPA, los modelos de Sling exponen el contenido de u
        adapters = { OpenWeatherModel.class, ComponentExporter.class }, 
        resourceType = OpenWeatherModelImpl.RESOURCE_TYPE, 
        defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL
-       )
+   )
    @Exporter( //Exporter annotation that serializes the modoel as JSON
        name = ExporterConstants.SLING_MODEL_EXPORTER_NAME, 
        extensions = ExporterConstants.SLING_MODEL_EXTENSION
-       )
+   )
    public class OpenWeatherModelImpl implements OpenWeatherModel {
    
        @ValueMapValue
@@ -306,7 +302,7 @@ A continuación, actualice el código React para incluir el [Componente React Op
    export default function OpenWeather(props) {
    
            // render nothing if component not configured
-           if(OpenWeatherEditConfig.isEmpty(props)) {
+           if (OpenWeatherEditConfig.isEmpty(props)) {
                return null;
            }
    
@@ -395,6 +391,6 @@ A continuación, cree el `Open Weather` con el AEM SPA Editor.
 
 Felicidades, ha aprendido a crear un componente de AEM personalizado para utilizarlo con el Editor de SPA. También ha aprendido cómo los cuadros de diálogo, las propiedades JCR y los modelos Sling interactúan para generar el modelo JSON.
 
-### Siguientes pasos {#next-steps}
+### Pasos siguientes {#next-steps}
 
 [Ampliar un componente principal](extend-component.md) - Obtenga información sobre cómo ampliar un componente principal de AEM existente para utilizarlo con el AEM SPA Editor. Comprender cómo añadir propiedades y contenido a un componente existente es una técnica eficaz para expandir las capacidades de una implementación AEM Editor SPA.

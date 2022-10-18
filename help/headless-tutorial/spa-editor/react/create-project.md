@@ -10,7 +10,7 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 57c8fc16-fed5-4af4-b98b-5c3f0350b240
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 09f6c4b0bec10edd306270a7416fcaff8a584e76
 workflow-type: tm+mt
 source-wordcount: '1082'
 ht-degree: 3%
@@ -42,7 +42,7 @@ Revise las herramientas e instrucciones necesarias para configurar un [entorno d
 
 >[!NOTE]
 >
->Este tutorial utiliza la versión **27** del tipo de archivo. Siempre es recomendable usar la variable **última versión** versión del tipo de archivo para generar un nuevo proyecto.
+>Este tutorial utiliza la versión **39** del tipo de archivo. Siempre es recomendable usar la variable **última versión** versión del tipo de archivo para generar un nuevo proyecto.
 
 1. Abra un terminal de línea de comandos e introduzca el siguiente comando Maven:
 
@@ -50,7 +50,7 @@ Revise las herramientas e instrucciones necesarias para configurar un [entorno d
    mvn -B archetype:generate \
     -D archetypeGroupId=com.adobe.aem \
     -D archetypeArtifactId=aem-project-archetype \
-    -D archetypeVersion=27 \
+    -D archetypeVersion=39 \
     -D appTitle="WKND SPA React" \
     -D appId="wknd-spa-react" \
     -D artifactId="aem-guides-wknd-spa.react" \
@@ -71,18 +71,20 @@ Revise las herramientas e instrucciones necesarias para configurar un [entorno d
 
    ```plain
    |--- aem-guides-wknd-spa.react/
+       |--- LICENSE
+       |--- README.md
        |--- all/
+       |--- archetype.properties
        |--- core/
+       |--- dispatcher/
+       |--- it.tests/
+       |--- pom.xml
        |--- ui.apps/
        |--- ui.apps.structure/
        |--- ui.config/
        |--- ui.content/
        |--- ui.frontend/
        |--- ui.tests /
-       |--- it.tests/
-       |--- dispatcher/
-       |--- pom.xml
-       |--- README.md
        |--- .gitignore
    ```
 
@@ -227,6 +229,6 @@ A continuación, compruebe que se trata de una aplicación de una sola página c
 
 El SPA es bastante sencillo. En los siguientes capítulos se agrega más funcionalidad.
 
-### Siguientes pasos {#next-steps}
+### Pasos siguientes {#next-steps}
 
 [Integrar un SPA](integrate-spa.md) - Aprenda cómo el código fuente SPA está integrado con el proyecto AEM y comprenda las herramientas disponibles para desarrollar rápidamente el SPA.

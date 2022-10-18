@@ -13,7 +13,7 @@ topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 575b12f9-b57f-41f7-bd39-56d242de4747
-source-git-commit: eb6a7ef343a43000855f8d5cc69bde0fae81d3e6
+source-git-commit: 09f6c4b0bec10edd306270a7416fcaff8a584e76
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Este tutorial recorta la creación de un Asset compute de trabajo simple que cre
 
 1. Aprovisionar y configurar las cuentas y los servicios necesarios para crear e implementar un trabajador de Asset compute
 1. Creación y configuración de un proyecto de Asset compute
-1. Desarrollar un programa de trabajo de Asset compute de am que genere una representación personalizada
+1. Desarrollar un Asset compute que genere una representación personalizada
 1. Escriba pruebas para y aprenda a depurar el Asset compute de trabajo personalizado
 1. Implemente el Asset compute de trabajo e inclúyalo AEM servicio de autor as a Cloud Service a través de Perfiles de procesamiento
 
@@ -58,7 +58,7 @@ El desarrollo local de los proyectos de Asset compute requiere un conjunto de he
 
 ### Creador de aplicaciones
 
-Los proyectos de asset compute son proyectos de App Builder especialmente definidos y, como tales, requieren acceso a App Builder en la consola de desarrollador de Adobe para configurarlos e implementarlos.
+Los proyectos de asset compute son proyectos especialmente definidos de App Builder y, como tales, requieren acceso a App Builder en la consola de Adobe Developer para configurarlos e implementarlos.
 
 + [Configuración de App Builder](./set-up/app-builder.md)
 
@@ -112,7 +112,7 @@ Los trabajadores de asset compute proporcionan varios niveles de depuración a p
 
 + [Depurar un trabajador](./test-debug/debug.md)
 
-## Implementar
+## Implementación de
 
 Obtenga información sobre cómo integrar a los trabajadores de Asset compute personalizados con AEM as a Cloud Service, implementándolos primero en Adobe I/O Runtime y luego invocando desde AEM Autor as a Cloud Service a través de los Perfiles de procesamiento de AEM Assets.
 

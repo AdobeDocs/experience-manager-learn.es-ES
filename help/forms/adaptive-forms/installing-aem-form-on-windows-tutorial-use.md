@@ -8,10 +8,10 @@ topic: Development
 role: Admin
 level: Beginner
 exl-id: 80288765-0b51-44a9-95d3-3bdb2da38615
-source-git-commit: 5c53919dd038c0992e1fe5dd85053f26c03c5111
+source-git-commit: 09f6c4b0bec10edd306270a7416fcaff8a584e76
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 5%
+source-wordcount: '578'
+ht-degree: 6%
 
 ---
 
@@ -53,7 +53,8 @@ Aunque recomendamos seguir la [documentación oficial](https://helpx.adobe.com/e
 * Busque AEMQuickStart.Jar y muévalo a la carpeta AEMForms
 * Copie el archivo license.properties en esta carpeta de AEMForms
 * Cree un archivo por lotes llamado &quot;StartAemForms.bat&quot; con el siguiente contenido:
-   * java -d64 -Xmx2048M -jar AEM_6.5_Quickstart.jar -gui. Aquí AEM_6.5_Quickstart.jar es el nombre de mi jar de inicio rápido AEM.
+   * `java -d64 -Xmx2048M -jar AEM_6.5_Quickstart.jar -gui`
+      * Aquí AEM_6.5_Quickstart.jar es el nombre de mi jar de inicio rápido AEM.
    * Puede cambiar el nombre de su jar por cualquier nombre, pero asegúrese de que ese nombre se refleja en el archivo por lotes. Guarde el archivo por lotes en la carpeta AEMForms.
 
 * Abra un nuevo símbolo del sistema y vaya a _c:\aemforms_.
