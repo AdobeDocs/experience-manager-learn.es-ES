@@ -21,7 +21,7 @@ ht-degree: 21%
    + [Portal para desarrolladores AEM sin encabezado](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
    + [Información general](./graphql/overview.md)
    + Configuración rápida {#quick-setup}
-      + [Servicio de nube](./graphql/quick-setup/cloud-service.md)
+      + [Servicio de nube de ](./graphql/quick-setup/cloud-service.md)
       + [SDK local](./graphql/quick-setup/local-sdk.md)
    + Serie de vídeos{#video-series}
       + [1 - Conceptos básicos de modelos](./graphql/video-series/modeling-basics.md)

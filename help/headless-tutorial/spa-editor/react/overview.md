@@ -65,6 +65,6 @@ Se necesita un entorno de desarrollo local para completar este tutorial. Las cap
 >
 > **¿Es nuevo en AEM 6.5?** Consulte la [siguiente guía para configurar un entorno de desarrollo local](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=es).
 
-## Siguientes pasos {#next-steps}
+## Pasos siguientes {#next-steps}
 
 ¡¿Qué estás esperando?! Inicie el tutorial navegando hasta el [Crear proyecto](create-project.md) y aprenda a generar un proyecto habilitado para Editor de SPA con el tipo de archivo del proyecto de AEM.

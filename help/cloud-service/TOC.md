@@ -7,7 +7,7 @@ team: TM
 source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
 source-wordcount: '830'
-ht-degree: 22%
+ht-degree: 23%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 22%
    + [¿Qué es AEM as a Cloud Service?](./introduction/what-is-aem-as-a-cloud-service.md)
    + [Evolución](./introduction/evolution.md)
    + [Arquitectura](./introduction/architecture.md)
-   + [Cloud Manager](./introduction/cloud-manager.md)
+   + [Cloud Manager](./introduction/cloud-manager.md)
    + Estrategia y liderazgo mental{#strategy}
       + [Experience Manager - Modelos y arquetipos de administración y dotación de personal](./introduction/experience-manager-governance-and-staffing-models.md)
       + [Cómo impulsar la velocidad de contenido con Adobe Experience Manager](./introduction/drive-content-velocity-for-sites.md)
@@ -86,7 +86,7 @@ ht-degree: 22%
       + [Información general](./debugging/cloud-service/overview.md)
       + [Registros](./debugging/cloud-service/logs.md)
       + [Compilación e implementación](./debugging/cloud-service/build-and-deployment.md)
-      + [Developer Console](./debugging/cloud-service/developer-console.md)
+      + [Consola de desarrollador](./debugging/cloud-service/developer-console.md)
       + [Explorador del repositorio](./debugging/cloud-service/repository-browser.md)
       + Riesgos{#risks}
          + [Advertencias transitorias](./debugging/cloud-service/risks/traversals.md)
@@ -118,7 +118,7 @@ ht-degree: 22%
    + El paso de AEM as a Cloud Service {#moving-to-aem-as-a-cloud-service}
       + [Introducción](./migration/moving-to-aem-as-a-cloud-service/introduction.md)
       + [Incorporación](./migration/moving-to-aem-as-a-cloud-service/onboarding.md)
-      + [Cloud Manager](./migration/moving-to-aem-as-a-cloud-service/cloud-manager.md)
+      + [Cloud Manager](./migration/moving-to-aem-as-a-cloud-service/cloud-manager.md)
       + [BPA y CAM](./migration/moving-to-aem-as-a-cloud-service/bpa-and-cam.md)
       + [AEM Herramientas de modernización](./migration/moving-to-aem-as-a-cloud-service/aem-modernization-tools.md)
       + [Modernización del repositorio](./migration/moving-to-aem-as-a-cloud-service/repository-modernization.md)
@@ -154,7 +154,7 @@ ht-degree: 22%
       + [Configuración de Git](./forms/developing-for-cloud-service/setup-git.md)
       + [Sincronizar IntelliJ con AEM](./forms/developing-for-cloud-service/intellij-and-aem-sync.md)
       + [Creación de un formulario](./forms/developing-for-cloud-service/deploy-your-first-form.md)
-      + [Habilitar componentes de Forms Portal](./forms/developing-for-cloud-service/forms-portal-components.md)
+      + [Habilitar componentes del portal de Forms](./forms/developing-for-cloud-service/forms-portal-components.md)
       + [Incluir Cloud Services y FDM](./forms/developing-for-cloud-service/azure-storage-fdm.md)
       + [Configuración de nube según el contexto](./forms/developing-for-cloud-service/context-aware-fdm.md)
       + [Insertar en Cloud Manager](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
