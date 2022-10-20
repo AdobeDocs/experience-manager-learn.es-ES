@@ -1,21 +1,23 @@
 ---
-title: Vídeos y Tutorials de Adobe Experience Manager as Cloud Service
+title: Vídeos y tutoriales de Adobe Experience Manager as Cloud Service
 description: Una colección de tutoriales para Adobe Experience Manager (AEM) as a Cloud Service
 sub-product: sites, cloud-manager, foundation, assets
 kt: 3289
 exl-id: 650ba2d9-6083-4772-84c5-1cdb97b5f0e9
-source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
+source-git-commit: c6ee6681775847b3c1168bc18f0f0e973f2daa83
 workflow-type: tm+mt
 source-wordcount: '276'
-ht-degree: 5%
+ht-degree: 11%
 
 ---
 
-# AEM como vídeos y Tutorials del Cloud Service {#overview}
+# AEM como vídeos y tutoriales de Cloud Service {#overview}
 
-Adobe Experience Manager (AEM) ya está disponible as a Cloud Service. AEM as a Cloud Service presenta la nueva generación de la línea de productos Experience Manager, basándose en las inversiones e innovaciones anteriores, preservando y ampliando todos los casos de uso y funcionalidades.
+Adobe Experience Manager (AEM) ya está disponible as a Cloud Service. AEM as a Cloud Service presenta la siguiente generación de la línea de productos Experience Manager, basándose en las inversiones e innovaciones anteriores, preservando y ampliando todos los casos de uso y funcionalidades.
 
 >[!VIDEO](https://video.tv.adobe.com/v/31085/?quality=12&learn=on)
+
+<div id="whats-new-section">
 
 ## Novedades
 
@@ -38,6 +40,17 @@ Adobe Experience Manager (AEM) ya está disponible as a Cloud Service. AEM as a 
 * **[Capacidad de extensión de los microservicios de asset compute (tutorial)](./asset-compute/overview.md)**
 
    *Obtenga información sobre cómo desarrollar trabajadores de Asset compute para generar representaciones de recursos personalizadas*
+
+</div>
+
+<div id="recs-overview-body-1"></div>
+<div id="recs-overview-body-2"></div>
+<div id="recs-overview-body-3"></div>
+<div id="recs-overview-body-4"></div>
+<div id="recs-overview-body-5"></div>
+<div id="recs-overview-body-6"></div>
+
+<div id="staff-picks-section">
 
 ## Selección de personal
 
@@ -83,7 +96,9 @@ Adobe Experience Manager (AEM) ya está disponible as a Cloud Service. AEM as a 
    </td>
 </table>
 
+</div>
+
 ## Recursos adicionales
 
-* [Experience League: Explorar Adobe Experience Manager](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
-* [Documentación de Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html)
+* [Experience League: Explorar Adobe Experience Manager](https://experienceleague.adobe.com/?lang=es#recommended/solutions/experience-manager)
+* [Documentación de Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html?lang=es)

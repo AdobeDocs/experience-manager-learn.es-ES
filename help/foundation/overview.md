@@ -4,16 +4,18 @@ description: Vea nuestros vídeos y tutoriales para obtener ayuda con Adobe Expe
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
 exl-id: af0fe7fb-873b-4d2d-a5a3-59a5a3da9b96
-source-git-commit: efa33aa8cf8288d48ae56d2e96ed9d3a6c4e9627
+source-git-commit: c6ee6681775847b3c1168bc18f0f0e973f2daa83
 workflow-type: tm+mt
 source-wordcount: '253'
-ht-degree: 15%
+ht-degree: 3%
 
 ---
 
 # Vídeos y tutoriales de AEM Foundation {#overview}
 
 Adobe Experience Manager proporciona un conjunto común de funciones disponibles para los usuarios de AEM Sites, Assets y Forms.
+
+<div id="whats-new-section">
 
 ## Novedades
 
@@ -29,6 +31,17 @@ Adobe Experience Manager proporciona un conjunto común de funciones disponibles
 
 * **[Uso de la canalización de CI/CD de Cloud Manager (vídeo)](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)**\
    *Aprenda a utilizar la canalización de CD/CI de Cloud Manager para garantizar implementaciones seguras y coherentes.*
+
+</div>
+
+<div id="recs-overview-body-1"></div>
+<div id="recs-overview-body-2"></div>
+<div id="recs-overview-body-3"></div>
+<div id="recs-overview-body-4"></div>
+<div id="recs-overview-body-5"></div>
+<div id="recs-overview-body-6"></div>
+
+<div id="staff-picks-section">
 
 ## Selección de personal
 
@@ -76,10 +89,12 @@ Adobe Experience Manager proporciona un conjunto común de funciones disponibles
 </tr>
 </table>
 
+</div>
+
 ## Recursos adicionales
 
 * [Experience League: Explorar AEM](https://experienceleague.adobe.com/?lang=es#recommended/solutions/experience-manager)
-* [Tutoriales de AEM as a Cloud Service](/help/cloud-service/overview.md)
+* [AEM tutoriales as a Cloud Service](/help/cloud-service/overview.md)
 * [Vídeos y tutoriales de AEM Sites](/help/sites/overview.md)
 * [Vídeos y tutoriales de AEM Assets](/help/assets/overview.md)
 * [Vídeos y tutoriales de AEM Forms](/help/forms/overview.md)
