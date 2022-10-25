@@ -8,8 +8,9 @@ role: Architect, Developer
 level: Intermediate
 kt: 9351
 thumbnail: 343040.jpeg
+last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
-source-git-commit: 6d5a531f44414887e8dc6568fa6f5dcb73bfb183
+source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
 workflow-type: tm+mt
 source-wordcount: '2815'
 ht-degree: 2%
@@ -119,7 +120,7 @@ El almacén de confianza global está configurado con el certificado público de
 1. Creación de un paquete
    + Nombre del paquete: `Global Trust Store`
    + Versión: `1.0.0`
-   + Agrupar: `com.your.company`
+   + Grupo: `com.your.company`
 1. Edite el nuevo __Almacén de confianza global__ paquete.
 1. Seleccione el __Filtros__ y agregue un filtro para la ruta raíz `/etc/truststore`.
 1. Select __Listo__ y luego __Guardar__.

@@ -7,14 +7,14 @@ type: Tutorial
 topic: Architecture
 kt: 6923
 thumbnail: 330546.jpg
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+last-substantial-update: 2022-01-01T00:00:00Z
+exl-id: 8aa97bdf-6a0b-4140-8183-a8f77212992d
+source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
 workflow-type: tm+mt
-source-wordcount: '57'
-ht-degree: 3%
+source-wordcount: '52'
+ht-degree: 0%
 
 ---
-
 
 # ¿Qué es AEM as a Cloud Service?
 

@@ -7,13 +7,14 @@ topic: Integrations
 role: Leader, Architect, Admin, Developer
 level: Beginner
 kt: 10718
-thumbnail: KT-10718.jpeg
+thumbnail: KT-10718.png
+last-substantial-update: 2022-10-02T00:00:00Z
 mini-toc-levels: 1
 exl-id: 9e856dcc-f042-4e9d-bf97-dd4f72e837e3
-source-git-commit: 663075723da207242309c08feed42657b9e5188b
+source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
 workflow-type: tm+mt
 source-wordcount: '958'
-ht-degree: 12%
+ht-degree: 13%
 
 ---
 
@@ -143,7 +144,7 @@ Adobe Sensei proporciona tecnología de aprendizaje automático y de IA para tra
 
 ### AEM Forms
 
-+ [Servicio de automated forms conversion](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html)
++ [Servicio de conversión automatizada de formularios ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html)
 
 
 ## Adobe Target
