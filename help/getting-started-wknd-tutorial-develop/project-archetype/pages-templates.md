@@ -9,7 +9,8 @@ mini-toc-levels: 1
 kt: 4082
 thumbnail: 30214.jpg
 exl-id: e9d06dc2-ac3b-48c5-ae00-fdaf5bb45b54
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+recommendations: noDisplay, noCatalog
+source-git-commit: de2fa2e4c29ce6db31233ddb1abc66a48d2397a6
 workflow-type: tm+mt
 source-wordcount: '3066'
 ht-degree: 1%
@@ -83,7 +84,7 @@ En la mayoría de los casos, la planificación de un nuevo sitio web comienza co
 
 Al crear una página, debe seleccionar una plantilla, que se utiliza como base para crear la nueva página. La plantilla define la estructura de la página resultante, el contenido inicial y los componentes permitidos.
 
-Hay 3 zonas principales [Plantillas editables](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html):
+Hay 3 zonas principales [Plantillas editables](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=es):
 
 1. **Estructura** : define los componentes que forman parte de la plantilla. Los autores de contenido no pueden editarlos.
 1. **Contenido inicial** : define los componentes con los que comienza la plantilla, que los autores de contenido pueden editar o eliminar
@@ -360,7 +361,7 @@ Los siguientes pasos se llevarán a cabo utilizando el IDE de VSCode utilizando 
 
 Felicidades, acaba de crear una nueva plantilla y página con Adobe Experience Manager Sites.
 
-### Siguientes pasos {#next-steps}
+### Pasos siguientes {#next-steps}
 
 En este punto, la página del artículo está claramente desdiseñada. Siga las [Bibliotecas del lado del cliente y flujo de trabajo del front-end](client-side-libraries.md) tutorial para conocer las prácticas recomendadas para incluir CSS y Javascript para aplicar estilos globales al sitio e integrar una versión de front-end dedicada.
 
