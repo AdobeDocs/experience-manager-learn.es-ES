@@ -1,7 +1,6 @@
 ---
 title: 'Introducción a AEM Sites: Tipo de archivo del proyecto'
 description: 'Introducción a AEM Sites: Tipo de archivo del proyecto. El tutorial de WKND es un tutorial de varias partes diseñado para desarrolladores que no han llegado a Adobe Experience Manager. El tutorial recorre la implementación de un sitio AEM para una marca ficticia de estilo de vida, la WKND. El tutorial cubre temas fundamentales como la configuración del proyecto, los arquetipos de maven, los componentes principales, las plantillas editables, las bibliotecas de cliente y el desarrollo de componentes.'
-sub-product: sites
 version: 6.5, Cloud Service
 type: Tutorial
 feature: Core Components, Page Editor, Editable Templates, AEM Project Archetype
@@ -12,10 +11,10 @@ mini-toc-levels: 1
 index: y
 exl-id: 90d14734-f644-4a45-9361-1e47a5b52fff
 recommendations: disable
-source-git-commit: df9ff5e6811d35118d1beee6baaffa51081cb3c3
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '475'
-ht-degree: 20%
+ht-degree: 24%
 
 ---
 
@@ -23,7 +22,7 @@ ht-degree: 20%
 
 Le damos la bienvenida a un tutorial de varias partes diseñado para desarrolladores que utilicen Adobe Experience Manager (AEM) por primera vez. Este tutorial recorre la implementación de un sitio AEM para una marca ficticia de estilo de vida WKND.
 
-Este tutorial comienza con el uso de [Tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) para generar un nuevo proyecto.
+Este tutorial comienza con el uso de [Tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) para generar un nuevo proyecto.
 
 El tutorial está diseñado para funcionar con **AEM as a Cloud Service** y es compatible con **AEM 6.5.10+**. El sitio se implementa mediante:
 
@@ -67,6 +66,6 @@ Todo el código del proyecto se puede encontrar en Github en el repositorio de l
 
 Además, cada parte del tutorial tiene su propia rama en GitHub. Un usuario puede iniciar el tutorial en cualquier momento simplemente comprobando la rama que corresponde a la parte anterior.
 
-## Siguientes pasos {#next-steps}
+## Pasos siguientes {#next-steps}
 
 ¡¿Qué estás esperando?! Inicie el tutorial navegando hasta el [Configuración del proyecto](project-setup.md) y aprenda a generar un nuevo proyecto de Adobe Experience Manager con el tipo de archivo del proyecto AEM.

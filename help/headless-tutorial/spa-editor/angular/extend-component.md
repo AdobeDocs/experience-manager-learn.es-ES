@@ -1,7 +1,6 @@
 ---
 title: Ampliar un componente | Introducción al Editor de SPA de AEM y al Angular
 description: Obtenga información sobre cómo ampliar un componente principal existente para utilizarlo con el AEM SPA Editor. Comprender cómo añadir propiedades y contenido a un componente existente es una técnica eficaz para expandir las capacidades de una implementación AEM Editor SPA. Aprenda a utilizar el patrón de delegación para ampliar los modelos Sling y las funciones de fusión de recursos Sling.
-sub-product: sites
 feature: SPA Editor, Core Components
 doc-type: tutorial
 topics: development
@@ -14,7 +13,7 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 0265d3df-3de8-4a25-9611-ddf73d725f6e
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '1935'
 ht-degree: 2%
@@ -262,7 +261,7 @@ Vuelva al IDE de su elección y abra el `core` módulo.
 
    Estos métodos se exponen a través de la API del modelo JSON y se pasan al componente Angular.
 
-3. Abrir `CardImpl.java`. Esta es la implementación de `Card.java` interfaz. Esta implementación se ha atascado parcialmente para acelerar el tutorial.  Observe el uso de la variable `@Model` y `@Exporter` anotaciones para garantizar que el modelo de Sling se pueda serializar como JSON a través del exportador de modelos Sling.
+3. Abra `CardImpl.java`. Esta es la implementación de `Card.java` interfaz. Esta implementación se ha atascado parcialmente para acelerar el tutorial.  Observe el uso de la variable `@Model` y `@Exporter` anotaciones para garantizar que el modelo de Sling se pueda serializar como JSON a través del exportador de modelos Sling.
 
    `CardImpl.java` también utiliza la variable [Patrón de delegación para modelos Sling](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) para evitar reescribir la lógica del componente principal de imagen.
 

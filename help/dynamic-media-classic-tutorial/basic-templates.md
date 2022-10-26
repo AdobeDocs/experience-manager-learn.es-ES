@@ -1,7 +1,6 @@
 ---
 title: Introducción a las plantillas básicas
 description: Obtenga información sobre las plantillas básicas en Dynamic Media Classic, las plantillas basadas en imágenes llamadas desde el servidor de imágenes y que consisten en imágenes y texto procesado. Una plantilla se puede cambiar dinámicamente mediante la dirección URL después de publicar la plantilla. Aprenderá a cargar un PSD de Photoshop en Dynamic Media Classic para utilizarlo como base de una plantilla. Cree una plantilla básica de comercialización sencilla compuesta por capas de imagen. Añada capas de texto y haga que sean variables mediante el uso de parámetros. Construya una URL de plantilla y manipule la imagen de forma dinámica a través del explorador web.
-sub-product: dynamic-media
 feature: Dynamic Media Classic
 doc-type: tutorial
 topics: development, authoring, configuring
@@ -11,7 +10,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: d4e16b45-0095-44b4-8c16-89adc15e0cf9
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '6260'
 ht-degree: 0%

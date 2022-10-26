@@ -1,7 +1,6 @@
 ---
 title: Componente personalizado
 description: Abarca la creación de extremo a extremo de un componente de firma personalizado que muestra contenido creado. Incluye el desarrollo de un modelo de Sling para encapsular la lógica empresarial y rellenar el componente de firma y el HTL correspondiente para procesar el componente.
-sub-product: sites
 version: 6.5, Cloud Service
 type: Tutorial
 feature: Core Components, APIs
@@ -12,7 +11,7 @@ kt: 4072
 mini-toc-levels: 1
 thumbnail: 30181.jpg
 exl-id: f54f3dc9-6ec6-4e55-9043-7a006840c905
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '4131'
 ht-degree: 1%
@@ -458,7 +457,7 @@ Siempre que se realicen cambios en los archivos de este paquete, la variable [la
 
    ![Archivo Impl de firma](assets/custom-component/byline-impl-file.png)
 
-1. Abrir `BylineImpl.java`. Especifique que implementa el `Byline` interfaz. Utilice las funciones de autocompletar del IDE o actualice manualmente el archivo para incluir los métodos necesarios para implementar el `Byline` interfaz:
+1. Abra `BylineImpl.java`. Especifique que implementa el `Byline` interfaz. Utilice las funciones de autocompletar del IDE o actualice manualmente el archivo para incluir los métodos necesarios para implementar el `Byline` interfaz:
 
    ```java
    package com.adobe.aem.guides.wknd.core.models.impl;

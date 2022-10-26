@@ -1,7 +1,6 @@
 ---
 title: Introducción al Editor de SPA y Angular de AEM
 description: Cree la primera aplicación de una sola página (SPA) de Angular que se pueda editar en Adobe Experience Manager AEM con la SPA de WKND.
-sub-product: sites
 topics: development
 version: Cloud Service
 doc-type: tutorial
@@ -14,7 +13,7 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: f2cf4063-0b08-4b4f-91e6-70e5a148f931
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 18%
@@ -71,7 +70,7 @@ Se necesita un entorno de desarrollo local para completar este tutorial. Las cap
 >
 > **¿Es nuevo en AEM 6.5?** Consulte la [siguiente guía para configurar un entorno de desarrollo local](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=es).
 
-## Siguientes pasos {#next-steps}
+## Pasos siguientes {#next-steps}
 
 ¡¿Qué estás esperando?! Inicie el tutorial navegando hasta el [Proyecto del Editor SPA](create-project.md) y aprenda a generar un proyecto habilitado para Editor de SPA con el tipo de archivo del proyecto de AEM.
 

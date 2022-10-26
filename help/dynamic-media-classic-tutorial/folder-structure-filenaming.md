@@ -1,7 +1,6 @@
 ---
 title: Determine la estructura de carpetas y la convención de nombres de archivos
 description: La asignación de nombres a archivos es quizás la decisión más importante que debe tomar al implementar Dynamic Media Classic. La estructura de carpetas también es importante. Aprenda por qué es tan importante y posible adoptar enfoques para la estructura de carpetas y los nombres de archivos.
-sub-product: dynamic-media
 feature: Dynamic Media Classic
 doc-type: tutorial
 activity: develop
@@ -11,7 +10,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 15121896-9196-4ce0-aff2-9178563326b4
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '1207'
 ht-degree: 0%

@@ -1,7 +1,6 @@
 ---
 title: Integrar un SPA | Introducción al Editor de SPA de AEM y al Angular
 description: Comprender cómo se puede integrar el código fuente de una aplicación de una sola página (SPA) escrita en Angular con un proyecto de Adobe Experience Manager (AEM). Aprenda a utilizar herramientas front-end modernas, como la herramienta CLI del Angular, para desarrollar rápidamente la SPA contra la API del modelo JSON de AEM.
-sub-product: sites
 feature: SPA Editor
 topics: development
 doc-type: tutorial
@@ -14,7 +13,7 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: e9386885-86de-4e43-933c-2f0a2c04a2f2
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '2187'
 ht-degree: 0%
@@ -655,6 +654,6 @@ Felicidades, ha actualizado la SPA y explorado la integración con AEM! Ahora co
 
 Siempre puede ver el código terminado en [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/integrate-spa-solution) o desproteja el código localmente cambiando a la rama `Angular/integrate-spa-solution`.
 
-### Siguientes pasos {#next-steps}
+### Pasos siguientes {#next-steps}
 
 [Asignación de componentes de SPA a componentes de AEM](map-components.md) : Aprenda a asignar componentes de Angular a componentes de Adobe Experience Manager (AEM) con el SDK de JS de AEM Editor SPA. La asignación de componentes permite a los autores realizar actualizaciones dinámicas de los componentes de SPA dentro del AEM SPA Editor, de forma similar a la creación de AEM tradicional.

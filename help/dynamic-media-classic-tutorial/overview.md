@@ -1,7 +1,6 @@
 ---
 title: Tutorial de prácticas recomendadas de Dynamic Media Classic
-description: Dynamic Media Classic es el centro en el que los clientes crean, crean y distribuyen contenido multimedia enriquecido. Este tutorial de prácticas recomendadas se ha creado para ayudar a los usuarios actuales y nuevos de Dynamic Media Classic a comprender mejor qué pueden hacer con esta potente solución de medios enriquecidos desde Adobe. En esta parte del tutorial, aprenderá qué es Dynamic Media Classic y obtendrá una breve visión de sus funcionalidades principales y de la interfaz de usuario.
-sub-product: dynamic-media
+description: Dynamic Media Classic es el centro en el que los clientes crean, crean y distribuyen contenido multimedia enriquecido. Este tutorial de prácticas recomendadas se ha creado para ayudar a los usuarios actuales y nuevos de Dynamic Media Classic a comprender mejor qué pueden hacer con esta potente solución de medios enriquecidos desde Adobe. En esta parte del tutorial, aprenderá qué es Dynamic Media Classic y obtendrá una breve descripción de sus funciones principales y de la interfaz de usuario.
 doc-type: tutorial
 topics: best-practices, development, authoring, configuring
 audience: all
@@ -11,7 +10,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 975b85af-ca6a-419e-ab2a-6e1781bfee4a
-source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '885'
 ht-degree: 1%
@@ -51,7 +50,7 @@ Para descubrir funciones adicionales de la solución, visite [Documentación par
 
 La interfaz de usuario principal de Dynamic Media Classic consta de tres áreas principales: la barra de navegación global, la biblioteca de recursos y el panel Examinar/crear.
 
-![image](assets/overview/overview-dmc-ui-ew.png)
+![imagen](assets/overview/overview-dmc-ui-ew.png)
 
 _Interfaz de usuario de Dynamic Media Classic_
 
@@ -69,7 +68,7 @@ _Interfaz de usuario de Dynamic Media Classic_
 >
 >Junto a cada ID de recurso se encuentra la variable **Marcar para publicación** . Cuando el botón de alternancia está activado (verde), indica que el recurso está marcado para su publicación.
 
-![image](assets/overview/overview-mark-for-publish.png)
+![imagen](assets/overview/overview-mark-for-publish.png)
 
 >[!TIP]
 >

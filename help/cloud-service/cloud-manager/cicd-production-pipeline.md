@@ -1,7 +1,6 @@
 ---
 title: 'Uso de Adobe Cloud Manager: Canalización de producción de CI/CD'
 description: La canalización de producción de CI/CD se utiliza para crear e implementar código a través de Stage en el entorno de producción, lo que reduce el tiempo de respuesta. La configuración de la canalización de producción CI/CD define el déclencheur que iniciará la canalización, parámetros que controlan la implementación de producción y parámetros de prueba de rendimiento.
-sub-product: cloud-manager
 topics: Administration
 audience: administrator
 doc-type: feature video
@@ -13,10 +12,10 @@ topic: Architecture
 role: Architect, Developer, Admin
 level: Beginner
 exl-id: c4f5667a-0da2-490b-9d55-9fbde21db595
-source-git-commit: bca51ece7a9b249727b8746cc9654503059116fb
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '177'
-ht-degree: 2%
+ht-degree: 8%
 
 ---
 
@@ -27,7 +26,7 @@ ht-degree: 2%
 >title="Canalización de producción de CI/CD"
 >abstract="La configuración de la canalización de producción CI/CD define el déclencheur que iniciará la canalización, parámetros que controlan la implementación de producción y parámetros de prueba de rendimiento."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=en#deployment-process" text="Implementar el código"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=en#deployment-production-phase" text="Implementación en fase de producción"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=en#deployment-production-phase" text="Implementación en la fase de producción"
 
 ## Configuración
 

@@ -2,7 +2,6 @@
 title: Desarrollo con el sistema de estilos
 seo-title: Developing with the Style System
 description: Aprenda a implementar estilos individuales y a reutilizar componentes principales mediante el sistema de estilos de Experience Manager. Este tutorial trata el desarrollo del sistema de estilos para ampliar los componentes principales con CSS específica de la marca y las configuraciones de políticas avanzadas del Editor de plantillas.
-sub-product: sites
 version: 6.5, Cloud Service
 type: Tutorial
 feature: Core Components, Style System
@@ -13,10 +12,10 @@ kt: 4128
 mini-toc-levels: 1
 thumbnail: 30386.jpg
 exl-id: 5b490132-cddc-4024-92f1-e5c549afd6f1
-source-git-commit: df9ff5e6811d35118d1beee6baaffa51081cb3c3
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '1681'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -103,7 +102,7 @@ Añada una nueva política para los componentes Título para permitir que los au
 
 1. Cree una nueva directiva para el componente Título con los siguientes valores:
 
-   *Título de la política **: **Título WKND**
+   *Título de la política&#42;*: **Título WKND**
 
    *Propiedades* > *Pestaña Estilos* > *Agregar un nuevo estilo*
 
@@ -213,7 +212,7 @@ A continuación, añada una nueva política para los componentes Texto .
 
 1. Actualice la política del componente Texto con los siguientes valores:
 
-   *Título de la política **: **Texto de contenido**
+   *Título de la política&#42;*: **Texto de contenido**
 
    *Complementos* > *Estilos de párrafo* > *Habilitar estilos de párrafo*
 
@@ -342,7 +341,7 @@ En lugar de segmentar el `main` elemento HTML, el sistema de estilos se puede us
 
 Felicidades, la página de artículos está casi completamente diseñada y usted ganó experiencia práctica usando el sistema de estilos AEM.
 
-### Siguientes pasos {#next-steps}
+### Pasos siguientes {#next-steps}
 
 Conozca los pasos de principio a fin para crear un [componente AEM personalizado](custom-component.md) que muestra el contenido creado en un cuadro de diálogo y explora el desarrollo de un modelo de Sling para encapsular la lógica empresarial que rellena el HTL del componente.
 

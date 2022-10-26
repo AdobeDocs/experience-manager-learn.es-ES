@@ -1,7 +1,6 @@
 ---
 title: Crear un sitio | Creación rápida de sitios AEM
 description: Aprenda a utilizar el asistente para la creación de sitios para generar un nuevo sitio web. La plantilla de sitio estándar que proporciona el Adobe es un punto de partida para el nuevo sitio.
-sub-product: sites
 version: Cloud Service
 type: Tutorial
 topic: Content Management
@@ -11,10 +10,10 @@ level: Beginner
 kt: 7496
 thumbnail: KT-7496.jpg
 exl-id: 6d0fdc4d-d85f-4966-8f7d-d53506a7dd08
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '912'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -26,7 +25,7 @@ Como parte de la Creación rápida de sitios, utilice el Asistente para la creac
 
 Los pasos de este capítulo se llevarán a cabo en un entorno de Adobe Experience Manager as a Cloud Service. Asegúrese de tener acceso administrativo al entorno de AEM. Se recomienda utilizar un [Programa Sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/sandbox-programs/introduction-sandbox-programs.html) y [Entorno de desarrollo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html) al completar este tutorial.
 
-Consulte la [documentación de incorporación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html) para obtener más información.
+Consulte la [documentación de incorporación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=es) para obtener más información.
 
 ## Objetivo {#objective}
 
@@ -135,6 +134,6 @@ A continuación, genere un nuevo sitio utilizando la plantilla de sitio del ejer
 
 ¡Felicidades, acaba de crear su primer Sitio AEM!
 
-### Siguientes pasos {#next-steps}
+### Pasos siguientes {#next-steps}
 
 Utilice el editor de páginas de Adobe Experience Manager, AEM, para actualizar el contenido del sitio en la variable [Creación de contenido y publicación](author-content-publish.md) capítulo. Descubra cómo se pueden configurar los componentes atómicos para actualizar contenido. Comprenda la diferencia entre los entornos de AEM Author y Publish y aprenda a publicar actualizaciones en el sitio activo.

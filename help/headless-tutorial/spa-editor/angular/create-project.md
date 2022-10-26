@@ -1,7 +1,6 @@
 ---
 title: Proyecto del Editor SPA | Introducción al Editor de SPA de AEM y al Angular
 description: Aprenda a utilizar un proyecto de Adobe Experience Manager (AEM) Maven como punto de partida para una aplicación de Angular integrada con el AEM SPA Editor.
-sub-product: sites
 feature: SPA Editor, AEM Project Archetype
 topics: development
 version: Cloud Service
@@ -14,7 +13,7 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 49fcd603-ab1a-4f1e-ae1f-49d3ff373439
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '1097'
 ht-degree: 3%
@@ -78,7 +77,7 @@ Existen varias opciones para crear un proyecto de Maven Multi-module para AEM. E
 
 3. Se utilizaron las siguientes propiedades al generar el proyecto de AEM desde el [AEM tipo de archivo del proyecto](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype/releases/tag/aem-project-archetype-14):
 
-   | Propiedad | Value |
+   | Propiedad | Valor |
    |-----------------|---------------------------------------|
    | aemVersion | nube |
    | appTitle | WKND SPA Angular |
@@ -237,6 +236,6 @@ A continuación, compruebe que se trata de una aplicación de una sola página c
 
 Ahora es bastante sencillo pero en los próximos capítulos se añade más funcionalidad.
 
-### Siguientes pasos {#next-steps}
+### Pasos siguientes {#next-steps}
 
 [Integrar el SPA](integrate-spa.md) - Aprenda cómo el código fuente SPA está integrado con el proyecto AEM y comprenda las herramientas disponibles para desarrollar rápidamente el SPA.

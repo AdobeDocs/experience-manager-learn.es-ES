@@ -1,7 +1,6 @@
 ---
 title: Introducción a la creación y publicación | Creación rápida de sitios AEM
 description: Utilice el editor de páginas de Adobe Experience Manager, AEM, para actualizar el contenido del sitio web. Descubra cómo se utilizan los componentes para facilitar la creación. Comprenda la diferencia entre los entornos de AEM Author y Publish y aprenda a publicar cambios en el sitio activo.
-sub-product: sites
 version: Cloud Service
 type: Tutorial
 topic: Content Management
@@ -11,7 +10,7 @@ level: Beginner
 kt: 7497
 thumbnail: KT-7497.jpg
 exl-id: 17ca57d1-2b9a-409c-b083-398d38cd6a19
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '1330'
 ht-degree: 3%
@@ -116,7 +115,7 @@ A continuación, publicemos los cambios.
 
    Dado que este es un sitio completamente nuevo, queremos publicar todas las páginas y podemos usar el asistente Administrar publicación para definir exactamente lo que debe publicarse.
 
-1. En **Opciones** deje la configuración predeterminada en **Publicación** y programarlo para **Ahora**. Haga clic en **Siguiente**. 
+1. En **Opciones** deje la configuración predeterminada en **Publicación** y programarlo para **Ahora**. Haga clic en **Siguiente**.
 1. En **Ámbito**, seleccione **Sitio WKND** y haga clic en **Incluir configuración secundaria**. En el cuadro de diálogo, marque **Incluir elementos secundarios**. Anule la selección del resto de las casillas para asegurarse de que se publica todo el sitio.
 
    ![Actualizar ámbito de publicación](assets/author-content-publish/update-scope-publish.png)
@@ -169,7 +168,7 @@ A continuación, vaya al servicio Publicar para ver los cambios.
 
 ¡Felicidades, acaba de crear y publicar cambios en su Sitio AEM!
 
-### Siguientes pasos {#next-steps}
+### Pasos siguientes {#next-steps}
 
 En una implementación real, la planificación de un sitio con maquetas y diseños de interfaz de usuario suele preceder a la creación del sitio. Descubra cómo se pueden usar los kits de IU de Adobe XD para diseñar y acelerar la implementación de Adobe Experience Manager Sites en [Planificación de la interfaz de usuario con Adobe XD](./ui-planning-adobe-xd.md).
 

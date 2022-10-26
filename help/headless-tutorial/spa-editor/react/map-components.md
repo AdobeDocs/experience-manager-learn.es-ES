@@ -1,7 +1,6 @@
 ---
 title: Asignación de componentes de SPA a componentes de AEM | Introducción al AEM SPA Editor y React
 description: Obtenga información sobre cómo asignar componentes de React a componentes de Adobe Experience Manager (AEM) con el SDK de JS de AEM Editor SPA. La asignación de componentes permite a los usuarios realizar actualizaciones dinámicas de los componentes de SPA dentro del AEM SPA Editor, de forma similar a la creación de AEM tradicional. También aprenderá a utilizar fuera de la caja AEM React Core Components.
-sub-product: sites
 feature: SPA Editor
 topics: development
 version: Cloud Service
@@ -13,7 +12,7 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 497ce6d7-cd39-4fb3-b5e0-6c60845f7648
-source-git-commit: 09f6c4b0bec10edd306270a7416fcaff8a584e76
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '2257'
 ht-degree: 1%

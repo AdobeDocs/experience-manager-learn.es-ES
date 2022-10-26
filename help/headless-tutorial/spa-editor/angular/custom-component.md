@@ -1,7 +1,6 @@
 ---
 title: Crear un componente personalizado | Introducción al Editor de SPA de AEM y al Angular
 description: Obtenga información sobre cómo crear un componente personalizado para utilizarlo con el AEM SPA Editor. Aprenda a desarrollar cuadros de diálogo de autor y modelos de Sling para ampliar el modelo JSON y rellenar un componente personalizado.
-sub-product: sites
 feature: SPA Editor
 doc-type: tutorial
 topics: development
@@ -14,7 +13,7 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 6c1c7f2b-f574-458c-b744-b92419c46f23
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '1471'
 ht-degree: 3%
@@ -335,6 +334,6 @@ Felicitaciones, ha aprendido a crear un componente de AEM personalizado y a cóm
 
 Siempre puede ver el código terminado en [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/custom-component-solution) o extraer el código localmente cambiando a la rama `Angular/custom-component-solution`.
 
-### Siguientes pasos {#next-steps}
+### Pasos siguientes {#next-steps}
 
 [Ampliar un componente principal](extend-component.md) - Obtenga información sobre cómo ampliar un componente principal existente para utilizarlo con el AEM SPA Editor. Comprender cómo añadir propiedades y contenido a un componente existente es una técnica eficaz para expandir las capacidades de una implementación AEM Editor SPA.

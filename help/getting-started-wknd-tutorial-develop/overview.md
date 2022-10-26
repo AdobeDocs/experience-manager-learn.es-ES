@@ -1,7 +1,6 @@
 ---
 title: 'Introducción a AEM Sites: tutorial de WKND'
 description: Aprenda a implementar un sitio AEM para una marca ficticia de estilo de vida llamada WKND. Obtenga información detallada sobre los temas fundamentales del Experience Manager, como la configuración del proyecto, los arquetipos de maven, los componentes principales, las plantillas editables, las bibliotecas de cliente y el desarrollo de componentes.
-sub-product: sites
 topics: development
 version: Cloud Service
 activity: develop
@@ -16,7 +15,7 @@ role: Developer
 level: Beginner
 exl-id: 09a600f4-1ada-4fb7-ae44-586364cff389
 recommendations: disable
-source-git-commit: 72abe1cddcf6a012403887203d38509bde8f2d23
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 3%
@@ -68,6 +67,6 @@ Muchas de las imágenes del sitio web de referencia WKND son de [Adobe Stock](ht
 
 Con Adobe Stock, usted tiene acceso a más de 140 millones de imágenes de alta calidad, libres de derechos de autor, incluyendo fotos, gráficos, videos y plantillas para iniciar sus proyectos creativos.
 
-## Siguientes pasos {#next-steps}
+## Pasos siguientes {#next-steps}
 
 ¡¿Qué estás esperando?! Obtenga información sobre cómo [genere un nuevo proyecto de Adobe Experience Manager con el tipo de archivo AEM proyecto](./project-archetype/overview.md) o [crear un sitio con una plantilla de sitio](./site-template/create-site.md).

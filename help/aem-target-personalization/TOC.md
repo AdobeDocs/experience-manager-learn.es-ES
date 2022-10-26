@@ -2,11 +2,11 @@
 user-guide-title: Introducción a AEM y Adobe Target
 user-guide-description: Un tutorial completo que muestra cómo ofrecer experiencias personalizadas con Experience Manager y Target.
 product: experience manager
+sub-product: Experience Manager Sites
 version: 6.5
-sub-product: sites
 index: y
 kt: 2214
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '64'
 ht-degree: 46%

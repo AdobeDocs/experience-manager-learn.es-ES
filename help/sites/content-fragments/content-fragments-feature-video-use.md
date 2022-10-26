@@ -1,7 +1,6 @@
 ---
 title: Creación de fragmentos de contenido en AEM
 description: Los fragmentos de contenido son una abstracción de contenido en AEM que permite crear y administrar contenido basado en texto independientemente de los canales que admite.
-sub-product: content-services
 feature: Content Fragments
 topics: authoring, content-architecture
 audience: all
@@ -12,7 +11,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: d33c033a-9577-4d4e-99be-f3c7e2a4ce73
-source-git-commit: 9aae58c3301a7067baca374d6499f1afc3c95b06
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 9%
@@ -71,7 +70,7 @@ AEM fragmentos de contenido se pueden descargar desde AEM Author como archivo zi
 >
 > Las anotaciones y la comparación de versiones para fragmentos de contenido se introdujeron en [AEM 6.4 Service Pack 2](https://helpx.adobe.com/es/experience-manager/aem-releases-updates.html) y [AEM 6.3 Service Pack 3](https://helpx.adobe.com/es/experience-manager/6-3/release-notes/sp3-release-notes.html).
 
-## Siguientes pasos
+## Pasos siguientes
 
 Obtenga información sobre [envío de fragmentos de contenido](content-fragments-delivery-feature-video-use.md).
 
