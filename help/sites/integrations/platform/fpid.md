@@ -9,7 +9,7 @@ level: Beginner
 last-substantial-update: 2022-10-20T00:00:00Z
 kt: 11336
 thumbnail: kt-11336.jpeg
-source-git-commit: d1e105a4083b34e7a3f220a59d4608ef39d39032
+source-git-commit: aeeed85ec05de9538b78edee67db4d632cffaaab
 workflow-type: tm+mt
 source-wordcount: '1027'
 ht-degree: 0%
@@ -62,7 +62,9 @@ Cuando una solicitud HTTP llega al servlet, el servlet comprueba si existe una c
 + Si no existe una cookie FPID, genere una nueva cookie FPID y guarde el valor para escribir en la respuesta.
 
 A continuación, el servlet escribe el FPID en la respuesta como un objeto JSON en el formulario: `{ fpid: "<FPID VALUE>" }`.
+
 Es importante proporcionar el FPID al cliente en el cuerpo, ya que la cookie FPID está marcada `HttpOnly`, lo que significa que solo el servidor puede leer su valor y JavaScript del lado del cliente no puede.
+
 El valor FPID del cuerpo de respuesta se utiliza para parametrizar llamadas mediante el SDK web de Platform.
 
 A continuación se muestra un ejemplo de código de un extremo de servlet AEM (disponible mediante `HTTP GET /bin/aep/fpid`) que genera o actualiza una cookie FPID y devuelve el FPID como JSON.
