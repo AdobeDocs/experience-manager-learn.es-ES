@@ -15,16 +15,17 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 85e1b450-39c0-4bb8-be5d-d7f50b102f3d
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+last-substantial-update: 2020-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
 source-wordcount: '260'
-ht-degree: 1%
+ht-degree: 7%
 
 ---
 
 # Enviar A La Página De Agradecimiento {#submitting-to-thank-you-page}
 
-La opción Enviar a extremo REST pasa los datos rellenados en el formulario a una página de confirmación configurada como parte de la solicitud de GET HTTP. Puede añadir el nombre de los campos que desea solicitar. El formato de la solicitud es:
+La opción Enviar a extremo REST pasa los datos rellenados en el formulario a una página de confirmación configurada como parte de la solicitud de GET HTTP. Puede agregar el nombre de los campos que desea solicitar. El formato de la solicitud es el siguiente:
 
 \{fieldName\} = \{parameterName\}. Por ejemplo, el nombre del remitente es el nombre de un campo de formulario adaptable y el remitente es el nombre del parámetro. En la página de agradecimiento, puede acceder al parámetro de remitente utilizando request.getParameter(&quot;submitter&quot;) para obtener el valor del campo de nombre del remitente.
 

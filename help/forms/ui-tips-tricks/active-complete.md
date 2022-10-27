@@ -8,10 +8,12 @@ topic: Development
 role: Developer
 level: Beginner
 kt: 9359
-source-git-commit: bbb2c352e8a4297496f248bbbc86252ac7118999
+exl-id: f7c1f991-0486-4355-8502-cd5b038537e3
+last-substantial-update: 2019-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
 source-wordcount: '326'
-ht-degree: 15%
+ht-degree: 16%
 
 ---
 
@@ -47,7 +49,7 @@ Asegúrese de que está en el estado Activo y aplique estilo a las siguientes pr
 | Texto | Grosor de fuente | Negrita |
 | Texto | Color | #FFF |
 | Texto | Altura de la línea | 3 |
-| Texto | Alineación de texto | Izquierda |
+| Texto | Texto Alinear | Izquierda |
 | Fondo | Color | #056dae |
 
 Establezca el estilo de la imagen de fondo como se muestra en la captura de pantalla siguiente.
@@ -68,7 +70,7 @@ Asegúrese de que está en el estado visitado y aplique estilo a las siguientes 
 | Texto | Grosor de fuente | Negrita |
 | Texto | Color | #FFF |
 | Texto | Altura de la línea | 3 |
-| Texto | Alineación de texto | Izquierda |
+| Texto | Texto Alinear | Izquierda |
 | Fondo | Color | #056dae |
 
 Establezca el estilo de la imagen de fondo como se muestra en la captura de pantalla siguiente.

@@ -1,5 +1,5 @@
 ---
-title: 'Mostrar documento de registro en línea '
+title: Mostrar documento de registro en línea
 description: Combine los datos de formulario adaptables con la plantilla XDP y muestre el PDF en línea mediante la API de pdf incrustada de document cloud.
 version: 6.4,6.5
 feature: Forms Service
@@ -7,13 +7,14 @@ topic: Development
 role: Developer
 level: Experienced
 kt: 9411
-source-git-commit: 7f9a7951b2d9bb780d5374f17bb289c38b2e2ae7
+exl-id: 327ffe26-e88e-49f0-9f5a-63e2a92e1c8a
+last-substantial-update: 2021-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
 source-wordcount: '548'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
-
 
 # Mostrar DoR en línea
 

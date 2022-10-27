@@ -1,22 +1,23 @@
 ---
 title: Servicio de precarga en Forms adaptable
 description: Rellenar previamente formularios adaptables recuperando datos de orígenes de datos back-end.
-feature: Formularios adaptables
+feature: Adaptive Forms
 version: 6.4,6.5
-topic: Desarrollo
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: f2c324a3-cbfa-4942-b3bd-dc47d8a3f7b5
+last-substantial-update: 2019-06-09T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '465'
-ht-degree: 1%
+source-wordcount: '462'
+ht-degree: 3%
 
 ---
 
-
 # Uso del servicio Prefill en Forms adaptable
 
-Puede rellenar previamente los campos de un formulario adaptable utilizando los datos existentes. Cuando un usuario abre un formulario, los valores de esos campos se rellenan previamente. Existen varias formas de rellenar previamente los campos de formularios adaptables. En este artículo, analizaremos el prefiriendo formularios adaptables con el servicio de prellenado de AEM Forms.
+Puede rellenar previamente los campos de un formulario adaptable utilizando los datos existentes. Cuando un usuario abre un formulario, los valores de esos campos están rellenos previamente. Existen varias formas de rellenar previamente los campos de formularios adaptables. En este artículo, analizaremos el prefiriendo formularios adaptables con el servicio de prellenado de AEM Forms.
 
 Para obtener más información sobre los distintos métodos para rellenar previamente formularios adaptables, [siga esta documentación](https://helpx.adobe.com/experience-manager/6-4/forms/using/prepopulate-adaptive-form-fields.html#AEMFormsprefillservice)
 
@@ -81,8 +82,8 @@ public class PrefillAdaptiveForm implements DataProvider {
 Para probar esta capacidad en el servidor, realice lo siguiente
 
 * [Descargue y extraiga el contenido del archivo zip en su equipo](assets/prefillservice.zip)
-* Asegúrese de que la información del perfil del usuario [usuario](http://localhost:4502/libs/granite/security/content/useradmin) que ha iniciado sesión se rellena por completo. Este es un requisito para que funcione la muestra. El ejemplo no tiene ninguna comprobación de errores para comprobar si faltan propiedades de perfil de usuario.
-* Implemente el paquete utilizando la [AEM consola web](http://localhost:4502/system/console/bundles)
+* Asegúrese de que ha iniciado sesión [perfil del usuario](http://localhost:4502/libs/granite/security/content/useradmin) la información se rellena por completo. Este es un requisito para que funcione la muestra. El ejemplo no tiene ninguna comprobación de errores para comprobar si faltan propiedades de perfil de usuario.
+* Implemente el paquete utilizando la variable [consola web AEM](http://localhost:4502/system/console/bundles)
 * Creación de formularios adaptables mediante el XSD
 * Asocie &quot;Servicio de prerellenado de formularios personalizados de Aem&quot; como servicio de precumplimentación del formulario adaptable
 * Arrastrar y soltar elementos de esquema en el formulario
@@ -92,5 +93,4 @@ Para probar esta capacidad en el servidor, realice lo siguiente
 >
 >Si el formulario adaptable se basa en XSD, asegúrese de que el documento XML devuelto por el servicio de rellenado previo coincide con el XSD en el que se basa el formulario adaptable.
 >
->Si el formulario adaptable no se basa en XSD, tendrá que enlazar manualmente los campos. Por ejemplo, para enlazar un campo de formulario adaptable al elemento fname en los datos XML, utilice `/data/fname` en la referencia Enlace del campo de formulario adaptable.
-
+>Si el formulario adaptable no se basa en XSD, tendrá que enlazar manualmente los campos. Por ejemplo, para enlazar un campo de formulario adaptable al elemento fname en los datos XML que utilizará `/data/fname`  en la referencia de enlace del campo de formulario adaptable.

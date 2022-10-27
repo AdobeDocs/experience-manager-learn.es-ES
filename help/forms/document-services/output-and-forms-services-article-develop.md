@@ -7,7 +7,8 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: d268d5d6-f24f-4db9-b8e0-07dd769c6005
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+last-substantial-update: 2020-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 1%
@@ -81,7 +82,7 @@ El paquete contiene 3 muestras. En los párrafos siguientes se explica cuándo u
 
 ### Importar datos en archivo PDF
 
-* Utilice FormsService para importar datos en un archivo de PDF
+* Usar FormsService para importar datos en un archivo de PDF
 * **URL del POST** - http://localhost:4502/content/AemFormsSamples/mergedata.html
 * **Parámetros de solicitud:**
 

@@ -8,10 +8,11 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: c2c55406-6da6-42be-bcc0-f34426b3291a
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+last-substantial-update: 2021-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
 source-wordcount: '598'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -49,7 +50,7 @@ Para integrar AEM/AEM Forms con aplicaciones de terceros, necesitamos [crear fue
 
 ## Crear modelo de datos de formulario
 
-La integración de datos de AEM Forms proporciona una interfaz de usuario intuitiva para crear y trabajar con [modelos de datos de formulario](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html). Un modelo de datos de formulario se basa en fuentes de datos para el intercambio de datos.
+La integración de datos de AEM Forms proporciona una interfaz de usuario intuitiva para crear y trabajar con [modelos de datos de formulario](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=es). Un modelo de datos de formulario se basa en fuentes de datos para el intercambio de datos.
 El modelo de datos de formulario completado se puede [descargado desde aquí](assets/sms-2fa-fdm.zip)
 
 ![fdm](assets/2FA-fdm.PNG)

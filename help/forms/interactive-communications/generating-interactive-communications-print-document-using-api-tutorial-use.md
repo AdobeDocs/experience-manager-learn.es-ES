@@ -1,8 +1,8 @@
 ---
 title: Generación de documentos de comunicaciones interactivas para el canal de impresión mediante el mecanismo de carpeta de inspección
-seo-title: Generación de documentos de comunicaciones interactivas para el canal de impresión mediante el mecanismo de carpeta de inspección
+seo-title: Generating Interactive Communications Document for print channel using watch folder mechanism
 description: Usar una carpeta vigilada para generar documentos de canal de impresión
-seo-description: Usar una carpeta vigilada para generar documentos de canal de impresión
+seo-description: Use watched folder to generate print channel documents
 feature: Interactive Communication
 topics: development
 audience: developer
@@ -12,14 +12,14 @@ version: 6.4,6.5
 topic: Development
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: f5ab4801-cde5-426d-bfe4-ce0a985e25e8
+last-substantial-update: 2019-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '463'
 ht-degree: 1%
 
 ---
-
 
 # Generación de documentos de comunicaciones interactivas para el canal de impresión mediante el mecanismo de carpeta de inspección
 
@@ -113,13 +113,13 @@ resourceResolverHelper.callWith(resourceResolver, {call: function()
 
 **Para probar esto en su sistema local, siga las siguientes instrucciones:**
 
-* Configure Tomcat tal como se describe en este [artículo.](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md) Tomcat tiene el archivo war que genera los datos de muestra.
-* Configure el usuario del sistema del alias de servicio como se describe en este [artículo](/help/forms/adaptive-forms/service-user-tutorial-develop.md).
-Asegúrese de que este usuario del sistema tenga permisos de lectura en el siguiente nodo. Para dar los permisos de inicio de sesión a [user admin](https://localhost:4502/useradmin) y buscar los &quot;datos&quot; del usuario del sistema y conceder los permisos de lectura en el siguiente nodo mediante el tabulador a la pestaña permisos
+* Configure Tomcat tal como se describe en esta [artículo.](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md) Tomcat tiene el archivo war que genera los datos de muestra.
+* Configure el usuario del sistema de servicio aka como se describe en esta [article](/help/forms/adaptive-forms/service-user-tutorial-develop.md).
+Asegúrese de que este usuario del sistema tenga permisos de lectura en el siguiente nodo. Para conceder el inicio de sesión de permisos a [administrador de usuarios](https://localhost:4502/useradmin) y busque el usuario del sistema &quot;data&quot; y asigne los permisos de lectura en el siguiente nodo mediante el tabulador a la pestaña permisos
    * /content/dam/formsanddocuments
    * /content/dam/formsanddocuments-fdm
    * /content/forms/af
-* Importe los siguientes paquetes en AEM mediante el administrador de paquetes. Este paquete contiene lo siguiente:
+* Importe los siguientes paquetes en AEM con el administrador de paquetes. Este paquete contiene lo siguiente:
 
 
 * [Ejemplo de documento de comunicaciones interactivas](assets/retirementstatementprint.zip)
@@ -153,4 +153,3 @@ Asegúrese de que este usuario del sistema tenga permisos de lectura en el sigui
 >Si planea usar esto en un sistema operativo que no sea de Windows, navegue hasta
 >
 >/etc/fd/watchfolder /config/PrintChannelDocument y cambie folderPath según sus preferencias
-

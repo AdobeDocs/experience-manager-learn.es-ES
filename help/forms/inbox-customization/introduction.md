@@ -12,18 +12,19 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 3e1d86ab-e0c4-45d4-b998-75a44a7e4a3f
-source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
+last-substantial-update: 2020-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
 source-wordcount: '201'
-ht-degree: 4%
+ht-degree: 29%
 
 ---
 
 # Bandeja de entrada AEM
 
-AEM Bandeja de entrada consolida las notificaciones y tareas de varios componentes de AEM, incluidos los flujos de trabajo de Forms. Cuando se activa un flujo de trabajo de formularios que contiene un paso Asignar tarea , la aplicación asociada aparece como una tarea en la bandeja de entrada del usuario asignado.
+AEM Bandeja de entrada consolida las notificaciones y tareas de varios componentes de AEM, incluidos los flujos de trabajo de Forms. Cuando se activa un flujo de trabajo de Forms que contiene una Etapa de tarea de asignación, la aplicación asociada aparece como una tarea en la bandeja de entrada del usuario asignado.
 
-La interfaz de usuario de la Bandeja de entrada proporciona vistas de lista y calendario para ver las tareas. También puede configurar la configuración de vista. Puede filtrar tareas en función de varios parámetros.
+La interfaz de usuario de la bandeja de entrada ofrece vistas de lista y calendario para ver las tareas. También puede configurar la configuración de vista. Puede filtrar las tareas en función de varios parámetros.
 
 Puede personalizar la bandeja de entrada de un Experience Manager para cambiar el título predeterminado de una columna, reordenar la posición de una columna y mostrar columnas adicionales basadas en los datos de un flujo de trabajo.
 

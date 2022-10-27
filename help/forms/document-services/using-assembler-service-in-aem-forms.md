@@ -1,18 +1,19 @@
 ---
 title: Uso del servicio Assembler en AEM Forms
 description: Uso del servicio Assembler en AEM Forms para ensamblar varios archivos pdf
-feature: Ensamblador
+feature: Assembler
 version: 6.4,6.5
-topic: Desarrollo
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 18da12ea-b1ea-48e4-979e-3cb59584dfbd
+last-substantial-update: 2020-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 3%
+source-wordcount: '207'
+ht-degree: 2%
 
 ---
-
 
 # Uso del servicio Assembler en AEM Forms{#using-assembler-service-in-aem-forms}
 
@@ -101,32 +102,25 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 
 Para que esta capacidad funcione en el servidor AEM
 
-* Descargue el archivo [AssembleMultipleFiles.zip](assets/assemble-multiple-files.zip) en su sistema local.
-* Cargue e instale el paquete utilizando el [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
+* Descargue el [AssembleMultipleFiles.zip](assets/assemble-multiple-files.zip) al sistema local.
+* Cargue e instale el paquete mediante el [gestor de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
 * Descargar[Paquete de servicios de documentos personalizados](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 * Descargar [Desarrollo con Service User Bundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-* Implemente e inicie los paquetes utilizando la consola web [felix](http://localhost:4502/system/console/bundles)
-* Apunte el navegador a [AssemblePdfs.html](http://localhost:4502/content/DocumentServices/AssemblePdfs.html)
-* Arrastrar y soltar un par de archivos PDF
+* Implemente e inicie los paquetes utilizando la variable [consola web felix](http://localhost:4502/system/console/bundles)
+* Especifique el explorador para [EnsamblarPdfs.html](http://localhost:4502/content/DocumentServices/AssemblePdfs.html)
+* Arrastre y suelte un par de archivos de PDF
 
 >[!NOTE]
 >
 >Asegúrese de que la instalación de AEM Forms se haya completado. Todos sus paquetes deben estar en estado activo.
 >
->Asegúrese de que ha agregado las bibliotecas RSA y BouncyCastle delegadas de arranque, tal como se menciona en esta [Instalación de AEM Forms](https://helpx.adobe.com/aem-forms/6-3/installing-configuring-aem-forms-osgi.html)
+>Asegúrese de haber agregado las bibliotecas RSA y BouncyCastle delegadas de arranque, tal como se menciona en esta [Instalación de AEM Forms](https://helpx.adobe.com/aem-forms/6-3/installing-configuring-aem-forms-osgi.html)
 >
 >**Advertencias para esta demostración**
 >
-> * El código no gestiona documentos PDF basados en XFA
-   >
-   > 
-* Asegúrese de arrastrar y soltar solo archivos PDF
+> * El código no gestiona documentos de PDF basados en XFA
+>
+> * Asegúrese de arrastrar y soltar solo archivos PDF
 >
 >
-
-
-
-
-
-
 

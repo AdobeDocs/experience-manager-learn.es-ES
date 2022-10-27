@@ -7,7 +7,8 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: 7e5dcc6e-fe56-49af-97e3-7dfaa9c8738f
-source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
+last-substantial-update: 2019-06-09T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
 source-wordcount: '204'
 ht-degree: 0%
@@ -42,12 +43,13 @@ Adición y uso de un CAPTCHA con AEM Adaptive Forms.
 >
 >* &lt;author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle20/data
 * Copiar los archivos HMAC y maestro
+>
 Abra el [consola web felix](http://localhost:4502/system/console/bundles) en la instancia de publicación. Busque el paquete com.adobe.granite.crypto.file . Tenga en cuenta el ID del paquete
 Vaya al ID del paquete en el sistema de archivos de la instancia de publicación
 * &lt;publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle20/data
 * elimine los archivos HMAC y maestro existentes.
 * pegar los archivos HMAC y maestro copiados de la instancia de autor
-
+>
 Reinicie el servidor de publicación de AEM
 
 ## Materiales de apoyo {#supporting-materials}

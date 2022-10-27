@@ -10,7 +10,8 @@ version: 6.4,6.5
 topic: Development
 role: Developer
 level: Beginner
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+last-substantial-update: 2021-06-09T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
 source-wordcount: '820'
 ht-degree: 2%
@@ -76,7 +77,7 @@ Para crear su primer proyecto de maven, siga los siguientes pasos:
 
 El proyecto Maven se genera de forma interactiva y se le pide que proporcione valores a una serie de propiedades, como
 
-| Nombre de propiedad | Importancia | Value |
+| Nombre de propiedad | Importancia | Valor |
 |------------------------|---------------------------------------|---------------------|
 | groupId | groupId identifica de forma exclusiva el proyecto en todos los proyectos | com.learningaemforms.adobe |
 | appsFolderName | Nombre de la carpeta que contiene la estructura del proyecto | aprendizaje de aemforms |

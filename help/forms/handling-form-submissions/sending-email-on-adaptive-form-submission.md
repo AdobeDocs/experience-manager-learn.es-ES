@@ -1,8 +1,8 @@
 ---
 title: Envío de correo electrónico en envío de formulario adaptable
-seo-title: Envío de correo electrónico en envío de formulario adaptable
+seo-title: Sending Email on Adaptive Form Submission
 description: Enviar correo electrónico de confirmación sobre el envío de formulario adaptable mediante el componente de envío de correo electrónico
-seo-description: Enviar correo electrónico de confirmación sobre el envío de formulario adaptable mediante el componente de envío de correo electrónico
+seo-description: Send confirmation email on adaptive form submission using the send email component
 uuid: 6c9549ba-cb56-4d69-902c-45272a8fd17e
 feature: Adaptive Forms
 topics: authoring, integrations
@@ -13,14 +13,14 @@ discoiquuid: 1187357f-2f36-4a04-b708-44bb9c174fb5
 topic: Development
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 19c5aeec-2893-4ada-b6df-b80c4be2468a
+last-substantial-update: 2020-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 1%
+source-wordcount: '214'
+ht-degree: 3%
 
 ---
-
 
 # Envío de correo electrónico en envío de formulario adaptable {#sending-email-on-adaptive-form-submission}
 
@@ -36,7 +36,7 @@ Cuando se envía el formulario adaptable, el destinatario recibe un correo elect
 
 ## Configuraciones necesarias {#configurations-needed}
 
-Tendrá que configurar el servicio Day CQ Mail. Esto se puede configurar apuntando su navegador a [Felix Configuration Manager](http://localhost:4502/system/console/configMgr)
+Tendrá que configurar el servicio Day CQ Mail. Esto se puede configurar señalando el navegador a [Administrador de configuración de Felix](http://localhost:4502/system/console/configMgr)
 
 La captura de pantalla muestra las propiedades de configuración del servidor de correo de adobe.
 
@@ -44,10 +44,10 @@ La captura de pantalla muestra las propiedades de configuración del servidor de
 
 Para probar esto en su servidor, siga estas instrucciones:
 
-* [Importe los ](assets/timeoffrequest.zip) recursos asociados a este artículo en AEM mediante el administrador de paquetes.
+* [Importación de recursos](assets/timeoffrequest.zip) asociado con este artículo en AEM usando el administrador de paquetes.
 
-* Abra [TimeOffRequestForm](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled).
+* Abra el [TimeOffRequestForm](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled).
 
 * Rellene los detalles. Asegúrese de proporcionar una dirección de correo electrónico válida en el campo de correo electrónico.
 
-* Envíe el formulario.
+* Enviar el formulario.

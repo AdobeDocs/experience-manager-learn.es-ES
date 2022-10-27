@@ -15,22 +15,23 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 5363c3f7-9006-4430-b647-f3283a366a64
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+last-substantial-update: 2020-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
 source-wordcount: '346'
-ht-degree: 0%
+ht-degree: 12%
 
 ---
 
 # Envío del formulario adaptable al servidor externo {#submitting-adaptive-form-to-external-server}
 
-Utilice la acción Enviar a extremo REST para publicar los datos enviados en una URL de REST. La URL puede ser de un servidor interno (el servidor en el que se representa el formulario) o externo.
+Utilice la acción Enviar a extremo REST para publicar los datos enviados en una URL de REST. La URL puede ser de un servidor interno (el servidor en el que se procesa el formulario) o externo.
 
 Normalmente, los clientes desean enviar los datos del formulario a un servidor externo para un procesamiento posterior.
 
 Para enviar datos a un servidor interno, proporcione una ruta del recurso. Los datos se publican en la ruta del recurso. Por ejemplo, &lt;/content restendpoint=&quot;&quot;> . Para esas solicitudes posteriores se utiliza la información de autenticación de la solicitud de envío.
 
-Para enviar datos a un servidor externo, proporcione una URL. El formato de la dirección URL es <http://host:port/path_to_rest_end_point>. Asegúrese de haber configurado la ruta para gestionar la solicitud del POST de forma anónima.
+Para enviar datos a un servidor externo, proporcione una URL. El formato de la URL es el siguiente <http://host:port/path_to_rest_end_point>. Asegúrese de haber configurado la ruta para gestionar la solicitud del POST de forma anónima.
 
 A los efectos de este artículo, he escrito un simple archivo war que puede ser desplegado en su instancia de tomcat. Suponiendo que el tomcat se esté ejecutando en el puerto 8080, la dirección URL del POST se va a
 

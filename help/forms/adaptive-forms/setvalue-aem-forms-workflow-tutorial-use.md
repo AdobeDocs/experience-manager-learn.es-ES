@@ -1,17 +1,18 @@
 ---
 title: Uso de setvalue en el flujo de trabajo de AEM Forms
 description: Establecer el valor del elemento en los datos enviados por Forms adaptable en AEM Forms OSGI
-feature: Formularios adaptables
-topic: Desarrollo
+feature: Adaptive Forms
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 3919efee-6998-48e8-85d7-91b6943d23f9
+last-substantial-update: 2020-01-09T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 1%
+source-wordcount: '528'
+ht-degree: 0%
 
 ---
-
 
 # Uso de setvalue en el flujo de trabajo de AEM Forms
 
@@ -38,18 +39,18 @@ Para implementar los recursos en el sistema local, siga los pasos a continuació
 
 * [Implementar el paquete de usuario Desarrollo con servicio](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-* [Implemente el paquete de muestra](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Este es el paquete OSGI personalizado que le permite establecer los valores de un elemento en los datos xml enviados
+* [Implementar el paquete de muestra](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Este es el paquete OSGI personalizado que le permite establecer los valores de un elemento en los datos xml enviados
 
 * [Descargue y extraiga el contenido del archivo zip](assets/setvalueassets.zip)
-* Apunte el navegador al [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
+* Especifique el explorador para [gestor de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
 * Importe e instale setValueWorkflow.zip. Este tiene el modelo de flujo de trabajo de ejemplo.
-* Apunte el navegador a [Forms y Documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Especifique el explorador para [Forms y documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Haga clic en Crear | Carga de archivo
 * Cargue TimeOfRequestForm.zip
-* Abra [TimeOffRequestform](http://localhost:4502/content/dam/formsanddocuments/timeoffapplication/jcr:content?wcmmode=disabled)
+* Abra el [TimeOffRequestform](http://localhost:4502/content/dam/formsanddocuments/timeoffapplication/jcr:content?wcmmode=disabled)
 * Rellene los 3 campos obligatorios y envíe
 * Inicie sesión como &quot;admin&quot; en AEM(si aún no lo ha hecho)
-* Vaya a [&quot;AEM bandeja de entrada&quot;](http://localhost:4502/aem/inbox)
+* Vaya a [&quot;Bandeja de entrada AEM&quot;](http://localhost:4502/aem/inbox)
 * Abra el formulario &quot;Solicitud de tiempo de espera de revisión&quot;.
 * Observe que los campos del primer panel están desactivados. Esto se debe a que el revisor está abriendo el formulario. Además, observe que el panel para aprobar o rechazar la solicitud ya está visible
 

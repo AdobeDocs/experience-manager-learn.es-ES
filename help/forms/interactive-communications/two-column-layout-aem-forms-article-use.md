@@ -1,8 +1,8 @@
 ---
 title: Creación de dos diseños de columna para documentos de canal de impresión
-seo-title: Creación de dos diseños de columna para documentos de canal de impresión
+seo-title: Creating two column layouts for print channel documents
 description: Creación de dos diseños de columna para el documento de canal de impresión
-seo-description: Creación de dos diseños de columna para el documento de canal de impresión
+seo-description: Create 2 column layouts for print channel document
 feature: Interactive Communication
 topics: development
 audience: developer
@@ -12,20 +12,20 @@ version: 6.4,6.5
 topic: Development
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 416e3401-ba9f-4da3-8b07-2d39f9128571
+last-substantial-update: 2019-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 2%
+source-wordcount: '223'
+ht-degree: 0%
 
 ---
-
 
 # Dos diseños de columna en el documento de canal de impresión
 
 Este breve artículo resaltará los pasos necesarios para crear un diseño de dos columnas en el canal de impresión. El caso de uso es generar 2 documentos de página con la página 1 con 2 columnas de diseño y la página 2 con el diseño estándar de 1 columna.
 
-A continuación se indican los pasos de alto nivel necesarios para crear diseños de dos columnas con AEM Forms Designer.
+A continuación se indican los pasos de alto nivel necesarios para crear dos diseños de columna con AEM Forms Designer.
 
 * Crear 2 áreas de contenido en la página 1 página de formato
 * Asigne a las dos áreas de contenido el nombre &quot;columna izquierda&quot; y &quot;columna derecha&quot;.

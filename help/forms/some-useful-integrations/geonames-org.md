@@ -8,10 +8,11 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: f1f2cacc-9ec4-46d6-a6af-dac3f663de78
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+last-substantial-update: 2021-02-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
 source-wordcount: '606'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -59,7 +60,7 @@ Deberá crear 2 fuentes de datos (una para recuperar todos los países y otra pa
 
 ## Crear modelo de datos de formulario
 
-La integración de datos de AEM Forms proporciona una interfaz de usuario intuitiva para crear y trabajar con [modelos de datos de formulario](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html). Base el modelo de datos de formulario en los orígenes de datos creados en el paso anterior. Modelo de datos de formulario con 2 fuentes de datos
+La integración de datos de AEM Forms proporciona una interfaz de usuario intuitiva para crear y trabajar con [modelos de datos de formulario](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=es). Base el modelo de datos de formulario en los orígenes de datos creados en el paso anterior. Modelo de datos de formulario con 2 fuentes de datos
 
 ![fdm](assets/geonames-fdm.png)
 

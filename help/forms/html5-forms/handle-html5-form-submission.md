@@ -1,6 +1,6 @@
 ---
-title: Gestión del envío de formularios HTML5
-description: Creación del controlador de envío de formularios HTML5
+title: Gestión del envío de formulario del HTML 5
+description: Creación de un controlador de envío de formulario de HTML5
 feature: Mobile Forms
 topics: development
 audience: developer
@@ -9,26 +9,27 @@ activity: implement
 version: 6.4,6.5
 kt: 5269
 thumbnail: kt-5269.jpg
-topic: Desarrollo
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 93e1262b-0e93-4ba8-aafc-f9c517688ce9
+last-substantial-update: 2020-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 2%
+source-wordcount: '275'
+ht-degree: 3%
 
 ---
 
+# Gestión del envío de formulario del HTML 5
 
-# Gestión del envío de formularios HTML5
-
-Los formularios HTML5 se pueden enviar al servlet alojado en AEM. Se puede acceder a los datos enviados en el servlet como flujo de entrada. Para enviar el formulario HTML5, debe agregar &quot;Botón Enviar HTTP&quot; en la plantilla de formulario con AEM Forms Designer
+Los formularios de HTML5 se pueden enviar al servlet alojado en AEM. Se puede acceder a los datos enviados en el servlet como flujo de entrada. Para enviar el formulario de HTML5, debe agregar &quot;Botón Enviar HTTP&quot; en la plantilla de formulario con AEM Forms Designer
 
 ## Creación del controlador de envío
 
-Se puede crear un servlet simple para gestionar el envío de formularios HTML5. Los datos enviados se pueden extraer utilizando el siguiente código. Este [servlet](assets/html5-submit-handler.zip) está disponible como parte de este tutorial. Instale el [servlet](assets/html5-submit-handler.zip) utilizando el [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
+Se puede crear un servlet simple para gestionar el envío del formulario de HTML5. Los datos enviados se pueden extraer utilizando el siguiente código. Esta [servlet](assets/html5-submit-handler.zip) está disponible como parte de este tutorial. Instale el [servlet](assets/html5-submit-handler.zip) using [gestor de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
 
-El código de la línea 9 puede utilizarse para invocar el proceso J2EE. Asegúrese de haber configurado la [configuración del SDK del cliente de LiveCycle de Adobe](https://helpx.adobe.com/aem-forms/6/submit-form-data-livecycle-process.html) si desea utilizar el código para invocar el proceso J2EE.
+El código de la línea 9 puede utilizarse para invocar el proceso J2EE. Asegúrese de que ha configurado [Configuración del SDK de cliente de LiveCycle de Adobe](https://helpx.adobe.com/aem-forms/6/submit-form-data-livecycle-process.html) si tiene intención de utilizar el código para invocar el proceso J2EE.
 
 ```java
 StringBuffer stringBuffer = new StringBuffer();
@@ -58,18 +59,18 @@ System.out.println("The submitted form data is " + stringBuffer.toString());
 ```
 
 
-## Configuración de la URL de envío del formulario HTML5
+## Configuración de la URL de envío del formulario de HTML5
 
 ![submit-url](assets/submit-url.PNG)
 
-* Pulse en el xdp y haga clic en _Propiedades_->_Avanzadas_
+* Toque en el xdp y haga clic en _Propiedades_->_Avanzadas_
 * copie http://localhost:4502/content/AemFormsSamples/handlehml5formsubmission.html y péguelo en el campo de texto Enviar URL
-* Haga clic en el botón _SaveAndClose_.
+* Haga clic en _SaveAndClose_ botón.
 
 ### Agregar entrada en Excluir rutas
 
 * Vaya a [configMgr](http://localhost:4502/system/console/configMgr).
-* Buscar _Adobe Granite CSRF Filter_
+* Buscar _Filtro Adobe Granite CSRF_
 * Agregue la siguiente entrada en la sección Rutas excluidas
 * _/content/AemFormsSamples/handlehml5formsubmit_
 * Guarde los cambios
@@ -83,8 +84,4 @@ System.out.println("The submitted form data is " + stringBuffer.toString());
 
 ### Lectura adicional
 
-También se recomienda este [artículo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/generate-pdf-from-mobile-form-submission-article.html) sobre la generación de PDF a partir del envío de formularios HTML5.
-
-
-
-
+Esta [article](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/generate-pdf-from-mobile-form-submission-article.html) también se recomienda generar un PDF a partir del envío de formularios de HTML5.
