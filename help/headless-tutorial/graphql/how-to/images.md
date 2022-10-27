@@ -9,10 +9,10 @@ level: Intermediate
 kt: 10253
 thumbnail: KT-10253.jpeg
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
-source-git-commit: 129dedd4cd6973d5d576bed5f714ce62152923de
+source-git-commit: 3a7c04dfe465c1eff29ba6b4e4b7e24f047e5b42
 workflow-type: tm+mt
-source-wordcount: '1173'
-ht-degree: 2%
+source-wordcount: '1182'
+ht-degree: 1%
 
 ---
 
@@ -116,31 +116,31 @@ Los administradores de AEM Assets definen las representaciones personalizadas me
 
 #### Perfiles de procesamiento
 
-Las especificaciones de representación de recursos se definen en [Perfiles de procesamiento](../../../assets/configuring//processing-profiles.md) por administradores de AEM Assets.
+Las especificaciones de representación de recursos se definen en [Perfiles de procesamiento](../../../assets/configuring/processing-profiles.md) por administradores de AEM Assets.
 
 Cree o actualice un perfil de procesamiento y agregue definiciones de representación para los tamaños de imagen necesarios para la aplicación sin encabezado. A las representaciones se les puede asignar cualquier nombre, pero se les debe asignar un nombre semántico.
 
-![AEM representaciones optimizadas sin encabezado](./assets/images/processing-profiles.jpg)
+![AEM representaciones optimizadas sin encabezado](./assets/images/processing-profiles.png)
 
 En este ejemplo se crean tres representaciones:
 
 | Nombre de representación | Extensión | Anchura máxima |
-|----------------|:---------:|----------:|
-| grande | jpeg | 1200px |
-| Media | jpeg | 900px |
-| pequeño | jpeg | 600px |
+|-----------------------|:---------:|----------:|
+| web-optimized-large | webp | 1200px |
+| web-optimized-medium | webp | 900px |
+| web-optimized-small | webp | 600px |
 
 Los atributos que se señalan en la tabla anterior son importantes:
 
 + __Nombre de representación__ se utiliza para solicitar la representación.
-+ __Extensión__ es la extensión utilizada para solicitar la variable __nombre de representación__.
++ __Extensión__ es la extensión utilizada para solicitar la variable __nombre de representación__. Preferir `webp` las representaciones, ya que están optimizadas para su publicación en la web.
 + __Anchura máxima__ se utiliza para informar al desarrollador de qué variante de representación debe utilizarse en función de su uso en la aplicación sin encabezado.
 
 Las definiciones de representación dependen de las necesidades de su aplicación sin encabezado, por lo que asegúrese de definir el conjunto de representación óptimo para su caso de uso y se les asigna un nombre semántico con respecto a cómo se utilizan.
 
 #### Volver a procesar recursos{#reprocess-assets}
 
-Con el perfil de procesamiento creado (o actualizado), reprocese los recursos para generar las nuevas representaciones definidas en el perfil de procesamiento. Las nuevas representaciones no existirán hasta que los recursos se procesen con el perfil de procesamiento.
+Con el perfil de procesamiento creado (o actualizado), reprocese los recursos para generar las nuevas representaciones definidas en el perfil de procesamiento. Las nuevas representaciones no existen hasta que los recursos se procesen con el perfil de procesamiento.
 
 + Preferentemente, [se ha asignado el perfil de procesamiento a una carpeta](../../../assets/configuring//processing-profiles.md) por lo tanto, cualquier nuevo recurso cargado en dicha carpeta, genera automáticamente las representaciones. Los activos existentes deben volver a procesarse con el método específico que se describe a continuación.
 
@@ -152,7 +152,7 @@ Con el perfil de procesamiento creado (o actualizado), reprocese los recursos pa
 
 Las representaciones pueden ser validadas por [apertura de la vista de representaciones de un recurso](../../../assets/authoring/renditions.md)y seleccionando las nuevas representaciones para la vista previa en el carril de representaciones. Si faltan las representaciones, [asegúrese de que los recursos se procesan mediante el perfil de procesamiento](#reprocess-assets).
 
-![Revisión de representaciones](./assets/images/review-renditions.jpg)
+![Revisión de representaciones](./assets/images/review-renditions.png)
 
 #### Publicar recursos
 
@@ -164,9 +164,9 @@ Para acceder a las representaciones directamente, añada la variable __nombres d
 
 | URL de recurso | Subruta de representaciones | Nombre de representación | Extensión de representación |  | URL de representación |
 |-----------|:------------------:|:--------------:|--------------------:|:--:|---|
-| https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg | /_jcr_content/renditions/ | grande | .jpeg | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg/_jcr_content/renditions/large.jpeg |
-| https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg | /_jcr_content/renditions/ | Media | .jpeg | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg/_jcr_content/renditions/medium.jpeg |
-| https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg | /_jcr_content/renditions/ | pequeño | .jpeg | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg/_jcr_content/renditions/small.jpeg |
+| https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg | /_jcr_content/renditions/ | web-optimized-large | .webp | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg/_jcr_content/renditions/web-optimized-large.webp |
+| https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg | /_jcr_content/renditions/ | web-optimized-medium | .webp | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg/_jcr_content/renditions/web-optimized-medium.webp |
+| https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg | /_jcr_content/renditions/ | web-optimized-small | .webp | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg/_jcr_content/renditions/web-optimized-small.webp |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -176,7 +176,7 @@ AEM GraphQL requiere sintaxis adicional para solicitar representaciones de imág
 
 ### Ejemplo de reacción
 
-Vamos a crear una aplicación React simple que muestre tres representaciones, pequeñas, medianas y grandes, de un único recurso de imagen.
+Creemos una sencilla aplicación React que muestra tres representaciones, optimizada para la web, pequeña, optimizada para la web y optimizada para la web y grande, de un único recurso de imagen.
 
 ![Representaciones de recursos de imagen Ejemplo de reacción](./assets/images/react-example-renditions.jpg)
 
@@ -216,7 +216,7 @@ export default function Image({ assetUrl, renditionName, renditionExtension, alt
 
 #### Defina el `App.js`{#app-js}
 
-Esta sencilla `App.js` consulta AEM de una imagen de aventura y, a continuación, muestre las tres representaciones de esa imagen: pequeño, mediano y grande.
+Esta sencilla `App.js` consulta AEM de una imagen de aventura y, a continuación, muestre las tres representaciones de esa imagen: optimizado para la web: pequeño, medio optimizado para la web y grande optimizado para la web.
 
 La consulta con AEM se realiza en el vínculo React personalizado [useAdventureByPath que utiliza el SDK AEM sin encabezado](./aem-headless-sdk.md#graphql-persisted-queries).
 
@@ -242,33 +242,33 @@ function App() {
     <div className="app">
       
       <h2>Small rendition</h2>
-      {/* Render the small rendition for the Adventure Primary Image */}
+      {/* Render the web-optimized-small rendition for the Adventure Primary Image */}
       <Image
         assetUrl={data.adventureByPath.item.primaryImage._publishUrl}
-        renditionName="small"
-        renditionExtension="jpeg"
+        renditionName="web-optimized-small"
+        renditionExtension="webp"
         alt={data.adventureByPath.item.title}
       />
 
       <hr />
 
       <h2>Medium rendition</h2>
-      {/* Render the medium rendition for the Adventure Primary Image */}
+      {/* Render the web-optimized-medium rendition for the Adventure Primary Image */}
       <Image
         assetUrl={data.adventureByPath.item.primaryImage._publishUrl}
-        renditionName="medium"
-        renditionExtension="jpeg"
+        renditionName="web-optimized-medium"
+        renditionExtension="webp"
         alt={data.adventureByPath.item.title}
       />
 
       <hr />
 
       <h2>Large rendition</h2>
-      {/* Render the large rendition for the Adventure Primary Image */}
+      {/* Render the web-optimized-large rendition for the Adventure Primary Image */}
       <Image
         assetUrl={data.adventureByPath.item.primaryImage._publishUrl}
-        renditionName="large"
-        renditionExtension="jpeg"
+        renditionName="web-optimized-large"
+        renditionExtension="webp"
         alt={data.adventureByPath.item.title}
       />
     </div>
