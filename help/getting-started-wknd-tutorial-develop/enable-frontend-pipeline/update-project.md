@@ -11,9 +11,9 @@ kt: 10689
 mini-toc-levels: 1
 index: y
 recommendations: noDisplay, noCatalog
-source-git-commit: de2fa2e4c29ce6db31233ddb1abc66a48d2397a6
+source-git-commit: 7c246c4f1af9dfe599485f68508c66fe29d2f0b6
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '653'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Actualizar el proyecto de AEM de pila completa para utilizar la canalización de front-end {#update-project-enable-frontend-pipeline}
 
-En este capítulo, realizamos cambios de configuración en la variable __Proyecto WKND Sites__ para utilizar la canalización front-end para implementar JavaScript y CSS, en lugar de requerir una ejecución completa de la canalización de pila. Esto permite desvincular el ciclo de vida de desarrollo e implementación de artefactos front-end y back-end, lo que permite un proceso de desarrollo iterativo más rápido en general.
+En este capítulo, realizamos cambios de configuración en la variable __Proyecto WKND Sites__ para utilizar la canalización front-end para implementar JavaScript y CSS, en lugar de requerir una ejecución completa de la canalización de pila. Esto desvincula el ciclo de vida de desarrollo e implementación de artefactos front-end y back-end, lo que permite un proceso de desarrollo más rápido e iterativo en general.
 
 ## Objetivos {#objectives}
 
@@ -77,7 +77,7 @@ Hay tres cambios de configuración relacionados con el proyecto y un cambio de e
 
 1. Prepare el `ui.frontend` para el contrato de canalización front-end añadiendo dos nuevos archivos de configuración de webpack.
 
-   * Copie el `webpack.common.js` como `webpack.theme.common.js`, cambiar `output` propiedad y `MiniCssExtractPlugin`, `CopyWebpackPlugin` parámetros de configuración del complemento como se muestra a continuación:
+   * Copie el `webpack.common.js` como `webpack.theme.common.js`y cambiar `output` propiedad y `MiniCssExtractPlugin`, `CopyWebpackPlugin` parámetros de configuración del complemento como se muestra a continuación:
 
    ```javascript
    ...
@@ -89,7 +89,7 @@ Hay tres cambios de configuración relacionados con el proyecto y un cambio de e
    
    ...
        new MiniCssExtractPlugin({
-               filename: 'clientlib-[name]/[name].css'
+               filename: 'theme/[name].css'
            }),
        new CopyWebpackPlugin({
            patterns: [
@@ -134,7 +134,7 @@ Hay tres cambios de configuración relacionados con el proyecto y un cambio de e
 
 1. Prepare el `ui.content` para la canalización front-end añadiendo dos configuraciones de Sling.
 
-   * Cree un nuevo archivo en `com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig` : esto incluye todos los archivos front-end que la variable `ui.frontend` el módulo genera en `dist` carpeta que utiliza el proceso de compilación de webpack.
+   * Cree un archivo en `com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig` : esto incluye todos los archivos front-end que la variable `ui.frontend` el módulo genera en `dist` carpeta que utiliza el proceso de compilación de webpack.
 
    ```xml
    ...
@@ -191,6 +191,14 @@ Finalmente, inserte estos cambios en el repositorio de Git de Adobe de su progra
 >
 > Estos cambios están disponibles en GitHub dentro de la variable [__canalización front-end__](https://github.com/adobe/aem-guides-wknd/tree/feature/frontend-pipeline) de __AEM proyecto WKND Sites__.
 
+
+## Precaución - _Habilitar canalización front-end_ botón
+
+La variable [Selector de raíl](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html) &#39;s [Sitio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html) muestra la variable **Habilitar canalización front-end** al seleccionar la raíz del sitio o la página del sitio. Hacer clic **Habilitar canalización front-end** anulará lo anterior **Configuración de Sling**, asegúrese de **no haga clic en** este botón después de implementar los cambios anteriores a través de la ejecución de canalización de Cloud Manager.
+
+![Botón Habilitar canalización front-end](assets/enable-front-end-Pipeline-button.png)
+
+Si se hace clic en él por error, debe volver a ejecutar las canalizaciones para asegurarse de que se restauran el contrato de canalización del front-end y los cambios.
 
 ## Felicitaciones! {#congratulations}
 
