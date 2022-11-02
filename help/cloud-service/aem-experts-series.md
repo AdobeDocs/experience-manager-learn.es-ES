@@ -1,14 +1,14 @@
 ---
 title: Serie de expertos de Adobe Experience Manager as a Cloud Service
 description: Obtenga información sobre Adobe Experience Manager (AEM) as a Cloud Service de los propios ingenieros expertos del Adobe que lo construyen y los servicios profesionales que lo ofrecen.
-sub-product: sites, cloud-manager, assets
-source-git-commit: d42fd02b06429be1b847958f23f273cf842d3e1b
+sub-product: Experience Manager Sites, Experience Manager Cloud Manager, Experience Manager Assets
+exl-id: ae1cdbe3-0863-41de-bb27-2e88c4640866
+source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
 workflow-type: tm+mt
 source-wordcount: '705'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
-
 
 # Serie de expertos de Adobe Experience Manager as a Cloud Service
 
@@ -139,7 +139,7 @@ Conozca los fundamentos de AEM como Cloud Services, y cómo difiere de AEM 6, de
       </div>
       <p>
         <br/>
-         Obtenga información sobre AEM Dispatcher para AEM as a Cloud Service, centrándose en cambios importantes de Dispatcher para AEM 6, la herramienta de conversión de Dispatcher y cómo utilizar el SDK de herramientas de Dispatcher.
+         Obtenga información sobre AEM Dispatcher para AEM as a Cloud Service, centrándose en los cambios notables de Dispatcher para AEM 6, la herramienta de conversión de Dispatcher y cómo utilizar el SDK de herramientas de Dispatcher.
       </p>
    </td>     
    </td>   

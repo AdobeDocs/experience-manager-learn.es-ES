@@ -2,7 +2,7 @@
 title: Comprender el uso compartido de recursos de origen cruzado (CORS) con AEM
 description: El uso compartido de recursos de origen cruzado (CORS) de Adobe Experience Manager facilita las propiedades web no AEM para realizar llamadas del lado del cliente a AEM, tanto autenticadas como no autenticadas, para recuperar contenido o interactuar directamente con AEM.
 version: 6.4, 6.5
-sub-product: foundation, content-services, sites
+sub-product: Experience Manager, Experience Manager Sites
 topics: security, development, content-delivery
 activity: understand
 audience: architect, developer
@@ -11,7 +11,7 @@ topic: Security
 role: Developer
 level: Intermediate
 exl-id: 6009d9cf-8aeb-4092-9e8c-e2e6eec46435
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
 workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 1%
@@ -129,7 +129,7 @@ A partir de Dispatcher 4.1.1+, los encabezados de respuesta se pueden almacenar 
 
 Por lo general, las mismas consideraciones para almacenar en caché el contenido en Dispatcher se pueden aplicar al almacenamiento en caché de los encabezados de respuesta CORS en Dispatcher. La tabla siguiente define cuándo [!DNL CORS] encabezados (y [!DNL CORS] ) se pueden almacenar en caché.
 
-| Cacheable | creación | Estado de autenticación | Explicación |
+| Cacheable | Entorno | Estado de autenticación | Explicación |
 |-----------|-------------|-----------------------|-------------|
 | No | AEM Publish | Autenticado | El almacenamiento en caché de Dispatcher en AEM Author se limita a recursos estáticos no creados. Esto hace que sea difícil y poco práctico almacenar en caché la mayoría de los recursos en AEM Author, incluidos los encabezados de respuesta HTTP. |
 | No | AEM Publish | Autenticado | Evite almacenar en caché los encabezados CORS en solicitudes autenticadas. Esto se ajusta a la guía común de no almacenar en caché las solicitudes autenticadas, ya que es difícil determinar cómo afectará el estado de autenticación/autorización del usuario solicitante al recurso entregado. |
