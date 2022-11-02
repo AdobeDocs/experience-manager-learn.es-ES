@@ -5,7 +5,7 @@ breadcrumb-title: Tutoriales de AEM as a Cloud Service
 sub-product: Experience Manager
 version: Cloud Service
 team: TM
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
 workflow-type: tm+mt
 source-wordcount: '830'
 ht-degree: 23%
@@ -20,7 +20,7 @@ ht-degree: 23%
    + [¿Qué es AEM as a Cloud Service?](./introduction/what-is-aem-as-a-cloud-service.md)
    + [Evolución](./introduction/evolution.md)
    + [Arquitectura](./introduction/architecture.md)
-   + [Cloud Manager](./introduction/cloud-manager.md)
+   + [Cloud Manager](./introduction/cloud-manager.md)
    + Estrategia y liderazgo mental{#strategy}
       + [Experience Manager - Modelos y arquetipos de administración y dotación de personal](./introduction/experience-manager-governance-and-staffing-models.md)
       + [Cómo impulsar la velocidad de contenido con Adobe Experience Manager](./introduction/drive-content-velocity-for-sites.md)
@@ -119,7 +119,7 @@ ht-degree: 23%
    + El paso de AEM as a Cloud Service {#moving-to-aem-as-a-cloud-service}
       + [Introducción](./migration/moving-to-aem-as-a-cloud-service/introduction.md)
       + [Incorporación](./migration/moving-to-aem-as-a-cloud-service/onboarding.md)
-      + [Cloud Manager](./migration/moving-to-aem-as-a-cloud-service/cloud-manager.md)
+      + [Cloud Manager](./migration/moving-to-aem-as-a-cloud-service/cloud-manager.md)
       + [BPA y CAM](./migration/moving-to-aem-as-a-cloud-service/bpa-and-cam.md)
       + [AEM Herramientas de modernización](./migration/moving-to-aem-as-a-cloud-service/aem-modernization-tools.md)
       + [Modernización del repositorio](./migration/moving-to-aem-as-a-cloud-service/repository-modernization.md)
@@ -206,10 +206,10 @@ ht-degree: 23%
       + [Externalización del almacenamiento del flujo de trabajo](./forms/create-aem-workflow/externalize-workflow.md)
       + [Crear modelo de flujo de trabajo](./forms/create-aem-workflow/create-workflow.md)
       + [flujo de trabajo de déclencheur](./forms/create-aem-workflow/configure-af.md)
-   + Adobe Sign con AEM Forms{#forms-and-sign}
+   + Acrobat Sign con AEM Forms{#forms-and-sign}
       + [Introducción](./forms/forms-and-sign/introduction.md)
-      + [Aplicación de API de Adobe Sign](./forms/forms-and-sign/create-sign-api-application.md)
-      + [Configuración en la nube de Adobe Sign](./forms/forms-and-sign/create-adobe-sign-cloud-configuration.md)
+      + [Aplicación de API de Acrobat Sign](./forms/forms-and-sign/create-sign-api-application.md)
+      + [Configuración de Acrobat Sign Cloud](./forms/forms-and-sign/create-adobe-sign-cloud-configuration.md)
       + [Crear formulario adaptable](./forms/forms-and-sign/create-adaptive-form.md)
       + [Configurar para rellenar y firmar](./forms/forms-and-sign/configure-form-fill-and-sign.md)
    + Integración con Microsoft Power Automate{#forms-cs-and-power-automate}

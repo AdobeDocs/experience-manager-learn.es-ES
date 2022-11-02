@@ -1,13 +1,13 @@
 ---
 title: Se adapta a AEM Forms
-description: Un tutorial que recorre la creación de un formulario adaptable mediante Acrobat y la combinación de los datos para obtener un PDF. El PDF con los datos combinados se puede enviar para su firma mediante Adobe Sign.
+description: Un tutorial que recorre la creación de un formulario adaptable mediante Acrobat y la combinación de los datos para obtener un PDF. El PDF con los datos combinados se puede enviar para su firma mediante Acrobat Sign.
 feature: adaptive-forms
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 2%
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # Creación de Forms adaptable a partir de formularios
 
-Las organizaciones tienen una amplia variedad de formas. Algunos de estos formularios se crean en Microsoft Word y se convierten en PDF. De forma predeterminada, estos formularios no se pueden rellenar con Adobe Reader o Acrobat. Para que estos formularios se puedan rellenar con Acrobat o Reader, es necesario convertir estos formularios en Acrobat. Los formularios son formularios creados con Acrobat. Este artículo explica cómo crear un formulario adaptable a partir de Acrobat y cómo volver a combinar los datos en Acrobat para obtener el PDF. El PDF con los datos combinados también se puede enviar para firmar con Adobe Sign.
+Las organizaciones tienen una amplia variedad de formas. Algunos de estos formularios se crean en Microsoft Word y se convierten en PDF. De forma predeterminada, estos formularios no se pueden rellenar con Adobe Reader o Acrobat. Para que estos formularios se puedan rellenar con Acrobat o Reader, es necesario convertir estos formularios en Acrobat. Los formularios son formularios creados con Acrobat. Este artículo explica cómo crear un formulario adaptable a partir de Acrobat y cómo volver a combinar los datos en Acrobat para obtener el PDF. El PDF con los datos combinados también se puede enviar para firmar con Acrobat Sign.
 
 >[!NOTE]
 >

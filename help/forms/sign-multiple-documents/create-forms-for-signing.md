@@ -9,7 +9,7 @@ topic: Development
 role: User
 level: Beginner
 exl-id: 565d81a4-2918-44ea-a3e9-ed79f246f08a
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%
@@ -22,7 +22,7 @@ El siguiente paso es crear los formularios adaptables que desea incluir en el pa
 
 * Asegúrese de que los formularios se basen en la variable **SignMultipleForms** plantilla. Esto garantiza que los formularios se rellenen previamente con los datos recuperados de la base de datos.
 
-* Los formularios deben configurarse para utilizar Adobe Sign y el campo signer1 debe asociarse al campo Correo electrónico del cliente
+* Los formularios deben configurarse para utilizar Acrobat Sign y el campo signer1 debe asociarse al campo Correo electrónico del cliente
 * Los formularios también deben asociarse con clientLib llamado **getnextform**
 * Los formularios deben utilizar el componente Paso de firma.
 * El formulario también debe utilizar la variable **Firmar formulario múltiple** componente. Este componente le permite navegar al siguiente formulario para iniciar sesión en el paquete.

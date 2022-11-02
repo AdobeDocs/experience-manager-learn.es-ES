@@ -8,10 +8,10 @@ audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
 workflow-type: tm+mt
 source-wordcount: '218'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -29,13 +29,13 @@ Los formularios son formularios creados con Acrobat. Puede crear un nuevo formul
 
 >[!NOTE]
 >
->Si desea enviar el formulario que se puede rellenar para firmar con Adobe Sign, asigne un nombre a los campos correspondientes. Por ejemplo, puede asignar un nombre a un campo **Sig_es_:signer1:signature**. Esta es la sintaxis que entiende Adobe Sign.
+>Si desea enviar el formulario que se puede rellenar para firmar con Acrobat Sign, asigne un nombre a los campos correspondientes. Por ejemplo, puede asignar un nombre a un campo **Sig_es_:signer1:signature**. Esta es la sintaxis que entiende Acrobat Sign.
 
 >[!NOTE]
 >
->Si va a enviar un documento basado en XFA, debe acoplar el documento y las etiquetas de firma de Adobe Sign deben estar presentes como texto estático en el documento.
+>Si va a enviar un documento basado en XFA, debe acoplar el documento y las etiquetas de firma de Acrobat Sign deben estar presentes como texto estático en el documento.
 
-[Documento de etiquetas de texto de Adobe Sign](https://helpx.adobe.com/sign/using/text-tag.html)
+[Documento de etiquetas de texto de Acrobat Sign](https://helpx.adobe.com/es/sign/using/text-tag.html)
 
 >[!NOTE]
 >
