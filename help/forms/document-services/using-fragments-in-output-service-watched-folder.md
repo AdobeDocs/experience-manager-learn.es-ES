@@ -1,5 +1,5 @@
 ---
-title: Uso de fragmentos en el servicio de salida
+title: Uso de fragmentos en el servicio de salida con la carpeta vigilada
 description: Generar documentos pdf con fragmentos que residen en el repositorio de crx
 feature: Output Service
 version: 6.4,6.5
@@ -8,9 +8,9 @@ role: Developer
 level: Intermediate
 last-substantial-update: 2022-09-07T00:00:00Z
 thumbnail: ecma-fragments.jpg
-source-git-commit: e1c16ff347f5f398c7bc47233049427eeffa2aab
+source-git-commit: 9229a92a0d33c49526d10362ac4a5f14823294ed
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
