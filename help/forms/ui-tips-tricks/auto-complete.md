@@ -9,9 +9,9 @@ role: Developer
 level: Beginner
 kt: 11374
 last-substantial-update: 2022-11-01T00:00:00Z
-source-git-commit: 9229a92a0d33c49526d10362ac4a5f14823294ed
+source-git-commit: 4af14b7d72ebdbea04e68a9a64afa1a96d1c1aeb
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '177'
 ht-degree: 0%
 
 ---
@@ -23,14 +23,11 @@ El ejemplo incluido en este artículo utiliza una variedad de fuentes de datos (
 
 El código utilizado para realizar la función de autocompletar está asociado con el suceso initialize del campo .
 
-
-## Proporcionar sugerencias para el nombre del país
-
-![sugerencias de país](assets/auto-complete1.png)
-
 ## Proporcionar una sugerencia para la dirección
 
 ![sugerencias de país](assets/auto-complete2.png)
+
+
 
 El siguiente es el código utilizado para proporcionar sugerencias de direcciones de calle
 
@@ -60,6 +57,10 @@ $(".streetAddress input").autocomplete({
 
 });
 ```
+
+
+
+
 
 ## Sugerencias con emoji
 

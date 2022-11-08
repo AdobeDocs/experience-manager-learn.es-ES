@@ -8,9 +8,9 @@ role: Developer
 level: Intermediate
 exl-id: d268d5d6-f24f-4db9-b8e0-07dd769c6005
 last-substantial-update: 2020-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 46df7b13401ee3497c871eac3b8158148c2e6a04
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '596'
 ht-degree: 1%
 
 ---
@@ -21,8 +21,8 @@ Uso de la API de Output y Forms Service en AEM Forms
 
 En este artículo echaremos un vistazo a lo siguiente
 
-* Servicio de salida : normalmente este servicio se utiliza para combinar datos xml con plantillas xdp o pdf para generar pdf plano. Para obtener más información, consulte la[javadoc](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) para el servicio Output .
-* FormsService : se trata de un servicio muy versátil que le permite exportar e importar datos desde y hacia un archivo PDF. Para obtener más información, consulte la [javadoc](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/forms/api/class-use/FormsService.html) para el servicio Forms.
+* Servicio de salida : normalmente este servicio se utiliza para combinar datos xml con plantillas xdp o pdf para generar pdf plano. Para obtener más información, consulte esta [javadoc](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) para el servicio Output .
+* FormsService : se trata de un servicio muy versátil que le permite exportar e importar datos desde y hacia un archivo PDF. Para obtener más información, consulte esta [javadoc](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html) para el servicio Forms.
 
 
 El siguiente fragmento de código exporta datos desde el archivo PDF

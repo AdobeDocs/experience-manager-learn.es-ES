@@ -9,7 +9,7 @@ level: Beginner
 kt: 11245
 last-substantial-update: 2022-10-15T00:00:00Z
 thumbnail: third-party.jpg
-source-git-commit: 9229a92a0d33c49526d10362ac4a5f14823294ed
+source-git-commit: 4af14b7d72ebdbea04e68a9a64afa1a96d1c1aeb
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 0%
@@ -56,7 +56,7 @@ Estamos agregando este paquete a nuestro proyecto AEM **AEMFormsProcessStep** qu
 * Abra el símbolo del sistema. Vaya a la carpeta de su proyecto (c:\aemformsbundles\AEMFormsProcessStep) en mi caso. Ejecute el siguiente comando
 
 ```java
-mvn clean install -pAutoInstallSinglePackage
+mvn clean install -PautoInstallSinglePackage
 ```
 
 Si todo va bien, el paquete se instala junto con el paquete de terceros en la instancia de AEM. Puede comprobar si el paquete utiliza [consola web felix](http://localhost:4502/system/console/bundles). El paquete de terceros está disponible en la carpeta /apps de la `crx` repositorio como se muestra a continuación
