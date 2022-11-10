@@ -7,9 +7,9 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: 2122ab13-f9df-4f36-9c7e-8980033c3b10
-source-git-commit: 7631432881de3deabbe831b2aec40d924b393442
+source-git-commit: a500c88091d87e34c12d4092c71241983b166af8
 workflow-type: tm+mt
-source-wordcount: '1968'
+source-wordcount: '1989'
 ht-degree: 1%
 
 ---
@@ -20,8 +20,8 @@ En este capítulo se explican los pasos para crear cinco modelos de fragmento de
 
 * **Información de contacto**
 * **Dirección**
-* **Person**
-* **Ubicación**
+* **Persona**
+* **Lugar de residencia**
 * **Equipo**
 
 Los modelos de fragmentos de contenido permiten definir relaciones entre tipos de contenido y mantener relaciones como esquemas. Utilice referencias de fragmento anidadas, varios tipos de datos de contenido y el tipo de ficha para la organización de contenido visual. Tipos de datos más avanzados, como marcadores de posición de pestañas, referencias de fragmento, objetos JSON y el tipo de datos de fecha y hora.
@@ -30,7 +30,7 @@ Este capítulo también explica cómo mejorar las reglas de validación de refer
 
 ## Requisitos previos {#prerequisites}
 
-Este es un tutorial avanzado. Antes de continuar con este capítulo, asegúrese de haber completado la [configuración rápida](../quick-setup/cloud-service.md). Asegúrese de leer también el capítulo anterior de la descripción general para obtener más información sobre la configuración del tutorial avanzado.
+Este es un tutorial avanzado. Antes de continuar con este capítulo, asegúrese de haber completado la [configuración rápida](../quick-setup/cloud-service.md). Asegúrese de haber leído también la anterior [información general](../overview.md) para obtener más información sobre la configuración del tutorial avanzado.
 
 ## Objetivos {#objectives}
 
@@ -48,11 +48,11 @@ El siguiente vídeo proporciona una breve introducción a los modelos de fragmen
 
 Vamos a crear algunos modelos de fragmento de contenido para la aplicación WKND. Si necesita una introducción básica para crear modelos de fragmento de contenido, consulte el capítulo correspondiente en la [tutorial básico](../multi-step/content-fragment-models.md).
 
-1. Vaya a **Herramientas** > **Recursos** > **Modelos de fragmento de contenido**.
+1. Vaya a **Herramientas** > **General** > **Modelos de fragmento de contenido**.
 
    ![Ruta de los modelos de fragmento de contenido](assets/define-content-fragment-models/content-fragment-models-path.png)
 
-1. Select **Sitio WKND** para ver la lista de modelos de fragmento de contenido existentes para el sitio.
+1. Select **WKND compartido** para ver la lista de modelos de fragmento de contenido existentes para el sitio.
 
 ### Modelo de información de contacto {#contact-info-model}
 
@@ -78,15 +78,13 @@ Una vez finalizado, seleccione **Guardar** para confirmar los cambios y cerrar e
 
 A continuación, cree un modelo para una dirección.
 
-1. En el **Sitio WKND**, seleccione **Crear** desde la esquina superior derecha.
+1. En el **WKND compartido**, seleccione **Crear** desde la esquina superior derecha.
 
-1. Introduzca un título para &quot;Dirección&quot; y, a continuación, seleccione **Crear**.
-
-   i. En el modal de éxito que aparece, seleccione **Apertura** para editar el modelo recién creado.
+1. Introduzca un título para &quot;Dirección&quot; y, a continuación, seleccione **Crear**. En el modal de éxito que aparece, seleccione **Apertura** para editar el modelo recién creado.
 
 1. Arrastre y suelte una **Texto de una sola línea** en el modelo y asígnele un **Etiqueta de campo** de &quot;Dirección de la calle&quot;. A continuación, el nombre de la propiedad se rellena como `streetAddress`. Seleccione el **Requerido** casilla de verificación.
 
-1. Repita los pasos anteriores y añada otros cuatro campos de &quot;Texto de una sola línea&quot; al modelo. Utilice las etiquetas siguientes:
+1. Repita los pasos anteriores y agregue cuatro campos más de &quot;Texto de una sola línea&quot; al modelo. Utilice las etiquetas siguientes:
 
    * Ciudad
    * Estado
@@ -114,7 +112,7 @@ A continuación, cree un modelo que contenga información sobre una persona.
 
 1. En el **Propiedades** en la **Modelos de fragmento de contenido permitidos** , seleccione el icono de carpeta y, a continuación, elija la **Información de contacto** modelo de fragmento creado anteriormente.
 
-1. Agregue un **Referencia de contenido** y asígnele un **Etiqueta de campo** de &quot;Imagen de perfil&quot;. Seleccione el icono de carpeta en **Ruta raíz** para abrir el modal de selección de rutas. Seleccione una ruta raíz **contenido** > **Recursos** y, a continuación, seleccione la casilla de verificación **Sitio WKND**. Utilice la variable **Select** en la parte superior derecha para guardar la ruta. La ruta de texto final debe ser `/content/dam/wknd`.
+1. Agregue un **Referencia de contenido** y asígnele un **Etiqueta de campo** de &quot;Imagen de perfil&quot;. Seleccione el icono de carpeta en **Ruta raíz** para abrir el modal de selección de rutas. Seleccione una ruta raíz **contenido** > **Recursos** y, a continuación, seleccione la casilla de verificación **WKND compartido**. Utilice la variable **Select** en la parte superior derecha para guardar la ruta. La ruta de texto final debe ser `/content/dam/wknd-shared`.
 
    ![Ruta raíz de referencia de contenido](assets/define-content-fragment-models/content-reference-root-path.png)
 
@@ -129,18 +127,19 @@ A continuación, cree un modelo que contenga información sobre una persona.
 
 1. Para **Max**, introduzca &quot;5&quot; y para **Seleccionar unidad**, seleccione &quot;Megabytes (MB)&quot;. Esta validación solo permite seleccionar imágenes que tengan el tamaño especificado.
 
-1. En **Aceptar solo el ancho de imagen especificado**, seleccione &quot;Ancho máximo&quot;. En el **Máx. (píxeles)** que aparece, escriba &quot;500&quot;. Seleccione las mismas opciones para **Aceptar solo una altura de imagen especificada**.
+1. En **Aceptar solo el ancho de imagen especificado**, seleccione &quot;Ancho máximo&quot;. En el **Máx. (píxeles)** que aparece, escriba &quot;10000&quot;. Seleccione las mismas opciones para **Aceptar solo una altura de imagen especificada**.
 
    Estas validaciones garantizan que las imágenes añadidas no superen los valores especificados. Las reglas de validación deben tener este aspecto:
+
    ![Reglas de validación de referencia de contenido](assets/define-content-fragment-models/content-reference-validation.png)
 
 1. Agregue un **Texto de varias líneas** y asígnele un **Etiqueta de campo** de &quot;Biografía&quot;. Deje el **Tipo predeterminado** como opción predeterminada &quot;Texto enriquecido&quot;.
 
    ![Opciones de biografía](assets/define-content-fragment-models/biography.png)
 
-1. Vaya a la **Tipos de datos** y, a continuación, arrastre una **Enumeración** debajo de &quot;Imagen de perfil&quot;. En lugar del valor predeterminado **Representar como** , seleccione **Lista desplegable**. Introduzca una selección de opciones de nivel de experiencia del instructor, como Experto, Avanzado e Intermedio.
+1. Vaya a la **Tipos de datos** y, a continuación, arrastre una **Enumeración** campo debajo de &quot;Biografía&quot;. En lugar del valor predeterminado **Representar como** , seleccione **Lista desplegable** y asígnele un **Etiqueta de campo** de &quot;Nivel de experiencia del instructor&quot;. Introduzca una selección de opciones de nivel de experiencia del instructor, como _Experto, avanzado, intermedio_.
 
-1. A continuación, arrastre otro **Enumeración** en &quot;Nivel de experiencia del instructor&quot; y seleccione &quot;casillas de verificación&quot; en **Representar como** . Introduce diferentes habilidades, como escalada de rock, surf, ciclismo, esquí y moto acuática. La etiqueta de opción y el valor de opción deben coincidir como se muestra a continuación:
+1. A continuación, arrastre otro **Enumeración** en &quot;Nivel de experiencia del instructor&quot; y seleccione &quot;casillas de verificación&quot; en **Representar como** . Denle un **Etiqueta de campo** de &quot;Habilidades&quot;. Introduce diferentes habilidades, como escalada de rock, surf, ciclismo, esquí y moto acuática. La etiqueta de opción y el valor de opción deben coincidir como se muestra a continuación:
 
    ![Enumeración de habilidades](assets/define-content-fragment-models/skills-enum.png)
 
@@ -160,7 +159,7 @@ El siguiente modelo de fragmento de contenido describe una ubicación física. E
 
 1. A continuación, agregue una **Referencia de fragmento** y etiquete &quot;Información de contacto&quot;. En la ficha propiedades, en **Modelos de fragmento de contenido permitidos**, seleccione **Icono de carpeta** y elija el modelo de fragmento &quot;Información de contacto&quot; creado anteriormente.
 
-1. Agregue un **Referencia de contenido** en &quot;Información de contacto&quot;. Etiquetarla como &quot;Imagen de ubicación&quot;. La variable **Ruta raíz** debe `/content/dam/wknd.` En **Aceptar solo los tipos de contenido especificados**, seleccione &quot;Imagen&quot;.
+1. Agregue un **Referencia de contenido** en &quot;Información de contacto&quot;. Etiquetarla como &quot;Imagen de ubicación&quot;. La variable **Ruta raíz** debe `/content/dam/wknd-shared.` En **Aceptar solo los tipos de contenido especificados**, seleccione &quot;Imagen&quot;.
 
 1. Añadamos también un **Objeto JSON** en la imagen de ubicación. Como este tipo de datos es flexible, se puede utilizar para mostrar cualquier dato que desee incluir en el contenido. En este caso, el objeto JSON se utiliza para mostrar información sobre el tiempo. Etiqueta el objeto JSON &quot;Tiempo por temporada&quot;. En el **Propiedades** , agregue **Descripción** por lo tanto, el usuario tiene claro qué datos deben introducirse aquí: &quot;Datos JSON sobre la ubicación del evento por temporada (primavera, verano, otoño, invierno).&quot;
 
@@ -168,7 +167,7 @@ El siguiente modelo de fragmento de contenido describe una ubicación física. E
 
 1. Para crear la ficha Dirección, agregue una **Marcador de posición de tabulación** al modelo y etiquete &quot;Dirección de ubicación&quot;.
 
-1. Arrastre y suelte una **Referencia de fragmento** y, en la pestaña propiedades, en **Modelos de fragmento de contenido permitidos**, seleccione **Dirección** modelo.
+1. Arrastre y suelte una **Referencia de fragmento** y, en la pestaña propiedades , etiquete como &quot;Dirección&quot; y en **Modelos de fragmento de contenido permitidos**, seleccione **Dirección** modelo.
 
 1. Select **Guardar** para confirmar los cambios y cerrar el Editor del modelo de fragmento de contenido. El modelo de ubicación completo debe aparecer de la siguiente manera:
 
@@ -178,7 +177,7 @@ El siguiente modelo de fragmento de contenido describe una ubicación física. E
 
 Finalmente, cree un modelo que describa un equipo de personas.
 
-1. En el **Sitio WKND** página, seleccione **Crear** para crear otro modelo de fragmento de contenido. Para el Título del modelo, escriba &quot;Equipo&quot;. Como anteriormente, seleccione **Crear** seguido de **Apertura** en el modal de éxito que aparece.
+1. En el **WKND compartido** página, seleccione **Crear** para crear otro modelo de fragmento de contenido. Para el Título del modelo, escriba &quot;Equipo&quot;. Como anteriormente, seleccione **Crear** seguido de **Apertura** en el modal de éxito que aparece.
 
 1. Agregue un **Texto de varias líneas** al formulario. En **Etiqueta de campo**, escriba &quot;Descripción&quot;.
 
@@ -186,7 +185,7 @@ Finalmente, cree un modelo que describa un equipo de personas.
 
    ![Opciones de fecha y hora](assets/define-content-fragment-models/date-and-time.png)
 
-1. Vaya a la **Tipos de datos** pestaña . Debajo de la &quot;Fecha de base del equipo&quot;, agregue una **Referencia de fragmento**. En el **Representar como** , seleccione &quot;multifield&quot;. Para **Etiqueta de campo**, escriba &quot;Miembros del equipo&quot;. Este campo se vincula al modelo Persona creado anteriormente. Dado que el tipo de datos es un campo múltiple, se pueden agregar varios fragmentos de persona, lo que permite crear un equipo de personas.
+1. Vaya a la **Tipos de datos** pestaña . Debajo de la &quot;Fecha de base del equipo&quot;, agregue una **Referencia de fragmento**. En el **Representar como** , seleccione &quot;multifield&quot;. Para **Etiqueta de campo**, escriba &quot;Miembros del equipo&quot;. Este campo vincula a la variable _Persona_ modelo creado anteriormente. Dado que el tipo de datos es un campo múltiple, se pueden agregar varios fragmentos de persona, lo que permite crear un equipo de personas.
 
    ![Opciones de referencia de fragmento](assets/define-content-fragment-models/fragment-reference.png)
 
@@ -200,7 +199,7 @@ Finalmente, cree un modelo que describa un equipo de personas.
 
 De forma similar a como el modelo Team tiene una referencia de fragmento al modelo Person, se debe hacer referencia a los modelos Team y Location desde el modelo Adventure para mostrar estos nuevos modelos en la aplicación WKND.
 
-1. En el **Sitio WKND** seleccione **Aventura** modelo y, a continuación, seleccione **Editar** desde la barra de navegación superior.
+1. En el **WKND compartido** seleccione **Aventura** modelo y, a continuación, seleccione **Editar** desde la barra de navegación superior.
 
    ![Ruta de edición de aventura](assets/define-content-fragment-models/adventure-edit-path.png)
 
@@ -218,7 +217,7 @@ De forma similar a como el modelo Team tiene una referencia de fragmento al mode
 
 1. Select **Guardar** para confirmar los cambios y cerrar el Editor del modelo de fragmento de contenido.
 
-## Prácticas recomendadas   {#best-practices}
+## Prácticas recomendadas {#best-practices}
 
 Existen algunas prácticas recomendadas relacionadas con la creación de modelos de fragmento de contenido:
 
@@ -228,11 +227,11 @@ Existen algunas prácticas recomendadas relacionadas con la creación de modelos
 
 * Anide los modelos de fragmento de contenido tan profundamente como sea necesario pero solo cuando sea necesario. Recuerde que el anidado se realiza con referencias de fragmento o referencias de contenido. Considere un máximo de cinco niveles de anidación.
 
-## Felicitaciones! {#congratulations}
+## ¡Enhorabuena! {#congratulations}
 
-Felicitaciones! Ahora ha añadido fichas, utilizado los tipos de datos de fecha y hora y de objeto JSON, y ha aprendido más sobre referencias de fragmento y contenido. También ha añadido reglas de validación de referencia de contenido.
+¡Enhorabuena! Ahora ha añadido fichas, utilizado los tipos de datos de fecha y hora y de objeto JSON, y ha aprendido más sobre referencias de fragmento y contenido. También ha añadido reglas de validación de referencia de contenido.
 
-## Siguientes pasos {#next-steps}
+## Pasos siguientes {#next-steps}
 
 El siguiente capítulo de esta serie abarcará [creación de fragmentos de contenido](/help/headless-tutorial/graphql/advanced-graphql/author-content-fragments.md) de los modelos que ha creado en este capítulo. Obtenga información sobre cómo utilizar los tipos de datos introducidos en este capítulo y cree directivas de carpeta para limitar los modelos de fragmento de contenido que se pueden crear en una carpeta de recursos.
 
