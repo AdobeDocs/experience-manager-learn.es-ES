@@ -9,9 +9,9 @@ level: Beginner
 kt: 7621
 thumbnail: 332860.jpg
 exl-id: c4f2e8f5-6acf-4efb-bdec-84d264568856
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: a627de5a2edfeb4416f1166a44bbd1d51be55c91
 workflow-type: tm+mt
-source-wordcount: '117'
+source-wordcount: '157'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,11 @@ En este vídeo:
 + Obtenga información sobre cómo filtrar y solicitar atributos de datos específicos
 + Aprenda a instalar y utilizar la herramienta GraphiQL
 
+>[!CAUTION]
+>
+>La variable **Instalación de GraphiQL** el capítulo que comienza a la 1:06 no es necesario en las versiones más recientes de AEM como Cloud Service. Un **Explorador de GraphiQL** se proporciona, consulte [Uso del IDE de GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) para obtener más información.
+
+
 >[!VIDEO](https://video.tv.adobe.com/v/332860/?quality=12&learn=on)
 
-_Descargue la  [colección Postman ](./assets/aem-headless-video-series.postman_collection.json) utilizada en la serie de vídeos AEM sin encabezado._
+_Descargue el [Colección Postman](./assets/aem-headless-video-series.postman_collection.json) se utiliza en toda la serie de vídeos AEM sin encabezado._

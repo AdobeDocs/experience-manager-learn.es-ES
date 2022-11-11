@@ -1,6 +1,6 @@
 ---
 title: Consultas persistentes de GraphQL
-description: Obtenga información sobre cómo habilitar, crear actualizaciones y ejecutar consultas persistentes en AEM.
+description: Obtenga información sobre cómo habilitar, crear, actualizar y ejecutar consultas persistentes en AEM.
 version: Cloud Service
 topic: Headless, Content Management
 feature: GraphQL API
@@ -9,16 +9,16 @@ level: Beginner
 kt: 7872
 thumbnail: 333429.jpeg
 exl-id: 06ba38c4-95fe-4ff5-b4d9-237ef9dec944
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: a627de5a2edfeb4416f1166a44bbd1d51be55c91
 workflow-type: tm+mt
-source-wordcount: '72'
-ht-degree: 0%
+source-wordcount: '122'
+ht-degree: 6%
 
 ---
 
 # Consultas persistentes de GraphQL
 
-Obtenga información sobre cómo habilitar, crear actualizaciones y ejecutar consultas persistentes en AEM.
+Obtenga información sobre cómo habilitar, crear, actualizar y ejecutar consultas persistentes en AEM.
 
 En este vídeo:
 
@@ -26,6 +26,11 @@ En este vídeo:
 + Aprenda a crear, actualizar y ejecutar consultas de GraphQL
 + Comprender los pros y los contras de las consultas del lado del servidor frente a las del lado del cliente
 
+>[!CAUTION]
+>
+>La variable **Crear, actualizar y ejecutar consultas persistentes** capítulo que comienza a las 2:05 utilizaciones [Postman](https://www.postman.com/) para realizar la tarea. Sin embargo, en las versiones más recientes de AEM como Cloud Service, un **Explorador de GraphiQL** se proporciona, consulte [Uso del IDE de GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) para obtener más información.
+
+
 >[!VIDEO](https://video.tv.adobe.com/v/333429/?quality=12&learn=on)
 
-_Descargue la  [colección Postman ](./assets/aem-headless-video-series.postman_collection.json) utilizada en la serie de vídeos AEM sin encabezado._
+_Descargue el [Colección Postman](./assets/aem-headless-video-series.postman_collection.json) se utiliza en toda la serie de vídeos AEM sin encabezado._
