@@ -7,10 +7,12 @@ role: Developer, Architect
 level: Beginner
 kt: 7631
 thumbnail: kt-7631.jpeg
+last-substantial-update: 2022-11-11T00:00:00Z
+recommendations: noDisplay, noCatalog
 exl-id: 0bdb93c9-5070-483c-a34c-f2b348bfe5ae
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1246'
 ht-degree: 1%
 
 ---
@@ -26,26 +28,34 @@ Aunque el código base de SPA se administra fuera de AEM, se requiere un proyect
 + Subproyecto para definir SPA a AEM asignaciones de URL
 + Carpetas de configuración de OSGi
 
+## Descargar el proyecto base desde GitHub
+
+Descargue el `aem-guides-wknd-graphql` proyecto de Github.com. Contiene algunos archivos de línea de base utilizados en este proyecto.
+
+```
+$ mkdir -p ~/Code
+$ git clone https://github.com/adobe/aem-guides-wknd-graphql.git
+$ cd remote-spa-tutorial
+```
+
 ## Creación de un proyecto AEM
 
-Cree un proyecto AEM en el que se administren las configuraciones y el contenido de línea de base.
+Cree un proyecto AEM en el que se administren las configuraciones y el contenido de línea de base. Este proyecto se generará dentro de la clonación `aem-guides-wknd-graphql` del proyecto `remote-spa-tutorial` carpeta.
 
 _Utilice siempre la versión más reciente de [Tipo de archivo AEM](https://github.com/adobe/aem-project-archetype)._
 
-
 ```
-$ mkdir -p ~/Code/wknd-app
-$ cd ~/Code/wknd-app
+$ cd ~/Code/aem-guides-wknd-graphql/remote-spa-tutorial
 $ mvn -B archetype:generate \
  -D archetypeGroupId=com.adobe.aem \
  -D archetypeArtifactId=aem-project-archetype \
- -D archetypeVersion=27 \
+ -D archetypeVersion=39 \
  -D aemVersion=cloud \
  -D appTitle="WKND App" \
  -D appId="wknd-app" \
  -D groupId="com.adobe.aem.guides.wkndapp" \
  -D frontendModule="react"
-$ mv ~/Code/wknd-app/wknd-app ~/Code/wknd-app/com.adobe.aem.guides.wknd-app
+$ mv ~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/wknd-app ~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/com.adobe.aem.guides.wknd-app
 ```
 
 _El último comando simplemente cambia el nombre de la carpeta del proyecto de AEM para que quede claro que es el proyecto de AEM y no debe confundirse con SPA remoto__
@@ -67,7 +77,7 @@ Con la generación del proyecto de AEM base, algunos ajustes garantizan SPA comp
 
 Dado que el SPA es un SPA remoto, asumamos que se ha desarrollado y administrado fuera del proyecto AEM. Para evitar conflictos, elimine la variable `ui.frontend` proyecto desde la implementación. Si la variable `ui.frontend` El proyecto no se elimina, dos SPA, la SPA predeterminada que se proporciona en la `ui.frontend` El proyecto y el SPA remoto se cargan al mismo tiempo en el AEM SPA Editor.
 
-1. Abra el proyecto AEM (`~/Code/wknd-app/com.adobe.aem.guides.wknd-app`) en su IDE
+1. Abra el proyecto AEM (`~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/com.adobe.aem.guides.wknd-app`) en su IDE
 1. Abra la raíz `pom.xml`
 1. Comente el `<module>ui.frontend</module` fuera de `<modules>` list
 
@@ -126,7 +136,7 @@ La asignación se puede realizar con [Asignación de Sling](https://sling.apache
 
 1. En el IDE, abra el `ui.content` subproyecto
 1. Vaya a  `src/main/content/jcr_root`
-1. Cree una carpeta  . `etc`
+1. Cree una carpeta.`etc`
 1. En `etc`, crear una carpeta `map`
 1. En `map`, crear una carpeta `http`
 1. En `http`, crear un archivo `.content.xml` con el contenido:
@@ -333,7 +343,7 @@ Con el proyecto AEM implementado, hay un último paso para preparar SPA Editor p
 
    ![Página principal de la aplicación WKND: configuración de SPA remota](./assets/aem-content/remote-spa-configuration.png)
 
-1. Toque __Guardar y cerrar__
+1. Pulse __Guardar y cerrar__
 
 Recuerde que hemos cambiado el tipo de esta página por el de un __Página SPA remota__, que es lo que nos permite ver la variable __SPA__ en su __Propiedades de página__.
 
@@ -349,6 +359,6 @@ Ya ha preparado AEM configuraciones e implementado en su autor de AEM local. Aho
 + Implemente el proyecto de AEM en el servicio local AEM SDK Author
 + Marcar una página AEM como la raíz de SPA remota usando la propiedad de página URL de host SPA
 
-## Siguientes pasos
+## Pasos siguientes
 
 Con AEM configurado, podemos centrarnos en [arrancar el SPA remoto](./spa-bootstrap.md) con compatibilidad con áreas editables mediante AEM SPA Editor!

@@ -7,10 +7,12 @@ role: Developer, Architect
 level: Beginner
 kt: 7636
 thumbnail: kt-7636.jpeg
+last-substantial-update: 2022-11-11T00:00:00Z
+recommendations: noDisplay, noCatalog
 exl-id: 4accc1ca-6f4b-449e-bf2e-06f19d2fe17d
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '901'
 ht-degree: 1%
 
 ---
@@ -21,7 +23,7 @@ En este capítulo, habilitamos dos rutas dinámicas de detalle de aventura para 
 
 ![Rutas dinámicas y componentes editables](./assets/spa-dynamic-routes/intro.png)
 
-La ruta SPA detalle de aventura se define como `/adventure:path` donde `path` es la ruta a WKND Adventure (fragmento de contenido) para mostrar detalles sobre.
+La ruta SPA detalle de aventura se define como `/adventure/:slug` donde `slug` es una propiedad de identificador único en el fragmento de contenido de aventura.
 
 ## Asignar las direcciones URL SPA a páginas AEM
 
@@ -34,8 +36,8 @@ En este tutorial, tomamos el nombre del fragmento de contenido de WKND Adventure
 | Ruta de SPA remota | AEM ruta de página |
 |------------------------------------|--------------------------------------------|
 | / | /content/wknd-app/us/es/home |
-| /adventure:/content/dam/wknd/en/adventures/bali-surf-camp/__bali-surf-camp__ | /content/wknd-app/es/home/adventure/__bali-surf-camp__ |
-| /adventure:/content/dam/wknd/en/adventures/beervana-portland/__beervana-portland__ | /content/wknd-app/es/home/adventure/__beervana-in-portland__ |
+| /adventure/__bali-surf-camp__ | /content/wknd-app/es/home/adventure/__bali-surf-camp__ |
+| /adventure/__beervana-portland__ | /content/wknd-app/es/home/adventure/__beervana-in-portland__ |
 
 Por lo tanto, en función de esta asignación, debemos crear dos nuevas páginas de AEM en:
 
@@ -63,7 +65,7 @@ Primero, cree el intermediario `adventure` Segmento de página:
    + __Título__: Aventura
    + __Nombre__: `adventure`
       + Este valor define la dirección URL de la página AEM y, por lo tanto, debe coincidir con el segmento de ruta del SPA.
-1. Puntee __Listo__
+1. Pulse __Listo__
 
 A continuación, cree las páginas de AEM que correspondan a cada una de las direcciones URL de SPA que requieran áreas editables.
 
@@ -74,7 +76,7 @@ A continuación, cree las páginas de AEM que correspondan a cada una de las dir
    + __Título__: Campo de surf de Bali
    + __Nombre__: `bali-surf-camp`
       + Este valor define la dirección URL de la página de AEM y, por lo tanto, debe coincidir con el último segmento de la ruta de SPA
-1. Puntee __Listo__
+1. Pulse __Listo__
 1. Repita los pasos del 3 al 6 para crear la variable __Beervana en Portland__ con:
    + __Título__: Beervana en Portland
    + __Nombre__: `beervana-in-portland`
@@ -84,52 +86,51 @@ Estas dos páginas AEM contienen el contenido creado en cada caso para sus rutas
 
 ## Actualizar la aplicación WKND
 
-Vamos a colocar el `<AEMResponsiveGrid...>` componente creado en el [último capítulo](./spa-container-component.md), dentro de `AdventureDetail` SPA componente, crear un contenedor editable.
+Vamos a colocar el `<ResponsiveGrid...>` componente creado en el [último capítulo](./spa-container-component.md), dentro de `AdventureDetail` SPA componente, crear un contenedor editable.
 
-### Colocación del componente SPA AEMResponsiveGrid
+### Colocación del componente SPA ResponsiveGrid
 
-Colocación de la variable `<AEMResponsiveGrid...>` en el `AdventureDetail` crea un contenedor editable en esa ruta. El truco es que las rutas múltiples utilizan la variable `AdventureDetail` para procesar, debemos ajustar dinámicamente el  `<AEMResponsiveGrid...>'s pagePath` atributo. La variable `pagePath` debe derivarse para que apunte a la página de AEM correspondiente, según la aventura que muestre la instancia de la ruta.
+Colocación de la variable `<ResponsiveGrid...>` en el `AdventureDetail` crea un contenedor editable en esa ruta. El truco es que las rutas múltiples utilizan la variable `AdventureDetail` para procesar, debemos ajustar dinámicamente el  `<ResponsiveGrid...>'s pagePath` atributo. La variable `pagePath` debe derivarse para que apunte a la página de AEM correspondiente, según la aventura que muestre la instancia de la ruta.
 
-1. Abra y edite `react-app/src/components/AdventureDetail.js`
-1. Añada la siguiente línea antes de `AdventureDetail(..)'s` segundo `return(..)` , que deriva el nombre de la aventura de la ruta del fragmento de contenido.
-
-   ```
-   ...
-   // Get the last segment of the Adventure Content Fragment path to used to generate the pagePath for the AEMResponsiveGrid
-   const adventureName = _path.split('/').pop();
-   ...
-   ```
-
-1. Importe el `AEMResponsiveGrid` y colóquelo encima de `<h2>Itinerary</h2>` componente.
-1. Establezca los atributos siguientes en la variable `<AEMResponsiveGrid...>` componente
-   + `pagePath = '/content/wknd-app/us/en/home/adventure/${adventureName}'`
+1. Abra y edite `react-app-/src/components/AdventureDetail.js`
+1. Importe el `ResponsiveGrid` y colóquelo encima de `<h2>Itinerary</h2>` componente.
+1. Establezca los atributos siguientes en la variable `<ResponsiveGrid...>` componente. Tenga en cuenta que `pagePath` agrega el atributo actual `slug` que se asigna a la página de aventura según la asignación definida anteriormente.
+   + `pagePath = '/content/wknd-app/us/en/home/adventure/${slug}'`
    + `itemPath = 'root/responsivegrid'`
 
-   Esto indica a la `AEMResponsiveGrid` para recuperar su contenido del recurso de AEM:
+   Esto indica a la `ResponsiveGrid` para recuperar su contenido del recurso de AEM:
 
-   + `/content/wknd-app/us/en/home/adventure/${adventureName}/jcr:content/root/responsivegrid`
+   + `/content/wknd-app/us/en/home/adventure/${slug}/jcr:content/root/responsivegrid`
 
 
 Actualizar `AdventureDetail.js` con las siguientes líneas:
 
-```
+```javascript
 ...
-import AEMResponsiveGrid from '../components/aem/AEMResponsiveGrid';
+import { ResponsiveGrid } from '@adobe/aem-react-editable-components';
 ...
 
-function AdventureDetail(props) {
+function AdventureDetailRender(props) {
     ...
-    // Get the last segment of the Adventure Content Fragment path to used to generate the pagePath for the AEMResponsiveGrid
-    const adventureName = _path.split('/').pop();
+    // Get the slug from the React route parameter, this will be used to specify the AEM Page to store/read editable content from
+    const { slug } = useParams();
 
     return(
         ...
-        <AEMResponsiveGrid 
-            pagePath={`/content/wknd-app/us/en/home/adventure/${adventureName}`}
-            itemPath="root/responsivegrid"/>
-            
-        <h2>Itinerary</h2>
-        ...
+        // Pass the slug in
+        function AdventureDetailRender({ title, primaryImage, activity, adventureType, tripLength, 
+                groupSize, difficulty, price, description, itinerary, references, slug }) {
+            ...
+            return (
+                ...
+                <ResponsiveGrid 
+                    pagePath={`/content/wknd-app/us/en/home/adventure/${slug}`}
+                    itemPath="root/responsivegrid"/>
+                    
+                <h2>Itinerary</h2>
+                ...
+            )
+        }
     )
 }
 ```
@@ -140,7 +141,7 @@ La variable `AdventureDetail.js` debe tener el siguiente aspecto:
 
 ## Creación del contenedor en AEM
 
-Con la variable `<AEMResponsiveGrid...>` in situ y `pagePath` se configura de forma dinámica en función de la aventura que se representa, probamos crear contenido en ella.
+Con la variable `<ResponsiveGrid...>` in situ y `pagePath` se configura de forma dinámica en función de la aventura que se representa, probamos crear contenido en ella.
 
 1. Iniciar sesión en AEM Author
 1. Vaya a __Sites > Aplicación WKND > us > es__
@@ -167,9 +168,9 @@ Con la variable `<AEMResponsiveGrid...>` in situ y `pagePath` se configura de fo
 
 Al navegar a una ruta de detalles de aventura que no tiene una página AEM asignada, no hay capacidad de creación en esa instancia de ruta. Para habilitar la creación en estas páginas, simplemente realice una Página AEM con el nombre coincidente en la sección __Aventura__ página!
 
-## Felicitaciones!
+## ¡Enhorabuena!
 
-Felicitaciones! ¡Ha añadido la capacidad de creación a las rutas dinámicas en el SPA!
+¡Enhorabuena! ¡Ha añadido la capacidad de creación a las rutas dinámicas en el SPA!
 
 + Se ha agregado el componente AEM ReactEditable Component del componente ResponsiveGrid a una ruta dinámica
 + Creación de páginas AEM para apoyar la creación de dos rutas específicas en el SPA (Bali Surf Camp y Beervana en Portland)

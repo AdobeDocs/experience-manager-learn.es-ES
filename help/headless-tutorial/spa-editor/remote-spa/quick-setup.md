@@ -7,11 +7,13 @@ role: Developer, Architect
 level: Beginner
 kt: 7629
 thumbnail: 333181.jpg
+last-substantial-update: 2022-11-11T00:00:00Z
+recommendations: noDisplay, noCatalog
 exl-id: ef7a1dad-993a-4c47-a9fb-91fa73de9b5d
-source-git-commit: fe056006ab59a3955e5f16a23e96e9e208408cf5
+source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
 workflow-type: tm+mt
 source-wordcount: '797'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -29,7 +31,7 @@ _Un vídeo explicativo de la configuración rápida_
 
 Este tutorial requiere lo siguiente:
 
-+ [SDK de AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=en)
++ [SDK de AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=es)
 + [Node.js v16+](https://nodejs.org/en/)
 + [npm v8+](https://www.npmjs.com/)
 + [Java™ 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
@@ -154,6 +156,6 @@ Antes de crear contenido, organice las ventanas del navegador de forma que AEM A
 
 Las páginas de AEM nuevas en la sección __Página de inicio de la aplicación WKND > Aventura__ _must_ tienen un nombre de página AEM que coincida con el nombre del fragmento de contenido de la aventura correspondiente. Esto se debe a que la ruta SPA a AEM asignación de página se basa en el último segmento de la ruta, que es el nombre del fragmento de contenido.
 
-## Felicitaciones!
+## ¡Enhorabuena!
 
 Solo tienes que probar rápidamente cómo AEM editor de SPA puede mejorar tu SPA con áreas controladas y editables. Si le interesa, consulte el resto del tutorial, pero asegúrese de empezar de nuevo, ya que en esta configuración rápida su entorno de desarrollo local está en el estado final del tutorial.
