@@ -4,9 +4,9 @@ breadcrumb-title: Tutoriales de AEM Foundation
 user-guide-description: Una colección de vídeos y tutoriales para Adobe Experience Manager Foundation.
 sub-product: Experience Manager
 index: y
-source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
+source-git-commit: d5645e975aa290392348cc69d078b24921a7d13a
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '222'
 ht-degree: 14%
 
 ---
@@ -20,6 +20,7 @@ ht-degree: 14%
    + [Uso de oak-run.jar para administrar índices](./administration/use-oak-run-jar-to-manage-indexes.md)
    + [Usar limpieza de revisión en línea](./administration/use-online-revision-clean-up.md)
    + [Uso del panel Información general del sistema](./administration/use-the-system-overview-dashboard.md)
+   + [Redirecciones de URL](./administration/url-redirection.md)
 + Autenticación {#authentication}
    + [Autenticación OAuth](authentication/oauth-code-sample-develop.md)
    + [Configuración de claves públicas y privadas para usar con Adobe I/O](authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)
