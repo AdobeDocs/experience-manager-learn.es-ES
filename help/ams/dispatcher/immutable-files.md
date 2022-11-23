@@ -7,9 +7,9 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: 04cd4002af7028ee9e3b1e1455b6346c56446245
+source-git-commit: d6b7d63ba02ca73d6c1674d90db53c6eebab3bd2
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '826'
 ht-degree: 1%
 
 ---
@@ -311,3 +311,5 @@ Ahora, simplemente volveríamos a cargar el servicio webserver y usaríamos nues
 
 Tenga en cuenta que solo cambiamos las piezas que necesitábamos para cambiar y aprovechamos las inclusiones existentes y el código que venía con los archivos de configuración de línea de base.  Solo tenemos que definir el elemento que necesitamos cambiar.  Facilita mucho las cosas y nos permite mantener menos código
 </div>
+
+[Siguiente -> Comprobación de estado de Dispatcher](./health-check.md)
