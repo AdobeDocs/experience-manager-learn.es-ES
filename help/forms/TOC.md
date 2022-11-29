@@ -7,9 +7,9 @@ breadcrumb-title: Tutoriales de AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: fad7630d2d91d03b98a3982f73a689ef48700319
+source-git-commit: 09b00a7edf2f4c90c6cb2178161c6d7e0c9432e8
 workflow-type: tm+mt
-source-wordcount: '1731'
+source-wordcount: '1741'
 ht-degree: 3%
 
 ---
@@ -167,6 +167,10 @@ ht-degree: 3%
    + [Extraer nodo del documento xml](custom-workflow-steps/extract-xml-node.md)
    + [Guardar documento en sistema de archivos](custom-workflow-steps/write-payload-document.md)
    + [Guardar datos enviados en una variable de cadena](custom-workflow-steps/save-submitted-data-in-string-variable.md)
++ Componente de flujo de trabajo personalizado{#custom-workflow-component}
+   + [Introducción](custom-workflow-component/introduction.md)
+   + [Escribir código java](custom-workflow-component/custom-process-step-aem-workflow.md)
+   + [Crear componente de flujo de trabajo](custom-workflow-component/custom-workflow-component.md)
 + Variables en AEM flujo de trabajo{#variables-aem-workflow}
    + [Introducción: Variables en el flujo de trabajo](variables-aem-workflow/introduction.md)
    + [Variables XML](variables-aem-workflow/part1.md)
