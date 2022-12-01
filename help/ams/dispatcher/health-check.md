@@ -7,9 +7,9 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: d6b7d63ba02ca73d6c1674d90db53c6eebab3bd2
+source-git-commit: df3afc60f765c18915eca3bb2d3556379383fafc
 workflow-type: tm+mt
-source-wordcount: '1136'
+source-wordcount: '1139'
 ht-degree: 1%
 
 ---
@@ -209,3 +209,5 @@ Cuando se utilice, este script comprobará y registrará todas las instancias a 
 Cuando se utilice, este script comprobará y registrará todas las instancias a las que va a enviar, pero solo devolverá un estado saludable independientemente de si AEM devuelve un error o no.
 
 > `Note:` Esta secuencia de comandos se utiliza cuando la comprobación de estado no funciona como se desea y permite una anulación para mantener AEM instancias en el equilibrador de carga.
+
+[Siguiente -> Enlaces de GIT](./git-symlinks.md)
