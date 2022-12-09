@@ -1,20 +1,20 @@
 ---
-title: Tutorials AEM sin encabezado
-description: Una colección de tutoriales sobre cómo utilizar Adobe Experience Manager como un CMS sin encabezado.
+title: Tutorials para sin encabezado en AEM
+description: Una colección de tutoriales de CMS sin encabezado para Adobe Experience Manager. Explore tutoriales por API, marco y aplicaciones de ejemplo.
 feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
 recommendations: disable, exclude
 exl-id: 57f88d79-9879-4bb9-a3db-9fec95e3a0bd
-source-git-commit: b20a29e67da0bcbf53ae8089a7cde0dfde800214
+source-git-commit: 567f0ae80d79796fc50994d31a64fb0ca79879f6
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '524'
 ht-degree: 7%
 
 ---
 
-# Tutorials AEM sin encabezado{#aem-headless-tutorials}
+# Tutorials para sin encabezado en AEM{#aem-headless-tutorials}
 
 Adobe Experience Manager (AEM) tiene varias opciones para definir extremos sin encabezado y entregar su contenido como JSON. Utilice tutoriales prácticos para explorar cómo utilizar las distintas opciones y elegir lo que es adecuado para usted.
 
@@ -41,7 +41,7 @@ Adobe Experience Manager (AEM) tiene varias opciones para definir extremos sin e
     </a>
     </div>
     <p>
-    <em>Descubra cómo una aplicación puede utilizar AEM API de GraphQL para consultar el contenido.</em>
+    <em>Descubra cómo una aplicación puede utilizar AEM API de GraphQL para consultar contenido.</em>
     <p>
   </td>
   <td>
@@ -102,7 +102,7 @@ Las aplicaciones de ejemplo son una buena manera de explorar las capacidades sin
     </a>
     </div>
     <p>
-    <em>Una aplicación Android™ con tecnología de AEM API de GraphQL.</em>
+    <em>Una aplicación Android™ basada en AEM API de GraphQL.</em>
     </p>
   </td>
   <td>
