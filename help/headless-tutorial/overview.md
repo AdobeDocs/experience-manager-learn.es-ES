@@ -7,9 +7,9 @@ role: Developer
 level: Beginner
 recommendations: disable, exclude
 exl-id: 57f88d79-9879-4bb9-a3db-9fec95e3a0bd
-source-git-commit: 567f0ae80d79796fc50994d31a64fb0ca79879f6
+source-git-commit: 758fa40240b12f5bfa83ac5c0300b71f41e2326d
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '503'
 ht-degree: 7%
 
 ---
@@ -21,11 +21,6 @@ Adobe Experience Manager (AEM) tiene varias opciones para definir extremos sin e
 >[!TIP]
 >
 >Esta colección de tutoriales está diseñada para aquellos que prefieran **aprenda haciendo**. Si prefiere aprender conceptos desde cero, consulte la [recorrido para desarrolladores AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/developer/overview.html). Este conjunto de tutoriales y el recorrido se complementan entre sí.
-
->[!CONTEXTUALHELP]
->id="aemcloud_sites_trial_admin_content_fragments_edit_inline_content"
->title="Editar contenido en línea"
->abstract="Obtenga información sobre cómo editar contenido directamente en la página desde la que se hace referencia mediante el conjunto de funciones sin encabezado."
 
 ## Tutorials por API
 
