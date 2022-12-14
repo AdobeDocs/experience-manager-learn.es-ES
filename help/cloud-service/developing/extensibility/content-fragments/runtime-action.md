@@ -9,7 +9,7 @@ level: Beginner
 recommendations: noDisplay, noCatalog
 kt: 11603
 last-substantial-update: 2022-12-01T00:00:00Z
-source-git-commit: a7b32982b547eb292384d2ebde80ba745091702a
+source-git-commit: f19cdc7d551f20b35550e7d25bd168a2eaa43b6a
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 1%
@@ -49,7 +49,7 @@ Las acciones de Adobe I/O Runtime se invocan principalmente desde dos lugares en
 
 ### Desde registro de extensión
 
-Las acciones de Adobe I/O Runtime se pueden llamar directamente desde el código de registro de la extensión. El caso de uso más común = es enlazar una acción a un [menú encabezado](./header-menu.md#no-modal)del botón que no utiliza [modales](./modal.md).
+Las acciones de Adobe I/O Runtime se pueden llamar directamente desde el código de registro de la extensión. El caso de uso más común es enlazar una acción a un [menú encabezado](./header-menu.md#no-modal)del botón que no utiliza [modales](./modal.md).
 
 + `./src/aem-cf-console-admin-1/web-src/src/components/ExtensionRegistration.js`
 

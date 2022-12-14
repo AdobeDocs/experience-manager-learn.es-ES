@@ -9,7 +9,7 @@ level: Beginner
 recommendations: noDisplay, noCatalog
 kt: 11603
 last-substantial-update: 2022-12-01T00:00:00Z
-source-git-commit: a7b32982b547eb292384d2ebde80ba745091702a
+source-git-commit: f19cdc7d551f20b35550e7d25bd168a2eaa43b6a
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 0%
@@ -55,15 +55,15 @@ function App(props) {
 `ExtensionRegistration.js` debe cargarse inmediatamente a través de la ruta de índice de la extensión y actúa como punto de registro de la extensión, definiendo:
 
 1. El tipo de extensión; a [menú encabezado](./header-menu.md) o [barra de acciones](./action-bar.md) botón.
-   + [Menú Encabezado](./header-menu.md) las extensiones se identifican mediante la variable `headerMenu` propiedad under `methods`.
-   + [Barra de acciones](./action-bar.md) las extensiones se identifican mediante la variable `actionBar` propiedad under `methods`.
+   + [Menú Encabezado](./header-menu.md#extension-registration) las extensiones se identifican mediante la variable `headerMenu` propiedad under `methods`.
+   + [Barra de acciones](./action-bar.md#extension-registration) las extensiones se identifican mediante la variable `actionBar` propiedad under `methods`.
 1. La definición del botón de extensión, en `getButton()` función. Esta función devuelve un objeto con campos:
    + `id` es un ID único para el botón
    + `label` es la etiqueta del botón de extensión en la consola Fragmento de contenido de AEM
    + `icon` es el icono del botón de extensión en la consola Fragmento de contenido de AEM. El icono es un [Espectro React](https://spectrum.adobe.com/page/icons/) nombre del icono, con espacios eliminados.
 1. El controlador de clic del botón, en se define en una `onClick()` función.
-   + [Menú Encabezado](./header-menu.md) las extensiones no pasan parámetros al controlador de clic.
-   + [Barra de acciones](./action-bar.md) las extensiones proporcionan una lista de las rutas de fragmento de contenido seleccionadas en la `selections` parámetro.
+   + [Menú Encabezado](./header-menu.md#extension-registration) las extensiones no pasan parámetros al controlador de clic.
+   + [Barra de acciones](./action-bar.md#extension-registration) las extensiones proporcionan una lista de las rutas de fragmento de contenido seleccionadas en la `selections` parámetro.
 
 ### Extensión del menú Encabezado
 
