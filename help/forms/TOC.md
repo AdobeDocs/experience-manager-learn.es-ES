@@ -7,9 +7,9 @@ breadcrumb-title: Tutoriales de AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: 0e27907066c7d688549a980ccd17b3f17d74b60b
+source-git-commit: 8f17e98c56c78824e8850402e3b79b3d47901c0b
 workflow-type: tm+mt
-source-wordcount: '1754'
+source-wordcount: '1759'
 ht-degree: 3%
 
 ---
@@ -227,6 +227,7 @@ ht-degree: 3%
    + [Incrustar pdf en forma adaptable](document-services/embed-pdf-inline.md)
    + [PDF en componente carrusel](document-services/display-pdf-in-carousel.md)
    + [Uso del servicio Assembler en AEM Forms](document-services/using-assembler-service-in-aem-forms.md)
+   + [Ajuste XDP con el servicio Assembler](document-services/xdp-stitching-using-assembler-service.md)
    + [Uso de la carpeta vigilada en AEM Forms](document-services/watched-folders-document-services-article-use.md)
    + [Uso del servicio de códigos de barras en AEM Forms](document-services/barcode-service-adaptive-forms-article.md)
    + [Uso del servicio PDFG en AEM Forms](document-services/using-pdfg-in-aem-forms.md)
