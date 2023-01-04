@@ -10,9 +10,9 @@ recommendations: noDisplay
 kt: 11603
 thumbnail: KT-11603.png
 last-substantial-update: 2022-12-09T00:00:00Z
-source-git-commit: f19cdc7d551f20b35550e7d25bd168a2eaa43b6a
+source-git-commit: 8b683fdcea05859151b929389f7673075c359141
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '774'
 ht-degree: 4%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 4%
 
 # Extensión de la consola Fragmentos de contenido de AEM
 
-[Consola AEM fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=es) las extensiones se pueden agregar mediante dos puntos de extensión: un botón de la sección [La consola Fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html) menú de encabezado o barra de acciones. Las extensiones se escriben en JavaScript que se ejecutan como aplicaciones de App Builder y pueden implementar una interfaz de usuario web personalizada y acciones de Adobe I/O Runtime sin servidor para realizar un trabajo más intensivo y de larga duración.
+[Consola AEM fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=es) las extensiones se pueden agregar mediante dos puntos de extensión: un botón de la sección [La consola Fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=es) menú de encabezado o barra de acciones. Las extensiones se escriben en JavaScript que se ejecutan como aplicaciones de App Builder y pueden implementar una interfaz de usuario web personalizada y acciones de Adobe I/O Runtime sin servidor para realizar un trabajo más intensivo y de larga duración.
 
 ![Extensión de la consola Fragmentos de contenido de AEM](./assets/overview/example.png){align="center"}
 
@@ -38,11 +38,11 @@ Seleccione entre las siguientes funciones al generar la aplicación de App Build
 |  | Botón Agregar a [Menú Encabezado](./header-menu.md) | Botón Agregar a [Barra de acciones](./action-bar.md) | Show [Modal](./modal.md) | Agregar [controlador del lado del servidor](./runtime-action.md) |
 | ------------------------------------------ | :-----------------------: | :----------------------: | :--------: | :--------------------:  |
 | Disponible cuando los fragmentos de contenido no están seleccionados | š |  |  |  |
-| Disponible cuando se seleccionan uno o más fragmentos de contenido |  | š |  |  |
+| Disponible cuando se seleccionan uno o más fragmentos de contenido |  | ✔ |  |  |
 | Recopila datos personalizados del usuario |  |  | ✔️ |  |
 | Muestra comentarios personalizados al usuario |  |  | ✔️ |  |
-| Invoca solicitudes HTTP a AEM |  |  |  | š |
-| Invoca solicitudes HTTP a servicios de Adobe o de terceros |  |  |  | š |
+| Invoca solicitudes HTTP a AEM |  |  |  | ✔ |
+| Invoca solicitudes HTTP a servicios de Adobe o de terceros |  |  |  | ✔ |
 
 
 ## Documentación de Adobe Developer
@@ -130,7 +130,7 @@ Siga los pasos descritos a continuación para aprender a generar, desarrollar e 
             <div class="card-content is-padded-small">
                 <div class="content">
                     <p class="headline is-size-5 has-text-weight-bold">4a. Menú Encabezado</p>
-                    <p class="is-size-6">Obtenga información sobre cómo crear extensiones de menú de encabezado de la Consola de fragmentos de contenido AEM.</p>
+                    <p class="is-size-6">Obtenga información sobre cómo crear una extensión de menú de encabezado de la Consola de fragmento de contenido AEM.</p>
                     <a href="./header-menu.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                         <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ampliación del menú del encabezado</span>
                     </a>
@@ -151,7 +151,7 @@ Siga los pasos descritos a continuación para aprender a generar, desarrollar e 
             <div class="card-content is-padded-small">
                 <div class="content">
                     <p class="headline is-size-5 has-text-weight-bold">4b. Barra de acciones</p>
-                    <p class="is-size-6">Obtenga información sobre cómo crear extensiones de barra de acciones de la Consola de fragmentos de contenido AEM.</p>
+                    <p class="is-size-6">Obtenga información sobre cómo crear una extensión de barra de acciones de la Consola de fragmentos de contenido AEM.</p>
                     <a href="./action-bar.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                         <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ampliación de la barra de acciones</span>
                     </a>
@@ -214,7 +214,7 @@ Siga los pasos descritos a continuación para aprender a generar, desarrollar e 
             <div class="card-content is-padded-small">
                 <div class="content">
                     <p class="headline is-size-5 has-text-weight-bold">7. Prueba</p>
-                    <p class="is-size-6">Pruebe las extensiones durante el desarrollo, así como el uso compartido de extensiones completadas en probadores de control de calidad o de aceptación del usuario mediante una dirección URL especial.</p>
+                    <p class="is-size-6">Pruebe las extensiones durante el desarrollo y comparta las extensiones completadas en los probadores de control de calidad o de aceptación del usuario mediante una dirección URL especial.</p>
                     <a href="./test.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                         <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Probar la extensión</span>
                     </a>
@@ -271,4 +271,28 @@ Ejemplo AEM extensiones de la consola Fragmento de contenido.
             </div>
         </div>
     </div>
+    <!-- Bulk property update extension -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Image generation and upload to AEM extension">
+        <div class="card">
+            <div class="card-image">
+                <figure class="image is-16by9">
+                    <a href="./example-extensions/image-generation-and-image-upload.md" title="Generación y carga de imágenes en AEM extensión" tabindex="-1">
+                        <img class="is-bordered-r-small" src="./example-extensions/assets/digital-image-generation/screenshot.png" alt="Generación y carga de imágenes en AEM extensión">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small">
+                <div class="content">
+                    <p class="headline is-size-5 has-text-weight-bold">Generación y carga de imágenes en AEM extensión</p>
+                    <p class="is-size-6">Explore una extensión de barra de acciones de ejemplo que genere una imagen mediante OpenAI, la cargue en AEM y actualice la propiedad de imagen en el fragmento de contenido seleccionado.</p>
+                    <a href="./example-extensions/image-generation-and-image-upload.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
+                        <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Explorar la extensión de ejemplo</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 </div>

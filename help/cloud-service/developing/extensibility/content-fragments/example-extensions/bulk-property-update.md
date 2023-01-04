@@ -9,7 +9,7 @@ level: Beginner
 kt: 11604
 thumbnail: KT-11604.png
 last-substantial-update: 2022-12-09T00:00:00Z
-source-git-commit: a7b32982b547eb292384d2ebde80ba745091702a
+source-git-commit: 8b683fdcea05859151b929389f7673075c359141
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 0%
@@ -32,7 +32,7 @@ El flujo funcional de la extensión de ejemplo es el siguiente:
 1. Al enviar el formulario, se envía la lista de fragmentos de contenido seleccionados y el host de AEM al [acción personalizada de Adobe I/O Runtime](#adobe-io-runtime-action).
 1. La variable [Acción de Adobe I/O Runtime](#adobe-io-runtime-action) valida las entradas y realiza solicitudes de PUT HTTP a AEM para actualizar los fragmentos de contenido seleccionados.
 1. Una serie de PUT HTTP para cada fragmento de contenido para actualizar la propiedad especificada.
-1. AEM as a Cloud Service persiste en las actualizaciones de propiedades del fragmento de contenido y devuelve el éxito de las respuestas de error a la acción de Adobe I/O Runtime.
+1. AEM as a Cloud Service persiste en las actualizaciones de propiedades del fragmento de contenido y devuelve respuestas de éxito o de error a la acción de Adobe I/O Runtime.
 1. El modal recibió la respuesta de la acción de Adobe I/O Runtime y muestra una lista de actualizaciones masivas correctas.
 
 En este vídeo se analiza la extensión de actualización de propiedades por lotes de ejemplo, cómo funciona y cómo se desarrolla.
@@ -69,7 +69,7 @@ Existen dos conjuntos lógicos de rutas:
    <Route index element={<ExtensionRegistration />} />
    ```
 
-1. El segundo conjunto de rutas asigna las direcciones URL a los componentes React que representan el contenido del modal de la extensión. La variable `:selection` param representa las rutas de fragmento de contenido de lista delimitada.
+1. El segundo conjunto de rutas asigna las direcciones URL a los componentes React que representan el contenido del modal de la extensión. La variable `:selection` param representa una ruta de fragmento de contenido de lista delimitada.
 
    Si la extensión tiene varios botones para invocar acciones discretas, cada [registro de extensión](#extension-registration) se asigna a una ruta definida aquí.
 
@@ -147,7 +147,7 @@ En esta aplicación de ejemplo, hay un componente React modal (`BulkPropertyUpda
 Es importante que cualquier interacción con AEM de la extensión se delegue en un [Acción de Adobe I/O Runtime de App Builder](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/), que es un proceso independiente sin servidor que se ejecuta en [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/).
 El uso de acciones de Adobe I/O Runtime para comunicarse con AEM, es evitar problemas de conectividad del Cross-Origin Resource Sharing (CORS).
 
-Cuando se envía el formulario Bulk Property Update, se envía una `onSubmitHandler()` invoca la acción de Adobe I/O Runtime, pasando el host de AEM actual (dominio) y el token de acceso de AEM del usuario, que a su vez llama a la función [API de fragmento de contenido AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/content-fragments-api.html) para actualizar los fragmentos de contenido.
+Cuando se envía el formulario Bulk Property Update, se envía una `onSubmitHandler()` invoca la acción de Adobe I/O Runtime, pasando el host de AEM actual (dominio) y el token de acceso de AEM del usuario, que a su vez llama a la función [API de fragmento de contenido AEM](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html) para actualizar los fragmentos de contenido.
 
 Cuando se recibe la respuesta de la acción de Adobe I/O Runtime, el modal se actualiza para mostrar los resultados de la operación de actualización de propiedades por lotes.
 
@@ -408,7 +408,7 @@ export default function BulkPropertyUpdateModal() {
 
 ## Acción de Adobe I/O Runtime
 
-Una aplicación de extensión de AEM de App Builder puede definir para el usuario 0 o varias acciones de Adobe I/O Runtime.
+Una aplicación de AEM de extensión de App Builder puede definir o utilizar 0 o varias acciones de Adobe I/O Runtime.
 Las acciones de tiempo de ejecución de Adobe deben ser un trabajo responsable que requiera la interacción con AEM u otros servicios web de Adobe.
 
 En esta aplicación de ejemplo, la acción de Adobe I/O Runtime, que utiliza el nombre predeterminado `generic` - es responsable de:
