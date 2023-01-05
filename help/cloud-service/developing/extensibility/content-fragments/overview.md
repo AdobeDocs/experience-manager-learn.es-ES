@@ -10,9 +10,9 @@ recommendations: noDisplay
 kt: 11603
 thumbnail: KT-11603.png
 last-substantial-update: 2022-12-09T00:00:00Z
-source-git-commit: 8b683fdcea05859151b929389f7673075c359141
+source-git-commit: fbc8c11841f5b5e04a99ba74fac6f01dc3e3a2da
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '742'
 ht-degree: 4%
 
 ---
@@ -59,7 +59,7 @@ Siga los pasos descritos a continuación para aprender a generar, desarrollar e 
         <div class="card">
             <div class="card-image">
                 <figure class="image is-16by9">
-                    <a href="https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#create-a-project-in-adobe-developer-console" title="Crear proyecto de Adobe Developer" tabindex="-1" target="_adobe-developer-com">
+                    <a href="./adobe-developer-console-project.md" title="Crear proyecto de Adobe Developer" tabindex="-1">
                         <img class="is-bordered-r-small" src="./assets/project/card.png" alt="Crear proyecto de Adobe Developer">
                     </a>
                 </figure>
@@ -68,7 +68,7 @@ Siga los pasos descritos a continuación para aprender a generar, desarrollar e 
                 <div class="content">
                     <p class="headline is-size-5 has-text-weight-bold">1. Crear un proyecto</p>
                     <p class="is-size-6">Cree un proyecto de Adobe Developer Console que defina su acceso a otros servicios de Adobe y administre sus implementaciones.</p>
-                    <a href="https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#create-a-project-in-adobe-developer-console" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" target="_adobe-developer-com">
+                    <a href="./adobe-developer-console-project.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                         <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Creación de un proyecto de Adobe Developer</span>
                     </a>
                 </div>
@@ -80,7 +80,7 @@ Siga los pasos descritos a continuación para aprender a generar, desarrollar e 
         <div class="card">
             <div class="card-image">
                 <figure class="image is-16by9">
-                    <a href="https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/code-generation/#launch-code-generation-during-project-initialization" title="Generar una aplicación de extensión" tabindex="-1" target="_adobe-developer-com">
+                    <a href="./app-initialization.md" title="Generar una aplicación de extensión" tabindex="-1">
                         <img class="is-bordered-r-small" src="./assets/initialize-app/card.png" alt="Inicializar una aplicación de extensión">
                     </a>
                 </figure>
@@ -89,7 +89,7 @@ Siga los pasos descritos a continuación para aprender a generar, desarrollar e 
                 <div class="content">
                     <p class="headline is-size-5 has-text-weight-bold">2. Inicializar una aplicación de extensión</p>
                     <p class="is-size-6">Inicialice una aplicación del Generador de aplicaciones de la extensión de la consola de fragmentos de contenido de AEM que defina dónde aparece la extensión y el trabajo que realiza.</p>
-                    <a href="https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/code-generation/#launch-code-generation-during-project-initialization" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" target="_adobe-developer-com">
+                    <a href="./app-initialization.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                         <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Inicializar una aplicación de extensión</span>
                     </a>
                 </div>
