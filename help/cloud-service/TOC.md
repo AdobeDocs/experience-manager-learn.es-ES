@@ -8,7 +8,7 @@ team: TM
 source-git-commit: fbc8c11841f5b5e04a99ba74fac6f01dc3e3a2da
 workflow-type: tm+mt
 source-wordcount: '880'
-ht-degree: 22%
+ht-degree: 23%
 
 ---
 
@@ -243,7 +243,7 @@ ht-degree: 22%
       + [Crear aplicación conectada](./forms/integrate-with-salesforce/create-connected-app.md)
       + [Crear archivo de intercambio](./forms/integrate-with-salesforce/describe-rest-api.md)
       + [Crear fuente de datos](./forms/integrate-with-salesforce/create-data-source.md)
-      + [Crear modelo de datos de formulario](./forms/integrate-with-salesforce/create-form-data-model.md)
+      + [Crear un modelo de datos de formulario](./forms/integrate-with-salesforce/create-form-data-model.md)
       + [Envío de formulario de prueba](./forms/integrate-with-salesforce/create-lead-submitting-form.md)
       + [Evento de clic de prueba](./forms/integrate-with-salesforce/create-lead-click-event.md)
 + Extensibilidad de asset compute{#asset-compute}

@@ -27,9 +27,9 @@ ht-degree: 20%
    + Serie de vídeos{#video-series}
       + [1 - Conceptos básicos de modelos](./graphql/video-series/modeling-basics.md)
       + [2: Modelado avanzado](./graphql/video-series/advanced-modeling.md)
-      + [3 - Creación de consultas de GraphQL](./graphql/video-series/creating-graphql-queries.md)
+      + [3: Creación de consultas de GraphQL](./graphql/video-series/creating-graphql-queries.md)
       + [4 - Variaciones de fragmento de contenido](./graphql/video-series/content-fragment-variations.md)
-      + [5 - Puntos finales de GraphQL](./graphql/video-series/graphql-endpoints.md)
+      + [5: Puntos finales de GraphQL](./graphql/video-series/graphql-endpoints.md)
       + [6 - Arquitectura de creación y publicación](./graphql/video-series/author-publish-architecture.md)
       + [7 - Consultas persistentes de GraphQL](./graphql/video-series/graphql-persisted-queries.md)
    + Tutorial básico{#multi-step}
@@ -42,7 +42,7 @@ ht-degree: 20%
       + [Información general](/help/headless-tutorial/graphql/advanced-graphql/overview.md)
       + [1 - Crear modelos de fragmento de contenido](/help/headless-tutorial/graphql/advanced-graphql/create-content-fragment-models.md)
       + [2 - Crear fragmentos de contenido](/help/headless-tutorial/graphql/advanced-graphql/author-content-fragments.md)
-      + [3 - Explorar la API de AEM GraphQL](/help/headless-tutorial/graphql/advanced-graphql/explore-graphql-api.md)
+      + [3 - Explorar la API de GraphQL AEM](/help/headless-tutorial/graphql/advanced-graphql/explore-graphql-api.md)
       + [4 - Consultas persistentes de GraphQL](/help/headless-tutorial/graphql/advanced-graphql/graphql-persisted-queries.md)
       + [5 - Integración de aplicaciones de cliente](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md)
 + Implementaciones{#deployments}

@@ -17,7 +17,7 @@ ht-degree: 28%
 
 + [Información general](overview.md)
 + Creación de páginas {#page-authoring}
-   + [Creación  ](page-authoring/aem-sites-authoring-overview.md)
+   + [Creación](page-authoring/aem-sites-authoring-overview.md)
    + [Navegación](page-authoring/basic-handling-sites-feature-video-use.md)
    + [Estructura del sitio   ](page-authoring/content-hierarchy-feature-video-use.md)
    + [Creación de páginas](page-authoring/creating-page-feature-video-use.md)

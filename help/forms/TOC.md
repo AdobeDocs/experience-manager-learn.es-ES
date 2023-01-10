@@ -222,7 +222,7 @@ ht-degree: 3%
    + [Probar la solución](welcome-kit/testing-the-solution.md)
 
 
-+ Servicios de documento {#document-services}
++ Document Services {#document-services}
    + [Tipos de PDF forms](document-services/pdf-forms-and-documents.md)
    + [Incrustar pdf en forma adaptable](document-services/embed-pdf-inline.md)
    + [PDF en componente carrusel](document-services/display-pdf-in-carousel.md)
