@@ -10,9 +10,9 @@ recommendations: noDisplay
 kt: 11603
 thumbnail: KT-11603.png
 last-substantial-update: 2022-12-09T00:00:00Z
-source-git-commit: fbc8c11841f5b5e04a99ba74fac6f01dc3e3a2da
+source-git-commit: d902eb9a8d497a43c8d4ca63767f81a35eadf139
 workflow-type: tm+mt
-source-wordcount: '742'
+source-wordcount: '745'
 ht-degree: 4%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 4%
 
 | Tipo de extensión | Descripción | Parámetros |
 | :--- | :--- | :--- |
-| Menú Encabezado | Agrega un botón al encabezado que se muestra cuando __zero__ Los fragmentos de contenido están seleccionados. | Ninguno. |
+| Menú Encabezado | Agrega un botón al encabezado que se muestra cuando __zero__ Los fragmentos de contenido están seleccionados. | Ninguna. |
 | Barra de acciones | Agrega un botón a la barra de acciones que se muestra cuando __uno o más__ Los fragmentos de contenido están seleccionados. | Matriz de las rutas de fragmentos de contenido seleccionadas. |
 
 Una sola extensión de la consola de fragmentos de contenido AEM puede incluir cero o un menú de encabezado y cero o un tipo de extensión de barra de acciones. Si se requieren varios tipos de extensión del mismo tipo, se deben crear varias extensiones de la consola Fragmentos de contenido AEM.
@@ -271,19 +271,19 @@ Ejemplo AEM extensiones de la consola Fragmento de contenido.
             </div>
         </div>
     </div>
-    <!-- Bulk property update extension -->
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Image generation and upload to AEM extension">
+    <!-- Image Generartion update extension -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="OpenAI-based image generation and upload to AEM extension">
         <div class="card">
             <div class="card-image">
                 <figure class="image is-16by9">
-                    <a href="./example-extensions/image-generation-and-image-upload.md" title="Generación y carga de imágenes en AEM extensión" tabindex="-1">
-                        <img class="is-bordered-r-small" src="./example-extensions/assets/digital-image-generation/screenshot.png" alt="Generación y carga de imágenes en AEM extensión">
+                    <a href="./example-extensions/image-generation-and-image-upload.md" title="Generación y carga de imágenes basadas en OpenAI en AEM extensión" tabindex="-1">
+                        <img class="is-bordered-r-small" src="./example-extensions/assets/digital-image-generation/screenshot.png" alt="Generación y carga de imágenes basadas en OpenAI en AEM extensión">
                     </a>
                 </figure>
             </div>
             <div class="card-content is-padded-small">
                 <div class="content">
-                    <p class="headline is-size-5 has-text-weight-bold">Generación y carga de imágenes en AEM extensión</p>
+                    <p class="headline is-size-5 has-text-weight-bold">Generación y carga de imágenes basadas en OpenAI en AEM extensión</p>
                     <p class="is-size-6">Explore una extensión de barra de acciones de ejemplo que genere una imagen mediante OpenAI, la cargue en AEM y actualice la propiedad de imagen en el fragmento de contenido seleccionado.</p>
                     <a href="./example-extensions/image-generation-and-image-upload.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                         <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Explorar la extensión de ejemplo</span>

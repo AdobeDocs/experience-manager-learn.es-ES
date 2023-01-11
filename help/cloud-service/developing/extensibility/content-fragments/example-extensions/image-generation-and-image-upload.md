@@ -9,15 +9,15 @@ level: Beginner
 kt: 11649
 thumbnail: KT-11649.png
 last-substantial-update: 2023-01-04T00:00:00Z
-source-git-commit: 8b683fdcea05859151b929389f7673075c359141
+source-git-commit: d902eb9a8d497a43c8d4ca63767f81a35eadf139
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1314'
 ht-degree: 1%
 
 ---
 
 
-# Generación de imágenes digitales, carga en AEM extensión de ejemplo
+# Generación de imágenes digitales basada en OpenAI, carga en AEM extensión de ejemplo
 
 ![Generación de imágenes digitales](./assets/digital-image-generation/screenshot.png){align="center"}
 
@@ -43,6 +43,10 @@ El flujo funcional de la extensión de ejemplo es el siguiente:
 1. A continuación, inicia la carga de imágenes desde el tiempo de ejecución de App Builder para AEM DAM en una ruta predefinida.
 1. El as a Cloud Service AEM guarda la imagen en el DAM y devuelve respuestas de éxito o de error a la acción de Adobe I/O Runtime. La respuesta de carga correcta actualiza el valor de propiedad de imagen del fragmento de contenido seleccionado utilizando otra solicitud HTTP para AEM desde la acción de Adobe I/O Runtime.
 1. El modal recibe la respuesta de la acción de Adobe I/O Runtime y proporciona AEM vínculo de detalles del recurso de la imagen cargada y recién generada.
+
+En este vídeo se analiza la generación de imágenes de ejemplo mediante las extensiones OpenAI o DALL.E 2, cómo funciona y cómo se desarrolla. El vídeo tiene marcas de capítulo como __Demostración funcional, configuración y código técnico__ para ver la pieza relevante rápidamente.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3413093/?quality=12&learn=on)
 
 
 ## La aplicación de extensión de App Builder
