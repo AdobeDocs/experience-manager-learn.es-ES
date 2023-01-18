@@ -12,10 +12,11 @@ thumbnail: 330477.jpg
 topic: Headless, Integrations
 role: Developer
 level: Intermediate, Experienced
+last-substantial-update: 2023-01-12T00:00:00Z
 exl-id: 197444cb-a68f-4d09-9120-7b6603e1f47d
-source-git-commit: ef11609fe6ab266102bdf767a149284b9b912f98
+source-git-commit: 8b6d8d99c806e782a1ddce2b300211f8d4c9da56
 workflow-type: tm+mt
-source-wordcount: '1062'
+source-wordcount: '1067'
 ht-degree: 0%
 
 ---
@@ -40,6 +41,7 @@ El token de acceso de desarrollo local proporciona acceso a los servicios de AEM
 1. Abra el Programa que contiene el entorno as a Cloud Service AEM para integrar con
 1. Toque . __elipsis__ junto al entorno en la __Entornos__ y seleccione __Developer Console__
 1. Toque en la __Integraciones__ ficha
+1. Toque . __Token local__ ficha
 1. Toque __Obtener token de desarrollo local__ botón
 1. Toque en la __botón descargar__ en la esquina superior izquierda para descargar el archivo JSON que contiene `accessToken` y guarde el archivo JSON en una ubicación segura de su equipo de desarrollo.
    + Este es su token de acceso de desarrollador de 24 horas al entorno as a Cloud Service AEM.
