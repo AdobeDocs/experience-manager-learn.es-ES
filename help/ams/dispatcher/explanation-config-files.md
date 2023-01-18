@@ -7,7 +7,7 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: 04cd4002af7028ee9e3b1e1455b6346c56446245
+source-git-commit: 7815b1a78949c433f2c53ff752bf39dd55f9ac94
 workflow-type: tm+mt
 source-wordcount: '1705'
 ht-degree: 0%
@@ -251,7 +251,7 @@ RewriteRule ^/logo.jpg$ /content/dam/weretail/general/logo.jpg [NC,PT]
 
 Cuando cualquier archivo FILENAME_farm.any `/etc/httpd/conf.dispatcher.d/available_farms/` el directorio se enlaza simbólicamente a `/etc/httpd/conf.dispatcher.d/enabled_farms/` se utilizarán en la configuración en ejecución.
 
-Los archivos de granja tienen subinclusiones basadas en [secciones de nivel superior de la granja](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-farms-farms) como caché, encabezados de clientes, filtros, renderizadores y vhosts.
+Los archivos de granja tienen subinclusiones basadas en [secciones de nivel superior de la granja](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#defining-farms-farms) como caché, encabezados de clientes, filtros, renderizadores y vhosts.
 
 La variable `FILENAME_farm.any` los archivos tendrán instrucciones include para cada archivo en función de dónde deban incluirse en el archivo de granja.  A continuación se muestra un ejemplo de sintaxis de un `FILENAME_farm.any` como buena referencia:
 
