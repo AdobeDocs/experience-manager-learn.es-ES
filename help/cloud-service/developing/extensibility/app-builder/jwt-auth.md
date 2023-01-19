@@ -8,9 +8,9 @@ role: Developer
 level: Intermediate
 kt: 11743
 last-substantial-update: 2023-01-17T00:00:00Z
-source-git-commit: 0990fc230e2a36841380b5b0c6cd94dca24614fa
+source-git-commit: de2788d8f3971a47fca53e35ee84cbbaa0137140
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '436'
 ht-degree: 1%
 
 ---
@@ -70,14 +70,14 @@ La variable `JWT_PRIVATE_KEY` debe tener un formato especial, ya que es de forma
 
 1. Abra `Terminal`
 1. `$ base64 -i /path/to/private.key | pbcopy`
-
-La salida base64 se copia automáticamente en el portapapeles
+1. La salida base64 se copia automáticamente en el portapapeles
 
 >[!TAB Windows]
 
 1. Abra `Command Prompt`
 1. `$ certutil -encode C:\path\to\private.key C:\path\to\encoded-private.key`
-1. Copiar el contenido de `encoded-private.key` al portapapeles
+1. `$ findstr /v CERTIFICATE C:\path\to\encoded-private.key`
+1. Copiar la salida base64 en el portapapeles
 
 >[!TAB Linux®]
 
@@ -87,14 +87,14 @@ La salida base64 se copia automáticamente en el portapapeles
 
 >[!ENDTABS]
 
-Por ejemplo, se puede agregar el siguiente valor al `JWT_PRIVATE_KEY` en la variable `.env`:
+Por ejemplo, la siguiente clave privada codificada en base64 podría agregarse al `JWT_PRIVATE_KEY` en la variable `.env`:
 
 ```
 ...
 JWT_PRIVATE_KEY=LS0tLS1C..kQgUFJJVkFURSBLRVktLS0tLQ==
 ```
 
-## Configuración de extensión
+## Asignación de entradas
 
 Con el valor de credencial JWT establecido en la variable `.env` , deben asignarse a las entradas de acción de App Builder para que se puedan leer en la propia acción. Para ello, agregue entradas para cada variable en la variable `ext.config.yaml` acción `inputs` en formato: `INPUT_NAME=$ENV_KEY`.
 
@@ -130,7 +130,7 @@ runtimeManifest:
 Las claves definidas en `inputs` están disponibles en la `params` objeto proporcionado a la acción de App Builder.
 
 
-## Conversión de credenciales de JWT para acceder al token
+## Credenciales de JWT para acceder al token
 
 En la acción App Builder , las credenciales de JWT están disponibles en la `params` y utilizable por [`@adobe/jwt-auth`](https://www.npmjs.com/package/@adobe/jwt-auth) para generar un token de acceso, que a su vez puede acceder a otras API y servicios de Adobe.
 
