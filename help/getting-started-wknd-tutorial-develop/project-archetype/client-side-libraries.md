@@ -1,6 +1,6 @@
 ---
 title: Bibliotecas de cliente y flujo de trabajo front-end
-description: Aprenda a utilizar bibliotecas de cliente o clientlibs para implementar y administrar CSS y Javascript para una implementación de Adobe Experience Manager (AEM) Sites. Descubra cómo el módulo ui.frontend, un proyecto de webpack, se puede integrar en el proceso de compilación de extremo a extremo.
+description: Aprenda a utilizar las bibliotecas de cliente para implementar y administrar CSS y JavaScript para una implementación de Adobe Experience Manager (AEM) Sites. Descubra cómo el módulo ui.frontend, un proyecto de webpack, se puede integrar en el proceso de compilación de extremo a extremo.
 version: 6.4, 6.5, Cloud Service
 type: Tutorial
 feature: Core Components, AEM Project Archetype
@@ -11,16 +11,16 @@ kt: 4083
 thumbnail: 30359.jpg
 exl-id: 8d3026e9-a7e2-4a76-8a16-a8197a5e04e3
 recommendations: noDisplay, noCatalog
-source-git-commit: de2fa2e4c29ce6db31233ddb1abc66a48d2397a6
+source-git-commit: bbdb045edf5f2c68eec5094e55c1688e725378dc
 workflow-type: tm+mt
-source-wordcount: '2825'
+source-wordcount: '2798'
 ht-degree: 2%
 
 ---
 
 # Bibliotecas de cliente y flujo de trabajo front-end {#client-side-libraries}
 
-Descubra cómo se utilizan las bibliotecas del lado del cliente o clientlibs para implementar y administrar CSS y JavaScript para una implementación de Adobe Experience Manager (AEM) Sites. Este tutorial también tratará sobre cómo se usa la variable [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) módulo, un desacoplado [webpack](https://webpack.js.org/) proyecto, se puede integrar en el proceso de compilación de extremo a extremo.
+Descubra cómo se utilizan las bibliotecas del lado del cliente o clientlibs para implementar y administrar CSS y JavaScript para una implementación de Adobe Experience Manager (AEM) Sites. Este tutorial también explica cómo se usa la variable [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) módulo, un desacoplado [webpack](https://webpack.js.org/) proyecto, se puede integrar en el proceso de compilación de extremo a extremo.
 
 ## Requisitos previos {#prerequisites}
 
@@ -62,10 +62,10 @@ Siempre puede ver el código terminado en [GitHub](https://github.com/adobe/aem-
 ## Objetivos
 
 1. Comprender cómo se incluyen las bibliotecas del lado del cliente en una página a través de una plantilla editable.
-1. Aprenda a utilizar el módulo UI.Frontend y un servidor de desarrollo de webpack para el desarrollo de front-end dedicado.
+1. Aprenda a utilizar la variable `ui.frontend` y un servidor de desarrollo de webpack para el desarrollo de front-end dedicado.
 1. Comprenda el flujo de trabajo completo de entrega de CSS y JavaScript compilados a una implementación de Sites.
 
-## Qué va a generar {#what-you-will-build}
+## Qué va a generar {#what-build}
 
 En este capítulo, se agregan algunos estilos de línea de base para el sitio WKND y la plantilla de página de artículo para acercar la implementación a la [Fragmentos de diseño de la interfaz de usuario](assets/pages-templates/wknd-article-design.xd). Utilice un flujo de trabajo front-end avanzado para integrar un proyecto de webpack en una biblioteca de cliente AEM.
 
@@ -83,13 +83,13 @@ Las bibliotecas del lado del cliente proporcionan un mecanismo para organizar y 
 
 Más información sobre el uso de [Las bibliotecas del lado del cliente se pueden encontrar aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=es)
 
-Las bibliotecas del lado del cliente tienen algunas limitaciones. Lo más notable es que el soporte para los lenguajes front-end más populares, como Sass, LESS y TypeScript es limitado. En el tutorial vemos cómo se llama a la función **ui.frontend** puede ayudar a resolver esto.
+Las bibliotecas del lado del cliente tienen algunas limitaciones. Lo más notable es que el soporte para los lenguajes front-end más populares, como Sass, LESS y TypeScript es limitado. En el tutorial, veamos cómo se llama a la función **ui.frontend** puede ayudar a resolver esto.
 
 Implemente el código de inicio en una instancia de AEM local y vaya a [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html). Esta página no tiene estilo. Implementemos bibliotecas del lado del cliente para la marca WKND para agregar CSS y JavaScript a la página.
 
 ## Organización de bibliotecas del lado del cliente {#organization}
 
-A continuación, exploramos la organización de clientlibs generada por la variable [Tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html).
+A continuación, analicemos la organización de clientlibs generada por la variable [Tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es).
 
 ![Organización clientlibrary de alto nivel](./assets/client-side-libraries/high-level-clientlib-organization.png)
 
@@ -104,7 +104,7 @@ A continuación, exploramos la organización de clientlibs generada por la varia
 
    ![Clientlibs en ui.apps](assets/client-side-libraries/four-clientlib-folders.png)
 
-   Inspeccionamos estos clientlibs con buenos detalles a continuación.
+   En la sección siguiente, estos clientlibs se revisan en buenos detalles.
 
 1. La siguiente tabla resume las bibliotecas de cliente. Más detalles sobre [las bibliotecas de cliente se pueden encontrar aquí](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html?lang=en#developing).
 
@@ -127,7 +127,6 @@ Las bibliotecas del lado del cliente no admiten idiomas más avanzados como [Sas
 1. Abra el archivo `main.scss`
 
    ![main.scss - entrypoint](assets/client-side-libraries/main-scss.png)
-client-side-library/main-scss
 
    `main.scss` es el punto de entrada a los archivos Sass en la variable `ui.frontend` módulo. Incluye el `_variables.scss` , que contiene una serie de variables de marca que se utilizarán en los distintos archivos de Sass del proyecto. La variable `_base.scss` también se incluye y define algunos estilos básicos para los elementos del HTML. Una expresión regular incluye los estilos de los componentes individuales de `src/main/webpack/components`. Otra expresión regular incluye los archivos de `src/main/webpack/site/styles`.
 
@@ -143,13 +142,13 @@ client-side-library/main-scss
 
    ![Archivos Sass de componentes](assets/client-side-libraries/component-sass-files.png)
 
-   Cada archivo se asigna a un componente principal como el [Componente Acordeón](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/accordion.html?lang=en#components). Cada componente principal se crea con [Modificador de elemento de bloque](https://getbem.com/) o notación BEM para facilitar la segmentación de clases CSS específicas con reglas de estilo. Los archivos situados debajo de `/components` el tipo de archivo del proyecto de AEM se ha atascado con las distintas reglas de BEM para cada componente.
+   Cada archivo se asigna a un componente principal como el [Componente Acordeón](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/accordion.html?lang=en). Cada componente principal se crea con [Modificador de elemento de bloque](https://getbem.com/) o notación BEM para facilitar la segmentación de clases CSS específicas con reglas de estilo. Los archivos situados debajo de `/components` el tipo de archivo del proyecto de AEM se ha atascado con las distintas reglas de BEM para cada componente.
 
 1. Descargar los estilos base de WKND **[wknd-base-style-src-v3.zip](/help/getting-started-wknd-tutorial-develop/project-archetype/assets/client-side-libraries/wknd-base-styles-src-v3.zip)** y **descomprimir** el archivo .
 
    ![Estilos base de WKND](assets/client-side-libraries/wknd-base-styles-unzipped.png)
 
-   Para acelerar el tutorial, hemos proporcionado varios archivos Sass que implementan la marca WKND en función de los componentes principales y la estructura de la plantilla de página de artículos.
+   Para acelerar el tutorial, se proporcionan varios archivos Sass que implementan la marca WKND en función de los componentes principales y la estructura de la plantilla de página de artículos.
 
 1. Sobrescribir el contenido de `ui.frontend/src` con archivos del paso anterior. El contenido del zip debe sobrescribir las siguientes carpetas:
 
@@ -183,7 +182,7 @@ El tipo de archivo del proyecto AEM configura automáticamente esta integración
 
    >[!NOTE]
    >
-   >`npm install` solo debe ejecutarse una vez, después de un nuevo clon o generación del proyecto.
+   >`npm install` ejecutar solo es necesario una vez, como después de un nuevo clon o generación del proyecto.
 
 1. Inicie el servidor de desarrollo de webpack en **watch** ejecutando el siguiente comando:
 
@@ -191,7 +190,7 @@ El tipo de archivo del proyecto AEM configura automáticamente esta integración
    $ npm run watch
    ```
 
-1. Esto compila el `src` los archivos de `ui.frontend` y sincronice los cambios con AEM en [http://localhost:4502](http://localhost:4502)
+1. Esto compila los archivos de origen de la variable `ui.frontend` y sincroniza los cambios con AEM en [http://localhost:4502](http://localhost:4502)
 
    ```shell
    + jcr_root/apps/wknd/clientlibs/clientlib-site/js/site.js
@@ -242,7 +241,7 @@ El tipo de archivo del proyecto AEM configura automáticamente esta integración
 
 A continuación, realice un pequeño cambio en la `ui.frontend` para ver el `npm run watch` implemente automáticamente los estilos en la instancia de AEM local.
 
-1. En el `ui.frontend` abra el archivo : `ui.frontend/src/main/webpack/site/_variables.scss`.
+1. De, el `ui.frontend` abra el archivo : `ui.frontend/src/main/webpack/site/_variables.scss`.
 1. Actualice el `$brand-primary` variable de color:
 
    ```scsss
@@ -276,13 +275,13 @@ A continuación, vamos a revisar cómo se hace referencia a clientlibs en la pá
 
    *Información de página > Política de página*
 
-1. Observe que las categorías para `wknd.dependencies` y `wknd.site` se enumeran aquí. De forma predeterminada, los clientlibs configurados mediante la Política de página se dividen para incluir el CSS en el encabezado de página y el JavaScript en el final del cuerpo. Si lo desea, puede enumerar explícitamente que el JavaScript clientlib se debe cargar en el encabezado de la página. Este es el caso de `wknd.dependencies`.
+1. Observe que las categorías para `wknd.dependencies` y `wknd.site` se enumeran aquí. De forma predeterminada, los clientlibs configurados mediante la Política de página se dividen para incluir el CSS en el encabezado de página y el JavaScript en el final del cuerpo. Puede indicar explícitamente el JavaScript clientlib que se cargará en el encabezado de Página. Este es el caso de `wknd.dependencies`.
 
    ![Política de página del menú Plantilla de página de artículo](assets/client-side-libraries/template-page-policy-clientlibs.png)
 
    >[!NOTE]
    >
-   > También es posible hacer referencia al `wknd.site` o `wknd.dependencies` desde el componente de página directamente, utilizando la variable `customheaderlibs.html` o `customfooterlibs.html` como vimos anteriormente para el `wknd.base` clientlib. El uso de la plantilla le da cierta flexibilidad en cuanto a que puede elegir qué clientlibs se utilizan por plantilla. Por ejemplo, si tiene una biblioteca JavaScript pesada que solo se va a usar en una plantilla seleccionada.
+   > También es posible hacer referencia al `wknd.site` o `wknd.dependencies` desde el componente de página directamente, utilizando la variable `customheaderlibs.html` o `customfooterlibs.html` secuencia de comandos. El uso de la plantilla ofrece flexibilidad en cuanto a que puede elegir qué clientlibs se utilizan por plantilla. Por ejemplo, si tiene una biblioteca JavaScript pesada que solo se va a usar en una plantilla seleccionada.
 
 1. Vaya a la **Parques de esquí LA** página creada con el **Plantilla de página de artículo**: [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html).
 
@@ -314,7 +313,7 @@ A continuación, vamos a revisar cómo se hace referencia a clientlibs en la pá
 
    >[!NOTE]
    >
-   > Si sigue a la versión 6.5/6.4, las bibliotecas del lado del cliente no se minificarán automáticamente. Consulte la documentación de [Administrador de bibliotecas de HTML para habilitar la minificación (recomendado)](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=en#using-preprocessors).
+   > Para AEM 6.5/6.4, las bibliotecas del lado del cliente no se minifican automáticamente. Consulte la documentación de [Administrador de bibliotecas de HTML para habilitar la minificación (recomendado)](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=en#using-preprocessors).
 
    >[!WARNING]
    >
@@ -333,9 +332,9 @@ Ver el código terminado en [GitHub](https://github.com/adobe/aem-guides-wknd) o
 
 ### Servidor de desarrollo de Webpack: marcado estático {#webpack-dev-static}
 
-En el anterior par de ejercicios pudimos actualizar varios archivos Sass en la **ui.frontend** y a través de un proceso de compilación, finalmente verán que estos cambios se reflejan en AEM. A continuación, vemos una técnica que usa un [webpack-dev-server](https://webpack.js.org/configuration/dev-server/) desarrollar rápidamente nuestros estilos front-end contra **static** HTML.
+En el par anterior de ejercicios, varios archivos Sass en la **ui.frontend** se actualizaron y a través de un proceso de compilación, finalmente verán que estos cambios se reflejan en AEM. A continuación, veamos una técnica que usa un [webpack-dev-server](https://webpack.js.org/configuration/dev-server/) desarrollar rápidamente los estilos front-end contra **static** HTML.
 
-Esta técnica es útil si la mayoría de los estilos y el código front-end son realizados por un desarrollador de Front-End dedicado que puede no tener acceso fácil a un entorno AEM. Esta técnica también permite a la FED realizar modificaciones directamente al HTML, que luego se puede entregar a un desarrollador AEM para que las implemente como componentes.
+Esta técnica es útil si la mayoría de los estilos y el código front-end son realizados por un desarrollador front-end dedicado que puede no tener acceso fácil a un entorno AEM. Esta técnica también permite a la FED realizar modificaciones directamente al HTML, que luego se puede entregar a un desarrollador AEM para que las implemente como componentes.
 
 1. Copie la fuente de la página del artículo de skatepark de LA en [http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html?wcmmode=disabled](http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html?wcmmode=disabled).
 1. Vuelva a abrir el IDE. Pegue el marcado copiado de AEM en el `index.html` en el **ui.frontend** módulo debajo `src/main/webpack/static`.
@@ -350,7 +349,7 @@ Esta técnica es útil si la mayoría de los estilos y el código front-end son 
    <script type="text/javascript" src="/etc.clientlibs/wknd/clientlibs/clientlib-site.js"></script>
    ```
 
-   Podemos eliminar esas referencias porque el servidor de desarrollo de webpack genera estos artefactos automáticamente.
+   Elimine estas referencias porque el servidor de desarrollo de webpack genera estos artefactos automáticamente.
 
 1. Inicie el servidor de desarrollo de webpack desde un nuevo terminal ejecutando el siguiente comando desde el **ui.frontend** módulo:
 
@@ -389,13 +388,13 @@ Esta técnica es útil si la mayoría de los estilos y el código front-end son 
 
 **[aemfeed](https://aemfed.io/)** es una herramienta de código abierto de línea de comandos que puede utilizarse para acelerar el desarrollo del front-end. Está alimentado por [aemsync](https://www.npmjs.com/package/aemsync), [Browsersync](https://browsersync.io/)y [Seguimiento de registros de Sling](https://sling.apache.org/documentation/bundles/log-tracers.html).
 
-En un nivel superior **aemfeed** está diseñado para escuchar los cambios de archivos dentro del **ui.apps** y sincronizarlos automáticamente directamente con una instancia de AEM en ejecución. En función de los cambios, un explorador local se actualizará automáticamente, acelerando así el desarrollo del front-end. También está construido para funcionar con el rastreador de registros de Sling para mostrar automáticamente cualquier error del lado del servidor directamente en el terminal.
+En un nivel superior, la variable `aemfed`está diseñado para escuchar los cambios de archivos dentro del **ui.apps** y sincronizarlos automáticamente directamente con una instancia de AEM en ejecución. En función de los cambios, se actualiza automáticamente un explorador local, acelerando así el desarrollo del front-end. También se ha creado para funcionar con el rastreador de registros de Sling para mostrar automáticamente cualquier error del lado del servidor directamente en el terminal.
 
 Si está haciendo mucho trabajo dentro de **ui.apps** módulo, modificación de secuencias de comandos HTL y creación de componentes personalizados, **aemfeed** puede ser una potente herramienta para usar. [Puede encontrar la documentación completa aquí](https://github.com/abmaonline/aemfed).
 
 ### Depuración de bibliotecas del lado del cliente {#debugging-clientlibs}
 
-Con diferentes métodos de **categories** y **incrustaciones** para incluir varias bibliotecas de cliente, puede resultar complicado solucionar problemas. AEM expone varias herramientas para ayudarle con esto. Una de las herramientas más importantes es **Reconstruir bibliotecas de clientes** que obliga a AEM a volver a compilar cualquier archivo LESS y a generar el CSS.
+Uso de diferentes métodos de **categories** y **incrustaciones** para incluir varias bibliotecas de cliente, puede resultar complicado solucionar problemas. AEM expone varias herramientas para ayudarle con esto. Una de las herramientas más importantes es **Reconstruir bibliotecas de clientes** que obliga a AEM a volver a compilar cualquier archivo LESS y a generar el CSS.
 
 * [**Libros volcados**](http://localhost:4502/libs/granite/ui/content/dumplibs.html) : enumera las bibliotecas de cliente registradas en la instancia de AEM. `<host>/libs/granite/ui/content/dumplibs.html`
 
