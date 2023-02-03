@@ -9,10 +9,10 @@ level: Intermediate
 kt: 9350
 thumbnail: KT-9350.jpeg
 exl-id: 5c1ff98f-d1f6-42ac-a5d5-676a54ef683c
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 6ae98ce749f8a485bdaa4c6c6232e52d8d6246b3
 workflow-type: tm+mt
-source-wordcount: '1076'
-ht-degree: 4%
+source-wordcount: '1133'
+ht-degree: 5%
 
 ---
 
@@ -53,6 +53,8 @@ Este tutorial utiliza `curl` para realizar las configuraciones de la API de Clou
 Comience habilitando la salida de puerto flexible en AEM as a Cloud Service.
 
 1. En primer lugar, determine la región en la que se configuran las redes avanzadas mediante la API de Cloud Manager [listRegion](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) operación. La variable `region name` es necesario para realizar llamadas posteriores a la API de Cloud Manager. Normalmente, se utiliza la región en la que reside el entorno de producción.
+
+   Busque la región de su entorno as a Cloud Service AEM en [Cloud Manager](https://my.cloudmanager.adobe.com) en el [detalles del entorno](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en#viewing-environment). El nombre de región que se muestra en Cloud Manager puede ser [asignado al código de región](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) se utiliza en la API de Cloud Manager.
 
    __petición HTTP listRegion__
 
