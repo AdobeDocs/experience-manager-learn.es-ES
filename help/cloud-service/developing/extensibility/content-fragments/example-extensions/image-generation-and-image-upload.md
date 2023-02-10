@@ -1,6 +1,6 @@
 ---
 title: Generación de imágenes OpenAI mediante una extensión de la consola de fragmentos de contenido personalizada
-description: Un ejemplo AEM la extensión de la consola Fragmentos de contenido que genera imagen digital a partir de descripciones de idioma naturales mediante OpenAI o DALL-E 2 y carga la imagen generada en AEM y la asocia al fragmento de contenido.
+description: Obtenga información sobre cómo generar imagen digital a partir de la descripción del idioma natural mediante OpenAI o DALL-E 2 y carga la imagen generada en AEM mediante una extensión de la consola de fragmentos de contenido personalizada.
 feature: Developer Tools
 version: Cloud Service
 topic: Development
@@ -10,9 +10,9 @@ kt: 11649
 thumbnail: KT-11649.png
 doc-type: article
 last-substantial-update: 2023-01-04T00:00:00Z
-source-git-commit: a298dbd27dfda00c80d2098199eb418200af0233
+source-git-commit: 5f0464d7bb8ffde9a9b3bd7fd67dc0e341970a6f
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1399'
 ht-degree: 1%
 
 ---
@@ -20,9 +20,11 @@ ht-degree: 1%
 
 # AEM generación de recursos de imagen mediante OpenAI
 
-![Generación de imágenes digitales](./assets/digital-image-generation/screenshot.png){align="center"}
+Obtenga información sobre cómo generar una imagen mediante OpenAI o DALL.E 2 y cargarla en AEM DAM para la velocidad de contenido.
 
-Este ejemplo AEM la extensión de la consola de fragmentos de contenido es un [barra de acciones](../action-bar.md) extensión que genera imágenes digitales a partir de entrada de lenguaje natural mediante [API de OpenAI](https://openai.com/api/) o [DALL.E 2](https://openai.com/dall-e-2/). La imagen generada se carga en el DAM de AEM y la propiedad de imagen del fragmento de contenido seleccionado se actualiza para hacer referencia a esta imagen cargada de DAM recién generada.
+![Generación de imágenes digitales](./assets/digital-image-generation/screenshot.png){width="500" zoomable="yes"}
+
+Este ejemplo AEM la extensión de la consola de fragmentos de contenido es un [barra de acciones](../action-bar.md) extensión que genera imagen digital a partir de entrada de lenguaje natural mediante [API de OpenAI](https://openai.com/api/) o [DALL.E 2](https://openai.com/dall-e-2/). La imagen generada se carga en el DAM de AEM y la propiedad de imagen del fragmento de contenido seleccionado se actualiza para hacer referencia a esta imagen cargada de DAM recién generada.
 
 En este ejemplo aprenderá:
 
@@ -108,6 +110,12 @@ La aplicación de extensión de App Builder generada se actualiza como se descri
 1. Instalación debajo de las bibliotecas de Node.js
    1. [La biblioteca OpenAI Node.js](https://github.com/openai/openai-node#installation) - para invocar fácilmente la API de OpenAI
    1. [Carga de AEM](https://github.com/adobe/aem-upload#install) : para cargar imágenes en instancias AEM-CS.
+
+
+>[!TIP]
+>
+>En las secciones siguientes, conozca los archivos JavaScript de acción clave React y Adobe I/O Runtime. Para referencia a los archivos clave de `web-src` y  `actions` carpeta del proyecto AppBuilder , consulte [adobe-appbuilder-cfc-ext-image-generation-code.zip](./assets/digital-image-generation/adobe-appbuilder-cfc-ext-image-generation-code.zip).
+
 
 ## Rutas de la aplicación{#app-routes}
 
@@ -198,7 +206,7 @@ En esta aplicación de ejemplo, hay un componente React modal (`GenerateImageMod
 1. La respuesta de la operación de generación de imágenes, que proporciona el vínculo AEM detalles del recurso de la imagen cargada recientemente generada.
 
 Es importante que cualquier interacción con AEM de la extensión se delegue en un [Acción de Adobe I/O Runtime de App Builder](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/), que es un proceso independiente sin servidor que se ejecuta en [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/).
-El uso de acciones de Adobe I/O Runtime para comunicarse con AEM, es evitar problemas de conectividad del Cross-Origin Resource Sharing (CORS).
+El uso de acciones de Adobe I/O Runtime para comunicarse con AEM, y es para evitar problemas de conectividad de Cross-Origin Resource Sharing (CORS).
 
 Cuando la variable _Generar imagen_ se envía, se envía un `onSubmitHandler()` invoca la acción de Adobe I/O Runtime, pasando la descripción de la imagen, el host de AEM actual (dominio) y el token de acceso AEM del usuario. A continuación, la acción llama a la función [Generación de imágenes](https://beta.openai.com/docs/guides/images/image-generation-beta) API para generar una imagen mediante la descripción de la imagen enviada. Siguiente utilizando [Carga de AEM](https://github.com/adobe/aem-upload) del módulo de nodos `DirectBinaryUpload` clase que carga la imagen generada en AEM y finalmente utiliza [API de fragmento de contenido AEM](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html) para actualizar los fragmentos de contenido.
 
@@ -458,6 +466,11 @@ export default function GenerateImageModal() {
   }
 }
 ```
+
+>[!NOTE]
+>
+>En el `buildAssetDetailsURL()` , la función `aemAssetdetailsURL` asume que la variable [Shell unificado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html#overview) está activada. Si ha deshabilitado el shell unificado, debe eliminar el `/ui#/aem` del valor de variable.
+
 
 ## Acción de Adobe I/O Runtime
 
