@@ -6,10 +6,10 @@ sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 8bb7771effc95c70a9ddeffb1c54a1c2282e06dd
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 27%
+source-wordcount: '383'
+ht-degree: 26%
 
 ---
 
@@ -75,6 +75,7 @@ ht-degree: 27%
       + [Asset Share Commons](./sharing/asset-share-commons-user-experience-feature-video-understand.md)
       + [Configuración de Asset Share Commons en AEM locales](./sharing/asset-share-commons-technical-video-setup.md)
       + [Uso compartido de recursos temáticos Commons](./sharing/asset-share-commons-feature-video-theming.md)
+      + [Kit de recursos de Asset Share Commons](./sharing/asset-share/asset-share-commons-asset-kits.md)
    + [Recursos conectados](./sharing/connected-assets.md)
 
 
