@@ -9,7 +9,7 @@ level: Beginner
 jira: KT-11861
 thumbnail: KT-11861.png
 last-substantial-update: 2023-02-15T00:00:00Z
-source-git-commit: 9123771fed25cf2c5c3443c92dcc0e6704476bb0
+source-git-commit: 4ff15fb482d31b984775ca691b53d117a2eba23c
 workflow-type: tm+mt
 source-wordcount: '202'
 ht-degree: 3%
@@ -30,6 +30,11 @@ Este vídeo muestra:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415490/?quality=12&learn=on)
 
+## Siguiente paso
+
+Más información [cómo usar](./how-to-use.md) un RDE para implementar código y contenido de su entorno de desarrollo integrado (IDE) favorito para ciclos de desarrollo más rápidos.
+
+
 ## Recursos adicionales
 
 [Habilitar RDE en una documentación de programa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html#enabling-rde-in-a-program)
@@ -41,7 +46,3 @@ Configuración de [CLI extensible de Adobe I/O Runtime](https://developer.adobe.
 [Complemento CLI de Adobe I/O Runtime para interacciones con entornos de desarrollo rápido AEM](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
 
 [Complemento CLI de AIO de Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager)
-
-## Siguiente paso
-
-Más información [cómo usar](./how-to-use.md) un RDE para implementar código y contenido de su entorno de desarrollo integrado (IDE) favorito para ciclos de desarrollo más rápidos.
