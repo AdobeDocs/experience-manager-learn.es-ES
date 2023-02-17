@@ -9,9 +9,9 @@ level: Beginner
 jira: KT-11861
 thumbnail: KT-11861.png
 last-substantial-update: 2023-02-15T00:00:00Z
-source-git-commit: 81e1e2bf0382f6a577c1037dcd0d58ebc73366cd
+source-git-commit: 65d54f0137786c7e8ac9ac962c424dd20bf5f3dd
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '492'
 ht-degree: 4%
 
 ---
@@ -45,19 +45,19 @@ Para implementar el [El proyecto WKND Sites](https://github.com/adobe/aem-guides
 
 Instale la CLI extensible de Adobe I/O Runtime, también conocida como `aio CLI` ejecutando el siguiente comando desde la línea de comandos.
 
-    &quot;shell
-    $ npm install -g @adobe/aio-cli
-    &quot;
+```shell
+$ npm install -g @adobe/aio-cli
+```
 
 ### AEM complementos
 
 Instalación de Cloud Manager y AEM complementos RDE mediante el uso de `aio cli`&#39;s `plugins:install` comando.
 
-    &quot;shell
-    $ complementos de aio:instalar @adobe/aio-cli-plugin-cloudmanager
-    
-    $ complementos de aio:install @adobe/aio-cli-plugin-aem-rde
-    &quot;
+```shell
+$ aio plugins:install @adobe/aio-cli-plugin-cloudmanager
+
+$ aio plugins:install @adobe/aio-cli-plugin-aem-rde
+```
 
 El complemento de Cloud Manager permite a los desarrolladores interactuar con Cloud Manager desde la línea de comandos.
 
@@ -91,23 +91,23 @@ Los complementos AEM deben configurarse para interactuar con su RDE. En primer l
 
 Puede verificar los valores de configuración actuales ejecutando el siguiente comando.
 
-    &quot;shell
-    $ aio config:list
-    &quot;
+```shell
+$ aio config:list
+```
 
 Además, para cambiar o saber a qué organización ha iniciado sesión, puede utilizar el siguiente comando.
 
-    &quot;shell
-    $ aio donde
-    &quot;
+```shell
+$ aio where
+```
 
 ## Verifique el acceso RDE
 
 Compruebe la instalación y configuración AEM del complemento RDE ejecutando el siguiente comando.
 
-    &quot;shell
-    $ aio aem:rde:status
-    &quot;
+```shell
+$ aio aem:rde:status
+```
 
 La información de estado de RDE se muestra como el estado del entorno, la lista de _su proyecto AEM_ paquetes y configuraciones en el servicio de creación y publicación.
 
