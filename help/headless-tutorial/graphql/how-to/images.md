@@ -9,10 +9,10 @@ level: Intermediate
 kt: 10253
 thumbnail: KT-10253.jpeg
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
-source-git-commit: 3a7c04dfe465c1eff29ba6b4e4b7e24f047e5b42
+source-git-commit: ae49fb45db6f075a34ae67475f2fcc5658cb0413
 workflow-type: tm+mt
-source-wordcount: '1182'
-ht-degree: 1%
+source-wordcount: '1177'
+ht-degree: 2%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 Las imágenes son un aspecto crítico de [desarrollo de experiencias ricas, atractivas AEM sin objetivos](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=es). AEM sin encabezado admite la administración de recursos de imagen y su entrega optimizado.
 
-Los fragmentos de contenido utilizados en AEM modelado de contenido sin encabezado suelen hacer referencia a recursos de imagen que se van a mostrar en la experiencia sin encabezado. AEM las consultas de GraphQL se pueden escribir para proporcionar direcciones URL a imágenes en función de desde dónde se hace referencia a la imagen.
+Los fragmentos de contenido utilizados en AEM modelado de contenido sin encabezado suelen hacer referencia a recursos de imagen que se van a mostrar en la experiencia sin encabezado. AEM las consultas de GraphQL se pueden escribir para proporcionar direcciones URL a las imágenes en función de desde dónde se hace referencia a la imagen.
 
 La variable `ImageRef` El tipo tiene tres opciones de URL para las referencias de contenido:
 
@@ -35,10 +35,10 @@ La mejor forma de utilizar los campos es según los siguientes criterios:
 | Campos ImageRef | Aplicación web del cliente ofrecida desde AEM | La aplicación de cliente consulta al autor de AEM | La aplicación del cliente consulta AEM Publish |
 |--------------------|:------------------------------:|:-----------------------------:|:------------------------------:|
 | `_path` | š | ✓ (La aplicación debe especificar el host en la dirección URL) | ✓ (La aplicación debe especificar el host en la dirección URL) |
-| `_authorUrl` | ü | š | ü |
-| `_publishUrl` | ü | ü | š |
+| `_authorUrl` | ✘ | ✔ | ✘ |
+| `_publishUrl` | ✘ | ✘ | ✔ |
 
-Uso de `_authorUrl` y `_publishUrl` debe coincidir con el extremo de AEM GraphQL que se está utilizando para generar la respuesta de GraphQL.
+Uso de `_authorUrl` y `_publishUrl` debe coincidir con el extremo de GraphQL AEM que se está utilizando para generar la respuesta de GraphQL.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_learn_headless_graphql_images"
@@ -55,7 +55,7 @@ Los tipos de campo se revisan en el [Modelo de fragmento de contenido](https://e
 
 ## Consulta persistente de GraphQL
 
-En la consulta de GraphQL, devuelva el campo como `ImageRef` y solicite los campos correspondientes `_path`, `_authorUrl`o `_publishUrl` requerida por su aplicación. Por ejemplo, para consultar una aventura en la [Proyecto de demostración de referencia WKND](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-site.html) e incluyendo la URL de imagen para las referencias de recurso de imagen en su `primaryImage` , se puede realizar con una nueva consulta persistente `wknd-shared/adventure-image-by-path` definido como:
+En la consulta de GraphQL, devuelva el campo como `ImageRef` y solicite los campos correspondientes `_path`, `_authorUrl`o `_publishUrl` requerida por su aplicación. Por ejemplo, para consultar una aventura en la [Proyecto del sitio WKND](https://github.com/adobe/aem-guides-wknd) e incluyendo la URL de imagen para las referencias de recurso de imagen en su `primaryImage` , se puede realizar con una nueva consulta persistente `wknd-shared/adventure-image-by-path` definido como:
 
 ```graphql
 query ($path: String!) {
@@ -126,9 +126,9 @@ En este ejemplo se crean tres representaciones:
 
 | Nombre de representación | Extensión | Anchura máxima |
 |-----------------------|:---------:|----------:|
-| web-optimized-large | webp | 1200px |
-| web-optimized-medium | webp | 900px |
-| web-optimized-small | webp | 600px |
+| web-optimized-large | webp | 1200 px |
+| web-optimized-medium | webp | 900 px |
+| web-optimized-small | webp | 600 px |
 
 Los atributos que se señalan en la tabla anterior son importantes:
 

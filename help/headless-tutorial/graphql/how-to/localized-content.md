@@ -8,10 +8,10 @@ role: Developer
 level: Intermediate
 kt: 10254
 thumbnail: KT-10254.jpeg
-source-git-commit: 4fa84b0461cbdf2e25336259c4128be5585b8787
+source-git-commit: ae49fb45db6f075a34ae67475f2fcc5658cb0413
 workflow-type: tm+mt
-source-wordcount: '513'
-ht-degree: 2%
+source-wordcount: '508'
+ht-degree: 3%
 
 ---
 
@@ -28,7 +28,7 @@ Asegúrese de que los fragmentos de contenido localizados en AEM siguen el [estr
 
 Las carpetas de configuración regional deben ser del mismo nivel y el nombre de la carpeta, en lugar de el título, debe ser válido [Código ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) que representa la configuración regional del contenido contenido de la carpeta.
 
-El código de configuración regional también es el valor utilizado para filtrar los fragmentos de contenido devueltos por la consulta de GraphQL.
+El código de configuración regional también es el valor utilizado para filtrar los fragmentos de contenido que devuelve la consulta de GraphQL.
 
 | Código regional | AEM ruta | Configuración regional del contenido |
 |--------------------------------|----------|----------|
@@ -38,7 +38,7 @@ El código de configuración regional también es el valor utilizado para filtra
 
 ## Consulta persistente de GraphQL
 
-AEM proporciona un `_locale` Filtro GraphQL que filtra automáticamente el contenido por código de configuración regional . Por ejemplo, para consultar todas las aventuras de inglés en la [Proyecto de demostración de referencia WKND](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-site.html) se puede hacer con una nueva consulta persistente `wknd-shared/adventures-by-locale` definido como:
+AEM proporciona un `_locale` Filtro de GraphQL que filtra automáticamente el contenido por código de configuración regional . Por ejemplo, para consultar todas las aventuras de inglés en la [Proyecto del sitio WKND](https://github.com/adobe/aem-guides-wknd) se puede hacer con una nueva consulta persistente `wknd-shared/adventures-by-locale` definido como:
 
 ```graphql
 query($locale: String!) {
@@ -112,7 +112,7 @@ El componente Adventures consulta AEM todas las aventuras por configuración reg
 
 Este método se puede ampliar a otras consultas de la aplicación, lo que garantiza que todas las consultas solo incluyan contenido especificado por la selección de configuración regional de un usuario.
 
-La consulta con AEM se realiza en el vínculo React personalizado [getAdventuresByLocale, descrito con más detalle en la documentación de Querying AEM GraphQL](./aem-headless-sdk.md).
+La consulta con AEM se realiza en el vínculo React personalizado [getAdventuresByLocale, descrito con más detalle en la documentación de Consulta AEM GraphQL](./aem-headless-sdk.md).
 
 ```javascript
 // src/Adventures.js
