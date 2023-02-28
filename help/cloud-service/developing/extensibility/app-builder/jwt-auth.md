@@ -8,7 +8,7 @@ role: Developer
 level: Intermediate
 kt: 11743
 last-substantial-update: 2023-01-17T00:00:00Z
-source-git-commit: 643a9844f19aa1bd153661540ec7f7398a35118e
+source-git-commit: 40679e80fd9270dd9fad8174a986fd1fdd5e3d29
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 1%
@@ -99,7 +99,7 @@ JWT_PRIVATE_KEY=LS0tLS1C..kQgUFJJVkFURSBLRVktLS0tLQ==
 
 ## Asignación de entradas
 
-Con el valor de credencial JWT establecido en la variable `.env` , deben asignarse a las entradas de acción de App Builder para que se puedan leer en la propia acción. Para ello, agregue entradas para cada variable en la variable `ext.config.yaml` acción `inputs` en formato: `INPUT_NAME=$ENV_KEY`.
+Con el valor de credencial JWT establecido en la variable `.env` , deben asignarse a las entradas de acción de App Builder para que se puedan leer en la propia acción. Para ello, agregue entradas para cada variable en la variable `ext.config.yaml` acción `inputs` en formato: `PARAMS_INPUT_NAME: $ENV_KEY`.
 
 Por ejemplo:
 
