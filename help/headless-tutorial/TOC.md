@@ -23,7 +23,7 @@ ht-degree: 21%
    + [Información general](./graphql/overview.md)
    + Configuración rápida {#quick-setup}
       + [Servicio de nube de ](./graphql/quick-setup/cloud-service.md)
-      + [SDK local](./graphql/quick-setup/local-sdk.md)
+      + [El SDK local](./graphql/quick-setup/local-sdk.md)
    + Serie de vídeos{#video-series}
       + [1 - Conceptos básicos de modelos](./graphql/video-series/modeling-basics.md)
       + [2: Modelado avanzado](./graphql/video-series/advanced-modeling.md)
