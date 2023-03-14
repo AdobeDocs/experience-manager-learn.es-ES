@@ -1,5 +1,5 @@
 ---
-title: Informar sobre campos de datos de formularios enviados mediante Adobe Analytics
+title: Informar sobre los campos de datos de formulario enviados mediante Adobe Analytics
 description: Integrar AEM Forms CS con Adobe Analytics para informar sobre campos de datos de formulario
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
@@ -9,7 +9,7 @@ version: Cloud Service
 feature: Adaptive Forms
 topic: Development
 kt: 12557
-source-git-commit: 4100061624bd8955bee392f1eced20f388f2902c
+source-git-commit: 439167be96959baea54f50a221c6d26f8fab78b2
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Crear los elementos de datos adecuados
 
-En la propiedad de etiquetas se han agregado dos nuevos elementos de datos (ApplicantsStateOfResidence y validationError).
+En la propiedad Tags se han agregado dos nuevos elementos de datos (ApplicantsStateOfResidence y validationError).
 ![formulario adaptable](assets/data_elements.png)
 
 ## ApplicantStateOfResidence
