@@ -10,7 +10,7 @@ doc-type: Tutorial
 last-substantial-update: 2023-03-17T00:00:00Z
 jira: KT-10841
 thumbnail: 3416906.jpeg
-source-git-commit: ea7cd118d9cba97d2b497f6659f74d2fe8331c66
+source-git-commit: 024b2faac2e5a1a8d4bac64d1f70f292aac75dd0
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 0%
@@ -71,7 +71,7 @@ Realice una actualización dura (borrando la caché local del explorador) al obt
 
 Vamos a explorar la aplicación WKND, una sencilla aplicación React que muestra las aventuras de AEM mediante API de GraphQL sin encabezado.
 
-El código de ejemplo está disponible en [Github.com](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/preview-app).
+El código de ejemplo está disponible en [Github.com](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/preview-tutorial).
 
 ## Direcciones URL y rutas
 
