@@ -7,10 +7,10 @@ sub-product: Experience Manager Sites
 version: 6.5, Cloud Service
 kt: 2963
 index: y
-source-git-commit: c96b8c9761ff9477fda40d641db5021994b32754
+source-git-commit: ea7cd118d9cba97d2b497f6659f74d2fe8331c66
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 21%
+source-wordcount: '282'
+ht-degree: 20%
 
 ---
 
@@ -55,13 +55,14 @@ ht-degree: 21%
       + [AEM hosts](./graphql/deployment/configurations/aem-hosts.md)
       + [CORS](./graphql/deployment/configurations/cors.md)
       + [Filtros de Dispatcher](./graphql/deployment/configurations/dispatcher-filters.md)
-+ Instrucciones de uso {#how-to}
++ Cómo {#how-to}
    + [Texto enriquecido](./graphql/how-to/rich-text.md)
    + [Imágenes](./graphql/how-to/images.md)
    + [Contenido localizado](./graphql/how-to/localized-content.md)
+   + [Vista previa](./graphql/how-to/preview.md)
    + [SDK AEM sin encabezado](./graphql/how-to/aem-headless-sdk.md)
    + [Instalación de GraphiQL en AEM 6.5](./graphql/how-to/install-graphiql-aem-6-5.md)
-   + Ejemplos {#example-apps}
+   + Por ejemplo {#example-apps}
       + [React](./graphql/example-apps/react-app.md)
       + [Next.js](./graphql/example-apps/next-js.md)
       + [Componente web](./graphql/example-apps/web-component.md)
