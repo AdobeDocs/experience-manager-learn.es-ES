@@ -14,9 +14,9 @@ role: Developer
 level: Intermediate, Experienced
 last-substantial-update: 2023-01-12T00:00:00Z
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
-source-git-commit: 8b6d8d99c806e782a1ddce2b300211f8d4c9da56
+source-git-commit: 1401710c19ae6ee6a2822ae06286bef4f92cda45
 workflow-type: tm+mt
-source-wordcount: '1931'
+source-wordcount: '1937'
 ht-degree: 0%
 
 ---
@@ -124,7 +124,7 @@ Para acceder a AEM as a Cloud Service mediante las credenciales de servicio, la 
 
 + Cuando existen credenciales de servicio, la aplicación externa utiliza este token de acceso en lugar del token de acceso de desarrollo local al acceder a AEM as a Cloud Service
 
-En este tutorial, el Adobe `@adobe/jwt-auth` El módulo npm se utiliza para ambos, (1) genera el JWT a partir de las credenciales del servicio y (2) lo cambia por un token de acceso, en una sola llamada a la función. Si la aplicación no está basada en JavaScript, revise la [código de muestra en otros idiomas](https://developer.adobe.com/developer-console/docs/guides/) para obtener información sobre cómo crear un JWT a partir de las credenciales del servicio y cómo intercambiarlo por un token de acceso con Adobe IMS.
+En este tutorial, el Adobe `@adobe/jwt-auth` El módulo npm se utiliza para ambos, (1) genera el JWT a partir de las credenciales del servicio y (2) lo cambia por un token de acceso, en una sola llamada a la función. Si la aplicación no está basada en JavaScript, revise la [código de muestra en otros idiomas](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/samples/) para obtener información sobre cómo crear un JWT a partir de las credenciales del servicio y cómo intercambiarlo por un token de acceso con Adobe IMS.
 
 ## Leer las credenciales del servicio
 
@@ -149,7 +149,7 @@ function getCommandLineParams() {
 
 Una vez leídas las credenciales de servicio, se utilizan para generar un JWT que luego se intercambia con las API de Adobe IMS por un token de acceso. Este token de acceso se puede utilizar para acceder a AEM as a Cloud Service.
 
-Esta aplicación de ejemplo está basada en Node.js, por lo que es mejor utilizar [@adobe/jwt-auth](https://www.npmjs.com/package/@adobe/jwt-auth) módulo npm para facilitar la (1) generación de JWT y (20 intercambio con Adobe IMS. Si su aplicación se desarrolla con otro idioma, consulte [las muestras de código correspondientes](https://developer.adobe.com/developer-console/docs/guides/) sobre cómo construir la solicitud HTTP a Adobe IMS utilizando otros lenguajes de programación.
+Esta aplicación de ejemplo está basada en Node.js, por lo que es mejor utilizar [@adobe/jwt-auth](https://www.npmjs.com/package/@adobe/jwt-auth) módulo npm para facilitar la (1) generación de JWT y (20 intercambio con Adobe IMS. Si su aplicación se desarrolla con otro idioma, consulte [las muestras de código correspondientes](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/samples/) sobre cómo construir la solicitud HTTP a Adobe IMS utilizando otros lenguajes de programación.
 
 1. Actualice el `getAccessToken(..)` para inspeccionar el contenido del archivo JSON y determinar si representa un token de acceso de desarrollo local o credenciales de servicio. Esto se puede lograr fácilmente comprobando la existencia de la variable `.accessToken` , que solo existe para el token de acceso de desarrollo local JSON.
 
@@ -258,6 +258,6 @@ La salida al terminal tiene el siguiente aspecto:
 
 ![Actualización de metadatos de uso restringido de WKND](./assets/service-credentials/asset-metadata.png)
 
-## ¡Enhorabuena! 
+## Enhorabuena.
 
 Ahora que hemos accedido mediante programación a AEM as a Cloud Service mediante un token de acceso de desarrollo local y un token de acceso de servicio a servicio listo para la producción.
