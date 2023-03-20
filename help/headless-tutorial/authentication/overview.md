@@ -13,16 +13,16 @@ topic: Headless, Integrations
 role: Developer
 level: Intermediate, Experienced
 exl-id: 63c23f22-533d-486c-846b-fae22a4d68db
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 8fc36698f06fea0eaaf818867c7e713453e0452d
 workflow-type: tm+mt
-source-wordcount: '643'
-ht-degree: 1%
+source-wordcount: '641'
+ht-degree: 0%
 
 ---
 
 # Autenticación basada en token para AEM as a Cloud Service
 
-AEM expone una variedad de extremos HTTP con los que se puede interactuar de forma directa, desde GraphQL, AEM Content Services a la API HTTP de Assets. A menudo, estos consumidores sin encabezado pueden tener que autenticarse en AEM para acceder a contenido o acciones protegidos. Para facilitarlo, AEM admite la autenticación basada en token de solicitudes HTTP de aplicaciones, servicios o sistemas externos.
+AEM expone una variedad de extremos HTTP con los que se puede interactuar de forma directa, desde GraphQL, los servicios de contenido AEM a la API HTTP de Assets. A menudo, estos consumidores sin encabezado pueden tener que autenticarse en AEM para acceder a contenido o acciones protegidos. Para facilitarlo, AEM admite la autenticación basada en token de solicitudes HTTP de aplicaciones, servicios o sistemas externos.
 
 En este tutorial, explore bien cómo una aplicación externa puede autenticarse mediante programación e interactuar con para AEM as a Cloud Service a través de HTTP mediante tokens de acceso.
 
@@ -75,5 +75,5 @@ Las Credenciales de Servicio son las credenciales valiosas utilizadas en cualqui
 
 + [Descargue la aplicación de ejemplo](./assets/aem-guides_token-authentication-external-application.zip)
 + Otras muestras de código de creación e intercambio de JWT
-   + [Ejemplos de código de Node.js, Java, Python, C#.NET y PHP](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/samples/samples.md)
+   + [Ejemplos de código de Node.js, Java, Python, C#.NET y PHP](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/samples/)
    + [Ejemplo de código basado en JavaScript/Axios](https://github.com/adobe/aemcs-api-client-lib)
