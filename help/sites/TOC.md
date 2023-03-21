@@ -5,9 +5,9 @@ breadcrumb-title: Tutoriales de AEM Sites
 feature-set: Experience Manager Sites, Experience Manager
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: c82965636ddeef7dc165e0bea079c99f1a16e0ca
+source-git-commit: ef1fe712921bd5516cb389862cacf226a71aa193
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '441'
 ht-degree: 28%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 28%
    + [Fragmentos de contenido vs. Fragmentos de experiencias](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
 
 + Desarrollo de {#developing}
-   + [Tipo de archivo del proyecto AEM](developing/aem-project-archetype.md)
+   + [Tipo de archivo del proyecto AEM.](developing/aem-project-archetype.md)
    + [Introducción a AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es)
    + [Introducción a AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es)
    + [Introducción a AEM Editor de SPA y React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
@@ -98,12 +98,12 @@ ht-degree: 28%
 + Integraciones {#integrations}
    + Experience Platform {#experience-platform}
       + [Generación de FPID](integrations/platform/fpid.md)
-   + Experience Platform Launch {#experience-platform-launch}
-      + [Información general](integrations/experience-platform-launch/overview.md)
-      + [Crear una propiedad de Launch](integrations/experience-platform-launch/create-launch-property.md)
-      + [Conectar AEM con Launch mediante Adobe I/O](integrations/experience-platform-launch/connect-aem-launch-adobe-io.md)
-      + [Creación de un Cloud Service de Launch](integrations/experience-platform-launch/create-launch-cloud-service.md)
-      + [Depuración de una implementación de Launch](integrations/experience-platform-launch/debug-launch-implementation.md)
+   + Etiquetas de recopilación de datos de Experience Platform (Launch) {#experience-platform-data-collection-tags}
+      + [Información general](integrations/experience-platform/data-collection/tags/overview.md)
+      + [Crear una propiedad de etiqueta](integrations/experience-platform/data-collection/tags/create-tag-property.md)
+      + [Conectar AEM con etiquetas mediante Developer Console](integrations/experience-platform/data-collection/tags/connect-aem-tags-using-developer-console.md)
+      + [Crear AEM Cloud Service de Launch](integrations/experience-platform/data-collection/tags/create-aem-launch-cloud-service.md)
+      + [Depuración de una implementación de etiquetas (Launch)](integrations/experience-platform/data-collection/tags/debug-tags-implementation.md)
    + Capa de datos del cliente de Adobe {#adobe-client-data-layer}
       + [Uso de la capa de datos del cliente de Adobe](integrations/adobe-client-data-layer/data-layer-overview.md)
       + [Personalización de la capa de datos del cliente de Adobe](integrations/adobe-client-data-layer/data-layer-customize.md)

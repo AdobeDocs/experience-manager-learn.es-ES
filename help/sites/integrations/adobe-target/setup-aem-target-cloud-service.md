@@ -12,7 +12,7 @@ topic: Integrations
 role: Admin
 level: Intermediate
 exl-id: dd6c17ae-8e08-4db3-95f9-081cc7dbd86e
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: ef1fe712921bd5516cb389862cacf226a71aa193
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 0%
@@ -21,12 +21,12 @@ ht-degree: 0%
 
 # Crear cuenta de Cloud Service de Adobe Target {#adobe-target-cloud-service}
 
-El siguiente vídeo explica cómo conectar AEM como Cloud Service con Adobe Target.
+En el siguiente vídeo se explica cómo conectar AEM as a Cloud Service con Adobe Target.
 
-Esta integración permite que el servicio AEM Author se comunique directamente con Adobe Target y que los fragmentos de experiencias pasen de AEM a Target como ofertas.  Esta integración *no* agrega JavaScript de Adobe Target (AT.js) a páginas web de AEM Sites, para que integre [AEM con Launch mediante la extensión de Target](../experience-platform-launch/connect-aem-launch-adobe-io.md).
+Esta integración permite que el servicio AEM Author se comunique directamente con Adobe Target y que los fragmentos de experiencias pasen de AEM a Target como ofertas.  Esta integración sí *not* agregue JavaScript de Adobe Target (AT.js) a páginas web de AEM Sites para que se integren [AEM con Launch mediante la extensión de Target](../experience-platform/data-collection/tags/connect-aem-tags-using-developer-console.md).
 
 >[!VIDEO](https://video.tv.adobe.com/v/41244?quality=12&learn=on)
 
 >[!CAUTION]
 >
->Hay un problema conocido con la configuración de los Cloud Services de Adobe Target que se muestra en el vídeo. Hasta que se resuelva este problema, siga los mismos pasos en el vídeo, pero utilice la [configuración de Cloud Services de Adobe Target heredados](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-aem-cloud-services.html).
+>Hay un problema conocido con la configuración de los Cloud Services de Adobe Target que se muestra en el vídeo. Hasta que se resuelva este problema, siga los mismos pasos en el vídeo pero use la variable [configuración de Cloud Services de Adobe Target heredados](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-aem-cloud-services.html).

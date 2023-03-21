@@ -9,7 +9,7 @@ level: Intermediate
 kt: 5332
 thumbnail: 5332-collect-data-analytics.jpg
 exl-id: 33f2fd25-8696-42fd-b496-dd21b88397b2
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: ef1fe712921bd5516cb389862cacf226a71aa193
 workflow-type: tm+mt
 source-wordcount: '2371'
 ht-degree: 3%
@@ -18,7 +18,7 @@ ht-degree: 3%
 
 # Recopilación de datos de página con Adobe Analytics
 
-Aprenda a utilizar las funciones integradas del [Adobe de la capa de datos del cliente con AEM componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=es) para recopilar datos sobre una página en Adobe Experience Manager Sites. [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) y [Extensión de Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html) se utilizan para crear reglas para enviar datos de página a Adobe Analytics.
+Aprenda a utilizar las funciones integradas del [Adobe de la capa de datos del cliente con AEM componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=es) para recopilar datos sobre una página en Adobe Experience Manager Sites. [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) y [Extensión de Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=es) se utilizan para crear reglas para enviar datos de página a Adobe Analytics.
 
 ## Qué va a generar
 
@@ -43,7 +43,7 @@ Se requieren las siguientes opciones:
 
 >[!NOTE]
 >
-> ¿Necesita ayuda para integrar Launch y su sitio AEM? [Ver esta serie de vídeo](../experience-platform-launch/overview.md).
+> ¿Necesita ayuda para integrar Launch y su sitio AEM? [Ver esta serie de vídeo](../experience-platform/data-collection/tags/overview.md).
 
 ## Cambiar entornos de Launch para el sitio WKND
 
@@ -369,10 +369,10 @@ Ahora que la variable **Página cargada** envía la señalización de Analytics,
 
 1. Vaya a una página de artículos como [Australia Occidental](https://wknd.site/us/en/magazine/western-australia.html). Observe que Nombre de página y Tipo de plantilla cambian.
 
-## Felicitaciones!
+## Enhorabuena.
 
 Solo ha utilizado la capa de datos del cliente de Adobe impulsada por eventos y el Experience Platform Launch para recopilar datos de página de datos de un sitio AEM y enviarlos a Adobe Analytics.
 
-### Siguientes pasos
+### Pasos siguientes
 
 Consulte el siguiente tutorial para aprender a utilizar la capa de datos del cliente de Adobe impulsada por eventos para [rastrear clics de componentes específicos en un sitio de Adobe Experience Manager](track-clicked-component.md).
