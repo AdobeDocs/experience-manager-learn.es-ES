@@ -24,7 +24,7 @@ ht-degree: 3%
 >title="Tiempo de ejecución de AEM local"
 >abstract="Adobe Experience Manager (AEM) se puede ejecutar localmente mediante el Jar de inicio rápido del SDK as a Cloud Service de AEM. Esto permite a los desarrolladores implementar y probar el código, la configuración y el contenido personalizados antes de comprometerlo con el control de código fuente e implementarlo en un entorno as a Cloud Service AEM."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=es" text="SDK de AEM as a Cloud Service"
->additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html" text="Descargar AEM SDK as a Cloud Service"
+>additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html" text="Descarga del SDK de AEM as a Cloud Service"
 
 Adobe Experience Manager (AEM) se puede ejecutar localmente mediante el Jar de inicio rápido del SDK as a Cloud Service de AEM. Esto permite a los desarrolladores implementar y probar el código, la configuración y el contenido personalizados antes de comprometerlo con el control de código fuente e implementarlo en un entorno as a Cloud Service AEM.
 

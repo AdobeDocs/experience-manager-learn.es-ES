@@ -15,7 +15,7 @@ exl-id: c4f5667a-0da2-490b-9d55-9fbde21db595
 source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '177'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
@@ -36,6 +36,6 @@ La variable [Canalización de producción de CI/CD](https://experienceleague.ado
 
 ### Ejecución de canalización
 
-La variable [Canalización de producción de CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) se utiliza para crear e implementar código mediante Stage en el entorno de producción, lo que reduce el tiempo de respuesta.
+La variable [Canalización de producción de CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=es) se utiliza para crear e implementar código mediante Stage en el entorno de producción, lo que reduce el tiempo de respuesta.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26317/?quality=12&learn=on)

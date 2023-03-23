@@ -12,7 +12,7 @@ exl-id: d35a7892-d707-4a5c-9e97-ec3abba0f30c
 source-git-commit: bca51ece7a9b249727b8746cc9654503059116fb
 workflow-type: tm+mt
 source-wordcount: '172'
-ht-degree: 8%
+ht-degree: 13%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 8%
 >title="Usuarios de IMS de Adobe"
 >abstract="Los usuarios que requieren acceso al servicio AEM Author se administran como usuarios de Adobe IMS en el Admin Console de Adobe. Obtenga información sobre qué son los usuarios de IMS de Adobe y cómo se accede a ellos y cómo se administran en Admin Console."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#how-to-set-up" text="Incorporación de usuarios en Admin Console"
->additional-url="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/identity.ug.html" text="Información general sobre la identidad de Adobe Admin Console"
+>additional-url="https://helpx.adobe.com/es/enterprise/admin-guide.html/enterprise/using/identity.ug.html" text="Información general sobre la identidad de Adobe Admin Console"
 
 Los usuarios que requieren acceso al servicio de AEM Author se administran como [Usuarios de IMS de Adobe](https://helpx.adobe.com/es/enterprise/using/set-up-identity.html) en [Admin Console del Adobe](https://adminconsole.adobe.com). Obtenga información sobre qué son los usuarios de IMS de Adobe y cómo se accede a ellos y cómo se administran en Admin Console.
 
@@ -32,4 +32,4 @@ Los usuarios que requieren acceso al servicio de AEM Author se administran como 
 ## Recursos adicionales
 
 + [Incorporación de usuarios en la documentación de Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#onboarding-users-in-admin-console)
-+ [Documentación general de Adobe Admin Console Identity](https://helpx.adobe.com/enterprise/using/identity.html)
++ [Documentación general de Adobe Admin Console Identity](https://helpx.adobe.com/es/enterprise/using/identity.html)
