@@ -13,10 +13,10 @@ role: Developer
 level: Intermediate
 last-substantial-update: 2022-07-10T00:00:00Z
 exl-id: bdae56d8-96e7-4b05-9b8b-3c6c2e998bd8
-source-git-commit: ef1fe712921bd5516cb389862cacf226a71aa193
+source-git-commit: 2b37ba961e194b47e034963ceff63a0b8e8458ae
 workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 3%
+source-wordcount: '336'
+ht-degree: 2%
 
 ---
 
@@ -31,21 +31,28 @@ Aprenda a integrar el Experience Platform _Etiquetas de recopilación de datos_ 
 
 Las etiquetas son la nueva generación de tecnología de administración de etiquetas de Adobe Experience Platform. Las etiquetas son la forma más sencilla de implementar Adobe Analytics, Target, Audience Manager y muchas más soluciones. Obtenga información general sobre las etiquetas y la integración recomendada con Adobe Experience Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/39090?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417061?quality=12&learn=on)
 
 
 ## Requisitos previos
 
-A la hora de integrar las etiquetas de recopilación de datos de Experience Platform, es necesario lo siguiente
+A la hora de integrar las etiquetas de recopilación de datos de Experience Platform, es necesario lo siguiente:
 
-+ AEM acceso del administrador a AEM entorno as a Cloud Service
-+ Un sitio de referencia como [WKND](https://github.com/adobe/aem-guides-wknd) implementado en
++ AEM acceso de administrador a AEM entorno as a Cloud Service
++ Un sitio de referencia como [WKND](https://github.com/adobe/aem-guides-wknd) implementada en ella.
++ Acceso a la solución de recopilación de datos de Adobe Experience Platform
 + Acceso del administrador del sistema a [Consola de Adobe Developer](https://developer.adobe.com/developer-console/)
 
 
+## Pasos de alto nivel
+
++ En la recopilación de datos de Adobe Experience Platform, cree una propiedad de etiqueta y edítela a _Agregar regla_. Entonces _Agregar biblioteca_, seleccione la regla recién añadida, apruebe y publíquela.
++ Conectar AEM y etiquetas mediante la configuración de IMS existente (o nueva)
++ En AEM, cree una configuración de Launch cloud services, luego aplíquela a un sitio existente y, finalmente, verifique que la propiedad Etiquetas y sus bibliotecas se carguen en el sitio Publicado o Autor.
+
 ## Pasos siguientes
 
-[Crear una propiedad de etiqueta (Launch)](create-tag-property.md)
+[Crear una propiedad de etiqueta](create-tag-property.md)
 
 ## Recursos adicionales {#additional-resources}
 

@@ -12,7 +12,7 @@ topic: Integrations
 role: Admin
 level: Intermediate
 exl-id: dd6c17ae-8e08-4db3-95f9-081cc7dbd86e
-source-git-commit: ef1fe712921bd5516cb389862cacf226a71aa193
+source-git-commit: 2b37ba961e194b47e034963ceff63a0b8e8458ae
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 En el siguiente vídeo se explica cómo conectar AEM as a Cloud Service con Adobe Target.
 
-Esta integración permite que el servicio AEM Author se comunique directamente con Adobe Target y que los fragmentos de experiencias pasen de AEM a Target como ofertas.  Esta integración sí *not* agregue JavaScript de Adobe Target (AT.js) a páginas web de AEM Sites para que se integren [AEM con Launch mediante la extensión de Target](../experience-platform/data-collection/tags/connect-aem-tags-using-developer-console.md).
+Esta integración permite que el servicio AEM Author se comunique directamente con Adobe Target y que los fragmentos de experiencias pasen de AEM a Target como ofertas.  Esta integración sí *not* agregue JavaScript de Adobe Target (AT.js) a páginas web de AEM Sites para que se integren [AEM con Launch mediante la extensión de Target](../experience-platform/data-collection/tags/connect-aem-tag-property-using-ims.md).
 
 >[!VIDEO](https://video.tv.adobe.com/v/41244?quality=12&learn=on)
 
