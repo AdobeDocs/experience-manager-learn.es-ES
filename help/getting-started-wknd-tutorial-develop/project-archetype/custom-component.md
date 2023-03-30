@@ -11,10 +11,10 @@ kt: 4072
 mini-toc-levels: 1
 thumbnail: 30181.jpg
 exl-id: f54f3dc9-6ec6-4e55-9043-7a006840c905
-source-git-commit: bbdb045edf5f2c68eec5094e55c1688e725378dc
+source-git-commit: 68a7f263284fdf9cfcf82572b8e1e1c0c01e4b55
 workflow-type: tm+mt
-source-wordcount: '4065'
-ht-degree: 0%
+source-wordcount: '4066'
+ht-degree: 1%
 
 ---
 
@@ -102,7 +102,7 @@ El cuadro de diálogo muestra la interfaz que pueden proporcionar los autores de
        sling:resourceSuperType="core/wcm/components/image/v2/image"/>
    ```
 
-   El archivo XML anterior proporciona la definición del componente, incluido el título, la descripción y el grupo. La variable `sling:resourceSuperType` señala a `core/wcm/components/image/v2/image`, que es el [Componente de imagen principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html).
+   El archivo XML anterior proporciona la definición del componente, incluido el título, la descripción y el grupo. La variable `sling:resourceSuperType` señala a `core/wcm/components/image/v2/image`, que es el [Componente de imagen principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=es).
 
 ### Creación del script HTL {#create-the-htl-script}
 
@@ -1089,7 +1089,7 @@ Añada estilos predeterminados para el componente Byline.
    >
    > Es posible que tenga que borrar la caché del navegador para asegurarse de que no se sirve el CSS antiguo, y actualizar la página con el componente Byline para obtener el estilo completo.
 
-## ¡Enhorabuena!  {#congratulations}
+## Enhorabuena. {#congratulations}
 
 ¡Felicidades, ha creado un componente personalizado desde cero con Adobe Experience Manager!
 

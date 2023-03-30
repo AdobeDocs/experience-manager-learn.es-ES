@@ -13,9 +13,9 @@ mini-toc-levels: 1
 thumbnail: 30386.jpg
 exl-id: 5b490132-cddc-4024-92f1-e5c549afd6f1
 recommendations: noDisplay, noCatalog
-source-git-commit: bbdb045edf5f2c68eec5094e55c1688e725378dc
+source-git-commit: 68a7f263284fdf9cfcf82572b8e1e1c0c01e4b55
 workflow-type: tm+mt
-source-wordcount: '1677'
+source-wordcount: '1678'
 ht-degree: 2%
 
 ---
@@ -69,7 +69,7 @@ Siempre puede ver el código terminado en [GitHub](https://github.com/adobe/aem-
 
 ## Qué va a generar {#what-build}
 
-Este capítulo utiliza la variable [Función del sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html) para crear variaciones del **Título** y **Texto** componentes utilizados en la página Artículo .
+Este capítulo utiliza la variable [Función del sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html?lang=es) para crear variaciones del **Título** y **Texto** componentes utilizados en la página Artículo .
 
 ![Estilos disponibles para el título](assets/style-system/styles-added-title.png)
 
@@ -338,7 +338,7 @@ En lugar de segmentar el `main` elemento HTML, el sistema de estilos se puede us
 
 1. **Desafío para una bonificación** - utilizar las lecciones aprendidas de ejercicios anteriores y utilizar el sistema de estilos para implementar un **Anchura fija** y **Anchura fluida** estilos para el componente Contenedor.
 
-## ¡Enhorabuena!  {#congratulations}
+## Enhorabuena. {#congratulations}
 
 Felicidades, la página de artículos está casi diseñada y usted ganó experiencia práctica usando el sistema de estilos AEM.
 
