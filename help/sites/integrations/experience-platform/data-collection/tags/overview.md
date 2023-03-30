@@ -3,6 +3,7 @@ title: Integración de etiquetas de recopilación de datos de Experience Platfor
 description: Las etiquetas de la recopilación de datos de Experience Platform son la solución de administración de etiquetas de próxima generación de Adobe y la mejor manera de implementar Adobe Analytics, Target, Audience Manager y muchas más soluciones. Obtenga información general sobre las etiquetas (anteriormente denominadas Launch) y la integración recomendada con Adobe Experience Manager.
 topics: integrations
 audience: administrator
+solution: Experience Manager, Data Collection, Experience Platform
 doc-type: technical video
 activity: setup
 version: Cloud Service
@@ -13,7 +14,7 @@ role: Developer
 level: Intermediate
 last-substantial-update: 2022-07-10T00:00:00Z
 exl-id: bdae56d8-96e7-4b05-9b8b-3c6c2e998bd8
-source-git-commit: 2b37ba961e194b47e034963ceff63a0b8e8458ae
+source-git-commit: 18a72187290d26007cdc09c45a050df8f152833b
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 2%
