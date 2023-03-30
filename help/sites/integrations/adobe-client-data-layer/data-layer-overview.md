@@ -1,6 +1,6 @@
 ---
 title: Uso de la capa de datos del cliente de Adobe con AEM componentes principales
-description: La capa de datos del cliente de Adobe presenta un método estándar para recopilar y almacenar datos sobre una experiencia de visitante en una página web y, a continuación, facilitar el acceso a estos datos. La capa de datos del cliente de Adobe no depende de la plataforma, pero está completamente integrada en los componentes principales para su uso con AEM.
+description: La capa de datos del cliente de Adobe presenta un método estándar para recopilar y almacenar datos sobre la experiencia de un visitante en una página web y, a continuación, facilitar el acceso a estos datos. La capa de datos del cliente de Adobe no depende de la plataforma, pero está completamente integrada en los componentes principales para su uso con AEM.
 topic: Integrations
 feature: Adobe Client Data Layer, Core Components
 role: Developer
@@ -9,16 +9,16 @@ kt: 6261
 thumbnail: 41195.jpg
 last-substantial-update: 2021-01-11T00:00:00Z
 exl-id: 066693b7-2b87-45e8-93ec-8bd09a7c263e
-source-git-commit: 835657082c0c6bf7b2822b53ef2b99039d77f249
+source-git-commit: 99b3ecf7823ff9a116c47c88abc901f8878bbd7a
 workflow-type: tm+mt
-source-wordcount: '780'
-ht-degree: 8%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Uso de la capa de datos del cliente de Adobe con AEM componentes principales {#overview}
 
-La capa de datos del cliente de Adobe presenta un método estándar para recopilar y almacenar datos sobre una experiencia de visitante en una página web y, a continuación, facilitar el acceso a estos datos. La capa de datos del cliente de Adobe no depende de la plataforma, pero está completamente integrada en los componentes principales para su uso con AEM.
+La capa de datos del cliente de Adobe presenta un método estándar para recopilar y almacenar datos sobre la experiencia de un visitante en una página web y, a continuación, facilitar el acceso a estos datos. La capa de datos del cliente de Adobe no depende de la plataforma, pero está completamente integrada en los componentes principales para su uso con AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41195?quality=12&learn=on)
 
@@ -28,20 +28,20 @@ La capa de datos del cliente de Adobe presenta un método estándar para recopil
 
 ## Explorar la capa de datos
 
-Puede hacerse una idea de la funcionalidad integrada de la capa de datos del cliente de Adobe con las herramientas para desarrolladores del navegador y de la lista de [Sitio de referencia WKND](https://wknd.site/).
+Puede hacerse una idea de la funcionalidad integrada de la capa de datos del cliente de Adobe con las herramientas para desarrolladores del navegador y de la lista de [Sitio de referencia WKND](https://wknd.site/us/en.html).
 
 >[!NOTE]
 >
 > Capturas de pantalla tomadas del navegador Chrome.
 
-1. Vaya a [https://wknd.site](https://wknd.site)
+1. Vaya a [https://wknd.site/us/en.html](https://wknd.site/us/en.html)
 1. Abra las herramientas para desarrolladores e introduzca el siguiente comando en la sección **Consola**:
 
    ```js
    window.adobeDataLayer.getState();
    ```
 
-   Inspect proporciona la respuesta para ver el estado actual de la capa de datos en un sitio AEM. Debería ver información sobre la página y los componentes individuales.
+   Para ver el estado actual de la capa de datos en un sitio AEM, inspeccione la respuesta. Debería ver información sobre la página y los componentes individuales.
 
    ![Respuesta de capa de datos de Adobe](assets/data-layer-state-response.png)
 
@@ -90,7 +90,7 @@ Se recomienda almacenar en déclencheur cualquier código personalizado basado e
    }
    ```
 
-   El código anterior inspeccionará la variable `event` y utilice la variable `adobeDataLayer.getState` para obtener el estado actual del objeto que activó el evento. El método de ayuda inspeccionará entonces la variable `filter` y solo si la variable `dataObject` cumple con el filtro que se devolverá.
+   El código anterior inspecciona el `event` y utiliza la variable `adobeDataLayer.getState` para obtener el estado actual del objeto que activó el evento. A continuación, el método de ayuda inspecciona la variable `filter` y solo si la variable `dataObject` cumple los criterios de filtro que se devuelven.
 
    >[!CAUTION]
    >
@@ -108,7 +108,7 @@ Se recomienda almacenar en déclencheur cualquier código personalizado basado e
    }
    ```
 
-   La variable `teaserShownHandler` llamará a la función `getDataObjectHelper` y pasar un filtro de `wknd/components/teaser` como el `@type` para filtrar eventos activados por otros componentes.
+   La variable `teaserShownHandler` llama a la función `getDataObjectHelper` y pasa un filtro de `wknd/components/teaser` como el `@type` para filtrar eventos activados por otros componentes.
 
 1. A continuación, inserte un detector de eventos en la capa de datos para detectar la `cmp:show` evento.
 
@@ -118,13 +118,13 @@ Se recomienda almacenar en déclencheur cualquier código personalizado basado e
    });
    ```
 
-   La variable `cmp:show` se activa mediante distintos componentes, como cuando se muestra una nueva diapositiva en la variable **Carrusel** o cuando se selecciona una pestaña nueva en la **Tabulación** componente.
+   La variable `cmp:show` se activa mediante distintos componentes, como cuando se muestra una nueva diapositiva en la variable **Carrusel**, o cuando se selecciona una pestaña nueva en la variable **Tabulación** componente.
 
 1. En la página , cambie las diapositivas de carrusel y observe las instrucciones de la consola:
 
    ![Alternar Carrusel y ver el detector de eventos](assets/teaser-console-slides.png)
 
-1. Elimine el detector de eventos de la capa de datos para dejar de escuchar el evento `cmp:show` evento:
+1. Para dejar de escuchar el `cmp:show` , elimine el detector de eventos de la capa de datos
 
    ```js
    window.adobeDataLayer = window.adobeDataLayer || [];
@@ -164,19 +164,17 @@ Se recomienda almacenar en déclencheur cualquier código personalizado basado e
 
    La variable `cmp:show` para la página se activa cada vez que se carga la página en la parte superior de la página. Podría preguntar, ¿por qué se activó el controlador de eventos cuando la página ya se ha cargado?
 
-   Esta es una de las características únicas de la capa de datos del cliente de Adobe, en la que puede registrar oyentes de eventos **before** o **after** se ha inicializado la capa de datos. Se trata de una característica esencial para evitar condiciones de carrera.
+   Una de las características únicas de la capa de datos del cliente de Adobe es que puede registrar oyentes de eventos **before** o **after** la capa de datos se ha inicializado, ayuda a evitar las condiciones de carrera.
 
-   La capa de datos mantiene una matriz de cola de todos los eventos que se han producido en secuencia. De forma predeterminada, la capa de datos déclencheur las llamadas de retorno de eventos para los eventos que se produjeron en la variable **pasado** así como los eventos en la variable **futuro**. Es posible filtrar los eventos al pasado o al futuro. [Encontrará más información en la documentación](https://github.com/adobe/adobe-client-data-layer/wiki#addeventlistener).
+   La capa de datos mantiene una matriz de cola de todos los eventos que se han producido en secuencia. De forma predeterminada, la capa de datos déclencheur las llamadas de retorno de eventos para los eventos que se produjeron en la variable **pasado** y los eventos en la variable **futuro**. Es posible filtrar los eventos del pasado o del futuro. [Encontrará más información en la documentación](https://github.com/adobe/adobe-client-data-layer/wiki#addeventlistener).
 
 
-## Siguientes pasos
+## Pasos siguientes
 
-Consulte el siguiente tutorial para aprender a utilizar la capa de datos del cliente de Adobe impulsada por eventos para [recopilar datos de página y enviarlos a Adobe Analytics](../analytics/collect-data-analytics.md).
-
-O aprenda a [Personalización de la capa de datos del cliente de Adobe con componentes AEM](./data-layer-customize.md)
+Hay dos opciones para continuar aprendiendo, primero, consulte la [recopilar datos de página y enviarlos a Adobe Analytics](../analytics/collect-data-analytics.md) tutorial que muestra el uso de la capa de datos del cliente de Adobe. La segunda opción es, para aprender a [Personalización de la capa de datos del cliente de Adobe con componentes AEM](./data-layer-customize.md)
 
 
 ## Recursos adicionales {#additional-resources}
 
 * [Documentación de capa de datos del cliente de Adobe](https://github.com/adobe/adobe-client-data-layer/wiki)
-* [Uso de la capa de datos del cliente de Adobe y la documentación de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)
+* [Uso de la capa de datos del cliente de Adobe y la documentación de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=es)
