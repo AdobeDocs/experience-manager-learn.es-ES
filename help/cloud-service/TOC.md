@@ -5,9 +5,9 @@ breadcrumb-title: Tutoriales de AEM as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 672941b4047bb0cfe8c602e3b1ab75866c10216a
+source-git-commit: 9917b16248ef1f0a9c86f03a024c634636b2304e
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '913'
 ht-degree: 23%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 23%
 + [Integraciones de Experience Cloud](./experience-cloud/integrations.md)
 + Tecnología subyacente {#underlying-technology}
    + [Arquitectura AEM](./underlying-technology/introduction-architecture.md)
-   + [los paquetes](./underlying-technology/introduction-osgi.md)
+   + [OSGi](./underlying-technology/introduction-osgi.md)
    + [Repositorio de contenido Java](./underlying-technology/introduction-jcr.md)
    + [Sling](./underlying-technology/introduction-sling.md)
    + [Servicios de creación y publicación](./underlying-technology/introduction-author-publish.md)
@@ -53,7 +53,7 @@ ht-degree: 23%
    + [Tiempo de ejecución de AEM local](./local-development-environment/aem-runtime.md)
    + [Herramientas locales de Dispatcher](./local-development-environment/dispatcher-tools.md)
 + Desarrollo de{#developing}
-   + Capacidad de ampliación{#extensibility}
+   + Extensibilidad{#extensibility}
       + Creador de aplicaciones{#app-builder}
          + [Generar token de acceso](./developing/extensibility/app-builder/jwt-auth.md)
       + Consola de fragmento de contenido{#content-fragments}
@@ -89,6 +89,7 @@ ht-degree: 23%
       + [Conceptos básicos de configuraciones de OSGi](./developing/osgi-services/configurations.md)
       + [Configuraciones de OSGi que utilizan OCD](./developing/osgi-services/configurations-ocd.md)
    + Avanzado {#advanced}
+      + [API de imagen optimizadas para web](./developing/advanced/web-optimized-image-delivery-java-apis.md)
       + [Usuarios de servicio](./developing/advanced/service-users.md)
       + [Espacios de nombres personalizados](./developing/advanced/custom-namespaces.md)
       + [Almacenamiento en caché de variables de página](./developing/advanced/variant-caching.md)
