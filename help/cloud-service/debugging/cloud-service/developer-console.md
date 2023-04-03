@@ -13,9 +13,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 0499ff9f-d452-459f-b1a2-2853a228efd1
-source-git-commit: e8e5c67f6e9f057fd7472b76ee09d7f87b133c89
+source-git-commit: 8ca9535866cc1a673a59ac3743847e68dfedd156
 workflow-type: tm+mt
-source-wordcount: '1414'
+source-wordcount: '1471'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,18 @@ ht-degree: 0%
 AEM as a Cloud Service proporciona una consola de desarrollador para cada entorno que expone varios detalles de la ejecución del servicio de AEM que son útiles para la depuración.
 
 Cada entorno as a Cloud Service AEM tiene su propia Developer Console.
+
+## Vaya a Developer Console
+
+Se accede a Developer Console por AEM entorno as a Cloud Service a través de Cloud Manager.
+
+![Vaya a Developer Console](./assets/developer-console/navigate.png)
+
+1. Vaya a __[Cloud Manager](https://my.cloudmanager.adobe.com/)__
+2. Abra el __Programa__ que contiene el entorno as a Cloud Service AEM para abrir Developer Console.
+3. Busque la variable __Entorno__ y seleccione `...`.
+4. Select __Developer Console__ en la lista desplegable.
+
 
 ## Acceso a Developer Console
 
