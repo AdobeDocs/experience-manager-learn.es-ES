@@ -9,7 +9,7 @@ level: Beginner
 last-substantial-update: 2022-09-03T00:00:00Z
 thumbnail: 21297.jpg
 exl-id: 4f35e3f7-ae29-4f93-bba9-48c60b800238
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 La búsqueda de traducción inteligente permite la búsqueda y la detección entre idiomas automáticamente en AEM contenido, tanto en Assets como en las páginas, admite más de 50 idiomas y reduce la necesidad de la traducción manual del contenido.
 
->[!VIDEO](https://video.tv.adobe.com/v/21297/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/21297?quality=12&learn=on)
 
 AEM búsqueda de traducción inteligente permite a los usuarios realizar búsquedas de contenido en AEM utilizando términos que no estén en inglés, para que coincidan con los recursos de AEM que tengan términos en inglés equivalentes.
 

@@ -5,18 +5,18 @@ type: Troubleshooting
 role: Admin
 level: Intermediate
 version: 6.5
-topic: 'Administración '
+topic: Administration
 index: y
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: c40f040a-6e9e-498e-a8b3-749ba70fc229
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '43'
-ht-degree: 2%
+source-wordcount: '42'
+ht-degree: 0%
 
 ---
-
 
 # Pasos para mitigar ForcedDesconecteException
 
 *Este vídeo muestra las posibles causas y pasos para mitigar ForcedDesconecteException*
 
->[!VIDEO](https://video.tv.adobe.com/v/335483?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/335483?quality=12&learn=on)

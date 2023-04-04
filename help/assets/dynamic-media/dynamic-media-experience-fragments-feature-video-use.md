@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: c4c1ffe2-d4ea-4b31-b5d5-132fba9d2633
-source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '143'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 AEM Assets Dynamic Media integra puntos interactivos de recursos con fragmentos de experiencias mediante los visualizadores de medios interactivos. Los especialistas en marketing pueden crear el fragmento de experiencia con texto, imágenes y vínculos para rellenar la ventana emergente personalizada y asociar esa ventana emergente a puntos interactivos en banners, carruseles o vídeos.
 
->[!VIDEO](https://video.tv.adobe.com/v/22115/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/22115?quality=12&learn=on)
 
 >[!NOTE]
 >

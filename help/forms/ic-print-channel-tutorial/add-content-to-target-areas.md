@@ -1,8 +1,8 @@
 ---
 title: Adición de texto y contenido de imagen al documento de canal de impresión
-seo-title: Adición de texto y contenido de imagen al documento de canal de impresión
-description: 'Esta es la parte 7 de un tutorial de varios pasos para crear su primer documento interactivo de comunicaciones. En esta parte, añadiremos imágenes y contenido de texto a las áreas de destino definidas en el diseño (xdp). '
-seo-description: 'Esta es la parte 7 de un tutorial de varios pasos para crear su primer documento interactivo de comunicaciones. En esta parte, añadiremos imágenes y contenido de texto a las áreas de destino definidas en el diseño (xdp). '
+seo-title: Adding text and image content to print channel document
+description: Esta es la parte 7 de un tutorial de varios pasos para crear su primer documento interactivo de comunicaciones. En esta parte, añadiremos imágenes y contenido de texto a las áreas de destino definidas en el diseño (xdp).
+seo-description: This is part 7 of a multi-step tutorial for creating your first interactive communications document. In this part, we will add images and text content to the target areas defined in the layout(xdp).
 uuid: f20d6974-6faf-4b90-a7ff-8aa8a620fcaa
 feature: Interactive Communication
 topics: development
@@ -16,14 +16,13 @@ thumbnail: 22379.jpg
 topic: Development
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 49080c16-617f-4840-8bb4-7b080fa291c4
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '201'
-ht-degree: 1%
+source-wordcount: '154'
+ht-degree: 0%
 
 ---
-
 
 # Adición de texto y contenido de imagen al documento de canal de impresión
 
@@ -37,5 +36,4 @@ Para añadir contenido al documento de canal de impresión, siga el siguiente v�
 
 El vídeo lo acompaña durante los pasos necesarios para añadir contenido a las áreas de destino apropiadas del documento de canal de impresión.
 
->[!VIDEO](https://video.tv.adobe.com/v/22379t2/?quality=9&learn=on)
-
+>[!VIDEO](https://video.tv.adobe.com/v/22379?quality=12&learn=on)

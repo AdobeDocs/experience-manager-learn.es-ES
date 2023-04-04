@@ -1,20 +1,20 @@
 ---
 title: Adición de componentes a la sección Activos
 description: Configure el diseño de acordeón para el panel Recursos. El diseño de acordeón proporciona una mejor experiencia de usuario final para agregar secciones repetibles.
-feature: Formularios adaptables
+feature: Adaptive Forms
 version: 6.4,6.5
 kt: 4212
 thumbnail: 22200.jpg
-topic: Desarrollo
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: cd8e5fad-d17a-4f80-b4f6-0d43be4dfb80
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '57'
-ht-degree: 5%
+source-wordcount: '54'
+ht-degree: 0%
 
 ---
-
 
 # Adición de componentes a la sección Activos {#adding-components-to-assets-section}
 
@@ -22,10 +22,7 @@ Configure el diseño de acordeón para el panel Recursos. El diseño de acordeó
 
 **Configuración del panel Recursos**
 
->[!VIDEO](https://video.tv.adobe.com/v/22200?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/22200?quality=12&learn=on)
 
 **Definir título de resumen**
->[!VIDEO](https://video.tv.adobe.com/v/28387)
-
-
-
+>[!VIDEO](https://video.tv.adobe.com/v/28387?quality=12&learn=on)

@@ -1,41 +1,41 @@
 ---
 title: Uso de funciones y editor de código
 description: Uso de funciones y editor de código para crear reglas comerciales
-feature: Formularios adaptables
+feature: Adaptive Forms
 version: 6.4,6.5
 kt: 4270
 thumbnail: 22282.jpg
-topic: Desarrollo
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 7b2a4075-bfdf-49f3-b507-34d86193bf64
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 2%
+source-wordcount: '136'
+ht-degree: 0%
 
 ---
-
 
 # Uso de funciones personalizadas y del editor de código {#using-functions-and-code-editor}
 
 En esta parte, utilizaremos funciones personalizadas y el editor de código para crear reglas comerciales.
 
-ya ha instalado [ClientLib con función personalizada](assets/client-libs-and-logo.zip) anteriormente en este tutorial.
+ya ha instalado el [ClientLib con función personalizada](assets/client-libs-and-logo.zip) más temprano en este tutorial.
 
 Normalmente, una biblioteca de cliente consta de un archivo CSS y Javascript. Esta biblioteca de cliente contiene un archivo javascript que expone una función para rellenar valores de lista desplegable.
 
 
 ## Función para rellenar la lista desplegable {#function-to-populate-drop-down-list}
 
->[!VIDEO](https://video.tv.adobe.com/v/22282?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/22282?quality=12&learn=on)
 
 ### Definir título de resumen del panel {#set-the-summary-title-of-panels}
 
->[!VIDEO](https://video.tv.adobe.com/v/28387?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28387?quality=12&learn=on)
 
 #### Validar panel {#validate-panels-using-rule-editor}
 
->[!VIDEO](https://video.tv.adobe.com/v/28409?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28409?quality=12&learn=on)
 
 El siguiente es el código utilizado para validar los campos del panel
 

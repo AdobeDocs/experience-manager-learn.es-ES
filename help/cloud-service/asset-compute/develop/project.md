@@ -8,7 +8,7 @@ feature: Asset Compute Microservices
 role: Developer
 level: Intermediate, Experienced
 exl-id: ebb11eab-1412-4af5-bc09-e965b9116ac9
-source-git-commit: 839152aa67ba7ab2929f2c8093bfdc873761a645
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 2%
@@ -21,7 +21,7 @@ Los proyectos de asset compute son proyectos de Node.js, generados usando la CLI
 
 ## Generación de un proyecto
 
->[!VIDEO](https://video.tv.adobe.com/v/40197/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40197?quality=12&learn=on)
 
 _Pulsación para generar un proyecto de Asset compute (sin audio)_
 
@@ -37,10 +37,10 @@ Utilice la variable [Complemento de Asset compute CLI de Adobe I/O](../set-up/de
 1. __Seleccionar Workspace__
    + Seleccione el `Development` workspace
 1. __¿Qué funciones de la aplicación de Adobe I/O desea habilitar para este proyecto? Seleccionar componentes para incluir__
-   + Seleccione `Actions: Deploy runtime actions`
+   + Seleccionar `Actions: Deploy runtime actions`
    + Utilice las teclas de flechas para seleccionar y el espacio para anular la selección o seleccionarlo, e Intro para confirmar la selección
 1. __Seleccione el tipo de acciones que desea generar__
-   + Seleccione `DX Asset Compute Worker v1`
+   + Seleccionar `DX Asset Compute Worker v1`
    + Utilice las teclas de flechas para seleccionar, el espacio para anular la selección o seleccionarlo y la tecla Intro para confirmar la selección
 1. __¿Cómo le gustaría nombrar esta acción?__
    + Usar el nombre predeterminado `worker`.

@@ -1,19 +1,19 @@
 ---
 title: 'Introducción a AEM sin encabezado: servicios de contenido'
 description: Un tutorial completo que ilustra cómo crear y exponer contenido mediante AEM sin encabezado.
-feature: Fragmentos de contenido, API
-topic: Sin objetivos, Administración de contenido
+feature: Content Fragments, APIs
+topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: 22829f532f7791af14919af24650b4593fe89ae8
+exl-id: 5aa32791-861a-48e3-913c-36028373b788
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 4%
+source-wordcount: '334'
+ht-degree: 6%
 
 ---
 
-
-# Introducción a AEM sin encabezado: servicios de contenido
+# Introducción a AEM sin encabezado - Content Services
 
 AEM Content Services aprovecha las páginas AEM tradicionales para componer extremos de API de REST sin encabezado y AEM Componentes definen, o hacen referencia, el contenido que se expone en estos extremos.
 
@@ -23,7 +23,7 @@ AEM Content Services permite las mismas abstracciones de contenido utilizadas pa
 
 Un tutorial completo que ilustra cómo crear y exponer contenido mediante AEM y consumido por una aplicación móvil nativa en un escenario de CMS remoto.
 
->[!VIDEO](https://video.tv.adobe.com/v/28315/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28315?quality=12&learn=on)
 
 Este tutorial explora cómo se puede utilizar AEM Content Services para impulsar la experiencia de una aplicación móvil que muestra información de eventos (música, rendimiento, arte, etc.) que es depurado por el equipo de WKND.
 
@@ -37,15 +37,15 @@ Este tutorial tratará los siguientes temas:
 
 ## Proyecto de GitHub
 
-El código fuente y los paquetes de contenido están disponibles en las [Guías de AEM - Proyecto GitHub móvil de WKND](https://github.com/adobe/aem-guides-wknd-mobile).
+El código fuente y los paquetes de contenido están disponibles en la [Guías de AEM: proyecto de WKND Mobile GitHub](https://github.com/adobe/aem-guides-wknd-mobile).
 
-Si encuentra algún problema con el tutorial o el código, deje un [problema de GitHub](https://github.com/adobe/aem-guides-wknd-mobile/issues).
+Si encuentra algún problema con el tutorial o el código, deje un [Problema de GitHub](https://github.com/adobe/aem-guides-wknd-mobile/issues).
 
-## AEM GraphQL y servicios de contenido AEM
+## AEM de GraphQL y servicios de contenido AEM
 
 |  | API de AEM GraphQL | Servicios de contenido AEM |
 |--------------------------------|:-----------------|:---------------------|
 | Definición del esquema | Modelos de fragmento de contenido estructurados | Componentes AEM |
 | Contenido | Fragmentos de contenido | Componentes AEM |
 | Descubrimiento de contenido | Por consulta de GraphQL | Por AEM página |
-| Formato de entrega | JSON de GraphQL | AEM JSON de ComponentExporter |
+| Formato de entrega | GraphQL JSON | AEM JSON de ComponentExporter |

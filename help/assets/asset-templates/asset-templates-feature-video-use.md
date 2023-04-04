@@ -8,7 +8,7 @@ level: Beginner
 last-substantial-update: 2022-09-01T00:00:00Z
 thumbnail: 25170.jpg
 exl-id: 45e0f3d5-db56-44e7-ad68-4d60991a6d77
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 0%
@@ -33,4 +33,4 @@ En este vídeo se explican los conceptos y pasos para generar recursos listos pa
 
 En este vídeo se ofrece una descripción general más técnica de la funcionalidad de las plantillas de recursos de AEM Assets y cómo AEM facilita la composición de AEM Assets y los contenidos mediante el InDesign para crear experiencias de impresión enriquecidas y atractivas.
 
->[!VIDEO](https://video.tv.adobe.com/v/17071/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/17071?quality=12&learn=on)

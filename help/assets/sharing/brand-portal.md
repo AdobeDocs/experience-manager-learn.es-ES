@@ -8,7 +8,7 @@ role: User
 level: Beginner
 last-substantial-update: 2022-06-15T00:00:00Z
 exl-id: 42f13a19-52bf-413d-a141-63f1f0910dce
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1764'
 ht-degree: 2%
@@ -27,7 +27,7 @@ Brand Portal, que se  en septiembre de 2019, presenta Asset Sourcing, que aument
 
 La fuente de recursos de Brand Portal se utiliza para recopilar recursos de agencias y equipos de terceros, sincronizándolos sin problemas con el Autor Experience Manager para su revisión y uso.
 
->[!VIDEO](https://video.tv.adobe.com/v/29365/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29365?quality=12&learn=on)
 
 *Se requiere el Experience Manager Autor 6.5 SP2 (6.5.2) o bueno para utilizar Asset Sourcing*
 
@@ -35,7 +35,7 @@ Consulte [Habilitar el autor Experience Manager para el abastecimiento de recurs
 
 ## Mejoras y funciones de Brand Portal de febrero de 2019{#brand-portal-features-and-enhancements-644}
 
->[!VIDEO](https://video.tv.adobe.com/v/26354/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26354?quality=12&learn=on)
 
 La versión de febrero de 2019 de Brand Portal se centra en las mejoras en la búsqueda de texto y en las principales solicitudes de los clientes.
 
@@ -116,7 +116,7 @@ Sin embargo, la instancia de autor de AEM puede ser [configurado](https://helpx.
 
 ## Mejoras y funciones de diciembre de 2018 de Brand Portal{#brand-portal-features-and-enhancements-642}
 
->[!VIDEO](https://video.tv.adobe.com/v/23707/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/23707?quality=12&learn=on)
 
 ### Acceso de invitado
 
@@ -163,7 +163,7 @@ Brand Portal utiliza el Adobe I/O [https://legacy-oauth.cloud.adobe.io/](https:/
 
 Las nuevas funciones mejoraron la funcionalidad orientada a alinear Brand Portal con AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/26354/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26354?quality=12&learn=on)
 
 ### Mejoras en la navegación
 
@@ -203,8 +203,8 @@ Las nuevas funciones mejoraron la funcionalidad orientada a alinear Brand Portal
 
 ## Recursos adicionales{#additional-resources}
 
-* [Novedades de Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/using/whats-new.html)
-* [Agentes de replicación de AEM Author](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html)
+* [Novedades de Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=es#introduction)
+* [Agentes de replicación de AEM Author](https://helpx.adobe.com/es/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html)
 * [Guía para la descarga acelerada](https://helpx.adobe.com/experience-manager/brand-portal/using/accelerated-download.html#main-pars_header)
 * [Documentos de Adobe de AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal.html)
 * [Documentos de Adobe de AEM Assets Dynamic Media](https://experienceleague.adobe.com/docs/)

@@ -1,20 +1,21 @@
 ---
-title: Servicio de automated forms conversion
-description: Servicio de automated forms conversion. En este artículo se describe cómo un administrador de AEM puede configurar el servicio de Automated forms conversion para automatizar la conversión de sus PDF forms a formularios adaptables. Esta ayuda es para administradores de TI y AEM de su organización.
-feature: Formularios adaptables
+title: Servicio de conversión automatizada de formularios
+description: Servicio de conversión de formularios automatizados. En este artículo se describe cómo un administrador de AEM puede configurar el servicio de Automated forms conversion para automatizar la conversión de sus PDF forms a formularios adaptables. Esta ayuda es para administradores de TI y AEM de su organización.
+feature: Adaptive Forms
 thumbnail: 39493.jpg
 kt: 6114
-topic: Desarrollo
+topic: Development
 role: Admin
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 0715a2cc-c042-4ddc-85a1-7720f420351b
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 1%
+source-wordcount: '253'
+ht-degree: 5%
 
 ---
 
-# Servicio de automated forms conversion
+# Servicio de conversión automatizada de formularios 
 
 En este artículo se describe cómo un administrador de AEM puede configurar el servicio de Automated forms conversion para automatizar la conversión de sus PDF forms a formularios adaptables. Esta ayuda es para administradores de TI y AEM de su organización. La información proporcionada se basa en el supuesto de que cualquier persona que lea esta Ayuda está familiarizada con las siguientes tecnologías:
 
@@ -36,5 +37,4 @@ Para utilizar el servicio de Automated forms conversion, es necesario lo siguien
 
 * En el vídeo se explican los pasos necesarios para conectar la instancia local de AEM Forms al servicio de Automated forms conversion en Adobe Cloud.
 
->[!VIDEO](https://video.tv.adobe.com/v/39493/?quality=9&learn=on)
-
+>[!VIDEO](https://video.tv.adobe.com/v/39493?quality=12&learn=on)

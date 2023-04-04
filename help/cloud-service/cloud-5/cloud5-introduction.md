@@ -9,7 +9,7 @@ kt: 9782
 thumbnail: 340667.jpeg
 last-substantial-update: 2022-10-01T00:00:00Z
 exl-id: 5dc40184-15d3-483a-885e-1b241e6514ba
-source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '66'
 ht-degree: 0%
@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Bienvenido a la serie Cloud 5 de AEM Engineering. Uno de los principales problemas en la fase de implementación de cualquier producto es tener suficientes muestras de código y/o demostraciones en vivo de esas muestras, herramientas o API. El objetivo de esta serie es proporcionar información útil sobre AEM as a Cloud Service en 5 minutos o menos.
 
->[!VIDEO](https://video.tv.adobe.com/v/340667/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/340667?quality=12&learn=on)

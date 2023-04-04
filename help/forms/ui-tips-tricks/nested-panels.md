@@ -10,7 +10,7 @@ level: Beginner
 kt: 9335
 exl-id: c60d019e-da26-4f67-8579-ef707e2348bb
 last-substantial-update: 2019-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '247'
 ht-degree: 1%
@@ -35,7 +35,7 @@ El comportamiento predeterminado de este formulario sería mostrar todos los pan
 
 Para cambiar este comportamiento predeterminado necesitamos hacer lo siguiente
 
->[!VIDEO](https://video.tv.adobe.com/v/338369?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/338369?quality=12&learn=on)
 
 
 Agregue el siguiente código al evento click de la variable **Siguiente** usando el editor de código
@@ -56,7 +56,7 @@ El código anterior le ayudará a desplazarse entre las pestañas y los paneles 
 
 Utilice el editor de estilos para ocultar el título de los paneles secundarios de las pestañas.
 
->[!VIDEO](https://video.tv.adobe.com/v/338370?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/338370?quality=12&learn=on)
 
 >[!NOTE]
 >

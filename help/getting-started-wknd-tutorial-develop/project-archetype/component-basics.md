@@ -12,7 +12,7 @@ kt: 4081
 thumbnail: 30177.jpg
 exl-id: 7fd021ef-d221-4113-bda1-4908f3a8629f
 recommendations: noDisplay, noCatalog
-source-git-commit: 68a7f263284fdf9cfcf82572b8e1e1c0c01e4b55
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1152'
 ht-degree: 2%
@@ -47,7 +47,7 @@ Este capítulo se basa en un proyecto genérico generado por el [Tipo de archivo
 >
 > Si ha completado correctamente el capítulo anterior, puede reutilizar el proyecto y omitir los pasos para extraer el proyecto de inicio.
 
->[!VIDEO](https://video.tv.adobe.com/v/330985/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330985?quality=12&learn=on)
 
 Abra un nuevo terminal de línea de comandos y realice las siguientes acciones.
 
@@ -87,7 +87,7 @@ Abra un nuevo terminal de línea de comandos y realice las siguientes acciones.
 
 Los componentes pueden considerarse pequeños componentes modulares de una página web. Para reutilizar componentes, estos deben ser configurables. Esto se logra mediante el cuadro de diálogo de creación. A continuación, vamos a crear un componente simple e inspeccionar cómo se mantienen los valores del cuadro de diálogo en AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/330986/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330986?quality=12&learn=on)
 
 A continuación se muestran los pasos de alto nivel realizados en el vídeo anterior.
 
@@ -105,7 +105,7 @@ Idioma de plantilla del HTML o **[HTL](https://experienceleague.adobe.com/docs/e
 
 A continuación, actualicemos el `HelloWorld` Secuencia de comandos HTL para mostrar un saludo adicional antes del mensaje de texto.
 
->[!VIDEO](https://video.tv.adobe.com/v/330987/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330987?quality=12&learn=on)
 
 A continuación se muestran los pasos de alto nivel realizados en el vídeo anterior.
 
@@ -175,7 +175,7 @@ Los modelos Sling son &quot;POJO&quot; Java™ impulsados por anotaciones (objet
 
 A continuación, hagamos algunas actualizaciones en el `HelloWorldModel` Modelo de Sling para aplicar cierta lógica empresarial a los valores almacenados en el JCR antes de enviarlos a la página.
 
->[!VIDEO](https://video.tv.adobe.com/v/330988/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330988?quality=12&learn=on)
 
 1. Abra el archivo . `HelloWorldModel.java`, que es el modelo de Sling utilizado con la variable `HelloWorld` componente.
 
@@ -286,7 +286,7 @@ La variable [ui.frontend](https://experienceleague.adobe.com/docs/experience-man
 
 A continuación, actualice los estilos CSS para el `HelloWorld` componente.
 
->[!VIDEO](https://video.tv.adobe.com/v/340750/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/340750?quality=12&learn=on)
 
 A continuación se muestran los pasos de alto nivel realizados en el vídeo anterior.
 

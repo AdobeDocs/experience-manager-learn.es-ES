@@ -11,7 +11,7 @@ kt: 10689
 mini-toc-levels: 1
 index: y
 recommendations: noDisplay, noCatalog
-source-git-commit: de2fa2e4c29ce6db31233ddb1abc66a48d2397a6
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 0%
@@ -31,7 +31,7 @@ En este capítulo, creamos y ejecutamos una canalización front-end en Adobe Clo
 
 ## Uso de la canalización front-end
 
->[!VIDEO](https://video.tv.adobe.com/v/3409420/)
+>[!VIDEO](https://video.tv.adobe.com/v/3409420?quality=12&learn=on)
 
 ## Requisitos previos {#prerequisites}
 
@@ -102,7 +102,7 @@ Y __más importante__ para el __Ubicación del código__ campo el valor es `/ui.
 
 
 
-## Felicitaciones! {#congratulations}
+## Enhorabuena. {#congratulations}
 
 Felicidades, ha creado, ejecutado y verificado la canalización del front-end que solo genera e implementa el módulo &quot;ui.frontend&quot; del proyecto WKND Sites. Ahora su equipo front-end puede iterar rápidamente en el diseño del sitio y en el comportamiento del front-end, fuera del ciclo de vida completo del proyecto de AEM.
 

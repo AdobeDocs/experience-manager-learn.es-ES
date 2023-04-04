@@ -15,7 +15,7 @@ topic: Personalization
 role: Admin, Developer
 level: Intermediate
 exl-id: 9c139a36-e3c5-407e-af5d-b4fb8860f5a2
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 2%
@@ -26,7 +26,7 @@ ht-degree: 2%
 
 Adobe Experience Manager 6.4 reimagina el flujo de trabajo de personalización entre AEM y Target. Las experiencias creadas dentro de AEM ahora se pueden entregar directamente a Adobe Target como ofertas de HTML. Permite a los especialistas en marketing probar y personalizar contenido sin problemas en los distintos canales.
 
->[!VIDEO](https://video.tv.adobe.com/v/22380/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/22380?quality=12&learn=on)
 
 >[!NOTE]
 >

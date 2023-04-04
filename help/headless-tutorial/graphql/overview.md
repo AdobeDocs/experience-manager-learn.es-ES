@@ -8,7 +8,7 @@ level: Beginner
 exl-id: 0056971f-2f89-43b3-bb6f-dd16c2a50370
 thumbnail: 328618.jpg
 last-substantial-update: 2022-07-20T00:00:00Z
-source-git-commit: 1ecd3c761ea7c79036b263ff8528a6cd01af0e76
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 2%
@@ -26,7 +26,7 @@ Una API de envío de contenido moderna es clave para la eficacia y el rendimient
 
 Para superar estos desafíos, GraphQL proporciona una API basada en consultas que permite a los clientes consultar AEM solo el contenido que necesitan y recibir mediante una sola llamada API.
 
->[!VIDEO](https://video.tv.adobe.com/v/328618/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/328618?quality=12&learn=on)
 
 Este vídeo es una descripción general de la API de GraphQL implementada en AEM. La API de GraphQL en AEM está diseñada principalmente para entregar AEM fragmentos de contenido a aplicaciones descendentes como parte de una implementación sin objetivos.
 

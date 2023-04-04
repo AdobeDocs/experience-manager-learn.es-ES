@@ -1,24 +1,23 @@
 ---
 title: Actualizar la conversión del servidor y el tiempo de espera global del servidor en el servicio PDFG
-description: Configurar la conversión del servidor y el tiempo de espera global del servidor para PDF Generator
+description: Configurar la conversión del servidor y el tiempo de espera global del servidor para el Generador de PDF
 type: Troubleshooting
 role: Admin
 level: Intermediate
 version: 6.5
-feature: Generador de PDF
-topic: 'Administración '
+feature: PDF Generator
+topic: Administration
 index: y
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 669dde4b-777c-4fea-b0e8-50f797c21757
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '57'
-ht-degree: 5%
+source-wordcount: '54'
+ht-degree: 0%
 
 ---
-
 
 # Actualizar la conversión del servidor y el tiempo de espera global en el servicio PDFG
 
 *En este vídeo se describe el proceso de actualización de la conversión del servidor y del tiempo de espera global del servidor en el servicio PDFG de Forms.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335514?quality=9&learn=on)
-
+>[!VIDEO](https://video.tv.adobe.com/v/335514?quality=12&learn=on)

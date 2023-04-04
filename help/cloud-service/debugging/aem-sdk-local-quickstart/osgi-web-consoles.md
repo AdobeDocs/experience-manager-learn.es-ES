@@ -12,7 +12,7 @@ topic: Development
 role: Developer
 level: Beginner, Intermediate
 exl-id: 0929bc1a-376c-4e16-a540-a276fd5af164
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 2%
@@ -27,7 +27,7 @@ AEM proporciona muchas consolas OSGi, cada una de las cuales proporciona perspec
 
 ## Paquetes
 
->[!VIDEO](https://video.tv.adobe.com/v/34335/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34335?quality=12&learn=on)
 
 La consola Paquetes es un catálogo de los paquetes OSGi, y sus detalles, implementados en AEM, junto con la capacidad ad hoc para iniciarlos y detenerlos.
 
@@ -44,7 +44,7 @@ Al hacer clic en cada paquete, se proporcionan detalles que ayudan a depurar la 
 
 ## Componentes
 
->[!VIDEO](https://video.tv.adobe.com/v/34336/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34336?quality=12&learn=on)
 
 La consola Componentes es un catálogo de todos los componentes de OSGi implementados en AEM y proporciona toda la información sobre ellos, desde su ciclo de vida de componentes OSGi definido, hasta a qué servicios de OSGi pueden hacer referencia
 
@@ -63,7 +63,7 @@ Aspectos clave que ayudan con las actividades de depuración:
 
 ## Modelos Sling
 
->[!VIDEO](https://video.tv.adobe.com/v/34337/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34337?quality=12&learn=on)
 
 La consola Modelos de Sling se encuentra en:
 

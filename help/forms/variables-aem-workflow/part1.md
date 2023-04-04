@@ -1,18 +1,18 @@
 ---
 title: Variables en AEM flujo de trabajo[Parte 1]
 description: Uso de variables de tipo XML, JSON, ArrayList, Document en un flujo de trabajo AEM
-feature: Formularios adaptables
+feature: Adaptive Forms
 version: 6.5
-topic: Desarrollo
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: f9782684-3a74-4080-9680-589d3f901617
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '422'
 ht-degree: 0%
 
 ---
-
 
 # Variables XML en AEM flujo de trabajo
 
@@ -34,19 +34,19 @@ Los datos del formulario adaptable se almacenan bajo el elemento de datos como s
 
 >[!NOTE]
 >
->**AEM Forms 6.5.0** : cuando esté creando una variable de tipo XML para capturar los datos enviados en el modelo de flujo de trabajo, no asocie el XSD con la variable . Esto se debe a que al enviar el formulario adaptable basado en XSD, los datos enviados no son compatibles con el XSD. Los datos de queja XSD se incluyen en el elemento /afData/afBoundData/ .
+>**AEM Forms 6.5.0** - Cuando esté creando una variable de tipo XML para capturar los datos enviados en el modelo de flujo de trabajo, no asocie el XSD con la variable . Esto se debe a que al enviar el formulario adaptable basado en XSD, los datos enviados no son compatibles con el XSD. Los datos de queja XSD se incluyen en el elemento /afData/afBoundData/ .
 >
->**AEM Forms 6.5.1** : si asocia XSD con la variable XML, puede examinar los elementos de esquema para realizar la asignación de variables. No se podrá acceder a los datos de formulario no enlazados a elementos de esquema. Si el caso de uso es acceder a datos enlazados a elementos de esquema así como a datos no enlazados, no enlazar el esquema con la variable XML en el flujo de trabajo. Tendrá que utilizar la expresión XPath adecuada para obtener los datos que necesite
+>**AEM Forms 6.5.1** - Si asocia XSD con la variable XML, puede examinar los elementos de esquema para realizar la asignación de variables. No se podrá acceder a los datos de formulario no enlazados a elementos de esquema. Si el caso de uso es acceder a datos enlazados a elementos de esquema así como a datos no enlazados, no enlazar el esquema con la variable XML en el flujo de trabajo. Tendrá que utilizar la expresión XPath adecuada para obtener los datos que necesite
 
 ## Creación de variables XML
 
->[!VIDEO](https://video.tv.adobe.com/v/26440?quality=12?autoplay=1)
+>[!VIDEO](https://video.tv.adobe.com/v/26440?quality=12&learn=on)
 
 ### Uso del esquema con la variable XML
 
-**Asignación de una variable XML con un esquema. Utilice esta capacidad con AEM Forms 6.5.1 en adelante**
+**Asignación de una variable XML con un esquema. Utilice esta funcionalidad con AEM Forms 6.5.1 y versiones posteriores**
 
->[!VIDEO](https://video.tv.adobe.com/v/28098?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28098?quality=12&learn=on)
 
 #### Uso de la variable en el correo electrónico de envío
 
@@ -55,8 +55,7 @@ Los datos del formulario adaptable se almacenan bajo el elemento de datos como s
 Para que los recursos funcionen en su sistema, siga los siguientes pasos:
 
 * [Descargar e importar los recursos en AEM mediante el administrador de paquetes](assets/xmlandstringvariable.zip)
-* [Explorar el modelo de flujo de trabajo ](http://localhost:4502/editor.html/conf/global/settings/workflow/models/vacationrequest.html) para comprender las variables que se utilizan en el flujo de trabajo
+* [Explorar el modelo de flujo de trabajo](http://localhost:4502/editor.html/conf/global/settings/workflow/models/vacationrequest.html) para comprender las variables que se utilizan en el flujo de trabajo
 * [Configuración del servicio de correo electrónico](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html#ConfiguringtheMailService)
 * [Abrir el formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/applicationfortimeoff/jcr:content?wcmmode=disabled)
 * Complete los detalles y envíe el formulario.
-

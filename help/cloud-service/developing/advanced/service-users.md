@@ -10,10 +10,10 @@ kt: 9113
 thumbnail: 337530.jpeg
 last-substantial-update: 2022-10-10T00:00:00Z
 exl-id: 66f627e4-863d-45d7-bc68-7ec108a1c271
-source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '70'
-ht-degree: 2%
+ht-degree: 17%
 
 ---
 
@@ -21,14 +21,14 @@ ht-degree: 2%
 
 Aprenda a crear y utilizar usuarios de servicios en su código de AEM para proporcionar acceso controlado y programático al repositorio de AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/337530/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/337530?quality=12&learn=on)
 
-## Medios
+## Recursos
 
 + [Documentación sobre la inicialización del repositorio de Sling (repositorio)](https://sling.apache.org/documentation/bundles/repository-initialization.html)
 + [Documentación de autenticación del servicio Sling](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html)
 
-## Código
+## Código 
 
 ### ContentStatisticsImpl.java
 

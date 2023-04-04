@@ -1,6 +1,6 @@
 ---
 title: Configuración de App Builder para la extensibilidad de Asset compute
-description: Los proyectos de asset compute son proyectos de App Builder especialmente definidos y, como tales, requieren acceso a App Builder en la consola de desarrollador de Adobe para configurarlos e implementarlos.
+description: Los proyectos de asset compute son proyectos especialmente definidos de App Builder y, como tales, requieren acceso a App Builder en la consola de Adobe Developer para configurarlos e implementarlos.
 feature: Asset Compute Microservices
 topics: renditions, development
 version: Cloud Service
@@ -13,7 +13,7 @@ topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 2b1d8786-592e-41f2-80cc-bc0b1c7e1b49
-source-git-commit: eb6a7ef343a43000855f8d5cc69bde0fae81d3e6
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '539'
 ht-degree: 0%
@@ -22,15 +22,15 @@ ht-degree: 0%
 
 # Configuración de App Builder
 
-Los proyectos de asset compute son proyectos de App Builder especialmente definidos y, como tales, requieren acceso a App Builder en la consola de desarrollador de Adobe para configurarlos e implementarlos.
+Los proyectos de asset compute son proyectos especialmente definidos de App Builder y, como tales, requieren acceso a App Builder en la consola de Adobe Developer para configurarlos e implementarlos.
 
-## Creación y configuración de App Builder en Adobe Developer Console{#set-up}
+## Creación y configuración de App Builder en la consola de Adobe Developer{#set-up}
 
->[!VIDEO](https://video.tv.adobe.com/v/40183/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40183?quality=12&learn=on)
 
 _Pulsación de la configuración de App Builder (sin audio)_
 
-1. Iniciar sesión en [Adobe Developer Console](https://console.adobe.io) uso del Adobe ID asociado al aprovisionado [cuentas y servicios](./accounts-and-services.md). Asegúrese de que __Administrador del sistema__ o en el __Función de desarrollador__ para la organización de Adobe correcta.
+1. Iniciar sesión en [Consola de Adobe Developer](https://console.adobe.io) uso del Adobe ID asociado al aprovisionado [cuentas y servicios](./accounts-and-services.md). Asegúrese de que __Administrador del sistema__ o en el __Función de desarrollador__ para la organización de Adobe correcta.
 1. Cree un proyecto de App Builder tocando __Crear nuevo proyecto > Proyecto desde plantilla > Creador de aplicaciones__
 
    _Si:__ Crear nuevo proyecto __o__ Creador de aplicaciones __no está disponible, esto significa que la organización de Adobe no [aprovisionado con App Builder](#request-adobe-project-app-builder)._
@@ -47,7 +47,7 @@ _Pulsación de la configuración de App Builder (sin audio)_
 
    + __Experience Cloud > Asset compute__
       + Select __Generación de un par de claves__ y pulse __Generar par de teclas__ y guarde el `config.zip` a un lugar seguro para [uso posterior](#private-key)
-      + Toque __Siguiente__
+      + Pulse __Siguiente__
       + Seleccione el perfil de producto __Integraciones: Cloud Service__ y toque __Guardar la API configurada__
    + __Servicios de Adobe > Eventos de E/S__ y toque __Guardar la API configurada__
    + __Adobe Services > API de administración de E/S__ y toque __Guardar la API configurada__

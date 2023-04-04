@@ -7,7 +7,7 @@ version: 6.4,6.5
 role: Developer
 level: Beginner
 exl-id: 798012e5-5099-4fd0-82ad-a21f64a97aca
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 0%
@@ -20,11 +20,11 @@ En esta parte, crearemos el Modelo de datos de formulario. El Modelo de datos de
 
 **Creación de un modelo de datos de formulario en AEM Forms 6.4**
 
->[!VIDEO](https://video.tv.adobe.com/v/27763/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27763?quality=12&learn=on)
 
 **Creación de un modelo de datos de formulario en AEM Forms 6.5 y versiones posteriores**
 
->[!VIDEO](https://video.tv.adobe.com/v/27765?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27765?quality=12&learn=on)
 
 El modelo de datos de formulario depende de un origen de datos configurado correctamente. Se utilizará la fuente de datos configurada en el paso anterior como base para este modelo de datos de formulario.
 

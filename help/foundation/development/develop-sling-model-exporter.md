@@ -12,7 +12,7 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: fc321ed1-5cf7-4bbe-adc6-c4905af7b43c
-source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%
@@ -29,25 +29,25 @@ Apache Sling proporciona un exportador JSON de Jackson para cubrir el caso más 
 
 ## Configuración de AEM para Sling Model Exporter
 
->[!VIDEO](https://video.tv.adobe.com/v/16862/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/16862?quality=12&learn=on)
 
 [!DNL Sling Model Exporter] es una función de la variable [!DNL Apache Sling] proyecto y no está directamente enlazado al ciclo de lanzamiento del producto de AEM. [!DNL Sling Model Exporter] es compatible con AEM 6.3 y posteriores.
 
 ## El caso de uso de [!DNL Sling Model Exporter]
 
->[!VIDEO](https://video.tv.adobe.com/v/16863/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/16863?quality=12&learn=on)
 
 [!DNL Sling Model Exporter] es perfecto para aprovechar los modelos Sling que ya contienen lógica empresarial que admite representaciones de HTML a través de HTL (o anteriormente JSP) y exponer la misma representación empresarial que JSON para su consumo mediante servicios web programáticos o aplicaciones JavaScript.
 
 ## Creación de un exportador de modelo Sling
 
->[!VIDEO](https://video.tv.adobe.com/v/16864/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/16864?quality=12&learn=on)
 
 Habilitación [!DNL Exporter] compatibilidad con [!DNL Sling Model] es tan fácil como agregar la variable `@Exporter` anotación en la clase Java.
 
 ## Aplicación de las opciones de Sling Model Exporter
 
->[!VIDEO](https://video.tv.adobe.com/v/16865/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/16865?quality=12&learn=on)
 
 [!DNL Sling Model Exporter] admite pasar opciones de Exportador por modelo a la implementación de Exportador para impulsar cómo se usa la variable [!DNL Sling Model] finalmente se exporta. Estas opciones generalmente se aplican &quot;globalmente&quot; a la forma en que se usa la variable [!DNL Sling Model] se exporta en comparación con los puntos de datos que se pueden realizar mediante anotaciones en línea descritas a continuación.
 
@@ -58,7 +58,7 @@ Habilitación [!DNL Exporter] compatibilidad con [!DNL Sling Model] es tan fáci
 
 ## Aplicando [!DNL Jackson] anotaciones
 
->[!VIDEO](https://video.tv.adobe.com/v/16866/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/16866?quality=12&learn=on)
 
 Las implementaciones de los exportadores también pueden admitir anotaciones que se pueden aplicar en línea en la variable [!DNL Sling Model] , que puede proporcionar un nivel de control más preciso sobre cómo se exportan los datos.
 

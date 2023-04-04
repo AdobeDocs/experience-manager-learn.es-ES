@@ -8,22 +8,22 @@ role: Developer
 level: Beginner
 kt: 9092
 thumbnail: 337263.jpeg
-source-git-commit: e8b3bcaeee40b4bfd4f967f929ad664e8d168cb0
+exl-id: 4e10c2b7-41b6-41a0-b8d4-9207a9d3f9c8
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '88'
 ht-degree: 6%
 
 ---
 
-
 # Eliminación de muestras de un proyecto de Maven AEM
 
 Obtenga información sobre cómo limpiar y eliminar el código de muestra generado de un proyecto de AEM generado por el tipo de archivo del proyecto de AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/337263/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/337263?quality=12&learn=on)
 
 
-## Medios
+## Recursos
 
 + [Tipo de archivo del proyecto AEM Maven](https://github.com/adobe/aem-project-archetype)
 

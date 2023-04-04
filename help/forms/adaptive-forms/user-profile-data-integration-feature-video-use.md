@@ -8,10 +8,10 @@ role: Developer
 level: Beginner
 exl-id: 4f2b6669-d61e-400d-8657-dddb28ae35f4
 last-substantial-update: 2019-03-20T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '97'
-ht-degree: 6%
+ht-degree: 36%
 
 ---
 
@@ -21,12 +21,12 @@ La integración de datos de AEM Forms le permite configurar y conectarse a fuent
 
 Bases de datos relacionales: MySQL, Microsoft SQL Server, IBM DB2 y RDBMS de Oracle
 
-1. AEM perfil de usuario
+1. Perfil de usuario de AEM
 1. Servicios web RESTful
 1. Servicios web basados en SOAP
 1. Servicios OData Este artículo resaltará la integración de AEM información de perfil de usuario con Adaptive Forms.
 
->[!VIDEO](https://video.tv.adobe.com/v/17432/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/17432?quality=12&learn=on)
 
 >[!NOTE]
 >

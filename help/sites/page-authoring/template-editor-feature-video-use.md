@@ -14,10 +14,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 2213d1f2-37ed-4897-a68d-04ef423395a3
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '218'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 5%
 
 Las plantillas editables permiten a los autores especializados crear y actualizar plantillas de página y administrar configuraciones de políticas avanzadas con Adobe Experience Manager (AEM) Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/326784/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326784?quality=12&learn=on)
 
 Las plantillas editables son la recomendación para crear un nuevo AEM Sites.
 
@@ -42,5 +42,5 @@ URL de plantillas editables (instancia AEM local): [http://localhost:4502/libs/w
 
 ## Recursos adicionales {#additional-resources}
 
-* [Plantillas de página editables: documentación](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html)
+* [Plantillas de página editables: documentación](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=es)
 * [Creación de plantillas de página: documentación](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/templates.html)

@@ -10,7 +10,7 @@ kt: 616
 thumbnail: 20702.jpg
 last-substantial-update: 2022-06-08T00:00:00Z
 exl-id: 73e793e0-a20e-4954-ba1a-471b2cd85120
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 La administración avanzada de metadatos permite a los usuarios crear reglas de campo en cascada para formar relaciones contextuales entre metadatos en AEM Assets. El siguiente vídeo muestra nuevas reglas dinámicas para los requisitos de campo, la visibilidad y las opciones contextuales. El vídeo también detalla los pasos necesarios para que un administrador aplique estas reglas a un esquema de metadatos personalizado.
 
->[!VIDEO](https://video.tv.adobe.com/v/20702/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/20702?quality=12&learn=on)
 
 Hay tres conjuntos de reglas dinámicas que se pueden habilitar para un campo de metadatos determinado:
 

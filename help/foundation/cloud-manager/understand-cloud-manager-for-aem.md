@@ -12,10 +12,10 @@ level: Beginner
 exl-id: 53279cbb-70c8-4319-b5bb-9a7d350a7f72
 last-substantial-update: 2022-05-10T00:00:00Z
 thumbnail: understand-cloud-manager.jpg
-source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '512'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -34,25 +34,25 @@ Esta serie de vídeos explora las funciones clave de Cloud Manager para AEM, ent
 * [Canalizaciones no productivas CI/CD](#cicd-non-production-pipeline)
 * [Actividad](#activity)
 
-Para obtener una descripción general completa, consulte la [Guía del usuario de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html).
+Para obtener una descripción general completa, consulte la [Guía del usuario de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=es).
 
 ## Programas {#programs}
 
 [Programas de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html) representan conjuntos de entornos AEM que admiten conjuntos lógicos de iniciativas del negocio, que normalmente corresponden a un contrato de nivel de servicio (SLA) adquirido. Por ejemplo, un programa puede representar los recursos AEM para apoyar los sitios web públicos globales, mientras que otro programa representa un DAM central interno.
 
->[!VIDEO](https://video.tv.adobe.com/v/26313/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26313?quality=12&learn=on)
 
 ## Entornos {#environments}
 
 [Entornos de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/managing-environments.html) están compuestas por instancias de AEM Author, AEM Publish y Dispatcher. Los distintos entornos admiten funciones y se pueden utilizar con diferentes canalizaciones de CD/CI (descritas a continuación). Los entornos de Cloud Manager suelen tener un entorno de producción y un entorno de ensayo.
 
->[!VIDEO](https://video.tv.adobe.com/v/26318/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26318?quality=12&learn=on)
 
 ## Informes {#reports}
 
 [Informes de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/monitoring-environments.html) proporciona una vista de los entornos y las instancias de AEM del programa a través de un conjunto de gráficos que informan y rastrean distintas métricas para cada instancia de AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/26315/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26315?quality=12&learn=on)
 
 ## Canalización de producción de CI/CD {#cicd-production-pipeline}
 
@@ -66,19 +66,19 @@ Para obtener una descripción general completa, consulte la [Guía del usuario d
 
 La variable [Canalización de producción de CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/pipelines/production-pipelines.html) define el déclencheur que inicia la canalización y los parámetros que controlan la implementación de producción y los parámetros de prueba de rendimiento.
 
->[!VIDEO](https://video.tv.adobe.com/v/26314/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26314?quality=12&learn=on)
 
 ### Ejecución de canalización
 
 La variable [Canalización de producción de CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html) se utiliza para crear e implementar código mediante Stage en el entorno de producción, lo que reduce el tiempo de respuesta.
 
->[!VIDEO](https://video.tv.adobe.com/v/26317/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26317?quality=12&learn=on)
 
 ## Canalizaciones no productivas CI/CD {#cicd-non-production-pipeline}
 
 [Canalizaciones CI/CD no productivas](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/pipelines/production-pipelines.html) se dividen en dos categorías, canalizaciones de calidad de código y canalizaciones de implementación. La calidad del código canaliza todo el código de una rama de Git para crearlo y evaluarlo en relación con el análisis de calidad del código de Cloud Manager. Las canalizaciones de implementación admiten la implementación automatizada de código desde el repositorio Git a cualquier entorno que no sea de producción, es decir, cualquier entorno de AEM aprovisionado que no sea de fase o producción.
 
->[!VIDEO](https://video.tv.adobe.com/v/26316/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26316?quality=12&learn=on)
 
 ## Actividad {#activity}
 
@@ -86,4 +86,4 @@ Cloud Manager proporciona una vista consolidada de la actividad de un programa, 
 
 Cloud Manager también se integra a nivel de usuario con [Notificaciones de Adobe Experience Cloud](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/notifications.html), proporcionando una visión omnipresente de los eventos y acciones de interés.
 
->[!VIDEO](https://video.tv.adobe.com/v/26319/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26319?quality=12&learn=on)

@@ -7,21 +7,21 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: 2122ab13-f9df-4f36-9c7e-8980033c3b10
-source-git-commit: a500c88091d87e34c12d4092c71241983b166af8
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1989'
 ht-degree: 1%
 
 ---
 
-# Crear modelos de fragmento de contenido {#create-content-fragment-models}
+# Crear los modelos de fragmentos de contenido {#create-content-fragment-models}
 
 En este capítulo se explican los pasos para crear cinco modelos de fragmento de contenido:
 
 * **Información de contacto**
 * **Dirección**
 * **Persona**
-* **Lugar de residencia**
+* **Ubicación**
 * **Equipo**
 
 Los modelos de fragmentos de contenido permiten definir relaciones entre tipos de contenido y mantener relaciones como esquemas. Utilice referencias de fragmento anidadas, varios tipos de datos de contenido y el tipo de ficha para la organización de contenido visual. Tipos de datos más avanzados, como marcadores de posición de pestañas, referencias de fragmento, objetos JSON y el tipo de datos de fecha y hora.
@@ -34,7 +34,7 @@ Este es un tutorial avanzado. Antes de continuar con este capítulo, asegúrese 
 
 ## Objetivos {#objectives}
 
-* Crear modelos de fragmento de contenido.
+* Crear los modelos de fragmentos de contenido.
 * Agregue marcadores de posición de ficha, fecha y hora, objetos JSON, referencias de fragmento y referencias de contenido a los modelos.
 * Agregue la validación a las referencias de contenido.
 
@@ -42,9 +42,9 @@ Este es un tutorial avanzado. Antes de continuar con este capítulo, asegúrese 
 
 El siguiente vídeo proporciona una breve introducción a los modelos de fragmento de contenido y cómo se utilizan en este tutorial.
 
->[!VIDEO](https://video.tv.adobe.com/v/340037/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/340037?quality=12&learn=on)
 
-## Crear modelos de fragmento de contenido {#create-models}
+## Crear los modelos de fragmentos de contenido {#create-models}
 
 Vamos a crear algunos modelos de fragmento de contenido para la aplicación WKND. Si necesita una introducción básica para crear modelos de fragmento de contenido, consulte el capítulo correspondiente en la [tutorial básico](../multi-step/content-fragment-models.md).
 
@@ -88,7 +88,7 @@ A continuación, cree un modelo para una dirección.
 
    * Ciudad
    * Estado
-   * Código postal
+   * Código ZIP
    * País
 
 1. Select **Guardar** para guardar los cambios en el modelo Address.
@@ -227,13 +227,13 @@ Existen algunas prácticas recomendadas relacionadas con la creación de modelos
 
 * Anide los modelos de fragmento de contenido tan profundamente como sea necesario pero solo cuando sea necesario. Recuerde que el anidado se realiza con referencias de fragmento o referencias de contenido. Considere un máximo de cinco niveles de anidación.
 
-## ¡Enhorabuena! {#congratulations}
+## Enhorabuena. {#congratulations}
 
-¡Enhorabuena! Ahora ha añadido fichas, utilizado los tipos de datos de fecha y hora y de objeto JSON, y ha aprendido más sobre referencias de fragmento y contenido. También ha añadido reglas de validación de referencia de contenido.
+Felicitaciones. Ahora ha añadido fichas, utilizado los tipos de datos de fecha y hora y de objeto JSON, y ha aprendido más sobre referencias de fragmento y contenido. También ha añadido reglas de validación de referencia de contenido.
 
 ## Pasos siguientes {#next-steps}
 
 El siguiente capítulo de esta serie abarcará [creación de fragmentos de contenido](/help/headless-tutorial/graphql/advanced-graphql/author-content-fragments.md) de los modelos que ha creado en este capítulo. Obtenga información sobre cómo utilizar los tipos de datos introducidos en este capítulo y cree directivas de carpeta para limitar los modelos de fragmento de contenido que se pueden crear en una carpeta de recursos.
 
 Aunque es opcional para este tutorial, asegúrese de publicar todo el contenido en situaciones de producción en el mundo real. Para obtener una revisión de los entornos Autor y Publicación en AEM, consulte la
-[AEM serie de vídeo sin encabezado y GraphQL](/help/headless-tutorial/graphql/video-series/author-publish-architecture.md).
+[Serie de vídeo AEM sin encabezado y GraphQL](/help/headless-tutorial/graphql/video-series/author-publish-architecture.md).

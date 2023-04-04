@@ -11,7 +11,7 @@ kt: 9371
 thumbnail: 338680.jpg
 exl-id: 3155e0fa-56b7-4a52-8eef-fee488e95f68
 recommendations: noDisplay, noCatalog
-source-git-commit: de2fa2e4c29ce6db31233ddb1abc66a48d2397a6
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 4%
@@ -40,7 +40,7 @@ En este capítulo se inspeccionan dos archivos Adobe XD, uno para la variable [P
 
 ## Kit de IU de plantilla de sitio estándar {#standard-site-template-uikit}
 
->[!VIDEO](https://video.tv.adobe.com/v/338680/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/338680?quality=12&learn=on)
 
 Pasos de alto nivel:
 
@@ -50,14 +50,14 @@ Pasos de alto nivel:
 
 ## Kit de IU WKND {#wknd-ui-kit}
 
->[!VIDEO](https://video.tv.adobe.com/v/30214/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/30214?quality=12&learn=on)
 
 Pasos de alto nivel:
 
 1. Descargue el [Archivo XD artículo WKND](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND-article-design.xd).
 1. Inspect: los diseños para la plantilla de artículo WKND.
 
-## Felicitaciones! {#congratulations}
+## Enhorabuena. {#congratulations}
 
 Felicitaciones, ha aprendido cómo se pueden utilizar los kits de IU de Adobe XD para asignar y planificar una implementación de AEM Sites.
 

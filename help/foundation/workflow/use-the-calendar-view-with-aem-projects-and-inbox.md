@@ -1,7 +1,7 @@
 ---
 title: Usar la vista de calendario con AEM proyectos y la bandeja de entrada
 seo-title: Use Calendar View with AEM Projects and Inbox
-description: 'AEM Vista de calendario realiza el seguimiento de proyectos y tareas en una vista de calendario para facilitar la gestión y programación de los proyectos. Con la vista Calendario, el usuario tendría una visibilidad general sobre los proyectos y tareas que están actualmente en curso, planificados, pendientes pronto y vencidos. '
+description: AEM Vista de calendario realiza el seguimiento de proyectos y tareas en una vista de calendario para facilitar la gestión y programación de los proyectos. Con la vista Calendario, el usuario tendría una visibilidad general sobre los proyectos y tareas que están actualmente en curso, planificados, pendientes pronto y vencidos.
 seo-description: AEM's Calendar View tracks projects and tasks in a calendar view for easier project management and scheduling. With Calendar view, user would have an overall visibility over projects and tasks that are currently in progress, planned, due soon and past due.
 version: 6.4, 6.5
 feature: Workflow, Projects
@@ -14,7 +14,7 @@ discoiquuid: 5ad21858-a4a2-486c-98dc-4f5ba46a3bc1
 topic: Collaboration
 role: User
 level: Beginner
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '185'
 ht-degree: 0%
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 AEM Vista de calendario realiza el seguimiento de proyectos y tareas en una vista de calendario para facilitar la gestión y programación de los proyectos. Con la vista Calendario, el usuario tendría una visibilidad general sobre los proyectos y tareas que están actualmente en curso, planificados, pendientes pronto y vencidos.
 
->[!VIDEO](https://video.tv.adobe.com/v/16804/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/16804?quality=12&learn=on)
 
 Vista de calendario ayuda a administrar mejor los proyectos y las tareas con las siguientes capacidades:
 

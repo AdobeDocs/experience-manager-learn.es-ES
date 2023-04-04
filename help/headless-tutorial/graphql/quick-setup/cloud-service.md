@@ -9,7 +9,7 @@ level: Beginner
 kt: 9442
 thumbnail: 339073.jpg
 exl-id: 62e807b7-b1a4-4344-9b1e-2c626b869e10
-source-git-commit: b4c04a9ef7d8cfdaa5675fdfe259ab9d813fb7e0
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1084'
 ht-degree: 2%
@@ -36,10 +36,10 @@ Para seguir esta configuración rápida es necesario lo siguiente:
 
 ## 1. Crear un repositorio Git de Cloud Manager
 
-En primer lugar, cree un repositorio Git de Cloud Manager que se utilice para implementar el sitio WKND. El sitio WKND es un proyecto de sitio web de muestra AEM que contiene contenido (fragmentos de contenido) y un extremo de AEM de GraphQL utilizado por la aplicación React de la configuración rápida.
+En primer lugar, cree un repositorio Git de Cloud Manager que se utilice para implementar el sitio WKND. El sitio WKND es un proyecto de sitio web AEM de muestra que contiene contenido (fragmentos de contenido) y un extremo de AEM de GraphQL utilizado por la aplicación React de la configuración rápida.
 
 _Descripción general de los pasos_
->[!VIDEO](https://video.tv.adobe.com/v/339073/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/339073?quality=12&learn=on)
 
 1. Vaya a [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
 1. Seleccione Cloud Manager __Programa__ que contiene el entorno as a Cloud Service AEM que se utilizará para esta configuración rápida
@@ -55,7 +55,7 @@ _Descripción general de los pasos_
 Con el repositorio Git de Cloud Manager creado, clone el código fuente del proyecto WKND Site de GitHub y lo insertaba en el repositorio Git de Cloud Manager. Ahora Cloud Manager tiene acceso e implementa el proyecto WKND Site en el entorno as a Cloud Service AEM.
 
 _Descripción general de los pasos_
->[!VIDEO](https://video.tv.adobe.com/v/339074/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/339074?quality=12&learn=on)
 
 1. Desde la línea de comandos, clone el código fuente del proyecto WKND de ejemplo desde GitHub
 
@@ -90,7 +90,7 @@ Con el proyecto WKND Site insertado en el repositorio Git de Cloud Manager, no s
 Tenga en cuenta que el proyecto WKND Site proporciona contenido de muestra que la aplicación React consume sobre AEM API de GraphQL sin encabezado.
 
 _Descripción general de los pasos_
->[!VIDEO](https://video.tv.adobe.com/v/339075/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/339075?quality=12&learn=on)
 
 1. Adjuntar un __Canalización de implementación sin producción__ al nuevo repositorio de Git
    1. Select __Canalizaciones__ en la barra de navegación superior
@@ -118,10 +118,10 @@ _Descripción general de los pasos_
 
 ## 4. Descargue y ejecute la aplicación WKND React
 
-Con AEM arranque as a Cloud Service con el contenido del proyecto WKND Site, descargue e inicie la aplicación WKND React de muestra que consume el contenido del sitio WKND a través de AEM API de GraphQL sin encabezado.
+Con AEM as a Cloud Service arrancado con el contenido del proyecto WKND Site, descargue e inicie la aplicación WKND React de muestra que consume el contenido del sitio WKND a través de AEM API de GraphQL sin encabezado.
 
 _Descripción general de los pasos_
->[!VIDEO](https://video.tv.adobe.com/v/339076/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/339076?quality=12&learn=on)
 
 1. Desde la línea de comandos, clone el código fuente de la aplicación React desde GitHub.
 
@@ -159,10 +159,10 @@ _Descripción general de los pasos_
 
 ## 5. Editar contenido en AEM
 
-Con la aplicación WKND React de muestra que se conecta y consume contenido de las API de GraphQL AEM sin encabezado, cree contenido en el servicio de AEM Author y vea cómo la experiencia de la aplicación React se actualiza de forma conjunta.
+Con la aplicación WKND React de ejemplo, que se conecta y consume contenido de las API de GraphQL sin encabezado de AEM, cree contenido en el servicio de AEM Author y vea cómo la experiencia de la aplicación React se actualiza de forma conjunta.
 
 _Descripción general de los pasos_
->[!VIDEO](https://video.tv.adobe.com/v/339077/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/339077?quality=12&learn=on)
 
 1. Inicie sesión en AEM servicio de creación as a Cloud Service
 1. Vaya a __Assets > Archivos > WKND Compartido > Inglés > Aventuras__
@@ -187,12 +187,12 @@ _Descripción general de los pasos_
    >
    > Si no está familiarizado con la creación y publicación de fragmentos de contenido nuevos o con la cancelación de la publicación de fragmentos de contenido existentes, consulte la proyección de pantalla anterior.
 
-## Felicitaciones!
+## Enhorabuena.
 
-Felicitaciones! ¡Ha utilizado correctamente AEM sin encabezado para activar una aplicación React!
+Felicitaciones. ¡Ha utilizado correctamente AEM sin encabezado para activar una aplicación React!
 
 Para comprender en detalle cómo la aplicación React consume contenido de AEM as a Cloud Service, consulte [tutorial AEM Headless](../multi-step/overview.md). El tutorial explora cómo se crean los fragmentos de contenido en AEM y cómo esta aplicación React consume su contenido como JSON.
 
-### Siguientes pasos
+### Pasos siguientes
 
 + [Iniciar el tutorial AEM sin encabezado](../multi-step/overview.md)

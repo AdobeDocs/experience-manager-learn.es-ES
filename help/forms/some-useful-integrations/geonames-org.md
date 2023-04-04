@@ -9,7 +9,7 @@ role: Developer
 level: Intermediate
 exl-id: f1f2cacc-9ec4-46d6-a6af-dac3f663de78
 last-substantial-update: 2021-02-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '606'
 ht-degree: 2%
@@ -22,7 +22,7 @@ Una lista desplegable en cascada es una serie de controles DropDownList dependie
 
 ## Demostración del caso de uso
 
->[!VIDEO](https://video.tv.adobe.com/v/340344?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/340344?quality=12&learn=on)
 
 A los efectos de este tutorial, he utilizado [API de REST de Geonames](http://api.geonames.org/) para demostrar esta capacidad.
 Existen varias organizaciones que proporcionan este tipo de servicio y, siempre y cuando tengan API de REST bien documentadas, podrá integrarlas fácilmente con AEM Forms mediante la funcionalidad de integración de datos

@@ -7,10 +7,10 @@ level: Intermediate
 thumbnail: 343624.jpeg
 hidefromtoc: true
 recommendations: noDisplay, noCatalog
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '90'
-ht-degree: 2%
+ht-degree: 6%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 AEM as a Cloud Service completa muchas pruebas funcionales de forma predeterminada con la aplicación incorporada. Sin embargo, es posible que estas pruebas no cubran todas las pruebas necesarias que pueda necesitar. Las pruebas funcionales personalizadas vienen al rescate.
 
->[!VIDEO](https://video.tv.adobe.com/v/343624)
+>[!VIDEO](https://video.tv.adobe.com/v/343624?quality=12&learn=on)
 
 ## Contenido cubierto en este vídeo
 

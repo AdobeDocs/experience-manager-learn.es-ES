@@ -10,7 +10,7 @@ thumbnail: 333181.jpg
 last-substantial-update: 2022-11-11T00:00:00Z
 recommendations: noDisplay, noCatalog
 exl-id: ef7a1dad-993a-4c47-a9fb-91fa73de9b5d
-source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 6%
@@ -23,7 +23,7 @@ La configuración rápida es una guía rápida que ilustra cómo instalar y ejec
 
 La configuración rápida le lleva directamente al estado final de este tutorial.
 
->[!VIDEO](https://video.tv.adobe.com/v/333181/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/333181?quality=12&learn=on)
 
 _Un vídeo explicativo de la configuración rápida_
 
@@ -68,7 +68,7 @@ Descargue e instale el AEM SDK Quickstart en el puerto 4502, con `admin/admin` c
 AEM SDK se inicia y se inicia automáticamente en [http://localhost:4502](http://localhost:4502). Inicie sesión con las siguientes credenciales:
 
 + Nombre de usuario: `admin`
-+ Contraseña: `admin`
++ Una contraseña: `admin`
 
 ## Descargar e instalar el paquete WKND Site
 
@@ -156,6 +156,6 @@ Antes de crear contenido, organice las ventanas del navegador de forma que AEM A
 
 Las páginas de AEM nuevas en la sección __Página de inicio de la aplicación WKND > Aventura__ _must_ tienen un nombre de página AEM que coincida con el nombre del fragmento de contenido de la aventura correspondiente. Esto se debe a que la ruta SPA a AEM asignación de página se basa en el último segmento de la ruta, que es el nombre del fragmento de contenido.
 
-## ¡Enhorabuena!
+## Enhorabuena.
 
 Solo tienes que probar rápidamente cómo AEM editor de SPA puede mejorar tu SPA con áreas controladas y editables. Si le interesa, consulte el resto del tutorial, pero asegúrese de empezar de nuevo, ya que en esta configuración rápida su entorno de desarrollo local está en el estado final del tutorial.

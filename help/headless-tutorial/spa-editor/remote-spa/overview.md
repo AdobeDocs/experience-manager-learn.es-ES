@@ -9,10 +9,10 @@ kt: 7630
 thumbnail: 333272.jpeg
 last-substantial-update: 2022-11-11T00:00:00Z
 exl-id: c5f933eb-c409-41dc-bb6a-6b2220dfbb47
-source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '618'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -20,11 +20,11 @@ ht-degree: 11%
 
 Le damos la bienvenida al tutorial en varias partes para desarrolladores que buscan aumentar un SPA remoto basado en React (o Next.js) existente con contenido AEM editable mediante AEM editor SPA.
 
-Este tutorial se basa en la variable [Aplicación WKND GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=es), una aplicación React que consume AEM contenido del fragmento de contenido sobre AEM API de GraphQL, sin embargo no proporciona ninguna creación en contexto de SPA contenido.
+Este tutorial se basa en la variable [Aplicación WKND GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=es), una aplicación React que consume AEM contenido de fragmentos de contenido sobre AEM API de GraphQL, sin embargo no proporciona ninguna creación en contexto de contenido SPA.
 
->[!VIDEO](https://video.tv.adobe.com/v/333272/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/333272?quality=12&learn=on)
 
-## Acerca del tutorial
+## Información sobre el tutorial
 
 El tutorial pretende ilustrar cómo se puede actualizar un SPA remoto o un SPA que se ejecute fuera del contexto de AEM para consumir y entregar contenido creado en AEM.
 

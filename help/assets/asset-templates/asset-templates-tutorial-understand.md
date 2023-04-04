@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: c418e94a-b18e-429a-b41c-2bf32e158598
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 1%
@@ -19,7 +19,7 @@ Este tutorial de vídeo explica cómo definir un archivo de InDesign y todas las
 
 ## Construcción del archivo de plantilla de InDesign {#constructing-the-indesign-template-file}
 
->[!VIDEO](https://video.tv.adobe.com/v/19293/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/19293?quality=12&learn=on)
 
 1. Descargue y abra el [**Plantilla del archivo de InDesign**](assets/asset-templates-tutorial-video--supporting-files.zip)
 2. **Abra el panel Etiquetas .** revise la convención de nomenclatura de etiquetas y tenga en cuenta que los elementos que pueden crear en el archivo InDesign ya están etiquetados. Recuerde que solo los elementos etiquetados se pueden editar en AEM.
@@ -51,7 +51,7 @@ Este tutorial de vídeo explica cómo definir un archivo de InDesign y todas las
 
 ## Creación y creación de plantillas de recursos en AEM Assets {#creating-and-authoring-an-asset-template-in-aem-assets}
 
->[!VIDEO](https://video.tv.adobe.com/v/19294/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/19294?quality=12&learn=on)
 
 1. **Iniciar InDesign Server** en el puerto 8080.
 2. Asegúrese de que la variable **La instancia de autor de AEM está configurada para interactuar con el InDesign Server**(y viceversa).

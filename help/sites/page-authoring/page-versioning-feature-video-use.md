@@ -12,10 +12,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: cc659581-031d-4f2a-90c1-cf721e481689
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '143'
-ht-degree: 27%
+ht-degree: 0%
 
 ---
 
@@ -23,9 +23,9 @@ ht-degree: 27%
 
 El control de versiones de páginas ayuda a los autores de contenido a rastrear los cambios asociados con una página creando una versión de página y proporciona una opción para obtener una vista previa de una versión, restaurar una versión y comparar una versión con la versión actual de una página.
 
->[!VIDEO](https://video.tv.adobe.com/v/32151?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32151?quality=12&learn=on)
 
 Al generar versiones se crea una instantánea de una página en un punto específico en el tiempo. Con el control de versiones, puede realizar las siguientes acciones:
 * Crear una nueva versión para una página
-* Restaurar una página a una versión anterior, por ejemplo, para deshacer un cambio realizado en ella
-* Comparar la versión actual de una página con una versión anterior resaltando las diferencias en el texto y las imágenes
+* Restaurar una página a una versión anterior para deshacer un cambio realizado en una página, por ejemplo
+* Compare la versión actual de una página con una versión anterior resaltando las diferencias en el texto y las imágenes

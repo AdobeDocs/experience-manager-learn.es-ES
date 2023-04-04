@@ -13,10 +13,10 @@ topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 707657ad-221e-4dab-ac2a-46a4fcbc55bc
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '621'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -63,13 +63,13 @@ Se requiere almacenamiento en la nube para el desarrollo local de proyectos de A
 
 Cuando los Assets computes se implementan en Adobe I/O Runtime para su uso directo por parte de AEM as a Cloud Service, este almacenamiento en la nube no es estrictamente necesario, ya que AEM proporciona el almacenamiento en la nube desde el que se lee el recurso y se escribe su representación.
 
-### Almacenamiento de Microsoft Azure Blob{#azure-blob-storage}
+### Almacenamiento del Blob de Microsoft Azure{#azure-blob-storage}
 
 Si todavía no tiene acceso al almacenamiento de blob de Microsoft Azure, regístrese para obtener un [cuenta gratuita de 12 meses](https://azure.microsoft.com/en-us/free/).
 
 Sin embargo, este tutorial utilizará Azure Blob Storage. [Amazon S3](#amazon-s3) también se puede utilizar solo una variación menor al tutorial.
 
->[!VIDEO](https://video.tv.adobe.com/v/40377/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40377?quality=12&learn=on)
 
 _Pulsación del aprovisionamiento del almacenamiento del blob de Azure (sin audio)_
 

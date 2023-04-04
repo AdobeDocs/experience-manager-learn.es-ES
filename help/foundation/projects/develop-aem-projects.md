@@ -11,10 +11,10 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '4571'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Este es un tutorial de desarrollo que ilustra cómo desarrollar para [!DNL AEM Projects].  En este tutorial crearemos una plantilla de proyecto personalizada que se pueda utilizar para crear nuevos proyectos en AEM para administrar los flujos de trabajo y las tareas de creación de contenido.
 
->[!VIDEO](https://video.tv.adobe.com/v/16904/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/16904?quality=12&learn=on)
 
 *Este vídeo ofrece una breve demostración del flujo de trabajo terminado que se crea en el tutorial siguiente.*
 
@@ -261,7 +261,7 @@ Ahora podemos probar nuestra plantilla de proyecto creando un nuevo proyecto.
 
 1. Haga clic en &quot;Crear&quot; para terminar de crear el proyecto basado en la plantilla personalizada. Verá en el panel del proyecto que el mosaico Tareas y los demás mosaicos configurados en gadgets aparecen automáticamente.
 
-   ![Mosaico Tareas](./assets/develop-aem-projects/tasks-tile.png)
+   ![Mosaico de tareas](./assets/develop-aem-projects/tasks-tile.png)
 
 
 ## ¿Por qué el flujo de trabajo?
@@ -725,7 +725,7 @@ La configuración de flujo de trabajo es un área de una plantilla de proyecto q
 
 1. En CRXDE-Lite, vaya a la plantilla de proyecto de creación creada anteriormente en `/apps/aem-guides/projects-tasks/projects/templates/authoring-project/workflows/models`.
 
-   Debajo del nodo de modelos, agregue un nuevo nodo denominado **contentapproval** con un tipo de nodo de **nt:unstructured**. Agregue las siguientes propiedades al nodo :
+   Debajo del nodo de modelos, agregue un nuevo nodo denominado **contentapproval** con un tipo de nodo de **nt:unstructured**. Agregue las siguientes propiedades al nodo:
 
    ```xml
    <contentapproval

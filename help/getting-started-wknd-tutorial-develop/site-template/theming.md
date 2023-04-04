@@ -11,7 +11,7 @@ kt: 7498
 thumbnail: KT-7498.jpg
 exl-id: 98946462-1536-45f9-94e2-9bc5d41902d4
 recommendations: noDisplay, noCatalog
-source-git-commit: de2fa2e4c29ce6db31233ddb1abc66a48d2397a6
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 1%
@@ -38,7 +38,7 @@ Este es un tutorial de varias partes y se da por hecho que los pasos descritos e
 
 A continuación, realice cambios en los orígenes de los temas para que el sitio coincida con el aspecto de la marca WKND.
 
->[!VIDEO](https://video.tv.adobe.com/v/332918/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/332918?quality=12&learn=on)
 
 Pasos de alto nivel para el vídeo:
 
@@ -55,7 +55,7 @@ Descargue los estilos terminados para el [Tema de muestra de WKND](assets/themin
 
 Implemente actualizaciones en un tema en un entorno AEM mediante la canalización front-end de Cloud Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/338722/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/338722?quality=12&learn=on)
 
 Pasos de alto nivel para el vídeo:
 
@@ -80,7 +80,7 @@ Hay un par de repositorios de GitHub de ejemplo que se pueden usar como referenc
 * [aem-site-template-standard](https://github.com/adobe/aem-site-template-standard)
 * [aem-site-template-basic-theme-e2e](https://github.com/adobe/aem-site-template-basic-theme-e2e) - Se utiliza como ejemplo para proyectos &quot;reales&quot;.
 
-## Felicitaciones! {#congratulations}
+## Enhorabuena. {#congratulations}
 
 ¡Felicidades, acaba de actualizar e implementar un tema para AEM!
 

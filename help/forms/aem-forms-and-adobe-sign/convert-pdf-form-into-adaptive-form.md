@@ -1,24 +1,24 @@
 ---
-title: Convertir formulario PDF en formulario adaptable
+title: Convertir formulario de PDF en formulario adaptable
 description: El servicio de Automated forms conversion de AEM Forms, con tecnología de Adobe Sensei, convierte automáticamente sus PDF forms en formularios adaptables y adaptables para dispositivos. Ya sea que utilice PDF forms no interactivos, Acrobat Forms o PDF forms basados en XFA, el servicio de Automated forms conversion puede convertir fácilmente estos formularios en formularios adaptables.
-feature: Formularios adaptables
+feature: Adaptive Forms
 thumbnail: 39495.jpg
 kt: 6115
-topic: Desarrollo
+topic: Development
 role: User
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 9aab3eb0-03a5-4962-a2ff-d44a17dc140e
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '128'
-ht-degree: 2%
+source-wordcount: '125'
+ht-degree: 0%
 
 ---
 
-# Convertir formulario PDF en formulario adaptable
+# Convertir formulario de PDF en formulario adaptable
 
 El servicio de Automated forms conversion de AEM Forms, con tecnología de Adobe Sensei, convierte automáticamente sus PDF forms en formularios adaptables y adaptables para dispositivos. Ya sea que utilice PDF forms no interactivos, Acrobat Forms o PDF forms basados en XFA, el servicio de Automated forms conversion puede convertir fácilmente estos formularios en formularios adaptables.
 
-En el siguiente vídeo se explican los pasos necesarios para convertir el formulario PDF a un formulario adaptable mediante el servicio de Automated forms conversion
+En el siguiente vídeo se explican los pasos necesarios para convertir el formulario de PDF en formulario adaptable mediante el servicio de Automated forms conversion
 
->[!VIDEO](https://video.tv.adobe.com/v/39495/?quality=9&learn=on)
-
+>[!VIDEO](https://video.tv.adobe.com/v/39495?quality=12&learn=on)

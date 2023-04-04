@@ -9,7 +9,7 @@ role: Developer
 level: Intermediate
 exl-id: 0c77a853-fa71-46ac-8626-99bc69d6222d
 last-substantial-update: 2020-06-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 A partir de AEM Forms 6.4, ahora se puede utilizar el modelo de datos de formulario como parte de AEM flujo de trabajo. El siguiente vídeo recorre los pasos necesarios para configurar el paso Modelo de datos de formulario en AEM flujo de trabajo
 
 
->[!VIDEO](https://video.tv.adobe.com/v/21719/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/21719?quality=12&learn=on)
 
 Para probar esta capacidad en el servidor, siga las siguientes instrucciones
 * [Descargar e implementar el paquete setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Este es el paquete OSGI personalizado que establece propiedades de metadatos.

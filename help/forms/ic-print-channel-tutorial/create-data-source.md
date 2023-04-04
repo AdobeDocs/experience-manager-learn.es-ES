@@ -1,8 +1,8 @@
 ---
-title: Creación de la configuración de la fuente de datos en AEM Forms
-seo-title: Creación de la configuración de la fuente de datos en AEM Forms
+title: Creación de la configuración de DataSource en AEM Forms
+seo-title: Creating DataSource Configuration in AEM Forms
 description: Esta es la parte 2 del tutorial de varios pasos para crear su primer documento interactivo de comunicaciones. En esta parte, crearemos una fuente de datos respaldada por REST.  El siguiente vídeo recorre los pasos para crear la fuente de datos.
-seo-description: Esta es la parte 2 del tutorial de varios pasos para crear su primer documento interactivo de comunicaciones. En esta parte, crearemos una fuente de datos respaldada por REST.  El siguiente vídeo recorre los pasos para crear la fuente de datos.
+seo-description: This is part 2 of multistep tutorial for creating your first interactive communications document. In this part, we will create a REST backed data source.  The following video walks thru the steps to create the data source.
 uuid: b9d5c220-3e86-4e7d-8ea0-a7f604dde925
 feature: Interactive Communication
 topics: development
@@ -16,19 +16,18 @@ kt: 5954
 topic: Development
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 1f4d88ad-ace1-4f78-be40-da80b3b4d40c
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '144'
-ht-degree: 2%
+source-wordcount: '97'
+ht-degree: 0%
 
 ---
 
-
-# Creación de la configuración de la fuente de datos en AEM Forms{#creating-datasource-configuration-in-aem-forms}
+# Creación de la configuración de DataSource en AEM Forms{#creating-datasource-configuration-in-aem-forms}
 
 En esta parte, crearemos una fuente de datos respaldada por REST.  El siguiente vídeo recorre los pasos para crear la fuente de datos.
 
->[!VIDEO](https://video.tv.adobe.com/v/27765/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27765?quality=12&learn=on)
 
-Utilice el archivo de intercambio que se le ha proporcionado como parte de los recursos relacionados con este tutorial. Los recursos están disponibles en [introduction](introduction.md) de este tutorial.
+Utilice el archivo de intercambio que se le ha proporcionado como parte de los recursos relacionados con este tutorial. Los recursos están disponibles en [introducción](introduction.md) de este tutorial.

@@ -5,18 +5,18 @@ type: Troubleshooting
 role: Admin
 level: Intermediate
 version: 6.5
-topic: Administración
+topic: Administration
 index: y
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 3f30b17b-2e69-4b77-97fc-3df5a273d002
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '57'
-ht-degree: 1%
+source-wordcount: '56'
+ht-degree: 0%
 
 ---
-
 
 # Cambio del tiempo de espera de transacción de un servicio en AEM Forms JEE
 
 *Este vídeo muestra los pasos para cambiar el tiempo de espera de transacción de un servicio en AEM Forms JEE.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335495?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/335495?quality=12&learn=on)

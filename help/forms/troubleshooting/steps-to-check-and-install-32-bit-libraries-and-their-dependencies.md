@@ -1,23 +1,22 @@
 ---
-title: Pasos para comprobar los redistribuibles de Microsoft Visual C++ de 32 bits necesarios
-description: 'Instale los redistribuibles de Microsoft Visual C++ de 32 bits. '
+title: Pasos para comprobar los redistribuibles Microsoft Visual C+++ de 32 bits necesarios
+description: Instale los redistribuibles de Microsoft Visual C++ de 32 bits.
 type: Troubleshooting
 role: Admin
 level: Intermediate
 version: 6.5
-topic: 'Administración   '
+topic: Administration
 index: y
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: de4315b4-9e9b-4c5a-8c04-2c225a8b9f73
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '46'
-ht-degree: 2%
+source-wordcount: '45'
+ht-degree: 0%
 
 ---
 
+# Pasos para comprobar e instalar los redistribuibles Microsoft Visual C++ de 32 bits necesarios
 
-# Pasos para comprobar e instalar los redistribuibles de Microsoft Visual C++ de 32 bits necesarios
+*Este vídeo recorre el proceso de comprobar e instalar los redistribuibles Microsoft Visual C+++ de 32 bits necesarios.*
 
-*Este vídeo recorre el proceso de comprobar e instalar los redistribuibles de Microsoft Visual C+++ de 32 bits necesarios.*
-
->[!VIDEO](https://video.tv.adobe.com/v/335520?quality=9&learn=on)
-
+>[!VIDEO](https://video.tv.adobe.com/v/335520?quality=12&learn=on)

@@ -15,7 +15,7 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: faa9ca2d-6cfa-4abf-be5e-3e549202853a
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 En esta parte, instalamos TOMCAT e implementamos el archivo sampleRest.war en TOMCAT. El punto final de REST expuesto por este archivo WAR es la base de nuestro modelo de datos de fuentes de datos y formularios.
 
->[!VIDEO](https://video.tv.adobe.com/v/37815/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37815?quality=12&learn=on)
 
 Para configurar tomcat, siga las siguientes instrucciones:
 
@@ -43,7 +43,7 @@ Para configurar tomcat, siga las siguientes instrucciones:
 11. Una vez que su tomcat haya comenzado, pruebe el punto final expuesto por WAR File de acuerdo con [haga clic aquí](http://localhost:8080/SampleRest/webapi/getStatement/9586)
 12. Debe obtener datos de ejemplo como resultado de esta llamada.
 
-Felicitaciones !!!. Ha configurado el archivo tomcat e implementado el archivo SampleRest.war.
+¡¡¡Felicidades!!! Ha configurado el archivo tomcat e implementado el archivo SampleRest.war.
 
 En el siguiente vídeo se explica la implementación de la aplicación de ejemplo en Tomcat.
->[!VIDEO](https://video.tv.adobe.com/v/37815)
+>[!VIDEO](https://video.tv.adobe.com/v/37815?quality=12&learn=on)

@@ -7,7 +7,7 @@ topic: Content Management
 role: Developer
 level: Intermediate
 exl-id: a733532b-db64-43f6-bc43-f7d422d5071a
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 17%
@@ -18,7 +18,7 @@ ht-degree: 17%
 
 En este vídeo analizamos la gestión de color de Dynamic Media y cómo se puede utilizar para proporcionar funciones de previsualización de corrección de color en para AEM Assets.
 
->[!VIDEO](https://video.tv.adobe.com/v/16792/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/16792?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -113,7 +113,7 @@ A continuación se muestra la plantilla XML para el nodo de configuración Gesti
 | SheetedUncovered | CMYK | U.S. Sheetfeed Uncovered v2 |
 | SMPTE | RGB | SMPTE-C |
 | sRGB | sRGB del RGB | IEC61966-2.1 |
-| FograNoCubierta29 | CMYK | FOGRA29 no recubierto (ISO 12647-2:2004) |
+| UncoatedFogra29 | CMYK | FOGRA29 no recubierto (ISO 12647-2:2004) |
 | WebCoated | CMYK | U.S. Web Coated (SWOP) v2 |
 | WebCoatedFogra28 | CMYK | Web Coated FOGRA28 (ISO 12647-2:2004) |
 | WebCoatedGrade3 | CMYK | Papel Web Coated SWOP 2006 Grado 3 |

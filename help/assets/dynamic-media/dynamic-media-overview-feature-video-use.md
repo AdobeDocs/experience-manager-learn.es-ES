@@ -7,7 +7,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 59462cb4-d379-4e58-b786-ff8dbae6191c
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '871'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Esta serie de vídeos de varias partes le ofrece una descripción general de có
 
 ## Información general de Dynamic Media
 
->[!VIDEO](https://video.tv.adobe.com/v/27144/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27144?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -36,7 +36,7 @@ En este vídeo se describe cómo se administra y accede al contenido multimedia 
 
 ## Dynamic Media con AEM Sites y cualquier otro CMS
 
->[!VIDEO](https://video.tv.adobe.com/v/27145/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27145?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ En este vídeo se describe cómo se administra el contenido multimedia en Adobe 
 
 ## Dynamic Media para crear una colección de medios mixtos y un visor personalizado
 
->[!VIDEO](https://video.tv.adobe.com/v/27146/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27146?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -65,7 +65,7 @@ En este vídeo se describe el proceso de creación sencillo de una colección de
 
 ## Ajustes preestablecidos de imagen de Dynamic Media
 
->[!VIDEO](https://video.tv.adobe.com/v/27320/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27320?quality=12&learn=on)
 
 En este vídeo se describe cómo se crean los ajustes preestablecidos de imagen y qué es un ajuste preestablecido de imagen, un abreviador de URL para una serie de argumentos del servidor de imágenes que funcionan en una imagen cada vez que una URL la solicita. Aprenda técnicas útiles para ampliar y editar ajustes preestablecidos de imagen.
 
@@ -76,7 +76,7 @@ En este vídeo se describe cómo se crean los ajustes preestablecidos de imagen 
 
 ## Modificadores de URL avanzados de Dynamic Media
 
->[!VIDEO](https://video.tv.adobe.com/v/27319/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27319?quality=12&learn=on)
 
 En este vídeo se describe cómo no cambiar el tamaño de las imágenes para aprovechar las funciones del propio archivo de origen (transparencia de fondo, rutas de recorte integradas, cultivos y texto como variables) con los modificadores de URL de Dynamic Media.
 
@@ -88,7 +88,7 @@ En este vídeo se describe cómo no cambiar el tamaño de las imágenes para apr
 
 ## Dynamic Media Control del tamaño del archivo JPEG en Kilobytes
 
->[!VIDEO](https://video.tv.adobe.com/v/27404/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27404?quality=12&learn=on)
 
 
 >[!NOTE]
@@ -99,7 +99,7 @@ Equilibre la calidad de la imagen jpeg con el tamaño de archivo resultante (en 
 
 ## Añadir subtítulos CC a un vídeo de Dynamic Media
 
->[!VIDEO](https://video.tv.adobe.com/v/28074/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28074?quality=12&learn=on)
 
 Agregue fácilmente Subtítulos a vídeo de Dynamic Media adjuntando la URL de copia para que apunte a un documento adicional de Subtítulos, un archivo sidecar web.VTT, que contenga la información de CC de cualquier vídeo.
 

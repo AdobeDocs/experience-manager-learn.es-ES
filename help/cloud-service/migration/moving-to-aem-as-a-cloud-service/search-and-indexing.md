@@ -9,7 +9,7 @@ level: Experienced
 kt: 8634
 thumbnail: 336963.jpeg
 exl-id: f752df86-27d4-4dbf-a3cb-ee97b7d9a17e
-source-git-commit: 1dcb66bc3535231c89f3e7fc127688fcf96f2b61
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '309'
 ht-degree: 2%
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 Obtenga información sobre los índices de búsqueda de AEM as a Cloud Service, cómo convertir AEM 6 definiciones de índice para que sean compatibles con AEM as a Cloud Service y cómo implementar índices para AEM as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/336963/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/336963?quality=12&learn=on)
 
 ## Herramienta Conversor de índices
 

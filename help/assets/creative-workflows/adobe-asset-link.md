@@ -9,7 +9,7 @@ level: Beginner
 thumbnail: 28988.jpg
 last-substantial-update: 2022-06-25T00:00:00Z
 exl-id: 6c49f8c2-f468-4b29-b7b6-029c8ab39ce9
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1051'
 ht-degree: 1%
@@ -30,7 +30,7 @@ La extensión de vínculo de recursos de Adobe para Adobe Creative Cloud for ent
 
 El siguiente vídeo ilustra un flujo de trabajo común utilizado por los creativos que trabajan en aplicaciones de Adobe Creative Cloud e integran directamente con AEM mediante Adobe Asset Link.
 
->[!VIDEO](https://video.tv.adobe.com/v/335927/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/335927?quality=12&learn=on)
 
 ## Funciones de Adobe Asset Link
 
@@ -61,7 +61,7 @@ El siguiente vídeo ilustra un flujo de trabajo común utilizado por los creativ
 
 Adobe Asset Link proporciona compatibilidad de vinculación directa de InDesign entre Adobe Asset Link y AEM. Con la compatibilidad con la vinculación directa de InDesign, puede colocar (__Colocar elemento vinculado__ o __Colocar copia__) o arrastre y suelte recursos digitales en InDesign desde AEM a través del panel Adobe Asset Link . Además, introduce la representación *Solo para ubicación+ (FPO).
 
->[!VIDEO](https://video.tv.adobe.com/v/28988/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28988?quality=12&learn=on)
 
 >[!NOTE]
 >

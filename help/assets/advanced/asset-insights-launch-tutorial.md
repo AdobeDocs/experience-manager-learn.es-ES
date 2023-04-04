@@ -8,7 +8,7 @@ role: Developer
 level: Intermediate
 last-substantial-update: 2022-06-04T00:00:00Z
 exl-id: 00125fe1-3bb9-4b1a-a83c-61c413403ae2
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 1%
@@ -23,7 +23,7 @@ En esta serie de vídeos de 5 partes, analizamos la configuración de Asset Insi
 
 Información general sobre Asset Insights Instale los componentes principales, el componente de imagen de muestra y otros paquetes de contenido para preparar su entorno.
 
->[!VIDEO](https://video.tv.adobe.com/v/25943/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/25943?quality=12&learn=on)
 
 ### Diagrama de arquitectura {#architecture-diagram}
 
@@ -42,7 +42,7 @@ El vídeo utiliza los componentes principales v2.2.2, que ya no son la última v
 
 Mejoras en los componentes principales y uso del componente proxy (componente de imagen de muestra) para Asset Insights. Edición de las políticas de plantilla de página de contenido para habilitar el componente de imagen de muestra para el sitio de referencia.
 
->[!VIDEO](https://video.tv.adobe.com/v/25944/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/25944?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -63,7 +63,7 @@ Los componentes de la imagen principal utilizan ***data-asset-id*** dentro del a
 
 El grupo de informes con recopilación de datos en tiempo real se crea para el seguimiento de recursos. La configuración de AEM Assets Insights se configura con credenciales de Adobe Analytics.
 
->[!VIDEO](https://video.tv.adobe.com/v/25945/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/25945?quality=12&learn=on)
 
 >[!NOTE]
 La recopilación de datos en tiempo real y AEM informes de recursos deben estar habilitados para su grupo de informes de Adobe Analytics. Al habilitar AEM Asset Reporting, se reservan variables de análisis para realizar el seguimiento de la información de los recursos.
@@ -80,7 +80,7 @@ Para la configuración de AEM Assets Insights necesita las siguientes credencial
 
 Añadir la extensión de Adobe Analytics, crear reglas de carga de página e integrar AEM con la cuenta técnica de Adobe IMS de Launch.
 
->[!VIDEO](https://video.tv.adobe.com/v/25946/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/25946?quality=12&learn=on)
 
 >[!NOTE]
 Asegúrese de duplicar todos los cambios de la instancia de autor a la instancia de publicación.
@@ -193,4 +193,4 @@ También es posible cambiar la DTM al modo de depuración con la siguiente exten
 
 Configuración de AEM Asset Reporting Sincronizar el Programador de trabajos y el Informe de perspectivas de recursos
 
->[!VIDEO](https://video.tv.adobe.com/v/25947/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/25947?quality=12&learn=on)

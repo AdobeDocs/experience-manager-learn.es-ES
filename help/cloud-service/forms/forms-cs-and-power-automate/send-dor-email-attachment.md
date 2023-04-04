@@ -9,7 +9,7 @@ version: Cloud Service
 feature: Adaptive Forms
 topic: Development
 kt: 11019
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '50'
 ht-degree: 0%
@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Extraiga DoR y envíe como un adjunto de correo electrónico en Power Automatice el flujo de trabajo.
 En el siguiente vídeo se explican los pasos necesarios para extraer DoR de los datos enviados
->[!VIDEO](https://video.tv.adobe.com/v/346731/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/346731?quality=12&learn=on)

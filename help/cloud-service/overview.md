@@ -4,10 +4,10 @@ description: Una colección de tutoriales para Adobe Experience Manager (AEM) as
 sub-product: Experience Manager as a Cloud Service
 kt: 3289
 exl-id: 650ba2d9-6083-4772-84c5-1cdb97b5f0e9
-source-git-commit: 757749305a017d682322b2c2e024c2fbb3604fc2
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '267'
-ht-degree: 13%
+ht-degree: 11%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 13%
 
 Adobe Experience Manager (AEM) ya está disponible as a Cloud Service. AEM as a Cloud Service presenta la siguiente generación de la línea de productos Experience Manager, basándose en las inversiones e innovaciones anteriores, preservando y ampliando todos los casos de uso y funcionalidades.
 
->[!VIDEO](https://video.tv.adobe.com/v/31085/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/31085?quality=12&learn=on)
 
 <div id="whats-new-section">
 
@@ -25,9 +25,9 @@ Adobe Experience Manager (AEM) ya está disponible as a Cloud Service. AEM as a 
 
    *Aprenda a utilizar la autenticación basada en tokens para interactuar con AEM as a Cloud Service sobre HTTP*
 
-* **[GraphQL sin encabezado (tutorial)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)**
+* **[GraphQL sin encabezado (tutorial)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=es)**
 
-   *Aprenda a utilizar AEM API de GraphQL para potenciar las experiencias en una aplicación externa.*
+   *Aprenda a utilizar AEM API de GraphQL para impulsar experiencias en una aplicación externa.*
 
 * **[Importación masiva (vídeo)](./migration/bulk-import.md)**
 

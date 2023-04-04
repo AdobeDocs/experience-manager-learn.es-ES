@@ -1,23 +1,23 @@
 ---
 title: Pasos para habilitar el seguimiento detallado de ORB
-description: 'Configurar registros ORB detallados para solucionar problemas del Generador de PDF '
+description: Configuración de registros ORB detallados para la resolución de problemas del Generador de PDF
 type: Troubleshooting
 role: Admin
 level: Intermediate
 version: 6.5
-feature: Generador de PDF
-topic: 'Administración   '
+feature: PDF Generator
+topic: Administration
 index: y
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 2ac84ee3-48ca-4c01-9dfe-add77c666ba9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '35'
-ht-degree: 8%
+source-wordcount: '32'
+ht-degree: 0%
 
 ---
-
 
 # Pasos para habilitar el seguimiento detallado de ORB
 
 *Este vídeo recorre los pasos para habilitar el seguimiento detallado de ORB.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335526?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/335526?quality=12&learn=on)

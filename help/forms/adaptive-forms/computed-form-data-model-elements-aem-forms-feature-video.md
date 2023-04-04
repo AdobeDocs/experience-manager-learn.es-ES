@@ -8,7 +8,7 @@ role: Developer
 level: Beginner
 exl-id: 1f6f1bb6-3437-4fae-b5a1-698ab357ff23
 last-substantial-update: 2020-09-10T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '144'
 ht-degree: 0%
@@ -27,8 +27,8 @@ La siguiente captura de pantalla muestra los elementos calculados Estado y Zip y
 
 ## Creación de un elemento calculado de salario mensual
 
->[!VIDEO](https://video.tv.adobe.com/v/23855?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/23855?quality=12&learn=on)
 
 ### Creación de un elemento computado State y Zip
 
->[!VIDEO](https://video.tv.adobe.com/v/23856/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/23856?quality=12&learn=on)

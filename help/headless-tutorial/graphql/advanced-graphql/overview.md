@@ -1,13 +1,13 @@
 ---
 title: 'Conceptos avanzados de AEM sin encabezado: GraphQL'
-description: Un tutorial completo que ilustra los conceptos avanzados de las API de Adobe Experience Manager (AEM) GraphQL.
+description: Un tutorial completo que ilustra los conceptos avanzados de las API de GraphQL de Adobe Experience Manager (AEM).
 version: Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: daae6145-5267-4958-9abe-f6b7f469f803
-source-git-commit: ee6f65fba8db5ae30cc14aacdefbeba39803527b
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1076'
 ht-degree: 1%
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 # Conceptos avanzados de AEM sin cabeza
 
-Este tutorial completo continúa con el [tutorial básico](../multi-step/overview.md) que cubrían los fundamentos de Adobe Experience Manager (AEM) Headless y GraphQL. El tutorial avanzado ilustra aspectos detallados del trabajo con modelos de fragmento de contenido, fragmentos de contenido y consultas persistentes de AEM GraphQL, incluido el uso de consultas persistentes de GraphQL en una aplicación cliente.
+Este tutorial completo continúa con el [tutorial básico](../multi-step/overview.md) que cubrían los fundamentos de Adobe Experience Manager (AEM) Headless y GraphQL. El tutorial avanzado ilustra aspectos detallados del trabajo con modelos de fragmento de contenido, fragmentos de contenido y consultas persistentes de GraphQL AEM, incluido el uso de consultas persistentes de GraphQL en una aplicación cliente.
 
 ## Requisitos previos
 
@@ -44,11 +44,11 @@ Este tutorial trata los siguientes temas:
 
 El siguiente vídeo proporciona información general de alto nivel sobre los conceptos que se tratan en este tutorial. El tutorial incluye la definición de modelos de fragmento de contenido con tipos de datos más avanzados, la anidación de fragmentos de contenido y la persistencia de consultas de GraphQL en AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/340035/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/340035?quality=12&learn=on)
 
 >[!CAUTION]
 >
->Este vídeo (a las 2:25) menciona la instalación del editor de consultas de GraphiQL mediante el Administrador de paquetes para explorar las consultas de GraphQL. Sin embargo, en las versiones más recientes de AEM como Cloud Service se ha incorporado un **Explorador de GraphiQL** se proporciona, por lo tanto la instalación del paquete no es necesaria. Consulte [Uso del IDE de GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) para obtener más información.
+>En este vídeo (a las 2:25) se menciona la instalación del editor de consultas de GraphiQL mediante el Administrador de paquetes para explorar las consultas de GraphQL. Sin embargo, en las versiones más recientes de AEM como Cloud Service se ha incorporado un **Explorador de GraphiQL** se proporciona, por lo tanto la instalación del paquete no es necesaria. Consulte [Uso del IDE de GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) para obtener más información.
 
 
 ## Configuración del proyecto
@@ -58,7 +58,7 @@ El proyecto WKND Site tiene todas las configuraciones necesarias, por lo que pue
 
 ### Revisar la configuración existente
 
-El primer paso para iniciar cualquier proyecto nuevo en AEM es crear su configuración, como espacio de trabajo y crear extremos de API de GraphQL. Para revisar o crear una configuración, vaya a **Herramientas** > **General** > **Explorador de configuración**.
+El primer paso para iniciar cualquier proyecto nuevo en AEM es crear su configuración, como espacio de trabajo y crear puntos finales de API de GraphQL. Para revisar o crear una configuración, vaya a **Herramientas** > **General** > **Explorador de configuración**.
 
 ![Navegar al explorador de configuración](assets/overview/create-configuration.png)
 
@@ -66,9 +66,9 @@ Observe que la variable `WKND Shared` la configuración del sitio ya se ha cread
 
 ![Revisión de la configuración compartida WKND](assets/overview/review-wknd-shared-configuration.png)
 
-### Revisión de los extremos de la API de GraphQL
+### Revisar extremos de API de GraphQL
 
-A continuación, debe configurar los extremos de la API para enviar consultas de GraphQL a . Para revisar los puntos finales existentes o crear uno, vaya a **Herramientas** > **General** > **GraphQL**.
+A continuación, debe configurar los extremos de la API a los que enviar consultas de GraphQL. Para revisar los puntos finales existentes o crear uno, vaya a **Herramientas** > **General** > **GraphQL**.
 
 ![Configuración de puntos finales](assets/overview/endpoints.png)
 
@@ -102,7 +102,7 @@ Finalmente, debe asignar la configuración del proyecto a la carpeta raíz del i
 
 Para asignar la carpeta raíz del idioma a la configuración, seleccione la carpeta y, a continuación, seleccione **Propiedades** en la barra de navegación superior.
 
-![Seleccione Propiedades](assets/overview/properties.png)
+![Seleccionar propiedades](assets/overview/properties.png)
 
 A continuación, vaya a la **Cloud Services** y seleccione el icono de carpeta en la pestaña **Configuración de nube** campo .
 
@@ -115,14 +115,14 @@ En el modal que aparece, seleccione la configuración creada anteriormente para 
 A continuación se indican las prácticas recomendadas al crear su propio proyecto en AEM:
 
 * La jerarquía de carpetas debe modelarse teniendo en cuenta la localización y la traducción. En otras palabras, las carpetas de idioma deben estar anidadas dentro de las carpetas de configuración, lo que permite una fácil traducción del contenido dentro de esas carpetas de configuración.
-* La jerarquía de carpetas debe mantenerse plana y sencilla. Evite mover o cambiar el nombre de carpetas y fragmentos más adelante, especialmente después de publicar para uso activo, ya que cambia las rutas que pueden afectar a las referencias de fragmento y a las consultas de GraphQL.
+* La jerarquía de carpetas debe mantenerse plana y sencilla. Evite mover carpetas y fragmentos o cambiarles el nombre más adelante, especialmente después de publicarlos para su uso activo, ya que cambia las rutas que pueden afectar a las referencias de fragmento y a las consultas de GraphQL.
 
 ## Paquetes de inicio y solución
 
 Dos AEM **paquetes** están disponibles y pueden instalarse mediante [Administrador de paquetes](/help/headless-tutorial/graphql/advanced-graphql/author-content-fragments.md#sample-content)
 
 * [Advanced-GraphQL-Tutorial-Starter-Package-1.1.zip](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Starter-Package-1.1.zip) se utiliza más adelante en el tutorial y contiene imágenes y carpetas de ejemplo.
-* [Advanced-GraphQL-Tutorial-Solution-Package-1.2.zip](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Solution-Package-1.2.zip) contiene la solución terminada para los capítulos 1 a 4, incluidos los nuevos modelos de fragmento de contenido, fragmentos de contenido y consultas de GraphQL persistentes. Útil para aquellos que quieran saltarse directamente en la [Integración de aplicaciones de cliente](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md) capítulo.
+* [Advanced-GraphQL-Tutorial-Solution-Package-1.2.zip](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Solution-Package-1.2.zip) contiene la solución terminada para los capítulos 1 a 4, incluidos los nuevos modelos de fragmentos de contenido, fragmentos de contenido y consultas de GraphQL persistentes. Útil para aquellos que quieran saltarse directamente en la [Integración de aplicaciones de cliente](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md) capítulo.
 
 
 La variable [Aplicación React: Tutorial avanzado - Aventuras de WKND](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/advanced-tutorial/README.md) El proyecto está disponible para revisar y explorar la aplicación de ejemplo. Esta aplicación de ejemplo recupera el contenido de AEM invocando las consultas de GraphQL persistentes y lo procesa en una experiencia inmersiva.

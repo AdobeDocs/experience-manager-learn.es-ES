@@ -5,18 +5,18 @@ type: Troubleshooting
 role: Admin
 level: Intermediate
 version: 6.5
-topic: 'Administración   '
+topic: Administration
 index: y
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: e66f17f0-de65-4249-9133-8f65a9eafb49
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '53'
-ht-degree: 1%
+source-wordcount: '52'
+ht-degree: 0%
 
 ---
-
 
 # Pasos para habilitar el registro de depuración para cualquier clase en el servidor de aplicaciones JBoss
 
 *Este vídeo muestra los pasos para habilitar el registro de depuración para cualquier clase en el servidor de aplicaciones JBoss.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335522?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/335522?quality=12&learn=on)

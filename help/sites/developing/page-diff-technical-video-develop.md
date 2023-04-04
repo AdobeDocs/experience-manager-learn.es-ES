@@ -11,7 +11,7 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 7d600b16-bbb3-4f21-ae33-4df59b1bb39d
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 4%
@@ -24,7 +24,7 @@ Este vídeo muestra cómo proporcionar estilos personalizados para la funcionali
 
 ## Personalización de estilos de diferencia de página {#customizing-page-difference-styles}
 
->[!VIDEO](https://video.tv.adobe.com/v/18871/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/18871?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -124,5 +124,5 @@ El resultado final de una página de comparación de diferencias con los estilos
 ## Recursos adicionales {#additional-resources}
 
 * [Descargue el sitio de muestra de We.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases)
-* [Uso de AEM bibliotecas de cliente](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=es)
+* [Uso de AEM bibliotecas de cliente](https://helpx.adobe.com/es/experience-manager/6-5/sites/developing/using/clientlibs.html)
 * [Menos documentación de CSS](https://lesscss.org/)

@@ -1,6 +1,6 @@
 ---
 title: Uso de texto enriquecido con AEM sin encabezado
-description: Aprenda a crear contenido e incruste contenido referenciado mediante un editor de texto enriquecido multilínea con fragmentos de contenido de Adobe Experience Manager, y cómo las API de GraphQL AEM texto enriquecido como JSON lo consumen aplicaciones sin encabezado.
+description: Aprenda a crear contenido e incruste contenido referenciado mediante un editor de texto enriquecido multilínea con fragmentos de contenido de Adobe Experience Manager, y cómo las API de GraphQL AEM como JSON proporcionan el texto enriquecido para que lo consuman aplicaciones sin encabezado.
 version: Cloud Service
 doc-type: article
 kt: 9985
@@ -8,7 +8,7 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 exl-id: 790a33a9-b4f4-4568-8dfe-7e473a5b68b6
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1464'
 ht-degree: 0%
@@ -23,9 +23,9 @@ AEM API de GraphQL ofrece una sólida capacidad para devolver texto enriquecido 
 
 ## Editor multilínea
 
->[!VIDEO](https://video.tv.adobe.com/v/342104/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342104?quality=12&learn=on)
 
-En el Editor de fragmentos de contenido, la barra de menús del campo de texto multilínea proporciona a los autores capacidades estándar de formato de texto enriquecido, como **bold**, *cursiva* y subrayado. Al abrir el campo multilínea en modo de pantalla completa, se habilita [herramientas de formato adicionales, como el tipo de párrafo, buscar y reemplazar, revisión ortográfica, etc.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html).
+En el Editor de fragmentos de contenido, la barra de menús del campo de texto multilínea proporciona a los autores capacidades estándar de formato de texto enriquecido, como **bold**, *cursiva* y subrayado. Al abrir el campo multilínea en modo de pantalla completa, se habilita [herramientas de formato adicionales, como el tipo de párrafo, buscar y reemplazar, revisión ortográfica, etc.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html?lang=es).
 
 >[!NOTE]
 >
@@ -351,7 +351,7 @@ Las referencias a otros fragmentos de contenido también se pueden vincular o in
 
 La captura de pantalla de arriba representa otro fragmento de contenido, la Guía Ultimate para los Parques de Skate LA, insertándolo en el campo multilínea. Los tipos de fragmentos de contenido que se pueden insertar en el campo están controlados por la variable **Modelos de fragmento de contenido permitidos** en el [tipo de datos multilínea](#multi-line-data-type) en el Modelo de fragmento de contenido.
 
-## Consultar referencias en línea con GraphQL
+## Consulta de referencias en línea con GraphQL
 
 La API de GraphQL permite a los desarrolladores crear una consulta que incluya propiedades adicionales sobre cualquier referencia insertada en un campo multilínea. La respuesta JSON incluye una `_references` objeto que enumera estas propiedades adicionales. La respuesta JSON proporciona a los desarrolladores control total sobre cómo procesar las referencias o los vínculos en lugar de tener que lidiar con un HTML de opinión.
 
@@ -536,7 +536,7 @@ Puede encontrar un ejemplo completo de cómo escribir un procesador de referenci
 
 ## Ejemplo completo
 
->[!VIDEO](https://video.tv.adobe.com/v/342105/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342105?quality=12&learn=on)
 
 El vídeo anterior muestra un ejemplo completo:
 

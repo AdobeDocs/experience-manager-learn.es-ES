@@ -15,7 +15,7 @@ topic: Localization
 role: User
 level: Beginner
 exl-id: 00746678-da23-4d0a-b775-e1de4ed87c56
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 14%
@@ -28,13 +28,13 @@ ht-degree: 14%
 
 ## Información general de Live Copy {#live-copy-overview}
 
->[!VIDEO](https://video.tv.adobe.com/v/17054/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/17054?quality=12&learn=on)
 
 *Live Copy Overview es una interfaz de usuario táctil que se utiliza para administrar copias en vivo y sus respectivos planos. Esta función, introducida en AEM 6.3, sustituye al Centro de control de modelo de la IU clásica.*
 
 ## Administrador de configuración de modelo: IU táctil {#blueprint-config-mgr}
 
->[!VIDEO](https://video.tv.adobe.com/v/17056/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/17056?quality=12&learn=on)
 
 *AEM 6.3 presenta una interfaz de usuario táctil para administrar las configuraciones de modelo y utilizarla en Multi Site Manager.*
 

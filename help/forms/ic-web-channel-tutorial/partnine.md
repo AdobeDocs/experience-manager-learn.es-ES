@@ -1,8 +1,8 @@
 ---
 title: Agregar tabla al panel de saldo de la cuenta
-seo-title: Agregar tabla al panel de saldo de la cuenta
+seo-title: Adding table to account balance panel
 description: Esta es la parte 9 del tutorial de varios pasos para crear su primer documento de comunicación interactivo. En esta parte, agregaremos una tabla al panel Equilibrio de cuentas.
-seo-description: Esta es la parte 9 del tutorial de varios pasos para crear su primer documento de comunicación interactivo. En esta parte, agregaremos una tabla al panel Equilibrio de cuentas.
+seo-description: This is part 9 of multistep tutorial for creating your first interactive communication document.In this part, we will add a table to the Account Balance panel.
 uuid: 8f268c73-c543-418d-b65e-5beaf9660e42
 feature: Interactive Communication
 topics: development
@@ -14,20 +14,19 @@ discoiquuid: 28a9d88d-635b-47a2-8a78-54ddeabc4406
 topic: Development
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 1e43c459-8824-40e8-8f05-24b8b0646346
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 2%
+source-wordcount: '150'
+ht-degree: 0%
 
 ---
-
 
 # Agregar tabla al panel de saldo de la cuenta{#adding-table-to-account-balance-panel}
 
 En esta parte, agregaremos una tabla al panel Equilibrio de cuentas.
 
-Inicie sesión en AEM Forms y vaya a Adobe Experience Manager > Formularios > Formularios y documentos.
+Inicie sesión en AEM Forms y vaya a Adobe Experience Manager > Forms > Forms y documentos.
 
 Abra la carpeta 401KStatement.
 
@@ -41,10 +40,8 @@ La capacidad de mostrar datos tabulares mediante tablas en el documento de comun
 
 **Configuración de la tabla en el documento de canal web: AEM Forms 6.4**
 
->[!VIDEO](https://video.tv.adobe.com/v/22360/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/22360?quality=12&learn=on)
 
-Configuración de la tabla en el documento de canal web: AEM Form 6.5
+Configuración de la tabla en el documento de canal web - AEM Formulario 6.5
 
->[!VIDEO](https://video.tv.adobe.com/v/27847?quality=9&learn=on)
-
-
+>[!VIDEO](https://video.tv.adobe.com/v/27847?quality=12&learn=on)

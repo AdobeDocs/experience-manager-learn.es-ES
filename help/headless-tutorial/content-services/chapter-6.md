@@ -6,7 +6,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: b33d1509-531d-40c3-9b26-1d18c8d86a97
-source-git-commit: 25a1a40f42d37443db9edc0e09b1691b1c19e848
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 0%
@@ -55,7 +55,7 @@ Como los servicios de contenido de AEM se crean a partir de Configuración (mode
    1. Seleccione el **[!DNL Events]** página
    1. Toque **[!DNL Publish]** en la barra de acciones superior
 
->[!VIDEO](https://video.tv.adobe.com/v/28343/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28343?quality=12&learn=on)
 
 ## Verificación de la publicación de AEM
 
@@ -64,7 +64,7 @@ Como los servicios de contenido de AEM se crean a partir de Configuración (mode
    * [http://localhost:4503/content/wknd-mobile/en/api/events.model.json](http://localhost:4503/content/wknd-mobile/en/api/events.model.tidy.json)
    Estas solicitudes deben devolver la misma respuesta JSON que cuando se revisaron los puntos finales correspondientes de AEM Author. Si no es así, asegúrese de que todas las publicaciones se hayan realizado correctamente (compruebe las colas de replicación), la variable [!DNL WKND Mobile] `ui.apps` está instalado en AEM Publish y revise la `error.log` para AEM Publish.
 
-## Paso siguiente
+## Siguiente paso
 
 No hay paquetes adicionales para instalar. Asegúrese de que el contenido y la configuración descritos en esta sección se publican en AEM Publish. De lo contrario, los capítulos posteriores no funcionarán.
 

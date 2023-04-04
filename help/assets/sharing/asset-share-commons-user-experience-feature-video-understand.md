@@ -7,7 +7,7 @@ role: User
 level: Intermediate
 last-substantial-update: 2022-06-20T00:00:00Z
 exl-id: 500a9b10-462a-4f41-9b07-67138955cc3d
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '128'
 ht-degree: 1%
@@ -20,13 +20,13 @@ Introducción rápida a las experiencias de creación y usuario de Asset Share C
 
 ## Experiencia del usuario
 
->[!VIDEO](https://video.tv.adobe.com/v/20497/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/20497?quality=12&learn=on)
 
 El vídeo ofrece una explicación abreviada de la experiencia del usuario para Asset Share Commons. La revisión afecta a las capacidades de la página de búsqueda, la página de detalles de los recursos, así como a varias acciones como Descargar, Compartir y Agregar al carro de compras.
 
 ## Experiencia de creación
 
->[!VIDEO](https://video.tv.adobe.com/v/20498/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/20498?quality=12&learn=on)
 
 Este vídeo ofrece información general abreviada sobre las funciones básicas de creación de componentes en Asset Share Commons, para proporcionar una idea del nivel de capacidad de creación.
 

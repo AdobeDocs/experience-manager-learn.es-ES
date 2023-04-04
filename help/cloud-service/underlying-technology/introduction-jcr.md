@@ -12,7 +12,7 @@ topic: Architecture
 role: Architect, Developer
 level: Beginner
 exl-id: 1e419597-3f60-4110-bafd-a4acb0fad7a0
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 0%
@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Introducción al repositorio de contenido Java (JCR) utilizado por Adobe Experience Manager. El JCR es el nivel base de la pila de tecnología de AEM y es responsable de la persistencia del contenido subyacente, el almacenamiento, la búsqueda, el control de acceso y mucho más!
 
->[!VIDEO](https://video.tv.adobe.com/v/32030/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32030?quality=12&learn=on)

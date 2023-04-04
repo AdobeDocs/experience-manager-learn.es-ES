@@ -8,10 +8,10 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 8b05fc02-c0c5-48ad-a53e-d73b805ee91f
-source-git-commit: 30c882da3a89820b5e11bc2902bb92dd0629efe9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '962'
-ht-degree: 11%
+ht-degree: 10%
 
 ---
 
@@ -40,7 +40,7 @@ Si los modelos de fragmento de contenido son **not** habilitado para una configu
 >
 >Cuando la variable `global` se utiliza la configuración, se aplica a todo el contenido y `cq:conf` no es necesario configurarlo.
 >
->Consulte la documentación del [[!UICONTROL Explorador de configuración] para obtener más información.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html)
+>Consulte la documentación del [[!UICONTROL Explorador de configuración] para obtener más información.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html?lang=es)
 
 1. Inicie sesión en AEM Author como usuario con los permisos adecuados para modificar la configuración relevante.
    * Para este tutorial, la variable **admin** se puede utilizar.
@@ -55,7 +55,7 @@ Si los modelos de fragmento de contenido son **not** habilitado para una configu
    >Este cambio de configuración no es reversible desde la variable [!UICONTROL Configuración AEM] Interfaz de usuario web. Para deshacer esta configuración:
    >    
    >    1. Apertura [CRXDE Lite](http://localhost:4502/crx/de)
-   >    1. Vaya a `/conf/wknd-mobile/settings/dam/cfm`
+   >    1. Navegue hasta `/conf/wknd-mobile/settings/dam/cfm`
    >    1. Elimine el `models` node
 
    >    
@@ -70,7 +70,7 @@ Si los modelos de fragmento de contenido son **not** habilitado para una configu
    1. Compruebe el **[!UICONTROL Configuración de nube]** el campo está definido como **/conf/wknd-mobile**
    1. Toque **[!UICONTROL Guardar y cerrar]** en la esquina superior derecha para mantener los cambios
 
->[!VIDEO](https://video.tv.adobe.com/v/28336/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28336?quality=12&learn=on)
 
 >[!WARNING]
 >
@@ -93,7 +93,7 @@ Con la asignación podemos definir el fragmento de contenido que se utiliza para
 1. Toque **[!UICONTROL Crear]** para abrir el asistente de creación del modelo de fragmento de contenido.
 1. Entrar **[!DNL Event]** como el **[!UICONTROL Título de modelo]** *(la descripción es opcional)* y toque **[!UICONTROL Crear]** para guardar.
 
->[!VIDEO](https://video.tv.adobe.com/v/28337/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28337?quality=12&learn=on)
 
 ## Definición de la estructura del modelo de fragmento de contenido
 
@@ -169,7 +169,7 @@ Repita estos pasos utilizando las definiciones de entrada definidas a continuaci
 * [!UICONTROL Nombre de propiedad] : `venueCity`
 * [!UICONTROL Opciones] : `Basel,London,Los Angeles,Paris,New York,Tokyo`
 
->[!VIDEO](https://video.tv.adobe.com/v/28335/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28335?quality=12&learn=on)
 
 >[!NOTE]
 >

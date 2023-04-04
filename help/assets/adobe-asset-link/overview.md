@@ -7,10 +7,10 @@ topic: Content Management
 role: User
 level: Beginner
 thumbnail: 28988.jpg
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '990'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -50,7 +50,7 @@ La extensión de vínculo de recursos de Adobe para Adobe Creative Cloud for ent
 
 Adobe Asset Link proporciona compatibilidad de vinculación directa de InDesign entre Adobe Asset Link y AEM. Con la compatibilidad con la vinculación directa de InDesign, puede colocar (__Colocar elemento vinculado__ o __Colocar copia__) o arrastre y suelte recursos digitales en InDesign desde AEM a través del panel Adobe Asset Link . Además, introduce la representación *Solo para ubicación+ (FPO).
 
->[!VIDEO](https://video.tv.adobe.com/v/28988/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28988?quality=12&learn=on)
 
 >[!NOTE]
 >

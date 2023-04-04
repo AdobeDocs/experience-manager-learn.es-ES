@@ -10,7 +10,7 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-09-03T00:00:00Z
 exl-id: 6fb3199a-02c9-48bc-a6fa-1f767cfd2f2a
-source-git-commit: e82c30e7f1a1fe04fd43ee639d74788f9bf100f6
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1502'
 ht-degree: 7%
@@ -175,7 +175,7 @@ AEM desarrollo consiste principalmente en desarrollo de Java y front-end (JavaSc
 
 __[IntelliJ IDEA](https://www.jetbrains.com/idea/)__ es un potente IDE para el desarrollo de Java. IntelliJ IDEA viene en dos sabores, una edición comunitaria gratuita y una versión comercial (de pago) Ultimate. La versión comunitaria gratuita es suficiente para AEM desarrollo, sin embargo, el Ultimate [amplía su conjunto de capacidades](https://www.jetbrains.com/idea/download).
 
->[!VIDEO](https://video.tv.adobe.com/v/26089/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26089?quality=12&learn=on)
 
 + [Descargar IntelliJ IDEA](https://www.jetbrains.com/idea/download)
 + [Descargar la herramienta Repositorio](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#installation)
