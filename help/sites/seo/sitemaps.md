@@ -10,10 +10,10 @@ kt: 9165
 thumbnail: 337960.jpeg
 last-substantial-update: 2022-10-03T00:00:00Z
 exl-id: 40bb55f9-011d-4261-9f44-b1104a591252
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 6%
+source-wordcount: '263'
+ht-degree: 5%
 
 ---
 
@@ -21,33 +21,15 @@ ht-degree: 6%
 
 Aprenda a mejorar su SEO creando mapas del sitio para AEM Sites.
 
+>[!WARNING]
+>
+>Este vídeo muestra el uso de direcciones URL relativas en el mapa del sitio. Mapas del sitio [deben usar direcciones URL absolutas](https://sitemaps.org/protocol.html). Consulte [Configuraciones](#absolute-sitemap-urls) para saber cómo habilitar direcciones URL absolutas, ya que no se trata en el siguiente vídeo.
+
 >[!VIDEO](https://video.tv.adobe.com/v/337960?quality=12&learn=on)
-
-## Recursos
-
-+ [Documentación AEM del mapa del sitio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/seo-and-url-management.html?lang=en#building-an-xml-sitemap-on-aem)
-+ [Documentación del mapa del sitio de Apache Sling](https://github.com/apache/sling-org-apache-sling-sitemap#readme)
-+ [Documentación del mapa del sitio de Sitemap.org](https://www.sitemaps.org/protocol.html)
-+ [Documentación del archivo de índice Sitemap.org](https://www.sitemaps.org/protocol.html#index)
-+ [Cronista](http://www.cronmaker.com/)
 
 ## Configuraciones
 
-### Configuración OSGi del programador del mapa del sitio
-
-Define el [Configuración de fábrica de OSGi](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) para la frecuencia (utilizando [expresiones cron](http://www.cronmaker.com)) los mapas del sitio se regeneran/generan y se almacenan en la caché en AEM.
-
-`ui.config/src/main/jcr_content/apps/wknd/osgiconfig/config.publish`
-
-```json
-{
-  "scheduler.name": "WKND Sitemaps",
-  "scheduler.expression": "0 0 2 1/1 * ? *",
-  "searchPath": "/content/wknd"
-}
-```
-
-### Direcciones URL absolutas del mapa del sitio
+### Direcciones URL absolutas del mapa del sitio{#absolute-sitemap-urls}
 
 AEM mapa del sitio admite direcciones URL absolutas mediante [Asignación de Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html). Esto se realiza creando nodos de asignación en los servicios de AEM que generan mapas del sitio (normalmente, el servicio AEM Publish).
 
@@ -63,6 +45,20 @@ La captura de pantalla siguiente ilustra una configuración similar, pero para `
 
 ![Configuración de direcciones URL absolutas del mapa del sitio](../assets/sitemaps/sitemaps-absolute-urls.jpg)
 
+
+### Configuración OSGi del programador del mapa del sitio
+
+Define el [Configuración de fábrica de OSGi](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) para la frecuencia (utilizando [expresiones cron](http://www.cronmaker.com)) los mapas del sitio se regeneran/generan y se almacenan en la caché en AEM.
+
+`ui.config/src/main/jcr_content/apps/wknd/osgiconfig/config.publish`
+
+```json
+{
+  "scheduler.name": "WKND Sitemaps",
+  "scheduler.expression": "0 0 2 1/1 * ? *",
+  "searchPath": "/content/wknd"
+}
+```
 
 ### Regla de filtro de permiso de Dispatcher
 
@@ -88,3 +84,11 @@ Asegúrese `.xml` las solicitudes HTTP del mapa del sitio se dirigen a la págin
 RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.xml)$
 RewriteRule ^/(.*)$ /content/${CONTENT_FOLDER_NAME}/$1 [PT,L]
 ```
+
+## Recursos
+
++ [Documentación AEM del mapa del sitio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/seo-and-url-management.html?lang=en#building-an-xml-sitemap-on-aem)
++ [Documentación del mapa del sitio de Apache Sling](https://github.com/apache/sling-org-apache-sling-sitemap#readme)
++ [Documentación del mapa del sitio de Sitemap.org](https://www.sitemaps.org/protocol.html)
++ [Documentación del archivo de índice Sitemap.org](https://www.sitemaps.org/protocol.html#index)
++ [Cronista](http://www.cronmaker.com/)

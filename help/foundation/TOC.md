@@ -4,10 +4,10 @@ breadcrumb-title: Tutoriales de AEM Foundation
 user-guide-description: Una colección de vídeos y tutoriales para Adobe Experience Manager Foundation.
 sub-product: Experience Manager
 index: y
-source-git-commit: de9377236016066cc62819f1c307aac82331a0b6
+source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 16%
+source-wordcount: '214'
+ht-degree: 17%
 
 ---
 
@@ -16,46 +16,45 @@ ht-degree: 16%
 
 + [Información general](./overview.md)
 + Administración {#administration}
-   + [AEM Comprender las razones para actualizar el](./administration/understand-reasons-to-upgrade.md)
-   + [Utilice oak-run.jar para administrar índices](./administration/use-oak-run-jar-to-manage-indexes.md)
-   + [Utilizar Limpieza de revisión en línea](./administration/use-online-revision-clean-up.md)
-   + [Uso del tablero de información general del sistema](./administration/use-the-system-overview-dashboard.md)
+   + [Comprender las razones para actualizar AEM](./administration/understand-reasons-to-upgrade.md)
+   + [Uso de oak-run.jar para administrar índices](./administration/use-oak-run-jar-to-manage-indexes.md)
+   + [Usar limpieza de revisión en línea](./administration/use-online-revision-clean-up.md)
+   + [Uso del panel Información general del sistema](./administration/use-the-system-overview-dashboard.md)
    + [Redirecciones de URL](./administration/url-redirection.md)
 + Autenticación {#authentication}
-   + [AEM OKTA y](authentication/okta-saml-integration.md)
+   + [OKTA y AEM](authentication/okta-saml-integration.md)
    + [Ámbitos de OAuth](authentication/oauth-code-sample-develop.md)
-   + [Configuración de claves públicas/privadas para utilizarlas con Adobe I/O](authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)
-   + [Descripción de autenticación](authentication/authentication-support-article-understand.md)
+   + [Explicación de la autenticación](authentication/authentication-support-article-understand.md)
    + [Comprender la autenticación IMS en AMS](authentication/adobe-ims-authentication-technical-video-understand.md)
 + Adobe Cloud Manager{#cloud-manager}
    + [Comprender Adobe Cloud Manager](./cloud-manager/understand-cloud-manager-for-aem.md)
    + [Uso de la canalización de CI/CD en Adobe Cloud Manager](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)
 + Desarrollo {#development}
-   + [Desarrollar exportadores de modelos Sling](./development/develop-sling-model-exporter.md)
-   + [AEM Configuración de un entorno de desarrollo local de](./development/set-up-a-local-aem-development-environment.md)
-   + [Configuración de la inclusión dinámica de Sling](./development/set-up-sling-dynamic-include.md)
-   + [Prácticas recomendadas para la API de Java](./development/understand-java-api-best-practices.md)
-   + [Explicación del exportador del modelo Sling](./development/understand-sling-model-exporter.md)
+   + [Desarrollar Exportadores De Modelo Sling](./development/develop-sling-model-exporter.md)
+   + [Configuración de un entorno de desarrollo de AEM local](./development/set-up-a-local-aem-development-environment.md)
+   + [Configuración de Sling Dynamic Include](./development/set-up-sling-dynamic-include.md)
+   + [Comprender las prácticas recomendadas de la API de Java](./development/understand-java-api-best-practices.md)
+   + [Comprender el exportador del modelo Sling](./development/understand-sling-model-exporter.md)
 + Proyectos {#projects}
-   + [AEM Desarrollar proyectos de](./projects/develop-aem-projects.md)
-   + [Utilizar proyectos principales](./projects/use-project-masters.md)
+   + [Desarrollar AEM proyectos](./projects/develop-aem-projects.md)
+   + [Usar Project Masters](./projects/use-project-masters.md)
 + Seguridad {#security}
-   + [AEM Notificación de seguridad de la (noviembre de 2018)](./security/aem-security-notification-2018-11.md)
-   + [Desarrollo para el Intercambio de Recursos de Origen Cruzado (CORS)](./security/develop-for-cross-origin-resource-sharing.md)
+   + [Notificación de seguridad AEM (noviembre de 2018)](./security/aem-security-notification-2018-11.md)
+   + [Desarrollo para el intercambio de recursos de origen cruzado (CORS)](./security/develop-for-cross-origin-resource-sharing.md)
    + [Comprender el uso compartido de recursos de origen cruzado (Cross-Origin Resource Sharing, CORS)](./security/understand-cross-origin-resource-sharing.md)
-   + [Uso del Asistente para SSL](./security/use-the-ssl-wizard.md)
+   + [Uso del asistente SSL](./security/use-the-ssl-wizard.md)
 + Flujo de trabajo {#workflow}
    + [Uso del Editor de flujo de trabajo](./workflow/use-the-workflow-editor.md)
-   + [Usar flujo de trabajo](./workflow/use-workflow.md)
+   + [Uso del flujo de trabajo](./workflow/use-workflow.md)
    + [Usar la bandeja de entrada](./workflow/use-the-inbox.md)
 + Solución de problemas {#troubleshooting}
-   + [Habilitación del informe de descarga de recursos](./troubleshooting/how-to-enable-asset-download-report.md)
-   + [AEM Cómo forzar la recompilación en la versión 6.4 de](./troubleshooting/how-to-force-recompilation.md)
-   + [AEM Cómo investigar los problemas relacionados con la indexación en el](./troubleshooting/how-to-investigate-indexing-related-issues.md)
-   + [AEM Cómo investigar los problemas relacionados con SAML en el ámbito de la](./troubleshooting/how-to-investigate-saml-related-issues.md)
-   + [AEM Cómo investigar los problemas relacionados con la búsqueda en la](./troubleshooting/how-to-investigate-search-related-issues.md)
-   + [Cómo establecer la caducidad de la sesión del token de inicio de sesión de Oak](./troubleshooting/how-to-set-the-oak-login-token-session-expiration.md)
+   + [Cómo habilitar el informe de descarga de recursos](./troubleshooting/how-to-enable-asset-download-report.md)
+   + [Cómo forzar la recompilación en AEM6.4](./troubleshooting/how-to-force-recompilation.md)
+   + [Cómo investigar los problemas relacionados con la indexación en AEM](./troubleshooting/how-to-investigate-indexing-related-issues.md)
+   + [Cómo investigar los problemas relacionados con SAML en AEM](./troubleshooting/how-to-investigate-saml-related-issues.md)
+   + [Cómo investigar problemas relacionados con la búsqueda en AEM](./troubleshooting/how-to-investigate-search-related-issues.md)
+   + [Configuración de la caducidad de la sesión del token de inicio de sesión de Oak](./troubleshooting/how-to-set-the-oak-login-token-session-expiration.md)
    + [Solución de problemas relacionados con la configuración de Jetty](./troubleshooting/how-to-troubleshoot-issues-related-to-jetty-configuration.md)
    + [Solución de problemas relacionados con el rendimiento](./troubleshooting/how-to-troubleshoot-performance-related-issues.md)
-   + [AEM Pasos para resolver los problemas relacionados con la memoria en la](./troubleshooting/steps-to-resolve-memory-related-issues.md)
-   + [AEM Pasos para resolver los problemas de replicación en la](./troubleshooting/steps-to-resolve-replication-issues.md)
+   + [Pasos para resolver los problemas relacionados con la memoria en AEM](./troubleshooting/steps-to-resolve-memory-related-issues.md)
+   + [Pasos para resolver los problemas de replicación en AEM](./troubleshooting/steps-to-resolve-replication-issues.md)
