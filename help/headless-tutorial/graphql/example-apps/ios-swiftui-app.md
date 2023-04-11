@@ -1,6 +1,6 @@
 ---
 title: 'Aplicación iOS: ejemplo AEM sin encabezado'
-description: Las aplicaciones de ejemplo son una buena manera de explorar las capacidades sin objetivos de Adobe Experience Manager (AEM). Esta aplicación de iOS muestra cómo consultar contenido mediante las API de GraphQL AEM mediante consultas persistentes.
+description: Las aplicaciones de ejemplo son una buena manera de explorar las capacidades sin objetivos de Adobe Experience Manager (AEM). Esta aplicación de iOS muestra cómo consultar contenido mediante AEM API de GraphQL mediante consultas persistentes.
 version: Cloud Service
 mini-toc-levels: 2
 kt: 10587
@@ -10,16 +10,16 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 6c5373db-86ec-410b-8a3b-9d4f86e06812
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
 workflow-type: tm+mt
 source-wordcount: '981'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
 # aplicación iOS
 
-Las aplicaciones de ejemplo son una buena manera de explorar las capacidades sin objetivos de Adobe Experience Manager (AEM). Esta aplicación de iOS muestra cómo consultar contenido mediante las API de GraphQL AEM mediante consultas persistentes.
+Las aplicaciones de ejemplo son una buena manera de explorar las capacidades sin objetivos de Adobe Experience Manager (AEM). Esta aplicación de iOS muestra cómo consultar contenido mediante AEM API de GraphQL mediante consultas persistentes.
 
 ![Aplicación iOS SwiftUI con AEM sin encabezado](./assets/ios-swiftui-app/ios-app.png)
 
@@ -29,14 +29,14 @@ Consulte la [código fuente en GitHub](https://github.com/adobe/aem-guides-wknd-
 
 Las siguientes herramientas deben instalarse localmente:
 
-+ [Xcode 9.3+](https://developer.apple.com/xcode/) (requiere macOS)
++ [Xcode](https://developer.apple.com/xcode/) (requiere macOS)
 + [Git](https://git-scm.com/)
 
 ## AEM requisitos
 
 La aplicación iOS funciona con las siguientes opciones de implementación de AEM. Todas las implementaciones requieren la variable [Sitio WKND v2.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) para instalar.
 
-+ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
++ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=es)
 + Configuración local mediante [el SDK de AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=es)
 + [Inicio rápido de AEM 6.5 SP13+](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=es?lang=en#install-local-aem-instances)
 
@@ -90,7 +90,7 @@ A continuación se muestra un resumen de cómo se crea la aplicación de iOS, c�
 
 ### Consultas persistentes
 
-Siguiendo AEM prácticas recomendadas sin encabezado, la aplicación de iOS utiliza consultas persistentes AEM GraphQL para consultar datos de aventura. La aplicación utiliza dos consultas persistentes:
+Siguiendo AEM prácticas recomendadas sin encabezado, la aplicación de iOS utiliza AEM consultas persistentes de GraphQL para consultar datos de aventura. La aplicación utiliza dos consultas persistentes:
 
 + `wknd/adventures-all` consulta persistente, que devuelve todas las aventuras en AEM con un conjunto abreviado de propiedades. Esta consulta persistente impulsa la lista de aventuras de la vista inicial.
 
@@ -175,7 +175,7 @@ query($slug: String!) {
 
 ### Ejecutar consulta persistente de GraphQL
 
-AEM las consultas persistentes se ejecutan a través de GET HTTP y, por lo tanto, no se pueden utilizar las bibliotecas comunes de GraphQL que utilizan POST HTTP como Apollo. En su lugar, cree una clase personalizada que ejecute las solicitudes de GET HTTP de consulta persistentes a AEM.
+AEM las consultas persistentes se ejecutan a través de GET HTTP y, por lo tanto, no se pueden utilizar las bibliotecas GraphQL comunes que utilizan POST HTTP como Apollo. En su lugar, cree una clase personalizada que ejecute las solicitudes de GET HTTP de consulta persistentes a AEM.
 
 `AEM/Aem.swift` crea una instancia de `Aem` clase utilizada para todas las interacciones con AEM sin encabezado. El patrón es:
 
@@ -183,7 +183,7 @@ AEM las consultas persistentes se ejecutan a través de GET HTTP y, por lo tanto
 1. El func público llama a un func privado `makeRequest(..)` que invoca una solicitud de GET HTTP asincrónica para AEM sin encabezado y devuelve los datos JSON.
 1. A continuación, cada func pública descodifica los datos JSON y realiza las comprobaciones o transformaciones necesarias antes de devolver los datos de Aventura a la vista.
 
-   + AEM datos JSON de GraphQL se descodifican usando las estructuras o clases definidas en `AEM/Models.swift`, que se asignaban a los objetos JSON devolvía mi AEM sin encabezado.
+   + AEM los datos JSON de GraphQL se descodifican mediante las estructuras o clases definidas en `AEM/Models.swift`, que se asignaban a los objetos JSON devolvía mi AEM sin encabezado.
 
 ```swift
     /// # getAdventures(..)
@@ -324,5 +324,5 @@ Se puede usar un enfoque similar con el nativo de la interfaz de usuario de Swif
 
 ## Recursos adicionales
 
-+ [Introducción a AEM sin encabezado: Tutorial de GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html)
++ [Introducción a AEM sin encabezado: Tutorial de GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=es)
 + [Tutorial sobre listas y navegación de SwiftUI](https://developer.apple.com/tutorials/swiftui/building-lists-and-navigation)

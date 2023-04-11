@@ -10,10 +10,10 @@ level: Beginner
 kt: 10721
 thumbnail: KT-10721.jpg
 last-substantial-update: 2022-10-03T00:00:00Z
-source-git-commit: ae49fb45db6f075a34ae67475f2fcc5658cb0413
+source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
 workflow-type: tm+mt
-source-wordcount: '806'
-ht-degree: 2%
+source-wordcount: '802'
+ht-degree: 1%
 
 ---
 
@@ -29,13 +29,12 @@ Consulte la [código fuente en GitHub](https://github.com/adobe/aem-guides-wknd-
 
 Las siguientes herramientas deben instalarse localmente:
 
-+ [Node.js v16+](https://nodejs.org/en/)
-+ [npm 8+](https://www.npmjs.com/)
++ [Node.js v18](https://nodejs.org/)
 + [Git](https://git-scm.com/)
 
 ## AEM requisitos
 
-La aplicación Next.js funciona con las siguientes opciones de implementación de AEM. Todas las implementaciones requieren [WKND compartido v2.1.0+](https://github.com/adobe/aem-guides-wknd-shared/releases/latest) o [Sitio WKND v2.1.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) para instalar en el entorno as a Cloud Service AEM.
+La aplicación Next.js funciona con las siguientes opciones de implementación AEM. Todas las implementaciones requieren [WKND compartido v2.1.0+](https://github.com/adobe/aem-guides-wknd-shared/releases/latest) o [Sitio WKND v2.1.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) para instalar en el entorno as a Cloud Service AEM.
 
 Este ejemplo de aplicación Next.js está diseñada para conectarse a __AEM Publish__ servicio.
 

@@ -1,6 +1,6 @@
 ---
 title: 'Componente web/JS: ejemplo AEM sin encabezado'
-description: Las aplicaciones de ejemplo son una buena manera de explorar las capacidades sin objetivos de Adobe Experience Manager (AEM). Esta aplicación de componente web/JS muestra cómo consultar contenido mediante las API de GraphQL AEM mediante consultas persistentes.
+description: Las aplicaciones de ejemplo son una buena manera de explorar las capacidades sin objetivos de Adobe Experience Manager (AEM). Esta aplicación de componente web/JS muestra cómo consultar contenido mediante AEM API de GraphQL mediante consultas persistentes.
 version: Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
@@ -8,17 +8,17 @@ role: Developer
 level: Beginner
 kt: 10797
 thumbnail: kt-10797.jpg
-source-git-commit: b98f567e05839db78a1a0a593c106b87af931a49
+source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 6%
+source-wordcount: '566'
+ht-degree: 7%
 
 ---
 
 
 # Componente web
 
-Las aplicaciones de ejemplo son una buena manera de explorar las capacidades sin objetivos de Adobe Experience Manager (AEM). Esta aplicación de componente web muestra cómo consultar contenido mediante las API de GraphQL AEM mediante consultas persistentes y procesar una parte de la interfaz de usuario, realizada mediante código JavaScript puro.
+Las aplicaciones de ejemplo son una buena manera de explorar las capacidades sin objetivos de Adobe Experience Manager (AEM). Esta aplicación de componente web muestra cómo consultar contenido mediante AEM API de GraphQL mediante consultas persistentes y procesar una parte de la interfaz de usuario, realizada con código JavaScript puro.
 
 ![Componente web con AEM sin encabezado](./assets/web-component/web-component.png)
 
@@ -29,15 +29,14 @@ Consulte la [código fuente en GitHub](https://github.com/adobe/aem-guides-wknd-
 Las siguientes herramientas deben instalarse localmente:
 
 + [JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14) (si se conecta al SDK local AEM 6.5 o AEM)
-+ [Node.js v10+](https://nodejs.org/en/)
-+ [npm 6+](https://www.npmjs.com/)
++ [Node.js v18](https://nodejs.org/en/)
 + [Git](https://git-scm.com/)
 
 ## AEM requisitos
 
 El componente web funciona con las siguientes opciones de implementación AEM.
 
-+ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
++ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=es)
 + Configuración local mediante [el SDK de AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=es)
 + [Inicio rápido de AEM 6.5 SP13+](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=es?lang=en#install-local-aem-instances)
 
@@ -116,7 +115,7 @@ La variable `person.js` define la funcionalidad del componente web y a continuac
 
 #### Implementación de elementos PersonInfo
 
-La variable `<person-info>` el objeto de clase del elemento personalizado define la funcionalidad empleando la variable `connectedCallback()` métodos de ciclo de vida, adjuntar una raíz de sombra, recuperar la consulta persistente de GraphQL y la manipulación DOM para crear la estructura DOM interna del elemento de sombra personalizado.
+La variable `<person-info>` el objeto de clase del elemento personalizado define la funcionalidad empleando la variable `connectedCallback()` métodos de ciclo de vida, adjuntar una raíz de sombra, recuperar la consulta persistente de GraphQL y la manipulación DOM para crear la estructura DOM interna del elemento personalizado.
 
 ```javascript
 // Create a Class for our Custom Element (person-info)

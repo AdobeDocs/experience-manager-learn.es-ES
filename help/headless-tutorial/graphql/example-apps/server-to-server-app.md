@@ -1,6 +1,6 @@
 ---
 title: 'Aplicación Node.js de servidor a servidor: ejemplo AEM sin encabezado'
-description: Las aplicaciones de ejemplo son una buena manera de explorar las capacidades sin objetivos de Adobe Experience Manager (AEM). Esta aplicación Node.js del lado del servidor muestra cómo consultar el contenido mediante las API de GraphQL AEM mediante consultas persistentes.
+description: Las aplicaciones de ejemplo son una buena manera de explorar las capacidades sin objetivos de Adobe Experience Manager (AEM). Esta aplicación Node.js del lado del servidor muestra cómo consultar contenido mediante API de GraphQL AEM mediante consultas persistentes.
 version: Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
@@ -8,16 +8,16 @@ role: Developer
 level: Beginner
 kt: 10798
 thumbnail: KT-10798.jpg
-source-git-commit: b98f567e05839db78a1a0a593c106b87af931a49
+source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 4%
+source-wordcount: '472'
+ht-degree: 6%
 
 ---
 
 # Aplicación Node.js de servidor a servidor
 
-Las aplicaciones de ejemplo son una buena manera de explorar las capacidades sin objetivos de Adobe Experience Manager (AEM). Esta aplicación servidor a servidor muestra cómo consultar contenido mediante las API de GraphQL AEM mediante consultas persistentes e imprimirlo en terminal.
+Las aplicaciones de ejemplo son una buena manera de explorar las capacidades sin objetivos de Adobe Experience Manager (AEM). Esta aplicación servidor a servidor muestra cómo consultar contenido mediante API de GraphQL AEM mediante consultas persistentes e imprimirlo en terminal.
 
 ![Aplicación Node.js de servidor a servidor con AEM sin encabezado](./assets/server-to-server-app/server-to-server-app.png)
 
@@ -27,15 +27,14 @@ Consulte la [código fuente en GitHub](https://github.com/adobe/aem-guides-wknd-
 
 Las siguientes herramientas deben instalarse localmente:
 
-+ [Node.js v10+](https://nodejs.org/en/)
-+ [npm 6+](https://www.npmjs.com/)
++ [Node.js v18](https://nodejs.org/en/)
 + [Git](https://git-scm.com/)
 
 ## AEM requisitos
 
 La aplicación Node.js funciona con las siguientes opciones de implementación AEM. Todas las implementaciones requieren la variable [Sitio WKND v2.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) para instalar.
 
-+ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
++ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=es)
 + Opcionalmente, [credenciales del servicio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html) si autoriza solicitudes (por ejemplo, conectándose al servicio AEM Author).
 
 Esta aplicación Node.js puede conectarse a AEM Author o AEM Publish en función de los parámetros de la línea de comandos.
@@ -145,7 +144,7 @@ async function run() {
 
 AEM las consultas persistentes se ejecutan a través de GET HTTP y, por lo tanto, la variable [AEM cliente sin encabezado para Node.js](https://github.com/adobe/aem-headless-client-nodejs) se usa para [ejecutar las consultas de GraphQL persistentes](https://github.com/adobe/aem-headless-client-nodejs#within-asyncawait) contra AEM y recupera el contenido de aventura.
 
-La consulta persistente se invoca llamando a `aemHeadlessClient.runPersistedQuery(...)`y pasando el nombre de consulta de GraphQL persistente. Una vez que GraphQL devuelva los datos, pásela a la variable simplificada `doSomethingWithDataFromAEM(..)` , que imprime los resultados, pero normalmente enviaría los datos a otro sistema, o generaría algunos resultados basados en los datos recuperados.
+La consulta persistente se invoca llamando a `aemHeadlessClient.runPersistedQuery(...)`y pasando el nombre de la consulta de GraphQL persistente. Una vez que GraphQL devuelva los datos, pásela a la variable simplificada `doSomethingWithDataFromAEM(..)` , que imprime los resultados, pero normalmente enviaría los datos a otro sistema, o generaría algunos resultados basados en los datos recuperados.
 
 ```js
 // index.js
