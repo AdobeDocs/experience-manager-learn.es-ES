@@ -7,10 +7,10 @@ breadcrumb-title: Tutoriales de AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: d3531e76d3341e0964e5ed878fc72037024a11fd
+source-git-commit: 155e6e42d4251b731d00e2b456004016152f81fe
 workflow-type: tm+mt
-source-wordcount: '1784'
-ht-degree: 3%
+source-wordcount: '1806'
+ht-degree: 4%
 
 ---
 
@@ -152,7 +152,7 @@ ht-degree: 3%
    + [Crear y configurar formularios adaptables](aem-forms-and-adobe-sign/create-and-configure-adaptive-form.md)
    + [Configuración del formulario adaptable para un único firmante](aem-forms-and-adobe-sign/configure-adaptive-form-for-single-signer.md)
    + [Configuración del formulario adaptable para dos firmantes](aem-forms-and-adobe-sign/configure-adaptive-form-for-two-signers.md)
-   + [Configuración del servicio de Automated forms conversion](aem-forms-and-adobe-sign/configure-automated-forms-conversion-service.md)
+   + [Configuración del servicio de conversión automática de formularios](aem-forms-and-adobe-sign/configure-automated-forms-conversion-service.md)
    + [Convertir formulario de PDF en formulario adaptable](aem-forms-and-adobe-sign/convert-pdf-form-into-adaptive-form.md)
    + [Configurar formulario adaptable convertido](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
    + [Uso de plantillas XDP con Acrobat Sign](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
@@ -230,7 +230,12 @@ ht-degree: 3%
    + [Crear componente de flujo de trabajo](welcome-kit/create-workflow-component.md)
    + [Probar la solución](welcome-kit/testing-the-solution.md)
 
-
++ Reaccione la aplicación con Forms y Acrobat Sign {#react-ic-sign}
+   + [Introducción](react-ic-sign/introduction.md)
+   + [Generar documento IC](react-ic-sign/create-ic-document.md)
+   + [Envoltura de la API de Acrobat Sign](react-ic-sign/wrapper-sign-api.md)
+   + [Generar widget de firma](react-ic-sign/create-servlet-to-expose-endpoint.md)
+   + [Implementar los recursos de ejemplo](react-ic-sign/deploy-assets-on-your-server.md)
 + Document Services {#document-services}
    + [Tipos de PDF forms](document-services/pdf-forms-and-documents.md)
    + [Incrustar pdf en forma adaptable](document-services/embed-pdf-inline.md)
