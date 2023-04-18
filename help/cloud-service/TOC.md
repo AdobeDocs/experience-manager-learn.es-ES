@@ -5,10 +5,10 @@ breadcrumb-title: Tutoriales de AEM as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 9917b16248ef1f0a9c86f03a024c634636b2304e
+source-git-commit: 1011c700a33b932c3c0a766727fc1d90bf2940f4
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 23%
+source-wordcount: '932'
+ht-degree: 22%
 
 ---
 
@@ -259,6 +259,9 @@ ht-degree: 23%
       + [Crear un modelo de datos de formulario](./forms/integrate-with-salesforce/create-form-data-model.md)
       + [Envío de formulario de prueba](./forms/integrate-with-salesforce/create-lead-submitting-form.md)
       + [Evento de clic de prueba](./forms/integrate-with-salesforce/create-lead-click-event.md)
+   + Almacene los envíos de formularios en una unidad y un punto de uso compartido{#one-drive}
+      + [Almacenar datos de formulario en una unidad](./forms/forms-cs-one-drive/store-form-submission-one-drive.md)
+      + [Almacenar datos de formulario en sharepoint](./forms/forms-cs-sharepoint/store-form-submission-in-sharepoint.md)
 + Extensibilidad de asset compute{#asset-compute}
    + [Información general](./asset-compute/overview.md)
    + Configuración{#set-up}
