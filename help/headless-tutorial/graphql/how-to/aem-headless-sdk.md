@@ -9,10 +9,10 @@ level: Intermediate
 kt: 10269
 thumbnail: KT-10269.jpeg
 exl-id: 922a464a-2286-4132-9af8-f5a1fb5ce268
-source-git-commit: 595d990b7d8ed3c801a085892fef38d780082a15
+source-git-commit: 31948793786a2c430533d433ae2b9df149ec5fc0
 workflow-type: tm+mt
-source-wordcount: '415'
-ht-degree: 4%
+source-wordcount: '454'
+ht-degree: 10%
 
 ---
 
@@ -22,13 +22,13 @@ El SDK sin encabezado de AEM es un conjunto de bibliotecas que los clientes pued
 
 El SDK sin AEM está disponible para varias plataformas:
 
-+ [AEM SDK sin encabezado para exploradores del lado del cliente (JavaScript)](https://github.com/adobe/aem-headless-client-js)
-+ [AEM SDK sin encabezado para server-side/Node.js (JavaScript)](https://github.com/adobe/aem-headless-client-nodejs)
-+ [AEM SDK sin encabezado para Java™](https://github.com/adobe/aem-headless-client-java)
++ [SDK de AEM sin encabezado para exploradores del lado del cliente (JavaScript)](https://github.com/adobe/aem-headless-client-js)
++ [SDK de AEM sin encabezado del lado del servidor/Nodo.js (JavaScript)](https://github.com/adobe/aem-headless-client-nodejs)
++ [SDK de AEM sin encabezado para Java™](https://github.com/adobe/aem-headless-client-java)
 
 ## Consultas persistentes de GraphQL
 
-Realización de consultas AEM mediante GraphQL con consultas persistentes (en oposición a [consultas de GraphQL definidas por el cliente](#graphl-queries)) permite a los desarrolladores mantener una consulta (pero no sus resultados) en AEM y luego solicitar que la consulta se ejecute con el nombre. Las consultas persistentes son similares al concepto de procedimientos almacenados en bases de datos SQL.
+Realización de consultas AEM con GraphQL mediante consultas persistentes (en lugar de [consultas GraphQL definidas por el cliente](#graphl-queries)) permite a los desarrolladores mantener una consulta (pero no sus resultados) en AEM y luego solicitar que la consulta se ejecute con el nombre. Las consultas persistentes son similares al concepto de procedimientos almacenados en bases de datos SQL.
 
 Las consultas persistentes tienen más rendimiento que las consultas GraphQL definidas por el cliente, ya que las consultas persistentes se ejecutan mediante GET HTTP, que se puede almacenar en caché en los niveles CDN y AEM Dispatcher. Las consultas persistentes también están en vigor, definen una API y desvinculan la necesidad de que el desarrollador entienda los detalles de cada modelo de fragmento de contenido.
 
@@ -201,5 +201,39 @@ Nuevo `useEffect` se pueden crear vínculos para cada consulta persistente que u
 
 ## Consultas de GraphQL
 
-AEM admite consultas de GraphQL definidas por el cliente, pero AEM práctica recomendada utilizar [consultas de GraphQL persistentes](#persisted-graphql-queries).
+AEM admite consultas de GraphQL definidas por el cliente, aunque AEM práctica recomendada utilizar [consultas de GraphQL persistentes](#persisted-graphql-queries).
 
+## Paquete web 5+
+
+El SDK de JS sin AEM tiene dependencias en `util` que no está incluido en Webpack 5+ de forma predeterminada. Si utiliza Webpack 5+ y recibe el siguiente error:
+
+```
+Compiled with problems:
+× ERROR in ./node_modules/@adobe/aio-lib-core-errors/src/AioCoreSDKErrorWrapper.js 12:13-28
+Module not found: Error: Can't resolve 'util' in '/Users/me/Code/wknd-headless-examples/node_modules/@adobe/aio-lib-core-errors/src'
+
+BREAKING CHANGE: webpack < 5 used to include polyfills for node.js core modules by default.
+This is no longer the case. Verify if you need this module and configure a polyfill for it.
+
+If you want to include a polyfill, you need to:
+    - add a fallback 'resolve.fallback: { "util": require.resolve("util/") }'
+    - install 'util'
+If you don't want to include a polyfill, you can use an empty module like this:
+    resolve.fallback: { "util": false }
+```
+
+Agregue lo siguiente `devDependencies` a su `package.json` archivo:
+
+```json
+  "devDependencies": {
+    "buffer": "npm:buffer@^6.0.3",
+    "crypto": "npm:crypto-browserify@^3.12.0",
+    "http": "npm:stream-http@^3.2.0",
+    "https": "npm:https-browserify@^1.0.0",
+    "stream": "npm:stream-browserify@^3.0.0",
+    "util": "npm:util@^0.12.5",
+    "zlib": "npm:browserify-zlib@^0.2.0"
+  },
+```
+
+A continuación, ejecute `npm install` para instalar las dependencias.
