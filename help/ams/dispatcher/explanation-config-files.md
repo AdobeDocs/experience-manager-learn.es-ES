@@ -7,7 +7,7 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: 7815b1a78949c433f2c53ff752bf39dd55f9ac94
+source-git-commit: cc085af90b9b8ea0e650546c251fbf14cc222989
 workflow-type: tm+mt
 source-wordcount: '1705'
 ht-degree: 0%
@@ -36,7 +36,7 @@ El servidor web Apache no se preocupa realmente de qué es la extensión de arch
 | NOMBRE DE ARCHIVO`_rewrite.rules` | `/etc/httpd/conf.d/rewrites/` | `*_rewrite.rules` almacén de archivos `mod_rewrite` reglas que se incluirán y consumirán explícitamente mediante `vhost` file |
 | NOMBRE DE ARCHIVO`_whitelist.rules` | `/etc/httpd/conf.d/whitelists/` | `*_ipwhitelist.rules` los archivos se incluyen desde el interior de la variable `*.vhost` archivos. Contiene direcciones IP regex o permite reglas de denegación para permitir listas blancas de IP. Si está intentando restringir la visualización de un host virtual basado en direcciones IP, generará uno de estos archivos y lo incluirá desde su `*.vhost` file |
 
-## Archivos contenidos en conf.module.d/
+## Archivos contenidos en conf.dispatcher.d/
 
 | Archivo | Destino del archivo | Descripción |
 | --- | --- | --- |
