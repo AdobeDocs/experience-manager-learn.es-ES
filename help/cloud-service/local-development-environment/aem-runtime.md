@@ -13,7 +13,7 @@ exl-id: 19f72254-2087-450b-909d-2d90c9821486
 source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
 workflow-type: tm+mt
 source-wordcount: '1800'
-ht-degree: 3%
+ht-degree: 9%
 
 ---
 
@@ -21,12 +21,12 @@ ht-degree: 3%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_localdev_aemruntime"
->title="Tiempo de ejecución de AEM local"
->abstract="Adobe Experience Manager (AEM) se puede ejecutar localmente mediante el Jar de inicio rápido del SDK as a Cloud Service de AEM. Esto permite a los desarrolladores implementar y probar el código, la configuración y el contenido personalizados antes de comprometerlo con el control de código fuente e implementarlo en un entorno as a Cloud Service AEM."
+>title="Tiempo de ejecución local de AEM"
+>abstract="Adobe Experience Manager (AEM) se puede ejecutar localmente mediante el Jar de inicio rápido del SDK de AEM as a Cloud Service. Esto permite a los desarrolladores implementar y probar el código, la configuración y el contenido personalizados antes de comprometerlo con el control de código fuente e implementarlo en el entorno de AEM as a Cloud Service."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=es" text="SDK de AEM as a Cloud Service"
->additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html" text="Descarga del SDK de AEM as a Cloud Service"
+>additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html" text="Descargar el SDK de AEM as a Cloud Service"
 
-Adobe Experience Manager (AEM) se puede ejecutar localmente mediante el Jar de inicio rápido del SDK as a Cloud Service de AEM. Esto permite a los desarrolladores implementar y probar el código, la configuración y el contenido personalizados antes de comprometerlo con el control de código fuente e implementarlo en un entorno as a Cloud Service AEM.
+Adobe Experience Manager (AEM) se puede ejecutar localmente mediante el Jar de inicio rápido del SDK de AEM as a Cloud Service. Esto permite a los desarrolladores implementar y probar el código, la configuración y el contenido personalizados antes de comprometerlo con el control de código fuente e implementarlo en el entorno de AEM as a Cloud Service.
 
 Tenga en cuenta que `~` se utiliza como abreviatura para el Directorio del usuario. En Windows, es el equivalente de `%HOMEPATH%`.
 

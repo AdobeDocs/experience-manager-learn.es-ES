@@ -12,17 +12,17 @@ exl-id: 8fd8eb06-bbd9-489a-b41b-f8785e140f58
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '61'
-ht-degree: 6%
+ht-degree: 88%
 
 ---
 
-# Integración continua y Cloud Manager {#continuous-integration-and-cloud-manager}
+# Integraciones continuas y Cloud Manager {#continuous-integration-and-cloud-manager}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_devops_cicd"
->title="Integración continua y Cloud Manager"
+>title="Integraciones continuas y Cloud Manager"
 >abstract="Conozca las prácticas recomendadas y la integración continua mediante Adobe Cloud Manager."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en#non-production-pipelines" text="Configuración de la canalización de CI/CD"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=es#non-production-pipelines" text="Configuración de la canalización de CI/CD"
 
 Conozca las prácticas recomendadas y la integración continua mediante Adobe Cloud Manager.
 

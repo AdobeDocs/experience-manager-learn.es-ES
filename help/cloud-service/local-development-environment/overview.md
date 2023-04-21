@@ -14,7 +14,7 @@ exl-id: 8b12f34c-be98-4f47-853c-411bb601990c
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '546'
-ht-degree: 5%
+ht-degree: 14%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 5%
 >[!CONTEXTUALHELP]
 >id="aemcloud_localdev_overview"
 >title="Información general"
->abstract="La configuración del entorno de desarrollo local para AEM as a Cloud Service incluye las herramientas de desarrollo necesarias para desarrollar, crear y compilar AEM Proyectos, así como los tiempos de ejecución locales, lo que permite a los desarrolladores validar rápidamente las nuevas funciones localmente antes de implementarlas en AEM as a Cloud Service mediante Adobe Cloud Manager."
+>abstract="La configuración del entorno de desarrollo local para AEM as a Cloud Service incluye las herramientas de desarrollo necesarias para desarrollar, crear y compilar Proyectos AEM, así como los tiempos de ejecución locales, lo que permite a los desarrolladores validar rápidamente las nuevas funciones localmente antes de implementarlas en AEM as a Cloud Service mediante Adobe Cloud Manager."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=es" text="Directrices de desarrollo"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/basics/aem-sdk.html?lang=es" text="Conceptos básicos de desarrollo"
 
@@ -66,7 +66,7 @@ Esta sección del tutorial muestra cómo:
 
 [Configuración de herramientas de desarrollo para proyectos AEM](./development-tools.md)
 
-## Tiempo de ejecución de AEM local
+## Tiempo de ejecución local de AEM
 
 El SDK as a Cloud Service AEM proporciona un [!DNL QuickStart Jar] que ejecuta una versión local de AEM. La variable [!DNL QuickStart Jar] se puede utilizar para ejecutar el servicio de autor de AEM o el servicio de publicación de AEM localmente. Tenga en cuenta que mientras que la variable [!DNL QuickStart Jar] proporciona una experiencia de desarrollo local, no todas las funciones disponibles en AEM as a Cloud Service están incluidas en la variable [!DNL QuickStart Jar].
 

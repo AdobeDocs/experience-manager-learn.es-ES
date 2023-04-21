@@ -14,7 +14,7 @@ exl-id: d33c033a-9577-4d4e-99be-f3c7e2a4ce73
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '383'
-ht-degree: 13%
+ht-degree: 17%
 
 ---
 
@@ -34,7 +34,7 @@ Esta serie de vídeos cubre el ciclo de vida de creación de fragmentos de conte
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_admin_content_fragments"
 >title="Administrar fragmentos"
->abstract="Descubra cómo los fragmentos de contenido le permiten diseñar, crear, depurar y utilizar contenido independiente de las páginas."
+>abstract="Descubra cómo los fragmentos de contenido permiten diseñar, crear, depurar y utilizar contenido independiente de cualquier página."
 
 ## Definición de los modelos de fragmento de contenido {#defining-content-fragment-models}
 

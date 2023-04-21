@@ -12,7 +12,7 @@ exl-id: 82cd6dd5-735f-4641-9848-a5f5144b8624
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '99'
-ht-degree: 5%
+ht-degree: 74%
 
 ---
 
@@ -21,10 +21,10 @@ ht-degree: 5%
 >[!CONTEXTUALHELP]
 >id="aemcloud_devops_deploycode"
 >title="Implementación de código"
->abstract="Integre el repositorio de Git de Cloud Manager con un repositorio de Git externo e implemente un proyecto para AEM as a Cloud Service"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/merge-projects.html?lang=en#cloud-manager" text="Combinar proyectos"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=en#how-to-use" text="Implementación de código con Cloud Manager"
+>abstract="Integre el repositorio Git de Cloud Manager con un repositorio Git externo e implemente un proyecto en AEM as a Cloud Service"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/merge-projects.html?lang=es#cloud-manager" text="Combinar proyectos"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=es#how-to-use" text="Implementación de código con Cloud Manager"
 
-Integre el repositorio de Git de Cloud Manager con un repositorio de Git externo e implemente un proyecto para AEM as a Cloud Service
+Integre el repositorio Git de Cloud Manager con un repositorio Git externo e implemente un proyecto en AEM as a Cloud Service
 
 >[!VIDEO](https://video.tv.adobe.com/v/330534?quality=12&learn=on)
