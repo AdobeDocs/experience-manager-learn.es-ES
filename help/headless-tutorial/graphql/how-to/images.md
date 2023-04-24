@@ -10,10 +10,10 @@ kt: 10253
 thumbnail: KT-10253.jpeg
 last-substantial-update: 2023-04-19T00:00:00Z
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
-source-git-commit: 2096c207ce14985b550b055ea0f51451544c085c
+source-git-commit: 71b2dc0e8ebec1157694ae55118f2426558566e3
 workflow-type: tm+mt
-source-wordcount: '918'
-ht-degree: 5%
+source-wordcount: '935'
+ht-degree: 6%
 
 ---
 
@@ -35,6 +35,11 @@ La variable `ImageRef` El tipo tiene cuatro opciones de URL para las referencias
 
 La variable `_dynamicUrl` es la URL preferida para usar con recursos de imagen y debe reemplazar el uso de `_path`, `_authorUrl`y `_publishUrl` siempre que sea posible.
 
+|  | AEM as a Cloud Service | AEM RDE as a Cloud Service | SDK AEM | AEM 6.5 |
+| ------------------------------ |:----------------------:|:--------------------------:|:-------:|:-------:|
+| ¿Admite imágenes optimizadas para la web? | š | ✔ | ✘ | ✘ |
+
+
 >[!CONTEXTUALHELP]
 >id="aemcloud_learn_headless_graphql_images"
 >title="Imágenes con AEM Headless"
@@ -52,7 +57,7 @@ Los tipos de campo se revisan en el [Modelo de fragmento de contenido](https://e
 
 En la consulta de GraphQL, devuelva el campo como `ImageRef` y solicite la `_dynamicUrl` campo . Por ejemplo, para consultar una aventura en la [Proyecto del sitio WKND](https://github.com/adobe/aem-guides-wknd) e incluyendo la URL de imagen para las referencias de recurso de imagen en su `primaryImage` , se puede realizar con una nueva consulta persistente `wknd-shared/adventure-image-by-path` definido como:
 
-```graphql
+```graphql {highlight="11"}
 query($path: String!, $assetTransform: AssetTransform!) {
   adventureByPath(
     _path: $path
@@ -86,7 +91,7 @@ La variable `_assetTransform` define cómo la variable `_dynamicUrl` está const
 
 | Parámetro GraphQL | Parámetro de dirección URL | Descripción | Requerido | Valores de variables de GraphQL | Valores de parámetro de URL | Variable GraphQL de ejemplo | Ejemplo de parámetro de URL |
 |:---------|:----------|:-------------------------------|:--:|:--------------------------|:---|:---|:--|
-| `format` | `format` | Formato del recurso de imagen. | š | `GIF`, `PNG`, `PNG8`, `JPG`, `PJPG`, `BJPG`,  `WEBP`, `WEBPLL`, `WEBPLY` | N/D | `{ format: JPG }` | N/D |
+| `format` | `format` | Formato del recurso de imagen. | ✔ | `GIF`, `PNG`, `PNG8`, `JPG`, `PJPG`, `BJPG`,  `WEBP`, `WEBPLL`, `WEBPLY` | N/D | `{ format: JPG }` | N/D |
 | `seoName` | N/D | Nombre del segmento de archivo en la dirección URL. Si no se proporciona, se utiliza el nombre del recurso de imagen. | ✘ | Alfanumérico, `-`o `_` | N/D | `{ seoName: "bali-surf-camp" }` | N/D |
 | `crop` | `crop` | El marco de recorte extraído de la imagen debe estar dentro del tamaño de la imagen | ✘ | Enteros positivos que definen una región de recorte dentro de los límites de las dimensiones de la imagen original | Cadena delimitada por comas de coordenadas numéricas `<X_ORIGIN>,<Y_ORIGIN>,<CROP_WIDTH>,<CROP_HEIGHT>` | `{ crop: { xOrigin: 10, yOrigin: 20, width: 300, height: 400} }` | `?crop=10,20,300,400` |
 | `size` | `size` | Tamaño de la imagen de salida (altura y anchura) en píxeles. | ✘ | Enteros positivos | Enteros positivos delimitados por comas en el orden `<WIDTH>,<HEIGHT>` | `{ size: { width: 1200, height: 800 } }` | `?size=1200,800` |
@@ -100,7 +105,7 @@ La variable `_assetTransform` define cómo la variable `_dynamicUrl` está const
 
 La respuesta JSON resultante contiene los campos solicitados que contienen la URL optimizada para la web para los recursos de imagen.
 
-```json
+```json {highlight="8"}
 {
   "data": {
     "adventureByPath": {
@@ -197,12 +202,12 @@ function App() {
 
   /**
    * Update the dynamic URL with client-specific query parameters
-   * @param {*} dynamicUrl the base dynamic URL for the web-optimized image
+   * @param {*} imageUrl the image URL
    * @param {*} params the AEM web-optimized image query parameters
    * @returns the dynamic URL with the query parameters
    */
-  function setParams(dynamicUrl, params) {
-    let url = new URL(dynamicUrl);
+  function setOptimizedImageUrlParams(imageUrl, params) {
+    let url = new URL(imageUrl);
     Object.keys(params).forEach(key => {
       url.searchParams.set(key, params[key]);
     });
@@ -220,6 +225,9 @@ function App() {
   // Wait for AEM Headless APIs to provide data
   if (!data) { return <></> }
 
+  const alt = data.adventureByPath.item.title;
+  const imageUrl =  AEM_HOST + data.adventureByPath.item.primaryImage._dynamicUrl;
+
   return (
     <div className="app">
       
@@ -230,11 +238,11 @@ function App() {
 
       <img
         alt={alt}
-        src={setParams(dynamicUrl, { width: 1000 })}
+        src={setOptimizedImageUrlParams(imageUrl, { width: 1000 })}
         srcSet={
-            `${setParams(dynamicUrl, { width: 1000 })} 1000w,
-             ${setParams(dynamicUrl, { width: 1600 })} 1600w,
-             ${setParams(dynamicUrl, { width: 2000 })} 2000w`
+            `${setOptimizedImageUrlParams(imageUrl, { width: 1000 })} 1000w,
+             ${setOptimizedImageUrlParams(imageUrl, { width: 1600 })} 1600w,
+             ${setOptimizedImageUrlParams(imageUrl, { width: 2000 })} 2000w`
         }
         sizes="calc(100vw - 10rem)"/>
 
@@ -243,11 +251,11 @@ function App() {
 
         <picture>
           {/* When viewport width is greater than 2001px */}
-          <source srcSet={setParams(dynamicUrl, { width : 2600 })} media="(min-width: 2001px)"/>        
+          <source srcSet={setOptimizedImageUrlParams(imageUrl, { width : 2600 })} media="(min-width: 2001px)"/>        
           {/* When viewport width is between 1000px and 2000px */}
-          <source srcSet={setParams(dynamicUrl, { width : 2000})} media="(min-width: 1000px)"/>
+          <source srcSet={setOptimizedImageUrlParams(imageUrl, { width : 2000})} media="(min-width: 1000px)"/>
           {/* When viewport width is less than 799px */}
-          <img src={setParams(dynamicUrl, { width : 400, crop: "550,300,400,400" })} alt={alt}/>
+          <img src={setOptimizedImageUrlParams(imageUrl, { width : 400, crop: "550,300,400,400" })} alt={alt}/>
         </picture>
     </div>
   );
