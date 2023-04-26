@@ -10,9 +10,9 @@ kt: 10253
 thumbnail: KT-10253.jpeg
 last-substantial-update: 2023-04-19T00:00:00Z
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
-source-git-commit: ec2609ed256ebe6cdd7935f3e8d476c1ff53b500
+source-git-commit: 09f9530cab0ec651b7c37c8c078631c79e8cfe4a
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '934'
 ht-degree: 6%
 
 ---
@@ -97,7 +97,7 @@ La variable `_assetTransform` define cómo la variable `_dynamicUrl` está const
 
 | Parámetro GraphQL | Parámetro de dirección URL | Descripción | Requerido | Valores de variables de GraphQL | Valores de parámetro de URL | Ejemplo de parámetro de URL |
 |:---------|:----------|:-------------------------------|:--:|:--------------------------|:---|:--|
-| `format` | `format` | Formato del recurso de imagen. | ✔ | `GIF`, `PNG`, `PNG8`, `JPG`, `PJPG`, `BJPG`,  `WEBP`, `WEBPLL`, `WEBPLY` | N/D | N/D |
+| `format` | N/D | Formato del recurso de imagen. | ✔ | `GIF`, `PNG`, `PNG8`, `JPG`, `PJPG`, `BJPG`,  `WEBP`, `WEBPLL`, `WEBPLY` | N/D | N/D |
 | `seoName` | N/D | Nombre del segmento de archivo en la dirección URL. Si no se proporciona, se utiliza el nombre del recurso de imagen. | ✘ | Alfanumérico, `-`o `_` | N/D | N/D |
 | `crop` | `crop` | El marco de recorte extraído de la imagen debe estar dentro del tamaño de la imagen | ✘ | Enteros positivos que definen una región de recorte dentro de los límites de las dimensiones de la imagen original | Cadena delimitada por comas de coordenadas numéricas `<X_ORIGIN>,<Y_ORIGIN>,<CROP_WIDTH>,<CROP_HEIGHT>` | `?crop=10,20,300,400` |
 | `size` | `size` | Tamaño de la imagen de salida (altura y anchura) en píxeles. | ✘ | Enteros positivos | Enteros positivos delimitados por comas en el orden `<WIDTH>,<HEIGHT>` | `?size=1200,800` |
