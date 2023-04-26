@@ -10,7 +10,7 @@ kt: 10253
 thumbnail: KT-10253.jpeg
 last-substantial-update: 2023-04-19T00:00:00Z
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
-source-git-commit: 09f9530cab0ec651b7c37c8c078631c79e8cfe4a
+source-git-commit: 97a311e043d3903070cd249d993036b5d88a21dd
 workflow-type: tm+mt
 source-wordcount: '934'
 ht-degree: 6%
@@ -141,7 +141,7 @@ let dynamicUrl = AEM_HOST + data.adventureByPath.item.primaryImage._dynamicUrl;
 
 Recuerde: `_dynamicUrl` no incluye el dominio AEM, por lo que debe proporcionar el origen deseado para que la URL de la imagen se resuelva.
 
-### Direcciones URL adaptables
+## Direcciones URL adaptables
 
 El ejemplo anterior muestra el uso de una imagen de un solo tamaño; sin embargo, en las experiencias web, a menudo se requieren conjuntos de imágenes interactivas. Las imágenes interactivas se pueden implementar mediante [secuencias de comandos img](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset) o [elementos de imagen](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset). El siguiente fragmento de código muestra cómo usar la variable `_dynamicUrl` como base y añada diferentes parámetros de anchura para potenciar diferentes vistas adaptables. No solo puede `width` utilice el parámetro de consulta , pero el cliente puede agregar otros parámetros de consulta para optimizar aún más el recurso de imagen según sus necesidades.
 
@@ -155,7 +155,7 @@ let alt = data.adventureByPath.item.title;
 {/*-- Example img srcset --*/}
 document.body.innerHTML=`<img>
     alt="${alt}"
-    src="${${dynamicUrl}&width=1000}"
+    src="${dynamicUrl}&width=1000}"
     srcset="`
       ${dynamicUrl}&width=1000 1000w,
       ${dynamicUrl}&width=1600 1600w,
@@ -171,26 +171,26 @@ document.body.innerHTML=`<picture>
     </picture>`;
 ```
 
-### Ejemplo de reacción
+## Ejemplo de reacción
 
 Vamos a crear una aplicación React sencilla que muestre las imágenes optimizadas para la web siguientes [patrones de imagen interactivos](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/). Existen dos patrones principales para las imágenes interactivas:
 
 + [Elemento de imagen con conjunto de secuencias de comandos](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset) para mejorar el rendimiento
 + [Elemento Imagen](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-picture) para control de diseño
 
-#### Elemento de imagen con conjunto de secuencias de comandos
+### Elemento de imagen con conjunto de secuencias de comandos
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418556/?quality=12&learn=on)
 
 [Elementos de imagen con srcset](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset) se usan con la variable `sizes` para proporcionar distintos recursos de imagen para diferentes tamaños de pantalla. Los conjuntos de cadenas de imagen son útiles cuando se proporcionan distintos recursos de imagen para diferentes tamaños de pantalla.
 
-#### Elemento Imagen
+### Elemento Imagen
 
 [Elementos de imagen](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-picture) se utilizan con varios `source` para proporcionar distintos recursos de imagen para diferentes tamaños de pantalla. Los elementos de imagen son útiles cuando se proporcionan distintas representaciones de imagen para diferentes tamaños de pantalla.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418555/?quality=12&learn=on)
 
-#### Código de ejemplo
+### Código de ejemplo
 
 Esta sencilla aplicación React usa la variable [SDK AEM sin encabezado](./aem-headless-sdk.md) para consultar AEM API sin encabezado sobre un contenido de Aventura y muestra la imagen optimizada para la web utilizando [elemento img con srcset](#img-element-with-srcset) y [elemento de imagen](#picture-element). La variable `srcset` y `sources` usar un `setParams` para añadir el parámetro de consulta de entrega optimizado para la web al `_dynamicUrl` de la imagen, cambie la representación de la imagen entregada según las necesidades del cliente web.
 
