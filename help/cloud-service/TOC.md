@@ -5,10 +5,10 @@ breadcrumb-title: Tutoriales de AEM as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 1011c700a33b932c3c0a766727fc1d90bf2940f4
+source-git-commit: fc6c225f30132baec6245955318c7ca180d3ad62
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 22%
+source-wordcount: '934'
+ht-degree: 24%
 
 ---
 
@@ -16,6 +16,7 @@ ht-degree: 22%
 # Tutoriales de Adobe Experience Manager as a Cloud Service {#cloud-service}
 
 + [Información general](./overview.md)
++ [Pruebas AEM](./aem-trials/index.md)
 + Introducción a AEM as a Cloud Service{#introduction}
    + [¿Qué es AEM as a Cloud Service?](./introduction/what-is-aem-as-a-cloud-service.md)
    + [Evolución](./introduction/evolution.md)
@@ -50,7 +51,7 @@ ht-degree: 22%
 + Configuración del entorno de desarrollo local {#local-development-environment-set-up}
    + [Información general](./local-development-environment/overview.md)
    + [Herramientas de desarrollo](./local-development-environment/development-tools.md)
-   + [Tiempo de ejecución de AEM local](./local-development-environment/aem-runtime.md)
+   + [Tiempo de ejecución local de AEM](./local-development-environment/aem-runtime.md)
    + [Herramientas locales de Dispatcher](./local-development-environment/dispatcher-tools.md)
 + Desarrollo de{#developing}
    + Extensibilidad{#extensibility}
@@ -123,7 +124,7 @@ ht-degree: 22%
    + [Grupos de usuarios de IMS de Adobe](./accessing/adobe-ims-user-groups.md)
    + [Perfiles de producto de IMS de Adobe](./accessing/adobe-ims-product-profiles.md)
    + [AEM usuarios, grupos y permisos](./accessing/aem-users-groups-and-permissions.md)
-   + [Configuración del acceso a AEM guía](./accessing/walk-through.md)
+   + [Configuración del acceso a la guía de AEM](./accessing/walk-through.md)
 + Autenticación{#authentication}
    + [Información general](./authentication/authentication.md)
    + [SAML 2.0](./authentication/saml-2-0.md)
