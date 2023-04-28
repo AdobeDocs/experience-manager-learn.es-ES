@@ -10,13 +10,13 @@ doc-type: Tutorial
 last-substantial-update: 2023-04-26T00:00:00Z
 jira: KT-13156
 thumbnail: KT-13156.jpeg
-source-git-commit: 1597fd87e11a27292b2b8897cf58c1670488b632
+exl-id: b5182d35-ec38-4ffd-ae5a-ade2dd3f856d
+source-git-commit: 63afa03de70d6f8f695d552018344d53a5cec6f5
 workflow-type: tm+mt
-source-wordcount: '1150'
+source-wordcount: '1315'
 ht-degree: 3%
 
 ---
-
 
 # Integración del SDK web del Experience Platform
 
@@ -24,7 +24,7 @@ Aprenda a integrar AEM as a Cloud Service con el Experience Platform [SDK web](h
 
 También aprenderá a recopilar y enviar [WKND: proyecto de Adobe Experience Manager de muestra](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) vista de página de los datos de [Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html).
 
-Después de completar esta configuración, puede implementar Experience Platform y aplicaciones relacionadas como [Real-time Customer Data Platform (Real-Time CDP)](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html?lang=es), [Customer Journey Analytics (CJA)](https://experienceleague.adobe.com/docs/customer-journey-analytics.html) y [Adobe Journey Optimizer (AJO)](https://experienceleague.adobe.com/docs/journey-optimizer.html). Para lograr una mejor participación de los clientes mediante la estandarización de los datos web y de los clientes.
+Después de completar esta configuración, ha implementado una base sólida. Además, está listo para avanzar en la implementación del Experience Platform mediante aplicaciones como [Real-time Customer Data Platform (Real-Time CDP)](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html?lang=es), [Customer Journey Analytics (CJA)](https://experienceleague.adobe.com/docs/customer-journey-analytics.html)y [Adobe Journey Optimizer (AJO)](https://experienceleague.adobe.com/docs/journey-optimizer.html). La implementación avanzada ayuda a impulsar una mejor participación de los clientes mediante la estandarización de los datos web y de los clientes.
 
 ## Requisitos previos
 
@@ -52,6 +52,8 @@ En caso de que no tenga los permisos necesarios, el administrador del sistema ut
 
 El esquema del Modelo de datos de experiencia (XDM) le ayuda a estandarizar los datos de experiencia del cliente. Para recopilar el **WKND pageview** datos, crear un esquema XDM y utilizar los grupos de campos proporcionados por el Adobe `AEP Web SDK ExperienceEvent` para la recopilación de datos web.
 
+Existen sectores genéricos y específicos, por ejemplo: minoristas, servicios financieros, sanidad y más, grupos de modelos de datos de referencia, consulte [Resumen de los modelos de datos del sector](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/industries/overview.html) para obtener más información.
+
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418894?quality=12&learn=on)
 
@@ -76,8 +78,14 @@ Obtenga información sobre cómo crear una propiedad tag (anteriormente conocida
 + Elementos de datos: Los elementos de datos del tipo de código personalizado que extraen nombre de página, sección del sitio y nombre de host utilizando la capa de datos del cliente de Adobe del sitio WKND. Además, el elemento de datos de tipo objeto XDM que cumple con la nueva compilación del esquema WKND XDM creada anteriormente [Crear esquema XDM](#create-xdm-schema---experience-platform) paso a paso.
 + Regla: Enviar datos a Platform Edge Network cada vez que se visite una página web WKND mediante la capa de datos del cliente de Adobe activada `cmp:show` evento.
 
+Al crear y publicar la biblioteca de etiquetas con el **Flujo de publicación**, puede usar la variable **Agregar todos los recursos modificados** botón. Para seleccionar todos los recursos, como Elemento de datos, Regla y Extensiones de etiquetas, en lugar de identificar y seleccionar un recurso individual. Además, durante la fase de desarrollo, puede publicar la biblioteca solo en la _Desarrollo_ entorno y, a continuación, compruébelo a la variable _Prueba_ o _Producción_ entorno.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418896?quality=12&learn=on)
+
+
+>[!TIP]
+>
+>El elemento de datos y el código de evento de regla que se muestran en el vídeo están disponibles para su referencia, **expanda el elemento acordeón siguiente**. Sin embargo, si NO utiliza la capa de datos del cliente de Adobe, debe modificar el código siguiente, pero se seguirá aplicando el concepto de definir los elementos de datos y utilizarlos en la definición de regla.
 
 
 +++ Elemento de datos y código de evento de regla
@@ -207,4 +215,3 @@ Después de configurar el SDK web con AEM, especialmente en el sitio WKND, es ho
 + [Información general sobre Adobe Experience Platform Web SDK y Edge Network](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)
 + [Tutoriales de recopilación de datos](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html)
 + [Información general de Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)
-
