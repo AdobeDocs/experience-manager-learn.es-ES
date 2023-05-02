@@ -8,10 +8,10 @@ role: Developer
 level: Beginner
 exl-id: 8c90fe1c-0c83-4287-9766-08d806b8815a
 last-substantial-update: 2020-02-10T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 14%
+source-wordcount: '213'
+ht-degree: 38%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 14%
 
 Este tutorial le guiará por los pasos necesarios para crear formularios adaptables con varias pestañas. Aprenderá a usar Tablas, Diseño de acordeón y Editor de reglas para crear reglas comerciales.
 
-Los formularios adaptables le permiten crear formularios atractivos, interactivos, dinámicos y adaptables. AEM Forms proporciona una interfaz de usuario intuitiva y componentes integrados para crear y trabajar con formularios adaptables. Puede elegir crear un formulario adaptable basado en un modelo o esquema de formulario o sin un modelo de formulario. Es importante elegir cuidadosamente un modelo del formulario que no solo se adapte a sus necesidades, sino que amplíe sus inversiones y activos de infraestructura existentes.
+Los formularios adaptables le permiten crear formularios atractivos, interactivos, dinámicos y adaptables. AEM Forms proporciona una interfaz de usuario intuitiva y componentes predeterminados para crear y trabajar con formularios adaptables. Puede elegir crear un formulario adaptable en base a un modelo o esquema de formulario o sin un modelo de formulario. Es importante elegir cuidadosamente un modelo del formulario que no solo se adapte a sus necesidades, sino que amplíe sus inversiones y recursos de infraestructura existentes.
 
 Este tutorial no utiliza ningún modelo de formulario en la creación del formulario adaptable.
 
@@ -34,3 +34,7 @@ Necesitará lo siguiente:
 * [Descargue client-libs-and-logo](assets/client-libs-and-logo.zip) y [getting-started-fragment](assets/getting-started-fragment.zip) a su disco duro.
 
 * Importe los archivos zip en AEM mediante [gestor de paquetes ](http://localhost:4502/crx/packmgr/index.jsp)
+
+## Pasos siguientes
+
+[Crear plantilla de formulario adaptable](./create-adaptive-form-template.md)

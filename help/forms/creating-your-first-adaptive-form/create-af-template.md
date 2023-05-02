@@ -7,10 +7,10 @@ role: Developer
 level: Beginner
 kt: 5859
 thumbnail: 37324.jpg
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 3%
+source-wordcount: '135'
+ht-degree: 8%
 
 ---
 
@@ -28,5 +28,8 @@ Consulte [documentación de plantilla de formulario adaptable](https://experienc
 Si es necesario, puede descargar la [plantilla de formulario adaptable](assets/peak-application-template.zip) e importar en AEM usando la variable [gestor de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
 
 
+## Pasos siguientes
+
+[Crear fragmento de formulario adaptable](./create-form-fragment.md)
 
 

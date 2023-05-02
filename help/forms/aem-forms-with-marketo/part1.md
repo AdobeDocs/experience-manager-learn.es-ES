@@ -8,10 +8,10 @@ role: Developer
 level: Experienced
 exl-id: 45047852-4fdb-4702-8a99-faaad7213b61
 last-substantial-update: 2020-03-20T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 0%
+source-wordcount: '374'
+ht-degree: 2%
 
 ---
 
@@ -21,7 +21,7 @@ Marketo, parte de Adobe, proporciona un software de automatización de marketing
 
 Con el Modelo de datos de formulario de AEM Forms, ahora podemos integrar AEM formulario con Marketo sin problemas.
 
-[Obtenga más información sobre el modelo de datos de formulario](https://helpx.adobe.com/experience-manager/6-5/forms/using/data-integration.html)
+[Obtenga más información sobre el modelo de datos de formulario](https://helpx.adobe.com/es/experience-manager/6-5/forms/using/data-integration.html)
 
 Marketo expone una API de REST que permite la ejecución remota de muchas de las capacidades del sistema. Desde la creación de programas hasta la importación masiva de posibles clientes, hay muchas opciones que permiten un control detallado de una instancia de Marketo. Con el Modelo de datos de formulario es bastante sencillo integrar AEM Forms con Marketo.
 
@@ -55,3 +55,7 @@ El primer paso en la integración de Marketo con AEM Forms es obtener las creden
 1. BlankTemplatePackage.zip : es la plantilla de formulario adaptable. Importe esto mediante el administrador de paquetes.
 1. marketo.json : es el archivo swagger que se utiliza para configurar la fuente de datos.
 1. MarketoAndForms.MarketoAndForms.core-1.0-SNAPSHOT.jar : Este es el paquete que realiza la autenticación personalizada. Siéntase libre de usar esto si no puede completar el tutorial o si su paquete no funciona como se espera.
+
+## Pasos siguientes
+
+[Crear autenticación personalizada](./part2.md)

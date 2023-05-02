@@ -8,9 +8,9 @@ role: Developer
 level: Experienced
 last-substantial-update: 2021-06-09T00:00:00Z
 exl-id: 149d2c8c-bf44-4318-bba8-bec7e25da01b
-source-git-commit: 00257efe045eb85fb192bbb47f8e178cf909eb86
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
@@ -143,3 +143,8 @@ El servicio QueryBuilder se utiliza para consultar nodos de tipo nt:file en la c
 
 [Cree el paquete como se describe aquí](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)
 [Asegúrese de que el paquete esté implementado y en estado activo](http://localhost:4502/system/console/bundles)
+
+## Pasos siguientes
+
+Cree su [componente de flujo de trabajo personalizado](./custom-workflow-component.md)
+

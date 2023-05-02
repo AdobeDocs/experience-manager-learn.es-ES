@@ -7,9 +7,9 @@ breadcrumb-title: Tutoriales de AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: 4709035983a5c6705c4e807d877ee71145f48987
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '1808'
+source-wordcount: '1804'
 ht-degree: 4%
 
 ---
@@ -21,15 +21,15 @@ ht-degree: 4%
 + [Prácticas recomendadas a seguir](adaptive-forms/best-practices-adaptive-forms.md)
 + [Configuración de la autenticación OKTA con AEM Author](adaptive-forms/single-sign-on-with-okta.md)
 + Creación de su primer formulario adaptable {#creating-your-first-adaptive-form}
-   + [Introducción y configuración](creating-your-first-adaptive-form/introduction-and-setup.md)
-   + [Crear plantilla de formulario adaptable](creating-your-first-adaptive-form/create-adaptive-form-template.md)
-   + [Crear fragmento de formulario](creating-your-first-adaptive-form/create-form-fragment.md)
-   + [Crear formulario adaptable](creating-your-first-adaptive-form/create-adaptive-form.md)
-   + [Configuración del panel raíz y adición de paneles secundarios](creating-your-first-adaptive-form/configuring-root-panel-and-adding-child-panels.md)
-   + [Adición de componentes al panel Personas](creating-your-first-adaptive-form/adding-components-to-people-panel.md)
-   + [Agregar tabla al panel de ingresos](creating-your-first-adaptive-form/adding-table-to-income-panel.md)
-   + [Configuración del panel de recursos](creating-your-first-adaptive-form/configuring-assets-panel.md)
-   + [Uso de funciones personalizadas y del editor de código](creating-your-first-adaptive-form/using-custom-functions-and-code-editor.md)
+   + [1: Introducción y configuración](creating-your-first-adaptive-form/introduction-and-setup.md)
+   + [2 - Crear plantilla de formulario adaptable](creating-your-first-adaptive-form/create-adaptive-form-template.md)
+   + [3 - Crear fragmento de formulario](creating-your-first-adaptive-form/create-form-fragment.md)
+   + [4 - Crear formulario adaptable](creating-your-first-adaptive-form/create-adaptive-form.md)
+   + [5: Configuración del panel raíz y adición de paneles secundarios](creating-your-first-adaptive-form/configuring-root-panel-and-adding-child-panels.md)
+   + [6: Adición de componentes al panel Personas](creating-your-first-adaptive-form/adding-components-to-people-panel.md)
+   + [7 - Agregar tabla al panel de ingresos](creating-your-first-adaptive-form/adding-table-to-income-panel.md)
+   + [8: Configuración del panel de recursos](creating-your-first-adaptive-form/configuring-assets-panel.md)
+   + [9: Uso de funciones personalizadas y del editor de código](creating-your-first-adaptive-form/using-custom-functions-and-code-editor.md)
 + Gestión de envíos de formularios {#handling-af-form-submissions}
    + [Creación de un flujo de trabajo de revisión](handling-form-submissions/creating-a-review-workflow.md)
    + [Configuración del formulario adaptable al flujo de trabajo de déclencheur](handling-form-submissions/configuring-adaptive-form-to-trigger-workflow.md)
@@ -173,9 +173,9 @@ ht-degree: 4%
    + [Guardar documento en sistema de archivos](custom-workflow-steps/write-payload-document.md)
    + [Guardar datos enviados en una variable de cadena](custom-workflow-steps/save-submitted-data-in-string-variable.md)
 + Componente de flujo de trabajo personalizado{#custom-workflow-component}
-   + [Introducción](custom-workflow-component/introduction.md)
-   + [Escribir código java](custom-workflow-component/custom-process-step-aem-workflow.md)
-   + [Crear componente de flujo de trabajo](custom-workflow-component/custom-workflow-component.md)
+   + [1-Introducción](custom-workflow-component/introduction.md)
+   + [Código java de 2-escritura](custom-workflow-component/custom-process-step-aem-workflow.md)
+   + [3: Crear componente de flujo de trabajo](custom-workflow-component/custom-workflow-component.md)
 + Variables en AEM flujo de trabajo{#variables-aem-workflow}
    + [Introducción: Variables en el flujo de trabajo](variables-aem-workflow/introduction.md)
    + [Variables XML](variables-aem-workflow/part1.md)
@@ -218,11 +218,11 @@ ht-degree: 4%
    + [Parte 4: Unirlo todo](aem-forms-with-marketo/part4.md)
 
 + AEM Forms con Adobe Campaign Standard{#aem-forms-with-adobe-campaign}
-   + [Introducción](aem-forms-with-adobe-campaign/aem-forms-with-campaign-standard-getting-started-tutorial.md)
-   + [Parte 1: Generación de tokens](aem-forms-with-adobe-campaign/partone.md)
-   + [Parte 2: Creación de un perfil ACS en el envío del formulario](aem-forms-with-adobe-campaign/parttwo.md)
-   + [Parte 3: Rellenado previo de formularios utilizando la información de perfil de ACS](aem-forms-with-adobe-campaign/partthree.md)
-   + [Parte 4: Creación de un perfil ACS mediante el modelo de datos de formulario](aem-forms-with-adobe-campaign/partfour.md)
+   + [1 - Introducción](aem-forms-with-adobe-campaign/aem-forms-with-campaign-standard-getting-started-tutorial.md)
+   + [2: Generación de tokens](aem-forms-with-adobe-campaign/partone.md)
+   + [3 - Creación del perfil ACS en el envío del formulario](aem-forms-with-adobe-campaign/parttwo.md)
+   + [4 - Rellenado previo de formularios utilizando la información de perfil de ACS](aem-forms-with-adobe-campaign/partthree.md)
+   + [5: Crear un perfil ACS con el modelo de datos de formulario](aem-forms-with-adobe-campaign/partfour.md)
 
 + Kit de bienvenida {#welcome-kit}
    + [Introducción](welcome-kit/introduction.md)
@@ -231,11 +231,11 @@ ht-degree: 4%
    + [Probar la solución](welcome-kit/testing-the-solution.md)
 
 + Reaccione la aplicación con Forms y Acrobat Sign {#react-ic-sign}
-   + [1-Introducción](react-ic-sign/introduction.md)
-   + [2-Generar documento](react-ic-sign/create-ic-document.md)
-   + [Envoltura de la API de Acrobat Sign 3](react-ic-sign/wrapper-sign-api.md)
-   + [4 Generar widget de firma](react-ic-sign/create-servlet-to-expose-endpoint.md)
-   + [5: Implementar los recursos de ejemplo](react-ic-sign/deploy-assets-on-your-server.md)
+   + [1 - Introducción](react-ic-sign/introduction.md)
+   + [2 - Generar documento](react-ic-sign/create-ic-document.md)
+   + [3 - Envoltura de la API de Acrobat Sign](react-ic-sign/wrapper-sign-api.md)
+   + [4 - Generar widget de firma](react-ic-sign/create-servlet-to-expose-endpoint.md)
+   + [5 - Implementar los recursos de ejemplo](react-ic-sign/deploy-assets-on-your-server.md)
 + Document Services {#document-services}
    + [Tipos de PDF forms](document-services/pdf-forms-and-documents.md)
    + [Incrustar pdf en forma adaptable](document-services/embed-pdf-inline.md)

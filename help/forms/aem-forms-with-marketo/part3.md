@@ -7,19 +7,19 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 7096340b-8ccf-4f5e-b264-9157232e96ba
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 1%
+source-wordcount: '386'
+ht-degree: 9%
 
 ---
 
 # Configurar fuentes de datos
 
-La integración de datos de AEM Forms le permite configurar y conectarse a fuentes de datos diferentes. Los siguientes tipos son compatibles de serie. Sin embargo, con un poco de personalización, también puede integrarse con otras fuentes de datos.
+La integración de datos de AEM Forms le permite configurar y conectarse a fuentes de datos diferentes. Los siguientes tipos son compatibles de forma predeterminada. Sin embargo, con un poco de personalización, también puede integrarse con otras fuentes de datos.
 
 1. Bases de datos relacionales: MySQL, Microsoft SQL Server, IBM DB2 y RDBMS de Oracle
-1. AEM perfil de usuario
+1. Perfil de usuario de AEM
 1. Servicios web RESTful
 1. Servicios web basados en SOAP
 1. Servicios OData
@@ -49,3 +49,8 @@ Apunte el navegador a [integraciones de datos .](http://localhost:4502/aem/forms
 1. Seleccione el único servicio que aparece en la lista y haga clic en Test Service
 1. Proporcione un leadId válido y haga clic en Probar. Si todo va bien, debería recuperar los detalles del posible cliente como se muestra en la captura de pantalla siguiente
    ![testresults](assets/testresults.jfif)
+
+## Pasos siguientes
+
+[Unificarlo todo para pruebas](./part4.md)
+

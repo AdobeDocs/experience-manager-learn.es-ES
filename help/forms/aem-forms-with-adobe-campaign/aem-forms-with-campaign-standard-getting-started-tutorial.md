@@ -8,9 +8,9 @@ role: Developer
 level: Experienced
 exl-id: e028837b-13d8-4058-ac25-ed095f49524c
 last-substantial-update: 2020-03-20T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '258'
 ht-degree: 0%
 
 ---
@@ -38,3 +38,7 @@ Para empezar, siga las siguientes instrucciones
 * [Crear un usuario de servicio como se menciona en este artículo](/help/forms/adaptive-forms/service-user-tutorial-develop.md). Asegúrese de implementar el paquete OSGi asociado con el artículo.
 * Guarde la clave privada ACS en etc/key/campaign/private.key. Debe crear una carpeta denominada campaign en etc/key.
 * [Proporcionar acceso de lectura a la carpeta de campañas al usuario de servicios &quot;data&quot;.](http://localhost:4502/useradmin)
+
+## Pasos siguientes
+
+[Generar JWT y token de acceso](partone.md)
