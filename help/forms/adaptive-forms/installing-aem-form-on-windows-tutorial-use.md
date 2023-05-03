@@ -3,16 +3,16 @@ title: Pasos simplificados para instalar AEM Forms en Windows
 description: Pasos rápidos y sencillos para instalar AEM Forms en windows
 feature: Adaptive Forms
 type: Tutorial
-version: 6.4,6.5
+version: 6.5
 topic: Development
 role: Admin
 level: Beginner
 exl-id: 80288765-0b51-44a9-95d3-3bdb2da38615
 last-substantial-update: 2020-06-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 6%
+source-wordcount: '574'
+ht-degree: 7%
 
 ---
 
@@ -70,7 +70,7 @@ Aunque recomendamos seguir la [documentación oficial](https://helpx.adobe.com/e
    * **sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.&#42;** **sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.&#42;**
 * Estas dos propiedades son necesarias para que document services funcione
 * Guarde el archivo sling.properties
-* [Descargue el paquete de complementos de formularios apropiado](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en)
+* [Descargue el paquete de complementos de formularios apropiado](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es)
 * Instalación del complemento de formularios en el paquete mediante [gestor de paquetes.](http://localhost:4502/crx/packmgr/index.jsp)
 * Después de instalar add on package, es necesario seguir los siguientes pasos
 
@@ -82,9 +82,9 @@ Aunque recomendamos seguir la [documentación oficial](https://helpx.adobe.com/e
 ## paquete sun.util.calendar a la lista de permitidos
 
 1. Abra la consola web Felix en su [ventana del explorador](http://localhost:4502/system/console/configMgr)
-2. Busque y abra la Configuración de Deserialization Firewall: `com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
+2. Busque y abra Deserialización de la configuración de Firewall: `com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
 3. Agregar `sun.util.calendar` como nueva entrada en `com.adobe.cq.deserfw.impl.DeserializationFirewallImpl.firewall.deserialization.whitelist.name`
 4. Guarde los cambios.
 
-Felicitaciones!!! Ya ha instalado y configurado AEM Forms en su sistema.
-Según sus necesidades, puede configurar  [Extensiones de Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html?lang=en) o [ PDFG](https://experienceleague.adobe.com/docs/experience-manager-64/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=es) en el servidor
+¡¡¡Felicidades!!! Ya ha instalado y configurado AEM Forms en su sistema.
+Según sus necesidades, puede configurar  [Extensiones de Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) o [ PDFG](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html) en el servidor

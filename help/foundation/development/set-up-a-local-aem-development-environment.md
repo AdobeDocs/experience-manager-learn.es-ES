@@ -1,7 +1,7 @@
 ---
 title: Configuración de un entorno de desarrollo de AEM local
 description: Aprenda a configurar un entorno de desarrollo local para Experience Manager. Familiarícese con la instalación local, Apache Maven, los entornos de desarrollo integrados, y la depuración y solución de problemas. Utilice Eclipse IDE, CRXDE-Lite, Visual Studio Code e IntelliJ.
-version: 6.4, 6.5
+version: 6.5
 feature: Developer Tools
 topics: development
 activity: develop
@@ -12,7 +12,7 @@ level: Beginner
 exl-id: 58851624-71c9-4745-aaaf-305acf6ccb14
 last-substantial-update: 2022-07-20T00:00:00Z
 thumbnail: aem-local-dev-env.jpg
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
 workflow-type: tm+mt
 source-wordcount: '2603'
 ht-degree: 2%
@@ -138,7 +138,7 @@ Cuando utilice un IDE, asegúrese de comprobar `classic` en la ficha Maven Profi
 
 ### [!DNL Eclipse] IDE
 
-La variable **[[!DNL Eclipse] IDE](https://www.eclipse.org/ide/)** es uno de los IDE más populares para el desarrollo de Java™, en gran parte porque es de código abierto y ***gratuito***! Adobe proporciona un complemento, **[[!DNL AEM Developer Tools]](https://experienceleague.adobe.com/docs/experience-manager-64/developing/devtools/aem-eclipse.html)**, para [!DNL Eclipse] para permitir un desarrollo más sencillo con una buena GUI para sincronizar el código con una instancia de AEM local. La variable [!DNL Eclipse] Se recomienda IDE para desarrolladores nuevos para AEM en gran parte debido a la compatibilidad con GUI de [!DNL AEM Developer Tools].
+La variable **[[!DNL Eclipse] IDE](https://www.eclipse.org/ide/)** es uno de los IDE más populares para el desarrollo de Java™, en gran parte porque es de código abierto y ***gratuito***! Adobe proporciona un complemento, **[[!DNL AEM Developer Tools]](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html)**, para [!DNL Eclipse] para permitir un desarrollo más sencillo con una buena GUI para sincronizar el código con una instancia de AEM local. La variable [!DNL Eclipse] Se recomienda IDE para desarrolladores nuevos para AEM en gran parte debido a la compatibilidad con GUI de [!DNL AEM Developer Tools].
 
 #### Instalación y configuración
 
@@ -194,7 +194,7 @@ La variable **[IntelliJ IDEA](https://www.jetbrains.com/idea/)** es un potente I
 
 ### [!DNL CRXDE Lite]
 
-[CRXDE Lite](https://experienceleague.adobe.com/docs/experience-manager-64/developing/devtools/developing-with-crxde-lite.html) es una vista basada en explorador del repositorio de AEM. [!DNL CRXDE Lite] está incrustado en AEM y permite a un desarrollador realizar tareas de desarrollo estándar como editar archivos, definir componentes, cuadros de diálogo y plantillas. [!DNL CRXDE Lite] es ***not*** pretende ser un entorno de desarrollo completo, pero es eficaz como herramienta de depuración. [!DNL CRXDE Lite] es útil para ampliar o simplemente comprender el código de producto fuera de la base de código. [!DNL CRXDE Lite] proporciona una vista poderosa del repositorio y una forma de probar y administrar los permisos de forma eficaz.
+[CRXDE Lite](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/developing-with-crxde-lite.html) es una vista basada en explorador del repositorio de AEM. [!DNL CRXDE Lite] está incrustado en AEM y permite a un desarrollador realizar tareas de desarrollo estándar como editar archivos, definir componentes, cuadros de diálogo y plantillas. [!DNL CRXDE Lite] es ***not*** pretende ser un entorno de desarrollo completo, pero es eficaz como herramienta de depuración. [!DNL CRXDE Lite] es útil para ampliar o simplemente comprender el código de producto fuera de la base de código. [!DNL CRXDE Lite] proporciona una vista poderosa del repositorio y una forma de probar y administrar los permisos de forma eficaz.
 
 [!DNL CRXDE Lite] debe usarse con otros IDE para probar y depurar código, pero nunca como la herramienta de desarrollo principal. Tiene compatibilidad con sintaxis limitada, no capacidades de autocompletar y una integración limitada con sistemas de administración de control de código fuente.
 

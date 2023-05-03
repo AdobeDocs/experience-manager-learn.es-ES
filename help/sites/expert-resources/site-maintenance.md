@@ -4,13 +4,13 @@ seo-title: Your Routine Site Maintenance Guide
 description: Ya sea administrador, autor o desarrollador, el mantenimiento del sitio afecta a todos los aspectos de la instancia de AEM Sites. Utilice esta guía para asegurarse de que la estrategia está configurada para el éxito.
 seo-description: Whether you're an admin, author, or developer, site maintenance touches every aspect of your AEM Sites instance. Use this guide to ensure your strategy is set up for success.
 audience: author, marketer, developer
-source-git-commit: d545e7bb5e937959e2ede2b3c1ecfc312df5a044
+exl-id: 37ee3234-f91c-4f0a-b0b7-b9167e7847a9
+source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
 workflow-type: tm+mt
-source-wordcount: '1094'
+source-wordcount: '1084'
 ht-degree: 5%
 
 ---
-
 
 # Consejos y trucos para el mantenimiento del sitio
 
@@ -44,19 +44,19 @@ Los índices permiten que las consultas se ejecuten lo más rápido posible, lo 
 
 Cada actualización del repositorio crea una nueva revisión de contenido. Como resultado, con cada actualización, el tamaño del repositorio crece. Para evitar el crecimiento incontrolado del repositorio, es necesario limpiar las viejas revisiones para liberar recursos de disco.
 
-#### [Limpieza de binarios de Lucene](https://experienceleague.adobe.com/docs/experience-manager-64/administering/operations/operations-dashboard.html?lang=en#automated-maintenance-tasks)
+#### [Limpieza de binarios de Lucene](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/operations-dashboard.html#automated-maintenance-tasks)
 
 Purgue los binarios de lucene y reduzca el requisito de tamaño del almacén de datos en ejecución.
 
-#### [Basura del almacén de datos](https://experienceleague.adobe.com/docs/experience-manager-64/administering/operations/data-store-garbage-collection.html?lang=en)
+#### [Basura del almacén de datos](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html)
 
 Cuando se elimina un recurso de AEM, la referencia al registro del almacén de datos subyacente se puede eliminar de la jerarquía de nodos, pero el registro del almacén de datos en sí permanece. Este registro de almacén de datos sin referencia se convierte en &quot;basura&quot; que no necesita retenerse. En los casos en los que existen varios activos sin referencia, es beneficioso deshacerse de ellos, conservar el espacio, optimizar el backup y el performance de mantenimiento del filesystem.
 
-#### [Depuración de flujo de trabajo](https://experienceleague.adobe.com/docs/experience-manager-64/administering/operations/workflows-administering.html?lang=en)
+#### [Depuración de flujo de trabajo](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html?lang=es)
 
 Al minimizar el número de instancias de flujo de trabajo, aumenta el rendimiento del motor de flujo de trabajo, por lo que puede depurar con regularidad las instancias de flujo de trabajo completadas o en ejecución desde el repositorio.
 
-#### [Mantenimiento del registro de auditoría](https://experienceleague.adobe.com/docs/experience-manager-64/administering/operations/operations-audit-log.html?lang=en)
+#### [Mantenimiento del registro de auditoría](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/operations-audit-log.html)
 
 Los eventos de AEM que cumplen los requisitos para el registro de auditoría generan una gran cantidad de datos archivados. Estos datos pueden crecer rápidamente con el tiempo debido a las réplicas, cargas de recursos y otras actividades del sistema.
 
@@ -80,7 +80,7 @@ Los sistemas de estilos permiten que los componentes principales, e incluso los 
 
 Los lanzamientos permiten que el trabajo se complete para una nueva promoción, venta o implementación de sitio web sin afectar a las páginas implementadas actualmente. Además, se pueden programar para que se activen automáticamente, sin asistencia ni supervisión, lo que permite a los autores hacer el trabajo de la semana que viene (o del trimestre siguiente) hoy y no apresurarse en el desarrollo de la página el día antes de que se ponga en marcha - ¡es realmente el regalo de TIME!)
 
-### [Fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-64/assets/fragments/content-fragments.html?lang=en)
+### [Fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments.html)
 
 Los fragmentos de contenido son &quot;fragmentos&quot; personalizables de información que se pueden reutilizar fácilmente en todo el sitio. Si necesitas un cambio, solo cambias el fragmento original y la actualización se ve en todas partes donde se usa - inmediatamente!
 

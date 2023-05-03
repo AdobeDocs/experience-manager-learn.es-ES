@@ -8,13 +8,13 @@ role: Developer
 level: Intermediate
 kt: 10900
 thumbnail: kt-10900.jpeg
-source-git-commit: f02d5e01388ee61228254951b05c37c336423348
+exl-id: e055b356-dd26-4366-8608-5a0ccf5b4c49
+source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
 workflow-type: tm+mt
 source-wordcount: '586'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
-
 
 # Cómo utilizar AEM componentes editables React v2
 
@@ -33,7 +33,7 @@ Para obtener más información y ejemplos de código para AEM React Editable Com
 
 ## AEM páginas
 
-AEM los componentes editables React funcionan tanto con SPA Editor como con aplicaciones React de SPA remoto. El contenido que rellena los componentes editables de React debe exponerse a través de páginas AEM que amplíen el [Componente SPA página](https://experienceleague.adobe.com/docs/experience-manager-64/developing/headless/spas/spa-page-component.html). AEM componentes, que se asignan a componentes de React editables, deben implementar AEM [Marco de exportación de componentes](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html) - como [Componentes principales de AEM WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es).
+AEM los componentes editables React funcionan tanto con SPA Editor como con aplicaciones React de SPA remoto. El contenido que rellena los componentes editables de React debe exponerse a través de páginas AEM que amplíen el [Componente SPA página](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-page-component.html). AEM componentes, que se asignan a componentes de React editables, deben implementar AEM [Marco de exportación de componentes](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html) - como [Componentes principales de AEM WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es).
 
 
 ## Dependencias
@@ -231,6 +231,3 @@ const EditableEmbedding = (props) => {
 // Export as default the mapped EditableEmbedding
 export default MapTo("wknd-examples/components/embedding")(EditableEmbedding);
 ```
-
-
-

@@ -6,7 +6,7 @@ topics: development
 audience: developer
 doc-type: article
 activity: implement
-version: 6.4,6.5
+version: 6.5
 kt: 4419
 thumbnail: kt-4419.jpg
 topic: Development
@@ -14,16 +14,16 @@ role: User
 level: Beginner
 exl-id: 67a01c41-d284-4518-adb5-21702e22ccfa
 last-substantial-update: 2019-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
 workflow-type: tm+mt
 source-wordcount: '481'
-ht-degree: 5%
+ht-degree: 12%
 
 ---
 
 # Creación de formularios de HTML5
 
-HTML5 forms es una nueva funcionalidad en Adobe Experience Manager que ofrece la representación de plantillas de formulario XFA (xdp) en formato HTML5. Esta capacidad permite procesar formularios tanto en dispositivos móviles como en el explorador de un ordenador de sobremesa no compatible con PDF basados en XFA. Los formularios HTML5 no solo admiten las funciones existentes de las plantillas de formulario XFA, sino que también añaden nuevas funciones, como la firma de anotaciones, para dispositivos móviles.
+HTML5 forms es una nueva funcionalidad en Adobe Experience Manager que ofrece la representación de plantillas de formulario XFA (xdp) en formato HTML5. Esta capacidad permite procesar formularios tanto en dispositivos móviles como en exploradores de equipos de escritorio no compatibles con PDF basados en XFA. Los formularios HTML5 no solo son compatibles con las capacidades existentes de las plantillas de formulario XFA, sino que también agregan capacidades nuevas para dispositivos móviles, como la firma manuscrita.
 
 ## Requisitos previos
 
@@ -59,6 +59,6 @@ Las propiedades avanzadas de la plantilla xdp permiten especificar la fecha de p
 
 **Dirección URL de envío** - Esta es la dirección URL que administrará el envío del formulario de HTML5. En la siguiente lección trataremos esto. Si no se especifica una dirección URL de envío, se invoca el controlador de envío predeterminado, que devuelve los datos del formulario al explorador.
 
-**Perfil de procesamiento del HTML** - Los formularios HTML5 tienen la noción de Perfiles que se exponen como extremos de REST para permitir el procesamiento móvil de plantillas de formulario. La mayoría de las veces el perfil de procesamiento predeterminado debe ser suficiente para procesar el formulario. Si el perfil de renderización predeterminado no se adapta a sus necesidades, [perfil personalizado](https://experienceleague.adobe.com/docs/experience-manager-64/forms/html5-forms/custom-profile.html) se puede crear y asociar al formulario.
+**Perfil de procesamiento del HTML** - Los formularios HTML5 tienen la noción de Perfiles que se exponen como extremos de REST para permitir el procesamiento móvil de plantillas de formulario. La mayoría de las veces el perfil de procesamiento predeterminado debe ser suficiente para procesar el formulario. Si el perfil de renderización predeterminado no se adapta a sus necesidades, [perfil personalizado](https://experienceleague.adobe.com/docs/experience-manager-65/forms/html5-forms/custom-profile.html) se puede crear y asociar al formulario.
 
 **Servicio de precarga** - El servicio de cumplimentación previa suele utilizarse para rellenar el formulario con datos recuperados de un origen de datos de servidor.
