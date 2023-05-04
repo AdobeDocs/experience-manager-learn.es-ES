@@ -12,10 +12,10 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 0b141b37-6041-4f87-bd50-dade8c0fee7d
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 2%
+source-wordcount: '311'
+ht-degree: 4%
 
 ---
 
@@ -88,10 +88,14 @@ return isMarried(inboxItem);
 * Agregue la columna Casado a la bandeja de entrada y guarde los cambios
 * [Vaya a la interfaz de usuario de FormsAndDocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * [Importación del formulario de ejemplo](assets/snap-form.zip) seleccionando _Carga de archivo_ from _Crear_ menú
-* [Obtener una vista previa del formulario](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
+* [Vista previa del formulario](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
 * Seleccione el _estado civil_ y enviar el formulario
    [ver bandeja de entrada](http://localhost:4502/aem/inbox)
 
 Si se envía el formulario, se déclencheur el flujo de trabajo y se asigna una tarea al usuario &quot;admin&quot;. Debería ver un valor debajo de la columna Casado como se muestra en esta captura de pantalla.
 
 ![mary-column](assets/married-column.PNG)
+
+## Pasos siguientes
+
+[Mostrar columna casada](./use-sightly-template.md)

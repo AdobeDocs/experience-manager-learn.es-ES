@@ -1,31 +1,31 @@
 ---
 title: Paso de proceso personalizado para rellenar variables de lista
 description: Paso de proceso personalizado para rellenar variables de lista de tipo documento y cadena
-feature: Flujo de trabajo
-topic: Desarrollo
+feature: Workflow
+topic: Development
 version: 6.5
 role: Developer
 level: Beginner
 kt: kt-8063
-source-git-commit: 540e11c0861eacc795122328b2359c7db6378aec
+exl-id: 09d9eabf-4815-4159-b6c7-cf2ebc8a2df5
+source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '167'
 ht-degree: 1%
 
 ---
 
-
 # Paso de proceso personalizado
 
 
-Se ha implementado un paso de proceso personalizado para rellenar las variables de flujo de trabajo de la lista de matriz. Si no está familiarizado con la creación de un paquete OSGi, [siga estas instrucciones](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)
+Se ha implementado un paso de proceso personalizado para rellenar variables de flujo de trabajo de tipo Array List con los archivos adjuntos y los nombres de archivos adjuntos. Esta variable se utiliza en el componente de flujo de trabajo Enviar correo electrónico . Si no está familiarizado con la creación de un paquete OSGi, [siga estas instrucciones](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)
 
 El código del paso de proceso personalizado hace lo siguiente
 
 * Consulte todos los archivos adjuntos de formularios adaptables de la carpeta de carga útil. El nombre de la carpeta se pasa como argumento de proceso al paso de proceso.
 
-* Rellenar la variable de flujo de trabajo `listOfDocuments`
-* Rellenar la variable de flujo de trabajo `attachmentNames`
+* Rellenar `listOfDocuments` variable de flujo de trabajo
+* Rellenar `attachmentNames` variable de flujo de trabajo
 * Establezca el valor de la variable de flujo de trabajo (`no_of_attachments`)
 
 ```java
@@ -113,5 +113,9 @@ public class PopulateListOfDocuments implements WorkflowProcess {
 >
 > Asegúrese de que tiene las siguientes variables definidas en el flujo de trabajo para que el código funcione
 > *listOfDocuments* - variable de tipo ArrayList of Documents
-> *attachmentNames* - variable de tipo ArrayList de String
-> *no_of_attachment*: variable de tipo Double
+> *attachmentNames* - variable de tipo ArrayList of String
+> *no_of_attachment* - variable de tipo Double
+
+## Pasos siguientes
+
+[Probar la solución en el sistema local](./test.md)

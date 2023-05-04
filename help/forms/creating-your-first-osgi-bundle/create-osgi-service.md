@@ -8,10 +8,10 @@ role: Developer
 level: Beginner
 exl-id: 2f15782e-b60d-40c6-b95b-6c7aa8290691
 last-substantial-update: 2021-04-23T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 2%
+source-wordcount: '354'
+ht-degree: 3%
 
 ---
 
@@ -85,13 +85,13 @@ La variable `@Reference` la anotación forma parte de los servicios declarativos
 ## Generar e implementar el paquete
 
 * Apertura **ventana del símbolo del sistema**
-* Vaya a `c:\aemformsbundles\mysite\core`
+* Navegue hasta `c:\aemformsbundles\mysite\core`
 * Ejecutar el comando `mvn clean install -PautoInstallBundle`
 * El comando anterior creará e implementará automáticamente el paquete en su instancia de AEM que se ejecuta en localhost:4502
 
 El paquete también estará disponible en la siguiente ubicación `C:\AEMFormsBundles\mysite\core\target`. El paquete también se puede implementar en AEM usando la variable [Consola web Felix.](http://localhost:4502/system/console/bundles)
 
-## Uso del servicio
+## Usar el servicio
 
 Ahora puede utilizar el servicio en su página JSP. El siguiente fragmento de código muestra cómo obtener acceso al servicio y utilizar los métodos implementados por el servicio
 
@@ -110,3 +110,8 @@ Importe e instale el paquete en AEM mediante el [gestor de paquetes](http://loca
 
 Utilice postman para realizar una llamada al POST y proporcione los parámetros de entrada como se muestra en la captura de pantalla siguiente
 ![postman](assets/test-service-postman.JPG)
+
+## Pasos siguientes
+
+[Crear Servlet Sling](./create-servlet.md)
+

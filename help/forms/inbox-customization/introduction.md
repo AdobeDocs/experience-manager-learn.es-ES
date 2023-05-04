@@ -1,5 +1,5 @@
 ---
-title: Bandeja de entrada AEM
+title: Bandeja de entrada de AEM
 description: Personalización de la bandeja de entrada añadiendo nuevas columnas basadas en datos de flujo de trabajo
 feature: Adaptive Forms
 topics: development
@@ -13,14 +13,14 @@ role: Developer
 level: Experienced
 exl-id: 3e1d86ab-e0c4-45d4-b998-75a44a7e4a3f
 last-substantial-update: 2020-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '206'
 ht-degree: 29%
 
 ---
 
-# Bandeja de entrada AEM
+# Bandeja de entrada de AEM
 
 AEM Bandeja de entrada consolida las notificaciones y tareas de varios componentes de AEM, incluidos los flujos de trabajo de Forms. Cuando se activa un flujo de trabajo de Forms que contiene una Etapa de tarea de asignación, la aplicación asociada aparece como una tarea en la bandeja de entrada del usuario asignado.
 
@@ -45,7 +45,7 @@ En la interfaz de usuario de personalización de columnas, puede realizar las si
 * Reordenar las columnas
 * Cambiar el nombre de las columnas
 
-## Personalización de promoción de la marca
+## Personalizar la promoción de la marca
 
 En la personalización de la marca puede hacer lo siguiente
 
@@ -55,3 +55,7 @@ En la personalización de la marca puede hacer lo siguiente
 * Ocultar opciones de navegación
 
 ![promoción de la marca en la bandeja de entrada](assets/branding-customization.PNG)
+
+## Pasos siguientes
+
+[Agregar columna Casada](./add-married-column.md)

@@ -8,10 +8,10 @@ role: Developer
 level: Beginner
 exl-id: 72728ed7-80a2-48b5-ae7f-d744db8a524d
 last-substantial-update: 2021-04-23T00:00:00Z
-source-git-commit: 13b4aa19000690c4d48cde6da59534518bbd09da
+source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 0%
+source-wordcount: '213'
+ht-degree: 1%
 
 ---
 
@@ -90,3 +90,8 @@ Apunte el navegador a [URL de resolución de servlet](http://localhost:4502/syst
 ## Probar el servlet con Postman
 
 ![Probar el servlet con Postman](assets/test-servlet-postman.JPG)
+
+## Pasos siguientes
+
+[Incluir jar de terceros](./include-third-party-jars.md)
+

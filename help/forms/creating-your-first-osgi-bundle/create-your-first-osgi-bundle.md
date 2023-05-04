@@ -8,9 +8,9 @@ role: Developer
 level: Beginner
 exl-id: 307cc3b2-87e5-4429-8f21-5266cf03b78f
 last-substantial-update: 2021-04-23T00:00:00Z
-source-git-commit: 381812397fa7d15f6ee34ef85ddf0aa0acc0af42
+source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '672'
 ht-degree: 1%
 
 ---
@@ -115,7 +115,12 @@ Debe incluir el sdk del cliente AEMFD en el proyecto para aprovechar los distint
 Para crear el proyecto, siga los siguientes pasos:
 
 * Apertura **ventana del símbolo del sistema**
-* Vaya a `c:\aemformsbundles\mysite\core`
+* Navegue hasta `c:\aemformsbundles\mysite\core`
 * Ejecutar el comando `mvn clean install -PautoInstallBundle`
 El comando anterior crea e instala el paquete en el servidor de AEM que se ejecuta en `http://localhost:4502`. El paquete también está disponible en el sistema de archivos en
    `C:\AEMFormsBundles\mysite\core\target` y se pueden implementar utilizando [Consola web Felix](http://localhost:4502/system/console/bundles)
+
+## Pasos siguientes
+
+[Creación del servicio OSGi](./create-osgi-service.md)
+
