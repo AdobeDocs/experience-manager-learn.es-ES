@@ -5,9 +5,9 @@ breadcrumb-title: Tutoriales de AEM as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: e9422231b8237abe7e2e3703764b2fdc253f33d3
+source-git-commit: b3cc9c4fbd36cdf5be46e4546a174fea0c8da05c
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '938'
 ht-degree: 24%
 
 ---
@@ -27,7 +27,9 @@ ht-degree: 24%
       + [Experience Manager - Modelos y arquetipos de administración y dotación de personal](./introduction/experience-manager-governance-and-staffing-models.md)
       + [Cómo impulsar la velocidad de contenido con Adobe Experience Manager](./introduction/drive-content-velocity-for-sites.md)
       + [Acelerar la velocidad de contenido con sistemas de estilos AEM](./introduction/accelerate-content-velocity-aem.md)
-+ [Integraciones de Experience Cloud](./experience-cloud/integrations.md)
++ Integraciones de Experience Cloud{#integrations}
+   + [Integraciones](./integrations/experience-cloud.md)
+   + [Adobe Target](./integrations/target.md)
 + Tecnología subyacente {#underlying-technology}
    + [Arquitectura AEM](./underlying-technology/introduction-architecture.md)
    + [OSGi](./underlying-technology/introduction-osgi.md)
@@ -258,7 +260,7 @@ ht-degree: 24%
       + [Crear aplicación conectada](./forms/integrate-with-salesforce/create-connected-app.md)
       + [Crear archivo de intercambio](./forms/integrate-with-salesforce/describe-rest-api.md)
       + [Crear fuente de datos](./forms/integrate-with-salesforce/create-data-source.md)
-      + [Crear un modelo de datos de formulario](./forms/integrate-with-salesforce/create-form-data-model.md)
+      + [Creación de un modelo de datos de formulario](./forms/integrate-with-salesforce/create-form-data-model.md)
       + [Envío de formulario de prueba](./forms/integrate-with-salesforce/create-lead-submitting-form.md)
       + [Evento de clic de prueba](./forms/integrate-with-salesforce/create-lead-click-event.md)
    + Almacene los envíos de formularios en una unidad y un punto de uso compartido{#one-drive}
