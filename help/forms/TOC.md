@@ -7,7 +7,7 @@ breadcrumb-title: Tutoriales de AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
 source-wordcount: '1804'
 ht-degree: 3%
@@ -127,17 +127,17 @@ ht-degree: 3%
    + [3 - Archivos adjuntos de formulario de correo electrónico](zipping-form-attachments/populating-list-of-documents.md)
    + [4 - Probar la solución](zipping-form-attachments/test.md)
 + Almacenamiento y recuperación de formularios adaptables{#store-and-retrieve-af-with-2fa}
-   + [Introducción](store-and-retrieve-af-with-2fa/introduction.md)
-   + [Configurar fuentes de datos](store-and-retrieve-af-with-2fa/configure-data-source.md)
-   + [Almacenar archivos adjuntos de formulario](store-and-retrieve-af-with-2fa/store-form-attachments.md)
-   + [Almacenar datos de formulario](store-and-retrieve-af-with-2fa/store-form-data.md)
-   + [Crear servlet](store-and-retrieve-af-with-2fa/create-servlet.md)
-   + [Procesar formulario con datos guardados](store-and-retrieve-af-with-2fa/retrieve-saved-form.md)
-   + [Crear lista de clientes](store-and-retrieve-af-with-2fa/create-client-lib.md)
-   + [Integración con el servicio OTP](store-and-retrieve-af-with-2fa/verify-users-with-otp.md)
-   + [Crear el formulario principal](store-and-retrieve-af-with-2fa/create-the-main-adaptive-form.md)
-   + [Crear el formulario MyAccount](store-and-retrieve-af-with-2fa/create-the-myaccount-form.md)
-   + [Implementación del ejemplo](store-and-retrieve-af-with-2fa/deploy-this-sample.md)
+   + [1 - Introducción](store-and-retrieve-af-with-2fa/introduction.md)
+   + [2: Configurar la fuente de datos](store-and-retrieve-af-with-2fa/configure-data-source.md)
+   + [3 - Almacenar archivos adjuntos de formulario](store-and-retrieve-af-with-2fa/store-form-attachments.md)
+   + [4: Almacenar datos de formulario](store-and-retrieve-af-with-2fa/store-form-data.md)
+   + [5 - Crear servlet](store-and-retrieve-af-with-2fa/create-servlet.md)
+   + [6 - Procesar formulario con datos guardados](store-and-retrieve-af-with-2fa/retrieve-saved-form.md)
+   + [7 - Crear biblioteca de cliente](store-and-retrieve-af-with-2fa/create-client-lib.md)
+   + [8 - Integración con el servicio OTP](store-and-retrieve-af-with-2fa/verify-users-with-otp.md)
+   + [9 - Crear el formulario principal](store-and-retrieve-af-with-2fa/create-the-main-adaptive-form.md)
+   + [10 - Crear el formulario Mi cuenta](store-and-retrieve-af-with-2fa/create-the-myaccount-form.md)
+   + [11 - Implementar la muestra](store-and-retrieve-af-with-2fa/deploy-this-sample.md)
 + Exportación de datos enviados en formato CSV{#export-submitted-data-csv-format}
    + [Exportar datos enviados](export-submitted-data-csv-format/export-submitted-data-csv.md)
 + Formularios HTML5{#html5-forms}
@@ -157,17 +157,17 @@ ht-degree: 3%
    + [Configurar formulario adaptable convertido](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
    + [Uso de plantillas XDP con Acrobat Sign](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
 + Firmar varios Forms{#sign-multiple-documents}
-   + [Introducción](sign-multiple-documents/introduction.md)
-   + [Configurar el origen de datos](sign-multiple-documents/configure-data-source.md)
-   + [Creación del servicio OSGi](sign-multiple-documents/create-osgi-service.md)
-   + [Crear flujo de trabajo principal](sign-multiple-documents/create-main-workflow.md)
-   + [Actualizar el flujo de trabajo del estado de firma](sign-multiple-documents/update-signature-status.md)
-   + [Personalizar componente de resumen](sign-multiple-documents/customize-summary-component.md)
-   + [Crear biblioteca de cliente](sign-multiple-documents/create-client-lib.md)
-   + [Crear plantilla de formulario](sign-multiple-documents/create-af-template.md)
-   + [Crear formulario inicial](sign-multiple-documents/create-initial-form.md)
-   + [Creación de formularios para firmar](sign-multiple-documents/create-forms-for-signing.md)
-   + [Prueba de la solución](sign-multiple-documents/testing-and-trouble-shooting.md)
+   + [1 - Introducción](sign-multiple-documents/introduction.md)
+   + [2: Configurar la fuente de datos](sign-multiple-documents/configure-data-source.md)
+   + [3 - Crear el servicio OSGi](sign-multiple-documents/create-osgi-service.md)
+   + [4: Crear flujo de trabajo principal](sign-multiple-documents/create-main-workflow.md)
+   + [5 - Actualizar el flujo de trabajo del estado de la firma](sign-multiple-documents/update-signature-status.md)
+   + [6: Personalizar componente de resumen](sign-multiple-documents/customize-summary-component.md)
+   + [7 - Crear biblioteca de cliente](sign-multiple-documents/create-client-lib.md)
+   + [8 - Crear plantilla de formulario](sign-multiple-documents/create-af-template.md)
+   + [9 - Crear formulario inicial](sign-multiple-documents/create-initial-form.md)
+   + [10 - Crear formularios para firmar](sign-multiple-documents/create-forms-for-signing.md)
+   + [11 - Prueba de la solución](sign-multiple-documents/testing-and-trouble-shooting.md)
 + Pasos personalizados del flujo de trabajo{#custom-workflow-steps}
    + [Extraer nodo del documento xml](custom-workflow-steps/extract-xml-node.md)
    + [Guardar documento en sistema de archivos](custom-workflow-steps/write-payload-document.md)
@@ -185,9 +185,9 @@ ht-degree: 3%
    + [Variable de modelo de datos de formulario](variables-aem-workflow/form-data-model.md)
    + [Editor de reglas en AEM flujo de trabajo](variables-aem-workflow/part5.md)
 + Revisar datos de formulario{#review-form-data}
-   + [Introducción](review-form-data/introduction.md)
-   + [Crear componente](review-form-data/create-component.md)
-   + [Implementación de recursos](review-form-data/deploy-on-your-system.md)
+   + [1 - Introducción](review-form-data/introduction.md)
+   + [2 - Crear componente](review-form-data/create-component.md)
+   + [3: Implementar recursos](review-form-data/deploy-on-your-system.md)
 + Almacenamiento y recuperación de datos de formulario en MySQL DB{#storing-and-retrieving-form-data}
    + [Introducción](storing-retrieving-form-data/introduction.md)
    + [Configurar fuentes de datos](storing-retrieving-form-data/part1.md)
@@ -260,18 +260,18 @@ ht-degree: 3%
    + [Servicios de utilidad](document-services/useful-utility-services.md)
 + Comunicaciones interactivas para el canal impreso
 {#ic-print-channel-tutorial}
-   + [Introducción](ic-print-channel-tutorial/introduction.md)
-   + [Configurar Tomcat](ic-print-channel-tutorial/set-up-tomcat.md)
-   + [Crear fuente de datos](ic-print-channel-tutorial/create-data-source.md)
-   + [Crear modelo de datos de formulario](ic-print-channel-tutorial/create-form-data-model.md)
-   + [Creación de un diseño XDP con Forms Designer](ic-print-channel-tutorial/create-xdp-layout-using-forms-designer.md)
-   + [Crear fragmento de documento](ic-print-channel-tutorial/create-document-fragment.md)
-   + [Crear documento de canal de impresión](ic-print-channel-tutorial/create-print-channel-document.md)
-   + [Adición de contenido a áreas de destino](ic-print-channel-tutorial/add-content-to-target-areas.md)
-   + [Configuración del gráfico de líneas](ic-print-channel-tutorial/configuring-line-chart.md)
-   + [Adición de tabla al canal de impresión](ic-print-channel-tutorial/adding-table-to-print-channel.md)
-   + [Uso de la carpeta vigilada para generar documentos](ic-print-channel-tutorial/using-watched-folder-to-generate-document.md)
-   + [Apertura de la interfaz de usuario del agente en el envío del formulario](ic-print-channel-tutorial/opening-agent-ui-on-form-submission.md)
+   + [1 - Introducción](ic-print-channel-tutorial/introduction.md)
+   + [2 - Configurar Tomcat](ic-print-channel-tutorial/set-up-tomcat.md)
+   + [3 - Crear fuente de datos](ic-print-channel-tutorial/create-data-source.md)
+   + [4 - Crear modelo de datos de formulario](ic-print-channel-tutorial/create-form-data-model.md)
+   + [5 - Crear diseño XDP con Forms Designer](ic-print-channel-tutorial/create-xdp-layout-using-forms-designer.md)
+   + [6 - Crear fragmento de documento](ic-print-channel-tutorial/create-document-fragment.md)
+   + [7 - Crear documento de canal de impresión](ic-print-channel-tutorial/create-print-channel-document.md)
+   + [8: Adición de contenido a áreas de destino](ic-print-channel-tutorial/add-content-to-target-areas.md)
+   + [9 - Configuración del gráfico de líneas](ic-print-channel-tutorial/configuring-line-chart.md)
+   + [10 - Adición de tabla al canal de impresión](ic-print-channel-tutorial/adding-table-to-print-channel.md)
+   + [11 - Uso de la carpeta vigilada para generar documentos](ic-print-channel-tutorial/using-watched-folder-to-generate-document.md)
+   + [12 - Apertura de la interfaz de usuario del agente en el envío de formularios](ic-print-channel-tutorial/opening-agent-ui-on-form-submission.md)
 + Guardar y recuperar letras de borrador {#store-retrieve-letters}
    + [Introducción](store-retrieve-letters/introduction.md)
    + [Implementación](store-retrieve-letters/save-draft-letters.md)
@@ -287,19 +287,19 @@ ht-degree: 3%
    + [Personalizar el editor de texto](interactive-communications/customize-text-editor.md)
 
 + Comunicaciones Interactivas Para El Canal Web {#ic-web-channel-tutorial}
-   + [Introducción](ic-web-channel-tutorial/introduction.md)
-   + [Configurar Tomcat](ic-web-channel-tutorial/partone.md)
-   + [Crear fuente de datos](ic-web-channel-tutorial/parttwo.md)
-   + [Crear modelo de datos de formulario](ic-web-channel-tutorial/partthree.md)
-   + [Creación de una plantilla de documento de canal web](ic-web-channel-tutorial/partfour.md)
-   + [Creación de fragmento de documento](ic-web-channel-tutorial/partfive.md)
-   + [Creación de un documento de comunicación interactivo](ic-web-channel-tutorial/partsix.md)
-   + [Adición de texto e imágenes](ic-web-channel-tutorial/partseven.md)
-   + [Configuración del gráfico de líneas](ic-web-channel-tutorial/parteight.md)
-   + [Configuración de tabla](ic-web-channel-tutorial/partnine.md)
-   + [Configuración del gráfico de columnas](ic-web-channel-tutorial/partten.md)
-   + [Configuración de gráfico circular](ic-web-channel-tutorial/parteleven.md)
-   + [Entrega Del Documento De Canal Web](ic-web-channel-tutorial/parttwelve.md)
+   + [1 - Introducción](ic-web-channel-tutorial/introduction.md)
+   + [2 - Configurar Tomcat](ic-web-channel-tutorial/partone.md)
+   + [3 - Crear fuente de datos](ic-web-channel-tutorial/parttwo.md)
+   + [4 - Crear modelo de datos de formulario](ic-web-channel-tutorial/partthree.md)
+   + [5: Creación de una plantilla de documento de canal web](ic-web-channel-tutorial/partfour.md)
+   + [6 - Crear fragmento de documento](ic-web-channel-tutorial/partfive.md)
+   + [7 - Creación de un documento interactivo de comunicación](ic-web-channel-tutorial/partsix.md)
+   + [8: Adición de texto e imágenes](ic-web-channel-tutorial/partseven.md)
+   + [9 - Configuración del gráfico de líneas](ic-web-channel-tutorial/parteight.md)
+   + [10 - Configuración de tabla](ic-web-channel-tutorial/partnine.md)
+   + [11 - Configuración del gráfico de columnas](ic-web-channel-tutorial/partten.md)
+   + [12 - Configuración de gráfico circular](ic-web-channel-tutorial/parteleven.md)
+   + [13 - Entrega Del Documento De Canal Web](ic-web-channel-tutorial/parttwelve.md)
    + [Envío por correo electrónico de un documento de canal web](interactive-communications/delivery-of-web-channel-document-tutorial-use.md)
 
 + Solución de problemas {#troubleshooting}

@@ -14,13 +14,13 @@ discoiquuid: 2ee2cea2-aefa-4d21-a258-248648f73a68
 topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
+exl-id: 0dd8a430-9a4e-4dc7-ad75-6ad2490430f2
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 0%
+source-wordcount: '349'
+ht-degree: 1%
 
 ---
-
 
 # Configuración del panel de Outlook de jubilación{#configuring-retirement-outlook-panel}
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 * Seleccione el icono &quot;lápiz&quot; para editar el texto predeterminado.
 
-* Reemplace el texto predeterminado por &quot;**Your Retirement Revenue Outlook&quot;**
+* Reemplace el texto predeterminado por &quot;**&quot;Perspectivas de ingresos de jubilación&quot;**
 
 **Configuración del área de destino del panel derecho**
 
@@ -60,7 +60,7 @@ ht-degree: 0%
 
 * Haga clic en el icono Recursos y aplique el filtro para mostrar recursos de tipo &quot;Fragmentos de documento&quot;. Arrastre y suelte el fragmento de documento RetirementRevenueOutlook en el área de destino del panel izquierdo.
 
-* Puede hacer referencia a [esta página](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/partseven.html) al agregar fragmento de documento a las áreas de contenido.
+* Puede consultar [a esta página](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/partseven.html) al agregar fragmento de documento a áreas de contenido.
 
 ## Adición del gráfico de ingresos mensuales estimado {#adding-estimated-monthly-income-chart}
 
@@ -74,6 +74,6 @@ ht-degree: 0%
 
 ![forms65](assets/estimatedmonthlyincomechart65.PNG)
 
+## Pasos siguientes
 
-
-
+[Configurar gráfico circular](./parteleven.md)

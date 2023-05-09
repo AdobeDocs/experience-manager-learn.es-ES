@@ -17,10 +17,10 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 1f4d88ad-ace1-4f78-be40-da80b3b4d40c
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 0%
+source-wordcount: '108'
+ht-degree: 1%
 
 ---
 
@@ -31,3 +31,7 @@ En esta parte, crearemos una fuente de datos respaldada por REST.  El siguiente 
 >[!VIDEO](https://video.tv.adobe.com/v/27765?quality=12&learn=on)
 
 Utilice el archivo de intercambio que se le ha proporcionado como parte de los recursos relacionados con este tutorial. Los recursos están disponibles en [introducción](introduction.md) de este tutorial.
+
+## Pasos siguientes
+
+[Creación de un modelo de datos de formulario basado en el origen de datos](./create-form-data-model.md)

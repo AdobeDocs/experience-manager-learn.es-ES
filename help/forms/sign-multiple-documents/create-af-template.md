@@ -13,10 +13,10 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: c6e0fb92-28c1-4025-85ef-b99bad46f07a
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 0%
+source-wordcount: '120'
+ht-degree: 2%
 
 ---
 
@@ -33,3 +33,7 @@ Crearemos una nueva plantilla de formulario adaptable para este tutorial. Tambi�
 ## Assets
 
 La plantilla y el componente de página utilizados en este tutorial pueden ser [descargado desde aquí](assets/sign-multiple-forms-template.zip)
+
+## Pasos siguientes
+
+[Seleccione los formularios que firmará el usuario](./create-initial-form.md)

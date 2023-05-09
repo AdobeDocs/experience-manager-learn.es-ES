@@ -17,10 +17,10 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 1bda648c-01be-44f1-aa73-3f5e7365d094
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 0%
+source-wordcount: '131'
+ht-degree: 1%
 
 ---
 
@@ -33,3 +33,7 @@ Cada documento del canal de impresión se basa en una plantilla creada con la he
 El siguiente vídeo resalta las secciones o áreas de destino definidas en el diseño que se utiliza en este tutorial.
 
 >[!VIDEO](https://video.tv.adobe.com/v/37890?quality=12&learn=on)
+
+## Pasos siguientes
+
+[Crear fragmento de documento](./create-document-fragment.md)

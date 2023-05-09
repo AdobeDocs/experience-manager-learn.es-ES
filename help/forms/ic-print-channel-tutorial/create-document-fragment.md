@@ -16,9 +16,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 2fe3f950-bc2a-4e91-8d91-00438691727a
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '229'
 ht-degree: 0%
 
 ---
@@ -38,3 +38,7 @@ El editor de fragmentos de documento también tiene la capacidad de insertar con
 >[!NOTE]
 >
 >Asegúrese de que los elementos del Modelo de datos de formulario que inserte en un fragmento de documento sean descendientes del elemento raíz. Por ejemplo, en este caso de uso, asegúrese de que los elementos del objeto Usuario que seleccione sean los elementos secundarios del objeto Balance
+
+## Pasos siguientes
+
+[Crear documento de canal de impresión](./create-print-channel-document.md)

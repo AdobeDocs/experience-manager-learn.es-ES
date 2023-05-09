@@ -1,8 +1,8 @@
 ---
 title: Configuración del panel Mezcla de Inversiones
-seo-title: Configuración del panel Mezcla de Inversiones
+seo-title: Configuring Investment Mix Panel
 description: Esta es la parte 11 del tutorial de varios pasos para crear su primer documento interactivo de comunicaciones. En esta parte, agregaremos gráficos circulares para mostrar la combinación de inversión actual y la del modelo.
-seo-description: Esta es la parte 11 del tutorial de varios pasos para crear su primer documento interactivo de comunicaciones. En esta parte, agregaremos gráficos circulares para mostrar la combinación de inversión actual y la del modelo.
+seo-description: This is part 11 of multistep tutorial for creating your first interactive communications document.In this part, we will add pie charts to display the current and model investment mix.
 uuid: b0132912-cb6e-4dec-8309-5125d29ad291
 feature: Interactive Communication
 topics: development
@@ -14,20 +14,19 @@ discoiquuid: 77de4e76-53ee-467c-a71c-d1d3ea15283b
 topic: Development
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 774d7a6e-2b8f-4a70-98c5-e7712478ff75
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 1%
+source-wordcount: '334'
+ht-degree: 0%
 
 ---
-
 
 # Configuración del panel Mezcla de Inversiones
 
 En esta parte, agregaremos gráficos circulares para mostrar la combinación de inversión actual y modelo.
 
-* Inicie sesión en AEM Forms y vaya a Adobe Experience Manager > Formularios > Formularios y documentos.
+* Inicie sesión en AEM Forms y vaya a Adobe Experience Manager > Forms > Forms y documentos.
 
 * Abra la carpeta 401KStatement.
 
@@ -35,7 +34,7 @@ En esta parte, agregaremos gráficos circulares para mostrar la combinación de 
 
 * Añadiremos 2 gráficos circulares para representar la combinación de inversión actual y modelo del titular de la cuenta.
 
-## Mezcla de activos actuales {#current-asset-mix}
+## Combinación de activos actuales {#current-asset-mix}
 
 * Pulse en el panel &quot;Combinación de recursos actual&quot; del lado derecho, seleccione el icono &quot;+&quot; e inserte el componente de texto. Cambie el texto predeterminado a &quot;Combinación de recursos actual&quot;.
 
@@ -59,3 +58,6 @@ En esta parte, agregaremos gráficos circulares para mostrar la combinación de 
 
 * ![assettype](assets/modelassettypechart.png)
 
+## Pasos siguientes
+
+[Preparación para entregar un documento de canal web](./parttwelve.md)

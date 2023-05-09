@@ -17,10 +17,10 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 49080c16-617f-4840-8bb4-7b080fa291c4
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '154'
-ht-degree: 0%
+source-wordcount: '159'
+ht-degree: 1%
 
 ---
 
@@ -37,3 +37,7 @@ Para añadir contenido al documento de canal de impresión, siga el siguiente v�
 El vídeo lo acompaña durante los pasos necesarios para añadir contenido a las áreas de destino apropiadas del documento de canal de impresión.
 
 >[!VIDEO](https://video.tv.adobe.com/v/22379?quality=12&learn=on)
+
+## Pasos siguientes
+
+[Configurar gráfico de líneas](./configuring-line-chart.md)

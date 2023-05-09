@@ -16,9 +16,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 4e64aa99-0b1c-49e9-95a7-d254017b80f4
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '233'
 ht-degree: 0%
 
 ---
@@ -36,3 +36,7 @@ El modelo de datos de formulario depende de un origen de datos configurado corre
 El modelo de datos de formulario es la base de todas sus comunicaciones interactivas. La operación Get/Read del Modelo de datos de formulario recupera los datos del origen de datos del servidor y se utiliza para rellenar el documento de comunicaciones interactivas.
 
 Una vez creado el Modelo de datos de formulario, puede utilizarlo como base para crear fragmentos de documento y documentos de comunicación interactiva.
+
+## Pasos siguientes
+
+[Crear plantilla con designer](./create-xdp-layout-using-forms-designer.md)

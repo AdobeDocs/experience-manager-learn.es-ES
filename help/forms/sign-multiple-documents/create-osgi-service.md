@@ -9,10 +9,10 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 49e7bd65-33fb-44d4-aaa2-50832dffffb0
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 0%
+source-wordcount: '362'
+ht-degree: 1%
 
 ---
 
@@ -205,3 +205,7 @@ public String getNextFormToSign(int customerID) {
 ## Assets
 
 El paquete OSGi con los servicios mencionados anteriormente puede ser [descargado desde aquí](assets/sign-multiple-forms.jar)
+
+## Pasos siguientes
+
+[Crear un flujo de trabajo principal para gestionar el envío del formulario inicial](./create-main-workflow.md)

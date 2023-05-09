@@ -1,8 +1,8 @@
 ---
 title: Generación de documentos de canal de impresión mediante una carpeta vigilada
-seo-title: Generación de documentos de canal de impresión mediante una carpeta vigilada
+seo-title: Generating Print Channel Documents Using Watched Folder
 description: Esta es la parte 10 del tutorial de varios pasos para crear su primer documento interactivo de comunicaciones para el canal de impresión. En esta parte, generaremos documentos de canal de impresión utilizando el mecanismo de carpetas vigiladas.
-seo-description: Esta es la parte 10 del tutorial de varios pasos para crear su primer documento interactivo de comunicaciones para el canal de impresión. En esta parte, generaremos documentos de canal de impresión utilizando el mecanismo de carpetas vigiladas.
+seo-description: This is part 10 of multistep tutorial for creating your first interactive communications document for the print channel. In this part, we will generate print channel documents using the watched folder mechanism.
 uuid: 9e39f4e3-1053-4839-9338-09961ac54f81
 feature: Interactive Communication
 topics: development
@@ -15,14 +15,13 @@ discoiquuid: 23fbada3-d776-4b77-b381-22d3ec716ae9
 topic: Development
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 9bb05c94-2a7b-4149-b567-186eb08b1c66
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 1%
+source-wordcount: '348'
+ht-degree: 0%
 
 ---
-
 
 # Generación de documentos de canal de impresión mediante una carpeta vigilada
 
@@ -30,13 +29,13 @@ En esta parte, generaremos documentos de canal de impresión utilizando el mecan
 
 Después de crear y probar su documento de canal de impresión, necesitamos un mecanismo para generar estos documentos en modo por lotes o bajo demanda. Normalmente, este tipo de documentos se genera en modo por lotes y el mecanismo más común es usar carpetas vigiladas.
 
-Al configurar una carpeta vigilada en AEM, asocia un script ECMA o un código java que se ejecuta cuando se coloca un archivo en la carpeta vigilada. En este artículo, nos centraremos en el script ECMA que generará documentos de canal de impresión y los guardará en el sistema de archivos.
+Cuando configura una carpeta vigilada en AEM, asocia un script ECMA o un código java que se ejecuta cuando se coloca un archivo en la carpeta vigilada. En este artículo, nos centraremos en el script ECMA que generará documentos de canal de impresión y los guardará en el sistema de archivos.
 
-La configuración de carpetas vigiladas y la secuencia de comandos ECMA forman parte de los recursos importados al [principio de este tutorial](introduction.md)
+La configuración de carpetas vigiladas y la secuencia de comandos ECMA forman parte de los recursos que ha importado en el [inicio de este tutorial](introduction.md)
 
 El archivo de entrada que se suelta en la carpeta vigilada tiene la siguiente estructura. El script ECMA lee los números de cuenta y genera el documento de canal de impresión para cada una de estas cuentas.
 
-Para obtener más información sobre la secuencia de comandos ECMA para generar documentos, [consulte este artículo](/help/forms/interactive-communications/generating-interactive-communications-print-document-using-api-tutorial-use.md)
+Para obtener más información sobre el script ECMA para la generación de documentos, [consulte este artículo](/help/forms/interactive-communications/generating-interactive-communications-print-document-using-api-tutorial-use.md)
 
 ```xml
 <accountnumbers>
@@ -79,6 +78,6 @@ Para generar un documento de canal de impresión mediante el mecanismo de carpet
 
 * Compruebe los archivos pdf en la ubicación de guardado tal como se especifica en la secuencia de comandos ECMA.
 
+## Pasos siguientes
 
-
-
+[Apertura de la interfaz de usuario del agente en la presentación del formulario](./opening-agent-ui-on-form-submission.md)
