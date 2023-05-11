@@ -11,10 +11,10 @@ hide: true
 index: false
 thumbnail: kt-10427.jpg
 exl-id: 8fcc9364-b84c-4458-82e2-66b47429cd4b
-source-git-commit: 48943df64d9793066f8f19497ef42f8aa80e5795
+source-git-commit: a439c72a7b080633d3777eefad3b47f01c92b970
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -108,7 +108,7 @@ La mitigación de las advertencias transversales se puede abordar mediante tres 
 
 ## 1. Analizar{#analyze}
 
-En primer lugar, identifique qué servicios de AEM Publish presentan advertencias transversales. Para ello, desde Cloud Manager, [descargar servicios de publicación&#39; `aemerror` logs](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html#cloud-manager){target=&quot;_blank&quot;} de todos los entornos (desarrollo, fase y producción) del pasado __tres días__.
+En primer lugar, identifique qué servicios de AEM Publish presentan advertencias transversales. Para ello, desde Cloud Manager, [descargar servicios de publicación&#39; `aemerror` logs](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html#cloud-manager){target="_blank"} desde todos los entornos (desarrollo, fase y producción) del pasado __tres días__.
 
 ![Descargar AEM registros as a Cloud Service](./assets/traversals/download-logs.jpg)
 
@@ -159,14 +159,14 @@ Una vez descubiertas las consultas ofensivas y su código de invocación, deben 
 
 __Cambiar la consulta__ para agregar nuevas restricciones de consulta que se resuelvan a restricciones de índice existentes. Cuando sea posible, prefiera cambiar la consulta a cambiar los índices.
 
-+ [Aprenda a ajustar el rendimiento de las consultas](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html#query-performance-tuning){target=&quot;_blank&quot;}
++ [Aprenda a ajustar el rendimiento de las consultas](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html#query-performance-tuning){target="_blank"}
 
 ### Ajustar el índice
 
 __Cambiar (o crear) un índice de AEM__ de modo que las restricciones de consulta existentes se puedan resolver en las actualizaciones de índice.
 
-+ [Aprenda a ajustar índices existentes](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html#query-performance-tuning){target=&quot;_blank&quot;}
-+ [Aprenda a crear índices](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html#create-a-new-index){target=&quot;_blank&quot;}
++ [Aprenda a ajustar índices existentes](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html#query-performance-tuning){target="_blank"}
++ [Aprenda a crear índices](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html#create-a-new-index){target="_blank"}
 
 ## 3. Verificar{#verify}
 
@@ -174,9 +174,9 @@ Los ajustes realizados en las consultas, los índices o ambos deben verificarse 
 
 ![Explicar consulta](./assets/traversals/verify.gif)
 
-If only [ajustes a la consulta](#adjust-the-query) se realizan, la consulta se puede probar directamente en AEM as a Cloud Service mediante el [Explicar consulta](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries){target=&quot;_blank&quot;}. Explicar que Query se ejecuta con el servicio AEM Author, sin embargo, como las definiciones de índice son las mismas en los servicios Autor y Publicación, la validación de consultas con el servicio AEM Author es suficiente.
+If only [ajustes a la consulta](#adjust-the-query) se realizan, la consulta se puede probar directamente en AEM as a Cloud Service mediante el [Explicar consulta](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=es#queries){target="_blank"}. Explicar que Query se ejecuta con el servicio AEM Author, sin embargo, como las definiciones de índice son las mismas en los servicios Autor y Publicación, la validación de consultas con el servicio AEM Author es suficiente.
 
-If [ajustes en el índice](#adjust-the-index) se realizan, el índice debe implementarse en AEM as a Cloud Service. Con los ajustes de índice implementados, Developer Console [Explicar consulta](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries){target=&quot;_blank&quot;} se puede usar para ejecutar y ajustar la consulta aún más.
+If [ajustes en el índice](#adjust-the-index) se realizan, el índice debe implementarse en AEM as a Cloud Service. Con los ajustes de índice implementados, Developer Console [Explicar consulta](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=es#queries){target="_blank"} se puede utilizar para ejecutar y ajustar la consulta aún más.
 
 En última instancia, todos los cambios (consulta y código) se comprometen con Git y se implementan en AEM as a Cloud Service mediante Cloud Manager. Una vez implementadas, pruebe de nuevo las rutas de código asociadas con las advertencias transversales originales y verifique que ya no aparezcan advertencias transversales en la variable `aemerror` log.
 
@@ -191,7 +191,7 @@ Consulte estos otros recursos útiles para comprender AEM índices, búsquedas y
    <div class="card">
        <div class="card-image">
            <figure class="image is-16by9">
-               <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-search-and-indexing.html" title="Cloud 5: Búsqueda e indexación" tabindex="-1"><img class="is-bordered-r-small" src="../../../cloud-5/imgs/009-thumb.png" alt="Cloud 5: Búsqueda e indexación"></a>
+               <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-search-and-indexing.html" title="Cloud 5: Búsqueda e indexación" tabindex="-1"><img class="is-bordered-r-small" src="../../../expert-resources/cloud-5/imgs/009-thumb.png" alt="Cloud 5: Búsqueda e indexación"></a>
            </figure>
        </div>
        <div class="card-content is-padded-small">
@@ -212,16 +212,16 @@ Consulte estos otros recursos útiles para comprender AEM índices, búsquedas y
    <div class="card">
        <div class="card-image">
            <figure class="image is-16by9">
-               <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html" title="Buscar contenido e indexar" tabindex="-1">
-                   <img class="is-bordered-r-small" src="./assets/traversals/resources--docs.png" alt="Buscar contenido e indexar">
+               <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=es" title="Búsqueda de contenido e indexación" tabindex="-1">
+                   <img class="is-bordered-r-small" src="./assets/traversals/resources--docs.png" alt="Búsqueda de contenido e indexación">
                </a>
            </figure>
        </div>
        <div class="card-content is-padded-small">
            <div class="content">
-               <p class="headline is-size-6 has-text-weight-bold"><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html" title="Buscar contenido e indexar">Documentación de indexación y búsqueda de contenido</a></p>
+               <p class="headline is-size-6 has-text-weight-bold"><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=es" title="Búsqueda de contenido e indexación">Documentación de indexación y búsqueda de contenido</a></p>
                <p class="is-size-6">Aprenda a crear y administrar índices en AEM as a Cloud Service.</p>
-               <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
+               <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=es" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
                </a>
            </div>
