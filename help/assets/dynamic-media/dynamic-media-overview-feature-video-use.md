@@ -7,9 +7,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 59462cb4-d379-4e58-b786-ff8dbae6191c
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: c2e105123302ae37dc7cfca9533110a655e83858
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '842'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ En este vídeo se describe cómo se administra y accede al contenido multimedia 
 * Copiar direcciones URL en imágenes y visualizadores interactivos
 * Variaciones de recorte inteligente a direcciones URL
 
-## Dynamic Media con AEM Sites y cualquier otro CMS
+## Uso con AEM Sites
 
 >[!VIDEO](https://video.tv.adobe.com/v/27145?quality=12&learn=on)
 
@@ -48,7 +48,7 @@ En este vídeo se describe cómo se administra el contenido multimedia en Adobe 
 * Descarga local con ajustes preestablecidos de imagen
 * Creación y publicación de un titular interactivo
 
-## Dynamic Media para crear una colección de medios mixtos y un visor personalizado
+## Crear una colección de medios mixtos
 
 >[!VIDEO](https://video.tv.adobe.com/v/27146?quality=12&learn=on)
 
@@ -63,7 +63,7 @@ En este vídeo se describe el proceso de creación sencillo de una colección de
 * Crear conjunto de medios mixtos a partir de conjuntos de giros, vídeos y fotos
 * Edición y uso del visualizador de medios mixtos personalizado
 
-## Ajustes preestablecidos de imagen de Dynamic Media
+## Ajustes preestablecidos de imagen
 
 >[!VIDEO](https://video.tv.adobe.com/v/27320?quality=12&learn=on)
 
@@ -74,7 +74,7 @@ En este vídeo se describe cómo se crean los ajustes preestablecidos de imagen 
 * Utilizar siempre el enfoque
 * Campo Modificador de URL para agregar comandos adicionales al ajuste preestablecido de imagen
 
-## Modificadores de URL avanzados de Dynamic Media
+## Modificadores de URL avanzados
 
 >[!VIDEO](https://video.tv.adobe.com/v/27319?quality=12&learn=on)
 
@@ -86,7 +86,7 @@ En este vídeo se describe cómo no cambiar el tamaño de las imágenes para apr
 * Recorte a una ruta de imagen
 * Creación de una plantilla de texto a partir de un archivo Photoshop
 
-## Dynamic Media Control del tamaño del archivo JPEG en Kilobytes
+## administración del tamaño del archivo del JPEG
 
 >[!VIDEO](https://video.tv.adobe.com/v/27404?quality=12&learn=on)
 
@@ -97,13 +97,13 @@ En este vídeo se describe cómo no cambiar el tamaño de las imágenes para apr
 
 Equilibre la calidad de la imagen jpeg con el tamaño de archivo resultante (en kilobytes) para mejorar la velocidad de carga de la página, utilizando 2 comandos para ajustar la configuración de compresión jpeg. QLT define la calidad de la imagen ajustando los ajustes de calidad de compresión de jpeg. El comando Tamaño del JPEG le permite designar qué tamaño de archivo debe conseguirse mediante compresión.
 
-## Añadir subtítulos CC a un vídeo de Dynamic Media
+## Subtítulos
 
 >[!VIDEO](https://video.tv.adobe.com/v/28074?quality=12&learn=on)
 
 Agregue fácilmente Subtítulos a vídeo de Dynamic Media adjuntando la URL de copia para que apunte a un documento adicional de Subtítulos, un archivo sidecar web.VTT, que contenga la información de CC de cualquier vídeo.
 
-## Uso del enfoque de imagen con AEM Dynamic Media
+## Enfoque de imagen
 
 Este vídeo explica por qué el enfoque de una imagen es fundamental para mantener la fidelidad de la imagen y cómo utilizar ajustes avanzados para crear la imagen perfecta.
 
