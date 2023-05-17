@@ -8,11 +8,12 @@ role: Developer
 level: Beginner
 kt: 7872
 thumbnail: 333429.jpeg
+last-substantial-update: 2023-05-17T00:00:00Z
 exl-id: 06ba38c4-95fe-4ff5-b4d9-237ef9dec944
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 83c4d82a3cce44ae9f99389fdfd7d485d42d13e2
 workflow-type: tm+mt
-source-wordcount: '122'
-ht-degree: 6%
+source-wordcount: '60'
+ht-degree: 10%
 
 ---
 
@@ -24,13 +25,6 @@ En este vídeo:
 
 + Obtenga información sobre cómo habilitar consultas persistentes de GraphQL
 + Obtenga información sobre cómo crear, actualizar y ejecutar consultas de GraphQL
-+ Comprender los pros y los contras de las consultas del lado del servidor frente a las del lado del cliente
-
->[!CAUTION]
->
->La variable **Crear, actualizar y ejecutar consultas persistentes** capítulo que comienza a las 2:05 utilizaciones [Postman](https://www.postman.com/) para realizar la tarea. Sin embargo, en las versiones más recientes de AEM como Cloud Service, un **Explorador de GraphiQL** se proporciona, consulte [Uso del IDE de GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) para obtener más información.
-
++ Comprender los beneficios de las consultas persistentes sobre las consultas del lado del cliente
 
 >[!VIDEO](https://video.tv.adobe.com/v/333429?quality=12&learn=on)
-
-_Descargue el [Colección Postman](./assets/aem-headless-video-series.postman_collection.json) se utiliza en toda la serie de vídeos AEM sin encabezado._
