@@ -10,9 +10,9 @@ kt: 9351
 thumbnail: 343040.jpeg
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: d049eb78e2302aa97de0d228b65fba842ad38b74
 workflow-type: tm+mt
-source-wordcount: '2961'
+source-wordcount: '2943'
 ht-degree: 2%
 
 ---
@@ -132,7 +132,6 @@ El almacén de confianza global está configurado con el certificado público de
 _Se requiere la creación de un almacén de claves para el servicio de autenticación cuando [Controlador de autenticación SAML 2.0, propiedad de configuración OSGi `handleLogout` está configurado como `true`](#saml-20-authenticationsaml-2-0-authentication) o cuando [Autosolicitud firma/cifrado de aserción SAML](#install-aem-public-private-key-pair) es obligatorio_
 
 1. Inicie sesión en AEM Author como administrador AEM para cargar la clave privada.
-1. Vaya a __Herramientas > Seguridad > Almacén de confianza__ y seleccione __authentication-service__ y seleccione __Propiedades__ en la barra de acciones superior.
 1. Vaya a __Herramientas > Seguridad > Usuarios__ y seleccione __authentication-service__ y seleccione __Propiedades__ en la barra de acciones superior.
 1. Seleccione el __Almacén de claves__ pestaña .
 1. Cree o abra el almacén de claves. Si crea un almacén de claves, mantenga la contraseña segura.
