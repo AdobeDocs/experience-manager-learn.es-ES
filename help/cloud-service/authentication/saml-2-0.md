@@ -10,9 +10,9 @@ kt: 9351
 thumbnail: 343040.jpeg
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
-source-git-commit: d049eb78e2302aa97de0d228b65fba842ad38b74
+source-git-commit: f6a9e7b32d876a8cd5ce7bf6a2e13aeb5faaf35b
 workflow-type: tm+mt
-source-wordcount: '2943'
+source-wordcount: '3123'
 ht-degree: 2%
 
 ---
@@ -138,8 +138,21 @@ _Se requiere la creación de un almacén de claves para el servicio de autentica
    + A [el almacén de claves público/privado está instalado en este almacén de claves](#install-aem-public-private-key-pair) solo si se requiere cifrado de afirmación de AuthnRequest de firma/SAML.
    + Si esta integración de SAML admite el cierre de sesión, pero no la firma/afirmación SAML de AuthnRequest, entonces basta con un almacén de claves vacío.
 1. Select __Guardar y cerrar__.
-1. Select __authentication-service__ y seleccione __Activar__ en la barra de acciones superior.
+1. Cree un paquete que contenga la __authentication-service__ usuario.
 
+   _Utilice la siguiente solución temporal utilizando paquetes:_
+
+   1. Vaya a __Herramientas > Implementación > Paquetes__.
+   1. Creación de un paquete
+      + Nombre del paquete: `Authentication Service`
+      + Versión: `1.0.0`
+      + Grupo: `com.your.company`
+   1. Edite el nuevo __Almacén de claves del servicio de autenticación__ paquete.
+   1. Seleccione el __Filtros__ y agregue un filtro para la ruta raíz `/home/users/system/cq:services/internal/security/<AUTHENTICATION SERVICE UUID>/keystore`.
+      + La variable `<AUTHENTICATION SERVICE UUID>` se puede encontrar navegando a __Herramientas > Seguridad > Usuarios__ y seleccionando __authentication-service__ usuario. El UUID es la última parte de la dirección URL.
+   1. Select __Listo__ y luego __Guardar__.
+   1. Seleccione el __Generar__ para la variable __Almacén de claves del servicio de autenticación__ paquete.
+   1. Una vez creado, seleccione __Más__ > __Replicar__ para activar el almacén de claves del servicio de autenticación en AEM Publish.
 
 ## Instalar AEM par de claves pública y privada{#install-aem-public-private-key-pair}
 
@@ -212,7 +225,21 @@ Tanto la firma de AuthnRequest como el cifrado de aserción SAML son opcionales,
 1. El certificado recién agregado aparece encima de la variable __Añadir certificado del archivo CRT__ para obtener más información.
    + Tenga en cuenta que __alias__ ya que se utiliza en la variable [Controlador de autenticación SAML 2.0 Configuración OSGi](#saml-20-authentication-handler-osgi-configuration)
 1. Select __Guardar y cerrar__.
-1. Select __authentication-service__ y seleccione __Activar__ en la barra de acciones superior.
+1. Cree un paquete que contenga la __authentication-service__ usuario.
+
+   _Utilice la siguiente solución temporal utilizando paquetes:_
+
+   1. Vaya a __Herramientas > Implementación > Paquetes__.
+   1. Creación de un paquete
+      + Nombre del paquete: `Authentication Service`
+      + Versión: `1.0.0`
+      + Grupo: `com.your.company`
+   1. Edite el nuevo __Almacén de claves del servicio de autenticación__ paquete.
+   1. Seleccione el __Filtros__ y agregue un filtro para la ruta raíz `/home/users/system/cq:services/internal/security/<AUTHENTICATION SERVICE UUID>/keystore`.
+      + La variable `<AUTHENTICATION SERVICE UUID>` se puede encontrar navegando a __Herramientas > Seguridad > Usuarios__ y seleccionando __authentication-service__ usuario. El UUID es la última parte de la dirección URL.
+   1. Select __Listo__ y luego __Guardar__.
+   1. Seleccione el __Generar__ para la variable __Almacén de claves del servicio de autenticación__ paquete.
+   1. Una vez creado, seleccione __Más__ > __Replicar__ para activar el almacén de claves del servicio de autenticación en AEM Publish.
 
 ## Configuración del controlador de autenticación SAML 2.0{#configure-saml-2-0-authentication-handler}
 
