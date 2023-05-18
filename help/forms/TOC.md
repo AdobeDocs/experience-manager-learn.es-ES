@@ -7,9 +7,9 @@ breadcrumb-title: Tutoriales de AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
+source-git-commit: c6e83a627743c40355559d9cdbca2b70db7f23ed
 workflow-type: tm+mt
-source-wordcount: '1804'
+source-wordcount: '1816'
 ht-degree: 3%
 
 ---
@@ -229,6 +229,10 @@ ht-degree: 3%
    + [Crear componente de kit de bienvenida](welcome-kit/create-welcomekit-component.md)
    + [Crear componente de flujo de trabajo](welcome-kit/create-workflow-component.md)
    + [Probar la solución](welcome-kit/testing-the-solution.md)
++ Incrustar formulario adaptable en el SPA {#embed-form-spa}
+   + [1 - Introducción](headless-forms/introduction.md)
+   + [2 - Instalar dependencias](headless-forms/install-af-react-libraries.md)
+   + [3 - Recuperar el formulario](headless-forms/fetch-the-form.md)
 
 + Reaccione la aplicación con Forms y Acrobat Sign {#react-ic-sign}
    + [1 - Introducción](react-ic-sign/introduction.md)
