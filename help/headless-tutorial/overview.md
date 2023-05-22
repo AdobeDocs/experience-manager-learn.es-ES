@@ -1,26 +1,28 @@
 ---
-title: Tutorials para sin encabezado en AEM
-description: Una colección de tutoriales de CMS sin encabezado para Adobe Experience Manager. Explore tutoriales por API, marco y aplicaciones de ejemplo.
+title: Tutorials AEM para Headless en la
+description: Una colección de tutoriales de CMS sin encabezado para Adobe Experience Manager. Explore tutoriales por API, marco de trabajo y aplicaciones de ejemplo.
 feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
 recommendations: disable, exclude
 exl-id: 57f88d79-9879-4bb9-a3db-9fec95e3a0bd
-source-git-commit: 758fa40240b12f5bfa83ac5c0300b71f41e2326d
+source-git-commit: 4c0770eafbbbb90bfc00ab49be02e84c41d63057
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 7%
 
 ---
 
-# Tutorials para sin encabezado en AEM{#aem-headless-tutorials}
+# Tutorials AEM para Headless en la{#aem-headless-tutorials}
 
-Adobe Experience Manager (AEM) tiene varias opciones para definir extremos sin encabezado y entregar su contenido como JSON. Utilice tutoriales prácticos para explorar cómo utilizar las distintas opciones y elegir lo que es adecuado para usted.
+{{aem-headless-trials-promo}}
+
+Adobe Experience Manager AEM () tiene varias opciones para definir puntos finales sin encabezado y entregar su contenido como JSON. Utilice tutoriales prácticos para explorar cómo utilizar las distintas opciones y elegir las que sean adecuadas para usted.
 
 >[!TIP]
 >
->Esta colección de tutoriales está diseñada para aquellos que prefieran **aprenda haciendo**. Si prefiere aprender conceptos desde cero, consulte la [recorrido para desarrolladores AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/developer/overview.html). Este conjunto de tutoriales y el recorrido se complementan entre sí.
+>Esta colección de tutoriales está diseñada para aquellos que prefieren **aprenda haciendo**. Si prefiere aprender conceptos desde cero, consulte el [AEM Recorrido de desarrollador sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/developer/overview.html). Este conjunto de tutoriales y el recorrido se complementan entre sí.
 
 ## Tutorials por API
 
@@ -31,12 +33,12 @@ Adobe Experience Manager (AEM) tiene varias opciones para definir extremos sin e
       <img alt="API de GraphQL" src="./assets/graphql-icon.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html">
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=es">
     <strong>API de GraphQL</strong>
     </a>
     </div>
     <p>
-    <em>Descubra cómo una aplicación puede utilizar AEM API de GraphQL para consultar contenido.</em>
+    <em>AEM Descubra cómo una aplicación puede utilizar la API de GraphQL para consultar contenido.</em>
     <p>
   </td>
   <td>
@@ -45,11 +47,11 @@ Adobe Experience Manager (AEM) tiene varias opciones para definir extremos sin e
     </a>
     <div>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html">
-    <strong>Autenticación de tokens</strong>
+    <strong>Autenticación de token</strong>
     </a>
     </div>
     <p>
-    <em>Descubra cómo una aplicación puede autenticarse de forma segura con AEM.</em>
+    <em>AEM Aprenda cómo una aplicación puede autenticarse de forma segura con el servicio de autenticación de.</em>
     </p>
   </td>
   <td>
@@ -70,7 +72,7 @@ Adobe Experience Manager (AEM) tiene varias opciones para definir extremos sin e
 
 ## Aplicaciones de ejemplo
 
-Las aplicaciones de ejemplo son una buena manera de explorar las capacidades sin objetivos de Adobe Experience Manager (AEM). Descargue e instale estos ejemplos para empezar de inmediato.
+Las aplicaciones de ejemplo son una buena manera de explorar las capacidades sin encabezado de Adobe Experience Manager AEM (). Descargue e instale los ejemplos finalizados para empezar de inmediato.
 
 <table>
 <tr>
@@ -80,11 +82,11 @@ Las aplicaciones de ejemplo son una buena manera de explorar las capacidades sin
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/ios-swiftui-app.html">
-    <strong>Ejemplo de iOS SwiftUI</strong>
+    <strong>Ejemplo de IU de iOS Swift</strong>
     </a>
     </div>
     <p>
-    <em>Una aplicación de iOS con tecnología de AEM API de GraphQL.</em>
+    <em>Una aplicación de iOS AEM con tecnología de API de GraphQL de.</em>
     <p>
   </td>
   <td>
@@ -97,42 +99,42 @@ Las aplicaciones de ejemplo son una buena manera de explorar las capacidades sin
     </a>
     </div>
     <p>
-    <em>Una aplicación Android™ basada en AEM API de GraphQL.</em>
+    <em>AEM Una aplicación de Android™ con la tecnología de API de GraphQL de.</em>
     </p>
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/react-app.html">
-      <img alt="Ejemplo de reacción" src="./assets/react-example.png" />
+      <img alt="Ejemplo de React" src="./assets/react-example.png" />
     </a>
      <div>
       <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/react-app.html">
-        <strong>Ejemplo de reacción</strong>
+        <strong>Ejemplo de React</strong>
       </a>
     </div>
     <p>
-    <em>Una aplicación React con tecnología de AEM API de GraphQL.</em>
+    <em>AEM Una aplicación de React con tecnología de API de GraphQL de.</em>
     <p>
   </td>
 </tr>
 </table>
 
-## Tutorials por marco
+## Tutorials por módulo
 
-Examine los siguientes tutoriales en función de la tecnología utilizada. Descubra cómo AEM puede ir más allá de un caso de uso sin encabezado, con opciones para la creación en contexto y la administración de experiencias.
+Examine los siguientes tutoriales en función de la tecnología utilizada. AEM Descubra cómo puede ir más allá de un caso de uso sin encabezado puro, con opciones para la creación en contexto y la administración de experiencias.
 
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=es">
       <img alt="React: sin encabezado" src="./assets/react-headless.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html">
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=es">
     <strong>React: sin encabezado</strong>
     </a>
     </div>
     <p>
-    <em>Cree una aplicación React JS usando GraphQL en un escenario sin encabezado.</em>
+    <em>Cree una aplicación JS de React con GraphQL en un escenario sin encabezado puro.</em>
     <p>
   </td>
   <td>
@@ -145,20 +147,20 @@ Examine los siguientes tutoriales en función de la tecnología utilizada. Descu
     </a>
     </div>
     <p>
-    <em>Cree en contexto una parte de una aplicación React alojada de forma remota.</em>
+    <em>Crear en contexto una parte de una aplicación React alojada de forma remota.</em>
     </p>
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html">
-      <img alt="React: Editor SPA" src="./assets/react-spa-editor.png" />
+      <img alt="SPA React: Editor de" src="./assets/react-spa-editor.png" />
     </a>
      <div>
       <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html">
-        <strong>React: Editor SPA</strong>
+        <strong>SPA React: Editor de</strong>
       </a>
     </div>
     <p>
-    <em>Utilice el AEM editor de SPA para administrar la experiencia completa de la aplicación React.</em>
+    <em>AEM SPA Utilice el editor de para administrar la experiencia completa de la aplicación React.</em>
     <p>
   </td>
 </tr>
@@ -173,7 +175,7 @@ Examine los siguientes tutoriales en función de la tecnología utilizada. Descu
     </a>
     </div>
     <p>
-    <em>Utilice Content Services y REST para activar una aplicación móvil Android™.</em>
+    <em>Utilice Content Services y REST para activar una aplicación móvil de Android™.</em>
     </p>
   </td>
   <td>
@@ -186,7 +188,7 @@ Examine los siguientes tutoriales en función de la tecnología utilizada. Descu
       </a>
     </div>
     <p>
-    <em>Cree una aplicación Node.js utilizando el desarrollador y los tokens de servicio para autenticarse.</em>
+    <em>Cree una aplicación Node.js mediante tokens de desarrollador y servicio para autenticarse.</em>
     <p>
   </td>
   <td></td>
