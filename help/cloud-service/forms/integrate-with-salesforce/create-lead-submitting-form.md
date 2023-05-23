@@ -1,6 +1,6 @@
 ---
-title: Enviar formulario utilizando la acción de envío del Modelo de datos de formulario
-description: Crear un formulario adaptable para probar la integración de Salesforce creando un objeto Lead en el envío del formulario
+title: Enviar formulario mediante la acción de envío del modelo de datos de formulario
+description: Cree un formulario adaptable para probar la integración de Salesforce creando un objeto de posible cliente en el envío del formulario
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
@@ -18,8 +18,8 @@ ht-degree: 0%
 
 ---
 
-# Probar la generación de posibles clientes a partir del envío del formulario
+# Probar generación de posibles clientes a partir del envío de formularios
 
-Crear un formulario adaptable basado en el modelo de datos del formulario de fuerzas de venta y probar la creación de un posible cliente en Salesforce enviando el formulario
+Cree un formulario adaptable basado en el modelo de datos de formulario de la fuerza de ventas y pruebe la creación de un posible cliente en Salesforce enviando el formulario
 
 >[!VIDEO](https://video.tv.adobe.com/v/331758?quality=12&learn=on)

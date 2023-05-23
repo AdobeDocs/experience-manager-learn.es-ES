@@ -1,5 +1,5 @@
 ---
-title: Carpetas de línea de base
+title: Carpetas de línea base
 description: La definición de carpetas de línea de base en AEM Assets ayuda a establecer una arquitectura de contenido sólida y una base para la administración de recursos digitales.
 feature: Asset Management
 version: Cloud Service
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ---
 
-# Carpetas de línea de base
+# Carpetas de línea base
 
 La definición de carpetas de línea de base en AEM Assets ayuda a establecer una arquitectura de contenido sólida y una base para la administración de recursos digitales.
 

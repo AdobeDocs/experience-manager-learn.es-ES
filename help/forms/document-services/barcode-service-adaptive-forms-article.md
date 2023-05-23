@@ -1,6 +1,6 @@
 ---
-title: Servicio De Código De Barras Con Forms Adaptable
-description: Uso del servicio de códigos de barras para descodificar códigos de barras y rellenar campos de formulario de los datos extraídos.
+title: Servicio De Códigos De Barras Con Forms Adaptable
+description: Usar el servicio de código de barras para descodificar el código de barras y rellenar los campos de formulario de los datos extraídos.
 feature: Barcoded Forms
 version: 6.4,6.5
 topic: Development
@@ -15,14 +15,14 @@ ht-degree: 0%
 
 ---
 
-# Servicio De Código De Barras Con Forms Adaptable{#barcode-service-with-adaptive-forms}
+# Servicio De Códigos De Barras Con Forms Adaptable{#barcode-service-with-adaptive-forms}
 
-Este artículo muestra el uso del servicio de códigos de barras para rellenar el formulario adaptable. El caso de uso es el siguiente:
+Este artículo mostrará el uso del servicio de código de barras para rellenar formularios adaptables. El caso de uso es el siguiente:
 
-1. El usuario agrega un PDF con código de barras como archivo adjunto de formulario adaptable
+1. El usuario agrega un PDF con código de barras como archivo adjunto del formulario adaptable
 1. La ruta del archivo adjunto se envía al servlet
 1. El servlet descodificó el código de barras y devuelve los datos en formato JSON
-1. A continuación, el formulario adaptable se rellena con los datos decodificados
+1. A continuación, el formulario adaptable se rellena utilizando los datos descodificados
 
 El siguiente código descodifica el código de barras y rellena un objeto JSON con los valores descodificados. A continuación, el servlet devuelve el objeto JSON en su respuesta a la aplicación que realiza la llamada.
 
@@ -54,7 +54,7 @@ public JSONObject extractBarCode(Document pdfDocument) {
  }
 ```
 
-El siguiente es el código servlet. Se llama a este servlet cuando el usuario agrega un archivo adjunto al formulario adaptable. El servlet devuelve el objeto JSON a la aplicación que realiza la llamada. A continuación, la aplicación que realiza la llamada rellena el formulario adaptable con los valores extraídos del objeto JSON.
+El siguiente es el código de servlet. Se llama a este servlet cuando el usuario agrega un archivo adjunto al formulario adaptable. El servlet devuelve el objeto JSON de nuevo a la aplicación que realiza la llamada. A continuación, la aplicación que realiza la llamada rellena el formulario adaptable con los valores extraídos del objeto JSON.
 
 ```java
 @Component(service = Servlet.class, property = {
@@ -94,7 +94,7 @@ public class DecodeBarCode extends SlingSafeMethodsServlet {
 }
 ```
 
-El siguiente código forma parte de la biblioteca de cliente a la que hace referencia el formulario adaptable. Cuando un usuario agrega el archivo adjunto al formulario adaptable, se activa este código. El código realiza una llamada de GET al servlet con la ruta del archivo adjunto pasada en el parámetro de solicitud. Los datos recibidos de la llamada al servlet se utilizan para rellenar el formulario adaptable.
+El siguiente código forma parte de la biblioteca de cliente a la que hace referencia el formulario adaptable. Cuando un usuario agrega el archivo adjunto al formulario adaptable, este código se activa. El código realiza una llamada de GET al servlet con la ruta del archivo adjunto pasada en el parámetro de solicitud. A continuación, los datos recibidos de la llamada al servlet se utilizan para rellenar el formulario adaptable.
 
 ```javascript
 $(document).ready(function()
@@ -131,18 +131,18 @@ $(document).ready(function()
 
 >[!NOTE]
 >
->El formulario adaptable incluido en este paquete se creó con AEM Forms 6.4. Si desea utilizar este paquete en el entorno de AEM Forms 6.3, cree el formulario adaptable en AEM formulario 6.3
+>El formulario adaptable incluido con este paquete se creó con AEM Forms 6.4. Si tiene intención de utilizar este paquete en el entorno de AEM Forms AEM 6.3, cree el formulario adaptable en el formulario 6.3
 
-Línea 12: Custom Code para obtener la resolución del servicio. Este paquete se incluye como parte de los recursos de este artículo.
+Línea 12: código personalizado para obtener la resolución del servicio. Este paquete se incluye como parte de los recursos de este artículo.
 
-Línea 23 - Llame al método extractBarCode de DocumentServices para obtener el objeto JSON rellenado con datos decodificados
+Línea 23: Llame al método extractBarCode de DocumentServices para que el objeto JSON se rellene con datos descodificados
 
-Para que esto se ejecute en su sistema, siga los siguientes pasos:
+Para que esto funcione en su sistema, siga los siguientes pasos:
 
-1. [Descargar BarcodeService.zip](assets/barcodeservice.zip) e importar en AEM mediante el administrador de paquetes
+1. [Descargar BarcodeService.zip](assets/barcodeservice.zip) AEM e importarlo a la red de distribución de paquetes mediante el administrador de paquetes
 1. [Descargar e instalar el paquete de servicios de documentos personalizados](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
-1. [Descargar e instalar el paquete DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-1. [Descargar el formulario de PDF de ejemplo](assets/barcode.pdf)
-1. Apunte el navegador a [ejemplo de formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/barcodedemo/jcr:content?wcmmode=disabled)
+1. [Descargue e instale el paquete Desarrollando con usuario de servicio](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+1. [Descargue el formulario de PDF de ejemplo](assets/barcode.pdf)
+1. Dirija el explorador a [formulario adaptable de ejemplo](http://localhost:4502/content/dam/formsanddocuments/barcodedemo/jcr:content?wcmmode=disabled)
 1. Cargue el PDF de muestra proporcionado
 1. Debería ver los formularios rellenados con los datos

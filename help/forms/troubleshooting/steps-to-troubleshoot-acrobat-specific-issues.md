@@ -1,6 +1,6 @@
 ---
-title: Pasos para solucionar problemas específicos de acrobat en una configuración de Windows
-description: Solución de problemas específicos de Acrobat en una configuración de Windows
+title: Pasos para solucionar problemas específicos de Acrobat en una instalación de Windows
+description: Solucionar problemas específicos de Acrobat en una instalación de Windows
 type: Troubleshooting
 role: Developer
 level: Intermediate
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Pasos para solucionar problemas específicos de acrobat en una configuración de Windows
+# Pasos para solucionar problemas específicos de Acrobat en una instalación de Windows
 
-*Este vídeo explica el proceso de solución de problemas específicos de acrobat en una configuración de Windows para el PDFG de AEM Forms.*
+*Este vídeo muestra el proceso de resolución de problemas específicos de Acrobat en una configuración de Windows para AEM Forms PDFG.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335480?quality=12&learn=on)

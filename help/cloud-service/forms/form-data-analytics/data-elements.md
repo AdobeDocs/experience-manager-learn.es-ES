@@ -1,6 +1,6 @@
 ---
 title: Informar sobre los campos de datos de formulario enviados mediante Adobe Analytics
-description: Integración de AEM Forms CS con Adobe Analytics para informar sobre campos de datos de formulario
+description: Integrar AEM Forms CS con Adobe Analytics para informar sobre campos de datos de formulario
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
@@ -9,25 +9,26 @@ version: Cloud Service
 feature: Adaptive Forms
 topic: Development
 kt: 12557
-source-git-commit: 672941b4047bb0cfe8c602e3b1ab75866c10216a
+exl-id: b9dc505d-72c8-4b6a-974b-fc619ff7c256
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 0%
 
 ---
 
-# Crear elementos de datos adecuados
+# Crear los elementos de datos adecuados
 
-En la propiedad Tags hemos agregado dos nuevos elementos de datos (ApplicationsStateOfResidence y validationError).
+En la propiedad Tags se han agregado dos nuevos elementos de datos (ApplicantsStateOfResidence y validationError).
 
 ![formulario adaptable](assets/data_elements.png)
 
-## ApplicationStateOfResidence
+## ApplicantStateOfResidence
 
-La variable **ApplicationStateOfResidence** el elemento de datos se configuró seleccionando **Principal** en la lista desplegable de extensiones y **Código personalizado** para el tipo de elemento de datos como se muestra en la captura de pantalla siguiente
+El **ApplicantStateOfResidence** El elemento de datos se configuró seleccionando **Núcleo** en la lista desplegable extensión y **Código personalizado** para el Tipo de elemento de datos como se muestra en la captura de pantalla siguiente
 ![solicitante-estado-residencia](assets/applicantstateofresidence.png)
 
-El siguiente código personalizado se utilizó para capturar el valor de la variable **_state_** campo de formulario adaptable.
+El siguiente código personalizado se utilizó para capturar el valor de **_state_** campo de formulario adaptable.
 
 ```javascript
 // use the GuideBridge API to access adaptive form elements
@@ -39,11 +40,11 @@ return ApplicantsStateOfResidence;
 
 ## validationError
 
-La variable **Error de validación** el elemento de datos se configuró seleccionando **Principal** en la lista desplegable de extensiones y **Código personalizado** para el tipo de elemento de datos como se muestra en la captura de pantalla siguiente
+El **ErrorDeValidación** El elemento de datos se configuró seleccionando **Núcleo** en la lista desplegable extensión y **Código personalizado** para el Tipo de elemento de datos como se muestra en la captura de pantalla siguiente
 
-![validation-error](assets/validation-error.png)
+![error de validación](assets/validation-error.png)
 
-Se escribió el siguiente código personalizado para establecer el valor del elemento de datos validationError.
+El siguiente código personalizado se escribió para establecer el valor del elemento de datos validationError.
 
 ```javascript
 var validationError = "";

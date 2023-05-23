@@ -1,6 +1,6 @@
 ---
-title: Generar DoR interactivo con datos de formulario adaptable
-description: Combinación de datos de formulario adaptables con plantilla XDP para generar pdf descargable
+title: Generación de DoR interactivo con datos de formulario adaptable
+description: Combinar datos de formulario adaptables con la plantilla XDP para generar un PDF descargable
 version: 6.4,6.5
 feature: Forms Service
 topic: Development
@@ -12,25 +12,25 @@ last-substantial-update: 2020-02-07T00:00:00Z
 source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
 source-wordcount: '543'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
-# Descargar DoR interactivo
+# Descargar documento de registro interactivo
 
-Un caso de uso común es poder descargar un DoR interactivo con los datos del Formulario adaptable. El documento de resolución de problemas descargado se completará con Adobe Acrobat o Adobe Reader.
+Un caso de uso común es poder descargar un DoR interactivo con los datos del formulario adaptable. El DoR descargado se completará usando Adobe Acrobat o Adobe Reader.
 
 ## El formulario adaptable no se basa en el esquema XSD
 
-Si el XDP y el formulario adaptable no se basan en ningún esquema, siga los siguientes pasos para generar un documento de registro interactivo.
+Si el XDP y el formulario adaptable no están basados en ningún esquema, siga los siguientes pasos para generar un documento de registro interactivo.
 
 ### Crear formulario adaptable
 
-Cree un formulario adaptable y asegúrese de que los nombres de los campos del formulario adaptable tengan nombres idénticos a los de los campos de la plantilla xdp.
+Cree un formulario adaptable y asegúrese de que los nombres de los campos del formulario adaptable sean idénticos a los nombres de los campos de la plantilla xdp.
 Anote el nombre del elemento raíz de la plantilla xdp.
-![root-element](assets/xfa-root-element.png)
+![elemento-raíz](assets/xfa-root-element.png)
 
-### Lista de clientes
+### Biblioteca de cliente
 
 El siguiente código se activa cuando se activa el botón Descargar PDF
 
@@ -63,15 +63,15 @@ $(document).ready(function() {
 });
 ```
 
-## Formulario adaptable basado en esquema XSD
+## Formulario adaptable basado en el esquema XSD
 
-Si su xdp no se basa en XSD, siga los siguientes pasos para crear XSD(schema)en el que basará su formulario adaptable
+Si su xdp no se basa en XSD, siga los siguientes pasos para crear el XSD (esquema) en el que basará su formulario adaptable
 
 ### Generar datos de ejemplo para el XDP
 
-* Abra el XDP en AEM Forms designer.
+* Abra el XDP en AEM Forms Designer.
 * Haga clic en Archivo | Propiedades del formulario | Vista previa
-* Haga clic en Generar datos de vista previa
+* Haga clic en Generar datos de previsualización
 * Haga clic en Generar
 * Proporcionar un nombre de archivo significativo como &quot;form-data.xml&quot;
 
@@ -81,7 +81,7 @@ Puede utilizar cualquiera de las herramientas gratuitas en línea para [generar 
 
 ### Crear formulario adaptable
 
-Cree un formulario adaptable basado en el XSD del paso anterior. Asocie el formulario para utilizar el cliente lib &quot;irs&quot;. Esta biblioteca de cliente tiene el código para realizar una llamada de POST al servlet que devuelve el PDF a la aplicación que realiza la llamada. El siguiente código se activa cuando la variable _Descargar PDF_ se hace clic
+Cree un formulario adaptable basado en el XSD del paso anterior. Asocie el formulario para utilizar la biblioteca de cliente &quot;irs&quot;. Esta biblioteca de cliente tiene el código para realizar una llamada al POST al servlet que devuelve el PDF a la aplicación que realiza la llamada. El siguiente código se activa cuando se activa la función _Descargar PDF_ se hace clic
 
 ```javascript
 $(document).ready(function() {
@@ -116,7 +116,7 @@ $(document).ready(function() {
 
 ## Crear servlet personalizado
 
-Cree un servlet personalizado que combine los datos con la plantilla XDP y devuelva el pdf. El código para lograr esto se enumera a continuación. El servlet personalizado forma parte del [Paquete AEMFormsDocumentServices.core-1.0-SNAPSHOT](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)).
+Cree un servlet personalizado que combine los datos con la plantilla XDP y devuelva el PDF. El código para lograrlo se enumera a continuación. El servlet personalizado forma parte del [Paquete AEMFormsDocumentServices.core-1.0-SNAPSHOT](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)).
 
 ```java
 public class GenerateIInteractiveDor extends SlingAllMethodsServlet {
@@ -209,21 +209,21 @@ public class GenerateIInteractiveDor extends SlingAllMethodsServlet {
 }
 ```
 
-En el código de ejemplo, se extrae el nombre xdp y otros parámetros del objeto de solicitud. Si el formulario no está basado en XSD, se crea el documento xml para combinar con el xdp.Si el formulario está basado en XSD, simplemente extraemos el nodo apropiado de los datos enviados del formulario adaptable para generar el documento xml que se combinará con la plantilla xdp.
+En el código de ejemplo, extraemos el nombre xdp y otros parámetros del objeto de solicitud. Si el formulario no está basado en XSD, se crea el documento xml que se combinará con el xdp. Si el formulario se basa en XSD, simplemente extraemos el nodo correspondiente de los datos enviados del formulario adaptable para generar el documento xml que se combinará con la plantilla xdp.
 
 ## Implementar el ejemplo en el servidor
 
 Para probar esto en el servidor local, siga los siguientes pasos:
 
-1. [Descargar e instalar el paquete DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-1. Añada la siguiente entrada en el servicio MAPA de usuario del servicio Apache Sling DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
-1. [Descargar e instalar el paquete personalizado de DocumentServices](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar). Esto tiene el servlet para combinar los datos con la plantilla XDP y transmitir el pdf hacia atrás
-1. [Importar la biblioteca del cliente](assets/generate-interactive-dor-client-lib.zip)
-1. [Importar los recursos del artículo (Formulario adaptable, Plantillas XDP y XSD)](assets/generate-interactive-dor-sample-assets.zip)
-1. [Vista previa del formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/f8918complete/jcr:content?wcmmode=disabled)
+1. [Descargar e instalar el paquete DevelopersWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+1. Agregue la siguiente entrada en el servicio de asignador de usuarios del servicio Apache Sling DesarrolloConUsuarioServicio.core:getformsresourceresolver=fd-service
+1. [Descargar e instalar el paquete personalizado de Document Services](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar). Tiene el servlet para combinar los datos con la plantilla XDP y transmitir el PDF de vuelta
+1. [Importar la biblioteca de cliente](assets/generate-interactive-dor-client-lib.zip)
+1. [Importar los recursos del artículo (formulario adaptable, plantillas XDP y XSD)](assets/generate-interactive-dor-sample-assets.zip)
+1. [Previsualizar formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/f8918complete/jcr:content?wcmmode=disabled)
 1. Rellene algunos de los campos del formulario.
-1. Haga clic en Descargar PDF para obtener el PDF. Es posible que tenga que esperar unos segundos para que el PDF se descargue.
+1. Haga clic en Descargar PDF para obtener el PDF. Es posible que tenga que esperar unos segundos para que el PDF descargue.
 
 >[!NOTE]
 >
->Puede probar el mismo caso de uso con [formulario adaptable no basado en xsd](http://localhost:4502/content/dam/formsanddocuments/two/jcr:content?wcmmode=disabled). Asegúrese de pasar los parámetros adecuados al extremo de la publicación en streampdf.js ubicado en la clientlib de irs.
+>Puede probar el mismo caso de uso con [formulario adaptable no basado en xsd](http://localhost:4502/content/dam/formsanddocuments/two/jcr:content?wcmmode=disabled). Asegúrese de pasar los parámetros adecuados al extremo posterior en streampdf.js, ubicado en irs clientlib.

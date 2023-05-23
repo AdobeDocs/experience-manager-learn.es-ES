@@ -1,6 +1,6 @@
 ---
-title: Cómo trabajar con grandes conjuntos de resultados en AEM sin encabezado
-description: Aprenda a trabajar con grandes conjuntos de resultados con AEM sin encabezado.
+title: AEM Cómo trabajar con grandes conjuntos de resultados en el modo sin encabezado de la
+description: AEM Aprenda a trabajar con grandes conjuntos de resultados con sin encabezado de la.
 version: Cloud Service
 topic: Headless
 feature: GraphQL API
@@ -10,35 +10,35 @@ doc-type: Article
 last-substantial-update: 2023-04-14T00:00:00Z
 jira: KT-13102
 thumbnail: 3418381.jpeg
-source-git-commit: 9eb706e49f12a3ebd5222e733f540db4cf2c8748
+exl-id: f47ce344-310f-4b4c-9340-b0506289f468
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 1%
 
 ---
 
+# AEM Conjuntos de resultados grandes en el modo sin encabezado de
 
-# Grandes conjuntos de resultados en AEM sin encabezado
+AEM Las consultas de GraphQL sin encabezado pueden devolver resultados grandes. AEM En este artículo se describe cómo trabajar con resultados grandes en sin encabezado para garantizar el mejor rendimiento para la aplicación de, y se explica cómo trabajar con resultados de gran tamaño en la aplicación sin encabezado para la aplicación.
 
-AEM consultas de GraphQL sin encabezado pueden devolver grandes resultados. Este artículo describe cómo trabajar con resultados grandes en AEM sin encabezado para garantizar el mejor rendimiento para su aplicación.
+AEM Compatibilidad con sin encabezado a [offset/limit](#list-query) y [paginación basada en cursor](#paginated-query) consultas a subconjuntos más pequeños de un conjunto de resultados más grande. Se pueden realizar varias solicitudes para recopilar tantos resultados como sea necesario.
 
-AEM Headless admite un [offset/limit](#list-query) y [paginación basada en el cursor](#paginated-query) consulta a subconjuntos más pequeños de un conjunto de resultados más grande. Se pueden realizar varias solicitudes para recopilar tantos resultados como sea necesario.
-
-Los ejemplos siguientes utilizan pequeños subconjuntos de resultados (cuatro registros por solicitud) para demostrar las técnicas. En una aplicación real, se utilizaría un mayor número de registros por solicitud para mejorar el rendimiento. 50 registros por solicitud es una buena línea de base.
+Los ejemplos siguientes utilizan pequeños subconjuntos de resultados (cuatro registros por solicitud) para mostrar las técnicas. En una aplicación real, se utilizaría un número mayor de registros por solicitud para mejorar el rendimiento. 50 registros por solicitud es una buena línea de base.
 
 ## Modelo de fragmento de contenido
 
-La paginación y la ordenación se pueden usar con cualquier modelo de fragmento de contenido.
+La paginación y la ordenación se pueden utilizar en cualquier modelo de fragmento de contenido.
 
 ## Consultas persistentes de GraphQL
 
-Cuando se trabaja con conjuntos de datos grandes, se puede utilizar la paginación tanto offset como limitada y basada en el cursor para recuperar un subconjunto específico de los datos. Sin embargo, hay algunas diferencias entre las dos técnicas que pueden hacer que una sea más apropiada que la otra en determinadas situaciones.
+Al trabajar con conjuntos de datos grandes, se pueden utilizar tanto la paginación basada en desplazamiento como en límite y basada en cursor para recuperar un subconjunto específico de los datos. Sin embargo, existen algunas diferencias entre las dos técnicas que pueden hacer que una sea más apropiada que la otra en determinadas situaciones.
 
 ### Desplazamiento/límite
 
-Enumerar consultas, usar `limit` y `offset` proporcione un enfoque directo que especifique el punto de inicio (`offset`) y el número de registros que se van a recuperar (`limit`). Este método permite seleccionar un subconjunto de resultados desde cualquier lugar dentro del conjunto de resultados completo, como saltar a una página específica de resultados. Aunque es fácil de implementar, puede ser lento e ineficiente cuando se trata de resultados grandes, ya que la recuperación de muchos registros requiere el análisis a través de todos los registros anteriores. Este método también puede provocar problemas de rendimiento cuando el valor de desplazamiento es alto, ya que puede requerir la recuperación y la eliminación de muchos resultados.
+Enumerar consultas, usar `limit` y `offset` proporciona un enfoque directo que especifica el punto de partida (`offset`) y el número de registros que se van a recuperar (`limit`). Este método permite seleccionar un subconjunto de resultados desde cualquier lugar dentro del conjunto de resultados completo, como saltar a una página de resultados específica. Aunque es fácil de implementar, puede ser lento e ineficiente cuando se trata de resultados grandes, ya que la recuperación de muchos registros requiere el escaneo a través de todos los registros anteriores. Este método también puede provocar problemas de rendimiento cuando el valor de desplazamiento es alto, ya que puede requerir la recuperación y el descarte de muchos resultados.
 
-#### Consulta de GraphQL
+#### GraphQL query
 
 ```graphql
 # Retrieves a list of Adventures sorted price descending, and title ascending if there is the prices are the same.
@@ -64,7 +64,7 @@ query adventuresByOffetAndLimit($offset:Int!, $limit:Int) {
 
 #### Respuesta de GraphQL
 
-La respuesta JSON resultante contiene la segunda, tercera, cuarta y quinta aventuras más caras. Las dos primeras aventuras de los resultados tienen el mismo precio (`4500` de modo que [consulta de lista](#list-queries) especifica las aventuras con el mismo precio y luego se ordena por título en orden ascendente).
+La respuesta JSON resultante contiene la segunda, tercera, cuarta y quinta Aventuras más caras. Las dos primeras aventuras en los resultados tienen el mismo precio (`4500` por lo que el [consulta de lista](#list-queries) especifica que las aventuras con el mismo precio se ordenarán por título en orden ascendente).
 
 ```json
 {
@@ -99,9 +99,9 @@ La respuesta JSON resultante contiene la segunda, tercera, cuarta y quinta avent
 
 ### Consulta paginada
 
-La paginación basada en el cursor, disponible en consultas paginadas, implica el uso de un cursor (una referencia a un registro específico) para recuperar el siguiente conjunto de resultados. Este método es más eficaz, ya que evita la necesidad de analizar todos los registros anteriores para recuperar el subconjunto de datos requerido. Las consultas paginadas son buenas para iterar a través de grandes conjuntos de resultados desde el principio, hasta algún punto en el medio o hasta el final. Enumerar consultas, usar `limit` y `offset` proporcione un enfoque directo que especifique el punto de inicio (`offset`) y el número de registros que se van a recuperar (`limit`). Este método permite seleccionar un subconjunto de resultados desde cualquier lugar dentro del conjunto de resultados completo, como saltar a una página específica de resultados. Aunque es fácil de implementar, puede ser lento e ineficiente cuando se trata de resultados grandes, ya que la recuperación de muchos registros requiere el análisis a través de todos los registros anteriores. Este método también puede provocar problemas de rendimiento cuando el valor de desplazamiento es alto, ya que puede requerir la recuperación y la eliminación de muchos resultados.
+La paginación basada en cursor, disponible en consultas paginadas, implica utilizar un cursor (una referencia a un registro específico) para recuperar el siguiente conjunto de resultados. Este método es más eficaz, ya que evita la necesidad de explorar todos los registros anteriores para recuperar el subconjunto de datos requerido. Las consultas paginadas son buenas para recorrer en iteración grandes conjuntos de resultados desde el principio, hasta algún punto del medio o hasta el final. Enumerar consultas, usar `limit` y `offset` proporciona un enfoque directo que especifica el punto de partida (`offset`) y el número de registros que se van a recuperar (`limit`). Este método permite seleccionar un subconjunto de resultados desde cualquier lugar dentro del conjunto de resultados completo, como saltar a una página de resultados específica. Aunque es fácil de implementar, puede ser lento e ineficiente cuando se trata de resultados grandes, ya que la recuperación de muchos registros requiere el escaneo a través de todos los registros anteriores. Este método también puede provocar problemas de rendimiento cuando el valor de desplazamiento es alto, ya que puede requerir la recuperación y el descarte de muchos resultados.
 
-#### Consulta de GraphQL
+#### GraphQL query
 
 ```graphql
 # Retrieves the most expensive Adventures (sorted by title ascending if there is the prices are the same)
@@ -133,7 +133,7 @@ query adventuresByPaginated($first:Int, $after:String) {
 
 #### Respuesta de GraphQL
 
-La respuesta JSON resultante contiene la segunda, tercera, cuarta y quinta aventuras más caras. Las dos primeras aventuras de los resultados tienen el mismo precio (`4500` de modo que [consulta de lista](#list-queries) especifica las aventuras con el mismo precio y luego se ordena por título en orden ascendente).
+La respuesta JSON resultante contiene la segunda, tercera, cuarta y quinta Aventuras más caras. Las dos primeras aventuras en los resultados tienen el mismo precio (`4500` por lo que el [consulta de lista](#list-queries) especifica que las aventuras con el mismo precio se ordenarán por título en orden ascendente).
 
 ```json
 {
@@ -176,7 +176,7 @@ La respuesta JSON resultante contiene la segunda, tercera, cuarta y quinta avent
 
 #### Siguiente conjunto de resultados paginados
 
-El siguiente conjunto de resultados se puede obtener utilizando la variable `after` y `endCursor` de la consulta anterior. Si no hay más resultados que recuperar, `hasNextPage` es `false`.
+El siguiente conjunto de resultados se puede recuperar mediante la variable `after` y el parámetro `endCursor` valor de la consulta anterior. Si no hay más resultados que recuperar, `hasNextPage` es `false`.
 
 ##### Variables de consulta
 
@@ -187,19 +187,19 @@ El siguiente conjunto de resultados se puede obtener utilizando la variable `aft
 }
 ```
 
-## Ejemplos de reacción
+## Ejemplos de React
 
-Los siguientes son ejemplos de React que muestran cómo usar [desplazamiento y límite](#offset-and-limit) y [paginación basada en el cursor](#cursor-based-pagination) enfoques. Normalmente, el número de resultados por solicitud es mayor; sin embargo, a los efectos de estos ejemplos, el límite se establece en 5.
+Los siguientes son ejemplos de React que muestran cómo utilizar [desplazamiento y límite](#offset-and-limit) y [paginación basada en cursor](#cursor-based-pagination) enfoques. Normalmente, el número de resultados por solicitud es mayor; sin embargo, a efectos de estos ejemplos, el límite se establece en 5.
 
-### Ejemplo de desvío y límite
+### Ejemplo de desplazamiento y límite
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418381/?quality=12&learn=on)
 
-Con el desplazamiento y el límite, los subconjuntos de resultados se pueden recuperar y mostrar fácilmente.
+Con el desplazamiento y el límite, se pueden recuperar y mostrar fácilmente subconjuntos de resultados.
 
-#### vínculo useEffect
+#### gancho useEffect
 
-La variable `useEffect` El enlace invoca una consulta persistente (`adventures-by-offset-and-limit`) que recupera una lista de aventuras. La consulta utiliza la variable `offset` y `limit` para especificar el punto de inicio y el número de resultados que se van a recuperar. La variable `useEffect` el enlace se invoca cuando la variable `page` cambia de valor.
+El `useEffect` hook invoca una consulta persistente (`adventures-by-offset-and-limit`) que recupera una lista de aventuras. La consulta utiliza el `offset` y `limit` parámetros para especificar el punto de partida y el número de resultados que se van a recuperar. El `useEffect` Se invoca el vínculo cuando la variable `page` cambia el valor.
 
 
 ```javascript
@@ -242,7 +242,7 @@ export function useOffsetLimitAdventures(page, limit) {
 
 #### Componente
 
-El componente utiliza la variable `useOffsetLimitAdventures` para recuperar una lista de aventuras. La variable `page` se incrementa y se reduce para obtener el conjunto de resultados siguiente y anterior. La variable `hasMore` se utiliza para determinar si el botón de página siguiente debe estar habilitado.
+El componente utiliza el `useOffsetLimitAdventures` para recuperar una lista de aventuras. El `page` se incrementa y se reduce para obtener el conjunto de resultados siguiente y anterior. El `hasMore` se utiliza para determinar si el botón de página siguiente debe estar habilitado.
 
 ```javascript
 import { useState } from "react";
@@ -306,12 +306,12 @@ export default function OffsetLimitAdventures() {
 
 _Cada cuadro rojo representa una consulta HTTP GraphQL paginada discreta._
 
-Mediante la paginación basada en el cursor, se pueden recuperar y mostrar fácilmente grandes conjuntos de resultados, recopilando gradualmente los resultados y concatenándolos a los resultados existentes.
+Mediante la paginación basada en cursor, se pueden recuperar y mostrar fácilmente conjuntos de resultados grandes, recopilando de forma incremental los resultados y concatenándolos a los resultados existentes.
 
 
-#### Enlace UseEffect
+#### Gancho UseEffect
 
-La variable `useEffect` El enlace invoca una consulta persistente (`adventures-by-paginated`) que recupera una lista de aventuras. La consulta utiliza la variable `first` y `after` para especificar el número de resultados que se recuperarán y el cursor desde el que se iniciará. `fetchData` bucles continuos, recopilando el siguiente conjunto de resultados paginados, hasta que no haya más resultados que recuperar.
+El `useEffect` hook invoca una consulta persistente (`adventures-by-paginated`) que recupera una lista de aventuras. La consulta utiliza el `first` y `after` parámetros para especificar el número de resultados que se van a recuperar y el cursor desde el que se va a iniciar. `fetchData` continuamente realiza un bucle, recopilando el siguiente conjunto de resultados paginados, hasta que no haya más resultados que recuperar.
 
 ```javascript
 import { useState, useEffect } from "react";
@@ -366,7 +366,7 @@ export function usePaginatedAdventures() {
 
 #### Componente
 
-El componente utiliza la variable `usePaginatedAdventures` para recuperar una lista de aventuras. La variable `queryCount` se utiliza para mostrar el número de solicitudes HTTP realizadas para recuperar la lista de aventuras.
+El componente utiliza el `usePaginatedAdventures` para recuperar una lista de aventuras. El `queryCount` se utiliza para mostrar el número de solicitudes HTTP realizadas para recuperar la lista de aventuras.
 
 ```javascript
 import { useState } from "react";

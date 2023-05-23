@@ -1,6 +1,6 @@
 ---
-title: Algunos consejos y trucos útiles en la interfaz de usuario
-description: Documento para mostrar algunas sugerencias útiles de la interfaz de usuario
+title: Algunos consejos y trucos útiles para la interfaz de usuario
+description: Documento para mostrar algunos consejos útiles sobre la interfaz de usuario
 feature: Adaptive Forms
 type: Tutorial
 version: 6.5
@@ -12,19 +12,19 @@ last-substantial-update: 2019-06-09T00:00:00Z
 source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
 source-wordcount: '167'
-ht-degree: 4%
+ht-degree: 7%
 
 ---
 
 # Alternar visibilidad del campo de contraseña
 
-Un caso de uso común es permitir que los usuarios que rellenen el formulario puedan acceder al texto introducido en el campo de contraseña.
-Para lograr este caso de uso, he utilizado el icono de ojo del [Biblioteca Awesome de fuentes](https://fontawesome.com/). El CSS requerido y el eye.svg se incluyen en la biblioteca de cliente creada para esta demostración.
+Un caso de uso común es permitir que los rellenadores de formulario cambien a la visibilidad del texto introducido en el campo de contraseña.
+Para llevar a cabo este caso de uso, he utilizado el icono de ojo del [Biblioteca impresionante de fuentes](https://fontawesome.com/). El CSS requerido y eye.svg se incluyen en la biblioteca de cliente creada para esta demostración.
 
 
 ## Código de muestra
 
-El formulario adaptable tiene un campo de tipo PasswordBox denominado **ssnField**.
+El formulario adaptable tiene un campo de tipo PasswordBox llamado **ssnField**.
 
 El siguiente código se ejecuta cuando se carga el formulario
 
@@ -48,7 +48,7 @@ $(document).ready(function() {
 });
 ```
 
-Se ha utilizado el CSS siguiente para colocar el **ojo** dentro del campo de contraseña
+El siguiente CSS se utilizó para colocar la variable **ojo** dentro del campo contraseña
 
 ```javascript
 .svg-inline--fa {
@@ -63,12 +63,12 @@ Se ha utilizado el CSS siguiente para colocar el **ojo** dentro del campo de con
 }
 ```
 
-## Implementar el ejemplo de contraseña de alternador
+## Implementar el ejemplo de contraseña de alternancia
 
-* Descargue el [biblioteca cliente](assets/simple-ui-tips.zip)
-* Descargue el [formulario de ejemplo](assets/simple-ui-tricks-form.zip)
-* Importe la biblioteca del cliente utilizando la variable [interfaz de usuario del administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
-* Importe el formulario de ejemplo utilizando la variable [Forms y documento](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* [Obtener una vista previa del formulario](http://localhost:4502/content/dam/formsanddocuments/simpleuitips/jcr:content?wcmmode=disabled)
+* Descargue la [biblioteca de cliente](assets/simple-ui-tips.zip)
+* Descargue la [formulario de ejemplo](assets/simple-ui-tricks-form.zip)
+* Importe la biblioteca de cliente mediante el [IU del administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
+* Importe el formulario de ejemplo con la variable [Forms y documento](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* [Previsualización del formulario](http://localhost:4502/content/dam/formsanddocuments/simpleuitips/jcr:content?wcmmode=disabled)
 
 

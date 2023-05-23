@@ -1,6 +1,6 @@
 ---
-title: Captura de volcados de montículos de una JVM en un servidor de Windows
-description: Captura de los volcados de montículos de ejecutar procesos Java en un servidor de windows
+title: Cómo capturar volcados de pila de una JVM en un servidor Windows
+description: Capture los volcados de la pila de ejecutar el proceso Java en un servidor Windows
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# Captura de volcados de montículos de una JVM en un servidor de Windows
+# Cómo capturar volcados de pila de una JVM en un servidor Windows
 
-*Este vídeo recorre los pasos para capturar volcados de memoria de una JVM en un servidor de windows.*
+*Este vídeo explica los pasos para capturar los volcados de pila de una JVM en un servidor de Windows.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335490?quality=12&learn=on)

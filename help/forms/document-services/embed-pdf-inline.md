@@ -1,6 +1,6 @@
 ---
 title: Mostrar documento de registro en línea
-description: Combine los datos de formulario adaptables con la plantilla XDP y muestre el PDF en línea mediante la API de pdf incrustada de document cloud.
+description: Combine datos de formulario adaptables con la plantilla XDP y muestre el PDF en línea mediante la API de PDF incrustado de Document Cloud.
 version: 6.4,6.5
 feature: Forms Service
 topic: Development
@@ -12,25 +12,25 @@ last-substantial-update: 2021-07-07T00:00:00Z
 source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
 source-wordcount: '548'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # Mostrar DoR en línea
 
-Un caso de uso común es mostrar un documento pdf con los datos introducidos por la persona que rellena el formulario.
+Un caso de uso común es mostrar un documento pdf con los datos introducidos por el usuario que rellena el formulario.
 
-Para lograr este caso de uso, hemos utilizado la variable [API de incrustación de Adobe PDF](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html).
+Para llevar a cabo este caso de uso, hemos utilizado el [API de incrustación de Adobe PDF](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html).
 
-Se realizaron los siguientes pasos para completar la integración
+Se han realizado los siguientes pasos para completar la integración
 
-## Cree un componente personalizado para mostrar el PDF en línea
+## Crear un componente personalizado para mostrar el PDF en línea
 
-Se ha creado un componente personalizado (incrustar-pdf) para incrustar el pdf devuelto por la llamada del POST.
+Se ha creado un componente personalizado (incrustado-pdf) para incrustar el PDF devuelto por la llamada del POST.
 
 ## Biblioteca de cliente
 
-El siguiente código se ejecuta cuando el `viewPDF` se hace clic en el botón de casilla de verificación. Pasamos los datos del formulario adaptable, el nombre de la plantilla al extremo para generar el pdf. A continuación, el pdf generado se muestra al usuario que rellena el formulario utilizando la biblioteca JavaScript de pdf incrustado.
+El siguiente código se ejecuta cuando el `viewPDF` al hacer clic en el botón de casilla. Pasamos los datos del formulario adaptable, el nombre de la plantilla, al punto final para generar el pdf. A continuación, el PDF generado se muestra al usuario que rellena el formulario mediante la biblioteca JavaScript de PDF incrustados.
 
 ```javascript
 $(document).ready(function() {
@@ -84,9 +84,9 @@ $(document).ready(function() {
 
 ## Generar datos de ejemplo para el XDP
 
-* Abra el XDP en AEM Forms designer.
+* Abra el XDP en AEM Forms Designer.
 * Haga clic en Archivo | Propiedades del formulario | Vista previa
-* Haga clic en Generar datos de vista previa
+* Haga clic en Generar datos de previsualización
 * Haga clic en Generar
 * Proporcionar un nombre de archivo significativo como &quot;form-data.xml&quot;
 
@@ -96,27 +96,27 @@ Puede utilizar cualquiera de las herramientas gratuitas en línea para [generar 
 
 ## Cargar la plantilla
 
-Asegúrese de cargar la plantilla xdp en [AEM Forms](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) uso del botón crear
+Asegúrese de cargar la plantilla xdp en [AEM Forms](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) con el botón crear
 
 
 ## Crear formulario adaptable
 
 Cree un formulario adaptable basado en el XSD del paso anterior.
-Agregue una nueva pestaña a la adaptativa. Agregue un componente de casilla de verificación y un componente de pdf incrustado a esta ficha Asegúrese de asignar un nombre a la vista de casilla de verificación PDF.
-Configure el componente embed-pdf como se muestra en la captura de pantalla siguiente
+Agregue una nueva pestaña al formulario adaptable. Agregue un componente Casilla de verificación e incrustar PDF a esta pestaña. Asegúrese de asignar un nombre a la casilla de verificación viewPDF.
+Configure el componente incrustado-pdf como se muestra en la captura de pantalla siguiente
 ![embed-pdf](assets/embed-pdf-configuration.png)
 
-**Incrustar clave de API del PDF** - Esta es la clave que puede utilizar para incrustar el pdf. Esta clave solo funciona con localhost. Puede crear [su propia clave](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) y asociarlo a otro dominio.
+**Incrustar clave API de PDF** : Esta es la clave que puede utilizar para incrustar el pdf. Esta clave solo funcionará con localhost. Puede crear [su propia clave](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) y asociarlo a otro dominio.
 
-**Extremo que devuelve el pdf** - Este es el servlet personalizado que combina los datos con la plantilla xdp y devuelve el pdf.
+**El extremo devuelve el PDF** : Este es el servlet personalizado que combinará los datos con la plantilla xdp y devolverá el pdf.
 
-**Nombre de la plantilla** - Este es el camino a la xdp. Normalmente, se almacena en la carpeta formsanddocuments .
+**Nombre de plantilla** - Esta es la ruta al xdp. Normalmente, se almacena en la carpeta formsanddocuments.
 
-**Nombre de archivo del PDF** - Esta es la cadena que aparecerá en el componente pdf incrustado.
+**Nombre de archivo del PDF** : esta es la cadena que aparecerá en el componente incrustar pdf.
 
 ## Crear servlet personalizado
 
-Se creó un servlet personalizado para combinar los datos con la plantilla XDP y devolver el pdf. El código para lograr esto se enumera a continuación. El servlet personalizado forma parte del [paquete incrustado pdf](assets/embedpdf.core-1.0-SNAPSHOT.jar)
+Se ha creado un servlet personalizado para combinar los datos con la plantilla XDP y devolver el PDF. El código para lograrlo se enumera a continuación. El servlet personalizado forma parte del [incrustar paquete pdf](assets/embedpdf.core-1.0-SNAPSHOT.jar)
 
 ```java
 import java.io.ByteArrayInputStream;
@@ -226,11 +226,11 @@ public class StreamPDFToEmbed extends SlingAllMethodsServlet {
 
 Para probar esto en el servidor local, siga los siguientes pasos:
 
-1. [Descargar e instalar el paquete incrustado de pdf](assets/embedpdf.core-1.0-SNAPSHOT.jar).
-Esto tiene el servlet para combinar los datos con la plantilla XDP y transmitir el pdf hacia atrás.
-1. Añada la ruta /bin/getPDFToEmbed en la sección de rutas excluidas del filtro CSRF de Granite de Adobe utilizando la variable [AEM ConfigMgr](http://localhost:4502/system/console/configMgr). En el entorno de producción, se recomienda utilizar la variable [Marco de protección CSRF](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html?lang=en)
-1. [Importar la biblioteca del cliente y el componente personalizado](assets/embed-pdf.zip)
+1. [Descargar e instalar el paquete incrustado en PDF](assets/embedpdf.core-1.0-SNAPSHOT.jar).
+Tiene el servlet para combinar los datos con la plantilla XDP y transmitir el PDF de vuelta.
+1. Añada la ruta /bin/getPDFToEmbed en la sección de rutas excluidas del filtro CSRF de Granite de Adobe utilizando [AEM ConfigMgr de](http://localhost:4502/system/console/configMgr). En el entorno de producción se recomienda utilizar la variable [Marco de protección CSRF](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html?lang=en)
+1. [Importar la biblioteca de cliente y el componente personalizado](assets/embed-pdf.zip)
 1. [Importar el formulario adaptable y la plantilla](assets/embed-pdf-form-and-xdp.zip)
-1. [Vista previa del formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/from1040/jcr:content?wcmmode=disabled)
-1. Rellene algunos campos del formulario
-1. Tabule hasta la ficha Ver PDF . Seleccione la casilla de verificación ver pdf . Debería ver un pdf en el formulario rellenado con los datos del formulario adaptable
+1. [Previsualizar formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/from1040/jcr:content?wcmmode=disabled)
+1. Rellene algunos de los campos del formulario
+1. Vaya a la pestaña Ver PDF. Seleccione la casilla de verificación Ver PDF. Debería ver un PDF mostrado en el formulario rellenado con los datos del formulario adaptable

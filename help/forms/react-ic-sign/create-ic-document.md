@@ -1,6 +1,6 @@
 ---
-title: Generar documento de comunicación interactiva mediante API
-description: Generar documento de comunicación interactiva combinando los datos de la aplicación de reacción
+title: Generar un documento de comunicación interactiva mediante API
+description: Generar un documento de comunicación interactiva combinando los datos de la aplicación de React
 feature: Adaptive Forms,Acrobat Sign
 version: 6.4,6.5
 topic: Development
@@ -18,12 +18,12 @@ ht-degree: 1%
 
 # Generar documento de comunicación interactiva
 
-Para generar un documento de comunicación interactiva mediante la API, debemos realizar lo siguiente
+Para generar un documento de comunicación interactiva mediante la API, se debe realizar lo siguiente
 
 * Crear servicio de rellenado previo
 * Generar documento de comunicación interactiva
 
-El nombre del servicio `ccm-print-test` para acceder a este servicio. Una vez definido este servicio de rellenado previo, puede acceder a este servicio en la implementación de pasos del proceso de flujo de trabajo o servlet para generar el documento del canal de impresión.
+El nombre del servicio `ccm-print-test` se utiliza para acceder a este servicio. Una vez definido este servicio de rellenado previo, puede acceder a este servicio en el servlet o en la implementación del paso del proceso de flujo de trabajo para generar el documento del canal de impresión.
 
 ```java
 package com.acrobatsign.core;
@@ -229,7 +229,7 @@ public String getTransientDocumentID(Document documentForSigning) throws IOExcep
 }
 ```
 
-## Obtener ID de utilidad
+## Obtener ID del widget
 
 ```java
 public String getWidgetID(String transientDocumentID) {
@@ -278,7 +278,7 @@ public String getWidgetID(String transientDocumentID) {
 }
 ```
 
-## Obtener URL de la utilidad
+## Obtener URL del widget
 
 ```java
 public String getWidgetURL(String widgetId) throws ClientProtocolException, IOException {
@@ -317,4 +317,4 @@ public String getWidgetURL(String widgetId) throws ClientProtocolException, IOEx
 
 ## Pasos siguientes
 
-Escriba un [Envoltura del servicio OSGi para exponer la API de Acrobat Sign](./wrapper-sign-api.md)
+Escribir un [El contenedor del servicio OSGi para exponer la API de Acrobat Sign](./wrapper-sign-api.md)

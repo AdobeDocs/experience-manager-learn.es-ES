@@ -1,6 +1,6 @@
 ---
 title: Mostrar varios documentos pdf
-description: Recorra varios documentos pdf en forma adaptable.
+description: Desplazarse por varios documentos pdf en un formulario adaptable.
 version: 6.5
 feature: Adaptive Forms
 topic: Development
@@ -20,37 +20,37 @@ ht-degree: 5%
 
 Un caso de uso común es mostrar varios documentos de PDF al usuario que rellena el formulario para revisarlos antes de enviarlo.
 
-Para lograr este caso de uso, hemos utilizado la variable [API de incrustación de Adobe PDF](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html).
+Para llevar a cabo este caso de uso, hemos utilizado el [API de incrustación de Adobe PDF](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html).
 
-[Una demostración en vivo de esta muestra se puede experimentar aquí.](https://forms.enablementadobe.com/content/dam/formsanddocuments/wefinancecreditcard/jcr:content?wcmmode=disabled)
+[Una demostración en directo de esta muestra se puede experimentar aquí.](https://forms.enablementadobe.com/content/dam/formsanddocuments/wefinancecreditcard/jcr:content?wcmmode=disabled)
 
-Se realizaron los siguientes pasos para completar la integración
+Se han realizado los siguientes pasos para completar la integración
 
-## Crear un componente personalizado para mostrar varios documentos del PDF
+## Crear un componente personalizado para mostrar varios documentos de PDF
 
-Se creó un componente personalizado (pdf-carousel) para recorrer los documentos pdf
+Se ha creado un componente personalizado (pdf-carousel) para recorrer en ciclo los documentos pdf
 
 ## Biblioteca de cliente
 
-Se creó una biblioteca de cliente para mostrar los PDF mediante la API de incrustación de Adobe PDF. Los PDF que se van a mostrar se especifican en los componentes pdf-carrusel.
+Se creó una biblioteca de cliente para mostrar los PDF mediante la API de incrustación de Adobe PDF. Los PDF que se van a mostrar se especifican en los componentes de carrusel pdf.
 
 ## Crear formulario adaptable
 
-Crear un formulario adaptable basado en algunas pestañas (Este ejemplo tiene 3 fichas) Añadir algunos componentes de formulario adaptable en las dos primeras pestañas Añadir el componente de carrusel pdf en la tercera pestaña Configurar el componente de carrusel pdf como se muestra en la captura de pantalla siguiente
-![pdf-carousel](assets/pdf-carousel-af-component.png)
+Crear un formulario adaptable basado en algunas pestañas (este ejemplo tiene 3 pestañas) Agregar algunos componentes de formulario adaptable en las dos primeras pestañas Agregar el componente de carrusel de PDF en la tercera pestaña Configurar el componente de carrusel de PDF como se muestra en la captura de pantalla siguiente
+![pdf-carrusel](assets/pdf-carousel-af-component.png)
 
-**Incrustar clave de API del PDF** - Esta es la clave que puede utilizar para incrustar el pdf. Esta clave solo funciona con localhost. Puede crear [su propia clave](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) y asociarlo a otro dominio.
+**Incrustar clave API de PDF** : Esta es la clave que puede utilizar para incrustar el pdf. Esta clave solo funcionará con localhost. Puede crear [su propia clave](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) y asociarlo a otro dominio.
 
-**Especificar documentos del PDF** - Aquí puede especificar los documentos pdf que desea que se muestren en el carrusel.
+**Especificar documentos de PDF** - Aquí puede especificar los documentos pdf que desea que se muestren en el carrusel.
 
 
 ## Implementar el ejemplo en el servidor
 
 Para probar esto en el servidor local, siga los pasos:
 
-1. [Importar la biblioteca del cliente](assets/pdf-carousel-client-lib.zip) en la instancia de AEM local [uso del administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
-1. [Importación del componente de carrusel pdf](assets/pdf-carousel-component.zip) en la instancia de AEM local [uso del administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
-1. [Importar el formulario adaptable ](assets/adaptive-form-pdf-carousel.zip) en la instancia de AEM local [uso del administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
-1. [Importe los pdf de muestra que desea mostrar](assets/pdf-carousel-sample-documents.zip) en la instancia de AEM local [uso del vínculo de carga del archivo de recursos](http://localhost:4502/assets.html/content/dam)
-1. [Vista previa del formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/wefinancecreditcard/jcr:content?wcmmode=disabled)
-1. Tabule en la ficha Documentos para revisar . Debería ver tres documentos PDF en el componente carrusel.
+1. [Importar la biblioteca de cliente](assets/pdf-carousel-client-lib.zip) AEM en la instancia local de la [uso del administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
+1. [Importar el componente de carrusel PDF](assets/pdf-carousel-component.zip) AEM en la instancia local de la [uso del administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
+1. [Importar el formulario adaptable ](assets/adaptive-form-pdf-carousel.zip) AEM en la instancia local de la [uso del administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
+1. [Importe los archivos PDF de ejemplo para mostrarlos](assets/pdf-carousel-sample-documents.zip) AEM en la instancia local de la [uso del vínculo de carga de archivos de recursos](http://localhost:4502/assets.html/content/dam)
+1. [Previsualizar formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/wefinancecreditcard/jcr:content?wcmmode=disabled)
+1. Vaya a la pestaña Documentos para revisar. Debería ver tres documentos de PDF en el componente de carrusel.

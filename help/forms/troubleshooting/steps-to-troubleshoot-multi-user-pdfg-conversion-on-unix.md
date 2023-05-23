@@ -1,6 +1,6 @@
 ---
-title: Pasos para solucionar problemas de conversión PDFG de varios usuarios en una configuración de Unix
-description: Solucionar varios problemas del Generador de PDF de usuario en la configuración de UNIX.
+title: Pasos para solucionar los problemas de conversión de PDF Generator para varios usuarios en una configuración Unix
+description: Solucione varios problemas del PDF Generador de usuarios en la instalación de UNIX.
 type: Troubleshooting
 role: Developer
 level: Intermediate
@@ -17,8 +17,8 @@ ht-degree: 0%
 ---
 
 
-# Pasos para solucionar problemas de conversión PDFG de varios usuarios en una configuración de Unix
+# Pasos para solucionar los problemas de conversión de PDF Generator para varios usuarios en una configuración Unix
 
-*Este vídeo describe el proceso de resolución de problemas de conversión PDFG de varios usuarios en una configuración Unix.*
+*Este vídeo describe el proceso de resolución de problemas de conversión de PDF Generator para varios usuarios en una configuración Unix.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335549?quality=12&learn=on)

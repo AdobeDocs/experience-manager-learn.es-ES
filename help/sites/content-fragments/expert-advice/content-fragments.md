@@ -1,6 +1,6 @@
 ---
-title: Consejos y trucos sobre los fragmentos de contenido
-description: Jerarquía del sitio, taxonomía y consejos sobre etiquetado Prácticas recomendadas
+title: Sugerencias y trucos sobre fragmentos de contenido
+description: Prácticas recomendadas sobre jerarquía de sitios, taxonomía y etiquetas
 hide: true
 hidefromtoc: true
 source-git-commit: 3eb429039589ae26a81bc6d24f020a77517133e8
@@ -11,4 +11,4 @@ ht-degree: 0%
 ---
 
 
-# Consejos y trucos sobre los fragmentos de contenido
+# Sugerencias y trucos sobre fragmentos de contenido

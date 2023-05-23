@@ -1,6 +1,6 @@
 ---
-title: 'Cloud 5: Solucionar su... Caché'
-description: Algunos consejos fáciles para optimizar su caché y acelerar su sitio
+title: 'Cloud 5: Reparar su... Caché'
+description: Algunas sugerencias sencillas para optimizar la caché y acelerar el sitio
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
@@ -15,13 +15,13 @@ ht-degree: 11%
 
 ---
 
-# Cloud 5: Solucionar su... Caché
+# Cloud 5: Reparar su... Caché
 
-En una segunda serie de dos partes, exploramos algunas cosas que puede observar que aceleran el almacenamiento en caché en AEM as a Cloud Service.
+AEM En una serie de dos partes de la temporada dos, exploramos algunas cosas que puede ver que acelerarán su almacenamiento en caché en el as a Cloud Service de la.
 
 >[!VIDEO](https://video.tv.adobe.com/v/343475?quality=12&learn=on)
 
 ## Contenido cubierto en este vídeo
 
-+ [Almacenamiento en caché y envío de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=es)
-+ [Faro Google](https://developers.google.com/web/tools/lighthouse)
++ [Almacenamiento en caché y entrega de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=es)
++ [Google Lighthouse](https://developers.google.com/web/tools/lighthouse)

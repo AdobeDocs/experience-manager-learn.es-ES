@@ -1,7 +1,7 @@
 ---
-title: Creación de una plantilla de documento de canal web AEM Forms
+title: Creación de AEM Forms de plantilla de documento de canal web
 seo-title: Creating Web Channel Document Template AEM Forms
-description: Esta es la parte 4 del tutorial de varios pasos para crear su primer documento interactivo de comunicaciones. En esta parte, crearemos una plantilla para el documento de canal web.
+description: Esta es la parte 4 del tutorial de varios pasos para crear su primer documento de comunicaciones interactivas. En esta parte, crearemos una plantilla para el documento del canal web.
 seo-description: This is part 4 of the multistep tutorial for creating your first interactive communications document. In this part, we will create a template for web channel document.
 uuid: b4c9f68b-3091-4f87-988d-705f0296a8d8
 feature: Interactive Communication
@@ -22,18 +22,18 @@ ht-degree: 1%
 
 ---
 
-# Creación de una plantilla de documento de canal web AEM Forms {#creating-web-channel-document-template-aem-forms}
+# Creación de AEM Forms de plantilla de documento de canal web {#creating-web-channel-document-template-aem-forms}
 
-En esta parte, crearemos una plantilla para el documento de canal web.
-Creación de plantillas de documento de canal web en AEM Forms 6.4
+En esta parte, crearemos una plantilla para el documento del canal web.
+Creación de una plantilla de documento de canal web en AEM Forms 6.4
 >[!VIDEO](https://video.tv.adobe.com/v/22342?quality=12&learn=on)
 
-Creación de plantillas de documento de canal web en AEM Forms 6.5
+Creación de una plantilla de documento de canal web en AEM Forms 6.5
 >[!VIDEO](https://video.tv.adobe.com/v/27807?quality=12&learn=on)
 
-La plantilla tendrá áreas de destino/marcadores de posición que albergarán varios tipos de fragmentos de documentos. Por ejemplo, una plantilla puede tener áreas de destino para logotipos y otra área de destino para contenido de texto.
+La plantilla tendrá áreas de destino o marcadores de posición que albergarán varios tipos de fragmentos de documento. Por ejemplo, una plantilla puede tener áreas de destino para logotipos y otra área de destino para contenido de texto.
 
-Una vez creada la plantilla de documento del canal web, puede crear documentos de comunicación interactiva basados en la plantilla.
+Una vez creada la plantilla de documento de canal web, puede crear documentos de comunicación interactiva basados en la plantilla.
 
 ## Pasos siguientes
 

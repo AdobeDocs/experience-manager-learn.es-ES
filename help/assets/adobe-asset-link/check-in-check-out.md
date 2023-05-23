@@ -1,6 +1,6 @@
 ---
-title: Extracción y registro
-description: Adobe Asset Link le permite extraer AEM Assets directamente de la aplicación creativa en la que está trabajando y puede empezar a realizar ediciones inmediatamente. Puede volver a registrar los recursos en AEM Assets fácilmente con el control de versiones y comentarios adecuados después de haber terminado de editarlos en la aplicación de Creative Cloud.
+title: Check-In Check-Out
+description: Adobe Asset Link le permite extraer AEM Assets directamente de la aplicación creativa en la que está trabajando para que pueda empezar a realizar ediciones inmediatamente. Puede volver a registrar recursos en AEM Assets fácilmente con las versiones y los comentarios adecuados una vez que haya terminado de editarlos en la aplicación de Creative Cloud.
 sub-product: Experience Manager Assets
 feature: Adobe Asset Link
 version: 6.4, 6.5, Cloud Service
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Extracción y registro {#check-in-check-out}
+# Check-In Check-Out {#check-in-check-out}
 
-Recursos de Adobe le permite extraer AEM Assets directamente de la aplicación creativa en la que está trabajando y puede empezar a realizar ediciones inmediatamente. Puede volver a registrar los recursos en AEM Assets fácilmente con el control de versiones y comentarios adecuados después de haber terminado de editarlos en la aplicación de Creative Cloud.
+El recurso de Adobe le permite extraer AEM Assets directamente de la aplicación creativa en la que está trabajando para que pueda empezar a realizar ediciones inmediatamente. Puede volver a registrar recursos en AEM Assets fácilmente con las versiones y los comentarios adecuados una vez que haya terminado de editarlos en la aplicación de Creative Cloud.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33886?quality=12&learn=on)

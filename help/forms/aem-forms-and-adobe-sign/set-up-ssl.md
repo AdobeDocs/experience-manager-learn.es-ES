@@ -1,6 +1,6 @@
 ---
-title: Habilitar SSL para AEM
-description: Utilice el asistente de configuración SSL de Adobe Experience Manager para configurar una instancia de AEM para que se ejecute sobre HTTPS.
+title: AEM Habilitar SSL para los
+description: Utilice el asistente de configuración de SSL de Adobe Experience Manager AEM para configurar una instancia de para que se ejecute en HTTPS.
 feature: Adaptive Forms
 version: 6.4,6.5
 thumbnail: 17993.jpg
@@ -16,9 +16,9 @@ ht-degree: 0%
 
 ---
 
-# Habilitar SSL para AEM
+# AEM Habilitar SSL para los
 
-Uno de los requisitos previos para integrar AEM Forms con Acrobat Sign es tener la instancia de AEM configurada para usar SSL. Asistente de configuración SSL de Adobe Experience Manager para facilitar la configuración de una instancia de AEM para que se ejecute en HTTPS.
+Uno de los requisitos previos para integrar AEM Forms con Acrobat Sign AEM es tener la instancia de configurada para utilizar SSL. Asistente de configuración de SSL de Adobe Experience Manager AEM para facilitar la configuración de una instancia de para que se ejecute en HTTPS.
 En el siguiente vídeo se explican los pasos necesarios para configurar SSL mediante el asistente
 
 >[!VIDEO](https://video.tv.adobe.com/v/17993?quality=12&learn=on)

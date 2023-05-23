@@ -1,6 +1,6 @@
 ---
-title: Incrustación de formularios Forms/HTML5 adaptables en una página web
-description: Pasos de configuración necesarios para incrustar formularios Forms adaptables o HTML5 en una página web que no sea AEM.
+title: Incrustación de formularios adaptables Forms/HTML5 en una página web
+description: Pasos de configuración necesarios para incrustar formularios adaptables de Forms o HTMLAEM 5 en una página web no.
 feature: Adaptive Forms
 type: Tutorial
 version: 6.5
@@ -17,17 +17,17 @@ ht-degree: 13%
 
 ---
 
-# Incrustación de formularios adaptables o HTML5 en una página web
+# Incrustación de formularios adaptables o formularios de HTML5 en la página web
 
-El formulario adaptable incrustado es completamente funcional, y los usuarios pueden rellenarlo y enviarlo sin abandonar la página. Ayuda al usuario a permanecer en el contexto de otros elementos de la página web e interactuar simultáneamente con el formulario.
+El formulario adaptable incrustado es completamente funcional, y los usuarios pueden rellenarlo y enviarlo sin abandonar la página. Esto permite al usuario mantenerse en el contexto de otros elementos de la página web e interactuar simultáneamente con el formulario.
 
-En el siguiente vídeo se explican los pasos necesarios para integrar un formulario Adaptable o HTML5 en una página web.
-Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html) para conocer los requisitos previos, las prácticas recomendadas, etc.
+En el siguiente vídeo se explican los pasos necesarios para incrustar un formulario adaptable o HTML5 en una página web.
+Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html) para conocer los requisitos previos recomendados, las prácticas recomendadas, etc.
 >[!VIDEO](https://video.tv.adobe.com/v/335893?quality=12&learn=on)
 
-Puede descargar los archivos de muestra utilizados en el vídeo [de aquí](assets/embedding-af-web-page.zip)
+Puede descargar los archivos de muestra utilizados en el vídeo [desde aquí](assets/embedding-af-web-page.zip)
 
-El siguiente es el código utilizado para recuperar el formulario adaptable e incrustar el formulario en el contenedor identificado por el nombre de clase **right**
+El siguiente es el código utilizado para recuperar el formulario adaptable e incrustar el formulario en el contenedor identificado por el nombre de clase **derecha**
 
 ```javascript
 $(document).ready(function(){

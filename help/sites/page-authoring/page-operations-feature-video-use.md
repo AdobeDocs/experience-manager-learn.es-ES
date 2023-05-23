@@ -1,6 +1,6 @@
 ---
-title: Operaciones de página básicas en AEM Sites
-description: En el siguiente vídeo se destaca cómo realizar operaciones básicas de administración de páginas para una página de Adobe Experience Manager Sites.
+title: Operaciones básicas de página en AEM Sites
+description: En el siguiente vídeo se explica cómo realizar operaciones básicas de administración de páginas en una página de Adobe Experience Manager Sites.
 version: 6.4, 6.5
 topic: Content Management
 feature: Page Editor, Editable Templates
@@ -18,12 +18,12 @@ ht-degree: 11%
 
 # Operaciones básicas de página {#basic-page-operations-aem-sites}
 
-Obtenga información sobre cómo realizar operaciones básicas de administración de páginas para una página de Adobe Experience Manager Sites.
+Obtenga información sobre cómo realizar operaciones básicas de administración de páginas en una página de Adobe Experience Manager Sites.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32147?quality=12&learn=on)
 
 
 ## Recursos adicionales {#additional-resources}
 
-* [Edición de la documentación de contenido de una página](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
+* [Edición de documentación de contenido de página](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
 * [Guía rápida para la creación de páginas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)

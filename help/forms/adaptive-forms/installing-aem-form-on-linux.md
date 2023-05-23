@@ -1,6 +1,6 @@
 ---
 title: Instalación de AEM Forms en Linux
-description: Aprenda a instalar bibliotecas de 32 bits para AEM Forms para que funcionen en la instalación de Linux.
+description: Aprenda a instalar bibliotecas de 32 bits para AEM Forms para la instalación de Linux.
 feature: Adaptive Forms
 type: Tutorial
 version: 6.4, 6.5
@@ -17,35 +17,35 @@ ht-degree: 0%
 
 ---
 
-# Instalación de una versión de 32 bits de bibliotecas compartidas
+# Instalación de la versión de 32 bits de las bibliotecas compartidas
 
-Cuando AEM FORMS OSGi o AEM Forms j2EE se implementan en Linux, debe asegurarse de que las versiones de 32 bits de un conjunto de bibliotecas compartidas estén instaladas y disponibles.  Las descripciones son de los propios paquetes.
+Cuando se implementa AEM FORMS OSGi o AEM Forms j2EE en Linux, debe asegurarse de que las versiones de 32 bits de un conjunto de bibliotecas compartidas estén instaladas y disponibles.  Las descripciones proceden de los propios paquetes.
 
-* expat (biblioteca C del analizador XML orientado a la emisión para analizar XML, escrita por James Clark)
-* fontconfig (biblioteca de configuración y personalización de fuentes diseñada para localizar fuentes dentro del sistema y seleccionarlas según los requisitos especificados por las aplicaciones)
-* freetype (motor de renderización de fuentes, desarrollado para proporcionar compatibilidad avanzada de fuentes para una variedad de plataformas y entornos. Puede abrir y administrar archivos de fuente, así como cargar, sugerir y procesar glifos individuales de forma eficaz. No es un servidor de fuentes ni una biblioteca completa de procesamiento de texto)
-* glibc (Bibliotecas principales para sistemas GNU y GNU/Linux, así como muchos otros sistemas que usan Linux como núcleo)
+* expat (Biblioteca C del analizador de XML orientado a secuencias para analizar XML, escrita por James Clark)
+* fontconfig (Biblioteca de configuración y personalización de fuentes diseñada para localizar fuentes dentro del sistema y seleccionarlas según los requisitos especificados por las aplicaciones)
+* freetype (Motor de renderización de fuentes, desarrollado para proporcionar compatibilidad avanzada con fuentes para una variedad de plataformas y entornos. Puede abrir y administrar archivos de fuentes, así como cargar, sugerir y procesar glifos individuales de forma eficaz. No es un servidor de fuentes o una biblioteca completa de renderización de texto)
+* glibc (Bibliotecas principales para el sistema GNU y los sistemas GNU/Linux, así como muchos otros sistemas que usan Linux como núcleo)
 * libcurl (biblioteca de transferencia de URL del lado del cliente)
 * libICE (biblioteca de intercambio entre clientes)
-* libicu (biblioteca que proporciona compatibilidad con Unicode y configuraciones regionales robustas y con todas las funciones - Componentes internacionales para Unicode). Se requieren las ediciones de 64 y 32 bits de esta biblioteca
+* libicu (biblioteca que proporciona compatibilidad sólida y completa con Unicode y configuración regional: componentes internacionales para Unicode). Se requieren las ediciones de 64 y 32 bits de esta biblioteca
 * libSM (biblioteca de administración de sesiones X11)
-* libuuid (biblioteca de identificador único universal compatible con DCE): se utiliza para generar identificadores únicos para objetos a los que se puede acceder más allá del sistema local.
+* libuuid (biblioteca de identificadores únicos universales compatible con DCE: se utiliza para generar identificadores únicos para objetos a los que se puede acceder más allá del sistema local)
 * libX11 (biblioteca del lado del cliente X11)
-* libXau (X11 Authorization Protocol - útil para restringir el acceso del cliente a la pantalla)
-* libxcb (enlace en lenguaje C de protocolo X - XCB)
+* libXau (Protocolo de autorización X11: útil para restringir el acceso del cliente a la pantalla)
+* libxcb (enlace de lenguaje C de protocolo X - XCB)
 * libXext (Biblioteca para extensiones comunes del protocolo X11)
-* libXinerama (extensión X11) que proporciona soporte para ampliar un escritorio en múltiples pantallas. El nombre es un juego de palabras en Cinerama, un formato de película de pantalla ancha que usa varios proyectores. libXinerama es la biblioteca que interactúa con la extensión RandR)
-* libXrandr (la extensión de Xinerama es en gran medida obsoleta hoy en día - ha sido reemplazada por la extensión RandR)
-* libXrender (X Rendering Extension client library) nss-softokn-freebl (biblioteca Freebl para Network Security Services)
-* zlib (biblioteca de compresión de datos general, sin patente y sin pérdidas)
+* libXinerama (extensión X11 que proporciona compatibilidad para extender un escritorio a través de varias pantallas. El nombre es un juego de palabras en Cinerama, un formato de película de pantalla ancha que utilizaba varios proyectores. libXinerama es la biblioteca que interactúa con la extensión RandR)
+* libXrandr (la extensión de Xinerama es en gran medida obsoleta en la actualidad - ha sido reemplazada por la extensión RandR)
+* libXrender (biblioteca de cliente de la extensión de procesamiento X) nss-softokn-freebl (biblioteca libre para servicios de seguridad de red)
+* zlib (biblioteca de compresión de datos de uso general, sin patente y sin pérdidas)
 
-A partir de Red Hat Enterprise Linux 6, la edición de 32 bits de una biblioteca tendrá la extensión de nombre de archivo .686 mientras que la edición de 64 bits tendrá .x86_64. Ejemplo, expat.i686. Antes de RHEL 6, las ediciones de 32 bits tenían la extensión .i386. Antes de instalar las ediciones de 32 bits, asegúrese de que están instaladas las ediciones de 64 bits más recientes. Si la edición de 64 bits de una biblioteca es anterior a la versión de 32 bits que se está instalando, obtendrá un error como el siguiente:
+A partir de Red Hat Enterprise Linux 6, la edición de 32 bits de una biblioteca tendrá la extensión de nombre de archivo .686, mientras que la edición de 64 bits tendrá .x86_64. Por ejemplo, expat.i686. Antes de RHEL 6, las ediciones de 32 bits tenían la extensión .i386. Antes de instalar las ediciones de 32 bits, asegúrese de que están instaladas las últimas ediciones de 64 bits. Si la edición de 64 bits de una biblioteca es anterior a la versión de 32 bits que se está instalando, aparecerá un error como el siguiente:
 
-0mError: Versiones de multilib protegidas: libsepol-2.5-10.el7.x86_64 != libsepol-2.5-6.el7.i686 [0mError: Se encontraron problemas con la versión de Multilib.]
+0mError: Protected multilib versions: libsepol-2.5-10.el7.x86_64 != libsepol-2.5-6.el7.i686 [0mError: se encontraron problemas con la versión de Multilib.]
 
-## Primera vez que se instala
+## Primera instalación
 
-En Red Hat Enterprise Linux, use el Modificador de actualización de YellowDog (YUM) para instalar, como se muestra a continuación:
+En Red Hat Enterprise Linux, utilice el modificador de actualización YellowDog (YUM) para instalar, como se muestra a continuación:
 
 1. yum install expat.i686
 2. yum install fontconfig.i686
@@ -67,29 +67,29 @@ En Red Hat Enterprise Linux, use el Modificador de actualización de YellowDog (
 18. yum install nss-softokn-freebl.i686
 19. yum install zlib.i686
 
-## Vínculos simbólicos
+## Enlaces simbólicos
 
-Además, debe crear enlaces simbólicos libcurl.so, libcrypto.so y libssl.so que apunten a las últimas versiones de 32 bits de las bibliotecas libcurl, libcrypto y libssl respectivamente. Puede encontrar los archivos en /usr/lib/ ln -s /usr/lib/libcurl.so.4.5.0 /usr/lib/libcurl.so ln -s /usr/lib/libcrypto.so.1.1.1c /usr/lib/libcrypto.so ln -s /usr/lib/libssl.so.1.1.1c /usr/lib/libssl.so
+Además, debe crear los enlaces simbólicos libcurl.so, libcrypto.so y libssl.so que apunten a las últimas versiones de 32 bits de las bibliotecas libcurl, libcrypto y libssl respectivamente. Puede encontrar los archivos en /usr/lib/ ln -s /usr/lib/libcurl.so.4.5.0 /usr/lib/libcurl.so ln -s /usr/lib/libcrypto.so.1.1.1c /usr/lib/libcrypto.so ln -s /usr/lib/libssl.so.1.1.1c /usr/lib/libssl.so
 
 ## Actualizaciones en el sistema existente
 
-puede haber conflictos entre las arquitecturas x86_64 e i686 durante las actualizaciones, como por ejemplo: Error: Error de comprobación de transacciones: archivo /lib/ld-2.28.so desde la instalación de glibc-2.28-72.el8.i686 entra en conflicto con el archivo desde el paquete glibc32-2.28-42.1.el8.x86_64
+Puede haber conflictos entre las arquitecturas x86_64 e i686 durante las actualizaciones, como este: Error: Error de comprobación de transacciones: file /lib/ld-2.28.so from install of glibc-2.28-72.el8.i686 conflicts with file from package glibc32-2.28-42.1.el8.x86_64
 
-Si se encuentra con esto, desinstale primero el paquete infractor, como en este caso: eliminar glibc32-2.28-42.1.el8.x86_64
+Si se encuentra con esto, desinstale primero el paquete infractor, como en este caso: yum remove glibc32-2.28-42.1.el8.x86_64
 
-Todo dicho y hecho, usted desea que las versiones x86_64 e i686 sean exactamente iguales, como por ejemplo de esta salida al comando: yum info glibc
+Dicho esto, desea que las versiones x86_64 e i686 sean exactamente iguales, como por ejemplo desde esta salida al comando: yum info glibc
 
-Última comprobación de caducidad de metadatos: 0:41:Hace 33 el sábado 18 de enero de 2020 11:37:08 AM EST.
-Nombre de paquetes instalados : Versión de glibc : Versión 2.28: Arquitectura 72.el8: Tamaño i686: Fuente: 13 M repositorio glibc-2.28-72.el8.src.rpm: @System Desde repo : Resumen de BaseOS : La URL de las bibliotecas libc de GNU : http://www.gnu.org/software/glibc/ Licencia : LGPLv2+ y LGPLv2+ con excepciones y GPLv2+ y GPLv2+ con excepciones y Descripción de BSD y Red interna e ISC y Dominio público y GFDL : El paquete glibc contiene bibliotecas estándar que usa : varios programas del sistema. Para ahorrar espacio en disco y : , así como facilitar la actualización, el código común del sistema es : se mantienen en un lugar y se comparten entre los programas. Este paquete en particular : contiene los conjuntos más importantes de bibliotecas compartidas: la norma C : biblioteca y la biblioteca matemática estándar. Sin estas dos bibliotecas, un : El sistema Linux no funcionará.
+Última comprobación de caducidad de metadatos: 0:41:Hace 33 el Sábado 18 Ene 2020 11:37:08 AM EST.
+Nombre de los paquetes instalados: glibc Versión : 2.28 Versión : 72.el8 Arquitectura : i686 Tamaño : 13 M Fuente : glibc-2.28-72.el8.src.rpm Repositorio : @System De repo : Resumen de BaseOS : URL de las bibliotecas libc de GNU : http://www.gnu.org/software/glibc/ Licencia : LGPLv2+ y LGPLv2+ con excepciones y GPLv2+ con excepciones y BSD e Inner-Net e ISC y Dominio público y GFDL Descripción : La gPL c paquete contiene bibliotecas estándar que utilizan : varios programas del sistema. Para ahorrar espacio en el disco y : memoria, así como para facilitar la actualización, el código común del sistema es : guardado en un lugar y compartido entre programas. Este paquete en particular : contiene los conjuntos más importantes de bibliotecas compartidas: la biblioteca estándar C : y la biblioteca estándar matemática. Sin estas dos bibliotecas, un sistema : Linux no funcionará.
 
-Nombre : Versión de glibc : Versión 2.28: Arquitectura 72.el8: x86_64 Tamaño: Fuente: 15 M repositorio glibc-2.28-72.el8.src.rpm: @System Desde repo : Resumen de BaseOS : La URL de las bibliotecas libc de GNU : http://www.gnu.org/software/glibc/ Licencia : LGPLv2+ y LGPLv2+ con excepciones y GPLv2+ y GPLv2+ con excepciones y Descripción de BSD y Red interna e ISC y Dominio público y GFDL : El paquete glibc contiene bibliotecas estándar que usa : varios programas del sistema. Para ahorrar espacio en disco y : , así como facilitar la actualización, el código común del sistema es : se mantienen en un lugar y se comparten entre los programas. Este paquete en particular : contiene los conjuntos más importantes de bibliotecas compartidas: la norma C : biblioteca y la biblioteca matemática estándar. Sin estas dos bibliotecas, un : El sistema Linux no funcionará.
+Nombre : glibc Versión : 2.28 Versión : 72.el8 Arquitectura : x86_64 Tamaño : 15 M Fuente : glibc-2.28-72.el8.src.rpm Repositorio : @System De repo : Resumen de BaseOS : La URL de bibliotecas GNU libc : http://www.gnu.org/software/glibc/ Licencia : LGPLv2+ y LGPLv2+ con excepciones y GPLv2+ con excepciones y BSD y paquete Inner-Net e ISC y Dominio Público y GFDL Descripción : La glibc contiene bibliotecas estándar que utilizan : varios programas del sistema. Para ahorrar espacio en el disco y : memoria, así como para facilitar la actualización, el código común del sistema es : guardado en un lugar y compartido entre programas. Este paquete en particular : contiene los conjuntos más importantes de bibliotecas compartidas: la biblioteca estándar C : y la biblioteca estándar matemática. Sin estas dos bibliotecas, un sistema : Linux no funcionará.
 
-## Algunos comandos útiles de yum
+## Algunos comandos yum útiles
 
-yum list instalado yum search [part_of_package_name]
-yum what [package_name]
-yum install [package_name]
-yum reinstall [package_name]
+lista yum instalada búsqueda yum [part_of_package_name]
+yum whatproportions [package_name]
+instalación de yum [package_name]
+reinstalar yum [package_name]
 información de yum [package_name]
 yum deplist [package_name]
 eliminar yum [package_name]

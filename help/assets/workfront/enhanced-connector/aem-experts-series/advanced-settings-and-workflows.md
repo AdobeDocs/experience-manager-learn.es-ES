@@ -1,6 +1,6 @@
 ---
-title: Configuración avanzada y flujos de trabajo para Workfront para AEM conector mejorado
-description: Obtenga información sobre la configuración avanzada de Workfront para AEM conector mejorado y cómo configurar los flujos de trabajo avanzados y los iniciadores en AEM para administrar la sincronización de datos entre AEM y Workfront.
+title: Configuración y flujos de trabajo avanzados para Workfront AEM para el conector mejorado de la
+description: Obtenga información acerca de la configuración avanzada del conector mejorado de Workfront para la y cómo configurar flujos de trabajo avanzados e iniciadores en la administración de la sincronización de datos entre los flujos de trabajo de y el conector de la aplicación de datos de AEM AEM AEM para la administración de la sincronización de datos entre los flujos de trabajo y el conector de la aplicación de datos de la aplicación de datos de la plataforma de datos de Adobe y el conector de Workfront.
 version: Cloud Service
 topic: Content Management, Integrations
 role: Admin, Architect, Developer
@@ -19,10 +19,10 @@ ht-degree: 0%
 
 # Configuración y flujos de trabajo avanzados
 
-![AEM serie de expertos](./assets/banner.png)
+![AEM Serie de expertos de](./assets/banner.png)
 
-Obtenga información sobre la configuración avanzada de Workfront para AEM conector mejorado y cómo configurar los flujos de trabajo avanzados y los iniciadores en AEM para administrar la sincronización de datos entre AEM y Workfront.
+Obtenga información acerca de la configuración avanzada del conector mejorado de Workfront para la y cómo configurar flujos de trabajo avanzados e iniciadores en la administración de la sincronización de datos entre los flujos de trabajo de y el conector de la aplicación de datos de AEM AEM AEM para la administración de la sincronización de datos entre los flujos de trabajo y el conector de la aplicación de datos de la aplicación de datos de la plataforma de datos de Adobe y el conector de Workfront.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340397?quality=12&learn=on)
 
-_Parte 4 bis [cuatro partes de la serie de expertos sobre el conector mejorado Workfront for Experience Manager](./overview.md)_
+_Parte cuatro de a [serie de expertos de cuatro partes sobre el conector mejorado de Workfront para Experience Manager](./overview.md)_

@@ -1,6 +1,6 @@
 ---
 title: Inscripción digital as a Cloud Service de AEM Forms
-description: Descubra cómo AEM Forms as a Cloud Service admite el caso de uso de inscripción digital.
+description: Descubra cómo AEM Forms as a Cloud Service admite el caso de uso de la inscripción digital.
 version: Cloud Service
 topic: Migration, Upgrade
 role: Developer
@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Inscripción digital
 
-Obtenga información sobre cómo AEM Forms as a Cloud Service admite el caso de uso de inscripción digital.
+Descubra cómo AEM Forms as a Cloud Service admite el caso de uso de la inscripción digital.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336966?quality=12&learn=on)

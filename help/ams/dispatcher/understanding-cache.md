@@ -1,18 +1,18 @@
 ---
-title: Dispatcher entiende el almacenamiento en caché
+title: Dispatcher comprende el almacenamiento en caché
 description: Comprenda cómo funciona el módulo de Dispatcher en su caché.
 topic: Administration, Performance
 version: 6.5
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: 04cd4002af7028ee9e3b1e1455b6346c56446245
+exl-id: 66ce0977-1b0d-4a63-a738-8a2021cf0bd5
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '1747'
 ht-degree: 1%
 
 ---
-
 
 # Explicación del almacenamiento en caché
 
@@ -31,19 +31,19 @@ Utilizamos los siguientes directorios de caché predeterminados en nuestras inst
 - Editor
    - `/mnt/var/www/html`
 
-Cuando cada solicitud atraviesa Dispatcher, las solicitudes siguen las reglas configuradas para mantener una versión en caché local para responder a los elementos elegibles
+Cuando cada solicitud atraviesa Dispatcher, las solicitudes siguen las reglas configuradas para mantener una versión en caché local como respuesta a los elementos aptos
 
 <div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
 
-Intencionalmente mantenemos la carga de trabajo publicada separada de la carga de trabajo del autor porque cuando Apache busca un archivo en DocumentRoot no sabe de qué instancia AEM vino. Por lo tanto, incluso si tiene la caché deshabilitada en la granja de autores, si el DocumentRoot del autor es el mismo que el del editor, servirá archivos de la caché cuando estén presentes. Lo que significa que servirá archivos de autor desde la caché publicada y será una experiencia de combinación realmente horrible para sus visitantes.
+AEM Intencionalmente, mantenemos la carga de trabajo publicada separada de la carga de trabajo de autor porque cuando Apache busca un archivo en DocumentRoot, no sabe de qué instancia vino. Por lo tanto, aunque tenga la caché deshabilitada en el conjunto de servidores de creación, si el DocumentRoot del autor es el mismo que el editor, servirá los archivos de la caché cuando esté presente. Esto significa que servirá archivos de autor para desde la caché publicada y creará una experiencia de coincidencia de mezcla realmente horrible para sus visitantes.
 
-Mantener directorios DocumentRoot separados para diferentes contenidos publicados también es una mala idea. Tendrá que crear varios elementos en caché que no difieran entre sitios como clientlibs, así como tener que configurar un agente de vaciado de replicación para cada DocumentRoot que configure. Aumentar la cantidad de vaciado sobre el cabezal con cada activación de página. Confíe en el espacio de nombres de los archivos y sus rutas en caché completas y evite el uso de DocumentRoot múltiples para los sitios publicados.
+Mantener directorios DocumentRoot separados para contenido publicado diferente también es una muy mala idea. Tendrá que crear varios elementos en caché que no difieran entre sitios, como clientlibs, así como tener que configurar un agente de vaciado de replicación para cada DocumentRoot que configure. Aumentar la cantidad de vaciado con cada activación de página. Confíe en el área de nombres de los archivos y sus rutas de acceso en caché completas y evite varios DocumentRoot para los sitios publicados.
 </div>
 
 ## Archivos de configuración
 
-Dispatcher controla lo que califica como caché en la variable `/cache {` de cualquier archivo de granja. 
-En las granjas de configuración de línea de base de AMS, encontrará nuestras órdenes de inclusión como se muestra a continuación:
+Dispatcher controla lo que califica como caché en la `/cache {` de cualquier archivo de granja. 
+En las granjas de configuración de línea de base de AMS, encontrará nuestras inclusiones como se muestra a continuación:
 
 
 ```
@@ -54,17 +54,17 @@ En las granjas de configuración de línea de base de AMS, encontrará nuestras 
 ```
 
 
-Al crear las reglas para lo que se debe almacenar en caché o no, consulte la documentación [here](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)
+Al crear las reglas para qué almacenar en caché o no, consulte la documentación [aquí](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)
 
 
-## Creador de almacenamiento en caché
+## Autor de almacenamiento en caché
 
-Hay muchas implementaciones que hemos visto en las que la gente no almacena en caché el contenido del autor. 
-Están perdiendo una gran actualización en rendimiento y capacidad de respuesta para sus autores.
+Hay muchas implementaciones que hemos visto en las que las personas no almacenan en caché el contenido del autor. 
+Se están perdiendo una gran actualización en rendimiento y capacidad de respuesta a sus autores.
 
-Hablemos de la estrategia tomada al configurar nuestra granja de autores para que almacene en caché correctamente.
+Hablemos de la estrategia utilizada al configurar nuestra granja de autores para almacenar correctamente la caché.
 
-Aquí hay un autor base `/cache {` de nuestro archivo de granja de autores:
+Aquí tiene un autor base `/cache {` de nuestro archivo de granja de autores:
 
 
 ```
@@ -91,14 +91,14 @@ Aquí hay un autor base `/cache {` de nuestro archivo de granja de autores:
 }
 ```
 
-Lo importante a tener en cuenta aquí es que la variable `/docroot` está configurado en el directorio de caché para el autor.
+Lo importante que hay que tener en cuenta aquí es que la `/docroot` se establece en el directorio de caché del autor.
 
 <div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
 
-Asegúrese de que `DocumentRoot` en el informe `.vhost` coincide con las granjas `/docroot` parameter
+Asegúrese de que su `DocumentRoot` en el del autor `.vhost` el archivo coincide con las granjas `/docroot` parámetro
 </div>
 
-La sentencia include de las reglas de caché incluye el archivo `/etc/httpd/conf.dispatcher.d/cache/ams_author_cache.any` que contiene estas reglas:
+Las reglas de caché incluyen una instrucción que incluye el archivo `/etc/httpd/conf.dispatcher.d/cache/ams_author_cache.any` que contiene estas reglas:
 
 ```
 /0000 { 
@@ -131,25 +131,25 @@ La sentencia include de las reglas de caché incluye el archivo `/etc/httpd/conf
 }
 ```
 
-En un escenario de autor, el contenido cambia todo el tiempo y a propósito. Solo desea almacenar en caché los elementos que no van a cambiar con frecuencia.
-Tenemos reglas para almacenar en caché `/libs` porque forman parte de la instalación de línea de base AEM y cambiarían hasta que haya instalado un Service Pack, un Cumulative Fix Pack, una actualización o una revisión. Así que el almacenamiento en caché de estos elementos tiene mucho sentido y realmente tiene grandes beneficios de la experiencia de autor de los usuarios finales que utilizan el sitio.
+En el caso de un autor, el contenido cambia todo el tiempo y a propósito. Solo desea almacenar en caché elementos que no cambiarán con frecuencia.
+Tenemos reglas para almacenar en caché `/libs` AEM porque forman parte de la instalación de línea de base de la aplicación y cambiarían hasta que haya instalado un paquete de servicio, un paquete de correcciones acumulativas, una actualización o una revisión. Por lo tanto, el almacenamiento en caché de estos elementos tiene mucho sentido y realmente tiene grandes beneficios de la experiencia de creación de los usuarios finales que utilizan el sitio.
 
 <div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
 
-Tenga en cuenta que estas reglas también almacenan en caché <b>`/apps`</b> aquí es donde se encuentra el código de aplicación personalizado. Si está desarrollando su código en esta instancia, resultará muy confuso al guardar el archivo y no verá si se refleja en la interfaz de usuario debido a que proporciona una copia en caché. La intención aquí es que si realiza una implementación del código en AEM, también sería poco frecuente y parte de los pasos de implementación debería ser borrar la caché del autor. Una vez más, el beneficio es enorme, ya que su código almacenable en caché se ejecuta más rápido para los usuarios finales.
+Tenga en cuenta que estas reglas también almacenan en caché <b>`/apps`</b> aquí es donde reside el código de aplicación personalizado. Si está desarrollando su código en esta instancia, resultará muy confuso cuando guarde el archivo y no vea si se refleja en la interfaz de usuario debido a que sirve una copia en caché. AEM La intención aquí es que si realiza una implementación del código en la que también lo haga con poca frecuencia y parte de los pasos de implementación deberían ser borrar la caché de creación. Una vez más, la ventaja es enorme, lo que hace que su código almacenable en caché se ejecute más rápido para los usuarios finales.
 </div>
 
 
 ## ServeOnStale (también conocido como Serve on Stale / SOS)
 
-Esta es una de esas gemas de una función de Dispatcher. Si el editor está en carga o no responde, normalmente arrojará un código de respuesta http 502 o 503. Si esto sucede y esta función está habilitada, se pedirá a Dispatcher que siga sirviendo el contenido que todavía esté en la caché como mejor esfuerzo, incluso si no es una copia nueva. Es mejor mostrar algo si lo tiene en lugar de mostrar un mensaje de error que no ofrece ninguna funcionalidad.
+Esta es una de esas joyas de una funcionalidad de Dispatcher. Si el editor está bajo carga o no responde, normalmente genera un código de respuesta 502 o 503 http. Si eso sucede y esta función está habilitada, se le indicará a Dispatcher que siga mostrando el contenido que aún esté en la caché como mejor esfuerzo, aunque no sea una copia nueva. Es mejor servir algo si lo tiene en lugar de mostrar un mensaje de error que no ofrece funcionalidad.
 
 <div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
 
-Tenga en cuenta que si el procesador del editor tiene un tiempo de espera de socket o un mensaje de error 500, esta función no se déclencheur. Si AEM es inaccesible, esta función no hace nada
+Tenga en cuenta que si el procesador del editor tiene un tiempo de espera de socket o un mensaje de error 500, esta función no se almacenará en déclencheur. AEM Si no se puede acceder a la aplicación, esta función no hace nada
 </div>
 
-Esta configuración se puede establecer en cualquier granja, pero solo tiene sentido aplicarla en los archivos de granja de publicación. Este es un ejemplo de sintaxis de la función habilitada en un archivo de granja:
+Esta configuración se puede establecer en cualquier conjunto de servidores, pero solo tiene sentido aplicarla en los archivos del conjunto de servidores de publicación. Este es un ejemplo de sintaxis de la función habilitada en un archivo de granja:
 
 ```
 /cache { 
@@ -160,23 +160,23 @@ Esta configuración se puede establecer en cualquier granja, pero solo tiene sen
 
 <div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
 
-Uno de los comportamientos normales del módulo Dispatcher es que si una solicitud tiene un parámetro de consulta en el URI (normalmente se muestra como `/content/page.html?myquery=value`) omitirá el almacenamiento en caché del archivo e irá directamente a la instancia de AEM. Está considerando esta solicitud como una página dinámica y no debería almacenarse en caché. Esto puede tener efectos negativos en la eficacia de la caché.
+Uno de los comportamientos normales del módulo de Dispatcher es que si una solicitud tiene un parámetro de consulta en el URI (normalmente se muestra como `/content/page.html?myquery=value`AEM ), omitirá el almacenamiento en caché del archivo e irá directamente a la instancia de. Está considerando esta solicitud como una página dinámica y no debería almacenarse en la caché. Esto puede causar efectos adversos en la eficacia de la caché.
 </div>
 <br/>
 
-Consulte esta [article](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-its-ignoreurlparams-rules-configured-in-an-allow-list-manner) mostrar la importancia que los parámetros de consulta pueden afectar al rendimiento del sitio.
+Ver esto [artículo](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-its-ignoreurlparams-rules-configured-in-an-allow-list-manner) mostrar la importancia de los parámetros de consulta para el rendimiento del sitio.
 
-De forma predeterminada, desea configurar la variable `ignoreUrlParams` reglas que permitan `*`.  Esto significa que todos los parámetros de consulta se ignoran y permiten que todas las páginas se almacenen en caché independientemente de los parámetros utilizados.
+De forma predeterminada, desea establecer la variable `ignoreUrlParams` reglas para permitir `*`.  Esto significa que todos los parámetros de consulta se ignoran y permiten que todas las páginas se almacenen en caché, independientemente de los parámetros utilizados.
 
-Aquí hay un ejemplo donde alguien ha creado un mecanismo de referencia de vínculo profundo de medios sociales que utiliza la referencia de argumento en la URI para saber de dónde viene la persona.
+A continuación se muestra un ejemplo en el que alguien ha creado un mecanismo de referencia de vínculos profundos de medios sociales que utiliza la referencia de argumento en la URI para saber de dónde procede la persona.
 
 <b>Ejemplo ignorable:</b>
 
 - https://www.we-retail.com/home.html?reference=android
 - https://www.we-retail.com/home.html?reference=facebook
 
-La página se puede almacenar al 100% en caché, pero no en caché porque los argumentos están presentes. 
-Configurar las `ignoreUrlParams` as a lista de permitidos ayudará a solucionar este problema:
+La página se puede almacenar en caché al 100 %, pero no lo hace porque los argumentos están presentes. 
+Configuración de su `ignoreUrlParams` as a lista de permitidos le ayudará a solucionar este problema:
 
 ```
 /cache { 
@@ -185,16 +185,16 @@ Configurar las `ignoreUrlParams` as a lista de permitidos ayudará a solucionar 
     }
 ```
 
-Ahora, cuando Dispatcher vea la solicitud, ignorará el hecho de que la solicitud tiene el valor `query` parámetro de `?` referencia y almacenar en caché la página
+Ahora, cuando Dispatcher vea la solicitud, ignorará el hecho de que la solicitud tiene el `query` parámetro de `?` hacer referencia a la página y seguir almacenándola en caché
 
 <b>Ejemplo dinámico:</b>
 
 - https://www.we-retail.com/search.html?q=fruit
 - https://www.we-retail.com/search.html?q=vegetables
 
-Tenga en cuenta que si tiene parámetros de consulta que hacen que una página cambie su salida representada, deberá eliminarlos de la lista ignorada y hacer que la página no se pueda almacenar en caché de nuevo.  Por ejemplo, una página de búsqueda que utiliza un parámetro de consulta cambia el html sin procesar procesado.
+Tenga en cuenta que si tiene parámetros de consulta que realizan un cambio de página, se procesa el resultado, entonces deberá exonerarlos de la lista ignorada y hacer que la página no se pueda almacenar en caché de nuevo.  Por ejemplo, una página de búsqueda que utiliza un parámetro de consulta cambia el HTML sin procesar procesado.
 
-Esta es la fuente html de cada búsqueda:
+Por lo tanto, esta es la fuente html de cada búsqueda:
 
 `/search.html?q=fruit`:
 
@@ -234,10 +234,10 @@ Esta es la fuente html de cada búsqueda:
 </html>
 ```
 
-Si ha visitado `/search.html?q=fruit` primero, almacenaría en caché el html con resultados que mostraran resultados.
+Si ha visitado `/search.html?q=fruit` primero, almacenaría en caché el html con los resultados mostrando fruta.
 
-Luego visita `/search.html?q=vegetables` en segundo lugar, pero mostraría resultados de fruta.
-Esto se debe a que el parámetro de consulta de `q` se ignora con respecto al almacenamiento en caché.  Para evitar este problema, tendrá que tomar nota de las páginas que presentan diferentes HTML en función de los parámetros de consulta y denegar el almacenamiento en caché para ellos.
+Luego visita `/search.html?q=vegetables` segundo, pero mostraría resultados de fruta.
+Esto se debe al parámetro de consulta de `q` se ignora con respecto al almacenamiento en caché.  Para evitar este problema, tendrá que tomar nota de las páginas que representan diferentes HTML según los parámetros de la consulta y deniegan el almacenamiento en caché para ellos.
 
 Ejemplo:
 
@@ -249,27 +249,27 @@ Ejemplo:
     }
 ```
 
-Las páginas que utilizan parámetros de consulta a través de JavaScript seguirán funcionando completamente e ignorando los parámetros de esta configuración.  Porque no cambian el archivo html en reposo.  Utilizan javascript para actualizar los navegadores en tiempo real en el navegador local.  Esto significa que si consume los parámetros de consulta con javascript, es muy probable que pueda ignorar este parámetro para el almacenamiento en caché de la página.  Permita que esa página se almacene en caché y disfrute de la mejora de rendimiento.
+Las páginas que utilizan parámetros de consulta a través de Javascript seguirán funcionando completamente sin tener en cuenta los parámetros de esta configuración.  Porque no cambian el archivo html en reposo.  Utilizan JavaScript para actualizar los navegadores dom en tiempo real en el navegador local.  Esto significa que si consume los parámetros de consulta con javascript, es muy probable que pueda ignorar este parámetro para el almacenamiento en caché de la página.  Permita que esa página almacene en caché y disfrute de la ganancia de rendimiento.
 
 <div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
 
-Realizar un seguimiento de estas páginas requiere cierta conservación, pero vale la pena mejorar el rendimiento.  Puede pedir a su CSE que ejecute un informe sobre el tráfico de sus sitios web para que le proporcione una lista de todas las páginas utilizando parámetros de consulta durante los últimos 90 días para que analice y asegúrese de saber qué páginas desea ver y qué parámetros de consulta no deben ignorar
+Realizar un seguimiento de estas páginas requiere algún mantenimiento, pero vale la pena mejorar el rendimiento.  Puede pedir a su CSE que ejecute un informe sobre el tráfico de sus sitios web para proporcionarle una lista de todas las páginas que utilizan parámetros de consulta durante los últimos 90 días, y así poder analizar y asegurarse de que sabe qué páginas ver y qué parámetros de consulta no ignorar
 </div>
 <br/>
 
 ## Almacenamiento en caché de encabezados de respuesta
 
-Es bastante obvio que Dispatcher almacena en caché `.html` páginas y clientlibs (p. ej. `.js`, `.css`), pero sabía que también puede almacenar en caché encabezados de respuesta específicos junto al contenido en un archivo con el mismo nombre pero un `.h` extensión de archivo. Esto permite que la siguiente respuesta no solo sea el contenido, sino también los encabezados de respuesta que deberían ir con él desde la caché.
+Es bastante obvio que Dispatcher almacena en caché `.html` páginas y clientlibs (es decir, `.js`, `.css`), pero ¿sabía que también puede almacenar en caché encabezados de respuesta particulares junto con el contenido en un archivo con el mismo nombre pero un `.h` extensión de archivo. Esto permite la siguiente respuesta no solo al contenido, sino a los encabezados de respuesta que deben ir con él desde la caché.
 
-AEM puede manejar algo más que la codificación UTF-8
+AEM Puede gestionar algo más que la codificación UTF-8
 
-A veces, los elementos tienen encabezados especiales que ayudan a controlar los detalles de codificación de TTL de la caché y las últimas marcas de tiempo modificadas.
+A veces, los elementos tienen encabezados especiales que ayudan a controlar los detalles de codificación del TTL de la caché y las marcas de tiempo de la última modificación.
 
-Estos valores cuando se almacenan en caché se eliminan de forma predeterminada y el servidor web httpd de Apache hará su propio trabajo de procesar el recurso con sus métodos normales de gestión de archivos, que normalmente se limita a adivinar el tipo mime en función de las extensiones de archivo.
+Estos valores cuando se almacenan en caché se eliminan de forma predeterminada y el servidor web Apache httpd hará su propio trabajo de procesar el recurso con sus métodos normales de administración de archivos, que normalmente se limita a adivinar el tipo MIME en función de las extensiones de archivo.
 
-Si tiene la caché de Dispatcher del recurso y los encabezados deseados, puede exponer la experiencia adecuada y garantizar que todos los detalles lleguen al explorador del cliente.
+Si tiene Dispatcher en la caché del recurso y los encabezados deseados, puede exponer la experiencia adecuada y garantizar que todos los detalles lleguen al explorador de los clientes.
 
-A continuación, se muestra un ejemplo de una granja con los encabezados que se van a almacenar en caché especificados:
+Este es un ejemplo de una granja con los encabezados para almacenar en caché especificados:
 
 ```
 /cache { 
@@ -285,27 +285,27 @@ A continuación, se muestra un ejemplo de una granja con los encabezados que se 
 ```
 
 
-En el ejemplo, han configurado AEM para mostrar encabezados que la CDN busca para saber cuándo invalidar su caché. Esto significa que ahora AEM puede dictar correctamente qué archivos se invalidan en función de los encabezados.
+AEM En el ejemplo, se han configurado las para servir encabezados que la CDN busca para saber cuándo invalidar su caché. AEM Lo que significa que ahora puede dictar correctamente qué archivos se invalidan en función de los encabezados.
 
 <div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
 
-Tenga en cuenta que no puede utilizar expresiones regulares ni la coincidencia global. Es una lista literal de los encabezados que se van a almacenar en caché. Solo escriba una lista de los encabezados literales que desea que almacenen en caché.
+Tenga en cuenta que no puede utilizar expresiones regulares ni la coincidencia glob. Es una lista literal de los encabezados que se van a almacenar en caché. Coloque solo en una lista de los encabezados literales que desea que almacene en caché.
 </div>
 
 
-## Invalidar período de gracia automáticamente
+## Invalidar automáticamente el período de gracia
 
-En AEM sistemas que tienen mucha actividad de autores que realizan muchas activaciones de página, puede tener una condición de carrera en la que se producen invalidaciones repetidas. Las solicitudes de vaciado muy repetidas no son necesarias y puede incorporar cierta tolerancia para no repetir una descarga hasta que el período de gracia se haya borrado.
+AEM En los sistemas que tienen mucha actividad de los autores que realizan muchas activaciones de la página, puede tener una condición de carrera en la que se producen invalidaciones repetidas. Las solicitudes de vaciado muy repetidas no son necesarias y se puede incorporar cierta tolerancia para no repetir un vaciado hasta que se haya borrado el período de gracia.
 
 ### Ejemplo de cómo funciona esto:
 
-Si tiene 5 solicitudes para invalidar `/content/exampleco/en/` todo ocurre en un periodo de 3 segundos.
+Si tiene 5 solicitudes para invalidar `/content/exampleco/en/` todas ocurren en un período de 3 segundos.
 
-Con esta función desactivada, invalidaría el directorio de caché `/content/exampleco/en/` 5 veces
+Con esta función desactivada, se invalidaría el directorio de caché `/content/exampleco/en/` 5 veces
 
-Con esta función activada y configurada en 5 segundos, invalidaría el directorio de caché `/content/exampleco/en/` <b>once</b>
+Con esta función activada y configurada en 5 segundos, se invalidaría el directorio de caché `/content/exampleco/en/` <b>una vez</b>
 
-A continuación se muestra un ejemplo de sintaxis de esta función que se está configurando para un período de gracia de 5 segundos:
+Esta es una sintaxis de ejemplo de esta función que se está configurando para un período de gracia de 5 segundos:
 
 ```
 /cache { 
@@ -314,7 +314,7 @@ A continuación se muestra un ejemplo de sintaxis de esta función que se está 
 
 ## Invalidación basada en TTL
 
-Una característica más reciente del módulo Dispatcher era `Time To Live (TTL)` opciones de invalidación basadas en elementos en caché. Cuando un elemento se almacena en caché, busca la presencia de encabezados de control de caché y genera un archivo en el directorio de caché con el mismo nombre y un `.ttl` extensión.
+Una característica más reciente del módulo de Dispatcher fue `Time To Live (TTL)` opciones de invalidación basadas en para elementos en caché. Cuando un elemento se almacena en caché, busca la presencia de encabezados de control de caché y genera un archivo en el directorio de caché con el mismo nombre y un `.ttl` extensión.
 
 Este es un ejemplo de la función que se está configurando en el archivo de configuración de la granja:
 
@@ -324,12 +324,12 @@ Este es un ejemplo de la función que se está configurando en el archivo de con
 ```
 
 <div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
-Tenga en cuenta que aún AEM necesita configurarse para enviar encabezados TTL a Dispatcher para respetarlos. Alternar esta función solo permite que Dispatcher sepa cuándo eliminar los archivos para los que AEM ha enviado encabezados de control de caché. Si AEM no comienza a enviar encabezados TTL, Dispatcher no hará nada especial aquí.
+AEM Tenga en cuenta que aún debe configurarse el envío de encabezados TTL para que Dispatcher los respete. AEM Alternar esta función solo permite a Dispatcher saber cuándo quitar los archivos para los que tiene que enviar encabezados de control de caché. AEM Si no comienza a enviar encabezados TTL, Dispatcher no hará nada especial aquí.
 </div>
 
 ## Reglas de filtro de caché
 
-A continuación, se muestra un ejemplo de una configuración de línea de base para los elementos que se van a almacenar en caché en un publicador:
+A continuación se muestra un ejemplo de una configuración de línea de base para qué elementos almacenar en caché en un editor:
 
 ```
 /cache{ 
@@ -343,8 +343,8 @@ A continuación, se muestra un ejemplo de una configuración de línea de base p
     }
 ```
 
-Queremos hacer que nuestro sitio publicado sea lo más ambicioso posible y almacenar en caché todo.
+Queremos que nuestro sitio publicado sea lo más voraz posible y almacenar todo en caché.
 
-Si hay elementos que rompen la experiencia cuando se almacenan en caché, puede agregar reglas para eliminar la opción de almacenar ese elemento en caché. Como puede ver en el ejemplo anterior, los tokens csrf nunca deben almacenarse en caché y se han excluido. Encontrará más información sobre estas reglas [here](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)
+Si hay elementos que rompen la experiencia cuando se almacenan en caché, puede agregar reglas para eliminar la opción de almacenar en caché ese elemento. Como puede ver en el ejemplo anterior, los tokens csrf nunca deberían almacenarse en caché y se han excluido. Puede encontrar más información sobre cómo escribir estas reglas [aquí](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)
 
 [Siguiente -> Uso y comprensión de las variables](./variables.md)

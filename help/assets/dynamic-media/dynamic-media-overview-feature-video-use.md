@@ -1,6 +1,6 @@
 ---
-title: Descripción general de Dynamic Media con AEM Assets
-description: Esta serie de vídeos le ofrece información general sobre cómo se administra y accede al contenido multimedia mediante Adobe Experience Manager Dynamic Media como servicio de contenido. Dynamic Media permite administrar y publicar experiencias digitales dinámicas, una función exclusiva de Experience Manager Assets. Nuestro marco y conjunto de componentes permiten a los especialistas en marketing personalizar y ofrecer experiencias interactivas y multimedia en todos los dispositivos.
+title: Información general sobre Dynamic Media con AEM Assets
+description: Esta serie de vídeos le ofrece información general sobre cómo se administra y accede al contenido multimedia mediante Adobe Experience Manager Dynamic Media como servicio de servidor de contenido. Dynamic Media le permite administrar y publicar experiencias digitales dinámicas, una función exclusiva de Experience Manager Assets. Nuestro marco de trabajo y conjunto de componentes permiten a los especialistas en marketing personalizar y ofrecer experiencias multimedia interactivas en todos los dispositivos.
 feature: Smart Crop, Video Profiles, Image Profiles, Viewer Presets, 360 VR Video, Image Sets, Spin Sets
 version: 6.4, 6.5
 topic: Content Management
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Uso de Dynamic Media con AEM Assets {#understanding-aem-dynamic-media}
 
-Esta serie de vídeos de varias partes le ofrece una descripción general de cómo se administra y accede al contenido multimedia mediante Adobe Experience Manager Dynamic Media como servicio de contenido. Dynamic Media permite administrar y publicar experiencias digitales dinámicas, una función exclusiva de Experience Manager Assets. Nuestro marco y conjunto de componentes permiten a los especialistas en marketing personalizar y ofrecer experiencias interactivas y multimedia en todos los dispositivos.
+Esta serie de vídeos de varias partes le ofrece una descripción general de cómo se administra y accede al contenido multimedia mediante Adobe Experience Manager Dynamic Media como servicio de servicio de contenido. Dynamic Media le permite administrar y publicar experiencias digitales dinámicas, una función exclusiva de Experience Manager Assets. Nuestro marco de trabajo y conjunto de componentes permiten a los especialistas en marketing personalizar y ofrecer experiencias multimedia interactivas en todos los dispositivos.
 
 ## Información general de Dynamic Media
 
@@ -24,14 +24,14 @@ Esta serie de vídeos de varias partes le ofrece una descripción general de có
 
 >[!NOTE]
 >
->La funcionalidad demostrada aquí está disponible con el modo de ejecución Dynamic Media DMS7, nuestro modo de ejecución compatible actualmente, no necesariamente el modo de ejecución DMHybrid, que DMS7 ha reemplazado.
+>La funcionalidad que se muestra aquí está disponible con el modo de ejecución de Dynamic Media DMS7, nuestro modo de ejecución admitido actualmente, no necesariamente el modo de ejecución híbrido DMH, que DMS7 ha sustituido.
 
-En este vídeo se describe cómo se administra y accede al contenido multimedia mediante Adobe Experience Manager Dynamic Media como servicio de contenido. Dynamic Media funciona con una única metodología de recursos principales en la que se carga un recurso de imagen o un recurso de vídeo que se puede solicitar para que cumpla un conjunto ilimitado de variaciones consumibles o representaciones derivadas necesarias. Incluido:
+En este vídeo se describe cómo se administra y accede al contenido multimedia mediante Adobe Experience Manager Dynamic Media como servicio de servicio de contenido. Dynamic Media funciona con una única metodología de recursos principales en la que se carga un recurso de imagen o de vídeo que se puede solicitar para cumplir un conjunto ilimitado de variaciones de consumibles o representaciones derivadas necesarias. Incluido:
 
-* Se explica el recurso maestro único a la URL del producto entregado
+* Explicación del envío de un solo recurso principal a una URL
 * Opciones de procesamiento de imágenes
 * Opciones del visor de contenido
-* Copiar direcciones URL en imágenes y visualizadores interactivos
+* Copia de direcciones URL en imágenes y visores adaptables
 * Variaciones de recorte inteligente a direcciones URL
 
 ## Uso con AEM Sites
@@ -40,13 +40,13 @@ En este vídeo se describe cómo se administra y accede al contenido multimedia 
 
 >[!NOTE]
 >
->La funcionalidad demostrada aquí está disponible con el modo de ejecución Dynamic Media DMS7, nuestro modo de ejecución compatible actualmente, no necesariamente el modo de ejecución DMHybrid, que DMS7 ha reemplazado. Este vídeo hace referencia a los conceptos descritos en la parte 1 del vídeo (Información general de Dynamic Media).
+>La funcionalidad que se muestra aquí está disponible con el modo de ejecución de Dynamic Media DMS7, nuestro modo de ejecución admitido actualmente, no necesariamente el modo de ejecución híbrido DMH, que DMS7 ha sustituido. Este vídeo hace referencia a los conceptos descritos en la parte 1 del vídeo (Información general de Dynamic Media).
 
-En este vídeo se describe cómo se administra el contenido multimedia en Adobe Experience Manager Dynamic Media y cómo se puede utilizar fácilmente en AEM Sites, con un componente, para recortarlo simple y automáticamente en función del ancho de página interactivo. Cree fácilmente un banner de imagen interactivo y genere una URL de copia para utilizarla en cualquier sistema de administración de contenido.
+En este vídeo se describe cómo se administra el contenido multimedia en Adobe Experience Manager Dynamic Media y cómo se puede utilizar fácilmente en AEM Sites, con un componente, para que sea sencillo y se recorte automáticamente para optimizar en función del ancho de página interactivo. Cree fácilmente un banner de imagen interactivo y genere una URL de copia para usarla en cualquier sistema de administración de contenido.
 
-* Flexibilidad de los componentes de AEM Sites Dynamic Media
-* Descarga local con ajustes preestablecidos de imagen
-* Creación y publicación de un titular interactivo
+* Flexibilidad de componentes de AEM Sites Dynamic Media
+* Descarga local de ajustes preestablecidos de imagen
+* Crear y publicar titulares interactivos
 
 ## Crear una colección de medios mixtos
 
@@ -54,57 +54,57 @@ En este vídeo se describe cómo se administra el contenido multimedia en Adobe 
 
 >[!NOTE]
 >
->La funcionalidad demostrada aquí está disponible con el modo de ejecución Dynamic Media DMS7, nuestro modo de ejecución compatible actualmente, no necesariamente el modo de ejecución DMHybrid, que DMS7 ha reemplazado. Este vídeo hace referencia a los conceptos descritos en la parte 1 del vídeo (Información general de Dynamic Media).
+>La funcionalidad que se muestra aquí está disponible con el modo de ejecución de Dynamic Media DMS7, nuestro modo de ejecución admitido actualmente, no necesariamente el modo de ejecución híbrido DMH, que DMS7 ha sustituido. Este vídeo hace referencia a los conceptos descritos en la parte 1 del vídeo (Información general de Dynamic Media).
 
-En este vídeo se describe el proceso de creación sencillo de una colección de recursos de medios de un visualizador de medios mixtos, incluido un conjunto de giros, un vídeo y una colección de imágenes de productos. Añada contenido al conjunto de medios mixtos y cree un visor personalizado para elegir en el componente final Copiar URL o AEM Sites .
+En este vídeo se describe el proceso de creación sencillo de una colección de visualizadores de medios mixtos de recursos de medios, que incluye un conjunto de giros, un vídeo y una colección de imágenes de productos. Añada contenido al conjunto de medios mixtos y cree un visor personalizado para elegir en la URL de copia final o en el componente de AEM Sites.
 
-* Crear conjunto de giros a partir de fotos de productos adecuadas
-* Cargar y codificar vídeo mate para vídeo de Dynamic Media
-* Crear conjunto de medios mixtos a partir de conjuntos de giros, vídeos y fotos
-* Edición y uso del visualizador de medios mixtos personalizado
+* Crear conjunto de giros a partir de las fotos de producto adecuadas
+* Cargar y codificar vídeo principal para Dynamic Media Video
+* Creación de conjuntos de medios mixtos a partir de conjuntos de giros, vídeos y fotos
+* Editar y usar visualizador de medios mixtos personalizado
 
 ## Ajustes preestablecidos de imagen
 
 >[!VIDEO](https://video.tv.adobe.com/v/27320?quality=12&learn=on)
 
-En este vídeo se describe cómo se crean los ajustes preestablecidos de imagen y qué es un ajuste preestablecido de imagen, un abreviador de URL para una serie de argumentos del servidor de imágenes que funcionan en una imagen cada vez que una URL la solicita. Aprenda técnicas útiles para ampliar y editar ajustes preestablecidos de imagen.
+En este vídeo se describe cómo se crean los ajustes preestablecidos de imagen y qué es un ajuste preestablecido de imagen, un acortador de URL a una serie de argumentos del servidor de imágenes que funcionan en una imagen cada vez que una dirección URL lo solicita. Aprenda técnicas útiles para ampliar y editar ajustes preestablecidos de imagen.
 
-* El abreviador de ajustes preestablecidos de imagen oculta la colección de comandos explícitos del servidor de imágenes
-* Utilice una sola dimensión de píxeles (anchura O altura) para ajustar nuevas imágenes cambiadas de tamaño sin margen
-* Utilizar siempre el enfoque
-* Campo Modificador de URL para agregar comandos adicionales al ajuste preestablecido de imagen
+* El acortador de ajustes preestablecidos de imagen oculta la colección de comandos explícitos del servidor de imágenes
+* Utilice una sola dimensión de píxel (anchura O altura) para ajustar las nuevas imágenes redimensionadas sin relleno
+* Usar siempre enfoque
+* Campo Modificador de URL para añadir comandos adicionales al cambio de tamaño del ajuste preestablecido de imagen
 
 ## Modificadores de URL avanzados
 
 >[!VIDEO](https://video.tv.adobe.com/v/27319?quality=12&learn=on)
 
-En este vídeo se describe cómo no cambiar el tamaño de las imágenes para aprovechar las funciones del propio archivo de origen (transparencia de fondo, rutas de recorte integradas, cultivos y texto como variables) con los modificadores de URL de Dynamic Media.
+En este vídeo se describe cómo ir más allá del cambio de tamaño de imágenes para aprovechar las funciones del propio archivo de origen (transparencia de fondo, trazados de recorte integrados y recortes y texto como variables) con los modificadores de URL de Dynamic Media.
 
 * Uso de modificadores de URL en el campo Modificador de Dynamic Media
-* Cambio del color de fondo en las imágenes con transparencia
+* Cambiar el color de fondo en las imágenes con transparencia
 * Recorte a una ruta de imagen
-* Recorte a una ruta de imagen
+* Recortar a una ruta de imagen
 * Creación de una plantilla de texto a partir de un archivo Photoshop
 
-## administración del tamaño del archivo del JPEG
+## Administración de tamaño de archivo JPEG
 
 >[!VIDEO](https://video.tv.adobe.com/v/27404?quality=12&learn=on)
 
 
 >[!NOTE]
 >
->La CALIDAD de la imagen se mide en porcentajes de compresión inversa, donde la calidad del 100% está menos comprimida, lo que da como resultado imágenes de alta calidad pero tamaños de archivo relativamente grandes. La compresión Jpeg es un esquema de compresión con pérdidas en el que la configuración de compresión determina la calidad de la imagen y el tamaño del archivo.
+>La CALIDAD de la imagen se mide en porcentajes de compresión inversa, donde la calidad del 100% es la menos comprimida, lo que da como resultado imágenes de alta calidad pero tamaños de archivo relativamente grandes. La compresión JPEG es un esquema de compresión con pérdidas en el que los ajustes de compresión determinan la calidad de la imagen y el tamaño del archivo.
 
-Equilibre la calidad de la imagen jpeg con el tamaño de archivo resultante (en kilobytes) para mejorar la velocidad de carga de la página, utilizando 2 comandos para ajustar la configuración de compresión jpeg. QLT define la calidad de la imagen ajustando los ajustes de calidad de compresión de jpeg. El comando Tamaño del JPEG le permite designar qué tamaño de archivo debe conseguirse mediante compresión.
+Equilibre la calidad de la imagen JPEG con el tamaño de archivo resultante (en kilobytes) para mejorar la velocidad de carga de la página, utilizando 2 comandos para ajustar la configuración de compresión JPEG. QLT define la calidad de imagen ajustando los ajustes de calidad de compresión JPEG. El comando Tamaño del JPEG permite designar qué tamaño de archivo se debe alcanzar mediante compresión.
 
-## Subtítulos
+## Subtítulos opcionales
 
 >[!VIDEO](https://video.tv.adobe.com/v/28074?quality=12&learn=on)
 
-Agregue fácilmente Subtítulos a vídeo de Dynamic Media adjuntando la URL de copia para que apunte a un documento adicional de Subtítulos, un archivo sidecar web.VTT, que contenga la información de CC de cualquier vídeo.
+Añada fácilmente subtítulos a un vídeo de Dynamic Media adjuntando la URL de copia para que apunte a un documento de archivo de subtítulos opcionales adicional, un archivo de sidecar web.VTT, que contenga la información de CC de cualquier vídeo.
 
 ## Enfoque de imagen
 
-Este vídeo explica por qué el enfoque de una imagen es fundamental para mantener la fidelidad de la imagen y cómo utilizar ajustes avanzados para crear la imagen perfecta.
+Este vídeo explica por qué es esencial enfocar una imagen para mantener la fidelidad de la imagen y cómo utilizar ajustes avanzados para crear la imagen perfecta.
 
 >[!VIDEO](https://demos-pub.assetsadobe.com/etc/dam/viewers/s7viewers/html5/VideoViewer.html?asset=%2Fcontent%2Fdam%2Fdm-public-facing-upgrade-portal-video%2F04_DynamicImagery_AdvancedSettings_071917_BH.mp4&amp;config=/etc/dam/presets/viewer/Video_social&amp;serverUrl=https%3A%2F%2Fadobedemo62-h.assetsadobe.com%2Fis%2Fimage%2F&amp;contenturl=%2F&amp;config2=/etc/dam/presets/analytics&amp;videoserverurl=https://gateway-na.assetsadobe.com/DMGateway/public/demoCo&amp;posterimage=/content/dam/dm-public-facing-upgrade-portal-video/04_DynamicImagery_AdvancedSettings_071917_BH.mp4)

@@ -1,5 +1,5 @@
 ---
-title: Cómo habilitar el informe de descarga de recursos
+title: Habilitación del informe de descarga de recursos
 description: Pasos para habilitar el informe de descarga de recursos
 type: Troubleshooting
 role: Admin

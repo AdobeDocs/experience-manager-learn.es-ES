@@ -1,6 +1,6 @@
 ---
 title: Pasos para capturar la información necesaria para solucionar problemas relacionados con DDX
-description: Capturar los detalles necesarios para solucionar problemas relacionados con el ensamblador
+description: Recopilar los detalles necesarios para solucionar problemas relacionados con Assembler
 type: Troubleshooting
 role: Developer
 level: Intermediate
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Pasos para solucionar problemas relacionados con DDX
 
-*Este vídeo muestra los pasos para capturar la información necesaria para solucionar problemas relacionados con DDX en el servicio de ensamblador de Forms.*
+*Este vídeo explica los pasos para capturar la información necesaria para solucionar problemas relacionados con DDX en el servicio Forms Assembler.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335517?quality=12&learn=on)

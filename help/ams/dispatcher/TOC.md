@@ -1,7 +1,7 @@
 ---
 user-guide-title: Tutorials de Adobe Experience Manager Managed Services
 user-guide-description: Una colección de tutoriales para Adobe Experience Manager Managed Services.
-breadcrumb-title: Tutorials AEM Managed Services
+breadcrumb-title: AEM Tutorials de Managed Services
 sub-product: Experience Manager
 version: 6.5
 team: TM
@@ -19,13 +19,13 @@ ht-degree: 6%
 + Dispatcher{#dispatcher}
    + [Manual de Dispatcher: información general](./dispatcher/overview.md)
    + [¿Qué es Dispatcher?](./dispatcher/what-is-the-dispatcher.md)
-   + [Diseño de archivo básico](./dispatcher/basic-file-layout.md)
+   + [Diseño básico del archivo](./dispatcher/basic-file-layout.md)
    + [Explicación de los archivos de configuración](./dispatcher/explanation-config-files.md)
-   + [Comprensión del almacenamiento en caché](./dispatcher/understanding-cache.md)
+   + [Explicación del almacenamiento en caché](./dispatcher/understanding-cache.md)
    + [Uso y comprensión de las variables](./dispatcher/variables.md)
    + [Vaciado de Dispatcher](./dispatcher/disp-flushing.md)
-   + [URL de vanidad](./dispatcher/disp-vanity-url.md)
+   + [URL mnemónica](./dispatcher/disp-vanity-url.md)
    + [Registro común](./dispatcher/common-logs.md)
    + [Archivos de solo lectura](./dispatcher/immutable-files.md)
    + [Comprobación de estado de Dispatcher](./dispatcher/health-check.md)
-   + [Vínculos de símbolos de GIT](./dispatcher/git-symlinks.md)
+   + [GIT Symlinks](./dispatcher/git-symlinks.md)

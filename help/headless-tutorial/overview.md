@@ -7,7 +7,7 @@ role: Developer
 level: Beginner
 recommendations: disable, exclude
 exl-id: 57f88d79-9879-4bb9-a3db-9fec95e3a0bd
-source-git-commit: 4c0770eafbbbb90bfc00ab49be02e84c41d63057
+source-git-commit: 758fa40240b12f5bfa83ac5c0300b71f41e2326d
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 7%
@@ -15,8 +15,6 @@ ht-degree: 7%
 ---
 
 # Tutorials AEM para Headless en la{#aem-headless-tutorials}
-
-{{aem-headless-trials-promo}}
 
 Adobe Experience Manager AEM () tiene varias opciones para definir puntos finales sin encabezado y entregar su contenido como JSON. Utilice tutoriales prácticos para explorar cómo utilizar las distintas opciones y elegir las que sean adecuadas para usted.
 

@@ -21,40 +21,40 @@ ht-degree: 33%
 
 ---
 
-# Cree su primer SPA React en AEM {#overview}
+# SPA AEM Creación de su primer React en el {#overview}
 
-Le damos la bienvenida a un tutorial de varias partes diseñado para desarrolladores que no tienen experiencia con el **Editor SPA** en Adobe Experience Manager (AEM). Este tutorial explica la implementación de una aplicación React para una marca ficticia de estilo de vida, la WKND. La aplicación React está desarrollada y diseñada para implementarse con AEM Editor SPA, que asigna componentes de React a componentes AEM. El SPA completado, implementado en AEM, se puede crear dinámicamente con herramientas de edición en línea tradicionales de AEM.
+Bienvenido a un tutorial de varias partes diseñado para desarrolladores nuevos en la **SPA Editor de** función en Adobe Experience Manager AEM (). Este tutorial explora la implementación de una aplicación de React para una marca ficticia de estilo de vida, WKND. AEM SPA AEM La aplicación React se ha desarrollado y diseñado para implementarse con el Editor de, que asigna los componentes React a los componentes de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de. SPA AEM AEM Los segmentos completados, implementados para la creación de informes de forma dinámica, se pueden crear con las herramientas de edición en línea tradicionales de la creación de informes de la versión en tiempo de ejecución de la versión en tiempo de ejecución de la.
 
-![SPA final implementado](assets/wknd-spa-implementation.png)
+![SPA Implementación final de](assets/wknd-spa-implementation.png)
 
-*Implementación de WKND SPA*
+*SPA Implementación de WKND*
 
 ## Acerca de
 
-El tutorial está diseñado para funcionar con **AEM as a Cloud Service** y es compatible con **AEM 6.5.4+** y **AEM 6.4.8+**.
+El tutorial está diseñado para trabajar con **AEM as a Cloud Service** y es compatible con **AEM.5.4+** y **AEM.4.8+**.
 
 ## Último código
 
-Todo el código del tutorial se puede encontrar en [GitHub](https://github.com/adobe/aem-guides-wknd-spa).
+Todo el código del tutorial se encuentra en [GitHub](https://github.com/adobe/aem-guides-wknd-spa).
 
-La variable [base de código más reciente](https://github.com/adobe/aem-guides-wknd-spa/releases) está disponible como paquetes AEM descargables.
+El [última base de código](https://github.com/adobe/aem-guides-wknd-spa/releases) AEM está disponible como paquetes de descarga de la aplicación de descarga de.
 
 ## Requisitos previos
 
 Antes de iniciar este tutorial, necesita lo siguiente:
 
-* Un conocimiento básico de HTML, CSS y JavaScript
-* Familiaridad básica con [React](https://reactjs.org/tutorial/tutorial.html)
+* Conocimientos básicos de HTML, CSS y JavaScript
+* Familiaridad básica con [Reaccionar](https://reactjs.org/tutorial/tutorial.html)
 
-*Aunque no es necesario, es beneficioso tener una comprensión básica de [desarrollo de componentes tradicionales de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es).*
+*Si bien no es necesario, es beneficioso tener una comprensión básica de [desarrollo de componentes tradicionales de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es).*
 
 ## Entorno de desarrollo local {#local-dev-environment}
 
-Se necesita un entorno de desarrollo local para completar este tutorial. Las capturas de pantalla y el vídeo se capturan mediante el SDK as a Cloud Service de AEM que se ejecuta en un entorno del sistema operativo Mac con [Código de Visual Studio](https://code.visualstudio.com/) como el IDE. Los comandos y el código deben ser independientes del sistema operativo local, a menos que se indique lo contrario.
+Se necesita un entorno de desarrollo local para completar este tutorial. AEM Las capturas de pantalla y los vídeos se capturan mediante el SDK as a Cloud Service de que se ejecuta en un entorno de sistema operativo Mac con [Código de Visual Studio](https://code.visualstudio.com/) como IDE. Los comandos y el código deben ser independientes del sistema operativo local, a menos que se indique lo contrario.
 
 ### Software necesario
 
-* [SDK as a Cloud Service AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html), [AEM 6.5.4+](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=en#aem-65) o [AEM 6.4.8+](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=en#aem-64)
+* [AEM SDK as a Cloud Service de](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html), [AEM.5.4+](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=en#aem-65) o [AEM.4.8+](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=en#aem-64)
 * [Java](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 * [Apache Maven](https://maven.apache.org/) (3.3.9 o posterior)
 * [Node.js](https://nodejs.org/en/) y [npm](https://www.npmjs.com/)
@@ -63,8 +63,8 @@ Se necesita un entorno de desarrollo local para completar este tutorial. Las cap
 >
 > **¿Es novato en el uso de AEM as a Cloud Service?** Consulte la [siguiente guía para configurar un entorno de desarrollo local con el SDK de AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=es).
 >
-> **¿Es nuevo en AEM 6.5?** Consulte la [siguiente guía para configurar un entorno de desarrollo local](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=es).
+> **AEM ¿Nuevo en la versión 6.5 de?** Consulte la [siguiente guía para configurar un entorno de desarrollo local](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=es).
 
 ## Pasos siguientes {#next-steps}
 
-¡¿Qué estás esperando?! Inicie el tutorial navegando hasta el [Crear proyecto](create-project.md) y aprenda a generar un proyecto habilitado para Editor de SPA con el tipo de archivo del proyecto de AEM.
+¿Qué estás esperando?! Inicie el tutorial navegando hasta [Crear proyecto](create-project.md) SPA AEM y aprenda a generar un proyecto habilitado para el Editor de mediante el Tipo de archivo del proyecto de.

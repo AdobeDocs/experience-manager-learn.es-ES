@@ -1,5 +1,5 @@
 ---
-title: Configuración del panel de recursos
+title: Configurar el panel de recursos
 description: Agregue un panel Diseño de acordeón al panel Recursos.
 solution: Experience Manager,Experience Manager Forms
 type: Documentation
@@ -18,8 +18,8 @@ ht-degree: 0%
 
 ---
 
-# Configuración del panel de recursos
+# Configurar el panel de recursos
 
-Capturar los activos del solicitante utilizando un panel repetible con una presentación Acordeón .
+Capture los recursos del solicitante utilizando un panel repetible con un diseño de acordeón
 
 >[!VIDEO](https://video.tv.adobe.com/v/336473?quality=12&learn=on)

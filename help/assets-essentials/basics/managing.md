@@ -1,6 +1,6 @@
 ---
 title: Administración de Assets Essentials
-description: Conozca los conceptos básicos para crear una estructura de carpetas y las operaciones básicas como mover, copiar y cambiar el nombre.
+description: Conozca los conceptos básicos de la creación de una estructura de carpetas y las operaciones básicas como mover, copiar y cambiar nombre.
 version: Cloud Service
 feature: Assets Essentials
 topic: Content Management
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Administración de Assets Essentials
 
-Conozca los conceptos básicos para crear una estructura de carpetas y las operaciones básicas como mover, copiar y cambiar el nombre.
+Conozca los conceptos básicos de la creación de una estructura de carpetas y las operaciones básicas como mover, copiar y cambiar nombre.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335733?quality=12&learn=on)

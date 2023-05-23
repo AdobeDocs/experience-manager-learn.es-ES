@@ -1,6 +1,6 @@
 ---
 title: Configuración de plantillas de recursos con AEM Assets y InDesign Server
-description: Las plantillas de recursos permiten a los especialistas en marketing crear, administrar y distribuir recursos digitales para impresión y dispositivos digitales. La creación de folletos de marketing, tarjetas de visita, folletos, anuncios y tarjetas postales es mucho más fácil con las plantillas de recursos al integrarse con el servidor de InDesign. La configuración del servidor de InDesign con AEM se explica en esta sección.
+description: Las plantillas de recursos permiten a los especialistas en marketing crear, administrar y distribuir recursos digitales para su uso digital e impreso. La creación de folletos de marketing, tarjetas de presentación, prospectos, anuncios y postales es mucho más sencilla con las plantillas de recursos al integrarse con el servidor de InDesign. En esta sección se describe la configuración del servidor de InDesign AEM con el.
 version: 6.4, 6.5
 topic: Content Management
 role: Developer
@@ -15,19 +15,19 @@ ht-degree: 0%
 
 # Configuración de plantillas de recursos con AEM Assets y InDesign Server{#set-up-asset-templates-with-aem-assets-and-indesign-server}
 
-Las plantillas de recursos permiten a los especialistas en marketing crear, administrar y distribuir recursos digitales para impresión y dispositivos digitales. La creación de folletos de marketing, tarjetas de visita, folletos, anuncios y tarjetas postales es mucho más fácil con las plantillas de recursos al integrarse con el servidor de InDesign. La configuración del servidor de InDesign con AEM se explica en esta sección.
+Las plantillas de recursos permiten a los especialistas en marketing crear, administrar y distribuir recursos digitales para su uso digital e impreso. La creación de folletos de marketing, tarjetas de presentación, prospectos, anuncios y postales es mucho más sencilla con las plantillas de recursos al integrarse con el servidor de InDesign. En esta sección se describe la configuración del servidor de InDesign AEM con el.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17069?quality=12&learn=on)
 
 >[!NOTE]
 >
->AEM **must** estar conectado a un servidor de InDesign en ejecución cuando se cargue la plantilla INDD. Parte del procesamiento inicial en el archivo INDD requiere el servidor de InDesign.
+>AEM **debe** estar conectado a un servidor de InDesign en ejecución cuando se carga la plantilla INDD. Parte del procesamiento inicial del archivo INDD requiere un servidor de InDesign.
 
-## Descargar versión de prueba de InDesign Server {#download-indesign-server-trial}
+## Descargar prueba de InDesign Server {#download-indesign-server-trial}
 
-Descargar [Sitio web de descarga de prueba de InDesign Server](https://www.adobeprerelease.com/)
+Descargar [InDesign Server de prueba de descarga Sitio web](https://www.adobeprerelease.com/)
 
-## Inicio del InDesign Server {#starting-indesign-server}
+## Iniciando InDesign Server {#starting-indesign-server}
 
 ```shell
 # macOS command

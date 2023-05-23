@@ -1,5 +1,5 @@
 ---
-title: Crear un componente de flujo de trabajo personalizado con el cuadro de diálogo
+title: Crear componente de flujo de trabajo personalizado con cuadro de diálogo
 description: Este tutorial le guiará por los pasos necesarios para crear un componente de flujo de trabajo personalizado.
 feature: Adaptive Forms
 version: 6.5
@@ -23,10 +23,10 @@ Este tutorial le guiará por los pasos necesarios para crear un componente de fl
 
 Necesitará lo siguiente:
 
-* Una instancia de trabajo de AEM con el paquete de complementos de formulario instalado
+* AEM Una instancia de trabajo de la con el paquete de complementos de formulario instalado
 
 * [Entorno de desarrollo configurado según este documento](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)
 
 ## Pasos siguientes
 
-Escriba su [código java personalizado mediante la implementación de la interfaz WorkflowProcess](./custom-process-step-aem-workflow.md)
+Escriba su [código java personalizado al implementar la interfaz WorkflowProcess](./custom-process-step-aem-workflow.md)

@@ -1,6 +1,6 @@
 ---
-title: Configuración del panel de ingresos
-description: Agregue el componente de tabla al panel de ingresos.
+title: Configurar el panel de ingresos
+description: Agregar el componente Tabla al panel de ingresos.
 solution: Experience Manager,Experience Manager Forms
 type: Documentation
 role: Developer
@@ -18,8 +18,8 @@ ht-degree: 0%
 
 ---
 
-# Configuración del panel de ingresos
+# Configurar el panel de ingresos
 
-Añadir un componente de tabla al panel de ingresos para recoger las fuentes de ingresos del solicitante.
+Agregar el componente de tabla al panel de ingresos para capturar las fuentes de ingresos del solicitante.
 
 >[!VIDEO](https://video.tv.adobe.com/v/332233?quality=12&learn=on)

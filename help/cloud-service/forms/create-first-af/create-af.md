@@ -1,6 +1,6 @@
 ---
-title: Creación de un formulario adaptable
-description: Cree un formulario adaptable y configúrelo en la plantilla creada.
+title: Crear un formulario adaptable
+description: Cree un formulario adaptable y baselo en la plantilla creada.
 solution: Experience Manager,Experience Manager Forms
 type: Documentation
 role: Developer
@@ -14,12 +14,12 @@ exl-id: 26d26ea5-7781-42fa-97ad-713543a8d132
 source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
 workflow-type: tm+mt
 source-wordcount: '29'
-ht-degree: 13%
+ht-degree: 27%
 
 ---
 
-# Creación de un formulario adaptable
+# Crear un formulario adaptable
 
-Cree un formulario adaptable y asócielo al tema creado.
+Cree un formulario adaptable y asócielo a la temática creada.
 
 >[!VIDEO](https://video.tv.adobe.com/v/332237?quality=12&learn=on)

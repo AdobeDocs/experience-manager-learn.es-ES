@@ -1,6 +1,6 @@
 ---
-title: Cómo investigar los problemas relacionados con la indexación en AEM
-description: Pasos para investigar problemas relacionados con la indexación
+title: AEM Cómo investigar los problemas relacionados con la indexación en el
+description: Pasos para investigar los problemas relacionados con la indexación
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Cómo investigar los problemas relacionados con la indexación en AEM
+# AEM Cómo investigar los problemas relacionados con la indexación en el
 
-*Este vídeo muestra los pasos para investigar los problemas relacionados con la indexación en AEM.*
+*AEM Este vídeo explica los pasos para investigar los problemas relacionados con la indexación en los informes de.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335465?quality=12&learn=on)

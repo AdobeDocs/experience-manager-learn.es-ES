@@ -1,6 +1,6 @@
 ---
 title: Paso de proceso personalizado para comprimir archivos adjuntos
-description: Paso de proceso personalizado para agregar archivos adjuntos de formularios adaptables a un archivo zip y almacenar el archivo zip en una variable de flujo de trabajo
+description: Paso de proceso personalizado para agregar los archivos adjuntos del formulario adaptable a un archivo zip y almacenar el archivo zip en una variable de flujo de trabajo
 feature: Adaptive Forms
 version: 6.5
 topic: Development
@@ -15,17 +15,17 @@ ht-degree: 1%
 
 ---
 
-# Paso de proceso personalizado
+# Etapa de proceso personalizado
 
 
-Se ha implementado un paso de proceso personalizado para crear el archivo zip que contiene los archivos adjuntos del formulario. Si no está familiarizado con la creación de un paquete OSGi, [siga estas instrucciones](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)
+Se ha implementado un paso de proceso personalizado para crear el archivo zip que contiene los archivos adjuntos del formulario. Si no está familiarizado con la creación del paquete OSGi, [siga estas instrucciones](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)
 
 El código del paso de proceso personalizado hace lo siguiente
 
-* Consulte todos los archivos adjuntos de formularios adaptables de la carpeta de carga útil. El nombre de la carpeta se pasa como argumento de proceso al paso de proceso.
+* Consulte todos los archivos adjuntos de los formularios adaptables de la carpeta de carga útil. El nombre de la carpeta se pasa como argumento de proceso al paso de proceso.
 
-* Cree un archivo zip que contenga los archivos adjuntos del formulario y guárdelo en la carpeta de carga útil.
-* Establezca el valor de la variable de flujo de trabajo (no_of_attachment)
+* Cree un archivo zip que contenga los archivos adjuntos del formulario y almacénelo en la carpeta de carga útil.
+* Establezca el valor de la variable del flujo de trabajo (no_of_attachments)
 
 
 
@@ -159,8 +159,8 @@ public class ZipFormAttachments implements WorkflowProcess {
 
 >[!NOTE]
 >
-> Asegúrese de que tiene una variable llamada  *no_of_attachment* de tipo Double en el flujo de trabajo para que funcione este código.
+> Asegúrese de tener una variable llamada  *no_of_attachments* de tipo Double en el flujo de trabajo para que este código funcione.
 
 ## Pasos siguientes
 
-[Rellenar variables de flujo de trabajo ArrayList con datos adjuntos y nombre de archivo adjunto](./custom-process-step.md)
+[Rellenar variables de flujo de trabajo ArrayList con datos adjuntos y nombre de datos adjuntos](./custom-process-step.md)

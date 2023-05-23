@@ -1,6 +1,6 @@
 ---
 title: Cronología y bandeja de entrada
-description: Familiarícese con las consolas web clave en AEM Assets que se utilizan para la colaboración.
+description: Familiarícese con las consolas web clave de AEM Assets que se utilizan para la colaboración.
 sub-product: Experience Manager Assets
 feature: Workflow
 version: Cloud Service
@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Cronología y bandeja de entrada
 
-Familiarícese con las consolas web clave en AEM Assets que se utilizan para la colaboración.
+Familiarícese con las consolas web clave de AEM Assets que se utilizan para la colaboración.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32051?quality=12&learn=on)

@@ -15,13 +15,13 @@ ht-degree: 0%
 ---
 
 
-# Buscar el JSON del formulario
+# Recuperar el JSON del formulario
 
-Inicie sesión en la instancia de autor de AEM Forms y cree una nueva adaptabilidad con la variable **En blanco con componentes principales** plantilla. Publique el formulario en la instancia de publicación.
+Inicie sesión en la instancia de autor de AEM Forms y cree un nuevo formulario adaptable con el **En blanco con componentes principales** plantilla. Publique el formulario en la instancia de publicación.
 
-Para incrustar el formulario, primero recuperamos el json del formulario adaptable realizando una llamada get contra nuestro servidor de publicación.
+Para incrustar el formulario, primero recuperamos el json del formulario adaptable realizando una llamada GET en el servidor de publicación.
 
-El siguiente fragmento de código recupera el json del formulario adaptable llamado **contactus**
+El siguiente fragmento de código recupera el json del formulario adaptable llamado **contacto**
 
 ```javascript
 const getForm = async () => {
@@ -32,7 +32,7 @@ const getForm = async () => {
       }
 ```
 
-El código completo del componente de la función Contacto es el siguiente
+A continuación, se muestra el código completo del componente de función Contact
 
 ```javascript
 import Form from './components/Form';
@@ -75,4 +75,4 @@ export default function Contact(){
 }
 ```
 
-El código anterior utiliza componentes HTML nativos que se asignan a los componentes utilizados en el formulario adaptable. Por ejemplo, estamos asignando el componente de formulario adaptable de entrada de texto al componente TextField. Los componentes nativos utilizados en el artículo [se puede descargar desde aquí](./assets/native-components.zip)
+El código anterior utiliza componentes html nativos asignados a los componentes utilizados en el formulario adaptable. Por ejemplo, se asigna el componente de formulario adaptable de entrada de texto al componente TextField. Los componentes nativos utilizados en el artículo [se puede descargar desde aquí](./assets/native-components.zip)

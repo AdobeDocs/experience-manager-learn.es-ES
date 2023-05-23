@@ -1,6 +1,6 @@
 ---
 title: Uso de la herramienta de transferencia de contenido
-description: La herramienta de transferencia de contenido es la forma recomendada de migrar el contenido de una versión de AEM local o alojada en AMS a un entorno as a Cloud Service AEM.
+description: AEM AEM La herramienta de transferencia de contenido es la forma recomendada de migrar el contenido de una versión de AMS local o alojada en AMS de la aplicación a un entorno as a Cloud Service de.
 version: Cloud Service
 doc-type: technical-video
 topics: migration
@@ -22,10 +22,10 @@ ht-degree: 12%
 
 # Uso de la herramienta de transferencia de contenido
 
-La herramienta de transferencia de contenido es la forma recomendada de migrar el contenido de una versión de AEM local o alojada en AMS a un entorno as a Cloud Service AEM.
+AEM AEM La herramienta de transferencia de contenido es la forma recomendada de migrar el contenido de una versión de AMS local o alojada en AMS de la aplicación a un entorno as a Cloud Service de.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35460?quality=12&learn=on)
 
 ## Recursos adicionales {#additional-resources}
 
-* [Información general sobre la herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=es)
+* [Información general de la herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang?es)

@@ -1,6 +1,6 @@
 ---
-title: Flujo de trabajo de tiempo de espera de pago simple
-description: Ocultar y mostrar paneles de formulario adaptables en AEM flujo de trabajo
+title: Flujo de trabajo de solicitud de tiempo libre pago simple
+description: AEM Ocultar y mostrar paneles de formularios adaptables en flujo de trabajo de la
 uuid: 28ceb72b-24d9-488e-92af-7e85775dc682
 feature: Adaptive Forms
 topics: workflow
@@ -21,41 +21,41 @@ ht-degree: 0%
 
 ---
 
-# Flujo de trabajo de tiempo de espera de pago simple
+# Flujo de trabajo de solicitud de tiempo libre pago simple
 
-En este artículo analizamos un sencillo flujo de trabajo utilizado para solicitar el tiempo de espera pagado. Los requisitos comerciales son los siguientes:
+En este artículo, analizamos un flujo de trabajo sencillo utilizado para solicitar tiempo libre pagado. Los requisitos comerciales son los siguientes:
 
-* El usuario A solicita el tiempo de espera rellenando un formulario adaptable.
-* El formulario se redirige a AEM usuario administrador (en la vida real, se redirige al administrador del remitente)
-* El administrador abre el formulario. El administrador no debe poder editar ninguna información rellenada por el remitente.
-* La sección Aprobador debe ser visible para el aprobador (en este caso es el usuario administrador AEM).
+* El usuario A solicita tiempo libre rellenando un formulario adaptable.
+* AEM El formulario se enruta a usuario administrador (en la vida real, se enruta al administrador del remitente).
+* El administrador abre el formulario. El administrador no debe poder editar la información que haya rellenado el remitente.
+* AEM La sección Aprobador debe ser visible para el aprobador (en este caso es el usuario administrador).
 
-Para cumplir el requisito anterior, se utiliza un campo oculto denominado **initialstep** en el formulario y su valor predeterminado se establece en Sí.Cuando se envía el formulario, el primer paso del flujo de trabajo establece el valor del paso inicial en No. El formulario tiene reglas comerciales para ocultar y mostrar las secciones correspondientes en función del valor del paso inicial.
+Para cumplir el requisito anterior, se utiliza un campo oculto llamado **paso inicial** en el formulario y su valor predeterminado se establece en Sí.Cuando se envía el formulario, el primer paso del flujo de trabajo establece el valor de paso inicial en No. El formulario tiene reglas empresariales para ocultar y mostrar las secciones adecuadas en función del valor del paso inicial.
 
-**Configuración de formulario en Déclencheur AEM flujo de trabajo**
+**Configuración del formulario para Déclencheur AEM el flujo de trabajo de**
 
 >[!VIDEO](https://video.tv.adobe.com/v/28406?quality=12&learn=on)
 
-**Recorrido del flujo de trabajo**
+**Tutorial de flujo de trabajo**
 
 >[!VIDEO](https://video.tv.adobe.com/v/28407?quality=12&learn=on)
 
-**Vista del remitente del formulario de solicitud de tiempo de espera**
+**Vista del remitente del formulario de solicitud de tiempo libre**
 
-![initialstep](assets/initialstep.gif)
+![paso inicial](assets/initialstep.gif)
 
 **Vista del aprobador del formulario**
 
-![vista de aprobador](assets/approversview.gif)
+![approverview](assets/approversview.gif)
 
-En la vista de aprobador, el aprobador no puede editar los datos enviados. También hay una nueva sección destinada únicamente a Aprobadores.
+En la vista del aprobador, el aprobador no puede editar los datos enviados. También hay una nueva sección destinada únicamente a aprobadores.
 
-Para probar este flujo de trabajo en su sistema, siga los pasos que se indican a continuación:
-* [Descargar e implementar DevelopingWitheServiceUserBundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-* [Descargar e implementar el paquete personalizado de OSGI de SetValue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)
-* [Importar los recursos relacionados con este artículo a AEM](assets/helpxworkflow.zip)
-* Abra el [Formulario de solicitud de tiempo desactivado](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
-* Rellene los detalles y envíe
-* Abra el [bandeja de entrada](http://localhost:4502/mnt/overlay/cq/inbox/content/inbox.html). Debería ver una nueva tarea asignada. Abra el formulario. Los datos del remitente deben ser de solo lectura y debe estar visible una nueva sección del aprobador.
-* Explorar el [modelo de flujo de trabajo](http://localhost:4502/editor.html/conf/global/settings/workflow/models/helpxworkflow.html)
-* Explore el paso del proceso. Este es el paso que establece el valor del paso inicial en No.
+Para probar este flujo de trabajo en su sistema, siga los pasos que se mencionan a continuación:
+* [Descargar e implementar el paquete DevelopersWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+* [Descargar e implementar el paquete OSGI personalizado SetValue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)
+* [AEM Importe los recursos relacionados con este artículo en el sitio de trabajo de la aplicación de](assets/helpxworkflow.zip)
+* Abra el [Formulario de solicitud de tiempo libre](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
+* Complete los detalles y envíe
+* Abra el [bandeja de entrada](http://localhost:4502/mnt/overlay/cq/inbox/content/inbox.html). Debería ver una nueva tarea asignada. Abra el formulario. Los datos del remitente deben ser de solo lectura y debe estar visible una nueva sección de aprobadores.
+* Explore la [modelo de flujo de trabajo](http://localhost:4502/editor.html/conf/global/settings/workflow/models/helpxworkflow.html)
+* Explore el paso del proceso. Este es el paso que establece el valor de initialstep en No.

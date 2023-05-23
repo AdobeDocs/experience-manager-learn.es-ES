@@ -1,6 +1,6 @@
 ---
 title: Introducción a Cloud 5
-description: Introducción a la serie AEM Engineering Cloud 5.
+description: AEM Introducción a la serie 5 de Ingeniería en la nube de la.
 version: Cloud Service
 feature: Developer Tools
 role: Admin, Developer
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Introducción a Cloud 5
 
-Bienvenido a la serie Cloud 5 de AEM Engineering. Uno de los principales problemas en la fase de implementación de cualquier producto es tener suficientes muestras de código y/o demostraciones en vivo de esas muestras, herramientas o API. El objetivo de esta serie es proporcionar información útil sobre AEM as a Cloud Service en 5 minutos o menos.
+AEM Bienvenido a la serie Cloud 5 de Ingeniería de. Uno de los principales problemas en la fase de implementación de cualquier producto es tener suficientes muestras de código o demostraciones en directo de esas muestras, herramientas o API. AEM El objetivo de esta serie es proporcionar información útil acerca de las as a Cloud Service en 5 minutos o menos.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340667?quality=12&learn=on)

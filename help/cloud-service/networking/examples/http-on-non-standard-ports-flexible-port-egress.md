@@ -1,6 +1,6 @@
 ---
 title: Conexiones HTTP/HTTPS en puertos no estándar para salida de puerto flexible
-description: Aprenda a hacer solicitudes HTTP/HTTPS de AEM as a Cloud Service a servicios web externos que se ejecutan en puertos no estándar para el consumo de puerto flexible.
+description: AEM Obtenga información sobre cómo realizar solicitudes HTTP/HTTPS desde servicios web as a Cloud Service a externos que se ejecutan en puertos no estándar para la salida de puerto flexible.
 version: Cloud Service
 feature: Security
 topic: Development, Security
@@ -18,28 +18,28 @@ ht-degree: 0%
 
 # Conexiones HTTP/HTTPS en puertos no estándar para salida de puerto flexible
 
-Las conexiones HTTP/HTTPS en puertos no estándar (no 80/443) deben procesarse como proxy fuera de AEM as a Cloud Service, pero no necesitan ninguna conexión especial `portForwards` y puede utilizar AEM `AEM_PROXY_HOST` y un puerto proxy reservado `AEM_HTTP_PROXY_PORT` o `AEM_HTTPS_PROXY_PORT` según es el destino es HTTP/HTTPS.
+AEM Las conexiones HTTP/HTTPS en puertos no estándar (no 80/443) deben procesarse como proxy fuera de las conexiones as a Cloud Service, aunque no necesitan ninguna conexión especial `portForwards` AEM , y puede utilizar las funciones de red avanzadas de la red de la manera más avanzada `AEM_PROXY_HOST` y un puerto proxy reservado `AEM_HTTP_PROXY_PORT` o `AEM_HTTPS_PROXY_PORT` en función de si el destino es HTTP/HTTPS.
 
 ## Compatibilidad avanzada con redes
 
-El siguiente ejemplo de código es compatible con las siguientes opciones avanzadas de red.
+Las siguientes opciones avanzadas de red admiten el siguiente ejemplo de código.
 
-Asegúrese de que la variable [apropiado](../advanced-networking.md#advanced-networking) se ha configurado la configuración avanzada de redes antes de seguir este tutorial.
+Asegúrese de que la [apropiado](../advanced-networking.md#advanced-networking) la configuración avanzada de red se ha establecido antes de seguir este tutorial.
 
 | Sin redes avanzadas | [Salida de puerto flexible](../flexible-port-egress.md) | [Dirección IP de salida dedicada](../dedicated-egress-ip-address.md) | [Red privada virtual](../vpn.md) |
 |:-----:|:-----:|:------:|:---------:|
-| ü | š | ü | ü |
+| ✘ | ✔ | ✘ | ✘ |
 
 >[!CAUTION]
 >
-> Este ejemplo de código solo sirve para [Salida de puerto flexible](../flexible-port-egress.md). Hay un ejemplo de código similar, pero diferente, disponible para [Conexiones HTTP/HTTPS en puertos no estándar para direcciones IP de salida dedicadas y VPN](./http-dedicated-egress-ip-vpn.md).
+> Este ejemplo de código es solo para [Salida de puerto flexible](../flexible-port-egress.md). Hay disponible un ejemplo de código similar, pero diferente, para [Conexiones HTTP/HTTPS en puertos no estándar para direcciones IP de salida dedicadas y VPN](./http-dedicated-egress-ip-vpn.md).
 
 ## Ejemplo de código
 
-Este ejemplo de código Java™ es de un servicio OSGi que puede ejecutarse en AEM as a Cloud Service que realiza una conexión HTTP a un servidor web externo en el 8080. Las conexiones a servidores web HTTPS utilizan variables de entorno `AEM_PROXY_HOST` y `AEM_HTTPS_PROXY_PORT` (de forma predeterminada, `proxy.tunnel:3128` en versiones de AEM &lt; 6094).
+AEM Este ejemplo de código Java™ es de un servicio OSGi que se puede ejecutar en as a Cloud Service que realiza una conexión HTTP a un servidor web externo en 8080. Las conexiones a servidores web HTTPS utilizan las variables de entorno `AEM_PROXY_HOST` y `AEM_HTTPS_PROXY_PORT` (de forma predeterminada, `proxy.tunnel:3128` AEM en versiones de &lt; 6094).
 
 >[!NOTE]
-> Se recomienda usar la variable [API HTTP de Java™ 11](https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/package-summary.html) se utilizan para realizar llamadas HTTP/HTTPS desde AEM.
+> Se recomienda el [API HTTP de Java™ 11](https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/package-summary.html) AEM se utilizan para realizar llamadas HTTP/HTTPS desde el servicio de llamadas a través de la red de.
 
 + `core/src/com/adobe/aem/wknd/examples/connections/impl/HttpExternalServiceImpl.java`
 

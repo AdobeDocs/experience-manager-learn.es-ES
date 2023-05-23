@@ -1,56 +1,56 @@
 ---
 title: ¿Qué es Dispatcher?
-description: Comprender lo que es un Dispatcher en realidad.
+description: Comprenda qué es realmente Dispatcher.
 version: 6.5
 topic: Administration
 feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: 829ad9733b4326c79b9b574b13b1d4c691abf877
+exl-id: 96c8dd09-e0a7-4abc-b04b-a805aaa67502
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 2%
 
 ---
 
-
 # ¿Qué es Dispatcher?
 
 [Tabla de contenidos](./overview.md)
 
-Comenzando con la descripción básica de lo que implica un Dispatcher AEM.
+AEM Empezando por la descripción básica de lo que implica un Dispatcher de.
 
 ## Servidor web Apache
 
-Comience con una instalación básica de Apache Web Server en un servidor Linux.
+Comience con una instalación básica del servidor web Apache en un servidor Linux.
 
 Explicación básica de lo que hace un servidor Apache:
 
-- Sigue reglas simples para servir archivos a través de los protocolos HTTP(s) desde su directorio de documentos estático (`DocumentRoot`)
-- Archivos almacenados en una ubicación predeterminada (`/var/www/html`) coinciden en las solicitudes y se procesan en el explorador del cliente solicitante
+- Sigue reglas sencillas para proporcionar archivos a través de los protocolos HTTP(s) desde su directorio de documentos estático (`DocumentRoot`)
+- Archivos almacenados en una ubicación predeterminada (`/var/www/html`) coinciden en las solicitudes y se representan en el explorador del cliente solicitante
 
 
 
 
-## AEM archivo de módulo específico (`mod_dispatcher.so`)
+## AEM archivo de módulo específico de (`mod_dispatcher.so`)
 
-A continuación, agregue un complemento al servidor web Apache llamado módulo Dispatcher
+A continuación, agregue un complemento al servidor web Apache llamado módulo de Dispatcher
 
-Explicación básica de lo que hace el módulo Adobe AEM Dispatcher:
+Explicación básica de qué hace el módulo de Dispatcher de Adobe AEM:
 
 - Aumenta el controlador de archivos predeterminado
-- Filtra las solicitudes incorrectas/Protege AEM vientre blando/extremos
-- Balance de carga si hay más de un renderizador presente
-- Permite un directorio de caché activo / Admite vaciado de archivos estancados
-- Es la puerta principal de todas las instalaciones de AMS y entrega sitios web y activos al navegador del cliente
-- Almacena en caché las solicitudes para volver a servir a una velocidad mucho más rápida de lo que un servidor AEM podría lograr por sí solo
+- AEM Filtra las solicitudes incorrectas / Protege la barriga blanda o los extremos de la pantalla de protección
+- Equilibrios de carga si hay más de un procesador
+- Permite un directorio de caché activo / Admite el vaciado de archivos estancados
+- Es la puerta principal de todas las instalaciones de AMS y ofrece sitios web y recursos al navegador del cliente
+- AEM Almacena en caché las solicitudes de reutilización a una velocidad mucho más rápida de lo que un servidor de correo electrónico podría realizar por sí solo en la caché de un servidor de
 - Mucho más...
 
-## Flujo de trabajo del tráfico web
+## Flujo de trabajo de tráfico web
 
-Comprender qué piezas se instalan juntas para construir un servidor Dispatcher básico nos lleva a que entienda el flujo de trabajo de tráfico web básico para una configuración de Servicios de Adobe Manager.
-Esto le ayudará a comprender la función que desempeña en la cadena de sistemas que sirven contenido a los visitantes del contenido de AEM.
+Comprender qué partes se instalan juntas para crear un servidor de Dispatcher básico nos lleva a tener que comprender el flujo de trabajo básico de tráfico web para una configuración de Adobe Manager Services.
+AEM Esto le ayudará a comprender qué papel desempeña en la cadena de sistemas que ofrecen contenido a los visitantes de su contenido de la red de la red de la red de la red de la red de la red de la red de la red de la red de la red de la red de la red de la red de la red de la red de la red de la red de la red de la.
 
 <b>Servir contenido ya almacenado en caché</b>
 
@@ -63,7 +63,7 @@ End User's Browser request
                     → End User
 ```
 
-<b>Ofrecer contenido nuevo de AEM</b>
+<b>AEM Servir contenido fresco de la</b>
 
 ```
 End User's Browser request 
@@ -86,4 +86,4 @@ AEM Author User activates content
             * Next request for that content will request fresh copy from publisher *
 ```
 
-[Siguiente -> Diseño de archivo básico](./basic-file-layout.md)
+[Siguiente -> Diseño básico del archivo](./basic-file-layout.md)

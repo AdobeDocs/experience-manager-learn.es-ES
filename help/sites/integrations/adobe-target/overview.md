@@ -1,5 +1,5 @@
 ---
-title: Información general sobre AEM y Adobe Target
+title: AEM Información general sobre el uso de y Adobe Target
 description: Obtenga información sobre cómo crear y ofrecer experiencias personalizadas con Adobe Experience Manager as a Cloud Service y Adobe Target.
 feature: Experience Fragments, Core Components, Adobe Client Data Layer
 topics: integrations, personalization, administration, development
@@ -20,30 +20,30 @@ ht-degree: 0%
 
 ---
 
-# AEM y Adobe Target
+# AEM y ADOBE TARGET
 
-Adobe Experience Manager (AEM) y Adobe Target son soluciones potentes con capacidades complementarias que pueden malinterpretarse como que compiten. A veces, los clientes tienen dificultades para comprender cómo y cuándo utilizar estos productos en conjunto para ofrecer una experiencia personalizada. Para ofrecer una experiencia optimizada para cada usuario final, los distintos equipos de su organización deben trabajar de cerca y definir quién hace qué.
+Adobe Experience Manager AEM () y Adobe Target son soluciones potentes con funciones gratuitas que pueden malinterpretarse como de la competencia. A veces, los clientes tienen dificultades para comprender cómo y cuándo utilizar estos productos en conjunto para ofrecer una experiencia personalizada. Para ofrecer una experiencia optimizada para cada usuario final, los diferentes equipos de su organización deben trabajar de cerca y definir quién hace qué.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41241?quality=12&learn=on)
 
-En este vídeo, analizamos tres métodos para usar AEM y Target, y le ayudamos a comprender qué funciona mejor para su organización.
+AEM En este vídeo, analizamos tres métodos para usar y Target, y le ayudamos a comprender qué es lo que mejor funciona para su organización.
 
-* __Escenario 1:__ personalización mediante ofertas de fragmentos de experiencia AEM
+* __Escenario 1:__ AEM Personalización mediante ofertas de fragmentos de experiencias de
 
-   1. [Agregar Adobe Target al sitio web AEM](./add-target-launch-extension.md)
+   1. [Añadir Adobe Target AEM al sitio web de la](./add-target-launch-extension.md)
    1. [Déclencheur de una llamada de Adobe Target desde Launch](./load-and-fire-target.md)
-   1. [Integrar el servicio AEM Author con Adobe Target](./setup-aem-target-cloud-service.md)
-   1. [Exportar AEM fragmentos de experiencias a Adobe Target](./export-experience-fragment-target.md)
-   1. [Personalización de parte de una página web mediante ofertas de fragmentos de experiencias](./create-target-activity.md)
+   1. [Integrar el servicio de AEM Author con Adobe Target](./setup-aem-target-cloud-service.md)
+   1. [AEM Exportación de fragmentos de experiencias de la aplicación a Adobe Target](./export-experience-fragment-target.md)
+   1. [Personalización de parte de una página web mediante Ofertas de fragmentos de experiencias](./create-target-activity.md)
 
-* __Escenario 2:__ personalización mediante el Compositor de experiencias visuales (VEC)
+* __Escenario 2:__ Personalización mediante el Compositor de experiencias visuales (VEC)
 
-   1. [Agregar Adobe Target al sitio web AEM](./add-target-launch-extension.md)
+   1. [Añadir Adobe Target AEM al sitio web de la](./add-target-launch-extension.md)
    1. [Déclencheur de una llamada de Adobe Target desde Launch](./load-and-fire-target.md)
-   1. [Personalización de parte de una página web mediante el Compositor de experiencias visuales](./personalization-using-vec.md)
+   1. [Personalizar parte de una página web mediante el Compositor de experiencias visuales](./personalization-using-vec.md)
 
-* __Escenario 3:__ personalización de las experiencias de página web completa
+* __Escenario 3:__ Personalización de experiencias de página web completa
 
-   1. [Agregar Adobe Target al sitio web AEM](./add-target-launch-extension.md)
+   1. [Añadir Adobe Target AEM al sitio web de la](./add-target-launch-extension.md)
    1. [Déclencheur de una llamada de Adobe Target desde Launch](./load-and-fire-target.md)
-   1. [Personalización de la experiencia de página web completa](./personalization-web-page.md)
+   1. [Personalizar la experiencia completa de la página web](./personalization-web-page.md)

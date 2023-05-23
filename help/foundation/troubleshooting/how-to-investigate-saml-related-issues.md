@@ -1,6 +1,6 @@
 ---
-title: Cómo investigar los problemas relacionados con SAML en AEM
-description: Pasos para investigar problemas relacionados con SAML
+title: AEM Cómo investigar los problemas relacionados con SAML en el ámbito de la
+description: Pasos para investigar los problemas relacionados con SAML
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Cómo investigar los problemas relacionados con SAML
 
-*Este vídeo muestra los pasos para investigar los problemas relacionados con SAML en AEM.*
+*AEM Este vídeo explica los pasos para investigar los problemas relacionados con SAML en la práctica de la.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335466?quality=12&learn=on)

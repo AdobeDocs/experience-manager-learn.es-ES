@@ -1,6 +1,6 @@
 ---
 title: Entrega de imágenes optimizadas para web
-description: Obtenga información sobre cómo habilitar la entrega de imágenes optimizadas para web en AEM sitios as a Cloud Service mediante AEM componentes principales.
+description: AEM Obtenga información sobre cómo habilitar la entrega de imágenes optimizadas para la web en sitios as a Cloud Service AEM de la mediante componentes principales.
 version: Cloud Service
 feature: Core Components, Configuring, Editable Templates
 topic: Performance, Administration
@@ -9,16 +9,16 @@ level: Intermediate
 last-substantial-update: 2022-08-11T00:00:00Z
 kt: 10843
 thumbnail: 346064.jpeg
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+exl-id: d16c0c7b-3d0e-4e4f-a1e0-baa8a44cc366
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '46'
 ht-degree: 0%
 
 ---
 
-
 # Entrega de imágenes optimizadas para web
 
-Obtenga información sobre cómo habilitar la entrega de imágenes optimizadas para web en AEM sitios as a Cloud Service mediante AEM componentes principales.
+AEM Obtenga información sobre cómo habilitar la entrega de imágenes optimizadas para la web en sitios as a Cloud Service AEM de la mediante componentes principales.
 
 >[!VIDEO](https://video.tv.adobe.com/v/346064?quality=12&learn=on)

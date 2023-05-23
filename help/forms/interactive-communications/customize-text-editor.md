@@ -12,7 +12,8 @@ level: Beginner
 feature: Interactive Communication
 last-substantial-update: 2023-04-19T00:00:00Z
 kt: 13126
-source-git-commit: edba74f5ff5611687c05812de184243997ee7a35
+exl-id: f12ab119-ac8e-4cc8-af86-cbffa30e72c5
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '603'
 ht-degree: 92%
@@ -23,7 +24,7 @@ ht-degree: 92%
 
 ## Información general {#overview}
 
-Puede personalizar el editor de texto utilizado para crear fragmentos de documento, para agregar más fuentes y tamaños de fuente. Estas fuentes incluyen fuentes inglesas y no inglesas, como las japonesas.
+Puede personalizar el editor de texto utilizado para crear fragmentos de documento para agregar más fuentes y tamaños de fuente. Estas fuentes incluyen fuentes inglesas y no inglesas, como las japonesas.
 
 Puede personalizarlo para cambiar lo siguiente en la configuración de la fuente:
 
@@ -178,7 +179,7 @@ Para personalizar fuentes al editar el archivo tbxeditor-config.xml, haga lo sig
 
 ## Agregar fuentes personalizadas al equipo cliente {#addcustomfonts}
 
-Al acceder a una fuente en el editor de texto de Interactive Communications, debe estar presente en el equipo cliente que está utilizando para acceder a la comunicación interactiva. Para poder utilizar una fuente personalizada en el editor de texto, primero debe instalar la misma en el equipo cliente.
+Cuando accede a una fuente en el editor de texto de comunicaciones interactivas, debe estar presente en el equipo cliente que utilice para acceder a ella. Para poder utilizar una fuente personalizada en el editor de texto, primero debe instalar la misma en el equipo cliente.
 
 Para obtener más información sobre la instalación de fuentes, consulte lo siguiente:
 

@@ -1,6 +1,6 @@
 ---
 title: Funciones personalizadas en AEM Forms
-description: Crear y utilizar funciones personalizadas en el formulario adaptable
+description: Crear y utilizar funciones personalizadas en formularios adaptables
 feature: Adaptive Forms
 version: 6.5
 topic: Development
@@ -19,20 +19,20 @@ ht-degree: 0%
 # Funciones personalizadas
 
 AEM Forms 6.5 ha introducido la capacidad de definir las funciones de JavaScript que se pueden utilizar para definir reglas comerciales complejas mediante el editor de reglas.
-AEM Forms proporciona varias de estas funciones personalizadas listas para usar, pero tendrá que definir sus propias funciones personalizadas y utilizarlas en varios formularios.
+AEM Forms proporciona varias de estas funciones personalizadas de forma predeterminada, pero tendrá que definir sus propias funciones personalizadas y utilizarlas en varios formularios.
 
-Para definir su primera función personalizada, siga los siguientes pasos:
+Para definir la primera función personalizada, siga los siguientes pasos:
 * [Iniciar sesión en crx](http://localhost:4502/crx/de/index.jsp#/apps/experience-league/clientlibs)
-* Cree una nueva carpeta en aplicaciones denominada experience-league (este nombre de carpeta puede ser el nombre de su elección)
+* Cree una nueva carpeta en las aplicaciones llamada experience-league (este nombre de carpeta puede ser un nombre de su elección)
 * Guarde los cambios.
-* En la carpeta de la liga de experiencia, cree un nuevo nodo de tipo cq:ClientLibraryFolder llamado clientlibs.
-* Seleccione la carpeta clientlibs recién creada y añada las propiedades allowProxy y categories como se muestra en la captura de pantalla y guarde los cambios.
+* En la carpeta de Experience League, cree un nuevo nodo de tipo cq:ClientLibraryFolder llamado clientlibs.
+* Seleccione la carpeta clientlibs recién creada y agregue las propiedades allowProxy y categories como se muestra en la captura de pantalla y guarde los cambios.
 
 ![client-lib](assets/custom-functions.png)
 * Cree una carpeta llamada **js** en el **clientlibs** carpeta
 * Cree un archivo llamado **functions.js** en el **js** carpeta
 * Cree un archivo llamado **js.txt** en el **clientlibs** carpeta. Guarde los cambios.
-* La estructura de la carpeta debería ser similar a la captura de pantalla siguiente.
+* La estructura de carpetas debe ser similar a la captura de pantalla siguiente.
 
 ![Editor de reglas](assets/folder-structure.png)
 
@@ -71,12 +71,12 @@ function convertUTC(strUTCString)
 }
 ```
 
-Por favor [consulte jsdoc ](https://jsdoc.app/index.html)para obtener más información sobre la anotación de funciones de javascript.
+Por favor [consulte jsdoc ](https://jsdoc.app/index.html)para obtener más información sobre cómo anotar funciones de javascript.
 El código anterior tiene dos funciones:
-**getCountyNamesList** - devuelve una matriz de cadenas
-**convertirUTC** - Convierte la marca de hora UTC en una zona horaria local
+**getCountyNamesList** - devuelve una matriz de cadena.
+**convertUTC** - Convierte la marca de tiempo UTC a la zona horaria local
 
-Abra js.txt y pegue el siguiente código y guarde los cambios.
+Abra el archivo js.txt, pegue el siguiente código y guarde los cambios.
 
 ```javascript
 #base=js
@@ -86,9 +86,9 @@ functions.js
 La línea #base=js especifica en qué directorio se encuentran los archivos JavaScript.
 Las líneas siguientes indican la ubicación del archivo JavaScript en relación con la ubicación base.
 
-Si tiene problemas para crear las funciones personalizadas, asegúrese de [descargar e instalar este paquete](assets/custom-functions.zip) en su instancia de AEM.
+Si tiene problemas para crear las funciones personalizadas, no dude en [descargar e instalar este paquete](assets/custom-functions.zip) AEM en su instancia de la.
 
 ## Uso de las funciones personalizadas
 
-El siguiente vídeo le explica los pasos necesarios para utilizar la función personalizada en el editor de reglas de un formulario adaptable
+El siguiente vídeo le guía por los pasos necesarios para utilizar la función personalizada en el editor de reglas de un formulario adaptable
 >[!VIDEO](https://video.tv.adobe.com/v/340305?quality=12&learn=on)

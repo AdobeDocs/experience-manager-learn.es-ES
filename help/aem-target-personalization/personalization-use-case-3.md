@@ -17,59 +17,59 @@ ht-degree: 2%
 
 # Personalización mediante el Compositor de experiencias visuales
 
-En este capítulo, analizaremos la creación de experiencias mediante **Compositor de experiencias visuales** arrastrando y soltando, intercambiando y modificando el diseño y el contenido de una página web desde Target.
+En este capítulo, exploraremos la creación de experiencias con **Compositor de experiencias visuales** al arrastrar y soltar, intercambiar y modificar el diseño y el contenido de una página web desde Target.
 
 ## Información general del escenario
 
-La página de inicio del sitio WKND muestra las actividades locales o lo mejor para hacer en una ciudad en forma de diseños de tarjeta. Como especialista en marketing, se le ha asignado la tarea de modificar la página principal, reorganizando los diseños de tarjeta para ver cómo afecta a la participación del usuario y la conversión.
+La página de inicio del sitio WKND muestra las actividades locales o lo mejor que se puede hacer por una ciudad en forma de diseños de tarjeta. Como especialista en marketing, se le ha asignado la tarea de modificar la página de inicio mediante la reorganización de los diseños de tarjeta para ver cómo afecta a la participación del usuario y cómo impulsa la conversión.
 
 ### Usuarios implicados
 
-Para este ejercicio, es necesario involucrar a los siguientes usuarios y para realizar algunas tareas es posible que necesite acceso administrativo.
+Para este ejercicio, deben participar los siguientes usuarios y, para realizar algunas tareas, puede necesitar acceso administrativo.
 
 * **Productor de contenido/Editor de contenido** (Adobe Experience Manager)
 * **Especialista en marketing** (Adobe Target / Equipo de optimización)
 
-### Página principal del sitio WKND
+### Página de inicio del sitio WKND
 
-![Escenario de AEM objetivo 1](assets/personalization-use-case-3/aem-target-use-case-3.png)
+![AEM Escenario 1 de Target de](assets/personalization-use-case-3/aem-target-use-case-3.png)
 
 ### Requisitos previos
 
 * **AEM**
-   * [AEM instancia de publicación](./implementation.md#getting-aem) en ejecución el 4503
-   * [AEM integrado con Adobe Target mediante Adobe Experience Platform Launch](./using-launch-adobe-io.md#aem-target-using-launch-by-adobe)
+   * [AEM Instancia de publicación de](./implementation.md#getting-aem) ejecución en 4503
+   * [AEM Integrado con Adobe Target mediante Adobe Experience Platform Launch](./using-launch-adobe-io.md#aem-target-using-launch-by-adobe)
 * **Experience Cloud**
-   * Acceso a sus organizaciones Adobe Experience Cloud - `https://<yourcompany>.experiencecloud.adobe.com`
+   * Acceso a Adobe Experience Cloud de sus organizaciones: `https://<yourcompany>.experiencecloud.adobe.com`
    * Experience Cloud aprovisionado con [Adobe Target](https://experiencecloud.adobe.com)
 
-## Actividades de marketing
+## Actividades del experto en marketing
 
-1. El especialista en marketing crea una actividad de destino A/B dentro de Adobe Target.
-   1. En la ventana de Adobe Target, vaya a **Actividades** pestaña .
-   2. Haga clic en **Crear actividad** y seleccione el tipo de actividad como **Prueba A/B**
+1. El especialista en marketing crea una actividad de destinatario A/B dentro de Adobe Target.
+   1. En la ventana de Adobe Target, vaya a **Actividades** pestaña.
+   2. Clic **Crear actividad** y seleccione el tipo de actividad como **Prueba A/B**
 
-      ![Adobe Target: Crear actividad](assets/personalization-use-case-2/create-ab-activity.png)
-   3. Seleccione el **Web** y seleccione **Compositor de experiencias visuales**.
-   4. Introduzca la variable **URL de actividad** y haga clic en **Siguiente** para abrir el Compositor de experiencias visuales.
-      ![Adobe Target: Crear actividad](assets/personalization-use-case-2/create-activity-ab-name.png)
+      ![Adobe Target - Crear actividad](assets/personalization-use-case-2/create-ab-activity.png)
+   3. Seleccione el **Web** y seleccione la opción **Compositor de experiencias visuales**.
+   4. Introduzca el **URL de actividad** y haga clic en **Siguiente** para abrir el Compositor de experiencias visuales.
+      ![Adobe Target - Crear actividad](assets/personalization-use-case-2/create-activity-ab-name.png)
    5. Para **Compositor de experiencias visuales** para cargar, active **Permitir carga de scripts no seguros** en el explorador y vuelva a cargar la página.
       ![Actividad de segmentación de experiencias](assets/personalization-use-case-1/load-unsafe-scripts.png)
-   6. Observe que se abre la página de inicio del sitio WKND en el editor del Compositor de experiencias visuales.
+   6. Observe la página de inicio del sitio WKND abierta en el editor del Compositor de experiencias visuales.
       ![VEC](assets/personalization-use-case-2/vec.png)
    7. **Experiencia A** proporciona la página principal de WKND predeterminada y vamos a editar el diseño de contenido para **Experiencia B**.
       ![Experiencia B](assets/personalization-use-case-3/use-case3-experience-b.png)
-   8. Haga clic en uno de los contenedores de diseño de tarjeta (*Mejores Roses*) y seleccione **Reorganizar** .
+   8. Haga clic en uno de los contenedores de diseño de tarjeta (*Mejores asadores*) y seleccione **Reorganizar** opción.
       ![Selección de contenedor](assets/personalization-use-case-3/container-selection.png)
-   9. Haga clic en el contenedor que desee reorganizar y arrástrelo hasta la ubicación deseada. Reorganicemos el *Mejores Roses* contenedor de la primera fila de la primera columna a la primera fila de la tercera columna. Ahora, la variable *Mejores Roses* El contenedor está junto a *Exposiciones fotográficas* contenedor.
-      ![Intercambio de contenedores](assets/personalization-use-case-3/container-swap.png)
+   9. Haga clic en el contenedor que desee reorganizar y arrástrelo y suéltelo en la ubicación deseada. Vamos a reorganizar la *Mejores asadores* contenedor desde la primera fila, primera columna, hasta la primera fila, tercera columna. Ahora, la *Mejores asadores* el contenedor está junto a *Exposiciones fotográficas* contenedor.
+      ![Intercambio de contenedor](assets/personalization-use-case-3/container-swap.png)
 
-      **Después de intercambiar**
+      **Después del intercambio**
       ![Contenedor intercambiado](assets/personalization-use-case-3/after-swap-1-3.png)
-   10. Del mismo modo, reorganice las posiciones para los demás contenedores de tarjetas.
+   10. Del mismo modo, reorganice las posiciones de los otros contenedores de tarjetas.
       ![Contenedor intercambiado](assets/personalization-use-case-3/after-swap-all.png)
-   11. Añadamos también un texto de encabezado debajo del componente carrusel y encima del diseño de la tarjeta.
-   12. Haga clic en el contenedor de carrusel y seleccione el **Insertar después > HTML** para agregar HTML.
+   11. También vamos a añadir un texto de encabezado debajo del componente de carrusel y encima del diseño de la tarjeta.
+   12. Haga clic en el contenedor de carrusel y seleccione **Insertar después > HTML** opción para agregar un HTML.
       ![Añadir texto](assets/personalization-use-case-3/add-text.png)
 
       ```html
@@ -77,20 +77,20 @@ Para este ejercicio, es necesario involucrar a los siguientes usuarios y para re
       ```
 
       ![Añadir texto](assets/personalization-use-case-3/after-changes.png)
-   13. Haga clic en **Siguiente** para continuar con su actividad.
-   14. Seleccione el **Método de asignación de tráfico** como manual y asigne un 100% de tráfico a **Experiencia B**.
-      ![Tráfico de la experiencia B](assets/personalization-use-case-2/traffic.png)
-   15. Haga clic en **Siguiente**. 
-   16. Proporcionar **Métricas de objetivo** para la actividad y guarde y cierre la prueba A/B.
+   13. Clic **Siguiente** para continuar con su actividad.
+   14. Seleccione el **Método de asignación de tráfico** como manual y asignar el tráfico del 100 % a **Experiencia B**.
+      ![Tráfico de experiencia B](assets/personalization-use-case-2/traffic.png)
+   15. Haga clic en **Siguiente**.
+   16. Proporcionar **Métricas de objetivo** para su actividad y guarde y cierre la prueba A/B.
       ![Métrica de objetivo de prueba A/B](assets/personalization-use-case-2/goal-metric.png)
-   17. Proporcione un nombre (**Actualización de la página principal de WKND**) para su actividad y guarde los cambios.
-   18. En la pantalla de detalles de la actividad, asegúrese de **Activar** su actividad.
+   17. Proporcione un nombre (**Actualizar página de inicio de WKND**) para su actividad y guarde los cambios.
+   18. En la pantalla Detalles de la actividad, asegúrese de lo siguiente **Activar** su actividad de.
       ![Activar actividad](assets/personalization-use-case-3/save-activity.png)
-   19. Vaya a la página principal de WKND (http://localhost:4503/content/wknd/en.html) y verá los cambios que hemos añadido a la actividad Prueba A/B de actualización de la página principal de WKND.
-      ![Página principal de WKND actualizada](assets/personalization-use-case-3/activity-result.png)
-   20. Abra la consola del explorador e inspeccione la pestaña red para buscar la respuesta de destino para la actividad Prueba A/B de actualización de la página principal de WKND.
+   19. Vaya a la página principal de WKND (http://localhost:4503/content/wknd/en.html) y observe los cambios que hemos agregado a la actividad de la prueba A/B de actualización de la página principal de WKND.
+      ![Página de inicio de WKND actualizada](assets/personalization-use-case-3/activity-result.png)
+   20. Abra la consola del explorador e inspeccione la pestaña red para buscar la respuesta de destino para la actividad de la prueba A/B de actualización de la página principal de WKND.
       ![Actividad de red](assets/personalization-use-case-3/activity-result.png)
 
 ## Resumen
 
-En este capítulo, un especialista en marketing pudo crear una experiencia con el Compositor de experiencias visuales arrastrando y soltando, intercambiando y modificando el diseño y el contenido de una página web sin cambiar ningún código para ejecutar una prueba.
+En este capítulo, un experto en marketing ha podido crear una experiencia con el Compositor de experiencias visuales arrastrando y soltando, intercambiando y modificando el diseño y el contenido de una página web sin cambiar ningún código para ejecutar una prueba.

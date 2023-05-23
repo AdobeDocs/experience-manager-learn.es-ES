@@ -1,5 +1,5 @@
 ---
-title: Creación de una página de copia de idioma
+title: Crear una página de copia de idioma
 description: Aprenda a crear una página en una copia de idioma existente y, a continuación, traduzca el contenido a otra copia de idioma.
 feature: Language Copy, Multi Site Manager
 topics: localization, authoring, content-architecture
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ---
 
-# Creación de una página de copia de idioma {#create-language-copy-page}
+# Crear una página de copia de idioma {#create-language-copy-page}
 
 Aprenda a crear una página en una copia de idioma existente y, a continuación, traduzca el contenido a otra copia de idioma.
 

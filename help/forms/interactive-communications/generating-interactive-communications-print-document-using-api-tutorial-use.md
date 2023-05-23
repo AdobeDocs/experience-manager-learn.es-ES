@@ -1,7 +1,7 @@
 ---
-title: Generación de documentos de comunicaciones interactivas para el canal de impresión mediante el mecanismo de carpeta de inspección
+title: Generar documentos de comunicaciones interactivas para el canal Imprimir mediante el mecanismo de carpeta de inspección
 seo-title: Generating Interactive Communications Document for print channel using watch folder mechanism
-description: Usar una carpeta vigilada para generar documentos de canal de impresión
+description: Usar carpeta vigilada para generar documentos del canal de impresión
 seo-description: Use watched folder to generate print channel documents
 feature: Interactive Communication
 topics: development
@@ -21,15 +21,15 @@ ht-degree: 1%
 
 ---
 
-# Generación de documentos de comunicaciones interactivas para el canal de impresión mediante el mecanismo de carpeta de inspección
+# Generar documentos de comunicaciones interactivas para el canal Imprimir mediante el mecanismo de carpeta de inspección
 
-Después de haber diseñado y probado el documento del canal de impresión, normalmente tendrá que generar el documento realizando una llamada REST o generando documentos de impresión utilizando el mecanismo de carpeta del reloj.
+Después de diseñar y probar el documento del canal de impresión, normalmente deberá generar el documento realizando una llamada REST o generando documentos de impresión mediante el mecanismo de carpeta de inspección.
 
-Este artículo explica el caso de uso de la generación de documentos de canal de impresión mediante el mecanismo de carpeta vigilada.
+Este artículo explica el caso de uso de la generación de documentos del canal de impresión mediante el mecanismo de carpetas vigiladas.
 
-Cuando se coloca un archivo en la carpeta vigilada, se ejecuta una secuencia de comandos asociada a la carpeta vigilada. Esta secuencia de comandos se explica en el artículo siguiente.
+Cuando suelta un archivo en la carpeta inspeccionada, se ejecuta una secuencia de comandos asociada a la carpeta inspeccionada. Esta secuencia de comandos se explica en el artículo siguiente.
 
-El archivo colocado en la carpeta vigilada tiene la siguiente estructura. El código genera instrucciones para todos los números de cuenta enumerados en el documento XML.
+El archivo colocado en la carpeta inspeccionada tiene la siguiente estructura. El código generará instrucciones para todos los números de cuenta enumerados en el documento XML.
 
 &lt;accountnumbers>
 
@@ -43,23 +43,23 @@ El archivo colocado en la carpeta vigilada tiene la siguiente estructura. El có
 
 &lt;/accountnumbers>
 
-El siguiente código hace lo siguiente :
+La lista de códigos siguiente hace lo siguiente:
 
-Línea 1: Ruta al InteractiveCommunicationsDocument
+Línea 1: ruta al documento de comunicaciones interactivas
 
-Líneas 15-20: Obtener la lista de números de cuenta del documento XML colocado en la carpeta vigilada
+Líneas 15-20: obtenga la lista de números de cuenta del documento XML colocado en la carpeta vigilada
 
-Líneas 24-25: Obtenga PrintChannelService y Print Channel asociados al documento.
+Líneas 24 -25: Obtenga el servicio PrintChannel y el canal de impresión asociados al documento.
 
-Línea 30: Pase el número de cuenta como elemento clave al Modelo de datos de formulario.
+Línea 30: Pase el número de cuenta como elemento clave al modelo de datos de formulario.
 
-Líneas 32-36: Defina las opciones de datos del documento que se va a generar.
+Líneas 32-36: define las opciones de datos para el documento que se va a generar.
 
-Línea 38: Representar el documento.
+Línea 38: procese el documento.
 
-Líneas 39-40 - Guarda el documento generado en el sistema de archivos.
+Líneas 39-40: guarda el documento generado en el sistema de archivos.
 
-El extremo REST del Modelo de datos de formulario espera un id como parámetro de entrada. este id está asignado a un atributo de solicitud llamado accountnumber como se muestra en la captura de pantalla siguiente.
+El extremo REST del modelo de datos de formulario espera un ID como parámetro de entrada. este id se asigna a un atributo de solicitud denominado accountnumber, como se muestra en la captura de pantalla siguiente.
 
 ![requestattribute](assets/requestattributeprintchannel.gif)
 
@@ -113,24 +113,24 @@ resourceResolverHelper.callWith(resourceResolver, {call: function()
 
 **Para probar esto en su sistema local, siga las siguientes instrucciones:**
 
-* Configure Tomcat tal como se describe en esta [artículo.](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md) Tomcat tiene el archivo war que genera los datos de muestra.
-* Configure el usuario del sistema de servicio aka como se describe en esta [article](/help/forms/adaptive-forms/service-user-tutorial-develop.md).
-Asegúrese de que este usuario del sistema tenga permisos de lectura en el siguiente nodo. Para conceder el inicio de sesión de permisos a [administrador de usuarios](https://localhost:4502/useradmin) y busque el usuario del sistema &quot;data&quot; y asigne los permisos de lectura en el siguiente nodo mediante el tabulador a la pestaña permisos
+* Configure Tomcat como se describe en esta sección [artículo.](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md) Tomcat tiene el archivo WAR que genera los datos de muestra.
+* Configure el servicio o el usuario del sistema como se describe en esta sección [artículo](/help/forms/adaptive-forms/service-user-tutorial-develop.md).
+Asegúrese de que este usuario del sistema tiene permisos de lectura en el siguiente nodo. Para conceder los permisos, inicie sesión en [administrador de usuarios](https://localhost:4502/useradmin) y busque los &quot;datos&quot; del usuario del sistema y conceda los permisos de lectura en el siguiente nodo accediendo a la pestaña permisos
    * /content/dam/formsanddocuments
    * /content/dam/formsanddocuments-fdm
    * /content/forms/af
-* Importe los siguientes paquetes en AEM con el administrador de paquetes. Este paquete contiene lo siguiente:
+* AEM Importe los siguientes paquetes en mediante el administrador de paquetes para que se puedan usar en el Administrador de paquetes. Este paquete contiene lo siguiente:
 
 
 * [Ejemplo de documento de comunicaciones interactivas](assets/retirementstatementprint.zip)
-* [Secuencia de comandos de carpeta vigilada](assets/printchanneldocumentusingwatchedfolder.zip)
+* [Script de carpeta inspeccionada](assets/printchanneldocumentusingwatchedfolder.zip)
 * [Configuración de origen de datos](assets/datasource.zip)
 
-* Abra el archivo /etc/fd/watchfolder/scripts/PrintPDF.ecma. Asegúrese de que la ruta de acceso al documento interactivo de CommunicationsDocument en la línea 1 señala al documento correcto que desea imprimir
+* Abra el archivo /etc/fd/watchfolder/scripts/PrintPDF.ecma. Asegúrese de que la ruta al interactiveCommunicationsDocument de la línea 1 apunte al documento correcto que desea imprimir
 
-* Modifique saveLocation según sus preferencias en la línea 2
+* Modifique saveLocation según sus preferencias en la Línea 2
 
-* Cree el archivo accountnumber.xml con el siguiente contenido
+* Cree el archivo accountnumbers.xml con el siguiente contenido
 
 ```xml
 <accountnumbers>
@@ -144,12 +144,12 @@ Asegúrese de que este usuario del sistema tenga permisos de lectura en el sigui
 ```
 
 
-* Coloque los números de cuenta.xml en C:\RenderPrintChannel\input folder.
+* Coloque accountnumbers.xml en la carpeta C:\RenderPrintChannel\input.
 
-* Los archivos PDF generados se escriben en saveLocation tal como se especifica en la secuencia de comandos ecma.
+* Los archivos de PDF generados se escriben en saveLocation tal como se especifica en el script ecma.
 
 >[!NOTE]
 >
->Si planea usar esto en un sistema operativo que no sea de Windows, navegue hasta
+>Si planea usar esto en un sistema operativo que no sea de Windows, vaya a
 >
 >/etc/fd/watchfolder /config/PrintChannelDocument y cambie folderPath según sus preferencias

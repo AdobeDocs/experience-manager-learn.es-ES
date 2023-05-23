@@ -20,7 +20,7 @@ ht-degree: 1%
 # Recuperar formulario guardado
 
 El siguiente paso es crear un servlet que procese el formulario adaptable con los datos guardados y sus archivos adjuntos.
-El siguiente código de servlet se ejecuta después de comprobar el código OTP. Los datos del formulario adaptable y el mapa de archivos adjuntos asociado con el id de aplicación único se recuperan de la base de datos. El objeto de solicitud se rellena con los datos de formulario adaptable guardados y el mapa de archivos adjuntos. A continuación, se reenvía la solicitud para procesar el formulario &quot;storeafwithattachment&quot; previamente rellenado con los datos originales y sus archivos adjuntos.
+El siguiente código de servlet se ejecuta después de comprobar el código OTP. Los datos del formulario adaptable y su asignación de archivos adjuntos asociados al ID de aplicación único se recuperan de la base de datos. El objeto de solicitud se rellena con los datos de formulario adaptables guardados y la asignación de archivos adjuntos. A continuación, se reenvía la solicitud para procesar el formulario &quot;storeafwithattachments&quot; previamente rellenado con los datos originales y sus archivos adjuntos.
 
 ```java
 package store.and.fetch.core.servlets;
@@ -107,4 +107,4 @@ public class RenderForm extends SlingAllMethodsServlet {
 
 ## Pasos siguientes
 
-[Cree una biblioteca de cliente para invocar el servlet y almacenar los datos del formulario](./create-client-lib.md)
+[Cree una biblioteca de cliente para invocar el servlet y almacenar datos de formulario](./create-client-lib.md)

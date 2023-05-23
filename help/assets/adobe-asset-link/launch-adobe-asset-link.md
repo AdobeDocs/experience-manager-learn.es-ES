@@ -1,6 +1,6 @@
 ---
-title: Acceso a Adobe Asset Link
-description: Adobe Asset Link refuerza la colaboración entre creativos y especialistas en marketing en el proceso de creación de contenido. Puede acceder al contenido almacenado en Adobe Experience Manager Assets (AEM Assets) sin salir de las aplicaciones de escritorio de Creative Cloud con las que esté más familiarizado. Obtenga información sobre cómo iniciar el panel Adobe Asset Link desde la aplicación de escritorio de Creative Cloud.
+title: Vínculo de recurso de Adobe de acceso
+description: Adobe Asset Link refuerza la colaboración entre creativos y especialistas en marketing en el proceso de creación de contenido. Puede acceder al contenido almacenado en Adobe Experience Manager Assets (AEM Assets) sin salir de las aplicaciones de escritorio de Creative Cloud con las que está más familiarizado. Obtenga información sobre cómo iniciar el panel Vínculo de recursos de Adobe desde la aplicación de escritorio de Creative Cloud.
 sub-product: Experience Manager Assets
 feature: Adobe Asset Link
 version: Cloud Service
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Acceso a Adobe Asset Link {#access-adobe-asset-link}
+# Vínculo de recurso de Adobe de acceso {#access-adobe-asset-link}
 
-Adobe Asset Link refuerza la colaboración entre creativos y especialistas en marketing en el proceso de creación de contenido. Puede acceder al contenido almacenado en Adobe Experience Manager Assets (AEM Assets) sin salir de las aplicaciones de escritorio de Creative Cloud con las que esté más familiarizado. Obtenga información sobre cómo iniciar el panel Adobe Asset Link desde la aplicación de escritorio de Creative Cloud.
+Adobe Asset Link refuerza la colaboración entre creativos y especialistas en marketing en el proceso de creación de contenido. Puede acceder al contenido almacenado en Adobe Experience Manager Assets (AEM Assets) sin salir de las aplicaciones de escritorio de Creative Cloud con las que está más familiarizado. Obtenga información sobre cómo iniciar el panel Vínculo de recursos de Adobe desde la aplicación de escritorio de Creative Cloud.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33733?quality=12&learn=on)

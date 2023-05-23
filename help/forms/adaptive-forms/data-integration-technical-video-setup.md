@@ -1,6 +1,6 @@
 ---
 title: Configuración de la integración de datos con AEM Forms
-description: Configuración de la conexión de datos en una fuente de datos JDBC
+description: Configuración de la conexión de datos a una fuente de datos JDBC
 feature: Adaptive Forms,Workflow
 version: 6.4,6.5
 topic: Development
@@ -17,16 +17,16 @@ ht-degree: 6%
 
 # Configuración de la integración de datos con AEM Forms {#set-up-data-integration-with-aem-forms}
 
-Configuración de la conexión de datos en una fuente de datos JDBC
+Configuración de la conexión de datos a una fuente de datos JDBC
 
 >[!VIDEO](https://video.tv.adobe.com/v/17724?quality=12&learn=on)
 
 >[!NOTE]
 >
->Los controladores JDBC de MySQL deben instalarse a través de paquetes OSGi en la instancia de AEM.
+>AEM Los controladores JDBC de MySQL deben instalarse mediante paquetes OSGi en la instancia de.
 
 ## Materiales de apoyo {#supporting-materials}
 
-* [Descargar paquete MySQL JDBC OSGi](https://dev.mysql.com/downloads/connector/j/)
+* [Descargar paquete JDBC OSGi de MySQL](https://dev.mysql.com/downloads/connector/j/)
 
-   * Descargue, descomprima e instale el archivo JAR mediante el [Consola web AEM](http://localhost:4502/system/console/bundles)
+   * Descargue, descomprima e instale el archivo JAR a través de la [AEM Consola web de](http://localhost:4502/system/console/bundles)

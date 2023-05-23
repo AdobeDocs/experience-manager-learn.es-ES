@@ -1,6 +1,6 @@
 ---
-title: Pasos para solucionar problemas específicos de OpenOffice en una configuración de Unix
-description: Solucionar problemas de OpenOffice con problemas de Generador de PDF en la configuración de UNIX.
+title: Pasos para solucionar problemas específicos de OpenOffice en una configuración Unix
+description: Solucionar problemas de OpenOffice con PDF Generator en la instalación de UNIX.
 type: Troubleshooting
 role: Developer
 level: Intermediate
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Pasos para solucionar los errores específicos de OpenOffice en una configuración de Unix
+# Pasos para solucionar errores específicos de OpenOffice en una configuración Unix
 
-*Este vídeo explica el proceso de solución de errores específicos de OpenOffice en una configuración Unix para PDFG de AEM Forms.*
+*Este vídeo muestra el proceso de solución de problemas de errores específicos de OpenOffice en una configuración Unix para AEM Forms PDFG.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335551?quality=12&learn=on)

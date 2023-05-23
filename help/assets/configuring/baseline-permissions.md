@@ -1,6 +1,6 @@
 ---
-title: Permisos de línea de base
-description: La administración del acceso de los usuarios en las carpetas de recursos de línea de base es un aspecto crítico de la gobernanza y garantiza que los procesos se puedan admitir correctamente.
+title: Permisos de línea base
+description: La administración del acceso de los usuarios a las carpetas de recursos de línea de base es un aspecto crítico de la gobernanza y garantiza que los procesos sean compatibles.
 feature: Asset Management
 version: Cloud Service
 kt: 4870
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Permisos de línea de base
+# Permisos de línea base
 
-Administración del acceso de los usuarios en [carpetas de recursos de línea base](./baseline-folders.md) es un aspecto crítico de la gobernanza y garantiza que los procesos puedan ser apoyados adecuadamente.
+Administración del acceso de los usuarios en [carpetas de recursos de línea base](./baseline-folders.md) es un aspecto crítico de la gobernanza y garantiza que los procesos se puedan admitir correctamente.
 
 >[!VIDEO](https://video.tv.adobe.com/v/37696?quality=12&learn=on)

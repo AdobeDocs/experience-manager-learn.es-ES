@@ -1,6 +1,6 @@
 ---
-title: AEM implementaciones móviles sin encabezado
-description: Obtenga información sobre las consideraciones de implementación para implementaciones móviles AEM sin encabezado.
+title: AEM Implementaciones móviles sin encabezado
+description: AEM Obtenga información acerca de las consideraciones de implementación para implementaciones móviles sin encabezado
 version: Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
@@ -8,33 +8,33 @@ role: Developer, Architect
 level: Intermediate
 kt: 10796
 thumbnail: KT-10796.jpg
-source-git-commit: b98f567e05839db78a1a0a593c106b87af931a49
+exl-id: 1f536079-b3ce-4807-be88-804378e75d37
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 2%
 
 ---
 
+# AEM Implementaciones móviles sin encabezado
 
-# AEM implementaciones móviles sin encabezado
+AEM Las implementaciones móviles sin encabezado son aplicaciones móviles nativas para iOS, Android™, etc. AEM que consumen contenido e interactúan con él de manera sin encabezado, de manera que se pueden usar en el proceso de.
 
-AEM implementaciones móviles sin encabezado son aplicaciones móviles nativas para iOS, Android™, etc. que consumen e interactúan con el contenido de AEM de una manera sin encabezado.
-
-Las implementaciones móviles requieren una configuración mínima, ya que las conexiones HTTP a API sin encabezado AEM no se inician en el contexto de un explorador.
+AEM Las implementaciones móviles requieren una configuración mínima, ya que las conexiones HTTP a las API sin encabezado de la aplicación no se inician en el contexto de un explorador.
 
 ## Configuraciones de implementación
 
-La siguiente configuración de implementación debe estar en su lugar para implementaciones de aplicaciones móviles.
+La siguiente configuración de implementación debe estar implementada para implementaciones de aplicaciones móviles.
 
-| La aplicación móvil se conecta a | AEM Author | AEM Publish | Vista previa de AEM |
+| La aplicación móvil se conecta a | AEM Author | AEM Publish | AEM Previsualización de |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
-| [Filtros de Dispatcher](./configurations/dispatcher-filters.md) | ü | š | š |
-| Uso compartido de recursos de origen diverso (CORS) | ü | ü | ü |
-| [AEM hosts](./configurations/aem-hosts.md) | š | š | š |
+| [Filtros de Dispatcher](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
+| Uso compartido de recursos de origen cruzado (CORS) | ✘ | ✘ | ✘ |
+| [AEM anfitriones de](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
 
-## Ejemplos de aplicaciones móviles
+## Ejemplo de aplicaciones móviles
 
-Adobe proporciona ejemplos de aplicaciones móviles iOS y Android™.
+Adobe proporciona aplicaciones móviles de ejemplo para iOS y Android™.
 
 <div class="columns is-multiline">
     <!-- iOS app -->
@@ -42,15 +42,15 @@ Adobe proporciona ejemplos de aplicaciones móviles iOS y Android™.
        <div class="card">
            <div class="card-image">
                <figure class="image is-16by9">
-                   <a href="../example-apps/ios-swiftui-app.md" title="aplicación iOS" tabindex="-1">
-                       <img class="is-bordered-r-small" src="../example-apps/assets/ios-swiftui-app/ios-app-card.png" alt="aplicación iOS">
+                   <a href="../example-apps/ios-swiftui-app.md" title="aplicación de iOS" tabindex="-1">
+                       <img class="is-bordered-r-small" src="../example-apps/assets/ios-swiftui-app/ios-app-card.png" alt="aplicación de iOS">
                    </a>
                </figure>
            </div>
            <div class="card-content is-padded-small">
                <div class="content">
-                   <p class="headline is-size-6 has-text-weight-bold"><a href="../example-apps/ios-swiftui-app.md" title="aplicación iOS">aplicación iOS</a></p>
-                   <p class="is-size-6">Una aplicación de iOS de ejemplo, escrita en SwiftUI, que consume contenido de AEM API de GraphQL sin encabezado.</p>
+                   <p class="headline is-size-6 has-text-weight-bold"><a href="../example-apps/ios-swiftui-app.md" title="aplicación de iOS">aplicación de iOS</a></p>
+                   <p class="is-size-6">Una aplicación de iOS AEM de ejemplo, escrita en SwiftUI, que consume contenido de las API de GraphQL sin encabezado, que se utilizan para el uso de la aplicación sin encabezado.</p>
                    <a href="../example-apps/ios-swiftui-app.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                        <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ver ejemplo</span>
                    </a>
@@ -63,15 +63,15 @@ Adobe proporciona ejemplos de aplicaciones móviles iOS y Android™.
        <div class="card">
            <div class="card-image">
                <figure class="image is-16by9">
-                   <a href="../example-apps/android-app.md" title="Aplicación Android™" tabindex="-1">
-                       <img class="is-bordered-r-small" src="../example-apps/assets/android-java-app/android-app-card.png" alt="Aplicación de Android">
+                   <a href="../example-apps/android-app.md" title="aplicación de Android™" tabindex="-1">
+                       <img class="is-bordered-r-small" src="../example-apps/assets/android-java-app/android-app-card.png" alt="aplicación de Android">
                    </a>
                </figure>
            </div>
            <div class="card-content is-padded-small">
                <div class="content">
-                   <p class="headline is-size-6 has-text-weight-bold"><a href="../example-apps/android-app.md" title="Aplicación Android™">Aplicación Android™</a></p>
-                   <p class="is-size-6">Ejemplo de aplicación Java™ Android™ que consume contenido de las API de GraphQL sin encabezado AEM.</p>
+                   <p class="headline is-size-6 has-text-weight-bold"><a href="../example-apps/android-app.md" title="aplicación de Android™">aplicación de Android™</a></p>
+                   <p class="is-size-6">AEM Aplicación de ejemplo de Java™ Android™ que consume contenido de las API de GraphQL sin encabezado de la aplicación de modo que se puede acceder a su contenido desde sin encabezado.</p>
                    <a href="../example-apps/android-app.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                        <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ver ejemplo</span>
                    </a>
@@ -80,5 +80,3 @@ Adobe proporciona ejemplos de aplicaciones móviles iOS y Android™.
        </div>
     </div>
 </div>
-
-

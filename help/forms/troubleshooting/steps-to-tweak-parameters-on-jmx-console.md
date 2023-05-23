@@ -1,6 +1,6 @@
 ---
-title: Pasos para modificar parámetros en la consola JMX
-description: Configuración de los parámetros de la consola JMX
+title: Pasos para modificar los parámetros de la consola JMX
+description: Configurar los parámetros de la consola JMX
 type: Troubleshooting
 role: Developer
 level: Intermediate
@@ -17,8 +17,8 @@ ht-degree: 0%
 ---
 
 
-# Pasos para modificar parámetros en la consola JMX
+# Pasos para modificar los parámetros de la consola JMX
 
-*Este vídeo muestra los pasos para modificar los parámetros en la consola JMX.*
+*Este vídeo muestra los pasos para modificar los parámetros de la consola JMX.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335554?quality=12&learn=on)

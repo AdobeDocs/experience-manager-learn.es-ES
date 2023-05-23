@@ -23,10 +23,10 @@ La administración avanzada de metadatos permite a los usuarios crear reglas de 
 
 >[!VIDEO](https://video.tv.adobe.com/v/20702?quality=12&learn=on)
 
-Hay tres conjuntos de reglas dinámicas que se pueden habilitar para un campo de metadatos determinado:
+Existen tres conjuntos de reglas dinámicas que se pueden habilitar para un campo de metadatos determinado:
 
-1. **Requisito** : un campo se puede marcar dinámicamente como necesario para que se base en el valor de otro campo desplegable.
+1. **Requisito** : un campo se puede marcar dinámicamente como obligatorio para basarse en el valor de otro campo desplegable.
 
 2. **Visibilidad** : los campos siempre pueden ser visibles o solo visibles en función del valor de otro campo desplegable.
 
-3. **Opciones** : (solo aplicable a los campos desplegables) filtre las opciones que se muestran al usuario según el valor seleccionado actualmente en otro campo desplegable.
+3. **Opciones** : (solo aplicable a campos desplegables) filtre las opciones que se muestran al usuario en función del valor seleccionado actualmente en otro campo desplegable.

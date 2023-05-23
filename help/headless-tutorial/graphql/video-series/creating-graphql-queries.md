@@ -1,6 +1,6 @@
 ---
 title: Creación de consultas de GraphQL
-description: Aprenda a crear consultas de GraphQL para devolver contenido de Adobe Experience Manager (AEM) y a utilizar la herramienta GraphiQL para probar, refinar y depurar consultas rápidamente.
+description: Aprenda a crear consultas de GraphQL para devolver contenido de Adobe Experience Manager AEM () y a utilizar la herramienta GraphiQL para probar, refinar y depurar consultas rápidamente.
 version: Cloud Service
 topic: Headless, Content Management
 feature: Content Fragments, GraphQL API
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Creación de consultas de GraphQL
 
-Aprenda a crear consultas de GraphQL para devolver contenido de Adobe Experience Manager (AEM) y a utilizar la herramienta GraphiQL para probar, refinar y depurar consultas rápidamente.
+Aprenda a crear consultas de GraphQL para devolver contenido de Adobe Experience Manager AEM () y a utilizar la herramienta GraphiQL para probar, refinar y depurar consultas rápidamente.
 
 En este vídeo:
 

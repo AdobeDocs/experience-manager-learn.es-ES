@@ -1,6 +1,6 @@
 ---
 title: Adición de elementos de carpeta DAM al componente de grupo de opciones
-description: Agregar elementos al componente de grupo de opciones de forma dinámica
+description: Agregar elementos al componente del grupo de opciones de forma dinámica
 feature: Adaptive Forms
 version: 6.5
 topic: Development
@@ -17,11 +17,11 @@ ht-degree: 3%
 
 # Adición dinámica de elementos al componente de grupo de opciones
 
-AEM Forms 6.5 ha introducido la capacidad de agregar elementos de forma dinámica a un componente de grupo de opciones de Forms adaptable, como Casilla de verificación, Botón de radio y Lista de imágenes. En este artículo analizaremos el caso de uso de rellenar un componente de grupo de opciones con el contenido de la carpeta DAM. En la captura de pantalla, los 3 archivos están en la carpeta denominada newsletter. Cada vez que se añada una nueva newsletter a la carpeta, el componente de grupo de opciones se actualizará para enumerar su contenido automáticamente. El usuario puede seleccionar uno o más boletines que quiera descargar.
+AEM Forms 6.5 ha introducido la capacidad de añadir elementos de forma dinámica a un componente de grupo de opciones de Forms adaptable, como CheckBox, Botón de opción y Lista de imágenes. En este artículo analizaremos el caso de uso de rellenar un componente de grupo de selección con el contenido de la carpeta DAM. En la captura de pantalla, los 3 archivos se encuentran en la carpeta denominada newsletter. Cada vez que se añade una nueva newsletter a la carpeta, el componente del grupo de opciones se actualiza para enumerar su contenido automáticamente. El usuario puede seleccionar uno o más boletines para descargar.
 
 ![Editor de reglas](assets/newsletters-download.png)
 
-## Cree un servlet para devolver el contenido de la carpeta DAM
+## Crear servlet para devolver el contenido de la carpeta DAM
 
 El siguiente código se escribió para devolver el contenido de la carpeta DAM en formato JSON.
 
@@ -82,7 +82,7 @@ public class ListFolderContent extends SlingSafeMethodsServlet {
 }
 ```
 
-## Creación de una biblioteca de cliente con la función JavaScript
+## Crear una biblioteca de cliente con la función de JavaScript
 
 El servlet se invoca desde una función de JavaScript. La función devuelve un objeto de matriz que se utilizará para rellenar el componente de grupo de opciones
 
@@ -110,11 +110,11 @@ function getDAMFolderAssets(damFolder) {
 
 ## Crear formulario adaptable
 
-Crear un formulario adaptable y asociar el formulario a la biblioteca del cliente **listfolderassets**. Agregue un componente de casilla de verificación al formulario. Utilice el editor de reglas para rellenar las opciones de la casilla de verificación como se muestra en la captura de pantalla
+Cree un formulario adaptable y asócielo a la biblioteca de cliente **listfolderassets**. Agregue un componente Casilla de verificación al formulario. Utilice el editor de reglas para rellenar las opciones de la casilla de verificación como se muestra en la captura de pantalla
 ![set-options](assets/set-options-newsletter.png)
 
-Se invoca una función de javascript llamada **getDAMFolderAssets** y pasando la ruta de los recursos de la carpeta DAM a la lista del formulario.
+Estamos invocando la función de JavaScript llamada **getDAMFolderAssets** y pasando la ruta de los recursos de la carpeta DAM a la lista del formulario.
 
 ## Pasos siguientes
 
-[Ensamblar recursos seleccionados](./assemble-selected-newsletters.md)
+[Montar los recursos seleccionados](./assemble-selected-newsletters.md)

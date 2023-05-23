@@ -18,6 +18,6 @@ ht-degree: 38%
 
 # Configuración de datos por lotes
 
-La configuración de datos por lotes ayuda a configurar una instancia específica del almacenamiento de blob para las API por lotes. Permite especificar las ubicaciones de entrada y salida en el almacenamiento del Blob de Microsoft Azure de propiedad del cliente.
+La configuración de datos por lotes le ayuda a configurar una instancia específica del almacenamiento de blobs para las API por lotes. Permite especificar las ubicaciones de entrada y salida en el almacenamiento del Blob de Microsoft Azure de propiedad del cliente.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340128?quality=12&learn=on)

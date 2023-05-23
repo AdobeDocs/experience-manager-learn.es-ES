@@ -1,5 +1,5 @@
 ---
-title: Creación de conjuntos de carrusel con AEM Dynamic Media
+title: AEM Creación de conjuntos de carrusel con Dynamic Media de
 description: Configuración del conjunto de carrusel con Dynamic Media
 version: Cloud Service
 role: Developer
@@ -14,8 +14,8 @@ ht-degree: 0%
 
 ---
 
-# Creación de conjuntos de carrusel con AEM Dynamic Media
+# AEM Creación de conjuntos de carrusel con Dynamic Media de
 
-Este vídeo explica el proceso de creación de un conjunto de carrusel con AEM Dynamic Media.
+AEM Este vídeo muestra el proceso de creación de un conjunto de carrusel con Dynamic Media de.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335380?quality=12&learn=on)

@@ -1,6 +1,6 @@
 ---
-title: Configuración de un servidor de vista previa seguro para AEM Dynamic Media
-description: Configure el servidor de imágenes de prueba para obtener una vista previa segura mediante AEM aplicación Dynamic Media Classic.
+title: AEM Configuración de un servidor de previsualización seguro para la aplicación de Dynamic Media en la
+description: AEM Configure el servidor de imágenes de prueba para una previsualización segura mediante la aplicación de Dynamic Media Classic de.
 version: Cloud Service
 role: Developer
 level: Intermediate
@@ -14,8 +14,8 @@ ht-degree: 0%
 
 ---
 
-# Configuración de un servidor de vista previa seguro para AEM Dynamic Media
+# AEM Configuración de un servidor de previsualización seguro para la aplicación de Dynamic Media en la
 
-Este vídeo explica el proceso de añadir una prueba de los detalles de Image Server (filtros IP del cliente) en Dynamic Media para obtener una vista previa segura mediante la aplicación Dynamic Media Classic.
+Este vídeo muestra el proceso de añadir un servidor de imágenes de prueba (filtros IP de cliente) en Dynamic Media para una previsualización segura mediante la aplicación de Dynamic Media Classic.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335462?quality=12&learn=on)

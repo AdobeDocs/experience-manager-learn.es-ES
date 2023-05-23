@@ -1,5 +1,5 @@
 ---
-title: Actualización de una copia de idioma con los lanzamientos
+title: Actualización de una copia de idioma con lanzamientos
 description: Obtenga información sobre cómo actualizar, revisar y aprobar cambios en una copia de idioma con los lanzamientos.
 feature: Language Copy, Multi Site Manager
 topics: localization, authoring, content-architecture
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ---
 
-# Actualización de una copia de idioma con los lanzamientos {#update-language-copy-launch}
+# Actualización de una copia de idioma con lanzamientos {#update-language-copy-launch}
 
 Obtenga información sobre cómo actualizar, revisar y aprobar cambios en una copia de idioma con los lanzamientos.
 

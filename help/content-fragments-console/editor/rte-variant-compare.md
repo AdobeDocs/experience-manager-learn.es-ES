@@ -1,6 +1,6 @@
 ---
-title: Comparación de variantes RTE - Editor de fragmentos de contenido
-description: Descubra cómo AEM le permite comparar y sincronizar fácilmente el campo RTE dentro de las variaciones de fragmento de contenido. Al comparar y sincronizar estas variaciones, puede garantizar una mensajería coherente en todos los canales que utilicen el fragmento de contenido.
+title: 'Comparación de variantes RTE: editor de fragmentos de contenido '
+description: AEM Descubra cómo le permite comparar y sincronizar fácilmente los campos RTE dentro de las variaciones de fragmentos de contenido. Al comparar y sincronizar estas variaciones, puede garantizar una mensajería coherente en todos los canales que utilizan el fragmento de contenido.
 version: Cloud Service
 feature: Content Fragments
 topic: Content Management
@@ -17,8 +17,8 @@ ht-degree: 0%
 ---
 
 
-# Comparación de variantes RTE
+# Comparación de variante RTE
 
-Descubra cómo AEM le permite comparar y sincronizar fácilmente el campo RTE dentro de las variaciones de fragmento de contenido. Al comparar y sincronizar estas variaciones, puede garantizar una mensajería coherente en todos los canales que utilicen el fragmento de contenido.
+AEM Descubra cómo le permite comparar y sincronizar fácilmente los campos RTE dentro de las variaciones de fragmentos de contenido. Al comparar y sincronizar estas variaciones, puede garantizar una mensajería coherente en todos los canales que utilizan el fragmento de contenido.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419314/?learn=on)

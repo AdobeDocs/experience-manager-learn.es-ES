@@ -1,6 +1,6 @@
 ---
-title: Variables en AEM flujo de trabajo[Parte 1]
-description: Uso de variables de tipo XML, JSON, ArrayList, Document en un flujo de trabajo AEM
+title: AEM Variables en el flujo de trabajo de la[Part1]
+description: AEM Uso de variables de tipo XML, JSON, ArrayList o Document en un flujo de trabajo de
 feature: Adaptive Forms
 version: 6.5
 topic: Development
@@ -14,37 +14,37 @@ ht-degree: 0%
 
 ---
 
-# Variables XML en AEM flujo de trabajo
+# AEM Variables XML en flujo de trabajo de
 
-Las variables de tipo XML generalmente se utilizan cuando se tiene un formulario adaptable basado en XSD y se desea extraer valores del envío del formulario adaptable en el flujo de trabajo.
+Las variables de tipo XML se utilizan normalmente cuando tiene un formulario adaptable basado en XSD y desea extraer valores del envío del formulario adaptable en el flujo de trabajo.
 
-El siguiente vídeo le explica los pasos necesarios para crear variables de tipo String y XML y utilizarlas en el flujo de trabajo.
+El siguiente vídeo le guía por los pasos necesarios para crear variables de tipo Cadena y XML y utilizarlas en el flujo de trabajo.
 
 La variable XML se puede utilizar para rellenar previamente el formulario adaptable o almacenar los datos de envío del formulario adaptable en el flujo de trabajo.
 
-Xpathing puede rellenar la variable de cadena en la variable XML. Esta variable de cadena se utiliza generalmente para rellenar los marcadores de posición de plantilla de correo electrónico en el componente Enviar correo electrónico
+Xpathing puede rellenar la variable de cadena en la variable XML. Esta variable de cadena se utiliza normalmente para rellenar los marcadores de posición de la plantilla de correo electrónico en el componente Enviar correo electrónico
 
 >[!NOTE]
 >
->Si el formulario adaptable no está asociado con XSD, el XPath para obtener el valor de un elemento será como
+>Si el formulario adaptable no está asociado con XSD, la sintaxis XPath para obtener el valor de un elemento será la siguiente
 >
->**/afData/afUnboundData/data/submitterName**
+>**/afData/afUnboundData/data/submitName**
 
-Los datos del formulario adaptable se almacenan bajo el elemento de datos como se muestra arriba. **_En el XPath submitName anterior es el nombre del campo de texto del formulario adaptable._**
+Los datos del formulario adaptable se almacenan en el elemento de datos como se muestra arriba. **_En el XPath anterior submitterName es el nombre del campo de texto en el formulario adaptable._**
 
 >[!NOTE]
 >
->**AEM Forms 6.5.0** - Cuando esté creando una variable de tipo XML para capturar los datos enviados en el modelo de flujo de trabajo, no asocie el XSD con la variable . Esto se debe a que al enviar el formulario adaptable basado en XSD, los datos enviados no son compatibles con el XSD. Los datos de queja XSD se incluyen en el elemento /afData/afBoundData/ .
+>**AEM Forms 6.5.0** : Cuando esté creando una variable de tipo XML para capturar los datos enviados en el modelo de flujo de trabajo, no asocie el XSD con la variable. Esto se debe a que cuando envía un formulario adaptable basado en XSD, los datos enviados no son compatibles con el XSD. Los datos de quejas XSD se incluyen en el elemento /afData/afBoundData/.
 >
->**AEM Forms 6.5.1** - Si asocia XSD con la variable XML, puede examinar los elementos de esquema para realizar la asignación de variables. No se podrá acceder a los datos de formulario no enlazados a elementos de esquema. Si el caso de uso es acceder a datos enlazados a elementos de esquema así como a datos no enlazados, no enlazar el esquema con la variable XML en el flujo de trabajo. Tendrá que utilizar la expresión XPath adecuada para obtener los datos que necesite
+>**AEM Forms 6.5.1** : Si asocia XSD con la variable XML, puede examinar los elementos de esquema para realizar la asignación de variables. No podrá acceder a los datos del formulario no enlazados a los elementos del esquema. Si su caso de uso es acceder a datos enlazados a elementos de esquema, así como a datos no enlazados, no enlace el esquema con la variable XML en el flujo de trabajo. Tendrá que utilizar la expresión XPath adecuada para llegar a los datos que necesite
 
-## Creación de variables XML
+## Crear variables XML
 
 >[!VIDEO](https://video.tv.adobe.com/v/26440?quality=12&learn=on)
 
-### Uso del esquema con la variable XML
+### Usar el esquema con la variable XML
 
-**Asignación de una variable XML con un esquema. Utilice esta funcionalidad con AEM Forms 6.5.1 y versiones posteriores**
+**Asignar una variable XML al esquema. Utilice esta capacidad con AEM Forms 6.5.1 en adelante**
 
 >[!VIDEO](https://video.tv.adobe.com/v/28098?quality=12&learn=on)
 
@@ -52,10 +52,10 @@ Los datos del formulario adaptable se almacenan bajo el elemento de datos como s
 
 >[!VIDEO](https://video.tv.adobe.com/v/26441?quality=12&learn=on)
 
-Para que los recursos funcionen en su sistema, siga los siguientes pasos:
+Para que los recursos funcionen en el sistema, siga estos pasos:
 
-* [Descargar e importar los recursos en AEM mediante el administrador de paquetes](assets/xmlandstringvariable.zip)
-* [Explorar el modelo de flujo de trabajo](http://localhost:4502/editor.html/conf/global/settings/workflow/models/vacationrequest.html) para comprender las variables que se utilizan en el flujo de trabajo
+* [AEM Descargar e importar los recursos en el administrador de paquetes mediante el uso de un administrador de paquetes](assets/xmlandstringvariable.zip)
+* [Exploración del modelo de flujo de trabajo](http://localhost:4502/editor.html/conf/global/settings/workflow/models/vacationrequest.html) para comprender las variables que se utilizan en el flujo de trabajo
 * [Configuración del servicio de correo electrónico](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html#ConfiguringtheMailService)
-* [Abrir el formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/applicationfortimeoff/jcr:content?wcmmode=disabled)
+* [Abra el formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/applicationfortimeoff/jcr:content?wcmmode=disabled)
 * Complete los detalles y envíe el formulario.

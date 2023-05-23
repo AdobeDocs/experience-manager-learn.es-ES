@@ -1,5 +1,5 @@
 ---
-title: Creative Cloud y Assets Essentials
+title: CREATIVE CLOUD y ASSETS ESSENTIALS
 description: Descubra cómo Assets Essentials se integra con Adobe Creative Cloud.
 version: Cloud Service
 feature: Assets Essentials
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 ---
 
-# Creative Cloud y Assets Essentials
+# CREATIVE CLOUD y ASSETS ESSENTIALS
 
 Aprenda a integrar Assets Essentials con las bibliotecas de Adobe Creative Cloud, lo que permite:
 
-+ Archivos de Assets Essentials a los que se va a acceder sin problemas mediante bibliotecas de Creative Cloud
-+ Archivos de bibliotecas de Creative Cloud para compartirlos con Assets Essentials
++ Archivos de Assets Essentials para acceder fácilmente a ellos a través de las bibliotecas de Creative Cloud
++ Archivos de bibliotecas de Creative Cloud para compartir con Assets Essentials
 
 >[!VIDEO](https://video.tv.adobe.com/v/336069?quality=12&learn=on)

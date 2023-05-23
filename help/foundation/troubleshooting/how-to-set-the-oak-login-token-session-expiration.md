@@ -1,6 +1,6 @@
 ---
-title: Configuración de la caducidad de la sesión del token de inicio de sesión de Oak
-description: Pasos para establecer el tiempo de espera de caducidad de la sesión del token de origen de oak
+title: Cómo establecer la caducidad de la sesión del token de inicio de sesión de Oak
+description: Pasos para establecer el tiempo de espera de caducidad de sesión del token de origen de Oak
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ---
 
-# Configuración de la caducidad de la sesión del token de inicio de sesión de Oak
+# Cómo establecer la caducidad de la sesión del token de inicio de sesión de Oak
 
 *Este vídeo muestra los pasos para establecer la caducidad de la sesión del token de inicio de sesión de Oak.*
 

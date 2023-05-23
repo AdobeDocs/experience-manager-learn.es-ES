@@ -1,6 +1,6 @@
 ---
-title: Proteger
-description: Aprenda a utilizar AEM características de protección y desprotección para facilitar la colaboración entre varios usuarios en los recursos.
+title: Proteger y desproteger
+description: AEM Obtenga información sobre cómo utilizar las funciones de protección y desprotección de datos para facilitar la colaboración de varios usuarios en los recursos.
 feature: Asset Management
 version: Cloud Service
 kt: 4542
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Proteger
+# Proteger y desproteger
 
-Aprenda a utilizar AEM características de protección y desprotección para facilitar la colaboración entre varios usuarios en los recursos.
+AEM Obtenga información sobre cómo utilizar las funciones de protección y desprotección de datos para facilitar la colaboración de varios usuarios en los recursos.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32048?quality=12&learn=on)

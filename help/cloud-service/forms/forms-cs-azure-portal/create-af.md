@@ -1,6 +1,6 @@
 ---
-title: Almacenar datos de formulario adaptable en Azure Storage
-description: Crear y configurar un formulario adaptable para almacenar datos en Azure Storage
+title: Almacenar datos de formularios adaptables en Azure Storage
+description: Crear y configurar formularios adaptables para almacenar datos en Azure Storage.
 feature: Adaptive Forms
 type: Documentation
 role: Developer
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Creación de un modelo de datos de formulario respaldado por Azure Storage
+# Crear modelo de datos de formulario respaldado por Azure Storage
 
-Creación del modelo de datos del formulario back-end de almacenamiento de Azure Blob.
+Cree el modelo de datos de formulario back-end de Azure Blob Storage.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335423?quality=12&learn=on)

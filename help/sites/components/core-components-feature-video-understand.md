@@ -1,6 +1,6 @@
 ---
 title: Explicación de los componentes principales
-description: AEM componentes principales son un conjunto de componentes estándar que se utilizan con Adobe Experience Manager. Basados en las prácticas recomendadas y los estándares de Adobe, los componentes principales proporcionan un conjunto básico de funcionalidades para cualquier implementación de Sites.
+description: AEM Los componentes principales son un conjunto de componentes estándar que se utilizan con Adobe Experience Manager. Compilados con las prácticas recomendadas y los estándares de Adobe, los componentes principales proporcionan un conjunto de funciones de línea de base para cualquier implementación de Sites.
 feature: Core Components
 topics: authoring
 audience: all
@@ -28,7 +28,7 @@ ht-degree: 42%
 >abstract="En esta pestaña, puede ver el contenido que le ayudará a crear sitios modernos compatibles con AEM as a Cloud Service. La clave para ello es utilizar los componentes principales."
 >additional-url="https://video.tv.adobe.com/v/18926/?captions=spa" text="Información general sobre los componentes principales"
 
-AEM componentes principales son un conjunto de componentes estándar que se utilizan con Adobe Experience Manager. Basados en las prácticas recomendadas y los estándares de Adobe, los componentes principales proporcionan un conjunto básico de funcionalidades para cualquier implementación de Sites.
+AEM Los componentes principales son un conjunto de componentes estándar que se utilizan con Adobe Experience Manager. Compilados con las prácticas recomendadas y los estándares de Adobe, los componentes principales proporcionan un conjunto de funciones de línea de base para cualquier implementación de Sites.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18926?quality=12&learn=on)
 
@@ -36,4 +36,4 @@ AEM componentes principales son un conjunto de componentes estándar que se util
 
 * [Proyecto de GitHub](https://github.com/adobe/aem-core-wcm-components)
 * [Ejemplos de componentes principales](https://www.aemcomponents.dev/)
-* [Documentación de los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
+* [Documentación de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)

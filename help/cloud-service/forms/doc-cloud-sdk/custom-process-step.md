@@ -1,6 +1,6 @@
 ---
-title: Crear paso de proceso personalizado
-description: Paso de proceso personalizado para convertir archivos adjuntos de Word y Excel a PDF con Document Cloud.
+title: Paso Crear proceso personalizado
+description: Paso de proceso personalizado para convertir archivos adjuntos de Word y Excel en PDF mediante Document Cloud.
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
@@ -17,11 +17,10 @@ ht-degree: 0%
 
 ---
 
-# Paso de proceso personalizado
+# Etapa de proceso personalizado
 
-El siguiente es el código completo del paso de proceso personalizado que convierte y reemplaza los archivos nativos por los pdf convertidos.
-Este paso personalizado busca todos los archivos adjuntos bajo el nombre de la carpeta que se proporciona como argumento de proceso en el flujo de trabajo.
-Este paso de proceso personalizado utiliza los métodos del servicio DocumentCloudSDKService personalizado para crear archivos PDF.
+El siguiente es el código completo del paso de proceso personalizado que convierte y reemplaza los archivos nativos con los PDF convertidos. Este paso personalizado busca todos los archivos adjuntos bajo el nombre de la carpeta, que se proporciona como argumento de proceso en el flujo de trabajo.
+Este paso de proceso personalizado utiliza los métodos del servicio DocumentCloudSDK personalizado para crear el de PDF.
 
 
 ```java

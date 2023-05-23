@@ -1,6 +1,6 @@
 ---
-title: Crear un sitio | Creación rápida de sitios AEM
-description: Aprenda a utilizar el asistente para la creación de sitios para generar un nuevo sitio web. La plantilla de sitio estándar que proporciona el Adobe es un punto de partida para el nuevo sitio.
+title: Crear un sitio AEM | Creación rápida de sitios de
+description: Aprenda a utilizar el Asistente para la creación de sitios para generar un nuevo sitio web. La plantilla de sitio estándar proporcionada por Adobe es un punto de partida para el nuevo sitio.
 version: Cloud Service
 type: Tutorial
 topic: Content Management
@@ -20,121 +20,121 @@ ht-degree: 3%
 
 # Crear un sitio {#create-site}
 
-Como parte de la Creación rápida de sitios, utilice el Asistente para la creación de sitios en Adobe Experience Manager, AEM, para generar un nuevo sitio web. La plantilla de sitio estándar proporcionada por el Adobe, se utiliza como punto de partida para el nuevo sitio.
+Como parte de la Creación rápida de sitios, utilice el Asistente para la creación de sitios de Adobe Experience Manager AEM, en la documentación de, para generar un nuevo sitio web. La plantilla de sitio estándar proporcionada por Adobe se utiliza como punto de partida para el nuevo sitio.
 
 ## Requisitos previos {#prerequisites}
 
-Los pasos de este capítulo se llevarán a cabo en un entorno de Adobe Experience Manager as a Cloud Service. Asegúrese de tener acceso administrativo al entorno de AEM. Se recomienda utilizar un [Programa Sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/sandbox-programs/introduction-sandbox-programs.html) y [Entorno de desarrollo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html) al completar este tutorial.
+Los pasos de este capítulo se realizarán en un entorno de Adobe Experience Manager as a Cloud Service. AEM Asegúrese de que tiene acceso administrativo al entorno de la. Se recomienda utilizar un [Programa de zona protegida](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/sandbox-programs/introduction-sandbox-programs.html) y [Entorno de desarrollo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html) al completar este tutorial.
 
-Consulte la [documentación de incorporación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=es) para obtener más información.
+Revise la [documentación de incorporación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=es) para obtener más información.
 
 ## Objetivo {#objective}
 
 1. Aprenda a utilizar el Asistente para la creación de sitios para generar un nuevo sitio.
-1. Comprender la función de las plantillas del sitio.
-1. Explorar el sitio de AEM generado.
+1. Comprender la función de las plantillas de sitio.
+1. AEM Explore el sitio de la generado.
 
 ## Iniciar sesión en Adobe Experience Manager Author {#author}
 
-Como primer paso, inicie sesión en su entorno as a Cloud Service AEM. AEM entornos se dividen entre una **Servicio de autor** y **Servicio de publicación**.
+AEM Como primer paso, inicie sesión en su entorno as a Cloud Service de. AEM Los entornos de se dividen entre una **Servicio de creación** y una **Servicio de publicación**.
 
-* **Servicio de autor** - donde el contenido del sitio se crea, administra y actualiza. Normalmente, solo los usuarios internos tienen acceso al **Servicio de autor** y está detrás de una pantalla de inicio de sesión.
-* **Servicio de publicación** - aloja el sitio web en directo. Este es el servicio que verán los usuarios finales y que suele estar disponible públicamente.
+* **Servicio de creación** : donde se crea, administra y actualiza el contenido del sitio. Normalmente, solo los usuarios internos tienen acceso a **Servicio de creación** y está detrás de una pantalla de inicio de sesión.
+* **Servicio de publicación** : aloja el sitio web en directo. Este es el servicio que ven los usuarios finales y que suele estar disponible públicamente.
 
-La mayoría del tutorial se realizará utilizando la variable **Servicio de autor**.
+La mayoría del tutorial se realizará utilizando el **Servicio de creación**.
 
-1. Vaya a Adobe Experience Cloud [https://experience.adobe.com/](https://experience.adobe.com/). Inicie sesión con su cuenta personal o una cuenta de empresa/escuela.
-1. Asegúrese de que la organización correcta esté seleccionada en el menú y haga clic en **Experience Manager**.
+1. Vaya a Adobe Experience Cloud. [https://experience.adobe.com/](https://experience.adobe.com/). Inicie sesión con su cuenta personal o con una cuenta de empresa/escuela.
+1. Asegúrese de que la organización correcta está seleccionada en el menú y haga clic en **Experience Manager**.
 
-   ![Página principal del Experience Cloud](assets/create-site/experience-cloud-home-screen.png)
+   ![Inicio del Experience Cloud](assets/create-site/experience-cloud-home-screen.png)
 
 1. En **Cloud Manager** click **Launch**.
-1. Pase el ratón sobre el programa que desee utilizar y haga clic en la **Programa de Cloud Manager** icono.
+1. Pase el ratón sobre el programa que quiera utilizar y haga clic en el icono **Programa de Cloud Manager** icono.
 
-   ![Icono del programa de Cloud Manager](assets/create-site/cloud-manager-program-icon.png)
+   ![Icono de programa de Cloud Manager](assets/create-site/cloud-manager-program-icon.png)
 
 1. En el menú superior, haga clic en **Entornos** para ver los entornos aprovisionados.
 
-1. Busque el entorno que desea utilizar y haga clic en el botón **URL de autor**.
+1. Busque el entorno que desea utilizar y haga clic en **URL del autor**.
 
-   ![Autor de desarrollo de acceso](assets/create-site/access-dev-environment.png)
+   ![Acceso al autor de desarrollo](assets/create-site/access-dev-environment.png)
 
    >[!NOTE]
    >
-   >Se recomienda utilizar un **Desarrollo** para este tutorial.
+   >Se recomienda utilizar un **Desarrollo** entorno para este tutorial.
 
-1. Se inicia una nueva pestaña en el AEM **Servicio de autor**. Haga clic en **Iniciar sesión con Adobe** y debe iniciar sesión automáticamente con las mismas credenciales de Experience Cloud.
+1. AEM Se inicia una nueva pestaña en el menú de la **Servicio de creación**. Clic **Iniciar sesión con el Adobe** y debe iniciar sesión automáticamente con las mismas credenciales de Experience Cloud.
 
-1. Después de ser redirigido y autenticado, debería ver la pantalla de inicio AEM.
+1. AEM Después de ser redirigido y autenticado, ahora debería ver la pantalla de inicio de la.
 
-   ![AEM pantalla Inicio](assets/create-site/aem-start-screen.png)
+   ![AEM Pantalla de inicio](assets/create-site/aem-start-screen.png)
 
 >[!NOTE]
 >
-> ¿Tiene problemas para acceder al Experience Manager? Consulte la [documentación de incorporación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html)
+> ¿Tiene problemas para acceder al Experience Manager? Revise la [documentación de incorporación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=es)
 
-## Descargar la plantilla de sitio básica
+## Descargar la plantilla básica del sitio
 
-Una plantilla de sitio proporciona un punto de partida para un nuevo sitio. Una plantilla de sitio incluye temas básicos, plantillas de página, configuraciones y contenido de muestra. Exactamente lo que se incluye en la plantilla del sitio corresponde al desarrollador. El Adobe proporciona un **Plantilla básica del sitio** para acelerar las nuevas implementaciones.
+Una plantilla de sitio proporciona un punto de partida para un nuevo sitio. Una plantilla de sitio incluye algunas temáticas básicas, plantillas de página, configuraciones y contenido de muestra. Exactamente lo que se incluye en la plantilla del sitio depende del desarrollador. El Adobe proporciona un **Plantilla básica del sitio** para acelerar las nuevas implementaciones.
 
-1. Abra una nueva pestaña del explorador y vaya al proyecto de plantilla de sitio básica en GitHub: [https://github.com/adobe/aem-site-template-standard](https://github.com/adobe/aem-site-template-standard). El proyecto es de código abierto y tiene licencia para ser utilizado por cualquier persona.
-1. Haga clic en **Versiones** y vaya a la [última versión](https://github.com/adobe/aem-site-template-standard/releases/última).
-1. Expanda el **Recursos** y descargue el archivo zip de la plantilla:
+1. Abra una nueva pestaña del explorador y vaya al proyecto Plantilla de sitio básica en GitHub: [https://github.com/adobe/aem-site-template-standard](https://github.com/adobe/aem-site-template-standard). El proyecto es de código abierto y tiene licencia para ser utilizado por cualquier persona.
+1. Clic **Versiones** y vaya al [última versión](https://github.com/adobe/aem-site-template-standard/releases/última versión).
+1. Expanda el **Assets** y descargue el archivo zip de la plantilla:
 
-   ![Código postal básico del sitio](assets/create-site/template-basic-zip-file.png)
+   ![Código postal de plantilla básica del sitio](assets/create-site/template-basic-zip-file.png)
 
-   Este archivo zip se utiliza en el siguiente ejercicio.
+   Este archivo zip se utilizará en el siguiente ejercicio.
 
    >[!NOTE]
    >
-   > Este tutorial se escribe con la versión **1.1.0** de la plantilla de sitio básica. Al iniciar un nuevo proyecto para su uso en producción, siempre se recomienda utilizar la versión más reciente.
+   > Este tutorial se escribe con la versión **1.1.0** de la plantilla básica del sitio. Al iniciar un nuevo proyecto para su uso en producción, siempre se recomienda utilizar la versión más reciente.
 
 ## Crear un nuevo sitio
 
-A continuación, genere un nuevo sitio utilizando la plantilla de sitio del ejercicio anterior.
+A continuación, genere un nuevo sitio con la plantilla de sitio del ejercicio anterior.
 
-1. Vuelva al entorno de AEM. Desde la pantalla Inicio de AEM vaya a **Sitios**.
-1. En la esquina superior derecha, haga clic en **Crear** > **Sitio (plantilla)**. Esto abrirá las **Asistente para crear sitio**.
-1. En **Seleccionar una plantilla de sitio** haga clic en **Importar** botón.
+1. AEM Vuelva al entorno de la. AEM En la pantalla Inicio de la, vaya a **Sites**.
+1. En la esquina superior derecha, haga clic en **Crear** > **Sitio (plantilla)**. Esto mostrará el **Asistente de creación de sitios**.
+1. En **Seleccione una plantilla del sitio** haga clic en **Importar** botón.
 
    Cargue el **.zip** archivo de plantilla descargado del ejercicio anterior.
 
-1. Seleccione el **Plantilla básica AEM sitio** y haga clic en **Siguiente**.
+1. Seleccione el **AEM Plantilla de sitio básica** y haga clic en **Siguiente**.
 
-   ![Seleccionar plantilla de sitio](assets/create-site/select-site-template.png)
+   ![Seleccionar plantilla del sitio](assets/create-site/select-site-template.png)
 
-1. En **Detalles del sitio** > **Título del sitio** enter `WKND Site`.
+1. En **Detalles del sitio** > **Título del sitio** introduzcan `WKND Site`.
 
-   En una implementación real, &quot;WKND Site&quot; sería reemplazado por el nombre de marca de su empresa u organización. En este tutorial, estamos simulando la creación de un sitio para una marca de estilo de vida ficticia &quot;WKND&quot;.
+   En una implementación real, &quot;Sitio WKND&quot; se sustituiría por el nombre de marca de su empresa u organización. En este tutorial, simulamos la creación de un sitio para una marca ficticia de estilo de vida &quot;WKND&quot;.
 
-1. En **Nombre del sitio** enter `wknd`.
+1. En **Nombre del sitio** introduzcan `wknd`.
 
-   ![Detalles de la plantilla del sitio](assets/create-site/site-template-details.png)
+   ![Detalles de plantilla del sitio](assets/create-site/site-template-details.png)
 
    >[!NOTE]
    >
-   > Si utiliza un entorno de AEM compartido, añada un identificador único al **Nombre del sitio**. Por ejemplo `wknd-site-johndoe`. Esto garantizará que varios usuarios puedan completar el mismo tutorial, sin conflictos.
+   > AEM Si utiliza un entorno de compartido, añada un identificador único al **Nombre del sitio**. Por ejemplo `wknd-site-johndoe`. Esto garantizará que varios usuarios puedan completar el mismo tutorial, sin ningún conflicto.
 
-1. Haga clic en **Crear** para generar el sitio. Haga clic en **Listo** en el **Correcto** cuando AEM haya terminado de crear el sitio web.
+1. Clic **Crear** para generar el sitio. Clic **Listo** en el **Correcto** AEM cuando haya terminado de crear el sitio web.
 
 ## Explorar el nuevo sitio
 
 1. Vaya a la consola de AEM Sites, si no está allí.
 1. Un nuevo **Sitio WKND** se ha generado. Incluirá una estructura de sitio con una jerarquía multilingüe.
-1. Abra el **Inglés** > **Página principal** seleccionando la página y haciendo clic en el botón **Editar** en la barra de menús:
+1. Abra el **Inglés** > **Inicio** página seleccionando la página y haciendo clic en el botón **Editar** en la barra de menús:
 
    ![Jerarquía del sitio WKND](assets/create-site/wknd-site-starter-hierarchy.png)
 
-1. Ya se ha creado contenido de inicio y hay varios componentes disponibles para añadirlos a una página. Experimente con estos componentes para hacerse una idea de la funcionalidad. En el capítulo siguiente aprenderá los conceptos básicos de un componente.
+1. El contenido de inicio ya se ha creado y hay varios componentes disponibles para añadirlos a una página. Experimente con estos componentes para hacerse una idea de la funcionalidad. Aprenderá los conceptos básicos de un componente en el capítulo siguiente.
 
-   ![Iniciar página principal](assets/create-site/start-home-page.png)
+   ![Página de inicio de inicio](assets/create-site/start-home-page.png)
 
-   *Contenido de muestra proporcionado por la plantilla de sitio*
+   *Contenido de muestra proporcionado por la plantilla del sitio*
 
-## Felicitaciones! {#congratulations}
+## Enhorabuena. {#congratulations}
 
-¡Felicidades, acaba de crear su primer Sitio AEM!
+AEM ¡Felicidades, acabas de crear tu primer sitio en la red de la red de la red de Internet
 
 ### Pasos siguientes {#next-steps}
 
-Utilice el editor de páginas de Adobe Experience Manager, AEM, para actualizar el contenido del sitio en la variable [Creación de contenido y publicación](author-content-publish.md) capítulo. Descubra cómo se pueden configurar los componentes atómicos para actualizar contenido. Comprenda la diferencia entre los entornos de AEM Author y Publish y aprenda a publicar actualizaciones en el sitio activo.
+Utilice el Editor de páginas en Adobe Experience Manager AEM, para actualizar el contenido del sitio en el, en el, y, a continuación, en el [Creación de contenido y publicación](author-content-publish.md) capítulo. Descubra cómo se pueden configurar los componentes atómicos para actualizar el contenido. Comprenda la diferencia entre los entornos de AEM Author y Publish, y aprenda a publicar actualizaciones en el sitio en directo.

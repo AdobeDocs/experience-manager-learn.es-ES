@@ -1,19 +1,19 @@
 ---
-title: Archivos de sólo lectura o inmutables de AMS Dispatcher
-description: Comprender por qué algunos archivos son de solo lectura o no editables y cómo realizar los cambios funcionales que desee
+title: Archivos de solo lectura o inmutables de AMS Dispatcher
+description: Explicación de por qué algunos archivos son de solo lectura o no editables y cómo realizar los cambios funcionales deseados
 version: 6.5
 topic: Administration, Development
 feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: d6b7d63ba02ca73d6c1674d90db53c6eebab3bd2
+exl-id: 7be6b3f9-cd53-41bc-918d-5ab9b633ffb3
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 1%
 
 ---
-
 
 # Archivos de solo lectura o inmutables en AMS
 
@@ -23,23 +23,23 @@ ht-degree: 1%
 
 ## Descripción
 
-Este documento describirá qué archivos están bloqueados y no se van a cambiar, y cómo hacer los ajustes de configuración deseados correctamente.
+Este documento describirá qué archivos están bloqueados y no se van a cambiar, y cómo realizar correctamente los ajustes de configuración deseados.
 
-Cuando AMS aprovisiona un sistema, implementan una configuración de línea de base que hace que todo funcione y sea seguro.  Estas son cosas que AMS desea garantizar que permanezca como punto de referencia de funcionalidad y seguridad.  Para lograr esto, algunos archivos están marcados como de solo lectura e inmutables para evitar que los cambie.
+Cuando AMS aprovisiona un sistema, implementa una configuración de línea de base que hace que todo funcione y sea seguro.  Estas son cosas que AMS desea garantizar que se mantengan como línea de base de funcionalidad y seguridad.  Para lograr esto, algunos archivos están marcados como de solo lectura e inmutables para evitar que los cambie.
 
-El diseño no impide modificar su comportamiento y anular los cambios que necesite.  En lugar de cambiar estos archivos, superpondrá su propio archivo que reemplaza al original.
+El diseño no impide modificar su comportamiento y anular los cambios que necesite.  En lugar de cambiar estos archivos, superpondrá su propio archivo, que reemplaza al original.
 
-Esto también le permite estar seguro de que cuando AMS parches los despachantes con las últimas correcciones y mejoras de seguridad, no alterarán sus archivos.  A continuación, puede seguir beneficiándose de las mejoras y adoptar solo los cambios que desee.
-![Muestra un carril de boliche con una bola que baja por el carril.  La pelota tiene una flecha con la palabra que te muestra.  Los parachoques se elevan y tienen las palabras archivos inmutables encima de ellos.](assets/immutable-files/bowling-file-immutability.png "Inmutabilidad de los archivos de bolos")
-Como se ilustra en la imagen anterior, los archivos inmutables no te impiden jugar.  Simplemente te evitan dañar tu actuación y te mantienen en el carril.  Este método nos permite las pocas características clave:
+Esto también le permite asegurarse de que cuando AMS aplique parches a Dispatchers con las últimas correcciones y mejoras de seguridad, no alterarán sus archivos.  A continuación, puede seguir beneficiándose de las mejoras y adoptar solo los cambios que desee.
+![Muestra una pista de bolos con una bola rodando por ella.  La bola tiene una flecha con la palabra que te muestra.  Los protectores de los carriles están elevados y tienen las palabras archivos inmutables encima.](assets/immutable-files/bowling-file-immutability.png "bowling-file-immutability")
+Como se ilustra en la imagen anterior, los archivos inmutables no le impiden jugar.  Simplemente evitan que se perjudique su rendimiento y lo mantienen en el carril.  Este método nos permite disponer de unas cuantas características muy clave:
 
 - Las personalizaciones se gestionan en sus propios espacios seguros
-- La superposición de cambios personalizados refleja la de los métodos de superposición en AEM
+- AEM La superposición de cambios personalizados refleja la de los métodos de superposición en los informes de estado de la aplicación
 - La aplicación de parches a las configuraciones de AMS se puede realizar sin alterar las personalizaciones
-- La prueba de la instalación de base frente a las configuraciones personalizadas se puede hacer simultáneamente para ayudar a discernir si los problemas son causados por personalizaciones o por algún otro motivo ¿Qué archivos?
+- Se puede probar simultáneamente la instalación base frente a las configuraciones personalizadas para ayudar a discernir si los problemas son causados por las personalizaciones o por otra cosa.
 
 
-Esta es una lista típica de archivos implementados con Dispatcher:
+Esta es una lista típica de archivos implementados con un Dispatcher:
 
 ```
 /etc/httpd/
@@ -197,7 +197,7 @@ IfModule disp_apache2.c
 /IfModule
 ```
 
-Vea cómo la directiva DispatcherLogLevel tiene una variable de `DISP_LOG_LEVEL` en lugar del valor normal que vería allí.  Encima de esa sección de código también verá una instrucción include en un archivo de variables.  El archivo de variable `/etc/httpd/conf.d/variables/ams_default.vars` es donde queremos ver a continuación.  A continuación se muestra el contenido del archivo de variables:
+Vea cómo la directiva DispatcherLogLevel tiene una variable de `DISP_LOG_LEVEL` en lugar del valor normal que vería allí.  Encima de esa sección de código también verá una instrucción de inclusión en un archivo de variables.  El archivo de variables `/etc/httpd/conf.d/variables/ams_default.vars` es lo que queremos ver a continuación.  Este es el contenido del archivo de variables:
 
 ```
 Define DISP_LOG_LEVEL info
@@ -209,11 +209,11 @@ Define PUBLISH_FORCE_SSL 0
 Define LIVECYCLE_FORCE_SSL 1
 ```
 
-Verá más arriba que el valor actual de `DISP_LOG_LEVEL` es `info`.  Podemos ajustarlo para rastrear o depurar, o el número, valor o nivel que elija.  Ahora, en todas partes que controlen el nivel de registro, se ajustará automáticamente.
+Más arriba puede ver el valor actual de `DISP_LOG_LEVEL` la variable es `info`.  Podemos ajustarlo para rastrear o depurar, o al valor numérico/nivel de su elección.  Ahora, en cualquier lugar que controle el nivel de registro, se ajustará automáticamente.
 
 ### Método de superposición
 
-Por favor, comprenda los archivos include de nivel superior porque estos serán su lugar de inicio para realizar cualquier personalización.  Para empezar con un ejemplo sencillo, tenemos un escenario en el que queremos agregar un nuevo nombre de dominio que pretendemos señalar en este Dispatcher.  El ejemplo de dominio que usaremos es we-retail.adobe.com.  Empezaremos copiando un archivo de configuración existente en uno nuevo donde podemos añadir nuestros cambios:
+Comprenda los archivos de inclusión de nivel superior, ya que este será su punto de partida para realizar cualquier personalización.  Para empezar con un ejemplo sencillo, tenemos un escenario en el que queremos agregar un nuevo nombre de dominio que pretendemos apuntar a este Dispatcher.  El dominio de ejemplo que utilizaremos is we-retail.adobe.com.  Empezaremos copiando un archivo de configuración existente en uno nuevo donde podemos agregar nuestros cambios:
 
 ```
 $ cp /etc/httpd/conf.d/available_vhosts/aem_publish.vhost /etc/httpd/conf.d/available_vhosts/weretail_publish.vhost
@@ -257,25 +257,25 @@ VirtualHost *:80
 /VirtualHost
 ```
 
-Ahora hemos actualizado nuestra `ServerName` y `ServerAlias` para que coincida con los nuevos nombres de dominio, así como para actualizar otros encabezados de ruta de exploración.  Ahora habilitemos nuestro nuevo archivo para permitir que Apache sepa utilizar nuestro nuevo archivo:
+Ahora hemos actualizado nuestro `ServerName` y `ServerAlias` para que coincida con los nuevos nombres de dominio, así como para actualizar otros encabezados de ruta de exploración.  A continuación, habilitemos nuestro nuevo archivo para permitir que Apache sepa utilizarlo:
 
 ```
 $ cd /etc/httpd/conf.d/enabled_vhosts/; ln -s ../available_vhosts/weretail_publish.vhost .
 ```
 
-Ahora, el servidor web Apache sabe que el dominio es algo para lo que debería generar tráfico, pero todavía necesitamos informar al módulo de Dispatcher que tiene un nuevo nombre de dominio que cumplir.  Empezaremos creando un nuevo `*_vhost.any` file `/etc/httpd/conf.dispatcher.d/vhosts/weretail_vhosts.any` y dentro de ese archivo pondremos el nombre de dominio que queremos honrar:
+Ahora, el servidor web de Apache sabe que el dominio es algo para lo que debería generar tráfico, pero aún necesitamos informar al módulo de Dispatcher que tiene un nuevo nombre de dominio que respetar.  Empezaremos creando un nuevo `*_vhost.any` archivo `/etc/httpd/conf.dispatcher.d/vhosts/weretail_vhosts.any` y dentro de ese archivo pondremos el nombre de dominio que queremos respetar:
 
 ```
 "we-retail.adobe.com"
 ```
 
-Ahora necesitamos crear un nuevo archivo de granja que use nuestro nuevo archivo de entrada vhost, y empezaremos copiando un archivo de inicio sólido a nuestro nuevo.
+Ahora necesitamos crear un nuevo archivo de granja que use nuestro nuevo archivo de entrada vhost y empezaremos copiando un archivo de inicio sólido al nuevo.
 
 ```
 $ cp /etc/httpd/conf.dispatcher.d/available_farms/999_ams_publish_farm.any /etc/httpd/conf.dispatcher.d/available_farms/400_weretail_publish_farm.any
 ```
 
-Mostremos los cambios que tendremos que realizar en este archivo de granja
+Veamos los cambios que tendremos que realizar en este archivo de granja
 
 Antes:
 
@@ -299,17 +299,17 @@ Después:
 }
 ```
 
-Ahora hemos actualizado el nombre de la granja de servidores, y la incluye que utiliza en la variable `/virtualhosts` de la configuración de granja.  Necesitamos habilitar este nuevo archivo de granja para que pueda utilizarlo en la configuración en ejecución:
+Ahora hemos actualizado el nombre de la granja y la inclusión que utiliza en la `/virtualhosts` de la configuración de la granja.  Necesitamos habilitar este nuevo archivo de granja para que pueda utilizarlo en la configuración en ejecución:
 
 ```
 $ cd /etc/httpd/conf.dispatcher.d/enabled_farms/; ln -s ../available_farms/400_weretail_publish_farm.any .
 ```
 
-Ahora, simplemente volveríamos a cargar el servicio webserver y usaríamos nuestro nuevo dominio!
+Ahora simplemente volveríamos a cargar el servicio webserver y usaríamos nuestro nuevo dominio.
 
 <div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
 
-Tenga en cuenta que solo cambiamos las piezas que necesitábamos para cambiar y aprovechamos las inclusiones existentes y el código que venía con los archivos de configuración de línea de base.  Solo tenemos que definir el elemento que necesitamos cambiar.  Facilita mucho las cosas y nos permite mantener menos código
+Tenga en cuenta que solo cambiamos las piezas que necesitábamos cambiar y aprovechamos las inclusiones existentes y el código que venía con los archivos de configuración de línea de base.  Solo tenemos que definir el elemento que necesitamos cambiar.  Facilita mucho las cosas y nos permite mantener menos código
 </div>
 
 [Siguiente -> Comprobación de estado de Dispatcher](./health-check.md)

@@ -1,6 +1,6 @@
 ---
 title: Crear aplicación de Acrobat Sign
-description: La aplicación Acrobat Sign es el primer paso para crear la integración entre AEM Forms y Acrobat Sign.
+description: La aplicación de Acrobat Sign es el primer paso para crear la integración entre AEM Forms y Acrobat Sign.
 solution: Experience Manager,Experience Manager Forms
 type: Documentation
 role: Developer
@@ -18,8 +18,8 @@ ht-degree: 0%
 
 ---
 
-# Crear aplicación de API de Acrobat Sign
+# Crear aplicación API de Acrobat Sign
 
-Debe crear una aplicación de API en Acrobat Sign para integrarla con la plataforma de Acrobat Sign. La aplicación API actúa como representante de una aplicación cliente, interactuando con la plataforma Acrobat Sign. Puede crear la aplicación de API en un dominio de cliente o socio.
+Debe crear una aplicación API en el Acrobat Sign para integrarla con la plataforma del Acrobat Sign. La aplicación API actúa como representante de una aplicación cliente e interactúa con la plataforma de Acrobat Sign. Puede crear la aplicación API en el dominio del cliente o del socio.
 
 >[!VIDEO](https://video.tv.adobe.com/v/332436?quality=12&learn=on)

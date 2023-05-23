@@ -1,6 +1,6 @@
 ---
-title: Cambio del valor de entropy
-description: Pasos para cambiar el valor de la entropía a nivel del sistema operativo
+title: Cómo cambiar el valor de la entropía
+description: Pasos para cambiar el valor de la entropía en el sistema operativo
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ---
 
-# Cambio del valor de entropy
+# Cómo cambiar el valor de la entropía
 
 *Este vídeo muestra los pasos para cambiar el valor de la entropía.*
 

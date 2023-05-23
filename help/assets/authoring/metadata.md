@@ -1,6 +1,6 @@
 ---
 title: Metadatos
-description: Obtenga información sobre cómo acceder e interactuar con metadatos en AEM Assets.
+description: Obtenga información sobre cómo acceder a los metadatos e interactuar con ellos en AEM Assets.
 feature: Metadata
 role: User
 level: Beginner
@@ -19,6 +19,6 @@ ht-degree: 8%
 
 # Metadatos
 
-Obtenga información sobre cómo acceder e interactuar con metadatos en AEM Assets.
+Obtenga información sobre cómo acceder a los metadatos e interactuar con ellos en AEM Assets.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32045?quality=12&learn=on)

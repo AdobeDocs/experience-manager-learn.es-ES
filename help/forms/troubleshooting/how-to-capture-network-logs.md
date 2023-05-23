@@ -1,6 +1,6 @@
 ---
-title: Captura de los registros de red / Herramientas que se van a utilizar
-description: Pasos para capturar registros de red para solucionar problemas relacionados con la red
+title: Cómo capturar los registros de red / Herramientas que se utilizarán
+description: Pasos para capturar los registros de red para solucionar problemas relacionados con la red
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# Captura de los registros de red / Herramientas que se van a utilizar
+# Cómo capturar los registros de red / Herramientas que se utilizarán
 
-*Este vídeo muestra los pasos para capturar los registros de red / las herramientas que se van a utilizar.*
+*Este vídeo muestra los pasos para capturar los registros de red/las herramientas que se van a utilizar.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335491?quality=12&learn=on)

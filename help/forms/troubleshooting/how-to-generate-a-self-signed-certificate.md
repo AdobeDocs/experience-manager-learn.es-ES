@@ -1,5 +1,5 @@
 ---
-title: Cómo generar un certificado autofirmado
+title: Cómo generar un certificado firmado automáticamente
 description: Pasos para generar un certificado autofirmado para aplicar SSL
 type: Troubleshooting
 role: Admin
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# Cómo generar un certificado autofirmado
+# Cómo generar un certificado firmado automáticamente
 
-*Este vídeo muestra los pasos para generar un certificado autofirmado.*
+*Este vídeo explica los pasos para generar un certificado autofirmado.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335539?quality=12&learn=on)

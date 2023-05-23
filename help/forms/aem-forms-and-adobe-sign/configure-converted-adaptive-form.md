@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Configurar formulario adaptable convertido
 
-Después de convertir el formulario de PDF en un formulario adaptable, normalmente tendrá que proporcionar algunos títulos significativos y también puede ser necesario reorganizar algunos campos. También será necesario configurar el formulario para que utilice la integración de Acrobat Sign para la experiencia de firma in situ.
+Después de convertir un formulario de PDF en un formulario adaptable, normalmente deberá proporcionar algunos títulos significativos y también es posible que necesite reorganizar algunos campos. También deberá configurar el formulario para que utilice la integración de Acrobat Sign para la experiencia de firma in situ.
 
 En el siguiente vídeo se explican los pasos necesarios para configurar el formulario para la experiencia de firma in situ
 

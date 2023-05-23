@@ -1,6 +1,6 @@
 ---
-title: Uso de LDAP con el flujo de trabajo de AEM Forms
-description: Asignación de la tarea de flujo de trabajo de AEM Forms al administrador del remitente
+title: Uso de LDAP con AEM Forms Workflow
+description: Asignación de la tarea de flujo de trabajo de AEM Forms al responsable del emisor
 feature: Adaptive Forms, Workflow
 topic: Integrations
 role: Developer
@@ -15,29 +15,29 @@ ht-degree: 0%
 
 ---
 
-# Uso de LDAP con el flujo de trabajo de AEM Forms
+# Uso de LDAP con AEM Forms Workflow
 
-Asignación de la tarea de flujo de trabajo de AEM Forms al administrador del remitente.
+Asignar una tarea de flujo de trabajo de AEM Forms al administrador del emisor.
 
-Al utilizar Formulario adaptable en AEM flujo de trabajo, le interesa asignar dinámicamente una tarea al administrador del remitente del formulario. Para lograr este caso de uso, tendremos que configurar AEM con Ldap.
+AEM Cuando se utiliza un formulario adaptable en flujo de trabajo, es posible que desee asignar dinámicamente una tarea al administrador del remitente del formulario. AEM Para llevar a cabo este caso de uso, tendremos que configurar el uso de la función de forma que se pueda configurar con.
 
-Los pasos necesarios para configurar AEM con LDAP se explican en [detalle aquí.](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ldap-config.html)
+AEM Los pasos necesarios para configurar la con LDAP se explican en [detallar aquí.](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ldap-config.html)
 
-A los efectos de este artículo, adjunto archivos de configuración utilizados en la configuración de AEM con Adobe Ldap. Estos archivos se incluyen en el paquete que se puede importar mediante el administrador de paquetes.
+A los efectos de este artículo, adjunto archivos de configuración utilizados en la configuración de los archivos de configuración con Adobe Ldap de la configuración de la aplicación de la configuración de la aplicación de la configuración de la aplicación de AEM Ldap. Estos archivos se incluyen en el paquete, que se puede importar mediante el administrador de paquetes.
 
-En la captura de pantalla siguiente, estamos recuperando todos los usuarios que pertenecen a un centro de costes en particular. Si desea recuperar todos los usuarios en su LDAP, no puede utilizar el filtro adicional.
+En la captura de pantalla siguiente, se recuperan todos los usuarios que pertenecen a un centro de coste determinado. Si desea recuperar todos los usuarios de su LDAP, no puede utilizar el filtro adicional.
 
-![Configuración LDAP](assets/costcenterldap.gif)
+![Configuración de LDAP](assets/costcenterldap.gif)
 
-En la captura de pantalla siguiente, asignamos los grupos a los usuarios recuperados de LDAP a AEM. Observe el grupo de usuarios de formularios asignado a los usuarios importados. El usuario debe ser miembro de este grupo para interactuar con AEM Forms. También almacenamos la propiedad manager en el nodo profile/manager en AEM.
+AEM En la captura de pantalla siguiente, asignamos los grupos a los usuarios recuperados de LDAP en el. Observe el grupo forms-users asignado a los usuarios importados. El usuario debe ser miembro de este grupo para interactuar con AEM Forms. AEM También almacenamos la propiedad manager en el nodo profile/manager en la dirección de correo electrónico de.
 
 ![Synchandler](assets/synchandler.gif)
 
-Una vez que haya configurado LDAP e importado usuarios en AEM, podemos crear un flujo de trabajo que asigne la tarea al administrador de los remitentes. A los efectos de este artículo, hemos desarrollado un sencillo flujo de trabajo de aprobación de un solo paso.
+AEM Una vez que haya configurado LDAP y haya importado usuarios en el servidor de correo electrónico, podemos crear un flujo de trabajo que asigne la tarea al administrador de los remitentes. Para los fines de este artículo, hemos desarrollado un flujo de trabajo de aprobación simple de un paso.
 
-El primer paso del flujo de trabajo establece el valor del paso inicial en No. La regla de negocio del formulario adaptable desactivará el panel &quot;Detalles del remitente&quot; y mostrará el panel &quot;Aprobado por&quot; en función del valor del paso inicial.
+El primer paso del flujo de trabajo establece el valor de initialstep en No. La regla de negocio del formulario adaptable deshabilitará el panel &quot;Detalles del remitente&quot; y mostrará el panel &quot;Aprobado por&quot; en función del valor del paso inicial.
 
-El segundo paso asigna la tarea al administrador del remitente. Obtenemos el administrador del remitente utilizando el código personalizado.
+El segundo paso asigna la tarea al administrador del emisor. Obtenemos al gerente del remitente usando el código personalizado.
 
 ![Asignar tarea](assets/assigntask.gif)
 
@@ -55,25 +55,25 @@ String managerPorperty = workflowInitiator.getProperty("profile/manager")[0].get
 }
 ```
 
-El fragmento de código es responsable de recuperar el id de administrador y asignar la tarea al administrador.
+El fragmento de código es responsable de recuperar el ID de los administradores y asignar la tarea al administrador.
 
-Obtenemos la persona que inició el flujo de trabajo. Luego obtenemos el valor de la propiedad manager.
+Obtenemos la persona que inició el flujo de trabajo. Luego obtenemos el valor de la propiedad del administrador.
 
-Dependiendo de cómo se almacene la propiedad manager en su LDAP, es posible que tenga que realizar alguna manipulación de cadenas para obtener el id del administrador.
+Según la forma en que se almacene la propiedad del administrador en el LDAP, es posible que tenga que realizar alguna manipulación de cadenas para obtener el ID del administrador.
 
-Lea este artículo para implementar su propia [  Selector de participantes .](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
+Lea este artículo para implementar los suyos propios [  Selector de participantes](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
 
-Para probar esto en su sistema (para empleados de Adobe, puede usar este ejemplo de forma predeterminada)
+Para probar esto en su sistema (para empleados de Adobe puede usar este ejemplo de forma predeterminada)
 
-* [Descargar e implementar el paquete setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Este es el paquete OSGI personalizado para configurar la propiedad del administrador.
-* [Descargar e instalar DevelopingWithServiceUserBundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-* [Importe los recursos asociados a este artículo en AEM mediante el administrador de paquetes](assets/aem-forms-ldap.zip).Incluidos como parte de este paquete son los archivos de configuración LDAP, el flujo de trabajo y un formulario adaptable.
-* Configure AEM con su LDAP utilizando las credenciales LDAP adecuadas.
-* Inicie sesión en AEM con sus credenciales LDAP.
+* [Descargue e implemente el paquete setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Este es el paquete OSGI personalizado para establecer la propiedad del administrador.
+* [Descargar e instalar el paquete Desarrollando con servicio](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+* [AEM Importe los recursos asociados con este artículo a mediante el administrador de paquetes de la interfaz de usuario de](assets/aem-forms-ldap.zip).Incluidos como parte de este paquete están los archivos de configuración LDAP, el flujo de trabajo y un formulario adaptable.
+* AEM Configure con el LDAP utilizando las credenciales de LDAP adecuadas.
+* AEM Inicie sesión en el servicio de acceso a datos usando sus credenciales de LDAP.
 * Abra el [timeoffrequestform](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
-* Complete el formulario y envíe.
+* Complete el formulario y envíelo.
 * El administrador del remitente debe obtener el formulario para su revisión.
 
 >[!NOTE]
 >
->Este código personalizado para extraer el nombre del administrador se ha probado con el Adobe LDAP. Si está ejecutando este código contra un LDAP diferente, deberá modificar o escribir su propia implementación de getParticipant para obtener el nombre del administrador.
+>Este código personalizado para extraer el nombre del responsable se ha probado con el LDAP de Adobe. Si está ejecutando este código en un LDAP diferente, tendrá que modificar o escribir su propia implementación de getParticipant para obtener el nombre del responsable.

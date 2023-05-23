@@ -17,7 +17,7 @@ ht-degree: 27%
 
 # Uso de Microsoft Dynamics con AEM Forms{#using-microsoft-dynamics-with-aem-forms}
 
-La integración de datos de AEM Forms le permite configurar y conectarse a fuentes de datos diferentes. Los siguientes son compatibles de serie. Sin embargo, con poca personalización, también puede integrar otras fuentes de datos.
+La integración de datos de AEM Forms le permite configurar y conectarse a fuentes de datos diferentes. Se admiten las siguientes opciones de forma predeterminada. Sin embargo, con poca personalización, también puede integrar otras fuentes de datos.
 
 Bases de datos relacionales: MySQL, Microsoft SQL Server, IBM DB2 y RDBMS de Oracle
 1. Perfil de usuario de AEM
@@ -31,4 +31,4 @@ Este vídeo muestra un flujo de trabajo que muestra cómo AEM Forms puede trabaj
 
 >[!NOTE]
 >
->Esta función solo está disponible con AEM 6.3 FP1 y posteriores. Asegúrese de instalar el complemento de AEM Forms antes de configurarlo.
+>AEM Esta función solo está disponible con la versión 6.3 FP1 y versiones posteriores de la versión de. Asegúrese de instalar el complemento de AEM Forms antes de configurar.

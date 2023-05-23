@@ -20,20 +20,20 @@ ht-degree: 2%
 Demostración de la capacidad de arrastrar y soltar para crear un PDF con AEM Forms
 
 PDFG significa Generación de PDF. Esto significa que puede convertir una variedad de formatos de archivo en PDF. Los más comunes son los documentos de Microsoft Office. PDFG forma parte de AEM Forms desde la versión 6.1.
-[El archivo javadoc para la API PDFG está listado aquí](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html)
+[El javadoc para la API de PDFG se enumera aquí](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html)
 
-Los recursos asociados con este artículo le permitirán arrastrar y soltar documentos de MS office o archivos de JPG en la zona de colocación de la página de HTML. Una vez colocado el documento, invoca el servicio PDFG, convierte el documento en PDF y lo guarda en el sistema de archivos de AEM Server.
+Los recursos asociados con este artículo le permiten arrastrar y soltar documentos de MS Office o archivos de JPG en el área de colocación de la página de HTML. Una vez colocado el documento, se invoca el servicio PDFG, se convierte el documento en PDF AEM y se guarda en el sistema de archivos de Servidor de.
 
 Para instalar los recursos de demostración, realice los siguientes pasos
 
-1. Configurar PDFG como se menciona en este documento [here](https://helpx.adobe.com/es/experience-manager/6-4/forms/using/install-configure-pdf-generator.html).
-1. Siga la documentación apropiada relacionada con su versión de AEM Forms.
-1. [Importe e instale recursos relacionados con este artículo mediante el administrador de paquetes.](assets/createpdfgdemov2.zip)
+1. Configure PDFG como se menciona en este documento [aquí](https://helpx.adobe.com/es/experience-manager/6-4/forms/using/install-configure-pdf-generator.html).
+1. Siga la documentación adecuada relacionada con su versión de AEM Forms.
+1. [Importe e instale los recursos relacionados con este artículo mediante el administrador de paquetes.](assets/createpdfgdemov2.zip)
 1. [Vaya a post.jsp](http://localhost:4502/apps/AemFormsSamples/components/createPDF/POST.jsp) en su CRX
 1. Cambie la ubicación de guardado según sus preferencias (línea 9)
 1. Guarde los cambios.
 1. Abra el [página html](http://localhost:4502/content/DocumentServices/CreatePDFG.html) para arrastrar y soltar archivos para la conversión.
-1. Coloque un archivo de palabra o jpg en la zona de colocación.
+1. Coloque un archivo de texto o jpg en la zona de colocación.
 1. El documento de entrada se convierte en PDF y se guarda en la misma ubicación especificada en el punto 4.
 
 El siguiente fragmento de código muestra el uso del servicio PDFG para convertir archivos a PDF

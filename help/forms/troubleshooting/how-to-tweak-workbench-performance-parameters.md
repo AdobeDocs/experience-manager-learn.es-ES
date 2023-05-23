@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Cómo modificar los parámetros de rendimiento de Workbench
 
-*Este vídeo recorre el proceso para modificar los parámetros de rendimiento de Workbench .*
+*Este vídeo muestra el proceso para modificar los parámetros de rendimiento de Workbench*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335511?quality=12&learn=on)

@@ -1,6 +1,6 @@
 ---
-title: Invalidación de la caché de CDN para AEM Dynamic Media
-description: Pasos para invalidar la caché de CDN para AEM Dynamic Media
+title: AEM Invalidación de la caché de CDN para el Dynamic Media de la
+description: AEM Pasos para invalidar la caché de la CDN para el Dynamic Media de la
 role: Developer
 level: Intermediate
 version: Cloud Service
@@ -14,8 +14,8 @@ ht-degree: 0%
 
 ---
 
-# Invalidación de la caché de CDN para AEM Dynamic Media
+# AEM Invalidación de la caché de CDN para el Dynamic Media de la
 
-Este vídeo explica el proceso de invalidación de la caché de CDN mediante Dynamic Media.
+Este vídeo muestra el proceso de invalidación de la caché de CDN mediante Dynamic Media.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335457?quality=12&learn=on)

@@ -1,6 +1,6 @@
 ---
 title: Operaciones básicas
-description: Obtenga información sobre las operaciones básicas de AEM Assets, incluida la creación de carpetas, así como la carga, copia, desplazamiento y eliminación de recursos.
+description: Obtenga información acerca de las operaciones básicas de AEM Assets, incluido cómo crear carpetas, así como cómo cargar, copiar, mover y eliminar recursos.
 feature: Asset Management
 role: User
 level: Beginner
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Operaciones básicas
 
-Obtenga información sobre las operaciones básicas de AEM Assets, incluida la creación de carpetas, así como la carga, copia, desplazamiento y eliminación de recursos.
+Obtenga información acerca de las operaciones básicas de AEM Assets, incluido cómo crear carpetas, así como cómo cargar, copiar, mover y eliminar recursos.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32044?quality=12&learn=on)

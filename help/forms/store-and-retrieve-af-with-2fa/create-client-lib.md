@@ -1,6 +1,6 @@
 ---
 title: Creación de bibliotecas de cliente
-description: Crear clientlibrary para gestionar el evento click del botón "Guardar y salir"
+description: Cree una biblioteca de cliente para gestionar el evento de clic del botón Guardar y salir
 feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
@@ -19,9 +19,9 @@ ht-degree: 6%
 
 # Crear biblioteca de cliente
 
-Crear [biblioteca de cliente](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=es) que incluye el código para invocar el método `doAjaxSubmitWithFileAttachment` del `guideBridge` API en el evento click del botón identificado por la clase CSS **savebutton**.  Pasamos los datos del formulario adaptable, `fileMap`y `mobileNumber` al extremo que escucha en `**/bin/storeafdatawithattachments`
+Crear [biblioteca del cliente](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=es) que incluirá el código para invocar el método `doAjaxSubmitWithFileAttachment` de la `guideBridge` API en el evento &quot;click&quot; del botón identificado por la clase CSS **savebutton**.  Pasamos los datos del formulario adaptable, `fileMap`, y el `mobileNumber` al extremo que escucha en `**/bin/storeafdatawithattachments`
 
-Una vez guardados los datos del formulario, se genera un identificador de aplicación único que se presenta al usuario en un cuadro de diálogo. Al descartar el cuadro de diálogo, el usuario recibe el formulario que le permite recuperar el formulario adaptable guardado con el identificador de aplicación único.
+Una vez guardados los datos del formulario, se genera un ID de aplicación único que se presenta al usuario en un cuadro de diálogo. Al cerrar el cuadro de diálogo, el usuario se dirige al formulario, que le permite recuperar el formulario adaptable guardado mediante el ID de aplicación único.
 
 ```java
 $(document).ready(function () {
@@ -67,10 +67,10 @@ $(document).ready(function () {
 ```
 
 >[!NOTE]
-> Hemos usado [biblioteca javascript de bootbox](http://bootboxjs.com/examples.html) cuadro de diálogo para mostrar
+> Hemos utilizado [biblioteca javascript de bootbox](http://bootboxjs.com/examples.html) para mostrar el cuadro de diálogo
 
 Las bibliotecas de cliente utilizadas en este ejemplo pueden ser [descargado desde aquí](assets/client-libraries.zip)
 
 ## Pasos siguientes
 
-[Verificar usuarios con servicio OTP](./verify-users-with-otp.md)
+[Verificación de usuarios con el servicio OTP](./verify-users-with-otp.md)

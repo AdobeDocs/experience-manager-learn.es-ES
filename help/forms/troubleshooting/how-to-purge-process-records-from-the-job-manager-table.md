@@ -1,5 +1,5 @@
 ---
-title: Cómo purgar registros de proceso de la base de datos de Job Manager
+title: Depuración de registros de proceso de la base de datos de Job Manager
 description: Configurar la depuración de procesos de registros de la base de datos de Job Manager
 type: Troubleshooting
 role: Developer
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# Cómo purgar registros de proceso del Administrador de trabajos
+# Depuración de registros de proceso del Administrador de trabajos
 
-*Este vídeo muestra los pasos para depurar registros de proceso del Administrador de trabajos.*
+*Este vídeo muestra los pasos para purgar registros de proceso del Administrador de trabajos.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335577?quality=12&learn=on)

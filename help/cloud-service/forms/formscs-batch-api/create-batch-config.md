@@ -1,6 +1,6 @@
 ---
-title: Configuración de datos por lotes
-description: Configuración de datos por lotes
+title: Configurar la configuración de datos por lotes
+description: Configurar la configuración de datos por lotes
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -16,17 +16,17 @@ ht-degree: 12%
 
 ---
 
-# Crear configuración de lote
+# Crear configuración por lotes
 
 Para utilizar un API por lotes, cree una configuración por lotes y realice una ejecución basada en esa configuración. El siguiente vídeo muestra una demostración de la creación de la configuración por lotes mediante la API
 
 >[!NOTE]
->Asegúrese de que el usuario AEM pertenece a ```forms-users``` para realizar llamadas de API.
+>AEM Asegúrese de que el usuario de la pertenezca a ```forms-users``` para realizar llamadas de API.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/340241?quality=12&learn=on)
 
-## Crear configuración de lote
+## Crear configuración por lotes
 
 El siguiente es el punto final del POST para crear la configuración por lotes
 
@@ -48,9 +48,9 @@ La siguiente es la configuración mínima que debe especificarse al crear la con
 }
 ```
 
-## Comprobar configuración de lote
+## Verificar configuración del lote
 
-Para comprobar que la configuración del lote se ha creado correctamente, puede realizar una llamada de solicitud de GET al siguiente extremo
+Para comprobar que la configuración por lotes se ha creado correctamente, puede realizar una llamada de solicitud de GET al siguiente extremo
 
 
 ```xml

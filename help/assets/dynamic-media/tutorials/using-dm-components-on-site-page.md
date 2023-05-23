@@ -1,6 +1,6 @@
 ---
-title: Uso de los componentes principales de Dynamic Media
-description: Los pasos utilizan componentes de Dynamic Media en la página Sitios
+title: Uso de componentes principales de Dynamic Media
+description: Pasos para utilizar los componentes de Dynamic Media en la página Sitios
 role: Developer
 level: Intermediate
 version: Cloud Service
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# Uso de los componentes principales de Dynamic Media
+# Uso de componentes principales de Dynamic Media
 
-Este vídeo explica el proceso de uso de los componentes principales activados por Dynamic Media en una página web de AEM Sites.
+Este vídeo muestra el proceso de uso de los componentes principales habilitados para Dynamic Media en una página web de AEM Sites.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335461?quality=12&learn=on)

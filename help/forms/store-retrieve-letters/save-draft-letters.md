@@ -1,6 +1,6 @@
 ---
-title: Guardar y recuperar letras de borrador
-description: Obtenga información sobre cómo guardar y recuperar letras de borrador
+title: Guardar y recuperar borradores de cartas
+description: Obtenga información sobre cómo guardar y recuperar borradores de cartas
 feature: Interactive Communication
 topics: development
 audience: developer
@@ -19,9 +19,9 @@ ht-degree: 0%
 
 ---
 
-# Guardar y recuperar letras de borrador
+# Guardar y recuperar borradores de cartas
 
-El siguiente código se utiliza para guardar la instancia de letra. Los metadatos de la instancia de la carta se almacenan en la variable _icrecluts_ tabla. Se genera y devuelve una cadena única (DraftID). Esta cadena única se utiliza para recuperar la instancia de letra guardada.
+El siguiente código se utiliza para guardar la instancia de carta. Los metadatos de la instancia de carta se almacenan en _borradores de tic_ tabla. Se genera y devuelve una cadena única (DraftID). Esta cadena única se utiliza para recuperar la instancia de carta guardada.
 
 ```java
 public String save(CCRDocumentInstance letterToSave) throws CCRDocumentException {
@@ -69,8 +69,8 @@ public String save(CCRDocumentInstance letterToSave) throws CCRDocumentException
 
 ## Obtener carta
 
-El siguiente código se escribió para recuperar el borrador de carta guardado.
-Para cargar instancias de carta guardadas, debe proporcionar el valor de borradorID. Basándonos en este IdBorrador consultamos la base de datos para obtener los metadatos adicionales sobre la carta. Se utiliza el mismo identificador de borrador para crear los datos de la carta leyendo el xml correspondiente del sistema de archivos. A continuación, se construye y devuelve un objeto CCRDocumentInstance.
+El siguiente código se escribió para recuperar el borrador de la carta guardada.
+Para cargar instancias de carta guardada, debe proporcionar el ID de borrador. En función de este ID de borrador, consultamos la base de datos para obtener los metadatos adicionales sobre la carta. El mismo DraftID se utiliza para crear los datos de la carta leyendo el xml correspondiente del sistema de archivos. A continuación, se construye y se devuelve un objeto CCRDocumentInstance.
 
 
 ```java
@@ -101,7 +101,7 @@ public CCRDocumentInstance get(String draftID) throws CCRDocumentException {
 
 ### Actualizar carta
 
-El siguiente código se utilizó para actualizar la instancia de letra guardada. Los datos de la carta actualizada se escriben en el sistema de archivos utilizando el id. de la carta.
+El siguiente código se utilizó para actualizar la instancia de carta guardada. Los datos de la carta actualizada se escriben en el sistema de archivos mediante el ID de la carta.
 
 ```java
 public void update(CCRDocumentInstance letterInstanceToUpdate) throws CCRDocumentException {
@@ -120,10 +120,10 @@ public void update(CCRDocumentInstance letterInstanceToUpdate) throws CCRDocumen
     }
 ```
 
-### Obtener todas las letras guardadas
+### Obtener todas las cartas guardadas
 
-AEM Forms no proporciona ninguna interfaz de usuario predeterminada para enumerar las letras guardadas. Para este artículo presento las instancias de letras guardadas en formato tabular usando un formulario adaptable.
-Puede personalizar la consulta para recuperar las instancias de letras guardadas. En este ejemplo, estoy consultando la instancia de carta guardada por &quot;admin&quot;.
+AEM Forms no proporciona ninguna interfaz de usuario predeterminada para enumerar las cartas guardadas. Para este artículo, enumere las instancias de carta guardadas en formato tabular mediante un formulario adaptable.
+Puede personalizar la consulta para recuperar las instancias de carta guardadas. En este ejemplo, estoy consultando la instancia de carta guardada por &quot;admin&quot;.
 
 ```java
     public List < CCRDocumentInstance > getAll(String arg0, Date arg1, Date arg2, Map < String, Object > arg3) throws CCRDocumentException {
@@ -170,4 +170,4 @@ Puede personalizar la consulta para recuperar las instancias de letras guardadas
 
 ### Proyecto Eclipse
 
-El proyecto eclipse con implementación de muestra puede ser [descargado desde aquí](assets/icdrafts-eclipse-project.zip)
+El proyecto Eclipse con implementación de muestra puede ser [descargado desde aquí](assets/icdrafts-eclipse-project.zip)

@@ -1,5 +1,5 @@
 ---
-title: 'Uso de Adobe Cloud Manager: Canalización que no es de producción de CI/CD'
+title: 'Uso de Adobe Cloud Manager: canalización de no producción de CI/CD'
 description: 'Las canalizaciones de CI/CD que no son de producción se dividen en dos categorías: canalizaciones de calidad de código y canalizaciones de implementación. La calidad del código canaliza todo el código de una rama Git para crearlo y evaluarlo con el análisis de calidad del código de Cloud Manager. Las canalizaciones de implementación admiten la implementación automatizada de código desde el repositorio Git a cualquier entorno que no sea de producción, es decir, cualquier entorno de AEM aprovisionado que no sea de fase o producción.'
 topics: Administration
 audience: administrator
@@ -19,7 +19,7 @@ ht-degree: 93%
 
 ---
 
-# Uso de Adobe Cloud Manager: Canalización de producción de CI/CD {#using-adobe-cloud-manager-ci-cd-production-pipeline}
+# Uso de Adobe Cloud Manager: canalización de producción de CI/CD {#using-adobe-cloud-manager-ci-cd-production-pipeline}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_devops_nonprodpipeline"

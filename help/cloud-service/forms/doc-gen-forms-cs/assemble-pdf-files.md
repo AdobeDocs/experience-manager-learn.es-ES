@@ -1,6 +1,6 @@
 ---
-title: Agrupar archivos PDF
-description: Utilice la operación invokeDDX para manipular archivos pdf.
+title: Montar archivos de PDF
+description: Utilice la operación invokeDDX para manipular los archivos PDF.
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -16,12 +16,12 @@ ht-degree: 0%
 
 ---
 
-# Manipulación de archivos de PDF mediante el extremo DDX de invocación
+# Manipular archivos de PDF mediante el extremo DDX de invocación
 
 
-El siguiente paso es hacer una llamada de POST HTTP al extremo con los parámetros necesarios. La plantilla y los archivos de datos se proporcionan como archivos de recursos. Las propiedades del pdf generado se especifican mediante el parámetro de la opción en la solicitud. La propiedad embedFonts se utiliza para incrustar fuentes personalizadas en el pdf generado. Siga [esta documentación](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-set-up.html) para implementar fuentes personalizadas en la instancia de nube de Forms. Las propiedades se especifican en el archivo de recursos options.json . Desde entonces, el punto final tiene autenticación basada en tokens, pasamos el token de acceso en el encabezado de la solicitud.
+El siguiente paso es realizar una llamada del POST HTTP al extremo con los parámetros necesarios. La plantilla y los archivos de datos se proporcionan como archivos de recursos. Las propiedades del PDF generado se especifican mediante el parámetro de la opción en la solicitud. La propiedad embedFonts se utiliza para incrustar fuentes personalizadas en el PDF generado. Siga por favor [esta documentación](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-set-up.html) para implementar fuentes personalizadas en la instancia de nube de Forms. Las propiedades se especifican en el archivo de recursos options.json. Desde, el punto final tiene autenticación basada en token. Pasamos el token de acceso en el encabezado de la solicitud.
 
-El siguiente código se utilizó para generar pdf al combinar datos con la plantilla
+El siguiente código se utilizó para generar el PDF combinando datos con la plantilla
 
 ```java
 public class DocumentGeneration

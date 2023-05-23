@@ -1,6 +1,6 @@
 ---
-title: Acuerdo de alquiler con 2 firmantes
-description: Acuerdo de alquiler con 2 firmantes. En el vídeo se explican los distintos pasos necesarios para configurar un formulario adaptable con 2 firmantes.
+title: Contrato de alquiler con 2 firmantes
+description: Contrato de alquiler con 2 firmantes. En el vídeo se explican los distintos pasos necesarios para configurar un formulario adaptable con 2 firmantes.
 feature: Adaptive Forms,Acrobat Sign
 thumbnail: 39294.jpg
 kt: 6071
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 ---
 
-# Acuerdo de alquiler con 2 firmantes
+# Contrato de alquiler con 2 firmantes
 
 En el vídeo se explican los distintos pasos necesarios para configurar un formulario adaptable con 2 firmantes.
 
@@ -24,4 +24,4 @@ En el vídeo se explican los distintos pasos necesarios para configurar un formu
 Los recursos relacionados con este vídeo se pueden descargar desde los siguientes vínculos
 
 * [Plantilla de formulario adaptable](assets/tenancy-agreement-template.zip)
-* [Formulario de contrato de arrendamiento](assets/rental-agreement-form.zip)
+* [Formulario de contrato de inquilino](assets/rental-agreement-form.zip)

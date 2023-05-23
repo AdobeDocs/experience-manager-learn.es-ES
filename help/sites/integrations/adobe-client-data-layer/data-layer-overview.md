@@ -1,5 +1,5 @@
 ---
-title: Uso de la capa de datos del cliente de Adobe con AEM componentes principales
+title: Uso de la capa de datos del cliente de Adobe AEM con los componentes principales de
 description: La capa de datos del cliente de Adobe presenta un método estándar para recopilar y almacenar datos sobre la experiencia de un visitante en una página web y, a continuación, facilitar el acceso a estos datos. La capa de datos del cliente de Adobe no depende de la plataforma, pero está completamente integrada en los componentes principales para su uso con AEM.
 topic: Integrations
 feature: Adobe Client Data Layer, Core Components
@@ -11,12 +11,12 @@ last-substantial-update: 2021-01-11T00:00:00Z
 exl-id: 066693b7-2b87-45e8-93ec-8bd09a7c263e
 source-git-commit: 99b3ecf7823ff9a116c47c88abc901f8878bbd7a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '783'
+ht-degree: 8%
 
 ---
 
-# Uso de la capa de datos del cliente de Adobe con AEM componentes principales {#overview}
+# Uso de la capa de datos del cliente de Adobe AEM con los componentes principales de {#overview}
 
 La capa de datos del cliente de Adobe presenta un método estándar para recopilar y almacenar datos sobre la experiencia de un visitante en una página web y, a continuación, facilitar el acceso a estos datos. La capa de datos del cliente de Adobe no depende de la plataforma, pero está completamente integrada en los componentes principales para su uso con AEM.
 
@@ -24,24 +24,24 @@ La capa de datos del cliente de Adobe presenta un método estándar para recopil
 
 >[!NOTE]
 >
-> ¿Desea habilitar la capa de datos del cliente de Adobe en su sitio AEM? [Consulte las instrucciones aquí](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation).
+> ¿Desea habilitar la capa de datos del cliente de Adobe AEM en el sitio de la? [Consulte las instrucciones aquí](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation).
 
-## Explorar la capa de datos
+## Exploración de la capa de datos
 
-Puede hacerse una idea de la funcionalidad integrada de la capa de datos del cliente de Adobe con las herramientas para desarrolladores del navegador y de la lista de [Sitio de referencia WKND](https://wknd.site/us/en.html).
+Puede hacerse una idea de la funcionalidad integrada de la capa de datos del cliente de Adobe con solo utilizar las herramientas para desarrolladores de su explorador y el [Sitio de referencia de WKND](https://wknd.site/us/en.html).
 
 >[!NOTE]
 >
-> Capturas de pantalla tomadas del navegador Chrome.
+> Capturas de pantalla a continuación tomadas desde el navegador Chrome.
 
 1. Vaya a [https://wknd.site/us/en.html](https://wknd.site/us/en.html)
-1. Abra las herramientas para desarrolladores e introduzca el siguiente comando en la sección **Consola**:
+1. Abra las herramientas para desarrolladores e introduzca el siguiente comando en la **Consola**:
 
    ```js
    window.adobeDataLayer.getState();
    ```
 
-   Para ver el estado actual de la capa de datos en un sitio AEM, inspeccione la respuesta. Debería ver información sobre la página y los componentes individuales.
+   AEM Para ver el estado actual de la capa de datos en un sitio de datos, compruebe la respuesta de un sitio de datos en el que se haya realizado una inspección. Debería ver información sobre la página y los componentes individuales.
 
    ![Respuesta de capa de datos de Adobe](assets/data-layer-state-response.png)
 
@@ -58,7 +58,7 @@ Puede hacerse una idea de la funcionalidad integrada de la capa de datos del cli
    });
    ```
 
-1. Ejecutar el comando `adobeDataLayer.getState()` y busque la entrada para `training-data`.
+1. Ejecute el comando `adobeDataLayer.getState()` de nuevo y busque la entrada para `training-data`.
 1. A continuación, añada un parámetro de ruta para devolver solo el estado específico de un componente:
 
    ```js
@@ -69,7 +69,7 @@ Puede hacerse una idea de la funcionalidad integrada de la capa de datos del cli
 
 ## Uso de eventos
 
-Se recomienda almacenar en déclencheur cualquier código personalizado basado en un evento de la capa de datos. A continuación, explore la posibilidad de registrar y escuchar diferentes eventos.
+Se recomienda almacenar en déclencheur cualquier código personalizado basado en un evento de la capa de datos. A continuación, explore cómo registrar y escuchar diferentes eventos.
 
 1. Introduzca el siguiente método de ayuda en la consola:
 
@@ -90,13 +90,13 @@ Se recomienda almacenar en déclencheur cualquier código personalizado basado e
    }
    ```
 
-   El código anterior inspecciona el `event` y utiliza la variable `adobeDataLayer.getState` para obtener el estado actual del objeto que activó el evento. A continuación, el método de ayuda inspecciona la variable `filter` y solo si la variable `dataObject` cumple los criterios de filtro que se devuelven.
+   El código anterior inspecciona el `event` y utiliza el `adobeDataLayer.getState` para obtener el estado actual del objeto que activó el evento. A continuación, el método de ayuda inspecciona el `filter` y solo si el actual `dataObject` cumple los criterios de filtro que se devuelven.
 
    >[!CAUTION]
    >
-   > Es importante **not** para actualizar el explorador a lo largo de este ejercicio, de lo contrario se pierde el JavaScript de la consola.
+   > Es importante **no** para actualizar el explorador durante este ejercicio; de lo contrario, se pierde el JavaScript de la consola.
 
-1. A continuación, introduzca un controlador de eventos al que se llama cuando se **Teaser** se muestra dentro de un **Carrusel**.
+1. A continuación, introduzca un controlador de eventos al que se llame cuando **Teaser** el componente se muestra dentro de un **Carrusel**.
 
    ```js
    function teaserShownHandler(event) {
@@ -108,9 +108,9 @@ Se recomienda almacenar en déclencheur cualquier código personalizado basado e
    }
    ```
 
-   La variable `teaserShownHandler` llama a la función `getDataObjectHelper` y pasa un filtro de `wknd/components/teaser` como el `@type` para filtrar eventos activados por otros componentes.
+   El `teaserShownHandler` llama a la función `getDataObjectHelper` y pasa un filtro de `wknd/components/teaser` como el `@type` para filtrar eventos activados por otros componentes.
 
-1. A continuación, inserte un detector de eventos en la capa de datos para detectar la `cmp:show` evento.
+1. A continuación, inserte un detector de eventos en la capa de datos para detectar el `cmp:show` evento.
 
    ```js
    window.adobeDataLayer.push(function (dl) {
@@ -118,13 +118,13 @@ Se recomienda almacenar en déclencheur cualquier código personalizado basado e
    });
    ```
 
-   La variable `cmp:show` se activa mediante distintos componentes, como cuando se muestra una nueva diapositiva en la variable **Carrusel**, o cuando se selecciona una pestaña nueva en la variable **Tabulación** componente.
+   El `cmp:show` se activa por muchos componentes diferentes, como cuando se muestra una nueva diapositiva en la **Carrusel** o cuando se selecciona una nueva pestaña en la **Ficha** componente.
 
-1. En la página , cambie las diapositivas de carrusel y observe las instrucciones de la consola:
+1. En la página, alterne las diapositivas del carrusel y observe las instrucciones de la consola:
 
-   ![Alternar Carrusel y ver el detector de eventos](assets/teaser-console-slides.png)
+   ![Alternar carrusel y ver el detector de eventos](assets/teaser-console-slides.png)
 
-1. Para dejar de escuchar el `cmp:show` , elimine el detector de eventos de la capa de datos
+1. Para dejar de escuchar el `cmp:show` evento, elimine el detector de eventos de la capa de datos
 
    ```js
    window.adobeDataLayer = window.adobeDataLayer || [];
@@ -133,9 +133,9 @@ Se recomienda almacenar en déclencheur cualquier código personalizado basado e
    });
    ```
 
-1. Vuelva a la página y active las diapositivas de carrusel. Observe que no se registran más instrucciones y que el evento no se está escuchando.
+1. Vuelva a la página y cambie las diapositivas del carrusel. Observe que no se registran más instrucciones y que el evento no se escucha.
 
-1. A continuación, cree un controlador de eventos al que se llame cuando se active el evento que se muestra en la página:
+1. A continuación, cree un controlador de eventos al que se llame cuando se active el evento Página mostrada:
 
    ```js
    function pageShownHandler(event) {
@@ -147,9 +147,9 @@ Se recomienda almacenar en déclencheur cualquier código personalizado basado e
    }
    ```
 
-   Observe que el tipo de recurso `wknd/components/page` se utiliza para filtrar el evento.
+   Observe que el tipo de recurso `wknd/components/page` para filtrar el evento.
 
-1. A continuación, inserte un detector de eventos en la capa de datos para detectar la `cmp:show` , llamando a la función `pageShownHandler`.
+1. A continuación, inserte un detector de eventos en la capa de datos para detectar el `cmp:show` evento, llamar a `pageShownHandler`.
 
    ```js
    window.adobeDataLayer = window.adobeDataLayer || [];
@@ -158,20 +158,20 @@ Se recomienda almacenar en déclencheur cualquier código personalizado basado e
    });
    ```
 
-1. Debería ver inmediatamente una sentencia de consola activada con los datos de página:
+1. Debería ver inmediatamente una instrucción de consola activada con los datos de la página:
 
-   ![Datos de visualización de página](assets/page-show-console-data.png)
+   ![Página para mostrar datos](assets/page-show-console-data.png)
 
-   La variable `cmp:show` para la página se activa cada vez que se carga la página en la parte superior de la página. Podría preguntar, ¿por qué se activó el controlador de eventos cuando la página ya se ha cargado?
+   El `cmp:show` el evento de la página se activa cada vez que se carga la página en la parte superior de la misma. Podría preguntar, ¿por qué se activó el controlador de eventos cuando claramente la página ya se ha cargado?
 
-   Una de las características únicas de la capa de datos del cliente de Adobe es que puede registrar oyentes de eventos **before** o **after** la capa de datos se ha inicializado, ayuda a evitar las condiciones de carrera.
+   Una de las características únicas de la capa de datos del cliente de Adobe es que puede registrar detectores de eventos **antes** o **después** Una vez inicializada la capa de datos, ayuda a evitar las condiciones de carrera.
 
-   La capa de datos mantiene una matriz de cola de todos los eventos que se han producido en secuencia. De forma predeterminada, la capa de datos déclencheur las llamadas de retorno de eventos para los eventos que se produjeron en la variable **pasado** y los eventos en la variable **futuro**. Es posible filtrar los eventos del pasado o del futuro. [Encontrará más información en la documentación](https://github.com/adobe/adobe-client-data-layer/wiki#addeventlistener).
+   La capa de datos mantiene una matriz de colas de todos los eventos que se han producido en secuencia. La capa de datos almacenará en déclencheur de forma predeterminada las llamadas de retorno de eventos para los eventos que se produjeron en la **pasado** y eventos en la **futuro**. Es posible filtrar los eventos del pasado o del futuro. [Encontrará más información en la documentación](https://github.com/adobe/adobe-client-data-layer/wiki#addeventlistener).
 
 
 ## Pasos siguientes
 
-Hay dos opciones para continuar aprendiendo, primero, consulte la [recopilar datos de página y enviarlos a Adobe Analytics](../analytics/collect-data-analytics.md) tutorial que muestra el uso de la capa de datos del cliente de Adobe. La segunda opción es, para aprender a [Personalización de la capa de datos del cliente de Adobe con componentes AEM](./data-layer-customize.md)
+Hay dos opciones para seguir aprendiendo: la primera es consultar la [recopilar datos de página y enviarlos a Adobe Analytics](../analytics/collect-data-analytics.md) tutorial que muestra el uso de la capa de datos del cliente de Adobe. La segunda opción es, para aprender a [Personalización de la capa de datos del cliente de Adobe AEM con componentes de](./data-layer-customize.md)
 
 
 ## Recursos adicionales {#additional-resources}

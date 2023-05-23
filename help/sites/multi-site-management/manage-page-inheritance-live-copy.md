@@ -1,5 +1,5 @@
 ---
-title: Administración de los datos heredados de Live Copy en una página
+title: Administración de la herencia de Live Copy en una página
 description: Obtenga información sobre cómo administrar los datos heredados entre una Live Copy y su modelo a nivel de página
 feature: Language Copy, Multi Site Manager
 topics: localization, authoring, content-architecture
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ---
 
-# Administración de los datos heredados de Live Copy en una página {#manage-live-copy-page}
+# Administración de la herencia de Live Copy en una página {#manage-live-copy-page}
 
-Aprenda a administrar los datos heredados entre una Live Copy y su modelo a nivel de página.
+Obtenga información sobre cómo administrar los datos heredados entre una Live Copy y su modelo a nivel de página.
 >[!VIDEO](https://video.tv.adobe.com/v/36679?quality=12&learn=on)

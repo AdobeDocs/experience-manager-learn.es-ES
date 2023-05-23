@@ -1,6 +1,6 @@
 ---
 title: Versiones
-description: Explore cómo AEM crea y mantiene versiones de recursos.
+description: AEM Explore cómo crea y mantiene versiones de recursos de forma.
 feature: Asset Management
 version: Cloud Service
 kt: 4671
@@ -19,6 +19,6 @@ ht-degree: 11%
 
 # Versiones
 
-Explore cómo AEM crea y mantiene versiones de recursos.
+AEM Explore cómo crea y mantiene versiones de recursos de forma.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32052?quality=12&learn=on)

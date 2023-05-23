@@ -1,6 +1,6 @@
 ---
 title: Cree una Live Copy
-description: Obtenga información sobre cómo crear una Live Copy para su sitio desde un modelo mediante el asistente de Creación de Live Copy .
+description: Obtenga información sobre cómo crear una Live Copy para su sitio desde un modelo mediante el asistente de Creación de Live Copy.
 feature: Language Copy, Multi Site Manager
 topics: localization, authoring, content-architecture
 audience: all
@@ -22,6 +22,6 @@ ht-degree: 17%
 
 # Cree una Live Copy {#create-livecopy}
 
-Obtenga información sobre cómo crear una Live Copy para su sitio desde un modelo mediante el asistente de Creación de Live Copy .
+Obtenga información sobre cómo crear una Live Copy para su sitio desde un modelo mediante el asistente de Creación de Live Copy.
 
 >[!VIDEO](https://video.tv.adobe.com/v/36677?quality=12&learn=on)

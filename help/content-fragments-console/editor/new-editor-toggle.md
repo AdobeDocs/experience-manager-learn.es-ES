@@ -1,6 +1,6 @@
 ---
 title: 'Nueva opción de editor: editor de fragmentos de contenido'
-description: Obtenga información sobre el nuevo editor , que le permite cambiar entre el editor predeterminado de fragmentos de contenido nuevo y el editor clásico sin esfuerzo.
+description: Obtenga información sobre el botón de alternancia Nuevo editor que le permite cambiar entre el editor predeterminado Nuevo fragmento de contenido y el editor clásico sin esfuerzo.
 version: Cloud Service
 feature: Content Fragments
 topic: Content Management

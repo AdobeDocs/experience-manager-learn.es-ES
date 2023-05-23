@@ -1,7 +1,7 @@
 ---
-title: Uso del componente Tabla en el documento de canal de impresión de AEM Forms
+title: Uso del componente Tabla en el documento del canal de impresión de AEM Forms
 seo-title: Using Table Component in AEM Forms Print Channel Document
-description: El siguiente vídeo muestra los pasos necesarios para utilizar el componente de tabla en comunicaciones interactivas para imprimir documentos de canal.
+description: El siguiente vídeo muestra los pasos necesarios para utilizar el componente de tabla en Interactive Communications para documentos del canal de impresión.
 feature: Interactive Communication
 topics: development
 audience: developer
@@ -20,29 +20,29 @@ ht-degree: 0%
 
 ---
 
-# Uso del componente Tabla en el documento de canal de impresión de AEM Forms {#using-table-component-in-aem-forms-print-channel-document}
+# Uso del componente Tabla en el documento del canal de impresión de AEM Forms {#using-table-component-in-aem-forms-print-channel-document}
 
-El siguiente vídeo muestra los pasos necesarios para utilizar el componente de tabla en comunicaciones interactivas para imprimir documentos de canal.
+El siguiente vídeo muestra los pasos necesarios para utilizar el componente de tabla en Interactive Communications para documentos del canal de impresión.
 
 >[!VIDEO](https://video.tv.adobe.com/v/27769?quality=12&learn=on)
 
-Las tablas se utilizan para mostrar los datos de forma tabular. Las filas de la tabla deben crecer o reducirse según los datos devueltos por el origen de datos. Para utilizar una tabla en un documento de canal de impresión, es necesario crear un archivo de diseño (archivo xdp) con AEM Forms Designer. En este archivo de diseño, se añade la tabla con el número necesario de columnas. Asegúrese de que el tipo de objeto de campo de columna sea TextField o Numeric Field según sus necesidades. Para cada una de las columnas, los campos se aseguran de que el enlace de datos esté establecido en Usar nombre.
+Las tablas se utilizan para mostrar datos en forma de tabla. Las filas de la tabla deben aumentar o reducirse según los datos devueltos por el origen de datos. Para utilizar una tabla en un documento del canal de impresión, se debe crear un archivo de diseño (archivo xdp) con AEM Forms Designer. En este archivo de diseño, agregamos la tabla con el número requerido de columnas. Asegúrese de que el tipo de objeto del campo de columna sea TextField o Numeric Field según sus necesidades. Para cada una de las columnas, los campos garantizan que el enlace de datos esté configurado como Usar nombre.
 
 >[!NOTE]
 >
->Para que la tabla sea dinámica, asegúrese de que ha marcado la fila como repetida.
+>Para hacer que la tabla sea dinámica, asegúrese de haber marcado la fila como repetida.
 
-**Pruébelo en su propio servidor**
+**Probar en su propio servidor**
 
-* [Descargue y descomprima el archivo de recursos en su disco duro](assets/usingtablesinprintchannel.zip)
+* [Descargue y descomprima el archivo de recursos en el disco duro](assets/usingtablesinprintchannel.zip)
 
-* Importar los dos archivos zip en AEM mediante el administrador de paquetes
+* AEM Importe los dos archivos zip a mediante el administrador de paquetes de la interfaz de usuario de
 
-* En los recursos asociados con este artículo se incluyen los siguientes:
+* Los recursos asociados a este artículo incluyen lo siguiente:
 
    * Fragmento de diseño
 
-   * Modelo de datos del formulario
+   * Modal de datos de formulario
 
    * Documento de comunicación interactiva
    * sampleretirementaccountdata.json
@@ -50,6 +50,6 @@ Las tablas se utilizan para mostrar los datos de forma tabular. Las filas de la 
 * Abra el documento de comunicación interactiva en [modo de edición](http://localhost:4502/editor.html/content/forms/af/401kstatement/tablesinprintdocument/channels/print.html).
 
 * Agregue el fragmento de diseño TableDemo a la sección de contribuciones.
-* Enlace las celdas de la tabla a los elementos correspondientes del Modelo de datos de formulario, como se muestra en el vídeo
+* Enlace las celdas de la tabla a los elementos adecuados del modelo de datos de formulario, tal como se muestra en el vídeo
 
 * Vista previa del documento de comunicación interactiva con el archivo de datos json de ejemplo que se le ha proporcionado

@@ -1,6 +1,6 @@
 ---
 title: Exportación de datos de formulario enviados en formato CSV
-description: Exportar datos de formulario adaptable enviados en formato CSV
+description: Exportar los datos de los formularios adaptables enviados en formato CSV
 feature: Adaptive Forms
 topics: development
 audience: developer
@@ -14,44 +14,44 @@ last-substantial-update: 2020-07-07T00:00:00Z
 source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
 source-wordcount: '386'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # Introducción
 
-Los clientes suelen querer exportar los datos del formulario enviado en formato CSV. Este artículo resaltará los pasos necesarios para exportar los datos del formulario en formato CSV. Este artículo supone que los envíos de formularios se almacenan en la tabla RDBMS. La siguiente captura de pantalla detalla la estructura de tabla mínima necesaria para almacenar los envíos de formularios.
+Normalmente, los clientes desean exportar los datos del formulario enviado en formato CSV. Este artículo resaltará los pasos necesarios para exportar los datos del formulario en formato CSV. Este artículo supone que los envíos de formularios se almacenan en la tabla RDBMS. La siguiente captura de pantalla detalla la estructura mínima de tabla necesaria para almacenar los envíos de formularios.
 
 >[!NOTE]
 >
->Este ejemplo solo funciona con Forms adaptable no basado en el esquema o el modelo de datos de formulario
+>Este ejemplo solo funciona con Forms adaptable no basado en esquema o modelo de datos de formulario
 
-![Estructura de la tabla](assets/tablestructure.PNG)
-Como puede ver, el nombre del esquema es un ejemplo.Dentro de este esquema está la tabla de envíos con las siguientes columnas definidas
+![Estructura de tabla](assets/tablestructure.PNG)
+Como puede ver, el nombre del esquema es aemformstutorial. Dentro de este esquema está la tabla de envíos con las siguientes columnas definidas
 
-* formdata: Esta columna contiene los datos de formulario enviados
+* formdata: esta columna contiene los datos de formulario enviados
 * formname: Esta columna contiene el nombre del formulario enviado
-* id: Esta es la clave principal y se configura en incremento automático
+* id: Esta es la clave principal y se establece en incremento automático
 
-El nombre de tabla y los nombres de dos columnas se exponen como propiedades de configuración OSGi como se muestra en la captura de pantalla siguiente:
+El nombre de la tabla y los nombres de dos columnas se exponen como propiedades de configuración OSGi, como se muestra en la captura de pantalla siguiente:
 ![osgi-configuration](assets/configuration.PNG)
-El código lee estos valores y construye la consulta SQL apropiada para ejecutar. Por ejemplo, la siguiente consulta se ejecuta en función de los valores anteriores
+El código lee estos valores y construye la consulta SQL adecuada para ejecutar. Por ejemplo, la siguiente consulta se ejecuta en función de los valores anteriores
 
 `SELECT formdata FROM aemformstutorial.formsubmissions where formname=timeoffrequestform`
 
 En la consulta anterior, el nombre del formulario (timeoffrequestform) se pasa como parámetro de solicitud al servlet.
 
-## **Creación del servicio OSGi**
+## **Crear servicio OSGi**
 
 El siguiente servicio OSGI se creó para exportar los datos enviados en formato CSV.
 
-* Línea 37: Estamos accediendo a la fuente de datos agrupada de la conexión Apache Sling.
+* Línea 37: Estamos accediendo a la fuente de datos obtenida de una conexión Apache Sling.
 
-* Línea 89: Este es el punto de entrada al servicio.El método `getCSVFile(..)` toma formName como parámetro de entrada y obtiene los datos enviados pertenecientes al nombre de formulario dado.
+* Línea 89: Este es el punto de entrada al servicio. El método `getCSVFile(..)` toma formName como parámetro de entrada y obtiene los datos enviados que pertenecen al nombre de formulario dado.
 
 >[!NOTE]
 >
->El código supone que ha definido la conexión agrupada DataSource denominada &quot;aemformstutorial&quot; en la Consola Web Felix. El código también supone que tiene un esquema en la base de datos denominado aemformstutorial
+>El código supone que se ha definido una conexión agrupada de DataSource denominada &quot;aemformstutorial&quot; en la Consola web Felix. El código también supone que hay un esquema en la base de datos llamado aemformstutorial
 
 ```java
 package com.aemforms.storeandexport.core;
@@ -267,7 +267,7 @@ public @interface StoreAndExportConfiguration {
 
 ## Servlet
 
-El siguiente es el código de servlet que invoca la variable `getCSVFile(..)` método del servicio. El servicio devuelve el objeto StringBuffer que luego se retransmite a la aplicación que realiza la llamada
+El siguiente es el código de servlet que invoca el `getCSVFile(..)` método del servicio. El servicio devuelve el objeto StringBuffer que, a continuación, se transmite de nuevo a la aplicación que realiza la llamada
 
 ```java
 package com.aemforms.storeandexport.core.servlets;
@@ -307,8 +307,8 @@ public class StreamCSVFile extends SlingAllMethodsServlet {
 }
 ```
 
-### Implementar en el servidor
+### Implementación en el servidor
 
-* Importe el [Archivo SQL](assets/formsubmissions.sql) en el servidor MySQL utilizando MySQL Workbench. Esto crea un esquema denominado **aemformstutorial** y tabla llamada **presentaciones** con algunos datos de ejemplo.
-* Implementación [Paquete OSGi](assets/store-export.jar) uso de la consola web Felix
-* [Para obtener los envíos de TimeOffRequest](http://localhost:4502/bin/streamformdata?formName=timeoffrequestform). Debería obtener un archivo CSV transmitido de nuevo a usted.
+* Importe el [Archivo SQL](assets/formsubmissions.sql) en el servidor MySQL mediante MySQL Workbench. Esto crea un esquema llamado **aemformstutorial** y una tabla llamada **formsubmissions** con algunos datos de ejemplo.
+* Implementar [Paquete OSGi](assets/store-export.jar) uso de la consola web de Felix
+* [Para obtener envíos de TimeOffRequest](http://localhost:4502/bin/streamformdata?formName=timeoffrequestform). Debería recibir un archivo CSV transmitido de vuelta a usted.

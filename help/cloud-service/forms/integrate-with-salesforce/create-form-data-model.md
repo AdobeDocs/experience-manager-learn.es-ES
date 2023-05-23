@@ -1,6 +1,6 @@
 ---
-title: Creación de un modelo de datos de formulario basado en el origen de datos de Salesforce
-description: Crear modelo de datos de formulario respaldado por el origen de datos RESTful
+title: Crear un modelo de datos de formulario basado en la fuente de datos de Salesforce
+description: Crear un modelo de datos de formulario respaldado por una fuente de datos RESTful
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
@@ -20,6 +20,6 @@ ht-degree: 10%
 
 # Crear modelo de datos de formulario
 
-Creación de un modelo de datos de formulario basado en el origen de datos configurado en el paso anterior
+Crear un modelo de datos de formulario basado en la fuente de datos configurada en el paso anterior
 
 >[!VIDEO](https://video.tv.adobe.com/v/331756?quality=12&learn=on)

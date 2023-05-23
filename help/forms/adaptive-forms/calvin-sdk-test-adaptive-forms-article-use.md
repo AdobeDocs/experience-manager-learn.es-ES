@@ -1,6 +1,6 @@
 ---
-title: Uso de pruebas automatizadas con AEM Forms adaptable
-description: Pruebas automatizadas de Forms adaptable mediante el SDK de Calvin
+title: AEM Uso de pruebas automatizadas con Forms adaptable de
+description: Pruebas automatizadas de Forms adaptable con el SDK de Calvin
 feature: Adaptive Forms
 doc-type: article
 activity: develop
@@ -13,15 +13,15 @@ last-substantial-update: 2020-09-10T00:00:00Z
 source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
 source-wordcount: '443'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
-# Uso de pruebas automatizadas con AEM Forms adaptable {#using-automated-tests-with-aem-adaptive-forms}
+# AEM Uso de pruebas automatizadas con Forms adaptable de {#using-automated-tests-with-aem-adaptive-forms}
 
-Pruebas automatizadas de Forms adaptable mediante el SDK de Calvin
+Pruebas automatizadas de Forms adaptable con el SDK de Calvin
 
-El SDK de Calvin es una API de utilidad para que los desarrolladores de Forms adaptables prueben el Forms adaptable. El SDK de Calvin se basa en [Marco de pruebas de Hobbes.js](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es). El SDK de Calvin está disponible a partir de AEM Forms 6.3.
+El SDK de Calvin es una API de utilidad para que los desarrolladores de Forms adaptables prueben Forms adaptable. Calvin SDK se basa en el [Marco de pruebas de Hobbes.js](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es). El SDK de Calvin está disponible a partir de AEM Forms 6.3.
 
 En este tutorial, creará lo siguiente:
 
@@ -29,17 +29,17 @@ En este tutorial, creará lo siguiente:
 * El grupo de pruebas contendrá uno o más casos de prueba
 * Los casos de prueba contendrán una o más acciones
 
-## Introducción {#getting-started}
+## Primeros pasos {#getting-started}
 
-[Descargar e instalar los recursos mediante el Administrador de paquetes](assets/testingadaptiveformsusingcalvinsdk1.zip)El paquete contiene secuencias de comandos de ejemplo y varios Forms adaptables.Estos Forms adaptables se crean con la versión 6.3 de AEM Forms. Se recomienda crear nuevos formularios específicos de su versión de AEM Forms si está probando esto en AEM Forms 6.4 o superior. Los scripts de ejemplo muestran varias API de SDK de Calvin disponibles para probar Forms adaptable. Los pasos generales para probar AEM Adaptive Forms son:
+[Descargar e instalar los recursos mediante el administrador de paquetes](assets/testingadaptiveformsusingcalvinsdk1.zip)El paquete contiene secuencias de comandos de ejemplo y varios Forms adaptables. Estos Forms adaptables se crean con la versión 6.3 de AEM Forms. Se recomienda crear formularios nuevos específicos de la versión de AEM Forms si está probando esto en AEM Forms 6.4 o superior. Los scripts de ejemplo muestran varias API del SDK de Calvin disponibles para probar el Forms adaptable. AEM Los pasos generales para probar el Forms adaptable de la aplicación son:
 
-* Vaya al formulario que debe probarse
-* Definir el valor del campo
+* Desplácese hasta el formulario que necesite probar
+* Establecer el valor del campo
 * Enviar el formulario adaptable
 * Buscar mensajes de error
 
 Los scripts de ejemplo del paquete muestran todas las acciones anteriores.
-Exploremos el código de `mortgageForm.js`
+Vamos a explorar el código de `mortgageForm.js`
 
 ```javascript
 var mortgageFormTS = new hobs.TestSuite("Mortgage Form Test", {
@@ -51,8 +51,8 @@ var mortgageFormTS = new hobs.TestSuite("Mortgage Form Test", {
 El código anterior crea un nuevo grupo de pruebas.
 
 * El nombre de TestSuite en este caso es &#39; `Mortgage Form Test` &#39;.
-* Se proporciona la ruta absoluta en AEM al archivo js que contiene el grupo de pruebas.
-* El parámetro register cuando se establece en `true` &quot;, hace que Test Suite esté disponible en la interfaz de usuario de prueba.
+* AEM Se proporciona la ruta absoluta en la que se encuentra el archivo js, que contiene el grupo de pruebas, en el que se indica la ruta de acceso absoluta.
+* El parámetro register cuando se establece en &#39; `true` &quot;, hace que el grupo de pruebas esté disponible en la interfaz de usuario de prueba.
 
 ```javascript
 .addTestCase(new hobs.TestCase("Calculate amount to borrow")
@@ -65,26 +65,26 @@ El código anterior crea un nuevo grupo de pruebas.
 
 >[!NOTE]
 >
->Si está probando esta capacidad en AEM Forms 6.4 o superior, cree un nuevo formulario adaptable y utilícelo para realizar las pruebas.No se recomienda utilizar el formulario adaptable proporcionado con el paquete.
+>Si está probando esta capacidad en AEM Forms 6.4 o superior, cree un nuevo formulario adaptable y utilícelo para realizar las pruebas. No se recomienda utilizar el formulario adaptable que se proporciona con el paquete.
 
 Se pueden agregar casos de prueba al grupo de pruebas para ejecutarlos en un formulario adaptable.
 
-* Para añadir un caso de prueba a un grupo de pruebas, utilice el `addTestCase` método del objeto TestSuite.
-* La variable `addTestCase` toma un objeto TestCase como parámetro.
+* Para añadir un caso de prueba al grupo de pruebas, utilice el `addTestCase` método del objeto TestSuite.
+* El `addTestCase` toma un objeto TestCase como parámetro.
 * Para crear TestCase, utilice el `hobs.TestCase(..)` método.
 * Nota: El primer parámetro es el nombre del caso de prueba que aparecerá en la interfaz de usuario.
-* Una vez creado un caso de prueba, puede agregar acciones al caso de prueba.
+* Una vez que haya creado un caso de prueba, puede agregar acciones a dicho caso.
 * Acciones que incluyen `navigateTo`, `asserts.isTrue` se puede añadir como acciones al caso de prueba.
 
-## Ejecución de las pruebas automatizadas {#running-the-automated-tests}
+## Ejecución de pruebas automatizadas {#running-the-automated-tests}
 
-[Openthetestsuite](http://localhost:4502/libs/granite/testing/hobbes.html)Expanda Test Suite y ejecute las pruebas. Si todo se ejecuta correctamente, verá el siguiente resultado.
+[Openthetestsuite](http://localhost:4502/libs/granite/testing/hobbes.html)Expanda el grupo de pruebas y ejecute las pruebas. Si todo se ejecuta correctamente, verá el siguiente resultado.
 
 ![calvinsdk](assets/calvinimage.png)
 
 ## Pruebe los grupos de pruebas de ejemplo {#try-out-the-sample-test-suites}
 
-Como parte del paquete de muestra, hay tres grupos de pruebas adicionales. Puede probarlos incluyendo los archivos adecuados en el archivo js.txt de la biblioteca de clientes como se muestra a continuación:
+Como parte del paquete de muestra, hay tres grupos de pruebas adicionales. Puede probarlos incluyendo los archivos adecuados en el archivo js.txt de la biblioteca de cliente como se muestra a continuación:
 
 ```javascript
 #base=.

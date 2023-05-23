@@ -1,6 +1,6 @@
 ---
-title: Insertar datos adjuntos de formulario en la base de datos
-description: Inserte datos adjuntos de formulario en la base de datos mediante AEM flujo de trabajo.
+title: Insertar archivo adjunto de formulario en base de datos
+description: AEM Insertar archivo adjunto de formulario en la base de datos mediante flujo de trabajo de.
 feature: Adaptive Forms
 version: 6.5
 topic: Development
@@ -16,29 +16,29 @@ ht-degree: 1%
 
 ---
 
-# Inserción de datos adjuntos de formulario en la base de datos
+# Insertar datos adjuntos de formulario en la base de datos
 
-Este artículo explicará el caso de uso del almacenamiento de datos adjuntos de formularios en la base de datos MySQL.
+Este artículo explicará el caso de uso de almacenar datos adjuntos de formularios en la base de datos MySQL.
 
-Una solicitud habitual de los clientes es almacenar los datos de formulario capturados y el archivo adjunto de formulario en una tabla de la base de datos.
-Para lograr este caso de uso, se siguieron los siguientes pasos
+Una tarea común de los clientes es almacenar los datos de formulario capturados y los datos adjuntos del formulario en una tabla de la base de datos.
+Para llevar a cabo este caso de uso, se siguieron los siguientes pasos
 
-## Crear tabla de base de datos para guardar los datos del formulario y el archivo adjunto
+## Crear una tabla de base de datos para guardar los datos del formulario y los datos adjuntos
 
-Se ha creado una tabla denominada en todo el sitio para albergar los datos del formulario. Observe la imagen de tipo del nombre de columna **LONGBLOB** para almacenar el adjunto del formulario
+Se ha creado una tabla denominada nueva para contener los datos del formulario. Observe la imagen del nombre de la columna de tipo **LONGBLOB** para almacenar el archivo adjunto del formulario
 ![table-schema](assets/insert-picture-table.png)
 
 ## Crear modelo de datos de formulario
 
-Se creó un modelo de datos de formulario para comunicarse con la base de datos MySQL. Deberá crear lo siguiente
+Se creó un modelo de datos de formulario para comunicarse con la base de datos MySQL. Debe crear lo siguiente
 
-* [Fuente de datos JDBC en AEM](./data-integration-technical-video-setup.md)
+* [AEM Fuente de datos JDBC en el](./data-integration-technical-video-setup.md)
 * [Modelo de datos de formulario basado en la fuente de datos JDBC](./jdbc-data-model-technical-video-use.md)
 
 ## Crear flujo de trabajo
 
-Si configura el formulario adaptable para que se envíe a un flujo de trabajo AEM, tiene la opción de guardar los archivos adjuntos en un flujo de trabajo o guardar los archivos adjuntos en una carpeta específica de la carga útil. Para este caso de uso, es necesario guardar los archivos adjuntos en una variable de flujo de trabajo de tipo ArrayList of Document. Desde esta ArrayList necesitamos extraer el primer elemento e inicializar una variable de documento. Las variables de flujo de trabajo denominadas **listOfDocuments** y **employeePhoto** se han creado.
-Cuando se envía el formulario adaptable para almacenar en déclencheur el flujo de trabajo, un paso del flujo de trabajo inicializa la variable employeePhoto mediante la secuencia de comandos ECMA. El siguiente es el código de script ECMA
+AEM Al configurar el formulario adaptable para que se envíe a un flujo de trabajo de, tiene la opción de guardar los archivos adjuntos del formulario en una variable de flujo de trabajo o de guardarlos en una carpeta especificada debajo de la carga útil. Para este caso de uso, es necesario guardar los archivos adjuntos en una variable de flujo de trabajo de tipo ArrayList of Document. De esta ArrayList necesitamos extraer el primer elemento e inicializar una variable de documento. Las variables de flujo de trabajo denominadas **listOfDocuments** y **employeePhoto** se han creado.
+Cuando se envía el formulario adaptable al déclencheur del flujo de trabajo, un paso en el flujo de trabajo inicializa la variable employeePhoto mediante el script ECMA. El siguiente es el código de script ECMA
 
 ```javascript
 log.info("executing script now...");
@@ -53,7 +53,7 @@ metaDataMap.put("employeePhoto", employeePhoto);
 log.info("Employee Photo updated");
 ```
 
-El siguiente paso en el flujo de trabajo es insertar datos y el archivo adjunto de formulario en la tabla mediante el componente de servicio Invocar modelo de datos de formulario .
+El siguiente paso del flujo de trabajo es insertar datos y el archivo adjunto del formulario en la tabla mediante el componente de servicio Invocar modelo de datos de formulario.
 ![insert-pic](assets/fdm-insert-pic.png)
 [El flujo de trabajo completo con el script ecma de ejemplo se puede descargar desde aquí](assets/add-new-employee.zip).
 
@@ -62,5 +62,5 @@ El siguiente paso en el flujo de trabajo es insertar datos y el archivo adjunto 
 
 ## Crear formulario adaptable
 
-Cree el formulario adaptable basado en el modelo de datos de formulario creado en el paso anterior. Arrastre y suelte los elementos del modelo de datos de formulario en el formulario. Configure el envío del formulario para almacenar en déclencheur el flujo de trabajo y especifique las siguientes propiedades, como se muestra en la captura de pantalla siguiente
-![archivos adjuntos de formulario](assets/form-attachments.png)
+Cree el formulario adaptable en función del modelo de datos de formulario creado en el paso anterior. Arrastre y suelte los elementos del modelo de datos de formulario en el formulario. Configure el envío del formulario para almacenar en déclencheur el flujo de trabajo y especifique las siguientes propiedades, como se muestra en la captura de pantalla siguiente
+![form-attachments](assets/form-attachments.png)

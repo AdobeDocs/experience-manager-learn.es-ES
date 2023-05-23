@@ -1,7 +1,7 @@
 ---
-title: Uso de funciones reductoras en gráficos
+title: Uso de funciones de reducción en gráficos
 seo-title: Using Reducer Functions in AEM Forms - Charts
-description: Las funciones reductoras se utilizan para agregar o agrupar valores que se muestran en el gráfico. El siguiente vídeo recorre los pasos involucrados en el uso de funciones reductoras.
+description: Las funciones reductoras se utilizan para agregar o agrupar valores que se muestran en el gráfico. El siguiente vídeo muestra los pasos necesarios para utilizar las funciones reductoras.
 seo-description: Reducer functions are used to aggregate or group values that are displayed in the chart.The following video walks through the steps involved in using reducer functions.
 uuid: e9bd8bda-48ea-4a02-95c4-02aedafdb640
 discoiquuid: 6fef8341-8fd5-4d82-9f69-2b8be7cd22db
@@ -23,12 +23,12 @@ ht-degree: 0%
 
 ---
 
-# Uso de funciones reductoras en AEM Forms: gráficos{#using-reducer-functions-in-aem-forms-charts}
+# Uso de funciones de reducción en AEM Forms: gráficos{#using-reducer-functions-in-aem-forms-charts}
 
-Las funciones reductoras se utilizan para agregar o agrupar valores que se muestran en el gráfico.
+Las funciones de reducción se utilizan para agregar o agrupar valores que se muestran en el gráfico.
 
 
-Por ejemplo, podemos utilizar las funciones de reducción para mostrar el número de transacciones por categoría o mostrar el mayor gasto por categoría de los datos de ejemplo que se muestran a continuación
+Por ejemplo, podemos utilizar las funciones de reducción para mostrar el número de transacciones por categoría o mostrar el gasto más alto por categoría a partir de los datos de ejemplo que se muestran a continuación
 
 ```json
 [{

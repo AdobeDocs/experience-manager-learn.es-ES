@@ -1,6 +1,6 @@
 ---
 title: Integración de Adobe Experience Manager Forms como Cloud Service con Acrobat Sign
-description: Vídeo introductorio al curso sobre la integración de Forms CS con Acrobat Sign
+description: Vídeo de introducción al curso sobre la integración de Forms CS con Acrobat Sign
 solution: Experience Manager,Experience Manager Forms
 type: Documentation
 role: Developer
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ---
 
-# Vídeo introductorio
+# Vídeo de introducción
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/332706?quality=12&learn=on)

@@ -1,6 +1,6 @@
 ---
-title: Captura de volcados de subprocesos de una JVM en un servidor unix
-description: Pasos para capturar volcados de subprocesos de un proceso Java en un servidor unix
+title: Cómo capturar los volcados de hilos de una JVM en un servidor Unix
+description: Pasos para capturar los volcados de hilos de un proceso Java en un servidor Unix
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# Captura de volcados de subprocesos de una JVM en un servidor unix
+# Cómo capturar los volcados de hilos de una JVM en un servidor Unix
 
-*Este vídeo muestra los pasos para capturar volcados de memoria de una JVM en un servidor unix.*
+*Este vídeo explica los pasos para capturar los volcados de pila de una JVM en un servidor Unix.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335492?quality=12&learn=on)

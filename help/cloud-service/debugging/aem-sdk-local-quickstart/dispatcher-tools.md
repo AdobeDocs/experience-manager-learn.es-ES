@@ -1,40 +1,40 @@
 ---
 title: Depuración de herramientas de Dispatcher
-description: Las herramientas de Dispatcher proporcionan un entorno de servidor web Apache que se puede utilizar para simular AEM como Dispatcher del servicio de publicación de AEM de Cloud Services localmente. La depuración de los registros y el contenido de la caché de las herramientas de Dispatcher puede ser vital para garantizar que la aplicación de AEM end-to-end y las configuraciones de caché y seguridad de soporte sean correctas.
+description: AEM Las herramientas de Dispatcher proporcionan un entorno de servidor web Apache en contenedores que se puede utilizar para simular el uso de Dispatcher como Dispatcher de un servicio de publicación de AEM de Cloud Services localmente. AEM La depuración de los registros y el contenido de la caché de las herramientas de Dispatcher puede ser vital para garantizar que la aplicación de extremo a extremo y las configuraciones de caché y seguridad de soporte sean correctas.
 feature: Dispatcher
 kt: 5918
 topic: Development
 role: Developer
 level: Beginner, Intermediate
-source-git-commit: 0737cd2410b48dbaa9b6dfaaa27b854d44536f15
+exl-id: f0adf7a6-c7c2-449a-9fa5-402c54b812e5
+source-git-commit: 4b47daf82e27f6bea4be30e3cdd132f497f4c609
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 0%
 
 ---
 
-
 # Depuración de herramientas de Dispatcher
 
-Las herramientas de Dispatcher proporcionan un entorno de servidor web Apache que se puede utilizar para simular AEM como Dispatcher del servicio de publicación de AEM de Cloud Services localmente.
+AEM Las herramientas de Dispatcher proporcionan un entorno de servidor web Apache en contenedores que se puede utilizar para simular el uso de Dispatcher como Dispatcher de un servicio de publicación de AEM de Cloud Services localmente.
 
-La depuración de los registros y el contenido de la caché de las herramientas de Dispatcher puede ser vital para garantizar que la aplicación de AEM end-to-end y las configuraciones de caché y seguridad de soporte sean correctas.
+AEM La depuración de los registros y el contenido de la caché de las herramientas de Dispatcher puede ser vital para garantizar que la aplicación de extremo a extremo y las configuraciones de caché y seguridad de soporte sean correctas.
 
 >[!NOTE]
 >
->Dado que las herramientas de Dispatcher se basan en contenedores, cada vez que se reinicia, se destruyen los registros y el contenido de la caché anteriores.
+>Dado que las herramientas de Dispatcher se basan en contenedores, cada vez que se reinicia, se destruyen los registros anteriores y el contenido de la caché.
 
 ## Registros de herramientas de Dispatcher
 
-Los registros de herramientas de Dispatcher están disponibles a través del comando `stdout` o `bin/docker_run`, o con más detalle, disponibles en el contenedor de Docker en `/etc/https/logs`.
+Los registros de las herramientas de Dispatcher están disponibles a través de `stdout` o el `bin/docker_run` o con más detalles, disponible en el contenedor Docker en `/etc/https/logs`.
 
-Consulte [Registros de Dispatcher](./logs.md#dispatcher-logs) para obtener instrucciones sobre cómo acceder directamente a los registros del contenedor de Docker de las herramientas de Dispatcher.
+Consulte [Registros de Dispatcher](./logs.md#dispatcher-logs) para obtener instrucciones sobre cómo acceder directamente a los registros del contenedor Docker de las herramientas de Dispatcher.
 
 ## Caché de herramientas de Dispatcher
 
-### Acceso a los registros en el contenedor Docker
+### Acceder a los registros del contenedor Docker
 
-La caché de Dispatcher puede acceder directamente al contenedor Docker en ` /mnt/var/www/html`.
+Se puede acceder directamente a la caché de Dispatcher en el contenedor Docker en ` /mnt/var/www/html`.
 
 ```shell
 $ docker ps
@@ -52,9 +52,9 @@ $ docker exec -it <CONTAINER ID> /bin/sh
 /# exit
 ```
 
-### Copia de los registros de Docker al sistema de archivos local
+### Copiar los registros de Docker al sistema de archivos local
 
-Los registros de Dispatcher se pueden copiar desde el contenedor Docker en `/mnt/var/www/html` al sistema de archivos local para su inspección con sus herramientas favoritas. Tenga en cuenta que se trata de una copia puntual y no proporciona actualizaciones en tiempo real de la caché.
+Los registros de Dispatcher se pueden copiar desde el contenedor de Docker en `/mnt/var/www/html` al sistema de archivos local para su inspección con sus herramientas favoritas. Tenga en cuenta que se trata de una copia puntual y no proporciona actualizaciones en tiempo real a la caché.
 
 ```shell
 $ docker ps
@@ -66,4 +66,3 @@ CONTAINER ID        IMAGE                                       COMMAND         
 $ docker cp -L <CONTAINER ID>:/mnt/var/www/html cache 
 $ cd cache
 ```
-

@@ -1,6 +1,6 @@
 ---
 title: Uso de informes de transacciones en AEM Forms
-description: Los informes de transacciones de AEM Forms permiten mantener un recuento de todas las transacciones realizadas desde una fecha especificada en la implementación de AEM Forms.
+description: Los informes de transacciones de AEM Forms permiten mantener un recuento de todas las transacciones realizadas desde una fecha especificada en su implementación de AEM Forms.
 feature: Adaptive Forms
 version: 6.4,6.5
 topic: Development
@@ -11,41 +11,41 @@ last-substantial-update: 2019-03-20T00:00:00Z
 source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
 source-wordcount: '367'
-ht-degree: 1%
+ht-degree: 29%
 
 ---
 
 # Uso de informes de transacciones en AEM Forms{#using-transaction-reporting-in-aem-forms}
 
-Los informes de transacciones para capturar el número de envíos de formularios, el procesamiento de documentos mediante servicios de documentos y la representación de comunicaciones interactivas (canales Web e Imprimir) se han introducido con AEM Forms 6.4.1. Esta capacidad está dirigida principalmente a los clientes que desean obtener una licencia del software en función del número de envíos de formularios y/o documentos procesados. Esta funcionalidad está disponible actualmente solo en la pila OSGI de AEM Forms.
+La creación de informes de transacciones para capturar el número de envíos de formularios, la representación de documentos mediante servicios de documentos y la representación de comunicaciones interactivas (canales web y de impresión) se ha introducido con AEM Forms 6.4.1. Esta capacidad es principalmente para los clientes que desean obtener una licencia del software en función del número de envíos de formularios o documentos representados. Actualmente, esta funcionalidad solo está disponible en la pila OSGI de AEM Forms.
 
-## Habilitación de la creación de informes de transacciones {#enabling-transaction-reporting}
+## Habilitar informes de transacciones {#enabling-transaction-reporting}
 
-De forma predeterminada, el registro de transacciones está desactivado. Para habilitar el registro de transacciones, siga los pasos que se indican a continuación:
+De forma predeterminada, el registro de transacciones está desactivado. Para habilitar el registro de transacciones, siga los pasos que se mencionan a continuación:
 
-* [Abra configMgr](http://localhost:4502/system/console/configMgr)
+* [Abra configMgr.](http://localhost:4502/system/console/configMgr)
 * Buscar &quot;Informes de transacciones de Forms&quot;
 * Seleccione la casilla de verificación &quot;Registrar transacciones&quot;
 * Guarde los cambios
 
-Una vez habilitado el sistema de informes de transacciones, puede enviar el Forms adaptable, generar documentos mediante document services o procesar documentos de Interactive Communication para ver los informes de transacciones en acción.
+Una vez habilitados los informes de transacciones, puede enviar Forms adaptable, generar documentos mediante servicios de documentos o procesar documentos de comunicación interactiva para ver los informes de transacciones en acción.
 
 ## Visualización del informe de transacciones {#viewing-transaction-report}
 
-Para ver el informe de transacciones, inicie sesión en AEM Forms como administrador. Solo los miembros del grupo fd-Administrator pueden ver el informe de transacción.
+Para ver el informe de transacciones, inicie sesión en AEM Forms como administrador. Solo los miembros del grupo fd-Administrator pueden ver el informe de transacciones.
 
-Seleccionar herramientas | Forms | Ver informe de transacciones
+Seleccionar herramientas | FORMS | Ver informe de transacciones
 
-o ver el informe de transacciones haciendo clic en [here](http://localhost:4502/mnt/overlay/fd/transaction/gui/content/report.html)
+o vea el informe de transacciones haciendo clic en [aquí](http://localhost:4502/mnt/overlay/fd/transaction/gui/content/report.html)
 
-![Informes de transacciones](assets/transactionreporting.gif)
+![TransactionReporting](assets/transactionreporting.gif)
 
-En la captura de pantalla de arriba Document Processed es el número de documentos generados usando document services. Los documentos procesados son el número de documentos de comunicación interactiva (Web e Print) procesados. Forms enviado es el número de envíos de formularios adaptables.
+En la captura de pantalla anterior Documento procesado es el número de documentos generados mediante servicios de documentos. Documentos representados es el número de documentos de comunicación interactiva (web e impresos) representados. Forms enviado es el número de envíos de formularios adaptables.
 
 Una transacción permanece en el búfer durante un período especificado (tiempo de búfer de vaciado + tiempo de replicación inversa). De forma predeterminada, el recuento de transacciones tarda aproximadamente 90 segundos en reflejarse en el informe de transacciones.
 
-Las acciones como enviar un formulario de PDF, usar la interfaz de usuario del agente para obtener una vista previa de una comunicación interactiva o usar métodos de envío de formularios no estándar no se contabilizan como transacciones. AEM Forms proporciona una API para registrar estas transacciones. Llame a la API desde las implementaciones personalizadas para registrar una transacción.
+Las acciones como enviar un formulario PDF, utilizar la interfaz de usuario del agente para obtener una vista previa de una comunicación interactiva o usar los métodos de envío de formulario no estándar no se contabilizan como transacciones. AEM Forms proporciona un API para registrar esas transacciones. Llame al API desde sus implementaciones personalizadas y registrar una transacción.
 
-Si está viendo el informe de transacción en la instancia de autor, asegúrese de que la replicación inversa esté configurada en todas las instancias de publicación.
+Si está viendo el informe de transacciones en la instancia de autor, asegúrese de que la replicación inversa esté configurada en todas las instancias de publicación.
 
 Para obtener más información sobre los informes de transacciones [haga clic aquí](https://helpx.adobe.com/experience-manager/6-4/forms/using/transaction-reports-overview.html)

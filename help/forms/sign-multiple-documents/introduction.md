@@ -1,6 +1,6 @@
 ---
 title: Introducción
-description: Demostración en vídeo del caso de uso de varios formularios de signo
+description: Vídeo de demostración del caso de uso de firma de varios formularios
 feature: Adaptive Forms
 version: 6.4,6.5
 thumbnail: 330165.jpg
@@ -18,8 +18,8 @@ ht-degree: 4%
 
 # Introducción
 
-Tanto si solicita una hipoteca como si abre una nueva cuenta bancaria, debe rellenar y firmar varios formularios. La integración entre AEM Forms y Acrobat Sign facilita la cumplimentación y firma de varios formularios.
-El siguiente vídeo lo acompaña durante el caso de uso de firmar varios formularios.
+Tanto si solicita una hipoteca como si abre una nueva cuenta bancaria, deberá rellenar y firmar varios formularios. La integración entre AEM Forms y Acrobat Sign facilita la cumplimentación y firma de varios formularios.
+El siguiente vídeo lo acompaña en el caso de uso de firmar varios formularios.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330165?quality=12&learn=on)
 
@@ -27,13 +27,13 @@ El siguiente vídeo lo acompaña durante el caso de uso de firmar varios formula
 
 Este curso supone lo siguiente:
 
-* Tiene acceso al servidor AEM 6.4 o 6.5 con Forms Add en el paquete instalado y configurado
-* AEM configurado con Acrobat Sign
+* AEM Tiene acceso al servidor de 6.4 o 6.5 con el paquete Forms Add on instalado y configurado
+* AEM Configurado con Acrobat Sign
 * Acceso al servidor SMTP
-* Alguna experiencia con AEM/AEM Forms
+* AEM Alguna experiencia con el servicio de asistencia a clientes de/AEM Forms
 
 Al seguir este tutorial e instalar los recursos proporcionados, tendrá una solución práctica para firmar varios formularios.
 
 ## Pasos siguientes
 
-[Configurar el origen de datos respaldado por la base de datos ](./configure-data-source.md)
+[Configurar fuente de datos respaldada por base de datos ](./configure-data-source.md)

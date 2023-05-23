@@ -1,6 +1,6 @@
 ---
 title: Restricción del Editor de reglas a grupos específicos en AEM Forms
-description: Restricción del Editor de reglas de formulario adaptable a grupos específicos en AEM
+description: AEM Restringir el Editor de reglas de formularios adaptables a grupos específicos de los grupos de trabajo de la
 feature: Adaptive Forms
 version: 6.4,6.5
 topic: Administration
@@ -17,12 +17,12 @@ ht-degree: 0%
 
 # Restricción del Editor de reglas a grupos específicos en AEM Forms {#restricting-the-rule-editor-to-specific-groups-in-aem-forms}
 
-Restricción del Editor de reglas de formulario adaptable a grupos específicos en AEM
+AEM Restringir el Editor de reglas de formularios adaptables a grupos específicos de los grupos de trabajo de la
 
 >[!VIDEO](https://video.tv.adobe.com/v/19470?quality=12&learn=on)
 
-*Este vídeo explica el proceso de restringir el editor de reglas de formulario adaptable a grupos específicos de AEM.*
+*AEM Este vídeo muestra el proceso de restringir el editor de reglas de formularios adaptables a grupos específicos en la aplicación de la regla de.*
 
 >[!NOTE]
 >
->Esta función solo está disponible a partir de AEM 6.3.
+>AEM Esta función solo está disponible a partir de la versión 6.3 de la versión de.

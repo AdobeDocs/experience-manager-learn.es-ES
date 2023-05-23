@@ -1,6 +1,6 @@
 ---
 title: Guía de implementación de búsqueda simple
-description: La implementación de búsqueda simple son los materiales del laboratorio de la Cumbre 2017 AEM Search Demystified. Esta página contiene los materiales de este laboratorio. Para una visita guiada al laboratorio, por favor vea el libro de Lab en la sección Presentación de esta página.
+description: AEM La implementación de búsqueda simple es el material del laboratorio de Summit 2017 Búsqueda Desmitificada. Esta página contiene los materiales de este laboratorio. Para una visita guiada por el laboratorio, por favor vea el libro del laboratorio en la sección Presentación de esta página.
 version: 6.4, 6.5
 feature: Search
 topic: Development
@@ -12,19 +12,19 @@ thumbnail: 32090.jpg
 source-git-commit: 1ecd3c761ea7c79036b263ff8528a6cd01af0e76
 workflow-type: tm+mt
 source-wordcount: '897'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
 # Guía de implementación de búsqueda simple{#simple-search-implementation-guide}
 
-La implementación de búsqueda simple son los materiales del **Adobe Summit lab AEM búsqueda Demystified**. Esta página contiene los materiales de este laboratorio. Para una visita guiada al laboratorio, por favor vea el libro de Lab en la sección Presentación de esta página.
+La implementación de búsqueda simple es el material del **Adobe Summit AEM lab Búsqueda en el laboratorio de Desmitificado**. Esta página contiene los materiales de este laboratorio. Para una visita guiada por el laboratorio, por favor vea el libro del laboratorio en la sección Presentación de esta página.
 
-![Información general sobre la arquitectura de búsqueda](assets/l4080/simple-search-application.png)
+![Resumen de arquitectura de búsqueda](assets/l4080/simple-search-application.png)
 
 ## Materiales de presentación {#bookmarks}
 
-* [Libro de trabajo de Lab](assets/l4080/l4080-lab-workbook.pdf)
+* [Libro de laboratorio](assets/l4080/l4080-lab-workbook.pdf)
 * [Presentación](assets/l4080/l4080-presentation.pdf)
 
 ## Marcadores {#bookmarks-1}
@@ -35,12 +35,12 @@ La implementación de búsqueda simple son los materiales del **Adobe Summit lab
 * [Explicar la consulta](http://localhost:4502/libs/granite/operations/content/diagnosis/tool.html/granite_queryperformance)
 * [CRXDE Lite](http://localhost:4502/crx/de/index.jsp#/oak%3Aindex/cqPageLucene) > /oak:index/cqPageLucene
 * [Administrador de paquetes CRX](http://localhost:4502/crx/packmgr/index.jsp)
-* [Depurador de QueryBuilder](http://localhost:4502/libs/cq/search/content/querydebug.html?)
-* [Generador de definiciones de índices Oak](https://oakutils.appspot.com/generate/index)
+* [QueryBuilder Debugger](¿http://localhost:4502/libs/cq/search/content/querydebug.html?)
+* [Generador de definiciones de índice de Oak](https://oakutils.appspot.com/generate/index)
 
 ### Capítulos {#chapters}
 
-*Los vínculos de capítulo siguientes asumen que la variable [Paquetes iniciales](#initialpackages) están instalados en AEM Author en`http://localhost:4502`*
+*Los vínculos de capítulo siguientes suponen lo siguiente [Paquetes iniciales](#initialpackages) están instalados en AEM Author en`http://localhost:4502`*
 
 * [Capítulo 1](http://localhost:4502/editor.html/content/summit/l4080/chapter-1.html)
 * [Capítulo 2](http://localhost:4502/editor.html/content/summit/l4080/chapter-2.html)
@@ -63,63 +63,63 @@ La implementación de búsqueda simple son los materiales del **Adobe Summit lab
 
 * [Solución del capítulo 1](assets/l4080/l4080-chapter1.zip)
 * [Solución del capítulo 2](assets/l4080/l4080-chapter2.zip)
-* [Solución del capítulo 3](assets/l4080/l4080-chapter3.zip)
-* [Solución del capítulo 4](assets/l4080/l4080-chapter4.zip)
+* [Capítulo 3 Solución](assets/l4080/l4080-chapter3.zip)
+* [Capítulo 4 Solución](assets/l4080/l4080-chapter4.zip)
 * [Configuración del capítulo 5](assets/l4080/l4080-chapter5-setup.zip)
 * [Solución del capítulo 5](assets/l4080/l4080-chapter5-solution.zip)
-* [Solución del capítulo 6](assets/l4080/l4080-chapter6.zip)
+* [Capítulo 6 Solución](assets/l4080/l4080-chapter6.zip)
 * [Solución del capítulo 9](assets/l4080/l4080-chapter9.zip)
 
-## Materiales a los que se hace referencia {#reference-materials}
+## Materiales de referencia {#reference-materials}
 
-* [Repositorio de Github](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/master/simple-search-guide)
-* [Modelos Sling](https://sling.apache.org/documentation/bundles/models.html)
-* [Exportador de modelo Sling](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130)
+* [Repositorio de GitHub](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/master/simple-search-guide)
+* [Modelos de Sling](https://sling.apache.org/documentation/bundles/models.html)
+* [Exportador del modelo Sling](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130)
 * [API de QueryBuilder](https://experienceleague.adobe.com/docs/)
-* [Complemento AEM Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode) ([Página de documentación](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/))
+* [AEM Complemento de Chrome de](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode) ([Página de documentación](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/))
 
 ## Correcciones y seguimiento {#corrections-and-follow-up}
 
-Correcciones y aclaraciones de las discusiones de laboratorio y respuestas a preguntas de seguimiento de los asistentes.
+Correcciones y aclaraciones de las discusiones del laboratorio y respuestas a las preguntas de seguimiento de los asistentes.
 
-1. **¿Cómo dejar de reindexar?**
+1. **¿Cómo detener la reindexación?**
 
-   La reindexación se puede detener a través de IndexStats MBean disponible a través de [Consola web de AEM > JMX](http://localhost:4502/system/console/jmx)
+   La reindexación se puede detener mediante el MBean IndexStats disponible mediante [AEM Consola web de > JMX](http://localhost:4502/system/console/jmx)
 
    * [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
-      * Ejecutar `abortAndPause()` para anular la reindexación. Esto bloqueará el índice para volver a indexarlo hasta `resume()` se invoca a .
-      * En ejecución `resume()` reiniciará el proceso de indexación.
+      * Ejecutar `abortAndPause()` para anular la reindexación. Esto bloqueará el índice para una mayor reindexación hasta `resume()` se invoca a.
+      * Ejecutando `resume()` reiniciará el proceso de indexación.
    * Documentación: [https://jackrabbit.apache.org/oak/docs/query/indexing.html#async-index-mbean](https://jackrabbit.apache.org/oak/docs/query/indexing.html#async-index-mbean)
 
-2. **¿Cómo pueden los índices oak soportar múltiples inquilinos?**
+2. **¿Cómo pueden los índices de Oak admitir varios inquilinos?**
 
-   Oak admite la colocación de índices a través del árbol de contenido, y estos índices solo indexarán dentro de ese sub-árbol. Por ejemplo **`/content/site-a/oak:index/cqPageLucene`** se puede crear para indexar contenido solo bajo **`/content/site-a`.**
+   Oak admite la colocación de índices en todo el árbol de contenido, y estos índices solo indexarán dentro de ese subárbol. Por ejemplo **`/content/site-a/oak:index/cqPageLucene`** se puede crear para indexar contenido solo en **`/content/site-a`.**
 
-   Un enfoque equivalente es usar la variable **`includePaths`** y **`queryPaths`** propiedades en un índice bajo **`/oak:index`**. Por ejemplo:
+   Un enfoque equivalente es utilizar la variable **`includePaths`** y **`queryPaths`** propiedades en un índice en **`/oak:index`**. Por ejemplo:
 
    * `/oak:index/siteAcqPageLucene@includePaths=/content/site-a`
    * `/oak:index/siteAcqPageLucene@queryPaths=/content/site-a`
 
-   Las consideraciones con este enfoque son:
+   Las consideraciones con este enfoque son las siguientes:
 
-   * Las consultas DEBEN especificar una restricción de ruta que sea igual al alcance de la ruta de consulta del índice, o ser un descendiente de allí.
-   * Índices de ámbito más amplio (por ejemplo `/oak:index/cqPageLucene`) TAMBIÉN indexará los datos, lo que dará como resultado una ingesta duplicada y costo de uso del disco.
-   * Puede requerir una administración de configuración duplicada (por ejemplo, agregar el mismo indexRules en varios índices de inquilino si deben satisfacer los mismos conjuntos de consultas)
-   * Este enfoque se sirve mejor en el nivel de AEM Publish para la búsqueda de sitio personalizada, como en AEM Author, es común que las consultas se ejecuten en la parte superior del árbol de contenido para diferentes inquilinos (por ejemplo, a través de OmniSearch): diferentes definiciones de índice pueden resultar en un comportamiento diferente solo en función de la restricción de ruta.
+   * Las consultas DEBEN especificar una restricción de ruta de acceso igual al ámbito de la ruta de acceso de la consulta del índice o ser un descendiente de él.
+   * Índices de ámbito más amplio (por ejemplo, `/oak:index/cqPageLucene`) TAMBIÉN indexará los datos, lo que resultará en una ingesta duplicada y un coste de uso del disco.
+   * Puede requerir la administración de configuraciones duplicadas (por ejemplo, agregar las mismas reglas de índice en varios índices de inquilinos si deben satisfacer los mismos conjuntos de consultas)
+   * Este enfoque se sirve mejor en el nivel de AEM Publish para la búsqueda de sitios personalizados, ya que en AEM Author, es común que las consultas se ejecuten en la parte superior del árbol de contenido para diferentes inquilinos (por ejemplo, a través de OmniSearch): diferentes definiciones de índice pueden dar como resultado un comportamiento diferente basado únicamente en la restricción de ruta.
 
 
 3. **¿Dónde hay una lista de todos los analizadores disponibles?**
 
-   Oak expone un conjunto de elementos de configuración del analizador de lucene que se utilizan en AEM.
+   AEM Oak expone un conjunto de elementos de configuración de Lucene-proporciona el analizador para su uso en el análisis de la configuración de la aplicación de la.
 
-   * [Documentación de Apache Oak Analyzers](https://jackrabbit.apache.org/oak/docs/query/lucene.html#analyzers)
+   * [Documentación de los analizadores Apache Oak](https://jackrabbit.apache.org/oak/docs/query/lucene.html#analyzers)
       * [Tokenizers](https://cwiki.apache.org/confluence/display/solr/Tokenizers)
       * [Filtros](https://cwiki.apache.org/confluence/display/solr/Filter+Descriptions)
       * [CharFilters](https://cwiki.apache.org/confluence/display/solr/CharFilterFactories)
 
-4. **¿Cómo se busca Páginas y Recursos en la misma consulta?**
+4. **¿Cómo se buscan páginas y recursos en la misma consulta?**
 
-   Una novedad en AEM 6.3 es la capacidad de consultar varios tipos de nodos en la misma consulta proporcionada. La siguiente consulta de QueryBuilder. Tenga en cuenta que cada &quot;subconsulta&quot; puede resolver en su propio índice, por lo que en este ejemplo, la variable `cq:Page` la subconsulta se resuelve en `/oak:index/cqPageLucene` y `dam:Asset` la subconsulta se resuelve en `/oak:index/damAssetLucene`.
+   AEM La novedad en la versión 6.3 de la es la capacidad de consultar varios tipos de nodos en la misma consulta proporcionada. La siguiente consulta de QueryBuilder. Tenga en cuenta que cada &quot;subconsulta&quot; puede resolver su propio índice, por lo que en este ejemplo, la variable `cq:Page` la subconsulta se resuelve en `/oak:index/cqPageLucene` y el `dam:Asset` la subconsulta se resuelve en `/oak:index/damAssetLucene`.
 
    ```plain
    group.p.or=true
@@ -129,7 +129,7 @@ Correcciones y aclaraciones de las discusiones de laboratorio y respuestas a pre
    # add all asset restrictions to this group
    ```
 
-   tiene como resultado el siguiente plan de consulta y consulta:
+   da como resultado la siguiente consulta y plan de consulta:
 
    ```plain
    QUERY:(//element(*, cq:Page) | //element(*, dam:Asset))
@@ -137,11 +137,11 @@ Correcciones y aclaraciones de las discusiones de laboratorio y respuestas a pre
    PLAN: [cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) *:* */ union [dam:Asset] as [a] /* lucene:damAssetLucene(/oak:index/damAssetLucene) *:* */
    ```
 
-   Explorar la consulta y los resultados mediante [Depurador de QueryBuilder](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Ddam%3AAsset%0D%0A%23+add+all+asset+restrictions+to+this+group) y [Complemento AEM Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US).
+   Explore la consulta y los resultados a través de [QueryBuilder Debugger](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Ddam%3AAsset%0D%0A%23+add+all+asset+restrictions+to+this+group) y [AEM Complemento de Chrome de](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US).
 
 5. **¿Cómo buscar en varias rutas en la misma consulta?**
 
-   Una novedad en AEM 6.3 es la capacidad de realizar consultas en varias rutas en la misma consulta proporcionada. La siguiente consulta de QueryBuilder. Tenga en cuenta que cada &quot;subconsulta&quot; puede resolverse en su propio índice.
+   AEM La novedad de la versión 6.3 de la es la capacidad de realizar consultas en varias rutas de acceso en la misma consulta proporcionada. La siguiente consulta de QueryBuilder. Tenga en cuenta que cada &quot;subconsulta&quot; puede resolverse en su propio índice.
 
    ```plain
    group.p.or=true
@@ -153,7 +153,7 @@ Correcciones y aclaraciones de las discusiones de laboratorio y respuestas a pre
    # add all asset restrictions to this group
    ```
 
-   resultados en el siguiente plan de consulta y consulta
+   da como resultado la siguiente consulta y plan de consulta
 
    ```plain
    QUERY: (/jcr:root/content/docs/en/_x0036_-2//element(*, cq:Page) | /jcr:root/content/docs/en/_x0036_-3//element(*, cq:Page))
@@ -161,4 +161,4 @@ Correcciones y aclaraciones de las discusiones de laboratorio y respuestas a pre
    PLAN: [cq:Page] as [a] /* traverse "/content/docs/en/6-2//*" where isdescendantnode([a], [/content/docs/en/6-2]) */ union [cq:Page] as [a] /* traverse "/content/docs/en/6-3//*" where isdescendantnode([a], [/content/docs/en/6-3]) */
    ```
 
-   Explorar la consulta y los resultados mediante [Depurador de QueryBuilder](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0Agroup.1_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-2%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Dcq%3APage%0D%0Agroup.2_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-3%0D%0A%23+add+all+asset+restrictions+to+this+group) y [Complemento AEM Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US).
+   Explore la consulta y los resultados a través de [QueryBuilder Debugger](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0Agroup.1_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-2%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Dcq%3APage%0D%0Agroup.2_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-3%0D%0A%23+add+all+asset+restrictions+to+this+group) y [AEM Complemento de Chrome de](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US).

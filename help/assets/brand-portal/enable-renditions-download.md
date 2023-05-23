@@ -1,6 +1,6 @@
 ---
-title: Habilitación de la descarga de representaciones en Brand Portal.
-description: Pasos para activar la descarga de representación en Brand Portal
+title: Cómo habilitar la descarga de representaciones en Brand Portal.
+description: Pasos para habilitar la descarga de la representación en Brand Portal
 role: Developer
 level: Beginner
 version: Cloud Service

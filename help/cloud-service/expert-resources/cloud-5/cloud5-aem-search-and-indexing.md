@@ -1,5 +1,5 @@
 ---
-title: Cloud 5 AEM Buscar e indexar
+title: AEM Búsqueda e indexación de Cloud 5
 description: Sumergimos nuestros dedos en el océano que está buscando e indexando
 version: Cloud Service
 role: Admin, Developer
@@ -11,19 +11,19 @@ recommendations: noDisplay, noCatalog
 exl-id: b2571a84-101f-4330-8a5f-9ef5e4344591
 source-git-commit: a439c72a7b080633d3777eefad3b47f01c92b970
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '78'
+ht-degree: 8%
 
 ---
 
-# Cloud 5 AEM Buscar e indexar
+# AEM Búsqueda e indexación de Cloud 5
 
-Un chapuzón en las aguas profundas de la búsqueda y la indexación. Un tema desafiante que esperamos que ayude a educarlos a cumplir con más eficacia.
+Una rápida inmersión en las profundas aguas de la búsqueda y la indexación. Un tema difícil que esperamos ayudar a educarlo para que cumpla con más eficacia.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342374?quality=12&learn=on)
 
 ## Contenido cubierto en este vídeo
 
-+ Búsqueda e índice [Información general](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=es)
++ Buscar e indexar [Información general](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=es)
 + AEM [Conversor de índices](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/index-converter.html)
-+ Serie de expertos [Análisis profundo](../../../cloud-service/migration/moving-to-aem-as-a-cloud-service/search-and-indexing.md)
++ Serie Expert [Inmersión profunda](../../../cloud-service/migration/moving-to-aem-as-a-cloud-service/search-and-indexing.md)

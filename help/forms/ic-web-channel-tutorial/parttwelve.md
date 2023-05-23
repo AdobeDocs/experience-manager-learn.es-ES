@@ -1,7 +1,7 @@
 ---
-title: Configuración del envío del documento de canal web
+title: Configuración del envío del documento del canal web
 seo-title: Setting up the delivery of web channel document
-description: Esta es la última parte de un tutorial de varios pasos para crear su primer documento interactivo de comunicaciones. En esta parte, analizamos la entrega de documentos de canal web por correo electrónico.
+description: Esta es la parte final de un tutorial de varios pasos para crear el primer documento de comunicaciones interactivas. En esta parte, vemos la entrega del documento del canal web por correo electrónico.
 seo-description: This is the final part of a multistep tutorial for creating your first interactive communications document. In this part, we look at the delivery of web channel document via email.
 uuid: c1066600-1abd-4401-b04f-b93c28603cc7
 feature: Interactive Communication
@@ -22,58 +22,58 @@ ht-degree: 1%
 
 ---
 
-# Configuración del envío del documento de canal web {#setting-up-the-delivery-of-web-channel-document}
+# Configuración del envío del documento del canal web {#setting-up-the-delivery-of-web-channel-document}
 
 
-En esta parte, analizamos la entrega de documentos de canal web por correo electrónico.
+En esta parte, vemos la entrega del documento del canal web por correo electrónico.
 
-Una vez que haya definido y probado el documento de comunicación interactiva del canal web, necesita un mecanismo de envío para enviar el documento del canal web al destinatario.
+Una vez definido y probado el documento de comunicación interactiva del canal web, necesita un mecanismo de entrega para enviar el documento del canal web al destinatario.
 
-Para poder utilizar el correo electrónico como mecanismo de envío para nuestro documento de canal web, debemos realizar un cambio menor en el modelo de datos del formulario.
+Para poder utilizar el correo electrónico como mecanismo de envío para nuestro documento de canal web, necesitamos realizar un cambio menor en el modelo de datos de formulario.
 
-[Para obtener más información sobre la entrega de canales web por correo electrónico](/help/forms/interactive-communications/delivery-of-web-channel-document-tutorial-use.md)
+[Para obtener más información sobre la entrega del canal web por correo electrónico](/help/forms/interactive-communications/delivery-of-web-channel-document-tutorial-use.md)
 
 Inicie sesión en AEM Forms.
 
 * Vaya a Forms ->Integraciones de datos
 
-* Abra el Modelo de datos RetirementAccountStatement en modo de edición.
+* Abra el modelo de datos RetirementAccountStatement en modo de edición.
 
-* Seleccione el objeto balances y haga clic en el botón editar.
+* Seleccione el objeto balances y pulse en el botón editar.
 
 * Seleccione el icono &quot;lápiz&quot; para abrir el argumento id en modo de edición.
 
-* Cambie el enlace a &quot;RequestAttribute&quot;.
+* Cambie el enlace a RequestAttribute.
 
-* Establezca el número de cuenta en el valor de enlace como se muestra a continuación.
+* Configure el número de cuenta en el valor de enlace como se muestra a continuación.
 
-* De este modo, pasamos el número de cuenta a través del atributo de solicitud al modelo de datos del formulario
+* De este modo, se pasa el número de cuenta a través del atributo de solicitud al modelo de datos de formulario
 
 * Asegúrese de guardar los cambios.
    ![fdm](assets/requestattribute.gif)
 
-## Probar entrega de correo electrónico del documento de canal web {#test-email-delivery-of-web-channel-document}
+## Probar la entrega por correo electrónico del documento del canal web {#test-email-delivery-of-web-channel-document}
 
-* [Instalación de los recursos de ejemplo mediante el administrador de paquetes](assets/webchanneldelivery.zip)
+* [Instalación de los recursos de muestra mediante el administrador de paquetes](assets/webchanneldelivery.zip)
 * [Iniciar sesión en crx](http://localhost:4502/crx/de/index.jsp#)
 
 * Vaya a /home/users
 
-* Busque un usuario administrador en el nodo del usuario.
+* Busque el usuario administrador en el nodo del usuario.
 
 * Seleccione el nodo de perfil del usuario administrador.
 
-* Cree una propiedad llamada &quot;accountnumber&quot;. Asegúrese de que el tipo de propiedad es una cadena.
+* Cree una propiedad denominada &quot;accountnumber&quot;. Asegúrese de que el tipo de propiedad sea una cadena.
 
-* Establezca el valor de esta propiedad accountnumber en &quot;3059827&quot;. Puede establecer este valor en cualquier número aleatorio como desee.
+* Establezca el valor de esta propiedad accountnumber en &quot;3059827&quot;. Puede establecer este valor en cualquier número aleatorio que desee.
 
 * [Abra getad.html](http://localhost:4502/content/getad.html)
 
-* El código asociado con esta URL obtiene el número de cuenta del usuario que ha iniciado sesión. Este número de cuenta se pasa entonces como atributo de solicitud al FDM. A continuación, el FDM recuperará los datos asociados con este número de cuenta y rellenará el documento de canal web.
+* El código asociado con esta URL obtendrá el número de cuenta del usuario que ha iniciado sesión. Este número de cuenta se pasa como atributo de solicitud al FDM. A continuación, FDM recuperará los datos asociados con este número de cuenta y rellenará el documento del canal web.
 
 >[!NOTE]
 >
->Eche un vistazo a la **/apps/AEMForms/fetchad/GET.jsp** en crx. Asegúrese de que la variable de cadena webChannelDocument apunte a una ruta de documento de comunicación válida.
+>Por favor, eche un vistazo a la **/apps/AEMForms/fetchad/GET.jsp** archivo en crx. Asegúrese de que la variable de cadena webChannelDocument señala a una ruta de documento de comunicación válida.
 
 ## Pasos siguientes
 

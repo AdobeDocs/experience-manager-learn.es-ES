@@ -1,7 +1,7 @@
 ---
-title: Uso del administrador de varios sitios con AEM Sites
+title: Uso del Administrador de varios sitios con AEM Sites
 seo-title: Using Multi Site Manager Touch UI Interfaces with Adobe Experience Manager
-description: Live Copy Overview y Blueprint Configuration Manager son interfaces activadas para la IU táctil para trabajar con Multi Site Manager.
+description: La Información general de Live Copy y el Administrador de configuración de modelo son interfaces táctiles habilitadas para IU para trabajar con el Administrador de varios sitios.
 seo-description: Live Copy Overview and Blueprint Configuration Manager are Touch UI Enabled interfaces for working with Multi Site Manager with Adobe Experience Manager.
 feature: Multi Site Manager
 topics: localization, authoring, content-architecture
@@ -22,21 +22,21 @@ ht-degree: 17%
 
 ---
 
-# Uso del administrador de varios sitios {#using-multi-site-manager-with-aem-sites}
+# Uso del Administrador de varios sitios {#using-multi-site-manager-with-aem-sites}
 
-Información general de Live Copy y Administrador de configuración de modelo son interfaces de AEM Author para trabajar con [Administrador de varios sitios](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/msm-and-translation.html?lang=es) en Adobe Experience Manager Sites.
+Información general de Live Copy y el Administrador de configuración de modelos son interfaces de autor de AEM para trabajar con [Administrador de varios sitios](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/msm-and-translation.html?lang=es) en Adobe Experience Manager Sites.
 
 ## Información general de Live Copy {#live-copy-overview}
 
 >[!VIDEO](https://video.tv.adobe.com/v/17054?quality=12&learn=on)
 
-*Live Copy Overview es una interfaz de usuario táctil que se utiliza para administrar copias en vivo y sus respectivos planos. Esta función, introducida en AEM 6.3, sustituye al Centro de control de modelo de la IU clásica.*
+*Información general de Live Copy es una interfaz de interfaz de usuario táctil que se utiliza para administrar Live Copies y sus respectivos modelos. AEM Esta función, introducida en la versión 6.3 de la, sustituye al Centro de control de modelo de la IU clásica.*
 
 ## Administrador de configuración de modelo: IU táctil {#blueprint-config-mgr}
 
 >[!VIDEO](https://video.tv.adobe.com/v/17056?quality=12&learn=on)
 
-*AEM 6.3 presenta una interfaz de usuario táctil para administrar las configuraciones de modelo y utilizarla en Multi Site Manager.*
+*AEM 6.3 presenta una interfaz de usuario táctil para administrar las configuraciones de modelo para su uso en el Administrador de varios sitios.*
 
 ## Recursos adicionales {#additional-resources}
 

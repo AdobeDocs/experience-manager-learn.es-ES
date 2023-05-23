@@ -1,5 +1,5 @@
 ---
-title: Guardar datos enviados en una variable de cadena
+title: Guardar datos enviados en variable de cadena
 description: Paso de proceso personalizado para extraer datos enlazados y guardarlos en una variable de flujo de trabajo de tipo cadena
 feature: Adaptive Forms
 version: 6.5
@@ -9,14 +9,15 @@ level: Beginner
 kt: 11199
 last-substantial-update: 2022-10-02T00:00:00Z
 thumbnail: string-variable.jpg
-source-git-commit: e1c16ff347f5f398c7bc47233049427eeffa2aab
+exl-id: 65dcbfbb-7eb5-4fa3-aeb3-587c59ee2fe9
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 0%
 
 ---
 
-# Extraer datos enlazados y guardarlos en una variable de cadena
+# Extraer datos vinculados y guardarlos en una variable de cadena
 
 Esta capacidad le permite incluir los datos enviados en el cuerpo del correo electrónico. El paso de proceso personalizado extrae el **datos enlazados** del envío del formulario adaptable y rellena una variable de tipo cadena con los datos. A continuación, puede utilizar esta variable de cadena para insertar los datos en la plantilla de correo electrónico.
 La siguiente captura de pantalla muestra los argumentos que debe pasar al paso de proceso personalizado
@@ -24,9 +25,9 @@ La siguiente captura de pantalla muestra los argumentos que debe pasar al paso d
 
 Los siguientes son los parámetros
 
-* `data.xml` - El archivo que tiene los datos enviados . Si el formato está en json, el nombre del archivo puede ser data.json
+* `data.xml` - El archivo que tiene los datos enviados Si el formato está en json, el nombre del archivo puede ser data.json
 
-El paso de proceso personalizado extraerá los datos enlazados y los almacenará en la variable submitDataString definida en el flujo de trabajo
+El paso de proceso personalizado extraerá los datos enlazados y los almacenará en la variable submittedDataString definida en el flujo de trabajo
 
 
 [El paquete personalizado se puede descargar desde aquí](assets/AEMFormsProcessStep.core-1.0.0-SNAPSHOT.jar)

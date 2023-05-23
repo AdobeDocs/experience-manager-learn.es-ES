@@ -1,6 +1,6 @@
 ---
-title: Conceptos básicos del desarrollo de servicios de OSGi
-description: Obtenga información sobre los conceptos básicos del desarrollo de un servicio OSGi
+title: Conceptos básicos del desarrollo de servicios OSGi
+description: Obtenga información acerca de los conceptos básicos del desarrollo de un servicio OSGi
 role: Developer
 level: Beginner
 topic: Development
@@ -18,10 +18,10 @@ ht-degree: 2%
 
 # Servicios OSGi
 
-Conozca los conceptos básicos del desarrollo de servicios de OSGi, que incluyen:
+Conozca los conceptos básicos del desarrollo de servicios OSGi, incluidos:
 
-+ Conversión de un POJO de Java en un servicio OSGi
-+ Enlace de un servicio OSGi a una interfaz Java
++ Cómo convertir un POJO de Java en un servicio OSGi
++ Cómo enlazar un servicio OSGi a una interfaz Java
 
 >[!VIDEO](https://video.tv.adobe.com/v/335476?quality=12&learn=on)
 

@@ -15,15 +15,15 @@ ht-degree: 5%
 
 # Tutorial de caché de AEM Dispatcher
 
-Dispatcher es una parte esencial de la mayoría, si no de todas las instalaciones AEM. El objetivo de este tutorial es ayudarle a comprender mejor cómo funciona Dispatcher y cómo puede trabajar con él.
+AEM Dispatcher es una parte esencial de la mayoría de las instalaciones, si no de todas, de la. El objetivo de este tutorial es ayudarle a comprender mejor cómo funciona Dispatcher y cómo puede trabajar con él.
 
 Este tutorial se divide en tres partes.
 
 1. [Conceptos, patrones y antipatrones](chapter-1.md)
-Proporciona una breve introducción al historial de Dispatcher, la mecánica y analiza cómo esto influye en cómo un desarrollador AEM diseñaría sus componentes.
+AEM Proporciona una breve introducción al historial, la mecánica y la forma en que esto influye en la forma en que un desarrollador de Dispatcher diseñaría sus componentes.
 
 1. [Patrón de infraestructura](chapter-2.md)
-Analiza varias topologías sobre cómo ampliar un sistema AEM con un clúster de sistemas de publicación y cachés de Dispatcher delante.
+AEM Analiza varias topologías sobre cómo ampliar un sistema de con un clúster de sistemas de publicación y cachés de Dispatcher delante.
 
 1. [Temas avanzados de almacenamiento en caché](chapter-3.md)
-Donde las dos primeras partes se centraron en el almacenamiento en caché http sin formato en Dispatcher y en las limitaciones que existen. Esta parte analiza algunas ideas sobre cómo superar estas limitaciones.
+Dónde las dos primeras partes se centraron en el almacenamiento en caché de http sin formato en Dispatcher y qué limitaciones hay. En esta parte se analizan algunas ideas sobre cómo superar estas limitaciones.

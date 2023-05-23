@@ -1,6 +1,6 @@
 ---
-title: Información general sobre la administración de varios sitios en AEM Sites
-description: El siguiente vídeo ofrece información general sobre los conceptos básicos de la administración de varios sitios en AEM Sites.
+title: Información general sobre Multi-site Management en AEM Sites
+description: El siguiente vídeo proporciona información general sobre los conceptos básicos de la administración de varios sitios en AEM Sites.
 feature: language-copy, live-copy, multi-site-manager
 topics: localization, authoring, content-architecture
 audience: all
@@ -17,8 +17,8 @@ ht-degree: 0%
 ---
 
 
-# Información general sobre la administración de varios sitios
+# Información general sobre Multi-site Management
 
-El siguiente vídeo ofrece información general sobre los conceptos básicos de la administración de varios sitios en AEM Sites.
+El siguiente vídeo proporciona información general sobre los conceptos básicos de la administración de varios sitios en AEM Sites.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33594?quality=12&learn=on)

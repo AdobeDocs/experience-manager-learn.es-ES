@@ -10,7 +10,7 @@ doc-type: Tutorial
 last-substantial-update: 2023-05-16T00:00:00Z
 jira: KT-13270
 thumbnail: KT-13270.jpeg
-source-git-commit: 4c0770eafbbbb90bfc00ab49be02e84c41d63057
+source-git-commit: 12b3888552d5a131628dabf380840f0586798ea5
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 4%
@@ -20,15 +20,13 @@ ht-degree: 4%
 
 # AEM Primer tutorial sin encabezado de la
 
-{{aem-headless-trials-promo}}
+![AEM Primer tutorial sin encabezado de la](./assets/overview/overview.png)
 
 AEM Le damos la bienvenida al tutorial sobre la creación de una experiencia web con React, totalmente equipado con API sin encabezado y GraphQL de. En este tutorial, le guiaremos a través del proceso de creación de una aplicación web dinámica e interactiva mediante la combinación de la potencia de React, las API sin encabezado de Adobe Experience Manager (AEM) y GraphQL.
 
 React es una popular biblioteca JavaScript para la creación de interfaces de usuario, conocida por su simplicidad, reutilización y arquitectura basada en componentes. AEM AEM proporciona funciones sólidas de administración de contenido y expone las API sin encabezado que permiten a los desarrolladores acceder al contenido y a los datos almacenados en los archivos a través de una variedad de canales y aplicaciones.
 
 AEM AEM Al aprovechar las API sin encabezado de la, puede recuperar contenido, activos y datos de su instancia y utilizarlos para impulsar la aplicación React. GraphQL AEM AEM, un lenguaje de consulta flexible para las API, proporciona una forma eficaz y precisa de solicitar datos específicos a su instancia de, lo que permite una integración perfecta entre React y.
-
-![AEM Primer tutorial sin encabezado de la](./assets/overview/overview.png)
 
 AEM A lo largo de este tutorial, le guiaremos por el proceso paso a paso de creación de una experiencia web mediante las API de React y Headless con GraphQL. AEM Aprenderá a configurar su entorno de desarrollo, establecer una conexión entre React y, recuperar contenido mediante consultas de GraphQL y procesarlo dinámicamente en su aplicación web.
 

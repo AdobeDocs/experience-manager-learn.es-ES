@@ -1,6 +1,6 @@
 ---
-title: Explorar la importancia de Cloud Manager en AEM
-description: Explore el propósito de Cloud Manager y cómo funciona con AEM as a Cloud Service.
+title: AEM Explore la importancia de Cloud Manager en la administración de la
+description: AEM Explore el propósito de Cloud Manager y cómo funciona con as a Cloud Service.
 role: Architect, Developer
 level: Beginner
 type: Tutorial
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Cloud Manager y AEM as a Cloud Service
+# AEM Cloud Manager y as a Cloud Service
 
-Explore el propósito de Cloud Manager y cómo funciona con AEM as a Cloud Service.
+AEM Explore el propósito de Cloud Manager y cómo funciona con as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330545?quality=12&learn=on)

@@ -1,6 +1,6 @@
 ---
 title: Escribir el documento de carga útil en el sistema de archivos
-description: Paso de proceso personalizado para agregar al sistema de archivos el tamaño del documento de escritura en la carpeta de carga útil
+description: Paso de proceso personalizado para agregar al sistema de archivos el documento de escritura que reside en la carpeta de carga útil
 feature: Adaptive Forms
 version: 6.5
 topic: Development
@@ -18,9 +18,9 @@ ht-degree: 0%
 
 # Escribir el documento en el sistema de archivos
 
-El caso de uso habitual es escribir los documentos generados en el flujo de trabajo en el sistema de archivos.
-Este paso personalizado del proceso del flujo de trabajo facilita la escritura de los documentos del flujo de trabajo en el sistema de archivos.
-El proceso personalizado toma los siguientes argumentos separados por comas
+Un caso de uso común es escribir los documentos generados en el flujo de trabajo en el sistema de archivos.
+Este paso de proceso de flujo de trabajo personalizado facilita la escritura de los documentos de flujo de trabajo en el sistema de archivos.
+El proceso personalizado emplea los siguientes argumentos separados por comas
 
 ```java
 ChangeBeneficiary.pdf,c:\confirmation

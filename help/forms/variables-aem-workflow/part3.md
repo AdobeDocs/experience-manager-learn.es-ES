@@ -1,6 +1,6 @@
 ---
-title: Variables en AEM flujo de trabajo[Part3]
-description: Uso de variables de tipo XML, JSON, ArrayList, Document en un flujo de trabajo AEM
+title: AEM Variables en flujo de trabajo de la[Parte3]
+description: AEM Uso de variables de tipo XML, JSON, ArrayList o Document en un flujo de trabajo de
 version: 6.5
 topic: Development
 role: Developer
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 ---
 
-# Variable de tipo de documento en AEM flujo de trabajo
+# AEM Variable de tipo de documento en flujo de trabajo de
 
 
-Las variables de tipo documento se utilizan para almacenar documentos de registro, archivos adjuntos de formularios adaptables. Estas variables se pueden utilizar en el componente Enviar correo electrónico para enviar archivos adjuntos por correo electrónico.
+Las variables de tipo document se utilizan para almacenar documentos de registro y archivos adjuntos de formularios adaptables. Estas variables se pueden utilizar en el componente Enviar correo electrónico para enviar archivos adjuntos por correo electrónico.
 
-En este vídeo se resaltará el uso de la variable de tipo de documento para almacenar el DoR generado y, a continuación, utilizar la variable de documento en el paso de envío de correo electrónico de un flujo de trabajo AEM.
+AEM En este vídeo se resalta el uso de la variable de tipo de documento para almacenar el documento de registro generado y, a continuación, se utiliza la variable de documento en el paso de envío de correo electrónico de un flujo de trabajo de la.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26452?quality=12&learn=on)

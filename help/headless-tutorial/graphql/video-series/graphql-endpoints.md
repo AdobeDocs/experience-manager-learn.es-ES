@@ -1,6 +1,6 @@
 ---
 title: Puntos finales de GraphQL
-description: Obtenga información sobre cómo habilitar, ejecutar consultas con, y publicar y proteger extremos de GraphQL.
+description: Obtenga información sobre cómo habilitar, ejecutar consultas y publicar y proteger extremos de GraphQL.
 version: Cloud Service
 topic: Headless, Content Management
 feature: Content Fragments, GraphQL API
@@ -19,12 +19,12 @@ ht-degree: 0%
 
 # Puntos finales de GraphQL
 
-Obtenga información sobre cómo habilitar, ejecutar consultas con, y publicar y proteger extremos de GraphQL.
+Obtenga información sobre cómo habilitar, ejecutar consultas y publicar y proteger extremos de GraphQL.
 
 En este vídeo:
 
 + Obtenga información sobre cómo habilitar puntos de conexión de GraphQL
-+ Obtenga información sobre cómo ejecutar consultas de GraphQL contra puntos finales
-+ Descubra cómo publicar extremos de GraphQL
++ Obtenga información sobre cómo ejecutar consultas de GraphQL en puntos finales
++ Obtenga información sobre cómo publicar extremos de GraphQL
 
 >[!VIDEO](https://video.tv.adobe.com/v/333339?quality=12&learn=on)

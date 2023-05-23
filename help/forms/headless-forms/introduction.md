@@ -1,6 +1,6 @@
 ---
-title: Uso de formularios adaptables sin encabezado en SPA
-description: Implemente un formulario de contacto sin encabezado en SPA
+title: SPA Uso de formularios adaptables sin encabezado en la
+description: SPA Implemente un formulario de contacto sin encabezado en el área de trabajo de
 feature: Adaptive Forms
 version: 6.5
 kt: 13285
@@ -17,18 +17,18 @@ ht-degree: 2%
 
 # Incrustación de formularios adaptables sin encabezado
 
-Este artículo cubrirá los conceptos básicos de integrar un formulario adaptable sin encabezado en su sitio web de spa. Este artículo supone que tiene una aplicación de una sola página existente y desea incrustar un formulario adaptable creado en AEM Forms 6.5.16 utilizando componentes principales.
-Al incluir un formulario en una aplicación de una sola página, los usuarios pueden introducir y enviar datos sin problemas sin necesidad de actualizar la página. Esto mejora la interactividad y la eficacia de la aplicación.
+Este artículo explica los conceptos básicos para incrustar un formulario adaptable sin encabezado en el sitio web de la spa. En este artículo se da por hecho que ya tiene una aplicación de una sola página y que desea incrustar un formulario adaptable creado en AEM Forms 6.5.16 con componentes principales.
+La inclusión de un formulario en una aplicación de una sola página permite a los usuarios introducir y enviar datos sin problemas sin necesidad de actualizar la página. Esto mejora la interactividad y la eficacia de la aplicación.
 
-La siguiente captura de pantalla muestra un formulario de contacto con nosotros incrustado en SPA
+SPA La siguiente captura de pantalla muestra un formulario de contacto incrustado en el elemento de
 
 ![contact-us-form](./assets/contact-us-form.png)
 
 ## Requisitos previos
 
-* React experience
+* Experiencia de React
 
-* Ejecución de la instancia de AEM Forms 6.5.16
+* Instancia de ejecución de AEM Forms 6.5.16
 
 * [Habilitar formularios sin encabezado en la instancia de autor y publicación](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=en)
 

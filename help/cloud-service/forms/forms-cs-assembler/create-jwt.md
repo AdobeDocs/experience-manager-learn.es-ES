@@ -1,6 +1,6 @@
 ---
 title: Creación de un token web JSON (JWT)
-description: Cree un token web JSON (JWT) que se pueda intercambiar con las API de Adobe IMS por un token de acceso AEM.
+description: AEM Cree un token web JSON (JWT) que se pueda intercambiar con las API de IMS de Adobe por un token de acceso de.
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -18,8 +18,8 @@ ht-degree: 0%
 
 # Creación de un token web JSON (JWT)
 
-Los tokens web JSON son un método RFC 7519 abierto y estándar del sector para representar las reclamaciones de forma segura entre dos partes. Las bibliotecas JWT.io se utilizaron en esta muestra para generar el JWT.
-Las credenciales de servicio que ha descargado en el paso anterior contienen la clave privada en formato PKCS#1. Para extraer la clave privada de esta cadena hemos utilizado [BouncyCastle](https://www.bouncycastle.org/) bibliotecas. Las bibliotecas criptográficas que forman parte de java no admiten el formato PKCS#1.
+Los tokens web JSON son un método abierto y estándar en la industria RFC 7519 para representar reclamaciones de forma segura entre dos partes. En este ejemplo se utilizaron bibliotecas JWT.io para generar el JWT.
+Las credenciales de servicio que descargó en el paso anterior contienen la clave privada en formato PKCS#1. Para extraer la clave privada de esta cadena que hemos utilizado [BouncyCastle](https://www.bouncycastle.org/) bibliotecas. Las bibliotecas criptográficas que forman parte de java no admiten el formato PKCS#1.
 
 El siguiente código se utilizó para generar el JWT:
 

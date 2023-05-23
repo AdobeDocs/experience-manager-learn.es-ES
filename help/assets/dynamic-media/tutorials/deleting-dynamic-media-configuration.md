@@ -1,6 +1,6 @@
 ---
-title: Eliminación de una configuración de Dynamic Media AEM
-description: Pasos para eliminar una configuración AEM de Dynamic Media de AEM Assets.
+title: AEM Eliminación de una configuración de Dynamic Media de
+description: AEM Pasos para eliminar una configuración de Dynamic Media de la configuración de AEM Assets de la.
 role: Developer
 level: Intermediate
 version: Cloud Service
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# Eliminación de una configuración de Dynamic Media AEM
+# AEM Eliminación de una configuración de Dynamic Media de
 
-Este vídeo muestra los pasos para eliminar una configuración AEM de Dynamic Media.
+AEM Este vídeo muestra los pasos para eliminar una configuración de Dynamic Media de.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335363?quality=12&learn=on)

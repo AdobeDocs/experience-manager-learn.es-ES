@@ -1,5 +1,5 @@
 ---
-title: Desarrollo con usuarios de servicios en AEM Forms
+title: Desarrollo con usuarios de servicio en AEM Forms
 description: Este artículo lo acompaña durante el proceso de creación de un usuario de servicio en AEM Forms
 feature: Adaptive Forms
 topic: Development
@@ -14,46 +14,46 @@ ht-degree: 1%
 
 ---
 
-# Desarrollo con usuarios de servicios en AEM Forms
+# Desarrollo con usuarios de servicio en AEM Forms
 
 Este artículo lo acompaña durante el proceso de creación de un usuario de servicio en AEM Forms
 
-En versiones anteriores de Adobe Experience Manager (AEM), la resolución de recursos administrativos se utilizaba para el procesamiento back-end que requería acceso al repositorio. El uso de la resolución de recursos administrativos está obsoleto en AEM 6.3. En su lugar, se utiliza un usuario del sistema con permisos específicos en el repositorio.
+En versiones anteriores de Adobe Experience Manager AEM (), el solucionador de recursos administrativos se utilizaba para el procesamiento back-end, que requería acceso al repositorio. AEM El uso del solucionador de recursos administrativos está obsoleto en la versión 6.3 de. En su lugar, se utiliza un usuario del sistema con permisos específicos en el repositorio.
 
-Obtenga más información sobre los detalles de [creación y uso de usuarios de servicios en AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/advanced/service-users.html).
+Obtenga más información acerca de los detalles de [AEM creación y uso de usuarios de servicio de en la](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/advanced/service-users.html).
 
 Este artículo explica la creación de un usuario del sistema y la configuración de las propiedades del asignador de usuarios.
 
 1. Vaya a [http://localhost:4502/crx/explorer/index.jsp](http://localhost:4502/crx/explorer/index.jsp)
-1. Inicie sesión como &#39; admin &#39;
+1. Iniciar sesión como &quot;administrador&quot;
 1. Haga clic en &quot;Administración de usuarios&quot;
 1. Haga clic en &quot;Crear usuario del sistema&quot;
-1. Establezca el tipo userid como &#39; data &#39; y haga clic en el icono verde para completar el proceso de creación del usuario del sistema
-1. [Abrir configMgr](http://localhost:4502/system/console/configMgr)
-1. Buscar _Servicio de asignador de usuarios del servicio Apache Sling_ y haga clic en para abrir las propiedades
-1. Haga clic en el *+* icono (más) para añadir la siguiente asignación de servicios
+1. Establezca el tipo userid como &quot;data&quot; y haga clic en el icono verde para completar el proceso de creación del usuario del sistema
+1. [Abra configMgr.](http://localhost:4502/system/console/configMgr)
+1. Buscar por _Servicio de asignador de usuarios del servicio Apache Sling_ y haga clic en para abrir las propiedades
+1. Haga clic en *+* icono (más) para añadir la siguiente asignación de servicio
 
    * DevelopingWithServiceUser.core:getresourceresolver=data
    * DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
 
-1. Haga clic en &#39; Guardar &#39;
+1. Haga clic en Guardar
 
-En la configuración anterior, DevelopingWithServiceUser.core es el nombre simbólico del paquete. getresourceresolver es el subservicio name.data es el usuario del sistema creado en el paso anterior.
+En la configuración anterior, el valor DevelopersWithServiceUser.core es el nombre simbólico del paquete. getresourceresolver es el nombre del subservicio.data es el usuario del sistema creado en el paso anterior.
 
-También podemos obtener la resolución de recursos en nombre del usuario de fd-service. Este usuario de servicio se utiliza para document services. Por ejemplo, si desea certificar/aplicar derechos de uso, etc., utilizaremos la resolución de recursos del usuario de fd-service para realizar las operaciones
+También podemos obtener una resolución de recursos en nombre del usuario de fd-service. Este usuario de servicio se utiliza para Document Services. Por ejemplo, si desea certificar/aplicar derechos de uso, etc., utilizaremos el solucionador de recursos del usuario de fd-service para realizar las operaciones
 
 1. [Descargue y descomprima el archivo zip asociado con este artículo.](assets/developingwithserviceuser.zip)
 1. Vaya a [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
-1. Carga e inicio del paquete OSGi
+1. Cargar e iniciar el paquete OSGi
 1. Asegúrese de que el paquete esté en estado activo
-1. Ya ha creado correctamente un *Usuario del sistema* y también implementó el *Paquete de usuario de servicio*.
+1. Ahora ha creado correctamente una *Usuario del sistema* y también implementó el *Paquete de usuario de servicio*.
 
-   Para proporcionar acceso a /content, otorgue al usuario del sistema (&#39; data &#39;) permisos de lectura en el nodo de contenido.
+   Para proporcionar acceso a /content, conceda al usuario del sistema (&#39; datos &#39;) permisos de lectura en el nodo de contenido.
 
    1. Vaya a [http://localhost:4502/useradmin](http://localhost:4502/useradmin)
-   1. Buscar los datos del usuario &#39; &#39;. Este es el mismo usuario del sistema que creó en el paso anterior.
-   1. Haga doble clic en el usuario y, a continuación, haga clic en la ficha Permisos
-   1. Proporcione acceso de lectura a la carpeta &quot;contenido&quot;.
+   1. Buscar los datos del usuario. Es el mismo usuario del sistema que creó en el paso anterior.
+   1. Haga doble clic en el usuario y, a continuación, haga clic en la pestaña Permisos
+   1. Conceder acceso de &quot;lectura&quot; a la carpeta &quot;contenido&quot;.
    1. Para utilizar el usuario del servicio para obtener acceso a la carpeta /content, utilice el siguiente código
 
 
@@ -68,7 +68,7 @@ resourceResolver = aemDemoListings.getServiceResolver();
 Resource contentResource = resourceResolver.getResource("/content/forms/af/sandbox/abc.pdf");
 ```
 
-Si desea acceder al archivo /content/dam/data.json del paquete, utilice el siguiente código. Este código supone que ha dado permisos de lectura al usuario &quot;data&quot; en el nodo /content/dam/
+Si desea acceder al archivo /content/dam/data.json en su paquete, utilizará el siguiente código. Este código supone que se han concedido permisos de lectura al usuario &quot;data&quot; en el nodo /content/dam/
 
 ```java
 @Reference
@@ -93,7 +93,7 @@ try {
 }
 ```
 
-A continuación se muestra el código completo de la implementación
+A continuación, se muestra el código completo de la implementación
 
 ```java
 package com.mergeandfuse.getserviceuserresolver.impl;

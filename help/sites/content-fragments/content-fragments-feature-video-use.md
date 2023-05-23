@@ -1,6 +1,6 @@
 ---
-title: Creación de fragmentos de contenido en AEM
-description: Los fragmentos de contenido son una abstracción de contenido en AEM que permite crear y administrar contenido basado en texto independientemente de los canales que admite.
+title: AEM Creación de fragmentos de contenido en la
+description: AEM Los fragmentos de contenido son una abstracción de contenido en la que se puede crear y administrar contenido basado en texto independientemente de los canales que admita.
 feature: Content Fragments
 topics: authoring, content-architecture
 audience: all
@@ -20,13 +20,13 @@ ht-degree: 17%
 
 # Creación de fragmentos de contenido {#authoring-content-fragments}
 
-Los fragmentos de contenido son una abstracción de contenido en AEM que permite crear y administrar contenido basado en texto independientemente de los canales que admite.
+AEM Los fragmentos de contenido son una abstracción de contenido en la que se puede crear y administrar contenido basado en texto independientemente de los canales que admita.
 
-AEM los fragmentos de contenido son contenido editorial basado en texto que puede incluir algunos elementos de datos estructurados asociados pero considerados contenido puro sin información de diseño o diseño. Los fragmentos de contenido se suelen crear como contenido no agnóstico del canal, que está diseñado para utilizarse y reutilizarse en varios canales, lo que a su vez envuelve el contenido en una experiencia específica del contexto.
+AEM Los fragmentos de contenido son contenidos editoriales basados en texto que pueden incluir algunos elementos de datos estructurados asociados, pero que se consideran contenido puro sin información de diseño. Los fragmentos de contenido generalmente se crean como contenido no basado en canales; está pensado para utilizarse y reutilizarse en todos los canales, lo que a su vez envuelve el contenido en una experiencia específica del contexto.
 
-Esta serie de vídeos cubre el ciclo de vida de creación de fragmentos de contenido en AEM. Detalles sobre [puede encontrar la entrega de fragmentos de contenido aquí](content-fragments-delivery-feature-video-use.md).
+AEM Esta serie de vídeos trata sobre el ciclo de vida de la creación de fragmentos de contenido en la. Detalles acerca de [Puede encontrar fragmentos de contenido para enviar aquí](content-fragments-delivery-feature-video-use.md).
 
-1. Activación y definición de modelos de fragmento de contenido
+1. Activación y definición de modelos de fragmentos de contenido
 2. Creación de fragmentos de contenido
 3. Descarga de fragmentos de contenido
 4. Funciones editoriales
@@ -40,15 +40,15 @@ Esta serie de vídeos cubre el ciclo de vida de creación de fragmentos de conte
 
 >[!VIDEO](https://video.tv.adobe.com/v/22452?quality=12&learn=on)
 
-AEM los modelos de fragmentos de contenido, los esquemas de datos de los fragmentos de contenido, deben habilitarse mediante AEM [[!UICONTROL Explorador de configuración]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html?lang=es), que permite definir los modelos de fragmento de contenido según la configuración.
+AEM AEM Los modelos de fragmentos de contenido, los esquemas de datos de los fragmentos de contenido, deben habilitarse a través de la opción de combinación de modelos de fragmentos de contenido [[!UICONTROL Explorador de configuración]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html?lang=es), que permite definir los modelos de fragmentos de contenido según la configuración.
 
 ## Creación de fragmentos de contenido {#creating-content-fragments}
 
 >[!VIDEO](https://video.tv.adobe.com/v/22451?quality=12&learn=on)
 
-AEM configuraciones se aplican a jerarquías de carpetas de AEM Assets para permitir que sus modelos de fragmento de contenido se creen como fragmentos de contenido. Los fragmentos de contenido admiten una rica experiencia de creación basada en formularios que permite modelar el contenido como una colección de elementos.
+AEM Se aplican configuraciones de a las jerarquías de carpetas de AEM Assets para permitir que sus modelos de fragmentos de contenido se creen como fragmentos de contenido. Los fragmentos de contenido admiten una experiencia de creación enriquecida basada en formularios que permite modelar el contenido como una colección de elementos.
 
-Los fragmentos de contenido pueden tener varias variantes, cada una de las cuales aborda un caso de uso diferente (pensado, no necesariamente un canal) para el contenido.
+Los fragmentos de contenido pueden tener varias variantes, cada una de las cuales aborda un caso de uso diferente (pensada, no necesariamente canal) para el contenido.
 
 *Ejemplo de biografía de atleta para importación:*\
 **[sandra-sprient-bio.txt](assets/sandra-sprient-bio.txt)**
@@ -57,22 +57,22 @@ Los fragmentos de contenido pueden tener varias variantes, cada una de las cuale
 
 >[!VIDEO](https://video.tv.adobe.com/v/22450?quality=12&learn=on)
 
-AEM fragmentos de contenido se pueden descargar desde AEM Author como archivo zip que contiene variantes, elementos y metadatos.
+AEM Los fragmentos de contenido se pueden descargar desde AEM Author como un archivo zip que contiene variantes, elementos y metadatos.
 
-*Ejemplo de archivo zip de descarga del fragmento de contenido:*\
+*Ejemplo de descarga de fragmento de contenido Archivo Zip:*\
 **[daniel_schreder.zip](assets/daniel_schreder.zip)**
 
-## Funciones editoriales del fragmento de contenido {#editorial-capabilities}
+## Funciones editoriales de fragmentos de contenido {#editorial-capabilities}
 
 >[!VIDEO](https://video.tv.adobe.com/v/25891?quality=12&learn=on)
 
 >[!NOTE]
 >
-> Las anotaciones y la comparación de versiones para fragmentos de contenido se introdujeron en [AEM 6.4 Service Pack 2](https://helpx.adobe.com/es/experience-manager/aem-releases-updates.html) y [AEM 6.3 Service Pack 3](https://helpx.adobe.com/es/experience-manager/6-3/release-notes/sp3-release-notes.html).
+> La anotación y la comparación de versiones para fragmentos de contenido se introdujeron en [AEM Paquete de servicio 2 de.4](https://helpx.adobe.com/es/experience-manager/aem-releases-updates.html) y [AEM Paquete de servicio 3 de.3](https://helpx.adobe.com/es/experience-manager/6-3/release-notes/sp3-release-notes.html).
 
 ## Pasos siguientes
 
-Obtenga información sobre [envío de fragmentos de contenido](content-fragments-delivery-feature-video-use.md).
+Más información [entrega de fragmentos de contenido](content-fragments-delivery-feature-video-use.md).
 
 ## Recursos adicionales {#additional-resources}
 
@@ -80,6 +80,6 @@ Obtenga información sobre [envío de fragmentos de contenido](content-fragments
 * [Componentes principales de WCM de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
 * [AEM Componente de fragmento de contenido principal de WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=es)
 
-Para descargar e instalar el paquete siguiente en una instancia de AEM 6.4+ para el estado final de la serie de vídeos:
+AEM Para descargar e instalar el paquete siguiente en una instancia de la versión 6.4 o posterior de para el estado final de la serie de vídeos:
 
-**[aem_demo_fluidos-experiencescontent-fragments-100.zip](assets/aem_demo_fluid-experiencescontent-fragments-100.zip)**
+**[aem_demo_workflow-experiencescontent-fragments-100.zip](assets/aem_demo_fluid-experiencescontent-fragments-100.zip)**

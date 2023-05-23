@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ---
 
-# Live Copy e impresión azul {#livecopy-blueprint}
+# Live Copy y Blue Print {#livecopy-blueprint}
 
 Comprenda la relación entre una Live Copy y su modelo en AEM Sites.
 

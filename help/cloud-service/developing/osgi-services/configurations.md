@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # Propiedades de configuración de OSGi
 
-Aprenda el enfoque de bajo nivel de usar pares de clave/valor de configuración OSGi para definir y exponer los datos de configuración OSGi a los servicios OSGi.
+Aprenda el enfoque de bajo nivel del uso de pares de clave/valor de configuración OSGi para definir y exponer los datos de configuración OSGi a los servicios OSGi.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335729?quality=12&learn=on)
 

@@ -1,6 +1,6 @@
 ---
-title: Creación de versiones de página para páginas AEM sitio
-description: El siguiente vídeo resalta cómo crear una versión de página, obtener una vista previa, restaurar una versión de página y comparar la versión de página actual con las versiones de página guardadas.
+title: AEM Creación de versiones de página para páginas de sitio de la
+description: En el siguiente vídeo se explica cómo crear una versión de página, obtener una vista previa, restaurar una versión de página y comparar la versión de la página actual con una versión de página guardada.
 topics: authoring
 audience: author, marketer
 doc-type: feature video
@@ -21,11 +21,11 @@ ht-degree: 0%
 
 # Creación de versiones de página {#creating-page-versions-aem-sites}
 
-El control de versiones de páginas ayuda a los autores de contenido a rastrear los cambios asociados con una página creando una versión de página y proporciona una opción para obtener una vista previa de una versión, restaurar una versión y comparar una versión con la versión actual de una página.
+El control de versiones de página ayuda a los autores de contenido a realizar un seguimiento de los cambios asociados a una página creando una versión de la página y proporciona una opción para obtener una vista previa de una versión, restaurar una versión y comparar una versión con la versión actual de una página.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32151?quality=12&learn=on)
 
-Al generar versiones se crea una instantánea de una página en un punto específico en el tiempo. Con el control de versiones, puede realizar las siguientes acciones:
-* Crear una nueva versión para una página
+El control de versiones crea una instantánea de una página en un momento específico. Con el control de versiones, puede realizar las siguientes acciones:
+* Creación de una nueva versión para una página
 * Restaurar una página a una versión anterior para deshacer un cambio realizado en una página, por ejemplo
-* Compare la versión actual de una página con una versión anterior resaltando las diferencias en el texto y las imágenes
+* Comparar la versión actual de una página con una versión anterior con diferencias en el texto y las imágenes resaltadas

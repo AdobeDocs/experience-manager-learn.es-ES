@@ -1,6 +1,6 @@
 ---
-title: Configuración de un entorno de desarrollo de AEM local
-description: Obtenga información sobre cómo descargar y configurar un entorno de desarrollo local mediante el SDK as a Cloud Service de AEM.
+title: AEM Cómo configurar un entorno de desarrollo de un entorno de local
+description: AEM Obtenga información sobre cómo descargar y configurar un entorno de desarrollo local mediante el SDK as a Cloud Service de la.
 role: Developer
 level: Beginner
 type: Tutorial
@@ -18,10 +18,10 @@ ht-degree: 7%
 
 # Configuración del entorno de desarrollo local
 
-Obtenga información sobre cómo descargar y configurar un entorno de desarrollo local mediante el SDK as a Cloud Service de AEM.
+AEM Obtenga información sobre cómo descargar y configurar un entorno de desarrollo local mediante el SDK as a Cloud Service de la.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330558?quality=12&learn=on)
 
-_La variable `license.properties` mostrado en este vídeo ya no es necesario para ejecutar el SDK de AEM._
+_El `license.properties` AEM , que se muestra en este vídeo, ya no es necesario para ejecutar el SDK de la._
 
-Revise estas instrucciones para [configuración de un entorno de desarrollo local completo mediante el SDK de AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=es).
+Revise estas instrucciones para [AEM configuración de un entorno de desarrollo local completo mediante el SDK de la](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=es).

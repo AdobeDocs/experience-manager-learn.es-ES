@@ -1,5 +1,5 @@
 ---
-title: Configuración del abastecimiento de recursos con el portal de marca.
+title: Configuración del abastecimiento de recursos con Brand Portal.
 description: Pasos para configurar el abastecimiento de recursos con Brand Portal
 role: Developer
 level: Beginner
@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Configuración del abastecimiento de recursos con Brand Portal
 
-*Este vídeo explica el proceso de configuración del abastecimiento de recursos con Brand Portal.*
+*Este vídeo muestra el proceso de configuración del abastecimiento de recursos con Brand Portal.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335451?quality=12&learn=on)

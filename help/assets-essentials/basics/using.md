@@ -1,6 +1,6 @@
 ---
 title: Uso de Assets Essentials
-description: Descubra cómo descargar recursos en Assets Essentials.
+description: Obtenga información sobre cómo descargar recursos en Assets Essentials.
 version: Cloud Service
 feature: Assets Essentials
 topic: Content Management

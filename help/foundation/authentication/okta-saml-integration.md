@@ -8,7 +8,8 @@ role: Admin
 level: Experienced
 jira: KT-12305
 last-substantial-update: 2023-03-01T00:00:00Z
-source-git-commit: de9377236016066cc62819f1c307aac82331a0b6
+exl-id: 460e9bfa-1b15-41b9-b8b7-58b2b1252576
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 2%
@@ -59,7 +60,7 @@ Proporcione las siguientes propiedades, tal como se especifica a continuación. 
 
 * **ruta** - Esta es la ruta donde se activa el controlador de autenticación
 * **Url de IdP**:Esta es la URL de IdP proporcionada por OKTA
-* **Alias de certificado IDP** AEM : Es el alias que obtuvo al agregar el certificado IdP al almacén de confianza de la aplicación de seguridad de la aplicación de datos (IDs) en el almacén de confianza de la aplicación de datos
+* **Alias de certificado IDP** AEM : Este es el alias que obtuvo cuando agregó el certificado IdP al almacén de confianza de la organización de certificados de la compañía de datos (CIDsIdP) en el almacén de confianza de la aplicación de datos
 * **ID de entidad de Service Provider** AEM :Este es el nombre de su servidor de
 * **Contraseña del almacén de claves**: Esta es la contraseña del almacén de confianza que utilizó
 * **Redirección predeterminada**:Esta es la URL a la que se redirigirá si la autenticación se realiza correctamente

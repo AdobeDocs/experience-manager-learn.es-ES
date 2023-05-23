@@ -1,6 +1,6 @@
 ---
-title: Solución de problemas relacionados con la configuración de Jetty en AEM
-description: Pasos para investigar problemas relacionados con la configuración de jetty
+title: AEM Solución de problemas relacionados con la configuración de Jetty en el
+description: Pasos para investigar los problemas relacionados con la configuración de jetty
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Solución de problemas relacionados con la configuración de Jetty en AEM
+# AEM Solución de problemas relacionados con la configuración de Jetty en el
 
-*Este vídeo muestra los pasos para solucionar problemas relacionados con la configuración de Jetty en AEM.*
+*AEM Este vídeo explica los pasos para solucionar problemas relacionados con la configuración de Jetty en la aplicación de.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335470?quality=12&learn=on)

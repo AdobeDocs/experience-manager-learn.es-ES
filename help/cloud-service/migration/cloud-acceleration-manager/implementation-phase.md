@@ -1,6 +1,6 @@
 ---
-title: Fases de implementación de Cloud Acceleration Manager
-description: Revise y comprenda las principales fases de implementación o vaya a AEM as a Cloud Service mediante Cloud Acceleration Manager.
+title: Las fases de implementación de Cloud Acceleration Manager
+description: AEM Revise y comprenda las principales fases de implementación o de paso a la implementación as a Cloud Service de la plataforma de trabajo de mediante Cloud Acceleration Manager.
 version: Cloud Service
 feature: Migration
 topic: Migration, Upgrade
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Fases de implementación de Cloud Acceleration Manager
+# Las fases de implementación de Cloud Acceleration Manager
 
-Revise y comprenda las principales fases de implementación o vaya a AEM as a Cloud Service mediante Cloud Acceleration Manager.
+AEM Revise y comprenda las principales fases de implementación o de paso a la implementación as a Cloud Service de la plataforma de trabajo de mediante Cloud Acceleration Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336691?quality=12&learn=on)

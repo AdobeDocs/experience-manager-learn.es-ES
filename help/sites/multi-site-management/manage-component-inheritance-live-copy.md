@@ -1,5 +1,5 @@
 ---
-title: Administrar la herencia de Live Copy en un componente
+title: Administración de la herencia de Live Copy en un componente
 description: Obtenga información sobre cómo administrar la herencia entre una Live Copy y su modelo a nivel de componente
 feature: Language Copy, Multi Site Manager
 topics: localization, authoring, content-architecture
@@ -20,8 +20,8 @@ ht-degree: 0%
 
 ---
 
-# Administrar la herencia de Live Copy en un componente {#manage-live-copy-component}
+# Administración de la herencia de Live Copy en un componente {#manage-live-copy-component}
 
-Obtenga información sobre cómo administrar la herencia entre una Live Copy y su modelo a nivel de componente.
+Obtenga información sobre cómo administrar los datos heredados entre una Live Copy y su modelo a nivel de componente.
 
 >[!VIDEO](https://video.tv.adobe.com/v/36678?quality=12&learn=on)

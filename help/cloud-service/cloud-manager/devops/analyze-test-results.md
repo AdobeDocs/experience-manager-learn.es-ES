@@ -1,6 +1,6 @@
 ---
-title: Analizar resultados de prueba de AEM Cloud Manager
-description: Explorar y corregir los resultados de los informes de AEM Cloud Manager
+title: AEM Analizar resultados de prueba de Cloud Manager de
+description: AEM Explore y corrija los resultados de los informes de Cloud Manager de la aplicación de informes de la plataforma de administración de la nube de
 role: Developer
 level: Beginner
 type: Tutorial
@@ -24,6 +24,6 @@ ht-degree: 51%
 >abstract="Explore los errores de compilación del código y si este sigue las prácticas recomendadas para AEM as a Cloud Service."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=es#how-to-use" text="Comprender los resultados de la prueba"
 
-Explore cualquier error de compilación en su código y si este código sigue o no las prácticas recomendadas para AEM as a Cloud Service
+AEM Explore los errores de compilación del código y si este sigue o no las prácticas recomendadas para el uso de código as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330540?quality=12&learn=on)

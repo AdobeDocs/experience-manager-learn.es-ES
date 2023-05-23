@@ -1,6 +1,6 @@
 ---
-title: Desarrollo de la diferencia de página en AEM Sites
-description: Este vídeo muestra cómo proporcionar estilos personalizados para la funcionalidad de diferencia de página de AEM Sites.
+title: Desarrollo para la diferencia de página en AEM Sites
+description: Este vídeo muestra cómo proporcionar estilos personalizados para la funcionalidad Diferencia de páginas de AEM Sites.
 feature: Authoring
 topics: development
 audience: developer
@@ -20,23 +20,23 @@ ht-degree: 4%
 
 # Desarrollo para la diferencia de página {#developing-for-page-difference}
 
-Este vídeo muestra cómo proporcionar estilos personalizados para la funcionalidad de diferencia de página de AEM Sites.
+Este vídeo muestra cómo proporcionar estilos personalizados para la funcionalidad Diferencia de páginas de AEM Sites.
 
-## Personalización de estilos de diferencia de página {#customizing-page-difference-styles}
+## Personalizar estilos de diferencia de página {#customizing-page-difference-styles}
 
 >[!VIDEO](https://video.tv.adobe.com/v/18871?quality=12&learn=on)
 
 >[!NOTE]
 >
->Este vídeo añade CSS personalizada a la biblioteca de cliente de we.Retail, donde como estos cambios deben realizarse en el proyecto AEM Sites del cliente; en el código de ejemplo siguiente: `my-project`.
+>Este vídeo agrega CSS personalizado a la biblioteca de cliente de we.Retail, donde como estos cambios deben realizarse en el proyecto AEM Sites del personalizador; en el siguiente código de ejemplo: `my-project`.
 
-AEM diferencia de página obtiene la CSS OOTB mediante una carga directa de `/libs/cq/gui/components/common/admin/diffservice/clientlibs/diffservice/css/htmldiff.css`.
+AEM diferencia de página obtiene el CSS de OOTB mediante una carga directa de `/libs/cq/gui/components/common/admin/diffservice/clientlibs/diffservice/css/htmldiff.css`.
 
-Debido a esta carga directa de CSS en lugar de usar una categoría de biblioteca de cliente, debemos encontrar otro punto de inyección para los estilos personalizados, y este punto de inyección personalizado es la clientlib de creación del proyecto.
+Debido a esta carga directa de CSS en lugar de utilizar una categoría de biblioteca de cliente, debemos encontrar otro punto de inyección para los estilos personalizados y este punto de inyección personalizado es la clientlib de creación del proyecto.
 
-Esto tiene la ventaja de permitir que estas anulaciones de estilo personalizadas sean específicas del inquilino.
+Esto tiene la ventaja de permitir que estas invalidaciones de estilo personalizadas sean específicas del inquilino.
 
-### Preparación de la clientlib de creación {#prepare-the-authoring-clientlib}
+### Preparar la clientlib de creación {#prepare-the-authoring-clientlib}
 
 Garantizar la existencia de un `authoring` clientlib para su proyecto en `/apps/my-project/clientlib/authoring.`
 
@@ -47,9 +47,9 @@ Garantizar la existencia de un `authoring` clientlib para su proyecto en `/apps/
         categories="[my-project.authoring]"/>
 ```
 
-### Proporcionar una CSS personalizada {#provide-the-custom-css}
+### Proporcionar el CSS personalizado {#provide-the-custom-css}
 
-Agregue al `authoring` clientlib a `css.txt` que señala al archivo menor que proporcionará los estilos de anulación. [Menos](https://lesscss.org/) es preferible debido a sus muchas funciones prácticas, incluido el ajuste de clases que se aprovecha en este ejemplo.
+Añadir a la del proyecto `authoring` clientlib a `css.txt` que apunta al archivo Less que proporcionará los estilos de anulación. [Menos](https://lesscss.org/) se prefiere debido a sus muchas características convenientes, incluyendo el ajuste de clase que se aprovecha en este ejemplo.
 
 ```shell
 base=./css
@@ -57,7 +57,7 @@ base=./css
 htmldiff.less
 ```
 
-Cree la variable `less` que contiene las anulaciones de estilo en `/apps/my-project/clientlibs/authoring/css/htmldiff.less`y proporcione los estilos de superposición según sea necesario.
+Cree el `less` que contiene las anulaciones de estilo en `/apps/my-project/clientlibs/authoring/css/htmldiff.less`y proporcione los estilos generales según sea necesario.
 
 ```css
 /* Wrap with body to gives these rules more specificity than the OOTB */
@@ -103,11 +103,11 @@ body {
 }
 ```
 
-### Incluya la CSS clientlib de creación a través del componente de página {#include-the-authoring-clientlib-css-via-the-page-component}
+### Incluir el CSS clientlib de creación a través del componente de página {#include-the-authoring-clientlib-css-via-the-page-component}
 
-Incluya la categoría clientlibs de creación en la página base del proyecto `/apps/my-project/components/structure/page/customheaderlibs.html` directamente antes de la `</head>` para asegurarse de que se cargan los estilos.
+Incluya la categoría clientlibs de creación en la página base del proyecto `/apps/my-project/components/structure/page/customheaderlibs.html` directamente antes de `</head>` para asegurarse de que se cargan los estilos.
 
-Estos estilos deben limitarse a [!UICONTROL Editar] y [!UICONTROL vista previa] modos WCM.
+Estos estilos deben limitarse a [!UICONTROL Editar] y [!UICONTROL previsualización] Modos WCM.
 
 ```xml
 <head>
@@ -117,12 +117,12 @@ Estos estilos deben limitarse a [!UICONTROL Editar] y [!UICONTROL vista previa] 
 </head>
 ```
 
-El resultado final de una página de comparación de diferencias con los estilos aplicados anteriores tendría este aspecto (se ha añadido el HTML y se ha cambiado el componente).
+El resultado final de una página de comparación con los estilos anteriores aplicados tendría este aspecto (HTML añadido y Componente cambiado).
 
 ![Diferencia de página](assets/page-diff.png)
 
 ## Recursos adicionales {#additional-resources}
 
-* [Descargue el sitio de muestra de We.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases)
-* [Uso de AEM bibliotecas de cliente](https://helpx.adobe.com/es/experience-manager/6-5/sites/developing/using/clientlibs.html)
+* [Descargue el sitio de muestra de we.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases)
+* [AEM Uso de bibliotecas de cliente](https://helpx.adobe.com/es/experience-manager/6-5/sites/developing/using/clientlibs.html)
 * [Menos documentación de CSS](https://lesscss.org/)

@@ -1,6 +1,6 @@
 ---
-title: Crear HTML5 Forms
-description: Creación y configuración de formularios HTML5
+title: Crear Forms de HTML5
+description: Crear y configurar formularios de HTML5
 feature: Mobile Forms
 topics: development
 audience: developer
@@ -23,42 +23,42 @@ ht-degree: 12%
 
 # Creación de formularios de HTML5
 
-HTML5 forms es una nueva funcionalidad en Adobe Experience Manager que ofrece la representación de plantillas de formulario XFA (xdp) en formato HTML5. Esta capacidad permite procesar formularios tanto en dispositivos móviles como en exploradores de equipos de escritorio no compatibles con PDF basados en XFA. Los formularios HTML5 no solo son compatibles con las capacidades existentes de las plantillas de formulario XFA, sino que también agregan capacidades nuevas para dispositivos móviles, como la firma manuscrita.
+HTML5 forms es una nueva funcionalidad de Adobe Experience Manager que ofrece el procesamiento de plantillas de formulario XFA (xdp) en formato HTML 5. Esta capacidad permite procesar formularios tanto en dispositivos móviles como en exploradores de equipos de escritorio no compatibles con PDF basados en XFA. Los formularios HTML5 no solo son compatibles con las capacidades existentes de las plantillas de formulario XFA, sino que también agregan capacidades nuevas para dispositivos móviles, como la firma manuscrita.
 
 ## Requisitos previos
 
-Asegúrese de que tiene una instancia de AEM Forms en funcionamiento. Siga las [guía de instalación](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) para instalar y configurar AEM Forms
+Asegúrese de que tiene una instancia de trabajo de AEM Forms. Siga las [guía de instalación](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) para instalar y configurar AEM Forms
 
-## Crear el primer formulario de HTML 5
+## Creación de su primer formulario de HTML 5
 
-1. [Descargar y extraer el contenido del archivo zip](assets/assets.zip). El archivo zip contiene xdp y el archivo de datos
+1. [Descargue y extraiga el contenido del archivo zip](assets/assets.zip). El archivo zip contiene un xdp y un archivo de datos
 2. [Navegar a Forms y documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-3. Haga clic en Crear -> Carga de archivo
+3. Haga clic en Crear -> Cargar archivo
 4. Seleccione la plantilla xdp descargada en el paso 2
 
 ## Vista precia como HTML
 
-La vista previa del xdp se puede realizar en formato HTML5 o PDF. Para obtener una vista previa del xdp en formato HTML5, siga los siguientes pasos
+El xdp se puede previsualizar en formato HTML 5 o en formato PDF. Para obtener una vista previa del xdp en formato HTML5, siga estos pasos
 
-* Pulse en el xdp recién cargado y haga clic en _Vista previa -> Vista previa como HTML_. Debería ver el xdp representado como HTML5
+* Pulse el xdp recién cargado y haga clic en _Vista previa -> Vista previa como HTML_. Debería ver el xdp representado como HTML 5
 
 >[!NOTE]
->Al seleccionar _Vista previa como PDF_ el PDF procesado no se mostrará en el explorador porque AEM Forms procesa archivos pdf dinámicos que requieren el complemento de Acrobat. Tendrá que descargar el PDF y abrirlo con Adobe Acrobat/Reader para verlo
+>Al seleccionar _Vista previa como PDF_ opción el PDF procesado no se mostrará en el explorador porque AEM Forms procesa pdf dinámicos que requieren un complemento de Acrobat. Tendrá que descargar el PDF y abrirlo con Adobe Acrobat/Reader para verlo
 
 
 ## Vista previa con datos
 
-Para obtener una vista previa del xdp en formato HTML5 con el archivo de datos, siga los siguientes pasos:
+Para obtener una vista previa del xdp en formato HTML5 con archivo de datos, siga estos pasos:
 
-* Pulse en el xdp recién cargado y haga clic en _Vista previa -> Vista previa con datos_. Busque y seleccione el archivo de datos y haga clic en _Vista previa_.
-* Debería ver la plantilla procesada en formato HTML5 previamente rellenada con los datos
+* Pulse el xdp recién cargado y haga clic en _Vista previa -> Vista previa con datos_. Examine y seleccione el archivo de datos y haga clic en _Previsualizar_.
+* Debería ver la plantilla representada en formato HTML 5 rellenada previamente con los datos
 
 ## Explorar las propiedades avanzadas de la plantilla xdp
 
-Las propiedades avanzadas de la plantilla xdp permiten especificar la fecha de publicación, el controlador de envío, el perfil de procesamiento del formulario, el servicio de cumplimentación previa, etc. Para ver las propiedades avanzadas de la plantilla, pulse en el xdp y haga clic en _propiedades -> Avanzadas_. Aquí encontrará varias propiedades. Algunas de estas propiedades están cubiertas aquí.
+Las propiedades avanzadas de la plantilla xdp permiten especificar la fecha de publicación, el controlador de envío, el perfil de procesamiento del formulario, el servicio de relleno previo, etc. Para ver las propiedades avanzadas de la plantilla, pulse en el xdp y haga clic en _properties -> Advanced_. Aquí encontrará una serie de propiedades. Algunas de estas propiedades se tratan aquí.
 
-**Dirección URL de envío** - Esta es la dirección URL que administrará el envío del formulario de HTML5. En la siguiente lección trataremos esto. Si no se especifica una dirección URL de envío, se invoca el controlador de envío predeterminado, que devuelve los datos del formulario al explorador.
+**URL de envío** : Esta es la URL que administrará el envío del formulario de HTML5. Lo explicaremos en la siguiente lección. Si no se especifica una dirección URL de envío aquí, se invoca el controlador de envío predeterminado, que devuelve los datos del formulario al explorador.
 
-**Perfil de procesamiento del HTML** - Los formularios HTML5 tienen la noción de Perfiles que se exponen como extremos de REST para permitir el procesamiento móvil de plantillas de formulario. La mayoría de las veces el perfil de procesamiento predeterminado debe ser suficiente para procesar el formulario. Si el perfil de renderización predeterminado no se adapta a sus necesidades, [perfil personalizado](https://experienceleague.adobe.com/docs/experience-manager-65/forms/html5-forms/custom-profile.html) se puede crear y asociar al formulario.
+**Perfil de procesamiento del HTML** : Los formularios de HTML 5 tienen la noción Perfiles que se exponen como extremos REST para permitir el procesamiento móvil de plantillas de formulario. La mayoría de las veces, el perfil de procesamiento predeterminado debe ser suficiente para procesar el formulario. Si el perfil de procesamiento predeterminado no se ajusta a sus necesidades, [perfil personalizado](https://experienceleague.adobe.com/docs/experience-manager-65/forms/html5-forms/custom-profile.html) se puede crear y asociar al formulario.
 
-**Servicio de precarga** - El servicio de cumplimentación previa suele utilizarse para rellenar el formulario con datos recuperados de un origen de datos de servidor.
+**Servicio de prerrellenar** : El servicio de rellenado previo se suele utilizar para rellenar el formulario con datos recuperados de una fuente de datos back-end.

@@ -1,5 +1,5 @@
 ---
-title: Creación de ajustes preestablecidos de imagen con AEM Dynamic Media
+title: AEM Creación de ajustes preestablecidos de imagen con Dynamic Media de
 description: Configuración de ajustes preestablecidos de imagen con Dynamic Media
 role: Developer
 level: Intermediate
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ---
 
-# Creación de ajustes preestablecidos de imagen con AEM Dynamic Media
+# AEM Creación de ajustes preestablecidos de imagen con Dynamic Media de
 
 Este vídeo muestra los pasos para crear ajustes preestablecidos de imagen en Dynamic Media.
 

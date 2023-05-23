@@ -17,10 +17,10 @@ ht-degree: 46%
 # Introducción a AEM y Target {#aem-target-tutorial}
 
 + [Información general](./overview.md)
-+ [Personalización mediante AEM fragmentos de experiencias](./personalization-use-case-1.md)
++ [AEM Personalización mediante fragmentos de experiencias de la](./personalization-use-case-1.md)
 + [Personalización mediante el Compositor de experiencias visuales](./personalization-use-case-3.md)
 + [Personalización de las experiencias de página web completa](./personalization-use-case-2.md)
 + Implementación {#aem-target-implementation}
    + [Introducción](./implementation.md)
    + [AEM y Adobe Target con Launch y Adobe I/O](./using-launch-adobe-io.md)
-   + [AEM y Adobe Target con Cloud Services heredados](./using-aem-cloud-services.md)
+   + [AEM Adobe Target con Cloud Services heredados](./using-aem-cloud-services.md)

@@ -1,5 +1,5 @@
 ---
-title: Configuraciones de OSGi como objetos ObjectClassDefinition
+title: Configuraciones OSGi como objetos ObjectClassDefinition
 description: Aprenda a crear y designar ObjectClassDefinitions como representaciones de configuración OSGi en un servicio OSGi
 role: Developer
 level: Beginner
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ---
 
-# Configuraciones de OSGi como objetos ObjectClassDefinition
+# Configuraciones OSGi como objetos ObjectClassDefinition
 
 Aprenda a crear y designar ObjectClassDefinitions como representaciones de configuración OSGi en un servicio OSGi.
 

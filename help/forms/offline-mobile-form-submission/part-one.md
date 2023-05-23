@@ -1,7 +1,7 @@
 ---
-title: 'Flujo de trabajo AEM déclencheur en el envío de formulario HTML5: Crear perfil personalizado'
+title: 'Déclencheur AEM del flujo de trabajo de la en el envío de formularios HTM5: crear perfil personalizado'
 seo-title: Trigger AEM Workflow on HTML5 Form Submission
-description: Siga rellenando el formulario móvil en modo sin conexión y envíe el formulario móvil al flujo de trabajo AEM déclencheur
+description: Continúe rellenando el formulario móvil en el modo sin conexión y envíe el formulario móvil al flujo de trabajo de déclencheur AEM de la
 seo-description: Continue filling mobile form in offline mode and submit mobile form to trigger AEM workflow
 feature: Mobile Forms
 topics: development
@@ -16,21 +16,21 @@ exl-id: b6e3acee-4a07-4d00-b3a1-f7aedda21e6e
 source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
 workflow-type: tm+mt
 source-wordcount: '323'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # Crear perfil personalizado
 
-En esta parte crearemos un [perfil personalizado.](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html) Un perfil es responsable de procesar el XDP como HTML. Se proporciona un perfil predeterminado listo para usar para procesar XDP como HTML. Representa una versión personalizada del servicio de representación de Mobile Forms. Puede utilizar el servicio de representación de formularios de Mobile para personalizar el aspecto, el comportamiento y las interacciones de Mobile Forms. En nuestro perfil personalizado, capturaremos los datos rellenados en el formulario móvil mediante la API de guía. A continuación, estos datos se envían al servlet personalizado que genera un PDF interactivo y lo reenvía a la aplicación que realiza la llamada.
+En esta parte crearemos una [perfil personalizado.](https://helpx.adobe.com/es/livecycle/help/mobile-forms/creating-profile.html) Un perfil es responsable de procesar el XDP como HTML. Se proporciona un perfil predeterminado para procesar XDP como HTML. Representa una versión personalizada del servicio de representación de Forms móvil. Puede utilizar el servicio de representación de formularios móviles para personalizar el aspecto, el comportamiento y las interacciones de Mobile Forms. En nuestro perfil personalizado, capturaremos los datos rellenados en el formulario móvil mediante la API de guidebridge. A continuación, estos datos se envían a un servlet personalizado que genera un PDF interactivo y lo transmite de nuevo a la aplicación que realiza la llamada.
 
-Obtenga los datos del formulario mediante el `formBridge` API de JavaScript. Utilizamos el `getDataXML()` método:
+Obtener los datos del formulario mediante `formBridge` API de JavaScript. Hacemos uso de la `getDataXML()` método:
 
 ```javascript
 window.formBridge.getDataXML({success:suc,error:err});
 ```
 
-En el método del controlador de éxito hacemos una llamada al servlet personalizado que se ejecuta en AEM. Este servlet procesará y devolverá un pdf interactivo con los datos del formulario móvil
+AEM En el método del controlador de éxito, realizamos una llamada al servlet personalizado que se ejecuta en el modo de ejecución de la. Este servlet procesará y devolverá un pdf interactivo con los datos del formulario móvil
 
 ```javascript
 var suc = function(obj) {
@@ -63,7 +63,7 @@ var suc = function(obj) {
 
 ## Generar PDF interactivo
 
-El siguiente es el código servlet que es responsable de procesar el pdf interactivo y devolver el pdf a la aplicación que realiza la llamada. El servlet invoca `mobileFormToInteractivePdf` método del servicio personalizado DocumentServices OSGi.
+El siguiente es el código de servlet responsable de procesar el pdf interactivo y devolver el pdf a la aplicación que realiza la llamada. El servlet invoca `mobileFormToInteractivePdf` del servicio OSGi de Document Services personalizado.
 
 ```java
 import java.io.File;
@@ -123,9 +123,9 @@ public class GenerateInteractivePDF extends SlingAllMethodsServlet {
 }
 ```
 
-### Representar PDF interactivo
+### Procesar PDF interactivo
 
-El siguiente código utiliza la variable [API del servicio de Forms](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/forms/api/FormsService.html) para procesar un PDF interactivo con los datos del formulario móvil.
+El siguiente código utiliza la variable [API del servicio Forms](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/forms/api/FormsService.html) para procesar el PDF interactivo con los datos del formulario móvil.
 
 ```java
 public Document mobileFormToInteractivePdf(Document xmlData,String path) {
@@ -148,7 +148,7 @@ public Document mobileFormToInteractivePdf(Document xmlData,String path) {
 }
 ```
 
-Para ver la capacidad de descargar un PDF interactivo desde un formulario móvil parcialmente completado, [haga clic aquí](https://forms.enablementadobe.com/content/dam/formsanddocuments/xdptemplates/schengenvisa.xdp/jcr:content).
-Una vez descargado el PDF, el siguiente paso es enviar el PDF para el déclencheur de un flujo de trabajo AEM. Este flujo de trabajo combina los datos del PDF enviado y genera un PDF no interactivo para su revisión.
+Para ver la capacidad de descargar el PDF interactivo desde un formulario móvil parcialmente completado, [haga clic aquí](https://forms.enablementadobe.com/content/dam/formsanddocuments/xdptemplates/schengenvisa.xdp/jcr:content).
+Una vez descargado el PDF, el siguiente paso es enviar al PDF al déclencheur AEM de un flujo de trabajo de la. Este flujo de trabajo combina los datos del PDF enviado y genera un PDF no interactivo para su revisión.
 
-El perfil personalizado creado para este caso de uso está disponible como parte de estos recursos de tutorial.
+El perfil personalizado creado para este caso de uso está disponible como parte de los recursos de este tutorial.

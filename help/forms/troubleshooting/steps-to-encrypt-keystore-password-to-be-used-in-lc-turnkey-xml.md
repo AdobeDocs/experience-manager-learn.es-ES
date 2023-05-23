@@ -1,6 +1,6 @@
 ---
-title: Pasos para cifrar la contraseña del almacén de claves para usarla en lc_turnkey.xml
-description: Codificar la contraseña del almacén de claves para configurarla en el archivo lc_turnkey.xml
+title: Pasos para cifrar la contraseña del almacén de claves que se utilizará en lc_turnkey.xml
+description: Cifrar contraseña de almacén de claves para configurar en archivo lc_turnkey.xml
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# Pasos para cifrar la contraseña del almacén de claves para usarla en lc_turnkey.xml
+# Pasos para cifrar la contraseña del almacén de claves que se utilizará en lc_turnkey.xml
 
-*Este vídeo muestra los pasos para cifrar la contraseña de almacén de claves que se utilizará en lc_turnkey.xml.*
+*Este vídeo explica los pasos para cifrar la contraseña del almacén de claves que se utilizará en lc_turnkey.xml.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335538?quality=12&learn=on)

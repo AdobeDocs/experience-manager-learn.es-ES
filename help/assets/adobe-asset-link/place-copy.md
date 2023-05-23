@@ -1,6 +1,6 @@
 ---
-title: Uso de la operación Colocar copia de recursos
-description: Aprenda a utilizar recursos de AEM Assets mediante la operación Colocar copia.
+title: Uso de la operación Colocar recurso de copia
+description: Obtenga información sobre cómo utilizar recursos de AEM Assets mediante la operación Colocar copia.
 sub-product: Experience Manager Assets
 feature: Adobe Asset Link
 version: Cloud Service
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Colocar copia {#place-copy}
 
-Aprenda a utilizar recursos de AEM Assets mediante la operación Colocar copia.
+Obtenga información sobre cómo utilizar recursos de AEM Assets mediante la operación Colocar copia.
 
 >[!VIDEO](https://video.tv.adobe.com/v/34049?quality=12&learn=on)

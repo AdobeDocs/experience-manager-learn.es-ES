@@ -1,6 +1,6 @@
 ---
 title: Conversor de índices
-description: Descubra cómo el conversor de índices convierte automáticamente las definiciones de índices de AEM existentes para que sean compatibles con AEM as a Cloud Service.
+description: AEM AEM Descubra cómo el Conversor de índices convierte automáticamente las definiciones de índice de la existentes para que sean compatibles con el as a Cloud Service.
 version: Cloud Service
 feature: Migration
 topic: Migration, Upgrade
@@ -18,6 +18,6 @@ ht-degree: 9%
 
 # Conversor de índices
 
-Descubra cómo el conversor de índices convierte automáticamente las definiciones de índices de AEM existentes para que sean compatibles con AEM as a Cloud Service.
+AEM AEM Descubra cómo el Conversor de índices convierte automáticamente las definiciones de índice de la existentes para que sean compatibles con el as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336696?quality=12&learn=on)

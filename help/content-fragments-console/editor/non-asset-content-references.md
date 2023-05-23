@@ -1,6 +1,6 @@
 ---
 title: 'Referencias de contenido que no son de recursos: editor de fragmentos de contenido'
-description: Descubra cómo los campos Contenido de fragmento de contenido admiten la referencia a varios tipos de contenido AEM, como fragmentos de experiencias y páginas.
+description: AEM Descubra cómo los campos de contenido de fragmentos de contenido son compatibles con los distintos tipos de contenido de la, como Fragmentos de experiencias y Páginas.
 version: Cloud Service
 feature: Content Fragments
 topic: Content Management
@@ -17,8 +17,8 @@ ht-degree: 0%
 ---
 
 
-# Referencias de contenido que no son de recursos
+# Referencias de contenido que no son recursos
 
-Descubra cómo los campos Contenido de fragmento de contenido admiten la referencia a varios tipos de contenido AEM, como fragmentos de experiencias y páginas.
+AEM Descubra cómo los campos de contenido de fragmentos de contenido son compatibles con los distintos tipos de contenido de la, como Fragmentos de experiencias y Páginas.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419313/?learn=on)

@@ -20,7 +20,7 @@ ht-degree: 4%
 
 # Interfaz
 
-Cree una interfaz con las siguientes 2 definiciones de método.
+Cree una interfaz con las dos definiciones de método siguientes.
 
 ```java
 package com.aemforms.doccloud.core;

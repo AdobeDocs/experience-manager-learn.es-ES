@@ -1,6 +1,6 @@
 ---
-title: Cómo investigar problemas relacionados con la búsqueda en AEM
-description: Pasos para investigar problemas relacionados con la búsqueda
+title: AEM Cómo investigar los problemas relacionados con la búsqueda en la
+description: Pasos para investigar los problemas relacionados con la búsqueda
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Cómo investigar problemas relacionados con la búsqueda en AEM
+# AEM Cómo investigar los problemas relacionados con la búsqueda en la
 
-*Este vídeo muestra los pasos para investigar los problemas relacionados con la búsqueda en AEM.*
+*AEM Este vídeo explica los pasos para investigar los problemas relacionados con la búsqueda en la.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335467?quality=12&learn=on)

@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Cómo aumentar el tiempo de espera de sesión de mensajería unificada
 
-*Este vídeo explica el proceso de aumento del tiempo de espera de sesión de mensajería unificada.*
+*Este vídeo muestra el proceso de aumentar el tiempo de espera de sesión de mensajería unificada.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335503?quality=12&learn=on)

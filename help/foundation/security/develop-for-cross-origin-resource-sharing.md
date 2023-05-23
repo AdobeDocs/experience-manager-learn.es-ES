@@ -1,6 +1,6 @@
 ---
-title: Desarrollo para el intercambio de recursos de origen cruzado (CORS) con AEM
-description: Un breve ejemplo de cómo aprovechar CORS para acceder a contenido AEM desde una aplicación web externa a través de JavaScript del lado del cliente.
+title: AEM Desarrollo para el Intercambio de Recursos de Origen Cruzado (CORS) con la ayuda de la comunidad de
+description: AEM Un breve ejemplo de cómo aprovechar CORS para acceder a contenido de la desde una aplicación web externa a través de JavaScript del lado del cliente.
 version: 6.4, 6.5
 topic: Security, Development
 role: Developer
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 ---
 
-# Desarrollo para el intercambio de recursos de origen cruzado (CORS)
+# Desarrollo para el Intercambio de Recursos de Origen Cruzado (CORS)
 
-Un breve ejemplo de apalancamiento [!DNL CORS] para acceder a AEM contenido desde una aplicación web externa a través de JavaScript del lado del cliente.
+Un breve ejemplo de uso [!DNL CORS] AEM para acceder a contenido de la desde una aplicación web externa a través de JavaScript del lado del cliente.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18837?quality=12&learn=on)
 
@@ -24,20 +24,20 @@ En este vídeo:
 
 * **www.example.com** se asigna a localhost mediante `/etc/hosts`
 * **aem-publish.local** se asigna a localhost mediante `/etc/hosts`
-* SimpleHTTPServer (un envoltorio para [[!DNL Python]s SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)) sirve la página del HTML a través del puerto 8000.
-   * _Ya no está disponible en Mac App Store. Usar de forma similar como [Jeeves](https://apps.apple.com/us/app/jeeves-local-http-server/id980824182?mt=12)._
-* [!DNL AEM Dispatcher] se está ejecutando en [!DNL Apache HTTP Web Server] 2.4 y solicitud de proxy inverso a `aem-publish.local` a `localhost:4503`.
+* SimpleHTTPServer (un contenedor para [[!DNL Python]SimpleHTTPServer de](https://docs.python.org/2/library/simplehttpserver.html)) sirve la página del HTML a través del puerto 8000.
+   * _Ya no está disponible en Mac App Store. Utilice funciones similares como [Jeeves](https://apps.apple.com/us/app/jeeves-local-http-server/id980824182?mt=12)._
+* [!DNL AEM Dispatcher] se está ejecutando el [!DNL Apache HTTP Web Server] 2.4 y la solicitud de proxy inverso a `aem-publish.local` hasta `localhost:4503`.
 
-Para obtener más información, consulte [Explicación del uso compartido de recursos de origen cruzado (CORS) en AEM](./understand-cross-origin-resource-sharing.md).
+Para obtener más información, consulte [AEM Comprender el Intercambio de Recursos de Origen Cruzado (CORS) en la](./understand-cross-origin-resource-sharing.md).
 
-## www.example.com HTML y JavaScript
+## HTML de www.example.com y JavaScript
 
-Esta página web tiene lógica que
+Esta página web tiene una lógica que
 
 1. Al hacer clic en el botón
-1. Hace un [!DNL AJAX GET] solicitar a `http://aem-publish.local/content/we-retail/.../experience/_jcr_content.1.json`
-1. Recupera la variable `jcr:title` formulario de la respuesta JSON
-1. Inyecta el `jcr:title` en el DOM
+1. Crea un [!DNL AJAX GET] solicitud a `http://aem-publish.local/content/we-retail/.../experience/_jcr_content.1.json`
+1. Recupera el `jcr:title` de la respuesta JSON
+1. Inserta el `jcr:title` en el DOM
 
 ```xml
 <html>
@@ -72,7 +72,7 @@ Esta página web tiene lógica que
 
 ## Configuración de fábrica de OSGi
 
-La fábrica de configuración OSGi para [!DNL Cross-Origin Resource Sharing] está disponible a través de:
+La fábrica de configuración de OSGi para [!DNL Cross-Origin Resource Sharing] está disponible mediante:
 
 * `http://<host>:<port>/system/console/configMgr > [!UICONTROL Adobe Granite Cross-Origin Resource Sharing Policy]`
 
@@ -94,7 +94,7 @@ Access-Control-Request-Method,Access-Control-Request-Headers]"
 
 ## Configuración de Dispatcher {#dispatcher-configuration}
 
-Para permitir el almacenamiento en caché y la entrega de encabezados CORS en contenido almacenado en caché, agregue lo siguiente [/clientheaders configuración](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders) a todos los que admiten AEM Publish `dispatcher.any` archivos.
+Para permitir el almacenamiento en caché y el servicio de encabezados CORS en contenido almacenado en caché, agregue lo siguiente [Configuración de /clientheaders](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders) a todos los que admitan AEM Publish `dispatcher.any` archivos.
 
 ```
 /myfarm { 
@@ -111,15 +111,15 @@ Para permitir el almacenamiento en caché y la entrega de encabezados CORS en co
 }
 ```
 
-**Reinicio de la aplicación del servidor web** después de realizar cambios en `dispatcher.any` archivo.
+**Reinicie la aplicación del servidor web** después de realizar cambios en el `dispatcher.any` archivo.
 
-Es probable que se borre la caché por completo para garantizar que los encabezados se almacenen correctamente en caché en la siguiente solicitud después de una `/clientheaders` actualización de configuración.
+Es probable que se necesite borrar la caché por completo para garantizar que los encabezados se almacenen correctamente en la caché en la siguiente solicitud después de un `/clientheaders` actualización de configuración.
 
 ## Materiales de apoyo {#supporting-materials}
 
 * [Jeeves para macOS](https://apps.apple.com/us/app/jeeves-local-http-server/id980824182?mt=12)
-* [Servidor Python SimpleHTTPS](https://docs.python.o:qrg/2/library/simplehttpserver.html) (compatible con Windows/macOS/Linux)
+* [Python SimpleHTTPServer](https://docs.python.o:qrg/2/library/simplehttpserver.html) (Compatible con Windows/macOS/Linux)
 
-* [Explicación del uso compartido de recursos de origen cruzado (CORS) en AEM](./understand-cross-origin-resource-sharing.md)
-* [Uso compartido de recursos de origen cruzado (W3C)](https://www.w3.org/TR/cors/)
-* [Control de acceso HTTP (MDN Mozilla)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)
+* [AEM Comprender el Intercambio de Recursos de Origen Cruzado (CORS) en la](./understand-cross-origin-resource-sharing.md)
+* [Intercambio de recursos de origen cruzado (W3C)](https://www.w3.org/TR/cors/)
+* [Control de acceso HTTP (Mozilla MDN)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)

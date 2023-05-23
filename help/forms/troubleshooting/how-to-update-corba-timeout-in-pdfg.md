@@ -1,6 +1,6 @@
 ---
-title: ¿Cómo actualizar el tiempo de espera de CORBA en PDFG para mitigar los problemas de devolución de transacciones?
-description: Configure el tiempo de espera de CORBA en el Generador de PDF de AEM Forms para resolver problemas relacionados con la reversión de transacciones
+title: ¿Cómo actualizar el tiempo de espera de CORBA en PDFG para mitigar los problemas de reversión de transacciones?
+description: Configure el tiempo de espera de CORBA en AEM Forms PDF Generator para resolver los problemas relacionados con la reversión de transacciones
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Actualizar el tiempo de espera de CORBA en PDFG para mitigar los problemas de reversión de las transacciones
+# Actualizar el tiempo de espera de CORBA en PDFG para mitigar los problemas de reversión de transacciones
 
-*Este vídeo describe el proceso de actualización del tiempo de espera de CORBA en el PDFG de Forms para mitigar los problemas de reversión de transacciones.*
+*En este vídeo se describe el proceso de actualización del tiempo de espera de CORBA en Forms PDFG para mitigar los problemas de reversión de transacciones.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335512?quality=12&learn=on)

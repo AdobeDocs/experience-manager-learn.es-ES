@@ -1,6 +1,6 @@
 ---
-title: Cómo utilizar la bandeja de entrada en AEM
-description: AEM bandeja de entrada facilita la buena colaboración y visibilidad de las tareas y el flujo de trabajo.
+title: AEM Cómo utilizar la bandeja de entrada en la
+description: AEM La bandeja de entrada facilita la buena colaboración y visibilidad de las tareas y el flujo de trabajo.
 version: 6.4, 6.5, Cloud Service
 topic: Collaboration
 feature: Workflow
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Uso de la bandeja de entrada en AEM
+# AEM Uso de la bandeja de entrada en la
 
-AEM Bandeja de entrada facilita la colaboración buena y la visibilidad de las tareas y el flujo de trabajo. La Vista de calendario de la bandeja de entrada rastrea proyectos y tareas en una vista basada en el tiempo para facilitar la administración y programación de proyectos. Con la vista Calendario, el usuario tendría una visibilidad general sobre los proyectos y tareas que están actualmente en curso, planificados, pendientes pronto y vencidos.
+AEM La Bandeja de entrada de facilita la buena colaboración y visibilidad de las tareas y el flujo de trabajo. La vista Calendario de la Bandeja de entrada realiza un seguimiento de los proyectos y las tareas en una vista basada en el tiempo para facilitar la administración y la programación de los proyectos. Con la vista Calendario, el usuario tendría una visibilidad general de los proyectos y las tareas que están actualmente en curso, planificados, con vencimiento pronto y con vencimiento anterior.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16827?quality=12&learn=on)

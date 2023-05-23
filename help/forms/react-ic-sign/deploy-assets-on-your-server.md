@@ -1,6 +1,6 @@
 ---
 title: Implementar los recursos de ejemplo en el servidor
-description: Obtener el caso de uso que funciona en el servidor local
+description: Ponga el caso de uso en funcionamiento en el servidor local
 feature: Adaptive Forms,Acrobat Sign
 version: 6.4,6.5
 topic: Development
@@ -8,30 +8,31 @@ role: Developer
 level: Beginner
 kt: 13099
 last-substantial-update: 2023-04-13T00:00:00Z
-source-git-commit: 155e6e42d4251b731d00e2b456004016152f81fe
+exl-id: 44f4261b-d6fe-42ad-a3aa-2a36ca897b5e
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '148'
 ht-degree: 0%
 
 ---
 
-# Implementar los recursos
+# Implementación de los recursos
 
-Se implementaron los siguientes recursos/configuraciones en un servidor de publicación de AEM Forms.
+Los siguientes activos/configuraciones se implementaron en un servidor de publicación de AEM Forms.
 
-* [Paquete de envoltura de Adobe Sign](assets/AcrobatSign.core-1.0.0-SNAPSHOT.jar)
+* [Paquete de envoltorio de Adobe Sign](assets/AcrobatSign.core-1.0.0-SNAPSHOT.jar)
 
-* [Ejemplo de plantilla de comunicación interactiva](assets/waiver-interactive-communication.zip)
-* [Implementar el paquete DevelopingWithServiceUser](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip)
-* Añada la siguiente entrada en el servicio de Apache Sling Service User Mapper Service utilizando OSGi configMgr
-   **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service**
-* [El código de la aplicación React de muestra se puede descargar desde aquí](assets/src.zip)
+* [Plantilla de comunicación interactiva de ejemplo](assets/waiver-interactive-communication.zip)
+* [Implementar el paquete DevelopersWithServiceUser](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip)
+* Agregue la siguiente entrada en el servicio del asignador de usuarios del servicio Apache Sling mediante OSGi configMgr
+   **DesarrollarWithServiceUser.core:getformsresourceresolver=fd-service**
+* [Puede descargar un ejemplo de código de aplicación de React desde aquí](assets/src.zip)
 
 
 
-La aplicación de reacción de ejemplo debe implementarse en el entorno local
+La aplicación react de ejemplo debe implementarse en el entorno local.
 
-Deberá cambiar la dirección URL del extremo para que coincida con su entorno. Abra el archivo EmergencyContact.js y cambie la dirección URL en el método de recuperación
+Debe cambiar la dirección URL del punto de conexión para que coincida con su entorno. Abra el archivo EmergencyContact.js y cambie la dirección URL en el método fetch
 
 ```javascript
  const getWebForm=async()=>
@@ -48,9 +49,6 @@ Deberá cambiar la dirección URL del extremo para que coincida con su entorno. 
  
 ```
 
-Para habilitar la realización de llamadas de POST al extremo de AEM desde la aplicación REACT, deberá especificar las entradas adecuadas en el campo Orígenes permitidos de la configuración de la directiva de uso compartido de recursos de origen cruzado de Adobe Granite
+Para habilitar la realización de llamadas del POST AEM al punto de conexión de la aplicación REACT desde el punto de conexión de la aplicación, deberá especificar las entradas adecuadas en el campo Orígenes permitidos en la configuración de la política de uso compartido de recursos de origen cruzado de Granite de Adobe
 
-![configuración de cors](assets/cors-settings.png)
-
-
-
+![establecimiento de cors](assets/cors-settings.png)

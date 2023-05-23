@@ -1,6 +1,6 @@
 ---
-title: Conceptos básicos de modelos de GraphQL
-description: Obtenga información sobre cómo definir y utilizar fragmentos de contenido en Adobe Experience Manager (AEM) para su uso con GraphQL.
+title: Conceptos básicos de modelado de GraphQL
+description: Aprenda a definir y utilizar fragmentos de contenido en Adobe Experience Manager AEM () para su uso con GraphQL.
 version: Cloud Service
 topic: Headless, Content Management
 feature: Content Fragments, GraphQL API
@@ -17,14 +17,14 @@ ht-degree: 0%
 
 ---
 
-# Conceptos básicos de modelos de GraphQL
+# Conceptos básicos de modelado de GraphQL
 
-Obtenga información sobre cómo definir y utilizar fragmentos de contenido en Adobe Experience Manager (AEM) para su uso con GraphQL.
+Aprenda a definir y utilizar fragmentos de contenido en Adobe Experience Manager AEM () para su uso con GraphQL.
 
 En este vídeo:
 
 + Obtenga información sobre cómo crear y definir un modelo de fragmento de contenido
-+ Obtenga información sobre los distintos tipos de datos utilizados para crear el modelo de fragmento de contenido
-+ Comprender cómo el modelo de fragmento de contenido impulsa la API de GraphQL
++ Obtenga información acerca de los distintos tipos de datos utilizados para crear el modelo de fragmento de contenido
++ Comprender cómo el modelo de fragmentos de contenido impulsa la API de GraphQL
 
 >[!VIDEO](https://video.tv.adobe.com/v/332858?quality=12&learn=on)

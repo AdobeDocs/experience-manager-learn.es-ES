@@ -1,6 +1,6 @@
 ---
-title: Depuración AEM SDK mediante registros
-description: Los registros actúan como primera línea para depurar aplicaciones AEM, pero dependen del registro adecuado en la aplicación de AEM implementada.
+title: AEM Depuración del SDK de mediante registros
+description: AEM AEM Los registros actúan como primera línea para la depuración de aplicaciones de, pero dependen del inicio de sesión adecuado en la aplicación de la aplicación de la aplicación de la aplicación implementada.
 feature: Developer Tools
 topics: development
 version: Cloud Service
@@ -19,43 +19,43 @@ ht-degree: 2%
 
 ---
 
-# Depuración AEM SDK mediante registros
+# AEM Depuración del SDK de mediante registros
 
-Al acceder a los registros del SDK de AEM, tanto el SDK local de AEM de inicio rápido Jar como las herramientas de Dispatcher pueden proporcionar perspectivas clave sobre la depuración de las aplicaciones de AEM.
+AEM AEM AEM Al acceder a los registros del SDK de la, ya sea el Jar de inicio rápido local del SDK de la aplicación de la aplicación de la aplicación de la aplicación de la o las herramientas de Dispatcher, puede proporcionar información clave sobre la depuración de las aplicaciones de la aplicación.
 
-## Registros de AEM
+## AEM Registros de
 
 >[!VIDEO](https://video.tv.adobe.com/v/34334?quality=12&learn=on)
 
-Los registros actúan como primera línea para depurar aplicaciones AEM, pero dependen del registro adecuado en la aplicación de AEM implementada. Adobe recomienda mantener el desarrollo local y AEM configuraciones de registro de desarrollo as a Cloud Service como sea posible, ya que normaliza la visibilidad del registro en los entornos de inicio rápido locales del SDK de AEM y en los entornos de desarrollo de AEM as a Cloud Service, lo que reduce la manipulación y la reimplementación de la configuración.
+AEM AEM Los registros actúan como primera línea para la depuración de aplicaciones de, pero dependen del inicio de sesión adecuado en la aplicación de la aplicación de la aplicación de la aplicación implementada. Adobe AEM recomienda mantener las configuraciones de desarrollo local y registro de desarrollo as a Cloud Service AEM AEM as a Cloud Service de la manera más similar posible, ya que normaliza la visibilidad del registro en los entornos de desarrollo de inicio rápido local y de desarrollo de la aplicación del SDK de la, lo que reduce la alternancia y la reimplementación de la configuración.
 
-La variable [Tipo de archivo del proyecto AEM](https://github.com/adobe/aem-project-archetype) configura el registro en el nivel de depuración para los paquetes Java de su aplicación AEM para el desarrollo local a través de la configuración OSGi de Sling Logger que se encuentra en
+El [AEM Tipo de archivo del proyecto](https://github.com/adobe/aem-project-archetype) AEM configura el registro en el nivel de DEPURACIÓN para los paquetes Java de la aplicación de la aplicación para el desarrollo local mediante la configuración OSGi del registrador de Sling que se encuentra en
 
 `ui.apps/src/main/content/jcr_root/apps/example/config/org.apache.sling.commons.log.LogManager.factory.config-example.cfg.json`
 
-que inicia sesión en el `error.log`.
+que inicia sesión en `error.log`.
 
-Si el registro predeterminado no es suficiente para el desarrollo local, el registro ad hoc se puede configurar mediante la consola web local de inicio rápido del SDK, en ([/system/console/slinglog](http://localhost:4502/system/console/slinglog)), sin embargo, no se recomienda que los cambios ad hoc se mantengan en Git a menos que estas mismas configuraciones de registro se necesiten también en AEM entornos de desarrollo as a Cloud Service. Tenga en cuenta que los cambios realizados a través de la consola de soporte de registro se mantienen directamente en el repositorio local de inicio rápido del SDK AEM.
+AEM Si el registro predeterminado no es suficiente para el desarrollo local, se puede configurar el registro ad hoc a través de la consola web de soporte de registros local de inicio rápido del SDK, en ([/system/console/slinglog](http://localhost:4502/system/console/slinglog)AEM ), sin embargo, no se recomienda que se mantengan los cambios ad hoc en Git a menos que estas mismas configuraciones de registro también sean necesarias en entornos de desarrollo as a Cloud Service de la. AEM Tenga en cuenta que los cambios realizados a través de la consola de compatibilidad de registros se conservan directamente en el repositorio de inicio rápido local del SDK de la.
 
-Las instrucciones de registro de Java se pueden ver en la sección `error.log` archivo:
+Las sentencias de registro de Java se pueden ver en `error.log` archivo:
 
 ```
 $ ~/aem-sdk/author/crx-quickstart/logs/error.log
 ```
 
-A menudo es útil &quot;seguir&quot; el `error.log` que transmite su salida al terminal.
+A menudo, es útil &quot;seguir&quot; el `error.log` que transmite su salida al terminal.
 
 + macOS/Linux
    + `$ tail -f ~/aem-sdk/author/crx-quickstart/logs/error.log`
-+ Windows requiere [Aplicaciones de cola de terceros](https://stackoverflow.com/questions/187587/a-windows-equivalent-of-the-unix-tail-command) o el uso de [Comando Get-Content de Powershell](https://stackoverflow.com/a/46444596/133936).
++ Windows requiere [aplicaciones de cola de terceros](https://stackoverflow.com/questions/187587/a-windows-equivalent-of-the-unix-tail-command) o el uso de [Comando Get-Content de Powershell](https://stackoverflow.com/a/46444596/133936).
 
 ## Registros de Dispatcher
 
-Los registros de Dispatcher se emiten para stdout cuando `bin/docker_run` se invoca, sin embargo los registros pueden tener acceso directo con en el contenedor Docker.
+Los registros de Dispatcher se envían a stdout cuando `bin/docker_run` se invoca, pero se puede acceder directamente a los registros con en el contenedor Docker.
 
-### Acceso a los registros en el contenedor Docker{#dispatcher-tools-access-logs}
+### Acceder a los registros del contenedor Docker{#dispatcher-tools-access-logs}
 
-Los registros de Dispatcher pueden acceder directamente al contenedor Docker en `/etc/httpd/logs`.
+Se puede acceder directamente a los registros de Dispatcher en el contenedor Docker en `/etc/httpd/logs`.
 
 ```shell
 $ docker ps
@@ -75,12 +75,12 @@ $ docker exec -it <CONTAINER ID> /bin/sh
 /# exit
 ```
 
-_La variable `<CONTAINER ID>` en `docker exec -it <CONTAINER ID> /bin/sh` debe reemplazarse por el ID del CONTENEDOR del Docker de destino enumerado en el `docker ps` comando._
+_El `<CONTAINER ID>` in `docker exec -it <CONTAINER ID> /bin/sh` debe reemplazarse por el ID del CONTENEDOR de Docker de destino indicado en la `docker ps` comando._
 
 
-### Copia de los registros de Docker al sistema de archivos local{#dispatcher-tools-copy-logs}
+### Copiar los registros de Docker al sistema de archivos local{#dispatcher-tools-copy-logs}
 
-Los registros de Dispatcher se pueden copiar fuera del contenedor de Docker en `/etc/httpd/logs` al sistema de archivos local para su inspección con su herramienta favorita de análisis de registros. Tenga en cuenta que se trata de una copia puntual y no proporciona actualizaciones en tiempo real de los registros.
+Los registros de Dispatcher se pueden copiar desde el contenedor de Docker en `/etc/httpd/logs` Vaya al sistema de archivos local para inspeccionarlo con su herramienta de análisis de registros favorita. Tenga en cuenta que se trata de una copia puntual y no proporciona actualizaciones en tiempo real de los registros.
 
 ```shell
 $ docker ps
@@ -95,4 +95,4 @@ $ ls
     dispatcher.log          healthcheck_access_log  httpd_access.log        httpd_error.log
 ```
 
-_La variable `<CONTAINER_ID>` en `docker cp <CONTAINER_ID>:/var/log/apache2 ./` debe reemplazarse por el ID del CONTENEDOR del Docker de destino enumerado en el `docker ps` comando._
+_El `<CONTAINER_ID>` in `docker cp <CONTAINER_ID>:/var/log/apache2 ./` debe reemplazarse por el ID del CONTENEDOR de Docker de destino indicado en la `docker ps` comando._

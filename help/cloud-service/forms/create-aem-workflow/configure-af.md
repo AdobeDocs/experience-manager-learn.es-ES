@@ -1,6 +1,6 @@
 ---
-title: Configuración del formulario adaptable en el flujo de trabajo de déclencheur
-description: Flujo de trabajo de déclencheur en el envío del formulario adaptable.
+title: Configuración del formulario adaptable para flujo de trabajo de déclencheur
+description: Flujo de trabajo de déclencheur en el envío de formularios adaptables.
 solution: Experience Manager,Experience Manager Forms
 type: Documentation
 role: Developer
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ---
 
-# Configuración del formulario adaptable en el flujo de trabajo de déclencheur
+# Configuración del formulario adaptable para flujo de trabajo de déclencheur
 
 Configuración del formulario adaptable para almacenar en déclencheur el flujo de trabajo de revisión
 

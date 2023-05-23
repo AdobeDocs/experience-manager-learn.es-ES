@@ -1,6 +1,6 @@
 ---
 title: Desarrollo de estados de recursos en AEM Sites
-description: 'La API del estado de los recursos de Adobe Experience Manager es un marco conectable para exponer los mensajes de estado en AEM varias IU web de editor. '
+description: Las API de estado de recursos de Adobe Experience Manager AEM son un marco conectable para exponer la mensajería de estado en varias IU web de editor de interfaz de usuario.
 topics: development
 audience: developer
 doc-type: tutorial
@@ -16,46 +16,46 @@ ht-degree: 2%
 
 # Desarrollo de estados de recursos {#developing-resource-statuses-in-aem-sites}
 
-La API del estado de los recursos de Adobe Experience Manager es un marco conectable para exponer los mensajes de estado en AEM varias IU web de editor.
+Las API de estado de recursos de Adobe Experience Manager AEM son un marco conectable para exponer la mensajería de estado en varias IU web de editor de interfaz de usuario.
 
 ## Información general {#overview}
 
-El marco Estado de los recursos para editores proporciona API del lado del servidor y del lado del cliente para mostrar los estados del editor y para interactuar con ellos de forma estándar y uniforme.
+El marco de trabajo Estado de los recursos para editores proporciona API del lado del servidor y del lado del cliente para mostrar e interactuar con los estados del editor, de una manera estándar y uniforme.
 
-Las barras de estado del editor están disponibles de forma nativa en los editores de página, fragmento de experiencia y plantilla de AEM.
+AEM Las barras de estado del editor están disponibles de forma nativa en los editores de páginas, fragmentos de experiencias y plantillas de la página de.
 
-Algunos ejemplos de casos de uso para los proveedores de estado de recursos personalizados son:
+Casos de uso de ejemplo para proveedores de estado de recursos personalizados:
 
-* Notificación a los autores cuando una página esté dentro de las 2 horas siguientes a la activación programada
-* Notificación a los autores de que una página se ha activado en los últimos 15 minutos
-* Notificación a los autores de que una página se ha editado en los últimos 5 minutos y por quién
+* Notificar a los autores cuando una página se encuentra dentro de las 2 horas de la activación programada
+* Notificar a los autores que una página se ha activado en los últimos 15 minutos
+* Notificar a los autores que una página se editó en los últimos 5 minutos y quién la editó
 
-![Descripción general del estado de los recursos del editor de AEM](assets/sample-editor-resource-status-screenshot.png)
+![AEM Resumen del estado del recurso de editor de](assets/sample-editor-resource-status-screenshot.png)
 
-## Marco del proveedor de estado de recurso {#resource-status-provider-framework}
+## Marco del proveedor de estado de recursos {#resource-status-provider-framework}
 
-Al desarrollar estados de recursos personalizados, el trabajo de desarrollo consiste en:
+Al desarrollar estados de recursos personalizados, el trabajo de desarrollo consta de:
 
-1. La implementación de ResourceStatusProvider, que es responsable de determinar si se requiere un estado, y la información básica sobre el estado: título, mensaje, prioridad, variante, icono y acciones disponibles.
+1. La implementación de ResourceStatusProvider, que es responsable de determinar si un estado es necesario, y la información básica sobre el estado: título, mensaje, prioridad, variante, icono y acciones disponibles.
 2. De forma opcional, GraniteUI JavaScript que implementa la funcionalidad de cualquier acción disponible.
 
-   ![arquitectura del estado de los recursos](assets/sample-editor-resource-status-application-architecture.png)
+   ![arquitectura de estado de recursos](assets/sample-editor-resource-status-application-architecture.png)
 
-3. El recurso de estado proporcionado como parte de los editores de página, fragmento de experiencia y plantilla tiene un tipo a través de los recursos &quot;[!DNL statusType]&quot;.
+3. El recurso de estado proporcionado como parte de los editores de página, fragmento de experiencia y plantilla recibe un tipo a través de los recursos &quot;[!DNL statusType]&quot; propiedad.
 
-   * Editor de páginas: `editor`
+   * Editor de página: `editor`
    * Editor de fragmentos de experiencias: `editor`
    * Editor de plantillas: `template-editor`
 
 4. El recurso de estado `statusType` coincide con registrado `CompositeStatusType` OSGi configurado `name` propiedad.
 
-   Para todas las coincidencias, la variable `CompositeStatusType's` se recopilan y se usan para recopilar los `ResourceStatusProvider` implementaciones que tienen este tipo, mediante `ResourceStatusProvider.getType()`.
+   Para todas las coincidencias, la variable `CompositeStatusType's` Los tipos de se recopilan y se utilizan para recopilar los `ResourceStatusProvider` implementaciones que tienen este tipo, mediante `ResourceStatusProvider.getType()`.
 
-5. La coincidencia `ResourceStatusProvider` se pasa la variable `resource` en el editor y determina si la variable `resource` tiene que mostrarse el estado . Si se necesita el estado, esta implementación es responsable de la compilación de 0 o varios `ResourceStatuses` para que se devuelvan, cada uno representa un estado que se va a mostrar.
+5. La coincidencia `ResourceStatusProvider` se pasa el `resource` en el editor y determina si la variable `resource` tiene el estado que se va a mostrar. Si el estado es necesario, esta implementación es responsable de generar 0 o muchos `ResourceStatuses` para devolver, cada una de ellas representa un estado que mostrar.
 
-   Normalmente, un `ResourceStatusProvider` devuelve 0 o 1 `ResourceStatus` per `resource`.
+   Normalmente, una `ResourceStatusProvider` devuelve 0 o 1 `ResourceStatus` por `resource`.
 
-6. ResourceStatus es una interfaz que puede implementar el cliente o la `com.day.cq.wcm.commons.status.EditorResourceStatus.Builder` para construir un estado. Un estado consta de:
+6. ResourceStatus es una interfaz que el cliente puede implementar o que resulta útil `com.day.cq.wcm.commons.status.EditorResourceStatus.Builder` se puede utilizar para construir un estado. Un estado consta de:
 
    * Título
    * Mensaje
@@ -63,9 +63,9 @@ Al desarrollar estados de recursos personalizados, el trabajo de desarrollo cons
    * Variante
    * Prioridad
    * Acciones
-   * Datos
+   * Data
 
-7. Opcionalmente, si `Actions` se proporcionan para la variable `ResourceStatus` , se requiere clientlibs de soporte para enlazar la funcionalidad a los vínculos de acción en la barra de estado.
+7. Opcionalmente, si `Actions` se proporcionan para `ResourceStatus` objeto, se requieren clientlibs de soporte para enlazar la funcionalidad a los vínculos de acción en la barra de estado.
 
    ```js
    (function(jQuery, document) {
@@ -78,15 +78,15 @@ Al desarrollar estados de recursos personalizados, el trabajo de desarrollo cons
    })(jQuery, document);
    ```
 
-8. Cualquier JavaScript o CSS compatible para admitir las acciones debe procesarse como proxy a través de las respectivas bibliotecas de cliente de cada editor para garantizar que el código front-end esté disponible en el editor.
+8. Cualquier JavaScript o CSS compatible para admitir las acciones debe procesarse como proxy a través de las bibliotecas de cliente respectivas de cada editor para garantizar que el código front-end esté disponible en el editor.
 
    * Categoría del editor de páginas: `cq.authoring.editor.sites.page`
-   * Categoría del editor de fragmentos de experiencia: `cq.authoring.editor.sites.page`
+   * Categoría del editor del Fragmento de experiencia: `cq.authoring.editor.sites.page`
    * Categoría del editor de plantillas: `cq.authoring.editor.sites.template`
 
 ## Ver el código {#view-the-code}
 
-[Consulte código en GitHub](https://github.com/Adobe-Consulting-Services/acs-aem-samples/tree/master/bundle/src/main/java/com/adobe/acs/samples/resourcestatus/impl/SampleEditorResourceStatusProvider.java)
+[Ver código en GitHub](https://github.com/Adobe-Consulting-Services/acs-aem-samples/tree/master/bundle/src/main/java/com/adobe/acs/samples/resourcestatus/impl/SampleEditorResourceStatusProvider.java)
 
 ## Recursos adicionales {#additional-resources}
 

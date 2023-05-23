@@ -1,6 +1,6 @@
 ---
-title: Pasos para solucionar problemas de conversión PDFG de varios usuarios en una configuración de Windows
-description: Solucionar varios problemas del Generador de PDF de usuario en el programa de instalación de Windows.
+title: Pasos para solucionar los problemas de conversión de PDF Generator para varios usuarios en una configuración de Windows
+description: Solucionar varios problemas del generador de PDF de usuario en el programa de instalación de Windows.
 type: Troubleshooting
 role: Developer
 level: Intermediate
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Pasos para solucionar problemas de conversión PDFG de varios usuarios en una configuración de Windows
+# Pasos para solucionar los problemas de conversión de PDF Generator para varios usuarios en una configuración de Windows
 
-*En este vídeo se describe el proceso de solución de problemas de conversión PDFG de varios usuarios en una configuración de Windows.*
+*En este vídeo se describe el proceso de resolución de problemas de la conversión de PDF Generator para varios usuarios en una configuración de Windows.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335550?quality=12&learn=on)

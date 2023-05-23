@@ -1,7 +1,7 @@
 ---
 title: Información general sobre la creación en AEM Sites
 seo-title: Overview of Authoring in AEM Sites
-description: 'En el siguiente vídeo se ofrece una descripción general de los conceptos básicos de creación en un entorno de creación AEM. Utiliza la consola Sitios como base. '
+description: AEM En el siguiente vídeo se ofrece una descripción general de los conceptos básicos de la creación en un entorno de creación de documentos de. Utiliza la consola Sitios como base.
 seo-description: The following video provides an overview of basic concepts of authoring in an AEM author environment. It uses the Sites console as a basis.
 feature: Page Editor, Editable Templates
 topics: authoring, publishing
@@ -22,13 +22,13 @@ ht-degree: 30%
 
 ---
 
-# Información general sobre la creación {#authoring-overview}
+# Resumen de creación {#authoring-overview}
 
-En el siguiente vídeo se ofrece una descripción general de los conceptos básicos de creación en un entorno de creación AEM para AEM Sites.
+AEM En el siguiente vídeo se ofrece una descripción general de los conceptos básicos de la creación en un entorno de creación de para AEM Sites.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33594?quality=12&learn=on)
 
 ## Recursos adicionales {#additional-resources}
 
-* [Edición de la documentación de contenido de una página](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=es)
+* [Edición de documentación de contenido de página](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=es)
 * [Guía rápida para la creación de páginas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)

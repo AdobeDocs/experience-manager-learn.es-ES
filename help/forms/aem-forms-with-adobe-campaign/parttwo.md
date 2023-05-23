@@ -1,6 +1,6 @@
 ---
-title: Creación de un perfil de campaña en un envío de formulario adaptable
-description: En este artículo se explican los pasos necesarios para crear un perfil en Adobe Campaign Standard en un envío de formulario adaptable. Este proceso utiliza un mecanismo de envío personalizado para gestionar el envío del formulario adaptable.
+title: Creación del perfil de campaña en el envío de formularios adaptables
+description: En este artículo se explican los pasos necesarios para crear un perfil en Adobe Campaign Standard en un envío de formulario adaptable. Este proceso utiliza el mecanismo de envío personalizado para gestionar el envío del formulario adaptable.
 feature: Adaptive Forms, Form Data Model
 version: 6.4,6.5
 topic: Development
@@ -14,19 +14,19 @@ ht-degree: 0%
 
 ---
 
-# Creación de un perfil de campaña en un envío de formulario adaptable {#creating-campaign-profile-on-adaptive-form-submission}
+# Creación del perfil de campaña en el envío de formularios adaptables {#creating-campaign-profile-on-adaptive-form-submission}
 
-En este artículo se explican los pasos necesarios para crear un perfil en Adobe Campaign Standard en un envío de formulario adaptable. Este proceso utiliza un mecanismo de envío personalizado para gestionar el envío del formulario adaptable.
+En este artículo se explican los pasos necesarios para crear un perfil en Adobe Campaign Standard en un envío de formulario adaptable. Este proceso utiliza el mecanismo de envío personalizado para gestionar el envío del formulario adaptable.
 
-Este tutorial explica los pasos para crear un perfil de Campaign en el envío de formularios adaptables. Para lograr este caso de uso necesitamos hacer lo siguiente
+Este tutorial explicará los pasos de creación de un perfil de Campaign en el envío de formularios adaptables. Para realizar este caso de uso, debemos hacer lo siguiente
 
-* Creación de un servicio AEM (Campaign Service) para crear un perfil de Adobe Campaign Standard mediante la API de REST
-* Crear una acción de envío personalizada para gestionar el envío del formulario adaptable
-* Invocar el método createProfile de CampaignService
+* AEM Creación de un servicio de (CampaignService) para crear un perfil de Adobe Campaign Standard mediante la API de REST
+* Crear una acción de envío personalizada para administrar el envío de formularios adaptables
+* Invoque el método createProfile de CampaignService
 
-## Crear AEM servicio {#create-aem-service}
+## AEM Crear servicio {#create-aem-service}
 
-Cree AEM servicio para crear un perfil de Adobe Campaign. Este servicio de AEM recuperará las credenciales de Adobe Campaign de la configuración OSGI. Una vez obtenidas las credenciales de la campaña, se genera el token de acceso y se utiliza el token de acceso HTTP Post call para crear el perfil en Adobe Campaign. El siguiente es el código para crear un perfil .
+AEM Crear servicio para crear un perfil de Adobe Campaign. AEM Este servicio recuperará las credenciales de Adobe Campaign de la configuración de OSGI. Una vez obtenidas las credenciales de la campaña, se genera el token de acceso y se realiza la llamada HTTP Post del token de acceso para crear el perfil en Adobe Campaign. El siguiente es el código para crear un perfil
 
 ```java
 package aemformwithcampaign.core.services.impl;
@@ -241,9 +241,9 @@ return null;
 
 ## Envío personalizado {#custom-submit}
 
-Cree un controlador de envío personalizado para gestionar el envío del formulario adaptable. En este controlador de envío personalizado, realizaremos una llamada al método createProfile de CampaignService. El método createProfile acepta un objeto JSONObject que representa el perfil que debe crearse.
+Cree un controlador de envío personalizado para administrar el envío del formulario adaptable. En este controlador de envío personalizado realizaremos una llamada al método createProfile de CampaignService. El método createProfile acepta un objeto JSONbject que representa el perfil que debe crearse.
 
-Para obtener más información sobre el controlador de envío personalizado en AEM Forms, siga esta [vínculo](/help/forms/adaptive-forms/custom-submit-aem-forms-article.md)
+Para obtener más información sobre el controlador de envío personalizado en AEM Forms, siga estos pasos [vincular](/help/forms/adaptive-forms/custom-submit-aem-forms-article.md)
 
 El siguiente es el código del envío personalizado
 
@@ -258,14 +258,14 @@ profile.addProperty("mobilePhone",request.getParameter("phone"));
 String pkey = addNewProfile.createProfile(profile);
 ```
 
-## Probar la solución {#test-the-solution}
+## Prueba de la solución {#test-the-solution}
 
-Una vez definido el servicio y la acción de envío personalizada, estamos listos para probar nuestra solución. Para probar la solución, siga estos pasos
+Una vez que hayamos definido el servicio y la acción de envío personalizada, estamos listos para probar nuestra solución. Para probar la solución, realice los siguientes pasos
 
 
 * [Asegúrese de haber seguido los pasos descritos aquí](aem-forms-with-campaign-standard-getting-started-tutorial.md)
-* [Importar el formulario adaptable y el controlador de envío personalizado mediante el administrador de paquetes](assets/create-acs-profile-on-af-submission.zip).Este paquete contiene el formulario adaptable configurado para enviar a la acción de envío personalizada.
-* Previsualice la [formulario](http://localhost:4502/content/dam/formsanddocuments/createcampaignprofile/jcr:content?wcmmode=disabled)
+* [Importar formularios adaptables y controladores de envío personalizados mediante el administrador de paquetes](assets/create-acs-profile-on-af-submission.zip). Este paquete contiene un formulario adaptable configurado para enviarse a una acción de envío personalizada.
+* Previsualización de [formulario](http://localhost:4502/content/dam/formsanddocuments/createcampaignprofile/jcr:content?wcmmode=disabled)
 * Rellene todos los campos y envíe
 * Se crea un nuevo perfil en la instancia ACS
 

@@ -1,6 +1,6 @@
 ---
 title: Paso de proceso personalizado para rellenar variables de lista
-description: Paso de proceso personalizado para rellenar variables de lista de tipo documento y cadena
+description: Paso de proceso personalizado para rellenar variables de lista de tipo documento y cadena.
 feature: Workflow
 topic: Development
 version: 6.5
@@ -15,14 +15,14 @@ ht-degree: 1%
 
 ---
 
-# Paso de proceso personalizado
+# Etapa de proceso personalizado
 
 
-Se ha implementado un paso de proceso personalizado para rellenar variables de flujo de trabajo de tipo Array List con los archivos adjuntos y los nombres de archivos adjuntos. Esta variable se utiliza en el componente de flujo de trabajo Enviar correo electrónico . Si no está familiarizado con la creación de un paquete OSGi, [siga estas instrucciones](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)
+Se implementó un paso de proceso personalizado para rellenar variables de flujo de trabajo de tipo Lista de matriz con los archivos adjuntos y los nombres de los archivos adjuntos. A continuación, esta variable se utiliza en el componente de flujo de trabajo Enviar correo electrónico. Si no está familiarizado con la creación del paquete OSGi, [siga estas instrucciones](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)
 
 El código del paso de proceso personalizado hace lo siguiente
 
-* Consulte todos los archivos adjuntos de formularios adaptables de la carpeta de carga útil. El nombre de la carpeta se pasa como argumento de proceso al paso de proceso.
+* Consulte todos los archivos adjuntos de los formularios adaptables de la carpeta de carga útil. El nombre de la carpeta se pasa como argumento de proceso al paso de proceso.
 
 * Rellenar `listOfDocuments` variable de flujo de trabajo
 * Rellenar `attachmentNames` variable de flujo de trabajo
@@ -111,11 +111,11 @@ public class PopulateListOfDocuments implements WorkflowProcess {
 
 >[!NOTE]
 >
-> Asegúrese de que tiene las siguientes variables definidas en el flujo de trabajo para que el código funcione
+> Asegúrese de haber definido las siguientes variables en el flujo de trabajo para que el código funcione
 > *listOfDocuments* - variable de tipo ArrayList of Documents
 > *attachmentNames* - variable de tipo ArrayList of String
-> *no_of_attachment* - variable de tipo Double
+> *no_of_attachments* - variable de tipo Double
 
 ## Pasos siguientes
 
-[Probar la solución en el sistema local](./test.md)
+[Prueba de la solución en el sistema local](./test.md)

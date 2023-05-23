@@ -1,6 +1,6 @@
 ---
 title: Evolución de AEM as a Cloud Service
-description: Explore el historial de AEM y las diferencias entre los AEM locales, las AEM de Adobe Managed Services y los AEM as a Cloud Service.
+description: AEM AEM AEM AEM Explore el historial de los y las diferencias entre los servicios locales, los servicios administrados de Adobe, los servicios administrados de la instalación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la, y los servicios administrados de Adobe, los servicios administrados de la aplicación de la, y los servicios as a Cloud Service de la aplicación de la.
 role: Architect, Developer
 level: Beginner
 type: Tutorial
@@ -18,6 +18,6 @@ ht-degree: 24%
 
 # Evolución de AEM as a Cloud Service
 
-Explore el historial de AEM y las diferencias entre los AEM locales, las AEM de Adobe Managed Services y los AEM as a Cloud Service.
+AEM AEM AEM AEM Explore el historial de los y las diferencias entre los servicios locales, los servicios administrados de Adobe, los servicios administrados de la instalación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la, y los servicios administrados de Adobe, los servicios administrados de la aplicación de la, y los servicios as a Cloud Service de la aplicación de la.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330543?quality=12&learn=on)

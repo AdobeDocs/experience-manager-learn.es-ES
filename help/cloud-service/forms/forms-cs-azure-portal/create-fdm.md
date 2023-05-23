@@ -1,6 +1,6 @@
 ---
-title: Creación de un modelo de datos de formulario respaldado por Azure Storage
-description: Integración de AEM Forms CS con el almacenamiento de Azure mediante el modelo de datos de formulario
+title: Crear modelo de datos de formulario respaldado por Azure Storage
+description: Integración de AEM Forms CS con Azure Storage mediante el modelo de datos de formulario
 feature: Adaptive Forms
 type: Documentation
 role: Developer
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Creación de un modelo de datos de formulario respaldado por Azure Storage
+# Crear modelo de datos de formulario respaldado por Azure Storage
 
-Creación de un modelo de datos de formulario respaldado por Azure Storage
+Crear modelo de datos de formulario respaldado por Azure Storage
 
 >[!VIDEO](https://video.tv.adobe.com/v/335385?quality=12&learn=on)

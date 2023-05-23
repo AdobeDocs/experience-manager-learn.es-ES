@@ -1,6 +1,6 @@
 ---
-title: Modernización del repositorio
-description: Obtenga información sobre la modernización del repositorio, el contenido mutable e inmutable, la estructura del paquete y la herramienta CLI del modernizador del repositorio.
+title: Modernización de repositorios
+description: Obtenga información acerca de la modernización de repositorios, el contenido mutable e inmutable, la estructura de los paquetes y la herramienta CLI de modernización de repositorios.
 version: Cloud Service
 feature: Developer Tools
 topic: Migration, Upgrade
@@ -16,9 +16,9 @@ ht-degree: 9%
 
 ---
 
-# Modernización del repositorio
+# Modernización de repositorios
 
-Obtenga información sobre la modernización del repositorio, el contenido mutable e inmutable, la estructura del paquete y la herramienta CLI del modernizador del repositorio.
+Obtenga información acerca de la modernización de repositorios, el contenido mutable e inmutable, la estructura de los paquetes y la herramienta CLI de modernización de repositorios.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336958?quality=12&learn=on)
 
@@ -26,11 +26,11 @@ Obtenga información sobre la modernización del repositorio, el contenido mutab
 
 ![Modernizador de repositorio](./assets/repository-modernizer.png)
 
-Como parte de la refactorización de la base de código, utilice la variable [Herramienta Modernizador de repositorio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html?lang=es) para reestructurar una base de código 6.x a una estructura más moderna.
+Como parte de la refactorización del código base, utilice el [Herramienta Modernizador de repositorio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html?lang=es) para reestructurar una base de código 6.x a una estructura más moderna.
 
 ## Actividades clave
 
-* Utilice la variable [Modernizador de repositorio de Adobe I/O](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationrepository-modernizer) herramienta para reestructurar un proyecto para que coincida con la estructura esperada de un proyecto as a Cloud Service AEM.
+* Utilice el [Modernizador de repositorio de Adobe I/O](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationrepository-modernizer) AEM herramienta para reestructurar un proyecto de modo que coincida con la estructura esperada de un proyecto as a Cloud Service de la.
 * Ajuste y corrija manualmente cualquier error de compilación en la base de código actualizada.
-* Configure un [entorno de desarrollo local](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=es) e implemente la base de código actualizada. Iterar hasta que el proyecto esté en un estado estable.
-* Implemente la base de código actualizada en un entorno de desarrollo as a Cloud Service AEM y continúe validando.
+* Configuración de un [entorno de desarrollo local](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=es) e implementar la base de código actualizada. Itere hasta que el proyecto esté en un estado estable.
+* AEM Implemente la base de código actualizada en un entorno de desarrollo as a Cloud Service de y siga validando.

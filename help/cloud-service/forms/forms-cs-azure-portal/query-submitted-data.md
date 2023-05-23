@@ -1,6 +1,6 @@
 ---
-title: Buscar datos de AEM Forms enviados en el almacenamiento de Azure Blob
-description: Obtenga información sobre cómo consultar los datos enviados por AEM Forms en Azure Blob Storage mediante el servicio de metadatos del modelo de datos de formulario.
+title: Buscar datos de AEM Forms enviados en Azure Blob Storage
+description: Obtenga información sobre cómo consultar datos enviados por AEM Forms en Azure Blob Storage mediante el servicio de metadatos del modelo de datos de formulario.
 feature: Adaptive Forms
 type: Documentation
 role: Developer
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Consulta de datos enviados
+# Datos enviados de consulta
 
-Obtenga información sobre cómo consultar datos de formulario adaptable en el almacenamiento del blob de Azure mediante el servicio de metadatos de AEM Forms.
+Obtenga información sobre cómo consultar datos de formularios adaptables en Azure Blob Storage mediante el servicio de metadatos de AEM Forms.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335717?quality=12&learn=on)

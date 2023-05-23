@@ -1,6 +1,6 @@
 ---
-title: Cree un formulario web para presentarlo al usuario para firmar
-description: Cree AEM paquete para exponer los métodos de firma de Acrobat necesarios para el caso de uso.
+title: Crear un formulario web para presentarlo al usuario para su firma
+description: AEM Cree un paquete de informes para exponer los métodos de Acrobat Sign necesarios para el caso de uso.
 feature: Adaptive Forms,Acrobat Sign
 version: 6.4,6.5
 topic: Development
@@ -16,17 +16,17 @@ ht-degree: 0%
 
 ---
 
-# Crear un envoltorio para la API de REST de Acrobat Sign
+# Creación de un contenedor para la API de REST de Acrobat Sign
 
-Se ha desarrollado un paquete de AEM personalizado para crear y devolver el formulario web al usuario final
+AEM Se ha desarrollado un paquete de personalizado para crear y devolver el formulario web al usuario final
 
-* [Crear documento transitorio](https://secure.na1.echosign.com/public/docs/restapi/v6#!/transientDocuments/createTransientDocument). El documento cargado mediante esta llamada se denomina transitorio, ya que solo está disponible durante 7 días después de la carga. El ID de documento transitorio devuelto se puede utilizar en las llamadas de API a las que es necesario remitir el archivo cargado. La solicitud de documento transitorio es una solicitud de varias partes que consta de tres partes: nombre de archivo, tipo mime y flujo de archivos. En esta solicitud solo se puede cargar un archivo a la vez.
-* [Crear formulario web](https://secure.na1.echosign.com/public/docs/restapi/v6#!/widgets/createWidget).Este es un punto final principal que se utiliza para crear un nuevo formulario web. El formulario web se creó en un estado ACTIVO para alojar inmediatamente el formulario web.
-* [Recuperar el formulario web](https://secure.na1.echosign.com/public/docs/restapi/v6#!/widgets/getWidgets).Recupere el formulario web del usuario. Este formulario web se presenta a la aplicación que realiza la llamada para firmar el documento.
+* [Crear documento transitorio](https://secure.na1.echosign.com/public/docs/restapi/v6#!/transientDocuments/createTransientDocument). El documento cargado a través de esta llamada se denomina transitorio, ya que solo está disponible durante 7 días después de la carga. El ID de documento transitorio devuelto se puede utilizar en las llamadas a la API donde se debe hacer referencia al archivo cargado. La solicitud de documento transitoria es una solicitud de varias partes que consta de tres partes: nombre de archivo, tipo MIME y el flujo de archivos. En esta solicitud, solo se puede cargar un archivo a la vez.
+* [Creación de un formulario web](https://secure.na1.echosign.com/public/docs/restapi/v6#!/widgets/createWidget).Este es un punto final principal que se utiliza para crear un nuevo formulario web. El formulario web se creó en un estado ACTIVO para alojar inmediatamente el formulario web.
+* [Recuperación del formulario web](https://secure.na1.echosign.com/public/docs/restapi/v6#!/widgets/getWidgets).Recupere el formulario web del usuario. A continuación, este formulario web se presenta a la aplicación que realiza la llamada para firmar el documento.
 
 ## Crear la configuración OSGi de Acrobat Sign
 
-La API de REST de Acrobat Sign requiere la clave de integración y el correo electrónico asociados a la clave de integración. Estos dos valores se proporcionan como propiedades de configuración OSGi como se muestra a continuación
+La API de REST de Acrobat Sign requiere la clave de integración y el correo electrónico asociados a ella. Estos dos valores se proporcionan como propiedades de configuración OSGi, como se muestra a continuación
 
 ![configuración de firma](assets/sign-configuration.png)
 
@@ -110,7 +110,7 @@ public String getTransientDocumentID(Document documentForSigning) throws IOExcep
 }
 ```
 
-## Obtener ID de utilidad
+## Obtener ID del widget
 
 ```java
 public String getWidgetID(String transientDocumentID) {
@@ -159,7 +159,7 @@ public String getWidgetID(String transientDocumentID) {
 }
 ```
 
-## Obtener URL de la utilidad
+## Obtener URL del widget
 
 ```java
 public String getWidgetURL(String widgetId) throws ClientProtocolException, IOException {
@@ -198,4 +198,4 @@ public String getWidgetURL(String widgetId) throws ClientProtocolException, IOEx
 
 ## Pasos siguientes
 
-[Generar URL de la utilidad Acrobat Sign](./create-servlet-to-expose-endpoint.md)
+[Generar URL del widget de Acrobat Sign](./create-servlet-to-expose-endpoint.md)

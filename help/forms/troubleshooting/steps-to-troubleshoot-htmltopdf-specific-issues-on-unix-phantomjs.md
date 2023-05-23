@@ -1,6 +1,6 @@
 ---
-title: Pasos para solucionar problemas específicos de HtmltoPDF en una configuración de Unix (PhantomJS)
-description: Solucionar problemas de HtmltoPDF usando PhantomJS en la configuración de UNIX.
+title: Pasos para solucionar problemas específicos de HtmltoPDF en una configuración Unix (PhantomJS)
+description: Solucione los problemas de HtmltoPDF con PhantomJS en la configuración de UNIX.
 type: Troubleshooting
 role: Developer
 level: Intermediate
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Pasos para solucionar problemas específicos de HtmltoPDF en una configuración de Unix (PhantomJS)
+# Pasos para solucionar problemas específicos de HtmltoPDF en una configuración Unix (PhantomJS)
 
-*Este vídeo muestra los pasos para solucionar problemas específicos de HtmltoPDF en una configuración de Unix (PhantomJS).*
+*Este vídeo explica los pasos para solucionar problemas específicos de HtmltoPDF en una configuración Unix (PhantomJS).*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335546?quality=12&learn=on)

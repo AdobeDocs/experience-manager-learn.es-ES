@@ -1,6 +1,6 @@
 ---
 title: Bandeja de entrada de AEM
-description: Personalización de la bandeja de entrada añadiendo nuevas columnas basadas en datos de flujo de trabajo
+description: Personalizar bandeja de entrada añadiendo nuevas columnas basadas en datos de flujo de trabajo
 feature: Adaptive Forms
 topics: development
 audience: developer
@@ -22,40 +22,40 @@ ht-degree: 29%
 
 # Bandeja de entrada de AEM
 
-AEM Bandeja de entrada consolida las notificaciones y tareas de varios componentes de AEM, incluidos los flujos de trabajo de Forms. Cuando se activa un flujo de trabajo de Forms que contiene una Etapa de tarea de asignación, la aplicación asociada aparece como una tarea en la bandeja de entrada del usuario asignado.
+AEM AEM Bandeja de entrada de datos consolida las notificaciones y tareas de varios componentes de la, incluidos los flujos de trabajo de Forms. Cuando se activa un flujo de trabajo de Forms que contiene una Etapa de tarea de asignación, la aplicación asociada aparece como una tarea en la bandeja de entrada del usuario asignado.
 
 La interfaz de usuario de la bandeja de entrada ofrece vistas de lista y calendario para ver las tareas. También puede configurar la configuración de vista. Puede filtrar las tareas en función de varios parámetros.
 
-Puede personalizar la bandeja de entrada de un Experience Manager para cambiar el título predeterminado de una columna, reordenar la posición de una columna y mostrar columnas adicionales basadas en los datos de un flujo de trabajo.
+Puede personalizar una bandeja de entrada de Experience Manager para cambiar el título predeterminado de una columna, reordenar la posición de una columna y mostrar columnas adicionales basadas en los datos de un flujo de trabajo.
 
 >[!NOTE]
 >
->Debe ser miembro de los administradores o de los administradores del flujo de trabajo para personalizar las columnas de la bandeja de entrada
+>Debe ser miembro de administradores o de administradores de flujo de trabajo para personalizar las columnas de la bandeja de entrada
 
 ## Personalización de columnas
 
-[Iniciar AEM bandeja de entrada](http://localhost:4502/aem/inbox)
-Abra el Control de administración haciendo clic en el botón _Vista de lista_ y, a continuación, seleccione _Control de administración_ como se muestra en la captura de pantalla siguiente
+[AEM Iniciar cuadro de insignias](http://localhost:4502/aem/inbox)
+Abra Admin Control haciendo clic en _Vista de lista_ y luego seleccione _Control de administración_ como se muestra en la captura de pantalla siguiente
 
 ![admin-control](assets/open-customization.png)
 
-En la interfaz de usuario de personalización de columnas, puede realizar las siguientes operaciones
+En la IU de personalización de columnas puede realizar las siguientes operaciones
 
 * Eliminar columnas
 * Reordenar las columnas
-* Cambiar el nombre de las columnas
+* Cambiar nombre de columnas
 
 ## Personalizar la promoción de la marca
 
-En la personalización de la marca puede hacer lo siguiente
+En la personalización de marca puede hacer lo siguiente
 
-* Añadir el logotipo de la organización
+* Añadir el logotipo de su organización
 * Personalizar el texto del encabezado
-* Personalización del vínculo de ayuda
+* Personalizar el vínculo de ayuda
 * Ocultar opciones de navegación
 
-![promoción de la marca en la bandeja de entrada](assets/branding-customization.PNG)
+![marca de bandeja de entrada](assets/branding-customization.PNG)
 
 ## Pasos siguientes
 
-[Agregar columna Casada](./add-married-column.md)
+[Agregar columna casada](./add-married-column.md)

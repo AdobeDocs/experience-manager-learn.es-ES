@@ -1,6 +1,6 @@
 ---
-title: Punto final de exposición que se puede invocar para devolver la dirección URL del formulario web
-description: Cree AEM servlet para devolver la URL del formulario web
+title: Exponga el extremo que se puede invocar para devolver la URL del formulario web
+description: AEM Cree un servlet para devolver la URL del formulario web.
 feature: Adaptive Forms,Acrobat Sign
 version: 6.4,6.5
 topic: Development
@@ -16,9 +16,9 @@ ht-degree: 2%
 
 ---
 
-# Crear URL de formulario web de Acrobat Sign
+# Crear URL de formulario web Acrobat Sign
 
-Se escribió el siguiente código para exponer un punto final de POST. Este extremo extrae el icTemplateName de los datos enviados y devuelve una URL de formulario web de Acrobat Sign para que lo firme el usuario final.
+El siguiente código se escribió para exponer un extremo de POST. Este extremo extrae icTemplateName de los datos enviados y devuelve una URL de formulario web de Acrobat Sign para que la firme el usuario final.
 
 
 ```java
@@ -89,5 +89,5 @@ public class GetWidgetUrl extends SlingAllMethodsServlet {
 
 ## Pasos siguientes
 
-[Implementar los recursos del tutorial en el sistema local](./deploy-assets-on-your-server.md)
+[Implementación de los recursos del tutorial en el sistema local](./deploy-assets-on-your-server.md)
 

@@ -1,6 +1,6 @@
 ---
 title: Pruebe su comprensión
-description: Complete los ejercicios
+description: Completar los ejercicios
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Ejercicios
 
-Modifique el código para pasar la URL de la plantilla como uno de los parámetros de solicitud del POST.
+Modifique el código para pasar la dirección URL de la plantilla como uno de los parámetros de solicitud del POST.
 
 El código de la variable `DocumentGeneration.java` debe modificarse para pasar la dirección URL de la plantilla.

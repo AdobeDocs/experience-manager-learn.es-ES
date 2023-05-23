@@ -1,6 +1,6 @@
 ---
 title: Comunicaciones as a Cloud Service de AEM Forms
-description: Descubra cómo AEM Forms as a Cloud Service admite el caso de uso Comunicaciones.
+description: Descubra cómo AEM Forms as a Cloud Service admite el caso de uso de Comunicaciones.
 version: Cloud Service
 feature: Output Service
 topic: Migration, Upgrade
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Comunicaciones (servicio de salida)
 
-Descubra cómo AEM Forms as a Cloud Service admite el caso de uso Comunicación .
+Descubra cómo AEM Forms as a Cloud Service admite el caso de uso de la comunicación.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336967?quality=12&learn=on)

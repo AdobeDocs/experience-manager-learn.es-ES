@@ -1,6 +1,6 @@
 ---
-title: Uso de fragmentos de experiencia con AEM Assets Dynamic Media
-description: AEM Assets Dynamic Media integra puntos interactivos de recursos con fragmentos de experiencias mediante los visualizadores de medios interactivos. Los especialistas en marketing pueden crear el fragmento de experiencia con texto, imágenes y vínculos para rellenar la ventana emergente personalizada y asociar esa ventana emergente a puntos interactivos en banners, carruseles o vídeos.
+title: Uso de fragmentos de experiencias con AEM Assets Dynamic Media
+description: AEM Assets Dynamic Media integra los puntos interactivos de recursos con los fragmentos de experiencias a través de los visualizadores de medios interactivos. Los especialistas en marketing pueden crear el fragmento de experiencia con texto, imágenes y vínculos para rellenar la ventana emergente personalizada y asociar dicha ventana emergente a puntos interactivos de titulares, carruseles o vídeos.
 sub-product: Experience Manager Assets, Experience Manager Sites
 feature: Experience Fragments
 version: 6.4, 6.5
@@ -15,16 +15,16 @@ ht-degree: 2%
 
 ---
 
-# Uso de fragmentos de experiencia con AEM Assets Dynamic Media{#using-experience-fragments-with-aem-assets-dynamic-media}
+# Uso de fragmentos de experiencias con AEM Assets Dynamic Media{#using-experience-fragments-with-aem-assets-dynamic-media}
 
-AEM Assets Dynamic Media integra puntos interactivos de recursos con fragmentos de experiencias mediante los visualizadores de medios interactivos. Los especialistas en marketing pueden crear el fragmento de experiencia con texto, imágenes y vínculos para rellenar la ventana emergente personalizada y asociar esa ventana emergente a puntos interactivos en banners, carruseles o vídeos.
+AEM Assets Dynamic Media integra los puntos interactivos de recursos con los fragmentos de experiencias a través de los visualizadores de medios interactivos. Los especialistas en marketing pueden crear el fragmento de experiencia con texto, imágenes y vínculos para rellenar la ventana emergente personalizada y asociar dicha ventana emergente a puntos interactivos de titulares, carruseles o vídeos.
 
 >[!VIDEO](https://video.tv.adobe.com/v/22115?quality=12&learn=on)
 
 >[!NOTE]
 >
->El uso de AEM fragmentos de experiencia con puntos de conexión de AEM Assets Dynamic Media requiere [AEM a ejecutar en Dynamic Media](https://experienceleague.adobe.com/docs/) en el menú contextual.
+>AEM El uso de fragmentos de experiencias de la aplicación con puntos interactivos de Dynamic Media de AEM Assets requiere [AEM para que se ejecute en el Dynamic Media](https://experienceleague.adobe.com/docs/) modo.
 
-La variante del fragmento de experiencia emergente que se muestra en el vídeo está disponible como paquete de AEM a continuación.
+AEM La variante del fragmento de experiencia emergente que se muestra en el vídeo está disponible como paquete de experiencias a continuación. Se trata de un paquete de la siguiente manera:
 
-Descargar [Fragmentos de experiencias Recursos Dynamic Media](assets/experience-fragmentsdynamic-mediaassets-100.zip)
+Descargar [Fragmentos de experiencias de Dynamic Media Assets](assets/experience-fragmentsdynamic-mediaassets-100.zip)

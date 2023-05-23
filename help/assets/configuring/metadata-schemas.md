@@ -1,6 +1,6 @@
 ---
 title: Esquemas de metadatos
-description: Los esquemas de metadatos definen la interfaz en la que los usuarios interactúan con los metadatos de los recursos en AEM, y su definición y aplicación a los recursos son esenciales para la administración de recursos digitales.
+description: AEM Los esquemas de metadatos definen la interfaz en la que los usuarios interactúan con los metadatos de los recursos, y su definición y aplicación a los recursos son críticas para la administración de recursos digitales.
 feature: Metadata
 version: Cloud Service
 kt: 4981
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Esquemas de metadatos
 
-Los esquemas de metadatos definen la interfaz en la que los usuarios interactúan con los metadatos de los recursos en AEM, y su definición y aplicación a los recursos son esenciales para la administración de recursos digitales.
+AEM Los esquemas de metadatos definen la interfaz en la que los usuarios interactúan con los metadatos de los recursos, y su definición y aplicación a los recursos son críticas para la administración de recursos digitales.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33696?quality=12&learn=on)

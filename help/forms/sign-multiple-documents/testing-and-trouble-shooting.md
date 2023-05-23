@@ -1,6 +1,6 @@
 ---
-title: Solución de problemas para firmar varios documentos
-description: Prueba y resolución de problemas de la solución
+title: Solución de problemas de firmar varios documentos
+description: Prueba y solución de problemas
 feature: Adaptive Forms
 version: 6.4,6.5
 kt: 6960
@@ -12,41 +12,41 @@ exl-id: 99cba29e-4ae3-4160-a4c7-a5b6579618c0
 source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
 source-wordcount: '388'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
-# Comprobación y solución de problemas
+# Prueba y solución de problemas
 
 
-## Vista previa del formulario de refinanciación
+## Previsualización del formulario de refinanciación
 
-El caso de uso se activa cuando el agente de servicio al cliente rellena y envía [formulario de refinanciación](http://localhost:4502/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled).
+El caso de uso se activa cuando el agente de servicio de atención al cliente rellena y envía [formulario de refinanciación](http://localhost:4502/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled).
 
-El flujo de trabajo Sign Multiple Forms obtiene déclencheur sobre este envío de formulario y el cliente recibe una notificación por correo electrónico con un vínculo para iniciar el proceso de cumplimentación y firma del formulario.
+El flujo de trabajo Firmar varios Forms obtiene déclencheur con este envío de formulario y el cliente recibe una notificación por correo electrónico con un vínculo para iniciar el proceso de rellenado y firma del formulario.
 
 ## Rellenar formularios en el paquete
 
-El cliente se presenta para rellenar y firmar el primer formulario del paquete. Al firmar correctamente el formulario, el cliente puede acceder al siguiente formulario del paquete. Una vez que se han rellenado y firmado todos los formularios, el cliente recibe la etiqueta &quot;**AllDone**&quot;.
+El cliente se presenta para rellenar y firmar el primer formulario del paquete. Una vez firmado correctamente el formulario, el cliente puede desplazarse al siguiente formulario del paquete. Una vez rellenados y firmados todos los formularios, al cliente se le presenta el &quot;**AllDone**&quot;.
 
 ## Solución de problemas
 
-### La notificación por correo electrónico no se está generando
+### No se genera la notificación por correo electrónico
 
-La notificación por correo electrónico se envía mediante el componente Enviar correo electrónico en el flujo de trabajo Firmar varios formularios . Si se produce un error en cualquiera de los pasos de este flujo de trabajo, se envía la notificación por correo electrónico. Asegúrese de que el paso de proceso personalizado del flujo de trabajo esté creando filas en la base de datos MySQL. Si las filas se están creando, compruebe los ajustes de configuración del Servicio de correo de CQ Day
+Las notificaciones por correo electrónico se envían mediante el componente Enviar correo electrónico en el flujo de trabajo Firmar varios formularios. Si alguno de los pasos de este flujo de trabajo falla, se envía la notificación por correo electrónico. Asegúrese de que el paso de proceso personalizado del flujo de trabajo esté creando filas en la base de datos MySQL. Si se están creando las filas, compruebe los ajustes de configuración del servicio de correo de CQ Day
 
 ### El vínculo de la notificación por correo electrónico no funciona
 
-Los vínculos de las notificaciones por correo electrónico se generan de forma dinámica. Si su servidor de AEM no se está ejecutando en localhost:4502, proporcione el nombre y el puerto del servidor correctos en los argumentos del paso Store Forms To Sign del flujo de trabajo Sign Multiple Forms
+Los vínculos de las notificaciones por correo electrónico se generan dinámicamente. AEM Si el servidor de la no se está ejecutando en localhost:4502, proporcione el nombre de servidor y el puerto correctos en los argumentos del paso Almacenar Forms para firmar del flujo de trabajo Firmar varios Forms
 
 ### No se puede firmar el formulario
 
-Esto puede suceder si el formulario no se rellena correctamente recuperando los datos del origen de datos. Compruebe los registros de stdout del servidor. fetchformdata.jsp escribe algunos mensajes útiles en el stdout.
+Esto puede ocurrir si el formulario no se rellenó correctamente al recuperar los datos del origen de datos. Compruebe los registros stdout del servidor. fetchformdata.jsp escribe algunos mensajes útiles en el stdout.
 
-### No se puede navegar al siguiente formulario en el paquete
+### No se puede navegar al siguiente formulario del paquete
 
-Al firmar correctamente un formulario en el paquete, se activa el flujo de trabajo Actualizar estado de firma . El primer paso del flujo de trabajo actualiza el estado de firma del formulario en la base de datos. Compruebe si el estado del formulario se actualiza de 0 a 1.
+Al firmar correctamente un formulario del paquete, se activa el flujo de trabajo Actualizar estado de firma. El primer paso del flujo de trabajo actualiza el estado de firma del formulario en la base de datos. Compruebe si el estado del formulario se actualiza de 0 a 1.
 
 ### No ver el formulario AllDone
 
-Cuando no hay más formularios para iniciar sesión en el paquete, el formulario AllDone se presenta al usuario. Si no ve el formulario AllDone, compruebe la URL utilizada en la línea 33 del archivo GetNextFormToSign.js que forma parte del **getnextform** biblioteca de cliente.
+Cuando no hay más formularios para firmar en el paquete, se presenta el formulario AllDone al usuario. Si no ve el formulario AllDone, compruebe la URL utilizada en la línea 33 del archivo GetNextFormToSign.js, que forma parte del **getnextform** biblioteca del cliente.

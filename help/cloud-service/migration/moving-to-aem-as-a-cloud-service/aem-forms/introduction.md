@@ -1,6 +1,6 @@
 ---
 title: AEM Forms as a Cloud Service
-description: Obtenga información sobre los casos de uso y las funciones compatibles con AEM Forms as a Cloud Service.
+description: Conozca los casos de uso y las funciones que admite AEM Forms as a Cloud Service.
 version: Cloud Service
 topic: Migration, Upgrade
 role: Developer
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# AEM Forms as a Cloud Service: paso a AEM CS
+# AEM Forms as a Cloud Service AEM: paso a CS
 
-Obtenga información sobre los casos de uso y las funciones compatibles con AEM Forms as a Cloud Service.
+Conozca los casos de uso y las funciones que admite AEM Forms as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336968?quality=12&learn=on)

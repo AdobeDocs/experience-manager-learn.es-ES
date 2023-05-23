@@ -1,6 +1,6 @@
 ---
 title: Aprovisionamiento de Assets Essentials
-description: Obtenga información sobre cómo implementar Assets Essentials mediante Cloud Manager y proporcionar acceso a los usuarios.
+description: Obtenga información sobre cómo implementar Assets Essentials mediante Cloud Manager y proporcionar acceso al usuario.
 version: Cloud Service
 feature: Assets Essentials
 topic: Content Management
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Aprovisionamiento de Assets Essentials
 
-Obtenga información sobre cómo implementar Assets Essentials mediante Cloud Manager y proporcionar acceso a los usuarios.
+Obtenga información sobre cómo implementar Assets Essentials mediante Cloud Manager y proporcionar acceso al usuario.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335952?quality=12&learn=on)

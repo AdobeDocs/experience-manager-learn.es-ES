@@ -1,5 +1,5 @@
 ---
-title: Almacenamiento y recuperación de datos de formulario desde la introducción a la base de datos MySQL
+title: Almacenar y recuperar datos de formulario de la base de datos MySQL Introducción
 description: Tutorial de varias partes para guiarle por los pasos necesarios para almacenar y recuperar datos de formulario
 feature: Adaptive Forms
 type: Tutorial
@@ -16,17 +16,17 @@ ht-degree: 0%
 
 ---
 
-# Almacenamiento y recuperación de datos de formulario adaptable de la base de datos MySQL
+# Almacenar y recuperar datos de formulario adaptable de la base de datos MySQL
 
-Este tutorial le guiará por los pasos necesarios para guardar y recuperar los datos del formulario adaptable de la base de datos. Este tutorial utilizó la base de datos MySQL para almacenar datos de formulario adaptable. La base de datos que elija se puede utilizar para almacenar los datos siempre y cuando haya implementado los controladores específicos de la base de datos en AEM. En un nivel superior, se necesitan los siguientes pasos para lograr el caso de uso:
+Este tutorial le guiará por los pasos necesarios para guardar y recuperar datos de formulario adaptables de la base de datos. Este tutorial utilizó la base de datos MySQL para almacenar datos de formulario adaptable. AEM La base de datos que elija se puede utilizar para almacenar los datos siempre y cuando haya implementado los controladores específicos de la base de datos en la base de datos de la que haya hecho clic en el botón de la barra de herramientas de la base de datos de la base de datos de la base de datos de la base de datos de la base de datos de la base de datos de la base de datos de la base de datos de la base de datos de la base de datos de la base de datos de la base de datos de la base de datos de su elección. En un nivel superior, se necesitan los siguientes pasos para lograr el caso de uso:
 
 * Utilice la API de GuideBridge para obtener acceso a los datos del formulario adaptable
 
-* Realice una llamada del POST a un servlet. Este servlet almacena los datos en la base de datos. Los datos almacenados están asociados a un GUID
+* Realizar una llamada del POST a un servlet. Este servlet almacena los datos en la base de datos. Los datos almacenados están asociados a un GUID
 
-* Si desea rellenar el formulario adaptable con los datos almacenados, recupere los datos asociados con el GUID y rellene el formulario adaptable utilizando la variable **request.setAttribute** método.
+* Si desea rellenar el formulario adaptable con los datos almacenados, recupere los datos asociados con el GUID y rellene el formulario adaptable con el **request.setAttribute** método.
 
-## Demostración del caso de uso
+## Muestra del caso de uso
 
 >[!VIDEO](https://video.tv.adobe.com/v/27829?quality=12&learn=on)
 

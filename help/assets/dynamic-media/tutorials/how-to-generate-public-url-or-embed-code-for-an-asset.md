@@ -1,6 +1,6 @@
 ---
-title: Generación de direcciones URL y códigos incrustados para AEM recursos de Dynamic Media
-description: Pasos para generar una URL pública y código incrustado de un recurso en Dynamic Media
+title: AEM Generación de direcciones URL y códigos incrustados para los recursos de Dynamic Media de
+description: Pasos para generar la URL pública y el código incrustado de un recurso en Dynamic Media
 role: Developer
 level: Intermediate
 version: Cloud Service
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ---
 
-# Generación de direcciones URL y códigos incrustados para AEM recursos de Dynamic Media
+# AEM Generación de direcciones URL y códigos incrustados para los recursos de Dynamic Media de
 
 Este vídeo muestra los pasos para generar una URL pública o un código incrustado para un recurso.
 

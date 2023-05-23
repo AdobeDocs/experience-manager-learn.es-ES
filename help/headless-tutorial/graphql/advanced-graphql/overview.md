@@ -7,7 +7,7 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: daae6145-5267-4958-9abe-f6b7f469f803
-source-git-commit: 4c0770eafbbbb90bfc00ab49be02e84c41d63057
+source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
 workflow-type: tm+mt
 source-wordcount: '1076'
 ht-degree: 1%
@@ -15,8 +15,6 @@ ht-degree: 1%
 ---
 
 # AEM Conceptos avanzados de la tecnología sin encabezado
-
-{{aem-headless-trials-promo}}
 
 Este tutorial completo continúa con la [tutorial básico](../multi-step/overview.md) que abarcaba los aspectos básicos de Adobe Experience Manager AEM () Headless y GraphQL. AEM El tutorial avanzado ilustra aspectos exhaustivos del trabajo con modelos de fragmentos de contenido, fragmentos de contenido y las consultas persistentes de GraphQL de, incluido el uso de consultas persistentes de GraphQL en una aplicación cliente.
 

@@ -1,6 +1,6 @@
 ---
-title: Aplicación de la directiva creada mediante el módulo de seguridad de documentos en Acrobat
-description: Configuración de Acrobat para aplicar directivas a un documento mediante la seguridad de documentos
+title: Aplicar la directiva creada con el módulo Document Security en Acrobat
+description: Configuración de Acrobat para aplicar una directiva a un documento mediante Document Security
 type: Troubleshooting
 role: Developer
 level: Intermediate
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Aplicación de la directiva creada mediante el módulo de seguridad de documentos en Acrobat
+# Aplicar la directiva creada con el módulo Document Security en Acrobat
 
-*Este vídeo explica el proceso de aplicación de la política creada con el módulo de seguridad de documentos en Acrobat.*
+*Este vídeo muestra el proceso de aplicación de la directiva creada con el módulo de seguridad de documentos en Acrobat.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335486?quality=12&learn=on)

@@ -1,6 +1,6 @@
 ---
-title: Eliminación de muestras de un proyecto AEM Maven
-description: Obtenga información sobre cómo limpiar y eliminar código de muestra de un proyecto de AEM generado por el tipo de archivo del proyecto de AEM.
+title: AEM Eliminación de muestras de un proyecto de Maven de
+description: AEM AEM Obtenga información sobre cómo limpiar y quitar código de ejemplo de un proyecto de generado por el tipo de archivo del proyecto de.
 version: Cloud Service
 topic: Development
 feature: AEM Project Archetype
@@ -16,20 +16,20 @@ ht-degree: 6%
 
 ---
 
-# Eliminación de muestras de un proyecto de Maven AEM
+# AEM Eliminación de muestras de un proyecto de Maven de
 
-Obtenga información sobre cómo limpiar y eliminar el código de muestra generado de un proyecto de AEM generado por el tipo de archivo del proyecto de AEM.
+AEM AEM Obtenga información sobre cómo limpiar y quitar el código de ejemplo generado de un proyecto de generado por el tipo de archivo del proyecto de.
 
 >[!VIDEO](https://video.tv.adobe.com/v/337263?quality=12&learn=on)
 
 
 ## Recursos
 
-+ [Tipo de archivo del proyecto AEM Maven](https://github.com/adobe/aem-project-archetype)
++ [AEM Arquetipo de proyecto de Maven](https://github.com/adobe/aem-project-archetype)
 
 ## Comandos
 
-Se pueden ejecutar los siguientes comandos para eliminar los archivos de ejemplo generados del proyecto AEM Maven:
+AEM Los siguientes comandos se pueden ejecutar para eliminar los archivos de ejemplo generados del proyecto de Maven de:
 
 ```
 rm -rf core/src/main/java/com/adobe/aem/wknd/examples/core/filters \
@@ -45,13 +45,13 @@ rm -rf ui.frontend/src/main/webpack/components/_helloworld.css
 
 ## Ediciones
 
-Elimine el `<div class="helloworld" ...></div>` de:
+Retire el `<div class="helloworld" ...></div>` de:
 
 ```
 ui.frontend/src/main/webpack/static/index.html
 ```
 
-Elimine el `<helloworld>` definición de instancia de componente desde:
+Retire el `<helloworld>` definición de instancia de componente desde:
 
 ```
 ui.content/src/main/content/jcr_root/content/wknd-examples/us/en/.content.xml

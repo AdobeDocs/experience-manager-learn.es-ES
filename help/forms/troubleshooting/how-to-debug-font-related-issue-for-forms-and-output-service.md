@@ -1,6 +1,6 @@
 ---
-title: Cómo depurar un problema relacionado con las fuentes con las conversiones de Forms y del servicio de salida
-description: Pasos para depurar un problema relacionado con las fuentes con Forms y el servicio de salida
+title: Cómo depurar los problemas relacionados con Fonts con las conversiones de Forms y el servicio Output
+description: Pasos para depurar el problema relacionado con Fonts con Forms y el servicio Output
 type: Troubleshooting
 role: Developer
 level: Intermediate
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Cómo capturar garantías para depurar problemas relacionados con fuentes con conversiones de Forms y del servicio de salida
+# Cómo capturar garantías para depurar problemas relacionados con Fonts con Forms y conversiones del servicio de salida
 
-*Este vídeo explica el proceso de captura de colaterales para depurar problemas relacionados con las fuentes con conversiones de Forms y del servicio de salida .*
+*Este vídeo muestra el proceso de captura de elementos colaterales para depurar los problemas relacionados con las fuentes con las conversiones del servicio de salida y Forms*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335487?quality=12&learn=on)

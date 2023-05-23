@@ -1,6 +1,6 @@
 ---
 title: Uso de plantillas XDP con AEM Forms y Acrobat Sign
-description: Uso de plantillas XDP con AEM Forms y Acrobat Sign. Vídeo que detalla el aprovechamiento de las plantillas XDP existentes con la integración de AEM Forms y Sign.
+description: Uso de plantillas XDP con AEM Forms y Acrobat Sign. Un vídeo que detalla el uso de plantillas XDP existentes con la integración de AEM Forms y Sign.
 feature: Adaptive Forms
 thumbnail: 39705.jpg
 kt: 6143
@@ -23,5 +23,5 @@ Aprovechamiento de las plantillas XDP existentes con la integración de AEM Form
 
 Los recursos relacionados con este vídeo se pueden descargar desde los siguientes vínculos
 
-* [Plantilla NDA](assets/nda-agreement-xdp-template.zip)
+* [Plantilla de NDA](assets/nda-agreement-xdp-template.zip)
 * [Formulario adaptable](assets/nda-agreement-af-with-xdp-template.zip)

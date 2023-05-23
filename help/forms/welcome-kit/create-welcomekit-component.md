@@ -1,13 +1,14 @@
 ---
 title: Crear componente de kit de bienvenida
-description: Cree una página de sitios AEM con vínculos para descargar recursos en función de los datos de formulario enviados.
+description: AEM Cree una página de sitios de la con vínculos para descargar recursos en función de los datos del formulario enviado.
 feature: Adaptive Forms
 version: 6.5
 topic: Development
 role: Developer
 level: Beginner
 last-substantial-update: 2022-12-14T00:00:00Z
-source-git-commit: 0e27907066c7d688549a980ccd17b3f17d74b60b
+exl-id: 66496f0e-c121-4b6d-b371-084393ece3ca
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '74'
 ht-degree: 0%
@@ -16,7 +17,7 @@ ht-degree: 0%
 
 # Componente del kit de bienvenida
 
-Se creó un componente de página para enumerar los recursos de la página que el usuario final puede descargar. Las rutas a los recursos individuales se guardan en una propiedad denominada **rutas**. Los datos del formulario enviado determinan los recursos que se van a incluir.
+Se creó un componente de página para enumerar los recursos de la página que el usuario final puede descargar. Las rutas a los recursos individuales se guardan en una propiedad llamada **rutas**. Los datos de formulario enviados determinan los recursos que se van a incluir.
 
 El siguiente código enumera los recursos de la página:
 
@@ -40,6 +41,3 @@ El siguiente código enumera los recursos de la página:
 </sly>
 <sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=!ready}"></sly>
 ```
-
-
-

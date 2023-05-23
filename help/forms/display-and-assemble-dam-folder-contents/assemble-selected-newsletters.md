@@ -1,6 +1,6 @@
 ---
 title: Combinar los boletines seleccionados en un archivo
-description: Combinación de newsletters seleccionados mediante el servicio de ensamblador
+description: Combinar los boletines seleccionados mediante el servicio de ensamblador
 feature: Adaptive Forms
 version: 6.5
 topic: Development
@@ -15,14 +15,14 @@ ht-degree: 1%
 
 ---
 
-# Combinar los boletines seleccionados en un pdf
+# Combinar los boletines seleccionados en un PDF
 
-Las selecciones del usuario se almacenan en un campo oculto. El valor de este campo oculto se pasa al servlet, que combinará las selecciones en un pdf mediante [Servicio Forms Assembler](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html).
+Las selecciones del usuario se almacenan en un campo oculto. El valor de este campo oculto se pasa al servlet, que combina las selecciones en un PDF mediante [Servicio Forms Assembler](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html).
 
 
-## Servlet para ensamblar archivos pdf
+## Servlet para montar archivos PDF
 
-El siguiente código hace el ensamblaje de los boletines seleccionados. El código crea un mapa de documentos a partir de las selecciones del usuario. A partir de este mapa se crea un DDX y este DDX junto con el mapa de documentos se pasa al método de invocación del servicio Assembler para obtener el documento combinado. El pdf ensamblado se almacena en el repositorio y su ruta se devuelve a la aplicación que realiza la llamada.
+El siguiente código realiza el ensamblado de los boletines seleccionados. El código crea un mapa de documentos a partir de las selecciones del usuario. A partir de este mapa se crea un DDX y este DDX junto con el mapa de documentos se pasan al método de invocación del servicio Assembler para obtener el documento combinado. El PDF ensamblado se almacena en el repositorio y su ruta se devuelve a la aplicación que realiza la llamada.
 
 ```java
 protected void doPost(SlingHttpServletRequest request,SlingHttpServletResponse response)
@@ -80,7 +80,7 @@ protected void doPost(SlingHttpServletRequest request,SlingHttpServletResponse r
 
 ## Funciones de utilidad
 
-Se utilizaron las siguientes funciones de utilidad para ensamblar los boletines informativos. Estas funciones de utilidad crean DDX a partir del mapa de documentos y convierten el org.w3c.dom.Document en un objeto de documento AEMFD.
+Se utilizaron las siguientes funciones de utilidad para montar los boletines. Estas funciones de utilidad crean DDX a partir del mapa de documentos y convierten el documento org.w3c.dom.Document en un objeto de documento de AEMFD.
 
 
 ```java

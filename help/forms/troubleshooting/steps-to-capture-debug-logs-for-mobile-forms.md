@@ -1,6 +1,6 @@
 ---
-title: Pasos para capturar registros de depuración para formularios móviles
-description: Configuración de registros de depuración para problemas de depuración relacionados con formularios móviles
+title: Pasos para capturar los registros de depuración de los formularios móviles
+description: Configurar registros de depuración para problemas de depuración relacionados con Mobile Forms
 type: Troubleshooting
 role: Admin
 level: Beginner
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Pasos para capturar registros de depuración para formularios móviles
+# Pasos para capturar los registros de depuración de los formularios móviles
 
-*Este vídeo muestra los pasos para capturar los registros de depuración para formularios móviles.*
+*Este vídeo explica los pasos para capturar los registros de depuración de los formularios móviles.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335516?quality=12&learn=on)

@@ -1,6 +1,6 @@
 ---
-title: Pasos para resolver los problemas de replicación en AEM
-description: Pasos para investigar y resolver problemas relacionados con la replicación
+title: AEM Pasos para resolver los problemas de replicación en la
+description: Pasos para investigar y resolver los problemas relacionados con la replicación
 type: Troubleshooting
 role: Admin
 level: Beginner
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Pasos para resolver los problemas de replicación en AEM
+# AEM Pasos para resolver los problemas de replicación en la
 
-*Este vídeo muestra los pasos para resolver los problemas de replicación en AEM.*
+*AEM Este vídeo explica los pasos para resolver los problemas de replicación en los grupos de trabajo de.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335471?quality=12&learn=on)

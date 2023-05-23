@@ -1,6 +1,6 @@
 ---
-title: AEM aplicación de escritorio
-description: Utilice AEM aplicación de escritorio para simplificar el acceso a cualquier recurso administrado en AEM en el escritorio, para cualquier aplicación y formato de archivo.
+title: AEM Aplicación de escritorio
+description: AEM AEM Utilice la aplicación de escritorio de para simplificar el acceso a cualquier recurso administrado en la aplicación de escritorio, para cualquier aplicación y formato de archivo, en cualquier lugar del mundo.
 version: 6.5, 6.4
 topic: Content Management
 feature: Desktop App
@@ -19,19 +19,19 @@ ht-degree: 4%
 
 # Uso de la aplicación de escritorio de AEM
 
-Utilice AEM aplicación de escritorio para simplificar el acceso a cualquier recurso administrado en AEM en el escritorio, para cualquier aplicación y formato de archivo.
+AEM AEM Utilice la aplicación de escritorio de para simplificar el acceso a cualquier recurso administrado en la aplicación de escritorio, para cualquier aplicación y formato de archivo, en cualquier lugar del mundo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28868?quality=12&learn=on)
 
-+ Descubra los recursos en AEM mediante la exploración y la búsqueda mediante una aplicación de escritorio dedicada
-+ La administración optimizada del ancho de banda permite la carga y descarga de muchos recursos grandes
-+ Carga y descarga masivas de carpetas y recursos
++ AEM Descubra los recursos en la a través de la exploración y la búsqueda mediante una aplicación de escritorio dedicada
++ La administración optimizada del ancho de banda permite cargar y descargar muchos recursos de gran tamaño
++ Cargar y descargar carpetas y recursos de forma masiva
 + Acceso a recursos sincronizados sin conexión
 
 >[!NOTE]
 >
-> [Vínculo de recurso de Adobe](./adobe-asset-link.md) es la solución específica de Adobe para trabajar con AEM recursos dentro de aplicaciones de Adobe Creative Cloud: Photoshop, Illustrator, InDesign. Cuando se utiliza AEM Assets en estas aplicaciones, se prefiere Adobe Asset Link sobre AEM Aplicación de escritorio.
+> [Adobe Asset Link](./adobe-asset-link.md) es la solución específica de Adobe AEM para trabajar con recursos en aplicaciones de Adobe Creative Cloud: Photoshop, Illustrator y InDesign. Cuando se utiliza AEM Assets en estas aplicaciones, se prefiere Adobe AEM Asset Link en lugar de aplicación de escritorio de la aplicación de escritorio de la.
 
 ## Recursos adicionales
 
-+ [Descargue la aplicación de escritorio AEM más reciente](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html)
++ [AEM Descargue la aplicación de escritorio más reciente de](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html)

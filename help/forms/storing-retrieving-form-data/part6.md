@@ -1,5 +1,5 @@
 ---
-title: Almacenamiento y recuperación de datos de formulario de la base de datos MySQL - Implementación
+title: 'Almacenar y recuperar datos de formulario de la base de datos MySQL: implementación'
 description: Tutorial de varias partes para guiarle por los pasos necesarios para almacenar y recuperar datos de formulario
 feature: Adaptive Forms
 topic: Development
@@ -10,38 +10,38 @@ exl-id: f520e7a4-d485-4515-aebc-8371feb324eb
 source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '278'
-ht-degree: 4%
+ht-degree: 7%
 
 ---
 
-# Implemente esto en su servidor
+# Implementar esto en el servidor
 
 >[!NOTE]
 >
->Para que esto se ejecute en su sistema, es necesario lo siguiente
+>Se requiere lo siguiente para que esto funcione en su sistema
 >
->* AEM Forms(versión 6.3 o posterior)
+>* AEM Forms (versión 6.3 o superior)
 >* Base de datos MySql
 
 
 Para probar esta capacidad en su instancia de AEM Forms, siga los siguientes pasos
 
-* Descargue e implemente el [Jar de controlador MySql](assets/mysqldriver.jar) los archivos que utilizan la variable [consola web felix](http://localhost:4502/system/console/bundles)
-* Descargue e implemente el [Paquete OSGi](assets/SaveAndContinue.SaveAndContinue.core-1.0-SNAPSHOT.jar) usando la variable [consola web felix](http://localhost:4502/system/console/bundles)
-* Descargue e instale el [paquete que contiene la biblioteca de cliente, la plantilla de formulario adaptable y el componente de página personalizado](assets/store-and-fetch-af-with-data.zip) usando la variable [gestor de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
-* Importe el [ejemplo Formulario adaptable](assets/sample-adaptive-form.zip) usando la variable [Interfaz FormsAndDocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Descargue e implemente el [Jar del controlador MySql](assets/mysqldriver.jar) archivos con el [consola web felix](http://localhost:4502/system/console/bundles)
+* Descargue e implemente el [Paquete OSGi](assets/SaveAndContinue.SaveAndContinue.core-1.0-SNAPSHOT.jar) uso del [consola web felix](http://localhost:4502/system/console/bundles)
+* Descargue e instale [paquete que contiene la biblioteca de cliente, la plantilla de formulario adaptable y el componente de página personalizada](assets/store-and-fetch-af-with-data.zip) uso del [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
+* Importe el [Formulario adaptable de ejemplo](assets/sample-adaptive-form.zip) uso del [Interfaz de FormsAndDocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 
-* Importe el [form-data-db.sql](assets/form-data-db.sql) usando MySql Workbench. Esto creará el esquema y las tablas necesarios en la base de datos para que funcione este tutorial.
-* Inicie sesión en [configMgr.](http://localhost:4502/system/console/configMgr) Busque Fuente de datos agrupada de la conexión Apache Sling. Cree una nueva entrada de fuente de datos agrupada de conexión Apache Sling llamada **SaveAndContinue** con las siguientes propiedades:
+* Importe el [form-data-db.sql](assets/form-data-db.sql) uso de MySql Workbench. Esto creará el esquema y las tablas necesarios en la base de datos para que funcione este tutorial.
+* Inicie sesión en [configMgr.](http://localhost:4502/system/console/configMgr) Busque &quot;Fuente de datos obtenida de una conexión Apache Sling&quot;. Cree una nueva entrada de fuente de datos obtenida de una conexión Apache Sling llamada **Guardar y continuar** mediante las siguientes propiedades:
 
-| Nombre de propiedad | Value |
+| Nombre de la propiedad | Valor |
 | ------------------------|---------------------------------------|
-| Nombre del origen de datos | SaveAndContinue |
+| Nombre de Datasource | Guardar y continuar |
 | Clase de controlador JDBC | com.mysql.cj.jdbc.Driver |
 | URI de conexión JDBC | jdbc:mysql://localhost:3306/aemformstutorial |
 
 * Abra el [Formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/demostoreandretrieveformdata/jcr:content?wcmmode=disabled)
-* Rellene algunos detalles y haga clic en el botón &quot;Guardar y continuar más tarde&quot;.
-* Debería recuperar una URL con un GUID en ella.
-* Copie la dirección URL y péguela en una nueva pestaña del explorador. **Asegúrese de que no haya espacio vacío al final de la dirección URL.**
+* Complete algunos detalles y haga clic en el botón &quot;Guardar y continuar más tarde&quot;.
+* Debe recuperar una dirección URL con un GUID en ella.
+* Copie la dirección URL y péguela en una nueva pestaña del explorador. **Asegúrese de que no haya espacios vacíos al final de la dirección URL.**
 * El formulario adaptable debe rellenarse con los datos del paso anterior.

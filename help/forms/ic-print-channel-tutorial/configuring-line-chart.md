@@ -1,7 +1,7 @@
 ---
-title: Configuración del gráfico de líneas del primer documento interactivo de comunicación
+title: Configurar el gráfico de líneas del primer documento de comunicación interactiva
 seo-title: Configuring line chart for your first interactive communication document
-description: Esta es la parte 8 del tutorial de varios pasos para crear su primer documento interactivo de comunicaciones para el canal de impresión. En esta parte, agregaremos un gráfico de líneas para mostrar el saldo de la cuenta.
+description: Esta es la parte 8 del tutorial de varios pasos para crear el primer documento de comunicaciones interactivas para el canal Imprimir. En esta parte, agregaremos un gráfico de líneas para mostrar el saldo de la cuenta.
 seo-description: This is part 8 of multistep tutorial for creating your first interactive communications document for the print channel. In this part, we will add a Line chart to display the account balance.
 uuid: a4394874-a080-4b6a-a3eb-ffc71504919d
 feature: Interactive Communication
@@ -24,18 +24,18 @@ ht-degree: 0%
 
 ---
 
-# Configuración del gráfico de líneas del primer documento interactivo de comunicación {#configuring-line-chart-for-your-first-interactive-communication-document}
+# Configurar el gráfico de líneas del primer documento de comunicación interactiva {#configuring-line-chart-for-your-first-interactive-communication-document}
 
 En esta parte, agregaremos un gráfico de líneas para mostrar el saldo de la cuenta.
 
 Inicie sesión en AEM Forms y vaya a Adobe Experience Manager > Forms > Forms y documentos.
 
-Abra la carpeta 401KStatementPrint .
+Abra la carpeta 401KStatementPrint.
 
-Abra el 401KStatementPrint en modo de edición.
+Abra 401KStatementPrint en modo de edición.
 
-A partir de AEM Forms 6.4, es muy fácil mostrar los datos mediante varios tipos de gráficos. Vamos a usar un gráfico de líneas para mostrar los saldos por año.
+A partir de AEM Forms 6.4, es muy fácil mostrar datos mediante varios tipos de gráficos. Vamos a usar un gráfico de líneas para mostrar los saldos por año.
 
-El siguiente vídeo le guía por los pasos para añadir y configurar el componente de gráfico
+El siguiente vídeo lo acompaña durante los pasos para agregar y configurar el componente de gráfico
 
 >[!VIDEO](https://video.tv.adobe.com/v/22386?quality=12&learn=on)

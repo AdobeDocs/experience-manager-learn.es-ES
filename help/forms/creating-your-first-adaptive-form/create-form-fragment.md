@@ -1,6 +1,6 @@
 ---
-title: Creación de un fragmento de formulario
-description: AEM formularios proporciona un mecanismo cómodo para crear segmentos de formulario como un panel o un grupo de campos solo una vez y reutilizarlos en formularios adaptables.
+title: Crear un fragmento de formulario
+description: AEM Los formularios adaptables proporcionan un mecanismo cómodo para crear segmentos de formulario como un panel o un grupo de campos solo una vez y reutilizarlos.
 feature: Adaptive Forms
 kt: 5862
 thumbnail: 37325.jpg
@@ -15,18 +15,18 @@ ht-degree: 28%
 
 ---
 
-# Creación de un fragmento de formulario
+# Crear fragmento de formulario
 
-Un fragmento es una parte reutilizable de un formulario. Por ejemplo, un fragmento puede incluir un bloque de direcciones o texto legal. El uso de fragmentos simplifica y acelera la creación y el mantenimiento de un gran número de formularios.
+Un fragmento es una parte reutilizable de un formulario. Por ejemplo, un fragmento puede incluir un bloque de direcciones o texto legal. El uso de fragmentos simplifica y acelera la creación y el mantenimiento de una gran cantidad de formularios.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/37325?quality=12&learn=on)
 
 
 
-Consulte [documentación de plantilla de formulario adaptable](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html) para obtener más detalles
+Consulte la [documentación de plantilla de formulario adaptable](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html) para obtener más información
 
-Si es necesario, puede descargar la [Spouse-details-fragment ](assets/spouse-details-fragment.zip) e importar en AEM usando la variable [gestor de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
+Si es necesario, puede descargar el [Spouse-details-fragment ](assets/spouse-details-fragment.zip) AEM e importarlos a la red de mediante el [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
 
 ## Pasos siguientes
 

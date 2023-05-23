@@ -1,6 +1,6 @@
 ---
 title: Crear biblioteca de cliente
-description: Código de la biblioteca del cliente para recuperar el siguiente formulario que se va a firmar
+description: Código de biblioteca de cliente para recuperar el siguiente formulario que se va a firmar
 feature: Adaptive Forms
 version: 6.4,6.5
 kt: 6907
@@ -18,9 +18,9 @@ ht-degree: 3%
 
 # Crear una biblioteca de cliente
 
-Cree una biblioteca de cliente personalizada, clientlib for short, para extraer los parámetros de url y pasar esos parámetros en la llamada de GET. La llamada de GET se realiza a un servlet montado en /bin/getnextformtosign que devuelve la url del siguiente formulario para iniciar sesión en el paquete.
+Cree una biblioteca de cliente personalizada, clientlib para abreviar, para extraer los parámetros de URL que pasan esos parámetros en la llamada de GET. La llamada de GET se realiza a un servlet montado en /bin/getnextformtosign, que devuelve la dirección URL del siguiente formulario para iniciar sesión en el paquete.
 
-El siguiente es el código utilizado en la función clientlib javascript
+El siguiente es el código utilizado en la función clientlib de javascript
 
 
 ```java
@@ -74,7 +74,7 @@ $(document).ready(function()
 
 ## Assets
 
-[La clientlib puede descargarse desde aquí](assets/get-next-form-client-lib.zip)
+[La clientlib se puede descargar desde aquí](assets/get-next-form-client-lib.zip)
 
 ## Pasos siguientes
 

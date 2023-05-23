@@ -1,6 +1,6 @@
 ---
 title: Descargar
-description: Obtenga información sobre cómo descargar recursos y sus representaciones en su equipo local para usarlos y compartirlos.
+description: Obtenga información sobre cómo descargar recursos y sus representaciones en el equipo local para usarlos y compartirlos.
 feature: Asset Management
 version: Cloud Service
 kt: 4300
@@ -19,6 +19,6 @@ ht-degree: 5%
 
 # Descargar
 
-Obtenga información sobre cómo descargar recursos y sus representaciones en su equipo local para usarlos y compartirlos.
+Obtenga información sobre cómo descargar recursos y sus representaciones en el equipo local para usarlos y compartirlos.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35090?quality=12&learn=on)

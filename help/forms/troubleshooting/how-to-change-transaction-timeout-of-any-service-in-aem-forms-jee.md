@@ -1,5 +1,5 @@
 ---
-title: Cambio del tiempo de espera de transacción de un servicio en AEM Forms JEE
+title: Cómo cambiar el tiempo de espera de transacción de un servicio en AEM Forms JEE
 description: Pasos para aumentar o reducir el tiempo de espera de transacción de un servicio en AEM Forms JEE
 type: Troubleshooting
 role: Admin
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ---
 
-# Cambio del tiempo de espera de transacción de un servicio en AEM Forms JEE
+# Cómo cambiar el tiempo de espera de transacción de un servicio en AEM Forms JEE
 
 *Este vídeo muestra los pasos para cambiar el tiempo de espera de transacción de un servicio en AEM Forms JEE.*
 

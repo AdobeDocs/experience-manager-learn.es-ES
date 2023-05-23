@@ -1,7 +1,7 @@
 ---
-title: Crear diseño con Forms Designer
+title: Crear diseños con Forms Designer
 seo-title: Create Layout using Forms Designer
-description: Esta es la parte 4 del tutorial en varias partes para crear su primer documento de comunicación interactivo para el canal de impresión.En esta parte, vemos el archivo de diseño creado con AEM Forms Designer.
+description: Esta es la parte 4 del tutorial de varias partes para crear el primer documento de comunicación interactiva para el canal Imprimir. En esta parte, vemos el archivo de diseño creado con AEM Forms Designer.
 seo-description: This is part 4 of multipart tutorial for creating your first interactive communication document for the print channel.In this part, we look at the layout file created using AEM Forms Designer.
 uuid: 2f014c58-1ae1-40e8-a45d-7ffe9c86f693
 feature: Interactive Communication
@@ -24,11 +24,11 @@ ht-degree: 1%
 
 ---
 
-# Crear diseño con Forms Designer {#create-layout-using-forms-designer}
+# Crear diseños con Forms Designer {#create-layout-using-forms-designer}
 
 En esta parte, vemos el archivo de diseño creado con AEM Forms Designer.
 
-Cada documento del canal de impresión se basa en una plantilla creada con la herramienta AEM Forms Designer. Normalmente, se crean secciones o áreas de destino en la plantilla para guardar fragmentos de documento, imágenes o fragmentos de diseño. Lo ideal es que el diseño no tenga contenido definido. Esto anula el diseño del contenido, que es la práctica recomendada.
+Cada documento del canal de impresión se basa en una plantilla creada con la herramienta AEM Forms Designer. Normalmente, se crean secciones o áreas de destino en la plantilla para contener fragmentos de documento, imágenes o fragmentos de diseño. Lo ideal es que el diseño no tenga ningún contenido definido. Esto anula la unión del diseño con el contenido, que es la práctica recomendada.
 
 El siguiente vídeo resalta las secciones o áreas de destino definidas en el diseño que se utiliza en este tutorial.
 

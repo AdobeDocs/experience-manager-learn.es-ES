@@ -1,6 +1,6 @@
 ---
-title: Implementar una extensión de consola de fragmento de contenido AEM
-description: Obtenga información sobre cómo implementar una extensión de consola de fragmento de contenido AEM.
+title: AEM Implementación de una extensión de la consola Fragmento de contenido de
+description: AEM Obtenga información sobre cómo implementar una extensión de la consola Fragmento de contenido de.
 feature: Developer Tools
 version: Cloud Service
 topic: Development
@@ -9,42 +9,42 @@ level: Beginner
 recommendations: noDisplay, noCatalog
 kt: 11603
 last-substantial-update: 2022-12-01T00:00:00Z
-source-git-commit: f19cdc7d551f20b35550e7d25bd168a2eaa43b6a
+exl-id: 2e37165d-c003-4206-8133-54e37ca35b8e
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '804'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
+# Implementación de una extensión
 
-# Implementar una extensión
+AEM Para su uso en entornos as a Cloud Service de, la aplicación App Builder de extensión debe implementarse y aprobarse.
 
-Para su uso en entornos as a Cloud Service AEM, la aplicación de extensión App Builder debe implementarse y aprobarse.
+Al implementar aplicaciones de App Builder de extensión, hay que tener en cuenta varias consideraciones:
 
-Hay que tener en cuenta varias consideraciones a la hora de implementar las aplicaciones de extensión de App Builder:
++ Las extensiones se implementan en el espacio de trabajo del proyecto de la consola Adobe Developer. Los espacios de trabajo predeterminados son:
+   + __Producción__ AEM workspace contiene implementaciones de extensión disponibles en todas las áreas de trabajo as a Cloud Service.
+   + __Fase__ workspace actúa como un espacio de trabajo de desarrollador. AEM Las extensiones implementadas en el espacio de trabajo de fase no están disponibles en el as a Cloud Service de la.
+Los espacios de trabajo de la consola de Adobe Developer AEM no tienen ninguna correlación directa con los tipos de entorno as a Cloud Service de la.
++ AEM Una extensión implementada en el espacio de trabajo de producción se muestra en todos los entornos as a Cloud Service de la organización de Adobe en los que se encuentra la extensión, en todos los entornos de producción.
+Una extensión no se puede limitar a los entornos en los que está registrada añadiendo [AEM lógica condicional que comprueba el nombre de host as a Cloud Service de la](https://developer.adobe.com/uix/docs/guides/publication/#enabling-extension-only-on-specific-aem-environments).
++ AEM Se pueden utilizar varias extensiones en las as a Cloud Service. El Adobe recomienda que cada aplicación de App Builder de extensión se utilice para solucionar un único objetivo empresarial. Dicho esto, una aplicación App Builder de extensión única puede implementar varios puntos de extensión que apoyen un objetivo comercial común.
 
-+ Las extensiones se implementan en el espacio de trabajo del proyecto de la consola de Adobe Developer. Los espacios de trabajo predeterminados son:
-   + __Producción__ workspace contiene implementaciones de extensiones disponibles en todas AEM as a Cloud Service.
-   + __Prueba__ workspace actúa como espacio de trabajo para desarrolladores. Las extensiones implementadas en el espacio de trabajo de Stage no están disponibles en AEM as a Cloud Service.
-Los espacios de trabajo de la consola de Adobe Developer no tienen correlación directa con AEM tipos de entorno as a Cloud Service.
-+ Una extensión implementada en el espacio de trabajo de producción se muestra en todos AEM entornos as a Cloud Service de la organización de Adobe en la que existe la extensión.
-Una extensión no se puede limitar a los entornos con los que está registrada añadiendo [lógica condicional que comprueba el nombre de host as a Cloud Service AEM](https://developer.adobe.com/uix/docs/guides/publication/#enabling-extension-only-on-specific-aem-environments).
-+ Se pueden usar varias extensiones en AEM as a Cloud Service. Adobe recomienda que cada aplicación de extensión de App Builder se utilice para resolver un solo objetivo comercial. Dicho esto, una aplicación de App Builder de una sola extensión puede implementar varios puntos de extensión que admitan un objetivo comercial común.
+## Despliegue inicial
 
-## Implementación inicial
-
-Para que una extensión esté disponible en AEM entornos as a Cloud Service, debe implementarse en la consola de Adobe Developer.
+AEM Para que una extensión esté disponible en entornos as a Cloud Service, debe implementarse en la consola de Adobe Developer.
 
 El proceso de implementación se divide en dos pasos lógicos:
 
-1. Un desarrollador de la aplicación de extensión App Builder para la consola de Adobe Developer.
-1. Aprobación de la extensión por un administrador de implementación o un propietario de empresa.
+1. Implementación de la aplicación App Builder de extensión en la consola de Adobe Developer por un desarrollador.
+1. Aprobación de la extensión por un administrador de implementación o un propietario empresarial.
 
-### Implementar la extensión de la aplicación App Builder
+### Implementación de la extensión App Builder
 
-Implemente la extensión en el espacio de trabajo Producción. Las extensiones implementadas en el espacio de trabajo de producción se añaden automáticamente a todos AEM servicios de Autor as a Cloud Service en la organización de Adobe en la que se implementa la extensión.
+Implemente la extensión en el espacio de trabajo de producción. AEM Las extensiones implementadas en el espacio de trabajo de producción se añaden automáticamente a todos los servicios de autor as a Cloud Service de la organización de Adobe en los que se implementa la extensión de.
 
-1. Abra una línea de comandos en la raíz de la aplicación App Builder de la extensión actualizada.
+1. Abra una línea de comandos en la raíz de la extensión actualizada de la aplicación App Builder.
 1. Asegúrese de que el espacio de trabajo Producción esté activo
 
    ```shell
@@ -53,54 +53,54 @@ Implemente la extensión en el espacio de trabajo Producción. Las extensiones i
 
    Combinar cualquier cambio en `.env` y `.aio`.
 
-1. Implemente la extensión actualizada de la aplicación App Builder.
+1. Implemente la extensión actualizada App Builder.
 
    ```shell
    $ aio app deploy
    ```
 
-#### Solicitud de aprobación de implementación
+#### Solicitar aprobación de implementación
 
-![Enviar extensión para aprobación](./assets/deploy/submit-for-approval.png){align="center"}
+![Enviar extensión para su aprobación](./assets/deploy/submit-for-approval.png){align="center"}
 
 1. Iniciar sesión en [Consola de Adobe Developer](https://developer.adobe.com)
-1. Select __Consola__
+1. Seleccionar __Consola__
 1. Vaya a __Proyectos__
 1. Seleccione el proyecto asociado a la extensión
 1. Seleccione el __Producción__ workspace
-1. Select __Enviar para aprobación__
+1. Seleccionar __Enviar para aprobación__
 1. Complete y envíe el formulario, actualizando los campos según sea necesario.
 
-Tenga en cuenta que se requiere un icono. Si no tiene un icono, puede usar [este icono](./assets/deploy/icon.png).
+Tenga en cuenta que se requiere un icono. Si no tiene ningún icono, puede utilizar [este icono](./assets/deploy/icon.png).
 
-### Aprobar la solicitud de implementación
+### Aprobación de la solicitud de implementación
 
 ![Aprobación de extensión](./assets/deploy/adobe-exchange.png){align="center"}
 
-1. Iniciar sesión en [Adobe Exchange](https://exchange.adobe.com/)
+1. Iniciar sesión en [Intercambio de Adobe](https://exchange.adobe.com/)
 1. Vaya a __Administrar__ > __Aplicaciones pendientes de revisión__
-1. __Consulte__ la aplicación de extensión de App Builder
-1. Si los cambios de la extensión son aceptables __Accept__ la revisión. Esto inserta inmediatamente la extensión en todos AEM servicios de Autor as a Cloud Service dentro de la organización de Adobe.
+1. __Revisar__ la extensión App Builder
+1. Si los cambios de extensión son aceptables __Aceptar__ la revisión. AEM Esto inserta inmediatamente la extensión en todos los servicios de autor as a Cloud Service dentro de la organización de Adobe.
 
-Una vez aprobada la solicitud de extensión, la extensión se activa inmediatamente en los servicios de autor as a Cloud Service de AEM.
+AEM Una vez aprobada la solicitud de extensión, la extensión se activa inmediatamente en los servicios de autor as a Cloud Service de la.
 
-## Actualizar una extensión
+## Actualización de una extensión
 
-La actualización y la extensión de la aplicación App Builder siguen el mismo proceso que el [implementación inicial](#initial-deployment), con la desviación de que la implementación de la extensión existente debe revocarse primero.
+La actualización y la extensión de la aplicación App Builder siguen el mismo proceso que la [implementación inicial](#initial-deployment), con la desviación de que la implementación de extensión existente primero debe revocarse.
 
 ### Revocar la extensión
 
-Para implementar una nueva versión de una extensión, primero debe revocarse (o eliminarse). Mientras la extensión es revocada, no está disponible en AEM consolas.
+Para implementar una nueva versión de una extensión, primero debe revocarse (o eliminarse). AEM Mientras que la extensión es Revocada, no está disponible en consolas de.
 
-1. Iniciar sesión en [Adobe Exchange](https://exchange.adobe.com/)
-1. Vaya a __Administrar__ > __Aplicaciones de App Builder__
+1. Iniciar sesión en [Intercambio de Adobe](https://exchange.adobe.com/)
+1. Vaya a __Administrar__ > __Aplicaciones del Generador de aplicaciones__
 1. __Revocar__ la extensión para actualizar
 
 ### Implementación de la extensión
 
-Implemente la extensión en el espacio de trabajo Producción. Las extensiones implementadas en el espacio de trabajo de producción se añaden automáticamente a todos AEM servicios de Autor as a Cloud Service en la organización de Adobe en la que se implementa la extensión.
+Implemente la extensión en el espacio de trabajo de producción. AEM Las extensiones implementadas en el espacio de trabajo de producción se añaden automáticamente a todos los servicios de autor as a Cloud Service de la organización de Adobe en los que se implementa la extensión de.
 
-1. Abra una línea de comandos en la raíz de la aplicación App Builder de la extensión actualizada.
+1. Abra una línea de comandos en la raíz de la extensión actualizada de la aplicación App Builder.
 1. Asegúrese de que el espacio de trabajo Producción esté activo
 
    ```shell
@@ -109,41 +109,41 @@ Implemente la extensión en el espacio de trabajo Producción. Las extensiones i
 
    Combinar cualquier cambio en `.env` y `.aio`.
 
-1. Implemente la extensión actualizada de la aplicación App Builder.
+1. Implemente la extensión actualizada App Builder.
 
    ```shell
    $ aio app deploy
    ```
 
-#### Solicitud de aprobación de implementación
+#### Solicitar aprobación de implementación
 
-![Enviar extensión para aprobación](./assets/deploy/submit-for-approval.png){align="center"}
+![Enviar extensión para su aprobación](./assets/deploy/submit-for-approval.png){align="center"}
 
 1. Iniciar sesión en [Consola de Adobe Developer](https://developer.adobe.com)
-1. Select __Consola__
+1. Seleccionar __Consola__
 1. Vaya a __Proyectos__
 1. Seleccione el proyecto asociado a la extensión
 1. Seleccione el __Producción__ workspace
-1. Select __Enviar para aprobación__
+1. Seleccionar __Enviar para aprobación__
 1. Complete y envíe el formulario, actualizando los campos según sea necesario.
 
-#### Aprobar la solicitud de implementación
+#### Aprobación de la solicitud de implementación
 
 ![Aprobación de extensión](./assets/deploy/adobe-exchange.png){align="center"}
 
-1. Iniciar sesión en [Adobe Exchange](https://exchange.adobe.com/)
+1. Iniciar sesión en [Intercambio de Adobe](https://exchange.adobe.com/)
 1. Vaya a __Administrar__ > __Aplicaciones pendientes de revisión__
-1. __Consulte__ la aplicación de extensión de App Builder
-1. Si los cambios de la extensión son aceptables __Accept__ la revisión. Esto inserta inmediatamente la extensión en todos AEM servicios de Autor as a Cloud Service dentro de la organización de Adobe.
+1. __Revisar__ la extensión App Builder
+1. Si los cambios de extensión son aceptables __Aceptar__ la revisión. AEM Esto inserta inmediatamente la extensión en todos los servicios de autor as a Cloud Service dentro de la organización de Adobe.
 
-Una vez aprobada la solicitud de extensión, la extensión se activa inmediatamente en los servicios de autor as a Cloud Service de AEM.
+AEM Una vez aprobada la solicitud de extensión, la extensión se activa inmediatamente en los servicios de autor as a Cloud Service de la.
 
 ## Eliminación de una extensión
 
 ![Eliminación de una extensión](./assets/deploy/revoke.png)
 
-Para quitar una extensión, revoque (o quite) la extensión de Adobe Exchange. Cuando se revoca la extensión, se elimina de todos AEM servicios de Autor as a Cloud Service.
+Para eliminar una extensión, revoque (o elimine) su acceso a Adobe Exchange. AEM Cuando se revoca la extensión, se elimina de todos los servicios de autor as a Cloud Service de la.
 
-1. Iniciar sesión en [Adobe Exchange](https://exchange.adobe.com/)
-1. Vaya a __Administrar__ > __Aplicaciones de App Builder__
-1. __Revocar__ la extensión que desea eliminar
+1. Iniciar sesión en [Intercambio de Adobe](https://exchange.adobe.com/)
+1. Vaya a __Administrar__ > __Aplicaciones del Generador de aplicaciones__
+1. __Revocar__ la extensión que se va a eliminar

@@ -17,27 +17,27 @@ ht-degree: 46%
 
 # Introducción a AEM Sites: Tutorial de WKND {#getting-started-wknd-tutorial-develop}
 
-+ [Información general del tutorial de WKND](overview.md)
-+ Tipo de archivo del proyecto {#project-archetype}
++ [Información general del tutorial WKND](overview.md)
++ Arquetipo de proyecto {#project-archetype}
    + [Información general](./project-archetype/overview.md)
    + [1 - Configuración del proyecto](./project-archetype/project-setup.md)
    + [2 - Conceptos básicos de componentes](./project-archetype/component-basics.md)
-   + [3: Páginas y plantillas](./project-archetype/pages-templates.md)
-   + [4 - Bibliotecas del lado del cliente](./project-archetype/client-side-libraries.md)
+   + [3 - Páginas y plantillas](./project-archetype/pages-templates.md)
+   + [4 - Bibliotecas del lado cliente](./project-archetype/client-side-libraries.md)
    + [5 - Sistema de estilos](./project-archetype/style-system.md)
    + [6 - Componente personalizado](./project-archetype/custom-component.md)
-   + [7 - Prueba de unidad](./project-archetype/unit-testing.md)
+   + [7 - Pruebas unitarias](./project-archetype/unit-testing.md)
 + Creación rápida de sitios {#site-template}
    + [Información general](./site-template/overview.md)
    + [1 - Crear un sitio](./site-template/create-site.md)
    + [2 - Introducción a la creación y publicación](./site-template/author-content-publish.md)
-   + [3: Planificación de la interfaz de usuario con Adobe XD](./site-template/ui-planning-adobe-xd.md)
-   + [4: Plantillas de página](./site-template/page-templates.md)
-   + [5 - Tema](./site-template/theming.md)
-+ Habilitar canalización de front-end: operaciones de desarrollo{#enable-frontend-pipeline-devops}
+   + [3 - Planificación de la IU con Adobe XD](./site-template/ui-planning-adobe-xd.md)
+   + [4 - Plantillas de página](./site-template/page-templates.md)
+   + [5 - Temática](./site-template/theming.md)
++ Habilitar canalización front-end: DevOps{#enable-frontend-pipeline-devops}
    + [Información general](./enable-frontend-pipeline/overview.md)
    + [1 - Revisar proyecto de pila completa](./enable-frontend-pipeline/review-uifrontend-module.md)
-   + [2 - Actualizar proyecto para utilizar la canalización front-end](./enable-frontend-pipeline/update-project.md)
-   + [3 - Implementar utilizando la canalización front-end](./enable-frontend-pipeline/create-frontend-pipeline.md)
+   + [2 - Actualizar proyecto para utilizar canalización front-end](./enable-frontend-pipeline/update-project.md)
+   + [3 - Implementar mediante la canalización front-end](./enable-frontend-pipeline/create-frontend-pipeline.md)
    + [4 - Consideraciones](./enable-frontend-pipeline/considerations.md)
 

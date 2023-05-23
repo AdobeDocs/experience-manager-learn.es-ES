@@ -1,6 +1,6 @@
 ---
 title: Pasos para comprobar el permiso de carpeta en Windows Server 2016
-description: Asegúrese de que el usuario PDFG tenga el permiso de carpeta necesario en Windows Server 2016
+description: Asegúrese de que el usuario de PDFG tenga el permiso de carpeta necesario en Windows Server 2016
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Pasos para comprobar el permiso de carpeta en Windows Server 2016 para el PDFG de AEM Forms
+# Pasos para comprobar el permiso de carpeta en Windows Server 2016 para AEM Forms PDFG
 
-*Este vídeo muestra los pasos adicionales para comprobar el Permiso de carpeta en Windows Server 2016.*
+*Este vídeo muestra los pasos adicionales para comprobar el permiso de carpeta en Windows Server 2016.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335519?quality=12&learn=on)

@@ -1,6 +1,6 @@
 ---
-title: Uso de Panorama y Visualizador de imágenes verticales con AEM Assets Dynamic Media
-description: Las mejoras en el visor de Dynamic Media de AEM 6.4 incluyen la adición de Visualizador de imágenes panorámicas, Visualizador de imágenes panorámicas de realidad virtual y Visualizador de imágenes verticales. Panoramic Viewer ofrece una manera fácil de ofrecer una experiencia inmersiva y atractiva de la habitación, propiedad, ubicación o paisaje sin ningún desarrollo personalizado.
+title: Uso del visualizador de imágenes panorámicas y verticales con AEM Assets Dynamic Media
+description: Las mejoras del visualizador de Dynamic Media AEM en la versión 6.4 incluyen la adición del visualizador de imágenes panorámicas, el visualizador de imágenes de realidad virtual panorámica y el visualizador de imágenes verticales. El visor panorámico es una forma sencilla de ofrecer una experiencia atractiva e inmersiva de la habitación, la propiedad, la ubicación o el paisaje sin ningún desarrollo personalizado.
 feature: Video Profiles, Video Profiles, 360 VR Video
 version: 6.4, 6.5
 topic: Content Management
@@ -14,46 +14,46 @@ ht-degree: 2%
 
 ---
 
-# Uso de Panorama y Visualizador de imágenes verticales con AEM Assets Dynamic Media{#using-panorama-and-vertical-image-viewer-with-aem-assets-dynamic-media}
+# Uso del visualizador de imágenes panorámicas y verticales con AEM Assets Dynamic Media{#using-panorama-and-vertical-image-viewer-with-aem-assets-dynamic-media}
 
-Las mejoras en el visor de Dynamic Media de AEM 6.4 incluyen la adición de Visualizador de imágenes panorámicas, Visualizador de imágenes panorámicas de realidad virtual y Visualizador de imágenes verticales. Panoramic Viewer ofrece una manera fácil de ofrecer una experiencia inmersiva y atractiva de la habitación, propiedad, ubicación o paisaje sin ningún desarrollo personalizado.
+Las mejoras del visualizador de Dynamic Media AEM en la versión 6.4 incluyen la adición del visualizador de imágenes panorámicas, el visualizador de imágenes de realidad virtual panorámica y el visualizador de imágenes verticales. El visor panorámico es una forma sencilla de ofrecer una experiencia atractiva e inmersiva de la habitación, la propiedad, la ubicación o el paisaje sin ningún desarrollo personalizado.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24156?quality=12&learn=on)
 
 >[!NOTE]
 >
->El vídeo supone que la instancia de AEM se está ejecutando en el modo Dynamic Media S7. [Las instrucciones para configurar AEM con Dynamic Media se encuentran aquí.](https://helpx.adobe.com/es/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
+>AEM En el vídeo se da por hecho que la instancia de se está ejecutando en el modo Dynamic Media S7. [AEM Puede encontrar instrucciones sobre la configuración de la con Dynamic Media aquí.](https://helpx.adobe.com/es/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
 
-## Visualizador de vídeo panorámico
+## Visor de RV panorámico y panorámico
 
-Una imagen se considera panorámica según su relación de aspecto o palabras clave. De forma predeterminada, una imagen con una relación de aspecto de 2 se considera una imagen panorámica. Los ajustes preestablecidos del visualizador de imágenes panorámicas estarán disponibles para la vista previa de una imagen si cumplen los criterios anteriores. El criterio de la relación de aspecto de la imagen panorámica se puede modificar en la configuración DMS7 de la empresa especificando la doble propiedad s7PanoramicAR en /conf/global/settings/cloudconfigs/dmscene7/jcr:content. Las palabras clave se almacenan en la propiedad dc:keyword del nodo de metadatos del recurso. Si las palabras clave contienen cualquiera de las siguientes combinaciones :
+Una imagen se considera panorámica en función de su proporción de aspecto o palabras clave. De forma predeterminada, una imagen con una proporción de aspecto de 2 se considera una imagen panorámica. Los ajustes preestablecidos del visualizador de imágenes panorámicas están disponibles para una previsualización de imagen si cumplen los criterios anteriores. El criterio de la proporción de aspecto de imagen panorámica se puede modificar en la configuración DMS7 de la empresa especificando la propiedad doble s7PanoramicAR en /conf/global/settings/cloudconfigs/dmscene7/jcr:content. Las palabras clave se almacenan en la propiedad dc:keyword del nodo de metadatos del recurso. Si las palabras clave contienen cualquiera de las siguientes combinaciones:
 
 * equirectangular,
-* esférica + panorámica,
-* esférica + panorámica,
+* esférico + panorámico,
+* esférico + panorama,
 
-se considera un recurso de imagen panorámica independientemente de su proporción de aspecto.
+se considera un recurso de imagen panorámica independientemente de su relación de aspecto.
 
-## Visor de imágenes verticales
+## Visor de imágenes vertical
 
-Con muestras horizontales, según el tamaño de la pantalla del escritorio del consumidor, a veces las muestras no eran visibles hasta que el usuario se desplazaba hacia abajo en la página. Mediante el uso del visor de imágenes vertical y la colocación de muestras verticales, se garantiza que las muestras sean visibles independientemente del tamaño de la pantalla. También maximiza el tamaño de la imagen principal. Con las muestras horizontales, era necesario reservar espacio en la página para garantizar que tengan una alta probabilidad de ser visibles y que reduzcan el tamaño de la imagen principal. Con un diseño vertical, no es necesario preocuparse por la asignación de este espacio y, por lo tanto, puede maximizar el tamaño de la imagen principal.
+Con las muestras horizontales, según el tamaño de pantalla de escritorio del consumidor, a veces las muestras no eran visibles hasta que el usuario se desplazaba hacia abajo por la página. Al utilizar el visualizador de imágenes verticales y colocar las muestras verticales, se garantiza que las muestras sean visibles independientemente del tamaño de pantalla. También maximiza el tamaño de la imagen principal. Con las muestras horizontales, era necesario reservar espacio en la página para asegurarse de que tuvieran una alta probabilidad de ser visibles y reducirían el tamaño de la imagen principal. Con un diseño vertical, no es necesario preocuparse por asignar este espacio y, por lo tanto, puede maximizar el tamaño de la imagen principal.
 
 <table> 
  <tbody>
   <tr>
    <td> </td>
-   <td>Visualizador panorámico y VR</td>
-   <td>Visor de imágenes verticales</td>
+   <td>Visor panorámico y de realidad virtual</td>
+   <td>Visor de imágenes vertical</td>
   </tr>
   <tr>
    <td>Modo de ejecución de Dynamic Media</td>
-   <td>Solo en el modo Scene7 de Dynamic Media</td>
+   <td>Solo modo Scene7 de Dynamic Media</td>
    <td>DMS7 y Dynamic Media</td>
   </tr>
   <tr>
    <td>Caso práctico</td>
-   <td><p>El visor panorámico y el visor de Realidad virtual proporcionan a los usuarios una experiencia más atractiva. Un usuario puede visitar una habitación de hotel incluso antes de hacer una reserva, o visitar una propiedad de alquiler sin tener que programar una cita. Un usuario puede comprobar una ubicación y muchas más posibilidades. El objetivo principal aquí es ofrecer al consumidor una mejor experiencia cuando visita su sitio web y, finalmente, aumentar su tasa de conversión.</p> <p> </p> </td> 
-   <td><p>El visor de imágenes verticales ayuda a maximizar la experiencia de visualización de imágenes del producto para ofrecer a los consumidores la mejor representación del producto, lo que impulsa la conversión y minimiza los retornos.</p> <p> </p> </td>
+   <td><p>El visor panorámico y el visor de realidad virtual proporcionan a los usuarios una experiencia más atractiva. Un usuario puede revisar una habitación de hotel incluso antes de hacer una reserva, o revisar una propiedad de alquiler sin tener que programar una cita. Un usuario puede comprobar una ubicación y muchas más posibilidades. El objetivo principal aquí es proporcionar al consumidor una mejor experiencia cuando visita su sitio web y, finalmente, aumentar la tasa de conversión.</p> <p> </p> </td> 
+   <td><p>El visualizador de imágenes verticales maximiza la experiencia de visualización de imágenes del producto para ofrecer a los consumidores la mejor representación del producto, lo que impulsa la conversión y minimiza los retornos.</p> <p> </p> </td>
   </tr>
   <tr>
    <td>Disponible </td>
@@ -69,4 +69,4 @@ Con muestras horizontales, según el tamaño de la pantalla del escritorio del c
 
 >[!NOTE]
 >
->Los visualizadores panorámicos trabajan con imágenes panorámicas y no están pensados para utilizarse con imágenes normales.
+>Los visores panorámicos trabajan con imágenes panorámicas y no están pensados para utilizarse con imágenes normales.

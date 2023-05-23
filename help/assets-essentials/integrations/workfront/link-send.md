@@ -1,5 +1,5 @@
 ---
-title: Envío de documentos de Workfront y vinculación de recursos de Assets Essentials
+title: Envío de documentos Workfront y vinculación de recursos Assets Essentials
 description: Obtenga información sobre cómo enviar documentos de Workfront a Assets Essentials y vincular recursos de Assets Essentials a Workfront.
 version: Cloud Service
 feature: Assets Essentials

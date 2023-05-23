@@ -1,6 +1,6 @@
 ---
-title: Introducción a AEM Sites | Creación rápida de sitios AEM
-description: Aprenda a utilizar un enfoque de bajo código para crear su primer sitio en Adobe Experience Manager con Creación rápida del sitio y una plantilla de sitio predefinida. Utilice componentes y plantillas integrados para poner en marcha un sitio rápidamente. Utilice un flujo de trabajo de la temática impulsada por Adobe XD para aplicar estilos y personalizaciones específicos de la marca solo con CSS y JavaScript. Recomendado para nuevos proyectos y desarrolladores.
+title: Introducción a AEM Sites AEM | Creación rápida de sitios de
+description: Aprenda a utilizar un método de código bajo para crear su primer sitio en Adobe Experience Manager con Creación rápida del sitio y una plantilla de sitio predefinida. Utilice componentes y plantillas listas para usar para poner en marcha rápidamente un sitio. Utilice un flujo de trabajo de temas impulsado por Adobe XD para aplicar estilos y personalizaciones específicos de la marca solo con CSS y JavaScript. Recomendado para nuevos proyectos y desarrolladores.
 version: Cloud Service
 type: Tutorial
 topic: Content Management
@@ -19,19 +19,19 @@ ht-degree: 0%
 
 # Introducción a AEM Sites: Creación rápida de sitios {#site-template}
 
-Aprenda a utilizar un enfoque de bajo código para crear su primer sitio en Adobe Experience Manager con Creación rápida del sitio y una plantilla de sitio predefinida. Utilice componentes y plantillas integrados para poner en marcha un sitio rápidamente. Utilice un flujo de trabajo de la temática impulsada por Adobe XD para aplicar estilos y personalizaciones específicos de la marca solo con CSS y JavaScript. Recomendado para nuevos proyectos y desarrolladores.
+Aprenda a utilizar un método de código bajo para crear su primer sitio en Adobe Experience Manager con Creación rápida del sitio y una plantilla de sitio predefinida. Utilice componentes y plantillas listas para usar para poner en marcha rápidamente un sitio. Utilice un flujo de trabajo de temas impulsado por Adobe XD para aplicar estilos y personalizaciones específicos de la marca solo con CSS y JavaScript. Recomendado para nuevos proyectos y desarrolladores.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333477?quality=12&learn=on)
 
-* [Kit de interfaz de usuario de Adobe XD](https://github.com/adobe/aem-site-template-basic/blob/main/files/wireframe.xd)
-* [Plantilla del sitio AEM](https://github.com/adobe/aem-site-template-basic)
+* [Kit de IU de Adobe XD](https://github.com/adobe/aem-site-template-basic/blob/main/files/wireframe.xd)
+* [AEM Plantilla del sitio de](https://github.com/adobe/aem-site-template-basic)
 
-## Entorno as a Cloud Service AEM {#environment}
+## AEM Entorno as a Cloud Service {#environment}
 
-Los pasos de este tutorial se llevarán a cabo en un entorno de Adobe Experience Manager as a Cloud Service. Asegúrese de tener acceso administrativo al entorno de AEM. Se recomienda utilizar un [Programa Sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/sandbox-programs/introduction-sandbox-programs.html) y [Entorno de desarrollo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html) al completar este tutorial.
+Los pasos de este tutorial se realizarán en un entorno de Adobe Experience Manager as a Cloud Service. AEM Asegúrese de que tiene acceso administrativo al entorno de la. Se recomienda utilizar un [Programa de zona protegida](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/sandbox-programs/introduction-sandbox-programs.html) y [Entorno de desarrollo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html) al completar este tutorial.
 
 ## Pasos siguientes {#next-steps}
 
-Un tutorial paso a paso explica la implementación de un sitio AEM para una marca ficticia de estilo de vida en WKND mediante la función de creación rápida del sitio.
+AEM Un tutorial paso a paso recorre la implementación de un sitio de para una marca ficticia de estilo de vida WKND mediante la función Creación rápida de sitios.
 
-¡¿Qué estás esperando?! Inicie el tutorial navegando hasta el [Crear sitio](create-site.md) y aprenda a generar un nuevo proyecto de Adobe Experience Manager con una plantilla de sitio.
+¿Qué estás esperando?! Inicie el tutorial navegando hasta [Crear sitio](create-site.md) y aprenda a generar un nuevo proyecto de Adobe Experience Manager con una plantilla del sitio.

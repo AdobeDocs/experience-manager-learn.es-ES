@@ -1,6 +1,6 @@
 ---
 title: 'Copias de idioma: editor de fragmentos de contenido '
-description: Descubra cómo AEM interfaz de usuario de fragmentos de contenido facilita la localización de fragmentos de contenido mediante filtros rápidos. Con esta función, la búsqueda de fragmentos de contenido específicos se vuelve rápida y sencilla.
+description: AEM Descubra cómo la interfaz de usuario de fragmentos de contenido hace que sea más fácil localizar fragmentos de contenido mediante un filtrado rápido. Con esta función, la búsqueda de fragmentos de contenido específicos se vuelve rápida y sencilla.
 version: Cloud Service
 role: User
 level: Beginner
@@ -17,6 +17,6 @@ ht-degree: 3%
 
 # Copias de idioma
 
-Descubra cómo AEM editor de fragmentos de contenido facilita la localización de fragmentos de contenido mediante filtros rápidos. Con esta función, la búsqueda de fragmentos de contenido específicos se vuelve rápida y sencilla.
+AEM Descubra cómo el editor de fragmentos de contenido de la aplicación hace que sea fácil localizar fragmentos de contenido mediante un filtrado rápido. Con esta función, la búsqueda de fragmentos de contenido específicos se vuelve rápida y sencilla.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419311/?learn=on)

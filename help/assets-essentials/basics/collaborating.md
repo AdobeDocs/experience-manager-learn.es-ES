@@ -1,6 +1,6 @@
 ---
 title: Colaboración en Assets Essentials
-description: Obtenga información sobre cómo colaborar dentro de la administración de recursos mediante comentarios, anotaciones y tareas.
+description: Aprenda a colaborar dentro de la administración de recursos mediante comentarios, anotaciones y tareas.
 version: Cloud Service
 feature: Assets Essentials
 topic: Content Management
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Colaboración en Assets Essentials
 
-Obtenga información sobre cómo colaborar en la administración de recursos mediante comentarios, anotaciones y tareas.
+Aprenda a colaborar en la administración de recursos mediante comentarios, anotaciones y tareas.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335856?quality=12&learn=on)

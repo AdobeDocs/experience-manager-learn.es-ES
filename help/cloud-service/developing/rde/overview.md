@@ -1,6 +1,6 @@
 ---
 title: Entornos de desarrollo rápido
-description: Obtenga información sobre AEM entornos de desarrollo rápido, cuáles son y cómo pueden ayudar a acelerar el desarrollo de los ciclos de implementación.
+description: AEM Obtenga información acerca de los entornos de desarrollo rápido de los entornos, cuáles son y cómo pueden ayudar a acelerar el desarrollo hasta los ciclos de implementación.
 feature: Developer Tools
 version: Cloud Service
 topic: Development
@@ -9,19 +9,19 @@ level: Beginner
 jira: KT-11860
 thumbnail: KT-11860.png
 last-substantial-update: 2023-02-15T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+exl-id: 8fc6d0ef-8753-480b-a504-e7943de8883c
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 18%
 
 ---
 
-
 # Entornos de desarrollo rápido
 
-Obtenga información sobre el Entorno de desarrollo rápido (RDE) en AEM as a Cloud Service.
+AEM Obtenga información sobre el Entorno de desarrollo rápido (RDE) en el as a Cloud Service de la.
 
-Este resumen del vídeo:
+Descripción de este vídeo:
 
 - ¿Qué son los RDE?
 - ¿Cómo ayudan a acelerar el desarrollo de los ciclos de implementación?
@@ -30,7 +30,7 @@ Este resumen del vídeo:
 
 ## Siguiente paso
 
-Más información [configuración](./how-to-setup.md) un RDE en AEM as a Cloud Service.
+Aprender [cómo realizar la configuración](./how-to-setup.md) AEM un RDE en as a Cloud Service de la.
 
 ## Recursos adicionales
 
@@ -38,4 +38,4 @@ Más información [configuración](./how-to-setup.md) un RDE en AEM as a Cloud S
 
 [Canalizaciones de CI/CD de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html)
 
-[Configuración del IDE de desarrollo](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=es)
+[Configurar el IDE de desarrollo](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=es)

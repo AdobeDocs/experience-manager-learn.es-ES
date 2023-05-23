@@ -1,5 +1,5 @@
 ---
-title: Perfiles y AEM del producto IMS de Adobe
+title: AEM Perfiles de producto y versiones de Adobe IMS
 description: Los perfiles de producto de Adobe IMS permiten a los usuarios iniciar sesión en un servicio de AEM Author y proporcionar una línea de base de acceso, según el perfil de producto del que sean miembros.
 topic: Administration, Security
 feature: User and Groups
@@ -16,7 +16,7 @@ ht-degree: 80%
 
 ---
 
-# Perfiles de producto de IMS de Adobe {#adobe-ims-product-profiles}
+# Perfiles de producto de Adobe IMS {#adobe-ims-product-profiles}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_adobeims_productprofiles"

@@ -1,6 +1,6 @@
 ---
 title: Introducción al repositorio de contenido Java (JCR)
-description: Introducción al JCR (repositorio de contenido Java) utilizado por Adobe Experience Manager. El JCR es el nivel base de la pila de tecnología de AEM y es responsable de la persistencia del contenido subyacente, el almacenamiento, la búsqueda, el control de acceso y mucho más!
+description: Introducción al JCR (repositorio de contenido Java) utilizado por Adobe Experience Manager. AEM El JCR es el nivel base de la pila de tecnología de la y es responsable de la persistencia de contenido subyacente, almacenamiento, búsqueda, control de acceso y mucho más.
 topics: jcr, architecture
 audience: administrator, developer
 doc-type: technical video
@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # Introducción al repositorio de contenido Java (JCR) {#introduction-jcr}
 
-Introducción al repositorio de contenido Java (JCR) utilizado por Adobe Experience Manager. El JCR es el nivel base de la pila de tecnología de AEM y es responsable de la persistencia del contenido subyacente, el almacenamiento, la búsqueda, el control de acceso y mucho más!
+Introducción al repositorio de contenido Java (JCR) utilizado por Adobe Experience Manager. AEM El JCR es el nivel base de la pila de tecnología de la y es responsable de la persistencia de contenido subyacente, almacenamiento, búsqueda, control de acceso y mucho más.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32030?quality=12&learn=on)

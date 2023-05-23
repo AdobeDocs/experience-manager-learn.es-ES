@@ -1,6 +1,6 @@
 ---
 title: Configuración de Adobe Asset Link
-description: Obtenga información sobre cómo configurar Adobe Asset Link sin coste alguno, que conecta sus aplicaciones de Creative Cloud, incluidas Photoshop, Illustrator, InDesign y XD a Adobe Experience Manager Assets.
+description: Obtenga información sobre cómo configurar Adobe Asset Link sin coste alguno, que conecta sus aplicaciones de Creative Cloud, incluidas Photoshop, Illustrator, InDesign XD y a Adobe Experience Manager Assets.
 feature: Adobe Asset Link
 version: Cloud Service
 topic: Content Management
@@ -18,23 +18,23 @@ ht-degree: 0%
 
 # Configuración de Adobe Asset Link
 
-Lleve el impacto rápido a su organización, facilitando a los equipos creativos y de marketing la colaboración en recursos en el proceso de creación de contenido. Si está en TI, aprenda a configurar rápidamente Adobe Asset Link sin coste alguno, lo que conecta sus aplicaciones de Creative Cloud, incluidas Photoshop, Illustrator, InDesign y XD a Adobe Experience Manager Assets.
+Lleve el impacto rápido a su organización, facilitando a los equipos creativos y de marketing la colaboración en recursos en el proceso de creación de contenido. Si se encuentra en TI, aprenda a configurar rápidamente Adobe Asset Link sin coste alguno, que conecta sus aplicaciones de Creative Cloud, incluidas Photoshop, Illustrator, InDesign, y la administración de recursos de Adobe Experience Manager, entre otras, para que pueda acceder a sus recursos de forma más rápida y sencilla. En este caso, puede utilizar XD Asset Link, que se encuentra en el modo más rápido y fácil de usar
 
-## Configuración de Asset Link para AEM as a Cloud Service
+## AEM Configuración de Asset Link para el uso de as a Cloud Service
 
-Obtenga información sobre cómo configurar Adobe Asset Link para AEM as a Cloud Service, configurar autorizaciones de usuario y AEM as a Cloud Service, y cómo instalar y utilizar Adobe Asset Link.
+Obtenga información sobre cómo configurar Adobe AEM Asset Link para el as a Cloud Service AEM, configurar los derechos de usuario y el as a Cloud Service, y cómo instalar y utilizar Adobe Asset Link.
 
 >[!VIDEO](https://video.tv.adobe.com/v/338824?quality=12&learn=on)
 
 ## Configuración de Asset Link para Managed Services y On-Premise
 
-Obtenga información sobre cómo configurar Adobe Asset Link para AEM 6 que se ejecute en Adobe Managed Services o On-Premise, configurar autorizaciones de usuario y AEM as a Cloud Service, y cómo instalar y utilizar Adobe Asset Link.
+Obtenga información sobre cómo configurar Adobe AEM AEM Asset Link para el 6 que se ejecuta en Adobe Managed Services o On-premise, configurar las autorizaciones y los recursos as a Cloud Service de los usuarios, y cómo instalar y utilizar Adobe Asset Link.
 
 >[!VIDEO](https://video.tv.adobe.com/v/338823?quality=12&learn=on)
 
 
-## Configuración de Asset Link para Domain Trust
+## Configuración de Asset Link para la confianza de dominio
 
-Descubra qué es la confianza del dominio, qué significa utilizar el vínculo de recursos del Adobe con Experience Manager Assets y cómo configurar la confianza del dominio.
+Descubra qué es la confianza de dominio, qué significa para utilizar Adobe Asset Link con Experience Manager Assets y cómo configurar la confianza de dominio.
 
 >[!VIDEO](https://video.tv.adobe.com/v/338825?quality=12&learn=on)

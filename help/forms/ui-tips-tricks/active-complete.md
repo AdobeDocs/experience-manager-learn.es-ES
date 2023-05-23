@@ -1,5 +1,5 @@
 ---
-title: Estilo de las pestañas de navegación izquierda con iconos
+title: Aplicar estilo a las fichas de navegación de la izquierda con iconos
 description: Agregar iconos para indicar las pestañas activas y completadas
 feature: Adaptive Forms
 type: Tutorial
@@ -13,46 +13,46 @@ last-substantial-update: 2019-07-07T00:00:00Z
 source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
 source-wordcount: '326'
-ht-degree: 16%
+ht-degree: 17%
 
 ---
 
 # Agregar iconos para indicar las pestañas activas y completadas
 
-Cuando tiene un formulario adaptable con la navegación de tabulación izquierda, puede que desee mostrar los iconos para indicar el estado de la pestaña. Por ejemplo, desea mostrar un icono para indicar la pestaña activa y el icono para indicar la pestaña completada, tal y como se muestra en la captura de pantalla siguiente.
+Cuando tenga un formulario adaptable con navegación de pestaña izquierda, es posible que desee mostrar iconos para indicar el estado de la pestaña. Por ejemplo, desea mostrar un icono para indicar la pestaña activa y un icono para indicar la pestaña completada, como se muestra en la captura de pantalla siguiente.
 
-![espaciado de la barra de herramientas](assets/active-completed.png)
+![espaciado de barra de herramientas](assets/active-completed.png)
 
 ## Crear un formulario adaptable
 
-Para crear el formulario de ejemplo se utilizó un formulario adaptable sencillo basado en la plantilla Básico y el tema Lienzo 3.0.
-La variable [iconos utilizados en este artículo](assets/icons.zip) se puede descargar desde aquí.
+Para crear el formulario de ejemplo se utilizó un formulario adaptable simple basado en la plantilla Básico y la temática Lienzo 3.0.
+El [iconos utilizados en este artículo](assets/icons.zip) se puede descargar desde aquí.
 
 
-## Estilo del estado predeterminado
+## Establecer el estilo del estado predeterminado
 
-Abra el formulario en modo de edición Asegúrese de que está en la capa de estilo y seleccione cualquier pestaña (por ejemplo, la ficha General ).
-Se encuentra en el estado predeterminado al abrir el editor de estilos para la pestaña como se muestra en la captura de pantalla siguiente
+Abra el formulario en modo de edición Asegúrese de que está en la capa de estilo y seleccione cualquier pestaña (por ejemplo, la pestaña General ).
+Se encuentra en el estado predeterminado cuando abre el editor de estilos para la pestaña, como se muestra en la captura de pantalla siguiente
 ![navigation-tab](assets/navigation-tab.png)
 
-Establezca las propiedades CSS para el estado predeterminado como se muestra a continuación | Categoría | Nombre de propiedad | Valor de propiedad | |:—|:—|:—| | Dimension y posición | Anchura | 50px | | Texto | Grosor de fuente | Negrita | | Texto | Color | #FFF | |Texto | Altura de línea | 3 | |Texto | Alineación de texto | Izquierda | |Fondo| Color | #056dae |
+Establezca las propiedades CSS para el estado predeterminado como se muestra a continuación | Categoría | Nombre de propiedad | Valor de propiedad | |:—|:—|:—| | Dimension y posición | Ancho | 50 px | | Texto | Grosor de fuente| Negrita | | Texto | Color | #FFF | |Texto | Altura de línea| 3 | |Texto | Alineación de texto | Izquierda | Color de |fondo| | #056dae |
 
 Guarde los cambios
 
-## Estilo del estado activo
+## Aplicar estilo al estado activo
 
-Asegúrese de que está en el estado Activo y aplique estilo a las siguientes propiedades CSS
+Asegúrese de que está en estado Activo y aplique estilo a las siguientes propiedades CSS
 
-| Categoría | Nombre de propiedad | Valor de propiedad |
+| Categoría | Nombre de la propiedad | Valor de propiedad |
 |:---|:---|:---|
-| Dimension y posición | Anchura | 50px |
+| Dimensiones y posición | Anchura | 50 px |
 | Texto | Grosor de fuente | Negrita |
 | Texto | Color | #FFF |
 | Texto | Altura de la línea | 3 |
-| Texto | Texto Alinear | Izquierda |
+| Texto | Texto  Alinear | Izquierda |
 | Fondo | Color | #056dae |
 
-Establezca el estilo de la imagen de fondo como se muestra en la captura de pantalla siguiente.
+Aplicar un estilo a la imagen de fondo como se muestra en la captura de pantalla siguiente
 
 Guarde los cambios.
 
@@ -60,24 +60,24 @@ Guarde los cambios.
 
 ![active-state](assets/active-state.png)
 
-## Estilo del estado visitado
+## Aplicar estilo al estado visitado
 
 Asegúrese de que está en el estado visitado y aplique estilo a las siguientes propiedades
 
-| Categoría | Nombre de propiedad | Valor de propiedad |
+| Categoría | Nombre de la propiedad | Valor de propiedad |
 |:---|:---|:---|
-| Dimension y posición | Anchura | 50px |
+| Dimensiones y posición | Anchura | 50 px |
 | Texto | Grosor de fuente | Negrita |
 | Texto | Color | #FFF |
 | Texto | Altura de la línea | 3 |
-| Texto | Texto Alinear | Izquierda |
+| Texto | Texto  Alinear | Izquierda |
 | Fondo | Color | #056dae |
 
-Establezca el estilo de la imagen de fondo como se muestra en la captura de pantalla siguiente.
+Aplicar un estilo a la imagen de fondo como se muestra en la captura de pantalla siguiente
 
 
-![estados visitados](assets/visited-state.png)
+![visit-state](assets/visited-state.png)
 
 Guarde los cambios
 
-Obtenga una vista previa del formulario y pruebe que los iconos funcionan según lo esperado.
+Previsualice el formulario y pruebe que los iconos funcionan según lo esperado.

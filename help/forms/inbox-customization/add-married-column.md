@@ -21,17 +21,17 @@ ht-degree: 4%
 
 # Añadir columnas personalizadas
 
-Para mostrar los datos de flujo de trabajo en la bandeja de entrada, es necesario definir y rellenar las variables en el flujo de trabajo. El valor de la variable debe configurarse antes de que se asigne una tarea a un usuario. Para ayudarle a empezar, hemos proporcionado un flujo de trabajo de muestra que está listo para implementarse en su servidor AEM.
+Para mostrar los datos del flujo de trabajo en la bandeja de entrada, es necesario definir y rellenar variables en el flujo de trabajo. El valor de la variable debe establecerse antes de asignar una tarea a un usuario. AEM Para ayudarle a empezar, hemos proporcionado un flujo de trabajo de ejemplo que está listo para implementarse en su servidor de.
 
-* [Iniciar sesión en AEM](http://localhost:4502/crx/de/index.jsp)
-* [Importación del flujo de trabajo de revisión](assets/review-workflow.zip)
-* [Consulte el flujo de trabajo](http://localhost:4502/editor.html/conf/global/settings/workflow/models/reviewworkflow.html)
+* [AEM Iniciar sesión en el](http://localhost:4502/crx/de/index.jsp)
+* [Importar el flujo de trabajo de revisión](assets/review-workflow.zip)
+* [Revisión del flujo de trabajo](http://localhost:4502/editor.html/conf/global/settings/workflow/models/reviewworkflow.html)
 
-Este flujo de trabajo tiene dos variables definidas (isMarried e revenue) y sus valores se establecen mediante el componente de variable set . Estas variables están disponibles como columnas para agregarlas a AEM bandeja de entrada
+Este flujo de trabajo tiene dos variables definidas (isMarried y revenue) y sus valores se establecen mediante el componente de variable set. AEM Estas variables están disponibles como columnas para añadirlas a la bandeja de entrada
 
 ## Crear servicio
 
-Por cada columna que necesitamos mostrar en nuestra bandeja de entrada, necesitaríamos escribir un servicio. El siguiente servicio nos permite agregar una columna para mostrar el valor de la variable isMarried
+Para cada columna que necesitemos mostrar en nuestra bandeja de entrada necesitaríamos escribir un servicio. El siguiente servicio nos permite agregar una columna para mostrar el valor de la variable isMarried
 
 ```java
 import com.adobe.cq.inbox.ui.column.Column;
@@ -75,27 +75,27 @@ return isMarried(inboxItem);
 
 >[!NOTE]
 >
->Debe incluir AEM 6.5.5 Uber.jar en el proyecto para que funcione el código anterior
+>AEM Debe incluir UberJar 6.5.5 en su proyecto de para que funcione el código de arriba
 
 ![uber-jar](assets/uber-jar.PNG)
 
 ## Realizar pruebas en el servidor
 
-* [Iniciar sesión en AEM consola web](http://localhost:4502/system/console/bundles)
-* [Implementar e iniciar el paquete de personalización de la bandeja de entrada](assets/inboxcustomization.inboxcustomization.core-1.0-SNAPSHOT.jar)
-* [Abra la bandeja de entrada](http://localhost:4502/aem/inbox)
+* [AEM Inicie sesión en la consola web de](http://localhost:4502/system/console/bundles)
+* [Implementar e iniciar el paquete de personalización de bandeja de entrada](assets/inboxcustomization.inboxcustomization.core-1.0-SNAPSHOT.jar)
+* [Abrir la bandeja de entrada](http://localhost:4502/aem/inbox)
 * Abra Control de administración haciendo clic en _Vista de lista_ junto a _Crear_ botón
 * Agregue la columna Casado a la bandeja de entrada y guarde los cambios
-* [Vaya a la interfaz de usuario de FormsAndDocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* [Importación del formulario de ejemplo](assets/snap-form.zip) seleccionando _Carga de archivo_ from _Crear_ menú
-* [Vista previa del formulario](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
+* [Ir a la interfaz de usuario de FormsAndDocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* [Importar el formulario de ejemplo](assets/snap-form.zip) seleccionando _Carga de archivos_ de _Crear_ menú
+* [Previsualización del formulario](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
 * Seleccione el _estado civil_ y enviar el formulario
    [ver bandeja de entrada](http://localhost:4502/aem/inbox)
 
-Si se envía el formulario, se déclencheur el flujo de trabajo y se asigna una tarea al usuario &quot;admin&quot;. Debería ver un valor debajo de la columna Casado como se muestra en esta captura de pantalla.
+Al enviar el formulario, se almacenará en déclencheur el flujo de trabajo y se asignará una tarea al usuario &quot;administrador&quot;. Debería ver un valor en la columna Casado, como se muestra en esta captura de pantalla
 
-![mary-column](assets/married-column.PNG)
+![de columna casada](assets/married-column.PNG)
 
 ## Pasos siguientes
 
-[Mostrar columna casada](./use-sightly-template.md)
+[Mostrar columna Casada](./use-sightly-template.md)

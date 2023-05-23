@@ -1,6 +1,6 @@
 ---
-title: Captura de volcados de montículos de una JVM en un servidor unix
-description: Captura de los volcados de montones de procesos Java en ejecución en un servidor unix
+title: Cómo capturar volcados de pila de una JVM en un servidor Unix
+description: Capture los volcados de la pila de ejecutar el proceso de Java en un servidor Unix
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# Captura de volcados de montículos de una JVM en un servidor unix
+# Cómo capturar volcados de pila de una JVM en un servidor Unix
 
-*Este vídeo muestra los pasos para capturar volcados de memoria de una JVM en un servidor unix.*
+*Este vídeo explica los pasos para capturar los volcados de pila de una JVM en un servidor Unix.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335489?quality=12&learn=on)

@@ -1,6 +1,6 @@
 ---
-title: Aplicar derechos de uso a pdf cargado
-description: Aplicar derechos de uso a pdf
+title: Aplicar derechos de uso al PDF cargado
+description: Aplicar derechos de uso a PDF
 version: 6.4,6.5
 feature: Reader Extensions
 topic: Development
@@ -17,14 +17,14 @@ ht-degree: 0%
 
 # Aplicación de extensiones de Reader
 
-Extensiones de Reader permite manipular los derechos de uso en documentos de PDF. Los derechos de uso pertenecen a una funcionalidad disponible en Acrobat pero no en Adobe Reader. La funcionalidad controlada por Extensiones de Reader incluye la capacidad de agregar comentarios a un documento, rellenar formularios y guardar el documento. Los documentos del PDF que tienen derechos de uso añadidos se denominan documentos con derechos activados. Un usuario que abre un documento PDF con derechos activados en Adobe Reader puede realizar las operaciones habilitadas para ese documento.
+Extensiones de Reader permite manipular los derechos de uso en documentos de PDF. Los derechos de uso pertenecen a una funcionalidad que está disponible en Acrobat pero no en Adobe Reader. La funcionalidad controlada por Extensiones de Reader incluye la capacidad de agregar comentarios a un documento, rellenar formularios y guardarlo. Los documentos de PDF que tienen derechos de uso añadidos se denominan documentos con derechos activados. Un usuario que abre un documento de PDF con derechos activados en Adobe Reader puede realizar las operaciones que están habilitadas para ese documento.
 
-Para lograr este caso de uso necesitamos hacer lo siguiente:
-* [Añadir el certificado de extensiones de Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) a `fd-service` usuario.
+Para llevar a cabo este caso de uso, debemos hacer lo siguiente:
+* [Añadir el certificado de Extensiones de Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) hasta `fd-service` usuario.
 
-## Crear un servicio OSGi personalizado
+## Crear servicio OSGi personalizado
 
-Cree un servicio OSGi personalizado que aplique derechos de uso a los documentos. El código para lograr esto se enumera a continuación
+Cree un servicio OSGi personalizado que aplique derechos de uso a los documentos. El código para lograrlo se enumera a continuación
 
 ```java
 import com.adobe.aemfd.docmanager.Document;
@@ -70,12 +70,12 @@ public class ApplyUsageRights implements ReaderExtendPDF {
 }
 ```
 
-## Cree un servlet para transmitir el PDF ampliado del lector
+## Crear servlet para transmitir el PDF extendido de Reader
 
-El siguiente paso es crear un servlet con un método de POST para devolver al usuario el PDF ampliado del lector. En este caso, se solicita al usuario que guarde el PDF en su sistema de archivos. Esto se debe a que el PDF se representa como PDF dinámico y los visualizadores de pdf que se incluyen con los exploradores no gestionan los pdf dinámicos.
+El siguiente paso es crear un servlet con un método de POST para devolver el PDF de reader Extended al usuario. En este caso, se solicita al usuario que guarde el PDF en su sistema de archivos. Esto se debe a que el PDF se procesa como PDF dinámico y los visualizadores de PDF que vienen con los navegadores no gestionan los PDF dinámicos.
 
-A continuación se muestra el código del servlet. El servlet se invoca desde la acción customsubmit del formulario adaptable.
-Servlet crea el objeto UsageRights y establece sus propiedades en función de los valores introducidos por el usuario en el formulario adaptable. A continuación, el servlet llama al método applyUsageRights del servicio creado para este fin.
+A continuación se muestra el código del servlet. El servlet se invoca desde la acción de envío personalizada del formulario adaptable.
+Servlet crea un objeto UsageRights y le establece propiedades basadas en los valores introducidos por el usuario en el formulario adaptable. A continuación, el servlet llama al método applyUsageRights del servicio creado para este fin.
 
 ```java
 package com.aemforms.ares.core.servlets;
@@ -194,11 +194,11 @@ public class GetReaderExtendedPDF extends SlingAllMethodsServlet {
 ```
 
 Para probar esto en el servidor local, siga los siguientes pasos:
-1. [Descargar e instalar el paquete DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-1. [Descargar e instalar el paquete ares.ares.core-ares](assets/ares.ares.core-ares.jar). Esto tiene el servicio personalizado y el servlet para aplicar derechos de uso y retransmitir el pdf
+1. [Descargar e instalar el paquete DevelopersWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+1. [Descargue e instale el paquete ares.ares.core-ares](assets/ares.ares.core-ares.jar). Tiene el servicio personalizado y el servlet para aplicar derechos de uso y transmitir el PDF de vuelta
 1. [Importar las bibliotecas de cliente y el envío personalizado](assets/applyaresdemo.zip)
 1. [Importar el formulario adaptable](assets/applyaresform.zip)
 1. Agregue el certificado de Extensiones de Reader al usuario &quot;fd-service&quot;. Asegúrese de que el alias sea &quot;ares&quot;.
-1. [Vista previa del formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/applyreaderextensions/jcr:content?wcmmode=disabled)
+1. [Previsualizar formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/applyreaderextensions/jcr:content?wcmmode=disabled)
 1. Seleccione los derechos adecuados y cargue el archivo del PDF
-1. Haga clic en Enviar para obtener el PDF ampliado del Reader
+1. Haga clic en Enviar para obtener el PDF extendido de Reader

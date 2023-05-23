@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Pasos para arrancar manualmente si la inicialización de la base de datos no funciona
 
-*Este vídeo recorre el proceso para arrancar manualmente si la inicialización de la base de datos no funciona.*
+*Este vídeo muestra el proceso para arrancar manualmente si la inicialización de la base de datos no funciona.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335515?quality=12&learn=on)

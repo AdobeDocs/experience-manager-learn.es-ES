@@ -1,6 +1,6 @@
 ---
 title: Etiquetado
-description: Las etiquetas son una herramienta integral para administrar recursos en la jerarquía de carpetas de Assets. El establecimiento de una taxonomía de etiquetado es fundamental para que los usuarios puedan descubrir y organizar los recursos en AEM.
+description: Las etiquetas son una herramienta integral para administrar recursos en la jerarquía de carpetas de Assets. AEM El establecimiento de una taxonomía de etiquetado es fundamental para que los usuarios puedan descubrir y distribuir los recursos y organizar los recursos en los que se pueden realizar las acciones de la forma más adecuada
 feature: Asset Management
 version: Cloud Service
 kt: 4871
@@ -19,6 +19,6 @@ ht-degree: 3%
 
 # Etiquetado
 
-Las etiquetas son una herramienta integral para administrar recursos en la jerarquía de carpetas de Assets. El establecimiento de una taxonomía de etiquetado es fundamental para que los usuarios puedan descubrir y organizar los recursos en AEM.
+Las etiquetas son una herramienta integral para administrar recursos en la jerarquía de carpetas de Assets. AEM El establecimiento de una taxonomía de etiquetado es fundamental para que los usuarios puedan descubrir y distribuir los recursos y organizar los recursos en los que se pueden realizar las acciones de la forma más adecuada
 
 >[!VIDEO](https://video.tv.adobe.com/v/34073?quality=12&learn=on)

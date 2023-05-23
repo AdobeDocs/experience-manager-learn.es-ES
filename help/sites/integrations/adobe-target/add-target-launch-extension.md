@@ -1,5 +1,5 @@
 ---
-title: Añadir extensión de Target a una propiedad de Launch
+title: Añadir la extensión de Target a una propiedad de Launch
 description: Obtenga información sobre cómo añadir la extensión de Adobe Target a una propiedad de Adobe Experience Platform Launch.
 topics: integrations, administration, development
 audience: administrator, developer
@@ -19,11 +19,11 @@ ht-degree: 1%
 
 ---
 
-# Añadir extensión de Target a una propiedad de Launch {#adobe-target-extension}
+# Añadir la extensión de Target a una propiedad de Launch {#adobe-target-extension}
 
-Para seguir este vídeo, ya debe haber [Experience Platform Launch integrado con AEM](../experience-platform/data-collection/tags/overview.md).
+Para seguir este vídeo, ya debe tener [Experience Platform Launch AEM integrado con la opción de](../experience-platform/data-collection/tags/overview.md).
 
-Obtenga información sobre cómo habilitar Adobe Target en el sitio web de AEM mediante Experience Platform Launch.
+Obtenga información sobre cómo habilitar Adobe Target AEM en el sitio web de la mediante Experience Platform Launch.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41247?quality=12&learn=on)
 
@@ -31,7 +31,7 @@ Obtenga información sobre cómo habilitar Adobe Target en el sitio web de AEM m
 
 + [Carga y activación de una llamada de Target](./load-and-fire-target.md)
 
-## Compatibilidad con vínculos
+## Vínculos de soporte
 
 + [Adobe Experience Cloud Debugger: Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
 + [Adobe Experience Cloud Debugger: Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)

@@ -1,6 +1,6 @@
 ---
 title: Crear el formulario adaptable principal
-description: Cree formularios adaptables para capturar la información del solicitante y el formulario adaptable para recuperar el formulario adaptable guardado
+description: Cree los formularios adaptables para capturar la información del solicitante y el formulario adaptable para recuperar el formulario adaptable guardado
 feature: Adaptive Forms
 type: Tutorial
 activity: implement
@@ -20,18 +20,18 @@ ht-degree: 0%
 
 # Crear el formulario adaptable principal
 
-El formulario **StoreAFWithAttachments** es la forma adaptativa principal. Este formulario adaptable es el punto de entrada al caso de uso. En este formulario se capturan los detalles del usuario, incluido el número de móvil. Este formulario también tiene la capacidad de añadir algunos archivos adjuntos. Cuando se hace clic en el botón Guardar y salir, se ejecuta el código del lado del servidor para almacenar los datos del formulario en la base de datos y se genera un identificador de aplicación único que se presenta al usuario para que lo mantenga a salvo. Este id de aplicación se utiliza para recuperar el número de móvil asociado a la aplicación.
+El formulario **StoreAFWithAttachments** es el formulario adaptable principal. Este formulario adaptable es el punto de entrada al caso de uso. En este formulario se capturan los detalles del usuario, incluido el número de móvil. Este formulario también tiene la capacidad de agregar algunos archivos adjuntos. Cuando se hace clic en el botón Save and Exit, se ejecuta el código del lado del servidor para almacenar los datos del formulario en la base de datos y se genera un ID de aplicación único que se presenta al usuario para que lo guarde de forma segura. Este ID de aplicación se utiliza para recuperar el número de móvil asociado a la aplicación.
 
-![formulario de aplicación principal](assets/6552.JPG)
+![formulario de solicitud principal](assets/6552.JPG)
 
-Este formulario está asociado con **bootboxjs540,storeAFWithAttachments** bibliotecas de cliente creadas anteriormente en el curso y un flujo de trabajo AEM que se activa al enviar el formulario.
+Este formulario está asociado con **bootboxjs540,storeAFWithAttachments** AEM las bibliotecas de cliente creadas anteriormente en el curso y un flujo de trabajo de que se activa al enviar el formulario.
 
 
-* Los formularios de ejemplo se basan en [plantilla de formulario adaptable personalizada](assets/custom-template-with-page-component.zip) que debe importarse en AEM para que los formularios de ejemplo se representen correctamente.
+* Los formularios de ejemplo se basan en [plantilla de formulario adaptable personalizada](assets/custom-template-with-page-component.zip) AEM que debe importarse en para que los formularios de ejemplo se procesen correctamente.
 
-* El [Formulario StoreAfWithAttachments](assets/store-af-with-attachments-form.zip) se puede descargar e importar en la instancia de AEM.
+* El completado [Formulario StoreAfWithAttachments](assets/store-af-with-attachments-form.zip) AEM se puede descargar e importar en la instancia de la.
 
-* La variable [AEM flujo de trabajo asociado a este formulario](assets/workflow-model-store-af-with-attachments.zip) debe importarse en la instancia de AEM para que funcione el formulario.
+* El [AEM Flujo de trabajo de asociado a este formulario](assets/workflow-model-store-af-with-attachments.zip) AEM Debe importarse en la instancia de la para que funcione el formulario.
 
 
 ## Pasos siguientes

@@ -1,6 +1,6 @@
 ---
 title: Búsqueda
-description: Aprenda a utilizar AEM Omnisearch para descubrir rápidamente los recursos.
+description: AEM Aprenda a utilizar la búsqueda de Omnisearch para descubrir recursos rápidamente.
 feature: Search
 version: Cloud Service
 kt: 4312
@@ -19,6 +19,6 @@ ht-degree: 9%
 
 # Búsqueda{#aem-assets-search}
 
-Aprenda a utilizar AEM Omnisearch para descubrir rápidamente los recursos.
+AEM Aprenda a utilizar la búsqueda de Omnisearch para descubrir recursos rápidamente.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32054?quality=12&learn=on)

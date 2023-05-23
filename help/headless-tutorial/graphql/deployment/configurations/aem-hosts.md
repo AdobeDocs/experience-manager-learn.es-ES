@@ -1,6 +1,6 @@
 ---
-title: Administración de AEM hosts para AEM GraphQL
-description: Obtenga información sobre cómo configurar AEM hosts en AEM aplicación sin encabezado.
+title: AEM AEM Administración de hosts de para GraphQL
+description: AEM AEM Obtenga información sobre cómo configurar hosts de en la aplicación sin encabezado.
 version: Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
@@ -16,50 +16,50 @@ ht-degree: 1%
 
 ---
 
-# Administración de hosts AEM
+# AEM Administración de hosts
 
-La implementación de una aplicación AEM sin encabezado requiere atención sobre cómo se construyen AEM direcciones URL para garantizar el uso correcto AEM host/dominio. Los tipos de solicitud/URL principales que deben tenerse en cuenta son:
+AEM AEM AEM La implementación de una aplicación sin encabezado requiere atención a cómo se construyen las direcciones URL de la para garantizar que se utiliza el host/dominio correcto. Los tipos de solicitud/URL principales que se deben tener en cuenta son:
 
-+ Solicitudes HTTP a __[API de AEM GraphQL](#aem-graphql-api-requests)__
-+ __[Direcciones URL de imágenes](#aem-image-urls)__ a los recursos de imagen a los que se hace referencia en los fragmentos de contenido y que AEM entrega
++ Solicitudes HTTP a __[AEM API de GraphQL](#aem-graphql-api-requests)__
++ __[URL de imagen](#aem-image-urls)__ AEM a recursos de imagen a los que se hace referencia en Fragmentos de contenido y entregados por el servicio de imágenes de
 
-Normalmente, una aplicación sin AEM interactúa con un único servicio de AEM para las solicitudes de imagen y API de GraphQL. El servicio AEM cambia en función de la implementación de la aplicación sin encabezado de AEM:
+AEM AEM Por lo general, una aplicación sin encabezado de interactúa con un único servicio de ID tanto para la API de GraphQL como para las solicitudes de imagen. AEM AEM El servicio cambia en función de la implementación de la aplicación sin encabezado de:
 
-| AEM tipo de implementación sin encabezado | Entorno AEM | Servicio AEM |
+| AEM Tipo de implementación sin encabezado | AEM entorno de | AEM servicio de |
 |-------------------------------|:---------------------:|:----------------:|
 | Producción | Producción | Publicación |
-| Creación de vista previa | Producción | Vista previa |
+| Creación de previsualización | Producción | Vista previa |
 | Desarrollo | Desarrollo | Publicación |
 
-Para gestionar las permutaciones de tipo de implementación, cada implementación de aplicación se crea mediante una configuración que especifica el servicio de AEM al que se va a conectar. El host/dominio del servicio de AEM configurado se utiliza para construir las URL de la API de GraphQL AEM y las URL de imagen. Para determinar el método correcto para administrar las configuraciones dependientes de la compilación, consulte la documentación del marco de la aplicación AEM sin encabezado (por ejemplo, React, iOS, Android™, etc.), ya que el enfoque varía según el marco de trabajo.
+AEM Para gestionar las permutaciones del tipo de implementación, cada implementación de aplicación se crea con una configuración que especifica el servicio de la aplicación al que se va a conectar. AEM AEM A continuación, el host/dominio del servicio de configurado se utiliza para construir las URL de la API de GraphQL y las URL de la imagen de la. AEM Para determinar el método correcto para administrar las configuraciones dependientes de la versión, consulte la documentación del marco de trabajo de la aplicación sin encabezado de la aplicación (por ejemplo, React, iOS™ Android, etc.), ya que el método varía según el marco de trabajo.
 
-| Tipo de cliente | [Aplicación de una sola página (SPA)](../spa.md) | [Componente web/JS](../web-component.md) | [Móvil](../mobile.md) | [Servidor a servidor](../server-to-server.md) |
+| Tipo de cliente | [SPA Aplicación de una sola página ()](../spa.md) | [Componente web/JS](../web-component.md) | [Móvil](../mobile.md) | [De servidor a servidor](../server-to-server.md) |
 |------------------------------------------:|:---------------------:|:----------------:|:---------:|:----------------:|
-| Configuración de hosts AEM | š | ✔ | ✔ | ✔ |
+| AEM configuración de hosts de | ✔ | ✔ | ✔ | ✔ |
 
-A continuación se muestran algunos ejemplos de posibles métodos para construir direcciones URL para [API de AEM GraphQL](#aem-graphql-api-requests) y [solicitudes de imagen](#aem-image-requests), para varias plataformas y marcos populares sin encabezado.
+A continuación se muestran ejemplos de posibles enfoques para construir direcciones URL para [AEM API de GraphQL](#aem-graphql-api-requests) y [solicitudes de imagen](#aem-image-requests), para varios marcos y plataformas sin encabezado populares.
 
-## AEM solicitudes de API de GraphQL
+## AEM Solicitudes de API de GraphQL
 
-Las solicitudes de GET HTTP de la aplicación sin encabezado a AEM API de GraphQL deben configurarse para interactuar con el servicio de AEM correcto, tal como se describe en la sección [tabla anterior](#managing-aem-hosts).
+Las solicitudes de GET AEM HTTP desde la aplicación sin encabezado a las API de GraphQL AEM de la aplicación deben configurarse para que interactúen con el servicio correcto, tal como se describe en la sección [tabla anterior](#managing-aem-hosts).
 
-Al usar [SDK AEM sin encabezado](../../how-to/aem-headless-sdk.md) (disponible para JavaScript basado en explorador, JavaScript basado en servidor y Java™), un host de AEM puede inicializar el objeto cliente sin encabezado de AEM con el servicio de AEM con el que conectarse.
+Al utilizar [AEM SDK sin encabezado de](../../how-to/aem-headless-sdk.md) AEM AEM AEM (disponible para JavaScript basado en explorador, JavaScript basado en servidor y Java™), un host puede inicializar el objeto de cliente sin encabezado de la con el servicio de autenticación para conectarse a él.
 
-Al desarrollar un cliente sin encabezado AEM personalizado, asegúrese de que el host del servicio de AEM sea parametrizable en función de los parámetros de compilación.
+AEM AEM Al desarrollar un cliente sin encabezado personalizado, asegúrese de que el host del servicio de sea parametrizable en función de los parámetros de compilación.
 
 ### Ejemplos
 
-A continuación se muestran ejemplos de cómo AEM solicitudes de API de GraphQL pueden tener el valor de host AEM configurado para varios marcos de aplicaciones sin encabezado.
+AEM A continuación, se muestran ejemplos de cómo las solicitudes de API de GraphQL AEM pueden tener el valor de host de que se puede configurar para varios marcos de aplicaciones sin encabezado.
 
-+++ Ejemplo de reacción
++++ Ejemplo de React
 
-Este ejemplo, basado en la variable [AEM aplicación React sin encabezado](../../example-apps/react-app.md), ilustra cómo se pueden configurar AEM solicitudes de API de GraphQL para conectarse a diferentes AEM Services en función de variables de entorno.
+En este ejemplo, se basa de forma flexible en [AEM Aplicación React sin encabezado](../../example-apps/react-app.md)AEM , ilustra cómo se pueden configurar las solicitudes de API de GraphQL AEM para conectarse a diferentes servicios de en función de variables de entorno.
 
-Las aplicaciones de React deben usar la variable [AEM cliente sin encabezado para JavaScript](../../how-to/aem-headless-sdk.md) para interactuar con AEM API de GraphQL. El cliente AEM sin encabezado, proporcionado por el cliente AEM sin encabezado para JavaScript, debe inicializarse con el host del servicio de AEM al que se conecta.
+Las aplicaciones de React deben utilizar [AEM Cliente sin encabezado para JavaScript](../../how-to/aem-headless-sdk.md) AEM para interactuar con las API de GraphQL de la. AEM AEM AEM El cliente sin encabezado de la, proporcionado por el cliente sin encabezado de la aplicación para JavaScript, debe inicializarse con el host de servicio de la aplicación al que se conecta.
 
-#### React environment file
+#### Archivo de entorno de React
 
-React uses [archivos de entorno personalizados](https://create-react-app.dev/docs/adding-custom-environment-variables/)o `.env` , almacenados en la raíz del proyecto para definir valores específicos de la compilación. Por ejemplo, la variable `.env.development` contiene los valores utilizados para durante el desarrollo, mientras que `.env.production` contiene valores utilizados para compilaciones de producción.
+React utiliza [archivos de entorno personalizados](https://create-react-app.dev/docs/adding-custom-environment-variables/), o `.env` archivos, almacenados en la raíz del proyecto para definir valores específicos de la generación. Por ejemplo, la variable `.env.development` contiene valores utilizados para durante el desarrollo, mientras que `.env.production` contiene valores utilizados para las versiones de producción.
 
 + `.env.development`
 
@@ -69,9 +69,9 @@ REACT_APP_AEM_HOST=https://publish-p123-e456.adobeaemcloud.com
 ...
 ```
 
-`.env` archivos para otros usos [se puede especificar](https://create-react-app.dev/docs/adding-custom-environment-variables/#what-other-env-files-can-be-used) por postfijo `.env` y un descriptor semántico, como `.env.stage` o `.env.production`. Different `.env` Los archivos se pueden usar al ejecutar o crear la aplicación React, estableciendo la variable `REACT_APP_ENV` antes de ejecutar un `npm` comando.
+`.env` archivos para otros usos [se puede especificar](https://create-react-app.dev/docs/adding-custom-environment-variables/#what-other-env-files-can-be-used) por postfijación `.env` y un descriptor semántico, como `.env.stage` o `.env.production`. Different `.env` Los archivos de se pueden utilizar al ejecutar o crear la aplicación React, configurando el `REACT_APP_ENV` antes de ejecutar un `npm` comando.
 
-Por ejemplo, una aplicación React `package.json` puede contener lo siguiente `scripts` config:
+Por ejemplo, la aplicación de React `package.json` puede contener lo siguiente `scripts` configuración:
 
 + `package.json`
 
@@ -87,7 +87,7 @@ Por ejemplo, una aplicación React `package.json` puede contener lo siguiente `s
 
 #### AEM cliente sin encabezado
 
-La variable [AEM cliente sin encabezado para JavaScript](../../how-to/aem-headless-sdk.md) contiene un cliente AEM sin encabezado que realiza solicitudes HTTP a AEM API de GraphQL. El cliente AEM sin encabezado debe inicializarse con el host de AEM con el que interactúa, utilizando el valor del `.env` archivo.
+El [AEM Cliente sin encabezado para JavaScript](../../how-to/aem-headless-sdk.md) AEM AEM contiene un cliente sin encabezado de que realiza solicitudes HTTP a las API de GraphQL de la. AEM AEM El cliente sin encabezado de la debe inicializarse con el host de la interfaz con el que interactúa, utilizando el valor del activo `.env` archivo.
 
 + `src/api/headlessClient.js`
 
@@ -111,7 +111,7 @@ export const aemHeadlessClient = new AEMHeadless({
 
 #### React useEffect(..) gancho
 
-Los enlaces useEffect personalizados llaman al cliente sin encabezado AEM, inicializado con el host de AEM, en nombre del componente React que representa la vista.
+AEM AEM Los enlaces personalizados de React useEffect llaman al cliente sin encabezado de la, inicializado con el host, en nombre del componente React que procesa la vista.
 
 + `src/api/persistedQueries.js`
 
@@ -144,9 +144,9 @@ const executePersistedQuery = async function(persistedQueryPath, queryVariables)
 }
 ```
 
-#### React, componente
+#### Componente React
 
-el vínculo useEffect personalizado, `useAdventureByPath` se importa y se utiliza para obtener los datos mediante el cliente sin encabezado de AEM y, finalmente, procesar el contenido para el usuario final.
+El gancho useEffect personalizado, `useAdventureByPath` AEM se importa y se utiliza para obtener los datos mediante el cliente sin encabezado de y, finalmente, para procesar el contenido al usuario final.
 
 + &#39;src/components/AdventureDetail.js&#39;
 
@@ -163,9 +163,9 @@ let { data, error } = useAdventureByPath('/content/dam/wknd-shared/en/adventures
 
 +++ Ejemplo de iOS™
 
-Este ejemplo, basado en la variable [ejemplo AEM aplicación iOS™ sin encabezado](../../example-apps/ios-swiftui-app.md), ilustra cómo se pueden configurar AEM solicitudes de API de GraphQL para conectarse a diferentes hosts AEM en función de [variables de configuración específicas de la compilación](https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project?changes=l_3).
+Este ejemplo, basado en la variable [AEM aplicación iOS™ de ejemplo](../../example-apps/ios-swiftui-app.md)AEM , ilustra cómo se pueden configurar las solicitudes de API de GraphQL AEM para conectarse a diferentes hosts en función de la configuración de los parámetros de la aplicación de la interfaz de usuario de la aplicación de red () [variables de configuración específicas de la versión](https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project?changes=l_3).
 
-Las aplicaciones iOS™ requieren un cliente personalizado AEM sin encabezado para interactuar con AEM API de GraphQL. El cliente sin encabezado de AEM debe escribirse de modo que el host de servicio de AEM sea configurable.
+Las aplicaciones de iOSAEM AEM ™ requieren un cliente sin encabezado personalizado para poder interactuar con las API de GraphQL de la interfaz de usuario de. AEM AEM El cliente sin encabezado de la debe escribirse de modo que el host de servicio de la sea configurable.
 
 #### Generar configuración
 
@@ -182,9 +182,9 @@ AEM_HOST = publish-p123-e789.adobeaemcloud.com
 ...
 ```
 
-#### Inicialización del cliente sin encabezado de AEM personalizado
+#### AEM Inicialice el cliente personalizado sin encabezado
 
-La variable [ejemplo AEM aplicación iOS sin encabezado](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/ios-app) utiliza un cliente sin encabezado AEM personalizado inicializado con los valores de configuración de `AEM_SCHEME` y `AEM_HOST`.
+El [AEM aplicación de iOS sin encabezado de ejemplo](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/ios-app) AEM utiliza un cliente sin encabezado personalizado que se inicializa con los valores de configuración de `AEM_SCHEME` y `AEM_HOST`.
 
 ```swift
 ...
@@ -194,7 +194,7 @@ let aemHost: String = try Configuration.value(for: "AEM_HOST")      // publish-p
 let aemHeadlessClient = Aem(scheme: aemScheme, host: aemHost);
 ```
 
-El cliente personalizado AEM sin encabezado (`api/Aem.swift`) contiene un método `makeRequest(..)` que prefieren AEM solicitudes de API de GraphQL con el AEM configurado `scheme` y `host`.
+AEM El cliente personalizado sin encabezado (`api/Aem.swift`) contiene un método `makeRequest(..)` AEM que prefija las solicitudes de API de GraphQL AEM con la configuración de la `scheme` y `host`.
 
 + `api/Aem.swift`
 
@@ -216,24 +216,24 @@ private func makeRequest(persistedQueryName: String, params: [String: String] = 
 }
 ```
 
-[Se pueden crear nuevos archivos de configuración de compilación](https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project?changes=l_3) para conectarse a diferentes servicios de AEM. Los valores específicos de la compilación para la variable `AEM_SCHEME` y `AEM_HOST` se utilizan en función de la compilación seleccionada en XCode, lo que da como resultado que el cliente personalizado AEM sin encabezado se conecte con el servicio de AEM correcto.
+[Se pueden crear nuevos archivos de configuración de compilación](https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project?changes=l_3) AEM para conectarse a diferentes servicios de la. Los valores específicos de la compilación para `AEM_SCHEME` y `AEM_HOST` AEM AEM se utilizan en función de la compilación seleccionada en XCode, lo que da como resultado el cliente personalizado sin encabezado para conectarse con el servicio de correcto.
 
 +++
 
 +++ Ejemplo de Android™
 
-Este ejemplo, basado en la variable [ejemplo AEM aplicación Android™ sin encabezado](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/android-app), ilustra cómo se pueden configurar AEM solicitudes de API de GraphQL para conectarse a diferentes servicios de AEM en función de variables de configuración específicas de la compilación (o de los sabores).
+Este ejemplo, basado en la variable [AEM aplicación de ejemplo para Android™ sin encabezado](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/android-app)AEM , ilustra cómo se pueden configurar las solicitudes de API de GraphQL AEM para conectarse a diferentes servicios de en función de variables de configuración específicas de la compilación (o variantes).
 
-Las aplicaciones Android™ (cuando se escriben en Java™) deben usar la variable [AEM cliente sin encabezado para Java™](https://github.com/adobe/aem-headless-client-java) para interactuar con AEM API de GraphQL. El cliente AEM sin encabezado, proporcionado por el cliente sin encabezado de AEM para Java™, debe inicializarse con el host de servicio de AEM al que se conecta.
+Las aplicaciones de Android™ (cuando se escriben en Java™) deben utilizar el [AEM Cliente sin encabezado para Java™](https://github.com/adobe/aem-headless-client-java) AEM para interactuar con las API de GraphQL de la. AEM AEM AEM El cliente sin encabezado de la, proporcionado por el cliente sin encabezado de la aplicación para Java™, debe inicializarse con el host de servicio al que se conecta.
 
 #### Generar archivo de configuración
 
-Las aplicaciones de Android™ definen &quot;productFlavors&quot; que se utilizan para crear artefactos para usos diferentes.
-Este ejemplo muestra cómo se pueden definir dos sabores de producto de Android™, proporcionando diferentes hosts de servicio de AEM (`AEM_HOST`) valores para el desarrollo (`dev`) y producción (`prod`).
+Las aplicaciones de Android™ definen &quot;productFlavors&quot;, que se utilizan para crear artefactos para diferentes usos.
+AEM Este ejemplo muestra cómo se pueden definir dos tipos de productos de Android™, proporcionando hosts de servicio diferentes (`AEM_HOST`) valores para desarrollo (`dev`) y producción (`prod`) utiliza.
 
-En el informe `build.gradle` archivo, un nuevo `flavorDimension` named `env` se crea.
+En el `build.gradle` archivo, un nuevo `flavorDimension` nombrado `env` se ha creado.
 
-En el `env` dimensión, dos `productFlavors` están definidas: `dev` y `prod`. Cada `productFlavor` uses `buildConfigField` para establecer variables específicas de la compilación que definen el servicio de AEM al que se va a conectar.
+En el `env` dimensión, dos `productFlavors` están definidas: `dev` y `prod`. Cada `productFlavor` utiliza `buildConfigField` AEM para establecer variables específicas de la compilación que definan el servicio de la al que se va a conectar.
 
 + `app/build.gradle`
 
@@ -258,9 +258,9 @@ android {
 }
 ```
 
-#### Cargador Android™
+#### Cargador de Android™
 
-Inicializar el `AEMHeadlessClient` Generador, proporcionado por AEM cliente sin encabezado para Java™ con el `AEM_HOST` del `buildConfigField` campo .
+Inicialice el `AEMHeadlessClient` AEM creador, proporcionado por el cliente sin encabezado para Java™ con la variable `AEM_HOST` valor de la variable `buildConfigField` field.
 
 + `app/src/main/java/com/adobe/wknd/androidapp/loader/AdventuresLoader.java`
 
@@ -281,15 +281,15 @@ public class AdventuresLoader extends AsyncTaskLoader<AdventureList> {
 }
 ```
 
-Al crear la aplicación Android™ para diferentes usos, especifique la variable `env` y se utiliza el valor de host de AEM correspondiente.
+Cuando cree la aplicación de Android™ para diferentes usos, especifique el `env` AEM y se utiliza el valor de host correspondiente.
 
 +++
 
-## URL de imagen de AEM
+## AEM URL de imagen de
 
-Las solicitudes de imagen de la aplicación sin encabezado a AEM deben configurarse para interactuar con el servicio de AEM correcto, tal como se describe en la sección [tabla superior](#managing-aem-hosts).
+AEM AEM Las solicitudes de imagen de la aplicación sin encabezado a los usuarios deben configurarse para que interactúen con el servicio de correcto, tal como se describe en la sección [tabla anterior](#managing-aem-hosts).
 
-Adobe recomienda utilizar [imágenes optimizadas](../../how-to/images.md) disponible a través de la variable `_dynamicUrl` en AEM API de GraphQL. La variable `_dynamicUrl` El campo devuelve una URL sin host con el prefijo del host de servicio de AEM utilizado para consultar las API de GraphQL AEM. Para la variable `_dynamicUrl` en la respuesta de GraphQL:
+Adobe recomienda utilizar [imágenes optimizadas](../../how-to/images.md) disponible a través de la `_dynamicUrl` AEM en las API de GraphQL de la. El `_dynamicUrl` AEM AEM El campo devuelve una URL sin host que puede ir precedida por el host de servicio de que se utiliza para consultar las API de GraphQL de la. Para el `_dynamicUrl` El campo de la respuesta de GraphQL tiene este aspecto:
 
 ```json
 {
@@ -301,13 +301,13 @@ Adobe recomienda utilizar [imágenes optimizadas](../../how-to/images.md) dispon
 
 ### Ejemplos
 
-A continuación se muestran ejemplos de cómo las direcciones URL de imagen pueden prefijar el valor de host de AEM que se puede configurar para varios marcos de aplicaciones sin encabezado. En los ejemplos se presupone el uso de consultas de GraphQL que devuelven referencias de imagen mediante la variable `_dynamicUrl` campo .
+AEM A continuación, se muestran ejemplos de cómo las direcciones URL de imagen pueden prefijar el valor de host que se hace configurable para varios marcos de aplicación sin encabezado. En los ejemplos se supone el uso de consultas de GraphQL que devuelven referencias de imagen utilizando `_dynamicUrl` field.
 
 Por ejemplo:
 
 #### Consulta persistente de GraphQL
 
-Esta consulta de GraphQL devuelve el valor de `_dynamicUrl`. Como se ve en la variable [Respuesta de GraphQL](#examples-react-graphql-response) que excluye un host.
+Esta consulta de GraphQL devuelve una referencia de imagen de `_dynamicUrl`. Como se ve en el [Respuesta de GraphQL](#examples-react-graphql-response) que excluye un host.
 
 ```graphql
 query ($path: String!) {
@@ -326,7 +326,7 @@ query ($path: String!) {
 
 #### Respuesta de GraphQL
 
-Esta respuesta de GraphQL devuelve el valor de la referencia de imagen `_dynamicUrl` que excluye un host.
+Esta respuesta de GraphQL devuelve el de la referencia de imagen `_dynamicUrl` que excluye un host.
 
 ```json
 {
@@ -342,15 +342,15 @@ Esta respuesta de GraphQL devuelve el valor de la referencia de imagen `_dynamic
 }
 ```
 
-+++ Ejemplo de reacción
++++ Ejemplo de React
 
-Este ejemplo, basado en la variable [ejemplo AEM aplicación React sin encabezado](../../example-apps/react-app.md), ilustra cómo se pueden configurar las direcciones URL de imagen para conectarse a los servicios de AEM correctos en función de las variables de entorno.
+Este ejemplo, basado en la variable [AEM ejemplo de aplicación React sin encabezado](../../example-apps/react-app.md)AEM , ilustra cómo se pueden configurar las direcciones URL de imagen para conectarse a los servicios de correctos en función de las variables de entorno.
 
-Este ejemplo muestra cómo codificar la referencia de imagen `_dynamicUrl` , con un campo configurable `REACT_APP_AEM_HOST` Reaccione la variable de entorno.
+Este ejemplo muestra el prefijo de la referencia de imagen `_dynamicUrl` , con un campo configurable `REACT_APP_AEM_HOST` Variable de entorno React.
 
-#### React environment file
+#### Archivo de entorno de React
 
-React uses [archivos de entorno personalizados](https://create-react-app.dev/docs/adding-custom-environment-variables/)o `.env` , almacenados en la raíz del proyecto para definir valores específicos de la compilación. Por ejemplo, la variable `.env.development` contiene los valores utilizados para durante el desarrollo, mientras que `.env.production` contiene valores utilizados para compilaciones de producción.
+React utiliza [archivos de entorno personalizados](https://create-react-app.dev/docs/adding-custom-environment-variables/), o `.env` archivos, almacenados en la raíz del proyecto para definir valores específicos de la generación. Por ejemplo, la variable `.env.development` contiene valores utilizados para durante el desarrollo, mientras que `.env.production` contiene valores utilizados para las versiones de producción.
 
 + `.env.development`
 
@@ -360,9 +360,9 @@ REACT_APP_AEM_HOST=https://publish-p123-e456.adobeaemcloud.com
 ...
 ```
 
-`.env` archivos para otros usos [se puede especificar](https://create-react-app.dev/docs/adding-custom-environment-variables/#what-other-env-files-can-be-used) por postfijo `.env` y un descriptor semántico, como `.env.stage` o `.env.production`. Different `.env` se puede usar al ejecutar o crear la aplicación React, estableciendo la variable `REACT_APP_ENV` antes de ejecutar un `npm` comando.
+`.env` archivos para otros usos [se puede especificar](https://create-react-app.dev/docs/adding-custom-environment-variables/#what-other-env-files-can-be-used) por postfijación `.env` y un descriptor semántico, como `.env.stage` o `.env.production`. Different `.env` El archivo se puede utilizar al ejecutar o crear la aplicación React, configurando el `REACT_APP_ENV` antes de ejecutar un `npm` comando.
 
-Por ejemplo, una aplicación React `package.json` puede contener lo siguiente `scripts` config:
+Por ejemplo, la aplicación de React `package.json` puede contener lo siguiente `scripts` configuración:
 
 + `package.json`
 
@@ -376,11 +376,11 @@ Por ejemplo, una aplicación React `package.json` puede contener lo siguiente `s
 ...
 ```
 
-#### React, componente
+#### Componente React
 
-El componente React importa el `REACT_APP_AEM_HOST` y prefiera la imagen `_dynamicUrl` para proporcionar una URL de imagen completamente resoluble.
+El componente React importa el `REACT_APP_AEM_HOST` variable de entorno y prefija la imagen `_dynamicUrl` , para proporcionar una URL de imagen totalmente resoluble.
 
-Lo mismo `REACT_APP_AEM_HOST` la variable de entorno se utiliza para inicializar el cliente AEM sin encabezado utilizado por `useAdventureByPath(..)` vínculo useEffect personalizado que se usa para recuperar los datos de GraphQL de AEM. Si utiliza la misma variable para construir la solicitud de API de GraphQL que la URL de imagen, asegúrese de que la aplicación React interactúe con el mismo servicio de AEM para ambos casos de uso.
+Esto mismo `REACT_APP_AEM_HOST` AEM La variable de entorno se utiliza para inicializar el cliente sin encabezado de la que utiliza `useAdventureByPath(..)` enlace useEffect personalizado que se utiliza para extraer los datos de GraphQL AEM de los datos de los informes de. Utilizando la misma variable para construir la solicitud de API de GraphQL AEM como la dirección URL de la imagen, asegúrese de que la aplicación React interactúa con el mismo servicio de para ambos casos de uso.
 
 + &#39;src/components/AdventureDetail.js&#39;
 
@@ -402,7 +402,7 @@ return (
 
 +++ Ejemplo de iOS™
 
-Este ejemplo, basado en la variable [ejemplo AEM aplicación iOS™ sin encabezado](../../example-apps/ios-swiftui-app.md), ilustra cómo se pueden configurar AEM URL de imagen para conectarse a diferentes hosts AEM en función de [variables de configuración específicas de la compilación](https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project?changes=l_3).
+Este ejemplo, basado en la variable [AEM aplicación iOS™ de ejemplo](../../example-apps/ios-swiftui-app.md)AEM AEM , ilustra cómo se pueden configurar las direcciones URL de imagen de la para conectarse a distintos hosts en función de [variables de configuración específicas de la versión](https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project?changes=l_3).
 
 #### Generar configuración
 
@@ -421,7 +421,7 @@ AEM_HOST = publish-p123-e789.adobeaemcloud.com
 
 #### Generador de URL de imagen
 
-En `Aem.swift`, la implementación personalizada AEM cliente sin encabezado, una función personalizada `imageUrl(..)` toma la ruta de la imagen tal como se proporciona en la variable `_dynamicUrl` en la respuesta de GraphQL y la precede con AEM host. A continuación, esta función se invoca en las vistas de iOS cada vez que se procesa una imagen.
+Entrada `Aem.swift`AEM , la implementación personalizada de cliente sin encabezado de la, una función personalizada `imageUrl(..)` toma la ruta de la imagen como se indica en la `_dynamicUrl` en la respuesta de GraphQL AEM, y la antepone con el host de. A continuación, esta función se invoca en las vistas de iOS cada vez que se procesa una imagen.
 
 + `WKNDAdventures/AEM/Aem.swift`
 
@@ -445,7 +445,7 @@ class Aem: ObservableObject {
 
 #### Vista de iOS
 
-La vista iOS y los prefijos de la imagen `_dynamicUrl` para proporcionar una URL de imagen completamente resoluble.
+La vista iOS y los prefijos de la imagen `_dynamicUrl` , para proporcionar una URL de imagen totalmente resoluble.
 
 + `WKNDAdventures/Views/AdventureListItemView.swift`
 
@@ -469,22 +469,22 @@ struct AdventureListItemView: View {
 ...
 ```
 
-[Se pueden crear nuevos archivos de configuración de compilación](https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project?changes=l_3) para conectarse a diferentes servicios de AEM. Los valores específicos de la compilación para la variable `AEM_SCHEME` y `AEM_HOST` se utilizan en función de la compilación seleccionada en XCode, lo que provoca que el cliente personalizado AEM sin encabezado interactúe con el servicio de AEM correcto.
+[Se pueden crear nuevos archivos de configuración de compilación](https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project?changes=l_3) AEM para conectarse a diferentes servicios de la. Los valores específicos de la compilación para `AEM_SCHEME` y `AEM_HOST` AEM AEM se utilizan en función de la compilación seleccionada en XCode, lo que da como resultado que el cliente personalizado sin encabezado interactúe con el servicio de correcto.
 
 +++
 
 +++ Ejemplo de Android™
 
-Este ejemplo, basado en la variable [ejemplo AEM aplicación Android™ sin encabezado](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/android-app), ilustra cómo se pueden configurar AEM direcciones URL de imagen para conectarse a diferentes servicios de AEM en función de variables de configuración específicas de la compilación (o de los sabores).
+Este ejemplo, basado en la variable [AEM aplicación de ejemplo para Android™ sin encabezado](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/android-app)AEM AEM , ilustra cómo se pueden configurar las direcciones URL de imagen de la para conectarse a diferentes servicios de segmentación en función de variables de configuración específicas de la compilación (o variantes).
 
 #### Generar archivo de configuración
 
-Las aplicaciones de Android™ definen &quot;productFlavors&quot; que se utilizan para crear artefactos para diferentes usos.
-Este ejemplo muestra cómo se pueden definir dos sabores de producto de Android™, proporcionando diferentes hosts de servicio de AEM (`AEM_HOST`) valores para el desarrollo (`dev`) y producción (`prod`).
+Las aplicaciones de Android™ definen &quot;productFlavors&quot;, que se utilizan para crear artefactos para diferentes usos.
+AEM Este ejemplo muestra cómo se pueden definir dos tipos de productos de Android™, proporcionando hosts de servicio diferentes (`AEM_HOST`) valores para desarrollo (`dev`) y producción (`prod`) utiliza.
 
-En el informe `build.gradle` archivo, un nuevo `flavorDimension` named `env` se crea.
+En el `build.gradle` archivo, un nuevo `flavorDimension` nombrado `env` se ha creado.
 
-En el `env` dimensión, dos `productFlavors` están definidas: `dev` y `prod`. Cada `productFlavor` uses `buildConfigField` para establecer variables específicas de la compilación que definen el servicio de AEM al que se va a conectar.
+En el `env` dimensión, dos `productFlavors` están definidas: `dev` y `prod`. Cada `productFlavor` utiliza `buildConfigField` AEM para establecer variables específicas de la compilación que definan el servicio de la al que se va a conectar.
 
 + `app/build.gradle`
 
@@ -509,9 +509,9 @@ android {
 }
 ```
 
-#### Carga de la imagen AEM
+#### AEM Cargando la imagen de la
 
-Android™ utiliza un `ImageGetter` para recuperar y almacenar en caché localmente los datos de imagen de AEM. En `prepareDrawableFor(..)` el host de servicio de AEM, definido en la configuración de compilación activa, se utiliza para prefijar la ruta de la imagen y crear una URL a AEM.
+El Android™ utiliza un `ImageGetter` AEM para recuperar y almacenar en caché localmente los datos de imagen de los recursos de la. Entrada `prepareDrawableFor(..)` AEM AEM el host de servicio de, definido en la configuración de la versión activa, se utiliza para anteponer la ruta de la imagen que crea una dirección URL solucionable a la dirección de correo electrónico que se va a utilizar para la creación de.
 
 + `app/src/main/java/com/adobe/wknd/androidapp/loader/RemoteImagesCache.java`
 
@@ -547,7 +547,7 @@ public class RemoteImagesCache implements Html.ImageGetter {
 
 #### Vista de Android™
 
-La vista Android™ obtiene los datos de imagen mediante la variable `RemoteImagesCache` usando la variable `_dynamicUrl` de la respuesta de GraphQL.
+La vista de Android™ obtiene los datos de imagen mediante el `RemoteImagesCache` uso del `_dynamicUrl` valor de la respuesta de GraphQL.
 
 + `app/src/main/java/com/adobe/wknd/androidapp/AdventureDetailFragment.java`
 
@@ -567,6 +567,6 @@ public class AdventureDetailFragment extends Fragment implements LoaderManager.L
 }
 ```
 
-Al crear la aplicación Android™ para diferentes usos, especifique la variable `env` y se utiliza el valor de host de AEM correspondiente.
+Cuando cree la aplicación de Android™ para diferentes usos, especifique el `env` AEM y se utiliza el valor de host correspondiente.
 
 +++

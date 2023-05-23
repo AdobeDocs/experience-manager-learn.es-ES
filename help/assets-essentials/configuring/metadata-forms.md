@@ -1,6 +1,6 @@
 ---
-title: Metadatos de Assets Essentials Forms
-description: Descubra cómo Assets Essentials Metadata Forms se puede configurar rápida y fácilmente para adaptar los metadatos de recursos.
+title: Forms de metadatos Assets Essentials
+description: Descubra cómo se puede configurar rápida y fácilmente Assets Essentials Metadata Forms para adaptar los metadatos de recursos.
 version: Cloud Service
 feature: Assets Essentials
 topic: Content Management
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Metadatos de Forms en Assets Essentials
 
-Descubra cómo Assets Essentials Metadata Forms se puede configurar rápida y fácilmente para adaptar los recursos.
+Descubra cómo se puede configurar rápida y fácilmente Assets Essentials Metadata Forms para adaptar los recursos.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342154?quality=12&learn=on)

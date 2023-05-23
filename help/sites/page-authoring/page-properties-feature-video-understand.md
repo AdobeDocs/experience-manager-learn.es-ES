@@ -1,6 +1,6 @@
 ---
 title: Explicación de las propiedades de página en AEM Sites
-description: El siguiente vídeo presenta los metadatos de propiedades de página asociados a una página en Adobe Experience Manager.
+description: El siguiente vídeo presenta los metadatos de las propiedades de página asociados a una página en Adobe Experience Manager.
 version: 6.4, 6.5
 topic: Content Management
 feature: Page Editor
@@ -22,9 +22,9 @@ El siguiente vídeo presenta las propiedades de página asociadas a una página 
 
 >[!VIDEO](https://video.tv.adobe.com/v/32192?quality=12&learn=on)
 
-En este vídeo, se tratan los siguientes elementos de propiedad de página:
+En este vídeo, se tratan los siguientes elementos de propiedad de la página:
 
-* Básico
+* Basic
    * Título y etiquetas
       * Título
       * Etiquetas
@@ -35,12 +35,12 @@ En este vídeo, se tratan los siguientes elementos de propiedad de página:
       * Subtítulo
       * Descripción
    * Tiempo de activación/desactivación
-   * URL de vanidad
+   * URL mnemónica
 * Avanzado 
    * Configuración
       * Idioma
       * Redirigir
-      * Design
+      * Diseño
       * Alias
    * Configuración de nube
    * Configuración de plantilla
@@ -56,6 +56,6 @@ En este vídeo, se tratan los siguientes elementos de propiedad de página:
 
 ## Recursos adicionales {#additional-resources}
 
-* [Edición de la documentación de las propiedades de página](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-page-properties.html)
-* [Edición de la documentación de contenido de una página](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
+* [Edición de documentación de propiedades de página](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-page-properties.html)
+* [Edición de documentación de contenido de página](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
 * [Guía rápida para la creación de páginas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)

@@ -1,6 +1,6 @@
 ---
-title: Cómo habilitar el Inicio de sesión en AEM Forms para el rendimiento para depurar problemas relacionados con Forms y el servicio de salida
-description: Pasos para habilitar el registro de rendimiento para depurar problemas relacionados con Forms o el servicio de salida
+title: Cómo habilitar el registro de rendimiento en AEM Forms para depurar los problemas relacionados con Forms y el servicio de salida
+description: Pasos para habilitar el registro de rendimiento para depurar los problemas relacionados con Forms o el servicio de salida
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Cómo habilitar el inicio de sesión en AEM Forms para el rendimiento para depurar problemas relacionados con Forms y el servicio de salida
+# Cómo habilitar el registro de rendimiento en AEM Forms para depurar los problemas relacionados con Forms y el servicio de salida
 
-*Este vídeo explica el proceso para permitir que el Inicio de sesión en AEM Forms de rendimiento depure problemas relacionados con Forms y el servicio de salida .*
+*Este vídeo muestra el proceso para habilitar el registro de rendimiento en AEM Forms para depurar los problemas relacionados con el servicio Forms y Output*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335499?quality=12&learn=on)

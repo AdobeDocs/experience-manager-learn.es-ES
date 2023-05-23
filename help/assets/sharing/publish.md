@@ -1,6 +1,6 @@
 ---
-title: Cómo publicar recursos mediante AEM
-description: Obtenga información sobre cómo publicar recursos y sus representaciones desde AEM Author a AEM Publish.
+title: AEM Cómo publicar recursos mediante el uso de la
+description: Obtenga información sobre cómo publicar recursos y sus representaciones de AEM Author en AEM Publish.
 feature: Asset Management
 version: Cloud Service
 kt: 330932
@@ -19,8 +19,8 @@ ht-degree: 2%
 
 # Publicación
 
-Obtenga información sobre cómo publicar recursos y sus representaciones desde AEM Author a AEM Publish.
+Obtenga información sobre cómo publicar recursos y sus representaciones de AEM Author en AEM Publish.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330932?quality=12&learn=on)
 
-_Asegúrese de que la implementación de AEM Assets tiene una licencia de servicio de AEM Publish antes de publicar recursos._
+_Asegúrese de que la implementación de AEM Assets tenga una licencia del servicio de publicación de AEM antes de publicar los recursos._

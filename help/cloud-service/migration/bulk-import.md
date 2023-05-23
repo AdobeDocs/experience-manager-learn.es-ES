@@ -1,6 +1,6 @@
 ---
 title: Uso de la importación masiva con AEM Assets
-description: La herramienta de importación masiva en AEM as a Cloud Service permite a los administradores importar recursos de forma masiva desde el almacenamiento en la nube (Azure Blob Storage o Amazon S3) de forma segura y eficiente.
+description: AEM La herramienta Importación masiva en as a Cloud Service permite a los administradores importar recursos de forma masiva desde el almacenamiento en la nube (Azure Blob Storage o Amazon S3) de forma segura y eficaz.
 version: Cloud Service
 doc-type: technical-video
 topics: Migration
@@ -23,15 +23,15 @@ ht-degree: 0%
 
 # Uso de la importación masiva
 
-La herramienta de importación masiva en AEM as a Cloud Service permite a los administradores importar recursos de forma masiva desde el almacenamiento en la nube (Azure Blob Storage o Amazon S3) de forma segura y eficiente.
+AEM La herramienta Importación masiva en as a Cloud Service permite a los administradores importar recursos de forma masiva desde el almacenamiento en la nube (Azure Blob Storage o Amazon S3) de forma segura y eficaz.
 
 >[!VIDEO](https://video.tv.adobe.com/v/329680?quality=12&learn=on)
 
 ## Programar importación masiva
 
-La importación masiva admite la ejecución programada de configuraciones, entre las que se incluyen:
+La importación masiva admite la ejecución programada de configuraciones de, entre las que se incluyen:
 
 + Ejecución única en una fecha y hora definidas
-+ Ejecuciones de período cada hora, día o semana
++ Ejecuciones de períodos cada hora, día o semana
 
 ![Programación de importación masiva](./assets/bulk-import/schedule.png)

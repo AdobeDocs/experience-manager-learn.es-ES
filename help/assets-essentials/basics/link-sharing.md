@@ -1,6 +1,6 @@
 ---
-title: Uso compartido público de vínculos de Assets Essentials
-description: Descubra cómo el vínculo compartido de Assets Essentials permite a los usuarios compartir recursos con partes interesadas internas y externas, al mismo tiempo que se minimiza el riesgo de compartir recursos incorrectos.. (Las descripciones deben tener entre 60 y 160 caracteres)
+title: Uso compartido de vínculos públicos de Assets Essentials
+description: Descubra cómo el vínculo de uso compartido de Assets Essentials permite a los usuarios compartir recursos con partes interesadas internas y externas, al mismo tiempo que minimiza el riesgo de compartir recursos incorrectos... (las descripciones deben tener entre 60 y 160 caracteres).
 version: Cloud Service
 feature: Assets Essentials
 topic: Content Management
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Uso compartido de vínculos públicos
 
-Descubra cómo el vínculo compartido de Assets Essentials permite a los usuarios compartir recursos con partes interesadas internas y externas, al mismo tiempo que se minimiza el riesgo de compartir recursos o información incorrectos.
+Descubra cómo el vínculo de uso compartido de Assets Essentials permite a los usuarios compartir recursos con partes interesadas internas y externas, al mismo tiempo que minimiza el riesgo de compartir recursos o información incorrectos.
 
 >[!VIDEO](https://video.tv.adobe.com/v/341025?quality=12&learn=on)

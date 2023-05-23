@@ -1,5 +1,5 @@
 ---
-title: Almacenamiento y recuperación de datos de formulario de la base de datos MySQL
+title: Almacenar y recuperar datos de formulario de la base de datos MySQL
 description: Tutorial de varias partes para guiarle por los pasos necesarios para almacenar y recuperar datos de formulario
 feature: Adaptive Forms
 type: Tutorial
@@ -15,9 +15,9 @@ ht-degree: 1%
 
 ---
 
-# Creación del servicio OSGi para recuperar datos
+# Crear un servicio OSGi para recuperar datos
 
-El siguiente código se escribió para almacenar y recuperar los datos almacenados del formulario adaptable. Se utiliza una consulta simple para recuperar los datos del formulario adaptable asociados a un GUID determinado. A continuación, los datos recuperados se devuelven a la aplicación que realiza la llamada. En este código se hace referencia a la misma fuente de datos creada en el paso anterior.
+El siguiente código se escribió para almacenar y recuperar los datos del formulario adaptable almacenados. Se utiliza una consulta simple para recuperar los datos del formulario adaptable asociados a un GUID determinado. A continuación, los datos recuperados se devuelven a la aplicación que realiza la llamada. En este código se hace referencia a la misma fuente de datos creada en el paso anterior
 
 
 ```java
@@ -154,7 +154,7 @@ public class FetchFormData implements com.aemforms.saveandcontinue.core.FetchSto
 
 ## Interfaz
 
-A continuación se muestra la declaración de interfaz que se utilizó
+La siguiente es la declaración de interfaz que se utilizó
 
 ```java
 package com.aemforms.saveandcontinue.core;

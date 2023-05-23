@@ -1,6 +1,6 @@
 ---
 title: Descargar y cargar
-description: Obtenga información sobre cómo descargar y cargar archivos de recursos desde y hacia AEM Assets mediante el panel de Asset Link.
+description: Obtenga información sobre cómo descargar y cargar archivos de recursos desde y hacia AEM Assets mediante el panel Asset Link.
 feature: Adobe Asset Link
 version: 6.4, 6.5, Cloud Service
 kt: 4908
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Descargar y cargar {#download-and-upload}
 
-Obtenga información sobre cómo descargar y cargar archivos de recursos desde y hacia AEM Assets mediante el panel de Asset Link.
+Obtenga información sobre cómo descargar y cargar archivos de recursos desde y hacia AEM Assets mediante el panel Asset Link.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33885?quality=12&learn=on)

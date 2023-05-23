@@ -1,6 +1,6 @@
 ---
-title: Obtenga información sobre la estructura de un proyecto de Maven AEM.
-description: Comprender AEM estructura y subproyectos del proyecto Maven.
+title: AEM Obtenga información acerca de la estructura de un proyecto de Maven de.
+description: AEM Comprender la estructura y los subproyectos del proyecto de Maven de la.
 role: Developer
 level: Beginner
 topic: Development
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# AEM estructura del proyecto Maven
+# AEM Estructura del proyecto de Maven
 
-Un vistazo a la estructura y subproyectos de un proyecto AEM Maven y para qué se utilizan.
+AEM Un vistazo rápido a la estructura y los subproyectos de un proyecto de Maven de la y para qué se utilizan.
 
 >[!VIDEO](https://video.tv.adobe.com/v/334280?quality=12&learn=on)

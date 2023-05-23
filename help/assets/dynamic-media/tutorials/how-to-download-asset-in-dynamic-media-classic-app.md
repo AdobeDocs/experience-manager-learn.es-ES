@@ -1,6 +1,6 @@
 ---
-title: Descarga de recursos en AEM aplicación de Dynamic Media Classic
-description: Pasos para descargar recursos en la aplicación Dynamic Media Classic
+title: AEM Descarga de recursos en la aplicación de Dynamic Media Classic de
+description: Pasos para descargar el recurso en la aplicación de Dynamic Media Classic
 version: Cloud Service
 role: Developer
 level: Intermediate
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# Descarga de recursos en AEM aplicación de Dynamic Media Classic
+# AEM Descarga de recursos en la aplicación de Dynamic Media Classic de
 
-Este vídeo muestra los pasos para descargar recursos en la aplicación Dynamic Media Classic.
+Este vídeo muestra los pasos para descargar recursos en la aplicación de Dynamic Media Classic.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335458?quality=12&learn=on)

@@ -1,6 +1,6 @@
 ---
 title: Herramienta de transferencia de contenido
-description: Descubra cómo la herramienta de transferencia de contenido le permite mover contenido de AEM 6.5 a AEM as a Cloud Service de forma eficaz.
+description: AEM AEM Descubra cómo la herramienta de transferencia de contenido le permite trasladar eficazmente el contenido de la versión 6.5 de la a la as a Cloud Service.
 version: Cloud Service
 feature: Migration
 topic: Migration, Upgrade
@@ -18,6 +18,6 @@ ht-degree: 13%
 
 # Herramienta de transferencia de contenido
 
-Descubra cómo la herramienta de transferencia de contenido le permite mover contenido de AEM 6.5 a AEM as a Cloud Service de forma eficaz.
+AEM AEM Descubra cómo la herramienta de transferencia de contenido le permite trasladar eficazmente el contenido de la versión 6.5 de la a la as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336692?quality=12&learn=on)

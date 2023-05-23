@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Flujos de trabajo de inicio automático
 
-Los flujos de trabajo de inicio automático amplían el procesamiento de recursos en AEM as a Cloud Service invocando automáticamente el flujo de trabajo personalizado al cargar o al volver a procesar.
+AEM Los flujos de trabajo de inicio automático amplían el procesamiento de recursos en el as a Cloud Service invocando automáticamente el flujo de trabajo personalizado al cargar o al volver a procesar.
 
 >[!VIDEO](https://video.tv.adobe.com/v/37323?quality=12&learn=on)

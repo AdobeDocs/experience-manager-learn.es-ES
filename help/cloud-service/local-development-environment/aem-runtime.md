@@ -1,6 +1,6 @@
 ---
-title: Configuración del tiempo de ejecución de AEM local para AEM desarrollo as a Cloud Service
-description: Configure el tiempo de ejecución del AEM local mediante el Jar de inicio rápido del SDK as a Cloud Service de AEM.
+title: AEM AEM Configuración de Local Runtime para desarrollo as a Cloud Service de la
+description: AEM AEM Configure el Tiempo de ejecución de Local mediante el Jar de inicio rápido del SDK as a Cloud Service de.
 feature: Developer Tools
 version: Cloud Service
 kt: 4678, 4677
@@ -17,7 +17,7 @@ ht-degree: 9%
 
 ---
 
-# Configuración del tiempo de ejecución de AEM local {#set-up-local-aem-runtime}
+# AEM Configuración del tiempo de ejecución de la local {#set-up-local-aem-runtime}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_localdev_aemruntime"
@@ -28,46 +28,46 @@ ht-degree: 9%
 
 Adobe Experience Manager (AEM) se puede ejecutar localmente mediante el Jar de inicio rápido del SDK de AEM as a Cloud Service. Esto permite a los desarrolladores implementar y probar el código, la configuración y el contenido personalizados antes de comprometerlo con el control de código fuente e implementarlo en el entorno de AEM as a Cloud Service.
 
-Tenga en cuenta que `~` se utiliza como abreviatura para el Directorio del usuario. En Windows, es el equivalente de `%HOMEPATH%`.
+Tenga en cuenta que `~` se utiliza como abreviatura del Directorio del usuario. En Windows, este es el equivalente de `%HOMEPATH%`.
 
-## Instalación de Java
+## Instalar Java
 
-Experience Manager es una aplicación Java y, por lo tanto, requiere el SDK de Java para admitir las herramientas de desarrollo.
+Experience Manager es una aplicación Java y, por lo tanto, requiere que el SDK de Java admita las herramientas de desarrollo.
 
-1. [Descargar e instalar el último SDK de Java 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
-1. Compruebe que el SDK de Java 11 esté instalado ejecutando el comando :
+1. [Descargue e instale el último SDK 11 de Java](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
+1. Compruebe que el SDK de Java 11 está instalado ejecutando el comando:
    + Windows:`java -version`
-   + macOS / Linux: `java --version`
+   + macOS/Linux: `java --version`
 
 ![Java](./assets/aem-runtime/java.png)
 
-## Descargar el SDK as a Cloud Service AEM
+## AEM Descarga del SDK as a Cloud Service de
 
-El SDK as a Cloud Service AEM, o SDK AEM, contiene el Jar de inicio rápido utilizado para ejecutar AEM Author y Publish localmente para el desarrollo, así como la versión compatible de las herramientas de Dispatcher.
+AEM El SDK as a Cloud Service AEM, o SDK de, contiene el Jar de inicio rápido utilizado para ejecutar AEM Author y Publish localmente para el desarrollo, así como la versión compatible de las herramientas de Dispatcher.
 
 1. Iniciar sesión en [https://experience.adobe.com/#/downloads](https://experience.adobe.com/#/downloads) con su Adobe ID
-   + Tenga en cuenta que la organización de Adobe __must__ esté aprovisionado para AEM as a Cloud Service a descargar el SDK as a Cloud Service de AEM.
+   + Tenga en cuenta que la organización de Adobe __debe__ AEM Debe aprovisionarse para que los as a Cloud Service AEM descarguen el SDK as a Cloud Service de la.
 1. Vaya a la pestaña __AEM as a Cloud Service__
-1. Ordenar por __Fecha de publicación__ en __Descendente__ pedido
-1. Haga clic en la última __SDK AEM__ fila de resultados
+1. Ordenar por __Fecha de publicación__ in __Descendente__ pedido
+1. Haga clic en la última __AEM SDK de__ fila de resultados
 1. Revise y acepte el EULA y pulse el botón __Descargar__ botón
 
-## Extraer el Jar de inicio rápido del zip del SDK de AEM
+## AEM Extraiga el Jar de inicio rápido del zip del SDK de la
 
-1. Descomprima el `aem-sdk-XXX.zip` file
+1. Descomprima el archivo descargado `aem-sdk-XXX.zip` archivo
 
-## Configuración del servicio local de AEM Author{#set-up-local-aem-author-service}
+## Configurar el servicio local de AEM Author{#set-up-local-aem-author-service}
 
-El servicio de creación de AEM local proporciona a los desarrolladores una experiencia local que los especialistas en marketing digital/autores de contenido compartirán para crear y administrar contenido.  El servicio de creación de AEM está diseñado como entorno de creación y previsualización, lo que permite realizar la mayoría de las validaciones del desarrollo de funciones en su contra, lo que lo convierte en un elemento vital del proceso de desarrollo local.
+El servicio de creación de AEM local proporciona a los desarrolladores una experiencia local que los especialistas en marketing digital/los autores de contenido compartirán para crear y administrar contenido.  El servicio de creación de AEM está diseñado como entorno de creación y previsualización, lo que permite que la mayoría de las validaciones del desarrollo de funciones se puedan realizar en él, lo que lo convierte en un elemento vital del proceso de desarrollo local.
 
-1. Crear la carpeta `~/aem-sdk/author`
-1. Copie el __JAR de inicio rápido__ a  `~/aem-sdk/author` y cambie el nombre a `aem-author-p4502.jar`
-1. Inicie el servicio local de AEM Author ejecutando lo siguiente desde la línea de comandos:
+1. Cree la carpeta `~/aem-sdk/author`
+1. Copie el __JAR de inicio rápido__ archivo a  `~/aem-sdk/author` y renómbralo a `aem-author-p4502.jar`
+1. Inicie el servicio de AEM Author local ejecutando lo siguiente desde la línea de comandos:
    + `java -jar aem-author-p4502.jar`
-      + Proporcione la contraseña de administrador como `admin`. Cualquier contraseña de administrador es aceptable, pero se recomienda utilizar el valor predeterminado para el desarrollo local para reducir la necesidad de volver a configurarla.
+      + Proporcione la contraseña de administrador como `admin`. Cualquier contraseña de administrador es aceptable, pero se recomienda utilizar la predeterminada para el desarrollo local con el fin de reducir la necesidad de volver a configurar.
 
-   You *cannot* iniciar AEM como Cloud Service Jar de inicio rápido [haciendo doble clic en](#troubleshooting-double-click).
-1. Acceda al servicio local de AEM Author en [http://localhost:4502](http://localhost:4502) en un explorador Web
+   Usted *no puede* AEM inicie el Jar de inicio rápido de Cloud Service de la [haciendo doble clic en](#troubleshooting-double-click).
+1. Acceda al servicio de AEM Author local en [http://localhost:4502](http://localhost:4502) en un explorador Web
 
 Windows:
 
@@ -78,7 +78,7 @@ $ cd c:\Users\<My User>\aem-sdk\author
 $ java -jar aem-author-p4502.jar
 ```
 
-macOS / Linux:
+macOS/Linux:
 
 ```shell
 $ mkdir -p ~/aem-sdk/author
@@ -87,18 +87,18 @@ $ cd ~/aem-sdk/author
 $ java -jar aem-author-p4502.jar
 ```
 
-## Configuración del servicio local de publicación de AEM
+## Configurar el servicio de publicación de AEM local
 
-El servicio de publicación de AEM local proporciona a los desarrolladores la experiencia local que los usuarios finales del AEM tendrán, como navegar por el sitio web alojado en AEM. Un servicio de publicación local de AEM es importante, ya que se integra con AEM SDK [Herramientas de Dispatcher](./dispatcher-tools.md) y permite a los desarrolladores realizar pruebas de humo y ajustar la experiencia final de cara al usuario final.
+AEM AEM El servicio de publicación de AEM local proporciona a los desarrolladores la experiencia local que tendrán los usuarios finales de la aplicación, como por ejemplo, la exploración del sitio web alojado en el que se va a realizar la publicación en el sitio web de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de forma. AEM Un servicio de publicación de AEM local es importante porque se integra con los SDK de la [Herramientas de Dispatcher](./dispatcher-tools.md) y permite a los desarrolladores probar y ajustar la experiencia final del usuario final.
 
-1. Crear la carpeta `~/aem-sdk/publish`
-1. Copie el __JAR de inicio rápido__ a  `~/aem-sdk/publish` y cambie el nombre a `aem-publish-p4503.jar`
+1. Cree la carpeta `~/aem-sdk/publish`
+1. Copie el __JAR de inicio rápido__ archivo a  `~/aem-sdk/publish` y renómbralo a `aem-publish-p4503.jar`
 1. Inicie el servicio de publicación de AEM local ejecutando lo siguiente desde la línea de comandos:
    + `java -jar aem-publish-p4503.jar`
-      + Proporcione la contraseña de administrador como `admin`. Cualquier contraseña de administrador es aceptable, pero se recomienda utilizar el valor predeterminado para el desarrollo local para reducir la necesidad de volver a configurarla.
+      + Proporcione la contraseña de administrador como `admin`. Cualquier contraseña de administrador es aceptable, pero se recomienda utilizar la predeterminada para el desarrollo local con el fin de reducir la necesidad de volver a configurar.
 
-   You *cannot* iniciar AEM como Cloud Service Jar de inicio rápido [haciendo doble clic en](#troubleshooting-double-click).
-1. Acceda al servicio de publicación local de AEM en [http://localhost:4503](http://localhost:4503) en un explorador Web
+   Usted *no puede* AEM inicie el Jar de inicio rápido de Cloud Service de la [haciendo doble clic en](#troubleshooting-double-click).
+1. Acceda al servicio de publicación de AEM local en [http://localhost:4503](http://localhost:4503) en un explorador Web
 
 Windows:
 
@@ -109,7 +109,7 @@ $ cd c:\Users\<My User>\aem-sdk\publish
 $ java -jar aem-publish-p4503.jar
 ```
 
-macOS / Linux:
+macOS/Linux:
 
 ```shell
 $ mkdir -p ~/aem-sdk/publish
@@ -118,9 +118,9 @@ $ cd ~/aem-sdk/publish
 $ java -jar aem-publish-p4503.jar
 ```
 
-## Configuración de los servicios de AEM locales en el modo de prelanzamiento
+## AEM Configuración de servicios locales de en modo de prelanzamiento
 
-El tiempo de ejecución de AEM local se puede iniciar en [modo de prelanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es) permitir a un desarrollador compilar según las funciones de la próxima versión del as a Cloud Service AEM. La versión previa se habilita pasando la variable `-r prerelease` en el primer inicio del motor de ejecución de AEM local. Esto se puede utilizar con los servicios locales de AEM Author y AEM Publish.
+AEM El tiempo de ejecución de la local se puede iniciar en [modo de prelanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es) AEM lo que permite a los desarrolladores compilar comparando con las funciones de la próxima versión del as a Cloud Service. La versión preliminar se habilita pasando el `-r prerelease` AEM en el primer inicio del tiempo de ejecución local de la. Esto se puede utilizar con los servicios locales AEM Author y AEM Publish.
 
 ```shell
 # For AEM Author service in prerelease mode
@@ -130,27 +130,27 @@ $ java -jar aem-author-p4502.jar -r prerelease
 $ java -jar aem-publish-p4503.jar -r prerelease
 ```
 
-## Simular la distribución de contenido {#content-distribution}
+## Simular distribución de contenido {#content-distribution}
 
-En un entorno de Cloud Service verdadero, el contenido se distribuye desde el servicio de creación al servicio de publicación mediante [Distribución de contenido de Sling](https://sling.apache.org/documentation/bundles/content-distribution.html) y la canalización de Adobe. La variable [Canalización de Adobe](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html?lang=en#content-distribution) es un microservicio aislado disponible solo en el entorno de la nube.
+En un entorno de Cloud Service real, el contenido se distribuye desde el servicio de creación al de publicación mediante [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html) y la Canalización de Adobe. El [Canalización de Adobe](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html?lang=en#content-distribution) es un microservicio aislado que solo está disponible en el entorno de la nube.
 
-Durante el desarrollo, puede ser deseable simular la distribución de contenido mediante el servicio Autor y Publicación local. Esto se puede lograr habilitando los agentes de replicación heredados.
+Durante el desarrollo, puede ser deseable simular la distribución de contenido mediante el servicio local de creación y publicación. Esto se puede lograr habilitando los agentes de replicación heredados.
 
 >[!NOTE]
 >
 > Los agentes de replicación solo están disponibles para su uso en el JAR de inicio rápido local y proporcionan solo una simulación de distribución de contenido.
 
-1. Inicie sesión en el **Autor** y vaya a [http://localhost:4502/etc/replication/agents.author.html](http://localhost:4502/etc/replication/agents.author.html).
-1. Haga clic en **Agente predeterminado (publicar)** para abrir el agente de replicación predeterminado.
-1. Haga clic en **Editar** para abrir la configuración del agente.
-1. En el **Configuración** , actualice los campos siguientes:
+1. Inicie sesión en **Autor** y vaya a [http://localhost:4502/etc/replication/agents.author.html](http://localhost:4502/etc/replication/agents.author.html).
+1. Clic **Agente predeterminado (publicar)** para abrir el agente de replicación predeterminado.
+1. Clic **Editar** para abrir la configuración del agente.
+1. En el **Configuración** pestaña, actualice los siguientes campos:
 
    + **Habilitado** - comprobar verdadero
-   + **Id De Usuario Del Agente** - Deje este campo vacío
+   + **ID de usuario agente** - Deje este campo vacío
 
    ![Configuración del agente de replicación: configuración](assets/aem-runtime/settings-config.png)
 
-1. En el **Transporte** , actualice los campos siguientes:
+1. En el **Transporte** pestaña, actualice los siguientes campos:
 
    + **URI** - `http://localhost:4503/bin/receive?sling:authRequestLogin=1`
    + **Usuario** - `admin`
@@ -158,84 +158,84 @@ Durante el desarrollo, puede ser deseable simular la distribución de contenido 
 
    ![Configuración del agente de replicación: transporte](assets/aem-runtime/transport-config.png)
 
-1. Haga clic en **Ok** para guardar la configuración y habilitar la variable **Predeterminado** Agente de replicación.
-1. Ahora puede realizar cambios en el contenido del servicio Autor y publicarlo en el servicio Publicar .
+1. Clic **Ok** para guardar la configuración y habilitar la variable **Predeterminado** Agente de replicación.
+1. Ahora puede realizar cambios en el contenido en el servicio de creación y publicarlos en el servicio de publicación.
 
 ![Publicar página](assets/aem-runtime/publish-page-changes.png)
 
-## Modos de inicio de Jar de inicio rápido
+## Modos de inicio rápido del Jar
 
-El nombre del Jar de inicio rápido, `aem-<tier>_<environment>-p<port number>.jar` especifica cómo se iniciará. Una vez AEM se ha iniciado en un nivel específico, se puede crear o publicar, no se puede cambiar al nivel alternativo. Para ello, el `crx-Quickstart` la carpeta generada durante la primera ejecución debe eliminarse, y el Jar de inicio rápido debe volver a ejecutarse. El entorno y los puertos se pueden cambiar, aunque requieren la detención/inicio de la instancia de AEM local.
+El nombre del Jar de inicio rápido, `aem-<tier>_<environment>-p<port number>.jar` especifica cómo se iniciará. AEM Una vez que se ha iniciado la creación o publicación en un nivel específico, no se puede cambiar al nivel alternativo. Para ello, la variable `crx-Quickstart` La carpeta generada durante la primera ejecución debe eliminarse y Quickstart Jar debe ejecutarse de nuevo. AEM El entorno y los puertos se pueden cambiar, pero requieren la detención/inicio de la instancia de la instancia de la local.
 
-Cambiar entornos, `dev`, `stage` y `prod`, puede resultar útil para los desarrolladores de para garantizar que las configuraciones específicas del entorno se definan y resuelvan correctamente por AEM. Se recomienda que el desarrollo local se realice principalmente frente al valor predeterminado `dev` modo de ejecución del entorno.
+Cambiar entornos, `dev`, `stage` y `prod`AEM , puede resultar útil para los desarrolladores para garantizar que las configuraciones específicas del entorno se definen y resuelven correctamente mediante la función de definición y resolución de la aplicación de la configuración de la aplicación de la manera más adecuada. Se recomienda que el desarrollo local se realice principalmente contra el valor predeterminado `dev` modo de ejecución de entorno.
 
 Las permutaciones disponibles son las siguientes:
 
-| Nombre de archivo del Jar de inicio rápido | Descripción del modo |
+| Nombre de archivo Jar de inicio rápido | Descripción del modo |
 |------------------------------|-----------------------------------------------------------------------------|
-| `aem-author-p4502.jar` | Como autor en el modo de ejecución de desarrollo en el puerto 4502 |
-| `aem-author_dev-p4502.jar` | Como Autor en el modo de ejecución Dev en el puerto 4502 (igual que `aem-author-p4502.jar`) |
-| `aem-author_stage-p4502.jar` | Como autor en modo de ejecución de ensayo en el puerto 4502 |
-| `aem-author_prod-p4502.jar` | Como Autor en modo de ejecución de producción en el puerto 4502 |
-| `aem-publish-p4503.jar` | Como publicado en el modo de ejecución de desarrollo en el puerto 4503 |
-| `aem-publish_dev-p4503.jar` | Como Publicar en el modo de ejecución de desarrollo en el puerto 4503 (igual que `aem-publish-p4503.jar`) |
-| `aem-publish_stage-p4503.jar` | Como Publicado en modo de ejecución de ensayo en el puerto 4503 |
-| `aem-publish_prod-p4503.jar` | Como Publicar en modo de ejecución de producción en el puerto 4503 |
+| `aem-author-p4502.jar` | Como autor en el modo de ejecución Dev en el puerto 4502 |
+| `aem-author_dev-p4502.jar` | Como autor en el modo de ejecución Dev en el puerto 4502 (igual que `aem-author-p4502.jar`) |
+| `aem-author_stage-p4502.jar` | Como autor en el modo de ejecución de ensayo en el puerto 4502 |
+| `aem-author_prod-p4502.jar` | Como autor en el modo de ejecución de producción en el puerto 4502 |
+| `aem-publish-p4503.jar` | Como publicar en modo de ejecución de desarrollo en el puerto 4503 |
+| `aem-publish_dev-p4503.jar` | Al publicar en modo de ejecución de desarrollo en el puerto 4503 (igual que `aem-publish-p4503.jar`) |
+| `aem-publish_stage-p4503.jar` | Como publicar en modo de ejecución de ensayo en el puerto 4503 |
+| `aem-publish_prod-p4503.jar` | Como publicar en el modo de ejecución de producción en el puerto 4503 |
 
 Tenga en cuenta que el número de puerto puede ser cualquier puerto disponible en la máquina de desarrollo local, aunque por convención:
 
-+ Puerto __4502__ se usa para __servicio local de AEM Author__
-+ Puerto __4503__ se usa para __servicio local de AEM Publish__
++ Puerto __4502__ se utiliza para __servicio local de AEM Author__
++ Puerto __4503__ se utiliza para __servicio de publicación local de AEM__
 
-Para cambiar estas opciones es posible que sea necesario realizar ajustes en AEM configuraciones del SDK
+AEM Para cambiarlos, es posible que sea necesario realizar ajustes en las configuraciones del SDK de la
 
-## Detención de un tiempo de ejecución de AEM local
+## AEM Detención de un tiempo de ejecución de local
 
-Para detener un tiempo de ejecución de AEM local, ya sea AEM Author o Publish, abra la ventana de línea de comandos que se utilizó para iniciar el tiempo de ejecución de AEM y pulse `Ctrl-C`. Espere a que AEM cierre. Cuando se completa el proceso de apagado, el símbolo del sistema de la línea de comandos está disponible.
+AEM AEM Para detener un tiempo de ejecución de la local, ya sea AEM Author o el servicio Publish, abra la ventana de línea de comandos que se utilizó para iniciar el tiempo de ejecución de la y pulse `Ctrl-C`. AEM Espere a que se cierre el sistema de. Cuando se completa el proceso de apagado, el símbolo del sistema está disponible.
 
-## Tareas opcionales de configuración de tiempo de ejecución de AEM local
+## AEM Tareas de configuración de tiempo de ejecución locales opcionales
 
-+ __Variables de entorno de configuración OSGi y variables secretas__ are [especialmente configurado para el tiempo de ejecución local de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development), en lugar de administrarlas usando la CLI de aio.
++ __Variables de entorno de configuración OSGi y variables secretas__ son [AEM configurado especialmente para el tiempo de ejecución local de la](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development), en lugar de administrarlas mediante la CLI de aio.
 
 ## Cuándo actualizar el Jar de inicio rápido
 
-Actualice el SDK de AEM al menos mensualmente el último jueves de cada mes o poco después, que es la cadencia de lanzamiento de AEM &quot;versiones de funciones&quot; as a Cloud Service.
+AEM AEM Actualice el SDK de la al menos una vez al mes, o poco después, el último jueves de cada mes, que es la cadencia de lanzamiento de las &quot;versiones de funcionalidades&quot; as a Cloud Service de la.
 
 >[!WARNING]
 >
-> Actualizar el Jar de inicio rápido a una nueva versión requiere reemplazar el entorno de desarrollo local completo, lo que resulta en una pérdida de todo el código, la configuración y el contenido en los repositorios de AEM locales. Asegúrese de que cualquier código, configuración o contenido que no se deba destruir se comprometa de forma segura con Git o se exporta desde la instancia de AEM local como Paquetes AEM.
+> AEM La actualización del Jar de inicio rápido a una nueva versión requiere reemplazar todo el entorno de desarrollo local, lo que provoca la pérdida de todo el código, la configuración y el contenido de los repositorios de la base de datos de la aplicación de inicio rápido (QUICKstart JAR) local. AEM AEM Asegúrese de que cualquier código, configuración o contenido que no se deba destruir se conserva de forma segura con Git o se exporta desde la instancia de la local como paquetes de la aplicación.
 
-### Cómo evitar la pérdida de contenido al actualizar el SDK de AEM
+### AEM Evitar la pérdida de contenido al actualizar el SDK de la
 
-La actualización del SDK de AEM está creando de forma efectiva un nuevo tiempo de ejecución de AEM, incluido un nuevo repositorio, lo que significa que se pierden los cambios realizados en un repositorio anterior del SDK de AEM. Las siguientes son estrategias viables para ayudar a mantener el contenido entre AEM actualizaciones del SDK y se pueden utilizar de forma discreta o concertada:
+AEM AEM AEM Actualizar el SDK de la es crear de manera efectiva un tiempo de ejecución de la completamente nuevo, incluido un repositorio nuevo, lo que significa que se pierden todos los cambios realizados en un repositorio de un SDK de la API anterior. AEM Las siguientes son estrategias viables para ayudar en la persistencia del contenido entre actualizaciones de SDK de la, y se pueden utilizar de forma discreta o conjunta:
 
-1. Cree un paquete de contenido dedicado a contener contenido de &quot;muestra&quot; para ayudar en el desarrollo y mantenerlo en Git. Cualquier contenido que se deba mantener mediante AEM actualizaciones del SDK se mantendría en este paquete y se volvería a implementar después de actualizar el SDK de AEM.
-1. Uso [oak-upgrade](https://jackrabbit.apache.org/oak/docs/migration.html) con la variable `includepaths` , para copiar contenido del repositorio AEM SDK anterior al nuevo repositorio AEM SDK.
-1. Haga una copia de seguridad de cualquier contenido mediante AEM Administrador de paquetes y paquetes de contenido en el SDK de AEM anterior y vuelva a instalarlos en el nuevo SDK de AEM.
+1. Cree un paquete de contenido dedicado a contener contenido de &quot;muestra&quot; para ayudar en el desarrollo y mantenerlo en Git. AEM AEM Cualquier contenido que deba persistir a través de actualizaciones del SDK de la se mantendrá en este paquete y se volverá a implementar después de actualizar el SDK de la.
+1. Uso [oak-upgrade](https://jackrabbit.apache.org/oak/docs/migration.html) con el `includepaths` AEM AEM , para copiar contenido del repositorio anterior del SDK de la en el nuevo repositorio del SDK de la aplicación.
+1. AEM AEM AEM Haga una copia de seguridad de cualquier contenido mediante el Administrador de paquetes de contenido y los paquetes de contenido de la versión anterior del SDK de la de datos y vuelva a instalarlos en el nuevo SDK de la versión de.
 
-Recuerde que, con los enfoques anteriores para mantener el código entre AEM actualizaciones del SDK, indica un anti-patrón de desarrollo. El código no desechable debe originarse en el IDE de desarrollo y fluir a AEM SDK mediante implementaciones.
+AEM Recuerde, el uso de los enfoques anteriores para mantener el código entre las actualizaciones del SDK de la indica un antipatrón de desarrollo. AEM El código no desechable debe originarse en el IDE de desarrollo y fluir hacia el SDK de la aplicación a través de implementaciones de SDK de la aplicación.
 
 ## Solución de problemas
 
-### Al hacer doble clic en el archivo Jar de inicio rápido se produce un error{#troubleshooting-double-click}
+### Al hacer doble clic en el archivo Jar de inicio rápido, se produce un error{#troubleshooting-double-click}
 
-Al hacer doble clic en el Jar de inicio rápido para iniciar, se muestra un modo de error que impide que el AEM se inicie localmente.
+AEM Al hacer doble clic en el Jar de inicio rápido para el inicio, se muestra un modal de error que impide que el inicio se realice de forma local a la vez que se hace de forma local.
 
-![Solución de problemas: haga doble clic en el archivo Jar de inicio rápido](./assets/aem-runtime/troubleshooting__double-click.png)
+![Solución de problemas: haga doble clic en el archivo Quickstart Jar](./assets/aem-runtime/troubleshooting__double-click.png)
 
-Esto se debe a que AEM Jar de inicio rápido as a Cloud Service no admite hacer doble clic en el Jar de inicio rápido para iniciar AEM localmente. En su lugar, debe ejecutar el archivo Jar desde esa línea de comandos.
+AEM Esto se debe a que el Jar de inicio rápido as a Cloud Service AEM no admite hacer doble clic en el Jar de inicio rápido para iniciar la aplicación de forma local En su lugar, debe ejecutar el archivo Jar desde esa línea de comandos.
 
 Para iniciar el servicio de AEM Author, `cd` en el directorio que contiene el Jar de inicio rápido y ejecute el comando:
 
 `$ java -jar aem-author-p4502.jar`
 
-o, para iniciar el servicio AEM Publish, `cd` en el directorio que contiene el Jar de inicio rápido y ejecute el comando:
+o bien, para iniciar el servicio de publicación de AEM, `cd` en el directorio que contiene el Jar de inicio rápido y ejecute el comando:
 
 `$ java -jar aem-publish-p4503.jar`
 
-### El inicio del Jar de inicio rápido desde la línea de comandos se anula inmediatamente.{#troubleshooting-java-8}
+### El inicio del Jar de inicio rápido desde la línea de comandos se anula inmediatamente{#troubleshooting-java-8}
 
-Al iniciar el Jar de inicio rápido desde la línea de comandos, el proceso se interrumpe inmediatamente y el servicio de AEM no se inicia, con el siguiente error:
+AEM Al iniciar el Jar de inicio rápido desde la línea de comandos, el proceso se interrumpe inmediatamente y el servicio no se inicia, con el siguiente error:
 
 ```shell
 ➜  ~/aem-sdk/author: java -jar aem-author-p4502.jar
@@ -248,17 +248,17 @@ java.lang.Exception: Quickstart requires a Java Specification 11 VM, but your VM
 Quickstart: aborting
 ```
 
-Esto se debe a que AEM as a Cloud Service requiere Java SDK 11 y está ejecutando una versión diferente, muy probablemente Java 8. Para resolver este problema, descargue e instale [SDK 11 de Java de oracle](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14).
-Una vez instalado el SDK 11 de Java, compruebe que sea la versión activa ejecutando lo siguiente desde la línea de comandos.
+AEM as a Cloud Service Esto se debe a que el SDK 11 de Java es necesario para la ejecución de la aplicación, y es probable que esté ejecutando otra versión, la de Java 8, que es la que requiere el SDK 30000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 Para resolver este problema, descargue e instale [Oracle Java SDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14).
+Una vez instalado el SDK 11 de Java, compruebe que es la versión activa ejecutando lo siguiente desde la línea de comandos.
 
 Una vez instalado el SDK de Java 11, compruebe que es la versión activa ejecutando el comando desde la línea de comandos:
 
 + Windows: `java -version`
-+ macOS / Linux: `java --version`
++ macOS/Linux: `java --version`
 
 ## Recursos adicionales
 
-+ [Descargar AEM SDK](https://experience.adobe.com/#/downloads)
++ [AEM Descarga de SDK de](https://experience.adobe.com/#/downloads)
 + [Adobe Cloud Manager](https://my.cloudmanager.adobe.com/)
 + [Descargar Docker](https://www.docker.com/)
-+ [Documentación de Dispatcher de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es)
++ [Documentación de Experience Manager Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es)

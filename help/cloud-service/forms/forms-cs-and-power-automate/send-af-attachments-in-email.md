@@ -1,6 +1,6 @@
 ---
-title: Enviar archivos adjuntos en un mensaje de correo electrónico
-description: Extraer y enviar archivos adjuntos de formularios enviados en un mensaje de correo electrónico mediante la automatización del flujo de trabajo
+title: Enviar datos adjuntos de formulario en un correo electrónico
+description: Extraer y enviar archivos adjuntos de formularios enviados en un correo electrónico mediante el flujo de trabajo de Power Automate
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
@@ -9,7 +9,8 @@ version: Cloud Service
 feature: Adaptive Forms
 topic: Development
 kt: 11077
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+exl-id: 1be90d9b-3669-44a0-84fb-cbdec44074d8
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '72'
 ht-degree: 0%
@@ -18,11 +19,11 @@ ht-degree: 0%
 
 # Extraer datos adjuntos de formularios enviados
 
-Extraiga los archivos adjuntos de los formularios y envíelos en un mensaje de correo electrónico en Power Automatice el flujo de trabajo.
+Extraiga los archivos adjuntos del formulario y envíelos en un correo electrónico en el flujo de trabajo de Power Automate.
 En el siguiente vídeo se explican los pasos necesarios para formar archivos adjuntos a partir de los datos enviados.
 >[!VIDEO](https://video.tv.adobe.com/v/3409017?quality=12&learn=on)
 
-El siguiente es el esquema de objeto de adjunto que debe utilizar en el paso de esquema Parse JSON
+A continuación se muestra el esquema del objeto attachment que debe utilizar en el paso Analizar esquema JSON
 
 ```json
 {

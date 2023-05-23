@@ -1,6 +1,6 @@
 ---
 title: Adición de paneles secundarios al panel raíz
-description: Configuración del diseño del panel raíz en "Tabs on Left" (Tabulaciones a la izquierda) y adición de paneles secundarios al panel raíz.
+description: Configuración del diseño del panel raíz en "Pestañas a la izquierda" y adición de paneles secundarios al panel raíz.
 feature: Adaptive Forms
 version: 6.4,6.5
 thumbnail: 28536.jpg
@@ -24,7 +24,7 @@ Agregue paneles secundarios al panel raíz.
 >[!VIDEO](https://video.tv.adobe.com/v/28536?quality=12&learn=on)
 
 >[!NOTE]
->Al agregar paneles secundarios al panel raíz, **Asegúrese de que está en el modo de edición. El botón de edición se encuentra en la parte superior derecha del explorador.**
+>Cuando agregue paneles secundarios al panel raíz, **Asegúrese de que está en el modo de edición. El botón de edición se encuentra en la parte superior derecha del explorador.**
 
 ## Pasos siguientes
 

@@ -1,5 +1,5 @@
 ---
-title: 'Almacenamiento y recuperación de datos de formulario de la base de datos MySQL: Crear biblioteca de cliente'
+title: 'Almacenar y recuperar datos de formulario de la base de datos MySQL: crear biblioteca de cliente'
 description: Tutorial de varias partes para guiarle por los pasos necesarios para almacenar y recuperar datos de formulario
 feature: Adaptive Forms
 type: Tutorial
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 # Crear biblioteca de cliente
 
-AEM biblioteca de cliente administra todo el código JavaScript del lado del cliente. Para este artículo, he creado un JavaScript simple para recuperar los datos del formulario adaptable mediante la API del puente de guía. Una vez recuperados los datos del formulario adaptable, se realiza la llamada del POST al servlet para insertar o actualizar los datos del formulario adaptable en la base de datos. La función getALLUrlParams devuelve los parámetros de la dirección URL. Si el parámetro guid está presente en la URL, entonces necesitamos realizar la operación de actualización, si no es una operación de inserción. El resto de la funcionalidad se gestiona en el código asociado con el evento click de la clase .savebutton.
+AEM La biblioteca de clientes de administra todo el código JavaScript del lado del cliente. Para este artículo, he creado un JavaScript simple para recuperar los datos del formulario adaptable mediante la API de Guide Bridge. Una vez recuperados los datos del formulario adaptable, se realiza la llamada al POST al servlet para insertar o actualizar los datos del formulario adaptable en la base de datos. La función getALLUrlParams devuelve los parámetros de la dirección URL. Si el parámetro guid está presente en la dirección URL, es necesario realizar la operación de actualización; en caso contrario, se trata de una operación de inserción. El resto de la funcionalidad se controla en el código asociado con el evento de clic de la clase .savebutton.
 
 >[!NOTE]
 >
->La biblioteca del cliente se proporciona como parte de estos recursos de tutorial
+>La biblioteca de cliente se proporciona como parte de los recursos de este tutorial
 
 ```javascript
 function getAllUrlParams(url) {

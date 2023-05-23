@@ -1,6 +1,6 @@
 ---
-title: Instalación de las bibliotecas de reacción de formularios adaptables necesarias
-description: Añadir las dependencias necesarias al proyecto de respuesta
+title: Instale las bibliotecas de React del formulario adaptable requeridas
+description: Añada las dependencias necesarias al proyecto de React
 feature: Adaptive Forms
 version: 6.5
 kt: 13285
@@ -17,21 +17,21 @@ ht-degree: 1%
 
 # Instalación de las dependencias requeridas
 
-Para empezar a utilizar formularios adaptables sin encabezado en el proyecto de Reacción, instale las siguientes dependencias en el proyecto de Reacción
+Para empezar a utilizar formularios adaptables sin encabezado en su proyecto de react, instale las siguientes dependencias en su proyecto de react
 
 * @aemforms/af-react-components
 * @aemforms/af-react-renderer
 
-Actualice package.json para incluir las siguientes dependencias. En el momento de escribir este artículo, 0.22.41 era la versión actual
+Actualice el archivo package.json para incluir las siguientes dependencias. En el momento de escribir 0.22.41 era la versión actual
 
 ```json
 "@aemforms/af-react-components": "^0.22.41",
 "@aemforms/af-react-renderer": "^0.22.41",
 ```
 
-## Configuración del proxy
+## Configurar proxy
 
-El uso compartido de recursos de origen cruzado (CORS) es un mecanismo de seguridad que impide que los navegadores web realicen solicitudes en un dominio diferente al dominio en el que está alojada la aplicación. Los errores de CORS se pueden producir al intentar recuperar datos de una API alojada en un dominio diferente. Al configurar un proxy, puede evitar las restricciones CORS y realizar solicitudes a la API desde la aplicación React. He utilizado el siguiente código en un archivo llamado setUpProxy.js en la carpeta src. **Asegúrese de cambiar el destino para que apunte a la instancia de publicación.**
+El Intercambio de Recursos de Origen Cruzado (CORS) es un mecanismo de seguridad que restringe a los navegadores web de realizar solicitudes a un dominio diferente al dominio en el que está alojada la aplicación. Pueden producirse errores de CORS al intentar recuperar datos de una API alojada en un dominio diferente. Al configurar un proxy, puede evitar las restricciones CORS y realizar solicitudes a la API desde la aplicación React. He utilizado el siguiente código en un archivo llamado setUpProxy.js en la carpeta src. **Asegúrese de cambiar el destino para que apunte a la instancia de publicación.**
 
 ```
 const { createProxyMiddleware } = require('http-proxy-middleware');
@@ -51,8 +51,8 @@ module.exports = function(app) {
 };
 ```
 
-También deberá instalar y agregar la variable **http-proxy-middleware** al proyecto.
+También deberá instalar y agregar el **http-proxy-middleware** a su proyecto.
 
 ## Pasos siguientes
 
-[Buscar el formulario que se va a incrustar](./fetch-the-form.md)
+[Buscar el formulario para incrustar](./fetch-the-form.md)

@@ -1,6 +1,6 @@
 ---
 title: Desarrollo de componentes en Adobe Experience Manager Sites
-description: Información general sobre el desarrollo de componentes con Adobe Experience Manager Sites. Incluye una introducción a los cuadros de diálogo, los modelos Sling, los scripts HTL y las bibliotecas del lado del cliente.
+description: Información general sobre el desarrollo de componentes con Adobe Experience Manager Sites. Incluye una introducción a los cuadros de diálogo, los modelos Sling, los scripts HTL y las bibliotecas del cliente.
 version: 6.4, 6.5, Cloud Service
 topic: Development
 feature: Sling Model, HTL or HTML Template Language
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Introducción al desarrollo de componentes
 
-Información general sobre el desarrollo de componentes con Adobe Experience Manager Sites. Incluye una introducción a los cuadros de diálogo, los modelos Sling, los scripts HTL y las bibliotecas del lado del cliente.
+Información general sobre el desarrollo de componentes con Adobe Experience Manager Sites. Incluye una introducción a los cuadros de diálogo, los modelos Sling, los scripts HTL y las bibliotecas del cliente.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32547?quality=12&learn=on)

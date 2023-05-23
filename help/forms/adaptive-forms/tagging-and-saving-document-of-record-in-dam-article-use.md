@@ -1,6 +1,6 @@
 ---
-title: Etiquetado y almacenamiento de AEM Forms DoR en DAM
-description: Este artículo tratará el caso de uso de almacenar y etiquetar el DoR generado por AEM Forms en AEM DAM. El etiquetado del documento se realiza en función de los datos de formulario enviados.
+title: Etiquetado y almacenamiento del DoR de AEM Forms en DAM
+description: En este artículo se describe el caso de uso de almacenamiento y etiquetado del DoR generado por AEM Forms AEM en DAMs. El etiquetado del documento se realiza en función de los datos del formulario enviado.
 feature: Adaptive Forms
 version: 6.4,6.5
 topic: Development
@@ -11,25 +11,25 @@ last-substantial-update: 2019-03-20T00:00:00Z
 source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
 source-wordcount: '611'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Etiquetado y almacenamiento de AEM Forms DoR en DAM {#tagging-and-storing-aem-forms-dor-in-dam}
+# Etiquetado y almacenamiento del DoR de AEM Forms en DAM {#tagging-and-storing-aem-forms-dor-in-dam}
 
-Este artículo tratará el caso de uso de almacenar y etiquetar el DoR generado por AEM Forms en AEM DAM. El etiquetado del documento se realiza en función de los datos de formulario enviados.
+En este artículo se describe el caso de uso de almacenamiento y etiquetado del DoR generado por AEM Forms AEM en DAMs. El etiquetado del documento se realiza en función de los datos del formulario enviado.
 
-Una solicitud habitual de los clientes es almacenar y etiquetar el documento de registro (DoR) generado por AEM Forms en AEM DAM. El etiquetado del documento debe basarse en los datos enviados por el Forms adaptable. Por ejemplo, si el estado de empleo en los datos enviados es &quot;Retirado&quot;, queremos etiquetar el documento con la etiqueta &quot;Retirado&quot; y almacenarlo en DAM.
+Una tarea común de los clientes es almacenar y etiquetar el documento de registro (DoR) generado por AEM Forms AEM en DAM de la. El etiquetado del documento debe basarse en los datos enviados de la Forms adaptable. Por ejemplo, si el estado del empleo en los datos enviados es &quot;Retirado&quot;, queremos etiquetar el documento con la etiqueta &quot;Retirado&quot; y almacenar el documento en DAM.
 
 El caso de uso es el siguiente:
 
-* Un usuario rellena el formulario adaptable. En la forma adaptativa, se captura el estado civil (ex Single) del usuario y el estado laboral (Ex Retirado).
-* Al enviar el formulario, se activa un flujo de trabajo AEM. Este flujo de trabajo etiqueta el documento con el estado civil (único) y el estado de empleo (retirado) y almacena el documento en DAM.
-* Una vez que el documento está almacenado en DAM, el administrador debe poder buscar en el documento mediante estas etiquetas. Por ejemplo, la búsqueda en Único o Retirado obtendría los documentos de referencia adecuados.
+* Un usuario rellena el formulario adaptable. En el formulario adaptable, se captura el estado civil (ex soltero) y el estado laboral (ex jubilado) del usuario.
+* AEM Al enviar el formulario, se activa un flujo de trabajo de. Este flujo de trabajo etiqueta el documento con el estado civil (soltero) y el estado laboral (retirado) y almacena el documento en DAM.
+* Una vez almacenado el documento en DAM, el administrador debe poder buscar en el documento mediante estas etiquetas. Por ejemplo, la búsqueda en Individual o Retirado recuperaría los DoR adecuados.
 
-Para satisfacer este caso de uso, se escribió un paso de proceso personalizado. En este paso, recuperamos los valores de los elementos de datos adecuados de los datos enviados. A continuación, construimos el mosaico de la etiqueta con este valor. Por ejemplo, si el valor del elemento de estado civil es &quot;Single&quot;, el título de la etiqueta se convierte en **Peak:EmployStatus/Single. **Utilizando la API TagManager , encontramos la etiqueta y la aplicamos al DoR.
+Para satisfacer este caso de uso, se ha escrito un paso de proceso personalizado. En este paso recuperamos los valores de los elementos de datos adecuados de los datos enviados. Luego construimos el mosaico de etiqueta usando este valor. Por ejemplo, si el valor del elemento de estado civil es &quot;Single&quot; (soltero), el título de la etiqueta se convierte en **Peak:EmployStatus/Single (soltero o soltera). **Con la API de TagManager , encontramos la etiqueta y la aplicamos al DoR.
 
-El siguiente es el código completo para etiquetar y almacenar el documento de registro en AEM DAM.
+AEM El siguiente es el código completo para etiquetar y almacenar el documento de registro en DAM de la.
 
 ```java
 package com.aemforms.setvalue.core;
@@ -157,26 +157,26 @@ public class TagAndStoreDoRinDAM implements WorkflowProcess
 ```
 
 Para que este ejemplo funcione en su sistema, siga los pasos que se indican a continuación:
-* [Implementar el paquete de usuario Desarrollo con servicio](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+* [Implementar el paquete Develingwithserviceuser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-* [Descargar e implementar el paquete setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Este es el paquete OSGI personalizado que establece las etiquetas de los datos del formulario enviado.
+* [Descargue e implemente el paquete setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Este es el paquete OSGI personalizado que establece las etiquetas de los datos del formulario enviado.
 
-* [Descargue el formulario adaptable de ejemplo](assets/tag-and-store-in-dam-adaptive-form.zip)
+* [Descargar el formulario adaptable de ejemplo](assets/tag-and-store-in-dam-adaptive-form.zip)
 
-* [Vaya a Forms y documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* [Ir a Forms y documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 
-* Haga clic en Crear | Cargar y cargar el archivo tag-and-store-in-dam-adaptive-form.zip
+* Haga clic en Crear | Archivo Cargar y cargar el archivo tag-and-store-in-dam-adaptive-form.zip
 
-* [Importación de los recursos del artículo](assets/tag-and-store-in-dam-assets.zip) uso de AEM administrador de paquetes
+* [Importar los recursos del artículo](assets/tag-and-store-in-dam-assets.zip) AEM uso del administrador de paquetes
 * Abra el [formulario de ejemplo en modo de vista previa](http://localhost:4502/content/dam/formsanddocuments/tagandstoreindam/jcr:content?wcmmode=disabled). **Rellene todos los campos** y envíe el formulario.
-* [Vaya a la carpeta Pico de DAM](http://localhost:4502/assets.html/content/dam/Peak). Debería ver DoR en la carpeta Peak. Compruebe las propiedades del documento. Debe etiquetarse adecuadamente.
-Felicitaciones!! Ha instalado correctamente el ejemplo en su sistema
+* [Vaya a la carpeta Máximo en DAM](http://localhost:4502/assets.html/content/dam/Peak). Debería ver el DoR en la carpeta Pico. Compruebe las propiedades del documento. Debe etiquetarse adecuadamente.
+Felicitaciones!! La muestra se ha instalado correctamente en el sistema
 
-* Exploremos el [flujo de trabajo](http://localhost:4502/editor.html/conf/global/settings/workflow/models/TagAndStoreDoRinDAM.html) que se activa al enviar el formulario.
-* El primer paso en el flujo de trabajo crea un nombre de archivo único concatenando el nombre del solicitante y el condado de residencia.
-* El segundo paso del flujo de trabajo pasa la jerarquía de etiquetas y los elementos de campos de formulario que deben etiquetarse. El paso de proceso extrae el valor de los datos enviados y construye el título de la etiqueta que debe etiquetar el documento.
-* Si desea almacenar DoR en una carpeta diferente de DAM, especifique la ubicación de la carpeta utilizando las propiedades de configuración especificadas en la captura de pantalla siguiente.
+* Vamos a explorar la [workflow](http://localhost:4502/editor.html/conf/global/settings/workflow/models/TagAndStoreDoRinDAM.html) que se activa al enviar el formulario.
+* El primer paso del flujo de trabajo crea un nombre de archivo único concatenando el nombre del solicitante y el condado de residencia.
+* El segundo paso del flujo de trabajo pasa la jerarquía de etiquetas y los elementos de los campos de formulario que deben etiquetarse. El paso Procesar extrae el valor de los datos enviados y construye el título de la etiqueta que necesita etiquetar el documento.
+* Si desea almacenar el documento de registro en una carpeta diferente de DAM, especifique la ubicación de la carpeta mediante las propiedades de configuración especificadas en la captura de pantalla siguiente.
 
-Los otros dos parámetros son específicos de DoR y Ruta del archivo de datos, tal como se especifica en las opciones de envío del formulario adaptable. Asegúrese de que los valores especificados aquí coincidan con los valores especificados en las opciones de envío del formulario adaptable.
+Los otros dos parámetros son específicos del DoR y de la ruta del archivo de datos, tal como se especifican en las opciones de envío del formulario adaptable. Asegúrese de que los valores que especifique aquí coincidan con los valores especificados en las opciones de envío del formulario adaptable.
 
-![Puerta de etiqueta](assets/tag_dor_service_configuration.gif)
+![Etiqueta Dor](assets/tag_dor_service_configuration.gif)

@@ -1,6 +1,6 @@
 ---
-title: Pasos para habilitar el registro de depuración para cualquier clase en el servidor de aplicaciones WebSphere
-description: Configuración del registro de depuración para solucionar problemas relacionados con el servidor de aplicaciones WebSphere
+title: Pasos para habilitar el registro de depuración de cualquier clase en el servidor de aplicaciones WebSphere
+description: Configurar el registro de depuración para solucionar problemas relacionados con el servidor de aplicaciones WebSphere
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# Pasos para habilitar el registro de depuración para cualquier clase en el servidor de aplicaciones de Websphere
+# Pasos para habilitar el registro de depuración de cualquier clase en el servidor de aplicaciones de Websphere
 
-*Este vídeo muestra los pasos para habilitar el registro de depuración para cualquier clase del servidor de aplicaciones de Websphere.*
+*Este vídeo muestra los pasos para habilitar el registro de depuración para cualquier clase en el servidor de aplicaciones de Websphere.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335523?quality=12&learn=on)

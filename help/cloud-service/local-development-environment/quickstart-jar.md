@@ -1,6 +1,6 @@
 ---
-title: Uso del Jar de inicio rápido AEM
-description: Obtenga información sobre cómo instalar y ejecutar una instancia local de Adobe Experience Manager en solo unos minutos con el jar de inicio rápido de AEM. El jar de inicio rápido AEM es un tiempo de ejecución AEM que se puede instalar y ejecutar en un equipo local.
+title: AEM Uso del Jar de inicio rápido de
+description: Obtenga información sobre cómo instalar y ejecutar una instancia local de Adobe Experience Manager AEM en solo unos minutos con el JAR de inicio rápido de la aplicación de inicio rápido de la aplicación de inicio de sesión de la aplicación de inicio rápido de la aplicación de. AEM AEM El jar de Quickstart de es un tiempo de ejecución de la aplicación que se puede instalar y ejecutar en un equipo local.
 topic: Development
 version: Cloud Service
 kt: 4677
@@ -13,10 +13,10 @@ ht-degree: 0%
 ---
 
 
-# Uso del Jar de inicio rápido AEM
+# AEM Uso del Jar de inicio rápido de
 
-Obtenga información sobre cómo instalar y ejecutar una instancia local de Adobe Experience Manager en solo unos minutos con el jar de inicio rápido de AEM. El jar de inicio rápido AEM es un tiempo de ejecución AEM que se puede instalar y ejecutar en un equipo local.
+Obtenga información sobre cómo instalar y ejecutar una instancia local de Adobe Experience Manager AEM en solo unos minutos con el JAR de inicio rápido de la aplicación de inicio rápido de la aplicación de inicio de sesión de la aplicación de inicio rápido de la aplicación de. AEM AEM El jar de Quickstart de es un tiempo de ejecución de la aplicación que se puede instalar y ejecutar en un equipo local.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32551?quality=12&learn=on)
 
-Para obtener una configuración más detallada
+Para una configuración más detallada

@@ -1,6 +1,6 @@
 ---
-title: Revise el módulo ui.frontend de un proyecto de pila completa
-description: Revise el ciclo de vida de desarrollo, implementación y envío del front-end de un proyecto AEM Sites de pila completa basado en maven.
+title: Revise el módulo ui.frontend del proyecto de pila completa
+description: Revise el desarrollo front-end, la implementación y el ciclo de vida de entrega de un proyecto de AEM Sites full-stack basado en Maven.
 version: Cloud Service
 type: Tutorial
 feature: AEM Project Archetype, Cloud Manager, CI-CD Pipeline
@@ -11,64 +11,64 @@ kt: 10689
 mini-toc-levels: 1
 index: y
 recommendations: noDisplay, noCatalog
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+exl-id: 65e8d41e-002a-4d80-a050-5366e9ebbdea
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 4%
 
 ---
 
+# AEM Revise el módulo &#39;ui.frontend&#39; del proyecto de la pila completa de la {#aem-full-stack-ui-frontent}
 
-# Revise el módulo &quot;ui.frontend&quot; del proyecto de AEM de pila completa {#aem-full-stack-ui-frontent}
-
-En este capítulo analizamos el desarrollo, la implementación y la entrega de artefactos front-end de un proyecto de AEM de pila completa, centrándonos en el módulo &quot;ui.frontend&quot; del __Proyecto WKND Sites__.
+AEM En, en este capítulo revisamos el desarrollo, la implementación y el envío de los artefactos front-end de un proyecto de pila completa, centrándonos en el módulo &quot;ui.frontend&quot; del __Proyecto de WKND Sites__.
 
 
 ## Objetivos {#objective}
 
-* Comprender la compilación y el flujo de implementación de artefactos front-end en un proyecto AEM de pila completa
-* Revise el AEM del proyecto de pila completa `ui.frontend` módulo [webpack](https://webpack.js.org/) configuraciones
-* Proceso de generación de AEM biblioteca de cliente (también conocida como clientlibs)
+* AEM Comprender el flujo de generación e implementación de artefactos front-end en un proyecto de pila completa de la
+* AEM Revise el proyecto de pila completa de la `ui.frontend` del módulo [webpack](https://webpack.js.org/) configuraciones
+* AEM proceso de generación de la biblioteca de cliente (también conocida como clientlibs)
 
-## Flujo de implementación front-end para AEM proyectos de pila completa y Creación rápida de sitios
+## AEM Flujo de implementación front-end para proyectos de creación rápida de sitios y de pila completa de los que se ha realizado un seguimiento de la aplicación
 
 >[!IMPORTANT]
 >
->En este vídeo se explica y muestra el flujo del front-end para ambos **Creación rápida y de pila completa de sitios** proyectos para delinear la sutil diferencia en el modelo de creación, implementación y entrega de recursos front-end.
+>En este vídeo se explica y muestra el flujo front-end para ambos **Creación rápida y completa de sitios** proyectos para delinear la sutil diferencia en la generación, implementación y modelo de entrega de recursos front-end.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409344?quality=12&learn=on)
 
 ## Requisitos previos {#prerequisites}
 
 
-* Clonar el [AEM proyecto WKND Sites](https://github.com/adobe/aem-guides-wknd)
-* Se creó e implementó el proyecto WKND Sites AEM clonado para AEM as a Cloud Service.
+* Clonar el [AEM Proyecto de sitios WKND de WKND](https://github.com/adobe/aem-guides-wknd)
+* AEM AEM Se creó e implementó el proyecto clonado de WKND Sites de WKND para as a Cloud Service.
 
-Consulte el proyecto AEM WKND Site [README.md](https://github.com/adobe/aem-guides-wknd/blob/main/README.md) para obtener más información.
+AEM Consulte el proyecto del sitio de WKND de la [README.md](https://github.com/adobe/aem-guides-wknd/blob/main/README.md) para obtener más información.
 
-## AEM flujo de artefactos del front-end del proyecto de pila completa {#flow-of-frontend-artifacts}
+## AEM Flujo de artefactos front-end del proyecto de pila completa {#flow-of-frontend-artifacts}
 
-A continuación se muestra una representación de alto nivel de la variable __desarrollo, implementación y entrega__ flujo de los artefactos front-end en un proyecto de AEM de pila completa.
+A continuación se presenta una representación de alto nivel del __desarrollo, implementación y entrega__ AEM flujo de los artefactos front-end en un proyecto de pila completa de la.
 
 ![Desarrollo, implementación y entrega de artefactos front-end](assets/Dev-Deploy-Delivery-AEM-Project.png)
 
 
-Durante la fase de desarrollo, los cambios del front-end como el estilo y la renovación de marca se realizan actualizando los archivos CSS y JS del `ui.frontend/src/main/webpack` carpeta. A continuación, durante la hora de creación, la variable [webpack](https://webpack.js.org/) module-bundler y maven plugin convierten estos archivos en clientlibs AEM optimizados en `ui.apps` módulo.
+Durante la fase de desarrollo, los cambios del front-end, como el estilo y el cambio de marca, se realizan actualizando los archivos CSS y JS de `ui.frontend/src/main/webpack` carpeta. A continuación, durante la compilación, la variable [webpack](https://webpack.js.org/) AEM module-bundler y el complemento de maven convierten estos archivos en clientlibs optimizados de la lista de distribución de la aplicación en la que se encuentran `ui.apps` módulo.
 
-Los cambios del front-end se implementan en AEM entorno as a Cloud Service al ejecutar el [__Pila completa__ canalización en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html).
+AEM Los cambios del front-end se implementan en el entorno as a Cloud Service cuando se ejecuta el [__De pila completa__ canalización en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html).
 
-Los recursos front-end se entregan a los exploradores web a través de rutas de URI que comienzan por `/etc.clientlibs/`, y se almacenan normalmente en la caché de AEM Dispatcher y CDN.
+Los recursos front-end se entregan a los navegadores web a través de rutas URI que comienzan por `/etc.clientlibs/`AEM , y suelen almacenarse en la caché de Dispatcher y CDN de la red de distribución de datos (CDN) de la.
 
 
 >[!NOTE]
 >
-> Del mismo modo, en la variable __AEM Recorrido de creación rápida de sitios__, el [cambios front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/customize-theme.html) se implementan en AEM entorno as a Cloud Service ejecutando el __Front-End__ canalización, consulte [Configurar la canalización](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup.html)
+> Del mismo modo, en la variable __AEM Recorrido de creación rápida de sitios de__, el [cambios del front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/customize-theme.html) AEM se implementan en el entorno as a Cloud Service de ejecutando el __Front-End__ canalización, consulte [Configurar la canalización](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup.html)
 
-### Revisar configuraciones de webpack en el proyecto WKND Sites {#development-frontend-webpack-clientlib}
+### Revisar las configuraciones de Webpack en el proyecto de WKND Sites {#development-frontend-webpack-clientlib}
 
-* Hay tres __webpack__ Archivos de configuración utilizados para empaquetar los recursos del front-end de los sitios WKND.
+* Hay tres __webpack__ Archivos de configuración utilizados para agrupar los recursos front-end de WKND Sites.
 
-   1. `webpack.common` - Contiene el __frecuentes__ configuración para instruir la optimización y agrupación de recursos WKND. La variable __output__ indica a dónde emitir los archivos consolidados (también conocidos como paquetes JavaScript, pero no confundirlos con AEM paquetes OSGi) que crea. El nombre predeterminado está establecido en `clientlib-site/js/[name].bundle.js`.
+   1. `webpack.common` - Contiene el __común__ para instruir el agrupamiento de recursos y la optimización de WKND. El __salida__ AEM indica a dónde emitir los archivos consolidados (también conocidos como paquetes JavaScript, pero que no se deben confundir con paquetes OSGi de la aplicación) que crea. El nombre predeterminado se establece en `clientlib-site/js/[name].bundle.js`.
 
    ```javascript
        ...
@@ -79,7 +79,7 @@ Los recursos front-end se entregan a los exploradores web a través de rutas de 
        ...    
    ```
 
-   1. `webpack.dev.js` contiene el __desarrollo__ para webpack-dev-serve y señala a la plantilla de HTML que se va a usar. También contiene una configuración proxy para una instancia de AEM que se ejecuta en `localhost:4502`.
+   1. `webpack.dev.js` contiene el __desarrollo__ para el webpack-dev-serve y señala a la plantilla de HTML que se va a utilizar. También contiene una configuración proxy para una instancia de AEM que se ejecuta en `localhost:4502`.
 
    ```javascript
        ...
@@ -107,7 +107,7 @@ Los recursos front-end se entregan a los exploradores web a través de rutas de 
    ```
 
 
-* Los recursos agrupados se mueven al `ui.apps` módulo que utiliza [aem-clientlib-generator](https://www.npmjs.com/package/aem-clientlib-generator) usando la configuración administrada en la `clientlib.config.js` archivo.
+* Los recursos agrupados se mueven al `ui.apps` módulo que utiliza [aem-clientlib-generator](https://www.npmjs.com/package/aem-clientlib-generator) , utilizando la configuración gestionada en el `clientlib.config.js` archivo.
 
 ```javascript
     ...
@@ -127,18 +127,18 @@ Los recursos front-end se entregan a los exploradores web a través de rutas de 
     ...
 ```
 
-* La variable __frontend-maven-plugin__ from `ui.frontend/pom.xml` organiza el agrupamiento de webpack y la generación de clientlib durante AEM compilación del proyecto.
+* El __frontend-maven-plugin__ de `ui.frontend/pom.xml` AEM organiza el agrupamiento de Webpack y la generación clientlib durante la generación de proyectos de.
 
 `$ mvn clean install -PautoInstallSinglePackage`
 
-### Implementación para AEM as a Cloud Service {#deployment-frontend-aemaacs}
+### AEM Implementación en as a Cloud Service {#deployment-frontend-aemaacs}
 
-La variable [__Pila completa__ canalización](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?#full-stack-pipeline) implementa estos cambios en un entorno as a Cloud Service AEM.
+El [__De pila completa__ canalización](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?#full-stack-pipeline) AEM implementa estos cambios en un entorno as a Cloud Service de.
 
 
-### Envío desde AEM as a Cloud Service {#delivery-frontend-aemaacs}
+### AEM Envío desde el as a Cloud Service {#delivery-frontend-aemaacs}
 
-Los recursos front-end implementados mediante la canalización de pila completa se entregan desde el sitio AEM a los exploradores web como `/etc.clientlibs` archivos. Puede verificarlo visitando el [sitio WKND alojado públicamente](https://wknd.site/content/wknd/us/en.html) y viendo el origen de la página web.
+AEM Los recursos front-end implementados a través de la canalización de pila completa se entregan desde el sitio a los navegadores web de la siguiente manera: `/etc.clientlibs` archivos. Puede verificarlo en la página de [sitio WKND alojado públicamente](https://wknd.site/content/wknd/us/en.html) y ver el origen de la página web.
 
 ```html
     ....
@@ -152,8 +152,8 @@ Los recursos front-end implementados mediante la canalización de pila completa 
 
 ## Enhorabuena. {#congratulations}
 
-Felicitaciones, ha revisado el módulo ui.frontend del proyecto de pila completa
+Felicidades, ha revisado el módulo ui.frontend del proyecto de pila completa
 
 ## Pasos siguientes {#next-steps}
 
-En el capítulo siguiente, [Actualizar proyecto para utilizar canalización de front-end](update-project.md), actualizará el proyecto WKND Sites de AEM para habilitarlo para el contrato de canalización front-end.
+En el capítulo siguiente, [Actualizar proyecto para utilizar canalización front-end](update-project.md)AEM , actualizará el proyecto de WKND Sites de la para habilitarlo para el contrato de canalización front-end.

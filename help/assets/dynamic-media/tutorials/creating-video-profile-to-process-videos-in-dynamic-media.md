@@ -1,5 +1,5 @@
 ---
-title: Creación de perfiles de vídeo en AEM Dynamic Media
+title: AEM Creación de perfiles de vídeo en Dynamic Media de la
 description: Configuración de perfiles de vídeo para procesar vídeos en Dynamic Media
 version: Cloud Service
 role: Developer
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# Creación de perfiles de vídeo en AEM Dynamic Media
+# AEM Creación de perfiles de vídeo en Dynamic Media de la
 
-Este vídeo explica el proceso de creación de perfiles de vídeo para procesar vídeos en Dynamic Media.
+Este vídeo muestra el proceso de creación de un perfil de vídeo para procesar vídeos en Dynamic Media.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335382?quality=12&learn=on)

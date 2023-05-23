@@ -1,6 +1,6 @@
 ---
 title: Pasos para habilitar el registro de depuración para cualquier clase en el servidor de aplicaciones JBoss
-description: Configure el registro de depuración para solucionar problemas relacionados con el servidor de aplicaciones JBoss
+description: Configurar el registro de depuración para solucionar problemas relacionados con el servidor de aplicaciones JBoss
 type: Troubleshooting
 role: Admin
 level: Intermediate

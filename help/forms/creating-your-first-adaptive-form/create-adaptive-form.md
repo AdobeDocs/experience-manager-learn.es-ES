@@ -1,6 +1,6 @@
 ---
 title: Creación de formularios adaptables
-description: En la parte 1 crearemos Formulario adaptable, agregaremos y configuraremos la barra de herramientas con los botones adecuados.
+description: En la Parte 1 crearemos un formulario adaptable, añadiremos y configuraremos la barra de herramientas con los botones adecuados.
 feature: Adaptive Forms
 kt: 4208
 thumbnail: 22173.jpg
@@ -19,10 +19,10 @@ ht-degree: 14%
 
 Crearemos un formulario adaptable basado en la plantilla creada en la lección anterior y configuraremos la barra de herramientas con los botones adecuados.
 
-**Crear su primer formulario adaptable**
+**Creación de su primer formulario adaptable**
 
 >[!VIDEO](https://video.tv.adobe.com/v/22173?quality=12&learn=on)
 
 ## Pasos siguientes
 
-[Agregar paneles secundarios al panel raíz](./configuring-root-panel-and-adding-child-panels.md)
+[Añadir paneles secundarios al panel raíz](./configuring-root-panel-and-adding-child-panels.md)

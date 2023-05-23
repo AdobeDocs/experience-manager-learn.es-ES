@@ -1,7 +1,7 @@
 ---
-title: Mejoras en el Editor de reglas en AEM Forms
+title: Mejoras del editor de reglas en AEM Forms
 seo-title: Rule Editor Improvements in AEM Forms
-description: El editor de reglas permite a los usuarios agregar lógica a AEM Forms adaptable. AEM 6.3 mejora el editor de reglas de varias maneras, lo que facilita y acelera la adición de inteligencia tanto para los usuarios técnicos como para los no técnicos.
+description: AEM El editor de reglas permite a los usuarios añadir lógica a los Forms adaptables de la. AEM La versión 6.3 de mejora el editor de reglas de varias formas, lo que facilita y acelera que los usuarios técnicos y no técnicos agreguen inteligencia.
 seo-description: The rule editor enables users to add logic to AEM Adaptive Forms. AEM 6.3 improves the rule editor in several ways making it easier and faster for both technical and non-technical users alike to add intelligence.
 uuid: 35e8cc7c-04cf-43b4-bbc7-41bfd909cfba
 feature: Adaptive Forms
@@ -23,19 +23,19 @@ ht-degree: 0%
 
 ---
 
-# Mejoras en el Editor de reglas en AEM Forms {#rule-editor-improvements-in-aem-forms}
+# Mejoras del editor de reglas en AEM Forms {#rule-editor-improvements-in-aem-forms}
 
-El editor de reglas permite a los usuarios agregar lógica a AEM Forms adaptable. AEM 6.3 mejora el editor de reglas de varias maneras, lo que facilita y acelera la adición de inteligencia tanto para los usuarios técnicos como para los no técnicos.
+AEM El editor de reglas permite a los usuarios añadir lógica a los Forms adaptables de la. AEM La versión 6.3 de mejora el editor de reglas de varias formas, lo que facilita y acelera que los usuarios técnicos y no técnicos agreguen inteligencia.
 
 >[!VIDEO](https://video.tv.adobe.com/v/19653?quality=12&learn=on)
 
-**Algunas de las mejoras realizadas en el Editor de reglas son:**
+**Algunas de las mejoras del Editor de reglas son las siguientes:**
 
-* Los componentes de formulario de varios valores muestran automáticamente las opciones de los componentes
-* La capacidad de especificar un servicio web WSDL en el editor visual
-* La capacidad de desactivar reglas
+* Los componentes de formulario de varios valores muestran automáticamente las opciones del componente
+* Capacidad para especificar un servicio web WSDL en el editor visual
+* La capacidad para deshabilitar reglas
 * Mejoras en el editor de código como:
 * Resaltado de sintaxis
    * Sangría automática
-   * Sugerencias y sugerencias para objetos, funciones y propiedades del formulario
-   * Finalización automática de los nombres de componentes y funciones comunes de JavaScript
+   * Sugerencias para objetos, funciones y propiedades de formulario
+   * Finalización automática de nombres de componentes y funciones comunes de Javascript

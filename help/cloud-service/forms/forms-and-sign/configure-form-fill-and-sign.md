@@ -1,6 +1,6 @@
 ---
-title: Configuración del formulario adaptable para que el usuario lo rellene y lo firme
-description: En esta situación, la persona que rellena el formulario y la persona que lo firma son la misma persona.
+title: Configurar formulario adaptable para que el usuario lo rellene y lo firme
+description: En esta situación, la persona que rellena el formulario y el firmante son la misma persona.
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 ---
 
-# Configurar el formulario adaptable para el escenario de relleno y firma
+# Configuración del formulario adaptable para el escenario de relleno y firma
 
 
-En este vídeo configuramos el formulario en el que la persona que rellena el formulario y la firma son la misma persona
+En este vídeo configuramos el formulario en el que la persona que lo rellena y lo firma son la misma
 
 >[!VIDEO](https://video.tv.adobe.com/v/332439?quality=12&learn=on)

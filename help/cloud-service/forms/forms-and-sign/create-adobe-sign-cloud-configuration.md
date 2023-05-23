@@ -1,6 +1,6 @@
 ---
 title: Crear Cloud Service de configuración de Acrobat Sign Cloud
-description: Cree la integración de AEM Forms y Acrobat Sign mediante la configuración de los servicios de nube.
+description: Cree la integración de AEM Forms y Acrobat Sign con la configuración de los servicios en la nube.
 solution: Experience Manager,Experience Manager Forms
 type: Documentation
 role: Developer
@@ -18,21 +18,21 @@ ht-degree: 0%
 
 ---
 
-# Crear la configuración de Acrobat Sign Cloud
+# Crear configuración de nube de Acrobat Sign
 
-La configuración de Cloud services en AEM le permite crear integración entre AEM y otras aplicaciones de la nube.
+AEM AEM La configuración de servicios en la nube de le permite crear servicios de integración entre y otras aplicaciones de la nube de.
 
-El siguiente vídeo le guiará por los pasos necesarios para crear la configuración de servicios de nube para integrar AEM con Acrobat Sign
+AEM El siguiente vídeo le guiará por los pasos necesarios para crear la configuración de servicios en la nube para la integración con Acrobat Sign para que se integre de forma rápida y sencilla con el servicio en la nube para su integración con la plataforma de datos de
 
 >[!VIDEO](https://video.tv.adobe.com/v/332437?quality=12&learn=on)
 
 ## Solución de problemas
 
-Si se produce un error al configurar la configuración de nube de Abobe Sign, se pueden realizar los siguientes pasos para solucionar problemas
-* Asegúrese de que la URL de redirección especificada en la aplicación de API de Acrobat Sign tenga el formato siguiente
+Si se produce un error al configurar la clonación de nube de Adobe Sign, se pueden realizar los siguientes pasos para solucionar los problemas
+* Asegúrese de que la URL de redireccionamiento especificada en la aplicación API de Acrobat Sign tenga el siguiente formato
 &lt;your instance=&quot;&quot; name=&quot;&quot;>/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/&lt;container>.
-Por ejemplo: https://author-p24107-e32034.adobeaemcloud.com/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/FormsCS. FormsCS es el nombre del contenedor que va a contener la configuración de nube
-* Asegúrese de que la URL oAuth sea correcta
-* Compruebe el ID de cliente y el secreto del cliente
-* Probar modo de ventana incógnito
+Por ejemplo: https://author-p24107-e32034.adobeaemcloud.com/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/FormsCS. FormsCS es el nombre del contenedor que contendrá la configuración de la nube
+* Asegúrese de que la URL de oAuth sea correcta
+* Compruebe el ID de cliente y el secreto de cliente
+* Pruebe el modo de ventana de incógnito
 

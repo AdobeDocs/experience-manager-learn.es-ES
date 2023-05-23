@@ -16,9 +16,9 @@ ht-degree: 14%
 
 ![Assets Essentials](./assets/overview/hero.png)
 
-Experience Manager Assets Essentials proporciona una interfaz de usuario optimizada para una administración y colaboración de recursos livianas.
+Experience Manager Assets Essentials proporciona una interfaz de usuario optimizada para una colaboración y administración de recursos ligeras.
 
-Consulte estos vídeos sobre cómo utilizar Assets Essentials para gestionar sus recursos y cómo se puede integrar con Adobe Recorrido Orchestrator!
+Consulte estos vídeos sobre cómo utilizar Assets Essentials para gestionar sus recursos y cómo se puede integrar con Adobe Recorrido Orchestrator.
 
 ## Más información sobre Assets Essentials
 
@@ -33,7 +33,7 @@ Consulte estos vídeos sobre cómo utilizar Assets Essentials para gestionar sus
       </a>
    </div>
    <p>
-      <em>¡Conozca los conceptos básicos de Assets Essentials!</em>
+      <em>Conozca los conceptos básicos de Assets Essentials.</em>
    </p>
 </td>
 <td>
@@ -54,12 +54,12 @@ Consulte estos vídeos sobre cómo utilizar Assets Essentials para gestionar sus
    <img alt="Adobe Journey Optimizer" src="./assets/overview/adobe-journey-optimizer.png" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html">
-      <strong>Integración con Adobe Journey Optimizer</strong>
+      <a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html?lang=es">
+      <strong>Integración de Adobe Journey Optimizer</strong>
       </a>
    </div>
    <p>
-      <em>Descubra cómo Assets Essentials se integra con Adobe Journey Optimizer!</em>
+      <em>Descubra cómo se integra Assets Essentials con Adobe Journey Optimizer.</em>
    <p>
 </td>
 </table>

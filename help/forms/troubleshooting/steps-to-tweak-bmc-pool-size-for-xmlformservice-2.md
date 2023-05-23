@@ -1,6 +1,6 @@
 ---
-title: Pasos para ajustar el tamaño del grupo bmc para el servicio XMLForm (2 de 2)
-description: Configuración de los parámetros de XMLFormService
+title: Pasos para modificar el tamaño del grupo bmc para el servicio XMLForm (2 de 2)
+description: Configurar parámetros de XMLFormService
 type: Troubleshooting
 role: Developer
 level: Intermediate
@@ -17,8 +17,8 @@ ht-degree: 0%
 ---
 
 
-# Pasos para ajustar el tamaño del grupo bmc para el servicio XMLForm (2 de 2)
+# Pasos para modificar el tamaño del grupo bmc para el servicio XMLForm (2 de 2)
 
-*Este vídeo muestra los pasos para ajustar el tamaño del grupo bmc para XMLFormService(2 de 2).*
+*Este vídeo muestra los pasos para modificar el tamaño del grupo bmc para XMLFormService(2 de 2).*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335553?quality=12&learn=on)

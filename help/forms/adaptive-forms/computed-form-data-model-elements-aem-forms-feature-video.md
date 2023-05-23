@@ -1,6 +1,6 @@
 ---
-title: Creación de elementos del modelo de datos de formulario computado en AEM Forms
-description: Creación de elementos del modelo de datos de formulario computado
+title: Creación de elementos del modelo de datos de formulario calculado en AEM Forms
+description: Creación de elementos del modelo de datos de formulario calculado
 feature: Workflow
 version: 6.4,6.5
 topic: Development
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 ---
 
-# Creación de elementos del modelo de datos de formulario computado en AEM Forms{#creating-computed-form-data-model-elements-in-aem-forms}
+# Creación de elementos del modelo de datos de formulario calculado en AEM Forms{#creating-computed-form-data-model-elements-in-aem-forms}
 
-Los elementos del modelo de datos de formulario computado permiten almacenar el resultado de la manipulación en uno o varios elementos del modelo de datos de formulario. Por ejemplo, puede que desee calcular y almacenar el salario mensual realizando una operación matemática en el campo de salario. Para ello, dividirá el salario por 12 y almacenará el resultado en un elemento de modelo de datos de formulario calculado llamado mensualSalary.
+Los elementos calculados del modelo de datos de formulario permiten almacenar el resultado de la manipulación en uno o varios elementos del modelo de datos de formulario. Por ejemplo, es posible que desee calcular y almacenar el salario mensual realizando una operación matemática en el campo salario. Para ello, dividirá el salario por 12 y almacenará el resultado en un elemento del modelo de datos de formulario calculado llamado monthSalary.
 
-Otro ejemplo para crear un modelo de datos de formulario calculado es concatenar dos o más elementos del modelo de datos de formulario. Por ejemplo, puede concatenar elementos del modelo de datos de formulario zip y de estado con un guion entre los dos elementos.
+Otro ejemplo para crear un modelo de datos de formulario calculado es concatenar dos o más elementos del modelo de datos de formulario. Por ejemplo, puede concatenar elementos del modelo de datos de formulario de estado y zip con un guión entre los dos elementos.
 
-La siguiente captura de pantalla muestra los elementos calculados Estado y Zip y salario mensual
+La siguiente captura de pantalla muestra los elementos calculados StateAndZip y monthSalary
 
 ![computedfdmelement](assets/computedfdmelement.gif)
 
@@ -29,6 +29,6 @@ La siguiente captura de pantalla muestra los elementos calculados Estado y Zip y
 
 >[!VIDEO](https://video.tv.adobe.com/v/23855?quality=12&learn=on)
 
-### Creación de un elemento computado State y Zip
+### Creando elemento calculado StateAndZip
 
 >[!VIDEO](https://video.tv.adobe.com/v/23856?quality=12&learn=on)

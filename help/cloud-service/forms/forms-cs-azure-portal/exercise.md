@@ -1,6 +1,6 @@
 ---
-title: Sencillo ejercicio para comprobar su comprensión del curso
-description: Agregue columnas adicionales a la tabla y atributo adicional a los criterios de búsqueda
+title: Ejercicio sencillo para probar su comprensión del curso
+description: Añada columnas adicionales a la tabla y atributos adicionales a los criterios de búsqueda
 feature: Adaptive Forms
 type: Documentation
 role: Developer

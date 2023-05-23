@@ -1,25 +1,26 @@
 ---
 title: Vinculación XDP mediante el servicio de ensamblador
-description: Uso del servicio Assembler en AEM Forms para unir xdp
+description: Usar el servicio Assembler en AEM Forms para unir xdp
 feature: Assembler
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Experienced
 last-substantial-update: 2022-12-19T00:00:00Z
-source-git-commit: 8f17e98c56c78824e8850402e3b79b3d47901c0b
+exl-id: e116038f-7d86-41ee-b1b0-7b8569121d6d
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 2%
 
 ---
 
-# Vinculación XDP con servicio de ensamblador
+# Configuración XDP mediante el servicio de ensamblador
 
-Este artículo le proporciona los recursos para demostrar la capacidad de unir documentos xdp mediante el servicio de ensamblador.
-Se escribió el siguiente código jsp para insertar un subformulario llamado **address** desde el documento xdp llamado address.xdp en un punto de inserción llamado **address** en el documento master.xdp. El xdp resultante se guardó en la carpeta raíz de la instalación de AEM.
+Este artículo proporciona los recursos para mostrar la capacidad de unir documentos xdp mediante el servicio Assembler.
+El siguiente código jsp se escribió para insertar un subformulario llamado **dirección** desde un documento xdp llamado address.xdp hasta un punto de inserción llamado **dirección** en el documento master.xdp. AEM El xdp resultante se guardó en la carpeta raíz de la instalación de la.
 
-El servicio del ensamblador se basa en documentos DDX válidos para describir la manipulación de documentos PDF. Puede consultar la [Documento de referencia DDX aquí](assets/ddxRef.pdf).La página 40 tiene información sobre la vinculación de xdp.
+El servicio Assembler se basa en documentos DDX válidos para describir la manipulación de documentos de PDF. Puede consultar el [Documento de referencia DDX aquí](assets/ddxRef.pdf).La página 40 contiene información sobre la vinculación xdp.
 
 ```java
     javax.servlet.http.Part ddxFile = request.getPart("xdpstitching.ddx");
@@ -51,7 +52,7 @@ El servicio del ensamblador se basa en documentos DDX válidos para describir la
     finalXDP.copyToFile(new java.io.File("stitched.xdp"));
 ```
 
-El archivo DDX para insertar fragmentos en otro xdp se muestra a continuación. El DDX inserta el subformulario  **address** de address.xdp al punto de inserción llamado **address** en el archivo master.xdp. El documento resultante llamado **stitched.xdp** se guarda en el sistema de archivos.
+A continuación, se muestra el archivo DDX para insertar fragmentos en otro xdp. El DDX inserta el subformulario  **dirección** desde address.xdp hasta el punto de inserción llamado **dirección** en master.xdp. El documento resultante denominado **stitched.xdp** se guarda en el sistema de archivos.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?> 
@@ -64,25 +65,25 @@ El archivo DDX para insertar fragmentos en otro xdp se muestra a continuación. 
 </DDX>
 ```
 
-Para que esta capacidad funcione en el servidor AEM
+AEM Para que esta capacidad funcione en el servidor de la
 
-* Descargar [Paquete de conexión XDP](assets/xdp-stitching.zip) al sistema local.
-* Cargue e instale el paquete mediante el [gestor de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
-* [Extraer el contenido de este archivo zip](assets/xdp-and-ddx.zip) para obtener el archivo xdp y DDX de muestra
+* Descargar [Paquete de vinculación XDP](assets/xdp-stitching.zip) a su sistema local.
+* Cargue e instale el paquete utilizando [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
+* [Extraiga el contenido de este archivo zip](assets/xdp-and-ddx.zip) para obtener el archivo xdp y DDX de muestra
 
-**Después de instalar el paquete tendrá que lista de permitidos las siguientes URL en el Adobe Granite CSRF Filter.**
+**Después de instalar el paquete tendrá que lista de permitidos las siguientes URL en Adobe Granite CSRF Filter.**
 
-1. Siga los pasos que se indican a continuación para realizar la lista de permitidos de las rutas mencionadas anteriormente.
-1. [Iniciar sesión en configMgr](http://localhost:4502/system/console/configMgr)
-1. Buscar el filtro de Adobe Granite CSRF
+1. Siga los pasos que se mencionan a continuación para lista de permitidos las rutas mencionadas anteriormente.
+1. [Inicie sesión en configMgr](http://localhost:4502/system/console/configMgr)
+1. Búsqueda de Adobe Granite CSRF Filter
 1. Añada la siguiente ruta en las secciones excluidas y guarde `/content/AemFormsSamples/assemblerservice`
-1. Buscar &quot;Filtro de referente de Sling&quot;
-1. Marque la casilla de verificación &quot;Permitir vacío&quot;. (Esta configuración solo debe utilizarse con fines de prueba) Existen varias formas de probar el código de muestra. Lo más rápido y sencillo es usar la aplicación Postman. Postman le permite realizar solicitudes de POST al servidor. Instale la aplicación de Postman en su sistema.
-Inicie la aplicación e introduzca la siguiente URL para probar la API de datos de exportación http://localhost:4502/content/AemFormsSamples/assemblerservice.html
+1. Busque &quot;Filtro de referente de Sling&quot;
+1. Marque la casilla &quot;Permitir vacío&quot;. (Esta configuración solo debe ser para fines de prueba) Existen varias formas de probar el código de muestra. La forma más rápida y sencilla de usar una aplicación de Postman es. Postman le permite realizar solicitudes de POST al servidor. Instale la aplicación de Postman en su sistema.
+Inicie la aplicación e introduzca la siguiente URL para probar la API de exportación de datos http://localhost:4502/content/AemFormsSamples/assemblerservice.html
 
-Proporcione los siguientes parámetros de entrada como se especifica en la captura de pantalla. Puede utilizar los documentos de ejemplo que descargó anteriormente,
+Proporcione los siguientes parámetros de entrada según se especifican en la captura de pantalla. Puede utilizar los documentos de ejemplo que descargó anteriormente,
 ![xdp-stitch-postman](assets/xdp-stitching-postman.png)
 
 >[!NOTE]
 >
->Asegúrese de que la instalación de AEM Forms se haya completado. Todos sus paquetes deben estar en estado activo.
+>Asegúrese de que la instalación de AEM Forms haya finalizado. Todos los paquetes deben estar en estado activo.

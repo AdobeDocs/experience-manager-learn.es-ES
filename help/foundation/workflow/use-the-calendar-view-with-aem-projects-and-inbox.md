@@ -1,7 +1,7 @@
 ---
-title: Usar la vista de calendario con AEM proyectos y la bandeja de entrada
+title: AEM Utilizar la vista Calendario con proyectos y bandeja de entrada de la
 seo-title: Use Calendar View with AEM Projects and Inbox
-description: AEM Vista de calendario realiza el seguimiento de proyectos y tareas en una vista de calendario para facilitar la gestión y programación de los proyectos. Con la vista Calendario, el usuario tendría una visibilidad general sobre los proyectos y tareas que están actualmente en curso, planificados, pendientes pronto y vencidos.
+description: AEM La Vista de calendario realiza un seguimiento de los proyectos y las tareas en una vista de calendario para facilitar la programación y la administración de proyectos. Con la vista Calendario, el usuario tendría una visibilidad general de los proyectos y las tareas que están actualmente en curso, planificados, con vencimiento pronto y con vencimiento anterior.
 seo-description: AEM's Calendar View tracks projects and tasks in a calendar view for easier project management and scheduling. With Calendar view, user would have an overall visibility over projects and tasks that are currently in progress, planned, due soon and past due.
 version: 6.4, 6.5
 feature: Workflow, Projects
@@ -22,16 +22,16 @@ ht-degree: 0%
 ---
 
 
-# Usar la vista de calendario con AEM proyectos y la bandeja de entrada
+# AEM Utilizar la vista Calendario con proyectos y bandeja de entrada de la
 
-AEM Vista de calendario realiza el seguimiento de proyectos y tareas en una vista de calendario para facilitar la gestión y programación de los proyectos. Con la vista Calendario, el usuario tendría una visibilidad general sobre los proyectos y tareas que están actualmente en curso, planificados, pendientes pronto y vencidos.
+AEM La Vista de calendario realiza un seguimiento de los proyectos y las tareas en una vista de calendario para facilitar la programación y la administración de proyectos. Con la vista Calendario, el usuario tendría una visibilidad general de los proyectos y las tareas que están actualmente en curso, planificados, con vencimiento pronto y con vencimiento anterior.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16804?quality=12&learn=on)
 
-Vista de calendario ayuda a administrar mejor los proyectos y las tareas con las siguientes capacidades:
+La vista de calendario ayuda a administrar mejor los proyectos y las tareas con las siguientes capacidades:
 
-* El usuario puede ver la lista de proyectos que se le han asignado y le permite desplazarse al proyecto desde la vista de calendario. El administrador puede ver todos los proyectos.
-* capacidad de intervalo de fechas personalizable para supervisar el progreso de los proyectos en un intervalo de tiempo determinado.
+* El usuario puede ver la lista de proyectos asignados a él y le permite navegar al proyecto desde la vista de calendario. El administrador puede ver todos los proyectos.
+* capacidad de intervalo de fechas personalizable para monitorizar el progreso de los proyectos en un intervalo de tiempo determinado.
 * el usuario puede marcar un proyecto o tarea como completado, retrasado o a tiempo.
 * el usuario puede agregar una descripción a un proyecto en la vista de calendario.
-* el usuario puede añadir el nivel de prioridad a los proyectos y tareas.
+* El usuario puede agregar un nivel de prioridad a los proyectos y tareas.

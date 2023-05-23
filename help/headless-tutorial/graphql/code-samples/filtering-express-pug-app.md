@@ -1,6 +1,6 @@
 ---
-title: Filtrado de la aplicación Express
-description: Una aplicación Express sencilla que filtra las aventuras de WKND modeladas con fragmentos de contenido.
+title: Filtrado de aplicaciones Express
+description: Una aplicación Express simple que filtra aventuras WKND modeladas con fragmentos de contenido.
 version: Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
@@ -12,21 +12,21 @@ index: false
 hide: true
 hidefromtoc: true
 recommendations: noCatalog, noDisplay
-source-git-commit: ac2b3a766caea1013165aedd3478bf859212cc89
+exl-id: b64f33ab-cd18-4cbc-a57e-baf505f1442a
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 0%
 
 ---
 
+# Filtrado de aplicaciones Express
 
-# Filtrado de la aplicación Express
+AEM Explore la capacidad de las API de GraphQL sin encabezado de para filtrar datos mediante una [Express](https://expressjs.com/) y [Pug](https://pugjs.org/) aplicación. Esta aplicación rápida crea una lista de las aventuras de WKND que se pueden filtrar por Tipo de actividad.
 
-Explorar AEM API de GraphQL sin encabezado capacidad para filtrar datos mediante un [Express](https://expressjs.com/) y [Pug](https://pugjs.org/) aplicación. Esta aplicación Express crea una lista de aventuras WKND filtrables por tipo de actividad.
-
-Este código muestra el uso de Adobe [AEM cliente sin encabezado para NodeJS](https://github.com/adobe/aem-headless-client-nodejs#aem-headless-client-for-nodejs) para invocar consultas de GraphQL persistentes mediante JavaScript basado en Node.js. Esta aplicación utiliza la variable `wknd-shared/adventures-all` consulta persistente para recopilar todas las aventuras y derivar una lista de tipos de actividad disponibles. Cuando un usuario selecciona un Tipo de actividad, el tipo seleccionado se pasa al `wknd-shared/adventures-by-activity` consulta persistente y recupera los detalles de aventura solo para aquellas aventuras del tipo de actividad especificado. Los detalles de aventura se recuperan de AEM a través de la variable `wknd-shared/adventures-by-slug` consulta persistente.
+Este código muestra el uso de Adobe [AEM Cliente sin encabezado para NodeJS](https://github.com/adobe/aem-headless-client-nodejs#aem-headless-client-for-nodejs) para invocar consultas de GraphQL persistentes mediante JavaScript basado en Node.js. Esta aplicación usa el `wknd-shared/adventures-all` consulta persistente para recopilar todas las aventuras y derivar una lista de tipos de actividades disponibles. Cuando un usuario selecciona un Tipo de actividad, el tipo seleccionado se pasa al `wknd-shared/adventures-by-activity` persistió en la consulta y recupera los detalles de la aventura solo para aquellas aventuras del tipo de actividad especificado. AEM Los detalles de la aventura se recuperan de a través de la pestaña de la página de `wknd-shared/adventures-by-slug` consulta persistente.
 
 Este código:
 
-+ Se conecta a un servicio de AEM Publish y no requiere autenticación
-+ Utiliza las consultas persistentes de WKND: `wknd-shared/adventures-all`, `wknd-shared/adventures-by-activity`y `wknd-shared/adventures-by-slug`
++ Se conecta a un servicio de publicación de AEM y no requiere autenticación
++ Utiliza las consultas persistentes de WKND: `wknd-shared/adventures-all`, `wknd-shared/adventures-by-activity`, y `wknd-shared/adventures-by-slug`

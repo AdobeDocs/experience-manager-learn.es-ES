@@ -1,5 +1,5 @@
 ---
-title: 'Creación de un componente de lista de imágenes complejo: primer tutorial AEM sin encabezado'
+title: 'AEM Creación de un componente de lista de imágenes complejo: primer tutorial sin encabezado'
 description: Aprenda a trabajar con fragmentos de contenido, referencias de contenido e imágenes.
 version: Cloud Service
 feature: Content Fragments, GraphQL API
@@ -18,29 +18,29 @@ ht-degree: 2%
 ---
 
 
-# Generar componente complejo
+# Crear componente complejo
 
-Le damos la bienvenida a este capítulo de tutorial en el que analizaremos la creación de un componente de lista de imágenes complejo que procese fragmentos de contenido, referencias de fragmento de contenido anidadas y recursos de imagen a los que se hace referencia. Daremos un paso más allá al hacer que la aplicación React sea editable con el Editor universal.
+Bienvenido a este capítulo del tutorial, en el que exploraremos la creación de un componente de lista de imágenes complejo que procesa fragmentos de contenido, referencias de fragmentos de contenido anidadas y recursos de imagen referenciados. Daremos un paso más haciendo que la aplicación React sea editable con el editor universal.
 
-Los fragmentos de contenido en Adobe Experience Manager (AEM) proporcionan un enfoque estructurado para administrar el contenido. Aprovechamos los fragmentos de contenido para rellenar nuestro componente Lista de imágenes, administrar las referencias anidadas y mostrar los recursos de imagen a los que se hace referencia.
+Los fragmentos de contenido en Adobe Experience Manager AEM () proporcionan un enfoque estructurado para administrar el contenido. Aprovechamos los fragmentos de contenido para rellenar el componente Lista de imágenes, administrando las referencias anidadas y mostrando los recursos de imagen a los que se hace referencia.
 
-A lo largo de este tutorial, le guiaremos a través de la creación del componente Lista de imágenes , la gestión de referencias anidadas, la representación de recursos de imagen referenciados e la integración del Editor universal. Aprenderá a configurar dependencias, diseñar la estructura del componente, recuperar y analizar los fragmentos de contenido y hacer que la aplicación sea editable mediante el editor universal.
+A lo largo de este tutorial, le guiaremos a través de la creación del componente Lista de imágenes, la administración de referencias anidadas, el procesamiento de recursos de imagen a los que se hace referencia y la integración del Editor universal. Aprenderá a configurar dependencias, diseñar la estructura del componente, recuperar y analizar fragmentos de contenido y hacer que la aplicación sea editable mediante el Editor universal.
 
-Al final de este capítulo del tutorial, tendrá un componente Lista de imágenes completamente funcional y editable. Estará equipado con los conocimientos y las habilidades para crear componentes dinámicos en la aplicación React, lo que mejorará la experiencia de creación de contenido con el Editor universal. Empecemos a crear su componente de Lista de imágenes editable.
+Al final de este capítulo del tutorial, tendrá un componente de lista de imágenes totalmente funcional y editable. Estará equipado con los conocimientos y las habilidades para crear componentes dinámicos en su aplicación React, mejorando la experiencia de creación de contenido con el editor universal. Empecemos a crear su componente de lista de imágenes editable.
 
 ## Crear una lista de imágenes
 
-1. Ahora debemos crear algunos fragmentos de oferta y un componente de lista de imágenes.  Vaya a la consola de fragmentos de contenido.
+1. Ahora debemos crear algunos fragmentos de ofertas y un componente de lista de imágenes.  Vaya a la consola de fragmentos de contenido.
 
    ![create-imagelist-fragment](./assets/3/create-imagelist-fragment.png)
 
-   Queremos crear un fragmento del tipo `imagelist` (el modelo es `imagelist`) y le daremos el título `imagelist`.
+   Queremos crear un fragmento del tipo. `imagelist` (el modelo es `imagelist`) y le daremos el título. `imagelist`.
 
-   En el editor de fragmentos de contenido tenemos la oportunidad de seleccionar un fragmento para incluirlo o crearlo.  Seleccione crear un fragmento.
+   En el editor de fragmentos de contenido tenemos la oportunidad de seleccionar un fragmento para incluir o crear uno.  Seleccione Crear un fragmento.
 
    Nuestro tipo de modelo es Lista de imágenes.  Asigne un título y un nombre al fragmento.
 
-1. Dado que una lista de imágenes es un fragmento de tipo contenedor que incluye referencia a otros fragmentos, las nuevas ofertas se pueden crear directamente desde el editor.  Cree un fragmento de oferta y una descripción y un artículo de inclusión e imagen.  Puede cortar y pegar texto desde abajo.  Se utiliza el título del fragmento como título de la tarjeta.
+1. Dado que una lista de imágenes es un fragmento de tipo contenedor que incluye referencias a otros fragmentos, se pueden crear nuevas ofertas directamente desde el editor.  Cree un fragmento de oferta e incluya una descripción de imagen y un artículo.  Puede cortar y pegar texto desde abajo.  Estamos utilizando el título del fragmento como título de la tarjeta.
 
    __Artículo1__
 
@@ -190,7 +190,7 @@ Al final de este capítulo del tutorial, tendrá un componente Lista de imágene
    Eu facilisis sed odio morbi quis. Consequat semper viverra nam libero justo laoreet sit amet. Eget mi proin sed libero enim sed faucibus. Vitae tempus quam pellentesque nec nam aliquam sem. Justo donec enim diam vulputate ut pharetra sit. Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat. Mauris pellentesque pulvinar pellentesque habitant morbi. Iaculis at erat pellentesque adipiscing. Libero id faucibus nisl tincidunt eget nullam non nisi est. Interdum consectetur libero id faucibus nisl tincidunt. Volutpat odio facilisis mauris sit amet massa. Tristique senectus et netus et malesuada fames ac turpis egestas. Leo vel orci porta non pulvinar neque laoreet suspendisse interdum. Sapien et ligula ullamcorper malesuada proin libero. Interdum consectetur libero id faucibus nisl tincidunt.
    ```
 
-1. Volvamos al editor de consultas y recuperemos este nuevo componente.  Observe que estamos haciendo referencia al `OfferModel` en nuestra consulta y los metadatos, que usaremos para el título de la tarjeta.
+1. Volvamos al editor de consultas y recuperemos este nuevo componente.  Tenga en cuenta que hacemos referencia a la `OfferModel` en nuestra consulta y los metadatos, que utilizaremos para el título de la tarjeta.
 
    ```graphql
    query imageList {
@@ -226,13 +226,13 @@ Al final de este capítulo del tutorial, tendrá un componente Lista de imágene
    }
    ```
 
-1. Ahora conéctelo a nuestra aplicación.  En nuestra `home.js`, haremos referencia a nuestra nueva consulta. Superior `useEffect()` estableceremos `list` y `setList`.
+1. Ahora conéctelo a nuestra aplicación.  En nuestro `home.js`, haremos referencia a nuestra nueva consulta. Arriba `useEffect()` nosotros nos fijaremos `list` y `setList`.
 
    ```javascript
    const [list, setList] = useState({});
    ```
 
-   Inside `useEffect()` una nueva solicitud para la consulta de lista de imágenes.
+   Interior `useEffect()` una nueva solicitud para la consulta de lista de imágenes.
 
    ```javascript
    sdk.runPersistedQuery('pure-headless/imagelist')
@@ -246,13 +246,13 @@ Al final de este capítulo del tutorial, tendrá un componente Lista de imágene
    });
    ```
 
-   Y ahora, vamos a agregarlo al DOM de nuestra aplicación.
+   Y ahora, vamos a añadir esto al DOM de nuestra aplicación.
 
    ```javascript
    <div>{list.cards && <ImageList content={list.cards} />}</div>
    ```
 
-   Veamos nuestro componente de lista de imágenes.  Dentro de la lista de imágenes, recorremos cada oferta.
+   Veamos nuestro componente de lista de imágenes.  Dentro de la lista de imágenes, realizamos un bucle en cada oferta.
 
    ```javascript
    {content.items && content.items.map((items) => (
@@ -260,7 +260,7 @@ Al final de este capítulo del tutorial, tendrá un componente Lista de imágene
    ))}
    ```
 
-   En el componente de tarjeta renderizamos cada tarjeta.
+   En el componente de tarjeta procesamos cada tarjeta.
 
    ```javascript
    const Cards = ({ content }) => {
@@ -279,9 +279,9 @@ Al final de este capítulo del tutorial, tendrá un componente Lista de imágene
    };
    ```
 
-   Además, tenga en cuenta que estamos haciendo referencia a un componente de imagen y pasando una URL dinámica.
+   Tenga en cuenta también que hacemos referencia a un componente de imagen y le pasamos una URL dinámica.
 
-   Dentro del componente de imagen, se utiliza la dirección URL dinámica para crear un conjunto de fuentes con varias direcciones URL.
+   Dentro del componente de imagen, se utiliza la URL dinámica para crear un conjunto de fuentes con varias URL.
 
    ```javascript
    const srcset = [
@@ -292,15 +292,15 @@ Al final de este capítulo del tutorial, tendrá un componente Lista de imágene
    ];
    ```
 
-## Habilitar editor universal
+## Habilitar el editor universal
 
-1. Agregar `<meta />` a la aplicación.  Apertura `App.js` e inserte import en la parte superior del archivo .
+1. Añadir `<meta />` a la aplicación.  Abrir `App.js` e inserte import en la parte superior del archivo.
 
    ```javascript
    import { Helmet } from 'react-helmet';
    ```
 
-   Y dentro del retorno de la aplicación agregue el siguiente código:
+   Y dentro de la devolución de la aplicación, añada el siguiente código:
 
    ```javascript
    <Helmet>
@@ -310,13 +310,13 @@ Al final de este capítulo del tutorial, tendrá un componente Lista de imágene
 
    >[!TIP]
    >
-   > Utilizamos la biblioteca de Cascos para hacer que esta dinámica se base en la variable `.env` , sin embargo, puede codificarlo en el `index.html`.
+   > Estamos utilizando la biblioteca de Cascos para hacer esto dinámico basado en el `.env` , sin embargo, puede codificarlo en el archivo `index.html`.
 
-1. Ahora vamos a actualizar son Tarjeta para identificar el fragmento y el tipo de datos para editar cada tarjeta.
+1. Ahora vamos a actualizar la Tarjeta para identificar el fragmento y el tipo de datos para editar cada tarjeta.
 
    Within `<div className='card' key={card._path}>`
 
-   add
+   añadir
 
    ```javascript
    itemID={`urn:aemconnection:${card._path}/jcr:content/data/master`} itemfilter='cf' itemType='reference' itemScope
@@ -328,7 +328,7 @@ Al final de este capítulo del tutorial, tendrá un componente Lista de imágene
    <div className='card' key={card._path} itemID={`urn:aemconnection:${card._path}/jcr:content/data/master`} itemfilter='cf' itemType='reference' itemScope>
    ```
 
-1. Ahora identifique qué es editable.
+1. Ahora identifique lo que se puede editar.
 
    A la `<h3 />` añadir:
 
@@ -336,7 +336,7 @@ Al final de este capítulo del tutorial, tendrá un componente Lista de imágene
    itemProp="_metadata" itemType="text"
    ```
 
-   Para `<div />` añadir:
+   A nuestro `<div />` añadir:
 
    ```javascript
    itemProp="description" itemType="richtext"
@@ -421,4 +421,4 @@ export default Home;
 
 ## Enhorabuena.
 
-Ha creado correctamente una experiencia sin AEM que cuenta con la tecnología completa de AEM API sin encabezado y que se puede editar con el editor universal.
+AEM AEM Ha creado correctamente una experiencia sin encabezado que cuenta con la tecnología completa de las API sin encabezado y que se puede editar con el Editor universal de.

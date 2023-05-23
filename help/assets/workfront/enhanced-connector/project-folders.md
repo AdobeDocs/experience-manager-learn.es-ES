@@ -1,6 +1,6 @@
 ---
-title: Carpetas de proyecto del conector mejorado de Workfront
-description: Obtenga información sobre las carpetas del proyecto al utilizar el conector mejorado de Adobe Workfront y Experience Manager Assets.
+title: Carpetas del proyecto del conector mejorado de Workfront
+description: Obtenga información acerca de las carpetas de proyecto al utilizar el conector mejorado de Adobe Workfront y Experience Manager Assets.
 version: Cloud Service
 topic: Content Management, Integrations
 role: Admin, User
@@ -16,9 +16,9 @@ ht-degree: 0%
 
 ---
 
-# Carpetas de proyecto de conector mejorado de Workfront
+# Carpetas de proyecto del conector mejorado de Workfront
 
-Obtenga información sobre las carpetas del proyecto al utilizar el conector mejorado de Adobe Workfront y Experience Manager Assets, que incluye:
+Obtenga información acerca de las carpetas de proyecto al utilizar el conector mejorado de Adobe Workfront y Experience Manager Assets, incluido lo siguiente:
 
 + Carpetas vinculadas al proyecto
 + Asignación de metadatos de carpeta

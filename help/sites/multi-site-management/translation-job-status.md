@@ -1,7 +1,7 @@
 ---
 title: Estado de la tarea de traducción
 seo-title: Translation Job Status
-description: Comprender los distintos estados asociados a un trabajo de traducción o a un elemento del trabajo.
+description: Comprenda los diferentes estados asociados a un trabajo de traducción o a un elemento de este tipo de trabajo.
 seo-description: Understand the different statuses associated with a Translation Job or an item in the job.
 feature: Language Copy, Multi Site Manager
 topics: localization, authoring, content-architecture
@@ -24,6 +24,6 @@ ht-degree: 16%
 
 # Estado de la tarea de traducción {#translation-job-status}
 
-Comprender los distintos estados asociados a un trabajo de traducción o a un elemento del trabajo.
+Comprenda los diferentes estados asociados a un trabajo de traducción o a un elemento de este tipo de trabajo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/36685?quality=12&learn=on)

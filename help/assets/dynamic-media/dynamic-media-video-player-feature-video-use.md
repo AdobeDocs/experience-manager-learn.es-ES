@@ -1,6 +1,6 @@
 ---
-title: Uso del reproductor de vídeo en AEM Dynamic Media
-description: AEM reproductor de vídeo de Dynamic Media solía confiar en el tiempo de ejecución del Flash para admitir el flujo de vídeo adaptable en los clientes de escritorio y los navegadores se volvieron más agresivos con el flujo de contenido basado en flash. Con la introducción de HLS (protocolo de entrega de vídeo de transmisión en directo HTTP de Apple), el contenido ahora se puede transmitir sin depender del flash.
+title: AEM Uso del reproductor de vídeo en Dynamic Media
+description: AEM El reproductor de vídeo de Dynamic Media, que antes dependía del tiempo de ejecución del Flash para admitir el flujo de vídeo adaptable en los clientes y exploradores de equipos de escritorio, se volvió más agresivo con el flujo de contenido basado en flash. Con la introducción de HLS (HTTP Live Streaming video delivery protocol de Apple), el contenido ahora se puede transmitir sin depender del flash.
 feature: Video Profiles
 version: 6.4, 6.5
 topic: Content Management
@@ -15,21 +15,21 @@ ht-degree: 6%
 ---
 
 
-# Uso del reproductor de vídeo en AEM Dynamic Media{#using-the-video-player-in-aem-dynamic-media}
+# AEM Uso del reproductor de vídeo en Dynamic Media{#using-the-video-player-in-aem-dynamic-media}
 
-AEM reproductor de vídeo de Dynamic Media solía confiar en el tiempo de ejecución del Flash para admitir el flujo de vídeo adaptable en los clientes de escritorio y los navegadores se volvieron más agresivos con el flujo de contenido basado en flash. Con la introducción de HLS (protocolo de entrega de vídeo de transmisión en directo HTTP de Apple), el contenido ahora se puede transmitir sin depender del flash.
+AEM El reproductor de vídeo de Dynamic Media, que antes dependía del tiempo de ejecución del Flash para admitir el flujo de vídeo adaptable en los clientes y exploradores de equipos de escritorio, se volvió más agresivo con el flujo de contenido basado en flash. Con la introducción de HLS (HTTP Live Streaming video delivery protocol de Apple), el contenido ahora se puede transmitir sin depender del flash.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16791?quality=12&learn=on)
 
-## Quick look to Non Flash Video Player {#quick-look-into-non-flash-video-player}
+## Búsqueda rápida en el reproductor de vídeo sin Flash {#quick-look-into-non-flash-video-player}
 
 >[!VIDEO](https://video.tv.adobe.com/v/17429?quality=12&learn=on)
 
-La compatibilidad con navegadores HLS es la siguiente: para exploradores no compatibles, volvemos a la entrega de vídeo progresivo
+La compatibilidad con el explorador HLS es la siguiente: para los exploradores no compatibles, volvemos a la entrega de vídeo progresivo
 
 >[!NOTE]
 >
-> Dynamic Media Hybrid NO es compatible con la transmisión de vídeo en Internet Explorer 11 a partir del 15 de marzo de 2022. Actualice a la versión 6.5.12 o superior para volver a la reproducción progresiva en IE 11.
+> Dynamic Media Hybrid NO admite la transmisión de vídeo en Internet Explorer 11 a partir del 15 de marzo de 2022. Actualice a 6.5.12 o superior para disfrutar de la reproducción progresiva en IE 11.
 
 <table> 
  <thead> 
@@ -48,8 +48,8 @@ La compatibilidad con navegadores HLS es la siguiente: para exploradores no comp
   <tr>
    <td> <p>Escritorio</p> </td>
    <td> <p>Internet Explorer 11+</p> </td>
-   <td> <p>Dynamic Media: modo Scene7: Flujo de vídeo HLS</p> 
-        <p>Dynamic Media: modo híbrido: Descarga progresiva</p>
+   <td> <p>Dynamic Media - Modo Scene7: flujo de vídeo HLS</p> 
+        <p>Dynamic Media - Modo híbrido: descarga progresiva</p>
    </td>
   </tr>
   <tr>
@@ -84,7 +84,7 @@ La compatibilidad con navegadores HLS es la siguiente: para exploradores no comp
   </tr>
   <tr> 
    <td> <p>Móvil</p> </td>
-   <td> <p>Android (explorador predeterminado)</p> </td>
+   <td> <p>Android (navegador predeterminado)</p> </td>
    <td> <p>Descarga progresiva</p> </td>
   </tr>
   <tr> 

@@ -1,6 +1,6 @@
 ---
-title: Solución de problemas de dependencia con bibliotecas de C++ en Designer
-description: Instalación de las bibliotecas C++ necesarias para Designer
+title: Solucionar problemas de dependencia con bibliotecas de C++ en Designer
+description: Instalar las bibliotecas de C++ necesarias para Designer
 type: Troubleshooting
 role: Developer
 level: Intermediate
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Solución de problemas de dependencia con bibliotecas de C++ en Designer
+# Solucionar problemas de dependencia con bibliotecas de C++ en Designer
 
-*En este vídeo se explican los pasos para solucionar problemas de dependencia con bibliotecas C++ en Designer.*
+*En este vídeo se explican los pasos para solucionar los problemas de dependencia con las bibliotecas de C++ en Designer.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335576?quality=12&learn=on)

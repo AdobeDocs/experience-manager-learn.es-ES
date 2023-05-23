@@ -1,6 +1,6 @@
 ---
-title: Incrustación de fuentes para Forms y conversiones de servicio de salida
-description: Pasos para incrustar fuentes para conversiones de Forms y de servicio de salida
+title: Cómo incrustar fuentes para Forms y conversiones del servicio de salida
+description: Pasos para incrustar fuentes para Forms y conversiones del servicio de salida
 type: Troubleshooting
 role: Admin
 level: Experienced
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ---
 
-# Incrustación de fuentes para Forms y conversiones de servicio de salida
+# Cómo incrustar fuentes para Forms y conversiones del servicio de salida
 
 *Este vídeo muestra los pasos para incrustar fuentes para Forms y las conversiones del servicio de salida.*
 

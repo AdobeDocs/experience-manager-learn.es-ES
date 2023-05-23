@@ -1,6 +1,6 @@
 ---
 title: Variaciones de fragmentos de contenido
-description: Aprenda a crear variaciones de fragmentos de contenido y explore algunos casos de uso comunes.
+description: Obtenga información sobre cómo crear variaciones de Fragmentos de contenido y explorar algunos casos de uso comunes.
 version: Cloud Service
 topic: Headless, Content Management
 feature: Content Fragments, GraphQL API
@@ -19,11 +19,11 @@ ht-degree: 8%
 
 # Variaciones de fragmentos de contenido
 
-Aprenda a crear variaciones de fragmentos de contenido y explore algunos casos de uso comunes.
+Obtenga información sobre cómo crear variaciones de Fragmentos de contenido y explorar algunos casos de uso comunes.
 
 En este vídeo:
 
-+ Aprenda a crear una variación de un fragmento de contenido
++ Obtenga información sobre cómo crear una variación de un fragmento de contenido
 + Descubra cómo se pueden utilizar las variaciones en un escenario real
 + Revise la sintaxis de GraphQL para solicitar una variación específica
 

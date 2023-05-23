@@ -1,7 +1,7 @@
 ---
-title: Déclencheur AEM flujo de trabajo en la introducción del envío de formularios HTML5
+title: Déclencheur AEM de flujo de trabajo de en la introducción del envío de formularios HTM5
 seo-title: Trigger AEM Workflow on HTML5 Form Submission
-description: Siga rellenando el formulario móvil en modo sin conexión y envíe el formulario móvil al flujo de trabajo AEM déclencheur
+description: Continúe rellenando el formulario móvil en el modo sin conexión y envíe el formulario móvil al flujo de trabajo de déclencheur AEM de la
 seo-description: Continue filling mobile form in offline mode and submit mobile form to trigger AEM workflow
 feature: Mobile Forms
 topics: development
@@ -21,16 +21,16 @@ ht-degree: 0%
 
 ---
 
-# Descarga de formularios móviles parcialmente completados y envío a AEM flujo de trabajo
+# AEM Descarga de un formulario móvil parcialmente completado y envío a un flujo de trabajo de
 
-Un caso de uso común es tener la capacidad de procesar el XDP como HTML para las actividades de captura de datos. Esto funciona bien cuando los formularios son simples y se pueden rellenar y enviar en línea. Sin embargo, si el formulario es complejo y es posible que los usuarios no puedan cumplimentar el formulario en línea, tenemos que permitir que los usuarios que rellenen el formulario descarguen la versión interactiva del formulario que se rellenará con Acrobat/Reader sin conexión. Una vez rellenado el formulario, el usuario puede estar en línea para enviarlo.
-Para lograr este caso de uso, debemos realizar los siguientes pasos:
+Un caso de uso común es tener la capacidad de procesar el XDP como HTML para actividades de captura de datos. Esto funciona bien cuando los formularios son simples y se pueden rellenar y enviar en línea. Sin embargo, si el formulario es complejo, es posible que los usuarios no puedan completarlo en línea. Por ello, es necesario permitir que los usuarios que rellenan el formulario descarguen la versión interactiva del formulario que se va a rellenar con Acrobat/Reader sin conexión. Una vez rellenado el formulario, el usuario puede conectarse para enviarlo.
+Para llevar a cabo este caso de uso, debemos realizar los siguientes pasos:
 
-* Capacidad para generar un PDF interactivo/rellenable con los datos introducidos en el formulario móvil
-* Gestión del envío del PDF desde Acrobat/Reader
-* Flujo de trabajo de Déclencheur Adobe Experience Manager (AEM) para revisar el PDF enviado
+* Capacidad para generar PDF interactivos/rellenables con los datos introducidos en el formulario móvil
+* Gestionar el envío de PDF desde Acrobat/Reader
+* Flujo de trabajo de Adobe Experience Manager AEM de déclencheur () para revisar el PDF enviado
 
-Este tutorial explica los pasos necesarios para lograr el caso de uso anterior. El código de muestra y los recursos relacionados con este tutorial son [disponible aquí.](part-four.md)
+Este tutorial recorre los pasos necesarios para realizar el caso de uso anterior. El código de muestra y los recursos relacionados con este tutorial son [disponible aquí.](part-four.md)
 
 El siguiente vídeo le ofrece una descripción general del caso de uso
 

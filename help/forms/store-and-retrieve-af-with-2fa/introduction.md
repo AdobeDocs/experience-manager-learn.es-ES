@@ -1,5 +1,5 @@
 ---
-title: Almacenamiento y recuperación de datos de formulario con datos adjuntos de la base de datos MySQL
+title: Almacenar y recuperar datos de formulario con archivos adjuntos de la base de datos MySQL
 description: Tutorial de varias partes para guiarle por los pasos necesarios para almacenar y recuperar datos de formulario con archivos adjuntos
 feature: Adaptive Forms
 type: Tutorial
@@ -18,17 +18,17 @@ ht-degree: 3%
 
 ---
 
-# Almacenamiento y recuperación de datos de formulario adaptables con 2FA
+# Almacenar y recuperar datos de formularios adaptables con 2FA
 
-Este tutorial le guiará por los pasos necesarios para guardar y recuperar los datos del formulario adaptable con archivos adjuntos que utilizan 2FA. Este tutorial utilizó la base de datos MySQL para almacenar datos de formulario adaptable. La base de datos que elija se puede utilizar para almacenar los datos siempre y cuando haya implementado los controladores específicos de la base de datos en AEM. En un nivel superior, se necesitan los siguientes pasos para lograr el caso de uso:
+Este tutorial le guiará por los pasos necesarios para guardar y recuperar datos de formulario adaptables con archivos adjuntos mediante 2FA. Este tutorial utilizó la base de datos MySQL para almacenar datos de formulario adaptable. AEM La base de datos que elija se puede utilizar para almacenar los datos siempre y cuando haya implementado los controladores específicos de la base de datos en la base de datos de la que haya hecho clic en el botón de la barra de herramientas de la base de datos de la base de datos de la base de datos de la base de datos de la base de datos de la base de datos de la base de datos de la base de datos de la base de datos de la base de datos de la base de datos de la base de datos de la base de datos de su elección. En un nivel superior, se necesitan los siguientes pasos para lograr el caso de uso:
 
 * Utilice la API de GuideBridge para obtener acceso a los datos del formulario adaptable
 
-* Realice una llamada del POST a un servlet. Este servlet almacena los datos de la base de datos y los archivos adjuntos de los formularios en el repositorio CRX. Los datos almacenados de la base de datos están asociados a un GUID.
+* Realizar una llamada del POST a un servlet. Este servlet almacena los datos en la base de datos y los archivos adjuntos del formulario en el repositorio CRX. Los datos almacenados en la base de datos están asociados a un GUID.
 
-* Si desea rellenar el formulario adaptable con los datos almacenados, recupere los datos asociados con el GUID y rellene el formulario adaptable utilizando la variable **request.setAttribute** método.
+* Si desea rellenar el formulario adaptable con los datos almacenados, recupere los datos asociados con el GUID y rellene el formulario adaptable con el **request.setAttribute** método.
 
-## Demostración del caso de uso
+## Muestra del caso de uso
 
 >[!VIDEO](https://video.tv.adobe.com/v/327122?quality=12&learn=on)
 
@@ -38,10 +38,10 @@ Se espera que la audiencia de este contenido tenga alguna experiencia en las sig
 
 * Formulario adaptable
 * Modelo de datos de formulario
-* Servicios y componentes de OSGi
-* Bibliotecas de cliente de AEM
+* Componentes/servicios OSGi
+* AEM Bibliotecas de cliente de
 
 
 ## Pasos siguientes
 
-[Configuración de fuentes de datos](./configure-data-source.md)
+[Configurar la fuente de datos](./configure-data-source.md)

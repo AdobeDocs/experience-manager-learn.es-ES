@@ -1,6 +1,6 @@
 ---
 title: Marcas de agua en AEM Assets
-description: AEM capacidades de marca de agua de as a Cloud Service permiten que las representaciones de imágenes personalizadas se marquen con agua con cualquier imagen PNG.
+description: AEM as a Cloud Service Las funciones de marca de agua de permiten que las representaciones de imágenes personalizadas se marquen con agua con cualquier imagen PNG.
 feature: Asset Compute Microservices
 version: Cloud Service
 kt: 6357
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Marcas de agua
+# Filigranas
 
-AEM capacidades de marca de agua de as a Cloud Service permiten que las representaciones de imágenes personalizadas se marquen con agua con cualquier imagen PNG.
+AEM as a Cloud Service Las funciones de marca de agua de permiten que las representaciones de imágenes personalizadas se marquen con agua con cualquier imagen PNG.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41536?quality=12&learn=on)

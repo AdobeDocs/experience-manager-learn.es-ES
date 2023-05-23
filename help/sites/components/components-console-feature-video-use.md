@@ -26,13 +26,13 @@ La consola Componentes proporciona a los desarrolladores y administradores una u
 
 La consola Componentes proporciona las siguientes funciones:
 
-* Información general: lista de todos los componentes instalados disponibles en la instancia de AEM actual
-* [!UICONTROL Propiedades]: muestra metadatos como el título, el grupo y la descripción de un componente
+* AEM Información general: lista de todos los componentes instalados disponibles en la instancia actual de la
+* [!UICONTROL Propiedades]: muestra metadatos como título, grupo y descripción de un componente
 * [!UICONTROL Políticas]: muestra las directivas existentes para un componente determinado y la plantilla asociada
 * [!UICONTROL Uso de Live]: muestra una lista de páginas en las que se incluye el componente
 
 La consola Componentes se encuentra en **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL Componentes]**.
-URL de la consola Componentes (autor local de AEM): [http://localhost:4502/libs/wcm/core/content/sites/components.html](http://localhost:4502/libs/wcm/core/content/sites/components.html)
+URL de la consola del componente (Autor local de AEM): [http://localhost:4502/libs/wcm/core/content/sites/components.html](http://localhost:4502/libs/wcm/core/content/sites/components.html)
 
 ## Recursos adicionales {#additional-resources}
 

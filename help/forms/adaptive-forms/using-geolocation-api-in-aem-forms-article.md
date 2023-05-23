@@ -1,6 +1,6 @@
 ---
 title: Uso de las API de geolocalización en Forms adaptable
-description: Rellene los campos de dirección del formulario con la API de geolocalización
+description: Rellene los campos de dirección del formulario con las API de geolocalización
 feature: Adaptive Forms
 version: 6.4,6.5
 topic: Development
@@ -17,17 +17,17 @@ ht-degree: 3%
 
 # Uso de las API de geolocalización en Forms adaptable{#using-geolocation-api-s-in-adaptive-forms}
 
-En este artículo analizaremos el uso de la API de geolocalización de Google para rellenar los campos de un formulario adaptable. Este caso de uso se utiliza comúnmente cuando desea rellenar los campos de dirección actuales en un formulario.
+En este artículo, analizaremos el uso de la API de geolocalización de Google para rellenar campos de un formulario adaptable. Este caso de uso se utiliza comúnmente cuando desea rellenar los campos de dirección actuales en un formulario.
 
-Se siguieron los siguientes pasos para utilizar la API de geolocalización en Forms adaptable.
+Se han seguido los siguientes pasos para utilizar la API de geolocalización en Forms adaptable.
 
-1. [Obtener clave de API](https://developers.google.com/maps/documentation/javascript/get-api-key) de Google para utilizar la plataforma Google Maps. Puede obtener una clave de prueba que sea válida durante 1 año.
+1. [Obtener clave API](https://developers.google.com/maps/documentation/javascript/get-api-key) de Google para utilizar la plataforma Google Maps. Puede obtener una clave de prueba con una validez de 1 año.
 
 1. El fragmento de formulario adaptable se creó con campos para contener la dirección actual
 
-1. Se invocó la API de geolocalización en el suceso click del objeto image del formulario adaptable
+1. La API de geolocalización se invocó en el evento de clic del objeto de imagen del formulario adaptable
 
-1. Los datos JSON devueltos por la llamada de API se analizaron y los valores de los campos del formulario adaptable se establecieron en consecuencia.
+1. Se analizaron los datos JSON devueltos por la llamada de API y los valores de los campos del formulario adaptable se establecieron en consecuencia.
 
 ```javascript
 navigator.geolocation.getCurrentPosition(showPosition);
@@ -74,33 +74,33 @@ var url = "https://maps.googleapis.com/maps/api/geocode/json?latlng="+position.c
 }
 ```
 
-![Campos rellenados con la api de geoloacción](assets/capture-4.gif)
+![Los campos se rellenan con la API de geolocalización](assets/capture-4.gif)
 
-En la línea 1 utilizamos la API de geolocalización del HTML para obtener la ubicación actual. Una vez obtenida la ubicación actual, pasamos la ubicación actual a la función showPosition.
+En la línea 1 utilizamos la API de geolocalización de HTML para obtener la ubicación actual. Una vez obtenida la ubicación actual, pasamos la ubicación actual a la función showPosition.
 
-En la función showPosition, se utiliza la API de Google para recuperar los detalles de dirección de la latitud y longitud dadas.
+En la función showPosition, utilizamos la API de Google para recuperar los detalles de dirección de la latitud y longitud dadas.
 
-A continuación, se analiza el JSON devuelto por la API para establecer los campos del formulario adaptable.
+El JSON devuelto por la API se analiza a continuación para establecer los campos del formulario adaptable.
 
 >[!NOTE]
 >
 >Para realizar pruebas, puede utilizar el protocolo HTTP con localhost en la dirección URL.
 >
->Para el servidor de producción, deberá habilitar SSL para el servidor AEM para obtener esta capacidad.
+>AEM Para el servidor de producción, deberá habilitar SSL para que su servidor de obtenga esta capacidad.
 >
->La muestra asociada a este artículo se ha probado con la dirección de EE. UU. Si desea utilizar esta capacidad en otras ubicaciones geográficas, es posible que tenga que modificar el análisis de JSON.
+>La muestra asociada con este artículo se ha probado con la dirección de EE. UU. Si desea utilizar esta capacidad en otras ubicaciones geográficas, es posible que tenga que modificar el análisis de JSON.
 
-Para obtener esta capacidad en su servidor, siga los siguientes pasos
+Para poner esta capacidad en su servidor, siga los siguientes pasos
 
 * Instale e inicie el servidor de AEM Forms.
 
->!![NOTE] Esta funcionalidad se probó en AEM Forms 6.3 y posterior
+>!![NOTE] Esta capacidad se ha probado en AEM Forms 6.3 y versiones posteriores
 * [Obtener clave de API de Google](https://developers.google.com/maps/documentation/javascript/get-api-key).
-* [Importe los recursos relacionados con este artículo en AEM.](assets/geolocationapi.zip)
-* [Abra el fragmento Formulario adaptable en modo de edición.](http://localhost:4502/editor.html/content/forms/af/currentaddressfragment.html)
-* Abra el editor de reglas para el componente Opción de imagen .
-* Sustituya el &lt;your_api_key> con la clave de API de Google.
+* [AEM Importe los recursos relacionados con este artículo a la página de.](assets/geolocationapi.zip)
+* [Abra el fragmento del formulario adaptable en el modo Edición.](http://localhost:4502/editor.html/content/forms/af/currentaddressfragment.html)
+* Abra el editor de reglas para el componente Opción de imagen.
+* Reemplace el &lt;your_api_key> con la clave de API de Google.
 * Guarde los cambios.
-* [Obtener una vista previa del formulario](http://localhost:4502/content/dam/formsanddocuments/currentaddressfragment/jcr:content?wcmmode=disabled).
+* [Previsualización del formulario](http://localhost:4502/content/dam/formsanddocuments/currentaddressfragment/jcr:content?wcmmode=disabled).
 * Haga clic en el icono &quot;geolocalización&quot;.
 * El formulario debe rellenarse con la ubicación actual.

@@ -1,6 +1,6 @@
 ---
-title: Explicación del visualizador de recursos con AEM Dynamic Media
-description: AEM las mejoras del visor de Dynamic Media permiten a los autores de AEM definir y personalizar la forma en que se presentan los recursos al usuario del sitio web.
+title: AEM Explicación del visualizador de recursos con Dynamic Media de la
+description: AEM Las mejoras del visualizador de Dynamic Media AEM permiten a los autores de la definir y personalizar el modo en que se presentan los recursos a los usuarios del sitio web.
 sub-product: Experience Manager Assets
 feature: Viewer Presets, Image Profiles
 version: 6.4, 6.5
@@ -15,16 +15,16 @@ ht-degree: 0%
 
 ---
 
-# Explicación del visualizador de recursos con AEM Dynamic Media{#understanding-the-asset-viewer-with-aem-dynamic-media}
+# AEM Explicación del visualizador de recursos con Dynamic Media de la{#understanding-the-asset-viewer-with-aem-dynamic-media}
 
-AEM las mejoras del visor de Dynamic Media permiten a los autores de AEM definir y personalizar la forma en que se presentan los recursos al usuario del sitio web.
+AEM Las mejoras del visualizador de Dynamic Media AEM permiten a los autores de la definir y personalizar el modo en que se presentan los recursos a los usuarios del sitio web.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17783?quality=12&learn=on)
 
-Algunas mejoras importantes son:
+Algunas mejoras importantes son las siguientes:
 
-* Seleccione de forma intuitiva un elemento de visualizador desde el ajuste preestablecido de visualizador y personalice la configuración, sin necesidad de conocer el componente del visualizador.
-* Información de objeto útil para modificadores que explica la configuración y los parámetros del visor.
-* Opción Mostrar/ocultar CSS para realizar cambios CSS avanzados. Capacidad de importar CSS personalizada.
-* Galería OOTB de botones de puntos interactivos minimizando el desarrollo de nuevos botones.
-* Capacidad de representación de ilustraciones de botones de alto píxel para pantallas de retina.
+* Seleccione de forma intuitiva un elemento del visualizador preestablecido y personalice la configuración, sin necesidad de conocer el componente del visualizador.
+* Información sobre herramientas útil para modificadores que explican la configuración y los parámetros del visor.
+* Mostrar/ ocultar CSS para realizar cambios avanzados en CSS. Capacidad para importar CSS personalizado.
+* Galería OOTB de botones de puntos interactivos que minimizan el desarrollo de nuevos botones.
+* Capacidad de renderización de ilustraciones de botón de alto píxel para pantallas de retina.

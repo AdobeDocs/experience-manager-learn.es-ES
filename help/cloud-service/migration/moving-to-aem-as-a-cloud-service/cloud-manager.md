@@ -1,6 +1,6 @@
 ---
-title: Uso de Cloud Manager con AEM as a Cloud Service
-description: Obtenga información sobre Cloud Manager para AEM as a Cloud Service y sus diferencias con Cloud Manager para AEM en los servicios de administración de Adobe (AMS).
+title: AEM Uso de Cloud Manager con as a Cloud Service
+description: AEM Obtenga información acerca de Cloud Manager para el as a Cloud Service AEM de la y sus diferencias con Cloud Manager para la administración de la en el Adobe (AMS).
 version: Cloud Service
 feature: Cloud Manager
 topic: Migration, Upgrade
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 # Cloud Manager
 
-Obtenga información sobre Cloud Manager para AEM as a Cloud Service y sus diferencias con Cloud Manager para AEM en los servicios de administración de Adobe (AMS).
+AEM Obtenga información acerca de Cloud Manager para el as a Cloud Service AEM de la y sus diferencias con Cloud Manager para la administración de la en el Adobe (AMS).
 
 >[!VIDEO](https://video.tv.adobe.com/v/336961?quality=12&learn=on)
 
@@ -26,14 +26,14 @@ Obtenga información sobre Cloud Manager para AEM as a Cloud Service y sus difer
 
 Aplique sus conocimientos probando lo que ha aprendido con este ejercicio práctico.
 
-Antes de intentar el ejercicio práctico, asegúrese de haber visto y comprendido el vídeo de arriba y los siguientes materiales:
+Antes de probar el ejercicio práctico, asegúrese de haber visto y entendido el vídeo anterior y los siguientes materiales:
 
-+ [Pensar de forma diferente en AEM as a Cloud Service](./introduction.md)
++ [AEM Pensar de manera diferente sobre el as a Cloud Service](./introduction.md)
 + [Incorporación](./onboarding.md)
 
 Además, asegúrese de haber completado el ejercicio práctico anterior:
 
-+ [Incorporación de ejercicios prácticos](./onboarding.md#hands-on-exercise)
++ [Ejercicio práctico de incorporación](./onboarding.md#hands-on-exercise)
 
 <table style="border-width:0">
     <tr>
@@ -45,7 +45,7 @@ Además, asegúrese de haber completado el ejercicio práctico anterior:
             </a>        
         </td>
         <td style="width:100%;margin-bottom:1rem;">
-            <div style="font-size:1.25rem;font-weight:400;">Uso compartido con Cloud Manager</div>
+            <div style="font-size:1.25rem;font-weight:400;">Prácticas con Cloud Manager</div>
             <p style="margin:1rem 0">
                 Explore la activación de una canalización de Cloud Manager mediante el complemento AIO CLI Cloud Manager.
             </p>

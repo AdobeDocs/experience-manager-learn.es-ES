@@ -1,6 +1,6 @@
 ---
-title: Uso de CAPTCHA con AEM Forms adaptable
-description: Adición y uso de un CAPTCHA con AEM Adaptive Forms.
+title: AEM Uso de CAPTCHA con Forms adaptable de la
+description: AEM Adición y uso de un CAPTCHA con Forms adaptable de.
 feature: Adaptive Forms,Workflow
 version: 6.4,6.5
 topic: Development
@@ -15,42 +15,42 @@ ht-degree: 0%
 
 ---
 
-# Uso de CAPTCHA con AEM Forms adaptable{#using-captchas-with-aem-adaptive-forms}
+# AEM Uso de CAPTCHA con Forms adaptable de la{#using-captchas-with-aem-adaptive-forms}
 
-Adición y uso de un CAPTCHA con AEM Adaptive Forms.
+AEM Adición y uso de un CAPTCHA con Forms adaptable de.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18336?quality=12&learn=on)
 
-*Este vídeo explica el proceso de adición de un CAPTCHA a un formulario adaptable AEM mediante el servicio AEM CAPTCHA incorporado, así como el servicio reCAPTCHA de Google.*
+*AEM AEM Este vídeo muestra el proceso de agregar un CAPTCHA a un formulario adaptable de la mediante el servicio integrado de CAPTCHA, así como el servicio reCAPTCHA de Google.*
 
 >[!NOTE]
 >
->Esta función solo está disponible a partir de AEM 6.3.
+>AEM Esta función solo está disponible a partir de la versión 6.3 de la versión de.
 
 >[!NOTE]
 >
->**Para configurar reCaptcha en la instancia de publicación, siga los pasos**
+>**Para configurar reCaptcha en una instancia de publicación, siga los pasos**
 >
 >Configurar reCaptach en la instancia de autor
 >
->abrir el Felix [consola web](http://localhost:4502/system/console/bundles) en la instancia de autor
+>abra el Felix [consola web](http://localhost:4502/system/console/bundles) en la instancia de autor
 >
 >buscar el paquete com.adobe.granite.crypto.file
 >
->Tenga en cuenta el ID del paquete. En mi caso son 20
+>Anote el ID del paquete. En mi instancia son 20
 >
 >Vaya al ID del paquete en el sistema de archivos de la instancia de autor
 >
 >* &lt;author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle20/data
 * Copiar los archivos HMAC y maestro
 >
-Abra el [consola web felix](http://localhost:4502/system/console/bundles) en la instancia de publicación. Busque el paquete com.adobe.granite.crypto.file . Tenga en cuenta el ID del paquete
+Abra el [consola web felix](http://localhost:4502/system/console/bundles) en la instancia de publicación. Busque el paquete com.adobe.granite.crypto.file. Anote el ID del paquete
 Vaya al ID del paquete en el sistema de archivos de la instancia de publicación
 * &lt;publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle20/data
-* elimine los archivos HMAC y maestro existentes.
-* pegar los archivos HMAC y maestro copiados de la instancia de autor
+* elimine los archivos HMAC y maestros existentes.
+* pegue los archivos HMAC y maestro copiados de la instancia de autor
 >
-Reinicie el servidor de publicación de AEM
+AEM Reinicie el servidor de publicación de la
 
 ## Materiales de apoyo {#supporting-materials}
 

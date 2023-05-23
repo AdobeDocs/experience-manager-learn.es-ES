@@ -1,6 +1,6 @@
 ---
 title: Adición de componentes al panel Ingresos
-description: Añadiremos una tabla al panel Ingresos . Configure las filas de tabla y utilice el editor de reglas para calcular el total general.
+description: Agregaremos una tabla al panel Ingresos. Configure las filas de la tabla y utilice el editor de reglas para calcular el total general.
 feature: Adaptive Forms
 version: 6.4,6.5
 thumbnail: 22198.jpg
@@ -18,19 +18,19 @@ ht-degree: 1%
 
 # Adición de componentes al panel Ingresos {#adding-components-to-income-panel}
 
-Añadiremos una tabla al panel Ingresos . Configure las filas de tabla y utilice el editor de reglas para calcular el total general.
+Agregaremos una tabla al panel Ingresos. Configure las filas de la tabla y utilice el editor de reglas para calcular el total general.
 
-**Agregar y configurar componente de tabla**
+**Agregar y configurar el componente Tabla**
 
 >[!VIDEO](https://video.tv.adobe.com/v/22198?quality=12&learn=on)
 
 
 
-## Hacer dinámica la tabla de ingresos {#make-the-income-table-dynamic}
+## Dinamizar la tabla de ingresos {#make-the-income-table-dynamic}
 
 **Asegúrese de que está en el modo de edición. El botón de edición se encuentra en la parte superior derecha del explorador.**
 
-* De forma predeterminada, cuando se inserta una tabla en el formulario adaptable, la tabla no es dinámica, lo que significa que no se pueden agregar nuevas filas a la tabla durante la ejecución.
+* De forma predeterminada, al insertar una tabla en un formulario adaptable, la tabla no es dinámica, lo que significa que no se pueden agregar nuevas filas a la tabla durante la ejecución.
 
 * Actualice el explorador.
 
@@ -38,7 +38,7 @@ Añadiremos una tabla al panel Ingresos . Configure las filas de tabla y utilice
 
 * Haga clic en el icono de la llave inglesa para abrir la hoja de propiedades.
 
-* Defina Mínimo y Máximo en 1 y 5 en Repetir configuración y guarde los cambios haciendo clic en el icono de marca de verificación azul. Esto significa que la tabla puede tener un máximo de 5 filas. Para tener un número indefinido de filas, establezca el recuento máximo en -1.
+* Defina los recuentos Mínimo y Máximo en 1 y 5 bajo la Configuración de repetición y guarde los cambios haciendo clic en el icono de marca de verificación azul. Esto significa que la tabla puede tener un máximo de 5 filas. Para que un número indefinido de filas establezca el recuento máximo en -1.
 
 ## Crear regla para calcular el total general {#create-rule-to-calculate-grand-total}
 

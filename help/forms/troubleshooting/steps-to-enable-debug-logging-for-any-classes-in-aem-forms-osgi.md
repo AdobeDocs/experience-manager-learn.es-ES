@@ -1,6 +1,6 @@
 ---
 title: Pasos para habilitar el registro de depuración para cualquier clase en AEM Forms OSGi
-description: Configuración del registro de depuración para la solución de problemas de OSGi de AEM Forms
+description: Configurar el registro de depuración para solucionar problemas de AEM Forms OSGi
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Pasos para habilitar el registro de depuración para cualquier clase en AEM Forms OSGi
 
-*Este vídeo muestra los pasos para habilitar el registro de depuración para cualquier clase en AEM Forms OSGi.*
+*Este vídeo explica los pasos para habilitar el registro de depuración para cualquier clase en AEM Forms OSGi.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335521?quality=12&learn=on)

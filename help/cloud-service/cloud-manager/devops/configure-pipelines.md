@@ -1,6 +1,6 @@
 ---
-title: Configuración de canalizaciones de Cloud Manager
-description: Configure una canalización en AEM y explore los distintos tipos de canalizaciones.
+title: Configurar canalizaciones de Cloud Manager
+description: AEM Configure una canalización en y explore los distintos tipos de canalizaciones.
 role: Developer
 level: Beginner
 type: Tutorial

@@ -1,6 +1,6 @@
 ---
-title: Implementar los métodos de la interfaz
-description: Implemente los métodos de interfaz para crear archivos pdf mediante la API de REST de Document Cloud.
+title: Implementación de los métodos de la interfaz
+description: Implemente los métodos de interfaz para crear archivos PDF mediante la API de REST de Document Cloud.
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 El siguiente es el código completo de la clase que implementa la interfaz.
 
-Esta clase utiliza 2 métodos de utilidad `getAccessToken`, `getJWTToken` y el método estático `getContentAnalyserRequest` de la clase `GetContentAnalyser`.
+Esta clase utiliza dos métodos de utilidad `getAccessToken`, `getJWTToken` y método estático `getContentAnalyserRequest` de `GetContentAnalyser` clase.
 
 
 ```java

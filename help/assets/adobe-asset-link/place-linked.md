@@ -1,6 +1,6 @@
 ---
-title: Uso de la operación Colocar recursos vinculados
-description: Aprenda a utilizar recursos de AEM Assets mediante la operación Colocar vínculo .
+title: Uso de la operación Colocar recurso vinculado
+description: Obtenga información sobre cómo utilizar recursos de AEM Assets mediante la operación Colocar vínculo.
 sub-product: Experience Manager Assets
 feature: Adobe Asset Link
 version: Cloud Service
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Colocar elemento vinculado{#place-linked}
 
-Aprenda a utilizar recursos de AEM Assets mediante la operación Colocar vínculo .
+Obtenga información sobre cómo utilizar recursos de AEM Assets mediante la operación Colocar vínculo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/34839?quality=12&learn=on)

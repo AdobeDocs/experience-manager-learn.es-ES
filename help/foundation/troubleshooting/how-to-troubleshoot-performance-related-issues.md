@@ -1,6 +1,6 @@
 ---
-title: Solución de problemas relacionados con el rendimiento en AEM
-description: Pasos para investigar problemas relacionados con el rendimiento
+title: AEM Solución de problemas relacionados con el rendimiento en el
+description: Pasos para investigar los problemas relacionados con el rendimiento
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Solución de problemas relacionados con el rendimiento en AEM
+# AEM Solución de problemas relacionados con el rendimiento en el
 
-*Este vídeo muestra los pasos para solucionar problemas relacionados con el rendimiento en AEM.*
+*AEM Este vídeo explica los pasos para solucionar problemas relacionados con el rendimiento en los entornos de trabajo de.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335472?quality=12&learn=on)

@@ -1,6 +1,6 @@
 ---
-title: Variables en AEM flujo de trabajo[parte 5]
-description: Uso de variables de tipo XML, JSON, ArrayList, Document en un flujo de trabajo AEM
+title: AEM Variables en flujo de trabajo de la[Parte 5]
+description: AEM Uso de variables de tipo XML, JSON, ArrayList o Document en un flujo de trabajo de
 version: 6.5
 topic: Development
 role: Developer
@@ -13,10 +13,10 @@ ht-degree: 0%
 
 ---
 
-# Editor de reglas en AEM flujo de trabajo
+# AEM Editor de reglas en flujo de trabajo de
 
-El componente Or-Split se utiliza para hacer el enrutamiento en AEM flujo de trabajo. Antes de AEM versión 6.5, tenía que escribir un ECMA o código personalizado para habilitar el enrutamiento condicional. En AEM 6.5 ahora tenemos la capacidad de usar el editor de reglas para crear reglas comerciales que determinen la ruta que se ejecutará.
+AEM El componente OR-Split se utiliza para realizar el enrutamiento en el flujo de trabajo de. AEM Antes de la versión 6.5 de, tenía que escribir un ECMA o código personalizado para habilitar el enrutamiento condicional. AEM En 6.5 tenemos ahora la capacidad de usar el editor de reglas para crear reglas de negocio que determinarán la ruta a ejecutar.
 
-El siguiente vídeo muestra la capacidad de utilizar el editor de reglas para realizar el procesamiento condicional en el flujo de trabajo AEM
+AEM El siguiente vídeo muestra la capacidad de utilizar el editor de reglas para realizar un procesamiento condicional en el flujo de trabajo de la
 
 >[!VIDEO](https://video.tv.adobe.com/v/26362?quality=12&learn=on)

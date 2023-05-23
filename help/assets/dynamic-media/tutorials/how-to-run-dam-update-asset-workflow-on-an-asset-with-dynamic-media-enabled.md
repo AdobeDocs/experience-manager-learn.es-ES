@@ -1,5 +1,5 @@
 ---
-title: Procesamiento de recursos para AEM Dynamic Media
+title: AEM Procesamiento de recursos para la de Dynamic Media
 description: Pasos para ejecutar el flujo de trabajo de recursos de actualización de DAM en un recurso que tenga Dynamic Media habilitado.
 role: Developer
 level: Intermediate
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# Procesamiento de recursos para AEM Dynamic Media
+# AEM Procesamiento de recursos para la de Dynamic Media
 
-Este vídeo recorre el proceso para ejecutar el flujo de trabajo de recursos de actualización de DAM en un recurso con Dynamic Media habilitado.
+Este vídeo muestra el proceso para ejecutar el flujo de trabajo de recursos de actualización de DAM en un recurso con Dynamic Media habilitado.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335456?quality=12&learn=on)

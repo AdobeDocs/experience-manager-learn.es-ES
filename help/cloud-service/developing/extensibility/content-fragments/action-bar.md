@@ -1,6 +1,6 @@
 ---
-title: Extensiones de la barra de acciones de la consola Fragmento de contenido de AEM
-description: Obtenga información sobre cómo crear extensiones de barra de acciones de la consola Fragmento de contenido AEM.
+title: AEM Extensiones de la barra de acciones de la consola Fragmento de contenido
+description: AEM Obtenga información sobre cómo crear extensiones de barra de acciones de la consola Fragmento de contenido de la.
 feature: Developer Tools
 version: Cloud Service
 topic: Development
@@ -9,30 +9,30 @@ level: Beginner
 recommendations: noDisplay, noCatalog
 kt: 11603
 last-substantial-update: 2022-12-01T00:00:00Z
-source-git-commit: a7b32982b547eb292384d2ebde80ba745091702a
+exl-id: 97d26a1f-f9a7-4e57-a5ef-8bb2f3611088
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 0%
 
 ---
 
+# Extensión de barra de acciones
 
-# Extensión de la barra de acciones
+![Extensión de barra de acciones](./assets/action-bar/action-bar.png){align="center"}
 
-![Extensión de la barra de acciones](./assets/action-bar/action-bar.png){align="center"}
+AEM Las extensiones que incluyen una barra de acciones presentan un botón a la acción de la consola Fragmento de contenido de la aplicación que se muestra al __1 o más__ Los fragmentos de contenido están seleccionados. Dado que los botones de extensión de la barra de acciones solo se muestran cuando se selecciona al menos un fragmento de contenido, suelen actuar sobre los fragmentos de contenido seleccionados. Algunos ejemplos son:
 
-Extensiones que incluyen una barra de acciones, introduzca un botón en la acción de la Consola de fragmentos de contenido de AEM que se muestra al __1 o más__ Los fragmentos de contenido están seleccionados. Debido a que los botones de extensión de la barra de acciones solo se muestran cuando se selecciona al menos un fragmento de contenido, normalmente actúan sobre los fragmentos de contenido seleccionados. Algunos ejemplos son:
-
-+ Invocación de un proceso empresarial o flujo de trabajo en los fragmentos de contenido seleccionados.
++ Invocar un proceso o flujo de trabajo empresarial en los fragmentos de contenido seleccionados.
 + Actualizar o cambiar los datos de los fragmentos de contenido seleccionados.
 
 ## Registro de extensiones
 
-`ExtensionRegistration.js` es el punto de entrada de la extensión de AEM y define:
+`ExtensionRegistration.js` AEM es el punto de entrada para la extensión de la y define lo siguiente:
 
 1. El tipo de extensión; en el caso de un botón de barra de acciones.
-1. La definición del botón de extensión, en `getButton()` función.
-1. El controlador de clic del botón, en la sección `onClick()` función.
+1. Definición del botón de extensión, en `getButton()` función.
+1. El controlador de clics para el botón, en el `onClick()` función.
 
 + `./src/aem-cf-console-admin-1/web-src/src/components/ExtensionRegistration.js`
 
@@ -72,12 +72,12 @@ function ExtensionRegistration() {
 
 ![Modal](./assets/modal/modal.png)
 
-AEM las extensiones de la barra de acciones de la consola de fragmentos de contenido pueden requerir:
+AEM Las extensiones de la barra de acciones de la Consola de fragmento de contenido pueden requerir lo siguiente:
 
 + Entrada adicional del usuario para realizar la acción deseada.
 + La capacidad de proporcionar al usuario información detallada sobre el resultado de la acción.
 
-Para satisfacer estos requisitos, la extensión de la consola de fragmentos de contenido de AEM permite un modal personalizado que se procesa como una aplicación React.
+AEM Para admitir estos requisitos, la extensión de la consola Fragmento de contenido de la aplicación permite un modal personalizado que se procesa como una aplicación de React.
 
 + `./src/aem-cf-console-admin-1/web-src/src/components/ExtensionRegistration.js`
 
@@ -113,8 +113,8 @@ function ExtensionRegistration() {
 ">
   <div class="is-flex is-padded-small is-padded-big-mobile">
     <div>
-      <p class="has-text-weight-bold is-size-36 is-size-27-touch is-margin-bottom-big has-text-blackest">Pasar a la creación de un modal</p>
-      <p class="has-text-blackest">Aprenda a crear un modal que se muestre al hacer clic en el botón de extensión de la barra de acciones.</p>
+      <p class="has-text-weight-bold is-size-36 is-size-27-touch is-margin-bottom-big has-text-blackest">Pasar a creación de un modal</p>
+      <p class="has-text-blackest">Obtenga información sobre cómo crear un modal que se muestra al hacer clic en el botón de extensión de barra de acciones.</p>
       <div class="has-align-start is-margin-top-big">
         <a href="./modal.md" target="_blank" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
           <span class="spectrum-Button-label has-no-wrap has-text-weight-bold" title="Aprenda a crear un modal">Aprenda a crear un modal</span>
@@ -126,13 +126,13 @@ function ExtensionRegistration() {
 
 ## Sin modal
 
-En ocasiones, AEM extensiones de la barra de acciones de la consola de fragmentos de contenido no requieren más interacción con el usuario, por ejemplo:
+AEM En ocasiones, las extensiones de la barra de acciones de la consola Fragmento de contenido no requieren ninguna interacción adicional con el usuario, por ejemplo:
 
-+ Invocación de un proceso back-end que no requiera la entrada del usuario, como importar o exportar.
++ Invocar un proceso back-end que no requiera la entrada del usuario, como la importación o exportación.
 
-En estos casos, la extensión de la consola Fragmento de contenido de AEM no requiere una [modal](#modal)y realice el trabajo directamente en el botón de barra de acciones `onClick` controlador.
+AEM En estos casos, la extensión de la consola Fragmento de contenido de la aplicación no requiere un [modal](#modal)y realice el trabajo directamente en el botón de la barra de acciones `onClick` controlador.
 
-La extensión de la consola Fragmento de contenido de AEM permite que un indicador de progreso superponga la consola Fragmento de contenido de AEM mientras se realiza el trabajo, lo que impide que el usuario realice más acciones. El uso del indicador de progreso es opcional, pero útil para comunicar al usuario el progreso del trabajo sincrónico.
+AEM AEM La extensión de la consola Fragmento de contenido de la aplicación permite que un indicador de progreso se superponga a la consola Fragmento de contenido de la aplicación mientras se realiza el trabajo, lo que impide que el usuario realice más acciones. El uso del indicador de progreso es opcional, pero resulta útil para comunicar el progreso del trabajo sincrónico al usuario.
 
 + `./src/aem-cf-console-admin-1/web-src/src/components/ExtensionRegistration.js`
 

@@ -1,6 +1,6 @@
 ---
 title: Conceptos básicos del conector mejorado de Workfront
-description: Obtenga información sobre los conceptos básicos del conector mejorado de Adobe Workfront y Experience Manager Assets.
+description: Obtenga información acerca de los conceptos básicos del conector mejorado de Adobe Workfront y Experience Manager Assets.
 version: Cloud Service
 topic: Content Management, Integrations
 role: Admin, User
@@ -18,12 +18,12 @@ ht-degree: 0%
 
 # Conceptos básicos del conector mejorado de Workfront
 
-Obtenga información sobre los conceptos básicos del conector mejorado de recursos de Adobe Workfront y Experience Manager, incluido cómo:
+Obtenga información acerca de los conceptos básicos del conector mejorado de Adobe Workfront y Experience Manager Assets, incluido cómo:
 
 + Vincular recursos y carpetas
 + Definir asignaciones de metadatos
-+ Enviar recursos a AEM
++ AEM Envío de recursos a la
 + Recursos de versión
-+ Publicación automática de recursos
++ Publicar recursos automáticamente
 
 >[!VIDEO](https://video.tv.adobe.com/v/337575?quality=12&learn=on)

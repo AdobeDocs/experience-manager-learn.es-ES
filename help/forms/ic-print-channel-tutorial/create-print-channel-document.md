@@ -1,7 +1,7 @@
 ---
-title: Crear Comunicación Interactiva Para El Canal De Impresión
+title: Crear Una Comunicación Interactiva Para El Canal Imprimir
 seo-title: Create Interactive Communication For Print Channel
-description: Esta es la parte 6 del tutorial en varias partes para crear su primer documento de comunicación interactivo para el canal de impresión. En esta parte, se crea el documento de comunicación interactiva para el canal de impresión.
+description: Esta es la parte 6 del tutorial de varias partes para crear el primer documento de comunicación interactiva para el canal Imprimir. En esta parte, se crea un documento de comunicación interactiva para el canal Imprimir.
 seo-description: This is part 6 of multipart tutorial for creating your first interactive communication document for the print channel. In this part, Interactive Communication Document for Print channel is created.
 uuid: 25318a2a-be9d-47d8-806b-d99c8e1c6a74
 feature: Interactive Communication
@@ -24,14 +24,14 @@ ht-degree: 2%
 
 ---
 
-# Crear Comunicación Interactiva Para El Canal De Impresión {#create-interactive-communication-for-print-channel}
+# Crear Una Comunicación Interactiva Para El Canal Imprimir {#create-interactive-communication-for-print-channel}
 
-En esta parte, se crea el documento de comunicación interactiva para el canal de impresión.
+En esta parte, se crea un documento de comunicación interactiva para el canal Imprimir.
 
-Después de definir y configurar el origen de datos y el modelo de datos de formulario, crearemos nuestra comunicación interactiva para el canal de impresión
+Después de definir y configurar la fuente de datos y el modelo de datos de formulario, ahora crearemos nuestra comunicación interactiva para el canal de impresión
 
 >[!VIDEO](https://video.tv.adobe.com/v/37888?quality=12&learn=on)
 
 ## Pasos siguientes
 
-[Añadir contenido a áreas de destino](./add-content-to-target-areas.md)
+[Añadir contenido a las áreas de destino](./add-content-to-target-areas.md)

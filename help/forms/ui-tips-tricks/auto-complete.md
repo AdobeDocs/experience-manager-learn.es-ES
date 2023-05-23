@@ -1,6 +1,6 @@
 ---
 title: Capacidad de autocompletar en AEM Forms
-description: Permite a los usuarios buscar y seleccionar rápidamente de una lista previamente rellenada de valores a medida que escriben, aprovechando la búsqueda y el filtrado.
+description: Permite a los usuarios buscar y seleccionar rápidamente valores de una lista previamente rellenada a medida que escriben, aprovechando la búsqueda y el filtrado.
 feature: Adaptive Forms
 type: Tutorial
 version: 6.5
@@ -9,27 +9,28 @@ role: Developer
 level: Beginner
 kt: 11374
 last-substantial-update: 2022-11-01T00:00:00Z
-source-git-commit: 4af14b7d72ebdbea04e68a9a64afa1a96d1c1aeb
+exl-id: e9a696f9-ba63-462d-93a8-e9a7a1e94e72
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 0%
 
 ---
 
-# Implementación de autocompletar
+# Implementar Completar automáticamente
 
-Implemente la capacidad de autocompletar en AEM formularios utilizando la función de autocompletar de jquery.
-El ejemplo incluido en este artículo utiliza una variedad de fuentes de datos (matriz estática, matriz dinámica rellenada desde una respuesta de API de REST) para rellenar las sugerencias a medida que el usuario comienza a escribir en el campo de texto.
+AEM Implemente la capacidad de completado automático en los formularios de mediante la función de completado automático de jquery.
+El ejemplo incluido con este artículo utiliza una variedad de fuentes de datos (matriz estática, matriz dinámica rellenada a partir de una respuesta de API de REST) para rellenar las sugerencias a medida que el usuario comienza a escribir en el campo de texto.
 
-El código utilizado para realizar la función de autocompletar está asociado con el suceso initialize del campo .
+El código utilizado para realizar la capacidad de autocompletar está asociado al evento initialize del campo.
 
-## Proporcionar una sugerencia para la dirección
+## Sugerencia de dirección
 
 ![sugerencias de país](assets/auto-complete2.png)
 
 
 
-El siguiente es el código utilizado para proporcionar sugerencias de direcciones de calle
+El siguiente es el código utilizado para proporcionar sugerencias de direcciones de calles
 
 ```javascript
 $(".streetAddress input").autocomplete({
@@ -62,11 +63,11 @@ $(".streetAddress input").autocomplete({
 
 
 
-## Sugerencias con emoji
+## Sugerencias con emojis
 
 ![sugerencias de país](assets/auto-complete3.png)
 
-El siguiente código se utilizó para mostrar emoji en la lista de sugerencias
+El siguiente código se utilizó para mostrar los emoji en la lista de sugerencias
 
 ```javascript
 var values=["Wolf \u{1F98A}", "Lion \u{1F981}","Puppy \u{1F436}","Giraffe \u{1F992}","Frog \u{1F438}"];
@@ -77,8 +78,8 @@ minLength: 1, source: values, delay: 0
 );
 ```
 
-La variable [formulario de ejemplo se puede descargar](assets/auto-complete-form.zip) desde aquí. Asegúrese de proporcionar su propio nombre de usuario/clave de API mediante el editor de código para que el código realice llamadas de REST correctas.
+El [se puede descargar un formulario de ejemplo](assets/auto-complete-form.zip) desde aquí. Asegúrese de proporcionar su propio nombre de usuario/clave de API mediante el editor de código para que el código realice llamadas REST correctamente.
 
 >[!NOTE]
 >
-> Para que funcione la autocompleción, asegúrese de que el formulario utiliza la siguiente biblioteca de cliente **cq.jquery.ui**. Esta biblioteca de cliente incluye AEM.
+> Para que funcione el completado automático, asegúrese de que el formulario utiliza la siguiente biblioteca de cliente **cq.jquery.ui**. AEM Esta biblioteca de cliente viene con el código de acceso de la aplicación

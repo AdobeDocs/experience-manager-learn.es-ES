@@ -1,36 +1,33 @@
 ---
 title: Implementar los recursos localmente
-description: Implementar los recursos del tutorial en la instancia de AEM local
+description: AEM Implementación de los recursos del tutorial en la instancia local de
 feature: Adaptive Forms
 version: 6.5
 topic: Development
 role: Developer
 level: Beginner
 last-substantial-update: 2023-01-04T00:00:00Z
-source-git-commit: ddef90067d3ae4a3c6a705b5e109e474bab34f6d
+exl-id: d23b51ba-1efb-4505-b5b3-44a02177e467
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '158'
-ht-degree: 5%
+ht-degree: 3%
 
 ---
 
 # Implementar en el sistema
 
-Siga los pasos que se indican a continuación para que este caso de uso funcione en la instancia de AEM local.
+AEM Siga los pasos que se indican a continuación para que este caso de uso funcione en su instancia de local.
 
-* [Implementar el paquete DevelopingWithServiceUser](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip) contenido en el archivo zip.
+* [Implementar el paquete DevelopersWithServiceUser](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip) incluido en el archivo zip.
 
-* Añada la siguiente entrada en el servicio de asignador de usuarios del servicio Apache Sling **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service** usando la variable [configMgr](http://localhost:4502/system/console/configMgr).
+* Agregue la siguiente entrada en el servicio asignador de usuarios del servicio Apache Sling **DesarrollarWithServiceUser.core:getformsresourceresolver=fd-service** uso del [configMgr](http://localhost:4502/system/console/configMgr).
 
-* [Implementar el paquete de boletines](assets/Newsletters.core-1.0.0-SNAPSHOT.jar). Este paquete contiene el código para enumerar el contenido de la carpeta y ensamblar el boletín seleccionado.
+* [Implementar el paquete de boletines](assets/Newsletters.core-1.0.0-SNAPSHOT.jar). Este paquete contiene el código para enumerar el contenido de la carpeta y combinar los boletines seleccionados.
 
-* [Importación del paquete mediante el Administrador de paquetes](assets/newsletter.zip). Este paquete contiene archivos pdf de muestra y biblioteca de cliente para probar la solución.
+* [Importe el paquete mediante el Administrador de paquetes](assets/newsletter.zip). Este paquete contiene una biblioteca de cliente y archivos PDF de ejemplo para probar la solución.
 
-* [Importación del formulario adaptable de ejemplo](assets/sample-adaptive-form.zip). Este formulario muestra los boletines que se pueden seleccionar.
+* [Importar el formulario adaptable de ejemplo](assets/sample-adaptive-form.zip). Este formulario muestra los boletines que se pueden seleccionar.
 
-* [Obtener una vista previa del formulario](http://localhost:4502/content/dam/formsanddocuments/downloadarchivednewsletters/jcr:content?wcmmode=disabled).
-Seleccione un par de boletines para descargar.Los boletines seleccionados se combinarán en un pdf y se le devolverán.
-
-
-
-
+* [Previsualización del formulario](http://localhost:4502/content/dam/formsanddocuments/downloadarchivednewsletters/jcr:content?wcmmode=disabled).
+Seleccione un par de boletines para descargar. Los boletines seleccionados se combinarán en un PDF y se le devolverán.

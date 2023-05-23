@@ -1,5 +1,5 @@
 ---
-title: Ejecución de la herramienta de depuración de procesos desde la línea de comandos
+title: Cómo ejecutar la herramienta de depuración de procesos desde la línea de comandos
 description: Pasos para ejecutar la herramienta de depuración de procesos desde la línea de comandos para eliminar registros de la tabla Administrador de trabajos
 type: Troubleshooting
 role: Developer
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# Ejecución de la herramienta de depuración de procesos desde la línea de comandos
+# Cómo ejecutar la herramienta de depuración de procesos desde la línea de comandos
 
-*Este vídeo recorre los pasos para ejecutar la herramienta de depuración de procesos desde la línea de comandos.*
+*Este vídeo muestra los pasos para ejecutar la herramienta de depuración de procesos desde la línea de comandos.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335508?quality=12&learn=on)

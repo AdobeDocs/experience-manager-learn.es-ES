@@ -1,6 +1,6 @@
 ---
-title: Agregar y configurar barra de herramientas
-description: Permite desplazarse entre los paneles de formulario.
+title: Agregar y configurar la barra de herramientas
+description: Agregar la capacidad de desplazarse entre paneles de formulario.
 solution: Experience Manager,Experience Manager Forms
 type: Documentation
 role: Developer
@@ -18,8 +18,8 @@ ht-degree: 0%
 
 ---
 
-# Agregar y configurar barra de herramientas
+# Agregar y configurar la barra de herramientas
 
-La barra de herramientas se suele agregar a nivel de contenedor de formulario. La barra de herramientas puede contener botones para desplazarse a los paneles siguiente y anterior del formulario, enviarlo, guardar los datos del formulario, etc.
+La barra de herramientas se suele agregar en el nivel del contenedor de formularios. La barra de herramientas puede contener botones para desplazarse a los paneles siguiente y anterior del formulario, enviarlo, guardar los datos del formulario, etc.
 
 >[!VIDEO](https://video.tv.adobe.com/v/332236?quality=12&learn=on)

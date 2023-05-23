@@ -1,5 +1,5 @@
 ---
-title: Configuración del panel de inicio
+title: Configurar el panel de inicio
 description: Agregue un componente de texto estático al panel de inicio.
 solution: Experience Manager,Experience Manager Forms
 type: Documentation
@@ -18,8 +18,8 @@ ht-degree: 0%
 
 ---
 
-# Configuración del panel de inicio
+# Configurar el panel de inicio
 
-Establezca el estilo del texto en el componente de texto estático mediante el editor de texto enriquecido.
+Defina un estilo para el texto en el componente de texto estático mediante el editor de texto enriquecido.
 
 >[!VIDEO](https://video.tv.adobe.com/v/332235?quality=12&learn=on)

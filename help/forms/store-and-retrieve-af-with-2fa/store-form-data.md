@@ -1,6 +1,6 @@
 ---
 title: Almacenar datos de formulario
-description: Almacenar datos de formulario junto con el nuevo mapa de archivos adjuntos en la base de datos
+description: Almacenar datos de formulario junto con la nueva asignación de datos adjuntos en la base de datos
 feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
@@ -19,14 +19,14 @@ ht-degree: 2%
 
 # Almacenar datos de formulario
 
-El siguiente paso es crear un servicio para insertar una nueva fila en la base de datos para almacenar los datos del formulario adaptable y los archivos adjuntos asociados.
-La siguiente captura de pantalla muestra una fila en la base de datos.
+El siguiente paso es crear un servicio para insertar una nueva fila en la base de datos para almacenar los datos del formulario adaptable y la información de datos adjuntos asociada.
+La captura de pantalla siguiente muestra una fila en la base de datos.
 
 
 ![fila de muestra](assets/sample-row.JPG)
 
 
-El siguiente código inserta una fila nueva en la base de datos con los datos adecuados
+El siguiente código inserta una nueva fila en la base de datos con los datos adecuados
 
 ```java
 public String storeFormData(String formData, String attachmentsInfo, String telephoneNumber) {
@@ -72,5 +72,5 @@ public String storeFormData(String formData, String attachmentsInfo, String tele
 
 ## Pasos siguientes
 
-[Implementación de Guardar y salir](./create-servlet.md)
+[Implementar Guardar y salir](./create-servlet.md)
 

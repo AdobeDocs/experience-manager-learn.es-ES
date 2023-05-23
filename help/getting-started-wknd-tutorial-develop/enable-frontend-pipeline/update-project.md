@@ -1,6 +1,6 @@
 ---
-title: Actualizar el proyecto de AEM de pila completa para utilizar la canalización de front-end
-description: Aprenda a actualizar el proyecto de AEM de pila completa para habilitarlo para la canalización front-end, de modo que solo compile e implemente los artefactos front-end.
+title: AEM Actualizar proyecto de de pila completa para utilizar canalización front-end
+description: AEM Obtenga información sobre cómo actualizar el proyecto de pila completa para habilitarlo para la canalización front-end, de modo que solo genere e implemente los artefactos front-end.
 version: Cloud Service
 type: Tutorial
 feature: AEM Project Archetype, Cloud Manager, CI-CD Pipeline
@@ -11,38 +11,38 @@ kt: 10689
 mini-toc-levels: 1
 index: y
 recommendations: noDisplay, noCatalog
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+exl-id: c4a961fb-e440-4f78-b40d-e8049078b3c0
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '653'
 ht-degree: 0%
 
 ---
 
+# AEM Actualizar proyecto de de pila completa para utilizar canalización front-end {#update-project-enable-frontend-pipeline}
 
-# Actualizar el proyecto de AEM de pila completa para utilizar la canalización de front-end {#update-project-enable-frontend-pipeline}
-
-En este capítulo, realizamos cambios de configuración en la variable __Proyecto WKND Sites__ para utilizar la canalización front-end para implementar JavaScript y CSS, en lugar de requerir una ejecución completa de la canalización de pila. Esto desvincula el ciclo de vida de desarrollo e implementación de artefactos front-end y back-end, lo que permite un proceso de desarrollo más rápido e iterativo en general.
+En este capítulo, realizamos cambios de configuración en __Proyecto de WKND Sites__ para utilizar la canalización front-end para implementar JavaScript y CSS, en lugar de requerir una ejecución de canalización completa. Esto desvincula el ciclo vital de desarrollo e implementación de los artefactos front-end y back-end, lo que permite un proceso de desarrollo más rápido e iterativo en general.
 
 ## Objetivos {#objectives}
 
-* Actualizar el proyecto de pila completa para utilizar la canalización de front-end
+* Actualizar el proyecto de pila completa para utilizar la canalización front-end
 
-## Resumen de los cambios de configuración en el proyecto de AEM de pila completa
+## AEM Información general sobre los cambios de configuración en el proyecto de código de pila completa de la
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409419?quality=12&learn=on)
 
 ## Requisitos previos {#prerequisites}
 
-Este es un tutorial en varias partes y se da por hecho que ha revisado la variable [Módulo &quot;ui.frontend&quot;](./review-uifrontend-module.md).
+Este es un tutorial de varias partes y se da por hecho que ha revisado la [Módulo &quot;ui.frontend&quot;](./review-uifrontend-module.md).
 
 
-## Cambios en el proyecto de AEM de pila completa
+## AEM Cambios en el proyecto de código de pila completa de la
 
-Hay tres cambios de configuración relacionados con el proyecto y un cambio de estilo para implementar en una ejecución de prueba, por lo que en total cuatro cambios específicos en el proyecto WKND para habilitarlo para el contrato de canalización del front-end.
+Hay tres cambios de configuración relacionados con el proyecto y un cambio de estilo que se deben implementar para una ejecución de prueba, por lo que en total hay cuatro cambios específicos en el proyecto WKND para habilitarlo para el contrato de canalización front-end.
 
-1. Elimine el `ui.frontend` módulo del ciclo de compilación de pila completa
+1. Retire el `ui.frontend` módulo del ciclo de compilación de pila completa
 
-   * En, la raíz del proyecto WKND Sites `pom.xml` comente el `<module>ui.frontend</module>` entrada de submódulo.
+   * En, la raíz del proyecto WKND Sites `pom.xml` comentar el `<module>ui.frontend</module>` entrada de submódulo.
 
    ```xml
        ...
@@ -56,7 +56,7 @@ Hay tres cambios de configuración relacionados con el proyecto y un cambio de e
        ...
    ```
 
-   * Y comentar la dependencia relacionada con el `ui.apps/pom.xml`
+   * Y dependencia relacionada con los comentarios del `ui.apps/pom.xml`
 
    ```xml
        ...
@@ -75,9 +75,9 @@ Hay tres cambios de configuración relacionados con el proyecto y un cambio de e
        ...
    ```
 
-1. Prepare el `ui.frontend` para el contrato de canalización front-end añadiendo dos nuevos archivos de configuración de webpack.
+1. Prepare el `ui.frontend` para el contrato de canalización front-end al agregar dos nuevos archivos de configuración de webpack.
 
-   * Copie el `webpack.common.js` como `webpack.theme.common.js`y cambiar `output` propiedad y `MiniCssExtractPlugin`, `CopyWebpackPlugin` parámetros de configuración del complemento como se muestra a continuación:
+   * Copiar el existente `webpack.common.js` as `webpack.theme.common.js`y cambie `output` propiedad y `MiniCssExtractPlugin`, `CopyWebpackPlugin` parámetros de configuración de complemento como se muestra a continuación:
 
    ```javascript
    ...
@@ -99,7 +99,7 @@ Hay tres cambios de configuración relacionados con el proyecto y un cambio de e
    ...
    ```
 
-   * Copie el `webpack.prod.js` como `webpack.theme.prod.js`y cambie el `common` ubicación de la variable en el archivo anterior como
+   * Copiar el existente `webpack.prod.js` as `webpack.theme.prod.js`y cambie la `common` ubicación de la variable en el archivo anterior como
 
    ```javascript
    ...
@@ -109,14 +109,14 @@ Hay tres cambios de configuración relacionados con el proyecto y un cambio de e
 
    >[!NOTE]
    >
-   >Los dos cambios de configuración de &quot;webpack&quot; anteriores son tener diferentes nombres de archivos de salida y carpetas, de modo que podemos diferenciar fácilmente entre los artefactos de front-end de la canalización generada por clientlib (Full-stack) y los generados por temas (front-end).
+   >Los dos cambios de configuración anteriores del &quot;webpack&quot; deben tener nombres de archivo y carpeta de salida diferentes, para que podamos diferenciar fácilmente entre los artefactos clientlib (full-stack) y los generados por el tema (front-end) del front-end de la canalización.
    >
-   >Como supuso, los cambios anteriores también se pueden omitir para usar configuraciones de webpack existentes, pero se requieren los cambios siguientes.
+   >Como ha adivinado, los cambios anteriores se pueden omitir para utilizar también las configuraciones de Webpack existentes, pero los cambios siguientes son obligatorios.
    >
-   >Depende de ti cómo quieres nombrarlos u organizarlos.
+   >Depende de usted cómo desee ponerles nombre u organizarlos.
 
 
-   * En el `package.json` , asegúrese de que la variable  `name` el valor de propiedad es el mismo que el nombre de sitio de la variable `/conf` nodo . Y debajo de `scripts` propiedad, `build` secuencia de comandos que indica cómo crear los archivos front-end desde este módulo.
+   * En el `package.json` , asegúrese de que la variable  `name` el valor de la propiedad es el mismo que el nombre del sitio de `/conf` nodo. Y bajo el `scripts` propiedad, a `build` secuencia de comandos que indica cómo crear los archivos front-end a partir de este módulo.
 
    ```javascript
        {
@@ -132,9 +132,9 @@ Hay tres cambios de configuración relacionados con el proyecto y un cambio de e
        }
    ```
 
-1. Prepare el `ui.content` para la canalización front-end añadiendo dos configuraciones de Sling.
+1. Prepare el `ui.content` para la canalización front-end al agregar dos configuraciones de Sling.
 
-   * Cree un archivo en `com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig` : esto incluye todos los archivos front-end que la variable `ui.frontend` el módulo genera en `dist` carpeta que utiliza el proceso de compilación de webpack.
+   * Cree un archivo en `com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig` - esto incluye todos los archivos front-end que el `ui.frontend` El módulo de se genera en `dist` usando el proceso de generación de webpack.
 
    ```xml
    ...
@@ -157,10 +157,10 @@ Hay tres cambios de configuración relacionados con el proyecto y un cambio de e
 
    >[!TIP]
    >
-   >    Consulte la [HtmlPageItemsConfig](https://github.com/adobe/aem-guides-wknd/blob/feature/frontend-pipeline/ui.content/src/main/content/jcr_root/conf/wknd/_sling_configs/com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig/.content.xml) en el __AEM proyecto WKND Sites__.
+   >    Ver la información completa [HtmlPageItemsConfig](https://github.com/adobe/aem-guides-wknd/blob/feature/frontend-pipeline/ui.content/src/main/content/jcr_root/conf/wknd/_sling_configs/com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig/.content.xml) en el __AEM Proyecto de sitios WKND de WKND__.
 
 
-   * Segundo, `com.adobe.aem.wcm.site.manager.config.SiteConfig` con la variable `themePackageName` siendo el mismo que la variable `package.json` y `name` valor de propiedad y `siteTemplatePath` apuntando a un `/libs/wcm/core/site-templates/aem-site-template-stub-2.0.0` valor de ruta stub.
+   * Segundo, el `com.adobe.aem.wcm.site.manager.config.SiteConfig` con el `themePackageName` siendo el mismo que el `package.json` y `name` valor de propiedad y `siteTemplatePath` apuntando a un `/libs/wcm/core/site-templates/aem-site-template-stub-2.0.0` valor de ruta auxiliar.
 
    ```xml
    ...
@@ -175,35 +175,35 @@ Hay tres cambios de configuración relacionados con el proyecto y un cambio de e
 
    >[!TIP]
    >
-   >    Consulte la [SiteConfig](https://github.com/adobe/aem-guides-wknd/blob/feature/frontend-pipeline/ui.content/src/main/content/jcr_root/conf/wknd/_sling_configs/com.adobe.aem.wcm.site.manager.config.SiteConfig/.content.xml) en el __AEM proyecto WKND Sites__.
+   >    Consulte, la [SiteConfig](https://github.com/adobe/aem-guides-wknd/blob/feature/frontend-pipeline/ui.content/src/main/content/jcr_root/conf/wknd/_sling_configs/com.adobe.aem.wcm.site.manager.config.SiteConfig/.content.xml) en el __AEM Proyecto de sitios WKND de WKND__.
 
-1. Un tema o estilos cambian para implementarse mediante canalización de front-end para una ejecución de prueba; estamos cambiando `text-color` a Adobe rojo (o puede elegir el suyo propio) actualizando la variable `ui.frontend/src/main/webpack/base/sass/_variables.scss`.
+1. Un tema o un cambio de estilos para implementar mediante la canalización front-end para una ejecución de prueba; estamos cambiando `text-color` al Adobe rojo (o puede elegir el suyo propio) actualizando el `ui.frontend/src/main/webpack/base/sass/_variables.scss`.
 
    ```css
        $black:     #a40606;
        ...
    ```
 
-Finalmente, inserte estos cambios en el repositorio de Git de Adobe de su programa.
+Finalmente, inserte estos cambios en el repositorio de Git de Adobe del programa.
 
 
 >[!AVAILABILITY]
 >
-> Estos cambios están disponibles en GitHub dentro de la variable [__canalización front-end__](https://github.com/adobe/aem-guides-wknd/tree/feature/frontend-pipeline) de __AEM proyecto WKND Sites__.
+> Estos cambios están disponibles en GitHub dentro de [__canalización front-end__](https://github.com/adobe/aem-guides-wknd/tree/feature/frontend-pipeline) rama de la __AEM Proyecto de sitios WKND de WKND__.
 
 
 ## Precaución - _Habilitar canalización front-end_ botón
 
-La variable [Selector de raíl](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html) &#39;s [Sitio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html) muestra la variable **Habilitar canalización front-end** al seleccionar la raíz del sitio o la página del sitio. Hacer clic **Habilitar canalización front-end** anulará lo anterior **Configuración de Sling**, asegúrese de **no haga clic en** este botón después de implementar los cambios anteriores a través de la ejecución de canalización de Cloud Manager.
+El [Selector de carril](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html) de [Sitio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html) muestra la opción **Habilitar canalización front-end** al seleccionar la raíz o la página del sitio. Clic **Habilitar canalización front-end** sobrescribirá el botón anterior **Configuraciones de Sling**, asegúrese de que **no haga clic en** Haga clic en este botón después de implementar los cambios anteriores a través de la ejecución de la canalización de Cloud Manager.
 
 ![Botón Habilitar canalización front-end](assets/enable-front-end-Pipeline-button.png)
 
-Si se hace clic en él por error, debe volver a ejecutar las canalizaciones para asegurarse de que se restauran el contrato de canalización del front-end y los cambios.
+Si se hace clic en él por error, debe volver a ejecutar las canalizaciones para asegurarse de que se restauran el contrato y los cambios de la canalización front-end.
 
 ## Enhorabuena. {#congratulations}
 
-Felicidades, ha actualizado el proyecto WKND Sites para habilitarlo para el contrato de canalización front-end.
+¡Enhorabuena! Ha actualizado el proyecto de WKND Sites para habilitarlo para el contrato de canalización front-end.
 
 ## Pasos siguientes {#next-steps}
 
-En el capítulo siguiente, [Implementar mediante la canalización front-end](create-frontend-pipeline.md), creará y ejecutará una canalización front-end y verificará cómo __alejado__ desde la entrega de recursos front-end basados en &quot;/etc.clientlibs&quot;.
+En el capítulo siguiente, [Implementación mediante la canalización front-end](create-frontend-pipeline.md), creará y ejecutará una canalización front-end y verificará cómo __se alejó__ de la entrega de recursos front-end basada en /etc.clientlibs.

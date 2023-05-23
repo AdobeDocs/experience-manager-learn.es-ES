@@ -1,6 +1,6 @@
 ---
-title: Obteniendo ForcedDesconecteException. Posibles causas y pasos para mitigar el problema.
-description: Pasos para resolver la excepción "ForcedDesconecteException - Este miembro ha sido forzado a salir del sistema distribuido".
+title: Obteniendo excepción ForcedDisconnect. Posibles causas y pasos para mitigar el problema.
+description: 'Pasos para resolver la excepción "ForcedDisconnectException: este miembro se ha expulsado del sistema distribuido".'
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# Pasos para mitigar ForcedDesconecteException
+# Pasos para mitigar ForcedDisconnectException
 
-*Este vídeo muestra las posibles causas y pasos para mitigar ForcedDesconecteException*
+*Este vídeo muestra las posibles causas y pasos para mitigar ForcedDisconnectException*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335483?quality=12&learn=on)

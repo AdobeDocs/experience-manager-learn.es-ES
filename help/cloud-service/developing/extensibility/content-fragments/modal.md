@@ -1,6 +1,6 @@
 ---
-title: Modo de extensión de la consola de fragmentos de contenido de AEM
-description: Obtenga información sobre cómo crear un modal de extensión de la consola de fragmentos de contenido AEM.
+title: AEM Modo de extensión de la consola Fragmento de contenido
+description: AEM Obtenga información sobre cómo crear un modal de extensión de la consola Fragmento de contenido de.
 feature: Developer Tools
 version: Cloud Service
 topic: Development
@@ -9,34 +9,34 @@ level: Beginner
 recommendations: noDisplay, noCatalog
 kt: 11603
 last-substantial-update: 2022-12-01T00:00:00Z
-source-git-commit: a7b32982b547eb292384d2ebde80ba745091702a
+exl-id: e7376eaf-f7d7-48fe-9387-a0e4089806c2
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
 
 ---
 
-
 # Modo de extensión
 
-![AEM modal de extensión de fragmento de contenido](./assets/modal/modal.png){align="center"}
+![AEM Modo de extensión de fragmento de contenido](./assets/modal/modal.png){align="center"}
 
-AEM modal de extensión de fragmento de contenido proporciona una forma de adjuntar una interfaz de usuario personalizada a las extensiones de fragmento de contenido de AEM, ya sea [Barra de acciones](./action-bar.md) o [Menú Encabezado](./header-menu.md) botones.
+AEM AEM El modo de extensión de fragmento de contenido proporciona una forma de adjuntar una interfaz de usuario personalizada a las extensiones de fragmento de contenido de la, ya sea [Barra de acciones](./action-bar.md) o [Menú de encabezado](./header-menu.md) botones.
 
-Los modelos son aplicaciones React, basadas en [Espectro React](https://react-spectrum.adobe.com/react-spectrum/), y pueden crear cualquier IU personalizada requerida por la extensión, que incluya, entre otras cosas:
+Los modelos son aplicaciones de React basadas en [Espectro de reacción](https://react-spectrum.adobe.com/react-spectrum/)y pueden crear cualquier interfaz de usuario personalizada que requiera la extensión, incluidas, entre otras:
 
-+ Diálogo de confirmación
++ Cuadros de diálogo de confirmación
 + [Formularios de entrada](https://react-spectrum.adobe.com/react-spectrum/#forms)
 + [Indicadores de progreso](https://react-spectrum.adobe.com/react-spectrum/#status)
 + [Resumen de resultados](https://react-spectrum.adobe.com/react-spectrum/#collections)
 + Mensajes de error
-+ ... o incluso una aplicación de React completamente volada y multivista!
++ ... o incluso una aplicación React de múltiples vistas!
 
-## Rutas móviles
+## Rutas modales
 
-La experiencia modal se define mediante la extensión de la aplicación App Builder React definida en la sección `web-src` carpeta. Al igual que con cualquier aplicación React, la experiencia completa se organiza mediante [Reacción de rutas](https://reactrouter.com/en/main/components/routes) que procesa [Reacción de componentes](https://reactjs.org/docs/components-and-props.html).
+La experiencia modal se define mediante la extensión de la aplicación React del Generador de aplicaciones definida en `web-src` carpeta. Al igual que con cualquier aplicación de React, la experiencia completa se organiza mediante [Reaccionar rutas](https://reactrouter.com/en/main/components/routes) que procesan [Reaccionar componentes](https://reactjs.org/docs/components-and-props.html).
 
-Se requiere al menos una ruta para generar la vista modal inicial. Esta ruta inicial se invoca en la variable [registro de extensión](#extension-registration)&#39;s `onClick(..)` , como se muestra a continuación.
+Se requiere al menos una ruta para generar la vista modal inicial. Esta ruta inicial se invoca en la variable [registro de extensión](#extension-registration)de `onClick(..)` función, como se muestra a continuación.
 
 
 + `./src/aem-cf-console-admin-1/web-src/src/components/App.js`
@@ -78,14 +78,14 @@ function App(props) {
 
 ## Registro de extensiones
 
-Para abrir un modal, llame a `guestConnection.host.modal.showUrl(..)` se realiza desde la extensión de `onClick(..)` función. `showUrl(..)` se pasa un objeto JavaScript con claves o valores:
+Para abrir un modal, llame a `guestConnection.host.modal.showUrl(..)` se realiza desde el `onClick(..)` función. `showUrl(..)` se pasa a un objeto JavaScript con clave/valores:
 
-+ `title` proporciona al usuario el nombre del título del modal
-+ `url` es la dirección URL que invoca la variable [React route](#modal-routes) responsable de la vista inicial del modal.
++ `title` proporciona el nombre del título del modal mostrado al usuario
++ `url` es la dirección URL que invoca el [Ruta de reacción](#modal-routes) responsable de la vista inicial del modal.
 
-Es imperativo que `url` pasado a `guestConnection.host.modal.showUrl(..)` resuelve enrutar en la extensión de , de lo contrario, no se muestra nada en el modal.
+Es imperativo que la `url` pasado a `guestConnection.host.modal.showUrl(..)` resuelve en la ruta en la extensión; de lo contrario, no aparece nada en el modal.
 
-Consulte la [menú encabezado](./header-menu.md#modal) y [barra de acciones](./action-bar.md#modal) documentación sobre cómo crear direcciones URL modales.
+Revise la [menú de encabezado](./header-menu.md#modal) y [barra de acciones](./action-bar.md#modal) documentación sobre cómo crear direcciones URL modales.
 
 + `./src/aem-cf-console-admin-1/web-src/src/components/ExtensionRegistration.js`
 
@@ -108,11 +108,11 @@ function ExtensionRegistration() {
 
 ## Componente modal
 
-Cada ruta de la extensión, [que no es el `index` route](./extension-registration.md#app-routes), se asigna a un componente React que se puede procesar en el modal de la extensión.
+Cada ruta de la extensión, [ese no es el `index` ruta](./extension-registration.md#app-routes), se asigna a un componente de React que se puede procesar en el modal de la extensión.
 
-Un modal puede estar compuesto por cualquier número de rutas React, desde un modo simple de una ruta hasta un modal complejo de varias rutas.
+Un modal puede estar compuesto por cualquier número de rutas de React, desde un modal simple de una ruta a un modal complejo de varias rutas.
 
-A continuación se muestra un modo sencillo de una ruta, aunque esta vista modal podría contener vínculos React que invoquen otras rutas o comportamientos.
+A continuación se ilustra un modal simple de una ruta, pero esta vista modal podría contener vínculos de React que invoquen otras rutas o comportamientos.
 
 + `./src/aem-cf-console-admin-1/web-src/src/components/MyModal.js`
 
@@ -182,11 +182,11 @@ export default function MyModal() {
 }
 ```
 
-## Cierre el modal
+## Cerrar el modal
 
-![AEM botón de cierre modal de la extensión del fragmento de contenido](./assets/modal/close.png){align="center"}
+![AEM Botón Cerrar modal de extensión de fragmento de contenido](./assets/modal/close.png){align="center"}
 
-Los modelos deben proporcionar su propio control. Esto se hace invocando `guestConnection.host.modal.close()`.
+Los modelos deben proporcionar su propio control estricto. Esto se realiza invocando `guestConnection.host.modal.close()`.
 
 ```javascript
 <ButtonGroup align="end">

@@ -1,6 +1,6 @@
 ---
-title: Instalación de parches de Designer
-description: Este artículo le guiará por los pasos para instalar los parches de AEM Forms Designer
+title: Cómo instalar parches de Designer
+description: Este artículo le guiará por los pasos para instalar parches de AEM Forms Designer
 type: Troubleshooting
 role: Admin
 level: Beginner
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ---
 
-# Instalación de parches de Designer
+# Cómo instalar parches de Designer
 
 *Este vídeo muestra el proceso de instalación de parches de Designer.*
 

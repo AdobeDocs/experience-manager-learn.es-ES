@@ -1,6 +1,6 @@
 ---
 title: Uso de modelos de datos de asociación con AEM Forms
-description: Añadir asociaciones entre entidades en el Modelo de datos de formulario
+description: Agregar asociaciones entre entidades en el modelo de datos de formulario
 feature: Adaptive Forms, Form Data Model
 version: 6.4,6.5
 topic: Development
@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Uso de modelos de datos de asociación con AEM Forms{#using-association-data-models-with-aem-forms}
 
-Crear asociaciones entre 2 entidades en el Modelo de datos de formulario
+Crear asociaciones entre 2 entidades en el modelo de datos de formulario
 
 >[!VIDEO](https://video.tv.adobe.com/v/17737?quality=12&learn=on)

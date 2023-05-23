@@ -1,6 +1,6 @@
 ---
-title: Rellene previamente el formulario adaptable con datos de Azure Storage
-description: Obtenga información sobre cómo utilizar el servicio de cumplimentación previa de AEM Forms para rellenar formularios adaptables desde Azure Blob Storage.
+title: Rellenar previamente formularios adaptables con datos del almacenamiento de Azure
+description: Aprenda a utilizar el servicio de relleno previo de AEM Forms para rellenar formularios adaptables desde el almacenamiento del blob de Azure.
 feature: Adaptive Forms
 type: Documentation
 role: Developer
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Rellene previamente el formulario adaptable con datos del almacenamiento de Azure
+# Rellenar previamente formularios adaptables con datos del almacenamiento de Azure
 
-Obtenga información sobre cómo utilizar el servicio de cumplimentación previa de AEM Forms para rellenar formularios adaptables desde Azure Blob Storage.
+Aprenda a utilizar el servicio de relleno previo de AEM Forms para rellenar formularios adaptables desde el almacenamiento del blob de Azure.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335714?quality=12&learn=on)

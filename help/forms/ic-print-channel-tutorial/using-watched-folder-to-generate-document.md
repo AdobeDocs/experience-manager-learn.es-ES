@@ -1,7 +1,7 @@
 ---
-title: Generación de documentos de canal de impresión mediante una carpeta vigilada
+title: Generar documentos de canal de impresión mediante carpeta inspeccionada
 seo-title: Generating Print Channel Documents Using Watched Folder
-description: Esta es la parte 10 del tutorial de varios pasos para crear su primer documento interactivo de comunicaciones para el canal de impresión. En esta parte, generaremos documentos de canal de impresión utilizando el mecanismo de carpetas vigiladas.
+description: Esta es la parte 10 del tutorial de varios pasos para crear el primer documento de comunicaciones interactivas para el canal Imprimir. En esta parte, generaremos documentos del canal de impresión utilizando el mecanismo de carpetas vigiladas.
 seo-description: This is part 10 of multistep tutorial for creating your first interactive communications document for the print channel. In this part, we will generate print channel documents using the watched folder mechanism.
 uuid: 9e39f4e3-1053-4839-9338-09961ac54f81
 feature: Interactive Communication
@@ -23,19 +23,19 @@ ht-degree: 0%
 
 ---
 
-# Generación de documentos de canal de impresión mediante una carpeta vigilada
+# Generar documentos de canal de impresión mediante carpeta inspeccionada
 
-En esta parte, generaremos documentos de canal de impresión utilizando el mecanismo de carpetas vigiladas.
+En esta parte, generaremos documentos del canal de impresión utilizando el mecanismo de carpetas vigiladas.
 
-Después de crear y probar su documento de canal de impresión, necesitamos un mecanismo para generar estos documentos en modo por lotes o bajo demanda. Normalmente, este tipo de documentos se genera en modo por lotes y el mecanismo más común es usar carpetas vigiladas.
+Después de crear y probar el documento del canal de impresión, necesitamos un mecanismo para generar estos documentos en modo por lotes o bajo demanda. Normalmente, estos tipos de documentos se generan en modo por lotes y el mecanismo más común es utilizar una carpeta vigilada.
 
-Cuando configura una carpeta vigilada en AEM, asocia un script ECMA o un código java que se ejecuta cuando se coloca un archivo en la carpeta vigilada. En este artículo, nos centraremos en el script ECMA que generará documentos de canal de impresión y los guardará en el sistema de archivos.
+AEM Cuando configura una carpeta inspeccionada en el, asocia un script ECMA o un código java que se ejecuta cuando se suelta un archivo en la carpeta inspeccionada. En este artículo, nos centraremos en el script ECMA que generará documentos del canal de impresión y los guardará en el sistema de archivos.
 
-La configuración de carpetas vigiladas y la secuencia de comandos ECMA forman parte de los recursos que ha importado en el [inicio de este tutorial](introduction.md)
+La configuración de la carpeta inspeccionada y el script ECMA forman parte de los recursos importados en [inicio de este tutorial](introduction.md)
 
-El archivo de entrada que se suelta en la carpeta vigilada tiene la siguiente estructura. El script ECMA lee los números de cuenta y genera el documento de canal de impresión para cada una de estas cuentas.
+El archivo de entrada que se coloca en la carpeta vigilada tiene la siguiente estructura. El script ECMA lee los números de cuenta y genera un documento de canal de impresión para cada una de estas cuentas.
 
-Para obtener más información sobre el script ECMA para la generación de documentos, [consulte este artículo](/help/forms/interactive-communications/generating-interactive-communications-print-document-using-api-tutorial-use.md)
+Para obtener más información sobre el script ECMA para generar documentos, [consulte este artículo](/help/forms/interactive-communications/generating-interactive-communications-print-document-using-api-tutorial-use.md)
 
 ```xml
 <accountnumbers>
@@ -56,12 +56,12 @@ Para generar un documento de canal de impresión mediante el mecanismo de carpet
 
 * Inicie sesión en crx y vaya a /etc/fd/watchfolder/scripts/PrintPDF.ecma
 
-* Asegúrese de que la ruta a InteractiveCommunicationsDocument está apuntando al documento correcto que desea imprimir.(Línea 1)
-* Anote el saveLocation(Línea 2).Puede cambiarlo según sus necesidades.
-* Asegúrese de que el parámetro de entrada del Modelo de datos de formulario está enlazado al atributo de solicitud y que su valor de enlace está establecido en &quot;accountnumber&quot;. Consulte la captura de pantalla a continuación.
+* Asegúrese de que la ruta a interactiveCommunicationsDocument apunte al documento correcto que desea imprimir.( Línea 1)
+* Tome nota de saveLocation(Línea 2). Puede cambiarla según sus necesidades.
+* Asegúrese de que el parámetro de entrada del modelo de datos de formulario está enlazado al atributo de solicitud y que su valor de enlace está establecido en &quot;accountnumber&quot;. Consulte la siguiente captura de pantalla.
    ![solicitud](assets/requestattributeprintchannel.gif)
 
-* Cree el archivo accountnumber.xml con el siguiente contenido
+* Cree el archivo accountnumbers.xml con el siguiente contenido
 
 ```xml
 <accountnumbers>
@@ -76,8 +76,8 @@ Para generar un documento de canal de impresión mediante el mecanismo de carpet
 
 * Coloque el archivo xml en C:\RenderPrintChannel\input
 
-* Compruebe los archivos pdf en la ubicación de guardado tal como se especifica en la secuencia de comandos ECMA.
+* Compruebe los archivos PDF en la ubicación de guardado según se especifica en el script ECMA.
 
 ## Pasos siguientes
 
-[Apertura de la interfaz de usuario del agente en la presentación del formulario](./opening-agent-ui-on-form-submission.md)
+[Abrir la interfaz de usuario del agente al enviar el formulario](./opening-agent-ui-on-form-submission.md)

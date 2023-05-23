@@ -1,6 +1,6 @@
 ---
-title: Ejemplo de actualización de propiedades masivas AEM extensión de la consola de fragmentos de contenido
-description: Ejemplo AEM extensión de la consola Fragmentos de contenido que actualiza de forma masiva una propiedad de fragmentos de contenido.
+title: AEM Ejemplo de actualización masiva de propiedades Extensión de la consola Fragmentos de contenido
+description: AEM Un ejemplo de extensión de la consola Fragmentos de contenido que actualiza de forma masiva una propiedad de fragmentos de contenido.
 feature: Developer Tools
 version: Cloud Service
 topic: Development
@@ -10,69 +10,69 @@ kt: 11604
 thumbnail: KT-11604.png
 doc-type: article
 last-substantial-update: 2022-12-09T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+exl-id: fbfb5c10-95f8-4875-88dd-9a941d7a16fd
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 0%
 
 ---
 
+# Extensión de ejemplo de actualización masiva de propiedades
 
-# Extensión de ejemplo de actualización de propiedades masivas
+![Actualización de propiedades por lotes](./assets/bulk-property-update/screenshot.png){align="center"}
 
-![Actualización de propiedades de forma masiva](./assets/bulk-property-update/screenshot.png){align="center"}
-
-Este ejemplo AEM la extensión de la consola de fragmentos de contenido es un [barra de acciones](../action-bar.md) extensión que actualiza de forma masiva una propiedad de fragmento de contenido a un valor común.
+AEM Este ejemplo de extensión de la consola de fragmentos de contenido es un [barra de acciones](../action-bar.md) que actualiza de forma masiva una propiedad de fragmento de contenido a un valor común.
 
 El flujo funcional de la extensión de ejemplo es el siguiente:
 
 ![Flujo de acción de Adobe I/O Runtime](./assets/bulk-property-update/flow.png){align="center"}
 
-1. Seleccione Fragmentos de contenido y haga clic en el botón de la extensión en el [barra de acciones](#extension-registration) abre el [modal](#modal).
-1. La variable [modal](#modal) muestra un formulario de entrada personalizado creado con [Espectro React](https://react-spectrum.adobe.com/react-spectrum/).
-1. Al enviar el formulario, se envía la lista de fragmentos de contenido seleccionados y el host de AEM al [acción personalizada de Adobe I/O Runtime](#adobe-io-runtime-action).
-1. La variable [Acción de Adobe I/O Runtime](#adobe-io-runtime-action) valida las entradas y realiza solicitudes de PUT HTTP a AEM para actualizar los fragmentos de contenido seleccionados.
+1. Seleccione Fragmentos de contenido y haga clic en el botón de la extensión en la [barra de acciones](#extension-registration) abre el [modal](#modal).
+1. El [modal](#modal) muestra un formulario de entrada personalizado creado con [Espectro de reacción](https://react-spectrum.adobe.com/react-spectrum/).
+1. AEM Al enviar el formulario, se envía la lista de los fragmentos de contenido seleccionados y el host de a [acción personalizada de Adobe I/O Runtime](#adobe-io-runtime-action).
+1. El [Acción de Adobe I/O Runtime](#adobe-io-runtime-action) valida las entradas y realiza solicitudes de PUT AEM HTTP para actualizar los fragmentos de contenido seleccionados, lo que a su vez se convierte en una solicitud de.
 1. Una serie de PUT HTTP para cada fragmento de contenido para actualizar la propiedad especificada.
-1. AEM as a Cloud Service persiste en las actualizaciones de propiedades del fragmento de contenido y devuelve respuestas de éxito o de error a la acción de Adobe I/O Runtime.
+1. AEM El as a Cloud Service mantiene las actualizaciones de la propiedad en el fragmento de contenido y devuelve respuestas correctas o de error a la acción de Adobe I/O Runtime.
 1. El modal recibió la respuesta de la acción de Adobe I/O Runtime y muestra una lista de actualizaciones masivas correctas.
 
-En este vídeo se analiza la extensión de actualización de propiedades por lotes de ejemplo, cómo funciona y cómo se desarrolla.
+Este vídeo revisa el ejemplo de la extensión de actualización de propiedades masivas, cómo funciona y cómo se desarrolla.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3412296?quality=12&learn=on)
 
-## La aplicación de extensión de App Builder
+## La aplicación de extensión del App Builder
 
-El ejemplo utiliza un proyecto existente de la consola de Adobe Developer y, al inicializar la aplicación de App Builder, utiliza las siguientes opciones: `aio app init`.
+El ejemplo utiliza un proyecto de consola de Adobe Developer existente y las siguientes opciones al inicializar la aplicación App Builder mediante `aio app init`.
 
 + ¿Qué plantillas desea buscar?: `All Extension Points`
 + Elija las plantillas que desea instalar:` @adobe/aem-cf-admin-ui-ext-tpl`
-+ ¿Qué nombre desea asignar a la extensión?: `Bulk property update`
++ ¿Qué nombre desea dar a su extensión?: `Bulk property update`
 + Proporcione una breve descripción de la extensión: `An example action bar extension that bulk updates a single property one or more content fragments.`
-+ ¿Con qué versión desea empezar?: `0.0.1`
-+ ¿Qué te gustaría hacer a continuación?
++ ¿Con qué versión desea comenzar?: `0.0.1`
++ ¿Qué desea hacer a continuación?
    + `Add a custom button to Action Bar`
       + Proporcione un nombre de etiqueta para el botón: `Bulk property update`
       + ¿Necesita mostrar un modal para el botón? `y`
    + `Add server-side handler`
-      + Adobe I/O Runtime permite invocar código sin servidor bajo demanda. ¿Cómo le gustaría nombrar esta acción?: `generic`
+      + Adobe I/O Runtime permite invocar código sin servidor bajo demanda. ¿Cómo desea asignar un nombre a esta acción?: `generic`
 
-La aplicación de extensión de App Builder generada se actualiza como se describe a continuación.
+La aplicación de extensión del App Builder generada se actualiza tal como se describe a continuación.
 
-## Rutas de la aplicación{#app-routes}
+## Rutas de aplicaciones{#app-routes}
 
-La variable `src/aem-cf-console-admin-1/web-src/src/components/App.js` contiene el [React router](https://reactrouter.com/en/main).
+El `src/aem-cf-console-admin-1/web-src/src/components/App.js` contiene el [React router](https://reactrouter.com/en/main).
 
 Existen dos conjuntos lógicos de rutas:
 
-1. La primera ruta asigna las solicitudes al `index.html`, que invoca el componente React responsable del [registro de extensión](#extension-registration).
+1. La primera ruta asigna solicitudes a `index.html`, que invoca el componente React responsable de [registro de extensión](#extension-registration).
 
    ```javascript
    <Route index element={<ExtensionRegistration />} />
    ```
 
-1. El segundo conjunto de rutas asigna las direcciones URL a los componentes React que representan el contenido del modal de la extensión. La variable `:selection` param representa una ruta de fragmento de contenido de lista delimitada.
+1. El segundo conjunto de rutas asigna direcciones URL a componentes de React que representan el contenido del modal de la extensión. El `:selection` param representa una ruta de fragmento de contenido de lista delimitada.
 
-   Si la extensión tiene varios botones para invocar acciones discretas, cada [registro de extensión](#extension-registration) se asigna a una ruta definida aquí.
+   Si la extensión tiene varios botones para invocar acciones discretas, [registro de extensión](#extension-registration) asigna a una ruta definida aquí.
 
    ```javascript
    <Route
@@ -83,11 +83,11 @@ Existen dos conjuntos lógicos de rutas:
 
 ## Registro de extensiones
 
-`ExtensionRegistration.js`, asignado al `index.html` route, es el punto de entrada para la extensión de AEM y define:
+`ExtensionRegistration.js`, asignado al `index.html` AEM route, es el punto de entrada para la extensión de la y define:
 
-1. La ubicación del botón de extensión aparece en la experiencia de creación de AEM (`actionBar` o `headerMenu`)
-1. La definición del botón de extensión en `getButton()` function
-1. El controlador de clic del botón, en la sección `onClick()` function
+1. AEM La ubicación del botón de extensión aparecerá en la experiencia de creación de la (`actionBar` o `headerMenu`)
+1. Definición del botón de extensión en `getButton()` función
+1. El controlador de clics para el botón, en el `onClick()` función
 
 + `src/aem-cf-console-admin-1/web-src/src/components/ExtensionRegistration.js`
 
@@ -137,20 +137,20 @@ function ExtensionRegistration() {
 
 ## Modal
 
-Cada ruta de la extensión, tal como se define en [`App.js`](#app-routes), se asigna a un componente React que se procesa en el modal de la extensión.
+Cada ruta de la extensión, tal como se define en [`App.js`](#app-routes), se asigna a un componente de React que se procesa en el modal de la extensión.
 
 En esta aplicación de ejemplo, hay un componente React modal (`BulkPropertyUpdateModal.js`) que tiene tres estados:
 
-1. Cargando, indicando que el usuario debe esperar
-1. Formulario de actualización de propiedades masivas que permite al usuario especificar el nombre y el valor de la propiedad que se va a actualizar
-1. La respuesta de la operación de actualización de propiedades por lotes, que enumera los fragmentos de contenido que se actualizaron y los que no se pudieron actualizar
+1. Cargando, lo que indica que el usuario debe esperar
+1. Formulario de actualización masiva de propiedades que permite al usuario especificar el nombre y el valor de la propiedad que se va a actualizar
+1. La respuesta de la operación de actualización masiva de propiedades, que enumera los fragmentos de contenido que se actualizaron y los que no se pudieron actualizar
 
-Es importante que cualquier interacción con AEM de la extensión se delegue en un [Acción de Adobe I/O Runtime de App Builder](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/), que es un proceso independiente sin servidor que se ejecuta en [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/).
-El uso de acciones de Adobe I/O Runtime para comunicarse con AEM, es evitar problemas de conectividad del Cross-Origin Resource Sharing (CORS).
+AEM Es importante señalar que cualquier interacción con los de la extensión debe delegarse a un [Acción de Adobe I/O Runtime de AppBuilder](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/), que es un proceso independiente sin servidor que se ejecuta en [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/).
+El uso de acciones de Adobe I/O Runtime AEM para comunicarse con los usuarios es para evitar problemas de conectividad de Intercambio de Recursos de Origen Cruzado (CORS).
 
-Cuando se envía el formulario Bulk Property Update, se envía una `onSubmitHandler()` invoca la acción de Adobe I/O Runtime, pasando el host de AEM actual (dominio) y el token de acceso de AEM del usuario, que a su vez llama a la función [API de fragmento de contenido AEM](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html) para actualizar los fragmentos de contenido.
+Cuando se envía el formulario de actualización masiva de propiedades, se crea un `onSubmitHandler()` invoca la acción de Adobe I/O Runtime AEM AEM, pasando el host (dominio) actual de la y el token de acceso del usuario, que a su vez llama a la [AEM API de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html) para actualizar los fragmentos de contenido.
 
-Cuando se recibe la respuesta de la acción de Adobe I/O Runtime, el modal se actualiza para mostrar los resultados de la operación de actualización de propiedades por lotes.
+Cuando se recibe la respuesta de la acción Adobe I/O Runtime, el modal se actualiza para mostrar los resultados de la operación de actualización de propiedades por lotes.
 
 + `src/aem-cf-console-admin-1/web-src/src/components/BulkPropertyUpdateModal.js`
 
@@ -409,14 +409,14 @@ export default function BulkPropertyUpdateModal() {
 
 ## Acción de Adobe I/O Runtime
 
-Una aplicación de AEM de extensión de App Builder puede definir o utilizar 0 o varias acciones de Adobe I/O Runtime.
-Las acciones de tiempo de ejecución de Adobe deben ser un trabajo responsable que requiera la interacción con AEM u otros servicios web de Adobe.
+AEM Una aplicación de App Builder de extensión puede definir o utilizar 0 o varias acciones de Adobe I/O Runtime.
+Las acciones de Adobe AEM en tiempo de ejecución deben ser un trabajo responsable que requiera interactuar con, o con otros servicios web de Adobe.
 
-En esta aplicación de ejemplo, la acción de Adobe I/O Runtime, que utiliza el nombre predeterminado `generic` - es responsable de:
+En esta aplicación de ejemplo, la acción Adobe I/O Runtime, que utiliza el nombre predeterminado `generic` - es responsable de:
 
-1. Realización de una serie de solicitudes HTTP a la API de fragmento de contenido de AEM para actualizar los fragmentos de contenido.
-1. Recopilación de las respuestas de estas solicitudes HTTP, recopilándolas en éxitos y errores
-1. Devolver la lista de éxitos y errores que muestra el modal (`BulkPropertyUpdateModal.js`)
+1. AEM Realización de una serie de solicitudes HTTP a la API de fragmentos de contenido de la para actualizar los fragmentos de contenido.
+1. Recopilar las respuestas de estas solicitudes HTTP, clasificarlas en éxitos y errores
+1. Devolver la lista de éxitos y errores para que la muestre el modal (`BulkPropertyUpdateModal.js`)
 
 + `src/aem-cf-console-admin-1/actions/generic/index.js`
 

@@ -1,6 +1,6 @@
 ---
-title: Etiquetas de AEM, carpetas vinculadas a proyectos y metadatos de carpetas para Workfront para AEM conector mejorado
-description: Obtenga información sobre cómo dirigir AEM Etiquetas en recursos a través de datos de Workfront, utilizar carpetas vinculadas a proyectos y datos de Workfront para AEM esquemas de metadatos de carpetas de recursos.
+title: AEM Etiquetas de, carpetas vinculadas a proyectos y metadatos de carpetas para el conector mejorado de Workfront AEM para la creación de
+description: AEM Obtenga información sobre cómo dirigir el uso de etiquetas de en recursos a través de datos de Workfront, utilizar carpetas vinculadas a proyectos y datos de Workfront AEM para crear esquemas de metadatos de carpetas de recursos de la.
 version: Cloud Service
 topic: Content Management, Integrations
 role: Admin, Architect, Developer
@@ -17,16 +17,16 @@ ht-degree: 0%
 
 ---
 
-# Etiquetas de AEM, carpetas vinculadas a proyectos y metadatos de carpetas
+# AEM Etiquetas, carpetas vinculadas a proyectos y metadatos de carpetas
 
-![AEM serie de expertos](./assets/banner.png)
+![AEM Serie de expertos de](./assets/banner.png)
 
-Obtenga información sobre cómo dirigir AEM Etiquetas en recursos a través de datos de Workfront, configurar y utilizar carpetas vinculadas a proyectos y datos de Workfront para AEM esquemas de metadatos de carpetas de recursos.
+AEM Obtenga información sobre cómo dirigir el uso de etiquetas de en recursos a través de datos de Workfront, configurar y utilizar carpetas vinculadas a proyectos y datos de Workfront AEM para crear esquemas de metadatos de carpetas de recursos de la.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340333?quality=12&learn=on)
 
-_Parte 3 bis [cuatro partes de la serie de expertos sobre el conector mejorado Workfront for Experience Manager](./overview.md)_
+_Tercera parte de a. [serie de expertos de cuatro partes sobre el conector mejorado de Workfront para Experience Manager](./overview.md)_
 
 ## Correcciones
 
-+ __@ 4:34 y 6:20__ AEM sintaxis de las etiquetas es incorrecta. Visualizaciones de vídeo `we-retail:apparel/footwear`. La sintaxis correcta es `["we-retail:apparel/footwear"]` o más generalmente `["namespace:tag/childtag"]`.
++ __@ 4:34 y 6:20__ AEM La sintaxis de las etiquetas de es incorrecta. Visualizaciones de vídeo `we-retail:apparel/footwear`. La sintaxis correcta es `["we-retail:apparel/footwear"]` o más generalmente `["namespace:tag/childtag"]`.

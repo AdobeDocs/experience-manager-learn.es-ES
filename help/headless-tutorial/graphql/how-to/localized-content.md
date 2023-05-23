@@ -1,6 +1,6 @@
 ---
-title: Uso de contenido localizado con AEM sin encabezado
-description: Aprenda a utilizar GraphQL para consultar AEM de contenido localizado.
+title: AEM Uso de contenido localizado con sin encabezado
+description: Aprenda a utilizar GraphQL AEM para consultar el contenido localizado en las listas de contenido de su sitio.
 version: Cloud Service
 feature: GraphQL API
 topic: Headless
@@ -8,37 +8,37 @@ role: Developer
 level: Intermediate
 kt: 10254
 thumbnail: KT-10254.jpeg
-source-git-commit: ae49fb45db6f075a34ae67475f2fcc5658cb0413
+exl-id: 5e3d115b-f3a1-4edc-86ab-3e0713a36d54
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 3%
 
 ---
 
+# AEM Contenido localizado con sin encabezado
 
-# Contenido localizado con AEM sin encabezado
-
-AEM proporciona un [Marco de integración de traducción](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/integration-framework.html) para contenido sin encabezado, lo que permite traducir fácilmente fragmentos de contenido y recursos auxiliares para su uso en distintas configuraciones regionales. Este es el mismo marco utilizado para traducir otros contenidos AEM, como páginas, fragmentos de experiencias, recursos y Forms. Una vez [se ha traducido contenido sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=es), y publicado, está listo para el consumo mediante aplicaciones sin encabezado.
+AEM proporciona un [Marco de integración de traducción](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/integration-framework.html) para contenido sin encabezado, lo que permite que los fragmentos de contenido y los recursos de soporte se traduzcan fácilmente para su uso en varias configuraciones regionales. AEM Este es el mismo marco de trabajo que se utiliza para traducir otro contenido, como páginas, fragmentos de experiencias, recursos y Forms. Una [se ha traducido el contenido sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=es), y publicado, está listo para su consumo por aplicaciones sin encabezado.
 
 ## Estructura de carpetas de recursos{#assets-folder-structure}
 
-Asegúrese de que los fragmentos de contenido localizados en AEM siguen el [estructura de localización recomendada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/getting-started.html#recommended-structure).
+AEM Asegúrese de que los fragmentos de contenido localizados en siguen de manera la [estructura de localización recomendada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/getting-started.html#recommended-structure).
 
-![Carpetas de recursos AEM localizadas](./assets/localized-content/asset-folders.jpg)
+![AEM Carpetas de recursos localizadas de la](./assets/localized-content/asset-folders.jpg)
 
-Las carpetas de configuración regional deben ser del mismo nivel y el nombre de la carpeta, en lugar de el título, debe ser válido [Código ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) que representa la configuración regional del contenido contenido de la carpeta.
+Las carpetas de configuración regional deben ser elementos del mismo nivel y el nombre de la carpeta, en lugar del título, debe ser un válido [Código ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) que representa la configuración regional del contenido contenido de la carpeta.
 
-El código de configuración regional también es el valor utilizado para filtrar los fragmentos de contenido que devuelve la consulta de GraphQL.
+El código de configuración regional también es el valor utilizado para filtrar los fragmentos de contenido devueltos por la consulta de GraphQL.
 
-| Código regional | AEM ruta | Configuración regional del contenido |
+| Código de configuración regional | AEM ruta de acceso de la | Configuración regional de contenido |
 |--------------------------------|----------|----------|
-| de | /content/dam/.../**de**/... | Contenido alemán |
+| de | /content/dam/.../**de**/... | Contenido en alemán |
 | en | /content/dam/.../**en**/... | Contenido en inglés |
 | es | /content/dam/.../**es**/... | Contenido en español |
 
 ## Consulta persistente de GraphQL
 
-AEM proporciona un `_locale` Filtro de GraphQL que filtra automáticamente el contenido por código de configuración regional . Por ejemplo, para consultar todas las aventuras de inglés en la [Proyecto del sitio WKND](https://github.com/adobe/aem-guides-wknd) se puede hacer con una nueva consulta persistente `wknd-shared/adventures-by-locale` definido como:
+AEM proporciona un `_locale` Filtro de GraphQL que filtra automáticamente el contenido por código de configuración regional Por ejemplo, consultar todas las aventuras en inglés en la [Proyecto del sitio WKND](https://github.com/adobe/aem-guides-wknd) se puede hacer con una nueva consulta persistente `wknd-shared/adventures-by-locale` definido como:
 
 ```graphql
 query($locale: String!) {
@@ -51,19 +51,19 @@ query($locale: String!) {
 }
 ```
 
-La variable `$locale` se usa en la variable `_locale` requiere el código de configuración regional (por ejemplo `en`, `en_us`o `de`) tal como se especifica en [AEM convención de localización de Asset Folder-Base](#assets-folder-structure).
+El `$locale` utilizada en la variable `_locale` Este filtro requiere el código de configuración regional (por ejemplo, `en`, `en_us`, o `de`) según se especifica en [AEM convención de localización basada en carpetas de recursos](#assets-folder-structure).
 
-## Ejemplo de reacción
+## Ejemplo de React
 
-Vamos a crear una aplicación React simple que controle el contenido de Aventura que se consulta desde AEM en función de un selector de configuración regional usando el `_locale` filtro.
+AEM Vamos a crear una aplicación React simple que controle desde qué contenido de Adventure se va a realizar la consulta en función de un selector de configuración regional usando la variable `_locale` filtro.
 
-When __Inglés__ se selecciona en el selector de configuración regional y, a continuación, en los fragmentos de contenido de aventura en inglés, en `/content/dam/wknd/en` cuando __Español__ está seleccionada y, a continuación, los fragmentos de contenido en español en `/content/dam/wknd/es`, etc.
+Cuándo __Inglés__ se selecciona en el selector de configuración regional y, a continuación, Fragmentos de contenido de aventura en inglés en `/content/dam/wknd/en` se devuelven, cuando __Español__ se selecciona y luego Fragmentos de contenido en español en `/content/dam/wknd/es`, etc., etc.
 
 ![Aplicación de ejemplo React localizada](./assets/localized-content/react-example.png)
 
-### Cree un `LocaleContext`{#locale-context}
+### Crear un `LocaleContext`{#locale-context}
 
-En primer lugar, cree un [Contexto de reacción](https://reactjs.org/docs/context.html) para permitir que la configuración regional se utilice en los componentes de la aplicación React.
+En primer lugar, cree un [Contexto de React](https://reactjs.org/docs/context.html) para permitir que la configuración regional se utilice en los componentes de la aplicación React.
 
 ```javascript
 // src/LocaleContext.js
@@ -80,11 +80,11 @@ const LocaleContext = React.createContext({
 export default LocaleContext;
 ```
 
-### Cree un `LocaleSwitcher` React, componente{#locale-switcher}
+### Crear un `LocaleSwitcher` Componente React{#locale-switcher}
 
-A continuación, cree un componente React del conmutador de configuración regional que establezca el valor [El contexto de configuración regional](#locale-context) a la selección del usuario.
+A continuación, cree un componente React del conmutador de configuración regional que establezca en [El contexto local](#locale-context) a la selección del usuario.
 
-Este valor de configuración regional se utiliza para dirigir las consultas de GraphQL, asegurándose de que solo devuelvan contenido que coincida con la configuración regional seleccionada.
+Este valor de configuración regional se utiliza para dirigir las consultas de GraphQL, asegurándose de que solo devuelven contenido que coincida con la configuración regional seleccionada.
 
 ```javascript
 // src/LocaleSwitcher.js
@@ -106,13 +106,13 @@ export default function LocaleSwitcher() {
 }
 ```
 
-### Consulte el contenido utilizando la variable `_locale` filter{#adventures}
+### Consulte el contenido mediante `_locale` filter{#adventures}
 
-El componente Adventures consulta AEM todas las aventuras por configuración regional y enumera sus títulos. Esto se logra pasando el valor de configuración regional almacenado en el contexto React a la consulta utilizando la variable `_locale` filtro.
+AEM El componente Aventuras consulta las de todas las aventuras por configuración regional y enumera sus títulos. Esto se logra pasando el valor de configuración regional almacenado en el contexto de React a la consulta utilizando `_locale` filtro.
 
-Este método se puede ampliar a otras consultas de la aplicación, lo que garantiza que todas las consultas solo incluyan contenido especificado por la selección de configuración regional de un usuario.
+Este método se puede ampliar a otras consultas de la aplicación, asegurándose de que todas las consultas incluyan únicamente el contenido especificado por la configuración regional seleccionada por el usuario.
 
-La consulta con AEM se realiza en el vínculo React personalizado [getAdventuresByLocale, descrito con más detalle en la documentación de Consulta AEM GraphQL](./aem-headless-sdk.md).
+AEM La consulta contra la se realiza en el vínculo React personalizado [AEM getAdventuresByLocale, descrito con más detalle en la documentación de Consulta de GraphQL](./aem-headless-sdk.md).
 
 ```javascript
 // src/Adventures.js
@@ -140,7 +140,7 @@ export default function Adventures() {
 
 ### Defina el `App.js`{#app-js}
 
-Por último, vincúlelo todo al ajustar la aplicación React con la variable `LanguageContext.Provider` y estableciendo el valor de configuración regional. Esto permite que los demás componentes de React: [LocaleSwitcher](#locale-switcher)y [Aventuras](#adventures) para compartir el estado de selección de la configuración regional.
+Por último, enlácelo todo envolviendo la aplicación React con el `LanguageContext.Provider` y establecer el valor de configuración regional. Esto permite a los demás componentes de React, [LocaleSwitcher](#locale-switcher), y [Aventuras](#adventures) para compartir el estado de selección de la configuración regional.
 
 ```javascript
 // src/App.js

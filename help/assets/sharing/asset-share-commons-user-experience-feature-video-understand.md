@@ -1,5 +1,5 @@
 ---
-title: Explicación de la experiencia de usuario de Asset Share Commons
+title: Explicación de la experiencia del usuario de Asset Share Commons
 description: Materiales para la comprensión funcional y técnica de Assets Share Commons
 version: 6.4, 6.5
 topic: Content Management
@@ -14,23 +14,23 @@ ht-degree: 1%
 
 ---
 
-# Explicación de la experiencia de usuario de Asset Share Commons{#understanding-asset-share-commons}
+# Explicación de la experiencia del usuario de Asset Share Commons{#understanding-asset-share-commons}
 
-Introducción rápida a las experiencias de creación y usuario de Asset Share Commons.
+Una introducción rápida a las experiencias de creación y usuario de Asset Share Commons.
 
 ## Experiencia del usuario
 
 >[!VIDEO](https://video.tv.adobe.com/v/20497?quality=12&learn=on)
 
-El vídeo ofrece una explicación abreviada de la experiencia del usuario para Asset Share Commons. La revisión afecta a las capacidades de la página de búsqueda, la página de detalles de los recursos, así como a varias acciones como Descargar, Compartir y Agregar al carro de compras.
+El vídeo ofrece una explicación abreviada de la experiencia del usuario con Asset Share Commons. La revisión afecta a las capacidades de la página Buscar, la página Detalles del recurso, así como a varias acciones como Descargar, Compartir y Agregar al carro de compras.
 
 ## Experiencia de creación
 
 >[!VIDEO](https://video.tv.adobe.com/v/20498?quality=12&learn=on)
 
-Este vídeo ofrece información general abreviada sobre las funciones básicas de creación de componentes en Asset Share Commons, para proporcionar una idea del nivel de capacidad de creación.
+Este vídeo proporciona una descripción resumida de las capacidades básicas de creación de componentes en Asset Share Commons, para proporcionar una idea del nivel de capacidad de creación.
 
 ## Recursos adicionales{#additional-resources}
 
-* [Descargas de la versión de Asset Share Commons](https://github.com/Adobe-Marketing-Cloud/asset-share-commons/releases)
-* [Descargas de la versión de ACS AEM Commons 3.11.0+](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)
+* [Descargas de la versión Asset Share Commons](https://github.com/Adobe-Marketing-Cloud/asset-share-commons/releases)
+* [AEM Descargas de la versión de ACS Commons 3.11.0+](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)

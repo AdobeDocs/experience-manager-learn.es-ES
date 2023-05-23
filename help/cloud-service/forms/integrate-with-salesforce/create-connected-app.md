@@ -1,6 +1,6 @@
 ---
-title: Cree la aplicación conectada a Salesforce.
-description: La aplicación conectada le permite integrar Salesforce con aplicaciones de terceros, como AEM Forms, con Salesforce.
+title: Cree una aplicación conectada a Salesforce.
+description: La aplicación conectada le permite integrar Salesforce con aplicaciones de terceros, como AEM Forms con Salesforce.
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
@@ -20,9 +20,9 @@ ht-degree: 0%
 
 # Crear aplicación conectada
 
-Una aplicación conectada es un marco que permite a una aplicación externa integrarse con Salesforce mediante API y protocolos estándar, como SAML, OAuth y OpenID Connect. Las aplicaciones conectadas utilizan estos protocolos para autenticar, autorizar y proporcionar el inicio de sesión único (SSO) para aplicaciones externas.
+Una aplicación conectada es un marco de trabajo que permite que una aplicación externa se integre con Salesforce mediante API y protocolos estándar, como SAML, OAuth y OpenID Connect. Las aplicaciones conectadas utilizan estos protocolos para autenticar, autorizar y proporcionar el inicio de sesión único (SSO) para las aplicaciones externas.
 
 >[!VIDEO](https://video.tv.adobe.com/v/331757?quality=12&learn=on)
 
 >[!NOTE]
->Asegúrese de crear una cuenta en [Salesforce Developer Edition](https://developer.salesforce.com/signup) ya que las API de REST están habilitadas de forma predeterminada en la edición para desarrolladores.
+>Asegúrese de crear una cuenta en la [Salesforce Developer Edition](https://developer.salesforce.com/signup) como las API de REST están habilitadas de forma predeterminada en la edición para desarrolladores.

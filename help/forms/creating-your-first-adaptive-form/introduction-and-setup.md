@@ -1,6 +1,6 @@
 ---
-title: Introducción a Forms adaptable
-description: Este tutorial le guiará por los pasos necesarios para crear formularios adaptables con varias pestañas. Aprenderá a usar Tablas, Diseño de acordeón y Editor de reglas para crear reglas comerciales.
+title: Introducción A Forms Adaptable
+description: Este tutorial le guiará por los pasos necesarios para crear un formulario adaptable con varias pestañas. Aprenderá a utilizar las tablas, el diseño de acordeón y el editor de reglas para crear reglas empresariales.
 feature: Adaptive Forms
 version: 6.4,6.5
 topic: Development
@@ -15,25 +15,25 @@ ht-degree: 38%
 
 ---
 
-# Introducción a Forms adaptable {#getting-started-with-adaptive-forms}
+# Introducción A Forms Adaptable {#getting-started-with-adaptive-forms}
 
-Este tutorial le guiará por los pasos necesarios para crear formularios adaptables con varias pestañas. Aprenderá a usar Tablas, Diseño de acordeón y Editor de reglas para crear reglas comerciales.
+Este tutorial le guiará por los pasos necesarios para crear un formulario adaptable con varias pestañas. Aprenderá a utilizar las tablas, el diseño de acordeón y el editor de reglas para crear reglas empresariales.
 
 Los formularios adaptables le permiten crear formularios atractivos, interactivos, dinámicos y adaptables. AEM Forms proporciona una interfaz de usuario intuitiva y componentes predeterminados para crear y trabajar con formularios adaptables. Puede elegir crear un formulario adaptable en base a un modelo o esquema de formulario o sin un modelo de formulario. Es importante elegir cuidadosamente un modelo del formulario que no solo se adapte a sus necesidades, sino que amplíe sus inversiones y recursos de infraestructura existentes.
 
-Este tutorial no utiliza ningún modelo de formulario en la creación del formulario adaptable.
+Este tutorial no utiliza ningún modelo de formulario para crear formularios adaptables.
 
 ## Requisitos previos {#prerequisites}
 
 Necesitará lo siguiente:
 
-* Una instancia de trabajo de AEM con el paquete de complementos de formulario instalado
+* AEM Una instancia de trabajo de la con el paquete de complementos de formulario instalado
 
-* **Se da por hecho que está ejecutando AEM Forms versión 6.4 o superior en localhost:4502.**
+* **Se supone que está ejecutando la versión 6.4 o superior de AEM Forms en localhost:4502.**
 
-* [Descargue client-libs-and-logo](assets/client-libs-and-logo.zip) y [getting-started-fragment](assets/getting-started-fragment.zip) a su disco duro.
+* [Descargar client-libs-and-logo](assets/client-libs-and-logo.zip) y [getting-started-fragment](assets/getting-started-fragment.zip) a su disco duro.
 
-* Importe los archivos zip en AEM mediante [gestor de paquetes ](http://localhost:4502/crx/packmgr/index.jsp)
+* AEM Importe los archivos zip a mediante el uso de la opción de [administrador de paquetes ](http://localhost:4502/crx/packmgr/index.jsp)
 
 ## Pasos siguientes
 

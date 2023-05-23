@@ -1,6 +1,6 @@
 ---
-title: Asignación de metadatos y formularios personalizados de Workfront con Workfront para AEM conector mejorado
-description: Obtenga información sobre cómo configurar Workfront y AEM Assets para administrar y sincronizar metadatos de recursos mediante formularios personalizados de Workfront y esquemas de metadatos de AEM.
+title: Asignación de metadatos y formularios personalizados de Workfront con Workfront AEM para el conector mejorado de la aplicación de datos
+description: Obtenga información sobre cómo configurar Workfront y AEM Assets para administrar y sincronizar metadatos de recursos mediante formularios personalizados de Workfront AEM y esquemas de metadatos de.
 version: Cloud Service
 topic: Content Management, Integrations
 role: Admin, Architect, Developer
@@ -18,10 +18,10 @@ ht-degree: 0%
 
 # Asignación de metadatos y formularios personalizados de Workfront
 
-![AEM serie de expertos](./assets/banner.png)
+![AEM Serie de expertos de](./assets/banner.png)
 
-Obtenga información sobre cómo configurar Workfront y AEM Assets para administrar y sincronizar metadatos de recursos mediante formularios personalizados de Workfront y esquemas de metadatos de AEM.
+Obtenga información sobre cómo configurar Workfront y AEM Assets para administrar y sincronizar metadatos de recursos mediante formularios personalizados de Workfront AEM y esquemas de metadatos de.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340332?quality=12&learn=on)
 
-_Segunda parte de la letra a) [cuatro partes de la serie de expertos sobre el conector mejorado Workfront for Experience Manager](./overview.md)_
+_Parte dos de a [serie de expertos de cuatro partes sobre el conector mejorado de Workfront para Experience Manager](./overview.md)_

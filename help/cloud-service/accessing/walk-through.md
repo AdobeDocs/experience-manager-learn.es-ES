@@ -1,6 +1,6 @@
 ---
 title: Configuración del acceso a la guía de AEM
-description: Una explicación abreviada de cómo configurar los usuarios de IMS de Adobe, los grupos de usuarios y los perfiles de producto en Admin Console de Adobe, y cómo aprovechar estas abstracciones de Adobe IMS en AEM Author para definir y administrar permisos específicos basados en grupos.
+description: Una explicación abreviada de cómo configurar usuarios de IMS de Adobe, grupos de usuarios y perfiles de productos en Admin Console de Adobe, y cómo aprovechar estas abstracciones de IMS de Adobe en Autor de AEM para definir y administrar permisos específicos basados en grupos.
 version: Cloud Service
 topic: Administration, Security
 feature: User and Groups
@@ -24,6 +24,6 @@ ht-degree: 42%
 >title="Configuración del acceso a la guía de AEM"
 >abstract="Una explicación abreviada de cómo configurar los usuarios, los grupos de usuarios y los perfiles de producto de Adobe IMS en Adobe Admin Console, y cómo aprovechar estas abstracciones de Adobe IMS en AEM Author para definir y administrar permisos específicos basados en grupos."
 
-Una explicación abreviada de cómo configurar los usuarios de IMS de Adobe, los grupos de usuarios y los perfiles de producto en Admin Console de Adobe, y cómo aprovechar estas abstracciones de Adobe IMS en AEM Author para definir y administrar permisos específicos basados en grupos.
+Una explicación abreviada de cómo configurar usuarios de IMS de Adobe, grupos de usuarios y perfiles de productos en Admin Console de Adobe, y cómo aprovechar estas abstracciones de IMS de Adobe en Autor de AEM para definir y administrar permisos específicos basados en grupos.
 
 >[!VIDEO](https://video.tv.adobe.com/v/39155?quality=12&learn=on)

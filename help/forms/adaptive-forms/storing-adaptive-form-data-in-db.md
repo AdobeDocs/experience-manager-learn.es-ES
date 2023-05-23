@@ -1,6 +1,6 @@
 ---
-title: Almacenamiento de datos de formulario adaptable
-description: Almacenamiento de datos de formulario adaptables en DataBase como parte del flujo de trabajo AEM
+title: Almacenar datos de formularios adaptables
+description: AEM Almacenar datos de formulario adaptables en la base de datos como parte del flujo de trabajo de
 feature: Adaptive Forms, Form Data Model
 version: 6.4,6.5
 topic: Development
@@ -15,18 +15,18 @@ ht-degree: 2%
 
 ---
 
-# Almacenamiento de envíos de formularios adaptables en la base de datos
+# Almacenar envíos de formularios adaptables en la base de datos
 
-Existen varias formas de almacenar los datos de formulario enviados en la base de datos que elija. Se puede utilizar una fuente de datos JDBC para almacenar directamente los datos en la base de datos. Se puede escribir un paquete OSGI personalizado para almacenar los datos en la base de datos. Este artículo utiliza el paso de proceso personalizado en AEM flujo de trabajo para almacenar los datos.
-El caso de uso es el déclencheur de un flujo de trabajo AEM en un envío de formulario adaptable y un paso en el flujo de trabajo almacena los datos enviados en la base de datos.
+Existen varias formas de almacenar los datos del formulario enviado en la base de datos que elija. Se puede utilizar una fuente de datos JDBC para almacenar directamente los datos en la base de datos. Se puede escribir un paquete OSGI personalizado para almacenar los datos en la base de datos. AEM Este artículo utiliza los pasos del proceso personalizado en el flujo de trabajo de la para almacenar los datos.
+El caso de uso es almacenar en déclencheur AEM un flujo de trabajo de en un envío de formulario adaptable, y un paso en el flujo de trabajo almacena los datos enviados en la base de datos.
 
 
 
-## Grupo de conexiones JDBC
+## Grupo de conexión JDBC
 
-* Vaya a [ConfigMgr](http://localhost:4502/system/console/configMgr)
+* Ir a [Configuration Manager](http://localhost:4502/system/console/configMgr)
 
-   * Busque &quot;JDBC Connection Pool&quot;. Cree un nuevo grupo de conexiones JDBC Day Commons. Especifique la configuración específica de la base de datos.
+   * Busque &quot;Grupo de conexión JDBC&quot;. Cree un nuevo grupo de conexiones JDBC de Day Commons. Especifique la configuración específica de la base de datos.
 
    * ![Configuración OSGi del grupo de conexiones JDBC](assets/aemformstutorial-jdbc.png)
 
@@ -34,16 +34,16 @@ El caso de uso es el déclencheur de un flujo de trabajo AEM en un envío de for
 
 * Buscar &quot;**Especificar detalles de base de datos**&quot;
 * Especifique las propiedades específicas de la base de datos.
-   * DataSourceName:Nombre del origen de datos que configuró anteriormente.
-   * TableName - Nombre de la tabla en la que desea almacenar los datos AF
-   * FormName - Nombre de columna que contiene el nombre del formulario
-   * ColumnName - Nombre de columna para contener los datos AF
+   * DataSourceName: nombre del origen de datos configurado anteriormente.
+   * TableName: nombre de la tabla en la que desea almacenar los datos AF
+   * FormName: nombre de columna que contiene el nombre del formulario.
+   * ColumnName: nombre de columna que contiene los datos AF
 
-   ![Especificar detalles de la base de datos Configuración de OSGi](assets/specify-database-details.png)
+   ![Especificar detalles de base de datos para la configuración OSGi](assets/specify-database-details.png)
 
 
 
-## Código para la configuración OSGi
+## Código para la configuración de OSGi
 
 ```java
 package com.aemforms.dbsamples.core.insertFormData;
@@ -109,7 +109,7 @@ public class InsertFormDataConfigurationService {
 }
 ```
 
-## Código para implementar el paso de proceso
+## Código para implementar el paso del proceso
 
 ```java
 package com.aemforms.dbsamples.core.insertFormData;
@@ -206,15 +206,15 @@ public class InsertAfData implements WorkflowProcess {
 }
 ```
 
-## Implementar los recursos de ejemplo
+## Implementar los recursos de muestra
 
 * Asegúrese de haber configurado el grupo de conexiones JDBC
-* Especificar los detalles de la base de datos mediante configMgr
-* [Descargue el archivo Zip y extraiga su contenido en su disco duro](assets/article-assets.zip)
+* Especifique los detalles de la base de datos mediante configMgr
+* [Descargue el archivo Zip y extraiga su contenido en el disco duro](assets/article-assets.zip)
 
-   * Implementar el archivo jar utilizando [consola web AEM](http://localhost:4502/system/console/bundles). Este archivo jar contiene el código para almacenar los datos del formulario en la base de datos.
+   * Implemente el archivo jar con [AEM consola web de](http://localhost:4502/system/console/bundles). Este archivo jar contiene el código para almacenar los datos del formulario en la base de datos.
 
-   * Importe los dos archivos zip en [AEM usando el administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp). Esto le dará la [flujo de trabajo de muestra](http://localhost:4502/editor.html/conf/global/settings/workflow/models/storeformdata.html) y [ejemplo de formulario adaptable](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) que déclencheur el flujo de trabajo en el envío del formulario. Observe los argumentos de proceso en el paso del flujo de trabajo. Estos argumentos indican el nombre del formulario y el nombre del archivo de datos que contendrá los datos del formulario adaptable. El archivo de datos se almacena en la carpeta de carga útil del repositorio crx. Observe cómo el [formulario adaptable](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) está configurado para almacenar en déclencheur el flujo de trabajo AEM al enviar y la configuración del archivo de datos (data.xml)
+   * Importe los dos archivos zip en [AEM Uso del administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp). Esto te dará el [flujo de trabajo de muestra](http://localhost:4502/editor.html/conf/global/settings/workflow/models/storeformdata.html) y el [formulario adaptable de ejemplo](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) que almacenará en déclencheur el flujo de trabajo al enviar el formulario. Observe los argumentos de proceso en el paso del flujo de trabajo. Estos argumentos indican el nombre del formulario y el nombre del archivo de datos que contendrá los datos del formulario adaptable. El archivo de datos se almacena en la carpeta de carga útil del repositorio crx. Observe cómo la variable [formulario adaptable](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) está configurado para almacenar en déclencheur AEM el flujo de trabajo de la en el envío y la configuración del archivo de datos (data.xml)
 
-   * Obtenga una vista previa y rellene el formulario y envíelo. Debería ver una fila nueva creada en la base de datos
+   * Obtenga una vista previa, rellene el formulario y envíelo. Debería ver una fila nueva creada en la base de datos
 

@@ -1,6 +1,6 @@
 ---
-title: Crear una configuración de servicios de nube
-description: Crear una fuente de datos para conectarse a Salesforce mediante las credenciales de OAuth
+title: Crear una configuración de servicios en la nube
+description: Crear una fuente de datos para conectarse a Salesforce con las credenciales de OAuth
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Crear fuente de datos
 
-Crear una fuente de datos con la ayuda de REST mediante el archivo de intercambio creado en el paso anterior
+Cree una fuente de datos respaldada por REST utilizando el archivo swagger creado en el paso anterior
 
 >[!VIDEO](https://video.tv.adobe.com/v/331755?quality=12&learn=on)

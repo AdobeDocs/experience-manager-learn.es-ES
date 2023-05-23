@@ -1,6 +1,6 @@
 ---
 title: Uso de funciones y editor de código
-description: Uso de funciones y editor de código para crear reglas comerciales
+description: Uso de funciones y editor de código para crear reglas empresariales
 feature: Adaptive Forms
 version: 6.4,6.5
 kt: 4270
@@ -16,13 +16,13 @@ ht-degree: 0%
 
 ---
 
-# Uso de funciones personalizadas y del editor de código {#using-functions-and-code-editor}
+# Uso de funciones personalizadas y editor de código {#using-functions-and-code-editor}
 
-En esta parte, utilizaremos funciones personalizadas y el editor de código para crear reglas comerciales.
+En esta parte, utilizaremos funciones personalizadas y el editor de código para crear reglas empresariales.
 
-ya ha instalado el [ClientLib con función personalizada](assets/client-libs-and-logo.zip) más temprano en este tutorial.
+ya ha instalado el [ClientLib con función personalizada](assets/client-libs-and-logo.zip) anteriormente en este tutorial.
 
-Normalmente, una biblioteca de cliente consta de un archivo CSS y Javascript. Esta biblioteca de cliente contiene un archivo javascript que expone una función para rellenar valores de lista desplegable.
+Normalmente, una biblioteca de cliente consta de un archivo CSS y un archivo Javascript. Esta biblioteca de cliente contiene un archivo javascript que expone una función para rellenar valores de lista desplegable.
 
 
 ## Función para rellenar la lista desplegable {#function-to-populate-drop-down-list}
@@ -60,12 +60,12 @@ else
   }
 ```
 
-Puede descomentar la línea 1 para depurar el código en la ventana del explorador.
+Puede quitar el comentario de la línea 1 para depurar el código en la ventana del explorador.
 
 Línea 4: Obtención del panel actual
 
 Línea 5: Valide el panel actual.
 
-Línea 9: Si no hay errores, pase al panel siguiente
+Línea 9: si no hay errores, vaya al siguiente panel
 
 Obtenga una vista previa del formulario y pruebe la funcionalidad recién habilitada.

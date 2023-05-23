@@ -9,7 +9,7 @@ team: TM
 source-git-commit: 1ff03f5031389db1a779d28beab9d592857a2ba6
 workflow-type: tm+mt
 source-wordcount: '74'
-ht-degree: 29%
+ht-degree: 21%
 
 ---
 
@@ -18,28 +18,28 @@ ht-degree: 29%
 
 + [Información general](overview.md)
 
-+ [Introducción](./getting-started.md)
++ [Primeros pasos](./getting-started.md)
 
 + Datos básicos{#basics}
    + [Administración](basics/managing.md)
    + [Utilización](basics/using.md)
    + [Creación de contenido](basics/creating.md)
    + [Colaboración](basics/collaborating.md)
-   + [Uso compartido de vínculos](basics/link-sharing.md)
+   + [Vínculos compartidos](basics/link-sharing.md)
 
 + Configurar{#configuring}
    + [Mi espacio de trabajo](configuring/my-workspace.md)
    + [Formularios de metadatos](configuring/metadata-forms.md)
    + [Administración de permisos](configuring/permissions-management.md)
 
-+ [Ingregación de Creative Cloud](integrations/creative-cloud.md)
++ [Integración de Creative Cloud](integrations/creative-cloud.md)
 
-+ Integración con Adobe Workfront{#workfront}
++ Integración de Adobe Workfront{#workfront}
    + [Configurar](./integrations/workfront/configure.md)
    + [Asignación de metadatos](./integrations/workfront/map-metadata.md)
    + [Envío de documentos y vinculación de recursos](./integrations/workfront/link-send.md)
    + [Historial de versiones](./integrations/workfront/versions.md)
 
-+ [Integración con Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html?lang=es)
++ [Integración de Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html?lang=es)
 
 + [Documentación](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html).

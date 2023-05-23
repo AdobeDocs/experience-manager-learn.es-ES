@@ -1,6 +1,6 @@
 ---
-title: Variables en AEM flujo de trabajo
-description: Uso de variables de tipo xml,json,arraylist,document en el flujo de trabajo de aem
+title: AEM Variables en flujo de trabajo de
+description: Usar variables de tipo xml,json,arraylist,document en el flujo de trabajo de aem
 version: 6.5
 feature: Adaptive Forms
 topic: Development
@@ -15,11 +15,11 @@ ht-degree: 8%
 
 ---
 
-# Variables en AEM flujo de trabajo
+# AEM Variables en flujo de trabajo de
 
-A partir de AEM 6.5, ahora puede crear y utilizar variables en AEM flujo de trabajo. Antes de esta capacidad, los autores de flujos de trabajo creaban claves utilizando el mapa de metadatos de flujo de trabajo. Esto significaba escribir código personalizado para crear y rellenar estas claves. Con este nuevo flujo de trabajo de capacidades, los autores ahora pueden crear fácilmente variables y utilizar estas variables en cualquier parte del flujo de trabajo.
+AEM AEM A partir de la versión 6.5 de, ahora puede crear y utilizar variables en Flujo de trabajo de usuarios. Antes de esta capacidad, los autores de flujos de trabajo solían crear claves mediante la asignación de metadatos de flujo de trabajo. Esto implicaba escribir código personalizado para crear y rellenar estas claves. Con este nuevo flujo de trabajo de capacidades, los autores ahora pueden crear fácilmente variables y utilizarlas en cualquier parte del flujo de trabajo.
 
-Las variables pueden ser de los siguientes tipos
+Las variables pueden ser de los tipos siguientes
 
 * Largo
 * Doble
@@ -38,4 +38,4 @@ Las variables pueden ser de los siguientes tipos
 * [Variables JSON](part2.md)
 * [Variables de documento](part3.md)
 * [Variable ArrayList](part4.md)
-* [Editor de reglas en AEM flujo de trabajo](part5.md)
+* [AEM Editor de reglas en flujo de trabajo de](part5.md)

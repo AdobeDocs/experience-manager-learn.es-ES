@@ -1,6 +1,6 @@
 ---
 title: Creación del primer servlet en AEM Forms
-description: Cree el primer servlet de sling para combinar los datos con la plantilla de formulario.
+description: Cree su primer servlet sling para combinar datos con la plantilla de formulario.
 feature: Adaptive Forms
 version: 6.4,6.5
 topic: Development
@@ -17,13 +17,13 @@ ht-degree: 1%
 
 # Sling Servlet
 
-Un Servlet es una clase que se utiliza para ampliar las capacidades de los servidores que hospedan aplicaciones a las que se accede mediante un modelo de programación de respuesta a solicitudes. Para estas aplicaciones, la tecnología Servlet define clases de servlet específicas de HTTP.
-Todos los servlets deben implementar la interfaz de Servlet, que define los métodos del ciclo de vida.
+Un servlet es una clase que se utiliza para ampliar las capacidades de los servidores a los que se accede a las aplicaciones host mediante un modelo de programación de solicitud-respuesta. Para estas aplicaciones, la tecnología Servlet define clases de servlet específicas de HTTP.
+Todos los servlets deben implementar la interfaz Servlet, que define los métodos de ciclo de vida.
 
 
-Un servlet en AEM puede registrarse como servicio OSGi: puede ampliar SlingSafeMethodsServlet para la implementación de solo lectura o SlingAllMethodsServlet para implementar todas las operaciones RESTful.
+AEM Un servlet en la se puede registrar como servicio OSGi: puede ampliar SlingSafeMethodsServlet para la implementación de solo lectura o SlingAllMethodsServlet para implementar todas las operaciones RESTful.
 
-## Código Servlet
+## Código servlet
 
 ```java
 package com.mysite.core.servlets;
@@ -70,28 +70,28 @@ public class MyFirstAEMFormsServlet extends SlingAllMethodsServlet
 }
 ```
 
-## Generar e implementar
+## Creación e implementación
 
-Para crear el proyecto, siga los siguientes pasos:
+Para crear su proyecto, siga los siguientes pasos:
 
-* Apertura **ventana del símbolo del sistema**
+* Abrir **ventana del símbolo del sistema**
 * Navegue hasta `c:\aemformsbundles\mysite\core`
 * Ejecutar el comando `mvn clean install -PautoInstallBundle`
-* El comando anterior crea e implementa automáticamente el paquete en la instancia de AEM que se ejecuta en localhost:4502
+* AEM El comando anterior crea e implementa automáticamente el paquete en la instancia de la instancia de la instancia de que se ejecuta en localhost:4502.
 
-El paquete también está disponible en la siguiente ubicación `C:\AEMFormsBundles\mysite\core\target`. El paquete también se puede implementar en AEM usando la variable [Consola web Felix.](http://localhost:4502/system/console/bundles)
+El paquete también está disponible en la siguiente ubicación `C:\AEMFormsBundles\mysite\core\target`. AEM El paquete también se puede implementar en la configuración de la aplicación de la manera de usar la aplicación de la manera de [Consola web Felix.](http://localhost:4502/system/console/bundles)
 
 
-## Probar el Servlet Resolver
+## Prueba de la resolución de servlet
 
-Apunte el navegador a [URL de resolución de servlet](http://localhost:4502/system/console/servletresolver?url=%2Fbin%2FmergedataWithAcroform&amp;method=POST). Esto le indica el servlet que se invoca para una ruta determinada, como se ve en la captura de pantalla siguiente
+Dirija el explorador a [URL de resolución de servlet](http://localhost:4502/system/console/servletresolver?url=%2Fbin%2FmergedataWithAcroform&amp;method=POST). Esto le indica el servlet que se invoca para una ruta determinada, como se ve en la captura de pantalla siguiente
 ![servlet-resolver](assets/servlet-resolver.JPG)
 
-## Probar el servlet con Postman
+## Prueba del servlet con Postman
 
-![Probar el servlet con Postman](assets/test-servlet-postman.JPG)
+![Prueba del servlet con Postman](assets/test-servlet-postman.JPG)
 
 ## Pasos siguientes
 
-[Incluir jar de terceros](./include-third-party-jars.md)
+[Incluir JAR de terceros](./include-third-party-jars.md)
 

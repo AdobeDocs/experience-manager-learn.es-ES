@@ -1,6 +1,6 @@
 ---
-title: Cómo relacionar y desrelacionar activos en AEM
-description: Obtenga información sobre cómo establecer y administrar relaciones entre recursos en AEM.
+title: AEM Cómo relacionar y desrelacionar recursos en la
+description: AEM Obtenga información sobre cómo establecer y administrar relaciones entre recursos en.
 feature: Asset Management
 role: User
 level: Beginner
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Relacionar y desrelacionar
 
-Obtenga información sobre cómo establecer y administrar relaciones entre recursos en AEM.
+AEM Obtenga información sobre cómo establecer y administrar relaciones entre recursos en.
 
 >[!VIDEO](https://video.tv.adobe.com/v/331107?quality=12&learn=on)

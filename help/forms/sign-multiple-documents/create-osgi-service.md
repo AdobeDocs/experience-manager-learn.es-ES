@@ -1,6 +1,6 @@
 ---
-title: Creación del servicio OSGi
-description: Creación del servicio OSGi para almacenar los formularios que se van a firmar
+title: Crear servicio OSGi
+description: Cree el servicio OSGi para almacenar los formularios que desea firmar
 feature: Workflow
 version: 6.4,6.5
 thumbnail: 6886.jpg
@@ -16,13 +16,13 @@ ht-degree: 1%
 
 ---
 
-# Creación del servicio OSGi
+# Crear servicio OSGi
 
-Se escribió el siguiente código para almacenar los formularios que deben firmarse. Cada formulario que se va a firmar está asociado con una guía única y un ID de cliente. Por lo tanto, uno o varios formularios se pueden asociar al mismo ID de cliente, pero tendrán un GUID único asignado al formulario.
+El siguiente código se escribió para almacenar los formularios que se deben firmar. Cada formulario que se va a firmar está asociado con un GUID único y un ID de cliente. Por lo tanto, uno o más formularios se pueden asociar con el mismo ID de cliente, pero tendrán un GUID único asignado al formulario.
 
 ## Interfaz
 
-A continuación se muestra la declaración de interfaz que se utilizó
+La siguiente es la declaración de interfaz que se utilizó
 
 ```java
 package com.aem.forms.signmultipleforms;
@@ -41,7 +41,7 @@ public interface SignMultipleForms
 
 ## Insertar datos
 
-El método insert data inserta una fila en la base de datos identificada por el origen de datos. Cada fila de la base de datos corresponde a un formulario y se identifica de forma única mediante un GUID y un ID de cliente. Los datos del formulario y la dirección URL del formulario también se almacenan en esta fila. La columna de estado es para indicar si el formulario se ha rellenado y firmado. El valor 0 indica que el formulario aún no se ha firmado.
+El método insert data inserta una fila en la base de datos identificada por el origen de datos. Cada fila de la base de datos corresponde a un formulario y se identifica de forma única mediante un GUID y un id de cliente. Los datos del formulario y la dirección URL del formulario también se almacenan en esta fila. La columna de estado indica si el formulario se ha rellenado y firmado. El valor 0 indica que el formulario aún no se ha firmado.
 
 ```java
 @Override
@@ -101,9 +101,9 @@ log.debug(e.getMessage());
 ```
 
 
-## Obtener datos del formulario
+## Obtener datos de formulario
 
-El siguiente código se utiliza para recuperar datos de formulario adaptables asociados con el GUID dado. A continuación, los datos del formulario se utilizan para rellenar previamente el formulario adaptable.
+El siguiente código se utiliza para recuperar datos de formulario adaptable asociados al GUID determinado. A continuación, los datos del formulario se utilizan para rellenar previamente el formulario adaptable.
 
 ```java
 @Override
@@ -130,7 +130,7 @@ public String getFormData(String guid) {
 
 ## Actualizar estado de firma
 
-Finalización correcta de los déclencheur de la ceremonia de firma y AEM flujo de trabajo asociado al formulario. El primer paso en el flujo de trabajo es un paso de proceso que actualiza el estado de la base de datos para la fila identificada por la guía y el ID de cliente. También establecemos el valor del elemento firmado en los datos del formulario en Y para indicar que el formulario se ha rellenado y firmado. El formulario adaptable se rellena con estos datos y el valor del elemento de datos firmado en los datos xml se utiliza para mostrar el mensaje adecuado. El código updateSignatureStatus se invoca desde el paso de proceso personalizado.
+La finalización correcta de la ceremonia de firma déclencheur AEM un flujo de trabajo de la asociado al formulario. El primer paso del flujo de trabajo es un paso del proceso que actualiza el estado de la base de datos para la fila identificada por el GUID y el ID de cliente. También establecemos el valor del elemento firmado en formdata en Y para indicar que el formulario se ha rellenado y firmado. El formulario adaptable se rellena con estos datos y el valor del elemento de datos firmado en los datos xml se utiliza para mostrar el mensaje correspondiente. El código updateSignatureStatus se invoca desde el paso de proceso personalizado.
 
 
 ```java
@@ -164,7 +164,7 @@ public void updateSignatureStatus(String formData, String guid) {
 
 ## Obtener el siguiente formulario para firmar
 
-El siguiente código se utilizó para obtener el siguiente formulario para firmar para un customerID determinado con un estado de 0. Si la consulta sql no devuelve ninguna fila, se devuelve la cadena **&quot;AllDone&quot;** que indica que no hay más formularios para firmar para el id de cliente dado.
+El siguiente código se utilizó para obtener el siguiente formulario para firmar para un customerID determinado con un estado de 0. Si la consulta SQL no devuelve ninguna fila, devolvemos la cadena **&quot;AllDone&quot;** lo que indica que no hay más formularios para firmar para el id de cliente dado.
 
 ```java
 @Override
@@ -204,8 +204,8 @@ public String getNextFormToSign(int customerID) {
 
 ## Assets
 
-El paquete OSGi con los servicios mencionados anteriormente puede ser [descargado desde aquí](assets/sign-multiple-forms.jar)
+El paquete OSGi con los servicios mencionados puede ser [descargado desde aquí](assets/sign-multiple-forms.jar)
 
 ## Pasos siguientes
 
-[Crear un flujo de trabajo principal para gestionar el envío del formulario inicial](./create-main-workflow.md)
+[Cree un flujo de trabajo principal para gestionar el envío inicial del formulario](./create-main-workflow.md)

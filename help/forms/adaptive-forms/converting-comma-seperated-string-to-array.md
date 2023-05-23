@@ -1,6 +1,6 @@
 ---
-title: Conversión de una cadena separada por comas a una matriz de cadenas en el flujo de trabajo de AEM Forms
-description: cuando el modelo de datos de formulario tiene una matriz de cadenas como uno de los parámetros de entrada, deberá masajear los datos generados a partir de la acción de envío de un formulario adaptable antes de invocar la acción de envío del modelo de datos de formulario.
+title: Conversión de una cadena separada por comas en una matriz de cadenas en AEM Forms Workflow
+description: cuando el modelo de datos de formulario tiene una matriz de cadenas como uno de los parámetros de entrada, deberá aplicar un masaje a los datos generados a partir de la acción de envío de un formulario adaptable antes de invocar la acción de envío del modelo de datos de formulario.
 feature: Adaptive Forms
 version: 6.4,6.5
 topic: Development
@@ -16,19 +16,19 @@ ht-degree: 0%
 
 ---
 
-# Conversión de una cadena separada por comas en una matriz de cadenas {#setting-value-of-json-data-element-in-aem-forms-workflow}
+# Convertir una cadena separada por comas en una matriz de cadenas {#setting-value-of-json-data-element-in-aem-forms-workflow}
 
-Cuando el formulario se basa en un modelo de datos de formulario que tiene una matriz de cadenas como parámetro de entrada, es necesario manipular los datos del formulario adaptable enviado para insertar una matriz de cadenas. Por ejemplo, si ha enlazado un campo de casilla de verificación a un elemento del modelo de datos de formulario de una matriz de cadenas de tipo , los datos del campo de casilla de verificación se encuentran en un formato de cadena separado por comas. El código de ejemplo que se muestra a continuación muestra cómo reemplazar la cadena separada por comas con una matriz de cadenas.
+Cuando el formulario se basa en un modelo de datos de formulario que tiene una matriz de cadenas como parámetro de entrada, debe manipular los datos del formulario adaptable enviados para insertar una matriz de cadenas. Por ejemplo, si ha enlazado un campo de casilla de verificación a un elemento del modelo de datos de formulario de tipo matriz de cadenas, los datos del campo de casilla de verificación están en un formato de cadena separado por comas. El código de ejemplo que se muestra a continuación muestra cómo reemplazar la cadena separada por comas con una matriz de cadenas.
 
-## Crear un paso del proceso
+## Creación de una etapa de proceso
 
-Se utiliza un paso de proceso en un flujo de trabajo AEM cuando queremos que nuestro flujo de trabajo ejecute una lógica determinada. El paso del proceso se puede asociar con un script ECMA o un servicio OSGi. Nuestro paso de proceso personalizado ejecuta el servicio OSGi.
+AEM Se utiliza un paso de proceso en un flujo de trabajo de cuando queremos que el flujo de trabajo ejecute una lógica determinada. El paso del proceso se puede asociar a un script ECMA o a un servicio OSGi. Nuestro paso de proceso personalizado ejecuta el servicio OSGi.
 
-Los datos enviados tienen el siguiente formato. El valor del elemento businessUnits es una cadena separada por comas que debe convertirse en una matriz de cadenas.
+Los datos enviados tienen el siguiente formato. El valor del elemento businessUnits es una cadena separada por comas, que debe convertirse en una matriz de cadenas.
 
-![datos enviados](assets/submitted-data-string.png)
+![submitted-data](assets/submitted-data-string.png)
 
-Los datos de entrada para el resto del extremo asociado con el modelo de datos de formulario esperan una matriz de cadenas como se muestra en esta captura de pantalla. El código personalizado del paso de proceso convierte los datos enviados en el formato correcto.
+Los datos de entrada para el resto del extremo asociado con el modelo de datos de formulario esperan una matriz de cadenas como se muestra en esta captura de pantalla. El código personalizado del paso de proceso convierte los datos enviados en al formato correcto.
 
 ![fdm-string-array](assets/string-array-fdm.png)
 
@@ -37,9 +37,9 @@ Pasamos la ruta del objeto JSON y el nombre del elemento al paso del proceso. El
 
 >[!NOTE]
 >
->Asegúrese de que la ruta del archivo de datos en las opciones de envío del formulario adaptable esté configurada como &quot;Data.xml&quot;. Esto se debe a que el código del paso de proceso busca un archivo llamado Data.xml en la carpeta de carga útil.
+>Asegúrese de que la ruta del archivo de datos en las opciones de envío del formulario adaptable esté establecida en &quot;Data.xml&quot;. Esto se debe a que el código del paso del proceso busca un archivo llamado Data.xml en la carpeta de carga útil.
 
-## Código de paso del proceso
+## Procesar código de paso
 
 ```java
 import java.io.BufferedReader;

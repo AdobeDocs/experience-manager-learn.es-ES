@@ -18,22 +18,22 @@ ht-degree: 1%
 
 # Etiquetas inteligentes personalizadas para imágenes
 
-Etiquetas inteligentes personalizadas para imágenes permite que el etiquetado inteligente se forme con términos específicos del cliente.
-Las etiquetas inteligentes personalizadas o las etiquetas inteligentes mejoradas se pueden aprovechar para mejorar la experiencia de búsqueda de usuarios y ayudar a encontrar los recursos en el momento adecuado.
+Las etiquetas inteligentes personalizadas para imágenes permiten que el etiquetado inteligente se entrene con términos específicos del cliente.
+A continuación, se pueden aprovechar las etiquetas inteligentes personalizadas o las etiquetas inteligentes mejoradas para mejorar la experiencia de búsqueda del usuario y ayudar a encontrar los recursos en el momento adecuado.
 
 >[!VIDEO](https://video.tv.adobe.com/v/22254?quality=12&learn=on)
 
-## Configuración de etiquetas inteligentes personalizadas para imágenes para AEM 6.x{#set-up}
+## AEM Configuración de etiquetas inteligentes personalizadas para imágenes para la versión 6.x de{#set-up}
 
 >[!NOTE]
-> Las etiquetas inteligentes personalizadas para imágenes se aprovisionan automáticamente para AEM as a Cloud Service.
+> AEM Las etiquetas inteligentes personalizadas para imágenes se aprovisionan automáticamente para las etiquetas as a Cloud Service de la.
 
-Las etiquetas inteligentes personalizadas para imágenes requieren [Etiquetas inteligentes para las imágenes que se van a configurar](./image-smart-tags.md#set-up).
+Las etiquetas inteligentes personalizadas para imágenes requieren [Etiquetas inteligentes para configurar imágenes](./image-smart-tags.md#set-up).
 
-Aprenda a configurar la formación de etiquetas inteligentes en AEM Assets mediante el servicio de contenido inteligente y el Adobe I/O. Etiquetas inteligentes personalizadas para imágenes
+Aprenda a configurar la formación sobre etiquetas inteligentes en AEM Assets mediante el servicio y el Adobe I/O de contenido inteligente. Etiquetas inteligentes personalizadas para imágenes
 
 >[!VIDEO](https://video.tv.adobe.com/v/23405?quality=12&learn=on)
 
 ## Recursos adicionales
 
-* AEM 6.4 requiere la variable [último Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html#aem-64).
+* AEM La versión 6.4 requiere el [paquete de servicio más reciente](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html#aem-64).

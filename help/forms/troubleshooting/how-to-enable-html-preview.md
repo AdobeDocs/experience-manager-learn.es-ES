@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Cómo habilitar el HTML de vista previa
 
-*Este vídeo recorre los pasos para habilitar el HTML de vista previa en Designer.*
+*Este vídeo muestra los pasos para habilitar el HTML de vista previa en Designer.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335498?quality=12&learn=on)

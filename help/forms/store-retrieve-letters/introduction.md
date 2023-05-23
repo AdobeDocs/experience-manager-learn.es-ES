@@ -1,7 +1,7 @@
 ---
-title: Guardar y reanudar letras
+title: Guardar y reanudar cartas
 seo-title: Save and resume letters
-description: Obtenga información sobre cómo guardar y recuperar letras de borrador
+description: Obtenga información sobre cómo guardar y recuperar borradores de cartas
 seo-description: Learn how to save and retrieve draft letters
 feature: Interactive Communication
 topics: development
@@ -24,18 +24,18 @@ ht-degree: 0%
 
 # Introducción
 
-Interactive Communications permite que los agentes que preparan correspondencias ad hoc guarden correspondencias parcialmente completadas y recuperen las mismas para continuar trabajando. AEM Forms le proporciona el [Interfaz del proveedor de servicios](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html). Se espera que el cliente implemente esta interfaz para obtener la funcionalidad Guardar y reanudar .
+Las comunicaciones interactivas permiten a los agentes preparar correspondencias ad hoc para guardar correspondencias parcialmente completadas y recuperar las mismas para seguir trabajando. AEM Forms le proporciona el [Interfaz de proveedor de servicios](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html). Se espera que el cliente implemente esta interfaz para obtener la funcionalidad Guardar y reanudar.
 
-Este artículo utiliza la base de datos MySQL para almacenar los metadatos de la instancia de letra. Los datos de la carta se almacenan en el sistema de archivos.
+Este artículo utiliza la base de datos MySQL para almacenar los metadatos de la instancia de carta. Los datos de la carta se almacenan en el sistema de archivos.
 
 El siguiente vídeo muestra el caso de uso:
 
 >[!VIDEO](https://video.tv.adobe.com/v/342129?quality=12&learn=on)
 
-## Requisitos
+## Requisitos previos
 
-Necesitará lo siguiente para implementar la solución y satisfacer sus necesidades
+Necesitará lo siguiente para implementar la solución y así satisfacer sus necesidades
 
-* Experiencia laboral con AEM Forms
-* AEM Server 6.5 con Forms Add en
+* Experiencia de trabajo con AEM Forms
+* AEM Servidor de 6.5 con Forms Add on
 * Debe estar familiarizado con la creación de paquetes OSGI

@@ -1,38 +1,37 @@
 ---
 title: Su evaluación de madurez de AEM Sites
 seo-title: AEM Sites Maturity Assessment
-description: Esta lista de comprobación ofrece una descripción general de las preguntas clave que usted y su equipo deben responder al evaluar la madurez de su instancia de AEM Sites
+description: Esta lista de comprobación proporciona información general sobre las preguntas clave que usted y su equipo deben responder al evaluar la madurez de su instancia de AEM Sites
 seo-description: This checklist provides an overview of key questions you and your team should be answering when evaluating the maturity of your AEM Sites instance
 audience: author, marketer, developer
-source-git-commit: 3335069883db38a2748af114ab7505cc34dec270
+exl-id: 22164a0e-7239-43f4-8356-c12f68133255
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '332'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
+# Su lista de comprobación de la evaluación de madurez de AEM Sites
 
-# Su lista de comprobación para la evaluación de vencimientos de AEM Sites
-
-La evaluación del estado actual de su instancia de AEM Sites puede sentirse abrumadora. Por lo general, el mejor lugar para empezar es auditar su instancia y ahora puede usar esta lista de comprobación de evaluación de vencimientos para guiarle a través de ese proceso.
+La evaluación del estado actual de la instancia de AEM Sites puede resultar abrumadora. Por lo general, el mejor lugar para empezar es auditar la instancia y ahora puede utilizar esta lista de comprobación de evaluación de madurez para guiarle a través de ese proceso.
 
 [Descargar la lista de comprobación](assets/AEM-Sites-Maturity-Assessment.xlsx)
 
-AEM las evaluaciones de vencimientos se dirigen principalmente a las implementaciones de servicios locales y gestionados. Cada implementación de AEM es única debido a las definiciones de éxito y los objetivos de cada cliente configurados durante la fase de descubrimiento y la preincorporación hasta la fase de implementación de AEM. Las evaluaciones de la madurez desempeñan la función de los controles sanitarios posteriores al lanzamiento.
+AEM Las evaluaciones de madurez de la se dirigen principalmente a implementaciones de servicios locales y administrados. AEM AEM Cada implementación de la implementación de la plataforma es única debido a las definiciones de éxito y los objetivos de cada cliente configurados durante la fase de detección y la preincorporación hasta la fase de implementación de la plataforma de la plataforma de implementación de la plataforma de la plataforma de la plataforma de la plataforma de datos de la plataforma de la plataforma de implementación. Las evaluaciones de madurez desempeñan el papel de los controles de estado posteriores al lanzamiento.
 
-Las evaluaciones de vencimientos permiten la evaluación y el cumplimiento de AEM normas y prácticas recomendadas.
+AEM Las evaluaciones de la madurez permiten evaluar y cumplir las normas y prácticas recomendadas de la.
 
-Para conocer las prácticas recomendadas sobre administración, desarrollo o creación, consulte los siguientes recursos:
+Para conocer las prácticas recomendadas sobre la administración, el desarrollo o la creación, consulte los siguientes recursos:
 
-* [Prácticas recomendadas sobre administración](https://experienceleague.adobe.com/docs/experience-manager-65/administering/bestpractices/administer-best-practices.html?lang=en)
-* [Prácticas recomendadas sobre desarrollo](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/best-practices.html?lang=en)
-* [Prácticas recomendadas sobre la creación](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/best-practices.html?lang=en)
+* [Prácticas recomendadas de administración](https://experienceleague.adobe.com/docs/experience-manager-65/administering/bestpractices/administer-best-practices.html?lang=en)
+* [Desarrollo de prácticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/best-practices.html?lang=en)
+* [Prácticas recomendadas de creación](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/best-practices.html?lang=en)
 
-Cada una de estas áreas de prácticas recomendadas también incluye prácticas recomendadas adicionales para crear, desarrollar e implementar AEM.
+AEM Cada una de estas áreas de prácticas recomendadas anteriores también incluye más prácticas recomendadas en la creación, el desarrollo y la implementación de entornos de trabajo de tipo
 
-En la mayoría de los casos, la evaluación de la madurez AEM ayudará a realizar un diagnóstico de AEM prácticas recomendadas y dará lugar a una hoja de ruta para descubrir, resolver y prevenir de forma proactiva los problemas potenciales. Se recomienda completar las evaluaciones con los equipos que también formaban parte de la fase de detección de la implementación de AEM (migración previa AEM). Entre las funciones que deberían participar cabe mencionar las siguientes: Propietarios de aplicaciones, propietarios de sitios, equipos de desarrollo, posibles clientes tecnológicos, equipos de seguridad/infraestructura, equipos SEO y equipos de soporte (por ejemplo, autores de contenido, administradores).
+AEM AEM En la mayoría de los casos, la evaluación de la madurez de la ayudará a realizar una revisión diagnóstica de las prácticas recomendadas y dará como resultado una hoja de ruta para detectar, resolver y prevenir de forma proactiva posibles problemas. AEM AEM Se recomienda completar las evaluaciones con los equipos que también formaban parte de la fase de descubrimiento de la implementación de la aplicación (fase previa a la migración de la implementación). Las funciones que deben implicarse pueden incluir: Propietarios de aplicaciones, propietarios de sitios, equipos de desarrollo, responsables tecnológicos, equipos de seguridad/infraestructura, equipos SEO y equipos de asistencia (por ejemplo, autores de contenido, administradores).
 
-Ámbitos de interés recomendados AEM evaluación de vencimientos: Diseño y arquitectura, gestión y estrategia de productos, administración y entrega de activos digitales, análisis, pruebas y seguridad.
+AEM Áreas de enfoque recomendadas para la evaluación de la madurez de los productos: diseño y arquitectura, gestión y estrategia de productos, administración y entrega de activos digitales, análisis, pruebas y seguridad.
 
-Enorme grito al AEM campeón Greg Dimeris por agregar esta información de varios artículos Experience League, así como sus propias prácticas recomendadas!
-
+AEM Enorme grito al Campeón de la Greg Dimeris por agregar esta información de varios artículos de Experience League, así como sus propias prácticas recomendadas!

@@ -1,5 +1,5 @@
 ---
-title: Creación de perfiles de imagen de recorte inteligente en AEM Dynamic Media
+title: AEM Creación de perfiles de imagen de recorte inteligente en Dynamic Media
 description: Configuración del recorte inteligente en Dynamic Media
 version: Cloud Service
 role: Developer
@@ -14,8 +14,8 @@ ht-degree: 0%
 
 ---
 
-# Creación de perfiles de imagen de recorte inteligente en AEM Dynamic Media
+# AEM Creación de perfiles de imagen de recorte inteligente en Dynamic Media
 
-Este vídeo muestra los pasos para crear un perfil de imagen de recorte inteligente en AEM Dynamic Media.
+AEM Este vídeo muestra los pasos para crear un perfil de recorte inteligente de imagen en Dynamic Media de la aplicación de la aplicación de forma libre de.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335460?quality=12&learn=on)

@@ -1,6 +1,6 @@
 ---
-title: Creación de un objeto Lead en la base de datos de Salesforce con un suceso click de un botón
-description: Crear posible cliente invocando la operación posterior del Modelo de datos de formulario
+title: Crear un objeto de posible cliente en la base de datos de Salesforce con el evento de clic de un botón
+description: Crear como posible cliente invocando la operación posterior del modelo de datos de formulario
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Probar la integración
+# Prueba de la integración
 
-Crear un formulario adaptable basado en el modelo de datos del formulario de fuerza de venta y probar la creación de un posible cliente en Salesforce en el suceso click de un botón
+Cree un formulario adaptable basado en el modelo de datos de formulario de la fuerza de ventas y pruebe la creación de un posible cliente en Salesforce con el evento de clic de un botón
 
 >[!VIDEO](https://video.tv.adobe.com/v/331892?quality=12&learn=on)

@@ -1,6 +1,6 @@
 ---
-title: Captura de volcados de subprocesos de una JVM en un servidor Windows
-description: Pasos para capturar los volcados de subprocesos de un proceso Java en un servidor de windows
+title: Cómo capturar los volcados de hilos de una JVM en un servidor Windows
+description: Pasos para capturar los volcados de hilos de un proceso Java en un servidor Windows
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# Captura de volcados de subprocesos de una JVM en un servidor Windows
+# Cómo capturar los volcados de hilos de una JVM en un servidor Windows
 
-*Este vídeo recorre los pasos para capturar volcados de memoria de una JVM en un servidor de windows.*
+*Este vídeo explica los pasos para capturar los volcados de pila de una JVM en un servidor de Windows.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335493?quality=12&learn=on)

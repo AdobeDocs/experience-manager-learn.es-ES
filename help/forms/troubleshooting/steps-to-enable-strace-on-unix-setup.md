@@ -1,6 +1,6 @@
 ---
-title: Pasos para habilitar el seguimiento de trazas (configuración de Unix)
-description: Configuración de registros de seguimiento para la resolución de problemas del Generador de PDF
+title: Pasos para habilitar el seguimiento de secuencias (configuración de Unix)
+description: Configuración de registros de seguimiento para solucionar problemas de PDF Generator
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Pasos para habilitar el seguimiento de trazas en la configuración de Unix
+# Pasos para habilitar el seguimiento de secuencias en la configuración de Unix
 
-*Este vídeo muestra los pasos para habilitar el seguimiento de traza en la configuración de Unix para el PDFG de AEM Forms.*
+*Este vídeo explica los pasos para habilitar el seguimiento de seguimiento de seguimiento en la configuración de Unix para AEM Forms PDFG.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335525?quality=12&learn=on)

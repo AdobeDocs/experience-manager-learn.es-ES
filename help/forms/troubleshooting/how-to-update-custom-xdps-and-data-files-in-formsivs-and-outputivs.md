@@ -1,6 +1,6 @@
 ---
-title: Actualizar los XDP personalizados y los archivos de datos en FormsIVS y OutputIVS para fines de prueba
-description: Agregar o quitar archivos XDP personalizados y archivos de datos en FormsIVS y OutputIVS
+title: Actualizar los XDP y los archivos de datos personalizados en FormsIVS y OutputIVS para realizar pruebas
+description: Agregar o quitar XDP y archivos de datos personalizados en FormsIVS y OutputIVS
 type: Troubleshooting
 role: Developer
 level: Intermediate
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Actualización de archivos XDP personalizados y archivos de datos en FormsIVS y OutputIVS
+# Actualizar XDP y archivos de datos personalizados en FormsIVS y OutputIVS
 
-*Este vídeo muestra los pasos para actualizar los XDP personalizados y los archivos de datos en FormsIVS y OutputIVS con fines de prueba.*
+*En este vídeo se explican los pasos para actualizar los XDP y los archivos de datos personalizados en FormsIVS y OutputIVS para realizar pruebas.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335513?quality=12&learn=on)

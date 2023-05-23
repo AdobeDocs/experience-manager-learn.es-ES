@@ -1,13 +1,14 @@
 ---
 title: Crear proceso de flujo de trabajo del kit de bienvenida
-description: Cree una página de sitios AEM con vínculos para descargar recursos en función de los datos de formulario enviados.
+description: AEM Cree una página de sitios de la con vínculos para descargar recursos en función de los datos del formulario enviado.
 feature: Adaptive Forms
 version: 6.5
 topic: Development
 role: Developer
 level: Beginner
 last-substantial-update: 2022-12-14T00:00:00Z
-source-git-commit: 0e27907066c7d688549a980ccd17b3f17d74b60b
+exl-id: ba9e80af-aecd-4558-a236-798c823e695c
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '106'
 ht-degree: 0%
@@ -16,13 +17,13 @@ ht-degree: 0%
 
 # Componente de flujo de trabajo
 
-El componente de flujo de trabajo captura información relacionada con la página que enumera los recursos, como la plantilla de página, el tipo de recurso de componente y la carpeta base para almacenar las páginas generadas.
+El componente de flujo de trabajo captura información relacionada con la página que enumera los recursos, como la plantilla de página, el tipo de recurso del componente y la carpeta base para almacenar las páginas generadas.
 
 ![workflow-component](assets/workflow-component.png)
 
-## Implementación del proceso de flujo de trabajo
+## Implementación del proceso de flujo
 
-El siguiente código java está asociado con el componente de flujo de trabajo. El código crea la página de kit de bienvenida, extrae valores de las variables de flujo de trabajo (nombreRemitente y documentos seleccionados). Estos valores se establecen como propiedades de los componentes utilizados en la página. El código también establece el valor de la variable de proceso del flujo de trabajo **welcomkiturl**.
+El siguiente código Java se asoció al componente de flujo de trabajo. El código crea la página del kit de bienvenida, extrae valores de las variables de flujo de trabajo (submitName y documentsSelected). Estos valores se establecen como propiedades de los componentes utilizados en la página. El código también establece el valor de la variable del proceso de flujo de trabajo **welcomekiturl**.
 
 ```java
 package com.welcomekit.core.workflowprocess;
@@ -161,7 +162,3 @@ public class CreatePage implements WorkflowProcess {
   }
 }
 ```
-
-
-
-

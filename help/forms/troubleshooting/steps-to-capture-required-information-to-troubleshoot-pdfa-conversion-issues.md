@@ -1,6 +1,6 @@
 ---
-title: Pasos para capturar la información necesaria para solucionar problemas de PDF/A
-description: Resolución de problemas relacionados con la conversión y validación del ensamblador
+title: Pasos para recopilar la información necesaria para solucionar los problemas del PDF/A
+description: Solucionar problemas relacionados con la conversión y validación del ensamblador
 type: Troubleshooting
 role: Developer
 level: Intermediate
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Pasos para solucionar problemas de conversión y validación de PDFA
+# Pasos para solucionar los problemas de conversión y validación de PDFA
 
-*Este vídeo muestra los pasos para capturar la información necesaria para solucionar problemas de conversión y validación de PDF/A en el servicio Forms Assembler.*
+*Este vídeo muestra los pasos para capturar la información necesaria para solucionar los problemas de conversión y validación de PDF/A en el servicio Forms Assembler.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335518?quality=12&learn=on)

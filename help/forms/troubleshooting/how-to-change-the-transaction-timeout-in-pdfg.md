@@ -1,6 +1,6 @@
 ---
-title: Cambio del tiempo de espera de transacción de un servidor de aplicaciones en el servicio PDFG
-description: Pasos para aumentar o reducir el tiempo de espera de transacción de un servidor de aplicaciones para Generador de PDF
+title: Cómo cambiar el tiempo de espera de transacción de un servidor de aplicaciones en el servicio PDFG
+description: Pasos para aumentar o reducir el tiempo de espera de transacción de un servidor de aplicaciones para PDF Generator
 type: Troubleshooting
 role: Admin
 level: Beginner
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Cambio del tiempo de espera de transacción de un servidor de aplicaciones en el servicio PDFG
+# Cómo cambiar el tiempo de espera de transacción de un servidor de aplicaciones en el servicio PDFG
 
-*En este vídeo se describe el proceso para cambiar el tiempo de espera de transacción de un servidor de aplicaciones en el servicio PDFG de Forms.*
+*En este vídeo se describe el proceso de cambiar el tiempo de espera de transacción de un servidor de aplicaciones en el servicio Forms PDFG.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335555?quality=12&learn=on)

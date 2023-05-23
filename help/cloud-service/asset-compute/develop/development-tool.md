@@ -1,6 +1,6 @@
 ---
-title: Herramienta de desarrollo de assets computes
-description: La herramienta de desarrollo de Asset compute es un mazo de cables web local que permite a los desarrolladores configurar y ejecutar los trabajadores de Asset Computer localmente, fuera del contexto del SDK de AEM para los recursos de Asset compute en Adobe I/O Runtime.
+title: Herramienta de desarrollo de asset compute
+description: La herramienta de desarrollo de Asset compute AEM es un mazo de cables web local que permite a los desarrolladores configurar y ejecutar los Assets computes de Asset Computer localmente, fuera del contexto del SDK de la con recursos de Asset Compute en Adobe I/O Runtime.
 feature: Asset Compute Microservices
 topics: renditions, development
 version: Cloud Service
@@ -20,49 +20,49 @@ ht-degree: 0%
 
 ---
 
-# Herramienta de desarrollo de assets computes
+# Herramienta de desarrollo de asset compute
 
-La herramienta de desarrollo de Asset compute es un mazo de cables web local que permite a los desarrolladores configurar y ejecutar los trabajadores de Asset Computer localmente, fuera del contexto del SDK de AEM para los recursos de Asset compute en Adobe I/O Runtime.
+La herramienta de desarrollo de Asset compute AEM es un mazo de cables web local que permite a los desarrolladores configurar y ejecutar los Assets computes de Asset Computer localmente, fuera del contexto del SDK de la con recursos de Asset Compute en Adobe I/O Runtime.
 
 ## Ejecutar la herramienta de desarrollo de Asset compute
 
-La herramienta de desarrollo de Assets computes se puede ejecutar desde la raíz del proyecto de Asset compute mediante el comando terminal:
+La herramienta de desarrollo de Asset compute se puede ejecutar desde la raíz del proyecto de Asset compute mediante el comando terminal:
 
 ```
 $ aio app run
 ```
 
-Esto iniciará la herramienta de desarrollo en __http://localhost:9000__ y ábralo automáticamente en una ventana del explorador. Para que se ejecute la herramienta de desarrollo, [se debe proporcionar un devToolToken válido y generado automáticamente mediante un parámetro de consulta](#troubleshooting__devtooltoken).
+La herramienta de desarrollo se iniciará en __http://localhost:9000__ y, automáticamente, lo abre en una ventana del explorador. Para que se ejecute la herramienta de desarrollo, [se debe proporcionar un devToolToken válido y generado automáticamente mediante un parámetro de consulta](#troubleshooting__devtooltoken).
 
-## Explicación de la interfaz de las herramientas de desarrollo de Asset compute{#interface}
+## Comprensión de la interfaz de Herramientas de desarrollo de Asset compute{#interface}
 
-![Herramienta de desarrollo de assets computes](./assets/development-tool/asset-compute-dev-tool.png)
+![Herramienta de desarrollo de asset compute](./assets/development-tool/asset-compute-dev-tool.png)
 
 1. __Archivo de origen:__ La selección del archivo de origen se utiliza para:
-   + Seleccione el binario de recursos que actúa como el `source` binario transferido al trabajador de Asset compute
+   + Se seleccionó el binario de recursos que actúa como `source` binario pasado al trabajador de Asset compute
    + Cargar archivos de origen
-1. __Definición de perfil o perfiles de asset compute:__ Define el Asset compute de trabajo que se va a ejecutar, incluidos los parámetros: incluido el punto final de la URL del trabajador, el nombre de la representación resultante y cualquier parámetro
+1. __definición de perfiles de asset compute:__ Define el trabajador de Asset compute que se ejecutará, incluidos los parámetros: incluido el punto final de la URL del trabajador, el nombre de la representación resultante y cualquier parámetro
 1. __Ejecutar:__ El botón Ejecutar ejecuta el perfil de Asset compute tal como se define en el editor de perfiles de configuración de Asset compute
 1. __Anular:__ El botón Anular cancela una ejecución iniciada al pulsar el botón Ejecutar
-1. __Solicitud/respuesta:__ Proporciona la solicitud y respuesta HTTP al/desde el Asset compute de trabajo que se ejecuta en Adobe I/O Runtime. Esto puede resultar útil para depurar
-1. __Registros de activación:__ Los registros que describen la ejecución del trabajador de Asset compute, junto con cualquier error. Esta información también está disponible en la `aio app run` salida estándar
-1. __Representaciones:__ Muestra todas las representaciones generadas por la ejecución del Asset compute de trabajo
-1. __parámetro de consulta devToolToken:__ El token de la herramienta de desarrollo de Asset compute requiere una `devToolToken` parámetro de consulta para estar presente. Este token se genera automáticamente cada vez que se genera una nueva herramienta de desarrollo
+1. __Solicitud/respuesta:__ Proporciona la solicitud y respuesta HTTP hacia/desde el trabajador de Asset compute que se ejecuta en Adobe I/O Runtime. Esto puede resultar útil para la depuración
+1. __Registros de activación:__ Registros que describen la ejecución del trabajador del Asset compute, junto con los errores. Esta información también está disponible en la `aio app run` salida estándar
+1. __Representaciones:__ Muestra todas las representaciones generadas por la ejecución del trabajador de Asset compute
+1. __Parámetro de consulta devToolToken:__ El token de la herramienta de desarrollo de Asset compute requiere un válido `devToolToken` parámetro de consulta que debe estar presente. Este token se genera automáticamente cada vez que se genera una nueva herramienta de desarrollo
 
 ### Ejecutar un trabajador personalizado
 
 >[!VIDEO](https://video.tv.adobe.com/v/40241?quality=12&learn=on)
 
-_Pulsación para ejecutar un trabajo de Asset compute en la herramienta de desarrollo (sin audio)_
+_Pulsación de la ejecución de un trabajo de Asset compute en la herramienta de desarrollo (sin audio)_
 
-1. Asegúrese de que la herramienta de desarrollo de Asset compute se inicie desde la raíz del proyecto mediante `aio app run` comando.
-1. En la herramienta de desarrollo de Asset compute, cargue o seleccione una [archivo de imagen de ejemplo](../assets/samples/sample-file.jpg)
-   + Asegúrese de que el archivo esté seleccionado en la variable __Archivo de origen__ lista desplegable
-1. Consulte la __Definición de perfil de asset compute__ área de texto
-   + La variable `worker` define la dirección URL del trabajador de Asset compute implementado
-   + La variable `name` key define el nombre de la representación que se va a generar
-   + Se pueden proporcionar otras claves y valores en este objeto JSON y están disponibles en el programa de trabajo en la sección `rendition.instructions` object
-      + Si lo desea, puede agregar valores para `size`, `contrast` y `brightness`:
+1. Asegúrese de que la herramienta de desarrollo de Asset compute se inicia desde la raíz del proyecto utilizando `aio app run` comando.
+1. En la herramienta de desarrollo de Assets computes, cargue o seleccione un [archivo de imagen de muestra](../assets/samples/sample-file.jpg)
+   + Asegúrese de que el archivo está seleccionado en la __Archivo de origen__ desplegable
+1. Revise la __definición del perfil de asset compute__ área de texto
+   + El `worker` define la dirección URL del trabajador de Asset compute implementado
+   + El `name` key define el nombre de la representación que se va a generar
+   + Se pueden proporcionar otras claves o valores en este objeto JSON y están disponibles en el trabajador en la variable `rendition.instructions` objeto
+      + Si lo desea, agregue valores para `size`, `contrast` y `brightness`:
 
          ```json
          {
@@ -78,18 +78,18 @@ _Pulsación para ejecutar un trabajo de Asset compute en la herramienta de desar
          }
          ```
 
-1. Toque . __Ejecutar__ botón
-1. La variable __Sección Representaciones__ se rellenará con un marcador de posición de representación
-1. Una vez que el trabajador haya terminado, el marcador de posición de representación mostrará la representación generada
+1. Pulse el botón __Ejecutar__ botón
+1. El __Sección Representaciones__ se rellenará con un marcador de lugar de representación
+1. Una vez que el trabajador finalice, el marcador de posición de representación mostrará la representación generada
 
-Si se realizan cambios en el código de trabajo mientras se ejecuta la herramienta de desarrollo, los cambios se &quot;implementarán en caliente&quot;. La &quot;implementación activa&quot; tarda varios segundos, por lo que debe permitir que la implementación se complete antes de volver a ejecutar el programa de trabajo desde la herramienta de desarrollo.
+Realizar cambios en el código del trabajador mientras se ejecuta la herramienta de desarrollo hará que los cambios se &quot;implementen&quot;. La &quot;implementación en caliente&quot; tarda varios segundos, por lo que permita que la implementación se complete antes de volver a ejecutar el trabajador desde la herramienta de desarrollo.
 
 ## Solución de problemas
 
 + [Sangría YAML incorrecta](../troubleshooting.md#incorrect-yaml-indentation)
-+ [memorySize limit está configurado en demasiado bajo](../troubleshooting.md#memorysize-limit-is-set-too-low)
-+ [La herramienta de desarrollo no se puede iniciar debido a la falta de private.key](../troubleshooting.md#missing-private-key)
++ [El límite memorySize se ha establecido en un valor demasiado bajo](../troubleshooting.md#memorysize-limit-is-set-too-low)
++ [No se puede iniciar la herramienta de desarrollo porque falta private.key](../troubleshooting.md#missing-private-key)
 + [Lista desplegable de archivos de origen incorrecta](../troubleshooting.md#source-files-dropdown-incorrect)
-+ [Falta el parámetro de consulta devToolToken o no es válido](../troubleshooting.md#missing-or-invalid-devtooltoken-query-parameter)
-+ [No se pueden quitar los archivos de origen](../troubleshooting.md#unable-to-remove-source-files)
-+ [Representación devuelta parcialmente dibujada/dañada](../troubleshooting.md#rendition-returned-partially-drawn-or-corrupt)
++ [Parámetro de consulta devToolToken faltante o no válido](../troubleshooting.md#missing-or-invalid-devtooltoken-query-parameter)
++ [No se pueden eliminar los archivos de origen](../troubleshooting.md#unable-to-remove-source-files)
++ [Representación parcialmente dibujada/dañada](../troubleshooting.md#rendition-returned-partially-drawn-or-corrupt)

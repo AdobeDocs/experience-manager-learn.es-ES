@@ -1,6 +1,6 @@
 ---
-title: Captura de registros HAR (archivo HTTP)
-description: Captación de registros de archivo HTTP para la resolución de problemas relacionados con la red
+title: Cómo capturar registros HAR (archivo HTTP)
+description: Capturar registros de archivo HTTP para solucionar problemas relacionados con la red
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ---
 
-# Captura de registros HAR (archivo HTTP)
+# Cómo capturar registros HAR (archivo HTTP)
 
 *Este vídeo muestra los pasos para capturar los registros HAR (archivo HTTP).*
 

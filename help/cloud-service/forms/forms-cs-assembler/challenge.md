@@ -1,6 +1,6 @@
 ---
-title: Pruebe su comprensión del miembro de Forms
-description: Complete los ejercicios
+title: Pruebe sus conocimientos del ensamblador de Forms
+description: Completar los ejercicios
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -18,8 +18,8 @@ ht-degree: 0%
 
 # Ejercicios
 
-## Archivos de PDF de ensamblado
+## Montar archivos de PDF
 
-Modifique el `assemble2pdfs.ddx` para ensamblar 3 archivos PDF.
+Modifique la `assemble2pdfs.ddx` para ensamblar 3 archivos de PDF.
 
-colocará el tercer pdf en la carpeta resources/pdffiles .
+Colocará el tercer PDF en la carpeta resources/pdffiles.

@@ -1,6 +1,6 @@
 ---
-title: Aplicación SvelteKit simple
-description: Una aplicación SvelteKit sencilla que muestra las aventuras de WKND modeladas con fragmentos de contenido.
+title: Aplicación Simple SveltKit
+description: Una aplicación simple de SveltKit que muestra aventuras WKND modeladas con fragmentos de contenido.
 version: Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
@@ -12,21 +12,21 @@ index: false
 hide: true
 recommendations: noCatalog, noDisplay
 hidefromtoc: true
-source-git-commit: a0a1c7e5d3dd74454b9b8ab787ce7447e73ee098
+exl-id: 2e5bd50e-c0d7-4292-8097-e0a17f41a91a
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 0%
 
 ---
 
+# Filtrado de la aplicación SveltKit
 
-# Filtrado de la aplicación SvelteKit
+AEM Explore la capacidad de las API de GraphQL sin encabezado de para enumerar datos mediante una [SveltKit](https://kit.svelte.dev/) aplicación. Esta aplicación de SveltKit crea una lista de las aventuras de WKND, que se pueden seleccionar para mostrar los detalles de la aventura.
 
-Explore AEM capacidad de las API de GraphQL sin encabezado para enumerar datos mediante un [SvelteKit](https://kit.svelte.dev/) aplicación. Esta aplicación SvelteKit crea una lista de aventuras WKND, que se pueden seleccionar para mostrar los detalles de la aventura.
-
-Este código muestra el uso de Adobe [AEM cliente sin encabezado para JavaScript](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md) para invocar consultas de GraphQL persistentes desde SvelteKit. Esta aplicación utiliza la variable `wknd-shared/adventures-all` consulta persistente para recopilar todas las aventuras y derivar una lista de tipos de actividad disponibles. Los detalles de la aventura se solicitan a través del `wknd-shared/adventures-by-slug` consulta persistente.
+Este código muestra el uso de Adobe [AEM Cliente sin encabezado para JavaScript](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md) para invocar consultas de GraphQL persistentes desde SetKit. Esta aplicación usa el `wknd-shared/adventures-all` consulta persistente para recopilar todas las aventuras y derivar una lista de tipos de actividades disponibles. Los detalles de la aventura se solicitan a través de la `wknd-shared/adventures-by-slug` consulta persistente.
 
 Este código:
 
-+ Se conecta a un servicio de AEM Publish y no requiere autenticación
++ Se conecta a un servicio de publicación de AEM y no requiere autenticación
 + Utiliza las consultas persistentes de WKND: `wknd-shared/adventures-all` y `wknd-shared/adventures-by-slug`

@@ -1,7 +1,7 @@
 ---
-title: Adición de texto y contenido de imagen al documento de canal de impresión
+title: Adición de texto y contenido de imagen al documento del canal de impresión
 seo-title: Adding text and image content to print channel document
-description: Esta es la parte 7 de un tutorial de varios pasos para crear su primer documento interactivo de comunicaciones. En esta parte, añadiremos imágenes y contenido de texto a las áreas de destino definidas en el diseño (xdp).
+description: Esta es la parte 7 de un tutorial de varios pasos para crear su primer documento de comunicaciones interactivas. En esta parte, añadiremos imágenes y contenido de texto a las áreas de destino definidas en el diseño (xdp).
 seo-description: This is part 7 of a multi-step tutorial for creating your first interactive communications document. In this part, we will add images and text content to the target areas defined in the layout(xdp).
 uuid: f20d6974-6faf-4b90-a7ff-8aa8a620fcaa
 feature: Interactive Communication
@@ -24,17 +24,17 @@ ht-degree: 1%
 
 ---
 
-# Adición de texto y contenido de imagen al documento de canal de impresión
+# Adición de texto y contenido de imagen al documento del canal de impresión
 
 En esta parte, añadiremos imágenes y contenido de texto a las áreas de destino definidas en el diseño (xdp).
 
-Ahora que ha creado su primer fragmento de documento que contendrá el nombre y la dirección del destinatario, tendremos que agregar el fragmento de documento al documento del canal de impresión.
+Ahora que ha creado el primer fragmento de documento que contendrá el nombre y la dirección del destinatario, tendremos que agregar el fragmento de documento al documento del canal de impresión.
 
 Puede agregar contenido de varios tipos, como fragmentos de documento, imágenes, fragmentos de diseño, etc., al documento del canal de impresión.
 
-Para añadir contenido al documento de canal de impresión, siga el siguiente vídeo.
+Para añadir contenido al documento del canal de impresión, siga el vídeo a continuación.
 
-El vídeo lo acompaña durante los pasos necesarios para añadir contenido a las áreas de destino apropiadas del documento de canal de impresión.
+El vídeo le guiará por los pasos necesarios para agregar contenido a las áreas de destino adecuadas del documento del canal de impresión.
 
 >[!VIDEO](https://video.tv.adobe.com/v/22379?quality=12&learn=on)
 

@@ -1,6 +1,6 @@
 ---
 title: Crear plantilla AF
-description: Crear una plantilla AF y asociarla al componente de renderización de página
+description: Crear una plantilla AF y asociarla al componente de procesamiento de páginas
 feature: Adaptive Forms
 topics: development
 audience: developer
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 # Crear plantilla AF
 
-Crearemos una nueva plantilla de formulario adaptable para este tutorial. También se ha creado un nuevo componente de página asociado a esta plantilla. El JSP del componente de página recupera datos de la base de datos MySql que se utiliza para rellenar previamente el formulario adaptable.
+Crearemos una nueva plantilla de formulario adaptable para los fines de este tutorial. También se creó un nuevo componente de página asociado a esta plantilla. El JSP del componente de página recupera datos de la base de datos MySql que se utiliza para rellenar previamente el formulario adaptable.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/27828?quality=12&learn=on)
@@ -36,4 +36,4 @@ La plantilla y el componente de página utilizados en este tutorial pueden ser [
 
 ## Pasos siguientes
 
-[Seleccione los formularios que firmará el usuario](./create-initial-form.md)
+[Seleccione los formularios que debe firmar el usuario utilizado](./create-initial-form.md)

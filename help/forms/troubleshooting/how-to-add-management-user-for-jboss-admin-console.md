@@ -1,6 +1,6 @@
 ---
-title: Agregar un usuario de administración para la consola de administración de JBoss
-description: Configuración del usuario de administración para la consola de administración de JBOSS
+title: Cómo añadir un usuario de administración para la Admin Console de JBoss
+description: Configuración del usuario de administración para Admin Console de JBOSS
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# Agregar un usuario de administración para la consola de administración de JBoss
+# Cómo añadir un usuario de administración para la Admin Console de JBoss
 
-*Este vídeo muestra los pasos para agregar un usuario de administración para la consola de administración de JBoss.*
+*Este vídeo muestra los pasos para agregar un usuario de administración para Admin Console de JBoss.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335484?quality=12&learn=on)

@@ -1,5 +1,5 @@
 ---
-title: Introducción al tema en Asset Share Commons
+title: Introducción a la temática en Asset Share Commons
 description: Materiales para la comprensión funcional y técnica de Assets Share Commons
 version: 6.4, 6.5
 topic: Content Management
@@ -14,13 +14,13 @@ ht-degree: 1%
 
 ---
 
-# Introducción al tema en Asset Share Commons {#asset-share-commons-theme}
+# Introducción a la temática en Asset Share Commons {#asset-share-commons-theme}
 
-Breve introducción al tema en Asset Share Commons. El vídeo recorre el proceso de creación de un nuevo tema con una combinación de colores personalizada.
+Breve introducción a la temática en Asset Share Commons. El vídeo muestra el proceso de creación de una nueva temática con un esquema de colores personalizado.
 
 >[!VIDEO](https://video.tv.adobe.com/v/20572?quality=12&learn=on)
 
-En este vídeo se crea un nuevo tema basado en el tema oscuro de Asset Share Commons. El esquema de colores coincidirá con un logotipo personalizado para que el sitio tenga una apariencia uniforme.
+En este vídeo se crea un nuevo tema basado en el tema oscuro de Asset Share Commons. El esquema de colores coincidirá con un logotipo personalizado para dar al sitio un aspecto coherente.
 
 ## Variables de tema
 
@@ -73,9 +73,9 @@ En este vídeo se crea un nuevo tema basado en el tema oscuro de Asset Share Com
 @msgWarningBackgroundColor: @yellow;
 ```
 
-Descargar [Tema personalizado de la biblioteca del cliente](assets/asc-theme-demo.zip)
+Descargar [Tema de biblioteca de cliente personalizado](assets/asc-theme-demo.zip)
 
 ## Recursos adicionales{#additional-resources}
 
-* [Descargas de la versión de Asset Share Commons](https://github.com/Adobe-Marketing-Cloud/asset-share-commons/releases)
-* [Descargas de la versión de ACS AEM Commons 3.11.0+](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)
+* [Descargas de la versión Asset Share Commons](https://github.com/Adobe-Marketing-Cloud/asset-share-commons/releases)
+* [AEM Descargas de la versión de ACS Commons 3.11.0+](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)

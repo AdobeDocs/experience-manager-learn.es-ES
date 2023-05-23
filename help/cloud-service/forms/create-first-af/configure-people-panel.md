@@ -1,5 +1,5 @@
 ---
-title: Configuración del panel Personas
+title: Configurar el panel Personas
 description: Configure el panel Personas agregando el fragmento de detalles del cónyuge.
 solution: Experience Manager,Experience Manager Forms
 type: Documentation
@@ -18,8 +18,8 @@ ht-degree: 0%
 
 ---
 
-# Configuración del panel Personas
+# Configurar el panel Personas
 
-Agregue el fragmento de detalles del cónyuge al panel de personas.
+Agregue el fragmento de detalles del cónyuge al panel personas.
 
 >[!VIDEO](https://video.tv.adobe.com/v/332234?quality=12&learn=on)
