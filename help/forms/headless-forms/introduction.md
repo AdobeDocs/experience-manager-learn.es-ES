@@ -7,9 +7,9 @@ kt: 13285
 topic: Development
 role: User
 level: Intermediate
-source-git-commit: c6e83a627743c40355559d9cdbca2b70db7f23ed
+source-git-commit: 6aa3dff44a7e6f1f8ac896e30319958d84ecf57f
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '135'
 ht-degree: 2%
 
 ---
@@ -17,8 +17,11 @@ ht-degree: 2%
 
 # Incrustación de formularios adaptables sin encabezado
 
-Este artículo explica los conceptos básicos para incrustar un formulario adaptable sin encabezado en el sitio web de la spa. En este artículo se da por hecho que ya tiene una aplicación de una sola página y que desea incrustar un formulario adaptable creado en AEM Forms 6.5.16 con componentes principales.
-La inclusión de un formulario en una aplicación de una sola página permite a los usuarios introducir y enviar datos sin problemas sin necesidad de actualizar la página. Esto mejora la interactividad y la eficacia de la aplicación.
+Esta [Este tutorial abarcará las distintas API sin encabezado](https://opensource.adobe.com/aem-forms-af-runtime/api/#section/Introduction) que le permiten ver, mostrar y enviar el formulario.
+
+Este artículo abarcará las distintas API sin encabezado que se proporcionan para permitirle enumerar, mostrar y enviar formularios adaptables de manera sin encabezado.
+
+Este artículo supone que tiene una aplicación de una sola página y que desea enumerar y mostrar los formularios adaptables sin encabezado en el sitio web de la spa.
 
 SPA La siguiente captura de pantalla muestra un formulario de contacto incrustado en el elemento de
 
