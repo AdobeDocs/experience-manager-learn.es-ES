@@ -11,7 +11,7 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 481b8877e252b885da307fcf4d96f8a50f026fa6
 workflow-type: tm+mt
 source-wordcount: '4571'
 ht-degree: 1%
@@ -154,7 +154,7 @@ Dado que principalmente estamos copiando/configurando nodos, utilizaremos CRXDE 
    1. Añadir otro **nt:unstructured** nodo denominado aprobadores como elemento secundario del nodo roles.
    1. Agregar propiedades de cadena **jcr:título** = &quot;**Aprobadores**&quot;, **roleclass** =&quot;**propietario**&quot;, **roleid**=&quot;**aprobadores**&quot;.
       1. El nombre del nodo de aprobadores, así como jcr:title y roleid, pueden ser cualquier valor de cadena (siempre que roleid sea único).
-      1. **roleclass** determina los permisos aplicados a ese rol en función de [3 funciones OOTB](Funciones de https://docs.adobe.com/docs/en/aem/6-3/author/projects.html#User en un proyecto): **propietario**, **editor**, y **observador**.
+      1. **roleclass** determina los permisos aplicados a ese rol en función de [3 funciones OOTB](https://docs.adobe.com/docs/en/aem/6-3/author/projects.html#User%20Roles%20in%20a%20Project): **propietario**, **editor**, y **observador**.
       1. En general, si la función personalizada es más bien una función directiva, se puede **propietario;** si se trata de una función de creación más específica como Fotógrafo o Diseñador, **editor** roleclass debería ser suficiente. La gran diferencia entre **propietario** y **editor** Los propietarios del proyecto pueden actualizar las propiedades del proyecto y agregar nuevos usuarios al proyecto.
 
    ```shell
