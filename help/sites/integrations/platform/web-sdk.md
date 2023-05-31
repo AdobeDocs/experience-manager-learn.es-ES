@@ -11,9 +11,9 @@ last-substantial-update: 2023-04-26T00:00:00Z
 jira: KT-13156
 thumbnail: KT-13156.jpeg
 exl-id: b5182d35-ec38-4ffd-ae5a-ade2dd3f856d
-source-git-commit: 63afa03de70d6f8f695d552018344d53a5cec6f5
+source-git-commit: 32472c8591aeb47a7c6a7253afd7ad9ab0e45171
 workflow-type: tm+mt
-source-wordcount: '1315'
+source-wordcount: '1340'
 ht-degree: 3%
 
 ---
@@ -207,6 +207,11 @@ AEM Después de configurar el SDK web con el SDK de, sobre todo en el sitio WKND
 ¡Buen trabajo! AEM Ha completado la configuración de la configuración de con el SDK web de Experience Platform para recopilar e introducir datos de un sitio web. Con esta base, ahora puede explorar más posibilidades para mejorar e integrar productos como Analytics, Target, Customer Journey Analytics (CJA) y muchos otros para crear experiencias enriquecidas y personalizadas para sus clientes. Siga aprendiendo y explorando para liberar todo el potencial de Adobe Experience Cloud.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418900?quality=12&learn=on)
+
+
+>[!AVAILABILITY]
+>
+>Si prefiere el **vídeo de extremo a extremo** que abarca todo el proceso de integración en lugar de los vídeos de los pasos de configuración individuales, puede hacer clic en [aquí](https://video.tv.adobe.com/v/3418905/) para acceder a él.
 
 ## Recursos adicionales
 
