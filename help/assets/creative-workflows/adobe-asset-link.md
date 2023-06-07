@@ -9,10 +9,10 @@ level: Beginner
 thumbnail: 28988.jpg
 last-substantial-update: 2022-06-25T00:00:00Z
 exl-id: 6c49f8c2-f468-4b29-b7b6-029c8ab39ce9
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
 workflow-type: tm+mt
-source-wordcount: '1051'
-ht-degree: 1%
+source-wordcount: '1047'
+ht-degree: 2%
 
 ---
 
@@ -24,7 +24,7 @@ La extensión de Adobe Asset Link para Adobe Creative Cloud for enterprise AEM a
 
 >[!TIP]
 >
-> Obtenga más información acerca de cómo [Programa de formación de Adobe XD Premium](https://spark.adobe.com/page/wU7OXv8qKGugO/) puede ayudarle a integrar Asset Link con su flujo de trabajo de Adobe Experience Manager.
+> Obtenga más información acerca de cómo [Programa de formación de Adobe XD Premium](https://helpx.adobe.com/support/xd.html) puede ayudarle a integrar Asset Link con su flujo de trabajo de Adobe Experience Manager.
 
 ## Adobe AEM Asset Link y flujos de trabajo creativos de
 
@@ -65,7 +65,7 @@ Adobe Asset Link proporciona compatibilidad con vínculos directos de InDesign e
 
 >[!NOTE]
 >
->Utilice únicamente su Enterprise ID o Federated ID de Adobe Creative Cloud. Asegúrese de que [AEM configurar para vínculo de recursos de Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html).
+>Utilice únicamente su Enterprise ID o Federated ID de Adobe Creative Cloud. Asegúrese de que [AEM configurar para vínculo de recursos de Adobe](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html).
 
 Puede colocar un recurso en el diseño del InDesign mediante una de las siguientes opciones:
 

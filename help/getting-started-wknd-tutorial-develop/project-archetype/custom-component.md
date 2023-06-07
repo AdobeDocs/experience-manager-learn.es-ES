@@ -11,9 +11,9 @@ kt: 4072
 mini-toc-levels: 1
 thumbnail: 30181.jpg
 exl-id: f54f3dc9-6ec6-4e55-9043-7a006840c905
-source-git-commit: 434f56e143bc0f969723de48abd26d49a308af9b
+source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
 workflow-type: tm+mt
-source-wordcount: '4061'
+source-wordcount: '4057'
 ht-degree: 1%
 
 ---
@@ -446,7 +446,7 @@ Cree una interfaz Java™ pública para el Firma. El `Byline.java` define los m�
    import org.osgi.annotation.versioning.Version;
    ```
 
-Cada vez que se realicen cambios en los archivos de este paquete, la variable [la versión del paquete debe ajustarse semánticamente](https://semver.org/). Si no, el proyecto de Maven [bnd-baseline-maven-plugin](https://github.com/bndtools/bnd/tree/master/maven/bnd-baseline-maven-plugin) detecta una versión de paquete no válida y rompe la compilación. Afortunadamente, en caso de error, el complemento Maven informa de la versión del paquete Java™ no válida y de la versión que debería ser. Actualice el `@Version("...")` declaración en el paquete Java™ que infringe `package-info.java` a la versión recomendada por el complemento para corregirla.
+Cada vez que se realicen cambios en los archivos de este paquete, la variable [la versión del paquete debe ajustarse semánticamente](https://semver.org/). Si no, el proyecto de Maven [bnd-baseline-maven-plugin](https://github.com/bndtools/bnd) detecta una versión de paquete no válida y rompe la compilación. Afortunadamente, en caso de error, el complemento Maven informa de la versión del paquete Java™ no válida y de la versión que debería ser. Actualice el `@Version("...")` declaración en el paquete Java™ que infringe `package-info.java` a la versión recomendada por el complemento para corregirla.
 
 ### Implementación de firma {#byline-implementation}
 

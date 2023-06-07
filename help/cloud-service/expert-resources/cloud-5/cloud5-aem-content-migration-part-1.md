@@ -9,16 +9,16 @@ hidefromtoc: true
 recommendations: noDisplay, noCatalog
 thumbnail: 342133.jpeg
 exl-id: 817ea20d-d902-4497-83d3-5800ed6aaa8f
-source-git-commit: a439c72a7b080633d3777eefad3b47f01c92b970
+source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 5%
+source-wordcount: '100'
+ht-degree: 6%
 
 ---
 
 # Migración a la nube: Parte 1
 
-AEM Darin y James analizan Dispatcher en la nube de la, incluidas algunas prácticas recomendadas y diferencias con AMS/On-Prem. También se refieren a la migración a la nube. Invitado especial y experto en la nube, [Dr. Applesmith](https://twitter.com/DrApplesmith) hace su aparición.
+AEM Darin y James analizan Dispatcher en la nube de la, incluidas algunas prácticas recomendadas y diferencias con AMS/On-Prem. También se refieren a la migración a la nube.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342133?quality=12&learn=on)
 

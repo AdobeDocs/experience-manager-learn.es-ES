@@ -9,9 +9,9 @@ level: Beginner
 kt: 10798
 thumbnail: KT-10798.jpg
 exl-id: 39b21a29-a75f-4a6c-ba82-377cf5cc1726
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '471'
 ht-degree: 6%
 
 ---
@@ -22,18 +22,18 @@ Las aplicaciones de ejemplo son una buena manera de explorar las capacidades sin
 
 ![AEM Aplicación Node.js de servidor a servidor con interfaz sin encabezado](./assets/server-to-server-app/server-to-server-app.png)
 
-Ver el [código fuente en GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/server-to-server-app)
+Ver el [código fuente en GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/server-to-server)
 
 ## Requisitos previos {#prerequisites}
 
 Las siguientes herramientas deben instalarse localmente:
 
-+ [Node.js v18](https://nodejs.org/en/)
++ [Node.js v18](https://nodejs.org/en)
 + [Git](https://git-scm.com/)
 
 ## AEM requisitos de
 
-AEM La aplicación Node.js funciona con las siguientes opciones de implementación de la. Todas las implementaciones requieren lo siguiente [Sitio WKND v2.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) para instalar.
+AEM La aplicación Node.js funciona con las siguientes opciones de implementación de la. Todas las implementaciones requieren lo siguiente [Sitio WKND v2.0.0+](https://github.com/adobe/aem-guides-wknd/releases) para instalar.
 
 + [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=es)
 + Opcionalmente, [credenciales de servicio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html) si autoriza solicitudes (por ejemplo, conectándose al servicio de creación de AEM).
@@ -77,7 +77,7 @@ Esta aplicación Node.js puede conectarse a AEM Author o AEM Publish en función
 
 ## El código
 
-AEM A continuación se muestra un resumen de cómo se crea la aplicación Node.js de servidor a servidor, cómo se conecta a la aplicación sin encabezado para recuperar contenido mediante consultas persistentes de GraphQL y cómo se presentan esos datos. El código completo se encuentra en [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/server-to-server-app).
+AEM A continuación se muestra un resumen de cómo se crea la aplicación Node.js de servidor a servidor, cómo se conecta a la aplicación sin encabezado para recuperar contenido mediante consultas persistentes de GraphQL y cómo se presentan esos datos. El código completo se encuentra en [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/server-to-server).
 
 AEM AEM El caso de uso más habitual de las aplicaciones sin encabezado de servidor a servidor es sincronizar los datos de fragmentos de contenido de los servidores de a otros sistemas, aunque esta aplicación es intencionalmente sencilla e imprime los resultados JSON de la consulta persistente.
 
