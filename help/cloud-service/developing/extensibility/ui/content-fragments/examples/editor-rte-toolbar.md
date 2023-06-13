@@ -10,7 +10,7 @@ jira: KT-13464
 thumbnail: KT-13464.jpg
 doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
-source-git-commit: c54d078c6282f8ace936dd4a9ee0d5cc39490230
+source-git-commit: e59c9d1f17c6ade169e834a21b9d5f50ac3a569e
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Agregar un botón personalizado a la barra de herramientas del Editor de texto enriquecido (RTE)
 
-![Ejemplo de extensión del Editor de fragmentos de contenido](./assets/rte-toolbar/hero.png){align="center"}
+![Ejemplo de extensión del Editor de fragmentos de contenido](./assets/rte/rte-toolbar-hero.png){align="center"}
 
 Se pueden añadir botones personalizados al **Barra de herramientas RTE** en el Editor de fragmentos de contenido mediante `rte` punto de extensión. En este ejemplo se muestra cómo agregar un botón personalizado denominado _Añadir sugerencia_ Vaya a la barra de herramientas RTE y modifique el contenido dentro de RTE.
 
