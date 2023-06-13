@@ -10,20 +10,15 @@ doc-type: Tutorial
 last-substantial-update: 2023-05-09T00:00:00Z
 jira: KT-12433
 thumbnail: KT-12433.jpeg
-source-git-commit: b3cc9c4fbd36cdf5be46e4546a174fea0c8da05c
+exl-id: 60a3e18a-090f-4b0e-8ba0-d4afd30577dd
+source-git-commit: d81c66e041abbd56e7115f37732550cf10e59359
 workflow-type: tm+mt
-source-wordcount: '1703'
-ht-degree: 2%
+source-wordcount: '1671'
+ht-degree: 1%
 
 ---
 
 # AEM Personalización de experiencias sin encabezado con fragmentos de contenido
-
->[!IMPORTANT]
->
-> La exportación de fragmentos de contenido de Adobe Experience Manager a Adobe Target AEM está disponible en el as a Cloud Service de la [canal de prelanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features).
-
-
 
 AEM En este tutorial se explora cómo se exportan los fragmentos de contenido de la a Adobe Target y, a continuación, se utilizan para personalizar experiencias sin encabezado mediante el SDK web de Adobe. El [Aplicación React WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html) se utiliza para explorar cómo se puede añadir a la experiencia una actividad de Target personalizada mediante Ofertas de fragmentos de contenido para promocionar una aventura WKND.
 
