@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: e59c9d1f17c6ade169e834a21b9d5f50ac3a569e
+source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '961'
 ht-degree: 24%
 
 ---
@@ -183,17 +183,18 @@ ht-degree: 24%
       + [Uso de Cloud Acceleration Manager](./migration/cloud-acceleration-manager/using.md)
 + Forms{#forms}
    + Desarrollo para Forms as a Cloud Service{#developing-for-cloud-service}
-      + [Primeros pasos](./forms/developing-for-cloud-service/getting-started.md)
-      + [Instalar IntelliJ](./forms/developing-for-cloud-service/intellij-set-up.md)
-      + [Configurar Git](./forms/developing-for-cloud-service/setup-git.md)
-      + [AEM Sincronizar IntelliJ con la opción de sincronización de](./forms/developing-for-cloud-service/intellij-and-aem-sync.md)
-      + [Creación de un formulario](./forms/developing-for-cloud-service/deploy-your-first-form.md)
-      + [Habilitar componentes del portal de Forms](./forms/developing-for-cloud-service/forms-portal-components.md)
-      + [Incluir Cloud Services y FDM](./forms/developing-for-cloud-service/azure-storage-fdm.md)
-      + [Configuración de nube según el contexto](./forms/developing-for-cloud-service/context-aware-fdm.md)
-      + [Insertar en Cloud Manager](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
-      + [Implementar en el entorno de desarrollo](./forms/developing-for-cloud-service/deploy-to-dev-environment.md)
-      + [Actualizando arquetipo Maven](./forms/developing-for-cloud-service/updating-project-archetype.md)
+      + [1 - Introducción](./forms/developing-for-cloud-service/getting-started.md)
+      + [2 - Instalar IntelliJ](./forms/developing-for-cloud-service/intellij-set-up.md)
+      + [3 - Configurar Git](./forms/developing-for-cloud-service/setup-git.md)
+      + [AEM 4 - Sincronizar IntelliJ con la opción de sincronización con la](./forms/developing-for-cloud-service/intellij-and-aem-sync.md)
+      + [5 - Crear un formulario](./forms/developing-for-cloud-service/deploy-your-first-form.md)
+      + [6 - Controlador de envío personalizado](./forms/developing-for-cloud-service/custom-submit-to-servlet.md)
+      + [7 - Habilitar los componentes del portal de Forms](./forms/developing-for-cloud-service/forms-portal-components.md)
+      + [8 - Incluir Cloud Services y FDM](./forms/developing-for-cloud-service/azure-storage-fdm.md)
+      + [9 - Configuración en la nube según el contexto](./forms/developing-for-cloud-service/context-aware-fdm.md)
+      + [10 - Insertar en Cloud Manager](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
+      + [11 - Implementación en el entorno de desarrollo](./forms/developing-for-cloud-service/deploy-to-dev-environment.md)
+      + [12 - Actualización del arquetipo de Maven](./forms/developing-for-cloud-service/updating-project-archetype.md)
    + Crear formulario adaptable{#create-first-af}
       + [Introducción](./forms/create-first-af/introduction.md)
       + [Crear tema](./forms/create-first-af/create-theme.md)

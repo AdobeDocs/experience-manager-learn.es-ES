@@ -8,10 +8,10 @@ version: Cloud Service
 topic: Development
 kt: 8852
 exl-id: 81a53f52-2a6c-44ef-a13f-ac372b4a33b9
-source-git-commit: d218726565e0e78ba57f0ddb53c354ca78570c66
+source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
 workflow-type: tm+mt
-source-wordcount: '106'
-ht-degree: 0%
+source-wordcount: '112'
+ht-degree: 1%
 
 ---
 
@@ -28,3 +28,7 @@ Cree dos carpetas denominadas (FormTemplates y BankingApplication). Puede agrega
 AEM Para sincronizar estos recursos en su proyecto de la mediante la herramienta IntelliJ y Repo, vea el siguiente vídeo
 
 >[!VIDEO](https://video.tv.adobe.com/v/336937?quality=12&learn=on)
+
+## Pasos siguientes
+
+[Crear controlador de envío personalizado](./custom-submit-to-servlet.md)

@@ -9,9 +9,9 @@ version: Cloud Service
 topic: Development
 kt: 8844
 exl-id: 9a7ed792-ca0d-458f-b8dd-9129aba37df6
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '515'
 ht-degree: 3%
 
 ---
@@ -26,7 +26,7 @@ Instalar [Cygwin](https://www.cygwin.com/). He instalado en la carpeta C:\cygwin
 
 Cree una carpeta llamada adoberepo en c:\cloudmanager.
 
-[Instalación de la herramienta de repositorio].(https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo).Installing) la herramienta repo no es otra cosa que copiar el archivo repo y colocarlo en su carpeta c:\cloudmanger\adoberepo.
+[Instalación de la herramienta de repositorio](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo) La instalación de la herramienta de repositorio no es otra cosa que copiar el archivo de repositorio y colocarlo en su carpeta c:\cloudmanger\adoberepo.
 
 Agregue lo siguiente a la variable de entorno Path C:\cygwin64\bin;C:\CloudManager\adoberepo;
 
@@ -35,7 +35,7 @@ Agregue lo siguiente a la variable de entorno Path C:\cygwin64\bin;C:\CloudManag
 * Iniciar IntelliJ
 * Pulse las teclas Ctrl+Alt+S para abrir la ventana de configuración.
 * Seleccione Herramientas->Herramientas externas y, a continuación, haga clic en el signo + e introduzca lo siguiente como se muestra en la captura de pantalla.
-   ![representante](assets/repo.png)
+  ![representante](assets/repo.png)
 * Asegúrese de crear un grupo llamado repo escribiendo &quot;repo&quot; en el campo desplegable Grupo y todos los comandos que cree pertenecen a **repo** grupo
 
 
@@ -85,3 +85,7 @@ Se pueden seguir los siguientes pasos para configurar rápidamente una instancia
 * Cree la siguiente estructura de carpetas.C:\aemformscs\aem-sdk\author\crx-quickstart\install
 * Copie aem-forms-addon-xxxxxx.far en la carpeta de instalación
 * Abra el símbolo del sistema y vaya a c:\aemformscs\aem-sdk\author introduzca el siguiente comando java -jar aem-author-p4502.jar -gui. AEM Esto implementará el paquete de complementos de formularios en la instancia de la.
+
+## Pasos siguientes
+
+[AEM AEM Sincronizar los formularios y plantillas de la con el proyecto de](./deploy-your-first-form.md)

@@ -8,10 +8,10 @@ level: Beginner, Intermediate
 version: Cloud Service
 topic: Development
 kt: 8852
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 0%
+source-wordcount: '210'
+ht-degree: 2%
 
 ---
 
@@ -40,18 +40,28 @@ public class HandleFormSubmissison extends SlingAllMethodsServlet {
 }
 ```
 
-## Crear envío personalizado
+## Crear controlador de envío personalizado
 
-Cree su envío personalizado en la carpeta de la aplicación/aplicación bancaria del mismo modo que lo haría en la carpeta [versiones anteriores de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-submit-aem-forms-article.html?lang=en)
+Cree la acción de envío personalizada en `apps/bankingapplication` del mismo modo que se crearía en la carpeta [versiones anteriores de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-submit-aem-forms-article.html?lang=en). Para los fines de este tutorial, creo una carpeta denominada SubmitToAEMervlet en el `apps/bankingapplication` en el repositorio CRX.
+
 El siguiente código de post.POST.jsp simplemente reenvía la solicitud al servlet montado en /bin/formstutorial. Es el mismo servlet que se creó en el paso anterior
 
 ```java
 com.adobe.aemds.guide.utils.GuideSubmitUtils.setForwardPath(slingRequest,"/bin/formstutorial",null,null);
 ```
 
+AEM En el proyecto de la en IntelliJ, haga clic con el botón secundario en `apps/bankingapplication` y seleccione Nuevo | Empaquete y escriba SubmitToAEMervlet después de la aplicación apps.banking en el cuadro de diálogo nuevo paquete. Haga clic con el botón derecho en el nodo SubmitToAEMervlet y seleccione repositorio AEM AEM | Get Command para sincronizar el proyecto de la con el repositorio del servidor de la aplicación.
+
+
 ## Configurar formulario adaptable
 
-Ahora puede configurar el formulario adaptable para que se envíe a este controlador de envío personalizado llamado **AEM Enviar A Servlet De**
+Ahora puede configurar cualquier formulario adaptable para enviarlo a este controlador de envío personalizado llamado **AEM Enviar A Servlet De**
+
+## Pasos siguientes
+
+[Habilitar componentes del portal de Forms](./forms-portal-components.md)
+
+
 
 
 

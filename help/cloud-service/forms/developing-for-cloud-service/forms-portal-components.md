@@ -8,10 +8,10 @@ version: Cloud Service
 topic: Development
 kt: 10373
 exl-id: ab01573a-e95f-4041-8ccf-16046d723aba
-source-git-commit: 69cd5022d136e9fa84f33d2fc5ca249ac0fb6490
+source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 17%
+source-wordcount: '349'
+ht-degree: 18%
 
 ---
 
@@ -82,3 +82,7 @@ Reemplace el contenido en la variable `.content.xml` con el siguiente XML:
 ```
 
 AEM Una vez implementado el proyecto, debe poder utilizar estos componentes en la página de para crear el portal de Forms.
+
+## Pasos siguientes
+
+[Incluir configuración de servicios en la nube](./azure-storage-fdm.md)
