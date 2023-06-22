@@ -10,9 +10,9 @@ jira: KT-13466
 thumbnail: KT-13466.jpg
 doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
-source-git-commit: 8e99c660fed409d44d34cf4edf6bf1b59fa29e34
+source-git-commit: c965d5ff3f49f4859779e657674dab8602fb831b
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '765'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Añadir insignias al editor de texto enriquecido (RTE)
 
-![Ejemplo de distintivos del Editor de fragmentos de contenido](./assets/rte/rte-badge-home.png){align="center"}
+>[!VIDEO](https://video.tv.adobe.com/v/3420831?quality=12&learn=on)
 
 [Distintivo del editor de texto enriquecido](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-badges/)  son extensiones que hacen que el texto del Editor de texto enriquecido (RTE) no se pueda editar. Esto significa que un distintivo declarado como tal solo se puede eliminar completamente y no se puede editar parcialmente. Estos distintivos también admiten colores especiales dentro de RTE, lo que indica claramente a los autores de contenido que el texto es un distintivo y, por lo tanto, no editable. Además, proporcionan indicaciones visuales sobre el significado del texto del distintivo.
 
