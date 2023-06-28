@@ -9,7 +9,7 @@ version: Cloud Service
 topic: Development
 kt: 8842
 exl-id: 274018b9-91fe-45ad-80f2-e7826fddb37e
-source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 2%
@@ -19,6 +19,7 @@ ht-degree: 2%
 # Instalación del software necesario
 
 Este tutorial le guiará a través de los pasos necesarios para crear un proyecto de AEM Forms y sincronizar el proyecto de AEM Forms AEM con la instancia local mediante la herramienta IntelliJ y la herramienta de repositorio. También aprenderá a añadir su proyecto al repositorio de Git local e insertar el repositorio de Git local en el repositorio de Cloud Manager.
+
 
 
 

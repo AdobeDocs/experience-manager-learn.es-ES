@@ -3,10 +3,11 @@ title: Configuración de plantillas de recursos con AEM Assets y InDesign Server
 description: Las plantillas de recursos permiten a los especialistas en marketing crear, administrar y distribuir recursos digitales para su uso digital e impreso. La creación de folletos de marketing, tarjetas de presentación, prospectos, anuncios y postales es mucho más sencilla con las plantillas de recursos al integrarse con el servidor de InDesign. En esta sección se describe la configuración del servidor de InDesign AEM con el.
 version: 6.4, 6.5
 topic: Content Management
+feature: Templates
 role: Developer
 level: Intermediate
 exl-id: 5b764d86-8ced-46ed-838e-4bd2e75fd64c
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 0%

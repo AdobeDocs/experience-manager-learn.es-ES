@@ -3,10 +3,11 @@ title: Explicación de los archivos de InDesign y las plantillas de recursos en 
 description: En este tutorial de vídeo se explica cómo definir un archivo de InDesign, junto con todas las consideraciones que lo acompañan, para utilizarlo en la función de plantillas de recursos de AEM Assets.
 version: 6.4, 6.5
 topic: Content Management
+feature: Templates
 role: User
 level: Intermediate
 exl-id: c418e94a-b18e-429a-b41c-2bf32e158598
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 1%
@@ -35,6 +36,7 @@ En este tutorial de vídeo se explica cómo definir un archivo de InDesign, junt
 4. Agregar la imagen del logotipo de FPO ([indicado en el zip](assets/asset-templates-tutorial-video--supporting-files.zip)) al elemento Logotipo de la página maestra.
 
    * **Clic derecho** y seleccione **Ajuste > Opciones de conexión de marco... > Ajuste de contenido > Rellenar marco proporcionalmente**
+
    [Más información sobre las Opciones de ajuste de cuadro](https://helpx.adobe.com/indesign/using/frames-objects.html#fitting_objects_to_frames), y que es adecuado para su caso de uso.
 
 5. Copie el encabezado (logotipo y nombre de la empresa) de la plantilla Patrón en Página y Página mediante Pegar en contexto.

@@ -1,12 +1,13 @@
 ---
 title: Su evaluación de madurez de AEM Sites
-seo-title: AEM Sites Maturity Assessment
 description: Esta lista de comprobación proporciona información general sobre las preguntas clave que usted y su equipo deben responder al evaluar la madurez de su instancia de AEM Sites
-seo-description: This checklist provides an overview of key questions you and your team should be answering when evaluating the maturity of your AEM Sites instance
 audience: author, marketer, developer
+role: Admin
+level: Intermediate
+topic: Administration
 feature: Learn From Your Peers
 exl-id: 22164a0e-7239-43f4-8356-c12f68133255
-source-git-commit: 2a137f71cbd876db0164e84ab437e8eda982270e
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 0%

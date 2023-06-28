@@ -3,10 +3,11 @@ title: AEM Variables en flujo de trabajo de la[Parte 5]
 description: AEM Uso de variables de tipo XML, JSON, ArrayList o Document en un flujo de trabajo de
 version: 6.5
 topic: Development
+feature: Adaptive Forms, Workflow
 role: Developer
 level: Beginner
 exl-id: ecd43765-455c-4f8b-acf2-6ea34495c311
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 0%

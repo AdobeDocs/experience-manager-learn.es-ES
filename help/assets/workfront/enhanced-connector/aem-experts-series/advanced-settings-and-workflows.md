@@ -3,6 +3,7 @@ title: Configuración y flujos de trabajo avanzados para Workfront AEM para el c
 description: Obtenga información acerca de la configuración avanzada del conector mejorado de Workfront para la y cómo configurar flujos de trabajo avanzados e iniciadores en la administración de la sincronización de datos entre los flujos de trabajo de y el conector de la aplicación de datos de AEM AEM AEM para la administración de la sincronización de datos entre los flujos de trabajo y el conector de la aplicación de datos de la aplicación de datos de la plataforma de datos de Adobe y el conector de Workfront.
 version: Cloud Service
 topic: Content Management, Integrations
+feature: Asset Management
 role: Admin, Architect, Developer
 level: Beginner
 kt: 9733
@@ -10,7 +11,7 @@ thumbnail: 340397.jpeg
 hidefromtoc: false
 last-substantial-update: 2022-09-02T00:00:00Z
 exl-id: 7d44e1b7-7216-431d-b866-6adcc8673d53
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 0%

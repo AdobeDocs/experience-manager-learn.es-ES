@@ -3,10 +3,11 @@ title: AEM Uso del catálogo de recursos con el comercio y el InDesign Server de
 description: AEM AEM.4 La mejora del catálogo permite crear páginas de catálogo mediante plantillas de recursos y InDesign Server de trabajo de la.  Un usuario puede crear una página de catálogo mediante la plantilla de InDesign y asignar propiedades de producto a campos editables, que se pueden utilizar posteriormente para crear páginas similares para diferentes productos.
 version: 6.4, 6.5
 topic: Content Management
+feature: Templates
 role: User
 level: Beginner
 exl-id: 45daa8e3-ce3b-43de-b3d6-276107215dd4
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 0%

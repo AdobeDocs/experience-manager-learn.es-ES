@@ -3,10 +3,11 @@ title: Comprender las razones para actualizar
 description: Un desglose de alto nivel de las funciones clave para los clientes que se plantean actualizar a la última versión de Adobe Experience Manager 6.
 version: 6.5
 topic: Upgrade
+feature: Release Information
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
 exl-id: bf4030b0-67c4-4b00-af95-f63e6f79e995
-source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '2602'
 ht-degree: 5%
@@ -42,7 +43,7 @@ AEM AEM La experiencia fluida sigue siendo una herramienta nueva y mejorada que 
 
 + **Fragmentos de contenido** admite Comparación de versiones/Diferencias y anotaciones.
 + **AEM API HTTP de Assets** admite la exposición **Fragmentos de contenido** directamente en el DAM como **JSON**.
-   **Fragmentos de experiencias** apoyo **Búsqueda de texto completo** y **AEM Invalidación de caché de Dispatcher** para referencia **Páginas**.
+  **Fragmentos de experiencias** apoyo **Búsqueda de texto completo** y **AEM Invalidación de caché de Dispatcher** para referencia **Páginas**.
 
 ### Administración de recursos
 
