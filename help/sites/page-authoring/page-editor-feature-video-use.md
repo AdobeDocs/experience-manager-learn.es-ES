@@ -15,9 +15,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: b120fb79-729e-4155-ba10-e5f7bb07eefa
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: d0027647ce3157173d2592728757150199db930d
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '127'
 ht-degree: 8%
 
 ---
@@ -26,35 +26,15 @@ ht-degree: 8%
 
 AEM El editor de páginas de Sites es una potente herramienta para crear y editar contenido web. Se accede a las herramientas y capacidades del Editor de páginas desde la barra de herramientas de la interfaz de usuario del Editor de páginas.
 
-El siguiente vídeo resalta las principales funciones del Editor de páginas.
+En el siguiente vídeo se destacan algunas de las principales funciones del Editor de páginas.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32011?quality=12&learn=on)
 
-Las funciones del editor de páginas incluyen:
 
-* Arrastrar y soltar componentes y recursos
-* Panel Árbol de contenido que proporciona un índice de todos los componentes de la página
-* El panel Información de página le permite acceder a información adicional y a acciones rápidas para un autor de contenido
-   * Abrir propiedades
-   * Desplegar página
-   * Iniciar flujo de trabajo
-   * Bloquear página / Desbloquear página
-   * Publicar o cancelar la publicación de una página
-   * Editar plantilla
-   * Ver como aparece publicado
-   * Ver en administración
-   * Ayuda
-* Adición de iconos y descripciones de componentes al panel de componentes
-* Vínculo directo para editar recursos en DAM
-* Emulador para la edición de contenido en línea y la administración más rápida de componentes en la cuadrícula adaptable
-* Modos de edición de página
-   * Modo de edición
-   * Modo de diseño
-   * Modo de desarrollador
-* Autocompletar y búsqueda de palabras clave para el campo de formulario de pathfinder
-* Barra de estado del flujo de trabajo para la página actual
+Consulte la [AEM Documentación de para obtener una descripción general completa de las funciones del editor de páginas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/editing-content.html?lang=es).
 
 ## Recursos adicionales {#additional-resources}
 
+* AEM [Documentación del Editor de páginas de la[(https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/editing-content.html)
 * [Edición de documentación de contenido de página](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
 * [Guía del usuario de creación de Sites](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
