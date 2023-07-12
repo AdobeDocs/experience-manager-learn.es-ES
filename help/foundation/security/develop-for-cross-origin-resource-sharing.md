@@ -7,9 +7,9 @@ role: Developer
 level: Beginner
 feature: Security
 exl-id: 867cf74e-44e7-431b-ac8f-41b63c370635
-source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
+source-git-commit: ea43023f454ec61c8df850e2d2d2fc48e53edb4e
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '307'
 ht-degree: 0%
 
 ---
@@ -94,26 +94,48 @@ Access-Control-Request-Method,Access-Control-Request-Headers]"
 
 ## Configuración de Dispatcher {#dispatcher-configuration}
 
+### Permitir encabezados de solicitud CORS
+
+AEM Para permitir que los encabezados de solicitud HTTP necesarios lleguen a los para su procesamiento, deben estar permitidos en el `/clientheaders` configuración.
+
+```
+/clientheaders {
+   ...
+   "Origin"
+   "Access-Control-Request-Method"
+   "Access-Control-Request-Headers"
+}
+```
+
+### Almacenamiento en caché de encabezados de respuesta CORS
+
 Para permitir el almacenamiento en caché y el servicio de encabezados CORS en contenido almacenado en caché, agregue lo siguiente [Configuración de /clientheaders](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders) a todos los que admitan AEM Publish `dispatcher.any` archivos.
 
 ```
-/myfarm { 
-  ...
-  /clientheaders {
-      "Access-Control-Allow-Origin"
-      "Access-Control-Expose-Headers"
-      "Access-Control-Max-Age"
-      "Access-Control-Allow-Credentials"
-      "Access-Control-Allow-Methods"
-      "Access-Control-Allow-Headers"
-  }
-  ...
+/publishfarm {
+    ...
+    /cache {
+        ...
+        # CORS HTTP response headers
+        # https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS#the_http_response_headers
+        /headers {
+            ...
+            "Access-Control-Allow-Origin"
+            "Access-Control-Expose-Headers"
+            "Access-Control-Max-Age"
+            "Access-Control-Allow-Credentials"
+            "Access-Control-Allow-Methods"
+            "Access-Control-Allow-Headers"
+        }
+    ...
+    }
+...
 }
 ```
 
 **Reinicie la aplicación del servidor web** después de realizar cambios en el `dispatcher.any` archivo.
 
-Es probable que se necesite borrar la caché por completo para garantizar que los encabezados se almacenen correctamente en la caché en la siguiente solicitud después de un `/clientheaders` actualización de configuración.
+Es probable que se necesite borrar la caché por completo para garantizar que los encabezados se almacenen correctamente en la caché en la siguiente solicitud después de un `/cache /headers` actualización de configuración.
 
 ## Materiales de apoyo {#supporting-materials}
 
