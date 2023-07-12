@@ -12,10 +12,10 @@ topic: Security
 role: Developer
 level: Intermediate
 exl-id: 6009d9cf-8aeb-4092-9e8c-e2e6eec46435
-source-git-commit: 73bb813c961cf988355984b0385998a493ee3716
+source-git-commit: 325c0204c33686e09deb82dd159557e0b8743df6
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 1%
+source-wordcount: '966'
+ht-degree: 2%
 
 ---
 
@@ -182,7 +182,22 @@ Por lo general, las mismas consideraciones para almacenar en caché el contenido
 | No | AEM Publish | Autenticado | Evite almacenar en caché los encabezados CORS en solicitudes autenticadas. Esto se ajusta a la guía común de no almacenar en caché las solicitudes autenticadas, ya que es difícil determinar cómo afectará el estado de autenticación/autorización del usuario solicitante al recurso enviado. |
 | Sí | AEM Publish | Anónimo | Las solicitudes anónimas que se pueden almacenar en caché en Dispatcher también pueden tener sus encabezados de respuesta en caché, lo que garantiza que las futuras solicitudes CORS puedan acceder al contenido almacenado en caché. Cualquier cambio en la configuración de CORS en AEM Publish **debe** ir seguido de una invalidación de los recursos en caché afectados. Las prácticas recomendadas dictan sobre las implementaciones de código o configuración cuando se purga la caché de Dispatcher, ya que es difícil determinar qué contenido en caché puede verse afectado. |
 
-Para permitir el almacenamiento en caché de los encabezados CORS, agregue la siguiente configuración a todos los archivos Dispatcher.any de AEM Publish compatibles.
+### Permitir encabezados de solicitud CORS
+
+Para permitir el [AEM Encabezados de solicitud HTTP para pasarlos a la para su procesamiento](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders), deben estar permitidos en el de Dispatcher `/clientheaders` configuración.
+
+```
+/clientheaders {
+   ...
+   "Origin"
+   "Access-Control-Request-Method"
+   "Access-Control-Request-Headers"
+}
+```
+
+### Almacenamiento en caché de encabezados de respuesta CORS
+
+Para permitir el almacenamiento en caché y el servicio de encabezados CORS en contenido almacenado en caché, agregue lo siguiente [/cache /headers configuración](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es#caching-http-response-headers) a AEM Publish `dispatcher.any` archivo.
 
 ```
 /publishfarm {
