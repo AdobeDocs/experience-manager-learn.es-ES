@@ -7,10 +7,10 @@ role: Developer
 level: Beginner
 feature: Security
 exl-id: 867cf74e-44e7-431b-ac8f-41b63c370635
-source-git-commit: ea43023f454ec61c8df850e2d2d2fc48e53edb4e
+source-git-commit: 46728ac6ad37590413e247d23262233626b0575b
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 0%
+source-wordcount: '318'
+ht-degree: 3%
 
 ---
 
@@ -96,7 +96,7 @@ Access-Control-Request-Method,Access-Control-Request-Headers]"
 
 ### Permitir encabezados de solicitud CORS
 
-AEM Para permitir que los encabezados de solicitud HTTP necesarios lleguen a los para su procesamiento, deben estar permitidos en el `/clientheaders` configuración.
+Para permitir el [AEM Encabezados de solicitud HTTP para pasarlos a la para su procesamiento](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders), deben estar permitidos en el de Dispatcher `/clientheaders` configuración.
 
 ```
 /clientheaders {
@@ -109,7 +109,7 @@ AEM Para permitir que los encabezados de solicitud HTTP necesarios lleguen a los
 
 ### Almacenamiento en caché de encabezados de respuesta CORS
 
-Para permitir el almacenamiento en caché y el servicio de encabezados CORS en contenido almacenado en caché, agregue lo siguiente [Configuración de /clientheaders](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders) a todos los que admitan AEM Publish `dispatcher.any` archivos.
+Para permitir el almacenamiento en caché y el servicio de encabezados CORS en contenido almacenado en caché, agregue lo siguiente [/cache /headers configuración](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es#caching-http-response-headers) a AEM Publish `dispatcher.any` archivo.
 
 ```
 /publishfarm {
