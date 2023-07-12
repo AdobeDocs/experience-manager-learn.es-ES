@@ -14,9 +14,9 @@ role: Developer
 level: Intermediate, Experienced
 last-substantial-update: 2023-01-12T00:00:00Z
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 96d576ae24305c1f41073921fbb904e07c1206f6
 workflow-type: tm+mt
-source-wordcount: '1937'
+source-wordcount: '1924'
 ht-degree: 0%
 
 ---
@@ -107,7 +107,7 @@ Las credenciales del servicio, un objeto JSON completamente formado, no son las 
 1. La aplicación externa utiliza la información de las credenciales del servicio para construir un token JWT
 1. El token JWT se envía a Adobe IMS a cambio de un token de acceso
 1. AEM Adobe IMS devuelve un token de acceso que se puede utilizar para acceder a los datos as a Cloud Service de la
-   + Los tokens de acceso pueden tener una caducidad solicitada. Es mejor mantener la duración del token de acceso corta y actualizarlo cuando sea necesario.
+   + Los tokens de acceso no pueden cambiar una hora de caducidad.
 1. AEM La aplicación externa realiza solicitudes HTTP a las solicitudes as a Cloud Service, agregando el token de acceso como token de portador al encabezado de autorización de las solicitudes HTTP
 1. AEM as a Cloud Service recibe la solicitud HTTP, autentica la solicitud, realiza el trabajo solicitado por la solicitud HTTP y devuelve una respuesta HTTP de nuevo a la aplicación externa
 
