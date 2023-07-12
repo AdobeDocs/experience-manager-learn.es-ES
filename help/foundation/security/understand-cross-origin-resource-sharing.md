@@ -12,9 +12,9 @@ topic: Security
 role: Developer
 level: Intermediate
 exl-id: 6009d9cf-8aeb-4092-9e8c-e2e6eec46435
-source-git-commit: 325c0204c33686e09deb82dd159557e0b8743df6
+source-git-commit: d2a9596ddadd897793a0fce8421aa8b246b45b12
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '1007'
 ht-degree: 2%
 
 ---
@@ -64,7 +64,7 @@ Si no se configura ninguna directiva, [!DNL CORS] Las solicitudes de no serán r
 #### [!UICONTROL Encabezados expuestos]
 
 * `"exposedheaders" <header>`
-* Lista de parámetros de encabezado que indican los encabezados de respuesta a los que los exploradores pueden acceder.
+* Lista de parámetros de encabezado que indican los encabezados de respuesta a los que los exploradores pueden acceder. Para las solicitudes CORS (no de verificación previa), si no están vacías, estos valores se copian en `Access-Control-Expose-Headers` encabezado de respuesta. A continuación, el explorador puede acceder a los valores de la lista (nombres de encabezado); sin ella, el explorador no puede leer esos encabezados.
 
 #### [!UICONTROL Edad máxima]
 
@@ -74,7 +74,7 @@ Si no se configura ninguna directiva, [!DNL CORS] Las solicitudes de no serán r
 #### [!UICONTROL Encabezados admitidos]
 
 * `"supportedheaders" <header>`
-* Lista de `header` parámetros que indican qué encabezados HTTP se pueden utilizar al realizar la solicitud real.
+* Lista de `header` parámetros que indican qué encabezados de solicitud HTTP se pueden utilizar al realizar la solicitud real.
 
 #### [!UICONTROL Métodos permitidos]
 
@@ -98,8 +98,7 @@ El sitio 1 es un escenario básico, accesible de forma anónima y de solo lectur
   ],
   "supportedmethods":[
     "GET",
-    "HEAD",
-    "OPTIONS"
+    "HEAD"
   ],
   "alloworigin":[
     "http://127.0.0.1:3000",
@@ -140,7 +139,6 @@ El sitio 2 es más complejo y requiere solicitudes autorizadas y mutantes (POST,
     "HEAD"
     "POST",
     "DELETE",
-    "OPTIONS",
     "PUT"
   ],
   "alloworigin":[
