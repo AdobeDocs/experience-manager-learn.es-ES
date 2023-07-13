@@ -9,9 +9,9 @@ level: Beginner
 kt: 13099
 last-substantial-update: 2023-04-13T00:00:00Z
 exl-id: 44f4261b-d6fe-42ad-a3aa-2a36ca897b5e
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: cc24ebca488ea286e8a4605edfb39420c1c10022
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '149'
 ht-degree: 0%
 
 ---
@@ -25,14 +25,21 @@ Los siguientes activos/configuraciones se implementaron en un servidor de public
 * [Plantilla de comunicación interactiva de ejemplo](assets/waiver-interactive-communication.zip)
 * [Implementar el paquete DevelopersWithServiceUser](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip)
 * Agregue la siguiente entrada en el servicio del asignador de usuarios del servicio Apache Sling mediante OSGi configMgr
-   **DesarrollarWithServiceUser.core:getformsresourceresolver=fd-service**
-* [Puede descargar un ejemplo de código de aplicación de React desde aquí](assets/src.zip)
+  **DesarrollarWithServiceUser.core:getformsresourceresolver=fd-service**
 
+## Implementación de la aplicación react de ejemplo
 
+* [Descargue la aplicación react de ejemplo](assets/mult-step-form1.zip)
+* Descomprima el contenido de la aplicación react en una carpeta nueva
+* Vaya a la carpeta y ejecute los siguientes comandos
 
-La aplicación react de ejemplo debe implementarse en el entorno local.
+```java
+npm install
+npm start
+```
 
-Debe cambiar la dirección URL del punto de conexión para que coincida con su entorno. Abra el archivo EmergencyContact.js y cambie la dirección URL en el método fetch
+Abra el archivo EmergencyContact.js y cambie la dirección URL en el método fetch para que coincida con su entorno.
+
 
 ```javascript
  const getWebForm=async()=>
@@ -49,6 +56,6 @@ Debe cambiar la dirección URL del punto de conexión para que coincida con su e
  
 ```
 
-Para habilitar la realización de llamadas del POST AEM al punto de conexión de la aplicación REACT desde el punto de conexión de la aplicación, deberá especificar las entradas adecuadas en el campo Orígenes permitidos en la configuración de la política de uso compartido de recursos de origen cruzado de Granite de Adobe
+Para habilitar la realización de llamadas del POST AEM al punto de conexión de la aplicación REACT desde el punto de conexión de la aplicación, deberá especificar las entradas adecuadas en el campo Orígenes permitidos en la configuración de la política de uso compartido de recursos de origen cruzado de Granite de Adobe.
 
 ![establecimiento de cors](assets/cors-settings.png)
