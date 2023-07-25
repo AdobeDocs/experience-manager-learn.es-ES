@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 695cccfdd03618505b2d3419b1ad82d8dbd0a122
+source-git-commit: 52c8d96a03b4d6e4f2a0a3c92f4307203e236417
 workflow-type: tm+mt
-source-wordcount: '987'
+source-wordcount: '1015'
 ht-degree: 23%
 
 ---
@@ -248,6 +248,15 @@ ht-degree: 23%
       + [Almacenar datos de formulario en Azure Storage](./forms/forms-cs-azure-portal/create-af.md)
       + [Rellenar previamente formulario](./forms/forms-cs-azure-portal/prefill-af-storage.md)
       + [Envíos de consultas](./forms/forms-cs-azure-portal/query-submitted-data.md)
+   + Guardar y reanudar el rellenado de formularios{#prefill-azure-storage}
+      + [1- Introducción](./forms/prefill-azure-storage/introduction.md)
+      + [2- Crear componente de página](./forms/prefill-azure-storage/page-component.md)
+      + [3- Crear una plantilla de formulario adaptable](./forms/prefill-azure-storage/associate-page-component.md)
+      + [4- Crear la integración de Azure Storage](./forms/prefill-azure-storage/create-fdm.md)
+      + [5 - Crear la integración de SendGrid](./forms/prefill-azure-storage/send-grid-fdm.md)
+      + [6 - Crear el formulario adaptable](./forms/prefill-azure-storage/create-af.md)
+      + [7 - Implementar los recursos de muestra](./forms/prefill-azure-storage/deploy-sample-assets.md)
+
    + Crear flujo de trabajo de revisión{#create-aem-workflow}
       + [Externalización del almacenamiento de flujo de trabajo](./forms/create-aem-workflow/externalize-workflow.md)
       + [Crear modelo de flujo de trabajo](./forms/create-aem-workflow/create-workflow.md)
