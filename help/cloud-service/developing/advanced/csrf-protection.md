@@ -10,9 +10,9 @@ doc-type: Code Sample
 last-substantial-update: 2023-07-14T00:00:00Z
 jira: KT-13651
 thumbnail: KT-13651.jpeg
-source-git-commit: ebb4b6eaafff9eb1f3f1dc81beb1b21df18a6a04
+source-git-commit: 9cd2c5b6337ae7a4b05380d6a3fb945f28a14299
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '443'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ El token CSRF no es necesario para __GET__ solicitudes, o __anónimo__ solicitud
 Si no se envía un token CSRF con una solicitud de POST, PUT o DELETE AEM AEM, devuelve un mensaje de respuesta prohibida 403 y, a continuación, registra el error siguiente en el registro de la:
 
 ```log
-[INFO][POST /path/to/aem/endpoint HTTP/1.1][com.adobe.granite.csrf.impl.CSRFFilter] isValidRequest: empty CSRF token - rejecting
+[INFO][POST path/to/aem/endpoint HTTP/1.1][com.adobe.granite.csrf.impl.CSRFFilter] isValidRequest: empty CSRF token - rejecting
 [INFO][POST /path/to/aem/endpoint HTTP/1.1][com.adobe.granite.csrf.impl.CSRFFilter] doFilter: the provided CSRF token is invalid
 ```
 
@@ -50,10 +50,10 @@ AEM Este fragmento de código muestra cómo, en el envío del formulario, se pue
 
 ```javascript
 // Attach submit handler event to form onSubmit
-document.querySelector('form').addEventListener('submit', async (event) => {
-    event.preventDefault();
+document.querySelector('form').addEventListener('submit', (e) => {
+    e.preventDefault();
 
-    const form = event.target;
+    const form = e.target;
     const response = await fetch('/libs/granite/csrf/token.json');
     const json = await response.json();
     
@@ -66,7 +66,7 @@ document.querySelector('form').addEventListener('submit', async (event) => {
         // If the form already has a CSRF token input, update the value.
         csrfTokenInput.value = json.token;
     }
-    // Submit the form with the hidden input containing the CSRF token
+
     form.submit();
 });
 ```
@@ -84,12 +84,12 @@ AEM Este fragmento de código muestra cómo recuperar un token CSRF de la base d
  * 
  * @returns {Promise<string>} that resolves to the CSRF token.
  */
-async function getCsrfToken() {
+async getCsrfToken() {
     const response = await fetch('/libs/granite/csrf/token.json');
     const json = await response.json();
     return json.token;
 }
-
+...
 // Fetch from AEM with CSRF token in a header named 'CSRF-Token'.
 await fetch('/path/to/aem/endpoint', {
     method: 'POST',
