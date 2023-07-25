@@ -7,12 +7,14 @@ role: Developer
 level: Beginner, Intermediate
 version: Cloud Service
 feature: Adaptive Forms
-topic: Development
+topic: Integrations, Development
 kt: 12557
+badgeIntegration: label="Integración" type="positive"
+badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 exl-id: 43665a1e-4101-4b54-a6e0-d189e825073e
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '207'
 ht-degree: 1%
 
 ---
@@ -55,3 +57,7 @@ Interactúe con el formulario mientras mantiene abierta la ventana de la consola
 Añada el [Extensión de AEP Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) en el explorador (debe iniciar sesión) para obtener más información sobre depuración
 
 ![platform-debugger](assets/platform-debugger.png)
+
+## Felicitaciones
+
+Se ha integrado correctamente AEM Forms as a Cloud Service con Adobe Analytics para informar sobre los campos de datos de formulario.

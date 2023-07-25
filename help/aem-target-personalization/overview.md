@@ -5,15 +5,17 @@ feature: Experience Fragments
 topic: Personalization
 role: Developer
 level: Intermediate
+badgeIntegration: label="Integración" type="positive"
+badgeVersions: label="AEM Sites 6.5" before-title="false"
 exl-id: b632883f-65fd-4f89-bf39-ec2bce352d2d
-source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '840'
-ht-degree: 1%
+source-wordcount: '842'
+ht-degree: 0%
 
 ---
 
-# Introducción a AEM y Adobe Target {#getting-started-with-aem-target}
+# Integración de AEM Sites y Adobe Target {#getting-started-with-aem-target}
 
 AEM Tanto Target como Target son soluciones potentes con capacidades aparentemente superpuestas. A veces, los clientes tienen dificultades para comprender cómo y cuándo utilizar estos productos en conjunto para ofrecer una experiencia personalizada. Para ofrecer una experiencia optimizada para cada usuario final, los diferentes equipos de su organización deben trabajar de cerca y definir quién hace qué.
 
@@ -38,7 +40,7 @@ AEM Ahora tenemos contenido personalizado en forma de Ofertas de los clientes de
 * AEM Target&#x200B; utiliza el marcado del fragmento de experiencia de la como ofertas en las actividades
 * Target ofrece un HTML AEM de Fragmentos de experiencias, mientras que proporciona imágenes a las que se hace referencia en el
 
-   ![Personalización mediante el diagrama Fragmentos de experiencias](assets/personalization-use-case-1/use-case-1-diagram.png)
+  ![Personalización mediante el diagrama Fragmentos de experiencias](assets/personalization-use-case-1/use-case-1-diagram.png)
 
 **Para implementar este escenario, debe:**
 
@@ -59,7 +61,7 @@ El VEC es una de las características principales de Adobe Target. El VEC permit
 * El nuevo contenido neto se crea mediante el VEC de Adobe Target
 * AEM AEM Se aplica tanto a los sitios alojados en el sitio como a los sitios no alojados en el sitio que no están alojados en el servidor de la
 
-   ![Personalización mediante el diagrama del Compositor de experiencias visuales](assets/personalization-use-case-3/use-case-diagram-3.png)
+  ![Personalización mediante el diagrama del Compositor de experiencias visuales](assets/personalization-use-case-3/use-case-diagram-3.png)
 
 **Para implementar este escenario, debe:**
 
@@ -77,7 +79,7 @@ La integración de Adobe Experience Manager con Adobe Target le ayuda a ofrecer 
 * Aquí no se crea ningún contenido nuevo neto
 * AEM AEM Se aplica tanto a los sitios de como a los que no son de
 
-   ![diagrama](assets/personalization-use-case-2/use-case-2-diagram.png)
+  ![diagrama](assets/personalization-use-case-2/use-case-2-diagram.png)
 
 **Para implementar este escenario, debe:**
 

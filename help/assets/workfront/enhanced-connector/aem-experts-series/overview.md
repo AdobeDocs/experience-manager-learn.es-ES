@@ -1,6 +1,6 @@
 ---
-title: Sesiones de conector mejorado de Workfront para Experience Manager
-description: Obtenga información acerca de los conceptos básicos del conector mejorado de Adobe Workfront y Experience Manager Assets.
+title: Integración de Workfront y AEM Assets mediante el conector mejorado
+description: Obtenga información acerca de los conceptos básicos de la integración de conectores mejorados de Adobe Workfront y Experience Manager Assets.
 version: Cloud Service
 topic: Content Management, Integrations
 feature: Asset Management
@@ -9,19 +9,21 @@ level: Beginner
 kt: 9754
 thumbnail: kt-9754.jpeg
 last-substantial-update: 2022-09-02T00:00:00Z
+badgeIntegration: label="Integración" type="positive"
+badgeVersions: label="AEM Assets as a Cloud Service, AEM Assets 6.5" before-title="false"
 exl-id: 4f279c0d-270f-433e-b047-88c02f5b1e78
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '271'
 ht-degree: 0%
 
 ---
 
-# Serie de expertos sobre conectores mejorados de Workfront para Experience Manager
+# Integración de Workfront y AEM Assets con el conector mejorado
 
 ![AEM Serie de expertos de](./assets/banner.png)
 
-Únase a los expertos de Workfront y Experience Manager Assets de Adobe en esta serie de vídeos de cuatro partes, mientras muestran y analizan los detalles del conector mejorado de Workfront para Experience Manager.
+Únase a los expertos de Workfront y Experience Manager Assets de Adobe en esta serie de vídeos de cuatro partes, mientras muestran y analizan los detalles de la integración de Workfront y AEM Assets mediante el conector mejorado.
 
 Esta serie de cuatro partes de expertos sigue a un grupo de expertos en Adobe - desde gestores de productos, hasta consultores y socios de Adobe - discutiendo:
 

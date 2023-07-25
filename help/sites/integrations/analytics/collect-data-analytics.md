@@ -1,6 +1,6 @@
 ---
-title: Recopilación de datos de página con Adobe Analytics
-description: Utilice la capa de datos del cliente de Adobe impulsada por evento para recopilar datos sobre la actividad del usuario en un sitio web creado con Adobe Experience Manager. Aprenda a utilizar las reglas de etiquetas para detectar estos eventos y enviar datos a un grupo de informes de Adobe Analytics.
+title: Integración de AEM Sites con Adobe Analytics con la extensión de etiquetas de Adobe Analytics
+description: Integre AEM Sites con Adobe Analytics mediante la capa de datos del cliente de Adobe impulsada por evento para recopilar datos sobre la actividad del usuario en un sitio web creado con Adobe Experience Manager. Aprenda a utilizar las reglas de etiquetas para detectar estos eventos y enviar datos a un grupo de informes de Adobe Analytics.
 version: Cloud Service
 topic: Integrations
 feature: Adobe Client Data Layer
@@ -8,22 +8,23 @@ role: Developer
 level: Intermediate
 kt: 5332
 thumbnail: 5332-collect-data-analytics.jpg
+badgeIntegration: label="Integración" type="positive"
 exl-id: 33f2fd25-8696-42fd-b496-dd21b88397b2
-source-git-commit: 6a5e62a2a897adc421585e79c5f36f6aa759feaa
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '2447'
+source-wordcount: '2470'
 ht-degree: 3%
 
 ---
 
-# Recopilación de datos de página con Adobe Analytics
+# Integración de AEM Sites y Adobe Analytics
 
 >[!NOTE]
 >
 >Adobe Experience Platform Launch se ha convertido en un conjunto de tecnologías de recopilación de datos en Adobe Experience Platform. Como resultado, se han implementado varios cambios terminológicos en la documentación del producto. Consulte lo siguiente [documento](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html) para obtener una referencia consolidada de los cambios terminológicos.
 
 
-Aprenda a utilizar las funciones integradas del [Capa de datos del cliente de Adobe AEM con componentes principales de](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=es) para recopilar datos sobre una página en Adobe Experience Manager Sites. [Etiquetas en el Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) y el [Extensión de Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html) se utilizan para crear reglas para enviar datos de página a Adobe Analytics.
+Obtenga información sobre cómo integrar AEM Sites y Adobe Analytics con la extensión de etiquetas de Adobe Analytics, mediante las funciones integradas de la [Capa de datos del cliente de Adobe AEM con componentes principales de](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=es) para recopilar datos sobre una página en Adobe Experience Manager Sites. [Etiquetas en el Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) y el [Extensión de Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html) se utilizan para crear reglas para enviar datos de página a Adobe Analytics.
 
 ## Lo que va a generar {#what-build}
 

@@ -1,6 +1,6 @@
 ---
-title: AEM Conexión con la propiedad de etiqueta de mediante IMS
-description: AEM AEM Obtenga información sobre cómo conectarse con la propiedad de etiquetas mediante la configuración de IMS en la. AEM AEM Esta configuración se autentica con la API de Launch y permite a los usuarios comunicarse a través de las API de Launch para acceder a las propiedades de la etiqueta.
+title: Conexión de AEM Sites con la propiedad Tag mediante IMS
+description: Obtenga información sobre cómo conectar AEM Sites AEM con la propiedad Tag mediante la configuración de IMS en la configuración de la. AEM AEM Esta configuración se autentica con la API de Launch y permite a los usuarios comunicarse a través de las API de Launch para acceder a las propiedades de la etiqueta.
 topics: integrations
 audience: administrator
 solution: Experience Manager, Data Collection, Experience Platform
@@ -12,15 +12,17 @@ topic: Integrations
 feature: Integrations
 role: Developer
 level: Intermediate
+badgeIntegration: label="Integración" type="positive"
+badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 92dbd185-bad4-4a4d-b979-0d8f5d47c54b
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '313'
 ht-degree: 2%
 
 ---
 
-# AEM Conexión con la propiedad de etiqueta de mediante IMS{#connect-aem-and-tag-property-using-ims}
+# Conexión de AEM Sites con la propiedad Tag mediante IMS{#connect-aem-and-tag-property-using-ims}
 
 >[!NOTE]
 >

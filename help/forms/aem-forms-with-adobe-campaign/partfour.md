@@ -3,13 +3,15 @@ title: Creación De Un Perfil De Campaign Con El Modelo De Datos De Formulario
 description: Pasos necesarios para crear un perfil de Adobe Campaign Standard mediante el modelo de datos de formulario de AEM Forms
 feature: Adaptive Forms
 version: 6.4,6.5
-topic: Development
+topic: Integrations, Development
 role: Developer
 level: Experienced
+badgeIntegration: label="Integración" type="positive"
+badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: 59d5ba6d-91c1-48c7-8c87-8e0caf4f2d7e
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '429'
 ht-degree: 3%
 
 ---

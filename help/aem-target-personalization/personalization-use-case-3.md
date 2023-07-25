@@ -7,10 +7,12 @@ feature: Experience Fragments
 topic: Personalization
 role: Developer
 level: Intermediate
+badgeIntegration: label="Integración" type="positive"
+badgeVersions: label="AEM Sites 6.5" before-title="false"
 exl-id: 1550e6a7-04b5-4a40-9d7b-88074283402f
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '585'
 ht-degree: 2%
 
 ---
@@ -48,7 +50,6 @@ Para este ejercicio, deben participar los siguientes usuarios y, para realizar a
 1. El especialista en marketing crea una actividad de destinatario A/B dentro de Adobe Target.
    1. En la ventana de Adobe Target, vaya a **Actividades** pestaña.
    2. Clic **Crear actividad** y seleccione el tipo de actividad como **Prueba A/B**
-
       ![Adobe Target - Crear actividad](assets/personalization-use-case-2/create-ab-activity.png)
    3. Seleccione el **Web** y seleccione la opción **Compositor de experiencias visuales**.
    4. Introduzca el **URL de actividad** y haga clic en **Siguiente** para abrir el Compositor de experiencias visuales.
@@ -63,7 +64,6 @@ Para este ejercicio, deben participar los siguientes usuarios y, para realizar a
       ![Selección de contenedor](assets/personalization-use-case-3/container-selection.png)
    9. Haga clic en el contenedor que desee reorganizar y arrástrelo y suéltelo en la ubicación deseada. Vamos a reorganizar la *Mejores asadores* contenedor desde la primera fila, primera columna, hasta la primera fila, tercera columna. Ahora, la *Mejores asadores* el contenedor está junto a *Exposiciones fotográficas* contenedor.
       ![Intercambio de contenedor](assets/personalization-use-case-3/container-swap.png)
-
       **Después del intercambio**
       ![Contenedor intercambiado](assets/personalization-use-case-3/after-swap-1-3.png)
    10. Del mismo modo, reorganice las posiciones de los otros contenedores de tarjetas.

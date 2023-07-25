@@ -7,11 +7,13 @@ kt: 6126
 topic: Development
 role: User
 level: Beginner
+badgeIntegration: label="Integración" type="positive"
+badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: fba18118-0431-4edd-a5a6-0281e8c12979
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '74'
-ht-degree: 0%
+source-wordcount: '96'
+ht-degree: 1%
 
 ---
 
@@ -22,3 +24,8 @@ Después de convertir un formulario de PDF en un formulario adaptable, normalmen
 En el siguiente vídeo se explican los pasos necesarios para configurar el formulario para la experiencia de firma in situ
 
 >[!VIDEO](https://video.tv.adobe.com/v/39574?quality=12&learn=on)
+
+## Felicitaciones
+
+Ha configurado correctamente el formulario adaptable convertido para utilizar la integración de Acrobat Sign para la experiencia de firma in situ.
+

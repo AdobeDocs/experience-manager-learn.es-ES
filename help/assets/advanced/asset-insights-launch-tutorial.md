@@ -7,10 +7,12 @@ topic: Integrations
 role: Developer
 level: Intermediate
 last-substantial-update: 2022-06-04T00:00:00Z
+badgeIntegration: label="Integración" type="positive"
+badgeVersions: label="AEM Assets as a Cloud Service, AEM Assets 6.5" before-title="false"
 exl-id: 00125fe1-3bb9-4b1a-a83c-61c413403ae2
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '830'
 ht-degree: 1%
 
 ---
@@ -66,6 +68,7 @@ Se crea un grupo de informes con recopilación de datos en tiempo real para el s
 >[!VIDEO](https://video.tv.adobe.com/v/25945?quality=12&learn=on)
 
 >[!NOTE]
+>
 AEM La recopilación de datos en tiempo real y la creación de informes de recursos de la deben estar habilitadas para el grupo de informes de Adobe Analytics. AEM Al habilitar el informe de recursos de, se reservan variables de análisis para rastrear las perspectivas de recursos.
 
 Para la configuración de AEM Assets Insights, necesita las siguientes credenciales
@@ -83,6 +86,7 @@ Añadir la extensión de Adobe Analytics AEM, crear reglas de carga de página e
 >[!VIDEO](https://video.tv.adobe.com/v/25946?quality=12&learn=on)
 
 >[!NOTE]
+>
 Asegúrese de replicar todos los cambios de la instancia de autor a la instancia de publicación.
 
 ### Regla 1: Rastreador de páginas (pagetracker.js) {#rule-page-tracker-pagetracker-js}
@@ -105,7 +109,7 @@ El rastreador de páginas implementa dos llamadas de retorno (registradas en el 
 Finalmente, Pagetracker implementa una función de inicialización como.
 
 * **\&lt;code>assetAnalytics.dispatcher.init()\&lt;code>** : se llama para inicializar el componente Pagetracker. Se DEBE invocar antes de que se genere cualquiera de los eventos de asset-insights (impresiones o clics) desde la página web.
-* **\&lt;code>assetAnalytics.dispatcher.init()\&lt;code>** : acepta opcionalmente un objeto AppMeasurement; si se proporciona, no intenta crear una nueva instancia del objeto AppMeasurement.
+* **\&lt;code>assetAnalytics.dispatcher.init()\&lt;code>** : acepta opcionalmente un objeto de AppMeasurement; si se proporciona, no intenta crear una nueva instancia del objeto de AppMeasurement.
 
 ### Regla 2: Rastreador de imágenes — Acción 1 (asset-insights.js) {#rule-image-tracker-action-asset-insights-js}
 

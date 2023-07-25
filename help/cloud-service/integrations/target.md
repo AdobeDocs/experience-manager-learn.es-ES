@@ -1,6 +1,6 @@
 ---
-title: AEM Personalización sin encabezado y de Target
-description: AEM En este tutorial se explora cómo se exportan los fragmentos de contenido de la a Adobe Target y, a continuación, se utilizan para personalizar experiencias sin encabezado mediante el SDK web de Adobe.
+title: AEM Integración de Target y sin encabezado de
+description: AEM Aprenda a integrar sin encabezado y Adobe Target para personalizar experiencias sin encabezado mediante el SDK web de Experience Platform.
 version: Cloud Service
 feature: Content Fragments, Integrations
 topic: Personalization, Headless
@@ -10,30 +10,32 @@ doc-type: Tutorial
 last-substantial-update: 2023-05-09T00:00:00Z
 jira: KT-12433
 thumbnail: KT-12433.jpeg
+badgeIntegration: label="Integración" type="positive"
+badgeVersions: label="AEM sin encabezado as a Cloud Service" before-title="false"
 exl-id: 60a3e18a-090f-4b0e-8ba0-d4afd30577dd
-source-git-commit: d81c66e041abbd56e7115f37732550cf10e59359
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '1671'
+source-wordcount: '1679'
 ht-degree: 1%
 
 ---
 
-# AEM Personalización de experiencias sin encabezado con fragmentos de contenido
+# AEM Integración de Target y sin encabezado de
 
-AEM En este tutorial se explora cómo se exportan los fragmentos de contenido de la a Adobe Target y, a continuación, se utilizan para personalizar experiencias sin encabezado mediante el SDK web de Adobe. El [Aplicación React WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html) se utiliza para explorar cómo se puede añadir a la experiencia una actividad de Target personalizada mediante Ofertas de fragmentos de contenido para promocionar una aventura WKND.
+AEM Obtenga información sobre cómo integrar sin encabezado con Adobe Target AEM, mediante la exportación de fragmentos de contenido de a Adobe Target, y utilizarlos para personalizar experiencias sin encabezado mediante alloy.js del SDK web de Adobe Experience Platform. El [Aplicación React WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html) se utiliza para explorar cómo se puede añadir a la experiencia una actividad de Target personalizada mediante Ofertas de fragmentos de contenido para promocionar una aventura WKND.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416585/?quality=12&learn=on)
 
 AEM El tutorial trata sobre los pasos necesarios para configurar la configuración de la aplicación y de Adobe Target:
 
 1. [Crear la configuración de IMS de Adobe para Adobe Target](#adobe-ims-configuration) en AEM Author
-1. [Crear Cloud Service de Adobe Target](#adobe-target-cloud-service) en AEM Author
-1. [Aplicar el Cloud Service de Adobe Target a las carpetas de AEM Assets](#configure-asset-folders) en AEM Author
-1. [Permiso del Cloud Service de Adobe Target](#permission) en Adobe Admin Console
-1. [Exportar fragmentos de contenido](#export-content-fragments) de Autor de AEM a Target
-1. [Crear una actividad mediante ofertas de fragmentos de contenido](#activity) en Adobe Target
-1. [Crear una secuencia de datos de Experience Platform](#datastream-id) en Experience Platform
-1. [AEM Integración de la personalización en una aplicación sin encabezado basada en React](#code) mediante el SDK web de Adobe.
+2. [Crear Cloud Service de Adobe Target](#adobe-target-cloud-service) en AEM Author
+3. [Aplicar el Cloud Service de Adobe Target a las carpetas de AEM Assets](#configure-asset-folders) en AEM Author
+4. [Permiso del Cloud Service de Adobe Target](#permission) en Adobe Admin Console
+5. [Exportar fragmentos de contenido](#export-content-fragments) de Autor de AEM a Target
+6. [Crear una actividad mediante ofertas de fragmentos de contenido](#activity) en Adobe Target
+7. [Crear una secuencia de datos de Experience Platform](#datastream-id) en Experience Platform
+8. [AEM Integración de la personalización en una aplicación sin encabezado basada en React](#code) mediante el SDK web de Adobe.
 
 ## Configuración de IMS de Adobe{#adobe-ims-configuration}
 

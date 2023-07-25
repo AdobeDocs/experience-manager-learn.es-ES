@@ -7,10 +7,12 @@ feature: Experience Fragments
 topic: Personalization
 role: Developer
 level: Intermediate
+badgeIntegration: label="Integración" type="positive"
+badgeVersions: label="AEM Sites 6.5" before-title="false"
 exl-id: 53cafd06-3a0a-4995-947d-179146b89234
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '589'
 ht-degree: 2%
 
 ---
@@ -57,7 +59,6 @@ Para este ejercicio, deben participar los siguientes usuarios y, para realizar a
 1. El especialista en marketing crea una actividad de destinatario A/B con la oferta de redireccionamiento como una experiencia y el tráfico del sitio web asignado a la nueva página de inicio con el objetivo de éxito y las métricas añadidas.
    1. En la ventana de Adobe Target, vaya a **Actividades** pestaña.
    2. Clic **Crear actividad** y seleccione el tipo de actividad como **Prueba A/B**
-
       ![Adobe Target - Crear actividad](assets/personalization-use-case-2/create-ab-activity.png)
    3. Seleccione el **Web** y seleccione la opción **Compositor de experiencias visuales**.
    4. Introduzca el **URL de actividad** y haga clic en **Siguiente** para abrir el Compositor de experiencias visuales.
