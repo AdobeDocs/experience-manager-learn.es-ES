@@ -10,7 +10,7 @@ role: Developer
 level: Intermediate
 last-substantial-update: 2023-05-14T00:00:00Z
 exl-id: 5e423f2c-90d2-474f-8bdc-fa15ae976f18
-source-git-commit: 861b171b8ebbcf9565bdc94fb84a043ecb99c00a
+source-git-commit: 929fd045b81652463034b54c557de04df3d4e64a
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%
@@ -22,7 +22,10 @@ ht-degree: 0%
 AEM Los flujos de trabajo de inicio automático amplían el procesamiento de los recursos en el as a Cloud Service invocando automáticamente el flujo de trabajo personalizado al cargar o al volver a procesar una vez que se ha completado el procesamiento del recurso.
 
 >[!VIDEO](https://video.tv.adobe.com/v/37323?quality=12&learn=on)
-> `Notice`: utilice Flujos de trabajo de inicio automático para personalizar el posprocesamiento de recursos en lugar de utilizar Iniciadores de flujo de trabajo. Los flujos de trabajo de inicio automático son _solamente_ se invoca una vez que un recurso se completa el procesamiento en lugar de iniciar, que se pueden invocar varias veces durante el procesamiento del recurso.
+
+>[!NOTE]
+>
+>Utilice flujos de trabajo de inicio automático para personalizar el posprocesamiento de los recursos en lugar de utilizar iniciadores de flujo de trabajo. Los flujos de trabajo de inicio automático son _solamente_ se invoca una vez que un recurso se completa el procesamiento en lugar de iniciar, que se pueden invocar varias veces durante el procesamiento del recurso.
 
 ## Personalización del flujo de trabajo de posprocesamiento
 
@@ -37,7 +40,11 @@ Para personalizar el flujo de trabajo de procesamiento posterior, copie el proce
    ![Cambio del nombre](assets/auto-start-workflow-change-name.png)
 6. Añada los pasos para satisfacer sus necesidades comerciales, en este caso añadiendo una tarea cuando los recursos se hayan completado el procesamiento. Asegúrese de que el último paso del flujo de trabajo sea siempre el siguiente _Flujo de trabajo completado_ escalón<br/>
    ![Añadir pasos del flujo de trabajo](assets/auto-start-workflow-customize-steps.png)
-   > `Note`: los flujos de trabajo de inicio automático se ejecutan con cada carga o reprocesamiento de recursos, por lo que debe tener en cuenta cuidadosamente la ampliación y las implicaciones de los pasos del flujo de trabajo, especialmente para operaciones por lotes como [Importaciones masivas](../../cloud-service/migration/bulk-import.md) o migraciones.
+
+   >[!NOTE]
+   >
+   >Los flujos de trabajo de inicio automático se ejecutan con cada carga o reprocesamiento de recursos, por lo que debe tener en cuenta cuidadosamente la ampliación y las implicaciones de los pasos del flujo de trabajo, especialmente para operaciones por lotes como [Importaciones masivas](../../cloud-service/migration/bulk-import.md) o migraciones.
+
 7. Seleccione el _Sincronización_ para guardar los cambios y sincronizar el modelo de flujo de trabajo
 
 ## Uso de un flujo de trabajo de posprocesamiento personalizado
