@@ -9,11 +9,11 @@ role: Developer
 level: Beginner
 kt: 10721
 thumbnail: KT-10721.jpg
-last-substantial-update: 2022-10-03T00:00:00Z
+last-substantial-update: 2023-05-10T00:00:00Z
 exl-id: 4f67bb37-416a-49d9-9d7b-06c3573909ca
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 7938325427b6becb38ac230a3bc4b031353ca8b1
 workflow-type: tm+mt
-source-wordcount: '802'
+source-wordcount: '811'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ Las siguientes herramientas deben instalarse localmente:
 
 ## AEM requisitos de
 
-AEM La aplicación Next.js funciona con las siguientes opciones de implementación de. Todas las implementaciones requieren [WKND compartido v2.1.0+](https://github.com/adobe/aem-guides-wknd-shared/releases/latest) o [Sitio WKND v2.1.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) AEM que se va a instalar en el entorno as a Cloud Service de la.
+AEM La aplicación Next.js funciona con las siguientes opciones de implementación de. Todas las implementaciones requieren [WKND compartido v3.0.0+](https://github.com/adobe/aem-guides-wknd-shared/releases/latest) o [Sitio WKND 3.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) AEM que se va a instalar en el entorno as a Cloud Service de la.
 
 Esta aplicación Next.js de ejemplo está diseñada para conectarse a __AEM Publish__ servicio.
 
@@ -112,43 +112,73 @@ AEM AEM Siguiendo las prácticas recomendadas de sin encabezado de la aplicació
 + `wknd/adventures-all` AEM consulta persistente, que devuelve todas las aventuras en con un conjunto abreviado de propiedades de, que se han guardado de forma predeterminada. Esta consulta persistente genera la lista de aventuras de la vista inicial.
 
 ```
-# Retrieves a list of all adventures
-{
-    adventureList {
-        items {
-            _path
-            slug
-            title
-            price
-            tripLength
-            primaryImage {
-                ... on ImageRef {
-                _path
-                mimeType
-                width
-                height
-                }
-            }
+# Retrieves a list of all Adventures
+#
+# Optional query variables:
+# - { "offset": 10 }
+# - { "limit": 5 }
+# - { 
+#    "imageFormat": "JPG",
+#    "imageWidth": 1600,
+#    "imageQuality": 90 
+#   }
+query ($offset: Int, $limit: Int, $sort: String, $imageFormat: AssetTransformFormat=JPG, $imageWidth: Int=1200, $imageQuality: Int=80) {
+  adventureList(
+    offset: $offset
+    limit: $limit
+    sort: $sort
+    _assetTransform: {
+      format: $imageFormat
+      width: $imageWidth
+      quality: $imageQuality
+      preferWebp: true
+  }) {
+    items {
+      _path
+      slug
+      title
+      activity
+      price
+      tripLength
+      primaryImage {
+        ... on ImageRef {
+          _path
+          _dynamicUrl
         }
+      }
     }
+  }
 }
 ```
 
 + `wknd/adventure-by-slug` consulta persistente, que devuelve una sola aventura de `slug` (una propiedad personalizada que identifica de forma exclusiva una aventura) con un conjunto completo de propiedades. Esta consulta persistente activa las vistas de detalles de aventura.
 
 ```
-# Retrieves an adventure Content Fragment based on it's slug
-# Example query variables: 
-# {"slug": "bali-surf-camp"} 
-# Technically returns an adventure list but since the the slug 
-# property is set to be unique in the CF Model, only a single CF is expected
+# Retrieves an Adventure Fragment based on it's unique slug.
+#
+# Required query variables:
+# - {"slug": "bali-surf-camp"}
+#
+# Optional query variables:
+# - { 
+#     "imageFormat": "JPG",
+#     "imageSeoName": "my-adventure",
+#     "imageWidth": 1600,
+#     "imageQuality": 90 
+#   }
+#  
+# This query returns an adventure list but since the the slug property is set to be unique in the Content Fragment Model, only a single Content Fragment is expected.
 
-query($slug: String!) {
-  adventureList(filter: {
-        slug: {
-          _expressions: [ { value: $slug } ]
-        }
-      }) {
+query ($slug: String!, $imageFormat:AssetTransformFormat=JPG, $imageSeoName: String, $imageWidth: Int=1200, $imageQuality: Int=80) {
+  adventureList(
+    filter: {slug: {_expressions: [{value: $slug}]}}
+    _assetTransform: {
+      format: $imageFormat
+      seoName: $imageSeoName
+      width: $imageWidth
+      quality: $imageQuality
+      preferWebp: true
+  }) {
     items {
       _path
       title
@@ -163,22 +193,22 @@ query($slug: String!) {
       primaryImage {
         ... on ImageRef {
           _path
-          mimeType
-          width
-          height
+          _dynamicUrl
         }
       }
       description {
         json
         plaintext
+        html
       }
       itinerary {
         json
         plaintext
+        html
       }
     }
     _references {
-      ...on AdventureModel {
+      ... on AdventureModel {
         _path
         slug
         title
@@ -219,9 +249,9 @@ async getAllAdventures() {
 
 // And so on, and so forth ... 
 
-async getAdventureSlugs() { ... }
+async getAdventureSlugs(queryVariables) { ... }
 
-async getAdventuresBySlug(slug) { ... }
+async getAdventuresBySlug(slug, queryVariables) { ... }
 ...
 ```
 
@@ -231,17 +261,17 @@ La aplicación Next.js utiliza dos páginas para presentar los datos de la avent
 
 + `src/pages/index.js`
 
-   Usos [getServerSideProps() de Next.js](https://nextjs.org/docs/basic-features/data-fetching/get-server-side-props) para llamar a `getAllAdventures()` y muestra cada aventura como una tarjeta.
+  Usos [getServerSideProps() de Next.js](https://nextjs.org/docs/basic-features/data-fetching/get-server-side-props) para llamar a `getAllAdventures()` y muestra cada aventura como una tarjeta.
 
-   El uso de `getServerSiteProps()` permite la representación del lado del servidor de esta página Next.js.
+  El uso de `getServerSiteProps()` permite la representación del lado del servidor de esta página Next.js.
 
 + `src/pages/adventures/[...slug].js`
 
-   A [Ruta dinámica de Next.js](https://nextjs.org/docs/routing/dynamic-routes) que muestra los detalles de una sola aventura. Esta ruta dinámica recupera previamente los datos de cada aventura mediante [getStaticProps() de Next.js](https://nextjs.org/docs/basic-features/data-fetching/get-static-props) mediante una llamada a `getAdventureBySlug(..)` uso del `slug` parámetro pasado a través de la selección de aventuras en `adventures/index.js` página.
+  A [Ruta dinámica de Next.js](https://nextjs.org/docs/routing/dynamic-routes) que muestra los detalles de una sola aventura. Esta ruta dinámica recupera previamente los datos de cada aventura mediante [getStaticProps() de Next.js](https://nextjs.org/docs/basic-features/data-fetching/get-static-props) mediante una llamada a `getAdventureBySlug(slug, queryVariables)` uso del `slug` parámetro pasado a través de la selección de aventuras en `adventures/index.js` página, y `queryVariables` para controlar el formato, anchura y calidad de la imagen.
 
-   La ruta dinámica puede recuperar previamente los detalles de todas las aventuras utilizando [getStaticPaths() de Next.js](https://nextjs.org/docs/basic-features/data-fetching/get-static-paths) y rellenando todas las permutaciones de ruta posibles en función de la lista completa de aventuras devueltas por la consulta de GraphQL  `getAdventurePaths()`
+  La ruta dinámica puede recuperar previamente los detalles de todas las aventuras utilizando [getStaticPaths() de Next.js](https://nextjs.org/docs/basic-features/data-fetching/get-static-paths) y rellenando todas las permutaciones de ruta posibles en función de la lista completa de aventuras devueltas por la consulta de GraphQL  `getAdventurePaths()`
 
-   El uso de `getStaticPaths()` y `getStaticProps(..)` permitía la generación estática del sitio de estas páginas de Next.js.
+  El uso de `getStaticPaths()` y `getStaticProps(..)` permitía la generación estática del sitio de estas páginas de Next.js.
 
 ## Configuración de implementación
 

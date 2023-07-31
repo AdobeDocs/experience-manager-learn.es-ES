@@ -10,7 +10,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 508b0211-fa21-4a73-b8b4-c6c34e3ba696
-source-git-commit: ae27cbc50fc5c4c2e8215d7946887b99d480d668
+source-git-commit: 7938325427b6becb38ac230a3bc4b031353ca8b1
 workflow-type: tm+mt
 source-wordcount: '1454'
 ht-degree: 1%
@@ -203,7 +203,7 @@ A continuación, veamos cómo es posible filtrar los resultados a un subconjunto
    }  
    ```
 
-   La consulta anterior realiza una búsqueda de todos los fragmentos de persona del sistema. El filtro añadido al principio de la consulta realiza una comparación en el `name` y la cadena de variable `$name`.
+   La consulta anterior realiza una búsqueda de todos los fragmentos de persona en el sistema. El filtro añadido al principio de la consulta realiza una comparación en el `name` y la cadena de variable `$name`.
 
 1. En el **Variables de consulta** introduzca lo siguiente:
 
@@ -391,7 +391,7 @@ Tras la revisión y verificación, publique el `GraphQL Endpoint` &amp; `Persist
 
 ## Archivos de solución {#solution-files}
 
-Descargue el contenido, los modelos y las consultas persistentes creadas en los últimos tres capítulos: [tutorial-solution-content.zip](assets/explore-graphql-api/tutorial-solution-content.zip)
+Descargue el contenido, los modelos y las consultas persistentes creadas en los últimos tres capítulos: [basic-tutorial-solution.content.zip](assets/explore-graphql-api/basic-tutorial-solution.content.zip)
 
 ## Recursos adicionales
 

@@ -10,7 +10,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 772b595d-2a25-4ae6-8c6e-69a646143147
-source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
+source-git-commit: 7938325427b6becb38ac230a3bc4b031353ca8b1
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 2%
@@ -26,7 +26,7 @@ Se utiliza una aplicación React simple para consultar y mostrar **Equipo** y **
 
 ## Requisitos previos
 
-Se supone que se han completado los pasos descritos en las partes anteriores de este tutorial de varias partes, o [tutorial-solution-content.zip](assets/explore-graphql-api/tutorial-solution-content.zip) AEM está instalado en los servicios de autor y publicación as a Cloud Service de la.
+Se supone que se han completado los pasos descritos en las partes anteriores de este tutorial de varias partes, o [basic-tutorial-solution.content.zip](assets/explore-graphql-api/basic-tutorial-solution.content.zip) AEM está instalado en los servicios de autor y publicación as a Cloud Service de la.
 
 _Las capturas de pantalla IDE de este capítulo provienen de [Código de Visual Studio](https://code.visualstudio.com/)_
 
@@ -71,6 +71,7 @@ Para obtener la aplicación React:
 1. Actualizar `.env.development` AEM para conectarse al servicio de publicación as a Cloud Service de la.
 
    - Establecer `REACT_APP_HOST_URI`AEM El valor de debe ser la URL de publicación del as a Cloud Service de la (por ejemplo, `REACT_APP_HOST_URI=https://publish-p123-e456.adobeaemcloud.com`) y `REACT_APP_AUTH_METHOD`El valor de a `none`
+
    >[!NOTE]
    >
    > Asegúrese de haber publicado la configuración del proyecto, los modelos de fragmento de contenido, los fragmentos de contenido creados, los extremos de GraphQL y las consultas persistentes de pasos anteriores.
@@ -102,6 +103,7 @@ Para obtener la aplicación React:
 >  AEM // TODO :: Implemente esto siguiendo los pasos de Tutorial sin encabezado de
 >
 >  //*********************************
+>
 
 ## Estructura de la aplicación React
 
