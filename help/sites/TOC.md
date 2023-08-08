@@ -6,9 +6,9 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: 2a137f71cbd876db0164e84ab437e8eda982270e
+source-git-commit: e7e5a07ecada8e5760cd1496bdb44b3d035373dd
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '459'
 ht-degree: 27%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 27%
       + [Consejos de jerarquía del sitio](page-authoring/expert-advice/site-hierarchy.md)
 + Componentes {#components}
    + [Desarrollo de componentes](components/component-development.md)
-   + [Componentes principales ](components/core-components-feature-video-understand.md)
+   + [Componentes principales](components/core-components-feature-video-understand.md)
    + [Entrega de imágenes optimizadas para web](components/web-optimized-image-delivery.md)
    + [Consola Componentes](components/components-console-feature-video-use.md)
 + Fragmentos de contenido {#content-fragments}
@@ -124,6 +124,7 @@ ht-degree: 27%
       + [Personalización mediante el Compositor de experiencias visuales](integrations/adobe-target/personalization-using-vec.md)
       + [Personalización de la experiencia de página web completa](integrations/adobe-target/personalization-web-page.md)
 + Aprenda De Sus Compañeros {#expert-resources}
+   + [Información general](expert-resources/learn-from-your-peers-overview.md)
    + [Evaluación de madurez de AEM Sites](expert-resources/maturity-assessment.md)
    + [Mantenimiento del sitio](expert-resources/site-maintenance.md)
    + [AEM Consejos y trucos para el campeón de la: Sesión 1](expert-resources/champion-tips-1.md)
