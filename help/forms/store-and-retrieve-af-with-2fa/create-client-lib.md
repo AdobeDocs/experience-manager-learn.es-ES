@@ -10,7 +10,7 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: c90eea73-bd44-40af-aa98-d766aa572415
-source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
+source-git-commit: 51e21c11df63d33a6900fbc331a756f2a7655bcb
 workflow-type: tm+mt
 source-wordcount: '146'
 ht-degree: 6%
@@ -45,7 +45,7 @@ $(document).ready(function () {
             success: function (x) {
               bootbox.alert(
                 "This is your reference number.<br>" +
-                  x.data.path +
+                  x.data.applicationID +
                   " <br>You will need this to retrieve your application",
                 function () {
                   console.log(
@@ -69,7 +69,7 @@ $(document).ready(function () {
 >[!NOTE]
 > Hemos utilizado [biblioteca javascript de bootbox](http://bootboxjs.com/examples.html) para mostrar el cuadro de diálogo
 
-Las bibliotecas de cliente utilizadas en este ejemplo pueden ser [descargado desde aquí](assets/client-libraries.zip)
+Las bibliotecas de cliente utilizadas en este ejemplo pueden ser [descargado desde aquí](assets/store-af-with-attachments-client-lib.zip)
 
 ## Pasos siguientes
 

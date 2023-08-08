@@ -10,9 +10,9 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: cdfae631-86d7-438f-9baf-afd621802723
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 51e21c11df63d33a6900fbc331a756f2a7655bcb
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '391'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ Este ejemplo utiliza la base de datos MySQL para almacenar los datos del formula
 
 ## Crear fuente de datos
 
-Debe crear una fuente de datos llamada **StoreAndRetrieveAfData**. El código del paquete OSGi utiliza este nombre de fuente de datos
+Debe crear una fuente de datos obtenida de una conexión Apache Sling llamada **StoreAndRetrieveAfData** apuntando al esquema de base de datos creado en el paso anterior. El código del paquete OSGi utiliza este nombre de fuente de datos.
 
 ## Crear modelo de datos de formulario
 
@@ -43,13 +43,13 @@ Cree una cuenta de desarrollador con [Siguiente](https://dashboard.nexmo.com/) p
 
 ## Implemente los siguientes paquetes OSGi
 
-Implemente el paquete que tiene la variable [código para almacenar y recuperar datos de la base de datos](assets/FetchPartiallyCompletedForm.PartiallyCompletedForm.core-1.0-SNAPSHOT.jar)
+Implemente el paquete que tiene la variable [código para almacenar y recuperar datos de la base de datos](assets/SaveAndResume.core-1.0.0-SNAPSHOT.jar)
 Descargue y descomprima el [developerswithserviceuser.zip](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip).
 Implemente el archivo DevelopersWithServiceUser.jar mediante la consola web de Felix.
 
 ## Implementar la biblioteca de cliente
 
-El ejemplo utiliza 2 bibliotecas de cliente. Importar estos [bibliotecas de cliente](assets/client-libraries.zip) AEM en el.
+El ejemplo utiliza 2 bibliotecas de cliente. Importar estos [bibliotecas de cliente](assets/store-af-with-attachments-client-lib.zip) AEM en el.
 
 ## Importar la plantilla de formulario adaptable personalizada
 
@@ -59,7 +59,7 @@ Los formularios de ejemplo utilizados en esta demostración se basan en una plan
 
 AEM Los dos formularios que componen este ejemplo deben importarse en el archivo de datos de tipo de datos. Los formularios de ejemplo pueden ser [descargado desde aquí](assets/sample-forms.zip)
 
-Abra el [MyAccountForm](http://localhost:4502/editor.html/content/forms/af/myaccountform.html) en modo de edición. Especifique los valores Clave de API y Secreto de API en los campos correspondientes del formulario adaptable.
+Abra el [MyAccountForm](http://localhost:4502/editor.html/content/forms/af/myaccountform.html) en modo de edición. Especifique los valores Clave de API de Vonage y Secreto de API en los campos correspondientes del formulario adaptable.
 
 ## Prueba de la solución
 
