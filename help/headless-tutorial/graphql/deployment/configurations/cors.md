@@ -10,10 +10,10 @@ kt: 10830
 thumbnail: KT-10830.jpg
 exl-id: 394792e4-59c8-43c1-914e-a92cdfde2f8a
 last-substantial-update: 2023-08-08T00:00:00Z
-source-git-commit: 181023c9584bcd5084778ebf00d34f8ecaa74524
+source-git-commit: f8fd13d3f315aa0bd9f268b9fe81b9d9c17b243c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '647'
+ht-degree: 2%
 
 ---
 
@@ -140,7 +140,7 @@ Dispatcher del servicio de publicación (y previsualización) de AEM debe config
 1. Abra el archivo de configuración vhost para el servicio de publicación de AEM, en el proyecto de configuración de Dispatcher, normalmente en `dispatcher/src/conf.d/available_vhosts/<example>.vhost`
 2. Copie el contenido del `<IfDefine ENABLE_CORS>...</IfDefine>` bloque siguiente, en el archivo de configuración vhost habilitado.
 
-   ```{line-numbers="true"}
+   ```{ highlight="19"}
    <VirtualHost *:80>
      ...
      <IfModule mod_headers.c>
