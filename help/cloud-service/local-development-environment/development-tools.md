@@ -1,5 +1,5 @@
 ---
-title: AEM Configurar las herramientas de desarrollo para el desarrollo as a Cloud Service de la
+title: AEM Configuración de las herramientas de desarrollo para el desarrollo as a Cloud Service de la
 description: AEM Configure una máquina de desarrollo local con todas las herramientas de línea de base necesarias para desarrollar en comparación con las herramientas de desarrollo local y las herramientas de desarrollo de la base de datos de la base de datos de la base de datos de la base de datos de manera local.
 feature: Developer Tools
 version: Cloud Service
@@ -10,10 +10,10 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-09-03T00:00:00Z
 exl-id: 6fb3199a-02c9-48bc-a6fa-1f767cfd2f2a
-source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
+source-git-commit: 9073c1d41c67ec654b232aea9177878f11793d07
 workflow-type: tm+mt
-source-wordcount: '1498'
-ht-degree: 7%
+source-wordcount: '1484'
+ht-degree: 8%
 
 ---
 
@@ -35,9 +35,29 @@ Tenga en cuenta que `~` se utiliza como abreviatura del Directorio del usuario. 
 Experience Manager AEM es una aplicación Java y, por lo tanto, requiere que el SDK de Java admita el desarrollo y el SDK as a Cloud Service de la.
 
 1. [Descargue e instale la última versión del SDK de Java 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
-1. Compruebe que el SDK de Java 11 está instalado ejecutando el comando:
-   + Windows: `java -version`
-   + macOS/Linux: `java --version`
+1. Compruebe que el SDK de Java 11 de Oracle está instalado ejecutando el comando:
+
+>[!BEGINTABS]
+
+>[!TAB macOS]
+
+```shell
+$ java --version
+```
+
+>[!TAB Windows]
+
+```shell
+$ java -version
+```
+
+>[!TAB Linux]
+
+```shell
+$ java --version
+```
+
+>[!ENDTABS]
 
 ![Java](./assets/development-tools/java.png)
 
@@ -65,14 +85,21 @@ Si utiliza Homebrew, siga las __Instalar mediante Homebrew__ instrucciones en la
 
 [Git](https://git-scm.com/) es el sistema de administración del control de código fuente que utiliza [Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/source-code-repository.html)y, por lo tanto, es necesario para el desarrollo.
 
-+ Instalar Git mediante Homebrew
-   1. Abra el terminal/símbolo del sistema
-   1. Ejecute el comando: `brew install git`
-   1. Compruebe que Git está instalado mediante el comando: `git --version`
-+ También puede descargar e instalar Git (macOS, Linux o Windows)
-   1. [Descargue e instale Git](https://git-scm.com/downloads)
-   1. Abra el terminal/símbolo del sistema
-   1. Compruebe que Git está instalado mediante el comando: `git --version`
+>[!BEGINTABS]
+
+>[!TAB Instalar Git mediante Homebrew]
+
+1. Abra el terminal/símbolo del sistema
+1. Ejecute el comando: `$ brew install git`
+1. Compruebe que Git está instalado mediante el comando: `$ git --version`
+
+>[!TAB Descargue e instale Git]
+
+1. [Descargue e instale Git](https://git-scm.com/downloads)
+1. Abra el terminal/símbolo del sistema
+1. Compruebe que Git está instalado mediante el comando: `$ git --version`
+
+>[!ENDTABS]
 
 ![Git](./assets/development-tools/git.png)
 
@@ -80,16 +107,23 @@ Si utiliza Homebrew, siga las __Instalar mediante Homebrew__ instrucciones en la
 
 [Node.js](https://nodejs.org) AEM es un entorno de tiempo de ejecución de JavaScript que se utiliza para trabajar con los recursos front-end de los recursos de un proyecto de __ui.frontend__ proyecto secundario. Node.js se distribuye con [npm](https://www.npmjs.com/), es el administrador de paquetes de Node.js de facto que se utiliza para administrar las dependencias de JavaScript.
 
-+ Instalar Node.js mediante Homebrew
-   1. Abra el terminal/símbolo del sistema
-   1. Ejecute el comando: `brew install node`
-   1. Compruebe que Node.js está instalado mediante el comando: `node -v`
-   1. Compruebe que npm está instalado mediante el comando: `npm -v`
-+ También puede descargar e instalar Node.js (macOS, Linux o Windows)
-   1. [Descargue e instale Node.js](https://nodejs.org/es/download/)
-   1. Abra el terminal/símbolo del sistema
-   1. Compruebe que Node.js está instalado mediante el comando: `node -v`
-   1. Compruebe que npm está instalado mediante el comando: `npm -v`
+>[!BEGINTABS]
+
+>[!TAB Instalar Node.js mediante Homebrew]
+
+1. Abra el terminal/símbolo del sistema
+1. Ejecute el comando: `$ brew install node`
+1. Compruebe que Node.js está instalado mediante el comando: `$ node -v`
+1. Compruebe que npm está instalado mediante el comando: `$ npm -v`
+
+>[!TAB Descargue e instale Node.js]
+
+1. [Descargue e instale Node.js](https://nodejs.org/es/download/)
+2. Abra el terminal/símbolo del sistema
+3. Compruebe que Node.js está instalado mediante el comando: `$ node -v`
+4. Compruebe que npm está instalado mediante el comando: `$ npm -v`
+
+>[!ENDTABS]
 
 ![Node.js y npm](./assets/development-tools/nodejs-and-npm.png)
 
@@ -103,15 +137,23 @@ Si utiliza Homebrew, siga las __Instalar mediante Homebrew__ instrucciones en la
 
 AEM AEM Apache Maven es la herramienta de línea de comandos de código abierto de Java que se utiliza para crear proyectos de generados a partir del tipo de archivo del proyecto Maven de la aplicación de código abierto. Todos los IDE principales ([IntelliJ IDEA](https://www.jetbrains.com/idea/), [Código de Visual Studio](https://code.visualstudio.com/), [Eclipse](https://www.eclipse.org/), etc.) tienen compatibilidad con Maven integrada.
 
-+ Instalar Maven mediante Homebrew
-   1. Abra el terminal/símbolo del sistema
-   1. Ejecute el comando: `brew install maven`
-   1. Compruebe que Maven está instalado mediante el comando: `mvn -v`
-+ También puede descargar e instalar Maven (macOS, Linux o Windows)
-   1. [Descargar Maven](https://maven.apache.org/download.cgi)
-   1. [Instalar Maven](https://maven.apache.org/install.html)
-   1. Abra el terminal/símbolo del sistema
-   1. Compruebe que Maven está instalado mediante el comando: `mvn -v`
+
+>[!BEGINTABS]
+
+>[!TAB Instalar Maven mediante Homebrew]
+
+1. Abra el terminal/símbolo del sistema
+1. Ejecute el comando: `$ brew install maven`
+1. Compruebe que Maven está instalado mediante el comando: `$ mvn -v`
+
+>[!TAB Descargue e instale Maven]
+
+1. [Descargar Maven](https://maven.apache.org/download.cgi)
+1. [Instalar Maven](https://maven.apache.org/install.html)
+1. Abra el terminal/símbolo del sistema
+1. Compruebe que Maven está instalado mediante el comando: `$ mvn -v`
+
+>[!ENDTABS]
 
 ![Maven](./assets/development-tools/maven.png)
 
@@ -165,7 +207,6 @@ AEM AEM El complemento Entorno de desarrollo rápido de la aplicación permite q
 El complemento Adobe I/O Cloud Manager permite que la CLI de aio genere y ejecute Assets computes a través de la `aio asset-compute` comando.
 
 1. Ejecutar `aio plugins:install @adobe/aio-cli-plugin-asset-compute` para instalar el [complemento de Asset compute aio](https://github.com/adobe/aio-cli-plugin-asset-compute).
-
 
 ## Configurar el IDE de desarrollo
 
