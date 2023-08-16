@@ -5,9 +5,9 @@ recommendations: disable
 last-substantial-update: 2022-10-01T00:00:00Z
 thumbnail: aem-assets-essentials-videos.jpg
 exl-id: 6a8534fa-bc99-438b-9107-2a428e06619c
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 137f7166a6a10ecd95a85114b27a1a3bd608b965
 workflow-type: tm+mt
-source-wordcount: '131'
+source-wordcount: '134'
 ht-degree: 14%
 
 ---
@@ -18,22 +18,22 @@ ht-degree: 14%
 
 Experience Manager Assets Essentials proporciona una interfaz de usuario optimizada para una colaboración y administración de recursos ligeras.
 
-Consulte estos vídeos sobre cómo utilizar Assets Essentials para gestionar sus recursos y cómo se puede integrar con Adobe Recorrido Orchestrator.
+Consulte estos vídeos sobre cómo utilizar Assets Essentials para gestionar sus recursos y cómo se puede integrar con Adobe Workfront y Adobe Recorrido Orchestrator.
 
-## Más información sobre Assets Essentials
+## Más información sobre los Assets Essentials
 
 <table>
 <td>
    <a href="./basics/managing.md">
-   <img alt="Introducción a Assets Essentials" src="./assets/overview/getting-started.png" />
+   <img alt="Introducción a los Assets Essentials" src="./assets/overview/getting-started.png" />
    </a>
    <div>
       <a href="./basics/managing.md">
-      <strong>Introducción a Assets Essentials</strong>
+      <strong>Introducción a los Assets Essentials</strong>
       </a>
    </div>
    <p>
-      <em>Conozca los conceptos básicos de Assets Essentials.</em>
+      <em>Conozca los conceptos básicos de los Assets Essentials.</em>
    </p>
 </td>
 <td>
@@ -46,7 +46,7 @@ Consulte estos vídeos sobre cómo utilizar Assets Essentials para gestionar sus
       </a>
    </div>
    <p>
-      <em>Consulte la documentación del producto de Assets Essentials.</em>
+      <em>Consulte la documentación del producto para Assets Essentials.</em>
    <p>
 </td>
 <td>
@@ -59,7 +59,7 @@ Consulte estos vídeos sobre cómo utilizar Assets Essentials para gestionar sus
       </a>
    </div>
    <p>
-      <em>Descubra cómo se integra Assets Essentials con Adobe Journey Optimizer.</em>
+      <em>Descubra cómo se integran los Assets Essentials con Adobe Journey Optimizer.</em>
    <p>
 </td>
 </table>
