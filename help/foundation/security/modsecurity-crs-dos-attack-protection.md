@@ -1,5 +1,5 @@
 ---
-title: AEM Habilite ModSecurity para proteger su sitio de la de ataques DoS
+title: AEM Utilice ModSecurity para proteger su sitio de la de ataques DoS
 description: Obtenga información sobre cómo habilitar ModSecurity para proteger el sitio de ataques de denegación de servicio (DoS) mediante el conjunto de reglas principales de ModSecurity de OWASP (CRS).
 feature: Security
 version: 6.5, Cloud Service
@@ -10,7 +10,7 @@ kt: 10385
 thumbnail: KT-10385.png
 doc-type: article
 last-substantial-update: 2023-08-15T00:00:00Z
-source-git-commit: fc183d88bf772944562d0dd825b4d590266f3ffd
+source-git-commit: 31d54b14fc6381e8b231cf85d3c808b88c7df098
 workflow-type: tm+mt
 source-wordcount: '1252'
 ht-degree: 2%
@@ -53,7 +53,7 @@ Este tutorial muestra cómo habilitar y configurar el **PROTECCIÓN DOS** Regla 
 
 1. Cree el `modsec/crs` carpetas dentro de `dispatcher/src/conf.d/` AEM en el código de su proyecto de. Por ejemplo, en la copia local de [AEM Proyecto de sitios WKND de WKND](https://github.com/adobe/aem-guides-wknd).
 
-   ![AEM Carpeta CRS dentro del código de proyecto de la: ModSecurity](assets/modsecurity-crs/crs-folder-in-aem-dispatcher-module.png)
+   ![AEM Carpeta CRS dentro del código de proyecto de la: ModSecurity](assets/modsecurity-crs/crs-folder-in-aem-dispatcher-module.png){width="200" zoomable="yes"}
 
 1. Copie el `coreruleset-X.Y.Z/rules` del paquete de versión de CRS descargado en la carpeta `dispatcher/src/conf.d/modsec/crs` carpeta.
 1. Copie el `coreruleset-X.Y.Z/crs-setup.conf.example` del paquete de versión de CRS descargado en el `dispatcher/src/conf.d/modsec/crs` y cambie el nombre a `crs-setup.conf`.
@@ -69,7 +69,7 @@ Este tutorial muestra cómo habilitar y configurar el **PROTECCIÓN DOS** Regla 
 
    Consulte cambio de nombre de reglas CRS y archivo de configuración en el código del proyecto WKND.
 
-   ![AEM Reglas CRS desactivadas dentro del código de proyecto de la: ModSecurity ](assets/modsecurity-crs/disabled-crs-rules.png){width="100" zoomable="yes"}
+   ![AEM Reglas CRS desactivadas dentro del código de proyecto de la: ModSecurity ](assets/modsecurity-crs/disabled-crs-rules.png){width="200" zoomable="yes"}
 
 ## Habilitar y configurar la regla de protección de denegación de servicio (DoS)
 
