@@ -8,9 +8,9 @@ role: Developer
 level: Intermediate
 exl-id: f2c324a3-cbfa-4942-b3bd-dc47d8a3f7b5
 last-substantial-update: 2021-11-27T00:00:00Z
-source-git-commit: 381812397fa7d15f6ee34ef85ddf0aa0acc0af42
+source-git-commit: cf37afeb9bea65b540c9cfde75070d4106a01976
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '459'
 ht-degree: 4%
 
 ---
@@ -26,6 +26,10 @@ Para rellenar previamente un formulario adaptable mediante el servicio de rellen
 En el siguiente fragmento de código tenemos una clase que implementa la interfaz DataXMLProvider. Obtenemos acceso al usuario que ha iniciado sesión y, a continuación, recuperamos la información de perfil del usuario que ha iniciado sesión. A continuación, creamos un documento XML con un elemento de nodo raíz denominado &quot;data&quot; y anexamos los elementos adecuados a este nodo de datos. Una vez construido el documento XML, se devuelve la secuencia de entrada del documento XML.
 
 AEM A continuación, esta clase se convierte en un paquete OSGi y se implementa en la interfaz de usuario de. Una vez implementado el paquete, este servicio de rellenado previo está disponible para utilizarse como servicio de rellenado previo del formulario adaptable.
+
+>[!NOTE]
+>
+>Puede rellenar previamente el formulario utilizando datos xml o json mediante el método que se indica en este artículo
 
 ```java
 package com.aem.prefill.core;
