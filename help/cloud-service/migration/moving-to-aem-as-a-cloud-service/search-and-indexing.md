@@ -9,9 +9,9 @@ level: Experienced
 kt: 8634
 thumbnail: 336963.jpeg
 exl-id: f752df86-27d4-4dbf-a3cb-ee97b7d9a17e
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 77b960315c07ba194642a412a0cc6049edcf7bd2
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '332'
 ht-degree: 2%
 
 ---
@@ -28,9 +28,11 @@ AEM Obtenga información acerca de los índices de búsqueda de as a Cloud Servi
 
 Como parte de la refactorización del código base, utilice el [Herramienta convertidor de índices](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationindex-converter) AEM para convertir definiciones de índice de Oak personalizadas en definiciones de índice compatibles con el as a Cloud Service.
 
+Revise la [documentación del convertidor de índices](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/index-converter.html) para obtener el conjunto completo y actual de funcionalidades de Index Converter.
+
 ## Actividades clave
 
-+ Utilice el [Migrador de flujo de trabajo Adobe I/O](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationindex-converter) para migrar flujos de trabajo de procesamiento de recursos y utilizar los microservicios de Asset compute.
++ Utilice el [Migrador de flujo de trabajo Adobe I/O](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationindex-converter) herramienta para migrar flujos de trabajo de procesamiento de recursos para utilizar los microservicios de Asset compute.
 + Configuración de un [entorno de desarrollo local](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=es) e implementar los índices personalizados. Asegúrese de que los índices actualizados estén actualizados.
 + AEM Implemente la base de código actualizada en un entorno de desarrollo as a Cloud Service de y siga validando.
 + Si se modifica un índice predeterminado **SIEMPRE** AEM copie la última definición de índice de un entorno as a Cloud Service que se ejecute en la última versión. Modifique la definición del índice copiado para adaptarla a sus necesidades.
