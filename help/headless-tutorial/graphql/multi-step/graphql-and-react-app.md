@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 772b595d-2a25-4ae6-8c6e-69a646143147
-source-git-commit: 7938325427b6becb38ac230a3bc4b031353ca8b1
+source-git-commit: 65244bf81666c20fd5d9d804ad8ea97df8b83d9f
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1218'
 ht-degree: 2%
 
 ---
@@ -76,7 +76,7 @@ Para obtener la aplicación React:
    >
    > Asegúrese de haber publicado la configuración del proyecto, los modelos de fragmento de contenido, los fragmentos de contenido creados, los extremos de GraphQL y las consultas persistentes de pasos anteriores.
    >
-   > Si ha realizado los pasos anteriores en el SDK local de AEM Author, puede apuntar a `http://localhost:4502` y `REACT_APP_AUTH_METHOD`El valor de a `basic`.
+   > AEM Si ha realizado los pasos anteriores en el SDK local de Autor de, puede apuntar a `http://localhost:4502` y `REACT_APP_AUTH_METHOD`El valor de a `basic`.
 
 
 1. Desde la línea de comandos, vaya a `aem-guides-wknd-graphql/basic-tutorial` carpeta
@@ -489,6 +489,10 @@ Una vez finalizado, al seleccionar el nombre de una persona en la vista Equipos,
 ## Pruebe la aplicación
 
 Revise la aplicación [http://localhost:3000/](http://localhost:3000/) y haga clic en _Miembros_ Vínculos. AEM Además, puede añadir más equipos o miembros a Team Alpha añadiendo fragmentos de contenido en las listas de distribución de contenido de la página de la página de la página de la página de la página de la página de la página de la página de la página de.
+
+>[!IMPORTANT]
+>
+>Para verificar los cambios de implementación o si no puede hacer que la aplicación funcione después de los cambios anteriores, consulte la [basic-tutorial](https://github.com/adobe/aem-guides-wknd-graphql/tree/solution/basic-tutorial) rama de solución.
 
 ## Bajo el capó
 
