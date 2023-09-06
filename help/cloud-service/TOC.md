@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 52c8d96a03b4d6e4f2a0a3c92f4307203e236417
+source-git-commit: 6cbd8f3c49d44e75337715c35c198008da8ae7b9
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1023'
 ht-degree: 23%
 
 ---
@@ -128,6 +128,10 @@ ht-degree: 23%
          + [Advertencias transversales](./debugging/cloud-service/risks/traversals.md)
 + Entrega de contenido{#content-delivery}
    + [Redirecciones de URL](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html)
++ Almacenamiento en caché{#caching}
+   + [Información general](./caching/overview.md)
+   + [AEM Servicio de publicación de](./caching/publish.md)
+   + [AEM Servicio de autor de](./caching/author.md)
 + AEM Acceder a{#accessing}
    + [Información general](./accessing/overview.md)
    + [Usuarios de IMS de Adobe](./accessing/adobe-ims-users.md)
@@ -159,7 +163,7 @@ ht-degree: 23%
       + [BPA y CAM](./migration/moving-to-aem-as-a-cloud-service/bpa-and-cam.md)
       + [AEM Herramientas de modernización de](./migration/moving-to-aem-as-a-cloud-service/aem-modernization-tools.md)
       + [Modernización del repositorio](./migration/moving-to-aem-as-a-cloud-service/repository-modernization.md)
-      + [Microservicios de asset compute](./migration/moving-to-aem-as-a-cloud-service/asset-compute-microservices.md)
+      + [Microservicios de Asset compute](./migration/moving-to-aem-as-a-cloud-service/asset-compute-microservices.md)
       + [Dispatcher](./migration/moving-to-aem-as-a-cloud-service/dispatcher.md)
       + [Búsqueda e indexación](./migration/moving-to-aem-as-a-cloud-service/search-and-indexing.md)
       + Migración de contenido {#content-migration}
@@ -167,7 +171,7 @@ ht-degree: 23%
          + [Herramienta de transferencia de contenido](./migration/moving-to-aem-as-a-cloud-service/content-migration/content-transfer-tool.md)
          + [Preguntas más frecuentes](./migration/moving-to-aem-as-a-cloud-service/content-migration/faq.md)
       + [Solución de problemas](./migration/moving-to-aem-as-a-cloud-service/troubleshooting.md)
-      + AEM Forms as a Cloud Service {#aem-forms}
+      +  de AEM Forms as a Cloud Service{#aem-forms}
          + [Introducción](./migration/moving-to-aem-as-a-cloud-service/aem-forms/introduction.md)
          + [Inscripción digital](./migration/moving-to-aem-as-a-cloud-service/aem-forms/digital-enrollment.md)
          + [Comunicaciones](./migration/moving-to-aem-as-a-cloud-service/aem-forms/communications.md)
@@ -193,7 +197,7 @@ ht-degree: 23%
       + [5 - Crear un formulario](./forms/developing-for-cloud-service/deploy-your-first-form.md)
       + [6 - Controlador de envío personalizado](./forms/developing-for-cloud-service/custom-submit-to-servlet.md)
       + [7 - Habilitar los componentes del portal de Forms](./forms/developing-for-cloud-service/forms-portal-components.md)
-      + [8 - Incluir Cloud Services y FDM](./forms/developing-for-cloud-service/azure-storage-fdm.md)
+      + [8 - Incluir Cloud Service y FDM](./forms/developing-for-cloud-service/azure-storage-fdm.md)
       + [9 - Configuración en la nube según el contexto](./forms/developing-for-cloud-service/context-aware-fdm.md)
       + [10 - Insertar en Cloud Manager](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
       + [11 - Implementación en el entorno de desarrollo](./forms/developing-for-cloud-service/deploy-to-dev-environment.md)
@@ -260,7 +264,7 @@ ht-degree: 23%
    + Crear flujo de trabajo de revisión{#create-aem-workflow}
       + [Externalización del almacenamiento de flujo de trabajo](./forms/create-aem-workflow/externalize-workflow.md)
       + [Crear modelo de flujo de trabajo](./forms/create-aem-workflow/create-workflow.md)
-      + [flujo de trabajo déclencheur](./forms/create-aem-workflow/configure-af.md)
+      + [flujo de trabajo de déclencheur](./forms/create-aem-workflow/configure-af.md)
    + Acrobat Sign con AEM Forms{#forms-and-sign}
       + [Introducción](./forms/forms-and-sign/introduction.md)
       + [Aplicación API de Acrobat Sign](./forms/forms-and-sign/create-sign-api-application.md)
