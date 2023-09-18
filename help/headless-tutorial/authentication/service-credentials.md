@@ -14,16 +14,16 @@ role: Developer
 level: Intermediate, Experienced
 last-substantial-update: 2023-01-12T00:00:00Z
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
-source-git-commit: f8ed9fddb5f244860ba229b46a80638a7269d95e
+source-git-commit: 65d8fd58f421a186e3624918c70cc5d79ec23700
 workflow-type: tm+mt
-source-wordcount: '1925'
+source-wordcount: '1967'
 ht-degree: 0%
 
 ---
 
 # Credenciales de servicio
 
-Las integraciones con Adobe Experience Manager AEM () as a Cloud Service AEM deben poder autenticarse de forma segura en el servicio de autenticación a través de la autenticación de la autenticación de. AEM La consola de desarrollador de AEM concede acceso a las credenciales del servicio, que se utilizan para facilitar las aplicaciones, los sistemas y los servicios externos para interactuar mediante programación con los servicios de AEM Author o Publish a través de HTTP.
+Las integraciones con Adobe Experience Manager AEM () as a Cloud Service AEM deben poder autenticarse de forma segura en el servicio de autenticación a través de la autenticación de la autenticación de. AEM AEM Developer Console otorga acceso a las credenciales del servicio, que se utilizan para facilitar que las aplicaciones, los sistemas y los servicios externos interactúen mediante programación con los servicios de autor o publicación de a través de HTTP.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330519?quality=12&learn=on)
 
@@ -54,7 +54,7 @@ Las cuentas técnicas se crean una vez, pero las claves privadas que se utilizan
 
 1. Asegúrese de haber iniciado sesión como:
    + __Administrador del sistema de la organización IMS de Adobe__
-   + Miembro de __AEM Administradores de__ Perfil de producto de IMS en __AEM Author__
+   + Miembro de __AEM Administradores de__ Perfil de producto de IMS en __AEM Autor de__
 1. Iniciar sesión en [Adobe Cloud Manager](https://my.cloudmanager.adobe.com)
 1. AEM Abra el programa que contiene el entorno as a Cloud Service de la para integrar y configurar las credenciales de servicio de
 1. Pulse los puntos suspensivos junto al entorno en la __Entornos__ y seleccione. __Developer Console__
@@ -75,7 +75,7 @@ La descarga de las credenciales del servicio sigue los pasos similares a los de 
 
 1. Asegúrese de haber iniciado sesión como:
    + __Administrador de organización de IMS de Adobe__
-   + Miembro de __AEM Administradores de__ Perfil de producto de IMS en __AEM Author__
+   + Miembro de __AEM Administradores de__ Perfil de producto de IMS en __AEM Autor de__
 1. Iniciar sesión en [Adobe Cloud Manager](https://my.cloudmanager.adobe.com)
 1. AEM Abra el Programa que contiene el entorno as a Cloud Service de la con el que desea integrarse
 1. Pulse los puntos suspensivos junto al entorno en la __Entornos__ y seleccione. __Developer Console__
@@ -209,7 +209,7 @@ Esta aplicación de ejemplo está basada en Node.js, por lo que es mejor utiliza
 
    El __403 - Prohibido__ AEM , indican errores en las llamadas a la API HTTP para as a Cloud Service. Estos errores 403 prohibidos se producen al intentar actualizar los metadatos de los recursos.
 
-   AEM AEM El motivo es que el token de acceso derivado de las credenciales de servicio autentica la solicitud a los usuarios de la cuenta técnica creada automáticamente, que de forma predeterminada, solo tiene acceso de lectura, lo que se puede usar con un usuario de la cuenta técnica creada automáticamente. AEM AEM AEM Para proporcionar a la aplicación acceso de escritura a los usuarios, se debe conceder permiso de escritura a la cuenta técnica del usuario asociado con el token de acceso en la.
+   AEM AEM El motivo es que el token de acceso derivado de las credenciales de servicio autentica la solicitud a los usuarios de la cuenta técnica creada automáticamente, que de forma predeterminada solo tiene acceso de lectura, y que se crea de forma automática con un usuario de la cuenta de usuario de la cuenta técnica de la que se crea la solicitud. AEM AEM AEM Para proporcionar a la aplicación acceso de escritura a los usuarios, se debe conceder permiso de escritura a la cuenta técnica del usuario asociado con el token de acceso en la.
 
 ## AEM Configuración del acceso en la
 
@@ -224,6 +224,7 @@ AEM AEM AEM AEM Una vez que la cuenta técnica de usuario de la cuenta de usuari
 1. Navegue hasta __Herramientas__ > __Seguridad__ > __Usuarios__
 1. AEM Busque el usuario de la con __Nombre de inicio__ identificado en el paso 1 y abra su __Propiedades__
 1. Vaya a __Grupos__ y agregue la pestaña __Usuarios de DAM__ grupo (que tiene acceso de escritura a los recursos)
+   + [AEM Consulte la lista de grupos de usuarios proporcionados por el](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#built-in-users-and-groups) para agregar el usuario del servicio a para obtener los permisos óptimos. AEM Si ningún grupo de usuarios proporcionado es suficiente, cree el suyo propio y agregue los permisos adecuados.
 1. Tocar __Guardar y cerrar__
 
 AEM Con la cuenta técnica permitida en los recursos para tener permisos de escritura en los recursos, vuelva a ejecutar la aplicación:
