@@ -10,10 +10,10 @@ feature: Content Fragments
 topic: Content Management
 role: User
 team: TM
-source-git-commit: 73c7a13586edc5dbe16c16e017ee6f8ac91c1380
+source-git-commit: 89bc02b9ead98063ea31301b2e1f5a4d43cb5760
 workflow-type: tm+mt
-source-wordcount: '67'
-ht-degree: 25%
+source-wordcount: '70'
+ht-degree: 22%
 
 ---
 
@@ -22,7 +22,8 @@ ht-degree: 25%
 
 + [Información general](overview.md)
 + Datos básicos{#basics}
-   + [Información general](./basics/content-fragments-console.md)
+   + [Información general de consola](./basics/content-fragments-console.md)
+   + [Resumen del editor](./basics/content-fragment-editor.md)
 + Búsqueda y descubrimiento{#search}
    + [Filtrado rápido](search/fast-filtering.md)
    + [Referencias](search/references.md)
