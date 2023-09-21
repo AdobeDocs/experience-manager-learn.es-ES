@@ -11,10 +11,10 @@ kt: 7496
 thumbnail: KT-7496.jpg
 exl-id: 6d0fdc4d-d85f-4966-8f7d-d53506a7dd08
 recommendations: noDisplay, noCatalog
-source-git-commit: de2fa2e4c29ce6db31233ddb1abc66a48d2397a6
+source-git-commit: 0c6294ac468ad4ead041a68f381c6781a5c29b44
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 3%
+source-wordcount: '1013'
+ht-degree: 2%
 
 ---
 
@@ -25,6 +25,10 @@ Como parte de la Creación rápida de sitios, utilice el Asistente para la creac
 ## Requisitos previos {#prerequisites}
 
 Los pasos de este capítulo se realizarán en un entorno de Adobe Experience Manager as a Cloud Service. AEM Asegúrese de que tiene acceso administrativo al entorno de la. Se recomienda utilizar un [Programa de zona protegida](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/sandbox-programs/introduction-sandbox-programs.html) y [Entorno de desarrollo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html) al completar este tutorial.
+
+[Programa de producción](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs.html) AEM Los entornos de también se pueden utilizar para este tutorial. Sin embargo, asegúrese de que las actividades de este tutorial no afecten al trabajo que se está realizando en los entornos de destino, ya que este tutorial implementa contenido y código en el entorno de destino de los entornos de destino.
+
+El [AEM SDK de](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html) se puede utilizar para partes de este tutorial. Aspectos de este tutorial que dependen de los servicios en la nube, como [implementación de temáticas con la canalización front-end de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/theming.html)AEM , no se puede ejecutar en el SDK de la.
 
 Revise la [documentación de incorporación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=es) para obtener más información.
 
@@ -137,4 +141,4 @@ AEM ¡Felicidades, acabas de crear tu primer sitio en la red de la red de la red
 
 ### Pasos siguientes {#next-steps}
 
-Utilice el Editor de páginas en Adobe Experience Manager AEM, para actualizar el contenido del sitio en el, en el, y, a continuación, en el [Creación de contenido y publicación](author-content-publish.md) capítulo. Descubra cómo se pueden configurar los componentes atómicos para actualizar el contenido. Comprenda la diferencia entre los entornos de AEM Author y Publish, y aprenda a publicar actualizaciones en el sitio en directo.
+Utilice el Editor de páginas en Adobe Experience Manager AEM, para actualizar el contenido del sitio en el, en el, y, a continuación, en el [Creación de contenido y publicación](author-content-publish.md) capítulo. Descubra cómo se pueden configurar los componentes atómicos para actualizar el contenido. AEM Comprenda la diferencia entre los entornos de creación y publicación de un y aprenda a publicar actualizaciones en el sitio en directo.
