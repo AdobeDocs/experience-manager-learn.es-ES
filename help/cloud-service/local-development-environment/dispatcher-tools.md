@@ -10,9 +10,9 @@ kt: 4679
 thumbnail: 30603.jpg
 last-substantial-update: 2023-03-14T00:00:00Z
 exl-id: 9320e07f-be5c-42dc-a4e3-aab80089c8f7
-source-git-commit: 9073c1d41c67ec654b232aea9177878f11793d07
+source-git-commit: 2a412126ac7a67a756d4101d56c1715f0da86453
 workflow-type: tm+mt
-source-wordcount: '1621'
+source-wordcount: '1695'
 ht-degree: 9%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 9%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html?lang=es" text="Dispatcher en la nube"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html" text="Descargar el SDK de AEM as a Cloud Service"
 
-Dispatcher de Adobe Experience Manager AEM () es un módulo de servidor web HTTP Apache que proporciona una capa de seguridad y rendimiento entre el nivel de CDN y AEM Publish. Dispatcher es una parte integral de la arquitectura de Experience Manager general y debe formar parte de la configuración de desarrollo local.
+Dispatcher de Adobe Experience Manager AEM AEM () es un módulo de servidor web HTTP Apache que proporciona una capa de seguridad y rendimiento entre el nivel de CDN y Publicación de la. Dispatcher es una parte integral de la arquitectura de Experience Manager general y debe formar parte de la configuración de desarrollo local.
 
 El SDK de AEM as a Cloud Service incluye la versión de herramientas de Dispatcher recomendada, que facilita la configuración, validación y simulación de Dispatcher de manera local. Las herramientas de Dispatcher constan de:
 
@@ -48,7 +48,7 @@ Tenga en cuenta que `~` se utiliza como abreviatura del Directorio del usuario. 
 1. Los usuarios de Windows deben utilizar Windows 10 Professional (o una versión compatible con Docker)
 1. Instalar [Jar de inicio rápido de publicación de Experience Manager](./aem-runtime.md) en la máquina de desarrollo local.
 
-+ Si lo desea, instale la última versión [AEM sitio web de referencia de](https://github.com/adobe/aem-guides-wknd/releases) en el servicio local AEM Publish. Este sitio web se utiliza en este tutorial para visualizar una instancia de Dispatcher en funcionamiento.
++ Si lo desea, instale la última versión [AEM sitio web de referencia de](https://github.com/adobe/aem-guides-wknd/releases) AEM en el servicio local de publicación de la. Este sitio web se utiliza en este tutorial para visualizar una instancia de Dispatcher en funcionamiento.
 
 1. Instale e inicie la última versión de [Docker](https://www.docker.com/) (Docker Desktop 2.2.0.5+ / Docker Engine v19.03.9+) en la máquina de desarrollo local.
 
@@ -143,13 +143,16 @@ $ ./bin/validate.sh ./src
 
 AEM Dispatcher se ejecuta localmente mediante Docker en el `src` Archivos de configuración de Dispatcher y del servidor web Apache.
 
+
 >[!BEGINTABS]
 
 >[!TAB macOS]
 
 ```shell
-$ ./bin/docker_run.sh <src-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>
+$ ./bin/docker_run_hot_reload.sh <src-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>
 ```
+
+El `docker_run_hot_reload` se prefiere el ejecutable sobre `docker_run` ya que vuelve a cargar los archivos de configuración a medida que se modifican, sin tener que terminar ni reiniciar manualmente `docker_run`. Alternativamente, `docker_run` se puede utilizar, pero requiere finalizar y reiniciar manualmente `docker_run` cuando se cambian los archivos de configuración.
 
 >[!TAB Windows]
 
@@ -160,8 +163,10 @@ $ bin\docker_run <src-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-
 >[!TAB Linux]
 
 ```shell
-$ ./bin/docker_run.sh <src-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>
+$ ./bin/docker_run_hot_reload.sh <src-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>
 ```
+
+El `docker_run_hot_reload` se prefiere el ejecutable sobre `docker_run` ya que vuelve a cargar los archivos de configuración a medida que se modifican, sin tener que terminar ni reiniciar manualmente `docker_run`. Alternativamente, `docker_run` se puede utilizar, pero requiere finalizar y reiniciar manualmente `docker_run` cuando se cambian los archivos de configuración.
 
 >[!ENDTABS]
 
@@ -176,7 +181,7 @@ Inicie el contenedor de Docker de Dispatcher y proporcione la ruta a la carpeta 
 >[!TAB macOS]
 
 ```shell
-$ ./bin/docker_run.sh ./src host.docker.internal:4503 8080
+$ ./bin/docker_run_hot_reload.sh ./src host.docker.internal:4503 8080
 ```
 
 >[!TAB Windows]
@@ -188,7 +193,7 @@ $ bin\docker_run src host.docker.internal:4503 8080
 >[!TAB Linux]
 
 ```shell
-$ ./bin/docker_run.sh ./src host.docker.internal:4503 8080
+$ ./bin/docker_run_hot_reload.sh ./src host.docker.internal:4503 8080
 ```
 
 >[!ENDTABS]
@@ -202,7 +207,7 @@ Para ejecutar las herramientas de Dispatcher en la configuración de Dispatcher 
 >[!TAB macOS]
 
 ```shell
-$ ./bin/docker_run.sh ~/code/my-project/dispatcher/src host.docker.internal:4503 8080
+$ ./bin/docker_run_hot_reload.sh ~/code/my-project/dispatcher/src host.docker.internal:4503 8080
 ```
 
 >[!TAB Windows]
@@ -214,7 +219,7 @@ $ bin\docker_run <User Directory>/code/my-project/dispatcher/src host.docker.int
 >[!TAB Linux]
 
 ```shell
-$ ./bin/docker_run.sh ~/code/my-project/dispatcher/src host.docker.internal:4503 8080
+$ ./bin/docker_run_hot_reload.sh ~/code/my-project/dispatcher/src host.docker.internal:4503 8080
 ```
 
 >[!ENDTABS]
@@ -243,7 +248,7 @@ Se pueden pasar uno o varios parámetros a `docker_run`
 >[!TAB macOS]
 
 ```shell
-$ DISP_LOG_LEVEL=Debug REWRITE_LOG_LEVEL=Debug ./bin/docker_run.sh ~/code/my-project/dispatcher/src host.docker.internal:4503 8080
+$ DISP_LOG_LEVEL=Debug REWRITE_LOG_LEVEL=Debug ./bin/docker_run_hot_reload.sh ~/code/my-project/dispatcher/src host.docker.internal:4503 8080
 ```
 
 >[!TAB Windows]
@@ -255,7 +260,7 @@ $ DISP_LOG_LEVEL=Debug REWRITE_LOG_LEVEL=Debug bin\docker_run <User Directory>/c
 >[!TAB Linux]
 
 ```shell
-$ DISP_LOG_LEVEL=Debug REWRITE_LOG_LEVEL=Debug ./bin/docker_run.sh ~/code/my-project/dispatcher/src host.docker.internal:4503 8080
+$ DISP_LOG_LEVEL=Debug REWRITE_LOG_LEVEL=Debug ./bin/docker_run_hot_reload.sh ~/code/my-project/dispatcher/src host.docker.internal:4503 8080
 ```
 
 >[!ENDTABS]
@@ -351,7 +356,7 @@ El `host.docker.internal` es un nombre de host proporcionado al contenedor Docke
 
 Cuándo `bin/docker_run src host.docker.internal:4503 8080` resultados en el mensaje __Esperando hasta que host.docker.internal esté disponible__ y luego:
 
-1. Asegúrese de que la versión instalada de Docker sea 18.03 o buena
+1. Asegúrese de que la versión instalada de Docker sea 18.03 o superior
 1. Es posible que tenga configurado un equipo local que impida el registro/resolución del `host.docker.internal` nombre. En su lugar, utilice su IP local.
 
 >[!BEGINTABS]
@@ -359,7 +364,7 @@ Cuándo `bin/docker_run src host.docker.internal:4503 8080` resultados en el men
 >[!TAB macOS]
 
 + Desde el terminal, ejecute `ifconfig` y registrar el host __inet__ Dirección IP, normalmente el __en0__ dispositivo.
-+ A continuación, ejecutar `docker_run` uso de la dirección IP del host: `$ bin/docker_run.sh src <HOST IP>:4503 8080`
++ A continuación, ejecutar `docker_run` uso de la dirección IP del host: `$ bin/docker_run_hot_reload.sh src <HOST IP>:4503 8080`
 
 >[!TAB Windows]
 
@@ -369,7 +374,7 @@ Cuándo `bin/docker_run src host.docker.internal:4503 8080` resultados en el men
 >[!TAB Linux]
 
 + Desde el terminal, ejecute `ifconfig` y registrar el host __inet__ Dirección IP, normalmente el __en0__ dispositivo.
-+ A continuación, ejecutar `docker_run` uso de la dirección IP del host: `$ bin/docker_run.sh src <HOST IP>:4503 8080`
++ A continuación, ejecutar `docker_run` uso de la dirección IP del host: `$ bin/docker_run_hot_reload.sh src <HOST IP>:4503 8080`
 
 >[!ENDTABS]
 

@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 6cbd8f3c49d44e75337715c35c198008da8ae7b9
+source-git-commit: 2a412126ac7a67a756d4101d56c1715f0da86453
 workflow-type: tm+mt
 source-wordcount: '1023'
-ht-degree: 23%
+ht-degree: 22%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 23%
 + Configuración del entorno de desarrollo local {#local-development-environment-set-up}
    + [Información general](./local-development-environment/overview.md)
    + [Herramientas de desarrollo](./local-development-environment/development-tools.md)
-   + [Tiempo de ejecución local de AEM](./local-development-environment/aem-runtime.md)
+   + [AEM SDK local de](./local-development-environment/aem-runtime.md)
    + [Herramientas locales de Dispatcher](./local-development-environment/dispatcher-tools.md)
 + Desarrollo de{#developing}
    + Extensibilidad{#extensibility}
@@ -171,7 +171,7 @@ ht-degree: 23%
          + [Herramienta de transferencia de contenido](./migration/moving-to-aem-as-a-cloud-service/content-migration/content-transfer-tool.md)
          + [Preguntas más frecuentes](./migration/moving-to-aem-as-a-cloud-service/content-migration/faq.md)
       + [Solución de problemas](./migration/moving-to-aem-as-a-cloud-service/troubleshooting.md)
-      +  de AEM Forms as a Cloud Service{#aem-forms}
+      + AEM Forms as a Cloud Service {#aem-forms}
          + [Introducción](./migration/moving-to-aem-as-a-cloud-service/aem-forms/introduction.md)
          + [Inscripción digital](./migration/moving-to-aem-as-a-cloud-service/aem-forms/digital-enrollment.md)
          + [Comunicaciones](./migration/moving-to-aem-as-a-cloud-service/aem-forms/communications.md)
