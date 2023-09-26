@@ -14,7 +14,7 @@ role: Developer
 level: Beginner
 exl-id: 38802296-8988-4300-a04a-fcbbe98ac810
 last-substantial-update: 2022-08-25T00:00:00Z
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 33%
@@ -22,6 +22,8 @@ ht-degree: 33%
 ---
 
 # SPA AEM Creación de su primer React en el {#overview}
+
+{{edge-delivery-services}}
 
 Bienvenido a un tutorial de varias partes diseñado para desarrolladores nuevos en la **SPA Editor de** función en Adobe Experience Manager AEM (). Este tutorial explora la implementación de una aplicación de React para una marca ficticia de estilo de vida, WKND. AEM SPA AEM La aplicación React se ha desarrollado y diseñado para implementarse con el Editor de, que asigna los componentes React a los componentes de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de. SPA AEM AEM Los segmentos completados, implementados para la creación de informes de forma dinámica, se pueden crear con las herramientas de edición en línea tradicionales de la creación de informes de la versión en tiempo de ejecución de la versión en tiempo de ejecución de la.
 

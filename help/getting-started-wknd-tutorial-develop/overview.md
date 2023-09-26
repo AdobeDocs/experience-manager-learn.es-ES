@@ -15,7 +15,7 @@ role: Developer
 level: Beginner
 exl-id: 09a600f4-1ada-4fb7-ae44-586364cff389
 recommendations: disable
-source-git-commit: 5f43db64f68218ed3d349508a2c4fd232601a9ef
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 7%
@@ -23,6 +23,8 @@ ht-degree: 7%
 ---
 
 # Introducción a AEM Sites: tutorial de WKND {#introduction}
+
+{{edge-delivery-services}}
 
 Bienvenido a un tutorial de varias partes diseñado para desarrolladores nuevos en Adobe Experience Manager AEM (). AEM Este tutorial explora la implementación de un sitio de trabajo para una marca ficticia de estilo de vida, WKND. El tutorial abarca temas fundamentales como la configuración del proyecto, los componentes principales, las plantillas editables, las bibliotecas del lado del cliente y el desarrollo de componentes con Adobe Experience Manager Sites.
 
@@ -57,7 +59,7 @@ XD Descargue los kits de interfaz de usuario de:
 
 También hay disponible una versión final del sitio WKND como referencia: [https://wknd.site/](https://wknd.site/)
 
-AEM El tutorial abarca las principales habilidades de desarrollo necesarias para un desarrollador de la, pero *no* cree todo el sitio de principio a fin. El sitio de referencia terminado es otro buena AEM recurso para explorar y ver más de las capacidades listas para usar de la versión más reciente de la aplicación y de las que se pueden obtener más datos de forma predeterminada.
+AEM El tutorial abarca las principales habilidades de desarrollo necesarias para un desarrollador de la, pero *no* cree todo el sitio de principio a fin. AEM El sitio de referencia terminado es otro gran recurso para explorar y ver más de las capacidades listas para usar de la parte de la vista de la pantalla de inicio de la aplicación de forma predeterminada.
 
 Para probar el código más reciente antes de saltar al tutorial, descargue e instale el **[última versión de GitHub](https://github.com/adobe/aem-guides-wknd/releases/latest)**.
 

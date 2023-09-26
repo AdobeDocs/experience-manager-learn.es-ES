@@ -10,7 +10,7 @@ kt: 4082
 thumbnail: 30214.jpg
 exl-id: e9d06dc2-ac3b-48c5-ae00-fdaf5bb45b54
 recommendations: noDisplay, noCatalog
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '3040'
 ht-degree: 1%
@@ -18,6 +18,8 @@ ht-degree: 1%
 ---
 
 # Páginas y plantillas {#pages-and-template}
+
+{{edge-delivery-services-and-page-editor}}
 
 En este capítulo, vamos a explorar la relación entre un componente de página base y las plantillas editables. Aprenda a crear una plantilla de artículo sin estilo basada en algunas maquetas de [Adobe XD](https://helpx.adobe.com/support/xd.html). En el proceso de creación de la plantilla, se tratan los componentes principales y las configuraciones de política avanzadas de las plantillas editables.
 

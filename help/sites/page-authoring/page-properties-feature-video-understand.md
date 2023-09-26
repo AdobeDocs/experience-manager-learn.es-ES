@@ -9,7 +9,7 @@ level: Beginner
 kt: 4321
 thumbnail: 32192.jpg
 exl-id: 41b40982-9796-418e-9bfc-af6fc720e9b8
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 42%
@@ -18,13 +18,15 @@ ht-degree: 42%
 
 # Explicación de las propiedades de página {#understanding-page-properties-aem-sites}
 
+{{edge-delivery-services-and-page-editor}}
+
 El siguiente vídeo presenta las propiedades de página asociadas a una página en Adobe Experience Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32192?quality=12&learn=on)
 
 En este vídeo, se tratan los siguientes elementos de propiedad de la página:
 
-* Basic
+* Básica
    * Título y etiquetas
       * Título
       * Etiquetas
@@ -42,7 +44,7 @@ En este vídeo, se tratan los siguientes elementos de propiedad de la página:
       * Redirigir
       * Diseño
       * Alias
-   * Configuración de nube
+   * Configuración de la nube
    * Configuración de plantilla
    * Requisito de autenticación
    * Exportar

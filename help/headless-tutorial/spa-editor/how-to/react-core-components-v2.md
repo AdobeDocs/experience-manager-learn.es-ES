@@ -9,7 +9,7 @@ level: Intermediate
 kt: 10900
 thumbnail: kt-10900.jpeg
 exl-id: e055b356-dd26-4366-8608-5a0ccf5b4c49
-source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '586'
 ht-degree: 2%
@@ -17,6 +17,8 @@ ht-degree: 2%
 ---
 
 # AEM Uso de componentes editables de React v2 de
+
+{{edge-delivery-services}}
 
 AEM proporciona [AEM Componentes editables de React v2](https://www.npmjs.com/package/@adobe/aem-react-editable-components)AEM SPA : un SDK basado en Node.js que permite la creación de componentes React, que admiten la edición de componentes en contexto mediante el Editor de.
 

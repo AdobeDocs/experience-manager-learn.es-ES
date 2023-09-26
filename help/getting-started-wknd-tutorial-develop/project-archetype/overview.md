@@ -11,14 +11,16 @@ mini-toc-levels: 1
 index: y
 exl-id: 90d14734-f644-4a45-9361-1e47a5b52fff
 recommendations: disable
-source-git-commit: bbdb045edf5f2c68eec5094e55c1688e725378dc
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '476'
-ht-degree: 31%
+ht-degree: 32%
 
 ---
 
 # Introducción a AEM Sites: Arquetipo de proyecto {#project-archetype}
+
+{{edge-delivery-services-and-page-editor}}
 
 Bienvenido a un tutorial de varias partes diseñado para desarrolladores nuevos en Adobe Experience Manager AEM (). Este tutorial recorre la implementación de un sitio de AEM para una marca ficticia: WKND.
 

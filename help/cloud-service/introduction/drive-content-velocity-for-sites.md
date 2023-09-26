@@ -3,7 +3,7 @@ title: Cómo aumentar la velocidad del contenido con Adobe Experience Manager
 description: Obtenga información acerca de la velocidad de contenido y su valor dentro de las organizaciones empresariales. Sumérjase en cuatro principios de implementación efectiva y en los escollos que hay que tener en cuenta en el camino.
 solution: Experience Manager
 exl-id: 9d2e05c3-c8eb-4d92-bad0-931e63550438
-source-git-commit: de31d6e97b84781aa05ca441fc6e9fc4bc59ccc3
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '2814'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Cómo aumentar la velocidad del contenido con Adobe Experience Manager
+
+{{edge-delivery-services}}
 
 Como líder en experiencia del cliente, sabemos lo difícil que puede ser para usted asegurarse de que tiene el marco de trabajo y los principios adecuados para impulsar la velocidad del contenido: componentes esenciales para desbloquear el verdadero valor de su plataforma de Adobe Experience Manager. En este artículo, revisaremos qué es la velocidad de contenido y su valor dentro de las organizaciones empresariales. A continuación, profundizaremos en cuatro principios de implementación efectiva y en los escollos que hay que tener en cuenta en el camino.
 
@@ -59,7 +61,7 @@ Esto se debe a que la velocidad de conducción en CMS a nivel empresarial se tra
 
 Una y otra vez, hemos visto que el recorrido de un modelo en silo a uno flexible y rápido viene de esa voz inicial y poderosa en la dirección. Comprender que para abordar el ciclo de vida del contenido de una manera precisa una nueva imagen del mismo a través del equipo, desde el creador hasta el evaluador. Y ese punto de decisión, esa comprensión, de que impulsar el contenido no es una cuestión de qué herramienta, sino de cómo lo estamos concibiendo.
 
-_&quot;Cuando empiezas a pensar en el contenido de una manera diferente, traes a la mesa diferentes grupos que pueden no haber estado juntos. Desde el producto y el desarrollo hasta el diseño de experiencias dirigidas por el cliente, tiene diferentes partes para construir esas cosas. Para nosotros, internamente, el apoyo al liderazgo y la aceptación fue el factor bueno más importante para nuestra transformación digital&quot;._ - Monique Misrahi, T-Mobile
+_&quot;Cuando empiezas a pensar en el contenido de una manera diferente, traes a la mesa diferentes grupos que pueden no haber estado juntos. Desde el producto y el desarrollo hasta el diseño de experiencias dirigidas por el cliente, tiene diferentes partes para construir esas cosas. Para nosotros, internamente, el apoyo y la aceptación del liderazgo fue el factor más importante para nuestra transformación digital&quot;._ - Monique Misrahi, T-Mobile
 
 _&quot;El apoyo, la dirección y la visión del liderazgo fueron un factor crítico. Lo fantástico fue que nuestro liderazgo fue inclusivo y abierto a la aportación. Ellos escucharon&quot;._ - Amy Bergstrom, Deloitte
 
@@ -94,7 +96,7 @@ _&quot;Sabíamos que había demasiado contenido saliendo. Así que hicimos una i
 
 AEM El, es una solución de nivel empresarial que toca muchas partes de la compañía o marca y su eficacia, como herramienta de CMS, tiene dependencias upstream.
 
-Al crear el marco de trabajo, hay algunos paradigmas comunes para los que necesitará encontrar la solución correcta. Algunos de estos elementos pueden ser desafiantes, pero hay que tomar decisiones, por eso el paradigma fundacional de arriba es tan importante. Este marco de trabajo que se está creando es el que se aprovecha para escalar en toda la organización.
+Al crear el marco de trabajo, hay algunos paradigmas comunes para los que necesitará encontrar la solución correcta. Algunos de estos elementos pueden ser desafiantes, pero las decisiones deben ser tomadas, por eso el paradigma fundacional de arriba es tan importante. Este marco de trabajo que se está creando es el que se aprovecha para escalar en toda la organización.
 
 Estos son cuatro hitos que se deben desarrollar durante la fase de ejecución:
 
@@ -173,7 +175,7 @@ Estos son algunos problemas potenciales que se deben evitar:
    * ¿Estamos maximizando el alcance orgánico?
 * ¿La experiencia es accesible para todos?
 
-* Visualización de las soluciones en silo. AEM Por ejemplo, centrarse únicamente en el aspecto técnico de la implementación de la aplicación no permitirá obtener todos los beneficios empresariales. En su lugar, recomendamos mirar los casos de uso y los escenarios empresariales y luego girar hacia la arquitectura y el diseño, ya que esto proporcionará una buena AEM vista de las capacidades de la. Anurandha Pentareddy de Adobe comparte: _&quot;Una cosa que aconsejo es mirar sus objetivos de valor por adelantado para la plataforma que está implementando&quot;._
+* Visualización de las soluciones en silo. AEM Por ejemplo, centrarse únicamente en el aspecto técnico de la implementación de la aplicación no permitirá obtener todos los beneficios empresariales. AEM En su lugar, recomendamos mirar los casos de uso y los escenarios empresariales, y luego girar hacia la arquitectura y el diseño, ya que esto proporcionará una mejor vista de las capacidades de la. Anurandha Pentareddy de Adobe comparte: _&quot;Una cosa que aconsejo es mirar sus objetivos de valor por adelantado para la plataforma que está implementando&quot;._
 
 Para una discusión más detallada de la velocidad de contenido, escuche esta hora [mesa redonda](https://primetime.bluejeans.com/a2m/events/playback/e63686d4-158f-4f73-aea0-f03ebee4606d) con Monique Misrahi (T-Mobile), Amy Bergstrom (Deloitte) y Anuradha Pentareddy de Adobe.
 

@@ -4,7 +4,7 @@ description: Una colección de tutoriales para Adobe Experience Manager AEM () a
 sub-product: Experience Manager as a Cloud Service
 kt: 3289
 exl-id: 650ba2d9-6083-4772-84c5-1cdb97b5f0e9
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 11%
@@ -12,6 +12,8 @@ ht-degree: 11%
 ---
 
 # AEM Vídeos y tutoriales as a Cloud Service de {#overview}
+
+{{edge-delivery-services}}
 
 Adobe Experience Manager (AEM) ya está disponible as a Cloud Service. AEM as a Cloud Service presenta la siguiente generación de la línea de productos Experience Manager, basándose en las inversiones e innovaciones anteriores, preservando y ampliando todos los casos de uso y funcionalidades.
 
@@ -22,24 +24,19 @@ Adobe Experience Manager (AEM) ya está disponible as a Cloud Service. AEM as a 
 ## ¿Qué hay de nuevo?
 
 * **[Autenticación basada en tokens (tutorial)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)**
-
-   *AEM Obtenga información sobre cómo utilizar la autenticación basada en tokens para interactuar con los as a Cloud Service a través de HTTP*
+  *AEM Obtenga información sobre cómo utilizar la autenticación basada en tokens para interactuar con los as a Cloud Service a través de HTTP*
 
 * **[GraphQL sin encabezado (tutorial)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=es)**
-
-   *AEM Aprenda a utilizar las API de GraphQL de para potenciar las experiencias en una aplicación externa.*
+  *AEM Aprenda a utilizar las API de GraphQL de para potenciar las experiencias en una aplicación externa.*
 
 * **[Importación masiva (vídeo)](./migration/bulk-import.md)**
-
-   *AEM Obtenga información sobre cómo importar recursos de forma masiva en la red de recursos desde Azure Blob Storage o Amazon S3.*
+  *AEM Obtenga información sobre cómo importar recursos de forma masiva en la red de recursos desde Azure Blob Storage o Amazon S3.*
 
 * **[Trabajador de metadatos de asset compute (tutorial)](./asset-compute/advanced/metadata.md)**
-
-   *AEM Obtenga información sobre cómo volver a escribir metadatos de recursos en los recursos de un trabajador de Asset compute para que los incluya en el proceso de creación de*
+  *AEM Obtenga información sobre cómo volver a escribir metadatos de recursos en el archivo de datos de un trabajador de Asset compute de*
 
 * **[Extensibilidad de los microservicios de asset compute (tutorial)](./asset-compute/overview.md)**
-
-   *Obtenga información sobre cómo desarrollar Assets computes de trabajo para generar representaciones de recursos personalizadas*
+  *Obtenga información sobre cómo desarrollar trabajadores de Asset compute para generar representaciones de recursos personalizadas*
 
 </div>
 

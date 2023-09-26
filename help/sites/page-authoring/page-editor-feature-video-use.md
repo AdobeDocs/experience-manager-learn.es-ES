@@ -15,7 +15,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: b120fb79-729e-4155-ba10-e5f7bb07eefa
-source-git-commit: 1623e1eaf966e625e1ec402a2996e8beb1e1cd03
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 15%
@@ -23,6 +23,8 @@ ht-degree: 15%
 ---
 
 # Uso del editor de páginas {#using-page-editor-with-aem-sites}
+
+{{edge-delivery-services-and-page-editor}}
 
 AEM El editor de páginas de Sites es una potente herramienta para crear y editar contenido web. Se accede a las herramientas y capacidades del Editor de páginas desde la barra de herramientas de la interfaz de usuario del Editor de páginas.
 

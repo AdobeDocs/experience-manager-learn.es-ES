@@ -1,7 +1,7 @@
 ---
 title: Uso de la diferencia de página con AEM Sites
 seo-title: Using Page Difference with AEM Sites
-description: Las capacidades de diferencia de página de AEM Sites muestran que proporciona una vista rápida y codificada por colores del contenido que ha cambiado en una página (versión, Live Copy, lanzamientos, copia de idioma).
+description: Las funcionalidades de diferencia de página de AEM Sites muestran una vista rápida y codificada por colores de qué contenido ha cambiado en una página (versión, live copy, lanzamientos, copia de idioma).
 seo-description: AEM Sites' page difference capabilities show provides a quick, color-coded view of what content has changed in a page (version, live copy, launches, language copy).
 topics: authoring
 audience: author, marketer
@@ -16,7 +16,7 @@ feature: Authoring
 role: User
 level: Beginner
 exl-id: 4d365957-9a5a-44f8-a117-95c1c0dd757d
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 1%
@@ -25,7 +25,9 @@ ht-degree: 1%
 
 # Uso de la función Diferencia de página {#using-page-difference-with-aem-sites}
 
-Las capacidades de diferencia de página de AEM Sites muestran que proporciona una vista rápida y codificada por colores del contenido que ha cambiado en una página (versión, Live Copy, lanzamientos, copia de idioma).
+{{edge-delivery-services-and-page-editor}}
+
+Las funcionalidades de diferencia de página de AEM Sites muestran una vista rápida y codificada por colores de qué contenido ha cambiado en una página (versión, live copy, lanzamientos, copia de idioma).
 
 ## Comparación de versiones de página {#comparing-page-versions}
 
