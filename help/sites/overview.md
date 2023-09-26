@@ -5,10 +5,10 @@ solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 topic: Content Management
 exl-id: cde4ce7f-0afe-4632-8c1c-354586f296d5
-source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
+source-git-commit: 237560dc634cb3d6c3553dd57386d2a9548ed4e5
 workflow-type: tm+mt
-source-wordcount: '345'
-ht-degree: 15%
+source-wordcount: '361'
+ht-degree: 14%
 
 ---
 
@@ -18,27 +18,22 @@ ht-degree: 15%
 
 Adobe Experience Manager AEM () Sites es una plataforma líder de administración de experiencias. Esta guía del usuario contiene vídeos y tutoriales sobre las numerosas funciones y funcionalidades de AEM Sites.
 
-
-<div id="whats-new-section">
+<div id="whats-new-section-skip"></div>
 
 ## ¿Qué hay de nuevo?
 
-* **[Uso de lanzamientos con AEM Sites (vídeo)](./page-authoring/launches.md)**
-  *Obtenga información sobre los lanzamientos de AEM Sites y cómo se pueden utilizar para preparar el contenido del sitio web para futuras versiones.*
+* **[AEM Información general sobre los Edge Delivery Services y los (vídeo)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=es)**
+  *Explore el mundo completo de Adobe Experience Manager AEM (), que incluye AEM Sites, AEM Assets AEM, sin encabezado, AEM Forms y Edge Delivery Services, en este vídeo informativo general.*
 
-* **[Personalización de la capa de datos del cliente de Adobe AEM con componentes de (tutorial)](./integrations/adobe-client-data-layer/data-layer-customize.md)**
-  *Obtenga información sobre cómo actualizar la capa de datos del cliente de Adobe AEM con contenido de componentes de personalizados.*
+* **[AEM ¿Cuáles son los Edge Delivery Services y los? (Vídeo)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/what-is-aem-as-a-cloud-service.html)**
+  *Obtenga información acerca del valor que proporcionan Adobe Experience Manager AEM () y los Edge Delivery Services.*
 
-* **[AEM Introducción a GraphQL sin encabezado de (Tutorial)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=es)**
-  *AEM AEM Cómo exponer el contenido de los recursos que va a consumir una aplicación móvil nativa mediante las API de GraphQL de la.*
+* **[AEM Conozca la evolución de la (Vídeo)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/evolution.html)**
+  *AEM AEM AEM Obtenga información sobre la evolución de la y el valor que proporciona, desde la versión 6.5 a la versión as a Cloud Service de la, y finalmente a los Edge Delivery Services de.*
 
-* **[Uso de fragmentos de contenido (series de vídeos)](./content-fragments/content-fragments-feature-video-use.md)**
-  *Los fragmentos de contenido son fragmentos de contenido que no dependen del canal y que se pueden reutilizar.*
+* **[AEM Resumen de la arquitectura de los Edge Delivery Services de con (vídeo)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)**
+  *AEM ¡Conoce todo acerca de la arquitectura de los as a Cloud Service de la!*
 
-* **[SPA Uso del Editor de (vídeo)](./spa-editor/spa-editor-framework-feature-video-use.md)**
-  *AEM SPA Obtenga información acerca de las capacidades de edición de segmentos para aplicaciones de una sola página ().*
-
-</div>
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
