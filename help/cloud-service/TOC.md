@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 18b9d7c952027165598c8a55e250d846f10bfd74
+source-git-commit: 0c95df469885b84aa7585975a89811efab0ae5e7
 workflow-type: tm+mt
 source-wordcount: '1037'
 ht-degree: 22%
@@ -111,7 +111,7 @@ ht-degree: 22%
       + [Cómo realizar la configuración](./developing/rde/how-to-setup.md)
       + [Utilización](./developing/rde/how-to-use.md)
       + [Ciclo de vida del desarrollo](./developing/rde/development-life-cycle.md)
-   + [AEM SDK API JavaDocs](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html)
+   + [AEM SDK API JavaDocs](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html){target=_blank}
 + AEM Depuración de{#debugging}
    + AEM Depuración del SDK de{#debugging-aem-sdk}
       + [Información general](./debugging/aem-sdk-local-quickstart/overview.md)
@@ -129,7 +129,7 @@ ht-degree: 22%
       + Riesgos{#risks}
          + [Advertencias transversales](./debugging/cloud-service/risks/traversals.md)
 + Entrega de contenido{#content-delivery}
-   + [Redirecciones de URL](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html)
+   + [Redirecciones de URL](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html){target=_blank}
 + Almacenamiento en caché{#caching}
    + [Información general](./caching/overview.md)
    + [AEM Servicio de publicación de](./caching/publish.md)
@@ -189,7 +189,7 @@ ht-degree: 22%
       + [Herramienta de migración del flujo de trabajo de recursos](./migration/cloud-acceleration-manager/asset-workflow-migration-tool.md)
       + [Navegación por Cloud Acceleration Manager](./migration/cloud-acceleration-manager/navigating.md)
       + [Uso de Cloud Acceleration Manager](./migration/cloud-acceleration-manager/using.md)
-+ [Fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html)
++ [Fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
 + Forms{#forms}
    + Desarrollo para Forms as a Cloud Service{#developing-for-cloud-service}
       + [1 - Introducción](./forms/developing-for-cloud-service/getting-started.md)
@@ -317,11 +317,11 @@ ht-degree: 22%
    + [Solución de problemas](./asset-compute/troubleshooting.md)
 
 + Tutorials de varios pasos{#multi-step-tutorials}
-   + [Desarrollo de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es)
-   + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=es)
-   + [SPA Editor de (React)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
-   + [AEM SITES y ADOBE TARGET](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html)
-   + [Autenticación basada en tokens](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)
+   + [Desarrollo de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es){target=_blank}
+   + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=es){target=_blank}
+   + [SPA Editor de (React)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html){target=_blank}
+   + [AEM SITES y ADOBE TARGET](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html){target=_blank}
+   + [Autenticación basada en tokens](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html){target=_blank}
 + Recursos de expertos {#expert-resources}
    + AEM Campeones de {#aem-champions}
       + [Guía de incorporación de Cloud Manager](./expert-resources/aem-champions/onboarding-playbook.md)
