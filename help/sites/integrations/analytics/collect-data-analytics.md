@@ -10,10 +10,10 @@ kt: 5332
 thumbnail: 5332-collect-data-analytics.jpg
 badgeIntegration: label="Integración" type="positive"
 exl-id: 33f2fd25-8696-42fd-b496-dd21b88397b2
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
 workflow-type: tm+mt
-source-wordcount: '2470'
-ht-degree: 3%
+source-wordcount: '2468'
+ht-degree: 4%
 
 ---
 
@@ -45,7 +45,7 @@ Se requiere lo siguiente:
 * **Propiedad de etiqueta** en Experience Platform
 * **Adobe Analytics** ID del grupo de informes de prueba/desarrollo y servidor de seguimiento. Consulte la siguiente documentación para [creación de un grupo de informes](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html).
 * [Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) extensión del explorador. Capturas de pantalla de este tutorial capturadas desde el navegador Chrome.
-* AEM (Opcional) Sitio de con [Capa de datos del cliente de Adobe habilitada](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation). Este tutorial utiliza el entorno público [WKND](https://wknd.site/us/en.html) sitio, pero puede utilizar su propio sitio.
+* AEM (Opcional) Sitio de con [Capa de datos del cliente de Adobe habilitada](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation). Este tutorial utiliza el entorno público [WKND](https://wknd.site/us/es.html) sitio, pero puede utilizar su propio sitio.
 
 >[!NOTE]
 >
@@ -53,9 +53,9 @@ Se requiere lo siguiente:
 
 ## Cambiar el entorno de etiquetas para el sitio WKND
 
-El [WKND](http://wknd.site/us/en.html) es un sitio público construido basado en [un proyecto de código abierto](https://github.com/adobe/aem-guides-wknd) diseñado como referencia y [tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es) AEM para una implementación de la.
+El [WKND](https://wknd.site/us/es.html) es un sitio público creado sobre la base de [un proyecto de código abierto](https://github.com/adobe/aem-guides-wknd) diseñado como referencia y [tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es) AEM para una implementación de la.
 
-AEM En lugar de configurar un entorno de e instalar el código base de WKND, puede utilizar el depurador de Experience Platform para lo siguiente **cambiar** el live [Sitio WKND](http://wknd.site/us/en.html) hasta *su* propiedad de etiqueta. AEM Sin embargo, puede utilizar su propio sitio de la si ya tiene el [Capa de datos del cliente de Adobe habilitada](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation).
+AEM En lugar de configurar un entorno de e instalar el código base de WKND, puede utilizar el depurador de Experience Platform para lo siguiente **cambiar** el live [Sitio WKND](https://wknd.site/us/es.html) hasta *su* propiedad de etiqueta. AEM Sin embargo, puede utilizar su propio sitio de la si ya tiene el [Capa de datos del cliente de Adobe habilitada](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation).
 
 1. Inicie sesión en el Experience Platform y [crear una propiedad Tag](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html) (si aún no lo ha hecho).
 1. Asegúrese de que haya una etiqueta JavaScript inicial [se ha creado la biblioteca](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html#create-a-library) y se promocionan a la etiqueta [entorno](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=es).
@@ -63,7 +63,7 @@ AEM En lugar de configurar un entorno de e instalar el código base de WKND, pue
 
    ![Copiar código incrustado de propiedad de etiqueta](assets/collect-data-analytics/launch-environment-copy.png)
 
-1. En el explorador, abra una pestaña nueva y navegue hasta [Sitio WKND](http://wknd.site/us/en.html)
+1. En el explorador, abra una pestaña nueva y navegue hasta [Sitio WKND](https://wknd.site/us/es.html)
 1. Abra la extensión del explorador de Experience Platform Debugger.
 
    ![Experience Platform Debugger](assets/collect-data-analytics/experience-platform-debugger-extension.png)
@@ -80,7 +80,7 @@ AEM En lugar de configurar un entorno de e instalar el código base de WKND, pue
 
 El [Proyecto de referencia de WKND](https://github.com/adobe/aem-guides-wknd) AEM se crea con los componentes principales de la y tiene el [Capa de datos del cliente de Adobe habilitada](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation) de forma predeterminada. A continuación, compruebe que la capa de datos del cliente de Adobe esté habilitada.
 
-1. Vaya a [Sitio WKND](http://wknd.site/us/en.html).
+1. Vaya a [Sitio WKND](https://wknd.site/us/es.html).
 1. Abra las herramientas para desarrolladores del explorador y vaya al **Consola**. Ejecute el siguiente comando:
 
    ```js
@@ -115,7 +115,7 @@ El [Proyecto de referencia de WKND](https://github.com/adobe/aem-guides-wknd) AE
 
 ## Crear una regla de carga de página
 
-La capa de datos del cliente de Adobe es un **evento** capa de datos controlada. AEM Cuando se carga la capa de datos de la página de, se genera un déclencheur de `cmp:show` evento. Cree una regla que se active cuando la variable `cmp:show` se activa desde la capa de datos de página.
+La capa de datos del cliente de Adobe es un **impulsado por eventos** capa de datos. AEM Cuando se carga la capa de datos de la página de, se genera un déclencheur de `cmp:show` evento. Cree una regla que se active cuando la variable `cmp:show` se activa desde la capa de datos de página.
 
 1. Vaya a Experience Platform AEM y luego a la propiedad de etiquetas integrada con el sitio de.
 1. Vaya a **Reglas** en la interfaz de usuario de la propiedad de etiquetas y haga clic en **Crear nueva regla**.
@@ -178,7 +178,7 @@ La capa de datos del cliente de Adobe es un **evento** capa de datos controlada.
    console.log("Page template: " + event.component['xdm:template']);
    ```
 
-   El `event` se pasa desde el `trigger()` método invocado en el evento personalizado. Aquí el `component` es la página actual derivada de la capa de datos `getState` en el evento personalizado.
+   El `event` se pasa desde el `trigger()` método invocado en el evento personalizado. Aquí, el `component` es la página actual derivada de la capa de datos `getState` en el evento personalizado.
 
 1. Guarde los cambios y ejecute un [generar](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) en la propiedad tag para promocionar el código a [entorno](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=es) AEM se utiliza en el sitio de la.
 
@@ -350,7 +350,7 @@ Actualmente la variable **Página cargada** La regla simplemente genera una inst
 
 Ahora que la variable **Página cargada** La regla envía la señalización de Analytics. Debería poder ver las variables de seguimiento de Analytics mediante Experience Platform Debugger.
 
-1. Abra el [Sitio WKND](https://wknd.site/us/en.html) en el explorador.
+1. Abra el [Sitio WKND](https://wknd.site/us/es.html) en el explorador.
 1. Haga clic en el icono Debugger ![Icono de Experience Platform Debugger](assets/collect-data-analytics/experience-cloud-debugger.png) para abrir Experience Platform Debugger.
 1. Asegúrese de que Debugger asigne la propiedad de etiqueta a *su* Entorno de desarrollo, tal como se describió anteriormente y **Registro de consola** está marcada.
 1. Abra el menú Analytics y compruebe que el grupo de informes está configurado en *su* grupo de informes. También debe rellenarse el Nombre de página:

@@ -14,9 +14,9 @@ level: Intermediate
 badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: becf2bed-0541-45e8-9ce2-f9fb023234e0
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '522'
 ht-degree: 2%
 
 ---
@@ -34,13 +34,13 @@ AEM Para utilizar el VEC en un sitio web de, se debe completar la siguiente conf
 
 ## Información general del escenario
 
-La página de inicio del sitio WKND muestra las actividades locales o lo mejor que se puede hacer por una ciudad en forma de tarjetas informativas. Como especialista en marketing, se le ha asignado la tarea de modificar la página de inicio realizando cambios de texto en el teaser de la sección de aventura y comprendiendo cómo mejora la conversión.
+La página de inicio del sitio WKND muestra las actividades locales o las mejores cosas que hacer en una ciudad en forma de tarjetas informativas. Como especialista en marketing, se le ha asignado la tarea de modificar la página de inicio realizando cambios de texto en el teaser de la sección de aventura y comprendiendo cómo mejora la conversión.
 
 ## Pasos para crear una prueba A/B con el Compositor de experiencias visuales (VEC)
 
 1. Inicie sesión en [Adobe Experience Cloud](https://experience.adobe.com/), pulse en __Target__, vaya al __Actividades__ pestaña
 
-   + Si no ve __Target__ en el panel del Experience Cloud, compruebe que la organización de Adobe correcta está seleccionada en el conmutador de organizaciones en la parte superior derecha y que se ha concedido acceso al usuario a Target en [Adobe Admin Console](https://adminconsole.adobe.com/).
+   + Si no ve __Target__ en el panel del Experience Cloud, asegúrese de que está seleccionada la organización de Adobe correcta en el conmutador de organización en la parte superior derecha y de que se ha concedido acceso al usuario a Target en [Adobe Admin Console](https://adminconsole.adobe.com/).
 
 1. Clic **Crear actividad** y luego elija **Prueba A/B** actividad
 
@@ -50,7 +50,7 @@ La página de inicio del sitio WKND muestra las actividades locales o lo mejor q
 
    ![URL de actividad](assets/ab-test-url.png)
 
-1. El Compositor de experiencias visuales muestra dos pestañas a la izquierda después de crear una nueva actividad: *Experiencia A* y *Experiencia B*. Seleccione una experiencia de la lista. Puede añadir nuevas experiencias a la lista utilizando el **Añadir experiencia** botón.
+1. El Compositor de experiencias visuales muestra dos pestañas a la izquierda después de crear una actividad: *Experiencia A* y *Experiencia B*. Seleccione una experiencia de la lista. Puede añadir nuevas experiencias a la lista utilizando el **Añadir experiencia** botón.
 
    ![Experiencia A](assets/experience.png)
 
@@ -86,9 +86,9 @@ La página de inicio del sitio WKND muestra las actividades locales o lo mejor q
 
 ## Resumen
 
-En este capítulo, un experto en marketing ha podido crear una experiencia con el Compositor de experiencias visuales arrastrando y soltando, intercambiando y modificando el diseño y el contenido de una página web sin cambiar ningún código para ejecutar una prueba.
+En este capítulo, un experto en marketing ha podido crear una experiencia utilizando el Compositor de experiencias visuales arrastrando y soltando, intercambiando y modificando el diseño y el contenido de una página web sin cambiar ningún código para ejecutar una prueba.
 
 ## Vínculos de soporte
 
-+ [Adobe Experience Cloud Debugger: Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
++ [Adobe Experience Cloud Debugger: Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 + [Adobe Experience Cloud Debugger: Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)

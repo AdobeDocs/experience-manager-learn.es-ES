@@ -10,7 +10,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 772b595d-2a25-4ae6-8c6e-69a646143147
-source-git-commit: 65244bf81666c20fd5d9d804ad8ea97df8b83d9f
+source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
 workflow-type: tm+mt
 source-wordcount: '1218'
 ht-degree: 2%
@@ -100,7 +100,7 @@ Para obtener la aplicación React:
 >
 > //*********************************
 >
->  AEM // TODO :: Implemente esto siguiendo los pasos de Tutorial sin encabezado de
+>  AEM // TODO Implemente esto siguiendo los pasos de Tutorial sin encabezado de
 >
 >  //*********************************
 >
@@ -488,7 +488,7 @@ Una vez finalizado, al seleccionar el nombre de una persona en la vista Equipos,
 
 ## Pruebe la aplicación
 
-Revise la aplicación [http://localhost:3000/](http://localhost:3000/) y haga clic en _Miembros_ Vínculos. AEM Además, puede añadir más equipos o miembros a Team Alpha añadiendo fragmentos de contenido en las listas de distribución de contenido de la página de la página de la página de la página de la página de la página de la página de la página de la página de.
+Revise la aplicación [http://localhost:3000/](http://localhost:3000/) y haga clic en _Miembros_ Vínculos. Además, puede añadir más equipos o miembros al Alpha AEM de equipos añadiendo fragmentos de contenido en la lista de fragmentos de contenido en la lista de elementos de la lista de elementos de la lista de elementos de la lista de elementos de la lista de elementos de la lista de.
 
 >[!IMPORTANT]
 >
@@ -496,7 +496,7 @@ Revise la aplicación [http://localhost:3000/](http://localhost:3000/) y haga cl
 
 ## Bajo el capó
 
-Abra el del explorador **Herramientas para desarrolladores** > **Red** y _Filtrar_ para `all-teams` solicitud. Observe la solicitud de API de GraphQL `/graphql/execute.json/my-project/all-teams` se crea en `http://localhost:3000` y **NO** frente al valor de `REACT_APP_HOST_URI` (por ejemplo, <https://publish-p123-e456.adobeaemcloud.com>). Las solicitudes se realizan en el dominio de la aplicación React porque [configuración de proxy](https://create-react-app.dev/docs/proxying-api-requests-in-development/#configuring-the-proxy-manually) está habilitado mediante `http-proxy-middleware` módulo.
+Abra el del explorador **Herramientas para desarrolladores** > **Red** y _Filtrar_ para `all-teams` solicitud. Observe la solicitud de API de GraphQL `/graphql/execute.json/my-project/all-teams` se crea en `http://localhost:3000` y **NO** frente al valor de `REACT_APP_HOST_URI`, por ejemplo `<https://publish-pxxx-exxx.adobeaemcloud.com`. Las solicitudes se realizan en el dominio de la aplicación React porque [configuración de proxy](https://create-react-app.dev/docs/proxying-api-requests-in-development/#configuring-the-proxy-manually) está habilitado mediante `http-proxy-middleware` módulo.
 
 
 ![Solicitud de API de GraphQL mediante proxy](assets/graphql-and-external-app/graphql-api-request-via-proxy.png)

@@ -10,16 +10,16 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: c90eea73-bd44-40af-aa98-d766aa572415
-source-git-commit: 51e21c11df63d33a6900fbc331a756f2a7655bcb
+source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '148'
 ht-degree: 6%
 
 ---
 
 # Crear biblioteca de cliente
 
-Crear [biblioteca del cliente](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=es) que incluirá el código para invocar el método `doAjaxSubmitWithFileAttachment` de la `guideBridge` API en el evento &quot;click&quot; del botón identificado por la clase CSS **savebutton**.  Pasamos los datos del formulario adaptable, `fileMap`, y el `mobileNumber` al extremo que escucha en `**/bin/storeafdatawithattachments`
+Crear [biblioteca del cliente](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=es) que incluirá el código para invocar el método `doAjaxSubmitWithFileAttachment` de la `guideBridge` API en el evento &quot;click&quot; del botón identificado por la clase CSS **botón guardar**.  Pasamos los datos del formulario adaptable, `fileMap`, y el `mobileNumber` al extremo que escucha en `**/bin/storeafdatawithattachments`
 
 Una vez guardados los datos del formulario, se genera un ID de aplicación único que se presenta al usuario en un cuadro de diálogo. Al cerrar el cuadro de diálogo, el usuario se dirige al formulario, que le permite recuperar el formulario adaptable guardado mediante el ID de aplicación único.
 
@@ -67,9 +67,9 @@ $(document).ready(function () {
 ```
 
 >[!NOTE]
-> Hemos utilizado [biblioteca javascript de bootbox](http://bootboxjs.com/examples.html) para mostrar el cuadro de diálogo
+> Hemos utilizado [Biblioteca JavaScript de bootbox](https://bootboxjs.com/examples.html) para mostrar el cuadro de diálogo
 
-Las bibliotecas de cliente utilizadas en este ejemplo pueden ser [descargado desde aquí](assets/store-af-with-attachments-client-lib.zip)
+Las bibliotecas de cliente utilizadas en este ejemplo pueden ser [descargado de aquí.](assets/store-af-with-attachments-client-lib.zip)
 
 ## Pasos siguientes
 

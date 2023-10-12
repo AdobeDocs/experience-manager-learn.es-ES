@@ -14,9 +14,9 @@ level: Intermediate
 badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: ec048414-2351-4e3d-b5f1-ade035c07897
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '613'
 ht-degree: 4%
 
 ---
@@ -29,7 +29,7 @@ Obtenga información sobre cómo cargar, pasar parámetros a una solicitud de p�
 
 ## Regla de carga de página
 
-La capa de datos del cliente de Adobe es una capa de datos impulsada por evento. AEM Cuando se carga la capa de datos de la página de la, se almacenará en déclencheur un evento `cmp:show` . En el vídeo, la variable `Launch Library Loaded` La regla de se invoca mediante un evento personalizado. A continuación, se pueden encontrar los fragmentos de código utilizados en el vídeo para el evento personalizado, así como para los elementos de datos.
+La capa de datos del cliente de Adobe es una capa de datos impulsada por evento. AEM Cuando se carga la capa de datos de la página de, se produce un déclencheur de evento `cmp:show` . En el vídeo, la variable `Launch Library Loaded` La regla de se invoca mediante un evento personalizado. A continuación, se pueden encontrar los fragmentos de código utilizados en el vídeo para el evento personalizado y para los elementos de datos.
 
 ### Evento personalizado de página mostrada{#page-event}
 
@@ -81,7 +81,7 @@ window.adobeDataLayer.push(function (dataLayer) {
 });
 ```
 
-Una función personalizada define lo siguiente `pageShownEventHandler`AEM , y escucha eventos emitidos por los componentes principales, deriva la información relevante del componente principal, lo empaqueta en un objeto de evento y almacena en déclencheur el evento de inicio con la información de evento derivada en su carga útil.
+Una función personalizada define la variable `pageShownEventHandler`AEM , y escucha eventos emitidos por los componentes principales, deriva la información relevante del componente principal, lo empaqueta en un objeto de evento y almacena en déclencheur el evento de inicio con la información de evento derivada en su carga útil.
 
 La regla de Launch se activa con el `trigger(...)` función que es __solamente__ disponible dentro de la definición de fragmento de código personalizado de un evento de regla.
 
@@ -162,7 +162,7 @@ window.targetGlobalSettings = {
 ## Vínculos de soporte
 
 + [Documentación de capa de datos del cliente de Adobe](https://github.com/adobe/adobe-client-data-layer/wiki)
-+ [Adobe Experience Cloud Debugger: Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
++ [Adobe Experience Cloud Debugger: Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 + [Adobe Experience Cloud Debugger: Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
 + [Uso de la capa de datos del cliente de Adobe y la documentación de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=es)
-+ [Introducción al Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/debugger-learn/tutorials/experience-platform-debugger/introduction-to-the-experience-platform-debugger.html)
++ [Introducción al Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)

@@ -10,7 +10,7 @@ kt: 9165
 thumbnail: 337960.jpeg
 last-substantial-update: 2022-10-03T00:00:00Z
 exl-id: 40bb55f9-011d-4261-9f44-b1104a591252
-source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
+source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
 workflow-type: tm+mt
 source-wordcount: '263'
 ht-degree: 5%
@@ -31,11 +31,11 @@ Aprenda a impulsar su SEO creando mapas del sitio para AEM Sites.
 
 ### URL absolutas de mapa del sitio{#absolute-sitemap-urls}
 
-AEM El mapa del sitio admite direcciones URL absolutas usando [Asignación de Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html). AEM Para ello, cree nodos de asignación en los servicios de que generan mapas del sitio (normalmente, el servicio de publicación de AEM).
+AEM El mapa del sitio admite direcciones URL absolutas usando [Asignación de Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html). AEM AEM Para ello, cree nodos de asignación en los servicios de que generen mapas del sitio (normalmente el servicio Publicación de).
 
 Ejemplo de definición de nodo de asignación de Sling para `https://wknd.com` se puede definir en `/etc/map/https` como sigue:
 
-| Ruta  | Nombre de la propiedad | Tipo de propiedad | Valor de propiedad |
+| Ruta | Nombre de la propiedad | Tipo de propiedad | Valor de propiedad |
 |------|----------|---------------|-------|
 | `/etc/map/https/wknd-site` | `jcr:primaryType` | Cadena | `nt:unstructured` |
 | `/etc/map/https/wknd-site` | `sling:internalRedirect` | Cadena | `/content/wknd/(.*)` |
@@ -48,7 +48,7 @@ La captura de pantalla siguiente ilustra una configuración similar, pero para `
 
 ### Configuración de OSGi del programador de mapa del sitio
 
-Define el [Configuración de fábrica de OSGi](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) para la frecuencia (usando [expresiones cron](http://www.cronmaker.com)AEM ) los mapas del sitio se vuelven a generar y se almacenan en caché en la caché de la.
+Define el [Configuración de fábrica de OSGi](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) para la frecuencia (usando [expresiones cron](http://www.cronmaker.com/)AEM ) los mapas del sitio se vuelven a generar y se almacenan en caché en la caché de la.
 
 `ui.config/src/main/jcr_content/apps/wknd/osgiconfig/config.publish`
 
@@ -87,7 +87,7 @@ RewriteRule ^/(.*)$ /content/${CONTENT_FOLDER_NAME}/$1 [PT,L]
 
 ## Recursos
 
-+ [AEM Documentación de mapa del sitio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/seo-and-url-management.html?lang=en#building-an-xml-sitemap-on-aem)
++ [AEM Documentación de mapa del sitio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html?lang=en)
 + [Documentación de mapa del sitio Apache Sling](https://github.com/apache/sling-org-apache-sling-sitemap#readme)
 + [Documentación de mapa del sitio Sitemap.org](https://www.sitemaps.org/protocol.html)
 + [Documentación del archivo de índice de mapa del sitio Sitemap.org](https://www.sitemaps.org/protocol.html#index)
