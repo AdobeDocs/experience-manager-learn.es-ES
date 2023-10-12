@@ -10,17 +10,19 @@ kt: 13881
 thumbnail: KT-13881.png
 doc-type: article
 last-substantial-update: 2023-10-10T00:00:00Z
-source-git-commit: d4835fac83f06482c1252ae962e867de06d326e8
+exl-id: 7238f091-4101-40b5-81d9-87b4d57ccdb2
+source-git-commit: 549b444d0a195fb9b5b8fd7ff48cf133746e5fd2
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '800'
 ht-degree: 0%
 
 ---
 
-
 # AEM Autenticación de seguridad de la capa de transporte mutuo (mTLS) desde el punto de vista de la seguridad de
 
 AEM Obtenga información sobre cómo realizar llamadas HTTPS desde el punto de vista de la seguridad a las API web que requieren autenticación de Seguridad de capa de transporte mutuo (mTLS).
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424855?quality=12&learn=on)
 
 La autenticación mTLS o TLS bidireccional mejora la seguridad del protocolo TLS al requerir **el cliente y el servidor para autenticarse mutuamente**. Esta autenticación se realiza mediante certificados digitales. Se utiliza comúnmente en escenarios donde la seguridad sólida y la verificación de identidad son críticas.
 
@@ -221,3 +223,9 @@ private KeyStore getAEMTrustStore(KeyStoreService keyStoreService, ResourceResol
 Un enfoque convencional para invocar de forma eficaz las API de mTLS con certificados privados implica la modificación del repositorio de claves JVM. Se logra importando los certificados privados mediante Java™ [keytool](https://docs.oracle.com/en/java/javase/11/tools/keytool.html#GUID-5990A2E4-78E3-47B7-AE75-6D1826259549) comando.
 
 AEM Sin embargo, este método no está alineado con las prácticas recomendadas de seguridad y ofrece una opción superior a través de la utilización del **Almacenes de claves específicos del usuario y almacén de confianza global** y [KeyStoreService](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/adobe/granite/keystore/KeyStoreService.html).
+
+## Paquete de soluciones
+
+El proyecto Node.js de muestra degradado en el vídeo se puede descargar desde [aquí](assets/internal-api-call/REST-APIs.zip).
+
+AEM El código de servlet de la está disponible en el sitio web del proyecto WKND Sites `tutorial/web-api-invocation` rama, [consulte](https://github.com/adobe/aem-guides-wknd/tree/tutorial/web-api-invocation/core/src/main/java/com/adobe/aem/guides/wknd/core/servlets).
