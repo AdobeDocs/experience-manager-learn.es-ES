@@ -7,7 +7,8 @@ kt: 13490
 topic: Development
 role: User
 level: Intermediate
-source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
+exl-id: 489970a6-1b05-4616-84e8-52b8c87edcda
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 0%
@@ -105,4 +106,3 @@ export default function Contact(){
 ```
 
 El código anterior utiliza componentes html nativos asignados a los componentes utilizados en el formulario adaptable. Por ejemplo, se asigna el componente de formulario adaptable de entrada de texto al componente TextField. Los componentes nativos utilizados en el artículo [se puede descargar desde aquí](./assets/native-components.zip)
-

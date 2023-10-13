@@ -12,11 +12,11 @@ jira: KT-13156
 thumbnail: KT-13156.jpeg
 badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service" before-title="false"
-exl-id: b5182d35-ec38-4ffd-ae5a-ade2dd3f856d
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+exl-id: 47df99e6-6418-43c8-96fe-85e3c47034d6
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '1354'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -61,7 +61,7 @@ Existen modelos genéricos y de sectores específicos como, por ejemplo, minoris
 
 Obtenga información sobre el esquema XDM y conceptos relacionados, como grupos de campos, tipos, clases y tipos de datos de [Información general del sistema XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html).
 
-El [Información general del sistema XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) es un bueno recurso para obtener información sobre el esquema XDM y conceptos relacionados, como grupos de campos, tipos, clases y tipos de datos. Proporciona una comprensión completa del modelo de datos XDM y cómo crear y administrar esquemas XDM para estandarizar los datos en la empresa. Explórela para comprender mejor el esquema XDM y cómo puede beneficiar los procesos de recopilación y administración de datos.
+El [Información general del sistema XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) es un excelente recurso para obtener información sobre el esquema XDM y conceptos relacionados, como grupos de campos, tipos, clases y tipos de datos. Proporciona una comprensión completa del modelo de datos XDM y cómo crear y administrar esquemas XDM para estandarizar los datos en la empresa. Explórela para comprender mejor el esquema XDM y cómo puede beneficiar los procesos de recopilación y administración de datos.
 
 ## Crear secuencia de datos: Experience Platform
 
@@ -87,7 +87,7 @@ Al crear y publicar la biblioteca de etiquetas utilizando **Flujo de publicació
 
 >[!TIP]
 >
->El elemento de datos y el código de evento de regla que se muestran en el vídeo están disponibles para su referencia, **expanda el siguiente elemento de acordeón**. Sin embargo, si NO utiliza la capa de datos del cliente de Adobe, debe modificar el siguiente código, pero se sigue aplicando el concepto de definir los elementos de datos y utilizarlos en la definición de regla.
+>El elemento de datos y el código de evento de regla que se muestran en el vídeo están disponibles para su referencia, **expanda el elemento de acordeón siguiente**. Sin embargo, si NO utiliza la capa de datos del cliente de Adobe, debe modificar el siguiente código, pero se sigue aplicando el concepto de definir los elementos de datos y utilizarlos en la definición de regla.
 
 
 +++ Elemento de datos y código de regla-evento
@@ -218,7 +218,7 @@ AEM Después de configurar el SDK web con el SDK de, sobre todo en el sitio WKND
 ## Recursos adicionales
 
 + [Uso de la capa de datos del cliente de Adobe con los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html?lang=es)
-+ [Integración de etiquetas y etiquetas de recopilación de datos de Experience PlatformAEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
++ [Integración de etiquetas y etiquetas de recopilación de datos de Experience PlatformAEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/experience-platform-data-collection-tags/overview.html?lang=es)
 + [Información general sobre Adobe Experience Platform Web SDK y Edge Network](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)
 + [Tutoriales de recopilación de datos](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html)
-+ [Información general de Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)
++ [información general de Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)

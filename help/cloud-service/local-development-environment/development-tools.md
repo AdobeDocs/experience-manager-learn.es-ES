@@ -13,7 +13,7 @@ exl-id: 6fb3199a-02c9-48bc-a6fa-1f767cfd2f2a
 source-git-commit: 7a240374c42e2555be25e682c803f51f442fb7f7
 workflow-type: tm+mt
 source-wordcount: '1483'
-ht-degree: 8%
+ht-degree: 11%
 
 ---
 
@@ -165,7 +165,7 @@ AEM AEM Apache Maven es la herramienta de línea de comandos de código abierto 
 >[!TAB Descargue e instale Maven]
 
 1. [Descargar Maven](https://maven.apache.org/download.cgi)
-1. [Instalar Maven](https://maven.apache.org/install.html)
+1. [Instalar Maven](https://maven.apache.org/install.html?lang=es)
 1. Abra el terminal/símbolo del sistema
 1. Compruebe que Maven está instalado mediante el comando: `$ mvn -v`
 

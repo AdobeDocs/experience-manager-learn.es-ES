@@ -10,13 +10,13 @@ jira: KT-13453
 thumbnail: KT-13453.jpeg
 doc-type: article
 last-substantial-update: 2023-06-07T00:00:00Z
-source-git-commit: 6b5c755bd8fe6bbf497895453b95eb236f69d5f6
+exl-id: 87143cf9-e932-4ad6-afe2-cce093c520f4
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 0%
 
 ---
-
 
 # Columnas de cuadrícula personalizadas
 
@@ -202,13 +202,13 @@ Ejemplo de fragmento de contenido JSON que está disponible como elemento del `f
 }
 ```
 
-Si se requieren otros datos para rellenar la columna personalizada, se pueden realizar solicitudes HTTP a AEM Author para recuperar los datos.
+AEM Si se requieren otros datos para rellenar la columna personalizada, se pueden realizar solicitudes HTTP a Autor para recuperar los datos.
 
 >[!IMPORTANT]
 >
-> Asegúrese de que la instancia de autor de AEM esté configurada para permitir [solicitudes de origen cruzado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html) desde el origen en el que se ejecuta la aplicación AppBuilder. Los orígenes permitidos incluyen `https://localhost:9080`, el origen de fase de AppBuilder y el origen de producción de AppBuilder.
+> AEM Asegúrese de que la instancia de autor de la esté configurada para permitir [solicitudes de origen cruzado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html) desde el origen en el que se ejecuta la aplicación AppBuilder. Los orígenes permitidos incluyen `https://localhost:9080`, el origen de fase de AppBuilder y el origen de producción de AppBuilder.
 >
-> Como alternativa, la extensión de puede llamar a un personalizado [Acción de AppBuilder](../../runtime-action.md) que realiza la solicitud al Autor de AEM en nombre de la extensión.
+> Como alternativa, la extensión de puede llamar a un personalizado [Acción de AppBuilder](../../runtime-action.md) AEM que realiza la solicitud al autor de la en nombre de la extensión de.
 
 
 ```javascript

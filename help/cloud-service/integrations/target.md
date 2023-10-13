@@ -12,8 +12,8 @@ jira: KT-12433
 thumbnail: KT-12433.jpeg
 badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM sin encabezado as a Cloud Service" before-title="false"
-exl-id: 60a3e18a-090f-4b0e-8ba0-d4afd30577dd
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+exl-id: be886c64-9b8e-498d-983c-75f32c34be4b
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '1679'
 ht-degree: 1%
@@ -28,11 +28,11 @@ AEM Obtenga información sobre cómo integrar sin encabezado con Adobe Target AE
 
 AEM El tutorial trata sobre los pasos necesarios para configurar la configuración de la aplicación y de Adobe Target:
 
-1. [Crear la configuración de IMS de Adobe para Adobe Target](#adobe-ims-configuration) en AEM Author
-2. [Crear Cloud Service de Adobe Target](#adobe-target-cloud-service) en AEM Author
-3. [Aplicar el Cloud Service de Adobe Target a las carpetas de AEM Assets](#configure-asset-folders) en AEM Author
+1. [Crear la configuración de IMS de Adobe para Adobe Target](#adobe-ims-configuration) AEM en el
+2. [Crear Cloud Service de Adobe Target](#adobe-target-cloud-service) AEM en el
+3. [Aplicar el Cloud Service de Adobe Target a las carpetas de AEM Assets](#configure-asset-folders) AEM en el
 4. [Permiso del Cloud Service de Adobe Target](#permission) en Adobe Admin Console
-5. [Exportar fragmentos de contenido](#export-content-fragments) de Autor de AEM a Target
+5. [Exportar fragmentos de contenido](#export-content-fragments) AEM de autor de la a destino
 6. [Crear una actividad mediante ofertas de fragmentos de contenido](#activity) en Adobe Target
 7. [Crear una secuencia de datos de Experience Platform](#datastream-id) en Experience Platform
 8. [AEM Integración de la personalización en una aplicación sin encabezado basada en React](#code) mediante el SDK web de Adobe.
@@ -60,11 +60,11 @@ El Cloud Service de Adobe Target, configurado en una configuración según el co
 
 +++Amplíe para obtener instrucciones paso a paso
 
-1. Iniciar sesión en __Servicio de AEM Author__ como administrador de DAM
+1. Iniciar sesión en __AEM Servicio de autor de__ como administrador de DAM
 1. Vaya a __Recursos > Archivos__, busque la carpeta de recursos que tenga el `/conf` aplicado a
 1. Seleccione la carpeta de recursos y seleccione __Propiedades__ desde la barra de acciones superior
 1. Seleccione la pestaña __Cloud Services__
-1. Asegúrese de que la Configuración de nube está establecida en la configuración según el contexto (`/conf`) que contiene la configuración de Cloud Services de Adobe Target.
+1. Asegúrese de que la Configuración de nube está establecida en la configuración según el contexto (`/conf`) que contiene la configuración de Cloud Service de Adobe Target.
 1. Seleccionar __Adobe Target__ desde el __Configuraciones del Cloud Service__ desplegable.
 1. Seleccionar __Guardar y cerrar__ en la parte superior derecha
 
@@ -99,7 +99,7 @@ Fragmentos de contenido que existen en [jerarquía de carpetas de AEM Assets con
 
 +++Amplíe para obtener instrucciones paso a paso
 
-1. Iniciar sesión en __AEM Author__ como usuario DAM
+1. Iniciar sesión en __AEM Autor de__ como usuario DAM
 1. Vaya a __Recursos > Archivos__ y busque Fragmentos de contenido para exportar como JSON a Target en la carpeta &quot;Adobe Target habilitado&quot;
 1. Seleccione los fragmentos de contenido que desea exportar a Adobe Target
 1. Seleccionar __Exportar a ofertas de Adobe Target__ desde la barra de acciones superior
@@ -116,7 +116,7 @@ Fragmentos de contenido que existen en [jerarquía de carpetas de AEM Assets con
 1. Seleccione el __Tipo__ y seleccionar. __Fragmentos de contenido__
 1. AEM Compruebe que el fragmento de contenido exportado desde el que aparece la lista aparece en la lista.
    + Pase el ratón sobre la oferta y seleccione __Ver__ botón
-   + Revise la __Información de oferta__ y vea el __AEM vínculo profundo de la__ que abre el fragmento de contenido directamente en el servicio de AEM Author
+   + Revise la __Información de oferta__ y vea el __AEM vínculo profundo de la__ AEM que abre el fragmento de contenido directamente en el servicio de autor de
 
 +++
 
@@ -147,7 +147,7 @@ En este ejemplo, utilizamos una actividad A/B simple, aunque se puede utilizar c
    + En este ejemplo, establezca como objetivo una ubicación personalizada denominada `wknd-adventure-promo`
 1. En __Contenido__ seleccione el contenido predeterminado y seleccione __Cambiar fragmento de contenido__
 1. Seleccione el fragmento de contenido exportado que servirá para esta experiencia y seleccione __Listo__
-1. Revise el JSON de oferta de fragmento de contenido en el área de texto Contenido; es el mismo JSON disponible en el servicio de AEM Author a través de la acción Vista previa del fragmento de contenido.
+1. AEM Revise el JSON de oferta de fragmento de contenido en el área de texto Contenido; se trata del mismo JSON disponible en el servicio de autor a través de la acción de previsualización de fragmento de contenido.
 1. En el carril izquierdo, añada una experiencia y seleccione una oferta de fragmento de contenido diferente para ofrecer
 1. Seleccionar __Siguiente__ y configure las reglas de segmentación según sea necesario para la actividad
    + En este ejemplo, deje la prueba A/B como una división manual al 50/50.

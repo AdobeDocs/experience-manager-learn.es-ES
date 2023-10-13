@@ -8,7 +8,8 @@ level: Beginner
 version: Cloud Service
 topic: Integrations
 kt: 13717
-source-git-commit: 52c8d96a03b4d6e4f2a0a3c92f4307203e236417
+exl-id: ae8104fa-7af2-49c2-9e6b-704152d49149
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 0%
@@ -30,5 +31,3 @@ Para que este caso de uso funcione en su sistema, implemente los siguientes recu
 * [Importar el formulario adaptable de ejemplo](./assets/credit-applications-af.zip)
 * [Importar la biblioteca de cliente](./assets/client-lib.zip)
 * [Previsualización del formulario](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/creditapplications/jcr:content?wcmmode=disabled). Introduzca un correo electrónico válido y haga clic en el botón Guardar. Los datos del formulario deben almacenarse en Azure Storage y se enviará un correo electrónico con un vínculo al formulario guardado a la dirección de correo electrónico especificada.
-
-

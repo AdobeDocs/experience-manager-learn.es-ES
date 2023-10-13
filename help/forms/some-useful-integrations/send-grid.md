@@ -8,7 +8,8 @@ topic: Development
 role: Developer
 level: Intermediate
 last-substantial-update: 2023-07-14T00:00:00Z
-source-git-commit: cc24ebca488ea286e8a4605edfb39420c1c10022
+exl-id: 62b73f4b-69d8-4ede-9d57-3d6472d25d5a
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 1%
@@ -76,4 +77,3 @@ La carga útil de ejemplo para el servicio es la siguiente: Reemplace los valore
 Asegúrese de que la variable `template_id` corresponde al ID de la plantilla de correo electrónico dinámica SendGrid, y las direcciones de correo electrónico son válidas y verificadas por SendGrid. Los valores del `personalizations` Esta sección le permite personalizar el correo electrónico mediante los datos introducidos por el usuario desde el formulario adaptable.
 
 Al seguir estos pasos y personalizar la carga útil proporcionada, puede probar de forma eficaz la integración de las plantillas dinámicas de SendGrid con AEM Forms.
-

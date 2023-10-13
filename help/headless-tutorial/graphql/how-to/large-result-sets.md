@@ -10,8 +10,8 @@ doc-type: Article
 last-substantial-update: 2023-04-14T00:00:00Z
 jira: KT-13102
 thumbnail: 3418381.jpeg
-exl-id: f47ce344-310f-4b4c-9340-b0506289f468
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+exl-id: 304b4d80-27bd-4336-b2ff-4b613a30f712
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 1%
@@ -99,7 +99,7 @@ La respuesta JSON resultante contiene la segunda, tercera, cuarta y quinta Avent
 
 ### Consulta paginada
 
-La paginación basada en cursor, disponible en consultas paginadas, implica utilizar un cursor (una referencia a un registro específico) para recuperar el siguiente conjunto de resultados. Este método es más eficaz, ya que evita la necesidad de explorar todos los registros anteriores para recuperar el subconjunto de datos requerido. Las consultas paginadas son buenas para recorrer en iteración grandes conjuntos de resultados desde el principio, hasta algún punto del medio o hasta el final. Enumerar consultas, usar `limit` y `offset` proporciona un enfoque directo que especifica el punto de partida (`offset`) y el número de registros que se van a recuperar (`limit`). Este método permite seleccionar un subconjunto de resultados desde cualquier lugar dentro del conjunto de resultados completo, como saltar a una página de resultados específica. Aunque es fácil de implementar, puede ser lento e ineficiente cuando se trata de resultados grandes, ya que la recuperación de muchos registros requiere el escaneo a través de todos los registros anteriores. Este método también puede provocar problemas de rendimiento cuando el valor de desplazamiento es alto, ya que puede requerir la recuperación y el descarte de muchos resultados.
+La paginación basada en cursor, disponible en consultas paginadas, implica utilizar un cursor (una referencia a un registro específico) para recuperar el siguiente conjunto de resultados. Este método es más eficaz, ya que evita la necesidad de explorar todos los registros anteriores para recuperar el subconjunto de datos requerido. Las consultas paginadas son ideales para repetir grandes conjuntos de resultados desde el principio, hasta algún punto en el medio o hasta el final. Enumerar consultas, usar `limit` y `offset` proporciona un enfoque directo que especifica el punto de partida (`offset`) y el número de registros que se van a recuperar (`limit`). Este método permite seleccionar un subconjunto de resultados desde cualquier lugar dentro del conjunto de resultados completo, como saltar a una página de resultados específica. Aunque es fácil de implementar, puede ser lento e ineficiente cuando se trata de resultados grandes, ya que la recuperación de muchos registros requiere el escaneo a través de todos los registros anteriores. Este método también puede provocar problemas de rendimiento cuando el valor de desplazamiento es alto, ya que puede requerir la recuperación y el descarte de muchos resultados.
 
 #### GraphQL query
 
