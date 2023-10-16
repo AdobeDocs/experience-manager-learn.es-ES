@@ -9,9 +9,9 @@ role: Developer
 level: Intermediate
 exl-id: f1f2cacc-9ec4-46d6-a6af-dac3f663de78
 last-substantial-update: 2021-02-07T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 5fc4a11b7f7f26a62f49cc8614e6bf699cc1697a
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '636'
 ht-degree: 2%
 
 ---
@@ -47,14 +47,11 @@ Para crear su primer archivo swagger/OpenAPI, siga las [Documentación de OpenAP
 >[!NOTE]
 > AEM Forms admite la especificación OpenAPI versión 2.0 (FKA Swagger).
 
-Utilice el [editor de swagger](https://editor.swagger.io/) para crear el archivo swagger y describir las operaciones que recuperan todos los países y elementos secundarios del país o estado. El archivo swagger se puede crear en formato JSON o YAML. El archivo Swagger completado se puede descargar desde [aquí](assets/swagger-files.zip)
-Los archivos swagger describen la siguiente API de REST
-* [Obtener todos los países](http://api.geonames.org/countryInfoJSON?username=yourusername)
-* [Obtener elementos secundarios del objeto Geoname](http://api.geonames.org/childrenJSON?formatted=true&amp;geonameId=6252001&amp;username=yourusername)
+Utilice el [editor de swagger](https://editor.swagger.io/) para crear el archivo swagger y describir las operaciones que recuperan todos los países y elementos secundarios del país o estado. El archivo swagger se puede crear en formato JSON o YAML.
 
 ## Creación de fuentes de datos
 
-AEM Para integrar la integración de/AEM Forms con aplicaciones de terceros, es necesario [crear fuente de datos](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) en la configuración de cloud services. Utilice el [archivos swagger](assets/swagger-files.zip) para crear las fuentes de datos.
+AEM Para integrar la integración de/AEM Forms con aplicaciones de terceros, es necesario [crear fuente de datos](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) en la configuración de cloud services. Utilice el [archivos swagger](assets/geonames-swagger-files.zip) para crear las fuentes de datos.
 Deberá crear 2 fuentes de datos (una para recuperar todos los países y otra para obtener los elementos secundarios)
 
 
@@ -84,3 +81,13 @@ Es necesario rellenar la lista desplegable Estado/Provincia en función del paí
 
 Agregue 2 listas desplegables denominadas condados y ciudades en el formulario para enumerar los condados y ciudades en función del país y el estado/provincia seleccionados.
 ![ejercitarse](assets/cascading-drop-down-exercise.png)
+
+
+### Recursos de muestra
+
+Puede descargar los siguientes recursos para empezar a crear el ejemplo de lista desplegable en cascada. Los archivos swagger completados se pueden descargar desde [aquí](assets/geonames-swagger-files.zip)
+Los archivos swagger describen la siguiente API de REST
+* [Obtener todos los países](http://api.geonames.org/countryInfoJSON?username=yourusername)
+* [Obtener elementos secundarios del objeto Geoname](http://api.geonames.org/children?formatted=true&amp;geonameId=6252001&amp;username=yourusername)
+
+El completado [El modelo de datos de formulario se puede descargar desde aquí](assets/geonames-api-form-data-model.zip)
