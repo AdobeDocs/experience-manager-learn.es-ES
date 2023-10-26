@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 0c95df469885b84aa7585975a89811efab0ae5e7
+source-git-commit: bca52c7543b35fc20a782dfd3f2b2dc81bee4cde
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1054'
 ht-degree: 22%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 22%
    + [Sling](./underlying-technology/introduction-sling.md)
    + [Servicios de creación y publicación](./underlying-technology/introduction-author-publish.md)
    + [Dispatcher](./underlying-technology/introduction-dispatcher.md)
-+ Servicios de entrega perimetral {#edge-delivery-services}
++ Edge Delivery Services {#edge-delivery-services}
    + [Complemento de Sidekick de AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/edge-delivery-services/sidekick-plugin.html){target=_blank}
 + Cloud Manager {#cloud-manager}
    + [Programas](./cloud-manager/programs.md)
@@ -155,6 +155,12 @@ ht-degree: 22%
       + [Conexiones SQL con DataSourcePool](./networking/examples/sql-datasourcepool.md)
       + [Conexiones SQL con API de SQL Java](./networking/examples/sql-java-apis.md)
       + [Servicio de correo electrónico](./networking/examples/email-service.md)
++ Seguridad {#security}
+   + Reglas de filtro de tráfico, incluidas las reglas WAF{#traffic-filter-and-waf-rules}
+      + [Información general](./security/traffic-filter-rules/overview.md)
+      + [Cómo realizar la configuración](./security/traffic-filter-rules/how-to-setup.md)
+      + [Ejemplos y análisis de resultados](./security/traffic-filter-rules/examples-and-analysis.md)
+      + [Prácticas recomendadas](./security/traffic-filter-rules/best-practices.md)
 + Migración {#migration}
    + [Herramienta de transferencia de contenido](./migration/content-transfer-tool.md)
    + [Importación masiva de recursos](./migration/bulk-import.md)
