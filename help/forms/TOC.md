@@ -8,9 +8,9 @@ breadcrumb-title: Tutoriales de AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: bac637440d1cc5af0e0abb119ca2f4e93f69cf34
+source-git-commit: 5e761ef180182b47c4fd2822b0ad98484db23aab
 workflow-type: tm+mt
-source-wordcount: '1851'
+source-wordcount: '1874'
 ht-degree: 2%
 
 ---
@@ -48,6 +48,7 @@ ht-degree: 2%
    + [Integración con ServiceNow](some-useful-integrations/service-now.md)
    + [Envío de correos electrónicos con SendGrid](some-useful-integrations/send-grid.md)
    + [Almacenar datos de formulario en Azure Storage](some-useful-integrations/store-form-data-in-azure-storage.md)
+   + [Rellenar el formulario con Azure Blob](some-useful-integrations/fetch-form-data-from-azure-storage.md)
 + Creando paquete OSGi {#creating-your-first-osgi-bundle}
    + [1 - Configurar el entorno](creating-your-first-osgi-bundle/create-your-first-osgi-bundle.md)
    + [2 - Crear servicio OSGi](creating-your-first-osgi-bundle/create-osgi-service.md)
@@ -142,6 +143,12 @@ ht-degree: 2%
    + [9 - Crear el formulario principal](store-and-retrieve-af-with-2fa/create-the-main-adaptive-form.md)
    + [10 - Crear el formulario Mi cuenta](store-and-retrieve-af-with-2fa/create-the-myaccount-form.md)
    + [11 - Implementar la muestra](store-and-retrieve-af-with-2fa/deploy-this-sample.md)
++ Importación de datos desde archivo PDF{#import-data-from-pdf-form}
+   + [1 - Introducción](import-data-from-pdf-form/introduction.md)
+   + [2 - Crear formulario adaptable](import-data-from-pdf-form/create-adaptive-form.md)
+   + [3 - Crear servicio OSGi](import-data-from-pdf-form/create-osgi-service.md)
+   + [4 - Rellenar formulario adaptable](import-data-from-pdf-form/populate-adaptive-form.md)
+   + [5 - Prueba de la solución](import-data-from-pdf-form/test-the-solution.md)
 + Exportación de datos enviados en formato CSV{#export-submitted-data-csv-format}
    + [Exportar datos enviados](export-submitted-data-csv-format/export-submitted-data-csv.md)
 + Formularios HTML5{#html5-forms}
