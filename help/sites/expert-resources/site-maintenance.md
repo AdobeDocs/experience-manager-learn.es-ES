@@ -6,11 +6,12 @@ level: Beginner, Intermediate
 topic: Administration
 audience: author, marketer, developer
 feature: Learn From Your Peers
+jira: KT-14255
 exl-id: 37ee3234-f91c-4f0a-b0b7-b9167e7847a9
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 3752e22455020b58d23524f7e6a99414e773422d
 workflow-type: tm+mt
 source-wordcount: '1084'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
 
@@ -19,7 +20,7 @@ ht-degree: 5%
 AEM Existen tres opciones a la hora de instalar y mantener una instancia de
 
 * AEMaaCS (servicio en la nube): el sistema siempre está encendido, actualizado y se adapta dinámicamente según lo necesite
-* Adobe Managed Services, donde los ingenieros de servicio de atención al cliente de Adobe realizan todo el mantenimiento diario, semanal o mensual y se aseguran de que todos los paquetes de servicio estén instalados y de que el sistema esté siempre seguro y funcione sin problemas
+* Adobe Managed Services, donde los ingenieros de servicio al cliente de Adobe realizan todo el mantenimiento diario, semanal o mensual y se aseguran de que todos los paquetes de servicio estén instalados y de que el sistema esté siempre seguro y funcione sin problemas
 * ejecutarlo en línea, donde tiene que encargarse de todo el sistema, incluidas las copias de seguridad, las actualizaciones y la seguridad.
 
 Si decide implementar su propio sistema de forma local, tenga en cuenta lo siguiente para garantizar que dispone de un sistema seguro y eficaz. AEM Además de los artículos de &quot;cuidado y alimentación&quot;, este documento también señalará varios artículos que los desarrolladores deben tener en cuenta para ayudar a mantener el sistema funcionando bien.
@@ -50,7 +51,7 @@ Cada actualización del repositorio crea una nueva revisión de contenido. Como 
 
 Purgue los binarios de Lucene y reduzca el requisito de tamaño del almacén de datos en ejecución.
 
-#### [Basura del almacén de datos](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html)
+#### [Basura del almacén de datos](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html?lang=es)
 
 AEM Cuando se elimina un recurso en, la referencia al registro del almacén de datos subyacente se puede eliminar de la jerarquía de nodos, pero el registro del almacén de datos en sí permanece. Este registro de almacén de datos al que no se hace referencia pasa a ser &quot;basura&quot; y no es necesario conservarlo. En los casos en los que existen una serie de recursos sin referencia, es beneficioso deshacerse de ellos para, conservar el espacio, optimizar la copia de seguridad y el rendimiento de mantenimiento del sistema de archivos.
 
@@ -94,8 +95,8 @@ Piense con anticipación y vea lo que podría reutilizarse. ¿Un pie de página?
 
 ## General
 
-AEM Manténgase al día de los cambios a través del aprendizaje continuo, no se quede atascado en el pasado. Uso [Experience League](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=en) y [Adobe Digital Learning Services (ADLS)](https://learning.adobe.com/) para perfeccionar sus habilidades.
+AEM Manténgase al día de los cambios a través del aprendizaje continuo, no se quede atascado en el pasado. Uso [Experience League](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=es) y [Adobe Digital Learning Services (ADLS)](https://learning.adobe.com/) para perfeccionar sus habilidades.
 
 ## Conclusión
 
-AEM Puede ser un sistema grande, y se necesitan muchos tipos de personas para que &quot;cante&quot;. Desde administradores hasta desarrolladores (tanto desarrolladores de Java front-end como hardcore) y autores: ¡hay algo para todos! AEM Y si no tienes ganas de manejar el día a día de la Administración, siempre hay AMS y as a Cloud Service de la.
+AEM Puede ser un sistema grande, y se necesitan muchos tipos de personas para hacerlo &quot;cantar&quot;. Desde administradores hasta desarrolladores (tanto desarrolladores de Java front-end como hardcore) y autores: ¡hay algo para todos! AEM Y si no tienes ganas de manejar el día a día de la Administración, siempre hay AMS y as a Cloud Service de la.

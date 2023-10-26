@@ -7,10 +7,10 @@ topic: Security, Administration, Architecture
 role: Admin, Architect
 level: Intermediate
 doc-type: Tutorial
-last-substantial-update: 2023-10-20T00:00:00Z
+last-substantial-update: 2023-10-26T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: fa28ae232a5353eb34788fd2abe8402b42a62f66
+source-git-commit: 3752e22455020b58d23524f7e6a99414e773422d
 workflow-type: tm+mt
 source-wordcount: '1510'
 ht-degree: 0%
@@ -86,7 +86,7 @@ Analicemos los resultados de la prueba. `publish-auth-requests` descargando los 
 
 - Copie el archivo de registro descargado (por ejemplo, `publish_cdn_2023-10-24.log` en la captura de pantalla siguiente) en la `logs/dev` del proyecto de herramienta Panel elástico.
 
-  ![Carpeta de registros de herramientas ELK](./assets/elk-tool-logs-folder.png)
+  ![Carpeta de registros de herramientas ELK](./assets/elk-tool-logs-folder.png){width="800" zoomable="yes"}
 
 - Actualice la página Herramienta de tablero elástico.
    - En la parte superior **Filtro global** , edite la sección `aem_env_name.keyword` filtre y seleccione la `dev` valor de entorno.
