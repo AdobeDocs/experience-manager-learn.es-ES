@@ -10,7 +10,7 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-20T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: bca52c7543b35fc20a782dfd3f2b2dc81bee4cde
+source-git-commit: fa28ae232a5353eb34788fd2abe8402b42a62f66
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Prácticas recomendadas para reglas de filtro de tráfico, incluidas las reglas WAF
 
-Conozca las prácticas recomendadas para las reglas del Filtro de tráfico, incluidas las reglas WAF. Es importante señalar que las prácticas recomendadas descritas en este artículo no son exhaustivas y no pretenden sustituir a sus propias políticas y procedimientos de seguridad.
+Conozca las prácticas recomendadas para las reglas de filtro de tráfico, incluidas las reglas WAF. Es importante señalar que las prácticas recomendadas descritas en este artículo no son exhaustivas y no pretenden sustituir a sus propias políticas y procedimientos de seguridad.
 
 ## Prácticas recomendadas generales
 
@@ -33,7 +33,7 @@ Conozca las prácticas recomendadas para las reglas del Filtro de tráfico, incl
 - Para bloquear el tráfico malintencionado que pueda detectar después del análisis, agregue las reglas adicionales. Por ejemplo, ciertas direcciones IP que han estado atacando el sitio.
 - La creación, la implementación y el análisis de reglas deben ser un proceso continuo e iterativo. No es una actividad única.
 
-## Prácticas recomendadas para las reglas de filtro de tráfico
+## Prácticas recomendadas para reglas de filtros de tráfico
 
 AEM Habilite las siguientes reglas de filtro de tráfico para su proyecto de. Sin embargo, los valores deseados para `rateLimit` y `clientCountry` las propiedades deben determinarse en colaboración con el equipo de seguridad.
 

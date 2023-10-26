@@ -10,7 +10,7 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-20T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: bca52c7543b35fc20a782dfd3f2b2dc81bee4cde
+source-git-commit: fa28ae232a5353eb34788fd2abe8402b42a62f66
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 3%
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 # Cómo configurar las reglas del filtro de tráfico, incluidas las reglas WAF
 
-Aprender **cómo realizar la configuración** Reglas de filtro de tráfico, incluidas las reglas de WAF. Obtenga información sobre la creación, la implementación, las pruebas y el análisis de resultados.
+Aprender **cómo realizar la configuración** reglas de filtro de tráfico, incluidas las reglas WAF. Obtenga información sobre la creación, la implementación, las pruebas y el análisis de resultados.
 
 ## Configuración
 
@@ -118,7 +118,7 @@ Para probar las reglas, hay varias herramientas de terceros disponibles y es pos
 
 Después de crear, implementar y probar las reglas, puede analizar los resultados mediante **Elasticsearch, Logstash y Kibana (ELK)** herramientas de tablero. Puede analizar los registros de CDN de AEM CS, lo que le permite visualizar los resultados en forma de varios gráficos y diagramas.
 
-Las herramientas de tablero se pueden clonar directamente desde el [AEMCS-CDN-Log-Analysis-ELK-Tool Repositorio de GitHub](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) y siga los pasos para instalar y cargar el **Reglas de filtro de tráfico (incluido WAF)** panel.
+Las herramientas de tablero se pueden clonar directamente desde el [AEMCS-CDN-Log-Analysis-ELK-Tool Repositorio de GitHub](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) y siga los pasos para instalar y cargar el **reglas de filtro de tráfico (incluido WAF)** panel.
 
 - Después de cargar el tablero de muestra, la página de la herramienta Tablero elástico debería tener el siguiente aspecto:
 
@@ -131,4 +131,4 @@ Las herramientas de tablero se pueden clonar directamente desde el [AEMCS-CDN-Lo
 
 ## Siguiente paso
 
-Obtenga información sobre cómo declarar reglas de filtro de tráfico, incluidas las reglas de WAF, en la [Ejemplos y análisis de resultados](./examples-and-analysis.md) AEM Uso del proyecto de WKND Sites de la.
+Obtenga información sobre cómo declarar reglas de filtro de tráfico, incluidas las reglas WAF, en la [Ejemplos y análisis de resultados](./examples-and-analysis.md) AEM Uso del proyecto de WKND Sites de la.

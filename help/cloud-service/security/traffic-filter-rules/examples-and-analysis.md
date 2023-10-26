@@ -10,7 +10,7 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-20T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: bca52c7543b35fc20a782dfd3f2b2dc81bee4cde
+source-git-commit: fa28ae232a5353eb34788fd2abe8402b42a62f66
 workflow-type: tm+mt
 source-wordcount: '1510'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Obtenga información sobre cómo declarar varios tipos de reglas de filtro de tráfico y analizar los resultados mediante los registros de CDN y las herramientas de tablero de Adobe Experience Manager as a Cloud Service (AEM CS).
 
-En esta sección, se exploran ejemplos prácticos de reglas de filtro de tráfico, incluidas las reglas WAF. Aprenderá a registrar, permitir y bloquear solicitudes en función del URI (o la ruta), la dirección IP, el número de solicitudes y los distintos tipos de ataques mediante [AEM Proyecto de sitios de WKND](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project).
+En esta sección, se exploran ejemplos prácticos de reglas de filtros de tráfico, incluidas las reglas WAF. Aprenderá a registrar, permitir y bloquear solicitudes en función del URI (o la ruta), la dirección IP, el número de solicitudes y los distintos tipos de ataques mediante [AEM Proyecto de sitios de WKND](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project).
 
 Además, aprenderá a utilizar las herramientas de tablero que incorporan registros de CDN de AEM CS para visualizar métricas esenciales a través de los tableros de muestra proporcionados por el Adobe.
 
@@ -30,7 +30,7 @@ AEM Para alinearse con sus requisitos específicos, puede mejorar y crear panele
 
 ## Ejemplos
 
-Exploremos varios ejemplos de reglas de filtro de tráfico, incluidas las reglas WAF. Asegúrese de haber completado el proceso de configuración necesario tal como se describe en la sección anterior [cómo realizar la configuración](./how-to-setup.md) y ha clonado el [AEM Proyecto de sitios de WKND](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project).
+Exploremos varios ejemplos de reglas de filtros de tráfico, incluidas las reglas WAF. Asegúrese de haber completado el proceso de configuración necesario tal como se describe en la sección anterior [cómo realizar la configuración](./how-to-setup.md) y ha clonado el [AEM Proyecto de sitios de WKND](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project).
 
 ### Registro de solicitudes
 
@@ -222,7 +222,7 @@ Todos los clientes de Sites y Forms pueden configurar los ejemplos de reglas de 
 
 A continuación, vamos a explorar la experiencia de un cliente que ha adquirido una licencia de seguridad mejorada o de protección WAF-DDoS. AEM Esto le permite configurar reglas avanzadas para proteger los sitios de la de ataques más sofisticados.
 
-Antes de continuar, habilite la protección WAF-DDoS para su programa, tal como se describe en la documentación Reglas del filtro de tráfico [pasos de configuración](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=en#setup).
+Antes de continuar, habilite la protección WAF-DDoS para su programa, tal como se describe en la documentación de reglas de filtro de tráfico [pasos de configuración](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=en#setup).
 
 #### Sin indicadores WAFF
 
