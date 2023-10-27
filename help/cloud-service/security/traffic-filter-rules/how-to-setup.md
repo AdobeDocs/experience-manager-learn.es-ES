@@ -10,7 +10,7 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-26T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: 3752e22455020b58d23524f7e6a99414e773422d
+source-git-commit: 87266a250eb91a82cf39c4a87e8f0119658cf4aa
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 3%
@@ -118,7 +118,7 @@ Para probar las reglas, hay varias herramientas de terceros disponibles y es pos
 
 Después de crear, implementar y probar las reglas, puede analizar los resultados mediante **Elasticsearch, Logstash y Kibana (ELK)** herramientas de tablero. Puede analizar los registros de CDN de AEM CS, lo que le permite visualizar los resultados en forma de varios gráficos y diagramas.
 
-Las herramientas de tablero se pueden clonar directamente desde el [AEMCS-CDN-Log-Analysis-ELK-Tool Repositorio de GitHub](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) y siga los pasos para instalar y cargar el **reglas de filtro de tráfico (incluido WAF)** panel.
+Las herramientas de tablero se pueden clonar directamente desde el [AEMCS-CDN-Log-Analysis-ELK-Tool Repositorio de GitHub](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) y siga los pasos para instalar y cargar el **Reglas de filtro de tráfico (incluido WAF)** panel.
 
 - Después de cargar el tablero de muestra, la página de la herramienta Tablero elástico debería tener el siguiente aspecto:
 

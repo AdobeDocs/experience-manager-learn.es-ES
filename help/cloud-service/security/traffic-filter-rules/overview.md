@@ -10,10 +10,10 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-26T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: 3752e22455020b58d23524f7e6a99414e773422d
+source-git-commit: 87266a250eb91a82cf39c4a87e8f0119658cf4aa
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 4%
+source-wordcount: '285'
+ht-degree: 3%
 
 ---
 
@@ -30,12 +30,13 @@ Las reglas de filtro de tráfico se implementan en [CDN integrada](https://exper
 
 Este tutorial le guía a través del proceso de creación, implementación, prueba y análisis de los resultados de las reglas de filtro de tráfico, incluidas las reglas WAF.
 
-Puede obtener más información sobre las reglas de filtro de tráfico en [este artículo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=en)
+Puede obtener más información sobre las reglas de filtro de tráfico en [este artículo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=en).
 
 >[!IMPORTANT]
 >
-> Una subcategoría de reglas de filtro de tráfico denominada &quot;reglas WAF&quot; requiere una licencia de protección WAF-DDoS
+> Una subcategoría de reglas de filtro de tráfico denominada &quot;reglas WAF&quot; requiere una licencia de protección WAF-DDoS o de seguridad mejorada.
 
+Le invitamos a enviar sus comentarios o hacer preguntas sobre las reglas de filtro de tráfico por correo electrónico **aemcs-waf-adopter@adobe.com**.
 
 ## Siguiente paso
 
