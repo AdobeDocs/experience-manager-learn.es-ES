@@ -5,16 +5,14 @@ sub-product: Experience Manager Sites, Experience Manager Cloud Manager, Experie
 topic: Administration, Development
 feature: Developer Tools
 exl-id: ae1cdbe3-0863-41de-bb27-2e88c4640866
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 4b634d8b3063375f7c135a3e3ef81b90c84e2579
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '700'
 ht-degree: 2%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service Experts Series
-
-![AEM Serie de expertos de](./assets/masthead.png)
+# AEM Serie de expertos as a Cloud Service
 
 Obtenga información sobre Adobe Experience Manager AEM () as a Cloud Service de los ingenieros expertos de Adobe que lo crearon y del equipo de servicios profesionales que lo proporciona. Únase a los expertos de Adobe AEM para explorar qué es el as a Cloud Service AEM AEM AEM, cómo es igual y diferente de la 6 y cómo pasar de la 6 a la as a Cloud Service.
 
@@ -23,7 +21,7 @@ Obtenga información sobre Adobe Experience Manager AEM () as a Cloud Service de
 
 ## AEM Introducción a la as a Cloud Service
 
-AEM Conozca los aspectos básicos de la como Cloud Services AEM y en qué se diferencia de los 6, de los arquitectos de nube sénior de ingeniería de Adobe.
+AEM Conozca los aspectos básicos de la como Cloud Service AEM y en qué se diferencia de los 6, de los arquitectos de nube sénior de ingeniería de Adobe.
 
 <table>
   <tr>
@@ -162,7 +160,7 @@ AEM AEM ¿Planeas pasar de la 6 a la as a Cloud Service de la? Obtenga informaci
 </table>
 
 
-## AEM Funcionalidades de as a Cloud Services
+## AEM Funcionalidades de as a Cloud Service
 
 AEM Obtenga información sobre las capacidades únicas de los as a Cloud Service de los expertos en Adobes.
 
@@ -178,7 +176,7 @@ AEM Obtenga información sobre las capacidades únicas de los as a Cloud Service
       </div>
       <p>
         <br/>
-        Obtenga información sobre los microservicios de Asset compute AEM de AEM Assets, cómo reemplazan el procesamiento de recursos de 6 recursos y cómo se pueden ampliar para generar representaciones de recursos personalizadas.
+        Obtenga información acerca de los microservicios de Asset compute AEM de AEM Assets, cómo reemplazan el procesamiento de recursos de 6 recursos y cómo se pueden ampliar para generar representaciones de recursos personalizadas.
       </p>
    </td>   
    <td>
@@ -198,7 +196,7 @@ AEM Obtenga información sobre las capacidades únicas de los as a Cloud Service
   </tr>
 </table>
 
-## AEM ¿Necesita ayuda con la ayuda de los Cloud Services de la empresa de?
+## AEM ¿Necesita ayuda con la ayuda de los Cloud Service de la empresa de?
 
 AEM Obtenga información sobre cómo depurar y solucionar problemas de los expertos de los SDK as a Cloud Service AEM y de los SDK de la.
 
