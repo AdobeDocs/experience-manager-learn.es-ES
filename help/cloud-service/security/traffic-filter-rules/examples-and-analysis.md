@@ -10,13 +10,13 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-26T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: 87266a250eb91a82cf39c4a87e8f0119658cf4aa
+exl-id: 49becbcb-7965-4378-bb8e-b662fda716b7
+source-git-commit: ceb498f751ffc50d0022a16b63f9f52594bc507e
 workflow-type: tm+mt
 source-wordcount: '1512'
 ht-degree: 0%
 
 ---
-
 
 # Ejemplos y análisis de resultados de reglas de filtro de tráfico, incluidas las reglas WAF
 
@@ -27,6 +27,8 @@ En esta sección, explorará ejemplos prácticos de reglas de filtros de tráfic
 Además, descubrirá cómo utilizar las herramientas de tablero que consumen registros de CDN de AEM CS para visualizar métricas esenciales a través de los tableros de muestra proporcionados por el Adobe.
 
 AEM Para alinearse con sus requisitos específicos, puede mejorar y crear paneles personalizados, obteniendo así perspectivas más profundas y optimizando las configuraciones de reglas para sus sitios de.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3425404?quality=12&learn=on)
 
 ## Ejemplos
 
@@ -351,4 +353,3 @@ Familiarícese con las recomendaciones [prácticas recomendadas](./best-practice
 [Sintaxis de reglas de filtro de tráfico](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#rules-syntax)
 
 [Formato de registro de CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#cdn-log-format)
-

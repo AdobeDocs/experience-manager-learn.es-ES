@@ -10,17 +10,19 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-26T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: 87266a250eb91a82cf39c4a87e8f0119658cf4aa
+exl-id: 4a7acdd2-f442-44ee-8560-f9cb64436acf
+source-git-commit: ceb498f751ffc50d0022a16b63f9f52594bc507e
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%
 
 ---
 
-
 # Prácticas recomendadas para reglas de filtro de tráfico, incluidas las reglas WAF
 
 Conozca las prácticas recomendadas para las reglas de filtro de tráfico, incluidas las reglas WAF. Es importante señalar que las prácticas recomendadas descritas en este artículo no son exhaustivas y no pretenden sustituir a sus propias políticas y procedimientos de seguridad.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3425408?quality=12&learn=on)
 
 ## Prácticas recomendadas generales
 
@@ -150,3 +152,6 @@ data:
 ## Resumen
 
 En resumen, este tutorial le ha dotado de los conocimientos y las herramientas necesarias para reforzar la seguridad de sus aplicaciones web en Adobe Experience Manager as a Cloud Service (AEM CS). Con ejemplos prácticos de reglas y perspectivas en el análisis de resultados, puede proteger de forma eficaz su sitio web y sus aplicaciones.
+
+
+
