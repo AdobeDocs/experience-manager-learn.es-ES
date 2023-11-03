@@ -17,7 +17,7 @@ ht-degree: 14%
 
 ---
 
-# AEM Configuración del SDK de local {#set-up-local-aem-sdk}
+# Configuración del SDK de AEM local {#set-up-local-aem-sdk}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_localdev_aemruntime"

@@ -17,7 +17,7 @@ ht-degree: 6%
 
 ---
 
-# AEM Imágenes optimizadas con sin encabezado {#images-with-aem-headless}
+# Imágenes optimizadas con AEM Headless {#images-with-aem-headless}
 
 Las imágenes son un aspecto crítico de [AEM desarrollo de experiencias enriquecidas, convincentes y sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=es). AEM Sin encabezado admite la administración de recursos de imagen y su entrega optimizada.
 
@@ -27,15 +27,15 @@ El `ImageRef` El tipo tiene cuatro opciones de URL para las referencias de conte
 
 + `_path` AEM AEM es la ruta de acceso a la que se hace referencia en el código de tiempo de la y no incluye un origen de tipo (nombre de host)
 + `_dynamicUrl` es la dirección URL completa del recurso de imagen preferido y optimizado para la web.
-   + El `_dynamicUrl` AEM no incluye un origen de, por lo que el dominio (Autor de AEM o Servicio de publicación de AEM) debe proporcionarlo la aplicación cliente.
-+ `_authorUrl` es la dirección URL completa del recurso de imagen en AEM Author
-   + [AEM Author](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html) se puede utilizar para proporcionar una experiencia de previsualización de la aplicación sin encabezado.
-+ `_publishUrl` es la dirección URL completa del recurso de imagen en AEM Publish
-   + [AEM Publish](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html) suele ser desde donde la implementación de producción de la aplicación sin encabezado muestra las imágenes.
+   + El `_dynamicUrl` AEM AEM AEM no incluye un origen de, por lo que la aplicación cliente debe proporcionar el dominio (servicio de autor o publicación de la).
++ `_authorUrl` AEM es la dirección URL completa del recurso de imagen en el autor de la
+   + [AEM Autor de](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html) se puede utilizar para proporcionar una experiencia de previsualización de la aplicación sin encabezado.
++ `_publishUrl` AEM es la dirección URL completa del recurso de imagen en la publicación de la
+   + [AEM Publicación de](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html) suele ser desde donde la implementación de producción de la aplicación sin encabezado muestra las imágenes.
 
 El `_dynamicUrl` es la dirección URL preferida para los recursos de imagen y debe reemplazar el uso de `_path`, `_authorUrl`, y `_publishUrl` siempre que sea posible.
 
-|  | AEM as a Cloud Service | AEM RDE AS A CLOUD SERVICE | AEM SDK de | AEM 6.5 |
+|                                | AEM as a Cloud Service | AEM RDE AS A CLOUD SERVICE | AEM SDK de | AEM 6.5 |
 | ------------------------------ |:----------------------:|:--------------------------:|:-------:|:-------:|
 | ¿Admite imágenes optimizadas para la web? | ✔ | ✔ | ✘ | ✘ |
 
@@ -129,7 +129,7 @@ La respuesta JSON resultante contiene los campos solicitados que contienen la UR
 
 Para cargar la imagen optimizada para la web de la imagen a la que se hace referencia en la aplicación, se utiliza el `_dynamicUrl` de la `primaryImage` como URL de origen de la imagen.
 
-En React, la visualización de una imagen optimizada para la web desde AEM Publish tiene este aspecto:
+AEM En React, la visualización de una imagen optimizada para la web desde la publicación de la página web tiene el siguiente aspecto:
 
 ```jsx
 const AEM_HOST = "https://publish-p123-e456.adobeaemcloud.com";
