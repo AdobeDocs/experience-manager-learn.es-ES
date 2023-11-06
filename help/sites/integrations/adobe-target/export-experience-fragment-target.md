@@ -14,9 +14,9 @@ level: Intermediate
 badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 2c01cda8-f72f-47f7-a36b-95afd241906e
-source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
+source-git-commit: e9c0974d35493a607969124b2906564fc97bcdea
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '196'
 ht-degree: 4%
 
 ---
@@ -39,11 +39,11 @@ AEM Obtenga información sobre cómo exportar fragmentos de experiencias de la c
 
 Exportar el fragmento de experiencia a Adobe Target sin los permisos correctos en Adobe Admin Console AEM provoca el siguiente error en el servicio de creación de la versión de:
 
-    ![Error de IU de la API de Target](assets/error-target-offer.png)
+![Error de IU de API de Target](assets/error-target-offer.png)
 
 ... y los siguientes mensajes de registro en `aemerror` registro:
 
-    ![Error de consola de API de Target](assets/target-console-error.png)
+![Error de consola de API de Target](assets/target-console-error.png)
 
 #### Resolución
 
