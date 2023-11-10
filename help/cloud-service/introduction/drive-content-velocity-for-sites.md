@@ -3,9 +3,9 @@ title: Cómo aumentar la velocidad del contenido con Adobe Experience Manager
 description: Obtenga información acerca de la velocidad de contenido y su valor dentro de las organizaciones empresariales. Sumérjase en cuatro principios de implementación efectiva y en los escollos que hay que tener en cuenta en el camino.
 solution: Experience Manager
 exl-id: 9d2e05c3-c8eb-4d92-bad0-931e63550438
-source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
+source-git-commit: bd886704f10834bb07b42d6b5c0f116496da36de
 workflow-type: tm+mt
-source-wordcount: '2814'
+source-wordcount: '2795'
 ht-degree: 0%
 
 ---
@@ -147,7 +147,7 @@ Estos son cuatro hitos que se deben desarrollar durante la fase de ejecución:
 En general, hablando, es mejor seguir estas reglas generales:
 
 * Tener en cuenta no menos del 80 % de las experiencias [Componentes listos para usar](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) y [Sistemas de estilos](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=en). Gracias al testimonio del cliente, esto no solo creará una base más escalable que le permitirá aprovechar la hoja de ruta del producto, sino que también aumentará la velocidad en hasta un 50 %.
-* [Configuración](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en)[e](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en)[plantillas editables](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en) y se aleja de las plantillas estáticas. Al configurar plantillas editables (necesarias para utilizar sistemas de estilos), es necesario asignar un autor de plantillas que controle los diferentes estilos disponibles para una página o sección del sitio web. Estas actualizaciones en la propia plantilla son bastante mínimas en términos de trabajo diario.
+* [Configurar plantillas editables](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en) y se aleja de las plantillas estáticas. Al configurar plantillas editables (necesarias para utilizar sistemas de estilos), es necesario asignar un autor de plantillas que controle los diferentes estilos disponibles para una página o sección del sitio web. Estas actualizaciones en la propia plantilla son bastante mínimas en términos de trabajo diario.
 * Uso [Fragmentos de experiencias](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=en) siempre que sea posible. Aunque el caso de uso general de los fragmentos de experiencias es para la distribución de varios canales, también se pueden utilizar de forma eficaz en todo el sitio para rellenar el contenido en una área a la vez en lugar de actualizar el contenido manualmente en varias áreas. Esto puede ahorrarle un tiempo y un esfuerzo excesivos y liberará al equipo de creación para trabajar en experiencias más específicas y enriquecidas.
 * Cree experiencias más completas. Al utilizar la regla 80/20 (por encima), una organización puede utilizar CSS específico y desarrollo back-end para experiencias seleccionadas en lugar de actualizaciones de mantenimiento comunes.
 * Elija una base escalable y realice un cambio de marca rápido. Los sistemas de estilos que se ejecutan en base a una implementación moderna pueden permitir un cambio de marca eficiente en toda la plataforma. La actualización de amplios sectores de contenido mediante el cambio de máscaras CSS permite realizar pruebas y validaciones rápidas y aumenta la calidad experiencial del sitio propio con un impacto directo en el ROI.
