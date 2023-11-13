@@ -10,9 +10,9 @@ doc-type: Tutorial
 last-substantial-update: 2023-11-10T00:00:00Z
 jira: KT-13312
 thumbnail: KT-13312.jpeg
-source-git-commit: bfc4d843c53373010ee04cfa590272cedea7a686
+source-git-commit: be503ba477d63a566b687866289a81a0aa7d01f7
 workflow-type: tm+mt
-source-wordcount: '1232'
+source-wordcount: '1231'
 ht-degree: 2%
 
 ---
@@ -41,11 +41,11 @@ Para descargar los registros de CDN, siga estos pasos:
 
 1. Para un entorno AEM CS deseado, seleccione **Descargar registros** en el menú de los tres puntos.
 
-   ![Descargar registros: Cloud Manager](assets/cdn-logs-analysis/download-logs.png){width="200" zoomable="yes"}
+   ![Descargar registros: Cloud Manager](assets/cdn-logs-analysis/download-logs.png){width="500" zoomable="yes"}
 
 1. En el **Descargar registros** , seleccione la **Publish** Service en el menú desplegable y, a continuación, haga clic en el icono de descarga situado junto a la etiqueta **cdn** fila.
 
-   ![Registros de CDN: Cloud Manager](assets/cdn-logs-analysis/download-cdn-logs.png){width="200" zoomable="yes"}
+   ![Registros de CDN: Cloud Manager](assets/cdn-logs-analysis/download-cdn-logs.png){width="500" zoomable="yes"}
 
 
 Si el archivo de registro descargado es de _hoy_ la extensión del archivo es `.log` de lo contrario, para los archivos de registro anteriores, la extensión es `.log.gz`.
@@ -71,11 +71,11 @@ Para identificar los detalles clave, usemos el [AEMCS-CDN-Log-Analysis-ELK-Tool]
 
    1. Abra el **Proporción de aciertos de caché de CDN** Haga clic en el menú Hamburguesa > Analytics > Panel > Proporción de visitas de caché de CDN.
 
-      ![CDN Cache Hit Ratio - Kibana Dashboard](assets/cdn-logs-analysis/cdn-cache-hit-ratio-dashboard.png){width="200" zoomable="yes"}
+      ![CDN Cache Hit Ratio - Kibana Dashboard](assets/cdn-logs-analysis/cdn-cache-hit-ratio-dashboard.png){width="500" zoomable="yes"}
 
    1. Seleccione el intervalo de tiempo deseado en la esquina superior derecha.
 
-      ![Rango de tiempo - Kibana Dashboard](assets/cdn-logs-analysis/time-range.png){width="200" zoomable="yes"}
+      ![Rango de tiempo - Kibana Dashboard](assets/cdn-logs-analysis/time-range.png){width="500" zoomable="yes"}
 
    1. El **Proporción de aciertos de caché de CDN** El tablero de mandos se explica por sí mismo.
 
@@ -83,14 +83,14 @@ Para identificar los detalles clave, usemos el [AEMCS-CDN-Log-Analysis-ELK-Tool]
       - Proporciones de caché por tipo de caché
       - Recuentos de caché por tipo de caché
 
-      ![Análisis de solicitudes totales: panel de Kibana](assets/cdn-logs-analysis/total-request-analysis.png){width="200" zoomable="yes"}
+      ![Análisis de solicitudes totales: panel de Kibana](assets/cdn-logs-analysis/total-request-analysis.png){width="500" zoomable="yes"}
 
    1. El _Análisis por tipos de solicitud o MIME_ muestra los siguientes detalles:
       - Proporciones de caché por tipo de caché
       - Recuentos de caché por tipo de caché
       - Principales URL de MISS y PASS
 
-      ![Análisis por tipos de solicitud o MIME - Kibana Dashboard](assets/cdn-logs-analysis/analysis-by-request-or-mime-types.png){width="200" zoomable="yes"}
+      ![Análisis por tipos de solicitud o MIME - Kibana Dashboard](assets/cdn-logs-analysis/analysis-by-request-or-mime-types.png){width="500" zoomable="yes"}
 
 #### Filtrado por nombre de entorno o ID de programa
 
@@ -98,11 +98,11 @@ Para filtrar los registros ingeridos por nombre de entorno, siga los siguientes 
 
 1. En el panel Proporción de visitas de caché de CDN, haga clic en **Añadir filtro** icono.
 
-   ![Filtro - Tablero de Kibana](assets/cdn-logs-analysis/filter.png){width="200" zoomable="yes"}
+   ![Filtro - Tablero de Kibana](assets/cdn-logs-analysis/filter.png){width="500" zoomable="yes"}
 
 1. En el **Añadir filtro** modal, seleccione la opción `aem_env_name.keyword` del menú desplegable y, a continuación, `is` operador y nombre de entorno deseado para el campo siguiente y, finalmente, haga clic en _Añadir filtro_.
 
-   ![Añadir filtro - Tablero de Kibana](assets/cdn-logs-analysis/add-filter.png){width="200" zoomable="yes"}
+   ![Añadir filtro - Tablero de Kibana](assets/cdn-logs-analysis/add-filter.png){width="500" zoomable="yes"}
 
 #### Filtrado por nombre de host
 
@@ -110,11 +110,11 @@ Para filtrar los registros ingeridos por nombre de host, siga los siguientes pas
 
 1. En el panel Proporción de visitas de caché de CDN, haga clic en **Añadir filtro** icono.
 
-   ![Filtro - Tablero de Kibana](assets/cdn-logs-analysis/filter.png){width="200" zoomable="yes"}
+   ![Filtro - Tablero de Kibana](assets/cdn-logs-analysis/filter.png){width="500" zoomable="yes"}
 
 1. En el **Añadir filtro** modal, seleccione la opción `host.keyword` del menú desplegable y, a continuación, `is` operador y nombre de host deseado para el campo siguiente y, finalmente, haga clic en _Añadir filtro_.
 
-   ![Filtro de host - Tablero de Kibana](assets/cdn-logs-analysis/add-host-filter.png){width="200" zoomable="yes"}
+   ![Filtro de host - Tablero de Kibana](assets/cdn-logs-analysis/add-host-filter.png){width="500" zoomable="yes"}
 
 Del mismo modo, agregue más filtros al panel en función de los requisitos de análisis.
 
@@ -127,7 +127,7 @@ Para acelerar el análisis de los registros de CDN, descargue el [AEM-as-a-Cloud
 El descargado `aemcs_cdn_logs_analysis.ipynb` El archivo &quot;Interactive Python Notebook&quot; se explica por sí mismo, sin embargo, los aspectos destacados de cada sección son:
 
 - **Instalación de bibliotecas adicionales**: instala el `termcolor` y `tabulate` Bibliotecas de Python.
-- **Cargar archivo de registro de CDN**: carga el archivo de registro de CDN mediante `log_file` valor de la variable, asegúrese de actualizar su valor. También transforma este registro de CDN en la variable [DataFrame de Pandas](https://pandas.pydata.org/docs/reference/frame.html).
+- **Cargar registros de CDN**: carga el archivo de registro de CDN mediante `log_file` valor de la variable, asegúrese de actualizar su valor. También transforma este registro de CDN en la variable [DataFrame de Pandas](https://pandas.pydata.org/docs/reference/frame.html).
 - **Realizar análisis**: el primer bloque de código es _Mostrar resultado de análisis para solicitudes totales, de HTML, JS/CSS e de imagen_Además, proporciona gráficos de porcentaje, barras y circulares de proporción de visitas a la caché.
 El segundo bloque de código es _Las 5 direcciones URL de solicitud MISS y PASS principales para HTML, JS/CSS e imagen_, muestra las direcciones URL y sus recuentos en formato de tabla.
 
@@ -141,33 +141,33 @@ Para ejecutar Jupyter Notebook en Experience Platform, siga estos pasos:
 
 1. Inicie sesión en [Adobe Experience Cloud](https://experience.adobe.com/), en la Página de inicio > **Acceso rápido** sección > haga clic en **Experience Platform**
 
-   ![Experience Platform](assets/cdn-logs-analysis/experience-platform.png){width="200" zoomable="yes"}
+   ![Experience Platform](assets/cdn-logs-analysis/experience-platform.png){width="500" zoomable="yes"}
 
 1. En la página de inicio de Adobe Experience Platform > Sección de ciencia de datos > , haga clic en **Notebooks** elemento de menú. Para iniciar el entorno de Jupyter Notebooks, haga clic en el **JupyterLab** pestaña.
 
-   ![Actualización del valor del archivo de registro de Notebook](assets/cdn-logs-analysis/datascience-notebook.png){width="200" zoomable="yes"}
+   ![Actualización del valor del archivo de registro de Notebook](assets/cdn-logs-analysis/datascience-notebook.png){width="500" zoomable="yes"}
 
 1. En el menú de JupyterLab, utilice el **Cargar archivos** , cargue el archivo de registro de CDN descargado y `aemcs_cdn_logs_analysis.ipynb` archivo.
 
-   ![Cargar archivos - JupyteLab](assets/cdn-logs-analysis/jupyterlab-upload-file.png){width="200" zoomable="yes"}
+   ![Cargar archivos - JupyteLab](assets/cdn-logs-analysis/jupyterlab-upload-file.png){width="500" zoomable="yes"}
 
 1. Abra el `aemcs_cdn_logs_analysis.ipynb` haciendo doble clic en.
 
 1. En el **Cargar archivo de registro de CDN** del bloc de notas, actualice el `log_file` valor.
 
-   ![Actualización del valor del archivo de registro de Notebook](assets/cdn-logs-analysis/notebook-update-variable.png){width="200" zoomable="yes"}
+   ![Actualización del valor del archivo de registro de Notebook](assets/cdn-logs-analysis/notebook-update-variable.png){width="500" zoomable="yes"}
 
 1. Para ejecutar la celda seleccionada y avanzar, haga clic en **Reproducir** icono.
 
-   ![Actualización del valor del archivo de registro de Notebook](assets/cdn-logs-analysis/notebook-run-cell.png){width="200" zoomable="yes"}
+   ![Actualización del valor del archivo de registro de Notebook](assets/cdn-logs-analysis/notebook-run-cell.png){width="500" zoomable="yes"}
 
 1. Después de ejecutar el **Mostrar el resultado del análisis para solicitudes totales, de HTML, JS/CSS e de imagen** en una celda de código, el resultado muestra los gráficos de porcentaje, barras y circulares de la proporción de visitas de la caché.
 
-   ![Actualización del valor del archivo de registro de Notebook](assets/cdn-logs-analysis/output-cache-hit-ratio.png){width="200" zoomable="yes"}
+   ![Actualización del valor del archivo de registro de Notebook](assets/cdn-logs-analysis/output-cache-hit-ratio.png){width="500" zoomable="yes"}
 
 1. Después de ejecutar el **Las 5 direcciones URL de solicitud MISS y PASS principales para HTML, JS/CSS e imagen** en la celda de código, el resultado muestra las 5 direcciones URL de solicitud FALSE y PASS principales.
 
-   ![Actualización del valor del archivo de registro de Notebook](assets/cdn-logs-analysis/output-top-urls.png){width="200" zoomable="yes"}
+   ![Actualización del valor del archivo de registro de Notebook](assets/cdn-logs-analysis/output-top-urls.png){width="500" zoomable="yes"}
 
 Puede mejorar Jupyter Notebook para analizar los registros de CDN en función de sus necesidades.
 
