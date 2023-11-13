@@ -13,9 +13,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: d0bd64bd-9e6c-4a28-a8d9-52bb37b27a09
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 0565cf592a437acf5080dab1d3ee2d410997f01d
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '1007'
 ht-degree: 3%
 
 ---
@@ -33,7 +33,7 @@ Los ID de secuencia se proporcionan en cada sentencia de registro y permiten fil
 
 ## Archivos de registro personalizados
 
-AEM como Cloud Services no admite archivos de registro personalizados, pero sí admite el registro personalizado.
+AEM como Cloud Service no admite archivos de registro personalizados, pero sí admite el registro personalizado.
 
 AEM Para que los registros de Java estén disponibles en el as a Cloud Service (a través de ). [Cloud Manager](#cloud-manager) o [CLI DE ADOBE I/O](#aio)), las instrucciones de registro personalizadas deben escribirse en `error.log`. Registros escritos en registros con nombres personalizados, como `example.log`AEM , no será accesible desde el as a Cloud Service de la.
 
@@ -47,9 +47,9 @@ Los registros se pueden escribir en `error.log` usar una propiedad de configurac
 }
 ```
 
-## Registros del servicio de AEM Author y Publish
+## AEM Registros del servicio de autor y publicación de
 
-AEM Tanto los servicios de AEM Author como los de publicación proporcionan registros de servidor en tiempo de ejecución de:
+AEM AEM Tanto los servicios de autor como los de publicación proporcionan registros de servidor en tiempo de ejecución de la:
 
 + `aemerror` es el registro de errores de Java (encontrado en `/crx-quickstart/logs/error.log` AEM en el inicio rápido local del SDK de la). Los siguientes son los [niveles de registro recomendados](#log-levels) para registradores personalizados por tipo de entorno:
    + Desarrollo: `DEBUG`
@@ -58,9 +58,9 @@ AEM Tanto los servicios de AEM Author como los de publicación proporcionan regi
 + `aemaccess` AEM enumera las solicitudes HTTP al servicio de con detalles
 + `aemrequest` AEM enumera las solicitudes HTTP realizadas al servicio de y su respuesta HTTP correspondiente
 
-## Registros de Dispatcher de publicación AEM
+## AEM Publicar registros de Dispatcher
 
-Solo AEM Publish Dispatcher proporciona registros de Dispatcher y del servidor web Apache, ya que estos aspectos solo existen en el nivel de AEM Publish y no en el de AEM Author.
+AEM AEM AEM Solo Dispatcher de publicación de datos proporciona registros de Apache Web Server y Dispatcher, ya que estos aspectos solo existen en el nivel de publicación de la y no en el nivel de Author de la.
 
 + `httpdaccess` AEM enumera las solicitudes HTTP realizadas al servidor web Apache/Dispatcher del servicio de.
 + `httperror`  enumera los mensajes de registro del servidor web Apache y ayuda con la depuración de los módulos Apache admitidos, como `mod_rewrite`.
@@ -203,7 +203,7 @@ Esto requiere actualizar las configuraciones de registro de OSGi para utilizar l
 Este enfoque tiene desventajas que deben tenerse en cuenta:
 
 + [Se permite un número limitado de variables de entorno](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#number-of-variables)y al crear una variable para administrar el nivel de registro se utilizará uno.
-+ Las variables de entorno solo se pueden administrar mediante programación mediante [CLI DE ADOBE I/O](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) o [API HTTP de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#cloud-manager-api-format-for-setting-properties).
++ Las variables de entorno se pueden administrar mediante programación mediante [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html), [CLI DE ADOBE I/O](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid), y [API HTTP de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#cloud-manager-api-format-for-setting-properties).
 + Los cambios en las variables de entorno deben restablecerse manualmente mediante una herramienta compatible. AEM El olvido de restablecer un entorno de alto tráfico, como Producción, a un nivel de registro menos detallado puede inundar los registros e afectar al rendimiento de la.
 
 _Las variables específicas del entorno no funcionan para las configuraciones de registro del servidor web Apache o Dispatcher, ya que no se configuran mediante la configuración OSGi._
