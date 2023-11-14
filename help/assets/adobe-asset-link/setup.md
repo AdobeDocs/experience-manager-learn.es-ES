@@ -9,9 +9,9 @@ level: Beginner
 kt: 9401
 thumbnail: 338824.jpg
 exl-id: a62e936f-c231-474d-9671-58815b2cb652
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 288eaf8bab20cfb0ecbfa8455198fa63252e2e71
 workflow-type: tm+mt
-source-wordcount: '208'
+source-wordcount: '268'
 ht-degree: 0%
 
 ---
@@ -26,9 +26,14 @@ Obtenga información sobre cómo configurar Adobe AEM Asset Link para el as a Cl
 
 >[!VIDEO](https://video.tv.adobe.com/v/338824?quality=12&learn=on)
 
+No se muestra en el vídeo anterior, se puede añadir Adobe Asset Link mediante el __Paquete administrado__ opción del administrador de paquetes de Creative Cloud:
+
+1. Elegir __Adobe Asset Link CEP__ in __Elegir complementos__ escalón
+2. En el __Paso de opción__ select __Habilitar la instalación de autoservicio__ y __Permitir que los usuarios que no son administradores actualicen e instalen aplicaciones__ para permitir que los usuarios que no son administradores tengan privilegios para administrar aplicaciones y complementos de Creative Cloud.
+
 ## Configuración de Asset Link para Managed Services y On-Premise
 
-Obtenga información sobre cómo configurar Adobe AEM AEM Asset Link para el 6 que se ejecuta en Adobe Managed Services o On-premise, configurar las autorizaciones y los recursos as a Cloud Service de los usuarios, y cómo instalar y utilizar Adobe Asset Link.
+Obtenga información sobre cómo configurar Adobe AEM Asset Link para la ejecución de 6 en Adobe Managed Services AEM o On-Premise, configurar los derechos de usuario y la as a Cloud Service de la, y cómo instalar y utilizar Adobe Asset Link.
 
 >[!VIDEO](https://video.tv.adobe.com/v/338823?quality=12&learn=on)
 
