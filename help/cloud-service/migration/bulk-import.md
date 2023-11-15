@@ -14,16 +14,20 @@ role: Architect, Developer
 level: Beginner
 last-substantial-update: 2022-10-05T00:00:00Z
 exl-id: 28644af8-babc-467d-afdb-8538728dc176
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 4912087feb69ccbed3c66a34941fa6d083af6319
 workflow-type: tm+mt
-source-wordcount: '102'
+source-wordcount: '146'
 ht-degree: 0%
 
 ---
 
 # Uso de la importación masiva
 
-AEM La herramienta Importación masiva en as a Cloud Service permite a los administradores importar recursos de forma masiva desde el almacenamiento en la nube (Azure Blob Storage o Amazon S3) de forma segura y eficaz.
+AEM La herramienta Importación masiva en as a Cloud Service permite a los administradores importar recursos de forma masiva desde el almacenamiento en la nube de forma segura y eficaz.
+
+>[!TIP]
+>
+> Las fuentes de entrada de este vídeo solo muestran Azure Blob Storage y Amazon S3; sin embargo, las fuentes disponibles siguen creciendo con el tiempo. Para obtener una lista completa de las fuentes de entrada compatibles, consulte las opciones disponibles en el producto o [documentación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html#bulk-upload).
 
 >[!VIDEO](https://video.tv.adobe.com/v/329680?quality=12&learn=on)
 
