@@ -1,6 +1,6 @@
 ---
 title: Migración de contenido mediante el servicio de importación masiva
-description: AEM Descubra cómo se puede utilizar el servicio de importación masiva de as a Cloud Services AEM para importar recursos desde fuentes que no sean de la misma clase
+description: AEM Descubra cómo se puede utilizar el servicio de importación masiva de as a Cloud Service AEM para importar recursos desde fuentes que no sean de la misma clase
 version: Cloud Service
 topic: Migration, Upgrade
 feature: Migration
@@ -9,16 +9,18 @@ level: Experienced
 kt: 8918
 thumbnail: 336969.jpeg
 exl-id: 4944d3d9-52a0-4255-9e6c-eb119160e400
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 8a4f4a1370d93aa592d5d67208ad5f85034db0bf
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '201'
 ht-degree: 0%
 
 ---
 
 # Servicio de importación por lotes
 
-AEM Descubra cómo se puede utilizar el servicio de importación masiva de as a Cloud Services AEM para importar recursos desde fuentes que no sean de la misma clase
+AEM Descubra cómo se puede utilizar el servicio de importación masiva de as a Cloud Service AEM para importar recursos desde fuentes que no sean de la misma clase
+
+
 
 >[!VIDEO](https://video.tv.adobe.com/v/336969?quality=12&learn=on)
 
@@ -28,9 +30,13 @@ AEM Descubra cómo se puede utilizar el servicio de importación masiva de as a 
 
 El servicio de importación por lotes se utiliza para transferir archivos almacenados en Azure Blob Storage o en Amazon AEM S3 Storage a los archivos as a Cloud Service como recursos de.
 
+>[!TIP]
+>
+> Las fuentes de entrada de este vídeo solo muestran Azure Blob Storage y Amazon S3; sin embargo, las fuentes disponibles siguen creciendo con el tiempo. Para obtener una lista completa de las fuentes de entrada compatibles, consulte las opciones disponibles en el producto o [documentación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html#bulk-upload).
+
 ## Actividades clave
 
-+ Cargue los archivos para importarlos a su proveedor de almacenamiento en la nube (Azure Blob Storage o Amazon S3).
++ Cargue los archivos que desea importar en su proveedor de almacenamiento en la nube.
 + AEM Configure y ejecute el servicio de importación por lotes desde el servicio de autor de as a Cloud Service de la aplicación de.
 + Ejecute el Importador de servicios masivos como una importación única o programe una importación periódica.
 
