@@ -10,20 +10,22 @@ doc-type: Tutorial
 last-substantial-update: 2023-11-10T00:00:00Z
 jira: KT-13312
 thumbnail: KT-13312.jpeg
-source-git-commit: be503ba477d63a566b687866289a81a0aa7d01f7
+source-git-commit: 4e93bc88b0ee5a805f2aaf1e66900f084ae01247
 workflow-type: tm+mt
-source-wordcount: '1231'
-ht-degree: 2%
+source-wordcount: '1433'
+ht-degree: 1%
 
 ---
 
 
 # Análisis de proporción de aciertos de caché de CDN
 
-AEM Obtenga información sobre cómo analizar los datos as a Cloud Service que se han proporcionado **Registros de CDN** y obtener perspectivas como **proporción de aciertos de caché**, y **las principales URL de _SEÑORITA_ y _PASE_ tipos de caché** para fines de optimización.
+AEM El contenido almacenado en caché en la CDN reduce la latencia experimentada por los usuarios del sitio web, que no necesitan esperar a que la solicitud vuelva a Apache/Dispatcher o a publicar en el servidor de correo electrónico o en la interfaz de usuario de la red (CDN). Con esto en mente, vale la pena optimizar la proporción de visitas de caché de CDN para maximizar la cantidad de contenido almacenable en caché en la CDN.
+
+AEM Obtenga información sobre cómo analizar los datos as a Cloud Service que se han proporcionado **Registros de CDN** y obtener perspectivas como **proporción de aciertos de caché**, y **las principales URL de _SEÑORITA_ y _PASE_ tipos de caché**, con fines de optimización.
 
 
-Los registros de CDN están disponibles en formato JSON, que contiene varios campos, incluidos los siguientes `url`, `cache`, para obtener más información, consulte la [Formato de registro de CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html?lang=en#cdn-log:~:text=Toggle%20Text%20Wrapping-,Log%20Format,-The%20CDN%20logs). El `cache` proporciona información sobre _estado de la caché_ y sus valores posibles son HIT, MISS o PASS. Revisemos los detalles de los valores posibles.
+Los registros de CDN están disponibles en formato JSON, que contiene varios campos, incluidos los siguientes `url`, `cache`. Para obtener más información, consulte la [Formato de registro de CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html?lang=en#cdn-log:~:text=Toggle%20Text%20Wrapping-,Log%20Format,-The%20CDN%20logs). El `cache` proporciona información sobre _estado de la caché_ y sus valores posibles son HIT, MISS o PASS. Revisemos los detalles de los valores posibles.
 
 | Estado de la caché </br> Valor posible | Descripción |
 |------------------------------------|:-----------------------------------------------------:|
@@ -31,7 +33,12 @@ Los registros de CDN están disponibles en formato JSON, que contiene varios cam
 | SEÑORITA | Los datos solicitados son _no se encuentra en la caché de CDN y debe solicitarse_ AEM del servidor de la. |
 | PASE | Los datos solicitados son _establecido explícitamente para no almacenarse en caché_ AEM y siempre se recuperarán del servidor de la. |
 
-Para este tutorial, la variable [AEM Proyecto de WKND de](https://github.com/adobe/aem-guides-wknd) AEM se implementa en el entorno as a Cloud Service de y se activa una pequeña prueba de rendimiento mediante [Apache JMeter](https://jmeter.apache.org/).
+Para los fines de este tutorial, la variable [AEM Proyecto de WKND de](https://github.com/adobe/aem-guides-wknd) AEM se implementa en el entorno as a Cloud Service de y se activa una pequeña prueba de rendimiento mediante [Apache JMeter](https://jmeter.apache.org/).
+
+Este tutorial está estructurado para guiarle a través del siguiente proceso:
+1. Descarga de registros de CDN mediante Cloud Manager
+1. Analizar esos registros de CDN, que se puede realizar con dos enfoques: un tablero instalado localmente o un Jupityer Notebook al que se accede de forma remota (para aquellos que obtienen la licencia de Adobe Experience Platform)
+1. Optimizando la configuración de caché de CDN
 
 ## Descargar registros de CDN
 
@@ -54,10 +61,10 @@ Si el archivo de registro descargado es de _hoy_ la extensión del archivo es `.
 
 Para obtener información, como la proporción de visitas en caché y las direcciones URL principales de los tipos de caché MISS y PASS, analice el archivo de registro de CDN descargado. Estas perspectivas ayudan a optimizar la [Configuración de caché de CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=es) y mejorar el rendimiento del sitio.
 
-Para analizar los registros de CDN, este artículo utiliza la variable **Elasticsearch, Logstash y Kibana (ELK)** [herramientas de tablero](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) y [Jupyter Notebook](https://jupyter.org/).
+Para analizar los registros de CDN, este artículo presenta dos opciones: **Elasticsearch, Logstash y Kibana (ELK)** [herramientas de tablero](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) y [Jupyter Notebook](https://jupyter.org/). La herramienta de tablero ELK se puede instalar localmente en su portátil, mientras que la herramienta Jupityr Notebook se puede acceder de forma remota [como parte de Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data.html?lang=en) sin instalar software adicional, para aquellos que tengan licencia de Adobe Experience Platform.
 
 
-### Uso de las herramientas del panel
+### Opción 1: Uso de herramientas de tablero ELK
 
 El [pila de ELK](https://www.elastic.co/elastic-stack) es un conjunto de herramientas que proporcionan una solución escalable para buscar, analizar y visualizar los datos. Consiste en Elasticsearch, Logstash y Kibana.
 
@@ -69,7 +76,7 @@ Para identificar los detalles clave, usemos el [AEMCS-CDN-Log-Analysis-ELK-Tool]
 
    1. Copie los archivos de registro de CDN descargados dentro de la carpeta específica del entorno.
 
-   1. Abra el **Proporción de aciertos de caché de CDN** Haga clic en el menú Hamburguesa > Analytics > Panel > Proporción de visitas de caché de CDN.
+   1. Abra el **Proporción de aciertos de caché de CDN** Haga clic en la esquina superior izquierda del menú de navegación > Analytics > Panel > Proporción de visitas de caché de CDN.
 
       ![CDN Cache Hit Ratio - Kibana Dashboard](assets/cdn-logs-analysis/cdn-cache-hit-ratio-dashboard.png){width="500" zoomable="yes"}
 
@@ -118,26 +125,24 @@ Para filtrar los registros ingeridos por nombre de host, siga los siguientes pas
 
 Del mismo modo, agregue más filtros al panel en función de los requisitos de análisis.
 
-### Uso de Jupyter Notebook
+### Opción 2: Usar Jupyter Notebook
 
-El [Jupyter Notebook](https://jupyter.org/) es una aplicación web de código abierto que permite crear documentos que contienen código, texto y visualización. Se utiliza para la transformación, visualización y modelado estadístico de datos.
+Para aquellos que prefieren no instalar software localmente (es decir, las herramientas de tablero ELK de la sección anterior), hay otra opción, pero requiere una licencia para Adobe Experience Platform.
 
-Para acelerar el análisis de los registros de CDN, descargue el [AEM-as-a-CloudService: análisis de registros de CDN: Jupyter Notebook](./assets/cdn-logs-analysis/aemcs_cdn_logs_analysis.ipynb) archivo.
+El [Jupyter Notebook](https://jupyter.org/) es una aplicación web de código abierto que permite crear documentos que contienen código, texto y visualización. Se utiliza para la transformación, visualización y modelado estadístico de datos. Se puede acceder a él de forma remota [como parte de Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data.html?lang=en).
 
-El descargado `aemcs_cdn_logs_analysis.ipynb` El archivo &quot;Interactive Python Notebook&quot; se explica por sí mismo, sin embargo, los aspectos destacados de cada sección son:
+#### Descarga del archivo interactivo de Python Notebook
+
+Primero, descargue [AEM-as-a-CloudService: análisis de registros de CDN: Jupyter Notebook](./assets/cdn-logs-analysis/aemcs_cdn_logs_analysis.ipynb) , que le ayudará con el análisis de los registros de CDN. Este archivo &quot;Interactive Python Notebook&quot; se explica por sí mismo, sin embargo, los aspectos destacados de cada sección son:
 
 - **Instalación de bibliotecas adicionales**: instala el `termcolor` y `tabulate` Bibliotecas de Python.
-- **Cargar registros de CDN**: carga el archivo de registro de CDN mediante `log_file` valor de la variable, asegúrese de actualizar su valor. También transforma este registro de CDN en la variable [DataFrame de Pandas](https://pandas.pydata.org/docs/reference/frame.html).
-- **Realizar análisis**: el primer bloque de código es _Mostrar resultado de análisis para solicitudes totales, de HTML, JS/CSS e de imagen_Además, proporciona gráficos de porcentaje, barras y circulares de proporción de visitas a la caché.
-El segundo bloque de código es _Las 5 direcciones URL de solicitud MISS y PASS principales para HTML, JS/CSS e imagen_, muestra las direcciones URL y sus recuentos en formato de tabla.
+- **Cargar registros de CDN**: carga el archivo de registro de CDN mediante `log_file` valor de la variable; asegúrese de actualizar su valor. También transforma este registro de CDN en la variable [DataFrame de Pandas](https://pandas.pydata.org/docs/reference/frame.html).
+- **Realizar análisis**: el primer bloque de código es _Mostrar resultado de análisis para solicitudes totales, de HTML, JS/CSS e de imagen_; proporciona gráficos de porcentaje, barras y circulares de proporción de aciertos de caché.
+El segundo bloque de código es _Las 5 direcciones URL de solicitud MISS y PASS principales para HTML, JS/CSS e imagen_; muestra las direcciones URL y sus recuentos en formato de tabla.
 
-#### Ejecute Jupyter Notebook en Experience Platform.
+#### Ejecución de Jupyter Notebook
 
->[!IMPORTANT]
->
->Si utiliza o tiene licencia para el Experience Platform, puede ejecutar Jupyter Notebook sin instalar software adicional.
-
-Para ejecutar Jupyter Notebook en Experience Platform, siga estos pasos:
+A continuación, ejecute Jupyter Notebook en Adobe Experience Platform siguiendo estos pasos:
 
 1. Inicie sesión en [Adobe Experience Cloud](https://experience.adobe.com/), en la Página de inicio > **Acceso rápido** sección > haga clic en **Experience Platform**
 
@@ -171,7 +176,7 @@ Para ejecutar Jupyter Notebook en Experience Platform, siga estos pasos:
 
 Puede mejorar Jupyter Notebook para analizar los registros de CDN en función de sus necesidades.
 
-## Optimizar configuración de caché de CDN
+## Optimizando la configuración de caché de CDN
 
 Después de analizar los registros de CDN, puede optimizar la configuración de la caché de CDN para mejorar el rendimiento del sitio. AEM La práctica recomendada es tener una proporción de visitas de caché del 90 % o superior.
 
