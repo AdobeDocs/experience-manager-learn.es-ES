@@ -9,10 +9,10 @@ level: Intermediate
 kt: 9352
 thumbnail: KT-9352.jpeg
 exl-id: 74cca740-bf5e-4cbd-9660-b0579301a3b4
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: bccaccd386d065720cddfd689cbadc220609b8a8
 workflow-type: tm+mt
-source-wordcount: '1318'
-ht-degree: 5%
+source-wordcount: '1319'
+ht-degree: 6%
 
 ---
 
@@ -45,7 +45,7 @@ Se requiere lo siguiente al configurar la red privada virtual:
    + Token de acceso (también conocido como Token de portador)
 + El ID de programa de Cloud Manager
 + Los ID de entorno de Cloud Manager
-+ Una red privada virtual, con acceso a todos los parámetros de conexión necesarios.
++ A **Basado en ruta** Red privada virtual, con acceso a todos los parámetros de conexión necesarios.
 
 Para obtener más información, consulte el siguiente tutorial sobre cómo configurar y obtener credenciales de API de Cloud Manager y cómo utilizarlas para realizar una llamada de API de Cloud Manager.
 
@@ -202,7 +202,7 @@ AEM Comience habilitando la red privada virtual en el as a Cloud Service de la r
    AEM Si su implementación de la __solamente__ requiere conexiones HTTP/HTTPS con un servicio externo, deje el `portForwards` matriz vacía, ya que estas reglas solo son necesarias para solicitudes que no son HTTP/HTTPS.
 
 
-1. Para cada entorno, valide que las reglas de enrutamiento vpn estén en vigor mediante las API de Cloud Manager [getEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) operación.
+1. Para cada entorno, valide que las reglas de enrutamiento vpn están en vigor mediante las API de Cloud Manager [getEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) operación.
 
    __getEnvironmentAdvancedNetworkingConfiguration petición HTTP__
 
@@ -257,7 +257,9 @@ AEM AEM Cuando se crean conexiones HTTP/HTTPS desde la red de redes privadas vir
 
 Al crear conexiones no HTTP/HTTPS (por ejemplo, AEM AEM SQL, SMTP, etc.) desde el punto de vista de la seguridad, la conexión debe realizarse a través de un nombre de host especial proporcionado por el usuario de la red de seguridad de la red de datos (SQL, SMTP, etc.) de la red de seguridad de la red de datos
 
-| Nombre de variable | Uso | Código Java™ | Configuración de OSGi | | - | - | - | - | | `AEM_PROXY_HOST` | Host de proxy para conexiones no HTTP/HTTPS | `System.getenv("AEM_PROXY_HOST")` | `$[env:AEM_PROXY_HOST]` |
+| Nombre de variable | Uso | Código Java™ | Configuración de OSGi |
+| - |  - | - | - |
+| `AEM_PROXY_HOST` | Host proxy para conexiones no HTTP/HTTPS | `System.getenv("AEM_PROXY_HOST")` | `$[env:AEM_PROXY_HOST]` |
 
 
 A continuación, se llama a las conexiones a servicios externos a través de `AEM_PROXY_HOST` y el puerto asignado (`portForwards.portOrig`AEM ), que luego enruta al nombre de host externo asignado (`portForwards.name`) y el puerto (`portForwards.portDest`).
@@ -308,10 +310,10 @@ AEM La configuración de Red privada virtual limita el acceso a entornos as a Cl
       </p>
     </td>
    <td>
-      <a  href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html#restrict-vpn-to-ingress-connections"><img alt="Restricciones de acceso VPN basadas en rutas a AEM Publish" src="./assets/code_examples__vpn-path-allow-list.png"/></a>
-      <div><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html#restrict-vpn-to-ingress-connections">Restricciones de acceso VPN basadas en rutas a AEM Publish</a></strong></div>
+      <a  href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html#restrict-vpn-to-ingress-connections"><img alt="AEM Restricciones de acceso a VPN basadas en rutas para publicar en la" src="./assets/code_examples__vpn-path-allow-list.png"/></a>
+      <div><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html#restrict-vpn-to-ingress-connections">AEM Restricciones de acceso a VPN basadas en rutas para publicar en la</a></strong></div>
       <p>
-            Requerir acceso VPN para rutas específicas en AEM Publish.
+            AEM Requerir acceso VPN para rutas específicas en Publicación de.
       </p>
     </td>
    <td></td>
