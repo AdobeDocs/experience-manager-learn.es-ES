@@ -10,10 +10,10 @@ topic: Development
 feature: Developer Tools
 kt: 8852
 exl-id: 983e0394-7142-481f-bd5e-6c9acefbfdd0
-source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
+source-git-commit: b770fc33ee0752911135d1a94144406bad8f295b
 workflow-type: tm+mt
-source-wordcount: '210'
-ht-degree: 2%
+source-wordcount: '211'
+ht-degree: 0%
 
 ---
 
@@ -61,4 +61,4 @@ Ahora puede configurar cualquier formulario adaptable para enviarlo a este contr
 
 ## Pasos siguientes
 
-[Habilitar componentes del portal de Forms](./forms-portal-components.md)
+[Registrar servlet mediante tipo de recurso](./registering-servlet-using-resourcetype.md)
