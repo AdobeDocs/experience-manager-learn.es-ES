@@ -8,9 +8,9 @@ role: Developer
 level: Beginner
 last-substantial-update: 2023-10-23T00:00:00Z
 kt: 14238
-source-git-commit: 5e761ef180182b47c4fd2822b0ad98484db23aab
+source-git-commit: 23459de98420d2a489288df4a1b992c17d42972e
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
@@ -46,18 +46,18 @@ public String getBlobData(String blobID) {
 
     } catch (ClientProtocolException e) {
 
-        log.error("Got Client Protocol Exception " + e.getMessage());
+        log.debug("Got Client Protocol Exception " + e.getMessage());
     } catch (IOException e) {
 
-        log.error("Got IOEXception " + e.getMessage());
+        log.debug("Got IOEXception " + e.getMessage());
     }
 
     return null;
 }
 ```
 
-Cuando se procesa un formulario adaptable con un `guid` en la dirección URL, el componente de página personalizada asociado a la plantilla recupera y rellena el formulario adaptable con los datos del almacenamiento de Azure.
-El componente de página asociado a la plantilla tiene el siguiente código JSP.
+Cuando se procesa un formulario adaptable con un parámetro guid en la dirección URL, el componente de página personalizada asociado a la plantilla recupera y rellena el formulario adaptable con los datos del almacenamiento de Azure.
+El siguiente es el código en el jsp del componente de página asociado a la plantilla
 
 ```java
 com.aemforms.saveandfetchfromazure.StoreAndFetchDataFromAzureStorage azureStorage = sling.getService(com.aemforms.saveandfetchfromazure.StoreAndFetchDataFromAzureStorage.class);
@@ -81,9 +81,11 @@ if(guid!=null&&!guid.isEmpty())
 
 * [Importar el formulario adaptable de ejemplo](./assets/bank-account-sample-form.zip)
 
-* Especifique los valores adecuados en la configuración de Azure Portal mediante la consola de configuración OSGi
+* Especifique los valores adecuados en la configuración de Azure Portal mediante la consola de configuración OSGi.
+
 * [Vista previa y envío del formulario BankAccount](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled)
 
 * Compruebe que los datos están almacenados en el contenedor de almacenamiento de Azure que elija. Copie el ID de blob.
+
 * [Vista previa del formulario BankAccount](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled&amp;guid=dba8ac0b-8be6-41f2-9929-54f627a649f6) y especifique el ID del blob como parámetro de guid en la URL para que el formulario se rellene previamente con los datos del almacenamiento de Azure
 
