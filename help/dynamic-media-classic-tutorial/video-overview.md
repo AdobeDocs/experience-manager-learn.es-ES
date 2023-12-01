@@ -2,15 +2,12 @@
 title: Información general en vídeo
 description: Dynamic Media Classic incluye conversión automática de vídeo durante la carga, flujo de vídeo a equipos de escritorio y dispositivos móviles, y conjuntos de vídeos adaptables optimizados para la reproducción en función del dispositivo y el ancho de banda. Obtenga más información sobre el vídeo en Dynamic Media Classic y obtenga una guía sobre conceptos y terminología relacionados con el vídeo. A continuación, profundice en cómo cargar y codificar vídeos, seleccione ajustes preestablecidos de vídeo para cargar, añada o edite un ajuste preestablecido de vídeo, previsualice vídeos en un visor de vídeo, implemente vídeos en sitios web y móviles, añada subtítulos y marcadores de capítulo a vídeos y publique visores de vídeo para usuarios de escritorio y móviles.
 feature: Dynamic Media Classic, Video Profiles, Viewer Presets
-doc-type: tutorial
-topics: development, authoring, configuring, videos, video-profiles
-audience: all
-activity: use
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Tutorial
 exl-id: dfbf316f-3922-4bc7-b3f3-2a5bbdeb7063
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '6118'
 ht-degree: 0%
@@ -222,7 +219,7 @@ A veces, es posible que necesite un ajuste preestablecido de vídeo especial que
 
    - Cada cuenta de vídeo de streaming tiene docenas de ajustes preestablecidos listos para usar y, si crea sus propios ajustes preestablecidos personalizados, también los verá aquí.
    - Puede filtrar por tipo mediante el menú desplegable. Los ajustes preestablecidos se dividen en Equipo, Móvil y Tablet.
-      ![imagen](assets/video-overview/video-overview-4.jpg)
+     ![imagen](assets/video-overview/video-overview-4.jpg)
 
 2. La columna Activo permite elegir si desea mostrar todos los ajustes preestablecidos al cargar o solo los que elija. Si se encuentra en EE.UU., puede que desee desmarcar los ajustes preestablecidos de PAL europeo, y si se encuentra en Reino Unido/ EMEA, desmarque los ajustes preestablecidos de NTSC.
 3. Haga clic en **Añadir** para crear un ajuste preestablecido personalizado. Se abrirá el panel Agregar ajuste preestablecido de vídeo. El proceso aquí es similar a crear un ajuste preestablecido de imagen.
@@ -243,7 +240,7 @@ Más información sobre [Adición o edición de un ajuste preestablecido de víd
 
 ## Agregar subtítulos al vídeo
 
-A veces, puede resultar útil agregar subtítulos al vídeo, por ejemplo, cuando necesita proporcionar el vídeo a espectadores en varios idiomas, pero no desea doblar el audio en otro idioma ni volver a grabar el vídeo en idiomas distintos. Además, la adición de subtítulos proporciona una buena accesibilidad para las personas con problemas de audición y que utilizan subtítulos. Dynamic Media Classic facilita la adición de subtítulos a los vídeos.
+A veces, puede resultar útil agregar subtítulos al vídeo, por ejemplo, cuando necesita proporcionar el vídeo a espectadores en varios idiomas, pero no desea doblar el audio en otro idioma ni volver a grabar el vídeo en idiomas distintos. Además, la adición de subtítulos ofrece una mayor accesibilidad para las personas con problemas de audición y que utilizan subtítulos. Dynamic Media Classic facilita la adición de subtítulos a los vídeos.
 
 Obtenga información sobre cómo [Agregar subtítulos a vídeo](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/adding-captions-video.html).
 
@@ -326,7 +323,7 @@ La configuración de la optimización para motores de búsqueda (SEO) de vídeo 
 1. Ir a **Configuración > Configuración de aplicación > Configuración de vídeo > Configuración**.
 2. En el **Modo de generación** , elija un formato de archivo. El valor predeterminado es Desactivado, por lo que, para activarlo, elija Mapa de vídeos, mRSS o Ambos.
 3. Elija si desea generar de forma automática o manual. Para simplificar, le recomendamos que lo establezca en **Modo automático**. Si selecciona Automático, defina también la **Marcar para publicación** o, de lo contrario, los archivos no se activarán. El mapa del sitio y los archivos RSS son tipos de documento XML y deben publicarse como cualquier otro recurso. Utilice uno de los modos manuales si no tiene toda la información lista ahora o solo desea realizar una generación única.
-4. Rellene las etiquetas de metadatos que se utilizan en los archivos. Este paso no es opcional. Como mínimo, debe incluir los tres campos marcados con un asterisco (\*): **Página de aterrizaje** , **Título**, y **Descripción**. Para utilizar los metadatos para estas tareas, arrastre y suelte los campos del panel Metadatos de la derecha en un campo correspondiente del formulario. Dynamic Media Classic rellenará automáticamente el campo del marcador de posición con los datos reales de cada vídeo. No es necesario utilizar campos de metadatos. En su lugar, puede escribir texto estático aquí, pero el mismo texto aparecerá para cada vídeo.
+4. Rellene las etiquetas de metadatos que se utilizan en los archivos. Este paso no es opcional. Como mínimo, debe incluir los tres campos marcados con un asterisco (\*): **Página de aterrizaje** , **Título**, y **Descripción**. Para utilizar los metadatos para estas tareas, arrastre y suelte los campos del panel Metadatos de la derecha en un campo correspondiente del formulario. Dynamic Media Classic rellenará automáticamente el campo de marcador de posición con los datos reales de cada vídeo. No es necesario utilizar campos de metadatos. En su lugar, puede escribir texto estático aquí, pero el mismo texto aparecerá para cada vídeo.
 5. Una vez que haya introducido información en los tres campos obligatorios, Dynamic Media Classic activará el **Guardar** y **Guardar y generar** botones. Haga clic en uno para guardar la configuración. Uso **Guardar** si está en modo automático y desea que Dynamic Media Classic genere los archivos más adelante. Uso **Guardar y generar** para crear el archivo inmediatamente.
 
 ### Prueba y publicación de un mapa de vídeos, una fuente mRSS o ambos archivos

@@ -1,19 +1,19 @@
 ---
 title: Herramienta de desarrollo de asset compute
-description: La herramienta de desarrollo de Asset compute AEM es un mazo de cables web local que permite a los desarrolladores configurar y ejecutar los Assets computes de Asset Computer localmente, fuera del contexto del SDK de la con recursos de Asset Compute en Adobe I/O Runtime.
+description: La herramienta de desarrollo de Asset compute AEM es un mazo de cables web local que permite a los desarrolladores configurar y ejecutar los creadores de Asset Computer localmente, fuera del contexto del SDK de la con los recursos de Asset compute de Adobe I/O Runtime.
 feature: Asset Compute Microservices
 topics: renditions, development
 version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
-kt: 6283
+jira: KT-6283
 thumbnail: 40241.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: cbe08570-e353-4daf-94d1-a91a8d63406d
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 0%
@@ -22,11 +22,11 @@ ht-degree: 0%
 
 # Herramienta de desarrollo de asset compute
 
-La herramienta de desarrollo de Asset compute AEM es un mazo de cables web local que permite a los desarrolladores configurar y ejecutar los Assets computes de Asset Computer localmente, fuera del contexto del SDK de la con recursos de Asset Compute en Adobe I/O Runtime.
+La herramienta de desarrollo de Asset compute AEM es un mazo de cables web local que permite a los desarrolladores configurar y ejecutar los creadores de Asset Computer localmente, fuera del contexto del SDK de la con los recursos de Asset compute de Adobe I/O Runtime.
 
-## Ejecutar la herramienta de desarrollo de Asset compute
+## Ejecutar la herramienta de desarrollo de Assets computes
 
-La herramienta de desarrollo de Asset compute se puede ejecutar desde la raíz del proyecto de Asset compute mediante el comando terminal:
+La herramienta de desarrollo de Assets computes se puede ejecutar desde la raíz del proyecto de Asset compute mediante el comando terminal:
 
 ```
 $ aio app run
@@ -41,13 +41,13 @@ La herramienta de desarrollo se iniciará en __http://localhost:9000__ y, autom�
 1. __Archivo de origen:__ La selección del archivo de origen se utiliza para:
    + Se seleccionó el binario de recursos que actúa como `source` binario pasado al trabajador de Asset compute
    + Cargar archivos de origen
-1. __definición de perfiles de asset compute:__ Define el trabajador de Asset compute que se ejecutará, incluidos los parámetros: incluido el punto final de la URL del trabajador, el nombre de la representación resultante y cualquier parámetro
+1. __Definición de perfiles de asset compute:__ Define el trabajador de Asset compute que se ejecutará, incluidos los parámetros: incluido el punto final de la URL del trabajador, el nombre de la representación resultante y cualquier parámetro
 1. __Ejecutar:__ El botón Ejecutar ejecuta el perfil de Asset compute tal como se define en el editor de perfiles de configuración de Asset compute
 1. __Anular:__ El botón Anular cancela una ejecución iniciada al pulsar el botón Ejecutar
 1. __Solicitud/respuesta:__ Proporciona la solicitud y respuesta HTTP hacia/desde el trabajador de Asset compute que se ejecuta en Adobe I/O Runtime. Esto puede resultar útil para la depuración
-1. __Registros de activación:__ Registros que describen la ejecución del trabajador del Asset compute, junto con los errores. Esta información también está disponible en la `aio app run` salida estándar
+1. __Registros de activación:__ Los registros que describen la ejecución del trabajador de Asset compute, junto con los errores. Esta información también está disponible en la `aio app run` salida estándar
 1. __Representaciones:__ Muestra todas las representaciones generadas por la ejecución del trabajador de Asset compute
-1. __Parámetro de consulta devToolToken:__ El token de la herramienta de desarrollo de Asset compute requiere un válido `devToolToken` parámetro de consulta que debe estar presente. Este token se genera automáticamente cada vez que se genera una nueva herramienta de desarrollo
+1. __Parámetro de consulta devToolToken:__ El token de la herramienta de desarrollo de Assets computes requiere un válido `devToolToken` parámetro de consulta que debe estar presente. Este token se genera automáticamente cada vez que se genera una nueva herramienta de desarrollo
 
 ### Ejecutar un trabajador personalizado
 
@@ -55,7 +55,7 @@ La herramienta de desarrollo se iniciará en __http://localhost:9000__ y, autom�
 
 _Pulsación de la ejecución de un trabajo de Asset compute en la herramienta de desarrollo (sin audio)_
 
-1. Asegúrese de que la herramienta de desarrollo de Asset compute se inicia desde la raíz del proyecto utilizando `aio app run` comando.
+1. Asegúrese de que la herramienta de desarrollo de Assets computes se inicia desde la raíz del proyecto utilizando `aio app run` comando.
 1. En la herramienta de desarrollo de Assets computes, cargue o seleccione un [archivo de imagen de muestra](../assets/samples/sample-file.jpg)
    + Asegúrese de que el archivo está seleccionado en la __Archivo de origen__ desplegable
 1. Revise la __definición del perfil de asset compute__ área de texto
@@ -64,19 +64,19 @@ _Pulsación de la ejecución de un trabajo de Asset compute en la herramienta de
    + Se pueden proporcionar otras claves o valores en este objeto JSON y están disponibles en el trabajador en la variable `rendition.instructions` objeto
       + Si lo desea, agregue valores para `size`, `contrast` y `brightness`:
 
-         ```json
-         {
-             "renditions": [
-                 {
-                     "worker": "...",
-                     "name": "rendition.png",
-                     "size":"800",
-                     "contrast": "0.30",
-                     "brightness": "-0.15"
-                 }
-             ]
-         }
-         ```
+        ```json
+        {
+            "renditions": [
+                {
+                    "worker": "...",
+                    "name": "rendition.png",
+                    "size":"800",
+                    "contrast": "0.30",
+                    "brightness": "-0.15"
+                }
+            ]
+        }
+        ```
 
 1. Pulse el botón __Ejecutar__ botón
 1. El __Sección Representaciones__ se rellenará con un marcador de lugar de representación

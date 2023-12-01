@@ -5,8 +5,9 @@ feature: Dispatcher
 topic: Architecture
 role: Architect
 level: Beginner
+doc-type: Tutorial
 exl-id: a25b6f74-3686-40a9-a148-4dcafeda032f
-source-git-commit: 4b47daf82e27f6bea4be30e3cdd132f497f4c609
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1864'
 ht-degree: 0%
@@ -23,7 +24,7 @@ Esbozaremos las topologías más comunes y describiremos las ventajas y dónde s
 
 ### La configuración &quot;heredada&quot;
 
-En los primeros días, el número de visitantes potenciales era pequeño, el hardware era caro y los servidores web no se veían tan críticos para el negocio como lo son hoy en día. Una configuración común era tener una instancia de Dispatcher que sirviera como equilibrador de carga y caché delante de dos o más sistemas de publicación. El servidor Apache en el núcleo de Dispatcher era muy estable y, en la mayoría de los ajustes, lo suficientemente capaz como para servir una cantidad decente de solicitudes.
+En los primeros tiempos, el número de visitantes potenciales era pequeño, el hardware era caro y los servidores web no se veían tan críticos para el negocio como lo son hoy en día. Una configuración común era tener una instancia de Dispatcher que sirviera como equilibrador de carga y caché delante de dos o más sistemas de publicación. El servidor Apache en el núcleo de Dispatcher era muy estable y, en la mayoría de los ajustes, lo suficientemente capaz como para servir una cantidad decente de solicitudes.
 
 ![Configuración de Dispatcher &quot;heredada&quot;: no es muy común según los estándares actuales](assets/chapter-2/legacy-dispatcher-setup.png)
 
@@ -131,7 +132,7 @@ Sin embargo, esto tiene un precio.
 
 En primer lugar, sacar una pierna para el mantenimiento es bastante engorroso. En realidad, para esto fue diseñado este esquema; para ser más resiliente y mantenerse en marcha por todos los medios posibles. Hemos visto planes de mantenimiento complicados sobre cómo lidiar con esto. Vuelva a configurar primero Dispatcher 2 y elimine la conexión cruzada. Reiniciando Dispatcher 2. Cerrando Dispatcher 1, actualizando Publish 1, ... etc. Debe considerar cuidadosamente si eso se escala hasta más de dos patas. Llegarán a la conclusión de que en realidad aumenta la complejidad, los costos y es una fuente formidable de errores humanos. Lo mejor sería automatizar esto. Así que mejor verifíquelo, si realmente tiene los recursos humanos para incluir esta tarea de automatización en la programación de su proyecto. Aunque puede ahorrar algunos costes de hardware con esto, puede gastar el doble en personal de TI.
 
-AEM En segundo lugar, es posible que tenga alguna aplicación de usuario en ejecución en la aplicación que requiere un inicio de sesión. AEM Las sesiones fijas se utilizan para garantizar que siempre se proporciona a un usuario desde la misma instancia de y que, de este modo, se pueda mantener el estado de la sesión en esa instancia. Con esta configuración de conexión cruzada, debe asegurarse de que las sesiones fijas funcionen correctamente en el equilibrador de carga y en los Dispatchers. No es imposible, pero debe tener en cuenta esto y añadir algunas horas de configuración y prueba adicionales, lo que, de nuevo, podría nivelar los ahorros que había planeado ahorrando hardware.
+AEM En segundo lugar, es posible que tenga alguna aplicación de usuario en ejecución en la aplicación que requiere un inicio de sesión. AEM Las sesiones fijas se utilizan para garantizar que siempre se proporciona a un usuario desde la misma instancia de y que, de este modo, se pueda mantener el estado de la sesión en esa instancia. Con esta configuración de conexión cruzada, debe asegurarse de que las sesiones fijas funcionen correctamente en el equilibrador de carga y en los Dispatchers. No es imposible, pero debe tener en cuenta esto y añadir algunas horas de configuración y prueba adicionales, que - de nuevo - podrían nivelar los ahorros que había planeado ahorrando hardware.
 
 ### Conclusión
 

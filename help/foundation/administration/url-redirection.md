@@ -6,11 +6,12 @@ topic: Development, Administration
 feature: Operations, Dispatcher
 role: Developer, Architect
 level: Intermediate
-kt: 11466
+jira: KT-11466
 last-substantial-update: 2022-10-14T00:00:00Z
 index: y
+doc-type: Article
 exl-id: 8e64f251-e5fd-4add-880e-9d54f8e501a6
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '876'
 ht-degree: 2%
@@ -24,16 +25,16 @@ La redirección de URL es un aspecto común como parte de la operación del siti
 Asegúrese de estar familiarizado con el [AEM AEM (6.x) también conocido como Classic](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/chapter-2.html#the-%E2%80%9Clegacy%E2%80%9D-setup) y [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/architecture.html#runtime-architecture) infraestructura. Las principales diferencias son las siguientes:
 
 1. AEM ha as a Cloud Service [CDN integrada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=es)AEM Sin embargo, los clientes pueden proporcionar una CDN (BYOCDN) delante de una CDN administrada por el usuario de CDN que es administrada por el usuario de CDN.
-1. AEM AEM.x si On-Premise o Adobe Managed Services (AMS) no incluye una CDN administrada por el cliente, y los clientes deben traer la suya propia.
+1. AEM.x si Managed Services AEM local o de Adobe (AMS) no incluye una CDN administrada por el cliente, y los clientes deben traer la suya propia.
 
-AEM AEM AEM as a Cloud Service Los demás servicios de la (AEM Author/Publish y Dispatcher) son conceptualmente similares entre 6.x y.
+AEM AEM AEM AEM Los demás servicios de la (Autor/Publicación de la publicación, y Dispatcher) son conceptualmente similares entre las versiones 6.x y as a Cloud Service.
 
 AEM Las soluciones de redireccionamiento de URL son las siguientes:
 
-|  | AEM Gestionado e implementado como código de proyecto de | Posibilidad de cambio por equipo de marketing/contenido | AEM compatible con el Cloud Service de | Dónde se produce la ejecución de redirección |
+|                                                   | AEM Gestionado e implementado como código de proyecto de | Posibilidad de cambio por equipo de marketing/contenido | AEM compatible con el Cloud Service de | Dónde se produce la ejecución de redirección |
 |---------------------------------------------------|:-----------------------:|:---------------------:|:---------------------:| :---------------------:|
 | [En Edge mediante traiga su propia CDN](#at-edge-via-bring-your-own-cdn) | ✘ | ✘ | ✔ | Edge/CDN |
-| [Apache `mod_rewrite` reglas como configuración de Dispatcher ](#apache-mod_rewrite-module) | ✔ | ✘ | ✔ | Dispatcher |
+| [Apache `mod_rewrite` reglas como configuración de Dispatcher](#apache-mod_rewrite-module) | ✔ | ✘ | ✔ | Dispatcher |
 | [ACS Commons - Administrador de mapas de redireccionamiento](#redirect-map-manager) | ✘ | ✔ | ✘ | Dispatcher |
 | [ACS Commons - Administrador de redireccionamiento](#redirect-manager) | ✘ | ✔ | ✔ | AEM |
 | [El `Redirect` propiedad de página](#the-redirect-page-property) | ✘ | ✔ | ✔ | AEM |
@@ -69,7 +70,7 @@ Hay dos funciones disponibles en [AEM ACS Commons](https://adobe-consulting-serv
 
 #### Administrador de redireccionamiento
 
-[Administrador de redireccionamiento](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/index.html) AEM AEM permite a los usuarios de la red de mantener y publicar fácilmente redirecciones de los recursos de la red de trabajo de la red de. La implementación se basa en el filtro de servlet Java™, por lo que el consumo de recursos de JVM es típico. AEM AEM Esta función también elimina la dependencia del equipo de desarrollo de la y de las implementaciones de la misma. El Gestor de redireccionamiento es **AEM as a Cloud Service** y **AEM.x** compatible. Mientras que la solicitud de redirección inicial debe visitar el servicio de publicación de AEM para generar la caché 301/302 (la mayoría) de los CDN 301/302 de forma predeterminada, lo que permite que las solicitudes posteriores se redirijan al perímetro/CDN.
+[Administrador de redireccionamiento](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/index.html) AEM AEM permite a los usuarios de la red de mantener y publicar fácilmente redirecciones de los recursos de la red de trabajo de la red de. La implementación se basa en el filtro de servlet Java™, por lo que el consumo de recursos de JVM es típico. AEM AEM Esta función también elimina la dependencia del equipo de desarrollo de la y de las implementaciones de la misma. El Gestor de redireccionamiento es **AEM as a Cloud Service** y **AEM.x** compatible. AEM Mientras que la solicitud de redirección inicial debe acceder al servicio de publicación para generar la caché 301/302 (mayoría) de los CDN 301/302 de forma predeterminada, lo que permite que las solicitudes posteriores se redirijan al perímetro/CDN.
 
 ### El `Redirect` propiedad de página
 

@@ -2,16 +2,13 @@
 title: Uso de la copia de idioma con AEM Sites
 description: AEM Con la mejora de la traducción del sitio del Asistente para crear copias de idioma, los usuarios pueden crear una copia de idioma a partir del idioma principal sin tener que crear una página raíz.
 feature: Language Copy
-topics: localization, authoring, content-architecture
-audience: all
-doc-type: feature video
-activity: use
 version: 6.4, 6.5
 topic: Localization
 role: User
 level: Beginner
+doc-type: Feature Video
 exl-id: 49613808-6369-4e43-bc26-fd3041265339
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 5%

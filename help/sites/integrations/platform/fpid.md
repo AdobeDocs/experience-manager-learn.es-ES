@@ -7,12 +7,12 @@ topic: Integrations, Personalization, Development
 role: Developer
 level: Beginner
 last-substantial-update: 2022-10-20T00:00:00Z
-kt: 11336
+jira: KT-11336
 thumbnail: kt-11336.jpeg
 badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 18a22f54-da58-4326-a7b0-3b1ac40ea0b5
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1040'
 ht-degree: 0%
@@ -31,26 +31,26 @@ AEM A continuación se muestra una descripción general del funcionamiento de lo
 
 ## AEM Generar y mantener el FPID con la función de
 
-AEM El servicio de publicación de AEM optimiza el rendimiento almacenando en caché las solicitudes tantas como pueda, tanto en las cachés de CDN como en las de Dispatcher de.
+AEM AEM El servicio Publicación optimiza el rendimiento almacenando en caché las solicitudes tantas como pueda, tanto en las cachés de CDN como en las de Dispatcher de la red de distribución de datos (CDN) de la red de distribución de datos ().
 
-Las solicitudes HTTP imperativas que generan la cookie FPID única por usuario y devuelven el valor FPID nunca se almacenan en caché y se atienden directamente desde AEM Publish, que puede implementar la lógica para garantizar la exclusividad.
+AEM Es imperativo que las solicitudes HTTP que generan la cookie FPID única por usuario y devuelven el valor FPID nunca se almacenen en caché y se proporcionen directamente desde Publicación en la que se pueda implementar la lógica para garantizar la exclusividad.
 
 Evite generar la cookie FPID en solicitudes de páginas web u otros recursos almacenables en caché, ya que la combinación del requisito de exclusividad de FPID haría que estos recursos no se almacenaran en caché.
 
-En el diagrama siguiente se describe cómo administra el servicio de publicación de AEM los FPID.
+AEM En el diagrama siguiente se describe cómo administra FPID el servicio de publicación de.
 
 ![AEM Diagrama de flujo de FPID y](./assets/aem-fpid-flow.png)
 
 1. AEM El explorador web realiza una solicitud para una página web alojada por el servidor de correo de. AEM La solicitud se puede servir utilizando una copia en caché de la página web desde CDN o la caché de Dispatcher de la red de distribución de contenido (CDN) o la red de distribución de datos (Dispatcher.
-1. AEM Si la página web no se puede servir desde las cachés de CDN o Dispatcher, la solicitud llega al servicio de publicación de AEM, que genera la página web solicitada.
-1. A continuación, la página web se devuelve al explorador web y se rellenan las cachés que no pudieron atender la solicitud. AEM AEM Con, espere que las tasas de aciertos de caché de CDN y Dispatcher de sean buenas en comparación con el 90 %.
-1. AJAX La página web contiene JavaScript que realiza una solicitud XHR asíncrona no almacenable en caché () a un servlet FPID personalizado en el servicio de publicación de AEM. AEM Como se trata de una solicitud no almacenable en caché (debido a su parámetro de consulta aleatorio y a los encabezados Cache-Control), CDN o Dispatcher nunca la almacenan en caché y siempre llega al servicio de publicación de AEM para generar la respuesta.
-1. El servlet FPID personalizado en el servicio de publicación de AEM procesa la solicitud y genera un nuevo FPID cuando no se encuentra ninguna cookie FPID existente, o amplía la vida de cualquier cookie FPID existente. El servlet también devuelve el FPID en el cuerpo de respuesta para que lo utilice JavaScript del lado del cliente. Afortunadamente, la lógica personalizada del servlet FPID es ligera, lo que evita que esta solicitud afecte al rendimiento del servicio de publicación de AEM.
+1. AEM AEM Si la página web no se puede servir desde las cachés de CDN o Dispatcher, la solicitud llega a la caché de Dispatcher, que genera la página web solicitada, y se envía al servicio de publicación de.
+1. A continuación, la página web se devuelve al explorador web y se rellenan las cachés que no pudieron atender la solicitud. AEM AEM Con, espere que las tasas de aciertos de caché de CDN y Dispatcher de sean superiores al 90 %.
+1. AJAX AEM La página web contiene JavaScript que realiza una solicitud XHR asíncrona () no almacenable en caché a un servlet FPID personalizado en el servicio de publicación de la publicación de la. AEM AEM Como se trata de una solicitud no almacenable en caché (debido a su parámetro de consulta aleatorio y a los encabezados Cache-Control), CDN o Dispatcher nunca la almacenan en caché, y siempre llega al servicio Publicación para generar la respuesta.
+1. AEM El servlet FPID personalizado en el servicio de publicación de procesa la solicitud y genera un nuevo FPID cuando no se encuentra ninguna cookie FPID existente, o amplía la vida de cualquier cookie FPID existente. El servlet también devuelve el FPID en el cuerpo de respuesta para que lo utilice JavaScript del lado del cliente. AEM Afortunadamente, la lógica personalizada del servlet FPID es ligera, lo que evita que esta solicitud afecte al rendimiento del servicio de publicación de la.
 1. La respuesta para la solicitud XHR vuelve al explorador con la cookie FPID y el FPID como JSON en el cuerpo de respuesta para que la utilice el SDK web de Platform.
 
 ## Muestra de código
 
-El siguiente código y configuración se pueden implementar en el servicio de publicación de AEM para crear un punto de conexión que genere o amplíe la vida de una cookie FPID existente y devuelva el FPID como JSON.
+AEM El siguiente código y configuración se pueden implementar en el servicio de publicación de para crear un punto de conexión que genere o amplíe la vida de una cookie FPID existente y devuelva el FPID como JSON.
 
 ### AEM Servlet de cookie FPID
 
@@ -157,9 +157,9 @@ Este script JavaScript generalmente se añade a la página mediante uno de los s
 + [AEM Biblioteca de cliente de](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/clientlibs.html?lang=en)
 
 AEM AEM La llamada XHR al servlet personalizado de FPID es rápida, aunque asíncrona, por lo que es posible para un usuario visitar una página web servida por el usuario y navegar fuera antes de que la solicitud se pueda completar.
-AEM Si esto ocurre, el mismo proceso volverá a intentar la carga de página siguiente de una página web desde el punto de vista de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de.
+AEM Si esto ocurre, el mismo proceso volverá a intentar la carga de página siguiente de una página web desde el punto de vista de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de.
 
-La GET AEM HTTP al servlet FPID de la (`/bin/aep/fpid`) tiene un parámetro de consulta aleatorio para garantizar que ninguna infraestructura entre el explorador y el servicio de publicación de AEM almacene en caché la respuesta de la solicitud.
+La GET AEM HTTP al servlet FPID de la (`/bin/aep/fpid`AEM ) se parametriza con un parámetro de consulta aleatorio para garantizar que cualquier infraestructura entre el explorador y el servicio de publicación no almacene en caché la respuesta de la solicitud.
 Del mismo modo, la variable `Cache-Control: no-store` Se ha agregado un encabezado de solicitud para admitir la evitación del almacenamiento en caché.
 
 AEM Tras una invocación del servlet FPID de la, el FPID se recupera de la respuesta JSON y lo utiliza el [SDK web de Platform](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/tags-configuration/install-web-sdk.html?lang=en) para enviarlo a las API de Experience Platform.

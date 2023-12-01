@@ -3,13 +3,13 @@ title: AEM Uso de texto enriquecido con sin encabezado
 description: Aprenda a crear contenido e incrustar contenido referenciado mediante un editor de texto enriquecido multilínea con fragmentos de contenido de Adobe Experience Manager AEM y cómo las API de GraphQL envían texto enriquecido como JSON para que lo consuman las aplicaciones sin encabezado.
 version: Cloud Service
 doc-type: article
-kt: 9985
+jira: KT-9985
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 level: Intermediate
 role: Developer
 exl-id: 790a33a9-b4f4-4568-8dfe-7e473a5b68b6
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1465'
 ht-degree: 0%
@@ -359,7 +359,7 @@ La API de GraphQL permite a los desarrolladores crear una consulta que incluye p
 Por ejemplo, es posible que desee:
 
 * Incluya lógica de enrutamiento personalizada para administrar vínculos a otros fragmentos de contenido al implementar una aplicación de una sola página, como React Router o Next.js
-* Procesar una imagen en línea utilizando la ruta absoluta a un entorno de publicación de AEM como `src` valor.
+* AEM Procesar una imagen en línea utilizando la ruta absoluta a un entorno de publicación de la como `src` valor.
 * Determine cómo procesar una referencia incrustada a otro fragmento de contenido con propiedades personalizadas adicionales.
 
 Utilice el `json` tipo de valor devuelto e incluir `_references` al construir una consulta GraphQL:

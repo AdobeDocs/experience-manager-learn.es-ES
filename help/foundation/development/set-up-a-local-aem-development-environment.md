@@ -3,16 +3,14 @@ title: AEM Configuración de un entorno de desarrollo de Local
 description: Aprenda a configurar un entorno de desarrollo local para Experience Manager. Familiarícese con la instalación local, Apache Maven, los entornos de desarrollo integrados y la depuración y solución de problemas. Utilice Eclipse IDE, CRXDE-Lite, Visual Studio Code e IntelliJ.
 version: 6.5
 feature: Developer Tools
-topics: development
-activity: develop
-audience: developer
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 58851624-71c9-4745-aaaf-305acf6ccb14
 last-substantial-update: 2022-07-20T00:00:00Z
+doc-type: Tutorial
 thumbnail: aem-local-dev-env.jpg
-source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2603'
 ht-degree: 2%
@@ -94,12 +92,12 @@ AEM Todos los proyectos de deben crearse a partir de la versión más reciente d
 
 >[!CAUTION]
 >
->Al iniciar un nuevo proyecto, se recomienda utilizar la versión más reciente del tipo de archivo. AEM Tenga en cuenta que hay varias versiones del tipo de archivo y que no todas las versiones son compatibles con versiones anteriores de la aplicación de la versión de la.
+>Al iniciar un nuevo proyecto, se recomienda utilizar la versión más reciente del tipo de archivo. AEM Tenga en cuenta que hay varias versiones del tipo de archivo y que no todas las versiones son compatibles con versiones anteriores de la aplicación de la versión de la aplicación de tipo de archivo.
 
 ### Etapas
 
 1. Descargar [Apache Maven](https://maven.apache.org/download.cgi)
-2. Instalar [Apache Maven](https://maven.apache.org/install.html) y asegúrese de que la instalación se ha agregado a la línea de comandos `PATH`.
+2. Instalar [Apache Maven](https://maven.apache.org/install.html?lang=es) y asegúrese de que la instalación se ha agregado a la línea de comandos `PATH`.
    * [!DNL macOS] Los usuarios de pueden instalar Maven mediante [Homebrew](https://brew.sh/)
 3. Compruebe que **[!DNL Maven]** se instala abriendo un nuevo terminal de línea de comandos y ejecutando lo siguiente:
 
@@ -174,7 +172,7 @@ El **[IntelliJ IDEA](https://www.jetbrains.com/idea/)** es un potente IDE para e
 
 **[Código de Visual Studio](https://code.visualstudio.com/)** se ha convertido rápidamente en una herramienta favorita para ***desarrolladores front-end*** con compatibilidad mejorada con JavaScript, [!DNL Intellisense]y compatibilidad con la depuración del explorador. **[!DNL Visual Studio Code]** es de código abierto, gratuito, con muchas extensiones potentes. [!DNL Visual Studio Code] AEM se puede configurar para integrarse con la ayuda de una herramienta de Adobe de, con la que se puede crear una interfaz de usuario de. **[repo](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-visual-studio-code).** AEM También hay varias extensiones compatibles con la comunidad que se pueden instalar para integrarse con el servicio de integración de.
 
-[!DNL Visual Studio Code] es una buena AEM opción para los desarrolladores de front-end que principalmente escriben código CSS/LESS y JavaScript para crear bibliotecas de cliente de. AEM Esta herramienta puede no ser la mejor opción para los nuevos desarrolladores de, ya que las definiciones de nodo (cuadros de diálogo, componentes) deben editarse en XML sin procesar. Hay varias extensiones Java™ disponibles para [!DNL Visual Studio Code], sin embargo, si se realiza principalmente el desarrollo de Java™ [!DNL Eclipse IDE] o [!DNL IntelliJ] puede ser preferible.
+[!DNL Visual Studio Code] AEM es una excelente opción para desarrolladores de front-end que principalmente escriben código CSS/LESS y JavaScript para crear bibliotecas de cliente de la aplicación de forma. AEM Esta herramienta puede no ser la mejor opción para los nuevos desarrolladores de, ya que las definiciones de nodo (cuadros de diálogo, componentes) deben editarse en XML sin procesar. Hay varias extensiones Java™ disponibles para [!DNL Visual Studio Code], sin embargo, si se realiza principalmente el desarrollo de Java™ [!DNL Eclipse IDE] o [!DNL IntelliJ] puede ser preferible.
 
 #### Vínculos importantes
 
@@ -202,7 +200,7 @@ El **[IntelliJ IDEA](https://www.jetbrains.com/idea/)** es un potente IDE para e
 
 ## Solución de problemas
 
-***Ayuda!*** ¡Mi código no funciona! Al igual que con todo el desarrollo, hay momentos (probablemente muchos) en que el código no funciona como se espera. AEM Es una plataforma poderosa, pero con bueno poder... viene buena complejidad. A continuación se presentan algunos puntos de partida de alto nivel para la resolución de problemas y el seguimiento de problemas (pero lejos de una lista exhaustiva de cosas que pueden salir mal):
+***Ayuda!*** ¡Mi código no funciona! Al igual que con todo el desarrollo, hay momentos (probablemente muchos) en que el código no funciona como se espera. AEM Es una plataforma potente, pero con gran poder... viene una gran complejidad. A continuación se presentan algunos puntos de partida de alto nivel para la resolución de problemas y el seguimiento de problemas (pero lejos de una lista exhaustiva de cosas que pueden salir mal):
 
 ### Verificar implementación de código
 

@@ -3,17 +3,17 @@ title: AEM AEM Configuración rápida sin encabezado mediante el SDK local de la
 description: Introducción a Adobe Experience Manager AEM () y GraphQL. AEM AEM Instale el SDK de la, añada contenido de ejemplo e implemente una aplicación que consuma contenido de la aplicación mediante sus API de GraphQL mediante el uso de la API de. AEM Consulte cómo alimenta la experiencia omnicanal la.
 version: Cloud Service
 mini-toc-levels: 1
-kt: 6386
+jira: KT-6386
 thumbnail: KT-6386.jpg
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: d2da6efa-1f77-4391-adda-e3180c42addc
-source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1257'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
@@ -91,7 +91,7 @@ El sitio WKND incluye las configuraciones necesarias para exponer una [Extremo d
 
    Observe que varios campos como **Título**, **Descripción**, y **Actividad** defina el fragmento.
 
-   **Fragmentos de contenido** AEM Estas son una de las formas en que se puede administrar el contenido en los recursos de la. Los fragmentos de contenido son contenidos reutilizables y no relacionados con la presentación compuestos por elementos de datos estructurados, como texto, texto enriquecido, fechas o referencias a otros fragmentos de contenido. Los fragmentos de contenido se exploran en buenos detalles más adelante en la configuración rápida.
+   **Fragmentos de contenido** AEM Estas son una de las formas en que se puede administrar el contenido en los recursos de la. Los fragmentos de contenido son contenidos reutilizables y no relacionados con la presentación compuestos por elementos de datos estructurados, como texto, texto enriquecido, fechas o referencias a otros fragmentos de contenido. Los fragmentos de contenido se exploran con mayor detalle más adelante en la configuración rápida.
 
 1. Clic **Cancelar** para cerrar el fragmento. Siéntase libre de navegar en algunas de las otras carpetas y explorar el otro contenido de Aventura.
 
@@ -120,7 +120,7 @@ AEM Uno de los objetivos de este tutorial es mostrar cómo consumir contenido de
    REACT_APP_AUTHORIZATION=admin:admin
    ```
 
-   Asegurar `REACT_APP_HOST_URI` AEM apunta a su SDK de local. Para mayor comodidad, este inicio rápido conecta la aplicación React con  **AEM Author**. **Autor** requieren autenticación, por lo que la aplicación utiliza el `admin` para establecer su conexión. La conexión de una aplicación al Autor de AEM es una práctica común durante el desarrollo, ya que facilita la iteración rápida en el contenido sin necesidad de publicar cambios.
+   Asegurar `REACT_APP_HOST_URI` AEM apunta a su SDK de local. Para mayor comodidad, este inicio rápido conecta la aplicación React con  **AEM Autor de**. **Autor** requieren autenticación, por lo que la aplicación utiliza el `admin` para establecer su conexión. AEM La conexión de una aplicación a Autor de la es una práctica común durante el desarrollo, ya que facilita la iteración rápida en el contenido sin necesidad de publicar cambios.
 
    >[!NOTE]
    >

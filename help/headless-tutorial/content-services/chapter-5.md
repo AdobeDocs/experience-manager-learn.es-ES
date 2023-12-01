@@ -5,8 +5,9 @@ feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 873d8e69-5a05-44ac-8dae-bba21f82b823
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 1%
@@ -84,9 +85,8 @@ La ruptura de este contrato en una API publicada puede provocar un comportamient
 > Este JSON se puede generar en un **ordenado** (con formato) para mejorar la legibilidad humana mediante el uso del `.tidy` selector:
 > * [http://localhost:4502/content/wknd-mobile/en/api/events.model.tidy.json](http://localhost:4502/content/wknd-mobile/en/api/events.model.tidy.json)
 
-
 ## Siguiente paso
 
-Si lo desea, instale [com.adobe.aem.guides.wknd-mobile.content.chapter-5.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) Paquete de contenido en AEM Author mediante [AEM Administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp). Este paquete contiene las configuraciones y el contenido descritos en este y en los capítulos anteriores del tutorial.
+Si lo desea, instale [com.adobe.aem.guides.wknd-mobile.content.chapter-5.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) AEM paquete de contenido en el autor de la mediante [AEM Administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp). Este paquete contiene las configuraciones y el contenido descritos en este y en los capítulos anteriores del tutorial.
 
-* [Capítulo 6: Exposición del contenido en AEM Publish como JSON](./chapter-6.md)
+* [AEM Capítulo 6: Exposición del contenido en la publicación de la documentación de la publicación de la documentación de la publicación como JSON](./chapter-6.md)

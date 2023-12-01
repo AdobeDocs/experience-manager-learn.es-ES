@@ -1,12 +1,8 @@
 ---
 title: Depuración de una implementación de etiquetas
 description: Introducción a algunas herramientas y técnicas comunes para depurar una implementación de etiquetas. Obtenga información sobre cómo utilizar la consola para desarrolladores del explorador y la extensión de Experience Platform Debugger para identificar y solucionar problemas relacionados con aspectos clave de una implementación de etiquetas.
-topics: integrations
-audience: administrator
 solution: Experience Manager, Data Collection, Experience Platform
-doc-type: technical video
-activity: setup
-kt: 6047
+jira: KT-6047
 thumbnail: 38567.jpg
 topic: Integrations
 feature: Integrations
@@ -14,8 +10,9 @@ role: Developer
 level: Intermediate
 badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
+doc-type: Tutorial
 exl-id: 647447ca-3c29-4efe-bb3a-d3f53a936a2a
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 1%

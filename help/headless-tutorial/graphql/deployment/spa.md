@@ -6,11 +6,11 @@ feature: GraphQL API
 topic: Headless, Content Management
 role: Developer, Architect
 level: Intermediate
-kt: 10587
+jira: KT-10587
 thumbnail: KT-10587.jpg
 mini-toc-levels: 2
 exl-id: 3fe175f7-6213-439a-a02c-af3f82b6e3b7
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 1%
@@ -77,13 +77,13 @@ SPA AEM A continuación, se indican las configuraciones de implementación neces
 
 #### SPA Implementación de ejemplo en dominios diferentes
 
-SPA En este ejemplo, el se implementa en un dominio Netlify (`https://main--sparkly-marzipan-b20bf8.netlify.app/`SPA AEM ) y la consume las API de GraphQL de la aplicación de publicación de AEM (`https://publish-p65804-e666805.adobeaemcloud.com`). Las siguientes capturas de pantalla resaltan el requisito CORS.
+SPA En este ejemplo, el se implementa en un dominio Netlify (`https://main--sparkly-marzipan-b20bf8.netlify.app/`SPA AEM ) y la consume API de GraphQL AEM de la Publish (`https://publish-p65804-e666805.adobeaemcloud.com`). Las siguientes capturas de pantalla resaltan el requisito CORS.
 
 1. SPA AEM El se sirve desde un dominio de Netlify, pero realiza una llamada XHR a las API de GraphQL de la en un dominio diferente. Esta solicitud entre sitios requiere [CORS](./configurations/cors.md) AEM que se debe configurar en la para permitir que la solicitud del dominio de Netlify acceda a su contenido.
 
    ![SPA SPA AEM Solicitud de atendida desde los hosts de &amp; ](assets/spa/cors-requirement.png)
 
-2. AEM Al inspeccionar la solicitud XHR a la API de GraphQL de la, el `Access-Control-Allow-Origin` AEM está presente, lo que indica al explorador web que permite que las solicitudes de este dominio de Netlify accedan a su contenido.
+2. AEM Al inspeccionar la solicitud XHR a la API de GraphQL de la, el `Access-Control-Allow-Origin` AEM está presente, lo que indica al navegador web que permite que las solicitudes de este dominio de Netlify accedan a su contenido.
 
    AEM Si el valor de [CORS](./configurations/cors.md) faltaba o no incluía el dominio Netlify, el navegador web fallaría la solicitud XHR e informaría de un error CORS.
 

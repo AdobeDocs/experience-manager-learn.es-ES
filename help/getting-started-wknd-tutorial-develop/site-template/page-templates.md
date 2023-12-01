@@ -2,16 +2,16 @@
 title: Plantillas de página
 description: Aprenda a crear y modificar plantillas de página. Comprenda la relación entre una plantilla de página y una página. Aprenda a configurar las políticas de una plantilla de página para proporcionar un control granular y coherencia de marca para el contenido.  Se crea una plantilla de artículo de revista bien estructurada basada en una maqueta de Adobe XD.
 version: Cloud Service
-type: Tutorial
 topic: Content Management
 feature: Core Components, Editable Templates, Page Editor
 role: Developer
 level: Beginner
-kt: 7498
+jira: KT-7498
 thumbnail: KT-7498.jpg
+doc-type: Tutorial
 exl-id: 261ec68f-36f4-474f-a6e4-7a2f9cea691b
 recommendations: noDisplay, noCatalog
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 2%

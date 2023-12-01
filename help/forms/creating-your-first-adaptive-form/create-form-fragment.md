@@ -2,16 +2,16 @@
 title: Crear un fragmento de formulario
 description: AEM Los formularios adaptables proporcionan un mecanismo cómodo para crear segmentos de formulario como un panel o un grupo de campos solo una vez y reutilizarlos.
 feature: Adaptive Forms
-kt: 5862
+jira: KT-5862
 thumbnail: 37325.jpg
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 86a67f43-882f-4e97-b528-17492689fcfc
-source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '110'
-ht-degree: 28%
+ht-degree: 34%
 
 ---
 
@@ -24,9 +24,9 @@ Un fragmento es una parte reutilizable de un formulario. Por ejemplo, un fragmen
 
 
 
-Consulte la [documentación de plantilla de formulario adaptable](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html) para obtener más información
+Consulte la [documentación de plantilla de formulario adaptable](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=es) para obtener más información
 
-Si es necesario, puede descargar el [Spouse-details-fragment ](assets/spouse-details-fragment.zip) AEM e importarlos a la red de mediante el [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
+Si es necesario, puede descargar el [Spouse-details-fragment](assets/spouse-details-fragment.zip) AEM e importarlos a la red de mediante el [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
 
 ## Pasos siguientes
 

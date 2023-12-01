@@ -7,10 +7,10 @@ topic: Migration
 feature: Migration
 role: Architect, Developer
 level: Beginner
-kt: 11200
+jira: KT-11200
 thumbnail: kt-11200.jpg
 exl-id: bdec6cb0-34a0-4a28-b580-4d8f6a249d01
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2296'
 ht-degree: 0%
@@ -24,7 +24,7 @@ AEM Obtenga respuestas a las preguntas más frecuentes acerca de la migración d
 ## Terminología
 
 + **AEMaaCS**: [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/introduction.html?lang=es)
-+ **BPA**: [Analizador de prácticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html)
++ **BPA**: [Analizador de prácticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=es)
 + **CTT**: [Herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html)
 + **LEVA**: [Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html)
 + **IMS**: [Sistema Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html)
@@ -36,7 +36,7 @@ Utilice la siguiente plantilla para proporcionar más detalles al crear vales de
 
 ## Preguntas generales sobre la migración de contenido
 
-### AEM P: ¿Cuáles son los diferentes métodos para migrar contenido a como Cloud Services de la aplicación de la?
+### AEM P: ¿Cuáles son los diferentes métodos para migrar contenido a como Cloud Service de la aplicación de la?
 
 Hay tres métodos diferentes disponibles
 

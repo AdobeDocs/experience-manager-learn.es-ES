@@ -3,13 +3,13 @@ title: Adición de componentes al panel Personas
 description: Configure el panel Personas agregando el fragmento de detalles del cónyuge. Se crea una regla para mostrar el fragmento de detalles del cónyuge si el estado civil de los solicitantes es casado.
 feature: Adaptive Forms
 version: 6.4,6.5
-kt: 4210
+jira: KT-4210
 thumbail: 28385.jpg
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 16170f0d-6933-47f2-aefa-951599d163c0
-source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 2%

@@ -7,13 +7,13 @@ version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
-kt: 6281
+jira: KT-6281
 thumbnail: KT-6281.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 766bfaff-ade0-41c8-a395-e79dfb4b3d76
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Los trabajadores se definen como entradas de acción de Adobe I/O Runtime en `ac
 
 Los trabajadores que accedan a otras integraciones de Adobe I/O deben establecer la variable `annotations -> require-adobe-auth` propiedad a `true` como esta [expone las credenciales de Adobe I/O del trabajador](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#access-adobe-apis) a través de `params.auth` objeto. Esto suele ser necesario cuando el trabajador llama a las API de Adobe I/O como las API de Adobe Photoshop, Lightroom o Sensei, y se puede alternar por trabajador.
 
-1. Abrir y revisar el trabajador generado automáticamente `manifest.yml`. Proyectos que contienen varios Assets computes de trabajo, deben definir una entrada para cada trabajador en el `actions` matriz.
+1. Abrir y revisar el trabajador generado automáticamente `manifest.yml`. Los proyectos que contienen varios Assets computes de trabajo deben definir una entrada para cada trabajador en la sección `actions` matriz.
 
 ```yml
 packages:
@@ -53,9 +53,9 @@ packages:
 
 Cada trabajador puede configurar el [límites](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/system_settings.md) para su contexto de ejecución en Adobe I/O Runtime. Estos valores deben ajustarse para proporcionar un tamaño óptimo para el trabajador, en función del volumen, la tasa y el tipo de recursos que calculará, así como el tipo de trabajo que realiza.
 
-Revisar [Guía de tamaño de Adobe](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#sizing-workers) antes de establecer límites. Los assets computes de trabajo pueden quedarse sin memoria al procesar los recursos, lo que provoca que se elimine la ejecución de Adobe I/O Runtime, por lo que asegúrese de que el tamaño del trabajador sea adecuado para gestionar todos los recursos candidatos.
+Revisar [Guía de tamaño de Adobe](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#sizing-workers) antes de establecer límites. Los trabajadores de asset compute pueden quedarse sin memoria al procesar los recursos, lo que provoca que se elimine la ejecución de Adobe I/O Runtime, por lo que asegúrese de que el tamaño del trabajador sea adecuado para gestionar todos los recursos candidatos.
 
-1. Añadir un `inputs` a la nueva sección `wknd-asset-compute` entrada de acciones. Esto permite ajustar el rendimiento general y la asignación de recursos del trabajador de Asset compute.
+1. Añadir un `inputs` a la nueva sección `wknd-asset-compute` entrada de acciones. Esto permite ajustar el rendimiento general y la asignación de recursos del trabajador de la Asset compute.
 
 ```yml
 packages:
@@ -105,9 +105,9 @@ La final `.manifest.yml` está disponible en Github en:
 
 ## Validación de manifest.yml
 
-Una vez generado el Asset compute `manifest.yml` se ha actualizado, ejecute la herramienta de desarrollo local y asegúrese de que el se inicia correctamente con el actualizado `manifest.yml` configuración.
+Una vez generada la Asset compute `manifest.yml` se ha actualizado, ejecute la herramienta de desarrollo local y asegúrese de que el se inicia correctamente con el actualizado `manifest.yml` configuración.
 
-Para iniciar la herramienta de desarrollo de Asset compute para el proyecto de Asset compute:
+Para iniciar la herramienta de desarrollo de Assets computes para el proyecto de Asset compute:
 
 1. Abra una línea de comandos en la raíz del proyecto de Asset compute (en VS Code esto se puede abrir directamente en el IDE a través de Terminal > Nuevo terminal) y ejecute el comando:
 
@@ -120,7 +120,7 @@ Para iniciar la herramienta de desarrollo de Asset compute para el proyecto de A
    ![ejecución de aplicación aio](assets/environment-variables/aio-app-run.png)
 
 1. Observe la salida de la línea de comandos y el explorador Web en busca de mensajes de error cuando se inicializa la herramienta de desarrollo.
-1. Para detener la herramienta de desarrollo de Asset compute, pulse `Ctrl-C` en la ventana que se ejecutó `aio app run` para finalizar el proceso.
+1. Para detener la herramienta de desarrollo de Assets computes, pulse `Ctrl-C` en la ventana que se ejecutó `aio app run` para finalizar el proceso.
 
 ## Solución de problemas
 

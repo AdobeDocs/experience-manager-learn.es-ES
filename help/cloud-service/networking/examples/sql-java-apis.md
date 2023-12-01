@@ -6,10 +6,10 @@ feature: Security
 topic: Development, Security
 role: Architect, Developer
 level: Intermediate
-kt: 9356
+jira: KT-9356
 thumbnail: KT-9356.jpeg
 exl-id: ec9d37cb-70b6-4414-a92b-3b84b3f458ab
-source-git-commit: d00e47895d1b2b6fb629b8ee9bcf6b722c127fd3
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Asegúrese de que la [apropiado](../advanced-networking.md#advanced-networking) 
 
 ## Configuración de OSGi
 
-Dado que los secretos no deben almacenarse en el código, el nombre de usuario y la contraseña de la conexión SQL se proporcionan mejor mediante [variables de configuración OSGi secretas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#secret-configuration-values), establecida mediante AIO CLI o las API de Cloud Manager.
+Dado que los secretos no deben almacenarse en el código, el nombre de usuario y la contraseña de la conexión SQL se proporcionan mejor mediante [variables de configuración OSGi secretas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#secret-configuration-values), establecida mediante AIO CLI o API de Cloud Manager.
 
 + `ui.config/src/jcr_root/apps/wknd-examples/osgiconfig/com.adobe.aem.wknd.examples.core.connections.impl.MySqlExternalServiceImpl.cfg.json`
 

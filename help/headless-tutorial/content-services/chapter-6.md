@@ -1,32 +1,33 @@
 ---
-title: 'Capítulo 6: Exposición del contenido en AEM Publish como JSON: Servicios de contenido'
-description: AEM El capítulo 6 del tutorial sin encabezado de la cubre cómo garantizar que todos los paquetes, la configuración y el contenido necesarios estén en AEM Publish para permitir el consumo desde la aplicación móvil.
+title: 'AEM Capítulo 6: Exposición del contenido en la publicación de la publicación de la documentación como JSON: Servicios de contenido'
+description: AEM AEM El capítulo 6 del tutorial sin encabezado de la cubre cómo garantizar que todos los paquetes, la configuración y el contenido necesarios estén en la publicación para permitir el consumo desde la aplicación móvil.
 feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: b33d1509-531d-40c3-9b26-1d18c8d86a97
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 0%
 
 ---
 
-# Capítulo 6: Exposición del contenido en AEM Publish para su entrega
+# AEM Capítulo 6: Exposición del contenido en la publicación de la publicación de la publicación para su entrega
 
-AEM El capítulo 6 del tutorial sin encabezado de la aplicación cubre cómo garantizar que todos los paquetes, la configuración y el contenido necesarios estén en AEM Publish para permitir el consumo por parte de la aplicación móvil.
+AEM AEM El capítulo 6 del tutorial sin encabezado de la cubre cómo garantizar que todos los paquetes, la configuración y el contenido necesarios estén en la publicación de la aplicación móvil para permitir su consumo.
 
 ## AEM Publicación del contenido para los servicios de contenido de la
 
-AEM La configuración y el contenido creados para dirigir los eventos a través de servicios de contenido deben publicarse en AEM Publish para que la aplicación móvil pueda acceder a ellos.
+AEM AEM La configuración y el contenido creados para dirigir los eventos a través de servicios de contenido de deben publicarse en Publish para que la aplicación móvil pueda acceder a ellos.
 
 AEM AEM Debido a que los servicios de contenido de la se crean a partir de la configuración (modelos de fragmentos de contenido, plantillas editables), los recursos (fragmentos de contenido, imágenes) y las páginas, todos estos elementos disfrutan automáticamente de las siguientes capacidades de administración de contenido de la, incluidas:
 
 * Flujo de trabajo para revisión y procesamiento
-* AEM y activación/desactivación para insertar y extraer contenido de los puntos finales de los servicios de contenido de AEM Publish en el servicio de publicación de contenido de AEM (en inglés).
+* AEM AEM y activación/desactivación para insertar y extraer contenido de los puntos finales de los servicios de contenido de la publicación de la de trabajo de la aplicación
 
-1. Asegúrese de que **[!DNL WKND Mobile]Paquetes de aplicaciones**, enumerados en [Capítulo 1](./chapter-1.md#wknd-mobile-application-packages), están instalados en **AEM Publish** usando [!UICONTROL Administrador de paquetes].
+1. Asegúrese de que **[!DNL WKND Mobile]Paquetes de aplicaciones**, enumerados en [Capítulo 1](./chapter-1.md#wknd-mobile-application-packages), están instalados en **AEM Publicación de** usando [!UICONTROL Administrador de paquetes].
    * [http://localhost:4503/crx/packmgr](http://localhost:4503/crx/packmgr)
 
 1. Publicar el **[!DNL WKND Mobile Events API]Plantilla editable**
@@ -57,15 +58,16 @@ AEM AEM Debido a que los servicios de contenido de la se crean a partir de la co
 
 >[!VIDEO](https://video.tv.adobe.com/v/28343?quality=12&learn=on)
 
-## Verificar publicación de AEM
+## AEM Verificar publicación de
 
-1. En un explorador web nuevo, asegúrese de que ha cerrado la sesión de AEM Publish y solicite las siguientes URL (sustituyendo `http://localhost:4503` para cualquier host: puerto en el que se esté ejecutando AEM Publish).
+1. AEM En un explorador web nuevo, asegúrese de que ha cerrado la sesión de Publicación de informes y solicite las siguientes direcciones URL (sustituyendo a `http://localhost:4503` AEM para cualquier host:puerto en el que se ejecute Publicación).
 
    * [http://localhost:4503/content/wknd-mobile/en/api/events.model.json](http://localhost:4503/content/wknd-mobile/en/api/events.model.tidy.json)
-   Estas solicitudes deben devolver la misma respuesta JSON que cuando se revisaron los puntos finales de AEM Author correspondientes. Si no es así, asegúrese de que todas las publicaciones se hayan realizado correctamente (compruebe las colas de replicación), el [!DNL WKND Mobile] `ui.apps` está instalado en AEM Publish y revise el `error.log` para AEM Publish.
+
+   AEM Estas solicitudes deben devolver la misma respuesta JSON que cuando se revisaron los puntos finales de Autor de la correspondientes. Si no es así, asegúrese de que todas las publicaciones se hayan realizado correctamente (compruebe las colas de replicación), el [!DNL WKND Mobile] `ui.apps` AEM El paquete de está instalado en el servidor de publicación de y revise el `error.log` AEM para la publicación de.
 
 ## Siguiente paso
 
-No hay paquetes adicionales para instalar. Asegúrese de que el contenido y la configuración descritos en esta sección se publiquen en AEM Publish; de lo contrario, los capítulos siguientes no funcionarán.
+No hay paquetes adicionales para instalar. AEM Asegúrese de que el contenido y la configuración descritos en esta sección se publiquen en Publicación de datos, de lo contrario los capítulos posteriores no funcionarán.
 
 * [AEM Capítulo 7: Consumo de servicios de contenido desde una aplicación móvil (en inglés)](./chapter-7.md)

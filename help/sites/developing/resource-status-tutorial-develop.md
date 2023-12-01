@@ -3,10 +3,10 @@ title: Desarrollo de estados de recursos en AEM Sites
 description: Las API de estado de recursos de Adobe Experience Manager AEM son un marco conectable para exponer la mensajería de estado en varias IU web de editor de interfaz de usuario.
 topics: development
 audience: developer
-doc-type: tutorial
+doc-type: Tutorial
 activity: develop
 version: 6.4, 6.5
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 2%

@@ -3,14 +3,14 @@ title: AEM Configuración de las herramientas de desarrollo para el desarrollo a
 description: AEM Configure una máquina de desarrollo local con todas las herramientas de línea de base necesarias para desarrollar en comparación con las herramientas de desarrollo local y las herramientas de desarrollo de la base de datos de la base de datos de la base de datos de la base de datos de manera local.
 feature: Developer Tools
 version: Cloud Service
-kt: 4267
+jira: KT-4267
 thumbnail: 25907.jpg
 topic: Development
 role: Developer
 level: Beginner
 last-substantial-update: 2022-09-03T00:00:00Z
 exl-id: 6fb3199a-02c9-48bc-a6fa-1f767cfd2f2a
-source-git-commit: 7a240374c42e2555be25e682c803f51f442fb7f7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1483'
 ht-degree: 11%

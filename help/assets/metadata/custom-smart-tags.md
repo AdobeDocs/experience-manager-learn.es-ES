@@ -3,13 +3,14 @@ title: Etiquetas inteligentes personalizadas para imágenes en AEM Assets
 description: Obtenga información sobre cómo entrenar las etiquetas inteligentes de AEM Assets para aplicar términos personalizados a los recursos.
 feature: Smart Tags
 version: 6.4, 6.5, Cloud Service
-kt: 795
+jira: KT-795
 thumbnail: 22254.jpg
 topic: Content Management
 role: Developer
 level: Intermediate
+doc-type: Feature Video
 exl-id: 06f2ae4d-c18e-45ed-96d7-ddc6f9c8d829
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 1%

@@ -3,7 +3,7 @@ title: 'AEM Aplicación Android: Ejemplo de aplicación sin encabezado para la a
 description: Las aplicaciones de ejemplo son una buena manera de explorar las capacidades sin encabezado de Adobe Experience Manager AEM (). Esta aplicación para Android muestra cómo realizar consultas en el contenido mediante las API de GraphQL AEM de la interfaz de usuario de la aplicación de.
 version: Cloud Service
 mini-toc-levels: 2
-kt: 10588
+jira: KT-10588
 thumbnail: KT-10588.jpg
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
@@ -12,7 +12,7 @@ level: Beginner
 last-substantial-update: 2023-05-10T00:00:00Z
 badgeVersions: label="AEM sin encabezado as a Cloud Service" before-title="false"
 exl-id: 7873e263-b05a-4170-87a9-59e8b7c65faa
-source-git-commit: 679b9bf9f0948e2b24d613b530d3ae644c92057d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '687'
 ht-degree: 5%
@@ -41,7 +41,7 @@ AEM La aplicación de Android funciona con las siguientes opciones de implementa
 
 + [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=es)
 
-La aplicación de Android está diseñada para conectarse a un __AEM Publish__ , sin embargo, puede obtener contenido de AEM Author si la autenticación se proporciona en la configuración de la aplicación de Android.
+La aplicación de Android está diseñada para conectarse a un __AEM Publicación de__ AEM , sin embargo, puede obtener contenido de Autor de la fuente si se proporciona autenticación en la configuración de la aplicación de Android.
 
 ## Utilización
 

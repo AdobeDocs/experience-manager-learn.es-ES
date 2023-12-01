@@ -1,15 +1,13 @@
 ---
 title: Tutorial sobre prácticas recomendadas de Dynamic Media Classic
 description: Dynamic Media Classic es el centro en torno al cual los clientes crean y suministran contenido con medios enriquecidos. Este tutorial de prácticas recomendadas se ha creado para ayudar a los usuarios actuales y nuevos de Dynamic Media Classic a comprender mejor qué pueden hacer con esta potente solución de medios enriquecidos desde el Adobe. En esta parte del tutorial, aprenderá qué es Dynamic Media Classic y echará un breve vistazo a sus funciones principales y a la interfaz de usuario.
-doc-type: tutorial
-audience: all
-activity: develop, use
 feature: Dynamic Media Classic
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Tutorial
 exl-id: 975b85af-ca6a-419e-ab2a-6e1781bfee4a
-source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '885'
 ht-degree: 0%

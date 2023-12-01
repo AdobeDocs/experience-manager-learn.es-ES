@@ -6,8 +6,9 @@ version: 6.5
 topic: Development
 role: Developer
 level: Intermediate
+doc-type: Article
 exl-id: c9ee29d4-a8a5-4e61-bc99-498674887da5
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2017'
 ht-degree: 0%

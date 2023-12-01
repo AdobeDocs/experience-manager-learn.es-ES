@@ -7,9 +7,9 @@ role: Developer
 level: Beginner, Intermediate
 version: Cloud Service
 topic: Development
-kt: 8851
+jira: KT-8851
 exl-id: e61cea37-b931-49c6-9e5d-899628535480
-source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # AEM Insertar proyecto de destino en el repositorio de Git de Cloud Manager
 
-AEM En el paso anterior sincronizamos nuestro Proyecto de con el Forms AEM adaptable y los Temas creados en la instancia de la.
+AEM En el paso anterior sincronizamos nuestro Proyecto de con el Forms AEM adaptable y las temáticas creadas en la instancia de la.
 Ahora necesitamos agregar estos cambios a nuestro repositorio local de Git y luego insertar el repositorio local de Git en el repositorio de Git de Cloud Manager.
 Abra el símbolo del sistema y vaya a c:\cloudmanager\aem-banking-app Ejecute los siguientes comandos
 

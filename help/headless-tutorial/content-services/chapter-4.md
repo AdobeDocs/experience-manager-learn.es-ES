@@ -5,8 +5,9 @@ feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: ece0bf0d-c4af-4962-9c00-f2849c2d8f6f
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '785'
 ht-degree: 0%
@@ -70,14 +71,14 @@ AEM AEM Para ello, podemos asignar estos requisitos a Componentes de la (y, en n
    * **[!DNL WKND Mobile > Image]**
 
       * El logotipo de la aplicación
+
    * **[!DNL WKND Mobile > Text]**
 
       * Texto introductorio de la aplicación
+
    * **[!DNL WKND Mobile > Content Fragment List]**
 
       * La lista de categorías de eventos disponibles para su visualización en la aplicación
-
-
 
 1. Pulse el botón **[!UICONTROL Listo]** marca de verificación en la esquina superior derecha cuando esté completo.
 1. **Actualizar** la ventana del explorador para ver los [!UICONTROL Componentes permitidos] en el carril izquierdo.
@@ -97,6 +98,6 @@ AEM AEM Para ello, podemos asignar estos requisitos a Componentes de la (y, en n
 
 ## Pasos siguientes
 
-Si lo desea, instale [com.adobe.aem.guides.wknd-mobile.content.chapter-4.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) Paquete de contenido en AEM Author mediante [AEM Administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp). Este paquete contiene las configuraciones y el contenido descritos en este y en los capítulos anteriores del tutorial.
+Si lo desea, instale [com.adobe.aem.guides.wknd-mobile.content.chapter-4.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) AEM paquete de contenido en el autor de la mediante [AEM Administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp). Este paquete contiene las configuraciones y el contenido descritos en este y en los capítulos anteriores del tutorial.
 
 * [Capítulo 5: Creación de páginas de servicios de contenido](./chapter-5.md)

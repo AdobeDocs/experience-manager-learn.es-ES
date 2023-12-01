@@ -1,19 +1,19 @@
 ---
 title: Prueba de un trabajador de Asset compute
-description: El proyecto de Asset compute define un patrón para crear y ejecutar fácilmente pruebas de los Assets computes.
+description: El proyecto de Asset compute define un patrón para crear y ejecutar fácilmente pruebas de los trabajadores de Asset compute.
 feature: Asset Compute Microservices
 topics: renditions, development
 version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
-kt: 6284
+jira: KT-6284
 thumbnail: KT-6284.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 04992caf-b715-4701-94a8-6257e9bd300c
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '629'
 ht-degree: 0%
@@ -22,11 +22,11 @@ ht-degree: 0%
 
 # Prueba de un trabajador de Asset compute
 
-El proyecto de Asset compute define un patrón para crear y ejecutar fácilmente [pruebas de los trabajadores del Asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/test-custom-application.html).
+El proyecto de Asset compute define un patrón para crear y ejecutar fácilmente [pruebas de los trabajadores de la Asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/test-custom-application.html).
 
 ## Anatomía de una prueba de trabajo
 
-Las pruebas de los trabajadores de asset compute se dividen en grupos de pruebas y, dentro de cada grupo de pruebas, en uno o más casos de prueba que afirman una condición que se debe probar.
+Las pruebas de los trabajadores de asset compute se dividen en grupos de pruebas y, dentro de cada grupo de pruebas, en uno o más casos de prueba que afirman una condición para probar.
 
 La estructura de las pruebas en un proyecto de Asset compute es la siguiente:
 
@@ -61,7 +61,7 @@ Cada conversión de prueba puede tener los siguientes archivos:
    + Use un script de shell que ajuste un comando de ejecución de docker para usar diferentes herramientas de validación
 + `mock-<host-name>.json`
    + Respuestas HTTP con formato JSON para [burla de las llamadas de servicio externas](https://www.mock-server.com/mock_server/creating_expectations.html).
-   + Opcional, solo se utiliza si el código de trabajo realiza sus propias solicitudes HTTP
+   + Opcional, sólo se utiliza si el código de trabajo realiza sus propias solicitudes HTTP
 
 ## Escritura de un caso de prueba
 

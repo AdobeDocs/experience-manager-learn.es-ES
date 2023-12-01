@@ -8,15 +8,16 @@ role: Admin
 level: Experienced
 jira: KT-12305
 last-substantial-update: 2023-03-01T00:00:00Z
+doc-type: Tutorial
 exl-id: 460e9bfa-1b15-41b9-b8b7-58b2b1252576
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 2%
 
 ---
 
-# Autenticar con AEM Author mediante OKTA
+# AEM Autenticar con OKTA para crear un
 
 > Consulte [Autenticación SAML 2.0](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html) AEM para obtener instrucciones sobre cómo configurar OKTA con as a Cloud Service de la.
 
@@ -42,9 +43,9 @@ Recuerde la contraseña del almacén de confianza. Necesitaremos usar esta contr
 * Vaya a [Almacén de confianza global](http://localhost:4502/libs/granite/security/content/truststore.html).
 * Haga clic en &quot;Agregar certificado del archivo CER&quot;. Añada el certificado IdP proporcionado por OKTA y haga clic en enviar.
 
-   >[!NOTE]
-   >
-   >No asigne el certificado a ningún usuario
+  >[!NOTE]
+  >
+  >No asigne el certificado a ningún usuario
 
 Al agregar el certificado al almacén de confianza, debe obtener el alias de certificado como se muestra en la captura de pantalla siguiente. El nombre del alias podría ser diferente en su caso.
 

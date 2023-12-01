@@ -1,16 +1,16 @@
 ---
 title: Configuración del acceso a la guía de AEM
-description: Una explicación abreviada de cómo configurar usuarios de IMS de Adobe, grupos de usuarios y perfiles de productos en Admin Console de Adobe, y cómo aprovechar estas abstracciones de IMS de Adobe en Autor de AEM para definir y administrar permisos específicos basados en grupos.
+description: Una explicación abreviada de cómo configurar los usuarios de IMS de Adobe, los grupos de usuarios y los perfiles de producto en Admin Console de Adobe AEM, y cómo aprovechar estas abstracciones de IMS de Adobe en Author para definir y administrar permisos específicos basados en grupos.
 version: Cloud Service
 topic: Administration, Security
 feature: User and Groups
 role: Admin
 level: Beginner
-kt: 6061
+jira: KT-6061
 thumbnail: 39155.jpg
 last-substantial-update: 2023-05-19T00:00:00Z
 exl-id: 0ca50fa4-0b2a-4e6d-becb-7a91fc6b4166
-source-git-commit: be1f1f3f17db25c51f327f048f522ab340deda76
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 42%
@@ -24,6 +24,6 @@ ht-degree: 42%
 >title="Configuración del acceso a la guía de AEM"
 >abstract="Una explicación abreviada de cómo configurar los usuarios, los grupos de usuarios y los perfiles de producto de Adobe IMS en Adobe Admin Console, y cómo aprovechar estas abstracciones de Adobe IMS en AEM Author para definir y administrar permisos específicos basados en grupos."
 
-Una explicación abreviada de cómo configurar usuarios de IMS de Adobe, grupos de usuarios y perfiles de productos en Admin Console de Adobe, y cómo aprovechar estas abstracciones de IMS de Adobe en Autor de AEM para definir y administrar permisos específicos basados en grupos.
+Una explicación abreviada de cómo configurar los usuarios de IMS de Adobe, los grupos de usuarios y los perfiles de producto en Admin Console de Adobe AEM, y cómo aprovechar estas abstracciones de IMS de Adobe en Author para definir y administrar permisos específicos basados en grupos.
 
 >[!VIDEO](https://video.tv.adobe.com/v/39155?quality=12&learn=on)

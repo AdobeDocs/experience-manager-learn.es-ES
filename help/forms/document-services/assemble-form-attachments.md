@@ -3,14 +3,14 @@ title: Montar archivos adjuntos del formulario
 description: Montar los archivos adjuntos del formulario en el orden especificado
 feature: Assembler
 version: 6.4,6.5
-kt: 6406
+jira: KT-6406
 thumbnail: kt-6406.jpg
 topic: Development
 role: Developer
 level: Experienced
 exl-id: a5df8780-b7ab-4b91-86f6-a24392752107
 last-substantial-update: 2021-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '633'
 ht-degree: 1%
@@ -135,7 +135,7 @@ A continuación se muestra la estructura de carpetas de carga útil después de 
 
 * Descargue la [Montar formulario de archivos adjuntos](assets/assemble-form-attachments-af.zip) a su sistema local.
 * Importe el formulario desde el[Forms Y Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) página.
-* Descargar [workflow](assets/assemble-form-attachments.zip) AEM e importarlo a la lista de proveedores mediante el administrador de paquetes.
+* Descargar [workflow](assets/assemble-form-attachments.zip) AEM e importarlo en el administrador de paquetes mediante el uso de un administrador de paquetes.
 * Descargue la [paquete personalizado](assets/assembletaskattachments.assembletaskattachments.core-1.0-SNAPSHOT.jar)
 * Implementar e iniciar el paquete utilizando [consola web](http://localhost:4502/system/console/bundles)
 * Dirija el explorador a [Formulario AssembleAttachments](http://localhost:4502/content/dam/formsanddocuments/assembleattachments/jcr:content?wcmmode=disabled)

@@ -5,8 +5,9 @@ feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: d6b6d425-842a-43a9-9041-edf78e51d962
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1391'
 ht-degree: 0%
@@ -41,7 +42,7 @@ AEM Android se utiliza para el tutorial debido a la capacidad de ejecutar un emu
 
 ### Configuración de la aplicación móvil para un uso de host no local
 
-Si AEM Publish no se está ejecutando en **http://localhost:4503** el host y el puerto se pueden actualizar en el [!DNL Settings] para señalar a la propiedad Host/puerto de publicación de AEM.
+AEM Si no se ejecuta la publicación de la en **http://localhost:4503** el host y el puerto se pueden actualizar en el [!DNL Settings] AEM para que apunte a la propiedad Publish host/port.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28344?quality=12&learn=on)
 
@@ -87,13 +88,13 @@ Debido a que la plantilla editable de la API de eventos (`/content/wknd-mobile/e
 
 ### Flujo de código de alto nivel
 
-1. Abriendo el [!DNL WKND Mobile] La aplicación invoca un `HTTP GET` Solicitud de publicación de AEM en `/content/wknd-mobile/en/api/events.model.json` para recopilar el contenido y rellenar la interfaz de usuario de la aplicación móvil.
+1. Abriendo el [!DNL WKND Mobile] La aplicación invoca un `HTTP GET` AEM solicitud a la publicación de la en `/content/wknd-mobile/en/api/events.model.json` para recopilar el contenido y rellenar la interfaz de usuario de la aplicación móvil.
 2. AEM Una vez recibido el contenido de la aplicación móvil, cada uno de los tres elementos de vista de la aplicación móvil, el elemento de visualización de la aplicación móvil se muestra como: **logotipo, línea de etiquetas y lista de eventos** AEM , se inicializan con el contenido de la lista de distribución de.
    * AEM AEM Para enlazar al contenido de la aplicación móvil al elemento de vista, el JSON que representa cada componente de la aplicación móvil, es un objeto asignado a un POJO de Java, que a su vez está enlazado al elemento de vista de Android.
       * Componente de imagen JSON → Logo POJO → Logo ImageView
       * Componente de texto JSON → TagLine POJO → Texto ImageView
       * Lista de fragmentos de contenido JSON → eventos POJO →Events RecyclerView
-   * *El código de la aplicación móvil puede asignar el JSON a los POJO debido a las ubicaciones bien conocidas dentro de la buena respuesta JSON. AEM Recuerde, las claves JSON de &quot;image&quot;, &quot;text&quot; y &quot;contentfragmentlist&quot; están dictadas por los nombres de nodo de los componentes de la de respaldo. Si estos nombres de nodo cambian, la aplicación móvil se interrumpirá, ya que no sabrá cómo obtener el contenido requerido de los datos JSON.*
+   * *El código de la aplicación móvil puede asignar el JSON a los POJO debido a las ubicaciones bien conocidas dentro de la respuesta JSON mayor. AEM Recuerde, las claves JSON de &quot;image&quot;, &quot;text&quot; y &quot;contentfragmentlist&quot; están dictadas por los nombres de nodo de los componentes de la de respaldo. Si estos nombres de nodo cambian, la aplicación móvil se interrumpirá, ya que no sabrá cómo obtener el contenido requerido de los datos JSON.*
 
 #### AEM Invocación del punto final de servicios de contenido de
 
@@ -130,7 +131,7 @@ private void initApp(final List<ViewBinder> viewBinders) {
 
 `onCreate(..)` es el vínculo de inicialización para la aplicación móvil y registra los 3 `ViewBinders` responsable de analizar el JSON y enlazar los valores al `View` elementos.
 
-`initApp(...)` A continuación, se llama a, que realiza la solicitud de GET AEM HTTP al punto final de los servicios de contenido de la aplicación en AEM Publish para recopilar el contenido. Al recibir una respuesta JSON válida, la respuesta JSON se pasa a cada `ViewBinder` que es responsable de analizar el JSON y enlazarlo al dispositivo móvil `View` elementos.
+`initApp(...)` A continuación, se llama a, que realiza la solicitud de GET AEM AEM HTTP al punto final de los servicios de contenido de la en la publicación de la aplicación para recopilar el contenido. Al recibir una respuesta JSON válida, la respuesta JSON se pasa a cada `ViewBinder` que es responsable de analizar el JSON y enlazarlo al dispositivo móvil `View` elementos.
 
 #### Análisis de la respuesta JSON
 
@@ -160,7 +161,7 @@ Desde aquí se realiza una comprobación de una clave denominada **imagen**, que
 
 Por último, el logotipo de `src` se carga en la ImageView de Android mediante la variable [!DNL Glide] biblioteca de ayuda.
 
-AEM Tenga en cuenta que debemos proporcionar el esquema, el host y el puerto de la (a través de ). `aemHost`AEM ) a la instancia de publicación de AEM, ya que los servicios de contenido solo proporcionan la ruta JCR (es decir, `/content/dam/wknd-mobile/images/wknd-logo.png`) al contenido referenciado.
+AEM Tenga en cuenta que debemos proporcionar el esquema, el host y el puerto de la (a través de ). `aemHost`AEM AEM ) a la instancia de publicación de la, ya que los servicios de contenido solo proporcionarán la ruta JCR (es decir, `/content/dam/wknd-mobile/images/wknd-logo.png`) al contenido referenciado.
 
 #### El POJO de imagen{#image-pojo}
 

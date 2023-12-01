@@ -7,13 +7,13 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
-kt: 11134
+jira: KT-11134
 thumbnail: KT-11134.jpg
 index: false
 hide: true
 hidefromtoc: true
 exl-id: 870be37f-68bb-4b0f-9918-e68b09be830e
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 2%
@@ -26,7 +26,7 @@ Esta [Reaccionar](https://reactjs.org/) AEM La aplicación muestra cómo consult
 
 Este código:
 
-+ Se conecta a un servicio de publicación de AEM y no requiere autenticación
++ AEM Se conecta a un servicio de publicación de y no requiere autenticación
 + Utiliza las consultas persistentes de WKND: `wknd-shared/adventures-all` y `wknd-shared/adventures-by-slug`
 
 Para obtener una descripción más detallada de cómo se crea esta aplicación Next.js, consulte la [ejemplo de documentación de la aplicación React](../example-apps/react-app.md).

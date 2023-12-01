@@ -1,14 +1,14 @@
 ---
 title: AEM Depuración remota del SDK de la
 description: AEM AEM El inicio rápido local del SDK de la permite la depuración remota de Java desde su IDE, lo que le permite avanzar en la ejecución de código en directo en la práctica para comprender el flujo de ejecución exacto.
-kt: 5251
+jira: KT-5251
 topic: Development
 feature: Developer Tools
 role: Developer
 level: Beginner, Intermediate
 thumbnail: 34338.jpeg
 exl-id: beac60c6-11ae-4d0c-a055-cd3d05aeb126
-source-git-commit: 45e7c58efd1d89537752fe7f890c0e80f7be7d67
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 0%
@@ -29,7 +29,7 @@ $ java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005 -jar
 
 + AEM SDK solo admite Java 11
 + `address` AEM especifica el puerto en el que escucha el usuario para las conexiones de depuración remota y se puede cambiar a cualquier puerto disponible en el equipo de desarrollo local.
-+ El último parámetro (p. ej. `aem-author-p4502.jar`AEM ) es el Jar de inicio rápido de SKD de. Puede ser el servicio de AEM Author (`aem-author-p4502.jar`) o el servicio de publicación de AEM (`aem-publish-p4503.jar`).
++ El último parámetro (p. ej. `aem-author-p4502.jar`AEM ) es el Jar de inicio rápido de SKD de. AEM Puede ser el servicio de autor de la (`aem-author-p4502.jar`AEM ) o el servicio Publicación de la (`aem-publish-p4503.jar`).
 
 
 ## Instrucciones de configuración del IDE

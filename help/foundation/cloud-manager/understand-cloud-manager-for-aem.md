@@ -2,10 +2,7 @@
 title: Comprender Adobe Cloud Manager
 description: Adobe AEM Cloud Manager proporciona una solución sencilla, pero sólida, que permite una administración sencilla, introspectivas y el autoservicio de entornos de.
 sub-product: Experience Manager Cloud Manager, Experience Manager
-topics: best-practices, cicd, development, operations, governance
-doc-type: feature video
-activity: understand
-audience: developer, implementer, administrator, architect
+doc-type: Feature Video
 topic: Architecture
 feature: Cloud Manager
 role: Architect
@@ -13,7 +10,7 @@ level: Beginner
 exl-id: 53279cbb-70c8-4319-b5bb-9a7d350a7f72
 last-substantial-update: 2022-05-10T00:00:00Z
 thumbnail: understand-cloud-manager.jpg
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 16%
@@ -45,7 +42,7 @@ Para obtener una descripción general completa, consulte la [Guía del usuario d
 
 ## Entornos {#environments}
 
-[Entornos de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/managing-environments.html) están compuestas por instancias de autor de AEM, publicación de AEM y Dispatcher. Los distintos entornos admiten diferentes funciones y se pueden utilizar con diferentes canalizaciones de CD/CI (descritas a continuación). Los entornos de Cloud Manager suelen tener un entorno de producción y un entorno de ensayo.
+[Entornos de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/managing-environments.html) AEM AEM están compuestas por instancias de autor, publicación y Dispatcher de. Los distintos entornos admiten diferentes funciones y se pueden utilizar con diferentes canalizaciones de CD/CI (descritas a continuación). Los entornos de Cloud Manager suelen tener un entorno de producción y un entorno de ensayo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26318?quality=12&learn=on)
 

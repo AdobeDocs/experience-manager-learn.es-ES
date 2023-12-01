@@ -1,13 +1,14 @@
 ---
 title: AEM Explicación de cómo codificar para el sistema de estilos de
-description: En este vídeo analizaremos la estructura del CSS (o LESS) y el JavaScript utilizados para aplicar estilo al componente de título principal de Adobe Experience Manager mediante el sistema de estilos, así como la forma en que estos estilos se aplican al HTML y al DOM.
+description: En este vídeo analizaremos la anatomía de CSS (o LESS) y JavaScript utilizados para aplicar estilo al componente de título principal de Adobe Experience Manager mediante el sistema de estilos, así como la forma en que estos estilos se aplican al HTML y al DOM.
 feature: Style System
-version: 6.4, 6.5
+version: 6.4, 6.5, Cloud Service
 topic: Development
 role: Developer
 level: Intermediate, Experienced
+doc-type: Technical Video
 exl-id: 8fbc3819-3214-4c58-8629-a27eb6f0c545
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1090'
 ht-degree: 1%
@@ -194,7 +195,7 @@ jQuery(function ($) {
 * Organice cada estilo en un archivo discreto.
    * Estos archivos se pueden combinar con LESS/SCSS `@imports` o si se requiere CSS sin procesar, mediante la inclusión de archivos de la biblioteca de cliente de HTML o sistemas personalizados de compilación de recursos front-end.
 * Evite mezclar muchos estilos complejos.
-   * Cuantos más estilos se puedan aplicar a un componente de una sola vez, buena es la variedad de permutaciones. Esto puede resultar difícil de mantener, realizar controles de calidad o garantizar la alineación de la marca.
+   * Cuantos más estilos se puedan aplicar a un componente en un solo momento, mayor será la variedad de permutaciones. Esto puede resultar difícil de mantener, realizar controles de calidad o garantizar la alineación de la marca.
 * Utilice siempre clases CSS (siguiendo la notación de BEM) para definir reglas CSS.
    * Si es absolutamente necesario seleccionar elementos sin clases CSS (es decir, elementos vacíos), muévalos más arriba en la definición CSS para dejar claro que tienen una especificidad menor que cualquier conflicto con elementos de ese tipo que no tienen clases CSS seleccionables.
 * Evite aplicar estilo al `BLOCK--MODIFIER` directamente, ya que se adjunta a la cuadrícula adaptable. Cambiar la visualización de este elemento puede afectar al procesamiento y la funcionalidad de la cuadrícula adaptable, por lo que solo aplicar estilo en este nivel cuando la intención es cambiar el comportamiento de la cuadrícula adaptable.

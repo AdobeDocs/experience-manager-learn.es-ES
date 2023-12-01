@@ -7,8 +7,9 @@ feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 46ef11a2-81bd-4ff7-b9ef-9f8cba52c6a8
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 4%
@@ -45,7 +46,7 @@ En este paso, cree un nuevo [!DNL Event] para `Punkrock Fest` en el `/content/da
 
    Tocar **[!UICONTROL Guardar]** en la barra de acciones superior para guardar los cambios.
 
-1. Uso de [AEM Administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp), instale el paquete siguiente en AEM Author. Este paquete contiene una serie de fragmentos de contenido de evento.
+1. Uso de [AEM Administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)AEM , instale el paquete siguiente en Autor de la. Este paquete contiene una serie de fragmentos de contenido de evento.
 
    [Obtener archivo: GitHub > Assets > com.adobe.aem.guides.wknd-mobile.content.chapter-3.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
 
@@ -55,7 +56,7 @@ En este paso, cree un nuevo [!DNL Event] para `Punkrock Fest` en el `/content/da
 
 *Esta sección es solo informativa y está pensada para socializar la estructura JCR subyacente de los fragmentos de contenido creados a partir de modelos de fragmentos de contenido.*
 
-1. Abrir **[CRXDE Lite](http://localhost:4502/crx/de/index.jsp)** en AEM Author.
+1. Abrir **[CRXDE Lite](http://localhost:4502/crx/de/index.jsp)** AEM en el autor de la.
 1. En CRXDE Lite, en el menú de jerarquía de la izquierda, navegue hasta [/content/dam/wknd-mobile/en/events/punkrock-fest/jcr:content](http://localhost:4502/crx/de/index.jsp#/content/dam/wknd-mobile/en/events/punkrock-fest/jcr:content) que es el nodo que representa al [!DNL Punkrock Fest] [!DNL Event] Fragmento de contenido en el JCR.
 1. Expanda el [datos](http://localhost:4502/crx/de/index.jsp#/content/dam/wknd-mobile/en/events/punkrock-fest/jcr:content/data/master) nodo.
 Revise en la **Panel Propiedades** que tiene una propiedad `cq:model` que señala a la variable [!DNL Event] Definición del modelo de fragmento de contenido.
@@ -66,6 +67,6 @@ Revise en la **Panel Propiedades** que tiene una propiedad `cq:model` que señal
 
 ## Siguiente paso
 
-Se recomienda instalar el [com.adobe.aem.guides.wknd-mobile.content.chapter-3.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) Paquete de contenido en AEM Author mediante [AEM [!UICONTROL Administrador de paquetes]](http://localhost:4502/crx/packmgr/index.jsp). Este paquete contiene las configuraciones y el contenido descritos en este y en los capítulos anteriores del tutorial.
+Se recomienda instalar el [com.adobe.aem.guides.wknd-mobile.content.chapter-3.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) AEM paquete de contenido en el autor de la mediante [AEM [!UICONTROL Administrador de paquetes]](http://localhost:4502/crx/packmgr/index.jsp). Este paquete contiene las configuraciones y el contenido descritos en este y en los capítulos anteriores del tutorial.
 
 * [AEM Capítulo 4: Definición de plantillas de servicios de contenido de la](./chapter-4.md)

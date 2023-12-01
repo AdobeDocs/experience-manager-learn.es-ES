@@ -5,8 +5,9 @@ feature: Dispatcher
 topic: Architecture
 role: Architect
 level: Intermediate
+doc-type: Tutorial
 exl-id: 7c7df08d-02a7-4548-96c0-98e27bcbc49b
-source-git-commit: 4b47daf82e27f6bea4be30e3cdd132f497f4c609
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '6187'
 ht-degree: 0%
@@ -266,7 +267,7 @@ En algunos casos sencillos, también puede llevarse bien con el uso de mapas has
 
 #### Referencias
 
-* [Caché http de ACS Commons ](https://adobe-consulting-services.github.io/acs-aem-commons/features/http-cache/index.html)
+* [Caché http de ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/http-cache/index.html)
 * [Marco de almacenamiento en caché Ehcache](https://www.ehcache.org)
 
 ### Términos básicos

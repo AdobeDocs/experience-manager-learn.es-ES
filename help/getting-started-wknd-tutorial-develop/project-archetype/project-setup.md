@@ -2,17 +2,17 @@
 title: 'Introducción a AEM Sites: configuración de proyectos'
 description: Cree un proyecto de módulo múltiple de Maven para administrar el código y las configuraciones de un sitio de Experience Manager.
 version: 6.5, Cloud Service
-type: Tutorial
 feature: AEM Project Archetype
 topic: Content Management, Development
 role: Developer
 level: Beginner
 mini-toc-levels: 1
-kt: 3418
+jira: KT-3418
 thumbnail: 30152.jpg
+doc-type: Tutorial
 exl-id: bb0cae58-79bd-427f-9116-d46afabdca59
 recommendations: noDisplay, noCatalog
-source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1839'
 ht-degree: 5%
@@ -117,7 +117,7 @@ La siguiente serie de pasos se realizará utilizando un terminal de línea de co
 AEM Genere e implemente el código del proyecto en una instancia local de, y luego, en un entorno de.
 
 1. AEM Asegúrese de que tiene una instancia de autor de la que se ejecuta localmente en el puerto **4502**.
-1. Desde la línea de comandos, vaya a `aem-guides-wknd` directorio del proyecto.
+1. Desde la línea de comandos, navegue hasta el `aem-guides-wknd` directorio del proyecto.
 
    ```shell
    $ cd aem-guides-wknd
@@ -214,9 +214,9 @@ Comprenda la tecnología subyacente de un componente de Adobe Experience Manager
 
 ## Comandos avanzados de Maven (bonus) {#advanced-maven-commands}
 
-Durante el desarrollo, es posible que esté trabajando con solo uno de los módulos y desee evitar crear todo el proyecto para ahorrar tiempo. AEM También es posible que desee implementar directamente en una instancia de publicación de AEM o quizás en una instancia de que no se esté ejecutando en el puerto 4502.
+Durante el desarrollo, es posible que esté trabajando con solo uno de los módulos y desee evitar crear todo el proyecto para ahorrar tiempo. AEM AEM También es posible que desee implementarlo directamente en una instancia de publicación de o quizás en una instancia de que no se ejecute en el puerto 4502.
 
-A continuación, vamos a revisar algunos perfiles y comandos de Maven adicionales que puede utilizar para una buena flexibilidad durante el desarrollo.
+A continuación, vamos a revisar algunos perfiles y comandos de Maven adicionales que puede utilizar para obtener una mayor flexibilidad durante el desarrollo.
 
 ### Módulo principal {#core-module}
 

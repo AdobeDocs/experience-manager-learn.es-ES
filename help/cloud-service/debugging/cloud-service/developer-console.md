@@ -7,13 +7,13 @@ version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
-kt: 5433
+jira: KT-5433
 thumbnail: kt-5433.jpg
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 0499ff9f-d452-459f-b1a2-2853a228efd1
-source-git-commit: 8ca9535866cc1a673a59ac3743847e68dfedd156
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1471'
 ht-degree: 1%
@@ -45,7 +45,7 @@ Para acceder y utilizar Developer Console, se deben otorgar los siguientes permi
 1. Asegúrese de que la organización de Adobe AEM que ha afectado a Cloud Manager y a los productos as a Cloud Service de la esté activa en el conmutador de organización de Adobe.
 1. El desarrollador debe ser miembro de [Elementos del producto de Cloud Manager __Desarrollador - Cloud Service__ Perfil del producto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-cloud-manager.html#assign-developer).
    + Si esta pertenencia no existe, el desarrollador no podrá iniciar sesión en Developer Console.
-1. El desarrollador debe ser miembro de [__AEM Usuarios de__ o __AEM Administradores de__ Perfil del producto en AEM Author o Publish](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html#aem-product-profiles).
+1. El desarrollador debe ser miembro de [__AEM Usuarios de__ o __AEM Administradores de__ AEM Perfil del producto en el autor o publicación de la](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html#aem-product-profiles).
    + Si esta pertenencia no existe, la variable [status](#status) Los volcados agotarán el tiempo de espera con un error 401 no autorizado.
 
 ### Solución de problemas del acceso a Developer Console
@@ -167,7 +167,7 @@ Servlets ayuda a depurar y determinar lo siguiente:
 
 ## Consultas
 
-AEM Las consultas ayudan a proporcionar información sobre qué y cómo se ejecutan las consultas de búsqueda en las consultas de búsqueda en el momento de la ejecución de la. Esta funcionalidad es la misma que  [AEM Herramientas > Rendimiento de las consultas del inicio rápido local del SDK ](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) consola.
+AEM Las consultas ayudan a proporcionar información sobre qué y cómo se ejecutan las consultas de búsqueda en las consultas de búsqueda en el momento de la ejecución de la. Esta funcionalidad es la misma que  [AEM Herramientas > Rendimiento de las consultas del inicio rápido local del SDK](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) consola.
 
 AEM Consultas solo funciona cuando se selecciona un pod específico, ya que abre la consola web de Rendimiento de las consultas de ese pod, lo que requiere que el desarrollador tenga acceso para iniciar sesión en el servicio de la.
 

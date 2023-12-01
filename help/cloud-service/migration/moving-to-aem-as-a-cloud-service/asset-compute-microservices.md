@@ -6,10 +6,10 @@ feature: Asset Compute Microservices
 topic: Migration, Upgrade
 role: Developer
 level: Experienced
-kt: 8635
+jira: KT-8635
 thumbnail: 336990.jpeg
 exl-id: 327e8663-086b-4b31-b159-a0cf30480b45
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 5%
@@ -26,11 +26,11 @@ Descubra cómo los microservicios de asset compute AEM de AEM Assets as a Cloud 
 
 ![Herramienta de migración del flujo de trabajo de recursos](./assets/asset-workflow-migration.png)
 
-Como parte de la refactorización del código base, utilice el [Herramienta Migración de flujo de trabajo de recursos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/asset-workflow-migration-tool.html?lang=es) para migrar los flujos de trabajo existentes y utilizar los microservicios de Asset compute AEM en as a Cloud Service.
+Como parte de la refactorización del código base, utilice el [Herramienta Migración de flujo de trabajo de recursos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/asset-workflow-migration-tool.html?lang=es) para migrar flujos de trabajo existentes y utilizar los microservicios de Asset compute AEM en as a Cloud Service.
 
 ## Actividades clave
 
-+ Utilice el [Migrador de flujo de trabajo Adobe I/O](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationworkflow-migrator) para migrar flujos de trabajo de procesamiento de recursos y utilizar los microservicios de Asset compute.
++ Utilice el [Migrador de flujo de trabajo Adobe I/O](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationworkflow-migrator) herramienta para migrar flujos de trabajo de procesamiento de recursos para utilizar los microservicios de Asset compute.
 + Configuración de un [entorno de desarrollo local](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=es) e implementar los flujos de trabajo actualizados. Puede ser necesario un ajuste manual para flujos de trabajo complejos.
 + AEM Siga iterando en un entorno de desarrollo local mediante el SDK de la hasta que el flujo de trabajo actualizado coincida con la paridad de características.
 + AEM Implemente la base de código actualizada en un entorno de desarrollo as a Cloud Service de y siga validando.

@@ -7,8 +7,9 @@ feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: f24a75f6-9062-498c-b782-7d9011aa0bcf
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 2%
@@ -25,12 +26,12 @@ AEM AEM Siempre se recomienda la versión más reciente de los componentes princ
 
 AEM Antes de iniciar este tutorial, asegúrese de que las siguientes instancias de la sean [instalado y en ejecución en el equipo local](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#Default%20Local%20Install):
 
-* **AEM Author** el **puerto 4502**
-* **AEM Publish** el **puerto 4503**
+* **AEM Autor de** el **puerto 4502**
+* **AEM Publicación de** el **puerto 4503**
 
 ## Paquetes de aplicación móvil de WKND{#wknd-mobile-application-packages}
 
-AEM Instale los siguientes paquetes de contenido de la en **ambos** AEM Author y AEM Publish, con [!DNL AEM Package Manager].
+AEM Instale los siguientes paquetes de contenido de la en **ambos** AEM AEM Publicación de autor de y publicación de recursos, usando [!DNL AEM Package Manager].
 
 * [ui.apps: GitHub > Assets > com.adobe.aem.guides.wknd-mobile.ui.apps-x.x.x.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
    * [!DNL WKND Mobile Empty Template Type]
@@ -62,7 +63,7 @@ Si encuentra algún problema con el tutorial o el código, deje un [Problema de 
 
 ## Pasar al final
 
-Para saltar al final del tutorial, la variable [com.adobe.aem.guides.wknd-mobile.content.chapter-5.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) el paquete de contenido se puede instalar en **ambos** AEM Author y AEM Publish. Tenga en cuenta que el contenido y la configuración no se mostrarán como se publican en AEM Author; sin embargo, debido a la implementación manual, todo el contenido y la configuración necesarios están disponibles en AEM Publish, lo que permite que [!DNL WKND Mobile App] para acceder al contenido.
+Para saltar al final del tutorial, la variable [com.adobe.aem.guides.wknd-mobile.content.chapter-5.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) el paquete de contenido se puede instalar en **ambos** AEM AEM Author y Publicación de la. AEM AEM Tenga en cuenta que el contenido y la configuración no se mostrarán como publicados en Autor, sin embargo, debido a la implementación manual, todo el contenido y la configuración necesarios están disponibles en la Publicación de la, lo que permite la [!DNL WKND Mobile App] para acceder al contenido.
 
 
 ## Siguiente paso

@@ -1,16 +1,17 @@
 ---
 title: AEM SPA SPA Configuración de la para el Editor de y el Control remoto
-description: AEM AEM SPA SPA Se requiere un proyecto de para configurar la compatibilidad con los requisitos de configuración y contenido a fin de permitir que el Editor de recursos de la cree un elemento de creación de un elemento remoto
+description: AEM AEM SPA SPA Se requiere un proyecto de para configurar la compatibilidad con los requisitos de configuración y contenido a fin de permitir que el Editor de la cree un elemento remoto de la configuración de la aplicación de la.
 topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
 role: Developer, Architect
 level: Beginner
-kt: 7631
+jira: KT-7631
 thumbnail: kt-7631.jpeg
 last-substantial-update: 2022-11-11T00:00:00Z
 recommendations: noDisplay, noCatalog
+doc-type: Tutorial
 exl-id: 0bdb93c9-5070-483c-a34c-f2b348bfe5ae
-source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1246'
 ht-degree: 2%
@@ -316,7 +317,7 @@ SPA AEM Esta página también se puede eliminar y volver a crear como una págin
 
 ## AEM AEM Implementar el proyecto de en el SDK de la
 
-1. Asegúrese de que el servicio de AEM Author se está ejecutando en el puerto 4502
+1. AEM Asegúrese de que el servicio de autor de la se esté ejecutando en el puerto 4502
 1. AEM Desde la línea de comandos, vaya a la raíz del proyecto de Maven, que se encuentra en la parte superior de la lista de proyectos de Maven.
 1. AEM Utilice Maven para implementar el proyecto en el servicio local de creación de SDK de la
 
@@ -330,7 +331,7 @@ SPA AEM Esta página también se puede eliminar y volver a crear como una págin
 
 AEM SPA SPA Con el proyecto de implementado, hay un último paso para preparar a Editor de la para cargar nuestro proyecto de forma remota. AEM AEM SPA En el caso de los usuarios, marque la página de la página de la que corresponda,`/content/wknd-app/us/en/home`AEM , generado por el tipo de archivo del proyecto de.
 
-1. Inicie sesión en AEM Author
+1. AEM Iniciar sesión en el autor de la
 1. Vaya a __Sites > Aplicación WKND > us > es__
 1. Seleccione el __Página de inicio de la aplicación WKND__ y pulse __Propiedades__
 

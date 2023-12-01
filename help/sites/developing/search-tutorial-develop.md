@@ -6,10 +6,11 @@ feature: Search
 topic: Development
 role: Developer
 level: Intermediate, Experienced
+doc-type: Tutorial
 exl-id: aa268c5f-d29e-4868-a58b-444379cb83be
 last-substantial-update: 2022-08-10T00:00:00Z
 thumbnail: 32090.jpg
-source-git-commit: 1ecd3c761ea7c79036b263ff8528a6cd01af0e76
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '897'
 ht-degree: 4%
@@ -40,7 +41,7 @@ La implementación de búsqueda simple es el material del **Adobe Summit AEM lab
 
 ### Capítulos {#chapters}
 
-*Los vínculos de capítulo siguientes suponen lo siguiente [Paquetes iniciales](#initialpackages) están instalados en AEM Author en`http://localhost:4502`*
+*Los vínculos de capítulo siguientes suponen lo siguiente [Paquetes iniciales](#initialpackages) AEM se instalan en el autor de la en`http://localhost:4502`*
 
 * [Capítulo 1](http://localhost:4502/editor.html/content/summit/l4080/chapter-1.html)
 * [Capítulo 2](http://localhost:4502/editor.html/content/summit/l4080/chapter-2.html)
@@ -105,8 +106,7 @@ Correcciones y aclaraciones de las discusiones del laboratorio y respuestas a la
    * Las consultas DEBEN especificar una restricción de ruta de acceso igual al ámbito de la ruta de acceso de la consulta del índice o ser un descendiente de él.
    * Índices de ámbito más amplio (por ejemplo, `/oak:index/cqPageLucene`) TAMBIÉN indexará los datos, lo que resultará en una ingesta duplicada y un coste de uso del disco.
    * Puede requerir la administración de configuraciones duplicadas (por ejemplo, agregar las mismas reglas de índice en varios índices de inquilinos si deben satisfacer los mismos conjuntos de consultas)
-   * Este enfoque se sirve mejor en el nivel de AEM Publish para la búsqueda de sitios personalizados, ya que en AEM Author, es común que las consultas se ejecuten en la parte superior del árbol de contenido para diferentes inquilinos (por ejemplo, a través de OmniSearch): diferentes definiciones de índice pueden dar como resultado un comportamiento diferente basado únicamente en la restricción de ruta.
-
+   * AEM AEM Este enfoque se sirve mejor en el nivel de publicación de la para la búsqueda de sitios personalizados, ya que en Autor es común que las consultas se ejecuten en la parte superior del árbol de contenido para diferentes inquilinos (por ejemplo, a través de OmniSearch): las diferentes definiciones de índice pueden dar como resultado un comportamiento diferente basado únicamente en la restricción de ruta.
 
 3. **¿Dónde hay una lista de todos los analizadores disponibles?**
 

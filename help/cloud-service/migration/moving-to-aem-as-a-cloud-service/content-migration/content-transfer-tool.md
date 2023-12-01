@@ -6,10 +6,10 @@ topic: Migration, Upgrade
 feature: Migration
 role: Developer
 level: Experienced
-kt: 8919
+jira: KT-8919
 thumbnail: 336970.jpeg
 exl-id: c51ce8e3-e83c-4f8b-a835-70335ed3a5b9
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 2%
@@ -32,10 +32,10 @@ AEM AEM La herramienta de transferencia de contenido está instalada en la versi
 ## Actividades clave
 
 + Descargue la [Última herramienta de transferencia de contenido](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=Content*+Transfer*+Tool*&amp;1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=2).
-+ AEM Transfiera el contenido final de AEM Author 6.3+ al servicio de creación as a Cloud Service de la.
++ AEM AEM Transfiera el contenido final de Author 6.3+ al servicio de creación as a Cloud Service de la aplicación.
    + AEM Instale la herramienta de transferencia de contenido en el autor de la versión 6.3 (o posterior) que contenga el contenido final que desea transferir.
    + Ejecute la herramienta de transferencia de contenido por lotes transfiriendo conjuntos de contenido.
-+ AEM Transfiera el contenido final de AEM Publish 6.3+ al servicio de publicación as a Cloud Service de la.
++ AEM AEM Transferir contenido final de Publicación 6.3 o posterior a la publicación as a Cloud Service de la a un servicio de publicación.
    + AEM Instale la herramienta de transferencia de contenido en la versión 6.3 o posterior de publicación de que contenga el contenido final que desea transferir.
    + Ejecute la herramienta de transferencia de contenido por lotes transfiriendo conjuntos de contenido.
 + AEM De forma opcional, &quot;recargar&quot; contenido en el as a Cloud Service de la, transfiriendo contenido nuevo desde la última transferencia de contenido

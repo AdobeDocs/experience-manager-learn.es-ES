@@ -2,18 +2,15 @@
 title: Crear un componente personalizado AEM SPA | Introducción al Editor y Angular de la
 description: AEM SPA Obtenga información sobre cómo crear un componente personalizado para utilizarlo con el Editor de. Aprenda a desarrollar cuadros de diálogo de autor y modelos Sling para ampliar el modelo JSON y rellenar un componente personalizado.
 feature: SPA Editor
-doc-type: tutorial
-topics: development
 version: Cloud Service
-activity: develop
-audience: developer
-kt: 5831
+jira: KT-5831
 thumbnail: 5831-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 6c1c7f2b-f574-458c-b744-b92419c46f23
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1471'
 ht-degree: 3%
@@ -236,6 +233,7 @@ SPA En el contexto del Editor de, los modelos Sling exponen el contenido de un c
    Se agrega alguna &quot;lógica empresarial&quot; adicional para devolver el valor del mensaje como mayúsculas. Esto nos permite ver la diferencia entre el valor sin procesar almacenado por el cuadro de diálogo del autor y el valor expuesto por el modelo Sling.
 
    >[!NOTE]
+   >
    Puede ver el [ha finalizado CustomComponentImpl.java aquí](https://github.com/adobe/aem-guides-wknd-spa/blob/Angular/custom-component-solution/core/src/main/java/com/adobe/aem/guides/wknd/spa/angular/core/models/impl/CustomComponentImpl.java).
 
 ## Actualización del componente Angular

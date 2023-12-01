@@ -2,17 +2,17 @@
 title: Implementación mediante la canalización front-end
 description: AEM Obtenga información sobre cómo crear y ejecutar una canalización front-end que genere recursos front-end e implemente en la red de distribución de contenido (CDN) integrada en as a Cloud Service.
 version: Cloud Service
-type: Tutorial
 feature: AEM Project Archetype, Cloud Manager, CI-CD Pipeline
 topic: Content Management, Development, Development, Architecture
 role: Developer, Architect, Admin
 level: Intermediate
-kt: 10689
+jira: KT-10689
 mini-toc-levels: 1
 index: y
 recommendations: noDisplay, noCatalog
+doc-type: Tutorial
 exl-id: d6da05e4-bd65-4625-b9a4-cad8eae3c9d7
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 0%

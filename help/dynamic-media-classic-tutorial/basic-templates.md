@@ -2,15 +2,12 @@
 title: Introducción a las plantillas básicas
 description: Obtenga información sobre las plantillas básicas en Dynamic Media Classic, plantillas basadas en imágenes llamadas desde el servidor de imágenes y compuestas de imágenes y texto procesado. Una plantilla se puede cambiar dinámicamente mediante la dirección URL después de publicarla. Aprenderá a cargar un PSD de Photoshop en Dynamic Media Classic para utilizarlo como base de una plantilla. Crear una plantilla básica de comercialización sencilla que consta de capas de imagen. Añada capas de texto y conviértalas en variables mediante el uso de parámetros. Construya una URL de plantilla y manipule la imagen dinámicamente a través del explorador web.
 feature: Dynamic Media Classic
-doc-type: tutorial
-topics: development, authoring, configuring
-audience: all
-activity: use
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Tutorial
 exl-id: d4e16b45-0095-44b4-8c16-89adc15e0cf9
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '6260'
 ht-degree: 0%
@@ -89,7 +86,7 @@ Antes de cargar los recursos de plantilla en Dynamic Media Classic, deberá comp
 
 ### Preparación del PSD para la carga
 
-Antes de cargar el archivo de Photoshop en Dynamic Media Classic, simplifique las capas en Photoshop para que sea más fácil trabajar con y tener la buena compatibilidad con el servidor de imágenes. El archivo de PSD a menudo constará de muchos elementos que Dynamic Media Classic no reconoce y también puede terminar con muchos fragmentos pequeños difíciles de administrar. Asegúrese de guardar una copia de seguridad del PSD maestro en caso de que necesite editar posteriormente el original. Cargará la copia simplificada, y no la maestra.
+Antes de cargar el archivo de Photoshop en Dynamic Media Classic, simplifique las capas en Photoshop para que sea más fácil trabajar con el servidor de imágenes y lograr la máxima compatibilidad con él. El archivo de PSD a menudo constará de muchos elementos que Dynamic Media Classic no reconoce y también puede terminar con muchos fragmentos pequeños difíciles de administrar. Asegúrese de guardar una copia de seguridad del PSD maestro en caso de que necesite editar posteriormente el original. Cargará la copia simplificada, y no la maestra.
 
 ![imagen](assets/basic-templates/basic-templates-2.jpg)
 

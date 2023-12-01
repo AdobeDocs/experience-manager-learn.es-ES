@@ -2,16 +2,16 @@
 title: Componente personalizado
 description: Abarca la creación de extremo a extremo de un componente de firma personalizado que muestra el contenido creado. Incluye el desarrollo de un modelo Sling para encapsular la lógica empresarial y rellenar el componente de firma y el HTL correspondiente para procesar el componente.
 version: 6.5, Cloud Service
-type: Tutorial
 feature: Core Components, APIs
 topic: Content Management, Development
 role: Developer
 level: Beginner
-kt: 4072
+jira: KT-4072
 mini-toc-levels: 1
 thumbnail: 30181.jpg
+doc-type: Tutorial
 exl-id: f54f3dc9-6ec6-4e55-9043-7a006840c905
-source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '4057'
 ht-degree: 1%
@@ -922,7 +922,7 @@ Las expresiones se añaden mediante la variable `@` en la expresión HTL.
 
 ### Visualización condicional del marcador de posición {#conditionally-displaying-the-placeholder}
 
-AEM La mayoría de los scripts HTL para componentes de utilizan el **paradigma de marcador de posición** para proporcionar una pista visual a los autores **que indica que un componente se ha creado incorrectamente y no se muestra en AEM Publish**. La convención para dirigir esta decisión es implementar un método en el modelo Sling de respaldo del componente, en este caso: `Byline.isEmpty()`.
+AEM La mayoría de los scripts HTL para componentes de utilizan el **paradigma de marcador de posición** para proporcionar una pista visual a los autores **AEM que indica que un componente se ha creado incorrectamente y no se muestra en la publicación de la**. La convención para dirigir esta decisión es implementar un método en el modelo Sling de respaldo del componente, en este caso: `Byline.isEmpty()`.
 
 El `isEmpty()` El método se invoca en el modelo Sling de firma y el resultado (o mejor dicho, es negativo, a través de la variable `!` operador) se guarda en una variable HTL llamada `hasContent`:
 
@@ -1008,7 +1008,7 @@ Para ello, vamos a incluir el recurso de firma actual, pero forzar el tipo de re
 
 ### Revisión del componente Firma sin estilo {#reviewing-the-unstyled-byline-component}
 
-1. Después de implementar la actualización, vaya a [Guía definitiva de LA Skateparks ](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html) , o donde haya añadido el componente Firma anteriormente en el capítulo.
+1. Después de implementar la actualización, vaya a [Guía definitiva de LA Skateparks](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html) , o donde haya añadido el componente Firma anteriormente en el capítulo.
 
 1. El **imagen**, **name**, y **oficios** ahora aparecen y aparece un componente sin estilo, pero funcionando como Byline.
 

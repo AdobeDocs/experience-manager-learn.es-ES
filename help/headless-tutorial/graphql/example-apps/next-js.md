@@ -7,12 +7,12 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
-kt: 10721
+jira: KT-10721
 thumbnail: KT-10721.jpg
 last-substantial-update: 2023-05-10T00:00:00Z
 badgeVersions: label="AEM sin encabezado as a Cloud Service" before-title="false"
 exl-id: 4f67bb37-416a-49d9-9d7b-06c3573909ca
-source-git-commit: 29b9e4a23d8f4ae0494fc43f76f7449062364843
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '817'
 ht-degree: 1%
@@ -38,11 +38,11 @@ Las siguientes herramientas deben instalarse localmente:
 
 AEM La aplicación Next.js funciona con las siguientes opciones de implementación de. Todas las implementaciones requieren [WKND compartido v3.0.0+](https://github.com/adobe/aem-guides-wknd-shared/releases/latest) o [Sitio WKND 3.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) AEM que se va a instalar en el entorno as a Cloud Service de la.
 
-Esta aplicación Next.js de ejemplo está diseñada para conectarse a __AEM Publish__ servicio.
+Esta aplicación Next.js de ejemplo está diseñada para conectarse a __AEM Publicación de__ servicio.
 
-### Requisitos de AEM Author
+### AEM Requisitos de autor de
 
-Next.js está diseñado para conectarse a __AEM Publish__ y acceder a contenido no protegido. Next.js se puede configurar para conectarse a AEM Author mediante el `.env` propiedades que se describen a continuación. Las imágenes obtenidas desde AEM Author requieren autenticación y, por lo tanto, el usuario que accede a la aplicación Next.js también debe iniciar sesión en AEM Author.
+Next.js está diseñado para conectarse a __AEM Publicación de__ y acceder a contenido no protegido. AEM El archivo Next.js se puede configurar para que se conecte a la interfaz de usuario de Autor mediante la interfaz de usuario de la interfaz de usuario de. `.env` propiedades que se describen a continuación. AEM AEM Las imágenes proporcionadas desde Autor de la requieren autenticación y, por lo tanto, el usuario que acceda a la aplicación Next.js también debe iniciar sesión en Autor de la.
 
 ## Utilización
 
@@ -60,7 +60,7 @@ Next.js está diseñado para conectarse a __AEM Publish__ y acceder a contenido 
    ...
    ```
 
-   Si se conecta al servicio de AEM Author, debe proporcionarse autenticación, ya que el servicio de AEM Author es seguro de forma predeterminada.
+   AEM AEM Si se conecta a servicio de Author, la autenticación debe proporcionarse ya que el servicio de Author es seguro de forma predeterminada.
 
    AEM Para usar un conjunto de cuentas de la cuenta de local `AEM_AUTH_METHOD=basic` y proporcione el nombre de usuario y la contraseña en la `AEM_AUTH_USER` y `AEM_AUTH_PASSWORD` propiedades.
 

@@ -2,16 +2,16 @@
 title: Flujo de trabajo de temas AEM | Creación rápida de sitios de
 description: Obtenga información sobre cómo actualizar las fuentes de temas de un sitio de Adobe Experience Manager para aplicar estilos específicos de marca. Aprenda a utilizar un servidor proxy para ver una vista previa activa de las actualizaciones de CSS y Javascript. AEM Este tutorial también explicará cómo implementar actualizaciones de temas en un sitio de mediante la canalización front-end de Adobe Cloud Manager.
 version: Cloud Service
-type: Tutorial
 feature: Core Components
 topic: Content Management, Development
 role: Developer
 level: Beginner
-kt: 7498
+jira: KT-7498
 thumbnail: KT-7498.jpg
+doc-type: Tutorial
 exl-id: 98946462-1536-45f9-94e2-9bc5d41902d4
 recommendations: noDisplay, noCatalog
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 1%

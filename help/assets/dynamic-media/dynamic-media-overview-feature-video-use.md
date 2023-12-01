@@ -6,8 +6,9 @@ version: 6.4, 6.5
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Feature Video
 exl-id: 59462cb4-d379-4e58-b786-ff8dbae6191c
-source-git-commit: c2e105123302ae37dc7cfca9533110a655e83858
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '842'
 ht-degree: 0%
@@ -78,7 +79,7 @@ En este vídeo se describe cómo se crean los ajustes preestablecidos de imagen 
 
 >[!VIDEO](https://video.tv.adobe.com/v/27319?quality=12&learn=on)
 
-En este vídeo se describe cómo ir más allá del cambio de tamaño de imágenes para aprovechar las funciones del propio archivo de origen (transparencia de fondo, trazados de recorte integrados y recortes y texto como variables) con los modificadores de URL de Dynamic Media.
+En este vídeo se describe cómo ir más allá del cambio de tamaño de imágenes para aprovechar las ventajas del propio archivo de origen (transparencia de fondo, trazados de recorte integrados, recortes y texto como variables) con los modificadores de URL de Dynamic Media.
 
 * Uso de modificadores de URL en el campo Modificador de Dynamic Media
 * Cambiar el color de fondo en las imágenes con transparencia

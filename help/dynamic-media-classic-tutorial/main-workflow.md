@@ -2,15 +2,12 @@
 title: Flujo de trabajo principal de Dynamic Media Classic y vista previa de recursos
 description: 'Obtenga información acerca del flujo de trabajo principal en Dynamic Media Classic, que incluye los tres pasos: Crear (y cargar), Autor (y publicar) y Entregar. A continuación, aprenda a obtener una vista previa de los recursos en Dynamic Media Classic.'
 feature: Dynamic Media Classic
-doc-type: tutorial
-topics: development, authoring, configuring, architecture, publishing
-audience: all
-activity: use
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Tutorial
 exl-id: 04aacd81-bbb2-4742-9306-f0eabc665a41
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2703'
 ht-degree: 1%
@@ -103,7 +100,7 @@ Más información sobre [Carga de archivos](https://experienceleague.adobe.com/d
 
 ## Paso 2: Crear (y publicar)
 
-Después de crear y cargar el contenido, creará nuevos recursos de medios enriquecidos a partir de los recursos cargados realizando uno o más subflujos de trabajo. Esto incluye todos los diferentes tipos de colecciones de conjuntos: conjuntos de imágenes, muestras, giros y medios mixtos, así como plantillas. También incluye vídeo. Más adelante analizaremos con mucho bueno detalle cada tipo de conjunto de recopilación de imágenes y medios enriquecidos de vídeo. Sin embargo, en casi todos los casos, para empezar, debe seleccionar uno o más recursos (o no tener ningún recurso seleccionado) y elegir el tipo de recurso que desea crear. Por ejemplo, puede seleccionar una imagen principal y algunas vistas de esa imagen y elegir crear un conjunto de imágenes, una colección de vistas alternativas del mismo producto.
+Después de crear y cargar el contenido, creará nuevos recursos de medios enriquecidos a partir de los recursos cargados realizando uno o más subflujos de trabajo. Esto incluye todos los diferentes tipos de colecciones de conjuntos: conjuntos de imágenes, muestras, giros y medios mixtos, así como plantillas. También incluye vídeo. Más adelante analizaremos con mucho más detalle cada tipo de conjunto de recopilación de imágenes y medios enriquecidos de vídeo. Sin embargo, en casi todos los casos, para empezar, debe seleccionar uno o más recursos (o no tener ningún recurso seleccionado) y elegir el tipo de recurso que desea crear. Por ejemplo, puede seleccionar una imagen principal y algunas vistas de esa imagen y elegir crear un conjunto de imágenes, una colección de vistas alternativas del mismo producto.
 
 >[!IMPORTANT]
 >

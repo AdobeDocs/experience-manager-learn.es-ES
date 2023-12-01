@@ -6,8 +6,9 @@ topic: Content Management
 feature: Templates
 role: User
 level: Intermediate
+doc-type: Tutorial
 exl-id: c418e94a-b18e-429a-b41c-2bf32e158598
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 1%
@@ -45,7 +46,7 @@ En este tutorial de vídeo se explica cómo definir un archivo de InDesign, junt
    * Desde la página maestra, copie el encabezado en la página 1 mediante Pegar en contexto
    * Repita los pasos para la página 2
 
-6. Abra el panel Estructura haciendo doble clic en cada uno de ellos para asegurarse de que todos los elementos estructurales se corresponden con los elementos reales del archivo de InDesign. Elimine los elementos que no utilice o que no necesite. Asegúrese de que todo el etiquetado sea semántico y de que los elementos estén etiquetados correctamente.
+6. Abra el panel Estructura haciendo doble clic en cada uno, para asegurarse de que todos los elementos estructurales corresponden a elementos reales en el archivo de InDesign. Elimine los elementos que no utilice o que no necesite. Asegúrese de que todo el etiquetado sea semántico y de que los elementos estén etiquetados correctamente.
 
    >[!NOTE]
    >
@@ -56,7 +57,7 @@ En este tutorial de vídeo se explica cómo definir un archivo de InDesign, junt
 >[!VIDEO](https://video.tv.adobe.com/v/19294?quality=12&learn=on)
 
 1. **Iniciar InDesign Server** en el puerto 8080.
-2. Asegúrese de que **La instancia de autor de AEM está configurada para interactuar con el InDesign Server**(y viceversa).
+2. Asegúrese de que **AEM Se ha configurado la instancia de autor de la para que interactúe con el InDesign Server**(y viceversa).
 
    * [Configuración del Cloud Service IDS Worker](http://localhost:4502/etc/cloudservices/proxy/ids.html)
    * [Configuración del Cloud Service de proxy de nube](http://localhost:4502/etc/cloudservices/proxy.html)

@@ -2,10 +2,7 @@
 title: Uso de la canalización de CI/CD en Adobe Cloud Manager
 description: Adobe AEM AEM Cloud Manager proporciona una canalización de CD/CI de autoservicio sencilla pero flexible que permite a los equipos de proyecto de la aplicación implementar código de forma rápida, segura y coherente en todos los entornos de alojados en AMS. Esta serie de vídeos explora la configuración y ejecución de la canalización de CI/CD de Cloud Manager en situaciones de error y éxito.
 sub-product: Experience Manager Cloud Manager, Experience Manager
-topics: cicd, performance, best-practices, development, governance
-doc-type: feature video
-activity: understand
-audience: all
+doc-type: Feature Video
 topic: Architecture
 feature: Cloud Manager
 role: Developer
@@ -13,7 +10,7 @@ level: Beginner
 exl-id: d5d59ef5-9343-4ac2-9053-a010decdb9b6
 last-substantial-update: 2022-08-15T00:00:00Z
 thumbnail: cm-pipeline.jpg
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 2%

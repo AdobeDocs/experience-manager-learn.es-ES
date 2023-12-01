@@ -7,8 +7,9 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
+doc-type: Article
 exl-id: 8a3f2bb9-3895-45c6-8bb5-15a6d2aac50e
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1161'
 ht-degree: 1%
@@ -58,7 +59,7 @@ Al seguir y cumplir con el diseño / estructura de la instalación, obtenemos lo
 - Evita violaciones de SELinux de contextos de archivo etiquetados incorrectamente
 
 <div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
-Las imágenes de los servidores de Adobe Managed Services suelen tener pequeñas unidades raíz del sistema operativo.  Colocamos nuestros datos en un volumen separado que normalmente está montado en "/mnt". Luego usamos ese volumen en lugar de los valores predeterminados para los siguientes directorios predeterminados
+Las imágenes de los servidores Managed Services de Adobe suelen tener pequeñas unidades raíz del sistema operativo.  Colocamos nuestros datos en un volumen separado que normalmente está montado en "/mnt". Luego usamos ese volumen en lugar de los valores predeterminados para los siguientes directorios predeterminados
 
 `DocumentRoot`
 - Predeterminado:`/var/www/html`

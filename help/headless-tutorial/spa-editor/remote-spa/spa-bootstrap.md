@@ -5,11 +5,12 @@ topic: Headless, SPA, Development
 feature: SPA Editor, APIs, Developing
 role: Developer, Architect
 level: Beginner
-kt: 7633
+jira: KT-7633
 thumbnail: kt-7633.jpeg
 last-substantial-update: 2022-11-01T00:00:00Z
+doc-type: Tutorial
 exl-id: b8d43e44-014c-4142-b89c-ff4824b89c78
-source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1200'
 ht-degree: 1%
@@ -37,7 +38,7 @@ $ npm install @adobe/aem-react-editable-components
 
 ## SPA Revisar variables de entorno
 
-SPA AEM Varias variables de entorno deben exponerse al entorno remoto para que sepa cómo interactuar con los usuarios de la interfaz de usuario de la interfaz de usuario de.
+SPA AEM Varias variables de entorno deben exponerse al entorno remoto para que sepa cómo interactuar con los usuarios de la interfaz de usuario de.
 
 1. SPA Abra el proyecto remoto de en `~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/react-app` en su IDE
 1. Abra el archivo `.env.development`
@@ -59,11 +60,11 @@ SPA AEM Varias variables de entorno deben exponerse al entorno remoto para que s
    *Recuerde que las variables de entorno personalizadas en React deben ir precedidas de `REACT_APP_`.*
 
    + `REACT_APP_HOST_URI`AEM SPA : el esquema y el host del servicio de al que se conecta el remoto.
-      + AEM AEM Este valor cambia en función de si el entorno de trabajo (local, de desarrollo, de fase o de producción) y el tipo de servicio (de autor o de publicación) son los que se utilizan para la creación y la publicación, respectivamente.
+      + AEM AEM Este valor cambia en función de si el entorno de trabajo (local, de desarrollo, de fase o de producción) y el tipo de servicio (de autor o de publicación) son los que se utilizan para la creación, o si es el de producción, o el de producción, y el de tipo de servicio (de autor o de publicación).
    + `REACT_APP_USE_PROXY`AEM : esto evita problemas de CORS durante el desarrollo, ya que indica al servidor de desarrollo de react que realice solicitudes de conexión de proxy, como las que se muestran a continuación `/content, /graphql, .model.json` usando `http-proxy-middleware` módulo.
    + `REACT_APP_AUTH_METHOD`AEM : método de autenticación para solicitudes atendidas, las opciones son &#39;service-token&#39;, &#39;dev-token&#39;, &#39;basic&#39; o dejar en blanco para caso de uso sin autenticación
-      + Necesario para su uso con AEM Author
-      + Posiblemente se requiera para su uso con AEM Publish (si el contenido está protegido)
+      + AEM Necesario para su uso con el autor de la
+      + AEM Posiblemente sea necesario para su uso con Publicación de la (si el contenido está protegido)
       + AEM El desarrollo con el SDK de admite cuentas locales a través de la autenticación básica. Este es el método que se utiliza en este tutorial.
       + AEM Al integrar con as a Cloud Service, utilice [tokens de acceso](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)
    + `REACT_APP_BASIC_AUTH_USER`AEM : la lista de __nombre de usuario__ SPA AEM por el usuario para autenticarse durante la recuperación de contenido de la.
@@ -323,7 +324,7 @@ SPA AEM SPA Ahora que la está preparada para la integración con, vamos a ejecu
 
 SPA Con la en marcha [http://localhost:3000](http://localhost:3000)AEM SPA , vamos a abrirlo con el Editor de la de datos de la aplicación. SPA SPA AEM Todavía no se puede editar nada en el, esto solo valida el en el que se ha realizado la acción.
 
-1. Inicie sesión en AEM Author
+1. AEM Iniciar sesión en el autor de la
 1. Vaya a __Sites > Aplicación WKND > us > es__
 1. Seleccione el __Página de inicio de la aplicación WKND__ y pulse __Editar__ SPA , y aparecerá el cuadro de diálogo de la.
 

@@ -6,11 +6,12 @@ topic: Integrations
 feature: Adobe Client Data Layer, Core Components
 role: Developer
 level: Intermediate, Experienced
-kt: 6265
+jira: KT-6265
 thumbnail: KT-6265.jpg
 last-substantial-update: 2022-09-20T00:00:00Z
+doc-type: Tutorial
 exl-id: 80e4cf2e-dff6-41e8-b09b-187cf2e18e00
-source-git-commit: 99b3ecf7823ff9a116c47c88abc901f8878bbd7a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2008'
 ht-degree: 2%
@@ -294,7 +295,7 @@ Los elementos en los que se puede hacer clic suelen ser un botón CTA o un vínc
 
    Debería ver el mensaje de la consola `Byline Clicked!` y el nombre de la firma.
 
-   El `cmp:click` es el más fácil de conectar con. Para componentes más complejos y para rastrear otros comportamientos, es posible añadir JavaScript personalizado para añadir y registrar nuevos eventos. Un bueno ejemplo es el componente Carrusel, que crea un déclencheur de `cmp:show` cada vez que se cambia una diapositiva. Consulte la [código fuente para obtener más información](https://github.com/adobe/aem-core-wcm-components/blob/main/content/src/content/jcr_root/apps/core/wcm/components/carousel/v1/carousel/clientlibs/site/js/carousel.js).
+   El `cmp:click` es el más fácil de conectar con. Para componentes más complejos y para rastrear otros comportamientos, es posible añadir JavaScript personalizado para añadir y registrar nuevos eventos. Un buen ejemplo es el Componente de carrusel, que déclencheur un `cmp:show` cada vez que se cambia una diapositiva. Consulte la [código fuente para obtener más información](https://github.com/adobe/aem-core-wcm-components/blob/main/content/src/content/jcr_root/apps/core/wcm/components/carousel/v1/carousel/clientlibs/site/js/carousel.js).
 
 ## Uso de la utilidad DataLayerBuilder {#data-layer-builder}
 

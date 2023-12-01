@@ -6,10 +6,11 @@ feature: APIs
 topic: Development
 role: Developer
 level: Beginner
+doc-type: Article
 exl-id: b613aa65-f64b-4851-a2af-52e28271ce88
 last-substantial-update: 2022-06-24T00:00:00Z
 thumbnail: aem-java-bp.jpg
-source-git-commit: a156877ff4439ad21fb79f231d273b8983924199
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2079'
 ht-degree: 2%
@@ -102,6 +103,7 @@ La API preferida es [AEM Generador de consultas](https://experienceleague.adobe.
 >[!CAUTION]
 >
 >AEM La API de QueryBuilder filtra un objeto ResourceResolver. Para mitigar esta fuga, siga este [ejemplo de código](https://github.com/Adobe-Consulting-Services/acs-aem-samples/blob/master/core/src/main/java/com/adobe/acs/samples/search/querybuilder/impl/SampleQueryBuilder.java#L164).
+>
 
 ## [!DNL Sling] API
 
@@ -195,7 +197,7 @@ Tenga en cuenta también la preferencia de definición del nodo de configuració
 
 ### AEM API de recursos de
 
-* Preferir [ `com.day.cq.dam.api`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/dam/api/package-summary.html) sobre [ `com.adobe.granite.asset.api`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/asset/api/package-summary.html).
+* Preferir [`com.day.cq.dam.api`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/dam/api/package-summary.html) sobre [`com.adobe.granite.asset.api`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/asset/api/package-summary.html).
 
    * Mientras que el `com.day.cq` AEM Las API de Assets proporcionan herramientas más gratuitas para los casos de uso de administración de recursos de los que se puede hacer uso.
    * Las API de Granite Assets admiten casos de uso de administración de recursos de bajo nivel (versión, relaciones).

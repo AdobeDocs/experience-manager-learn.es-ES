@@ -5,12 +5,13 @@ topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
 role: Developer, Architect
 level: Beginner
-kt: 7634
+jira: KT-7634
 thumbnail: kt-7634.jpeg
 last-substantial-update: 2022-11-11T00:00:00Z
 recommendations: noDisplay, noCatalog
+doc-type: Tutorial
 exl-id: edd18f2f-6f24-4299-a31a-54ccc4f6d86e
-source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 1%
@@ -163,7 +164,7 @@ El `Home.js` el archivo debe tener un aspecto similar al siguiente:
 
 ## AEM Cree el componente Título en el menú de
 
-1. Inicie sesión en AEM Author
+1. AEM Iniciar sesión en el autor de la
 1. Vaya a __Sitios > Aplicación WKND__
 1. Tocar __Inicio__ y seleccione __Editar__ desde la barra de acciones superior
 1. Seleccionar __Editar__ en el selector de modo de edición, en la parte superior derecha del Editor de páginas
@@ -176,7 +177,7 @@ El `Home.js` el archivo debe tener un aspecto similar al siguiente:
    + Título: __WKND Adventures__
    + Tipo/tamaño: __H2__
 
-      ![Cuadro de diálogo Componente Título](./assets/spa-fixed-component/title-dialog.png)
+     ![Cuadro de diálogo Componente Título](./assets/spa-fixed-component/title-dialog.png)
 
 1. Tocar __Listo__ para guardar
 1. AEM SPA Previsualice los cambios en el editor de

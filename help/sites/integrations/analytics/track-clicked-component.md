@@ -6,14 +6,15 @@ topic: Integrations
 feature: Adobe Client Data Layer
 role: Developer
 level: Intermediate
-kt: 6296
+jira: KT-6296
 thumbnail: KT-6296.jpg
 badgeIntegration: label="Integración" type="positive"
+doc-type: Tutorial
 exl-id: ab051363-d3e8-4c07-b1fa-3a5d24757496
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1886'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -43,13 +44,13 @@ Este tutorial es una continuación de [Recopilación de datos de página con Ado
 
 * A **Propiedad de etiqueta** con el [Extensión de Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html) activado
 * **Adobe Analytics** ID del grupo de informes de prueba/desarrollo y servidor de seguimiento. Consulte la siguiente documentación para [creación de un grupo de informes](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html).
-* [Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) extensión del explorador configurada con la propiedad de etiqueta cargada en la [Sitio WKND](https://wknd.site/us/en.html) AEM o un sitio de con la capa de datos de Adobe habilitada.
+* [Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) extensión del explorador configurada con la propiedad de etiqueta cargada en la [Sitio WKND](https://wknd.site/us/es.html) AEM o un sitio de con la capa de datos de Adobe habilitada.
 
 ## Inspect: Esquema de botón y teaser
 
 Antes de crear reglas en la propiedad de etiqueta, resulta útil revisar la [para el botón y el teaser](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#item) e inspecciónelas en la implementación de la capa de datos.
 
-1. Vaya a [Página de inicio de WKND](https://wknd.site/us/en.html)
+1. Vaya a [Página de inicio de WKND](https://wknd.site/us/es.html)
 1. Abra las herramientas para desarrolladores del explorador y vaya al **Consola**. Ejecute el siguiente comando:
 
    ```js
@@ -155,7 +156,7 @@ La capa de datos del cliente de Adobe es un **evento** capa de datos controlada.
    >
    > Puede resultar útil utilizar la variable [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) para cambiar el código incrustado a **Desarrollo** entorno.
 
-1. Vaya a [Sitio WKND](https://wknd.site/us/en.html) y abra las herramientas para desarrolladores para ver la consola. Seleccione también la opción **Conservar registro** casilla de verificación
+1. Vaya a [Sitio WKND](https://wknd.site/us/es.html) y abra las herramientas para desarrolladores para ver la consola. Seleccione también la opción **Conservar registro** casilla de verificación
 
 1. Haga clic en una de las **Teaser** o **Botón** Botones CTA para navegar a otra página.
 
@@ -289,7 +290,7 @@ Actualmente la variable **CTA seleccionada** La regla simplemente genera una ins
 
 Ahora que la variable **CTA seleccionada** La regla envía la señalización de Analytics. Debería poder ver las variables de seguimiento de Analytics mediante Experience Platform Debugger.
 
-1. Abra el [Sitio WKND](https://wknd.site/us/en.html) en el explorador.
+1. Abra el [Sitio WKND](https://wknd.site/us/es.html) en el explorador.
 1. Haga clic en el icono Debugger ![Icono de Experience Platform Debugger](assets/track-clicked-component/experience-cloud-debugger.png) para abrir Experience Platform Debugger.
 1. Asegúrese de que Debugger asigne la propiedad de etiqueta a *su* Entorno de desarrollo, tal como se ha descrito anteriormente y la variable **Registro de consola** está marcada.
 1. Abra el menú Analytics y compruebe que el grupo de informes está configurado en *su* grupo de informes.

@@ -2,15 +2,12 @@
 title: Recorte, imágenes ajustadas y destinos de zoom
 description: La imagen principal de Dynamic Media Classic admite la creación de versiones recortadas independientes de cada imagen para mostrar detalles o para muestras sin tener que crear versiones recortadas independientes de cada imagen. Obtenga información sobre cómo recortar imágenes en Dynamic Media Classic y guardarlas como un nuevo archivo maestro o una imagen virtual, guardar imágenes ajustadas virtuales y utilizarlas en lugar de recursos maestros y crear destinos de zoom en las imágenes para mostrar los detalles resaltados.
 feature: Dynamic Media Classic
-doc-type: tutorial
-topics: development, authoring, configuring
-audience: all
-activity: use
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Tutorial
 exl-id: a1d83c77-a9e4-4ed1-9b00-65fb002164c0
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2653'
 ht-degree: 0%
@@ -158,7 +155,7 @@ Este es el flujo de trabajo para crear destinos en Dynamic Media Classic.
    - Esto cargará la imagen dentro del visor de zoom personalizado predeterminado. Asegúrese de que el ajuste preestablecido del visor admite destinos de zoom: en general, todos los ajustes preestablecidos estándar que tienen la palabra &quot;-Guided&quot; se diseñaron para su uso con destinos de zoom. Para usar los destinos, pase el ratón sobre la miniatura de destino (o el icono de zona interactiva) para ver la etiqueta y haga clic en ella para ver cómo el visualizador se acerca a esa función.
    - Al igual que con cualquier otro trabajo que realice en Dynamic Media Classic, debe publicar para que los destinos de zoom estén activos en la web. Si ya está utilizando un visor que admita destinos, estos aparecerán inmediatamente (una vez que se haya borrado la caché). Sin embargo, si no utiliza un visor con Zoom Target habilitado, permanecerán ocultos.
 
-      ![imagen](assets/crop-adjusted-zoom-targets/zoom-target-green-box.jpg)
+     ![imagen](assets/crop-adjusted-zoom-targets/zoom-target-green-box.jpg)
 
 7. Además, si necesita eliminar un destino, selecciónelo haciendo clic en su miniatura y presione la tecla **Eliminar destino** o pulse la tecla DELETE del teclado.
 8. Siga haciendo clic en para añadir nuevos destinos, cambiar el nombre o el tamaño después de añadir.
@@ -176,7 +173,7 @@ Al cargar la herramienta Destino de zoom, el tamaño de vista se muestra junto a
 
 ![imagen](assets/crop-adjusted-zoom-targets/view-size.jpg)
 
-Se puede ver que el ajuste preestablecido incorporado tiene un tamaño de 900 x 550, lo que significa que el objetivo nunca puede ser más pequeño que ese tamaño bastante grande. Probablemente sea demasiado grande: si tiene una imagen de 2000 píxeles, solo puede llamar a una función que tenga un mínimo de 900 píxeles de ancho. El usuario puede hacer zoom manualmente más allá, pero no puede guiarlo más de cerca. Si establece un tamaño de vista de 350 x 350, los objetivos pueden acercarse bastante o aumentar de tamaño. Pero si desea una imagen de zoom más grande en el visor, debe crear un nuevo ajuste preestablecido, ya que el suyo está bloqueado a 350 píxeles.
+Se puede ver que el ajuste preestablecido incorporado tiene un tamaño de 900 x 550, lo que significa que el objetivo nunca puede ser más pequeño que ese tamaño bastante grande. Probablemente sea demasiado grande: si tiene una imagen de 2000 píxeles, sólo puede llamar a una función que tenga un mínimo de 900 píxeles de ancho. El usuario puede hacer zoom manualmente, pero no puede guiarlo más de cerca. Si establece un tamaño de vista de 350 x 350, los objetivos pueden acercarse bastante o aumentar de tamaño. Pero si desea una imagen de zoom más grande en el visor, debe crear un nuevo ajuste preestablecido, ya que el suyo está bloqueado a 350 píxeles.
 
 ### Creación o edición de un ajuste preestablecido de visor que admita destinos de zoom
 

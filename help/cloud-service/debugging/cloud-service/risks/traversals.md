@@ -5,27 +5,27 @@ topics: Migration
 feature: Migration
 role: Architect, Developer
 level: Beginner
-kt: 10427
+jira: KT-10427
 hidefromtoc: true
 hide: true
 index: false
 thumbnail: kt-10427.jpg
 exl-id: 8fcc9364-b84c-4458-82e2-66b47429cd4b
-source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '829'
-ht-degree: 10%
+ht-degree: 11%
 
 ---
 
 # Advertencias transversales
 
 >[!TIP]
->Marque esta página para referencia futura.
+>Añada esta página a marcadores para volver a ella en el futuro.
 
 _¿Qué son las advertencias de recorrido?_
 
-Las advertencias transversales son __aemerror__ Las instrucciones de registro que indican consultas de mal rendimiento se están ejecutando en el servicio AEM Publish. AEM Las advertencias transversales suelen manifestarse de dos formas en la forma de la:
+Las advertencias transversales son __aemerror__ AEM Las instrucciones de registro que indican consultas de mal rendimiento se están ejecutando en el servicio Publicación de. AEM Las advertencias transversales suelen manifestarse de dos formas en la forma de la:
 
 1. __Consultas lentas__ que no utilizan índices, lo que provoca tiempos de respuesta lentos.
 1. __Consultas con errores__, que lanzan un `RuntimeNodeTraversalException`, lo que provoca una experiencia rota.
@@ -108,7 +108,7 @@ La mitigación de las advertencias transversales se puede abordar mediante tres 
 
 ## 1. Analizar{#analyze}
 
-En primer lugar, identifique qué servicios de publicación de AEM muestran advertencias transversales. Para ello, desde Cloud Manager, [download Publish services&#39; `aemerror` registros](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html#cloud-manager){target="_blank"} de todos los entornos (desarrollo, ensayo y producción) en el pasado __tres días__.
+AEM En primer lugar, identifique qué servicios de publicación de datos muestran advertencias transversales. Para ello, desde Cloud Manager, [download Publish services&#39; `aemerror` registros](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html#cloud-manager){target="_blank"} de todos los entornos (desarrollo, ensayo y producción) en el pasado __tres días__.
 
 ![AEM Descargar registros as a Cloud Service](./assets/traversals/download-logs.jpg)
 
@@ -174,7 +174,7 @@ Los ajustes realizados en las consultas, los índices o ambos deben verificarse 
 
 ![Explicar consulta](./assets/traversals/verify.gif)
 
-If only [ajustes en la consulta](#adjust-the-query) AEM , la consulta se puede probar directamente en las consultas as a Cloud Service mediante la consola de desarrollador de, que permite a los usuarios probar las consultas de forma directa en las consultas de la consola de desarrollador de [Explicar consulta](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=es#queries){target="_blank"}. Explicar La consulta se ejecuta con el servicio de AEM de creación, sin embargo, dado que las definiciones de índice son las mismas en los servicios de creación y publicación, la validación de consultas con el servicio de AEM de creación es suficiente.
+If only [ajustes en la consulta](#adjust-the-query) AEM , la consulta se puede probar directamente en las consultas as a Cloud Service mediante la consola de desarrollador de, que permite a los usuarios probar las consultas de forma directa en las consultas de la consola de desarrollador de [Explicar consulta](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=es#queries){target="_blank"}. AEM AEM Explicar La consulta se ejecuta en el servicio de autor de la, sin embargo, dado que las definiciones de índice son las mismas en los servicios de autor y publicación, la validación de consultas en el servicio de autor de la es suficiente.
 
 If [ajustes en el índice](#adjust-the-index) AEM , el índice debe implementarse para que esté as a Cloud Service. Con los ajustes de índice implementados, la variable [Explicar consulta](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=es#queries){target="_blank"} se puede utilizar para ejecutar y ajustar la consulta más adelante.
 

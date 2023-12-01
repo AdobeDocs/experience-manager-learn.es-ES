@@ -7,13 +7,13 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
-kt: 11368
+jira: KT-11368
 thumbnail: KT-11368.jpg
 index: false
 hide: true
 hidefromtoc: true
 exl-id: 2d4396dc-2346-4561-b040-eba0ab62a96f
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '122'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Esta [Next.js](https://nextjs.org/) AEM La aplicación muestra cómo consultar c
 
 Este código:
 
-+ Se conecta a un servicio de publicación de AEM y no requiere autenticación
++ AEM Se conecta a un servicio de publicación de y no requiere autenticación
 + Utiliza las consultas persistentes de WKND: `wknd-shared/adventures-all` y `wknd-shared/adventures-by-slug`
 
 Para obtener una descripción más detallada de cómo se crea esta aplicación Next.js, consulte la [ejemplo de documentación de la aplicación Next.js](../example-apps/next-js.md).

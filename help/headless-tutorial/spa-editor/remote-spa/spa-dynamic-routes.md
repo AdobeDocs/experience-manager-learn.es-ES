@@ -5,12 +5,13 @@ topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
 role: Developer, Architect
 level: Beginner
-kt: 7636
+jira: KT-7636
 thumbnail: kt-7636.jpeg
 last-substantial-update: 2022-11-11T00:00:00Z
 recommendations: noDisplay, noCatalog
+doc-type: Tutorial
 exl-id: 4accc1ca-6f4b-449e-bf2e-06f19d2fe17d
-source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 1%
@@ -56,7 +57,7 @@ SPA SPA AEM SPA Las asignaciones para solicitudes de cuando el recurso se abre m
 
 Primero, cree el intermediario `adventure` Segmento de página:
 
-1. Inicie sesión en AEM Author
+1. AEM Iniciar sesión en el autor de la
 1. Vaya a __Sites > Aplicación WKND > us > es > Página de inicio de la aplicación WKND__
    + AEM SPA AEM SPA Esta página se asigna como la raíz de la, por lo que aquí es donde empezamos a crear la estructura de la página de la página para otras rutas de.
 1. Tocar __Crear__ y seleccione __Página__
@@ -102,7 +103,6 @@ Colocación de la `<ResponsiveGrid...>` en el `AdventureDetail` crea un contened
 
    + `/content/wknd-app/us/en/home/adventure/${slug}/jcr:content/root/responsivegrid`
 
-
 Actualizar `AdventureDetail.js` con las líneas siguientes:
 
 ```javascript
@@ -143,7 +143,7 @@ El `AdventureDetail.js` el archivo debe tener un aspecto similar al siguiente:
 
 Con el `<ResponsiveGrid...>` en su lugar, y su `pagePath` dinámicamente establecido en función de la aventura que se está representando, intentamos crear contenido en él.
 
-1. Inicie sesión en AEM Author
+1. AEM Iniciar sesión en el autor de la
 1. Vaya a __Sites > Aplicación WKND > us > es__
 1. __Editar__ el __Página de inicio de la aplicación WKND__ página
    + Vaya a __Bali Surf Camp__ SPA ruta en la lista de rutas para editarla

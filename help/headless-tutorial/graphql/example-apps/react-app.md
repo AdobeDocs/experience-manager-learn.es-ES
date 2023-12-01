@@ -3,7 +3,7 @@ title: 'AEM Aplicación React: Ejemplo De Aplicación Sin Encabezado'
 description: Las aplicaciones de ejemplo son una buena manera de explorar las capacidades sin encabezado de Adobe Experience Manager AEM (). AEM Esta aplicación de React muestra cómo consultar contenido mediante API de GraphQL de utilizando consultas persistentes.
 version: Cloud Service
 mini-toc-levels: 1
-kt: 10715
+jira: KT-10715
 thumbnail: KT-10715.jpg
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
@@ -12,10 +12,10 @@ level: Beginner
 last-substantial-update: 2023-05-10T00:00:00Z
 exl-id: b1ab2a13-8b0e-4d7f-82b5-78b1dda248ba
 badgeVersions: label="AEM sin encabezado as a Cloud Service" before-title="false"
-source-git-commit: 6f874fd3da09ce808920a7f8ea3386beda726272
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '898'
-ht-degree: 5%
+ht-degree: 9%
 
 ---
 
@@ -44,7 +44,7 @@ AEM La aplicación React funciona con las siguientes opciones de implementación
 + Configuración local mediante [el SDK de AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=es)
    + Requiere [JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
 
-La aplicación React está diseñada para conectarse a un __AEM Publish__ , sin embargo, puede obtener contenido de AEM Author si la autenticación se proporciona en la configuración de la aplicación React.
+La aplicación React está diseñada para conectarse a un __AEM Publicación de__ AEM , sin embargo, puede obtener contenido de Autor de la fuente si se proporciona autenticación en la configuración de la aplicación React.
 
 ## Utilización
 
@@ -292,16 +292,16 @@ La aplicación React utiliza dos vistas para presentar los datos de la aventura 
 
 ### Variables de entorno
 
-Varios [variables de entorno](https://create-react-app.dev/docs/adding-custom-environment-variables) AEM se utilizan para conectarse a un entorno de. El valor predeterminado se conecta a AEM Publish, que se ejecuta en `http://localhost:4503`. Actualice el `.env.development` AEM , para cambiar la conexión de la:
+Varios [variables de entorno](https://create-react-app.dev/docs/adding-custom-environment-variables) AEM se utilizan para conectarse a un entorno de. AEM El valor predeterminado se conecta a la publicación de la que se ejecuta en `http://localhost:4503`. Actualice el `.env.development` AEM , para cambiar la conexión de la:
 
 + `REACT_APP_HOST_URI=https://publish-p123-e456.adobeaemcloud.com`AEM : Se establece en el host de destino de
 + `REACT_APP_GRAPHQL_ENDPOINT=/content/graphql/global/endpoint.json`: establezca la ruta del extremo de GraphQL. Esta aplicación de React no la utiliza, ya que solo utiliza consultas persistentes.
 + `REACT_APP_AUTH_METHOD=`: el método de autenticación preferido. Opcional. De forma predeterminada, no se utiliza ninguna autenticación.
    + `service-token`AEM : utilice las credenciales del servicio para obtener un token de acceso en el as a Cloud Service de la
    + `dev-token`AEM : utilice el token de desarrollo para el desarrollo local en el as a Cloud Service
-   + `basic`: utilice usuario/pase para el desarrollo local con el autor local de AEM
+   + `basic`AEM : utilice user/pass para el desarrollo local con el autor de la local
    + AEM Déjelo en blanco para conectarse a la red sin tener que realizar la autenticación.
-+ `REACT_APP_AUTHORIZATION=admin:admin`: establezca las credenciales de autenticación básicas que se utilizarán si se conecta a un entorno de AEM Author (solo para desarrollo). Si se conecta a un entorno de publicación, esta configuración no es necesaria.
++ `REACT_APP_AUTHORIZATION=admin:admin`AEM : establezca las credenciales de autenticación básicas que se usarán si se conecta a un entorno de autor de (solo para desarrollo). Si se conecta a un entorno de publicación, esta configuración no es necesaria.
 + `REACT_APP_DEV_TOKEN`: cadena de token de desarrollador. Para conectarse a una instancia remota, además de la autenticación básica (user:pass), puede utilizar la autenticación del portador con el token de DEV de la consola de Cloud
 + `REACT_APP_SERVICE_TOKEN`: ruta al archivo de credenciales de servicio. Para conectarse a una instancia remota, la autenticación también se puede realizar con el token de servicio (descargue el archivo desde Developer Console).
 

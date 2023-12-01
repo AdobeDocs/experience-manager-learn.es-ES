@@ -1,5 +1,5 @@
 ---
-title: Configuración de las variables de entorno para la extensibilidad del Asset compute
+title: Configuración de las variables de entorno para la extensibilidad de la Asset compute
 description: Las variables de entorno se mantienen en el archivo .env para el desarrollo local y se utilizan para proporcionar las credenciales de Adobe I/O y las credenciales de almacenamiento en la nube necesarias para el desarrollo local.
 feature: Asset Compute Microservices
 topics: renditions, development
@@ -7,13 +7,13 @@ version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
-kt: 6270
+jira: KT-6270
 thumbnail: KT-6270.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: c63c5c75-1deb-4c16-ba33-e2c338ef6251
-source-git-commit: eb6a7ef343a43000855f8d5cc69bde0fae81d3e6
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 0%
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ![archivo dot env](assets/environment-variables/dot-env-file.png)
 
-Antes de comenzar el desarrollo de los trabajadores de Asset compute, asegúrese de que el proyecto se configura con la información de almacenamiento de Adobe I/O y en la nube. Esta información se almacena en el `.env`  que solo se usa para el desarrollo local y no se guarda en Git. El `.env` proporciona una forma cómoda de exponer pares de clave/valores al entorno de desarrollo local de Asset compute. Cuándo [implementación](../deploy/runtime.md) Asset compute de trabajadores a Adobe I/O Runtime, la `.env` no se utiliza, sino que se pasa un subconjunto de valores a través de variables de entorno. Otros parámetros y secretos personalizados se pueden almacenar en la variable `.env` también, como las credenciales de desarrollo para servicios web de terceros.
+Antes de comenzar el desarrollo de los trabajadores de Asset compute, asegúrese de que el proyecto esté configurado con información de almacenamiento en la nube y en Adobe I/O. Esta información se almacena en el `.env`  que solo se usa para el desarrollo local y no se guarda en Git. El `.env` proporciona una forma cómoda de exponer pares de clave/valores al entorno de desarrollo local de la Asset compute. Cuándo [implementación](../deploy/runtime.md) Asset compute de trabajadores a Adobe I/O Runtime, la `.env` no se utiliza, sino que se pasa un subconjunto de valores a través de variables de entorno. Otros parámetros y secretos personalizados se pueden almacenar en la variable `.env` también, como las credenciales de desarrollo para servicios web de terceros.
 
 ## Haga referencia a `private.key`
 
@@ -35,7 +35,7 @@ Abra el `.env` , quite el comentario del archivo `ASSET_COMPUTE_PRIVATE_KEY_FILE
 + Si el par de claves se generó mediante Adobe I/O, se descargó automáticamente como parte de la variable  `config.zip`.
 + Si ha proporcionado la clave pública para el Adobe I/O, también debe tener en su poder la clave privada correspondiente.
 + Si no tiene estos pares de claves, puede generar nuevos pares de claves o cargar nuevas claves públicas en la parte inferior de:
-   [https://console.adobe.com](https://console.adobe.io) > Su proyecto de App Builder de Asset compute > Workspaces en Desarrollo > Cuenta de servicio (JWT).
+  [https://console.adobe.com](https://console.adobe.io) > Su proyecto de App Builder de Asset compute > Espacios de trabajo en Desarrollo > Cuenta de servicio (JWT).
 
 Recuerde la `private.key` El archivo no debe registrarse en Git, ya que contiene secretos, sino que debe almacenarse en un lugar seguro fuera del proyecto.
 
@@ -49,7 +49,7 @@ ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH=/Users/example-user/credentials/aem-guides-w
 
 ## Configurar credenciales de almacenamiento en la nube
 
-El desarrollo local de los trabajadores del Asset compute requiere acceso a [almacenamiento en la nube](../set-up/accounts-and-services.md#cloud-storage). Las credenciales de almacenamiento en la nube utilizadas para el desarrollo local se proporcionan en la variable `.env` archivo.
+El desarrollo local de los trabajadores de la Asset compute requiere acceso a [almacenamiento en la nube](../set-up/accounts-and-services.md#cloud-storage). Las credenciales de almacenamiento en la nube utilizadas para el desarrollo local se proporcionan en la variable `.env` archivo.
 
 Este tutorial prefiere el uso de Azure Blob Storage, pero Amazon S3 y sus claves correspondientes en la `.env` se puede utilizar en su lugar.
 
@@ -98,7 +98,7 @@ AWS_REGION=us-east-1
 
 Una vez configurado el proyecto de Asset compute generado, valide la configuración antes de realizar cambios en el código para asegurarse de que se proporcionan los servicios de soporte, en el `.env` archivos.
 
-Para iniciar la herramienta de desarrollo de Asset compute para el proyecto de Asset compute:
+Para iniciar la herramienta de desarrollo de Assets computes para el proyecto de Asset compute:
 
 1. Abra una línea de comandos en la raíz del proyecto de Asset compute (en VS Code esto se puede abrir directamente en el IDE a través de Terminal > Nuevo terminal) y ejecute el comando:
 
@@ -111,7 +111,7 @@ Para iniciar la herramienta de desarrollo de Asset compute para el proyecto de A
    ![ejecución de aplicación aio](assets/environment-variables/aio-app-run.png)
 
 1. Observe la salida de la línea de comandos y el explorador Web en busca de mensajes de error cuando se inicializa la herramienta de desarrollo.
-1. Para detener la herramienta de desarrollo de Asset compute, pulse `Ctrl-C` en la ventana que se ejecutó `aio app run` para finalizar el proceso.
+1. Para detener la herramienta de desarrollo de Assets computes, pulse `Ctrl-C` en la ventana que se ejecutó `aio app run` para finalizar el proceso.
 
 ## Solución de problemas
 

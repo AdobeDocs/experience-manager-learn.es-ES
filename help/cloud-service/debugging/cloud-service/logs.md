@@ -7,13 +7,13 @@ version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
-kt: 5432
+jira: KT-5432
 thumbnail: kt-5432.jpg
 topic: Development
 role: Developer
 level: Beginner
 exl-id: d0bd64bd-9e6c-4a28-a8d9-52bb37b27a09
-source-git-commit: 0565cf592a437acf5080dab1d3ee2d410997f01d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1007'
 ht-degree: 3%
@@ -29,7 +29,7 @@ AEM Toda la actividad de registro del servicio de registro de un entorno determi
 Los ID de secuencia se proporcionan en cada sentencia de registro y permiten filtrar o intercalar sentencias de registro. Los ID de la secuencia tienen el formato:
 
 + `cm-p<PROGRAM ID>-e<ENVIRONMENT ID>-aem-<author|publish>-<POD NAME>`
-+ Ejemplo: `cm-p12345-e56789-aem-author-abcdefabde-98765`
++ Ejemplos: `cm-p12345-e56789-aem-author-abcdefabde-98765`
 
 ## Archivos de registro personalizados
 

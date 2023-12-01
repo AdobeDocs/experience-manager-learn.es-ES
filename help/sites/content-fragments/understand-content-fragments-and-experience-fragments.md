@@ -3,16 +3,13 @@ title: Fragmentos de contenido y fragmentos de experiencias
 description: Conozca las similitudes y diferencias entre los fragmentos de contenido y los fragmentos de experiencias, y cuándo y cómo utilizar cada tipo.
 sub-product: Experience Manager Assets, Experience Manager Sites
 feature: Content Fragments, Experience Fragments
-topics: headless
 version: 6.4, 6.5
-doc-type: article
-activity: understand
-audience: all
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Article
 exl-id: ccbc68d1-a83e-4092-9a49-53c56c14483e
-source-git-commit: 84fdbaa173a929ae7467aecd031cacc4ce73538a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1044'
 ht-degree: 5%

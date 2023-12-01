@@ -1,14 +1,15 @@
 ---
 title: Uso de Brand Portal
-description: Tutoriales en vídeo sobre la integración de AEM Author y AEM Assets Brand Portal.
+description: AEM Vídeos introductorios sobre la integración de Autor y AEM Assets Brand Portal de.
 feature: Brand Portal
 version: 6.4, 6.5
 topic: Content Management
 role: User
 level: Beginner
 last-substantial-update: 2022-06-15T00:00:00Z
+doc-type: Feature Video
 exl-id: 42f13a19-52bf-413d-a141-63f1f0910dce
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1764'
 ht-degree: 2%
@@ -29,7 +30,7 @@ El abastecimiento de recursos de Brand Portal se utiliza para recopilar recursos
 
 >[!VIDEO](https://video.tv.adobe.com/v/29365?quality=12&learn=on)
 
-*Se requiere Experience Manager Author 6.5 SP2 (6.5.2) o una versión buena para utilizar el Abastecimiento de recursos*
+*Se requiere Experience Manager Author 6.5 SP2 (6.5.2) o superior para utilizar el Abastecimiento de recursos*
 
 Revisar [Habilitar el autor del Experience Manager para el abastecimiento de recursos](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=es) para obtener instrucciones sobre cómo configurar el abastecimiento de recursos en Experience Manager Author.
 
@@ -82,7 +83,7 @@ Tenga en cuenta que la miniatura predeterminada de las carpetas virtuales es la 
 
 ### Compatibilidad con representaciones de vídeo de Dynamic Media
 
-Los usuarios cuya instancia de autor de AEM esté en modo híbrido de Dynamic Media pueden obtener una vista previa de las representaciones de medios dinámicos y descargarlas, además de los archivos de vídeo originales.
+AEM Los usuarios cuya instancia de autor de la esté en el modo híbrido de Dynamic Media pueden obtener una vista previa de las representaciones de medios dinámicos y descargarlas, además de los archivos de vídeo originales.
 
 Para permitir la previsualización y la descarga de representaciones de medios dinámicos en cuentas de inquilino específicas, los administradores deben especificar la configuración de Dynamic Media (URL del servicio de vídeo (URL de puerta de enlace DM) y el ID de registro para recuperar el vídeo dinámico) en la configuración de vídeo del panel de herramientas de administración.
 
@@ -110,7 +111,7 @@ Las organizaciones pueden personalizar la dirección URL de su portal si tienen 
 Tenga en cuenta que solo se puede personalizar el prefijo de la dirección URL de Brand Portal y no la dirección URL completa.
 Por ejemplo, una organización con un dominio existente `wknd.brand-portal.adobe.com` puede obtener `wkndinc.brand-portal.adobe.com` creado a petición.
 
-Sin embargo, la instancia de autor de AEM puede ser [configurado](https://helpx.adobe.com/es/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html) solo con la URL del id de inquilino y no con la URL del alias de inquilino (alternativa).
+AEM Sin embargo, la instancia de autor de puede ser [configurado](https://helpx.adobe.com/es/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html) solo con la URL del id de inquilino y no con la URL del alias de inquilino (alternativa).
 
 **Caso de uso** : las organizaciones pueden satisfacer sus necesidades de promoción de la marca personalizando la dirección URL del portal, en lugar de atenerse a la dirección URL proporcionada por el Adobe.
 
@@ -204,7 +205,7 @@ Las nuevas funciones mejoraron la funcionalidad orientada a alinear Brand Portal
 ## Recursos adicionales{#additional-resources}
 
 * [Novedades de en Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=es#introduction)
-* [Agentes de replicación de AEM Author](https://helpx.adobe.com/es/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html)
+* [AEM Agentes de replicación de autor de](https://helpx.adobe.com/es/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html)
 * [Guía de descarga acelerada](https://helpx.adobe.com/experience-manager/brand-portal/using/accelerated-download.html#main-pars_header)
 * [Documentos de Adobe de AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal.html)
 * [Documentos de Adobe de AEM Assets Dynamic Media](https://experienceleague.adobe.com/docs/)

@@ -1,5 +1,5 @@
 ---
-title: Configuración del Generador de aplicaciones para la extensibilidad de Asset compute
+title: Configuración del Generador de aplicaciones para la extensibilidad de Assets computes
 description: Los proyectos de asset compute son proyectos de App Builder especialmente definidos y, como tales, requieren acceso a App Builder en la consola de Adobe Developer para configurarlos e implementarlos.
 feature: Asset Compute Microservices
 topics: renditions, development
@@ -7,13 +7,13 @@ version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
-kt: 6268
+jira: KT-6268
 thumbnail: 40183.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 2b1d8786-592e-41f2-80cc-bc0b1c7e1b49
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '539'
 ht-degree: 0%
@@ -54,7 +54,7 @@ _Pulsación al configurar el Generador de aplicaciones (sin audio)_
 
 ## Acceda a la clave privada{#private-key}
 
-Al configurar el [Integración de API de asset compute](#set-up) se generó un nuevo par de claves y se `config.zip` se descargó automáticamente. Esta `config.zip` contiene el certificado público generado y la coincidencia `private.key` archivo.
+Al configurar el [Integración de API de Asset compute](#set-up) se generó un nuevo par de claves y se `config.zip` se descargó automáticamente. Esta `config.zip` contiene el certificado público generado y la coincidencia `private.key` archivo.
 
 1. Descomprimir `config.zip` a un lugar seguro en su sistema de archivos como `private.key` es [se usa más tarde](../develop/environment-variables.md)
    + Los secretos y las claves privadas nunca deben agregarse a Git por motivos de seguridad.
@@ -68,5 +68,5 @@ La entidad local utiliza las credenciales de este proyecto de Adobe I/O [Herrami
 1. En el proyecto de Adobe I/O del Generador de aplicaciones del proyecto, asegúrese de que `Development` workspace está seleccionado
 1. Tocar en __Cuenta de servicio (JWT)__ bajo __Credenciales__
 1. Revisar las credenciales de Adobe I/O mostradas
-   + El __clave pública__ listado en la parte inferior tiene su __private.key__ contraparte en la `config.zip` descargado cuando el __API DE ASSET COMPUTE__ se ha agregado a este proyecto.
+   + El __clave pública__ listado en la parte inferior tiene su __private.key__ contraparte en la `config.zip` descargado cuando el __API de asset compute__ se ha agregado a este proyecto.
       + Si la clave privada se pierde o se pone en peligro, se puede eliminar la clave pública coincidente y se puede generar un nuevo par de claves en el Adobe I/O o cargar en él mediante esta interfaz.

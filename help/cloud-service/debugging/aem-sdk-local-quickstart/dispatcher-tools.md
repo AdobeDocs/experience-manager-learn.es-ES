@@ -1,13 +1,13 @@
 ---
 title: Depuración de herramientas de Dispatcher
-description: AEM Las herramientas de Dispatcher proporcionan un entorno de servidor web Apache en contenedores que se puede utilizar para simular el uso de Dispatcher como Dispatcher de un servicio de publicación de AEM de Cloud Services localmente. AEM La depuración de los registros y el contenido de la caché de las herramientas de Dispatcher puede ser vital para garantizar que la aplicación de extremo a extremo y las configuraciones de caché y seguridad de soporte sean correctas.
+description: AEM Las herramientas de Dispatcher proporcionan un entorno de servidor web Apache en contenedores que se puede utilizar para simular el uso de los recursos como un Cloud Service AEM de manera local, como Dispatcher de un servicio de publicación de. AEM La depuración de los registros y el contenido de la caché de las herramientas de Dispatcher puede ser vital para garantizar que la aplicación de extremo a extremo y las configuraciones de caché y seguridad de soporte sean correctas.
 feature: Dispatcher
-kt: 5918
+jira: KT-5918
 topic: Development
 role: Developer
 level: Beginner, Intermediate
 exl-id: f0adf7a6-c7c2-449a-9fa5-402c54b812e5
-source-git-commit: 4b47daf82e27f6bea4be30e3cdd132f497f4c609
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Depuración de herramientas de Dispatcher
 
-AEM Las herramientas de Dispatcher proporcionan un entorno de servidor web Apache en contenedores que se puede utilizar para simular el uso de Dispatcher como Dispatcher de un servicio de publicación de AEM de Cloud Services localmente.
+AEM Las herramientas de Dispatcher proporcionan un entorno de servidor web Apache en contenedores que se puede utilizar para simular el uso de los recursos como un Cloud Service AEM de manera local, como Dispatcher de un servicio de publicación de.
 
 AEM La depuración de los registros y el contenido de la caché de las herramientas de Dispatcher puede ser vital para garantizar que la aplicación de extremo a extremo y las configuraciones de caché y seguridad de soporte sean correctas.
 

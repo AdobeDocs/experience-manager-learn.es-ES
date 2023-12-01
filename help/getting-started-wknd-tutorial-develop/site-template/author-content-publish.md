@@ -1,17 +1,17 @@
 ---
 title: Introducción a la creación y publicación AEM | Creación rápida de sitios de
-description: Utilice el editor de páginas de Adobe Experience Manager AEM, en el que se puede actualizar el contenido del sitio web, en el menú de la página. Descubra cómo se utilizan los componentes para facilitar la creación. Comprenda la diferencia entre los entornos de AEM Author y Publish, y aprenda a publicar cambios en el sitio en directo.
+description: Utilice el editor de páginas de Adobe Experience Manager AEM, en el que se puede actualizar el contenido del sitio web, en el menú de la página. Descubra cómo se utilizan los componentes para facilitar la creación. AEM Comprenda la diferencia entre los entornos de creación y publicación de un, y aprenda a publicar cambios en el sitio en directo.
 version: Cloud Service
-type: Tutorial
 topic: Content Management
 feature: Core Components, Page Editor
 role: Developer
 level: Beginner
-kt: 7497
+jira: KT-7497
 thumbnail: KT-7497.jpg
+doc-type: Tutorial
 exl-id: 17ca57d1-2b9a-409c-b083-398d38cd6a19
 recommendations: noDisplay, noCatalog
-source-git-commit: de2fa2e4c29ce6db31233ddb1abc66a48d2397a6
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1330'
 ht-degree: 3%
@@ -150,12 +150,12 @@ A continuación, vaya al servicio Publicación para ver los cambios.
    ![Sitio publicado](assets/author-content-publish/publish-url-update.png)
 
 1. Uso del **Navegación** clic de menú **Artículo** > **Hello World** para navegar a la página Hello World creada anteriormente.
-1. Vuelva a la **Servicio de AEM Author** y realice algunos cambios de contenido adicionales en el Editor de páginas.
+1. Vuelva a la **AEM Servicio de autor de** y realice algunos cambios de contenido adicionales en el Editor de páginas.
 1. Publique estos cambios directamente desde el editor de páginas haciendo clic en **Propiedades de página** icono > **Publicar página**
 
    ![publicar directamente](assets/author-content-publish/page-editor-publish.png)
 
-1. Vuelva a la **Servicio de publicación de AEM** para ver los cambios. Lo más probable es que lo haga **no** ver inmediatamente las actualizaciones. Esto se debe a que **Servicio de publicación de AEM** incluye [almacenamiento en caché a través de un servidor web Apache y CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/caching.html?lang=es). De forma predeterminada, el contenido del HTML se almacena en caché durante ~5 minutos.
+1. Vuelva a la **AEM Servicio de publicación de** para ver los cambios. Lo más probable es que lo haga **no** ver inmediatamente las actualizaciones. Esto se debe a que **AEM Servicio de publicación de** incluye [almacenamiento en caché a través de un servidor web Apache y CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/caching.html?lang=es). De forma predeterminada, el contenido del HTML se almacena en caché durante ~5 minutos.
 
 1. Para omitir la caché con fines de prueba o depuración, simplemente agregue un parámetro de consulta como `?nocache=true`. La dirección URL tendría el siguiente aspecto `https://publish-pYYYY-eXXXX.adobeaemcloud.com/content/wknd/en/article/hello-world.html?nocache=true`. Más detalles acerca de la estrategia de almacenamiento en caché y las configuraciones disponibles [se puede encontrar aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/overview.html).
 

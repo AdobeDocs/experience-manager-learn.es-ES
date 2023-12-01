@@ -3,15 +3,12 @@ title: AEM Desarrollar proyectos en el ámbito de la
 description: AEM Un tutorial de desarrollo que ilustra cómo desarrollar para proyectos de.  AEM En este tutorial crearemos una plantilla de proyecto personalizada que se puede utilizar para crear nuevos proyectos dentro de para administrar flujos de trabajo y tareas de creación de contenido.
 version: 6.4, 6.5
 feature: Projects, Workflow
-topics: collaboration, development, governance
-activity: develop
-audience: developer, implementer, administrator
-doc-type: tutorial
+doc-type: Tutorial
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
-source-git-commit: 481b8877e252b885da307fcf4d96f8a50f026fa6
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '4571'
 ht-degree: 1%
@@ -261,7 +258,7 @@ Ahora podemos probar nuestra plantilla de proyecto creando un nuevo proyecto.
 
 1. Haga clic en &quot;Crear&quot; para terminar de crear el proyecto basado en la plantilla personalizada. Observará en el panel del proyecto que el mosaico Tareas y los demás mosaicos configurados en gadgets aparecen automáticamente.
 
-   ![Mosaico de tareas](./assets/develop-aem-projects/tasks-tile.png)
+   ![Mosaico Tarea](./assets/develop-aem-projects/tasks-tile.png)
 
 
 ## ¿Por qué Workflow?
@@ -331,7 +328,7 @@ Ubicación del modelo de flujo de trabajo en 6.4+
 
 1. AEM En la versión 6.3 de se ha introducido la capacidad de añadir fases de flujo de trabajo a un flujo de trabajo determinado. Las fases aparecerán al usuario en la bandeja de entrada de la pestaña Información del flujo de trabajo. Muestra al usuario la fase actual del flujo de trabajo, así como las fases anteriores y posteriores.
 
-   Para configurar las fases, abra el cuadro de diálogo Propiedades de página desde la barra de tareas. La cuarta pestaña se denomina &quot;Fases&quot;. Añada los siguientes valores para configurar las tres fases de este flujo de trabajo:
+   Para configurar las fases, abra el cuadro de diálogo Propiedades de página desde el Sidekick. La cuarta pestaña se denomina &quot;Fases&quot;. Añada los siguientes valores para configurar las tres fases de este flujo de trabajo:
 
    1. Editar contenido
    1. Aprobación
@@ -349,7 +346,7 @@ Ubicación del modelo de flujo de trabajo en 6.4+
 
 1. El proceso de flujo de trabajo Crear tarea del proyecto está diseñado para crear una tarea como paso en el flujo de trabajo. El flujo de trabajo solo avanzará una vez completada la tarea. Un aspecto importante del paso Crear tarea de proyecto es que puede leer valores de metadatos de flujo de trabajo y utilizarlos para crear la tarea de forma dinámica.
 
-   En primer lugar, elimine el paso de participante que se crea de forma predeterminada. En la barra de tareas del menú de componentes, expanda la **&quot;Proyectos&quot;** subtítulo y arrastre y suelte el **&quot;Crear tarea del proyecto&quot;** en el modelo.
+   En primer lugar, elimine el paso de participante que se crea de forma predeterminada. En el Sidekick del menú de componentes, expanda la **&quot;Proyectos&quot;** subtítulo y arrastre y suelte el **&quot;Crear tarea del proyecto&quot;** en el modelo.
 
    Haga doble clic en el paso &quot;Crear tarea del proyecto&quot; para abrir el cuadro de diálogo de flujo de trabajo. Configure las siguientes propiedades:
 
@@ -418,7 +415,7 @@ Ubicación del modelo de flujo de trabajo en 6.4+
    task.setProperty("taskPriority", taskPriority);
    ```
 
-1. Vuelva al flujo de trabajo de aprobación de contenido. Arrastre y suelte el **División O** componente (que se encuentra en la barra de tareas debajo de la categoría &quot;Flujo de trabajo&quot;) debajo de **Iniciar tarea** Paso. En el cuadro de diálogo Común, seleccione el botón de opción para 3 ramas. OR Split lee el valor de metadatos del flujo de trabajo **&quot;lastTaskAction&quot;** para determinar la ruta del flujo de trabajo. El **&quot;lastTaskAction&quot;** se establece en uno de los valores de la ficha Enrutamiento configurada en el paso 4. Para cada una de las pestañas de Rama, rellene el **Script** área de texto con los siguientes valores:
+1. Vuelva al flujo de trabajo de aprobación de contenido. Arrastre y suelte el **División O** (que se encuentra en el Sidekick debajo de la categoría &quot;Flujo de trabajo&quot;) debajo de **Iniciar tarea** Paso. En el cuadro de diálogo Común, seleccione el botón de opción para 3 ramas. OR Split lee el valor de metadatos del flujo de trabajo **&quot;lastTaskAction&quot;** para determinar la ruta del flujo de trabajo. El **&quot;lastTaskAction&quot;** se establece en uno de los valores de la ficha Enrutamiento configurada en el paso 4. Para cada una de las pestañas de Rama, rellene el **Script** área de texto con los siguientes valores:
 
    ```
    function check() {
@@ -541,7 +538,7 @@ task.setCurrentAssignee(projectApproverGrp);
 
 1. Dado que el grupo de aprobadores tiene la opción de devolver el flujo de trabajo al editor original para realizar más revisiones, confiaremos en el **Ir a** paso para leer la última acción realizada y enrutar el flujo de trabajo al principio o dejarlo continuar.
 
-   Arrastre y suelte el componente Paso Ir a (que se encuentra en la barra de tareas debajo de Flujo de trabajo) debajo de la división O donde se vuelve a unir. Haga doble clic en y configure las siguientes propiedades en el cuadro de diálogo:
+   Arrastre y suelte el componente Paso Ir a (que se encuentra en el Sidekick en Flujo de trabajo) debajo de la división O donde se vuelve a unir. Haga doble clic en y configure las siguientes propiedades en el cuadro de diálogo:
 
    ```
    Common Tab
@@ -574,7 +571,7 @@ task.setCurrentAssignee(projectApproverGrp);
 
 1. Para publicar la carga útil utilizaremos el ootb **Activar página/recurso** Paso Procesar. Este paso del proceso requiere poca configuración y agrega la carga útil del flujo de trabajo a la cola de replicación para su activación. Añadiremos el paso debajo del paso Ir a y de este modo solo se puede acceder a él si el grupo de aprobadores ha aprobado el contenido para su publicación o si el editor original eligió la ruta Omitir aprobación.
 
-   Arrastre y suelte el **Activar página/recurso** Paso de proceso (que se encuentra en la barra de tareas debajo de Flujo de trabajo de WCM) debajo de Paso Ir a en el modelo.
+   Arrastre y suelte el **Activar página/recurso** Paso de proceso (que se encuentra en el Sidekick en Flujo de trabajo de WCM) debajo de Paso de ir a en el modelo.
 
    ![modelo de flujo de trabajo completado](assets/develop-aem-projects/workflow-model-final.png)
 

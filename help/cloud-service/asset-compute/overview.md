@@ -1,20 +1,20 @@
 ---
 title: Extensibilidad de los microservicios de asset compute AEM para la as a Cloud Service
-description: En este tutorial se explica cómo crear un Asset compute simple que cree una representación de recursos recortando el recurso original en un círculo y que aplique un brillo y un contraste configurables. Aunque el propio trabajador es básico, este tutorial lo utiliza para explorar la creación, el desarrollo y la implementación de un trabajador de Asset compute AEM personalizado para utilizarlo con el as a Cloud Service de la.
+description: En este tutorial se explica cómo crear un sencillo trabajo de Asset compute que cree una representación de recursos recortando el recurso original en un círculo y aplicando un brillo y un contraste configurables. Aunque el trabajador en sí es básico, este tutorial lo utiliza para explorar la creación, el desarrollo y la implementación de un trabajador de Asset compute AEM personalizado para utilizarlo con el as a Cloud Service de la.
 feature: Asset Compute Microservices
 topics: renditions, development
 version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
-kt: 5802
+jira: KT-5802
 thumbnail: KT-5802.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 last-substantial-update: 2022-08-15T00:00:00Z
 exl-id: 575b12f9-b57f-41f7-bd39-56d242de4747
-source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 0%
@@ -23,15 +23,15 @@ ht-degree: 0%
 
 # Extensibilidad de microservicios de asset compute
 
-los microservicios de Asset compute AEM de as Cloud Service admiten el desarrollo y la implementación de AEM personalizados que se utilizan para leer y manipular datos binarios de recursos almacenados en, generalmente, para crear representaciones de recursos personalizadas.
+los microservicios de Asset compute AEM de as a Cloud Service admiten el desarrollo y la implementación de AEM personalizados que se utilizan para leer y manipular datos binarios de recursos almacenados en, generalmente, para crear representaciones de recursos personalizadas.
 
-AEM AEM AEM Mientras que en la versión 6.x se utilizaban procesos personalizados de flujo de trabajo de la para leer, transformar y escribir representaciones de recursos, en la versión as a Cloud Service los Assets computes de trabajo satisfacen esta necesidad.
+AEM AEM AEM Mientras que en la versión 6.x se utilizaban procesos personalizados de flujo de trabajo de la para leer, transformar y volver a escribir representaciones de recursos, en la Asset compute as a Cloud Service los empleados satisfacen esta necesidad.
 
 ## Qué va a hacer
 
 >[!VIDEO](https://video.tv.adobe.com/v/40965?quality=12&learn=on)
 
-En este tutorial se explica cómo crear un Asset compute simple que cree una representación de recursos recortando el recurso original en un círculo y que aplique un brillo y un contraste configurables. Aunque el propio trabajador es básico, este tutorial lo utiliza para explorar la creación, el desarrollo y la implementación de un trabajador de Asset compute AEM personalizado para utilizarlo con el as a Cloud Service de la.
+En este tutorial se explica cómo crear un sencillo trabajo de Asset compute que cree una representación de recursos recortando el recurso original en un círculo y aplicando un brillo y un contraste configurables. Aunque el trabajador en sí es básico, este tutorial lo utiliza para explorar la creación, el desarrollo y la implementación de un trabajador de Asset compute AEM personalizado para utilizarlo con el as a Cloud Service de la.
 
 ### Objetivos {#objective}
 
@@ -39,11 +39,11 @@ En este tutorial se explica cómo crear un Asset compute simple que cree una rep
 1. Creación y configuración de un proyecto de Asset compute
 1. Desarrollar un trabajador de Asset compute que genere una representación personalizada
 1. Escriba pruebas para y aprenda a depurar el trabajador de Asset compute personalizado
-1. Implemente el trabajador de Asset compute AEM e integre el servicio de creación as a Cloud Service mediante Perfiles de procesamiento, ya que se trata de un servicio de creación de perfiles
+1. Implemente el trabajador de Asset compute AEM e integre el servicio de creación as a Cloud Service mediante Perfiles de procesamiento
 
 ## Configuración de
 
-Aprenda a prepararse correctamente para ampliar los Assets computes de trabajo y comprenda qué servicios y cuentas deben aprovisionarse y configurarse, y qué software debe instalarse localmente para el desarrollo.
+Aprenda a prepararse correctamente para la ampliación de los trabajadores de Asset compute y comprenda qué servicios y cuentas deben aprovisionarse y configurarse, y qué software debe instalarse localmente para el desarrollo.
 
 ### Aprovisionamiento de cuentas y servicios{#accounts-and-services}
 
@@ -65,11 +65,11 @@ Los proyectos de asset compute son proyectos de App Builder especialmente defini
 
 ## Desarrollar
 
-Obtenga información sobre cómo crear y configurar un proyecto de Asset compute y, a continuación, desarrollar un proyecto personalizado que genere una representación de recursos a medida.
+Obtenga información sobre cómo crear y configurar un proyecto de Asset compute y, a continuación, desarrollar un trabajador personalizado que genere una representación de recursos a medida.
 
 ### Creación de un nuevo proyecto de Asset compute
 
-Los proyectos de asset compute, que contienen uno o más Assets computes de trabajo, se generan mediante la CLI de Adobe I/O interactiva. Los proyectos de asset compute son proyectos de App Builder especialmente estructurados, que a su vez son proyectos de Node.js.
+Los proyectos de asset compute, que contienen uno o más trabajadores de Asset compute, se generan mediante la CLI de Adobe I/O interactivo. Los proyectos de asset compute son proyectos de App Builder especialmente estructurados, que a su vez son proyectos de Node.js.
 
 + [Creación de un nuevo proyecto de Asset compute](./develop/project.md)
 
@@ -93,17 +93,17 @@ El desarrollo de un trabajador de Asset compute es el núcleo de la ampliación 
 
 ### Uso de la herramienta de desarrollo de Asset compute
 
-La herramienta de desarrollo de Asset compute proporciona un mazo de cables Web local para implementar, ejecutar y previsualizar representaciones generadas por el trabajador, lo que permite un desarrollo de Asset compute rápido e iterativo.
+La herramienta de desarrollo de Assets computes proporciona un mazo de cables Web local para implementar, ejecutar y previsualizar representaciones generadas por el trabajador, lo que permite un desarrollo de trabajo de Asset compute rápido e iterativo.
 
 + [Uso de la herramienta de desarrollo de Asset compute](./develop/development-tool.md)
 
 ## Prueba y depuración
 
-Aprenda a probar los Assets computes de trabajo personalizados para confiar en su operación y a depurar los de Asset compute para comprender y solucionar problemas de cómo se ejecuta el código personalizado.
+Aprenda a probar los trabajadores de Asset compute personalizados para confiar en su operación y a depurar los trabajadores de Asset compute para comprender y solucionar problemas de cómo se ejecuta el código personalizado.
 
 ### Prueba de un trabajador
 
-Asset compute proporciona un marco de pruebas para crear grupos de pruebas para los trabajadores, lo que permite definir pruebas que garanticen que la conducta adecuada es fácil.
+Asset compute proporciona un marco de pruebas para crear grupos de pruebas para los trabajadores, lo que permite definir pruebas que garanticen que el comportamiento correcto sea fácil.
 
 + [Prueba de un trabajador](./test-debug/test.md)
 
@@ -115,17 +115,17 @@ Los trabajadores de asset compute proporcionan varios niveles de depuración des
 
 ## Implementación de
 
-Obtenga información sobre cómo integrar los Asset compute AEM personalizados con los as a Cloud Service de la, implementándolos primero en Adobe I/O Runtime AEM as a Cloud Service y luego invocando desde el Autor de la a través de los Perfiles de procesamiento de AEM Assets.
+Obtenga información sobre cómo integrar los trabajadores de Asset compute AEM personalizados con los as a Cloud Service de la, implementándolos primero en Adobe I/O Runtime AEM as a Cloud Service y luego invocando desde el Autor de la a través de los Perfiles de procesamiento de AEM Assets.
 
 ### Implementación en Adobe I/O Runtime
 
-Los assets computes de trabajo deben implementarse en Adobe I/O Runtime AEM as a Cloud Service para que se utilicen con los.
+Los trabajadores de asset compute deben implementarse en Adobe I/O Runtime AEM as a Cloud Service para que se utilicen con los.
 
 + [Uso de perfiles de procesamiento](./deploy/runtime.md)
 
 ### AEM Integración de trabajadores mediante perfiles de procesamiento de
 
-Una vez implementados en Adobe I/O Runtime, los Asset compute AEM de trabajo se pueden registrar en el as a Cloud Service mediante el procedimiento de registro en el área de trabajo de [Perfiles de procesamiento de recursos](../../assets/configuring/processing-profiles.md). A su vez, los perfiles de procesamiento se aplican a las carpetas de recursos que se aplican a los recursos que contienen.
+Una vez implementados en Adobe I/O Runtime, los trabajadores de Asset compute AEM pueden registrarse en el as a Cloud Service mediante el procedimiento de registro de la [Perfiles de procesamiento de recursos](../../assets/configuring/processing-profiles.md). A su vez, los perfiles de procesamiento se aplican a las carpetas de recursos que se aplican a los recursos que contienen.
 
 + [AEM Integración con Perfiles de procesamiento de](./deploy/processing-profiles.md)
 
@@ -145,7 +145,7 @@ El código fuente no contiene el requerido `.env` o `config.json` archivos. Debe
 
 ## Recursos adicionales
 
-A continuación se indican varios recursos de Adobe que proporcionan más información y API y SDK útiles para el desarrollo de trabajadores de Asset compute.
+A continuación se muestran varios recursos de Adobe que proporcionan más información y API y SDK útiles para el desarrollo de trabajadores de Asset compute.
 
 ### Documentación
 

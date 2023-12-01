@@ -3,13 +3,13 @@ title: Adición de componentes a la sección Recursos
 description: Configure el diseño de acordeón para el panel Recursos. El diseño de acordeón proporciona una mejor experiencia al usuario final para agregar secciones repetibles.
 feature: Adaptive Forms
 version: 6.4,6.5
-kt: 4212
+jira: KT-4212
 thumbnail: 22200.jpg
 topic: Development
 role: Developer
 level: Beginner
 exl-id: cd8e5fad-d17a-4f80-b4f6-0d43be4dfb80
-source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '62'
 ht-degree: 3%

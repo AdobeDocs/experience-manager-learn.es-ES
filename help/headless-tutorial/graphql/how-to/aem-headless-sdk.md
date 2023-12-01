@@ -6,10 +6,10 @@ topic: Headless
 feature: GraphQL API
 role: Developer
 level: Intermediate
-kt: 10269
+jira: KT-10269
 thumbnail: KT-10269.jpeg
 exl-id: 922a464a-2286-4132-9af8-f5a1fb5ce268
-source-git-commit: 31948793786a2c430533d433ae2b9df149ec5fc0
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 10%
@@ -46,7 +46,7 @@ $ npm i @adobe/aem-headless-client-js
 
 AEM En este ejemplo de código se muestra cómo realizar consultas en el uso de la función de [@adobe/aem-headless-client-js](https://github.com/adobe/aem-headless-client-js) npm module con `async/await` sintaxis. AEM El SDK sin encabezado de la aplicación para JavaScript también admite [Sintaxis de promesa](https://github.com/adobe/aem-headless-client-js#use-aemheadless-client).
 
-Este código supone una consulta persistente con el nombre `wknd/adventureNames` se ha creado en AEM Author y se ha publicado en AEM Publish.
+Este código supone una consulta persistente con el nombre `wknd/adventureNames` AEM AEM se ha creado en Author y se ha publicado en Publicación de.
 
 ```javascript
 import AEMHeadless from '@adobe/aem-headless-client-js';
@@ -102,7 +102,7 @@ Uso de `useEffect` realizar la llamada asincrónica a GraphQL en React resulta �
 1. AEM Proporciona un envoltorio sincrónico para la llamada asincrónica a la red de servicios de soporte de datos de.
 1. AEM Reduce los problemas de acceso a la innecesariamente.
 
-Este código supone una consulta persistente con el nombre `wknd-shared/adventure-by-slug` se ha creado en AEM Author y se ha publicado en AEM Publish mediante GraphiQL.
+Este código supone una consulta persistente con el nombre `wknd-shared/adventure-by-slug` AEM AEM se ha creado en Author y se ha publicado para publicar en el servicio de publicación de mediante GraphiQL.
 
 ```javascript
 import AEMHeadless from '@adobe/aem-headless-client-js';

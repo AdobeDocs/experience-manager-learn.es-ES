@@ -1,19 +1,19 @@
 ---
-title: Configurar cuentas y servicios para la extensibilidad del Asset compute
-description: Para desarrollar los Asset compute AEM, es necesario tener acceso a cuentas y servicios, incluido el almacenamiento as a Cloud Service, el App Builder y el almacenamiento en la nube que proporciona Microsoft o Amazon.
+title: Configuración de cuentas y servicios para la extensibilidad de la Asset compute
+description: Para desarrollar los trabajadores de la Asset compute AEM, es necesario tener acceso a cuentas y servicios, incluido el almacenamiento as a Cloud Service, el App Builder y el almacenamiento en la nube que proporciona Microsoft o Amazon.
 feature: Asset Compute Microservices
 topics: renditions, development
 version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
-kt: 6264
+jira: KT-6264
 thumbnail: 40377.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 707657ad-221e-4dab-ac2a-46a4fcbc55bc
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '621'
 ht-degree: 2%
@@ -61,7 +61,7 @@ Para obtener acceso al Generador de aplicaciones, regístrese en la vista previa
 
 Se requiere almacenamiento en la nube para el desarrollo local de proyectos de Asset compute.
 
-Cuando los trabajadores de Asset compute se implementan en Adobe I/O Runtime AEM as a Cloud Service AEM para su uso directo por parte de los, este almacenamiento en la nube no es estrictamente necesario, ya que proporciona el almacenamiento en la nube desde el que se lee el recurso y en el que se escribe la representación.
+Cuando los trabajadores de Asset compute se implementan en Adobe I/O Runtime AEM para su uso directo por parte de los as a Cloud Service AEM, este almacenamiento en la nube no es estrictamente necesario, ya que proporciona el almacenamiento en la nube desde el que se lee el recurso y en el que se escribe la representación.
 
 ### Almacenamiento del Blob de Microsoft Azure{#azure-blob-storage}
 

@@ -5,8 +5,9 @@ feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 5aa32791-861a-48e3-913c-36028373b788
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 6%
@@ -15,7 +16,7 @@ ht-degree: 6%
 
 # Introducción a AEM sin encabezado - Content Services
 
-AEM AEM AEM Los servicios de contenido aprovechan las páginas de tradicionales para componer extremos de API de REST sin encabezado, y los componentes definen, o hacen referencia, al contenido que se va a exponer en estos extremos.
+AEM AEM AEM Los servicios de contenido aprovechan las páginas de tradicionales para componer puntos finales de API de REST sin encabezado y los componentes definen, o hacen referencia, al contenido que se va a exponer en estos puntos finales.
 
 AEM Los servicios de contenido permiten las mismas abstracciones de contenido utilizadas para crear páginas web en AEM Sites para definir el contenido y los esquemas de estas API HTTP. AEM AEM El uso de Páginas de y Componentes de permite a los especialistas en marketing componer y actualizar rápidamente API de JSON flexibles que pueden activar cualquier aplicación.
 
@@ -30,7 +31,7 @@ AEM Este tutorial explora cómo se pueden utilizar los servicios de contenido de
 Este tutorial abarca los siguientes temas:
 
 * Creación de contenido que represente un evento mediante fragmentos de contenido
-* AEM Defina un punto final de servicios de contenido de AEM mediante plantillas de AEM Sites y páginas que exponen los datos del evento como JSON
+* AEM Defina un punto final de servicios de contenido de con plantillas de AEM Sites y páginas que exponen los datos de evento como JSON
 * AEM Descubra cómo se pueden utilizar los componentes principales de WCM para que los especialistas en marketing puedan crear puntos finales JSON de forma predeterminada
 * AEM Consumir JSON de servicios de contenido de desde una aplicación móvil
    * El uso de Android se debe a que tiene un emulador multiplataforma que todos los usuarios (Windows, macOS y Linux) de este tutorial pueden utilizar para ejecutar la aplicación nativa.
@@ -43,7 +44,7 @@ Si encuentra algún problema con el tutorial o el código, deje un [Problema de 
 
 ## AEM Servicios de contenido de GraphQL AEM vs.
 
-|  | AEM API de GraphQL | AEM Servicios de contenido |
+|                                | AEM API de GraphQL | AEM Servicios de contenido |
 |--------------------------------|:-----------------|:---------------------|
 | Definición del esquema | Modelos de fragmento de contenido estructurado | AEM Componentes de |
 | Contenido | Fragmentos de contenido | AEM Componentes de |

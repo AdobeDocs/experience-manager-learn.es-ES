@@ -5,12 +5,13 @@ topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
 role: Developer, Architect
 level: Beginner
-kt: 7635
+jira: KT-7635
 thumbnail: kt-7635.jpeg
 last-substantial-update: 2022-11-11T00:00:00Z
 recommendations: noDisplay, noCatalog
+doc-type: Tutorial
 exl-id: e5e6204c-d88c-4e79-a7f4-0cfc140bc51c
-source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1109'
 ht-degree: 2%
@@ -288,7 +289,7 @@ AEM Los componentes de contenedor de utilizan directivas para dictar los compone
 
 SPA Para configurar el contenedor de cuadrícula adaptable de la plantilla de página de remoto:
 
-1. Inicie sesión en AEM Author
+1. AEM Iniciar sesión en el autor de la
 1. Vaya a __Herramientas > General > Plantillas > Aplicación WKND__
 1. Editar __SPA Página de informe__
 
@@ -314,7 +315,7 @@ SPA Para configurar el contenedor de cuadrícula adaptable de la plantilla de p�
 
 SPA Después de la actualización de la para incrustar `<ResponsiveGrid...>`, contenedores para tres componentes React editables (`EditableTitle`, `EditableText`, y `EditableImage`AEM ), y si se actualiza con una política de plantilla correspondiente, podemos empezar a crear contenido en el componente contenedor.
 
-1. Inicie sesión en AEM Author
+1. AEM Iniciar sesión en el autor de la
 1. Vaya a __Sitios > Aplicación WKND__
 1. Tocar __Inicio__ y seleccione __Editar__ desde la barra de acciones superior
    + AEM Se muestra un componente de texto &quot;Hello World&quot;, ya que este se añadió automáticamente al generar el proyecto a partir del arquetipo de proyecto de la lista de tipos de archivo

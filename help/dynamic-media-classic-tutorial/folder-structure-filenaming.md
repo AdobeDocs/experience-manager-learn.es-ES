@@ -2,15 +2,13 @@
 title: Determine la estructura de carpetas y la convención de nombres de archivos
 description: La asignación de nombres de archivo es quizás la decisión más importante que tomará al implementar Dynamic Media Classic. La estructura de carpetas es igualmente importante. Aprenda por qué es tan importante y posibles enfoques para la estructura de carpetas y los nombres de archivo.
 feature: Dynamic Media Classic
-doc-type: tutorial
 activity: develop
-topics: development, authoring, configuring, architecture
-audience: all
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Tutorial
 exl-id: 15121896-9196-4ce0-aff2-9178563326b4
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1207'
 ht-degree: 0%
@@ -77,9 +75,9 @@ Este es un sistema muy simple, y bueno si tiene necesidades modestas. Sin embarg
 | SKU/PID | Categoría | Nombre de archivo | ID de recurso |
 | ------- | ----------------------- | ------------------------------------------- | ------------------------------- |
 | AA123 | Vistas Alt | AA123_1.tif AA123_2.tif AA123_3.tif | AA123_1 AA123_2 AA123_3 |
-|  | Vistas en color | AA123_BLU.tif AA123_RED.tif AA123_BROWN.tif | AA123_BLU AA123_RED AA123_BROWN |
-|  | Muestras | AA123_BLU_SW.tif | AA123_BLU_SW |
-|  | Conjunto de imágenes o conjunto de muestras |  | AA123 o AA123_SET | -- |
+|         | Vistas en color | AA123_BLU.tif AA123_RED.tif AA123_BROWN.tif | AA123_BLU AA123_RED AA123_BROWN |
+|         | Muestras | AA123_BLU_SW.tif | AA123_BLU_SW |
+|         | Conjunto de imágenes o conjunto de muestras |                                             | AA123 o AA123_SET | -- |
 
 Al tratar con colecciones de conjuntos, como conjuntos de imágenes y conjuntos de muestras, el propio conjunto también debe tener un nombre único. Por lo tanto, en este caso, el conjunto podría recibir el SKU base como su nombre o el SKU con la extensión &quot;_SET&quot;.
 

@@ -1,19 +1,19 @@
 ---
 title: Integración de trabajadores de Asset compute AEM con perfiles de procesamiento de
-description: AEM El as a Cloud Service se integra con los Assets computes de trabajo implementados en Adobe I/O Runtime a través de los perfiles de procesamiento de AEM Assets. Los perfiles de procesamiento se configuran en el servicio Autor para procesar recursos específicos mediante programas de trabajo personalizados y almacenar los archivos generados por los trabajadores como representaciones de recursos.
+description: AEM El as a Cloud Service se integra con los trabajadores de Asset compute implementados en Adobe I/O Runtime a través de los perfiles de procesamiento de AEM Assets. Los perfiles de procesamiento se configuran en el servicio Autor para procesar recursos específicos mediante programas de trabajo personalizados y almacenar los archivos generados por los trabajadores como representaciones de recursos.
 feature: Asset Compute Microservices
 topics: renditions, development
 version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
-kt: 6287
+jira: KT-6287
 thumbnail: KT-6287.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 1b398c8c-6b4e-4046-b61e-b44c45f973ef
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 2%
@@ -77,7 +77,7 @@ En primer lugar, cree un nuevo perfil de procesamiento que invoque al trabajador
 
 ## Terminados!
 
-Felicitaciones. Ha finalizado el [tutorial](../overview.md) AEM sobre cómo extender los microservicios de Asset compute as a Cloud Service de la! Ahora debe tener la capacidad de configurar, desarrollar, probar, depurar e implementar Asset compute AEM personalizados para su servicio de autor as a Cloud Service de la.
+Felicitaciones. Ha finalizado el [tutorial](../overview.md) AEM sobre cómo extender los microservicios de Asset compute as a Cloud Service de la! Ahora debe tener la capacidad de configurar, desarrollar, probar, depurar e implementar Asset compute AEM personalizadas para que las use el servicio de autor as a Cloud Service de la.
 
 ### Revise el código fuente completo del proyecto en Github
 

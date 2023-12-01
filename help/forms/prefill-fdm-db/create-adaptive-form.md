@@ -3,13 +3,13 @@ title: Crear formulario adaptable
 description: Crear y configurar formularios adaptables para utilizar el servicio de rellenado previo del modelo de datos de formulario
 feature: Adaptive Forms
 version: 6.4,6.5
-kt: 5813
+jira: KT-5813
 thumbnail: kt-5813.jpg
 topic: Development
 role: User
 level: Beginner
 exl-id: c8d4eed8-9e2b-458c-90d8-832fc9e0ad3f
-source-git-commit: 4b47daf82e27f6bea4be30e3cdd132f497f4c609
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '606'
 ht-degree: 2%
@@ -72,7 +72,7 @@ El siguiente paso es mostrar los beneficiarios del empleado en forma de tabla. E
 * Establezca la Referencia de enlace en **/new/GetEmployeeBeneficiaries**
 * Establezca la Configuración de repetición: Recuento mínimo en 1 y Recuento máximo en 5.
 * La configuración de Row1 debe ser similar a la captura de pantalla siguiente
-   ![row-configure](assets/configure-row.PNG)
+  ![row-configure](assets/configure-row.PNG)
 * Haga clic en el ☑ azul para guardar los cambios
 
 ## Enlazar celdas de fila

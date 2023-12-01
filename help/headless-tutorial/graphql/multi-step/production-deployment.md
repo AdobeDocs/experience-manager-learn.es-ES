@@ -1,25 +1,25 @@
 ---
-title: 'AEM Implementación de producción mediante un servicio de publicación de AEM: Introducción a la aplicación sin encabezado GraphQL'
-description: Obtenga información acerca de los servicios de AEM Author y Publish y el patrón de implementación recomendado para aplicaciones sin encabezado. En este tutorial, aprenderá a utilizar variables de entorno para cambiar dinámicamente un extremo de GraphQL en función del entorno de destino. AEM Aprenda a configurar correctamente los recursos de intercambio de recursos de origen cruzado (CORS) para su uso compartido.
+title: 'AEM AEM Implementación de producción mediante un servicio de publicación en la: Introducción a las soluciones sin encabezado - GraphQL'
+description: AEM Obtenga información acerca de los servicios de creación y publicación de y el patrón de implementación recomendado para aplicaciones sin encabezado. En este tutorial, aprenderá a utilizar variables de entorno para cambiar dinámicamente un extremo de GraphQL en función del entorno de destino. AEM Aprenda a configurar correctamente los recursos de intercambio de recursos de origen cruzado (CORS) para su uso compartido.
 version: Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
 mini-toc-levels: 1
-kt: 7131
+jira: KT-7131
 thumbnail: KT-7131.jpg
 exl-id: 8c8b2620-6bc3-4a21-8d8d-8e45a6e9fc70
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2357'
 ht-degree: 9%
 
 ---
 
-# Implementación de producción con un servicio de publicación de AEM
+# AEM Implementación de producción con un servicio de publicación de
 
-En este tutorial, se configura un entorno local para simular el contenido que se distribuye desde una instancia de autor a una instancia de publicación. También generará una compilación de producción de una aplicación de React configurada para consumir contenido del entorno de publicación de AEM usando las API de GraphQL. AEM A lo largo del camino, aprenderá a utilizar de forma eficaz las variables de entorno y a actualizar las configuraciones de CORS de la.
+En este tutorial, se configura un entorno local para simular el contenido que se distribuye desde una instancia de autor a una instancia de publicación. AEM También generará una compilación de producción de una aplicación de React configurada para consumir contenido del entorno de publicación de mediante las API de GraphQL. AEM A lo largo del camino, aprenderá a utilizar de forma eficaz las variables de entorno y a actualizar las configuraciones de CORS de la.
 
 ## Requisitos previos
 
@@ -29,7 +29,7 @@ Este tutorial forma parte de un tutorial de varias partes. Se supone que se han 
 
 Obtenga información sobre cómo:
 
-* Comprender la arquitectura de AEM Author y Publish.
+* AEM Comprender la arquitectura de autor y publicación de la.
 * Conozca las prácticas recomendadas para administrar variables de entorno.
 * AEM Obtenga información sobre cómo configurar correctamente los para el uso compartido de recursos de origen cruzado (CORS).
 
@@ -45,10 +45,10 @@ El diagrama anterior muestra este patrón de implementación común.
 
 1. A **Autor del contenido** AEM utiliza el servicio de creación de para crear, editar y administrar contenido.
 2. El **autor de contenido** y otros usuarios internos pueden obtener una previsualización del contenido directamente en el servicio de creación. Se puede configurar una versión de previsualización de la aplicación que se conecte al servicio de creación.
-3. Una vez aprobado el contenido, se puede **publicado** al servicio AEM Publish.
+3. Una vez aprobado el contenido, se puede **publicado** AEM al servicio Publicación de la.
 4. **Los usuarios finales interactúan con la versión de producción de la aplicación.** La aplicación de producción se conecta al servicio de publicación y utiliza las API de GraphQL para solicitar y consumir contenido.
 
-El tutorial simula la implementación anterior añadiendo una instancia de publicación de AEM a la configuración actual. En capítulos anteriores, la aplicación React actuaba como una previsualización conectándose directamente a la instancia de autor. Una compilación de producción de la aplicación React se implementa en un servidor estático Node.js que se conecta a la nueva instancia de publicación.
+AEM El tutorial simula la implementación anterior añadiendo una instancia de Publicación de la a la configuración actual. En capítulos anteriores, la aplicación React actuaba como una previsualización conectándose directamente a la instancia de autor. Una compilación de producción de la aplicación React se implementa en un servidor estático Node.js que se conecta a la nueva instancia de publicación.
 
 Al final, se están ejecutando tres servidores locales:
 
@@ -58,7 +58,7 @@ Al final, se están ejecutando tres servidores locales:
 
 ## AEM Instalación de SDK de: modo de publicación {#aem-sdk-publish}
 
-Actualmente tenemos una instancia en ejecución del SDK en **Autor** modo. El SDK también se puede iniciar en **Publish** modo para simular un entorno de publicación de AEM.
+Actualmente tenemos una instancia en ejecución del SDK en **Autor** modo. El SDK también se puede iniciar en **Publish** AEM modo para simular un entorno de publicación de la.
 
 Una guía más detallada para configurar un entorno de desarrollo local [se puede encontrar aquí](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=en#local-development-environment-set-up).
 
@@ -98,7 +98,7 @@ Al igual que en la instancia de autor, la instancia de publicación debe tener h
 
    ![Sitio de referencia de cierre de sesión de WKND](assets/publish-deployment/sign-out-wknd-reference-site.png)
 
-   A diferencia de la instancia de autor de AEM, las instancias de publicación de AEM tienen de forma predeterminada acceso anónimo de solo lectura. Queremos simular la experiencia de un usuario anónimo al ejecutar la aplicación React.
+   AEM AEM A diferencia de la instancia de autor de la, las instancias de publicación de la aplicación tienen de forma predeterminada acceso anónimo de solo lectura. Queremos simular la experiencia de un usuario anónimo al ejecutar la aplicación React.
 
 ## Actualizar las variables de entorno para que apunten a la instancia de publicación {#react-app-publish}
 
@@ -175,7 +175,7 @@ La aplicación React se puede iniciar usando el servidor de Webpack, pero solo e
 
    ![Aplicación React ofrecida](assets/publish-deployment/react-app-served-port5000.png)
 
-   Observe que la consulta de GraphQL funciona en la página principal. Inspect el **XHR** utilizar las herramientas para desarrolladores. Observe que el POST de GraphQL se conecta a la instancia de publicación en `http://localhost:4503/content/graphql/global/endpoint.json`.
+   Observe que la consulta de GraphQL funciona en la página principal. Inspect el **XHR** solicitud de con sus herramientas para desarrolladores. Observe que el POST de GraphQL se conecta a la instancia de publicación en `http://localhost:4503/content/graphql/global/endpoint.json`.
 
    Sin embargo, todas las imágenes están rotas en la página de inicio!
 
@@ -187,7 +187,7 @@ La aplicación React se puede iniciar usando el servidor de Webpack, pero solo e
 
 ## Referencias de imagen absolutas {#absolute-image-references}
 
-Las imágenes parecen rotas debido a la `<img src` se establece en una ruta relativa y termina apuntando al servidor estático del nodo en `http://localhost:5000/`. En su lugar, estas imágenes deben señalar a la instancia de publicación de AEM. Hay varias soluciones potenciales para esto. Al utilizar el servidor de desarrollo de Webpack, el archivo `react-app/src/setupProxy.js` AEM configure un proxy entre el servidor de Webpack y la instancia de autor de la para cualquier solicitud a `/content`. Se puede utilizar una configuración proxy en un entorno de producción, pero debe configurarse en el nivel de servidor web. Por ejemplo, [Módulo de proxy de Apache](https://httpd.apache.org/docs/2.4/mod/mod_proxy.html).
+Las imágenes parecen rotas debido a la `<img src` se establece en una ruta relativa y termina apuntando al servidor estático del nodo en `http://localhost:5000/`. AEM En su lugar, estas imágenes deben apuntar a la instancia Publicación de la. Hay varias soluciones potenciales para esto. Al utilizar el servidor de desarrollo de Webpack, el archivo `react-app/src/setupProxy.js` AEM configure un proxy entre el servidor de Webpack y la instancia de autor de la para cualquier solicitud a `/content`. Se puede utilizar una configuración proxy en un entorno de producción, pero debe configurarse en el nivel de servidor web. Por ejemplo, [Módulo de proxy de Apache](https://httpd.apache.org/docs/2.4/mod/mod_proxy.html).
 
 Se puede actualizar la aplicación para incluir una dirección URL absoluta utilizando `REACT_APP_HOST_URI` variable de entorno. AEM En su lugar, vamos a utilizar una función de la API de GraphQL para solicitar una dirección URL absoluta a la imagen.
 
@@ -341,7 +341,7 @@ A continuación, permite simular la publicación de contenido entre las instanci
 
 1. Vuelva a la aplicación de React que se ejecuta en [http://localhost:5000/](http://localhost:5000/). Ahora puede hacer clic en el Bali Surf Camp para ver los detalles de la aventura.
 
-1. Vuelva a la instancia de autor de AEM en [http://localhost:4502/editor.html/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp](http://localhost:4502/editor.html/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp) y actualice el **Título** del fragmento. **Guardar y cerrar** el fragmento. Entonces **publicar** el fragmento.
+1. AEM Vuelva a la instancia de autor de la en [http://localhost:4502/editor.html/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp](http://localhost:4502/editor.html/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp) y actualice el **Título** del fragmento. **Guardar y cerrar** el fragmento. Entonces **publicar** el fragmento.
 1. Volver a [http://localhost:5000/adventure:/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp](http://localhost:5000/adventure:/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp) y observe los cambios publicados.
 
    ![Bali Surf Camp Publicar actualización](assets/publish-deployment/bali-surf-camp-update.png)
@@ -350,7 +350,7 @@ A continuación, permite simular la publicación de contenido entre las instanci
 
 AEM AEM La seguridad de es de forma predeterminada y no permite que las propiedades web que no son de tipo realicen llamadas del lado del cliente. AEM AEM La configuración de Intercambio de recursos de origen cruzado (CORS) de puede permitir que dominios específicos realicen llamadas a la.
 
-A continuación, experimente con la configuración CORS de la instancia de publicación de AEM.
+AEM A continuación, experimente con la configuración CORS de la instancia de publicación de la.
 
 1. Vuelva a la ventana del terminal donde se está ejecutando la aplicación React con el comando. `npm run serve`:
 
@@ -373,7 +373,7 @@ A continuación, experimente con la configuración CORS de la instancia de publi
 
    ![Error CORS](assets/publish-deployment/cors-error-not-fetched.png)
 
-   A continuación, actualice la configuración AEM Publish CORS para permitir solicitudes desde la dirección IP de red.
+   AEM A continuación, actualice la configuración de CORS Publicar en la para permitir solicitudes desde la dirección IP de red.
 
 1. Vaya a [http://localhost:4503/content/wknd/us/en/errors/sign-in.html](http://localhost:4503/content/wknd/us/en/errors/sign-in.html) e inicie sesión con el nombre de usuario `admin` y contraseña `admin`.
 
@@ -401,7 +401,7 @@ A continuación, experimente con la configuración CORS de la instancia de publi
 
 ## Enhorabuena. {#congratulations}
 
-Felicitaciones. Ahora ha simulado una implementación de producción completa utilizando un entorno de publicación de AEM. AEM También ha aprendido a utilizar la configuración CORS en la configuración de la aplicación de la configuración de la configuración de la aplicación de la configuración de la aplicación de forma.
+Felicitaciones. AEM Ahora ha simulado una implementación de producción completa utilizando un entorno de publicación en la. AEM También ha aprendido a utilizar la configuración CORS en la configuración de la aplicación de la configuración de la configuración de la aplicación de la configuración de la aplicación de forma.
 
 ## Otros recursos
 

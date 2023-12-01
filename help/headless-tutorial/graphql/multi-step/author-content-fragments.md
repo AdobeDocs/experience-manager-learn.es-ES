@@ -3,14 +3,14 @@ title: 'AEM Creación de fragmentos de contenido: Introducción a la creación s
 description: Introducción a Adobe Experience Manager AEM () y GraphQL. Cree y edite un nuevo fragmento de contenido basado en un modelo de fragmento de contenido. Aprenda a crear variaciones de Fragmentos de contenido.
 version: Cloud Service
 mini-toc-levels: 1
-kt: 6713
+jira: KT-6713
 thumbnail: 22451.jpg
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 701fae92-f740-4eb6-8133-1bc45a472d0f
-source-git-commit: 25c289b093297e870c52028a759d05628d77f634
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 4%
@@ -49,7 +49,7 @@ Los fragmentos de contenido se almacenan en carpetas en AEM Assets. Para crear f
 
    ![Abrir propiedades de carpeta](assets/author-content-fragments/open-folder-properties.png)
 
-1. Pulse el botón **Cloud Services** pestaña. En la pestaña Configuración de nube, utilice el buscador de rutas para seleccionar **Mi proyecto** configuración. El valor debe ser `/conf/my-project`.
+1. Pulse el botón **Cloud Service** pestaña. En la pestaña Configuración de nube, utilice el buscador de rutas para seleccionar **Mi proyecto** configuración. El valor debe ser `/conf/my-project`.
 
    ![Establecer configuración de nube](assets/author-content-fragments/set-cloud-config-my-project.png)
 
@@ -57,7 +57,7 @@ Los fragmentos de contenido se almacenan en carpetas en AEM Assets. Para crear f
 
 1. Pulse el botón **Políticas** , en la pestaña **Modelos permitidos de fragmento de contenido** utilice el buscador de rutas para seleccionar el campo **Persona** y **Equipo** modelo creado anteriormente.
 
-   ![Modelos de fragmento de contenido permitidos](assets/author-content-fragments/allowed-content-fragment-models.png)
+   ![Modelos permitidos de fragmento de contenido](assets/author-content-fragments/allowed-content-fragment-models.png)
 
    Estas directivas las hereda cualquier subcarpeta automáticamente y se pueden anular. También puede permitir modelos por etiquetas o habilitar modelos de otras configuraciones de proyecto. Este mecanismo proporciona una forma eficaz de administrar la jerarquía de contenido.
 
@@ -100,11 +100,11 @@ A continuación, se crean varios fragmentos de contenido basados en la variable 
 
    Tocar **Crear** para crear el fragmento Persona.
 
-1. A continuación, repita los pasos para crear un **Equipo** fragmento que representa **Equipo alfa**:
+1. A continuación, repita los pasos para crear un **Equipo** fragmento que representa **Alpha de equipo**:
 
    * Ubicación: `/content/dam/my-project/en`
    * Modelo de fragmento de contenido: **Equipo**
-   * Título: **Equipo alfa**
+   * Título: **Alpha de equipo**
    * Nombre: `team-alpha`
 
    Tocar **Crear** para crear el fragmento de equipo.
@@ -131,7 +131,7 @@ A continuación, rellene los fragmentos recién creados con datos.
 
 ## Editar fragmento de contenido de equipo {#edit-team-content-fragment}
 
-1. Abra el **Equipo alfa** Fragmento de contenido mediante la IU de fragmento de contenido.
+1. Abra el **Alpha de equipo** Fragmento de contenido mediante la IU de fragmento de contenido.
 1. Rellene los campos de **Título**, **Nombre corto**, y **Descripción**.
 1. Seleccione el **John Doe** y **Alison Smith** Fragmentos de contenido para rellenar el **Miembros del equipo** campo:
 
@@ -141,7 +141,7 @@ A continuación, rellene los fragmentos recién creados con datos.
    >
    >También puede crear fragmentos de contenido en línea mediante el **Fragmento de contenido nuevo** botón.
 
-1. Tocar **Guardar y cerrar** para guardar los cambios en el fragmento Team Alpha.
+1. Tocar **Guardar y cerrar** para guardar los cambios en el fragmento Alpha de equipo.
 
 ## Publicar fragmentos de contenido
 

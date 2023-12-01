@@ -1,20 +1,20 @@
 ---
 title: Token de acceso de desarrollo local
-description: AEM AEM Los tokens de acceso de desarrollo local se utilizan para acelerar el desarrollo de integraciones con as a Cloud Service que interactúan mediante programación con los servicios de AEM Author o Publish a través de HTTP.
+description: AEM AEM Los tokens de acceso de desarrollo local se utilizan para acelerar el desarrollo de integraciones con as a Cloud Service AEM que interactúan mediante programación con los servicios de autor o publicación de la a través de HTTP.
 version: Cloud Service
-doc-type: tutorial
 topics: Development, Security
 feature: APIs
 activity: develop
 audience: developer
-kt: 6785
+jira: KT-6785
 thumbnail: 330477.jpg
 topic: Headless, Integrations
 role: Developer
 level: Intermediate, Experienced
 last-substantial-update: 2023-01-12T00:00:00Z
+doc-type: Tutorial
 exl-id: 197444cb-a68f-4d09-9120-7b6603e1f47d
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1067'
 ht-degree: 0%
@@ -31,7 +31,7 @@ AEM Los desarrolladores que crean integraciones que requieren acceso programáti
 
 ![Obtención de un token de acceso de desarrollo local](assets/local-development-access-token/getting-a-local-development-access-token.png)
 
-El token de acceso de desarrollo local proporciona acceso a los servicios de AEM Author y Publish como usuario que generó el token, junto con sus permisos. A pesar de ser un token de desarrollo, no lo comparta ni lo almacene en el control de código fuente.
+AEM El token de acceso de desarrollo local proporciona acceso a los servicios de Autor y Publicación de la como el usuario que generó el token, junto con sus permisos. A pesar de ser un token de desarrollo, no lo comparta ni lo almacene en el control de código fuente.
 
 1. Entrada [Adobe Admin Console](https://adminconsole.adobe.com/) asegúrese de que usted, el desarrollador, sea miembro de:
    + __Cloud Manager: Desarrollador__ AEM Perfil de producto de IMS (otorga acceso a la consola de desarrollador de)
@@ -67,7 +67,7 @@ AEM Esta aplicación de ejemplo se ejecuta desde la línea de comandos y actuali
 
 1. Lee los parámetros de la línea de comandos (`getCommandLineParams()`)
 1. AEM Obtiene el token de acceso utilizado para autenticarse en el as a Cloud Service de la (`getAccessToken(...)`)
-1. AEM Muestra una lista de todos los recursos de una carpeta de recursos de especificada en un parámetro de línea de comandos (`listAssetsByFolder(...)`)
+1. AEM Muestra una lista de todos los recursos de una carpeta de recursos de especificada en parámetros de la línea de comandos (`listAssetsByFolder(...)`)
 1. Actualice los metadatos de los recursos enumerados con los valores especificados en los parámetros de la línea de comandos (`updateMetadata(...)`)
 
 AEM AEM El elemento clave en la autenticación mediante programación para utilizar el token de acceso es la adición de un encabezado de solicitud HTTP de autorización a todas las solicitudes HTTP realizadas a los, en el siguiente formato:
@@ -271,6 +271,6 @@ AEM Compruebe que los metadatos se han actualizado iniciando sesión en el entor
 
 ## Pasos siguientes
 
-AEM Ahora que hemos accedido mediante programación a la as a Cloud Service utilizando el token de desarrollo local, A continuación, debemos actualizar la aplicación para que se gestione mediante credenciales de servicio, de modo que esta aplicación se pueda utilizar en un contexto de producción.
+AEM Ahora que hemos accedido mediante programación a la as a Cloud Service usando el token de desarrollo local, A continuación, debemos actualizar la aplicación para que se gestione mediante credenciales de servicio, de modo que esta aplicación se pueda utilizar en un contexto de producción.
 
 + [Cómo usar las credenciales del servicio](./service-credentials.md)

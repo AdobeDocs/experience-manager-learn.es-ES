@@ -2,17 +2,17 @@
 title: Pruebas unitarias
 description: Implemente una prueba unitaria que valide el comportamiento del modelo Sling del componente Byline, creado en el tutorial Componente personalizado.
 version: 6.5, Cloud Service
-type: Tutorial
 feature: APIs, AEM Project Archetype
 topic: Content Management, Development
 role: Developer
 level: Beginner
-kt: 4089
+jira: KT-4089
 mini-toc-levels: 1
 thumbnail: 30207.jpg
+doc-type: Tutorial
 exl-id: b926c35e-64ad-4507-8b39-4eb97a67edda
 recommendations: noDisplay, noCatalog
-source-git-commit: bbdb045edf5f2c68eec5094e55c1688e725378dc
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2980'
 ht-degree: 0%
@@ -138,8 +138,6 @@ Las pruebas unitarias suelen asignar clases de 1 a 1 con Java™. En este capít
    1. Identifíquelo fácilmente como archivo de prueba _para_ `BylineImpl.java`
    1. Pero también diferenciar el archivo de prueba _de_ la clase que se está sometiendo a prueba, `BylineImpl.java`
 
-
-
 ## Revisión de BylineImplTest.java {#reviewing-bylineimpltest-java}
 
 En este punto, el archivo de prueba JUnit es una clase Java™ vacía.
@@ -184,7 +182,7 @@ En este punto, el archivo de prueba JUnit es una clase Java™ vacía.
 
    Para empezar, comenzamos con un único método de prueba para cada método público en la clase que estamos probando, así que:
 
-   | BylineImpl.java |  | BylineImplTest.java |
+   | BylineImpl.java |              | BylineImplTest.java |
    | ------------------|--------------|---------------------|
    | getName() | está probado por | testGetName() |
    | getOccupations() | está probado por | testGetOccupations() |
@@ -412,7 +410,7 @@ Ahora que tenemos una configuración básica de contexto ficticio, vamos a escri
 
 ## Prueba de getOccupations() {#testing-get-occupations}
 
-¡bueno! ¡La primera prueba ha pasado! Vamos a seguir adelante y a probar `getOccupations()`. Dado que la inicialización del contexto ficticio se realizó en el `@Before setUp()`método, está disponible para todos los `@Test` métodos en este caso de prueba, incluidos `getOccupations()`.
+¡Muy bien! ¡La primera prueba ha pasado! Vamos a seguir adelante y a probar `getOccupations()`. Dado que la inicialización del contexto ficticio se realizó en el `@Before setUp()`método, está disponible para todos los `@Test` métodos en este caso de prueba, incluidos `getOccupations()`.
 
 Recuerde que este método debe devolver una lista ordenada alfabéticamente de ocupaciones (descendentes) almacenadas en la propiedad de ocupaciones.
 

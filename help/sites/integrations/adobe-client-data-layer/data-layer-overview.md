@@ -5,14 +5,15 @@ topic: Integrations
 feature: Adobe Client Data Layer, Core Components
 role: Developer
 level: Intermediate
-kt: 6261
+jira: KT-6261
 thumbnail: 41195.jpg
 last-substantial-update: 2021-01-11T00:00:00Z
+doc-type: Tutorial
 exl-id: 066693b7-2b87-45e8-93ec-8bd09a7c263e
-source-git-commit: 99b3ecf7823ff9a116c47c88abc901f8878bbd7a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '783'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
@@ -28,13 +29,13 @@ La capa de datos del cliente de Adobe presenta un método estándar para recopil
 
 ## Exploración de la capa de datos
 
-Puede hacerse una idea de la funcionalidad integrada de la capa de datos del cliente de Adobe con solo utilizar las herramientas para desarrolladores de su explorador y el [Sitio de referencia de WKND](https://wknd.site/us/en.html).
+Puede hacerse una idea de la funcionalidad integrada de la capa de datos del cliente de Adobe con solo utilizar las herramientas para desarrolladores de su explorador y el [Sitio de referencia de WKND](https://wknd.site/us/es.html).
 
 >[!NOTE]
 >
 > Capturas de pantalla a continuación tomadas desde el navegador Chrome.
 
-1. Vaya a [https://wknd.site/us/en.html](https://wknd.site/us/en.html)
+1. Vaya a [https://wknd.site/us/en.html](https://wknd.site/us/es.html)
 1. Abra las herramientas para desarrolladores e introduzca el siguiente comando en la **Consola**:
 
    ```js

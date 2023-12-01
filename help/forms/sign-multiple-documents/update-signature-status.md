@@ -3,13 +3,13 @@ title: Actualizar el estado de la firma del formulario en la base de datos
 description: AEM Actualizar el estado de firma del formulario firmado en la base de datos mediante el flujo de trabajo de la
 feature: Adaptive Forms
 version: 6.4,6.5
-kt: 6888
+jira: KT-6888
 thumbnail: 6888.jpg
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 75852a4b-7008-4c65-bab1-cc5dbf525e20
-source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 2%

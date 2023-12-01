@@ -1,19 +1,18 @@
 ---
 title: Integración de AEM Sites con Adobe Target
-seo-title: An article covering different ways to integrate Adobe Experience Manager (AEM) Sites with Adobe Target for delivering personalized content.
 description: Un artículo que explica cómo configurar Adobe Experience Manager con Adobe Target para diferentes escenarios.
-seo-description: An article covering how to set up Adobe Experience Manager with Adobe Target for different scenarios.
 feature: Experience Fragments
 topic: Personalization
 role: Developer
 level: Intermediate
 badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM Sites 6.5" before-title="false"
+doc-type: Tutorial
 exl-id: 54a30cd9-d94a-4de5-82a1-69ab2263980d
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '661'
-ht-degree: 5%
+ht-degree: 8%
 
 ---
 
@@ -23,8 +22,8 @@ En esta sección, analizaremos cómo configurar Adobe Experience Manager Sites c
 
 * **Agregar la biblioteca JavaScript de Adobe Target (necesario para todos los casos)**
 AEM Para los sitios alojados en, puede agregar bibliotecas de Target a su sitio mediante, [Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html). Launch ofrece una alternativa sencilla para implementar y gestionar todas las etiquetas necesarias para potenciar las importantes experiencias del cliente.
-* **Añadir los Cloud Services de Adobe Target (requerido para el escenario de Fragmentos de experiencias)**
-AEM Para los clientes de, que desean utilizar ofertas de fragmentos de experiencias para crear una actividad en Adobe Target, deberán integrar Adobe Target AEM con los Cloud Services de. AEM Esta integración es necesaria para insertar los fragmentos de experiencias de en Target como ofertas de HTML AEM/JSON, y para mantener las ofertas sincronizadas con la. *Esta integración es necesaria para implementar el escenario 1.*
+* **Añadir los Cloud Service de Adobe Target (requerido para el escenario de Fragmentos de experiencias)**
+AEM Para los clientes de, que desean utilizar ofertas de fragmentos de experiencias para crear una actividad en Adobe Target, deberán integrar Adobe Target AEM con los Cloud Service de. AEM Esta integración es necesaria para insertar los fragmentos de experiencias de en Target como ofertas de HTML AEM/JSON, y para mantener las ofertas sincronizadas con la. *Esta integración es necesaria para implementar el escenario 1.*
 
 ## Requisitos previos
 
@@ -56,22 +55,22 @@ AEM Para los clientes de, que desean utilizar ofertas de fragmentos de experienc
 
 AEM Se necesita una instancia de autor y publicación para completar este tutorial. La instancia de autor se está ejecutando en `http://localhost:4502` instancia de publicación y que se ejecuta en `http://localhost:4503`. Para obtener más información, consulte: [AEM Configuración de un entorno de desarrollo de Local](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/local-aem-dev-environment-article-setup.html).
 
-#### Configuración de instancias de autor y publicación de AEM
+#### AEM Configuración de instancias de autor y publicación de
 
 1. Obtenga una copia del [AEM Jar de inicio rápido y licencia.](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#GettingtheSoftware)
 2. Cree una estructura de carpetas en el equipo como la siguiente:
    ![Estructura de carpetas](assets/implementation/aem-setup-1.png)
 3. Cambie el nombre del JAR de inicio rápido a `aem-author-p4502.jar` y colóquelo debajo de la `/author` directorio. Añada el `license.properties` debajo del archivo `/author` directorio.
-   ![Instancia de autor de AEM](assets/implementation/aem-setup-author.png)
+   ![AEM Instancia de autor de](assets/implementation/aem-setup-author.png)
 4. Haga una copia del JAR de inicio rápido y cambie su nombre a `aem-publish-p4503.jar` y colóquelo debajo de la `/publish` directorio. Añada una copia del `license.properties` debajo del archivo `/publish` directorio.
-   ![Instancia de publicación de AEM](assets/implementation/aem-setup-publish.png)
+   ![AEM Instancia de publicación de](assets/implementation/aem-setup-publish.png)
 5. Haga doble clic en `aem-author-p4502.jar` para instalar la instancia de autor. Esto iniciará la instancia de autor, que se ejecutará en el puerto 4502 del equipo local.
 6. AEM Inicie sesión con las credenciales que se indican a continuación y, cuando el inicio de sesión se haya realizado correctamente, se le dirigirá a la pantalla de la página de inicio de la sesión de.
 nombre de usuario : **administrador**
 contraseña : **administrador**
-   ![Instancia de publicación de AEM](assets/implementation/aem-author-home-page.png)
+   ![AEM Instancia de publicación de](assets/implementation/aem-author-home-page.png)
 7. Haga doble clic en `aem-publish-p4503.jar` para instalar una instancia de publicación. Puede ver que se abre una nueva pestaña en el explorador para la instancia de publicación, que se ejecuta en el puerto 4503 y muestra la página de inicio de WeRetail. Estamos utilizando el sitio de referencia de WKND para este tutorial y vamos a instalar los paquetes en la instancia de autor.
-8. Vaya a AEM Author en el explorador web en `http://localhost:4502`. AEM En la pantalla Inicio de la, vaya a *[Herramientas > Implementación > Paquetes](http://localhost:4502/crx/packmgr/index.jsp)*.
+8. AEM Vaya a Autor de la en el explorador web en `http://localhost:4502`. AEM En la pantalla Inicio de la, vaya a *[Herramientas > Implementación > Paquetes](http://localhost:4502/crx/packmgr/index.jsp)*.
 9. AEM Descargue y cargue los paquetes para su uso (enumerados arriba en ). *[AEM Requisitos previos >](#aem)*)
    * [aem-guides-wknd.ui.apps-0.0.1-SNAPSHOT.zip](https://github.com/adobe/aem-guides-wknd/releases/download/archetype-18.1/aem-guides-wknd.ui.apps-0.0.1-SNAPSHOT.zip)
    * [aem-guides-wknd.ui.content-0.0.1-SNAPSHOT.zip](https://github.com/adobe/aem-guides-wknd/releases/download/archetype-18.1/aem-guides-wknd.ui.content-0.0.1-SNAPSHOT.zip)
@@ -79,7 +78,7 @@ contraseña : **administrador**
    * [digital-data-layer.zip](assets/implementation/digital-data-layer.zip)
 
    >[!VIDEO](https://video.tv.adobe.com/v/28377?quality=12&learn=on)
-10. AEM Después de instalar los paquetes en AEM Author, seleccione cada paquete cargado en el Administrador de paquetes y, a continuación, seleccione: **Más > Replicar** para asegurarse de que los paquetes se implementan en AEM Publish.
+10. AEM AEM Después de instalar los paquetes en el Autor de la, seleccione cada paquete cargado en el Administrador de paquetes y, a continuación, seleccione **Más > Replicar** AEM para asegurarse de que los paquetes se implementan en Publicación de la.
 11. En este punto, ha instalado correctamente su sitio de referencia de WKND y todos los paquetes adicionales necesarios para este tutorial.
 
 [CAPÍTULO SIGUIENTE](./using-launch-adobe-io.md)AEM : En el capítulo siguiente, integrará Launch con el servicio de integración de.

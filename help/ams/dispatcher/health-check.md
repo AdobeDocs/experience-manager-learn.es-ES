@@ -7,8 +7,9 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
+doc-type: Article
 exl-id: 69b4e469-52cc-441b-b6e5-2fe7ef18da90
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1139'
 ht-degree: 1%
@@ -56,7 +57,7 @@ Cubriremos para qué está configurada cada pieza y su importancia
 
 ### AEM Paquete de
 
-AEM Para indicar si está funcionando, necesita que haga una compilación básica de la página y sirva a la página.  Adobe Managed Services creó un paquete básico que contiene la página de prueba.  La página prueba que el repositorio está activo y que los recursos y la plantilla de página se pueden procesar.
+AEM Para indicar si está funcionando, necesita que haga una compilación básica de la página y sirva a la página.  Adobe Managed Services ha creado un paquete básico que contiene la página de prueba.  La página prueba que el repositorio está activo y que los recursos y la plantilla de página se pueden procesar.
 
 ![La imagen muestra el paquete AMS en el administrador de paquetes CRX](assets/load-balancer-healthcheck/health-check-package.png "health-check-package")
 

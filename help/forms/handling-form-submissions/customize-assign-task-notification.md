@@ -7,17 +7,17 @@ audience: developer
 doc-type: article
 activity: setup
 version: 6.4,6.5
-kt: 6279
+jira: KT-6279
 thumbnail: KT-6279.jpg
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 0cb74afd-87ff-4e79-a4f4-a4634ac48c51
 last-substantial-update: 2020-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '489'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -135,7 +135,7 @@ AEM Una vez que el componente OSGi se haya creado e implementado en el servidor,
 * Descargue e instale [Workflow-and-notification-template](assets/workflow-and-task-notification-template.zip) usando [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
 * Descargar [Formulario adaptable](assets/request-travel-authorization.zip) AEM e importar a la desde el [iu de formularios y documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
 * Implementación e inicio de [Paquete personalizado](assets/work-items-user-service-bundle.jar) uso del [consola web](http://localhost:4502/system/console/bundles)
-* [Vista previa y envío del formulario](http://localhost:4502/content/dam/formsanddocuments/requestfortravelauhtorization/jcr:content?wcmmode=disabled)
+* [Previsualice y envíe el formulario](http://localhost:4502/content/dam/formsanddocuments/requestfortravelauhtorization/jcr:content?wcmmode=disabled)
 
 Al enviar el formulario, se envía una notificación de asignación de tareas al ID de correo electrónico asociado al usuario administrador. La siguiente captura de pantalla muestra una notificación de asignación de tareas de ejemplo
 

@@ -5,12 +5,13 @@ topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
 role: Developer, Architect
 level: Beginner
-kt: 7629
+jira: KT-7629
 thumbnail: 333181.jpg
 last-substantial-update: 2022-11-11T00:00:00Z
 recommendations: noDisplay, noCatalog
+doc-type: Tutorial
 exl-id: ef7a1dad-993a-4c47-a9fb-91fa73de9b5d
-source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '793'
 ht-degree: 6%
@@ -38,7 +39,7 @@ Este tutorial requiere lo siguiente:
 + [Git](https://git-scm.com/downloads)
 + Requisitos previos solo de macOS
    + [Xcode](https://developer.apple.com/xcode/) o [Herramientas de línea de comandos de Xcode](https://developer.apple.com/xcode/resources/)
-+ [aem-guides-wknd.all-2.1.0.zip o bueno](https://github.com/adobe/aem-guides-wknd/releases)
++ [aem-guides-wknd.all-2.1.0.zip o superior](https://github.com/adobe/aem-guides-wknd/releases)
 + [código fuente aem-guides-wknd-graphql (rama: feature/spa-editor)](https://github.com/adobe/aem-guides-wknd-graphql/tree/feature/spa-editor)
 
 
@@ -124,7 +125,7 @@ SPA Verificar que la se esté ejecutando en [http://localhost:3000](http://local
 
 ## AEM SPA Contenido del autor en el editor de
 
-Antes de crear contenido, organice las ventanas del explorador de forma que el Autor de AEM (`http://localhost:4502`SPA ) está a la izquierda, y el control remoto está en la parte de la parte de la parte de la parte de la parte de abajo (`http://localhost:3000`) se ejecuta a la derecha. AEM SPA Esta disposición le permite ver cómo los cambios en el contenido de origen de la se reflejan inmediatamente en la.
+AEM Antes de crear contenido, organice las ventanas del navegador de modo que, a su vez, se pueda crear contenido de autor (`http://localhost:4502`SPA ) está a la izquierda, y el control remoto está en la parte de la parte de la parte de la parte de la parte de abajo (`http://localhost:3000`) se ejecuta a la derecha. AEM SPA Esta disposición le permite ver cómo los cambios en el contenido de origen de la se reflejan inmediatamente en la.
 
 1. Iniciar sesión en [AEM Servicio de autor de SDK](http://localhost:4502) as `admin`
 1. Vaya a __Sites > Aplicación WKND > us > es__

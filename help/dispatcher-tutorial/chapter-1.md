@@ -5,8 +5,9 @@ feature: Dispatcher
 topic: Architecture
 role: Architect
 level: Beginner
+doc-type: Tutorial
 exl-id: 3bdb6e36-4174-44b5-ba05-efbc870c3520
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '17460'
 ht-degree: 0%
@@ -365,7 +366,7 @@ La página &quot;Oferta especial de invierno&quot; aún no se ha representado, p
 
 Podría pensar que Dispatcher mantendría un seguimiento de cada recurso que toca mientras procesa y vacía todas las páginas que han utilizado este recurso, cuando ese recurso cambia. Pero Dispatcher no procesa las páginas. El sistema Publish realiza la representación. Dispatcher no sabe qué recursos van a un archivo .html procesado.
 
-¿Todavía no estás convencido? Usted podría pensar *&quot;debe haber una manera de implementar algún tipo de seguimiento de dependencia&quot;*. Bueno, lo hay, o más exactamente allí *era*. Comunicado 3 el bueno-bueno-buena AEM-abuelo de la República de Corea tenía un rastreador de dependencias implementado en la comunidad de la República de Corea. _sesión_ que se utilizó para procesar una página.
+¿Todavía no estás convencido? Usted podría pensar *&quot;debe haber una manera de implementar algún tipo de seguimiento de dependencia&quot;*. Bueno, lo hay, o más exactamente allí *era*. AEM Comunicado 3 el tatara-tatara-tatara-abuelo de la comunidad de la comunidad de la República de la República de la República de la República de la República de la República de Corea tenía un rastreador de dependencias implementado en la comunidad _sesión_ que se utilizó para procesar una página.
 
 Durante una solicitud, cada recurso adquirido a través de esta sesión se seguía como una dependencia de la URL que se estaba representando actualmente.
 
@@ -582,7 +583,7 @@ Hay una excepción natural, donde este patrón incluso en su forma simple es út
 
 AEM Desde el punto de vista de un desarrollador de, el patrón parecía súper elegante. Pero con Dispatcher tomado en la ecuación, usted podría estar de acuerdo, en que el enfoque ingenuo podría no ser suficiente.
 
-Por ahora, dejamos que usted decida si se trata de un patrón o de un antipatrón. ¿Y tal vez ya tiene algunas buenas ideas en mente sobre cómo mitigar los problemas explicados anteriormente? Bien. Entonces debería estar ansioso por ver cómo otros proyectos han resuelto estos problemas.
+Por ahora, dejamos que usted decida si esto es un patrón o un anti-patrón. ¿Y tal vez ya tiene algunas buenas ideas en mente sobre cómo mitigar los problemas explicados anteriormente? Bien. Entonces debería estar ansioso por ver cómo otros proyectos han resuelto estos problemas.
 
 ### Solución de problemas comunes de Dispatcher
 
@@ -1296,7 +1297,7 @@ Concluiremos la primera parte de este libro con una colección aleatoria de pist
 
 ### Corregir intervalos de invalidación
 
-Si instala AEM Author y Publish de forma predeterminada, la topología es un poco extraña. El autor envía el contenido a los sistemas de publicación y la solicitud de invalidación a las instancias de Dispatcher al mismo tiempo. Como tanto los sistemas de publicación como Dispatcher están desvinculados del autor por las colas, el tiempo puede ser un poco desafortunado. Dispatcher puede recibir la solicitud de invalidación del autor antes de que el contenido se actualice en el sistema de publicación.
+AEM Si instala un autor y una publicación de forma predeterminada, la topología es un poco extraña. El autor envía el contenido a los sistemas de publicación y la solicitud de invalidación a las instancias de Dispatcher al mismo tiempo. Como tanto los sistemas de publicación como Dispatcher están desvinculados del autor por las colas, el tiempo puede ser un poco desafortunado. Dispatcher puede recibir la solicitud de invalidación del autor antes de que el contenido se actualice en el sistema de publicación.
 
 Si un cliente solicita ese contenido mientras tanto, Dispatcher solicitará y almacenará contenido obsoleto.
 
@@ -1877,8 +1878,7 @@ CQ-Handle: <path-pattern>
 * `Deactive:` eliminar `/path-pattern.*`
 Y eliminar `/path-pattern/*`
 * `Delete:`   eliminar `/path-pattern.*`
-Y eliminar 
-`/path-pattern/*`
+Y eliminar `/path-pattern/*`
 * `Test:`   Devolver &quot;ok&quot; pero no hacer nada
 
 `CQ-Handle: <path-pattern>` - Ruta de recurso de contenido que se va a invalidar. Nota, `<path-pattern>` es en realidad un &quot;trazado&quot; y no un &quot;patrón&quot;.

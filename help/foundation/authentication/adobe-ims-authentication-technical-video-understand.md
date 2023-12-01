@@ -1,27 +1,24 @@
 ---
-title: AEM Explicación de la autenticación IMS de Adobe con el uso de la autenticación en Adobe Managed Services
+title: AEM Explicación de la autenticación IMS de Adobe con el uso de en Adobe Managed Services
 description: Adobe Experience Manager presenta la compatibilidad de Admin Console AEM para instancias de y la autenticación basada en Adobe IMS (Identity Management AEM System) para la autenticación en Managed Services.   AEM Esta integración permite a los clientes de Managed Services de los usuarios de la aplicación administrar todos los usuarios de Experience Cloud en una única consola web unificada. AEM AEM Los usuarios y grupos pueden asignarse a perfiles de producto asociados a instancias de, lo que otorga acceso administrado de forma centralizada a las instancias específicas de la instancia de la aplicación.
 version: 6.4, 6.5
 feature: User and Groups
-topics: authentication, security
-activity: understand
-audience: administrator, architect, developer, implementer
-doc-type: technical video
-kt: 781
+doc-type: Technical Video
+jira: KT-781
 topic: Architecture
 role: Architect
 level: Experienced
 exl-id: 52dd8a3f-6461-4acb-87ca-5dd9567d15a6
 last-substantial-update: 2022-10-01T00:00:00Z
 thumbnail: KT-781.jpg
-source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 4%
 
 ---
 
-# AEM Explicación de la autenticación IMS de Adobe con el uso de la autenticación en Adobe Managed Services{#understanding-adobe-ims-authentication-with-aem-on-adobe-managed-services}
+# AEM Explicación de la autenticación IMS de Adobe con el uso de en Adobe Managed Services{#understanding-adobe-ims-authentication-with-aem-on-adobe-managed-services}
 
 Adobe Experience Manager introduce la compatibilidad del Admin Console AEM con instancias de y la autenticación basada en Identity Management AEM System (IMS) de Adobe para la autenticación de en Managed Services.   AEM Esta integración permite a los clientes de Managed Services de los usuarios de la aplicación administrar todos los usuarios de Experience Cloud en una única consola web unificada. AEM AEM Los usuarios y grupos se pueden asignar a perfiles de producto asociados a instancias de, lo que otorga acceso administrado centralmente a las instancias de usuario específicas.
 

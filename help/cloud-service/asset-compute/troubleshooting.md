@@ -1,19 +1,19 @@
 ---
 title: Solucionar problemas de extensibilidad de Assets computes para AEM Assets
-description: A continuación se muestra un índice de problemas y errores comunes, junto con las soluciones que podrían encontrarse al desarrollar e implementar Assets computes personalizados para AEM Assets.
+description: A continuación se muestra un índice de problemas y errores comunes, junto con las soluciones que podrían encontrarse al desarrollar e implementar Assets computes personalizadas para AEM Assets.
 feature: Asset Compute Microservices
 topics: renditions, metadata, development
 version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
-kt: 5802
+jira: KT-5802
 thumbnail: KT-5802.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: d851d315-ed0e-46b8-bcd8-417e1e58c0c4
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1239'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 # Solucionar problemas de extensibilidad de Asset compute
 
-A continuación se muestra un índice de problemas y errores comunes, junto con las soluciones que podrían encontrarse al desarrollar e implementar Assets computes personalizados para AEM Assets.
+A continuación se muestra un índice de problemas y errores comunes, junto con las soluciones que podrían encontrarse al desarrollar e implementar Assets computes personalizadas para AEM Assets.
 
 ## Desarrollar{#develop}
 
@@ -30,7 +30,7 @@ A continuación se muestra un índice de problemas y errores comunes, junto con 
 
 + __Error__: la representación se procesa de forma incompleta (cuando una imagen) o está dañada y no se puede abrir.
 
-   ![La representación se devuelve parcialmente dibujada](./assets/troubleshooting/develop__await.png)
+  ![La representación se devuelve parcialmente dibujada](./assets/troubleshooting/develop__await.png)
 
 + __Causa__: del trabajador `renditionCallback` se está cerrando antes de que la representación se pueda escribir completamente en `rendition.path`.
 + __Resolución__: revise el código de trabajo personalizado y asegúrese de que todas las llamadas asincrónicas se realizan sincrónicamente mediante `await`.
@@ -66,7 +66,7 @@ A continuación se muestra un índice de problemas y errores comunes, junto con 
 
 ### Lista desplegable de archivos de origen incorrecta{#source-files-dropdown-incorrect}
 
-La herramienta de desarrollo de asset compute puede introducir un estado en el que extrae datos antiguos y es más visible en el __Archivo de origen__ desplegable que muestra elementos incorrectos.
+La herramienta de desarrollo de assets computes puede introducir un estado en el que extrae datos antiguos y es más visible en el __Archivo de origen__ desplegable que muestra elementos incorrectos.
 
 + __Error:__ La lista desplegable del archivo de origen muestra elementos incorrectos.
 + __Causa:__ El estado de explorador en caché obsoleto provoca el
@@ -74,9 +74,9 @@ La herramienta de desarrollo de asset compute puede introducir un estado en el q
 
 ### Parámetro de consulta devToolToken faltante o no válido{#missing-or-invalid-devtooltoken-query-parameter}
 
-+ __Error:__ Notificación &quot;no autorizada&quot; en la herramienta de desarrollo de Asset compute
++ __Error:__ Notificación &quot;no autorizada&quot; en la herramienta de desarrollo de Assets computes
 + __Causa:__ `devToolToken` falta o no es válido
-+ __Resolución:__ Cierre la ventana del explorador de la Herramienta de desarrollo de Asset compute y finalice cualquier proceso de la Herramienta de desarrollo en ejecución iniciado mediante el `aio app run` y vuelva a iniciar la herramienta de desarrollo (con `aio app run`).
++ __Resolución:__ Cierre la ventana del explorador de la Herramienta de desarrollo de Assets computes y finalice cualquier proceso de la Herramienta de desarrollo en ejecución iniciado mediante el `aio app run` y vuelva a iniciar la herramienta de desarrollo (con `aio app run`).
 
 ### No se pueden eliminar los archivos de origen{#unable-to-remove-source-files}
 
@@ -84,7 +84,7 @@ La herramienta de desarrollo de asset compute puede introducir un estado en el q
 + __Causa:__ Esta funcionalidad no se ha implementado
 + __Resolución:__ Inicie sesión en su proveedor de almacenamiento en la nube con las credenciales definidas en `.env`. Busque el contenedor utilizado por las herramientas de desarrollo (también especificado en `.env`), vaya al __origen__ y elimine las imágenes de origen. Es posible que tenga que realizar los pasos descritos en [Lista desplegable de archivos de origen incorrecta](#source-files-dropdown-incorrect) si los archivos de origen eliminados siguen mostrándose en el menú desplegable, ya que pueden almacenarse en la caché local en el &quot;estado de aplicación&quot; de las herramientas de desarrollo.
 
-   ![Almacenamiento del Blob de Microsoft Azure](./assets/troubleshooting/dev-tool__remove-source-files.png)
+  ![Almacenamiento del Blob de Microsoft Azure](./assets/troubleshooting/dev-tool__remove-source-files.png)
 
 ## Probar{#test}
 
@@ -94,7 +94,7 @@ La herramienta de desarrollo de asset compute puede introducir un estado en el q
 + __Causa:__ El trabajador no ha podido generar una representación debido a un error inesperado, como un error de sintaxis de JavaScript.
 + __Resolución:__ Revise el de la ejecución de la prueba `test.log` en `/build/test-results/test-worker/test.log`. Busque la sección de este archivo correspondiente al caso de prueba que falla y revise los errores.
 
-   ![Solución de problemas: no se genera ninguna representación](./assets/troubleshooting/test__no-rendition-generated.png)
+  ![Solución de problemas: no se genera ninguna representación](./assets/troubleshooting/test__no-rendition-generated.png)
 
 ### La prueba genera una representación incorrecta que provoca que la prueba falle{#tests-generates-incorrect-rendition}
 
@@ -125,11 +125,11 @@ La herramienta de desarrollo de asset compute puede introducir un estado en el q
 #### Se adjuntó el depurador de código VS después de iniciar la ejecución del trabajador{#vs-code-debugger-attached-after-worker-execution-began}
 
 + __Causa:__ El depurador de código de VS no se adjuntó antes de pulsar __Ejecutar__ en la herramienta de desarrollo.
-+ __Resolución:__ Asegúrese de que el depurador se ha asociado revisando la consola de depuración del código VS (Ver > Consola de depuración) y, a continuación, vuelva a ejecutar el Asset compute de trabajo desde la herramienta de desarrollo.
++ __Resolución:__ Asegúrese de que el depurador se ha asociado revisando la consola de depuración del código VS (Ver > Consola de depuración) y, a continuación, vuelva a ejecutar el trabajador de Asset compute desde la herramienta de desarrollo.
 
 ### Se agota el tiempo de espera del trabajador durante depuración{#worker-times-out-while-debugging}
 
-+ __Error__: la consola de depuración informa de &quot;La acción agotará el tiempo de espera en -XXX milisegundos&quot; o [Herramienta de desarrollo de assets computes](./develop/development-tool.md) la previsualización de la representación gira indefinidamente o
++ __Error__: la consola de depuración informa de &quot;La acción agotará el tiempo de espera en -XXX milisegundos&quot; o [Herramienta de desarrollo de asset compute](./develop/development-tool.md) la previsualización de la representación gira indefinidamente o
 + __Causa__: el tiempo de espera del trabajador tal como se define en la [manifest.yml](./develop/manifest.md) se supera durante la depuración.
 + __Resolución__: Aumente temporalmente el tiempo de espera del trabajador en la [manifest.yml](./develop/manifest.md) o acelerar las actividades de depuración.
 
@@ -139,11 +139,11 @@ La herramienta de desarrollo de asset compute puede introducir un estado en el q
 + __Causa__: Un error en `@adobe/aio-cli-plugin-asset-compute` 1.3.x, resultados en `Ctrl-C` no se reconoce como un comando de terminación.
 + __Resolución__: actualización `@adobe/aio-cli-plugin-asset-compute` a la versión 1.4.1+
 
-   ```
-   $ aio update
-   ```
+  ```
+  $ aio update
+  ```
 
-   ![Solución de problemas - actualización de aio](./assets/troubleshooting/debug__terminate.png)
+  ![Solución de problemas - actualización de aio](./assets/troubleshooting/debug__terminate.png)
 
 ## Implementación de{#deploy}
 

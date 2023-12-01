@@ -2,15 +2,12 @@
 title: Ajustes preestablecidos de imagen
 description: Los ajustes preestablecidos de imagen en Dynamic Media Classic contienen todos los ajustes necesarios para crear una imagen con un tamaño, formato, calidad y enfoque específicos. Los ajustes preestablecidos de imagen son un componente clave del tamaño dinámico. Si observa una dirección URL en Dynamic Media Classic, puede ver fácilmente si se está utilizando un ajuste preestablecido de imagen. Obtenga información sobre los ajustes preestablecidos de imagen, por qué son tan útiles y cómo crearlos.
 feature: Dynamic Media Classic, Image Presets
-doc-type: tutorial
-topics: development, authoring, configuring
-audience: all
-activity: use
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Tutorial
 exl-id: e472db7c-ac3f-4f66-85af-5a4c68ba609e
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 1%

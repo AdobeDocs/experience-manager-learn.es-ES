@@ -7,13 +7,13 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
-kt: 11135
+jira: KT-11135
 thumbnail: KT-11135.jpg
 index: false
 hide: true
 hidefromtoc: true
 exl-id: 75ffd84a-62b1-480f-b05f-3664f54bb171
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '146'
 ht-degree: 1%
@@ -28,5 +28,5 @@ Este código muestra el uso de Adobe [AEM Cliente sin encabezado para JavaScript
 
 Este código:
 
-+ Se conecta a un servicio de publicación de AEM y no requiere autenticación
++ AEM Se conecta a un servicio de publicación de y no requiere autenticación
 + Utiliza las consultas persistentes de WKND: `wknd-shared/adventures-all` y `wknd-shared/adventures-by-activity`

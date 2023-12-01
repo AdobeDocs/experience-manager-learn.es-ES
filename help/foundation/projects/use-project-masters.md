@@ -6,10 +6,11 @@ topic: Content Management, Collaboration
 feature: Projects
 level: Intermediate
 role: User
-kt: 256
+jira: KT-256
 thumbnail: 17740.jpg
+doc-type: Feature Video
 exl-id: 78ff62ad-1017-4a02-80e9-81228f9e01eb
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%
@@ -31,13 +32,13 @@ Los administradores ahora pueden crear un **[!DNL Master Project]** y asignar us
 
 [!DNL Master Projects] se puede crear en [!UICONTROL Maestros] carpeta bajo [!UICONTROL AEM Proyectos de]. Una vez creado un proyecto maestro, se muestra como una opción junto con las plantillas disponibles en el asistente cuando se crean nuevos proyectos.
 
-[!DNL Project Masters] URL (instancia de autor local de AEM): [http://localhost:4502/projects.html/content/projects/masters](http://localhost:4502/projects.html/content/projects/masters)
+[!DNL Project Masters] AEM URL (instancia local de autor de la): [http://localhost:4502/projects.html/content/projects/masters](http://localhost:4502/projects.html/content/projects/masters)
 
 ## Eliminar [!DNL Project Masters]
 
 Al eliminar un proyecto principal, se producen proyectos derivados que no se pueden utilizar.
 
-AEM Antes de eliminar un proyecto principal, asegúrese de que todos los proyectos derivados han finalizado y se han eliminado de la lista de proyectos de la lista de proyectos de la lista de proyectos de la lista de proyectos de la lista de proyectos. Asegúrese de guardar los datos de proyecto necesarios antes de quitar los proyectos derivados. AEM Una vez que todos los proyectos derivados se han eliminado de la, el proyecto principal se puede eliminar de forma segura.
+AEM Antes de eliminar un proyecto principal, asegúrese de que todos los proyectos derivados han finalizado y se han eliminado de la lista de proyectos de la. Asegúrese de guardar los datos de proyecto necesarios antes de quitar los proyectos derivados. AEM Una vez que todos los proyectos derivados se han eliminado de la, el proyecto principal se puede eliminar de forma segura.
 
 ## Marcar [!DNL Project Masters] como inactivo
 

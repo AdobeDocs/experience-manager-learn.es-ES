@@ -7,12 +7,12 @@ audience: developer
 doc-type: article
 activity: implement
 version: 6.5
-kt: 5830
+jira: KT-5830
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 0b141b37-6041-4f87-bd50-dade8c0fee7d
-source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 4%
@@ -90,7 +90,7 @@ return isMarried(inboxItem);
 * [Importar el formulario de ejemplo](assets/snap-form.zip) seleccionando _Carga de archivos_ de _Crear_ menú
 * [Previsualización del formulario](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
 * Seleccione el _estado civil_ y enviar el formulario
-   [ver bandeja de entrada](http://localhost:4502/aem/inbox)
+  [ver bandeja de entrada](http://localhost:4502/aem/inbox)
 
 Al enviar el formulario, se almacenará en déclencheur el flujo de trabajo y se asignará una tarea al usuario &quot;administrador&quot;. Debería ver un valor en la columna Casado, como se muestra en esta captura de pantalla
 

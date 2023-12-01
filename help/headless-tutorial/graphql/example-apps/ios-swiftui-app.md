@@ -3,7 +3,7 @@ title: 'Aplicación de iOS AEM: ejemplo sin encabezado'
 description: Las aplicaciones de ejemplo son una buena manera de explorar las capacidades sin encabezado de Adobe Experience Manager AEM (). Esta aplicación para iOS AEM muestra cómo realizar consultas en el contenido mediante API de GraphQL de mediante consultas persistentes.
 version: Cloud Service
 mini-toc-levels: 2
-kt: 10587
+jira: KT-10587
 thumbnail: KT-10587.jpg
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
@@ -12,7 +12,7 @@ level: Beginner
 last-substantial-update: 2023-05-10T00:00:00Z
 badgeVersions: label="AEM sin encabezado as a Cloud Service" before-title="false"
 exl-id: 6c5373db-86ec-410b-8a3b-9d4f86e06812
-source-git-commit: 3e4960bf2d243e33fb9f36fd3fbb45f57260229a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '990'
 ht-degree: 3%
@@ -41,7 +41,7 @@ La aplicación de iOS AEM funciona con las siguientes opciones de implementació
 + [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=es)
 + Configuración local mediante [el SDK de AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=es)
 
-La aplicación de iOS está diseñada para conectarse a un __AEM Publish__ , sin embargo, puede obtener contenido de AEM Author si la autenticación se proporciona en la configuración de la aplicación de iOS.
+La aplicación de iOS está diseñada para conectarse a un __AEM Publicación de__ AEM , sin embargo, puede obtener contenido de Autor de la fuente si se proporciona autenticación en la configuración de la aplicación de iOS.
 
 ## Utilización
 
@@ -52,7 +52,7 @@ La aplicación de iOS está diseñada para conectarse a un __AEM Publish__ , sin
    ```
 
 1. Launch [Xcode](https://developer.apple.com/xcode/) y abra la carpeta `ios-app`
-1. Modificación del archivo `Config.xcconfig` archivar y actualizar `AEM_SCHEME` y `AEM_HOST` para que coincida con el servicio de publicación de AEM de destino.
+1. Modificación del archivo `Config.xcconfig` archivar y actualizar `AEM_SCHEME` y `AEM_HOST` AEM para que coincida con su destino servicio de publicación.
 
    ```plain
    // The http/https protocol scheme used to access the AEM_HOST
@@ -61,7 +61,7 @@ La aplicación de iOS está diseñada para conectarse a un __AEM Publish__ , sin
    AEM_HOST = publish-p123-e456.adobeaemcloud.com
    ```
 
-   Si se conecta a AEM Author, añada el `AEM_AUTH_TYPE` y admitiendo propiedades de autenticación en `Config.xcconfig`.
+   AEM Si se conecta a Autor de la, añada el `AEM_AUTH_TYPE` y admitiendo propiedades de autenticación en `Config.xcconfig`.
 
    __Autenticación básica__
 

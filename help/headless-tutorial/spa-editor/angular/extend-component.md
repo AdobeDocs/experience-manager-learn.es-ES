@@ -2,18 +2,18 @@
 title: Ampliar un componente AEM SPA | Introducción al Editor y Angular de la
 description: AEM SPA Obtenga información sobre cómo ampliar un componente principal existente para utilizarlo con el Editor de. AEM SPA Comprender cómo añadir propiedades y contenido a un componente existente es una técnica potente para ampliar las capacidades de una implementación de Editor de segmentos de tiempo de ejecución de la aplicación de un editor de segmentos de tiempo de ejecución de la aplicación de un editor de tiempo de ejecución de la. Aprenda a utilizar el patrón de delegación para ampliar los modelos Sling y las funciones de la fusión de recursos de Sling.
 feature: SPA Editor, Core Components
-doc-type: tutorial
 topics: development
 version: Cloud Service
 activity: develop
 audience: developer
-kt: 5871
+jira: KT-5871
 thumbnail: 5871-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 0265d3df-3de8-4a25-9611-ddf73d725f6e
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1935'
 ht-degree: 2%

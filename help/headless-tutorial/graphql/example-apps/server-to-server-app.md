@@ -6,12 +6,12 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
-kt: 10798
+jira: KT-10798
 thumbnail: KT-10798.jpg
 last-substantial-update: 2023-05-10T00:00:00Z
 badgeVersions: label="AEM sin encabezado as a Cloud Service" before-title="false"
 exl-id: 39b21a29-a75f-4a6c-ba82-377cf5cc1726
-source-git-commit: d3ee129cb228f02d5a5846465400c04ce81dfbb5
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 6%
@@ -38,9 +38,9 @@ Las siguientes herramientas deben instalarse localmente:
 AEM La aplicación Node.js funciona con las siguientes opciones de implementación de la. Todas las implementaciones requieren lo siguiente [Sitio WKND 3.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) para instalar.
 
 + [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=es)
-+ Opcionalmente, [credenciales de servicio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html) si autoriza solicitudes (por ejemplo, conectándose al servicio de creación de AEM).
++ Opcionalmente, [credenciales de servicio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html) AEM si autoriza las solicitudes (por ejemplo, conectándose a un servicio de autor de).
 
-Esta aplicación Node.js puede conectarse a AEM Author o AEM Publish en función de los parámetros de la línea de comandos.
+AEM AEM Esta aplicación Node.js puede conectarse a los parámetros de la línea de comandos de autor o publicación de la interfaz de usuario de la interfaz de usuario de la interfaz de usuario de.
 
 ## Utilización
 
@@ -63,13 +63,13 @@ Esta aplicación Node.js puede conectarse a AEM Author o AEM Publish en función
    $ node index.js <AEM_HOST> <OPTIONAL_SERVICE_CONFIG_FILE_PATH>
    ```
 
-   Por ejemplo, para ejecutar la aplicación con AEM Publish sin autorización:
+   AEM Por ejemplo, para ejecutar la aplicación contra Publicación de la aplicación sin autorización, haga lo siguiente:
 
    ```shell
    $ node index.js https://publish-p123-e789.adobeaemcloud.com
    ```
 
-   Para ejecutar la aplicación con AEM Author con autorización:
+   AEM Para ejecutar la aplicación con autorización de Autor de la aplicación, haga lo siguiente:
 
    ```shell
    $ node index.js https://author-p123-e456.adobeaemcloud.com ./service-config.json

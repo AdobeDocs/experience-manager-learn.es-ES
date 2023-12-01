@@ -6,10 +6,10 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
-kt: 9442
+jira: KT-9442
 thumbnail: 339073.jpg
 exl-id: 62e807b7-b1a4-4344-9b1e-2c626b869e10
-source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1081'
 ht-degree: 2%
@@ -158,7 +158,7 @@ _Screencast de pasos_
 
 ## AEM 5. Editar contenido en la
 
-AEM Con la aplicación React de WKND de ejemplo que se conecta a las API de GraphQL sin encabezado y consume contenido de ellas, cree contenido en el servicio de creación de AEM y vea cómo se actualiza la experiencia de la aplicación React de forma conjunta.
+AEM Con la aplicación React de WKND de ejemplo que se conecta a las API de GraphQL AEM sin encabezado y consume contenido de ellas, cree contenido en el servicio de autor de y vea cómo se actualiza de forma conjunta la experiencia de la aplicación React.
 
 _Screencast de pasos_
 >[!VIDEO](https://video.tv.adobe.com/v/339077?quality=12&learn=on)
@@ -178,7 +178,7 @@ _Screencast de pasos_
 1. Actualice la aplicación de React que se ejecuta en [http://localhost:3000](http://localhost:3000).
 1. En la aplicación React, seleccione la aventura de ciclismo ahora actualizada y verifique los cambios de contenido realizados en el fragmento de contenido.
 
-1. Con el mismo enfoque, en el servicio de AEM Author:
+1. AEM Con el mismo enfoque, en el servicio de autor de:
    1. Cancele la publicación de un fragmento de contenido de aventura existente y compruebe que se ha eliminado de la experiencia de la aplicación React
    1. Cree y publique un nuevo fragmento de contenido de aventura y verifique que aparece en la experiencia de la aplicación React
 

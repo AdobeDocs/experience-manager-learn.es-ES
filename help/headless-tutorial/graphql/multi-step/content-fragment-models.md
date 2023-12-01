@@ -3,17 +3,17 @@ title: 'AEM Definición de modelos de fragmentos de contenido: introducción a l
 description: Introducción a Adobe Experience Manager AEM () y GraphQL. AEM Aprenda a modelar contenido y a crear un esquema con modelos de fragmentos de contenido en la creación de modelos de fragmentos de contenido en la. Revise los modelos existentes y cree uno. Obtenga información sobre los distintos tipos de datos que se pueden utilizar para definir un esquema.
 version: Cloud Service
 mini-toc-levels: 1
-kt: 6712
+jira: KT-6712
 thumbnail: 22452.jpg
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 9400d9f2-f828-4180-95a7-2ac7b74cd3c9
-source-git-commit: 25c289b093297e870c52028a759d05628d77f634
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1115'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -47,7 +47,7 @@ Una configuración de proyecto contiene todos los modelos de fragmento de conten
 1. En el cuadro de diálogo resultante, introduzca:
 
    * Título*: **Mi proyecto**
-   * Nombre*: **my-project** (prefiera utilizar todas las minúsculas con guiones para separar las palabras. Esta cadena influye en el extremo único de GraphQL con el que las aplicaciones cliente realizan solicitudes.)
+   * Nombre*: **my-project** (prefiera utilizar todas las minúsculas usando guiones para separar las palabras. Esta cadena influye en el extremo único de GraphQL con el que las aplicaciones cliente realizan solicitudes.)
    * Marque **Modelos de fragmento de contenido**
    * Marque **Consultas persistentes de GraphQL**
 
@@ -79,13 +79,13 @@ Creación de un modelo para una **Persona**, que es el modelo de datos que repre
 
    El **Nombre de propiedad** AEM define el nombre de la propiedad a la que se mantiene el acceso de forma. El **Nombre de propiedad** también define la variable **key** nombre para esta propiedad como parte del esquema de datos. Esta **key** se utiliza cuando los datos del fragmento de contenido se exponen a través de las API de GraphQL.
 
-1. Pulse el botón **Tipos de datos** y arrastre y suelte una **Texto de varias líneas** campo debajo de **Nombre completo** field. Introduzca las siguientes propiedades:
+1. Pulse el botón **Tipos de datos** y arrastre y suelte una **Texto de varias líneas** campo debajo de **Nombre completo** field. Especifique las siguientes propiedades:
 
    * **Etiqueta de campo**: **Biografía**
    * **Nombre de la propiedad**: `biographyText`
    * **Tipo predeterminado**: **Texto enriquecido**
 
-1. Haga clic en **Tipos de datos** y arrastre y suelte una **Referencia de contenido** field. Introduzca las siguientes propiedades:
+1. Haga clic en **Tipos de datos** y arrastre y suelte una **Referencia de contenido** field. Especifique las siguientes propiedades:
 
    * **Etiqueta de campo**: **Imagen de perfil**
    * **Nombre de la propiedad**: `profilePicture`
@@ -97,7 +97,7 @@ Creación de un modelo para una **Persona**, que es el modelo de datos que repre
 
    ![Restringir a imágenes](assets/content-fragment-models/picture-reference-content-types.png)
 
-1. Haga clic en **Tipos de datos** y arrastre y suelte una **Enumeración**  Tipo de datos debajo de **Referencia de imagen** field. Introduzca las siguientes propiedades:
+1. Haga clic en **Tipos de datos** y arrastre y suelte una **Enumeración**  Tipo de datos debajo de **Referencia de imagen** field. Especifique las siguientes propiedades:
 
    * **Procesar como**: **Casillas**
    * **Etiqueta de campo**: **Ocupación**
@@ -139,13 +139,13 @@ Creación de un modelo para una **Equipo**, que es el modelo de datos para un eq
 
    El `shortName` proporciona una forma de consultar a un equipo individual en función de una ruta abreviada. El **Único** La configuración de garantiza que el valor siempre sea único para cada fragmento de contenido de este modelo.
 
-1. Pulse el botón **Tipos de datos** y arrastre y suelte una **Texto de varias líneas** campo debajo de **Nombre corto** field. Introduzca las siguientes propiedades:
+1. Pulse el botón **Tipos de datos** y arrastre y suelte una **Texto de varias líneas** campo debajo de **Nombre corto** field. Especifique las siguientes propiedades:
 
    * **Etiqueta de campo**: **Descripción**
    * **Nombre de la propiedad**: `description`
    * **Tipo predeterminado**: **Texto enriquecido**
 
-1. Haga clic en **Tipos de datos** y arrastre y suelte una **Referencia a fragmento** field. Introduzca las siguientes propiedades:
+1. Haga clic en **Tipos de datos** y arrastre y suelte una **Referencia a fragmento** field. Especifique las siguientes propiedades:
 
    * **Procesar como**: **Campo múltiple**
    * **Etiqueta de campo**: **Miembros del equipo**

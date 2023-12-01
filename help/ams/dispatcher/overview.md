@@ -1,5 +1,5 @@
 ---
-title: Manual del Dispatcher de Adobe Managed Services
+title: Adobe Manual de Managed Services Dispatcher
 description: Procesos de AMS para obtener la compatibilidad adecuada en la configuración de Dispatcher.
 version: 6.5
 topic: Administration, Performance, Security
@@ -7,15 +7,16 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
+doc-type: Catalog
 exl-id: 4f72d010-f488-490a-83fb-38ff1b1e8183
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 5%
 
 ---
 
-# Manual del Dispatcher de Adobe Managed Services
+# Adobe Manual de Managed Services Dispatcher
 
 AEM Si la instalación de la está alojada en el servicio administrado de Adobe, le recomendamos leer este manual.
 A continuación, los documentos dados cubrirán los procesos de AMS para personalizar y trabajar correctamente con la configuración de Dispatcher proporcionada.

@@ -3,20 +3,20 @@ title: Desarrollo con el sistema de estilos
 seo-title: Developing with the Style System
 description: Aprenda a implementar estilos individuales y a reutilizar los componentes principales mediante el sistema de estilos de Experience Manager. Este tutorial cubre el desarrollo para el sistema de estilos para ampliar los componentes principales con CSS específicos de la marca y configuraciones de directiva avanzadas del editor de plantillas.
 version: 6.5, Cloud Service
-type: Tutorial
 feature: Core Components, Style System
 topic: Content Management, Development
 role: Developer
 level: Beginner
-kt: 4128
+jira: KT-4128
 mini-toc-levels: 1
 thumbnail: 30386.jpg
+doc-type: Tutorial
 exl-id: 5b490132-cddc-4024-92f1-e5c549afd6f1
 recommendations: noDisplay, noCatalog
-source-git-commit: 68a7f263284fdf9cfcf82572b8e1e1c0c01e4b55
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1678'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -81,7 +81,7 @@ El [Sistema de estilos](https://experienceleague.adobe.com/docs/experience-manag
 
 La idea general del sistema de estilos es que los autores pueden elegir varios estilos del aspecto que debe tener un componente. Los &quot;estilos&quot; están respaldados por clases CSS adicionales que se insertan en el div exterior de un componente. En las bibliotecas de cliente, se agregan reglas CSS basadas en estas clases de estilo para que el componente cambie de aspecto.
 
-Puede encontrar [documentación detallada para el sistema de estilos aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html?lang=es). También hay un bueno [Vídeo técnico para comprender el sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/style-system-technical-video-understand.html).
+Puede encontrar [documentación detallada para el sistema de estilos aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html?lang=es). También hay un gran [Vídeo técnico para comprender el sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/style-system-technical-video-understand.html).
 
 ## Estilo de subrayado: título {#underline-style}
 
@@ -122,7 +122,7 @@ Añadamos una política para los componentes Título para permitir que los autor
 Como autor, vamos a aplicar el estilo de subrayado a determinados componentes de título.
 
 1. Vaya a **La Skateparks** artículo en el editor de AEM Sites en: [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html)
-1. Entrada **Editar** modo, seleccione un componente Título. Haga clic en **pincel** y seleccione el icono **Subrayado** estilo:
+1. Entrada **Editar** , elija un componente Título. Haga clic en **pincel** y seleccione el icono **Subrayado** estilo:
 
    ![Aplicar el estilo de subrayado](assets/style-system/apply-underline-style-title.png)
 
@@ -158,7 +158,7 @@ A continuación, implemente el estilo Subrayado utilizando **ui.frontend** AEM m
    Esto inicia un proceso que supervisa los cambios en la `ui.frontend` AEM y sincronice los cambios en la instancia de.
 
 
-1. Devuelva el IDE y abra el archivo `_title.scss` de: `ui.frontend/src/main/webpack/components/_title.scss`.
+1. Devuelve el IDE y abre el archivo `_title.scss` de: `ui.frontend/src/main/webpack/components/_title.scss`.
 1. Introduzca una nueva regla para segmentar el `cmp-title--underline` clase:
 
    ```scss

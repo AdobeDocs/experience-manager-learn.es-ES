@@ -2,16 +2,16 @@
 title: Bibliotecas de cliente y flujo de trabajo front-end
 description: Aprenda a utilizar las bibliotecas de cliente para implementar y administrar la implementación de CSS y JavaScript para una implementación de Adobe Experience Manager AEM () Sites. Descubra cómo el módulo ui.frontend, un proyecto de Webpack, se puede integrar en el proceso de compilación de extremo a extremo.
 version: 6.4, 6.5, Cloud Service
-type: Tutorial
 feature: Core Components, AEM Project Archetype
 topic: Content Management, Development
 role: Developer
 level: Beginner
-kt: 4083
+jira: KT-4083
 thumbnail: 30359.jpg
+doc-type: Tutorial
 exl-id: 8d3026e9-a7e2-4a76-8a16-a8197a5e04e3
 recommendations: noDisplay, noCatalog
-source-git-commit: 68a7f263284fdf9cfcf82572b8e1e1c0c01e4b55
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2799'
 ht-degree: 2%
@@ -104,7 +104,7 @@ A continuación, vamos a explorar la organización de clientlibs generados por [
 
    ![Clientlibs en ui.apps](assets/client-side-libraries/four-clientlib-folders.png)
 
-   En la sección siguiente, estos clientlibs se revisan en los buenos detalles.
+   En la sección siguiente, estos clientlibs se revisan con más detalle.
 
 1. La siguiente tabla resume las bibliotecas de cliente. Más detalles acerca de [Puede encontrar información sobre las bibliotecas de cliente aquí](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html?lang=en#developing).
 

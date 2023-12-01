@@ -3,13 +3,13 @@ title: Configurar el modelo de datos de formulario
 description: Crear un modelo de datos de formulario basado en una fuente de datos RDBMS
 feature: Adaptive Forms
 version: 6.4,6.5
-kt: 5812
+jira: KT-5812
 thumbnail: kt-5812.jpg
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 5fa4638f-9faa-40e0-a20d-fdde3dbb528a
-source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 1%
@@ -67,7 +67,7 @@ Los siguientes pasos le guiarán por el proceso de creación de la asociación &
 
 * Seleccione la nueva entidad y haga clic en _Agregar asociación_
 * Proporcione un título y un identificador significativos a la asociación y a otras propiedades, como se muestra en la captura de pantalla siguiente
-   ![asociación](assets/association-entities-1.png)
+  ![asociación](assets/association-entities-1.png)
 
 * Haga clic en _editar_ en la sección Argumentos
 

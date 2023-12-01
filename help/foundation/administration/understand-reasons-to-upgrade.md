@@ -6,8 +6,9 @@ topic: Upgrade
 feature: Release Information
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
+doc-type: Article
 exl-id: bf4030b0-67c4-4b00-af95-f63e6f79e995
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2602'
 ht-degree: 5%
@@ -72,7 +73,7 @@ AEM La capacidad de integración de la aplicación con otros servicios de Adobe 
 [Cloud Manager](https://adobe.ly/2HODmsv), una función exclusiva para los clientes de Adobe Managed Services (AMS), ofrece las siguientes funciones:
 
 + AEM Cloud Manager admite la ampliación de la compatibilidad con la implementación de de AEM Sites a **AEM Assets**, incluido **pruebas de rendimiento automatizadas del procesamiento de recursos**.
-+ **Escalado automático** del Nivel de AEM Publish en umbrales predefinidos, garantice una experiencia óptima del usuario final.
++ **Escalado automático** AEM De las capas de publicación de la en umbrales predefinidos, garantice una experiencia óptima para el usuario final.
 + **Canalizaciones que no sean de producción** permita que los equipos de desarrollo aprovechen Cloud Manager para comprobar continuamente la calidad del código e implementarlo en entornos más bajos (desarrollo y control de calidad).
 + **API de canalización de CI/CD** permita a los clientes interactuar mediante programación con Cloud Manager, lo que profundiza las posibilidades de integración con la infraestructura de desarrollo local.
 
@@ -114,7 +115,7 @@ AEM A continuación se muestra una matriz de las principales características b�
         </tr>
         <tr>
             <td>
-                <strong><a href="https://jackrabbit.apache.org/oak/docs/index.html" target="_blank">Repositorio de contenido de Oak</a>:</strong> Proporciona un rendimiento y una escalabilidad muy buenos a los del predecesor Jackrabbit 2.</td>
+                <strong><a href="https://jackrabbit.apache.org/oak/docs/index.html" target="_blank">Repositorio de contenido de Oak</a>:</strong> Proporciona un rendimiento y una escalabilidad mucho mayores que el predecesor Jackrabbit 2.</td>
             <td> </td>
             <td>✔</td>
             <td>✔</td>
@@ -329,7 +330,7 @@ AEM A continuación se muestra una matriz de características de seguridad clave
     </tr>
     <tr>
         <td><a href="https://helpx.adobe.com/es/experience-manager/6-5/sites/administering/using/saml-2-0-authenticationhandler.html" target="_blank"><strong>CORS</strong> <strong>apoyo</strong></a>
-            <br> Compatibilidad de Intercambio de Recursos de Origen Cruzado para la buena flexibilidad de la aplicación.</td>
+            <br> Compatibilidad de Intercambio de Recursos de Origen Cruzado para una mayor flexibilidad de la aplicación.</td>
         <td></td>
         <td></td>
         <td></td>
@@ -408,7 +409,7 @@ AEM A continuación se muestra una matriz de características de seguridad clave
     </tr>
     <tr>
         <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ims-config-and-admin-console.html" target="_blank">Compatibilidad con autenticación IMS de Adobe</a><br>
- </strong>Exclusivo para Adobe Managed Services (AMS), administra de forma centralizada el acceso a las instancias de autor de AEM a través de Adobe IMS (Identity Management System).</td>
+ </strong>Exclusivo para Managed Services AEM de Adobe (AMS), administra de forma centralizada el acceso a las instancias de Autor de la a través de Adobe IMS (Identity Management System).</td>
         <td> </td>
         <td> </td>
         <td> </td>
