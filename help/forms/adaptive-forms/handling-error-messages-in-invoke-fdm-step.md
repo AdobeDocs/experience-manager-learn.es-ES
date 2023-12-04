@@ -8,9 +8,10 @@ role: Developer
 level: Intermediate
 exl-id: 8cae155c-c393-4ac3-a412-bf14fc411aac
 last-substantial-update: 2020-06-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 75
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '249'
 ht-degree: 0%
 
 ---
@@ -20,12 +21,12 @@ ht-degree: 0%
 A partir de AEM Forms 6.5.1, ahora tenemos la opción de capturar mensajes de error y especificar opciones de validación. El paso para invocar el servicio de modelo de datos de formulario se ha mejorado para proporcionar las siguientes capacidades.
 
 * Proporcionar una opción de validación de tres niveles (&quot;OFF&quot;, &quot;BASIC&quot; y &quot;FULL&quot;) para gestionar las excepciones encontradas al invocar el servicio del modelo de datos de formulario. Las tres opciones indican sucesivamente una versión más estricta de la comprobación de los requisitos específicos de la base de datos.
-   ![validation-levels](assets/validation-level.PNG)
+  ![validation-levels](assets/validation-level.PNG)
 
 * Proporcionar una casilla de verificación para personalizar la ejecución del flujo de trabajo. Por lo tanto, los usuarios ahora tienen la flexibilidad de seguir adelante con la ejecución del flujo de trabajo, incluso si el paso para invocar el modelo de datos de formulario genera excepciones.
 
 * Almacenar información importante de errores que surgen debido a excepciones de validación. Se han incorporado tres selectores de variables de tipo autocompletar para seleccionar variables relevantes para almacenar ErrorCode(String), ErrorMessage(String) y ErrorDetails(JSON). Sin embargo, ErrorDetails se establecería en null en caso de que la excepción no sea DermisValidationException.
-   ![captura de mensajes de error](assets/fdm-error-details.PNG)
+  ![captura de mensajes de error](assets/fdm-error-details.PNG)
 
 Con estos cambios, el paso para invocar el servicio de modelo de datos de formulario garantiza que los valores de entrada se ajusten a las restricciones de datos proporcionadas en el archivo swagger. Por ejemplo, se genera el siguiente mensaje de error cuando los valores accountId y balance no cumplen las restricciones de datos especificadas en el archivo swagger.
 

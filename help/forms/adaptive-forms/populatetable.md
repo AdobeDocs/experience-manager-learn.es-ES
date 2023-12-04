@@ -8,9 +8,10 @@ role: User
 level: Intermediate
 exl-id: 6e4b901a-6534-4c34-b315-2f2620b74247
 last-substantial-update: 2019-06-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 64
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '223'
 ht-degree: 0%
 
 ---
@@ -28,6 +29,6 @@ Row1 está configurado para crecer según los datos devueltos por la llamada de 
 
 [Instale Tomcat como se especifica aquí](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md)
 [Implemente el archivo SampleRest.war contenido en este archivo zip en su Tomcat](assets/sample-rest.zip)
-[Instalación de los recursos ](assets/amortizationschedule.zip) AEM uso del administrador de paquetes
+[Instalación de los recursos](assets/amortizationschedule.zip) AEM uso del administrador de paquetes
 [Abra el formulario Programa de amortización](http://localhost:4502/content/dam/formsanddocuments/amortization/jcr:content?wcmmode=disabled)
 Introduzca el valor apropiado y haga clic en calcular el horario de amortización que debe rellenarse en el formulario

@@ -8,10 +8,11 @@ role: Developer
 level: Intermediate
 doc-type: Feature Video
 exl-id: a733532b-db64-43f6-bc43-f7d422d5071a
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 343
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 17%
+source-wordcount: '337'
+ht-degree: 11%
 
 ---
 
@@ -108,13 +109,13 @@ A continuación se muestra la plantilla XML para el nodo de configuración de ge
 | NTSC | RGB | NTSC (1953) |
 | AMIGO | RGB | PAL/SECAM |
 | ProPhoto | RGB | RGB ProPhoto |
-| PS4Default | CMYK | CMYK predeterminado de Photoshop 4 |
+| PS4Predeterminado | CMYK | CMYK predeterminado de Photoshop 4 |
 | PS5Default | CMYK | CMYK predeterminado de Photoshop 5 |
 | Revestido Con Hojas | CMYK | U.S. Sheetfed Coated v2 |
 | Con hojasSin recubrir | CMYK | U.S. Sheetfed Uncovered v2 |
 | SMPTE | RGB | SMPTE-C |
 | sRGB | RGB sRGB | IEC61966-2.1 |
-| UncoatedFogra29 | CMYK | FOGRA29 sin recubrimiento (ISO 12647-2:2004) |
+| Fogra29 sin recubrimiento | CMYK | FOGRA29 sin recubrimiento (ISO 12647-2:2004) |
 | WebCoated | CMYK | U.S. Web Coated (SWOP) v2 |
 | WebCoatedFogra28 | CMYK | Revestimiento Web FOGRA28 (ISO 12647-2:2004) |
 | WebCoatedGrade3 | CMYK | Papel SWOP 2006 Grado 3 Revestido por Web |

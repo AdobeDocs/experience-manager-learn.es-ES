@@ -12,10 +12,11 @@ thumbnail: KT-10721.jpg
 last-substantial-update: 2023-05-10T00:00:00Z
 badgeVersions: label="AEM sin encabezado as a Cloud Service" before-title="false"
 exl-id: 4f67bb37-416a-49d9-9d7b-06c3573909ca
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 303
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '817'
-ht-degree: 1%
+source-wordcount: '744'
+ht-degree: 0%
 
 ---
 
@@ -44,7 +45,7 @@ Esta aplicación Next.js de ejemplo está diseñada para conectarse a __AEM Publ
 
 Next.js está diseñado para conectarse a __AEM Publicación de__ y acceder a contenido no protegido. AEM El archivo Next.js se puede configurar para que se conecte a la interfaz de usuario de Autor mediante la interfaz de usuario de la interfaz de usuario de. `.env` propiedades que se describen a continuación. AEM AEM Las imágenes proporcionadas desde Autor de la requieren autenticación y, por lo tanto, el usuario que acceda a la aplicación Next.js también debe iniciar sesión en Autor de la.
 
-## Utilización
+## Cómo usar
 
 1. Clonar el `adobe/aem-guides-wknd-graphql` repositorio:
 

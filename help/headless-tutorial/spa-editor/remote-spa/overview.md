@@ -10,10 +10,11 @@ thumbnail: 333272.jpeg
 last-substantial-update: 2022-11-11T00:00:00Z
 doc-type: Tutorial
 exl-id: c5f933eb-c409-41dc-bb6a-6b2220dfbb47
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 336
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '614'
-ht-degree: 12%
+source-wordcount: '571'
+ht-degree: 6%
 
 ---
 
@@ -46,7 +47,7 @@ El tutorial está diseñado para trabajar con **AEM as a Cloud Service** y se co
 
 Este tutorial requiere lo siguiente:
 
-+ [SDK de AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=es)
++ [SDK de AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=en)
 + [Node.js v18](https://nodejs.org/en/)
 + [Java™ 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 + [Maven 3.6+](https://maven.apache.org/)

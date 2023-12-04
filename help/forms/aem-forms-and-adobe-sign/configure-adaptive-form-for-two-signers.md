@@ -10,10 +10,11 @@ level: Beginner
 badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: 5d450605-31bb-4c2e-a500-e9219f55b7c7
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 633
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '68'
-ht-degree: 16%
+source-wordcount: '74'
+ht-degree: 8%
 
 ---
 
@@ -30,4 +31,4 @@ Los recursos relacionados con este vídeo se pueden descargar desde los siguient
 
 ## Pasos siguientes
 
-[Configuración del servicio de conversión automática de formularios](./configure-automated-forms-conversion-service.md)
+[Configuración del servicio de Automated forms conversion](./configure-automated-forms-conversion-service.md)

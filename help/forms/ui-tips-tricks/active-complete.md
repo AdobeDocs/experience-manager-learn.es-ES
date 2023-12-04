@@ -10,10 +10,11 @@ level: Beginner
 jira: KT-9359
 exl-id: f7c1f991-0486-4355-8502-cd5b038537e3
 last-substantial-update: 2019-07-07T00:00:00Z
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 111
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 17%
+source-wordcount: '328'
+ht-degree: 16%
 
 ---
 
@@ -45,11 +46,11 @@ Asegúrese de que está en estado Activo y aplique estilo a las siguientes propi
 
 | Categoría | Nombre de la propiedad | Valor de propiedad |
 |:---|:---|:---|
-| Dimensiones y posición | Anchura | 50 px |
+| Dimensiones y posición | Anchura | 50 px |
 | Texto | Grosor de fuente | Negrita |
 | Texto | Color | #FFF |
 | Texto | Altura de la línea | 3 |
-| Texto | Texto  Alinear | Izquierda |
+| Texto | Alineación de texto | Izquierda |
 | Fondo | Color | #056dae |
 
 Aplicar un estilo a la imagen de fondo como se muestra en la captura de pantalla siguiente
@@ -66,11 +67,11 @@ Asegúrese de que está en el estado visitado y aplique estilo a las siguientes 
 
 | Categoría | Nombre de la propiedad | Valor de propiedad |
 |:---|:---|:---|
-| Dimensiones y posición | Anchura | 50 px |
+| Dimensiones y posición | Anchura | 50 px |
 | Texto | Grosor de fuente | Negrita |
 | Texto | Color | #FFF |
 | Texto | Altura de la línea | 3 |
-| Texto | Texto  Alinear | Izquierda |
+| Texto | Alineación de texto | Izquierda |
 | Fondo | Color | #056dae |
 
 Aplicar un estilo a la imagen de fondo como se muestra en la captura de pantalla siguiente

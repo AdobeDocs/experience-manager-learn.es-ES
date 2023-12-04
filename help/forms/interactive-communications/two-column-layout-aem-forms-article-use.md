@@ -1,22 +1,18 @@
 ---
 title: Creación de dos diseños de columna para documentos de canal de impresión
-seo-title: Creating two column layouts for print channel documents
 description: Crear 2 diseños de columna para documento de canal de impresión
-seo-description: Create 2 column layouts for print channel document
 feature: Interactive Communication
-topics: development
-audience: developer
 doc-type: article
-activity: implement
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: 416e3401-ba9f-4da3-8b07-2d39f9128571
 last-substantial-update: 2019-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 64
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '218'
 ht-degree: 0%
 
 ---
@@ -32,9 +28,9 @@ A continuación se indican los pasos de alto nivel necesarios para crear diseño
 * Crear una segunda página maestra con un área de contenido (esta es la predeterminada)
 * Seleccione la pestaña paginación (Subformulario sin título) (página 1) y (Subformulario sin título) (página 2) y defina las propiedades como se muestra en las capturas de pantalla a continuación.
 
-![page1](assets/untitledsubform_paginationproperties.gif)
+![página1](assets/untitledsubform_paginationproperties.gif)
 
-![page2](assets/untitled_subformpage2.gif)
+![página2](assets/untitled_subformpage2.gif)
 
 Una vez establecidas las propiedades de paginación, se pueden agregar subformularios o áreas de destino en (Subformulario sin título) (Página 1).
 

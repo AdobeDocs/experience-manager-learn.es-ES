@@ -9,10 +9,11 @@ level: Experienced
 jira: KT-8627
 thumbnail: 336957.jpeg
 exl-id: f8289dd4-b293-4b8f-b14d-daec091728c0
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 717
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '427'
-ht-degree: 4%
+source-wordcount: '350'
+ht-degree: 2%
 
 ---
 
@@ -72,4 +73,4 @@ Antes de probar el ejercicio práctico, asegúrese de haber visto y entendido el
 
 ## Otros recursos
 
-+ [Descargar Best Practices Analyzer](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=Best*+Practices*+Analyzer*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=1)
++ [Descargar el Analizador de prácticas recomendadas](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=Best*+Practices*+Analyzer*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=1)

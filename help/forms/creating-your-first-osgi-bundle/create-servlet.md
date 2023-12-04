@@ -8,10 +8,11 @@ role: Developer
 level: Beginner
 exl-id: 72728ed7-80a2-48b5-ae7f-d744db8a524d
 last-substantial-update: 2021-04-23T00:00:00Z
-source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
+duration: 88
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 1%
+source-wordcount: '201'
+ht-degree: 0%
 
 ---
 
@@ -75,7 +76,7 @@ public class MyFirstAEMFormsServlet extends SlingAllMethodsServlet
 Para crear su proyecto, siga los siguientes pasos:
 
 * Abrir **ventana del símbolo del sistema**
-* Navegue hasta `c:\aemformsbundles\mysite\core`
+* Vaya a `c:\aemformsbundles\mysite\core`
 * Ejecutar el comando `mvn clean install -PautoInstallBundle`
 * AEM El comando anterior crea e implementa automáticamente el paquete en la instancia de la instancia de la instancia de que se ejecuta en localhost:4502.
 

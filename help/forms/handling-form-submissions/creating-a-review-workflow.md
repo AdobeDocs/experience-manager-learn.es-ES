@@ -2,10 +2,7 @@
 title: Creación de un flujo de trabajo para revisar los datos enviados
 description: AEM Creación de un modelo de flujo de trabajo de con componentes de flujo de trabajo de AEM Forms para revisar los datos enviados.
 feature: Workflow
-topics: integrations
-audience: developer
 doc-type: article
-activity: setup
 version: 6.4,6.5
 jira: KT-4271
 thumbnail: 40242.jpg
@@ -14,10 +11,11 @@ role: Developer
 level: Beginner
 exl-id: 0aafd97a-2e72-4257-ad4d-e0993263b11f
 last-substantial-update: 2020-07-07T00:00:00Z
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 1061
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 4%
+source-wordcount: '127'
+ht-degree: 1%
 
 ---
 

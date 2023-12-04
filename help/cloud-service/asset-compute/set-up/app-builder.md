@@ -2,20 +2,18 @@
 title: Configuración del Generador de aplicaciones para la extensibilidad de Assets computes
 description: Los proyectos de asset compute son proyectos de App Builder especialmente definidos y, como tales, requieren acceso a App Builder en la consola de Adobe Developer para configurarlos e implementarlos.
 feature: Asset Compute Microservices
-topics: renditions, development
 version: Cloud Service
-activity: develop
-audience: developer
-doc-type: tutorial
+doc-type: Tutorial
 jira: KT-6268
 thumbnail: 40183.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 2b1d8786-592e-41f2-80cc-bc0b1c7e1b49
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 240
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '538'
 ht-degree: 0%
 
 ---
@@ -47,7 +45,7 @@ _Pulsación al configurar el Generador de aplicaciones (sin audio)_
 
    + __EXPERIENCE CLOUD > ASSET COMPUTE__
       + Seleccionar __Generación de un par de claves__ y pulse el botón __Generar par de claves__ y guarde el archivo descargado `config.zip` a una ubicación segura para [uso posterior](#private-key)
-      + Pulse __Siguiente__
+      + Tocar __Siguiente__
       + Seleccione el perfil de producto __Integraciones: Cloud Service__ y pulse __Guardar API configurada__
    + __Servicios de Adobe > Eventos de I/O__ y pulse __Guardar API configurada__
    + __Servicios de Adobe > API de administración de E/S__ y pulse __Guardar API configurada__

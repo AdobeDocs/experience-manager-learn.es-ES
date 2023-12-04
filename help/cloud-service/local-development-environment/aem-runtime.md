@@ -10,10 +10,11 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-09-02T00:00:00Z
 exl-id: 19f72254-2087-450b-909d-2d90c9821486
-source-git-commit: 9b733c7070191adb34c9e7c05c92b0567c080e14
+duration: 563
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1793'
-ht-degree: 14%
+source-wordcount: '1695'
+ht-degree: 9%
 
 ---
 
@@ -67,7 +68,7 @@ AEM El SDK as a Cloud Service AEM AEM, o SDK de, contiene el Jar de inicio rápi
 
 1. Iniciar sesión en [https://experience.adobe.com/#/downloads](https://experience.adobe.com/#/downloads) con su Adobe ID
    + Tenga en cuenta que la organización de Adobe __debe__ AEM Debe aprovisionarse para que los as a Cloud Service AEM descarguen el SDK as a Cloud Service de la.
-1. Vaya a la pestaña __AEM as a Cloud Service__
+1. Vaya a __AEM as a Cloud Service__ pestaña
 1. Ordenar por __Fecha de publicación__ in __Descendente__ pedido
 1. Haga clic en la última __AEM SDK de__ fila de resultados
 1. Revise y acepte el EULA y pulse el botón __Descargar__ botón

@@ -11,23 +11,24 @@ last-substantial-update: 2023-03-17T00:00:00Z
 jira: KT-10841
 thumbnail: 3416906.jpeg
 exl-id: 247d40a3-ff67-4c1f-86bf-3794d7ce3e32
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+duration: 532
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
 
 # Previsualización del fragmento de contenido
 
-AEM Las aplicaciones sin encabezado admiten la previsualización de creación integrada. La experiencia de vista previa vincula el editor de fragmentos de contenido del autor de AEM con su aplicación personalizada (a la que se puede dirigir mediante HTTP), lo que permite establecer un vínculo profundo en la aplicación que procesa el fragmento de contenido que se está previsualizando.
+AEM Las aplicaciones sin encabezado admiten la previsualización de creación integrada. AEM La experiencia de vista previa vincula el editor de fragmentos de contenido del autor con su aplicación personalizada (a la que se puede dirigir mediante HTTP), lo que permite establecer un vínculo profundo en la aplicación que procesa el fragmento de contenido que se está previsualizando.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416906?quality=12&learn=on)
 
 Para utilizar la vista previa de fragmentos de contenido, se deben cumplir varias condiciones:
 
 1. La aplicación debe implementarse en una URL accesible para los autores
-1. La aplicación debe configurarse para conectarse al servicio de AEM Author (en lugar de al de AEM Publish)
+1. AEM AEM La aplicación debe configurarse para que se conecte a servicio de creación (en lugar de al servicio de publicación de la aplicación de la publicación de la aplicación)
 1. La aplicación debe diseñarse con direcciones URL o rutas que puedan utilizar [Ruta o ID del fragmento de contenido](#url-expressions) para seleccionar los fragmentos de contenido que se mostrarán para su vista previa en la experiencia de la aplicación.
 
 ## Previsualizar direcciones URL
@@ -36,17 +37,17 @@ Previsualizar direcciones URL, uso [Expresiones de URL](#url-expressions), se es
 
 ![URL de vista previa del modelo de fragmento de contenido](./assets/preview/cf-model-preview-url.png)
 
-1. Inicie sesión en el servicio de AEM Author como administrador
+1. AEM Inicie sesión en el servicio de autor de como administrador
 1. Vaya a __Herramientas > General > Modelos de fragmentos de contenido__
 1. Seleccione el __Modelo de fragmento de contenido__ y seleccione __Propiedades__ de la barra de acciones superior.
 1. Introduzca la URL de vista previa del modelo de fragmento de contenido mediante [Expresiones de URL](#url-expressions)
-   + La URL de vista previa debe apuntar a una implementación de la aplicación que se conecta al servicio de AEM Author.
+   + AEM La dirección URL de vista previa debe apuntar a una implementación de la aplicación que se conecta al servicio de autor de la aplicación de la aplicación de la que se dispone en el servicio de creación de.
 
 ### Expresiones de URL
 
 Cada modelo de fragmento de contenido puede tener una URL de vista previa establecida. La URL de vista previa se puede parametrizar por fragmento de contenido mediante las expresiones de URL enumeradas en la siguiente tabla. Se pueden utilizar varias expresiones URL en una sola dirección URL de vista previa.
 
-|  | Expresión de URL | Valor |
+|                                         | Expresión de URL | Valor |
 | --------------------------------------- | ----------------------------------- | ----------- |
 | Ruta de fragmento de contenido | `${contentFragment.path}` | `/content/dam/wknd-shared/en/adventures/surf-camp-bali/surf-camp-bali` |
 | ID de fragmento de contenido | `${contentFragment.id}` | `12c34567-8901-2aa3-45b6-d7890aa1c23c` |

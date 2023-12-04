@@ -9,9 +9,10 @@ role: Developer
 level: Intermediate
 exl-id: 1f13d82e-c1d0-4c8c-8468-b4a4c5897c71
 last-substantial-update: 2021-02-09T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+duration: 259
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
@@ -20,7 +21,7 @@ ht-degree: 0%
 
 A partir de AEM Forms AEM 6.4, ahora podemos utilizar el servicio de modelo de datos de formulario como parte del flujo de trabajo de la. AEM El siguiente vídeo muestra los pasos necesarios para configurar el paso Modelo de datos de formulario en el flujo de trabajo de la aplicación de datos de formulario de la aplicación de la aplicación de flujo de trabajo de
 
->!![NOTE]La funcionalidad que se muestra en este vídeo requiere AEM Forms 6.5.1
+>La funcionalidad que se muestra en este vídeo requiere AEM Forms 6.5.1
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/28145?quality=12&learn=on)
@@ -29,7 +30,7 @@ Para probar esta capacidad en el servidor, siga las instrucciones siguientes
 
 * Configure tomcat con el archivo SampleRest.war tal como se describe [aquí](https://helpx.adobe.com/experience-manager/kt/forms/using/preparing-datasource-for-form-data-model-tutorial-use.html).El archivo de guerra implementado en Tomcat tiene el código para devolver la puntuación crediticia del solicitante.La puntuación crediticia es un número aleatorio entre 200 y 800
 
-* [ AEM Importar los recursos a mediante el administrador de paquetes de la interfaz de usuario de](assets/aem65-loanapplication.zip)
+* [AEM Importar los recursos a mediante el administrador de paquetes de la interfaz de usuario de](assets/aem65-loanapplication.zip)
 * El paquete contiene lo siguiente:
 
    * Modelo de flujo de trabajo que utiliza el paso FDM.
@@ -37,5 +38,5 @@ Para probar esta capacidad en el servidor, siga las instrucciones siguientes
    * Formulario adaptable para almacenar en déclencheur el flujo de trabajo al enviar.
 * Abra el [MortgageApplicationForm](http://localhost:4502/content/dam/formsanddocuments/loanapplication/jcr:content?wcmmode=disabled). Complete los detalles y envíe. Al enviar el formulario, la variable [flujo de trabajo solicitud de préstamo](http://http://localhost:4502/editor.html/conf/global/settings/workflow/models/LoanApplication2.html) se activa.
 
-![ flujo de trabajo ](assets/invokefdm651.PNG).
+![ workflow ](assets/invokefdm651.PNG).
 El flujo de trabajo utiliza el componente OR Split para dirigir la solicitud al administrador si la puntuación crediticia es superior a 500. Si la puntuación crediticia es menor que 500, la solicitud se redirige a la captación.

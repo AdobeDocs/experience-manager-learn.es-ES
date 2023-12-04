@@ -7,9 +7,10 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: 6a8e90ae-0765-4066-9df4-a3e4d2cda285
-source-git-commit: a500c88091d87e34c12d4092c71241983b166af8
+duration: 253
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '801'
+source-wordcount: '760'
 ht-degree: 1%
 
 ---
@@ -206,7 +207,7 @@ Ejecutando el `getAllAdventureDetailsBySlug` consulta desde el terminal de líne
 
 >[!TIP]
 >
->    Si se ejecuta la consulta anterior en el entorno de AEM Author, debe enviar las credenciales. Consulte [Token de acceso de desarrollo local](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/local-development-access-token.html) para la demostración de la misma y [AEM Llamar a la API de](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#calling-the-aem-api) para obtener más información.
+>    AEM Si se ejecuta la consulta anterior en el entorno de autor de la, debe enviar las credenciales. Consulte [Token de acceso de desarrollo local](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/local-development-access-token.html) para la demostración de la misma y [AEM Llamar a la API de](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#calling-the-aem-api) para obtener más información.
 
 Además, revise [Ejecución de una consulta persistente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#execute-persisted-query), [Uso de variables de consulta](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#query-variables), y [Codificación de la URL de consulta para su uso en una aplicación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#encoding-query-url) para conocer la ejecución de consultas persistentes por aplicaciones cliente.
 

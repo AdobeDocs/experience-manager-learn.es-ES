@@ -3,13 +3,13 @@ title: 'Almacenar y recuperar datos de formulario de la base de datos MySQL: cre
 description: Tutorial de varias partes para guiarle por los pasos necesarios para almacenar y recuperar datos de formulario
 feature: Adaptive Forms
 type: Tutorial
-activity: implement
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: fcef5adc-10fb-42b2-ab46-c7674e94e805
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+duration: 251
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
 source-wordcount: '88'
 ht-degree: 0%
@@ -19,5 +19,5 @@ ht-degree: 0%
 # Crear una plantilla de formulario adaptable y un componente de página
 
 Ahora crearemos una nueva plantilla de formulario adaptable y un componente de página para probar este caso de uso. Cada formulario adaptable creado con esta nueva plantilla tendrá la capacidad de almacenar y recuperar los datos del formulario.
-El siguiente vídeo muestra los pasos necesarios para crear una nueva plantilla de formulario adaptable
+El siguiente vídeo explica los pasos necesarios para crear una nueva plantilla de formulario adaptable
 >[!VIDEO](https://video.tv.adobe.com/v/27828?quality=12&learn=on)

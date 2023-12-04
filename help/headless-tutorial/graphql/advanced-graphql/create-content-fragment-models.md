@@ -7,9 +7,10 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: 2122ab13-f9df-4f36-9c7e-8980033c3b10
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+duration: 884
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1989'
+source-wordcount: '1991'
 ht-degree: 1%
 
 ---
@@ -34,7 +35,7 @@ Este es un tutorial avanzado. Antes de continuar con este capítulo, asegúrese 
 
 ## Objetivos {#objectives}
 
-* Crear los modelos de fragmentos de contenido.
+* Crear modelos de fragmentos de contenido.
 * Agregue marcadores de posición de pestaña, fecha y hora, objetos JSON, referencias de fragmento y referencias de contenido a los modelos.
 * Agregar validación a referencias de contenido.
 

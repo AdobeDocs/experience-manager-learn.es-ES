@@ -2,10 +2,7 @@
 title: Ampliar un componente AEM SPA | Introducción al Editor y Angular de la
 description: AEM SPA Obtenga información sobre cómo ampliar un componente principal existente para utilizarlo con el Editor de. AEM SPA Comprender cómo añadir propiedades y contenido a un componente existente es una técnica potente para ampliar las capacidades de una implementación de Editor de segmentos de tiempo de ejecución de la aplicación de un editor de segmentos de tiempo de ejecución de la aplicación de un editor de tiempo de ejecución de la. Aprenda a utilizar el patrón de delegación para ampliar los modelos Sling y las funciones de la fusión de recursos de Sling.
 feature: SPA Editor, Core Components
-topics: development
 version: Cloud Service
-activity: develop
-audience: developer
 jira: KT-5871
 thumbnail: 5871-spa-angular.jpg
 topic: SPA
@@ -13,10 +10,11 @@ role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 0265d3df-3de8-4a25-9611-ddf73d725f6e
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 621
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1935'
-ht-degree: 2%
+source-wordcount: '1713'
+ht-degree: 0%
 
 ---
 
@@ -261,7 +259,7 @@ Vuelva al IDE de su elección y abra `core` módulo.
 
    Estos métodos se exponen a través de la API del modelo JSON y se pasan al componente Angular.
 
-3. Abra `CardImpl.java`. Esta es la implementación de `Card.java` interfaz. Esta implementación se ha rellenado parcialmente para acelerar el tutorial.  Observe el uso del `@Model` y `@Exporter` anotaciones para garantizar que el modelo Sling se pueda serializar como JSON mediante el exportador de modelos Sling.
+3. Abrir `CardImpl.java`. Esta es la implementación de `Card.java` interfaz. Esta implementación se ha rellenado parcialmente para acelerar el tutorial.  Observe el uso del `@Model` y `@Exporter` anotaciones para garantizar que el modelo Sling se pueda serializar como JSON mediante el exportador de modelos Sling.
 
    `CardImpl.java` también utiliza el [Patrón de delegación para modelos Sling](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) para evitar volver a escribir la lógica desde el componente principal de imagen.
 

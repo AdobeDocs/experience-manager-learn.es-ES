@@ -1,10 +1,7 @@
 ---
 title: Uso de entornos de Adobe Cloud Manager
 description: AEM AEM Los entornos de Cloud Manager están compuestos por los servicios de autor de datos, publicación de datos y Dispatcher de la de trabajo. Los distintos entornos admiten diferentes funciones y se pueden utilizar con diferentes canalizaciones de CD/CI. Los entornos de Cloud Manager suelen tener un entorno de producción, un entorno de ensayo y un entorno de desarrollo.
-topics: Administration
-audience: administrator
 doc-type: feature video
-activity: use
 version: Cloud Service
 jira: KT-6871
 thumbnail: 26318.jpg
@@ -13,9 +10,10 @@ feature: Cloud Manager, Environments
 role: Architect, Developer, Admin
 level: Beginner
 exl-id: f4311522-b8fb-4375-9ecc-73e0207a63b2
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 204
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '99'
+source-wordcount: '93'
 ht-degree: 0%
 
 ---

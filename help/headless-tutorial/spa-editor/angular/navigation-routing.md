@@ -2,10 +2,7 @@
 title: Agregar navegación y enrutamiento AEM SPA | Introducción al Editor y Angular de la
 description: SPA AEM SPA Descubra cómo se admiten varias vistas en la mediante páginas de la página de la aplicación y el SDK del Editor de la página de la aplicación de la aplicación de la aplicación de la. La navegación dinámica se implementa mediante rutas de Angular y se añade a un componente de encabezado existente.
 feature: SPA Editor
-topics: development
 version: Cloud Service
-activity: develop
-audience: developer
 jira: KT-5312
 thumbnail: 5312-spa-angular.jpg
 topic: SPA
@@ -13,10 +10,11 @@ role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 197a0c1f-4d0a-4b99-ba89-cdff2e6ac4ec
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 936
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '2712'
-ht-degree: 1%
+source-wordcount: '2531'
+ht-degree: 0%
 
 ---
 

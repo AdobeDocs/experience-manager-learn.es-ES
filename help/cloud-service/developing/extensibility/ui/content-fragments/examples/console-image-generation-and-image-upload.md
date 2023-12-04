@@ -11,10 +11,11 @@ thumbnail: KT-11649.png
 doc-type: article
 last-substantial-update: 2023-01-04T00:00:00Z
 exl-id: f3047f1d-1c46-4aee-9262-7aab35e9c4cb
-source-git-commit: 6b5c755bd8fe6bbf497895453b95eb236f69d5f6
+duration: 1773
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1396'
-ht-degree: 1%
+source-wordcount: '1289'
+ht-degree: 0%
 
 ---
 

@@ -11,10 +11,11 @@ thumbnail: kt-10797.jpg
 last-substantial-update: 2023-05-10T00:00:00Z
 badgeVersions: label="AEM sin encabezado as a Cloud Service" before-title="false"
 exl-id: 4f090809-753e-465c-9970-48cf0d1e4790
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 194
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 12%
+source-wordcount: '488'
+ht-degree: 3%
 
 ---
 
@@ -37,7 +38,7 @@ Las siguientes herramientas deben instalarse localmente:
 
 AEM El componente web funciona con las siguientes opciones de implementación de.
 
-+ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=es)
++ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
 + Configuración local mediante [el SDK de AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=es)
    + Requiere [JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14) AEM AEM (si se conecta al SDK local de la versión 6.5 o del SDK de la)
 
@@ -48,7 +49,7 @@ Esta aplicación de ejemplo se basa en [basic-tutorial-solution.content.zip](../
 >
 >El componente web está diseñado para conectarse a un __AEM Publicación de__ AEM , sin embargo, puede obtener contenido de Autor de la fuente si se proporciona autenticación en la interfaz de usuario del componente web. [`person.js`](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/web-component/src/person.js#L11) archivo.
 
-## Utilización
+## Cómo usar
 
 1. Clonar el `adobe/aem-guides-wknd-graphql` repositorio:
 

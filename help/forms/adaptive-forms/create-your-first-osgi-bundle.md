@@ -2,19 +2,17 @@
 title: AEM Creación de su primer paquete OSGi con formularios de
 description: Cree su primer paquete OSGi con maven y eclipse
 feature: Adaptive Forms
-topics: development
-audience: developer
 doc-type: article
-activity: setup
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Beginner
 last-substantial-update: 2021-06-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 240
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '820'
-ht-degree: 2%
+source-wordcount: '816'
+ht-degree: 0%
 
 ---
 
@@ -132,6 +130,6 @@ Una vez que haya escrito el servicio OSGi, o servlet, debe crear el proyecto par
 Para crear su proyecto, siga los siguientes pasos:
 
 * Abrir **ventana del símbolo del sistema**
-* Navegue hasta `c:\aemformsbundles\learningaemforms\core`
+* Vaya a `c:\aemformsbundles\learningaemforms\core`
 * Ejecutar el comando `mvn clean install`
 Si todo va bien, debería ver el paquete en la siguiente ubicación `C:\AEMFormsBundles\learningaemforms\core\target`. AEM Este paquete ya está listo para implementarse en la aplicación mediante la consola web de Félix en la que se puede utilizar la aplicación de forma predeterminada para el uso de la consola web.

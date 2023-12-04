@@ -11,10 +11,11 @@ mini-toc-levels: 1
 thumbnail: 30181.jpg
 doc-type: Tutorial
 exl-id: f54f3dc9-6ec6-4e55-9043-7a006840c905
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 1427
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '4057'
-ht-degree: 1%
+source-wordcount: '3869'
+ht-degree: 0%
 
 ---
 
@@ -457,7 +458,7 @@ El `BylineImpl.java` es la implementación del modelo Sling que implementa el `B
 
    ![Archivo Impl De Firma](assets/custom-component/byline-impl-file.png)
 
-1. Abra `BylineImpl.java`. Especifique que implementa la variable `Byline` interfaz. Utilice las características de autocompletar del IDE o actualice manualmente el archivo para incluir los métodos necesarios para implementar el `Byline` interfaz:
+1. Abrir `BylineImpl.java`. Especifique que implementa la variable `Byline` interfaz. Utilice las características de autocompletar del IDE o actualice manualmente el archivo para incluir los métodos necesarios para implementar el `Byline` interfaz:
 
    ```java
    package com.adobe.aem.guides.wknd.core.models.impl;
@@ -1033,7 +1034,7 @@ Para alinear el componente Firma con el diseño creativo proporcionado, vamos a 
 Agregue estilos predeterminados para el componente Firma.
 
 1. Vuelva al IDE y al **ui.frontend** proyecto en `/src/main/webpack/components`:
-1. Cree un archivo con el nombre `_byline.scss`.
+1. Cree un archivo llamado `_byline.scss`.
 
    ![firma del explorador del proyecto](assets/custom-component/byline-style-project-explorer.png)
 

@@ -10,10 +10,11 @@ jira: KT-10253
 thumbnail: KT-10253.jpeg
 last-substantial-update: 2023-04-19T00:00:00Z
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 449
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '934'
-ht-degree: 6%
+source-wordcount: '901'
+ht-degree: 5%
 
 ---
 
@@ -95,7 +96,7 @@ El `$path` utilizada en la variable `_path` El filtro requiere la ruta completa 
 
 El `_assetTransform` define cómo se usa la variable `_dynamicUrl` se crea para optimizar la representación de la imagen servida. Las direcciones URL de imágenes optimizadas para la web también se pueden ajustar en el cliente cambiando los parámetros de consulta de la dirección URL.
 
-| Parámetro de GraphQL | Parámetro de dirección URL | Descripción | Requerido | Valores de variables GraphQL | Valores de parámetro de URL | Ejemplo de parámetro de URL |
+| Parámetro de GraphQL | URL Parameter | Descripción | Requerido | Valores de variables GraphQL | Valores de parámetro de URL | Ejemplo de parámetro de URL |
 |:---------|:----------|:-------------------------------|:--:|:--------------------------|:---|:--|
 | `format` | N/D | Formato del recurso de imagen. | ✔ | `GIF`, `PNG`, `PNG8`, `JPG`, `PJPG`, `BJPG`,  `WEBP`, `WEBPLL`, `WEBPLY` | N/D | N/D |
 | `seoName` | N/D | Nombre del segmento de archivo en la dirección URL. Si no se proporciona, se utiliza el nombre del recurso de imagen. | ✘ | Alfanumérico, `-`, o `_` | N/D | N/D |

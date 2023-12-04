@@ -2,20 +2,18 @@
 title: Solucionar problemas de extensibilidad de Assets computes para AEM Assets
 description: A continuación se muestra un índice de problemas y errores comunes, junto con las soluciones que podrían encontrarse al desarrollar e implementar Assets computes personalizadas para AEM Assets.
 feature: Asset Compute Microservices
-topics: renditions, metadata, development
 version: Cloud Service
-doc-type: tutorial
-activity: develop
-audience: developer
+doc-type: Tutorial
 jira: KT-5802
 thumbnail: KT-5802.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: d851d315-ed0e-46b8-bcd8-417e1e58c0c4
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 355
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1239'
+source-wordcount: '1230'
 ht-degree: 0%
 
 ---
@@ -84,7 +82,7 @@ La herramienta de desarrollo de assets computes puede introducir un estado en el
 + __Causa:__ Esta funcionalidad no se ha implementado
 + __Resolución:__ Inicie sesión en su proveedor de almacenamiento en la nube con las credenciales definidas en `.env`. Busque el contenedor utilizado por las herramientas de desarrollo (también especificado en `.env`), vaya al __origen__ y elimine las imágenes de origen. Es posible que tenga que realizar los pasos descritos en [Lista desplegable de archivos de origen incorrecta](#source-files-dropdown-incorrect) si los archivos de origen eliminados siguen mostrándose en el menú desplegable, ya que pueden almacenarse en la caché local en el &quot;estado de aplicación&quot; de las herramientas de desarrollo.
 
-  ![Almacenamiento del Blob de Microsoft Azure](./assets/troubleshooting/dev-tool__remove-source-files.png)
+  ![Almacenamiento del blob de Microsoft Azure](./assets/troubleshooting/dev-tool__remove-source-files.png)
 
 ## Probar{#test}
 

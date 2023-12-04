@@ -8,9 +8,10 @@ version: 6.4,6.5
 level: Intermediate
 exl-id: 2e9754ff-49fe-4260-b911-796bcc4fd266
 last-substantial-update: 2021-09-18T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 149
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '508'
 ht-degree: 0%
 
 ---
@@ -61,7 +62,7 @@ Obtenemos la persona que inició el flujo de trabajo. Luego obtenemos el valor d
 
 Según la forma en que se almacene la propiedad del administrador en el LDAP, es posible que tenga que realizar alguna manipulación de cadenas para obtener el ID del administrador.
 
-Lea este artículo para implementar los suyos propios [  Selector de participantes](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
+Lea este artículo para implementar los suyos propios [Selector de participantes](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
 
 Para probar esto en su sistema (para empleados de Adobe puede usar este ejemplo de forma predeterminada)
 

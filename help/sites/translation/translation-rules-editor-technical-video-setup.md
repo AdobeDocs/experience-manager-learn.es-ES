@@ -8,10 +8,11 @@ role: User
 level: Beginner
 doc-type: Technical Video
 exl-id: 359da531-839c-4680-abf9-c880cc700159
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 566
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '321'
-ht-degree: 6%
+source-wordcount: '283'
+ht-degree: 0%
 
 ---
 
@@ -43,7 +44,7 @@ AEM En versiones anteriores de la versión del archivo, las reglas de traducció
 
 ## Recursos adicionales {#additional-resources}
 
-* [Identificación del contenido a traducir](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-rules.html)
-* [Traducción de contenido para sitios multilingües](https://helpx.adobe.com/es/experience-manager/6-5/sites/administering/using/translation.html)
+* [Identificación del contenido para traducir](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-rules.html)
+* [Traducción de contenido para sitios multilingües](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/translation.html)
 * [https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-manage.html](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-manage.html)
 * [Prácticas recomendadas de traducción](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-bp.html)

@@ -8,10 +8,11 @@ level: Beginner
 exl-id: 0056971f-2f89-43b3-bb6f-dd16c2a50370
 thumbnail: 328618.jpg
 last-substantial-update: 2022-07-20T00:00:00Z
-source-git-commit: 4c0770eafbbbb90bfc00ab49be02e84c41d63057
+duration: 654
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 11%
+source-wordcount: '266'
+ht-degree: 10%
 
 ---
 
@@ -52,7 +53,7 @@ AEM Explore las funcionalidades de GraphQL AEM de la manera más sencilla posibl
 
 ## AEM Servicios de contenido de GraphQL AEM vs.
 
-|  | AEM API de GraphQL | AEM Servicios de contenido |
+|                                | AEM API de GraphQL | AEM Servicios de contenido |
 |--------------------------------|:-----------------|:---------------------|
 | Definición del esquema | Modelos de fragmento de contenido estructurado | AEM Componentes de |
 | Contenido | Fragmentos de contenido | AEM Componentes de |

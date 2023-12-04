@@ -11,10 +11,11 @@ last-substantial-update: 2022-11-11T00:00:00Z
 recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: 4accc1ca-6f4b-449e-bf2e-06f19d2fe17d
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 286
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 1%
+source-wordcount: '903'
+ht-degree: 0%
 
 ---
 
@@ -66,7 +67,7 @@ Primero, cree el intermediario `adventure` Segmento de página:
    + __Título__: Aventura
    + __Nombre__: `adventure`
       + AEM SPA Este valor define la dirección URL de la página de la y, por lo tanto, debe coincidir con el segmento de ruta de la página de la.
-1. Pulse __Listo__
+1. Tocar __Listo__
 
 AEM SPA A continuación, cree las páginas de que correspondan a cada una de las direcciones URL que requieran áreas editables.
 
@@ -77,7 +78,7 @@ AEM SPA A continuación, cree las páginas de que correspondan a cada una de las
    + __Título__: Campamento de Surf en Bali
    + __Nombre__: `bali-surf-camp`
       + AEM SPA Este valor define la dirección URL de la página de la y, por lo tanto, debe coincidir con el último segmento de la ruta de la página de la ruta de la
-1. Pulse __Listo__
+1. Tocar __Listo__
 1. Repita los pasos del 3 al 6 para crear el __Beervana en Portland__ página, con:
    + __Título__: Beervana en Portland
    + __Nombre__: `beervana-in-portland`

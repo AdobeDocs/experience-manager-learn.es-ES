@@ -1,22 +1,18 @@
 ---
 title: Instalación y configuración de Tomcat
-seo-title: Install and Configure Tomcat
 description: Esta es la parte 1 del tutorial de varios pasos para crear su primer documento de comunicaciones interactivas. En esta parte, instalaremos TOMCAT e implementaremos el archivo sampleRest.war en TOMCAT.
-uuid: c6d4c74c-ea16-4c63-92c9-182d087fd88c
 feature: Interactive Communication
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+doc-type: Tutorial
 version: 6.4,6.5
 discoiquuid: 4f400c22-6c96-4018-851c-70d988ce7c6c
 topic: Development
 role: Developer
 level: Beginner
 exl-id: f0f19838-1ade-4eda-b736-a9703a3916c2
-source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
+duration: 66
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '240'
 ht-degree: 0%
 
 ---

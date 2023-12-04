@@ -11,10 +11,11 @@ thumbnail: KT-7497.jpg
 doc-type: Tutorial
 exl-id: 17ca57d1-2b9a-409c-b083-398d38cd6a19
 recommendations: noDisplay, noCatalog
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 350
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1330'
-ht-degree: 3%
+source-wordcount: '1285'
+ht-degree: 1%
 
 ---
 
@@ -155,7 +156,7 @@ A continuación, vaya al servicio Publicación para ver los cambios.
 
    ![publicar directamente](assets/author-content-publish/page-editor-publish.png)
 
-1. Vuelva a la **AEM Servicio de publicación de** para ver los cambios. Lo más probable es que lo haga **no** ver inmediatamente las actualizaciones. Esto se debe a que **AEM Servicio de publicación de** incluye [almacenamiento en caché a través de un servidor web Apache y CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/caching.html?lang=es). De forma predeterminada, el contenido del HTML se almacena en caché durante ~5 minutos.
+1. Vuelva a la **AEM Servicio de publicación de** para ver los cambios. Lo más probable es que lo haga **no** ver inmediatamente las actualizaciones. Esto se debe a que **AEM Servicio de publicación de** incluye [almacenamiento en caché a través de un servidor web Apache y CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/caching.html). De forma predeterminada, el contenido del HTML se almacena en caché durante ~5 minutos.
 
 1. Para omitir la caché con fines de prueba o depuración, simplemente agregue un parámetro de consulta como `?nocache=true`. La dirección URL tendría el siguiente aspecto `https://publish-pYYYY-eXXXX.adobeaemcloud.com/content/wknd/en/article/hello-world.html?nocache=true`. Más detalles acerca de la estrategia de almacenamiento en caché y las configuraciones disponibles [se puede encontrar aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/overview.html).
 

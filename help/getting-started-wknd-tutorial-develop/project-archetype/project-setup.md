@@ -12,10 +12,11 @@ thumbnail: 30152.jpg
 doc-type: Tutorial
 exl-id: bb0cae58-79bd-427f-9116-d46afabdca59
 recommendations: noDisplay, noCatalog
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 659
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1839'
-ht-degree: 5%
+source-wordcount: '1684'
+ht-degree: 1%
 
 ---
 
@@ -254,7 +255,7 @@ El **[núcleo](https://experienceleague.adobe.com/docs/experience-manager-core-c
 
 ### Módulos Ui.apps y Ui.content {#apps-content-module}
 
-El **[ui.apps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uiapps.html)** El módulo de maven contiene todo el código de renderización necesario para el sitio debajo de `/apps`. AEM Esto incluye CSS/JS que se almacenan en un formato de llamado [clientlibs](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=es). Esto también incluye [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es) scripts para procesar HTML dinámicos. Puedes pensar en el **ui.apps** como un mapa a la estructura en el JCR, pero en un formato que se pueda almacenar en un sistema de archivos y comprometerse con el control de código fuente. El **ui.apps** El módulo solo contiene código.
+El **[ui.apps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uiapps.html)** El módulo de maven contiene todo el código de renderización necesario para el sitio debajo de `/apps`. AEM Esto incluye CSS/JS que se almacenan en un formato de llamado [clientlibs](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html). Esto también incluye [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es) scripts para procesar HTML dinámicos. Puedes pensar en el **ui.apps** como un mapa a la estructura en el JCR, pero en un formato que se pueda almacenar en un sistema de archivos y comprometerse con el control de código fuente. El **ui.apps** El módulo solo contiene código.
 
 Para generar solo este módulo:
 

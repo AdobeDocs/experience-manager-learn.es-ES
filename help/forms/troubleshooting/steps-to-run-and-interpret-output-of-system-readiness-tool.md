@@ -1,6 +1,6 @@
 ---
 title: Pasos para ejecutar e interpretar la salida de la herramienta Preparación del sistema PDFG de AEM Forms
-description: Interprete los resultados de la utilidad de preparación de PDF Generator.
+description: Interprete los resultados de la utilidad de preparación del PDF Generator.
 type: Troubleshooting
 role: Developer
 level: Intermediate
@@ -9,7 +9,8 @@ feature: PDF Generator
 topic: Development
 index: y
 exl-id: 3c1a1c09-caae-4b10-94f2-12ab4531dd5a
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+duration: 67
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
 source-wordcount: '53'
 ht-degree: 0%

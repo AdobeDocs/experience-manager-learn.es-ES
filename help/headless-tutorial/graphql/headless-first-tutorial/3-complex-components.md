@@ -11,10 +11,11 @@ last-substantial-update: 2023-05-16T00:00:00Z
 jira: KT-13270
 thumbnail: KT-13270.jpeg
 exl-id: ad06b0f3-afa7-4661-aa66-0674d2e6bb43
-source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
+duration: 1162
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '590'
-ht-degree: 2%
+source-wordcount: '594'
+ht-degree: 1%
 
 ---
 
@@ -42,7 +43,7 @@ Al final de este capítulo del tutorial, tendrá un componente de lista de imág
 
 1. Dado que una lista de imágenes es un fragmento de tipo contenedor que incluye referencias a otros fragmentos, se pueden crear nuevas ofertas directamente desde el editor.  Cree un fragmento de oferta e incluya una descripción de imagen y un artículo.  Puede cortar y pegar texto desde abajo.  Estamos utilizando el título del fragmento como título de la tarjeta.
 
-   __Artículo1__
+   __Artículo 1__
 
    _Título_
 
@@ -314,7 +315,7 @@ Al final de este capítulo del tutorial, tendrá un componente de lista de imág
 
 1. Ahora vamos a actualizar la Tarjeta para identificar el fragmento y el tipo de datos para editar cada tarjeta.
 
-   Within `<div className='card' key={card._path}>`
+   En `<div className='card' key={card._path}>`
 
    añadir
 

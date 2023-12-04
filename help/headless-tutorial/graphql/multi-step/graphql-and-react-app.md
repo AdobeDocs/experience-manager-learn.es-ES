@@ -10,10 +10,11 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 772b595d-2a25-4ae6-8c6e-69a646143147
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 611
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1218'
-ht-degree: 2%
+source-wordcount: '1181'
+ht-degree: 0%
 
 ---
 
@@ -235,7 +236,7 @@ AEM Una vez finalizada, la vista principal de la aplicación se rellena con los 
    }
    ```
 
-1. Abra `src/components/Teams.js`
+1. Abrir `src/components/Teams.js`
 
 1. En el `Teams` AEM Componente React, recupere la lista de equipos desde el que se utiliza el componente de. `useAllTeams()` gancho.
 
@@ -393,7 +394,7 @@ Una vez finalizado, al seleccionar el nombre de una persona en la vista Equipos,
    }
    ```
 
-1. Abra `src/components/Person.js`
+1. Abrir `src/components/Person.js`
 1. En el `Person` Componente React, analice `fullName` AEM Parámetro de ruta y obtenga los datos de la persona desde el que se usa el parámetro de rutaDeAccesoDeAccesoDeAccesoDeAccesoDeUsuario `usePersonByName(fullName)` gancho.
 
    ```javascript

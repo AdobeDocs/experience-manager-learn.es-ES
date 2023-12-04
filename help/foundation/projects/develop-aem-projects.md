@@ -8,10 +8,11 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 1753
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '4571'
-ht-degree: 1%
+source-wordcount: '4460'
+ht-degree: 0%
 
 ---
 
@@ -38,7 +39,7 @@ Este tutorial recorrerá paso a paso el código necesario para crear una plantil
 * [Paquete de tutorial finalizado](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [Repositorio de código completo en GitHub](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
 
-Este tutorial supone algunos conocimientos básicos de [AEM Prácticas de desarrollo de](https://helpx.adobe.com/es/experience-manager/6-5/sites/developing/using/the-basics.html) y cierta familiaridad con [AEM Configuración del proyecto de Maven](https://helpx.adobe.com/es/experience-manager/6-5/sites/developing/using/ht-projects-maven.html). Todo el código mencionado está diseñado para utilizarse como referencia y solo debe implementarse en una [AEM instancia de desarrollo local de](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#GettingStarted).
+Este tutorial supone algunos conocimientos básicos de [AEM Prácticas de desarrollo de](https://helpx.adobe.com/es/experience-manager/6-5/sites/developing/using/the-basics.html) y cierta familiaridad con [AEM Configuración del proyecto de Maven](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ht-projects-maven.html). Todo el código mencionado está diseñado para utilizarse como referencia y solo debe implementarse en una [AEM instancia de desarrollo local de](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#GettingStarted).
 
 ## Estructura de una plantilla de proyecto
 
@@ -258,7 +259,7 @@ Ahora podemos probar nuestra plantilla de proyecto creando un nuevo proyecto.
 
 1. Haga clic en &quot;Crear&quot; para terminar de crear el proyecto basado en la plantilla personalizada. Observará en el panel del proyecto que el mosaico Tareas y los demás mosaicos configurados en gadgets aparecen automáticamente.
 
-   ![Mosaico Tarea](./assets/develop-aem-projects/tasks-tile.png)
+   ![Mosaico de tareas](./assets/develop-aem-projects/tasks-tile.png)
 
 
 ## ¿Por qué Workflow?

@@ -10,10 +10,11 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 9400d9f2-f828-4180-95a7-2ac7b74cd3c9
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 315
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1115'
-ht-degree: 4%
+source-wordcount: '1110'
+ht-degree: 1%
 
 ---
 
@@ -72,24 +73,24 @@ Creación de un modelo para una **Persona**, que es el modelo de datos que repre
 1. Arrastrar y soltar una **Texto de línea única** en el panel principal. Introduzca las siguientes propiedades en la **Propiedades** pestaña:
 
    * **Etiqueta de campo**: **Nombre completo**
-   * **Nombre de la propiedad**: `fullName`
+   * **Nombre de propiedad**: `fullName`
    * Marque **Requerido**
 
    ![Campo de propiedad Nombre completo](assets/content-fragment-models/full-name-property-field.png)
 
    El **Nombre de propiedad** AEM define el nombre de la propiedad a la que se mantiene el acceso de forma. El **Nombre de propiedad** también define la variable **key** nombre para esta propiedad como parte del esquema de datos. Esta **key** se utiliza cuando los datos del fragmento de contenido se exponen a través de las API de GraphQL.
 
-1. Pulse el botón **Tipos de datos** y arrastre y suelte una **Texto de varias líneas** campo debajo de **Nombre completo** field. Especifique las siguientes propiedades:
+1. Pulse el botón **Tipos de datos** y arrastre y suelte una **Texto de varias líneas** campo debajo de **Nombre completo** field. Introduzca las siguientes propiedades:
 
    * **Etiqueta de campo**: **Biografía**
-   * **Nombre de la propiedad**: `biographyText`
+   * **Nombre de propiedad**: `biographyText`
    * **Tipo predeterminado**: **Texto enriquecido**
 
-1. Haga clic en **Tipos de datos** y arrastre y suelte una **Referencia de contenido** field. Especifique las siguientes propiedades:
+1. Haga clic en **Tipos de datos** y arrastre y suelte una **Referencia de contenido** field. Introduzca las siguientes propiedades:
 
    * **Etiqueta de campo**: **Imagen de perfil**
-   * **Nombre de la propiedad**: `profilePicture`
-   * **Ruta de acceso raíz**: `/content/dam`
+   * **Nombre de propiedad**: `profilePicture`
+   * **Ruta raíz**: `/content/dam`
 
    Al configurar el **Ruta raíz**, puede hacer clic en **carpeta** para que aparezca un modal y seleccione la ruta. Esto restringe las carpetas que los autores pueden utilizar para rellenar la ruta. `/content/dam` es la raíz en la que se almacenan todos los AEM Assets (imágenes, vídeos y otros fragmentos de contenido).
 
@@ -97,11 +98,11 @@ Creación de un modelo para una **Persona**, que es el modelo de datos que repre
 
    ![Restringir a imágenes](assets/content-fragment-models/picture-reference-content-types.png)
 
-1. Haga clic en **Tipos de datos** y arrastre y suelte una **Enumeración**  Tipo de datos debajo de **Referencia de imagen** field. Especifique las siguientes propiedades:
+1. Haga clic en **Tipos de datos** y arrastre y suelte una **Enumeración**  Tipo de datos debajo de **Referencia de imagen** field. Introduzca las siguientes propiedades:
 
    * **Procesar como**: **Casillas**
    * **Etiqueta de campo**: **Ocupación**
-   * **Nombre de la propiedad**: `occupation`
+   * **Nombre de propiedad**: `occupation`
 
 1. Añadir varios **Opciones** uso del **Añadir una opción** botón. Utilice el mismo valor para **Etiqueta de opción** y **Valor de opción**:
 
@@ -125,13 +126,13 @@ Creación de un modelo para una **Equipo**, que es el modelo de datos para un eq
 1. Arrastrar y soltar una **Texto de línea única** en el panel principal. Introduzca las siguientes propiedades en la **Propiedades** pestaña:
 
    * **Etiqueta de campo**: **Título**
-   * **Nombre de la propiedad**: `title`
+   * **Nombre de propiedad**: `title`
    * Marque **Requerido**
 
 1. Pulse el botón **Tipos de datos** y arrastre y suelte una **Texto de línea única** en el panel principal. Introduzca las siguientes propiedades en la **Propiedades** pestaña:
 
    * **Etiqueta de campo**: **Nombre corto**
-   * **Nombre de la propiedad**: `shortName`
+   * **Nombre de propiedad**: `shortName`
    * Marque **Requerido**
    * Marque **Único**
    * En, **Tipo de validación** > elegir **Personalizado**
@@ -139,17 +140,17 @@ Creación de un modelo para una **Equipo**, que es el modelo de datos para un eq
 
    El `shortName` proporciona una forma de consultar a un equipo individual en función de una ruta abreviada. El **Único** La configuración de garantiza que el valor siempre sea único para cada fragmento de contenido de este modelo.
 
-1. Pulse el botón **Tipos de datos** y arrastre y suelte una **Texto de varias líneas** campo debajo de **Nombre corto** field. Especifique las siguientes propiedades:
+1. Pulse el botón **Tipos de datos** y arrastre y suelte una **Texto de varias líneas** campo debajo de **Nombre corto** field. Introduzca las siguientes propiedades:
 
    * **Etiqueta de campo**: **Descripción**
-   * **Nombre de la propiedad**: `description`
+   * **Nombre de propiedad**: `description`
    * **Tipo predeterminado**: **Texto enriquecido**
 
-1. Haga clic en **Tipos de datos** y arrastre y suelte una **Referencia a fragmento** field. Especifique las siguientes propiedades:
+1. Haga clic en **Tipos de datos** y arrastre y suelte una **Referencia a fragmento** field. Introduzca las siguientes propiedades:
 
    * **Procesar como**: **Campo múltiple**
    * **Etiqueta de campo**: **Miembros del equipo**
-   * **Nombre de la propiedad**: `teamMembers`
+   * **Nombre de propiedad**: `teamMembers`
    * **Modelos permitidos de fragmento de contenido**: utilice el icono de la carpeta para seleccionar el **Persona** modelo.
 
 1. La final **Equipo** El modelo debe tener el siguiente aspecto:

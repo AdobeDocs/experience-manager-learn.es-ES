@@ -8,9 +8,10 @@ role: Developer
 level: Beginner
 exl-id: fbfc74d7-ba7c-495a-9e3b-63166a3025ab
 last-substantial-update: 2020-09-10T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 83
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '281'
 ht-degree: 7%
 
 ---
@@ -37,6 +38,7 @@ Los formularios de Adobe Experience Manager (AEM) pueden ayudarle a transformar 
    * Los fragmentos de formulario deben tenerse en cuenta al desarrollar formularios grandes. Habilitar la carga diferida de fragmentos de formulario para tiempos de carga más rápidos
    * **DataModel**
       * Se recomienda asociar el formulario adaptable con el modelo de datos adecuado
+
    * **Eventos de objeto**
       * El código relacionado con la visibilidad de un objeto siempre debe colocarse en el evento de visibilidad de dicho objeto.
    * **Script**

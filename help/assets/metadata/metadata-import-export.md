@@ -11,10 +11,11 @@ thumbnail: 22132.jpg
 last-substantial-update: 2022-06-13T00:00:00Z
 doc-type: Feature Video
 exl-id: 0681e2c4-8661-436c-9170-9aa841a6fa27
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 448
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 3%
+source-wordcount: '249'
+ht-degree: 2%
 
 ---
 
@@ -42,7 +43,7 @@ Obtenga información sobre cómo utilizar las funciones de importación y export
 * El valor predeterminado de la primera columna es `assetPath`, que contiene la ruta JCR absoluta de un recurso.
 
 * Las columnas posteriores de la primera fila apuntan a otras propiedades de metadatos de un recurso.
-   * Por ejemplo : `dc:title, dc:description, jcr:title`
+   * Por ejemplo: `dc:title, dc:description, jcr:title`
 
 * Formato de propiedad de valor único
 

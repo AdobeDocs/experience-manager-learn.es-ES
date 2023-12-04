@@ -1,18 +1,17 @@
 ---
 title: 'Capítulo 1: Configuración y descargas del tutorial: Servicios de contenido'
-seo-title: Getting Started with AEM Content Services - Chapter 1 -  Tutorial Set up
 description: AEM AEM El capítulo 1 del tutorial sin encabezado de la configuración de línea de base para la instancia de la del tutorial.
-seo-description: Chapter 1 of the AEM Headless tutorial the baseline setup for the AEM instance for the tutorial.
 feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: f24a75f6-9062-498c-b782-7d9011aa0bcf
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 118
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 2%
+source-wordcount: '366'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +19,7 @@ ht-degree: 2%
 
 AEM AEM Siempre se recomienda la versión más reciente de los componentes principales de WCM de y.
 
-* AEM 6.5 o posterior
+* AEM.5 o posterior
 * AEM Componentes principales de WCM 2.4.0 o posterior
    * Incluido en la [AEM Paquete de contenido de la aplicación WKND Mobile a continuación](#wknd-mobile-application-packages)
 

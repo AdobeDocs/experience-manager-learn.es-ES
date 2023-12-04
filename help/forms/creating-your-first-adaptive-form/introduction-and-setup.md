@@ -8,10 +8,11 @@ role: Developer
 level: Beginner
 exl-id: 8c90fe1c-0c83-4287-9766-08d806b8815a
 last-substantial-update: 2020-02-10T00:00:00Z
-source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
+duration: 59
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 38%
+source-wordcount: '211'
+ht-degree: 26%
 
 ---
 
@@ -33,7 +34,7 @@ Necesitará lo siguiente:
 
 * [Descargar client-libs-and-logo](assets/client-libs-and-logo.zip) y [getting-started-fragment](assets/getting-started-fragment.zip) a su disco duro.
 
-* AEM Importe los archivos zip a mediante el uso de la opción de [administrador de paquetes ](http://localhost:4502/crx/packmgr/index.jsp)
+* AEM Importe los archivos zip a mediante el uso de la opción de [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
 
 ## Pasos siguientes
 

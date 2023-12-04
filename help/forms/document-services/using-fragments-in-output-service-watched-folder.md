@@ -9,10 +9,11 @@ level: Intermediate
 last-substantial-update: 2022-09-07T00:00:00Z
 thumbnail: ecma-fragments.jpg
 exl-id: 6b0bd2f1-b8ee-4f96-9813-8c11aedd3621
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+duration: 120
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 1%
+source-wordcount: '347'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +23,7 @@ ht-degree: 1%
 En este artículo utilizaremos el servicio de salida para generar archivos pdf utilizando fragmentos xdp. El xdp principal y los fragmentos residen en el repositorio crx. AEM Es importante imitar la estructura de carpetas del sistema de archivos en la carpeta de archivos de la carpeta de la carpeta de la carpeta de la carpeta de la carpeta de la carpeta de archivos de la. Por ejemplo, si está utilizando un fragmento en la carpeta de fragmentos de su xdp, debe crear una carpeta llamada **fragmentos** AEM en la carpeta base en la que se encuentra el. La carpeta base contendrá la plantilla xdp base. Por ejemplo, si tiene la siguiente estructura en el sistema de archivos
 * c:\xdptemplates: contendrá la plantilla xdp base
 * c:\xdptemplates\fragments: esta carpeta contendrá fragmentos y la plantilla principal hará referencia al fragmento como se muestra a continuación
-   ![fragment-xdp](assets/survey-fragment.png).
+  ![fragment-xdp](assets/survey-fragment.png).
 * La carpeta xdpdocuments contendrá la plantilla base y los fragmentos de **fragmentos** carpeta
 
 Puede crear la estructura necesaria utilizando el [iu de formularios y documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
@@ -67,7 +68,7 @@ resourceResolverHelper.callWith(resourceResolver, {call: function()
 **Para probar el paquete de muestra en el sistema**
 * [Implementar el paquete DesarrollandoConServicioUsuario](assets/DevelopingWithServiceUser.jar)
 * Agregar la entrada **DesarrollarWithServiceUser.core:getformsresourceresolver=fd-service** en la modificación del servicio de asignador de usuarios como se muestra en la captura de pantalla siguiente
-   ![modificación del asignador de usuarios](assets/user-mapper-service-amendment.png)
+  ![modificación del asignador de usuarios](assets/user-mapper-service-amendment.png)
 * [Descargue e importe los archivos xdp de ejemplo y los scripts ECMA](assets/watched-folder-fragments-ecma.zip).
 Esto creará una estructura de carpetas vigilada en la carpeta c:/fragmentsandoutputservice
 

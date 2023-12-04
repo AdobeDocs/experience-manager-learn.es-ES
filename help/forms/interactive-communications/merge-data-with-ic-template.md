@@ -2,20 +2,18 @@
 title: Generar un documento de canal de impresión combinando datos
 description: Obtenga información sobre cómo generar un documento de canal de impresión combinando datos contenidos en un flujo de entrada
 feature: Interactive Communication
-topics: development
-audience: developer
 doc-type: article
-activity: implement
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: 3bfbb4ef-0c51-445a-8d7b-43543a5fa191
 last-substantial-update: 2019-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 223
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 1%
+source-wordcount: '445'
+ht-degree: 0%
 
 ---
 
@@ -179,7 +177,7 @@ Para probar esto en el servidor, siga los siguientes pasos:
 
 * [Abrir formulario de cambio de beneficiario](http://localhost:4502/content/dam/formsanddocuments/changebeneficiary/jcr:content?wcmmode=disabled)
 * AEM Asegúrese de que el formulario adaptable está configurado para enviarse al flujo de trabajo de la como se muestra a continuación
-   ![imagen](assets/generateic.PNG)
+  ![imagen](assets/generateic.PNG)
 * [Configure el modelo de flujo de trabajo.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/ChangesToBeneficiary.html)Asegúrese de que el paso Procesar y enviar componentes de correo electrónico estén configurados según su entorno
 * [Previsualice ChangeOfBeneficiaryForm.](http://localhost:4502/content/dam/formsanddocuments/changebeneficiary/jcr:content?wcmmode=disabled) Rellene algunos detalles y envíe
 * El flujo de trabajo debe invocarse y el documento del canal de impresión IC debe enviarse al destinatario especificado en el componente Enviar correo electrónico como archivo adjunto

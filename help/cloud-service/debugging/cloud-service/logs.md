@@ -2,21 +2,19 @@
 title: Registros
 description: AEM AEM Los registros actúan como primera línea para depurar aplicaciones de la en el as a Cloud Service AEM, pero dependen del registro adecuado en la aplicación de la aplicación de la aplicación implementada de la.
 feature: Developer Tools
-topics: development
 version: Cloud Service
-doc-type: tutorial
-activity: develop
-audience: developer
+doc-type: Tutorial
 jira: KT-5432
 thumbnail: kt-5432.jpg
 topic: Development
 role: Developer
 level: Beginner
 exl-id: d0bd64bd-9e6c-4a28-a8d9-52bb37b27a09
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 321
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1007'
-ht-degree: 3%
+source-wordcount: '948'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +27,7 @@ AEM Toda la actividad de registro del servicio de registro de un entorno determi
 Los ID de secuencia se proporcionan en cada sentencia de registro y permiten filtrar o intercalar sentencias de registro. Los ID de la secuencia tienen el formato:
 
 + `cm-p<PROGRAM ID>-e<ENVIRONMENT ID>-aem-<author|publish>-<POD NAME>`
-+ Ejemplos: `cm-p12345-e56789-aem-author-abcdefabde-98765`
++ Ejemplo: `cm-p12345-e56789-aem-author-abcdefabde-98765`
 
 ## Archivos de registro personalizados
 

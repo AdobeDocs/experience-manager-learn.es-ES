@@ -7,9 +7,10 @@ topic: Content Management
 role: User
 level: Beginner
 thumbnail: 28988.jpg
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+duration: 734
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '983'
 ht-degree: 1%
 
 ---
@@ -24,7 +25,7 @@ La extensión de Adobe Asset Link para Adobe Creative Cloud for enterprise AEM a
 ## Funciones de Adobe Asset Link
 
 + Adobe Asset Link se integra con AEM Assets y Assets Essentials.
-+ Adobe AEM Asset Link configura automáticamente la conexión con entornos de trabajo basados en la nube (AEM Assets as a Cloud Service y Assets Essentials), y con entornos de trabajo en la nube ()
++ Adobe AEM Asset Link configura automáticamente la conexión con entornos de trabajo basados en la nube (entornos de trabajo basados en la nube, as a Cloud Service y Assets Essentials de AEM Assets).
 + Adobe Asset Link es una extensión que funciona dentro de las aplicaciones de Adobe Creative Cloud:
 
    + Adobe XD
@@ -84,10 +85,10 @@ Funcionamiento de la autenticación de Adobe Asset Link en el contexto de Adobe 
 ![Adobe Asset Link Architecture](assets/adobe-asset-link-article-understand.png)
 
 1. La extensión de Adobe Asset Link realiza una solicitud de autorización, a través de la aplicación Adobe Creative Cloud Desktop, para almacenar en Adobe el servicio Identity Manager (IMS) y, una vez realizada la acción correctamente, recibe un token de portador.
-1. La extensión Adobe Asset Link se conecta a AEM Author a través de HTTP(S), incluido el token de portador obtenido en **Paso 1**, utilizando el esquema (HTTP/HTTPS), el host y el puerto proporcionados en la configuración JSON de la extensión.
+1. La extensión de vínculo de recursos de Adobe AEM conecta con el autor de la aplicación a través de HTTP (S), incluido el token de portador obtenido en **Paso 1**, utilizando el esquema (HTTP/HTTPS), el host y el puerto proporcionados en la configuración JSON de la extensión.
 1. AEM El controlador de autenticación del portador de extrae el token de portador de la solicitud y lo valida con Adobe IMS.
 1. AEM Una vez que Adobe IMS valida el token de portador, se crea un usuario en (si aún no existe) y se sincronizan los datos de perfil y grupo/pertenencias de Adobe IMS. AEM AEM Al usuario se le emite un token de inicio de sesión de estándar, que se devuelve a la extensión de vínculo de recursos de Adobe como una cookie en la respuesta HTTP(S).
-1. Interacciones posteriores (por ejemplo, navegación, búsqueda, registro/salida de recursos, etc.) con la extensión Asset Link de Adobe AEM AEM resulta en solicitudes HTTP(S) al Autor de AEM que se validan mediante el token de inicio de sesión de, usando el controlador de autenticación de token de estándar.
+1. Interacciones posteriores (por ejemplo, navegación, búsqueda, registro/salida de recursos, etc.) con la extensión Asset Link de Adobe AEM AEM AEM da como resultado solicitudes HTTP(S) a Autor de la que se validan mediante el token de inicio de sesión de la, utilizando el controlador de autenticación de token estándar.
 
 >[!NOTE]
 >

@@ -8,10 +8,11 @@ role: Leader, Architect, Developer, Admin, User
 level: Beginner
 doc-type: Article
 exl-id: bf4030b0-67c4-4b00-af95-f63e6f79e995
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 820
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '2602'
-ht-degree: 5%
+source-wordcount: '2586'
+ht-degree: 1%
 
 ---
 
@@ -92,8 +93,8 @@ AEM A continuación se muestra una matriz de las principales características b�
         <tr>
             <td>Función Base</td>
             <td>5.6.x</td>
-            <td>6.0</td>
-            <td>6.1</td>
+            <td>6,0</td>
+            <td>6,1</td>
             <td>6.2</td>
             <td>6.3</td>
             <td>6.4</td>
@@ -146,7 +147,7 @@ AEM A continuación se muestra una matriz de las principales características b�
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/es/experience-manager/6-5/sites/deploying/using/revision-cleanup.html" target="_blank">Limpieza de revisión en línea</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/revision-cleanup.html" target="_blank">Limpieza de revisión en línea</a>:</strong>
                 Realice el mantenimiento del repositorio sin tiempo de inactividad del servidor.</td>
             <td> </td>
             <td> </td>
@@ -286,8 +287,8 @@ AEM A continuación se muestra una matriz de características de seguridad clave
         <tr>
             <td>Función de seguridad</td>
             <td>5.6.x</td>
-            <td>6.0</td>
-            <td>6.1</td>
+            <td>6,0</td>
+            <td>6,1</td>
             <td>6.2</td>
             <td>6.3</td>
             <td>6.4</td>
@@ -307,7 +308,7 @@ AEM A continuación se muestra una matriz de características de seguridad clave
         <td>✔</td>
     </tr>
     <tr>
-        <td><strong><a href="https://helpx.adobe.com/es/experience-manager/6-5/sites/administering/using/saml-2-0-authenticationhandler.html" target="_blank">Administración de almacén de claves</a></strong>
+        <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/saml-2-0-authenticationhandler.html" target="_blank">Administración de almacén de claves</a></strong>
             <br> Almacén de confianza global, certificados y claves administrados dentro del repositorio.</td>
         <td></td>
         <td>✔</td>
@@ -329,7 +330,7 @@ AEM A continuación se muestra una matriz de características de seguridad clave
         <td>✔</td>
     </tr>
     <tr>
-        <td><a href="https://helpx.adobe.com/es/experience-manager/6-5/sites/administering/using/saml-2-0-authenticationhandler.html" target="_blank"><strong>CORS</strong> <strong>apoyo</strong></a>
+        <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/saml-2-0-authenticationhandler.html" target="_blank"><strong>CORS</strong> <strong>apoyo</strong></a>
             <br> Compatibilidad de Intercambio de Recursos de Origen Cruzado para una mayor flexibilidad de la aplicación.</td>
         <td></td>
         <td></td>
@@ -436,8 +437,8 @@ AEM A continuación se muestra una matriz de las funciones clave de Sites ofreci
         <tr>
             <td><strong>Función Sitios</strong></td>
             <td>5.6.x</td>
-            <td>6.0</td>
-            <td>6.1</td>
+            <td>6,0</td>
+            <td>6,1</td>
             <td>6.2</td>
             <td>6.3</td>
             <td>6.4</td>
@@ -523,7 +524,7 @@ AEM A continuación se muestra una matriz de las funciones clave de Sites ofreci
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/es/experience-manager/6-5/sites/administering/using/translation.html" target="_blank">Traducción de contenido</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/translation.html" target="_blank">Traducción de contenido</a>:</strong>
             El marco Plug and Play se integra con los servicios de traducción de terceros líderes del sector.</td>
             <td></td>
             <td></td>
@@ -684,8 +685,8 @@ AEM A continuación se muestra una matriz de las funciones clave de Assets que o
         <tr>
             <td>Función Recursos</td>
             <td>5.6.x</td>
-            <td>6.0</td>
-            <td>6.1</td>
+            <td>6,0</td>
+            <td>6,1</td>
             <td>6.2</td>
             <td>6.3</td>
             <td>6.4</td>
@@ -896,8 +897,8 @@ AEM A continuación se muestra una matriz de las funciones clave de Assets que o
         <tr>
             <td>Función Dynamic Media</td>
             <td>5.6.x</td>
-            <td>6.0</td>
-            <td>6.1</td>
+            <td>6,0</td>
+            <td>6,1</td>
             <td>6.2</td>
             <td>6.3 +FP</td>
             <td>6.4</td>
@@ -999,8 +1000,8 @@ A continuación se muestra una matriz de las funciones clave de complementos de 
         <tr>
             <td>Función Forms</td>
             <td>5.6.x</td>
-            <td>6.0</td>
-            <td>6.1</td>
+            <td>6,0</td>
+            <td>6,1</td>
             <td>6.2</td>
             <td>6.3</td>
             <td>6.4</td>

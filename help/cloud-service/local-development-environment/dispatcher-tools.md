@@ -10,10 +10,11 @@ jira: KT-4679
 thumbnail: 30603.jpg
 last-substantial-update: 2023-03-14T00:00:00Z
 exl-id: 9320e07f-be5c-42dc-a4e3-aab80089c8f7
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 765
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1695'
-ht-degree: 9%
+source-wordcount: '1622'
+ht-degree: 4%
 
 ---
 
@@ -28,7 +29,7 @@ ht-degree: 9%
 
 Dispatcher de Adobe Experience Manager AEM AEM () es un módulo de servidor web HTTP Apache que proporciona una capa de seguridad y rendimiento entre el nivel de CDN y Publicación de la. Dispatcher es una parte integral de la arquitectura de Experience Manager general y debe formar parte de la configuración de desarrollo local.
 
-El SDK de AEM as a Cloud Service incluye la versión de herramientas de Dispatcher recomendada, que facilita la configuración, validación y simulación de Dispatcher de manera local. Las herramientas de Dispatcher constan de:
+AEM El SDK as a Cloud Service de incluye la versión de herramientas de Dispatcher recomendada, que facilita la configuración, validación y simulación de Dispatcher localmente. Las herramientas de Dispatcher constan de:
 
 + un conjunto de línea de base de archivos de configuración del servidor web HTTP Apache y Dispatcher, ubicado en `.../dispatcher-sdk-x.x.x/src`
 + una herramienta CLI de validación de configuración, ubicada en `.../dispatcher-sdk-x.x.x/bin/validate`

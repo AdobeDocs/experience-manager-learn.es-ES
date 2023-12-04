@@ -1,10 +1,7 @@
 ---
 title: 'Uso de Adobe Cloud Manager: canalización de no producción de CI/CD'
 description: 'Las canalizaciones de CI/CD que no son de producción se dividen en dos categorías: canalizaciones de calidad de código y canalizaciones de implementación. La calidad del código canaliza todo el código de una rama Git para crearlo y evaluarlo con el análisis de calidad del código de Cloud Manager. Las canalizaciones de implementación admiten la implementación automatizada de código desde el repositorio Git a cualquier entorno que no sea de producción, es decir, cualquier entorno de AEM aprovisionado que no sea de fase o producción.'
-topics: Administration
-audience: administrator
 doc-type: feature video
-activity: use
 version: Cloud Service
 jira: KT-6873
 thumbnail: 26316.jpg
@@ -13,10 +10,11 @@ feature: Cloud Manager, CI-CD Pipeline
 role: Architect, Developer, Admin
 level: Beginner
 exl-id: b28805d3-bb2d-4f66-8daa-9a8eb7ecf0a1
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 227
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 96%
+source-wordcount: '213'
+ht-degree: 89%
 
 ---
 
@@ -28,6 +26,6 @@ ht-degree: 96%
 >abstract="Las canalizaciones de CI/CD que no son de producción se dividen en dos categorías: canalizaciones de calidad de código y canalizaciones de implementación. La calidad del código canaliza todo el código de una rama Git para crearlo y evaluarlo con el análisis de calidad del código de Cloud Manager. Las canalizaciones de implementación admiten la implementación automatizada de código desde el repositorio Git a cualquier entorno que no sea de producción, es decir, cualquier entorno de AEM aprovisionado que no sea de fase o producción."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=es#non-production-%26-code-quality-only-pipelines" text="Canalizaciones de no producción y de solo calidad de código"
 
-[Las canalizaciones de CI/CD que no son de producción se dividen en dos categorías: canalizaciones de calidad de código y canalizaciones de implementación.](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=es#non-production-%26-code-quality-only-pipelines) La calidad del código canaliza todo el código de una rama Git para crearlo y evaluarlo con el análisis de calidad del código de Cloud Manager. Las canalizaciones de implementación admiten la implementación automatizada de código desde el repositorio Git a cualquier entorno que no sea de producción, es decir, cualquier entorno de AEM aprovisionado que no sea de fase o producción.
+[Canalizaciones de no producción de CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=es#non-production-%26-code-quality-only-pipelines) se dividen en dos categorías: canalizaciones de calidad del código y canalizaciones de implementación. La calidad del código canaliza todo el código de una rama Git para crearlo y evaluarlo con el análisis de calidad del código de Cloud Manager. Las canalizaciones de implementación admiten la implementación automatizada de código desde el repositorio Git a cualquier entorno que no sea de producción, es decir, cualquier entorno de AEM aprovisionado que no sea de fase o producción.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26316?quality=12&learn=on)

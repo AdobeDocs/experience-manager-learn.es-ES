@@ -11,10 +11,11 @@ index: y
 doc-type: Tutorial
 exl-id: 90d14734-f644-4a45-9361-1e47a5b52fff
 recommendations: disable
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 104
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 32%
+source-wordcount: '414'
+ht-degree: 18%
 
 ---
 
@@ -22,7 +23,7 @@ ht-degree: 32%
 
 {{edge-delivery-services-and-page-editor}}
 
-Bienvenido a un tutorial de varias partes diseñado para desarrolladores nuevos en Adobe Experience Manager AEM (). Este tutorial recorre la implementación de un sitio de AEM para una marca ficticia: WKND.
+Bienvenido a un tutorial de varias partes diseñado para desarrolladores nuevos en Adobe Experience Manager AEM (). AEM Este tutorial explora la implementación de un sitio de trabajo para una marca ficticia de estilo de vida: WKND.
 
 Este tutorial comienza con el [AEM Tipo de archivo del proyecto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) para generar un nuevo proyecto.
 

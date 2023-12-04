@@ -11,10 +11,11 @@ last-substantial-update: 2022-11-11T00:00:00Z
 recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: 0bdb93c9-5070-483c-a34c-f2b348bfe5ae
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 432
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1246'
-ht-degree: 2%
+source-wordcount: '1230'
+ht-degree: 0%
 
 ---
 
@@ -136,8 +137,8 @@ La importancia de esta configuración se analiza más adelante.
 La asignación se puede realizar con [Asignación de Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html#root-level-mappings-1) definido en `/etc/map`.
 
 1. En el IDE, abra el `ui.content` subproyecto
-1. Navegue hasta  `src/main/content/jcr_root`
-1. Crear una carpeta.`etc`
+1. Vaya a  `src/main/content/jcr_root`
+1. Crear una carpeta `etc`
 1. Entrada `etc`, cree una carpeta `map`
 1. Entrada `map`, cree una carpeta `http`
 1. Entrada `http`, cree un archivo `.content.xml` con el contenido:
@@ -214,7 +215,7 @@ AEM SPA AEM A continuación, configure la protección del contenido para que sol
 
 1. En su IDE, abra el `ui.config` Subproyecto Maven
 1. Navegar `src/main/content/jcr_root/apps/wknd-app/osgiconfig/config`
-1. Cree un archivo con el nombre `com.adobe.granite.cors.impl.CORSPolicyImpl~wknd-app_remote-spa.cfg.json`
+1. Cree un archivo llamado `com.adobe.granite.cors.impl.CORSPolicyImpl~wknd-app_remote-spa.cfg.json`
 1. Añada lo siguiente al archivo:
 
    ```
@@ -344,7 +345,7 @@ AEM SPA SPA Con el proyecto de implementado, hay un último paso para preparar a
 
    ![SPA Página de inicio de la aplicación WKND: configuración de remota](./assets/aem-content/remote-spa-configuration.png)
 
-1. Pulse __Guardar y cerrar__
+1. Tocar __Guardar y cerrar__
 
 Recuerde que hemos cambiado el tipo de esta página por el de una __SPA Página de remota__, que es lo que nos permite ver el __SPA__ pestaña en su __Propiedades de página__.
 

@@ -8,10 +8,11 @@ role: Developer
 level: Experienced
 exl-id: 879518db-3f05-4447-86e8-5802537584e5
 last-substantial-update: 2021-06-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 272
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '813'
-ht-degree: 3%
+source-wordcount: '769'
+ht-degree: 0%
 
 ---
 
@@ -150,7 +151,7 @@ El servicio QueryBuilder se utiliza para consultar nodos de tipo nt:file en la c
 [Genere el paquete como se describe aquí](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)
 [Asegúrese de que el paquete esté implementado y en estado activo](http://localhost:4502/system/console/bundles)
 
-Crear un modelo del flujo de trabajo. Arrastre y suelte el paso del proceso en el modelo de flujo de trabajo. Asocie el paso del proceso con Guardar archivos adjuntos de formularios adaptables en el sistema de archivos.
+Cree un modelo del flujo de trabajo. Arrastre y suelte el paso del proceso en el modelo de flujo de trabajo. Asocie el paso del proceso con Guardar archivos adjuntos de formularios adaptables en el sistema de archivos.
 
 Proporcione los argumentos de proceso necesarios separados por una coma. Por ejemplo, Attachments,c:\\scrappp\\. El primer argumento es la carpeta, cuando los archivos adjuntos del formulario adaptable se van a almacenar en relación con la carga útil del flujo de trabajo. Debe ser el mismo valor que especificó al configurar la acción de envío del formulario adaptable. El segundo argumento es la ubicación en la que desea almacenar los archivos adjuntos.
 

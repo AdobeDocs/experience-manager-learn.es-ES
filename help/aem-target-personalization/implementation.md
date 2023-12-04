@@ -9,10 +9,11 @@ badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM Sites 6.5" before-title="false"
 doc-type: Tutorial
 exl-id: 54a30cd9-d94a-4de5-82a1-69ab2263980d
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 179
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '661'
-ht-degree: 8%
+source-wordcount: '595'
+ht-degree: 1%
 
 ---
 
@@ -43,7 +44,7 @@ AEM Para los clientes de, que desean utilizar ofertas de fragmentos de experienc
       * [Consola de Adobe I/O](https://console.adobe.io)
 
 * **Entorno**
-   * Java 1.8 o Java 11 (solo AEM 6.5 o posterior)
+   * AEM Java 1.8 o Java 11 (solo en el caso de la versión 6.5 o posterior de la aplicación)
    * Apache Maven (3.3.9 o posterior)
    * Chrome
 

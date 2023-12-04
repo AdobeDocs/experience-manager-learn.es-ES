@@ -1,6 +1,6 @@
 ---
 title: AEM Perfiles de producto y versiones de Adobe IMS
-description: Los perfiles de producto de Adobe IMS permiten a los usuarios iniciar sesión en un servicio de AEM Author y proporcionar una línea de base de acceso, según el perfil de producto del que sean miembros.
+description: AEM Los perfiles de producto de Adobe IMS permiten a los usuarios iniciar sesión en un servicio de creación de y proporcionar una línea de base de acceso, según el perfil de producto al que pertenezcan.
 topic: Administration, Security
 feature: User and Groups
 role: Admin
@@ -9,10 +9,11 @@ jira: KT-5000
 thumbnail: 39156.jpg
 last-substantial-update: 2023-05-19T00:00:00Z
 exl-id: 089a557c-5155-489c-bccf-0cb97e95840c
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 327
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 83%
+source-wordcount: '132'
+ht-degree: 40%
 
 ---
 
@@ -24,7 +25,7 @@ ht-degree: 83%
 >abstract="Los perfiles de producto de Adobe IMS permiten a los usuarios iniciar sesión en un servicio de AEM Author y proporcionar una línea de base de acceso, según el perfil de producto del que sean miembros. Obtenga más información sobre los perfiles de producto de Adobe IMS."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=es#introduction" text="Administración de productos y acceso de usuarios en Admin Console"
 
-Los perfiles de producto de Adobe IMS permiten a los usuarios iniciar sesión en un servicio de AEM Author y proporcionar una línea de base de acceso, según el perfil de producto del que sean miembros.
+AEM Los perfiles de producto de Adobe IMS permiten a los usuarios iniciar sesión en un servicio de creación de y proporcionar una línea de base de acceso, según el perfil de producto al que pertenezcan.
 
 >[!VIDEO](https://video.tv.adobe.com/v/39156?quality=12&learn=on)
 

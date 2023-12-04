@@ -1,7 +1,6 @@
 ---
 title: AEM Advertencias transversales en la as a Cloud Service
 description: AEM Obtenga información sobre cómo mitigar las advertencias de recorrido en as a Cloud Service.
-topics: Migration
 feature: Migration
 role: Architect, Developer
 level: Beginner
@@ -11,10 +10,11 @@ hide: true
 index: false
 thumbnail: kt-10427.jpg
 exl-id: 8fcc9364-b84c-4458-82e2-66b47429cd4b
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 327
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 11%
+source-wordcount: '715'
+ht-degree: 4%
 
 ---
 
@@ -127,19 +127,19 @@ Según el contexto de ejecución de la consulta, las instrucciones de registro p
 
 + URL de solicitud HTTP asociada a la ejecución de consultas
 
-   + Ejemplos: `GET /content/wknd/us/en/example.html HTTP/1.1`
+   + Ejemplo: `GET /content/wknd/us/en/example.html HTTP/1.1`
 
 + Sintaxis de consulta Oak
 
-   + Ejemplos: `select [jcr:path], [jcr:score], * from [nt:base] as a where [xyz] = 'abc' and isdescendantnode(a, '/content')`
+   + Ejemplo: `select [jcr:path], [jcr:score], * from [nt:base] as a where [xyz] = 'abc' and isdescendantnode(a, '/content')`
 
 + Consulta XPath
 
-   + Ejemplos: `/jcr:root/content//element(*, nt:base)[(@xyz = 'abc')] */, path=/content//*, property=[xyz=[abc]])`
+   + Ejemplo: `/jcr:root/content//element(*, nt:base)[(@xyz = 'abc')] */, path=/content//*, property=[xyz=[abc]])`
 
 + Código que ejecuta la consulta
 
-   + Ejemplos:  `apps.wknd.components.search.example__002e__jsp._jspService` → `/apps/wknd/components/search/example.html`
+   + Ejemplo:  `apps.wknd.components.search.example__002e__jsp._jspService` → `/apps/wknd/components/search/example.html`
 
 __Consultas con errores__ van seguidas de una `RuntimeNodeTraversalException` instrucción, similar a:
 

@@ -8,10 +8,11 @@ role: Developer
 level: Intermediate
 exl-id: 1471929f-d269-4adc-88ad-2ad3682305e1
 last-substantial-update: 2019-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 105
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 3%
+source-wordcount: '362'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +35,7 @@ AEM Siga los pasos que se mencionan a continuación para agregar el certificado 
 * **Tendrá que desplazarse por la página de resultados para cargar todos los usuarios y encontrar al usuario de fd-service**
 * Haga doble clic en el usuario fd-service para abrir la ventana de configuración del usuario
 * Haga clic en &quot;Agregar clave privada del archivo del almacén de claves&quot;. Especifique el alias y la contraseña específicos del certificado
-   ![add-certificate](assets/adding-certificate-keystore.PNG)
+  ![add-certificate](assets/adding-certificate-keystore.PNG)
 * Guarde los cambios
 
 ## Creando servicio OSGI
@@ -55,13 +56,12 @@ O puede utilizar el paquete de muestra incluido como parte de estos recursos de 
 * Descargar e instalar [Paquete de servicios de documentos personalizados](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 * Descargar e instalar [Desarrollo con paquete de usuario de servicio](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 * [Asegúrese de haber agregado la siguiente entrada en el servicio Asignador de usuarios del servicio Apache Sling](http://localhost:4502/system/console/configMgr)
-
-   **DesarrollarWithServiceUser.core:getformsresourceresolver=fd-service** como se muestra en la captura de pantalla siguiente
-   ![User-Mapper](assets/user-mapper-service.PNG)
+  **DesarrollarWithServiceUser.core:getformsresourceresolver=fd-service** como se muestra en la captura de pantalla siguiente
+  ![User-Mapper](assets/user-mapper-service.PNG)
 * [Importar formulario adaptable de ejemplo](assets/certify-pdf-af.zip)
 * [Importar e instalar el envío personalizado](assets/custom-submit-certify.zip)
 * [Abra el formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/certifypdf/jcr:content?wcmmode=disabled)
 * Cargar documento de PDF que debe certificarse
-   **opcional** - Especifique el campo de firma que desea utilizar para certificar el documento
+  **opcional** - Especifique el campo de firma que desea utilizar para certificar el documento
 * Haga clic en enviar.
 * Se le debe devolver un PDF certificado.

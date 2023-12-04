@@ -8,10 +8,11 @@ role: User
 level: Beginner
 exl-id: a2d21f2e-3dbb-454f-8a02-101dc3af9b1e
 last-substantial-update: 2020-02-09T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+duration: 539
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 6%
+source-wordcount: '164'
+ht-degree: 0%
 
 ---
 
@@ -23,14 +24,14 @@ AEM En esta versión, 6.3 presenta varias funciones y mejoras nuevas para simpli
 
 **Algunas de las principales mejoras del Editor de formularios adaptables son las siguientes:**
 
-* [Experiencia del usuario final mejorada](https://helpx.adobe.com/es/aem-forms/6-3/introduction-forms-authoring.html)
+* [Experiencia del usuario final mejorada](https://helpx.adobe.com/aem-forms/6-3/introduction-forms-authoring.html)
 
 * Rellenar automáticamente campos de formulario
 * Texto enriquecido para un componente de cuadro de texto
 * Tipos de entrada especializados para campos de formulario
 
-* [Edición en línea del título del componente](https://helpx.adobe.com/es/aem-forms/6-3/introduction-forms-authoring.html)
-* [Validación predeterminada en componentes](https://helpx.adobe.com/es/aem-forms/6-3/introduction-forms-authoring.html)
+* [Edición en línea del título del componente](https://helpx.adobe.com/aem-forms/6-3/introduction-forms-authoring.html)
+* [Validación predeterminada en componentes](https://helpx.adobe.com/aem-forms/6-3/introduction-forms-authoring.html)
 * [Métodos abreviados del teclado para una experiencia de creación de contenido más rápida](https://helpx.adobe.com/aem-forms/6-3/keyboard-shortcuts.html#AdaptiveFormEditor)
 * [Compatibilidad con el esquema JSON para crear formularios adaptables](https://helpx.adobe.com/aem-forms/6-3/adaptive-form-json-schema-form-model.html)
 * [CAPTCHA en formularios adaptables](https://helpx.adobe.com/aem-forms/6-3/captcha-adaptive-forms.html)

@@ -2,17 +2,16 @@
 title: 'Envío de documento de comunicación interactiva: AEM Forms de canal web'
 description: Envío del documento del canal web mediante un vínculo en el correo electrónico
 feature: Interactive Communication
-audience: developer
-activity: implement
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 50858100-3d0c-42bd-87b8-f626212669e2
 last-substantial-update: 2019-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 85
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '279'
 ht-degree: 0%
 
 ---
@@ -25,7 +24,7 @@ En este artículo, echamos un vistazo al correo electrónico como mecanismo de e
 
 Echemos un vistazo al siguiente fragmento de código. Este código forma parte de GET.jsp, que se activa cuando el usuario hace clic en el vínculo del correo electrónico para ver el documento del canal web. Obtenemos el usuario que inició sesión usando el jackrabbit UserManager. Una vez que obtenemos el usuario que ha iniciado sesión, obtenemos el valor de la propiedad accountNumber asociada al perfil del usuario.
 
-Luego asociamos el valor accountNumber con una clave denominada accountnumber en el mapa. La clave **accountnumber** se define en el modal de datos del formulario como atributo de solicitud. El valor de este atributo se pasa como parámetro de entrada al método de servicio de lectura modal de datos de formulario.
+Luego asociamos el valor accountNumber con una clave denominada accountnumber en el mapa. La clave **accountnumber** se define en el modal de datos del formulario como un atributo de solicitud. El valor de este atributo se pasa como parámetro de entrada al método de servicio de lectura modal de datos de formulario.
 
 Línea 7: estamos enviando la solicitud recibida a otro servlet, según el tipo de recurso identificado por la dirección URL del documento de comunicación interactiva. La respuesta devuelta por este segundo servlet se incluye en la respuesta del primer servlet.
 

@@ -7,10 +7,11 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: d0576962-a86a-4742-8635-02be1ec3243f
-source-git-commit: a500c88091d87e34c12d4092c71241983b166af8
+duration: 345
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 2%
+source-wordcount: '927'
+ht-degree: 1%
 
 ---
 
@@ -39,7 +40,7 @@ AEM Hay disponible un paquete de soluciones para instalar que completa los pasos
 1. Descargar [Advanced-GraphQL-Tutorial-Solution-Package-1.2.zip](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Solution-Package-1.2.zip).
 1. AEM En, navegue hasta **Herramientas** > **Implementación** > **Paquetes** para acceder a **Administrador de paquetes**.
 1. Cargue e instale el paquete (archivo zip) descargado en el paso anterior.
-1. Replicar el paquete en el servicio de publicación de AEM
+1. AEM Replicar el paquete en el servicio Publicación de la
 
 ## Objetivos {#objectives}
 
@@ -83,7 +84,7 @@ Para acelerar el tutorial, se proporciona una aplicación React JS de inicio.
 
    >[!NOTE]
    > 
-   > Las instrucciones anteriores son conectar la aplicación React al **Servicio de publicación de AEM**, sin embargo, para conectarse a **Servicio de AEM Author** AEM obtenga un token de desarrollo local para su entorno as a Cloud Service de target.
+   > Las instrucciones anteriores son conectar la aplicación React al **AEM Servicio de publicación de**, sin embargo, para conectarse a **AEM Servicio de autor de** AEM obtenga un token de desarrollo local para su entorno as a Cloud Service de target.
    >
    > También es posible conectar la aplicación a un [Instancia de autor local que utiliza el SDK de AEMaaCS](/help/headless-tutorial/graphql/quick-setup/local-sdk.md) usando autenticación básica.
 
@@ -111,7 +112,7 @@ Para acelerar el tutorial, se proporciona una aplicación React JS de inicio.
 
 >[!IMPORTANT]
 >
->    Si se está preguntando por qué se realiza la solicitud de API de GraphQL en contra del `http://localhost:3000` y NO con el dominio del servicio de publicación de AEM, revise [Bajo el capó](../multi-step/graphql-and-react-app.md#under-the-hood) en Tutorial básico.
+>    Si se está preguntando por qué se realiza la solicitud de API de GraphQL en contra del `http://localhost:3000` AEM y NO contra el dominio del servicio de publicación de la, revise [Bajo el capó](../multi-step/graphql-and-react-app.md#under-the-hood) en Tutorial básico.
 
 
 ## Revisar el código

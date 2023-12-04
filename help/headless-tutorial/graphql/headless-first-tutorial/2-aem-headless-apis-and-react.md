@@ -11,9 +11,10 @@ last-substantial-update: 2023-05-16T00:00:00Z
 jira: KT-13270
 thumbnail: KT-13270.jpeg
 exl-id: 2b726473-5a32-4046-bce8-6da3c57a1b60
-source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
+duration: 321
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '856'
 ht-degree: 0%
 
 ---
@@ -67,7 +68,7 @@ A lo largo del tutorial, proporcionaremos explicaciones, ejemplos de código y s
    1. Pegue el token copiado como valor para `REACT_APP_TOKEN` en el `.env` archivo.
    1. Ahora vamos a crear la aplicación ejecutando `npm ci` en la línea de comandos.
    1. Ahora inicie la aplicación React y ejecutando `npm run start` en la línea de comandos.
-   1. En [./src/utils](https://github.com/lamontacrook/headless-first/tree/main/src/utils) un archivo denominado `context.js`  incluye el código para establecer los valores en `.env` en el contexto de la aplicación.
+   1. Entrada [./src/utils](https://github.com/lamontacrook/headless-first/tree/main/src/utils) un archivo denominado `context.js`  incluye el código para establecer los valores en `.env` en el contexto de la aplicación.
 
 ## Ejecute la aplicación React
 

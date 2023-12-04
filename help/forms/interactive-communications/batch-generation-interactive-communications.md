@@ -2,20 +2,18 @@
 title: Usar la API por lotes para generar documentos de comunicación interactiva
 description: Recursos de muestra para generar documentos de canal de impresión mediante API por lotes
 feature: Interactive Communication
-topics: development
-audience: developer
 doc-type: article
-activity: implement
 version: 6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: 2cdf37e6-42ad-469a-a6e4-a693ab2ca908
 last-substantial-update: 2019-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 109
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 19%
+source-wordcount: '371'
+ht-degree: 16%
 
 ---
 
@@ -38,7 +36,7 @@ Este artículo proporciona recursos de ejemplo para generar documentos de comuni
 2. Seleccione BatchAPIWatchedFolder y haga clic en Editar.
 3. Cambie la Path para que coincida con su sistema operativo.
 
-![path](assets/watched-folder-batch-api-basic.PNG)
+![ruta](assets/watched-folder-batch-api-basic.PNG)
 
 * Descargue y extraiga el contenido de [archivo zip](assets/jsonfile.zip). El archivo zip contiene la carpeta denominada `jsonfile` que contiene `beneficiaries.json` archivo. Este archivo tiene los datos para generar 3 documentos.
 

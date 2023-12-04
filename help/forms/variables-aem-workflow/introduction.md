@@ -8,9 +8,10 @@ role: Developer
 level: Beginner
 exl-id: e84b70a0-c51b-4fe3-80e8-f3156931297a
 last-substantial-update: 2020-01-26T00:00:00Z
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+duration: 40
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '109'
+source-wordcount: '107'
 ht-degree: 8%
 
 ---
@@ -19,7 +20,7 @@ ht-degree: 8%
 
 AEM AEM A partir de la versión 6.5 de, ahora puede crear y utilizar variables en Flujo de trabajo de usuarios. Antes de esta capacidad, los autores de flujos de trabajo solían crear claves mediante la asignación de metadatos de flujo de trabajo. Esto implicaba escribir código personalizado para crear y rellenar estas claves. Con este nuevo flujo de trabajo de capacidades, los autores ahora pueden crear fácilmente variables y utilizarlas en cualquier parte del flujo de trabajo.
 
-Las variables pueden ser de los tipos siguientes
+Las variables pueden ser de los siguientes tipos
 
 * Largo
 * Doble

@@ -10,10 +10,11 @@ mini-toc-levels: 1
 jira: KT-7131
 thumbnail: KT-7131.jpg
 exl-id: 8c8b2620-6bc3-4a21-8d8d-8e45a6e9fc70
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 655
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '2357'
-ht-degree: 9%
+source-wordcount: '2137'
+ht-degree: 5%
 
 ---
 
@@ -46,7 +47,7 @@ El diagrama anterior muestra este patrón de implementación común.
 1. A **Autor del contenido** AEM utiliza el servicio de creación de para crear, editar y administrar contenido.
 2. El **autor de contenido** y otros usuarios internos pueden obtener una previsualización del contenido directamente en el servicio de creación. Se puede configurar una versión de previsualización de la aplicación que se conecte al servicio de creación.
 3. Una vez aprobado el contenido, se puede **publicado** AEM al servicio Publicación de la.
-4. **Los usuarios finales interactúan con la versión de producción de la aplicación.** La aplicación de producción se conecta al servicio de publicación y utiliza las API de GraphQL para solicitar y consumir contenido.
+4. **Usuarios finales** interactúe con la versión de producción de la aplicación. La aplicación de producción se conecta al servicio de publicación y utiliza las API de GraphQL para solicitar y consumir contenido.
 
 AEM El tutorial simula la implementación anterior añadiendo una instancia de Publicación de la a la configuración actual. En capítulos anteriores, la aplicación React actuaba como una previsualización conectándose directamente a la instancia de autor. Una compilación de producción de la aplicación React se implementa en un servidor estático Node.js que se conecta a la nueva instancia de publicación.
 

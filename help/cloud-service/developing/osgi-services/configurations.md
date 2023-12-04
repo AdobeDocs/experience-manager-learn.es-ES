@@ -8,10 +8,11 @@ feature: OSGI
 jira: KT-8268
 thumbnail: 335729.jpeg
 exl-id: 096b0a95-7039-4570-b567-ba316bfc8709
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 784
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '75'
-ht-degree: 2%
+source-wordcount: '52'
+ht-degree: 1%
 
 ---
 
@@ -26,7 +27,7 @@ Aprenda el enfoque de bajo nivel del uso de pares de clave/valor de configuraci�
 + [@Component JavaDocs](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/osgi/service/component/annotations/Component.html)
 + [@Activate JavaDocs](https://javadoc.io/static/com.adobe.aem/aem-sdk-api/2021.7.5658.20210723T140305Z-210600/org/osgi/service/component/annotations/Activate.html)
 
-## Código 
+## Código
 
 ### ActivitiesImpl.java
 

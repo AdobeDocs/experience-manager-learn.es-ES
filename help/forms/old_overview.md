@@ -4,30 +4,28 @@ description: Recopilación de recursos de AEM Forms para principiantes y desarro
 topic: Development
 role: Developer
 exl-id: c1972937-56c5-47af-9232-f31bdf69dfbe
-source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
+duration: 152
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 26%
+source-wordcount: '405'
+ht-degree: 5%
 
 ---
 
 # Tutorials y vídeos de AEM Forms {#overview}
 
-Adobe Experience Manager (AEM) ofrece una solución fácil de usar para crear, administrar, publicar y actualizar formularios digitales complejos a la vez que se integra con procesos back-end, reglas empresariales y datos. Esta guía del usuario contiene vídeos y tutoriales sobre las numerosas funciones y funcionalidades de AEM Forms
+Adobe Experience Manager AEM () proporciona una solución fácil de usar para crear, administrar, publicar y actualizar formularios digitales complejos a la vez que se integra con procesos back-end, reglas empresariales y datos. Esta guía del usuario contiene vídeos y tutoriales sobre las numerosas funciones y funcionalidades de AEM Forms
 
 ## Novedades
 
 * **[Administrar mensajes de error en el paso para invocar el servicio de modelo de datos de formulario](./adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)**
-
-   *Una variable en un modelo de flujo de trabajo es una forma de almacenar un valor basado en su tipo de datos*
+  *Una variable en un modelo de flujo de trabajo es una forma de almacenar un valor basado en su tipo de datos*
 
 * **[Gráficos de varias series en documentos de comunicaciones interactivas (vídeo)](./interactive-communications/multiseriescharts.md)**
-
-   *Trazar varias series en el mismo gráfico. Los gráficos de varias series se suelen utilizar en asociación con el tipo de gráfico de líneas, barras y columnas.*
+  *Trazar varias series en el mismo gráfico. Los gráficos de varias series se suelen utilizar en asociación con el tipo de gráfico de líneas, barras y columnas.*
 
 * **[Creación de modelos de flujo de trabajo reutilizables](./adaptive-forms/re-usable-aem-forms-workflow-models-article.md)**
-
-   *Crear modelos de flujo de trabajo no vinculados a un formulario específico*
+  *Crear modelos de flujo de trabajo no vinculados a un formulario específico*
 
 ## Selección de personal
 
@@ -56,7 +54,7 @@ Adobe Experience Manager (AEM) ofrece una solución fácil de usar para crear,
     </a>
     </div>
     <p>
-    <em>Interactive Communications centraliza y administra la creación, el ensamblado y el envío de correspondencia segura, personalizada e interactiva, como correspondencia comercial, documentos, declaraciones, avisos de beneficios, correos de marketing, facturas y kits de bienvenida. </em>
+    <em>Interactive Communications centraliza y administra la creación, el ensamblado y el envío de correspondencia segura, personalizada e interactiva, como correspondencia comercial, documentos, declaraciones, avisos de beneficios, correos de marketing, facturas y kits de bienvenida. </em>
     <p>
   </td>
   <td>

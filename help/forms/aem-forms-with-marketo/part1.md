@@ -10,10 +10,11 @@ exl-id: 45047852-4fdb-4702-8a99-faaad7213b61
 badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 last-substantial-update: 2020-03-20T00:00:00Z
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+duration: 105
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '379'
-ht-degree: 2%
+source-wordcount: '370'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +24,7 @@ Marketo, parte de Adobe, proporciona software de automatización de marketing ce
 
 Con el modelo de datos de formulario de AEM Forms AEM, ahora podemos integrar fácilmente formularios de datos de formulario con de Marketo.
 
-[Más información sobre el modelo de datos de formulario](https://helpx.adobe.com/es/experience-manager/6-5/forms/using/data-integration.html)
+[Más información sobre el modelo de datos de formulario](https://helpx.adobe.com/experience-manager/6-5/forms/using/data-integration.html)
 
 Marketo expone una API de REST que permite la ejecución remota de muchas de las funcionalidades del sistema. Desde la creación de programas hasta la importación masiva de posibles clientes, hay muchas opciones que permiten un control preciso de una instancia de Marketo. Con el modelo de datos de formulario es bastante sencillo integrar AEM Forms con Marketo.
 

@@ -12,10 +12,11 @@ level: Beginner
 last-substantial-update: 2023-05-10T00:00:00Z
 exl-id: b1ab2a13-8b0e-4d7f-82b5-78b1dda248ba
 badgeVersions: label="AEM sin encabezado as a Cloud Service" before-title="false"
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 374
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '898'
-ht-degree: 9%
+source-wordcount: '799'
+ht-degree: 2%
 
 ---
 
@@ -40,13 +41,13 @@ Las siguientes herramientas deben instalarse localmente:
 
 AEM La aplicación React funciona con las siguientes opciones de implementación de. Todas las implementaciones requieren lo siguiente [Sitio WKND 3.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) para instalar.
 
-+ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=es)
++ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
 + Configuración local mediante [el SDK de AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=es)
    + Requiere [JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
 
 La aplicación React está diseñada para conectarse a un __AEM Publicación de__ AEM , sin embargo, puede obtener contenido de Autor de la fuente si se proporciona autenticación en la configuración de la aplicación React.
 
-## Utilización
+## Cómo usar
 
 1. Clonar el `adobe/aem-guides-wknd-graphql` repositorio:
 

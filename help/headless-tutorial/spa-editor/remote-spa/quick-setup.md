@@ -11,10 +11,11 @@ last-substantial-update: 2022-11-11T00:00:00Z
 recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: ef7a1dad-993a-4c47-a9fb-91fa73de9b5d
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 715
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '793'
-ht-degree: 6%
+source-wordcount: '726'
+ht-degree: 2%
 
 ---
 
@@ -32,7 +33,7 @@ _Un recorrido en vídeo de la configuración rápida_
 
 Este tutorial requiere lo siguiente:
 
-+ [SDK de AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=es)
++ [SDK de AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=en)
 + [Node.js v18](https://nodejs.org/en/)
 + [Java™ 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 + [Maven 3.6+](https://maven.apache.org/)
@@ -68,7 +69,7 @@ AEM Descargue e instale Quickstart de SDK de en el puerto 4502 de forma predeter
 AEM El SDK de se inicia y se inicia automáticamente en [http://localhost:4502](http://localhost:4502). Inicie sesión con las siguientes credenciales:
 
 + Nombre de usuario: `admin`
-+ Una contraseña: `admin`
++ Contraseña: `admin`
 
 ## Descargar e instalar el paquete del sitio WKND
 

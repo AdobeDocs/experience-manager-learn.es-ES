@@ -8,10 +8,11 @@ feature: OSGI
 jira: KT-8228
 thumbnail: 335475.jpeg
 exl-id: 5a65dbcd-649b-464c-9c78-d31c2b6c49c3
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 402
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '94'
-ht-degree: 4%
+source-wordcount: '58'
+ht-degree: 5%
 
 ---
 
@@ -33,7 +34,7 @@ Obtenga información acerca del ciclo vital del componente OSGi, incluido cómo 
 + [@Modified JavaDocs](https://javadoc.io/static/com.adobe.aem/aem-sdk-api/2021.7.5658.20210723T140305Z-210600/org/osgi/service/component/annotations/Modified.html)
 + [@Deactivate JavaDocs](https://javadoc.io/static/com.adobe.aem/aem-sdk-api/2021.7.5658.20210723T140305Z-210600/org/osgi/service/component/annotations/Deactivate.html)
 
-## Código 
+## Código
 
 ### ActivitiesImpl.java
 

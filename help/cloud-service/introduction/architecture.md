@@ -1,5 +1,5 @@
 ---
-title: Arquitectura de AEM as a Cloud Service
+title: AEM Arquitectura de la as a Cloud Service
 description: AEM Explore la arquitectura subyacente y las piezas importantes de la arquitectura as a Cloud Service con los Edge Delivery Services.
 role: Architect, Developer
 level: Beginner
@@ -10,14 +10,15 @@ jira: KT-6919
 thumbnail: 330542.jpg
 last-substantial-update: 2023-09-26T00:00:00Z
 exl-id: c7ccfee6-c252-4ba4-831a-1c37b36ac964
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 386
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
 source-wordcount: '48'
-ht-degree: 29%
+ht-degree: 0%
 
 ---
 
-# Arquitectura de AEM as a Cloud Service
+# AEM Arquitectura de la as a Cloud Service
 
 {{edge-delivery-services}}
 

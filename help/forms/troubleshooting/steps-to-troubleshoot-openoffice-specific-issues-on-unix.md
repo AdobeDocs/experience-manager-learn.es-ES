@@ -1,6 +1,6 @@
 ---
 title: Pasos para solucionar problemas específicos de OpenOffice en una configuración Unix
-description: Solucionar problemas de OpenOffice con PDF Generator en la instalación de UNIX.
+description: Solucionar problemas de OpenOffice con problemas de PDF Generator en la instalación de UNIX.
 type: Troubleshooting
 role: Developer
 level: Intermediate
@@ -9,7 +9,8 @@ feature: PDF Generator
 topic: Development
 index: y
 exl-id: bc86dda1-18a4-474b-a8ec-d4e7f15ddd10
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+duration: 98
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
 source-wordcount: '49'
 ht-degree: 0%

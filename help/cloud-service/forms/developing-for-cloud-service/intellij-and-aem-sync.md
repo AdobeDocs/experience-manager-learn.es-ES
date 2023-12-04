@@ -9,10 +9,11 @@ version: Cloud Service
 topic: Development
 jira: KT-8844
 exl-id: 9a7ed792-ca0d-458f-b8dd-9129aba37df6
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 125
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 3%
+source-wordcount: '501'
+ht-degree: 0%
 
 ---
 
@@ -81,7 +82,7 @@ Se pueden seguir los siguientes pasos para configurar rápidamente una instancia
 
 * Abra el símbolo del sistema y vaya a c:\aemformscs\aem-sdk\author introduzca el siguiente comando java -jar aem-author-p4502.jar -gui. AEM Esto iniciará la instalación de la.
 * Iniciar sesión con credenciales de administrador/administrador
-* Detenga la instancia de AEM
+* AEM Detener la instancia de
 * Cree la siguiente estructura de carpetas.C:\aemformscs\aem-sdk\author\crx-quickstart\install
 * Copie aem-forms-addon-xxxxxx.far en la carpeta de instalación
 * Abra el símbolo del sistema y vaya a c:\aemformscs\aem-sdk\author introduzca el siguiente comando java -jar aem-author-p4502.jar -gui. AEM Esto implementará el paquete de complementos de formularios en la instancia de la.

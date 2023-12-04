@@ -10,14 +10,15 @@ exl-id: 58851624-71c9-4745-aaaf-305acf6ccb14
 last-substantial-update: 2022-07-20T00:00:00Z
 doc-type: Tutorial
 thumbnail: aem-local-dev-env.jpg
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 4693
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '2603'
-ht-degree: 2%
+source-wordcount: '2413'
+ht-degree: 0%
 
 ---
 
-# Configuración de un Entorno de desarrollo de AEM local
+# AEM Configuración de un entorno de desarrollo de Local
 
 Guía para configurar un desarrollo local para Adobe Experience Manager AEM,. Abarca temas importantes como la instalación local, Apache Maven, los entornos de desarrollo integrados y la depuración/solución de problemas. Desarrollo con **Eclipse IDE, CRXDE Lite, Visual Studio Code e IntelliJ** son objeto de debate.
 
@@ -200,7 +201,7 @@ El **[IntelliJ IDEA](https://www.jetbrains.com/idea/)** es un potente IDE para e
 
 ## Solución de problemas
 
-***Ayuda!*** ¡Mi código no funciona! Al igual que con todo el desarrollo, hay momentos (probablemente muchos) en que el código no funciona como se espera. AEM Es una plataforma potente, pero con gran poder... viene una gran complejidad. A continuación se presentan algunos puntos de partida de alto nivel para la resolución de problemas y el seguimiento de problemas (pero lejos de una lista exhaustiva de cosas que pueden salir mal):
+***¡Ayuda!*** ¡Mi código no funciona! Al igual que con todo el desarrollo, hay momentos (probablemente muchos) en que el código no funciona como se espera. AEM Es una plataforma potente, pero con gran poder... viene una gran complejidad. A continuación se presentan algunos puntos de partida de alto nivel para la resolución de problemas y el seguimiento de problemas (pero lejos de una lista exhaustiva de cosas que pueden salir mal):
 
 ### Verificar implementación de código
 

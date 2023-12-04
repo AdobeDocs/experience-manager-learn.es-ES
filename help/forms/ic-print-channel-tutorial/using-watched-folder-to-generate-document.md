@@ -1,14 +1,8 @@
 ---
 title: Generar documentos de canal de impresión mediante carpeta inspeccionada
-seo-title: Generating Print Channel Documents Using Watched Folder
 description: Esta es la parte 10 del tutorial de varios pasos para crear el primer documento de comunicaciones interactivas para el canal Imprimir. En esta parte, generaremos documentos del canal de impresión utilizando el mecanismo de carpetas vigiladas.
-seo-description: This is part 10 of multistep tutorial for creating your first interactive communications document for the print channel. In this part, we will generate print channel documents using the watched folder mechanism.
-uuid: 9e39f4e3-1053-4839-9338-09961ac54f81
 feature: Interactive Communication
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+doc-type: Tutorial
 version: 6.4,6.5
 contentOwner: gbedekar
 discoiquuid: 23fbada3-d776-4b77-b381-22d3ec716ae9
@@ -16,9 +10,10 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 9bb05c94-2a7b-4149-b567-186eb08b1c66
-source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
+duration: 98
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
@@ -59,7 +54,7 @@ Para generar un documento de canal de impresión mediante el mecanismo de carpet
 * Asegúrese de que la ruta a interactiveCommunicationsDocument apunte al documento correcto que desea imprimir.( Línea 1)
 * Tome nota de saveLocation(Línea 2). Puede cambiarla según sus necesidades.
 * Asegúrese de que el parámetro de entrada del modelo de datos de formulario está enlazado al atributo de solicitud y que su valor de enlace está establecido en &quot;accountnumber&quot;. Consulte la siguiente captura de pantalla.
-   ![solicitud](assets/requestattributeprintchannel.gif)
+  ![solicitud](assets/requestattributeprintchannel.gif)
 
 * Cree el archivo accountnumbers.xml con el siguiente contenido
 

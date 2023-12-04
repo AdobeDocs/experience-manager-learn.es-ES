@@ -8,10 +8,11 @@ role: Developer
 level: Experienced
 exl-id: 18da12ea-b1ea-48e4-979e-3cb59584dfbd
 last-substantial-update: 2020-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 121
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 2%
+source-wordcount: '192'
+ht-degree: 0%
 
 ---
 
@@ -123,4 +124,3 @@ AEM Para que esta capacidad funcione en el servidor de la
 > * Asegúrese de arrastrar y soltar solo los archivos del PDF
 >
 >
-

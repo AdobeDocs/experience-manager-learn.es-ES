@@ -1,21 +1,17 @@
 ---
 title: AEM Forms con esquema y datos JSON [Part2]
-seo-title: AEM Forms with JSON Schema and Data[Part2]
 description: Tutorial de varias partes para guiarle por los pasos necesarios para crear un formulario adaptable con esquema JSON y consultar los datos enviados.
-seo-description: Multi-Part tutorial to walk you through the steps involved in creating Adaptive Form with JSON schema and querying the submitted data.
 feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+doc-type: Tutorial
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 29195c70-af12-4a22-8484-3c87a1e07378
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+duration: 164
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '330'
 ht-degree: 0%
 
 ---
@@ -149,7 +145,7 @@ Para que esto funcione en su sistema, siga los siguientes pasos
 * Crear formulario adaptable con esquema JSON. Puede utilizar el esquema JSON proporcionado como parte de los recursos de este artículo. Asegúrese de que la acción de envío del formulario está configurada correctamente. La acción de envío debe configurarse como &quot;CustomSubmitHelpx&quot;.
 * Cree un esquema en la instancia de MySQL importando el archivo schema.sql con la herramienta MySQL Workbench. El archivo schema.sql también se proporciona como parte de estos recursos de tutorial.
 * Configure la fuente de datos obtenida de una conexión Apache Sling desde la consola web de Felix
-* Asegúrese de asignar a su origen de datos el nombre &quot;aemformswithjson&quot;. Este es el nombre que utiliza el paquete OSGi de muestra que se le proporciona
+* Asegúrese de nombrar su nombre de fuente de datos &quot;aemformswithjson&quot;. Este es el nombre que utiliza el paquete OSGi de muestra que se le proporciona
 * Consulte la imagen anterior para ver las propiedades. Esto supone que va a usar MySQL como base de datos.
 * Implemente los paquetes OSGi que se proporcionan como parte de los recursos de este artículo.
 * Previsualice el formulario y envíelo.

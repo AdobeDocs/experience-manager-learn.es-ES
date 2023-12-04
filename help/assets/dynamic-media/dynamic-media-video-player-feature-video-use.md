@@ -8,10 +8,11 @@ role: User
 level: Beginner
 doc-type: Feature Video
 exl-id: 7e4cb782-836d-4ec0-97d0-645b91ea43e0
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 617
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 6%
+source-wordcount: '265'
+ht-degree: 5%
 
 ---
 
@@ -74,32 +75,32 @@ La compatibilidad con el explorador HLS es la siguiente: para los exploradores n
    <td> <p>Flujo de vídeo HLS</p> </td>
   </tr>
   <tr> 
-   <td> <p>Móvil</p> </td>
+   <td> <p>Mobile</p> </td>
    <td> <p>Chrome (Android 6 o anterior)</p> </td>
    <td> <p>Descarga progresiva</p> </td>
   </tr>
   <tr> 
-   <td> <p>Móvil</p> </td>
+   <td> <p>Mobile</p> </td>
    <td> <p>Chrome (Android 7 o posterior)</p> </td>
    <td> <p>Flujo de vídeo HLS</p> </td>
   </tr>
   <tr> 
-   <td> <p>Móvil</p> </td>
+   <td> <p>Mobile</p> </td>
    <td> <p>Android (navegador predeterminado)</p> </td>
    <td> <p>Descarga progresiva</p> </td>
   </tr>
   <tr> 
-   <td> <p>Móvil</p> </td>
+   <td> <p>Mobile</p> </td>
    <td> <p>Safari (iOS)</p> </td>
    <td> <p>Flujo de vídeo HLS</p> </td>
   </tr>
   <tr> 
-   <td> <p>Móvil</p> </td>
+   <td> <p>Mobile</p> </td>
    <td> <p>Chrome (iOS)</p> </td>
    <td> <p>Flujo de vídeo HLS</p> </td>
   </tr>
   <tr> 
-   <td> <p>Móvil</p> </td>
+   <td> <p>Mobile</p> </td>
    <td> <p>BlackBerry</p> </td>
    <td> <p>Flujo de vídeo HLS</p> </td>
   </tr>

@@ -11,9 +11,10 @@ last-substantial-update: 2023-10-26T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
 exl-id: 49becbcb-7965-4378-bb8e-b662fda716b7
-source-git-commit: c32497a7fdcf144d30bb8c0e58527013b66013b0
+duration: 667
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1512'
+source-wordcount: '1449'
 ht-degree: 0%
 
 ---
@@ -74,7 +75,7 @@ data:
 
   ![Inicio de sesión WKND](./assets/wknd-login.png)
 
-#### Analizando{#analyzing}
+#### Análisis{#analyzing}
 
 Analicemos los resultados de la prueba. `publish-auth-requests` descargando los registros de CDN de AEM CS desde Cloud Manager y utilizando la regla [herramientas de tablero](how-to-setup.md#analyze-results-using-elk-dashboard-tool), que configuró en el capítulo anterior.
 
@@ -149,7 +150,7 @@ data:
 
 - Repita el paso anterior desde la dirección IP que utilizó en la regla y luego una dirección IP diferente (por ejemplo, usando su teléfono móvil).
 
-#### Analizando
+#### Análisis
 
 Para analizar los resultados de `block-internal-paths` siga los mismos pasos que se describen en la sección [ejemplo anterior](#analyzing).
 
@@ -206,7 +207,7 @@ data:
 
   ![Ataque DoS de Vegeta](./assets/vegeta-dos-attack.png)
 
-#### Analizando
+#### Análisis
 
 Para analizar los resultados de `prevent-dos-attacks` siga los mismos pasos que se describen en la sección [ejemplo anterior](#analyzing).
 
@@ -242,7 +243,7 @@ Empecemos atacando el sitio WKND sin agregar una regla WAF (o utilizando la vari
 
   Para obtener más información sobre la simulación de ataques, consulte [Nikto - Ajuste de exploración](https://github.com/sullo/nikto/wiki/Scan-Tuning) , que le indica cómo especificar el tipo de ataques de prueba que se van a incluir o excluir.
 
-##### Analizando
+##### Análisis
 
 Para analizar los resultados de la simulación de ataques, siga los mismos pasos que se describen en la sección [ejemplo anterior](#analyzing).
 
@@ -312,7 +313,7 @@ data:
   $ ./nikto.pl -useragent "AttackSimulationAgent (Demo/1.0)" -D V -Tuning 9 -ssl -h https://publish-pXXXX-eYYYY.adobeaemcloud.com/us/en.html
   ```
 
-##### Analizando
+##### Análisis
 
 Repita los mismos pasos que se describen en la [ejemplo anterior](#analyzing).
 

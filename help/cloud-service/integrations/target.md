@@ -13,10 +13,11 @@ thumbnail: KT-12433.jpeg
 badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM sin encabezado as a Cloud Service" before-title="false"
 exl-id: be886c64-9b8e-498d-983c-75f32c34be4b
-source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
+duration: 1721
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1679'
-ht-degree: 1%
+source-wordcount: '1618'
+ht-degree: 0%
 
 ---
 
@@ -63,7 +64,7 @@ El Cloud Service de Adobe Target, configurado en una configuración según el co
 1. Iniciar sesión en __AEM Servicio de autor de__ como administrador de DAM
 1. Vaya a __Recursos > Archivos__, busque la carpeta de recursos que tenga el `/conf` aplicado a
 1. Seleccione la carpeta de recursos y seleccione __Propiedades__ desde la barra de acciones superior
-1. Seleccione la pestaña __Cloud Services__
+1. Seleccione el __Cloud Service__ pestaña
 1. Asegúrese de que la Configuración de nube está establecida en la configuración según el contexto (`/conf`) que contiene la configuración de Cloud Service de Adobe Target.
 1. Seleccionar __Adobe Target__ desde el __Configuraciones del Cloud Service__ desplegable.
 1. Seleccionar __Guardar y cerrar__ en la parte superior derecha
@@ -176,7 +177,7 @@ Un [Flujo de datos Adobe Experience Platform](https://experienceleague.adobe.com
    + Nombre: `AEM Target integration`
    + Descripción: `Datastream used by the Adobe Web SDK to serve personalized Content Fragments Offers.`
    + Esquema de evento: `Leave blank`
-1. Seleccione __Guardar__
+1. Seleccionar __Guardar__
 1. Seleccionar __Añadir servicio__
 1. Entrada __Servicio__ select __Adobe Target__
    + Habilitado: __Sí__
@@ -184,7 +185,7 @@ Un [Flujo de datos Adobe Experience Platform](https://experienceleague.adobe.com
    + ID de entorno de destino: __Dejar en blanco__
       + El entorno de destino se puede establecer en Adobe Target en __Administración > Hosts__.
    + Área de nombres de ID de terceros de destino: __Dejar en blanco__
-1. Seleccione __Guardar__
+1. Seleccionar __Guardar__
 1. En el lado derecho, copie el __ID de flujo de datos__ para su uso en [SDK web de Adobe](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html) llamada de configuración.
 
 +++

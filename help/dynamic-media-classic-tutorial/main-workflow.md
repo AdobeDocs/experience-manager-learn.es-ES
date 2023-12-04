@@ -7,10 +7,11 @@ role: User
 level: Beginner
 doc-type: Tutorial
 exl-id: 04aacd81-bbb2-4742-9306-f0eabc665a41
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 700
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '2703'
-ht-degree: 1%
+source-wordcount: '2658'
+ht-degree: 0%
 
 ---
 
@@ -57,10 +58,10 @@ Esta opción es la regla más estricta para el reemplazo. Requiere que cargue la
 - **Sobrescribir en la carpeta actual con mismo nombre de recurso base independientemente de la extensión**.
 Requiere que cargue la imagen de reemplazo en la misma carpeta que el original, aunque la extensión del nombre del archivo puede ser diferente del original. Por ejemplo, chair.tif reemplaza chair.jpg.
 
-- **Sobrescribir en cualquier carpeta con mismo nombre y ext. de recurso base**.
+- **Sobrescribir en cualquier carpeta con mismo nombre/extensión de recurso base**.
 Requiere que la imagen de reemplazo tenga la misma extensión de nombre de archivo que la imagen original (por ejemplo, chair.jpg debe reemplazar chair.jpg, no chair.tif ). Sin embargo, puede cargar la imagen de sustitución en una carpeta diferente a la original. La imagen actualizada reside en la nueva carpeta; el archivo ya no se puede encontrar en su ubicación original.
 
-- **Sobrescribir en cualquier carpeta, mismo nombre de base independientemente de la extensión**.
+- **Sobrescribir en cualquier carpeta con mismo nombre de recurso base independientemente de la extensión**.
 Esta opción es la regla de reemplazo más inclusiva. Puede cargar una imagen de reemplazo en una carpeta diferente a la original, cargar un archivo con una extensión de nombre de archivo diferente y reemplazar el archivo original. Si el archivo original está en una carpeta diferente, la imagen de reemplazo reside en la nueva carpeta a la que se cargó.
 
 Obtenga más información acerca de [Opción Sobrescribir imágenes](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#using-the-overwrite-images-option).

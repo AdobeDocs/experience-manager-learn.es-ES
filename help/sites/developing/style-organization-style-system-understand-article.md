@@ -8,10 +8,11 @@ role: Developer
 level: Intermediate, Experienced
 doc-type: Article
 exl-id: c51da742-5ce7-499a-83da-227a25fb78c9
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 447
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1536'
-ht-degree: 3%
+source-wordcount: '1522'
+ht-degree: 0%
 
 ---
 
@@ -124,7 +125,7 @@ Consiga esto, un **estilo de diseño** de **Promoción** y el **mostrar estilos*
 
 * **Estilo de diseño**
    * Nombre del estilo: **Promoción**
-   * Clase de CSS: `cmp-teaser--promo`
+   * Clase CSS: `cmp-teaser--promo`
 * **Estilo de visualización**
    * Ninguno
 * **Clases CSS efectivas**: `.cmp-teaser--promo`
@@ -135,10 +136,10 @@ Consiga esto, un **estilo de diseño** de **Promoción** y el **mostrar estilos*
 
 * **Estilo de diseño**
    * Nombre del estilo: **Promoción**
-   * Clase de CSS: `cmp-teaser--promo`
+   * Clase CSS: `cmp-teaser--promo`
 * **Estilo de visualización**
    * Nombre del estilo: **Verde**
-   * Clase de CSS: `cmp-teaser--primary-color`
+   * Clase CSS: `cmp-teaser--primary-color`
 * **Clases CSS efectivas**: `cmp-teaser--promo.cmp-teaser--primary-color`
 
 #### Promoción secundaria
@@ -147,10 +148,10 @@ Consiga esto, un **estilo de diseño** de **Promoción** y el **mostrar estilos*
 
 * **Estilo de diseño**
    * Nombre del estilo: **Promoción**
-   * Clase de CSS: `cmp-teaser--promo`
+   * Clase CSS: `cmp-teaser--promo`
 * **Estilo de visualización**
    * Nombre del estilo: **Amarillo**
-   * Clase de CSS: `cmp-teaser--secondary-color`
+   * Clase CSS: `cmp-teaser--secondary-color`
 * **Clases CSS efectivas**: `cmp-teaser--promo.cmp-teaser--secondary-color`
 
 ### Promoción Estilo alineado a la derecha {#promo-r-align}
@@ -189,7 +190,7 @@ Observe el nombre de la clase CSS, `cmp-teaser--alternate`, no tiene que coincid
    * Clases CSS: `cmp-teaser--promo cmp-teaser--alternate`
 * **Estilo de visualización**
    * Nombre del estilo: **Verde**
-   * Clase de CSS: `cmp-teaser--primary-color`
+   * Clase CSS: `cmp-teaser--primary-color`
 * **Clases CSS efectivas**: `.cmp-teaser--promo.cmp-teaser--alternate.cmp-teaser--primary-color`
 
 #### Promoción secundaria alineada a la derecha
@@ -201,7 +202,7 @@ Observe el nombre de la clase CSS, `cmp-teaser--alternate`, no tiene que coincid
    * Clases CSS: `cmp-teaser--promo cmp-teaser--alternate`
 * **Estilo de visualización**
    * Nombre del estilo: **Amarillo**
-   * Clase de CSS: `cmp-teaser--secondary-color`
+   * Clase CSS: `cmp-teaser--secondary-color`
 * **Clases CSS efectivas**: `.cmp-teaser--promo.cmp-teaser--alternate.cmp-teaser--secondary-color`
 
 ### Estilo Hero {#hero-style}
@@ -240,7 +241,7 @@ CSS para colorear el texto de **Héroe** estilo de diseño con el color principa
 
 * **Estilo de diseño**
    * Nombre del estilo: **Héroe**
-   * Clase de CSS: `cmp-teaser--hero`
+   * Clase CSS: `cmp-teaser--hero`
 * **Estilo de visualización**
    * Ninguno
 * **Clases CSS efectivas**: `.cmp-teaser--hero`
@@ -251,10 +252,10 @@ CSS para colorear el texto de **Héroe** estilo de diseño con el color principa
 
 * **Estilo de diseño**
    * Nombre del estilo: **Promoción**
-   * Clase de CSS: `cmp-teaser--hero`
+   * Clase CSS: `cmp-teaser--hero`
 * **Estilo de visualización**
    * Nombre del estilo: **Verde**
-   * Clase de CSS: `cmp-teaser--primary-color`
+   * Clase CSS: `cmp-teaser--primary-color`
 * **Clases CSS efectivas**: `cmp-teaser--hero.cmp-teaser--primary-color`
 
 #### Hero secundario
@@ -263,10 +264,10 @@ CSS para colorear el texto de **Héroe** estilo de diseño con el color principa
 
 * **Estilo de diseño**
    * Nombre del estilo: **Promoción**
-   * Clase de CSS: `cmp-teaser--hero`
+   * Clase CSS: `cmp-teaser--hero`
 * **Estilo de visualización**
    * Nombre del estilo: **Amarillo**
-   * Clase de CSS: `cmp-teaser--secondary-color`
+   * Clase CSS: `cmp-teaser--secondary-color`
 * **Clases CSS efectivas**: `cmp-teaser--hero.cmp-teaser--secondary-color`
 
 ## Recursos adicionales {#additional-resources}

@@ -9,10 +9,11 @@ badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM Sites 6.5" before-title="false"
 doc-type: Tutorial
 exl-id: b1d7ce04-0127-4539-a5e1-802d7b9427dd
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 748
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1057'
-ht-degree: 5%
+source-wordcount: '1021'
+ht-degree: 4%
 
 ---
 
@@ -26,7 +27,7 @@ ht-degree: 5%
    * Aprovisionamiento del Experience Cloud con las siguientes soluciones
       * [Adobe Experience Platform Launch](https://experiencecloud.adobe.com)
       * [Adobe Target](https://experiencecloud.adobe.com)
-      * [Adobe Developer Console](https://developer.adobe.com/console/)
+      * [Consola de Adobe Developer](https://developer.adobe.com/console/)
 
      >[!NOTE]
      >Debe tener permiso para desarrollar, aprobar, publicar, gestionar extensiones y entornos en Launch. Si no puede completar estos pasos porque ninguna de las opciones de la interfaz de usuario está disponible, póngase en contacto con su Experience Cloud de para solicitar el acceso. Para obtener más información sobre los permisos de Launch, [consulte la documentación](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).

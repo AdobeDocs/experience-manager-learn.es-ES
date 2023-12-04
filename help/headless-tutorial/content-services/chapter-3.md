@@ -1,18 +1,17 @@
 ---
 title: 'Capítulo 3: Creación de fragmentos de contenido de eventos - Servicios de contenido'
-seo-title: Getting Started with AEM Content Services - Chapter 3 - Authoring Event Content Fragments
 description: AEM El capítulo 3 del tutorial sin encabezado de la trata la creación y el diseño de fragmentos de contenido de evento a partir del modelo de fragmento de contenido creado en el capítulo 2.
-seo-description: Chapter 3 of the AEM Headless tutorial covers creating and authoring Event Content Fragments from the Content Fragment Model created in Chapter 2.
 feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 46ef11a2-81bd-4ff7-b9ef-9f8cba52c6a8
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 205
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 4%
+source-wordcount: '423'
+ht-degree: 1%
 
 ---
 

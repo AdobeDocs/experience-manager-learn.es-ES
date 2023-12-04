@@ -2,20 +2,18 @@
 title: Depuración de un trabajador de Asset compute
 description: Los trabajadores de assets computes se pueden depurar de varias formas, desde simples sentencias de registro de depuración, pasando por el código VS adjunto como depurador remoto, hasta la extracción de registros para activaciones en Adobe I/O Runtime AEM iniciadas desde el as a Cloud Service de la.
 feature: Asset Compute Microservices
-topics: renditions, development
 version: Cloud Service
-activity: develop
-audience: developer
-doc-type: tutorial
+doc-type: Tutorial
 jira: KT-6285
 thumbnail: 40383.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 4dea9cc4-2133-4ceb-8ced-e9b9874f6d89
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 287
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '618'
 ht-degree: 0%
 
 ---

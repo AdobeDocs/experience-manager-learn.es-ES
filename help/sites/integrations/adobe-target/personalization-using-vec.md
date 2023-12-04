@@ -1,8 +1,6 @@
 ---
 title: Personalización mediante el Compositor de experiencias visuales
 description: Obtenga información sobre cómo crear una actividad de Adobe Target mediante el Compositor de experiencias visuales.
-topics: integrations, authoring, personalization, activity, offers
-audience: all
 version: Cloud Service
 jira: KT-6352
 thumbnail: 6352-personalization-using-vec.jpg
@@ -14,10 +12,11 @@ badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 doc-type: Tutorial
 exl-id: becf2bed-0541-45e8-9ce2-f9fb023234e0
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 142
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 2%
+source-wordcount: '514'
+ht-degree: 1%
 
 ---
 
@@ -69,20 +68,20 @@ La página de inicio del sitio WKND muestra las actividades locales o las mejore
 
 1. Clic **Siguiente** para pasar a Segmentación y mantengamos una asignación de tráfico manual de 50-50 entre las dos experiencias.
 
-   ![Direccionamiento](assets/targeting.png)
+   ![Segmentación](assets/targeting.png)
 
 1. Para Objetivos y configuración, elija la Fuente de informes como Adobe Target y seleccione la métrica Objetivo como Conversión con una acción de vista de página.
 
-   ![Objetivos](assets/goals.png)
+   ![Metas](assets/goals.png)
 
 1. Asigne un nombre a la actividad y haga clic en Guardar.
 1. Active la actividad guardada para aplicar los cambios.
 
-   ![Objetivos](assets/activate.png)
+   ![Metas](assets/activate.png)
 
 1. Abra la página del sitio (URL de actividad del paso 3) en una nueva pestaña y podrá ver cualquiera de las experiencias (Aventura o Exploración) desde su actividad de prueba A/B.
 
-   ![Objetivos](assets/publish.png)
+   ![Metas](assets/publish.png)
 
 ## Resumen
 

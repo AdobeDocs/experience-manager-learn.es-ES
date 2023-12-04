@@ -12,10 +12,11 @@ level: Beginner
 last-substantial-update: 2023-05-10T00:00:00Z
 badgeVersions: label="AEM sin encabezado as a Cloud Service" before-title="false"
 exl-id: 7873e263-b05a-4170-87a9-59e8b7c65faa
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 235
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '687'
-ht-degree: 5%
+source-wordcount: '614'
+ht-degree: 1%
 
 ---
 
@@ -39,11 +40,11 @@ Las siguientes herramientas deben instalarse localmente:
 
 AEM La aplicación de Android funciona con las siguientes opciones de implementación de. Todas las implementaciones requieren lo siguiente [Sitio WKND 3.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) para instalar.
 
-+ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=es)
++ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
 
 La aplicación de Android está diseñada para conectarse a un __AEM Publicación de__ AEM , sin embargo, puede obtener contenido de Autor de la fuente si se proporciona autenticación en la configuración de la aplicación de Android.
 
-## Utilización
+## Cómo usar
 
 1. Clonar el `adobe/aem-guides-wknd-graphql` repositorio:
 

@@ -10,15 +10,16 @@ doc-type: Technical Video
 last-substantial-update: 2023-11-15T00:00:00Z
 jira: KT-14483
 thumbnail: 3425717.jpeg
-source-git-commit: d17544c4f8dda03e5147a1f48dbbdae005ee9438
+duration: 196
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '91'
-ht-degree: 6%
+source-wordcount: '87'
+ht-degree: 0%
 
 ---
 
 
-# Configure un entorno de desarrollo de local
+# Configuración de un entorno de desarrollo local
 
 Cómo configurar un entorno de desarrollo local para el desarrollo de Edge Delivery Services.
 

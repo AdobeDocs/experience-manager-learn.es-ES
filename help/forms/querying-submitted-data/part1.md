@@ -1,21 +1,17 @@
 ---
 title: AEM Forms con esquema y datos JSON [Parte 1]
-seo-title: AEM Forms with JSON Schema and Data[Part1]
 description: Tutorial de varias partes para guiarle por los pasos necesarios para crear un formulario adaptable con esquema JSON y consultar los datos enviados.
-seo-description: Multi-Part tutorial to walk you through the steps involved in creating Adaptive Form with JSON schema and querying the submitted data.
 feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+doc-type: Tutorial
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: c588bdca-b8a8-4de2-97e0-ba08b195699f
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+duration: 70
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '258'
 ht-degree: 0%
 
 ---
@@ -23,7 +19,7 @@ ht-degree: 0%
 # Crear formulario adaptable basado en el esquema JSON
 
 
-La capacidad de crear Forms adaptable basado en el esquema JSON se introdujo en la versión 6.3 de AEM Forms. Los detalles sobre la creación de Forms adaptable con esquema JSON se explican en detalle en esta sección [artículo](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-json-schema-form-model.html).
+La capacidad de crear Forms adaptable basado en el esquema JSON se introdujo en la versión 6.3 de AEM Forms. Los detalles sobre la creación de Forms adaptable con esquema JSON se explican en detalle en esta sección [artículo](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-json-schema-form-model.htmll?lang=es).
 
 Una vez creado un formulario adaptable basado en el esquema JSON, el siguiente paso es almacenar los datos enviados en la base de datos. Para ello, utilizaremos el nuevo tipo de datos JSON introducido por varios proveedores de bases de datos. Para el propósito de este artículo utilizaremos la base de datos MySql 8 para almacenar los datos enviados.
 

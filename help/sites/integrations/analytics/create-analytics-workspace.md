@@ -12,9 +12,10 @@ doc-type: Tutorial
 exl-id: b5722fe2-93bf-4b25-8e08-4cb8206771cb
 badgeIntegration: label="Integración" type="positive"
 last-substantial-update: 2022-06-15T00:00:00Z
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 596
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '2162'
+source-wordcount: '2072'
 ht-degree: 0%
 
 ---
@@ -119,7 +120,7 @@ A continuación, cree un [proyecto](https://experienceleague.adobe.com/docs/anal
 
 1. En la barra de herramientas de Analytics, seleccione **Workspace** y haga clic para **Crear un nuevo proyecto**.
 
-   ![Área de trabajo](assets/create-analytics-workspace/create-workspace.png)
+   ![Workspace](assets/create-analytics-workspace/create-workspace.png)
 
 1. Elija comenzar desde una **proyecto en blanco** o bien, seleccione una de las plantillas creadas previamente, ya sea mediante Adobe o mediante plantillas personalizadas creadas por su organización. Hay varias plantillas disponibles, según el análisis o el caso de uso que tenga en mente. [Más información](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) acerca de las distintas opciones de plantilla disponibles.
 
@@ -154,18 +155,18 @@ A continuación, genere una tabla para crear una representación visual de cómo
 1. Vamos a desglosar la página por tipo de plantilla. Seleccione la métrica de plantilla de página de los componentes y arrastre y suelte la métrica de plantilla de página en la dimensión Nombre de página. Ahora puede ver el nombre de página desglosado por su tipo de plantilla.
 
    * **Antes**
-     ![eVar5](assets/create-analytics-workspace/evar5.png)
+     ![EVAR 5](assets/create-analytics-workspace/evar5.png)
 
    * **Después**
      ![Métricas de eVar5](assets/create-analytics-workspace/evar5-metrics.png)
 
 1. Para comprender cómo interactúan los usuarios con los botones de CTA cuando están en las páginas del sitio WKND, se necesita un desglose adicional añadiendo la métrica ID de botón (eVar 8).
 
-   ![eVar8](assets/create-analytics-workspace/evar8.png)
+   ![EVAR 8](assets/create-analytics-workspace/evar8.png)
 
 1. A continuación, puede ver una representación visual del sitio WKND desglosada por su plantilla de página y desglosada aún más por la interacción del usuario con los botones de clic para acción del sitio WKND (CTA).
 
-   ![eVar8](assets/create-analytics-workspace/evar8-metric.png)
+   ![EVAR 8](assets/create-analytics-workspace/evar8-metric.png)
 
 1. Puede reemplazar el valor del ID del botón con un nombre más descriptivo mediante las clasificaciones de Adobe Analytics. Puede obtener más información sobre cómo crear una clasificación para una métrica específica [aquí](https://experienceleague.adobe.com/docs/analytics/components/classifications/c-classifications.html). En este caso, tenemos una métrica de clasificación `Button Section (Button ID)` configurar para `eVar8` que asigna el id del botón a un nombre descriptivo.
 

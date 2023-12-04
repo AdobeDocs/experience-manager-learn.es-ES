@@ -6,10 +6,11 @@ topic: Development
 role: Developer
 level: Beginner
 thumbnail: 30476.jpeg
-source-git-commit: 0737cd2410b48dbaa9b6dfaaa27b854d44536f15
+duration: 433
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 51%
+source-wordcount: '290'
+ht-degree: 49%
 
 ---
 
@@ -28,7 +29,7 @@ El objetivo de este tutorial en varias partes es enseñar a un desarrollador nue
 
 El tutorial está diseñado para trabajar con **AEM as a Cloud Service** y es compatible con **AEM.5+** y **AEM.4.2+**.
 
-**[Vea el tutorial aquí!](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es)**
+**[Vea el tutorial aquí.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es)**
 
 ## AEM Implementación de WKND en as a Cloud Service{#deploying-wknd-to-aem-as-a-cloud-service}
 

@@ -12,10 +12,11 @@ badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 doc-type: Tutorial
 exl-id: 92dbd185-bad4-4a4d-b979-0d8f5d47c54b
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 81
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 2%
+source-wordcount: '314'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +36,7 @@ AEM Siempre que se aprovisiona un entorno de Cloud Service de as a, se crean aut
 
 Revisión creada automáticamente **Adobe Launch** Configuración de IMS mediante los siguientes pasos.
 
-1. En AEM, abra el menú **Herramientas**
+1. AEM En la apertura de la **Herramientas** menú
 
 1. En la sección Seguridad, seleccione Configuraciones de IMS de Adobe.
 

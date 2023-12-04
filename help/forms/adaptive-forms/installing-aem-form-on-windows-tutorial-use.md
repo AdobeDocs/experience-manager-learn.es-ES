@@ -9,10 +9,11 @@ role: Admin
 level: Beginner
 exl-id: 80288765-0b51-44a9-95d3-3bdb2da38615
 last-substantial-update: 2020-06-09T00:00:00Z
-source-git-commit: 757c8ad251d058bbe48cc3cd354fec533ec4e968
+duration: 158
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 7%
+source-wordcount: '545'
+ht-degree: 1%
 
 ---
 
@@ -34,7 +35,6 @@ ht-degree: 7%
 >* Microsoft Visual C++ 2010 redistribuible
 >* Microsoft Visual C++ 2012 redistribuible
 >* Microsoft Visual C++ 2013 redistribuible (a partir de 6.5)
-
 
 Aunque recomendamos seguir las [documentación oficial](https://helpx.adobe.com/es/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html) para instalar AEM Forms. Se pueden seguir los siguientes pasos para instalar y configurar AEM Forms en el entorno de Windows:
 
@@ -81,9 +81,9 @@ Aunque recomendamos seguir las [documentación oficial](https://helpx.adobe.com/
 ## paquete sun.util.calendar en la lista de permitidos
 
 1. Abra la consola web de Felix en su [ventana del explorador](http://localhost:4502/system/console/configMgr)
-1. Busque y abra Deserialización de la configuración de Firewall: `com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
+1. Busque y abra Configuración del firewall de deserialización: `com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
 1. Añadir `sun.util.calendar` como nueva entrada en `com.adobe.cq.deserfw.impl.DeserializationFirewallImpl.firewall.deserialization.whitelist.name`
 1. Guarde los cambios.
 
 Felicitaciones!!! Ya ha instalado y configurado AEM Forms en su sistema.
-Según sus necesidades, puede configurar lo siguiente  [Extensiones de Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) o [ PDFG](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html) en el servidor
+Según sus necesidades, puede configurar lo siguiente  [Extensiones de Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) o [PDFG](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html) en el servidor

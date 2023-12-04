@@ -2,20 +2,18 @@
 title: AEM Depuración del SDK de mediante la consola web de OSGi
 description: AEM AEM AEM El inicio rápido local del SDK de la tiene una consola web OSGi que proporciona una variedad de información e introspecciones en el tiempo de ejecución de la aplicación local, que son útiles para comprender cómo la aplicación es reconocida por las funciones y dentro de las funciones de la aplicación.
 feature: Developer Tools
-topics: development
 version: Cloud Service
-doc-type: tutorial
-activity: develop
-audience: developer
+doc-type: Tutorial
 kt: 5265, 5366, 5267
 topic: Development
 role: Developer
 level: Beginner, Intermediate
 exl-id: 0929bc1a-376c-4e16-a540-a276fd5af164
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+duration: 516
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 2%
+source-wordcount: '369'
+ht-degree: 1%
 
 ---
 

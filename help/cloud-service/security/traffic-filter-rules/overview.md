@@ -11,10 +11,11 @@ last-substantial-update: 2023-10-26T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
 exl-id: e6d67204-2f76-441c-a178-a34798fe266d
-source-git-commit: ceb498f751ffc50d0022a16b63f9f52594bc507e
+duration: 186
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 3%
+source-wordcount: '270'
+ht-degree: 7%
 
 ---
 
@@ -38,7 +39,7 @@ Puede obtener más información sobre las reglas de filtro de tráfico en [este 
 >
 > Una subcategoría de reglas de filtro de tráfico denominada &quot;reglas WAF&quot; requiere una licencia de protección WAF-DDoS o de seguridad mejorada.
 
-Le invitamos a enviar sus comentarios o hacer preguntas sobre las reglas de filtro de tráfico por correo electrónico **aemcs-waf-adopter@adobe.com**.
+Le invitamos a hacernos llegar sus comentarios o preguntas sobre las reglas de filtro de tráfico enviando un correo electrónico a **aemcs-waf-adopter@adobe.com**.
 
 ## Siguiente paso
 

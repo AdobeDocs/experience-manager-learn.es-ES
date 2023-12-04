@@ -10,10 +10,11 @@ exl-id: 0be61f04-c3ed-4ecb-bab7-73fd308c14e0
 badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 last-substantial-update: 2020-03-20T00:00:00Z
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+duration: 49
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 15%
+source-wordcount: '171'
+ht-degree: 12%
 
 ---
 
@@ -32,7 +33,7 @@ La integración entre AEM Forms y Acrobat Sign permite lo siguiente:
 Para integrar Acrobat Sign con AEM Forms, es necesario lo siguiente:
 
 * Un servidor AEM Forms habilitado para SSL
-* Una cuenta activa de desarrollador de Acrobat Sign.
+* Una cuenta de desarrollador de Acrobat Sign activa.
 * Una aplicación API de Acrobat Sign
 * Las credenciales (ID de cliente y Secreto de cliente) de la aplicación API de Acrobat Sign.
 

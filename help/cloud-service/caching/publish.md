@@ -11,10 +11,11 @@ last-substantial-update: 2023-08-28T00:00:00Z
 jira: KT-13858
 thumbnail: KT-13858.jpeg
 exl-id: 1a1accbe-7706-4f9b-bf63-755090d03c4c
-source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
+duration: 333
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1320'
-ht-degree: 2%
+source-wordcount: '1134'
+ht-degree: 1%
 
 ---
 
@@ -74,7 +75,7 @@ AEM Si una respuesta HTTP cumple los requisitos para el almacenamiento en caché
 | [Recursos (imágenes, vídeos, documentos, etc.)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#images) | 10 minutos |
 | [Consultas persistentes (JSON)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?publish-instances) | 2 horas |
 | [Bibliotecas de cliente (JS/CSS)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#client-side-libraries) | 30 días |
-| [Otro](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#other-content) | No almacenado en caché |
+| [Otros](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#other-content) | No almacenado en caché |
 
 ### Personalizar las reglas de caché
 
@@ -134,7 +135,7 @@ AEM Si una respuesta HTTP cumple los requisitos para el almacenamiento en caché
 | [Recursos (imágenes, vídeos, documentos, etc.)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#images) | Nunca |
 | [Consultas persistentes (JSON)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?publish-instances) | 1 minuto |
 | [Bibliotecas de cliente (JS/CSS)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#client-side-libraries) | 30 días |
-| [Otro](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#other-content) | Hasta la invalidación |
+| [Otros](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#other-content) | Hasta la invalidación |
 
 ### Personalizar las reglas de caché
 

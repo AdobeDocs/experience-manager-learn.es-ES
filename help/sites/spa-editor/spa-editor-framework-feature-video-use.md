@@ -10,10 +10,11 @@ jira: KT-1047
 thumbnail: 22229.jpg
 doc-type: Feature Video
 exl-id: 645b6986-830f-4409-b46c-ddf15c33e84c
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 492
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '242'
-ht-degree: 6%
+source-wordcount: '237'
+ht-degree: 1%
 
 ---
 
@@ -39,4 +40,4 @@ Descargue e instale el [SPA Paquete de WKND](https://github.com/adobe/aem-guides
 
 SPA Para ver un tutorial detallado sobre el desarrollo con el Editor de la, consulte:
 
-* [Introducción al Editor de SPA de AEM y React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
+* [AEM SPA Introducción al Editor de y React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)

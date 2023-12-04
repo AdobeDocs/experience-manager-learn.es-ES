@@ -9,10 +9,11 @@ level: Beginner
 last-substantial-update: 2022-06-15T00:00:00Z
 doc-type: Feature Video
 exl-id: 42f13a19-52bf-413d-a141-63f1f0910dce
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 2561
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1764'
-ht-degree: 2%
+source-wordcount: '1703'
+ht-degree: 0%
 
 ---
 
@@ -111,7 +112,7 @@ Las organizaciones pueden personalizar la dirección URL de su portal si tienen 
 Tenga en cuenta que solo se puede personalizar el prefijo de la dirección URL de Brand Portal y no la dirección URL completa.
 Por ejemplo, una organización con un dominio existente `wknd.brand-portal.adobe.com` puede obtener `wkndinc.brand-portal.adobe.com` creado a petición.
 
-AEM Sin embargo, la instancia de autor de puede ser [configurado](https://helpx.adobe.com/es/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html) solo con la URL del id de inquilino y no con la URL del alias de inquilino (alternativa).
+AEM Sin embargo, la instancia de autor de puede ser [configurado](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html) solo con la URL del id de inquilino y no con la URL del alias de inquilino (alternativa).
 
 **Caso de uso** : las organizaciones pueden satisfacer sus necesidades de promoción de la marca personalizando la dirección URL del portal, en lugar de atenerse a la dirección URL proporcionada por el Adobe.
 
@@ -158,7 +159,7 @@ Se agregan seis nuevas configuraciones para que los administradores habiliten o 
 
 ### Adobe I/O aloja la interfaz de usuario para configurar las integraciones de autenticación
 
-Brand Portal utiliza el Adobe I/O [https://legacy-oauth.cloud.adobe.io/](https://legacy-oauth.cloud.adobe.io/) para crear la aplicación JWT, que permite configurar integraciones de autenticación para permitir la integración de AEM Assets con Brand Portal. Anteriormente, la interfaz de usuario para configurar integraciones de OAuth estaba alojada en `https://marketing.adobe.com/developer/`. Para obtener más información sobre la integración de AEM Assets con Brand Portal para publicar recursos y colecciones en Brand Portal, consulte [Configuración de la integración de AEM Assets con Brand Portal](https://helpx.adobe.com/es/experience-manager/6-4/assets/using/brand-portal-configuring-integration.html).
+Brand Portal utiliza el Adobe I/O [https://legacy-oauth.cloud.adobe.io/](https://legacy-oauth.cloud.adobe.io/) para crear la aplicación JWT, que permite configurar integraciones de autenticación para permitir la integración de AEM Assets con Brand Portal. Anteriormente, la interfaz de usuario para configurar integraciones de OAuth estaba alojada en `https://marketing.adobe.com/developer/`. Para obtener más información sobre la integración de AEM Assets con Brand Portal para publicar recursos y colecciones en Brand Portal, consulte [Configuración de la integración de AEM Assets con Brand Portal](https://helpx.adobe.com/experience-manager/6-4/assets/using/brand-portal-configuring-integration.html).
 
 ## Funciones y mejoras de Brand Portal de febrero de 2018{#brand-portal-features-and-enhancements-632}
 
@@ -205,7 +206,7 @@ Las nuevas funciones mejoraron la funcionalidad orientada a alinear Brand Portal
 ## Recursos adicionales{#additional-resources}
 
 * [Novedades de en Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=es#introduction)
-* [AEM Agentes de replicación de autor de](https://helpx.adobe.com/es/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html)
+* [AEM Agentes de replicación de autor de](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html)
 * [Guía de descarga acelerada](https://helpx.adobe.com/experience-manager/brand-portal/using/accelerated-download.html#main-pars_header)
 * [Documentos de Adobe de AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal.html)
 * [Documentos de Adobe de AEM Assets Dynamic Media](https://experienceleague.adobe.com/docs/)

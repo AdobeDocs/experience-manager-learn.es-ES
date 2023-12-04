@@ -8,10 +8,11 @@ role: Developer
 level: Experienced
 exl-id: fbe6d341-7941-46f5-bcd8-58b99396d351
 last-substantial-update: 2021-06-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 167
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '685'
-ht-degree: 2%
+source-wordcount: '656'
+ht-degree: 0%
 
 ---
 
@@ -50,7 +51,7 @@ Para implementar los recursos en el sistema local:
 * Dirija el explorador a [Forms y documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Haga clic en Crear | Carga de archivo
 * Cargar archivo TimeOffRequestForm.zip
-   **Este formulario se creó con AEM Forms 6.4. Asegúrese de que está en AEM Forms 6.4 o superior**
+  **Este formulario se creó con AEM Forms 6.4. Asegúrese de que está en AEM Forms 6.4 o superior**
 * Abra el [formulario](http://localhost:4502/content/dam/formsanddocuments/timeoffrequest/jcr:content?wcmmode=disabled)
 * Complete las Fechas de inicio y finalización y envíe el formulario.
 * Ir a [&quot;Bandeja de entrada&quot;](http://localhost:4502/aem/inbox)
@@ -60,7 +61,7 @@ Para implementar los recursos en el sistema local:
 
 >[!NOTE]
 >
->Dado que estamos rellenando previamente el formulario adaptable mediante un perfil de usuario, asegúrese de que el administrador [información de perfil de usuario ](http://localhost:4502/security/users.html). Como mínimo, asegúrese de haber establecido los valores de los campos Nombre, Apellidos y Correo electrónico.
+>Dado que estamos rellenando previamente el formulario adaptable mediante un perfil de usuario, asegúrese de que el administrador [información de perfil de usuario](http://localhost:4502/security/users.html). Como mínimo, asegúrese de haber establecido los valores de los campos Nombre, Apellidos y Correo electrónico.
 >Puede habilitar el registro de depuración habilitando el registrador para com.aemforms.setvalue.core.SetValueInJson [desde aquí](http://localhost:4502/system/console/slinglog)
 
 >[!NOTE]

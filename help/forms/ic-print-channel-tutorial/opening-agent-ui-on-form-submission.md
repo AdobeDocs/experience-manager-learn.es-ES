@@ -1,14 +1,8 @@
 ---
 title: Abrir La Interfaz De Usuario Del Agente Al Enviar El POST
-seo-title: Opening Agent UI On POST Submission
 description: Esta es la parte 11 del tutorial de varios pasos para crear el primer documento de comunicaciones interactivas para el canal Imprimir. En esta parte, iniciaremos la interfaz de la interfaz de usuario del agente para crear correspondencia ad-hoc sobre el envío de formularios.
-seo-description: This is part 11 of multistep tutorial for creating your first interactive communications document for the print channel. In this part, we will launch the agent ui interface for creating ad-hoc correspondence on form submission.
-uuid: 96f34986-a5c3-400b-b51b-775da5d2cbd7
 feature: Interactive Communication
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+doc-type: Tutorial
 version: 6.4,6.5
 jira: KT-6168
 thumbnail: 40122.jpg
@@ -16,10 +10,11 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: 509b4d0d-9f3c-46cb-8ef7-07e831775086
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 199
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 1%
+source-wordcount: '322'
+ht-degree: 0%
 
 ---
 

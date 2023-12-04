@@ -11,10 +11,11 @@ thumbnail: KT-7496.jpg
 doc-type: Tutorial
 exl-id: 6d0fdc4d-d85f-4966-8f7d-d53506a7dd08
 recommendations: noDisplay, noCatalog
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 265
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1013'
-ht-degree: 2%
+source-wordcount: '959'
+ht-degree: 0%
 
 ---
 
@@ -82,7 +83,7 @@ La mayoría del tutorial se realizará utilizando el **Servicio de creación**.
 Una plantilla de sitio proporciona un punto de partida para un nuevo sitio. Una plantilla de sitio incluye algunas temáticas básicas, plantillas de página, configuraciones y contenido de muestra. Exactamente lo que se incluye en la plantilla del sitio depende del desarrollador. El Adobe proporciona un **Plantilla básica del sitio** para acelerar las nuevas implementaciones.
 
 1. Abra una nueva pestaña del explorador y vaya al proyecto Plantilla de sitio básica en GitHub: [https://github.com/adobe/aem-site-template-standard](https://github.com/adobe/aem-site-template-standard). El proyecto es de código abierto y tiene licencia para ser utilizado por cualquier persona.
-1. Clic **Versiones** y vaya al [última versión](https://github.com/adobe/aem-site-template-standard/releases/última versión).
+1. Clic **Versiones** y vaya al [última versión](https://github.com/adobe/aem-site-template-standard/releases/latest).
 1. Expanda el **Assets** y descargue el archivo zip de la plantilla:
 
    ![Código postal de plantilla básica del sitio](assets/create-site/template-basic-zip-file.png)

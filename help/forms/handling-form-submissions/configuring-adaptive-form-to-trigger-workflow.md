@@ -2,10 +2,7 @@
 title: Información general sobre la configuración del formulario adaptable a déclencheur AEM flujo de trabajo
 description: AEM Configurar las opciones de carga útil al activar el flujo de trabajo de la al enviar el formulario
 feature: Workflow
-topics: integrations
-audience: developer
 doc-type: article
-activity: setup
 version: 6.4,6.5
 jira: KT-5407
 thumbnail: 40258.jpg
@@ -14,10 +11,11 @@ role: Developer
 level: Beginner
 exl-id: 9f1dbd02-774a-4b84-90fa-02d4e468cbac
 last-substantial-update: 2020-07-07T00:00:00Z
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 591
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 7%
+source-wordcount: '148'
+ht-degree: 2%
 
 ---
 

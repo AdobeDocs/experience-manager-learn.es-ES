@@ -7,10 +7,11 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: daae6145-5267-4958-9abe-f6b7f469f803
-source-git-commit: 4c0770eafbbbb90bfc00ab49be02e84c41d63057
+duration: 508
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1076'
-ht-degree: 1%
+source-wordcount: '1052'
+ht-degree: 0%
 
 ---
 
@@ -106,9 +107,9 @@ Para asignar la carpeta raíz de idioma a la configuración, seleccione la carpe
 
 ![Seleccionar propiedades](assets/overview/properties.png)
 
-A continuación, vaya a **Cloud Services** y seleccione el icono de carpeta en la pestaña **Configuración de nube** field.
+A continuación, vaya a **Cloud Service** y seleccione el icono de carpeta en la pestaña **Configuración de nube** field.
 
-![Configuración de nube](assets/overview/cloud-conf.png)
+![Configuración de la nube](assets/overview/cloud-conf.png)
 
 En el modal que aparece, seleccione la configuración creada anteriormente para asignarle la carpeta raíz del idioma.
 
@@ -129,7 +130,7 @@ AEM Dos **paquetes** están disponibles y se pueden instalar mediante [Administr
 
 El [React App - Tutorial avanzado - WKND Adventures](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/advanced-tutorial/README.md) El proyecto está disponible para revisar y explorar la aplicación de ejemplo. AEM Esta aplicación de ejemplo recupera el contenido de la aplicación invocando las consultas de GraphQL persistentes y lo procesa en una experiencia inmersiva.
 
-## Primeros pasos
+## Introducción
 
 Para empezar con este tutorial avanzado, siga estos pasos:
 

@@ -10,10 +10,11 @@ topic: Development
 role: User
 level: Beginner
 exl-id: 097216b7-b345-4fcb-bab3-e660d74252a6
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 671
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '143'
-ht-degree: 46%
+source-wordcount: '132'
+ht-degree: 42%
 
 ---
 
@@ -23,7 +24,7 @@ ht-degree: 46%
 >id="intro_core_components"
 >title="Introducción a los componentes principales en AEM as a Cloud Service"
 >abstract="En esta pestaña, puede ver el contenido que le ayudará a crear sitios modernos compatibles con AEM as a Cloud Service. La clave para ello es utilizar los componentes principales."
->additional-url="https://video.tv.adobe.com/v/18926/?captions=spa" text="Información general sobre los componentes principales"
+>additional-url="https://video.tv.adobe.com/v/18926" text="Información general sobre los componentes principales"
 
 AEM Los componentes principales son un conjunto de componentes estándar que se utilizan con Adobe Experience Manager. Compilados con las prácticas recomendadas y los estándares de Adobe, los componentes principales proporcionan un conjunto de funciones de línea de base para cualquier implementación de Sites.
 

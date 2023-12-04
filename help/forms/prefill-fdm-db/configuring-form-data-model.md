@@ -9,10 +9,11 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 5fa4638f-9faa-40e0-a20d-fdde3dbb528a
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 146
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 1%
+source-wordcount: '491'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +38,7 @@ El primer paso para crear un modelo de datos de formulario respaldado por RDBMS 
 * Dirija el explorador a [Integraciones de datos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm)
 * Clic _Crear_->_Modelo de datos de formulario_
 * Proporcione un nombre y un título significativos al modelo de datos de formulario, como **Empleado**
-* Haga clic en _Siguiente_
+* Clic _Siguiente_
 * Seleccionar la fuente de datos creada en la sección (foros) anterior
 * Clic _Crear_->Editar para abrir el modelo de datos de formulario recién creado en el modo Edición
 * Expanda el _foros_ para ver el esquema del empleado. Expanda el nodo de empleados para ver las 2 tablas

@@ -8,10 +8,11 @@ role: Developer
 level: Experienced
 exl-id: ab0f5282-383b-4be6-9c57-cded6ab37528
 last-substantial-update: 2020-01-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 123
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 2%
+source-wordcount: '449'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +25,7 @@ Existen dos formas de combinar los datos con la plantilla xdp cuando se represen
 
 **dataRef**: Puede utilizar el parámetro dataRef en la dirección URL. Este parámetro especifica la ruta absoluta del archivo de datos que se combina con la plantilla. Este parámetro puede ser una URL a un servicio REST que devuelva los datos en formato XML.
 
-**datos**: Este parámetro especifica los bytes de datos codificados UTF-8 que se combinan con la plantilla. Si se especifica este parámetro, el formulario HTML5 ignorará el parámetro dataRef. Como práctica recomendada, recomendamos utilizar el enfoque de datos.
+**datos**: Este parámetro especifica los bytes de datos codificados UTF-8 que se combinan con la plantilla. Si se especifica este parámetro, el formulario HTML 5 ignorará el parámetro dataRef. Como práctica recomendada, recomendamos utilizar el enfoque de datos.
 
 El método recomendado es establecer el atributo de datos en la solicitud con los datos con los que desea rellenar previamente el formulario.
 

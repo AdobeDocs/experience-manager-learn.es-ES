@@ -1,24 +1,19 @@
 ---
 title: Crear comunicaciones interactivas para el canal web
-seo-title: Create Interactive Communication for Web Channel
 description: Esta es la parte 6 de un tutorial de varios pasos para crear su primer documento de comunicaciones interactivas. En esta parte, crearemos la comunicación interactiva para el canal Web.
-seo-description: This is part 6 of a multi-step tutorial for creating your first interactive communications document. In this part, we will create Interactive Communication for Web Channel.
-uuid: a1b29c5b-a323-4bda-aa99-5fb98614b690
 discoiquuid: b44ff855-9ead-471e-8f0f-b562b88a5337
 feature: Interactive Communication
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+doc-type: Tutorial
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: a0a0c8dc-5302-446c-9fec-e23fe1320e34
-source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
+duration: 53
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '177'
-ht-degree: 22%
+source-wordcount: '179'
+ht-degree: 3%
 
 ---
 
@@ -26,10 +21,10 @@ ht-degree: 22%
 
 En esta parte, crearemos la comunicación interactiva para el canal Web.
 
-1. Inicie sesión en la instancia de autor de AEM y navegue hasta Adobe Experience Manager > Formularios > Formularios y documentos.
+1. AEM Inicie sesión en la instancia de autor de la y navegue hasta Adobe Experience Manager > Forms > Forms y documentos.
 1. Abra la carpeta 401KStatment.
 1. Pulse Crear y seleccione Comunicación interactiva. Aparecerá la página Crear comunicación interactiva.
-1. Especifique la siguiente información
+1. Introduzca la siguiente información
 
    1. Título:401KStatement
    1. Descripción: 401KStatement para participantes individuales

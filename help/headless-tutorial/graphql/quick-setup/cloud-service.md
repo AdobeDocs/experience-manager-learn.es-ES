@@ -9,10 +9,11 @@ level: Beginner
 jira: KT-9442
 thumbnail: 339073.jpg
 exl-id: 62e807b7-b1a4-4344-9b1e-2c626b869e10
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 868
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1081'
-ht-degree: 2%
+source-wordcount: '1078'
+ht-degree: 0%
 
 ---
 
@@ -100,12 +101,12 @@ _Screencast de pasos_
       1. Seleccionar __Déclencheur de implementación > Cambios en Git__
       1. Seleccionar __Comportamiento de los errores de las métricas importantes > Continuar inmediatamente__
       1. Seleccionar __Continuar__
-   1. En la pestaña __Código fuente__
+   1. En el __Código fuente__ pestaña
       1. Seleccionar __Código de pila completa__ opción
       1. Seleccione el __AEM entorno de desarrollo as a Cloud Service__ desde el __Entornos de implementación aptos__ cuadro de selección
       1. Seleccionar `aem-headless-quick-setup-wknd` en el __Repositorio__ cuadro de selección
       1. Seleccionar `main` desde el __Rama Git__ cuadro de selección
-      1. Seleccione __Guardar__
+      1. Seleccionar __Guardar__
 1. Ejecute el __Canalización de implementación de desarrolladores__
    1. Seleccionar __Información general__ en la barra de navegación superior
    1. Busque el recién creado __Canalización de implementación de desarrollo__ en el __Canalizaciones__ sección

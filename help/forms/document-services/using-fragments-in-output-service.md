@@ -8,10 +8,11 @@ role: Developer
 level: Intermediate
 last-substantial-update: 2022-07-09T00:00:00Z
 exl-id: d7887e2e-c2d4-4f0c-b117-ba7c41ea539a
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+duration: 147
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 2%
+source-wordcount: '432'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +22,7 @@ ht-degree: 2%
 En este artículo utilizaremos el servicio de salida para generar archivos pdf utilizando fragmentos xdp. El xdp principal y los fragmentos residen en el repositorio crx. AEM Es importante imitar la estructura de carpetas del sistema de archivos en la carpeta de archivos de la carpeta de la carpeta de la carpeta de la carpeta de la carpeta de la carpeta de archivos de la. Por ejemplo, si está utilizando un fragmento en la carpeta de fragmentos de su xdp, debe crear una carpeta llamada **fragmentos** AEM en la carpeta base en la que se encuentra el. La carpeta base contendrá la plantilla xdp base. Por ejemplo, si tiene la siguiente estructura en el sistema de archivos
 * c:\xdptemplates: contendrá la plantilla xdp base
 * c:\xdptemplates\fragments: esta carpeta contendrá fragmentos y la plantilla principal hará referencia al fragmento como se muestra a continuación
-   ![fragment-xdp](assets/survey-fragment.png).
+  ![fragment-xdp](assets/survey-fragment.png).
 * La carpeta xdpdocuments contendrá la plantilla base y los fragmentos de **fragmentos** carpeta
 
 Puede crear la estructura necesaria utilizando el [iu de formularios y documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)

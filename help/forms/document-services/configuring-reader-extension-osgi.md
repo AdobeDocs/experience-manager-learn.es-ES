@@ -2,7 +2,6 @@
 title: Configuración de extensiones de Reader en AEM Forms OSGi
 description: Agregue la credencial Extensiones de Reader al almacén de confianza en AEM Forms OSGi
 feature: Reader Extensions
-audience: developer
 type: Tutorial
 version: 6.4,6.5
 topic: Administration
@@ -10,7 +9,8 @@ role: Admin
 level: Beginner
 exl-id: 1f16acfd-e8fd-4b0d-85c4-ed860def6d02
 last-substantial-update: 2020-08-01T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+duration: 328
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 9%
@@ -25,7 +25,7 @@ El servicio DocAssurance puede aplicar derechos de uso a los documentos PDF. Par
 
 La credencial de Extensiones de Reader está asociada al usuario de fd-service. Para agregar la credencial al usuario de fd-service, siga los siguientes pasos. Si ya ha creado el repositorio de claves para el usuario de fd-service, omita esta sección
 
-* Inicie sesión en la instancia de autor de AEM como administrador
+* AEM Inicie sesión en la instancia de autor de la como administrador
 * Vaya a Herramientas-Seguridad-Usuarios
 * Desplácese hacia abajo por la lista de usuarios hasta que encuentre la cuenta de usuario de fd-service
 * Haga clic en el usuario de fd-service

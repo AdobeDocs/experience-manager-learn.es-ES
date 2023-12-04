@@ -1,5 +1,5 @@
 ---
-title: "Capítulo 1: Conceptos, patrones y antipatrones de Dispatcher"
+title: 'Capítulo 1: Conceptos, patrones y antipatrones de Dispatcher'
 description: AEM En este capítulo se proporciona una breve introducción sobre la historia y la mecánica de Dispatcher y se analiza cómo influye esto en la forma en que un desarrollador de la aplicación diseña sus componentes.
 feature: Dispatcher
 topic: Architecture
@@ -7,9 +7,10 @@ role: Architect
 level: Beginner
 doc-type: Tutorial
 exl-id: 3bdb6e36-4174-44b5-ba05-efbc870c3520
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 4820
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '17460'
+source-wordcount: '17384'
 ht-degree: 0%
 
 ---
@@ -50,7 +51,7 @@ Sin embargo, el consejo de &quot;primero que funcione, luego que sea rápido&quo
 
 3. Patrones de software que se utilizan y reutilizan una y otra vez, en todas las piezas y partes del sistema. Si el patrón de software resulta ser subóptimo, es necesario volver a codificar todos los artefactos que utilizan el patrón.
 
-Recordar? AEM En la parte superior de esta página dijimos, que Dispatcher es una parte esencial de una aplicación de. El acceso a una aplicación web es muy aleatorio: los usuarios van y vienen en momentos impredecibles. Al final, todo el contenido se almacenará (o deberá almacenarse) en la caché de Dispatcher. Por lo tanto, si ha prestado mucha atención, es posible que se haya dado cuenta de que el almacenamiento en caché podría verse como un artefacto &quot;arquitectónico&quot; y, por lo tanto, debería ser entendido por todos los miembros del equipo, desarrolladores y administradores por igual.
+¿Recuerdas? AEM En la parte superior de esta página dijimos, que Dispatcher es una parte esencial de una aplicación de. El acceso a una aplicación web es muy aleatorio: los usuarios van y vienen en momentos impredecibles. Al final, todo el contenido se almacenará (o deberá almacenarse) en la caché de Dispatcher. Por lo tanto, si ha prestado mucha atención, es posible que se haya dado cuenta de que el almacenamiento en caché podría verse como un artefacto &quot;arquitectónico&quot; y, por lo tanto, debería ser entendido por todos los miembros del equipo, desarrolladores y administradores por igual.
 
 No decimos que un desarrollador deba configurar realmente Dispatcher. Necesitan conocer los conceptos, especialmente los límites, para asegurarse de que Dispatcher también pueda aprovechar su código.
 
@@ -268,7 +269,7 @@ Revisemos un resumen rápido del último capítulo más algunas excepciones más
 
 El último capítulo enumeraba un gran número de excepciones, cuando Dispatcher no puede almacenar en caché una solicitud. Pero hay más cosas que considerar: solo porque Dispatcher _lata_ almacenar en caché una solicitud, no significa necesariamente que _debería_.
 
-El punto es que el almacenamiento en caché suele ser fácil. Dispatcher solo necesita almacenar el resultado de una respuesta y devolverlo la próxima vez que la misma solicitud sea entrante. Right? ¡Equivocado!
+El punto es que el almacenamiento en caché suele ser fácil. Dispatcher solo necesita almacenar el resultado de una respuesta y devolverlo la próxima vez que la misma solicitud sea entrante. ¿Cierto? ¡Equivocado!
 
 La parte difícil es la _invalidación_ o _rubefacción_ de la caché. Dispatcher debe averiguar cuándo ha cambiado un recurso y cuándo debe volver a procesarse.
 
@@ -707,7 +708,7 @@ Invalidate-path /content/mysite/dummy
 
 #### La necesidad de limpiar
 
-¡Uf! Terminados. ¡Hurra!
+¡Uf! Terminado. ¡Hurra!
 
 Bueno... aún no.
 
@@ -715,7 +716,7 @@ La ruta,
 
 `/content/mysite/home/jcr:content/par/respi.img.fp-2018-31-12-23-59.jpg`
 
-no está relacionado con ninguno de los recursos invalidados. Recordar? Solo invalidamos un recurso &quot;ficticio&quot; y nos basamos en la invalidación automática para considerar que &quot;home&quot; no era válido. Puede que la imagen en sí nunca lo sea _físicamente_ eliminado. Por lo tanto, la caché crecerá y crecerá y crecerá. Cuando las imágenes se cambian y activan, obtienen nuevos nombres de archivo en el sistema de archivos de Dispatcher.
+no está relacionado con ninguno de los recursos invalidados. ¿Recuerdas? Solo invalidamos un recurso &quot;ficticio&quot; y nos basamos en la invalidación automática para considerar que &quot;home&quot; no era válido. Puede que la imagen en sí nunca lo sea _físicamente_ eliminado. Por lo tanto, la caché crecerá y crecerá y crecerá. Cuando las imágenes se cambian y activan, obtienen nuevos nombres de archivo en el sistema de archivos de Dispatcher.
 
 Hay tres problemas con no eliminar físicamente los archivos en caché y mantenerlos indefinidamente:
 
@@ -877,7 +878,7 @@ Lo único que falta es el valor de la calidad. El componente sabe qué propiedad
   …
 ```
 
-Esta es una mala idea. Recordar? Las solicitudes con parámetros de consulta no se pueden almacenar en caché.
+Esta es una mala idea. ¿Recuerdas? Las solicitudes con parámetros de consulta no se pueden almacenar en caché.
 
 #### Enfoque 2 no utilizado: pasar información adicional como selector
 

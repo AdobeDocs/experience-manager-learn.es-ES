@@ -8,10 +8,11 @@ role: User
 level: Beginner
 exl-id: 8fbea634-7949-417f-a4d6-9e551fff63f3
 last-substantial-update: 2021-09-10T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 374
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 3%
+source-wordcount: '456'
+ht-degree: 0%
 
 ---
 
@@ -99,4 +100,4 @@ Para probar esto en el sistema:
 * La tabla de amortización debe rellenarse. La programación de amortización se obtiene mediante una llamada de REST.
 
 >[!NOTE]
-> AEM Se da por hecho que tomcat se está ejecutando en el puerto 8080 y en el puerto 4502, en el que se está ejecutando en el puerto 4080 y en el puerto 4502, en el que se está ejecutando en el puerto 4080100010000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+> AEM Se da por hecho que tomcat se está ejecutando en el puerto 8080 y en el puerto 4502, en el que se está ejecutando en el puerto 4080 y en el puerto 4502, en el que se está ejecutando en el puerto 40801000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000

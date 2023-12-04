@@ -1,18 +1,17 @@
 ---
 title: 'Capítulo 2: Definición de modelos de fragmentos de contenido de eventos - Servicios de contenido'
-seo-title: Getting Started with AEM Content Services - Chapter 2 - Defining Event Content Fragment Models
 description: AEM El capítulo 2 del tutorial sin encabezado de la aplicación cubre la activación y definición de modelos de fragmentos de contenido utilizados para definir una estructura de datos normalizada y una interfaz de creación para la creación de eventos.
-seo-description: Chapter 2 of the AEM Headless tutorial covers enabling and defining Content Fragment Models used to define a normalized data structure and authoring interface for creating Events.
 feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 8b05fc02-c0c5-48ad-a53e-d73b805ee91f
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 472
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 10%
+source-wordcount: '940'
+ht-degree: 1%
 
 ---
 
@@ -41,7 +40,7 @@ Si los modelos de fragmento de contenido son **no** habilitada para una configur
 >
 >Si la variable `global` se utiliza, la configuración se aplica a todo el contenido y `cq:conf` no es necesario configurar.
 >
->Consulte la documentación del [[!UICONTROL Explorador de configuración] para obtener más información.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html?lang=es)
+>Consulte la [[!UICONTROL Explorador de configuración] documentación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html?lang=es) para obtener más información.
 
 1. AEM Inicie sesión en el autor de la como un usuario con los permisos adecuados para modificar la configuración pertinente.
    * Para este tutorial, la variable **administrador** se puede utilizar el usuario.
@@ -56,7 +55,7 @@ Si los modelos de fragmento de contenido son **no** habilitada para una configur
    >Este cambio de configuración no se puede deshacer desde el [!UICONTROL AEM Configuración de] IU web. Para deshacer esta configuración:
    >    
    >    1. Abrir [CRXDE Lite](http://localhost:4502/crx/de)
-   >    1. Navegue hasta `/conf/wknd-mobile/settings/dam/cfm`
+   >    1. Vaya a `/conf/wknd-mobile/settings/dam/cfm`
    >    1. Elimine el `models` nodo
    >    
    >Cualquier modelo de fragmento de contenido existente creado con esta configuración se eliminará, así como sus definiciones se almacenarán en `/conf/wknd-mobile/settings/dam/cfm/models`.
@@ -104,7 +103,7 @@ Armados con la asignación, podemos definir los fragmentos de contenido que se u
 
    * [!UICONTROL Procesar como] : `textfield`
    * [!UICONTROL Etiqueta de campo] : `Event Title`
-   * [!UICONTROL Nombre de la propiedad] : `eventTitle`
+   * [!UICONTROL Nombre de propiedad] : `eventTitle`
    * [!UICONTROL Longitud máxima] : 25
    * [!UICONTROL Requerido] : `Yes`
 
@@ -118,21 +117,21 @@ Repita estos pasos utilizando las definiciones de entrada definidas a continuaci
 
 * [!UICONTROL Tipo de datos] : `Multi-line text`
 * [!UICONTROL Etiqueta de campo] : `Event Description`
-* [!UICONTROL Nombre de la propiedad] : `eventDescription`
+* [!UICONTROL Nombre de propiedad] : `eventDescription`
 * [!UICONTROL Tipo predeterminado] : `Rich text`
 
 ### Fecha y hora del evento
 
 * [!UICONTROL Tipo de datos] : `Date and time`
 * [!UICONTROL Etiqueta de campo] : `Event Date and Time`
-* [!UICONTROL Nombre de la propiedad] : `eventDateAndTime`
+* [!UICONTROL Nombre de propiedad] : `eventDateAndTime`
 * [!UICONTROL Requerido] : `Yes`
 
 ### Tipo de evento
 
 * [!UICONTROL Tipo de datos] : `Enumeration`
 * [!UICONTROL Etiqueta de campo] : `Event Type`
-* [!UICONTROL Nombre de la propiedad] : `eventType`
+* [!UICONTROL Nombre de propiedad] : `eventType`
 * [!UICONTROL Opciones] : `Art,Music,Performance,Photography`
 
 ### Precio del billete
@@ -140,7 +139,7 @@ Repita estos pasos utilizando las definiciones de entrada definidas a continuaci
 * [!UICONTROL Tipo de datos] : `Number`
 * [!UICONTROL Procesar como] : `numberfield`
 * [!UICONTROL Etiqueta de campo] : `Ticket Price`
-* [!UICONTROL Nombre de la propiedad] : `eventPrice`
+* [!UICONTROL Nombre de propiedad] : `eventPrice`
 * [!UICONTROL Tipo] : `Integer`
 * [!UICONTROL Requerido] : `Yes`
 
@@ -149,8 +148,8 @@ Repita estos pasos utilizando las definiciones de entrada definidas a continuaci
 * [!UICONTROL Tipo de datos] : `Content Reference`
 * [!UICONTROL Procesar como] : `contentreference`
 * [!UICONTROL Etiqueta de campo] : `Event Image`
-* [!UICONTROL Nombre de la propiedad] : `eventImage`
-* [!UICONTROL Ruta de acceso raíz] : `/content/dam/wknd-mobile/images`
+* [!UICONTROL Nombre de propiedad] : `eventImage`
+* [!UICONTROL Ruta raíz] : `/content/dam/wknd-mobile/images`
 * [!UICONTROL Requerido] : `Yes`
 
 ### Nombre del lugar
@@ -158,7 +157,7 @@ Repita estos pasos utilizando las definiciones de entrada definidas a continuaci
 * [!UICONTROL Tipo de datos] : `Single-line text`
 * [!UICONTROL Procesar como] : `textfield`
 * [!UICONTROL Etiqueta de campo] : `Venue Name`
-* [!UICONTROL Nombre de la propiedad] : `venueName`
+* [!UICONTROL Nombre de propiedad] : `venueName`
 * [!UICONTROL Longitud máxima] : 20
 * [!UICONTROL Requerido] : `Yes`
 
@@ -166,7 +165,7 @@ Repita estos pasos utilizando las definiciones de entrada definidas a continuaci
 
 * [!UICONTROL Tipo de datos] : `Enumeration`
 * [!UICONTROL Etiqueta de campo] : `Venue City`
-* [!UICONTROL Nombre de la propiedad] : `venueCity`
+* [!UICONTROL Nombre de propiedad] : `venueCity`
 * [!UICONTROL Opciones] : `Basel,London,Los Angeles,Paris,New York,Tokyo`
 
 >[!VIDEO](https://video.tv.adobe.com/v/28335?quality=12&learn=on)

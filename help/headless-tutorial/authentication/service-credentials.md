@@ -2,10 +2,7 @@
 title: Credenciales de servicio
 description: Aprenda a utilizar las credenciales de servicio que se utilizan para facilitar las aplicaciones, sistemas y servicios externos e interactuar mediante programación con los servicios de autor o publicación a través de HTTP.
 version: Cloud Service
-topics: Development, Security
 feature: APIs
-activity: develop
-audience: developer
 jira: KT-6785
 thumbnail: 330519.jpg
 topic: Headless, Integrations
@@ -14,9 +11,10 @@ level: Intermediate, Experienced
 last-substantial-update: 2023-01-12T00:00:00Z
 doc-type: Tutorial
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 1037
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1967'
+source-wordcount: '1930'
 ht-degree: 0%
 
 ---
@@ -221,7 +219,7 @@ AEM AEM AEM AEM Una vez que la cuenta técnica de usuario de la cuenta de usuari
 
 1. AEM AEM En primer lugar, busque el nombre de inicio de sesión de la cuenta técnica de abriendo el archivo JSON de credenciales de servicio descargado de la consola de desarrollador de y busque el `integration.email` , que debería ser similar a: `12345678-abcd-9000-efgh-0987654321c@techacct.adobe.com`.
 1. AEM AEM Inicie sesión en el servicio de creación del entorno de la correspondiente como administrador de la aplicación
-1. Navegue hasta __Herramientas__ > __Seguridad__ > __Usuarios__
+1. Vaya a __Herramientas__ > __Seguridad__ > __Usuarios__
 1. AEM Busque el usuario de la con __Nombre de inicio__ identificado en el paso 1 y abra su __Propiedades__
 1. Vaya a __Grupos__ y agregue la pestaña __Usuarios de DAM__ grupo (que tiene acceso de escritura a los recursos)
    + [AEM Consulte la lista de grupos de usuarios proporcionados por el](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#built-in-users-and-groups) para agregar el usuario del servicio a para obtener los permisos óptimos. AEM Si ningún grupo de usuarios proporcionado es suficiente, cree el suyo propio y agregue los permisos adecuados.

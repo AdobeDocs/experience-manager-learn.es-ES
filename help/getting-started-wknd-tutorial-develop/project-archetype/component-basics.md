@@ -12,10 +12,11 @@ thumbnail: 30177.jpg
 doc-type: Tutorial
 exl-id: 7fd021ef-d221-4113-bda1-4908f3a8629f
 recommendations: noDisplay, noCatalog
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 675
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1226'
-ht-degree: 2%
+source-wordcount: '1192'
+ht-degree: 1%
 
 ---
 
@@ -280,7 +281,7 @@ A continuación, vamos a realizar algunas actualizaciones en el `HelloWorldModel
 
 1. AEM Implemente los cambios en una instancia local de con el complemento Eclipse Developer o con sus habilidades con Maven.
 
-## Bibliotecas de cliente {#client-side-libraries}
+## Bibliotecas del cliente {#client-side-libraries}
 
 Bibliotecas del cliente, `clientlibs` en pocas palabras, proporciona un mecanismo para organizar y administrar los archivos CSS y JavaScript necesarios para una implementación de AEM Sites. AEM Las bibliotecas del lado del cliente son la forma estándar de incluir CSS y JavaScript en una página de.
 

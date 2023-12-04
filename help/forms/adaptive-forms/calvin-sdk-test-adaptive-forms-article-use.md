@@ -3,17 +3,17 @@ title: AEM Uso de pruebas automatizadas con Forms adaptable de
 description: Pruebas automatizadas de Forms adaptable con el SDK de Calvin
 feature: Adaptive Forms
 doc-type: article
-activity: develop
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 5a1364f3-e81c-4c92-8972-4fdc24aecab1
 last-substantial-update: 2020-09-10T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 142
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 1%
+source-wordcount: '436'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +29,7 @@ En este tutorial, creará lo siguiente:
 * El grupo de pruebas contendrá uno o más casos de prueba
 * Los casos de prueba contendrán una o más acciones
 
-## Primeros pasos {#getting-started}
+## Introducción {#getting-started}
 
 [Descargar e instalar los recursos mediante el administrador de paquetes](assets/testingadaptiveformsusingcalvinsdk1.zip)El paquete contiene secuencias de comandos de ejemplo y varios Forms adaptables. Estos Forms adaptables se crean con la versión 6.3 de AEM Forms. Se recomienda crear formularios nuevos específicos de la versión de AEM Forms si está probando esto en AEM Forms 6.4 o superior. Los scripts de ejemplo muestran varias API del SDK de Calvin disponibles para probar el Forms adaptable. AEM Los pasos generales para probar el Forms adaptable de la aplicación son:
 

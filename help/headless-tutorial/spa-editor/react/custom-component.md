@@ -2,7 +2,6 @@
 title: Crear un componente meteorológico personalizado AEM SPA | Introducción al Editor de y React
 description: AEM SPA Obtenga información sobre cómo crear un componente meteorológico personalizado para utilizarlo con el Editor de tiempo de la. Aprenda a desarrollar cuadros de diálogo de autor y modelos Sling para ampliar el modelo JSON y rellenar un componente personalizado. Se utilizan los componentes Open Weather API y React Open Weather.
 feature: SPA Editor
-topics: development
 version: Cloud Service
 jira: KT-5878
 thumbnail: 5878-spa-react.jpg
@@ -11,10 +10,11 @@ role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 82466e0e-b573-440d-b806-920f3585b638
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 472
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1216'
-ht-degree: 4%
+source-wordcount: '1105'
+ht-degree: 0%
 
 ---
 
@@ -373,7 +373,7 @@ A continuación, cree el `Open Weather` AEM SPA mediante el Editor de.
 
    ![Componente meteorológico actualizado](assets/custom-component/weather-updated.png)
 
-1. Vea el modelo JSON navegando hasta [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json). Buscar `wknd-spa-react/components/open-weather`:
+1. Vea el modelo JSON navegando hasta [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json). Buscar por `wknd-spa-react/components/open-weather`:
 
    ```json
    "open_weather": {

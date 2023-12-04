@@ -11,10 +11,11 @@ last-substantial-update: 2022-11-11T00:00:00Z
 recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: e5e6204c-d88c-4e79-a7f4-0cfc140bc51c
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 453
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1109'
-ht-degree: 2%
+source-wordcount: '1112'
+ht-degree: 1%
 
 ---
 
@@ -309,7 +310,7 @@ SPA Para configurar el contenedor de cuadrícula adaptable de la plantilla de p�
 
    ![SPA Página de remota](./assets/spa-container-component/templates-allowed-components.png)
 
-1. Pulse __Listo__
+1. Tocar __Listo__
 
 ## AEM Creación del contenedor en la
 
@@ -334,17 +335,17 @@ SPA Después de la actualización de la para incrustar `<ResponsiveGrid...>`, co
    1. Añada el siguiente texto:
       + Título: __¡El verano se acerca, vamos a aprovecharlo al máximo!__
       + Tipo: __H1__
-   1. Pulse __Listo__
+   1. Tocar __Listo__
 1. __Autor__ el __Imagen__ componente
    1. Arrastre una imagen desde la barra lateral (después de cambiar a la vista Recursos) en el componente Imagen
    1. Pulse el componente Imagen y pulse el botón __llave__ icono para editar
    1. Compruebe la __La imagen es decorativa__ casilla de verificación
-   1. Pulse __Listo__
+   1. Tocar __Listo__
 1. __Autor__ el __Texto__ componente
    1. Edite el componente Texto al pulsar el componente Texto y luego el botón __llave__ icono
    1. Añada el siguiente texto:
       + _Ahora mismo, puedes obtener un 15% en todas las aventuras de 1 semana, y un 20% de descuento en todas las aventuras que son de 2 semanas o más! Al finalizar la compra, añada el código de campaña SUMMERISCOMING para obtener sus descuentos._
-   1. Pulse __Listo__
+   1. Tocar __Listo__
 
 1. Los componentes ya se han creado, pero se apilan verticalmente.
 

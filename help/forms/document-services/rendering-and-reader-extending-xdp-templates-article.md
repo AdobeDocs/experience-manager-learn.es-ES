@@ -8,10 +8,11 @@ role: Developer
 level: Experienced
 exl-id: ce1793d1-f727-4bc4-9994-f495b469d1e3
 last-substantial-update: 2020-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 221
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 2%
+source-wordcount: '411'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +25,7 @@ Por ejemplo, en el portal de formularios de AEM Forms, cuando un usuario hace cl
 
 Para llevar a cabo este caso de uso, debemos hacer lo siguiente.
 
-* Agregue el certificado de Extensiones de Reader al usuario &quot;fd-service&quot;. Se enumeran los pasos para agregar la credencial Extensiones de Reader [aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=es)
+* Agregue el certificado de Extensiones de Reader al usuario &quot;fd-service&quot;. Se enumeran los pasos para agregar la credencial Extensiones de Reader [aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=en)
 
 
 * También puede consultar el vídeo sobre [configurar las credenciales de Extensiones de Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html)

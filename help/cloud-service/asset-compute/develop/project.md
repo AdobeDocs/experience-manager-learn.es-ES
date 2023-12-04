@@ -8,10 +8,11 @@ feature: Asset Compute Microservices
 role: Developer
 level: Intermediate, Experienced
 exl-id: ebb11eab-1412-4af5-bc09-e965b9116ac9
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 223
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 2%
+source-wordcount: '577'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +20,7 @@ ht-degree: 2%
 
 Los proyectos de asset compute son proyectos de Node.js, generados mediante la CLI de Adobe I/O, que se adhieren a una estructura determinada que les permite implementarse en Adobe I/O Runtime AEM e integrarse con el as a Cloud Service de la. Un solo proyecto de Asset compute puede contener uno o más Asset compute AEM de trabajo, cada una con un punto final HTTP discreto al que se puede hacer referencia desde un perfil de procesamiento as a Cloud Service.
 
-## Generación de un proyecto
+## Generar un proyecto
 
 >[!VIDEO](https://video.tv.adobe.com/v/40197?quality=12&learn=on)
 
@@ -37,10 +38,10 @@ Utilice el [Complemento de Asset compute de CLI de Adobe I/O](../set-up/developm
 1. __Seleccionar Workspace__
    + Seleccione el `Development` workspace
 1. __¿Qué funciones de la aplicación de Adobe I/O desea habilitar para este proyecto? Seleccionar componentes para incluir__
-   + Seleccione lo siguiente `Actions: Deploy runtime actions`
+   + Seleccionar `Actions: Deploy runtime actions`
    + Utilice las teclas de flecha para seleccionar y el espacio para anular la selección o seleccionarla, y Entrar para confirmar la selección
 1. __Seleccionar tipo de acciones a generar__
-   + Seleccione lo siguiente `DX Asset Compute Worker v1`
+   + Seleccionar `DX Asset Compute Worker v1`
    + Utilice las teclas de flecha para seleccionar, el espacio para anular la selección o seleccionarla y la tecla Intro para confirmar la selección
 1. __¿Cómo desea asignar un nombre a esta acción?__
    + Utilizar el nombre predeterminado `worker`.
@@ -54,7 +55,7 @@ La herramienta para desarrolladores requiere un archivo denominado `console.json
 1. Seleccione el espacio de trabajo del proyecto para descargar `console.json` credenciales para, en este caso seleccione `Development`
 1. Vaya a la raíz del proyecto de Adobe I/O y pulse __Descargar todo__ en la esquina superior derecha.
 1. Un archivo se descarga como `.json` archivo con el prefijo project and workspace, por ejemplo: `wkndAemAssetCompute-81368-Development.json`
-1. Puede
+1. Puede hacer lo siguiente
    + Cambie el nombre del archivo como `console.json` y muévalo a la raíz del proyecto de Asset compute worker. Este es el enfoque de este tutorial.
    + Muévalo a una carpeta arbitraria Y haga referencia a esa carpeta desde su `.env` archivo con una entrada de configuración `ASSET_COMPUTE_INTEGRATION_FILE_PATH`. La ruta de acceso del archivo puede ser absoluta o relativa a la raíz del proyecto. Por ejemplo:
       + `ASSET_COMPUTE_INTEGRATION_FILE_PATH=/Users/example-user/secrets/wkndAemAssetCompute-81368-Development.json`

@@ -1,13 +1,8 @@
 ---
 title: Instalación y configuración del vídeo de Tomcat
-seo-title: Install and Configure Tomcat
 description: Esta es la parte 1 del tutorial de varios pasos para crear su primer documento de comunicaciones interactivas.
-uuid: 835e2342-82b6-4f0c-9a6b-467bbbd8527a
 feature: Interactive Communication
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+doc-type: Tutorial
 version: 6.4,6.5
 thumbnail: 37815.jpg
 discoiquuid: 5f68be3d-aa35-4a3f-aaea-b8ee213c87ae
@@ -15,9 +10,10 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: faa9ca2d-6cfa-4abf-be5e-3e549202853a
-source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
+duration: 259
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '239'
 ht-degree: 0%
 
 ---

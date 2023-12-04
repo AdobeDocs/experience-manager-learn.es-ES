@@ -4,14 +4,14 @@ description: Tanto si es administrador, autor o desarrollador, el mantenimiento 
 role: Admin
 level: Beginner, Intermediate
 topic: Administration
-audience: author, marketer, developer
 feature: Learn From Your Peers
 jira: KT-14255
 exl-id: 37ee3234-f91c-4f0a-b0b7-b9167e7847a9
-source-git-commit: 3752e22455020b58d23524f7e6a99414e773422d
+duration: 266
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1084'
-ht-degree: 7%
+source-wordcount: '998'
+ht-degree: 3%
 
 ---
 
@@ -39,7 +39,7 @@ Hay varios elementos que debe monitorizar para garantizar un funcionamiento sin 
 
 ### Mantenimiento habitual
 
-#### [mantenimiento de índice](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=es)
+#### [mantenimiento de índice](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en)
 
 Los índices permiten que las consultas se ejecuten lo más rápido posible, lo que libera recursos para otras operaciones. Asegúrese de que los índices estén en forma de extremo superior. AEM AEM cancela las consultas que atraviesan en lugar de utilizar un índice para evitar que una consulta incorrecta afecte al rendimiento general de la.
 
@@ -55,7 +55,7 @@ Purgue los binarios de Lucene y reduzca el requisito de tamaño del almacén de 
 
 AEM Cuando se elimina un recurso en, la referencia al registro del almacén de datos subyacente se puede eliminar de la jerarquía de nodos, pero el registro del almacén de datos en sí permanece. Este registro de almacén de datos al que no se hace referencia pasa a ser &quot;basura&quot; y no es necesario conservarlo. En los casos en los que existen una serie de recursos sin referencia, es beneficioso deshacerse de ellos para, conservar el espacio, optimizar la copia de seguridad y el rendimiento de mantenimiento del sistema de archivos.
 
-#### [Depuración de flujo de trabajo](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html?lang=es)
+#### [Depuración de flujo de trabajo](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html)
 
 Al minimizar el número de instancias de flujo de trabajo, aumenta el rendimiento del motor de flujo de trabajo, por lo que puede depurar con regularidad las instancias de flujo de trabajo completadas o en ejecución desde el repositorio.
 
@@ -63,7 +63,7 @@ Al minimizar el número de instancias de flujo de trabajo, aumenta el rendimient
 
 AEM Los eventos de que cumplen los requisitos para el registro de auditoría generan muchos datos archivados. Estos datos pueden crecer rápidamente con el tiempo debido a las replicaciones, las cargas de recursos y otras actividades del sistema.
 
-#### [Seguridad](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=es)
+#### [Seguridad](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=en)
 
 AEM Asegúrese de que se siguen de cerca las prácticas recomendadas de la lista de comprobación de seguridad para garantizar la instancia más segura de los usuarios de la aplicación de seguridad de la.
 
@@ -95,7 +95,7 @@ Piense con anticipación y vea lo que podría reutilizarse. ¿Un pie de página?
 
 ## General
 
-AEM Manténgase al día de los cambios a través del aprendizaje continuo, no se quede atascado en el pasado. Uso [Experience League](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=es) y [Adobe Digital Learning Services (ADLS)](https://learning.adobe.com/) para perfeccionar sus habilidades.
+AEM Manténgase al día de los cambios a través del aprendizaje continuo, no se quede atascado en el pasado. Uso [Experience League](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=en) y [Adobe Digital Learning Services (ADLS)](https://learning.adobe.com/) para perfeccionar sus habilidades.
 
 ## Conclusión
 

@@ -2,18 +2,16 @@
 title: CRXDE Lite
 description: CRXDE Lite AEM es una herramienta clásica, pero potente, para depurar entornos de desarrollador as a Cloud Service de la. CRXDE Lite proporciona un conjunto de funcionalidades que ayuda a la depuración a partir de la inspección de todos los recursos y propiedades, la manipulación de las partes mutables del JCR y la investigación de permisos.
 feature: Developer Tools
-topics: development
 version: Cloud Service
-doc-type: tutorial
-activity: develop
-audience: developer
+doc-type: Tutorial
 kt: KT-5481
 thumbnail: kt-5481.jpg
 topic: Development
 role: Developer
 level: Beginner
 exl-id: f3f2c89f-6ec1-49d3-91c7-10a42b897780
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+duration: 168
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
 source-wordcount: '613'
 ht-degree: 0%
@@ -24,16 +22,16 @@ ht-degree: 0%
 
 El CRXDE Lite es __SOLO__ AEM disponible en entornos de desarrollo as a Cloud Service AEM de la (así como en el SDK de la aplicación local de la aplicación).
 
-## Acceder al CRXDE Lite en AEM Author
+## Acceder al CRXDE Lite AEM en el autor de
 
 El CRXDE Lite es __solamente__ AEM accesible en entornos de desarrollo as a Cloud Service de la, y __no__ disponible en entornos de ensayo o producción.
 
-Para acceder al CRXDE Lite en AEM Author:
+Para acceder al CRXDE Lite AEM en el autor de la:
 
-1. AEM Inicie sesión en el servicio de autor de AEM as a Cloud Service de.
+1. AEM Inicie sesión en el servicio de autor de as a Cloud Service AEM de.
 1. Vaya a Herramientas > General > CRXDE Lite
 
-Se abrirá CRXDE Lite con las credenciales y los permisos utilizados para iniciar sesión en AEM Author.
+Se abrirá el CRXDE Lite AEM con las credenciales y los permisos utilizados para iniciar sesión en el autor de la.
 
 ## Depuración de contenido
 

@@ -9,9 +9,10 @@ role: Developer
 level: Intermediate
 exl-id: 0c77a853-fa71-46ac-8626-99bc69d6222d
 last-substantial-update: 2020-06-09T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+duration: 226
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '261'
 ht-degree: 0%
 
 ---
@@ -25,7 +26,7 @@ A partir de AEM Forms AEM 6.4, ahora podemos utilizar el modelo de datos de form
 
 Para probar esta capacidad en el servidor, siga las instrucciones siguientes
 * [Descargue e implemente el paquete setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Este es el paquete OSGI personalizado que establece las propiedades de los metadatos.
->!![NOTE]En AEM Forms 6.5 y versiones posteriores, esta funcionalidad está disponible de forma predeterminada como [describir aquí](form-data-model-service-as-step-in-aem65-workflow-video-use.md)
+>En AEM Forms 6.5 y versiones posteriores, esta funcionalidad está disponible de forma predeterminada como [describir aquí](form-data-model-service-as-step-in-aem65-workflow-video-use.md)
 
 * Configure tomcat con el archivo SampleRest.war tal como se describe [aquí](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html).El archivo de guerra desplegado en Tomcat tiene el código para devolver la puntuación crediticia del solicitante. La puntuación de crédito es un número aleatorio entre 200 y 800
 
@@ -36,5 +37,5 @@ Para probar esta capacidad en el servidor, siga las instrucciones siguientes
    * Formulario adaptable para almacenar en déclencheur el flujo de trabajo al enviar.
 * Abra el [MortgageApplicationForm](http://localhost:4502/content/dam/formsanddocuments/loanapplication/jcr:content?wcmmode=disabled). Complete los detalles y envíe. Al enviar el formulario, la variable [flujo de trabajo solicitud de préstamo](http://http://localhost:4502/editor.html/conf/global/settings/workflow/models/LoanApplication2.html) se activa.
 
-![ flujo de trabajo ](assets/fdm-as-service-step-workflow.PNG).
+![ workflow ](assets/fdm-as-service-step-workflow.PNG).
 El flujo de trabajo utiliza el componente OR Split para dirigir la solicitud al administrador si la puntuación crediticia es superior a 500. Si la puntuación crediticia es menor que 500, la solicitud se redirige a la recuperación

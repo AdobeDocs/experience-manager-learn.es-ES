@@ -9,10 +9,11 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 6c504710-be8f-4b44-bd8a-aaf480ae6d8a
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 910
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 5%
+source-wordcount: '230'
+ht-degree: 0%
 
 ---
 
@@ -53,7 +54,7 @@ Vídeo de introducción a la instalación y el uso de [!DNL Apache Sling Dynamic
    -->
    ```
 
-1. (Opcional) Repita el último paso para permitir los componentes en [contenido bloqueado (inicial) de plantillas editables](https://helpx.adobe.com/es/experience-manager/6-5/sites/developing/using/page-templates-editable.html) para servir mediante [!DNL SDI] y también. El motivo de la configuración adicional es que el contenido bloqueado de las plantillas editables se proporciona desde `/conf` en lugar de `/content`.
+1. (Opcional) Repita el último paso para permitir los componentes en [contenido bloqueado (inicial) de plantillas editables](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/page-templates-editable.html) para servir mediante [!DNL SDI] y también. El motivo de la configuración adicional es que el contenido bloqueado de las plantillas editables se proporciona desde `/conf` en lugar de `/content`.
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>

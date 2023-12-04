@@ -8,14 +8,15 @@ role: Admin
 level: Experienced
 exl-id: 85c9b51e-92bb-4376-8684-57c9c3204b2f
 last-substantial-update: 2021-06-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 203
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 1%
+source-wordcount: '733'
+ht-degree: 0%
 
 ---
 
-# Autenticar con AEM Author mediante OKTA
+# AEM Autenticar con OKTA para crear un
 
 El primer paso es configurar la aplicación en el portal OKTA. Una vez que el administrador de OKTA apruebe la aplicación, tendrá acceso al certificado IdP y a la URL de inicio de sesión único. A continuación se indican las opciones que se suelen utilizar para registrar una nueva aplicación.
 
@@ -39,9 +40,9 @@ Recuerde la contraseña del almacén de confianza. Necesitaremos usar esta contr
 * Vaya a [Almacén de confianza global](http://localhost:4502/libs/granite/security/content/truststore.html).
 * Haga clic en &quot;Agregar certificado del archivo CER&quot;. Añada el certificado IdP proporcionado por OKTA y haga clic en enviar.
 
-   >[!NOTE]
-   >
-   >No asigne el certificado a ningún usuario
+  >[!NOTE]
+  >
+  >No asigne el certificado a ningún usuario
 
 Al agregar el certificado al almacén de confianza, debe obtener el alias de certificado como se muestra en la captura de pantalla siguiente. El nombre del alias podría ser diferente en su caso.
 

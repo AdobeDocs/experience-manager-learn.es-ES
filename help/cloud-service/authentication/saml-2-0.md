@@ -10,10 +10,11 @@ jira: KT-9351
 thumbnail: 343040.jpeg
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 2511
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '3123'
-ht-degree: 2%
+source-wordcount: '3137'
+ht-degree: 1%
 
 ---
 
@@ -102,7 +103,7 @@ Flujo de firma de aserción +++SAML
    ```
 
 1. AEM AEM Inicie sesión en el autor de la como administrador de la aplicación.
-1. Navegue hasta __Herramientas > Seguridad > repositorio de confianza__.
+1. Vaya a __Herramientas > Seguridad > Almacén de confianza__.
 1. Cree o abra el Almacén de confianza global. Si crea un almacén de confianza global, guarde la contraseña en un lugar seguro.
 1. Expandir __Añadir certificado del archivo CER__.
 1. Seleccionar __Seleccionar archivo de certificado__ y cargue el archivo de certificado proporcionado por el IDP.
@@ -221,7 +222,7 @@ Tanto la firma de AuthnRequest como el cifrado de aserción SAML son opcionales;
       + Uso del `openssl` método anterior, este es el `aem-private-pkcs8.der` archivo
    + __Seleccionar archivo de cadena de certificados__: cargue el archivo de cadena adjunto (puede ser la clave pública).
       + Uso del `openssl` método anterior, este es el `aem-public.crt` archivo
-   + Seleccione __Enviar__
+   + Seleccionar __Enviar__
 1. El certificado recién agregado aparece encima de __Agregar certificado del archivo CRT__ sección.
    + Tome nota de la __alias__ ya que se utiliza en la [Configuración OSGi del controlador de autenticación SAML 2.0](#saml-20-authentication-handler-osgi-configuration)
 1. Seleccionar __Guardar y cerrar__.
@@ -395,7 +396,7 @@ AEM La publicación admite una sola configuración de filtro de referente, por l
 
 Configuraciones de OSGi por entorno (`config.publish.dev`, `config.publish.stage`, y `config.publish.prod`) se puede definir con atributos específicos si `allow.hosts` (o `allow.hosts.regex`) varían entre entornos.
 
-## Configurar el intercambio de recursos de origen cruzado (CORS)
+## Configuración del intercambio de recursos de origen cruzado (CORS)
 
 Durante el proceso de autenticación de SAML, el IDP inicia un POST AEM HTTP del lado del cliente para publicar el de la aplicación de la manera de `.../saml_login` punto final. AEM AEM Si el IDP y la publicación de la existen en hosts o dominios diferentes, haga clic en Publicar en la opción de __CRoss-Origin Resource Sharing (CORS)__ debe configurarse para permitir HTTP POST desde el host/dominio del IDP.
 
