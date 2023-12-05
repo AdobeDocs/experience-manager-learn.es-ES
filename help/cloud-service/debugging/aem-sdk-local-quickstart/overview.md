@@ -9,7 +9,7 @@ role: Developer
 level: Beginner, Intermediate
 exl-id: e27cf3de-ef89-44d7-819b-157f85f5a80f
 duration: 60
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+source-git-commit: bd33d076cf9caa7c900ef4fe8b1a17e27a791cae
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 0%
@@ -34,7 +34,7 @@ AEM AEM La depuración remota del código Java que se ejecuta en el inicio rápi
 
 ## Consolas web OSGi
 
-AEM AEM AEM El inicio rápido local del SDK de la tiene una consola web OSGi que proporciona una variedad de información e introspecciones en el tiempo de ejecución de la aplicación local, que son útiles para comprender cómo la aplicación es reconocida por las funciones y dentro de las funciones de la aplicación.
+AEM AEM AEM El inicio rápido local del SDK de la tiene una consola web OSGi que proporciona una variedad de información e introspecciones en el tiempo de ejecución de la local que son útiles para comprender cómo la aplicación es reconocida por, y funciona dentro de las funciones de.
 
 [AEM Depuración del SDK de la mediante la consola web de OSGi](./osgi-web-consoles.md)
 

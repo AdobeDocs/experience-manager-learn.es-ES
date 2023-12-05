@@ -6,10 +6,10 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: 54827c36a33437a8bf090eb10cde8ed656446d0b
+source-git-commit: bd33d076cf9caa7c900ef4fe8b1a17e27a791cae
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 26%
+source-wordcount: '491'
+ht-degree: 18%
 
 ---
 
@@ -18,6 +18,7 @@ ht-degree: 26%
 
 + [Información general](overview.md)
 + Creación de documentos {#document-authoring}
+   + [Información general](document-authoring/overview.md)
    + [Configuración de](document-authoring/set-up.md)
    + [Previsualización y publicación](document-authoring/preview-and-publish.md)
    + [Estructura del documento](document-authoring/document-structure.md)
@@ -66,7 +67,8 @@ ht-degree: 26%
    + [Componentes](experience-fragments/building-blocks.md)
    + [Fragmentos de contenido frente a fragmentos de experiencias](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html){target=_blank}
 + Edge Delivery Services{#edge-delivery-services}
-   + Desarrollo de{#developing}
+   + [Información general](./edge-delivery-services/overview.md)
+   + Desarrollo{#developing}
       + [Requisitos previos](edge-delivery-services/developing/prerequisites.md)
       + [AEM placa de caldera de](edge-delivery-services/developing/aem-boilerplate.md)
       + [Repositorio de contenido](edge-delivery-services/developing/content-repository.md)
@@ -81,7 +83,7 @@ ht-degree: 26%
    + [Edge Delivery Services](developing/edge-delivery-services.md)
    + [Tipo de archivo del proyecto AEM.](developing/aem-project-archetype.md)
    + [Introducción a AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es){target=_blank}
-   + [Introducción a AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es){target=_blank}
+   + [AEM Introducción a la tecnología sin encabezado de](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es){target=_blank}
    + [AEM SPA Introducción a Editor de y React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html){target=_blank}
    + [Ampliación de propiedades de página](developing/page-properties-technical-video-develop.md)
    + [Puntos de interrupción interactivos](developing/responsive-breakpoints.md)
@@ -109,7 +111,7 @@ ht-degree: 26%
 + Administración de varios sitios {#multi-site-management}
    + [Introducción a la copia de idioma](./multi-site-management/language-copy-overview.md)
    + [Live Copy y modelo](./multi-site-management/live-copy-and-blueprint.md)
-   + [Cree una Live Copy](./multi-site-management/create-live-copy.md)
+   + [Creación de una Live Copy](./multi-site-management/create-live-copy.md)
    + [Administración de la herencia de Live Copy en un componente](./multi-site-management/manage-component-inheritance-live-copy.md)
    + [Administración de la herencia de Live Copy en una página](./multi-site-management/manage-page-inheritance-live-copy.md)
    + [Consola de información general de Live Copy](./multi-site-management/live-copy-overview-console.md)
@@ -140,7 +142,7 @@ ht-degree: 26%
    + Capa de datos del cliente de Adobe {#adobe-client-data-layer}
       + [Uso de la capa de datos del cliente de Adobe](integrations/adobe-client-data-layer/data-layer-overview.md)
       + [Personalizar la capa de datos del cliente de Adobe](integrations/adobe-client-data-layer/data-layer-customize.md)
-   + Análisis {#analytics}
+   + Analytics {#analytics}
       + [Recopilación de datos de página con Adobe Analytics](integrations/analytics/collect-data-analytics.md)
       + [Seguimiento de componentes en los que se hizo clic con Adobe Analytics](integrations/analytics/track-clicked-component.md)
       + [Analizar datos con Analysis Workspace](integrations/analytics/create-analytics-workspace.md)

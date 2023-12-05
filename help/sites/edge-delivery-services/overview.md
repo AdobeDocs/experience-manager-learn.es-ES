@@ -1,0 +1,380 @@
+---
+title: Vídeos de Edge Delivery Services
+description: Aprenda a hacer que los sitios web sean más rápidos con la entrega en Edge.
+version: Cloud Service
+feature: Edge Delivery Services
+topic: Development
+role: Developer
+level: Beginner
+doc-type: Catalog
+last-substantial-update: 2023-05-12T00:00:00Z
+source-git-commit: bd33d076cf9caa7c900ef4fe8b1a17e27a791cae
+workflow-type: tm+mt
+source-wordcount: '306'
+ht-degree: 9%
+
+---
+
+# Vídeos de Edge Delivery Services
+
+Aprenda a agilizar los sitios web con la entrega a través de Edge
+
+Revise la [documentación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html) para obtener información detallada completa sobre la Entrega en el perímetro y sus funcionalidades.
+
+## Introducción a los Edge Delivery Services
+
+<div class="columns is-multiline">
+    <!-- Prerequisites -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="Prerequisites" tabindex="1">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./developing/prerequisites.md" title="Requisitos previos"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3425709/?format=jpeg"
+                alt="Requisitos previos">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">5 minutos</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./developing/prerequisites.md" title="Requisitos previos">Requisitos previos del desarrollador</a>
+            </p>
+            <p class="is-size-6">Lo que necesitará para empezar a desarrollar con Edge Delivery Services.</p>
+            <a href="./developing/prerequisites.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">Vea el vídeo</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Install Node -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="Install Node" tabindex="1">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./developing/prerequisites.md" title="Nodo de instalación"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3425710/?format=jpeg"
+                alt="Nodo de instalación">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">4 minutos</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./developing/prerequisites.md" title="Nodo de instalación">Nodo de instalación</a>
+            </p>
+            <p class="is-size-6">Una breve descripción general de cómo instalar Node JS.</p>
+            <a href="./developing/prerequisites.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">Vea el vídeo</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>    
+    <!-- Setting up your Repository-->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="Set up Code Repository with Boilerplate Template" tabindex="2">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./developing/aem-boilerplate.md" title="Usar plantilla de plantillas"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3425713/?format=jpeg" alt="Configurar plantillas">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">1 minuto</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./developing/aem-boilerplate.md" title="Usar plantilla de plantillas">AEM placa de boiler</a>
+            </p>
+            <p class="is-size-6">AEM Utilice la plantilla de plantillas de plantillas de plantillas de código de la para configurar el repositorio de código.</p>
+            <a href="./developing/aem-boilerplate.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">Vea el vídeo</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Linking Google Drive -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="Link Google Drive" tabindex="3">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./developing/content-repository.md" title="Vincular unidad Google"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3425711/?format=jpeg" alt="Vincular unidad Google">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">1 minuto</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./developing/content-repository.md" title="Vincular unidad Google">Vincular unidad Google</a>
+            </p>
+            <p class="is-size-6">Utilice Google Drive como repositorio para todo el contenido.</p>
+            <a href="./developing/content-repository.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">Vea el vídeo</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Link Sharepoint --->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="Link Sharepoint" tabindex="4">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./developing/content-repository.md" title="Vincular a SharePoint" tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3425712/?format=jpeg"
+                alt="Vincular a SharePoint">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">1 minuto</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./developing/content-repository.md" title="Vincular a SharePoint">Vincular SharePoint</a>
+            </p>
+            <p class="is-size-6">Utilice SharePoint como repositorio para todo el contenido.</p>
+            <a href="./developing/content-repository.md"
+              class="spectrum-Button spectrum-Button--outline
+              spectrum-Button--primary spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">Vea el vídeo</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Previewing and Publishing Content -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="Previewing and Publishing Content" tabindex="5">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./developing/preview-and-publish.md" title="Previsualizar y publicar contenido"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3425714/?format=jpeg" alt="Previsualizar y publicar contenido">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">1 minuto</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./developing/preview-and-publish.md" title="Previsualizar y publicar contenido">Previsualización y publicación de contenido</a>
+            </p>
+            <p class="is-size-6">Vista previa y publicación de contenido con el AEM Sidekick.</p>
+            <a href="./developing/preview-and-publish.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">Vea el vídeo</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Using the Sidekick -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="Using the Sidekick" tabindex="6">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./developing/sidekick.md" title="Uso de Sidekick"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3425715/?format=jpeg"
+                alt="Uso de Sidekick">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">1 minuto</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./developing/sidekick.md" title="Uso de Sidekick">Usar el AEM Sidekick</a>
+            </p>
+            <p class="is-size-6">Aprenda a utilizar el AEM Sidekick.</p>
+            <a href="./developing/sidekick.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">Vea el vídeo</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+ <!-- Document Structure -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="Document Structure" tabindex="6">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./developing/document-structure.md" title="Estructura del documento"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3425716/?format=jpeg"
+                alt="Estructura del documento">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">1 minuto</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./developing/document-structure.md" title="Estructura del documento">Estructura del documento</a>
+            </p>
+            <p class="is-size-6">Explore la estructura del documento, incluido el contenido, las secciones y los bloques predeterminados </p>
+            <a href="./developing/document-structure.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">Vea el vídeo</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>  
+     <!--Local Development -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="Local Development" tabindex="7">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./developing/local-development.md" title="Desarrollo local"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3425717/?format=jpeg"
+                alt="Desarrollo local">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">2 minutos</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./developing/local-development.md" title="Desarrollo local">Desarrollo local</a>
+            </p>
+            <p class="is-size-6">Configure su entorno de desarrollo local.</p>
+            <a href="./developing/local-development.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">Vea el vídeo</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Integrate with Git -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="Integrate with Git" tabindex="7">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./developing/git.md" title="Integración con Git"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3425718/?format=jpeg"
+                alt="Integración con Git">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">2 minutos</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./developing/git.md" title="Integración con Git">Integración con Git</a>
+            </p>
+            <p class="is-size-6">Configure Git y los Edge Delivery Services.</p>
+            <a href="./developing/git.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">Vea el vídeo</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+## Vídeos de presentación
+
+<div class="columns is-multiline">
+    <!--Create RSS Feeds -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="Create RSS Feeds" tabindex="7">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./how-to/rss.md" title="Crear fuentes RSS"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3425725/?format=jpeg"
+                alt="Crear fuentes RSS">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">2 minutos</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./how-to/rss.md" title="Crear fuentes RSS">Crear fuentes RSS</a>
+            </p>
+            <p class="is-size-6">Aprenda a crear fuentes RSS.</p>
+            <a href="./how-to/rss.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">Vea el vídeo</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
