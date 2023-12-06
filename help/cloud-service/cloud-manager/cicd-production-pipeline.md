@@ -11,10 +11,10 @@ role: Architect, Developer, Admin
 level: Beginner
 exl-id: c4f5667a-0da2-490b-9d55-9fbde21db595
 duration: 423
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+source-git-commit: 8a042c561c1a7e48152c2b067d92d709ab5fd53e
 workflow-type: tm+mt
 source-wordcount: '147'
-ht-degree: 53%
+ht-degree: 51%
 
 ---
 
@@ -24,17 +24,17 @@ ht-degree: 53%
 >id="aemcloud_devops_prodpipeline"
 >title="Canalización de producción de CI/CD"
 >abstract="La configuración de la canalización de producción de CI/CD define el activador que iniciará la canalización, los parámetros que controlan la implementación de producción y los parámetros de prueba de rendimiento."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=es#deployment-process" text="Implementar el código"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=es#deployment-production-phase" text="Implementación en la fase de producción"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=en" text="Implementar el código"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=en" text="Implementación en la fase de producción"
 
 ## Configuración
 
-El [Canalización de producción de CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html) La configuración de define el déclencheur que iniciará la canalización, parámetros que controlan la implementación de la producción y parámetros de prueba de rendimiento.
+El [Canalización de producción de CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/pipelines/configuring-production-pipelines.html) La configuración de define el déclencheur que iniciará la canalización, parámetros que controlan la implementación de la producción y parámetros de prueba de rendimiento.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26314?quality=12&learn=on)
 
 ### Ejecución de canalización
 
-El [Canalización de producción de CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=es) se utiliza para generar e implementar código a través de Fase en el entorno de producción, lo que reduce el tiempo de respuesta al valor de.
+El [Canalización de producción de CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html) se utiliza para generar e implementar código a través de Fase en el entorno de producción, lo que reduce el tiempo de respuesta al valor de.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26317?quality=12&learn=on)
