@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: b770fc33ee0752911135d1a94144406bad8f295b
+source-git-commit: 43c021b051806380b3211f2d7357555622217b91
 workflow-type: tm+mt
-source-wordcount: '1084'
-ht-degree: 23%
+source-wordcount: '1072'
+ht-degree: 17%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 23%
 + [Información general](./overview.md)
 + AEM {#aem-trials}
    + [Imágenes](./aem-trials/images.md)
-+ Introducción a AEM as a Cloud Service{#introduction}
++ AEM as a Cloud Service Introducción a la{#introduction}
    + [AEM ¿Qué está as a Cloud Service?](./introduction/what-is-aem-as-a-cloud-service.md)
    + [Arquitectura](./introduction/architecture.md)
    + [Cloud Manager](./introduction/cloud-manager.md)
@@ -58,7 +58,7 @@ ht-degree: 23%
    + [Herramientas de desarrollo](./local-development-environment/development-tools.md)
    + [AEM SDK local de](./local-development-environment/aem-runtime.md)
    + [Herramientas locales de Dispatcher](./local-development-environment/dispatcher-tools.md)
-+ Desarrollo de{#developing}
++ Desarrollo{#developing}
    + Extensibilidad{#extensibility}
       + Generador de aplicaciones{#app-builder}
          + [Generar token de acceso](./developing/extensibility/app-builder/jwt-auth.md)
@@ -91,7 +91,7 @@ ht-degree: 23%
       + [Publicación de contenido](./developing/basics/content-publishing.md)
       + [Configuraciones de OSGi](./developing/basics/osgi-configurations.md)
       + [Migración de configuración de Dispatcher](./developing/basics/dispatcher-configuration.md)
-   + Proyectos AEM{#aem-projects}
+   + AEM Proyectos de{#aem-projects}
       + [AEM Proyecto de Maven](./developing/projects/maven-project-structure.md)
       + [AEM Limpieza de un proyecto de Maven de](./developing/projects/remove-samples.md)
    + Servicios OSGi{#osgi-services}
@@ -99,7 +99,7 @@ ht-degree: 23%
       + [Ciclo de vida del componente OSGi](./developing/osgi-services/lifecycle.md)
       + [Conceptos básicos de configuraciones de OSGi](./developing/osgi-services/configurations.md)
       + [Configuraciones de OSGi mediante OCD](./developing/osgi-services/configurations-ocd.md)
-   + Avanzado {#advanced}
+   + Avanzadas{#advanced}
       + [Almacenar en caché variantes de página](./developing/advanced/variant-caching.md)
       + [Protección CSRF](./developing/advanced/csrf-protection.md)
       + [Áreas de nombres personalizadas](./developing/advanced/custom-namespaces.md)
@@ -108,7 +108,7 @@ ht-degree: 23%
    + Entorno de desarrollo rápido{#rde}
       + [Información general](./developing/rde/overview.md)
       + [Cómo realizar la configuración](./developing/rde/how-to-setup.md)
-      + [Utilización](./developing/rde/how-to-use.md)
+      + [Cómo usar](./developing/rde/how-to-use.md)
       + [Ciclo de vida del desarrollo](./developing/rde/development-life-cycle.md)
    + [AEM SDK API JavaDocs](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html){target=_blank}
 + AEM Depuración de{#debugging}
@@ -134,6 +134,9 @@ ht-degree: 23%
    + [AEM Servicio de publicación de](./caching/publish.md)
    + [AEM Servicio de autor de](./caching/author.md)
    + [Análisis del índice de aciertos de caché CDN](./caching/cdn-cache-hit-ratio-analysis.md)
+   + Cómo:{#how-to}
+      + [Habilitar almacenamiento en caché](./caching/how-to/enable-caching.md)
+      + [Deshabilitar almacenamiento en caché](./caching/how-to/disable-caching.md)
 + AEM Acceder a{#accessing}
    + [Información general](./accessing/overview.md)
    + [Usuarios de Adobe IMS](./accessing/adobe-ims-users.md)
@@ -322,10 +325,10 @@ ht-degree: 23%
    + Prueba y depuración{#test-debug}
       + [Prueba de un trabajador](./asset-compute/test-debug/test.md)
       + [Depuración de un trabajador](./asset-compute/test-debug/debug.md)
-   + Implementación de{#deploy}
+   + Implementar{#deploy}
       + [Implementación en Adobe I/O Runtime](./asset-compute/deploy/runtime.md)
-      + [Integrar con AEM](./asset-compute/deploy/processing-profiles.md)
-   + Avanzado {#advanced}
+      + [AEM Integrar con el](./asset-compute/deploy/processing-profiles.md)
+   + Avanzadas{#advanced}
       + [Trabajadores de metadatos](./asset-compute/advanced/metadata.md)
    + [Solución de problemas](./asset-compute/troubleshooting.md)
 
