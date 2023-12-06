@@ -7,10 +7,10 @@ sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: f6491d04f7f23da75366904a7965103465d33f87
+source-git-commit: e5c50ffb379f497ed72efd63528af4f874b18ade
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 25%
+source-wordcount: '402'
+ht-degree: 16%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 25%
 
 + [Información general](overview.md)
 
-+ Configurar{#configuring}
++ Configuración{#configuring}
    + [Carpetas de línea base](configuring/baseline-folders.md)
    + [Permisos de línea base](configuring/baseline-permissions.md)
    + [Etiquetado](configuring/tagging.md)
@@ -52,7 +52,7 @@ ht-degree: 25%
 + Capacidades avanzadas{#advanced}
    + [Recursos 3D](./advanced/3d-assets.md)
    + [Salida del PDF de anotaciones](./advanced/customizing-annotations-pdf-output.md)
-   + [Información sobre Assets ](./advanced/asset-insights-launch-tutorial.md)
+   + [Perspectivas de recursos](./advanced/asset-insights-launch-tutorial.md)
    + [Informes de recursos](./advanced/asset-reports.md)
    + [Permisos (CUG)](./advanced/closed-user-groups.md)
    + [Filigranas](./advanced/watermarks.md)
@@ -84,8 +84,9 @@ ht-degree: 25%
       + [Compartir recursos Commons Kits de recursos](./sharing/asset-share/asset-share-commons-asset-kits.md)
    + [Recursos conectados](./sharing/connected-assets.md)
 
-+ Integración con Flujos de trabajo creativos{#creative-workflows}
++ Flujos de trabajo creativos{#creative-workflows}
    + [Adobe Express](./creative-workflows/adobe-express.md)
+   + [Adobe Express AEM Assets add-on](./creative-workflows/adobe-express-aem-assets-add-on.md)
    + [AEM Aplicación de escritorio](./creative-workflows/aem-desktop-app.md)
    + [Adobe Asset Link](./creative-workflows/adobe-asset-link.md)
    + [Adobe Stock](./creative-workflows/adobe-stock.md)
@@ -122,7 +123,7 @@ ht-degree: 25%
       + [Vídeo 360](dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.md)
       + [Miniaturas de vídeo personalizadas](dynamic-media/dynamic-media-video-thumbnails-feature-video-use.md)
       + [Dynamic Media Smart Crop Video](dynamic-media/dynamic-media-smart-crop-video.md)
-   + Visores {#viewers}
+   + Espectadores {#viewers}
       + [Visores](dynamic-media/dynamic-media-viewer-feature-video-understand.md)
       + [Visualizadores de imágenes panorámicas y verticales](dynamic-media/panorama-vertical-image-viewer-feature-video-use.md)
       + [Visualizadores con Adobe Analytics](dynamic-media/dynamic-media-viewer-extension-use.md)
@@ -132,7 +133,7 @@ ht-degree: 25%
       + [Fragmentos de experiencias](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
       + [Componentes principales de Dynamic Media](dynamic-media/dynamic-media-core-components.md)
 
-   + Tutoriales {#tutorials}
+   + Tutorials {#tutorials}
       + [Creación de conjuntos de carrusel](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-carousel-sets.md)
       + [Creación de conjuntos de imágenes](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-image-sets.md)
       + [Crear ajustes preestablecidos de imagen](dynamic-media/tutorials/creating-image-presets.md)
