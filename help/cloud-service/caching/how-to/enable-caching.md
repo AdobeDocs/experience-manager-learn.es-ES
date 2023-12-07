@@ -10,13 +10,13 @@ doc-type: Tutorial
 last-substantial-update: 2023-11-17T00:00:00Z
 jira: KT-14224
 thumbnail: KT-14224.jpeg
-source-git-commit: 43c021b051806380b3211f2d7357555622217b91
+exl-id: 544c3230-6eb6-4f06-a63c-f56d65c0ff4b
+source-git-commit: 783f84c821ee9f94c2867c143973bf8596ca6437
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '637'
 ht-degree: 0%
 
 ---
-
 
 # Cómo habilitar el almacenamiento en caché de CDN
 
@@ -47,23 +47,23 @@ Revisemos cada una de estas opciones.
 
 AEM Esta opción es el método recomendado para habilitar el almacenamiento en caché; sin embargo, solo está disponible para publicación en la. Para actualizar los encabezados de caché, utilice el `mod_headers` módulo y `<LocationMatch>` en el archivo vhost del servidor HTTP de Apache. La sintaxis general es la siguiente:
 
-    &quot;conf
-    &lt;locationmatch url=&quot;&quot; url_regex=&quot;&quot;>
-    # Quita el encabezado de respuesta de este nombre, si existe. Si hay varios encabezados con el mismo nombre, se eliminarán todos.
-    Encabezado unset Cache-Control
-    Encabezado unset Surrogate-Control
-    Caduca el encabezado desconfigurado
+```
+<LocationMatch "$URL$ || $URL_REGEX$">
+    # Removes the response header of this name, if it exists. If there are multiple headers of the same name, all will be removed.
+    Header unset Cache-Control
+    Header unset Surrogate-Control
+    Header unset Expires
+
+    # Instructs the web browser and CDN to cache the response for 'max-age' value (XXX) seconds. The 'stale-while-revalidate' and 'stale-if-error' attributes controls the stale state treatment at CDN layer.
+    Header set Cache-Control "max-age=XXX,stale-while-revalidate=XXX,stale-if-error=XXX"
     
-    # Indica al explorador web y a la CDN que almacenen en caché la respuesta durante el valor &quot;max-age&quot; (XXX) segundos. Los atributos &quot;stale-while-revalidate&quot; y &quot;stale-if-error&quot; controlan el tratamiento del estado de obsolescencia en la capa CDN.
-    Encabezado set Cache-Control &quot;max-age=XXX,stale-while-revalidate=XXX,stale-if-error=XXX&quot;
+    # Instructs the CDN to cache the response for 'max-age' value (XXX) seconds. The 'stale-while-revalidate' and 'stale-if-error' attributes controls the stale state treatment at CDN layer.
+    Header set Surrogate-Control "max-age=XXX,stale-while-revalidate=XXX,stale-if-error=XXX"
     
-    # Indica a la CDN que almacene en caché la respuesta durante el valor &quot;max-age&quot; (XXX) segundos. Los atributos &quot;stale-while-revalidate&quot; y &quot;stale-if-error&quot; controlan el tratamiento del estado de obsolescencia en la capa CDN.
-    Encabezado set Surrogate-Control &quot;max-age=XXX,stale-while-revalidate=XXX,stale-if-error=XXX&quot;
-    
-    # Indica al explorador web y a la CDN que almacenen en caché la respuesta hasta la fecha y la hora especificadas.
-    Conjunto de encabezados Caduca &quot;Dom, 31 Dic 2023 23:59:59 GMT&quot;
-    &lt;/locationmatch>
-    &quot;
+    # Instructs the web browser and CDN to cache the response until the specified date and time.
+    Header set Expires "Sun, 31 Dec 2023 23:59:59 GMT"
+</LocationMatch>
+```
 
 A continuación se resume el propósito de cada **encabezado** y aplicable **atributos** para el encabezado.
 
@@ -87,15 +87,16 @@ Para aumentar la vida útil del explorador web y la caché de CDN de **Tipo de c
 1. AEM En el proyecto de, busque el archivo vhsot deseado en `dispatcher/src/conf.d/available_vhosts` directorio.
 1. Actualice el vhost (p. ej., `wknd.vhost`) como se indica a continuación:
 
-       &quot;conf
-       &lt;locationmatch content=&quot;&quot;>*\.(html)$&quot;>
-       # Quita el encabezado de respuesta si está presente.
-       Encabezado unset Cache-Control
-       
-       # Indica al explorador web y a la CDN que almacenen en caché la respuesta del valor de edad máxima (600) segundos.
-       Encabezado set Cache-Control &quot;max-age=600&quot;
-       &lt;/locationmatch>
-       &quot;
+   ```
+   <LocationMatch "^/content/.*\.(html)$">
+       # Removes the response header if present
+       Header unset Cache-Control
+   
+       # Instructs the web browser and CDN to cache the response for max-age value (600) seconds.
+       Header set Cache-Control "max-age=600"
+   </LocationMatch>
+   ```
+
    Los archivos vhost de `dispatcher/src/conf.d/enabled_vhosts` Los directorios son **enlaces simbólicos** a los archivos de `dispatcher/src/conf.d/available_vhosts` , así que asegúrese de crear enlaces simbólicos si no están presentes.
 1. AEM Implemente los cambios de vhost en el entorno as a Cloud Service deseado utilizando la variable [Cloud Manager: Canalización de configuración de nivel web](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?#web-tier-config-pipelines) o [Comandos de RDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=en#deploy-apache-or-dispatcher-configuration).
 
@@ -109,13 +110,13 @@ AEM Esta opción está disponible tanto para Publicación como para Autor de la.
 
 Para actualizar los encabezados de caché, utilice el `HttpServletResponse` en el código Java™ personalizado (servlet de Sling, filtro de servlet de Sling). La sintaxis general es la siguiente:
 
-    &quot;java
-    // Indica al explorador web y a la CDN que almacenen en caché la respuesta durante el valor &quot;max-age&quot; (XXX) segundos. Los atributos &quot;stale-while-revalidate&quot; y &quot;stale-if-error&quot; controlan el tratamiento del estado de obsolescencia en la capa CDN.
-    response.setHeader(&quot;Cache-Control&quot;, &quot;max-age=XXX,stale-while-revalidate=XXX,stale-if-error=XXX&quot;);
-    
-    // Indica a la CDN que almacene en caché la respuesta durante el valor &quot;max-age&quot; (XXX) segundos. Los atributos &quot;stale-while-revalidate&quot; y &quot;stale-if-error&quot; controlan el tratamiento del estado de obsolescencia en la capa CDN.
-    response.setHeader(&quot;Surrogate-Control&quot;, &quot;max-age=XXX,stale-while-revalidate=XXX,stale-if-error=XXX&quot;);
-    
-    // Indica al explorador web y a la CDN que almacenen en caché la respuesta hasta la fecha y hora especificadas.
-    response.setHeader(&quot;Expires&quot;, &quot;Sun, 31 Dec 2023 23:59:59 GMT&quot;);
-    &quot;
+```java
+// Instructs the web browser and CDN to cache the response for 'max-age' value (XXX) seconds. The 'stale-while-revalidate' and 'stale-if-error' attributes controls the stale state treatment at CDN layer.
+response.setHeader("Cache-Control", "max-age=XXX,stale-while-revalidate=XXX,stale-if-error=XXX");
+
+// Instructs the CDN to cache the response for 'max-age' value (XXX) seconds. The 'stale-while-revalidate' and 'stale-if-error' attributes controls the stale state treatment at CDN layer.
+response.setHeader("Surrogate-Control", "max-age=XXX,stale-while-revalidate=XXX,stale-if-error=XXX");
+
+// Instructs the web browser and CDN to cache the response until the specified date and time.
+response.setHeader("Expires", "Sun, 31 Dec 2023 23:59:59 GMT");
+```
