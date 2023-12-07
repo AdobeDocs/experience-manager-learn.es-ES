@@ -11,9 +11,9 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: 162e10e5-fcb0-4f16-b6d1-b951826209d9
 duration: 140
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+source-git-commit: 6995b0221e381979aca0aeb540fe04d71b16eaae
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ A continuación se muestran unas instrucciones de configuración abreviadas. Los
 1. Instale los módulos npm y los complementos CLI de Adobe I/O necesarios desde la línea de comandos:
 
    ```
-   $ npm i -g @adobe/aio-cli@7.1.0 @openwhisk/wskdebug ngrok --unsafe-perm=true \
+   $ npm i -g @adobe/aio-cli @openwhisk/wskdebug ngrok --unsafe-perm=true \
    && aio plugins:install @adobe/aio-cli-plugin-asset-compute
    ```
 
@@ -76,11 +76,8 @@ Los trabajadores de asset compute son [Node.js](https://nodejs.org/)basado en y,
 [Instale la CLI de Adobe I/O](../../local-development-environment/development-tools.md#aio-cli), o __aio__ es un módulo npm de línea de comandos (CLI) que facilita el uso de las tecnologías de Adobe I/O y la interacción con ellas, y se utiliza tanto para generar como para desarrollar localmente trabajadores de Asset compute personalizados.
 
 ```
-$ npm install -g @adobe/aio-cli@7.1.0
+$ npm install -g @adobe/aio-cli
 ```
-
-_Se requiere la versión 7.1.0 de CLI de Adobe I/O. En este momento no se admiten versiones posteriores de CLI de Adobe I/O._
-
 
 ## Instalación del complemento de Asset compute de CLI de Adobe I/O{#aio-asset-compute}
 
