@@ -6,10 +6,10 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: bd33d076cf9caa7c900ef4fe8b1a17e27a791cae
+source-git-commit: f5f80a898420445335ed34f20aac6579199cc817
 workflow-type: tm+mt
-source-wordcount: '491'
-ht-degree: 18%
+source-wordcount: '496'
+ht-degree: 17%
 
 ---
 
@@ -79,6 +79,8 @@ ht-degree: 18%
       + [Git](edge-delivery-services/developing/git.md)
    + Procedimientos{#how-to}
       + [Fuentes RSS](edge-delivery-services/how-to/rss.md)
+      + [Compartir en redes sociales](edge-delivery-services/how-to/social-media-sharing.md)
+      + [Eliminación de páginas](edge-delivery-services/how-to/delete-page.md)
 + Desarrollo de {#developing}
    + [Edge Delivery Services](developing/edge-delivery-services.md)
    + [Tipo de archivo del proyecto AEM.](developing/aem-project-archetype.md)
