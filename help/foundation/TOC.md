@@ -4,10 +4,10 @@ breadcrumb-title: Tutoriales de AEM Foundation
 user-guide-description: Una colección de vídeos y tutoriales para Adobe Experience Manager Foundation.
 sub-product: Experience Manager
 index: y
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+source-git-commit: 338bb13f1739d822e6a4b7232ae1a2da6b24732a
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 16%
+source-wordcount: '224'
+ht-degree: 14%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 16%
 # Vídeos y tutoriales de AEM Foundation {#foundation}
 
 + [Información general](./overview.md)
-+ Administración {#administration}
++ Administration {#administration}
    + [AEM Comprender las razones para actualizar el](./administration/understand-reasons-to-upgrade.md)
    + [Utilice oak-run.jar para administrar índices](./administration/use-oak-run-jar-to-manage-indexes.md)
    + [Utilizar Limpieza de revisión en línea](./administration/use-online-revision-clean-up.md)
@@ -28,7 +28,8 @@ ht-degree: 16%
    + [Comprender la autenticación IMS en AMS](authentication/adobe-ims-authentication-technical-video-understand.md)
 + Adobe Cloud Manager{#cloud-manager}
    + [Comprender Adobe Cloud Manager](./cloud-manager/understand-cloud-manager-for-aem.md)
-   + [Uso de la canalización de CI/CD en Adobe Cloud Manager](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)
+   + [Canalizaciones de CI/CD](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)
+   + [Permisos personalizados](./cloud-manager/cloud-permissions.md)
 + Desarrollo {#development}
    + [Desarrollar exportadores de modelos Sling](./development/develop-sling-model-exporter.md)
    + [AEM Configuración de un entorno de desarrollo local de](./development/set-up-a-local-aem-development-environment.md)
@@ -40,7 +41,7 @@ ht-degree: 16%
    + [Utilizar proyectos principales](./projects/use-project-masters.md)
 + Seguridad {#security}
    + [Desarrollo para el Intercambio de Recursos de Origen Cruzado (CORS)](./security/develop-for-cross-origin-resource-sharing.md)
-   + [Comprender el uso compartido de recursos de origen cruzado (Cross-Origin Resource Sharing, CORS)](./security/understand-cross-origin-resource-sharing.md)
+   + [Comprender el Intercambio de Recursos de Origen Cruzado (CORS)](./security/understand-cross-origin-resource-sharing.md)
    + [Uso del Asistente para SSL](./security/use-the-ssl-wizard.md)
    + [Protección contra ataques ModSecurity CRS DoS](./security/modsecurity-crs-dos-attack-protection.md)
    + [Conexiones HTTPS a API con certificados privados](./security/call-internal-apis-having-private-certificate.md)
