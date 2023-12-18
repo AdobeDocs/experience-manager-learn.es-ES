@@ -12,10 +12,10 @@ level: Beginner
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 41e15a2c-758b-4e7d-9d23-ef671c1dc155
 duration: 81
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+source-git-commit: 90c3ef479b289c9b319735fd28a1e39875c421a9
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 3%
+source-wordcount: '266'
+ht-degree: 4%
 
 ---
 
@@ -48,7 +48,7 @@ Se requiere lo siguiente para seguir este tutorial:
 
 ### AEM Entorno
 
-AEM AEM Para completar este tutorial, se recomienda que el administrador de la aplicación acceda a un entorno as a Cloud Service de la aplicación de forma. AEM Si no tiene acceso a un entorno as a Cloud Service, puede usar el complemento de acceso a la aplicación de la aplicación de tipo de entorno de [AEM SDK de inicio rápido local as a Cloud Service](/help/cloud-service/local-development-environment/aem-runtime.md). Sin embargo, es importante tener en cuenta que algunas pantallas de la interfaz de usuario de productos, como la navegación por fragmentos de contenido, son diferentes.
+AEM AEM Para completar este tutorial, se recomienda que tenga acceso de administrador de a un entorno as a Cloud Service. AEM Si no tiene acceso a un entorno as a Cloud Service de la, [AEM regístrese para el ensayo sin encabezado de](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&amp;cli=headless_exl_banner_campaign&amp;co=US&amp;lang=en) AEM para explorar capacidades sin encabezado de la.
 
 ## ¡Vamos a empezar!
 
