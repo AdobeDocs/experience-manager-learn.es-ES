@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: d9612adbc2ff3e601c2efe5a779c03ad24769276
+source-git-commit: 55f5cef46f7451ebb5b42b8cf17e71efeb0329c2
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1096'
 ht-degree: 17%
 
 ---
@@ -164,6 +164,11 @@ ht-degree: 17%
       + [Cómo realizar la configuración](./security/traffic-filter-rules/how-to-setup.md)
       + [Ejemplos y análisis de resultados](./security/traffic-filter-rules/examples-and-analysis.md)
       + [Prácticas recomendadas](./security/traffic-filter-rules/best-practices.md)
++ AEM Eventing{#aem-eventing}
+   + [Información general](./eventing/overview.md)
+   + Ejemplos{#examples}
+      + [AEM Webhook: Recibir eventos](./eventing/examples/webhook.md)
+      + [AEM Diario: Cargar eventos de](./eventing/examples/journaling.md)
 + Migración {#migration}
    + [Herramienta de transferencia de contenido](./migration/content-transfer-tool.md)
    + [Importación masiva de recursos](./migration/bulk-import.md)
