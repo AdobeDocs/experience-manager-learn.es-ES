@@ -9,11 +9,11 @@ level: Beginner
 doc-type: Tutorial
 duration: 0
 last-substantial-update: 2023-12-07T00:00:00Z
-jira: KT-14649
-thumbnail: KT-14649.jpeg
-source-git-commit: 55f5cef46f7451ebb5b42b8cf17e71efeb0329c2
+jira: KT-14734
+thumbnail: KT-14734.jpeg
+source-git-commit: 839d552199fe7d10a0cde4011bdfe8cf42cc8ec9
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '600'
 ht-degree: 0%
 
 ---
@@ -81,4 +81,6 @@ AEM Para simplificar las cosas, esta aplicación web alojada solo obtiene el pri
 
 ## Recursos adicionales
 
-- [Código fuente del gancho web Glitch](https://glitch.com/edit/#!/indigo-speckle-antler)
+- [Código fuente del gancho web Glitch](https://glitch.com/edit/#!/indigo-speckle-antler) está disponible como referencia. Es una aplicación React simple que utiliza [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) componentes para procesar la interfaz de usuario.
+
+- [API de diario de eventos de Adobe I/O](https://developer.adobe.com/events/docs/guides/api/journaling_api/) proporciona información detallada sobre la API como el primer, el siguiente y el último lote de eventos, la paginación, etc.

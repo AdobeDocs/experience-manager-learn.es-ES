@@ -9,11 +9,11 @@ level: Beginner
 doc-type: Tutorial
 duration: 0
 last-substantial-update: 2023-12-07T00:00:00Z
-jira: KT-14649
-thumbnail: KT-14649.jpeg
-source-git-commit: 55f5cef46f7451ebb5b42b8cf17e71efeb0329c2
+jira: KT-14732
+thumbnail: KT-14732.jpeg
+source-git-commit: 839d552199fe7d10a0cde4011bdfe8cf42cc8ec9
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '520'
 ht-degree: 0%
 
 ---
@@ -152,4 +152,4 @@ AEM Puede ver que los detalles del evento de la tienen toda la información nece
 
 ## Recursos adicionales
 
-- [Código fuente del gancho web Glitch](https://glitch.com/edit/#!/precioso-antiguo-montaña rusa)
+- [Código fuente del gancho web Glitch](https://glitch.com/edit/#!/precioso-antiguo-montaña rusa) está disponible como referencia.
