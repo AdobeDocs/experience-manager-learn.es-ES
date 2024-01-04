@@ -13,7 +13,7 @@ duration: 26
 source-git-commit: 8a042c561c1a7e48152c2b067d92d709ab5fd53e
 workflow-type: tm+mt
 source-wordcount: '80'
-ht-degree: 67%
+ht-degree: 68%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 67%
 >title="Implementación de código"
 >abstract="Integre el repositorio Git de Cloud Manager con un repositorio Git externo e implemente un proyecto en AEM as a Cloud Service"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/merge-projects.html?lang=es#cloud-manager" text="Combinar proyectos"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=en" text="Implementación de código con Cloud Manager"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=es" text="Implementación de código con Cloud Manager"
 
 Integre el repositorio Git de Cloud Manager con un repositorio Git externo e implemente un proyecto en AEM as a Cloud Service
 
