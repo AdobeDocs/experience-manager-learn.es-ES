@@ -11,7 +11,7 @@ thumbnail: KT-10253.jpeg
 last-substantial-update: 2023-04-19T00:00:00Z
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
 duration: 449
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+source-git-commit: 520bb18e464eb48cc2ba0cdfb7f5a7d2af202abf
 workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 5%
@@ -133,6 +133,7 @@ Para cargar la imagen optimizada para la web de la imagen a la que se hace refer
 AEM En React, la visualización de una imagen optimizada para la web desde la publicación de la página web tiene el siguiente aspecto:
 
 ```jsx
+// The AEM host is usually read from a environment variable of the SPA.
 const AEM_HOST = "https://publish-p123-e456.adobeaemcloud.com";
 ...
 let dynamicUrl = AEM_HOST + data.adventureByPath.item.primaryImage._dynamicUrl;
@@ -147,6 +148,7 @@ Recuerde, `_dynamicUrl` AEM no incluye el dominio de, por lo que debe proporcion
 El ejemplo anterior muestra el uso de una imagen de un solo tamaño, pero en las experiencias web, a menudo se requieren conjuntos de imágenes adaptables. Las imágenes interactivas se pueden implementar mediante [srcsets de img](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset) o [elementos de imagen](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset). El siguiente fragmento de código muestra cómo utilizar la variable `_dynamicUrl` como base, y anexar diferentes parámetros de anchura, para activar diferentes vistas adaptables. No solo pueden `width` se puede utilizar el parámetro de consulta, pero el cliente puede agregar otros parámetros de consulta para optimizar aún más el recurso de imagen según sus necesidades.
 
 ```javascript
+// The AEM host is usually read from a environment variable of the SPA.
 const AEM_HOST = "https://publish-p123-e456.adobeaemcloud.com";
 ...
 // Read the data from GraphQL response
