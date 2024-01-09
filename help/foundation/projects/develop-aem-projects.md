@@ -1,6 +1,6 @@
 ---
 title: AEM Desarrollar proyectos en el ámbito de la
-description: AEM Un tutorial de desarrollo que ilustra cómo desarrollar para proyectos de.  AEM En este tutorial crearemos una plantilla de proyecto personalizada que se puede utilizar para crear nuevos proyectos dentro de para administrar flujos de trabajo y tareas de creación de contenido.
+description: AEM Un tutorial de desarrollo que ilustra cómo desarrollar para proyectos de. AEM En este tutorial crearemos una plantilla de proyecto personalizada que se puede utilizar para crear nuevos proyectos dentro de para administrar flujos de trabajo y tareas de creación de contenido.
 version: 6.4, 6.5
 feature: Projects, Workflow
 doc-type: Tutorial
@@ -9,16 +9,16 @@ role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
 duration: 1753
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+source-git-commit: b9b8dd9d815d7a0ef800635a74b030c50821b9df
 workflow-type: tm+mt
-source-wordcount: '4460'
+source-wordcount: '4441'
 ht-degree: 0%
 
 ---
 
 # AEM Desarrollar proyectos en el ámbito de la
 
-Este es un tutorial de desarrollo que ilustra cómo desarrollar para [!DNL AEM Projects].  AEM En este tutorial crearemos una plantilla de proyecto personalizada que se puede utilizar para crear nuevos proyectos dentro de para administrar flujos de trabajo y tareas de creación de contenido.
+Este es un tutorial de desarrollo que ilustra cómo desarrollar para [!DNL AEM Projects]. AEM En este tutorial crearemos una plantilla de proyecto personalizada que se puede utilizar para crear proyectos en para administrar flujos de trabajo y tareas de creación de contenido.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16904?quality=12&learn=on)
 
@@ -26,9 +26,9 @@ Este es un tutorial de desarrollo que ilustra cómo desarrollar para [!DNL AEM P
 
 ## Introducción {#introduction}
 
-[[!DNL AEM Projects]](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html) AEM es una función de que está diseñada para facilitar la administración y la agrupación de todos los flujos de trabajo y tareas asociados con la creación de contenido como parte de una implementación de AEM Sites o Assets.
+[[!DNL AEM Projects]](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/projects/projects.html) AEM es una función de que está diseñada para facilitar la administración y la agrupación de todos los flujos de trabajo y tareas asociados con la creación de contenido como parte de una implementación de AEM Sites o Assets.
 
-AEM Los proyectos de incluyen varios [Plantillas de proyecto OOTB](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html#ProjectTemplates). Al crear un nuevo proyecto, los autores pueden elegir entre estas plantillas disponibles. AEM Las implementaciones de grandes dimensiones con requisitos empresariales únicos querrán crear plantillas de proyecto personalizadas, adaptadas para satisfacer sus necesidades. Al crear una plantilla de proyecto personalizada, los desarrolladores pueden configurar el tablero del proyecto, vincularse a flujos de trabajo personalizados y crear funciones empresariales adicionales para un proyecto. Echaremos un vistazo a la estructura de una plantilla de proyecto y crearemos una de muestra.
+AEM Los proyectos de incluyen varios [Plantillas de proyecto OOTB](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/projects/projects.html). Al crear un proyecto, los autores pueden elegir entre estas plantillas disponibles. AEM Las implementaciones de grandes dimensiones con requisitos empresariales únicos querrán crear plantillas de proyecto personalizadas, adaptadas para satisfacer sus necesidades. Al crear una plantilla de proyecto personalizada, los desarrolladores pueden configurar el tablero del proyecto, vincularse a flujos de trabajo personalizados y crear funciones empresariales adicionales para un proyecto. Observaremos la estructura de una plantilla de proyecto y crearemos una de muestra.
 
 ![Tarjeta de proyecto personalizada](./assets/develop-aem-projects/custom-project-card.png)
 
@@ -39,13 +39,13 @@ Este tutorial recorrerá paso a paso el código necesario para crear una plantil
 * [Paquete de tutorial finalizado](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [Repositorio de código completo en GitHub](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
 
-Este tutorial supone algunos conocimientos básicos de [AEM Prácticas de desarrollo de](https://helpx.adobe.com/es/experience-manager/6-5/sites/developing/using/the-basics.html) y cierta familiaridad con [AEM Configuración del proyecto de Maven](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ht-projects-maven.html). Todo el código mencionado está diseñado para utilizarse como referencia y solo debe implementarse en una [AEM instancia de desarrollo local de](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#GettingStarted).
+Este tutorial supone algunos conocimientos básicos de [AEM Prácticas de desarrollo de](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/the-basics.html) y cierta familiaridad con [AEM Configuración del proyecto de Maven](https://docs.adobe.com/content/help/en/experience-manager-65/developing/devtools/ht-projects-maven.html). Todo el código mencionado está diseñado para utilizarse como referencia y solo debe implementarse en una [AEM instancia de desarrollo local de](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/deploy.html).
 
 ## Estructura de una plantilla de proyecto
 
 Las plantillas de proyecto deben colocarse bajo control de código fuente y deben residir debajo de la carpeta de la aplicación, en /apps. Lo ideal es que se coloquen en una subcarpeta con la convención de nombres de **&#42;/proyectos/plantillas/**&lt;my-template>. Al colocar siguiendo esta convención de nombres, las nuevas plantillas personalizadas estarán disponibles automáticamente para los autores al crear un proyecto. La configuración de las plantillas de proyecto disponibles se establece en: **/content/projects/jcr:content** nodo por el **cq:allowedTemplates** propiedad. De forma predeterminada, se trata de una expresión regular: **/(apps|libs)/.&#42;/projects/templates/.&#42;**
 
-El nodo raíz de una plantilla de proyecto tendrá un **jcr:primaryType** de **cq:Template**. Debajo del nodo raíz de hay 3 nodos: **gadgets**, **funciones**, y **flujos de trabajo**. Estos nodos son todos **nt:unstructured**. Debajo del nodo raíz también puede haber un archivo thumbnail.png que se muestra al seleccionar la plantilla en el asistente Crear proyecto.
+El nodo raíz de una plantilla de proyecto tendrá un **jcr:primaryType** de **cq:Template**. Debajo del nodo raíz de hay tres nodos: **gadgets**, **funciones**, y **flujos de trabajo**. Estos nodos son todos **nt:unstructured**. Debajo del nodo raíz también puede haber un archivo thumbnail.png que se muestra al seleccionar la plantilla en el asistente Crear proyecto.
 
 La estructura del nodo completo:
 
@@ -69,15 +69,15 @@ Se puede encontrar un ejemplo de asistente personalizado para la plantilla del p
 
 ### Gadgets {#gadgets}
 
-No hay propiedades adicionales en este nodo, pero los elementos secundarios del nodo de gadgets controlan qué mosaicos de proyecto rellenan el panel del proyecto cuando se crea un nuevo proyecto. [Los mosaicos del proyecto](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html#ProjectTiles) (también conocidos como gadgets o pods) son tarjetas simples que pueblan el lugar de trabajo de un proyecto. Puede encontrar una lista completa de los mosaicos de ootb en: **/libs/cq/gui/components/projects/admin/pod. **Los propietarios de proyectos siempre pueden agregar o quitar mosaicos después de crear un proyecto.
+No hay propiedades adicionales en este nodo, pero los elementos secundarios del nodo de gadgets controlan qué mosaicos de proyecto rellenan el panel del proyecto cuando se crea un nuevo proyecto. [Los mosaicos del proyecto](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/projects/projects.html) (también conocidos como gadgets o pods) son tarjetas simples que pueblan el lugar de trabajo de un proyecto. Puede encontrar una lista completa de los mosaicos de ootb en: **/libs/cq/gui/components/projects/admin/pod. **Los propietarios de proyectos siempre pueden agregar o quitar mosaicos después de crear un proyecto.
 
 ### Funciones {#roles}
 
-Hay 3 [Roles predeterminados](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html#UserRolesinaProject) para cada proyecto: **Observadores**, **Editores**, y **Propietarios**. Al agregar nodos secundarios debajo del nodo de roles, puede agregar roles de proyecto adicionales específicos de la empresa para la plantilla. A continuación, puede vincular estas funciones a flujos de trabajo específicos asociados al proyecto.
+Hay tres [Roles predeterminados](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/projects/projects.html) para cada proyecto: **Observadores**, **Editores**, y **Propietarios**. Al agregar nodos secundarios debajo del nodo de funciones, puede agregar funciones de proyecto adicionales específicas de la empresa para la plantilla. A continuación, puede vincular estas funciones a flujos de trabajo específicos asociados al proyecto.
 
 ### Flujos de trabajo {#workflows}
 
-Una de las razones más atractivas para crear una plantilla de proyecto personalizada es que le ofrece la capacidad de configurar los flujos de trabajo disponibles para utilizarlos con el proyecto. Pueden ser flujos de trabajo OOTB o flujos de trabajo personalizados. Debajo del **flujos de trabajo** debe haber un nodo **modelos** nodo (también `nt:unstructured`) y los nodos secundarios debajo de especifican los modelos de flujo de trabajo disponibles. La propiedad **modelId **apunta al modelo de flujo de trabajo en /etc/workflow y a la propiedad **asistente** apunta al cuadro de diálogo utilizado al iniciar el flujo de trabajo. Una gran ventaja de los proyectos es la capacidad de agregar un cuadro de diálogo personalizado (asistente) para capturar metadatos específicos de la empresa al principio del flujo de trabajo que puedan dirigir más acciones dentro del flujo de trabajo.
+Una de las razones más atractivas para crear una plantilla de proyecto personalizada es que le ofrece la capacidad de configurar los flujos de trabajo disponibles para utilizarlos con el proyecto. Pueden ser flujos de trabajo OOTB o flujos de trabajo personalizados. Debajo del **flujos de trabajo** debe haber un nodo **modelos** nodo (también `nt:unstructured`) y los nodos secundarios debajo de especifican los modelos de flujo de trabajo disponibles. La propiedad **modelId **apunta al modelo de flujo de trabajo en /etc/workflow y a la propiedad **asistente** apunta al cuadro de diálogo utilizado al iniciar el flujo de trabajo. Una ventaja significativa de los proyectos es la capacidad de agregar un cuadro de diálogo personalizado (asistente) para capturar metadatos específicos de la empresa al principio del flujo de trabajo que puedan dirigir más acciones dentro del flujo de trabajo.
 
 ```shell
 <projects-template-root> (cq:Template)
@@ -90,9 +90,9 @@ Una de las razones más atractivas para crear una plantilla de proyecto personal
 
 ## Creación de una plantilla de proyecto {#creating-project-template}
 
-Dado que principalmente estamos copiando/configurando nodos, utilizaremos CRXDE Lite. AEM En la instancia de la local, abra. [CRXDE Lite](http://localhost:4502/crx/de/index.jsp).
+Dado que principalmente copiamos/configuramos nodos, utilizaremos CRXDE Lite. AEM En la instancia local de, abra [CRXDE Lite](http://localhost:4502/crx/de/index.jsp).
 
-1. Comience creando una nueva carpeta debajo de `/apps/&lt;your-app-folder&gt;` nombrado `projects`. Cree otra carpeta debajo de esa carpeta con nombre `templates`.
+1. Comience creando una carpeta debajo de `/apps/&lt;your-app-folder&gt;` nombrado `projects`. Cree otra carpeta debajo de esa carpeta con nombre `templates`.
 
    ```shell
    /apps/aem-guides/projects-tasks/
@@ -148,11 +148,11 @@ Dado que principalmente estamos copiando/configurando nodos, utilizaremos CRXDE 
 
 1. Agregaremos una función de aprobador personalizada a nuestra plantilla de proyecto.
 
-   1. Debajo del nodo de plantilla del proyecto (authoring-project) , agregue un nuevo **nt:unstructured** nodo etiquetado **funciones**.
+   1. Debajo del nodo de plantilla del proyecto (authoring-project) , agregue un nuevo **nt:unstructured** etiquetado con nodos **funciones**.
    1. Añadir otro **nt:unstructured** nodo denominado aprobadores como elemento secundario del nodo roles.
    1. Agregar propiedades de cadena **jcr:título** = &quot;**Aprobadores**&quot;, **roleclass** =&quot;**propietario**&quot;, **roleid**=&quot;**aprobadores**&quot;.
       1. El nombre del nodo de aprobadores, así como jcr:title y roleid, pueden ser cualquier valor de cadena (siempre que roleid sea único).
-      1. **roleclass** determina los permisos aplicados a ese rol en función de [3 funciones OOTB](https://docs.adobe.com/docs/en/aem/6-3/author/projects.html#User%20Roles%20in%20a%20Project): **propietario**, **editor**, y **observador**.
+      1. **roleclass** determina los permisos aplicados a ese rol en función de [tres funciones de OOTB](https://docs.adobe.com/content/docs/en/aem/6-3/author/projects.html): **propietario**, **editor**, y **observador**.
       1. En general, si la función personalizada es más bien una función directiva, se puede **propietario;** si se trata de una función de creación más específica como Fotógrafo o Diseñador, **editor** roleclass debería ser suficiente. La gran diferencia entre **propietario** y **editor** Los propietarios del proyecto pueden actualizar las propiedades del proyecto y agregar nuevos usuarios al proyecto.
 
    ```shell
@@ -165,7 +165,7 @@ Dado que principalmente estamos copiando/configurando nodos, utilizaremos CRXDE 
                 - roleid = "approver"
    ```
 
-1. Al copiar la plantilla Proyecto simple, obtendrá 4 flujos de trabajo OOTB configurados. Cada nodo debajo de flujos de trabajo/modelos apunta a un flujo de trabajo específico y a un asistente de cuadro de diálogo de inicio para ese flujo de trabajo. Más adelante en este tutorial crearemos un flujo de trabajo personalizado para este proyecto. Por ahora, elimine los nodos debajo de flujo de trabajo/modelos:
+1. Al copiar la plantilla Proyecto simple, obtendrá cuatro flujos de trabajo OOTB configurados. Cada nodo debajo de flujos de trabajo/modelos apunta a un flujo de trabajo específico y a un asistente de cuadro de diálogo de inicio para ese flujo de trabajo. Más adelante en este tutorial crearemos un flujo de trabajo personalizado para este proyecto. Por ahora, elimine los nodos debajo de flujo de trabajo/modelos:
 
    ```shell
    ../projects/templates/authoring-project
@@ -177,7 +177,7 @@ Dado que principalmente estamos copiando/configurando nodos, utilizaremos CRXDE 
    ```
 
 1. Para facilitar a los autores de contenido la identificación de la plantilla de proyecto, puede agregar una miniatura personalizada. El tamaño recomendado sería de 319 x 319 píxeles.
-   1. En CRXDE Lite, cree un nuevo archivo como secundario de los nodos gadgets, roles y flujos de trabajo llamados **thumbnail.png**.
+   1. En CRXDE Lite, cree un archivo como secundario de los nodos gadgets, roles y flujos de trabajo llamados **thumbnail.png**.
    1. Guarde y, a continuación, vaya al `jcr:content` y haga doble clic en el `jcr:data` (evite hacer clic en &quot;Ver&quot;).
       1. Esto debería solicitarle una edición `jcr:data` y puede cargar una miniatura personalizada.
 
@@ -247,13 +247,13 @@ Representación XML finalizada de la plantilla de proyecto:
 
 ## Prueba de la plantilla de proyecto personalizada
 
-Ahora podemos probar nuestra plantilla de proyecto creando un nuevo proyecto.
+Ahora podemos probar nuestra plantilla de proyecto creando un proyecto.
 
 1. Debería ver la plantilla personalizada como una de las opciones para crear proyectos.
 
    ![Elegir plantilla](./assets/develop-aem-projects/choose-template.png)
 
-1. Después de seleccionar la plantilla personalizada, haga clic en &#39;Siguiente&#39; y observe que al rellenar Miembros del proyecto puede agregarlos como una función de Aprobador.
+1. Después de seleccionar la plantilla personalizada, haga clic en &#39;Siguiente&#39; y observe que al rellenar Miembros del proyecto, puede agregarlos como una función de Aprobador.
 
    ![Aprobar](./assets/develop-aem-projects/user-approver.png)
 
@@ -264,7 +264,7 @@ Ahora podemos probar nuestra plantilla de proyecto creando un nuevo proyecto.
 
 ## ¿Por qué Workflow?
 
-AEM Tradicionalmente, los flujos de trabajo que se centran en un proceso de aprobación han utilizado pasos del flujo de trabajo de participantes. AEM AEM La bandeja de entrada de incluye detalles sobre tareas y flujos de trabajo, así como una integración mejorada con los proyectos de. Estas funciones hacen que el uso de los pasos del proceso de creación de tareas de proyectos sea una opción más atractiva.
+AEM Tradicionalmente, los flujos de trabajo que se centran en un proceso de aprobación han utilizado pasos del flujo de trabajo de participantes. AEM AEM La Bandeja de entrada de incluye detalles sobre Tareas y Flujo de trabajo y una integración mejorada con Proyectos de. Estas funciones hacen que el uso de los pasos del proceso de creación de tareas de proyectos sea una opción más atractiva.
 
 ### ¿Por qué tareas?
 
@@ -290,27 +290,27 @@ El primer paso es crear una tarea para terminar de editar un fragmento de conten
 
 Una vez completada la primera tarea, el usuario asignado tendrá tres opciones para enrutar el flujo de trabajo:
 
-**Normal **: el enrutamiento normal crea una tarea asignada al grupo de aprobadores del proyecto para su revisión y aprobación. La prioridad de la tarea es Normal y la fecha de vencimiento es 5 días a partir de la fecha de creación.
+**Normal **: el enrutamiento normal crea una tarea asignada al grupo de aprobadores del proyecto para su revisión y aprobación. La prioridad de la tarea es Normal y la fecha de vencimiento es cinco días a partir de la fecha de creación.
 
-**Apurar** : el enrutamiento de urgencia también crea una tarea asignada al grupo de aprobadores del proyecto. La prioridad de la tarea es Alta y la fecha de vencimiento es solo 1 día.
+**Apurar** : el enrutamiento de urgencia también crea una tarea asignada al grupo de aprobadores del proyecto. La prioridad de la tarea es Alta y la fecha de vencimiento es solo un día.
 
 **Omitir** : en este flujo de trabajo de ejemplo, el participante inicial tiene la opción de omitir el grupo de aprobación. (sí, esto podría frustrar el propósito de un flujo de trabajo de &#39;Aprobación&#39;, pero nos permite ilustrar capacidades de enrutamiento adicionales)
 
-El grupo de aprobadores puede aprobar el contenido o enviarlo de vuelta al usuario asignado inicial para que lo vuelva a procesar. En caso de que se devuelva para volver a trabajar, se creará una nueva tarea con la etiqueta adecuada &quot;Enviado de nuevo para volver a trabajar&quot;.
+El grupo de aprobadores puede aprobar el contenido o enviarlo de vuelta al usuario asignado inicial para que lo reprocese. En caso de que se devuelva para, se creará una nueva tarea con la etiqueta &quot;Enviado de nuevo para volver a trabajar&quot;.
 
 El último paso del flujo de trabajo utiliza el paso ootb del proceso Activar página/recurso y replica la carga útil.
 
 ## Creación del modelo del flujo de trabajo
 
-1. AEM En el menú Inicio de la, vaya a Herramientas -> Flujo de trabajo -> Modelos. Haga clic en &quot;Crear&quot; en la esquina superior derecha para crear un nuevo modelo de flujo de trabajo.
+1. AEM En el menú Inicio de la, vaya a Herramientas -> Flujo de trabajo -> Modelos. Haga clic en &quot;Crear&quot; en la esquina superior derecha para crear un modelo de flujo de trabajo.
 
    Asigne un título al nuevo modelo: &quot;Flujo de trabajo de aprobación de contenido&quot; y un nombre de URL: &quot;content-approval-workflow&quot;.
 
    ![Cuadro de diálogo Crear flujo de trabajo](./assets/develop-aem-projects/workflow-create-dialog.png)
 
-   Para obtener más información relacionada con [crear flujos de trabajo leer aquí](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/workflows-models.html).
+   [Para obtener más información relacionada con la creación de flujos de trabajo, lea aquí](https://docs.adobe.com/content/help/en/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html).
 
-1. Como práctica recomendada, los flujos de trabajo personalizados deben agruparse en su propia carpeta debajo de /etc/workflow/models. En CRXDE Lite, cree un nuevo **&#39;nt:folder&#39;** debajo de /etc/workflow/models con nombre **&quot;aem-guides&quot;**. Añadir una subcarpeta garantiza que los flujos de trabajo personalizados no se sobrescriban accidentalmente durante las actualizaciones o instalaciones del Service Pack.
+1. Como práctica recomendada, los flujos de trabajo personalizados deben agruparse en su propia carpeta debajo de /etc/workflow/models. En CRXDE Lite, cree un **&#39;nt:folder&#39;** debajo de /etc/workflow/models con nombre **&quot;aem-guides&quot;**. Añadir una subcarpeta garantiza que los flujos de trabajo personalizados no se sobrescriban accidentalmente durante las actualizaciones o instalaciones del Service Pack.
 
    &#42;Tenga en cuenta que es importante no colocar nunca la carpeta o los flujos de trabajo personalizados debajo de subcarpetas ootb como /etc/workflow/models/dam o /etc/workflow/models/projects, ya que las actualizaciones o los paquetes de servicio también pueden sobrescribir toda la subcarpeta.
 
@@ -320,7 +320,7 @@ El último paso del flujo de trabajo utiliza el paso ootb del proceso Activar p�
 
    >[!NOTE]
    >
-   >AEM Si utiliza la versión 6.4 o posterior, la ubicación del flujo de trabajo ha cambiado. Consulte [haga clic aquí para obtener más detalles.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/workflows-best-practices.html#LocationsWorkflowModels)
+   >AEM Si utiliza la versión 6.4 o posterior, la ubicación del flujo de trabajo ha cambiado. Consulte [haga clic aquí para obtener más detalles.](https://docs.adobe.com/content/help/en/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html)
 
    AEM Si utiliza la versión 6.4 o posterior, el modelo de flujo de trabajo se crea en `/conf/global/settings/workflow/models`. Repita los pasos anteriores con el directorio /conf y agregue una subcarpeta denominada `aem-guides` y mueva el `content-approval-workflow` debajo de ella.
 
@@ -372,7 +372,7 @@ Ubicación del modelo de flujo de trabajo en 6.4+
        Due In - Days = "2"
    ```
 
-   La pestaña de enrutamiento es un cuadro de diálogo opcional que puede especificar las acciones disponibles para el usuario que completa la tarea. Estas acciones son solo valores de cadena que se guardan en los metadatos del flujo de trabajo. Estos valores se pueden leer mediante scripts o pasos de proceso más adelante en el flujo de trabajo para &quot;enrutar&quot; dinámicamente el flujo de trabajo. Basado en el [objetivos de flujo de trabajo](#goals-tutorial) agregaremos tres acciones a esta pestaña:
+   La pestaña de enrutamiento es un cuadro de diálogo opcional que puede especificar las acciones disponibles para el usuario que completa la tarea. Estas acciones son solo valores de cadena que se guardan en los metadatos del flujo de trabajo. Estos valores se pueden leer mediante scripts o pasos de proceso más adelante en el flujo de trabajo para &quot;enrutar&quot; dinámicamente el flujo de trabajo. En función de los objetivos de flujo de trabajo que estableceremos, agregue tres acciones a esta pestaña:
 
    ```shell
    Routing Tab
@@ -393,7 +393,7 @@ Ubicación del modelo de flujo de trabajo en 6.4+
 
 1. En el paso anterior hicimos referencia a un script anterior a la creación de la tarea. Crearemos esa secuencia de comandos ahora en la que estableceremos el Usuario asignado de la tarea en función del valor de un flujo de trabajo &quot;Valor de metadatos&quot;**asignado**&quot;. El **&quot;asignado&quot;** se establece cuando se inicia el flujo de trabajo. También leeremos los metadatos del flujo de trabajo para elegir dinámicamente la prioridad de la tarea leyendo el &quot;**taskPriority&quot;** valor de los metadatos del flujo de trabajo, así como la **&quot;taskDueDate&quot; **que se establece dinámicamente cuando vence la primera tarea.
 
-   Para fines organizativos, hemos creado una carpeta debajo de la carpeta de la aplicación para albergar todos los scripts relacionados con el proyecto: **/apps/aem-guides/projects-tasks/projects/scripts**. Cree un nuevo archivo debajo de esta carpeta llamado **&quot;start-task-config.ecma&quot;**. &#42;Tenga en cuenta que la ruta al archivo start-task-config.ecma coincide con la ruta establecida en la pestaña Configuración avanzada del paso 4.
+   Para fines organizativos, hemos creado una carpeta debajo de la carpeta de la aplicación para albergar todos los scripts relacionados con el proyecto: **/apps/aem-guides/projects-tasks/projects/scripts**. Cree un archivo debajo de esta carpeta llamado **&quot;start-task-config.ecma&quot;**. &#42;Tenga en cuenta que la ruta al archivo start-task-config.ecma coincide con la ruta establecida en la pestaña Configuración avanzada del paso 4.
 
    Agregue lo siguiente como contenido del archivo:
 
@@ -738,7 +738,7 @@ La configuración del flujo de trabajo es un área de una plantilla de proyecto 
    >AEM Si se utiliza la versión 6.4 de la, la ubicación del flujo de trabajo ha cambiado. Señale el `modelId` a la ubicación del modelo de flujo de trabajo de tiempo de ejecución en `/var/workflow/models/aem-guides/content-approval-workflow`
    >
    >
-   >Consulte [Haga clic aquí para obtener más información sobre el cambio de ubicación del flujo de trabajo.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/workflows-best-practices.html#LocationsWorkflowModels)
+   >Consulte [Haga clic aquí para obtener más información sobre el cambio de ubicación del flujo de trabajo.](https://docs.adobe.com/content/help/en/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html)
 
    ```xml
    <contentapproval
@@ -754,4 +754,4 @@ La configuración del flujo de trabajo es un área de una plantilla de proyecto 
 
 * [Descargar paquete de tutorial finalizado](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [Repositorio de código completo en GitHub](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
-* [AEM Documentación de proyectos de](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html)
+* [AEM Documentación de proyectos de](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/projects/projects.html)
