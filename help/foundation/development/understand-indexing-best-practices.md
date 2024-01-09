@@ -12,9 +12,9 @@ duration: 0
 last-substantial-update: 2024-01-04T00:00:00Z
 jira: KT-14745
 thumbnail: KT-14745.jpeg
-source-git-commit: 5fe651bc0dc73397ae9602a28d63b7dc084fcc70
+source-git-commit: 7f69fc888a7b603ffefc70d89ea470146971067e
 workflow-type: tm+mt
-source-wordcount: '1331'
+source-wordcount: '1418'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,9 @@ A veces, debe crear índices personalizados para satisfacer los requisitos de b�
 
 ### Personalización del índice OOTB
 
-- Al personalizar el índice OOTB, utilice **\&lt;ootbindexname>-\&lt;productversion>-custom-\&lt;customversion>** convención de nomenclatura. Por ejemplo, `cqPageLucene-custom-1` o `damAssetLucene-8-custom-1`. Esto ayuda a combinar la definición de índice personalizada cada vez que se actualiza el índice OOTB. Consulte [Cambios en los índices predeterminados de](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?#changes-to-out-of-the-box-indexes) para obtener más información.
+- Entrada **AEM CS**, al personalizar el índice OOTB use **\&lt;ootbindexname>-\&lt;productversion>-custom-\&lt;customversion>** convención de nomenclatura. Por ejemplo, `cqPageLucene-custom-1` o `damAssetLucene-8-custom-1`. Esto ayuda a combinar la definición de índice personalizada cada vez que se actualiza el índice OOTB. Consulte [Cambios en los índices predeterminados de](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?#changes-to-out-of-the-box-indexes) para obtener más información.
+
+- Entrada **AEM.X**, el nombre anterior _no funciona_, sin embargo, actualice el índice OOTB con propiedades adicionales en la `indexRules` nodo.
 
 - AEM Copie siempre la definición de índice OOTB más reciente de la instancia de mediante el Administrador de paquetes CRX DE (/crx/packmgr/), cambie el nombre y agregue personalizaciones dentro del archivo XML.
 
@@ -57,11 +59,13 @@ A veces, debe crear índices personalizados para satisfacer los requisitos de b�
 
 ### Índice totalmente personalizado
 
-- Al crear un índice totalmente personalizado, utilice **\&lt;prefix>.\&lt;customindexname>-\&lt;version>-custom-\&lt;customversion>** convención de nomenclatura. Por ejemplo, `wknd.adventures-1-custom-1`. Esto ayuda a evitar conflictos de nombres. Aquí, `wknd` es el prefijo y `adventures` es el nombre del índice personalizado.
+La creación de un índice totalmente personalizado debe ser la última opción y solo si la opción anterior no funciona.
+
+- Al crear un índice totalmente personalizado, utilice **\&lt;prefix>.\&lt;customindexname>-\&lt;version>-custom-\&lt;customversion>** convención de nomenclatura. Por ejemplo, `wknd.adventures-1-custom-1`. Esto ayuda a evitar conflictos de nombres. Aquí, `wknd` es el prefijo y `adventures` es el nombre del índice personalizado. AEM Esta convención es aplicable tanto a la versión 6.X como a la versión 6.X de AEM CS y ayuda a prepararse para una migración futura a AEM CS.
 
 - AEMCS solo admite índices Lucene, por lo que, para prepararse para una migración futura a AEMCS, utilice siempre índices Lucene. Consulte [Índices Lucene frente a índices de propiedades](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing.html?#lucene-or-property-indexes) para obtener más información.
 
-- No cree ningún índice personalizado en `dam:Asset` tipo de nodo, pero personalizar el OOTB `damAssetLucene` índice. Ha sido una causa raíz común de problemas funcionales y de rendimiento.
+- Evite crear un índice personalizado en el mismo tipo de nodo que el índice OOTB. En su lugar, personalice el índice OOTB con propiedades adicionales en la `indexRules` nodo. Por ejemplo, no cree un índice personalizado en `dam:Asset` tipo de nodo, pero personalizar el OOTB `damAssetLucene` índice. _Ha sido una causa raíz común de problemas funcionales y de rendimiento_.
 
 - Además, evite añadir varios tipos de nodos, por ejemplo `cq:Page` y `cq:Tag` en las reglas de indexación (`indexRules`) nodo. En su lugar, cree índices independientes para cada tipo de nodo.
 
@@ -70,7 +74,7 @@ A veces, debe crear índices personalizados para satisfacer los requisitos de b�
 - Las directrices de definición de índice son:
    - El tipo de nodo (`jcr:primaryType`) debe ser `oak:QueryIndexDefinition`
    - El tipo de índice (`type`) debe ser `lucene`
-   - La propiedad asíncrona (`async`) debe ser `async, rt`
+   - La propiedad asíncrona (`async`) debe ser `async,nrt`
    - Uso `includedPaths` y evitar `excludedPaths` propiedad. Siempre establecido `queryPaths` con el mismo valor que `includedPaths` valor.
    - Para aplicar la restricción de ruta, utilice `evaluatePathRestrictions` y establézcalo en. `true`.
    - Uso `tags` para etiquetar el índice y, mientras consulta, especifique este valor de etiquetas para utilizar el índice. La sintaxis general de la consulta es `<query> option(index tag <tagName>)`.
@@ -80,7 +84,7 @@ A veces, debe crear índices personalizados para satisfacer los requisitos de b�
       - jcr:primaryType = "oak:QueryIndexDefinition"
       - type = "lucene"
       - compatVersion = 2
-      - async = ["async", "rt"]
+      - async = ["async", "nrt"]
       - includedPaths = ["/content/wknd"]
       - queryPaths = ["/content/wknd"]
       - evaluatePathRestrictions = true
@@ -90,7 +94,7 @@ A veces, debe crear índices personalizados para satisfacer los requisitos de b�
 
 ### Ejemplos
 
-Veamos algunos ejemplos para comprender las prácticas recomendadas.
+Para comprender las prácticas recomendadas, veamos algunos ejemplos.
 
 #### Uso incorrecto de la propiedad de etiquetas
 
