@@ -9,21 +9,22 @@ version: Cloud Service
 topic: Integrations
 jira: KT-14501
 duration: 40
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+exl-id: a8531e82-18cd-4b32-8148-d6fc5f6e51c6
+source-git-commit: 016b06d3bd5b62945c168588839454544b2f7d41
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '130'
 ht-degree: 3%
 
 ---
 
 # Introducción
 
-En este tutorial implementaremos un caso de uso sencillo de almacenamiento de envíos de formularios en Azure Storage con etiquetas de índice blob. Las etiquetas de índice de blob proporcionan funcionalidades de detección y administración de datos mediante atributos de etiqueta de índice de valor clave. Puede categorizar y buscar objetos dentro de un solo contenedor o en todos los contenedores de su cuenta de almacenamiento.
+En este tutorial, aprenderá a implementar un caso de uso sencillo de almacenamiento de envíos de formularios en Azure Storage con etiquetas de índice blob. Las etiquetas de índice de blob proporcionan funcionalidades de detección y administración de datos mediante atributos de etiqueta de índice de valor clave. Puede categorizar y buscar objetos dentro de un solo contenedor o en todos los contenedores de su cuenta de almacenamiento.
 ![blob-index-tags](assets/blob-with-index-tags.png)
 
 ## Requisitos previos
 
-* Experiencia con AEM Forms CS
+* Experiencia con AEM Forms CS.
 * Experiencia en la implementación de código mediante Cloud Manager.
 * Acceso a la instancia de AEM Forms CS lista para la nube.
 
