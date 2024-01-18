@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 55f5cef46f7451ebb5b42b8cf17e71efeb0329c2
+source-git-commit: aa6cd605c617de45003a96b1c14e37f055a8c566
 workflow-type: tm+mt
-source-wordcount: '1096'
+source-wordcount: '1103'
 ht-degree: 17%
 
 ---
@@ -319,6 +319,7 @@ ht-degree: 17%
    + Almacenar envíos de formularios en una unidad y SharePoint{#one-drive}
       + [Almacenar datos de formulario en una unidad](./forms/forms-cs-one-drive/store-form-submission-one-drive.md)
       + [Almacenar datos de formulario en SharePoint](./forms/forms-cs-sharepoint/store-form-submission-in-sharepoint.md)
+      + [Rellenar previamente el formulario con datos de la lista de SharePoint](./forms/forms-cs-sharepoint/prefill-data-from-sharepoint-list.md)
 + Extensibilidad de asset compute{#asset-compute}
    + [Información general](./asset-compute/overview.md)
    + Configuración de{#set-up}
