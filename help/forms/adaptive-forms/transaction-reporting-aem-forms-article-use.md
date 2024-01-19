@@ -9,16 +9,16 @@ level: Beginner
 exl-id: 36c38cb6-6f6a-4328-abf5-7a30059b66ce
 last-substantial-update: 2019-03-20T00:00:00Z
 duration: 96
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+source-git-commit: 4b88045a626b5e7bd1386e62ee54ac6fe2ce9282
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 22%
+source-wordcount: '331'
+ht-degree: 23%
 
 ---
 
 # Uso de informes de transacciones en AEM Forms{#using-transaction-reporting-in-aem-forms}
 
-La creación de informes de transacciones para capturar el número de envíos de formularios, la representación de documentos mediante servicios de documentos y la representación de comunicaciones interactivas (canales web y de impresión) se ha introducido con AEM Forms 6.4.1. Esta capacidad es principalmente para los clientes que desean obtener una licencia del software en función del número de envíos de formularios o documentos representados. Actualmente, esta funcionalidad solo está disponible en la pila OSGI de AEM Forms.
+La creación de informes de transacciones para capturar el número de envíos de formularios, la representación de documentos mediante servicios de documentos y la representación de comunicaciones interactivas (canales web y de impresión) se ha introducido con AEM Forms 6.4.1. Actualmente, esta funcionalidad solo está disponible en la pila OSGI de AEM Forms.
 
 ## Habilitar informes de transacciones {#enabling-transaction-reporting}
 
@@ -35,7 +35,7 @@ Una vez habilitados los informes de transacciones, puede enviar Forms adaptable,
 
 Para ver el informe de transacciones, inicie sesión en AEM Forms como administrador. Solo los miembros del grupo fd-Administrator pueden ver el informe de transacciones.
 
-Seleccionar herramientas | FORMS | Ver informe de transacciones
+Seleccionar herramientas | Forms | Ver informe de transacciones
 
 o vea el informe de transacciones haciendo clic en [aquí](http://localhost:4502/mnt/overlay/fd/transaction/gui/content/report.html)
 
