@@ -8,8 +8,8 @@ role: Developer
 level: Experienced
 exl-id: 832f04b4-f22f-4cf9-8136-e3c1081de7a9
 last-substantial-update: 2019-03-20T00:00:00Z
-duration: 274
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 237
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 0%
@@ -166,7 +166,7 @@ Para que este ejemplo funcione en su sistema, siga los pasos que se indican a co
 
 * [Ir a Forms y documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 
-* Haga clic en Crear | Archivo Cargar y cargar el archivo tag-and-store-in-dam-adaptive-form.zip
+* Haga clic en Crear | Cargue y cargue el archivo tag-and-store-in-dam-adaptive-form.zip
 
 * [Importar los recursos del artículo](assets/tag-and-store-in-dam-assets.zip) AEM uso del administrador de paquetes
 * Abra el [formulario de ejemplo en modo de vista previa](http://localhost:4502/content/dam/formsanddocuments/tagandstoreindam/jcr:content?wcmmode=disabled). **Rellene todos los campos** y envíe el formulario.

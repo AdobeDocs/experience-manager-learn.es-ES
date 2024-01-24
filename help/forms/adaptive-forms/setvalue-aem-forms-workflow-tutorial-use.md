@@ -7,8 +7,8 @@ role: Developer
 level: Experienced
 exl-id: 3919efee-6998-48e8-85d7-91b6943d23f9
 last-substantial-update: 2020-01-09T00:00:00Z
-duration: 140
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 118
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Para implementar los recursos en el sistema local, siga los pasos a continuació
 * Dirija el explorador a [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
 * Importe e instale el archivo setValueWorkflow.zip. Tiene el modelo de flujo de trabajo de ejemplo.
 * Dirija el explorador a [Forms y documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* Haga clic en Crear | Carga de archivo
+* Haga clic en Crear | Carga de archivos
 * Cargue TimeOfRequestForm.zip
 * Abra el [TimeOffRequestForm](http://localhost:4502/content/dam/formsanddocuments/timeoffapplication/jcr:content?wcmmode=disabled)
 * Rellene los 3 campos obligatorios y realice el envío

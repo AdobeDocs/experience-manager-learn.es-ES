@@ -10,8 +10,8 @@ level: Beginner
 jira: KT-9359
 exl-id: f7c1f991-0486-4355-8502-cd5b038537e3
 last-substantial-update: 2019-07-07T00:00:00Z
-duration: 111
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 102
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 16%
@@ -36,7 +36,7 @@ Abra el formulario en modo de edición Asegúrese de que está en la capa de est
 Se encuentra en el estado predeterminado cuando abre el editor de estilos para la pestaña, como se muestra en la captura de pantalla siguiente
 ![navigation-tab](assets/navigation-tab.png)
 
-Establezca las propiedades CSS para el estado predeterminado como se muestra a continuación | Categoría | Nombre de propiedad | Valor de propiedad | |:—|:—|:—| | Dimension y posición | Ancho | 50 px | | Texto | Grosor de fuente| Negrita | | Texto | Color | #FFF | |Texto | Altura de línea| 3 | |Texto | Alineación de texto | Izquierda | Color de |fondo| | #056dae |
+Establezca las propiedades CSS para el estado predeterminado como se muestra a continuación | Categoría | Nombre de propiedad | Valor de propiedad | |:—|:—|:—| | Dimension y posición | Ancho | 50 px | | Texto | Grosor de fuente| Negrita | | Texto | Color | #FFF | |Texto | Altura de línea| 3 | |Texto | Alineación de texto | Izquierda | |Fondo| Color | #056dae |
 
 Guarde los cambios
 

@@ -7,11 +7,11 @@ role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 8b05fc02-c0c5-48ad-a53e-d73b805ee91f
-duration: 472
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 421
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '940'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -55,7 +55,7 @@ Si los modelos de fragmento de contenido son **no** habilitada para una configur
    >Este cambio de configuración no se puede deshacer desde el [!UICONTROL AEM Configuración de] IU web. Para deshacer esta configuración:
    >    
    >    1. Abrir [CRXDE Lite](http://localhost:4502/crx/de)
-   >    1. Vaya a `/conf/wknd-mobile/settings/dam/cfm`
+   >    1. Navegue hasta `/conf/wknd-mobile/settings/dam/cfm`
    >    1. Elimine el `models` nodo
    >    
    >Cualquier modelo de fragmento de contenido existente creado con esta configuración se eliminará, así como sus definiciones se almacenarán en `/conf/wknd-mobile/settings/dam/cfm/models`.
@@ -87,7 +87,7 @@ Armados con la asignación, podemos definir los fragmentos de contenido que se u
 
 ## Creación del modelo de fragmento de contenido
 
-1. Vaya a **[!UICONTROL Herramientas] > [!UICONTROL General] > [!UICONTROL Modelos de fragmento de contenido]**.
+1. Vaya a **[!UICONTROL Herramientas] > [!UICONTROL General]  >[!UICONTROL Modelos de fragmento de contenido]**.
 1. Pulse el botón **[!DNL WKND Mobile]** carpeta para abrir.
 1. Tocar **[!UICONTROL Crear]** para abrir el asistente de creación del Modelo de fragmento de contenido.
 1. Entrar **[!DNL Event]** como el **[!UICONTROL Título de modelo]** *(la descripción es opcional)* y pulse **[!UICONTROL Crear]** para guardar.

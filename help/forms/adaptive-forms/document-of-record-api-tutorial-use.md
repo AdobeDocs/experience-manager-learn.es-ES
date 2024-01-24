@@ -8,8 +8,8 @@ role: Developer
 level: Experienced
 exl-id: 9a3b2128-a383-46ea-bcdc-6015105c70cc
 last-substantial-update: 2023-01-26T00:00:00Z
-duration: 102
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 81
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Generar documento de registro (DOR) mediante programación
 
-Este artículo ilustra el uso de la variable `com.adobe.aemds.guide.addon.dor.DoRService API` para generar **Documento de registro** mediante programación. [Documento de registro](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) es una versión del PDF de los datos capturados en el formulario adaptable.
+Este artículo ilustra el uso de la variable `com.adobe.aemds.guide.addon.dor.DoRService API` para generar **Documento de registro** mediante programación. [Documento de registro](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/asynchronous-submissions-adaptive-forms.html?lang=es) es una versión del PDF de los datos capturados en el formulario adaptable.
 
 1. A continuación se muestra el fragmento de código. La primera línea obtiene el servicio DOR.
 1. Establezca DoROptions.

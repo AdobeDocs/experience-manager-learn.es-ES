@@ -9,8 +9,8 @@ topic: Headless, Content Management
 level: Intermediate
 role: Developer
 exl-id: 790a33a9-b4f4-4568-8dfe-7e473a5b68b6
-duration: 952
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 878
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '1409'
 ht-degree: 0%
@@ -63,7 +63,7 @@ Compruebe la **Traducible** , si el contenido se va a localizar. Solo se puede l
 
 Al crear una consulta de GraphQL, los desarrolladores pueden elegir diferentes tipos de respuesta de `html`, `plaintext`, `markdown`, y `json` desde un campo de varias líneas.
 
-Los desarrolladores pueden utilizar el [Previsualización de JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html) en el editor de fragmentos de contenido para mostrar todos los valores del fragmento de contenido actual que se pueden devolver mediante la API de GraphQL.
+Los desarrolladores pueden utilizar el [Previsualización de JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=es) en el editor de fragmentos de contenido para mostrar todos los valores del fragmento de contenido actual que se pueden devolver mediante la API de GraphQL.
 
 ## Consulta persistente de GraphQL
 

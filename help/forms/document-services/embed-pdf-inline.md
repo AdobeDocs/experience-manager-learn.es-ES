@@ -9,8 +9,8 @@ level: Experienced
 jira: KT-9411
 exl-id: 327ffe26-e88e-49f0-9f5a-63e2a92e1c8a
 last-substantial-update: 2021-07-07T00:00:00Z
-duration: 239
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 202
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 1%
@@ -86,7 +86,7 @@ $(document).ready(function() {
 ## Generar datos de ejemplo para el XDP
 
 * Abra el XDP en AEM Forms Designer.
-* Haga clic en Archivo | Propiedades del formulario | Vista previa
+* Haga clic en Archivo | Propiedades del formulario | Previsualizar
 * Haga clic en Generar datos de previsualización
 * Haga clic en Generar
 * Proporcionar un nombre de archivo significativo como &quot;form-data.xml&quot;

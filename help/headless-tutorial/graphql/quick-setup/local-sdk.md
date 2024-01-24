@@ -10,8 +10,8 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: d2da6efa-1f77-4391-adda-e3180c42addc
-duration: 328
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 297
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '1151'
 ht-degree: 2%
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 # AEM AEM Configuración rápida sin encabezado mediante el SDK local de la {#setup}
 
-AEM AEM SPA AEM La configuración rápida sin encabezado le permite ponerse en contacto con el contenido sin encabezado mediante el contenido del proyecto de muestra del sitio WKND y una aplicación React de muestra (una aplicación de react) que consume el contenido a través de las API de GraphQL sin encabezado, lo que le ayuda a utilizar el contenido sin encabezado. Esta guía utiliza el [AEM SDK as a Cloud Service de](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html).
+AEM AEM SPA AEM La configuración rápida sin encabezado le permite ponerse en contacto con el contenido sin encabezado mediante el contenido del proyecto de muestra del sitio WKND y una aplicación React de muestra (una aplicación de react) que consume el contenido a través de las API de GraphQL sin encabezado, lo que le ayuda a utilizar el contenido sin encabezado. Esta guía utiliza el [AEM SDK as a Cloud Service de](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=es).
 
 ## Requisitos previos {#prerequisites}
 

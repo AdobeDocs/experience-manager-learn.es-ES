@@ -7,8 +7,8 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: 998d3678-7aef-4872-bd62-0e6ea3ff7999
-duration: 818
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 732
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '2931'
 ht-degree: 1%
@@ -163,7 +163,7 @@ Siga el mismo proceso que se describe en la [sección anterior](#fragment-refere
 | Imagen de perfil | /content/dam/wknd-shared/en/contributors/stacey-roswells.jpg |
 | Biografía | Stacey Roswells es una exitosa escaladora de rocas y aventurera alpina. Nacida en Baltimore, Maryland, Stacey es la menor de seis hijos. El padre de Stacey era teniente coronel de la Armada de los Estados Unidos y su madre era instructora de danza moderna. La familia de Stacey se mudaba con frecuencia con las tareas del padre, y tomaba las primeras fotos cuando su padre estaba destinado en Tailandia. Aquí es también donde Stacey aprendió a escalar. |
 | Nivel de experiencia del instructor | Avanzado  |
-| Habilidades | Escalada en roca | Esquí | Mochileros |
+| Habilidades | Escalada en roca | Esquí | Mochilero |
 
 **Kumar Selvaraj**
 
@@ -175,7 +175,7 @@ Siga el mismo proceso que se describe en la [sección anterior](#fragment-refere
 | Imagen de perfil | /content/dam/wknd-shared/en/contributors/kumar-selvaraj.jpg |
 | Biografía | Kumar Selvaraj es un experimentado instructor profesional certificado AMGA cuyo objetivo principal es ayudar a los estudiantes a mejorar sus habilidades de escalada y senderismo. |
 | Nivel de experiencia del instructor | Avanzado  |
-| Habilidades | Escalada en roca | Mochileros |
+| Habilidades | Escalada en roca | Mochilero |
 
 **Ayo Ogunseinde**
 
@@ -187,7 +187,7 @@ Siga el mismo proceso que se describe en la [sección anterior](#fragment-refere
 | Imagen de perfil | /content/dam/wknd-shared/en/contributors/ayo-ogunseinde-237739.jpg |
 | Biografía | Ayo Ogunseinde es un escalador profesional e instructor de mochileros que vive en Fresno, California Central. El objetivo de Ayo es guiar a los excursionistas en sus aventuras más épicas del parque nacional. |
 | Nivel de experiencia del instructor | Avanzado  |
-| Habilidades | Escalada en roca | Ciclismo | Mochileros |
+| Habilidades | Escalada en roca | Ciclismo | Mochilero |
 
 Deje el **Información adicional** campo vacío.
 

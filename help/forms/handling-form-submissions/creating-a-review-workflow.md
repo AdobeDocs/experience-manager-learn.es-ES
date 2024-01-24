@@ -11,11 +11,11 @@ role: Developer
 level: Beginner
 exl-id: 0aafd97a-2e72-4257-ad4d-e0993263b11f
 last-substantial-update: 2020-07-07T00:00:00Z
-duration: 1061
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 1049
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '127'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -25,7 +25,7 @@ Los flujos de trabajo generalmente se utilizan para enrutar los datos enviados p
 
 ## Requisitos previos
 
-Asegúrese de que tiene una instancia de trabajo de AEM Forms. Siga las [guía de instalación](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) para instalar y configurar AEM Forms
+Asegúrese de que tiene una instancia de trabajo de AEM Forms. Siga las [guía de instalación](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html?lang=es) para instalar y configurar AEM Forms
 
 En el siguiente vídeo se explica la creación del flujo de trabajo de revisión y aprobación mediante componentes de AEM Forms
 >[!VIDEO](https://video.tv.adobe.com/v/40242?quality=12&learn=on)

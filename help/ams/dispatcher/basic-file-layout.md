@@ -9,8 +9,8 @@ level: Beginner
 thumbnail: xx.jpg
 doc-type: Article
 exl-id: 8a3f2bb9-3895-45c6-8bb5-15a6d2aac50e
-duration: 439
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 373
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '1132'
 ht-degree: 0%
@@ -275,7 +275,7 @@ Los archivos predeterminados menos instalados cambian mejor, por motivos que si 
 
 En su lugar, crea un `.rpmnew` junto al original.  Esto significa que se perderán algunos cambios que podría haber deseado y se habrá creado más elementos no utilizados en las carpetas de configuración.
 
-es decir, El RPM durante la instalación de la actualización se fijará en `httpd.conf` si está en el `unaltered` diga que lo hará *replace* el archivo y usted recibirá las actualizaciones vitales.  Si la variable `httpd.conf` era `altered` entonces *no se reemplazará* el archivo y, en su lugar, creará un archivo de referencia llamado `httpd.conf.rpmnew` y las muchas correcciones deseadas estarán en ese archivo que no se aplica al inicio del servicio.
+Es decir, el RPM durante la instalación de la actualización se fijará en `httpd.conf` si está en el `unaltered` diga que lo hará *replace* el archivo y usted recibirá las actualizaciones vitales.  Si la variable `httpd.conf` era `altered` entonces *no se reemplazará* el archivo y, en su lugar, creará un archivo de referencia llamado `httpd.conf.rpmnew` y las muchas correcciones deseadas estarán en ese archivo que no se aplica al inicio del servicio.
 
 Enterprise Linux se ha configurado correctamente para gestionar mejor este caso de uso.  Proporcionan áreas en las que se pueden ampliar o anular los valores predeterminados que establecen.  Dentro de la instalación base de httpd encontrará el archivo `/etc/httpd/conf/httpd.conf`y tiene una sintaxis similar a:
 

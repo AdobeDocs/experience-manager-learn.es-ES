@@ -10,8 +10,8 @@ jira: KT-9351
 thumbnail: 343040.jpeg
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
-duration: 2511
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 2365
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '3137'
 ht-degree: 1%
@@ -111,7 +111,7 @@ Flujo de firma de aserción +++SAML
 1. Seleccione __Enviar__.
 1. El certificado recién agregado aparece encima de __Agregar certificado del archivo CRT__ sección.
 1. Tome nota de la __alias__, ya que este valor se utiliza en [Configuración OSGi del controlador de autenticación SAML 2.0](#saml-2-0-authentication-handler-osgi-configuration).
-1. Seleccionar __Guardar y cerrar__.
+1. Seleccione __Guardar y cerrar__.
 
 AEM AEM AEM El repositorio de confianza global está configurado con el certificado público del IDP de Autor de la publicación, pero dado que SAML solo se utiliza en la publicación de la publicación, el repositorio de confianza global debe replicarse para la publicación, de modo que el certificado público de IDP pueda acceder a él desde allí.
 
@@ -138,7 +138,7 @@ _Es necesario crear un repositorio de claves para el servicio de autenticación 
 1. Cree o abra el repositorio de claves. Si crea un almacén de claves, mantenga la contraseña a salvo.
    + A [almacén de claves públicas/privadas instalado en este almacén de claves](#install-aem-public-private-key-pair) solo si se requiere cifrado de firma AuthnRequest/aserción SAML.
    + Si esta integración de SAML admite el cierre de sesión, pero no la firma AuthnRequest/aserción SAML, basta con un almacén de claves vacío.
-1. Seleccionar __Guardar y cerrar__.
+1. Seleccione __Guardar y cerrar__.
 1. Cree un paquete que contenga el __authentication-service__ usuario.
 
    _Utilice la siguiente solución temporal mediante paquetes:_
@@ -225,7 +225,7 @@ Tanto la firma de AuthnRequest como el cifrado de aserción SAML son opcionales;
    + Seleccionar __Enviar__
 1. El certificado recién agregado aparece encima de __Agregar certificado del archivo CRT__ sección.
    + Tome nota de la __alias__ ya que se utiliza en la [Configuración OSGi del controlador de autenticación SAML 2.0](#saml-20-authentication-handler-osgi-configuration)
-1. Seleccionar __Guardar y cerrar__.
+1. Seleccione __Guardar y cerrar__.
 1. Cree un paquete que contenga el __authentication-service__ usuario.
 
    _Utilice la siguiente solución temporal mediante paquetes:_

@@ -8,8 +8,8 @@ topic: Development
 role: Developer
 level: Beginner
 last-substantial-update: 2021-06-09T00:00:00Z
-duration: 240
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 203
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '816'
 ht-degree: 0%
@@ -130,6 +130,6 @@ Una vez que haya escrito el servicio OSGi, o servlet, debe crear el proyecto par
 Para crear su proyecto, siga los siguientes pasos:
 
 * Abrir **ventana del símbolo del sistema**
-* Vaya a `c:\aemformsbundles\learningaemforms\core`
+* Navegue hasta `c:\aemformsbundles\learningaemforms\core`
 * Ejecutar el comando `mvn clean install`
 Si todo va bien, debería ver el paquete en la siguiente ubicación `C:\AEMFormsBundles\learningaemforms\core\target`. AEM Este paquete ya está listo para implementarse en la aplicación mediante la consola web de Félix en la que se puede utilizar la aplicación de forma predeterminada para el uso de la consola web.

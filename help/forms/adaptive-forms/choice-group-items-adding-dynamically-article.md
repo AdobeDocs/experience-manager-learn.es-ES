@@ -8,8 +8,8 @@ role: User
 level: Beginner
 exl-id: 8fbea634-7949-417f-a4d6-9e551fff63f3
 last-substantial-update: 2021-09-10T00:00:00Z
-duration: 374
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 350
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 0%
@@ -79,7 +79,7 @@ Para probar esto en el sistema:
 
 * [Descargar los recursos](assets/usingthecodeeditor.zip)
 * [Abrir Forms Y Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* Haga clic en &quot;Crear&quot; | Cargar archivo&quot; y cargue el archivo que descargó en el paso anterior
+* Haga clic en &quot;Crear&quot; | Carga de archivos&quot; y cargue el archivo que descargó en el paso anterior
 * [Previsualización de los formularios](http://localhost:4502/content/dam/formsanddocuments/simpleform/jcr:content?wcmmode=disabled)
 * Introduzca el nombre del candidato y seleccione el estado civil a casado
 * Escriba el nombre del cónyuge
@@ -92,7 +92,7 @@ Para probar esto en el sistema:
 * Instale Tomcat si todavía no lo tiene. [Las instrucciones para instalar tomcat están disponibles aquí](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html)
 * [Implemente el archivo SampleRest.war contenido en este archivo zip en su Tomcat](assets/sample-rest.zip)
 * [Abrir Forms Y Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* Haga clic en &quot;Crear&quot; | Cargar archivo&quot; y cargue el archivo que descargó en el paso anterior
+* Haga clic en &quot;Crear&quot; | Carga de archivos&quot; y cargue el archivo que descargó en el paso anterior
 * [Previsualización de los formularios](http://localhost:4502/content/dam/formsanddocuments/amortizationschedule/jcr:content?wcmmode=disabled)
 * Introduzca el importe del préstamo y desplácese fuera del campo. Esto almacenará en déclencheur la regla que muestra el campo periodo del préstamo.
 * Seleccione el período de préstamo adecuado (los elementos del período de préstamo se rellenan desde la llamada de resto)

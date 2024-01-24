@@ -10,8 +10,8 @@ level: Beginner
 jira: KT-11200
 thumbnail: kt-11200.jpg
 exl-id: bdec6cb0-34a0-4a28-b580-4d8f6a249d01
-duration: 580
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 503
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '2146'
 ht-degree: 0%
@@ -26,7 +26,7 @@ AEM Obtenga respuestas a las preguntas más frecuentes acerca de la migración d
 
 + **AEMaaCS**: [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/introduction.html?lang=es)
 + **BPA**: [Analizador de prácticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=es)
-+ **CTT**: [Herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html)
++ **CTT**: [Herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=es)
 + **LEVA**: [Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html)
 + **IMS**: [Sistema Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html)
 + **DM**: [Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1.html)
@@ -49,7 +49,7 @@ Hay tres métodos diferentes disponibles
 
 No. AEM CTT como herramienta podría extraer de la fuente de la e ingerir en AEMaaCS. Sin embargo, existen límites específicos en la plataforma AEMaaCS que deben tenerse en cuenta antes de la migración.
 
-Para obtener más información, consulte [requisitos previos de migración a cloud](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html).
+Para obtener más información, consulte [requisitos previos de migración a cloud](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=es).
 
 ### P: Tengo el informe de BPA más reciente de mi sistema de origen, ¿qué debo hacer con él?
 
@@ -128,11 +128,11 @@ Sí, hay un [Comprobar tamaño](https://experienceleague.adobe.com/docs/experien
 
 ### P: Estoy realizando la migración (extracción, ingesta). ¿Es posible validar que todo el contenido extraído se incorpora en Target?
 
-Sí, hay un [validación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html) función que forma parte de CTT.
+Sí, hay un [validación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=es) función que forma parte de CTT.
 
 ### P: Mi cliente tiene un requisito para mover contenido entre entornos de AEMaaCS, como desde Desarrollo de AEMaaCS a Fase de AEMaaCS o a Producto de AEMaaCS. ¿Puedo utilizar la herramienta de transferencia de contenido para estos casos de uso?
 
-Desafortunadamente, no. AEM El caso de uso de CTT es migrar contenido de la fuente On-Premise/alojada en AMS de la versión 6.3 o posterior a los entornos de nube de AEMaaCS. [Lea la documentación de CTT](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html).
+Desafortunadamente, no. AEM El caso de uso de CTT es migrar contenido de la fuente On-Premise/alojada en AMS de la versión 6.3 o posterior a los entornos de nube de AEMaaCS. [Lea la documentación de CTT](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=es).
 
 ### P: ¿Qué tipo de problemas se esperan durante la extracción?
 

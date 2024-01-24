@@ -1,5 +1,5 @@
 ---
-title: Introducción a la creación y publicación AEM | Creación rápida de sitios de
+title: Introducción a la creación y publicación | AEM Creación rápida de sitios de
 description: Utilice el editor de páginas de Adobe Experience Manager AEM, en el que se puede actualizar el contenido del sitio web, en el menú de la página. Descubra cómo se utilizan los componentes para facilitar la creación. AEM Comprenda la diferencia entre los entornos de creación y publicación de un, y aprenda a publicar cambios en el sitio en directo.
 version: Cloud Service
 topic: Content Management
@@ -11,8 +11,8 @@ thumbnail: KT-7497.jpg
 doc-type: Tutorial
 exl-id: 17ca57d1-2b9a-409c-b083-398d38cd6a19
 recommendations: noDisplay, noCatalog
-duration: 350
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 314
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '1285'
 ht-degree: 1%

@@ -8,8 +8,8 @@ role: Developer
 level: Experienced
 exl-id: fbe6d341-7941-46f5-bcd8-58b99396d351
 last-substantial-update: 2021-06-09T00:00:00Z
-duration: 167
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 142
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '656'
 ht-degree: 0%
@@ -49,7 +49,7 @@ Para implementar los recursos en el sistema local:
       * Importe e instale SetValueOfElementInJSONDataWorkflow.zip. Este paquete tiene el modelo de flujo de trabajo de ejemplo y el modelo de datos de formulario asociados al formulario.
 
 * Dirija el explorador a [Forms y documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* Haga clic en Crear | Carga de archivo
+* Haga clic en Crear | Carga de archivos
 * Cargar archivo TimeOffRequestForm.zip
   **Este formulario se creó con AEM Forms 6.4. Asegúrese de que está en AEM Forms 6.4 o superior**
 * Abra el [formulario](http://localhost:4502/content/dam/formsanddocuments/timeoffrequest/jcr:content?wcmmode=disabled)

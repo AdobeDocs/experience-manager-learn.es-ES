@@ -10,8 +10,8 @@ topic: Development
 feature: Developer Tools
 jira: KT-8852
 exl-id: 983e0394-7142-481f-bd5e-6c9acefbfdd0
-duration: 78
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 60
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 0%
@@ -53,7 +53,7 @@ El siguiente código de post.POST.jsp simplemente reenvía la solicitud al servl
 com.adobe.aemds.guide.utils.GuideSubmitUtils.setForwardPath(slingRequest,"/bin/formstutorial",null,null);
 ```
 
-AEM En el proyecto de la en IntelliJ, haga clic con el botón secundario en `apps/bankingapplication` y seleccione Nuevo | Empaquete y escriba SubmitToAEMervlet después de la aplicación apps.banking en el cuadro de diálogo nuevo paquete. Haga clic con el botón derecho en el nodo SubmitToAEMervlet y seleccione repositorio AEM AEM | Get Command para sincronizar el proyecto de la con el repositorio del servidor de la aplicación.
+AEM En el proyecto de la en IntelliJ, haga clic con el botón secundario en `apps/bankingapplication` y seleccione Nuevo | Empaquete y escriba SubmitToAEMervlet después de la aplicación apps.bank en el cuadro de diálogo Nuevo paquete. Haga clic con el botón derecho en el nodo SubmitToAEMervlet y seleccione repositorio | AEM AEM Get Command para sincronizar el proyecto de con el repositorio del servidor de la aplicación.
 
 
 ## Configurar formulario adaptable

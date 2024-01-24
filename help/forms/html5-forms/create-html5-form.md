@@ -11,8 +11,8 @@ role: User
 level: Beginner
 exl-id: 67a01c41-d284-4518-adb5-21702e22ccfa
 last-substantial-update: 2019-07-07T00:00:00Z
-duration: 133
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 110
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 11%
@@ -25,7 +25,7 @@ HTML5 forms es una nueva funcionalidad de Adobe Experience Manager que ofrece el
 
 ## Requisitos previos
 
-Asegúrese de que tiene una instancia de trabajo de AEM Forms. Siga las [guía de instalación](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) para instalar y configurar AEM Forms
+Asegúrese de que tiene una instancia de trabajo de AEM Forms. Siga las [guía de instalación](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html?lang=es) para instalar y configurar AEM Forms
 
 ## Creación de su primer formulario de HTML 5
 

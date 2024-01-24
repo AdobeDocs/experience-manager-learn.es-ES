@@ -1,5 +1,5 @@
 ---
-title: Ampliación de un componente principal AEM SPA | Introducción al Editor de y React
+title: Ampliación de un componente principal | AEM SPA Introducción al Editor de y React
 description: AEM SPA Obtenga información sobre cómo ampliar el modelo JSON para un componente principal existente que se utilizará con el Editor de. AEM SPA Comprender cómo añadir propiedades y contenido a un componente existente es una técnica potente para ampliar las capacidades de una implementación de Editor de segmentos de tiempo de ejecución de la aplicación de un editor de segmentos de tiempo de ejecución de la aplicación de un editor de tiempo de ejecución de la. Aprenda a utilizar el patrón de delegación para ampliar los modelos Sling y las funciones de la fusión de recursos de Sling.
 feature: SPA Editor, Core Components
 version: Cloud Service
@@ -10,8 +10,8 @@ role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 44433595-08bc-4a82-9232-49d46c31b07b
-duration: 466
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 409
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '1058'
 ht-degree: 0%

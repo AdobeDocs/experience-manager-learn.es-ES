@@ -10,8 +10,8 @@ level: Beginner
 exl-id: 53279cbb-70c8-4319-b5bb-9a7d350a7f72
 last-substantial-update: 2022-05-10T00:00:00Z
 thumbnail: understand-cloud-manager.jpg
-duration: 1044
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 1026
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '464'
 ht-degree: 14%
@@ -69,7 +69,7 @@ El [Canalización de producción de CI/CD](https://experienceleague.adobe.com/do
 
 ### Ejecución de canalización
 
-El [Canalización de producción de CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html) se utiliza para generar e implementar código a través de Fase en el entorno de producción, lo que reduce el tiempo de respuesta al valor de.
+El [Canalización de producción de CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=es) se utiliza para generar e implementar código a través de Fase en el entorno de producción, lo que reduce el tiempo de respuesta al valor de.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26317?quality=12&learn=on)
 

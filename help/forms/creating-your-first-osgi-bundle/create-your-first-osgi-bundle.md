@@ -8,8 +8,8 @@ role: Developer
 level: Beginner
 exl-id: 307cc3b2-87e5-4429-8f21-5266cf03b78f
 last-substantial-update: 2021-04-23T00:00:00Z
-duration: 199
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 168
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 0%
@@ -116,7 +116,7 @@ Debe incluir el SDK de cliente de AEMFD en el proyecto para aprovechar los disti
 Para crear su proyecto, siga los siguientes pasos:
 
 * Abrir **ventana del símbolo del sistema**
-* Vaya a `c:\aemformsbundles\mysite\core`
+* Navegue hasta `c:\aemformsbundles\mysite\core`
 * Ejecutar el comando `mvn clean install -PautoInstallBundle`
 AEM El comando anterior crea e instala el paquete en el servidor de la que se ejecuta en `http://localhost:4502`. El paquete también está disponible en el sistema de archivos en
   `C:\AEMFormsBundles\mysite\core\target` y se pueden implementar mediante [Consola web Felix](http://localhost:4502/system/console/bundles)

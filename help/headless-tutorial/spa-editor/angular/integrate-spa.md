@@ -1,5 +1,5 @@
 ---
-title: SPA Integración de una AEM SPA | Introducción al Editor y Angular de la
+title: SPA Integración de una | AEM SPA Introducción al Editor y al Angular de la
 description: SPA Comprenda cómo el código fuente de una aplicación de una sola página () escrita en Angular se puede integrar con un proyecto de Adobe Experience Manager AEM (). Aprenda a utilizar herramientas front-end modernas, como la herramienta CLI de Angular SPA AEM, para desarrollar rápidamente la contra la API del modelo JSON de la versión de datos de la aplicación de código de tiempo de ejecución (JSON) de la versión de JSON de la versión de.
 feature: SPA Editor
 version: Cloud Service
@@ -10,8 +10,8 @@ role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: e9386885-86de-4e43-933c-2f0a2c04a2f2
-duration: 760
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 687
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 0%
