@@ -11,8 +11,8 @@ thumbnail: KT-13309.jpg
 doc-type: article
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: 70adb2c1-9e08-4a4b-b8f1-16bddd84c23d
-duration: 419
-source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
+duration: 236
+source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 1%
