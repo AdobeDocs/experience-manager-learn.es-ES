@@ -8,12 +8,12 @@ role: Developer
 level: Beginner
 recommendations: noDisplay, noCatalog
 jira: KT-11603
-last-substantial-update: 2023-06-02T00:00:00Z
+last-substantial-update: 2024-01-26T00:00:00Z
 exl-id: 2e37165d-c003-4206-8133-54e37ca35b8e
 duration: 214
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 6f1245e804f0311c3f833ea8b2324cbc95272f52
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '767'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,8 @@ ht-degree: 0%
 # Implementación de una extensión
 
 AEM Para su uso en entornos as a Cloud Service de, la aplicación App Builder de extensión debe implementarse y aprobarse.
+
+![Intercambio de Adobe](./assets/deploy/adobe-exchange.png){align="center"}
 
 Al implementar aplicaciones de App Builder de extensión, hay que tener en cuenta varias consideraciones:
 
@@ -77,9 +79,9 @@ Implemente la extensión en el espacio de trabajo de producción. AEM Las extens
 ![Aprobación de extensión](./assets/deploy/adobe-exchange.png){align="center"}
 
 1. Iniciar sesión en [Intercambio de Adobe](https://exchange.adobe.com/)
-1. Vaya a __Administrar__ > __Aplicaciones pendientes de revisión__
-1. __Revisar__ la extensión App Builder
-1. Si los cambios de extensión son aceptables __Aceptar__ la revisión. AEM Esto inserta inmediatamente la extensión en todos los servicios de autor as a Cloud Service dentro de la organización de Adobe.
+2. Vaya a __Administrar__ > __Aplicaciones de Experience Cloud__
+3. __Revisar__ la extensión App Builder
+4. Si los cambios de extensión son aceptables __Aceptar__ la revisión. AEM Esto inserta inmediatamente la extensión en todos los servicios de autor as a Cloud Service dentro de la organización de Adobe.
 
 AEM Una vez aprobada la solicitud de extensión, la extensión se activa inmediatamente en los servicios de autor as a Cloud Service de la.
 
@@ -92,7 +94,7 @@ La actualización y la extensión de la aplicación App Builder siguen el mismo 
 Para implementar una nueva versión de una extensión, primero debe revocarse (o eliminarse). AEM Mientras que la extensión es Revocada, no está disponible en consolas de.
 
 1. Iniciar sesión en [Intercambio de Adobe](https://exchange.adobe.com/)
-1. Vaya a __Administrar__ > __Aplicaciones del Generador de aplicaciones__
+1. Vaya a __Administrar__ > __Aplicaciones de Experience Cloud__
 1. __Revocar__ la extensión para actualizar
 
 ### Implementación de la extensión
@@ -128,10 +130,10 @@ Implemente la extensión en el espacio de trabajo de producción. AEM Las extens
 
 #### Aprobación de la solicitud de implementación
 
-![Aprobación de extensión](./assets/deploy/adobe-exchange.png){align="center"}
+![Aprobación de extensión](./assets/deploy/review.png){align="center"}
 
 1. Iniciar sesión en [Intercambio de Adobe](https://exchange.adobe.com/)
-1. Vaya a __Administrar__ > __Aplicaciones pendientes de revisión__
+1. Vaya a __Administrar__ > __Aplicaciones de Experience Cloud__
 1. __Revisar__ la extensión App Builder
 1. Si los cambios de extensión son aceptables __Aceptar__ la revisión. AEM Esto inserta inmediatamente la extensión en todos los servicios de autor as a Cloud Service dentro de la organización de Adobe.
 
@@ -144,5 +146,5 @@ AEM Una vez aprobada la solicitud de extensión, la extensión se activa inmedia
 Para eliminar una extensión, revoque (o elimine) su acceso a Adobe Exchange. AEM Cuando se revoca la extensión, se elimina de todos los servicios de autor as a Cloud Service de la.
 
 1. Iniciar sesión en [Intercambio de Adobe](https://exchange.adobe.com/)
-1. Vaya a __Administrar__ > __Aplicaciones del Generador de aplicaciones__
+1. Vaya a __Administrar__ > __Aplicaciones de Experience Cloud__
 1. __Revocar__ la extensión que se va a eliminar
