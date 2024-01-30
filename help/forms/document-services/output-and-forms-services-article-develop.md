@@ -6,12 +6,10 @@ version: 6.4,6.5
 topic: Development
 role: Developer
 level: Intermediate
-exl-id: d268d5d6-f24f-4db9-b8e0-07dd769c6005
-last-substantial-update: 2020-07-07T00:00:00Z
-duration: 152
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+last-substantial-update: 2024-01-29T00:00:00Z
+source-git-commit: 959683f23b7b04e315a5a68c13045e1f7973cf94
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '572'
 ht-degree: 0%
 
 ---
@@ -22,8 +20,8 @@ Uso de la API de salida y servicio de Forms en AEM Forms
 
 En este artículo echaremos un vistazo a lo siguiente
 
-* Servicio de salida: normalmente, este servicio se utiliza para combinar datos xml con una plantilla xdp o un pdf para generar un pdf aplanado. Para obtener más información, consulte [javadoc](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) para el servicio Output.
-* FormsService: se trata de un servicio muy versátil que le permite exportar e importar datos desde y hacia archivos de PDF. Para obtener más información, consulte [javadoc](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html) para el servicio Forms.
+* [Servicio de salida](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) : Normalmente, este servicio se utiliza para combinar datos xml con una plantilla xdp o un pdf para generar un pdf aplanado.
+* [FormsService](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html) - Se trata de un servicio muy versátil que le permite procesar xdp como pdf y exportar/importar datos desde y hacia el archivo PDF.
 
 
 El siguiente fragmento de código exporta datos desde un archivo de PDF
@@ -47,7 +45,7 @@ La línea 6 exporta los xmlData desde el archivo del PDF
 
 **Para probar el paquete de muestra en el sistema**
 
-[AEM Descargue e instale el paquete mediante el administrador de paquetes de la](assets/outputandformsservice.zip)
+[AEM Descargue e instale el paquete mediante el administrador de paquetes de la](assets/using-output-and-form-service-api.zip)
 
 
 
@@ -61,6 +59,7 @@ La línea 6 exporta los xmlData desde el archivo del PDF
 1. /content/AemFormsSamples/mergedata
 1. /content/AemFormsSamples/exportdata
 1. /content/AemFormsSamples/outputservice
+1. /content/AemFormsSamples/renderxdp
 1. Busque &quot;Filtro de referente de Sling&quot;
 1. Marque la casilla &quot;Permitir vacío&quot;. (Esta configuración solo debe ser para fines de prueba) Existen varias formas de probar el código de muestra. La forma más rápida y sencilla de usar una aplicación de Postman es. Postman le permite realizar solicitudes de POST al servidor. Instale la aplicación de Postman en su sistema.
 Inicie la aplicación e introduzca la siguiente URL para probar la API de datos de exportación
@@ -69,9 +68,9 @@ Asegúrese de haber seleccionado &quot;POST&quot; en la lista desplegable http:/
 ![exportar](assets/postexport.png)
 A continuación, haga clic en el botón Send
 
-El paquete contiene 3 muestras. En los siguientes párrafos se explica cuándo utilizar el servicio de salida o el servicio Forms, la dirección URL del servicio y los parámetros de entrada que espera cada servicio
+El paquete contiene 4 muestras. En los siguientes párrafos se explica cuándo utilizar el servicio de salida o el servicio Forms, la dirección URL del servicio y los parámetros de entrada que espera cada servicio
 
-## Combinar datos y acoplar salida
+## Usar OutputService para combinar datos con la plantilla xdp
 
 * Utilice el servicio Output para combinar datos con documentos xdp o pdf para generar PDF aplanados
 * **URL del POST**: http://localhost:4502/content/AemFormsSamples/outputservice.html
@@ -81,22 +80,34 @@ El paquete contiene 3 muestras. En los siguientes párrafos se explica cuándo u
    * **xmlfile**: archivo de datos xml que se combina con xdp_or_pdf_file
    * **saveLocation**: La ubicación para guardar el documento procesado en el sistema de archivos. Por ejemplo, c:\\documents\\sample.pdf
 
-### Importar datos en archivo de PDF
+### Usar la API de FormsService
 
-* Usar FormsService para importar datos en un archivo de PDF
+#### Importar datos
+
+* Utilice FormsService importData para importar datos en un archivo de PDF
 * **URL del POST** - http://localhost:4502/content/AemFormsSamples/mergedata.html
+
 * **Parámetros de solicitud:**
 
    * **pdffile** : archivo PDF con el que desea combinar los datos
    * **xmlfile**: archivo de datos xml que se combina con el archivo pdf
    * **saveLocation**: La ubicación para guardar el documento procesado en el sistema de archivos. Por ejemplo, `c:\\outputsample.pdf`.
 
-**Exportar datos del archivo de PDF**
-* Usar FormsService para exportar datos desde el archivo del PDF
-* **URL de POST** L - http://localhost:4502/content/AemFormsSamples/exportdata.html
+#### Exportar datos
+
+* Utilice la API exportData de FormsService para exportar datos desde el archivo del PDF
+* **URL del POST** - http://localhost:4502/content/AemFormsSamples/exportdata.html
 * **Parámetros de solicitud:**
 
    * **pdffile** : el archivo PDF desde el que desea exportar los datos
    * **saveLocation**: la ubicación para guardar los datos exportados en el sistema de archivos. Por ejemplo, c:\\documents\\export_data.xml
 
-[Puede importar esta colección de Postman para probar la API](assets/document-services-postman-collection.json)
+#### Procesar XDP
+
+* Procesar una plantilla XDP como PDF estático/dinámico
+* Utilice la API renderPDFForm de FormsService para procesar la plantilla xdp como PDF
+* **URL del POST** - http://localhost:4502/content/AemFormsSamples/renderxdp?xdpName=f1040.xdp
+* Parámetro de solicitud:
+   * xdpName: nombre del archivo xdp que se procesará como pdf
+
+[Puede importar esta colección de Postman para probar la API](assets/UsingDocumentServicesInAEMForms.postman_collection.json)
