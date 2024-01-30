@@ -11,7 +11,7 @@ thumbnail: KT-10253.jpeg
 last-substantial-update: 2023-04-19T00:00:00Z
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
 duration: 377
-source-git-commit: 2aec84f0fbd34678a4e25200ae0cdc6396beca95
+source-git-commit: d178059f6f00228586e692465f7f437129bffaae
 workflow-type: tm+mt
 source-wordcount: '843'
 ht-degree: 4%
@@ -97,7 +97,7 @@ El `$path` utilizada en la variable `_path` El filtro requiere la ruta completa 
 El `_assetTransform` define cómo se usa la variable `_dynamicUrl` se crea para optimizar la representación de la imagen servida. Las direcciones URL de imágenes optimizadas para la web también se pueden ajustar en el cliente cambiando los parámetros de consulta de la dirección URL.
 
 | Parámetro de GraphQL | Descripción | Requerido | Valores de variables GraphQL |
-|:---------|:----------|:-------------------------------|:--:|:--------------------------|
+|-------------------|------------------------------------------------------------------------------------------------------|----------|-------------------------------------------------------------|
 | `format` | Formato del recurso de imagen. | ✔ | `GIF`, `PNG`, `PNG8`, `JPG`, `PJPG`, `BJPG`, `WEBP`, `WEBPLL`, `WEBPLY` |
 | `seoName` | Nombre del segmento de archivo en la dirección URL. Si no se proporciona, se utiliza el nombre del recurso de imagen. | ✘ | Alfanumérico, `-`, o `_` |
 | `crop` | El fotograma de recorte extraído de la imagen debe tener el tamaño de la imagen | ✘ | Enteros positivos que definen una región de recorte dentro de los límites de las dimensiones de imagen originales |
@@ -107,6 +107,7 @@ El `_assetTransform` define cómo se usa la variable `_dynamicUrl` se crea para 
 | `quality` | Calidad de imagen en porcentaje de la calidad original. | ✘ | 1-100 |
 | `width` | Ancho de la imagen de salida en píxeles. Cuándo `size` se proporciona `width` se ignora. | ✘ | Entero positivo |
 | `preferWebP` | If `true` AEM y sirve un WebP si el explorador lo admite, independientemente de la variable `format`. | ✘ | `true`, `false` |
+
 
 ## Respuesta de GraphQL
 
