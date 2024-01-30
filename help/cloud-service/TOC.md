@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: aa6cd605c617de45003a96b1c14e37f055a8c566
+source-git-commit: 85e1ee33626d27f1b6c07bc631a7c1068930f827
 workflow-type: tm+mt
-source-wordcount: '1103'
-ht-degree: 17%
+source-wordcount: '1119'
+ht-degree: 18%
 
 ---
 
@@ -122,7 +122,7 @@ ht-degree: 17%
    + AEM Depuración as a Cloud Service de{#debugging-aem-as-a-cloud-service}
       + [Información general](./debugging/cloud-service/overview.md)
       + [Registros](./debugging/cloud-service/logs.md)
-      + [Compilación e implementación](./debugging/cloud-service/build-and-deployment.md)
+      + [Creación e implementación](./debugging/cloud-service/build-and-deployment.md)
       + [Consola de desarrollador](./debugging/cloud-service/developer-console.md)
       + [Explorador del repositorio](./debugging/cloud-service/repository-browser.md)
       + Riesgos{#risks}
@@ -169,6 +169,8 @@ ht-degree: 17%
    + Ejemplos{#examples}
       + [AEM Webhook: Recibir eventos](./eventing/examples/webhook.md)
       + [AEM Diario: Cargar eventos de](./eventing/examples/journaling.md)
+      + [Acción De Adobe I/O Runtime AEM: Recibir Eventos De](./eventing/examples/runtime-action.md)
+      + [Acción de Adobe I/O Runtime AEM: eventos de proceso de](./eventing/examples/event-processing-using-runtime-action.md)
 + Migración {#migration}
    + [Herramienta de transferencia de contenido](./migration/content-transfer-tool.md)
    + [Importación masiva de recursos](./migration/bulk-import.md)

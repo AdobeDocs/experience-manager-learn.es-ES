@@ -8,10 +8,10 @@ role: Architect, Developer
 level: Beginner
 doc-type: Tutorial
 duration: 163
-last-substantial-update: 2023-12-07T00:00:00Z
+last-substantial-update: 2023-01-29T00:00:00Z
 jira: KT-14734
 thumbnail: KT-14734.jpeg
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 85e1ee33626d27f1b6c07bc631a7c1068930f827
 workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 0%
@@ -22,6 +22,8 @@ ht-degree: 0%
 # AEM Eventos de diario y de
 
 AEM Aprenda a recuperar el conjunto inicial de eventos de la publicación de diario y explore los detalles de cada evento.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3427052?quality=12&learn=on)
 
 AEM El registro en diario es un método de extracción para consumir eventos de la y un registro en diario es una lista ordenada de eventos. Mediante la API de diario de eventos de Adobe I/O AEM, puede recuperar los eventos de la publicación de datos del diario y procesarlos en la aplicación. Este método permite administrar eventos en función de una cadencia especificada y procesarlos de forma eficaz de forma masiva. Consulte la [Diario](https://developer.adobe.com/events/docs/guides/journaling_intro/) para obtener información detallada, incluidas consideraciones esenciales como períodos de retención, paginación, etc.
 
