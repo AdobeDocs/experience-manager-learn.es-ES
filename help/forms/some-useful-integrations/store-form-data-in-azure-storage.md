@@ -10,9 +10,9 @@ last-substantial-update: 2023-08-14T00:00:00Z
 jira: KT-13781
 exl-id: 2bec5953-2e0c-4ae6-ae98-34492d4cfbe4
 duration: 159
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: b1734f75bdda174788d880be28fa19f8e787af0a
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '601'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,10 @@ ht-degree: 0%
 
 Este artículo muestra cómo realizar llamadas REST para almacenar datos de AEM Forms enviados en Azure Storage.
 Para poder almacenar los datos de formulario enviados en el almacenamiento de Azure, se deben seguir los siguientes pasos.
+
+>[!NOTE]
+>El código de este artículo no funciona con los componentes principales basados en el formulario adaptable. [El artículo equivalente para el formulario adaptable basado en componentes principales está disponible aquí](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/prefill-form-with-data-attachments/introduction.html?lang=en)
+
 
 ## Crear cuenta de almacenamiento de Azure
 
@@ -45,6 +49,7 @@ Asegúrese de especificar los permisos adecuados y la fecha de finalización ade
 ## Proporcione el token SAS de blob y el URI de almacenamiento.
 
 Para que el código sea más genérico, las dos propiedades se pueden configurar utilizando la configuración OSGi como se muestra a continuación. El _**aemformstutorial**_ es el nombre de la cuenta de almacenamiento, _**formsubmissions**_ es el contenedor en el que se almacenan los datos.
+Asegúrese de que tiene / al final del URI de almacenamiento y el token SAS empieza por?
 ![osgi-configuration](./assets/azure-portal-osgi-configuration.png)
 
 
@@ -98,7 +103,8 @@ https://aemformstutorial.blob.core.windows.net/formsubmissions/blobid/sastoken L
 
 * [Importar el formulario adaptable de ejemplo](./assets/bank-account-sample-form.zip)
 
-* Especifique los valores adecuados en la configuración de Azure Portal mediante la consola de configuración OSGi
+* [Especifique los valores adecuados en la configuración de Azure Portal mediante la consola de configuración OSGi](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/some-useful-integrations/store-form-data-in-azure-storage.html?lang=en#provide-the-blob-sas-token-and-storage-uri)
+
 * [Vista previa y envío del formulario BankAccount](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled)
 
 * Compruebe que los datos están almacenados en el contenedor de almacenamiento de Azure que elija. Copie el ID de blob.

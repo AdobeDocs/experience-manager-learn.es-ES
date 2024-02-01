@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Intermediate
 last-substantial-update: 2024-01-29T00:00:00Z
-source-git-commit: 959683f23b7b04e315a5a68c13045e1f7973cf94
+source-git-commit: b1734f75bdda174788d880be28fa19f8e787af0a
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -61,12 +61,18 @@ La línea 6 exporta los xmlData desde el archivo del PDF
 1. /content/AemFormsSamples/outputservice
 1. /content/AemFormsSamples/renderxdp
 1. Busque &quot;Filtro de referente de Sling&quot;
-1. Marque la casilla &quot;Permitir vacío&quot;. (Esta configuración solo debe ser para fines de prueba) Existen varias formas de probar el código de muestra. La forma más rápida y sencilla de usar una aplicación de Postman es. Postman le permite realizar solicitudes de POST al servidor. Instale la aplicación de Postman en su sistema.
-Inicie la aplicación e introduzca la siguiente URL para probar la API de datos de exportación
+1. Marque la casilla &quot;Permitir vacío&quot;. (Esta configuración solo debe ser para fines de prueba)
 
-Asegúrese de haber seleccionado &quot;POST&quot; en la lista desplegable http://localhost:4502/content/AemFormsSamples/exportdata.html Asegúrese de especificar &quot;Autorización&quot; como &quot;Autenticación básica&quot;. AEM Especifique el nombre de usuario y la contraseña del servidor de la Vaya a la pestaña &quot;Cuerpo&quot; y especifique los parámetros de solicitud como se muestra en la siguiente imagen
-![exportar](assets/postexport.png)
-A continuación, haga clic en el botón Send
+## Prueba de las muestras
+
+Existen varias formas de probar el código de ejemplo. La forma más rápida y sencilla de usar una aplicación de Postman es. Postman le permite realizar solicitudes de POST al servidor.
+
+* Instale la aplicación de Postman en su sistema.
+* Inicie la aplicación e introduzca la dirección URL adecuada
+* Asegúrese de haber seleccionado &quot;POST&quot; en la lista desplegable
+* Asegúrese de especificar &quot;Autorización&quot; como &quot;Autenticación básica&quot;. AEM Especifique el nombre de usuario y la contraseña del servidor de
+* Especifique los parámetros de solicitud en la pestaña del cuerpo
+* Haga clic en el botón Send
 
 El paquete contiene 4 muestras. En los siguientes párrafos se explica cuándo utilizar el servicio de salida o el servicio Forms, la dirección URL del servicio y los parámetros de entrada que espera cada servicio
 
