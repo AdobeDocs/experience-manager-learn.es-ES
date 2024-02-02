@@ -1,6 +1,6 @@
 ---
-title: AEM Comprender la compatibilidad con la autenticación en la
-description: AEM Una vista consolidada de los mecanismos de autenticación (y, ocasionalmente, de autorización) admitidos por los servicios de autenticación de los que se dispone en el.
+title: AEM Compatibilidad con autenticación en 6.x
+description: AEM Una vista consolidada de los mecanismos de autenticación admitidos en la versión 6.x de la versión de.
 version: 6.4, 6.5
 feature: User and Groups
 doc-type: Article
@@ -12,14 +12,14 @@ exl-id: 96c542ae-6ab6-4d8a-94df-a58b03469320
 last-substantial-update: 2022-09-10T00:00:00Z
 thumbnail: KT-406.jpg
 duration: 38
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 9ef35d4d20ea574ac2051d7d3e997ecc18c2aaaa
 workflow-type: tm+mt
-source-wordcount: '119'
+source-wordcount: '116'
 ht-degree: 8%
 
 ---
 
-# AEM Comprender la compatibilidad con la autenticación en la versión 6.x de
+# AEM Compatibilidad con autenticación en 6.x
 
 AEM Una vista consolidada de los mecanismos de autenticación (y, ocasionalmente, de autorización) admitidos por los servicios de autenticación de los que se dispone en el.
 
