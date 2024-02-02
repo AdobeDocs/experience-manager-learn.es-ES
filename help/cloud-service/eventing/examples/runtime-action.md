@@ -11,9 +11,9 @@ duration: 0
 last-substantial-update: 2024-01-29T00:00:00Z
 jira: KT-14878
 thumbnail: KT-14878.jpeg
-source-git-commit: 85e1ee33626d27f1b6c07bc631a7c1068930f827
+source-git-commit: f0930e517254b6353fe50c3bbf9ae915d9ef6ca3
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '729'
 ht-degree: 0%
 
 ---
@@ -46,6 +46,10 @@ Para completar este tutorial, necesita lo siguiente:
 - Acceso a [Consola de Adobe Developer](https://developer.adobe.com/developer-console/docs/guides/getting-started/).
 
 - [CLI de Adobe Developer](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) instalado en el equipo local.
+
+>[!IMPORTANT]
+>
+>AEM El evento as a Cloud Service solo está disponible para usuarios registrados en el modo previo al lanzamiento. AEM AEM Para habilitar la celebración de eventos en su entorno as a Cloud Service de la, póngase en contacto con [AEM Equipo de eventos de la](mailto:grp-aem-events@adobe.com).
 
 ## Crear proyecto en la consola de Adobe Developer
 
