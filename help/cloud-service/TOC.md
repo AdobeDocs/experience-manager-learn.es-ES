@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 85e1ee33626d27f1b6c07bc631a7c1068930f827
+source-git-commit: 5d8ee3b9ab6fb974f7faebb1d0ce42d699e2063c
 workflow-type: tm+mt
-source-wordcount: '1119'
+source-wordcount: '1124'
 ht-degree: 18%
 
 ---
@@ -84,7 +84,7 @@ ht-degree: 18%
    + Conceptos básicos de desarrollo{#basics}
       + [AEM SDK de](./developing/basics/aem-sdk.md)
       + [Entorno de desarrollo local](./developing/basics/local-development-environment.md)
-      + [Tipo de archivo del proyecto AEM.](./developing/basics/aem-project-archetype.md)
+      + [Tipo de archivo del proyecto AEM](./developing/basics/aem-project-archetype.md)
       + [Estructura del proyecto AEM](./developing/basics/project-structure.md)
       + [Contenido mutable e inmutable](./developing/basics/mutable-immutable.md)
       + [Paquete de estructura de repositorio](./developing/basics/repository-structure-package.md)
@@ -171,6 +171,7 @@ ht-degree: 18%
       + [AEM Diario: Cargar eventos de](./eventing/examples/journaling.md)
       + [Acción De Adobe I/O Runtime AEM: Recibir Eventos De](./eventing/examples/runtime-action.md)
       + [Acción de Adobe I/O Runtime AEM: eventos de proceso de](./eventing/examples/event-processing-using-runtime-action.md)
+      + [Eventos de AEM Assets: integración de PIM](./eventing/examples/assets-pim-integration.md)
 + Migración {#migration}
    + [Herramienta de transferencia de contenido](./migration/content-transfer-tool.md)
    + [Importación masiva de recursos](./migration/bulk-import.md)
