@@ -11,9 +11,9 @@ duration: 0
 last-substantial-update: 2024-02-13T00:00:00Z
 jira: KT-14901
 thumbnail: KT-14901.jpeg
-source-git-commit: f679b4e5e97c9ffba2f04fceaf554e8a231ddfa6
+source-git-commit: 6ef17e61190f58942dcf9345b2ea660d972a8f7e
 workflow-type: tm+mt
-source-wordcount: '1124'
+source-wordcount: '1116'
 ht-degree: 0%
 
 ---
@@ -21,15 +21,19 @@ ht-degree: 0%
 
 # Eventos de AEM Assets para la integración con PIM
 
-AEM ** NOTA: Este tutorial utiliza API as a Cloud Service experimentales.  Para acceder a estas API, deberá aceptar un acuerdo de software previo al lanzamiento y habilitarlas manualmente para su entorno mediante el departamento de ingeniería de Adobes.  Póngase en contacto con el soporte de Adobe para solicitar acceso. **
+>[!IMPORTANT]
+>
+>AEM Este tutorial utiliza API experimentales as a Cloud Service. Para obtener acceso a estas API, debe aceptar un acuerdo de software previo al lanzamiento y que el personal de ingeniería de Adobes habilite manualmente estas API para su entorno. Para solicitar acceso, póngase en contacto con el soporte de Adobe.
 
-Obtenga información sobre cómo integrar AEM Assets con un sistema de terceros, como un sistema de administración de información de producto (PIM) o de administración de línea de producto (PLM), para actualizar los metadatos de recursos **AEM uso de eventos nativos de E/S**. Al recibir un evento de AEM Assets AEM, los metadatos de los recursos se pueden actualizar en los sistemas de gestión de recursos, PIM o en ambos, según los requisitos comerciales. AEM Sin embargo, en este ejemplo, se muestra la actualización de los metadatos de los recursos en la.
+Obtenga información sobre cómo integrar AEM Assets con un sistema de terceros, como un sistema de administración de información de producto (PIM) o de administración de línea de producto (PLM), para actualizar los metadatos de recursos **AEM uso de eventos nativos de E/S**. Al recibir un evento de AEM Assets AEM, los metadatos de los recursos se pueden actualizar en los sistemas de gestión de recursos, PIM o en ambos, según los requisitos comerciales. AEM Sin embargo, en este ejemplo se muestra la actualización de los metadatos de los recursos en el caso de los recursos de.
 
-Para ejecutar la actualización de metadatos del recurso **AEM código fuera de la**, lo aprovecharemos [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/), una plataforma sin servidor. El flujo de procesamiento de eventos es el siguiente:
+Para ejecutar la actualización de metadatos del recurso **AEM código fuera de la**, el [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/), se utiliza una plataforma sin servidor.
+
+El flujo de procesamiento de eventos es el siguiente:
 
 ![Eventos de AEM Assets para la integración con PIM](../assets/examples/assets-pim-integration/aem-assets-pim-integration.png)
 
-1. AEM Los déclencheur del servicio de autor de la _Procesamiento de recursos completado_ evento en el que se completa la carga de un recurso y se completan todas las actividades de procesamiento de recursos.  Esperar a que se complete el procesamiento garantiza que cualquier procesamiento predeterminado, como la extracción de metadatos, se haya completado antes de continuar.
+1. AEM Los déclencheur del servicio de autor de la _Procesamiento de recursos completado_ evento en el que se completa la carga de un recurso y se completan todas las actividades de procesamiento de recursos. Esperar a que se complete el procesamiento garantiza que se haya completado cualquier procesamiento predeterminado, como la extracción de metadatos.
 1. El evento se envía a [Eventos de Adobe I/O](https://developer.adobe.com/events/) servicio.
 1. El servicio Eventos de Adobe I/O pasa el evento a [Acción de Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/) para su procesamiento.
 1. La acción de Adobe I/O Runtime llama a la API del sistema PIM para recuperar metadatos adicionales, como el SKU, la información del proveedor u otros detalles.
@@ -54,7 +58,7 @@ Los pasos de desarrollo de alto nivel son los siguientes:
 1. Configurar el proyecto en ADC
 1. AEM Configurar el servicio de autor de la para habilitar la comunicación del proyecto de ADC
 1. Desarrollar una acción de tiempo de ejecución que organice la recuperación y actualización de metadatos
-1. AEM Cargue un recurso al servicio de creación de recursos y compruebe que se han actualizado los metadatos.
+1. AEM Cargue un recurso al servicio de creación de recursos y verifique que se hayan actualizado los metadatos.
 
 Para obtener más información sobre los pasos 1-2, consulte la [Eventos de acción y de de Adobe I/O Runtime AEM](./runtime-action.md#) Por ejemplo, y para los pasos 3-6 consulte las siguientes secciones.
 
@@ -106,7 +110,7 @@ Para realizar la recuperación y actualización de metadatos, comience actualiza
 
 Consulte el adjunto [WKND-Assets-PIM-Integration.zip](../assets/examples/assets-pim-integration/WKND-Assets-PIM-Integration.zip) para obtener el código completo, y en la sección siguiente se destacan los archivos clave.
 
-- El `src/dx-excshell-1/actions/generic/mockPIMCommunicator.js` se burla de la llamada de API de PIM para recuperar metadatos adicionales como el SKU y el nombre del proveedor.  Este archivo se utiliza con fines de demostración.  Una vez que tenga el flujo de extremo a extremo en funcionamiento, reemplace esta función con una llamada a su sistema PIM real para recuperar metadatos del recurso.
+- El `src/dx-excshell-1/actions/generic/mockPIMCommunicator.js` se burla de la llamada de API de PIM para recuperar metadatos adicionales como el SKU y el nombre del proveedor. Este archivo se utiliza con fines de demostración. Una vez que tenga el flujo de extremo a extremo en funcionamiento, reemplace esta función con una llamada a su sistema PIM real para recuperar metadatos del recurso.
 
   ```javascript
   /**
@@ -209,7 +213,7 @@ Consulte el adjunto [WKND-Assets-PIM-Integration.zip](../assets/examples/assets-
 
 - El `src/dx-excshell-1/actions/model` La carpeta contiene `aemAssetEvent.js` y `errors.js` archivos, que utiliza la acción para analizar el evento recibido y controlar los errores respectivamente.
 
-- El `src/dx-excshell-1/actions/generic/index.js` utiliza los módulos mencionados para organizar la recuperación y actualización de metadatos.
+- El `src/dx-excshell-1/actions/generic/index.js` utiliza los módulos mencionados anteriormente para organizar la recuperación y actualización de metadatos.
 
   ```javascript
   ...
@@ -277,7 +281,7 @@ $ aio app deploy
 
 Para comprobar la integración de AEM Assets y PIM, siga estos pasos:
 
-- Para ver los metadatos de prueba proporcionados por el PIM, como el SKU y el nombre del proveedor, cree un esquema de metadatos en AEM Assets, consulte [Esquemas de metadatos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/metadata-schemas.html) que muestra las propiedades de metadatos SKU y nombre del proveedor.
+- Para ver los metadatos de prueba proporcionados por el PIM, como el SKU y el nombre del proveedor, cree un esquema de metadatos en AEM Assets, consulte [Esquema de metadatos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/metadata-schemas.html) que muestra las propiedades de metadatos SKU y nombre del proveedor.
 
 - AEM Cargue un recurso en el servicio de creación de y compruebe la actualización de los metadatos.
 
@@ -291,5 +295,5 @@ AEM La sincronización de metadatos de recursos entre los sistemas de administra
 - AEM La recién introducida API de autor de recursos se utiliza para actualizar los metadatos de los recursos en la creación de recursos de la.
 - La autenticación de la API utiliza OAuth servidor a servidor (también conocido como flujo de credenciales de cliente). Consulte [Guía de implementación de credenciales de servidor a servidor de OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/).
 - En lugar de Acciones de Adobe I/O Runtime, se pueden utilizar otros webhooks o Amazon EventBridge para recibir el evento de AEM Assets y procesar la actualización de metadatos.
-- AEM Eventos de recursos a través de la ventilación de la permite a las empresas automatizar y optimizar los procesos críticos, fomentando la eficacia y la coherencia en todo el ecosistema de contenido.
+- AEM Los eventos de recursos a través de la ventilación de la permiten a las empresas automatizar y optimizar los procesos críticos, fomentando la eficacia y la coherencia en todo el ecosistema de contenido.
 
