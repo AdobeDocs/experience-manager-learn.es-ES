@@ -10,9 +10,9 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 53baef9c-aa4e-4f18-ab30-ef9f4f5513ee
 duration: 267
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 0deeaac90e9d181a60b407e17087650e0be1ff28
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '1160'
 ht-degree: 0%
 
 ---
@@ -99,11 +99,27 @@ Dispatcher tiene una sección de configuración en su archivo de granja de servi
 }
 ```
 
-AEM Esta configuración indica a Dispatcher que recupere esta URL de su instancia de que se abre cada 300 segundos para recuperar la lista de los elementos que queremos permitir.
+El `/delay` El parámetro, medido en segundos, no funciona en base a un intervalo fijo sino en base a una comprobación basada en condiciones. Dispatcher evalúa la marca de tiempo de la modificación del `/file` (que almacena la lista de URL de vanidad reconocidas) al recibir una solicitud de una URL no incluida. El `/file` no se actualizará si la diferencia horaria entre el momento actual y el `/file`La última modificación de es menor que `/delay` duración. Actualización del `/file` ocurre bajo dos condiciones:
+
+1. La solicitud entrante es para una dirección URL no almacenada en caché o enumerada en el `/file`.
+1. Al menos `/delay` han pasado segundos desde el `/file` se actualizó por última vez.
+
+Este mecanismo está diseñado para protegerse contra los ataques de denegación de servicio (DoS), que de lo contrario podrían saturar a Dispatcher con solicitudes, aprovechando la función de direcciones URL mnemónicas.
+
+En términos más sencillos, la `/file` que contenga URL de vanidad solo se actualiza si llega una solicitud de una URL que no esté ya en la `/file` y si la variable `/file`La última modificación de fue hace más tiempo que el `/delay` punto.
+
+Para almacenar en déclencheur explícitamente una actualización de `/file`, puede solicitar una URL inexistente después de asegurarse de que el `/delay` ha pasado el tiempo desde la última actualización. Las direcciones URL de ejemplo para este fin incluyen:
+
+- `https://dispatcher-host-name.com/this-vanity-url-does-not-exist`
+- `https://dispatcher-host-name.com/please-hand-me-that-planet-maestro`
+- `https://dispatcher-host-name.com/random-vanity-url`
+
+Este método obliga a Dispatcher a actualizar el `/file`, siempre que el especificado `/delay` ha transcurrido desde la última modificación.
 
 Almacena su caché de la respuesta en la `/file` argumento así en este ejemplo `/tmp/vanity_urls`
 
 AEM Por lo tanto, si visita la instancia de en la URI, verá lo que arroja:
+
 ![captura de pantalla del contenido representado en /libs/granite/dispatcher/content/vanityUrls.html](assets/disp-vanity-url/vanity-url-component.png "vanity-url-component")
 
 Es literalmente una lista, súper simple
