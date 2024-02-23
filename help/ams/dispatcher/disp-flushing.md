@@ -10,9 +10,9 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 461873a1-1edf-43a3-b4a3-14134f855d86
 duration: 653
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 19beb662b63476f4745291338d944502971638a3
 workflow-type: tm+mt
-source-wordcount: '2227'
+source-wordcount: '2225'
 ht-degree: 0%
 
 ---
@@ -133,16 +133,17 @@ Si la configuración del nivel del archivo .stat está establecida demasiado alt
 
 Configurar este nivel de archivo demasiado bajo puede provocar que una solicitud de vaciado limpie más de lo necesario.  Lo que, a su vez, haría que la caché se perdiera con más frecuencia, con menos solicitudes recibidas desde la caché y podría causar problemas de rendimiento.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
+>[!BEGINSHADEBOX &quot;Nota&quot;]
 
-Configure las variables `statfilelevel` a un nivel razonable.  Observe la estructura de carpetas y asegúrese de que está configurada para permitir vaciados concisos sin tener que atravesar demasiados directorios.   Pruébelo y asegúrese de que se adapta a sus necesidades durante una prueba de rendimiento del sistema.
+Configure las variables `statfilelevel` a un nivel razonable. Observe la estructura de carpetas y asegúrese de que está configurada para permitir vaciados concisos sin tener que atravesar demasiados directorios. Pruébelo y asegúrese de que se adapta a sus necesidades durante una prueba de rendimiento del sistema.
 
-Un buen ejemplo es un sitio que admite diferentes idiomas.  El típico árbol de contenido tendría los siguientes directorios
+Un buen ejemplo es un sitio que admite diferentes idiomas. El típico árbol de contenido tendría los siguientes directorios
 
 `/content/brand1/en/us/`
 
-En este ejemplo, utilice una configuración de nivel de archivo .stat de 4.  Esto le garantizará que cuando vacíe contenido que se encuentre debajo de <b>`us`</b> que no hará que las carpetas de idioma se vacíen también.
-</div>
+En este ejemplo, utilice una configuración de nivel de archivo .stat de 4. Esto le garantizará que cuando vacíe contenido que se encuentre debajo de **`us`** que no hará que las carpetas de idioma se vacíen también.
+
+>[!ENDSHADEBOX]
 
 ### PROTOCOLO DE ENLACE CON MARCA DE TIEMPO DEL ARCHIVO STAT
 
@@ -227,11 +228,11 @@ Esta entrada de configuración se encuentra en la siguiente sección del archivo
 
 Especifique el directorio en el que desea que Dispatcher se propague y se administre como directorio de caché.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
-Este directorio debe coincidir con la configuración de la raíz del documento de Apache para el dominio que su servidor web pueda usar.
-
-Tener carpetas docroot anidadas para cada granja que se encuentra en subcarpetas de la raíz del documento de Apache es una idea terrible por muchas razones.
-</div>
+>[!NOTE]
+>
+>Este directorio debe coincidir con la configuración de la raíz del documento de Apache para el dominio que su servidor web pueda usar.
+>
+>Tener carpetas docroot anidadas para cada granja que se encuentra en subcarpetas de la raíz del documento de Apache es una idea terrible por muchas razones.
 
 ### Nivel de archivos estáticos
 
@@ -275,13 +276,11 @@ Esta configuración indica la profundidad `.stat` los archivos deberán generars
    - `/var/www/html/content/damn/brand1/en/.stat`
    - `/var/www/html/content/damn/brand1/en/us/.stat`
 
-
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
-
-Tenga en cuenta que cuando el protocolo de enlace de marca de tiempo se produce, busca lo más cercano `.stat` archivo.
-
-teniendo un `.stat` nivel de archivo 0 y un archivo stat solo en `/var/www/html/.stat` significa que el contenido que se encuentra debajo de `/var/www/html/content/dam/brand1/en/us/` buscaría la más cercana `.stat` y atraviese 5 carpetas para encontrar la única `.stat` que existe en el nivel 0 y compare las fechas con eso.  Lo que significa que un vaciado a un nivel tan alto sencillamente invalidaría todos los elementos almacenados en la caché.
-</div>
+>[!NOTE]
+>
+>Tenga en cuenta que cuando el protocolo de enlace de marca de tiempo se produce, busca lo más cercano `.stat` archivo.
+>
+>Tener un `.stat` nivel de archivo 0 y un archivo stat solo en `/var/www/html/.stat` significa que el contenido que se encuentra debajo de `/var/www/html/content/dam/brand1/en/us/` buscaría la más cercana `.stat` y atraviese 5 carpetas para encontrar la única `.stat` que existe en el nivel 0 y compare las fechas con eso. Lo que significa que un vaciado a un nivel tan alto sencillamente invalidaría todos los elementos almacenados en la caché.
 
 ### Invalidación permitida
 

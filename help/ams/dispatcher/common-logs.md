@@ -10,9 +10,9 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 7fe1b4a5-6813-4ece-b3da-40af575ea0ed
 duration: 252
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 19beb662b63476f4745291338d944502971638a3
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '796'
 ht-degree: 0%
 
 ---
@@ -59,10 +59,9 @@ Al utilizar cualquiera de los métodos sugeridos se elimina ese mensaje de error
 
 ## Filtrar rechazos
 
-
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
-Estas entradas no siempre aparecen aunque se produzcan rechazos si el nivel de registro es demasiado bajo. Configúrelo como Información o Depurar para asegurarse de que los filtros rechacen las solicitudes.
-</div>
+>[!NOTE]
+>
+>Estas entradas no siempre aparecen aunque se produzcan rechazos si el nivel de registro es demasiado bajo. Configúrelo como Información o Depurar para asegurarse de que los filtros rechacen las solicitudes.
 
 Ejemplo de entrada de registro:
 
@@ -76,10 +75,9 @@ o:
 Fri Jul 20 22:16:55 2018 I pid 128803 "GET /system/console/" ! - 8ms publishfarm/-
 ```
 
-<div style="color: #000;border-left: 6px solid red;background-color:#ddffff;"><b>Precaución:</b>
-
-Comprenda que las reglas de Dispatcher se establecieron para filtrar esa solicitud. En este caso, la página que se intentó visitar se rechazó a propósito y no queremos hacer nada al respecto.
-</div>
+>[!CAUTION]
+>
+>Comprenda que las reglas de Dispatcher se establecieron para filtrar esa solicitud. En este caso, la página que se intentó visitar se rechazó a propósito y no queremos hacer nada al respecto.
 
 Si el registro tiene el siguiente aspecto:
 
@@ -136,9 +134,9 @@ Esto significa que se mide la recuperación desde el nivel de procesamiento fren
 
 Para que este número sea lo más alto posible.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
-Incluso si tiene la configuración de la caché en el archivo de granja de servidores para almacenar en caché todo lo que se vacíe con demasiada frecuencia o de forma agresiva, lo que puede provocar que se produzca un porcentaje menor de aciertos de caché
-</div>
+>[!NOTE]
+>
+>Incluso si tiene la configuración de la caché en el archivo de granja de servidores para almacenar en caché todo lo que se vacíe con demasiada frecuencia o de forma agresiva, lo que puede provocar que se produzca un porcentaje menor de aciertos de caché
 
 ## Falta el directorio
 

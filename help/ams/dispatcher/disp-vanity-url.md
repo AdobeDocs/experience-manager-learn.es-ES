@@ -10,9 +10,9 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 53baef9c-aa4e-4f18-ab30-ef9f4f5513ee
 duration: 267
-source-git-commit: 0deeaac90e9d181a60b407e17087650e0be1ff28
+source-git-commit: 19beb662b63476f4745291338d944502971638a3
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1159'
 ht-degree: 0%
 
 ---
@@ -182,9 +182,8 @@ Utilice ambos métodos, pero aquí están los consejos y criterios que debe util
 - Si el elemento mnemónico es un punto final básico que no cambia con frecuencia y tiene uso frecuente, utilice un `mod_rewrite` regla.
 - Si el área de nombres mnemónica (por ejemplo: `/aboutus`AEM ) se debe reutilizar para muchas marcas en la misma instancia de y, a continuación, utilizar reglas de reescritura.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
-
-AEM Si desea utilizar la función mnemónica y evitar el área de nombres, puede crear una convención de nombres. Usar direcciones URL mnemónicas anidadas como `/brand1/aboutus`, `brand2/aboutus`, `brand3/aboutus`.
-</div>
+>[!NOTE]
+>
+>AEM Si desea utilizar la función mnemónica y evitar el área de nombres, puede crear una convención de nombres. Usar direcciones URL mnemónicas anidadas como `/brand1/aboutus`, `brand2/aboutus`, `brand3/aboutus`.
 
 [Siguiente -> Registro común](./common-logs.md)
