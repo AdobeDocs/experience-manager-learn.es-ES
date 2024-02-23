@@ -4,7 +4,7 @@ description: AEM La tercera temporada le permite conocer el servicio de entrega 
 sub-product: Experience Manager Sites, Experience Manager Cloud Manager, Experience Manager Assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
-source-git-commit: f2dceed935f563e83092f8e14133746f4126a212
+source-git-commit: 8a88caeb8d894eb281321fc0b28fd41621c5c8db
 workflow-type: tm+mt
 source-wordcount: '202'
 ht-degree: 0%
@@ -49,7 +49,7 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
             <div>
                 <a href="./season-3/cloud5-rum.md">
                 <strong>Monitorización de usuarios reales (RUM)</strong></a>        
-                <br/><em>AEM con James Talbot y Varun Mitra, Ingeniería de la</em>
+                <br/><em>AEM con James Talbot y Damian Langsweirdt, Ingeniería de la</em>
             </div>
             <p>
                 <br/>
