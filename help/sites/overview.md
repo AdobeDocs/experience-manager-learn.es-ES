@@ -6,10 +6,10 @@ sub-product: Experience Manager Sites
 topic: Content Management
 doc-type: Catalog
 exl-id: cde4ce7f-0afe-4632-8c1c-354586f296d5
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+source-git-commit: 6825b0a4c9770f77e5078c81154080e94d3fd5f4
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 16%
+source-wordcount: '175'
+ht-degree: 9%
 
 ---
 
@@ -18,21 +18,6 @@ ht-degree: 16%
 {{edge-delivery-services}}
 
 Adobe Experience Manager AEM () Sites es una plataforma líder de administración de experiencias. Esta guía del usuario contiene vídeos y tutoriales sobre las numerosas funciones y funcionalidades de AEM Sites.
-
-<div id="whats-new-section">
-
-## ¿Qué hay de nuevo?
-
-* **[AEM Información general sobre los Edge Delivery Services y los (vídeo)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=es)**
-  *Explore el mundo completo de Adobe Experience Manager AEM (), que incluye AEM Sites, AEM Assets AEM, sin encabezado, AEM Forms y Edge Delivery Services, en este vídeo informativo general.*
-
-* **[AEM ¿Cuáles son los Edge Delivery Services y los? (Vídeo)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/what-is-aem-as-a-cloud-service.html)**
-  *Obtenga información acerca del valor que proporcionan Adobe Experience Manager AEM () y los Edge Delivery Services.*
-
-* **[AEM Resumen de la arquitectura de los Edge Delivery Services de con (vídeo)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)**
-  *AEM ¡Conoce todo acerca de la arquitectura de los as a Cloud Service de la!*
-
-</div>
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
@@ -66,7 +51,7 @@ Adobe Experience Manager AEM () Sites es una plataforma líder de administració
     </a>
     <div>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es">
-    <strong>Introducción a AEM sin encabezado</strong>
+    <strong>AEM Introducción a la tecnología sin encabezado de</strong>
     </a>
     </div>
     <p>

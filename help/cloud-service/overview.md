@@ -6,10 +6,10 @@ jira: KT-3289
 last-substantial-update: 2023-09-26T00:00:00Z
 exl-id: 650ba2d9-6083-4772-84c5-1cdb97b5f0e9
 duration: 490
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 6825b0a4c9770f77e5078c81154080e94d3fd5f4
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 4%
+source-wordcount: '156'
+ht-degree: 5%
 
 ---
 
@@ -20,27 +20,6 @@ ht-degree: 4%
 Adobe Experience Manager AEM () ya está disponible en as a Cloud Service. AEM as a Cloud Service presenta la siguiente generación de la línea de productos Experience Manager, basándose en las inversiones e innovaciones anteriores, preservando y ampliando todos los casos de uso y funcionalidades.
 
 >[!VIDEO](https://video.tv.adobe.com/v/31085?quality=12&learn=on)
-
-<div id="whats-new-section">
-
-## ¿Qué hay de nuevo?
-
-* **[Protección de sitios web con reglas de filtro de tráfico, incluidas las reglas WAF (Tutorial)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=es)**
-  *Aprenda a utilizar las reglas de filtro de tráfico, incluidas las reglas WAF, para proteger sitios web*
-
-* **[Autenticación basada en tokens (tutorial)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)**
-  *AEM Obtenga información sobre cómo utilizar la autenticación basada en tokens para interactuar con los as a Cloud Service a través de HTTP*
-
-* **[GraphQL sin encabezado (tutorial)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=es)**
-  *AEM Aprenda a utilizar las API de GraphQL de para potenciar las experiencias en una aplicación externa.*
-
-* **[Trabajador de metadatos de asset compute (tutorial)](./asset-compute/advanced/metadata.md)**
-  *AEM Obtenga información sobre cómo volver a escribir metadatos de recursos en el archivo de datos de un trabajador de Asset compute de*
-
-* **[Extensibilidad de los microservicios de asset compute (tutorial)](./asset-compute/overview.md)**
-  *Obtenga información sobre cómo desarrollar trabajadores de Asset compute para generar representaciones de recursos personalizadas*
-
-</div>
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>

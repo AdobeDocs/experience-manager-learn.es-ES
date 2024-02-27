@@ -5,10 +5,10 @@ role: Leader, Architect, Developer, Admin, User
 level: Beginner
 doc-type: Catalog
 exl-id: af0fe7fb-873b-4d2d-a5a3-59a5a3da9b96
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+source-git-commit: 6825b0a4c9770f77e5078c81154080e94d3fd5f4
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 2%
+source-wordcount: '154'
+ht-degree: 3%
 
 ---
 
@@ -17,21 +17,6 @@ ht-degree: 2%
 {{edge-delivery-services}}
 
 Adobe Experience Manager proporciona un conjunto común de funcionalidades disponibles para los usuarios de AEM Sites, Assets y Forms.
-
-<div id="whats-new-section">
-
-## ¿Qué hay de nuevo?
-
-* **[AEM Uso de flujo de trabajo (vídeo](./workflow/use-workflow.md)**
-  *AEM AEM El flujo de trabajo de permite colaborar, administrar y procesar contenido en los flujos de trabajo de los usuarios de la.*
-
-* **[AEM Comprensión de Cloud Manager para la administración de recursos (vídeo)](./cloud-manager/understand-cloud-manager-for-aem.md)**\
-  *AEM AEM Cloud Manager para la administración de entornos, la inspección y el autoservicio de los entornos de la son fáciles de usar.*
-
-* **[Uso de la canalización de CI/CD de Cloud Manager (vídeo)](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)**\
-  *Aprenda a utilizar la canalización de CD/CI de Cloud Manager para garantizar implementaciones seguras y coherentes.*
-
-</div>
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
