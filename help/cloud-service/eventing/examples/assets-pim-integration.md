@@ -11,7 +11,7 @@ duration: 0
 last-substantial-update: 2024-02-13T00:00:00Z
 jira: KT-14901
 thumbnail: KT-14901.jpeg
-source-git-commit: 6ef17e61190f58942dcf9345b2ea660d972a8f7e
+source-git-commit: 6c01dc8a0e8fd3cc69b21c78da8678e872dcef0c
 workflow-type: tm+mt
 source-wordcount: '1116'
 ht-degree: 0%
@@ -26,6 +26,8 @@ ht-degree: 0%
 >AEM Este tutorial utiliza API experimentales as a Cloud Service. Para obtener acceso a estas API, debe aceptar un acuerdo de software previo al lanzamiento y que el personal de ingeniería de Adobes habilite manualmente estas API para su entorno. Para solicitar acceso, póngase en contacto con el soporte de Adobe.
 
 Obtenga información sobre cómo integrar AEM Assets con un sistema de terceros, como un sistema de administración de información de producto (PIM) o de administración de línea de producto (PLM), para actualizar los metadatos de recursos **AEM uso de eventos nativos de E/S**. Al recibir un evento de AEM Assets AEM, los metadatos de los recursos se pueden actualizar en los sistemas de gestión de recursos, PIM o en ambos, según los requisitos comerciales. AEM Sin embargo, en este ejemplo se muestra la actualización de los metadatos de los recursos en el caso de los recursos de.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3427592?quality=12&learn=on)
 
 Para ejecutar la actualización de metadatos del recurso **AEM código fuera de la**, el [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/), se utiliza una plataforma sin servidor.
 
