@@ -8,9 +8,9 @@ breadcrumb-title: Tutoriales de AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: 236d288c8b88948c5004ab777169768065df16f2
+source-git-commit: acfd982ce471c8510cb59ed4d353f1d47dcfb5dc
 workflow-type: tm+mt
-source-wordcount: '2001'
+source-wordcount: '2009'
 ht-degree: 2%
 
 ---
@@ -276,6 +276,7 @@ ht-degree: 2%
    + [Script ECMA para generar pdf con fragmentos](document-services/using-fragments-in-output-service-watched-folder.md)
    + [Generación de varios PDF a partir de un archivo de datos](document-services/generate-multi-record-pdf.md)
    + [Generar PDF en el envío de formularios móviles](document-services/generate-pdf-from-mobile-form-submission-article.md)
+   + [Generar PDF en el envío de formulario basado en componentes principales](document-services/generate-pdf-from-core-component-form-submission.md)
    + [Generar PDF interactivo desde formulario móvil](document-services/render-interactive-form-using-api.md)
    + [Generar documento de registro interactivo a partir de formulario adaptable](document-services/generate-interactive-dor.md)
    + [Credencial de configuración de extensiones de Reader](document-services/configuring-reader-extension-osgi.md)
