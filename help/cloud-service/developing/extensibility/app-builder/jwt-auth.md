@@ -1,6 +1,6 @@
 ---
-title: Generar token de acceso en la acción del Generador de aplicaciones
-description: Obtenga información sobre cómo generar un token de acceso con credenciales de JWT para utilizarlo en una acción de App Builder.
+title: Generar token de acceso JWT en la acción del Generador de aplicaciones
+description: Obtenga información sobre cómo generar un token de acceso mediante credenciales de JWT para su uso en una acción del Generador de aplicaciones.
 feature: Developer Tools
 version: Cloud Service
 topic: Development
@@ -10,18 +10,18 @@ jira: KT-11743
 last-substantial-update: 2023-01-17T00:00:00Z
 exl-id: 9a3fed96-c99b-43d1-9dba-a4311c65e5b9
 duration: 161
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: c77dd9c2872e7e43863d83837cedbff50a7d3c1a
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 0%
+source-wordcount: '456'
+ht-degree: 1%
 
 ---
 
-# Generar token de acceso en la acción del Generador de aplicaciones
+# Generar token de acceso JWT en la acción del Generador de aplicaciones
 
 Es posible que las acciones del Generador de aplicaciones tengan que interactuar con las API de Adobe asociadas con los proyectos de la consola de Adobe Developer en los que está implementada la aplicación del Generador de aplicaciones.
 
-Esto puede requerir que la acción del Generador de aplicaciones genere su propio token de acceso asociado al proyecto de consola de Adobe Developer deseado.
+Esto puede requerir que la acción del Generador de aplicaciones genere su propio token de acceso JWT asociado con el proyecto de consola de Adobe Developer deseado.
 
 >[!IMPORTANT]
 >
