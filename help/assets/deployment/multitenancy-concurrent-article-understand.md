@@ -9,7 +9,7 @@ level: Intermediate
 doc-type: Article
 exl-id: c9ee29d4-a8a5-4e61-bc99-498674887da5
 duration: 524
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 3b6de935b5f1fb5ee2d0e50372188f1eba7baeaa
 workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 0%
@@ -92,7 +92,7 @@ Esto no elimina la necesidad de que varios equipos dependan y puedan actualizar 
 
 Para garantizar que los cambios realizados en este paquete principal no interrumpan la funcionalidad del sistema, recomendamos que un desarrollador sénior o un equipo de desarrolladores mantengan la supervisión. Una opción es que haya un solo equipo que administre todos los cambios realizados en este paquete; otra es que los equipos envíen solicitudes de extracción que se revisen y fusionen con estos recursos. Es importante que los equipos diseñen y acepten un modelo de gobernanza y que los desarrolladores lo sigan.
 
-## Administrar el ámbito de implementación  {#managing-deployment-scope}
+## Administrar el ámbito de implementación {#managing-deployment-scope}
 
 A medida que diferentes equipos implementan su código en el mismo repositorio, es importante que no sobrescriban los cambios de los demás. AEM tiene un mecanismo para controlar esto al implementar paquetes de contenido, el filtro. archivo xml. Es importante que no haya superposición entre filtros.  archivos xml; de lo contrario, la implementación de un equipo podría borrar la implementación anterior de otro equipo. Para ilustrar este punto, consulte los siguientes ejemplos de archivos de filtro bien diseñados o problemáticos:
 
