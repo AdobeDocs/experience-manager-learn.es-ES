@@ -4,9 +4,9 @@ description: AEM La tercera temporada le permite conocer el servicio de entrega 
 sub-product: Experience Manager Sites, Experience Manager Cloud Manager, Experience Manager Assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
-source-git-commit: d7608c552fad52492d36fb64587a5939c0cde7a2
+source-git-commit: d8d15d8dd820797e829fe664d74867822782a4c1
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## Introducción
 
-AEM Bienvenido a la temporada tres de Cloud 5 Series de Ingeniería de la. Uno de los principales problemas en la fase de implementación de cualquier producto es tener suficientes muestras de código o demostraciones en directo de esas muestras, herramientas o API. AEM El objetivo de esta serie es ofrecer información útil acerca de los servicios de envío perimetral de en 5 minutos o menos.
+AEM Bienvenido a la temporada tres de Cloud 5 Series de Ingeniería de la. Uno de los principales problemas en la fase de implementación de cualquier producto es tener suficientes muestras de código o demostraciones en directo de esas muestras, herramientas o API. AEM El objetivo de esta serie es proporcionar información útil sobre los Edge Delivery Services de la en 5 minutos o menos.
 
 ## Cuadro de sugerencias
 
@@ -56,7 +56,7 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
                 Explore Real User Monitoring (RUM) funciona con Edge Delivery Services.
             </p>
         </td>   
- <td>
+        <td>
             <a href="./season-3/cloud5-edge-workers.md">
                 <img alt="Trabajadores de Edge" src="https://video.tv.adobe.com/v/3427589?format=jpeg"/>
             </a>
@@ -70,5 +70,21 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
                 Explore la importancia de los trabajadores de Edge con Edge Delivery Services.
             </p>
         </td>   
-  </tr>  
+    </tr>
+    <tr>
+        <td>
+            <a href="./season-3/cloud5-publish-events.md">
+                <img alt="Publicar, cancelar la publicación de eventos en Edge Delivery Services" src="https://video.tv.adobe.com/v/3427681?format=jpeg"/>
+            </a>
+            <div>
+                <a href="./season-3/cloud5-publish-events.md">
+                <strong>Publicar, cancelar la publicación de eventos en Edge Delivery Services</strong></a>        
+                <br/><em>AEM con James Talbot y Amol Anand, Ingeniería de la</em>
+            </div>
+            <p>
+                <br/>
+                Explore los eventos que se activan al publicar y cancelar la publicación en los Edge Delivery Services, así como casos de uso y ejemplos de uso de estos eventos.
+            </p>
+        </td>   
+    </tr>  
 </table>
