@@ -8,9 +8,9 @@ breadcrumb-title: Tutoriales de AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: b2062d9c67dc029c8d0e41f82f634f930e8249a6
+source-git-commit: ae2a2cbde1bf21314cc77863014cb0f013b6e0bb
 workflow-type: tm+mt
-source-wordcount: '2032'
+source-wordcount: '2034'
 ht-degree: 2%
 
 ---
@@ -220,12 +220,13 @@ ht-degree: 2%
    + [Controlar el envío del PDF](offline-mobile-form-submission/part-two.md)
    + [Flujo de trabajo para revisar el PDF](offline-mobile-form-submission/part-three.md)
    + [Implementar en el sistema](offline-mobile-form-submission/part-four.md)
-+ Consulta de datos enviados{#querying-submitted-data}
-   + [Introducción](querying-submitted-data/introduction.md)
-   + [Crear un formulario basado en un esquema JSON](querying-submitted-data/part1.md)
-   + [Almacenar los datos enviados](querying-submitted-data/part2.md)
-   + [Almacenar el esquema JSON](querying-submitted-data/part3.md)
-   + [Consulta de los datos enviados](querying-submitted-data/part4.md)
++ Consulta de envíos de formularios{#query-form-submissions}
+   + [Introducción](query-form-submissions/introduction.md)
+   + [Crear campos en los que buscar](query-form-submissions/part1.md)
+   + [Crear envío personalizado](query-form-submissions/part2.md)
+   + [Interfaz de consulta de compilación](query-form-submissions/part3.md)
+   + [Escribir servicio de relleno previo](query-form-submissions/part4.md)
+   + [Implementar el ejemplo](query-form-submissions/part5.md)
 + Listado de tipos de recursos personalizados en Forms Portal{#listing-custom-asset-types}
    + [Parte 1: Registro de tipos de recursos personalizados](listing-custom-asset-types/part1.md)
    + [Parte 2: Creación de una plantilla personalizada](listing-custom-asset-types/part2.md)
@@ -286,7 +287,9 @@ ht-degree: 2%
    + [Montar archivos adjuntos del formulario](document-services/assemble-form-attachments.md)
    + [Servicios de utilidad útiles](document-services/useful-utility-services.md)
 + Forms Designer{#forms-designer}
+   + [Vista Diseño](forms-designer/design-view.md)
    + [Creación de su primer formulario](forms-designer/create-simple-form.md)
+   + [Crear plantilla de formulario](forms-designer/creating-form-template.md)
    + [Creación de scripts para formularios](forms-designer/first-script-designer.md)
    + [Enlace de datos XML](forms-designer/xml-data-binding.md)
    + [Enlace de base de datos](forms-designer/binding-to-mysql-db.md)
