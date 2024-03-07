@@ -10,9 +10,9 @@ jira: KT-6899
 thumbnail: 6899.jpg
 exl-id: 2e851ae5-6caa-42e3-8af2-090766a6f36a
 duration: 53
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 4f196539ea73d25b480064f7fc349f0ea29d5e0a
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '191'
 ht-degree: 3%
 
 ---
@@ -35,9 +35,9 @@ La base de datos tiene una tabla denominada formdata con las 3 columnas, como se
 
 | Nombre de la propiedad | Valor |
 | ------------------------|--------------------------------------- |
-| Nombre de Datasource | Guardar y continuar |
-| Clase de controlador JDBC | com.mysql.cj.jdbc.Driver |
-| URI de conexión JDBC | jdbc:mysql://localhost:3306/aemformstutorial |
+| Nombre de Datasource | `SaveAndContinue` |
+| Clase de controlador JDBC | `com.mysql.cj.jdbc.Driver` |
+| URI de conexión JDBC | `jdbc:mysql://localhost:3306/aemformstutorial` |
 
 ## Assets
 

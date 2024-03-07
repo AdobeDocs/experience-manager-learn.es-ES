@@ -11,9 +11,9 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: d851d315-ed0e-46b8-bcd8-417e1e58c0c4
 duration: 335
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 4f196539ea73d25b480064f7fc349f0ea29d5e0a
 workflow-type: tm+mt
-source-wordcount: '1230'
+source-wordcount: '1218'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ A continuación se muestra un índice de problemas y errores comunes, junto con 
 
 ### Falta el archivo Console.json en el proyecto de Asset compute{#missing-console-json}
 
-+ __Error:__ Error: faltan los archivos necesarios en validate (.../node_modules/@adobe/asset-compute-client/lib/integrationConfiguration.js:XX:YY) en setupAssetCompute asincrónico (.../node_modules/@adobe/asset-compute-devtool/src/assetComputeDevTool.js:XX:YY)
++ __Error:__ Error: faltan los archivos necesarios en la validación (`.../node_modules/@adobe/asset-compute-client/lib/integrationConfiguration.js:XX:YY`) en setupAssetCompute asincrónico (`.../node_modules/@adobe/asset-compute-devtool/src/assetComputeDevTool.js:XX:YY`)
 + __Causa:__ El `console.json` falta un archivo en la raíz del proyecto de Asset compute
 + __Resolución:__ Descargar una nueva `console.json` de su proyecto de Adobe I/O
    1. En console.adobe.io, abra el proyecto de Adobe I/O que el proyecto de Asset compute está configurado para utilizar
@@ -84,7 +84,7 @@ La herramienta de desarrollo de assets computes puede introducir un estado en el
 
   ![Almacenamiento del blob de Microsoft Azure](./assets/troubleshooting/dev-tool__remove-source-files.png)
 
-## Probar{#test}
+## Prueba{#test}
 
 ### No se ha generado ninguna representación durante la ejecución de la prueba{#test-no-rendition-generated}
 

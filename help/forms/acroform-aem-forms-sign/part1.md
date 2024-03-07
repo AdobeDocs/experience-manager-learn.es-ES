@@ -7,9 +7,9 @@ version: 6.5
 badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 duration: 156
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 4f196539ea73d25b480064f7fc349f0ea29d5e0a
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '216'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Los acroforms son formularios creados con Acrobat. Puede crear un nuevo formular
 
 >[!NOTE]
 >
->Si desea enviar el acroformulario rellenable para firmar mediante Acrobat Sign, asigne un nombre a los campos según corresponda. Por ejemplo, puede asignar un nombre a un campo **Sig_es_:signer1:firma**. Esta es la sintaxis que Acrobat Sign entiende.
+>Si desea enviar el acroformulario rellenable para firmar mediante Acrobat Sign, asigne un nombre a los campos según corresponda. Por ejemplo, puede asignar un nombre a un campo **`Sig_es_:signer1:signature`**. Esta es la sintaxis que Acrobat Sign entiende.
 
 >[!NOTE]
 >
