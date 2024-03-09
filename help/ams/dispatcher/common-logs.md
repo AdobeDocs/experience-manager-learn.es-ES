@@ -10,7 +10,7 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 7fe1b4a5-6813-4ece-b3da-40af575ea0ed
 duration: 252
-source-git-commit: 19beb662b63476f4745291338d944502971638a3
+source-git-commit: 80c04ce1ad7d60c1fc75ecc194dd54a2ad5b82fa
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 0%
@@ -130,7 +130,7 @@ Ejemplo de entrada de registro:
 Fri Jul 20 23:00:19 2018 I pid 16004 (tid 140134145820416) Current cache hit ratio: 87.94 %
 ```
 
-Esto significa que se mide la recuperación desde el nivel de procesamiento frente a la caché. Desea obtener más del 80 % de aciertos de la caché y debe seguir las instrucciones de la ayuda [aquí](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html%3Flang%3Den):
+Esto significa que se mide la recuperación desde el nivel de procesamiento frente a la caché. Desea obtener más del 80 % de aciertos de la caché y debe seguir las instrucciones de la ayuda [aquí](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html?lang=es):
 
 Para que este número sea lo más alto posible.
 
@@ -169,7 +169,7 @@ Thu Sep 27 17:35:11 2018 W pid 18936 Unable to fetch vanity URLs from 10.43.0.42
 
 AEM Este error se produce cuando se configura Dispatcher para que utilice el filtro automático dinámico para admitir direcciones URL mnemónicas, pero no se ha finalizado la configuración instalando el paquete en el procesador de.
 
-AEM Para solucionarlo, instale el paquete de funciones de la URL mnemónica en la instancia de y permita que lo pueda preparar un usuario anónimo. Detalles [aquí](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17463.html%3Flang%3Den)
+AEM Para solucionarlo, instale el paquete de funciones de la URL mnemónica en la instancia de y permita que lo pueda preparar un usuario anónimo. Detalles [aquí](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17463.html)
 
 La configuración de una URL de vanidad en funcionamiento es la siguiente:
 
