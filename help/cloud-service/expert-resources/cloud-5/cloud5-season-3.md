@@ -5,9 +5,9 @@ sub-product: Experience Manager Sites, Experience Manager Cloud Manager, Experie
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
-source-git-commit: 958dc50dfef808470139a2cab214c6cfeb98ff55
+source-git-commit: 2be59ef6c6e42854a614722ced9b40988d9d4881
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '306'
 ht-degree: 0%
 
 ---
@@ -88,16 +88,16 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
         </td>  
         <td>
             <a href="./season-3/cloud5-query-indexes.md">
-                <img alt="Índices de consulta y fórmulas de Excel" src="https://video.tv.adobe.com/v/3427787?format=jpeg"/>
+                <img alt="Índices de consulta y fórmulas de Excel en Edge Delivery Services" src="https://video.tv.adobe.com/v/3427787?format=jpeg"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-query-indexes.md">
-                <strong>Índices de consulta y fórmulas de Excel</strong></a>        
+                <strong>Índices de consulta y fórmulas de Excel </strong></a>        
                 <br/><em>AEM con James Talbot y Varun Mitra, Ingeniería de la</em>
             </div>
             <p>
                 <br/>
-                Explore los índices de consultas y cómo escribir fórmulas de Excel para manipular y ordenar conjuntos de datos.
+                Explore los índices de consultas y cómo escribir fórmulas de Excel para manipular y ordenar conjuntos de datos en Edge Delivery Services.
             </p>
         </td>   
     </tr>  
