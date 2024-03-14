@@ -9,7 +9,8 @@ version: Cloud Service
 topic: Integrations
 jira: KT-14795
 duration: 60
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+exl-id: 9abe9f9d-8fb3-4e01-a830-1dad1c27274d
+source-git-commit: 3dc1aea74e2a7cf30da9f6fb96ecc5c7edcf6e34
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 0%
@@ -22,7 +23,7 @@ AEM En la versión anterior del formulario de datos de formulario (6.5), se ten�
 
 En este artículo se explican los pasos necesarios para rellenar previamente un formulario adaptable con datos recuperados de una lista de SharePoint mediante el servicio de prerrellenado del modelo de datos de formulario.
 
-Este artículo presupone que tiene [el formulario adaptable se configuró correctamente para enviar datos a la lista de sharepoint.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html?lang=en#connect-af-sharepoint-list)
+Este artículo presupone que tiene [el formulario adaptable se ha configurado correctamente para enviar datos a la lista de SharePoint.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html?lang=en#connect-af-sharepoint-list)
 
 Los siguientes son los datos de la lista de SharePoint
 ![sharepoint-list](assets/list-data.png)
@@ -52,7 +53,3 @@ Obtenga una vista previa del formulario incluyendo `submissionid` en la direcci�
 ```html
 http://localhost:4502/content/dam/formsanddocuments/contactusform/jcr:content?wcmmode=disabled&submissionid=57e12249-751a-4a38-a81f-0a4422b24412
 ```
-
-
-
-
