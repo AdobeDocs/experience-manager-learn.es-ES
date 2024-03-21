@@ -1,6 +1,6 @@
 ---
 title: Vídeos de Edge Delivery Services
-description: Aprenda a hacer que los sitios web sean más rápidos con la entrega en Edge.
+description: Aprenda a crear sitios web rápidamente con Edge Delivery Services.
 version: Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -11,9 +11,9 @@ doc-type: Catalog
 duration: 660
 last-substantial-update: 2024-03-20T00:00:00Z
 exl-id: 4f08bc07-0c9c-42fc-af42-3d51af9f37c4
-source-git-commit: 9f8b20842cf69439f2d46deecf61154b20881ee0
+source-git-commit: df15dc0426918a0e2263efe6fb0de953f49385df
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '332'
 ht-degree: 16%
 
 ---
