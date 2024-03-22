@@ -9,9 +9,9 @@ level: Intermediate
 jira: KT-10830
 thumbnail: KT-10830.jpg
 exl-id: 394792e4-59c8-43c1-914e-a92cdfde2f8a
-last-substantial-update: 2023-08-08T00:00:00Z
+last-substantial-update: 2024-03-22T00:00:00Z
 duration: 215
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 1c967b450b8539c571799c293ff0e7b3d635cc34
 workflow-type: tm+mt
 source-wordcount: '603'
 ht-degree: 2%
@@ -42,7 +42,7 @@ AEM AEM AEM La activación de CORS en el servicio de autor de es diferente de la
 
 AEM El generador de configuración OSGi de CORS de define los criterios de permiso para aceptar solicitudes HTTP CORS.
 
-| El cliente se conecta a | AEM Author | AEM Publish | AEM Previsualización de |
+| El cliente se conecta a | AEM Author | Publicación de AEM | AEM Previsualización de |
 |-------------------------------------:|:----------:|:-------------:|:-------------:|
 | Requiere la configuración OSGi de CORS | ✔ | ✘ | ✘ |
 
@@ -100,7 +100,7 @@ AEM El siguiente ejemplo admite el uso de consultas persistentes de GraphQL AEM 
 
 + [Se puede encontrar un ejemplo de la configuración OSGi en el proyecto WKND.](https://github.com/adobe/aem-guides-wknd/blob/main/ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig/config.author/com.adobe.granite.cors.impl.CORSPolicyImpl~wknd-graphql.cfg.json)
 
-## AEM Publish
+## Publicación de AEM
 
 AEM AEM La activación de CORS en los servicios de publicación (y previsualización) de es diferente al servicio de creación de páginas. AEM AEM AEM El servicio de publicación requiere que se añada una configuración de Dispatcher de a la configuración de Dispatcher de publicación de la aplicación. AEM La publicación no utiliza un [Configuración de OSGi](#osgi-configuration).
 
@@ -113,7 +113,7 @@ AEM Al configurar CORS en la publicación de la, asegúrese de lo siguiente:
 
 AEM El Dispatcher del servicio de publicación (y previsualización) debe configurarse para admitir CORS.
 
-| El cliente se conecta a | AEM Author | AEM Publish | AEM Previsualización de |
+| El cliente se conecta a | AEM Author | Publicación de AEM | AEM Previsualización de |
 |-------------------------------------:|:----------:|:-------------:|:-------------:|
 | Requiere la configuración CORS de Dispatcher | ✘ | ✔ | ✔ |
 
@@ -133,7 +133,8 @@ AEM El Dispatcher del servicio de publicación (y previsualización) debe config
    
          SetEnvIfExpr "req_novary('Access-Control-Request-Method') == '' && %{REQUEST_METHOD} == 'OPTIONS' && req_novary('Origin') != ''" CORSType=invalidpreflight CORSProcessing=false
          SetEnvIfExpr "req_novary('Access-Control-Request-Method') != '' && %{REQUEST_METHOD} == 'OPTIONS' && req_novary('Origin') != ''" CORSType=preflight CORSProcessing=true CORSTrusted=false
-         SetEnvIfExpr "req_novary('Origin') -strcmatch '%{REQUEST_SCHEME}://%{HTTP_HOST}*'" CORSType=samedomain CORSProcessing=false
+         SetEnvIfExpr "req_novary('Origin') -strcmatch 'http://%{HTTP_HOST}*'" CORSType=samedomain CORSProcessing=false
+         SetEnvIfExpr "req_novary('Origin') -strcmatch 'https://%{HTTP_HOST}*'" CORSType=samedomain CORSProcessing=false
    
          # For requests that require CORS processing, check if the Origin can be trusted
          SetEnvIfExpr "%{HTTP_HOST} =~ /(.*)/ " ParsedHost=$1
