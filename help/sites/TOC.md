@@ -6,10 +6,10 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: f5f80a898420445335ed34f20aac6579199cc817
+source-git-commit: 29f1cc8d891c57e9878c650fd8e02a32bfa73051
 workflow-type: tm+mt
-source-wordcount: '496'
-ht-degree: 17%
+source-wordcount: '500'
+ht-degree: 19%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 17%
    + [Estructura del documento](document-authoring/document-structure.md)
    + [Contenido y secciones predeterminados](document-authoring/default-content-and-sections.md)
    + [Bloques y bloqueos automáticos](document-authoring/blocks-and-autoblocks.md)
-   + [Redirecciones](document-authoring/redirects.md)
+   + [Redireccionamientos](document-authoring/redirects.md)
    + [Metadatos masivos](document-authoring/bulk-metadata.md)
    + [Metadatos de página](document-authoring/page-metadata.md)
    + Cómo:{#how-to}
@@ -56,6 +56,8 @@ ht-degree: 17%
    + [Lanzamientos](page-authoring/launches.md)
    + Aprenda De Sus Compañeros {#expert-advice}
       + [Consejos de jerarquía del sitio](page-authoring/expert-advice/site-hierarchy.md)
++ IA generativa {#generative-ai}
+   + [Generar variaciones](./generative-ai/generate-variations.md)
 + Fragmentos de contenido {#content-fragments}
    + [Consola Fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
    + [Creación de fragmentos de contenido](content-fragments/content-fragments-feature-video-use.md)
@@ -83,11 +85,11 @@ ht-degree: 17%
       + [Eliminación de páginas](edge-delivery-services/how-to/delete-page.md)
 + Desarrollo de {#developing}
    + [Edge Delivery Services](developing/edge-delivery-services.md)
-   + [Tipo de archivo del proyecto AEM.](developing/aem-project-archetype.md)
+   + [Tipo de archivo del proyecto AEM](developing/aem-project-archetype.md)
    + [Introducción a AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es){target=_blank}
    + [AEM Introducción a la tecnología sin encabezado de](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es){target=_blank}
    + [AEM SPA Introducción a Editor de y React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html){target=_blank}
-   + [Ampliación de propiedades de página](developing/page-properties-technical-video-develop.md)
+   + [Ampliación de las propiedades de página](developing/page-properties-technical-video-develop.md)
    + [Puntos de interrupción interactivos](developing/responsive-breakpoints.md)
    + [Desarrollo con el sistema de estilos](developing/style-system-technical-video-understand.md)
    + [Prácticas recomendadas del sistema de estilos](developing/style-organization-style-system-understand-article.md)
