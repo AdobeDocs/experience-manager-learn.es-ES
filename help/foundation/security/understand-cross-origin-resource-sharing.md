@@ -10,7 +10,7 @@ role: Developer
 level: Intermediate
 exl-id: 6009d9cf-8aeb-4092-9e8c-e2e6eec46435
 duration: 296
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: e4c50b66f15b129197f22e104cedf698a1dac079
 workflow-type: tm+mt
 source-wordcount: '1011'
 ht-degree: 1%
@@ -126,7 +126,7 @@ El sitio 1 es un escenario básico, accesible de forma anónima y de solo lectur
     "X-Requested-With",
     "Content-Type",
     "Access-Control-Request-Method",
-    "Access-Control-Request-Headers",
+    "Access-Control-Request-Headers"
   ]
 }
 ```
@@ -181,9 +181,9 @@ Por lo general, las mismas consideraciones para almacenar en caché el contenido
 
 | Almacenable en caché | Entorno | Estado de autenticación | Explicación |
 |-----------|-------------|-----------------------|-------------|
-| No | AEM Publish | Autenticado | AEM El almacenamiento en caché de Dispatcher en el autor de la se limita a recursos estáticos no creados. AEM Esto hace que sea difícil e impráctico almacenar en caché la mayoría de los recursos en Autor de, incluidos los encabezados de respuesta HTTP. |
-| No | AEM Publish | Autenticado | Evite almacenar en caché los encabezados CORS en solicitudes autenticadas. Esto se ajusta a la guía común de no almacenar en caché las solicitudes autenticadas, ya que es difícil determinar cómo afectará el estado de autenticación/autorización del usuario solicitante al recurso enviado. |
-| Sí | AEM Publish | Anónimo | Las solicitudes anónimas que se pueden almacenar en caché en Dispatcher también pueden tener sus encabezados de respuesta en caché, lo que garantiza que las futuras solicitudes CORS puedan acceder al contenido almacenado en caché. AEM Cualquier cambio en la configuración de CORS en la publicación de la **debe** ir seguido de una invalidación de los recursos en caché afectados. Las prácticas recomendadas dictan sobre las implementaciones de código o configuración cuando se purga la caché de Dispatcher, ya que es difícil determinar qué contenido en caché puede verse afectado. |
+| No | Publicación de AEM | Autenticado | AEM El almacenamiento en caché de Dispatcher en el autor de la se limita a recursos estáticos no creados. AEM Esto hace que sea difícil e impráctico almacenar en caché la mayoría de los recursos en Autor de, incluidos los encabezados de respuesta HTTP. |
+| No | Publicación de AEM | Autenticado | Evite almacenar en caché los encabezados CORS en solicitudes autenticadas. Esto se ajusta a la guía común de no almacenar en caché las solicitudes autenticadas, ya que es difícil determinar cómo afectará el estado de autenticación/autorización del usuario solicitante al recurso enviado. |
+| Sí | Publicación de AEM | Anónimo | Las solicitudes anónimas que se pueden almacenar en caché en Dispatcher también pueden tener sus encabezados de respuesta en caché, lo que garantiza que las futuras solicitudes CORS puedan acceder al contenido almacenado en caché. AEM Cualquier cambio en la configuración de CORS en la publicación de la **debe** ir seguido de una invalidación de los recursos en caché afectados. Las prácticas recomendadas dictan sobre las implementaciones de código o configuración cuando se purga la caché de Dispatcher, ya que es difícil determinar qué contenido en caché puede verse afectado. |
 
 ### Permitir encabezados de solicitud CORS
 
