@@ -12,7 +12,7 @@ badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title=
 doc-type: Tutorial
 exl-id: dd6c17ae-8e08-4db3-95f9-081cc7dbd86e
 duration: 323
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 AEM El siguiente vídeo proporciona información detallada sobre cómo conectarse a Adobe Target de forma as a Cloud Service con la de.
 
-AEM Esta integración permite que el servicio de creación de se comunique directamente con Adobe Target AEM y envíe los fragmentos de experiencia de a Target como ofertas.  Esta integración sí lo hace *no* añada JavaScript de Adobe Target (AT.js) a las páginas web de AEM Sites para integrar [AEM con Launch mediante el uso de la extensión de Target](../experience-platform/data-collection/tags/connect-aem-tag-property-using-ims.md).
+AEM Esta integración permite que el servicio de creación de se comunique directamente con Adobe Target AEM y envíe los fragmentos de experiencia de a Target como ofertas.  Esta integración sí lo hace *no* añada JavaScript de Adobe Target (AT.js) a las páginas web de AEM Sites para integrar [AEM Etiquetas y usando la extensión de Target](../experience-platform/data-collection/tags/connect-aem-tag-property-using-ims.md).
 
 >[!VIDEO](https://video.tv.adobe.com/v/41244?quality=12&learn=on)
 

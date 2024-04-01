@@ -14,9 +14,9 @@ badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM as a Cloud Service" before-title="false"
 exl-id: 9e856dcc-f042-4e9d-bf97-dd4f72e837e3
 duration: 218
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '682'
 ht-degree: 12%
 
 ---
@@ -95,9 +95,9 @@ La integración de Adobe Commerce AEM con el as a Cloud Service, permite a las m
 + [AEM Guía del usuario de Content and Commerce](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=es)
 
 
-## Etiquetas Adobe Experience Platform
+## Etiquetas en Adobe Experience Platform
 
-Las etiquetas de Adobe Experience Platform (anteriormente, Adobe AEM Launch, DTM) se integran perfectamente con las etiquetas de, lo que proporciona una forma sencilla de implementar y administrar [análisis](#adobe-analytics), [segmentación](#adobe-target)Etiquetas de marketing, marketing y publicidad necesarias para lograr experiencias de cliente atractivas.
+Las etiquetas de Adobe Experience Platform AEM se integran perfectamente con las etiquetas de, lo que proporciona una forma sencilla de implementar y administrar [análisis](#adobe-analytics), [segmentación](#adobe-target)Etiquetas de marketing, marketing y publicidad necesarias para lograr experiencias de cliente atractivas.
 
 ### AEM Sites
 
@@ -117,7 +117,7 @@ Adobe Journey Optimizer le ayuda a programar campañas omnicanal y momentos uno 
 
 + [Integración de AEM Assets Essentials con Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html?lang=es)
 
-## Adobe Learning Manager
+## Administrador de aprendizaje de Adobe
 
 Adobe Learning Manager (anteriormente Adobe Captivate Prime) ofrece aprendizaje personalizado a clientes y empleados.
 

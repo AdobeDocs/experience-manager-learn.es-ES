@@ -10,7 +10,7 @@ level: Intermediate
 doc-type: Technical Video
 exl-id: 9c139a36-e3c5-407e-af5d-b4fb8860f5a2
 duration: 248
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 2%
@@ -25,7 +25,7 @@ Adobe Experience Manager AEM 6.4 reimagina el flujo de trabajo de personalizaci�
 
 >[!NOTE]
 >
->Se recomienda utilizar la biblioteca de cliente at.js y la práctica recomendada es utilizar soluciones de administración de etiquetas como Launch by Adobe, Adobe DTM o cualquier solución de administración de etiquetas de terceros para agregar bibliotecas de destino a las páginas del sitio
+>Se recomienda utilizar la biblioteca de cliente at.js y la práctica recomendada es utilizar soluciones de administración de etiquetas como las etiquetas en Adobe Experience Platform o cualquier solución de administración de etiquetas de terceros para agregar bibliotecas de destino a las páginas del sitio
 
 * La configuración del servicio en la nube de Target aplicada a la carpeta de fragmentos de experiencias hereda todos los fragmentos de experiencias creados directamente en la carpeta principal. La carpeta secundaria no hereda la configuración de los servicios en la nube principales.
 * El código de cliente de Target se puede obtener en Adobe Experience Cloud > Iniciar Target > En la pestaña Configuración > Implementación > Editar la configuración de at.js.

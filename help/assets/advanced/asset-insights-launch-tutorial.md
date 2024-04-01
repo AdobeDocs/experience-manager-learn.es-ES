@@ -1,6 +1,6 @@
 ---
-title: Configuración de Asset Insights con AEM Assets y Adobe Launch
-description: En esta serie de vídeos de cinco partes, analicemos la configuración de Asset Insights para Experience Manager implementados mediante Launch by Adobe.
+title: Configuración de Asset Insights con AEM Assets y etiquetas
+description: En esta serie de vídeos de cinco partes, analicemos la configuración de Asset Insights para Experience Manager implementados mediante etiquetas.
 feature: Asset Insights
 version: 6.4, 6.5
 topic: Integrations
@@ -12,16 +12,16 @@ badgeVersions: label="AEM Assets as a Cloud Service, AEM Assets 6.5" before-titl
 doc-type: Tutorial
 exl-id: 00125fe1-3bb9-4b1a-a83c-61c413403ae2
 duration: 2051
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
-source-wordcount: '811'
+source-wordcount: '739'
 ht-degree: 0%
 
 ---
 
-# Configuración de Asset Insights con AEM Assets y Adobe Experience Platform Launch
+# Configuración de Asset Insights con AEM Assets y etiquetas
 
-En esta serie de vídeos de cinco partes, analicemos la configuración de Asset Insights para Experience Manager implementados mediante Adobe Launch.
+En esta serie de vídeos de cinco partes, analicemos la configuración de Asset Insights para Experience Manager implementados mediante etiquetas.
 
 ## Parte 1: Información general de Asset Insights {#overview}
 
@@ -81,9 +81,9 @@ Para la configuración de AEM Assets Insights, necesita las siguientes credencia
 * Secreto compartido (se puede obtener de *Adobe Analytics > Administración > Configuración de la empresa > Servicio web*).
 * Grupo de informes (asegúrese de seleccionar el grupo de informes correcto que se utiliza para la creación de informes de recursos)
 
-## Parte 4: Uso de Adobe Experience Platform Launch para añadir la extensión de Adobe Analytics {#part-using-launch-by-adobe-for-adding-adobe-analytics-extension}
+## Parte 4: Uso de etiquetas para añadir la extensión de Adobe Analytics {#part-using-launch-by-adobe-for-adding-adobe-analytics-extension}
 
-Añadir la extensión de Adobe Analytics AEM, crear reglas de carga de página e integrar con Launch con la cuenta técnica de IMS de Adobe.
+Añadir la extensión de Adobe Analytics AEM, crear reglas de carga de página e integrar con etiquetas con la cuenta técnica de IMS de Adobe.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25946?quality=12&learn=on)
 
@@ -175,13 +175,13 @@ document.querySelectorAll('[data-aem-asset-id]').forEach(function(element) {
 ### Instrucciones de depuración de consola {#console-debug-statements}
 
 ```javascript
-//Launch Build Info
+// Tags build info
 _satellite.buildInfo
 
 //Enables debug messages
 _satellite.setDebug(true);
 
-//Asset Insight JS Object
+//Asset Insight JavaScript Object
 assetAnalytics
 
 //List of trackable images
@@ -190,10 +190,8 @@ document.querySelectorAll(".cmp-image__image");
 
 En el vídeo se hace referencia a dos extensiones de explorador Google Chrome como formas de depurar Analytics. Extensiones similares están disponibles para otros navegadores también.
 
-* [Extensión de Chrome de Launch Switch](https://chrome.google.com/webstore/detail/launch-and-dtm-switch/nlgdemkdapolikbjimjajpmonpbpmipk?hl=en)
-* [Adobe Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
+* [Adobe Experience Platform Debugger](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
-También es posible cambiar la DTM al modo de depuración con la siguiente extensión de Chrome: [Conmutador de Launch y DTM](https://chrome.google.com/webstore/detail/launch-and-dtm-switch/nlgdemkdapolikbjimjajpmonpbpmipk?hl=en). Esto facilita la comprobación de si hay algún error relacionado con la implementación de DTM. Además, puede cambiar manualmente la DTM al modo de depuración a través de cualquier explorador *herramienta para desarrolladores -> Consola JS* añadiendo el siguiente fragmento de código:
 
 ## Parte 5: Prueba del seguimiento analítico y sincronización de datos de perspectiva{#analytics-tracking-asset-insights}
 

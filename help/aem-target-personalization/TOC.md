@@ -6,15 +6,15 @@ sub-product: Experience Manager Sites
 version: 6.5
 index: y
 jira: KT-2214
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
 source-wordcount: '64'
-ht-degree: 46%
+ht-degree: 35%
 
 ---
 
 
-# Introducción a AEM y Target {#aem-target-tutorial}
+# AEM Introducción a las soluciones de y Target {#aem-target-tutorial}
 
 + [Información general](./overview.md)
 + [AEM Personalización mediante fragmentos de experiencias de la](./personalization-use-case-1.md)
@@ -22,5 +22,5 @@ ht-degree: 46%
 + [Personalización de las experiencias de página web completa](./personalization-use-case-2.md)
 + Implementación {#aem-target-implementation}
    + [Introducción](./implementation.md)
-   + [AEM y Adobe Target con Launch y Adobe I/O](./using-launch-adobe-io.md)
+   + [AEM y Adobe Target con etiquetas y Adobe I/O](./using-launch-adobe-io.md)
    + [AEM Adobe Target con Cloud Service heredados](./using-aem-cloud-services.md)

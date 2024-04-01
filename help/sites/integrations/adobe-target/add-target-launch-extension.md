@@ -1,6 +1,6 @@
 ---
-title: Añadir la extensión de Target a una propiedad de Launch
-description: Obtenga información sobre cómo añadir la extensión de Adobe Target a una propiedad de Adobe Experience Platform Launch.
+title: Añadir la extensión de Target a una propiedad de etiquetas
+description: Obtenga información sobre cómo añadir la extensión de Adobe Target a una propiedad de etiquetas.
 version: Cloud Service
 jira: KT-6131
 thumbnail: 41247.jpg
@@ -13,18 +13,18 @@ badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title=
 doc-type: Tutorial
 exl-id: aa48ffef-1105-4d0d-b4b4-12ac5d2eea23
 duration: 297
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
-source-wordcount: '100'
+source-wordcount: '97'
 ht-degree: 3%
 
 ---
 
-# Añadir la extensión de Target a una propiedad de Launch {#adobe-target-extension}
+# Añadir la extensión de Target a una propiedad de etiquetas {#adobe-target-extension}
 
-Para seguir este vídeo, ya debe tener [Experience Platform Launch AEM integrado con la opción de](../experience-platform/data-collection/tags/overview.md).
+Para seguir este vídeo, ya debe tener [integraciones de etiquetas en Adobe Experience Platform AEM con el servicio de etiquetas de](../experience-platform/data-collection/tags/overview.md).
 
-Obtenga información sobre cómo habilitar Adobe Target AEM en el sitio web de la mediante Experience Platform Launch.
+Obtenga información sobre cómo habilitar Adobe Target AEM en el sitio web de la mediante etiquetas.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41247?quality=12&learn=on)
 

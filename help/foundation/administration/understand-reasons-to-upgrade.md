@@ -9,9 +9,9 @@ level: Beginner
 doc-type: Article
 exl-id: bf4030b0-67c4-4b00-af95-f63e6f79e995
 duration: 809
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
-source-wordcount: '2586'
+source-wordcount: '2589'
 ht-degree: 1%
 
 ---
@@ -623,7 +623,7 @@ AEM A continuación se muestra una matriz de las funciones clave de Sites ofreci
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=es" target="_blank">Integración de Adobe Launch</a>:</strong>
+            <td><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=es" target="_blank">Etiquetas en la integración con Adobe Experience Platform</a>:</strong>
             Integre con el servicio en la nube de administración de etiquetas de próxima generación de Adobe.</td>
             <td> </td>
             <td> </td>

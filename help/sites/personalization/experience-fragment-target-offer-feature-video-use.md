@@ -9,7 +9,7 @@ level: Beginner
 doc-type: Feature Video
 exl-id: 9ee826cf-389f-4570-bfe1-0d43d3fed3e1
 duration: 588
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 1%
@@ -24,7 +24,7 @@ Adobe Experience Manager AEM vuelve a imaginar el flujo de trabajo de personaliz
 
 >[!NOTE]
 >
->Recomendado para usar `at.js` la biblioteca de cliente y la práctica recomendada es utilizar soluciones de administración de etiquetas como Launch by Adobe, Adobe DTM o cualquier solución de administración de etiquetas de terceros para agregar bibliotecas de target a las páginas del sitio
+>Recomendado para usar `at.js` la biblioteca de cliente y la práctica recomendada es utilizar soluciones de administración de etiquetas como las etiquetas en Adobe Experience Platform o cualquier solución de administración de etiquetas de terceros para agregar bibliotecas de target a las páginas del sitio
 
 
 * El mecanismo de creación de contenido potente y fácil de usar de Adobe Experience Manager, junto con la inteligencia artificial (IA) y el aprendizaje automático de Adobe Target, ayudan a los autores de contenido a crear y administrar contenido para todos los canales en una ubicación centralizada. Con la capacidad de exportar fragmentos de experiencias a Adobe Target como ofertas de HTML, los especialistas en marketing ahora tienen más flexibilidad para crear una experiencia más personalizada con estas ofertas y ahora pueden probar y escalar cada experiencia que crean.

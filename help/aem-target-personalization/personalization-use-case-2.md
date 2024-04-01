@@ -10,14 +10,14 @@ badgeVersions: label="AEM Sites 6.5" before-title="false"
 doc-type: Tutorial
 exl-id: 53cafd06-3a0a-4995-947d-179146b89234
 duration: 159
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '577'
 ht-degree: 1%
 
 ---
 
-# Personalización de las experiencias de página web completa con Adobe Target
+# Personalización de experiencias de página web completa con Adobe Target
 
 En el capítulo anterior, aprendimos a crear una actividad basada en la ubicación geográfica dentro de Adobe Target AEM utilizando contenido creado como Fragmentos de experiencias y exportado desde Ofertas de HTML de Adobe
 
@@ -42,7 +42,7 @@ Para este ejercicio, deben participar los siguientes usuarios y, para realizar a
 
 * **AEM**
    * [AEM Instancia de autor y publicación de](./implementation.md#getting-aem) se ejecuta en localhost 4502 y 4503 respectivamente.
-   * [AEM Integrado con Adobe Target mediante Adobe Experience Platform Launch](./using-launch-adobe-io.md#aem-target-using-launch-by-adobe)
+   * [AEM Integración con Adobe Target mediante etiquetas de](./using-launch-adobe-io.md#aem-target-using-launch-by-adobe)
 * **Experience Cloud**
    * Acceso a Adobe Experience Cloud de sus organizaciones: `https://<yourcompany>.experiencecloud.adobe.com`
    * Experience Cloud aprovisionado con las siguientes soluciones

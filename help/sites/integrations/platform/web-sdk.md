@@ -14,9 +14,9 @@ badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service" before-title="false"
 exl-id: 47df99e6-6418-43c8-96fe-85e3c47034d6
 duration: 1360
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
-source-wordcount: '1235'
+source-wordcount: '1232'
 ht-degree: 1%
 
 ---
@@ -45,7 +45,7 @@ Entrada **Experience Platform**:
 + Acceso a **Esquemas** en Administración de datos
 + Acceso a **Conjuntos de datos** en Administración de datos
 + Acceso a **Datastreams** en Recopilación de datos
-+ Acceso a **Etiquetas** (anteriormente conocido como Launch) en Recopilación de datos
++ Acceso a **Etiquetas** en Recopilación de datos
 
 Si no tiene los permisos necesarios, el administrador del sistema debe utilizar [Adobe Admin Console](https://adminconsole.adobe.com/) puede conceder los permisos necesarios.
 
@@ -75,7 +75,7 @@ Familiarícese con el concepto de flujos de datos y temas relacionados, como la 
 
 ## Crear propiedad de etiqueta: Experience Platform
 
-Obtenga información sobre cómo crear una propiedad de etiquetas (anteriormente conocida como Launch) en Experience Platform para agregar la biblioteca JavaScript del SDK web al sitio web de WKND. La propiedad de etiquetas recién definida tiene los siguientes recursos:
+Obtenga información sobre cómo crear una propiedad de etiqueta en Experience Platform para agregar la biblioteca JavaScript del SDK web al sitio web de WKND. La propiedad de etiquetas recién definida tiene los siguientes recursos:
 
 + Extensiones de etiquetas: [Núcleo](https://exchange.adobe.com/apps/ec/100223/adobe-launch-core-extension) y [SDK web de Adobe Experience Platform](https://exchange.adobe.com/apps/ec/106387/aep-web-sdk)
 + Elementos de datos: elementos de datos de tipo de código personalizado que extraen nombre de página, sección de sitio y nombre de host mediante la capa de datos del cliente de Adobe del sitio WKND. Además, el elemento de datos de tipo Objeto XDM que cumple con la incorporación del esquema XDM WKND recién creado anteriormente [Crear esquema XDM](#create-xdm-schema---experience-platform) paso.
@@ -139,26 +139,26 @@ Al crear y publicar la biblioteca de etiquetas utilizando **Flujo de publicació
   var pageShownEventHandler = function(evt) {
   // defensive coding to avoid a null pointer exception
   if(evt.hasOwnProperty("eventInfo") && evt.eventInfo.hasOwnProperty("path")) {
-      //trigger Launch Rule and pass event
+      // trigger tags Rule and pass event
       console.debug("cmp:show event: " + evt.eventInfo.path);
       var event = {
-          //include the path of the component that triggered the event
+          // include the path of the component that triggered the event
           path: evt.eventInfo.path,
-          //get the state of the component that triggered the event
+          // get the state of the component that triggered the event
           component: window.adobeDataLayer.getState(evt.eventInfo.path)
       };
   
-      //Trigger the Launch Rule, passing in the new 'event' object
-      // the 'event' obj can now be referenced by the reserved name 'event' by other Launch data elements
+      // Trigger the tags Rule, passing in the new 'event' object
+      // the 'event' obj can now be referenced by the reserved name 'event' by other tags data elements
       // i.e 'event.component['someKey']'
       trigger(event);
       }
   }
   
-  //set the namespace to avoid a potential race condition
+  // set the namespace to avoid a potential race condition
   window.adobeDataLayer = window.adobeDataLayer || [];
   
-  //push the event listener for cmp:show into the data layer
+  // push the event listener for cmp:show into the data layer
   window.adobeDataLayer.push(function (dl) {
       //add event listener for 'cmp:show' and callback to the 'pageShownEventHandler' function
       dl.addEventListener("cmp:show", pageShownEventHandler);
@@ -174,9 +174,9 @@ AEM Para obtener información adicional sobre la integración de componentes pri
 
 ## AEM Conectar la propiedad de etiqueta a la
 
-AEM Descubra cómo vincular la propiedad de etiquetas creada recientemente a las etiquetas a través de la configuración de Adobe IMS y Adobe AEM Launch en la. AEM Cuando se establece un entorno as a Cloud Service de la aplicación, se generan automáticamente varias configuraciones de cuenta técnica de IMS de Adobe, incluido Adobe Launch. AEM Sin embargo, para la versión 6.5 de la aplicación, debe configurar una manualmente.
+AEM Descubra cómo vincular la propiedad de etiquetas creada recientemente a las etiquetas a través de Adobe IMS y a las etiquetas en Configuración de Adobe Experience Platform AEM en. AEM Cuando se establece un entorno as a Cloud Service de la aplicación, se generan automáticamente varias configuraciones de cuenta técnica de IMS de Adobe, incluidas las etiquetas. AEM Sin embargo, para la versión 6.5 de la aplicación, debe configurar una manualmente.
 
-Después de vincular la propiedad de etiqueta, el sitio WKND puede cargar la biblioteca JavaScript de la propiedad de etiqueta en las páginas web mediante la configuración del servicio en la nube de Adobe Launch.
+Después de vincular la propiedad de etiqueta, el sitio WKND puede cargar la biblioteca JavaScript de la propiedad de etiqueta en las páginas web mediante las etiquetas en la configuración del servicio en la nube de Adobe Experience Platform.
 
 ### Verificar la propiedad de etiqueta al cargarse en WKND
 

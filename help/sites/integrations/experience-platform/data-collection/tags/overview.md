@@ -1,6 +1,6 @@
 ---
-title: Integración de etiquetas de recopilación de datos de Experience Platform AEM (Launch) y
-description: Las etiquetas en la recopilación de datos de Experience Platform son la solución de administración de etiquetas de próxima generación de Adobe y la mejor manera de implementar Adobe Analytics, Target, Audience Manager y muchas más soluciones. Obtenga información general sobre las etiquetas (anteriormente, Launch) y la integración recomendada con Adobe Experience Manager.
+title: Integración de etiquetas en Adobe Experience Platform AEM y
+description: Las etiquetas en la recopilación de datos de Experience Platform son la solución de administración de etiquetas de próxima generación de Adobe y la mejor manera de implementar Adobe Analytics, Target, Audience Manager y muchas más soluciones. Obtenga información general sobre las etiquetas en Adobe Experience Platform y la integración recomendada con Adobe Experience Manager.
 solution: Experience Manager, Data Collection, Experience Platform
 jira: KT-5979
 thumbnail: 39090.jpg
@@ -14,26 +14,20 @@ badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title=
 doc-type: Tutorial
 exl-id: bdae56d8-96e7-4b05-9b8b-3c6c2e998bd8
 duration: 256
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '270'
 ht-degree: 2%
 
 ---
 
 # Integración de etiquetas y etiquetas de recopilación de datos de Experience PlatformAEM {#overview}
 
-Aprenda a integrar el Experience Platform _Etiquetas de recopilación de datos_ (anteriormente conocido como Launch) con Adobe Experience Manager.
-
->[!NOTE]
->
->Adobe Experience Platform Launch se ha convertido en un conjunto de tecnologías de recopilación de datos en Adobe Experience Platform. Como resultado, se han implementado varios cambios terminológicos en la documentación del producto. Consulte lo siguiente [documento](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html) para obtener una referencia consolidada de los cambios terminológicos.
-
+Obtenga información sobre cómo integrar las etiquetas en Adobe Experience Platform con Adobe Experience Manager.
 
 Las etiquetas son la nueva generación de tecnología de administración de etiquetas de Adobe Experience Platform. Las etiquetas proporcionan la forma más sencilla de implementar Adobe Analytics, Target, Audience Manager y muchas más soluciones. Obtenga información general sobre las etiquetas y la integración recomendada con Adobe Experience Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3417061?quality=12&learn=on)
-
 
 ## Requisitos previos
 
@@ -49,7 +43,7 @@ Se requiere lo siguiente al integrar las etiquetas de recopilación de datos de 
 
 + En Recopilación de datos de Adobe Experience Platform, cree una propiedad Tag y edítela en _Agregar regla_. Entonces _Añadir biblioteca_, seleccione la regla recién agregada, apruébela y publíquela.
 + AEM Conexión de etiquetas y etiquetas mediante la configuración de IMS existente (o nueva)
-+ AEM En, cree una configuración de servicios en la nube de Launch, luego aplíquela a un sitio existente y, finalmente, compruebe que la propiedad Etiquetas y sus bibliotecas se cargan en el sitio Publicado o Autor.
++ AEM En, cree una configuración de servicio en la nube de etiquetas, luego aplíquela a un sitio existente y, finalmente, compruebe que la propiedad Etiquetas y sus bibliotecas se cargan en el sitio Publicado o Autor.
 
 ## Pasos siguientes
 

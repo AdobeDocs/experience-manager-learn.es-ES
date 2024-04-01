@@ -6,9 +6,9 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: 29f1cc8d891c57e9878c650fd8e02a32bfa73051
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '498'
 ht-degree: 19%
 
 ---
@@ -137,12 +137,12 @@ ht-degree: 19%
       + [Generar FPID](integrations/platform/fpid.md)
       + [SDK web](integrations/platform/web-sdk.md)
       + [Analytics con el SDK web de Platform](integrations/platform/analytics-using-web-sdk.md)
-   + Etiquetas de recopilación de datos de Experience Platform (Launch) {#experience-platform-data-collection-tags}
+   + Etiquetas en Adobe Experience Platform {#experience-platform-data-collection-tags}
       + [Información general](integrations/experience-platform/data-collection/tags/overview.md)
       + [Crear una propiedad de etiqueta](integrations/experience-platform/data-collection/tags/create-tag-property.md)
       + [AEM Conexión de propiedades de etiquetas y etiquetas con IMS](integrations/experience-platform/data-collection/tags/connect-aem-tag-property-using-ims.md)
-      + [AEM Crear Cloud Service de Launch](integrations/experience-platform/data-collection/tags/create-aem-launch-cloud-service.md)
-      + [Depuración de una implementación de etiquetas (Launch)](integrations/experience-platform/data-collection/tags/debug-tags-implementation.md)
+      + [AEM Crear Cloud Service de etiquetas](integrations/experience-platform/data-collection/tags/create-aem-launch-cloud-service.md)
+      + [Depuración de una implementación de etiquetas](integrations/experience-platform/data-collection/tags/debug-tags-implementation.md)
    + Capa de datos del cliente de Adobe {#adobe-client-data-layer}
       + [Uso de la capa de datos del cliente de Adobe](integrations/adobe-client-data-layer/data-layer-overview.md)
       + [Personalizar la capa de datos del cliente de Adobe](integrations/adobe-client-data-layer/data-layer-customize.md)
@@ -152,7 +152,7 @@ ht-degree: 19%
       + [Analizar datos con Analysis Workspace](integrations/analytics/create-analytics-workspace.md)
    + Adobe Target {#target}
       + [Información general](integrations/adobe-target/overview.md)
-      + [Añadir extensión de Target a la propiedad de Launch](integrations/adobe-target/add-target-launch-extension.md)
+      + [Añadir extensión de Target a la propiedad de etiquetas](integrations/adobe-target/add-target-launch-extension.md)
       + [Carga y activación de una llamada de Target](integrations/adobe-target/load-and-fire-target.md)
       + [Crear cuenta de Cloud Service de Adobe Target](integrations/adobe-target/setup-aem-target-cloud-service.md)
       + [Exportar fragmentos de experiencias a Adobe Target](integrations/adobe-target/export-experience-fragment-target.md)

@@ -14,9 +14,9 @@ badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 0cc3d3bc-e4ea-4ab2-8878-adbcf0c914f5
 duration: 2330
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
-source-wordcount: '1533'
+source-wordcount: '1529'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Entrada **Experience Platform**:
 + Acceso a **Esquemas** en Administración de datos
 + Acceso a **Conjuntos de datos** en Administración de datos
 + Acceso a **Datastreams** en Recopilación de datos
-+ Acceso a **Etiquetas** (anteriormente conocido como Launch) en Recopilación de datos
++ Acceso a **Etiquetas**  en Recopilación de datos
 
 Si no tiene los permisos necesarios, el administrador del sistema debe utilizar [Adobe Admin Console](https://adminconsole.adobe.com/) puede conceder los permisos necesarios.
 

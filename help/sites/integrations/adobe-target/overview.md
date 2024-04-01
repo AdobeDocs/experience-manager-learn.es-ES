@@ -13,7 +13,7 @@ badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title=
 doc-type: Tutorial
 exl-id: 2bc6cd90-7b23-4dde-bb07-bca0de9fa509
 duration: 278
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 0%
@@ -35,7 +35,7 @@ AEM En este vídeo, analizamos tres métodos para usar y Target, y le ayudamos a
 * __Escenario 1:__ AEM Personalización mediante ofertas de fragmentos de experiencias de
 
    1. [Añadir Adobe Target AEM al sitio web de la](./add-target-launch-extension.md)
-   1. [Déclencheur de una llamada de Adobe Target desde Launch](./load-and-fire-target.md)
+   1. [Déclencheur de una llamada de Adobe Target desde etiquetas](./load-and-fire-target.md)
    1. [AEM Integración del servicio de autor de con Adobe Target](./setup-aem-target-cloud-service.md)
    1. [AEM Exportación de fragmentos de experiencias de la aplicación a Adobe Target](./export-experience-fragment-target.md)
    1. [Personalización de parte de una página web mediante Ofertas de fragmentos de experiencias](./create-target-activity.md)
@@ -43,11 +43,11 @@ AEM En este vídeo, analizamos tres métodos para usar y Target, y le ayudamos a
 * __Escenario 2:__ Personalización mediante el Compositor de experiencias visuales (VEC)
 
    1. [Añadir Adobe Target AEM al sitio web de la](./add-target-launch-extension.md)
-   1. [Déclencheur de una llamada de Adobe Target desde Launch](./load-and-fire-target.md)
+   1. [Déclencheur de una llamada de Adobe Target desde etiquetas](./load-and-fire-target.md)
    1. [Personalizar parte de una página web mediante el Compositor de experiencias visuales](./personalization-using-vec.md)
 
 * __Escenario 3:__ Personalización de experiencias de página web completa
 
    1. [Añadir Adobe Target AEM al sitio web de la](./add-target-launch-extension.md)
-   1. [Déclencheur de una llamada de Adobe Target desde Launch](./load-and-fire-target.md)
+   1. [Déclencheur de una llamada de Adobe Target desde etiquetas](./load-and-fire-target.md)
    1. [Personalizar la experiencia completa de la página web](./personalization-web-page.md)
