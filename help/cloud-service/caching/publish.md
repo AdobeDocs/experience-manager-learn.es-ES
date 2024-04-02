@@ -12,14 +12,14 @@ jira: KT-13858
 thumbnail: KT-13858.jpeg
 exl-id: 1a1accbe-7706-4f9b-bf63-755090d03c4c
 duration: 325
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: baf81bb43a659e49728a05f83e7be394f7fbfb35
 workflow-type: tm+mt
 source-wordcount: '1134'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# AEM Publish
+# Publicación de AEM
 
 AEM AEM El servicio Publicación de tiene dos capas principales de almacenamiento en caché, la CDN as a Cloud Service AEM de la red de distribución de contenido (CDN) y la Dispatcher de. Opcionalmente, se puede colocar una CDN administrada por el cliente delante de la CDN as a Cloud Service de la red de distribución de contenido (CDN) de la red de distribución de contenido (CDN) de la red AEM. AEM La CDN as a Cloud Service proporciona una entrega de contenido de vanguardia, lo que garantiza que las experiencias se entreguen con baja latencia a usuarios de todo el mundo. AEM AEM AEM Dispatcher proporciona almacenamiento en caché directamente delante de la publicación de la publicación, y se utiliza para mitigar la carga innecesaria en la publicación de la propia publicación de la.
 
@@ -37,7 +37,7 @@ Configurar cómo la CDN almacena en caché el contenido se limita a establecer e
 
 AEM La red de distribución de contenido (CDN) as a Cloud Service solo almacena en caché respuestas HTTP y deben cumplirse todos los criterios siguientes:
 
-+ El estado de la solicitud HTTP es `2xx` o `3xx`
++ El estado de respuesta HTTP es `2xx` o `3xx`
 + El método de solicitud HTTP es `GET` o `HEAD`
 + Al menos uno de los siguientes encabezados de respuesta HTTP está presente: `Cache-Control`, `Surrogate-Control`, o  `Expires`
 + La respuesta HTTP puede ser cualquier tipo de contenido, incluidos HTML, JSON, CSS, JS y archivos binarios.
