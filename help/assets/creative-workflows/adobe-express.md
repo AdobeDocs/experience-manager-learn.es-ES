@@ -12,9 +12,9 @@ last-substantial-update: 2023-12-06T00:00:00Z
 jira: KT-14645
 thumbnail: 3425972.jpeg
 exl-id: d73c4bdc-c1ff-498c-9584-93e6e39f5e39
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: e84f8375c94a2834ac3c61d3860ec92510950934
 workflow-type: tm+mt
-source-wordcount: '86'
+source-wordcount: '88'
 ht-degree: 0%
 
 ---
@@ -25,4 +25,4 @@ Descubra cómo crear y editar contenido dentro de Adobe Experience Manager Asset
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425972/?learn=on)
 
-Obtenga información sobre cómo configurar el [Complemento de AEM Assets para Adobe Express](./adobe-express-aem-assets-add-on.md) para acceder fácilmente a AEM Assets desde el Adobe Express.
+Obtenga información sobre cómo configurar el [Integración nativa de AEM Assets con Adobe Express](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/integration-adobe-express/native-integration-adobe-express) para acceder fácilmente a AEM Assets desde el Adobe Express.
