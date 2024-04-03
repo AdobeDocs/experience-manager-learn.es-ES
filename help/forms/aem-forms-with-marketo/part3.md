@@ -10,7 +10,7 @@ badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: 7096340b-8ccf-4f5e-b264-9157232e96ba
 duration: 97
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 4f818f2ad01d9ecadcf5593aa038c7db15b4d496
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 10%
@@ -28,7 +28,7 @@ La integración de datos de AEM Forms le permite configurar y conectarse a fuent
 1. Servicios OData
 
 Para integrar AEM Forms con Marketo, utilizamos los servicios web RESTful. El primer paso para integrar es configurar una [fuente de datos.](https://helpx.adobe.com/experience-manager/6-4/forms/using/configure-data-sources.html#ConfigureRESTfulwebservices) Utilice el archivo swagger proporcionado como parte de este tutorial. La siguiente captura de pantalla muestra las propiedades importantes que deben especificarse al configurar la fuente de datos.
-![datasource](assets/datasource.jfif)
+![datasource](assets/datasource.png)
 
 El &quot;marketo.json&quot; es el archivo swagger y se le proporciona como parte de los recursos de este tutorial.
 El host de propiedades es específico de la instancia de Marketo.
@@ -51,7 +51,7 @@ Dirija el explorador a [página de integraciones de datos.](http://localhost:450
 1. Vaya a la pestaña Servicios
 1. Seleccione el único servicio de la lista y haga clic en Probar servicio
 1. Proporcione un leadId válido y haga clic en Probar. Si todo va bien, debe obtener los detalles del posible cliente, como se muestra en la captura de pantalla siguiente
-   ![resultados de las pruebas](assets/testresults.jfif)
+   ![resultados de las pruebas](assets/testresults.png)
 
 ## Pasos siguientes
 
