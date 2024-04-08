@@ -10,7 +10,7 @@ level: Intermediate
 exl-id: f1f2cacc-9ec4-46d6-a6af-dac3f663de78
 last-substantial-update: 2021-02-07T00:00:00Z
 duration: 218
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 1%
@@ -25,7 +25,7 @@ Una lista desplegable en cascada es una serie de controles DropDownList dependie
 
 >[!VIDEO](https://video.tv.adobe.com/v/340344?quality=12&learn=on)
 
-Para los fines de este tutorial, he utilizado [API de REST de Geonames](http://api.geonames.org/) para demostrar esta capacidad.
+Para los fines de este tutorial, he utilizado [API de REST de Geonames](https://www.geonames.org/export/web-services.html) para demostrar esta capacidad.
 Existen varias organizaciones que proporcionan este tipo de servicio y, siempre y cuando tengan API de REST bien documentadas, puede integrarse fácilmente con AEM Forms mediante la capacidad de integración de datos
 
 Se siguieron los siguientes pasos para implementar listas desplegables en cascada en AEM Forms
@@ -88,7 +88,7 @@ Agregue 2 listas desplegables denominadas condados y ciudades en el formulario p
 
 Puede descargar los siguientes recursos para empezar a crear el ejemplo de lista desplegable en cascada. Los archivos swagger completados se pueden descargar desde [aquí](assets/geonames-swagger-files.zip)
 Los archivos swagger describen la siguiente API de REST
-* [Obtener todos los países](http://api.geonames.org/countryInfoJSON?username=yourusername)
-* [Obtener elementos secundarios del objeto Geoname](http://api.geonames.org/children?formatted=true&amp;geonameId=6252001&amp;username=yourusername)
+* [Obtener todos los países](https://secure.geonames.org/countryInfoJSON?username=yourusername)
+* [Obtener elementos secundarios del objeto Geoname](https://secure.geonames.org/children?formatted=true&amp;geonameId=6252001&amp;username=yourusername)
 
 El completado [El modelo de datos de formulario se puede descargar desde aquí](assets/geonames-api-form-data-model.zip)

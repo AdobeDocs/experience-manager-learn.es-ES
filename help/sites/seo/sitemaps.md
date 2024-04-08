@@ -12,10 +12,10 @@ last-substantial-update: 2022-10-03T00:00:00Z
 doc-type: Technical Video
 exl-id: 40bb55f9-011d-4261-9f44-b1104a591252
 duration: 957
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 4%
+source-wordcount: '234'
+ht-degree: 5%
 
 ---
 
@@ -50,7 +50,7 @@ La captura de pantalla siguiente ilustra una configuración similar, pero para `
 
 ### Configuración de OSGi del programador de mapa del sitio
 
-Define el [Configuración de fábrica de OSGi](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) para la frecuencia (usando [expresiones cron](http://www.cronmaker.com/)AEM ) los mapas del sitio se vuelven a generar y se almacenan en caché en la caché de la.
+Define el [Configuración de fábrica de OSGi](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) para la frecuencia (usando [expresiones cron](https://cron.help/)AEM ) los mapas del sitio se vuelven a generar y se almacenan en caché en la caché de la.
 
 `ui.config/src/main/jcr_content/apps/wknd/osgiconfig/config.publish`
 
@@ -93,4 +93,4 @@ RewriteRule ^/(.*)$ /content/${CONTENT_FOLDER_NAME}/$1 [PT,L]
 + [Documentación de mapa del sitio Apache Sling](https://github.com/apache/sling-org-apache-sling-sitemap#readme)
 + [Documentación de mapa del sitio Sitemap.org](https://www.sitemaps.org/protocol.html)
 + [Documentación del archivo de índice de mapa del sitio Sitemap.org](https://www.sitemaps.org/protocol.html#index)
-+ [Cronista](http://www.cronmaker.com/)
++ [Cron Helper](https://cron.help/)

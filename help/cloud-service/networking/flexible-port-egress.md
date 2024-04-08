@@ -10,10 +10,10 @@ jira: KT-9350
 thumbnail: KT-9350.jpeg
 exl-id: 5c1ff98f-d1f6-42ac-a5d5-676a54ef683c
 duration: 906
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
 workflow-type: tm+mt
 source-wordcount: '1060'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -36,7 +36,7 @@ Un programa de Cloud Manager solo puede tener un __soltero__ tipo de infraestruc
 Se requiere lo siguiente al configurar una salida de puerto flexible:
 
 + Proyecto de consola de Adobe Developer con la API de Cloud Manager habilitada y [Permisos de propietario de empresa de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/)
-+ Acceso a [Credenciales de autenticación de la API de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/authentication/)
++ Acceso a [Credenciales de autenticación de la API de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)
    + ID de organización (también conocido como ID de organización de IMS)
    + ID del cliente (también conocido como clave API)
    + Token de acceso (también conocido como Token de portador)

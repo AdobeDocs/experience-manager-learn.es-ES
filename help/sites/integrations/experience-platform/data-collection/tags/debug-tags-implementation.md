@@ -13,9 +13,9 @@ badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title=
 doc-type: Tutorial
 exl-id: 647447ca-3c29-4efe-bb3a-d3f53a936a2a
 duration: 279
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '266'
 ht-degree: 1%
 
 ---
@@ -44,11 +44,11 @@ Para habilitar la depuración del lado del cliente, llame al método `setDebug(t
 
 ## Depuración mediante Adobe Experience Platform Debugger
 
-El Adobe proporciona Adobe Experience Platform Debugger [Extensión de Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) y [Complemento de Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/) para depurar, comprender y obtener información sobre la integración.
+El Adobe proporciona Adobe Experience Platform Debugger [Extensión de Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) para depurar, comprender y obtener información sobre la integración.
 
 1. Abra la extensión de Adobe Experience Platform Debugger y abra la página del sitio en la instancia Publicar
 
-1. En el **Adobe Experience Platform Debugger > Resumen > Etiquetas de Adobe Experience Platform** , compruebe los detalles de la propiedad de etiquetas, como Nombre, Versión, Fecha de compilación, Entorno y Extensiones.
+2. En el **Adobe Experience Platform Debugger > Resumen > Etiquetas de Adobe Experience Platform** , compruebe los detalles de la propiedad de etiquetas, como Nombre, Versión, Fecha de compilación, Entorno y Extensiones.
 
    ![Detalles de propiedades de etiquetas y Adobes Experience Platform Debugger](assets/tag-property-details.png)
 
