@@ -9,16 +9,16 @@ level: Beginner
 exl-id: 36c38cb6-6f6a-4328-abf5-7a30059b66ce
 last-substantial-update: 2019-03-20T00:00:00Z
 duration: 81
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 0f853040911ad92aea0ebac57011e659d7f0b7c0
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '343'
 ht-degree: 23%
 
 ---
 
 # Uso de informes de transacciones en AEM Forms{#using-transaction-reporting-in-aem-forms}
 
-La creación de informes de transacciones para capturar el número de envíos de formularios, la representación de documentos mediante servicios de documentos y la representación de comunicaciones interactivas (canales web y de impresión) se ha introducido con AEM Forms 6.4.1. Actualmente, esta funcionalidad solo está disponible en la pila OSGI de AEM Forms.
+La creación de informes de transacciones para capturar el número de envíos de formularios, la representación de documentos mediante servicios de documentos y la representación de comunicaciones interactivas (canales web y de impresión) se ha introducido con AEM Forms 6.4.1. Esta capacidad se ha introducido con AEM Forms 6.4.1 para la pila OSGi de AEM Forms y 6.5.20 para la pila JEE de AEM Forms.
 
 ## Habilitar informes de transacciones {#enabling-transaction-reporting}
 
