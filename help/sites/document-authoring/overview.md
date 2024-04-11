@@ -10,13 +10,13 @@ jira: KT-14609
 doc-type: Catalog
 duration: 40
 last-substantial-update: 2023-12-01T00:00:00Z
-source-git-commit: e5e1b1b9313f5c7b031c6e4233052dee67c6bd7c
+exl-id: 172a477f-d277-43c1-8e47-68870b02203c
+source-git-commit: be3f8fe8ae5c76e17325fd87d0924cc27f8c3e60
 workflow-type: tm+mt
-source-wordcount: '419'
-ht-degree: 5%
+source-wordcount: '452'
+ht-degree: 11%
 
 ---
-
 
 # Vídeos de creación de documentos
 
@@ -191,10 +191,10 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="redirects.md" title="Redirecciones"
+            <a href="redirects.md" title="Redireccionamientos"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425704/?format=jpeg" alt="Redirecciones">
+                src="https://video.tv.adobe.com/v/3425704/?format=jpeg" alt="Redireccionamientos">
             </a>
           </figure>
         </div>
@@ -203,7 +203,7 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="redirects.md" title="Redirecciones">Crear redirecciones</a>
+              <a href="redirects.md" title="Redireccionamientos">Crear redirecciones</a>
             </p>
             <p class="is-size-6">Explore cómo se crean las redirecciones mediante la creación de documentos.</p>
             <a href="redirects.md" class="spectrum-Button
@@ -222,11 +222,11 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="bulk-metadata.md" title="Metadatos masivos"
+            <a href="bulk-metadata.md" title="Metadatos por lotes"
               tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3425705/?format=jpeg"
-                alt="Metadatos masivos">
+                alt="Metadatos por lotes">
             </a>
           </figure>
         </div>
@@ -235,7 +235,7 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="bulk-metadata.md" title="Metadatos masivos">Copias de idioma</a>
+              <a href="bulk-metadata.md" title="Metadatos por lotes">Copias de idioma</a>
             </p>
             <p class="is-size-6">Explore cómo se gestionan los metadatos masivos en la creación de documentos.</p>
             <a href="bulk-metadata.md" class="spectrum-Button
@@ -509,7 +509,7 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
         </div>
       </div>
     </div>
-      <!-- No Index -->
+    <!-- No Index -->
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
       aria-label="No Index" tabindex="7">
       <div class="card">
@@ -541,4 +541,36 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
         </div>
       </div>
     </div>
+    <!-- GenAI Prompt Templates -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="Use GenAI Prompt Templates" tabindex="7">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./how-to/prompt-templates-for-content-variations.md" title="Uso de plantillas de mensajes GenAI"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3428307/?format=jpeg"
+                alt="Uso de plantillas de mensajes GenAI">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">2 minutos</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./how-to/prompt-templates-for-content-variations.md" title="Uso de plantillas de mensajes GenAI">Plantillas de mensajes GenAI</a>
+            </p>
+            <p class="is-size-6">Explore cómo utilizar las plantillas de petición de datos generativas de IA para generar variaciones de contenido.</p>
+            <a href="./how-to/prompt-templates-for-content-variations.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">Vea el vídeo</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>    
   </div>
