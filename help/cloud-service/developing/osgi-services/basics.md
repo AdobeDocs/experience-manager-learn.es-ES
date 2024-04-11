@@ -10,9 +10,9 @@ thumbnail: 335476.jpeg
 last-substantial-update: 2022-09-16T00:00:00Z
 exl-id: a3a9bf59-e9a2-4322-ac93-9c12c70b9a75
 duration: 492
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: a18bf2c8b57eaaac3686a26fa1fb39e6fc075af5
 workflow-type: tm+mt
-source-wordcount: '57'
+source-wordcount: '122'
 ht-degree: 1%
 
 ---
@@ -94,3 +94,5 @@ package com.adobe.aem.wknd.examples.core.adventures;
 
 import org.osgi.annotation.versioning.Version;
 ```
+
+Adición de un `package-info.java` AEM es necesario para asegurarse de que otros paquetes OSGi en puedan resolver la interfaz de servicio OSGi (o cualquier clase JavaScript). Si la variable `package-info.java` falta, el paquete Java y sus interfaces o clases Java no se exportan. Otros paquetes OSGi que intenten importar estas interfaces o clases Java desde este paquete Java, generarán un error con el mensaje __No se puede resolver__ AEM en la consola del paquete OSGi de OSGi.
