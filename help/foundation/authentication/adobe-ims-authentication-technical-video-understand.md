@@ -12,9 +12,9 @@ exl-id: 52dd8a3f-6461-4acb-87ca-5dd9567d15a6
 last-substantial-update: 2022-10-01T00:00:00Z
 thumbnail: KT-781.jpg
 duration: 431
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: c692ad17a27f244764e3f7c63fc49f54ae4e97e6
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '399'
 ht-degree: 1%
 
 ---
@@ -40,11 +40,7 @@ Adobe Experience Manager introduce la compatibilidad del Admin Console AEM con i
 
 La aplicación de permisos y acceso en el nivel de usuario debe evitarse tanto en Admin Console como en Adobe Experience Manager.
 
-En, se debe otorgar acceso a los usuarios Admin Console a través de grupos de usuarios en el nivel de contexto de producto. Los grupos de usuarios suelen expresarse mejor por la función lógica dentro de la organización para promover la reutilización de los grupos en los productos de Adobe Experience Cloud.
-
->[!NOTE]
->
-> AEM Si utiliza el as a Cloud Service de la, asigne los usuarios del Admin Console directamente a los perfiles de producto. Los permisos transitivos entre usuarios de Admin Console a perfiles de producto a través de grupos de usuarios de Admin Console AEM no son compatibles con los permisos as a Cloud Service.
+En Admin Console, los usuarios deben tener acceso a través de grupos de usuarios en el nivel de contexto de producto. Los grupos de usuarios suelen expresarse mejor por la función lógica dentro de la organización para promover la reutilización de los grupos en los productos de Adobe Experience Cloud.
 
 ### Aplicación de permisos en Adobe Experience Manager
 
