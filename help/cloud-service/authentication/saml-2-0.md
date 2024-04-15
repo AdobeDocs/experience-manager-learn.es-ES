@@ -11,9 +11,9 @@ thumbnail: 343040.jpeg
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
 duration: 2430
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 1f9736acbbccd09cb1b32c247860827b13e85129
 workflow-type: tm+mt
-source-wordcount: '3137'
+source-wordcount: '3060'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ AEM Obtenga información sobre cómo configurar y autenticar usuarios finales (n
 
 AEM AEM La integración de SAML 2.0 con la publicación (o previsualización) de la, permite a los usuarios finales de una experiencia web basada en la autenticación autenticarse en un IDP (proveedor de identidad) que no es de Adobe AEM y acceder a la misma como un usuario autorizado y con nombre.
 
-|                       | AEM Author | AEM Publish |
+|                       | AEM Author | Publicación de AEM |
 |-----------------------|:----------:|:-----------:|
 | Compatibilidad con SAML 2.0 | ✘ | ✔ |
 
@@ -441,15 +441,6 @@ Después de autenticarse correctamente en el IDP, este organizará un POST AEM H
 ```
 
 Si la reescritura de URL en el servidor web Apache está configurada (`dispatcher/src/conf.d/rewrites/rewrite.rules`), asegúrese de que las solicitudes a `.../saml_login` los puntos finales no se estropean accidentalmente.
-
-## Habilitar la sincronización de datos y encapsular tokens
-
-AEM AEM AEM Una vez que el flujo de autenticación SAML crea un usuario en la publicación de la publicación de la, el nodo de usuario de la publicación se puede autenticar en el nivel de servicio de publicación de la.
-Esto requiere lo siguiente [sincronización de datos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#data-synchronization) y [tokens encapsulados](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#sticky-sessions-and-encapsulated-tokens) para que la compatibilidad con Adobe AEM lo habilite en el servicio Publicación de.
-
-Envíe una solicitud a Asistencia al cliente de Adobe (a través de [AdminConsole](https://adminconsole.adobe.com) > Soporte) solicitando:
-
-> AEM La sincronización de datos y los tokens encapsulados están habilitados en el servicio de publicación de datos para el programa X y el entorno Y.
 
 ## Implementación de la configuración SAML
 
