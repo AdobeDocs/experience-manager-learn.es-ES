@@ -12,9 +12,9 @@ jira: KT-13148
 thumbnail: KT-13148.jpeg
 exl-id: 49becbcb-7965-4378-bb8e-b662fda716b7
 duration: 626
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 7f0f4d1b739cb63b96afc08eb31ab72a507c4722
 workflow-type: tm+mt
-source-wordcount: '1449'
+source-wordcount: '1472'
 ht-degree: 0%
 
 ---
@@ -218,6 +218,8 @@ Esta vez deberías ver muchos **Solicitudes bloqueadas** y los valores correspon
 Además, la variable **Principales 100 ataques de la IP del cliente, el país y el agente de usuario** los paneles muestran detalles adicionales, que se pueden utilizar para optimizar aún más la configuración de reglas.
 
 ![Panel de herramientas ELK: Principales 100 solicitudes de DoS](./assets/elk-tool-dashboard-dos-top-100.png)
+
+Para obtener más información sobre cómo evitar ataques DoS y DDoS, consulte la [Bloqueo de ataques DoS y DoS mediante reglas de filtro de tráfico](../dos/blocking-dos-attack-using-traffic-filter-rules.md) tutorial.
 
 ### Reglas de WAF
 

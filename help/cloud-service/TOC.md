@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: d62332374e8885e077f8227bcdec6a908c782ccc
+source-git-commit: 7f0f4d1b739cb63b96afc08eb31ab72a507c4722
 workflow-type: tm+mt
-source-wordcount: '1171'
-ht-degree: 18%
+source-wordcount: '1179'
+ht-degree: 17%
 
 ---
 
@@ -161,6 +161,7 @@ ht-degree: 18%
       + [Conexiones SQL con API de SQL Java](./networking/examples/sql-java-apis.md)
       + [Servicio de correo electrónico](./networking/examples/email-service.md)
 + Seguridad {#security}
+   + [Bloqueo de ataques DoS/DDoS mediante reglas de filtro de tráfico](./security/dos/blocking-dos-attack-using-traffic-filter-rules.md)
    + Reglas de filtro de tráfico, incluidas las reglas WAF{#traffic-filter-and-waf-rules}
       + [Información general](./security/traffic-filter-rules/overview.md)
       + [Cómo realizar la configuración](./security/traffic-filter-rules/how-to-setup.md)
@@ -191,7 +192,7 @@ ht-degree: 18%
          + [Servicio de importación por lotes](./migration/moving-to-aem-as-a-cloud-service/content-migration/bulk-import-service.md)
          + [Herramienta de transferencia de contenido](./migration/moving-to-aem-as-a-cloud-service/content-migration/content-transfer-tool.md)
          + [Preguntas más frecuentes](./migration/moving-to-aem-as-a-cloud-service/content-migration/faq.md)
-      + [Solución de problemas](./migration/moving-to-aem-as-a-cloud-service/troubleshooting.md)
+      + [Resolución de problemas](./migration/moving-to-aem-as-a-cloud-service/troubleshooting.md)
       + AEM Forms as a Cloud Service {#aem-forms}
          + [Introducción](./migration/moving-to-aem-as-a-cloud-service/aem-forms/introduction.md)
          + [Inscripción digital](./migration/moving-to-aem-as-a-cloud-service/aem-forms/digital-enrollment.md)
@@ -346,7 +347,7 @@ ht-degree: 18%
       + [AEM Integrar con el](./asset-compute/deploy/processing-profiles.md)
    + Avanzadas{#advanced}
       + [Trabajadores de metadatos](./asset-compute/advanced/metadata.md)
-   + [Solución de problemas](./asset-compute/troubleshooting.md)
+   + [Resolución de problemas](./asset-compute/troubleshooting.md)
 
 + Tutorials de varios pasos{#multi-step-tutorials}
    + [Desarrollo de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es){target=_blank}
