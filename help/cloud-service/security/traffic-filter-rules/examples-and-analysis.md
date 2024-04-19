@@ -12,7 +12,7 @@ jira: KT-13148
 thumbnail: KT-13148.jpeg
 exl-id: 49becbcb-7965-4378-bb8e-b662fda716b7
 duration: 626
-source-git-commit: 9af60e1d45eb4569e05ba135fec43e4c744b2a0d
+source-git-commit: 2ab958f672b0d5b029bcdf7937b2f72d43ba651f
 workflow-type: tm+mt
 source-wordcount: '1472'
 ht-degree: 0%
@@ -219,7 +219,7 @@ Además, la variable **Principales 100 ataques de la IP del cliente, el país y 
 
 ![Panel de herramientas ELK: Principales 100 solicitudes de DoS](./assets/elk-tool-dashboard-dos-top-100.png)
 
-Para obtener más información sobre cómo evitar ataques DoS y DDoS, consulte la [Bloqueo de ataques DoS y DoS mediante reglas de filtro de tráfico](../dos/blocking-dos-attack-using-traffic-filter-rules.md) tutorial.
+Para obtener más información sobre cómo evitar ataques DoS y DDoS, consulte la [Bloqueo de ataques DoS y DoS mediante reglas de filtro de tráfico](../blocking-dos-attack-using-traffic-filter-rules.md) tutorial.
 
 ### Reglas de WAF
 
