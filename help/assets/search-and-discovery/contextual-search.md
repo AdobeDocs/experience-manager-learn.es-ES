@@ -1,0 +1,25 @@
+---
+title: Búsqueda contextual
+description: Aprenda a utilizar la búsqueda contextual en AEM Assets para encontrar recursos de forma eficaz con consultas de lenguaje natural.
+version: Cloud Service
+topic: Content Management
+feature: Search
+role: User
+level: Beginner
+doc-type: Feature Video
+duration: 105
+last-substantial-update: 2024-04-23T00:00:00Z
+jira: KT-15377
+source-git-commit: 89920c29e4d5f41263ee21b87e04c97b113c0feb
+workflow-type: tm+mt
+source-wordcount: '42'
+ht-degree: 0%
+
+---
+
+
+# Búsqueda contextual
+
+Aprenda a utilizar la búsqueda contextual en Adobe Experience Manager Assets para encontrar y reutilizar recursos de forma eficaz con consultas de lenguaje natural.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3428667/?learn=on)
