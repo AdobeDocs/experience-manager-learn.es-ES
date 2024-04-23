@@ -5,9 +5,9 @@ sub-product: Experience Manager Sites, Experience Manager Cloud Manager, Experie
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
-source-git-commit: a0fdc061d231fb68fa9bd11440d344be9701eca2
+source-git-commit: 5f2415b45a99a92c6e2b72dfc80d47f6f899c7ad
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
@@ -130,5 +130,19 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
                 Descubra cómo integrar AEM Assets con la creación de documentos.
             </p>
         </td>        
+        <td>
+            <a href="./season-3/cloud5-generative-ai-for-aem-sites.md">
+                <img alt="IA generativa en AEM Sites" src="https://video.tv.adobe.com/v/3428436?format=jpeg"/>
+            </a>
+            <div>
+                <a href="./season-3/cloud5-generative-ai-for-aem-sites.md">
+                <strong>IA generativa en AEM Sites</strong></a>        
+                <br/><em>AEM con James Talbot y Karthik Muralidharan, marketing de producto en la industria de la</em>
+            </div>
+            <p>
+                <br/>                
+                Explore las nuevas funciones de IA generativa disponibles en la creación de documentos de AEM Sites.
+            </p>
+        </td>                
     </tr>      
 </table>
