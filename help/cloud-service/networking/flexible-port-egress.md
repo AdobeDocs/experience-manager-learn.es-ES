@@ -9,10 +9,11 @@ level: Intermediate
 jira: KT-9350
 thumbnail: KT-9350.jpeg
 exl-id: 5c1ff98f-d1f6-42ac-a5d5-676a54ef683c
+last-substantial-update: 2024-04-26T00:00:00Z
 duration: 906
-source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
+source-git-commit: 4e3f77a9e687042901cd3b175d68a20df63a9b65
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1280'
 ht-degree: 2%
 
 ---
@@ -25,15 +26,16 @@ AEM Obtenga información sobre cómo configurar y utilizar la salida de puerto f
 
 AEM La salida de puerto flexible permite que se adjunten reglas de reenvío de puerto personalizadas y específicas a los puertos as a Cloud Service AEM, lo que permite que se realicen conexiones desde los servicios externos a los que se va a realizar la conexión.
 
-Un programa de Cloud Manager solo puede tener un __soltero__ tipo de infraestructura de red. Asegúrese de que la dirección IP de salida dedicada sea la más adecuada [tipo adecuado de infraestructura de red](./advanced-networking.md)  AEM para el recurso as a Cloud Service antes de ejecutar los siguientes comandos.
+Un programa de Cloud Manager solo puede tener un __soltero__ tipo de infraestructura de red. Asegúrese de que la salida de puerto flexible sea la más adecuada [tipo adecuado de infraestructura de red](./advanced-networking.md) AEM para el recurso as a Cloud Service antes de ejecutar los siguientes comandos.
 
 >[!MORELIKETHIS]
 >
-> AEM Leer el recurso as a Cloud Service [documentación de configuración de red avanzada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html#flexible-port-egress) para obtener más información sobre la salida de puerto flexible.
+> AEM Leer el recurso as a Cloud Service [documentación de configuración de red avanzada](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking) para obtener más información sobre la salida de puerto flexible.
+
 
 ## Requisitos previos
 
-Se requiere lo siguiente al configurar una salida de puerto flexible:
+Se requiere lo siguiente al configurar una salida de puerto flexible mediante las API de Cloud Manager:
 
 + Proyecto de consola de Adobe Developer con la API de Cloud Manager habilitada y [Permisos de propietario de empresa de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/)
 + Acceso a [Credenciales de autenticación de la API de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)
@@ -49,13 +51,45 @@ Para obtener más información, consulte el siguiente tutorial sobre cómo confi
 
 Este tutorial utiliza `curl` para realizar las configuraciones de la API de Cloud Manager. El proporcionado `curl` Los comandos de asumen una sintaxis de Linux/macOS. Si utiliza el símbolo del sistema de Windows, reemplace la variable `\` salto de línea con `^`.
 
+
 ## Habilitar salida de puerto flexible por programa
 
 AEM Comience habilitando la salida de puerto flexible en el modo as a Cloud Service.
 
+>[!BEGINTABS]
+
+>[!TAB Cloud Manager]
+
+La salida de puerto flexible se puede habilitar mediante Cloud Manager. AEM Los siguientes pasos describen cómo habilitar la salida de puerto flexible en las as a Cloud Service mediante Cloud Manager.
+
+1. Inicie sesión en [Adobe Experience Manager Cloud Manager](https://experience.adobe.com/cloud-manager/) como propietario empresarial de Cloud Manager.
+1. Vaya al programa deseado.
+1. En el menú de la izquierda, navegue hasta __Servicios > Infraestructura de red__.
+1. Seleccione el __Agregar infraestructura de red__ botón.
+
+   ![Agregar infraestructura de red](./assets/cloud-manager__add-network-infrastructure.png)
+
+1. En el __Agregar infraestructura de red__ , seleccione la __Salida de puerto flexible__ y seleccione la opción __Región__ para crear la dirección IP de salida dedicada.
+
+   ![Añadir salida de puerto flexible](./assets/flexible-port-egress/select-type.png)
+
+1. Seleccionar __Guardar__ para confirmar la adición de la salida de puerto flexible.
+
+   ![Confirmar creación de salida de puerto flexible](./assets/flexible-port-egress/confirmation.png)
+
+1. Espere a que se cree la infraestructura de red y se marque como __Listo__. Este proceso puede tardar hasta 1 hora.
+
+   ![Estado de creación de salida de puerto flexible](./assets/flexible-port-egress/ready.png)
+
+Con la salida de puerto flexible creada, ahora puede configurar las reglas de reenvío de puerto mediante las API de Cloud Manager como se describe a continuación.
+
+>[!TAB API de Cloud Manager]
+
+La salida de puerto flexible se puede habilitar mediante las API de Cloud Manager. AEM Los siguientes pasos describen cómo habilitar la salida de puerto flexible en las as a Cloud Service mediante la API de Cloud Manager.
+
 1. En primer lugar, determine la región en la que está configurada la red avanzada mediante la API de Cloud Manager [listRegions](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) operación. El `region name` es necesario para realizar llamadas posteriores a la API de Cloud Manager. Normalmente, se utiliza la región en la que reside el entorno de producción.
 
-   AEM Encuentre la región de su entorno as a Cloud Service de la en [Cloud Manager](https://my.cloudmanager.adobe.com) en el [detalles del entorno](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en#viewing-environment). El nombre de región que se muestra en Cloud Manager puede ser [asignado al código de región](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) se utiliza en la API de Cloud Manager.
+   AEM Encuentre la región de su entorno as a Cloud Service de la en [Cloud Manager](https://my.cloudmanager.adobe.com) en el [detalles del entorno](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments). El nombre de región que se muestra en Cloud Manager puede ser [asignado al código de región](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) se utiliza en la API de Cloud Manager.
 
    __solicitud HTTP listRegions__
 
@@ -67,7 +101,7 @@ AEM Comience habilitando la salida de puerto flexible en el modo as a Cloud Serv
        -H 'Content-Type: application/json' 
    ```
 
-1. Habilitar la salida de puerto flexible para un programa de Cloud Manager mediante la API de Cloud Manager [createNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) operación. Utilice el adecuado `region` código obtenido de la API de Cloud Manager `listRegions` operación.
+2. Habilitar la salida de puerto flexible para un programa de Cloud Manager mediante la API de Cloud Manager [createNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) operación. Utilice el adecuado `region` código obtenido de la API de Cloud Manager `listRegions` operación.
 
    __solicitud HTTP createNetworkInfrastructure__
 
@@ -82,7 +116,7 @@ AEM Comience habilitando la salida de puerto flexible en el modo as a Cloud Serv
 
    Espere 15 minutos para que el programa Cloud Manager aprovisione la infraestructura de red.
 
-1. Compruebe que el entorno haya finalizado __salida de puerto flexible__ Configuración de mediante la API de Cloud Manager [getNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) operación, usando el `id` devuelto por la solicitud HTTP createNetworkInfrastructure del paso anterior.
+3. Compruebe que el entorno haya finalizado __salida de puerto flexible__ Configuración de mediante la API de Cloud Manager [getNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) operación, usando el `id` devuelto desde el `createNetworkInfrastructure` Solicitud HTTP en el paso anterior.
 
    __petición HTTP getNetworkInfrastructure__
 
@@ -95,6 +129,10 @@ AEM Comience habilitando la salida de puerto flexible en el modo as a Cloud Serv
    ```
 
    Compruebe que la respuesta HTTP contiene un __status__ de __ready__. Si aún no está listo, vuelva a comprobar el estado cada pocos minutos.
+
+Con la salida de puerto flexible creada, ahora puede configurar las reglas de reenvío de puerto mediante las API de Cloud Manager como se describe a continuación.
+
+>[!ENDTABS]
 
 ## Configuración de proxies de salida de puerto flexibles por entorno
 
@@ -154,7 +192,7 @@ AEM Comience habilitando la salida de puerto flexible en el modo as a Cloud Serv
 
 1. Las configuraciones de salida de puerto flexibles se pueden actualizar mediante la API de Cloud Manager [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) operación. Recordar `enableEnvironmentAdvancedNetworkingConfiguration` es un `PUT` , por lo que todas las reglas deben proporcionarse con cada invocación de esta operación.
 
-1. AEM Ahora puede utilizar la configuración flexible de salida de puerto en el código de la personalizada y en la configuración de.
+1. AEM Ahora, puede utilizar la configuración flexible de salida de puerto en el código personalizado de la y en la configuración.
 
 
 ## Conexión a servicios externos mediante salida de puerto flexible
@@ -185,7 +223,7 @@ Cuando se realizan llamadas HTTP/HTTPS a servicios externos en puertos no están
 
 >[!TIP]
 >
-> AEM Consulte la documentación de salida de puerto flexible de la as a Cloud Service para [el conjunto completo de reglas de enrutamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html#flexible-port-egress-traffic-routing).
+> AEM Consulte la documentación de salida de puerto flexible de la as a Cloud Service para [el conjunto completo de reglas de enrutamiento](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking).
 
 #### Ejemplos de código
 

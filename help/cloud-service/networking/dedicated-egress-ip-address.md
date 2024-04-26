@@ -9,10 +9,11 @@ level: Intermediate
 jira: KT-9351
 thumbnail: KT-9351.jpeg
 exl-id: 311cd70f-60d5-4c1d-9dc0-4dcd51cad9c7
+last-substantial-update: 2024-04-26T00:00:00Z
 duration: 926
-source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
+source-git-commit: 4e3f77a9e687042901cd3b175d68a20df63a9b65
 workflow-type: tm+mt
-source-wordcount: '1142'
+source-wordcount: '1365'
 ht-degree: 2%
 
 ---
@@ -25,15 +26,15 @@ AEM Obtenga información sobre cómo configurar y utilizar la dirección IP de s
 
 AEM La dirección IP de salida dedicada permite que las solicitudes de los as a Cloud Service utilicen una dirección IP específica, lo que permite a los servicios externos filtrar las solicitudes entrantes por esta dirección IP. Like [puertos de salida flexibles](./flexible-port-egress.md), la IP de salida dedicada le permite salir en puertos no estándar.
 
-Un programa de Cloud Manager solo puede tener un __soltero__ tipo de infraestructura de red. Asegúrese de que la dirección IP de salida dedicada sea la más adecuada [tipo adecuado de infraestructura de red](./advanced-networking.md)  AEM para el recurso as a Cloud Service antes de ejecutar los siguientes comandos.
+Un programa de Cloud Manager solo puede tener un __soltero__ tipo de infraestructura de red. Asegúrese de que la dirección IP de salida dedicada sea la más adecuada [tipo adecuado de infraestructura de red](./advanced-networking.md) AEM para el recurso as a Cloud Service antes de ejecutar los siguientes comandos.
 
 >[!MORELIKETHIS]
 >
-> AEM Leer el recurso as a Cloud Service [documentación de configuración de red avanzada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html#dedicated-egress-IP-address) para obtener más información sobre la dirección IP de salida dedicada.
+> AEM Leer el recurso as a Cloud Service [documentación de configuración de red avanzada](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking) para obtener más información sobre la dirección IP de salida dedicada.
 
 ## Requisitos previos
 
-Se requiere lo siguiente al configurar la dirección IP de salida dedicada:
+Se requiere lo siguiente al configurar la dirección IP de salida dedicada mediante las API de Cloud Manager:
 
 + API de Cloud Manager con [Permisos de propietario de empresa de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/)
 + Acceso a [Credenciales de autenticación de API de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)
@@ -53,9 +54,41 @@ Este tutorial utiliza `curl` para realizar las configuraciones de la API de Clou
 
 AEM Comience habilitando y configurando la dirección IP de salida dedicada en el as a Cloud Service de la.
 
+>[!BEGINTABS]
+
+>[!TAB Cloud Manager]
+
+La dirección IP de salida dedicada se puede habilitar mediante Cloud Manager. AEM Los siguientes pasos describen cómo habilitar la dirección IP de salida dedicada en las direcciones as a Cloud Service de mediante Cloud Manager.
+
+1. Inicie sesión en [Adobe Experience Manager Cloud Manager](https://experience.adobe.com/cloud-manager/) como propietario empresarial de Cloud Manager.
+1. Vaya al programa deseado.
+1. En el menú de la izquierda, navegue hasta __Servicios > Infraestructura de red__.
+1. Seleccione el __Agregar infraestructura de red__ botón.
+
+   ![Agregar infraestructura de red](./assets/cloud-manager__add-network-infrastructure.png)
+
+1. En el __Agregar infraestructura de red__ , seleccione la __Dirección IP de salida dedicada__ y seleccione la opción __Región__ para crear la dirección IP de salida dedicada.
+
+   ![Añadir dirección IP de salida dedicada](./assets/dedicated-egress-ip-address/select-type.png)
+
+1. Seleccionar __Guardar__ para confirmar la adición de la dirección IP de salida dedicada.
+
+   ![Confirmar creación de dirección IP de salida dedicada](./assets/dedicated-egress-ip-address/confirmation.png)
+
+1. Espere a que se cree la infraestructura de red y se marque como __Listo__. Este proceso puede tardar hasta 1 hora.
+
+   ![Estado de creación de dirección IP de salida dedicada](./assets/dedicated-egress-ip-address/ready.png)
+
+Con la dirección IP de salida dedicada creada, ahora puede configurarla mediante las API de Cloud Manager como se describe a continuación.
+
+>[!TAB API de Cloud Manager]
+
+La dirección IP de salida dedicada se puede habilitar mediante las API de Cloud Manager. AEM Los siguientes pasos describen cómo habilitar la dirección IP de salida dedicada en las direcciones as a Cloud Service mediante la API de Cloud Manager.
+
+
 1. En primer lugar, determine la región en la que se necesita la red avanzada mediante la API de Cloud Manager [listRegions](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) operación. El `region name` es necesario para realizar llamadas posteriores a la API de Cloud Manager. Normalmente, se utiliza la región en la que reside el entorno de producción.
 
-   AEM Encuentre la región de su entorno as a Cloud Service de la en [Cloud Manager](https://my.cloudmanager.adobe.com) en el [detalles del entorno](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en#viewing-environment). El nombre de región que se muestra en Cloud Manager puede ser [asignado al código de región](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) se utiliza en la API de Cloud Manager.
+   AEM Encuentre la región de su entorno as a Cloud Service de la en [Cloud Manager](https://my.cloudmanager.adobe.com) en el [detalles del entorno](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments). El nombre de región que se muestra en Cloud Manager puede ser [asignado al código de región](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) se utiliza en la API de Cloud Manager.
 
    __solicitud HTTP listRegions__
 
@@ -67,7 +100,7 @@ AEM Comience habilitando y configurando la dirección IP de salida dedicada en e
        -H 'Content-Type: application/json' 
    ```
 
-1. Habilite la dirección IP de salida dedicada para un programa de Cloud Manager mediante la API de Cloud Manager [createNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) operación. Utilice el adecuado `region` código obtenido de la API de Cloud Manager `listRegions` operación.
+2. Habilite la dirección IP de salida dedicada para un programa de Cloud Manager mediante la API de Cloud Manager [createNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) operación. Utilice el adecuado `region` código obtenido de la API de Cloud Manager `listRegions` operación.
 
    __solicitud HTTP createNetworkInfrastructure__
 
@@ -82,7 +115,7 @@ AEM Comience habilitando y configurando la dirección IP de salida dedicada en e
 
    Espere 15 minutos para que el programa Cloud Manager aprovisione la infraestructura de red.
 
-1. Compruebe que el programa ha finalizado __dirección IP de salida dedicada__ Configuración de mediante la API de Cloud Manager [getNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) operación, usando el `id` devuelto por la solicitud HTTP createNetworkInfrastructure del paso anterior.
+3. Compruebe que el programa ha finalizado __dirección IP de salida dedicada__ Configuración de mediante la API de Cloud Manager [getNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) operación, usando el `id` devuelto desde el `createNetworkInfrastructure` Solicitud HTTP en el paso anterior.
 
    __petición HTTP getNetworkInfrastructure__
 
@@ -95,6 +128,11 @@ AEM Comience habilitando y configurando la dirección IP de salida dedicada en e
    ```
 
    Compruebe que la respuesta HTTP contiene un __status__ de __ready__. Si aún no está listo, vuelva a comprobar el estado cada pocos minutos.
+
+Con la dirección IP de salida dedicada creada, ahora puede configurarla mediante las API de Cloud Manager como se describe a continuación.
+
+>[!ENDTABS]
+
 
 ## Configurar proxies de direcciones IP de salida dedicados por entorno
 
@@ -138,7 +176,7 @@ AEM Comience habilitando y configurando la dirección IP de salida dedicada en e
 
    La firma HTTP de la configuración de la dirección IP de salida dedicada solo difiere de [puerto de salida flexible](./flexible-port-egress.md#enable-dedicated-egress-ip-address-per-environment) en el sentido de que también admite el `nonProxyHosts` configuración.
 
-   `nonProxyHosts` declara un conjunto de hosts para los que el puerto 80 o 443 debe enrutarse a través de los intervalos de direcciones IP compartidos predeterminados en lugar de la IP de salida dedicada. `nonProxyHosts` puede resultar útil, ya que la salida de tráfico a través de direcciones IP compartidas puede optimizarse aún más automáticamente mediante el Adobe.
+   `nonProxyHosts` declara un conjunto de hosts para los que el puerto 80 o 443 debe enrutarse a través de los intervalos de direcciones IP compartidos predeterminados en lugar de la IP de salida dedicada. `nonProxyHosts` puede resultar útil, ya que la salida de tráfico a través de direcciones IP compartidas se optimiza automáticamente mediante el Adobe.
 
    Para cada `portForwards` , la red avanzada define la siguiente regla de reenvío:
 
@@ -168,9 +206,9 @@ AEM Comience habilitando y configurando la dirección IP de salida dedicada en e
 
    El nombre de host no puede ser `pinged`, ya que es una salida y _no_ y la entrada.
 
-   Tenga en cuenta __dirección IP de salida dedicada__ AEM es compartido por todos los entornos as a Cloud Service de la aplicación de manera independiente, en el programa.
+   AEM Tenga en cuenta que todos los entornos as a Cloud Service del programa comparten la dirección IP de salida dedicada.
 
-1. AEM Ahora puede utilizar la dirección IP de salida dedicada en el código de y la configuración personalizados. AEM A menudo, al utilizar una dirección IP de salida dedicada, los servicios externos a los que se conecta as a Cloud Service se configuran para permitir solo el tráfico de esta dirección IP dedicada.
+1. AEM Ahora, puede utilizar la dirección IP de salida dedicada en el código y la configuración personalizados de la. AEM A menudo, al utilizar una dirección IP de salida dedicada, los servicios externos a los que se conecta as a Cloud Service se configuran para permitir solo el tráfico de esta dirección IP dedicada.
 
 ## Conexión a servicios externos a través de una dirección IP de salida dedicada
 
@@ -181,11 +219,11 @@ AEM Con la dirección IP de salida dedicada habilitada, el código y la configur
 1. llamadas no HTTP/HTTPS a servicios externos
    + Incluye cualquier llamada que no sea HTTP, como conexiones con servidores de correo, bases de datos SQL o servicios que se ejecutan en otros protocolos que no son HTTP/HTTPS.
 
-AEM Las solicitudes HTTP/HTTPS de los puertos estándar (80/443) están permitidas de forma predeterminada, pero no utilizarán la dirección IP de salida dedicada si no se configura correctamente como se describe a continuación.
+AEM Las solicitudes HTTP/HTTPS de los puertos estándar (80/443) se permiten de forma predeterminada, pero no utilizan la dirección IP de salida dedicada si no se configura correctamente como se describe a continuación.
 
 >[!TIP]
 >
-> AEM Consulte la documentación de la dirección IP de salida dedicada de as a Cloud Service para [el conjunto completo de reglas de enrutamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html#dedcated-egress-ip-traffic-routing=).
+> AEM Consulte la documentación de la dirección IP de salida dedicada de as a Cloud Service para [el conjunto completo de reglas de enrutamiento](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking).
 
 
 ### HTTP/HTTPS
