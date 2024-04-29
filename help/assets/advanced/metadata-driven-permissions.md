@@ -9,9 +9,10 @@ level: Intermediate
 jira: KT-13757
 thumbnail: xx.jpg
 doc-type: Tutorial
-source-git-commit: 3b500873ee7307df590ac66dea541a1adf14d726
+exl-id: 57478aa1-c9ab-467c-9de0-54807ae21fb1
+source-git-commit: 03cb7ef0cf79a21ec1b96caf6c11e6f5119f777c
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '682'
 ht-degree: 0%
 
 ---
@@ -42,15 +43,14 @@ Para implementar permisos impulsados por metadatos:
    ```json
    {
      "restrictionPropertyNames":[
-       "status"
+       "status",
+       "brand"
      ],
-     "restrictionPaths":[
-       "/content/dam"
-     ]
+     "enabled":true
    }
    ```
 
-1. Reemplace los nombres de propiedad y las rutas de restricción por los valores necesarios.
+1. Reemplace los nombres de propiedad por los valores necesarios.
 
 
 Antes de agregar entradas de control de acceso basadas en restricciones, se debe agregar una nueva entrada de nivel superior para denegar primero el acceso de lectura a todos los grupos sujetos a la evaluación de permisos para recursos (por ejemplo, &quot;colaboradores&quot; o similares):
