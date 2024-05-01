@@ -7,18 +7,24 @@ feature: GraphQL API
 role: Developer, Architect
 level: Intermediate
 jira: KT-15233
-last-substantial-update: 2024-04-01T00:00:00Z
-source-git-commit: c498783aceaf3bb389baaeaeefbe9d8d0125a82e
+last-substantial-update: 2024-05-01T00:00:00Z
+exl-id: c4b093d4-39b8-4f0b-b759-ecfbb6e9e54f
+source-git-commit: a3d2b2343269d2cfc7cecc5817ef1e07a66a88d3
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '1151'
 ht-degree: 0%
 
 ---
 
-
 # AEM Protección del contenido en entornos sin encabezado
 
 AEM AEM Garantizar la integridad y seguridad de los datos al servir contenido sin encabezado a la hora de publicar contenido confidencial es crucial a la hora de ofrecer contenido confidencial. AEM Este procedimiento le guiará por la protección del contenido servido por los extremos de la API de GraphQL sin encabezado de.
+
+Las directrices de este tutorial indican requisitos estrictos para que el contenido esté disponible exclusivamente para usuarios o grupos de usuarios específicos. Es imperativo distinguir entre contenido de marketing personalizado y contenido privado, como PII o datos financieros personales, para evitar confusiones y resultados no deseados. Este tutorial aborda la protección del contenido privado.
+
+Al hablar del contenido de marketing, nos referimos a contenido adaptado a usuarios o grupos individuales, que no está pensado para el consumo general. Sin embargo, es esencial comprender que, aunque este contenido puede estar dirigido a determinados usuarios, su exposición fuera del contexto deseado (por ejemplo, mediante la manipulación de solicitudes HTTP) no supone un riesgo de seguridad, legal o de reputación.
+
+Se enfatiza que todo el contenido abordado en este artículo se asume como privado, y solo puede ser visto por usuarios o grupos designados. El contenido de marketing a menudo no requiere protección, sino que su entrega a usuarios específicos puede ser administrado por la aplicación y almacenado en caché para obtener rendimiento.
 
 Este procedimiento no cubre lo siguiente:
 
@@ -114,4 +120,3 @@ Tenga en cuenta que esto incurrirá en una penalización de rendimiento, ya que 
 ## AEM Protección de puntos finales de API de GraphQL sin encabezado
 
 Esta guía no trata la seguridad del [AEM Extremos de API de GraphQL sin encabezado](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/graphql-api/graphql-endpoint) , sino que se centra en asegurar el contenido servido por ellos. Todos los usuarios, incluidos los usuarios anónimos, pueden acceder a los extremos que contienen contenido protegido. Solo se devuelve el contenido accesible por los grupos de usuarios cerrados del usuario. AEM Si no se puede acceder a ningún contenido, la respuesta de la API sin encabezado tendrá un código de estado de respuesta HTTP 200, pero los resultados estarán vacíos. Normalmente, la seguridad del contenido es suficiente, ya que los propios extremos no exponen inherentemente datos confidenciales. AEM Si necesita proteger los puntos de conexión, aplíqueles ACL en el momento de la publicación a través de la función de publicación de la interfaz de usuario de [Scripts de inicialización del repositorio de Sling (repoinit)](https://sling.apache.org/documentation/bundles/repository-initialization.html#repoinit-parser-test-scenarios).
-
