@@ -11,9 +11,9 @@ jira: KT-11200
 thumbnail: kt-11200.jpg
 exl-id: bdec6cb0-34a0-4a28-b580-4d8f6a249d01
 duration: 569
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 85d516d57d818d23372ab7482d25e33242ef0426
 workflow-type: tm+mt
-source-wordcount: '2146'
+source-wordcount: '1884'
 ht-degree: 0%
 
 ---
@@ -77,22 +77,6 @@ La cantidad de recursos que toma el proceso de extracción de CTT depende del n�
 
 Si se utilizan entornos clonados para la migración, esto no afectará a la utilización de recursos del servidor de producción en directo, pero tiene sus propios inconvenientes con respecto a la sincronización de contenido entre la producción en directo y el clon
 
-### P: En mi sistema de creación de fuentes, tenemos SSO configurado para que los usuarios se autentiquen en la instancia de autor. ¿Tengo que usar la función de asignación de usuarios de CTT en este caso?
-
-La respuesta corta es &quot;**Sí**&quot;.
-
-La extracción y la ingesta de CTT **sin** AEM La asignación de usuarios solo migra el contenido y los principios asociados (usuarios, grupos) de origen a AEMaaCS. Sin embargo, existe el requisito de que estos usuarios (identidades) presentes en Adobe IMS y que tengan acceso (aprovisionado con) a la instancia de AEMaaCS para autenticarse correctamente. El trabajo de [herramienta de asignación de usuarios](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/overview-user-mapping-tool-legacy.html) AEM es asignar el usuario local de la aplicación al usuario de IMS para que la autenticación y las autorizaciones funcionen juntas.
-
-En este caso, el proveedor de identidad de SAML se configura con Adobe IMS para utilizar Federated/Enterprise ID AEM, en lugar de usar directamente el controlador de autenticación para usar el controlador de autenticación.
-
-### AEM P: En mi sistema de creación de fuentes, tenemos la autenticación básica configurada para que los usuarios se autentiquen en la instancia de autor con los usuarios locales de la. ¿Tengo que usar la función de asignación de usuarios de CTT en este caso?
-
-La respuesta corta es &quot;**Sí**&quot;.
-
-AEM La extracción y la ingesta de CTT sin asignación de usuarios sí migran el contenido, los principios asociados (usuarios, grupos) de la fuente a AEMaaCS. Sin embargo, existe el requisito de que estos usuarios (identidades) presentes en Adobe IMS y que tengan acceso (aprovisionado con) a la instancia de AEMaaCS para autenticarse correctamente. El trabajo de [herramienta de asignación de usuarios](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/overview-user-mapping-tool-legacy.html) AEM es asignar el usuario local de la aplicación al usuario de IMS para que la autenticación y las autorizaciones funcionen juntas.
-
-En este caso, los usuarios utilizan Adobe ID personal y el administrador de IMS utiliza Adobe ID para proporcionar acceso a AEMaaCS.
-
 ### P: ¿Qué significan los términos &quot;borrar&quot; y &quot;sobrescribir&quot; en el contexto de CTT?
 
 En el contexto de [fase extracción](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#extraction-setup-phase), las opciones son sobrescribir los datos del contenedor de ensayo de ciclos de extracción anteriores o agregar el diferencial (añadido/actualizado/eliminado) en él. El contenedor de ensayo no es nada, pero el contenedor de almacenamiento del blob asociado al conjunto de migración. Cada conjunto de migración obtiene su propio contenedor de ensayo.
@@ -107,10 +91,11 @@ Sí, es posible, pero requiere una planificación cuidadosa con respecto a:
    + Compruebe si es aceptable migrar todos los recursos como parte de un conjunto de migración y, a continuación, traer los sitios que los utilizan por fases
 + En el estado actual, el proceso de inserción de autores hace que la instancia de creación no esté disponible para la creación de contenido aunque el nivel de publicación pueda seguir sirviendo el contenido
    + Esto significa que hasta que la ingesta se complete en Author, las actividades de creación de contenido se congelan
++ Los usuarios ya no se migran, aunque los grupos sí lo hacen
 
 Revise el proceso de extracción e ingesta superior tal y como está documentado antes de planificar las migraciones.
 
-### P: ¿Mis sitios web van a estar disponibles para los usuarios finales aunque la ingesta se produzca en instancias de autor o publicación de AEMaaCS?
+### P: ¿Mis sitios web van a estar disponibles para los usuarios finales aunque la ingesta se esté produciendo en instancias de autor o publicación de AEMaaCS?
 
 Sí. La actividad de migración de contenido no interrumpe el tráfico del usuario final. Sin embargo, la ingesta de autores detiene la creación de contenido hasta que se completa.
 
@@ -160,7 +145,6 @@ El proceso de CTT requiere conectividad con los siguientes recursos:
 
 + AEM El entorno as a Cloud Service de destino: `author-p<program_id>-e<env_id>.adobeaemcloud.com`
 + El servicio Azure Blob Storage: `casstorageprod.blob.core.windows.net`
-+ Extremo de E/S de asignación de usuarios: `usermanagement.adobe.io`
 
 Consulte la documentación para obtener más información sobre [conectividad de origen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#source-environment-connectivity).
 
@@ -198,7 +182,7 @@ Si el número de activos/nodos en el entorno de origen está en el extremo infer
 + Continúe trabajando en el creador de producción local/de AMS
 + A partir de ahora, ejecute todas las demás pruebas de ciclos de migración con `wipe=true`
    + Tenga en cuenta que esta operación migra el almacén de nodos completos, pero solo los blobs modificados en lugar de los blobs completos. El conjunto anterior de blobs está en el almacén de blobs de Azure de la instancia de AEMaaCS de destino.
-   + Utilice esta prueba de migraciones para medir la duración de la migración, la asignación de usuarios, las pruebas y la validación de todas las demás funcionalidades
+   + Utilice esta prueba de migraciones para medir la duración, la prueba y la validación de la migración del resto de funcionalidades
 + Finalmente, antes de la semana de go-live, realice una migración wipe=true
    + Conectar Dynamic Media en AEMaaCS
    + AEM Desconectar la configuración de DM de la fuente local de la
