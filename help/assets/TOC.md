@@ -7,9 +7,9 @@ sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: 89920c29e4d5f41263ee21b87e04c97b113c0feb
+source-git-commit: cd20fbc6c960c1ec827b4aaf804d81e7a2c6d92d
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '416'
 ht-degree: 18%
 
 ---
@@ -49,6 +49,7 @@ ht-degree: 18%
 + Búsqueda y descubrimiento{#search-and-discovery}
    + [Buscar](./search-and-discovery/search.md)
    + [Búsqueda contextual](./search-and-discovery/contextual-search.md)
+   + [Integración de Adobe Firefly](./search-and-discovery/adobe-firefly.md)
    + [Colecciones](./search-and-discovery/collections.md)
    + [Ampliación de la búsqueda](./search-and-discovery/search-boost.md)
    + [Buscar imágenes similares](./search-and-discovery/find-similar-images.md)
