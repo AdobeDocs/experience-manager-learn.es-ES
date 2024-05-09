@@ -1,6 +1,6 @@
 ---
 title: Implementación de pasos de proceso personalizados
-description: Escribir archivos adjuntos de formularios adaptables en el sistema de archivos mediante el paso de proceso personalizado
+description: Escribir archivos adjuntos de formularios adaptables en el sistema de archivos mediante un paso de proceso personalizado
 feature: Workflow
 version: 6.5
 topic: Development
@@ -9,18 +9,18 @@ level: Experienced
 exl-id: 879518db-3f05-4447-86e8-5802537584e5
 last-substantial-update: 2021-06-09T00:00:00Z
 duration: 226
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 7ebc33932153cf024e68fc5932b7972d9da262a7
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '758'
 ht-degree: 0%
 
 ---
 
 # Etapa de proceso personalizado
 
-Este tutorial está diseñado para los clientes de AEM Forms que necesitan implementar pasos de proceso personalizados. Un paso del proceso puede ejecutar un script ECMA o llamar al código java personalizado para realizar operaciones. Este tutorial explicará los pasos necesarios para implementar WorkflowProcess que ejecuta el paso del proceso.
+Este tutorial está diseñado para los clientes de AEM Forms que necesitan implementar un paso de proceso personalizado. Un paso del proceso puede ejecutar un script ECMA o llamar al código Java™ personalizado para realizar operaciones. Este tutorial explicará los pasos necesarios para implementar WorkflowProcess que ejecuta el paso del proceso.
 
-AEM El motivo principal para implementar el paso de proceso personalizado es ampliar el flujo de trabajo de la. Por ejemplo, si utiliza componentes de AEM Forms en el modelo de flujo de trabajo, puede que desee realizar las siguientes operaciones
+AEM El motivo principal para implementar un paso de proceso personalizado es ampliar el flujo de trabajo de la. Por ejemplo, si utiliza componentes de AEM Forms en el modelo de flujo de trabajo, puede que desee realizar las siguientes operaciones
 
 * Guardar los archivos adjuntos de los formularios adaptables en el sistema de archivos
 * Manipulación de los datos enviados
@@ -29,24 +29,30 @@ Para aplicar el caso de uso anterior, normalmente escribirá un servicio OSGi qu
 
 ## Crear proyecto de Maven
 
-El primer paso es crear un proyecto de Maven utilizando el Arquetipo de Maven de Adobe adecuado. Los pasos detallados se enumeran en esta sección [artículo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Una vez que tenga el proyecto de Maven importado en Eclipse, estará listo para empezar a escribir el primer componente OSGi que se pueda utilizar en el paso del proceso.
+El primer paso es crear un proyecto de Maven utilizando el Arquetipo de Maven de Adobe adecuado. Los pasos detallados se enumeran en esta sección [artículo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Una vez que haya importado el proyecto Maven en Eclipse, estará listo para empezar a escribir el primer componente OSGi que se pueda utilizar en el paso del proceso.
 
 
 ### Crear clase que implemente WorkflowProcess
 
-Abra el proyecto de Maven en el IDE de Eclipse. Expandir **projectname** > **núcleo** carpeta. Expanda la carpeta src/main/java. Debería ver un paquete que termina con &quot;core&quot;. Cree una clase Java que implemente WorkflowProcess en este paquete. Deberá anular el método de ejecución. La firma del método execute es la siguiente: public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments)throws WorkflowException El método execute da acceso a las siguientes 3 variables
+Abra el proyecto Maven en su Eclipse IDE. Expandir **projectname** > **núcleo** carpeta. Expanda el `src/main/java` carpeta. Debería ver un paquete que termina con `core`. Cree una clase Java™ que implemente WorkflowProcess en este paquete. Deberá anular el método execute. La firma del método execute es la siguiente:
+
+```java
+public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments) throws WorkflowException 
+```
+
+El método execute proporciona acceso a las siguientes 3 variables:
 
 **WorkItem**: la variable workItem proporciona acceso a los datos relacionados con el flujo de trabajo. La documentación de la API pública está disponible [aquí.](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
 
-**WorkflowSession**: esta variable workflowSession le permite controlar el flujo de trabajo. La documentación de la API pública está disponible [aquí](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
+**WorkflowSession**: esta variable workflowSession le permite controlar el flujo de trabajo. La documentación de la API pública está disponible [aquí](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html).
 
 **MetaDataMap**: todos los metadatos asociados al flujo de trabajo. Todos los argumentos de proceso que se pasan al paso de proceso están disponibles mediante el objeto MetaDataMap.[Documentación de API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)
 
 AEM En este tutorial, vamos a escribir los archivos adjuntos agregados al formulario adaptable en el sistema de archivos como parte del flujo de trabajo de la.
 
-Para aplicar este caso de uso, se escribió la siguiente clase java
+Para aplicar este caso de uso, se escribió la siguiente clase Java™
 
-Echemos un vistazo a este código
+Vamos a ver este código
 
 ```java
 package com.learningaemforms.adobe.core;
@@ -127,7 +133,7 @@ public class WriteFormAttachmentsToFileSystem implements WorkflowProcess {
             }
 ```
 
-Línea 1: define las propiedades del componente. La propiedad process.label es lo que verá al asociar el componente OSGi con el paso del proceso, como se muestra en una de las capturas de pantalla a continuación.
+Línea 1: define las propiedades del componente. El `process.label` Esta propiedad es lo que verá al asociar el componente OSGi con el paso del proceso, como se muestra en una de las capturas de pantalla a continuación.
 
 Líneas 13-15: los argumentos de proceso pasados a este componente OSGi se dividen mediante el separador &quot;,&quot;. A continuación, los valores de attachmentPath y saveToLocation se extraen de la matriz de cadenas.
 
@@ -139,12 +145,12 @@ Estos dos valores se pasan como argumentos de proceso como se muestra en la capt
 
 ![ProcessStep](assets/implement-process-step.gif)
 
-El servicio QueryBuilder se utiliza para consultar nodos de tipo nt:file en la carpeta attachmentsPath. El resto del código se repite en los resultados de búsqueda para crear el objeto Document y guardarlo en el sistema de archivos
+El servicio QueryBuilder se utiliza para consultar nodos de tipo `nt:file` en la carpeta attachmentsPath. El resto del código se repite en los resultados de búsqueda para crear el objeto Document y guardarlo en el sistema de archivos.
 
 
 >[!NOTE]
 >
->Dado que estamos utilizando un objeto de documento específico de AEM Forms, es necesario incluir la dependencia aemfd-client-sdk en su proyecto de Maven. El ID del grupo es com.adobe.aemfd y el ID del artefacto es aemfd-client-sdk.
+>Dado que estamos utilizando un objeto de documento específico de AEM Forms, es necesario incluir la dependencia aemfd-client-sdk en el proyecto de Maven. El ID de grupo es `com.adobe.aemfd` y el id de artefactos es `aemfd-client-sdk`.
 
 #### Creación e implementación
 
