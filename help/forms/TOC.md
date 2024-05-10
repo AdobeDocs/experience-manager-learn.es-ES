@@ -8,9 +8,9 @@ breadcrumb-title: Tutoriales de AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: eb4463ae0270725c5b0bd96e9799bada25b06303
+source-git-commit: 81026b569ae0dc9976f714715682448a41d9f8bc
 workflow-type: tm+mt
-source-wordcount: '2059'
+source-wordcount: '2064'
 ht-degree: 2%
 
 ---
@@ -178,6 +178,7 @@ ht-degree: 2%
    + [Convertir formulario PDF en formulario adaptable](aem-forms-and-adobe-sign/convert-pdf-form-into-adaptive-form.md)
    + [Configurar formulario adaptable convertido](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
    + [Uso de plantillas XDP con Acrobat Sign](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
+   + [Uso de métodos de ayuda de Acrobat Sign](aem-forms-and-adobe-sign/send-documents-signing-using-sign-api.md)
 + Firma de varios Forms{#sign-multiple-documents}
    + [1 - Introducción](sign-multiple-documents/introduction.md)
    + [2 - Configurar la fuente de datos](sign-multiple-documents/configure-data-source.md)
