@@ -1,6 +1,6 @@
 ---
 title: Descripción general del marco de experimentación en Edge Delivery Services
-description: Explore el marco de experimentación que permite a los especialistas en marketing probar qué variaciones de IA generativa son más efectivas en los Edge Delivery Services.
+description: Explore el marco de trabajo de experimentación que permite a los especialistas en marketing probar qué variaciones de contenido son más efectivas en la creación de documentos para Edge Delivery Services.
 version: Cloud Service
 feature: Authoring
 topic: Content Management
@@ -10,16 +10,18 @@ doc-type: Feature Video
 duration: 77
 last-substantial-update: 2024-05-08T00:00:00Z
 jira: KT-15478
-source-git-commit: 43a8b1eb7e714b27972c0ea2b1327ab8db044d25
+exl-id: c2de104f-c0fb-4cf2-a1ad-3a711caeb30b
+source-git-commit: caee59e03da7905b1d57b4325e06501d46d073e6
 workflow-type: tm+mt
-source-wordcount: '56'
+source-wordcount: '58'
 ht-degree: 0%
 
 ---
 
-
 # Descripción general del marco de experimentación en Edge Delivery Services
 
-Explore el marco de experimentación que permite a los especialistas en marketing probar qué variaciones de IA generativa son más efectivas en los Edge Delivery Services.
+{{edge-delivery-services}}
+
+Explore el marco de trabajo de experimentación que permite a los especialistas en marketing probar qué variaciones de contenido son más efectivas en la creación de documentos para Edge Delivery Services.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3429061/?learn=on)

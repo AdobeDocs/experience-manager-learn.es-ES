@@ -6,10 +6,10 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: 131008cfeb41789582bf821b724f996b7fb6fabb
+source-git-commit: caee59e03da7905b1d57b4325e06501d46d073e6
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 18%
+source-wordcount: '532'
+ht-degree: 19%
 
 ---
 
@@ -36,19 +36,20 @@ ht-degree: 18%
       + [Texto alternativo de imagen](./document-authoring/how-to/image-alt-text.md)
       + [Impedir la indexación del motor de búsqueda](./document-authoring/how-to/no-index.md)
       + [Navegación interactiva](document-authoring/how-to/responsive-navigation.md)
-      + [Generar variaciones](./document-authoring/how-to/generate-variations.md)
-      + [Configuración del Sidekick para generar variaciones](./document-authoring/how-to/generate-variations-sidekick-config.md)
-      + [Plantillas de mensajes GenAI](./document-authoring/how-to/prompt-templates-for-content-variations.md)
-      + [Plantillas de petición de datos personalizada GenAI](./document-authoring/how-to/custom-prompt-templates.md)
-      + [GenAI guardar plantillas de petición de datos personalizadas](./document-authoring/how-to/save-custom-prompt-template.md)
-      + [Audiencias de destino para generar variación](./document-authoring/how-to/using-target-audiences-in-generate-variations.md)
-      + [Archivo CSV de audiencias para generar variación](./document-authoring/how-to/using-audiences-csv-file-in-generate-variations.md)
-      + [Adobe Firefly para generar variación](./document-authoring/how-to/using-adobe-firefly-for-images-in-generate-variations.md)
-      + [Acciones de variación generativa](./document-authoring/how-to/generate-variations-actions.md)
-      + [Personalizar peticiones de datos mediante metadatos](./document-authoring/how-to/customizing-prompts-using-metadata.md)
-      + [Confianza y privacidad de GenAI](./document-authoring/how-to/generate-variations-trust-privacy.md)
+      + Generar variaciones{#generate-variations}
+         + [Información general](./document-authoring/how-to/generate-variations/overview.md)
+         + [Configuración del Sidekick](./document-authoring/how-to/generate-variations/configure-sidekick.md)
+         + [Preguntar plantillas](./document-authoring/how-to/generate-variations/prompt-templates.md)
+         + [Plantillas de mensajes personalizadas](./document-authoring/how-to/generate-variations/custom-prompt-templates.md)
+         + [Guardar plantillas de mensajes personalizadas](./document-authoring/how-to/generate-variations/save-custom-prompt-template.md)
+         + [Audiencias de Adobe Target](./document-authoring/how-to/generate-variations/using-target-audiences.md)
+         + [Audiencias del archivo CSV](./document-authoring/how-to/generate-variations/using-csv-file-audiences.md)
+         + [Adobe Firefly](./document-authoring/how-to/generate-variations/using-adobe-firefly-for-images.md)
+         + [Acciones](./document-authoring/how-to/generate-variations/actions.md)
+         + [Confianza y privacidad](./document-authoring/how-to/generate-variations/trust-privacy.md)
       + [Marco de experimentación](./document-authoring/how-to/experimentation-framework.md)
       + [Configurar marco de experimentación](./document-authoring/how-to/setup-experimentation-framework.md)
+      + [Metadatos para experimentación](./document-authoring/how-to/experimentation-add-metadata.md)
 + Creación de páginas {#page-authoring}
    + [Creación](page-authoring/aem-sites-authoring-overview.md)
    + [Navegación](page-authoring/basic-handling-sites-feature-video-use.md)
