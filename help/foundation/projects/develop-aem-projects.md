@@ -9,7 +9,7 @@ role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
 duration: 1603
-source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
+source-git-commit: b778fa9334d70b61b0d0fa31b6c62ac03490b11e
 workflow-type: tm+mt
 source-wordcount: '4441'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Este tutorial recorrerá paso a paso el código necesario para crear una plantil
 * [Paquete de tutorial finalizado](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [Repositorio de código completo en GitHub](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
 
-Este tutorial supone algunos conocimientos básicos de [AEM Prácticas de desarrollo de](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/introduction/the-basics) y cierta familiaridad con [AEM Configuración del proyecto de Maven](https://docs.adobe.com/content/help/en/experience-manager-65/developing/devtools/ht-projects-maven.html). Todo el código mencionado está diseñado para utilizarse como referencia y solo debe implementarse en una [AEM instancia de desarrollo local de](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy).
+Este tutorial supone algunos conocimientos básicos de [AEM Prácticas de desarrollo de](https://experienceleague.adobe.com/es_es/docs/experience-manager-65/content/implementing/developing/introduction/the-basics) y cierta familiaridad con [AEM Configuración del proyecto de Maven](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html?lang=en). Todo el código mencionado está diseñado para utilizarse como referencia y solo debe implementarse en una [AEM instancia de desarrollo local de](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/implementing/deploying/deploying/deploy).
 
 ## Estructura de una plantilla de proyecto
 
@@ -129,7 +129,7 @@ Dado que principalmente copiamos/configuramos nodos, utilizaremos CRXDE Lite. AE
    1. Añadir un nuevo **nt:unstructured** debajo del proyecto de creación/gadgets llamado **tasks**.
    1. Agregue propiedades de cadena al nodo de tareas para **cardWeight** = &quot;100&quot;, **jcr:título**=&quot;Tasks&quot; y **sling:resourceType**=&quot;cq/gui/components/projects/admin/pod/taskpod&quot;.
 
-   Ahora, la [Mosaico Tareas](https://experienceleague.adobe.com/docs/#Tasks) se mostrará de forma predeterminada cuando se cree un nuevo proyecto.
+   Ahora, la [Mosaico Tareas](https://experienceleague.adobe.com/en/docs) se mostrará de forma predeterminada cuando se cree un nuevo proyecto.
 
    ```shell
    ../projects/templates/authoring-project
@@ -629,13 +629,13 @@ La creación de un asistente personalizado puede ser muy eficaz, ya que puede re
 
 1. En CRXDE-Lite, crearemos una subcarpeta debajo de `/apps/aem-guides/projects-tasks/projects` carpeta llamada &quot;asistentes&quot;. Copie el asistente predeterminado de: `/libs/cq/core/content/projects/workflowwizards/default_workflow` debajo de la carpeta de asistentes recién creada y cambie su nombre a **content-approval-start**. La ruta completa debería ser ahora: `/apps/aem-guides/projects-tasks/projects/wizards/content-approval-start`.
 
-   El asistente predeterminado es un asistente de 2 columnas con la primera columna que muestra el título, la descripción y la miniatura del modelo de flujo de trabajo seleccionado. La segunda columna incluye campos para el Título del flujo de trabajo, el Comentario de inicio y la Ruta de carga útil. El asistente es un formulario de IU táctil estándar y utiliza [Componentes del formulario de Granite UI](https://experienceleague.adobe.com/docs/) para rellenar los campos.
+   El asistente predeterminado es un asistente de 2 columnas con la primera columna que muestra el título, la descripción y la miniatura del modelo de flujo de trabajo seleccionado. La segunda columna incluye campos para el Título del flujo de trabajo, el Comentario de inicio y la Ruta de carga útil. El asistente es un formulario de IU táctil estándar y utiliza [Componentes del formulario de Granite UI](https://experienceleague.adobe.com/en/docs) para rellenar los campos.
 
    ![asistente de flujo de trabajo de aprobación de contenido](./assets/develop-aem-projects/content-approval-start-wizard.png)
 
 1. Agregaremos un campo adicional al asistente que se utiliza para establecer el usuario asignado de la primera tarea en el flujo de trabajo (consulte [Creación del modelo de flujo de trabajo](#create-workflow-model): Paso 5).
 
-   Debajo `../content-approval-start/jcr:content/items/column2/items` crear un nuevo nodo de tipo `nt:unstructured` nombrado **&quot;assign&quot;**. Utilizaremos el componente Selector de usuarios de proyectos (que se basa en el [Componente Selector de usuarios de Granite](https://experienceleague.adobe.com/docs/)). Este campo de formulario facilita la restricción de la selección de usuarios y grupos únicamente a los que pertenecen al proyecto actual.
+   Debajo `../content-approval-start/jcr:content/items/column2/items` crear un nuevo nodo de tipo `nt:unstructured` nombrado **&quot;assign&quot;**. Utilizaremos el componente Selector de usuarios de proyectos (que se basa en el [Componente Selector de usuarios de Granite](https://experienceleague.adobe.com/en/docs)). Este campo de formulario facilita la restricción de la selección de usuarios y grupos únicamente a los que pertenecen al proyecto actual.
 
    A continuación se muestra la representación XML del **asignar** nodo:
 
@@ -655,7 +655,7 @@ La creación de un asistente personalizado puede ser muy eficaz, ya que puede re
 
 1. También agregaremos un campo de selección de prioridad que determinará la prioridad de la primera tarea del flujo de trabajo (consulte [Creación del modelo de flujo de trabajo](#create-workflow-model): Paso 5).
 
-   Debajo `/content-approval-start/jcr:content/items/column2/items` crear un nuevo nodo de tipo `nt:unstructured` nombrado **priority**. Utilizaremos la variable [Componente Seleccionar de la IU de Granite](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es) para rellenar el campo del formulario.
+   Debajo `/content-approval-start/jcr:content/items/column2/items` crear un nuevo nodo de tipo `nt:unstructured` nombrado **priority**. Utilizaremos la variable [Componente Seleccionar de la IU de Granite](https://experienceleague.adobe.com/es_es/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions) para rellenar el campo del formulario.
 
    Debajo del **priority** se agregará un nodo **items** nodo de **nt:unstructured**. Debajo del **items** nodo agregue 3 nodos más para rellenar las opciones de selección para Alto, Medio y Bajo. Cada nodo es de tipo **nt:unstructured** y debe tener un **texto** y **valor** propiedad. El texto y el valor deben tener el mismo valor:
 
@@ -691,7 +691,7 @@ La creación de un asistente personalizado puede ser muy eficaz, ya que puede re
    </priority>
    ```
 
-1. Permitir al iniciador del flujo de trabajo establecer la fecha límite de la tarea inicial Utilizaremos la variable [Selector de fecha de IU de Granite](https://experienceleague.adobe.com/docs/) para capturar esta entrada. También agregaremos un campo oculto con una etiqueta [TypeHint](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html#typehint) para asegurarse de que la entrada se almacena como una propiedad de tipo Fecha en el JCR.
+1. Permitir al iniciador del flujo de trabajo establecer la fecha límite de la tarea inicial Utilizaremos la variable [Selector de fecha de IU de Granite](https://experienceleague.adobe.com/en/docs) para capturar esta entrada. También agregaremos un campo oculto con una etiqueta [TypeHint](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html#typehint) para asegurarse de que la entrada se almacena como una propiedad de tipo Fecha en el JCR.
 
    Añadir dos **nt:unstructured** nodos con las siguientes propiedades representadas a continuación en XML:
 
