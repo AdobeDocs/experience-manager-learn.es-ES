@@ -12,9 +12,9 @@ jira: KT-13148
 thumbnail: KT-13148.jpeg
 exl-id: b67bf642-3341-48d0-8ea9-5f262febf414
 duration: 292
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: c7c78ca56c1d72f13d2dc80229a10704ab0f14ab
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '575'
 ht-degree: 3%
 
 ---
@@ -63,7 +63,7 @@ Consulte un ejemplo de `cdn.yaml` AEM dentro del proyecto WKND Sites de las guí
 
 ### Implementar reglas mediante Cloud Manager {#deploy-rules-through-cloud-manager}
 
-Para implementar reglas, siga estos pasos:
+Para implementar las reglas, siga estos pasos:
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
@@ -95,11 +95,11 @@ Para implementar reglas, siga estos pasos:
 
 ### Prueba de reglas mediante la generación de tráfico
 
-Para probar las reglas, hay varias herramientas de terceros disponibles y es posible que su organización tenga una herramienta preferida. Para fines de demostración, vamos a utilizar las siguientes herramientas:
+Para probar las reglas, hay varias herramientas de terceros disponibles y es posible que su organización tenga una herramienta preferida. Para el propósito de demostración, vamos a utilizar las siguientes herramientas:
 
 - [Curl](https://curl.se/) para pruebas básicas como invocar una URL y comprobar el código de respuesta.
 
-- [Vegeta](https://github.com/tsenart/vegeta) para realizar denegación de servicio (DOS). Siga las instrucciones de instalación de [GitHub de Vegeta](https://github.com/tsenart/vegeta#install).
+- [Vegeta](https://github.com/tsenart/vegeta) para realizar denegación de servicio (DOS). Siga las instrucciones de instalación de la [GitHub de Vegeta](https://github.com/tsenart/vegeta#install).
 
 - [Nikto](https://github.com/sullo/nikto/wiki) para encontrar posibles problemas y vulnerabilidades de seguridad como XSS, inyección SQL y más. Siga las instrucciones de instalación de [Nikto GitHub](https://github.com/sullo/nikto).
 
@@ -119,9 +119,11 @@ Para probar las reglas, hay varias herramientas de terceros disponibles y es pos
 
 ### Analizar los resultados con las herramientas del panel
 
-Después de crear, implementar y probar las reglas, puede analizar los resultados mediante **Elasticsearch, Logstash y Kibana (ELK)** herramientas de tablero. Puede analizar los registros de CDN de AEM CS, lo que le permite visualizar los resultados en forma de varios gráficos y diagramas.
+Después de crear, implementar y probar las reglas, puede analizar los resultados mediante **CDN** registros y **AEMCS-CDN-Log-Analysis-Tool**. La herramienta proporciona un conjunto de paneles para visualizar los resultados de la pila de Splunk y ELK (Elasticsearch, Logstash y Kibana).
 
-Las herramientas de tablero se pueden clonar directamente desde el [AEMCS-CDN-Log-Analysis-ELK-Tool Repositorio de GitHub](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) y siga los pasos para instalar y cargar el **Reglas de filtro de tráfico (incluido WAF)** panel.
+Las herramientas se pueden clonar desde el [AEMCS-CDN-Log-Analysis-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) Repositorio de GitHub. A continuación, siga las instrucciones para instalar y cargar el **Tablero de tráfico de CDN** y **Tablero WAF** paneles para su herramienta de observación preferida.
+
+En este tutorial, vamos a utilizar la pila ELK. Siga las [Contenedor de Docker de ELK para análisis de registro de CDN de AEM CS](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md) Instrucciones para configurar la pila ELK.
 
 - Después de cargar el tablero de muestra, la página de la herramienta Tablero elástico debería tener el siguiente aspecto:
 

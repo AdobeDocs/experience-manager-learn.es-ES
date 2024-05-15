@@ -12,9 +12,9 @@ jira: KT-13148
 thumbnail: KT-13148.jpeg
 exl-id: 4a7acdd2-f442-44ee-8560-f9cb64436acf
 duration: 170
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: c7c78ca56c1d72f13d2dc80229a10704ab0f14ab
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Conozca las prácticas recomendadas para las reglas de filtro de tráfico, inclu
 - Al declarar y validar reglas, empiece siempre por `action` type `log` para asegurarse de que la regla no bloquee el tráfico legítimo.
 - Para determinadas reglas, la transición de `log` hasta `block` debe basarse exclusivamente en el análisis del tráfico suficiente del sitio.
 - Introduzca reglas de forma incremental y considere la posibilidad de incluir a sus equipos de prueba (control de calidad, rendimiento, pruebas de penetración) en el proceso.
-- Analice el impacto de las reglas con regularidad usando [herramientas de tablero](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool). Según el volumen de tráfico del sitio, el análisis se puede realizar diariamente, semanalmente o mensualmente.
+- Analice el impacto de las reglas con regularidad usando [herramientas de tablero](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling). Según el volumen de tráfico del sitio, el análisis se puede realizar diariamente, semanalmente o mensualmente.
 - Para bloquear el tráfico malintencionado que pueda detectar después del análisis, agregue las reglas adicionales. Por ejemplo, ciertas direcciones IP que han estado atacando el sitio.
 - La creación, la implementación y el análisis de reglas deben ser un proceso continuo e iterativo. No es una actividad única.
 
@@ -91,7 +91,7 @@ data:
 
 ## Prácticas recomendadas para reglas WAF
 
-Una vez que el WAF tiene licencia y está habilitado para su programa, los indicadores de WAF coincidentes con el tráfico aparecen en los gráficos y registros de solicitudes, aunque no los haya declarado en una regla. De este modo, siempre tendrá en cuenta el posible tráfico malintencionado nuevo y podrá crear reglas según sea necesario. Observe los indicadores WAF que no se reflejan en las reglas declaradas y considere la posibilidad de declararlos.
+Una vez que el WAF tiene licencia y está habilitado para su programa, los indicadores de WAF coincidentes con el tráfico aparecen en los gráficos y registros de solicitudes, aunque no los haya declarado en una regla. Por lo tanto, siempre es consciente del tráfico malicioso potencialmente nuevo y puede crear reglas según sea necesario. Observe los indicadores WAF que no se reflejan en las reglas declaradas y considere la posibilidad de declararlos.
 
 AEM Considere las reglas WAF que se indican a continuación para su proyecto de. Sin embargo, los valores deseados para `action` y `wafFlags` La propiedad debe determinarse en colaboración con el equipo de seguridad.
 

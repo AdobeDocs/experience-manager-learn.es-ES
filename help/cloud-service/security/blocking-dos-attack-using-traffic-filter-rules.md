@@ -12,9 +12,9 @@ last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15184
 thumbnail: KT-15184.jpeg
 exl-id: 60c2306f-3cb6-4a6e-9588-5fa71472acf7
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: c7c78ca56c1d72f13d2dc80229a10704ab0f14ab
 workflow-type: tm+mt
-source-wordcount: '1918'
+source-wordcount: '1968'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ AEM Vamos a comprender las protecciones predeterminadas DDoS para su sitio web d
 - **Bloqueo:** La CDN de Adobe bloquea el tráfico al origen si supera una tasa definida por el Adobe de una dirección IP en particular, por PoP (punto de presencia) de CDN.
 - **Alerta:** El Centro de acciones envía un pico de tráfico en la notificación de alerta de origen cuando el tráfico supera una tasa determinada. Esta alerta se activa cuando el tráfico a cualquier PoP de CDN dada supera un _definido por el Adobe_ tasa de solicitudes por dirección IP. Consulte [Alertas de reglas de filtro de tráfico](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#traffic-filter-rules-alerts) para obtener más información.
 
-Estas protecciones integradas deben considerarse una línea de base para la capacidad de una organización de minimizar el impacto en el rendimiento de un ataque DDoS. Dado que cada sitio web tiene diferentes características de rendimiento y puede ver una degradación del rendimiento antes de que se cumpla el límite de tasa definido por el Adobe, se recomienda ampliar las protecciones predeterminadas mediante _configuración del cliente_.
+Estas protecciones integradas deben considerarse una línea de base para la capacidad de una organización de minimizar el impacto en el rendimiento de un ataque DDoS. Dado que cada sitio web tiene diferentes características de rendimiento y puede ver esa degradación del rendimiento antes de que se cumpla el límite de tasa definido por el Adobe, se recomienda ampliar las protecciones predeterminadas mediante _configuración del cliente_.
 
 Veamos algunas medidas adicionales recomendadas que los clientes pueden tomar para proteger sus sitios web de ataques DDoS:
 
@@ -76,14 +76,20 @@ El Adobe envía un pico de tráfico en la alerta de origen como [Notificación d
 
 ## Análisis de patrones de tráfico {#analyze-traffic}
 
-Si el sitio ya está activo, puede analizar los patrones de tráfico mediante los registros de CDN y uno de los siguientes métodos:
+Si el sitio ya está activo, puede analizar los patrones de tráfico mediante los registros de CDN y los paneles de Adobe proporcionados.
+
+- **Tablero de tráfico de CDN**: proporciona perspectivas sobre el tráfico a través de la red de distribución de contenido (CDN) y la tasa de solicitudes de origen, las tasas de error 4xx y 5xx y las solicitudes no almacenadas en caché. También proporciona el máximo de solicitudes de CDN y de origen por segundo por dirección IP de cliente y más perspectivas para optimizar las configuraciones de CDN.
+
+- **Proporción de aciertos de caché de CDN**: proporciona información sobre la proporción total de visitas de caché y el recuento total de solicitudes por estado HIT, PASS y MISS. También proporciona las principales direcciones URL HIT, PASS y MISS.
+
+Configurar las herramientas de tablero mediante _una de las siguientes opciones_:
 
 ### ELK: configuración de herramientas de tablero
 
 El **Elasticsearch, Logstash y Kibana (ELK)** Las herramientas de tablero proporcionadas por Adobe se pueden utilizar para analizar los registros de CDN. Esta herramienta incluye un tablero que visualiza los patrones de tráfico, lo que facilita la determinación de los umbrales óptimos para las reglas de filtro de tráfico de límite de velocidad.
 
-- Clonar el [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) Repositorio de GitHub.
-- Configure las herramientas siguiendo los pasos siguientes [Cómo configurar el contenedor ELK Docker](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool?tab=readme-ov-file#how-to-set-up-the-elk-docker-container) pasos.
+- Clonar el [AEMCS-CDN-Log-Analysis-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) Repositorio de GitHub.
+- Configure las herramientas siguiendo los pasos siguientes [Cómo configurar el contenedor ELK Docker](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md#how-to-set-up-the-elk-docker-containerhow-to-setup-the-elk-docker-container) pasos.
 - Como parte de la configuración, importe `traffic-filter-rules-analysis-dashboard.ndjson` para visualizar los datos. El _Tráfico de CDN_ El panel incluye visualizaciones que muestran el número máximo de solicitudes por IP/POP en el perímetro y el origen de la CDN.
 - Desde el [Cloud Manager](https://my.cloudmanager.adobe.com/)de _Entornos_ , descargue los registros de CDN del servicio de publicación de AEM CS.
 
@@ -95,9 +101,9 @@ El **Elasticsearch, Logstash y Kibana (ELK)** Las herramientas de tablero propor
 
 ### Splunk: configuración de las herramientas del panel
 
-Clientes que tienen [Reenvío de registro de Splunk habilitado](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) Puede crear un nuevo tablero para analizar los patrones de tráfico. El siguiente archivo XML le ayuda a crear un tablero en Splunk:
+Clientes que tienen [Reenvío de registro de Splunk habilitado](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) Puede crear nuevos tableros para analizar los patrones de tráfico.
 
-- [CDN: panel de tráfico](./assets/traffic-dashboard.xml): Este panel proporciona información sobre los patrones de tráfico en el perímetro y el origen de la CDN. Incluye visualizaciones que muestran el número máximo de solicitudes por IP/POP en CDN Edge y Origin.
+Para crear paneles en Splunk, siga [Paneles de Splunk para el análisis de registro de CDN de AEM CS](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/READEME.md#splunk-dashboards-for-aemcs-cdn-log-analysis) pasos.
 
 ### Consulta de datos
 
