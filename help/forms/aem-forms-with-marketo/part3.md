@@ -9,8 +9,8 @@ level: Experienced
 badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: 7096340b-8ccf-4f5e-b264-9157232e96ba
-duration: 97
-source-git-commit: 4f818f2ad01d9ecadcf5593aa038c7db15b4d496
+duration: 78
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 10%
@@ -53,6 +53,6 @@ Dirija el explorador a [página de integraciones de datos.](http://localhost:450
 1. Proporcione un leadId válido y haga clic en Probar. Si todo va bien, debe obtener los detalles del posible cliente, como se muestra en la captura de pantalla siguiente
    ![resultados de las pruebas](assets/testresults.png)
 
-## Pasos siguientes
+## Siguientes pasos
 
 [Poniéndolo todo junto para la prueba](./part4.md)

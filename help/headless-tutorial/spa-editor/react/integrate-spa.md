@@ -10,8 +10,8 @@ role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 31416399-6a4e-47d1-8ed8-be842a01a727
-duration: 502
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 409
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1689'
 ht-degree: 1%
@@ -348,7 +348,7 @@ Los cambios realizados en el `Header` actualmente solo son visibles a través de
 
 SPA AEM ¡Enhorabuena, ha actualizado la y ha explorado la integración con la opción de integración de! SPA AEM Ahora sabe cómo desarrollar la contra la API del modelo JSON de la aplicación de datos de la aplicación de datos de la aplicación de modo que utilice una **webpack-dev-server**.
 
-### Pasos siguientes {#next-steps}
+### Siguientes pasos {#next-steps}
 
 [SPA AEM Asignación de componentes de a componentes de](map-components.md) : Obtenga información sobre cómo asignar componentes de React a componentes de Adobe Experience Manager AEM AEM SPA () con el SDK de JS de Editor de. SPA AEM SPA AEM La asignación de componentes permite a los usuarios realizar actualizaciones dinámicas en los componentes de la de componentes del Editor de componentes, de forma similar a la creación tradicional de los componentes de la.
 

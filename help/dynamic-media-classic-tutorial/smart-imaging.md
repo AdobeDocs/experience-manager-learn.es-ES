@@ -7,8 +7,8 @@ role: User
 level: Beginner
 doc-type: Tutorial
 exl-id: 678671c3-af25-4da1-bc14-cbc4cc19be8d
-duration: 158
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 130
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '654'
 ht-degree: 1%
@@ -21,7 +21,7 @@ Uno de los aspectos más importantes de la experiencia del cliente en su sitio w
 
 Las imágenes inteligentes también se benefician del aumento de rendimiento añadido de estar totalmente integradas con el mejor servicio premium de su clase de Adobe. Este servicio encuentra la ruta de Internet óptima entre servidores, redes y puntos de intercambio entre iguales que tiene la menor latencia o tasa de pérdida de paquetes que la ruta predeterminada de Internet.
 
-Más información sobre [Imágenes inteligentes](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/imaging-faq.html).
+Más información sobre [Imágenes inteligentes](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/imaging-faq.html?lang=es).
 
 ## Ventajas de imágenes inteligentes
 
@@ -51,7 +51,7 @@ La activación de imágenes inteligentes comienza con el envío al servicio de a
 
 Una vez que haya habilitado Imágenes inteligentes, querrá comprobar que funciona según lo esperado.
 
-Probablemente tenga más preguntas sobre Imágenes inteligentes. Hemos compilado una lista de preguntas frecuentes (FAQ) con respuestas. Lea el [Preguntas frecuentes](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/imaging-faq.html).
+Probablemente tenga más preguntas sobre Imágenes inteligentes. Hemos compilado una lista de preguntas frecuentes (FAQ) con respuestas. Lea el [Preguntas frecuentes](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/imaging-faq.html?lang=es).
 
 ## Recursos adicionales
 

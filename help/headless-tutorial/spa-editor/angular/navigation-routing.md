@@ -10,8 +10,8 @@ role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 197a0c1f-4d0a-4b99-ba89-cdff2e6ac4ec
-duration: 816
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 669
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '2531'
 ht-degree: 0%
@@ -729,6 +729,6 @@ SPA AEM SPA ¡Enhorabuena! Ha aprendido cómo se pueden admitir varias vistas en
 
 Siempre puede ver el código terminado en [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/navigation-routing-solution) o compruebe el código localmente cambiando a la rama `Angular/navigation-routing-solution`.
 
-### Pasos siguientes {#next-steps}
+### Siguientes pasos {#next-steps}
 
 [Crear un componente personalizado](custom-component.md) AEM SPA : Aprenda a crear un componente personalizado para utilizarlo con el Editor de. Aprenda a desarrollar cuadros de diálogo de autor y modelos Sling para ampliar el modelo JSON y rellenar un componente personalizado.

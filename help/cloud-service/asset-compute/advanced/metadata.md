@@ -10,8 +10,8 @@ topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 6ece6e82-efe9-41eb-adf8-78d9deed131e
-duration: 500
-source-git-commit: 0400242f6a99bc5209a8b483469d5fd88eac077e
+duration: 432
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1405'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Los trabajadores de Asset compute XMP AEM personalizadas pueden producir datos (
 Los casos de uso comunes incluyen:
 
 + Integraciones con sistemas de terceros, como un PIM (sistema de administración de información del producto), donde se deben recuperar y almacenar metadatos adicionales en el recurso
-+ Integraciones con los servicios de Adobe, como la inteligencia artificial aplicada al contenido y al comercio para aumentar los metadatos de los recursos con atributos de aprendizaje automático adicionales.
++ Integraciones con servicios de Adobe, como contenido e IA de Commerce, para aumentar los metadatos de los recursos con atributos de aprendizaje automático adicionales
 + AEM Derivar metadatos sobre el recurso a partir de su binario y almacenarlos como metadatos de recurso en as a Cloud Service
 
 ## Qué va a hacer

@@ -11,8 +11,8 @@ last-substantial-update: 2022-11-11T00:00:00Z
 recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: 0bdb93c9-5070-483c-a34c-f2b348bfe5ae
-duration: 378
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 297
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1230'
 ht-degree: 0%
@@ -361,6 +361,6 @@ AEM AEM Ahora ha preparado configuraciones de la y las ha implementado en el aut
 + AEM AEM Implemente el proyecto de en el servicio local de creación de SDK de
 + AEM SPA SPA Marcar una página de como raíz de la remota mediante la propiedad de la página URL del host de la aplicación
 
-## Pasos siguientes
+## Siguientes pasos
 
 AEM Con la configuración de la plataforma, podemos centrarnos en lo siguiente: [SPA Inicio de la aplicación remota de](./spa-bootstrap.md) AEM SPA con compatibilidad para áreas editables mediante el Editor de de trabajo.

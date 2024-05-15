@@ -10,8 +10,8 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: d2da6efa-1f77-4391-adda-e3180c42addc
-duration: 327
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 242
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1151'
 ht-degree: 2%
@@ -182,6 +182,6 @@ AEM Con la aplicación React en ejecución, realice una actualización del conte
 
 AEM Felicidades, ahora tiene una aplicación externa que consume contenido de la con GraphQL. No dude en inspeccionar el código en la aplicación React y seguir experimentando con la modificación de fragmentos de contenido existentes.
 
-### Pasos siguientes
+### Siguientes pasos
 
 * [AEM Iniciar el tutorial sin encabezado de la](../multi-step/overview.md)

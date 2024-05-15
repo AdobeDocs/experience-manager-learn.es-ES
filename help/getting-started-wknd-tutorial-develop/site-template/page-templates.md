@@ -11,8 +11,8 @@ thumbnail: KT-7498.jpg
 doc-type: Tutorial
 exl-id: 261ec68f-36f4-474f-a6e4-7a2f9cea691b
 recommendations: noDisplay, noCatalog
-duration: 1593
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 1561
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '628'
 ht-degree: 0%
@@ -86,7 +86,7 @@ Utilice el [texto proporcionado](./assets/page-templates/la-skateparks-copy.txt)
 
 Acaba de crear una plantilla y una página nuevas con Adobe Experience Manager Sites.
 
-### Pasos siguientes {#next-steps}
+### Siguientes pasos {#next-steps}
 
 En este punto, la página del artículo de la revista y el sitio no coinciden con los estilos de marca de WKND. Siga las [Temática](theming.md) tutorial para conocer las prácticas recomendadas para actualizar el código de front-end de CSS y Javascript utilizado para aplicar estilos globales al sitio.
 

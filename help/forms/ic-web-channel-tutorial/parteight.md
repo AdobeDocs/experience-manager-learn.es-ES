@@ -9,8 +9,8 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: ba9ce6a2-f6e8-4e84-a23a-f4803879f635
-duration: 46
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 37
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '202'
 ht-degree: 0%
@@ -45,6 +45,6 @@ Asegúrese de seleccionar el elemento del modelo de datos de formulario correcto
 
 ![linechart64](assets/linechart65.PNG)
 
-## Pasos siguientes
+## Siguientes pasos
 
 [Configurar tabla](./partnine.md)

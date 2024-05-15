@@ -12,8 +12,8 @@ thumbnail: 30177.jpg
 doc-type: Tutorial
 exl-id: 7fd021ef-d221-4113-bda1-4908f3a8629f
 recommendations: noDisplay, noCatalog
-duration: 1778
-source-git-commit: 0400242f6a99bc5209a8b483469d5fd88eac077e
+duration: 1715
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 1%
@@ -338,7 +338,7 @@ A continuación se muestran los pasos de alto nivel realizados en el vídeo ante
 
 ¡Felicidades, ha aprendido los conceptos básicos del desarrollo de componentes en Adobe Experience Manager!
 
-### Pasos siguientes {#next-steps}
+### Siguientes pasos {#next-steps}
 
 Familiarícese con las páginas y plantillas de Adobe Experience Manager en el capítulo siguiente [Páginas y plantillas](pages-templates.md). Comprenda cómo los componentes principales se procesan como proxy en el proyecto y aprenda configuraciones de directiva avanzadas de plantillas editables para crear una plantilla de página de artículo bien estructurada.
 

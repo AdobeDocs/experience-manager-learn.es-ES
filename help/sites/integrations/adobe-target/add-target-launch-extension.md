@@ -12,8 +12,8 @@ badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 doc-type: Tutorial
 exl-id: aa48ffef-1105-4d0d-b4b4-12ac5d2eea23
-duration: 297
-source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
+duration: 290
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 3%
@@ -28,7 +28,7 @@ Obtenga información sobre cómo habilitar Adobe Target AEM en el sitio web de l
 
 >[!VIDEO](https://video.tv.adobe.com/v/41247?quality=12&learn=on)
 
-## Pasos siguientes
+## Siguientes pasos
 
 + [Carga y activación de una llamada de Target](./load-and-fire-target.md)
 

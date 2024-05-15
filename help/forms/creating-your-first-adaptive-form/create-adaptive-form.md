@@ -8,8 +8,8 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: de3a0444-64ae-45a1-8329-aafa6f5add49
-duration: 232
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 229
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '54'
 ht-degree: 14%
@@ -24,6 +24,6 @@ Crearemos un formulario adaptable basado en la plantilla creada en la lección a
 
 >[!VIDEO](https://video.tv.adobe.com/v/22173?quality=12&learn=on)
 
-## Pasos siguientes
+## Siguientes pasos
 
 [Añadir paneles secundarios al panel raíz](./configuring-root-panel-and-adding-child-panels.md)

@@ -11,8 +11,8 @@ thumbnail: 30359.jpg
 doc-type: Tutorial
 exl-id: 8d3026e9-a7e2-4a76-8a16-a8197a5e04e3
 recommendations: noDisplay, noCatalog
-duration: 732
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 557
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '2546'
 ht-degree: 0%
@@ -320,7 +320,7 @@ AEM A continuación, vamos a revisar cómo se hace referencia a los clientlibs e
    >
    >En el lado de la publicación es fundamental que las bibliotecas de cliente estén **no** servido desde **/apps** ya que esta ruta debe restringirse por motivos de seguridad utilizando [Sección de filtro de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#example-filter-section). El [propiedad allowProxy](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) de la biblioteca de cliente garantiza que CSS y JS se proporcionen desde **/etc.clientlibs**.
 
-### Pasos siguientes {#next-steps}
+### Siguientes pasos {#next-steps}
 
 Aprenda a implementar estilos individuales y a reutilizar los componentes principales mediante el sistema de estilos de Experience Manager. [Desarrollo con el sistema de estilos](style-system.md) cubre el uso del sistema de estilos para ampliar los componentes principales con CSS específicos de la marca y configuraciones de directiva avanzadas del editor de plantillas.
 

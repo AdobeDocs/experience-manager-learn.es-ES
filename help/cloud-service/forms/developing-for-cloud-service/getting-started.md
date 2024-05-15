@@ -9,8 +9,8 @@ version: Cloud Service
 topic: Development
 jira: KT-8842
 exl-id: 274018b9-91fe-45ad-80f2-e7826fddb37e
-duration: 55
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 44
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 1%
@@ -37,6 +37,6 @@ Este tutorial hará referencia a esta estructura de carpetas a partir de ahora.
 * Copie y pegue el contenido del [archivo de texto](assets/creating-maven-project.txt) en la ventana del símbolo del sistema. Es posible que tenga que cambiar DarchetypeVersion=30 según la variable [última versión](https://github.com/adobe/aem-project-archetype/releases). La última versión tenía 30 años en el momento de escribir este artículo.
 * Ejecute el comando pulsando la tecla Intro. Si todo funciona correctamente, debería ver el mensaje de éxito de la versión.
 
-## Pasos siguientes
+## Siguientes pasos
 
 [Instalación de IntelliJ](./intellij-set-up.md)

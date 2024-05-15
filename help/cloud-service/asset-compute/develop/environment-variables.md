@@ -10,8 +10,8 @@ topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: c63c5c75-1deb-4c16-ba33-e2c338ef6251
-duration: 156
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 121
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '587'
 ht-degree: 0%
@@ -111,6 +111,6 @@ Para iniciar la herramienta de desarrollo de Assets computes para el proyecto de
 1. Observe la salida de la línea de comandos y el explorador Web en busca de mensajes de error cuando se inicializa la herramienta de desarrollo.
 1. Para detener la herramienta de desarrollo de Assets computes, pulse `Ctrl-C` en la ventana que se ejecutó `aio app run` para finalizar el proceso.
 
-## Solución de problemas
+## Resolución de problemas
 
 + [No se puede iniciar la herramienta de desarrollo porque falta private.key](../troubleshooting.md#missing-private-key)

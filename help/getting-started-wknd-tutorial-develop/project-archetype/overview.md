@@ -11,8 +11,8 @@ index: y
 doc-type: Tutorial
 exl-id: 90d14734-f644-4a45-9361-1e47a5b52fff
 recommendations: disable
-duration: 96
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 74
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 18%
@@ -69,6 +69,6 @@ AEM El código de este tutorial se encuentra en GitHub, en el repositorio de la 
 
 Además, cada parte del tutorial tiene su propia rama en GitHub. Un usuario puede comenzar el tutorial en cualquier momento simplemente desprotegiendo la rama que corresponde a la parte anterior.
 
-## Pasos siguientes {#next-steps}
+## Siguientes pasos {#next-steps}
 
 ¿Qué estás esperando? Inicie el tutorial navegando hasta [Configuración del proyecto](project-setup.md) y aprenda a generar un nuevo proyecto de Adobe Experience Manager AEM utilizando el tipo de archivo del proyecto de.

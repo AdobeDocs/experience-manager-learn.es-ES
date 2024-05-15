@@ -12,8 +12,8 @@ badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 doc-type: Tutorial
 exl-id: d5de62ef-a2aa-4283-b500-e1f7cb5dec3b
-duration: 640
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 606
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '593'
 ht-degree: 1%
@@ -86,7 +86,7 @@ La propiedad Tag _Reglas_ Cuando se activan mediante una biblioteca, piense en l
 
 El paso anterior completa la creación de la propiedad de etiqueta simple que tiene una regla para registrar un mensaje en la consola del explorador cuando se carga la página. Además, la regla y la extensión principal se publican creando una biblioteca.
 
-## Pasos siguientes
+## Siguientes pasos
 
 [AEM Conexión con la propiedad de etiqueta de mediante IMS](connect-aem-tag-property-using-ims.md)
 

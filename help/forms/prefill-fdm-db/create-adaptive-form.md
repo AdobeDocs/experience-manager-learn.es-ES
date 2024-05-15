@@ -9,8 +9,8 @@ topic: Development
 role: User
 level: Beginner
 exl-id: c8d4eed8-9e2b-458c-90d8-832fc9e0ad3f
-duration: 164
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 124
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '598'
 ht-degree: 2%
@@ -98,7 +98,7 @@ Ahora necesitamos abrir el formulario con el empID apropiado en la URL. Los dos 
 [Formulario con empID=207](http://localhost:4502/content/dam/formsanddocuments/fdmdemo/jcr:content?wcmmode=disabled&amp;empID=207)
 [Formulario con empID=208](http://localhost:4502/content/dam/formsanddocuments/fdmdemo/jcr:content?wcmmode=disabled&amp;empID=208)
 
-## Solución de problemas
+## Resolución de problemas
 
 Mi formulario está en blanco y no contiene datos
 

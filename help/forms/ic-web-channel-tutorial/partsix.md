@@ -9,8 +9,8 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: a0a0c8dc-5302-446c-9fec-e23fe1320e34
-duration: 43
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 33
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 3%
@@ -42,6 +42,6 @@ En esta parte, crearemos la comunicación interactiva para el canal Web.
 1. Pulse Crear
 1. Puede pulsar en Listo (Done) o Editar (Edit) para cerrar el cuadro de diálogo.
 
-## Pasos siguientes
+## Siguientes pasos
 
 [Agregar texto e imagen al documento](./partseven.md)

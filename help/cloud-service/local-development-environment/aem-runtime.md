@@ -10,8 +10,8 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-09-02T00:00:00Z
 exl-id: 19f72254-2087-450b-909d-2d90c9821486
-duration: 529
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 411
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1696'
 ht-degree: 9%
@@ -214,7 +214,7 @@ Durante el desarrollo, puede ser deseable simular la distribución de contenido 
 
 >[!NOTE]
 >
-Los agentes de replicación solo están disponibles para su uso en el JAR de inicio rápido local y proporcionan solo una simulación de distribución de contenido.
+> Los agentes de replicación solo están disponibles para su uso en el JAR de inicio rápido local y proporcionan solo una simulación de distribución de contenido.
 
 1. Inicie sesión en **Autor** y vaya a [http://localhost:4502/etc/replication/agents.author.html](http://localhost:4502/etc/replication/agents.author.html).
 1. Clic **Agente predeterminado (publicar)** para abrir el agente de replicación predeterminado.
@@ -279,7 +279,7 @@ AEM AEM Actualice el SDK de la al menos una vez al mes, o poco después, el últ
 
 >[!WARNING]
 >
-AEM La actualización del Jar de inicio rápido a una nueva versión requiere reemplazar todo el entorno de desarrollo local, lo que provoca la pérdida de todo el código, la configuración y el contenido de los repositorios de la base de datos de la aplicación de inicio rápido (QUICKstart JAR) local. AEM AEM Asegúrese de que cualquier código, configuración o contenido que no se deba destruir se conserva de forma segura con Git o se exporta desde la instancia de la local como paquetes de la aplicación.
+> AEM La actualización del Jar de inicio rápido a una nueva versión requiere reemplazar todo el entorno de desarrollo local, lo que provoca la pérdida de todo el código, la configuración y el contenido de los repositorios de la base de datos de la aplicación de inicio rápido (QUICKstart JAR) local. AEM AEM Asegúrese de que cualquier código, configuración o contenido que no se deba destruir se conserva de forma segura con Git o se exporta desde la instancia de la local como paquetes de la aplicación.
 
 ### AEM Evitar la pérdida de contenido al actualizar el SDK de la
 
@@ -291,7 +291,7 @@ AEM AEM AEM Actualizar el SDK de la es crear de manera efectiva un tiempo de eje
 
 AEM Recuerde, el uso de los enfoques anteriores para mantener el código entre las actualizaciones del SDK de la indica un antipatrón de desarrollo. AEM El código no desechable debe originarse en el IDE de desarrollo y fluir hacia el SDK de la aplicación a través de implementaciones de SDK de la aplicación.
 
-## Solución de problemas
+## Resolución de problemas
 
 ### Al hacer doble clic en el archivo Jar de inicio rápido, se produce un error{#troubleshooting-double-click}
 

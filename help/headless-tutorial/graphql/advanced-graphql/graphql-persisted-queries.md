@@ -7,8 +7,8 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: 6a8e90ae-0765-4066-9df4-a3e4d2cda285
-duration: 221
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 183
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '760'
 ht-degree: 1%
@@ -236,7 +236,7 @@ Revisar [Almacenamiento en caché de consultas persistentes](https://experiencel
 
 ## Enhorabuena.
 
-Felicitaciones. Ahora ha aprendido a hacer que persistan las consultas de GraphQL con parámetros, a actualizar las consultas persistentes y a utilizar parámetros de control de caché con consultas persistentes.
+Enhorabuena. Ahora ha aprendido a hacer que persistan las consultas de GraphQL con parámetros, a actualizar las consultas persistentes y a utilizar parámetros de control de caché con consultas persistentes.
 
 ## Pasos siguientes
 

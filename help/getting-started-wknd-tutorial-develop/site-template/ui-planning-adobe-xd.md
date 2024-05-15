@@ -11,8 +11,8 @@ thumbnail: 338680.jpg
 doc-type: Tutorial
 exl-id: 3155e0fa-56b7-4a52-8eef-fee488e95f68
 recommendations: noDisplay, noCatalog
-duration: 667
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 646
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 2%
@@ -64,7 +64,7 @@ Ha aprendido cómo se pueden utilizar los kits de interfaz de usuario de Adobe X
 
 Adicional [Hay disponibles kits de IU](https://www.adobe.com/products/xd/features/ui-kits.html) para inspeccionar y descargar.
 
-### Pasos siguientes {#next-steps}
+### Siguientes pasos {#next-steps}
 
 En el capítulo siguiente se crea una nueva plantilla de página basada en el diseño de artículo de WKND.
 

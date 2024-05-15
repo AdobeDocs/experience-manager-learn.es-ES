@@ -10,8 +10,8 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 9bb05c94-2a7b-4149-b567-186eb08b1c66
-duration: 87
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 70
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 0%
@@ -73,6 +73,6 @@ Para generar un documento de canal de impresión mediante el mecanismo de carpet
 
 * Compruebe los archivos PDF en la ubicación de guardado según se especifica en el script ECMA.
 
-## Pasos siguientes
+## Siguientes pasos
 
 [Abrir la interfaz de usuario del agente al enviar el formulario](./opening-agent-ui-on-form-submission.md)

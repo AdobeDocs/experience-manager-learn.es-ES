@@ -10,8 +10,8 @@ topic: Development
 feature: Developer Tools
 jira: KT-8852
 exl-id: 983e0394-7142-481f-bd5e-6c9acefbfdd0
-duration: 58
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 52
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 0%
@@ -60,6 +60,6 @@ AEM En el proyecto de la en IntelliJ, haga clic con el botón secundario en `app
 
 Ahora puede configurar cualquier formulario adaptable para enviarlo a este controlador de envío personalizado llamado **AEM Enviar A Servlet De**
 
-## Pasos siguientes
+## Siguientes pasos
 
 [Registrar servlet mediante tipo de recurso](./registering-servlet-using-resourcetype.md)

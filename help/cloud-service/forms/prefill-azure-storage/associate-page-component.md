@@ -8,8 +8,8 @@ level: Beginner
 version: Cloud Service
 topic: Integrations
 exl-id: 7b2b1e1c-820f-4387-a78b-5d889c31eec0
-duration: 35
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 25
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 4%
@@ -29,6 +29,6 @@ Vaya al nodo /conf/AzurePortalStorage/settings/wcm/templates/storeandrestorefrom
 | **Nombre de propiedad**  | **Tipo de propiedad** | **Valor de propiedad**                                    | |--------------------|-------------------|-------------------------------------------------------| | sling:resourceType | Cadena | azureportalpagecomponent/component/page/storeandfetch |
 
 
-## Pasos siguientes
+## Siguientes pasos
 
 [Crear integración con Azure Storage](./create-fdm.md)

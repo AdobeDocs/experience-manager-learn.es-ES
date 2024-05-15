@@ -11,11 +11,11 @@ thumbnail: KT-7496.jpg
 doc-type: Tutorial
 exl-id: 6d0fdc4d-d85f-4966-8f7d-d53506a7dd08
 recommendations: noDisplay, noCatalog
-duration: 265
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 198
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '959'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -118,7 +118,7 @@ A continuación, genere un nuevo sitio con la plantilla de sitio del ejercicio a
 
    >[!NOTE]
    >
-   > AEM Si utiliza un entorno de compartido, añada un identificador único al **Nombre del sitio**. Por ejemplo `wknd-site-johndoe`. Esto garantizará que varios usuarios puedan completar el mismo tutorial, sin ningún conflicto.
+   > AEM Si utiliza un entorno de compartido, añada un identificador único al **Nombre del sitio**. Por ejemplo, `wknd-site-johndoe`. Esto garantizará que varios usuarios puedan completar el mismo tutorial, sin ningún conflicto.
 
 1. Clic **Crear** para generar el sitio. Clic **Listo** en el **Correcto** AEM cuando haya terminado de crear el sitio web.
 
@@ -140,6 +140,6 @@ A continuación, genere un nuevo sitio con la plantilla de sitio del ejercicio a
 
 AEM ¡Felicidades, acabas de crear tu primer sitio en la red de la red de la red de Internet
 
-### Pasos siguientes {#next-steps}
+### Siguientes pasos {#next-steps}
 
 Utilice el Editor de páginas en Adobe Experience Manager AEM, para actualizar el contenido del sitio en el, en el, y, a continuación, en el [Creación de contenido y publicación](author-content-publish.md) capítulo. Descubra cómo se pueden configurar los componentes atómicos para actualizar el contenido. AEM Comprenda la diferencia entre los entornos de creación y publicación de un y aprenda a publicar actualizaciones en el sitio en directo.

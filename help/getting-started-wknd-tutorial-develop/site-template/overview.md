@@ -10,8 +10,8 @@ jira: KT-7985
 thumbnail: 333477.jpg
 doc-type: Tutorial
 exl-id: a55c1dda-f74a-4914-aa1b-c4de8ad1253e
-duration: 437
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 426
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Aprenda a utilizar un método de código bajo para crear su primer sitio en Adob
 
 Los pasos de este tutorial se realizarán en un entorno de Adobe Experience Manager as a Cloud Service. AEM Asegúrese de que tiene acceso administrativo al entorno de la. Se recomienda utilizar un [Programa de zona protegida](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/sandbox-programs/introduction-sandbox-programs.html) y [Entorno de desarrollo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html) al completar este tutorial.
 
-## Pasos siguientes {#next-steps}
+## Siguientes pasos {#next-steps}
 
 AEM Un tutorial paso a paso recorre la implementación de un sitio de para una marca ficticia de estilo de vida WKND mediante la función Creación rápida de sitios.
 

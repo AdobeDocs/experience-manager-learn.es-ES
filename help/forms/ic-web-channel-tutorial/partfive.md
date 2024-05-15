@@ -9,8 +9,8 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 1d7093a8-3765-46ec-912a-b5a5503fd5af
-duration: 229
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 219
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 0%
@@ -33,6 +33,6 @@ El editor de fragmentos de documento también tiene la capacidad de insertar con
 >
 >Asegúrese de que los elementos del modelo de datos de formulario que inserta en un documento de fragmentos sean descendientes del elemento raíz. Por ejemplo, en este caso de uso, asegúrese de que los elementos del objeto Usuario que seleccione sean los elementos secundarios del objeto de saldos
 
-## Pasos siguientes
+## Siguientes pasos
 
 [Crear documento de comunicación interactiva](./partsix.md)

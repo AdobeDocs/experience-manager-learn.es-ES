@@ -10,8 +10,8 @@ role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 57c8fc16-fed5-4af4-b98b-5c3f0350b240
-duration: 300
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 250
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 1%
@@ -230,6 +230,6 @@ AEM SPA Enhorabuena, acaba de crear su primer proyecto de editor de.
 
 SPA La es bastante simple. En los próximos capítulos se agregará más funcionalidad.
 
-### Pasos siguientes {#next-steps}
+### Siguientes pasos {#next-steps}
 
 [SPA Integración de una](integrate-spa.md) SPA AEM SPA - Aprenda cómo se integra el código fuente de la con el Proyecto de la y comprenda las herramientas disponibles para desarrollar rápidamente el.

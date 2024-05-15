@@ -10,8 +10,8 @@ exl-id: 58851624-71c9-4745-aaaf-305acf6ccb14
 last-substantial-update: 2022-07-20T00:00:00Z
 doc-type: Tutorial
 thumbnail: aem-local-dev-env.jpg
-duration: 4677
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 4537
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '2413'
 ht-degree: 0%
@@ -29,7 +29,7 @@ La configuración de un entorno de desarrollo local es el primer paso al desarro
 * AEM Instancias locales de
 * [!DNL Apache Maven] proyecto
 * Entornos de desarrollo integrados (IDE)
-* Solución de problemas
+* Resolución de problemas
 
 ## AEM Instalar instancias locales de la
 
@@ -199,7 +199,7 @@ El **[IntelliJ IDEA](https://www.jetbrains.com/idea/)** es un potente IDE para e
 
 >[!VIDEO](https://video.tv.adobe.com/v/25917?quality=12&learn=on)
 
-## Solución de problemas
+## Resolución de problemas
 
 ***¡Ayuda!*** ¡Mi código no funciona! Al igual que con todo el desarrollo, hay momentos (probablemente muchos) en que el código no funciona como se espera. AEM Es una plataforma potente, pero con gran poder... viene una gran complejidad. A continuación se presentan algunos puntos de partida de alto nivel para la resolución de problemas y el seguimiento de problemas (pero lejos de una lista exhaustiva de cosas que pueden salir mal):
 

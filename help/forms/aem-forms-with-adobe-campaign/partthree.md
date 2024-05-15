@@ -9,8 +9,8 @@ level: Experienced
 badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: 502f4bdf-d4af-409f-a611-62b7a1a6065a
-duration: 136
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 144
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 1%
@@ -238,7 +238,7 @@ Para que esto funcione en su sistema, siga las siguientes instrucciones:
 * AEM Asegúrese de iniciar sesión en el servicio de acceso con un usuario cuyo ID de correo electrónico haya sido compartido por un perfil en Adobe Campaign. AEM Por ejemplo, si el ID de correo electrónico del usuario de la es johndoe@adobe.com, debe tener un perfil en ACS cuyo correo electrónico sea johndoe@adobe.com.
 * [Previsualización del formulario](http://localhost:4502/content/dam/formsanddocuments/prefillfromcampaign/jcr:content?wcmmode=disabled).
 
-## Pasos siguientes
+## Siguientes pasos
 
 [Crear un perfil de Adobe Campaign mediante el modelo de datos de formulario](./partfour.md)
 

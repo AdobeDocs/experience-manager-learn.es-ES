@@ -7,17 +7,17 @@ topic: Development, Architecture, Content Management
 role: Architect, Developer
 level: Beginner
 doc-type: Tutorial
-duration: 0
+duration: 761
 last-substantial-update: 2024-02-13T00:00:00Z
 jira: KT-14901
 thumbnail: KT-14901.jpeg
-source-git-commit: 6c01dc8a0e8fd3cc69b21c78da8678e872dcef0c
+exl-id: 070cbe54-2379-448b-bb7d-3756a60b65f0
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1116'
 ht-degree: 0%
 
 ---
-
 
 # Eventos de AEM Assets para la integración con PIM
 
@@ -298,4 +298,3 @@ AEM La sincronización de metadatos de recursos entre los sistemas de administra
 - La autenticación de la API utiliza OAuth servidor a servidor (también conocido como flujo de credenciales de cliente). Consulte [Guía de implementación de credenciales de servidor a servidor de OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/).
 - En lugar de Acciones de Adobe I/O Runtime, se pueden utilizar otros webhooks o Amazon EventBridge para recibir el evento de AEM Assets y procesar la actualización de metadatos.
 - AEM Los eventos de recursos a través de la ventilación de la permiten a las empresas automatizar y optimizar los procesos críticos, fomentando la eficacia y la coherencia en todo el ecosistema de contenido.
-

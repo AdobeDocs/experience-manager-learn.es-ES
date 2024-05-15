@@ -7,17 +7,17 @@ topic: Development, Architecture, Content Management
 role: Architect, Developer
 level: Beginner
 doc-type: Tutorial
-duration: 0
+duration: 558
 last-substantial-update: 2024-01-30T00:00:00Z
 jira: KT-14879
 thumbnail: KT-14879.jpeg
-source-git-commit: f0930e517254b6353fe50c3bbf9ae915d9ef6ca3
+exl-id: c362011e-89e4-479c-9a6c-2e5caa3b6e02
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '578'
 ht-degree: 0%
 
 ---
-
 
 # AEM Procesamiento de eventos de mediante la acción de Adobe I/O Runtime
 
@@ -263,8 +263,3 @@ Los requisitos de procesamiento de eventos difieren de un proyecto a otro, pero 
 - El procesamiento de eventos se puede realizar mediante la acción de Adobe I/O Runtime.
 - La acción de tiempo de ejecución puede comunicarse con sistemas como las aplicaciones internas, las soluciones de terceros y las soluciones de Adobe.
 - La acción de tiempo de ejecución sirve como punto de entrada a un proceso empresarial diseñado en torno a un cambio de contenido.
-
-
-
-
-

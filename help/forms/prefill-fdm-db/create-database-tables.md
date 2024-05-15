@@ -9,8 +9,8 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 1136244a-c3e6-45f6-8af8-eb3c100f838e
-duration: 28
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 21
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 1%
@@ -32,6 +32,6 @@ El modelo de datos de formulario se puede basar en fuentes RDBMS, RESTfull, SOAP
 
 Puede importar el [archivo sql](assets/db-schema.sql) uso de MySQL Workbench para crear dos tablas con algunos datos de ejemplo.
 
-## Pasos siguientes
+## Siguientes pasos
 
 [Configurar modelo de datos de formulario](./configuring-form-data-model.md)

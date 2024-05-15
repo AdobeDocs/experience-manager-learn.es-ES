@@ -8,8 +8,8 @@ role: Developer
 level: Beginner
 exl-id: 8c90fe1c-0c83-4287-9766-08d806b8815a
 last-substantial-update: 2020-02-10T00:00:00Z
-duration: 50
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 39
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 26%
@@ -36,6 +36,6 @@ Necesitará lo siguiente:
 
 * AEM Importe los archivos zip a mediante el uso de la opción de [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
 
-## Pasos siguientes
+## Siguientes pasos
 
 [Crear plantilla de formulario adaptable](./create-adaptive-form-template.md)

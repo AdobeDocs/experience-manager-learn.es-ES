@@ -8,8 +8,8 @@ role: Developer
 level: Beginner
 jira: KT-14196
 exl-id: f380d589-6520-4955-a6ac-2d0fcd5aaf3f
-duration: 33
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 32
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 1%
@@ -61,6 +61,6 @@ function handleFiles(formData) {
 El servlet montado en **_/bin/ExtractDataFromPDF_** extrae los datos del archivo PDF y devuelve la ruta del nodo crx donde se almacenan los datos extraídos.
 El [setData de GuideBridge](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html#setData__anchor) a continuación, se utiliza el método para establecer los datos del formulario adaptable.
 
-## Pasos siguientes
+## Siguientes pasos
 
 [Implementar los recursos de muestra](./test-the-solution.md)

@@ -11,8 +11,8 @@ thumbnail: KT-7497.jpg
 doc-type: Tutorial
 exl-id: 17ca57d1-2b9a-409c-b083-398d38cd6a19
 recommendations: noDisplay, noCatalog
-duration: 355
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 263
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1285'
 ht-degree: 1%
@@ -170,7 +170,7 @@ A continuación, vaya al servicio Publicación para ver los cambios.
 
 AEM ¡Felicidades, acaba de crear y publicar cambios en su sitio de la!
 
-### Pasos siguientes {#next-steps}
+### Siguientes pasos {#next-steps}
 
 En una implementación real, planificar un sitio con maquetas y diseños de interfaz de usuario suele preceder a la creación del sitio. Descubra cómo se pueden utilizar los Kits de IU de Adobe XD para diseñar y acelerar su implementación de Adobe Experience Manager Sites en [Planificación de la IU con Adobe XD](./ui-planning-adobe-xd.md).
 

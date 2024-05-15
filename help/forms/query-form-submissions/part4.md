@@ -9,7 +9,9 @@ role: Developer
 level: Experienced
 jira: kt-14884
 last-substantial-update: 2024-03-03T00:00:00Z
-source-git-commit: ae2a2cbde1bf21314cc77863014cb0f013b6e0bb
+exl-id: b83ffa66-5614-4e3e-84f9-e9ba57fc0955
+duration: 14
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 2%
@@ -24,6 +26,6 @@ Se ha utilizado un servicio de relleno previo para recuperar los datos asociados
 
 [Puede encontrar un artículo independiente sobre cómo rellenar previamente un formulario con datos y datos adjuntos aquí.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/prefill-form-with-data-attachments/introduction.html)
 
-## Pasos siguientes
+## Siguientes pasos
 
 [Implementar el ejemplo](./part5.md)

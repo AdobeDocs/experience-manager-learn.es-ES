@@ -9,8 +9,8 @@ badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM Sites 6.5" before-title="false"
 doc-type: Tutorial
 exl-id: 9b191211-2030-4b62-acad-c7eb45b807ca
-duration: 357
-source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
+duration: 337
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 1%
@@ -40,7 +40,7 @@ AEM AEM Para utilizar ofertas de fragmentos de experiencias de para potenciar su
 
      >[!NOTE]
      >
-     > El cliente debe contar con la recopilación de datos y el Adobe I/O de [compatibilidad con Adobe](https://helpx.adobe.com/es/contact/enterprise-support.ec.html) o póngase en contacto con el administrador del sistema
+     > El cliente debe contar con la recopilación de datos y el Adobe I/O de [compatibilidad con Adobe](https://helpx.adobe.com/contact/enterprise-support.ec.html) o póngase en contacto con el administrador del sistema
 
 ### AEM Integración de los usuarios de con Adobe Target
 

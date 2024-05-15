@@ -10,17 +10,17 @@ jira: KT-11618
 thumbnail: 3412319.jpg
 last-substantial-update: 2022-12-14T00:00:00Z
 exl-id: e86ddc9d-ce44-407a-a20c-fb3297bb0eb2
-duration: 509
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 496
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '203'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 # Áreas de nombres personalizadas
 
-Obtenga información sobre cómo definir e implementar funciones personalizadas [áreas de nombres](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/4.5_Namespaces.html) AEM a los as a Cloud Service.
+Obtenga información sobre cómo definir e implementar funciones personalizadas [áreas de nombres](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/4.5_Namespaces.html?lang=es) AEM a los as a Cloud Service.
 
 Las áreas de nombres personalizadas son la parte opcional de una propiedad JCR que precede a una `:`. AEM Utiliza varias áreas de nombres como:
 

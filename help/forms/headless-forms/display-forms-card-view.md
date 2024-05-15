@@ -8,8 +8,8 @@ topic: Development
 role: User
 level: Intermediate
 exl-id: c01ad68e-23c9-4564-8e3e-1924af34a493
-duration: 94
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 91
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 1%
@@ -130,6 +130,6 @@ export default function ListForm(){
 
 En el código anterior, iteramos a través de fetchedForms utilizando la función map y, para cada elemento de la matriz fetchedForms, se crea un componente FormCard y se agrega al contenedor Grid. Ahora puede utilizar el componente ListForm en la aplicación React según sus necesidades.
 
-## Pasos siguientes
+## Siguientes pasos
 
 [Mostrar el formulario adaptable cuando el usuario haga clic en una tarjeta](./open-form-card-view.md)

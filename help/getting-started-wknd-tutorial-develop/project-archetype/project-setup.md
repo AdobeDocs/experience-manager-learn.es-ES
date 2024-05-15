@@ -12,8 +12,8 @@ thumbnail: 30152.jpg
 doc-type: Tutorial
 exl-id: bb0cae58-79bd-427f-9116-d46afabdca59
 recommendations: noDisplay, noCatalog
-duration: 578
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 502
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1684'
 ht-degree: 1%
@@ -209,7 +209,7 @@ AEM El arquetipo del proyecto de la genera una muestra `.gitignore` que se puede
 
 AEM ¡Enhorabuena, ha creado su primer proyecto de!
 
-### Pasos siguientes {#next-steps}
+### Siguientes pasos {#next-steps}
 
 Comprenda la tecnología subyacente de un componente de Adobe Experience Manager AEM () Sites mediante una sencilla `HelloWorld` ejemplo con [Conceptos básicos de componentes](component-basics.md) tutorial.
 
@@ -331,7 +331,7 @@ El **[ui.content](https://experienceleague.adobe.com/docs/experience-manager-cor
 
 Los mismos comandos de Maven utilizados para crear el **ui.apps** se puede utilizar para generar el **ui.content** módulo. No dude en repetir los pasos anteriores desde dentro de la **ui.content** carpeta.
 
-## Solución de problemas
+## Resolución de problemas
 
 AEM Si hay algún problema al generar el proyecto mediante el tipo de archivo del proyecto de la, consulte la lista de [problemas conocidos](https://github.com/adobe/aem-project-archetype#known-issues) y lista de aperturas [problemas](https://github.com/adobe/aem-project-archetype/issues).
 
@@ -339,6 +339,6 @@ AEM Si hay algún problema al generar el proyecto mediante el tipo de archivo de
 
 Felicitaciones, por revisar el material de la bonificación.
 
-### Pasos siguientes {#next-steps-bonus}
+### Siguientes pasos {#next-steps-bonus}
 
 Comprenda la tecnología subyacente de un componente de Adobe Experience Manager AEM () Sites mediante una sencilla `HelloWorld` ejemplo con [Conceptos básicos de componentes](component-basics.md) tutorial.

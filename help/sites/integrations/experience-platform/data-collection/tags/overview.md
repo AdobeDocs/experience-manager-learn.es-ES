@@ -13,8 +13,8 @@ badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 doc-type: Tutorial
 exl-id: bdae56d8-96e7-4b05-9b8b-3c6c2e998bd8
-duration: 256
-source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
+duration: 230
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 2%
@@ -45,7 +45,7 @@ Se requiere lo siguiente al integrar las etiquetas de recopilación de datos de 
 + AEM Conexión de etiquetas y etiquetas mediante la configuración de IMS existente (o nueva)
 + AEM En, cree una configuración de servicio en la nube de etiquetas, luego aplíquela a un sitio existente y, finalmente, compruebe que la propiedad Etiquetas y sus bibliotecas se cargan en el sitio Publicado o Autor.
 
-## Pasos siguientes
+## Siguientes pasos
 
 [Crear una propiedad de etiqueta](create-tag-property.md)
 

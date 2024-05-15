@@ -10,8 +10,8 @@ role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 82466e0e-b573-440d-b806-920f3585b638
-duration: 364
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 323
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1105'
 ht-degree: 0%
@@ -390,6 +390,6 @@ A continuación, cree el `Open Weather` AEM SPA mediante el Editor de.
 
 AEM SPA ¡Enhorabuena! Ha aprendido a crear un componente de personalizado para utilizarlo con el Editor de segmentos de la aplicación También ha aprendido cómo los cuadros de diálogo, las propiedades JCR y los modelos Sling interactúan para generar el modelo JSON.
 
-### Pasos siguientes {#next-steps}
+### Siguientes pasos {#next-steps}
 
 [Ampliación de un componente principal](extend-component.md) AEM AEM SPA : Aprenda a ampliar un componente principal de la existente para utilizarlo con el Editor de componentes de la. AEM SPA Comprender cómo añadir propiedades y contenido a un componente existente es una técnica potente para ampliar las capacidades de una implementación de Editor de segmentos de tiempo de ejecución de la aplicación de un editor de segmentos de tiempo de ejecución de la aplicación de un editor de tiempo de ejecución de la.

@@ -11,8 +11,8 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 49080c16-617f-4840-8bb4-7b080fa291c4
-duration: 163
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 156
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 1%
@@ -33,6 +33,6 @@ El vídeo le guiará por los pasos necesarios para agregar contenido a las área
 
 >[!VIDEO](https://video.tv.adobe.com/v/22379?quality=12&learn=on)
 
-## Pasos siguientes
+## Siguientes pasos
 
 [Configurar gráfico de líneas](./configuring-line-chart.md)

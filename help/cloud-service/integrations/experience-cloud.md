@@ -13,8 +13,8 @@ mini-toc-levels: 1
 badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM as a Cloud Service" before-title="false"
 exl-id: 9e856dcc-f042-4e9d-bf97-dd4f72e837e3
-duration: 218
-source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
+duration: 135
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '682'
 ht-degree: 12%
@@ -88,7 +88,7 @@ La integración de Adobe Analytics AEM con as a Cloud Service permite realizar u
 
 ## Adobe Commerce
 
-La integración de Adobe Commerce AEM con el as a Cloud Service, permite a las marcas escalar e innovar más rápido para diferenciar las experiencias comerciales y capturar el gasto en línea acelerado. AEM Con Commerce, combina las experiencias inmersivas, omnicanal y personalizadas en Experience Manager con cualquier cantidad de soluciones de comercio para ofrecer experiencias diferenciadas en todas las partes del recorrido de compras, reduciendo el tiempo de respuesta al valor e impulsando una mayor conversión.
+La integración de Adobe Commerce AEM con el as a Cloud Service, permite a las marcas escalar e innovar más rápido para diferenciar las experiencias comerciales y capturar el gasto en línea acelerado. AEM con Commerce, combina las experiencias inmersivas, omnicanal y personalizadas en Experience Manager con cualquier cantidad de soluciones de comercio para ofrecer experiencias diferenciadas en todas las partes del recorrido de compras, lo que reduce el tiempo de respuesta al valor y aumenta las conversiones.
 
 ### AEM Sites
 

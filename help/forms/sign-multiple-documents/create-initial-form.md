@@ -9,11 +9,11 @@ level: Intermediate
 jira: KT-6892
 thumbnail: 6892.jpg
 exl-id: d7c55dc8-d886-4629-bb50-d927308d12e3
-duration: 47
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 35
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '177'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
@@ -32,10 +32,10 @@ El formulario inicial (formulario de refinanciación) se utiliza para firmar var
 El formulario inicial debe configurarse para almacenar en déclencheur AEM un flujo de trabajo de llamado **signmultipleforms**
 Asegúrese de que la ruta del archivo de datos está configurada en **Data.xml**. Esto es muy importante, ya que el código de ejemplo busca un archivo llamado Data.xml en la carga útil del proceso de envío del formulario.
 
-## Assets
+## Recursos
 
 El formulario inicial (formulario de refinanciación) se puede [descargado desde aquí](assets/refinance-form.zip)
 
-## Pasos siguientes
+## Siguientes pasos
 
 [Crear formularios para utilizarlos para firmar](./create-forms-for-signing.md)

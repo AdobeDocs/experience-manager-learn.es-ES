@@ -10,8 +10,8 @@ role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: e9386885-86de-4e43-933c-2f0a2c04a2f2
-duration: 649
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 536
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 0%
@@ -198,7 +198,7 @@ SPA AEM A continuación, añada un nuevo componente a la e implemente los cambio
 
    Esto creará un esqueleto para el nuevo componente Encabezado de Angular en `ui.frontend/src/app/components/header`.
 
-4. Abra el `aem-guides-wknd-spa` proyecto en el IDE que elija. Navegue hasta la carpeta `ui.frontend/src/app/components/header`. 
+4. Abra el `aem-guides-wknd-spa` proyecto en el IDE que elija. Navegue hasta la carpeta `ui.frontend/src/app/components/header`.
 
    ![Ruta del componente Encabezado en el IDE](assets/integrate-spa/header-component-path.png)
 
@@ -652,6 +652,6 @@ SPA AEM ¡Enhorabuena, ha actualizado la y ha explorado la integración con la o
 
 Siempre puede ver el código terminado en [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/integrate-spa-solution) o compruebe el código localmente cambiando a la rama `Angular/integrate-spa-solution`.
 
-### Pasos siguientes {#next-steps}
+### Siguientes pasos {#next-steps}
 
 [SPA AEM Asignación de componentes de a componentes de](map-components.md) : Obtenga información sobre cómo asignar componentes de Angular a componentes de Adobe Experience Manager AEM AEM SPA () con el SDK de JS de Editor de. SPA AEM SPA AEM La asignación de componentes permite a los autores realizar actualizaciones dinámicas de los componentes de la de componentes dentro del Editor de componentes, de forma similar a la creación tradicional de los componentes de la aplicación de la creación de.

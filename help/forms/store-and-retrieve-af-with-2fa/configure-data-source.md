@@ -10,8 +10,8 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: a87ff428-15f7-43c9-ad03-707eab6216a9
-duration: 87
-source-git-commit: 4f196539ea73d25b480064f7fc349f0ea29d5e0a
+duration: 64
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 5%
@@ -63,6 +63,6 @@ El propósito de esto **get** El servicio de está diseñado para obtener el nú
 
 Este modelo de datos de formulario se utilizará en la variable **MyAccountForm** para obtener el número de teléfono asociado al id de aplicación.
 
-## Pasos siguientes
+## Siguientes pasos
 
 [Escribir código para guardar archivos adjuntos en formularios](./store-form-attachments.md)

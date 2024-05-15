@@ -8,7 +8,9 @@ level: Beginner
 version: 6.5
 topic: Integrations
 jira: KT-14794
-source-git-commit: b1734f75bdda174788d880be28fa19f8e787af0a
+exl-id: 488ef5ff-c67d-40e1-b69d-6f2a968d642b
+duration: 17
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 4%
@@ -31,6 +33,6 @@ Para implementar el caso de uso anterior en AEM Forms, necesita lo siguiente
 * [cuenta del portal de Azure](https://portal.azure.com/)
 
 
-### Pasos siguientes
+### Siguientes pasos
 
 [Escribir servicio de envío personalizado](./create-custom-submit.md)

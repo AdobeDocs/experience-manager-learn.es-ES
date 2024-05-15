@@ -8,8 +8,8 @@ role: Developer
 level: Beginner
 exl-id: 307cc3b2-87e5-4429-8f21-5266cf03b78f
 last-substantial-update: 2021-04-23T00:00:00Z
-duration: 183
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 145
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 0%
@@ -121,7 +121,7 @@ Para crear su proyecto, siga los siguientes pasos:
 AEM El comando anterior crea e instala el paquete en el servidor de la que se ejecuta en `http://localhost:4502`. El paquete también está disponible en el sistema de archivos en
   `C:\AEMFormsBundles\mysite\core\target` y se pueden implementar mediante [Consola web Felix](http://localhost:4502/system/console/bundles)
 
-## Pasos siguientes
+## Siguientes pasos
 
 [Crear servicio OSGi](./create-osgi-service.md)
 

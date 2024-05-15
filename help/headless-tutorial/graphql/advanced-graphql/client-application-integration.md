@@ -7,8 +7,8 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: d0576962-a86a-4742-8635-02be1ec3243f
-duration: 290
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 241
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '927'
 ht-degree: 1%
@@ -322,4 +322,4 @@ La vista principal de la aplicación WKND React le permite filtrar estas aventur
 
 ## Felicitaciones
 
-Felicitaciones. Ahora ha completado la integración y la implementación de las consultas persistentes en la aplicación WKND de ejemplo.
+Enhorabuena. Ahora ha completado la integración y la implementación de las consultas persistentes en la aplicación WKND de ejemplo.

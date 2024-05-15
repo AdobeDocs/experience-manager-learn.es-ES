@@ -9,8 +9,8 @@ version: Cloud Service
 topic: Development
 jira: KT-8848
 exl-id: 31487027-d528-48ea-b626-a740b94dceb8
-duration: 59
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 48
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 1%
@@ -83,6 +83,6 @@ Comprobar si el repositorio remoto está registrado
 git remote -v
 ```
 
-## Pasos siguientes
+## Siguientes pasos
 
 [AEM AEM Sincronizar con el proyecto de en IntelliJ](./intellij-and-aem-sync.md)

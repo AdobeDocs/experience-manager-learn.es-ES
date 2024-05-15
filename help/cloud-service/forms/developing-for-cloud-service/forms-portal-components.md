@@ -9,8 +9,8 @@ topic: Development
 feature: Core Components
 jira: KT-10373
 exl-id: ab01573a-e95f-4041-8ccf-16046d723aba
-duration: 92
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 78
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 10%
@@ -85,6 +85,6 @@ Reemplace el contenido en la variable `.content.xml` con el siguiente XML:
 
 AEM Una vez implementado el proyecto, debe poder utilizar estos componentes en la página de para crear el portal de Forms.
 
-## Pasos siguientes
+## Siguientes pasos
 
 [Incluir configuración de servicios en la nube](./azure-storage-fdm.md)

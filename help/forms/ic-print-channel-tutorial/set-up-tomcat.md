@@ -10,8 +10,8 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: faa9ca2d-6cfa-4abf-be5e-3e549202853a
-duration: 249
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 237
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 0%
@@ -44,6 +44,6 @@ Felicitaciones !!!. Ha configurado tomcat e implementado el archivo SampleRest.w
 El siguiente vídeo explica la implementación de la aplicación de ejemplo en Tomcat
 >[!VIDEO](https://video.tv.adobe.com/v/37815?quality=12&learn=on)
 
-## Pasos siguientes
+## Siguientes pasos
 
 [Crear fuente de datos RESTful](./create-data-source.md)

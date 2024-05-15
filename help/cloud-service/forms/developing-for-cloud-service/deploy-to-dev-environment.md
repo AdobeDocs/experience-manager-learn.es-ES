@@ -10,8 +10,8 @@ topic: Development
 feature: Code Deployment
 jira: KT-8851
 exl-id: daf7d316-e9ec-41b5-89c8-fe4f4ada9701
-duration: 31
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 23
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 1%
@@ -43,6 +43,6 @@ Ejecutar la canalización
 
 Una vez implementado el código, debería ver los cambios en la instancia de Cloud Service de AEM Forms.
 
-## Pasos siguientes
+## Siguientes pasos
 
 [Actualizando proyecto de arquetipo Maven](./updating-project-archetype.md)

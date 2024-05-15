@@ -9,8 +9,8 @@ topic: Development
 feature: Code Deployment
 jira: KT-8852
 exl-id: 81a53f52-2a6c-44ef-a13f-ac372b4a33b9
-duration: 315
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 310
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 1%
@@ -31,6 +31,6 @@ AEM Para sincronizar estos recursos en su proyecto de la mediante la herramienta
 
 >[!VIDEO](https://video.tv.adobe.com/v/336937?quality=12&learn=on)
 
-## Pasos siguientes
+## Siguientes pasos
 
 [Crear controlador de envío personalizado](./custom-submit-to-servlet.md)

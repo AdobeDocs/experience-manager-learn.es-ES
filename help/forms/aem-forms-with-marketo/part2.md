@@ -9,8 +9,8 @@ level: Experienced
 badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: f8ba3d5c-0b9f-4eb7-8609-3e540341d5c2
-duration: 132
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 137
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 1%
@@ -205,6 +205,6 @@ public class MarketoConfigurationService {
 1. [Dirija su explorador a configMgr](http://localhost:4502/system/console/configMgr) y busque &quot;Configuración del servicio de credenciales de Marketo&quot;
 1. Especifique las propiedades adecuadas específicas de la instancia de Marketo
 
-## Pasos siguientes
+## Siguientes pasos
 
 [Crear una fuente de datos basada en el servicio RESTful](./part3.md)

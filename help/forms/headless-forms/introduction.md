@@ -8,8 +8,8 @@ topic: Development
 role: User
 level: Intermediate
 exl-id: 7b457ce8-f11a-4e2b-8548-6ac3910cb61e
-duration: 31
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 24
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 2%
@@ -36,6 +36,6 @@ SPA La siguiente captura de pantalla muestra un formulario de contacto incrustad
 
 * [Habilitar formularios sin encabezado en la instancia de autor y publicación](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=en)
 
-## Pasos siguientes
+## Siguientes pasos
 
 [Instalar dependencias](./install-af-react-libraries.md)

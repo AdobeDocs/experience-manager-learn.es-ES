@@ -11,8 +11,8 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 1f4d88ad-ace1-4f78-be40-da80b3b4d40c
-duration: 173
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 168
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 1%
@@ -27,6 +27,6 @@ En esta parte, crearemos una fuente de datos respaldada por REST.  El siguiente 
 
 Utilice el archivo swagger que se le ha proporcionado como parte de los recursos relacionados con este tutorial. Los recursos están disponibles en [introduction](introduction.md) de este tutorial.
 
-## Pasos siguientes
+## Siguientes pasos
 
 [Crear un modelo de datos de formulario basado en la fuente de datos](./create-form-data-model.md)

@@ -11,8 +11,8 @@ last-substantial-update: 2023-05-16T00:00:00Z
 jira: KT-13270
 thumbnail: KT-13270.jpeg
 exl-id: 6e5e3cb4-9a47-42af-86af-da33fd80cb47
-duration: 242
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 175
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '785'
 ht-degree: 9%
@@ -193,6 +193,6 @@ A lo largo del tutorial, proporcionaremos explicaciones, ejemplos de código y s
 
 ## Pasos siguientes
 
-Felicitaciones. AEM Ha configurado correctamente la configuración as a Cloud Service para permitir la creación de fragmentos de contenido y extremos de GraphQL. También ha creado un modelo de fragmento de contenido y un fragmento de contenido, y ha definido un punto final de GraphQL y una consulta persistente. AEM Ya está listo para pasar al siguiente capítulo del tutorial, donde aprenderá a crear una aplicación de React sin encabezado que consuma los fragmentos de contenido y el punto de conexión de GraphQL creados en este capítulo.
+Enhorabuena. AEM Ha configurado correctamente la configuración as a Cloud Service para permitir la creación de fragmentos de contenido y extremos de GraphQL. También ha creado un modelo de fragmento de contenido y un fragmento de contenido, y ha definido un punto final de GraphQL y una consulta persistente. AEM Ya está listo para pasar al siguiente capítulo del tutorial, donde aprenderá a crear una aplicación de React sin encabezado que consuma los fragmentos de contenido y el punto de conexión de GraphQL creados en este capítulo.
 
 [AEM Capítulo siguiente: API sin encabezado de y React](./2-aem-headless-apis-and-react.md)

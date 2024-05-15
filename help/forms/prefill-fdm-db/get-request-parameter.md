@@ -9,8 +9,8 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: a640539d-c67f-4224-ad81-dd0b62e18c79
-duration: 49
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 40
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 1%
@@ -52,6 +52,6 @@ El valor de empID está asociado con una clave denominada empID en paraMap. Este
 >
 >La clave empID debe coincidir con el valor de enlace de las nuevas entidades que reciben el servicio
 
-## Pasos siguientes
+## Siguientes pasos
 
 [Crear un formulario adaptable basado en el modelo de datos de formulario](./create-adaptive-form.md)

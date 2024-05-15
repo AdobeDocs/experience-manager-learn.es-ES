@@ -11,8 +11,8 @@ thumbnail: 30214.jpg
 doc-type: Tutorial
 exl-id: e9d06dc2-ac3b-48c5-ae00-fdaf5bb45b54
 recommendations: noDisplay, noCatalog
-duration: 2217
-source-git-commit: 0400242f6a99bc5209a8b483469d5fd88eac077e
+duration: 2049
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '2855'
 ht-degree: 0%
@@ -367,7 +367,7 @@ Los siguientes pasos se realizan en el IDE de VSCode mediante la variable [AEM S
 
 Ha creado una plantilla y una página con Adobe Experience Manager Sites.
 
-### Pasos siguientes {#next-steps}
+### Siguientes pasos {#next-steps}
 
 En este punto, es evidente que la página del artículo no tiene estilo. Siga las [Bibliotecas del lado cliente y flujo de trabajo front-end](client-side-libraries.md) tutorial para conocer las prácticas recomendadas para incluir CSS y JavaScript a fin de aplicar estilos globales al sitio e integrar una compilación de front-end dedicada.
 

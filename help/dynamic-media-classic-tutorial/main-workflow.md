@@ -7,8 +7,8 @@ role: User
 level: Beginner
 doc-type: Tutorial
 exl-id: 04aacd81-bbb2-4742-9306-f0eabc665a41
-duration: 694
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 569
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '2658'
 ht-degree: 0%
@@ -68,7 +68,7 @@ Obtenga más información acerca de [Opción Sobrescribir imágenes](https://exp
 
 Aunque no es necesario, al cargar mediante cualquiera de los dos métodos anteriores, puede especificar las opciones de trabajo para esa carga en particular; por ejemplo, para programar una carga recurrente, definir opciones de recorte al cargar y muchas otras. Pueden ser útiles para algunos flujos de trabajo, por lo que vale la pena considerar si pueden serlo para los suyos.
 
-Más información sobre [Opciones de trabajo](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-options).
+Más información sobre [Opciones de trabajo](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=es#upload-options).
 
 La carga es el primer paso necesario en cualquier flujo de trabajo, ya que Dynamic Media Classic no puede trabajar con contenido que no esté ya en su sistema. Durante la carga, el sistema registra en segundo plano todos los recursos cargados con la base de datos centralizada de Dynamic Media Classic, asigna un ID y lo copia en el almacenamiento. Además, el sistema convierte los archivos de imagen a un formato que permite cambiar el tamaño y el zoom de forma dinámica, y convierte los archivos de vídeo al formato compatible con la web MP4.
 

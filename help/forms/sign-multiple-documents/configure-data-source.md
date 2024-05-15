@@ -9,8 +9,8 @@ version: 6.4,6.5
 jira: KT-6899
 thumbnail: 6899.jpg
 exl-id: 2e851ae5-6caa-42e3-8af2-090766a6f36a
-duration: 53
-source-git-commit: 4f196539ea73d25b480064f7fc349f0ea29d5e0a
+duration: 39
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 3%
@@ -39,10 +39,10 @@ La base de datos tiene una tabla denominada formdata con las 3 columnas, como se
 | Clase de controlador JDBC | `com.mysql.cj.jdbc.Driver` |
 | URI de conexión JDBC | `jdbc:mysql://localhost:3306/aemformstutorial` |
 
-## Assets
+## Recursos
 
 El archivo SQL para crear el esquema puede ser [descargado desde aquí](assets/sign-multiple-forms.sql). Deberá importar este archivo mediante MySql Workbench para crear el esquema y la tabla.
 
-## Pasos siguientes
+## Siguientes pasos
 
 [Crear un servicio OSGi para almacenar y recuperar datos en la base de datos](./create-osgi-service.md)

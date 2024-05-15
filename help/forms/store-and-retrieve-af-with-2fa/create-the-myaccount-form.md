@@ -10,8 +10,8 @@ topic: Development
 role: User
 level: Beginner
 exl-id: 1ecd8bc0-068f-4557-bce4-85347c295ce0
-duration: 68
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 53
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 0%
@@ -50,6 +50,6 @@ El código del servlet montado en **/bin/renderaf** reenvía la solicitud para p
 
 * [Controlador de envío personalizado](assets/custom-submit-my-account-form.zip) AEM asociado al envío de MyAccountForm debe importarse a la dirección de correo electrónico de la cuenta de.
 
-## Pasos siguientes
+## Siguientes pasos
 
 [Prueba de la solución implementando los recursos de ejemplo](./deploy-this-sample.md)

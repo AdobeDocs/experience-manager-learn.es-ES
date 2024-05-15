@@ -8,8 +8,8 @@ role: Developer
 level: Beginner
 jira: KT-14196
 exl-id: c3032669-154c-4565-af6e-32d94e975e37
-duration: 49
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 52
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 1%
@@ -80,6 +80,6 @@ private static org.w3c.dom.Node getChildByTagName(org.w3c.dom.Node parent, Strin
 
 Los datos extraídos se almacenan en el nodo /content/exporteddata del repositorio crx. A continuación, la ruta de archivo de los datos exportados se devuelve a la aplicación que realiza la llamada para rellenar el formulario adaptable.
 
-## Pasos siguientes
+## Siguientes pasos
 
 [Importación de datos desde archivo PDF](./populate-adaptive-form.md)

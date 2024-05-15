@@ -10,8 +10,8 @@ role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 6c1c7f2b-f574-458c-b744-b92419c46f23
-duration: 393
-source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
+duration: 308
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1321'
 ht-degree: 0%
@@ -235,7 +235,7 @@ SPA En el contexto del Editor de, los modelos Sling exponen el contenido de un c
 
    >[!NOTE]
    >
-   Puede ver el [ha finalizado CustomComponentImpl.java aquí](https://github.com/adobe/aem-guides-wknd-spa/blob/Angular/custom-component-solution/core/src/main/java/com/adobe/aem/guides/wknd/spa/angular/core/models/impl/CustomComponentImpl.java).
+   > Puede ver el [ha finalizado CustomComponentImpl.java aquí](https://github.com/adobe/aem-guides-wknd-spa/blob/Angular/custom-component-solution/core/src/main/java/com/adobe/aem/guides/wknd/spa/angular/core/models/impl/CustomComponentImpl.java).
 
 ## Actualización del componente Angular
 
@@ -333,6 +333,6 @@ AEM ¡Enhorabuena! Ha aprendido a crear un componente de personalizado y cómo l
 
 Siempre puede ver el código terminado en [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/custom-component-solution) o compruebe el código localmente cambiando a la rama `Angular/custom-component-solution`.
 
-### Pasos siguientes {#next-steps}
+### Siguientes pasos {#next-steps}
 
 [Ampliación de un componente principal](extend-component.md) AEM SPA : Aprenda a ampliar un componente principal existente para utilizarlo con el Editor de componentes de la. AEM SPA Comprender cómo añadir propiedades y contenido a un componente existente es una técnica potente para ampliar las capacidades de una implementación de Editor de segmentos de tiempo de ejecución de la aplicación de un editor de segmentos de tiempo de ejecución de la aplicación de un editor de tiempo de ejecución de la.

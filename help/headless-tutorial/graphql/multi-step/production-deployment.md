@@ -10,8 +10,8 @@ mini-toc-levels: 1
 jira: KT-7131
 thumbnail: KT-7131.jpg
 exl-id: 8c8b2620-6bc3-4a21-8d8d-8e45a6e9fc70
-duration: 620
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 486
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '2137'
 ht-degree: 5%
@@ -402,7 +402,7 @@ AEM A continuación, experimente con la configuración CORS de la instancia de p
 
 ## Enhorabuena. {#congratulations}
 
-Felicitaciones. AEM Ahora ha simulado una implementación de producción completa utilizando un entorno de publicación en la. AEM También ha aprendido a utilizar la configuración CORS en la configuración de la aplicación de la configuración de la configuración de la aplicación de la configuración de la aplicación de forma.
+Enhorabuena. AEM Ahora ha simulado una implementación de producción completa utilizando un entorno de publicación en la. AEM También ha aprendido a utilizar la configuración CORS en la configuración de la aplicación de la configuración de la configuración de la aplicación de la configuración de la aplicación de forma.
 
 ## Otros recursos
 

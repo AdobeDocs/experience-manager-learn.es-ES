@@ -9,8 +9,8 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: 338d9522-f6da-4aa7-b5d8-b9fff39ea94b
-duration: 66
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 70
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 1%
@@ -116,13 +116,13 @@ public class StoreFormsToSignWorkflowStep implements WorkflowProcess {
 
 
 
-## Assets
+## Recursos
 
 El flujo de trabajo Firmar varios Forms utilizado en este artículo se puede [descargado desde aquí](assets/sign-multiple-forms-workflows.zip)
 
 >[!NOTE]
 > Asegúrese de configurar Day CQ Mail Service para enviar notificaciones por correo electrónico. La plantilla de correo electrónico también se proporciona en el paquete anterior.
 
-## Pasos siguientes
+## Siguientes pasos
 
 [Actualizar estado de firma al firmar documento](./update-signature-status.md)

@@ -3,8 +3,8 @@ title: AEM Acelerar la velocidad del contenido con sistemas de estilos de
 description: AEM Aprenda a utilizar los sistemas de estilos de para que los diseñadores, los autores de contenido y los desarrolladores de su organización puedan crear y ofrecer experiencias a la velocidad y a la escala que esperan sus clientes.
 solution: Experience Manager
 exl-id: 449cd133-6ab6-456e-a0ad-30e3dea9b75b
-duration: 216
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 171
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '817'
 ht-degree: 0%

@@ -9,8 +9,8 @@ level: Beginner
 jira: KT-9442
 thumbnail: 339073.jpg
 exl-id: 62e807b7-b1a4-4344-9b1e-2c626b869e10
-duration: 850
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 781
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1078'
 ht-degree: 0%
@@ -189,10 +189,10 @@ _Screencast de pasos_
 
 ## Enhorabuena.
 
-Felicitaciones. AEM ¡Ha utilizado con éxito la tecnología sin encabezado para alimentar una aplicación de React!
+Enhorabuena. AEM ¡Ha utilizado con éxito la tecnología sin encabezado para alimentar una aplicación de React!
 
 AEM Para comprender en detalle cómo la aplicación React consume contenido de los as a Cloud Service de la aplicación, consulte: [AEM el tutorial sin encabezado de](../multi-step/overview.md). AEM El tutorial explora cómo se crean los fragmentos de contenido en los y cómo esta aplicación de React consume su contenido como JSON.
 
-### Pasos siguientes
+### Siguientes pasos
 
 + [AEM Iniciar el tutorial sin encabezado de la](../multi-step/overview.md)

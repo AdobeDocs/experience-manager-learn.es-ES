@@ -10,8 +10,8 @@ role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 19a8917c-a1e7-4293-9ce1-9f4c1a565861
-duration: 665
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 509
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '2213'
 ht-degree: 0%
@@ -460,7 +460,7 @@ SPA AEM ¡Enhorabuena! Ha aprendido a asignar componentes de la a componentes y 
 
 Siempre puede ver el código terminado en [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/map-components-solution) o compruebe el código localmente cambiando a la rama `Angular/map-components-solution`.
 
-### Pasos siguientes {#next-steps}
+### Siguientes pasos {#next-steps}
 
 [Navegación y enrutamiento](navigation-routing.md) SPA AEM SPA : Descubra cómo se pueden admitir varias vistas en la asignando a páginas de la página con el SDK de Editor de la página de la página de la página de la aplicación de la versión de la aplicación. La navegación dinámica se implementa mediante Angular Router y se añade a un componente de encabezado existente.
 

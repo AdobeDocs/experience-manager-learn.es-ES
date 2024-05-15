@@ -9,8 +9,8 @@ level: Intermediate
 jira: KT-10829
 thumbnail: kt-10829.jpg
 exl-id: b76b7c46-5cbd-4039-8fd6-9f0f10a4a84f
-duration: 67
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 48
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 2%
@@ -33,7 +33,7 @@ Adobe Experience Manager as a Cloud Service AEM AEM AEM utiliza filtros de Dispa
 
 AEM AEM AEM La configuración del filtro de Dispatcher de publicación de datos define los patrones de URL que pueden alcanzar los valores de y debe incluir el prefijo de URL del extremo de consulta persistente de la publicación de datos
 
-| El cliente se conecta a | AEM Author | AEM Publish | AEM Previsualización de |
+| El cliente se conecta a | AEM Author | Publicación de AEM | AEM Previsualización de |
 |------------------------------------------:|:----------:|:-------------:|:-------------:|
 | Requiere la configuración de filtros de Dispatcher | ✘ | ✔ | ✔ |
 

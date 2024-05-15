@@ -8,8 +8,8 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 86a67f43-882f-4e97-b528-17492689fcfc
-duration: 238
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 233
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '100'
 ht-degree: 16%
@@ -29,6 +29,6 @@ Consulte la [documentación de plantilla de formulario adaptable](https://experi
 
 Si es necesario, puede descargar el [Spouse-details-fragment](assets/spouse-details-fragment.zip) AEM e importarlos a la red de mediante el [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
 
-## Pasos siguientes
+## Siguientes pasos
 
 [Crear formulario adaptable](./create-adaptive-form.md)

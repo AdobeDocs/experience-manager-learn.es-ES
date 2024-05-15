@@ -10,8 +10,8 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: c6e0fb92-28c1-4025-85ef-b99bad46f07a
-duration: 252
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 247
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '110'
 ht-degree: 2%
@@ -28,10 +28,10 @@ Crearemos una nueva plantilla de formulario adaptable para los fines de este tut
 [Puede seguir este artículo para comprender el proceso de creación de una plantilla de formulario adaptable y un componente de página](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/storing-and-retrieving-form-data/part5.html?lang=en#storing-and-retrieving-form-data)
 
 
-## Assets
+## Recursos
 
 La plantilla y el componente de página utilizados en este tutorial pueden ser [descargado desde aquí](assets/sign-multiple-forms-template.zip)
 
-## Pasos siguientes
+## Siguientes pasos
 
 [Seleccione los formularios que debe firmar el usuario utilizado](./create-initial-form.md)

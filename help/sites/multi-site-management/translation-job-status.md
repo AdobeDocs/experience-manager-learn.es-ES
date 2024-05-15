@@ -1,5 +1,5 @@
 ---
-title: Estado de la tarea de traducción
+title: Estado del trabajo de traducción
 description: Comprenda los diferentes estados asociados a un trabajo de traducción o a un elemento de este tipo de trabajo.
 feature: Language Copy, Multi Site Manager
 doc-type: Feature Video
@@ -10,15 +10,15 @@ topic: Localization
 role: User
 level: Beginner
 exl-id: be4d015b-97c9-4523-8eb4-a367242fcdd6
-duration: 278
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 276
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '36'
 ht-degree: 16%
 
 ---
 
-# Estado de la tarea de traducción {#translation-job-status}
+# Estado del trabajo de traducción {#translation-job-status}
 
 Comprenda los diferentes estados asociados a un trabajo de traducción o a un elemento de este tipo de trabajo.
 

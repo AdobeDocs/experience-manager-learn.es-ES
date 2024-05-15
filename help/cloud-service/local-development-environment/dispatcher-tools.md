@@ -10,8 +10,8 @@ jira: KT-4679
 thumbnail: 30603.jpg
 last-substantial-update: 2023-03-14T00:00:00Z
 exl-id: 9320e07f-be5c-42dc-a4e3-aab80089c8f7
-duration: 730
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 624
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1621'
 ht-degree: 5%
@@ -105,7 +105,7 @@ Todos los comandos que se emiten a continuación suponen que el directorio de tr
 ## Comprender los archivos de configuración de Dispatcher
 
 >[!TIP]
-Proyectos del Experience Manager creados a partir de [AEM Arquetipo del proyecto Maven](https://github.com/adobe/aem-project-archetype) están rellenados previamente en este conjunto de archivos de configuración de Dispatcher, por lo que no es necesario copiar desde la carpeta src de herramientas de Dispatcher.
+> Proyectos del Experience Manager creados a partir de [AEM Arquetipo del proyecto Maven](https://github.com/adobe/aem-project-archetype) están rellenados previamente en este conjunto de archivos de configuración de Dispatcher, por lo que no es necesario copiar desde la carpeta src de herramientas de Dispatcher.
 
 Las herramientas de Dispatcher proporcionan un conjunto de archivos de configuración de Apache HTTP Web Server y Dispatcher que definen el comportamiento de todos los entornos, incluido el desarrollo local.
 
@@ -347,13 +347,13 @@ Phase 3 finished
 
 + Después de la verificación local de los cambios, confirme los archivos de configuración actualizados
 
-## Solución de problemas
+## Resolución de problemas
 
 ### docker_run da como resultado el mensaje &quot;Esperando hasta que host.docker.internal esté disponible&quot;{#troubleshooting-host-docker-internal}
 
 El `host.docker.internal` es un nombre de host proporcionado al contenedor Docker que se resuelve en el host. Por docs.docker.com ([macOS](https://docs.docker.com/desktop/networking/), [Windows](https://docs.docker.com/desktop/networking/)):
 
->A partir de Docker 18.03, la recomendación es conectarse al nombre DNS especial host.docker.internal, que se resuelve en la dirección IP interna utilizada por el host
+> A partir de Docker 18.03, la recomendación es conectarse al nombre DNS especial host.docker.internal, que se resuelve en la dirección IP interna utilizada por el host
 
 Cuándo `bin/docker_run src host.docker.internal:4503 8080` resultados en el mensaje __Esperando hasta que host.docker.internal esté disponible__ y luego:
 

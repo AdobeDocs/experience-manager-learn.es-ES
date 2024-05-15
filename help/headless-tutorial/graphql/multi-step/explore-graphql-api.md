@@ -10,8 +10,8 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 508b0211-fa21-4a73-b8b4-c6c34e3ba696
-duration: 422
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 332
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1416'
 ht-degree: 1%
@@ -402,7 +402,7 @@ Obtenga más información acerca de las consultas de GraphQL en [Aprender a util
 
 ¡Felicidades, ha creado y ejecutado varias consultas de GraphQL!
 
-## Pasos siguientes {#next-steps}
+## Siguientes pasos {#next-steps}
 
 En el capítulo siguiente, [Generar aplicación de React](./graphql-and-react-app.md)AEM Sin embargo, puede explorar cómo una aplicación externa puede consultar puntos de conexión de GraphQL y utilizar estas dos consultas persistentes. También se le presentarán algunas funciones básicas de gestión de errores durante la ejecución de consultas de GraphQL.
 

@@ -9,8 +9,8 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: e7674c46-259f-4dbd-96db-c40369534911
-duration: 363
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 352
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 1%
@@ -46,6 +46,6 @@ Agregaremos una tabla al panel Ingresos. Configure las filas de la tabla y utili
 
 >[!VIDEO](https://video.tv.adobe.com/v/22197?quality=12&learn=on)
 
-## Pasos siguientes
+## Siguientes pasos
 
 [Configuración del panel Recursos](./configuring-assets-panel.md)

@@ -3,8 +3,8 @@ title: Uso de la búsqueda en AEM Assets
 description: AEM En estos vídeos, analizamos algunas mejoras en la búsqueda de recursos introducidas en la versión de. Los autores pueden impulsar ciertos recursos en los resultados de búsqueda de palabras clave actualizando las propiedades de metadatos correspondientes. También analizamos algunas configuraciones avanzadas para los predicados de OmniSearch de Assets.
 version: 6.4, 6.5
 doc-type: Feature Video
-duration: 379
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 373
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 0%

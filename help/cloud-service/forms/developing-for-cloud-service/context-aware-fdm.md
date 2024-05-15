@@ -10,8 +10,8 @@ topic: Development
 feature: Developer Tools
 jira: KT-10423
 exl-id: 2ce0c07b-1316-4170-a84d-23430437a9cc
-duration: 99
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 80
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 7%
@@ -70,6 +70,6 @@ Copie el siguiente texto en el archivo que creó en el paso anterior. El código
 
 En el caso de las configuraciones de nube basadas en REST con autenticación básica, normalmente deseará crear variables de entorno para las propiedades serviceEndPoint, userName y password.
 
-## Pasos siguientes
+## Siguientes pasos
 
 [AEM Insertar el proyecto de la en Cloud Manager](./push-project-to-cloud-manager-git.md)

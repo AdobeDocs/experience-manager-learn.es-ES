@@ -3,8 +3,8 @@ title: Cómo aumentar la velocidad del contenido con Adobe Experience Manager
 description: Obtenga información acerca de la velocidad de contenido y su valor dentro de las organizaciones empresariales. Sumérjase en cuatro principios de implementación efectiva y en los escollos que hay que tener en cuenta en el camino.
 solution: Experience Manager
 exl-id: 9d2e05c3-c8eb-4d92-bad0-931e63550438
-duration: 718
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 589
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '2742'
 ht-degree: 0%

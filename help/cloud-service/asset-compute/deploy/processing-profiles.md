@@ -10,8 +10,8 @@ topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 1b398c8c-6b4e-4046-b61e-b44c45f973ef
-duration: 168
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 126
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 0%
@@ -75,7 +75,7 @@ En primer lugar, cree un nuevo perfil de procesamiento que invoque al trabajador
 
 ## ¡Terminado!
 
-Felicitaciones. Ha finalizado el [tutorial](../overview.md) AEM sobre cómo extender los microservicios de Asset compute as a Cloud Service de la! Ahora debe tener la capacidad de configurar, desarrollar, probar, depurar e implementar Asset compute AEM personalizadas para que las use el servicio de autor as a Cloud Service de la.
+Enhorabuena. Ha finalizado el [tutorial](../overview.md) AEM sobre cómo extender los microservicios de Asset compute as a Cloud Service de la! Ahora debe tener la capacidad de configurar, desarrollar, probar, depurar e implementar Asset compute AEM personalizadas para que las use el servicio de autor as a Cloud Service de la.
 
 ### Revise el código fuente completo del proyecto en Github
 
@@ -85,7 +85,7 @@ El proyecto de Asset compute final está disponible en Github en:
 
 _Github contiene es el estado final del proyecto, completamente relleno con los casos de trabajo y prueba, pero no contiene credenciales, es decir. `.env`, `.config.json` o `.aio`._
 
-## Solución de problemas
+## Resolución de problemas
 
 + [AEM Falta la representación personalizada en el recurso en el recurso en el que se ha realizado el](../troubleshooting.md#custom-rendition-missing-from-asset)
 + [AEM El procesamiento de recursos falla en la](../troubleshooting.md#asset-processing-fails)

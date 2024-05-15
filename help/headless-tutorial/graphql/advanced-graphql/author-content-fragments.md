@@ -7,8 +7,8 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: 998d3678-7aef-4872-bd62-0e6ea3ff7999
-duration: 825
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 609
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '2931'
 ht-degree: 1%
@@ -394,7 +394,7 @@ Por último, vamos a añadir los fragmentos de contenido recién creados a una a
 
 ## Enhorabuena.
 
-Felicitaciones. Ahora ha creado fragmentos de contenido basados en los modelos de fragmentos de contenido avanzados creados en el capítulo anterior. También ha creado una directiva de carpeta para limitar qué modelos de fragmentos de contenido se pueden seleccionar dentro de una carpeta.
+Enhorabuena. Ahora ha creado fragmentos de contenido basados en los modelos de fragmentos de contenido avanzados creados en el capítulo anterior. También ha creado una directiva de carpeta para limitar qué modelos de fragmentos de contenido se pueden seleccionar dentro de una carpeta.
 
 ## Pasos siguientes
 

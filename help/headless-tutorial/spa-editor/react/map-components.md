@@ -10,8 +10,8 @@ role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 497ce6d7-cd39-4fb3-b5e0-6c60845f7648
-duration: 619
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 477
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '2123'
 ht-degree: 0%
@@ -245,7 +245,7 @@ Vamos a inspeccionar más el contenedor de diseño.
 
 SPA AEM Felicidades, ha aprendido a asignar componentes de a componentes principales y ha utilizado los componentes principales de React. También tiene la oportunidad de explorar las capacidades de respuesta de **Contenedor de diseño**.
 
-### Pasos siguientes {#next-steps}
+### Siguientes pasos {#next-steps}
 
 [Navegación y enrutamiento](navigation-routing.md) SPA AEM SPA : Descubra cómo se pueden admitir varias vistas en la asignando a páginas de la página con el SDK de Editor de la página de la página de la página de la aplicación de la versión de la aplicación. La navegación dinámica se implementa mediante los componentes principales React y React Router.
 

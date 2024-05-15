@@ -10,8 +10,8 @@ topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 766bfaff-ade0-41c8-a395-e79dfb4b3d76
-duration: 128
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 115
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 0%
@@ -120,7 +120,7 @@ Para iniciar la herramienta de desarrollo de Assets computes para el proyecto de
 1. Observe la salida de la línea de comandos y el explorador Web en busca de mensajes de error cuando se inicializa la herramienta de desarrollo.
 1. Para detener la herramienta de desarrollo de Assets computes, pulse `Ctrl-C` en la ventana que se ejecutó `aio app run` para finalizar el proceso.
 
-## Solución de problemas
+## Resolución de problemas
 
 + [Sangría YAML incorrecta](../troubleshooting.md#incorrect-yaml-indentation)
 + [El límite memorySize se ha establecido en un valor demasiado bajo](../troubleshooting.md#memorysize-limit-is-set-too-low)

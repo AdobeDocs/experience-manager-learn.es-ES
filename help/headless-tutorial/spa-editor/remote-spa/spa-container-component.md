@@ -11,8 +11,8 @@ last-substantial-update: 2022-11-11T00:00:00Z
 recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: e5e6204c-d88c-4e79-a7f4-0cfc140bc51c
-duration: 374
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 306
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1112'
 ht-degree: 1%
@@ -376,6 +376,6 @@ Ha agregado un componente contenedor que permite a los autores agregar component
 + Agregar componentes editables al componente contenedor
 + SPA Componentes de autor y diseño en el editor de
 
-## Pasos siguientes
+## Siguientes pasos
 
 El siguiente paso utiliza esta misma técnica para [añadir un componente editable a una ruta de detalles de aventura](./spa-dynamic-routes.md) SPA en el menú de la.

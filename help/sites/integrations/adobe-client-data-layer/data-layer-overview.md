@@ -10,8 +10,8 @@ thumbnail: 41195.jpg
 last-substantial-update: 2021-01-11T00:00:00Z
 doc-type: Tutorial
 exl-id: 066693b7-2b87-45e8-93ec-8bd09a7c263e
-duration: 818
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 777
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '750'
 ht-degree: 6%
@@ -171,7 +171,7 @@ Se recomienda almacenar en déclencheur cualquier código personalizado basado e
    La capa de datos mantiene una matriz de colas de todos los eventos que se han producido en secuencia. La capa de datos almacenará en déclencheur de forma predeterminada las llamadas de retorno de eventos para los eventos que se produjeron en la **pasado** y eventos en la **futuro**. Es posible filtrar los eventos del pasado o del futuro. [Encontrará más información en la documentación](https://github.com/adobe/adobe-client-data-layer/wiki#addeventlistener).
 
 
-## Pasos siguientes
+## Siguientes pasos
 
 Hay dos opciones para seguir aprendiendo: la primera es consultar la [recopilar datos de página y enviarlos a Adobe Analytics](../analytics/collect-data-analytics.md) tutorial que muestra el uso de la capa de datos del cliente de Adobe. La segunda opción es, para aprender a [Personalización de la capa de datos del cliente de Adobe AEM con componentes de](./data-layer-customize.md)
 

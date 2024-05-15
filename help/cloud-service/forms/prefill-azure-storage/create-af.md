@@ -9,8 +9,8 @@ version: Cloud Service
 topic: Integrations
 thumbnail: 335423.jpg
 exl-id: 0b543c6b-9cfd-4fac-b8d0-33153c036f4b
-duration: 73
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 60
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 2%
@@ -36,6 +36,6 @@ El formulario tiene las siguientes reglas empresariales
 * El ID de blob devuelto por el servicio de invocación se almacena en el campo ID de blob. Cuando este valor cambia, se envía un mensaje de correo electrónico al solicitante mediante SendGrid. El correo electrónico contiene el vínculo para abrir el formulario parcialmente completado identificado por el ID del blob.
 * Se muestra un texto de confirmación al usuario cuando los datos se almacenan correctamente en Azure Storage
 
-### Pasos siguientes
+### Siguientes pasos
 
 [Implementar los recursos de muestra](./deploy-sample-assets.md)

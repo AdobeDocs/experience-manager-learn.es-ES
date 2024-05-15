@@ -1,5 +1,5 @@
 ---
-title: Tipo de archivo del proyecto AEM.
+title: Tipo de archivo del proyecto AEM
 description: AEM El tipo de archivo del proyecto de crea un proyecto de Adobe Experience Manager AEM mínimo basado en las prácticas recomendadas como punto de partida para sus propios proyectos de.
 feature: AEM Project Archetype
 version: 6.4, 6.5, Cloud Service
@@ -10,8 +10,8 @@ role: Developer
 level: Beginner
 doc-type: Technical Video
 exl-id: 9f46ce7e-9c6d-429d-9d8a-c93c274f70d7
-duration: 708
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 704
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '65'
 ht-degree: 10%
