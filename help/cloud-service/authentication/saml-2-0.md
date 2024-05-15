@@ -8,12 +8,12 @@ role: Architect, Developer
 level: Intermediate
 jira: KT-9351
 thumbnail: 343040.jpeg
-last-substantial-update: 2022-10-17T00:00:00Z
+last-substantial-update: 2024-05-15T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
-duration: 2177
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+duration: 2200
+source-git-commit: 11c9173cbb2da75bfccba278e33fc4ca567bbda1
 workflow-type: tm+mt
-source-wordcount: '3060'
+source-wordcount: '3357'
 ht-degree: 1%
 
 ---
@@ -456,3 +456,66 @@ $ git push adobe saml-auth:develop
 ```
 
 Implemente la rama Git de Cloud Manager de destino (en este ejemplo, `develop`), mediante una canalización de implementación de pila completa.
+
+## Invocación de la autenticación SAML
+
+AEM El flujo de autenticación SAML se puede invocar desde una página web del sitio de, creando vínculos especialmente diseñados o botones. Los parámetros que se describen a continuación se pueden configurar mediante programación según sea necesario, por ejemplo, un botón de inicio de sesión puede configurar el `saml_request_path`AEM , que es donde se lleva al usuario tras la autenticación SAML correcta, a diferentes páginas de la lista de distribución, según el contexto del botón.
+
+### petición de GET
+
+La autenticación SAML se puede invocar creando una solicitud de GET HTTP con el formato:
+
+`HTTP GET /system/sling/login`
+
+y proporcionando parámetros de consulta:
+
+| Nombre del parámetro de consulta | Valor del parámetro de consulta |
+|----------------------|-----------------------|
+| `resource` | Cualquier ruta JCR, o subruta, que sea la escucha del controlador de autenticación SAML, tal como se define en la variable [Configuración de OSGi del controlador de autenticación SAML 2.0 de Adobe Granite](#configure-saml-2-0-authentication-handler) `path` propiedad. |
+| `saml_request_path` | La ruta URL a la que debe dirigirse el usuario después de autenticarse correctamente en SAML. |
+
+Por ejemplo, este vínculo de HTML almacenará en déclencheur el flujo de inicio de sesión de SAML y, cuando se realice correctamente, llevará al usuario a `/content/wknd/us/en/protected/page.html`. Estos parámetros de consulta se pueden configurar mediante programación según sea necesario.
+
+```html
+<a href="/system/sling/login?resource=/content/wknd&saml_request_path=/content/wknd/us/en/protected/page.html">
+    Log in using SAML
+</a>
+```
+
+## petición del POST
+
+La autenticación SAML se puede invocar creando una solicitud de POST HTTP con el formato:
+
+`HTTP POST /system/sling/login`
+
+y proporcionar los datos del formulario:
+
+| Nombre de datos de formulario | Valor de datos de formulario |
+|----------------------|-----------------------|
+| `resource` | Cualquier ruta JCR, o subruta, que sea la escucha del controlador de autenticación SAML, tal como se define en la variable [Configuración de OSGi del controlador de autenticación SAML 2.0 de Adobe Granite](#configure-saml-2-0-authentication-handler) `path` propiedad. |
+| `saml_request_path` | La ruta URL a la que debe dirigirse el usuario después de autenticarse correctamente en SAML. |
+
+
+Por ejemplo, este botón del HTML utilizará un POST HTTP para almacenar en déclencheur el flujo de inicio de sesión de SAML y, una vez realizado correctamente, llevar al usuario a `/content/wknd/us/en/protected/page.html`. Estos parámetros de datos de formulario se pueden definir mediante programación según sea necesario.
+
+```html
+<form action="/system/sling/login" method="POST">
+    <input type="hidden" name="resource" value="/content/wknd">
+    <input type="hidden" name="saml_request_path" value="/content/wknd/us/en/protected/page.html">
+    <input type="submit" value="Log in using SAML">
+</form>
+```
+
+### Configuración de Dispatcher
+
+Tanto los métodos GET de HTTP como los métodos POST AEM requieren el acceso de cliente a los recursos de la `/system/sling/login` AEM puntos finales y, por lo tanto, deben permitirse a través de Dispatcher de.
+
+Permitir los patrones de URL necesarios en función de si se utiliza el GET o el POST
+
+```
+# Allow GET-based SAML authentication invocation
+/0191 { /type "allow" /method "GET" /url "/system/sling/login" /query="*" }
+
+# Allow POST-based SAML authentication invocation
+/0192 { /type "allow" /method "POST" /url "/system/sling/login" }
+```
