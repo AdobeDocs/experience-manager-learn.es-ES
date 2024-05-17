@@ -12,9 +12,9 @@ last-substantial-update: 2023-12-07T00:00:00Z
 jira: KT-14649
 thumbnail: KT-14649.jpeg
 exl-id: 142ed6ae-1659-4849-80a3-50132b2f1a86
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: c0aa4049e846a0f24f8a5f5b014dbaf5bfc8eb2d
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '941'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ AEM Obtenga información acerca de la visualización de eventos, qué es, por qu
 
 >[!IMPORTANT]
 >
->AEM El evento as a Cloud Service solo está disponible para usuarios registrados en el modo previo al lanzamiento. AEM AEM Para habilitar la celebración de eventos en su entorno as a Cloud Service de la, póngase en contacto con [AEM Equipo de eventos de la](mailto:grp-aem-events@adobe.com).
+>AEM El evento as a Cloud Service solo está disponible para usuarios registrados en el modo previo al lanzamiento. AEM AEM Para habilitar la celebración de eventos en su entorno as a Cloud Service de la, póngase en contacto con el <a href="mailto:grp-aem-events@adobe.com">AEM Equipo de eventos de la</a>.
 
 ## Qué es
 
@@ -75,7 +75,7 @@ AEM La evasión de eventos, aunque es potente, tiene ciertas limitaciones que se
 
 ## Cómo habilitar
 
-AEM AEM La ventilación de la está habilitada por entorno as a Cloud Service de la aplicación y solo está disponible para los entornos en modo previo al lanzamiento. Contacto [AEM Equipo de eventos de la](mailto:grp-aem-events@adobe.com) AEM AEM para habilitar su entorno de con la ventilación de la.
+AEM AEM La ventilación de la está habilitada por entorno as a Cloud Service de la aplicación y solo está disponible para los entornos en modo previo al lanzamiento. Póngase en contacto con <a href="mailto:grp-aem-events@adobe.com">AEM Equipo de eventos de la</a> AEM AEM para habilitar su entorno de con la ventilación de la.
 
 Si ya está habilitado, consulte [AEM Activación de eventos de en el entorno de AEM Cloud Service](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment) para ver los pasos siguientes.
 
