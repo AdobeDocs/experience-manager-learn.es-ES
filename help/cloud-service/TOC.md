@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 14767141348d3d56c154704cc21d39722bb67aec
+source-git-commit: d2c39b57982478badcd12682f082517ee9531d3e
 workflow-type: tm+mt
-source-wordcount: '1196'
+source-wordcount: '1199'
 ht-degree: 17%
 
 ---
@@ -53,6 +53,7 @@ ht-degree: 17%
       + [Integración continua](./cloud-manager/devops/continuous-integration.md)
       + [Analizar resultados de pruebas](./cloud-manager/devops/analyze-test-results.md)
       + [Configuraciones de Dispatcher](./cloud-manager/devops/dispatcher-configurations.md)
+      + [Análisis de registro de CDN](./cloud-manager/devops/cdn-log-analysis.md)
 + Configuración del entorno de desarrollo local {#local-development-environment-set-up}
    + [Información general](./local-development-environment/overview.md)
    + [Herramientas de desarrollo](./local-development-environment/development-tools.md)
