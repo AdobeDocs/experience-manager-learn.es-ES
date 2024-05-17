@@ -10,9 +10,9 @@ topic: Integrations
 jira: KT-15126
 exl-id: b369ed05-ba25-4b0e-aa3b-e7fc1621067d
 duration: 52
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: e8e51fadaa824d615524a8c4c41aefb656d0391d
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '290'
 ht-degree: 1%
 
 ---
@@ -39,8 +39,9 @@ Este artículo presupone que tiene [el formulario adaptable se ha configurado co
 * Configure el paso para invocar FDM para utilizar el modelo de datos de formulario creado en el paso anterior.
 * ![associated-fdm](assets/fdm-insert-1.png)
 
-* ![map-input-parameters](assets/fdm-insert-2.png)
-* Observe el uso de la notación de puntos JSON. Los datos enviados tienen el siguiente formato y se está extrayendo el objeto ContactUS de los datos enviados.
+## Formulario adaptable basado en componentes principales
+
+Los datos enviados tienen el siguiente formato. Necesitamos extraer el objeto ContactUS mediante la notación de puntos en el paso de flujo de trabajo invocar el servicio de modelo de datos de formulario, como se muestra en la captura de pantalla
 
 ```json
 {
@@ -54,6 +55,41 @@ Este artículo presupone que tiene [el formulario adaptable se ha configurado co
 ```
 
 
+* ![map-input-parameters](assets/fdm-insert-2.png)
+
+
+## Formulario adaptable basado en componentes de base
+
+Los datos enviados tienen el siguiente formato. Extraiga el objeto JSON de ContactUS utilizando la notación de puntos en el paso de flujo de trabajo invocar servicio de modelo de datos de formulario
+
+```json
+{
+    "afData": {
+        "afUnboundData": {
+            "data": {}
+        },
+        "afBoundData": {
+            "data": {
+                "ContactUS": {
+                    "Title": "Lord",
+                    "HighNetWorth": "true",
+                    "SubmitterName": "John Doe",
+                    "Products": "Forms"
+                }
+            }
+        },
+        "afSubmissionInfo": {
+            "lastFocusItem": "guide[0].guide1[0].guideRootPanel[0].afJsonSchemaRoot[0]",
+            "stateOverrides": {},
+            "signers": {},
+            "afPath": "/content/dam/formsanddocuments/foundationform",
+            "afSubmissionTime": "20240517100126"
+        }
+    }
+}
+```
+
+![foundation-based-form](assets/foundation-based-form.png)
 
 ## Configuración del formulario adaptable para el flujo de trabajo de déclencheur AEM de
 
