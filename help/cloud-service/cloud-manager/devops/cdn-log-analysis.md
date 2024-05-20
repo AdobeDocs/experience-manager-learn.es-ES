@@ -11,13 +11,13 @@ duration: 219
 last-substantial-update: 2024-05-17T00:00:00Z
 jira: KT-15505
 thumbnail: KT-15505.jpeg
-source-git-commit: d2c39b57982478badcd12682f082517ee9531d3e
+exl-id: 830c2486-099b-454f-bc07-6bf36e81ac8d
+source-git-commit: 8051f262f978cdf5aff48cb27e5408a7ee3c0b9d
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '442'
 ht-degree: 0%
 
 ---
-
 
 # Herramientas de análisis de registro de CDN
 
@@ -67,6 +67,4 @@ Puede empezar a utilizar el [Paneles de Splunk para el análisis de registro de 
 
 El [pila de ELK](https://www.elastic.co/elastic-stack), que incluye Elasticsearch, Logstash y Kibana, es otra opción potente para el análisis de registros. Resulta útil para las organizaciones que no tienen acceso a una configuración de Splunk o a las funcionalidades de reenvío de registros. La configuración de la pila ELK localmente es sencilla, la herramienta proporciona el archivo Docker Compose para comenzar rápidamente. A continuación, puede importar los paneles creados previamente e introducir los registros de CDN que se descargan mediante Adobe Cloud Manager.
 
-Puede empezar a utilizar el [Contenedor de Docker de ELK para análisis de registro de CDN de AEM CS](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md#elk-docker-container-for-aemcs-cdn-log-analysis)
-
-
+Puede empezar a utilizar el [Contenedor de Docker de ELK para análisis de registro de CDN de AEM CS](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md#elk-docker-container-for-aemcs-cdn-log-analysis) guía.
