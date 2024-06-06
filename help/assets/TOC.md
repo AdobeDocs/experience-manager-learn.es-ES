@@ -7,10 +7,10 @@ sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: 0435cfe082043da1c92a25b0429c508121c0d95c
+source-git-commit: 6736eb9f124d43b6337b74fd9463bd56cee4e15a
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 17%
+source-wordcount: '419'
+ht-degree: 16%
 
 ---
 
@@ -90,7 +90,6 @@ ht-degree: 17%
       + [AEM Configuración de Asset Share Commons en un entorno local](./sharing/asset-share-commons-technical-video-setup.md)
       + [Uso compartido de recursos de temas](./sharing/asset-share-commons-feature-video-theming.md)
       + [Compartir recursos Commons Kits de recursos](./sharing/asset-share/asset-share-commons-asset-kits.md)
-   + [Recursos conectados](./sharing/connected-assets.md)
 
 + Flujos de trabajo creativos{#creative-workflows}
    + [Integración de Adobe Express](./creative-workflows/adobe-express.md)
@@ -130,7 +129,6 @@ ht-degree: 17%
       + [Miniaturas de vídeo personalizadas](dynamic-media/dynamic-media-video-thumbnails-feature-video-use.md)
       + [Flujo adaptable DASH](dynamic-media/dynamic-media-dash.md)
       + [Dynamic Media Smart Crop Video](dynamic-media/dynamic-media-smart-crop-video.md)
-      + [Vídeo interactivo](dynamic-media/dynamic-media-interactive-video-feature-video-use.md)
       + [Reproductor de vídeo](dynamic-media/dynamic-media-video-player-feature-video-use.md)
    + Espectadores {#viewers}
       + [Visores](dynamic-media/dynamic-media-viewer-feature-video-understand.md)
