@@ -11,7 +11,7 @@ last-substantial-update: 2021-01-11T00:00:00Z
 doc-type: Tutorial
 exl-id: 066693b7-2b87-45e8-93ec-8bd09a7c263e
 duration: 777
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: dc40b8e022477d2b1d8f0ffe3b5e8bcf13be30b3
 workflow-type: tm+mt
 source-wordcount: '750'
 ht-degree: 6%
@@ -102,7 +102,7 @@ Se recomienda almacenar en déclencheur cualquier código personalizado basado e
 
    ```js
    function teaserShownHandler(event) {
-       var dataObject = getDataObjectHelper(event, {"@type": "wknd/components/teaser"});
+       var dataObject = getDataObjectHelper(event, {"@type": "wknd/components/carousel/item"});
        if(dataObject != null) {
            console.log("Teaser Shown: " + dataObject['dc:title']);
            console.log(dataObject);
@@ -110,7 +110,7 @@ Se recomienda almacenar en déclencheur cualquier código personalizado basado e
    }
    ```
 
-   El `teaserShownHandler` llama a la función `getDataObjectHelper` y pasa un filtro de `wknd/components/teaser` como el `@type` para filtrar eventos activados por otros componentes.
+   El `teaserShownHandler` llama a la función `getDataObjectHelper` y pasa un filtro de `wknd/components/carousel/item` como el `@type` para filtrar eventos activados por otros componentes.
 
 1. A continuación, inserte un detector de eventos en la capa de datos para detectar el `cmp:show` evento.
 
