@@ -11,9 +11,9 @@ role: Developer
 level: Beginner
 exl-id: 0499ff9f-d452-459f-b1a2-2853a228efd1
 duration: 295
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 1d9aeb4e5bd41096a28e3375d124bd6b6b8784aa
 workflow-type: tm+mt
-source-wordcount: '1408'
+source-wordcount: '1562'
 ht-degree: 0%
 
 ---
@@ -40,13 +40,21 @@ AEM Se accede a Developer Console desde un entorno as a Cloud Service a través 
 
 Para acceder y utilizar Developer Console, se deben otorgar los siguientes permisos a Adobe ID del desarrollador a través de [Admin Console del Adobe](https://adminconsole.adobe.com).
 
-1. Asegúrese de que la organización de Adobe AEM que ha afectado a Cloud Manager y a los productos as a Cloud Service de la esté activa en el conmutador de organización de Adobe.
-1. El desarrollador debe ser miembro de [Elementos del producto de Cloud Manager __Desarrollador - Cloud Service__ Perfil del producto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-cloud-manager.html#assign-developer).
-   + Si esta pertenencia no existe, el desarrollador no podrá iniciar sesión en Developer Console.
+1. Asegúrese de que en el conmutador de organización de Adobe puede ver la organización de Adobe relacionada con los entornos que desea inspeccionar en Developer Console.
+1. Para poder iniciar sesión en Developer Console, el desarrollador debe ser miembro de cualquiera de las siguientes funciones:
+   + [Elementos del producto de Cloud Manager __Desarrollador - Cloud Service__ Perfil del producto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-cloud-manager.html#assign-developer): En este caso, el desarrollador verá la lista completa de entornos disponibles en la URL de Developer Console seleccionada; si se ha seleccionado un entorno de desarrollo o RDE en Cloud Manager, pueden aparecer otros entornos de desarrollo o RDE en ese mismo programa.
+   + [__AEM Administradores de__ Perfil de producto en __AEM Autor de__](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html#aem-product-profiles): En este caso, la lista de entornos descritos en la viñeta anterior se limitará a los perfiles de producto relacionados donde se asigna esta función.
 1. El desarrollador debe ser miembro de [__AEM Usuarios de__ o __AEM Administradores de__ AEM Perfil del producto en el autor o publicación de la](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html#aem-product-profiles).
    + Si esta pertenencia no existe, la variable [status](#status) Los volcados agotarán el tiempo de espera con un error 401 no autorizado.
 
 ### Solución de problemas del acceso a Developer Console
+
+#### Al iniciar sesión, no veo el entorno que estoy buscando en la lista
+
+Asegúrese de lo siguiente:
+
++ Ha seleccionado la URL correcta de Developer Console haciendo clic en los tres puntos del entorno seleccionado a través de Cloud Manager y seleccione Developer Console.
++ O bien tiene [Elementos del producto de Cloud Manager __Desarrollador - Cloud Service__ Perfil del producto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-cloud-manager.html#assign-developer) para ver la lista completa de entornos o si forma parte de la [__AEM Administradores de__ Perfil de producto en __AEM Autor de__](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html#aem-product-profiles) para el entorno que no encuentre.
 
 #### 401 Error no autorizado al descargar el estado
 
