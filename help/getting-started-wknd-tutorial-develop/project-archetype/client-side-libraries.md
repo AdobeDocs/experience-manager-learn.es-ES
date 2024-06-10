@@ -12,9 +12,9 @@ doc-type: Tutorial
 exl-id: 8d3026e9-a7e2-4a76-8a16-a8197a5e04e3
 recommendations: noDisplay, noCatalog
 duration: 557
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 58ef1c482f127981083c07e5de5a1aba2f7c3aec
 workflow-type: tm+mt
-source-wordcount: '2546'
+source-wordcount: '2554'
 ht-degree: 0%
 
 ---
@@ -184,6 +184,16 @@ AEM El tipo de archivo del proyecto de configura automáticamente esta integraci
    >[!NOTE]
    >
    >`npm install` La ejecución de solo se necesita una vez, como después de un nuevo clon o una nueva generación del proyecto.
+
+1. Abrir `ui.frontend/package.json` y en el **scripts** **start** comando add `--env writeToDisk=true`.
+
+   ```json
+   {
+     "scripts": { 
+       "start": "webpack-dev-server --open --config ./webpack.dev.js --env writeToDisk=true",
+     }
+   }
+   ```
 
 1. Inicie el servidor de desarrollo de Webpack en **observar** mediante la ejecución del siguiente comando:
 
