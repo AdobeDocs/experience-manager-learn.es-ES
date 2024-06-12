@@ -12,9 +12,9 @@ last-substantial-update: 2023-01-12T00:00:00Z
 doc-type: Tutorial
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
 duration: 881
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 1a745f4b11007df5636c2fc0bea05d56393ef9c6
 workflow-type: tm+mt
-source-wordcount: '1930'
+source-wordcount: '1963'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,8 @@ ht-degree: 0%
 # Credenciales de servicio
 
 Las integraciones con Adobe Experience Manager AEM () as a Cloud Service AEM deben poder autenticarse de forma segura en el servicio de autenticación a través de la autenticación de la autenticación de. AEM AEM Developer Console otorga acceso a las credenciales del servicio, que se utilizan para facilitar que las aplicaciones, los sistemas y los servicios externos interactúen mediante programación con los servicios de autor o publicación de a través de HTTP.
+
+AEM La integración con otros productos de Adobe de se integra con [OAuth de S2S administrado mediante la consola de Adobe Developer](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service). AEM Para integraciones personalizadas con cuentas de servicio, las credenciales de JWT se utilizan y administran en la consola de desarrollador de.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330519?quality=12&learn=on)
 
