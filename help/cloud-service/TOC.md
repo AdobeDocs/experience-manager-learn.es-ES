@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: a8fc8fa19ae19e27b07fa81fc931eca51cb982a1
+source-git-commit: cbba149b23b4d8ecad35f263dc282a3da481fc9f
 workflow-type: tm+mt
-source-wordcount: '1234'
+source-wordcount: '1229'
 ht-degree: 17%
 
 ---
@@ -19,8 +19,8 @@ ht-degree: 17%
 + [Información general](./overview.md)
 + AEM {#aem-trials}
    + [Imágenes](./aem-trials/images.md)
-+ AEM as a Cloud Service Introducción a la{#introduction}
-   + [AEM ¿Qué está as a Cloud Service?](./introduction/what-is-aem-as-a-cloud-service.md)
++ Introducción a AEM as a Cloud Service{#introduction}
+   + [¿Qué es AEM as a Cloud Service?](./introduction/what-is-aem-as-a-cloud-service.md)
    + [Arquitectura](./introduction/architecture.md)
    + [Cloud Manager](./introduction/cloud-manager.md)
    + Estrategia y liderazgo mental{#strategy}
@@ -35,7 +35,7 @@ ht-degree: 17%
    + [OSGi](./underlying-technology/introduction-osgi.md)
    + [Repositorio de contenido Java](./underlying-technology/introduction-jcr.md)
    + [Sling](./underlying-technology/introduction-sling.md)
-   + [Servicios de creación y publicación](./underlying-technology/introduction-author-publish.md)
+   + [Creación y servicios de Publish](./underlying-technology/introduction-author-publish.md)
    + [Dispatcher](./underlying-technology/introduction-dispatcher.md)
 + Edge Delivery Services {#edge-delivery-services}
    + [Complemento de Sidekick de AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/edge-delivery-services/sidekick-plugin.html){target=_blank}
@@ -62,13 +62,13 @@ ht-degree: 17%
    + [Herramientas locales de Dispatcher](./local-development-environment/dispatcher-tools.md)
 + Desarrollo{#developing}
    + Extensibilidad{#extensibility}
-      + Generador de aplicaciones{#app-builder}
+      + App Builder{#app-builder}
          + [Generar token de acceso JWT](./developing/extensibility/app-builder/jwt-auth.md)
          + [Generar token de acceso de servidor a servidor](./developing/extensibility/app-builder/server-to-server-auth.md)
          + [Verificación del webhook de Github](./developing/extensibility/app-builder/github-webhook-verification.md)
       + Extensibilidad de IU{#ui}
          + [Información general](./developing/extensibility/ui/overview.md)
-         + [Proyecto de consola de Adobe Developer](./developing/extensibility/ui/adobe-developer-console-project.md)
+         + [Proyecto de Adobe Developer Console](./developing/extensibility/ui/adobe-developer-console-project.md)
          + [Inicializar aplicación](./developing/extensibility/ui/app-initialization.md)
          + [Registrar extensión](./developing/extensibility/ui/extension-registration.md)
          + [Modal](./developing/extensibility/ui/modal.md)
@@ -129,7 +129,7 @@ ht-degree: 17%
       + [Consola web OSGi](./debugging/aem-sdk-local-quickstart/osgi-web-consoles.md)
       + [Herramientas de Dispatcher](./debugging/aem-sdk-local-quickstart/dispatcher-tools.md)
       + [Otras herramientas](./debugging/aem-sdk-local-quickstart/other-tools.md)
-   + AEM Depuración as a Cloud Service de{#debugging-aem-as-a-cloud-service}
+   + Depuración de AEM as a Cloud Service{#debugging-aem-as-a-cloud-service}
       + [Información general](./debugging/cloud-service/overview.md)
       + [Registros](./debugging/cloud-service/logs.md)
       + [Creación e implementación](./debugging/cloud-service/build-and-deployment.md)
@@ -141,7 +141,7 @@ ht-degree: 17%
    + [Redirecciones de URL](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html){target=_blank}
 + Almacenamiento en caché{#caching}
    + [Información general](./caching/overview.md)
-   + [AEM Servicio de publicación de](./caching/publish.md)
+   + [AEM servicio de Publish de](./caching/publish.md)
    + [AEM Servicio de autor de](./caching/author.md)
    + [Análisis del índice de aciertos de caché CDN](./caching/cdn-cache-hit-ratio-analysis.md)
    + Cómo:{#how-to}
@@ -193,7 +193,7 @@ ht-degree: 17%
       + [BPA y CAM](./migration/moving-to-aem-as-a-cloud-service/bpa-and-cam.md)
       + [AEM Herramientas de modernización de](./migration/moving-to-aem-as-a-cloud-service/aem-modernization-tools.md)
       + [Modernización del repositorio](./migration/moving-to-aem-as-a-cloud-service/repository-modernization.md)
-      + [Microservicios de Asset compute](./migration/moving-to-aem-as-a-cloud-service/asset-compute-microservices.md)
+      + [Microservicios de Asset Compute](./migration/moving-to-aem-as-a-cloud-service/asset-compute-microservices.md)
       + [Dispatcher](./migration/moving-to-aem-as-a-cloud-service/dispatcher.md)
       + [Búsqueda e indexación](./migration/moving-to-aem-as-a-cloud-service/search-and-indexing.md)
       + Migración de contenido {#content-migration}
@@ -326,7 +326,7 @@ ht-degree: 17%
       + [Extracción de datos adjuntos de formularios enviados](./forms/forms-cs-and-power-automate/send-af-attachments-in-email.md)
    + Integración con Microsoft Dynamics{#formscs-dynamics-crm}
       + [Crear aplicación de Dynamics](./forms/formscs-dynamics-crm/create-dynamics-account.md)
-      + [Configurar fuente de datos](./forms/formscs-dynamics-crm/configure-odata-data-source.md)
+      + [Configuración de Data Source](./forms/formscs-dynamics-crm/configure-odata-data-source.md)
       + [Crear modelo de datos de formulario](./forms/formscs-dynamics-crm/create-form-data-model.md)
       + [Crear formulario adaptable](./forms/formscs-dynamics-crm/create-adaptive-form.md)
    + Integración con Salesforce{#integrate-with-salesforce}
@@ -347,7 +347,7 @@ ht-degree: 17%
    + Configuración de{#set-up}
       + [Aprovisionamiento de cuentas y servicios](./asset-compute/set-up/accounts-and-services.md)
       + [Entorno de desarrollo local](./asset-compute/set-up/development-environment.md)
-      + [Generador de aplicaciones](./asset-compute/set-up/app-builder.md)
+      + [App Builder](./asset-compute/set-up/app-builder.md)
    + Desarrollar{#develop}
       + [Creación de un proyecto de Asset compute](./asset-compute/develop/project.md)
       + [Configuración de variables de entorno](./asset-compute/develop/environment-variables.md)
@@ -373,7 +373,7 @@ ht-degree: 17%
 + Recursos de expertos {#expert-resources}
    + AEM Campeones de {#aem-champions}
       + [Guía de incorporación de Cloud Manager](./expert-resources/aem-champions/onboarding-playbook.md)
-      + [Tipos de entorno de Cloud Manager](./expert-resources/aem-champions/environment-types.md)
+      + [Tipos de entornos de Cloud Manager](./expert-resources/aem-champions/environment-types.md)
       + [IU de Cloud Manager](./expert-resources/aem-champions/cloud-manager-ui.md)
    + [AEM Serie de expertos de](./expert-resources/expert-series/aem-experts-series.md)
    + Cloud 5{#cloud-5}
@@ -388,7 +388,7 @@ ht-degree: 17%
       + [Cloud Dispatcher](./expert-resources/cloud-5/cloud5-aem-dispatcher-cloud.md)
       + [Migración 1](./expert-resources/cloud-5/cloud5-aem-content-migration-part-1.md)
       + [Migración 2](./expert-resources/cloud-5/cloud5-aem-content-migration-part-2.md)
-      + [Validador de Dispatcher](./expert-resources/cloud-5/cloud5-aem-dispatcher-validator.md)
+      + [Dispatcher Validator](./expert-resources/cloud-5/cloud5-aem-dispatcher-validator.md)
       + [Búsqueda e indexación](./expert-resources/cloud-5/cloud5-aem-search-and-indexing.md)
       + [Adobe App Builder](./expert-resources/cloud-5/cloud5-adobe-app-builder.md)
       + Temporada 2{#season-2}
@@ -405,9 +405,8 @@ ht-degree: 17%
       + Temporada 3{#season-3}
          + [Búsqueda de terceros](./expert-resources/cloud-5/season-3/cloud5-3rd-party-search.md)
          + [Monitorización de usuarios reales (RUM)](./expert-resources/cloud-5/season-3/cloud5-rum.md)
-         + [Explorador de Real User Monitoring (RUM)](./expert-resources/cloud-5/season-3/cloud5-rum-explorer.md)
          + [Trabajadores de Edge](./expert-resources/cloud-5/season-3/cloud5-edge-workers.md)
-         + [Publicar, cancelar la publicación de eventos en Edge Delivery Services](./expert-resources/cloud-5/season-3/cloud5-publish-events.md)
+         + [Publish, cancelar la publicación de eventos en Edge Delivery Services](./expert-resources/cloud-5/season-3/cloud5-publish-events.md)
          + [Índices de consulta y fórmulas de Excel](./expert-resources/cloud-5/season-3/cloud5-query-indexes.md)
          + [Traiga su propia CDN de Cloudflare](./expert-resources/cloud-5/season-3/cloud5-byo-cloudflare-cdn.md)
          + [Integrar AEM Assets](./expert-resources/cloud-5/season-3/cloud5-integrate-assets.md)

@@ -1,14 +1,14 @@
 ---
 title: Cloud 5 - Temporada 3
-description: AEM La tercera temporada le permite conocer el servicio de entrega de Edge a través de entrevistas en profundidad con expertos que han trabajado en proyectos complicados
+description: AEM La tercera temporada le permite obtener información sobre el servicio de Edge Delivery a través de entrevistas en profundidad con expertos que han trabajado en proyectos complicados.
 sub-product: Experience Manager Sites, Experience Manager Cloud Manager, Experience Manager Assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
 duration: 74
-source-git-commit: 272ed4e4782b03f284886a3046440960df538286
+source-git-commit: cbba149b23b4d8ecad35f263dc282a3da481fc9f
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
@@ -57,20 +57,22 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
                 Explore Real User Monitoring (RUM) funciona con Edge Delivery Services.
             </p>
         </td>   
+        <!--
         <td>
             <a href="./season-3/cloud5-rum-explorer.md">
-                <img alt="Explorador de Real User Monitoring (RUM)" src="https://video.tv.adobe.com/v/3429772?format=jpeg"/>
+                <img alt="Real User Monitoring (RUM) Explorer" src="https://video.tv.adobe.com/v/3429772?format=jpeg"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-rum-explorer.md">
-                <strong>Explorador de Real User Monitoring (RUM)</strong></a>        
-                <br/><em>AEM con James Talbot y Damian Langsweirdt, Ingeniería de la</em>
+                <strong>Real User Monitoring (RUM) Explorer</strong></a>        
+                <br/><em>with James Talbot & Damian Langsweirdt, AEM Engineering</em>
             </div>
             <p>
                 <br/>
-                Obtenga información sobre Real User Monitoring (RUM) Explorer y cómo acceder a él.
+                Learn about Real User Monitoring (RUM) Explorer and how to access it.
             </p>
         </td>   
+        -->
         <td>
             <a href="./season-3/cloud5-edge-workers.md">
                 <img alt="Trabajadores de Edge" src="https://video.tv.adobe.com/v/3427589?format=jpeg"/>
@@ -89,11 +91,11 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
     <tr>
         <td>
             <a href="./season-3/cloud5-publish-events.md">
-                <img alt="Publicar, cancelar la publicación de eventos en Edge Delivery Services" src="https://video.tv.adobe.com/v/3427681?format=jpeg"/>
+                <img alt="Publish, cancelar la publicación de eventos en Edge Delivery Services" src="https://video.tv.adobe.com/v/3427681?format=jpeg"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-publish-events.md">
-                <strong>Publicar, cancelar la publicación de eventos en Edge Delivery Services</strong></a>        
+                <strong>Publish, cancelar la publicación de eventos en Edge Delivery Services</strong></a>        
                 <br/><em>AEM con James Talbot y Amol Anand, Ingeniería de la</em>
             </div>
             <p>
