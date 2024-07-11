@@ -12,10 +12,10 @@ last-substantial-update: 2022-06-13T00:00:00Z
 doc-type: Feature Video
 exl-id: 0681e2c4-8661-436c-9170-9aa841a6fa27
 duration: 419
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 726715890d997ba3bb85f4833e220ac2222b3a42
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 2%
+source-wordcount: '378'
+ht-degree: 1%
 
 ---
 
@@ -26,6 +26,22 @@ Obtenga información sobre cómo utilizar las funciones de importación y export
 ## Exportación de metadatos {#metadata-export}
 
 >[!VIDEO](https://video.tv.adobe.com/v/22132?quality=12&learn=on)
+
+>[!TIP]
+>
+> Al abrir el archivo CSV de exportación de metadatos en Excel, utilice el [Importador de Excel](https://support.microsoft.com/en-us/office/import-data-from-a-csv-html-or-text-file-b62efe49-4d5b-4429-b788-e1211b5e90f6) en lugar de hacer doble clic en el archivo para evitar problemas con los archivos CSV codificados con UTF-8.
+>
+> Para abrir el archivo CSV de exportación de metadatos en Excel, siga estos pasos:
+> 
+> 1. Abra Microsoft Excel
+> 1. Seleccionar __Archivo > Nuevo__ para crear una hoja de cálculo vacía
+> 1. Con la hoja de cálculo vacía abierta, seleccione __Archivo > Importar__
+> 1. Seleccionar __Texto__ y haga clic en __Importar__
+> 1. Seleccione el archivo CSV exportado del sistema de archivos y haga clic en __Obtener datos__
+> 1. En el paso 1 del asistente para importar, seleccione __Delimitado__ y establecer __Origen del archivo__ hasta __Unicode (UTF-8)__ y haga clic en __Siguiente__
+> 1. En el paso 2, configure el __Delimitadores__ hasta __Coma__ y haga clic en __Siguiente__
+> 1. En el paso 3, deje __Formato de datos de columna__ tal como está y haga clic en __Finalizar__
+> 1. Seleccionar __Importar__ para agregar los datos a la hoja de cálculo
 
 ## Importación de metadatos {#metadata-import}
 
