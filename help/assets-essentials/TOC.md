@@ -8,10 +8,10 @@ version: Cloud Service
 feature-set: Experience Manager Assets
 feature: Assets Essentials
 team: TM
-source-git-commit: 0c95df469885b84aa7585975a89811efab0ae5e7
+source-git-commit: a5eb7cb6ba9b806a57a27ad1a0e01609af713656
 workflow-type: tm+mt
-source-wordcount: '77'
-ht-degree: 27%
+source-wordcount: '68'
+ht-degree: 20%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 27%
 
 + [Introducción](./getting-started.md)
 
-+ Datos básicos{#basics}
++ Conceptos básicos{#basics}
    + [Administración](basics/managing.md)
    + [Utilización](basics/using.md)
    + [Creación de contenido](basics/creating.md)
@@ -30,16 +30,17 @@ ht-degree: 27%
    + [Colaboración](basics/collaborating.md)
    + [Vínculos compartidos](basics/link-sharing.md)
 
-+ Configurar{#configuring}
++ Configuración{#configuring}
    + [Mi espacio de trabajo](configuring/my-workspace.md)
    + [Formularios de metadatos](configuring/metadata-forms.md)
    + [Administración de permisos](configuring/permissions-management.md)
+   + [Administración de taxonomía](configuring/taxonomy-management.md)
 
 + [Integración de Creative Cloud](integrations/creative-cloud.md)
 
 + Integración de Adobe Workfront{#workfront}
    + [Información general](./integrations/workfront/overview.md)
-   + [Configurar](./integrations/workfront/configure.md)
+   + [Configuración](./integrations/workfront/configure.md)
    + [Asignación de metadatos](./integrations/workfront/map-metadata.md)
    + [Envío de documentos y vinculación de recursos](./integrations/workfront/link-send.md)
    + [Historial de versiones](./integrations/workfront/versions.md)
