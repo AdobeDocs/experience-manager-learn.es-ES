@@ -21,13 +21,13 @@ ht-degree: 1%
 El formato de vista de tarjeta es un patrón de diseño que presenta información o datos en forma de tarjetas. Cada tarjeta representa un fragmento discreto de contenido o entrada de datos y, por lo general, consta de un contenedor visualmente distinto con elementos específicos organizados dentro de él.
 Las tarjetas en las que se puede hacer clic en React son componentes interactivos que se asemejan a tarjetas o mosaicos y en los que el usuario puede hacer clic o pulsar. Cuando un usuario pulsa o hace clic en una tarjeta en la que se puede hacer clic, déclencheur una acción o un comportamiento especificados, como navegar a otra página, abrir un modal o actualizar la interfaz de usuario.
 
-En este artículo, utilizaremos el [API de listforms](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/List-Forms/operation/listForms) para recuperar los formularios y mostrarlos en formato de tarjeta y abrir el formulario adaptable en el evento de clic.
+En este artículo, utilizaremos la [API de listforms](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/List-Forms/operation/listForms) para recuperar los formularios, mostrarlos en formato de tarjeta y abrir el formulario adaptable en el evento de clic.
 
-![card-view](./assets/card-view-forms.png)
+![vista de tarjeta](./assets/card-view-forms.png)
 
 ## Plantilla de tarjeta
 
-El siguiente código se utilizó para diseñar la plantilla de tarjeta. La plantilla de tarjeta muestra el título y la descripción del formulario adaptable junto con el logotipo del Adobe. [Componentes de IU de material](https://mui.com/) se han utilizado para crear este diseño.
+El siguiente código se utilizó para diseñar la plantilla de tarjeta. La plantilla de tarjeta muestra el título y la descripción del formulario adaptable junto con el logotipo del Adobe. [Se han utilizado componentes de interfaz de usuario de material](https://mui.com/) para crear este diseño.
 
 
 

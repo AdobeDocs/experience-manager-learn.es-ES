@@ -16,7 +16,7 @@ ht-degree: 20%
 
 {{edge-delivery-services}}
 
-Adobe Experience Manager AEM AEM () Assets es una herramienta de administración de recursos digitales de la plataforma de que permite a los usuarios crear, administrar y compartir sus recursos digitales (imágenes, vídeos, documentos y clips de audio) en un repositorio basado en web. Esta guía del usuario contiene vídeos y tutoriales sobre las numerosas funciones y funcionalidades de AEM Assets.
+Adobe Experience Manager AEM () Assets AEM es una herramienta de administración de recursos digitales de la plataforma de que permite a los usuarios crear, administrar y compartir sus recursos digitales (imágenes, vídeos, documentos y clips de audio) en un repositorio basado en web. Esta guía del usuario contiene vídeos y tutoriales sobre las numerosas funciones y funcionalidades de AEM Assets.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_assets_overview"
@@ -48,11 +48,11 @@ Descubra qué es AEM Assets y cómo se puede utilizar para lograr los objetivos 
    </a>
    <div>
       <a href="./creative-workflows/aem-desktop-app.md">
-      <strong>AEM Uso de aplicación de escritorio</strong>
+      AEM <strong>Uso de la aplicación de escritorio de</strong>
       </a>
    </div>
    <p>
-      <em>AEM Acceder a recursos en la directamente desde el escritorio</em>
+      AEM <em>Acceder a recursos en el escritorio directamente desde el equipo de escritorio</em>
    </p>
 </td>
 <td>
@@ -78,7 +78,7 @@ Descubra qué es AEM Assets y cómo se puede utilizar para lograr los objetivos 
       </a>
    </div>
    <p>
-      <em>Administración y acceso al contenido multimedia mediante Dynamic Media</em>
+      <em>Administrar y acceder al contenido multimedia mediante Dynamic Media</em>
    <p>
 </td>
 </table>
@@ -88,7 +88,7 @@ Descubra qué es AEM Assets y cómo se puede utilizar para lograr los objetivos 
 ## Recursos adicionales
 
 * [Documentación de AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=en)
-* [AEM Tutoriales en as a Cloud Service](/help/cloud-service/overview.md)
+* [Tutoriales de AEM as a Cloud Service](/help/cloud-service/overview.md)
 * [Tutoriales de AEM Sites](/help/sites/overview.md)
 * [Tutoriales de AEM Forms](/help/forms/overview.md)
 * [AEM Tutoriales de fundaciones de](/help/foundation/overview.md)

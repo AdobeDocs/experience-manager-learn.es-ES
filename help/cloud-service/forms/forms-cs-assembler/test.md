@@ -18,20 +18,20 @@ ht-degree: 0%
 
 # Importar proyecto de Eclipse
 
-* Descargue y descomprima el [archivo zip](./assets/pdf-manipulation.zip)
+* Descargar y descomprimir el [archivo zip](./assets/pdf-manipulation.zip)
 * Inicie Eclipse e importe el proyecto en Eclipse
 * El proyecto incluye las siguientes carpetas en la carpeta de recursos:
    * ddxFiles: esta carpeta contiene el archivo ddx para describir la salida que desea generar
    * archivos PDF: esta carpeta contiene los archivos PDF que desea ensamblar y los archivos PDF para probar las utilidades PDFA
    * credenciales: esta carpeta contiene el archivo pdfa-options.json
 
-![resources-file](./assets/resources.png)
+![archivo de recursos](./assets/resources.png)
 
 ## Probar archivos de PDF de ensamblaje
 
 * Copie y pegue las credenciales del servicio en el archivo de recursos service_token.json del proyecto.
 * Abra el archivo AssemblePDFiles.java y especifique la carpeta en la que desea guardar los archivos de PDF generados
-* Abra ExecuteAssemblerService.java. Establecer el valor de la variable _AEM_FORMS_CS_ para apuntar a su instancia.
+* Abra ExecuteAssemblerService.java. AEM Establezca el valor de la variable __FORMS_CS_ para que apunte a su instancia.
 * Elimine los comentarios de las líneas adecuadas para probar la combinación de dos o más archivos de PDF
 * Ejecute ExecuteAssemblerService.java como aplicación java
 
@@ -39,13 +39,13 @@ ht-degree: 0%
 
 * Copie y pegue las credenciales del servicio en el archivo de recursos service_token.json del proyecto.
 * Abra el archivo PDFAUtilities.java y especifique la carpeta en la que desea guardar los archivos de PDF generados.
-* Abra ExecuteAssemblerService.java. Establecer el valor de la variable _AEM_FORMS_CS_ para apuntar a su instancia.
+* Abra ExecuteAssemblerService.java. AEM Establezca el valor de la variable __FORMS_CS_ para que apunte a su instancia.
 * Elimine los comentarios de las líneas adecuadas para probar las operaciones de PDFA.
 * Ejecute ExecuteAssemblerService.java como aplicación java.
 
 
 
 >[!NOTE]
-> La primera vez que ejecute el programa java obtendrá el error HTTP 403. Para superar esto, asegúrese de dar la [AEM los permisos adecuados para el usuario de la cuenta técnica en la aplicación de la cuenta de](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=es#configuraci%C3%B3n-del-acceso-en-aem).
+> La primera vez que ejecute el programa java obtendrá el error HTTP 403. AEM Para superar esto, asegúrese de dar los [permisos apropiados al usuario de la cuenta técnica en el usuario de la cuenta técnica en la que se encuentra el usuario de la cuenta técnica en la que se encuentra el usuario de la cuenta de](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=es#configuraci%C3%B3n-del-acceso-en-aem).
 
-**Usuarios de AEM Forms** Esta es la función que he utilizado en este curso.
+**Usuarios de AEM Forms** es la función que utilicé para este curso.

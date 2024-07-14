@@ -22,20 +22,20 @@ Este tutorial está diseñado para los clientes de AEM Forms que necesiten crear
 
 
 [Descargar el componente de flujo de trabajo personalizado](assets/saveFiles.zip)
-Importación del componente de flujo de trabajo [uso del administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
+Importe el componente de flujo de trabajo [mediante el administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
 
 El componente de flujo de trabajo personalizado se encuentra en /apps/AEMFormsDemoListings/workflow/component/SaveFiles
 
 Seleccione el nodo SaveFiles y examine sus propiedades
 
-**componentGroup** : el valor de esta propiedad determina la categoría del componente de flujo de trabajo.
+**componentGroup**: el valor de esta propiedad determina la categoría del componente de flujo de trabajo.
 
-**jcr:Título** : título del componente del flujo de trabajo.
+**jcr:Title**: este es el título del componente de flujo de trabajo.
 
 **sling:resourceSuperType** El valor de esta propiedad determinará la herencia de este componente. En este caso, se hereda del componente de proceso
 
 
-![component-properties](assets/component-properties1.png)
+![propiedades de componente](assets/component-properties1.png)
 
 ## cq:dialog
 
@@ -49,14 +49,15 @@ Los argumentos de proceso del proceso se encuentran en el nodo processargs
 ![process-args](assets/process-arguments.png)
 
 El autor especifica los argumentos como se muestra en la captura de pantalla siguiente
-![workflow-component](assets/custom-workflow-component.png)
+![componente de flujo de trabajo](assets/custom-workflow-component.png)
 
 Los valores se almacenan como propiedades del nodo de metadatos. Por ejemplo, el valor **c:\formsattachments** se almacenará en la propiedad saveToLocation del nodo de metadatos
-![save-location](assets/save-to-location.png)
+![guardar-ubicación](assets/save-to-location.png)
 
 ## cq:editConfig
 
-cq:EditConfig es simplemente un nodo con el tipo principal cq:EditConfig y el nombre cq:editConfig bajo la raíz del componente. El comportamiento de edición de un componente se configura añadiendo un nodo cq:editConfig de tipo cq:EditConfig debajo del nodo del componente (de tipo cq:Component)
+cq:EditConfig es simplemente un nodo con el tipo principal cq:EditConfig y el nombre cq:editConfig bajo la raíz del componente
+El comportamiento de edición de un componente se configura añadiendo un nodo cq:editConfig de tipo cq:EditConfig debajo del nodo de componente (de tipo cq:Component)
 
 ![edit-config](assets/cq-edit-config.png)
 

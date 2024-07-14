@@ -1,6 +1,6 @@
 ---
 title: Etiquetas inteligentes para imágenes con AEM Assets
-description: AEM Las etiquetas inteligentes para imágenes aumentan las capacidades de búsqueda mediante la adición automática e inteligente de etiquetas de metadatos a los recursos de imagen en función del contenido de la imagen.
+description: AEM Las etiquetas inteligentes para imágenes aumentan la capacidad de búsqueda de los usuarios al añadir de forma automática e inteligente etiquetas de metadatos a los recursos de imagen en función del contenido de la imagen.
 topic: Content Management
 feature: Smart Tags
 role: User
@@ -28,7 +28,7 @@ Las etiquetas inteligentes de AEM Assets para imágenes aumentan la búsqueda de
 ## AEM Configuración para la versión 6.x de la{#set-up}
 
 >[!NOTE]
-> AEM Las etiquetas inteligentes para imágenes se aprovisionan automáticamente para las etiquetas as a Cloud Service de la.
+> Las etiquetas inteligentes para imágenes se aprovisionan automáticamente para AEM as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17023?quality=12&learn=on)
 

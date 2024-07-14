@@ -1,6 +1,6 @@
 ---
-title: AEM Administrar Dispatcher en Cloud Manager
-description: AEM Administre las configuraciones de Dispatcher en Cloud Manager de la.
+title: Administrar Dispatcher en AEM Cloud Manager
+description: Administre las configuraciones de Dispatcher en AEM Cloud Manager.
 role: Developer
 level: Beginner
 type: Tutorial
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# AEM Administrar las configuraciones de Dispatcher en Cloud Manager de
+# Administrar las configuraciones de Dispatcher en AEM Cloud Manager
 
-AEM Utilice prácticas recomendadas y ejemplos para explorar cómo funciona Dispatcher con los servicios de Dispatcher como Cloud Service y Cloud Manager
+AEM Utilice prácticas recomendadas y ejemplos para explorar cómo funciona Dispatcher con los servicios de Dispatcher, como Cloud Service y Cloud Manager, con los que también puede trabajar de forma.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330538?quality=12&learn=on)

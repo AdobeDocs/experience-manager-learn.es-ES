@@ -1,6 +1,6 @@
 ---
 title: 'Capítulo 3: Temas avanzados del almacenamiento en caché de Dispatcher'
-description: AEM Esta es la parte 3 de una serie de tres partes para almacenar en caché en el almacenamiento en caché de la. Dónde las dos primeras partes se centraron en el almacenamiento en caché de http sin formato en Dispatcher y qué limitaciones hay. En esta parte se analizan algunas ideas sobre cómo superar estas limitaciones.
+description: AEM Esta es la parte 3 de una serie de tres partes para almacenar en caché en el almacenamiento en caché de la. Las dos primeras partes se centraron en el almacenamiento en caché de http sin formato en Dispatcher y en las limitaciones que existen. En esta parte se analizan algunas ideas sobre cómo superar estas limitaciones.
 feature: Dispatcher
 topic: Architecture
 role: Architect
@@ -17,21 +17,21 @@ ht-degree: 0%
 
 # Capítulo 3: Temas avanzados de almacenamiento en caché
 
-*&quot;Solo hay dos cosas difíciles en la informática: invalidar la caché y nombrar cosas&quot;.*
+*&quot;Solo hay dos cosas importantes en la ciencia de equipos: invalidación de la caché y nombres.&quot;*
 
 — PHIL KARLTON
 
 ## Información general
 
-AEM Esta es la parte 3 de una serie de tres partes para almacenar en caché en el almacenamiento en caché de la base de datos de. Dónde las dos primeras partes se centraron en el almacenamiento en caché de http sin formato en Dispatcher y qué limitaciones hay. En esta parte se analizan algunas ideas sobre cómo superar estas limitaciones.
+AEM Esta es la parte 3 de una serie de tres partes para almacenar en caché en el almacenamiento en caché de la base de datos de. Las dos primeras partes se centraron en el almacenamiento en caché de http sin formato en Dispatcher y en las limitaciones que existen. En esta parte se analizan algunas ideas sobre cómo superar estas limitaciones.
 
 ## Almacenamiento en caché en general
 
-[Capítulo 1](chapter-1.md) y [Capítulo 2](chapter-2.md) La mayoría de esta serie se centró principalmente en Dispatcher. Hemos explicado los conceptos básicos, las limitaciones y dónde debe realizar determinadas compensaciones.
+[El capítulo 1](chapter-1.md) y [capítulo 2](chapter-2.md) de esta serie se centraron principalmente en Dispatcher. Hemos explicado los conceptos básicos, las limitaciones y dónde debe realizar determinadas compensaciones.
 
 La complejidad y las complejidades del almacenamiento en caché no son problemas únicos de Dispatcher. El almacenamiento en caché es difícil en general.
 
-Tener Dispatcher como la única herramienta en su caja de herramientas sería en realidad una limitación.
+Tener el Dispatcher como la única herramienta en su caja de herramientas sería en realidad una limitación.
 
 En este capítulo queremos ampliar aún más nuestra vista sobre el almacenamiento en caché y desarrollar algunas ideas para superar algunas de las deficiencias de Dispatcher. No hay una solución mágica: tendrá que hacer concesiones en su proyecto. Recuerde que con el almacenamiento en caché y la precisión de invalidación siempre viene la complejidad, y con la complejidad viene la posibilidad de errores.
 
@@ -66,11 +66,11 @@ En primer lugar, la propia unidad de disco duro (HDD) tiene una caché integrada
 
 #### Repositorio de contenido
 
-AEM El siguiente nivel es CRX u Oak: la base de datos de documentos utilizada por los usuarios de la base de datos de documentos de la base de datos de. CRX y Oak dividen los datos en segmentos que se pueden almacenar en caché también para evitar un acceso más lento al disco duro.
+El siguiente nivel es CRX o Oak AEM: la base de datos de documentos utilizada por los usuarios de la base de datos de documentos de. CRX y Oak dividen los datos en segmentos que se pueden almacenar en caché también para evitar un acceso más lento al disco duro.
 
 #### Datos de terceros
 
-La mayoría de las instalaciones web más grandes también tienen datos de terceros; datos procedentes de un sistema de información de productos, un sistema de gestión de relaciones con el cliente, una base de datos heredada o cualquier otro servicio web arbitrario. No es necesario extraer estos datos de la fuente cada vez que se necesitan, especialmente cuando se sabe que cambian con poca frecuencia. Por lo tanto, se puede almacenar en caché si no se sincroniza en la base de datos CRX.
+La mayoría de las instalaciones web más grandes también tienen datos de terceros; datos procedentes de un sistema de información de productos, un sistema de gestión de relaciones con el cliente, una base de datos heredada o cualquier otro servicio web arbitrario. No es necesario extraer estos datos de la fuente cada vez que se necesitan, especialmente cuando se sabe que cambian con poca frecuencia. Por lo tanto, se puede almacenar en caché si no se sincroniza en la base de datos de CRX.
 
 #### Nivel empresarial: aplicación/modelo
 
@@ -82,7 +82,7 @@ El modelo ahora es la base para la renderización del marcado de un componente. 
 
 #### Dispatcher, CDN y otros proxies
 
-Desactivado va la página HTML procesada a Dispatcher. Ya hemos hablado de que el propósito principal de Dispatcher es almacenar en caché las páginas de los HTML y otros recursos web (a pesar de su nombre). Antes de que los recursos lleguen al explorador, puede pasar un proxy inverso, que puede almacenar en caché y una CDN, que también se utiliza para el almacenamiento en caché. El cliente puede sentarse en una oficina que concede acceso a la web solo a través de un proxy, y ese proxy puede decidir almacenar en caché también para ahorrar tráfico.
+Desactivado va la página HTML procesada a Dispatcher. Ya hemos hablado de que el principal propósito de Dispatcher es almacenar en caché las páginas de los HTML y otros recursos web (a pesar de su nombre). Antes de que los recursos lleguen al explorador, puede pasar un proxy inverso, que puede almacenar en caché y una CDN, que también se utiliza para el almacenamiento en caché. El cliente puede sentarse en una oficina que concede acceso a la web solo a través de un proxy, y ese proxy puede decidir almacenar en caché también para ahorrar tráfico.
 
 #### Caché del explorador
 
@@ -96,19 +96,19 @@ Pero, ¿en qué parte de esa cadena tiene sentido almacenar en caché? ¿Al prin
 
 Para darle una idea aproximada de qué factores podría tener en cuenta,
 
-**Tiempo de vida** : Si los objetos tienen un corto tiempo de vida inherente (los datos de tráfico pueden tener un tiempo de vida más corto que los datos meteorológicos), es posible que no valga la pena almacenarlos en caché.
+**Tiempo de vida**: si los objetos tienen un corto tiempo de vida inherente (los datos de tráfico pueden tener un tiempo de vida inferior al de los datos meteorológicos), puede que no valga la pena almacenarlos en caché.
 
-**Coste de producción -** Cuánto cuesta (en términos de ciclos de CPU y E/S) la reproducción y entrega de un objeto. Si es barato, el almacenamiento en caché podría no ser necesario.
+**Costo de producción -** Cuánto cuesta (en términos de ciclos de CPU y E/S) la reproducción y entrega de un objeto. Si es barato, el almacenamiento en caché podría no ser necesario.
 
-**Tamaño** : Los objetos grandes requieren más recursos para almacenarse en caché. Ese podría ser un factor limitante y debe sopesarse en relación con los beneficios.
+**Tamaño**: los objetos grandes requieren más recursos para almacenarse en caché. Ese podría ser un factor limitante y debe sopesarse en relación con los beneficios.
 
-**Frecuencia de acceso** : Si no se accede a los objetos con frecuencia, el almacenamiento en caché podría no ser eficaz. Simplemente quedarían obsoletos o se invalidarían antes de que se acceda a ellos por segunda vez desde la caché. Estos elementos simplemente bloquearían los recursos de memoria.
+**Frecuencia de acceso**: si no se accede a los objetos con mucha frecuencia, el almacenamiento en caché podría no ser eficaz. Simplemente quedarían obsoletos o se invalidarían antes de que se acceda a ellos por segunda vez desde la caché. Estos elementos simplemente bloquearían los recursos de memoria.
 
-**Acceso compartido** : los datos que utilizan más de una entidad deben almacenarse en caché más adelante en la cadena. En realidad, la cadena de almacenamiento en caché no es una cadena, sino un árbol. Más de un modelo podría utilizar un fragmento de datos del repositorio. Estos modelos, a su vez, los puede utilizar más de un script de procesamiento para generar fragmentos de HTML. Estos fragmentos se incluyen en varias páginas que se distribuyen a varios usuarios con sus cachés privadas en el explorador. Así que &quot;compartir&quot; no significa compartir entre personas solamente, sino entre piezas de software. Si desea encontrar una caché &quot;compartida&quot; potencial, solo tiene que rastrear el árbol hasta la raíz y encontrar un antecesor común, ahí es donde debe almacenar en caché.
+**Acceso compartido**: los datos que usen más de una entidad deben almacenarse en la caché más arriba en la cadena. En realidad, la cadena de almacenamiento en caché no es una cadena, sino un árbol. Más de un modelo podría utilizar un fragmento de datos del repositorio. Estos modelos, a su vez, los puede utilizar más de un script de procesamiento para generar fragmentos de HTML. Estos fragmentos se incluyen en varias páginas que se distribuyen a varios usuarios con sus cachés privadas en el explorador. Así que &quot;compartir&quot; no significa compartir entre personas solamente, sino entre piezas de software. Si desea encontrar una caché &quot;compartida&quot; potencial, solo tiene que rastrear el árbol hasta la raíz y encontrar un antecesor común, ahí es donde debe almacenar en caché.
 
-**Distribución geoespacial** : Si los usuarios están distribuidos por todo el mundo, el uso de una red distribuida de cachés puede ayudar a reducir la latencia.
+**Distribución geoespacial**: si los usuarios están distribuidos en todo el mundo, el uso de una red distribuida de cachés puede ayudar a reducir la latencia.
 
-**Ancho de banda y latencia de red** - Hablando de latencia, ¿quiénes son sus clientes y qué tipo de red utilizan? ¿Tal vez sus clientes son clientes móviles en un país subdesarrollado que utilizan una conexión 3G de teléfonos inteligentes de generación más antigua? Considere la posibilidad de crear objetos más pequeños y almacenarlos en caché en las cachés del explorador.
+**Ancho de banda y latencia de la red** - Hablando de latencia, ¿quiénes son sus clientes y qué tipo de red utilizan? ¿Tal vez sus clientes son clientes móviles en un país subdesarrollado que utilizan una conexión 3G de teléfonos inteligentes de generación más antigua? Considere la posibilidad de crear objetos más pequeños y almacenarlos en caché en las cachés del explorador.
 
 Esta lista no es muy completa, pero creemos que ya entendieron la idea.
 
@@ -118,23 +118,23 @@ De nuevo: el almacenamiento en caché es difícil. Compartimos algunas reglas b�
 
 #### Evitar el almacenamiento en caché doble
 
-Cada una de las capas introducidas en el último capítulo proporciona algún valor en la cadena de almacenamiento en caché. Ahorrando ciclos informáticos o acercando los datos al consumidor. No es incorrecto almacenar en caché un fragmento de datos en varias etapas de la cadena, pero siempre debe tener en cuenta cuáles son los beneficios y los costes de la siguiente etapa. Almacenar en caché una página completa en el sistema de publicación no suele proporcionar ningún beneficio, ya que esto ya se hace en Dispatcher.
+Cada una de las capas introducidas en el último capítulo proporciona algún valor en la cadena de almacenamiento en caché. Ahorrando ciclos informáticos o acercando los datos al consumidor. No es incorrecto almacenar en caché un fragmento de datos en varias etapas de la cadena, pero siempre debe tener en cuenta cuáles son los beneficios y los costes de la siguiente etapa. Almacenar en caché una página completa en el sistema de Publish no suele proporcionar ningún beneficio, ya que esto ya se hace en Dispatcher.
 
 #### Combinación de estrategias de invalidación
 
 Existen tres estrategias básicas de invalidación:
 
-* **TTL, Tiempo de vida:** Un objeto caduca después de una cantidad de tiempo fija (por ejemplo, &quot;dentro de 2 horas&quot;)
-* **Fecha de caducidad:** El objeto caduca a una hora definida en el futuro (por ejemplo, &quot;5:00 p.m. el 10 de junio de 2019&quot;)
-* **Basado en evento:** El objeto se invalida explícitamente mediante un evento que se produjo en la plataforma (por ejemplo, cuando se cambia y activa una página)
+* **TTL, Tiempo de vida:** Un objeto caduca después de una cantidad de tiempo fija (por ejemplo, &quot;2 horas a partir de ahora&quot;)
+* **Fecha de caducidad:** El objeto caducará a una hora futura definida (por ejemplo, &quot;5:00 p.m. del 10 de junio de 2019&quot;)
+* **Basado en evento:** El objeto se invalida explícitamente por un evento que se produjo en la plataforma (por ejemplo, cuando se cambia y activa una página)
 
 Ahora puede utilizar diferentes estrategias en diferentes capas de caché, pero hay algunas &quot;tóxicas&quot;.
 
 #### Invalidación basada en evento
 
-![Invalidación basada en evento puro](assets/chapter-3/event-based-invalidation.png)
+![invalidación basada en evento puro](assets/chapter-3/event-based-invalidation.png)
 
-*Invalidación basada en evento puro: invalidar desde la caché interna a la capa exterior*
+*Invalidación basada en evento puro: invalidar de la caché interna a la capa externa*
 
 <br> 
 
@@ -144,7 +144,7 @@ En pocas palabras, las cachés se invalidan una por una después de que el objet
 
 Solo tiene que tener en cuenta una regla:
 
-Invalidar siempre desde la caché interna a la caché externa. Si invalidó primero una caché externa, podría volver a almacenar en caché el contenido obsoleto de una caché interna. No realice ninguna suposición en el momento en que una caché vuelva a estar fresca: asegúrese de que lo está. Lo mejor es activar la invalidación de la caché externa _después_ invalidando la interna.
+Invalidar siempre desde la caché interna a la caché externa. Si invalidó primero una caché externa, podría volver a almacenar en caché el contenido obsoleto de una caché interna. No realice ninguna suposición en el momento en que una caché vuelva a estar fresca: asegúrese de que lo está. Lo mejor es activar la invalidación de la caché externa _después de_ para invalidar la caché interna.
 
 Ahora, esa es la teoría. Pero en la práctica hay una serie de problemas. Los eventos deben distribuirse, posiblemente a través de una red. En la práctica, esto hace que sea el esquema de invalidación más difícil de implementar.
 
@@ -154,9 +154,9 @@ Con la invalidación basada en eventos, debe tener un plan de contingencia. ¿Qu
 
 #### Invalidación pura basada en TTL
 
-![Invalidación basada en TTL no sincronizada](assets/chapter-3/ttl-based-invalidation.png)
+![invalidación basada en TTL sin sincronizar](assets/chapter-3/ttl-based-invalidation.png)
 
-*Invalidación basada en TTL no sincronizada*
+*invalidación basada en TTL sin sincronizar*
 
 <br> 
 
@@ -164,7 +164,7 @@ Ese también es un esquema bastante común. Se apilan varias capas de cachés, c
 
 Es fácil de implementar. Desafortunadamente, es difícil predecir la vida útil efectiva de un fragmento de datos.
 
-![Casualidad externa que prolonga la duración de un objeto interior](assets/chapter-3/outer-cache.png)
+![Caza externa que prolonga la duración de un objeto interno](assets/chapter-3/outer-cache.png)
 
 *Caché externa que prolonga la vida útil de un objeto interno*
 
@@ -174,15 +174,15 @@ Consideremos la ilustración anterior. Cada capa de almacenamiento en caché int
 
 No estamos diciendo que sea un mal plan. Deberías saber sus límites. Y es una buena y fácil estrategia para empezar. Solo si el tráfico del sitio aumenta, puede considerar una estrategia más precisa.
 
-*Sincronizar la hora de invalidación estableciendo una fecha específica*
+*Sincronizando la hora de invalidación estableciendo una fecha específica*
 
 #### Invalidación basada en fecha de vencimiento
 
 Se obtiene una vida útil efectiva más predecible, si se configura una fecha específica en el objeto interno y se propaga a las cachés externas.
 
-![Sincronización de fechas de caducidad](assets/chapter-3/synchronize-expiration-dates.png)
+![Sincronizando fechas de caducidad](assets/chapter-3/synchronize-expiration-dates.png)
 
-*Sincronización de fechas de caducidad*
+*Sincronizando fechas de caducidad*
 
 <br> 
 
@@ -190,31 +190,31 @@ Sin embargo, no todas las cachés pueden propagar las fechas. Y puede volverse d
 
 #### Combinación de invalidación basada en eventos y en TTL
 
-![Combinación de estrategias basadas en eventos y en TTL](assets/chapter-3/mixing-event-ttl-strategies.png)
+![Combinar estrategias basadas en eventos y basadas en TTL](assets/chapter-3/mixing-event-ttl-strategies.png)
 
-*Combinación de estrategias basadas en eventos y en TTL*
+*Combinar estrategias basadas en eventos y basadas en TTL*
 
 <br> 
 
 AEM También un esquema común en el mundo de la es utilizar la invalidación basada en eventos en las cachés internas (por ejemplo, cachés en memoria donde los eventos se pueden procesar en tiempo casi real) y cachés basadas en TTL en el exterior, donde tal vez no tenga acceso a la invalidación explícita.
 
-AEM En el mundo de los recursos, tendría una caché en memoria para objetos empresariales y fragmentos de HTML en los sistemas de publicación, que se invalida cuando cambian los recursos subyacentes y propaga este evento de cambio al distribuidor, que también funciona en función de eventos. Por delante tendría, por ejemplo, una CDN basada en TTL.
+AEM En el mundo de los recursos, tendría una caché en memoria para objetos empresariales y fragmentos de HTML en los sistemas de Publish, que se invalidará cuando cambien los recursos subyacentes y propagará este evento de cambio al distribuidor, que también funciona en función de eventos. Por delante tendría, por ejemplo, una CDN basada en TTL.
 
-Tener una capa de almacenamiento en caché (corto) basado en TTL delante de Dispatcher podría suavizar eficazmente un pico que generalmente se produciría después de una invalidación automática.
+Tener una capa de almacenamiento en caché (corto) basado en TTL delante de una Dispatcher podría suavizar eficazmente un pico que generalmente se produciría después de una invalidación automática.
 
 #### Combinación de TTL e invalidación basada en eventos
 
-![Combinación de TTL e invalidación basada en eventos](assets/chapter-3/toxic.png)
+![Combinación de TTL - e invalidación basada en eventos](assets/chapter-3/toxic.png)
 
-*Tóxico: mezcla de TTL y invalidación basada en eventos*
+*Tóxico: mezcla de TTL e invalidación basada en eventos*
 
 <br> 
 
 Esta combinación es tóxica. Nunca coloque una caché basada en eventos después de un TTL o una caché basada en caducidad. ¿Recuerdan el efecto derrame que tuvimos en la estrategia de &quot;TTL puro&quot;? El mismo efecto se puede observar aquí. Solo que el evento de invalidación de la caché externa ya se ha producido puede que no vuelva a ocurrir, nunca más, esto puede expandir la vida útil del objeto en caché hasta el infinito.
 
-![Combinación basada en TTL y basada en eventos: desbordamiento hacia el infinito](assets/chapter-3/infinity.png)
+![Combinación basada en TTL y en eventos: desbordamiento hasta el infinito](assets/chapter-3/infinity.png)
 
-*Combinación basada en TTL y basada en eventos: desbordamiento hacia el infinito*
+*Combinación basada en TTL y en eventos: desbordamiento hasta el infinito*
 
 <br> 
 
@@ -226,7 +226,7 @@ Puede conectarse al escenario del proceso de renderización para añadir capas d
 
 #### Respetar control de acceso
 
-Las técnicas descritas aquí son bastante potentes y una _imprescindible_ AEM en la caja de herramientas de cada desarrollador de. Pero no te emociones demasiado, úsalos sabiamente. Almacenar un objeto en una caché y compartirlo con otros usuarios en solicitudes de seguimiento significa eludir el control de acceso. Esto no suele ser un problema en los sitios web públicos, pero puede serlo cuando un usuario necesita iniciar sesión antes de obtener acceso.
+AEM Las técnicas descritas aquí son bastante poderosas y _se debe tener_ en cada caja de herramientas de desarrollador de la aplicación de herramientas para desarrolladores de la aplicación de herramientas de la aplicación para desarrolladores de la aplicación de herramientas de la aplicación de herramientas para desarrolladores de la aplicación de herramientas. Pero no te emociones demasiado, úsalos sabiamente. Almacenar un objeto en una caché y compartirlo con otros usuarios en solicitudes de seguimiento significa eludir el control de acceso. Esto no suele ser un problema en los sitios web públicos, pero puede serlo cuando un usuario necesita iniciar sesión antes de obtener acceso.
 
 Considere la posibilidad de almacenar el marcado de HTML de un menú principal de sitios en una memoria caché en memoria para compartirlo entre varias páginas. En realidad, este es un ejemplo perfecto para almacenar HTML procesados parcialmente, ya que la creación de una navegación suele ser costosa, ya que requiere atravesar muchas páginas.
 
@@ -250,7 +250,7 @@ Si alguno - ese es el consejo más importante, podemos darle:
 
 4. AEM Incluso si crea un &quot;envoltorio&quot; delgado alrededor de un recurso a partir de un recurso, no debe almacenarlo en caché, aunque sea su propio recurso e inmutable. El objeto ajustado sería una referencia (que antes prohibimos) y si nos vemos nítidos, eso básicamente crea los mismos problemas que se describen en el último elemento.
 
-5. Si desea almacenar en caché, cree sus propios objetos copiando datos primitivos en sus propios objetos shallo. Es posible que desee vincular entre sus propios objetos mediante referencias; por ejemplo, puede que desee almacenar en caché un árbol de objetos. Está bien, pero solo almacena en caché los objetos que acaba de crear en la misma solicitud, y no los objetos que se solicitaron desde otro lugar (aunque sea el espacio de nombre del objeto). _Copia de objetos_ es la clave. Y asegúrese de purgar toda la estructura de objetos vinculados a la vez y evitar referencias entrantes y salientes a su estructura.
+5. Si desea almacenar en caché, cree sus propios objetos copiando datos primitivos en sus propios objetos shallo. Es posible que desee vincular entre sus propios objetos mediante referencias; por ejemplo, puede que desee almacenar en caché un árbol de objetos. Está bien, pero solo almacena en caché los objetos que acaba de crear en la misma solicitud, y no los objetos que se solicitaron desde otro lugar (aunque sea el espacio de nombre del objeto). _Copiar objetos_ es la clave. Y asegúrese de purgar toda la estructura de objetos vinculados a la vez y evitar referencias entrantes y salientes a su estructura.
 
 6. Sí, y mantenga sus objetos inmutables. Propiedades privadas, solo y sin establecedores.
 
@@ -262,7 +262,7 @@ Esta serie trata sobre comprender los conceptos y permitirle crear una arquitect
 
 No estamos promoviendo ninguna herramienta en particular. Pero te daré pistas sobre cómo evaluarlas. AEM Por ejemplo, la caché integrada simple de la tiene un TTL fijo desde la versión 6.0. ¿Quieres usarlo? Probablemente no en la publicación, donde sigue una caché basada en eventos en la cadena (sugerencia: Dispatcher). Pero podría ser una elección decente para un autor. También hay una caché HTTP por Adobe ACS commons que podría valer la pena considerar.
 
-O puede crear el suyo propio, basado en un marco de trabajo de almacenamiento en caché maduro como [Ehcache](https://www.ehcache.org). Se puede utilizar para almacenar en caché objetos Java y marcado procesado (`String` objetos).
+O cree la suya propia, basada en un marco de almacenamiento en caché maduro como [Ehcache](https://www.ehcache.org). Se puede usar para almacenar en caché objetos Java y marcado procesado (`String` objetos).
 
 En algunos casos sencillos, también puede llevarse bien con el uso de mapas hash simultáneos (verá rápidamente límites aquí), ya sea en la herramienta o en sus habilidades. La concurrencia es tan difícil de dominar como la nomenclatura y el almacenamiento en caché.
 
@@ -277,7 +277,7 @@ No entraremos en la teoría del almacenamiento en caché demasiado profundo aqu�
 
 #### Desalojo de caché
 
-Hablamos mucho de invalidación y purga. _Desalojo de caché_ está relacionado con estos términos: Después de una entrada, se desaloja y ya no está disponible. Pero la expulsión no se produce cuando una entrada está obsoleta, sino cuando la caché está llena. Los elementos más recientes o &quot;más importantes&quot; eliminan de la caché los más antiguos o menos importantes. Las entradas que tendrá que sacrificar es una decisión caso por caso. Es posible que desee expulsar a los más antiguos o a los que se han utilizado muy pocas veces o a los que se ha accedido por última vez durante mucho tiempo.
+Hablamos mucho de invalidación y purga. _La expulsión de la caché_ está relacionada con estos términos: después de expulsar una entrada, ya no está disponible. Pero la expulsión no se produce cuando una entrada está obsoleta, sino cuando la caché está llena. Los elementos más recientes o &quot;más importantes&quot; eliminan de la caché los más antiguos o menos importantes. Las entradas que tendrá que sacrificar es una decisión caso por caso. Es posible que desee expulsar a los más antiguos o a los que se han utilizado muy pocas veces o a los que se ha accedido por última vez durante mucho tiempo.
 
 #### Almacenamiento en caché preventivo
 
@@ -287,7 +287,7 @@ El almacenamiento en caché preventivo significa volver a crear la entrada con c
 
 El calentamiento de la caché está estrechamente relacionado con el almacenamiento en caché preventivo. Aunque no usarías ese término para un sistema en vivo. Y es menos tiempo limitado que el primero. No se vuelve a almacenar en caché inmediatamente después de la invalidación, sino que se rellena gradualmente la caché cuando el tiempo lo permite.
 
-Por ejemplo, se extrae un componente Publicación/Dispatcher del equilibrador de carga para actualizarlo. Antes de volver a integrarlo, rastrea automáticamente las páginas a las que se accede con más frecuencia para volver a introducirlas en la caché. Cuando la caché está &quot;caliente&quot;: se llena adecuadamente, se reintegra la pata en el equilibrador de carga.
+Por ejemplo, se extrae un componente Publish/Dispatcher del equilibrador de carga para actualizarlo. Antes de volver a integrarlo, rastrea automáticamente las páginas a las que se accede con más frecuencia para volver a introducirlas en la caché. Cuando la caché está &quot;caliente&quot;: se llena adecuadamente, se reintegra la pata en el equilibrador de carga.
 
 O tal vez reintegres la pierna de una vez, pero estrangulas el tráfico a esa pierna para que tenga la oportunidad de calentar sus cachés por el uso regular.
 
@@ -317,9 +317,9 @@ Qué objetos dependen de qué otros sean genuinos en cada aplicación. Más adel
 
 ### Almacenamiento en caché de fragmentos de HTML
 
-![Reutilización de un fragmento procesado en diferentes páginas](assets/chapter-3/re-using-rendered-fragment.png)
+![Reutilización de un fragmento procesado en páginas diferentes](assets/chapter-3/re-using-rendered-fragment.png)
 
-*Reutilización de un fragmento procesado en diferentes páginas*
+*Reutilización de un fragmento procesado en páginas diferentes*
 
 <br> 
 
@@ -337,7 +337,7 @@ Hay dos maravillosas sutilezas de ese esquema que se pueden pasar por alto fáci
 
 2. La invalidación también es súper fácil. Siempre que algo cambie en su sitio web, quiere invalidar esta entrada de caché. Reconstruir es relativamente barato, ya que necesita ser realizado solo una vez y luego es reutilizado por todos los cientos de páginas.
 
-Esto supone un gran alivio para los servidores de publicación.
+Esto supone un gran alivio para los servidores de Publish.
 
 ### Implementación de cachés de fragmentos
 
@@ -360,7 +360,7 @@ En los viejos tiempos, cuando se utilizaba JSP como motor de creación de planti
 
 La etiqueta personalizada que capturaría su cuerpo y lo escribiría en la caché o impediría la ejecución de su cuerpo y emitiría la carga útil de la entrada de caché en su lugar.
 
-La &quot;clave&quot; es la ruta de componentes que tendría en la página principal. No utilizamos la ruta del componente en la página actual, ya que esto crearía una entrada de caché por página, lo que contradiría nuestra intención de compartir ese componente. Tampoco utilizamos solo la ruta relativa de los componentes (`jcr:conten/mainnavigation`), ya que esto nos impediría usar diferentes componentes de navegación en diferentes sitios.
+La &quot;clave&quot; es la ruta de componentes que tendría en la página principal. No utilizamos la ruta del componente en la página actual, ya que esto crearía una entrada de caché por página, lo que contradiría nuestra intención de compartir ese componente. Tampoco estamos usando solo la ruta relativa de los componentes (`jcr:conten/mainnavigation`), ya que esto nos impediría usar diferentes componentes de navegación en diferentes sitios.
 
 &quot;Caché&quot; es un indicador de dónde almacenar la entrada. Normalmente, hay más de una caché en la que se almacenan los elementos. Cada uno de ellos puede comportarse de forma un poco diferente. Por lo tanto, es bueno diferenciar lo que se almacena, incluso si al final son solo cadenas.
 
@@ -380,17 +380,17 @@ La caché de fragmentos se utiliza si tiene algo constante (la navegación) en e
 
 Pero también puede tener lo contrario, un contexto relativamente constante (una página que rara vez cambia) y algunos fragmentos que cambian constantemente en esa página (por ejemplo, un marcador en vivo).
 
-En este caso, puede dar [Sling Dynamic Includes](https://sling.apache.org/documentation/bundles/dynamic-includes.html) una oportunidad. Básicamente, se trata de un filtro de componentes, que se ajusta al componente dinámico y, en lugar de procesar el componente en la página, crea una referencia. Esta referencia puede ser una llamada de Ajax para que el componente se incluya en el explorador y, por lo tanto, la página circundante se pueda almacenar en caché de forma estática. O, alternativamente, Sling Dynamic Include puede generar una directiva SSI (Server Side Include). Esta directiva se ejecutaría en el servidor Apache. Incluso puede utilizar las directivas ESI - Edge Side Include si utiliza Barnish o una CDN que admita scripts ESI.
+En este caso, podría darle una oportunidad a [Sling Dynamic Includes](https://sling.apache.org/documentation/bundles/dynamic-includes.html). Básicamente, se trata de un filtro de componentes, que se ajusta al componente dinámico y, en lugar de procesar el componente en la página, crea una referencia. Esta referencia puede ser una llamada de Ajax para que el componente se incluya en el explorador y, por lo tanto, la página circundante se pueda almacenar en caché de forma estática. O, alternativamente, Sling Dynamic Include puede generar una directiva SSI (Server Side Include). Esta directiva se ejecutaría en el servidor Apache. Incluso puede utilizar las directivas ESI - Edge Side Include si utiliza Barnish o una CDN que admita scripts ESI.
 
-![Diagrama de secuencia de una solicitud mediante la inclusión dinámica de Sling](assets/chapter-3/sequence-diagram-sling-dynamic-include.png)
+![Diagrama de secuencia de una solicitud que utiliza Sling Dynamic Include](assets/chapter-3/sequence-diagram-sling-dynamic-include.png)
 
-*Diagrama de secuencia de una solicitud mediante la inclusión dinámica de Sling*
+*Diagrama de secuencia de una solicitud que utiliza Sling Dynamic Include*
 
 <br> 
 
 La documentación de SDI indica que debe deshabilitar el almacenamiento en caché para las URL que terminan en &quot;*.nocache.html&quot;, lo que tiene sentido, ya que está tratando con componentes dinámicos.
 
-Puede ver otra opción sobre cómo utilizar SDI: Si _no_ Si se deshabilita la caché de Dispatcher para las inclusiones, Dispatcher actuará como una caché de fragmentos similar a la que describimos en el último capítulo: las páginas y los fragmentos de componentes de forma equitativa e independiente se almacenan en la caché de Dispatcher y se vinculan entre sí mediante el script SSI en el servidor Apache cuando se solicita la página. Al hacerlo, puede implementar componentes compartidos como la navegación principal (dado que siempre utiliza la misma URL del componente).
+Podría ver otra opción sobre cómo usar SDI: Si _no_ deshabilita la caché de Dispatcher para las inclusiones, Dispatcher actuará como una caché de fragmentos similar a la que describimos en el último capítulo: Las páginas y los fragmentos de componentes de forma equitativa e independiente se almacenan en caché en Dispatcher y se vinculan entre sí mediante el script SSI en el servidor Apache cuando se solicita la página. Al hacerlo, puede implementar componentes compartidos como la navegación principal (dado que siempre utiliza la misma URL del componente).
 
 Eso debería funcionar, en teoría. Pero...
 
@@ -401,22 +401,22 @@ Le recomendamos que estudie detenidamente la documentación de SDI. Hay algunas 
 #### Referencias
 
 * [docs.oracle.com - Cómo escribir etiquetas JSP personalizadas](https://docs.oracle.com/cd/E11035_01/wls100/taglib/quickstart.html)
-* [Dominik Süß: Creación y uso de filtros de componentes](https://www.slideshare.net/connectwebex/prsentation-dominik-suess)
+* [Dominik Süß: creación y uso de filtros de componentes](https://www.slideshare.net/connectwebex/prsentation-dominik-suess)
 * [sling.apache.org - Sling Dynamic Includes](https://sling.apache.org/documentation/bundles/dynamic-includes.html)
-* [AEM helpx.adobe.com: Configuración de Sling Dynamic Includes en la](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/sling-dynamic-include-technical-video-setup.html)
+* AEM [helpx.adobe.com - Configurando Sling Dynamic Includes en el código de tiempo de la aplicación {10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/sling-dynamic-include-technical-video-setup.html)
 
 
 #### Almacenamiento en caché de modelo
 
-![Almacenamiento en caché basado en modelos: un objeto comercial con dos procesamientos diferentes](assets/chapter-3/model-based-caching.png)
+![Almacenamiento en caché basado en modelo: un objeto de negocio con dos procesamientos diferentes](assets/chapter-3/model-based-caching.png)
 
-*Almacenamiento en caché basado en modelos: un objeto comercial con dos procesamientos diferentes*
+*Almacenamiento en caché basado en modelo: un objeto de negocio con dos procesamientos diferentes*
 
 <br> 
 
 Volvamos a examinar el caso con la navegación. Suponíamos que cada página requeriría el mismo marcado de la navegación.
 
-Pero tal vez, ese no es el caso. Es posible que desee representar un marcado diferente para el elemento en la navegación que representa el _página actual_.
+Pero tal vez, ese no es el caso. Es posible que desee representar un marcado diferente para el elemento en la navegación que representa la _página actual_.
 
 ```
 Travel Destinations
@@ -447,7 +447,7 @@ News
 <is
 ```
 
-Estas son dos representaciones completamente diferentes. Sin embargo, el _objeto comercial_ - el árbol de navegación completo - es el mismo.  El _objeto comercial_  habría un gráfico de objetos que representaría los nodos del árbol. Este gráfico se puede almacenar fácilmente en una caché en memoria. Recuerde, sin embargo, que este gráfico no debe contener ningún objeto ni hacer referencia a ningún objeto que no haya creado usted mismo, especialmente ahora los nodos JCR.
+Estas son dos representaciones completamente diferentes. Sin embargo, el _objeto comercial_ (el árbol de navegación completo) es el mismo.  El _objeto comercial_ aquí sería un gráfico de objetos que representa los nodos del árbol. Este gráfico se puede almacenar fácilmente en una caché en memoria. Recuerde, sin embargo, que este gráfico no debe contener ningún objeto ni hacer referencia a ningún objeto que no haya creado usted mismo, especialmente ahora los nodos JCR.
 
 #### Almacenamiento en caché en el explorador
 
@@ -459,7 +459,7 @@ En esencia, el almacenamiento en caché del explorador se puede aprovechar de do
 
 1. El explorador tiene un recurso en caché del que conoce la fecha de caducidad exacta. En ese caso, no vuelve a solicitar el recurso.
 
-2. El explorador tiene un recurso, pero no está seguro de si sigue siendo válido. En ese caso, se lo pediría al servidor web (Dispatcher en nuestro caso). Indique el recurso si se ha modificado desde la última vez que lo entregó. Si no ha cambiado, el servidor responde con &quot;304 - no cambiado&quot; y solo se transmiten los metadatos.
+2. El explorador tiene un recurso, pero no está seguro de si sigue siendo válido. En ese caso, le preguntaría al servidor web (el Dispatcher en nuestro caso). Indique el recurso si se ha modificado desde la última vez que lo entregó. Si no ha cambiado, el servidor responde con &quot;304 - no cambiado&quot; y solo se transmiten los metadatos.
 
 #### Depuración
 
@@ -477,7 +477,7 @@ Solo hay una cosa que le pedimos que no haga, cuando depure su caché:
 
 No vuelva a cargar las páginas en el explorador.
 
-Una &quot;recarga del explorador&quot;, un _simple-reload_ así como un _recarga forzada_ (&quot;_mayús-recarga_&quot;) no es lo mismo que una solicitud de página normal. Una simple solicitud de recarga establece un encabezado
+Una &quot;recarga del explorador&quot;, una _recarga simple_ y una _recarga forzada_ (&quot;_shift-reload_&quot;) no son lo mismo que una solicitud de página normal. Una simple solicitud de recarga establece un encabezado
 
 ```
 Cache-Control: max-age=0
@@ -491,7 +491,7 @@ Cache-Control: no-cache
 
 Ambos encabezados tienen efectos similares pero ligeramente diferentes, pero lo más importante es que difieren completamente de una solicitud normal cuando se abre una dirección URL desde la ranura de la dirección URL o mediante vínculos en el sitio. La exploración normal no establece encabezados Cache-Control, pero probablemente sea un encabezado if-modified-since.
 
-Por lo tanto, si desea depurar el comportamiento de navegación normal, debe hacer exactamente lo siguiente: _Explorar normalmente_. El uso del botón de recarga del navegador es la mejor manera de no ver errores de configuración de caché en la configuración.
+Por lo tanto, si desea depurar el comportamiento de exploración normal, debe hacer exactamente lo siguiente: _Examinar normalmente_. El uso del botón de recarga del navegador es la mejor manera de no ver errores de configuración de caché en la configuración.
 
 Use su Charles Proxy para ver de qué estamos hablando. Sí, y mientras lo tenga abierto, puede reproducir las solicitudes allí mismo. No es necesario volver a cargar desde el explorador.
 
@@ -499,28 +499,28 @@ Use su Charles Proxy para ver de qué estamos hablando. Sí, y mientras lo tenga
 
 Al utilizar un proxy, se tiene una idea del comportamiento temporal de las páginas. Por supuesto, eso no es, ni mucho menos, una prueba de rendimiento.  Una prueba de rendimiento requeriría que varios clientes solicitaran las páginas en paralelo.
 
-Un error común, que hemos visto con demasiada frecuencia, es que la prueba de rendimiento solo incluye un número súper pequeño de páginas y estas páginas se entregan únicamente desde la caché de Dispatcher.
+Un error común, que hemos visto con demasiada frecuencia, es que la prueba de rendimiento solo incluye un número súper pequeño de páginas y estas páginas solo se entregan desde la caché de Dispatcher.
 
 Si está promocionando la aplicación al sistema activo, la carga es completamente diferente de la que ha probado.
 
-En el sistema activo, el patrón de acceso no es un número tan pequeño de páginas distribuidas equitativamente que tiene en las pruebas (página de inicio y pocas páginas de contenido). El número de páginas es mucho mayor y las solicitudes se distribuyen de forma muy desigual. Y, por supuesto, las páginas en directo no se pueden servir al 100 % desde la caché: hay solicitudes de invalidación procedentes del sistema de publicación que invalidan automáticamente una gran parte de sus valiosos recursos.
+En el sistema activo, el patrón de acceso no es un número tan pequeño de páginas distribuidas equitativamente que tiene en las pruebas (página de inicio y pocas páginas de contenido). El número de páginas es mucho mayor y las solicitudes se distribuyen de forma muy desigual. Y, por supuesto, las páginas en directo no se pueden servir al 100 % desde la caché: hay solicitudes de invalidación procedentes del sistema de Publish que invalidan automáticamente una gran parte de sus valiosos recursos.
 
-Ah, sí. Y cuando esté reconstruyendo la caché de Dispatcher, se dará cuenta de que el sistema de publicación también se comporta de forma muy diferente, dependiendo de si solicita solo un puñado de páginas o un número mayor. Incluso si todas las páginas son igualmente complejas: su número juega un papel. ¿Recuerdas lo que dijimos sobre el almacenamiento en caché encadenado? Si siempre solicita el mismo número pequeño de páginas, lo más probable es que los bloques correspondientes con los datos sin procesar estén en la caché de los discos duros o que el sistema operativo almacene en caché los bloques. Además, existe una buena probabilidad de que el repositorio haya almacenado en caché el segmento correspondiente en su memoria principal. Por lo tanto, volver a procesar es significativamente más rápido que cuando otras páginas se expulsaban entre sí de vez en cuando de varias cachés.
+Ah, sí - y cuando usted está reconstruyendo su Dispatcher cache, usted descubrirá, que el sistema Publish también se comporta de manera muy diferente, dependiendo de si usted solicita solo un puñado de páginas - o un número mayor. Incluso si todas las páginas son igualmente complejas: su número juega un papel. ¿Recuerdas lo que dijimos sobre el almacenamiento en caché encadenado? Si siempre solicita el mismo número pequeño de páginas, lo más probable es que los bloques correspondientes con los datos sin procesar estén en la caché de los discos duros o que el sistema operativo almacene en caché los bloques. Además, existe una buena probabilidad de que el repositorio haya almacenado en caché el segmento correspondiente en su memoria principal. Por lo tanto, volver a procesar es significativamente más rápido que cuando otras páginas se expulsaban entre sí de vez en cuando de varias cachés.
 
 El almacenamiento en caché es difícil, al igual que las pruebas de un sistema que depende del almacenamiento en caché. Entonces, ¿qué se puede hacer para tener un escenario más preciso en la vida real?
 
 Creemos que debería realizar más de una prueba y proporcionar más de un índice de rendimiento como medida de la calidad de la solución.
 
-Si ya tiene un sitio web, mida el número de solicitudes y cómo se distribuyen. Intente modelar una prueba que utilice una distribución similar de solicitudes. Añadir algo de aleatoriedad no podría doler. No es necesario simular un explorador que cargue recursos estáticos como JS y CSS, ya que en realidad no importan. Finalmente, se almacenan en caché en el explorador o en Dispatcher y no se añaden a la carga de forma significativa. Pero las imágenes referenciadas sí importan. Encuentre también su distribución en archivos de registro antiguos y modele un patrón de solicitud similar.
+Si ya tiene un sitio web, mida el número de solicitudes y cómo se distribuyen. Intente modelar una prueba que utilice una distribución similar de solicitudes. Añadir algo de aleatoriedad no podría doler. No es necesario simular un explorador que cargue recursos estáticos como JS y CSS, ya que en realidad no importan. Finalmente, se almacenan en caché en el explorador o en la Dispatcher y no se suman a la carga de forma significativa. Pero las imágenes referenciadas sí importan. Encuentre también su distribución en archivos de registro antiguos y modele un patrón de solicitud similar.
 
-Ahora realice una prueba con el Dispatcher sin almacenar en caché. Ese es tu peor escenario. Averigüe a qué carga máxima se está volviendo inestable su sistema en estas peores condiciones. También puede empeorarlo si elimina algunas de las secciones de Dispatcher/Publish si lo desea.
+Ahora realice una prueba con el Dispatcher sin almacenar en caché. Ese es tu peor escenario. Averigüe a qué carga máxima se está volviendo inestable su sistema en estas peores condiciones. También puede empeorarlo sacando algunas piernas de Dispatcher/Publish si lo desea.
 
 A continuación, realice la misma prueba con todos los ajustes de caché necesarios en &quot;activado&quot;. Aumente sus solicitudes paralelas lentamente para calentar la caché y ver cuánto puede tomar su sistema en estas mejores condiciones.
 
-Un escenario de caso promedio sería ejecutar la prueba con Dispatcher habilitado, pero también con algunas invalidaciones ocurriendo. Puede simular que tocando los archivos de estado mediante un trabajo de crono o enviando las solicitudes de invalidación a intervalos irregulares a Dispatcher. No olvide purgar también algunos de los recursos no invalidados automáticamente de vez en cuando.
+Un escenario de caso promedio sería ejecutar la prueba con la Dispatcher habilitada, pero también con algunas invalidaciones sucediendo. Puede simular que tocando los archivos de estado mediante un trabajo de crono o enviando las solicitudes de invalidación a intervalos irregulares a Dispatcher. No olvide purgar también algunos de los recursos no invalidados automáticamente de vez en cuando.
 
 Puede variar el último escenario aumentando las solicitudes de invalidación y la carga.
 
 Es un poco más complejo que una prueba de carga lineal, pero ofrece mucha más confianza en su solución.
 
-Puede que te alejes del esfuerzo. Pero por favor realice una prueba en el peor de los casos en el sistema Publish con un mayor número de páginas (distribuidas equitativamente) para ver los límites del sistema. Asegúrese de interpretar correctamente el número del mejor escenario y proporcione a sus sistemas suficiente margen de ampliación.
+Puede que te alejes del esfuerzo. Pero al menos realice una prueba en el peor de los casos en el sistema Publish con un mayor número de páginas (distribuidas equitativamente) para ver los límites del sistema. Asegúrese de interpretar correctamente el número del mejor escenario y proporcione a sus sistemas suficiente margen de ampliación.

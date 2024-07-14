@@ -1,5 +1,5 @@
 ---
-title: Crear y configurar una fuente de datos OD
+title: Creación y configuración de OData Source
 description: Cree y configure la configuración de Cloud Service para conectarse con Microsoft Dynamics.
 type: Documentation
 role: Developer

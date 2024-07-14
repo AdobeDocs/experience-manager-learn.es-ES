@@ -37,6 +37,6 @@ La aplicación de escritorio de Adobe Dynamic Media Classic es compatible con lo
 
 ## Materiales de apoyo
 
-* [Documentación de aplicación de escritorio de Adobe Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html)
-* [Preguntas más frecuentes sobre Adobe Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/new-ui-2020.html)
-* [Descargar aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/new-ui-2020.html)
+* [Documentación de la aplicación de escritorio de Adobe Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html)
+* [Preguntas más frecuentes sobre Dynamic Media de Adobe](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/new-ui-2020.html)
+* [Descargar la aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/new-ui-2020.html)

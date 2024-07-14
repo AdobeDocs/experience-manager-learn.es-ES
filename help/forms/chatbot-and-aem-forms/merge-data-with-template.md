@@ -22,5 +22,5 @@ El siguiente paso es combinar los datos XML con la plantilla para generar el PDF
 
 ## Usar OutputService para generar el PDF
 
-El [generatePDF](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePDFOutput-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PDFOutputOptions-) del OutputService se utilizó para generar el PDF.
+Se usó el método [generatePDF](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePDFOutput-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PDFOutputOptions-) de OutputService para generar el PDF.
 El PDF generado se envió para firmar utilizando la API de REST de Adobe Sign.

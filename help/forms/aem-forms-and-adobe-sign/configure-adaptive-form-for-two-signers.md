@@ -24,7 +24,7 @@ En el vídeo se explican los distintos pasos necesarios para configurar un formu
 
 >[!VIDEO](https://video.tv.adobe.com/v/39294?quality=12&learn=on)
 
-Los recursos relacionados con este vídeo se pueden descargar desde los siguientes vínculos
+Assets relacionado con este vídeo se puede descargar desde los siguientes vínculos
 
 * [Plantilla de formulario adaptable](assets/tenancy-agreement-template.zip)
 * [Formulario de contrato de inquilino](assets/rental-agreement-form.zip)

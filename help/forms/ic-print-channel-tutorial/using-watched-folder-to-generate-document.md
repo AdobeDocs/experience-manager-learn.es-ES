@@ -26,7 +26,7 @@ Después de crear y probar el documento del canal de impresión, necesitamos un 
 
 AEM Cuando configura una carpeta inspeccionada en el, asocia un script ECMA o un código java que se ejecuta cuando se suelta un archivo en la carpeta inspeccionada. En este artículo, nos centraremos en el script ECMA que generará documentos del canal de impresión y los guardará en el sistema de archivos.
 
-La configuración de la carpeta inspeccionada y el script ECMA forman parte de los recursos importados en [inicio de este tutorial](introduction.md)
+La configuración de la carpeta inspeccionada y el script ECMA forman parte de los recursos importados al [principio de este tutorial](introduction.md)
 
 El archivo de entrada que se coloca en la carpeta vigilada tiene la siguiente estructura. El script ECMA lee los números de cuenta y genera un documento de canal de impresión para cada una de estas cuentas.
 

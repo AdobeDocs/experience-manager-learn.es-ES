@@ -28,10 +28,10 @@ En la propiedad Tags se han agregado dos nuevos elementos de datos (ApplicantsSt
 
 ## ApplicantStateOfResidence
 
-El **ApplicantStateOfResidence** El elemento de datos se configuró seleccionando **Núcleo** en la lista desplegable extensión y **Código personalizado** para el Tipo de elemento de datos como se muestra en la captura de pantalla siguiente
+El elemento de datos **ApplicantStateOfResidence** se configuró seleccionando **Core** en la lista desplegable de extensión y **Custom Code** para el tipo de elemento de datos como se muestra en la captura de pantalla siguiente
 ![solicitante-estado-residencia](assets/applicantstateofresidence.png)
 
-El siguiente código personalizado se utilizó para capturar el valor de **_state_** campo de formulario adaptable.
+El siguiente código personalizado se usó para capturar el valor del campo de formulario adaptable **_state_**.
 
 ```javascript
 // use the GuideBridge API to access adaptive form elements
@@ -43,11 +43,11 @@ return ApplicantsStateOfResidence;
 
 ## validationError
 
-El **ErrorDeValidación** El elemento de datos se configuró seleccionando **Núcleo** en la lista desplegable extensión y **Código personalizado** para el Tipo de elemento de datos como se muestra en la captura de pantalla siguiente
+El elemento de datos **ValidationError** se configuró seleccionando **Core** en la lista desplegable de extensión y **Custom Code** para el tipo de elemento de datos como se muestra en la captura de pantalla siguiente
 
 ![error de validación](assets/validation-error.png)
 
-El siguiente código personalizado se escribió para establecer la variable `validationError` valor del elemento de datos.
+El siguiente código personalizado se escribió para establecer el valor del elemento de datos `validationError`.
 
 ```javascript
 var validationError = "";

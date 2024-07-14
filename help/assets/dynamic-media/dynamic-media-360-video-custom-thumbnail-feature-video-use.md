@@ -24,7 +24,7 @@ Las mejoras de Dynamic Media AEM Viewer en la versión 6.5 de incluyen la adici�
 
 >[!NOTE]
 >
->AEM En el vídeo se da por hecho que la instancia de se está ejecutando en el modo Dynamic Media S7.  [AEM Puede encontrar instrucciones sobre la configuración de la con Dynamic Media aquí](https://helpx.adobe.com/es/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html). De forma predeterminada, al cargar un vídeo, Dynamic Media procesa el material de archivo como un vídeo de 360, si tiene una relación de aspecto de 2:1. es decir, la relación entre anchura y altura es de 2:1.
+>AEM En el vídeo se da por hecho que la instancia de se está ejecutando en el modo Dynamic Media S7.  AEM [Aquí se pueden encontrar instrucciones para configurar la con Dynamic Media](https://helpx.adobe.com/es/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html). De forma predeterminada, al cargar un vídeo, Dynamic Media procesa el material de archivo como un vídeo de 360, si tiene una relación de aspecto de 2:1. es decir, la relación entre anchura y altura es de 2:1.
 
 >[!NOTE]
 >

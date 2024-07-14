@@ -1,6 +1,6 @@
 ---
-title: Adición de componentes a la sección Recursos
-description: Configure el diseño de acordeón para el panel Recursos. El diseño de acordeón proporciona una mejor experiencia al usuario final para agregar secciones repetibles.
+title: Adición de componentes a la sección Assets
+description: Configure el diseño del acordeón para el panel de Assets. El diseño del acordeón proporciona una mejor experiencia al usuario final para agregar secciones repetibles.
 feature: Adaptive Forms
 version: 6.4,6.5
 jira: KT-4212
@@ -17,15 +17,15 @@ ht-degree: 3%
 
 ---
 
-# Adición de componentes al panel Recursos {#adding-components-to-assets-section}
+# Adición de componentes al panel Assets {#adding-components-to-assets-section}
 
-Configure el diseño de acordeón para el panel Recursos. El diseño de acordeón proporciona una mejor experiencia al usuario final para agregar secciones repetibles.
+Configure el diseño del acordeón para el panel de Assets. El diseño del acordeón proporciona una mejor experiencia al usuario final para agregar secciones repetibles.
 
-**Configurar el panel Recursos**
+**Configurar el panel de Assets**
 
 >[!VIDEO](https://video.tv.adobe.com/v/22200?quality=12&learn=on)
 
-**Definir título de resumen**
+**Establecer título de resumen**
 >[!VIDEO](https://video.tv.adobe.com/v/28387?quality=12&learn=on)
 
 ## Siguientes pasos

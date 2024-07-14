@@ -8,19 +8,19 @@ version: Cloud Service
 feature: Adaptive Forms
 topic: Development
 jira: KT-15752
-source-git-commit: a8fc8fa19ae19e27b07fa81fc931eca51cb982a1
+exl-id: 280c9a30-e017-4bc0-9027-096aac82c22c
+source-git-commit: a12b1778413079646814cb25567abfc26a429340
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 1%
 
 ---
 
-
 # Crear componente de dirección
 
 Inicie sesión en CRXDE de la instancia local de AEM Forms lista para la nube.
 
-Haga una copia del ``/apps/bankingapplication/components/adaptiveForm/button`` y renómbrelo a bloqueDeDirecciones. Seleccione el nodo addressesblock y establezca sus propiedades como se muestra a continuación.
+Realice una copia del nodo ``/apps/bankingapplication/components/adaptiveForm/button`` y cambie su nombre a bloque de direcciones. Seleccione el nodo addressesblock y establezca sus propiedades como se muestra a continuación.
 
 >[!NOTE]
 >
@@ -31,12 +31,12 @@ Haga una copia del ``/apps/bankingapplication/components/adaptiveForm/button`` y
 
 ## propiedades del nodo cq-template
 
-Seleccione el ``cq-template`` nodo bajo el ``addressblock`` y establezca sus propiedades como se muestra a continuación. Observe que fieldType está configurado en el panel
+Seleccione el nodo ``cq-template`` bajo el nodo ``addressblock`` y establezca sus propiedades como se muestra a continuación. Observe que fieldType está configurado en el panel
 ![cq-template](assets/cq-template.png)
 
 ## Agregar nodos bajo cq-template
 
-Agregue los siguientes nodos de tipo ``nt:unstructured`` bajo ``cq-template``
+Agregue los siguientes nodos de tipo ``nt:unstructured`` en ``cq-template``
 
 * street address
 * ciudad
@@ -49,25 +49,25 @@ Estos nodos representan los campos del componente de bloque de direcciones. Los 
 
 >[!NOTE]
 >
-> El **_aplicación bancaria_** en la ruta hace referencia al appId del proyecto de maven. Esto puede ser diferente en su entorno
+> La **_aplicación bancaria_** de la ruta hace referencia al appId del proyecto Maven. Esto puede ser diferente en su entorno
 
-Seleccione el ``streetaddress`` y establezca sus propiedades como se muestra a continuación.
-![street-address](assets/streetaddress.png)
+Seleccione el nodo ``streetaddress`` y establezca sus propiedades como se muestra a continuación.
+![dirección-calle](assets/streetaddress.png)
 
 ## Establecer las propiedades del nodo de ciudad
 
-Seleccione el ``city`` y establezca sus propiedades como se muestra a continuación.
+Seleccione el nodo ``city`` y establezca sus propiedades como se muestra a continuación.
 ![ciudad](assets/city.png)
 
 ## Establecer las propiedades del nodo zip
 
-Seleccione el ``zip`` y establezca sus propiedades como se muestra a continuación.
+Seleccione el nodo ``zip`` y establezca sus propiedades como se muestra a continuación.
 ![zip](assets/zip.png)
 
 ## Establecer las propiedades del nodo de estado
 
-Seleccione el ``state`` y establezca sus propiedades como se muestra a continuación. Observe el fieldType del estado: está configurado para ser un menú desplegable
-![state](assets/state.png)
+Seleccione el nodo ``state`` y establezca sus propiedades como se muestra a continuación. Observe el fieldType del estado: está configurado para ser un menú desplegable
+![estado](assets/state.png)
 
 El componente final de bloque de direcciones tendrá este aspecto
 
@@ -76,7 +76,3 @@ El componente final de bloque de direcciones tendrá este aspecto
 ## Siguientes pasos
 
 [Implemente el proyecto](./deploy-your-project.md)
-
-
-
-

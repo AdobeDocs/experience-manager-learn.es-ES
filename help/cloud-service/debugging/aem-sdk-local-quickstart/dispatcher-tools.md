@@ -1,6 +1,6 @@
 ---
 title: Depuración de herramientas de Dispatcher
-description: AEM Las herramientas de Dispatcher proporcionan un entorno de servidor web Apache en contenedores que se puede utilizar para simular el uso de los recursos como un Cloud Service AEM de manera local, como Dispatcher de un servicio de publicación de. AEM La depuración de los registros y el contenido de la caché de las herramientas de Dispatcher puede ser vital para garantizar que la aplicación de extremo a extremo y las configuraciones de caché y seguridad de soporte sean correctas.
+description: Las herramientas de Dispatcher proporcionan un entorno de servidor web Apache en contenedores que se puede utilizar para simular la como Cloud Service AEM de un servicio de Publish de forma local, que se puede utilizar para crear una nueva versión de Dispatcher de un servicio de AEM de forma local. La depuración de los registros y el contenido de la caché de las herramientas de Dispatcher AEM puede ser vital para garantizar que la aplicación de extremo a extremo y las configuraciones de caché y seguridad de soporte sean correctas.
 feature: Dispatcher
 jira: KT-5918
 topic: Development
@@ -17,19 +17,19 @@ ht-degree: 0%
 
 # Depuración de herramientas de Dispatcher
 
-AEM Las herramientas de Dispatcher proporcionan un entorno de servidor web Apache en contenedores que se puede utilizar para simular el uso de los recursos como un Cloud Service AEM de manera local, como Dispatcher de un servicio de publicación de.
+Las herramientas de Dispatcher proporcionan un entorno de servidor web Apache en contenedores que se puede utilizar para simular la como Cloud Service AEM de un servicio de Publish de forma local, que se puede utilizar para crear una nueva versión de Dispatcher de un servicio de AEM de forma local.
 
-AEM La depuración de los registros y el contenido de la caché de las herramientas de Dispatcher puede ser vital para garantizar que la aplicación de extremo a extremo y las configuraciones de caché y seguridad de soporte sean correctas.
+La depuración de los registros y el contenido de la caché de las herramientas de Dispatcher AEM puede ser vital para garantizar que la aplicación de extremo a extremo y las configuraciones de caché y seguridad de soporte sean correctas.
 
 >[!NOTE]
 >
->Dado que las herramientas de Dispatcher se basan en contenedores, cada vez que se reinicia, se destruyen los registros anteriores y el contenido de la caché.
+>Dado que Dispatcher Tools se basa en contenedores, cada vez que se reinicia, se destruyen los registros anteriores y el contenido de la caché.
 
 ## Registros de herramientas de Dispatcher
 
-Los registros de las herramientas de Dispatcher están disponibles a través de `stdout` o el `bin/docker_run` o con más detalles, disponible en el contenedor Docker en `/etc/https/logs`.
+Los registros de herramientas de Dispatcher están disponibles a través del comando `stdout` o `bin/docker_run`, o con más detalles, disponibles en el contenedor Docker en `/etc/https/logs`.
 
-Consulte [Registros de Dispatcher](./logs.md#dispatcher-logs) para obtener instrucciones sobre cómo acceder directamente a los registros del contenedor Docker de las herramientas de Dispatcher.
+Consulte [registros de Dispatcher](./logs.md#dispatcher-logs) para obtener instrucciones sobre cómo acceder directamente a los registros del contenedor Docker de las herramientas de Dispatcher.
 
 ## Caché de herramientas de Dispatcher
 
@@ -55,7 +55,7 @@ $ docker exec -it <CONTAINER ID> /bin/sh
 
 ### Copiar los registros de Docker al sistema de archivos local
 
-Los registros de Dispatcher se pueden copiar desde el contenedor de Docker en `/mnt/var/www/html` al sistema de archivos local para su inspección con sus herramientas favoritas. Tenga en cuenta que se trata de una copia puntual y no proporciona actualizaciones en tiempo real a la caché.
+Los registros de Dispatcher se pueden copiar del contenedor Docker en `/mnt/var/www/html` al sistema de archivos local para inspeccionarlos con sus herramientas favoritas. Tenga en cuenta que se trata de una copia puntual y no proporciona actualizaciones en tiempo real a la caché.
 
 ```shell
 $ docker ps

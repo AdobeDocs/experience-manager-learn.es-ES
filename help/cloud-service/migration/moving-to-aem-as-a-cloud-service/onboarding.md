@@ -1,6 +1,6 @@
 ---
 title: Incorporación a AEM as a Cloud Service
-description: AEM Obtenga información acerca de la incorporación a los entornos as a Cloud Service, desde la fase de contratación hasta la configuración de entornos mediante Cloud Manager.
+description: Obtenga información acerca de la incorporación a AEM as a Cloud Service, desde la fase de contratación hasta la configuración de entornos mediante Cloud Manager.
 version: Cloud Service
 feature: Onboarding
 topic: Migration, Upgrade
@@ -19,21 +19,21 @@ ht-degree: 7%
 
 # Incorporación a AEM as a Cloud Service
 
-AEM Obtenga información acerca de la incorporación a los entornos as a Cloud Service, desde la fase de contratación hasta la configuración de los entornos mediante Cloud Manager.
+Obtenga información acerca de la incorporación a AEM as a Cloud Service, desde la fase de contratación hasta la configuración de los entornos mediante Cloud Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336959?quality=12&learn=on)
 
 ## Cloud Manager y Admin Console
 
-![Incorporación de un diagrama de alto nivel](assets/onboarding-diagram.png)
+![Diagrama de alto nivel de incorporación](assets/onboarding-diagram.png)
 
-AEM Una parte fundamental de la incorporación es crear programas as a Cloud Service de y aprovisionar varios entornos mediante Adobe Cloud Manager. El [Admin Console](https://adminconsole.adobe.com/) AEM se utiliza para asignar funciones y proporcionar acceso a los usuarios de su organización para que puedan acceder a los entornos de la.
+Una parte fundamental de la incorporación es crear programas de AEM as a Cloud Service y aprovisionar varios entornos mediante Adobe Cloud Manager. El [Admin Console AEM](https://adminconsole.adobe.com/) se usa para asignar roles y proporcionar acceso a los usuarios de su organización a entornos de la.
 
 ## Actividades clave
 
-+ Un administrador del sistema utiliza el [Admin Console](https://adminconsole.adobe.com/) para asignar uno o varios usuarios a [Cloud Manager: Propietario empresarial](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) perfil del producto.
-+ Los usuarios asignados al Perfil de producto del propietario del negocio utilizan las funciones de autoservicio de [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=es) hasta [crear programa(s)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html) y [añadir entornos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html)
-+ Utilice el [Admin Console](https://adminconsole.adobe.com/) para asignar desarrolladores y usuarios a diferentes [Funciones de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) AEM y conceder permiso a varios entornos de.
++ Un administrador del sistema usa el [Admin Console](https://adminconsole.adobe.com/) para asignar uno o más usuarios al perfil de producto [Cloud Manager - Propietario del negocio](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
++ Los usuarios asignados al Perfil de producto del propietario del negocio utilizan las características de autoservicio de [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=es) para [crear programas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html) y [agregar entornos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html)
++ Use el [Admin Console](https://adminconsole.adobe.com/) para asignar desarrolladores y usuarios a diferentes [roles de Cloud Manager AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) y conceder permiso a varios entornos de la red de trabajo de la comunidad de usuarios de la red de área de nombres de la red.
 
 ## Ejercicio práctico
 
@@ -41,7 +41,7 @@ Aplique sus conocimientos probando lo que ha aprendido con este ejercicio práct
 
 Antes de probar el ejercicio práctico, asegúrese de haber visto y entendido el vídeo anterior y los siguientes materiales:
 
-+ [AEM Pensar de manera diferente sobre el as a Cloud Service](./introduction.md)
++ [Pensar de forma diferente sobre AEM as a Cloud Service](./introduction.md)
 + [Cloud Manager](./cloud-manager.md)
 
 Además, asegúrese de haber completado el ejercicio práctico anterior:
@@ -59,7 +59,7 @@ Además, asegúrese de haber completado el ejercicio práctico anterior:
         <td style="width:100%;margin-bottom:1rem;">
             <div style="font-size:1.25rem;font-weight:400;">Prácticas con incorporación</div>
             <p style="margin:1rem 0">
-                AEM Explore el proceso de incorporación as a Cloud Service AEM AEM de la y cómo implementar una aplicación de la misma en el SDK de la.
+                Explore el proceso de incorporación de AEM as a Cloud Service AEM AEM y cómo implementar una aplicación de en el SDK de la.
             </p>
             <a  rel="noreferrer"
                 target="_blank"

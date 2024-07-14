@@ -22,7 +22,7 @@ Un caso de uso común es mostrar la imagen cargada como una imagen en línea en 
 
 ## Agregar imagen de marcador
 
-El primer paso es anteponer un div de marcador de posición al componente de archivo adjunto. En el código siguiente, el componente de archivo adjunto se identifica con su nombre de clase CSS photo-upload. La función de JavaScript forma parte de la biblioteca de cliente asociada a los formularios adaptables. Se llama a esta función en el evento initialize del componente file attachment.
+El primer paso es anteponer un div de marcador de posición al componente de archivo adjunto. En el código siguiente, el componente de archivo adjunto se identifica con su nombre de clase CSS photo-upload. La función JavaScript forma parte de la biblioteca de cliente asociada a los formularios adaptables. Se llama a esta función en el evento initialize del componente file attachment.
 
 ```javascript
 /**
@@ -65,7 +65,7 @@ function consumeImage (file) {
 
 ### Implementación en el servidor
 
-* Descargue e instale [biblioteca de cliente](assets/inline-image-client-library.zip) AEM AEM en la instancia de la mediante el administrador de paquetes de la.
-* Descargue e instale [formulario de ejemplo](assets/inline-image-af.zip) AEM AEM en la instancia de la con el administrador de paquetes de la.
-* Dirija el explorador a [Agregar imagen en línea](http://localhost:4502/content/dam/formsanddocuments/addinlineimage/jcr:content?wcmmode=disabled)
+* AEM AEM Descargue e instale la [biblioteca de cliente](assets/inline-image-client-library.zip) en su instancia de la mediante el administrador de paquetes de la aplicación de la aplicación de seguridad de la aplicación de seguridad de.
+* AEM AEM Descargue e instale el [formulario de ejemplo](assets/inline-image-af.zip) en su instancia de mediante el administrador de paquetes de la aplicación de ejemplo de la aplicación de.
+* Dirija su navegador a [Agregar imagen en línea](http://localhost:4502/content/dam/formsanddocuments/addinlineimage/jcr:content?wcmmode=disabled)
 * Haga clic en el botón &quot;Adjuntar su foto&quot; para añadir la imagen

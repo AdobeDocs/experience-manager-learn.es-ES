@@ -31,13 +31,13 @@ La siguiente configuración de implementación debe estar implementada para las 
 |---------------------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [Filtros de Dispatcher](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | Uso compartido de recursos de origen cruzado (CORS) | ✘ | ✘ | ✘ |
-| [AEM anfitriones de](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
+| AEM [hosts de la](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
 
 ## Requisitos de autorización
 
-AEM Las solicitudes autorizadas a las API de GraphQL se suelen producir en el contexto de las aplicaciones servidor a servidor, ya que otros tipos de aplicaciones, como [aplicaciones de una sola página](./spa.md), [mobile](./mobile.md), o [Componentes web](./web-component.md), normalmente utiliza la autorización, ya que es difícil asegurar las credenciales
+AEM Las solicitudes autorizadas a las API de GraphQL suelen producirse en el contexto de las aplicaciones servidor a servidor, ya que otros tipos de aplicaciones, como [aplicaciones de una sola página](./spa.md), [mobile](./mobile.md) o [Web Components](./web-component.md), suelen utilizar la autorización, ya que es difícil proteger las credenciales
 
-AEM Al autorizar solicitudes para que se as a Cloud Service, utilice [autenticación de token basada en credenciales de servicio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html). AEM Para obtener más información sobre la autenticación de solicitudes en el as a Cloud Service, consulte la [tutorial de autenticación basada en token](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html). El tutorial explora la autenticación basada en tokens mediante [API HTTP de AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html) AEM pero los mismos conceptos y enfoques se aplican a las aplicaciones que interactúan con las API de GraphQL sin encabezado de la interfaz de usuario de.
+Al autorizar solicitudes a AEM as a Cloud Service, use [autenticación de token basada en credenciales de servicio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html). Para obtener más información acerca de la autenticación de solicitudes en AEM as a Cloud Service, consulte el [tutorial de autenticación basado en tokens](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html). El tutorial explora la autenticación basada en tokens usando [las API HTTP de AEM Assets AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html), pero los mismos conceptos y enfoques se aplican a las aplicaciones que interactúan con las API de GraphQL sin encabezado de la interfaz de usuario de.
 
 ## Ejemplo de aplicación de servidor a servidor
 

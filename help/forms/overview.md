@@ -37,11 +37,11 @@ Adobe Experience Manager AEM () proporciona una solución fácil de usar para cr
     </a>
     <div>
       <a href="./creating-your-first-adaptive-form/introduction-and-setup.md">
-    <strong>Creación de su primer formulario adaptable</strong>
+    <strong>Cree su primer formulario adaptable</strong>
     </a>
     </div>
     <p>
-    <em>Los formularios adaptables son formularios de nueva generación dinámicos y adaptables. Puede utilizar formularios adaptables para ofrecer experiencias personalizadas</em>
+    <em>Los formularios adaptables son formularios de nueva generación dinámicos y adaptables. Puede usar formularios adaptables para ofrecer experiencias personalizadas</em>
     <p>
   </td>
    <td>
@@ -50,11 +50,11 @@ Adobe Experience Manager AEM () proporciona una solución fácil de usar para cr
     </a>
     <div>
       <a href="./ic-print-channel-tutorial/introduction.md">
-    <strong>Creación de su primer documento de canal de impresión</strong>
+    <strong>Cree su primer documento de canal de impresión</strong>
     </a>
     </div>
     <p>
-    <em>Interactive Communications centraliza y administra la creación, el ensamblado y el envío de correspondencia segura, personalizada e interactiva, como correspondencia comercial, documentos, declaraciones, avisos de beneficios, correos de marketing, facturas y kits de bienvenida. </em>
+    <em>Interactive Communications centraliza y administra la creación, la combinación y la entrega de correspondencia segura, personalizada e interactiva, como correspondencia comercial, documentos, declaraciones, avisos de beneficios, correos de marketing, facturas y kits de bienvenida. </em>
     <p>
   </td>
   <td>
@@ -63,11 +63,11 @@ Adobe Experience Manager AEM () proporciona una solución fácil de usar para cr
     </a>
     <div>
       <a href="./adaptive-forms/form-data-model-service-as-step-in-workflow-video-use.md">
-    <strong>AEM Uso del modelo de datos de formulario en flujo de trabajo de</strong>
+    AEM <strong>Uso del modelo de datos de formulario en el flujo de trabajo de la</strong>
     </a>
     </div>
     <p>
-    <em>AEM Invocar el servicio del modelo de datos de formulario como paso en el flujo de trabajo de la</em>
+    AEM <em>Invocar el servicio del modelo de datos de formulario como un paso en el flujo de trabajo de la</em>
     <p>
   </td>
 </tr>
@@ -82,7 +82,7 @@ Adobe Experience Manager AEM () proporciona una solución fácil de usar para cr
 * [Documentación de desarrollo de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
 * [Documentación de administración de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html)
 * [Documentación de implementación de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/home.html)
-* [AEM Tutoriales en as a Cloud Service](/help/cloud-service/overview.md)
+* [Tutoriales de AEM as a Cloud Service](/help/cloud-service/overview.md)
 * [Tutoriales de AEM Assets](/help/assets/overview.md)
 * [Tutoriales de AEM Forms](/help/forms/overview.md)
 * [AEM Tutoriales de fundaciones de](/help/foundation/overview.md)

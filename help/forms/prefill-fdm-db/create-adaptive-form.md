@@ -21,11 +21,11 @@ ht-degree: 2%
 
 Hasta ahora hemos creado lo siguiente
 
-* Base de datos con 2 tablas - `newhire` y `beneficiaries`
+* Base de datos con 2 tablas: `newhire` y `beneficiaries`
 * Fuente de datos obtenida de una conexión Apache Sling configurada
 * Modelo de datos de formulario basado en RDBMS
 
-El siguiente paso es crear y configurar un formulario adaptable para utilizar el modelo de datos de formulario.  Para empezar, puede [descargar e importar](assets/fdm-demo-af.zip) formulario de ejemplo. El formulario de ejemplo tiene una sección para mostrar los detalles del empleado y otra para enumerar los beneficiarios del empleado.
+El siguiente paso es crear y configurar un formulario adaptable para utilizar el modelo de datos de formulario.  Para comenzar, puedes [descargar e importar](assets/fdm-demo-af.zip) formularios de ejemplo. El formulario de ejemplo tiene una sección para mostrar los detalles del empleado y otra para enumerar los beneficiarios del empleado.
 
 ## Asociar un formulario al modelo de datos de formulario
 
@@ -35,16 +35,16 @@ El formulario de ejemplo proporcionado con este curso no está asociado a ningú
 * Haga clic en _Propiedades_->_Modelo de formulario_
 * Seleccione Modelo de datos de formulario de la lista desplegable
 * Busque y seleccione el modelo de datos de formulario creado en la lección anterior.
-* Haga clic en _Guardar y cerrar_
+* Haz clic en _Guardar y cerrar_
 
 ## Configurar el servicio de relleno previo
 
 El primer paso es asociar el servicio de relleno previo al formulario. Para asociar el servicio de relleno previo, siga los pasos que se mencionan a continuación
 
-* Seleccione el `FDMDemo` formulario
-* Clic _Editar_ para abrir el formulario en modo de edición
+* Seleccionar el formulario `FDMDemo`
+* Haga clic en _Editar_ para abrir el formulario en modo de edición
 * Seleccione Contenedor de formulario en la jerarquía de contenido y haga clic en el icono de llave inglesa para abrir su hoja de propiedades
-* Seleccionar _Servicio de prerrellenado del modelo de datos de formulario_ en la lista desplegable Servicio de relleno previo
+* Seleccione _Servicio de prerrellenado del modelo de datos de formulario_ en la lista desplegable Servicio de prerrellenado
 * Haga clic en el ☑ azul para guardar los cambios
 
 * ![prefill-service](assets/fdm-prefill.png)
@@ -70,7 +70,7 @@ El siguiente paso es mostrar los beneficiarios del empleado en forma de tabla. E
 * Abra el formulario en modo de edición.
 * Expanda el Panel Raíz->Sus Beneficiarios->Tabla
 * Seleccione Row1 y haga clic en el icono de la llave inglesa para abrir su hoja de propiedades.
-* Establezca la Referencia de enlace en **/new/GetEmployeeBeneficiaries**
+* Establecer la referencia de enlace en **/new/GetEmployeeBeneficiaries**
 * Establezca la Configuración de repetición: Recuento mínimo en 1 y Recuento máximo en 5.
 * La configuración de Row1 debe ser similar a la captura de pantalla siguiente
   ![row-configure](assets/configure-row.PNG)

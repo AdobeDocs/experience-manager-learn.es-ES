@@ -1,6 +1,6 @@
 ---
-title: Adobe de Cloud 5 App Builder
-description: Este episodio explora el patrón de integración externa que utiliza el Generador de aplicaciones de Adobe
+title: Adobe App Builder de Cloud 5
+description: Este episodio explora el patrón de integración externa que utiliza Adobe App Builder
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
@@ -17,16 +17,16 @@ ht-degree: 0%
 
 ---
 
-# Adobe de Cloud 5 App Builder
+# Adobe App Builder de Cloud 5
 
-Amol Anand se acerca para ofrecernos información sobre las integraciones con el Generador de aplicaciones de Adobe y dónde y cuándo utilizarlo.
+Amol Anand se acerca para ofrecernos información sobre las integraciones con Adobe App Builder y sobre dónde y cuándo utilizarlo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342375?quality=12&learn=on)
 
 ## Contenido cubierto en este vídeo
 
-+ Información general de [Generador de aplicaciones](https://developer.adobe.com/app-builder/docs/overview/)
-+ [Tutorials y Code Labs](https://developer.adobe.com/app-builder/docs/resources/)
-+ [Registro y monitorización](https://adobedocs.github.io/adobeio-runtime/guides/logging_monitoring.html#retrieving-activations-for-blocking-successful-calls)
-+ Configuración [Límites del sistema](https://adobedocs.github.io/adobeio-runtime/guides/system_settings.html)
-+ [Desarrollo local](https://developer.adobe.com/app-builder/docs/resources/debugging/) Sugerencias
++ Información general sobre [App Builder](https://developer.adobe.com/app-builder/docs/overview/)
++ [Tutorials y laboratorios de códigos](https://developer.adobe.com/app-builder/docs/resources/)
++ [Registro y supervisión](https://adobedocs.github.io/adobeio-runtime/guides/logging_monitoring.html#retrieving-activations-for-blocking-successful-calls)
++ Estableciendo [límites del sistema](https://adobedocs.github.io/adobeio-runtime/guides/system_settings.html)
++ [Consejos de desarrollo local](https://developer.adobe.com/app-builder/docs/resources/debugging/)

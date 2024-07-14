@@ -23,7 +23,7 @@ AEM La opción admite la personalización de la salida de la anotación al PDF.
 
 ## sling de anotación de PDF:definición OsgiConfig
 
-Para personalizar las anotaciones del PDF, cree un **sling:OsgiConfig** AEM en el proyecto de la en
+Para personalizar las anotaciones del PDF AEM, cree un nodo **sling:OsgiConfig** en el proyecto de la en
 
 `/apps/my-project/config.author/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig.xml` y ajuste los valores según sea necesario:
 

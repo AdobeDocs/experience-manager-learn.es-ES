@@ -28,11 +28,11 @@ A los efectos de este caso de uso, se ampliaron los siguientes tipos de campo pa
 * botón de opción
 
 Los autores del formulario pueden marcar estos tipos de campo como disponibles para búsqueda, como se muestra a continuación
-![searchable-field](assets/searchable-fields.png)
+![campo en el que se puede buscar](assets/searchable-fields.png)
 
 Los campos se ampliaron creando la siguiente estructura
 
-![Extended-fields](assets/extend-component.png)
+![campos extendidos](assets/extend-component.png)
 
 A continuación se muestra el contenido del archivo .content.xml
 

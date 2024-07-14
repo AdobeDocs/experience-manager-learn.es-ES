@@ -21,9 +21,9 @@ ht-degree: 2%
 
 Un caso de uso común es mostrar varios documentos de PDF al usuario que rellena el formulario para revisarlos antes de enviarlo.
 
-Para llevar a cabo este caso de uso, hemos utilizado el [API de incrustación de Adobe PDF](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html).
+Para llevar a cabo este caso de uso, se ha utilizado la [API de incrustación de Adobe PDF](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html).
 
-[Una demostración en directo de esta muestra se puede experimentar aquí.](https://forms.enablementadobe.com/content/dam/formsanddocuments/wefinancecreditcard/jcr:content?wcmmode=disabled)
+[Aquí se puede experimentar una demostración en vivo de esta muestra.](https://forms.enablementadobe.com/content/dam/formsanddocuments/wefinancecreditcard/jcr:content?wcmmode=disabled)
 
 Se han realizado los siguientes pasos para completar la integración
 
@@ -37,21 +37,24 @@ Se creó una biblioteca de cliente para mostrar los PDF mediante la API de incru
 
 ## Crear formulario adaptable
 
-Crear un formulario adaptable basado en algunas pestañas (este ejemplo tiene 3 pestañas) Agregar algunos componentes de formulario adaptable en las dos primeras pestañas Agregar el componente de carrusel de PDF en la tercera pestaña Configurar el componente de carrusel de PDF como se muestra en la captura de pantalla siguiente
-![pdf-carrusel](assets/pdf-carousel-af-component.png)
+Crear un formulario adaptable basado en algunas pestañas (este ejemplo tiene 3 pestañas)
+Agregar algunos componentes de formulario adaptable en las dos primeras pestañas
+Añada el componente de carrusel pdf en la tercera pestaña
+Configure el componente pdf-carrusel como se muestra en la captura de pantalla siguiente
+![pdf-carousel](assets/pdf-carousel-af-component.png)
 
-**Incrustar clave API de PDF** : Esta es la clave que puede utilizar para incrustar el pdf. Esta clave solo funcionará con localhost. Puede crear [su propia clave](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) y asociarlo a otro dominio.
+**Clave de API de PDF incrustado**: esta es la clave que puede utilizar para incrustar el PDF. Esta clave solo funcionará con localhost. Puede crear [su propia clave](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) y asociarla a otro dominio.
 
-**Especificar documentos de PDF** - Aquí puede especificar los documentos pdf que desea que se muestren en el carrusel.
+**Especificar documentos de PDF**: aquí puede especificar los documentos PDF que desea que se muestren en el carrusel.
 
 
 ## Implementar el ejemplo en el servidor
 
 Para probar esto en el servidor local, siga los pasos:
 
-1. [Importar la biblioteca de cliente](assets/pdf-carousel-client-lib.zip) AEM en la instancia local de la [uso del administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
-1. [Importar el componente de carrusel PDF](assets/pdf-carousel-component.zip) AEM en la instancia local de la [uso del administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
-1. [Importar el formulario adaptable](assets/adaptive-form-pdf-carousel.zip) AEM en la instancia local de la [uso del administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
-1. [Importe los archivos PDF de ejemplo para mostrarlos](assets/pdf-carousel-sample-documents.zip) AEM en la instancia local de la [uso del vínculo de carga de archivos de recursos](http://localhost:4502/assets.html/content/dam)
-1. [Previsualizar formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/wefinancecreditcard/jcr:content?wcmmode=disabled)
+1. AEM [Importe la biblioteca de cliente](assets/pdf-carousel-client-lib.zip) en su instancia de cliente local [usando el administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
+1. AEM [Importe el componente de carrusel pdf](assets/pdf-carousel-component.zip) en la instancia de la instancia de la local [mediante el administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
+1. AEM [Importe el formulario adaptable](assets/adaptive-form-pdf-carousel.zip) a su instancia de la instancia de la local [mediante el administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
+1. AEM [Importe los archivos PDF de ejemplo para mostrar](assets/pdf-carousel-sample-documents.zip) en la instancia de recursos local [mediante el vínculo de carga de archivos de recursos](http://localhost:4502/assets.html/content/dam)
+1. [Vista previa de formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/wefinancecreditcard/jcr:content?wcmmode=disabled)
 1. Vaya a la pestaña Documentos para revisar. Debería ver tres documentos de PDF en el componente de carrusel.

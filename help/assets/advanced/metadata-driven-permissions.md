@@ -30,14 +30,14 @@ La activación de permisos impulsados por metadatos implica la definición de qu
 
 ## Requisitos previos
 
-AEM Se requiere acceso a un entorno as a Cloud Service de la actualizado a la versión más reciente para configurar permisos impulsados por metadatos.
+Se requiere acceso a un entorno de AEM as a Cloud Service actualizado a la versión más reciente para configurar permisos impulsados por metadatos.
 
 ## Configuración de OSGi {#configure-permissionable-properties}
 
-AEM Para implementar Permisos impulsados por metadatos, un desarrollador debe implementar una configuración OSGi en as a Cloud Service, que permita propiedades de metadatos de recursos específicas para habilitar permisos impulsados por metadatos.
+Para implementar Permisos impulsados por metadatos, un desarrollador debe implementar una configuración OSGi en AEM as a Cloud Service que permita propiedades de metadatos de recursos específicas para habilitar permisos impulsados por metadatos.
 
-1. Determine qué propiedades de metadatos de recurso se utilizarán para el control de acceso. Los nombres de propiedad son los nombres de propiedad JCR en el `jcr:content/metadata` recurso. En nuestro caso, va a ser una propiedad llamada `status`.
-1. Crear una configuración de OSGi `com.adobe.cq.dam.assetmetadatarestrictionprovider.impl.DefaultRestrictionProviderConfiguration.cfg.json` AEM en su proyecto de Maven de la.
+1. Determine qué propiedades de metadatos de recurso se utilizarán para el control de acceso. Los nombres de propiedad son los nombres de propiedad JCR en el recurso `jcr:content/metadata` del recurso. En nuestro caso, será una propiedad llamada `status`.
+1. AEM Cree una configuración de OSGi `com.adobe.cq.dam.assetmetadatarestrictionprovider.impl.DefaultRestrictionProviderConfiguration.cfg.json` en su proyecto de Maven de.
 1. Pegue el siguiente JSON en el archivo creado:
 
    ```json
@@ -54,33 +54,33 @@ AEM Para implementar Permisos impulsados por metadatos, un desarrollador debe im
 
 ## Restablecer permisos de recursos base
 
-Antes de agregar entradas de control de acceso basadas en restricciones, se debe agregar una nueva entrada de nivel superior para denegar primero el acceso de lectura a todos los grupos sujetos a la evaluación de permisos para recursos (por ejemplo, &quot;colaboradores&quot; o similares):
+Antes de agregar entradas de control de acceso basadas en restricciones, se debe agregar una nueva entrada de nivel superior para denegar primero el acceso de lectura a todos los grupos sujetos a la evaluación de permisos para Assets (por ejemplo, &quot;colaboradores&quot; o similares):
 
-1. Vaya a __Herramientas → Seguridad → Permisos__ pantalla
-1. Seleccione el __Colaboradores__ grupo (u otro grupo personalizado al que pertenecen todos los grupos de usuarios)
-1. Clic __Agregar ACE__ en la esquina superior derecha de la pantalla
-1. Seleccionar `/content/dam` para __Ruta__
-1. Entrar `jcr:read` para __Privilegios__
-1. Seleccionar `Deny` para __Tipo de permiso__
-1. En Restricciones, seleccione `rep:ntNames` y escriba `dam:Asset` como el __Valor de restricción__
-1. Clic __Guardar__
+1. Vaya a la pantalla __Herramientas → Seguridad → Permisos__
+1. Seleccione el grupo __Colaboradores__ (u otro grupo personalizado al que pertenezcan todos los grupos de usuarios)
+1. Haga clic en __Agregar ACE__ en la esquina superior derecha de la pantalla
+1. Seleccionar `/content/dam` para __ruta__
+1. Escriba `jcr:read` para __privilegios__
+1. Seleccionar `Deny` para __tipo de permiso__
+1. En Restricciones, seleccione `rep:ntNames` e introduzca `dam:Asset` como __Valor de restricción__
+1. Haga clic en __Guardar__
 
 ![Denegar acceso](./assets/metadata-driven-permissions/deny-access.png)
 
 ## Conceder acceso a los recursos mediante metadatos
 
-Ahora se pueden agregar entradas de control de acceso para conceder acceso de lectura a grupos de usuarios basados en el [valores de propiedad de metadatos de recursos configurados](#configure-permissionable-properties).
+Ahora se pueden agregar entradas de control de acceso para conceder acceso de lectura a los grupos de usuarios en función de los [valores de propiedad de metadatos de recursos configurados](#configure-permissionable-properties).
 
-1. Vaya a __Herramientas → Seguridad → Permisos__ pantalla
+1. Vaya a la pantalla __Herramientas → Seguridad → Permisos__
 1. Seleccione los grupos de usuarios que deben tener acceso a los recursos
-1. Clic __Agregar ACE__ en la esquina superior derecha de la pantalla
-1. Seleccionar `/content/dam` (o una subcarpeta) para __Ruta__
-1. Entrar `jcr:read` para __Privilegios__
-1. Seleccionar `Allow` para __Tipo de permiso__
-1. En __Restricciones__, seleccione una de las [nombres de propiedades de metadatos de recursos configurados en la configuración OSGi](#configure-permissionable-properties)
-1. Introduzca el valor de propiedad de metadatos requerido en __Valor de restricción__ campo
-1. Haga clic en __+__ para añadir la restricción a la entrada de control de acceso
-1. Clic __Guardar__
+1. Haga clic en __Agregar ACE__ en la esquina superior derecha de la pantalla
+1. Seleccionar `/content/dam` (o una subcarpeta) para __ruta__
+1. Escriba `jcr:read` para __privilegios__
+1. Seleccionar `Allow` para __tipo de permiso__
+1. En __Restricciones__, seleccione uno de los [nombres de propiedad de metadatos de recursos configurados en la configuración OSGi](#configure-permissionable-properties)
+1. Escriba el valor de propiedad de metadatos requerido en el campo __Valor de restricción__
+1. Haga clic en el icono __+__ para agregar la restricción a la entrada de control de acceso
+1. Haga clic en __Guardar__
 
 ![Permitir el acceso](./assets/metadata-driven-permissions/allow-access.png)
 
@@ -106,10 +106,10 @@ Los beneficios de los permisos impulsados por metadatos incluyen:
 >
 > Es importante tener en cuenta lo siguiente:
 > 
-> - Las propiedades de metadatos se evalúan según las restricciones utilizando __Igualdad de cadena__ (`=`) (otros tipos de datos u operadores aún no son compatibles, por ejemplo mayor que (`>`) o Propiedades de fecha)
-> - Para permitir varios valores para una propiedad de restricción, se pueden agregar restricciones adicionales a la Entrada de control de acceso seleccionando la misma propiedad en la lista desplegable &quot;Seleccionar tipo&quot; e introduciendo un nuevo valor de restricción (por ejemplo, `status=approved`, `status=wip`) y haciendo clic en &quot;+&quot; para añadir la restricción a la entrada
+> - Las propiedades de metadatos se evalúan en función de las restricciones que utilizan __igualdad de cadena__ (`=`) (no se admiten otros tipos de datos u operadores, para propiedades de fecha o superiores a (`>`))
+> - Para permitir varios valores para una propiedad de restricción, se pueden agregar restricciones adicionales a la Entrada de control de acceso seleccionando la misma propiedad en la lista desplegable &quot;Seleccionar tipo&quot; e introduciendo un nuevo valor de restricción (por ejemplo, `status=approved`, `status=wip`) y haciendo clic en &quot;+&quot; para agregar la restricción a la entrada
 > ![Permitir varios valores](./assets/metadata-driven-permissions/allow-multiple-values.png)
-> - __Restricciones Y__ son compatibles mediante varias restricciones en una única Entrada de control de acceso con nombres de propiedad diferentes (por ejemplo, `status=approved`, `brand=Adobe`) se evaluará como una condición AND, es decir, el grupo de usuarios seleccionado tendrá acceso de lectura a los recursos con `status=approved AND brand=Adobe`
+> - Se admiten __restricciones AND__ mediante varias restricciones en una sola entrada de control de acceso con nombres de propiedad diferentes (por ejemplo, `status=approved`, `brand=Adobe`) que se evaluará como una condición AND; es decir, se concederá acceso de lectura al grupo de usuarios seleccionado a los recursos con `status=approved AND brand=Adobe`
 > ![Permitir varias restricciones](./assets/metadata-driven-permissions/allow-multiple-restrictions.png)
-> - __Restricciones O__ son compatibles con la adición de una nueva Entrada de control de acceso con una restricción de propiedad de metadatos que establecerá una condición OR para las entradas, por ejemplo, una sola entrada con restricción `status=approved` y una sola entrada con `brand=Adobe` se evaluará como `status=approved OR brand=Adobe`
+> - Se admiten __restricciones OR__ al agregar una nueva entrada de control de acceso con una restricción de propiedad de metadatos que establecerá una condición OR para las entradas; por ejemplo, una sola entrada con restricción `status=approved` y una sola entrada con `brand=Adobe` se evaluará como `status=approved OR brand=Adobe`
 > ![Permitir varias restricciones](./assets/metadata-driven-permissions/allow-multiple-aces.png)

@@ -46,6 +46,8 @@ Se recomienda basar la página de agradecimiento en una nueva plantilla de formu
 
 Cree un formulario adaptable y configure para enviar el formulario mediante la acción de envío del modelo de datos de formulario.
 [Implementar la plantilla de formulario adaptable de ejemplo](assets/thank-you-page-template.zip)
-Crear un formulario de agradecimiento basado en esta plantilla Asociar esta página de agradecimiento con el formulario principal Modificar el código jsp en la [createXml.jsp](http://localhost:4502/apps/thank-you-page-template/component/page/thankyoupage/createxml.jsp) para generar el xml necesario para rellenar previamente el formulario adaptable.
+Cree un formulario de agradecimiento basado en esta plantilla
+Asociar esta página de agradecimiento con el formulario principal
+Modifique el código jsp en [createXml.jsp](http://localhost:4502/apps/thank-you-page-template/component/page/thankyoupage/createxml.jsp) para generar el xml necesario para rellenar previamente el formulario adaptable.
 Obtenga una vista previa del formulario adaptable y envíelo.
 La página de agradecimiento debe mostrarse y rellenarse previamente con los datos especificados en el XML

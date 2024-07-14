@@ -23,9 +23,9 @@ El siguiente vídeo muestra el proceso básico de creación de plantillas de for
 
 >[!VIDEO](https://video.tv.adobe.com/v/37324?quality=12&learn=on)
 
-Consulte la [documentación de plantilla de formulario adaptable](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html?lang=es) para obtener más información
+Consulte [documentación de plantilla de formulario adaptable](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html?lang=es) para obtener más información
 
-Si es necesario, puede descargar el [plantilla de formulario adaptable](assets/peak-application-template.zip) AEM e importarlos a la red de mediante el [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
+AEM Si es necesario, puede descargar la [plantilla de formulario adaptable](assets/peak-application-template.zip) e importarla a la aplicación mediante el administrador de paquetes [y el administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp).
 
 ## Siguientes pasos
 

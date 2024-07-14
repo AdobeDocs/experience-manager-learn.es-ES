@@ -66,7 +66,7 @@ El servicio de envío personalizado extrae y almacena los archivos adjuntos en A
 ```
 
 
-[El controlador de envío personalizado de ejemplo para los componentes principales basados en formularios adaptables está disponible aquí](https://github.com/adobe/aem-core-forms-components/blob/master/it/core/src/main/java/com/adobe/cq/forms/core/components/it/service/CustomAFSubmitService.java#L56). El siguiente envío personalizado se escribió para administrar el envío del formulario
+[El controlador de envío personalizado de ejemplo para el formulario adaptable basado en componentes principales está disponible aquí](https://github.com/adobe/aem-core-forms-components/blob/master/it/core/src/main/java/com/adobe/cq/forms/core/components/it/service/CustomAFSubmitService.java#L56). El siguiente envío personalizado se escribió para administrar el envío del formulario
 
 ```java
 package com.azuredemo.core;

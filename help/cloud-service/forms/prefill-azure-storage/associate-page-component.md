@@ -18,7 +18,7 @@ ht-degree: 4%
 
 # Asocie el componente de página con la plantilla
 
-El siguiente paso es asociar el componente de página con la nueva plantilla de formulario adaptable. Esto garantiza que el código del componente de página se ejecute cada vez que se procese un formulario adaptable basado en la nueva plantilla. Para los fines de este tutorial, una nueva plantilla de formulario adaptable llamada **Almacenar y restaurar desde Azure** se ha creado en **AzurePortalStorage** carpeta.
+El siguiente paso es asociar el componente de página con la nueva plantilla de formulario adaptable. Esto garantiza que el código del componente de página se ejecute cada vez que se procese un formulario adaptable basado en la nueva plantilla. Para los fines de este tutorial, se creó una nueva plantilla de formulario adaptable llamada **StoreAndRestoreFromAzure** en la carpeta **AzurePortalStorage**.
 Vaya al nodo /conf/AzurePortalStorage/settings/wcm/templates/storeandrestorefromazure/initial/jcr:content, agregue la siguiente propiedad y guarde los cambios.
 
 | **Nombre de propiedad** | **Tipo de propiedad** | **Valor de propiedad** |
@@ -26,7 +26,9 @@ Vaya al nodo /conf/AzurePortalStorage/settings/wcm/templates/storeandrestorefrom
 | sling:resourceType | Cadena | azureportalpagecomponent/component/page/storeandfetch |
 
 Vaya al nodo /conf/AzurePortalStorage/settings/wcm/templates/storeandrestorefromazure/structure/jcr:content, agregue la siguiente propiedad y guarde los cambios.
-| **Nombre de propiedad**  | **Tipo de propiedad** | **Valor de propiedad**                                    | |--------------------|-------------------|-------------------------------------------------------| | sling:resourceType | Cadena | azureportalpagecomponent/component/page/storeandfetch |
+| **Nombre de propiedad**  | **Tipo de propiedad** | **Valor de propiedad**                                    |
+|--------------------|-------------------|-------------------------------------------------------|
+| sling:resourceType | Cadena            | azureportalpagecomponent/component/page/storeandfetch |
 
 
 ## Siguientes pasos

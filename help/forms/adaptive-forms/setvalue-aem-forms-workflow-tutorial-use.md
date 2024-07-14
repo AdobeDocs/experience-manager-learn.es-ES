@@ -40,18 +40,18 @@ Para implementar los recursos en el sistema local, siga los pasos a continuació
 
 * [Implementar el paquete Develingwithserviceuser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-* [Implementar el paquete de muestra](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Este es el paquete OSGI personalizado que le permite establecer los valores de un elemento en los datos xml enviados
+* [Implementar el paquete de ejemplo](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Este es el paquete OSGI personalizado que le permite establecer los valores de un elemento en los datos xml enviados
 
 * [Descargue y extraiga el contenido del archivo zip](assets/setvalueassets.zip)
-* Dirija el explorador a [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
+* Dirija su navegador a [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
 * Importe e instale el archivo setValueWorkflow.zip. Tiene el modelo de flujo de trabajo de ejemplo.
-* Dirija el explorador a [Forms y documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Dirija su navegador a [Forms y documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Haga clic en Crear | Carga de archivos
 * Cargue TimeOfRequestForm.zip
-* Abra el [TimeOffRequestForm](http://localhost:4502/content/dam/formsanddocuments/timeoffapplication/jcr:content?wcmmode=disabled)
+* Abrir [TimeOffRequestform](http://localhost:4502/content/dam/formsanddocuments/timeoffapplication/jcr:content?wcmmode=disabled)
 * Rellene los 3 campos obligatorios y realice el envío
 * AEM Inicie sesión como &quot;admin&quot; en para el (si aún no lo ha hecho).
-* Ir a [AEM &quot;Bandeja de entrada de&quot;](http://localhost:4502/aem/inbox)
+* AEM Ir a [&quot;Bandeja de entrada de&quot;](http://localhost:4502/aem/inbox)
 * Abra el formulario &quot;Solicitud de tiempo libre de revisión&quot;
 * Observe que los campos del primer panel están deshabilitados. Esto se debe a que el revisor está abriendo el formulario. Observe que el panel para aprobar o rechazar la solicitud ahora está visible
 

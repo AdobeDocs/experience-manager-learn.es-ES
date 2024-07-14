@@ -1,6 +1,6 @@
 ---
 title: Conexiones SQL con API de Java™
-description: AEM Obtenga información sobre cómo conectarse a bases de datos de SQL desde el as a Cloud Service mediante las API de Java™ SQL y los puertos de salida.
+description: Obtenga información sobre cómo conectarse a bases de datos SQL desde AEM as a Cloud Service mediante las API de Java™ SQL y los puertos de salida.
 version: Cloud Service
 feature: Security
 topic: Development, Security
@@ -21,13 +21,13 @@ ht-degree: 0%
 
 AEM Las conexiones a bases de datos SQL (y otros servicios que no sean HTTP/HTTPS) deben procesarse como proxy fuera de las bases de datos de.
 
-La excepción a esta regla es cuando [dirección ip de salida dedicada](../dedicated-egress-ip-address.md) está en uso y el servicio está en Adobe o Azure.
+La excepción a esta regla es cuando [dirección IP de salida dedicada](../dedicated-egress-ip-address.md) está en uso y el servicio está en Adobe o Azure.
 
 ## Compatibilidad avanzada con redes
 
 Las siguientes opciones avanzadas de red admiten el siguiente ejemplo de código.
 
-Asegúrese de que la [apropiado](../advanced-networking.md#advanced-networking) la configuración avanzada de red se ha establecido antes de seguir este tutorial.
+Asegúrese de que la configuración avanzada de red [proper](../advanced-networking.md#advanced-networking) se haya configurado antes de seguir este tutorial.
 
 | Sin redes avanzadas | [Salida de puerto flexible](../flexible-port-egress.md) | [Dirección IP de salida dedicada](../dedicated-egress-ip-address.md) | [Red privada virtual](../vpn.md) |
 |:-----:|:-----:|:------:|:---------:|
@@ -35,7 +35,7 @@ Asegúrese de que la [apropiado](../advanced-networking.md#advanced-networking) 
 
 ## Configuración de OSGi
 
-Dado que los secretos no deben almacenarse en el código, el nombre de usuario y la contraseña de la conexión SQL se proporcionan mejor mediante [variables de configuración OSGi secretas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#secret-configuration-values), establecida mediante AIO CLI o API de Cloud Manager.
+Dado que los secretos no deben almacenarse en el código, es mejor proporcionar el nombre de usuario y la contraseña de la conexión SQL a través de [variables de configuración OSGi secretas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#secret-configuration-values), configuradas mediante AIO CLI o API de Cloud Manager.
 
 + `ui.config/src/jcr_root/apps/wknd-examples/osgiconfig/com.adobe.aem.wknd.examples.core.connections.impl.MySqlExternalServiceImpl.cfg.json`
 
@@ -46,7 +46,7 @@ Dado que los secretos no deben almacenarse en el código, el nombre de usuario y
 }
 ```
 
-Lo siguiente `aio CLI` El comando se puede utilizar para establecer los secretos OSGi por entorno:
+El siguiente comando `aio CLI` se puede usar para establecer los secretos OSGi por entorno:
 
 ```shell
 $ aio cloudmanager:set-environment-variables --programId=<PROGRAM_ID> <ENVIRONMENT_ID> --secret MYSQL_USERNAME "mysql-user" --secret MYSQL_PASSWORD "password123"
@@ -54,7 +54,7 @@ $ aio cloudmanager:set-environment-variables --programId=<PROGRAM_ID> <ENVIRONME
 
 ## Ejemplo de código
 
-Este ejemplo de código Java™ es de un servicio OSGi que realiza una conexión con un servidor web SQL Server externo a través del siguiente Cloud Manager `portForwards` regla de la [enableEnvironmentAdvancedNetworkingConfiguration](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) operación.
+Este ejemplo de código Java™ es de un servicio OSGi que realiza una conexión con un servidor web SQL Server externo mediante la siguiente regla de Cloud Manager `portForwards` de la operación [enableEnvironmentAdvancedNetworkingConfiguration](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration).
 
 ```json
 ...
@@ -151,11 +151,11 @@ public class MySqlExternalServiceImpl implements ExternalService {
 
 ## Dependencias del controlador MySQL
 
-AEM A menudo, la as a Cloud Service requiere que proporcione controladores de base de datos Java™ para admitir las conexiones. AEM La mejor manera de proporcionar los controladores suele ser incrustar los artefactos del paquete OSGi que contienen estos controladores en el proyecto de la a través de la variable `all` paquete.
+AEM as a Cloud Service suele requerir que proporcione controladores de base de datos Java™ para admitir las conexiones. AEM La mejor manera de proporcionar los controladores suele ser incrustar los artefactos del paquete OSGi que contienen estos controladores en el proyecto de la a través del paquete `all`.
 
 ### Reactor pom.xml
 
-Incluir las dependencias del controlador de base de datos en el reactor `pom.xml` y, a continuación, haga referencia a ellas en la `all` subproyectos.
+Incluya las dependencias del controlador de base de datos en el reactor `pom.xml` y haga referencia a ellas en los subproyectos `all`.
 
 + `pom.xml`
 
@@ -177,7 +177,7 @@ Incluir las dependencias del controlador de base de datos en el reactor `pom.xml
 
 ## Todo pom.xml
 
-Incrustar los artefactos de dependencia del controlador de base de datos en `all` AEM para que se implementen y estén disponibles en el as a Cloud Service. Estos artefactos __debe__ sean paquetes OSGi que exporten la clase Java™ del controlador de la base de datos.
+Incruste los artefactos de dependencia del controlador de base de datos en el paquete `all` para que se implementen y estén disponibles en AEM as a Cloud Service. Estos artefactos __deben__ ser paquetes OSGi que exportan la clase Java™ del controlador de base de datos.
 
 + `all/pom.xml`
 

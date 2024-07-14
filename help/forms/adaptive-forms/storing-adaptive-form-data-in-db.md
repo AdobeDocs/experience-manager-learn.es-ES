@@ -29,18 +29,18 @@ El caso de uso es almacenar en déclencheur AEM un flujo de trabajo de en un env
 
    * Busque &quot;Grupo de conexión JDBC&quot;. Cree un nuevo grupo de conexiones JDBC de Day Commons. Especifique la configuración específica de la base de datos.
 
-   * ![Configuración OSGi del grupo de conexiones JDBC](assets/aemformstutorial-jdbc.png)
+   * ![Configuración OSGi del grupo de conexión JDBC](assets/aemformstutorial-jdbc.png)
 
 ## Especificar detalles de base de datos
 
-* Buscar &quot;**Especificar detalles de base de datos**&quot;
+* Buscar &quot;**Especifique los detalles de la base de datos**&quot;
 * Especifique las propiedades específicas de la base de datos.
    * DataSourceName: nombre del origen de datos configurado anteriormente.
    * TableName: nombre de la tabla en la que desea almacenar los datos AF
    * FormName: nombre de columna que contiene el nombre del formulario.
    * ColumnName: nombre de columna que contiene los datos AF
 
-  ![Especificar detalles de base de datos para la configuración OSGi](assets/specify-database-details.png)
+  ![Especificar detalles de la base de datos para la configuración OSGi](assets/specify-database-details.png)
 
 
 
@@ -213,9 +213,9 @@ public class InsertAfData implements WorkflowProcess {
 * Especifique los detalles de la base de datos mediante configMgr
 * [Descargue el archivo Zip y extraiga su contenido en el disco duro](assets/article-assets.zip)
 
-   * Implemente el archivo jar con [AEM consola web de](http://localhost:4502/system/console/bundles). Este archivo jar contiene el código para almacenar los datos del formulario en la base de datos.
+   * AEM Implemente el archivo jar mediante [consola web de la](http://localhost:4502/system/console/bundles). Este archivo jar contiene el código para almacenar los datos del formulario en la base de datos.
 
-   * Importe los dos archivos zip en [AEM Uso del administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp). Esto te dará el [flujo de trabajo de muestra](http://localhost:4502/editor.html/conf/global/settings/workflow/models/storeformdata.html) y el [formulario adaptable de ejemplo](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) que almacenará en déclencheur el flujo de trabajo al enviar el formulario. Observe los argumentos de proceso en el paso del flujo de trabajo. Estos argumentos indican el nombre del formulario y el nombre del archivo de datos que contendrá los datos del formulario adaptable. El archivo de datos se almacena en la carpeta de carga útil del repositorio crx. Observe cómo la variable [formulario adaptable](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) está configurado para almacenar en déclencheur AEM el flujo de trabajo de la en el envío y la configuración del archivo de datos (data.xml)
+   * AEM Importe los dos archivos zip en [mediante el administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp). Esto le proporcionará [el flujo de trabajo de ejemplo](http://localhost:4502/editor.html/conf/global/settings/workflow/models/storeformdata.html) y [el formulario adaptable de ejemplo](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) que almacenará en déclencheur el flujo de trabajo al enviar el formulario. Observe los argumentos de proceso en el paso del flujo de trabajo. Estos argumentos indican el nombre del formulario y el nombre del archivo de datos que contendrá los datos del formulario adaptable. El archivo de datos se almacena en la carpeta de carga útil del repositorio crx. Observe cómo el [formulario adaptable](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) está configurado para almacenar en déclencheur AEM el flujo de trabajo de la al enviar y la configuración del archivo de datos (data.xml)
 
    * Obtenga una vista previa, rellene el formulario y envíelo. Debería ver una fila nueva creada en la base de datos
 

@@ -25,45 +25,45 @@ AEM Aprenda a añadir insignias al Editor de texto enriquecido (RTE) en el Edito
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420831?quality=12&learn=on)
 
-[Distintivo del editor de texto enriquecido](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-badges/)  son extensiones que hacen que el texto del Editor de texto enriquecido (RTE) no se pueda editar. Esto significa que un distintivo declarado como tal solo se puede eliminar completamente y no se puede editar parcialmente. Estos distintivos también admiten colores especiales dentro de RTE, lo que indica claramente a los autores de contenido que el texto es un distintivo y, por lo tanto, no editable. Además, proporcionan indicaciones visuales sobre el significado del texto del distintivo.
+[El distintivo del Editor de texto enriquecido](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-badges/) son extensiones que hacen que el texto del Editor de texto enriquecido (RTE) no se pueda editar. Esto significa que un distintivo declarado como tal solo se puede eliminar completamente y no se puede editar parcialmente. Estos distintivos también admiten colores especiales dentro de RTE, lo que indica claramente a los autores de contenido que el texto es un distintivo y, por lo tanto, no editable. Además, proporcionan indicaciones visuales sobre el significado del texto del distintivo.
 
-El caso de uso más común de las insignias RTE es utilizarlas junto con [Widgets RTE](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-widgets/). Esto permite que el contenido insertado en RTE por el widget RTE no se pueda editar.
+El caso de uso más común de los distintivos RTE es usarlos junto con [widgets RTE](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-widgets/). Esto permite que el contenido insertado en RTE por el widget RTE no se pueda editar.
 
-Normalmente, los distintivos asociados a los widgets se utilizan para añadir contenido dinámico que tiene una dependencia externa del sistema, pero _los autores de contenido no pueden modificar_ el contenido dinámico insertado para mantener la integridad. Solo se pueden eliminar como un elemento completo.
+Normalmente, las insignias asociadas con los widgets se utilizan para agregar el contenido dinámico que tiene una dependencia externa del sistema, pero _los autores de contenido no pueden modificar_ el contenido dinámico insertado para mantener la integridad. Solo se pueden eliminar como un elemento completo.
 
-El **distintivos** se añaden a **RTE** en el Editor de fragmentos de contenido mediante `rte` punto de extensión. Uso de `rte` punto de extensión `getBadges()` se añaden uno o varios distintivos al método.
+Las **insignias** se han agregado a **RTE** en el editor de fragmentos de contenido usando el punto de extensión `rte`. Con el método `getBadges()` del punto de extensión `rte` se agregan uno o varios distintivos.
 
-Este ejemplo muestra cómo añadir un widget llamado _Servicio al cliente de reservas de grupos grandes_ para buscar, seleccionar y agregar los detalles de servicio al cliente específicos de WKND Adventure, como **Nombre del representante** y **Número de teléfono** con contenido RTE. Uso de la funcionalidad de distintivos en **Número de teléfono** está hecho **no editable** pero los autores de contenido de WKND pueden editar el Nombre del representante.
+Este ejemplo muestra cómo agregar un widget llamado _Servicio al cliente de reservas de grupos grandes_ para buscar, seleccionar y agregar los detalles del servicio al cliente específicos de la aventura de WKND como **Nombre del representante** y **Número de teléfono** dentro de un contenido RTE. Al usar la funcionalidad de distintivos, el **número de teléfono** pasa a ser **no editable**, pero los autores de contenido de WKND pueden editar el nombre del representante.
 
-Además, la variable **Número de teléfono** tiene un estilo diferente (azul), que es un caso de uso adicional de la funcionalidad de distintivos.
+Además, el **número de teléfono** tiene un estilo diferente (azul), lo cual es un caso de uso adicional de la funcionalidad de distintivos.
 
-Para que las cosas sean sencillas, este ejemplo utiliza el [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) para desarrollar la interfaz de usuario del widget o cuadro de diálogo y los números de teléfono del servicio de atención al cliente de WKND predefinidos. Para controlar la no edición y el aspecto de estilo diferente del contenido, la variable `#` se utiliza en la variable `prefix` y `suffix` atributo de la definición de distintivos.
+Para simplificar las cosas, este ejemplo usa el módulo [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) para desarrollar la interfaz de usuario del widget o cuadro de diálogo y los números de teléfono del servicio de atención al cliente de WKND codificados. Para controlar la no edición y el aspecto de estilo diferente del contenido, se utiliza el carácter `#` en el atributo `prefix` y `suffix` de la definición de distintivos.
 
 ## Puntos de extensión
 
-Este ejemplo se extiende hasta el punto de extensión `rte` para añadir un distintivo al RTE en el editor de fragmentos de contenido.
+Este ejemplo se extiende al punto de extensión `rte` para agregar un distintivo al RTE en el editor de fragmentos de contenido.
 
 | AEM Interfaz de usuario extendida | Puntos de extensión |
 | ------------------------ | --------------------- | 
-| [Editor de fragmentos de contenido](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [Distintivos del editor de texto enriquecido](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-badges/) y [Widgets del editor de texto enriquecido](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-widgets/) |
+| [Editor de fragmentos de contenido](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [Insignias del editor de texto enriquecido](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-badges/) y [Widgets del editor de texto enriquecido](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-widgets/) |
 
 ## Extensión de ejemplo
 
-En el siguiente ejemplo se crea un _Servicio al cliente de reservas de grupos grandes_ widget. Pulsando la tecla `{` dentro del RTE, se abre el menú contextual de los widgets RTE. Al seleccionar la variable _Servicio al cliente de reservas de grupos grandes_ en el menú contextual se abre el modal personalizado.
+En el siguiente ejemplo se crea un widget de _Servicio al cliente de reservas de grupos grandes_. Al pulsar la tecla `{` dentro de RTE, se abre el menú contextual de widgets RTE. Al seleccionar la opción _Servicio al cliente de reservas de grupos grandes_ en el menú contextual, se abre el modal personalizado.
 
-Una vez que el número de servicio al cliente deseado se añade desde el modal, los distintivos hacen que la variable _Número de teléfono no editable_ y lo diseña en color azul.
+Una vez que el número de servicio de atención al cliente deseado se agrega desde el modal, los distintivos hacen que el _número de teléfono no se pueda editar_ y lo personalizan en color azul.
 
 ### Registro de extensiones
 
-`ExtensionRegistration.js`, asignado al `index.html` AEM route, es el punto de entrada para la extensión de la y define:
+AEM `ExtensionRegistration.js`, asignado a la ruta `index.html`, es el punto de entrada para la extensión de la y define:
 
-+ La definición del distintivo se define en `getBadges()` uso de los atributos de configuración `id`, `prefix`, `suffix`, `backgroundColor` y `textColor`.
-+ En este ejemplo, la variable `#` se utiliza para definir los límites de este distintivo, es decir, cualquier cadena del RTE rodeada por `#` se trata como una instancia de esta insignia.
++ La definición del distintivo se define en `getBadges()` mediante los atributos de configuración `id`, `prefix`, `suffix`, `backgroundColor` y `textColor`.
++ En este ejemplo, el carácter `#` se usa para definir los límites de este distintivo, lo que significa que cualquier cadena del RTE que esté rodeada por `#` se trata como una instancia de este distintivo.
 
 Consulte también los detalles clave del widget RTE:
 
-+ La definición del widget en `getWidgets()` función con `id`, `label` y `url` atributos.
-+ El `url` valor de atributo, una ruta URL relativa (`/index.html#/largeBookingsCustomerService`) para cargar el modal.
++ La definición del widget en la función `getWidgets()` con los atributos `id`, `label` y `url`.
++ El valor de atributo `url`, una ruta de acceso URL relativa (`/index.html#/largeBookingsCustomerService`) para cargar el modal.
 
 
 `src/aem-cf-editor-1/web-src/src/components/ExtensionRegistration.js`
@@ -113,9 +113,9 @@ function ExtensionRegistration() {
 export default ExtensionRegistration;
 ```
 
-### Añadir `largeBookingsCustomerService` ruta en `App.js`{#add-widgets-route}
+### Agregar ruta `largeBookingsCustomerService` en `App.js`{#add-widgets-route}
 
-En el componente React principal `App.js`, añada el `largeBookingsCustomerService` para procesar la interfaz de usuario de la ruta URL relativa anterior.
+En el componente React principal `App.js`, agregue la ruta `largeBookingsCustomerService` para procesar la interfaz de usuario para la ruta de URL relativa anterior.
 
 `src/aem-cf-editor-1/web-src/src/components/App.js`
 
@@ -135,20 +135,20 @@ En el componente React principal `App.js`, añada el `largeBookingsCustomerServi
 ...
 ```
 
-### Crear `LargeBookingsCustomerService` Componente React{#create-widget-react-component}
+### Crear componente de React `LargeBookingsCustomerService`{#create-widget-react-component}
 
-La interfaz de usuario del widget o cuadro de diálogo se crea con la variable [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) marco.
+La interfaz de usuario del widget o cuadro de diálogo se crea con el módulo [Espectro de reacción de Adobe](https://react-spectrum.adobe.com/react-spectrum/index.html).
 
-El código del componente React al añadir los detalles del servicio de atención al cliente, rodee la variable del número de teléfono con el `#` carácter de insignias registradas para convertirlo en insignias, como `#${phoneNumber}#`, por lo tanto, no puede editarse.
+El código del componente React al agregar los detalles del servicio de atención al cliente, rodee la variable del número de teléfono con el carácter de distintivos registrados `#` para convertirla en distintivos, como `#${phoneNumber}#`, de modo que no se pueda editar.
 
-Estos son los aspectos destacados de `LargeBookingsCustomerService` código:
+Estos son los aspectos destacados del código `LargeBookingsCustomerService`:
 
-+ La interfaz de usuario se procesa mediante componentes del espectro de React, como [ComboBox](https://react-spectrum.adobe.com/react-spectrum/ComboBox.html), [ButtonGroup](https://react-spectrum.adobe.com/react-spectrum/ButtonGroup.html), [Botón](https://react-spectrum.adobe.com/react-spectrum/Button.html)
-+ El `largeGroupCustomerServiceList` La matriz tiene una asignación codificada del nombre representativo y el número de teléfono. En situaciones reales, estos datos se pueden recuperar de la acción del AppBuilder de Adobe, de sistemas externos o de puertas de enlace de API caseras o basadas en proveedores de la nube.
-+ El `guestConnection` se inicializa usando el `useEffect` [Reaccionar gancho](https://react.dev/reference/react/useEffect) y se administra como estado de componente. AEM Se utiliza para comunicarse con el host de la.
-+ El `handleCustomerServiceChange` obtiene el nombre representativo y el número de teléfono, y actualiza las variables de estado del componente.
-+ El `addCustomerServiceDetails` función que utiliza `guestConnection` El objeto proporciona la instrucción RTE que se debe ejecutar. En este caso `insertContent` instrucción y fragmento de código de HTML.
-+ Para realizar la **número de teléfono no editable** con distintivos, la variable `#` se añade un carácter especial antes y después de la variable `phoneNumber` variable, like `...<div><p>Phone Number: #${phoneNumber}#</strong></p></div>`.
++ La interfaz de usuario se representa mediante componentes del espectro de React, como [ComboBox](https://react-spectrum.adobe.com/react-spectrum/ComboBox.html), [ButtonGroup](https://react-spectrum.adobe.com/react-spectrum/ButtonGroup.html), [Button](https://react-spectrum.adobe.com/react-spectrum/Button.html)
++ La matriz `largeGroupCustomerServiceList` tiene una asignación codificada del nombre del representante y el número de teléfono. En situaciones reales, estos datos se pueden recuperar de la acción del AppBuilder de Adobe, de sistemas externos o de puertas de enlace de API caseras o basadas en proveedores de la nube.
++ El `guestConnection` se inicializó usando el `useEffect` [vínculo de React](https://react.dev/reference/react/useEffect) y se administró como estado de componente. AEM Se utiliza para comunicarse con el host de la.
++ La función `handleCustomerServiceChange` obtiene un nombre representativo y un número de teléfono, y actualiza las variables de estado del componente.
++ La función `addCustomerServiceDetails` que utiliza el objeto `guestConnection` proporciona una instrucción RTE para ejecutar. En este caso `insertContent` instrucción y fragmento de código de HTML.
++ Para que el número de teléfono **no se pueda editar** con distintivos, se agrega el carácter especial `#` antes y después de la variable `phoneNumber`, como `...<div><p>Phone Number: #${phoneNumber}#</strong></p></div>`.
 
 `src/aem-cf-editor-1/web-src/src/components/LargeBookingsCustomerService.js`
 

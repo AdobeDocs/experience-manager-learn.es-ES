@@ -26,16 +26,16 @@ Al enviar el formulario, combine los archivos adjuntos del formulario para gener
 
 ## Crear un componente OSGi que implemente la interfaz WorkflowProcess
 
-Cree un componente OSGi que implemente el [interfaz com.adobe.granite.workflow.exec.WorkflowProcess](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowProcess.html). AEM El código de este componente se puede asociar al componente paso de proceso en el flujo de trabajo de la. El método execute de la interfaz com.adobe.granite.workflow.exec.WorkflowProcess se implementa en este componente.
+Cree un componente OSGi que implemente la interfaz [com.adobe.granite.workflow.exec.WorkflowProcess](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowProcess.html). AEM El código de este componente se puede asociar al componente paso de proceso en el flujo de trabajo de la. El método execute de la interfaz com.adobe.granite.workflow.exec.WorkflowProcess se implementa en este componente.
 
 Cuando se envía un formulario adaptable al déclencheur AEM de un flujo de trabajo de la, los datos enviados se almacenan en el archivo especificado, en la carpeta de carga útil. Por ejemplo, este es el archivo de datos enviado. Necesitamos montar los documentos adjuntos especificados bajo la etiqueta de identificación y estados bancarios.
-![submitted-data](assets/submitted-data.JPG).
+![datos enviados](assets/submitted-data.JPG).
 
 ### Obtener los nombres de las etiquetas
 
 El orden de los archivos adjuntos se especifica como argumentos de paso de proceso en el flujo de trabajo, como se muestra en la captura de pantalla siguiente. Aquí estamos reuniendo los anexos añadidos al campo de identificación seguidos de los estados de cuenta
 
-![paso del proceso](assets/process-step.JPG)
+![paso-proceso](assets/process-step.JPG)
 
 El siguiente fragmento de código extrae los nombres de datos adjuntos de los argumentos de proceso
 
@@ -45,7 +45,7 @@ String  []attachmentNames  = arg2.get("PROCESS_ARGS","string").toString().split(
 
 ### Crear DDX a partir de los nombres de archivos adjuntos
 
-Luego tenemos que crear [XML de descripción de documento (DDX)](https://helpx.adobe.com/pdf/aem-forms/6-2/ddxRef.pdf) documento que utiliza el servicio Assembler para combinar documentos. El siguiente es el DDX que se creó a partir de los argumentos de proceso. El elemento NoForms permite aplanar documentos basados en XFA antes de montarlos. Observe que los elementos de origen del PDF están en el orden correcto, tal como se especifica en los argumentos de proceso.
+Luego necesitamos crear el documento [Document Description XML (DDX)](https://helpx.adobe.com/pdf/aem-forms/6-2/ddxRef.pdf) que usa el servicio Assembler para ensamblar documentos. El siguiente es el DDX que se creó a partir de los argumentos de proceso. El elemento NoForms permite aplanar documentos basados en XFA antes de montarlos. Observe que los elementos de origen del PDF están en el orden correcto, tal como se especifica en los argumentos de proceso.
 
 ![ddx-xml](assets/ddx.PNG)
 
@@ -134,15 +134,15 @@ A continuación se muestra la estructura de carpetas de carga útil después de 
 
 ### AEM Para que esta capacidad funcione en el servidor de la
 
-* Descargue la [Montar formulario de archivos adjuntos](assets/assemble-form-attachments-af.zip) a su sistema local.
-* Importe el formulario desde el[Forms Y Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) página.
-* Descargar [workflow](assets/assemble-form-attachments.zip) AEM e importarlo en el administrador de paquetes mediante el uso de un administrador de paquetes.
-* Descargue la [paquete personalizado](assets/assembletaskattachments.assembletaskattachments.core-1.0-SNAPSHOT.jar)
-* Implementar e iniciar el paquete utilizando [consola web](http://localhost:4502/system/console/bundles)
-* Dirija el explorador a [Formulario AssembleAttachments](http://localhost:4502/content/dam/formsanddocuments/assembleattachments/jcr:content?wcmmode=disabled)
+* Descargue [Montar formulario de archivos adjuntos](assets/assemble-form-attachments-af.zip) en su sistema local.
+* Importe el formulario desde la página [Forms And Documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
+* AEM Descargue [flujo de trabajo](assets/assemble-form-attachments.zip) e impórtelo en mediante el administrador de paquetes para que lo haga con el.
+* Descargar el [paquete personalizado](assets/assembletaskattachments.assembletaskattachments.core-1.0-SNAPSHOT.jar)
+* Implementar e iniciar el paquete usando la [consola web](http://localhost:4502/system/console/bundles)
+* Dirija su explorador a [AssembleAttachments Form](http://localhost:4502/content/dam/formsanddocuments/assembleattachments/jcr:content?wcmmode=disabled)
 * Agregue un archivo adjunto en el documento de ID y un par de documentos PDF a la sección de extractos bancarios
 * Envíe el formulario al déclencheur del flujo de trabajo
-* Compruebe el flujo de trabajo [carpeta de carga útil en crx](http://localhost:4502/crx/de/index.jsp#/var/fd/dashboard/payload) para el pdf ensamblado
+* Compruebe la carpeta [payload del flujo de trabajo en el crx](http://localhost:4502/crx/de/index.jsp#/var/fd/dashboard/payload) para el pdf ensamblado
 
 >[!NOTE]
 > AEM Si ha habilitado el registrador para el paquete personalizado, el DDX y el archivo ensamblado se escribirán en la carpeta de la instalación de la.

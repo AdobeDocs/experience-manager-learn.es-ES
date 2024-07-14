@@ -25,19 +25,19 @@ AEM Aprenda a añadir widgets al editor de texto enriquecido (RTE) en el editor 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420822?quality=12&learn=on)
 
-Para añadir el contenido dinámico en el Editor de texto enriquecido (RTE), la variable **widgets** se puede utilizar. Los widgets ayudan a integrar la IU simple o compleja en RTE y la IU se puede crear utilizando el marco de trabajo JS de su elección. Se pueden pensar como diálogos que se abren presionando `{` clave especial en el RTE.
+Para agregar contenido dinámico en el Editor de texto enriquecido (RTE), se puede usar la funcionalidad **widgets**. Los widgets ayudan a integrar la IU simple o compleja en RTE y la IU se puede crear utilizando el marco de trabajo JS de su elección. Se pueden considerar como cuadros de diálogo que se abren pulsando la tecla especial `{` en RTE.
 
 Normalmente, los widgets se utilizan para insertar el contenido dinámico que tiene una dependencia externa del sistema o que podría cambiar según el contexto actual.
 
-El **widgets** se añaden a **RTE** en el Editor de fragmentos de contenido mediante `rte` punto de extensión. Uso de `rte` punto de extensión `getWidgets()` método se añaden uno o varios widgets. Se activan pulsando la tecla `{` clave especial para abrir la opción menú contextual y, a continuación, seleccione el widget deseado para cargar la interfaz de usuario del cuadro de diálogo personalizado.
+Los **widgets** se han agregado a **RTE** en el editor de fragmentos de contenido usando el punto de extensión `rte`. Con el método `getWidgets()` del punto de extensión `rte` se agregan uno o varios widgets. Se activan pulsando la tecla especial `{` para abrir la opción del menú contextual y, a continuación, seleccione el widget deseado para cargar la interfaz de usuario del cuadro de diálogo personalizado.
 
-Este ejemplo muestra cómo añadir un widget llamado _Lista de códigos de descuento_ para buscar, seleccionar y añadir el código de descuento específico de la aventura WKND dentro de un contenido RTE. Estos códigos de descuento se pueden administrar en sistemas externos como Order Management System (OMS), Product Information Management (PIM), una aplicación propia o una acción de Adobe de AppBuilder.
+Este ejemplo muestra cómo agregar un widget llamado _Lista de códigos de descuento_ para buscar, seleccionar y agregar el código de descuento específico de la aventura WKND dentro de un contenido RTE. Estos códigos de descuento se pueden administrar en sistemas externos como Order Management System (OMS), Product Information Management (PIM), una aplicación propia o una acción de AppBuilder de Adobe.
 
-Para que las cosas sean sencillas, este ejemplo utiliza el [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) marco de trabajo para desarrollar la interfaz de usuario del widget o cuadro de diálogo y el nombre de la aventura WKND predefinido, datos del código de descuento.
+Para simplificar las cosas, este ejemplo usa el módulo [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) para desarrollar la interfaz de usuario del widget o cuadro de diálogo, el nombre de la aventura WKND predefinido y los datos del código de descuento.
 
 ## Punto de extensión
 
-Este ejemplo se extiende hasta el punto de extensión `rte` para agregar un widget al RTE en el Editor de fragmentos de contenido.
+Este ejemplo se extiende al punto de extensión `rte` para agregar un widget al RTE en el Editor de fragmentos de contenido.
 
 | AEM Interfaz de usuario extendida | Punto de extensión |
 | ------------------------ | --------------------- | 
@@ -45,16 +45,16 @@ Este ejemplo se extiende hasta el punto de extensión `rte` para agregar un widg
 
 ## Extensión de ejemplo
 
-En el siguiente ejemplo se crea un _Lista de códigos de descuento_ widget. Pulsando la tecla `{` clave especial dentro de RTE, se abre el menú contextual y, a continuación, seleccionando la _Lista de códigos de descuento_ en el menú contextual se abre la interfaz de usuario del cuadro de diálogo.
+En el siguiente ejemplo se crea un widget de _Lista de códigos de descuento_. Al presionar la tecla especial `{` dentro de RTE, se abre el menú contextual y, a continuación, al seleccionar la opción _Lista de códigos de descuento_ en el menú contextual, se abre la interfaz de usuario del cuadro de diálogo.
 
 Los autores de contenido de WKND pueden buscar, seleccionar y agregar el código de descuento actual específico de Adventure, si está disponible.
 
 ### Registro de extensiones
 
-`ExtensionRegistration.js`AEM , asignado a la ruta index.html, es el punto de entrada para la extensión de la y define:
+AEM `ExtensionRegistration.js`, asignado a la ruta index.html, es el punto de entrada para la extensión de la y define:
 
-+ La definición del widget en `getWidgets()` función con `id, label and url` atributos.
-+ El `url` valor de atributo, una ruta URL relativa (`/index.html#/discountCodes`) para cargar la IU de diálogo.
++ La definición del widget en la función `getWidgets()` con atributos `id, label and url`.
++ Valor de atributo `url`, una ruta de acceso URL relativa (`/index.html#/discountCodes`) para cargar la interfaz de usuario del cuadro de diálogo.
 
 `src/aem-cf-editor-1/web-src/src/components/ExtensionRegistration.js`
 
@@ -92,9 +92,9 @@ function ExtensionRegistration() {
 export default ExtensionRegistration;
 ```
 
-### Añadir `discountCodes` ruta en `App.js`{#add-widgets-route}
+### Agregar ruta `discountCodes` en `App.js`{#add-widgets-route}
 
-En el componente React principal `App.js`, añada el `discountCodes` para procesar la interfaz de usuario de la ruta URL relativa anterior.
+En el componente React principal `App.js`, agregue la ruta `discountCodes` para procesar la interfaz de usuario para la ruta de URL relativa anterior.
 
 `src/aem-cf-editor-1/web-src/src/components/App.js`
 
@@ -114,15 +114,15 @@ En el componente React principal `App.js`, añada el `discountCodes` para proces
 ...
 ```
 
-### Crear `DiscountCodes` Componente React{#create-widget-react-component}
+### Crear componente de React `DiscountCodes`{#create-widget-react-component}
 
-La interfaz de usuario del widget o cuadro de diálogo se crea con la variable [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) marco. El `DiscountCodes` el código de componente es el siguiente, y estos son los aspectos destacados:
+La interfaz de usuario del widget o cuadro de diálogo se crea con el módulo [Espectro de reacción de Adobe](https://react-spectrum.adobe.com/react-spectrum/index.html). El código del componente `DiscountCodes` es el siguiente, así que le presentamos algunos aspectos destacados:
 
-+ La interfaz de usuario se procesa mediante componentes del espectro de React, como [ComboBox](https://react-spectrum.adobe.com/react-spectrum/ComboBox.html), [ButtonGroup](https://react-spectrum.adobe.com/react-spectrum/ButtonGroup.html), [Botón](https://react-spectrum.adobe.com/react-spectrum/Button.html)
-+ El `adventureDiscountCodes` La matriz tiene una asignación codificada del nombre de la aventura y el código de descuento. En situaciones reales, estos datos se pueden recuperar de la acción del AppBuilder de Adobe o de sistemas externos como PIM, OMS o la puerta de enlace de API casera o basada en el proveedor de la nube.
-+ El `guestConnection` se inicializa usando el `useEffect` [Reaccionar gancho](https://react.dev/reference/react/useEffect) y se administra como estado de componente. AEM Se utiliza para comunicarse con el host de la.
-+ El `handleDiscountCodeChange` función obtiene el código de descuento para el nombre de aventura seleccionado y actualiza la variable de estado.
-+ El `addDiscountCode` función que utiliza `guestConnection` El objeto proporciona la instrucción RTE que se debe ejecutar. En este caso `insertContent` instrucción y fragmento de código de HTML del código de descuento real que se va a insertar en el RTE.
++ La interfaz de usuario se representa mediante componentes del espectro de React, como [ComboBox](https://react-spectrum.adobe.com/react-spectrum/ComboBox.html), [ButtonGroup](https://react-spectrum.adobe.com/react-spectrum/ButtonGroup.html), [Button](https://react-spectrum.adobe.com/react-spectrum/Button.html)
++ La matriz `adventureDiscountCodes` tiene una asignación codificada del nombre de la aventura y el código de descuento. En situaciones reales, estos datos se pueden recuperar de la acción del AppBuilder de Adobe o de sistemas externos como PIM, OMS o la puerta de enlace de API casera o basada en el proveedor de la nube.
++ El `guestConnection` se inicializó usando el `useEffect` [vínculo de React](https://react.dev/reference/react/useEffect) y se administró como estado de componente. AEM Se utiliza para comunicarse con el host de la.
++ La función `handleDiscountCodeChange` obtiene el código de descuento del nombre de aventura seleccionado y actualiza la variable de estado.
++ La función `addDiscountCode` que utiliza el objeto `guestConnection` proporciona una instrucción RTE para ejecutar. En este caso, `insertContent` instrucción y fragmento de código de HTML del código de descuento real que se insertará en RTE.
 
 `src/aem-cf-editor-1/web-src/src/components/DiscountCodes.js`
 

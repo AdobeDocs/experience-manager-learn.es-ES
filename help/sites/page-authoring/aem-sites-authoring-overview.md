@@ -28,5 +28,5 @@ AEM En el siguiente vídeo se ofrece una descripción general de los conceptos b
 
 ## Recursos adicionales {#additional-resources}
 
-* [Edición de documentación de contenido de página](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=es)
+* [Editando documentación de contenido de página](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=es)
 * [Guía rápida para la creación de páginas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)

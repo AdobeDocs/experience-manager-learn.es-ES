@@ -1,6 +1,6 @@
 ---
 title: AEM Extensiones de fragmentos de contenido
-description: AEM Obtenga información sobre cómo crear e implementar extensiones de fragmentos de contenido as a Cloud Service
+description: Obtenga información sobre cómo crear e implementar extensiones de fragmentos de contenido de AEM as a Cloud Service
 feature: Developer Tools
 version: Cloud Service
 topic: Development
@@ -29,7 +29,7 @@ AEM La Consola de fragmento de contenido en (Adobe Experience Manager) es una in
 
 ![Consola Fragmentos de contenido](./assets/overview/cfc.png)
 
-[AEM Consola Fragmentos de contenido de](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=es) es la interfaz de usuario ampliable para enumerar y administrar fragmentos de contenido. [AEM Se crean extensiones de la consola Fragmento de contenido de la](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/code-generation) uso del `@adobe/aem-cf-admin-ui-ext-tpl` Plantilla del Generador de aplicaciones.
+AEM [Consola de fragmentos de contenido de](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=es) es la interfaz de usuario ampliable para enumerar y administrar fragmentos de contenido. AEM [Se han creado extensiones de la consola de fragmentos de contenido de](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/code-generation) mediante la plantilla de App Builder `@adobe/aem-cf-admin-ui-ext-tpl`.
 
 Los siguientes puntos de extensión de la consola Fragmentos de contenido están disponibles:
 
@@ -102,7 +102,7 @@ AEM El Editor de fragmentos de contenido en (Adobe Experience Manager) es un com
 
 ![Editor de fragmentos de contenido](./assets/overview/cfe.png)
 
-AEM El Editor de fragmentos de contenido es la interfaz de usuario ampliable para editar fragmentos de contenido. [AEM Se crean extensiones del Editor de fragmentos de contenido de la](https://developer.adobe.com/uix/docs/services/aem-cf-editor/code-generation/) uso del `@adobe/aem-cf-editor-ui-ext-tpl` Plantilla del Generador de aplicaciones.
+AEM El Editor de fragmentos de contenido es la interfaz de usuario ampliable para editar fragmentos de contenido. AEM [Se han creado extensiones del Editor de fragmentos de contenido de la](https://developer.adobe.com/uix/docs/services/aem-cf-editor/code-generation/) con la plantilla de App Builder `@adobe/aem-cf-editor-ui-ext-tpl`.
 
 Los siguientes puntos de extensión del Editor de fragmentos de contenido están disponibles:
 

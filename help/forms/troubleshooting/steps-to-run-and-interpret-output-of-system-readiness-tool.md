@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Pasos para ejecutar e interpretar la salida de la herramienta Preparación del sistema PDFG de AEM Forms
 
-*Este vídeo muestra el proceso de ejecución e interpretación de la salida de la Herramienta de preparación del sistema (SRT) de AEM Forms PDFG.*
+*Este vídeo muestra el proceso de ejecución e interpretación de la salida de la Herramienta de preparación del sistema (SRT) PDFG de AEM Forms.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335543?quality=12&learn=on)

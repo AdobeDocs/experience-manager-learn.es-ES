@@ -28,7 +28,7 @@ Habilitar tipos de recursos personalizados para incluirlos en el portal de AEM F
 
 ## Especificar ruta base {#specify-base-path}
 
-La ruta base es la ruta del repositorio de nivel superior que comprende todos los recursos que un usuario puede desear enumerar en el componente Buscar y listar. Si lo desea, el usuario también puede configurar ubicaciones específicas dentro de la ruta base desde el cuadro de diálogo de edición de componentes, de modo que la búsqueda se active en ubicaciones específicas en lugar de buscar todos los nodos dentro de la ruta base. De forma predeterminada, la ruta base se utiliza como criterio de ruta de búsqueda para recuperar los recursos a menos que el usuario configure un conjunto de rutas específicas desde esta ubicación. Es importante tener un valor óptimo de esta ruta para realizar una búsqueda eficaz. El valor predeterminado de la ruta base se mantendrá como **_/content/dam/formsanddocuments_** porque todos los recursos de AEM Forms residen en **_/content/dam/formsanddocuments._**
+La ruta base es la ruta del repositorio de nivel superior que comprende todos los recursos que un usuario puede desear enumerar en el componente Buscar y listar. Si lo desea, el usuario también puede configurar ubicaciones específicas dentro de la ruta base desde el cuadro de diálogo de edición de componentes, de modo que la búsqueda se active en ubicaciones específicas en lugar de buscar todos los nodos dentro de la ruta base. De forma predeterminada, la ruta base se utiliza como criterio de ruta de búsqueda para recuperar los recursos a menos que el usuario configure un conjunto de rutas específicas desde esta ubicación. Es importante tener un valor óptimo de esta ruta para realizar una búsqueda eficaz. El valor predeterminado de la ruta de acceso base permanecerá como **_/content/dam/formsanddocuments_** porque todos los recursos de AEM Forms residen en **_/content/dam/formsanddocuments._**
 
 Pasos para configurar la ruta base
 
@@ -39,14 +39,14 @@ Pasos para configurar la ruta base
 1. Asegúrese de que la ubicación de la superposición sea &quot;/apps/&quot;
 1. Haga clic en Ok
 1. Haga clic en Guardar
-1. Navegue hasta la nueva estructura creada en **/apps/fd/fp/extensions/querybuilder/basepath**
+1. Vaya a la nueva estructura creada en **/apps/fd/fp/extensions/querybuilder/basepath**
 
 1. Cambie el valor de la propiedad path a **&quot;/content/dam&quot;**
 1. Haga clic en Guardar
 
-Al especificar la propiedad de ruta a **&quot;/content/dam&quot;** básicamente está estableciendo Ruta básica en /content/dam. Esto se puede comprobar abriendo el componente Buscar y listar.
+Al especificar la propiedad de ruta de acceso en **&quot;/content/dam&quot;**, básicamente está estableciendo la ruta de acceso base en /content/dam. Esto se puede comprobar abriendo el componente Buscar y listar.
 
-![basepath](assets/basepath.png)
+![rutaDeAccesoBase](assets/basepath.png)
 
 ## Registrar tipos de recursos personalizados {#register-custom-asset-types}
 
@@ -62,7 +62,7 @@ Hemos añadido una nueva pestaña (Lista de recursos) en el componente Buscar y 
 1. Crear nodo de superposición de **/libs/fd/fp/extensions/querybuilder/assettypes**
 
 1. Establezca la ubicación de las superposiciones en &quot;/apps&quot;
-1. Navegue hasta la nueva estructura creada en `/apps/fd/fp/extensions/querybuilder/assettypes`
+1. Vaya a la nueva estructura creada en `/apps/fd/fp/extensions/querybuilder/assettypes`
 
 1. En esta ubicación, cree un nodo &quot;nt:unstructured&quot; para el tipo que se va a registrar, asigne un nombre al nodo **mp4files. Agregue las dos propiedades siguientes a este nodo mp4files**
 
@@ -79,12 +79,12 @@ Hemos añadido una nueva pestaña (Lista de recursos) en el componente Buscar y 
 
 1. Esto significa que los recursos que tienen la propiedad dc:format igual a video/mp4 se consideran un tipo de recurso &quot;Mp4 Videos&quot;. Puede utilizar cualquier propiedad enumerada en el nodo &quot;jcr:content/metadata&quot; para los criterios de búsqueda
 
-1. **Asegúrese de guardar el trabajo**
+1. **Asegúrese de guardar su trabajo**
 
 Después de realizar los pasos anteriores, el nuevo tipo de recurso (archivos Mp4) empezará a mostrarse en la lista desplegable de tipos de recurso del componente Buscar y listar como se muestra a continuación
 
 ![mp4files](assets/mp4files.png)
 
-[Si tiene problemas para que esto funcione, puede importar el siguiente paquete.](assets/assettypeskt1.zip) El paquete tiene definidos dos tipos de recursos personalizados. Archivos Mp4 y documentos de Word. Le sugerimos que eche un vistazo a la **/apps/fd/fp/extensions/querybuilder/assettypes**
+[Si tiene problemas para que esto funcione, puede importar el siguiente paquete.](assets/assettypeskt1.zip) El paquete tiene definidos dos tipos de recursos personalizados. Archivos Mp4 y documentos de Word. Le sugerimos que eche un vistazo a **/apps/fd/fp/extensions/querybuilder/assettypes**
 
-[Instalación del paquete del portal personalizado](assets/customportalpage.zip). Este paquete contiene una página de portal de ejemplo. Esta página se utiliza en la parte 2 de este tutorial
+[Instale el paquete de portal personalizado](assets/customportalpage.zip). Este paquete contiene una página de portal de ejemplo. Esta página se utiliza en la parte 2 de este tutorial

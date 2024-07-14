@@ -30,7 +30,7 @@ Crearemos una nueva plantilla de formulario adaptable para los fines de este tut
 
 ## Recursos
 
-La plantilla y el componente de página utilizados en este tutorial pueden ser [descargado desde aquí](assets/sign-multiple-forms-template.zip)
+La plantilla y el componente de página utilizados en este tutorial se pueden [descargar desde aquí](assets/sign-multiple-forms-template.zip)
 
 ## Siguientes pasos
 

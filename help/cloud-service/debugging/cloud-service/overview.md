@@ -1,6 +1,6 @@
 ---
-title: AEM Depuración as a Cloud Service de
-description: AEM AEM en una infraestructura en la nube escalable y autoservicio, lo que requiere que los desarrolladores de la comprendan cómo comprender y depurar diversas facetas de la as a Cloud Service AEM, desde la compilación y la implementación hasta la obtención de detalles sobre la ejecución de aplicaciones en la nube.
+title: Depuración de AEM as a Cloud Service
+description: AEM en una infraestructura en la nube escalable y de autoservicio, lo que requiere que los desarrolladores de comprendan cómo comprender y depurar varias facetas de AEM as a Cloud Service AEM, desde la compilación y la implementación hasta la obtención de detalles sobre la ejecución de aplicaciones de la.
 feature: Developer Tools
 version: Cloud Service
 doc-type: Tutorial
@@ -17,30 +17,30 @@ ht-degree: 1%
 
 ---
 
-# AEM Depuración as a Cloud Service de
+# Depuración de AEM as a Cloud Service
 
-AEM El as a Cloud Service AEM es la forma nativa de la nube de aprovechar las aplicaciones de la. AEM El as a Cloud Service AEM AEM se ejecuta en una infraestructura en la nube escalable y de autoservicio, lo que requiere que los desarrolladores de comprendan cómo comprender y depurar diversas facetas de los as a Cloud Service AEM de la, desde la compilación y la implementación hasta la obtención de detalles sobre la ejecución de aplicaciones en la nube.
+AEM as a Cloud Service AEM es la forma nativa de la nube de aprovechar las aplicaciones de la. AEM as a Cloud Service AEM se ejecuta en una infraestructura en la nube escalable y de autoservicio, lo que requiere que los desarrolladores de comprendan cómo comprender y depurar varias facetas de AEM as a Cloud Service AEM, desde la compilación y la implementación hasta la obtención de detalles sobre la ejecución de aplicaciones de la nube.
 
 ## Registros
 
-Los registros proporcionan detalles sobre el funcionamiento de la aplicación en as a Cloud Service, así como información sobre los problemas con las implementaciones, y ofrecen información sobre cómo funcionan las aplicaciones en AEM.
+Los registros proporcionan detalles sobre el funcionamiento de la aplicación en AEM as a Cloud Service, así como información sobre los problemas con las implementaciones.
 
-[AEM Depuración de registros as a Cloud Service con](./logs.md)
+[Depuración de AEM as a Cloud Service mediante registros](./logs.md)
 
 ## Compilación e implementación
 
-Las canalizaciones de Adobe AEM AEM Cloud Manager implementan la aplicación de a través de una serie de pasos para determinar la calidad y viabilidad del código cuando se implementa para la implementación en as a Cloud Service de la. Cada uno de los pasos puede provocar un error, por lo que es importante comprender cómo depurar las compilaciones para determinar la causa raíz de los errores y cómo resolverlos.
+Adobe Las canalizaciones de Cloud Manager AEM implementan la aplicación de la aplicación a través de una serie de pasos para determinar la calidad y viabilidad del código cuando se implementa en AEM as a Cloud Service. Cada uno de los pasos puede provocar un error, por lo que es importante comprender cómo depurar las compilaciones para determinar la causa raíz de los errores y cómo resolverlos.
 
-[AEM Depuración de la compilación e implementación as a Cloud Service de la](./build-and-deployment.md)
+[Depuración de la compilación y la implementación de AEM as a Cloud Service](./build-and-deployment.md)
 
 ## Consola de desarrollador
 
-Developer Console proporciona una variedad de información e introspecciones en entornos as a Cloud Service AEM que son útiles para comprender cómo reconoce y funciona su aplicación dentro de los entornos AEM de la aplicación de manera as a Cloud Service.
+Developer Console proporciona una variedad de información e introspecciones en entornos de AEM as a Cloud Service que son útiles para comprender cómo AEM as a Cloud Service reconoce y funciona su aplicación.
 
-[AEM Depuración as a Cloud Service de la con Developer Console](./developer-console.md)
+[Depuración de AEM as a Cloud Service con Developer Console](./developer-console.md)
 
 ## Explorador del repositorio
 
-AEM AEM El Explorador de repositorios es una potente herramienta que proporciona visibilidad sobre el almacén de datos subyacente, lo que permite depurar fácilmente el entorno as a Cloud Service de la. AEM El Explorador de repositorios admite una vista de sólo lectura de los recursos y las propiedades de los recursos en producción, fase y desarrollo, así como los servicios de creación, publicación y vista previa.
+AEM El Explorador de repositorios es una potente herramienta que proporciona visibilidad sobre el almacén de datos subyacente de los que se dispone en el repositorio de datos, lo que permite depurar fácilmente el entorno de AEM as a Cloud Service. AEM El Explorador de repositorios admite una vista de sólo lectura de los recursos y las propiedades de los recursos en producción, fase y desarrollo, así como de los servicios de autor, Publish y vista previa.
 
-[AEM Depuración as a Cloud Service con el Explorador de repositorios](./repository-browser.md)
+[Depuración de AEM as a Cloud Service con el Explorador de repositorios](./repository-browser.md)

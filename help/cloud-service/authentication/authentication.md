@@ -1,6 +1,6 @@
 ---
-title: AEM Autenticación en el as a Cloud Service
-description: AEM Obtenga información acerca de la autenticación en los as a Cloud Service de.
+title: Autenticación en AEM as a Cloud Service
+description: Obtenga información acerca de la autenticación en AEM as a Cloud Service.
 version: Cloud Service
 feature: Security
 topic: Development, Integrations, Security
@@ -18,9 +18,9 @@ ht-degree: 3%
 
 ---
 
-# AEM autenticación as a Cloud Service
+# Autenticación de AEM as a Cloud Service
 
-AEM El as a Cloud Service admite varias opciones de autenticación y varía según el tipo de servicio.
+AEM as a Cloud Service admite varias opciones de autenticación y varía según el tipo de servicio.
 
 |                       | AEM Author | Publicación de AEM |
 |-----------------------|:----------:|:-----------:|
@@ -49,7 +49,7 @@ Haga clic en el vínculo correspondiente a continuación para obtener más infor
       <a  href="./saml-2-0.md"><img alt="SAML 2.0" src="./assets/card--saml-2-0.png"/></a>
       <div><strong><a href="./saml-2-0.md">SAML 2.0</a></strong></div>
       <p>
-        AEM Autentique al usuario de su sitio web con un IDP mediante la integración de SAML 2.0 del servicio de publicación de.
+        AEM Autentique al usuario de su sitio web con un IDP mediante la integración de SAML 2.0 del servicio de Publish de.
       </p>
     </td>   
    <td>

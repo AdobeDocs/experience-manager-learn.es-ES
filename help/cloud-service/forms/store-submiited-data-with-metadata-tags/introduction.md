@@ -30,7 +30,7 @@ En este tutorial, aprenderá a implementar un caso de uso sencillo de almacenami
 
 Para implementar el caso de uso anterior en AEM Forms CS, necesitará lo siguiente
 
-* [Instancia de AEM Forms CS lista para la nube](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-and-aem-sync.html?lang=en#set-up-aem-author-instance)
+* [Instancia preparada para la nube de AEM Forms CS](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-and-aem-sync.html?lang=en#set-up-aem-author-instance)
 * [cuenta del portal de Azure](https://portal.azure.com/)
 
 

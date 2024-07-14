@@ -28,9 +28,9 @@ Conozca los conceptos básicos del desarrollo de servicios OSGi, incluidos:
 
 ## Recursos
 
-+ [@Component JavaDocs](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/osgi/service/component/annotations/Component.html)
-+ [@ProviderType JavaDocs](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/osgi/annotation/versioning/ProviderType.html)
-+ [@Version JavaDocs](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/osgi/annotation/versioning/Version.html)
++ [@Component documentos Java](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/osgi/service/component/annotations/Component.html)
++ [@ProviderType documentos Java](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/osgi/annotation/versioning/ProviderType.html)
++ [@Version documentos Java](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/osgi/annotation/versioning/Version.html)
 
 ## Código
 
@@ -95,4 +95,4 @@ package com.adobe.aem.wknd.examples.core.adventures;
 import org.osgi.annotation.versioning.Version;
 ```
 
-Adición de un `package-info.java` AEM es necesario para asegurarse de que otros paquetes OSGi en puedan resolver la interfaz de servicio OSGi (o cualquier clase JavaScript). Si la variable `package-info.java` falta, el paquete Java y sus interfaces o clases Java no se exportan. Otros paquetes OSGi que intenten importar estas interfaces o clases Java desde este paquete Java, generarán un error con el mensaje __No se puede resolver__ AEM en la consola del paquete OSGi de OSGi.
+AEM Se requiere agregar un `package-info.java` para garantizar que otros paquetes OSGi en puedan resolver la interfaz de servicio OSGi (o cualquier clase Java) en la interfaz de servicio OSGi. Si falta `package-info.java`, el paquete Java y sus interfaces o clases Java no se exportan. Otros paquetes OSGi que intenten importar estas interfaces o clases Java desde este paquete Java generarán un error con el mensaje __No se puede resolver__ al AEM la consola del paquete OSGi.

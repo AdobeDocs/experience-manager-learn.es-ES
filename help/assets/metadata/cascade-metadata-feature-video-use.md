@@ -31,4 +31,4 @@ Existen tres conjuntos de reglas dinámicas que se pueden habilitar para un camp
 
 2. **Visibilidad** : los campos siempre pueden ser visibles o solo visibles en función del valor de otro campo desplegable.
 
-3. **Opciones** : (solo aplicable a campos desplegables) filtre las opciones que se muestran al usuario en función del valor seleccionado actualmente en otro campo desplegable.
+3. **Opciones** : (solo aplicable a campos desplegables) filtran las opciones mostradas al usuario en función del valor seleccionado actualmente en otro campo desplegable.

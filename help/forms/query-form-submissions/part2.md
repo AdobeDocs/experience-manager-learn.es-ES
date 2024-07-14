@@ -32,7 +32,7 @@ La siguiente captura de pantalla muestra las etiquetas de índice de blob en Azu
 
 ![blob-index-tags](assets/blob-index-tags.png)
 
-El código de envío personalizado se encuentra en **_StoreFormDataWithBlobIndexTagsInAzure_** y el código para almacenar y recuperar datos de Azure se encuentra en el componente **_SaveAndFetchFromAzure_**
+El código de envío personalizado está en **_StoreFormDataWithBlobIndexTagsInAzure_** y el código para almacenar y recuperar datos de Azure está en el componente **_SaveAndFetchFromAzure_**
 
 ## Siguientes pasos
 

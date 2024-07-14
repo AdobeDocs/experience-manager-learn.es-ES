@@ -23,22 +23,22 @@ AEM En determinados casos de uso, es posible que tenga el requisito de enviar un
 
 ## Implementar el paquete OSGi de muestra
 
-[Implementar el paquete OSGi](assets/AdobeSignHelperMethods.core-1.0.0-SNAPSHOT.jar) AEM a través de la consola web de OSGi de OSGi. AEM Especifique la clave de integración de API y el usuario de API mediante la configuración OSGi, como se muestra a continuación, a través del Administrador de configuración de la consola web OSGi de la consola web de OSGi.
+AEM [Implemente el paquete OSGi](assets/AdobeSignHelperMethods.core-1.0.0-SNAPSHOT.jar) a través de la consola web OSGi de OSGi de la. AEM Especifique la clave de integración de API y el usuario de API mediante la configuración OSGi, como se muestra a continuación, a través del Administrador de configuración de la consola web OSGi de la consola web de OSGi.
 
- Tenga en cuenta que las `AdobeSignHelperMethods` El paquete OSGi no se reconoce como código de producto de Adobe Experience Manager AEM () y, como tal, no es compatible con la compatibilidad con Adobes.
-![configuración de firma](assets/sign-configuration.png)
+ Tenga en cuenta que el paquete OSGi `AdobeSignHelperMethods` no se reconoce como código de producto de Adobe Experience Manager AEM () y, como tal, no es compatible con la compatibilidad con Adobe.
+![configuración de inicio de sesión](assets/sign-configuration.png)
 
 
 ## Documentación de API
 
-Las siguientes opciones están disponibles a través de la `AcrobatSignHelperMethods` Servicio OSGi proporcionado en el paquete OSGi.
+Los siguientes están disponibles a través del servicio OSGi `AcrobatSignHelperMethods` proporcionado en el paquete OSGi.
 
 ### getTransientDocumentID
 
 `String getTransientDocumentID(Document documentForSigning) throws IOException`
 
 
-Documento que se utiliza para crear un acuerdo o un formulario web. El remitente carga primero el documento en Acrobat Sign. Esto se conoce como _efímero_ ya que solo está disponible para su uso durante 7 días después de la carga. Este método acepta `com.adobe.aemfd.docmanager.Document` y devuelve el ID de documento transitorio.
+Documento que se utiliza para crear un acuerdo o un formulario web. El remitente carga primero el documento en Acrobat Sign. Esto se conoce como _transitorio_, ya que está disponible para usar solamente durante 7 días después de la carga. Este método acepta `com.adobe.aemfd.docmanager.Document` y devuelve el ID de documento transitorio.
 
 ### getAgreementID
 
@@ -60,7 +60,7 @@ Obtenga una URL de widget para un ID de widget específico. Esta URL de widget s
 
 ## Usar la API
 
-El `AcrobatSignHelperMethods` es un servicio OSGi, por lo que debe anotarse con la anotación @Reference en el código java.
+`AcrobatSignHelperMethods` es un servicio OSGi, por lo que se debe anotar usando la anotación @Reference en el código java.
 
 ```java
 ...

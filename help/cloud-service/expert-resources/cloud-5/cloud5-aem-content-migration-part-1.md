@@ -19,7 +19,7 @@ ht-degree: 4%
 
 # Migración a la nube: Parte 1
 
-AEM Darin y James analizan Dispatcher en la nube de la, incluidas algunas prácticas recomendadas y diferencias con AMS/On-Prem. También se refieren a la migración a la nube.
+Darin y James analizan el Dispatcher AEM en la nube de, incluidas algunas prácticas recomendadas y diferencias con respecto a AMS/On-Prem. También se refieren a la migración a la nube.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342133?quality=12&learn=on)
 
@@ -28,6 +28,6 @@ AEM Darin y James analizan Dispatcher en la nube de la, incluidas algunas práct
 + evaluación de las instancias que desea migrar
    + BPA: Analizador de prácticas recomendadas
    + CAM: cloud Acceleration Manager
-+ [repostatos](https://github.com/chetanmeh/oak-console-scripts/tree/master/src/main/groovy/repostats)
++ [informes](https://github.com/chetanmeh/oak-console-scripts/tree/master/src/main/groovy/repostats)
 + [Herramientas de modernización de AEM](https://opensource.adobe.com/aem-modernize-tools/)
 + [Herramientas de migración de Cloud Service](https://github.com/adobe/aem-cloud-service-source-migration)

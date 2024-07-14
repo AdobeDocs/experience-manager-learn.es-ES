@@ -25,7 +25,7 @@ Al finalizar este curso, habrá aprendido lo siguiente.
 
 * Crear modelo de datos de formulario respaldado por RDBMS
 * Crear asociación entre 2 entidades
-* Rellenar tabla con datos devueltos por _get_ servicio de modelo de datos de formulario
+* Rellenar tabla con datos devueltos por el servicio _get_ del modelo de datos de formulario
 * Usar atributo de solicitud del modelo de datos de formulario
 
 El siguiente vídeo le ofrece una descripción general del curso

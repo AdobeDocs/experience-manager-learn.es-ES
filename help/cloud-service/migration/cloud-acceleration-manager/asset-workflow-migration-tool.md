@@ -1,6 +1,6 @@
 ---
 title: Herramienta de migración del flujo de trabajo de recursos
-description: Descubra cómo la herramienta Migración de flujos de trabajo de recursos ayuda a migrar los flujos de trabajo de AEM Assets AEM existentes a flujos de trabajo de recursos as a Cloud Service de la.
+description: Descubra cómo la herramienta Migración de flujos de trabajo de recursos ayuda a migrar sus flujos de trabajo de AEM Assets existentes a AEM as a Cloud Service.
 version: Cloud Service
 feature: Migration
 topic: Migration, Upgrade
@@ -19,6 +19,6 @@ ht-degree: 16%
 
 # Herramienta de migración del flujo de trabajo de recursos
 
-Descubra cómo la herramienta Migración de flujos de trabajo de recursos ayuda a migrar los flujos de trabajo de AEM Assets AEM existentes a flujos de trabajo de recursos as a Cloud Service de la.
+Descubra cómo la herramienta Migración de flujos de trabajo de recursos ayuda a migrar sus flujos de trabajo de AEM Assets existentes a AEM as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336697?quality=12&learn=on)

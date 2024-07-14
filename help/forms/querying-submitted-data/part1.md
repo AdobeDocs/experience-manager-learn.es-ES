@@ -19,7 +19,7 @@ ht-degree: 0%
 # Crear formulario adaptable basado en el esquema JSON
 
 
-La capacidad de crear Forms adaptable basado en el esquema JSON se introdujo en la versión 6.3 de AEM Forms. Los detalles sobre la creación de Forms adaptable con esquema JSON se explican en detalle en esta sección [artículo](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-json-schema-form-model.htmll?lang=es).
+La capacidad de crear Forms adaptable basado en el esquema JSON se introdujo en la versión 6.3 de AEM Forms. Los detalles sobre la creación de Forms adaptable con esquema JSON se explican en detalle en este [artículo](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-json-schema-form-model.htmll?lang=es).
 
 Una vez creado un formulario adaptable basado en el esquema JSON, el siguiente paso es almacenar los datos enviados en la base de datos. Para ello, utilizaremos el nuevo tipo de datos JSON introducido por varios proveedores de bases de datos. Para el propósito de este artículo utilizaremos la base de datos MySql 8 para almacenar los datos enviados.
 
@@ -32,7 +32,7 @@ La siguiente captura de pantalla muestra los datos del formulario enviado almace
 >Asegúrese de que el nombre del archivo de esquema json sea correcto. Por ejemplo, debe tener el siguiente formato &lt;name>schema.json. Por lo tanto, el archivo de esquema puede ser mortgage.schema.json o credit.schema.json.
 
 
-![almacenadas](assets/datastored.gif)
+![datos almacenados](assets/datastored.gif)
 
 
-[Esquemas JSON de muestra que se pueden utilizar para crear Forms adaptable.](assets/samplejsonschemas.zip). Descargue y descomprima el archivo zip para obtener los esquemas JSON
+[Esquemas JSON de muestra que se pueden usar para crear Forms adaptable.](assets/samplejsonschemas.zip). Descargue y descomprima el archivo zip para obtener los esquemas JSON

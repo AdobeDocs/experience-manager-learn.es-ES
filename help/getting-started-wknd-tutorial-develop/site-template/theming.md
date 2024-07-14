@@ -1,6 +1,6 @@
 ---
 title: Flujo de trabajo de temas | AEM Creación rápida de sitios de
-description: Obtenga información sobre cómo actualizar las fuentes de temas de un sitio de Adobe Experience Manager para aplicar estilos específicos de marca. Aprenda a utilizar un servidor proxy para ver una vista previa activa de las actualizaciones de CSS y Javascript. AEM Este tutorial también explicará cómo implementar actualizaciones de temas en un sitio de mediante la canalización front-end de Adobe Cloud Manager.
+description: Obtenga información sobre cómo actualizar las fuentes de temas de un sitio de Adobe Experience Manager para aplicar estilos específicos de marca. Aprenda a utilizar un servidor proxy para ver una vista previa activa de las actualizaciones de CSS y Javascript. AEM Este tutorial también explica cómo implementar actualizaciones de temas en un sitio de mediante la canalización front-end de Adobe Cloud Manager.
 version: Cloud Service
 feature: Core Components
 topic: Content Management, Development
@@ -21,13 +21,13 @@ ht-degree: 1%
 
 # Flujo de trabajo de temas {#theming}
 
-En este capítulo actualizamos las fuentes temáticas de un sitio Adobe Experience Manager para aplicar estilos específicos de marca. Aprendemos a utilizar un servidor proxy para ver una previsualización de las actualizaciones de CSS y Javascript a medida que codificamos en el sitio activo. AEM Este tutorial también explicará cómo implementar actualizaciones de temas en un sitio de mediante la canalización front-end de Adobe Cloud Manager.
+En este capítulo actualizamos las fuentes temáticas de un sitio Adobe Experience Manager para aplicar estilos específicos de marca. Aprendemos a utilizar un servidor proxy para ver una previsualización de las actualizaciones de CSS y Javascript a medida que codificamos en el sitio activo. AEM Este tutorial también explica cómo implementar actualizaciones de temas en un sitio de mediante la canalización front-end de Adobe Cloud Manager.
 
 Al final, nuestro sitio se actualiza para incluir estilos que coincidan con la marca WKND.
 
 ## Requisitos previos {#prerequisites}
 
-Este es un tutorial de varias partes y se da por hecho que los pasos descritos en la sección [Plantillas de página](./page-templates.md) se han completado los capítulos.
+Este es un tutorial de varias partes y se da por hecho que los pasos descritos en el capítulo [Plantillas de página](./page-templates.md) se han completado.
 
 ## Objetivos
 
@@ -50,17 +50,17 @@ Pasos de alto nivel para el vídeo:
 
 ### Archivos de solución
 
-Descargue los estilos finalizados para la [Tema de muestra de WKND](assets/theming/WKND-THEME-src-1.1.zip)
+Descargar los estilos finalizados para el [Tema de muestra WKND](assets/theming/WKND-THEME-src-1.1.zip)
 
 ## Implementar un tema mediante una canalización front-end {#deploy-theme}
 
-AEM Implemente actualizaciones de un tema en un entorno de mediante la canalización front-end de Cloud Manager.
+AEM Implementar actualizaciones de un tema en un entorno de mediante la canalización front-end de Cloud Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/338722?quality=12&learn=on)
 
 Pasos de alto nivel para el vídeo:
 
-1. Crear un nuevo Git [repositorio en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/cloud-manager-repositories.html)
+1. Crear un nuevo repositorio de Git [en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/cloud-manager-repositories.html)
 1. Añada el proyecto de fuentes temáticas al repositorio de Git de Cloud Manager:
 
    ```shell
@@ -71,7 +71,7 @@ Pasos de alto nivel para el vídeo:
    $ git remote add origin <CLOUD_MANAGER_GIT_REPOSITORY_URL>
    ```
 
-1. Configurar un [Canalización front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html) en Cloud Manager para implementar el código front-end.
+1. Configure una [canalización front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html) en Cloud Manager para implementar el código front-end.
 1. AEM Ejecute la canalización front-end para implementar actualizaciones en el entorno de destino de la aplicación de destino
 
 ### Cesiones temporales de ejemplo
@@ -79,7 +79,7 @@ Pasos de alto nivel para el vídeo:
 Hay un par de repositorios de GitHub de ejemplo que pueden utilizarse como referencia:
 
 * [aem-site-template-standard](https://github.com/adobe/aem-site-template-standard)
-* [aem-site-template-basic-theme-e2e](https://github.com/adobe/aem-site-template-basic-theme-e2e) - Se utiliza como ejemplo para proyectos del mundo real.
+* [aem-site-template-basic-theme-e2e](https://github.com/adobe/aem-site-template-basic-theme-e2e): se utiliza como ejemplo para proyectos &quot;reales&quot;.
 
 ## Enhorabuena. {#congratulations}
 
@@ -87,4 +87,4 @@ AEM ¡Enhorabuena, acaba de actualizar e implementar un tema para la creación d
 
 ### Siguientes pasos {#next-steps}
 
-AEM Obtenga información más detallada sobre el desarrollo de la y comprenda mejor la tecnología subyacente creando un sitio con la variable [AEM Tipo de archivo del proyecto](../project-archetype/overview.md).
+AEM AEM Obtenga información más detallada sobre el desarrollo de la y comprenda mejor la tecnología subyacente creando un sitio con el [Arquetipo de proyecto de la comunidad](../project-archetype/overview.md).

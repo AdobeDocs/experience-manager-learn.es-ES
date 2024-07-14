@@ -42,6 +42,6 @@ Siga el vídeo para agregar las credenciales al usuario de fd-service
 
 El comando para enumerar los detalles del archivo pfx es. El siguiente comando supone que está en el mismo directorio que el archivo pfx
 
-**keytool -v -list -storetype pkcs12 -keystore &lt;name of=&quot;&quot; your=&quot;&quot; pfx=&quot;&quot; file=&quot;&quot;>**
+**keytool -v -list -storetype pkcs12 -keystore &lt;nombre del archivo .pfx>**
 
 Por ejemplo keytool -v -list -storetype pkcs12 -keystore 1005566.pfx donde 1005566.pfx es el nombre de mi archivo pfx

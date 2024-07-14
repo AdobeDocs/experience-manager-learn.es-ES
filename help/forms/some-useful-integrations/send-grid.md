@@ -32,8 +32,8 @@ Siga las instrucciones paso a paso de este documento para aprovechar el poder de
 Antes de continuar enviando correos electrónicos mediante plantillas dinámicas de SendGrid desde AEM Forms, asegúrese de que ha cumplido los siguientes requisitos previos:
 
 1. **Cuenta de SendGrid**: Regístrese para obtener una cuenta de SendGrid en [https://sendgrid.com](https://sendgrid.com) para acceder a sus servicios de envío de correo electrónico. Necesitará las credenciales de la cuenta para integrar SendGrid con AEM Forms.
-1. **Familiaridad con la creación de fuentes de datos**: Tiene conocimientos prácticos sobre la creación de fuentes de datos en AEM Forms. Si es necesario, consulte la documentación sobre [creación de fuentes de datos](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) para obtener instrucciones detalladas.
-1. **Familiaridad con el modelo de datos de formulario**: Comprenda el concepto de modelo de datos de formulario en AEM Forms. Si es necesario, revise la documentación de [crear modelos de datos de formulario](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=es) para asegurarse de que tiene la comprensión necesaria.
+1. **Familiaridad con la creación de fuentes de datos**: tenga conocimientos prácticos sobre la creación de fuentes de datos en AEM Forms. Si es necesario, consulte la documentación de [creación de fuentes de datos](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) para obtener instrucciones detalladas.
+1. **Familiaridad con el modelo de datos de formulario**: comprenda el concepto de modelo de datos de formulario en AEM Forms. Si es necesario, revise la documentación de [creación de modelos de datos de formulario](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=es) para asegurarse de que tiene la comprensión necesaria.
 
 Al cumplir estos requisitos previos, estará equipado con los conocimientos y recursos esenciales para enviar correos electrónicos de forma eficaz mediante las plantillas dinámicas SendGrid de AEM Forms.
 
@@ -49,10 +49,10 @@ No dude en utilizar el archivo Swagger proporcionado como referencia o punto de 
 
 Para probar la funcionalidad descrita en esta guía, siga estos pasos:
 
-1. Descargue la [archivo swagger](assets/SendGridWithDynamicTemplate.yaml) se proporciona en la carpeta de recursos.
+1. Descargue el [archivo swagger](assets/SendGridWithDynamicTemplate.yaml) proporcionado en la carpeta de recursos.
 2. Cree un origen de datos Restful utilizando el archivo swagger descargado y las credenciales de SendGrid.
 3. Cree un modelo de datos de formulario basado en la fuente de datos Restful.
-4. Invoque el `mail/send` Operación del POST del modelo de datos de formulario según sus necesidades. Por ejemplo, puede almacenar en déclencheur el correo electrónico al hacer clic en el botón o incluirlo como parte del flujo de trabajo de AEM Forms.
+4. Invoque la operación del POST `mail/send` del modelo de datos de formulario según sus necesidades. Por ejemplo, puede almacenar en déclencheur el correo electrónico al hacer clic en el botón o incluirlo como parte del flujo de trabajo de AEM Forms.
 
 La carga útil de ejemplo para el servicio es la siguiente: Reemplace los valores de marcador de posición con sus propios datos:
 
@@ -75,6 +75,6 @@ La carga útil de ejemplo para el servicio es la siguiente: Reemplace los valore
 }
 ```
 
-Asegúrese de que la variable `template_id` corresponde al ID de la plantilla de correo electrónico dinámica SendGrid, y las direcciones de correo electrónico son válidas y verificadas por SendGrid. Los valores del `personalizations` Esta sección le permite personalizar el correo electrónico mediante los datos introducidos por el usuario desde el formulario adaptable.
+Asegúrese de que `template_id` corresponde al ID de su plantilla de correo electrónico dinámico SendGrid, y de que las direcciones de correo electrónico son válidas y verificadas por SendGrid. Los valores de la sección `personalizations` le permiten personalizar el correo electrónico con los datos introducidos por el usuario desde el formulario adaptable.
 
 Al seguir estos pasos y personalizar la carga útil proporcionada, puede probar de forma eficaz la integración de las plantillas dinámicas de SendGrid con AEM Forms.

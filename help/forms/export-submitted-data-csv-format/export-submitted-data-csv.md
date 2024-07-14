@@ -265,7 +265,7 @@ public @interface StoreAndExportConfiguration {
 
 ## Servlet
 
-El siguiente es el código de servlet que invoca el `getCSVFile(..)` método del servicio. El servicio devuelve el objeto StringBuffer que, a continuación, se transmite de nuevo a la aplicación que realiza la llamada
+El siguiente es el código de servlet que invoca el método `getCSVFile(..)` del servicio. El servicio devuelve el objeto StringBuffer que, a continuación, se transmite de nuevo a la aplicación que realiza la llamada
 
 ```java
 package com.aemforms.storeandexport.core.servlets;
@@ -307,6 +307,6 @@ public class StreamCSVFile extends SlingAllMethodsServlet {
 
 ### Implementación en el servidor
 
-* Importe el [Archivo SQL](assets/formsubmissions.sql) en el servidor MySQL mediante MySQL Workbench. Esto crea un esquema llamado **aemformstutorial** y una tabla llamada **formsubmissions** con algunos datos de ejemplo.
-* Implementar [Paquete OSGi](assets/store-export.jar) uso de la consola web de Felix
-* [Para obtener envíos de TimeOffRequest](http://localhost:4502/bin/streamformdata?formName=timeoffrequestform). Debería recibir un archivo CSV transmitido de vuelta a usted.
+* Importe el [archivo SQL](assets/formsubmissions.sql) en el servidor MySQL mediante MySQL Workbench. Esto crea un esquema llamado **aemformstutorial** y una tabla llamada **formsubmissions** con algunos datos de ejemplo.
+* Implementar el paquete [OSGi](assets/store-export.jar) mediante la consola web Felix
+* [Para recibir envíos TimeOffRequest](http://localhost:4502/bin/streamformdata?formName=timeoffrequestform). Debería recibir un archivo CSV transmitido de vuelta a usted.

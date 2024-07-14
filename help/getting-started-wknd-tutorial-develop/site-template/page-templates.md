@@ -15,7 +15,7 @@ duration: 1561
 source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '628'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -25,7 +25,7 @@ En este capítulo exploraremos la relación entre una Plantilla de página y una
 
 ## Requisitos previos {#prerequisites}
 
-Este es un tutorial de varias partes y se da por hecho que los pasos descritos en la sección [Creación de contenido y cambios de publicación](./author-content-publish.md) se han completado los capítulos.
+Este es un tutorial de varias partes y se da por hecho que se han completado los pasos descritos en el capítulo [Crear contenido y publicar cambios](./author-content-publish.md).
 
 ## Objetivo
 
@@ -43,9 +43,9 @@ Al crear una página, debe seleccionar una plantilla, que se utiliza como base p
 
 Hay 3 áreas principales de [Plantillas de página](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=es):
 
-1. **Estructura** : define los componentes que forman parte de la plantilla. Los autores de contenido no pueden editarlos.
-1. **Contenido inicial** : define los componentes con los que comienza la plantilla, que los autores de contenido pueden editar o eliminar
-1. **Políticas** : define configuraciones sobre cómo se comportan los componentes y qué opciones tendrán disponibles los autores.
+1. **Estructura**: define los componentes que forman parte de la plantilla. Los autores de contenido no pueden editarlos.
+1. **Contenido inicial**: define componentes con los que comienza la plantilla, que los autores de contenido pueden editar o eliminar
+1. **Directivas**: define configuraciones sobre cómo se comportan los componentes y qué opciones tendrán disponibles los autores.
 
 AEM A continuación, cree una nueva plantilla en la que se adapte a la estructura de las maquetas. AEM Esto ocurrirá en una instancia local de. Siga los pasos del siguiente vídeo:
 
@@ -58,11 +58,11 @@ Puede utilizar la siguiente miniatura para identificar su plantilla (o cargar la
 
 ### Paquete de soluciones
 
-A terminado [solución de la plantilla de revista](assets/page-templates/WKND-Magazine-Template-SOLUTION-1.1.zip) se puede descargar e instalar mediante el Administrador de paquetes.
+Se puede descargar e instalar una [solución de la plantilla Magazine](assets/page-templates/WKND-Magazine-Template-SOLUTION-1.1.zip) mediante el Administrador de paquetes.
 
 ## Actualizar el encabezado y el pie de página con fragmentos de experiencias {#experience-fragments}
 
-Una práctica habitual al crear contenido global, como un encabezado o pie de página, es utilizar un [Fragmento de experiencia](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html). Los fragmentos de experiencias permiten a los usuarios combinar varios componentes para crear un único componente referenciable. Los fragmentos de experiencias tienen la ventaja de admitir la administración de varios sitios y [localización](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=en#localized-site-structure).
+Una práctica común al crear contenido global, como un encabezado o pie de página, es usar un [Fragmento de experiencia](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html). Los fragmentos de experiencias permiten a los usuarios combinar varios componentes para crear un único componente referenciable. Los fragmentos de experiencias tienen la ventaja de admitir la administración de varios sitios y la [localización](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=en#localized-site-structure).
 
 La plantilla del sitio generó un encabezado y un pie de página. A continuación, actualice los fragmentos de experiencias para que coincidan con las maquetas. Siga los pasos del siguiente vídeo:
 
@@ -70,7 +70,7 @@ La plantilla del sitio generó un encabezado y un pie de página. A continuació
 
 Pasos de alto nivel para el siguiente vídeo:
 
-1. Descargar el paquete de contenido de muestra **[WKND-Starter-Assets-Skate-Article-1.2.zip](assets/page-templates/WKND-Starter-Assets-Skate-Article-1.2.zip)**.
+1. Descargue el paquete de contenido de muestra **[WKND-Starter-Assets-Skate-Article-1.2.zip](assets/page-templates/WKND-Starter-Assets-Skate-Article-1.2.zip)**.
 1. Cargue e instale el paquete de contenido mediante el Administrador de paquetes.
 1. Actualizar los fragmentos de experiencias de encabezado y pie de página para utilizar el logotipo de WKND
 
@@ -88,7 +88,7 @@ Acaba de crear una plantilla y una página nuevas con Adobe Experience Manager S
 
 ### Siguientes pasos {#next-steps}
 
-En este punto, la página del artículo de la revista y el sitio no coinciden con los estilos de marca de WKND. Siga las [Temática](theming.md) tutorial para conocer las prácticas recomendadas para actualizar el código de front-end de CSS y Javascript utilizado para aplicar estilos globales al sitio.
+En este punto, la página del artículo de la revista y el sitio no coinciden con los estilos de marca de WKND. Siga el tutorial de [Theming](theming.md) para conocer las prácticas recomendadas para actualizar el código de front-end de CSS y Javascript utilizado para aplicar estilos globales al sitio.
 
 ### Paquete de soluciones
 

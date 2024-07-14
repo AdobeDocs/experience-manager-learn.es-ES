@@ -22,7 +22,7 @@ ht-degree: 9%
 
 AEM Obtenga información sobre cómo configurar la creación de documentos para que los autores de documentos puedan editar y publicar documentos mediante Microsoft Word o Google Docs.
 
-Revise la [documentación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html) para obtener información detallada sobre la configuración de la creación de documentos.
+Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html) para obtener información detallada sobre la configuración de la creación de documentos.
 
 ## Introducción a la creación de documentos
 
@@ -46,7 +46,7 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">5 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="set-up.md" title="Configuración de la creación de documentos">Configuración de la creación de documentos</a>
+              <a href="set-up.md" title="Configuración de la creación de documentos">Configurar la creación de documentos</a>
             </p>
             <p class="is-size-6">Obtenga información sobre cómo configurar la creación de documentos.</p>
             <a href="set-up.md" class="spectrum-Button
@@ -109,7 +109,7 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="document-structure.md" title="Estructura del documento">Estructura del documento</a>
+              <a href="document-structure.md" title="Estructura del documento">Estructura de documento</a>
             </p>
             <p class="is-size-6">Explorar la estructura de los documentos.</p>
             <a href="document-structure.md" class="spectrum-Button
@@ -172,7 +172,7 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
               class="is-size-6">1 minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="blocks-and-autoblocks.md" title="Bloques y bloqueos automáticos">
-                Bloques y bloqueos automáticos</a>
+                Bloques y autoblocantes</a>
             </p>
             <p class="is-size-6">Explore los conceptos de la creación de documentos de bloques y autobloques.</p>
             <a href="blocks-and-autoblocks.md"
@@ -235,7 +235,8 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="bulk-metadata.md" title="Metadatos por lotes">Copias de idioma</a>
+              <a href="bulk-metadata.md" title="Metadatos por lotes">Idioma
+                copias</a>
             </p>
             <p class="is-size-6">Explore cómo se gestionan los metadatos masivos en la creación de documentos.</p>
             <a href="bulk-metadata.md" class="spectrum-Button
@@ -368,7 +369,7 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/document-audit.md" title="Auditoria de documentos">Auditoria de documentos</a>
+              <a href="./how-to/document-audit.md" title="Auditoria de documentos">Auditoría de documentos</a>
             </p>
             <p class="is-size-6">Explore cómo la creación de documentos administra la auditoría de documentos.</p>
             <a href="page-metadata.md" class="spectrum-Button
@@ -400,7 +401,7 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/document-permissions.md" title="Permisos de documento">Permisos de documento </a>
+              <a href="./how-to/document-permissions.md" title="Permisos de documento">Permisos de documentos </a>
             </p>
             <p class="is-size-6">Explore cómo la creación de documentos administra los permisos de los documentos.</p>
             <a href="./how-to/document-permissions.md" class="spectrum-Button
@@ -464,7 +465,7 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/document-workflows.md" title="Flujos de trabajo de documentos">Flujos de trabajo de documento</a>
+              <a href="./how-to/document-workflows.md" title="Flujos de trabajo de documentos">Flujos de trabajo de documentos</a>
             </p>
             <p class="is-size-6">Explore cómo la creación de documentos gestiona los flujos de trabajo de documentos.</p>
             <a href="./how-to/document-workflows.md" class="spectrum-Button
@@ -496,7 +497,7 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/iframes.md" title="Uso de iFrames">Uso de iFrames</a>
+              <a href="./how-to/iframes.md" title="Uso de iFrames">Usando iFrames</a>
             </p>
             <p class="is-size-6">Descubra cómo la creación de documentos gestiona los vídeos y los iFrames.</p>
             <a href="./how-to/iframes.md" class="spectrum-Button
@@ -528,7 +529,7 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/image-alt-text.md" title="Uso de texto alternativo">Creación de texto alternativo de imagen</a>
+              <a href="./how-to/image-alt-text.md" title="Uso de texto alternativo">Texto alternativo de la imagen de creación</a>
             </p>
             <p class="is-size-6">Explore cómo la creación de documentos gestiona el texto alternativo de la imagen.</p>
             <a href="./how-to/image-alt-text.md" class="spectrum-Button
@@ -624,7 +625,7 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/migration-using-importer.md" title="Migración de sitios mediante el importador">Migración de sitios mediante el importador</a>
+              <a href="./how-to/migration-using-importer.md" title="Migración de sitios mediante el importador">Migración del sitio mediante el importador</a>
             </p>
             <p class="is-size-6">Explore cómo migrar sitios a Edge Delivery Services AEM mediante la herramienta Importador de datos de.</p>
             <a href="./how-to/migration-using-importer.md" class="spectrum-Button
@@ -757,7 +758,7 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/configure-sidekick.md" title="Generar variaciones: configurar Sidekick">Generar variaciones: configurar Sidekick</a>
+              <a href="./how-to/generate-variations/configure-sidekick.md" title="Generar variaciones: configurar Sidekick">Generar variaciones - Configurar Sidekick</a>
             </p>
             <p class="is-size-6">Explore cómo configurar la barra de tareas para Generar variaciones en la creación de documentos de Edge Delivery Services.</p>
             <a href="./how-to/generate-variations/configure-sidekick.md" class="spectrum-Button
@@ -789,7 +790,7 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/prompt-templates.md" title="Generar variaciones: consultar plantillas">Generar variaciones: consultar plantillas</a>
+              <a href="./how-to/generate-variations/prompt-templates.md" title="Generar variaciones: consultar plantillas">Generar variaciones - Pedir plantillas</a>
             </p>
             <p class="is-size-6">Aprenda a utilizar plantillas de solicitud para Generar variaciones.</p>
             <a href="./how-to/generate-variations/prompt-templates.md" class="spectrum-Button
@@ -821,7 +822,7 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/custom-prompt-templates.md" title="Generar variaciones: plantillas de petición de datos personalizadas">Generar variaciones: plantillas de petición de datos personalizadas</a>
+              <a href="./how-to/generate-variations/custom-prompt-templates.md" title="Generar variaciones: plantillas de petición de datos personalizadas">Generar variaciones - Plantillas de mensajes personalizados</a>
             </p>
             <p class="is-size-6">Explore cómo crear las plantillas de solicitud personalizadas para Generar variaciones.</p>
             <a href="./how-to/generate-variations/custom-prompt-templates.md" class="spectrum-Button
@@ -853,7 +854,7 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/custom-prompt-templates.md" title="Generar variaciones: guardar plantillas de solicitud personalizadas">Generar variaciones: guardar plantillas de solicitud personalizadas</a>
+              <a href="./how-to/generate-variations/custom-prompt-templates.md" title="Generar variaciones: guardar plantillas de solicitud personalizadas">Generar variaciones - Guardar plantillas de solicitud personalizadas</a>
             </p>
             <p class="is-size-6">Aprenda a guardar las plantillas de solicitud personalizadas para Generar variaciones.</p>
             <a href="./how-to/generate-variations/custom-prompt-templates.md" class="spectrum-Button
@@ -885,7 +886,7 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/using-target-audiences.md" title="Generar variaciones: uso de audiencias de Adobe Target">Generar variaciones: uso de audiencias de Adobe Target</a>
+              <a href="./how-to/generate-variations/using-target-audiences.md" title="Generar variaciones: uso de audiencias de Adobe Target">Generar variaciones - Uso de audiencias de Adobe Target</a>
             </p>
             <p class="is-size-6">Aprenda a utilizar las audiencias de Adobe Target para dirigirse a la audiencia adecuada para sus variaciones de contenido.</p>
             <a href="./how-to/generate-variations/using-target-audiences.md" class="spectrum-Button
@@ -917,7 +918,7 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/using-csv-file-audiences.md" title="Generación de variaciones: uso de audiencias de archivo CSV">Generación de variaciones: uso de audiencias de archivo CSV</a>
+              <a href="./how-to/generate-variations/using-csv-file-audiences.md" title="Generación de variaciones: uso de audiencias de archivo CSV">Generar variaciones - Usando audiencias de archivo CSV</a>
             </p>
             <p class="is-size-6">Aprenda a utilizar archivos CSV para dirigirse a la audiencia correcta según sus variaciones de contenido.</p>
             <a href="./how-to/generate-variations/using-csv-file-audiences.md" class="spectrum-Button
@@ -949,7 +950,7 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/using-adobe-firefly-for-images.md" title="Generar variaciones: usar Adobe Firefly">Generar variaciones: usar Adobe Firefly</a>
+              <a href="./how-to/generate-variations/using-adobe-firefly-for-images.md" title="Generar variaciones: usar Adobe Firefly">Generar variaciones - Usar Adobe Firefly</a>
             </p>
             <p class="is-size-6">Aprenda a utilizar el Adobe Firefly para crear imágenes utilizadas en las variaciones de contenido.</p>
             <a href="./how-to/generate-variations/using-adobe-firefly-for-images.md" class="spectrum-Button
@@ -981,7 +982,7 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/actions.md" title="Generar variaciones: acciones en una variación generada">Generar variaciones: acciones en una variación generada</a>
+              <a href="./how-to/generate-variations/actions.md" title="Generar variaciones: acciones en una variación generada">Generar variaciones - Acciones en una variación generada</a>
             </p>
             <p class="is-size-6">Explore las acciones que se pueden utilizar en una variación de contenido generada.</p>
             <a href="./how-to/generate-variations/actions.md" class="spectrum-Button
@@ -1013,7 +1014,7 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/trust-privacy.md" title="Generar variaciones: confianza y privacidad">Generar variaciones: confianza y privacidad</a>
+              <a href="./how-to/generate-variations/trust-privacy.md" title="Generar variaciones: confianza y privacidad">Generar variaciones - Confianza y privacidad</a>
             </p>
             <p class="is-size-6">Exploración de cómo el Adobe gestiona la confianza y la privacidad para Generar variaciones.</p>
             <a href="./how-to/generate-variations/trust-privacy.md" class="spectrum-Button
@@ -1045,7 +1046,7 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/experimentation-framework.md" title="Resumen del marco de experimentación">Resumen del marco de experimentación</a>
+              <a href="./how-to/experimentation-framework.md" title="Resumen del marco de experimentación">Descripción general del marco de experimentación</a>
             </p>
             <p class="is-size-6">Explore el marco de trabajo de experimentación que permite a los especialistas en marketing probar cuáles son las variaciones de contenido más efectivas.</p>
             <a href="./how-to/experimentation-framework.md" class="spectrum-Button
@@ -1077,7 +1078,7 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/setup-experimentation-framework.md" title="Configuración del marco de experimentación">Configuración del marco de experimentación</a>
+              <a href="./how-to/setup-experimentation-framework.md" title="Configuración del marco de experimentación">Configurando el marco de experimentación</a>
             </p>
             <p class="is-size-6">Explore cómo configurar el marco de experimentación en la creación de documentos para Edge Delivery Services.</p>
             <a href="./how-to/setup-experimentation-framework.md" class="spectrum-Button
@@ -1109,7 +1110,7 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/experimentation-add-metadata.md" title="Añadir metadatos para la experimentación">Añadir metadatos para la experimentación</a>
+              <a href="./how-to/experimentation-add-metadata.md" title="Añadir metadatos para la experimentación">Agregando metadatos para experimentación</a>
             </p>
             <p class="is-size-6">Explorar la adición de metadatos para la experimentación</p>
             <a href="./how-to/experimentation-add-metadata.md" class="spectrum-Button

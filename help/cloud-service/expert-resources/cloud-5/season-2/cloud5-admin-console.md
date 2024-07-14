@@ -24,5 +24,5 @@ AEM ¿Alguna vez se ha preguntado por qué cada elemento hace en el contexto de 
 
 ## Contenido cubierto en este vídeo
 
-+ [Comprensión del Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/admin-console.html)
-+ [Resumen del Admin Console](https://helpx.adobe.com/es/enterprise/using/admin-console.html)
++ [Comprender al Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/admin-console.html)
++ [Información general del Admin Console](https://helpx.adobe.com/es/enterprise/using/admin-console.html)

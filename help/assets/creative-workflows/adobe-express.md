@@ -24,4 +24,4 @@ Descubra cómo crear y editar contenido dentro de Adobe Experience Manager Asset
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425972/?learn=on)
 
-Además, aprenda a configurar el [Integración nativa de AEM Assets con Adobe Express](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/integration-adobe-express/native-integration-adobe-express) para acceder fácilmente a AEM Assets desde el Adobe Express.
+Además, aprenderá a configurar la integración nativa de [AEM Assets con el Adobe Express](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/integration-adobe-express/native-integration-adobe-express) para acceder sin problemas a AEM Assets desde el Adobe Express.

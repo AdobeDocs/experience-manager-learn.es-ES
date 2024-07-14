@@ -1,5 +1,5 @@
 ---
-title: Integración con [!DNL ServiceNow]
+title: Integrando con [!DNL ServiceNow]
 description: Cree y muestre todos los incidentes con el modelo de datos de formulario.
 feature: Adaptive Forms
 version: 6.4,6.5
@@ -19,30 +19,30 @@ ht-degree: 3%
 
 # Integración de AEM Forms con [!DNL ServiceNow]
 
-Creación y visualización de incidencias en [!DNL ServiceNow] uso del modelo de datos de formulario en AEM Forms.
+Crear y mostrar incidencias en [!DNL ServiceNow] mediante el modelo de datos de formulario en AEM Forms.
 
 ## Requisitos previos
 
-* [!DNL ServiceNow] cuenta.
-* Familiarizado con [creación de fuentes de datos](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html)
+* Cuenta de [!DNL ServiceNow].
+* Familiarizado con [crear orígenes de datos](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html)
 * Familiarizado con [Modelo de datos de formulario](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=es)
 
-## Recursos de muestra
+## Assets de muestra
 
 Los recursos de ejemplo proporcionados con este artículo incluyen lo siguiente
 
 * Configuración de Cloud Service
-* Archivos Swagger para crear un incidente y recuperar todos los incidentes
+* Archivos Swagger para crear un incidente y recuperar todo   incidentes
 * Modelo de datos de formulario basado en los archivos Swagger
-* Formulario adaptable para crear y listar [!DNL ServiceNow] incidentes
+* Formulario adaptable para crear y enumerar [!DNL ServiceNow] incidentes
 
 ## Implementación de los recursos en el servidor
 
-* Descargue la [recursos de muestra](assets/service-now.zip)
-* AEM Importe los recursos a mediante el uso de la [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
-* El archivo swagger utilizado para esta integración se encuentra en ```/conf/9957/settings/cloudconfigs/fdm``` carpeta en el repositorio crx
-* Edite el [Configuración del servicio en la nube CreateIncident](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2F9957%2Fsettings%2Fcloudconfigs%2Ffdm%2Fcreateincident)para que coincida con su instancia de ServiceNow.
-* Edite el [Configuración del servicio en la nube GetAllIncidents](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2F9957%2Fsettings%2Fcloudconfigs%2Ffdm%2Fgetallincidents) para que coincida con su instancia de ServiceNow. Deberá cambiar el host, el nombre de usuario y la contraseña para que coincidan con las credenciales de la instancia de ServiceNow.
+* Descargar [recursos de muestra](assets/service-now.zip)
+* AEM Importe los recursos a la cuenta de usuario mediante el uso de [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
+* El archivo swagger utilizado para esta integración se encuentra en la carpeta ```/conf/9957/settings/cloudconfigs/fdm``` del repositorio crx
+* Edite la [configuración del servicio en la nube CreateIncident](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2F9957%2Fsettings%2Fcloudconfigs%2Ffdm%2Fcreateincident)para que coincida con su instancia de ServiceNow.
+* Edite la configuración del servicio en la nube [GetAllIncidents](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2F9957%2Fsettings%2Fcloudconfigs%2Ffdm%2Fgetallincidents) para que coincida con su instancia de ServiceNow. Deberá cambiar el host, el nombre de usuario y la contraseña para que coincidan con las credenciales de la instancia de ServiceNow.
 
 ## Credenciales de instancia de Access ServiceNow
 
@@ -55,6 +55,6 @@ Los recursos de ejemplo proporcionados con este artículo incluyen lo siguiente
 
 ## Prueba de la integración
 
-* [Abra el formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/create-incident-in-service-now/jcr:content?wcmmode=disabled)
+* [Abrir el formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/create-incident-in-service-now/jcr:content?wcmmode=disabled)
 * Introduzca algunos valores en el campo descripción y comentarios y haga clic en el botón Crear Incidente
 * El ID de incidente del incidente recién creado debe rellenarse en el campo de texto y la tabla siguiente debe enumerar todos los incidentes.

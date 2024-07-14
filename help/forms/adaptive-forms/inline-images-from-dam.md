@@ -24,7 +24,7 @@ Un caso de uso común es mostrar las imágenes que residen en el repositorio CRX
 
 ## Agregar imagen de marcador
 
-El primer paso es anteponer un div de marcador de posición al componente del panel. En el código siguiente, el componente del panel se identifica con su nombre de clase CSS photo-upload. La función de JavaScript forma parte de la biblioteca de cliente asociada a los formularios adaptables. Se llama a esta función en el evento initialize del componente file attachment.
+El primer paso es anteponer un div de marcador de posición al componente del panel. En el código siguiente, el componente del panel se identifica con su nombre de clase CSS photo-upload. La función JavaScript forma parte de la biblioteca de cliente asociada a los formularios adaptables. Se llama a esta función en el evento initialize del componente file attachment.
 
 ```javascript
 /**
@@ -83,8 +83,8 @@ async function createFile(imageName){
 
 ### Implementación en el servidor
 
-* Descargue e instale [biblioteca de cliente e imágenes de muestra](assets/InlineDAMImage.zip) AEM AEM en la instancia de la mediante el Administrador de paquetes de.
-* Descargue e instale [formulario de ejemplo](assets/FieldInspectionForm.zip) AEM AEM en la instancia de la con el administrador de paquetes de la.
-* Dirija el explorador a [FormularioDeInspecciónDeCampo](http://localhost:4502/content/dam/formsanddocuments/fieldinspection/fieldinspection/jcr:content?wcmmode=disabled)
+* AEM AEM Descargue e instale la [biblioteca de cliente e imágenes de muestra](assets/InlineDAMImage.zip) en su instancia de la mediante el Administrador de paquetes de la aplicación.
+* AEM AEM Descargue e instale el [formulario de ejemplo](assets/FieldInspectionForm.zip) en su instancia de mediante el administrador de paquetes de la aplicación de ejemplo de la aplicación de.
+* Dirija su explorador a [FieldInspectionForm](http://localhost:4502/content/dam/formsanddocuments/fieldinspection/fieldinspection/jcr:content?wcmmode=disabled)
 * Seleccione uno de los accesorios
 * Debería ver la imagen en el formulario

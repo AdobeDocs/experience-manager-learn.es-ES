@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Pasos para solucionar problemas específicos de Acrobat en una instalación de Windows
 
-*Este vídeo muestra el proceso de resolución de problemas específicos de Acrobat en una configuración de Windows para AEM Forms PDFG.*
+*Este vídeo muestra el proceso de solución de problemas específicos de Acrobat en una instalación de Windows para AEM Forms PDFG.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335480?quality=12&learn=on)

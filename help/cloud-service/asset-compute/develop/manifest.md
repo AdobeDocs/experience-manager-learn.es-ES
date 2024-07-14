@@ -26,11 +26,11 @@ El `manifest.yml`, ubicado en la raíz del proyecto de Asset compute, describe t
 
 ## Definición de trabajador predeterminada
 
-Los trabajadores se definen como entradas de acción de Adobe I/O Runtime en `actions`y consta de un conjunto de configuraciones.
+Los trabajadores se definen como entradas de acción de Adobe I/O Runtime en `actions` y se componen de un conjunto de configuraciones.
 
-Los trabajadores que accedan a otras integraciones de Adobe I/O deben establecer la variable `annotations -> require-adobe-auth` propiedad a `true` como esta [expone las credenciales de Adobe I/O del trabajador](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#access-adobe-apis) a través de `params.auth` objeto. Esto suele ser necesario cuando el trabajador llama a las API de Adobe I/O como las API de Adobe Photoshop, Lightroom o Sensei, y se puede alternar por trabajador.
+Los trabajadores que tengan acceso a otras integraciones de Adobe I/O deben establecer la propiedad de `annotations -> require-adobe-auth` en `true`, ya que [expone las credenciales de Adobe I/O del trabajador](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#access-adobe-apis) a través del objeto `params.auth`. Esto suele ser necesario cuando el trabajador llama a las API de Adobe I/O como las API de Adobe Photoshop, Lightroom o Sensei, y se puede alternar por trabajador.
 
-1. Abrir y revisar el trabajador generado automáticamente `manifest.yml`. Los proyectos que contienen varios Assets computes de trabajo deben definir una entrada para cada trabajador en la sección `actions` matriz.
+1. Abra y revise el trabajador `manifest.yml` generado automáticamente. Los proyectos que contienen varios trabajadores de Asset compute deben definir una entrada para cada trabajador en la matriz `actions`.
 
 ```yml
 packages:
@@ -49,11 +49,11 @@ packages:
 
 ## Definición de límites
 
-Cada trabajador puede configurar el [límites](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/system_settings.md) para su contexto de ejecución en Adobe I/O Runtime. Estos valores deben ajustarse para proporcionar un tamaño óptimo para el trabajador, en función del volumen, la tasa y el tipo de recursos que calculará, así como el tipo de trabajo que realiza.
+Cada trabajador puede configurar los [límites](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/system_settings.md) para su contexto de ejecución en Adobe I/O Runtime. Estos valores deben ajustarse para proporcionar un tamaño óptimo para el trabajador, en función del volumen, la tasa y el tipo de recursos que calculará, así como el tipo de trabajo que realiza.
 
-Revisar [Guía de tamaño de Adobe](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#sizing-workers) antes de establecer límites. Los trabajadores de asset compute pueden quedarse sin memoria al procesar los recursos, lo que provoca que se elimine la ejecución de Adobe I/O Runtime, por lo que asegúrese de que el tamaño del trabajador sea adecuado para gestionar todos los recursos candidatos.
+Revise [las instrucciones de tamaño de Adobe](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#sizing-workers) antes de establecer límites. Los trabajadores de asset compute pueden quedarse sin memoria al procesar los recursos, lo que provoca que se elimine la ejecución de Adobe I/O Runtime, por lo que asegúrese de que el tamaño del trabajador sea adecuado para gestionar todos los recursos candidatos.
 
-1. Añadir un `inputs` a la nueva sección `wknd-asset-compute` entrada de acciones. Esto permite ajustar el rendimiento general y la asignación de recursos del trabajador de la Asset compute.
+1. Agregar una sección `inputs` a la nueva entrada de acciones `wknd-asset-compute`. Esto permite ajustar el rendimiento general y la asignación de recursos del trabajador de la Asset compute.
 
 ```yml
 packages:
@@ -75,7 +75,7 @@ packages:
 
 ## El manifest.yml terminado
 
-La final `manifest.yml` tiene este aspecto:
+El `manifest.yml` final tiene el siguiente aspecto:
 
 ```yml
 packages:
@@ -96,14 +96,14 @@ packages:
 
 ## manifest.yml en Github
 
-La final `.manifest.yml` está disponible en Github en:
+El `.manifest.yml` final está disponible en Github en:
 
 + [aem-guides-wknd-asset-compute/manifest.yml](https://github.com/adobe/aem-guides-wknd-asset-compute/blob/master/manifest.yml)
 
 
 ## Validación de manifest.yml
 
-Una vez generada la Asset compute `manifest.yml` se ha actualizado, ejecute la herramienta de desarrollo local y asegúrese de que el se inicia correctamente con el actualizado `manifest.yml` configuración.
+Una vez actualizada la Asset compute generada `manifest.yml`, ejecute la herramienta de desarrollo local y asegúrese de que el inicio se realice correctamente con la configuración actualizada de `manifest.yml`.
 
 Para iniciar la herramienta de desarrollo de Assets computes para el proyecto de Asset compute:
 
@@ -118,7 +118,7 @@ Para iniciar la herramienta de desarrollo de Assets computes para el proyecto de
    ![ejecución de aplicación aio](assets/environment-variables/aio-app-run.png)
 
 1. Observe la salida de la línea de comandos y el explorador Web en busca de mensajes de error cuando se inicializa la herramienta de desarrollo.
-1. Para detener la herramienta de desarrollo de Assets computes, pulse `Ctrl-C` en la ventana que se ejecutó `aio app run` para finalizar el proceso.
+1. Para detener la herramienta de desarrollo de Assets computes, pulse `Ctrl-C` en la ventana que ejecutó `aio app run` para finalizar el proceso.
 
 ## Resolución de problemas
 

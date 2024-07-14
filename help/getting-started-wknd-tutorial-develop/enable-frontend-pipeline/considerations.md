@@ -22,7 +22,7 @@ ht-degree: 0%
 
 # Consideraciones de desarrollo
 
-AEM Después de habilitar la canalización front-end para implementar únicamente los recursos front-end en el entorno as a Cloud Service AEM, se produce cierto impacto en el desarrollo de la local y es necesario modificar el modelo de ramificación de Git.
+Después de habilitar la canalización front-end para implementar únicamente los recursos front-end en el entorno de AEM as a Cloud Service AEM, se produce cierto impacto en el desarrollo local de las ramas y tiene que modificar el modelo de ramificación de Git.
 
 ## Objetivo
 
@@ -37,9 +37,9 @@ AEM Después de habilitar la canalización front-end para implementar únicament
 
 ## Enfoque de desarrollo ajustado
 
-* AEM Para el desarrollo local mediante el SDK de la, el equipo de desarrollo del back-end sigue necesitando la generación de clientlib a través de `ui.frontend` AEM , pero durante la implementación de Cloud Manager en el entorno as a Cloud Service, tiene que omitirlo. Esto presenta un desafío sobre cómo aislar los cambios de configuración del proyecto descritos en la [Actualizar proyecto](update-project.md) capítulo.
+* AEM Para el desarrollo local mediante el SDK de la, el equipo de desarrollo del back-end todavía necesita la generación de clientlib a través del módulo `ui.frontend`, pero durante la implementación de Cloud Manager en el entorno de AEM as a Cloud Service debe omitirla. Esto presenta un desafío sobre cómo aislar los cambios de configuración del proyecto descritos en el capítulo [Actualizar proyecto](update-project.md).
 
-A __solución__ AEM podría ser para ajustar el modelo de ramificación de Git y asegurarse de que los cambios de configuración del proyecto de nunca vuelvan a fluir a __desarrollo local__ AEM rama que utilizan los desarrolladores de back-end de la.
+AEM AEM Podría ser una __solución__ para ajustar su modelo de ramificación de Git y asegurarse de que los cambios de configuración del proyecto de Git nunca vuelvan a fluir a la rama de __desarrollo local__ que usan los desarrolladores del back-end de la rama de.
 
 
-* AEM Como parte de una mejora continua de su proyecto de, si introduce nuevos componentes o actualiza un componente existente que tenga cambios en ambos `ui.app` y `ui.frontend` , tiene que ejecutar tanto las canalizaciones full-stack como las front-end.
+* AEM Como parte de la mejora continua de su proyecto de, si introduce nuevos componentes o actualiza un componente existente que tiene cambios en los módulos `ui.app` y `ui.frontend`, debe ejecutar canalizaciones full-stack y front-end.

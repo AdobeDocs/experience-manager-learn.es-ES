@@ -20,13 +20,13 @@ ht-degree: 0%
 
 # Registro de extensiones
 
-AEM Las extensiones de interfaz de usuario de son aplicaciones especializadas de App Builder, basadas en React y utilizan el [Espectro de reacción](https://react-spectrum.adobe.com/react-spectrum/) Marco de IU.
+AEM Las extensiones de interfaz de usuario de son aplicaciones especializadas de App Builder, basadas en React y que utilizan el marco de interfaz de usuario [React Spectrum](https://react-spectrum.adobe.com/react-spectrum/).
 
-AEM Para definir dónde y cómo aparece la extensión de la interfaz de usuario de la extensión de, se requieren dos configuraciones en la aplicación App Builder de la extensión: enrutamiento de aplicaciones y registro de la extensión.
+AEM Para definir dónde y cómo aparece la extensión de la interfaz de usuario de, se requieren dos configuraciones en la aplicación de App Builder de la extensión: enrutamiento de aplicaciones y registro de la extensión.
 
 ## Rutas de aplicaciones{#app-routes}
 
-La extensión de `App.js` declara el [React router](https://reactrouter.com/en/main) AEM que incluye una ruta de índice que registra la extensión en la interfaz de usuario de.
+AEM `App.js` de la extensión declara el [enrutador React](https://reactrouter.com/en/main) que incluye una ruta de índice que registra la extensión en la interfaz de usuario de la interfaz de usuario de la.
 
 AEM La ruta de índice se invoca cuando se carga inicialmente la interfaz de usuario de y el destino de esta ruta define cómo se expone la extensión en la consola.
 
@@ -53,15 +53,15 @@ function App(props) {
 
 ## Registro de extensiones
 
-`ExtensionRegistration.js` debe cargarse inmediatamente a través de la ruta index de la extensión y actúa como punto de registro de la extensión.
+`ExtensionRegistration.js` debe cargarse inmediatamente a través de la ruta de índice de la extensión y actúa como punto de registro de la extensión.
 
-AEM En función de la plantilla de extensión de IU de seleccionada cuando [inicialización de la extensión de aplicación App Builder](./app-initialization.md), se admiten diferentes puntos de extensión.
+AEM En función de la plantilla de extensión de la interfaz de usuario de la aplicación seleccionada al [inicializar la extensión de la aplicación de App Builder](./app-initialization.md), se admiten diferentes puntos de extensión.
 
 + [Puntos de extensión de IU de fragmentos de contenido](./content-fragments/overview.md#extension-points)
 
 ## Incluir extensiones condicionalmente
 
-AEM AEM Las extensiones de interfaz de usuario de pueden ejecutar lógica personalizada para limitar los entornos de en los que aparece la extensión. Esta comprobación se realiza antes de que `register` llamada en el `ExtensionRegistration` y devuelve inmediatamente si no se debe mostrar la extensión.
+AEM AEM Las extensiones de interfaz de usuario de pueden ejecutar lógica personalizada para limitar los entornos de en los que aparece la extensión. Esta comprobación se realiza antes de la llamada `register` en el componente `ExtensionRegistration` y devuelve inmediatamente si no se debe mostrar la extensión.
 
 Esta comprobación tiene un contexto limitado disponible:
 
@@ -70,10 +70,10 @@ Esta comprobación tiene un contexto limitado disponible:
 
 Las comprobaciones más comunes para cargar una extensión son:
 
-+ AEM Uso del host de (`new URLSearchParams(window.location.search).get('repo')`) para determinar si la extensión debe cargarse.
++ AEM Usando el host de la (`new URLSearchParams(window.location.search).get('repo')`) para determinar si la extensión debe cargarse.
    + AEM Muestre solo la extensión en entornos de que formen parte de un programa específico (como se muestra en el ejemplo siguiente).
    + AEM AEM Mostrar solo la extensión en un entorno de específico (host de).
-+ Uso de un [Acción de Adobe I/O Runtime](./runtime-action.md) AEM para realizar una llamada HTTP a la de determinar si el usuario actual debe ver la extensión de.
++ Se está usando una [acción de Adobe I/O Runtime AEM](./runtime-action.md) para realizar una llamada HTTP a la red para determinar si el usuario actual debe ver la extensión.
 
 El ejemplo siguiente ilustra la limitación de la extensión a todos los entornos del programa `p12345`.
 

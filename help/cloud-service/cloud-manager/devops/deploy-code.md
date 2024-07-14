@@ -1,6 +1,6 @@
 ---
-title: AEM AEM Implementación de proyectos de código de en el as a Cloud Service de
-description: AEM AEM Explore la implementación de un proyecto de código de para que se ejecute de forma as a Cloud Service mediante Cloud Manager.
+title: AEM Implementación de proyectos de código en AEM as a Cloud Service
+description: AEM Explore la implementación de un proyecto de código de en AEM as a Cloud Service mediante Cloud Manager.
 role: Developer
 level: Beginner
 type: Tutorial

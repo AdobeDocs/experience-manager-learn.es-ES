@@ -20,7 +20,7 @@ ht-degree: 7%
 
 Un caso de uso común es tener la capacidad de rellenar un formulario adaptable desde un formulario de PDF parcialmente completado.
 
-Para demostrar este caso de uso, vamos a utilizar [Formulario F23 del IRS](./assets/f23.pdf)
+Para demostrar este caso de uso, vamos a usar [IRS formulario F23](./assets/f23.pdf)
 
 ## Requisitos previos
 

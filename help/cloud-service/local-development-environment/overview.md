@@ -1,5 +1,5 @@
 ---
-title: AEM Entorno de desarrollo local para el as a Cloud Service de la
+title: Entorno de desarrollo local para AEM as a Cloud Service
 description: Información general sobre el entorno de desarrollo local de Adobe Experience Manager AEM ().
 feature: Developer Tools
 version: Cloud Service
@@ -28,35 +28,35 @@ ht-degree: 12%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=es" text="Directrices de desarrollo"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/basics/aem-sdk.html?lang=es" text="Conceptos básicos de desarrollo"
 
-En este tutorial se explica la configuración de un entorno de desarrollo local para Adobe Experience Manager AEM AEM as a Cloud Service () mediante el SDK de. AEM AEM Se incluyen las herramientas de desarrollo necesarias para desarrollar, crear y compilar proyectos de, así como los tiempos de ejecución locales que permiten a los desarrolladores validar rápidamente las nuevas funciones localmente antes de implementarlas en el as a Cloud Service mediante Adobe Cloud Manager.
+Este tutorial explica la configuración de un entorno de desarrollo local para Adobe Experience Manager AEM () mediante el SDK de AEM as a Cloud Service. AEM Se incluyen las herramientas de desarrollo necesarias para desarrollar, crear y compilar proyectos de, así como los tiempos de ejecución locales que permiten a los desarrolladores validar rápidamente las nuevas funciones localmente antes de implementarlas en AEM as a Cloud Service a través de Adobe Cloud Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32565?quality=12&learn=on)
 
-![AEM Paquete de tecnología de entorno de desarrollo local as a Cloud Service](./assets/overview/aem-sdk-technology-stack.png)
+![Pila de tecnología del entorno de desarrollo local de AEM as a Cloud Service](./assets/overview/aem-sdk-technology-stack.png)
 
 AEM El entorno de desarrollo local para los se puede dividir en tres grupos lógicos:
 
-+ El __AEM Proyecto de__ AEM contiene el código personalizado, la configuración y el contenido que es la aplicación de la aplicación de la personalizada.
-+ El __AEM Tiempo de ejecución de__ AEM que ejecuta una versión local de los servicios de Autor y Publicación de manera local.
-+ El __Dispatcher Runtime local__ que ejecuta una versión local de Apache HTTP Web Server y Dispatcher.
++ AEM AEM El __Proyecto de__ contiene el código, la configuración y el contenido personalizados que es la aplicación personalizada.
++ AEM AEM __Tiempo de ejecución de la local__ que ejecuta una versión local de los servicios de Publish y Autor de manera local.
++ __Tiempo de ejecución local de Dispatcher__ que ejecuta una versión local de Apache HTTP Web Server y Dispatcher.
 
 AEM Este tutorial explica cómo instalar y configurar los elementos resaltados en el diagrama anterior, lo que proporciona un entorno de desarrollo local estable para el desarrollo de la.
 
 ## Organización del sistema de archivos
 
-AEM En este tutorial se ha establecido la ubicación de los artefactos as a Cloud Service AEM del SDK y el código de proyecto de la forma siguiente:
+En este tutorial se ha establecido la ubicación de los artefactos del SDK de AEM as a Cloud Service AEM y el código del proyecto de la siguiente manera:
 
-+ `~/aem-sdk` AEM es una carpeta organizativa que contiene las distintas herramientas proporcionadas por el SDK as a Cloud Service de
-+ `~/aem-sdk/author` AEM contiene el servicio de autor de
-+ `~/aem-sdk/publish` AEM contiene el servicio de publicación de
-+ `~/aem-sdk/dispatcher` contiene las herramientas de Dispatcher
-+ `~/code/<project name>` AEM contiene el código fuente del proyecto de la aplicación personalizado
++ `~/aem-sdk` es una carpeta organizativa que contiene las distintas herramientas proporcionadas por el SDK de AEM as a Cloud Service
++ AEM `~/aem-sdk/author` contiene el servicio de autor de
++ AEM `~/aem-sdk/publish` contiene el servicio de Publish de la
++ `~/aem-sdk/dispatcher` contiene Dispatcher Tools
++ AEM `~/code/<project name>` contiene el código de origen personalizado del proyecto de
 
-Tenga en cuenta que `~` es la abreviatura de Directorio del usuario. En Windows, este es el equivalente de `%HOMEPATH%`;
+Tenga en cuenta que `~` es la abreviatura del directorio del usuario. En Windows, es el equivalente de `%HOMEPATH%`;
 
 ## AEM Herramientas de desarrollo para proyectos de
 
-AEM AEM El proyecto de es la base de código personalizado que contiene el código, la configuración y el contenido que se implementa mediante Cloud Manager para que los usuarios se sientan as a Cloud Service en el proceso de implementación de la aplicación. La estructura del proyecto de línea de base se genera mediante la variable [AEM Arquetipo del proyecto Maven](https://github.com/adobe/aem-project-archetype).
+AEM El proyecto de es la base de código personalizado que contiene el código, la configuración y el contenido que se implementa mediante Cloud Manager en AEM as a Cloud Service. AEM La estructura del proyecto de línea de base se genera a través del [Arquetipo Maven del proyecto de](https://github.com/adobe/aem-project-archetype).
 
 Esta sección del tutorial muestra cómo:
 
@@ -69,25 +69,25 @@ Esta sección del tutorial muestra cómo:
 
 ## Tiempo de ejecución local de AEM
 
-AEM El SDK as a Cloud Service proporciona un [!DNL QuickStart Jar] AEM que ejecuta una versión local de. El [!DNL QuickStart Jar] AEM AEM se puede utilizar para ejecutar el servicio de autor de la o el servicio de publicación de la aplicación de forma local. Tenga en cuenta que mientras que la variable [!DNL QuickStart Jar] AEM proporciona una experiencia de desarrollo local, pero no todas las funciones disponibles en el as a Cloud Service se incluyen en la [!DNL QuickStart Jar].
+El SDK de AEM as a Cloud Service AEM proporciona un [!DNL QuickStart Jar] que ejecuta una versión local de la aplicación de la. AEM AEM [!DNL QuickStart Jar] se puede usar para ejecutar el servicio de autor de o el servicio de Publish de forma local. Tenga en cuenta que aunque [!DNL QuickStart Jar] proporciona una experiencia de desarrollo local, no todas las características disponibles en AEM as a Cloud Service se incluyen en [!DNL QuickStart Jar].
 
 Esta sección del tutorial muestra cómo:
 
 + Instalar [!DNL Java]
 + AEM Descarga del SDK de
-+ Ejecute el [!DNL AEM Author Service]
-+ Ejecute el [!DNL AEM Publish Service]
++ Ejecutar [!DNL AEM Author Service]
++ Ejecutar [!DNL AEM Publish Service]
 
 [AEM Configuración del tiempo de ejecución de Local](./aem-runtime.md)
 
-## Local [!DNL Dispatcher] Runtime
+## Tiempo de ejecución [!DNL Dispatcher] local
 
-AEM Las herramientas de Dispatcher del SDK as a Cloud Service proporcionan todo lo necesario para configurar el SDK local [!DNL Dispatcher] runtime. [!DNL Dispatcher] Las herramientas son [!DNL Docker]basado en y proporciona herramientas de línea de comandos para transformar [!DNL Apache HTTP] Servidor web y [!DNL Dispatcher] archivos de configuración en formatos compatibles e implementarlos en [!DNL Dispatcher] ejecución en [!DNL Docker] contenedor.
+Las herramientas Dispatcher del SDK de AEM as a Cloud Service proporcionan todo lo necesario para configurar el tiempo de ejecución de [!DNL Dispatcher] local. Las herramientas de [!DNL Dispatcher] están basadas en [!DNL Docker] y proporcionan herramientas de línea de comandos para transformar archivos de configuración de [!DNL Apache HTTP] servidor web y [!DNL Dispatcher] en formatos compatibles e implementarlos en [!DNL Dispatcher] que se ejecuta en el contenedor de [!DNL Docker].
 
 Esta sección del tutorial muestra cómo:
 
 + AEM Descarga del SDK de
-+ Instalar [!DNL Dispatcher] Herramientas
-+ Ejecutar el local [!DNL Dispatcher] runtime
++ Instalar [!DNL Dispatcher] herramientas
++ Ejecutar el tiempo de ejecución [!DNL Dispatcher] local
 
-[Configure el Local [!DNL Dispatcher] Runtime](./dispatcher-tools.md)
+[Configurar el tiempo de ejecución de Local [!DNL Dispatcher] Runtime](./dispatcher-tools.md)

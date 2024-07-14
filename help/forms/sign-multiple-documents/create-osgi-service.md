@@ -165,7 +165,7 @@ public void updateSignatureStatus(String formData, String guid) {
 
 ## Obtener el siguiente formulario para firmar
 
-El siguiente código se utilizó para obtener el siguiente formulario para firmar para un customerID determinado con un estado de 0. Si la consulta SQL no devuelve ninguna fila, devolvemos la cadena **&quot;AllDone&quot;** lo que indica que no hay más formularios para firmar para el id de cliente dado.
+El siguiente código se utilizó para obtener el siguiente formulario para firmar para un customerID determinado con un estado de 0. Si la consulta SQL no devuelve ninguna fila, devolvemos la cadena **&quot;AllDone&quot;**, que indica que no hay más formularios para firmar para el ID de cliente dado.
 
 ```java
 @Override
@@ -205,7 +205,7 @@ public String getNextFormToSign(int customerID) {
 
 ## Recursos
 
-El paquete OSGi con los servicios mencionados puede ser [descargado desde aquí](assets/sign-multiple-forms.jar)
+El paquete OSGi con los servicios mencionados arriba se puede [descargar desde aquí](assets/sign-multiple-forms.jar)
 
 ## Siguientes pasos
 

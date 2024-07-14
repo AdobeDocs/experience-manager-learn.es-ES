@@ -21,6 +21,6 @@ ht-degree: 0%
 
 ## Montar archivos de PDF
 
-Modifique la `assemble2pdfs.ddx` para ensamblar 3 archivos de PDF.
+Modifique el archivo `assemble2pdfs.ddx` para ensamblar 3 archivos de PDF.
 
 Colocará el tercer PDF en la carpeta resources/pdffiles.

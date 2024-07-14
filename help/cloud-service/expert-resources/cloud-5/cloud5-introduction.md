@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Introducción a Cloud 5
 
-AEM Bienvenido a la serie Cloud 5 de Ingeniería de. Uno de los principales problemas en la fase de implementación de cualquier producto es tener suficientes muestras de código o demostraciones en directo de esas muestras, herramientas o API. AEM El objetivo de esta serie es proporcionar información útil acerca de las as a Cloud Service en 5 minutos o menos.
+AEM Bienvenido a la serie Cloud 5 de Ingeniería de. Uno de los principales problemas en la fase de implementación de cualquier producto es tener suficientes muestras de código o demostraciones en directo de esas muestras, herramientas o API. El objetivo de esta serie es ofrecer información útil sobre AEM as a Cloud Service en 5 minutos o menos.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340667?quality=12&learn=on)

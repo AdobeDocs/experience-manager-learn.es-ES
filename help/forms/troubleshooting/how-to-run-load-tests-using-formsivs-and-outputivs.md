@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Cómo ejecutar pruebas de carga mediante FormsIVS y OutputIVS
 
-*Este vídeo explica los pasos para ejecutar pruebas de carga desde la interfaz de usuario mediante FormsIVS y OutputIVS de muestra.*
+*Este vídeo explica los pasos para ejecutar pruebas de carga desde la interfaz de usuario con muestras de FormsIVS y OutputIVS.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335507?quality=12&learn=on)

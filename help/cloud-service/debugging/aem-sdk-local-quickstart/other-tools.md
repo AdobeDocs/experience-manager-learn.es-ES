@@ -25,7 +25,7 @@ AEM Hay otras herramientas que pueden ayudarle a depurar la aplicación en el in
 
 ![CRXDE Lite](./assets/other-tools/crxde-lite.png)
 
-CRXDE Lite AEM es una interfaz basada en web para interactuar con el repositorio de datos JCR, de la red de distribución de datos (JCR) de la red de distribución de datos (). CRXDE Lite proporciona una visibilidad completa del JCR, incluidos nodos, propiedades, valores de propiedad y permisos.
+CRXDE Lite AEM es una interfaz basada en web para interactuar con el repositorio de datos JCR, que se utiliza para el almacenamiento de datos en la red (JCR) y el almacenamiento de datos en la red (JCR). CRXDE Lite proporciona una visibilidad completa del JCR, incluidos nodos, propiedades, valores de propiedad y permisos.
 
 El CRXDE Lite se encuentra en:
 
@@ -42,9 +42,9 @@ El CRXDE Lite de proporciona acceso directo al JCR. El contenido visible mediant
 + Al hacer doble clic en un nodo de archivo en el panel de navegación izquierdo, se abre el contenido del archivo en el panel superior derecho
 + Pulse el botón Guardar todo en la parte superior izquierda para mantener los cambios, o la flecha hacia abajo junto a Guardar todo para revertir los cambios no guardados.
 
-![CRXDE Lite - Depuración de contenido](./assets/other-tools/crxde-lite__debugging-content.png)
+![CRXDE Lite - Depurando contenido](./assets/other-tools/crxde-lite__debugging-content.png)
 
-AEM Cualquier cambio realizado directamente en el SDK de la a través del CRXDE Lite puede resultar difícil de rastrear y controlar. Si corresponde, asegúrese de que los cambios realizados mediante CRXDE Lite AEM regresen a los paquetes de contenido mutable del proyecto de la (`ui.content`) y se ha comprometido con Git. AEM AEM Lo ideal es que todos los cambios en el contenido de la aplicación se originen en la base de código y fluyan hacia el SDK de la aplicación a través de implementaciones, en lugar de realizar cambios directamente en el SDK de la aplicación a través de un CRXDE Lite.
+AEM Cualquier cambio realizado directamente en el SDK de la a través del CRXDE Lite puede resultar difícil de rastrear y controlar. Si corresponde, asegúrese de que los cambios realizados mediante el CRXDE Lite AEM regresen a los paquetes de contenido mutable (`ui.content`) del proyecto de la y se confirmen en Git. AEM AEM Lo ideal es que todos los cambios en el contenido de la aplicación se originen en la base de código y fluyan hacia el SDK de la aplicación a través de implementaciones, en lugar de realizar cambios directamente en el SDK de la aplicación a través de un CRXDE Lite.
 
 ### Depuración de controles de acceso
 
@@ -62,11 +62,11 @@ Para acceder a la consola de Control de acceso de prueba en CRXDE Lite, vaya a:
 
 Los resultados se muestran a continuación:
 
-+ __Ruta__ reitera la ruta evaluada
-+ __Principal__ reitera el usuario o grupo para el que se evaluó la ruta
-+ __Entidades__ enumera todas las entidades de seguridad de las que forma parte la entidad de seguridad seleccionada.
++ __Ruta__ reitera la ruta que se evaluó
++ __Principal__ reitera al usuario o grupo para el que se evaluó la ruta
++ __Principales__ enumera todas las principales de las que forma parte el principal seleccionado.
    + Esto resulta útil para comprender las pertenencias a grupos transitivas que pueden proporcionar permisos a través de la herencia
-+ __Privilegios en la ruta__ enumera todos los permisos JCR que tiene la entidad de seguridad seleccionada en la ruta evaluada
++ __Privilegios en la ruta__ enumera todos los permisos JCR que la entidad de seguridad seleccionada tiene en la ruta evaluada
 
 ## Explicar la consulta
 
@@ -81,9 +81,9 @@ Explicar consulta se encuentra en:
 
 ## QueryBuilder Debugger
 
-![QueryBuilder Debugger](./assets/other-tools/query-debugger.png)
+![Depurador de QueryBuilder](./assets/other-tools/query-debugger.png)
 
-AEM QueryBuilder Debugger es una herramienta basada en la web que le ayuda a depurar y comprender las consultas de búsqueda mediante el uso de la función de depuración de [QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html) sintaxis.
+AEM QueryBuilder Debugger es una herramienta basada en la Web que le ayuda a depurar y comprender las consultas de búsqueda utilizando la sintaxis [QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html) que se ha creado con el tiempo para la búsqueda y que se ha utilizado para ello.
 
 QueryBuilder Debugger se encuentra en:
 

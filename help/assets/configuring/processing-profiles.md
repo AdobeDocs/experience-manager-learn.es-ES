@@ -1,6 +1,6 @@
 ---
 title: Perfiles de procesamiento
-description: AEM Los perfiles de procesamiento definen las representaciones que se crearán para los recursos en el as a Cloud Service de la.
+description: Los perfiles de procesamiento definen las representaciones que se crearán para los recursos en AEM as a Cloud Service.
 feature: Asset Compute Microservices
 version: Cloud Service
 jira: KT-4993
@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # Perfiles de procesamiento
 
-AEM Los perfiles de procesamiento definen las representaciones que se crearán para los recursos en el as a Cloud Service de la.
+Los perfiles de procesamiento definen las representaciones que se crearán para los recursos en AEM as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35597?quality=12&learn=on)

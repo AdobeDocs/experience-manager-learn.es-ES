@@ -24,7 +24,7 @@ Una vez implementado el código, cree un formulario adaptable basado en los comp
 
 Cada vez que se procesa el formulario, se ejecuta el servicio de rellenado previo asociado y el formulario se rellena con los datos devueltos por el servicio de rellenado previo.
 
-Por ejemplo, para rellenar previamente el formulario con los datos asociados al GUID **d815a2b3-5f4c-4422-8197-d0b73479bf0e**, se utiliza la siguiente URL.
+Por ejemplo, para rellenar previamente el formulario con los datos asociados con el GUID **d815a2b3-5f4c-4422-8197-d0b73479bf0e**, se utiliza la siguiente dirección URL.
 El código del servicio de relleno previo extraerá el valor del parámetro guid y recuperará los datos asociados con el guid de la fuente de datos.
 
 ```html

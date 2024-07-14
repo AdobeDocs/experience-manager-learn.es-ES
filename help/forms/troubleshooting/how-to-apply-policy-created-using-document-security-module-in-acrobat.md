@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Aplicar la directiva creada con el módulo Document Security en Acrobat
 
-*Este vídeo muestra el proceso de aplicación de la directiva creada con el módulo de seguridad de documentos en Acrobat.*
+*Este vídeo muestra el proceso de aplicación de la directiva creada mediante el módulo de seguridad de documentos en Acrobat.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335486?quality=12&learn=on)

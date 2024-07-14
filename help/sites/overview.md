@@ -42,7 +42,7 @@ Adobe Experience Manager AEM () Sites es una plataforma líder de administració
     </a>
     </div>
     <p>
-    <em>Una guía de introducción para desarrolladores que buscan implementar AEM Sites.</em>
+    <em>Guía de introducción para desarrolladores que buscan implementar AEM Sites.</em>
     <p>
   </td>
   <td>
@@ -51,24 +51,24 @@ Adobe Experience Manager AEM () Sites es una plataforma líder de administració
     </a>
     <div>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es">
-    <strong>AEM Introducción a la tecnología sin encabezado de</strong>
+    AEM <strong>Introducción a la tecnología sin encabezado</strong>
     </a>
     </div>
     <p>
-    <em>AEM Una guía de introducción para desarrolladores que buscan usar el CMS sin encabezado como CMS sin encabezado</em>
+    AEM <em>Guía de introducción para desarrolladores que buscan usar el CMS sin encabezado como un CMS sin encabezado.</em>
     </p>
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html">
-      <img alt="AEM SPA Introducción al Editor de" src="./assets/aem-wknd-spa-editor-tutorial.png" />
+      <img alt="AEM SPA Introducción al Editor de segmentos de" src="./assets/aem-wknd-spa-editor-tutorial.png" />
     </a>
      <div>
       <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html">
-        <strong>AEM SPA Introducción al Editor de</strong>
+        AEM SPA <strong>Introducción al Editor de de trabajo</strong>
       </a>
     </div>
     <p>
-    <em>SPA AEM Una guía de introducción para que los desarrolladores integren una aplicación de una sola página () con la aplicación de la aplicación de la página de la aplicación de la página de la aplicación de la página de la aplicación de la aplicación de la página de la aplicación de la página de la aplicación de la aplicación de la aplicación de la página de la página de la aplicación de la.</em>
+    SPA AEM <em>Guía de introducción para que los desarrolladores integren una aplicación de una sola página () con los elementos de la aplicación de la página de la aplicación de la aplicación de la página de la aplicación de la aplicación de la aplicación de la página de la aplicación de la aplicación de la aplicación de la aplicación de la página de la aplicación de la aplicación de la aplicación de la página de la aplicación de la aplicación de la página de la aplicación de la página de la aplicación de la aplicación de la página de la aplicación de la aplicación de la página de la aplicación de la página de la aplicación de la aplicación de la aplicación de la página de la aplicación de la.</em>
     <p>
   </td>
 </tr>
@@ -82,7 +82,7 @@ Adobe Experience Manager AEM () Sites es una plataforma líder de administració
 * [Documentación de desarrollo de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
 * [Documentación de administración de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html)
 * [Documentación de implementación de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/home.html)
-* [AEM Tutoriales en as a Cloud Service](/help/cloud-service/overview.md)
+* [Tutoriales de AEM as a Cloud Service](/help/cloud-service/overview.md)
 * [Tutoriales de AEM Assets](/help/assets/overview.md)
 * [Tutoriales de AEM Forms](/help/forms/overview.md)
 * [AEM Tutoriales de fundaciones de](/help/foundation/overview.md)

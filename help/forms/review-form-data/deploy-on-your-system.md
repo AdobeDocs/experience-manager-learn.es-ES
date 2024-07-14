@@ -19,10 +19,10 @@ ht-degree: 0%
 
 # Implementación de recursos en el sistema
 
-Implementar el [summary-component](assets/summarize-component.zip).
+Implementar [summary-component](assets/summarize-component.zip).
 
 [Implementar el formulario adaptable de ejemplo](assets/sample-adaptive-form.zip).
 
-[Previsualización del formulario de ejemplo](http://localhost:4502/content/dam/formsanddocuments/testsummary/jcr:content?wcmmode=disabled)
+[Vista previa del formulario de ejemplo](http://localhost:4502/content/dam/formsanddocuments/testsummary/jcr:content?wcmmode=disabled)
 
-Rellene los campos del formulario y vaya a la pantalla de resumen haciendo clic en **siguiente** para ver los datos del formulario. También puede editar los datos del formulario haciendo clic en el icono de lápiz.
+Rellene los campos del formulario y vaya a la pantalla de resumen haciendo clic en el botón **siguiente** para ver cómo revisar los datos del formulario. También puede editar los datos del formulario haciendo clic en el icono de lápiz.

@@ -19,15 +19,15 @@ ht-degree: 0%
 
 En esta parte, crearemos el modelo de datos de formulario. El modelo de datos de formulario permite configurar y conectarse a fuentes de datos diferentes. Una interfaz de usuario intuitiva para crear un esquema de representación de datos unificado de entidades y servicios empresariales a través de fuentes de datos conectadas. El siguiente vídeo muestra los pasos para crear el modelo de datos de formulario.
 
-**Crear un modelo de datos de formulario en AEM Forms 6.4**
+**Creando modelo de datos de formulario en AEM Forms 6.4**
 
 >[!VIDEO](https://video.tv.adobe.com/v/27763?quality=12&learn=on)
 
-**Crear un modelo de datos de formulario en AEM Forms 6.5 y versiones posteriores**
+**Creando modelo de datos de formulario en AEM Forms 6.5 y versiones posteriores**
 
 >[!VIDEO](https://video.tv.adobe.com/v/27765?quality=12&learn=on)
 
-El modelo de datos de formulario depende de una fuente de datos configurada correctamente. Utilizaremos la fuente de datos configurada en el paso anterior como base para este modelo de datos de formulario.
+El modelo de datos de formulario depende de un Source de datos configurado correctamente. Utilizaremos la Source de datos configurada en el paso anterior como base para este modelo de datos de formulario.
 
 El modelo de datos de formulario es la base de todas las comunicaciones interactivas. La operación Obtener/Leer del modelo de datos de formulario recuperará los datos de la fuente de datos back-end y se utilizará para rellenar el documento de comunicaciones interactivas.
 

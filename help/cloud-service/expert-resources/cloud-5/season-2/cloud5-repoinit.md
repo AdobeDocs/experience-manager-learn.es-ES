@@ -25,4 +25,4 @@ Introducción a REPOINIT, o el inicializador del repositorio de Sling. Conozca a
 ## Contenido cubierto en este vídeo
 
 + Resumen de REPOINIT
-+ [Sintaxis de REPOINIT](https://sling.apache.org/documentation/bundles/repository-initialization.html#appendix-a-repoinit-syntax-parser-test-scenarios-1)
++ [Sintaxis REPOINIT](https://sling.apache.org/documentation/bundles/repository-initialization.html#appendix-a-repoinit-syntax-parser-test-scenarios-1)

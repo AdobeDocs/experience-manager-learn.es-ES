@@ -27,7 +27,7 @@ Grupos de usuarios cerrados (CUG) es una función que se utiliza para restringir
 
 ## Grupo de usuarios cerrado (CUG) con AEM Assets
 
-* AEM Diseñado para restringir el acceso a los recursos de una instancia de publicación de la.
+* AEM Diseñado para restringir el acceso a los recursos de una instancia de Publish de la.
 * Otorga acceso de lectura a un conjunto de usuarios/grupos.
 * El CUG solo se puede configurar en el nivel de carpeta. No se puede establecer un CUG en recursos individuales.
 * Las subcarpetas y los recursos aplicados heredan automáticamente las políticas de CUG.
@@ -39,12 +39,12 @@ AEM AEM Tanto los Grupos de usuarios cerrados (CUG) como las Listas de control d
 
 |                   | ACL | CUG |
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| Uso previsto | Configure y aplique permisos para el contenido en **corriente** AEM instancia de. | AEM Configuración de políticas de CUG para el contenido en la **autor** ejemplo. AEM Aplicar políticas de CUG para el contenido en la **publicar** instancia(s). |
+| Uso previsto | AEM Configure y aplique permisos para el contenido en la instancia **actual** de la instancia de la aplicación de la. | AEM Configure las políticas de CUG para el contenido en la instancia de **autor** de la. AEM Aplicar políticas de CUG para el contenido en las instancias de **publicación** de la. |
 | Niveles de permisos | Define permisos concedidos/denegados para usuarios/grupos para todos los niveles: Leer, Modificar, Crear, Eliminar, Leer ACL, Editar ACL, Replicar. | Otorga acceso de lectura a un conjunto de usuarios/grupos. Deniega el acceso de lectura a *todos los demás* usuarios/grupos. |
-| Publicación | Las ACL son *no* publicado con contenido. | Políticas de CUG *son* publicado con contenido. |
+| Publicación | Las ACL *no* se han publicado con contenido. | Las directivas de CUG *se han* publicado con contenido. |
 
 ## Vínculos de soporte {#supporting-links}
 
-* [Administración de recursos y grupos de usuarios cerrados](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=en#closed-user-group)
-* [Creación de un grupo de usuarios cerrado](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html)
-* [Documentación del grupo de usuarios cerrado de Oak](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html)
+* [Administración de Assets y grupos de usuarios cerrados](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=en#closed-user-group)
+* [Creando un grupo de usuarios cerrado](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html)
+* [Documentación de grupo de usuarios cerrado de Oak](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html)

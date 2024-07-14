@@ -32,7 +32,7 @@ Cuando AMS aprovisiona un sistema, implementa una configuración de línea de ba
 El diseño no impide modificar su comportamiento y anular los cambios que necesite.  En lugar de cambiar estos archivos, superpondrá su propio archivo, que reemplaza al original.
 
 Esto también le permite asegurarse de que cuando AMS aplique parches a Dispatchers con las últimas correcciones y mejoras de seguridad, no alterarán sus archivos.  A continuación, puede seguir beneficiándose de las mejoras y adoptar solo los cambios que desee.
-![Muestra una pista de bolos con una bola rodando por ella.  La bola tiene una flecha con la palabra que te muestra.  Los protectores de los carriles están elevados y tienen las palabras archivos inmutables encima.](assets/immutable-files/bowling-file-immutability.png "bowling-file-immutability")
+![Muestra una pista de bolos con una bola rodando por ella.  La bola tiene una flecha con la palabra que te muestra.  Los protectores de los carriles están elevados y tienen las palabras archivos inmutables encima.](assets/immutable-files/bowling-file-immutability.png "inmutabilidad de archivo de bolos")
 Como se ilustra en la imagen anterior, los archivos inmutables no le impiden jugar.  Simplemente evitan que se perjudique su rendimiento y lo mantienen en el carril.  Este método nos permite disponer de unas cuantas características muy clave:
 
 - Las personalizaciones se gestionan en sus propios espacios seguros
@@ -186,7 +186,7 @@ Esta es una respuesta de ejemplo de los archivos que son inmutables:
 
 ### Variables
 
-Las variables permiten realizar cambios funcionales sin cambiar los propios archivos de configuración.  Algunos elementos de la configuración se pueden ajustar ajustando los valores de las variables.  Un ejemplo que podemos resaltar del archivo `/etc/httpd/conf.d/dispatcher_vhost.conf` se muestra aquí:
+Las variables permiten realizar cambios funcionales sin cambiar los propios archivos de configuración.  Algunos elementos de la configuración se pueden ajustar ajustando los valores de las variables.  Aquí se muestra un ejemplo que podemos resaltar del archivo `/etc/httpd/conf.d/dispatcher_vhost.conf`:
 
 ```
 Include /etc/httpd/conf.d/variables/ams_default.vars
@@ -199,7 +199,7 @@ IfModule disp_apache2.c
 /IfModule
 ```
 
-Vea cómo la directiva DispatcherLogLevel tiene una variable de `DISP_LOG_LEVEL` en lugar del valor normal que vería allí.  Encima de esa sección de código también verá una instrucción de inclusión en un archivo de variables.  El archivo de variables `/etc/httpd/conf.d/variables/ams_default.vars` es lo que queremos ver a continuación.  Este es el contenido del archivo de variables:
+Vea cómo la directiva DispatcherLogLevel tiene una variable de `DISP_LOG_LEVEL` en lugar del valor normal que vería allí.  Encima de esa sección de código también verá una instrucción de inclusión en un archivo de variables.  El archivo de variable `/etc/httpd/conf.d/variables/ams_default.vars` es lo que queremos ver a continuación.  Este es el contenido del archivo de variables:
 
 ```
 Define DISP_LOG_LEVEL info
@@ -211,7 +211,7 @@ Define PUBLISH_FORCE_SSL 0
 Define LIVECYCLE_FORCE_SSL 1
 ```
 
-Más arriba puede ver el valor actual de `DISP_LOG_LEVEL` la variable es `info`.  Podemos ajustarlo para rastrear o depurar, o al valor numérico/nivel de su elección.  Ahora, en cualquier lugar que controle el nivel de registro, se ajustará automáticamente.
+Más arriba puede ver que el valor actual de la variable `DISP_LOG_LEVEL` es `info`.  Podemos ajustarlo para rastrear o depurar, o al valor numérico/nivel de su elección.  Ahora, en cualquier lugar que controle el nivel de registro, se ajustará automáticamente.
 
 ### Método de superposición
 
@@ -259,13 +259,13 @@ VirtualHost *:80
 /VirtualHost
 ```
 
-Ahora hemos actualizado nuestro `ServerName` y `ServerAlias` para que coincida con los nuevos nombres de dominio, así como para actualizar otros encabezados de ruta de exploración.  A continuación, habilitemos nuestro nuevo archivo para permitir que Apache sepa utilizarlo:
+Ahora hemos actualizado `ServerName` y `ServerAlias` para que coincidan con los nuevos nombres de dominio, así como para actualizar otros encabezados de ruta de exploración.  A continuación, habilitemos nuestro nuevo archivo para permitir que Apache sepa utilizarlo:
 
 ```
 $ cd /etc/httpd/conf.d/enabled_vhosts/; ln -s ../available_vhosts/weretail_publish.vhost .
 ```
 
-Ahora, el servidor web de Apache sabe que el dominio es algo para lo que debería generar tráfico, pero aún necesitamos informar al módulo de Dispatcher que tiene un nuevo nombre de dominio que respetar.  Empezaremos creando un nuevo `*_vhost.any` archivo `/etc/httpd/conf.dispatcher.d/vhosts/weretail_vhosts.any` y dentro de ese archivo pondremos el nombre de dominio que queremos respetar:
+Ahora, el servidor web de Apache sabe que el dominio es algo para lo que debería generar tráfico, pero aún necesitamos informar al módulo de Dispatcher que tiene un nuevo nombre de dominio que respetar.  Empezaremos creando un nuevo archivo de `*_vhost.any` `/etc/httpd/conf.dispatcher.d/vhosts/weretail_vhosts.any` y, dentro de él, pondremos el nombre de dominio que queremos respetar:
 
 ```
 "we-retail.adobe.com"
@@ -301,7 +301,7 @@ Después:
 }
 ```
 
-Ahora hemos actualizado el nombre de la granja y la inclusión que utiliza en la `/virtualhosts` de la configuración de la granja.  Necesitamos habilitar este nuevo archivo de granja para que pueda utilizarlo en la configuración en ejecución:
+Ahora hemos actualizado el nombre de la granja y la inclusión que utiliza en la sección `/virtualhosts` de la configuración de la granja.  Necesitamos habilitar este nuevo archivo de granja para que pueda utilizarlo en la configuración en ejecución:
 
 ```
 $ cd /etc/httpd/conf.dispatcher.d/enabled_farms/; ln -s ../available_farms/400_weretail_publish_farm.any .

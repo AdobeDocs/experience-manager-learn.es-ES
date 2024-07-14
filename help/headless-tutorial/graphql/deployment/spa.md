@@ -20,19 +20,19 @@ ht-degree: 1%
 
 # AEM SPA Implementaciones de Headless
 
-AEM SPA AEM Las implementaciones de aplicación de una sola página () sin encabezado implican aplicaciones basadas en JavaScript creadas con marcos de trabajo como React o Vue, que consumen e interactúan con el contenido en forma de interfaz de usuario sin encabezado.
+AEM SPA Las implementaciones de aplicación de una sola página () sin encabezado implican aplicaciones basadas en JavaScript AEM creadas con marcos de trabajo como React o Vue, que consumen contenido e interactúan con él de manera sin encabezado, y lo hacen de manera sin encabezado.
 
 SPA AEM SPA La implementación de un que interactúe de manera sin encabezado implica alojar el y hacer que sea accesible a través de un explorador web.
 
 ## SPA Host de la
 
-SPA Una consta de una colección de recursos web nativos: **HTML, CSS y JavaScript**. Estos recursos se generan durante la _generar_ proceso (por ejemplo, `npm run build`) e implementado en un host para que lo consuman los usuarios finales.
+SPA Un recurso está formado por una colección de recursos web nativos: **HTML, CSS y JavaScript**. Estos recursos se generan durante el proceso _build_ (por ejemplo, `npm run build`) y se implementan en un host para que los consuman los usuarios finales.
 
-Hay varios **hosting** opciones según los requisitos de su organización:
+Hay varias opciones de **alojamiento** según los requisitos de su organización:
 
 1. **Proveedores de nube** como **Azure** o **AWS**.
 
-2. **On-Premise** hosting en una empresa **centro de datos**
+2. **Alojamiento local** en un **centro de datos** corporativo
 
 3. **Plataformas de alojamiento front-end** como **AWS Amplify**, **Azure App Service**, **Netlify**, **Heroku**, **Vercel**, etc.
 
@@ -44,10 +44,10 @@ SPA AEM SPA AEM La consideración principal al alojar una que interactúa con si
 
 SPA AEM Un dominio compartido de y cuando ambos son acceso para usuarios finales del mismo dominio. Por ejemplo:
 
-+ AEM Se accede a la a través de: `https://wknd.site/`
-+ SPA se accede a la a través de `https://wknd.site/spa`
++ AEM Se tiene acceso a la a través de: `https://wknd.site/`
++ SPA Se accede a la a través de `https://wknd.site/spa`
 
-AEM SPA SPA AEM AEM Dado que se accede a las dos, la y la, desde el mismo dominio, los exploradores web permiten al usuario realizar XHR en puntos finales sin encabezado sin necesidad de CORS y permiten el uso compartido de cookies HTTP (como las cookies de HTTP), lo que permite al usuario realizar un seguimiento de los puntos finales sin encabezado, sin necesidad de usar CORS, y permitir el uso compartido de las cookies HTTP (como las de los navegadores web), lo que permite el uso compartido de las cookies de HTTP (por ejemplo, las de los navegadores web `login-token` cookie).
+AEM SPA SPA AEM AEM Dado que se accede a las dos, la y la, desde el mismo dominio, los exploradores web permiten al usuario realizar XHR en puntos finales sin encabezado sin necesidad de CORS y permiten el uso compartido de cookies HTTP (como, por ejemplo, el uso compartido de cookies `login-token`), lo que permite a los exploradores web crear puntos finales sin encabezado, sin necesidad de usar CORS. El uso compartido de estas cookies se realiza de forma conjunta con los navegadores web, lo que permite el uso compartido de cookies HTTP (como, por ejemplo, el uso compartido de cookies de , de la).
 
 SPA AEM SPA AEM Depende de usted cómo se enrute el tráfico de la y la en el dominio compartido: CDN con varios orígenes, servidor HTTP con proxy inverso, alojamiento de la directamente en el dominio compartido, etc.
 
@@ -63,10 +63,10 @@ SPA AEM A continuación, se indican las configuraciones de implementación neces
 
 SPA AEM Un y un dominio tienen dominios diferentes cuando los usuarios finales de un dominio diferente acceden a ellos. Por ejemplo:
 
-+ AEM Se accede a la a través de: `https://wknd.site/`
-+ SPA se accede a la a través de `https://wknd-app.site/`
++ AEM Se tiene acceso a la a través de: `https://wknd.site/`
++ SPA Se accede a la a través de `https://wknd-app.site/`
 
-AEM SPA Dado que se accede a los y a los recursos desde dominios diferentes, los exploradores web aplican políticas de seguridad como las siguientes [Intercambio de recursos de origen cruzado (CORS)](./configurations/cors.md)AEM e impedir que se compartan cookies HTTP (como las cookies de `login-token` cookie).
+AEM SPA AEM Dado que se accede a los recursos de origen cruzado (CORS) [y a los dominios, los exploradores web aplican directivas de seguridad tales como el acceso compartido de recursos de origen cruzado (CORS)](./configurations/cors.md), y evitan el uso compartido de cookies HTTP (como el uso compartido de cookies `login-token` por parte de los navegadores web).
 
 SPA AEM A continuación, se indican las configuraciones de implementación necesarias para implementaciones de producción de la, cuando se aloja en un dominio diferente al de la ubicación de la aplicación.
 
@@ -74,21 +74,21 @@ SPA AEM A continuación, se indican las configuraciones de implementación neces
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [Filtros de Dispatcher](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | [Uso compartido de recursos de origen cruzado (CORS)](./configurations/cors.md) | ✔ | ✔ | ✔ |
-| [AEM anfitriones de](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
+| AEM [hosts de la](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
 
 #### SPA Implementación de ejemplo en dominios diferentes
 
-SPA En este ejemplo, el se implementa en un dominio Netlify (`https://main--sparkly-marzipan-b20bf8.netlify.app/`SPA AEM ) y la consume API de GraphQL AEM de la Publish (`https://publish-p65804-e666805.adobeaemcloud.com`). Las siguientes capturas de pantalla resaltan el requisito CORS.
+SPA SPA AEM En este ejemplo, el se implementa en un dominio de Netlify (`https://main--sparkly-marzipan-b20bf8.netlify.app/`) y el consume las API de GraphQL AEM de los dominios de Publish (`https://publish-p65804-e666805.adobeaemcloud.com`) de la. Las siguientes capturas de pantalla resaltan el requisito CORS.
 
-1. SPA AEM El se sirve desde un dominio de Netlify, pero realiza una llamada XHR a las API de GraphQL de la en un dominio diferente. Esta solicitud entre sitios requiere [CORS](./configurations/cors.md) AEM que se debe configurar en la para permitir que la solicitud del dominio de Netlify acceda a su contenido.
+1. SPA AEM El se sirve desde un dominio de Netlify, pero realiza una llamada XHR a las API de GraphQL de la en un dominio diferente. AEM Esta solicitud entre sitios requiere que [CORS](./configurations/cors.md) se configure en el sitio para permitir que la solicitud del dominio de Netlify acceda a su contenido.
 
-   ![SPA SPA AEM Solicitud de atendida desde los hosts de &amp; ](assets/spa/cors-requirement.png)
+   SPA SPA AEM ![solicitud de servicio atendida desde los anfitriones de ](assets/spa/cors-requirement.png) de los hosts de y
 
-2. AEM Al inspeccionar la solicitud XHR a la API de GraphQL de la, el `Access-Control-Allow-Origin` AEM está presente, lo que indica al navegador web que permite que las solicitudes de este dominio de Netlify accedan a su contenido.
+2. AEM Al inspeccionar la solicitud XHR a la API de GraphQL AEM de la, está presente `Access-Control-Allow-Origin`, lo que indica al explorador web que la solicitud de este dominio de Netlify se permite para acceder a su contenido.
 
-   AEM Si el valor de [CORS](./configurations/cors.md) faltaba o no incluía el dominio Netlify, el navegador web fallaría la solicitud XHR e informaría de un error CORS.
+   AEM Si falta el elemento [CORS](./configurations/cors.md) o no incluye el dominio Netlify, el explorador web no responderá a la solicitud XHR e informará de un error CORS.
 
-   ![AEM Encabezado de respuesta CORS API de GraphQL de](assets/spa/cors-response-headers.png)
+   AEM ![CORS Response Header (Encabezado de respuesta CORS), API de GraphQL](assets/spa/cors-response-headers.png)
 
 ## Ejemplo de aplicación de una sola página
 

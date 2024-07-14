@@ -23,7 +23,8 @@ A continuación se muestra la captura de pantalla del archivo xml que contiene v
 
 ![multi-record-xml](assets/multi-record-xml.PNG)
 
-El xml de datos tiene 2 registros. Cada registro está representado por el elemento form1. Este xml se pasa a OutputService [método generatePDFOutputBatch](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/OutputService.html) obtenemos una lista de documentos pdf (uno por registro) La firma del método generatePDFOutputBatch toma los siguientes parámetros
+El xml de datos tiene 2 registros. Cada registro está representado por el elemento form1. Este xml se pasó al método OutputService [generatePDFOutputBatch](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/OutputService.html); obtenemos una lista de documentos pdf (uno por registro)
+La firma del método generatePDFOutputBatch emplea los parámetros siguientes
 
 * templates: mapa que contiene la plantilla, identificado por una clave
 * data: mapa que contiene documentos de datos xml, identificado por clave
@@ -126,12 +127,12 @@ public Document generateMultiplePdfs(HashMap < String, String > templateMap, Has
 
 Para probar esta capacidad en su servidor, siga las siguientes instrucciones:
 
-* [Descargue y extraiga el contenido del archivo zip en su sistema de archivos](assets/mult-records-template-and-xml-file.zip).Este archivo zip contiene la plantilla y el archivo de datos xml.
-* [Dirija su explorador a la consola web de Felix](http://localhost:4502/system/console/bundles)
-* [Implementar el paquete Desarrollando con usuario de servicio](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar).
-* [Implementar paquete de AEM FormsDocumentServices personalizado](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar).Paquete personalizado que genera los archivos PDF mediante la API OutputService
+* [Descargue y extraiga el contenido del archivo zip a su sistema de archivos](assets/mult-records-template-and-xml-file.zip). Este archivo zip contiene la plantilla y el archivo de datos xml.
+* [Dirija su explorador a la consola web Felix](http://localhost:4502/system/console/bundles)
+* [Implementar el paquete DevelopersWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar).
+* [Implementar paquete AEMFormsDocumentServices personalizado](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar).Paquete personalizado que genera los archivos PDF mediante la API OutputService
 * [Dirija su explorador al administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
-* [Importación e instalación del paquete](assets/generate-multiple-pdf-from-xml.zip). Este paquete contiene la página html que le permite soltar la plantilla y los archivos de datos.
+* [Importe e instale el paquete](assets/generate-multiple-pdf-from-xml.zip). Este paquete contiene la página html que le permite soltar la plantilla y los archivos de datos.
 * [Dirija su explorador a MultiRecords.html](¿http://localhost:4502/content/DocumentServices/Multirecord.html?)
 * Arrastre y suelte la plantilla y el archivo de datos xml juntos
 * Descargue el archivo zip creado. Este archivo zip contiene los archivos pdf generados por el servicio de salida.

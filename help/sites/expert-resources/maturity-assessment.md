@@ -27,7 +27,7 @@ AEM Las evaluaciones de la madurez permiten evaluar y cumplir las normas y prác
 Para conocer las prácticas recomendadas sobre la administración, el desarrollo o la creación, consulte los siguientes recursos:
 
 * [Prácticas recomendadas de administración](https://experienceleague.adobe.com/docs/experience-manager-65/administering/bestpractices/administer-best-practices.html?lang=en)
-* [Desarrollo de prácticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/best-practices.html?lang=en)
+* [Prácticas recomendadas de desarrollo](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/best-practices.html?lang=en)
 * [Prácticas recomendadas de creación](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/best-practices.html?lang=en)
 
 AEM Cada una de estas áreas de prácticas recomendadas anteriores también incluye más prácticas recomendadas en la creación, el desarrollo y la implementación de entornos de trabajo de tipo

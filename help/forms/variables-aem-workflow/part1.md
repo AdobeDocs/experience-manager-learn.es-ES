@@ -35,9 +35,9 @@ Los datos del formulario adaptable se almacenan en el elemento de datos como se 
 
 >[!NOTE]
 >
->**AEM Forms 6.5.0** : Cuando esté creando una variable de tipo XML para capturar los datos enviados en el modelo de flujo de trabajo, no asocie el XSD con la variable. Esto se debe a que cuando envía un formulario adaptable basado en XSD, los datos enviados no son compatibles con el XSD. Los datos de quejas XSD se incluyen en el elemento /afData/afBoundData/.
+>**AEM Forms 6.5.0**: cuando esté creando una variable de tipo XML para capturar los datos enviados en el modelo de flujo de trabajo, no asocie el XSD con la variable. Esto se debe a que cuando envía un formulario adaptable basado en XSD, los datos enviados no son compatibles con el XSD. Los datos de quejas XSD se incluyen en el elemento /afData/afBoundData/.
 >
->**AEM Forms 6.5.1** : Si asocia XSD con la variable XML, puede examinar los elementos de esquema para realizar la asignación de variables. No podrá acceder a los datos del formulario no enlazados a los elementos del esquema. Si su caso de uso es acceder a datos enlazados a elementos de esquema, así como a datos no enlazados, no enlace el esquema con la variable XML en el flujo de trabajo. Tendrá que utilizar la expresión XPath adecuada para llegar a los datos que necesite
+>**AEM Forms 6.5.1**: si asocia XSD con la variable XML, puede examinar los elementos de esquema para realizar la asignación de variables. No podrá acceder a los datos del formulario no enlazados a los elementos del esquema. Si su caso de uso es acceder a datos enlazados a elementos de esquema, así como a datos no enlazados, no enlace el esquema con la variable XML en el flujo de trabajo. Tendrá que utilizar la expresión XPath adecuada para llegar a los datos que necesite
 
 ## Crear variables XML
 
@@ -45,7 +45,7 @@ Los datos del formulario adaptable se almacenan en el elemento de datos como se 
 
 ### Usar el esquema con la variable XML
 
-**Asignar una variable XML al esquema. Utilice esta capacidad con AEM Forms 6.5.1 en adelante**
+**Asignación de una variable XML con esquema. Usar esta capacidad con AEM Forms 6.5.1 y versiones posteriores**
 
 >[!VIDEO](https://video.tv.adobe.com/v/28098?quality=12&learn=on)
 
@@ -56,7 +56,7 @@ Los datos del formulario adaptable se almacenan en el elemento de datos como se 
 Para que los recursos funcionen en el sistema, siga estos pasos:
 
 * [AEM Descargar e importar los recursos en el administrador de paquetes mediante el uso de un administrador de paquetes](assets/xmlandstringvariable.zip)
-* [Exploración del modelo de flujo de trabajo](http://localhost:4502/editor.html/conf/global/settings/workflow/models/vacationrequest.html) para comprender las variables que se utilizan en el flujo de trabajo
-* [Configuración del servicio de correo electrónico](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html#ConfiguringtheMailService)
-* [Abra el formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/applicationfortimeoff/jcr:content?wcmmode=disabled)
+* [Explore el modelo de flujo de trabajo](http://localhost:4502/editor.html/conf/global/settings/workflow/models/vacationrequest.html) para comprender las variables que se utilizan en el flujo de trabajo
+* [Configurar el servicio de correo electrónico](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html#ConfiguringtheMailService)
+* [Abrir el formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/applicationfortimeoff/jcr:content?wcmmode=disabled)
 * Complete los detalles y envíe el formulario.

@@ -19,7 +19,7 @@ ht-degree: 8%
 
 # Crear formulario inicial
 
-El formulario inicial (formulario de refinanciación) se utiliza para firmar varios formularios activando la variable **Firma de varios Forms** AEM flujo de trabajo de. Puede introducir los valores que desee, pero asegúrese de que se añaden los campos siguientes al formulario.
+El formulario inicial (formulario de refinanciación) se utiliza para firmar varios formularios activando el flujo de trabajo de **Firmar varios Forms AEM** de la. Puede introducir los valores que desee, pero asegúrese de que se añaden los campos siguientes al formulario.
 
 | Tipo de campo | Nombre | Función | Oculto | Valor predeterminado |
 | ------------------------|---------------------------------------|--------------------|--------|----------------- |
@@ -29,12 +29,12 @@ El formulario inicial (formulario de refinanciación) se utiliza para firmar var
 | TextField | customerEmail | Correo electrónico del cliente para enviar la notificación | N |
 | CheckBox | formsToSign | Los elementos identifican los formularios del paquete | N |
 
-El formulario inicial debe configurarse para almacenar en déclencheur AEM un flujo de trabajo de llamado **signmultipleforms**
-Asegúrese de que la ruta del archivo de datos está configurada en **Data.xml**. Esto es muy importante, ya que el código de ejemplo busca un archivo llamado Data.xml en la carga útil del proceso de envío del formulario.
+El formulario inicial debe configurarse para almacenar en déclencheur AEM un flujo de trabajo de denominado **signmultipleforms**
+Asegúrese de que la ruta del archivo de datos esté establecida en **Data.xml**. Esto es muy importante, ya que el código de ejemplo busca un archivo llamado Data.xml en la carga útil del proceso de envío del formulario.
 
 ## Recursos
 
-El formulario inicial (formulario de refinanciación) se puede [descargado desde aquí](assets/refinance-form.zip)
+El formulario inicial (formulario de refinanciación) se puede [descargar desde aquí](assets/refinance-form.zip)
 
 ## Siguientes pasos
 

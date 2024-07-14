@@ -1,6 +1,6 @@
 ---
 title: Introducción a Cloud Acceleration Manager
-description: Descubra cómo Cloud Acceleration Manager puede ayudarle a pasar rápida y fácilmente a Experience Manager as a Cloud Service.
+description: Descubra cómo Cloud Acceleration Manager puede ayudarle a pasar rápida y fácilmente al as a Cloud Service de Experience Manager.
 version: Cloud Service
 feature: Migration
 topic: Migration, Upgrade
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Introducción a Cloud Acceleration Manager
 
-Descubra cómo Cloud Acceleration Manager puede ayudarle a pasar rápida y fácilmente a Experience Manager as a Cloud Service.
+Descubra cómo Cloud Acceleration Manager puede ayudarle a pasar rápida y fácilmente al as a Cloud Service de Experience Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336689?quality=12&learn=on)

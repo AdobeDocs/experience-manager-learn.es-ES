@@ -18,16 +18,17 @@ ht-degree: 0%
 
 # Importar proyecto de Eclipse
 
-Descargue y descomprima el [archivo zip](./assets/aem-forms-cs-doc-gen.zip)
+Descargar y descomprimir el [archivo zip](./assets/aem-forms-cs-doc-gen.zip)
 
-Iniciar Eclipse e importar el proyecto en Eclipse El proyecto incluye los siguientes archivos en la carpeta de recursos:
+Inicie Eclipse e importe el proyecto en Eclipse
+El proyecto incluye los siguientes archivos en la carpeta de recursos:
 
 * DataFile1,DataFile2 y DataFile3: archivos de datos xml de ejemplo que se combinarán con la plantilla para generar el archivo de PDF final
 * custom_fonts.xdp: plantilla XDP.
 * service_token.json: tendrá que reemplazar el contenido de este archivo con las credenciales específicas de su cuenta
 * options.json: las opciones especificadas en este archivo se utilizan para establecer las propiedades del archivo de PDF generado por la API
 
-![resources-file](./assets/resource-files.png)
+![archivo de recursos](./assets/resource-files.png)
 
 ## Prueba de la solución
 
@@ -37,6 +38,6 @@ Iniciar Eclipse e importar el proyecto en Eclipse El proyecto incluye los siguie
 * Ejecute Main.java como aplicación java
 
 >[!NOTE]
-> La primera vez que ejecute el programa java obtendrá el error HTTP 403. Para superar esto, asegúrese de dar la [AEM los permisos adecuados para el usuario de la cuenta técnica en la aplicación de la cuenta de](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=es#configuraci%C3%B3n-del-acceso-en-aem).
+> La primera vez que ejecute el programa java obtendrá el error HTTP 403. AEM Para superar esto, asegúrese de dar los [permisos apropiados al usuario de la cuenta técnica en el usuario de la cuenta técnica en la que se encuentra el usuario de la cuenta técnica en la que se encuentra el usuario de la cuenta de](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=es#configuraci%C3%B3n-del-acceso-en-aem).
 
-**Usuarios de AEM Forms** Esta es la función que he utilizado en este curso.
+**Usuarios de AEM Forms** es la función que utilicé para este curso.

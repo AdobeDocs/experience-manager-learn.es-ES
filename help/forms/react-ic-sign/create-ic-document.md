@@ -24,7 +24,7 @@ Para generar un documento de comunicación interactiva mediante la API, se debe 
 * Crear servicio de rellenado previo
 * Generar documento de comunicación interactiva
 
-El nombre del servicio `ccm-print-test` se utiliza para acceder a este servicio. Una vez definido este servicio de rellenado previo, puede acceder a este servicio en el servlet o en la implementación del paso del proceso de flujo de trabajo para generar el documento del canal de impresión.
+El nombre de servicio `ccm-print-test` se usa para obtener acceso a este servicio. Una vez definido este servicio de rellenado previo, puede acceder a este servicio en el servlet o en la implementación del paso del proceso de flujo de trabajo para generar el documento del canal de impresión.
 
 ```java
 package com.acrobatsign.core;
@@ -318,4 +318,4 @@ public String getWidgetURL(String widgetId) throws ClientProtocolException, IOEx
 
 ## Siguientes pasos
 
-Escribir un [El contenedor del servicio OSGi para exponer la API de Acrobat Sign](./wrapper-sign-api.md)
+Escriba un contenedor de servicio [OSGi para exponer la API de Acrobat Sign](./wrapper-sign-api.md)

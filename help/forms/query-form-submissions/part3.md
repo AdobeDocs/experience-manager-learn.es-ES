@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Se creó una interfaz de consulta sencilla para permitir al &quot;administrador&quot; introducir criterios de búsqueda para recuperar envíos de formularios específicos. Los resultados se muestran en un formato tabular sencillo con la opción de ver un envío de formulario concreto.
 
-![query-submissions](assets/query-submissions.png)
+![envíos de consultas](assets/query-submissions.png)
 
 Los desplegables de esta interfaz se colocan en cascada. Las opciones disponibles en la lista desplegable cambian según las selecciones realizadas en la lista desplegable anterior.
 

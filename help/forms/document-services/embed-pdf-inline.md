@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Un caso de uso común es mostrar un documento pdf con los datos introducidos por el usuario que rellena el formulario.
 
-Para llevar a cabo este caso de uso, hemos utilizado el [API de incrustación de Adobe PDF](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html).
+Para llevar a cabo este caso de uso, se ha utilizado la [API de incrustación de Adobe PDF](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html).
 
 Se han realizado los siguientes pasos para completar la integración
 
@@ -31,7 +31,7 @@ Se ha creado un componente personalizado (incrustado-pdf) para incrustar el PDF 
 
 ## Biblioteca de cliente
 
-El siguiente código se ejecuta cuando el `viewPDF` al hacer clic en el botón de casilla. Pasamos los datos del formulario adaptable, el nombre de la plantilla, al punto final para generar el pdf. A continuación, el PDF generado se muestra al usuario que rellena el formulario mediante la biblioteca JavaScript de PDF incrustados.
+El siguiente código se ejecuta cuando se hace clic en el botón de casilla de verificación `viewPDF`. Pasamos los datos del formulario adaptable, el nombre de la plantilla, al punto final para generar el pdf. A continuación, el PDF generado se muestra al usuario que rellena el formulario mediante la biblioteca JavaScript de PDF incrustados.
 
 ```javascript
 $(document).ready(function() {
@@ -93,31 +93,32 @@ $(document).ready(function() {
 
 ## Generar XSD a partir de los datos xml
 
-Puede utilizar cualquiera de las herramientas gratuitas en línea para [generar XSD](https://www.freeformatter.com/xsd-generator.html) a partir de los datos xml generados en el paso anterior.
+Puede usar cualquiera de las herramientas en línea gratuitas para [generar XSD](https://www.freeformatter.com/xsd-generator.html) a partir de los datos xml generados en el paso anterior.
 
 ## Cargar la plantilla
 
-Asegúrese de cargar la plantilla xdp en [AEM Forms](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) con el botón crear
+Asegúrese de cargar la plantilla xdp en [AEM Forms](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) con el botón Crear
 
 
 ## Crear formulario adaptable
 
 Cree un formulario adaptable basado en el XSD del paso anterior.
-Agregue una nueva pestaña al formulario adaptable. Agregue un componente Casilla de verificación e incrustar PDF a esta pestaña. Asegúrese de asignar un nombre a la casilla de verificación viewPDF.
+Agregue una nueva pestaña al formulario adaptable. Añadir un componente Casilla de verificación y un componente Insertar PDF en esta pestaña
+Asegúrese de asignar un nombre a la casilla de verificación viewPDF.
 Configure el componente incrustado-pdf como se muestra en la captura de pantalla siguiente
-![embed-pdf](assets/embed-pdf-configuration.png)
+![incrustar-pdf](assets/embed-pdf-configuration.png)
 
-**Incrustar clave API de PDF** : Esta es la clave que puede utilizar para incrustar el pdf. Esta clave solo funcionará con localhost. Puede crear [su propia clave](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) y asociarlo a otro dominio.
+**Clave de API de PDF incrustado**: esta es la clave que puede utilizar para incrustar el PDF. Esta clave solo funcionará con localhost. Puede crear [su propia clave](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) y asociarla a otro dominio.
 
-**El extremo devuelve el PDF** : Este es el servlet personalizado que combinará los datos con la plantilla xdp y devolverá el pdf.
+**El extremo devuelve el pdf**: Este es el servlet personalizado que combinará los datos con la plantilla xdp y devolverá el pdf.
 
-**Nombre de plantilla** - Esta es la ruta al xdp. Normalmente, se almacena en la carpeta formsanddocuments.
+**Nombre de plantilla**: esta es la ruta al xdp. Normalmente, se almacena en la carpeta formsanddocuments.
 
-**Nombre de archivo del PDF** : esta es la cadena que aparecerá en el componente incrustar pdf.
+**Nombre de archivo del PDF**: esta es la cadena que aparecerá en el componente incrustado de PDF.
 
 ## Crear servlet personalizado
 
-Se ha creado un servlet personalizado para combinar los datos con la plantilla XDP y devolver el PDF. El código para lograrlo se enumera a continuación. El servlet personalizado forma parte del [incrustar paquete pdf](assets/embedpdf.core-1.0-SNAPSHOT.jar)
+Se ha creado un servlet personalizado para combinar los datos con la plantilla XDP y devolver el PDF. El código para lograrlo se enumera a continuación. El servlet personalizado forma parte del [paquete incrupdf](assets/embedpdf.core-1.0-SNAPSHOT.jar)
 
 ```java
 import java.io.ByteArrayInputStream;
@@ -227,11 +228,11 @@ public class StreamPDFToEmbed extends SlingAllMethodsServlet {
 
 Para probar esto en el servidor local, siga los siguientes pasos:
 
-1. [Descargar e instalar el paquete incrustado en PDF](assets/embedpdf.core-1.0-SNAPSHOT.jar).
+1. [Descargar e instalar el paquete incrupdf](assets/embedpdf.core-1.0-SNAPSHOT.jar).
 Tiene el servlet para combinar los datos con la plantilla XDP y transmitir el PDF de vuelta.
-1. Añada la ruta /bin/getPDFToEmbed en la sección de rutas excluidas del filtro CSRF de Granite de Adobe utilizando [AEM ConfigMgr de](http://localhost:4502/system/console/configMgr). En el entorno de producción se recomienda utilizar la variable [Marco de protección CSRF](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html?lang=en)
+1. Agregue la ruta /bin/getPDFToEmbed en la sección de rutas excluidas del filtro CSRF de Adobe AEM Granite usando [ConfigMgr](http://localhost:4502/system/console/configMgr). En su entorno de producción se recomienda usar el [marco de protección CSRF](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html?lang=en)
 1. [Importar la biblioteca de cliente y el componente personalizado](assets/embed-pdf.zip)
 1. [Importar el formulario adaptable y la plantilla](assets/embed-pdf-form-and-xdp.zip)
-1. [Previsualizar formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/from1040/jcr:content?wcmmode=disabled)
+1. [Vista previa de formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/from1040/jcr:content?wcmmode=disabled)
 1. Rellene algunos de los campos del formulario
 1. Vaya a la pestaña Ver PDF. Seleccione la casilla de verificación Ver PDF. Debería ver un PDF mostrado en el formulario rellenado con los datos del formulario adaptable

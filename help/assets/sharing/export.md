@@ -21,19 +21,19 @@ ht-degree: 0%
 
 # Exportar recursos
 
-Obtenga información sobre cómo exportar recursos al equipo local mediante un script personalizable de Node.js. AEM Esta secuencia de comandos de exportación proporciona un ejemplo de cómo descargar recursos mediante programación desde el uso de la herramienta de descarga de recursos de la [API HTTP de AEM Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets), centrándose específicamente en las representaciones originales para garantizar la máxima calidad. Está diseñado para replicar la estructura de carpetas de AEM Assets en la unidad local, lo que facilita la realización de copias de seguridad o la migración de recursos.
+Obtenga información sobre cómo exportar recursos al equipo local mediante un script personalizable de Node.js. AEM Este script de exportación proporciona un ejemplo de cómo descargar recursos mediante programación desde las API de HTTP de [AEM Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets), centrándose específicamente en las representaciones originales para garantizar la máxima calidad. Está diseñado para replicar la estructura de carpetas de AEM Assets en la unidad local, lo que facilita la realización de copias de seguridad o la migración de recursos.
 
 XMP La secuencia de comandos solo descarga las representaciones originales del recurso, sin los metadatos asociados, a menos que esos metadatos se hayan incrustado en el recurso como se ha hecho con el método de la. AEM Esto significa que la información descriptiva, las categorizaciones o las etiquetas almacenadas en los recursos, pero no integradas en los archivos de recursos, no se incluyen en la descarga. También se pueden descargar otras representaciones modificando la secuencia de comandos para incluirlas. Asegúrese de que tiene espacio suficiente para almacenar los recursos exportados.
 
-AEM AEM La secuencia de comandos generalmente se ejecuta con el autor de la, pero también se puede ejecutar con el editor de publicaciones de la, siempre y cuando los puntos finales de la API HTTP de AEM Assets y las representaciones de recursos sean accesibles a través de Dispatcher.
+AEM AEM La secuencia de comandos se suele ejecutar con el autor de la, pero también se puede ejecutar con el Publish de la, siempre y cuando los puntos finales de la API HTTP de AEM Assets y las representaciones de recursos sean accesibles a través de Dispatcher.
 
 AEM Antes de ejecutar el script, debe configurarlo con la dirección URL de la instancia de la instancia de la instancia de la instancia de, las credenciales de usuario (token de acceso) y la ruta de acceso a la carpeta que desee exportar.
 
 ## Exportar script
 
-La secuencia de comandos, escrita como módulo JavaScript, forma parte de un proyecto Node.js, ya que depende de `node-fetch`. Puede [descargue el proyecto como archivo zip](./assets/export/export-aem-assets-script.zip)o copie la secuencia de comandos siguiente en un proyecto Node.js vacío de tipo `module`, y ejecute `npm install node-fetch` para instalar la dependencia.
+El script, escrito como módulo de JavaScript, forma parte de un proyecto Node.js, ya que depende de `node-fetch`. Puede [descargar el proyecto como archivo zip](./assets/export/export-aem-assets-script.zip) o copiar el script siguiente en un proyecto Node.js vacío de tipo `module` y ejecutar `npm install node-fetch` para instalar la dependencia.
 
-Este script recorre el árbol de carpetas de AEM Assets y descarga recursos y carpetas en una carpeta local de su equipo. Utiliza el [API HTTP de AEM Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) para recuperar la carpeta y los datos del recurso y descarga las representaciones originales de los recursos.
+Este script recorre el árbol de carpetas de AEM Assets y descarga recursos y carpetas en una carpeta local de su equipo. Utiliza la [API HTTP de AEM Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) para recuperar los datos de carpetas y recursos, y descarga las representaciones originales de los recursos.
 
 ```javascript
 // export-assets.js
@@ -243,7 +243,7 @@ console.timeEnd('Download AEM assets');
 
 Con el script descargado, actualice las variables de configuración en la parte inferior del script.
 
-El `AEM_ACCESS_TOKEN` se puede obtener siguiendo los pasos de la [AEM Autenticación basada en tokens para el uso de la as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview) tutorial. A menudo, el token de desarrollador de 24 horas es suficiente, siempre que la exportación tarde menos de 24 horas en completarse y el usuario que genera el token tenga acceso de lectura a los recursos que desea exportar.
+El `AEM_ACCESS_TOKEN` se puede obtener siguiendo los pasos del tutorial de [Autenticación basada en tokens en AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview). A menudo, el token de desarrollador de 24 horas es suficiente, siempre que la exportación tarde menos de 24 horas en completarse y el usuario que genera el token tenga acceso de lectura a los recursos que desea exportar.
 
 ```javascript
 ...
@@ -270,7 +270,7 @@ const MAX_CONCURRENT_DOWNLOADS = 10;
 
 Ejecute el script mediante Node.js para exportar los recursos al equipo local.
 
-Según el número de recursos y sus tamaños, la secuencia de comandos puede tardar algún tiempo en completarse. A medida que se ejecuta el script, [registra el progreso](#output) a la consola.
+Según el número de recursos y sus tamaños, la secuencia de comandos puede tardar algún tiempo en completarse. A medida que se ejecuta el script, [registra el progreso](#output) en la consola.
 
 ```shell
 $ node export-assets.js
@@ -294,6 +294,6 @@ Downloaded asset: exported-assets/wknd-shared/en/magazine/western-australia/adob
 Download AEM assets: 24.770s
 ```
 
-Los recursos exportados se pueden encontrar en la carpeta local especificada en la configuración `LOCAL_DOWNLOAD_FOLDER`. La estructura de carpetas refleja la estructura de carpetas de AEM Assets, con los recursos descargados en las subcarpetas correspondientes. Estos archivos se pueden cargar en [proveedores de almacenamiento en la nube admitidos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view), para [importación masiva](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/migration/bulk-import) AEM en otras instancias de la o con fines de copia de seguridad.
+Los recursos exportados se pueden encontrar en la carpeta local especificada en la configuración `LOCAL_DOWNLOAD_FOLDER`. La estructura de carpetas refleja la estructura de carpetas de AEM Assets, con los recursos descargados en las subcarpetas correspondientes. AEM Estos archivos se pueden cargar a [proveedores de almacenamiento en la nube compatibles](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view), para [importación masiva](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/migration/bulk-import) en otras instancias de la nube con fines de copia de seguridad o para realizar una copia de seguridad de los mismos.
 
 ![Recursos exportados](./assets/export/exported-assets.png)

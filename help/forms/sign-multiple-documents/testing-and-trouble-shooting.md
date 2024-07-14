@@ -22,13 +22,13 @@ ht-degree: 0%
 
 ## Previsualización del formulario de refinanciación
 
-El caso de uso se activa cuando el agente de servicio de atención al cliente rellena y envía [formulario de refinanciación](http://localhost:4502/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled).
+El caso de uso se activa cuando el agente de servicio al cliente rellena y envía [formulario de refinanciación](http://localhost:4502/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled).
 
 El flujo de trabajo Firmar varios Forms obtiene déclencheur con este envío de formulario y el cliente recibe una notificación por correo electrónico con un vínculo para iniciar el proceso de rellenado y firma del formulario.
 
 ## Rellenar formularios en el paquete
 
-El cliente se presenta para rellenar y firmar el primer formulario del paquete. Una vez firmado correctamente el formulario, el cliente puede desplazarse al siguiente formulario del paquete. Una vez rellenados y firmados todos los formularios, al cliente se le presenta el &quot;**AllDone**&quot;.
+El cliente se presenta para rellenar y firmar el primer formulario del paquete. Una vez firmado correctamente el formulario, el cliente puede desplazarse al siguiente formulario del paquete. Una vez que se hayan rellenado y firmado todos los formularios, al cliente se le presentará el formulario &quot;**AllDone**&quot;.
 
 ## Solución de problemas
 
@@ -50,4 +50,4 @@ Al firmar correctamente un formulario del paquete, se activa el flujo de trabajo
 
 ### No ver el formulario AllDone
 
-Cuando no hay más formularios para firmar en el paquete, se presenta el formulario AllDone al usuario. Si no ve el formulario AllDone, compruebe la URL utilizada en la línea 33 del archivo GetNextFormToSign.js, que forma parte del **getnextform** biblioteca del cliente.
+Cuando no hay más formularios para firmar en el paquete, el formulario AllDone se presenta al usuario.Si no ve el formulario AllDone, compruebe la URL utilizada en la línea 33 del archivo GetNextFormToSign.js, que forma parte de la biblioteca de cliente **getnextform**.

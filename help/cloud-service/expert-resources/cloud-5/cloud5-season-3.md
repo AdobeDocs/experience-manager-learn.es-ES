@@ -21,7 +21,7 @@ AEM Bienvenido a la temporada tres de Cloud 5 Series de Ingeniería de la. Uno d
 
 ## Cuadro de sugerencias
 
-Visite la [Cuadro de sugerencias](https://forms.office.com/r/74P5Xz4UH0) para enviar ideas de temas.
+Visite [Cuadro de sugerencias](https://forms.office.com/r/74P5Xz4UH0) para enviar ideas sobre temas.
 
 ## Temporada 3
 
@@ -35,8 +35,8 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
             </a>
             <div>
                 <a href="./season-3/cloud5-3rd-party-search.md">
-                <strong>Búsqueda de terceros</strong></a>        
-                <br/><em>AEM con James Talbot y Varun Mitra, Ingeniería de la</em>
+                <strong>búsqueda de terceros</strong></a>        
+                AEM <br/><em>con James Talbot y Varun Mitra, Ingeniería de la</em>
             </div>
             <p>
                 <br/>
@@ -49,8 +49,8 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
             </a>
             <div>
                 <a href="./season-3/cloud5-rum.md">
-                <strong>Monitorización de usuarios reales (RUM)</strong></a>        
-                <br/><em>AEM con James Talbot y Damian Langsweirdt, Ingeniería de la</em>
+                <strong>Control de usuario real (RUM)</strong></a>        
+                AEM <br/><em>con James Talbot y Damian Langsweirdt, Ingeniería de la</em>
             </div>
             <p>
                 <br/>
@@ -80,7 +80,7 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
             <div>
                 <a href="./season-3/cloud5-edge-workers.md">
                 <strong>Trabajadores de Edge</strong></a>        
-                <br/><em>AEM con James Talbot y Amol Anand, Ingeniería de la</em>
+                AEM <br/><em>con James Talbot y Amol Anand, ingeniero de</em>
             </div>
             <p>
                 <br/>
@@ -96,7 +96,7 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
             <div>
                 <a href="./season-3/cloud5-publish-events.md">
                 <strong>Publish, cancelar la publicación de eventos en Edge Delivery Services</strong></a>        
-                <br/><em>AEM con James Talbot y Amol Anand, Ingeniería de la</em>
+                AEM <br/><em>con James Talbot y Amol Anand, ingeniero de</em>
             </div>
             <p>
                 <br/>
@@ -110,7 +110,7 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
             <div>
                 <a href="./season-3/cloud5-query-indexes.md">
                 <strong>Índices de consulta y fórmulas de Excel </strong></a>        
-                <br/><em>AEM con James Talbot y Varun Mitra, Ingeniería de la</em>
+                AEM <br/><em>con James Talbot y Varun Mitra, Ingeniería de la</em>
             </div>
             <p>
                 <br/>
@@ -124,7 +124,7 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
             <div>
                 <a href="./season-3/cloud5-byo-cloudflare-cdn.md">
                 <strong>Traiga su propia CDN de Cloudflare</strong></a>        
-                <br/><em>AEM con James Talbot &amp; Kunwar Saluja, Ingeniería de la</em>
+                AEM <br/><em>con James Talbot y Kunwar Saluja, ingeniero de</em>
             </div>
             <p>
                 <br/>
@@ -139,8 +139,8 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
             </a>
             <div>
                 <a href="./season-3/cloud5-integrate-assets.md">
-                <strong>Integración de AEM Assets con la creación de documentos</strong></a>        
-                <br/><em>AEM con James Talbot y Darin Kuntze, Ingeniería de la</em>
+                <strong>Integrar AEM Assets con la creación de documentos</strong></a>        
+                AEM <br/><em>con James Talbot y Darin Kuntze, Ingeniería de la</em>
             </div>
             <p>
                 <br/>
@@ -154,7 +154,7 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
             <div>
                 <a href="./season-3/cloud5-generative-ai-for-aem-sites.md">
                 <strong>IA generativa en AEM Sites</strong></a>        
-                <br/><em>AEM con James Talbot y Karthik Muralidharan, marketing de producto en la industria de la</em>
+                AEM <br/><em>con James Talbot y Karthik Muralidharan, marketing de productos de la marca de productos de la marca de productos de la marca</em>
             </div>
             <p>
                 <br/>                
@@ -167,8 +167,8 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
             </a>
             <div>
                 <a href="./season-3/cloud5-exploring-universal-editor.md">
-                <strong>Exploración del editor universal</strong></a>        
-                <br/><em>AEM con James Talbot y Dirk Rudolph, Ingeniería de la</em>
+                <strong>Explorando el editor universal</strong></a>        
+                AEM <br/><em>con James Talbot y Dirk Rudolph, ingeniero de</em>
             </div>
             <p>
                 <br/>                

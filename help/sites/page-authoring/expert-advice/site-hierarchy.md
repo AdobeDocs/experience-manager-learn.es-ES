@@ -86,7 +86,7 @@ Un modelo de metadatos suele diseñarse para satisfacer los siguientes casos de 
 
 Una etiqueta es una palabra clave o término asignado a un fragmento de información. Por ejemplo, en lugar de introducir &quot;coche&quot;, &quot;vehículo&quot;, &quot;automóvil&quot;, un sistema de etiquetas permite elegir un solo valor, lo que hace que la búsqueda sea más predecible.  Las etiquetas normalizan y simplifican la categorización de los recursos.
 
-*AEM Nota: Aunque el etiquetado ad-hoc se permite, es recomendable no hacerlo, ya que podría generar una taxonomía indefinida y poco manejable.*
+AEM *Nota: aunque el etiquetado ad-hoc se permite, es recomendable no usar este método, ya que podría generar una taxonomía indefinida y poco manejable.*
 
 Usos comunes de las etiquetas:
 
@@ -111,19 +111,31 @@ AEM Cuando se utilizan en las etiquetas, las etiquetas pueden ayudar a lograr un
 Una taxonomía es un sistema de organización de etiquetas basado en características compartidas, que generalmente están estructuradas jerárquicamente según las necesidades de la organización. La estructura puede ayudar a encontrar una etiqueta más rápido o imponer una generalización.
 Ejemplo: Es necesario subcategorizar las imágenes de stock de los automóviles.  La taxonomía podría tener el siguiente aspecto:
 
-/subject/car/ /subject/car/sportscar /subject/car/sportscar/porsche /subject/car/sportscar/ferrari ... /subject/car/minivan /subject/car/minivan/mercedes /subject/car/minivan/volkswagen ... /subject/car/limousine ...
+/subject/car/
+/subject/car/sportscar
+/subject/car/sportscar/porsche
+/subject/car/sportscar/ferrari
+...
+/subject/car/minivan
+/subject/car/minivan/mercedes
+/subject/car/minivan/volkswagen
+...
+/subject/car/limusina
+...
 
 Ahora un usuario puede elegir si quiere buscar imágenes de cicatrices deportivas en general o de un &quot;Porsche&quot; en particular. Después de todo, ambas son cicatrices deportivas.
 Práctica recomendada: Evite las taxonomías planas. Las taxonomías planas carecen de los beneficios descritos anteriormente y requieren un mantenimiento constante
 
-**Uso de una taxonomía como sinónimos.**  Cuando un usuario busca una palabra clave, el sistema crea una segunda búsqueda de todos los sinónimos que se encuentran allí.
+**Uso de una taxonomía como diccionario de sinónimos.** Cuando un usuario busca una palabra clave, el sistema crea una segunda búsqueda para todos los sinónimos encontrados allí.
 Además, en lugar de escribir &quot;car&quot; manualmente, el sistema puede proporcionar una lista de palabras clave para mejorar la coherencia.
 
-**Uso de una taxonomía como diccionario.** En lugar de imprimir &quot;coche&quot;, puede expandir la etiqueta única y utilizar todos los sinónimos de la etiqueta.
+**Utilizando una taxonomía como diccionario.** En lugar de imprimir &quot;coche&quot;, puede expandir la etiqueta única y utilizar todos los sinónimos de la etiqueta.
 
-**Varias categorías.** A diferencia de una jerarquía de carpetas, las etiquetas se pueden utilizar para expresar varias categorizaciones al mismo tiempo. Un recurso etiquetado con:
+**Múltiples categorías.** A diferencia de una jerarquía de carpetas, las etiquetas se pueden usar para expresar varias categorizaciones al mismo tiempo. Un recurso etiquetado con:
 
-/subject/car/minivan/mercedes /subject/people/family /color/red
+/subject/car/minivan/mercedes
+/subject/people/family
+/color/rojo
 
 ## Metadatos frente a etiqueta
 
@@ -145,13 +157,13 @@ Asegúrese de que los colaboradores de contenido sepan cómo pueden proponer cam
 
 ## Prácticas recomendadas con etiquetas y taxonomías
 
-**Estandarización de etiquetas.** Cree un glosario que proporcione un vocabulario autorizado. Si no se establecen normas, la duplicación planteará problemas. Además, se recomienda auditar no solo la taxonomía, sino también el uso de las etiquetas.
+**Estandarizar etiquetas.** Crear glosario que proporcione un vocabulario autorizado. Si no se establecen normas, la duplicación planteará problemas. Además, se recomienda auditar no solo la taxonomía, sino también el uso de las etiquetas.
 
-**No lo etiquetes en exceso.** Las etiquetas pueden perder su importancia si se distribuyen con demasiada frecuencia.Elimine las etiquetas superfluas para obtener una eficacia óptima.
+**No etiquetar de más.** etiquetas pueden perder su relevancia si se distribuyen con demasiada frecuencia.Elimine las etiquetas superfluas para obtener una eficacia óptima.
 
 **Volver a evaluar las etiquetas con el tiempo.** Recuerde que la terminología empresarial y el contexto empresarial rara vez permanecen estáticos. Es posible que necesite volver a estandarizar y aplicar las etiquetas.
 
-**Uso del etiquetado inteligente con tecnología de IA.** Etiquetado inteligente [ver vínculo] AEM es una capacidad de IA en la que se puede reducir el esfuerzo de etiquetado manual de recursos. El etiquetado inteligente utiliza una IA para deducir información sobre el asunto de una imagen. Genera etiquetas descriptivas que describen el contenido de una imagen.
+**Uso del etiquetado inteligente con tecnología de IA.AEM** El etiquetado inteligente [consulte el vínculo] es una capacidad de IA en la práctica para reducir el esfuerzo de etiquetado manual de recursos. El etiquetado inteligente utiliza una IA para deducir información sobre el asunto de una imagen. Genera etiquetas descriptivas que describen el contenido de una imagen.
 
 ## Calidad y mantenimiento de metadatos
 
@@ -159,7 +171,7 @@ Comprender los requisitos empresariales es un paso importante para ejecutar un m
 
 Además, los metadatos deben capturarse lo antes posible en el proceso de creación de contenido. Si los metadatos no se &quot;aplican&quot; en el momento adecuado, hay pocas posibilidades de aplicarlos de forma retroactiva.
 
-**Utilizar metadatos** para mejorar la colaboración: Utilice Adobe Asset Link, Adobe Bridge AEM y el escritorio de la aplicación para vincular el proceso creativo y utilice metadatos para optimizar los flujos de trabajo creativos. El uso de estas herramientas enriquece los metadatos y la experiencia del usuario en todo el proceso creativo.
+**Utilice los metadatos** para mejorar la colaboración: Utilice Adobe Asset Link, Adobe Bridge AEM y el escritorio de la aplicación para vincular el proceso creativo y utilice los metadatos para optimizar los flujos de trabajo creativos. El uso de estas herramientas enriquece los metadatos y la experiencia del usuario en todo el proceso creativo.
 
 ## Prácticas recomendadas para la administración de metadatos
 
@@ -174,17 +186,17 @@ Además, los metadatos deben capturarse lo antes posible en el proceso de creaci
 
 Algunas directrices pueden ayudarle a decidir cómo categorizar los metadatos:
 
-**Descripción** : Si los datos describen el recurso o fragmento de contenido, deben formar parte de los metadatos adjuntos.
+**Descripción**: si los datos describen el recurso o fragmento de contenido, debe formar parte de los metadatos adjuntos.
 
-**Buscar** - Si los metadatos deben utilizarse en la búsqueda, deben adjuntarse.
+**Buscar**: si los metadatos se van a usar en la búsqueda, se deben adjuntar.
 
-**Exposición** : Si expone los metadatos de una plataforma de distribución a un tercero, asegúrese de no exponer también los metadatos &quot;internos&quot;.
+**Exposición**: si expone los metadatos de una plataforma de distribución a un tercero, asegúrese de no exponer también los metadatos &quot;internos&quot;.
 
-**Duración** : cuanto más tiempo se supone que duren los metadatos, más probabilidades hay de que sean buenos candidatos para los metadatos adjuntos.
+**Duración**: cuanto más tiempo se supone que duran los metadatos, más probabilidades hay de que sea un buen candidato para los metadatos adjuntos.
 
-**Procesos comerciales relacionados** - Definitivamente es útil tener un ID de producto permanente como parte de los metadatos. Sin embargo, la categoría de un artículo en relación con el catálogo de productos es un metadato cuestionable para el recurso.
+**Procesos empresariales relacionados**: definitivamente es útil tener un Id. de producto permanente como parte de los metadatos. Sin embargo, la categoría de un artículo en relación con el catálogo de productos es un metadato cuestionable para el recurso.
 
-**Organización y procesamiento** : Si la naturaleza de los metadatos es de organización, como el estado de un flujo de trabajo de aprobación o la propiedad de un departamento determinado, los metadatos externos deben considerarse por encima de la asociación de los metadatos al recurso.
+**Organización y procesamiento**: si la naturaleza de los metadatos es de organización, como el estado en un flujo de trabajo de aprobación o la propiedad de un departamento determinado, los metadatos externos deben considerarse más que la asociación de los metadatos al recurso.
 
 *Para crear la estrategia, haga las siguientes preguntas:*
 

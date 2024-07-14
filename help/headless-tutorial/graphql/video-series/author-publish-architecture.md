@@ -1,6 +1,6 @@
 ---
-title: AEM Arquitectura de creación y publicación con GraphQL
-description: AEM AEM Descubra cómo y cuándo aprovechar los entornos de autor y publicación de la al utilizar las API de GraphQL.
+title: Arquitectura de autor y Publish AEM con GraphQL
+description: AEM Descubra cómo y cuándo aprovechar los entornos de Author y Publish AEM de al utilizar las API de GraphQL de la aplicación.
 version: Cloud Service
 topic: Headless, Content Management
 feature: Content Fragments, GraphQL API
@@ -18,13 +18,13 @@ ht-degree: 0%
 
 ---
 
-# Arquitectura de creación y publicación
+# Arquitectura de autor y Publish
 
-AEM AEM Descubra cómo y cuándo aprovechar los entornos de autor y publicación de la al utilizar las API de GraphQL.
+AEM Descubra cómo y cuándo aprovechar los entornos de Author y Publish AEM de al utilizar las API de GraphQL de la aplicación.
 
 En este vídeo:
 
-+ AEM Comprender la arquitectura de creación y publicación de la y cómo se publica el contenido
-+ AEM Conozca las prácticas recomendadas para la entrega sin encabezado con un entorno de publicación en la
++ AEM Comprender la arquitectura de autor de la y de Publish y cómo se publica el contenido
++ AEM Conozca las prácticas recomendadas para la entrega sin encabezado con un entorno de Publish de la
 
 >[!VIDEO](https://video.tv.adobe.com/v/333296?quality=12&learn=on)

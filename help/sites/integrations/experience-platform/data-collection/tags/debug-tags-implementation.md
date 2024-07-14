@@ -28,9 +28,9 @@ Introducción a las herramientas y técnicas comunes utilizadas para depurar una
 
 ## Depuración del lado del cliente mediante un objeto Satellite
 
-La depuración del lado del cliente resulta útil para comprobar la carga de la regla de propiedad de etiquetas o el orden de ejecución. Cada vez que se añade una propiedad Tag al sitio web, la variable `_satellite` El objeto JavaScript está presente en el explorador para facilitar el seguimiento de datos y eventos del lado del cliente.
+La depuración del lado del cliente resulta útil para comprobar la carga de la regla de propiedad de etiquetas o el orden de ejecución. Cada vez que se agrega una propiedad Tag al sitio web, el objeto JavaScript `_satellite` está presente en el explorador para facilitar el seguimiento de datos y eventos del lado del cliente.
 
-Para habilitar la depuración del lado del cliente, llame al método `setDebug(true)` en el `_satellite` objeto.
+Para habilitar la depuración del lado del cliente, llame al método `setDebug(true)` en el objeto `_satellite`.
 
 1. Abra la consola del explorador y ejecute el siguiente comando.
 
@@ -38,17 +38,17 @@ Para habilitar la depuración del lado del cliente, llame al método `setDebug(t
        _satellite.setDebug(true);
    ```
 
-1. AEM Vuelva a cargar la página del sitio de la y compruebe que el registro de la consola muestra _regla activada_ mensaje como el siguiente.
+1. AEM Vuelva a cargar la página del sitio de la y compruebe que el registro de la consola muestra el mensaje _regla activada_ como se muestra a continuación.
 
-   ![Propiedad Tag en las páginas de creación y publicación](assets/satellite-object-debugging.png)
+   ![Propiedad de etiquetas en páginas de autor y Publish](assets/satellite-object-debugging.png)
 
 ## Depuración mediante Adobe Experience Platform Debugger
 
-El Adobe proporciona Adobe Experience Platform Debugger [Extensión de Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) para depurar, comprender y obtener información sobre la integración.
+El Adobe proporciona la extensión de Adobe Experience Platform Debugger [Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) para depurar, comprender y obtener información sobre la integración.
 
-1. Abra la extensión de Adobe Experience Platform Debugger y abra la página del sitio en la instancia Publicar
+1. Abra la extensión de Adobe Experience Platform Debugger y abra la página del sitio en la instancia de Publish
 
-2. En el **Adobe Experience Platform Debugger > Resumen > Etiquetas de Adobe Experience Platform** , compruebe los detalles de la propiedad de etiquetas, como Nombre, Versión, Fecha de compilación, Entorno y Extensiones.
+2. En la sección **Adobe Experience Platform Debugger > Resumen > Etiquetas de Adobe Experience Platform**, compruebe los detalles de la propiedad de etiquetas, como Nombre, Versión, Fecha de compilación, Entorno y Extensiones.
 
    ![Detalles de propiedades de etiquetas y Adobes Experience Platform Debugger](assets/tag-property-details.png)
 

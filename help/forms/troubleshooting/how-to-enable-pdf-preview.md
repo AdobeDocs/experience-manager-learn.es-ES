@@ -1,6 +1,6 @@
 ---
 title: 'PDF de vista previa de Designer desactivado: cómo activar el PDF de vista previa'
-description: Pasos para configurar la vista previa del PDF en Designer
+description: Pasos para configurar la previsualización de PDF en Designer
 type: Troubleshooting
 role: Developer
 level: Intermediate

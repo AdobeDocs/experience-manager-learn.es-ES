@@ -33,15 +33,15 @@ Adobe Experience Manager proporciona un conjunto común de funcionalidades dispo
 <tr>
   <td>
     <a href="./cloud-manager/understand-cloud-manager-for-aem.md">
-    <img alt="AEM Comprensión de Cloud Manager para la creación de informes de" src="./cloud-manager/assets/understand-cloud-manager-for-aem/thumbnail.png" />
+    <img alt="Comprensión de Cloud Manager AEM para la" src="./cloud-manager/assets/understand-cloud-manager-for-aem/thumbnail.png" />
     </a>
     <div>
      <a href="./cloud-manager/understand-cloud-manager-for-aem.md">
-    <strong>AEM Comprensión de Cloud Manager para la creación de informes de</strong>
+    <strong>Comprender Cloud Manager AEM para la aplicación de la</strong>
     </a>
     </div>
     <p>
-    <em>AEM AEM Cloud Manager para proporciona una solución sencilla, pero sólida, que permite una administración, inspección y autoservicio sencillos de los entornos de los que se dispone en la aplicación de la solución de administración de datos de la aplicación de forma automática (OSGi).</em>
+    <em>Cloud Manager AEM AEM para el servicio de seguridad proporciona una solución simple pero sólida que permite administrar, inspeccionar y autoadministrar fácilmente los entornos de la red de trabajo de la red de trabajo de la red de trabajo de la red de seguridad </em>.
     <p>
   </td>
    <td>
@@ -50,11 +50,11 @@ Adobe Experience Manager proporciona un conjunto común de funcionalidades dispo
     </a>
      <div>
      <a href="./development/set-up-sling-dynamic-include.md">
-    <strong>Configuración de la inclusión dinámica de Sling (SDI)</strong>
+    <strong>Configurar Sling Dynamic Include (SDI)</strong>
     </a>
     </div>
     <p>
-    <em>AEM Explore cómo configurar Sling Dynamic Include (SDI) y permitir que los componentes de Dynamic siempre proporcionen contenido nuevo.</em>
+    AEM <em>Explore cómo configurar Sling Dynamic Include (SDI) y permitir que los componentes dinámicos de la siempre proporcionen contenido nuevo.</em>
     <p>
   </td>
   <td>
@@ -63,11 +63,11 @@ Adobe Experience Manager proporciona un conjunto común de funcionalidades dispo
     </a>
     <div>
     <a href="./administration/understand-reasons-to-upgrade.md">
-    <strong>AEM Comprender las razones para actualizar el</strong>
+    AEM <strong>Comprender las razones para actualizar a la versión de la aplicación</strong>
     </a>
     </div>
     <p>
-    <em>AEM Un desglose de alto nivel de las funciones clave que se deben comprender, a la hora de considerar la actualización a la última versión de la versión de la.</em>
+    AEM <em>Un desglose de alto nivel de las características clave que se deben entender, cuando se considere la posibilidad de actualizar a la versión más reciente de la versión de la aplicación.</em>
     </p>
   </td>
 </tr>
@@ -77,7 +77,7 @@ Adobe Experience Manager proporciona un conjunto común de funcionalidades dispo
 
 ## Recursos adicionales
 
-* [AEM Tutoriales en as a Cloud Service](/help/cloud-service/overview.md)
+* [Tutoriales de AEM as a Cloud Service](/help/cloud-service/overview.md)
 * [Vídeos y tutoriales de AEM Sites](/help/sites/overview.md)
 * [Vídeos y tutoriales de AEM Assets](/help/assets/overview.md)
 * [Vídeos y tutoriales de AEM Forms](/help/forms/overview.md)

@@ -33,11 +33,11 @@ El usuario introduce el ID de posible cliente y al tabular el servicio de Market
 
 La siguiente captura de pantalla explica la configuración del editor de reglas
 
-![ruleeditor](assets/ruleeditor.png)
+![editor de reglas](assets/ruleeditor.png)
 
 ## Depuración
 
-Si utiliza los paquetes que se proporcionan con este artículo, es posible que desee habilitar [registros de depuración](http://localhost:4502/system/console/slinglog) para las siguientes clases:
+Si está usando los paquetes proporcionados con este artículo, quizá quiera habilitar [registros de depuración](http://localhost:4502/system/console/slinglog) para las siguientes clases:
 
 + `com.marketoandforms.core.impl.MarketoServiceImpl`
 + `com.marketoandforms.core.MarketoConfigurationService`

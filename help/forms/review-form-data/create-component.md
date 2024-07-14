@@ -19,9 +19,9 @@ ht-degree: 1%
 
 # Crear un componente para resumir los datos del formulario
 
-Se creó un componente simple para enumerar los datos del formulario para su revisión. El [función de visita de la API de guidebridge](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html?q=visit) se utilizó para iterar en los campos del formulario. El código de la biblioteca de cliente asociado con este componente obtiene los componentes de panel o tabla del formulario. De los elementos secundarios de este panel o tabla, los componentes de formulario de los campos title, value y la expresión SOM se extraen mediante los métodos de API GuidBridge. A continuación, se construye una tabla de HTML simple con el título, el valor y la expresión SOM para que el usuario final revise/edite los datos del formulario antes de enviarlo.
+Se creó un componente simple para enumerar los datos del formulario para su revisión. La función de visita de la API [guidebridge](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html?q=visit) se utilizó para recorrer en iteración los campos del formulario. El código de la biblioteca de cliente asociado con este componente obtiene los componentes de panel o tabla del formulario. De los elementos secundarios de este panel o tabla, los componentes de formulario de los campos title, value y la expresión SOM se extraen mediante los métodos de API GuidBridge. A continuación, se construye una tabla de HTML simple con el título, el valor y la expresión SOM para que el usuario final revise/edite los datos del formulario antes de enviarlo.
 
-Por ejemplo, la captura de pantalla siguiente muestra la tabla creada para enumerar los campos y sus valores del **Sus detalles**. El último TD del TR se utiliza para editar el valor del campo mediante la expresión SOM de campos.
+Por ejemplo, la captura de pantalla siguiente muestra la tabla creada para enumerar los campos y sus valores de **YourDetails**. El último TD del TR se utiliza para editar el valor del campo mediante la expresión SOM de campos.
 
 ![visit-func](assets/visit-function.png)
 

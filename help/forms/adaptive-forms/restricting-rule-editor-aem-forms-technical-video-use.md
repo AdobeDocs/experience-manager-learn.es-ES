@@ -22,7 +22,7 @@ AEM Restringir el Editor de reglas de formularios adaptables a grupos específic
 
 >[!VIDEO](https://video.tv.adobe.com/v/19470?quality=12&learn=on)
 
-*AEM Este vídeo muestra el proceso de restringir el editor de reglas de formularios adaptables a grupos específicos en la aplicación de la regla de.*
+AEM *Este vídeo muestra el proceso de restricción del editor de reglas de formularios adaptables a grupos específicos de los grupos de trabajo.*
 
 >[!NOTE]
 >

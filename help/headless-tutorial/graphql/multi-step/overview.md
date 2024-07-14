@@ -23,9 +23,9 @@ ht-degree: 4%
 
 {{aem-headless-trials-promo}}
 
-AEM Un tutorial completo que ilustra cómo crear y exponer contenido mediante las API de GraphQL de la aplicación de la aplicación de la manera más sencilla y consumido por una aplicación externa, en un escenario de CMS sin encabezado.
+Un tutorial completo que ilustra cómo crear y exponer contenido mediante las API de GraphQL de AEM y consumido por una aplicación externa, en un escenario de CMS sin encabezado.
 
-AEM Este tutorial explora cómo se pueden utilizar las API de GraphQL y las funcionalidades sin encabezado para potenciar las experiencias que aparecen en una aplicación externa.
+AEM Este tutorial explora cómo se pueden utilizar las API de GraphQL y las capacidades sin encabezado de los para potenciar las experiencias que aparecen en una aplicación externa.
 
 Este tutorial abarca los siguientes temas:
 
@@ -48,7 +48,7 @@ Se requiere lo siguiente para seguir este tutorial:
 
 ### AEM Entorno
 
-AEM AEM Para completar este tutorial, se recomienda que tenga acceso de administrador de a un entorno as a Cloud Service. AEM Si no tiene acceso a un entorno as a Cloud Service de la, [AEM regístrese para el ensayo sin encabezado de](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&amp;cli=headless_exl_banner_campaign&amp;co=US&amp;lang=en) AEM para explorar capacidades sin encabezado de la.
+AEM Para completar este tutorial, se recomienda que tenga acceso de administrador a un entorno de AEM as a Cloud Service, de forma. Si no tiene acceso a un entorno de AEM as a Cloud Service AEM AEM, [regístrese en la versión de prueba sin encabezado](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&amp;cli=headless_exl_banner_campaign&amp;co=US&amp;lang=en) para explorar las capacidades sin encabezado de los que se puede usar para explorar la forma de usar la tecnología sin encabezado
 
 ## ¡Vamos a empezar!
 
@@ -56,6 +56,6 @@ Inicie el tutorial con [Definición de modelos de fragmentos de contenido](conte
 
 ## Proyecto de GitHub
 
-El código fuente y los paquetes de contenido están disponibles en la [AEM Guías de - Proyecto WKND GraphQL de GitHub](https://github.com/adobe/aem-guides-wknd-graphql).
+El código fuente y los paquetes de contenido están disponibles en el [Proyecto GitHub de AEM Guides - WKND GraphQL](https://github.com/adobe/aem-guides-wknd-graphql).
 
-Si encuentra algún problema con el tutorial o el código, deje un [Problema de GitHub](https://github.com/adobe/aem-guides-wknd-graphql/issues).
+Si encuentra un problema con el tutorial o el código, deje un [problema de GitHub](https://github.com/adobe/aem-guides-wknd-graphql/issues).

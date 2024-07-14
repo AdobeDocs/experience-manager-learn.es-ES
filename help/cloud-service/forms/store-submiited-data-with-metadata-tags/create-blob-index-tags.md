@@ -21,7 +21,7 @@ ht-degree: 1%
 
 A medida que los conjuntos de datos se hacen más grandes, puede resultar difícil encontrar un objeto específico en un mar de datos. Las etiquetas de índice de blob proporcionan funcionalidades de detección y administración de datos mediante atributos de etiqueta de índice de valor clave. Puede categorizar y buscar objetos dentro de un solo contenedor o en todos los contenedores de su cuenta de almacenamiento. Por ejemplo, etiqueta de índice blob _**CustomerType=Platinum**_, donde Platinum es el valor del campo CustomerType.
 
-![index-tags](assets/blob-with-index-tags1.png)
+![etiquetas de índice](assets/blob-with-index-tags1.png)
 El siguiente código crea la cadena de etiquetas de datos de índice de blob con sus valores correspondientes de los datos enviados
 
 ```java

@@ -33,7 +33,7 @@ Seleccione Tabla para insertar el componente de tabla.
 
 La capacidad de mostrar datos tabulares mediante tablas en documentos de comunicaciones interactivas se ha introducido con la versión de AEM Forms 6.4. El siguiente vídeo explica los pasos necesarios para configurar una tabla en el documento del canal web.
 
-**Configuración de tablas en documentos de canal web: AEM Forms 6.4**
+**Configurar la tabla en el documento del canal web: AEM Forms 6.4**
 
 >[!VIDEO](https://video.tv.adobe.com/v/22360?quality=12&learn=on)
 

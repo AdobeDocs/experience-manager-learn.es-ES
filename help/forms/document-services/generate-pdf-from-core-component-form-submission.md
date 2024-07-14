@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Este es el texto revisado con &quot;Componentes principales&quot; en mayúsculas:
 
-Un escenario típico implica generar un PDF a partir de los datos enviados mediante un formulario adaptable basado en componentes principales. Estos datos siempre están en formato JSON. Para generar un PDF mediante la API del PDF de procesamiento, es necesario convertir los datos JSON al formato XML. El `toString` método de `org.json.XML` se utiliza para esta conversión. Para obtener más información, consulte la [documentación de `org.json.XML.toString` método](https://www.javadoc.io/doc/org.json/json/20171018/org/json/XML.html#toString-java.lang.Object-).
+Un escenario típico implica generar un PDF a partir de los datos enviados mediante un formulario adaptable basado en componentes principales. Estos datos siempre están en formato JSON. Para generar un PDF mediante la API del PDF de procesamiento, es necesario convertir los datos JSON al formato XML. El método `toString` de `org.json.XML` se usa para esta conversión. Para obtener más información, consulte la [documentación del método `org.json.XML.toString`](https://www.javadoc.io/doc/org.json/json/20171018/org/json/XML.html#toString-java.lang.Object-).
 
 ## Formulario adaptable basado en esquema JSON
 
@@ -39,7 +39,7 @@ Para racionalizar el proceso, siga estos pasos refinados:
 
 ### Generar un esquema JSON a partir de los datos XML
 
-Puede utilizar cualquier herramienta en línea gratuita para [convertir XML a JSON](https://jsonformatter.org/xml-to-jsonschema) utilizando los datos XML generados en el paso anterior.
+Puede utilizar cualquier herramienta en línea gratuita para [convertir XML a JSON](https://jsonformatter.org/xml-to-jsonschema) con los datos XML generados en el paso anterior.
 
 ### Proceso de flujo de trabajo personalizado para convertir JSON a XML
 
@@ -119,10 +119,10 @@ Para gestionar los envíos de formularios, cree un flujo de trabajo que incluya 
 
 Para probar esto en el servidor local, siga estos pasos optimizados:
 
-1. [AEM Descargue e instale el paquete personalizado a través de la consola web de OSGi de la](assets/convertJsonToXML.core-1.0.0-SNAPSHOT.jar).
-1. [Importación del paquete de flujo de trabajo](assets/workflow_to_render_pdf.zip).
+1. AEM [Descargue e instale el paquete personalizado a través de la consola web de OSGi de la](assets/convertJsonToXML.core-1.0.0-SNAPSHOT.jar).
+1. [Importe el paquete de flujo de trabajo](assets/workflow_to_render_pdf.zip).
 1. [Importe el formulario adaptable y la plantilla XDP de ejemplo](assets/adaptive_form_and_xdp_template.zip).
-1. [Previsualización del formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/f23/jcr:content?wcmmode=disabled).
+1. [Vista previa del formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/f23/jcr:content?wcmmode=disabled).
 1. Rellene algunos campos de formulario.
 1. AEM Envíe el formulario para iniciar el flujo de trabajo de.
 1. Busque el PDF procesado en la carpeta de carga útil del flujo de trabajo.

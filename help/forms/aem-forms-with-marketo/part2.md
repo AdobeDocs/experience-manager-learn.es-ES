@@ -131,7 +131,7 @@ MarketoConfigurationService config;
 
 La captura de pantalla siguiente muestra las propiedades de configuración que deben establecerse. Estas propiedades de configuración se leen en el código mencionado anteriormente para obtener access_token
 
-![config](assets/configuration-settings.png)
+![configuración](assets/configuration-settings.png)
 
 ### Configuración
 
@@ -202,7 +202,7 @@ public class MarketoConfigurationService {
 ```
 
 1. AEM Cree e implemente el paquete en el servidor de.
-1. [Dirija su explorador a configMgr](http://localhost:4502/system/console/configMgr) y busque &quot;Configuración del servicio de credenciales de Marketo&quot;
+1. [Dirija su navegador a configMgr](http://localhost:4502/system/console/configMgr) y busque &quot;Configuración del servicio de credenciales de Marketo&quot;
 1. Especifique las propiedades adecuadas específicas de la instancia de Marketo
 
 ## Siguientes pasos

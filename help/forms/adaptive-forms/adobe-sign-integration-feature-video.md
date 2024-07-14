@@ -28,10 +28,10 @@ Uso de Acrobat Sign con AEM Forms
 
 >[!VIDEO](https://video.tv.adobe.com/v/18696?quality=12&learn=on)
 
-*Este vídeo muestra el proceso de configuración del servicio en la nube de Acrobat Sign AEM y la adición de varios campos de firma a un formulario adaptable de.*
+*Este vídeo muestra el proceso de configuración del servicio en la nube de Acrobat Sign AEM y la adición de varios campos de firma a un formulario adaptable de la firma de la aplicación de la aplicación de código de tiempo de ejecución de un formulario adaptable.*
 
 >[!NOTE]
 >
 >AEM Esta función solo está disponible a partir de la versión 6.3 de la versión de.
 
-Visite la [Muestras de AEM Forms](https://forms.enablementadobe.com/content/samples/samples.html?query=0#formsandsign) para ver un vínculo a una demostración en directo de esta capacidad.
+Visite la página de [muestras de AEM Forms](https://forms.enablementadobe.com/content/samples/samples.html?query=0#formsandsign) para obtener un vínculo a una demostración en vivo de esta funcionalidad.

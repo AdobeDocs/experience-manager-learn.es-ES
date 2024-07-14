@@ -1,6 +1,6 @@
 ---
-title: AEM Configuración de Dispatcher al pasar a as a Cloud Service
-description: AEM AEM Obtenga información acerca de los cambios más importantes en la herramienta de conversión de Dispatcher para la creación de informes de Dispatcher para el as a Cloud Service de la, y cómo utilizar el SDK de herramientas de Dispatcher.
+title: Configuración de Dispatcher al pasar a AEM as a Cloud Service
+description: AEM Obtenga información acerca de los cambios más importantes que se han realizado en Dispatcher para AEM as a Cloud Service, la herramienta de conversión de Dispatcher y cómo utilizar el SDK de herramientas de Dispatcher.
 version: Cloud Service
 feature: Dispatcher
 topic: Migration, Upgrade
@@ -20,7 +20,7 @@ ht-degree: 4%
 
 # Dispatcher
 
-AEM AEM Obtenga información acerca de Dispatcher de para as a Cloud Service AEM, centrándose en los cambios importantes de Dispatcher para 6, la herramienta de conversión de Dispatcher y cómo utilizar el SDK de herramientas de Dispatcher.
+AEM Obtenga información acerca de Dispatcher para AEM as a Cloud Service, centrándose en los cambios más importantes de Dispatcher AEM para la 6, la herramienta de conversión de Dispatcher y cómo utilizar el SDK de herramientas de Dispatcher.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336962?quality=12&learn=on)
 
@@ -28,13 +28,13 @@ AEM AEM Obtenga información acerca de Dispatcher de para as a Cloud Service AEM
 
 ![Dispatcher Converter](./assets/dispatcher-converter-diagram.png)
 
-Como parte de la refactorización del código base, utilice el [AEM Conversor de Dispatcher de](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/dispatcher-transformation-utility-tools.html) para refactorizar las configuraciones locales o de Adobe existentes de Managed Services AEM Dispatcher a una configuración de Dispatcher compatible as a Cloud Service de la aplicación.
+AEM Como parte de la refactorización del código base, use [Dispatcher Converter](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/dispatcher-transformation-utility-tools.html) para refactorizar las configuraciones locales o de Adobe de Managed Services Dispatcher existentes a la configuración de Dispatcher compatible con AEM as a Cloud Service.
 
 ## Actividades clave
 
-+ Utilice el [Herramienta Dispatcher Converter de Adobe I/O](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#aio-aem-migrationdispatcher-converter) para migrar una configuración de Dispatcher existente.
-+ Haga referencia al módulo de Dispatcher desde el [AEM Tipo de archivo del proyecto](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/dispatcher.cloud) como práctica recomendada.
-+ [Configurar las herramientas locales de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=es) para validar dispatcher, antes de realizar la prueba en un entorno de Cloud Service.
++ Use la [herramienta Dispatcher Converter de Adobe I/O](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#aio-aem-migrationdispatcher-converter) para migrar una configuración de Dispatcher existente.
++ Como práctica recomendada, haga referencia al módulo de Dispatcher AEM desde el [Arquetipo de proyecto de](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/dispatcher.cloud).
++ [Configure las herramientas locales de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=es) para validar Dispatcher antes de realizar pruebas en un entorno de Cloud Service.
 
 ## Ejercicio práctico
 
@@ -61,7 +61,7 @@ Además, asegúrese de haber completado el ejercicio práctico anterior:
         <td style="width:100%;margin-bottom:1rem;">
             <div style="font-size:1.25rem;font-weight:400;">Prácticas con las herramientas de Dispatcher</div>
             <p style="margin:1rem 0">
-                AEM AEM Explore el uso de las herramientas de Dispatcher del SDK de la para validar configuraciones de Dispatcher, así como ejecutar Dispatcher localmente mediante Docker.
+                AEM Explore el uso de las herramientas Dispatcher del SDK de la para validar configuraciones de Dispatcher AEM, así como para ejecutar Dispatcher localmente mediante Docker.
             </p>
             <a  rel="noreferrer"
                 target="_blank"

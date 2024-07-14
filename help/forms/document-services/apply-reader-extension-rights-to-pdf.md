@@ -21,7 +21,7 @@ ht-degree: 0%
 Extensiones de Reader permite manipular los derechos de uso en documentos de PDF. Los derechos de uso pertenecen a una funcionalidad que está disponible en Acrobat pero no en Adobe Reader. La funcionalidad controlada por Extensiones de Reader incluye la capacidad de agregar comentarios a un documento, rellenar formularios y guardarlo. Los documentos de PDF que tienen derechos de uso añadidos se denominan documentos con derechos activados. Un usuario que abre un documento de PDF con derechos activados en Adobe Reader puede realizar las operaciones que están habilitadas para ese documento.
 
 Para llevar a cabo este caso de uso, debemos hacer lo siguiente:
-* [Añadir el certificado de Extensiones de Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) hasta `fd-service` usuario.
+* [Agregar el certificado de Extensiones de Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) al usuario `fd-service`.
 
 ## Crear servicio OSGi personalizado
 
@@ -200,6 +200,6 @@ Para probar esto en el servidor local, siga los siguientes pasos:
 1. [Importar las bibliotecas de cliente y el envío personalizado](assets/applyaresdemo.zip)
 1. [Importar el formulario adaptable](assets/applyaresform.zip)
 1. Agregue el certificado de Extensiones de Reader al usuario &quot;fd-service&quot;. Asegúrese de que el alias sea &quot;ares&quot;.
-1. [Previsualizar formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/applyreaderextensions/jcr:content?wcmmode=disabled)
+1. [Vista previa de formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/applyreaderextensions/jcr:content?wcmmode=disabled)
 1. Seleccione los derechos adecuados y cargue el archivo del PDF
 1. Haga clic en Enviar para obtener el PDF extendido de Reader

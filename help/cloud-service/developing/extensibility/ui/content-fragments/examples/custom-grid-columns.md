@@ -21,13 +21,13 @@ ht-degree: 0%
 
 # Columnas de cuadrícula personalizadas
 
-![Columna de cuadrícula personalizada de la Consola Fragmento de contenido](./assets/custom-grid-columns/hero.png){align="center"}
+![Columna de cuadrícula personalizada de la consola de fragmentos de contenido](./assets/custom-grid-columns/hero.png){align="center"}
 
-Las columnas de cuadrícula personalizadas se pueden agregar a la consola Fragmento de contenido mediante la variable  `contentFragmentGrid` punto de extensión. Este ejemplo muestra cómo agregar una columna personalizada que muestra la página Fragmentos de contenido, en función de su última fecha de modificación, en formato legible en lenguaje natural.
+Las columnas de cuadrícula personalizadas se pueden agregar a la consola Fragmento de contenido mediante el punto de extensión `contentFragmentGrid`. Este ejemplo muestra cómo agregar una columna personalizada que muestra la página Fragmentos de contenido, en función de su última fecha de modificación, en formato legible en lenguaje natural.
 
 ## Punto de extensión
 
-Este ejemplo se extiende hasta el punto de extensión `contentFragmentGrid` para agregar una columna personalizada a la consola Fragmento de contenido.
+Este ejemplo se extiende al punto de extensión `contentFragmentGrid` para agregar una columna personalizada a la Consola de fragmento de contenido.
 
 | AEM Interfaz de usuario extendida | Punto de extensión |
 | ------------------------ | --------------------- | 
@@ -35,18 +35,18 @@ Este ejemplo se extiende hasta el punto de extensión `contentFragmentGrid` para
 
 ## Extensión de ejemplo
 
-En el siguiente ejemplo se crea una columna personalizada, `Age` que muestra la edad del fragmento de contenido en formato legible en lenguaje natural. La edad se calcula a partir de la última fecha de modificación del fragmento de contenido.
+En el siguiente ejemplo se crea una columna personalizada, `Age`, que muestra la página del fragmento de contenido en un formato legible en lenguaje natural. La edad se calcula a partir de la última fecha de modificación del fragmento de contenido.
 
 El código muestra cómo se pueden obtener los metadatos del fragmento de contenido en el archivo de registro de la extensión y cómo se puede exportar el contenido JSON del fragmento de contenido que se puede transformar.
 
-Este ejemplo utiliza el [Luxon](https://moment.github.io/luxon/) para calcular la antigüedad del fragmento de contenido, instalado mediante `npm i luxon`.
+Este ejemplo usa la biblioteca [Luxon](https://moment.github.io/luxon/) para calcular la antigüedad del fragmento de contenido, instalado mediante `npm i luxon`.
 
 ### Registro de extensiones
 
-`ExtensionRegistration.js`AEM , asignado a la ruta index.html, es el punto de entrada para la extensión de la y define:
+AEM `ExtensionRegistration.js`, asignado a la ruta index.html, es el punto de entrada para la extensión de la y define:
 
-+ La ubicación de la extensión se inserta a sí misma (`contentFragmentGrid`AEM ) en la experiencia de creación de
-+ La definición de la columna personalizada, en la variable `getColumns()` función
++ AEM La ubicación de la extensión se inserta a sí misma (`contentFragmentGrid`) en la experiencia de creación de la
++ Definición de la columna personalizada, en la función `getColumns()`
 + Los valores de cada columna personalizada, por fila
 
 ```javascript
@@ -149,7 +149,7 @@ export default ExtensionRegistration;
 
 #### Datos de fragmento de contenido
 
-El `render(..)` Método en `getColumns()` se pasa a una matriz de fragmentos. Cada objeto de la matriz representa una fila en la cuadrícula y contiene los siguientes metadatos sobre el fragmento de contenido. Estos metadatos se pueden utilizar para crear columnas personalizadas populares en la cuadrícula.
+Se pasa una matriz de fragmentos al método `render(..)` en `getColumns()`. Cada objeto de la matriz representa una fila en la cuadrícula y contiene los siguientes metadatos sobre el fragmento de contenido. Estos metadatos se pueden utilizar para crear columnas personalizadas populares en la cuadrícula.
 
 
 ```javascript
@@ -161,7 +161,7 @@ render: async function (fragments) {
 }
 ```
 
-Ejemplo de fragmento de contenido JSON que está disponible como elemento del `fragments` en el campo `render(..)` método.
+Ejemplo de fragmento de contenido JSON disponible como elemento del parámetro `fragments` en el método `render(..)`.
 
 ```json
 {
@@ -208,9 +208,9 @@ AEM Si se requieren otros datos para rellenar la columna personalizada, se puede
 
 >[!IMPORTANT]
 >
-> AEM Asegúrese de que la instancia de autor de la esté configurada para permitir [solicitudes de origen cruzado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html) desde el origen en el que se ejecuta la aplicación AppBuilder. Los orígenes permitidos incluyen `https://localhost:9080`, el origen de fase de AppBuilder y el origen de producción de AppBuilder.
+> AEM Asegúrese de que la instancia de autor de la esté configurada para permitir [solicitudes de origen cruzado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html) desde los orígenes en los que se está ejecutando la aplicación AppBuilder. Los orígenes permitidos incluyen `https://localhost:9080`, el origen de fase de AppBuilder y el origen de producción de AppBuilder.
 >
-> Como alternativa, la extensión de puede llamar a un personalizado [Acción de AppBuilder](../../runtime-action.md) AEM que realiza la solicitud al autor de la en nombre de la extensión de.
+> AEM Como alternativa, la extensión puede llamar a una [acción de AppBuilder](../../runtime-action.md) personalizada que realice la solicitud al autor de la aplicación en nombre de la extensión.
 
 
 ```javascript
@@ -227,9 +227,9 @@ const response = await fetch(`${context.aemHost}${fragment.id.slice('/content/da
 
 #### Definición de columna
 
-El resultado del método de procesamiento es un objeto JavaScript cuyas claves son la ruta del fragmento de contenido (o el `fragment.id`) y el valor es un valor que se muestra en la columna.
+El resultado del método de representación es un objeto JavaScript cuyas claves son la ruta de acceso del fragmento de contenido (o `fragment.id`) y el valor es el valor que se mostrará en la columna.
 
-Por ejemplo, los resultados de esta extensión para `age` Las columnas son:
+Por ejemplo, los resultados de esta extensión para la columna `age` son:
 
 ```json
 {

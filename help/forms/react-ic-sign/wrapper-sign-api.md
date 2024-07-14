@@ -22,14 +22,14 @@ ht-degree: 0%
 AEM Se ha desarrollado un paquete de personalizado para crear y devolver el formulario web al usuario final
 
 * [Crear documento transitorio](https://secure.na1.echosign.com/public/docs/restapi/v6#!/transientDocuments/createTransientDocument). El documento cargado a través de esta llamada se denomina transitorio, ya que solo está disponible durante 7 días después de la carga. El ID de documento transitorio devuelto se puede utilizar en las llamadas a la API donde se debe hacer referencia al archivo cargado. La solicitud de documento transitoria es una solicitud de varias partes que consta de tres partes: nombre de archivo, tipo MIME y el flujo de archivos. En esta solicitud, solo se puede cargar un archivo a la vez.
-* [Creación de un formulario web](https://secure.na1.echosign.com/public/docs/restapi/v6#!/widgets/createWidget).Este es un punto final principal que se utiliza para crear un nuevo formulario web. El formulario web se creó en un estado ACTIVO para alojar inmediatamente el formulario web.
-* [Recuperación del formulario web](https://secure.na1.echosign.com/public/docs/restapi/v6#!/widgets/getWidgets).Recupere el formulario web del usuario. A continuación, este formulario web se presenta a la aplicación que realiza la llamada para firmar el documento.
+* [Crear formulario web](https://secure.na1.echosign.com/public/docs/restapi/v6#!/widgets/createWidget). Este es un extremo principal que se usa para crear un nuevo formulario web. El formulario web se creó en un estado ACTIVO para alojar inmediatamente el formulario web.
+* [Recupere el formulario web](https://secure.na1.echosign.com/public/docs/restapi/v6#!/widgets/getWidgets). Recupere el formulario web del usuario. A continuación, este formulario web se presenta a la aplicación que realiza la llamada para firmar el documento.
 
 ## Crear la configuración OSGi de Acrobat Sign
 
 La API de REST de Acrobat Sign requiere la clave de integración y el correo electrónico asociados a ella. Estos dos valores se proporcionan como propiedades de configuración OSGi, como se muestra a continuación
 
-![configuración de firma](assets/sign-configuration.png)
+![configuración de inicio de sesión](assets/sign-configuration.png)
 
 ```java
 package com.acrobatsign.core.configuration;

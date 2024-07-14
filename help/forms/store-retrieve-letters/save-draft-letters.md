@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Guardar y recuperar borradores de cartas
 
-El siguiente código se utiliza para guardar la instancia de carta. Los metadatos de la instancia de carta se almacenan en _borradores de tic_ tabla. Se genera y devuelve una cadena única (DraftID). Esta cadena única se utiliza para recuperar la instancia de carta guardada.
+El siguiente código se utiliza para guardar la instancia de carta. Los metadatos de la instancia de carta se almacenan en la tabla _icdrafts_. Se genera y devuelve una cadena única (DraftID). Esta cadena única se utiliza para recuperar la instancia de carta guardada.
 
 ```java
 public String save(CCRDocumentInstance letterToSave) throws CCRDocumentException {
@@ -168,4 +168,4 @@ Puede personalizar la consulta para recuperar las instancias de carta guardadas.
 
 ### Proyecto Eclipse
 
-El proyecto Eclipse con implementación de muestra puede ser [descargado desde aquí](assets/icdrafts-eclipse-project.zip)
+El proyecto Eclipse con implementación de ejemplo se puede [descargar desde aquí](assets/icdrafts-eclipse-project.zip)

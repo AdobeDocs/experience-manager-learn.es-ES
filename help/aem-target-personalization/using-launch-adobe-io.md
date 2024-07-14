@@ -17,22 +17,22 @@ ht-degree: 2%
 
 ---
 
-# Uso de etiquetas mediante la consola de Adobe Developer
+# Uso de etiquetas mediante Adobe Developer Console
 
 ## Requisitos previos
 
-* [AEM Instancia de autor y publicación de](./implementation.md#set-up-aem) ejecutándose en el puerto localhost 4502 y 4503 respectivamente
+* AEM [instancia de autor y publicación de](./implementation.md#set-up-aem) que se ejecuta en el puerto localhost 4502 y 4503 respectivamente
 * **Experience Cloud**
-   * Acceso a Adobe Experience Cloud de sus organizaciones: `https://<yourcompany>.experiencecloud.adobe.com`
+   * Acceso a Adobe Experience Cloud de sus organizaciones - `https://<yourcompany>.experiencecloud.adobe.com`
    * Aprovisionamiento del Experience Cloud con las siguientes soluciones
       * [Recopilación de datos](https://experiencecloud.adobe.com)
       * [Adobe Target](https://experiencecloud.adobe.com)
-      * [Consola de Adobe Developer](https://developer.adobe.com/console/)
+      * [Adobe Developer Console](https://developer.adobe.com/console/)
 
      >[!NOTE]
-     >Debe tener permiso para desarrollar, aprobar, publicar y administrar extensiones y entornos en la recopilación de datos. Si no puede completar estos pasos porque ninguna de las opciones de la interfaz de usuario está disponible, póngase en contacto con su Experience Cloud de para solicitar el acceso. Para obtener más información sobre los permisos de etiquetas, [consulte la documentación](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+     >Debe tener permiso para desarrollar, aprobar, Publish, gestionar extensiones y entornos en la recopilación de datos. Si no puede completar estos pasos porque ninguna de las opciones de la interfaz de usuario está disponible, póngase en contacto con su Experience Cloud de para solicitar el acceso. Para obtener más información sobre los permisos de etiquetas, [consulte la documentación](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
 
-* **Extensiones de navegador Chrome**
+* **Extensiones de explorador Chrome**
    * Adobe Experience Cloud Debugger(https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
 ## Usuarios implicados
@@ -66,28 +66,28 @@ En esta sección, se tratarán los siguientes pasos de integración:
 
 Una propiedad es un contenedor que se rellena con extensiones, reglas, elementos de datos y bibliotecas al implementar etiquetas en el sitio.
 
-1. Navegar a sus organizaciones [Adobe Experience Cloud](https://experiencecloud.adobe.com/) (`https://<yourcompany>.experiencecloud.adobe.com`)
+1. Vaya a sus organizaciones [Adobe Experience Cloud](https://experiencecloud.adobe.com/) (`https://<yourcompany>.experiencecloud.adobe.com`)
 1. Inicie sesión con su Adobe ID y asegúrese de que se encuentra en la organización correcta.
-1. En el conmutador de soluciones, haga clic en **Experience Platform** y, a continuación, el **Recopilación de datos** y seleccione. **Etiquetas**.
+1. En el conmutador de soluciones, haga clic en **Experience Platform**, luego en la sección **Recopilación de datos** y seleccione **Etiquetas**.
 
 ![Experience Cloud - tags](assets/using-launch-adobe-io/exc-cloud-launch.png)
 
 1. Asegúrese de que se encuentra en la organización correcta y, a continuación, proceda a crear una propiedad de etiquetas.
    ![Experience Cloud - tags](assets/using-launch-adobe-io/launch-create-property.png)
 
-   *Para obtener más información sobre la creación de propiedades, consulte [Crear una propiedad](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=en#create-or-configure-a-property) en la documentación del producto.*
-1. Haga clic en **Nueva propiedad** botón
-1. Proporcione un nombre para la propiedad (por ejemplo, *AEM Tutorial de Target*)
-1. Como dominio, introduzca *localhost.com* ya que es el dominio en el que se ejecuta el sitio de demostración de WKND. Aunque el &#39;*Dominio*&#39; es obligatorio, la propiedad tags funcionará en cualquier dominio en el que esté implementada. El propósito principal de este campo es rellenar previamente las opciones de menú en el generador de reglas.
-1. Haga clic en **Guardar** botón.
+   *Para obtener más información sobre cómo crear propiedades, consulte [Crear una propiedad](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=en#create-or-configure-a-property) en la documentación del producto.*
+1. Haz clic en el botón **Nueva propiedad**
+1. AEM Asigne un nombre a su propiedad (por ejemplo, *Tutorial de Target de la aplicación*)
+1. Como dominio, introduzca *localhost.com*, ya que es el dominio en el que se ejecuta el sitio de demostración de WKND. Aunque el campo &#39;*Dominio*&#39; es obligatorio, la propiedad tags funcionará en cualquier dominio donde esté implementada. El propósito principal de este campo es rellenar previamente las opciones de menú en el generador de reglas.
+1. Haga clic en el botón **Guardar**.
 
-   ![etiquetas: nueva propiedad](assets/using-launch-adobe-io/exc-launch-property.png)
+   ![etiquetas - Nueva propiedad](assets/using-launch-adobe-io/exc-launch-property.png)
 
 1. Abra la propiedad que acaba de crear y haga clic en la pestaña Extensiones.
 
 #### Añadir la extensión de Target
 
-La extensión de Adobe Target es compatible con implementaciones del lado del cliente mediante el SDK de JavaScript de Target para la web moderna, `at.js`. Clientes que aún utilizan la biblioteca antigua de Target, `mbox.js`, [debe actualizar a at.js](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/upgrading-from-atjs-1x-to-atjs-20.html) para utilizar etiquetas.
+La extensión de Adobe Target admite implementaciones del lado del cliente mediante el SDK de JavaScript de Target para la web moderna, `at.js`. Los clientes que todavía usan la biblioteca antigua de Target `mbox.js`, [deben actualizarse a at.js](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/upgrading-from-atjs-1x-to-atjs-20.html) para usar etiquetas.
 
 La extensión de Target consta de dos partes principales:
 
@@ -98,38 +98,38 @@ La extensión de Target consta de dos partes principales:
    * Añadir parámetros a mbox global
    * Fire Global Mbox
 
-1. En **Extensiones**, puede ver la lista de Extensiones que ya están instaladas para la propiedad de etiquetas. ([Extensión principal de Adobe Launch](https://exchange.adobe.com/apps/ec/100223/adobe-launch-core-extension) está instalado de forma predeterminada)
-2. Haga clic en **Catálogo de extensiones** y busque Target en el filtro.
-3. Seleccione la última versión de Adobe Target at.js y haga clic en **Instalar** opción.
-   ![Etiquetas: nueva propiedad](assets/using-launch-adobe-io/launch-target-extension.png)
+1. En **Extensiones**, puede ver la lista de extensiones instaladas para la propiedad de etiquetas. ([La extensión principal de Adobe Launch](https://exchange.adobe.com/apps/ec/100223/adobe-launch-core-extension) está instalada de manera predeterminada)
+2. Haga clic en la opción **Catálogo de extensiones** y busque Target en el filtro.
+3. Seleccione la última versión de Adobe Target at.js y haga clic en la opción **Instalar**.
+   ![Etiquetas - Nueva propiedad](assets/using-launch-adobe-io/launch-target-extension.png)
 
-4. Haga clic en **Configurar** y verá la ventana de configuración con las credenciales de la cuenta de Target importadas y la versión de at.js para esta extensión.
-   ![Target: configuración de extensión](assets/using-launch-adobe-io/launch-target-extension-2.png)
+4. Haga clic en el botón **Configurar** y verá la ventana de configuración con las credenciales de la cuenta de Target importadas y la versión de at.js para esta extensión.
+   ![Target - Configuración de extensión](assets/using-launch-adobe-io/launch-target-extension-2.png)
 
    Cuando Target se implementa mediante códigos incrustados de etiquetas asincrónicas, debe codificar de forma rígida un fragmento de ocultamiento previo en las páginas antes de los códigos incrustados de etiquetas para administrar el parpadeo del contenido. Más adelante aprenderemos más sobre el francotirador preocultado. Puede descargar el fragmento de ocultamiento previo [aquí](assets/using-launch-adobe-io/prehiding.js)
 
-5. Clic **Guardar** para completar la adición de la extensión de Target a la propiedad de etiquetas, y ahora debería poder ver la extensión de Target en la lista de **Instalado** lista de extensiones.
+5. Haga clic en **Guardar** para completar la adición de la extensión de Target a su propiedad de etiquetas y ahora debería poder ver la extensión de Target en la lista de extensiones **Instaladas**.
 
 6. Repita los pasos anteriores para buscar la extensión &quot;Servicio de ID de Experience Cloud&quot; e instálela.
-   ![Extensión: servicio de ID de Experience Cloud](assets/using-launch-adobe-io/launch-extension-experience-cloud.png)
+   ![Extensión - Servicio de ID de Experience Cloud](assets/using-launch-adobe-io/launch-extension-experience-cloud.png)
 
 #### Configurar entornos
 
-1. Haga clic en **Entorno** para la propiedad del sitio y puede ver la lista de entornos que se crean para la propiedad del sitio. De forma predeterminada, tenemos una instancia creada para desarrollo, ensayo y producción.
+1. Haga clic en la ficha **Entorno** de la propiedad del sitio y verá la lista de entornos que se crean para ella. De forma predeterminada, tenemos una instancia creada para desarrollo, ensayo y producción.
 
 ![Elemento de datos - Nombre de página](assets/using-launch-adobe-io/launch-environment-setup.png)
 
 #### Generar y publicar
 
-1. Haga clic en **Publicación** para su propiedad del sitio y vamos a crear una biblioteca para crear e implementar nuestros cambios (elementos de datos, reglas) en un entorno de desarrollo.
+1. Haga clic en la ficha **Publicación** de la propiedad del sitio. Vamos a crear una biblioteca para generar e implementar nuestros cambios (elementos de datos y reglas) en un entorno de desarrollo.
    >[!VIDEO](https://video.tv.adobe.com/v/28412?quality=12&learn=on)
-2. Publique los cambios del entorno de desarrollo en un entorno de ensayo.
+2. Publish cambia del entorno de desarrollo a un entorno de ensayo.
    >[!VIDEO](https://video.tv.adobe.com/v/28419?quality=12&learn=on)
-3. Ejecute el **Opción Generar para ensayo**.
-4. Una vez completada la generación, ejecute **Aprobar para publicación**, que cambia de un entorno de ensayo a un entorno de producción.
+3. Ejecute la opción **Generar para ensayo**.
+4. Una vez completada la compilación, ejecute **Aprobar para publicación**, que mueve los cambios de un entorno de ensayo a un entorno de producción.
    ![Ensayo en producción](assets/using-launch-adobe-io/build-staging.png)
-5. Finalmente, ejecute el **Generar y publicar en producción** para insertar los cambios en producción.
-   ![Generar y publicar en producción](assets/using-launch-adobe-io/build-and-publish.png)
+5. Finalmente, ejecute la opción **Generar y Publish en producción** para insertar los cambios en producción.
+   ![Generar y Publish en producción](assets/using-launch-adobe-io/build-and-publish.png)
 
 ### Adobe Experience Manager
 
@@ -137,15 +137,15 @@ La extensión de Target consta de dos partes principales:
 
 >[!NOTE]
 >
-> Conceder acceso a la integración de Adobe Developer para seleccionar espacios de trabajo con el [función para permitir que un equipo central realice cambios controlados por API solo en unos pocos espacios de trabajo](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/configure-adobe-io-integration.html).
+> Conceda acceso a la integración de Adobe Developer para seleccionar espacios de trabajo con la función [adecuada para permitir que un equipo central realice cambios controlados por API solo en unos pocos espacios de trabajo](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/configure-adobe-io-integration.html).
 
 1. AEM Cree la integración de IMS en el con las credenciales de Adobe Developer. (1:12 a 03:55)
-2. En Recopilación de datos, cree una propiedad. (cubierto [superior](#create-launch-property))
+2. En Recopilación de datos, cree una propiedad. (cubierto [arriba](#create-launch-property))
 3. Con la integración de IMS del paso 1, cree la integración de etiquetas para importar la propiedad de etiquetas.
 4. AEM En, asigne la integración de etiquetas a un sitio mediante la configuración del explorador. (05:28 a 06:14)
 5. Valide la integración manualmente. (06:15 a 06:33)
 6. Uso del complemento del explorador de Adobe Experience Cloud Debugger. (06:51 a 07:22)
 
-En este punto, se ha integrado correctamente [AEM con Adobe Target mediante etiquetas](./using-aem-cloud-services.md#integrating-aem-target-options) como se detalla en la opción 1.
+AEM En este punto, ha integrado correctamente [con Adobe Target mediante etiquetas](./using-aem-cloud-services.md#integrating-aem-target-options), tal como se detalla en la Opción 1.
 
 AEM AEM Para utilizar ofertas de fragmentos de experiencias de la aplicación para ofrecerle posibilidades en las actividades de personalización, continúe con el siguiente capítulo e integre la aplicación con Adobe Target mediante los servicios en la nube heredados.

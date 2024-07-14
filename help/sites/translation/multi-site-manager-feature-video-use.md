@@ -18,22 +18,22 @@ ht-degree: 4%
 
 # Uso del Administrador de varios sitios {#using-multi-site-manager-with-aem-sites}
 
-AEM La Información general de Live Copy y el Administrador de configuración de modelos son interfaces de autor de modelos para trabajar con las que se puede trabajar [Administrador de varios sitios](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/msm-and-translation.html?lang=es) en Adobe Experience Manager Sites.
+AEM Información general de Live Copy y el Administrador de configuración de modelo son interfaces de autor de modelos para trabajar con [Administrador de varios sitios](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/msm-and-translation.html?lang=es) en Adobe Experience Manager Sites.
 
 ## Información general de Live Copy {#live-copy-overview}
 
 >[!VIDEO](https://video.tv.adobe.com/v/17054?quality=12&learn=on)
 
-*Información general de Live Copy es una interfaz de interfaz de usuario táctil que se utiliza para administrar Live Copies y sus respectivos modelos. AEM Esta función, introducida en la versión 6.3 de la, sustituye al Centro de control de modelo de la IU clásica.*
+*Información general de Live Copy es una interfaz de usuario táctil que se usa para administrar Live Copies y sus respectivos modelos. AEM Esta característica, introducida en la versión 6.3 de la versión, reemplaza al Centro de control del modelo de la interfaz de usuario clásica.*
 
 ## Administrador de configuración de modelo: IU táctil {#blueprint-config-mgr}
 
 >[!VIDEO](https://video.tv.adobe.com/v/17056?quality=12&learn=on)
 
-*AEM 6.3 presenta una interfaz de usuario táctil para administrar las configuraciones de modelo para su uso en el Administrador de varios sitios.*
+AEM *6.3 presenta una interfaz de usuario táctil para administrar las configuraciones del modelo que se usarán en el Administrador de varios sitios.*
 
 ## Recursos adicionales {#additional-resources}
 
-* [Información general de Live Copy](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-livecopy-overview.html)
+* [Consola de información general de Live Copy](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-livecopy-overview.html)
 * [Creación y sincronización de Live Copies](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-livecopy.html)
 * [Prácticas recomendadas de MSM](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-best-practices.html)

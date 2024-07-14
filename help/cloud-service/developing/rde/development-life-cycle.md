@@ -45,4 +45,4 @@ Los beneficios clave de RDE para mantener el impulso del desarrollo.
 
 [Configuración del entorno de desarrollo local](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=es)
 
-[Uso de Adobe Cloud Manager: canalización de producción de CI/CD](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/cicd-production-pipeline.html)
+[Uso de Adobe Cloud Manager - Canalización de producción de CI/CD](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/cicd-production-pipeline.html)

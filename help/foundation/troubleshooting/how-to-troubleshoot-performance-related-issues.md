@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # AEM Solución de problemas relacionados con el rendimiento en el
 
-*AEM Este vídeo explica los pasos para solucionar problemas relacionados con el rendimiento en los entornos de trabajo de.*
+AEM *En este vídeo se explican los pasos para solucionar problemas relacionados con el rendimiento en el espacio de trabajo de los usuarios de la red de servicios de asistencia técnica.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335472?quality=12&learn=on)

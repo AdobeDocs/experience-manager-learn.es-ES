@@ -32,4 +32,4 @@ Una guía detallada sobre cómo obtener un token de inicio de sesión para integ
 + Verificación técnica de la cuenta
 + Uso sencillo de un token generado
 
-Para obtener una vista más detallada de este tema, puede consultar el tutorial sobre [autenticación basada en token](/help/headless-tutorial/authentication/overview.md).
+Para obtener una vista más detallada de este tema, puede hacer referencia al tutorial sobre [autenticación basada en tokens](/help/headless-tutorial/authentication/overview.md).

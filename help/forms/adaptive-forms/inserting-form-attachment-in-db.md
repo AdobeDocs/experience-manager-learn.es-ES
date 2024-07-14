@@ -26,8 +26,8 @@ Para llevar a cabo este caso de uso, se siguieron los siguientes pasos
 
 ## Crear una tabla de base de datos para guardar los datos del formulario y los datos adjuntos
 
-Se ha creado una tabla denominada nueva para contener los datos del formulario. Observe la imagen del nombre de la columna de tipo **LONGBLOB** para almacenar el archivo adjunto del formulario
-![table-schema](assets/insert-picture-table.png)
+Se ha creado una tabla denominada nueva para contener los datos del formulario. Observe la imagen de nombre de columna de tipo **LONGBLOB** para almacenar los datos adjuntos del formulario
+![esquema de tabla](assets/insert-picture-table.png)
 
 ## Crear modelo de datos de formulario
 
@@ -38,7 +38,7 @@ Se creó un modelo de datos de formulario para comunicarse con la base de datos 
 
 ## Crear flujo de trabajo
 
-AEM Al configurar el formulario adaptable para que se envíe a un flujo de trabajo de, tiene la opción de guardar los archivos adjuntos del formulario en una variable de flujo de trabajo o de guardarlos en una carpeta especificada debajo de la carga útil. Para este caso de uso, es necesario guardar los archivos adjuntos en una variable de flujo de trabajo de tipo ArrayList of Document. De esta ArrayList necesitamos extraer el primer elemento e inicializar una variable de documento. Las variables de flujo de trabajo denominadas **listOfDocuments** y **employeePhoto** se han creado.
+AEM Al configurar el formulario adaptable para que se envíe a un flujo de trabajo de, tiene la opción de guardar los archivos adjuntos del formulario en una variable de flujo de trabajo o de guardarlos en una carpeta especificada debajo de la carga útil. Para este caso de uso, es necesario guardar los archivos adjuntos en una variable de flujo de trabajo de tipo ArrayList of Document. De esta ArrayList necesitamos extraer el primer elemento e inicializar una variable de documento. Se crearon las variables de flujo de trabajo **listOfDocuments** y **employeePhoto**.
 Cuando se envía el formulario adaptable al déclencheur del flujo de trabajo, un paso en el flujo de trabajo inicializa la variable employeePhoto mediante el script ECMA. El siguiente es el código de script ECMA
 
 ```javascript
@@ -55,7 +55,7 @@ log.info("Employee Photo updated");
 ```
 
 El siguiente paso del flujo de trabajo es insertar datos y el archivo adjunto del formulario en la tabla mediante el componente de servicio Invocar modelo de datos de formulario.
-![insert-pic](assets/fdm-insert-pic.png)
+![insertar-imagen](assets/fdm-insert-pic.png)
 [El flujo de trabajo completo con el script ecma de ejemplo se puede descargar desde aquí](assets/add-new-employee.zip).
 
 >[!NOTE]
@@ -64,4 +64,4 @@ El siguiente paso del flujo de trabajo es insertar datos y el archivo adjunto de
 ## Crear formulario adaptable
 
 Cree el formulario adaptable en función del modelo de datos de formulario creado en el paso anterior. Arrastre y suelte los elementos del modelo de datos de formulario en el formulario. Configure el envío del formulario para almacenar en déclencheur el flujo de trabajo y especifique las siguientes propiedades, como se muestra en la captura de pantalla siguiente
-![form-attachments](assets/form-attachments.png)
+![archivos adjuntos del formulario](assets/form-attachments.png)

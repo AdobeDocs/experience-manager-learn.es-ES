@@ -27,16 +27,16 @@ AEM El formulario de ejemplo que se utiliza en este flujo de trabajo se basa en 
 
 ### Obtener las plantillas de formulario adaptable
 
-* Descargar [Plantilla de formulario adaptable](assets/af-form-template.zip)
-* [Importar la plantilla mediante el administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
+* Descargar [plantilla de formulario adaptable](assets/af-form-template.zip)
+* [Importe la plantilla mediante el administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
 * Cargar e instalar la plantilla de formulario adaptable
 
 ### Obtener el formulario adaptable de ejemplo
 
-* Descargar [Formulario adaptable](assets/peak-application-form.zip)
-* Navegar a [Formularios Y Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Descargar [formulario adaptable](assets/peak-application-form.zip)
+* Examinar [Formulario Y Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Haga clic en Crear -> Cargar archivo
-* El formulario adaptable de ejemplo se coloca en una carpeta llamada [Forms de aplicaciones](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments/applicationforms)
+* El formulario adaptable de ejemplo se coloca en una carpeta llamada [Application Forms](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments/applicationforms)
 
 En el siguiente vídeo, se explica cómo configurar un formulario adaptable para almacenar en déclencheur AEM un flujo de trabajo de
 >[!VIDEO](https://video.tv.adobe.com/v/40258?quality=12&learn=on)

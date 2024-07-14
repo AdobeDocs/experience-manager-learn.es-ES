@@ -25,15 +25,15 @@ AEM Aprenda a añadir un botón personalizado a la barra de herramientas del Edi
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420768?quality=12&learn=on)
 
-Se pueden añadir botones personalizados al **Barra de herramientas RTE** en el Editor de fragmentos de contenido mediante `rte` punto de extensión. En este ejemplo se muestra cómo agregar un botón personalizado denominado _Añadir sugerencia_ Vaya a la barra de herramientas RTE y modifique el contenido dentro de RTE.
+Se pueden agregar botones personalizados a la **barra de herramientas RTE** en el Editor de fragmentos de contenido usando el punto de extensión `rte`. Este ejemplo muestra cómo agregar un botón personalizado denominado _Agregar sugerencia_ a la barra de herramientas de RTE y modificar el contenido dentro de RTE.
 
-Uso de `rte` punto de extensión `getCustomButtons()` método se pueden añadir uno o varios botones personalizados al **Barra de herramientas RTE**. También es posible añadir o quitar botones RTE estándar como _Copiar, Pegar, Negrita y Cursiva_ usando `getCoreButtons()` y `removeButtons)` métodos respectivamente.
+Utilizando el método `getCustomButtons()` del punto de extensión `rte`, se pueden agregar uno o varios botones personalizados a la **barra de herramientas RTE**. También es posible agregar o quitar botones RTE estándar como _Copiar, Pegar, Negrita y Cursiva_ utilizando los métodos `getCoreButtons()` y `removeButtons)` respectivamente.
 
-En este ejemplo se muestra cómo insertar una nota o sugerencia resaltada mediante la función personalizada _Añadir sugerencia_ botón de barra de herramientas. El contenido de la nota o sugerencia resaltado tiene un formato especial aplicado mediante elementos HTML y las clases CSS asociadas. El contenido del marcador de posición y el código del HTML se insertan mediante la variable `onClick()` método de devolución de llamada del `getCustomButtons()`.
+Este ejemplo muestra cómo insertar una nota o sugerencia resaltada mediante el botón personalizado _Agregar sugerencia_ de la barra de herramientas. El contenido de la nota o sugerencia resaltado tiene un formato especial aplicado mediante elementos HTML y las clases CSS asociadas. El contenido del marcador de posición y el código del HTML se insertan mediante el método de devolución de llamada `onClick()` de `getCustomButtons()`.
 
 ## Punto de extensión
 
-Este ejemplo se extiende hasta el punto de extensión `rte` para agregar un botón personalizado a la barra de herramientas RTE del Editor de fragmentos de contenido.
+Este ejemplo se extiende al punto de extensión `rte` para agregar un botón personalizado a la barra de herramientas RTE del Editor de fragmentos de contenido.
 
 | AEM Interfaz de usuario extendida | Punto de extensión |
 | ------------------------ | --------------------- | 
@@ -41,20 +41,20 @@ Este ejemplo se extiende hasta el punto de extensión `rte` para agregar un bot�
 
 ## Extensión de ejemplo
 
-En el siguiente ejemplo se crea un _Añadir sugerencia_ botón personalizado en la barra de herramientas RTE. La acción de hacer clic inserta el texto del marcador de posición en la posición del símbolo de intercalación actual en RTE.
+En el siguiente ejemplo se crea un botón personalizado _Agregar sugerencia_ en la barra de herramientas RTE. La acción de hacer clic inserta el texto del marcador de posición en la posición del símbolo de intercalación actual en RTE.
 
 El código muestra cómo añadir el botón personalizado con un icono y registrar la función del controlador de clics.
 
 ### Registro de extensiones
 
-`ExtensionRegistration.js`AEM , asignado a la ruta index.html, es el punto de entrada para la extensión de la y define:
+AEM `ExtensionRegistration.js`, asignado a la ruta index.html, es el punto de entrada para la extensión de la y define:
 
-+ Definición del botón de barra de herramientas RTE en `getCustomButtons()` función con `id, tooltip and icon` atributos.
-+ El controlador de clics para el botón, en el `onClick()` función.
-+ La función del controlador de clics recibe la variable `state` como argumento para obtener el contenido del RTE en formato de HTML o texto. Sin embargo, en este ejemplo no se utiliza.
-+ La función del controlador de clics devuelve una matriz de instrucciones. Esta matriz tiene un objeto con `type` y `value` atributos. Para insertar el contenido, seleccione la opción `value` fragmento de código del HTML attributes, `type` utiliza el atributo `insertContent`. Si hay un caso de uso para reemplazar el contenido, el caso de uso es `replaceContent` tipo de instrucción.
++ La definición del botón de barra de herramientas RTE en la función `getCustomButtons()` con atributos `id, tooltip and icon`.
++ Controlador de clic para el botón, en la función `onClick()`.
++ La función del controlador de clic recibe el objeto `state` como argumento para obtener el contenido del RTE en formato de HTML o texto. Sin embargo, en este ejemplo no se utiliza.
++ La función del controlador de clics devuelve una matriz de instrucciones. Esta matriz tiene un objeto con `type` y `value` atributos. Para insertar el contenido, el fragmento de código del HTML de atributos `value`, el atributo `type` utiliza `insertContent`. Si hay un caso de uso para reemplazar el contenido, use el tipo de instrucción `replaceContent`.
 
-El `insertContent` el valor es una cadena de HTML, `<div class=\"cmp-contentfragment__element-tip\"><div>TIP</div><div>Add your tip text here...</div></div>`. Las clases CSS `cmp-contentfragment__element-tip` Los campos utilizados para mostrar el valor no están definidos en el widget, sino implementados en la experiencia web en la que se muestra este campo de fragmento de contenido.
+El valor `insertContent` es una cadena de HTML, `<div class=\"cmp-contentfragment__element-tip\"><div>TIP</div><div>Add your tip text here...</div></div>`. Las clases CSS `cmp-contentfragment__element-tip` utilizadas para mostrar el valor no están definidas en el widget, sino implementadas en la experiencia web en la que se muestra este campo de fragmento de contenido.
 
 
 `src/aem-cf-editor-1/web-src/src/components/ExtensionRegistration.js`

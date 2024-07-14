@@ -24,7 +24,7 @@ La creación de informes de transacciones para capturar el número de envíos de
 
 De forma predeterminada, el registro de transacciones está desactivado. Para habilitar el registro de transacciones, siga los pasos que se mencionan a continuación:
 
-* [Abra configMgr.](http://localhost:4502/system/console/configMgr)
+* [Abrir configMgr](http://localhost:4502/system/console/configMgr)
 * Buscar &quot;Informes de transacciones de Forms&quot;
 * Seleccione la casilla de verificación &quot;Registrar transacciones&quot;
 * Guarde los cambios
@@ -37,9 +37,9 @@ Para ver el informe de transacciones, inicie sesión en AEM Forms como administr
 
 Seleccionar herramientas | Forms | Ver informe de transacciones
 
-o vea el informe de transacciones haciendo clic en [aquí](http://localhost:4502/mnt/overlay/fd/transaction/gui/content/report.html)
+o vea el informe de transacciones haciendo clic [aquí](http://localhost:4502/mnt/overlay/fd/transaction/gui/content/report.html)
 
-![TransactionReporting](assets/transactionreporting.gif)
+![Informes de transacciones](assets/transactionreporting.gif)
 
 En la captura de pantalla anterior Documento procesado es el número de documentos generados mediante servicios de documentos. Documentos representados es el número de documentos de comunicación interactiva (web e impresos) representados. Forms enviado es el número de envíos de formularios adaptables.
 
@@ -49,4 +49,4 @@ Las acciones como enviar un formulario PDF, utilizar la interfaz de usuario del 
 
 Si está viendo el informe de transacciones en la instancia de autor, asegúrese de que la replicación inversa esté configurada en todas las instancias de publicación.
 
-Para obtener más información sobre los informes de transacciones [haga clic aquí](https://helpx.adobe.com/experience-manager/6-4/forms/using/transaction-reports-overview.html)
+Para obtener más información acerca de los informes de transacciones [haga clic aquí](https://helpx.adobe.com/experience-manager/6-4/forms/using/transaction-reports-overview.html)

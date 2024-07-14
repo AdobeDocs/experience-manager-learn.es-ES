@@ -21,7 +21,7 @@ ht-degree: 14%
 
 # Protección de sitios web con reglas de filtro de tráfico (incluidas las reglas WAF)
 
-Más información **reglas de filtro de tráfico**, incluida su subcategoría de **Reglas del cortafuegos de aplicaciones web (WAF)** AEM en as a Cloud Service (AEMCS). Obtenga información sobre cómo crear, implementar y probar las reglas. AEM Además, analice los resultados para proteger los sitios de la.
+Obtenga información acerca de **reglas de filtro de tráfico**, incluida su subcategoría de **reglas de firewall de aplicaciones web (WAF)** en AEM as a Cloud Service (AEMCS). Obtenga información sobre cómo crear, implementar y probar las reglas. AEM Además, analice los resultados para proteger los sitios de la.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425401?quality=12&learn=on)
 
@@ -29,7 +29,7 @@ Más información **reglas de filtro de tráfico**, incluida su subcategoría de
 
 Reducir el riesgo de violaciones de seguridad es una prioridad para cualquier organización. AEM CS ofrece la función de reglas de filtro de tráfico, incluidas las reglas WAF, para proteger sitios web y aplicaciones.
 
-Las reglas de filtro de tráfico se implementan en [CDN integrada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=es) AEM y se evalúan antes de que la solicitud llegue a la infraestructura de la. AEM Con esta función, puede mejorar significativamente la seguridad del sitio web, lo que garantiza que solo se permita el acceso a la infraestructura de la red a las solicitudes legítimas.
+AEM Las reglas de filtro de tráfico se implementan en la [red de distribución de contenido (CDN) integrada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=es) y se evalúan antes de que la solicitud llegue a la infraestructura de la. AEM Con esta función, puede mejorar significativamente la seguridad del sitio web, lo que garantiza que solo se permita el acceso a la infraestructura de la red a las solicitudes legítimas.
 
 Este tutorial le guía a través del proceso de creación, implementación, prueba y análisis de los resultados de las reglas de filtro de tráfico, incluidas las reglas WAF.
 
@@ -43,6 +43,6 @@ Le invitamos a hacernos llegar sus comentarios o preguntas sobre las reglas de f
 
 ## Siguiente paso
 
-Aprender [cómo realizar la configuración](./how-to-setup.md) Utilice la función para poder crear, implementar y probar reglas de filtro de tráfico. Obtenga información acerca de la configuración de **Elasticsearch, Logstash y Kibana (ELK)** apilar herramientas del tablero para analizar los resultados de los registros de CDN de AEM CS.
+Obtenga información sobre [cómo configurar](./how-to-setup.md) la característica para que pueda crear, implementar y probar reglas de filtro de tráfico. Obtenga información acerca de la configuración de las herramientas del panel de pila **Elasticsearch, Logstash y Kibana (ELK)** para analizar los resultados de los registros de CDN de AEM CS.
 
 

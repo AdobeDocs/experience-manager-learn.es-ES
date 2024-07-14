@@ -36,7 +36,7 @@ Es necesario crear un flujo de trabajo para administrar el envío del formulario
 ## Configurar formulario adaptable
 
 * Configure la acción de envío del formulario adaptable para almacenar en déclencheur AEM el flujo de trabajo de la
-  ![submit-action](assets/store-attachments.png)
+  ![acción de envío](assets/store-attachments.png)
 
 ## Prueba de la solución
 
@@ -48,7 +48,7 @@ Es necesario crear un flujo de trabajo para administrar el envío del formulario
 
 [Importar el formulario adaptable](assets/test-attachment-extractions-adaptive-form.zip)
 
-[Previsualización del formulario](http://localhost:4502/content/dam/formsanddocuments/testattachmentsextractions/jcr:content?wcmmode=disabled)
+[Vista previa del formulario](http://localhost:4502/content/dam/formsanddocuments/testattachmentsextractions/jcr:content?wcmmode=disabled)
 
 Agregue un archivo adjunto al formulario y envíelo.
 

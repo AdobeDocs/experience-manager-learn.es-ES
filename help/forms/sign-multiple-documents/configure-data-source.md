@@ -1,5 +1,5 @@
 ---
-title: AEM Configurar origen de datos
+title: AEM Configurar datos de Source
 description: Configurar la fuente de datos respaldada por MySQL para almacenar y recuperar datos de formulario
 feature: Adaptive Forms
 topic: Development
@@ -19,19 +19,19 @@ ht-degree: 3%
 
 # Configurar fuente de datos
 
-AEM Existen muchas maneras de habilitar la integración con una base de datos externa mediante el uso de la. Una de las formas más comunes de integrar una base de datos es mediante el uso de las propiedades de configuración de la fuente de datos obtenida de una conexión Apache Sling a través del [configMgr](http://localhost:4502/system/console/configMgr).
-El primer paso es descargar e implementar el adecuado [Controladores MySql](https://mvnrepository.com/artifact/mysql/mysql-connector-java) AEM en la.
+AEM Existen muchas maneras de habilitar la integración con una base de datos externa mediante el uso de la. Una de las formas más comunes de integrar una base de datos es usando las propiedades de configuración de la fuente de datos obtenida de una conexión Apache Sling a través de [configMgr](http://localhost:4502/system/console/configMgr).
+AEM El primer paso es descargar e implementar los [controladores MySql](https://mvnrepository.com/artifact/mysql/mysql-connector-java) adecuados en el servidor de correo de.
 Cree la fuente de datos obtenida de una conexión Apache Sling y proporcione las propiedades que se especifican en la captura de pantalla siguiente. El esquema de la base de datos se proporciona como parte de estos recursos de tutorial.
 
-![data-source](assets/data-source.PNG)
+![origen de datos](assets/data-source.PNG)
 
 La base de datos tiene una tabla denominada formdata con las 3 columnas, como se muestra en la captura de pantalla siguiente.
 
-![data-base](assets/data-base.PNG)
+![base de datos](assets/data-base.PNG)
 
 
 >[!NOTE]
->Asegúrese de nombrar la fuente de datos **aemformstutorial**. El código de ejemplo utiliza el nombre para conectarse a la base de datos.
+>Asegúrese de asignar un nombre a la fuente de datos **aemformstutorial**. El código de ejemplo utiliza el nombre para conectarse a la base de datos.
 
 | Nombre de la propiedad | Valor |
 | ------------------------|--------------------------------------- |
@@ -41,7 +41,7 @@ La base de datos tiene una tabla denominada formdata con las 3 columnas, como se
 
 ## Recursos
 
-El archivo SQL para crear el esquema puede ser [descargado desde aquí](assets/sign-multiple-forms.sql). Deberá importar este archivo mediante MySql Workbench para crear el esquema y la tabla.
+El archivo SQL para crear el esquema se puede [descargar desde aquí](assets/sign-multiple-forms.sql). Deberá importar este archivo mediante MySql Workbench para crear el esquema y la tabla.
 
 ## Siguientes pasos
 

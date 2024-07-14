@@ -15,7 +15,7 @@ exl-id: 0f3e50f0-88d8-46be-be8b-0f547c3633a6
 source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
 workflow-type: tm+mt
 source-wordcount: '87'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -34,7 +34,7 @@ Cómo configurar un entorno de desarrollo local para el desarrollo de Edge Deliv
    $ sudo npm install -g @adobe/aem-cli
    ```
 
-1. Cambie al directorio de su proyecto que sea un repositorio de Git creado a partir de [AEM placa de caldera de](https://github.com/adobe/aem-boilerplate) plantilla.
+1. AEM Cambie el directorio al directorio del proyecto que sea un repositorio de Git creado a partir de la plantilla [repetidor](https://github.com/adobe/aem-boilerplate).
 
    ```
    $ git clone git@github.com:my-org/my-project.git

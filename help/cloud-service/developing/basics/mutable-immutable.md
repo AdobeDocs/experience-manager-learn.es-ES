@@ -1,6 +1,6 @@
 ---
-title: AEM ¿Qué es el contenido mutable e inmutable en el as a Cloud Service de la?
-description: AEM Explore cómo los repositorios y los paquetes utilizan contenido mutable e inmutable, y por qué es importante en el as a Cloud Service de la.
+title: ¿Qué es el contenido mutable e inmutable en AEM as a Cloud Service?
+description: Explore cómo los repositorios y los paquetes utilizan contenido mutable e inmutable y por qué es importante en AEM as a Cloud Service.
 role: Developer
 level: Beginner
 type: Tutorial
@@ -19,6 +19,6 @@ ht-degree: 1%
 
 # Contenido mutable e inmutable
 
-Conozca la importancia y las diferencias de [contenido mutable e inmutable](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=es) AEM en la lista de segmentos de la comunidad de as a Cloud y cómo afecta a cómo se desarrolla.
+AEM Obtenga información acerca de la importancia y las diferencias del [contenido mutable e inmutable](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=es) en la aplicación de la nube de AEM as a Cloud, y cómo afecta a cómo se desarrolla.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330555?quality=12&learn=on)

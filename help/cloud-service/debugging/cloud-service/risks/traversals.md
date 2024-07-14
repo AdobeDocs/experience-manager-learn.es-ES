@@ -1,6 +1,6 @@
 ---
-title: AEM Advertencias transversales en la as a Cloud Service
-description: AEM Obtenga información sobre cómo mitigar las advertencias de recorrido en as a Cloud Service.
+title: Advertencias transversales en AEM as a Cloud Service
+description: Obtenga información sobre cómo mitigar las advertencias de recorrido en AEM as a Cloud Service.
 feature: Migration
 role: Architect, Developer
 level: Beginner
@@ -25,10 +25,10 @@ ht-degree: 4%
 
 _¿Qué son las advertencias de recorrido?_
 
-Las advertencias transversales son __aemerror__ AEM Las instrucciones de registro que indican consultas de mal rendimiento se están ejecutando en el servicio Publicación de. AEM Las advertencias transversales suelen manifestarse de dos formas en la forma de la:
+AEM Las advertencias transversales son __aemerror__ instrucciones de registro que indican que se están ejecutando consultas de mal rendimiento en el servicio de Publish de. AEM Las advertencias transversales suelen manifestarse de dos formas en la forma de la:
 
-1. __Consultas lentas__ que no utilizan índices, lo que provoca tiempos de respuesta lentos.
-1. __Consultas con errores__, que lanzan un `RuntimeNodeTraversalException`, lo que provoca una experiencia rota.
+1. __Consultas lentas__ que no utilizan índices, lo que resulta en tiempos de respuesta lentos.
+1. __Consultas con errores__, que generan un `RuntimeNodeTraversalException`, lo que da como resultado una experiencia rota.
 
 AEM Si se permiten las advertencias transversales sin marcar, se ralentiza el rendimiento de la y se pueden producir experiencias rotas para los usuarios.
 
@@ -75,7 +75,7 @@ La mitigación de las advertencias transversales se puede abordar mediante tres 
                 <p class="headline is-size-5 has-text-weight-bold">Ajuste el código o la configuración</p>
                <p class="is-size-6">Actualice las consultas y los índices para evitar los recorridos por consultas.</p>
                <a href="#adjust" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ajuste</span>
+                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ajustar</span>
                </a>
            </div>
        </div>
@@ -108,9 +108,9 @@ La mitigación de las advertencias transversales se puede abordar mediante tres 
 
 ## 1. Analizar{#analyze}
 
-AEM En primer lugar, identifique qué servicios de publicación de datos muestran advertencias transversales. Para ello, desde Cloud Manager, [download Publish services&#39; `aemerror` registros](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html#cloud-manager){target="_blank"} de todos los entornos (desarrollo, ensayo y producción) en el pasado __tres días__.
+AEM En primer lugar, identifique qué servicios de Publish muestran advertencias transversales. Para ello, desde Cloud Manager, [descargue los registros `aemerror` de los servicios Publish](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html#cloud-manager){target="_blank"} de todos los entornos (desarrollo, ensayo y producción) durante los últimos __tres días__.
 
-![AEM Descargar registros as a Cloud Service](./assets/traversals/download-logs.jpg)
+![Descargar registros de AEM as a Cloud Service](./assets/traversals/download-logs.jpg)
 
 Abra los archivos de registro y busque la clase Java™ `org.apache.jackrabbit.oak.plugins.index.Cursors$TraversingCursor`. El registro que contiene advertencias de recorrido contiene una serie de instrucciones similares a las siguientes:
 
@@ -129,7 +129,7 @@ Según el contexto de ejecución de la consulta, las instrucciones de registro p
 
    + Ejemplo: `GET /content/wknd/us/en/example.html HTTP/1.1`
 
-+ Sintaxis de consulta Oak
++ Sintaxis de consultas de Oak
 
    + Ejemplo: `select [jcr:path], [jcr:score], * from [nt:base] as a where [xyz] = 'abc' and isdescendantnode(a, '/content')`
 
@@ -139,9 +139,9 @@ Según el contexto de ejecución de la consulta, las instrucciones de registro p
 
 + Código que ejecuta la consulta
 
-   + Ejemplo:  `apps.wknd.components.search.example__002e__jsp._jspService` → `/apps/wknd/components/search/example.html`
+   + Ejemplo: `apps.wknd.components.search.example__002e__jsp._jspService` → `/apps/wknd/components/search/example.html`
 
-__Consultas con errores__ van seguidas de una `RuntimeNodeTraversalException` instrucción, similar a:
+__Las consultas con errores__ van seguidas de una instrucción `RuntimeNodeTraversalException`, similar a:
 
 ```log
 24.05.2022 14:18:47.240 [cm-p123-e456-aem-author-9876-edcba] *WARN* [192.150.10.214 [1653401908419] GET /content/wknd/us/en/example.html HTTP/1.1] 
@@ -157,16 +157,16 @@ Una vez descubiertas las consultas ofensivas y su código de invocación, se deb
 
 ### Ajuste de la consulta
 
-__Cambio de la consulta__ para agregar nuevas restricciones de consulta que se resuelvan en las restricciones de índice existentes. Cuando sea posible, prefiera cambiar la consulta a cambiar los índices.
+__Cambie la consulta__ para agregar nuevas restricciones de consulta que se resuelvan en las restricciones de índice existentes. Cuando sea posible, prefiera cambiar la consulta a cambiar los índices.
 
-+ [Aprenda a ajustar el rendimiento de las consultas](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html#query-performance-tuning){target="_blank"}
++ [Aprenda a ajustar el rendimiento de la consulta](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html#query-performance-tuning){target="_blank"}
 
 ### Ajuste del índice
 
-__AEM Cambiar (o crear) un índice de__ de forma que las restricciones de consulta existentes se puedan resolver en las actualizaciones de índice.
+AEM __Cambie (o cree) un índice de la__ de forma que las restricciones de consulta existentes puedan resolverse en las actualizaciones de índice.
 
 + [Aprenda a ajustar los índices existentes](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html#query-performance-tuning){target="_blank"}
-+ [Obtenga información sobre cómo crear índices](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html#create-a-new-index){target="_blank"}
++ [Aprenda a crear índices](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html#create-a-new-index){target="_blank"}
 
 ## 3. Verificar{#verify}
 
@@ -174,11 +174,11 @@ Los ajustes realizados en las consultas, los índices o ambos deben verificarse 
 
 ![Explicar consulta](./assets/traversals/verify.gif)
 
-If only [ajustes en la consulta](#adjust-the-query) AEM , la consulta se puede probar directamente en las consultas as a Cloud Service mediante la consola de desarrollador de, que permite a los usuarios probar las consultas de forma directa en las consultas de la consola de desarrollador de [Explicar consulta](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=es#queries){target="_blank"}. AEM AEM Explicar La consulta se ejecuta en el servicio de autor de la, sin embargo, dado que las definiciones de índice son las mismas en los servicios de autor y publicación, la validación de consultas en el servicio de autor de la es suficiente.
+Si solo se realizan [ajustes en la consulta](#adjust-the-query), la consulta se puede probar directamente en AEM as a Cloud Service a través de [Explain Query](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=es#queries){target="_blank"} de Developer Console. AEM Explicar La consulta se ejecuta en el servicio de autor de la, sin embargo, dado que las definiciones de índice son las mismas en los servicios de autor y Publish AEM, la validación de consultas en el servicio de autor de la es suficiente.
 
-If [ajustes en el índice](#adjust-the-index) AEM , el índice debe implementarse para que esté as a Cloud Service. Con los ajustes de índice implementados, la variable [Explicar consulta](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=es#queries){target="_blank"} se puede utilizar para ejecutar y ajustar la consulta más adelante.
+Si se realizan [ajustes en el índice](#adjust-the-index), el índice debe implementarse en AEM as a Cloud Service. Con los ajustes de índice implementados, se puede usar [Explain Query](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=es#queries){target="_blank"} de Developer Console para ejecutar y ajustar la consulta con más detalle.
 
-AEM En última instancia, todos los cambios (consulta y código) se comprometen con Git y se implementan para que sean as a Cloud Service mediante Cloud Manager. Una vez implementadas, pruebe las rutas de código asociadas con las advertencias de recorrido originales y compruebe que las advertencias de recorrido ya no aparecen en `aemerror` registro.
+En última instancia, todos los cambios (consulta y código) se comprometen con Git y se implementan en AEM as a Cloud Service mediante Cloud Manager. Una vez implementadas, pruebe las rutas de código asociadas con las advertencias de recorrido originales y compruebe que las advertencias de recorrido ya no aparecen en el registro `aemerror`.
 
 ## Otros recursos
 
@@ -197,7 +197,7 @@ AEM Consulte estos otros recursos útiles para comprender los índices, las bús
        <div class="card-content is-padded-small">
            <div class="content">
                <p class="headline is-size-6 has-text-weight-bold"><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-search-and-indexing.html" title="Cloud 5: Búsqueda e indexación">Cloud 5: Búsqueda e indexación</a></p>
-               <p class="is-size-6">AEM Los programas de equipo de Cloud 5 exploran los detalles de la búsqueda y la indexación en los as a Cloud Service de la.</p>
+               <p class="is-size-6">Los programas de equipo de Cloud 5 exploran los detalles de la búsqueda y la indexación en AEM as a Cloud Service.</p>
                <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-search-and-indexing.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
                </a>
@@ -220,7 +220,7 @@ AEM Consulte estos otros recursos útiles para comprender los índices, las bús
        <div class="card-content is-padded-small">
            <div class="content">
                <p class="headline is-size-6 has-text-weight-bold"><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=es" title="Búsqueda de contenido e indexación">Documentación de indexación y búsqueda de contenido</a></p>
-               <p class="is-size-6">AEM Obtenga información sobre cómo crear y administrar índices en as a Cloud Service de.</p>
+               <p class="is-size-6">Obtenga información sobre cómo crear y administrar índices en AEM as a Cloud Service.</p>
                <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=es" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
                </a>
@@ -242,7 +242,7 @@ AEM Consulte estos otros recursos útiles para comprender los índices, las bús
        <div class="card-content is-padded-small">
            <div class="content">
                <p class="headline is-size-6 has-text-weight-bold"><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/search-and-indexing.html" title="Modernización de los índices de Oak">Modernización de los índices de Oak</a></p>
-               <p class="is-size-6">AEM AEM Aprenda a convertir definiciones de índice de Oak de 6 para que sean compatibles con el as a Cloud Service y a mantener los índices a partir de ahora.</p>
+               <p class="is-size-6">AEM Aprenda a convertir las definiciones de índice de Oak de la 6 para que sean compatibles con AEM as a Cloud Service y a mantener los índices en el futuro.</p>
                <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/search-and-indexing.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
                </a>
@@ -264,7 +264,7 @@ AEM Consulte estos otros recursos útiles para comprender los índices, las bús
        <div class="card-content is-padded-small">
            <div class="content">
                <p class="headline is-size-6 has-text-weight-bold"><a href="https://jackrabbit.apache.org/oak/docs/query/lucene.html" title="Documentación de definición de índice">Documentación del índice Lucene</a></p>
-               <p class="has-ellipsis is-size-6">La referencia de índice de Apache Oak Jackrabbit Lucene que documenta todas las configuraciones de índice de Lucene admitidas.</p>
+               <p class="has-ellipsis is-size-6">La referencia del índice Apache Oak Jackrabbit Lucene que documenta todas las configuraciones de índice Lucene admitidas.</p>
                <a href="https://jackrabbit.apache.org/oak/docs/query/lucene.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
                </a>

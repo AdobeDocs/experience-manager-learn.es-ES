@@ -1,6 +1,6 @@
 ---
 title: Navegación interactiva
-description: Explore cómo realizar una navegación adaptable en la creación de documentos de entrega perimetral.
+description: Explore cómo realizar una navegación adaptable en la creación de documentos de Edge Delivery.
 version: 6.5, Cloud Service
 feature: Authoring
 topic: Content Management

@@ -26,16 +26,16 @@ La siguiente captura de pantalla muestra los pasos involucrados en el flujo de t
 
 ## Paso Generar flujo de trabajo de PDF no interactivo
 
-La plantilla XDP y los datos que se van a combinar con la plantilla se especifican aquí. Los datos que se van a combinar son los datos enviados desde el PDF. Los datos enviados se almacenan en el nodo `/content/pdfsubmissions`.
+La plantilla XDP y los datos que se van a combinar con la plantilla se especifican aquí. Los datos que se van a combinar son los datos enviados desde el PDF. Estos datos enviados se almacenan en el nodo `/content/pdfsubmissions`.
 
 ![flujo de trabajo](assets/generate-pdf1.PNG)
 
-El PDF generado se asigna a la variable de flujo de trabajo llamada `submittedPDF`.
+El PDF generado se ha asignado a la variable de flujo de trabajo `submittedPDF`.
 
 ![flujo de trabajo](assets/generate-pdf2.PNG)
 
 ### Asignar el PDF generado para su revisión y aprobación
 
-El componente Asignar flujo de trabajo de tareas se utiliza aquí para asignar el PDF generado para su revisión y aprobación. La variable `submittedPDF` se utiliza en la pestaña Forms y documentos del componente Asignar flujo de trabajo de tareas.
+El componente Asignar flujo de trabajo de tareas se utiliza aquí para asignar el PDF generado para su revisión y aprobación. La variable `submittedPDF` se utiliza en la pestaña Forms y documentos del componente de flujo de trabajo Asignar tarea.
 
 ![flujo de trabajo](assets/assign-task.PNG)

@@ -18,11 +18,11 @@ ht-degree: 1%
 
 # Cloud 5: Reparar su... Reescribe
 
-AEM Parte dos de la serie, exploramos algunas cosas que puede ver que acelerarán el desarrollo de reescritura y la optimización en el as a Cloud Service de la.
+En la segunda parte de la serie, exploramos algunas cosas que puede ver para acelerar el desarrollo y la optimización de la reescritura en AEM as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/343600?quality=12&learn=on)
 
 ## Contenido cubierto en este vídeo
 
 + descripción general de mod_rewrite
-+ [documentos mod_rewrite](https://httpd.apache.org/docs/current/mod/mod_rewrite.html)
++ [documentos de mod_rewrite](https://httpd.apache.org/docs/current/mod/mod_rewrite.html)

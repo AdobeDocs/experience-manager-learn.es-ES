@@ -1,6 +1,6 @@
 ---
-title: AEM Búsqueda e indexación en as a Cloud Service
-description: AEM Obtenga información acerca de los índices de búsqueda de los as a Cloud Service AEM de, cómo convertir las definiciones de índice de 6 y cómo implementar los índices.
+title: Búsqueda e indexación en AEM as a Cloud Service
+description: Obtenga información acerca de los índices de búsqueda de AEM as a Cloud Service AEM, cómo convertir definiciones de índice de 6 y cómo implementar índices.
 version: Cloud Service
 feature: Search
 topic: Migration, Upgrade
@@ -19,24 +19,24 @@ ht-degree: 0%
 
 # Búsqueda e indexación
 
-AEM Obtenga información acerca de los índices de búsqueda de as a Cloud Service AEM AEM, cómo convertir las definiciones de índice de 6 de forma que sean compatibles con el as a Cloud Service AEM y cómo implementar índices para que se puedan usar en las definiciones de índice de as a Cloud Service.
+Obtenga información acerca de los índices de búsqueda de AEM as a Cloud Service AEM, cómo convertir definiciones de índice de 6 para que sean compatibles con AEM as a Cloud Service y cómo implementar índices en AEM as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336963?quality=12&learn=on)
 
 ## Herramienta Conversor de índices
 
-![Herramienta Conversor de índices](./assets/index-converter.png)
+![Herramienta de conversión de índices](./assets/index-converter.png)
 
-Como parte de la refactorización del código base, utilice el [Herramienta convertidor de índices](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationindex-converter) AEM para convertir definiciones de índice de Oak personalizadas en definiciones de índice compatibles con el as a Cloud Service.
+Como parte de la refactorización del código base, use la [herramienta de conversión de índices](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationindex-converter) para convertir definiciones de índices Oak personalizadas en definiciones de índices compatibles con AEM as a Cloud Service.
 
-Revise la [documentación del convertidor de índices](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/index-converter.html) para obtener el conjunto completo y actual de funcionalidades de Index Converter.
+Revise la [documentación del convertidor de índices](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/index-converter.html) para ver el conjunto completo y actual de funcionalidades del convertidor de índices.
 
 ## Actividades clave
 
-+ Utilice el [Migrador de flujo de trabajo Adobe I/O](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationindex-converter) herramienta para migrar flujos de trabajo de procesamiento de recursos para utilizar los microservicios de Asset compute.
-+ Configuración de un [entorno de desarrollo local](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=es) e implementar los índices personalizados. Asegúrese de que los índices actualizados estén actualizados.
-+ AEM Implemente la base de código actualizada en un entorno de desarrollo as a Cloud Service de y siga validando.
-+ Si se modifica un índice predeterminado **SIEMPRE** AEM copie la última definición de índice de un entorno as a Cloud Service que se ejecute en la última versión. Modifique la definición del índice copiado para adaptarla a sus necesidades.
++ Utilice la herramienta [Migrador de flujo de trabajo de Adobe I/O](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationindex-converter) para migrar flujos de trabajo de procesamiento de recursos y utilizar los microservicios de Asset compute.
++ Configure un [entorno de desarrollo local](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=es) e implemente los índices personalizados. Asegúrese de que los índices actualizados estén actualizados.
++ Implemente el código base actualizado en un entorno de desarrollo de AEM as a Cloud Service y continúe validando.
++ Si modifica un índice predeterminado **SIEMPRE**, copie la definición de índice más reciente de un entorno de AEM as a Cloud Service que se ejecute en la última versión. Modifique la definición del índice copiado para adaptarla a sus necesidades.
 
 ## Ejercicio práctico
 
@@ -44,7 +44,7 @@ Aplique sus conocimientos probando lo que ha aprendido con este ejercicio práct
 
 Antes de probar el ejercicio práctico, asegúrese de haber visto y entendido el vídeo anterior y los siguientes materiales:
 
-+ [AEM Pensar de manera diferente sobre el as a Cloud Service](./introduction.md)
++ [Pensar de forma diferente sobre AEM as a Cloud Service](./introduction.md)
 + [Modernización del repositorio](./repository-modernization.md)
 
 Además, asegúrese de haber completado el ejercicio práctico anterior:
@@ -62,12 +62,12 @@ Además, asegúrese de haber completado el ejercicio práctico anterior:
         <td style="width:100%;margin-bottom:1rem;">
             <div style="font-size:1.25rem;font-weight:400;">Prácticas con índices</div>
             <p style="margin:1rem 0">
-                AEM Explore la definición e implementación de índices Oak para as a Cloud Service.
+                Explore la definición e implementación de índices de Oak en AEM as a Cloud Service.
             </p>
             <a  rel="noreferrer"
                 target="_blank"
                 href="https://github.com/adobe/aem-cloud-engineering-video-series-exercises/tree/session7-indexes#cloud-acceleration-bootcamp---session-7-search-and-indexing" class="spectrum-Button spectrum-Button--primary spectrum-Button--sizeM">
-                <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Pruebe la indexación</span>
+                <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Probar la indexación</span>
             </a>
         </td>
     </tr>

@@ -20,7 +20,7 @@ ht-degree: 0%
 Puede implementar los recursos de ejemplo para que esta solución funcione en su instancia local de AEM Forms
 
 * [Importe la biblioteca de cliente y el componente personalizado para cargar el formulario pdf a través del Administrador de paquetes](./assets/client-libs-custom-component.zip)
-* Descargue e implemente el paquete mediante la consola web OSGi[Paquete de servicios de documentos personalizados](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
-* Descargue e implemente el paquete mediante la consola web OSGi [Desarrollo con paquete de usuario de servicio](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-* Descargue e implemente el paquete mediante la consola web OSGi[importación de datos desde archivo pdf](./assets/onlineToOffline.core-1.0.0-SNAPSHOT.jar)
-* Agregar la entrada _**DesarrollarWithServiceUser.core:getresourceresolver=data**_ en el _**Servicio de asignador de usuarios del servicio Apache Sling**_ Consola de configuración OSGi
+* Descargue e implemente el paquete usando la consola web de OSGi [Paquete de servicios de documentos personalizados](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
+* Descargue e implemente el paquete usando la consola web de OSGi [Desarrollo con el paquete de usuario de servicio](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+* Descargue e implemente el paquete usando la consola web de OSGi[importar datos del archivo pdf](./assets/onlineToOffline.core-1.0.0-SNAPSHOT.jar)
+* Agregue la entrada _**DesarrollandoConUsuarioServicio.core:getresourceresolver=data**_ en el _**Servicio de asignador de usuarios de Apache Sling Service**_ consola de configuración de OSGi

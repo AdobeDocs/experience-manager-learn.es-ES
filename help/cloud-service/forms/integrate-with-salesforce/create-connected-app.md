@@ -26,4 +26,4 @@ Una aplicación conectada es un marco de trabajo que permite que una aplicación
 >[!VIDEO](https://video.tv.adobe.com/v/331757?quality=12&learn=on)
 
 >[!NOTE]
->Asegúrese de crear una cuenta en la [Salesforce Developer Edition](https://developer.salesforce.com/signup) como las API de REST están habilitadas de forma predeterminada en la edición para desarrolladores.
+>Asegúrese de crear una cuenta en [Salesforce Developer Edition](https://developer.salesforce.com/signup), ya que las API de REST están habilitadas de forma predeterminada en la edición para desarrolladores.

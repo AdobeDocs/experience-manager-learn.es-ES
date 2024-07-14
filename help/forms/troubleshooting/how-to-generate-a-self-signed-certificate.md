@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Cómo generar un certificado firmado automáticamente
 
-*Este vídeo explica los pasos para generar un certificado autofirmado.*
+*Este vídeo explica los pasos para generar un certificado firmado automáticamente.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335539?quality=12&learn=on)

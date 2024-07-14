@@ -26,8 +26,8 @@ Aprenda a utilizar la búsqueda contextual en Adobe Experience Manager Assets pa
 
 ## Alternar búsqueda contextual
 
-AEM Para habilitar o deshabilitar la búsqueda contextual para todos los usuarios, los administradores de la pueden hacerlo navegando a __Configuración general__ y alternando el __Búsqueda contextual__ cambie a la configuración deseada.
+AEM Para habilitar o deshabilitar la búsqueda contextual para todos los usuarios, los administradores de la aplicación pueden hacerlo si navegan hasta __Configuración general__ y cambian el conmutador __Búsqueda contextual__ a la configuración deseada.
 
 De forma predeterminada, la búsqueda contextual está habilitada para todos los usuarios.
 
-![Activar búsqueda contextual](./assets/contextual-search/enable-contextual-search.png)
+![Habilitar búsqueda contextual](./assets/contextual-search/enable-contextual-search.png)

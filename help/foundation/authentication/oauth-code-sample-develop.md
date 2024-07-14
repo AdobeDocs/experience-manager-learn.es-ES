@@ -20,7 +20,7 @@ ht-degree: 1%
 
 Los ámbitos OAuth ampliables de Adobe Experience Manager permiten el control de acceso para los recursos de una aplicación cliente autorizada por un usuario final. AEM El diagrama siguiente ilustra el flujo de solicitud en el contexto de la creación de un flujo de trabajo de la.
 
-![Flujo de ámbitos de OAuth](./assets/oauth-code-sample-develop/oauth-scopes-flow.png)
+![Flujo De Ámbitos De Oauth](./assets/oauth-code-sample-develop/oauth-scopes-flow.png)
 
 AEM El ámbito de la incluye tres ámbitos:
 
@@ -28,7 +28,7 @@ AEM El ámbito de la incluye tres ámbitos:
 * Acceso sin conexión
 * Replicar
 
-AEM Los ámbitos de OAuth ampliables permiten definir otros ámbitos personalizados. AEM Por ejemplo, se puede desarrollar e implementar un ámbito personalizado para que permita que una aplicación móvil autorizada mediante OAuth se restrinja a leer, pero no a escribir recursos.
+AEM El uso de ámbitos de OAuth ampliables permite definir otros ámbitos personalizados. AEM Por ejemplo, se puede desarrollar e implementar un ámbito personalizado para que permita que una aplicación móvil autorizada mediante OAuth se restrinja a leer, pero no a escribir recursos.
 
 AEM OAuth es el método preferido para autorizar una aplicación cliente, ya que utiliza un token de acceso en lugar de requerir que se proporcionen las credenciales de un usuario en la aplicación.
 

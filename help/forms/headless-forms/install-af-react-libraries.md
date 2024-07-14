@@ -32,11 +32,11 @@ Actualice el archivo package.json para incluir las siguientes dependencias. En e
 
 >[!NOTE]
 >
->La lista desplegable y el diseño de tarjeta de este tutorial se han creado utilizando [Biblioteca de IU de material](https://mui.com/). Deberá descargar los paquetes de interfaz de usuario de material adecuados para que el código funcione en el sistema.
+>La lista desplegable y el diseño de tarjeta de este tutorial se crearon con [Biblioteca de IU de material](https://mui.com/). Deberá descargar los paquetes de interfaz de usuario de material adecuados para que el código funcione en el sistema.
 
 ## Configurar proxy
 
-El Intercambio de Recursos de Origen Cruzado (CORS) es un mecanismo de seguridad que restringe a los navegadores web de realizar solicitudes a un dominio diferente al dominio en el que está alojada la aplicación. Pueden producirse errores de CORS al intentar recuperar datos de una API alojada en un dominio diferente. Al configurar un proxy, puede evitar las restricciones CORS y realizar solicitudes a la API desde la aplicación React. He utilizado el siguiente código en un archivo llamado setUpProxy.js en la carpeta src. **Asegúrese de cambiar el destino para que apunte a la instancia de publicación.**
+El Intercambio de Recursos de Origen Cruzado (CORS) es un mecanismo de seguridad que restringe a los navegadores web de realizar solicitudes a un dominio diferente al dominio en el que está alojada la aplicación. Pueden producirse errores de CORS al intentar recuperar datos de una API alojada en un dominio diferente. Al configurar un proxy, puede evitar las restricciones CORS y realizar solicitudes a la API desde la aplicación React. He utilizado el siguiente código en un archivo llamado setUpProxy.js en la carpeta src. **Asegúrese de cambiar el destino para que apunte a su instancia de publicación.**
 
 ```
 const { createProxyMiddleware } = require('http-proxy-middleware');
@@ -56,7 +56,7 @@ module.exports = function(app) {
 };
 ```
 
-También deberá instalar y agregar el **http-proxy-middleware** a su proyecto.
+También tendrá que instalar y agregar el módulo **http-proxy-middleware** a su proyecto.
 
 ## Siguientes pasos
 

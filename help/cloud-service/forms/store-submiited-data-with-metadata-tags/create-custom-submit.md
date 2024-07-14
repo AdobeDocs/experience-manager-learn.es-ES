@@ -21,7 +21,7 @@ ht-degree: 0%
 
 AEM Forms CS proporciona una acción de envío predeterminada para almacenar datos de formulario en Azure, pero no tiene la capacidad de crear etiquetas de índice de blob en el blob. Para satisfacer el caso de uso, se creó un servicio de envío personalizado para almacenar los datos enviados en Azure y crear etiquetas de datos de índice de blob utilizando los campos marcados como en los que se puede buscar en el formulario.
 
-[El controlador de envío personalizado de ejemplo para los componentes principales basados en formularios adaptables está disponible aquí](https://github.com/adobe/aem-core-forms-components/blob/master/it/core/src/main/java/com/adobe/cq/forms/core/components/it/service/CustomAFSubmitService.java#L56). El siguiente envío personalizado se escribió para administrar el envío del formulario
+[El controlador de envío personalizado de ejemplo para el formulario adaptable basado en componentes principales está disponible aquí](https://github.com/adobe/aem-core-forms-components/blob/master/it/core/src/main/java/com/adobe/cq/forms/core/components/it/service/CustomAFSubmitService.java#L56). El siguiente envío personalizado se escribió para administrar el envío del formulario
 
 ```java
 package com.aemforms.saveandfecthfromazure.prefill;

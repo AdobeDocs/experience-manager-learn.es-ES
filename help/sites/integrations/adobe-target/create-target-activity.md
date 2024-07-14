@@ -37,4 +37,4 @@ Para crear actividades de Adobe Target mediante ofertas de fragmentos de experie
 
 ## Vínculos de soporte
 
-* [Adobe Experience Cloud Debugger: Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
+* [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)

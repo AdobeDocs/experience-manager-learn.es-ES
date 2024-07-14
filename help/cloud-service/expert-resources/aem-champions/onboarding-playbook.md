@@ -1,6 +1,6 @@
 ---
-title: 'AEM Consejos y trucos para el campeón de la: Guía de incorporación de Cloud Manager'
-description: AEM Consulte estas sugerencias para la incorporación a Cloud Manager y el manual de incorporación de Rakesh Pasupuleti, campeón y experto en.
+title: AEM Consejos y trucos para el campeón de la - Cloud Manager Onboarding Playbook
+description: Consulte estos consejos para la incorporación a Cloud Manager AEM y el manual de incorporación de Rakesh Pasupuleti, campeón y experto en.
 version: Cloud Service
 feature: Cloud Manager
 topic: Administration
@@ -18,13 +18,13 @@ ht-degree: 1%
 
 ---
 
-# AEM Consejos y trucos para el campeón de la: Guía de incorporación de Cloud Manager
+# AEM Consejos y trucos para el campeón de la - Cloud Manager Onboarding Playbook
 
-AEM El manual de incorporación le ayudará a asumir el cargo de nuevo administrador y desarrollador de la aplicación de la gestión de proyectos de as a Cloud Service de la. En la hoja de cálculo descargable, le guiaremos por las actividades que debe realizar durante las tres primeras semanas de trabajo al iniciar el recorrido de incorporación.
+El manual de incorporación le ayudará a asumir el cargo de nuevo administrador y desarrollador de AEM as a Cloud Service. En la hoja de cálculo descargable, le guiaremos por las actividades que debe realizar durante las tres primeras semanas de trabajo al iniciar el recorrido de incorporación.
 
 >[!TIP]
 >
->Descargue la [manual de incorporación aquí.](./assets/Cloud-Manager-for-AEM-as-a-Cloud-Service.xlsx)
+>Descargue el manual de [incorporación aquí.](./assets/Cloud-Manager-for-AEM-as-a-Cloud-Service.xlsx)
 
 Eche un vistazo a estos consejos de su compañero técnico, Rakesh Pasupuleti. Rakesh es un campeón de Adobe Experience Manager, y comparte ideas sobre cómo usar el manual de incorporación.
 
@@ -32,4 +32,4 @@ Eche un vistazo a estos consejos de su compañero técnico, Rakesh Pasupuleti. R
 
 ## Recursos adicionales {#additional-resources}
 
-* [AEM Recorrido de incorporación as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=es) AEM : Una guía paso a paso para que un nuevo administrador del sistema aprovisione inicialmente recursos en la nube y asigne usuarios a roles en función de sus responsabilidades de trabajo, de modo que cada miembro del equipo pueda iniciar sesión y acceder a sus nuevos recursos as a Cloud Service de
+* [Recorrido de incorporación de AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=es): una guía paso a paso para que un nuevo administrador del sistema aprovisione inicialmente recursos en la nube y asigne usuarios a roles en función de sus responsabilidades laborales, de modo que cada miembro del equipo pueda iniciar sesión y acceder a sus nuevos recursos de AEM as a Cloud Service

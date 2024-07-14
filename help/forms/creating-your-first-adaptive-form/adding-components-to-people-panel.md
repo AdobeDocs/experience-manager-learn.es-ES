@@ -21,11 +21,11 @@ ht-degree: 2%
 
 Configure el panel Personas agregando el fragmento de detalles del cónyuge. Se crea una regla para mostrar el fragmento de detalles del cónyuge si el estado civil de los solicitantes es casado.
 
-**Configuración del panel Personas en AEM Forms 6.3 y 6.4**
+**Configurar el panel Personas en AEM Forms 6.3 y 6.4**
 
 >[!VIDEO](https://video.tv.adobe.com/v/22193?quality=12&learn=on)
 
-**Configuración del panel Personas en AEM Forms 6.5 y versiones posteriores**
+**Configurar el panel Personas en AEM Forms 6.5 y versiones posteriores**
 
 >[!VIDEO](https://video.tv.adobe.com/v/28385?quality=12&learn=on)
 

@@ -1,5 +1,5 @@
 ---
-title: AEM Almacenamiento en caché de variantes de página con as a Cloud Service
+title: Almacenar en caché variantes de página con AEM as a Cloud Service
 description: AEM Obtenga información sobre cómo configurar y utilizar el servicio as a Cloud para admitir variantes de página de almacenamiento en caché.
 role: Architect, Developer
 topic: Development
@@ -25,13 +25,13 @@ AEM Obtenga información sobre cómo configurar y utilizar el servicio as a Clou
 
 ## Información general de soluciones
 
-+ Identifique la clave de variante y el número de valores que puede tener. En nuestro ejemplo, variamos por estado de EE. UU., por lo que el número máximo es 50. Esto es lo suficientemente pequeño como para no causar problemas con los límites de variante en la CDN. [Revisar sección de limitaciones de variante](#variant-limitations).
++ Identifique la clave de variante y el número de valores que puede tener. En nuestro ejemplo, variamos por estado de EE. UU., por lo que el número máximo es 50. Esto es lo suficientemente pequeño como para no causar problemas con los límites de variante en la CDN. [Revisar la sección de limitaciones de variantes](#variant-limitations).
 
-+ AEM El código debe establecer la cookie de __&quot;x-aem-variant&quot;__ al estado preferido del visitante (p. ej., `Set-Cookie: x-aem-variant=NY`) en la respuesta HTTP correspondiente de la solicitud HTTP inicial.
++ AEM El código de tiempo debe establecer la cookie __&quot;x-aem-variant&quot;__ en el estado preferido del visitante (p. ej. `Set-Cookie: x-aem-variant=NY`) en la respuesta HTTP correspondiente de la solicitud HTTP inicial.
 
-+ Las solicitudes posteriores del visitante envían esa cookie (por ejemplo, `"Cookie: x-aem-variant=NY"`) y la cookie se transforma en el nivel de la CDN en un encabezado predefinido (es decir, `x-aem-variant:NY`) que se pasa a Dispatcher.
++ Las solicitudes posteriores del visitante envían esa cookie (por ejemplo, `"Cookie: x-aem-variant=NY"`) y la cookie se transforma en el nivel de CDN en un encabezado predefinido (es decir, `x-aem-variant:NY`) que se pasa al despachante.
 
-+ Una regla de reescritura de Apache modifica la ruta de solicitud para incluir el valor del encabezado en la dirección URL de la página como un selector de Apache Sling (p. ej., `/page.variant=NY.html`). AEM Esto permite que Publicación de la sirva contenido diferente en función del selector y que Dispatcher almacene en caché una página por variante.
++ Una regla de reescritura de Apache modifica la ruta de solicitud para incluir el valor del encabezado en la dirección URL de la página como un selector de Apache Sling (p. ej., `/page.variant=NY.html`). AEM Esto permite que Publish ofrezca contenido diferente en función del selector y que Dispatcher almacene en caché una página por variante.
 
 + AEM La respuesta enviada por Dispatcher debe contener un encabezado de respuesta HTTP `Vary: x-aem-variant`. Esto indica a la CDN que almacene diferentes copias de caché para diferentes valores de encabezado.
 
@@ -49,21 +49,21 @@ AEM Obtenga información sobre cómo configurar y utilizar el servicio as a Clou
 
 ## Uso
 
-1. Para mostrar la función, utilizaremos [WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es)La implementación de como ejemplo.
+1. Para demostrar la funcionalidad, usaremos como ejemplo la implementación de [WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es).
 
-1. Implementación de un [SlingServletFilter](https://sling.apache.org/documentation/the-sling-engine/filters.html) AEM en el conjunto de `x-aem-variant` en la respuesta HTTP, con un valor de variante.
+1. AEM Implemente un [SlingServletFilter](https://sling.apache.org/documentation/the-sling-engine/filters.html) en para establecer la cookie `x-aem-variant` en la respuesta HTTP, con un valor de variante.
 
-1. AEM El CDN de CDN se transforma automáticamente `x-aem-variant` en un encabezado HTTP con el mismo nombre.
+1. AEM CDN transforma automáticamente la cookie `x-aem-variant` en un encabezado HTTP con el mismo nombre.
 
-1. Añada una regla mod_rewrite de servidor web Apache a su `dispatcher` proyecto, que modifica la ruta de solicitud para incluir el selector de variantes.
+1. Agregue una regla mod_rewrite de servidor web Apache a su proyecto `dispatcher`, que modifique la ruta de solicitud para incluir el selector de variantes.
 
-1. Implemente el filtro y reescriba las reglas mediante Cloud Manager.
+1. Implemente las reglas de filtrado y reescritura mediante Cloud Manager.
 
 1. Pruebe el flujo de solicitud general.
 
 ## Ejemplos de código
 
-+ Ejemplo de SlingServletFilter para establecer `x-aem-variant` AEM Cookie con un valor en la.
++ AEM Ejemplo de SlingServletFilter para establecer la cookie `x-aem-variant` con un valor en el código de tiempo de ejecución de la.
 
   ```
   package com.adobe.aem.guides.wknd.core.servlets.filters;
@@ -120,7 +120,7 @@ AEM Obtenga información sobre cómo configurar y utilizar el servicio as a Clou
   }
   ```
 
-+ Ejemplo de regla de reescritura en __dispatcher/src/conf.d/rewrite.rules__ que se administra como código fuente en Git e implementa mediante Cloud Manager.
++ Regla de reescritura de muestra en el archivo __dispatcher/src/conf.d/rewrite.rules__, que se administra como código fuente en Git y se implementa mediante Cloud Manager.
 
   ```
   ...
@@ -134,7 +134,7 @@ AEM Obtenga información sobre cómo configurar y utilizar el servicio as a Clou
 
 ## Limitaciones de variante
 
-+ AEM DN puede gestionar hasta 200 variaciones. Eso significa que `x-aem-variant` puede tener hasta 200 valores únicos. Para obtener más información, consulte [Límites de configuración de CDN](https://docs.fastly.com/en/guides/resource-limits).
++ AEM CDN puede gestionar hasta 200 variaciones. Esto significa que el encabezado `x-aem-variant` puede tener hasta 200 valores únicos. Para obtener más información, revise los [límites de configuración de CDN](https://docs.fastly.com/en/guides/resource-limits).
 
 + Debe asegurarse de que la clave de variante elegida nunca supere este número.  Por ejemplo, un ID de usuario no es una buena clave, ya que fácilmente superaría los 200 valores para la mayoría de los sitios web, mientras que los estados o territorios de un país son mejores si hay menos de 200 estados en ese país.
 

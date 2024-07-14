@@ -36,7 +36,7 @@ También puede enviar al extremo externo a través de POST. Para ello, solo tien
 
 Para probar esta capacidad en su servidor, siga las instrucciones que se mencionan a continuación:
 
-* Importe el [AEM el archivo de recursos asociado con este artículo en el que se utiliza el administrador de paquetes para la creación de informes de recursos de la aplicación](assets/submittingtorestendpoint.zip)
-* Dirija el explorador a [Formulario de solicitud de tiempo libre](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
+* AEM Importe el archivo de [recursos asociado con este artículo en mediante el administrador de paquetes](assets/submittingtorestendpoint.zip)
+* Dirija su explorador al [Formulario de solicitud de tiempo libre](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
 * Rellene el campo requerido y envíe el formulario
 * Debería obtener la página de agradecimiento con la información rellenada en la página

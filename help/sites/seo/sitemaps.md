@@ -25,7 +25,7 @@ Aprenda a impulsar su SEO creando mapas del sitio para AEM Sites.
 
 >[!WARNING]
 >
->Este vídeo muestra el uso de direcciones URL relativas en el mapa del sitio. Mapas del sitio [debe utilizar direcciones URL absolutas](https://sitemaps.org/protocol.html). Consulte [Configuraciones](#absolute-sitemap-urls) para obtener información sobre cómo habilitar las direcciones URL absolutas, ya que esto no se trata en el vídeo siguiente.
+>Este vídeo muestra el uso de direcciones URL relativas en el mapa del sitio. Los mapas del sitio [deben usar direcciones URL absolutas](https://sitemaps.org/protocol.html). Consulte [Configuraciones](#absolute-sitemap-urls) para ver cómo habilitar las direcciones URL absolutas, ya que esto no se trata en el siguiente vídeo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/337960?quality=12&learn=on)
 
@@ -33,9 +33,9 @@ Aprenda a impulsar su SEO creando mapas del sitio para AEM Sites.
 
 ### URL absolutas de mapa del sitio{#absolute-sitemap-urls}
 
-AEM El mapa del sitio admite direcciones URL absolutas usando [Asignación de Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html). AEM AEM Para ello, cree nodos de asignación en los servicios de que generen mapas del sitio (normalmente el servicio Publicación de).
+AEM El mapa del sitio que se está usando admite direcciones URL absolutas usando [Sling mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html). AEM AEM Para ello, cree nodos de asignación en los servicios de que generen mapas del sitio (normalmente, el servicio de Publish de).
 
-Ejemplo de definición de nodo de asignación de Sling para `https://wknd.com` se puede definir en `/etc/map/https` como sigue:
+Un ejemplo de definición de nodo de asignación de Sling para `https://wknd.com` se puede definir en `/etc/map/https` de la siguiente manera:
 
 | Ruta | Nombre de la propiedad | Tipo de propiedad | Valor de propiedad |
 |------|----------|---------------|-------|
@@ -43,14 +43,14 @@ Ejemplo de definición de nodo de asignación de Sling para `https://wknd.com` s
 | `/etc/map/https/wknd-site` | `sling:internalRedirect` | Cadena | `/content/wknd/(.*)` |
 | `/etc/map/https/wknd-site` | `sling:match` | Cadena | `wknd.com/$1` |
 
-La captura de pantalla siguiente ilustra una configuración similar, pero para `http://wknd.local` (una asignación de nombre de host local que se ejecuta en `http`).
+La captura de pantalla siguiente ilustra una configuración similar para `http://wknd.local` (una asignación de nombre de host local que se ejecuta en `http`).
 
-![Configuración de direcciones URL absolutas de mapa](../assets/sitemaps/sitemaps-absolute-urls.jpg)
+![Configuración de direcciones URL absolutas de mapa del sitio](../assets/sitemaps/sitemaps-absolute-urls.jpg)
 
 
 ### Configuración de OSGi del programador de mapa del sitio
 
-Define el [Configuración de fábrica de OSGi](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) para la frecuencia (usando [expresiones cron](https://cron.help/)AEM ) los mapas del sitio se vuelven a generar y se almacenan en caché en la caché de la.
+AEM Define la [configuración de fábrica de OSGi](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) para la frecuencia (mediante [expresiones cron](https://cron.help/)) en la que los mapas del sitio se vuelven a generar y se almacenan en caché en la caché de la.
 
 `ui.config/src/main/jcr_content/apps/wknd/osgiconfig/config.publish`
 
@@ -62,7 +62,7 @@ Define el [Configuración de fábrica de OSGi](http://localhost:4502/system/cons
 }
 ```
 
-### Regla de filtro de permitidos de Dispatcher
+### Regla de filtro de permitidos para Dispatcher
 
 Permitir solicitudes HTTP para los archivos de índice y mapa del sitio.
 
@@ -77,7 +77,7 @@ Permitir solicitudes HTTP para los archivos de índice y mapa del sitio.
 
 ### Regla de reescritura del servidor web Apache
 
-Asegurar `.xml` AEM Las solicitudes HTTP del mapa del sitio se dirigen a la página de datos subyacente correcta. Si no se utiliza el acortamiento de URL, o si se utilizan asignaciones de Sling para lograr el acortamiento de URL, esta configuración no es necesaria.
+AEM Asegúrese de que `.xml` solicitudes HTTP de mapa del sitio se enruten a la página de datos subyacente correcta. Si no se utiliza el acortamiento de URL, o si se utilizan asignaciones de Sling para lograr el acortamiento de URL, esta configuración no es necesaria.
 
 `dispatcher/src/conf.d/rewrites/rewrite.rules`
 
@@ -89,8 +89,8 @@ RewriteRule ^/(.*)$ /content/${CONTENT_FOLDER_NAME}/$1 [PT,L]
 
 ## Recursos
 
-+ [AEM Documentación de mapa del sitio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html?lang=en)
++ AEM [Documentación de mapa del sitio de](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html?lang=en)
 + [Documentación de mapa del sitio Apache Sling](https://github.com/apache/sling-org-apache-sling-sitemap#readme)
-+ [Documentación de mapa del sitio Sitemap.org](https://www.sitemaps.org/protocol.html)
-+ [Documentación del archivo de índice de mapa del sitio Sitemap.org](https://www.sitemaps.org/protocol.html#index)
-+ [Cron Helper](https://cron.help/)
++ [Documentación de mapa del sitio de Sitemap.org](https://www.sitemaps.org/protocol.html)
++ [Documentación del archivo de índice de mapa de sitios Sitemap.org](https://www.sitemaps.org/protocol.html#index)
++ [Ayudante Cron](https://cron.help/)

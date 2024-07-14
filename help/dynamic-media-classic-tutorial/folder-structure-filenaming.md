@@ -29,7 +29,7 @@ La jerarquía de carpetas es importante para usted y para su compañía únicame
 
 Otra consideración importante es el número de recursos o carpetas que se almacenarán en cada carpeta. Si hay muchos recursos almacenados en una carpeta, el rendimiento se degrada al ver los recursos en Dynamic Media Classic. No almacene miles de recursos en una carpeta. En su lugar, desarrolle una jerarquía organizativa con menos de 500 recursos o carpetas dentro de una rama determinada de la jerarquía. Este no es un requisito estricto, pero ayuda a mantener tiempos de respuesta aceptables al ver o buscar recursos. De hecho, la recomendación es crear jerarquías anchas y superficiales en lugar de estrechas y profundas.
 
-La forma más sencilla de crear las carpetas es cargar toda la estructura de carpetas mediante FTP y activar la opción **Incluir subcarpetas**. Esta opción hace que Dynamic Media Classic vuelva a crear la estructura de carpetas en el sitio FTP de Dynamic Media Classic.
+La forma más sencilla de crear las carpetas es cargar toda la estructura de carpetas mediante FTP y habilitar la opción **Incluir subcarpetas**. Esta opción hace que Dynamic Media Classic vuelva a crear la estructura de carpetas en el sitio FTP de Dynamic Media Classic.
 
 Queremos que tenga en cuenta la estructura de carpetas antes de empezar a cargar todos los archivos, ya que es mucho más fácil organizar y administrar los archivos y carpetas localmente en el equipo que dentro de Dynamic Media Classic. Por ejemplo, solo puede arrastrar y soltar archivos, pero no carpetas completas, dentro de Dynamic Media Classic.
 
@@ -45,7 +45,7 @@ Para la estrategia de carpetas, considere lo que tiene sentido para su organizac
 
 La forma en que elija asignar un nombre a los archivos es quizás la decisión anticipada más importante que tomará con respecto a Dynamic Media Classic. Esto se debe a que todos los recursos de Dynamic Media Classic deben tener nombres únicos, independientemente de dónde se almacenen en la cuenta.
 
-Todas las direcciones URL y transacciones en Dynamic Media Classic están gobernadas por un ID de recurso, que es el identificador único de un recurso en la base de datos. Al cargar un archivo, el ID de recurso se crea tomando el nombre del archivo y eliminando la extensión. Por ejemplo, _896649.jpg_ obtiene el recurso _896649 de ID_.
+Todas las direcciones URL y transacciones en Dynamic Media Classic están gobernadas por un ID de recurso, que es el identificador único de un recurso en la base de datos. Al cargar un archivo, el ID de recurso se crea tomando el nombre del archivo y eliminando la extensión. Por ejemplo, _896649.jpg_ obtiene el recurso _ID 896649_.
 
 Reglas relativas a los ID de recurso:
 
@@ -61,7 +61,7 @@ La mayoría de los usuarios basan su convención de nombres en torno a su SKU in
 
 La estrategia de nomenclatura debe ser flexible para futuras expansiones, de modo que pueda evitar tener que cambiar el nombre después de iniciar. Estas son algunas estrategias de nomenclatura típicas:
 
-**No hay imágenes alternativas.** En esta situación, solo tiene una imagen por producto y no hay vistas alternativas o de color. Asigne un nombre estricto a cada imagen según su SKU único o número de ID de producto. Cuando se carga la página, la plantilla de página llama al ID del recurso con el mismo número de SKU.
+**No hay imágenes alternativas.** En este escenario, solo tiene una imagen por producto y no hay vistas alternativas o de color. Asigne un nombre estricto a cada imagen según su SKU único o número de ID de producto. Cuando se carga la página, la plantilla de página llama al ID del recurso con el mismo número de SKU.
 
 | SKU/PID | Nombre de archivo | ID de recurso |
 | ------- | ---------- | -------- |
@@ -70,7 +70,7 @@ La estrategia de nomenclatura debe ser flexible para futuras expansiones, de mod
 
 Este es un sistema muy simple, y bueno si tiene necesidades modestas. Sin embargo, no es muy flexible. El hecho de que no tenga imágenes alternativas hoy no significa que no las tendrá mañana. El siguiente escenario ofrece más flexibilidad.
 
-**Uso de la imagen, vistas alternativas, versiones de color y muestras.** Esta estrategia permite vistas alternativas y/ o vistas de color, si las tiene. En lugar de asignar un nombre a la imagen solo después del SKU, se añade un modificador como &quot;_1&quot; y &quot;_2&quot; para vistas alternativas, y un código de color de &quot;_RED&quot; o &quot;_BLU&quot; para vistas de color. Si tiene imágenes en color y vistas alternativas para el mismo producto, quizás agregaría &quot;_RED_1&quot; y &quot;_RED_2&quot; para la primera y la segunda vista en color rojo. Las muestras recibirán el nombre del SKU, el código de color y la extensión &quot;_SW&quot;.
+**Con la imagen, vistas alternativas, versiones de color y muestras.** Esta estrategia permite vistas alternativas y/ o vistas de color, si las tiene. En lugar de asignar un nombre a la imagen solo después del SKU, se añade un modificador como &quot;_1&quot; y &quot;_2&quot; para vistas alternativas, y un código de color de &quot;_RED&quot; o &quot;_BLU&quot; para vistas de color. Si tiene imágenes en color y vistas alternativas para el mismo producto, quizás agregaría &quot;_RED_1&quot; y &quot;_RED_2&quot; para la primera y la segunda vista en color rojo. Las muestras recibirán el nombre del SKU, el código de color y la extensión &quot;_SW&quot;.
 
 | SKU/PID | Categoría | Nombre de archivo | ID de recurso |
 | ------- | ----------------------- | ------------------------------------------- | ------------------------------- |

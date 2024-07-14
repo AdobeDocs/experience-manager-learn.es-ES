@@ -26,13 +26,13 @@ Adobe Experience Manager introduce la compatibilidad del Admin Console AEM con i
 >[!VIDEO](https://video.tv.adobe.com/v/26170?quality=12&learn=on)
 
 * La compatibilidad con la autenticación IMS de Adobe Experience Manager solo es para usuarios &quot;internos&quot; (autores, revisores, administradores, desarrolladores, etc.), y no para usuarios finales externos como visitantes de sitios web.
-* [Admin Console](https://adminconsole.adobe.com/) AEM representa a clientes de Managed Services AEM como organizaciones de IMS y las instancias de como contextos de producto. Los administradores de sistemas y productos Admin Console pueden definir y administrar.
+* [Admin Console AEM](https://adminconsole.adobe.com/) representa a los clientes de Managed Services AEM como organizaciones de IMS y las instancias de como contextos de producto. Los administradores de sistemas y productos Admin Console pueden definir y administrar.
 * AEM Managed Services sincronizar su topología con Admin Console AEM, creando una asignación de 1 a 1 entre un contexto de producto y una instancia de.
 * El perfil de producto en el Admin Console AEM determina a qué instancias de puede acceder un usuario.
 * El soporte de autenticación incluye IDPs compatibles con SAML2 para SSO.
 * Solo se admiten Enterprise ID o Federated ID (para el SSO del cliente) (no se admiten los ID de Adobe personal).
 
-*&#42;AEM Esta función es compatible con el SP3 de la versión 6.4 y versiones posteriores para los clientes de Adobe Managed Services.*
+AEM *&#42;Esta característica es compatible con el SP3 de la versión 6.4 y posteriores de la versión para clientes de Adobe Managed Services.*
 
 ## Prácticas recomendadas {#best-practices}
 
@@ -44,4 +44,4 @@ En Admin Console, los usuarios deben tener acceso a través de grupos de usuario
 
 ### Aplicación de permisos en Adobe Experience Manager
 
-En Adobe Experience Manager, los grupos de usuarios sincronizados desde Adobe IMS deben agregarse a [AEM Grupos de usuarios proporcionados por el usuario](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=es)AEM , que vienen preconfiguradas con los permisos adecuados para ejecutar conjuntos específicos de tareas en el entorno de trabajo de la aplicación de la configuración de la. Los usuarios sincronizados desde Adobe IMS no deben añadirse directamente a [AEM Grupos de usuarios proporcionados por el usuario](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=es).
+En Adobe Experience Manager AEM AEM, los grupos de usuarios sincronizados desde Adobe IMS deben agregarse a término a [grupos de usuarios proporcionados por el usuario](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=es), que vienen preconfigurados con los permisos adecuados para ejecutar conjuntos específicos de tareas en el. AEM Los usuarios sincronizados desde Adobe IMS no deben agregarse directamente a [grupos de usuarios proporcionados por el usuario ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=es).

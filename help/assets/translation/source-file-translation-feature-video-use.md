@@ -1,6 +1,6 @@
 ---
-title: Uso de la traducción del archivo de origen con AEM Assets
-description: Los recursos de Adobe Experience Manager AEM () le permiten identificar recursos que comparten atributos comunes y marcarlos como relacionados mediante la nueva función Recursos relacionados. También permite a los usuarios definir una relación de origen/derivada entre recursos, lo que facilita a los usuarios identificar el origen de un recurso. La ejecución del flujo de trabajo de traducción en un recurso derivado recupera cualquier recurso al que haga referencia el archivo de origen y lo incluye para su traducción, lo que reduce los esfuerzos por mantener la traducción en varios sitios.
+title: Uso de la traducción de archivos Source con AEM Assets
+description: Adobe Experience Manager AEM () Assets permite identificar recursos que comparten atributos comunes y marcarlos como relacionados mediante la nueva función Assets relacionados. También permite a los usuarios definir una relación de origen/derivada entre recursos, lo que facilita a los usuarios identificar el origen de un recurso. La ejecución del flujo de trabajo de traducción en un recurso derivado recupera cualquier recurso al que haga referencia el archivo de origen y lo incluye para su traducción, lo que reduce los esfuerzos por mantener la traducción en varios sitios.
 version: 6.4, 6.5
 topic: Content Management
 feature: Translation
@@ -19,17 +19,17 @@ ht-degree: 0%
 
 ---
 
-# Uso de la traducción del archivo de origen con AEM Assets {#using-source-file-translation-with-aem-assets}
+# Uso de la traducción de archivos Source con AEM Assets {#using-source-file-translation-with-aem-assets}
 
-Los recursos de Adobe Experience Manager AEM () le permiten identificar recursos que comparten atributos comunes y marcarlos como relacionados mediante la nueva función Recursos relacionados. También permite a los usuarios definir una relación de origen/derivada entre recursos, lo que facilita a los usuarios identificar el origen de un recurso. La ejecución del flujo de trabajo de traducción en un recurso derivado recupera cualquier recurso al que haga referencia el archivo de origen y lo incluye para su traducción, lo que reduce los esfuerzos por mantener la traducción en varios sitios.
+Adobe Experience Manager AEM () Assets permite identificar recursos que comparten atributos comunes y marcarlos como relacionados mediante la nueva función Assets relacionados. También permite a los usuarios definir una relación de origen/derivada entre recursos, lo que facilita a los usuarios identificar el origen de un recurso. La ejecución del flujo de trabajo de traducción en un recurso derivado recupera cualquier recurso al que haga referencia el archivo de origen y lo incluye para su traducción, lo que reduce los esfuerzos por mantener la traducción en varios sitios.
 
-## Administración de archivos de origen de recursos multisitio {#multisite-asset-source-file-management}
+## Administración de archivos de Source de recursos multisitio {#multisite-asset-source-file-management}
 
 >[!VIDEO](https://video.tv.adobe.com/v/18331?quality=12&learn=on)
 
-Los recursos relacionados ayudan a los usuarios a administrar mejores recursos de vínculos cruzados con características compartidas, propiedades y flujos de trabajo optimizados:
+Assets relacionado ayuda a los usuarios a administrar mejores recursos de vínculos cruzados con características compartidas, propiedades y flujos de trabajo optimizados:
 
-* Nueva capacidad Recursos relacionados para relacionar manualmente recursos con características similares o que pertenecen a la misma campaña o proyecto
+* Nueva capacidad de Assets relacionado para relacionar manualmente recursos con características similares o que pertenecen a la misma campaña o proyecto
 * El usuario puede ver los archivos relacionados de un recurso en Ver propiedades. Un usuario puede navegar a los archivos relacionados desde la ventana de vista de propiedades.
 * Si las propiedades de dos recursos relacionados han cambiado, los usuarios pueden anular la relación de estos recursos mediante la opción Anular relación.
 * Cuando intenta eliminar un recurso relacionado, aparece un mensaje de advertencia si tiene otros recursos relacionados.

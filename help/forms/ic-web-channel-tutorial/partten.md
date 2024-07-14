@@ -27,7 +27,7 @@ ht-degree: 0%
 
 * Abra el documento 401KStatement en modo de edición.
 
-**Configurar el área de destino de LeftPanel**
+**Configurar área de destino de LeftPanel**
 
 * Pulse en el área de destino LeftPanel en el lado derecho y haga clic en el icono &quot;+&quot; para que aparezca el cuadro de diálogo Insertar componente.
 
@@ -37,9 +37,9 @@ ht-degree: 0%
 
 * Seleccione el icono &quot;lápiz&quot; para editar el texto predeterminado.
 
-* Reemplace el texto predeterminado por &quot;**Su Perspectiva de Ingresos para Jubilados&quot;**
+* Reemplace el texto predeterminado por &quot;**Su previsión de ingresos de jubilación&quot;**
 
-**Configurar el área de destino de RightPanel**
+**Configurar área de destino de RightPanel**
 
 * Pulse en el área de destino RightPanel en el lado derecho y haga clic en el icono &quot;+&quot; para que aparezca el cuadro de diálogo Insertar componente.
 
@@ -49,23 +49,23 @@ ht-degree: 0%
 
 * Seleccione el icono &quot;lápiz&quot; para editar el texto predeterminado.
 
-* Reemplace el texto predeterminado por &quot;**Ingresos de jubilación mensuales estimados&quot;**
+* Reemplace el texto predeterminado por &quot;**Ingresos mensuales estimados para la jubilación&quot;**
 
 ## Añadir Fragmento de Documento de Perspectiva de Ingresos de Jubilación {#add-retirement-income-outlook-document-fragment}
 
-* Haga clic en el icono Recursos y aplique el filtro para mostrar los recursos de tipo Fragmentos de documento. Arrastre y suelte el fragmento de documento RetirementIncomeOutlook en el área de destino del panel izquierdo.
+* Haga clic en el icono de Assets y aplique el filtro para mostrar recursos de tipo &quot;Fragmentos de documento&quot;. Arrastre y suelte el fragmento de documento RetirementIncomeOutlook en el área de destino del panel izquierdo.
 
-* Puede consultar [a esta página](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/partseven.html) al agregar fragmento de documento a las áreas de contenido.
+* Puede hacer referencia a [esta página](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/partseven.html) al agregar fragmento de documento a las áreas de contenido.
 
 ## Agregar gráfico de ingresos mensuales estimados {#adding-estimated-monthly-income-chart}
 
 * Haga clic en el área de destino de RightPanel en el lado derecho. Haga clic en el icono &quot;+&quot; para insertar el componente de gráfico. Utilizaremos un gráfico de columnas para mostrar el ingreso mensual estimado. Pulse con cuidado el componente de gráfico recién insertado. Seleccione el icono &quot;Llave inglesa&quot; para abrir la hoja de propiedades de configuración. Configure el gráfico con las siguientes propiedades, como se muestra en la captura de pantalla siguiente.
 
-**AEM Forms 6.4: Configuración del gráfico de columnas de ingresos mensuales estimados**
+**AEM Forms 6.4 - Configuración del gráfico de columnas de ingresos mensuales estimados**
 
-![form64](assets/estimatedmonthlyincomechart.png)
+![formulario64](assets/estimatedmonthlyincomechart.png)
 
-**AEM Forms 6.5: Configuración del gráfico de columnas de ingresos mensuales estimados**
+**AEM Forms 6.5 - Configuración del gráfico de columnas de ingresos mensuales estimados**
 
 ![forms65](assets/estimatedmonthlyincomechart65.PNG)
 

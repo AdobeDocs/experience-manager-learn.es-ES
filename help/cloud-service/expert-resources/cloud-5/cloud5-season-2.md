@@ -1,6 +1,6 @@
 ---
 title: Cloud 5 - Temporada 2
-description: La segunda temporada le permite obtener información sobre Adobe Experience Manager AEM () as a Cloud Service de los propios ingenieros expertos de Adobe que lo construyen y de los servicios expertos que lo entregan.
+description: La segunda temporada le permite obtener información sobre el as a Cloud Service de Adobe Experience Manager AEM () de los propios ingenieros expertos de Adobe que lo construyen y de los servicios expertos que lo entregan.
 sub-product: Experience Manager Sites, Experience Manager Cloud Manager, Experience Manager Assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
@@ -19,11 +19,11 @@ ht-degree: 1%
 
 ## Introducción
 
-AEM Bienvenidos a la segunda temporada de Cloud 5 Series de Ingeniería de la. Uno de los principales problemas en la fase de implementación de cualquier producto es tener suficientes muestras de código o demostraciones en directo de esas muestras, herramientas o API. AEM El objetivo de esta serie es proporcionar información útil acerca de las as a Cloud Service en 5 minutos o menos.
+AEM Bienvenidos a la segunda temporada de Cloud 5 Series de Ingeniería de la. Uno de los principales problemas en la fase de implementación de cualquier producto es tener suficientes muestras de código o demostraciones en directo de esas muestras, herramientas o API. El objetivo de esta serie es ofrecer información útil sobre AEM as a Cloud Service en 5 minutos o menos.
 
 ## Cuadro de sugerencias
 
-Visite la [Cuadro de sugerencias](https://forms.office.com/r/74P5Xz4UH0) para enviar ideas de temas.
+Visite [Cuadro de sugerencias](https://forms.office.com/r/74P5Xz4UH0) para enviar ideas sobre temas.
 
 ## Temporada 2
 
@@ -90,7 +90,7 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
                  <img alt="Inicializador de repositorios (repoinit)" src="./imgs/s2/004-thumb.png"/>
             </a>
             <div>
-                  <a href="season-2/cloud5-repoinit.md"><strong>Inicializador del repositorio de Sling</strong></a>
+                  <a href="season-2/cloud5-repoinit.md"><strong>Inicializador de repositorio de Sling</strong></a>
                <br/><em>con Darin Kuntze y James Talbot, arquitectos sénior de la nube</em>
             </div>
             <p>
@@ -108,7 +108,7 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
       </div>
       <p>
          <br/>
-             AEM Explore las áreas para optimizar la caché y acelerar la ejecución del sitio en el as a Cloud Service de la.
+             Explore áreas para optimizar la caché y acelerar la ejecución del sitio en AEM as a Cloud Service.
       </p>
    </td> 
   </tr>
@@ -123,7 +123,7 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
       </div>
       <p>
         <br/>
-         AEM Comprensión rápida de las cosas que ayudarán a acelerar el desarrollo de reescritura y la optimización en el as a Cloud Service de la.
+         Conocimiento rápido de las cosas que le ayudarán a acelerar el desarrollo y la optimización de la reescritura en AEM as a Cloud Service.
       </p>
      </td>   
      <td>
@@ -145,11 +145,11 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
             </a>
       <div>
             <a href="season-2/cloud5-mocm-unit-tests.md"><strong>Misterios de Cloud Manager... Pruebas unitarias</strong></a>
-         <br/><em>con Darin Kuntze y Bryan Stopp, arquitectos sénior de la nube</em>
+         <br/><em>con Darin Kuntze y Bryan Stopp, arquitectos sénior en la nube</em>
       </div>
       <p>
         <br/>
-        AEM Darin y Bryan analizan cómo Cloud Manager integra la ejecución de pruebas unitarias y la creación de informes de cobertura de código en su canalización de CI/CD para ayudar a alentar y promover las prácticas recomendadas de prueba de unidades de código de.
+        Darin y Bryan analizan cómo Cloud Manager AEM integra la ejecución de pruebas unitarias y la creación de informes de cobertura de código en su canalización de CI/CD para ayudar a fomentar y promocionar las prácticas recomendadas de prueba de unidades de código de.
       </p>
    </td> 
   </tr>
@@ -160,10 +160,10 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
                </a>
             <div>
                 <a href="season-2/cloud5-mocm-functional-tests.md"><strong>Misterios de Cloud Manager... Pruebas funcionales</strong><br/></a>        
-                <em>con Darin Kuntze y Bryan Stopp, arquitectos sénior de la nube</em>
+                <em>con Darin Kuntze y Bryan Stopp, arquitectos sénior en la nube</em>
             </div>
             <p><br/>
-                AEM Darin y Bryan analizan diferentes tipos de pruebas funcionales integradas en el proceso de implementación as a Cloud Service de la para garantizar la calidad y fiabilidad de su código.
+                Darin y Bryan analizan diferentes tipos de pruebas funcionales integradas en el proceso de implementación de AEM as a Cloud Service para garantizar la calidad y fiabilidad de su código.
             </p>
         </td>
         <td></td>

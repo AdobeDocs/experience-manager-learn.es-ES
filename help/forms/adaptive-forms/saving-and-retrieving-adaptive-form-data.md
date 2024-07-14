@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Este artículo le guiará por los pasos necesarios para guardar y recuperar datos de formulario adaptables de la base de datos. La base de datos MySQL se utilizó para almacenar los datos del formulario adaptable. En un nivel superior, los siguientes son los pasos para lograr el caso de uso:
 
-* [Configurar fuente de datos](#Configure-Data-Source)
+* [Configuración de Data Source](#Configure-Data-Source)
 * [Crear servlet para escribir datos en la base de datos](#create-servlet)
 * [Cree el servicio OSGI para recuperar los datos almacenados](#create-osgi-service)
 * [Crear biblioteca de cliente](#create-client-library)
@@ -28,7 +28,7 @@ Este artículo le guiará por los pasos necesarios para guardar y recuperar dato
 * [Demostración de capacidades](#capability-demo)
 * [Implementación en el servidor](#deploy-on-your-server)
 
-## Configurar fuente de datos {#Configure-Data-Source}
+## Configuración de Data Source {#Configure-Data-Source}
 
 La fuente de datos obtenida de una conexión Apache Sling está configurada para que apunte a la base de datos que se utilizará para almacenar los datos del formulario adaptable. La siguiente captura de pantalla muestra la configuración de mi instancia. Las siguientes propiedades se pueden copiar y pegar
 
@@ -38,7 +38,7 @@ La fuente de datos obtenida de una conexión Apache Sling está configurada para
 
 * `JDBC Connection URL:jdbc:mysql://localhost:3306/aemformstutorial`
 
-![connectionpool](assets/storingdata.PNG)
+![grupo de conexión](assets/storingdata.PNG)
 
 ### Crear servlet {#create-servlet}
 

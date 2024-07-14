@@ -86,7 +86,7 @@ Algunos ejemplos de código que suelen incluirse en un módulo principal son:
 * Iniciadores de flujo de trabajo
 * Elementos de diseño comunes que se utilizan en los sitios
 
-*Arquitectura de proyecto modular*
+*Arquitectura modular del proyecto*
 
 Esto no elimina la necesidad de que varios equipos dependan y puedan actualizar el mismo conjunto de código. Al crear un proyecto principal, hemos reducido el tamaño del código base que se comparte entre equipos, lo que disminuye, pero no elimina la necesidad de compartir recursos.
 
@@ -110,7 +110,7 @@ Como es una ruta del sistema global y no es específica de un sitio, el siguient
 
 ### Superposiciones {#overlays}
 
-AEM AEM Las superposiciones se utilizan frecuentemente para ampliar o reemplazar la funcionalidad de la aplicación de forma predeterminada, pero el uso de una superposición afecta a toda la aplicación de la aplicación (es decir, cualquier cambio de funcionalidad superpuesta está disponible para todos los inquilinos). Esto sería aún más complicado si los inquilinos tuvieran diferentes requisitos para la superposición. AEM Lo ideal sería que los grupos empresariales trabajaran juntos para acordar la funcionalidad y el aspecto de las consolas administrativas de la administración de la.
+AEM AEM Las superposiciones se utilizan frecuentemente para ampliar o reemplazar la funcionalidad de la aplicación de forma predeterminada, pero el uso de una superposición afecta a toda la aplicación de la aplicación (es decir, cualquier cambio de funcionalidad superpuesta está disponible para todos los inquilinos). Esto sería aún más complicado si los inquilinos tuvieran diferentes requisitos para la superposición. AEM Lo ideal sería que los grupos empresariales trabajaran juntos para acordar la funcionalidad y el aspecto de las consolas administrativas de las que se dispone en la administración de los usuarios de la red de distribución de la información y las comunicaciones.
 
 Si no se puede llegar a un consenso entre las distintas unidades de negocio, una posible solución sería simplemente no utilizar superposiciones. En su lugar, cree una copia personalizada de la funcionalidad y expóngala a través de una ruta diferente para cada inquilino. Esto permite que cada inquilino tenga una experiencia de usuario completamente diferente, pero este método también aumenta el coste de la implementación y los esfuerzos de actualización posteriores.
 

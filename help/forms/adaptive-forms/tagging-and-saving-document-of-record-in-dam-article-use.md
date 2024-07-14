@@ -168,16 +168,16 @@ Para que este ejemplo funcione en su sistema, siga los pasos que se indican a co
 
 * Haga clic en Crear | Cargue y cargue el archivo tag-and-store-in-dam-adaptive-form.zip
 
-* [Importar los recursos del artículo](assets/tag-and-store-in-dam-assets.zip) AEM uso del administrador de paquetes
-* Abra el [formulario de ejemplo en modo de vista previa](http://localhost:4502/content/dam/formsanddocuments/tagandstoreindam/jcr:content?wcmmode=disabled). **Rellene todos los campos** y envíe el formulario.
-* [Vaya a la carpeta Máximo en DAM](http://localhost:4502/assets.html/content/dam/Peak). Debería ver el DoR en la carpeta Pico. Compruebe las propiedades del documento. Debe etiquetarse adecuadamente.
+* AEM [Importe los recursos del artículo](assets/tag-and-store-in-dam-assets.zip) mediante el administrador de paquetes de la
+* Abrir el [formulario de ejemplo en el modo de vista previa](http://localhost:4502/content/dam/formsanddocuments/tagandstoreindam/jcr:content?wcmmode=disabled). **Rellene todos los campos** y envíe el formulario.
+* [Vaya a la carpeta Peak en DAM](http://localhost:4502/assets.html/content/dam/Peak). Debería ver el DoR en la carpeta Pico. Compruebe las propiedades del documento. Debe etiquetarse adecuadamente.
 Felicitaciones!! La muestra se ha instalado correctamente en el sistema
 
-* Vamos a explorar la [workflow](http://localhost:4502/editor.html/conf/global/settings/workflow/models/TagAndStoreDoRinDAM.html) que se activa al enviar el formulario.
+* Exploremos el [flujo de trabajo](http://localhost:4502/editor.html/conf/global/settings/workflow/models/TagAndStoreDoRinDAM.html) que se activa al enviar el formulario.
 * El primer paso del flujo de trabajo crea un nombre de archivo único concatenando el nombre del solicitante y el condado de residencia.
 * El segundo paso del flujo de trabajo pasa la jerarquía de etiquetas y los elementos de los campos de formulario que deben etiquetarse. El paso Procesar extrae el valor de los datos enviados y construye el título de la etiqueta que necesita etiquetar el documento.
 * Si desea almacenar el documento de registro en una carpeta diferente de DAM, especifique la ubicación de la carpeta mediante las propiedades de configuración especificadas en la captura de pantalla siguiente.
 
 Los otros dos parámetros son específicos del DoR y de la ruta del archivo de datos, tal como se especifican en las opciones de envío del formulario adaptable. Asegúrese de que los valores que especifique aquí coincidan con los valores especificados en las opciones de envío del formulario adaptable.
 
-![Etiqueta Dor](assets/tag_dor_service_configuration.gif)
+![Puerta de etiqueta](assets/tag_dor_service_configuration.gif)

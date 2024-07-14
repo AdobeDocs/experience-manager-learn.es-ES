@@ -1,6 +1,6 @@
 ---
 title: Analizador de preparación y prácticas recomendadas
-description: Descubra cómo el Analizador de prácticas recomendadas puede ayudarle a preparar su aplicación para que se transfiera al Experience Manager as a Cloud Service
+description: Descubra cómo el Analizador de prácticas recomendadas puede ayudarle a preparar su aplicación para que se mueva al as a Cloud Service Experience Manager
 version: Cloud Service
 feature: Migration
 topic: Migration, Upgrade
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Analizador de preparación y prácticas recomendadas
 
-AEM Descubra cómo el Analizador de prácticas recomendadas puede ayudarle a prepararse para pasar de un entorno local o de Adobe Managed Services de a un entorno as a Cloud Service para Experience Manager.
+AEM Obtenga información sobre cómo el Analizador de prácticas recomendadas puede ayudarle a prepararse para pasar de un Adobe local o local de Managed Services a un as a Cloud Service en Experience Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336690?quality=12&learn=on)

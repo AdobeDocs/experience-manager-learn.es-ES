@@ -1,6 +1,6 @@
 ---
 title: Cree su primer script en AEM Forms Designer
-description: Vídeo corto que describe la creación y prueba de scripts en AEM Forms Designer
+description: Breve vídeo que describe la creación y prueba de scripts en AEM Forms Designer
 version: 6.5
 feature: Forms Designer,Designer
 topic: Development

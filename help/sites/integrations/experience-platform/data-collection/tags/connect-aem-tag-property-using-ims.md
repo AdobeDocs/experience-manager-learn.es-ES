@@ -26,18 +26,18 @@ AEM Obtenga información sobre cómo conectarse con la propiedad de etiquetas me
 
 ## Crear o reutilizar la configuración de IMS
 
-La configuración de IMS que utiliza el proyecto de la consola de Adobe Developer AEM es necesaria para integrar la propiedad de etiquetas con la propiedad de etiquetas recién creada. AEM Esta configuración permite a los usuarios comunicarse con la aplicación Etiquetas mediante las API de etiquetas y el IMS gestiona el aspecto de seguridad de esta integración.
+La configuración de IMS que utiliza el proyecto de Adobe Developer Console AEM es necesaria para integrar la propiedad de etiquetas con la propiedad de etiquetas recién creada. AEM Esta configuración permite a los usuarios comunicarse con la aplicación Etiquetas mediante las API de etiquetas y el IMS gestiona el aspecto de seguridad de esta integración.
 
-AEM Siempre que se aprovisiona un entorno de Cloud Service de as a, se crean automáticamente algunas configuraciones de IMS, como Asset compute, Adobe Analytics y etiquetas. El creado automáticamente **etiquetas en Adobe Experience Platform** AEM Se puede utilizar la configuración de IMS o se debe crear una nueva configuración de IMS si utiliza el entorno 6.X de la versión de.
+AEM Siempre que se aprovisiona un entorno de Cloud Service de as a, se crean automáticamente algunas configuraciones de IMS, como Asset compute, Adobe Analytics y etiquetas. Se pueden usar las **etiquetas creadas automáticamente en la configuración de IMS de Adobe Experience Platform AEM**, o se debe crear una nueva configuración de IMS si usa un entorno de 6.X en el que se usa la configuración de.
 
-Revisión creada automáticamente **etiquetas en Adobe Experience Platform** Configuración de IMS mediante los siguientes pasos.
+Revise las **etiquetas creadas automáticamente en la configuración de Adobe Experience Platform** IMS siguiendo los pasos siguientes.
 
-1. AEM En el Autor de la, abra **Herramientas** menú
+1. AEM En el Autor de la, abra el menú **Herramientas**
 1. En la sección Seguridad, seleccione Configuraciones de IMS de Adobe.
-1. Seleccione el **Adobe Launch** y haga clic en **Propiedades**, revise los detalles desde **Certificado** y **Cuenta** pestañas. Luego haga clic en **Cancelar** para volver sin modificar ningún detalle creado automáticamente.
-1. Seleccione el **Adobe Launch** y esta vez haga clic en **Comprobar estado**, debería ver el **Correcto** mensaje como el siguiente.
+1. Seleccione la tarjeta **Adobe Launch** y haga clic en **Propiedades**, revise los detalles de las pestañas **Certificado** y **Cuenta**. A continuación, haga clic en **Cancelar** para volver sin modificar los detalles creados automáticamente.
+1. Seleccione la tarjeta **Adobe Launch** y esta vez haga clic en **Comprobar estado**. Debería ver el mensaje **Éxito** como el que se muestra a continuación.
 
-   ![Configuración de IMS correcta de etiquetas](assets/adobe-launch-healthy-ims-config.png)
+   ![Etiquetas con configuración de IMS correcta](assets/adobe-launch-healthy-ims-config.png)
 
 ## Siguientes pasos
 

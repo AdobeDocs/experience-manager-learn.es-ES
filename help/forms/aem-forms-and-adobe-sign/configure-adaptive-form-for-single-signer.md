@@ -25,7 +25,7 @@ En el vídeo se explican los distintos pasos necesarios para configurar un formu
 
 >[!VIDEO](https://video.tv.adobe.com/v/39475?quality=12&learn=on)
 
-Los recursos relacionados con este vídeo se pueden descargar desde el siguiente vínculo
+Assets relacionado con este vídeo se puede descargar desde el siguiente vínculo
 
 * [Cambio Del Formulario Del Beneficiario](assets/change-of-beneficiary-form.zip)
 

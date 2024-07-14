@@ -19,11 +19,11 @@ ht-degree: 0%
 
 # Crear y configurar una cuenta de Dynamics
 
-[Iniciar sesión](https://dynamics.microsoft.com/en-us/) a su cuenta de Microsoft Dynamics. Puede crear un [cuenta de prueba gratuita](https://dynamics.microsoft.com/en-us/dynamics-365-free-trial/) si no tiene una cuenta de Dynamics.
+[Inicie sesión](https://dynamics.microsoft.com/en-us/) en su cuenta de Microsoft Dynamics. Puede crear una [cuenta de prueba gratuita](https://dynamics.microsoft.com/en-us/dynamics-365-free-trial/) si no tiene una cuenta de Dynamics.
 
 >[!NOTE]
 >Sustituya el servidor y el número de puerto en el URI siguiente para obtener el URI de reintento. Necesitará este URI de reintento al configurar la aplicación con Azure Active Directory.
->https://[server]:[puerto]/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
+>https://[servidor]:[puerto]/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
 
 El siguiente vídeo lo acompaña durante los pasos para registrar Microsoft Dynamics con Azure Active Directory.
 

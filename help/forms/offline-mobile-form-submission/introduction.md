@@ -26,7 +26,7 @@ Para llevar a cabo este caso de uso, debemos realizar los siguientes pasos:
 * Gestionar el envío de PDF desde Acrobat/Reader
 * Flujo de trabajo de Adobe Experience Manager AEM de déclencheur () para revisar el PDF enviado
 
-Este tutorial recorre los pasos necesarios para realizar el caso de uso anterior. El código de muestra y los recursos relacionados con este tutorial son [disponible aquí.](part-four.md)
+Este tutorial recorre los pasos necesarios para realizar el caso de uso anterior. El código de muestra y los recursos relacionados con este tutorial están [disponibles aquí.](part-four.md)
 
 El siguiente vídeo le ofrece una descripción general del caso de uso
 

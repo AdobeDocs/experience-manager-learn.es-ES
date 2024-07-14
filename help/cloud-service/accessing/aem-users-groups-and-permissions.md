@@ -33,4 +33,4 @@ Adobe Experience Manager se basa en los usuarios, los grupos de usuarios y los p
 ## Recursos adicionales
 
 + [Compatibilidad con IMS para Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=es)
-+ [AEM Grupos de usuarios proporcionados por el usuario y sus permisos](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#built-in-users-and-groups)
++ AEM [Grupos de usuarios proporcionados por el usuario y sus permisos](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#built-in-users-and-groups)

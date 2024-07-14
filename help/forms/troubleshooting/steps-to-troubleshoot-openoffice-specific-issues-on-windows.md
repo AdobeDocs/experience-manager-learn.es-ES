@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Pasos para solucionar errores específicos de OpenOffice en una instalación de Windows para la conversión a PDF de AEM Forms
 
-*Este vídeo muestra el proceso de solución de problemas de errores específicos de OpenOffice en una configuración de Windows.*
+*Este vídeo muestra el proceso de solución de problemas de errores específicos de OpenOffice en una instalación de Windows.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335481?quality=12&learn=on)

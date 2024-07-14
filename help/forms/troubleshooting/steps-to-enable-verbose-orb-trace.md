@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Pasos para habilitar el seguimiento detallado de ORB
 
-*Este vídeo muestra los pasos para habilitar un seguimiento detallado de ORB.*
+*Este vídeo muestra los pasos para habilitar el seguimiento detallado de ORB.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335526?quality=12&learn=on)

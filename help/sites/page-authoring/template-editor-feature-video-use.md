@@ -27,18 +27,18 @@ Las plantillas editables permiten a los autores especializados crear y actualiza
 
 Las plantillas editables son la recomendación para crear una nueva AEM Sites.
 
-**Experiencia de autor coherente** - Las mejoras en la creación de AEM Sites se transfieren a la edición de plantillas, incluido el modo de diseño en línea y el panel del árbol de contenido.
+**Experiencia de autor coherente**: Las mejoras en la creación de AEM Sites se transfieren a la edición de plantillas, incluido el modo de diseño en línea y el panel del árbol de contenido.
 
-**Configuraciones de directivas avanzadas** : A continuación se destacan algunas configuraciones de directiva avanzadas disponibles con las plantillas editables:
+**Configuraciones de directivas avanzadas**: a continuación se destacan algunas configuraciones de directivas avanzadas disponibles con plantillas editables:
 
-* **Contenedor de diseño** : capacidad para configurar los componentes permitidos, administrar la asignación de arrastrar y soltar de recursos y las columnas de cuadrícula interactiva.
-* **Componente Texto** : capacidad para configurar complementos del Editor de texto enriquecido con una nueva interfaz de usuario y reutilizar directivas RTE en todas las plantillas.
-* **Componente de imagen** : capacidad para activar o desactivar funciones como el recorte, la carga de archivos de escritorio con una nueva interfaz de usuario y reutilizar las políticas de imagen en todas las plantillas.
+* **Contenedor de diseño**: capacidad para configurar componentes permitidos, administrar la asignación de arrastrar y soltar de Assets y las columnas de cuadrícula interactiva.
+* **Componente Texto**: capacidad para configurar complementos del Editor de texto enriquecido con una nueva interfaz de usuario y reutilizar directivas RTE en todas las plantillas.
+* **Componente de imagen**: capacidad para activar o desactivar características como el recorte, la carga de archivos en el escritorio con una nueva interfaz de usuario y la reutilización de directivas de imagen en todas las plantillas.
 
-Las plantillas editables se encuentran en **Herramientas** `>` **General** `>` **Plantillas**.\
+Se pueden encontrar plantillas editables en **Herramientas** `>` **General** `>` **Plantillas**.\
 AEM URL de plantillas editables (instancia local de): [http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
 
 ## Recursos adicionales {#additional-resources}
 
 * [Plantillas de página editables: documentación](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=es)
-* [Creación de plantillas de página: documentación](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/templates.html)
+* [Creando plantillas de página - Documentación](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/templates.html)

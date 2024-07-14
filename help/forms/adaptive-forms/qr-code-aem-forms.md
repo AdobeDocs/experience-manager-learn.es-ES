@@ -9,7 +9,8 @@ role: Developer
 level: Beginner
 jira: KT-15603
 last-substantial-update: 2024-05-28T00:00:00Z
-source-git-commit: e20d9f80cc7e1c6f5f6c81233d9a5178551e2fa2
+exl-id: 0c6079f4-601e-4a82-976c-71dbb2faa671
+source-git-commit: 1977e5103de72a0db5f446eba539d4ae5b810e74
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 0%
@@ -20,7 +21,7 @@ ht-degree: 0%
 
 La incrustación de un código QR en un formulario adaptable puede mejorar en gran medida la comodidad y la eficacia para que los usuarios accedan a información adicional relacionada con el formulario.
 
-El componente de muestra utiliza [QRCode.js](https://davidshimjs.github.io/qrcodejs/).
+El componente de ejemplo usa [QRCode.js](https://davidshimjs.github.io/qrcodejs/).
 
 QRCode.js es una biblioteca javascript para realizar QRCode. Es compatible con Cross-browser with HTML5 Canvas y table tag en DOM.
 
@@ -44,7 +45,7 @@ La &quot;url&quot; es la url que debe incrustarse en el código qr. Esta URL se 
 
 
 
-El siguiente código utiliza el método makeCode de la biblioteca QRCode.js en la biblioteca de cliente del componente qr-code-generator. El código QR generado se anexa al div identificado por id **&quot;qrcode&quot;**.
+El código siguiente utiliza el método makeCode de la biblioteca QRCode.js en la biblioteca de cliente del componente qr-code-generator. El código QR generado se anexa al div identificado por el ID **&quot;qrcode&quot;**.
 
 ```javascript
 $(document).ready(function()
@@ -59,6 +60,4 @@ $(document).ready(function()
 
 * [Descargue e instale el componente de código QR mediante el Administrador de paquetes.](assets/qrcode.zip)
 * [Descargue e instale el formulario adaptable de ejemplo mediante el Administrador de paquetes.](assets/form-with-qr-code.zip)
-* [Previsualización del formulario](http://localhost:4502/content/dam/formsanddocuments/qrcode/w9form/jcr:content?wcmmode=disabled). La sección de ayuda del formulario tiene el código QR.
-
-
+* [Vista previa del formulario](http://localhost:4502/content/dam/formsanddocuments/qrcode/w9form/jcr:content?wcmmode=disabled). La sección de ayuda del formulario tiene el código QR.

@@ -1,6 +1,6 @@
 ---
 title: AEM Cloud 5 CDN, parte 1
-description: AEM Esta es la primera parte de una explicación exhaustiva de la red de distribución de contenido (CDN) de as a Cloud Service.
+description: Esta es la parte 1 de una explicación detallada de la CDN de AEM as a Cloud Service.
 version: Cloud Service
 feature: Developer Tools
 role: Admin, Developer
@@ -20,13 +20,13 @@ ht-degree: 1%
 
 # AEM Cloud 5 CDN, parte 1
 
-AEM Esto es una profundización en la CDN proporcionada como parte de la as a Cloud Service, incluido de lo que es capaz y si debe traer su propia CDN. Esta es la parte 1 de 2.
+Se trata de una explicación exhaustiva de la CDN proporcionada como parte de AEM as a Cloud Service, incluido de lo que es capaz y si debe traer su propia CDN. Esta es la parte 1 de 2.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340760?quality=12&learn=on)
 
 ## Contenido cubierto en la primera parte de esta serie
 
-+ AEM DN DE CDA [Información general](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=es)
++ AEM DN [Información general](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=es)
 + Funcionalidades de Firewall de aplicaciones web (WAF)
 + Restricciones de IP
 + Protecciones DDOS

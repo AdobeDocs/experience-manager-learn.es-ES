@@ -21,7 +21,7 @@ Como líder en experiencia del cliente, sabemos lo difícil que puede ser para u
 
 La velocidad de contenido no es solo una herramienta. Tampoco es una característica.
 
-_La velocidad del contenido es el gas que alimenta el vehículo de personalización. La velocidad de contenido consiste en simplificar y volverse más eficiente para poder ofrecer experiencias personalizadas a escala._ - Monique Misrahi de T-Mobile
+_La velocidad de contenido es el gas que alimenta el vehículo de personalización. La velocidad de contenido consiste en simplificar y volverse más eficiente para poder ofrecer experiencias personalizadas a escala._ - Monique Misrahi de T-Mobile
 
 Se trata de una filosofía de contenido primordial que abarca un marco de trabajo a nivel empresarial que afecta a todas las partes de una organización empresarial, desde la creación, pasando por la administración, hasta la distribución.
 
@@ -62,7 +62,7 @@ Esto se debe a que la velocidad de conducción en CMS a nivel empresarial se tra
 
 Una y otra vez, hemos visto que el recorrido de un modelo en silo a uno flexible y rápido viene de esa voz inicial y poderosa en la dirección. Comprender que para abordar el ciclo de vida del contenido de una manera precisa una nueva imagen del mismo a través del equipo, desde el creador hasta el evaluador. Y ese punto de decisión, esa comprensión, de que impulsar el contenido no es una cuestión de qué herramienta, sino de cómo lo estamos concibiendo.
 
-_&quot;Cuando empiezas a pensar en el contenido de una manera diferente, traes a la mesa diferentes grupos que pueden no haber estado juntos. Desde el producto y el desarrollo hasta el diseño de experiencias dirigidas por el cliente, tiene diferentes partes para construir esas cosas. Para nosotros, internamente, el apoyo y la aceptación del liderazgo fue el factor más importante para nuestra transformación digital&quot;._ - Monique Misrahi, T-Mobile
+_&quot;Cuando empieza a pensar en el contenido de una manera diferente, trae a la mesa diferentes grupos que pueden no haber estado juntos. Desde el producto y el desarrollo hasta el diseño de experiencias dirigidas por el cliente, tiene diferentes partes para construir esas cosas. Para nosotros, internamente, el apoyo y la aceptación del liderazgo fue el factor más importante para nuestra transformación digital&quot;._ - Monique Misrahi, T-Mobile
 
 _&quot;El apoyo, la dirección y la visión del liderazgo fueron un factor crítico. Lo fantástico fue que nuestro liderazgo fue inclusivo y abierto a la aportación. Ellos escucharon&quot;._ - Amy Bergstrom, Deloitte
 
@@ -78,7 +78,7 @@ Para ilustrar este punto, veamos un ejemplo de una organización empresarial con
 
 La pregunta es, ¿vas a esperar a reimaginar el contenido hasta que todas las marcas estén operando de manera unificada? ¿Es prudente resolver el cambio para todos ellos?
 
-La respuesta es no. Esto aumentaría la complejidad. Además, muchos de los interesados se frustrarán con conversaciones interminables en torno a lo viejo, frustrando así los intentos de construir lo nuevo. Uno queda bloqueado en una conversación _acerca de_ cambiar, en lugar de hacerlo.
+La respuesta es no. Esto aumentaría la complejidad. Además, muchos de los interesados se frustrarán con conversaciones interminables en torno a lo viejo, frustrando así los intentos de construir lo nuevo. Uno queda bloqueado en una conversación _acerca de_ cambio, en lugar de hacerlo.
 
 Lo que se necesita es un marco tangible. Un nuevo paradigma para trabajar. Algo que la gente puede ver y sentir. En el pasado, el contenido puede haberse considerado una página, una campaña o cualquier cosa imaginada en singular. El cambio fundamental consiste en ver el contenido como contenido en sí mismo: para volver a utilizarlo, aplicarle un nuevo estilo y reciclarlo, y volver a enviarlo al equipo de creación. Los nuevos desarrollos básicos deben utilizarse para experiencias enriquecidas con objetivos.
 
@@ -103,7 +103,7 @@ Estos son cuatro hitos que se deben desarrollar durante la fase de ejecución:
 
 1. **Defina los fundamentos de su taxonomía global de organización.**
 
-   Cuando hablamos de taxonomía no solo nos referimos a la estructura de carpetas, sino que entendemos quién está creando qué y cuándo. Además, tendremos que tener en cuenta las [permiso diferente](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html?lang=en) estructuras que deberán diseñarse para cada tipo de autor.
+   Cuando hablamos de taxonomía no solo nos referimos a la estructura de carpetas, sino que entendemos quién está creando qué y cuándo. Además, tendremos que tener en cuenta las [diferentes estructuras de permisos](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html?lang=en) que se necesitarán para cada tipo de autor.
 
    En este punto, considere si desea un modelo de gobernanza centralizado o uno descentralizado. Por un lado, un modelo de gobernanza centralizada crea una estrategia taxonómica consolidada que ofrece un control de calidad más estricto y perspectivas de proceso que serían imposibles, o al menos difíciles en un marco descentralizado.
 
@@ -125,7 +125,7 @@ Estos son cuatro hitos que se deben desarrollar durante la fase de ejecución:
    * ¿A quién va a pertenecer qué contenido?
    * ¿Quién va a participar en la creación de estas experiencias y qué implica?
 
-1. **Racionalización y simplificación de conjuntos de herramientas**
+1. **Racionalizar y simplificar conjuntos de herramientas**
 
    A medida que evolucionan las herramientas, también debería evolucionar el proceso y los equipos. Pero esto puede no suceder de la noche a la mañana. Puede ser necesario un período de transición. Dedique tiempo a sentarse y definir cuáles son las herramientas adecuadas para entregar el contenido.
 
@@ -139,7 +139,7 @@ Estos son cuatro hitos que se deben desarrollar durante la fase de ejecución:
 
    Busque crear un equipo con directrices de uso claras, en lugar de diseñar para el &quot;edge&quot;. La belleza de la simplicidad está en el corazón de la velocidad de contenido. Y no olvide incluir equipos de Accesibilidad para todo lo que se diseñe y desarrolle. Un sistema de diseño necesita encontrar ese equilibrio entre satisfacer una experiencia muy particular y la flexibilidad para trabajar de manera sistemática dentro de un CMS empresarial. Los componentes principales y los sistemas de estilos son increíblemente adaptables a una miríada de experiencias y permitirán una libertad más que suficiente para satisfacer las ambiciones estéticas de los creadores. Sin embargo, es fundamental para la velocidad y la escala que se aplique un enfoque de sentido común al determinar la ejecución de una experiencia. Es necesario hacer malabarismos con las prioridades. Al diseñar un sistema, observe los fundamentos de la reutilización y la velocidad. La gran mayoría de las experiencias de un sitio deben ejecutarse con componentes OOTB y sistemas de estilos.
 
-   _&quot;Se necesita un cambio de mentalidad en torno al contenido. Muchos profesionales del contenido han trabajado desde la perspectiva de contenido específico del canal, de la marca o de una página para su carrera. Es hora de pensar de manera integral y dar tiempo para esa exploración&quot;._ - Monique Misrahi, T-Mobile
+   _&quot;Se necesita un cambio de mentalidad en el contenido. Muchos profesionales del contenido han trabajado desde la perspectiva de contenido específico del canal, de la marca o de una página para su carrera. Es hora de pensar de manera integral y dar tiempo para esa exploración&quot;._ - Monique Misrahi, T-Mobile
 
    _&quot;Tener una estrategia de contenido centralizada nos ayuda a evitar duplicaciones. No estamos saturando el mercado, no diciendo cosas diferentes sobre temas similares. Nos ayuda a optimizar nuestra biblioteca completa de contenido y a hablar con una sola voz en todo el mundo&quot;._ - Amy Bergstrom, Deloitte
 
@@ -147,9 +147,9 @@ Estos son cuatro hitos que se deben desarrollar durante la fase de ejecución:
 
 En general, hablando, es mejor seguir estas reglas generales:
 
-* Tener en cuenta no menos del 80 % de las experiencias [Componentes listos para usar](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) y [Sistemas de estilos](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=en). Gracias al testimonio del cliente, esto no solo creará una base más escalable que le permitirá aprovechar la hoja de ruta del producto, sino que también aumentará la velocidad en hasta un 50 %.
-* [Configurar plantillas editables](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en) y se aleja de las plantillas estáticas. Al configurar plantillas editables (necesarias para utilizar sistemas de estilos), es necesario asignar un autor de plantillas que controle los diferentes estilos disponibles para una página o sección del sitio web. Estas actualizaciones en la propia plantilla son bastante mínimas en términos de trabajo diario.
-* Uso [Fragmentos de experiencias](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=en) siempre que sea posible. Aunque el caso de uso general de los fragmentos de experiencias es para la distribución de varios canales, también se pueden utilizar de forma eficaz en todo el sitio para rellenar el contenido en una área a la vez en lugar de actualizar el contenido manualmente en varias áreas. Esto puede ahorrarle un tiempo y un esfuerzo excesivos y liberará al equipo de creación para trabajar en experiencias más específicas y enriquecidas.
+* Intente que no menos del 80% de las experiencias se guíen a través de [componentes predeterminados](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) y [sistemas de estilos](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=en). Gracias al testimonio del cliente, esto no solo creará una base más escalable que le permitirá aprovechar la hoja de ruta del producto, sino que también aumentará la velocidad en hasta un 50 %.
+* [Configure plantillas editables](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en) y aléjese de las plantillas estáticas. Al configurar plantillas editables (necesarias para utilizar sistemas de estilos), es necesario asignar un autor de plantillas que controle los diferentes estilos disponibles para una página o sección del sitio web. Estas actualizaciones en la propia plantilla son bastante mínimas en términos de trabajo diario.
+* Utilice [Fragmentos de experiencias](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=en) siempre que sea posible. Aunque el caso de uso general de los fragmentos de experiencias es para la distribución de varios canales, también se pueden utilizar de forma eficaz en todo el sitio para rellenar el contenido en una área a la vez en lugar de actualizar el contenido manualmente en varias áreas. Esto puede ahorrarle un tiempo y un esfuerzo excesivos y liberará al equipo de creación para trabajar en experiencias más específicas y enriquecidas.
 * Cree experiencias más completas. Al utilizar la regla 80/20 (por encima), una organización puede utilizar CSS específico y desarrollo back-end para experiencias seleccionadas en lugar de actualizaciones de mantenimiento comunes.
 * Elija una base escalable y realice un cambio de marca rápido. Los sistemas de estilos que se ejecutan en base a una implementación moderna pueden permitir un cambio de marca eficiente en toda la plataforma. La actualización de amplios sectores de contenido mediante el cambio de máscaras CSS permite realizar pruebas y validaciones rápidas y aumenta la calidad experiencial del sitio propio con un impacto directo en el ROI.
 
@@ -176,8 +176,8 @@ Estos son algunos problemas potenciales que se deben evitar:
    * ¿Estamos maximizando el alcance orgánico?
 * ¿La experiencia es accesible para todos?
 
-* Visualización de las soluciones en silo. AEM Por ejemplo, centrarse únicamente en el aspecto técnico de la implementación de la aplicación no permitirá obtener todos los beneficios empresariales. AEM En su lugar, recomendamos mirar los casos de uso y los escenarios empresariales, y luego girar hacia la arquitectura y el diseño, ya que esto proporcionará una mejor vista de las capacidades de la. Anurandha Pentareddy de Adobe comparte: _&quot;Una cosa que aconsejo es mirar sus objetivos de valor por adelantado para la plataforma que está implementando&quot;._
+* Visualización de las soluciones en silo. AEM Por ejemplo, centrarse únicamente en el aspecto técnico de la implementación de la aplicación no permitirá obtener todos los beneficios empresariales. AEM En su lugar, recomendamos mirar los casos de uso y los escenarios empresariales, y luego girar hacia la arquitectura y el diseño, ya que esto proporcionará una mejor vista de las capacidades de la. Anurandha Pentareddy de recursos compartidos de Adobe: _&quot;Una cosa que recomiendo es que observe sus objetivos de valor por adelantado para la plataforma que está implementando.&quot;_
 
-Para una discusión más detallada de la velocidad de contenido, escuche esta hora [mesa redonda](https://primetime.bluejeans.com/a2m/events/playback/e63686d4-158f-4f73-aea0-f03ebee4606d) con Monique Misrahi (T-Mobile), Amy Bergstrom (Deloitte) y Anuradha Pentareddy de Adobe.
+Para una discusión más detallada sobre la velocidad de contenido, escuchen esta [discusión de panel](https://primetime.bluejeans.com/a2m/events/playback/e63686d4-158f-4f73-aea0-f03ebee4606d) de una hora que incluye a Monique Misrahi (T-Mobile), Amy Bergstrom (Deloitte) y Anuradha Pentareddy, la Adobe.
 
-Obtenga más información sobre estrategia y liderazgo mental en [Éxito del cliente](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html) hub.
+Obtenga más información sobre estrategia y liderazgo mental en el centro de [Éxito del cliente](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html).

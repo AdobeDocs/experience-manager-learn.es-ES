@@ -31,7 +31,7 @@ Para el propósito de este artículo, estamos creando una plantilla personalizad
 
 ![appsfolder](assets/appsfolder_.png)
 
-El siguiente código enumera los distintos tipos de recursos que utilizan el componente Buscar y listar. Creamos elementos html independientes para cada tipo de recurso, como se muestra por tipo de datos = etiqueta &quot;videos&quot;. Para el tipo de recurso de &quot;vídeos&quot; se utiliza el &lt;video> para reproducir el vídeo en línea. Para el tipo de recurso de &quot;documentos de palabra&quot; utilizamos diferentes marcas html.
+El siguiente código enumera los distintos tipos de recursos que utilizan el componente Buscar y listar. Creamos elementos html independientes para cada tipo de recurso, como se muestra por tipo de datos = etiqueta &quot;videos&quot;. Para el tipo de recurso de &quot;vídeos&quot;, utilizamos el elemento &lt;vídeo> para reproducir el vídeo en línea. Para el tipo de recurso de &quot;documentos de palabra&quot; utilizamos diferentes marcas html.
 
 ```html
 <div class="__FP_boxes-container __FP_single-color">
@@ -75,7 +75,7 @@ El siguiente código enumera los distintos tipos de recursos que utilizan el com
 
 ## Configurar El Componente Buscar Y Listar {#configure-search-and-lister-component}
 
-Una vez definida la plantilla personalizada, ahora tenemos que asociarla con el componente &quot;Buscar y listar&quot;. Apunte al explorador [a esta dirección URL](http://localhost:4502/editor.html/content/AemForms/CustomPortal.html).
+Una vez definida la plantilla personalizada, ahora tenemos que asociarla con el componente &quot;Buscar y listar&quot;. Dirija su explorador [a esta dirección URL](http://localhost:4502/editor.html/content/AemForms/CustomPortal.html).
 
 Cambie al modo Diseño y configure el sistema de párrafos para incluir el componente Buscar y listar en el grupo de componentes permitidos. El componente Buscar y listar forma parte del grupo Servicios de documentos.
 
@@ -86,7 +86,7 @@ Abra las propiedades de configuración del componente Buscar y listar. Asegúres
 * /content/dam/VideosAndWordDocuments
 * /content/dam/formsanddocuments/assettypes
 
-![assetfolder](assets/selectingassetfolders.png)
+![carpeta de recursos](assets/selectingassetfolders.png)
 
 Vaya a la pestaña &quot;Mostrar&quot;. Aquí elegirá la plantilla en la que desea mostrar los recursos en el componente de búsqueda y lista.
 
@@ -103,13 +103,13 @@ Configure los tipos de recursos que desea enumerar en el portal. Para configurar
 
 La siguiente captura de pantalla muestra los tipos de recursos configurados para la lista
 
-![assettypes](assets/assettypes.png)
+![tipos de recurso](assets/assettypes.png)
 
-Ahora que ha configurado el componente de portal Buscar y listar, es hora de ver el listado en acción. Apunte al explorador [a esta dirección URL](http://localhost:4502/content/AemForms/CustomPortal.html?wcmmode=disabled). Los resultados deben ser similares a la imagen que se muestra a continuación.
+Ahora que ha configurado el componente de portal Buscar y listar, es hora de ver el listado en acción. Dirija su explorador [a esta dirección URL](http://localhost:4502/content/AemForms/CustomPortal.html?wcmmode=disabled). Los resultados deben ser similares a la imagen que se muestra a continuación.
 
 >[!NOTE]
 >
 >Si el portal enumera tipos de recursos personalizados en un servidor de publicación, asegúrese de conceder permiso de &quot;lectura&quot; al usuario de &quot;fd-service&quot; en el nodo **/apps/fd/fp/extensions/querybuilder**
 
-![assettypes](assets/assettypeslistings.png)
-[Descargue e instale este paquete mediante el administrador de paquetes.](assets/customassettypekt1.zip) Contiene documentos mp4 y word de ejemplo y archivos xdp que se utilizan como tipos de recursos para enumerarlos mediante el componente buscar y listar
+![tipos de recurso](assets/assettypeslistings.png)
+[Descargue e instale este paquete mediante el administrador de paquetes.](assets/customassettypekt1.zip): contiene documentos de ejemplo mp4 y word y archivos xdp que se utilizan como tipos de recursos para enumerarlos mediante el componente buscar y listar

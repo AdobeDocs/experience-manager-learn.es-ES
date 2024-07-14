@@ -14,7 +14,7 @@ exl-id: 4f08bc07-0c9c-42fc-af42-3d51af9f37c4
 source-git-commit: df15dc0426918a0e2263efe6fb0de953f49385df
 workflow-type: tm+mt
 source-wordcount: '332'
-ht-degree: 16%
+ht-degree: 18%
 
 ---
 
@@ -24,9 +24,9 @@ Aprenda a crear sitios web rápidamente con Edge Delivery Services.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427989/?learn=on)
 
-Revise la [documentación](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/overview) para obtener información detallada completa sobre los Edge Delivery Services y sus funcionalidades.
+Revise la [documentación](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/overview) para obtener información detallada acerca de los Edge Delivery Services y sus capacidades.
 
-## Introducción a los Edge Delivery Services
+## Introducción a Edge Delivery Services
 
 <div class="columns is-multiline">
     <!-- Prerequisites -->
@@ -48,7 +48,7 @@ Revise la [documentación](https://experienceleague.adobe.com/en/docs/experience
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">5 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./developing/prerequisites.md" title="Requisitos previos">Requisitos previos del desarrollador</a>
+              <a href="./developing/prerequisites.md" title="Requisitos previos">Requisitos previos para desarrolladores</a>
             </p>
             <p class="is-size-6">Lo que necesitará para empezar a desarrollar con Edge Delivery Services.</p>
             <a href="./developing/prerequisites.md" class="spectrum-Button
@@ -70,7 +70,8 @@ Revise la [documentación](https://experienceleague.adobe.com/en/docs/experience
             <a href="./developing/aem-boilerplate.md" title="Usar plantilla de plantillas"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425713/?format=jpeg" alt="Configurar plantillas">
+                src="https://video.tv.adobe.com/v/3425713/?format=jpeg" alt="Configurar
+                Placa De Caldera">
             </a>
           </figure>
         </div>
@@ -79,7 +80,7 @@ Revise la [documentación](https://experienceleague.adobe.com/en/docs/experience
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./developing/aem-boilerplate.md" title="Usar plantilla de plantillas">AEM placa de boiler</a>
+              AEM <a href="./developing/aem-boilerplate.md" title="Usar plantilla de plantillas">Placa de caldera de la</a>
             </p>
             <p class="is-size-6">AEM Utilice la plantilla de plantillas de plantillas de plantillas de código de la para configurar el repositorio de código.</p>
             <a href="./developing/aem-boilerplate.md" class="spectrum-Button
@@ -160,10 +161,10 @@ Revise la [documentación](https://experienceleague.adobe.com/en/docs/experience
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./developing/preview-and-publish.md" title="Previsualizar y publicar contenido"
+            <a href="./developing/preview-and-publish.md" title="Previsualización y contenido de Publish"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425714/?format=jpeg" alt="Previsualizar y publicar contenido">
+                src="https://video.tv.adobe.com/v/3425714/?format=jpeg" alt="Previsualización y contenido de Publish">
             </a>
           </figure>
         </div>
@@ -172,7 +173,7 @@ Revise la [documentación](https://experienceleague.adobe.com/en/docs/experience
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./developing/preview-and-publish.md" title="Previsualizar y publicar contenido">Previsualización y publicación de contenido</a>
+              <a href="./developing/preview-and-publish.md" title="Previsualización y contenido de Publish">Previsualizar y publicar contenido</a>
             </p>
             <p class="is-size-6">Vista previa y publicación de contenido con el AEM Sidekick.</p>
             <a href="./developing/preview-and-publish.md" class="spectrum-Button
@@ -236,7 +237,7 @@ Revise la [documentación](https://experienceleague.adobe.com/en/docs/experience
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./developing/document-structure.md" title="Estructura del documento">Estructura del documento</a>
+              <a href="./developing/document-structure.md" title="Estructura del documento">Estructura de documento</a>
             </p>
             <p class="is-size-6">Explore la estructura del documento, incluido el contenido, las secciones y los bloques predeterminados </p>
             <a href="./developing/document-structure.md" class="spectrum-Button
@@ -300,7 +301,7 @@ Revise la [documentación](https://experienceleague.adobe.com/en/docs/experience
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./developing/git.md" title="Integración con Git">Integración con Git</a>
+              <a href="./developing/git.md" title="Integración con Git">Integrar con Git</a>
             </p>
             <p class="is-size-6">Configure Git y los Edge Delivery Services.</p>
             <a href="./developing/git.md" class="spectrum-Button
@@ -401,7 +402,7 @@ Revise la [documentación](https://experienceleague.adobe.com/en/docs/experience
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/delete-page.md" title="Eliminación de páginas">Eliminación de páginas</a>
+              <a href="./how-to/delete-page.md" title="Eliminación de páginas">Eliminando páginas</a>
             </p>
             <p class="is-size-6">Obtenga información sobre cómo eliminar páginas.</p>
             <a href="./how-to/delete-page.md" class="spectrum-Button

@@ -1,6 +1,6 @@
 ---
-title: AEM ¿Cómo usar las configuraciones de OSGi en el as a Cloud Service de la?
-description: AEM Explore cómo definir e implementar la configuración de OSGi en el as a Cloud Service de la.
+title: ¿Cómo se utilizan las configuraciones de OSGi en AEM as a Cloud Service?
+description: Explore cómo definir e implementar la configuración de OSGi en AEM as a Cloud Service.
 role: Developer
 level: Beginner
 type: Tutorial
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Configuraciones de OSGi
 
-AEM Explore cómo definir e implementar la configuración de OSGi en el as a Cloud Service de la.
+Explore cómo definir e implementar la configuración de OSGi en AEM as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330559?quality=12&learn=on)

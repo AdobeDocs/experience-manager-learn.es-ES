@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # AEM Cómo investigar los problemas relacionados con la búsqueda en la
 
-*AEM Este vídeo explica los pasos para investigar los problemas relacionados con la búsqueda en la.*
+AEM *Este vídeo explica los pasos para investigar los problemas relacionados con la búsqueda en el área de trabajo de la búsqueda de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de seguridad*.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335467?quality=12&learn=on)

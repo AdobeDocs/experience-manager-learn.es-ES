@@ -28,11 +28,11 @@ Los fragmentos de experiencias permiten a los autores de contenido reutilizar co
 
 >[!VIDEO](https://video.tv.adobe.com/v/331785?quality=12&learn=on)
 
-Un fragmento de experiencia es un conjunto agrupado de componentes que, al combinarse, crea una experiencia. Por ejemplo, una *Título*, *Imagen*, *Descripción*, y *Botón de llamada a la acción* se puede combinar para formar una experiencia de teaser.
+Un fragmento de experiencia es un conjunto agrupado de componentes que, al combinarse, crea una experiencia. Por ejemplo, un *Título*, *Imagen*, *Descripción* y *Botón de llamada a la acción* se pueden combinar para formar una experiencia de teaser.
 
 Con Fragmentos de experiencias, los especialistas en marketing pueden:
 
 * Reutilización de una experiencia en varios canales (canales propios y puntos de contacto de terceros)
 * Crear variaciones de una experiencia para casos de uso específicos
 * Mantener las variaciones sincronizadas con el uso de Live Copy
-* Experiencias de publicaciones sociales en Facebook y Pinterest listas para usar
+* Experiencias de Social Post en Facebook y Pinterest listas para usar

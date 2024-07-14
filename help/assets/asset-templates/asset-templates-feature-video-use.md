@@ -1,6 +1,6 @@
 ---
 title: Uso de plantillas de recursos con AEM Assets y InDesign Server
-description: AEM Assets Template permite a los especialistas en marketing crear, administrar y distribuir recursos digitales para su uso digital e impreso. La creación de folletos, tarjetas de presentación, prospectos, anuncios y tarjetas postales de marcado es mucho más sencilla con las plantillas de recursos cuando se integran con el servidor de InDesign.
+description: AEM Assets Template permite a los especialistas en marketing crear, administrar y distribuir recursos digitales para su uso digital e impreso. La creación de folletos, tarjetas de visita, prospectos, anuncios y postales de marcado es mucho más sencilla con las plantillas de Assets cuando se integran con el servidor de InDesign.
 version: 6.4, 6.5
 topic: Content Management
 feature: Templates
@@ -20,11 +20,11 @@ ht-degree: 0%
 
 # Uso de plantillas de recursos con AEM Assets y InDesign Server{#using-asset-templates-with-aem-assets-and-indesign-server}
 
-AEM Assets Template permite a los especialistas en marketing crear, administrar y distribuir recursos digitales para su uso digital e impreso. La creación de folletos, tarjetas de presentación, prospectos, anuncios y tarjetas postales de marcado es mucho más sencilla con las plantillas de recursos cuando se integran con el servidor de InDesign.
+AEM Assets Template permite a los especialistas en marketing crear, administrar y distribuir recursos digitales para su uso digital e impreso. La creación de folletos, tarjetas de visita, prospectos, anuncios y postales de marcado es mucho más sencilla con las plantillas de Assets cuando se integran con el servidor de InDesign.
 
 >[!NOTE]
 >
->Para ver los pasos de configuración del InDesign Server, consulte [Configuración de plantillas de recursos con InDesign Server](asset-templates-technical-video-setup.md).
+>Para ver los pasos para configurar el InDesign Server, [Configurar plantillas de Assets con InDesign Server](asset-templates-technical-video-setup.md).
 
 ## Información general {#overview}
 

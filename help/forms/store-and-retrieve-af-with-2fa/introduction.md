@@ -25,9 +25,9 @@ Este tutorial le guiará por los pasos necesarios para guardar y recuperar datos
 
 * Utilice la API de GuideBridge para obtener acceso a los datos del formulario adaptable
 
-* Realizar una llamada del POST a un servlet. Este servlet almacena los datos en la base de datos y los archivos adjuntos del formulario en el repositorio CRX. Los datos almacenados en la base de datos están asociados a un GUID.
+* Realizar una llamada del POST a un servlet. Este servlet almacena los datos en la base de datos y los archivos adjuntos del formulario en el repositorio de CRX. Los datos almacenados en la base de datos están asociados a un GUID.
 
-* Si desea rellenar el formulario adaptable con los datos almacenados, recupere los datos asociados con el GUID y rellene el formulario adaptable con el **request.setAttribute** método.
+* Si desea rellenar el formulario adaptable con los datos almacenados, recupere los datos asociados con el GUID y rellene el formulario adaptable con el método **request.setAttribute**.
 
 ## Muestra del caso de uso
 
@@ -45,4 +45,4 @@ Se espera que la audiencia de este contenido tenga alguna experiencia en las sig
 
 ## Siguientes pasos
 
-[Configurar la fuente de datos](./configure-data-source.md)
+[Configuración de Data Source](./configure-data-source.md)

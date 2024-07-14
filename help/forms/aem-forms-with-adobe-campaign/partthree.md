@@ -21,7 +21,7 @@ ht-degree: 1%
 
 En esta parte, rellenamos previamente el formulario adaptable con información de perfil recuperada de ACS. AEM Forms tiene esta potente capacidad para rellenar previamente formularios adaptables.
 
-Para obtener más información sobre cómo rellenar previamente formularios adaptables, lea esto [tutorial](https://helpx.adobe.com/experience-manager/kt/forms/using/prefill-service-adaptive-forms-article-use.html).
+Para obtener más información sobre cómo rellenar previamente formularios adaptables, lea este [tutorial](https://helpx.adobe.com/experience-manager/kt/forms/using/prefill-service-adaptive-forms-article-use.html).
 
 AEM Para rellenar previamente el formulario adaptable mediante la recuperación de datos de ACS, suponemos que hay un perfil en ACS que tiene el mismo correo electrónico que el usuario que ha iniciado sesión en el servicio de correo electrónico de. AEM Por ejemplo, si el ID de correo electrónico de la persona que ha iniciado sesión en es csimms@adobe.com, se espera encontrar un perfil en ACS cuyo correo electrónico es csimms@adobe.com.
 
@@ -33,7 +33,7 @@ Se necesitan los siguientes pasos para recuperar información de perfil de ACS m
 * Crear un documento XML con la información de perfil
 * Devolver InputStream del documento XML consumido por AEM Forms
 
-![prefillservice](assets/prefillserviceaf.gif)
+![servicio de prefijos](assets/prefillserviceaf.gif)
 
 Asociar el servicio de rellenado previo con el formulario adaptable
 
@@ -236,7 +236,7 @@ Para que esto funcione en su sistema, siga las siguientes instrucciones:
 * [Asegúrese de haber seguido los pasos descritos aquí](aem-forms-with-campaign-standard-getting-started-tutorial.md)
 * [AEM Importación de formularios adaptables de muestra en mediante el administrador de paquetes](assets/pre-fill-af-from-campaign.zip)
 * AEM Asegúrese de iniciar sesión en el servicio de acceso con un usuario cuyo ID de correo electrónico haya sido compartido por un perfil en Adobe Campaign. AEM Por ejemplo, si el ID de correo electrónico del usuario de la es johndoe@adobe.com, debe tener un perfil en ACS cuyo correo electrónico sea johndoe@adobe.com.
-* [Previsualización del formulario](http://localhost:4502/content/dam/formsanddocuments/prefillfromcampaign/jcr:content?wcmmode=disabled).
+* [Vista previa del formulario](http://localhost:4502/content/dam/formsanddocuments/prefillfromcampaign/jcr:content?wcmmode=disabled).
 
 ## Siguientes pasos
 

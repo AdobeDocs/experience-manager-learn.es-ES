@@ -25,7 +25,7 @@ HTML5 forms es una nueva funcionalidad de Adobe Experience Manager que ofrece el
 
 ## Requisitos previos
 
-Asegúrese de que tiene una instancia de trabajo de AEM Forms. Siga las [guía de instalación](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html?lang=es) para instalar y configurar AEM Forms
+Asegúrese de que tiene una instancia de trabajo de AEM Forms. Siga la [guía de instalación](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html?lang=es) para instalar y configurar AEM Forms
 
 ## Creación de su primer formulario de HTML 5
 
@@ -41,22 +41,22 @@ El xdp se puede previsualizar en formato HTML 5 o en formato PDF. Para obtener u
 * Pulse el xdp recién cargado y haga clic en _Vista previa -> Vista previa como HTML_. Debería ver el xdp representado como HTML 5
 
 >[!NOTE]
->Al seleccionar _Vista previa como PDF_ opción el PDF procesado no se mostrará en el explorador porque AEM Forms procesa pdf dinámicos que requieren un complemento de Acrobat. Tendrá que descargar el PDF y abrirlo con Adobe Acrobat/Reader para verlo
+>Al seleccionar la opción _Vista previa como PDF_, el PDF procesado no se mostrará en el explorador porque AEM Forms procesa archivos PDF dinámicos que requieren el complemento de Acrobat. Tendrá que descargar el PDF y abrirlo con Adobe Acrobat/Reader para verlo
 
 
 ## Vista previa con datos
 
 Para obtener una vista previa del xdp en formato HTML5 con archivo de datos, siga estos pasos:
 
-* Pulse el xdp recién cargado y haga clic en _Vista previa -> Vista previa con datos_. Examine y seleccione el archivo de datos y haga clic en _Previsualizar_.
+* Pulse el xdp recién cargado y haga clic en _Vista previa -> Vista previa con datos_. Examine y seleccione el archivo de datos y haga clic en _Vista previa_.
 * Debería ver la plantilla representada en formato HTML 5 rellenada previamente con los datos
 
 ## Explorar las propiedades avanzadas de la plantilla xdp
 
-Las propiedades avanzadas de la plantilla xdp permiten especificar la fecha de publicación, el controlador de envío, el perfil de procesamiento del formulario, el servicio de relleno previo, etc. Para ver las propiedades avanzadas de la plantilla, pulse en el xdp y haga clic en _properties -> Advanced_. Aquí encontrará una serie de propiedades. Algunas de estas propiedades se tratan aquí.
+Las propiedades avanzadas de la plantilla xdp permiten especificar la fecha de publicación, el controlador de envío, el perfil de procesamiento del formulario, el servicio de relleno previo, etc. Para ver las propiedades avanzadas de la plantilla, pulse xdp y haga clic en _propiedades -> Avanzadas_. Aquí encontrará una serie de propiedades. Algunas de estas propiedades se tratan aquí.
 
-**URL de envío** : Esta es la URL que administrará el envío del formulario de HTML5. Lo explicaremos en la siguiente lección. Si no se especifica una dirección URL de envío aquí, se invoca el controlador de envío predeterminado, que devuelve los datos del formulario al explorador.
+**Enviar URL**: Esta es la URL que administrará el envío del formulario de HTML 5. Lo explicaremos en la siguiente lección. Si no se especifica una dirección URL de envío aquí, se invoca el controlador de envío predeterminado, que devuelve los datos del formulario al explorador.
 
-**Perfil de procesamiento del HTML** : Los formularios de HTML 5 tienen la noción Perfiles que se exponen como extremos REST para permitir el procesamiento móvil de plantillas de formulario. La mayoría de las veces, el perfil de procesamiento predeterminado debe ser suficiente para procesar el formulario. Si el perfil de procesamiento predeterminado no se ajusta a sus necesidades, [perfil personalizado](https://experienceleague.adobe.com/docs/experience-manager-65/forms/html5-forms/custom-profile.html) se puede crear y asociar al formulario.
+**Perfil de procesamiento de HTML**: los formularios de HTML 5 tienen la noción Perfiles que se exponen como extremos REST para habilitar el procesamiento móvil de plantillas de formulario. La mayoría de las veces, el perfil de procesamiento predeterminado debe ser suficiente para procesar el formulario. Si el perfil de procesamiento predeterminado no satisface sus necesidades, se puede crear un [perfil personalizado](https://experienceleague.adobe.com/docs/experience-manager-65/forms/html5-forms/custom-profile.html) y asociarlo al formulario.
 
-**Servicio de prerrellenar** : El servicio de rellenado previo se suele utilizar para rellenar el formulario con datos recuperados de una fuente de datos back-end.
+**Servicio de relleno previo**: el servicio de relleno previo se suele usar para rellenar el formulario con datos recuperados de una fuente de datos back-end.

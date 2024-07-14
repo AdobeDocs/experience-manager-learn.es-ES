@@ -24,12 +24,13 @@ Se requieren los siguientes pasos para escribir la clase java e implementarla co
 
 ## Crear proyecto de Maven
 
-El primer paso es crear un proyecto de Maven utilizando el Arquetipo de Maven de Adobe adecuado. Los pasos detallados se enumeran en esta sección [artículo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Una vez que tenga el proyecto de Maven importado en Eclipse, estará listo para empezar a escribir el primer componente OSGi que se pueda utilizar en el paso del proceso.
+El primer paso es crear un proyecto de Maven utilizando el Arquetipo de Maven de Adobe adecuado. Los pasos detallados se enumeran en este [artículo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Una vez que tenga el proyecto de Maven importado en Eclipse, estará listo para empezar a escribir el primer componente OSGi que se pueda utilizar en el paso del proceso.
 
 
 ### Crear clase que implemente WorkflowProcess
 
-Abra el proyecto de Maven en el IDE de Eclipse. Expandir **projectname** > **núcleo** carpeta. Expanda la carpeta src/main/java. Debería ver un paquete que termina con &quot;core&quot;. Cree una clase Java que implemente WorkflowProcess en este paquete. Deberá anular el método de ejecución. La firma del método execute es la siguiente: public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments)throws WorkflowException
+Abra el proyecto de Maven en el IDE de Eclipse. Expandir la carpeta **projectname** > **core**. Expanda la carpeta src/main/java. Debería ver un paquete que termina con &quot;core&quot;. Cree una clase Java que implemente WorkflowProcess en este paquete. Deberá anular el método de ejecución. La firma del método execute es la siguiente
+public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments)throws WorkflowException
 
 AEM En este tutorial, vamos a escribir los archivos adjuntos agregados al formulario adaptable en el sistema de archivos como parte del flujo de trabajo de la.
 
@@ -123,7 +124,7 @@ public class WriteFormAttachmentsToFileSystem implements WorkflowProcess {
 
 Estos dos valores se pasan como argumentos de proceso mediante el cuadro de diálogo del componente de flujo de trabajo
 
-![ProcessStep](assets/custom-workflow-component.png)
+![Etapa de proceso](assets/custom-workflow-component.png)
 
 El servicio QueryBuilder se utiliza para consultar nodos de tipo nt:file en la carpeta attachmentsPath. El resto del código se repite en los resultados de búsqueda para crear el objeto Document y guardarlo en el sistema de archivos
 

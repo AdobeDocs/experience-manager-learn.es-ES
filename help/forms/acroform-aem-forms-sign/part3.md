@@ -17,12 +17,12 @@ ht-degree: 3%
 
 # Pruebe esta capacidad en su sistema
 
-[AEM Descargue e importe este paquete en el servidor de correo](assets/acro-form-aem-form.zip)
-Este paquete contiene el flujo de trabajo de ejemplo y la página html que le permite crear el esquema a partir del AcroForm cargado.
+AEM [Descargar e importar este paquete en el espacio de trabajo {10000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000
+Este paquete contiene el flujo de trabajo de ejemplo y la página html que le permite crear el esquema a partir del AcroForm cargado.](assets/acro-form-aem-form.zip)
 
 ## Configurar flujo de trabajo
 
-1. [Abra el modelo de flujo de trabajo en modo de edición](http://localhost:4502/editor.html/conf/global/settings/workflow/models/MergeAcroformData.html).
+1. [Abrir el modelo de flujo de trabajo en modo de edición](http://localhost:4502/editor.html/conf/global/settings/workflow/models/MergeAcroformData.html).
 2. Abra las propiedades de configuración del paso MergeAcrobatData.
 3. Haga clic en la pestaña Proceso.
 4. Asegúrese de que los argumentos que está pasando sean una carpeta válida del servidor.

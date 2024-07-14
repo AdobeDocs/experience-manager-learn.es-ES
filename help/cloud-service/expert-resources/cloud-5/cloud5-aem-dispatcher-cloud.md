@@ -1,6 +1,6 @@
 ---
 title: Uso de Dispatcher en la nube
-description: AEM Darin y James analizan Dispatcher en la nube de la, incluidas algunas prácticas recomendadas y diferencias con AMS/On-Prem. También se refieren a la migración a la nube.
+description: Darin y James analizan el Dispatcher AEM en la nube de, incluidas algunas prácticas recomendadas y diferencias con respecto a AMS/On-Prem. También se refieren a la migración a la nube.
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Uso de Dispatcher en la nube
 
-AEM Darin y James analizan Dispatcher en la nube de la, incluidas algunas prácticas recomendadas y diferencias con AMS/On-Prem. También se refieren a la migración a la nube.
+Darin y James analizan el Dispatcher AEM en la nube de, incluidas algunas prácticas recomendadas y diferencias con respecto a AMS/On-Prem. También se refieren a la migración a la nube.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342067?quality=12&learn=on)
 

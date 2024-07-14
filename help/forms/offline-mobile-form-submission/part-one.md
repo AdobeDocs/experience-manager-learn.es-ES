@@ -18,9 +18,9 @@ ht-degree: 0%
 
 # Crear perfil personalizado
 
-En esta parte crearemos una [perfil personalizado.](https://helpx.adobe.com/es/livecycle/help/mobile-forms/creating-profile.html) Un perfil es responsable de procesar el XDP como HTML. Se proporciona un perfil predeterminado para procesar XDP como HTML. Representa una versión personalizada del servicio de representación de Forms móvil. Puede utilizar el servicio de representación de formularios móviles para personalizar el aspecto, el comportamiento y las interacciones de Mobile Forms. En nuestro perfil personalizado, capturaremos los datos rellenados en el formulario móvil mediante la API de guidebridge. A continuación, estos datos se envían a un servlet personalizado que genera un PDF interactivo y lo transmite de nuevo a la aplicación que realiza la llamada.
+En esta parte crearemos un perfil personalizado de [.](https://helpx.adobe.com/es/livecycle/help/mobile-forms/creating-profile.html) Un perfil es responsable de procesar el XDP como HTML. Se proporciona un perfil predeterminado para procesar XDP como HTML. Representa una versión personalizada del servicio de representación de Forms móvil. Puede utilizar el servicio de representación de formularios móviles para personalizar el aspecto, el comportamiento y las interacciones de Mobile Forms. En nuestro perfil personalizado, capturaremos los datos rellenados en el formulario móvil mediante la API de guidebridge. A continuación, estos datos se envían a un servlet personalizado que genera un PDF interactivo y lo transmite de nuevo a la aplicación que realiza la llamada.
 
-Obtener los datos del formulario mediante `formBridge` API de JavaScript. Hacemos uso de la `getDataXML()` método:
+Obtenga los datos del formulario mediante la API de JavaScript `formBridge`. Utilizamos el método `getDataXML()`:
 
 ```javascript
 window.formBridge.getDataXML({success:suc,error:err});
@@ -59,7 +59,7 @@ var suc = function(obj) {
 
 ## Generar PDF interactivo
 
-El siguiente es el código de servlet responsable de procesar el pdf interactivo y devolver el pdf a la aplicación que realiza la llamada. El servlet invoca `mobileFormToInteractivePdf` del servicio OSGi de Document Services personalizado.
+El siguiente es el código de servlet responsable de procesar el pdf interactivo y devolver el pdf a la aplicación que realiza la llamada. El servlet invoca el método `mobileFormToInteractivePdf` del servicio OSGi personalizado de Document Services.
 
 ```java
 import java.io.File;
@@ -121,7 +121,7 @@ public class GenerateInteractivePDF extends SlingAllMethodsServlet {
 
 ### Procesar PDF interactivo
 
-El siguiente código utiliza la variable [API del servicio Forms](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/forms/api/FormsService.html) para procesar el PDF interactivo con los datos del formulario móvil.
+El siguiente código utiliza la [API de servicio de Forms](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/forms/api/FormsService.html) para procesar el PDF interactivo con los datos del formulario móvil.
 
 ```java
 public Document mobileFormToInteractivePdf(Document xmlData,String path) {

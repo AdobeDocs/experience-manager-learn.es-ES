@@ -22,7 +22,7 @@ ht-degree: 1%
 # Agregando tabla a la sección de contribuciones
 
 En esta parte, añadiremos una tabla a la sección de contribuciones.
-Consulte la [Uso de tablas en el canal de impresión](/help/forms/interactive-communications/table-in-print-channel-documents-video-use.md) para obtener más información sobre el uso de tablas en el documento del canal de impresión.
+Consulte [Uso de tablas en el canal de impresión](/help/forms/interactive-communications/table-in-print-channel-documents-video-use.md) para obtener más información sobre el uso de tablas en el documento del canal de impresión.
 
 Inicie sesión en AEM Forms y vaya a Adobe Experience Manager > Forms > Forms y documentos.
 

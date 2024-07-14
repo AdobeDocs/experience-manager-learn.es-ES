@@ -33,15 +33,15 @@ Las etiquetas son la nueva generación de tecnología de administración de etiq
 
 Se requiere lo siguiente al integrar las etiquetas de recopilación de datos de Experience Platform.
 
-+ AEM AEM Acceso de administrador de a un entorno as a Cloud Service
-+ Un sitio de referencia como [WKND](https://github.com/adobe/aem-guides-wknd) implementado en él.
++ AEM Acceso de administrador a la configuración del entorno de AEM as a Cloud Service
++ Se ha implementado un sitio de referencia como [WKND](https://github.com/adobe/aem-guides-wknd).
 + Acceso a la solución de recopilación de datos de Adobe Experience Platform
-+ Acceso de administrador del sistema a [Consola de Adobe Developer](https://developer.adobe.com/developer-console/)
++ Acceso del administrador del sistema a [Adobe Developer Console](https://developer.adobe.com/developer-console/)
 
 
 ## Pasos de alto nivel
 
-+ En Recopilación de datos de Adobe Experience Platform, cree una propiedad Tag y edítela en _Agregar regla_. Entonces _Añadir biblioteca_, seleccione la regla recién agregada, apruébela y publíquela.
++ En la recopilación de datos de Adobe Experience Platform, cree una propiedad Tag y edítela en _Agregar regla_. A continuación, _Agregar biblioteca_, seleccione la regla recién agregada, apruébela y publíquela.
 + AEM Conexión de etiquetas y etiquetas mediante la configuración de IMS existente (o nueva)
 + AEM En, cree una configuración de servicio en la nube de etiquetas, luego aplíquela a un sitio existente y, finalmente, compruebe que la propiedad Etiquetas y sus bibliotecas se cargan en el sitio Publicado o Autor.
 
@@ -52,5 +52,5 @@ Se requiere lo siguiente al integrar las etiquetas de recopilación de datos de 
 ## Recursos adicionales {#additional-resources}
 
 + [Integraciones de Experience Platform con aplicaciones de Experience Cloud](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/integrations-with-experience-cloud-applications.html)
-+ [Información general sobre etiquetas](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
-+ [Implementación del Experience Cloud de en sitios web con etiquetas](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html)
++ [Resumen de etiquetas](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
++ [Implementación del Experience Cloud en sitios web con etiquetas](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html)

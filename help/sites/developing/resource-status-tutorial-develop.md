@@ -1,6 +1,6 @@
 ---
 title: Desarrollo de estados de recursos en AEM Sites
-description: Las API de estado de recursos de Adobe Experience Manager AEM son un marco conectable para exponer la mensajería de estado en varias IU web de editor de interfaz de usuario.
+description: La API de estado de recursos de Adobe Experience Manager AEM es un marco conectable para exponer la mensajería de estado en la creación de varias IU web de editor de datos de usuario (IU) de la interfaz de usuario de Adobe.
 doc-type: Tutorial
 version: 6.4, 6.5
 duration: 88
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 # Desarrollo de estados de recursos {#developing-resource-statuses-in-aem-sites}
 
-Las API de estado de recursos de Adobe Experience Manager AEM son un marco conectable para exponer la mensajería de estado en varias IU web de editor de interfaz de usuario.
+La API de estado de recursos de Adobe Experience Manager AEM es un marco conectable para exponer la mensajería de estado en la creación de varias IU web de editor de datos de usuario (IU) de la interfaz de usuario de Adobe.
 
 ## Información general {#overview}
 
@@ -28,7 +28,7 @@ Casos de uso de ejemplo para proveedores de estado de recursos personalizados:
 * Notificar a los autores que una página se ha activado en los últimos 15 minutos
 * Notificar a los autores que una página se editó en los últimos 5 minutos y quién la editó
 
-![AEM Resumen del estado del recurso de editor de](assets/sample-editor-resource-status-screenshot.png)
+AEM ![Resumen del estado del recurso del editor de la](assets/sample-editor-resource-status-screenshot.png)
 
 ## Marco del proveedor de estado de recursos {#resource-status-provider-framework}
 
@@ -39,21 +39,21 @@ Al desarrollar estados de recursos personalizados, el trabajo de desarrollo cons
 
    ![arquitectura de estado de recursos](assets/sample-editor-resource-status-application-architecture.png)
 
-3. El recurso de estado proporcionado como parte de los editores de página, fragmento de experiencia y plantilla recibe un tipo a través de los recursos &quot;[!DNL statusType]&quot; propiedad.
+3. El recurso de estado proporcionado como parte de los editores de página, fragmento de experiencia y plantilla recibe un tipo a través de la propiedad de recursos &quot;[!DNL statusType]&quot;.
 
-   * Editor de página: `editor`
+   * Editor de páginas: `editor`
    * Editor de fragmentos de experiencias: `editor`
    * Editor de plantillas: `template-editor`
 
-4. El recurso de estado `statusType` coincide con registrado `CompositeStatusType` OSGi configurado `name` propiedad.
+4. El recurso de estado `statusType` coincide con la propiedad `CompositeStatusType` OSGi configurada `name` registrada.
 
-   Para todas las coincidencias, la variable `CompositeStatusType's` Los tipos de se recopilan y se utilizan para recopilar los `ResourceStatusProvider` implementaciones que tienen este tipo, mediante `ResourceStatusProvider.getType()`.
+   Para todas las coincidencias, se recopilan los tipos `CompositeStatusType's` y se utilizan para recopilar las implementaciones `ResourceStatusProvider` que tienen este tipo, a través de `ResourceStatusProvider.getType()`.
 
-5. La coincidencia `ResourceStatusProvider` se pasa el `resource` en el editor y determina si la variable `resource` tiene el estado que se va a mostrar. Si el estado es necesario, esta implementación es responsable de generar 0 o muchos `ResourceStatuses` para devolver, cada una de ellas representa un estado que mostrar.
+5. El elemento `ResourceStatusProvider` coincidente se pasa al elemento `resource` en el editor y determina si el elemento `resource` tiene el estado que se va a mostrar. Si el estado es necesario, esta implementación es responsable de generar 0 o varios `ResourceStatuses` para devolver, cada uno de los cuales representa un estado que mostrar.
 
-   Normalmente, una `ResourceStatusProvider` devuelve 0 o 1 `ResourceStatus` por `resource`.
+   Normalmente, un(a) `ResourceStatusProvider` devuelve 0 o 1 `ResourceStatus` por `resource`.
 
-6. ResourceStatus es una interfaz que el cliente puede implementar o que resulta útil `com.day.cq.wcm.commons.status.EditorResourceStatus.Builder` se puede utilizar para construir un estado. Un estado consta de:
+6. ResourceStatus es una interfaz que el cliente puede implementar, o bien se puede usar el elemento `com.day.cq.wcm.commons.status.EditorResourceStatus.Builder` para construir un estado. Un estado consta de:
 
    * Título
    * Mensaje
@@ -63,7 +63,7 @@ Al desarrollar estados de recursos personalizados, el trabajo de desarrollo cons
    * Acciones
    * Datos
 
-7. Opcionalmente, si `Actions` se proporcionan para `ResourceStatus` objeto, se requieren clientlibs de soporte para enlazar la funcionalidad a los vínculos de acción en la barra de estado.
+7. De forma opcional, si se proporcionan `Actions` para el objeto `ResourceStatus`, se requieren clientlibs de compatibilidad para enlazar la funcionalidad a los vínculos de acción en la barra de estado.
 
    ```js
    (function(jQuery, document) {

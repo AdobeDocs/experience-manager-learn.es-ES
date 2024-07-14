@@ -27,14 +27,14 @@ Aprenda a utilizar un método de código bajo para crear su primer sitio en Adob
 >[!VIDEO](https://video.tv.adobe.com/v/333477?quality=12&learn=on)
 
 * [Kit de IU de Adobe XD](https://github.com/adobe/aem-site-template-basic/blob/main/files/wireframe.xd)
-* [AEM Plantilla del sitio de](https://github.com/adobe/aem-site-template-basic)
+* AEM [Plantilla de sitio de la](https://github.com/adobe/aem-site-template-basic)
 
-## AEM Entorno as a Cloud Service {#environment}
+## Entorno de AEM as a Cloud Service {#environment}
 
-Los pasos de este tutorial se realizarán en un entorno de Adobe Experience Manager as a Cloud Service. AEM Asegúrese de que tiene acceso administrativo al entorno de la. Se recomienda utilizar un [Programa de zona protegida](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/sandbox-programs/introduction-sandbox-programs.html) y [Entorno de desarrollo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html) al completar este tutorial.
+Los pasos de este tutorial se realizarán en un entorno de Adobe Experience Manager as a Cloud Service. AEM Asegúrese de que tiene acceso administrativo al entorno de la. Se recomienda usar un [programa de espacio aislado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/sandbox-programs/introduction-sandbox-programs.html) y [entorno de desarrollo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html) al completar este tutorial.
 
 ## Siguientes pasos {#next-steps}
 
 AEM Un tutorial paso a paso recorre la implementación de un sitio de para una marca ficticia de estilo de vida WKND mediante la función Creación rápida de sitios.
 
-¿Qué estás esperando?! Inicie el tutorial navegando hasta [Crear sitio](create-site.md) y aprenda a generar un nuevo proyecto de Adobe Experience Manager con una plantilla del sitio.
+¿Qué estás esperando?! Inicie el tutorial navegando hasta el capítulo [Crear sitio](create-site.md) y aprenda a generar un nuevo proyecto de Adobe Experience Manager con una plantilla de sitio.

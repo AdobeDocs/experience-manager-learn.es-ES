@@ -25,7 +25,7 @@ AEM Obtenga información sobre cómo realizar llamadas HTTPS desde el punto de v
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424855?quality=12&learn=on)
 
-La autenticación mTLS o TLS bidireccional mejora la seguridad del protocolo TLS al requerir **el cliente y el servidor para autenticarse mutuamente**. Esta autenticación se realiza mediante certificados digitales. Se utiliza comúnmente en escenarios donde la seguridad sólida y la verificación de identidad son críticas.
+La autenticación mTLS o TLS bidireccional mejora la seguridad del protocolo TLS al requerir que **tanto el cliente como el servidor se autenticen mutuamente**. Esta autenticación se realiza mediante certificados digitales. Se utiliza comúnmente en escenarios donde la seguridad sólida y la verificación de identidad son críticas.
 
 De forma predeterminada, al intentar establecer una conexión HTTPS con una API web que requiera autenticación mTLS, la conexión falla con el siguiente error:
 
@@ -35,7 +35,7 @@ javax.net.ssl.SSLHandshakeException: Received fatal alert: certificate_required
 
 Este problema se produce cuando el cliente no presenta un certificado para autenticarse a sí mismo.
 
-Vamos a aprender a llamar correctamente a las API que requieren autenticación mTLS mediante [Apache HttpClient](https://hc.apache.org/httpcomponents-client-4.5.x/index.html) y **AEM KeyStore y TrustStore**.
+AEM Vamos a aprender a llamar correctamente a las API que requieren autenticación mTLS mediante [Apache HttpClient](https://hc.apache.org/httpcomponents-client-4.5.x/index.html) y **KeyStore y TrustStore**.
 
 
 ## AEM HttpClient y cargar material de KeyStore de la
@@ -71,7 +71,7 @@ Para fines de demostración, genere los detalles relacionados con el certificado
   openssl verify -CAfile internal-ca-cert.pem client-cert.pem
   ```
 
-- AEM AEM Convierta la clave privada en formato DER, ya que el almacén de claves requiere la clave privada en formato DER para la conversión de la clave privada a formato DER.
+- AEM AEM Convierta la clave privada en formato DER, ya que, para usar el almacén de claves, es necesario usar la clave privada en formato DER.
 
   ```shell
   openssl pkcs8 -topk8 -inform PEM -outform DER -in client-key.pem -out client-key.der -nocrypt
@@ -90,23 +90,23 @@ Además, si el proveedor de API utiliza un certificado de CA autofirmado, reciba
 
 ### Importación de certificados
 
-AEM Para importar certificados de, siga los siguientes pasos:
+AEM Para importar el certificado de la, siga los siguientes pasos:
 
-1. Iniciar sesión en **AEM Autor de** como un **administrador**.
+1. AEM Inicie sesión en **autor** como **administrador**.
 
-1. Vaya a **AEM Autor de la aplicación > Herramientas > Seguridad > Usuarios > Crear o seleccionar un usuario existente**.
+1. AEM Vaya a **Autor de la > Herramientas > Seguridad > Usuarios > Crear o seleccionar un usuario existente**.
 
    ![Crear o seleccionar un usuario existente](assets/mutual-tls-authentication/create-or-select-user.png)
 
-   Para fines de demostración, un nuevo usuario denominado `mtl-demo-user` se ha creado.
+   Para fines de demostración, se crea un nuevo usuario denominado `mtl-demo-user`.
 
-1. Para abrir **Propiedades del usuario**, haga clic en el nombre de usuario.
+1. Para abrir **Propiedades de usuario**, haga clic en el nombre de usuario.
 
-1. Clic **Keystore** y luego haga clic en **Crear almacén de claves** botón. A continuación, en la **Establecer contraseña de acceso a KeyStore** , establezca una contraseña para el almacén de claves de este usuario y haga clic en Guardar.
+1. Haga clic en la pestaña **Almacén de claves** y luego haga clic en el botón **Crear almacén de claves**. A continuación, en el cuadro de diálogo **Establecer contraseña de acceso a KeyStore**, establezca una contraseña para el almacén de claves de este usuario y haga clic en Guardar.
 
    ![Crear almacén de claves](assets/mutual-tls-authentication/create-keystore.png)
 
-1. En la nueva pantalla, en **AÑADIR CLAVE PRIVADA DEL ARCHIVO DER** , siga los siguientes pasos:
+1. En la nueva pantalla, en la sección **AGREGAR CLAVE PRIVADA DEL ARCHIVO DER**, siga los siguientes pasos:
 
    1. Especificar alias
 
@@ -116,19 +116,19 @@ AEM Para importar certificados de, siga los siguientes pasos:
 
    1. Haga clic en Enviar
 
-      ![AEM Importar clave privada](assets/mutual-tls-authentication/import-aem-private-key.png)
+      AEM ![Importar Clave Privada De](assets/mutual-tls-authentication/import-aem-private-key.png)
 
 1. Compruebe que el certificado se haya importado correctamente.
 
-   ![AEM Clave privada y certificado importados](assets/mutual-tls-authentication/aem-privatekey-cert-imported.png)
+   AEM ![Clave Privada Y Certificado Importados](assets/mutual-tls-authentication/aem-privatekey-cert-imported.png)
 
-AEM Si el proveedor de API utiliza un certificado de CA autofirmado, importe el certificado recibido en el almacén de confianza de la entidad emisora de certificados (TrustStore), siga los pasos que se indican a continuación: [aquí](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/call-internal-apis-having-private-certificate.html#httpclient-and-load-aem-truststore-material).
+AEM Si el proveedor de API utiliza un certificado de CA autofirmado, importe el certificado recibido en el almacén de confianza de la entidad emisora de certificados de la entidad emisora de certificados de la entidad emisora de certificados de la entidad emisora de certificados de la entidad emisora de certificados de la entidad emisora de certificados, siga los pasos de [aquí](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/call-internal-apis-having-private-certificate.html#httpclient-and-load-aem-truststore-material).
 
 AEM Del mismo modo, si el usuario utiliza un certificado de CA firmado automáticamente, solicite al proveedor de la API que lo importe.
 
 ### Código de invocación de API de mTLS prototípico mediante HttpClient
 
-Actualice el código Java™ como se muestra a continuación. Para usar `@Reference` AEM anotación para obtener la `KeyStoreService` servicio el código de llamada debe ser un componente/servicio OSGi o un modelo Sling (y `@OsgiService` se utiliza allí).
+Actualice el código Java™ como se muestra a continuación. AEM Para usar la anotación `@Reference` para obtener el servicio `KeyStoreService` que se está usando, el código de llamada debe ser un componente/servicio OSGi o un modelo Sling (y se usa `@OsgiService` allí).
 
 
 ```java
@@ -212,21 +212,21 @@ private KeyStore getAEMTrustStore(KeyStoreService keyStoreService, ResourceResol
 ...
 ```
 
-- Inyectar el OOTB `com.adobe.granite.keystore.KeyStoreService` Servicio OSGi en el componente OSGi.
-- AEM Obtener el almacén de claves de la clave de acceso del usuario mediante `KeyStoreService` y `ResourceResolver`, el `getAEMKeyStore(...)` El método hace eso.
-- AEM Si el proveedor de API utiliza un certificado de CA autofirmado, obtenga el almacén de confianza de la red global de certificados de la red (GitStore), el `getAEMTrustStore(...)` El método hace eso.
-- Crear un objeto de `SSLContextBuilder`, consulte Java™ [Detalles de API](https://javadoc.io/static/org.apache.httpcomponents/httpcore/4.4.8/index.html?org/apache/http/ssl/SSLContextBuilder.html).
-- AEM Cargue el almacén de claves de la clave de acceso del usuario en `SSLContextBuilder` usando `loadKeyMaterial(final KeyStore keystore,final char[] keyPassword)` método.
-- La contraseña del repositorio de claves es la contraseña que se estableció al crear el repositorio de claves; debe almacenarse en la configuración OSGi. Consulte [Valores de configuración secretos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values).
+- Inserte el servicio OSGi OOTB `com.adobe.granite.keystore.KeyStoreService` en su componente OSGi.
+- AEM Para obtener el almacén de claves de del usuario con `KeyStoreService` y `ResourceResolver`, el método `getAEMKeyStore(...)` lo hace.
+- AEM Si el proveedor de API utiliza un certificado de CA autofirmado, obtenga el almacén de confianza de la entidad emisora de certificados de la red global, el método `getAEMTrustStore(...)` hace eso.
+- Cree un objeto de `SSLContextBuilder`, consulte Java™ [Detalles de la API](https://javadoc.io/static/org.apache.httpcomponents/httpcore/4.4.8/index.html?org/apache/http/ssl/SSLContextBuilder.html).
+- AEM Cargue el almacén de claves de la clave de acceso del usuario en `SSLContextBuilder` mediante el método `loadKeyMaterial(final KeyStore keystore,final char[] keyPassword)`.
+- La contraseña del almacén de claves es la contraseña que se estableció al crear el almacén de claves; debe almacenarse en la configuración OSGi; consulte [Valores de configuración secreta](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values).
 
 ## Evitar cambios en el almacén de claves JVM
 
-Un enfoque convencional para invocar de forma eficaz las API de mTLS con certificados privados implica la modificación del repositorio de claves JVM. Se logra importando los certificados privados mediante Java™ [keytool](https://docs.oracle.com/en/java/javase/11/tools/keytool.html#GUID-5990A2E4-78E3-47B7-AE75-6D1826259549) comando.
+Un enfoque convencional para invocar de forma eficaz las API de mTLS con certificados privados implica la modificación del repositorio de claves JVM. Se logra importando los certificados privados mediante el comando Java™ [keytool](https://docs.oracle.com/en/java/javase/11/tools/keytool.html#GUID-5990A2E4-78E3-47B7-AE75-6D1826259549).
 
-AEM Sin embargo, este método no está alineado con las prácticas recomendadas de seguridad y ofrece una opción superior a través de la utilización del **Almacenes de claves específicos del usuario y almacén de confianza global** y [KeyStoreService](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/adobe/granite/keystore/KeyStoreService.html).
+AEM Sin embargo, este método no está alineado con las prácticas recomendadas de seguridad y ofrece una opción superior mediante el uso de **KeyStores específicos del usuario y Global TrustStore** y [KeyStoreService](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/adobe/granite/keystore/KeyStoreService.html).
 
 ## Paquete de soluciones
 
-El proyecto Node.js de muestra degradado en el vídeo se puede descargar desde [aquí](assets/internal-api-call/REST-APIs.zip).
+El proyecto Node.js de muestra que se muestra en el vídeo se puede descargar desde [aquí](assets/internal-api-call/REST-APIs.zip).
 
-AEM El código de servlet de la está disponible en el sitio web del proyecto WKND Sites `tutorial/web-api-invocation` rama, [consulte](https://github.com/adobe/aem-guides-wknd/tree/tutorial/web-api-invocation/core/src/main/java/com/adobe/aem/guides/wknd/core/servlets).
+AEM El código de servlet de la está disponible en la rama `tutorial/web-api-invocation` del proyecto WKND Sites, [consulte](https://github.com/adobe/aem-guides-wknd/tree/tutorial/web-api-invocation/core/src/main/java/com/adobe/aem/guides/wknd/core/servlets).

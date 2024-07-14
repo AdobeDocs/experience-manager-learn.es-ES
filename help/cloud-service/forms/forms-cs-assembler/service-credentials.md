@@ -1,6 +1,6 @@
 ---
 title: AEM Credenciales del servicio de
-description: AEM Descargar credenciales de servicio desde la consola de desarrollador de.
+description: AEM Descargue las credenciales de servicio desde Developer Console de la aplicación de.
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Credenciales del servicio
 
-AEM Las integraciones con as a Cloud Service AEM deben poder autenticarse de forma segura para la autenticación de la. AEM AEM La consola de desarrollador de genera credenciales de servicio, que utilizan las aplicaciones, los sistemas y los servicios externos para interactuar mediante programación con los servicios de autor o publicación de la aplicación a través de HTTP.
+Las integraciones con AEM as a Cloud Service AEM deben poder autenticarse de forma segura para la autenticación de la. AEM Developer Console AEM de genera credenciales de servicio, que utilizan las aplicaciones, los sistemas y los servicios externos para interactuar mediante programación con los servicios de Author o Publish de la a través de HTTP.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330519?quality=12&learn=on)
 

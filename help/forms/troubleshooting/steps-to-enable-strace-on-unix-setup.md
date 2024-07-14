@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Pasos para habilitar el seguimiento de secuencias en la configuración de Unix
 
-*Este vídeo explica los pasos para habilitar el seguimiento de seguimiento de seguimiento en la configuración de Unix para AEM Forms PDFG.*
+*Este vídeo explica los pasos para habilitar el seguimiento de seguimiento en la configuración de Unix para AEM Forms PDFG.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335525?quality=12&learn=on)

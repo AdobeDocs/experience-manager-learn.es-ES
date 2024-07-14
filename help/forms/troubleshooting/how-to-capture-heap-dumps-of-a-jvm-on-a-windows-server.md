@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Cómo capturar volcados de pila de una JVM en un servidor Windows
 
-*Este vídeo explica los pasos para capturar los volcados de pila de una JVM en un servidor de Windows.*
+*Este vídeo explica los pasos para capturar volcados de pila de una JVM en un servidor Windows.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335490?quality=12&learn=on)

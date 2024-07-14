@@ -1,6 +1,6 @@
 ---
 title: AEM Utilizar la vista Calendario con proyectos y bandeja de entrada de la
-description: AEM La Vista de calendario realiza un seguimiento de los proyectos y las tareas en una vista de calendario para facilitar la programación y la administración de proyectos. Con la vista Calendario, el usuario tendría una visibilidad general de los proyectos y las tareas que están actualmente en curso, planificados, con vencimiento pronto y con vencimiento anterior.
+description: AEM La Vista Calendario de realiza un seguimiento de los proyectos y las tareas en una vista de calendario para facilitar la administración y la programación de los proyectos. Con la vista Calendario, el usuario tendría una visibilidad general de los proyectos y las tareas que están actualmente en curso, planificados, con vencimiento pronto y con vencimiento anterior.
 version: 6.4, 6.5
 feature: Workflow, Projects
 doc-type: Feature Video
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # AEM Utilizar la vista Calendario con proyectos y bandeja de entrada de la
 
-AEM La Vista de calendario realiza un seguimiento de los proyectos y las tareas en una vista de calendario para facilitar la programación y la administración de proyectos. Con la vista Calendario, el usuario tendría una visibilidad general de los proyectos y las tareas que están actualmente en curso, planificados, con vencimiento pronto y con vencimiento anterior.
+AEM La Vista Calendario de realiza un seguimiento de los proyectos y las tareas en una vista de calendario para facilitar la administración y la programación de los proyectos. Con la vista Calendario, el usuario tendría una visibilidad general de los proyectos y las tareas que están actualmente en curso, planificados, con vencimiento pronto y con vencimiento anterior.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16804?quality=12&learn=on)
 

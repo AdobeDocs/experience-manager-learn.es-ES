@@ -21,11 +21,11 @@ ht-degree: 1%
 
 Los componentes principales checkboxgroup, dropdown y radiobutton se ampliaron para incluir una pestaña Additional Properties. La pestaña de propiedades adicionales tiene una casilla de verificación para indicar si el campo se va a utilizar como pestaña de índice de blob
 ![additional-properties](assets/drop-down-additonal-properties.png). Cuando se selecciona la casilla de verificación, se crea una propiedad denominada Searchable y su valor se establece en true en el repositorio jcr como se muestra en la siguiente captura de pantalla
-![investigable](assets/searchable-true.png).
+![se puede buscar](assets/searchable-true.png).
 
 El siguiente archivo .content.xml se creó en la carpeta _cq_dialog.
 
-![drop-down-project-view](assets/drop-down-project-view.png)
+![vista de proyecto desplegable](assets/drop-down-project-view.png)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

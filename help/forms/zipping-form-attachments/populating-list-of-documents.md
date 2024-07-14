@@ -27,7 +27,7 @@ El código del paso de proceso personalizado hace lo siguiente
 
 * Rellenar `listOfDocuments` variable de flujo de trabajo
 * Rellenar `attachmentNames` variable de flujo de trabajo
-* Establezca el valor de la variable de flujo de trabajo (`no_of_attachments`)
+* Establecer el valor de la variable de flujo de trabajo (`no_of_attachments`)
 
 ```java
  package com.aemforms.formattachments.core;
@@ -114,7 +114,7 @@ public class PopulateListOfDocuments implements WorkflowProcess {
 >
 > Asegúrese de haber definido las siguientes variables en el flujo de trabajo para que el código funcione
 > *listOfDocuments* - variable de tipo ArrayList of Documents
-> *attachmentNames* - variable de tipo ArrayList of String
+> *attachmentNames*: variable de tipo ArrayList de cadena
 > *no_of_attachments* - variable de tipo Double
 
 ## Siguientes pasos

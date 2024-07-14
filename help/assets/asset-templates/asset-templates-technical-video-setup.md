@@ -24,11 +24,11 @@ Las plantillas de recursos permiten a los especialistas en marketing crear, admi
 
 >[!NOTE]
 >
->AEM **debe** estar conectado a un servidor de InDesign en ejecución cuando se carga la plantilla INDD. Parte del procesamiento inicial del archivo INDD requiere un servidor de InDesign.
+>AEM La plantilla INDD **debe** estar conectada a un servidor de InDesign en ejecución cuando se cargue. Parte del procesamiento inicial del archivo INDD requiere un servidor de InDesign.
 
 ## Descargar prueba de InDesign Server {#download-indesign-server-trial}
 
-Descargar [InDesign Server de prueba de descarga Sitio web](https://www.adobeprerelease.com/)
+Descargar [sitio web de descarga de prueba de InDesign Server](https://www.adobeprerelease.com/)
 
 ## Iniciando InDesign Server {#starting-indesign-server}
 

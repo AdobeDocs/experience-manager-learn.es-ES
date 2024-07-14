@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # AEM Pasos para resolver los problemas relacionados con la memoria en la
 
-*AEM Este vídeo explica los pasos para resolver los problemas relacionados con la memoria en la aplicación de la.*
+AEM *Este vídeo explica los pasos para resolver los problemas relacionados con la memoria en el espacio de trabajo de la.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335473?quality=12&learn=on)

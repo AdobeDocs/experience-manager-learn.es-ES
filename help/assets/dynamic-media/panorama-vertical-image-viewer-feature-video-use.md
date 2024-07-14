@@ -24,7 +24,7 @@ Las mejoras del visualizador de Dynamic Media AEM en la versión 6.4 incluyen la
 
 >[!NOTE]
 >
->AEM En el vídeo se da por hecho que la instancia de se está ejecutando en el modo Dynamic Media S7. [AEM Puede encontrar instrucciones sobre la configuración de la con Dynamic Media aquí.](https://helpx.adobe.com/es/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
+>AEM En el vídeo se da por hecho que la instancia de se está ejecutando en el modo Dynamic Media S7. AEM [Aquí se pueden encontrar instrucciones para configurar la con Dynamic Media.](https://helpx.adobe.com/es/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
 
 ## Visor de RV panorámico y panorámico
 

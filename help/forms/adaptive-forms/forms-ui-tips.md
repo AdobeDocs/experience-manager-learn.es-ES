@@ -20,12 +20,12 @@ ht-degree: 1%
 # Alternar visibilidad del campo de contraseña
 
 Un caso de uso común es permitir que los rellenadores de formulario cambien a la visibilidad del texto introducido en el campo de contraseña.
-Para llevar a cabo este caso de uso, he utilizado el icono de ojo del [Biblioteca impresionante de fuentes](https://fontawesome.com/). El CSS requerido y eye.svg se incluyen en la biblioteca de cliente creada para esta demostración.
+Para aplicar este ejemplo de uso, he usado el icono de ojo de la [Biblioteca de fuentes impresionantes](https://fontawesome.com/). El CSS requerido y eye.svg se incluyen en la biblioteca de cliente creada para esta demostración.
 
 
 ## Código de muestra
 
-El formulario adaptable tiene un campo de tipo PasswordBox llamado **ssnField**.
+El formulario adaptable tiene un campo de tipo PasswordBox denominado **ssnField**.
 
 El siguiente código se ejecuta cuando se carga el formulario
 
@@ -49,7 +49,7 @@ $(document).ready(function() {
 });
 ```
 
-El siguiente CSS se utilizó para colocar la variable **ojo** dentro del campo contraseña
+El siguiente CSS se utilizó para colocar el icono **eye** dentro del campo de contraseña
 
 ```javascript
 .svg-inline--fa {
@@ -66,10 +66,10 @@ El siguiente CSS se utilizó para colocar la variable **ojo** dentro del campo c
 
 ## Implementar el ejemplo de contraseña de alternancia
 
-* Descargue la [biblioteca de cliente](assets/simple-ui-tips.zip)
-* Descargue la [formulario de ejemplo](assets/simple-ui-tricks-form.zip)
-* Importe la biblioteca de cliente mediante el [IU del administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
-* Importe el formulario de ejemplo con la variable [Forms y documento](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* [Previsualización del formulario](http://localhost:4502/content/dam/formsanddocuments/simpleuitips/jcr:content?wcmmode=disabled)
+* Descargar la [biblioteca de cliente](assets/simple-ui-tips.zip)
+* Descargar [formulario de ejemplo](assets/simple-ui-tricks-form.zip)
+* Importe la biblioteca de cliente mediante la [IU del administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
+* Importar el formulario de ejemplo con [Forms y el documento](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* [Vista previa del formulario](http://localhost:4502/content/dam/formsanddocuments/simpleuitips/jcr:content?wcmmode=disabled)
 
 

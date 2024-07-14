@@ -18,12 +18,12 @@ ht-degree: 0%
 
 # Controlar el envío del PDF
 
-AEM En esta parte crearemos un servlet simple que se ejecuta en la publicación de la documentación para gestionar el envío del PDF desde Acrobat/Reader. Este servlet, a su vez, realiza una solicitud de POST AEM HTTP a un servlet que se ejecuta en una instancia de autor responsable de guardar los datos enviados como un `nt:file` AEM en el repositorio de autor de la.
+AEM En esta parte crearemos un servlet simple que se ejecuta en Publish para gestionar el envío de PDF desde Acrobat/Reader. Este servlet, a su vez, realizará una solicitud de POST AEM AEM HTTP a un servlet que se ejecute en una instancia de autor responsable de guardar los datos enviados como un nodo `nt:file` en el repositorio de la instancia de autor de la publicación de datos (Author) en el que se ejecuta la instancia de autor de la publicación de datos ().
 
-El siguiente es el código del servlet que administra el envío del PDF. En este servlet realizamos una llamada al POST a un servlet montado en **/bin/startworkflow** AEM en una instancia de autor de. AEM Este servlet guarda los datos del formulario en el repositorio del autor de la.
+El siguiente es el código del servlet que administra el envío del PDF. En este servlet realizamos una llamada al POST AEM a un servlet montado en **/bin/startworkflow** en una instancia de autor de la. AEM Este servlet guarda los datos del formulario en el repositorio del autor de la.
 
 
-## AEM Servlet de publicación de
+## AEM servlet de Publish
 
 ```java
 package com.aemforms.handlepdfsubmission.core.servlets;
@@ -198,6 +198,6 @@ public class StartWorkflow extends SlingAllMethodsServlet {
 }
 ```
 
-AEM Se configura un lanzador de flujo de trabajo de para almacenar en déclencheur cada vez que se genera un nuevo recurso de tipo `nt:file` se crea en la `/content/pdfsubmissions` nodo. Este flujo de trabajo creará un PDF estático o no interactivo combinando los datos enviados con la plantilla xdp. A continuación, el PDF generado se asigna a un usuario para su revisión y aprobación.
+AEM Se configura un lanzador de flujo de trabajo de para almacenar en déclencheur cada vez que se crea un nuevo recurso de tipo `nt:file` en el nodo `/content/pdfsubmissions`. Este flujo de trabajo creará un PDF estático o no interactivo combinando los datos enviados con la plantilla xdp. A continuación, el PDF generado se asigna a un usuario para su revisión y aprobación.
 
-Para almacenar los datos enviados en `/content/pdfsubmissions` nodo, hacemos uso de `GetResolver` El servicio OSGi nos permite guardar los datos enviados mediante el `fd-service` usuario del sistema que está disponible en cada instalación de AEM Forms.
+Para almacenar los datos enviados en el nodo `/content/pdfsubmissions`, utilizamos el servicio OSGi `GetResolver` que nos permite guardar los datos enviados mediante el usuario del sistema `fd-service`, que está disponible en cada instalación de AEM Forms.

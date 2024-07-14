@@ -25,7 +25,7 @@ Smart Crop utiliza Adobe Sensei para eliminar las costosas y laboriosas tareas d
 
 >[!NOTE]
 >
->AEM En el vídeo se da por hecho que la instancia de se está ejecutando en el modo Dynamic Media S7. [AEM Puede encontrar instrucciones sobre la configuración de la con Dynamic Media aquí.](https://helpx.adobe.com/es/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
+>AEM En el vídeo se da por hecho que la instancia de se está ejecutando en el modo Dynamic Media S7. AEM [Aquí se pueden encontrar instrucciones para configurar la con Dynamic Media.](https://helpx.adobe.com/es/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
 
 ## La función Dynamic Media Smart Crop de Adobe Experience Manager incluye
 

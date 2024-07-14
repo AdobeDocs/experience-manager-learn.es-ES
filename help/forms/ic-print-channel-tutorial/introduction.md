@@ -23,13 +23,13 @@ Interactive Communications es nueva en AEM Forms 6.4. Este documento le guiará 
 
 ## Requisitos previos {#prerequistes}
 
-[AEM Descargue e importe el recurso relacionado con este tutorial en el uso de un administrador de paquetes para descargar el recurso de la interfaz de usuario en el administrador de paquetes.](assets/gettingstartedassets.zip)Este archivo zip contiene imágenes, fragmentos de documento, la configuración de la carpeta inspeccionada y el archivo de diseño (xdp) como parte del paquete de recursos
+AEM [Descargue e importe el recurso relacionado con este tutorial en la documentación de la aplicación mediante el administrador de paquetes.](assets/gettingstartedassets.zip)Este archivo zip contiene imágenes, fragmentos de documento, la configuración de la carpeta inspeccionada y el archivo de diseño (xdp) como parte del paquete de recursos
 
 [Descargue y descomprima este archivo.](assets/warfileandswaggerfile.zip) Este archivo contiene el archivo SampleRest.war que debe implementarse en Tomcat y el archivo swagger que debe utilizarse para configurar el origen de datos.
 
 Al completar este tutorial, habrá aprendido lo siguiente:
 
-* Crear fuente de datos
+* Crear Source de datos
 * Crear modelo de datos de formulario
 * Crear fragmentos de documento
 * Configurar tablas y gráficos

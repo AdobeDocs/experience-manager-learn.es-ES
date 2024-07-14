@@ -33,7 +33,7 @@ AEM El siguiente vídeo le guiará por los pasos necesarios para crear la config
 
 Si se produce un error al configurar la clonación de nube de Adobe Sign, se pueden realizar los siguientes pasos para solucionar los problemas
 * Asegúrese de que la URL de redireccionamiento especificada en la aplicación API de Acrobat Sign tenga el siguiente formato
-&lt;your instance=&quot;&quot; name=&quot;&quot;>/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/&lt;container>.
+&lt;su nombre de instancia>/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/&lt;container>.
 Por ejemplo: https://author-p24107-e32034.adobeaemcloud.com/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/FormsCS. FormsCS es el nombre del contenedor que contendrá la configuración de la nube
 * Asegúrese de que la URL de oAuth sea correcta
 * Compruebe el ID de cliente y el secreto de cliente

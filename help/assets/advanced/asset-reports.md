@@ -1,5 +1,5 @@
 ---
-title: Informes de recursos en AEM Assets
+title: Informes de Assets en AEM Assets
 description: AEM Assets proporciona un marco de informes de nivel empresarial que se adapta a repositorios grandes a través de una experiencia de usuario intuitiva.
 feature: Asset Reports
 topic: Administration
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ---
 
-# Informes de recursos{#using-reports-in-aem-assets}
+# Informes de Assets{#using-reports-in-aem-assets}
 
 AEM Assets proporciona un marco de informes de nivel empresarial que se adapta a repositorios grandes a través de una experiencia de usuario intuitiva.
 
@@ -28,4 +28,4 @@ AEM Assets proporciona un marco de informes de nivel empresarial que se adapta a
 
 >[!IMPORTANT]
 >
->AEM La versión 6.5 de permite configurar [informes de recursos](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html#prerequisite-for-reporting), lo que permite a los administradores definir qué se rastrea e incluye en los informes.
+>AEM 6.5 permite configurar [informes de recursos](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html#prerequisite-for-reporting), lo que permite a los administradores definir qué se rastrea y qué se incluye en los informes.

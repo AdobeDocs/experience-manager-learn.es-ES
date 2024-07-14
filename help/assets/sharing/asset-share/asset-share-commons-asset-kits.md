@@ -21,8 +21,8 @@ ht-degree: 0%
 
 # Uso compartido de recursos Commons Asset Kit
 
-Aprenda a utilizar los recursos compartidos comunes [kit de recursos](https://opensource.adobe.com/asset-share-commons/pages/asset-kit/overview/) para generar páginas web personalizadas y compartibles que enumeran recursos de carpetas o colecciones de AEM Assets.
+Aprenda a utilizar [kit de recursos](https://opensource.adobe.com/asset-share-commons/pages/asset-kit/overview/) de Asset Share Common para generar páginas web personalizadas y compartibles que enumeran recursos de carpetas o colecciones de AEM Assets.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415467?quality=12&learn=on)
 
-_[Kit de recursos](https://opensource.adobe.com/asset-share-commons/pages/asset-kit/overview/) solo está disponible en Asset Share Commons 2.5.4+_
+_[El kit de recursos](https://opensource.adobe.com/asset-share-commons/pages/asset-kit/overview/) solo está disponible en Asset Share Commons 2.5.4+_

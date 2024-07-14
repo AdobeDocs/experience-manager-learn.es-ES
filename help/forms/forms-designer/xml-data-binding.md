@@ -1,6 +1,6 @@
 ---
 title: Crear enlaces de datos XML en formularios basados en XDP
-description: AEM Breve vídeo que describe cómo enlazar un formulario de datos a una fuente de datos XML
+description: AEM Breve vídeo que describe cómo enlazar un formulario de datos a un Source de datos XML
 version: 6.5
 feature: Forms Designer,Designer
 topic: Development
@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # Crear enlaces de datos XML en AEM Forms Designer
 
-AEM Breve vídeo que describe cómo enlazar un formulario de datos a una fuente de datos XML
+AEM Breve vídeo que describe cómo enlazar un formulario de datos a un Source de datos XML
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427625/?learn=on)

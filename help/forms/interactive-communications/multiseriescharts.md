@@ -38,8 +38,8 @@ Para crear gráficos de varias series en AEM Forms, debe crear un modelo de dato
 Para probar esto en su sistema, siga los siguientes pasos
 
 * [AEM Descargue e importe MutualFundFactSheet.zip mediante el Administrador de paquetes de.](assets/mutualfundfactsheet.zip)
-* [Descargue SeriesChartSampleData.json en su disco duro.](assets/serieschartsampledata.json) Estos son los datos de ejemplo que se utilizan para rellenar el gráfico.
-* [Vaya a Forms y Documentos.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* [Descargue SeriesChartSampleData.json en su disco duro.](assets/serieschartsampledata.json) Estos son los datos de ejemplo que se usan para rellenar el gráfico.
+* [Navegar a Forms y documentos.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Seleccione suavemente la plantilla de comunicaciones interactivas &quot;MutualFundGrowthFactSheet&quot;.
 * Haga clic en Vista previa | Canal de impresión | Cargar datos de ejemplo.
 * Busque el archivo de datos de ejemplo que se incluye en este artículo.

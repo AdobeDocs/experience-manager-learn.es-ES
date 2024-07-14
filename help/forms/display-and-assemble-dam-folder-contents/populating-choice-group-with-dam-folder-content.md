@@ -83,7 +83,7 @@ public class ListFolderContent extends SlingSafeMethodsServlet {
 }
 ```
 
-## Crear una biblioteca de cliente con la función de JavaScript
+## Crear una biblioteca de cliente con la función JavaScript
 
 El servlet se invoca desde una función de JavaScript. La función devuelve un objeto de matriz que se utilizará para rellenar el componente de grupo de opciones
 
@@ -111,11 +111,11 @@ function getDAMFolderAssets(damFolder) {
 
 ## Crear formulario adaptable
 
-Cree un formulario adaptable y asócielo a la biblioteca de cliente **listfolderassets**. Agregue un componente Casilla de verificación al formulario. Utilice el editor de reglas para rellenar las opciones de la casilla de verificación como se muestra en la captura de pantalla
+Cree un formulario adaptable y asócielo con la biblioteca de cliente **listfolderassets**. Agregue un componente Casilla de verificación al formulario. Utilice el editor de reglas para rellenar las opciones de la casilla de verificación como se muestra en la captura de pantalla
 ![set-options](assets/set-options-newsletter.png)
 
-Estamos invocando la función de JavaScript llamada **getDAMFolderAssets** y pasando la ruta de los recursos de la carpeta DAM a la lista del formulario.
+Estamos invocando la función de JavaScript llamada **getDAMFolderAssets** y pasando la ruta de los recursos de la carpeta DAM a la lista en el formulario.
 
 ## Siguientes pasos
 
-[Montar los recursos seleccionados](./assemble-selected-newsletters.md)
+[Montar el Assets seleccionado](./assemble-selected-newsletters.md)

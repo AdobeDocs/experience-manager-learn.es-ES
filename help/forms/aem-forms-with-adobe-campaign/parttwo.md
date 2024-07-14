@@ -246,7 +246,7 @@ return null;
 
 Cree un controlador de envío personalizado para administrar el envío del formulario adaptable. En este controlador de envío personalizado realizaremos una llamada al método createProfile de CampaignService. El método createProfile acepta un objeto JSONbject que representa el perfil que debe crearse.
 
-Para obtener más información sobre el controlador de envío personalizado en AEM Forms, siga estos pasos [vincular](/help/forms/adaptive-forms/custom-submit-aem-forms-article.md)
+Para obtener más información acerca del controlador de envío personalizado en AEM Forms, siga este [vínculo](/help/forms/adaptive-forms/custom-submit-aem-forms-article.md)
 
 El siguiente es el código del envío personalizado
 
@@ -267,8 +267,8 @@ Una vez que hayamos definido el servicio y la acción de envío personalizada, e
 
 
 * [Asegúrese de haber seguido los pasos descritos aquí](aem-forms-with-campaign-standard-getting-started-tutorial.md)
-* [Importar formularios adaptables y controladores de envío personalizados mediante el administrador de paquetes](assets/create-acs-profile-on-af-submission.zip). Este paquete contiene un formulario adaptable configurado para enviarse a una acción de envío personalizada.
-* Previsualización de [formulario](http://localhost:4502/content/dam/formsanddocuments/createcampaignprofile/jcr:content?wcmmode=disabled)
+* [Importar formulario adaptable y controlador de envío personalizado mediante el administrador de paquetes](assets/create-acs-profile-on-af-submission.zip). Este paquete contiene un formulario adaptable configurado para enviarse a una acción de envío personalizada.
+* Previsualizar el [formulario](http://localhost:4502/content/dam/formsanddocuments/createcampaignprofile/jcr:content?wcmmode=disabled)
 * Rellene todos los campos y envíe
 * Se crea un nuevo perfil en la instancia ACS
 

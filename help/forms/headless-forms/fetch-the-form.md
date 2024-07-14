@@ -18,11 +18,11 @@ ht-degree: 1%
 
 # Recuperar el JSON del formulario
 
-Inicie sesión en la instancia de autor de AEM Forms y cree un nuevo formulario adaptable con el **En blanco con componentes principales** plantilla. Publique el formulario en la instancia de publicación.
+Inicie sesión en la instancia de autor de AEM Forms y cree un nuevo formulario adaptable con la plantilla **En blanco con componentes principales**. Publish el formulario en la instancia de publicación.
 
 Para incrustar el formulario, primero recuperamos el json del formulario adaptable realizando una llamada GET en el servidor de publicación.
 
-El siguiente fragmento de código recupera el json del formulario adaptable llamado **contacto**
+El siguiente fragmento de código recupera el json del formulario adaptable llamado **contact**
 
 ```javascript
 const getForm = async () => {
@@ -78,7 +78,7 @@ export default function Contact(){
 }
 ```
 
-El código anterior utiliza componentes html nativos asignados a los componentes utilizados en el formulario adaptable. Por ejemplo, se asigna el componente de formulario adaptable de entrada de texto al componente TextField. Los componentes nativos utilizados en el artículo [se puede descargar desde aquí](./assets/native-components.zip)
+El código anterior utiliza componentes html nativos asignados a los componentes utilizados en el formulario adaptable. Por ejemplo, se asigna el componente de formulario adaptable de entrada de texto al componente TextField. Los componentes nativos utilizados en el artículo [ se pueden descargar desde aquí](./assets/native-components.zip)
 
 ## Siguientes pasos
 

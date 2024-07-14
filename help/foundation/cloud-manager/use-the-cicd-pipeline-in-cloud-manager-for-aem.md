@@ -1,6 +1,6 @@
 ---
 title: Uso de la canalización de CI/CD en Adobe Cloud Manager
-description: Adobe AEM AEM Cloud Manager proporciona una canalización de CD/CI de autoservicio sencilla pero flexible que permite a los equipos de proyecto de la aplicación implementar código de forma rápida, segura y coherente en todos los entornos de alojados en AMS. Esta serie de vídeos explora la configuración y ejecución de la canalización de CI/CD de Cloud Manager en situaciones de error y éxito.
+description: Adobe Cloud Manager AEM AEM proporciona una canalización de CD/CI de autoservicio sencilla pero flexible que permite a los equipos de proyecto de los equipos de trabajo implementar código de forma rápida, segura y coherente en todos los entornos de alojados en AMS. Esta serie de vídeos explora la configuración y ejecución de la canalización de CD/CI de Cloud Manager en situaciones de error y éxito.
 sub-product: Experience Manager Cloud Manager, Experience Manager
 doc-type: Feature Video
 topic: Architecture
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Uso de la canalización de CI/CD en Adobe Cloud Manager
 
-Adobe AEM AEM Cloud Manager proporciona una canalización de CD/CI de autoservicio sencilla pero flexible que permite a los equipos de proyecto de la aplicación implementar código de forma rápida, segura y coherente en todos los entornos de alojados en AMS. Esta serie de vídeos explora la configuración y ejecución de la canalización de CI/CD de Cloud Manager en situaciones de error y éxito.
+Adobe Cloud Manager AEM AEM proporciona una canalización de CD/CI de autoservicio sencilla pero flexible que permite a los equipos de proyecto de los equipos de trabajo implementar código de forma rápida, segura y coherente en todos los entornos de alojados en AMS. Esta serie de vídeos explora la configuración y ejecución de la canalización de CD/CI de Cloud Manager en situaciones de error y éxito.
 
 ## Introducción
 
@@ -40,21 +40,21 @@ En este vídeo se explica la configuración de la canalización para el programa
 
 ## Ejecución fallida de una canalización
 
-En este vídeo se explora la ejecución de la canalización de CI/CD mediante código que falla en las comprobaciones de calidad requeridas por Cloud Manager, utilizando **[!DNL yellow]** rama del repositorio.
+Este vídeo explora la ejecución de la canalización de CI/CD mediante código que falla en las comprobaciones de calidad requeridas por Cloud Manager, utilizando la rama del repositorio **[!DNL yellow]**.
 
 >[!VIDEO](https://video.tv.adobe.com/v/23084?quality=12&learn=on)
 
 ## Una ejecución correcta de la canalización
 
-En este vídeo se analiza la ejecución correcta de la canalización de CI/CD mediante código que pasa las comprobaciones de calidad requeridas por Cloud Manager, utilizando **[!DNL master]** rama del repositorio.
+En este vídeo se analiza la ejecución correcta de la canalización de CI/CD mediante código que pasa las comprobaciones de calidad necesarias de Cloud Manager, utilizando la rama del repositorio **[!DNL master]**.
 
-Este vídeo también trata la [!UICONTROL Actividad] consola en Cloud Manager, que permite volver a entrar en ejecuciones activas o revisar las ejecuciones completadas o fallidas.
+Este vídeo también trata sobre la consola [!UICONTROL Activity] en Cloud Manager, que permite volver a entrar en ejecuciones activas o revisar las ejecuciones completadas o fallidas.
 
 >[!VIDEO](https://video.tv.adobe.com/v/23085?quality=12&learn=on)
 
 ## Materiales de apoyo
 
 * [Guía del usuario de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=es)
-* [Descarga de escaneo de código [!DNL SonarQube] reglas](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html)
+* [Descargar análisis de código [!DNL SonarQube] reglas](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html)
    * *XLSX disponible en la parte inferior de la sección vinculada*
 * [[!DNL SonarQube] Índice de reglas Java™](https://rules.sonarsource.com/java/)

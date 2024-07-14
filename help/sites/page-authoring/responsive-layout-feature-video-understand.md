@@ -28,4 +28,4 @@ Adobe Experience Manager Sites permite a un autor administrar la anchura de un c
 
 ## Recursos adicionales {#additional-resources}
 
-* [Documentación de diseño interactiva](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html)
+* [Documentación de diseño adaptable](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html)

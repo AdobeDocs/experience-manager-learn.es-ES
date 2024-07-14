@@ -41,16 +41,16 @@ A lo largo del tutorial, proporcionaremos explicaciones, ejemplos de código y s
 
    ![Crear carpeta](./assets/1/create-configuration.png)
 
-   Proporcione un __title__ y __name__ y marque __Consultas persistentes de GraphQL__ y __Modelos de fragmento de contenido__.
+   Proporcione un __título__ y __nombre__, y compruebe __Consultas persistentes de GraphQL__ y __Modelos de fragmentos de contenido__.
 
 
 ## Modelos de fragmento de contenido
 
-1. Vaya a __Herramientas > Modelos de fragmentos de contenido__ y seleccione la carpeta con el nombre de la configuración creada en el paso 1.
+1. Vaya a __Herramientas > Modelos de fragmento de contenido__ y seleccione la carpeta con el nombre de la configuración creada en el paso 1.
 
    ![Carpeta de modelo](./assets/1/model-folder.png)
 
-1. Dentro de la carpeta, seleccione __Crear__ y nombre el modelo __Teaser__. Añada los siguientes tipos de datos a __Teaser__ modelo.
+1. Dentro de la carpeta, seleccione __Crear__ y asigne un nombre al modelo __Teaser__. Agregue los siguientes tipos de datos al modelo __Teaser__.
 
    | Tipo de datos | Nombre | Requerido | Opciones |
    |----------|------|----------|---------|
@@ -60,9 +60,9 @@ A lo largo del tutorial, proporcionaremos explicaciones, ejemplos de código y s
    | Texto multilínea | Descripción | no | Asegúrese de que el tipo predeterminado sea texto enriquecido |
    | Lista desglosada | Estilo | sí | Procesar como menú desplegable. Las opciones son Hero -> Hero y Destacado -> destacado |
 
-   ![Modelo de teaser](./assets/1/teaser-model.png)
+   ![Modelo teaser](./assets/1/teaser-model.png)
 
-1. Dentro de la carpeta, cree un segundo modelo denominado __Oferta__. Haga clic en Crear y asigne al modelo el nombre &quot;Oferta&quot; y añada los siguientes tipos de datos:
+1. Dentro de la carpeta, cree un segundo modelo llamado __Oferta__. Haga clic en Crear y asigne al modelo el nombre &quot;Oferta&quot; y añada los siguientes tipos de datos:
 
    | Tipo de datos | Nombre | Requerido | Opciones |
    |----------|------|----------|---------|
@@ -82,16 +82,16 @@ A lo largo del tutorial, proporcionaremos explicaciones, ejemplos de código y s
 
 ## Fragmentos de contenido
 
-1. Ahora, vaya a Recursos y cree una carpeta para el nuevo sitio. Haga clic en crear y asigne un nombre a la carpeta.
+1. Ahora, vaya a Assets y cree una carpeta para el nuevo sitio. Haga clic en crear y asigne un nombre a la carpeta.
 
    ![Agregar carpeta](./assets/1/create-folder.png)
 
-1. Una vez creada la carpeta, selecciónela y abra su __Propiedades__.
-1. En la carpeta de __Configuraciones de nube__ pestaña, seleccione la configuración [creado anteriormente](#enable-content-fragments-and-graphql).
+1. Una vez creada la carpeta, selecciónela y abra sus __Propiedades__.
+1. En la ficha __Configuraciones en la nube__ de la carpeta, seleccione la configuración [creada anteriormente](#enable-content-fragments-and-graphql).
 
-   ![AEM Carpeta de recursos configuración de nube sin encabezado](./assets/1/cloud-config.png)
+   AEM ![Configuración de nube de la carpeta de recursos sin encabezado](./assets/1/cloud-config.png)
 
-   Haga clic en la carpeta nueva y cree un teaser. Clic __Crear__ y __Fragmento de contenido__ y seleccione la __Teaser__ modelo. Asigne un nombre al modelo __Héroe__ y haga clic en __Crear__.
+   Haga clic en la carpeta nueva y cree un teaser. Haga clic en __Crear__ y en __Fragmento de contenido__ y seleccione el modelo __Teaser__. Asigne un nombre al modelo __Hero__ y haga clic en __Crear__.
 
    | Nombre | Notas |
    |----------|------|
@@ -107,15 +107,15 @@ A lo largo del tutorial, proporcionaremos explicaciones, ejemplos de código y s
 
 1. Vaya a __Herramientas > GraphQL__
 
-   ![AEM GraphiQL de](./assets/1/endpoint-nav.png)
+   AEM ![GraphiQL](./assets/1/endpoint-nav.png)
 
-1. Clic __Crear__ y asigne un nombre al nuevo punto de conexión y elija la configuración recién creada.
+1. Haga clic en __Crear__, asigne un nombre al nuevo extremo y elija la configuración recién creada.
 
-   ![AEM Punto final de GraphQL sin encabezado](./assets/1/endpoint.png)
+   AEM ![Extremo de GraphQL sin encabezado](./assets/1/endpoint.png)
 
 ## Consultas persistentes de GraphQL
 
-1. Vamos a probar el nuevo punto final. Vaya a __Herramientas > GraphQL Query Editor__ y elija el punto final de la lista desplegable en la parte superior derecha de la ventana.
+1. Vamos a probar el nuevo punto final. Vaya a __Herramientas > Editor de consultas de GraphQL__ y elija el punto final en la lista desplegable de la parte superior derecha de la ventana.
 
 1. En el editor de consultas, cree algunas consultas diferentes.
 
@@ -130,7 +130,7 @@ A lo largo del tutorial, proporcionaremos explicaciones, ejemplos de código y s
    }
    ```
 
-   Debe obtener una lista que contenga el fragmento único creado [superior](#create-content).
+   Debe obtener una lista que contenga el fragmento único creado [arriba](#create-content).
 
    AEM Para este ejercicio, cree una consulta completa que utilice la aplicación sin encabezado de la aplicación de la. Cree una consulta que devuelva un solo teaser por ruta. En el editor de consultas, introduzca la siguiente consulta:
 
@@ -174,7 +174,7 @@ A lo largo del tutorial, proporcionaremos explicaciones, ejemplos de código y s
    }
    ```
 
-   En el __variables de consulta__ en la parte inferior, introduzca:
+   En la entrada __variables de consulta__ de la parte inferior, escriba:
 
    ```json
    {
@@ -184,15 +184,15 @@ A lo largo del tutorial, proporcionaremos explicaciones, ejemplos de código y s
 
    >[!NOTE]
    >
-   > Es posible que tenga que ajustar la variable de consulta `path` se basa en los nombres de carpeta y fragmento.
+   > Es posible que necesite ajustar la variable de consulta `path` en función de los nombres de carpeta y fragmento.
 
 
    Ejecute la consulta para recibir los resultados del fragmento de contenido creado anteriormente.
 
-1. Clic __Guardar__  para mantener (guardar) la consulta y asignarle un nombre __teaser__. Esto nos permite hacer referencia a la consulta por su nombre en la aplicación.
+1. Haga clic en __Guardar__ para mantener (guardar) la consulta y asigne un nombre a la consulta __teaser__. Esto nos permite hacer referencia a la consulta por su nombre en la aplicación.
 
 ## Pasos siguientes
 
-Enhorabuena. AEM Ha configurado correctamente la configuración as a Cloud Service para permitir la creación de fragmentos de contenido y extremos de GraphQL. También ha creado un modelo de fragmento de contenido y un fragmento de contenido, y ha definido un punto final de GraphQL y una consulta persistente. AEM Ya está listo para pasar al siguiente capítulo del tutorial, donde aprenderá a crear una aplicación de React sin encabezado que consuma los fragmentos de contenido y el punto de conexión de GraphQL creados en este capítulo.
+Enhorabuena. Ha configurado correctamente AEM as a Cloud Service para permitir la creación de fragmentos de contenido y extremos de GraphQL. También ha creado un modelo de fragmento de contenido y un fragmento de contenido, y ha definido un punto final de GraphQL y una consulta persistente. AEM Ya está listo para pasar al siguiente capítulo del tutorial, donde aprenderá a crear una aplicación de React sin encabezado que consuma los fragmentos de contenido y el punto de conexión de GraphQL creados en este capítulo.
 
 [AEM Capítulo siguiente: API sin encabezado de y React](./2-aem-headless-apis-and-react.md)

@@ -64,7 +64,7 @@ Dado que las plantillas básicas suelen diseñarse en Photoshop pero se implemen
 Los proyectos de plantilla pueden ser relativamente simples o extremadamente complejos según las reglas y necesidades empresariales de la aplicación. Las plantillas básicas se llaman desde el servidor de imágenes; sin embargo, debido a la flexibilidad del entorno de Dynamic Media Classic, incluso puede anidar plantillas dentro de otras plantillas, lo que le permite crear imágenes bastante complejas que se pueden vincular mediante variables con nombres comunes.
 
 - Más información sobre [Conceptos básicos de plantilla](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html).
-- Obtenga información sobre cómo crear un [Plantilla básica](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template.html#creating_a_template).
+- Aprenda a crear una [plantilla básica](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template.html#creating_a_template).
 
 ## Creación de una plantilla básica
 
@@ -72,16 +72,16 @@ Cuando se trabaja con una plantilla básica, normalmente se siguen los pasos de 
 
 ![imagen](assets/basic-templates/basic-templates-1.png)
 
-_Flujo de trabajo Plantilla básica._
+_Flujo de trabajo de plantilla básica._
 
 1. Diseñe y cree sus recursos. La mayoría de los usuarios lo hacen en Adobe Photoshop. Diseñe recursos con el tamaño exacto que necesite: si se trata de una imagen de 200 píxeles para una página en miniatura, diseñe a 200 píxeles. Si necesita hacer zoom, diseñe un tamaño de aproximadamente 2000 píxeles. Utilice Photoshop (o Illustrator guardados como mapa de bits) para crear los recursos y utilice Dynamic Media Classic para ensamblar las piezas, administrar las capas y agregar variables.
-2. Después de diseñar los recursos gráficos, cárguelos en Dynamic Media Classic. En lugar de cargar recursos individuales desde el PSD, le recomendamos que cargue todo el archivo de PSD con capas y pida a Dynamic Media Classic que cree un archivo por capa, utilizando **Mantener capas** opción al cargar (consulte más abajo para obtener más información). _Flujo de trabajo de texto: si crea texto dinámico, cargue también sus fuentes. El texto dinámico es variable y se controla mediante la dirección URL. Si el texto es estático o sólo contiene unas pocas frases cortas que no cambian (por ejemplo, etiquetas que dicen &quot;Nuevo&quot; o &quot;Venta&quot; en lugar de &quot;X% de descuento&quot;, siendo la X un número variable), le recomendamos que procese previamente el texto en Photoshop y que lo cargue como capas rasterizadas en forma de imágenes. Es más fácil y puede aplicar estilo al texto exactamente como desee._
-3. Cree la plantilla en Dynamic Media Classic con el editor Conceptos básicos de plantilla del menú Generar y agregue capas de imagen. Flujo de trabajo de texto: cree capas de texto en el mismo editor. Este paso es necesario cuando se crea una plantilla manualmente en Dynamic Media Classic. Elija un tamaño de lienzo que coincida con su diseño, arrastre y suelte las imágenes en el lienzo y establezca las propiedades de la capa (tamaño, rotación, opacidad, etc.). No está colocando todas las capas posibles en la plantilla, solo un marcador de posición por capa de imagen. _Flujo de trabajo de texto: las capas de texto se crean con la herramienta Texto, de forma similar a la creación de capas de texto en Photoshop. Puede elegir una fuente y aplicarle un estilo con las mismas opciones disponibles con la herramienta Texto de Photoshop._ Otro flujo de trabajo es cargar un PSD y hacer que Dynamic Media Classic genere una plantilla &quot;libre&quot;, e incluso puede volver a crear capas de texto. Esto se analiza con más detalle más adelante.
-4. Una vez creadas las capas, añada parámetros (variables) a cualquier propiedad de cualquier capa que desee controlar a través de la dirección URL, incluido el origen de la capa (la propia imagen ). _Flujo de trabajo de texto: También puede añadir parámetros a las capas de texto, tanto para controlar el contenido del texto como el tamaño y la posición de la propia capa, así como todas las opciones de formato como el color de fuente, el tamaño de fuente, el seguimiento horizontal, etc._
+2. Después de diseñar los recursos gráficos, cárguelos en Dynamic Media Classic. En lugar de cargar recursos individuales del PSD, le recomendamos que cargue todo el archivo de PSD por capas y que Dynamic Media Classic cree un archivo por capa, mediante la opción **Mantener capas** al cargar (consulte a continuación para obtener más información). _Flujo de trabajo de texto: si crea texto dinámico, cargue también sus fuentes. El texto dinámico es variable y se controla mediante la dirección URL. Si el texto es estático o sólo contiene unas pocas frases cortas que no cambian (por ejemplo, etiquetas que dicen &quot;Nuevo&quot; o &quot;Venta&quot; en lugar de &quot;X% de descuento&quot;, siendo la X un número variable), le recomendamos que procese previamente el texto en Photoshop y que lo cargue como capas rasterizadas en forma de imágenes. Es más fácil y puede aplicar estilo al texto exactamente como desee._
+3. Cree la plantilla en Dynamic Media Classic con el editor Conceptos básicos de plantilla del menú Generar y agregue capas de imagen. Flujo de trabajo de texto: cree capas de texto en el mismo editor. Este paso es necesario cuando se crea una plantilla manualmente en Dynamic Media Classic. Elija un tamaño de lienzo que coincida con su diseño, arrastre y suelte las imágenes en el lienzo y establezca las propiedades de la capa (tamaño, rotación, opacidad, etc.). No está colocando todas las capas posibles en la plantilla, solo un marcador de posición por capa de imagen. _Flujo de trabajo de texto: las capas de texto se crean con la herramienta Texto, de forma similar a la creación de capas de texto en Photoshop. Puede elegir una fuente y aplicarle un estilo con las mismas opciones disponibles con la herramienta Texto de Photoshop._ Otro flujo de trabajo es cargar un PSD y hacer que Dynamic Media Classic genere una plantilla &quot;libre&quot;, y puede incluso volver a crear capas de texto. Esto se analiza con más detalle más adelante.
+4. Una vez creadas las capas, añada parámetros (variables) a cualquier propiedad de cualquier capa que desee controlar a través de la dirección URL, incluido el origen de la capa (la propia imagen ). _Flujo de trabajo de texto: también puede agregar parámetros a las capas de texto, tanto para controlar el contenido del texto como el tamaño y la posición de la propia capa, así como todas las opciones de formato como el color de fuente, el tamaño de fuente, el seguimiento horizontal, etc._
 5. Cree un ajuste preestablecido de imagen que coincida con el tamaño de la plantilla. Se recomienda hacerlo para que la plantilla siempre se llame en un tamaño 1:1 y también para agregar enfoque a cualquier capa de imagen grande que se ajuste al tamaño de la plantilla. Si está creando una plantilla a la que ampliar, este paso no es necesario.
-6. Publique, copie la dirección URL de la vista previa de Dynamic Media Classic y pruébela en un explorador.
+6. Publish, copie la dirección URL de la vista previa de Dynamic Media Classic y pruébela en un explorador.
 
-## Preparación y carga de recursos de plantilla en Dynamic Media Classic
+## Preparación y carga de la plantilla de Assets en Dynamic Media Classic
 
 Antes de cargar los recursos de plantilla en Dynamic Media Classic, deberá completar algunos pasos preparatorios.
 
@@ -93,7 +93,7 @@ Antes de cargar el archivo de Photoshop en Dynamic Media Classic, simplifique la
 
 1. Simplifique la estructura de capas combinando o aplanando capas relacionadas que necesitan activarse o desactivarse juntas en una sola capa. Por ejemplo, la etiqueta &quot;NUEVO&quot; y el banner azul se combinan en una sola capa para que pueda mostrarlos u ocultarlos con un solo clic.
    ![imagen](assets/basic-templates/basic-templates-3.jpg)
-2. Algunos tipos de capas y efectos de capa no son compatibles con Dynamic Media Classic ni con el servidor de imágenes y deben rasterizarse antes de la carga. De lo contrario, los efectos podrían ignorarse o descartarse las capas. Rasterizar una capa significa convertir si se puede editar a si no se puede editar. Para rasterizar efectos de capa o capas de texto, cree una capa vacía, seleccione y combine mediante **Capas > Combinar capas** o CTRL + E/CMD + E.
+2. Algunos tipos de capas y efectos de capa no son compatibles con Dynamic Media Classic ni con el servidor de imágenes y deben rasterizarse antes de la carga. De lo contrario, los efectos podrían ignorarse o descartarse las capas. Rasterizar una capa significa convertir si se puede editar a si no se puede editar. Para rasterizar los efectos de capa o las capas de texto, cree una capa vacía, seleccione y combine mediante **Capas > Combinar capas** o CTRL + E/CMD + E.
 
    - Dynamic Media Classic no puede agrupar ni vincular capas. Todas las capas de un grupo o conjunto vinculado se convierten en capas independientes que ya no se agrupan ni vinculan.
    - Las máscaras de capa se convierten en transparencias al cargar.
@@ -111,7 +111,7 @@ Es responsabilidad de cada compañía obtener una licencia para utilizar una fue
 
 Dynamic Media Classic admite fuentes de OpenType estándar (OTF), TrueType (TTF) y PostScript de tipo 1. No se admiten fuentes de maleta, archivos de colección de tipos, fuentes del sistema Windows ni fuentes de máquina propietarias (como las fuentes utilizadas por los equipos de grabado o bordado) sólo para Mac; tendrá que convertirlas a uno de los formatos de fuente estándar o sustituir una fuente similar para usarla en Dynamic Media Classic y en el servidor de imágenes.
 
-Una vez cargadas las fuentes en Dynamic Media Classic, como cualquier otro recurso, también deben publicarse en el servidor de imágenes. Un error de plantilla muy común es olvidar publicar las fuentes, lo que resultará en un error de imagen: el servidor de imágenes no sustituirá a otra fuente en su lugar. Además, si desea utilizar la variable **Extraer texto** opción al cargar, debe cargar los archivos de fuente antes de cargar el PSD que utiliza esas fuentes. El **Extraer texto** intentará volver a crear el texto como una capa de texto editable y colocarlo dentro de una plantilla de Dynamic Media Classic. Esto se analiza en el tema siguiente, Opciones del PSD.
+Una vez cargadas las fuentes en Dynamic Media Classic, como cualquier otro recurso, también deben publicarse en el servidor de imágenes. Un error de plantilla muy común es olvidar publicar las fuentes, lo que resultará en un error de imagen: el servidor de imágenes no sustituirá a otra fuente en su lugar. Además, si desea usar la opción **Extraer texto** al cargar, debe cargar los archivos de fuentes antes de cargar el PSD que usa esas fuentes. La característica **Extraer texto** intentará volver a crear el texto como una capa de texto editable y colocarlo dentro de una plantilla de Dynamic Media Classic. Esto se analiza en el tema siguiente, Opciones del PSD.
 
 Tenga en cuenta que las fuentes tienen varios nombres internos que a menudo son diferentes de su nombre de archivo externo. Puede ver todos sus nombres diferentes en la página Detalles para ese recurso en Dynamic Media Classic. Estos son los nombres de la fuente Adobe Caslon Pro Semibold, que aparece en la pestaña Metadatos de Dynamic Media Classic:
 
@@ -131,9 +131,9 @@ No es necesario cargar un archivo Photoshop (PSD) para crear una plantilla; se p
 
 - **Mantener capas.** Esta es la opción más importante. Esto indica a Dynamic Media Classic que cree un recurso de imagen por cada capa de Photoshop. Si no se selecciona, todas las demás opciones se desactivan y el PSD se acopla en una sola imagen.
 - **Crear** **Plantilla.** Esta opción toma las distintas capas generadas y crea automáticamente una plantilla combinándolas de nuevo. Un inconveniente de utilizar la plantilla generada automáticamente es que Dynamic Media Classic coloca todas las capas en un archivo, mientras que solo necesitamos un único marcador de posición por capa. Es bastante fácil eliminar las capas adicionales, pero si tiene muchas capas, es más rápido recrearlas. Asegúrese de cambiar el nombre de la nueva plantilla; si no lo hace, se sobrescribirá la próxima vez que vuelva a cargar el mismo PSD.
-- **Extraer texto.** De este modo, se vuelven a crear las capas de texto en el PSD como capas de texto en la plantilla utilizando la fuente cargada. Este paso es necesario si el texto se encuentra en una ruta de acceso en Photoshop y desea mantener esa ruta de acceso en la plantilla. Esta función requiere que utilice el **Crear plantilla** , ya que el texto extraído solo se puede crear mediante una plantilla generada durante la carga.
-- **Extender capas al tamaño del fondo.** Esta configuración hace que cada capa tenga el mismo tamaño que el lienzo del PSD. Esto resulta muy útil para las capas que siempre permanecerán fijas en su posición: de lo contrario, al intercambiar imágenes en la misma capa, es posible que tenga que volver a colocarlas.
-- **Nombres de capas.** Esto le indica a Dynamic Media Classic cómo asignar un nombre a cada recurso generado por capa. Recomendamos cualquiera de las siguientes opciones **Photoshop** **y capa** **Nombre** o PHOTOSHOP y **Capa** **Número**. Ambas opciones utilizan el nombre del PSD como primera parte del nombre y añaden el nombre o número de capa al final. Por ejemplo, si tiene un PSD llamado &quot;shirt.psd&quot; y tiene capas denominadas &quot;frontal&quot;, &quot;mangas&quot; y &quot;cuello&quot;, si carga con la variable **PHOTOSHOP y** Capa **Nombre** , Dynamic Media Classic generaría los ID de recurso &quot;shirt_front&quot;, &quot;shirt_sleeves&quot; y &quot;shirt_collar&quot;. El uso de una de estas opciones ayuda a garantizar que el nombre sea único en Dynamic Media Classic.
+- **Extraer texto.**: esto vuelve a crear las capas de texto en el PSD como capas de texto en la plantilla usando la fuente que ha cargado. Este paso es necesario si el texto se encuentra en una ruta de acceso en Photoshop y desea mantener esa ruta de acceso en la plantilla. Esta característica requiere que use la opción **Crear plantilla**, ya que el texto extraído solo se puede crear mediante una plantilla generada durante la carga.
+- **Extender capas a tamaño de fondo.** Esta configuración hace que cada capa tenga el mismo tamaño que el lienzo general del PSD. Esto resulta muy útil para las capas que siempre permanecerán fijas en su posición: de lo contrario, al intercambiar imágenes en la misma capa, es posible que tenga que volver a colocarlas.
+- Nombres de **capas.** Esto le indica a Dynamic Media Classic cómo asignar un nombre a cada recurso generado por capa. Recomendamos **Photoshop** **y Layer** **Name** o Photoshop y **Layer** **Number**. Ambas opciones utilizan el nombre del PSD como primera parte del nombre y añaden el nombre o número de capa al final. Por ejemplo, si tiene un PSD llamado &quot;shirt.psd&quot; con las capas &quot;front&quot;, &quot;sleeves&quot; y &quot;collar&quot;, y lo carga con la opción **Photoshop and** Layer **Name**, Dynamic Media Classic generará los identificadores de recurso &quot;shirt_front&quot;, &quot;shirt_sleeves&quot; y &quot;shirt_collar&quot;. El uso de una de estas opciones ayuda a garantizar que el nombre sea único en Dynamic Media Classic.
 
 ## Creación de una plantilla con capas de imagen
 
@@ -147,46 +147,46 @@ En el centro izquierdo se encuentra el área de trabajo que muestra una previsua
 
 ![imagen](assets/basic-templates/basic-templates-5.jpg)
 
-_Crear página de conceptos básicos de plantilla._
+_Generar página de conceptos básicos de plantilla._
 
-- **Previsualización/Área de trabajo.** Esta es la ventana principal. Aquí puede mover, cambiar el tamaño y rotar capas con el ratón. Los contornos de capa se muestran como líneas discontinuas.
+- **Vista previa/Área de trabajo.** Esta es la ventana principal. Aquí puede mover, cambiar el tamaño y rotar capas con el ratón. Los contornos de capa se muestran como líneas discontinuas.
 - **Capas.** Esto es similar al panel Capas de Photoshop. A medida que agregue capas a la plantilla, aparecerán aquí. Las capas se apilan de arriba abajo: la capa superior del panel Capas se ve por encima de las demás debajo de ella en la lista.
 - **Propiedades de capa.** Aquí puede ajustar todas las propiedades de una capa mediante controles numéricos. Primero seleccione una capa y, a continuación, ajuste sus propiedades.
-- **Compuesto** **URL.** En la parte inferior de la interfaz de usuario se encuentra el área de URL compuesta. Esto no se analiza en esta sección del tutorial, pero aquí puede ver la plantilla deconstruida como una serie de modificadores de URL del servicio de imágenes. Esta área es editable: si está muy familiarizado con los comandos del servidor de imágenes, puede editar manualmente la plantilla aquí. Sin embargo, también puede romperlo. Al igual que Photoshop, la numeración de capas comienza en 0. El lienzo es la capa 0 y la primera capa que se agrega a sí mismo es la capa 1. Los modos de fusión determinan cómo se fusionan los píxeles de una capa con los píxeles inferiores. Puede crear una gran variedad de efectos especiales utilizando los modos de fusión.
+- **Dirección URL** compuesta **.**: en la parte inferior de la interfaz de usuario se encuentra el área de dirección URL compuesta. Esto no se analiza en esta sección del tutorial, pero aquí puede ver la plantilla deconstruida como una serie de modificadores de URL del servicio de imágenes. Esta área es editable: si está muy familiarizado con los comandos del servidor de imágenes, puede editar manualmente la plantilla aquí. Sin embargo, también puede romperlo. Al igual que Photoshop, la numeración de capas comienza en 0. El lienzo es la capa 0 y la primera capa que se agrega a sí mismo es la capa 1. Los modos de fusión determinan cómo se fusionan los píxeles de una capa con los píxeles inferiores. Puede crear una gran variedad de efectos especiales utilizando los modos de fusión.
 
 #### Uso del Editor de conceptos básicos de plantilla
 
 Estos son los pasos del flujo de trabajo para iniciar la plantilla básica:
 
 1. En Dynamic Media Classic, vaya a **Generar > Conceptos básicos de plantilla**. Puede elegir que no haya seleccionado nada o empezar por seleccionar una imagen, que se convierte en la primera capa de la plantilla.
-2. Elija un tamaño y pulse **OK**. Este tamaño debe coincidir con el tamaño diseñado en Photoshop. Se cargará el editor de plantillas.
+2. Elija un Size y presione **OK**. Este tamaño debe coincidir con el tamaño diseñado en Photoshop. Se cargará el editor de plantillas.
 3. Si no ha seleccionado ninguna imagen en el paso 1, busque o busque una imagen en el panel de recursos de la izquierda y arrástrela al área de trabajo.
 
    - Se cambiará automáticamente el tamaño de la imagen para adaptarla al tamaño del lienzo. Si planea intercambiar sus imágenes de alta resolución, normalmente traerá una de sus imágenes P-TIFF grandes (2000 px) y la usará como marcador de posición.
    - Esta debe ser la capa inferior de la plantilla, aunque puede reordenarlas más adelante.
 
 4. Cambie el tamaño o la posición de la capa directamente en el área de trabajo o ajuste los ajustes del panel Propiedades de la capa.
-5. Arrastre otras capas de imagen según sea necesario. Añada efectos de capas si también lo desea. Consulte el tema _Adición de efectos de capa_, más abajo.
-6. Clic **Guardar**, elija una ubicación y asigne un nombre a la plantilla. Puede obtener una vista previa, pero en este punto la plantilla se parecerá exactamente a una imagen de Photoshop aplanada; aún no se puede cambiar.
+5. Arrastre otras capas de imagen según sea necesario. Añada efectos de capas si también lo desea. Consulte el tema _Agregar efectos de capa_, a continuación.
+6. Haga clic en **Guardar**, elija una ubicación y asigne un nombre a la plantilla. Puede obtener una vista previa, pero en este punto la plantilla se parecerá exactamente a una imagen de Photoshop aplanada; aún no se puede cambiar.
 
 ### Adición de efectos de capa
 
 El servidor de imágenes admite algunos efectos de capa programáticos: efectos especiales que cambian el aspecto del contenido de una capa. Funcionan de manera similar a los efectos de capa en Photoshop. Se unen a una capa pero se controlan independientemente de la capa. Puede ajustarlos o eliminarlos sin realizar un cambio permanente en la propia capa.
 
-- **Sombra paralela**. Aplica una sombra fuera de los límites de la capa, colocada con un desplazamiento de píxeles x e y.
+- **sombra paralela**. Aplica una sombra fuera de los límites de la capa, colocada con un desplazamiento de píxeles x e y.
 - **Sombra interna**. Aplica una sombra dentro de los límites de la capa, colocada con un desplazamiento de píxeles x e y.
 - **Resplandor exterior**. Aplica un efecto de resplandor uniformemente alrededor de todos los bordes de la capa.
 - **Resplandor interior**. Aplica un efecto de resplandor de forma uniforme dentro de todos los bordes de la capa.
 
 ![imagen](assets/basic-templates/basic-templates-6.jpg)
 
-_Una capa con y sin sombra paralela_
+_Capa con y sin sombra paralela_
 
 Para agregar un efecto, haga clic en **Agregar efecto** y elija un efecto en el menú. Al igual que las capas normales, puede seleccionar un efecto en el panel Capas y utilizar el panel Propiedades de las capas para ajustar su configuración.
 
 Los efectos de sombreado se desplazan horizontal o verticalmente fuera de la capa, mientras que los efectos de resplandor se aplican uniformemente en todas las direcciones. Los efectos internos actúan sobre las partes opacas de la capa, mientras que los efectos externos sólo afectan a las áreas transparentes.
 
-Más información sobre[Adición de efectos de capa](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template.html#using-shadow-and-glow-effects-on-layers).
+Más información sobre[Agregar efectos de capa](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template.html#using-shadow-and-glow-effects-on-layers).
 
 ### Adición de parámetros
 
@@ -206,15 +206,15 @@ Por último, el conjunto inicial de parámetros se convierte en los valores pred
 
 Este es el flujo de trabajo para crear parámetros:
 
-1. Haga clic en **Parámetros** botón situado junto al nombre de la capa para la que desea crear parámetros. Se abrirá la pantalla Parámetros. Muestra cada propiedad de la capa y su valor.
-1. Seleccione el **Activado** junto al nombre de cada propiedad que desee convertir en parámetro. Aparecerá un nombre de parámetro predeterminado. Solo puede agregar parámetros a propiedades que hayan cambiado desde su estado predeterminado.
+1. Haga clic en el botón **Parámetros** junto al nombre de la capa para la que desea crear parámetros. Se abrirá la pantalla Parámetros. Muestra cada propiedad de la capa y su valor.
+1. Seleccione la opción **Activado** junto al nombre de cada propiedad que desee convertir en parámetro. Aparecerá un nombre de parámetro predeterminado. Solo puede agregar parámetros a propiedades que hayan cambiado desde su estado predeterminado.
 
-   - Por ejemplo, si agrega una capa y la mantiene en su posición XY predeterminada de 0,0, Dynamic Media Classic no mostrará un **Posición** propiedad. Para corregirla, mueva la capa al menos un píxel. Ahora Dynamic Media Classic mostrará lo siguiente **Posición** como propiedad que puede parametrizar.
-   - Para agregar un parámetro a la propiedad show/hide (que activa y desactiva la capa ), haga clic en **Mostrar** o **Ocultar capa** para desactivar la capa (puede volver a activarla más tarde si lo desea). Dynamic Media Classic ahora mostrará una **Hide** propiedad que se puede parametrizar.
+   - Por ejemplo, si agrega una capa y la mantiene en su posición XY predeterminada de 0,0, Dynamic Media Classic no mostrará una propiedad **Position**. Para corregirla, mueva la capa al menos un píxel. Ahora Dynamic Media Classic expondrá **Position** como una propiedad que puede parametrizar.
+   - Para agregar un parámetro a la propiedad show/hide (que activa y desactiva la capa ), haga clic en los iconos **Show** o **Hide Layer** para desactivar la capa (puede volver a activarla si lo desea). Dynamic Media Classic ahora mostrará una propiedad **Hide** que se puede parametrizar.
 
 1. Cambie el nombre de los parámetros predeterminados por otro que sea más fácil de identificar en la dirección URL. Por ejemplo, si desea agregar un parámetro para cambiar la capa del titular sobre una imagen, cambie el nombre predeterminado de &quot;layer_2_src&quot; a &quot;banner&quot;.
-1. Prensa **Cerrar** para salir de la pantalla Parameters.
-1. Repita este proceso para otras capas haciendo clic en **Parámetros** y añadir y cambiar el nombre de los parámetros.
+1. Pulse **Cerrar** para salir de la pantalla Parámetros.
+1. Repita este proceso para otras capas haciendo clic en el botón **Parameters** y agregando y cambiando el nombre de los parámetros.
 1. Guarde los cambios cuando haya terminado.
 
 >[!TIP]
@@ -256,7 +256,7 @@ La buena noticia es que Dynamic Media Classic genera el RTF para usted. Siempre 
 Puede crear capas de texto en una plantilla de Dynamic Media Classic de las dos maneras siguientes:
 
 1. Herramienta Texto en Dynamic Media Classic. Discutiremos este método a continuación. El editor de conceptos básicos de la plantilla tiene una herramienta que le permite crear un cuadro de texto, introducir texto y dar formato al texto. Dynamic Media Classic genera el archivo RTF según sea necesario y lo coloca en una capa independiente.
-2. Extraer texto (al cargar). El otro método es crear la capa de texto en Photoshop y guardarla en el PSD como una capa de texto normal (en lugar de rasterizarla como una capa de imagen). A continuación, cargue el archivo en Dynamic Media Classic y utilice el **Extraer texto** opción. Dynamic Media Classic convertirá cada capa de texto de Photoshop en una capa de texto para servicio de imágenes mediante comandos RTF. Si utiliza este método, asegúrese de cargar primero las fuentes en Dynamic Media Classic; de lo contrario, Dynamic Media Classic sustituirá una fuente predeterminada en la carga y no hay una manera fácil de volver a sustituir la fuente correcta.
+2. Extraer texto (al cargar). El otro método es crear la capa de texto en Photoshop y guardarla en el PSD como una capa de texto normal (en lugar de rasterizarla como una capa de imagen). A continuación, cargue el archivo en Dynamic Media Classic y utilice la opción **Extraer texto**. Dynamic Media Classic convertirá cada capa de texto de Photoshop en una capa de texto para servicio de imágenes mediante comandos RTF. Si utiliza este método, asegúrese de cargar primero las fuentes en Dynamic Media Classic; de lo contrario, Dynamic Media Classic sustituirá una fuente predeterminada en la carga y no hay una manera fácil de volver a sustituir la fuente correcta.
 
 ### Editor de texto
 
@@ -264,31 +264,31 @@ El texto se introduce mediante el Editor de texto. El Editor de texto es una int
 
 ![imagen](assets/basic-templates/basic-templates-9.jpg)
 
-_Editor de texto de conceptos básicos de plantilla._
+_Editor de texto básico para plantillas._
 
-Harás la mayor parte de tu trabajo en el **Previsualizar** , que permite introducir texto y verlo mostrado tal y como aparecerá en la plantilla. También hay un **Origen** , que se utiliza para editar manualmente el archivo RTF, si es necesario.
+La mayor parte del trabajo se realizará en la ficha **Vista previa**, que permite escribir texto y verlo tal y como aparecerá en la plantilla. También hay una ficha **Source**, que se usa para editar manualmente el RTF, si es necesario.
 
-El flujo de trabajo general es utilizar **Previsualizar** para escribir el texto.
+El flujo de trabajo general consiste en usar la ficha **Vista previa** para escribir texto.
 
-A continuación, seleccione el texto y elija algún formato como el color de fuente, el tamaño de fuente o la justificación utilizando los controles de la parte superior. Una vez que el texto tenga el estilo deseado, haga clic en **Aplicar** para verlo actualizar en la previsualización del área de trabajo. A continuación, cierre el Editor de texto para volver a la ventana principal Fundamentos de la plantilla.
+A continuación, seleccione el texto y elija algún formato como el color de fuente, el tamaño de fuente o la justificación utilizando los controles de la parte superior. Una vez que el texto tenga el estilo que desea, haga clic en **Aplicar** para ver cómo se actualiza en la vista previa del área de trabajo. A continuación, cierre el Editor de texto para volver a la ventana principal Fundamentos de la plantilla.
 
 #### Uso del Editor de texto
 
 Estos son los pasos del flujo de trabajo para agregar texto dentro de la página de compilación de conceptos básicos de plantilla:
 
-1. Haga clic en **Texto** botón de herramientas en la parte superior de la página de compilación.
+1. Haga clic en el botón de la herramienta **Texto** en la parte superior de la página de compilación.
 2. Arrastre un cuadro de texto donde desee que aparezca el texto. La ventana Editor de texto se abrirá en una ventana modal. En segundo plano, verá la plantilla, pero no podrá editarla hasta que termine de editar el texto.
 3. Escriba el texto de ejemplo que desee que aparezca cuando se cargue la plantilla por primera vez. Por ejemplo, si está creando un cuadro de texto para una imagen de correo electrónico personalizada, el texto podría decir &quot;Hola, nombre. ¡Ahora es el momento de ahorrar!&quot; Más adelante agregaría un parámetro de texto para reemplazar Name por un valor que enviara en la dirección URL. El texto no aparecerá en la plantilla debajo de la ventana hasta que haga clic en **Aplicar**.
 4. Para dar formato al texto, selecciónelo arrastrando con el ratón y elija un control de formato en la interfaz de usuario.
 
    - Hay muchas opciones de formato. Algunos de los más comunes son la fuente (cara), el tamaño de fuente y el color de fuente, así como la justificación izquierda/centro/derecha.
    - No olvide seleccionar el texto primero. De lo contrario, no podrá aplicar ningún formato.
-   - Para elegir una fuente diferente, asegúrese de seleccionar el texto y abrir el menú Fuente. El editor mostrará una lista de todas las fuentes cargadas en Dynamic Media Classic. Si una fuente también está instalada en el equipo, aparecerá en negro. Si no está instalado en el equipo, se mostrará en rojo. Sin embargo, se seguirá representando en la ventana de vista previa al hacer clic en **Aplicar**. Solo es necesario cargar las fuentes en Dynamic Media Classic para que estén disponibles para todos los que utilicen Dynamic Media Classic. Una vez publicada, el servidor de imágenes utilizará esas fuentes para generar el texto; los usuarios no necesitan instalar ninguna fuente para ver el texto que crea porque forma parte de una imagen.
-   - A diferencia de Photoshop y Illustrator, el servidor de imágenes puede alinear el texto verticalmente en el cuadro de texto. El valor predeterminado es la alineación superior. Para cambiar esto, seleccione el texto y elija **Medio** o **Inferior** desde el **Alineación vertical** menú.
+   - Para elegir una fuente diferente, asegúrese de seleccionar el texto y abrir el menú Fuente. El editor mostrará una lista de todas las fuentes cargadas en Dynamic Media Classic. Si una fuente también está instalada en el equipo, aparecerá en negro. Si no está instalado en el equipo, se mostrará en rojo. Sin embargo, seguirá apareciendo en la ventana de vista previa al hacer clic en **Aplicar**. Solo es necesario cargar las fuentes en Dynamic Media Classic para que estén disponibles para todos los que utilicen Dynamic Media Classic. Una vez publicada, el servidor de imágenes utilizará esas fuentes para generar el texto; los usuarios no necesitan instalar ninguna fuente para ver el texto que crea porque forma parte de una imagen.
+   - A diferencia de Photoshop y Illustrator, el servidor de imágenes puede alinear el texto verticalmente en el cuadro de texto. El valor predeterminado es la alineación superior. Para cambiar esto, selecciona el texto y elige **Medio** o **Inferior** del menú **Alineación vertical**.
    - Si hace que el texto sea demasiado grande para el cuadro (o si el cuadro de texto es demasiado pequeño), se recortará y desaparecerá todo o parte del mismo. Reduzca el tamaño de la fuente o aumente el tamaño del cuadro.
 
-5. Clic **Aplicar** para ver que los cambios surten efecto en la ventana del área de trabajo. Debe hacer clic en **Aplicar** o de lo contrario, perderá las ediciones.
-6. Cuando haya terminado, haga clic en **Cerrar**. Si desea volver al modo de edición, haga doble clic en la capa de texto para volver a abrir el Editor de texto.
+5. Haga clic en **Aplicar** para ver que los cambios surtan efecto en la ventana del área de trabajo. Debe hacer clic en **Aplicar** o perderá las ediciones.
+6. Cuando termine, haga clic en **Cerrar**. Si desea volver al modo de edición, haga doble clic en la capa de texto para volver a abrir el Editor de texto.
 
 El editor de texto previsualiza exactamente el tamaño de la fuente si tiene la fuente instalada localmente en el sistema.
 
@@ -312,25 +312,25 @@ Pueden ver la frase Sandalia de menta de chocolate — ese es el texto mismo.
 - Se puede ver un valor de RGB: \red56\green53\blue4 — este es el color del texto.
 - Aunque el tamaño de fuente es 20, no se ve el número 20. Sin embargo, sí ve un comando \fs40: por alguna extraña razón, RTF mide las fuentes como medias puntas. Por lo tanto, \fs40 es el tamaño de fuente.
 
-Tiene suficiente información para crear los parámetros, pero hay una referencia completa de todos los comandos RTF en la documentación del servicio de imágenes. Visite la [Documentación del servicio de imágenes](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/c-text-formatting.html#concept-0d3136db7f6f49668274541cd4b6364c).
+Tiene suficiente información para crear los parámetros, pero hay una referencia completa de todos los comandos RTF en la documentación del servicio de imágenes. Visite la [Documentación para servicio de imágenes](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/c-text-formatting.html#concept-0d3136db7f6f49668274541cd4b6364c).
 
 #### Adición de parámetros a capas de texto
 
 Estos son los pasos para agregar parámetros a las capas de texto.
 
-1. Haga clic en **Parámetros** botón (una &quot;P&quot;) junto al nombre de la capa de texto para la que desea crear parámetros. Se abrirá la pantalla Parámetros. El **Común** La pestaña enumera cada propiedad de la capa y su valor. Aquí puede añadir parámetros de capa normales.
-1. Haga clic en **Texto** pestaña. Aquí puede ver el archivo RTF en la parte superior; los parámetros que agregue están debajo de eso.
-1. Para añadir un parámetro, resalte primero el valor que desea cambiar y haga clic en **Añadir parámetro** botón. Asegúrese de seleccionar sólo los valores de los comandos y no todo el comando en sí. Por ejemplo, para establecer un parámetro para el nombre de fuente en el ejemplo RTF anterior, solo resaltaría &quot;Poor Richard&quot; y agregaría un parámetro a eso, pero no también el &quot;\f0&quot;. Al hacer clic en **Añadir parámetro** , aparece en la lista siguiente y el valor del parámetro aparece en rojo en el archivo RTF mientras sigue seleccionado. Si necesita quitar un parámetro, haga clic en la casilla de verificación situada junto a **Activado** para desactivar ese parámetro y desaparece.
+1. Haga clic en el botón **Parámetros** (una &quot;P&quot;) junto al nombre de la capa de texto para la que desea crear parámetros. Se abrirá la pantalla Parámetros. La ficha **Común** enumera cada propiedad de la capa y su valor. Aquí puede añadir parámetros de capa normales.
+1. Haga clic en la ficha **Texto**. Aquí puede ver el archivo RTF en la parte superior; los parámetros que agregue están debajo de eso.
+1. Para agregar un parámetro, primero resalta el valor que deseas cambiar y haz clic en el botón **Agregar parámetro**. Asegúrese de seleccionar sólo los valores de los comandos y no todo el comando en sí. Por ejemplo, para establecer un parámetro para el nombre de fuente en el ejemplo RTF anterior, solo resaltaría &quot;Poor Richard&quot; y agregaría un parámetro a eso, pero no también el &quot;\f0&quot;. Al hacer clic en **Agregar parámetro** , aparece en la lista siguiente y el valor del parámetro aparece en rojo en el archivo RTF mientras sigue seleccionado. Si necesita quitar un parámetro, haga clic en la casilla de verificación situada junto a **Activado** para desactivarlo y desaparecerá.
 1. Haga clic en para cambiar el nombre del parámetro por otro más significativo.
 1. Cuando haya terminado, el RTF se resaltará en verde donde existan parámetros y los nombres y valores de los parámetros se enumerarán a continuación.
-1. Clic **Cerrar** para salir de la pantalla Parameters. A continuación, pulse **Guardar** , para guardar la plantilla. Si ha terminado de editar, pulse **Cerrar** para salir de la página Conceptos básicos de plantilla.
-1. Clic **Previsualizar** para probar la plantilla en Dynamic Media Classic. Para probar los parámetros de texto, escriba texto nuevo o valores nuevos en la ventana de vista previa. Para cambiar la fuente, debe escribir el nombre RTF exacto de la fuente.
+1. Haga clic en **Cerrar** para salir de la pantalla Parámetros. A continuación, presione **Guardar** para guardar la plantilla. Si ha terminado de editar, presione **Cerrar** para salir de la página Conceptos básicos de plantilla.
+1. Haga clic en **Vista previa** para probar la plantilla en Dynamic Media Classic. Para probar los parámetros de texto, escriba texto nuevo o valores nuevos en la ventana de vista previa. Para cambiar la fuente, debe escribir el nombre RTF exacto de la fuente.
 
 >[!TIP]
 >
->Para agregar parámetros al color del texto, agregue por separado los parámetros de rojo, verde y azul. Por ejemplo, si el valor de RTF es `\red56\green53\blue46`, agregaría parámetros rojos, verdes y azules independientes para los valores 56, 53 y 46. En la dirección URL, cambiaría el color llamando a los tres: `&$red=56&$green=53&$blue=46`.
+>Para agregar parámetros al color del texto, agregue por separado los parámetros de rojo, verde y azul. Por ejemplo, si el RTF es `\red56\green53\blue46`, agregaría parámetros rojos, verdes y azules independientes para los valores 56, 53 y 46. En la dirección URL, cambiaría el color llamando a los tres: `&$red=56&$green=53&$blue=46`.
 
-Obtenga información sobre cómo [Crear parámetros de texto dinámico](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template-parameters.html#creating-dynamic-text-parameters).
+Aprenda a [Crear parámetros de texto dinámico](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template-parameters.html#creating-dynamic-text-parameters).
 
 ## Publicación y creación de direcciones URL de plantilla
 
@@ -344,7 +344,7 @@ No hay nada de especial en un ajuste preestablecido de imagen para una plantilla
 
 Deberá ejecutar una publicación para ver los cambios insertados en el servidor de imágenes. Tenga en cuenta lo que debe publicarse: las distintas capas de recursos de imagen, las fuentes para el texto dinámico y la propia plantilla. Al igual que otros recursos de medios enriquecidos de Dynamic Media Classic, como conjuntos de imágenes y conjuntos de giros, una plantilla básica es una construcción artificial: es un elemento de línea de la base de datos que hace referencia a las imágenes y fuentes mediante una serie de comandos del servicio de imágenes. Por lo tanto, al publicar la plantilla, lo único que hace es actualizar los datos en el servidor de imágenes.
 
-Más información sobre [Publicación de la plantilla](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/publishing-templates.html).
+Más información sobre [Publicación de tu plantilla](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/publishing-templates.html).
 
 ### Construcción de URL de plantilla
 
@@ -369,4 +369,4 @@ A diferencia de los ajustes preestablecidos de imagen, que tienen un signo de d�
 Como se ha indicado anteriormente, los parámetros se utilizan para cambiar la plantilla. Si llama a la plantilla sin parámetros, volverá a su configuración predeterminada según se ha diseñado en la herramienta de creación de conceptos básicos de plantilla. Si una propiedad no necesita cambiarse, no es necesario establecer un parámetro.
 
 ![imagen](assets/basic-templates/sandals-without-with-parameters.png)
-_Ejemplos de una plantilla sin definir parámetros (arriba) ni con parámetros (abajo)._
+_Ejemplos de una plantilla sin establecer parámetros (arriba) y con parámetros (abajo)._

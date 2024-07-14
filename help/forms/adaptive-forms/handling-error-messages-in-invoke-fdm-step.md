@@ -21,7 +21,7 @@ ht-degree: 0%
 A partir de AEM Forms 6.5.1, ahora tenemos la opción de capturar mensajes de error y especificar opciones de validación. El paso para invocar el servicio de modelo de datos de formulario se ha mejorado para proporcionar las siguientes capacidades.
 
 * Proporcionar una opción de validación de tres niveles (&quot;OFF&quot;, &quot;BASIC&quot; y &quot;FULL&quot;) para gestionar las excepciones encontradas al invocar el servicio del modelo de datos de formulario. Las tres opciones indican sucesivamente una versión más estricta de la comprobación de los requisitos específicos de la base de datos.
-  ![validation-levels](assets/validation-level.PNG)
+  ![niveles de validación](assets/validation-level.PNG)
 
 * Proporcionar una casilla de verificación para personalizar la ejecución del flujo de trabajo. Por lo tanto, los usuarios ahora tienen la flexibilidad de seguir adelante con la ejecución del flujo de trabajo, incluso si el paso para invocar el modelo de datos de formulario genera excepciones.
 

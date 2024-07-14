@@ -1,5 +1,5 @@
 ---
-title: Personalización de la experiencia de página web completa
+title: Personalization de experiencia de página web completa
 description: AEM Obtenga información sobre cómo crear una actividad de Target para redirigir las páginas de su sitio web de a nuevas páginas mediante Adobe Target.
 jira: KT-6353
 thumbnail: 6353-personalization-web-page.jpg
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ---
 
-# Personalización de la experiencia de página web completa {#personalization-fpe}
+# Personalization de experiencia de página web completa {#personalization-fpe}
 
 AEM Obtenga información sobre cómo crear una actividad para redireccionar las páginas del sitio alojadas en una nueva página mediante el uso de Adobe Target.
 
@@ -37,27 +37,27 @@ El sitio WKND ha rediseñado su página de inicio y le gustaría redirigir a los
 ## Pasos para crear una prueba A/B con el Compositor de experiencias visuales (VEC)
 
 1. Inicie sesión en Adobe Target y vaya a la pestaña Actividades
-1. Clic **Crear actividad** y luego elija **Prueba A/B** actividad
+1. Haga clic en el botón **Crear actividad** y elija la actividad **Prueba A/B**
 
    ![Actividad A/B](assets/ab-target-activity.png)
 
-1. Seleccione el **Compositor de experiencias visuales** , proporcione la URL de la actividad y haga clic en **Siguiente**
+1. Seleccione la opción **Compositor de experiencias visuales**, proporcione la URL de la actividad y haga clic en **Siguiente**
 
    ![URL de actividad](assets/ab-test-url.png)
 
-1. El Compositor de experiencias visuales muestra dos pestañas a la izquierda después de crear una actividad: *Experiencia A* y *Experiencia B*. Seleccione una experiencia de la lista. Puede añadir nuevas experiencias a la lista utilizando el **Añadir experiencia** botón.
+1. El Compositor de experiencias visuales muestra dos pestañas a la izquierda después de crear una actividad: *Experiencia A* y *Experiencia B*. Seleccione una experiencia de la lista. Puede agregar nuevas experiencias a la lista usando el botón **Agregar experiencia**.
 
    ![Opciones de experiencia](assets/experience-options.png)
 
-1. Vea las opciones disponibles para la Experiencia A y, a continuación, seleccione la **Redirigir a URL** y proporcione una dirección URL para la nueva página principal del sitio WKND.
+1. Vea las opciones disponibles para la Experiencia A y, a continuación, seleccione la opción **Redirigir a URL** y proporcione una URL para la nueva página de inicio del sitio WKND.
 
    ![URL de redireccionamiento](assets/redirect-url.png)
 
-1. Cambiar nombre *Experiencia A* hasta *Nueva página de inicio de WKND* y *Experiencia B* hasta *Página principal de WKND*
+1. Cambie el nombre de *Experiencia A* a *Nueva página principal de WKND* y de *Experiencia B* a *Página principal de WKND*
 
    ![Aventuras](assets/new-experiences.png)
 
-1. Clic **Siguiente** para pasar a Segmentación y mantener una asignación de tráfico manual de 50-50 entre las dos experiencias.
+1. Haga clic en **Siguiente** para pasar a Segmentación y mantener una asignación de tráfico manual de 50-50 entre las dos experiencias.
 
    ![Segmentación](assets/targeting.png)
 
@@ -80,4 +80,4 @@ AEM Como especialista en marketing, ha podido crear una actividad para redirigir
 
 ## Vínculos de soporte
 
-* [Adobe Experience Cloud Debugger: Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
+* [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)

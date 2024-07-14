@@ -27,16 +27,25 @@ Cuando tenga un formulario adaptable con navegación de pestaña izquierda, es p
 ## Creación de un formulario adaptable
 
 Para crear el formulario de ejemplo se utilizó un formulario adaptable simple basado en la plantilla Básico y la temática Lienzo 3.0.
-El [iconos utilizados en este artículo](assets/icons.zip) se puede descargar desde aquí.
+Los [iconos utilizados en este artículo](assets/icons.zip) se pueden descargar desde aquí.
 
 
 ## Establecer el estilo del estado predeterminado
 
-Abra el formulario en modo de edición Asegúrese de que está en la capa de estilo y seleccione cualquier pestaña (por ejemplo, la pestaña General ).
+Abra el formulario en modo de edición
+Asegúrese de que está en la capa de estilo y seleccione cualquier pestaña (por ejemplo, pestaña General).
 Se encuentra en el estado predeterminado cuando abre el editor de estilos para la pestaña, como se muestra en la captura de pantalla siguiente
-![navigation-tab](assets/navigation-tab.png)
+![ficha de navegación](assets/navigation-tab.png)
 
-Establezca las propiedades CSS para el estado predeterminado como se muestra a continuación | Categoría | Nombre de propiedad | Valor de propiedad | |:—|:—|:—| | Dimension y posición | Ancho | 50 px | | Texto | Grosor de fuente| Negrita | | Texto | Color | #FFF | |Texto | Altura de línea| 3 | |Texto | Alineación de texto | Izquierda | |Fondo| Color | #056dae |
+Establezca las propiedades CSS para el estado predeterminado como se muestra a continuación
+| Categoría | Nombre de propiedad  |  Valor de propiedad |
+|:—|:—|:—|
+| Dimension y posición | Ancho | 50 px |
+| Texto | Grosor de fuente| Negrita |
+| Texto | Color | #FFF |
+|Texto | Altura de línea| 3 |
+|Texto  | Alineación de texto | Izquierda |
+|Fondo| Color | #056dae |
 
 Guarde los cambios
 
@@ -59,7 +68,7 @@ Guarde los cambios.
 
 
 
-![active-state](assets/active-state.png)
+![estado activo](assets/active-state.png)
 
 ## Aplicar estilo al estado visitado
 
@@ -77,7 +86,7 @@ Asegúrese de que está en el estado visitado y aplique estilo a las siguientes 
 Aplicar un estilo a la imagen de fondo como se muestra en la captura de pantalla siguiente
 
 
-![visit-state](assets/visited-state.png)
+![estado visitado](assets/visited-state.png)
 
 Guarde los cambios
 

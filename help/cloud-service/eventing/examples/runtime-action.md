@@ -21,47 +21,47 @@ ht-degree: 0%
 
 # Eventos de acción y de de Adobe I/O Runtime AEM
 
-AEM Obtenga información sobre cómo recibir eventos de mediante [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/) Acción y revisar los detalles del evento, como la carga útil, los encabezados y los metadatos.
+AEM Obtenga información sobre cómo recibir eventos de con la acción [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/) y revisar los detalles del evento, como la carga útil, los encabezados y los metadatos.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427053?quality=12&learn=on)
 
 Adobe I/O Runtime es una plataforma sin servidor que permite ejecutar código en respuesta a eventos de Adobe I/O. De este modo, le ayuda a crear aplicaciones basadas en eventos sin tener que preocuparse por la infraestructura.
 
-En este ejemplo, se crea un Adobe I/O Runtime [Acción](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/) AEM que recibe eventos de y registra los detalles del evento.
+En este ejemplo, se crea una acción [Action](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/) de Adobe I/O Runtime AEM que recibe los eventos de la aplicación y registra los detalles del evento.
 https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/
 
 Los pasos de alto nivel son los siguientes:
 
-- Crear proyecto en la consola de Adobe Developer
+- Creación de un proyecto en Adobe Developer Console
 - Inicializar proyecto para desarrollo local
-- Configuración de un proyecto en la consola de Adobe Developer
+- Configuración de un proyecto en Adobe Developer Console
 - Déclencheur AEM de eventos de y verificación de la ejecución de acciones
 
 ## Requisitos previos
 
 Para completar este tutorial, necesita lo siguiente:
 
-- AEM entorno as a Cloud Service con [AEM Eventing activado de](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment).
+- Entorno de AEM as a Cloud Service AEM con [ventilación de eventos habilitada](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment).
 
-- Acceso a [Consola de Adobe Developer](https://developer.adobe.com/developer-console/docs/guides/getting-started/).
+- Acceso a [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started/).
 
 - [CLI de Adobe Developer](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) instalado en el equipo local.
 
 >[!IMPORTANT]
 >
->AEM El evento as a Cloud Service solo está disponible para usuarios registrados en el modo previo al lanzamiento. AEM AEM Para habilitar la celebración de eventos en su entorno as a Cloud Service de la, póngase en contacto con [AEM Equipo de eventos de la](mailto:grp-aem-events@adobe.com).
+>Los eventos de AEM as a Cloud Service solo están disponibles para los usuarios registrados en el modo previo al lanzamiento. AEM Para habilitar la celebración de eventos en su entorno de AEM as a Cloud Service AEM, póngase en contacto con el [equipo de eventos-eventos](mailto:grp-aem-events@adobe.com).
 
-## Crear proyecto en la consola de Adobe Developer
+## Creación de un proyecto en Adobe Developer Console
 
-Para crear un proyecto en la consola de Adobe Developer, siga estos pasos:
+Para crear un proyecto en Adobe Developer Console, siga estos pasos:
 
-- Vaya a [Consola de Adobe Developer](https://developer.adobe.com/) y haga clic en **Consola** botón.
+- Vaya a [Adobe Developer Console](https://developer.adobe.com/) y haga clic en el botón **Consola**.
 
-- En el **Inicio rápido** , haga clic en **Crear proyecto a partir de plantilla**. A continuación, en la **Examinar plantillas** diálogo, seleccione **Generador de aplicaciones** plantilla.
+- En la sección **Inicio rápido**, haga clic en **Crear proyecto a partir de la plantilla**. A continuación, en el cuadro de diálogo **Examinar plantillas**, seleccione **App Builder**.
 
 - Actualice el título del proyecto, el nombre de la aplicación y Añadir espacio de trabajo si es necesario. A continuación, haga clic en **Guardar**.
 
-  ![Crear proyecto en la consola de Adobe Developer](../assets/examples/runtime-action/create-project.png)
+  ![Crear proyecto en Adobe Developer Console](../assets/examples/runtime-action/create-project.png)
 
 
 ## Inicializar proyecto para desarrollo local
@@ -74,17 +74,17 @@ Para agregar la acción de Adobe I/O Runtime al proyecto, debe inicializar el pr
   aio app init
   ```
 
-- Seleccione el `Organization`, el `Project` ha creado en el paso anterior y el espacio de trabajo. Entrada `What templates do you want to search for?` paso, seleccione `All Templates` opción.
+- Seleccione `Organization`, `Project` que creó en el paso anterior y el área de trabajo. En el paso `What templates do you want to search for?`, seleccione la opción `All Templates`.
 
-  ![Org-Project-Selection: inicializar el proyecto](../assets/examples/runtime-action/all-templates.png)
+  ![Selección-proyecto-organización - Inicializar proyecto](../assets/examples/runtime-action/all-templates.png)
 
-- En la lista de plantillas, seleccione `@adobe/generator-app-excshell` opción.
+- En la lista de plantillas, seleccione la opción `@adobe/generator-app-excshell`.
 
-  ![Plantilla de extensibilidad: Inicializar proyecto](../assets/examples/runtime-action/extensibility-template.png)
+  ![Plantilla de extensibilidad - Inicializar proyecto](../assets/examples/runtime-action/extensibility-template.png)
 
 - Abra un proyecto en su IDE favorito, por ejemplo VSCode.
 
-- El seleccionado _Plantilla de extensibilidad_ (`@adobe/generator-app-excshell`) proporciona una acción de tiempo de ejecución genérica, el código se encuentra en `src/dx-excshell-1/actions/generic/index.js` archivo. Actualicémoslo para que sea sencillo, registremos los detalles del evento y devolvamos una respuesta de éxito. AEM Sin embargo, en el siguiente ejemplo, se mejora para procesar los eventos de recibidos.
+- La _plantilla de extensibilidad_ (`@adobe/generator-app-excshell`) seleccionada proporciona una acción de tiempo de ejecución genérica; el código se encuentra en el archivo `src/dx-excshell-1/actions/generic/index.js`. Actualicémoslo para que sea sencillo, registremos los detalles del evento y devolvamos una respuesta de éxito. AEM Sin embargo, en el siguiente ejemplo, se mejora para procesar los eventos de recibidos.
 
   ```javascript
   const fetch = require("node-fetch");
@@ -135,42 +135,42 @@ Para agregar la acción de Adobe I/O Runtime al proyecto, debe inicializar el pr
   aio app deploy
   ```
 
-## Configuración de un proyecto en la consola de Adobe Developer
+## Configuración de un proyecto en Adobe Developer Console
 
-AEM Para recibir eventos de la y ejecutar la acción de Adobe I/O Runtime creada en el paso anterior, configure el proyecto en la consola de Adobe Developer.
+AEM Para recibir eventos de y ejecutar la acción de Adobe I/O Runtime creada en el paso anterior, configure el proyecto en Adobe Developer Console.
 
-- En la consola de Adobe Developer, vaya a [proyecto](https://developer.adobe.com/console/projects) creado en el paso anterior y haga clic en para abrirlo. Seleccione el `Stage` espacio de trabajo, aquí es donde se implementó la acción.
+- En Adobe Developer Console, vaya al [proyecto](https://developer.adobe.com/console/projects) creado en el paso anterior y haga clic en para abrirlo. Seleccione el área de trabajo `Stage`, aquí es donde se implementó la acción.
 
-- Clic **Añadir servicio** y seleccione **API** opción. En el **Añadir una API** modal, seleccione **Servicios de Adobe** > **API de administración de E/S** y haga clic en **Siguiente**, siga los pasos de configuración adicionales y haga clic en **Guardar API configurada**.
+- Haga clic en el botón **Agregar servicio** y seleccione la opción **API**. En el modal **Add an API**, seleccione **Adobe Services** > **API de administración de E/S** y haga clic en **Siguiente**, siga los pasos de configuración adicionales y haga clic en **Guardar la API configurada**.
 
-  ![Agregar servicio: configurar proyecto](../assets/examples/runtime-action/add-io-management-api.png)
+  ![Agregar servicio - Configurar proyecto](../assets/examples/runtime-action/add-io-management-api.png)
 
-- Igualmente, haga clic en **Añadir servicio** y seleccione **Evento** opción. En el **Añadir eventos** diálogo, seleccione **Experience Cloud** > **AEM Sites** y haga clic en **Siguiente**. Siga los pasos de configuración adicionales, seleccione la instancia de AEM CS, los tipos de evento y otros detalles.
+- Del mismo modo, haga clic en el botón **Agregar servicio** y seleccione la opción **Evento**. En el diálogo **Agregar eventos**, seleccione **Experience Cloud** > **AEM Sites** y haga clic en **Siguiente**. Siga los pasos de configuración adicionales, seleccione la instancia de AEM CS, los tipos de evento y otros detalles.
 
-- Finalmente, en la **Cómo recibir eventos** paso, expandir **Acción Runtime** y seleccione la opción _genérico_ acción creada en el paso anterior. Clic **Guardar eventos configurados**.
+- Finalmente, en el paso **Cómo recibir eventos**, expanda la opción **Acción en tiempo de ejecución** y seleccione la acción _genérica_ creada en el paso anterior. Haga clic en **Guardar eventos configurados**.
 
-  ![Acción de tiempo de ejecución: configurar proyecto ](../assets/examples/runtime-action/select-runtime-action.png)
+  ![Acción en tiempo de ejecución: configurar el proyecto ](../assets/examples/runtime-action/select-runtime-action.png)
 
-- Revise los detalles de registro del evento, así como la **Seguimiento de depuración** y verifique la **Sondeo de desafío** solicitud y respuesta.
+- Revise los detalles de registro de eventos, también la ficha **Seguimiento de depuración** y compruebe la solicitud y respuesta de **Sondeo de desafío**.
 
-  ![Detalles de registro del evento](../assets/examples/runtime-action/debug-tracing-challenge-probe.png)
+  ![Detalles de registro de evento](../assets/examples/runtime-action/debug-tracing-challenge-probe.png)
 
 
 ## Déclencheur AEM de eventos de
 
-Para obtener un déclencheur AEM AEM de los eventos de la as a Cloud Service que se han registrado en el proyecto de la consola de Adobe Developer anterior, siga estos pasos:
+Para obtener un déclencheur AEM de eventos de la desde el entorno de AEM as a Cloud Service que se ha registrado en el proyecto de Adobe Developer Console anterior, siga estos pasos:
 
-- AEM Acceda a su entorno de creación as a Cloud Service de e inicie sesión mediante [Cloud Manager](https://my.cloudmanager.adobe.com/).
+- Acceda a su entorno de creación de AEM as a Cloud Service e inicie sesión a través de [Cloud Manager](https://my.cloudmanager.adobe.com/).
 
-- En función de su **Eventos suscritos**, crear, actualizar, eliminar, publicar o cancelar la publicación de un fragmento de contenido.
+- Según sus **Eventos suscritos**, cree, actualice, elimine, publique o cancele la publicación de un fragmento de contenido.
 
 ## Revisar detalles del evento
 
 AEM Después de completar los pasos anteriores, debería ver los eventos de la que se envían a la acción genérica.
 
-Puede revisar los detalles del evento en la **Seguimiento de depuración** de los detalles de registro del evento.
+Puede revisar los detalles del evento en la ficha **Seguimiento de depuración** de los detalles de registro de eventos.
 
-![AEM Detalles de evento de](../assets/examples/runtime-action/aem-event-details.png)
+AEM ![Detalles del evento de la](../assets/examples/runtime-action/aem-event-details.png)
 
 
 ## Pasos siguientes

@@ -26,7 +26,7 @@ Cree un fragmento JSON que defina:
 + parámetros
 + salida.
 
-Los detalles de esto [Los parámetros de formulario están disponibles aquí.](https://documentcloud.adobe.com/document-services/index.html#post-createPDF)
+Los detalles de este parámetro de formulario [están disponibles aquí.](https://documentcloud.adobe.com/document-services/index.html#post-createPDF)
 
 El código de ejemplo que se muestra a continuación genera el fragmento JSON para todos los tipos de documentos de Office 365.
 

@@ -24,7 +24,7 @@ Cuando el formulario tiene pestañas de navegación a la izquierda y una de las 
 
 ## Crear formulario adaptable
 
-Cree un formulario adaptable con la siguiente estructura. El panel raíz tiene paneles secundarios que se muestran como pestañas a la izquierda. Algunos de estos &quot;**pestañas**&quot; tienen paneles secundarios adicionales. Por ejemplo, la pestaña Familia tiene dos paneles secundarios denominados Cónyuge e Hijos.
+Cree un formulario adaptable con la siguiente estructura. El panel raíz tiene paneles secundarios que se muestran como pestañas a la izquierda. Algunas de estas &quot;**pestañas**&quot; tienen paneles secundarios adicionales. Por ejemplo, la pestaña Familia tiene dos paneles secundarios denominados Cónyuge e Hijos.
 
 También se agrega una barra de herramientas debajo de FormContainer con los botones Anterior y Siguiente
 
@@ -39,13 +39,13 @@ Para cambiar este comportamiento predeterminado, debemos hacer lo siguiente
 >[!VIDEO](https://video.tv.adobe.com/v/338369?quality=12&learn=on)
 
 
-Agregue el siguiente código al evento de clic del **Siguiente** mediante el editor de código
+Agregue el código siguiente al evento de clic del botón **Next** mediante el editor de código
 
 ```javascript
 window.guideBridge.setFocus(null, 'nextItemDeep', true);
 ```
 
-Agregue el siguiente código al evento de clic del **Anterior** mediante el editor de código
+Agregue el siguiente código al evento de clic del botón **Prev** mediante el editor de código
 
 ```javascript
 window.guideBridge.setFocus(null, 'prevItemDeep', true);

@@ -1,6 +1,6 @@
 ---
-title: AEM Uso de Cloud Manager con as a Cloud Service
-description: AEM Obtenga información acerca de Cloud Manager para el as a Cloud Service AEM de la y sus diferencias con Cloud Manager para la administración de la en el Adobe (AMS).
+title: Uso de Cloud Manager con AEM as a Cloud Service
+description: Obtenga información acerca de Cloud Manager para AEM as a Cloud Service y sus diferencias con Cloud Manager AEM para la administración de servicios de Adobe (AMS) de la aplicación de la manera más adecuada para los clientes.
 version: Cloud Service
 feature: Cloud Manager
 topic: Migration, Upgrade
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 # Cloud Manager
 
-AEM Obtenga información acerca de Cloud Manager para el as a Cloud Service AEM de la y sus diferencias con Cloud Manager para la administración de la en el Adobe (AMS).
+Obtenga información acerca de Cloud Manager para AEM as a Cloud Service y sus diferencias con Cloud Manager AEM para la administración de servicios de Adobe (AMS) de la aplicación de la manera más adecuada para los clientes.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336961?quality=12&learn=on)
 
@@ -29,7 +29,7 @@ Aplique sus conocimientos probando lo que ha aprendido con este ejercicio práct
 
 Antes de probar el ejercicio práctico, asegúrese de haber visto y entendido el vídeo anterior y los siguientes materiales:
 
-+ [AEM Pensar de manera diferente sobre el as a Cloud Service](./introduction.md)
++ [Pensar de forma diferente sobre AEM as a Cloud Service](./introduction.md)
 + [Incorporación](./onboarding.md)
 
 Además, asegúrese de haber completado el ejercicio práctico anterior:
@@ -48,7 +48,7 @@ Además, asegúrese de haber completado el ejercicio práctico anterior:
         <td style="width:100%;margin-bottom:1rem;">
             <div style="font-size:1.25rem;font-weight:400;">Prácticas con Cloud Manager</div>
             <p style="margin:1rem 0">
-                Explore la activación de una canalización de Cloud Manager mediante el complemento AIO CLI Cloud Manager.
+                Explore la activación de una canalización de Cloud Manager mediante el complemento Cloud Manager de CLI de AIO.
             </p>
             <a  rel="noreferrer"
                 target="_blank"

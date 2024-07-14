@@ -1,6 +1,6 @@
 ---
 title: Almacenar archivos adjuntos de formularios
-description: Extraiga los archivos adjuntos del formulario y almacénelos en una nueva ubicación del repositorio CRX.
+description: Extraiga los archivos adjuntos del formulario y almacénelos en una nueva ubicación del repositorio de CRX.
 feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
@@ -20,9 +20,9 @@ ht-degree: 1%
 
 # Almacenar archivos adjuntos de formularios
 
-Cuando se agregan archivos adjuntos a un formulario adaptable, estos se almacenan en una ubicación temporal en el repositorio CRX. Para que nuestro caso de uso funcione, necesitamos almacenar los archivos adjuntos del formulario en una nueva ubicación en el repositorio CRX.
+Cuando se agregan archivos adjuntos a un formulario adaptable, estos se almacenan en una ubicación temporal en el repositorio de CRX. Para que nuestro caso de uso funcione, necesitamos almacenar los archivos adjuntos del formulario en una nueva ubicación en el repositorio de CRX.
 
-El servicio OSGi se crea para almacenar los archivos adjuntos del formulario en una nueva ubicación en el repositorio CRX. Se crea un nuevo mapa de archivos con la nueva ubicación de los archivos adjuntos en el CRX y se devuelve a la aplicación que realiza la llamada.
+El servicio OSGi se crea para almacenar los archivos adjuntos del formulario en una nueva ubicación en el repositorio de CRX. Se crea un nuevo mapa de archivos con la nueva ubicación de los archivos adjuntos en CRX y se devuelve a la aplicación que realiza la llamada.
 El siguiente es el FileMap que se envía al servlet. La clave es el campo del formulario adaptable y el valor es la ubicación temporal del archivo adjunto. AEM En nuestro servlet extraeremos el archivo adjunto y lo almacenaremos en una nueva ubicación en el repositorio de la y actualizaremos el FileMap con la nueva ubicación
 
 ```java
@@ -32,7 +32,7 @@ El siguiente es el FileMap que se envía al servlet. La clave es el campo del fo
 }
 ```
 
-El siguiente es el código que extrae los archivos adjuntos de la solicitud y los almacena en **/content/afattachments** carpeta
+El siguiente es el código que extrae los archivos adjuntos de la solicitud y los almacena en la carpeta **/content/afattachments**
 
 ```java
 public String storeAFAttachments(JSONObject fileMap, SlingHttpServletRequest request) {

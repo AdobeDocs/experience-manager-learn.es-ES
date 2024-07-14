@@ -22,9 +22,9 @@ AEM En esta versión, 6.3 presenta varias funciones y mejoras nuevas para simpli
 
 >[!VIDEO](https://video.tv.adobe.com/v/19500?quality=12&learn=on)
 
-**Algunas de las principales mejoras del Editor de formularios adaptables son las siguientes:**
+**Algunas de las mejoras más importantes para el Editor de formularios adaptables incluyen:**
 
-* [Experiencia del usuario final mejorada](https://helpx.adobe.com/aem-forms/6-3/introduction-forms-authoring.html)
+* [Se ha mejorado la experiencia del usuario final](https://helpx.adobe.com/aem-forms/6-3/introduction-forms-authoring.html)
 
 * Rellenar automáticamente campos de formulario
 * Texto enriquecido para un componente de cuadro de texto
@@ -32,8 +32,8 @@ AEM En esta versión, 6.3 presenta varias funciones y mejoras nuevas para simpli
 
 * [Edición en línea del título del componente](https://helpx.adobe.com/aem-forms/6-3/introduction-forms-authoring.html)
 * [Validación predeterminada en componentes](https://helpx.adobe.com/aem-forms/6-3/introduction-forms-authoring.html)
-* [Métodos abreviados del teclado para una experiencia de creación de contenido más rápida](https://helpx.adobe.com/aem-forms/6-3/keyboard-shortcuts.html#AdaptiveFormEditor)
+* [Métodos abreviados del teclado para una experiencia más rápida de creación de contenido](https://helpx.adobe.com/aem-forms/6-3/keyboard-shortcuts.html#AdaptiveFormEditor)
 * [Compatibilidad con el esquema JSON para crear formularios adaptables](https://helpx.adobe.com/aem-forms/6-3/adaptive-form-json-schema-form-model.html)
 * [CAPTCHA en formularios adaptables](https://helpx.adobe.com/aem-forms/6-3/captcha-adaptive-forms.html)
-* [Integración de Acrobat Sign mejorada](https://helpx.adobe.com/aem-forms/6-3/working-with-adobe-sign.html)
+* [Integración mejorada con Acrobat Sign](https://helpx.adobe.com/aem-forms/6-3/working-with-adobe-sign.html)
 * [Envíos asincrónicos de formularios](https://helpx.adobe.com/aem-forms/6-3/asynchronous-submissions-adaptive-forms.html)

@@ -1,6 +1,6 @@
 ---
 title: Proteger y desproteger
-description: AEM Obtenga información sobre cómo utilizar las funciones de protección y desprotección de datos para facilitar la colaboración de varios usuarios en los recursos.
+description: AEM Obtenga información sobre cómo utilizar las funciones de protección y desprotección de datos de los usuarios para facilitar la colaboración entre varios usuarios en los recursos.
 feature: Asset Management
 version: Cloud Service
 jira: KT-4542
@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # Proteger y desproteger
 
-AEM Obtenga información sobre cómo utilizar las funciones de protección y desprotección de datos para facilitar la colaboración de varios usuarios en los recursos.
+AEM Obtenga información sobre cómo utilizar las funciones de protección y desprotección de datos de los usuarios para facilitar la colaboración entre varios usuarios en los recursos.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32048?quality=12&learn=on)

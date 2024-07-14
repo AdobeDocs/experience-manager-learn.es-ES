@@ -25,8 +25,8 @@ AEM Assets Dynamic Media integra los puntos interactivos de recursos con los fra
 
 >[!NOTE]
 >
->AEM El uso de fragmentos de experiencias de la aplicación con puntos interactivos de Dynamic Media de AEM Assets requiere [AEM para que se ejecute en el Dynamic Media](https://experienceleague.adobe.com/docs/) modo.
+>AEM El uso de fragmentos de experiencias de la aplicación con puntos interactivos de Dynamic Media AEM de AEM Assets requiere que [se ejecute en modo Dynamic Media](https://experienceleague.adobe.com/docs/).
 
 AEM La variante del fragmento de experiencia emergente que se muestra en el vídeo está disponible como paquete de experiencias a continuación. Se trata de un paquete de la siguiente manera:
 
-Descargar [Fragmentos de experiencias de Dynamic Media Assets](assets/experience-fragmentsdynamic-mediaassets-100.zip)
+Descargar [Fragmentos de experiencias Dynamic Media Assets](assets/experience-fragmentsdynamic-mediaassets-100.zip)

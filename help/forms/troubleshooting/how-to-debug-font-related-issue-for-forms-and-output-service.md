@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Cómo capturar garantías para depurar problemas relacionados con Fonts con Forms y conversiones del servicio de salida
 
-*Este vídeo muestra el proceso de captura de elementos colaterales para depurar los problemas relacionados con las fuentes con las conversiones del servicio de salida y Forms*
+*Este vídeo muestra el proceso de captura de elementos colaterales para depurar problemas relacionados con Fonts con Forms y las conversiones del servicio Output.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335487?quality=12&learn=on)

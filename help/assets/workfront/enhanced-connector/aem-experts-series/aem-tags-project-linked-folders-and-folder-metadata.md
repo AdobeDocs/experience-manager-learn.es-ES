@@ -23,14 +23,14 @@ ht-degree: 0%
 
 # AEM Etiquetas, carpetas vinculadas a proyectos y metadatos de carpetas
 
-![AEM Serie de expertos de](./assets/banner.png)
+AEM ![Serie de expertos de](./assets/banner.png)
 
 AEM Obtenga información sobre cómo dirigir el uso de etiquetas de en recursos a través de datos de Workfront, configurar y utilizar carpetas vinculadas a proyectos y datos de Workfront AEM para crear esquemas de metadatos de carpetas de recursos de la.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340333?quality=12&learn=on)
 
-_Tercera parte de a. [serie de expertos de cuatro partes sobre el conector mejorado de Workfront para Experience Manager](./overview.md)_
+_Tercera parte de una serie de expertos de [cuatro partes en el conector mejorado de Workfront para Experience Manager](./overview.md)_
 
 ## Correcciones
 
-+ __@ 4:34 y 6:20__ AEM La sintaxis de las etiquetas de es incorrecta. Visualizaciones de vídeo `we-retail:apparel/footwear`. La sintaxis correcta es `["we-retail:apparel/footwear"]` o más generalmente `["namespace:tag/childtag"]`.
++ AEM __@ 4:34 y 6:20__ La sintaxis de las etiquetas de la es incorrecta. El vídeo muestra `we-retail:apparel/footwear`. La sintaxis correcta es `["we-retail:apparel/footwear"]` o más generalmente `["namespace:tag/childtag"]`.

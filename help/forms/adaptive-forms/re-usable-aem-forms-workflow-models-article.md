@@ -23,8 +23,8 @@ A partir de la versión 6.5 de AEM Forms, ahora podemos crear modelos de flujo d
 Para diseñar un flujo de trabajo de este tipo, realice los siguientes pasos
 
 1. AEM Iniciar sesión en el sitio de
-1. Dirija el explorador a [modelo de flujo de trabajo](http://localhost:4502/libs/cq/workflow/admin/console/content/models.html)
-1. Clic __Crear > Crear modelo__ para agregar un modelo de flujo de trabajo
+1. Dirija su explorador a [modelo de flujo de trabajo](http://localhost:4502/libs/cq/workflow/admin/console/content/models.html)
+1. Haga clic en __Crear > Crear modelo__ para agregar un modelo de flujo de trabajo
 1. Proporcione el Nombre y el Título adecuados al modelo de flujo de trabajo y, a continuación, haga clic en Listo
 1. Abra el modelo recién creado en el modo Edición
 1. Arrastre y suelte el componente Asignar tarea en el modelo de flujo de trabajo
@@ -35,7 +35,8 @@ Para diseñar un flujo de trabajo de este tipo, realice los siguientes pasos
 Existen tres formas de especificar la ruta del formulario
 
 1. Disponible en ruta absoluta: esto significa que el flujo de trabajo está estrechamente emparejado con el formulario adaptable. Esto no es lo que queremos aquí
-1. **Enviado al flujo de trabajo** : Esto significa que, cuando se envía el formulario adaptable, el motor de flujo de trabajo extrae el nombre del formulario de los datos enviados. Esta es la opción que debe seleccionarse
-1. Disponible en una ruta en una variable: esto significa que el formulario adaptable se recoge de la variable de flujo de trabajo. La siguiente captura de pantalla muestra la opción correcta que necesita elegir para desacoplar el flujo de trabajo del formulario adaptable
+1. **Enviado al flujo de trabajo**: esto significa que cuando se envía el formulario adaptable, el motor de flujo de trabajo extrae el nombre del formulario de los datos enviados. Esta es la opción que debe seleccionarse
+1. Disponible en una ruta en una variable: esto significa que el formulario adaptable se recoge de la variable de flujo de trabajo
+La siguiente captura de pantalla muestra la opción correcta que debe elegir para desacoplar el flujo de trabajo del formulario adaptable
 
 ![Modelos de flujo de trabajo de AEM Forms reutilizables](assets/workflomodel.PNG)

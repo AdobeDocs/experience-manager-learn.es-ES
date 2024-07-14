@@ -1,5 +1,5 @@
 ---
-title: Microservicios de AEM Assets AEM y paso a la as a Cloud Service
+title: Microservicios de AEM Assets y paso a AEM as a Cloud Service
 description: Descubra cómo los microservicios de asset compute AEM de AEM Assets as a Cloud Service le permiten generar de forma automática y eficaz cualquier representación de sus recursos, sustituyendo esta función del flujo de trabajo tradicional de la.
 version: Cloud Service
 feature: Asset Compute Microservices
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ---
 
-# AEM Assets AEM Microservices: paso a la as a Cloud Service de la
+# Microservicios de AEM Assets: paso a AEM as a Cloud Service
 
 Descubra cómo los microservicios de asset compute AEM de AEM Assets as a Cloud Service le permiten generar de forma automática y eficaz cualquier representación de sus recursos, sustituyendo esta función del flujo de trabajo tradicional de la.
 
@@ -27,14 +27,14 @@ Descubra cómo los microservicios de asset compute AEM de AEM Assets as a Cloud 
 
 ![Herramienta de migración del flujo de trabajo de recursos](./assets/asset-workflow-migration.png)
 
-Como parte de la refactorización del código base, utilice el [Herramienta Migración de flujo de trabajo de recursos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/asset-workflow-migration-tool.html?lang=es) para migrar flujos de trabajo existentes y utilizar los microservicios de Asset compute AEM en as a Cloud Service.
+Como parte de la refactorización del código base, use la [herramienta de migración del flujo de trabajo de recursos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/asset-workflow-migration-tool.html?lang=es) para migrar los flujos de trabajo existentes y usar los microservicios de Asset compute en AEM as a Cloud Service.
 
 ## Actividades clave
 
-+ Utilice el [Migrador de flujo de trabajo Adobe I/O](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationworkflow-migrator) herramienta para migrar flujos de trabajo de procesamiento de recursos para utilizar los microservicios de Asset compute.
-+ Configuración de un [entorno de desarrollo local](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=es) e implementar los flujos de trabajo actualizados. Puede ser necesario un ajuste manual para flujos de trabajo complejos.
++ Utilice la herramienta [Migrador de flujo de trabajo de Adobe I/O](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationworkflow-migrator) para migrar flujos de trabajo de procesamiento de recursos y utilizar los microservicios de Asset compute.
++ Configure un [entorno de desarrollo local](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=es) e implemente los flujos de trabajo actualizados. Puede ser necesario un ajuste manual para flujos de trabajo complejos.
 + AEM Siga iterando en un entorno de desarrollo local mediante el SDK de la hasta que el flujo de trabajo actualizado coincida con la paridad de características.
-+ AEM Implemente la base de código actualizada en un entorno de desarrollo as a Cloud Service de y siga validando.
++ Implemente el código base actualizado en un entorno de desarrollo de AEM as a Cloud Service y continúe validando.
 
 ## Ejercicio práctico
 
@@ -42,7 +42,7 @@ Aplique sus conocimientos probando lo que ha aprendido con este ejercicio práct
 
 Antes de probar el ejercicio práctico, asegúrese de haber visto y entendido el vídeo anterior y los siguientes materiales:
 
-+ [AEM Pensar de manera diferente sobre el as a Cloud Service](./introduction.md)
++ [Pensar de forma diferente sobre AEM as a Cloud Service](./introduction.md)
 + [Incorporación](./onboarding.md)
 
 Además, asegúrese de haber completado el ejercicio práctico anterior:

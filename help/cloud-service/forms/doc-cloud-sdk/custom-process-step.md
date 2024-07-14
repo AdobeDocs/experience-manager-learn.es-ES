@@ -20,7 +20,8 @@ ht-degree: 0%
 
 # Etapa de proceso personalizado
 
-El siguiente es el código completo del paso de proceso personalizado que convierte y reemplaza los archivos nativos con los PDF convertidos. Este paso personalizado busca todos los archivos adjuntos bajo el nombre de la carpeta, que se proporciona como argumento de proceso en el flujo de trabajo.
+El siguiente es el código completo del paso de proceso personalizado que convierte y reemplaza los archivos nativos con los PDF convertidos.
+Este paso personalizado busca todos los archivos adjuntos bajo el nombre de la carpeta, que se proporciona como argumento de proceso en el flujo de trabajo.
 Este paso de proceso personalizado utiliza los métodos del servicio DocumentCloudSDK personalizado para crear el de PDF.
 
 

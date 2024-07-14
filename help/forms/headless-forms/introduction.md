@@ -18,7 +18,7 @@ ht-degree: 2%
 
 # Incrustación de formularios adaptables sin encabezado
 
-Esta [Este tutorial abarcará las distintas API sin encabezado](https://opensource.adobe.com/aem-forms-af-runtime/api/#section/Introduction) que le permiten ver, mostrar y enviar el formulario.
+Este [tutorial cubrirá las diversas API sin encabezado](https://opensource.adobe.com/aem-forms-af-runtime/api/#section/Introduction) que le permiten enumerar, mostrar y enviar el formulario.
 
 Este artículo abarcará las distintas API sin encabezado que se proporcionan para permitirle enumerar, mostrar y enviar formularios adaptables de manera sin encabezado.
 
@@ -26,7 +26,7 @@ Este artículo supone que tiene una aplicación de una sola página y que desea 
 
 SPA La siguiente captura de pantalla muestra un formulario de contacto incrustado en el elemento de
 
-![contact-us-form](./assets/contact-us-form.png)
+![formulario-contacto](./assets/contact-us-form.png)
 
 ## Requisitos previos
 

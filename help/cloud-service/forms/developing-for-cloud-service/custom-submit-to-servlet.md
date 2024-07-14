@@ -45,7 +45,7 @@ public class HandleFormSubmissison extends SlingAllMethodsServlet {
 
 ## Crear controlador de envío personalizado
 
-Cree la acción de envío personalizada en `apps/bankingapplication` del mismo modo que se crearía en la carpeta [versiones anteriores de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-submit-aem-forms-article.html?lang=en). Para los fines de este tutorial, creo una carpeta denominada SubmitToAEMervlet en el `apps/bankingapplication` en el repositorio CRX.
+Cree su acción de envío personalizada en la carpeta `apps/bankingapplication` del mismo modo que lo haría en las [versiones anteriores de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-submit-aem-forms-article.html?lang=en). Para este tutorial, creo una carpeta denominada SubmitToAEMervlet en el nodo `apps/bankingapplication` del repositorio de CRX.
 
 El siguiente código de post.POST.jsp simplemente reenvía la solicitud al servlet montado en /bin/formstutorial. Es el mismo servlet que se creó en el paso anterior
 
@@ -53,12 +53,12 @@ El siguiente código de post.POST.jsp simplemente reenvía la solicitud al servl
 com.adobe.aemds.guide.utils.GuideSubmitUtils.setForwardPath(slingRequest,"/bin/formstutorial",null,null);
 ```
 
-AEM En el proyecto de la en IntelliJ, haga clic con el botón secundario en `apps/bankingapplication` y seleccione Nuevo | Empaquete y escriba SubmitToAEMervlet después de la aplicación apps.bank en el cuadro de diálogo Nuevo paquete. Haga clic con el botón derecho en el nodo SubmitToAEMervlet y seleccione repositorio | AEM AEM Get Command para sincronizar el proyecto de con el repositorio del servidor de la aplicación.
+AEM En el proyecto de la en IntelliJ, haga clic con el botón secundario en la carpeta `apps/bankingapplication` y seleccione Nuevo | Empaquete y escriba SubmitToAEMervlet después de la aplicación apps.bank en el cuadro de diálogo Nuevo paquete. Haga clic con el botón derecho en el nodo SubmitToAEMervlet y seleccione repositorio | AEM AEM Get Command para sincronizar el proyecto de con el repositorio del servidor de la aplicación.
 
 
 ## Configurar formulario adaptable
 
-Ahora puede configurar cualquier formulario adaptable para enviarlo a este controlador de envío personalizado llamado **AEM Enviar A Servlet De**
+AEM Ahora puede configurar cualquier formulario adaptable para enviarlo a este controlador de envío personalizado llamado **Enviar a servlet de**
 
 ## Siguientes pasos
 

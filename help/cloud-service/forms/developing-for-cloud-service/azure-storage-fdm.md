@@ -20,7 +20,8 @@ ht-degree: 0%
 
 # Incluir la configuración de los servicios en la nube en el proyecto
 
-Cree un contenedor de configuración denominado &quot;FormTutorial&quot; para la configuración de los servicios en la nube Cree una configuración de servicios en la nube para el almacenamiento de Azure denominada &quot;FormsCSAndAzureBlob&quot; en el contenedor &quot;FormTutorial&quot; proporcionando los detalles de la cuenta de almacenamiento de Azure y la clave de acceso de Azure.
+Cree un contenedor de configuración denominado &quot;FormTutorial&quot; para la configuración de los servicios en la nube
+Cree una configuración de servicios en la nube para el almacenamiento de Azure llamada &quot;FormsCSAndAzureBlob&quot; en el contenedor &quot;FormTutorial&quot; proporcionando los detalles de la cuenta de almacenamiento de Azure y la clave de acceso de Azure.
 
 AEM Abra el proyecto de la en IntelliJ. Asegúrese de añadir la carpeta FormTutorial como se muestra a continuación en el proyecto ui.content
 ![cloud-services-configuration](assets/cloud-services-configuration.png)
@@ -47,7 +48,7 @@ Incluya la entrada adecuada en el archivo filter.xml del proyecto ui.content
 
 >[!NOTE]
 >
->Ahora, cuando genere e implemente su proyecto mediante Cloud Manager, tendrá que volver a introducir su clave de acceso de Azure en la configuración de los servicios en la nube. Para evitar volver a introducir la clave de acceso, se recomienda crear una configuración según el contexto utilizando las variables de entorno como se explica en la sección [artículo siguiente](./context-aware-fdm.md)
+>Ahora, cuando genere e implemente su proyecto mediante Cloud Manager, tendrá que volver a introducir su clave de acceso de Azure en la configuración de los servicios en la nube. Para evitar volver a introducir la clave de acceso, se recomienda crear una configuración según el contexto utilizando las variables de entorno como se explica en [siguiente artículo](./context-aware-fdm.md)
 
 ## Siguientes pasos
 

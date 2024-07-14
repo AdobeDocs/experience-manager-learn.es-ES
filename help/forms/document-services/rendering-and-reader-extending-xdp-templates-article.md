@@ -25,10 +25,10 @@ Por ejemplo, en el portal de formularios de AEM Forms, cuando un usuario hace cl
 
 Para llevar a cabo este caso de uso, debemos hacer lo siguiente.
 
-* Agregue el certificado de Extensiones de Reader al usuario &quot;fd-service&quot;. Se enumeran los pasos para agregar la credencial Extensiones de Reader [aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=en)
+* Agregue el certificado de Extensiones de Reader al usuario &quot;fd-service&quot;. Los pasos para agregar credenciales de Extensiones de Reader se enumeran [aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=en)
 
 
-* También puede consultar el vídeo sobre [configurar las credenciales de Extensiones de Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html)
+* También puede consultar el vídeo sobre [configuración de las credenciales de las extensiones de Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html)
 
 
 * Cree un servicio OSGi personalizado que procese y aplique derechos de uso. El código para lograrlo se enumera a continuación
@@ -126,7 +126,7 @@ public @interface DocSvcConfiguration {
 
 El siguiente paso es crear un servlet con un método de GET para devolver el PDF de reader Extended al usuario. En este caso, se solicita al usuario que guarde el PDF en su sistema de archivos. Esto se debe a que el PDF se procesa como PDF dinámico y los visualizadores de PDF que vienen con los navegadores no gestionan los PDF dinámicos.
 
-El siguiente es el código del servlet. Pasamos la ruta del XDP en el repositorio CRX a este servlet.
+El siguiente es el código del servlet. Pasamos la ruta del XDP en el repositorio de CRX a este servlet.
 
 Luego llamamos al método renderAndExtendXdp de com.aemformssamples.documentservices.core.DocumentServices.
 
@@ -204,5 +204,5 @@ Para probar esto en el servidor local, siga los siguientes pasos
 1. [AEM Descargue e importe los recursos relacionados con este artículo en el administrador de paquetes de, usando el administrador de paquetes de](assets/renderandextendxdp.zip)
    * Este paquete tiene un portal de muestra y un archivo xdp
 1. Añadir certificado de Extensiones de Reader al usuario &quot;fd-service&quot;
-1. Dirija el explorador a [página web del portal](http://localhost:4502/content/AemForms/ReaderExtensionsXdp.html)
+1. Dirija su navegador a [página web del portal](http://localhost:4502/content/AemForms/ReaderExtensionsXdp.html)
 1. Haga clic en el icono pdf para procesar el xdp como archivo pdf con derechos de uso aplicados.

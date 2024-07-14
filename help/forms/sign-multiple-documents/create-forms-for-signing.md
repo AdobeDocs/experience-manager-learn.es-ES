@@ -21,20 +21,20 @@ ht-degree: 0%
 
 El siguiente paso es crear los formularios adaptables que desea incluir en el paquete. Recuerde cumplir los siguientes puntos al crear formularios para firmar:
 
-* Asegúrese de que los formularios se basan en la variable **SignMultipleForms** plantilla. Esto garantiza que los formularios se rellenen previamente con los datos recuperados de la base de datos.
+* Asegúrese de que los formularios estén basados en la plantilla **SignMultipleForms**. Esto garantiza que los formularios se rellenen previamente con los datos recuperados de la base de datos.
 
 * Los formularios deben configurarse para utilizar Acrobat Sign y el campo signer1 debe asociarse al campo Customer Email
 * Los formularios también deben asociarse con clientLib llamado **getnextform**
 * Los formularios deben utilizar el componente Paso de firma.
-* El formulario también debe utilizar el personalizado **Firmar varios formularios** componente. Este componente le permite desplazarse al siguiente formulario para iniciar sesión en el paquete.
-* El envío del formulario debe configurarse para déclencheur AEM el flujo de trabajo de la **Actualizar estado de firma**
-* Asegúrese de que la ruta del archivo de datos está configurada en **Data.xml**. Esto es muy importante, ya que el código de ejemplo busca un archivo llamado Data.xml en la carga útil del proceso de envío del formulario.
+* El formulario también debe usar el componente personalizado **Firmar formulario múltiple**. Este componente le permite desplazarse al siguiente formulario para iniciar sesión en el paquete.
+* El envío del formulario debe configurarse para que se déclencheur AEM el flujo de trabajo **Actualizar estado de la firma** de la
+* Asegúrese de que la ruta del archivo de datos esté establecida en **Data.xml**. Esto es muy importante, ya que el código de ejemplo busca un archivo llamado Data.xml en la carga útil del proceso de envío del formulario.
 
-Una vez que haya creado el formulario, incluya el **campos comunes** fragmento de formulario adaptable en el formulario. El fragmento se marca como oculto. Este fragmento contiene los siguientes campos.
+Una vez que haya creado el formulario, incluya el fragmento de formulario adaptable **commonfields** en el formulario. El fragmento se marca como oculto. Este fragmento contiene los siguientes campos.
 
-* **firmado** - El campo que contiene el estado de la firma
-* **guid** - Identificador único para identificar el formulario en el paquete
-* **customerEmail** : Este campo contiene el correo electrónico del cliente
+* **firmado**: campo que contendrá el estado de la firma
+* **guid**: identificador único para identificar el formulario en el paquete
+* **customerEmail**: este campo contiene el correo electrónico del cliente
 
 
 
@@ -47,7 +47,7 @@ Una vez que todos los formularios del paquete se hayan rellenado y firmado, se d
 
 ## Recursos
 
-Los formularios de ejemplo, incluido el que se utiliza en este tutorial, pueden ser [descargado desde aquí](assets/forms-for-signing.zip)
+Los formularios de ejemplo, incluido el utilizado en este tutorial, se pueden [descargar desde aquí](assets/forms-for-signing.zip)
 
 ## Siguientes pasos
 

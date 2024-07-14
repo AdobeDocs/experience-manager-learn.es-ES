@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # Combinar los boletines seleccionados en un PDF
 
-Las selecciones del usuario se almacenan en un campo oculto. El valor de este campo oculto se pasa al servlet, que combina las selecciones en un PDF mediante [Servicio Forms Assembler](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html).
+Las selecciones del usuario se almacenan en un campo oculto. El valor de este campo oculto se pasa al servlet, que combinará las selecciones en un PDF mediante [servicio Forms Assembler](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html).
 
 
 ## Servlet para montar archivos PDF

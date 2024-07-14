@@ -29,19 +29,19 @@ Obtenga información sobre cómo utilizar las funciones de importación y export
 
 >[!TIP]
 >
-> Al abrir el archivo CSV de exportación de metadatos en Excel, utilice el [Importador de Excel](https://support.microsoft.com/en-us/office/import-data-from-a-csv-html-or-text-file-b62efe49-4d5b-4429-b788-e1211b5e90f6) en lugar de hacer doble clic en el archivo para evitar problemas con los archivos CSV codificados con UTF-8.
+> Al abrir el archivo CSV de exportación de metadatos en Excel, utilice [Excel importer](https://support.microsoft.com/en-us/office/import-data-from-a-csv-html-or-text-file-b62efe49-4d5b-4429-b788-e1211b5e90f6) en lugar de hacer doble clic en el archivo para evitar problemas con los archivos CSV codificados con UTF-8.
 >
 > Para abrir el archivo CSV de exportación de metadatos en Excel, siga estos pasos:
 > 
 > 1. Abra Microsoft Excel
-> 1. Seleccionar __Archivo > Nuevo__ para crear una hoja de cálculo vacía
+> 1. Seleccione __Archivo > Nuevo__ para crear una hoja de cálculo vacía
 > 1. Con la hoja de cálculo vacía abierta, seleccione __Archivo > Importar__
-> 1. Seleccionar __Texto__ y haga clic en __Importar__
+> 1. Seleccione el archivo __Text__ y haga clic en __Importar__
 > 1. Seleccione el archivo CSV exportado del sistema de archivos y haga clic en __Obtener datos__
-> 1. En el paso 1 del asistente para importar, seleccione __Delimitado__ y establecer __Origen del archivo__ hasta __Unicode (UTF-8)__ y haga clic en __Siguiente__
-> 1. En el paso 2, configure el __Delimitadores__ hasta __Coma__ y haga clic en __Siguiente__
-> 1. En el paso 3, deje __Formato de datos de columna__ tal como está y haga clic en __Finalizar__
-> 1. Seleccionar __Importar__ para agregar los datos a la hoja de cálculo
+> 1. En el paso 1 del asistente para importar, seleccione __Delimitado__, establezca __Origen de archivo__ en __Unicode (UTF-8)__ y haga clic en __Siguiente__
+> 1. En el paso 2, establezca los __Delimitadores__ en __Coma__ y haga clic en __Siguiente__
+> 1. En el paso 3, deje el __formato de datos de columna__ tal cual y haga clic en __Finalizar__
+> 1. Seleccione __Importar__ para agregar los datos a la hoja de cálculo
 
 ## Importación de metadatos {#metadata-import}
 
@@ -72,9 +72,9 @@ Obtenga información sobre cómo utilizar las funciones de importación y export
    * Incorrecto: `Dc:Title {{String}}`
 
 * El tipo de propiedad no distingue entre mayúsculas y minúsculas
-* Todo válido [Tipos de propiedad JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/PropertyType.html) son compatibles
+* Se admiten todos los [tipos de propiedad JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/PropertyType.html) válidos
 
-* Formato de propiedad de varios valores - `<metadata property name> {{<property type : MULTI }}`
+* Formato de propiedad de varios valores: `<metadata property name> {{<property type : MULTI }}`
 
 ### Fila segunda a N filas
 

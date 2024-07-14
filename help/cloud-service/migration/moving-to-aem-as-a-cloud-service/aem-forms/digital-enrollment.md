@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Inscripción digital
 
-Descubra cómo AEM Forms as a Cloud Service admite el caso de uso de la inscripción digital.
+Obtenga información sobre cómo AEM Forms as a Cloud Service admite el caso de uso de la inscripción digital.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336966?quality=12&learn=on)

@@ -29,16 +29,16 @@ Conozca las prácticas recomendadas para las reglas de filtro de tráfico, inclu
 
 - Para determinar qué reglas son apropiadas para su organización, colabore con su equipo de seguridad.
 - Pruebe siempre las reglas en entornos de desarrollo antes de implementarlas en entornos de ensayo y producción.
-- Al declarar y validar reglas, empiece siempre por `action` type `log` para asegurarse de que la regla no bloquee el tráfico legítimo.
-- Para determinadas reglas, la transición de `log` hasta `block` debe basarse exclusivamente en el análisis del tráfico suficiente del sitio.
+- Al declarar y validar reglas, empiece siempre con `action` tipo `log` para asegurarse de que la regla no bloquee el tráfico legítimo.
+- Para ciertas reglas, la transición de `log` a `block` debe basarse exclusivamente en el análisis de tráfico de sitio suficiente.
 - Introduzca reglas de forma incremental y considere la posibilidad de incluir a sus equipos de prueba (control de calidad, rendimiento, pruebas de penetración) en el proceso.
-- Analice el impacto de las reglas con regularidad usando [herramientas de tablero](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling). Según el volumen de tráfico del sitio, el análisis se puede realizar diariamente, semanalmente o mensualmente.
+- Analice el impacto de las reglas con regularidad mediante la [herramienta de tablero](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling). Según el volumen de tráfico del sitio, el análisis se puede realizar diariamente, semanalmente o mensualmente.
 - Para bloquear el tráfico malintencionado que pueda detectar después del análisis, agregue las reglas adicionales. Por ejemplo, ciertas direcciones IP que han estado atacando el sitio.
 - La creación, la implementación y el análisis de reglas deben ser un proceso continuo e iterativo. No es una actividad única.
 
 ## Prácticas recomendadas para reglas de filtros de tráfico
 
-AEM Habilite las siguientes reglas de filtro de tráfico para su proyecto de. Sin embargo, los valores deseados para `rateLimit` y `clientCountry` las propiedades deben determinarse en colaboración con el equipo de seguridad.
+AEM Habilite las siguientes reglas de filtro de tráfico para su proyecto de. Sin embargo, los valores deseados para las propiedades `rateLimit` y `clientCountry` deben determinarse en colaboración con el equipo de seguridad.
 
 ```yaml
 kind: CDN
@@ -87,13 +87,13 @@ data:
 
 >[!WARNING]
 >
->Para su entorno de producción, colabore con su equipo de seguridad web para determinar los valores adecuados para `rateLimit`
+>Para su entorno de producción, colabore con su equipo de seguridad web para determinar los valores apropiados para `rateLimit`
 
 ## Prácticas recomendadas para reglas WAF
 
 Una vez que el WAF tiene licencia y está habilitado para su programa, los indicadores de WAF coincidentes con el tráfico aparecen en los gráficos y registros de solicitudes, aunque no los haya declarado en una regla. Por lo tanto, siempre es consciente del tráfico malicioso potencialmente nuevo y puede crear reglas según sea necesario. Observe los indicadores WAF que no se reflejan en las reglas declaradas y considere la posibilidad de declararlos.
 
-AEM Considere las reglas WAF que se indican a continuación para su proyecto de. Sin embargo, los valores deseados para `action` y `wafFlags` La propiedad debe determinarse en colaboración con el equipo de seguridad.
+AEM Considere las reglas WAF que se indican a continuación para su proyecto de. Sin embargo, los valores deseados para la propiedad `action` y `wafFlags` deben determinarse en colaboración con el equipo de seguridad.
 
 ```yaml
 kind: CDN

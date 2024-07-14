@@ -18,13 +18,13 @@ ht-degree: 2%
 
 # Seleccione un formulario para rellenarlo en una lista desplegable
 
-Las listas desplegables proporcionan una forma compacta y organizada de presentar una lista de opciones a los usuarios. Los elementos de la lista desplegable se rellenarán con los resultados de [API de listforms](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/List-Forms/operation/listForms)
+Las listas desplegables proporcionan una forma compacta y organizada de presentar una lista de opciones a los usuarios. Los elementos de la lista desplegable se rellenarán con los resultados de [listforms API](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/List-Forms/operation/listForms)
 
-![card-view](./assets/forms-drop-down.png)
+![vista de tarjeta](./assets/forms-drop-down.png)
 
 ## Lista desplegable
 
-El siguiente código se utilizó para rellenar la lista desplegable con los resultados de la llamada a la API de listforms. En función de la selección del usuario, se muestra el formulario adaptable para que el usuario lo rellene y lo envíe. [Componentes de IU de material](https://mui.com/) se han utilizado para crear esta interfaz
+El siguiente código se utilizó para rellenar la lista desplegable con los resultados de la llamada a la API de listforms. En función de la selección del usuario, se muestra el formulario adaptable para que el usuario lo rellene y lo envíe. [Se han utilizado componentes de interfaz de usuario de material](https://mui.com/) para crear esta interfaz
 
 ```javascript
 import * as React from 'react';
@@ -126,10 +126,10 @@ const getAFForms =async()=>
 
 Se utilizaron las dos llamadas de API siguientes al crear esta interfaz de usuario
 
-* [ListForm](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/List-Forms/operation/listForms). La llamada para recuperar los formularios se realiza una sola vez cuando se procesa el componente. Los resultados de la llamada de API se almacenan en la variable afForms.
+* [FormularioLista](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/List-Forms/operation/listForms). La llamada para recuperar los formularios se realiza una sola vez cuando se procesa el componente. Los resultados de la llamada de API se almacenan en la variable afForms.
 En el código anterior, iteramos a través de afForms utilizando la función map y, para cada elemento de la matriz afForms, se crea un componente MenuItem y se agrega al componente Select.
 
-* Formulario de búsqueda: se realiza una llamada de obtención a [getForm](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/Get-Form-Definition), donde el id es el id del formulario adaptable seleccionado por el usuario en la lista desplegable. El resultado de esta llamada de GET se almacena en selectedForm.
+* Recuperar formulario: se realiza una llamada de obtención a [getForm](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/Get-Form-Definition), donde el ID es el ID del formulario adaptable seleccionado por el usuario en la lista desplegable. El resultado de esta llamada de GET se almacena en selectedForm.
 
 ```
 const resp = await fetch(`/adobe/forms/af/${formID}`);

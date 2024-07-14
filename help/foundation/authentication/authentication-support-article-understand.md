@@ -23,7 +23,7 @@ ht-degree: 8%
 
 AEM Una vista consolidada de los mecanismos de autenticación (y, ocasionalmente, de autorización) admitidos por los servicios de autenticación de los que se dispone en el.
 
-*AEM En la tabla siguiente se describe cómo se pueden autenticar los usuarios en los recursos de la.*
+AEM *En la tabla siguiente se describe cómo se pueden autenticar los usuarios en el servicio de autenticación de usuarios en el servicio de correo electrónico*.
 
 <table>
     <tbody>
@@ -52,7 +52,7 @@ AEM Una vista consolidada de los mecanismos de autenticación (y, ocasionalmente
             <td>✔</td>
         </tr>
         <tr>
-            <td>Basado en tokens (con <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encapsulated-token.html" target="_blank">token encapsulado</a>)</td>
+            <td>Basado en token (con <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encapsulated-token.html" target="_blank">token encapsulado</a>)</td>
             <td>✔</td>
             <td>✔</td>
             <td>✔</td>
@@ -95,4 +95,4 @@ AEM Una vista consolidada de los mecanismos de autenticación (y, ocasionalmente
     </tbody>
 </table>
 
-⁕ *Se proporciona a través de proyectos de la comunidad, pero no se admite directamente mediante el Adobe.*
+⁕ *Se proporciona a través de proyectos de la comunidad, pero no es compatible directamente con el Adobe.*

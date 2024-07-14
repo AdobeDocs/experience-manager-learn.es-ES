@@ -1,6 +1,6 @@
 ---
-title: 'Cloud 5: Misterios de Cloud Manager: pruebas unitarias'
-description: AEM Pruebas unitarias con Cloud Manager y
+title: Cloud 5 - Misterios de Cloud Manager - Pruebas unitarias
+description: AEM Pruebas unitarias con y Cloud Manager
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
@@ -16,7 +16,7 @@ ht-degree: 5%
 
 ---
 
-# Cloud 5: Misterios de Cloud Manager: pruebas unitarias
+# Cloud 5 - Misterios de Cloud Manager - Pruebas unitarias
 
 Las pruebas unitarias, un paso que a menudo se pasa por alto en el desarrollo del software, son una actividad muy importante que todo desarrollador debe completar. AEM proporciona muchas comprobaciones de calidad predeterminadas de forma nativa, pero no pueden probar todo lo que haya personalizado o modificado.
 

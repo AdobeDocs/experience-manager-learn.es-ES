@@ -21,7 +21,7 @@ Este artículo lo acompaña durante el proceso de creación de un usuario de ser
 
 En versiones anteriores de Adobe Experience Manager AEM (), el solucionador de recursos administrativos se utilizaba para el procesamiento back-end, que requería acceso al repositorio. AEM El uso del solucionador de recursos administrativos está obsoleto en la versión 6.3 de. En su lugar, se utiliza un usuario del sistema con permisos específicos en el repositorio.
 
-Obtenga más información acerca de los detalles de [AEM creación y uso de usuarios de servicio de en la](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/advanced/service-users.html).
+AEM Obtenga más información acerca de los detalles de [crear y usar usuarios de servicio en el sitio de trabajo de {100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/advanced/service-users.html)
 
 Este artículo explica la creación de un usuario del sistema y la configuración de las propiedades del asignador de usuarios.
 
@@ -30,9 +30,9 @@ Este artículo explica la creación de un usuario del sistema y la configuració
 1. Haga clic en &quot;Administración de usuarios&quot;
 1. Haga clic en &quot;Crear usuario del sistema&quot;
 1. Establezca el tipo userid como &quot;data&quot; y haga clic en el icono verde para completar el proceso de creación del usuario del sistema
-1. [Abra configMgr.](http://localhost:4502/system/console/configMgr)
-1. Buscar por _Servicio de asignador de usuarios del servicio Apache Sling_ y haga clic en para abrir las propiedades
-1. Haga clic en *+* icono (más) para añadir la siguiente asignación de servicio
+1. [Abrir configMgr](http://localhost:4502/system/console/configMgr)
+1. Busque _Servicio de asignador de usuarios del servicio Apache Sling_ y haga clic para abrir las propiedades
+1. Haga clic en el icono *+* (más) para agregar la siguiente asignación de servicio
 
    * DevelopingWithServiceUser.core:getresourceresolver=data
    * DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
@@ -47,7 +47,7 @@ También podemos obtener una resolución de recursos en nombre del usuario de fd
 1. Vaya a [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
 1. Cargar e iniciar el paquete OSGi
 1. Asegúrese de que el paquete esté en estado activo
-1. Ahora ha creado correctamente una *Usuario del sistema* y también implementó el *Paquete de usuario de servicio*.
+1. Ahora ha creado correctamente un *Usuario del sistema* y también ha implementado el *Paquete de usuario de servicio*.
 
    Para proporcionar acceso a /content, conceda al usuario del sistema (&#39; datos &#39;) permisos de lectura en el nodo de contenido.
 

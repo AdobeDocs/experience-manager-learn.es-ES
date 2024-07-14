@@ -1,6 +1,6 @@
 ---
-title: Generar token de acceso de servidor a servidor en la acción del Generador de aplicaciones
-description: Obtenga información sobre cómo generar un token de acceso mediante credenciales de servidor a servidor OAuth para su uso en una acción de App Builder.
+title: Generar token de acceso de servidor a servidor en la acción de App Builder
+description: Obtenga información sobre cómo generar un token de acceso mediante las credenciales de servidor a servidor de OAuth para su uso en una acción de App Builder.
 feature: Developer Tools
 version: Cloud Service
 topic: Development
@@ -17,31 +17,31 @@ ht-degree: 0%
 
 ---
 
-# Generar token de acceso de servidor a servidor en la acción del Generador de aplicaciones
+# Generar token de acceso de servidor a servidor en la acción de App Builder
 
-Es posible que las acciones del Generador de aplicaciones deban interactuar con las API de Adobe compatibles **Credenciales de servidor a servidor OAuth** y están asociados a proyectos de la consola de Adobe Developer en los que se implementa la aplicación App Builder.
+Es posible que las acciones de App Builder deban interactuar con las API de Adobe que admiten **OAuth Server-to-Server credentials** y que están asociadas con proyectos de Adobe Developer Console en los que está implementada la aplicación de App Builder.
 
-Esta guía explica cómo generar un token de acceso utilizando _Credenciales de servidor a servidor OAuth_ para su uso en una acción del Generador de aplicaciones.
+En esta guía se explica cómo generar un token de acceso utilizando _OAuth Server-to-Server credentials_ para su uso en una acción de App Builder.
 
 >[!IMPORTANT]
 >
 > Las credenciales de la cuenta de servicio (JWT) han quedado obsoletas y pasan a ser credenciales de servidor a servidor OAuth. Sin embargo, todavía hay algunas API de Adobe que solo admiten credenciales de cuenta de servicio (JWT) y la migración de OAuth de servidor a servidor está en curso. Consulte la documentación de la API de Adobe para comprender qué credenciales se admiten.
 
-## Configuraciones del proyecto de la consola Adobe Developer
+## Configuraciones del proyecto de Adobe Developer Console
 
-Al agregar la API de Adobe deseada al proyecto de la consola de Adobe Developer, en el _Configurar API_ , seleccione la opción **Servidor a servidor OAuth** tipo de autenticación.
+Al agregar la API de Adobe deseada al proyecto de Adobe Developer Console, en el paso _Configurar API_, seleccione el tipo de autenticación **Servidor a servidor OAuth**.
 
-![Consola de Adobe Developer: servidor a servidor OAuth](./assets/s2s-auth/oauth-server-to-server.png)
+![Adobe Developer Console - Servidor a servidor OAuth](./assets/s2s-auth/oauth-server-to-server.png)
 
 Para asignar la cuenta de servicio de integración creada automáticamente arriba, seleccione el perfil de producto deseado. Por lo tanto, a través del perfil de producto, los permisos de la cuenta de servicio están controlados.
 
-![Consola de Adobe Developer: perfil de producto](./assets/s2s-auth/select-product-profile.png)
+![Adobe Developer Console - Perfil de producto](./assets/s2s-auth/select-product-profile.png)
 
 ## archivo .env
 
-En el del proyecto del Creador de aplicaciones `.env` , anexe claves personalizadas para las credenciales de servidor a servidor OAuth del proyecto de la consola de Adobe Developer. Los valores de credenciales de servidor a servidor de OAuth se pueden obtener del proyecto de la consola de Adobe Developer __Credenciales__ > __Servidor a servidor OAuth__ para un espacio de trabajo determinado.
+En el archivo `.env` del proyecto de App Builder, anexe claves personalizadas para las credenciales de servidor a servidor OAuth del proyecto de Adobe Developer Console. Los valores de credenciales de servidor a servidor de OAuth se pueden obtener de las __credenciales__ > __Servidor a servidor de OAuth__ del proyecto de Adobe Developer Console para un área de trabajo determinada.
 
-![Credenciales de servidor a servidor OAuth de la consola de Adobe Developer](./assets/s2s-auth/oauth-server-to-server-credentials.png)
+![Credenciales de servidor a servidor OAuth de Adobe Developer Console](./assets/s2s-auth/oauth-server-to-server-credentials.png)
 
 ```
 ...
@@ -50,11 +50,11 @@ OAUTHS2S_CLIENT_SECRET=p8e-EIRF6kY6EHLBSdw2b-pLUWKodDqJqSz3
 OAUTHS2S_CECREDENTIALS_METASCOPES=AdobeID,openid,ab.manage,additional_info.projectedProductContext,read_organizations,read_profile,account_cluster.read
 ```
 
-Los valores de `OAUTHS2S_CLIENT_ID`, `OAUTHS2S_CLIENT_SECRET`, `OAUTHS2S_CECREDENTIALS_METASCOPES` se puede copiar directamente desde la pantalla Credenciales de servidor a servidor OAuth del proyecto de la consola de Adobe Developer.
+Los valores de `OAUTHS2S_CLIENT_ID`, `OAUTHS2S_CLIENT_SECRET`, `OAUTHS2S_CECREDENTIALS_METASCOPES` se pueden copiar directamente desde la pantalla de credenciales de servidor a servidor OAuth del proyecto de Adobe Developer Console.
 
 ## Asignación de entradas
 
-Con el valor de credencial de servidor a servidor OAuth establecido en la variable `.env` , deben asignarse a las entradas de acción de AppBuilder para que se puedan leer en la propia acción. Para ello, añada entradas para cada variable en la variable `ext.config.yaml` acción `inputs` con el formato: `PARAMS_INPUT_NAME: $ENV_KEY`.
+Con el valor de credencial de servidor a servidor OAuth establecido en el archivo `.env`, deben asignarse a entradas de acción de AppBuilder para que puedan leerse en la propia acción. Para ello, agregue entradas para cada variable en la acción `ext.config.yaml` `inputs` con el formato: `PARAMS_INPUT_NAME: $ENV_KEY`.
 
 Por ejemplo:
 
@@ -83,13 +83,13 @@ runtimeManifest:
             final: true
 ```
 
-Las claves definidas en `inputs` están disponibles en la `params` objeto proporcionado a la acción del Generador de aplicaciones.
+Las claves definidas en `inputs` están disponibles en el objeto `params` proporcionado a la acción de App Builder.
 
 ## Credenciales de servidor a servidor OAuth para el token de acceso
 
-En la acción Generador de aplicaciones, las credenciales de servidor a servidor de OAuth están disponibles en el `params` objeto. Con estas credenciales, el token de acceso se puede generar utilizando [Bibliotecas OAuth 2.0](https://oauth.net/code/). O puede usar la variable [Biblioteca de recuperación de nodos](https://www.npmjs.com/package/node-fetch) para realizar una solicitud del POST al extremo del token de IMS de Adobe para obtener el token de acceso.
+En la acción App Builder, las credenciales de servidor a servidor OAuth están disponibles en el objeto `params`. Estas credenciales permiten generar el token de acceso con [bibliotecas OAuth 2.0](https://oauth.net/code/). O puede usar la [biblioteca de búsqueda de nodos](https://www.npmjs.com/package/node-fetch) para realizar una solicitud al POST al extremo del token de IMS de Adobe y obtener el token de acceso.
 
-En el siguiente ejemplo se muestra cómo utilizar el complemento `node-fetch` para realizar una solicitud del POST al extremo del token de IMS de Adobe para obtener el token de acceso.
+En el ejemplo siguiente se muestra cómo utilizar la biblioteca `node-fetch` para realizar una solicitud de POST al extremo de token de IMS de Adobe a fin de obtener el token de acceso.
 
 ```javascript
 const fetch = require("node-fetch");

@@ -1,5 +1,5 @@
 ---
-title: AEM Función URL mnemónicas de Dispatcher
+title: AEM Función URL de vanidad de Dispatcher
 description: AEM Comprenda cómo trata la con las URL de vanidad y las técnicas adicionales mediante el uso de reglas de reescritura para asignar contenido más cerca del borde del envío.
 version: 6.5
 topic: Administration, Performance
@@ -31,7 +31,7 @@ AEM Este documento le ayuda a comprender cómo se trata el tema de las direccion
 
 Cuando tiene contenido que se aloja en una estructura de carpetas lógica, no siempre vive en una dirección URL de referencia fácil. Las URL mnemónicas son como accesos directos. Direcciones URL únicas o más cortas que hacen referencia al lugar donde se encuentra el contenido real.
 
-Un ejemplo: `/aboutus` apuntado `/content/we-retail/us/en/about-us.html`
+Un ejemplo: `/aboutus` apuntó a `/content/we-retail/us/en/about-us.html`
 
 AEM AEM Los autores de tienen la opción de establecer propiedades de URL mnemónicas en un fragmento de contenido de y publicarlo.
 
@@ -44,21 +44,21 @@ Por este motivo, el módulo de Dispatcher tiene una función para permitir autom
 
 ### Creación de URL mnemónicas
 
-AEM El autor visita una página en, hace clic en las propiedades de la página y agrega entradas en la barra de herramientas de, que se encuentra en la barra de herramientas de _URL de vanidad_ sección. Al guardar los cambios y activar la página, el elemento mnemónico se asigna a la página.
+AEM El autor visita una página en la página en, hace clic en las propiedades de la página y agrega entradas en la sección _URL de vanidad_. Al guardar los cambios y activar la página, el elemento mnemónico se asigna a la página.
 
-Los autores también pueden seleccionar la _Redirigir URL de vanidad_ casilla de verificación al añadir _URL de vanidad_ , esto hace que las direcciones url mnemónicas se comporten como redirecciones 302. Significa que se indica al explorador que vaya a la nueva URL (a través de ) `Location` encabezado de respuesta) y el explorador realiza una nueva solicitud a la nueva URL.
+Los autores también pueden seleccionar la casilla de verificación _Redirigir URL mnemónica_ al agregar _entradas de URL mnemónica_, esto hace que las URL mnemónicas se comporten como redirecciones 302. Significa que se le indica al explorador que vaya a la nueva URL (a través del encabezado de respuesta `Location`) y el explorador realiza una nueva solicitud a la nueva URL.
 
 #### IU táctil:
 
-![AEM Menú desplegable del cuadro de diálogo para la interfaz de usuario de creación de en la pantalla del editor del sitio](assets/disp-vanity-url/aem-page-properties-drop-down.png "aem-page-properties-drop-down")
+AEM ![Menú desplegable del cuadro de diálogo para la interfaz de usuario de creación de la creación de la aplicación en la pantalla del editor del sitio](assets/disp-vanity-url/aem-page-properties-drop-down.png "aem-page-properties-drop-down")
 
-![página de aem: página de diálogo propiedades](assets/disp-vanity-url/aem-page-properties.png "aem-page-properties")
+![página de diálogo de propiedades de página de aem](assets/disp-vanity-url/aem-page-properties.png "aem-page-properties")
 
 #### Buscador de contenido clásico:
 
-![AEM propiedades de página de la barra de tareas de iu clásica de siteadmin](assets/disp-vanity-url/aem-page-properties-sidekick.png "aem-page-properties-sidekick")
+AEM ![propiedades de la página de la barra de tareas de la iu clásica de siteadmin ](assets/disp-vanity-url/aem-page-properties-sidekick.png "aem-page-properties-sidekick")
 
-![Cuadro de diálogo Propiedades de página de IU clásica](assets/disp-vanity-url/aem-page-properties-classic.png "aem-page-properties-classic")
+![Cuadro de diálogo de propiedades de página de IU clásica](assets/disp-vanity-url/aem-page-properties-classic.png "aem-page-properties-classic")
 
 
 >[!NOTE]
@@ -70,22 +70,22 @@ Los autores también pueden seleccionar la _Redirigir URL de vanidad_ casilla de
 
 Cada entrada mnemónica es una entrada de mapa sling para una redirección interna.
 
-AEM Los mapas se pueden ver en la consola de instancias de Félix de la página de inicio de la aplicación ( `/system/console/jcrresolver` )
+AEM Los mapas se pueden ver en la consola Félix de instancias de ( `/system/console/jcrresolver` )
 
 Esta es una captura de pantalla de una entrada de mapa creada por una entrada mnemónica:
-![captura de pantalla de consola de una entrada mnemónica en las reglas de resolución de recursos](assets/disp-vanity-url/vanity-resource-resolver-entry.png "vanity-resource-resolver-entry")
+![captura de pantalla de consola de una entrada mnemónica en el recurso que resuelve reglas](assets/disp-vanity-url/vanity-resource-resolver-entry.png "vanity-resource-resolver-entry")
 
-AEM En el ejemplo anterior, cuando solicitamos a la instancia de que visite `/aboutus` se resuelve en `/content/we-retail/us/en/about-us.html`
+AEM En el ejemplo anterior, cuando solicitamos a la instancia de que visite `/aboutus`, se resuelve en `/content/we-retail/us/en/about-us.html`
 
-## Filtros de permiso automático de Dispatcher
+## Dispatcher permite filtros automáticamente
 
-Dispatcher en un estado seguro filtra las solicitudes en la ruta `/` a través de Dispatcher porque esa es la raíz del árbol JCR.
+Dispatcher en un estado seguro filtra las solicitudes en la ruta de acceso `/` a través de Dispatcher porque esa es la raíz del árbol JCR.
 
-Es importante asegurarse de que los editores solo permitan contenido desde `/content` y otras rutas seguras, etc., y no rutas como `/system`.
+Es importante asegurarse de que los editores solo permiten contenido de `/content` y otras rutas de acceso seguras, y así sucesivamente, y no rutas de acceso como `/system`.
 
-Aquí están las URL mnemónicas activas en la carpeta base de `/` entonces, ¿cómo les permitimos llegar a los editores mientras se mantienen seguros?
+Aquí están las URL mnemónicas activas en la carpeta base de `/`. ¿Cómo les permitimos llegar a los editores mientras se mantienen seguros?
 
-AEM El Dispatcher simple tiene un mecanismo de autorización de filtro automático y debe instalar un paquete de y luego configurar el Dispatcher para que se oriente a esa página del paquete.
+Dispatcher AEM simple tiene un mecanismo de autorización de filtro automático y debe instalar un paquete de y luego configurar Dispatcher para que apunte a esa página del paquete.
 
 [https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/vanityurls-components](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/vanityurls-components)
 
@@ -99,24 +99,24 @@ Dispatcher tiene una sección de configuración en su archivo de granja de servi
 }
 ```
 
-El `/delay` El parámetro, medido en segundos, no funciona en base a un intervalo fijo sino en base a una comprobación basada en condiciones. Dispatcher evalúa la marca de tiempo de la modificación del `/file` (que almacena la lista de URL de vanidad reconocidas) al recibir una solicitud de una URL no incluida. El `/file` no se actualizará si la diferencia horaria entre el momento actual y el `/file`La última modificación de es menor que `/delay` duración. Actualización del `/file` ocurre bajo dos condiciones:
+El parámetro `/delay`, medido en segundos, no funciona en base a un intervalo fijo, sino en base a una comprobación basada en condiciones. Dispatcher evalúa la marca de tiempo de la modificación de `/file` (que almacena la lista de URL de vanidad reconocidas) al recibir una solicitud de una dirección URL no incluida. `/file` no se actualizará si la diferencia horaria entre el momento actual y la última modificación de `/file` es menor que la duración de `/delay`. La actualización de `/file` se produce bajo dos condiciones:
 
-1. La solicitud entrante es para una dirección URL no almacenada en caché o enumerada en el `/file`.
-1. Al menos `/delay` han pasado segundos desde el `/file` se actualizó por última vez.
+1. La solicitud entrante es para una dirección URL no almacenada en caché o enumerada en `/file`.
+1. Han transcurrido al menos `/delay` segundos desde la última actualización de `/file`.
 
 Este mecanismo está diseñado para protegerse contra los ataques de denegación de servicio (DoS), que de lo contrario podrían saturar a Dispatcher con solicitudes, aprovechando la función de direcciones URL mnemónicas.
 
-En términos más sencillos, la `/file` que contenga URL de vanidad solo se actualiza si llega una solicitud de una URL que no esté ya en la `/file` y si la variable `/file`La última modificación de fue hace más tiempo que el `/delay` punto.
+En términos más simples, `/file` que contiene direcciones URL personales solo se actualiza si llega una solicitud para una dirección URL que no se encuentra ya en `/file` y si la última modificación de `/file` se produjo hace más tiempo que el período de `/delay`.
 
-Para almacenar en déclencheur explícitamente una actualización de `/file`, puede solicitar una URL inexistente después de asegurarse de que el `/delay` ha pasado el tiempo desde la última actualización. Las direcciones URL de ejemplo para este fin incluyen:
+Para almacenar en déclencheur explícitamente una actualización de `/file`, puede solicitar una dirección URL inexistente después de asegurarse de que haya transcurrido el tiempo necesario de `/delay` desde la última actualización. Las direcciones URL de ejemplo para este fin incluyen:
 
 - `https://dispatcher-host-name.com/this-vanity-url-does-not-exist`
 - `https://dispatcher-host-name.com/please-hand-me-that-planet-maestro`
 - `https://dispatcher-host-name.com/random-vanity-url`
 
-Este método obliga a Dispatcher a actualizar el `/file`, siempre que el especificado `/delay` ha transcurrido desde la última modificación.
+Este método obliga a Dispatcher a actualizar `/file`, siempre que el intervalo `/delay` especificado haya transcurrido desde la última modificación.
 
-Almacena su caché de la respuesta en la `/file` argumento así en este ejemplo `/tmp/vanity_urls`
+Almacena su caché de la respuesta en el argumento `/file`; en este ejemplo, `/tmp/vanity_urls`
 
 AEM Por lo tanto, si visita la instancia de en la URI, verá lo que arroja:
 
@@ -130,21 +130,21 @@ AEM ¿Por qué mencionamos el uso de reglas de reescritura en lugar del mecanism
 
 Se explican sencillamente los problemas de área de nombres, rendimiento y lógica de nivel superior que se pueden gestionar mejor.
 
-Veamos un ejemplo de la entrada mnemónica `/aboutus` a su contenido `/content/we-retail/us/en/about-us.html` uso de Apache `mod_rewrite` para lograr esto.
+Veamos un ejemplo de la entrada mnemónica `/aboutus` de su contenido `/content/we-retail/us/en/about-us.html` mediante el módulo `mod_rewrite` de Apache para lograr esto.
 
 ```
 RewriteRule ^/aboutus /content/we-retail/us/en/about-us.html [PT,L,NC]
 ```
 
-Esta regla busca la vanidad `/aboutus` y obtenga la ruta completa del procesador con el indicador PT (Pasar).
+Esta regla busca el elemento mnemónico `/aboutus` y obtiene la ruta de acceso completa del procesador con el indicador PT (Pasar).
 
 También detiene el procesamiento de todas las demás reglas del indicador L (Última), lo que significa que no tiene que atravesar una enorme lista de reglas como la resolución JCR.
 
 AEM Además de no tener que representar la solicitud y esperar a que el editor de la responda a estos dos elementos de este método, se hace mucho más eficaz.
 
-A continuación, la cereza del pastel aquí es el indicador NC (sin distinción de mayúsculas y minúsculas), que significa si un cliente escribe la URI con `/AboutUs` en lugar de `/aboutus` todavía funciona.
+A continuación, la cereza del pastel aquí es el indicador NC (sin distinción de mayúsculas y minúsculas), lo que significa que si un cliente escribe la URI con `/AboutUs` en lugar de `/aboutus`, aún funciona.
 
-Para crear una regla de reescritura, debe crear un archivo de configuración en Dispatcher (por ejemplo: `/etc/httpd/conf.d/rewrites/examplevanity_rewrite.rules`) e inclúyalo en el `.vhost` que administra el dominio que necesita aplicar estas url mnemónicas.
+Para crear una regla de reescritura, debe crear un archivo de configuración en Dispatcher (ejemplo: `/etc/httpd/conf.d/rewrites/examplevanity_rewrite.rules`) e incluirlo en el archivo `.vhost` que administra el dominio que necesita aplicar estas URL mnemónicas.
 
 Este es un ejemplo de fragmento de código de inclusión dentro de `/etc/httpd/conf.d/enabled_vhosts/we-retail.vhost`
 
@@ -169,7 +169,7 @@ AEM Usar para controlar las entradas mnemónicas tiene las siguientes ventajas
 - Los autores pueden crearlos sobre la marcha
 - Se alojan con el contenido y se pueden empaquetar con este
 
-Uso de `mod_rewrite` para controlar las entradas personales tiene las siguientes ventajas
+El uso de `mod_rewrite` para controlar las entradas personales ofrece las siguientes ventajas
 
 - Resolución de contenido más rápida
 - Más cerca del límite de las solicitudes de contenido de usuario final
@@ -179,11 +179,11 @@ Uso de `mod_rewrite` para controlar las entradas personales tiene las siguientes
 Utilice ambos métodos, pero aquí están los consejos y criterios que debe utilizar cuando:
 
 - AEM Si el elemento mnemónico es temporal y tiene un tráfico planificado bajo, use la función integrada de la tarjeta de acceso de la plataforma de datos de la plataforma de datos de
-- Si el elemento mnemónico es un punto final básico que no cambia con frecuencia y tiene uso frecuente, utilice un `mod_rewrite` regla.
-- Si el área de nombres mnemónica (por ejemplo: `/aboutus`AEM ) se debe reutilizar para muchas marcas en la misma instancia de y, a continuación, utilizar reglas de reescritura.
+- Si el elemento mnemónico es un extremo básico que no cambia con frecuencia y tiene uso frecuente, use una regla `mod_rewrite`.
+- AEM Si el área de nombres mnemónica (por ejemplo: `/aboutus`) debe reutilizarse para muchas marcas en la misma instancia de, utilice reglas de reescritura.
 
 >[!NOTE]
 >
->AEM Si desea utilizar la función mnemónica y evitar el área de nombres, puede crear una convención de nombres. Usar direcciones URL mnemónicas anidadas como `/brand1/aboutus`, `brand2/aboutus`, `brand3/aboutus`.
+>AEM Si desea utilizar la función mnemónica y evitar el área de nombres, puede crear una convención de nombres. Utilizando direcciones URL mnemónicas anidadas como `/brand1/aboutus`, `brand2/aboutus`, `brand3/aboutus`.
 
 [Siguiente -> Registro común](./common-logs.md)

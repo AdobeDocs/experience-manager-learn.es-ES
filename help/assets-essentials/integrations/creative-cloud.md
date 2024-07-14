@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Aprenda a integrar Assets Essentials con las bibliotecas de Adobe Creative Cloud, lo que permite:
 
-+ Archivos de Assets Essentials a los que se accede fácilmente mediante Bibliotecas de Creative Cloud
-+ Archivos de bibliotecas de Creative Cloud para compartir con Assets Essentials
++ Archivos de Assets Essentials a los que se puede acceder fácilmente mediante Creative Cloud Libraries
++ Archivos de Creative Cloud Libraries para compartir con los Assets Essentials
 
 >[!VIDEO](https://video.tv.adobe.com/v/336069?quality=12&learn=on)

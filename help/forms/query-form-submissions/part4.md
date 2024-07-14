@@ -20,11 +20,11 @@ ht-degree: 2%
 
 # Rellenar previamente el formulario con datos enviados y archivos adjuntos
 
-Si la variable **Administrador** hace clic en ViewLink en la tabla de resultados de la búsqueda; el formulario se rellena previamente con los datos enviados.
+Cuando el **Administrador** hace clic en ViewLink en la tabla de resultados de búsqueda, el formulario se rellena previamente con los datos enviados.
 
 Se ha utilizado un servicio de relleno previo para recuperar los datos asociados con el BlobId del portal de Azure.
 
-[Puede encontrar un artículo independiente sobre cómo rellenar previamente un formulario con datos y datos adjuntos aquí.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/prefill-form-with-data-attachments/introduction.html)
+[Aquí hay disponible un artículo independiente sobre cómo rellenar previamente el formulario con datos y datos adjuntos.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/prefill-form-with-data-attachments/introduction.html)
 
 ## Siguientes pasos
 

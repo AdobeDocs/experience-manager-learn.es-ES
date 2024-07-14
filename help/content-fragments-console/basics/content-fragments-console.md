@@ -1,6 +1,6 @@
 ---
 title: Información general de la consola Fragmentos de contenido
-description: AEM Obtenga información acerca de las funciones y características básicas de la consola de creación de fragmentos de contenido de as a Cloud Service.
+description: Obtenga información acerca de las funciones y características básicas de la consola de creación de fragmentos de contenido de AEM as a Cloud Service.
 version: Cloud Service
 feature: Content Fragments
 topic: Content Management
@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # Información general de la consola Fragmentos de contenido
 
-AEM Obtenga información acerca de las funciones y características básicas de la consola de creación de fragmentos de contenido de as a Cloud Service.
+Obtenga información acerca de las funciones y características básicas de la consola de creación de fragmentos de contenido de AEM as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409492?quality=12&learn=on)

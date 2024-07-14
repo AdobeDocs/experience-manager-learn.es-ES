@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Actualizar el tiempo de espera de CORBA en PDFG para mitigar los problemas de reversión de transacciones
 
-*En este vídeo se describe el proceso de actualización del tiempo de espera de CORBA en Forms PDFG para mitigar los problemas de reversión de transacciones.*
+*Este vídeo describe el proceso de actualización del tiempo de espera de CORBA en Forms PDFG para mitigar los problemas de reversión de transacciones.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335512?quality=12&learn=on)

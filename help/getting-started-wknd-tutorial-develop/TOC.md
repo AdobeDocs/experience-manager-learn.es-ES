@@ -10,8 +10,8 @@ audience: developer
 index: y
 source-git-commit: beebd6a354a9efb77d6e5e463559b34be78c006e
 workflow-type: tm+mt
-source-wordcount: '108'
-ht-degree: 46%
+source-wordcount: '124'
+ht-degree: 40%
 
 ---
 
@@ -28,14 +28,14 @@ ht-degree: 46%
    + [5 - Sistema de estilos](./project-archetype/style-system.md)
    + [6 - Componente personalizado](./project-archetype/custom-component.md)
    + [7 - Pruebas unitarias](./project-archetype/unit-testing.md)
-+ Creación rápida de sitios {#site-template}
++ Creación rápida de sitio {#site-template}
    + [Información general](./site-template/overview.md)
    + [1 - Crear un sitio](./site-template/create-site.md)
    + [2 - Introducción a la creación y publicación](./site-template/author-content-publish.md)
    + [3 - Planificación de la IU con Adobe XD](./site-template/ui-planning-adobe-xd.md)
    + [4 - Plantillas de página](./site-template/page-templates.md)
    + [5 - Temática](./site-template/theming.md)
-+ Habilitar canalización front-end: DevOps{#enable-frontend-pipeline-devops}
++ Habilitar canalización front-end - DevOps{#enable-frontend-pipeline-devops}
    + [Información general](./enable-frontend-pipeline/overview.md)
    + [1 - Revisar proyecto de pila completa](./enable-frontend-pipeline/review-uifrontend-module.md)
    + [2 - Actualizar proyecto para utilizar canalización front-end](./enable-frontend-pipeline/update-project.md)

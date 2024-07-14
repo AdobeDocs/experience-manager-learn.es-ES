@@ -36,13 +36,13 @@ ht-degree: 1%
 >* Microsoft Visual C++ 2012 redistribuible
 >* Microsoft Visual C++ 2013 redistribuible (a partir de 6.5)
 
-Aunque recomendamos seguir las [documentación oficial](https://helpx.adobe.com/es/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html) para instalar AEM Forms. Se pueden seguir los siguientes pasos para instalar y configurar AEM Forms en el entorno de Windows:
+Aunque recomendamos seguir la [documentación oficial](https://helpx.adobe.com/es/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html) para instalar AEM Forms. Se pueden seguir los siguientes pasos para instalar y configurar AEM Forms en el entorno de Windows:
 
 * Asegúrese de que tiene instalado el JDK adecuado
    * AEM 6.2 que necesita: Oracle SE 8 JDK 1.8.x (64 bits)
    * AEM AEM 6.3 y 6.4 de la que usted necesita: Oracle SE 8 JDK 1.8.x (64bit)
    * AEM.5 necesita JDK 8 o JDK 11
-   * [Requisitos oficiales del JDK](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/introduction/technical-requirements.html?lang=es) se enumeran aquí
+   * [Los requisitos oficiales de JDK](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/introduction/technical-requirements.html?lang=es) se enumeran aquí
 * Asegúrese de que JAVA_HOME está configurado para que apunte al JDK instalado.
    * Para crear la variable JAVA_HOME en ventanas, siga los pasos a continuación:
       * Haga clic con el botón derecho en Mi PC y seleccione Propiedades
@@ -69,8 +69,8 @@ Aunque recomendamos seguir las [documentación oficial](https://helpx.adobe.com/
    * **sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.&#42;** **sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.&#42;**
 * Estas dos propiedades son necesarias para que funcionen los servicios de documentos
 * Guarde el archivo sling.properties
-* [Descargar el paquete de complementos de formularios adecuado](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es)
-* Instalación del paquete de complementos de formularios utilizando [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp).
+* [Descargar el paquete de complementos de formularios correspondiente](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es)
+* Instale el paquete de complementos de formularios usando [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp).
 * Después de instalar add on package, deben seguirse los siguientes pasos
 
    * **Asegúrese de que todos los paquetes estén en estado activo. (Excepto el paquete de firmas de AEMFD).**
@@ -80,10 +80,10 @@ Aunque recomendamos seguir las [documentación oficial](https://helpx.adobe.com/
 
 ## paquete sun.util.calendar en la lista de permitidos
 
-1. Abra la consola web de Felix en su [ventana del explorador](http://localhost:4502/system/console/configMgr)
+1. Abra la consola web Felix en la [ventana del explorador](http://localhost:4502/system/console/configMgr)
 1. Busque y abra Configuración del firewall de deserialización: `com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
-1. Añadir `sun.util.calendar` como nueva entrada en `com.adobe.cq.deserfw.impl.DeserializationFirewallImpl.firewall.deserialization.whitelist.name`
+1. Agregar `sun.util.calendar` como nueva entrada en `com.adobe.cq.deserfw.impl.DeserializationFirewallImpl.firewall.deserialization.whitelist.name`
 1. Guarde los cambios.
 
 Felicitaciones!!! Ya ha instalado y configurado AEM Forms en su sistema.
-Según sus necesidades, puede configurar lo siguiente  [Extensiones de Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) o [PDFG](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html) en el servidor
+Según sus necesidades, puede configurar [Extensiones de Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) o [PDFG](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html) en su servidor

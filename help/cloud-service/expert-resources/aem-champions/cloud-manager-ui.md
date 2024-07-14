@@ -1,6 +1,6 @@
 ---
-title: 'AEM Consejos y trucos para el campeón de la: IU de Cloud Manager'
-description: AEM Consulte estas sugerencias sobre cómo utilizar la interfaz de usuario de Cloud Manager del campeón y experto de la industria, Rakesh.
+title: AEM Consejos y trucos para el campeón de la - IU de Cloud Manager
+description: Eche un vistazo a estas sugerencias sobre cómo utilizar la interfaz de usuario de Cloud Manager AEM del campeón y experto en temas de seguridad, Rakesh.
 version: Cloud Service
 feature: Cloud Manager
 topic: Administration
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 ---
 
-# AEM Consejos y trucos para el campeón de la: IU de Cloud Manager
+# AEM Consejos y trucos para el campeón de la - IU de Cloud Manager
 
 Eche un vistazo a estos consejos de su compañero técnico, Rakesh Pasupuleti. Rakesh es un campeón de Adobe Experience Manager y explica cómo navegar y comprender la interfaz de usuario de Cloud Manager.
 
@@ -26,4 +26,4 @@ Eche un vistazo a estos consejos de su compañero técnico, Rakesh Pasupuleti. R
 
 ## Recursos adicionales {#additional-resources}
 
-* [Introducción a Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/concepts/cloud-manager-introduction.html) AEM - Documentación sobre el uso de Cloud Manager en as a Cloud Service
+* [Introducción a Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/concepts/cloud-manager-introduction.html) - Documentación sobre el uso de Cloud Manager en AEM as a Cloud Service

@@ -20,13 +20,13 @@ ht-degree: 0%
 
 # Extraer datos vinculados y guardarlos en una variable de cadena
 
-Esta capacidad le permite incluir los datos enviados en el cuerpo del correo electrónico. El paso de proceso personalizado extrae el **datos enlazados** del envío del formulario adaptable y rellena una variable de tipo cadena con los datos. A continuación, puede utilizar esta variable de cadena para insertar los datos en la plantilla de correo electrónico.
+Esta capacidad le permite incluir los datos enviados en el cuerpo del correo electrónico. El paso de proceso personalizado extrae los **datos enlazados** del envío del formulario adaptable y rellena una variable de tipo cadena con los datos. A continuación, puede utilizar esta variable de cadena para insertar los datos en la plantilla de correo electrónico.
 La siguiente captura de pantalla muestra los argumentos que debe pasar al paso de proceso personalizado
-![paso del proceso](assets/save-submitted-data-string.png)
+![paso-proceso](assets/save-submitted-data-string.png)
 
 Los siguientes son los parámetros
 
-* `data.xml` - El archivo que tiene los datos enviados Si el formato está en json, el nombre del archivo puede ser data.json
+* `data.xml`: el archivo que tiene los datos enviados Si el formato está en json, el nombre del archivo puede ser data.json
 
 El paso de proceso personalizado extraerá los datos enlazados y los almacenará en la variable submittedDataString definida en el flujo de trabajo
 

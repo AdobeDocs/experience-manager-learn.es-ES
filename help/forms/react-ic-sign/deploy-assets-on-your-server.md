@@ -26,7 +26,7 @@ Los siguientes activos/configuraciones se implementaron en un servidor de public
 * [Plantilla de comunicación interactiva de ejemplo](assets/waiver-interactive-communication.zip)
 * [Implementar el paquete DevelopersWithServiceUser](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip)
 * Agregue la siguiente entrada en el servicio del asignador de usuarios del servicio Apache Sling mediante OSGi configMgr
-  **DesarrollarWithServiceUser.core:getformsresourceresolver=fd-service**
+  **Desarrollo con ServiceUser.core:getformsresourceresolver=fd-service**
 
 ## Implementación de la aplicación react de ejemplo
 
@@ -59,6 +59,6 @@ Abra el archivo EmergencyContact.js y cambie la dirección URL en el método fet
 
 Para habilitar la realización de llamadas del POST AEM al punto de conexión de la aplicación REACT desde el punto de conexión de la aplicación, deberá especificar las entradas adecuadas en el campo Orígenes permitidos en la configuración de la política de uso compartido de recursos de origen cruzado de Granite de Adobe.
 
-![establecimiento de cors](assets/cors-settings.png)
+![configuración de cors](assets/cors-settings.png)
 
-Consulte [AEM Comprensión de CORS con la](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html) para obtener más información sobre las opciones de configuración de CORS.
+AEM Consulte [Comprensión de CORS con](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html) para obtener más información sobre las opciones de configuración de CORS.

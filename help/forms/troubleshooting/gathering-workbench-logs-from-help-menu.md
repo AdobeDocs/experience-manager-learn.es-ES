@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Recopilación de registros de Workbench desde el menú Ayuda
 
-*Este vídeo muestra el proceso para recopilar registros de Workbench desde el menú Ayuda*
+*Este vídeo muestra el proceso para recopilar registros de Workbench del menú Ayuda.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335501?quality=12&learn=on)

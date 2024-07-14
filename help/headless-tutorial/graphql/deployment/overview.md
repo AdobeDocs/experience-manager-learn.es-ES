@@ -26,17 +26,17 @@ AEM En función del cliente y de cómo se implemente, las implementaciones sin e
 
 ## AEM arquitectura de servicio de
 
-AEM AEM Antes de explorar las consideraciones de implementación, es imperativo comprender la arquitectura lógica de la implementación, así como la separación y las funciones de los niveles de servicio de los as a Cloud Service de la implementación, y las características de los mismos. AEM El as a Cloud Service consta de dos servicios lógicos:
+AEM Antes de explorar las consideraciones de implementación, es imperativo comprender la arquitectura lógica de los servicios de AEM as a Cloud Service, así como la separación y las funciones de los niveles de servicio de los usuarios, y en qué consiste la implementación. AEM as a Cloud Service consta de dos servicios lógicos:
 
-+ __AEM Autor de__ es el servicio donde los equipos crean, colaboran y publican fragmentos de contenido (y otros recursos).
-+ __AEM Publicación de__ es el servicio que se publicó. Los fragmentos de contenido (y otros recursos) se replican para el consumo general.
-+ __AEM Previsualización de__ AEM es el servicio que imita el comportamiento de Publicación, pero que tiene contenido publicado para vista previa o revisión. AEM La vista previa de la versión se ha diseñado para audiencias internas y no para la publicación general de contenido. AEM El uso de la vista previa de la es opcional, según el flujo de trabajo deseado.
++ AEM __Autor de__ es el servicio donde los equipos crean, colaboran y publican fragmentos de contenido (y otros recursos).
++ AEM __Publish__ es el servicio en el que se publicaron. Los fragmentos de contenido (y otros recursos) se replican para el consumo general.
++ AEM AEM __Vista previa de la__ es el servicio que imita el comportamiento de Publish, pero tiene contenido publicado para su vista previa o revisión. AEM La vista previa de la versión se ha diseñado para audiencias internas y no para la publicación general de contenido. AEM El uso de la vista previa de la es opcional, según el flujo de trabajo deseado.
 
-![AEM arquitectura de servicio de](./assets/overview/aem-service-architecture.png)
+AEM ![Arquitectura de servicio de la](./assets/overview/aem-service-architecture.png)
 
-AEM Arquitectura de implementación típica sin encabezado as a Cloud Service de la
+Arquitectura de implementación típica sin encabezado de AEM as a Cloud Service
 
-AEM AEM Los clientes sin encabezado que operan en una capacidad de producción suelen interactuar con Publish, que contiene el contenido publicado y aprobado, y que no tiene encabezado. AEM AEM Los clientes que interactúen con el autor de la comunicación deben tener especial cuidado, ya que el autor de la comunicación es seguro de forma predeterminada, requiere autorización para todas las solicitudes y también puede incluir trabajo en curso o contenido no aprobado.
+AEM AEM Los clientes sin encabezado que operan en una capacidad de producción suelen interactuar con Publish, que contiene el contenido publicado y aprobado, lo que se conoce como cliente sin encabezado AEM AEM Los clientes que interactúen con el autor de la comunicación deben tener especial cuidado, ya que el autor de la comunicación es seguro de forma predeterminada, requiere autorización para todas las solicitudes y también puede incluir trabajo en curso o contenido no aprobado.
 
 ## Implementaciones de cliente sin encabezado
 
@@ -75,7 +75,7 @@ AEM AEM Los clientes sin encabezado que operan en una capacidad de producción s
        <div class="card-content is-padded-small">
            <div class="content">
                <p class="headline is-size-6 has-text-weight-bold"><a href="./web-component.md" title="Componente web/JS">Componente web/JS</a></p>
-               <p class="is-size-6">Obtenga información acerca de las consideraciones de implementación para componentes web y consumidores sin encabezado JavaScript basados en explorador.</p>
+               <p class="is-size-6">Obtenga información acerca de las consideraciones de implementación para componentes web y consumidores sin encabezado de JavaScript basados en explorador.</p>
                <a href="./web-component.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Aprender</span>
                </a>

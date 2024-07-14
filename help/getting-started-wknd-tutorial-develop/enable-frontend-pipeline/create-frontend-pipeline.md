@@ -1,6 +1,6 @@
 ---
 title: Implementación mediante la canalización front-end
-description: AEM Obtenga información sobre cómo crear y ejecutar una canalización front-end que genere recursos front-end e implemente en la red de distribución de contenido (CDN) integrada en as a Cloud Service.
+description: Obtenga información sobre cómo crear y ejecutar una canalización front-end que genere recursos front-end e implemente en la CDN integrada en AEM as a Cloud Service.
 version: Cloud Service
 feature: AEM Project Archetype, Cloud Manager, CI-CD Pipeline
 topic: Content Management, Development, Development, Architecture
@@ -22,13 +22,13 @@ ht-degree: 0%
 
 # Implementación mediante la canalización front-end
 
-En este capítulo, creamos y ejecutamos una canalización front-end en Adobe Cloud Manager. Solo genera los archivos de `ui.frontend` AEM y las implementa en la CDN integrada en el as a Cloud Service de la. Por lo tanto, se aleja de la  `/etc.clientlibs` entrega de recursos front-end basada en.
+En este capítulo, creamos y ejecutamos una canalización front-end en Adobe Cloud Manager. Solo genera los archivos del módulo `ui.frontend` y los implementa en la CDN integrada en AEM as a Cloud Service. Por lo tanto, se aleja de la entrega de recursos del front-end basado en `/etc.clientlibs`.
 
 
 ## Objetivos {#objectives}
 
 * Cree y ejecute una canalización front-end.
-* Compruebe que los recursos front-end NO se entregan desde `/etc.clientlibs` pero desde un nuevo nombre de host que empiece por `https://static-`
+* Compruebe que los recursos front-end NO se entreguen desde `/etc.clientlibs` sino desde un nuevo nombre de host que comience por `https://static-`
 
 ## Uso de la canalización front-end
 
@@ -36,58 +36,58 @@ En este capítulo, creamos y ejecutamos una canalización front-end en Adobe Clo
 
 ## Requisitos previos {#prerequisites}
 
-Este es un tutorial de varias partes y se da por hecho que los pasos descritos en la sección [AEM Actualizar proyecto de estándar](./update-project.md) se han completado.
+AEM Este es un tutorial de varias partes y se supone que se han completado los pasos descritos en [Actualizar proyecto estándar](./update-project.md).
 
-Asegúrese de que tiene [privilegios para crear e implementar canalizaciones en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=en#role-definitions) y [AEM acceso a un entorno as a Cloud Service de](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html).
+Asegúrese de que tiene [privilegios para crear e implementar canalizaciones en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=en#role-definitions) y [acceso a un entorno de AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html).
 
 ## Cambiar nombre de canalización existente
 
-Cambie el nombre de la canalización existente de __Implementar en desarrollo__ hasta  __Implementación de WKND de FullStack en Desarrollo__ al ir a la __Configuración__ de la pestaña __Nombre de la canalización que no es de producción__ field. Esto sirve para hacer explícito si una canalización es de pila completa o front-end con solo mirar su nombre.
+Cambie el nombre de la canalización existente de __Implementar en desarrollador__ a __Implementar WKND de pila completa en desarrollador__ yendo al campo __Nombre de canalización que no es de producción__ de la pestaña __Configuración__. Esto sirve para hacer explícito si una canalización es de pila completa o front-end con solo mirar su nombre.
 
 ![Cambiar nombre de canalización](assets/fullstack-wknd-deploy-dev-pipeline.png)
 
 
-También en el __Código fuente__ , asegúrese de que los valores de los campos Repositorio y Rama de Git son correctos y de que la rama tiene los cambios de contrato de canalización front-end.
+También en la ficha __Código Source__, asegúrese de que los valores de los campos Repositorio y Rama de Git sean correctos y de que la rama tenga los cambios de contrato de canalización front-end.
 
-![Canalización de configuración de código fuente](assets/fullstack-wknd-source-code-config.png)
+![Canalización de configuración de código Source](assets/fullstack-wknd-source-code-config.png)
 
 
 ## Creación de una canalización front-end
 
-Hasta __SOLO__ generar e implementar los recursos front-end desde el `ui.frontend` , realice los siguientes pasos:
+Para __SOLAMENTE__ generar e implementar los recursos front-end desde el módulo `ui.frontend`, realice los siguientes pasos:
 
-1. En la interfaz de usuario de Cloud Manager, en __Canalizaciones__ , haga clic en __Añadir__ botón, luego seleccione __Agregar canalización que no sea de producción__ (o __Agregar canalización de producción__ AEM ) en función del entorno as a Cloud Service en el que desee implementarlo.
+1. En la interfaz de usuario de Cloud Manager, en la sección __Canalizaciones__, haga clic en el botón __Agregar__ y, a continuación, seleccione __Agregar canalización que no sea de producción__ (o __Agregar canalización de producción__) según el entorno de AEM as a Cloud Service en el que desee implementar.
 
-1. En el __Agregar canalización que no sea de producción__ diálogo, como parte de la __Configuración__ pasos, seleccione la __Canalización de implementación__ , asígnele el nombre __Implementación de WKND de FrontEnd en Desarrollo__ y haga clic en __Continuar__
+1. En el cuadro de diálogo __Agregar canalización que no sea de producción__, como parte de los pasos de __Configuración__, seleccione la opción __Canalización de implementación__, asígnele el nombre __Implementación de WKND de FrontEnd en Desarrollo__ y haga clic en __Continuar__
 
-![Creación de configuraciones de canalización front-end](assets/create-frontend-pipeline-configs.png)
+![Crear configuraciones de canalización front-end](assets/create-frontend-pipeline-configs.png)
 
-1. Como parte de __Código fuente__ pasos, seleccione la __Código front-end__ y seleccione el entorno de __Entornos de implementación aptos__. En el __Código fuente__ Las secciones garantizan que los valores de los campos Repositorio y Rama de Git sean correctos y que la rama tenga los cambios de contrato de canalización front-end.
-Y __lo más importante__ para el __Ubicación del código__ campo el valor es `/ui.frontend` y, finalmente, haga clic en __Guardar__.
+1. Como parte de los pasos de __Código Source__, seleccione la opción __Código front-end__ y elija el entorno entre __Entornos de implementación aptos__. En la sección __Código Source__, asegúrese de que los valores de los campos Repositorio y Rama de Git sean correctos y de que la rama tenga los cambios de contrato de canalización front-end.
+Y __lo más importante__ para el campo __Ubicación del código__ el valor es `/ui.frontend` y, finalmente, haz clic en __Guardar__.
 
-![Crear código fuente de canalización front-end](assets/create-frontend-pipeline-source-code.png)
+![Crear código Source de canalización front-end](assets/create-frontend-pipeline-source-code.png)
 
 
 ## Secuencia de implementación
 
-* Ejecute primero el recién renombrado __Implementación de WKND de FullStack en Desarrollo__ AEM canalización para quitar los archivos clientlib de WKND del repositorio de la. AEM Y lo más importante, prepare el para el contrato de canalización front-end añadiendo __Configuración de Sling__ archivos (`SiteConfig`, `HtmlPageItemsConfig`).
+* AEM Ejecute primero la canalización __FullStack WKND Deploy to Dev__, cuyo nombre se acaba de cambiar, para quitar los archivos clientlib de WKND del repositorio de. AEM Y lo más importante, prepare el contrato de canalización de front-end para la preparación de la agregando __archivos de configuración de Sling__ (`SiteConfig`, `HtmlPageItemsConfig`).
 
 ![Sitio WKND sin estilo](assets/unstyled-wknd-site.png)
 
 >[!WARNING]
 >
->Después, la variable __Implementación de WKND de FullStack en Desarrollo__ finalización de la canalización tendrá un __sin estilo__ Sitio WKND, que puede aparecer dañado. Planee una interrupción o implemente durante las horas impares, se trata de una interrupción única que debe planificar durante el cambio inicial desde el uso de una canalización de pila completa única hasta la canalización front-end.
+>Una vez finalizada la canalización __FullStack WKND Deploy to Dev__, tendrá un sitio WKND __sin estilo__, que podría parecer dañado. Planee una interrupción o implemente durante las horas impares, se trata de una interrupción única que debe planificar durante el cambio inicial desde el uso de una canalización de pila completa única hasta la canalización front-end.
 
 
-* Finalmente, ejecute el __Implementación de WKND de FrontEnd en Desarrollo__ canalización solo para generar `ui.frontend` e implemente los recursos front-end directamente en la CDN.
+* Finalmente, ejecute la canalización __FrontEnd WKND Deploy to Dev__ para generar solo el módulo `ui.frontend` e implementar los recursos front-end directamente en la CDN.
 
 >[!IMPORTANT]
 >
->Observará que la variable __sin estilo__ El sitio WKND ha vuelto a la normalidad y esta vez __FrontEnd__ la ejecución de la canalización fue mucho más rápida que la canalización de pila completa.
+>Observará que el sitio WKND __sin estilo__ ha vuelto a la normalidad y esta vez la ejecución de la canalización __FrontEnd__ fue mucho más rápida que la canalización de pila completa.
 
 ## Verificar cambios de estilo y nuevo paradigma de entrega
 
-* Abra cualquier página del sitio WKND y podrá ver el color del texto __Rojo Adobe__ y los archivos de recursos front-end (CSS, JS) se envían desde la CDN. El nombre de host de la solicitud de recursos empieza por `https://static-pXX-eYY.p123-e456.adobeaemcloud.com/$HASH_VALUE$/theme/site.css` y del mismo modo el site.js o cualquier otro recurso estático al que haga referencia en la `HtmlPageItemsConfig` archivo.
+* Abra cualquier página del sitio WKND y podrá ver el color del texto con __Adobe rojo__ y los archivos de recursos front-end (CSS, JS) se entregan desde la red de distribución de contenido (CDN). El nombre de host de solicitud de recursos comienza con `https://static-pXX-eYY.p123-e456.adobeaemcloud.com/$HASH_VALUE$/theme/site.css`, así como el site.js o cualquier otro recurso estático al que haga referencia en el archivo `HtmlPageItemsConfig`.
 
 
 ![Sitio WKND de nuevo estilo](assets/newly-styled-wknd-site.png)
@@ -96,7 +96,7 @@ Y __lo más importante__ para el __Ubicación del código__ campo el valor es `/
 
 >[!TIP]
 >
->El `$HASH_VALUE$` Esto es lo mismo que se ve en el __Implementación de WKND de FrontEnd en Desarrollo__  la canalización es __HASH DE CONTENIDO__ field. AEM Se le notifica de la URL de CDN del recurso front-end, el valor se almacena en `/conf/wknd/sling:configs/com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig/jcr:content` bajo __prefixPath__ propiedad.
+>El `$HASH_VALUE$` aquí es el mismo que se ve en el campo __HASH DE CONTENIDO__ de la canalización __FrontEnd WKND Deploy to Dev__. AEM Se le notifica la dirección URL de CDN del recurso front-end, el valor se almacena en `/conf/wknd/sling:configs/com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig/jcr:content` en la propiedad __prefixPath__.
 
 
 ![Correlación de valor hash](assets/hash-value-correlartion.png)

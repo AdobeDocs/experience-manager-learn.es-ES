@@ -1,5 +1,5 @@
 ---
-title: Usuarios de servicio
+title: Usuarios del servicio
 description: AEM AEM Obtenga información sobre cómo crear y utilizar usuarios de servicio en el código de la para proporcionar acceso controlado y programático al repositorio de la.
 version: Cloud Service
 topic: Development
@@ -14,11 +14,11 @@ duration: 1053
 source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '62'
-ht-degree: 6%
+ht-degree: 12%
 
 ---
 
-# Usuarios de servicio
+# Usuarios del servicio
 
 AEM AEM Obtenga información sobre cómo crear y utilizar usuarios de servicio en el código de la para proporcionar acceso controlado y programático al repositorio de la.
 
@@ -26,7 +26,7 @@ AEM AEM Obtenga información sobre cómo crear y utilizar usuarios de servicio e
 
 ## Recursos
 
-+ [Documentación de inicialización del repositorio de Sling (repoinit)](https://sling.apache.org/documentation/bundles/repository-initialization.html)
++ [Documentación de inicialización del repositorio Sling (repoinit)](https://sling.apache.org/documentation/bundles/repository-initialization.html)
 + [Documentación de autenticación del servicio Sling](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html)
 
 ## Código

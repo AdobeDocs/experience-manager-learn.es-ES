@@ -31,11 +31,11 @@ La siguiente configuración de implementación debe estar implementada para impl
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [Filtros de Dispatcher](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | Uso compartido de recursos de origen cruzado (CORS) | ✘ | ✘ | ✘ |
-| [AEM anfitriones de](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
+| AEM [hosts de la](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
 
 ## Ejemplo de aplicaciones móviles
 
-Adobe proporciona aplicaciones móviles de ejemplo para iOS y Android™.
+El Adobe de proporciona aplicaciones móviles de ejemplo de iOS y Android™.
 
 <div class="columns is-multiline">
     <!-- iOS app -->
@@ -64,15 +64,15 @@ Adobe proporciona aplicaciones móviles de ejemplo para iOS y Android™.
        <div class="card">
            <div class="card-image">
                <figure class="image is-16by9">
-                   <a href="../example-apps/android-app.md" title="aplicación de Android™" tabindex="-1">
+                   <a href="../example-apps/android-app.md" title="aplicación Android™" tabindex="-1">
                        <img class="is-bordered-r-small" src="../example-apps/assets/android-java-app/android-app-card.png" alt="aplicación de Android">
                    </a>
                </figure>
            </div>
            <div class="card-content is-padded-small">
                <div class="content">
-                   <p class="headline is-size-6 has-text-weight-bold"><a href="../example-apps/android-app.md" title="aplicación de Android™">aplicación de Android™</a></p>
-                   <p class="is-size-6">AEM Aplicación de ejemplo de Java™ Android™ que consume contenido de las API de GraphQL sin encabezado de la aplicación de modo que se puede acceder a su contenido desde sin encabezado.</p>
+                   <p class="headline is-size-6 has-text-weight-bold"><a href="../example-apps/android-app.md" title="aplicación Android™">aplicación Android™</a></p>
+                   <p class="is-size-6">Aplicación de ejemplo de Java™ AndroidAEM ™ que consume contenido de las API de GraphQL sin encabezado de la aplicación de la aplicación de la interfaz de usuario de la aplicación.</p>
                    <a href="../example-apps/android-app.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                        <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ver ejemplo</span>
                    </a>

@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Pasos para mitigar ForcedDisconnectException
 
-*Este vídeo muestra las posibles causas y pasos para mitigar ForcedDisconnectException*
+*Este vídeo explica las posibles causas y pasos para mitigar ForcedDisconnectException*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335483?quality=12&learn=on)

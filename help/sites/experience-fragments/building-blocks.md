@@ -29,7 +29,7 @@ Los bloques de creación son una subfunción de los fragmentos de experiencias. 
 
 >[!NOTE]
 >
-> La plantilla utilizada para los fragmentos de experiencias debe incluir **Bloques de creación** como componente permitido.
+> La plantilla utilizada para los fragmentos de experiencias debe incluir **bloques de creación** como componente permitido.
 
 * Los bloques de creación facilitan la reutilización de componentes entre variaciones.
 * Los cambios en el bloque de creación principal se reflejan automáticamente en cualquier referencia. Los cambios en el diseño del bloque de creación no se ven afectados.

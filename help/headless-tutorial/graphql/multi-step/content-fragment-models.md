@@ -20,166 +20,166 @@ ht-degree: 1%
 
 # Definición de los modelos de fragmento de contenido {#content-fragment-models}
 
-En este capítulo, aprenderá a modelar contenido y a crear un esquema con **Modelos de fragmento de contenido**. Obtenga información sobre los diferentes tipos de datos que se pueden utilizar para definir un esquema como parte del modelo.
+En este capítulo, aprenderá a modelar contenido y a crear un esquema con **Modelos de fragmentos de contenido**. Obtenga información sobre los diferentes tipos de datos que se pueden utilizar para definir un esquema como parte del modelo.
 
-Creamos dos modelos simples, **Equipo** y **Persona**. El **Equipo** El modelo de datos de tiene nombre, nombre corto y descripción y hace referencia al **Persona** modelo de datos, que tiene nombre completo, detalles biológicos, imagen de perfil y lista de ocupaciones.
+Creamos dos modelos simples, **Equipo** y **Persona**. El modelo de datos **Equipo** tiene nombre, nombre corto y descripción y hace referencia al modelo de datos **Persona**, que tiene nombre completo, detalles biológicos, imagen de perfil y lista de ocupaciones.
 
 También puede crear su propio modelo siguiendo los pasos básicos y modificar los pasos respectivos, como consultas de GraphQL y código de aplicación de React, o simplemente seguir los pasos descritos en estos capítulos.
 
 ## Requisitos previos {#prerequisites}
 
-Este es un tutorial de varias partes y se da por hecho que una [AEM El entorno de autor de la página está disponible](./overview.md#prerequisites).
+AEM Este es un tutorial de varias partes y se da por hecho que hay un [entorno de creación de disponible](./overview.md#prerequisites).
 
 ## Objetivos {#objectives}
 
 * Cree un modelo de fragmento de contenido.
 * Identifique los tipos de datos y las opciones de validación disponibles para crear modelos.
-* Comprender cómo define el modelo de fragmento de contenido **ambos** el esquema de datos y la plantilla de creación de un fragmento de contenido.
+* Comprenda cómo el modelo de fragmento de contenido define **tanto** el esquema de datos como la plantilla de creación de un fragmento de contenido.
 
 ## Crear una configuración de proyecto
 
-Una configuración de proyecto contiene todos los modelos de fragmento de contenido asociados a un proyecto concreto y proporciona un medio para organizar los modelos. Debe crearse al menos un proyecto **antes** creando modelo de fragmento de contenido.
+Una configuración de proyecto contiene todos los modelos de fragmento de contenido asociados a un proyecto concreto y proporciona un medio para organizar los modelos. Debe crearse al menos un proyecto **antes de que** cree el modelo de fragmento de contenido.
 
-1. AEM Inicie sesión en la **Autor** entorno (p. ej., `https://author-pYYYY-eXXXX.adobeaemcloud.com/`)
+1. AEM Inicie sesión en el entorno **Autor** de la (p. ej. `https://author-pYYYY-eXXXX.adobeaemcloud.com/`)
 1. AEM En la pantalla Inicio de la, vaya a **Herramientas** > **General** > **Explorador de configuración**.
 
    ![Navegar al Explorador de configuración](assets/content-fragment-models/navigate-config-browser.png)
-1. Clic **Crear**, en la esquina superior derecha
+1. Haga clic en **Crear**, en la esquina superior derecha
 1. En el cuadro de diálogo resultante, introduzca:
 
    * Título*: **Mi proyecto**
-   * Nombre*: **my-project** (prefiera utilizar todas las minúsculas usando guiones para separar las palabras. Esta cadena influye en el extremo único de GraphQL con el que las aplicaciones cliente realizan solicitudes.)
-   * Marque **Modelos de fragmento de contenido**
-   * Marque **Consultas persistentes de GraphQL**
+   * Nombre*: **my-project** (prefiera usar todas las minúsculas usando guiones para separar las palabras). Esta cadena influye en el extremo único de GraphQL con el que las aplicaciones cliente realizan solicitudes.)
+   * Comprobar **modelos de fragmentos de contenido**
+   * Comprobar **consultas persistentes de GraphQL**
 
-   ![Configuración de Mi proyecto](assets/content-fragment-models/my-project-configuration.png)
+   ![Configuración de mi proyecto](assets/content-fragment-models/my-project-configuration.png)
 
 ## Crear los modelos de fragmentos de contenido
 
-A continuación, cree dos modelos para una **Equipo** y una **Persona**.
+A continuación, crea dos modelos para un **equipo** y una **persona**.
 
 ### Creación del modelo de persona
 
-Creación de un modelo para una **Persona**, que es el modelo de datos que representa a una persona que forma parte de un equipo.
+Cree un modelo para una **persona**, que es el modelo de datos que representa a una persona que forma parte de un equipo.
 
-1. AEM En la pantalla Inicio de la, vaya a **Herramientas** > **General** > **Modelos de fragmento de contenido**.
+1. AEM En la pantalla de inicio de la, vaya a **Herramientas** > **General** > **Modelos de fragmentos de contenido**.
 
-   ![Navegar a modelos de fragmentos de contenido](assets/content-fragment-models/navigate-cf-models.png)
+   ![Navegar a los modelos de fragmentos de contenido](assets/content-fragment-models/navigate-cf-models.png)
 
-1. Vaya a **Mi proyecto** carpeta.
-1. Tocar **Crear** en la esquina superior derecha para que aparezca el **Crear modelo** asistente.
-1. Entrada **Título de modelo** , introduzca **Persona** y pulse **Crear**. En el cuadro de diálogo resultante, pulse **Abrir**, para crear el modelo.
+1. Vaya a la carpeta **Mi proyecto**.
+1. Pulse **Crear** en la esquina superior derecha para que aparezca el asistente **Crear modelo**.
+1. En el campo **Título de modelo**, escriba **Persona** y pulse **Crear**. En el cuadro de diálogo resultante, pulse **Abrir** para generar el modelo.
 
-1. Arrastrar y soltar una **Texto de línea única** en el panel principal. Introduzca las siguientes propiedades en la **Propiedades** pestaña:
+1. Arrastre y suelte un elemento **Texto de una sola línea** en el panel principal. Escriba las siguientes propiedades en la ficha **Propiedades**:
 
    * **Etiqueta de campo**: **Nombre completo**
    * **Nombre de propiedad**: `fullName`
-   * Marque **Requerido**
+   * Comprobación **Requerida**
 
    ![Campo de propiedad Nombre completo](assets/content-fragment-models/full-name-property-field.png)
 
-   El **Nombre de propiedad** AEM define el nombre de la propiedad a la que se mantiene el acceso de forma. El **Nombre de propiedad** también define la variable **key** nombre para esta propiedad como parte del esquema de datos. Esta **key** se utiliza cuando los datos del fragmento de contenido se exponen a través de las API de GraphQL.
+   AEM El **Nombre de propiedad** define el nombre de la propiedad que se mantiene en el estado de la propiedad que se va a. El **Nombre de propiedad** también define el nombre de **clave** para esta propiedad como parte del esquema de datos. Esta clave **key** se usa cuando los datos del fragmento de contenido se exponen a través de las API de GraphQL.
 
-1. Pulse el botón **Tipos de datos** y arrastre y suelte una **Texto de varias líneas** campo debajo de **Nombre completo** field. Introduzca las siguientes propiedades:
+1. Pulse la pestaña **Tipos de datos** y arrastre y suelte un campo de **Texto de varias líneas** debajo del campo **Nombre completo**. Introduzca las siguientes propiedades:
 
    * **Etiqueta de campo**: **Biografía**
    * **Nombre de propiedad**: `biographyText`
    * **Tipo predeterminado**: **Texto enriquecido**
 
-1. Haga clic en **Tipos de datos** y arrastre y suelte una **Referencia de contenido** field. Introduzca las siguientes propiedades:
+1. Haga clic en la pestaña **Tipos de datos** y arrastre y suelte un campo de **Referencia de contenido**. Introduzca las siguientes propiedades:
 
    * **Etiqueta de campo**: **Imagen de perfil**
    * **Nombre de propiedad**: `profilePicture`
    * **Ruta raíz**: `/content/dam`
 
-   Al configurar el **Ruta raíz**, puede hacer clic en **carpeta** para que aparezca un modal y seleccione la ruta. Esto restringe las carpetas que los autores pueden utilizar para rellenar la ruta. `/content/dam` es la raíz en la que se almacenan todos los AEM Assets (imágenes, vídeos y otros fragmentos de contenido).
+   Al configurar la **Ruta raíz**, puede hacer clic en el icono **carpeta** para que aparezca un modal y seleccione la ruta. Esto restringe las carpetas que los autores pueden utilizar para rellenar la ruta. `/content/dam` es la raíz en la que se almacenan todos los AEM Assets (imágenes, vídeos y otros fragmentos de contenido).
 
-1. Agregue una validación a la **Referencia de imagen** para que solo los tipos de contenido de **Imágenes** se puede utilizar para rellenar el campo.
+1. Agregue una validación a la **Referencia de imagen** para que solo se puedan usar los tipos de contenido de **Imágenes** para rellenar el campo.
 
    ![Restringir a imágenes](assets/content-fragment-models/picture-reference-content-types.png)
 
-1. Haga clic en **Tipos de datos** y arrastre y suelte una **Enumeración**  Tipo de datos debajo de **Referencia de imagen** field. Introduzca las siguientes propiedades:
+1. Haga clic en la ficha **Tipos de datos** y arrastre y suelte un tipo de datos **Enumeración** debajo del campo **Referencia de imagen**. Introduzca las siguientes propiedades:
 
-   * **Procesar como**: **Casillas**
+   * **Procesar Como**: **Casillas**
    * **Etiqueta de campo**: **Ocupación**
    * **Nombre de propiedad**: `occupation`
 
-1. Añadir varios **Opciones** uso del **Añadir una opción** botón. Utilice el mismo valor para **Etiqueta de opción** y **Valor de opción**:
+1. Agregar varias **Opciones** mediante el botón **Agregar una opción**. Use el mismo valor para **Etiqueta de opción** y **Valor de opción**:
 
-   **Artista**, **Influenciador**, **Fotógrafo**, **Viajero**, **Escritor**, **YouTuber**
+   **Artista**, **Influencer**, **Fotógrafo**, **Viajero**, **Escritor**, **YouTuber**
 
-1. La final **Persona** El modelo debe tener el siguiente aspecto:
+1. El modelo final de **persona** debe tener el siguiente aspecto:
 
    ![Modelo de persona final](assets/content-fragment-models/final-author-model.png)
 
-1. Clic **Guardar** para guardar los cambios.
+1. Haga clic en **Guardar** para guardar los cambios.
 
 ### Crear el modelo de equipo
 
-Creación de un modelo para una **Equipo**, que es el modelo de datos para un equipo de personas. El modelo Equipo hace referencia al modelo Persona para representar a los miembros del equipo.
+Cree un modelo para un **equipo**, que es el modelo de datos para un equipo de personas. El modelo Equipo hace referencia al modelo Persona para representar a los miembros del equipo.
 
-1. En el **Mi proyecto** carpeta, pulse **Crear** en la esquina superior derecha para que aparezca el **Crear modelo** asistente.
-1. Entrada **Título de modelo** , introduzca **Equipo** y pulse **Crear**.
+1. En la carpeta **Mi proyecto**, pulsa **Crear** en la esquina superior derecha para que aparezca el asistente **Crear modelo**.
+1. En el campo **Título de modelo**, escribe **Equipo** y pulsa **Crear**.
 
-   Tocar **Abrir** en el cuadro de diálogo resultante, para abrir el modelo recién creado.
+   Pulse **Abrir** en el cuadro de diálogo resultante para abrir el modelo recién creado.
 
-1. Arrastrar y soltar una **Texto de línea única** en el panel principal. Introduzca las siguientes propiedades en la **Propiedades** pestaña:
+1. Arrastre y suelte un elemento **Texto de una sola línea** en el panel principal. Escriba las siguientes propiedades en la ficha **Propiedades**:
 
    * **Etiqueta de campo**: **Título**
    * **Nombre de propiedad**: `title`
-   * Marque **Requerido**
+   * Comprobación **Requerida**
 
-1. Pulse el botón **Tipos de datos** y arrastre y suelte una **Texto de línea única** en el panel principal. Introduzca las siguientes propiedades en la **Propiedades** pestaña:
+1. Pulse la pestaña **Tipos de datos** y arrastre y suelte un elemento de **Texto de una sola línea** en el panel principal. Escriba las siguientes propiedades en la ficha **Propiedades**:
 
    * **Etiqueta de campo**: **Nombre corto**
    * **Nombre de propiedad**: `shortName`
-   * Marque **Requerido**
-   * Marque **Único**
-   * En, **Tipo de validación** > elegir **Personalizado**
-   * En, **Régimen de validación personalizado** > introducir `^[a-z0-9\-_]{5,40}$` : esto garantiza que solo se puedan introducir valores alfanuméricos en minúsculas y guiones de 5 a 40 caracteres.
+   * Comprobación **Requerida**
+   * Seleccionar **Único**
+   * En, **Tipo de validación** > elija **Personalizado**
+   * En, **Expresión regular de validación personalizada** > escriba `^[a-z0-9\-_]{5,40}$`: esto garantiza que solo se puedan escribir valores alfanuméricos en minúsculas y guiones de 5 a 40 caracteres.
 
-   El `shortName` proporciona una forma de consultar a un equipo individual en función de una ruta abreviada. El **Único** La configuración de garantiza que el valor siempre sea único para cada fragmento de contenido de este modelo.
+   La propiedad `shortName` proporciona una forma de consultar a un equipo individual en función de una ruta de acceso abreviada. La configuración **Único** garantiza que el valor siempre sea único por fragmento de contenido de este modelo.
 
-1. Pulse el botón **Tipos de datos** y arrastre y suelte una **Texto de varias líneas** campo debajo de **Nombre corto** field. Introduzca las siguientes propiedades:
+1. Pulse la pestaña **Tipos de datos** y arrastre y suelte un campo de **Texto de varias líneas** debajo del campo **Nombre corto**. Introduzca las siguientes propiedades:
 
    * **Etiqueta de campo**: **Descripción**
    * **Nombre de propiedad**: `description`
    * **Tipo predeterminado**: **Texto enriquecido**
 
-1. Haga clic en **Tipos de datos** y arrastre y suelte una **Referencia a fragmento** field. Introduzca las siguientes propiedades:
+1. Haga clic en la pestaña **Tipos de datos** y arrastre y suelte un campo **Referencia de fragmento**. Introduzca las siguientes propiedades:
 
-   * **Procesar como**: **Campo múltiple**
+   * **Procesar Como**: **Campo Múltiple**
    * **Etiqueta de campo**: **Miembros del equipo**
    * **Nombre de propiedad**: `teamMembers`
-   * **Modelos permitidos de fragmento de contenido**: utilice el icono de la carpeta para seleccionar el **Persona** modelo.
+   * **Modelos de fragmento de contenido permitidos**: use el icono de carpeta para seleccionar el modelo **Persona**.
 
-1. La final **Equipo** El modelo debe tener el siguiente aspecto:
+1. El modelo final de **equipo** debería tener el siguiente aspecto:
 
    ![Modelo final de equipo](assets/content-fragment-models/final-team-model.png)
 
-1. Clic **Guardar** para guardar los cambios.
+1. Haga clic en **Guardar** para guardar los cambios.
 
 1. Ahora debería tener dos modelos desde los que trabajar:
 
    ![Dos modelos](assets/content-fragment-models/two-new-models.png)
 
-## Publicar configuración de proyecto y modelos de fragmentos de contenido
+## Modelos de fragmentos de contenido y configuración de proyectos de Publish
 
-Tras la revisión y verificación, publique el `Project Configuration` &amp; `Content Fragment Model`
+Tras la revisión y verificación, publique `Project Configuration` y `Content Fragment Model`
 
 1. AEM En la pantalla Inicio de la, vaya a **Herramientas** > **General** > **Explorador de configuración**.
 
-1. Pulse la casilla que hay junto a **Mi proyecto** y pulse **Publish**
+1. Puntee en la casilla que está junto a **Mi proyecto** y luego en **Publish**
 
-   ![Publicar configuración de proyecto](assets/content-fragment-models/publish-project-config.png)
+   ![Configuración del proyecto Publish](assets/content-fragment-models/publish-project-config.png)
 
-1. AEM En la pantalla Inicio de la, vaya a **Herramientas** > **General** > **Modelos de fragmento de contenido**.
+1. AEM En la pantalla de inicio de la, vaya a **Herramientas** > **General** > **Modelos de fragmentos de contenido**.
 
-1. Vaya a **Mi proyecto** carpeta.
+1. Vaya a la carpeta **Mi proyecto**.
 
-1. Tocar **Persona** y **Equipo** modelos y pulse **Publish**
+1. Pulse **Persona** y **Equipo** modelos y pulse **Publish**
 
-   ![Publicar modelos de fragmentos de contenido](assets/content-fragment-models/publish-content-fragment-model.png)
+   ![Modelos de fragmentos de contenido Publish](assets/content-fragment-models/publish-content-fragment-model.png)
 
 ## Enhorabuena. {#congratulations}
 
@@ -187,7 +187,7 @@ Tras la revisión y verificación, publique el `Project Configuration` &amp; `Co
 
 ## Siguientes pasos {#next-steps}
 
-En el capítulo siguiente, [Creación de modelos de fragmentos de contenido](author-content-fragments.md), puede crear y editar un nuevo fragmento de contenido basado en un modelo de fragmento de contenido. También aprenderá a crear variaciones de Fragmentos de contenido.
+En el capítulo siguiente, [Creación de modelos de fragmentos de contenido](author-content-fragments.md), crea y edita un nuevo fragmento de contenido basado en un modelo de fragmento de contenido. También aprenderá a crear variaciones de Fragmentos de contenido.
 
 ## Documentación relacionada
 

@@ -13,11 +13,11 @@ ht-degree: 5%
 
 ---
 
-# AEM Vídeos y tutoriales as a Cloud Service de {#overview}
+# Vídeos y tutoriales de AEM as a Cloud Service {#overview}
 
 {{edge-delivery-services}}
 
-Adobe Experience Manager AEM () ya está disponible en as a Cloud Service. AEM as a Cloud Service presenta la siguiente generación de la línea de productos Experience Manager, basándose en las inversiones e innovaciones anteriores, preservando y ampliando todos los casos de uso y funcionalidades.
+Adobe Experience Manager AEM () ya está disponible en as a Cloud Service. AEM as a Cloud Service presenta la próxima generación de la línea de productos Experience Manager, basándose en las inversiones e innovaciones anteriores, preservando y ampliando todos los casos de uso y funcionalidades.
 
 >[!VIDEO](https://video.tv.adobe.com/v/31085?quality=12&learn=on)
 
@@ -39,11 +39,11 @@ Adobe Experience Manager AEM () ya está disponible en as a Cloud Service. AEM a
       </a>
       <div>
          <a href="./accessing/overview.md">
-         <strong>AEM Tutorial sobre configuración del acceso a</strong>
+         AEM <strong>Configuración del acceso al tutorial de la</strong>
          </a>
       </div>
       <p>
-         <em>Configure a los usuarios de IMS en Adobe Admin Console AEM para que accedan a los usuarios de forma.</em>
+         <em>Configure a los usuarios de IMS en Adobe Admin Console AEM para que accedan a los usuarios de la red de acceso a la red de acceso a la red de correo electrónico</em>
       <p>
    </td>   
    <td>
@@ -56,7 +56,7 @@ Adobe Experience Manager AEM () ya está disponible en as a Cloud Service. AEM a
          </a>
       </div>
       <p>
-         <em>AEM ¡Prepare su equipo de desarrollo local para el desarrollo as a Cloud Service de la!</em>
+         <em>¡Prepare su equipo de desarrollo local para el desarrollo de AEM as a Cloud Service!</em>
       <p>
    </td>   
    <td>
@@ -65,11 +65,11 @@ Adobe Experience Manager AEM () ya está disponible en as a Cloud Service. AEM a
       </a>
       <div>
          <a href="./debugging/aem-sdk-local-quickstart/overview.md">
-         <strong>AEM Depuración del SDK de</strong>
+         AEM <strong>Depuración del SDK de la</strong>
          </a>
       </div>
       <p>
-         <em>AEM Explore las herramientas utilizadas para depurar su aplicación en el inicio rápido local del SDK as a Cloud Service de la aplicación de la.</em>
+         <em>Explore las herramientas utilizadas para depurar su aplicación en el inicio rápido local del SDK de AEM as a Cloud Service.</em>
       <p>
    </td>
 </table>

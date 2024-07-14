@@ -22,15 +22,15 @@ ht-degree: 0%
 
 AEM AEM El inicio rápido local del SDK de la permite la depuración remota de Java desde su IDE, lo que le permite avanzar en la ejecución de código en directo en la práctica para comprender el flujo de ejecución exacto.
 
-AEM AEM Para conectar un depurador remoto a la, el inicio rápido local del SDK de la debe iniciarse con parámetros específicos (`-agentlib:...`), lo que permite al IDE conectarse a él.
+AEM AEM Para conectar un depurador remoto a la, el inicio rápido local del SDK de la debe iniciarse con parámetros específicos (`-agentlib:...`) que permitan al IDE conectarse a él.
 
 ```
 $ java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005 -jar aem-author-p4502.jar   
 ```
 
 + AEM SDK solo admite Java 11
-+ `address` AEM especifica el puerto en el que escucha el usuario para las conexiones de depuración remota y se puede cambiar a cualquier puerto disponible en el equipo de desarrollo local.
-+ El último parámetro (p. ej. `aem-author-p4502.jar`AEM ) es el Jar de inicio rápido de SKD de. AEM Puede ser el servicio de autor de la (`aem-author-p4502.jar`AEM ) o el servicio Publicación de la (`aem-publish-p4503.jar`).
++ AEM `address` especifica el puerto en el que el usuario escucha las conexiones de depuración remota y se puede cambiar a cualquier puerto disponible en el equipo de desarrollo local.
++ El último parámetro (p. ej. AEM `aem-author-p4502.jar`) es el Jar de inicio rápido de SKD de. AEM AEM Puede ser el servicio de autor de la (`aem-author-p4502.jar`) o el servicio de Publish de la (`aem-publish-p4503.jar`).
 
 
 ## Instrucciones de configuración del IDE
@@ -38,7 +38,7 @@ $ java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005 -jar
 La mayoría de los IDE de Java son compatibles con la depuración remota de programas Java; sin embargo, los pasos exactos de configuración de cada IDE varían. Consulte las instrucciones de configuración de depuración remota del IDE para ver los pasos exactos. Normalmente, las configuraciones de IDE requieren:
 
 + AEM El inicio rápido local del SDK de la host está escuchando, que es `localhost`.
-+ AEM El puerto de inicio rápido local del SDK de la está a la escucha de la conexión de depuración remota, que es el puerto especificado por el `address` AEM al iniciar el inicio rápido local del SDK de la.
++ AEM AEM El puerto de inicio rápido local del SDK de la está escuchando la conexión de depuración remota, que es el puerto especificado por el parámetro `address` al iniciar el inicio rápido local del SDK de la base de datos.
 + En ocasiones, se deben especificar los proyectos Maven que proporcionan el código fuente para la depuración remota; este es su proyecto de proyectos Maven del paquete OSGi.
 
 ### Configuración de instrucciones

@@ -22,7 +22,7 @@ ht-degree: 3%
 
 # Añadir la extensión de Target a una propiedad de etiquetas {#adobe-target-extension}
 
-Para seguir este vídeo, ya debe tener [integraciones de etiquetas en Adobe Experience Platform AEM con el servicio de etiquetas de](../experience-platform/data-collection/tags/overview.md).
+Para continuar con este vídeo, ya debe tener [etiquetas integradas en Adobe Experience Platform AEM con {100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](../experience-platform/data-collection/tags/overview.md)
 
 Obtenga información sobre cómo habilitar Adobe Target AEM en el sitio web de la mediante etiquetas.
 
@@ -34,5 +34,5 @@ Obtenga información sobre cómo habilitar Adobe Target AEM en el sitio web de l
 
 ## Vínculos de soporte
 
-+ [Adobe Experience Cloud Debugger: Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
++ [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 + [Introducción al Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)

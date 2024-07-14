@@ -26,7 +26,7 @@ AEM AEM Obtenga información sobre cómo limpiar y quitar el código de ejemplo 
 
 ## Recursos
 
-+ [AEM Arquetipo de proyecto de Maven](https://github.com/adobe/aem-project-archetype)
++ AEM [Arquetipo de proyecto de Maven de](https://github.com/adobe/aem-project-archetype)
 
 ## Comandos
 
@@ -46,13 +46,13 @@ rm -rf ui.frontend/src/main/webpack/components/_helloworld.css
 
 ## Ediciones
 
-Retire el `<div class="helloworld" ...></div>` de:
+Quitar `<div class="helloworld" ...></div>` de:
 
 ```
 ui.frontend/src/main/webpack/static/index.html
 ```
 
-Retire el `<helloworld>` definición de instancia de componente desde:
+Quitar la definición de instancia del componente `<helloworld>` de:
 
 ```
 ui.content/src/main/content/jcr_root/content/wknd-examples/us/en/.content.xml

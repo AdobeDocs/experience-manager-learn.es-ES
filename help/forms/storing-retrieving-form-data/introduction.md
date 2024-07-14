@@ -25,7 +25,7 @@ Este tutorial le guiará por los pasos necesarios para guardar y recuperar datos
 
 * Realizar una llamada del POST a un servlet. Este servlet almacena los datos en la base de datos. Los datos almacenados están asociados a un GUID
 
-* Si desea rellenar el formulario adaptable con los datos almacenados, recupere los datos asociados con el GUID y rellene el formulario adaptable con el **request.setAttribute** método.
+* Si desea rellenar el formulario adaptable con los datos almacenados, recupere los datos asociados con el GUID y rellene el formulario adaptable con el método **request.setAttribute**.
 
 ## Muestra del caso de uso
 

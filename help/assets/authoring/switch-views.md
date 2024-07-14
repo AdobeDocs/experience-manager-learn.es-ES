@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # Cambiar vistas
 
-Aprenda a cambiar de forma eficaz entre las [Vista de recursos y vista de administración](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/overview.html#persona-based-experiences) en AEM Assets as a Cloud Service, lo que garantiza una administración de recursos sin problemas.
+Aprenda a cambiar de forma eficaz entre la [vista de Assets y la vista de administrador](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/overview.html#persona-based-experiences) en AEM Assets as a Cloud Service, lo que garantiza una administración de recursos sin problemas.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3426806/?learn=on)

@@ -1,6 +1,6 @@
 ---
 title: AEM Combinación de proyectos de con Github Desktop
-description: AEM Con Github Desktop, explore cómo se pueden combinar varios proyectos en uno único para su implementación en as a Cloud Service mediante Cloud Manager.
+description: Con Github Desktop, explore cómo se pueden combinar varios proyectos en uno único para su implementación en AEM as a Cloud Service mediante Cloud Manager.
 role: Developer
 level: Beginner
 type: Tutorial
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # AEM Combinación de proyectos de para la implementación mediante Cloud Manager
 
-AEM Explore cómo se pueden combinar varios proyectos en uno único para su implementación en el as a Cloud Service mediante Cloud Manager.
+Explore cómo se pueden combinar varios proyectos en uno único para su implementación en AEM as a Cloud Service mediante Cloud Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330535?quality=12&learn=on)

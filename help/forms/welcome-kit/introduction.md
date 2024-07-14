@@ -24,6 +24,7 @@ AEM Este tutorial le ayuda a crear una página de con vínculos para descargar v
 
 Necesitará lo siguiente:
 
-AEM Una instancia de trabajo de los componentes principales instalados del paquete de complementos de formularios con el que se instalan los componentes principales
+AEM Una instancia de trabajo de la con el paquete de complementos de formulario instalado
+Componentes principales instalados
 
 [Entorno de desarrollo configurado según este documento](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)

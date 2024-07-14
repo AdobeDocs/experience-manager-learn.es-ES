@@ -26,13 +26,13 @@ ht-degree: 2%
 
 Para probar esta capacidad en su instancia de AEM Forms, siga los siguientes pasos
 
-* Descargue e implemente el [Jar del controlador MySql](assets/mysqldriver.jar) archivos con el [consola web felix](http://localhost:4502/system/console/bundles)
-* Descargue e implemente el [Paquete OSGi](assets/SaveAndContinue.SaveAndContinue.core-1.0-SNAPSHOT.jar) uso del [consola web felix](http://localhost:4502/system/console/bundles)
-* Descargue e instale [paquete que contiene la biblioteca de cliente, la plantilla de formulario adaptable y el componente de página personalizada](assets/store-and-fetch-af-with-data.zip) uso del [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
-* Importe el [Formulario adaptable de ejemplo](assets/sample-adaptive-form.zip) uso del [Interfaz de FormsAndDocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Descargue e implemente los archivos [MySql Driver Jar](assets/mysqldriver.jar) mediante la [consola web felix](http://localhost:4502/system/console/bundles)
+* Descargue e implemente el [paquete OSGi](assets/SaveAndContinue.SaveAndContinue.core-1.0-SNAPSHOT.jar) mediante la [consola web felix](http://localhost:4502/system/console/bundles)
+* Descargue e instale el [paquete que contiene la biblioteca del cliente, la plantilla de formulario adaptable y el componente de página personalizada](assets/store-and-fetch-af-with-data.zip) con el [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
+* Importar el [formulario adaptable de ejemplo](assets/sample-adaptive-form.zip) mediante la [interfaz FormsAndDocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 
-* Importe el [form-data-db.sql](assets/form-data-db.sql) uso de MySql Workbench. Esto creará el esquema y las tablas necesarios en la base de datos para que funcione este tutorial.
-* Inicie sesión en [configMgr.](http://localhost:4502/system/console/configMgr) Busque &quot;Fuente de datos obtenida de una conexión Apache Sling&quot;. Cree una nueva entrada de fuente de datos obtenida de una conexión Apache Sling llamada **Guardar y continuar** mediante las siguientes propiedades:
+* Importe [form-data-db.sql](assets/form-data-db.sql) mediante MySql Workbench. Esto creará el esquema y las tablas necesarios en la base de datos para que funcione este tutorial.
+* Inicie sesión en [configMgr.](http://localhost:4502/system/console/configMgr) buscar &quot;Fuente de datos obtenida de una conexión Apache Sling&quot;. Cree una nueva entrada de origen de datos agrupado de la conexión de Apache Sling llamada **SaveAndContinue** con las siguientes propiedades:
 
 | Nombre de la propiedad | Valor |
 | ------------------------|---------------------------------------|
@@ -40,7 +40,7 @@ Para probar esta capacidad en su instancia de AEM Forms, siga los siguientes pas
 | Clase de controlador JDBC | `com.mysql.cj.jdbc.Driver` |
 | URI de conexión JDBC | `jdbc:mysql://localhost:3306/aemformstutorial` |
 
-* Abra el [Formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/demostoreandretrieveformdata/jcr:content?wcmmode=disabled)
+* Abrir [formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/demostoreandretrieveformdata/jcr:content?wcmmode=disabled)
 * Complete algunos detalles y haga clic en el botón &quot;Guardar y continuar más tarde&quot;.
 * Debe recuperar una dirección URL con un GUID en ella.
 * Copie la dirección URL y péguela en una nueva pestaña del explorador. **Asegúrese de que no haya espacios vacíos al final de la dirección URL.**

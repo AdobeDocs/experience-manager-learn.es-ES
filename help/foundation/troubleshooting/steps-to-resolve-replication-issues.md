@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # AEM Pasos para resolver los problemas de replicación en la
 
-*AEM Este vídeo explica los pasos para resolver los problemas de replicación en los grupos de trabajo de.*
+AEM *Este vídeo muestra los pasos para resolver los problemas de replicación en el sitio de trabajo de la aplicación de la replicación en el sitio de trabajo de la aplicación de la aplicación de datos*.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335471?quality=12&learn=on)

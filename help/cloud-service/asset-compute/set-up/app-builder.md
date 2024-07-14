@@ -1,6 +1,6 @@
 ---
-title: Configuración del Generador de aplicaciones para la extensibilidad de Assets computes
-description: Los proyectos de asset compute son proyectos de App Builder especialmente definidos y, como tales, requieren acceso a App Builder en la consola de Adobe Developer para configurarlos e implementarlos.
+title: Configuración de App Builder para la extensibilidad de la Asset compute
+description: Los proyectos de asset compute son proyectos de App Builder especialmente definidos y, como tales, requieren acceso a App Builder en Adobe Developer Console para configurarlos e implementarlos.
 feature: Asset Compute Microservices
 version: Cloud Service
 doc-type: Tutorial
@@ -18,53 +18,53 @@ ht-degree: 0%
 
 ---
 
-# Configuración del Generador de aplicaciones
+# Configuración de App Builder
 
-Los proyectos de asset compute son proyectos de App Builder especialmente definidos y, como tales, requieren acceso a App Builder en la consola de Adobe Developer para configurarlos e implementarlos.
+Los proyectos de asset compute son proyectos de App Builder especialmente definidos y, como tales, requieren acceso a App Builder en Adobe Developer Console para configurarlos e implementarlos.
 
-## Creación y configuración del Generador de aplicaciones en la consola de Adobe Developer{#set-up}
+## Creación y configuración de App Builder en Adobe Developer Console{#set-up}
 
 >[!VIDEO](https://video.tv.adobe.com/v/40183?quality=12&learn=on)
 
 _Pulsación al configurar el Generador de aplicaciones (sin audio)_
 
-1. Iniciar sesión en [Consola de Adobe Developer](https://console.adobe.io) uso del Adobe ID asociado al aprovisionado [cuentas y servicios](./accounts-and-services.md). Asegúrese de que es un __Administrador del sistema__ o en el __Función Desarrollador__ para la organización de Adobe correcta.
-1. Para crear un proyecto del Generador de aplicaciones, pulse __Cree un nuevo proyecto > Proyecto desde plantilla > Generador de aplicaciones__
+1. Inicie sesión en [Adobe Developer Console](https://console.adobe.io) con el Adobe ID asociado con las [cuentas y servicios](./accounts-and-services.md) proporcionados. Asegúrese de que es __Administrador del sistema__ o que se encuentra en la __Función de desarrollador__ para la organización de Adobe correcta.
+1. Para crear un proyecto de App Builder, pulse __Crear nuevo proyecto > Proyecto a partir de la plantilla > App Builder__
 
-   _Si:__ Crear nuevo proyecto __o el botón__ Generador de aplicaciones __El tipo no está disponible, lo que significa que la organización de Adobe no [aprovisionado con App Builder](#request-adobe-project-app-builder)._
+   _Si el botón__ Crear nuevo proyecto __o el tipo__ App Builder __no están disponibles, significa que su organización de Adobe no está [aprovisionada con App Builder](#request-adobe-project-app-builder)._
 
    + __Título del proyecto__: `WKND AEM Asset Compute`
    + __Nombre de aplicación__: `wkndAemAssetCompute<YourName>`
-      + El __Nombre de aplicación__ debe ser único en todos los proyectos de FApp Builderirefly y no se puede modificar más adelante. Prefijar el nombre de su empresa u organización y postfijar con un sufijo significativo es un buen enfoque, como por ejemplo: `wkndAemAssetCompute`.
-      + Para la autohabilitación, a menudo es mejor postfijar su nombre en la variable __Nombre de aplicación__, como `wkndAemAssetComputeJaneDoe` para evitar conflictos con otros proyectos de App Builder.
-   + En __Workspaces__ añada un nuevo entorno llamado `Development`
-   + En __Adobe I/O Runtime__ asegurar __Incluir Runtime con cada espacio de trabajo__ está seleccionado
-   + Tocar __Guardar__ para guardar el proyecto
-1. En el proyecto del Creador de aplicaciones, seleccione `Development` desde el selector de workspace
-1. Tocar __+ Agregar servicio > API__ para abrir __Añadir una API__ , utilice este método para añadir las siguientes API:
+      + __App name__ debe ser único en todos los proyectos de FApp Builderirefly y no se puede modificar posteriormente. Prefijar el nombre de su empresa u organización y postfijar con un sufijo significativo es un buen enfoque, como: `wkndAemAssetCompute`.
+      + Para la autohabilitación, a menudo es mejor postfijar su nombre en __Nombre de aplicación__, como `wkndAemAssetComputeJaneDoe` para evitar conflictos con otros proyectos de App Builder.
+   + En __Espacios de trabajo__, agregue un nuevo entorno denominado `Development`
+   + En __Adobe I/O Runtime__, asegúrese de que está seleccionado __Incluir tiempo de ejecución con cada espacio de trabajo__
+   + Pulse __Guardar__ para guardar el proyecto
+1. En el proyecto de App Builder, seleccione `Development` del selector del área de trabajo
+1. Pulse __+ Agregar servicio > API__ para abrir el asistente __Agregar una API__; use este método para agregar las siguientes API:
 
-   + __EXPERIENCE CLOUD > ASSET COMPUTE__
-      + Seleccionar __Generación de un par de claves__ y pulse el botón __Generar par de claves__ y guarde el archivo descargado `config.zip` a una ubicación segura para [uso posterior](#private-key)
-      + Tocar __Siguiente__
-      + Seleccione el perfil de producto __Integraciones: Cloud Service__ y pulse __Guardar API configurada__
-   + __Servicios de Adobe > Eventos de I/O__ y pulse __Guardar API configurada__
-   + __Servicios de Adobe > API de administración de E/S__ y pulse __Guardar API configurada__
+   + __Experience Cloud > Asset compute__
+      + Seleccione __Generar un par de claves__ y pulse el botón __Generar par de claves__, y guarde el(la) `config.zip` descargado(a) en una ubicación segura para [utilizarlo(a) más adelante](#private-key)
+      + Pulse __Siguiente__
+      + Seleccione el perfil de producto __Integraciones - Cloud Service__ y pulse __Guardar API configurada__
+   + __Servicios de Adobe > Eventos de E/S__ y pulsa __Guardar la API configurada__
+   + __Servicios de Adobe > API de administración de E/S__ y pulsa __Guardar la API configurada__
 
 ## Acceda a la clave privada{#private-key}
 
-Al configurar el [Integración de API de Asset compute](#set-up) se generó un nuevo par de claves y se `config.zip` se descargó automáticamente. Esta `config.zip` contiene el certificado público generado y la coincidencia `private.key` archivo.
+Al configurar la [integración de API de Asset compute](#set-up), se generó un nuevo par de claves y se descargó automáticamente un archivo de `config.zip`. Este(a) `config.zip` contiene el certificado público generado y el archivo `private.key` correspondiente.
 
-1. Descomprimir `config.zip` a un lugar seguro en su sistema de archivos como `private.key` es [se usa más tarde](../develop/environment-variables.md)
+1. Descomprima `config.zip` en un lugar seguro de su sistema de archivos, ya que `private.key` se [utilizará más adelante](../develop/environment-variables.md)
    + Los secretos y las claves privadas nunca deben agregarse a Git por motivos de seguridad.
 
 ## Revise las credenciales de la cuenta de servicio (JWT)
 
-La entidad local utiliza las credenciales de este proyecto de Adobe I/O [Herramienta de desarrollo de asset compute](../develop/development-tool.md) para interactuar con Adobe I/O Runtime, y deberá incorporarse al proyecto de Asset compute. Familiarícese con las credenciales de la cuenta de servicio (JWT).
+La [Herramienta de desarrollo de Assets computes](../develop/development-tool.md) local usa las credenciales de este proyecto de Adobe I/O para interactuar con Adobe I/O Runtime y tendrá que incorporarse al proyecto de Asset compute. Familiarícese con las credenciales de la cuenta de servicio (JWT).
 
 ![Credenciales de cuenta de servicio de Adobe Developer](./assets/app-builder/service-account.png)
 
-1. En el proyecto de Adobe I/O del Generador de aplicaciones del proyecto, asegúrese de que `Development` workspace está seleccionado
-1. Tocar en __Cuenta de servicio (JWT)__ bajo __Credenciales__
+1. En el proyecto App Builder del proyecto de Adobe I/O, asegúrese de que el área de trabajo `Development` esté seleccionado
+1. Toque en __Cuenta de servicio (JWT)__ en __Credenciales__
 1. Revisar las credenciales de Adobe I/O mostradas
-   + El __clave pública__ listado en la parte inferior tiene su __private.key__ contraparte en la `config.zip` descargado cuando el __API de asset compute__ se ha agregado a este proyecto.
+   + La __clave pública__ que aparece en la parte inferior tiene su equivalente de __clave privada__ en la `config.zip` descargada cuando se agregó la __API de Asset compute__ a este proyecto.
       + Si la clave privada se pierde o se pone en peligro, se puede eliminar la clave pública coincidente y se puede generar un nuevo par de claves en el Adobe I/O o cargar en él mediante esta interfaz.

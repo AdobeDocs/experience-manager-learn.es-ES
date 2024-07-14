@@ -25,7 +25,7 @@ En esta parte, crearemos una fuente de datos respaldada por REST.  El siguiente 
 
 >[!VIDEO](https://video.tv.adobe.com/v/27765?quality=12&learn=on)
 
-Utilice el archivo swagger que se le ha proporcionado como parte de los recursos relacionados con este tutorial. Los recursos están disponibles en [introduction](introduction.md) de este tutorial.
+Utilice el archivo swagger que se le ha proporcionado como parte de los recursos relacionados con este tutorial. Los recursos están disponibles en [introducción](introduction.md) de este tutorial.
 
 ## Siguientes pasos
 

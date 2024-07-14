@@ -18,11 +18,11 @@ ht-degree: 1%
 
 # Cloud 5: Reparar su... Caché
 
-AEM En una serie de dos partes de la temporada dos, exploramos algunas cosas que puede ver que acelerarán su almacenamiento en caché en el as a Cloud Service de la.
+En una serie de dos partes de la temporada dos, exploramos algunas cosas que puede ver que acelerarán el almacenamiento en caché en AEM as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/343475?quality=12&learn=on)
 
 ## Contenido cubierto en este vídeo
 
 + [Almacenamiento en caché y entrega de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=es)
-+ [Google Lighthouse](https://developers.google.com/web/tools/lighthouse)
++ [Faro Google](https://developers.google.com/web/tools/lighthouse)

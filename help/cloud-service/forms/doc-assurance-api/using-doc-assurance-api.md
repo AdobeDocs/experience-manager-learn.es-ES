@@ -8,7 +8,8 @@ version: Cloud Service
 feature: Document Services
 topic: Development
 jira: KT-15508
-source-git-commit: 97fbe450823c6122a25dc46c851296094894683e
+exl-id: 40617082-4d23-4c91-a016-2d947187052b
+source-git-commit: 1977e5103de72a0db5f446eba539d4ae5b810e74
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%
@@ -17,17 +18,17 @@ ht-degree: 0%
 
 # Uso de la API DocAssurance
 
-El [Servicio DocAssurance](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/docassurance/#tag/DocAssurance) permite realizar diversas operaciones de firma digital o cifrado con documentos de PDF, como firma, certificación, adición de campos de firma, cifrado, descifrado, etc.
+El servicio [DocAssurance](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/docassurance/#tag/DocAssurance) permite realizar diversas operaciones de firma digital o cifrado con documentos de PDF, como firmar, certificar, agregar campos de firma, cifrar, descifrar, etc.
 Este artículo proporciona fragmentos de código java para ayudarle a empezar a utilizar la API. El fragmento de código utiliza el token de acceso. [Este artículo explica los pasos necesarios para generar el token de acceso](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/doc-gen-formscs/introduction)
 
 
-<span class="preview">Esta función está disponible en el programa de usuarios pioneros. Puede escribir a aem-forms-ea@adobe.com desde su ID de correo electrónico oficial para unirse al programa de usuario pionero y solicitar acceso a esta funcionalidad</span>
+<span class="preview">Esta característica está disponible en el programa de usuarios que la adoptaron por primera vez. Puede escribir a aem-forms-ea@adobe.com desde su ID de correo electrónico oficial para unirse al programa de usuarios que lo adoptaron por primera vez y solicitar acceso a esta funcionalidad</span>
 
 
 ## Requisitos previos
 
 * Experiencia con AEM Forms Cloud Service
-* Experiencia en el uso de [Componentes HTTP de Apache](https://hc.apache.org/httpcomponents-client-4.5.x/)
+* Experiencia en el uso de [componentes HTTP Apache](https://hc.apache.org/httpcomponents-client-4.5.x/)
 * Acceso al entorno de Cloud Service de AEM Forms
 
 ## Documento de Inspect
@@ -157,4 +158,4 @@ if (response.getStatusLine().getStatusCode() == 200) {
 
 ### Colección Postman
 
-Una colección Postman de la API puede ser [descargado de aquí para fines de prueba](assets/DocAssuranceAPI.postman_collection.json). Puede utilizar el tipo de autenticación Autenticación básica o Token de portador para invocar la API.
+Se puede [descargar una colección de Postman de la API desde aquí con fines de prueba](assets/DocAssuranceAPI.postman_collection.json). Puede utilizar el tipo de autenticación Autenticación básica o Token de portador para invocar la API.

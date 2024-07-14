@@ -21,6 +21,6 @@ ht-degree: 2%
 
 # AEM placa de caldera de
 
-Configure el repositorio Git de código con [AEM plantilla de plantilla de calderilla](https://github.com/adobe/aem-boilerplate) para Edge Delivery Services.
+AEM Configure el repositorio Git de código con la [plantilla de plantillas de plantillas de](https://github.com/adobe/aem-boilerplate) para Edge Delivery Services.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425713/?learn=on)

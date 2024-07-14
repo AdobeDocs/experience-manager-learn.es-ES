@@ -18,16 +18,16 @@ ht-degree: 0%
 
 # Uso del tablero de información general del sistema
 
-Adobe Experience Manager AEM () [!UICONTROL Información general del sistema] AEM proporciona una vista de alto nivel de la configuración, el hardware y el estado de la instancia de la desde un solo panel.
+La [!UICONTROL Información general del sistema] de Adobe Experience Manager AEM AEM (en inglés) proporciona una vista de alto nivel de la configuración, el hardware y el estado de la instancia de la instancia desde un solo panel.
 
 >[!VIDEO](https://video.tv.adobe.com/v/21340?quality=12&learn=on)
 
-1. Se puede acceder a Información general del sistema desde: **AEM Inicio de** > **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Información general del sistema]**
+1. AEM Se puede acceder a la Información general del sistema desde: **Inicio de la sesión** > **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Información general del sistema]**
 
    Directamente en **`<server-host>/libs/granite/operations/content/systemoverview.html`**
 
-1. La información de la [!UICONTROL Información general del sistema] se puede exportar haciendo clic en el icono [!UICONTROL Descargar] botón. La información también se expone a través de lo siguiente [!DNL REST] extremo:
-1. A continuación se muestra un ejemplo de salida del JSON exportado desde el [!UICONTROL Información general del sistema]:
+1. La información de [!UICONTROL Información general del sistema] se puede exportar haciendo clic en el botón [!UICONTROL Descargar]. La información también se expone a través del siguiente extremo [!DNL REST]:
+1. A continuación se muestra un ejemplo de salida del JSON exportado desde [!UICONTROL Información general del sistema]:
 
    ```json
    {

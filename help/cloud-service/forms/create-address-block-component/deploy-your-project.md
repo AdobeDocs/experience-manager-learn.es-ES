@@ -8,7 +8,8 @@ version: Cloud Service
 feature: Adaptive Forms
 topic: Development
 jira: KT-15752
-source-git-commit: a8fc8fa19ae19e27b07fa81fc931eca51cb982a1
+exl-id: be25be52-2914-4820-9356-678a326f8edc
+source-git-commit: a12b1778413079646814cb25567abfc26a429340
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 0%
@@ -21,27 +22,26 @@ Antes de empezar a implementar el proyecto en el Cloud Service de AEM Forms, se 
 
 ## AEM Sincronización de cambios con el proyecto de
 
-Inicie IntelliJ y navegue hasta la carpeta de formulario adaptable en ``ui.apps`` como se muestra a continuación
+Inicie IntelliJ y navegue hasta la carpeta adaptiveForm bajo la carpeta ``ui.apps``, como se muestra a continuación
 ![intellij](assets/intellij.png)
 
-Clic derecho en ``adaptiveForm`` y seleccione Nuevo | Paquete Asegúrese de añadir el nombre **bloque de direcciones** al paquete
+Haga clic con el botón derecho en el nodo ``adaptiveForm`` y seleccione Nuevo | Paquete
+Asegúrese de agregar el nombre **bloque de direcciones** al paquete
 
-Haga clic con el botón derecho en el paquete recién creado ``addressblock`` y seleccione ``repo | Get Command`` como se muestra a continuación
+Haga clic con el botón derecho en el paquete ``addressblock`` recién creado y seleccione ``repo | Get Command`` como se muestra a continuación
 ![repo-sync](assets/sync-repo.png)
 
 Esto debe sincronizar el proyecto con la instancia de AEM Forms local lista para la nube. Puede comprobar el archivo .content.xml para confirmar las propiedades
-![después de sincronizar](assets/after-sync.png)
+![después de la sincronización](assets/after-sync.png)
 
 ## Implementar el proyecto en la instancia local
 
 Inicie una nueva ventana del símbolo del sistema, vaya a la carpeta raíz del proyecto y genere el proyecto con el comando que se muestra a continuación
 ![implementar](assets/build-project.png)
 
-Una vez que el proyecto se haya implementado correctamente, el componente Dirección ahora se puede utilizar en un formulario adaptable
+Una vez que el proyecto se haya implementado correctamente, el
+Ahora, el componente Dirección se puede utilizar en un formulario adaptable
 
 ## Implemente el proyecto en el entorno de la nube
 
-Si todo parece correcto en su entorno de desarrollo local, el siguiente paso es implementar en el [instancia de nube con cloud manager.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/push-project-to-cloud-manager-git)
-
-
-
+Si todo parece correcto en su entorno de desarrollo local, el siguiente paso es implementar en la [instancia de nube mediante Cloud Manager.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/push-project-to-cloud-manager-git)

@@ -1,6 +1,6 @@
 ---
 title: 'AEM Cloud 5: Archivos de registro de'
-description: AEM Se trata de una explicación exhaustiva de cómo acceder a los registros en as a Cloud Service, incluyendo cómo acceder a ellos a través de la interfaz de usuario, así como desde las API de, y cómo acceder a ellos desde la interfaz de usuario de.
+description: Se trata de una explicación exhaustiva de cómo acceder a los registros en AEM as a Cloud Service, incluido cómo acceder a ellos a través de la interfaz de usuario, así como desde las API.
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
@@ -18,7 +18,7 @@ ht-degree: 4%
 
 # AEM Cloud 5: Archivos de registro de
 
-AEM Se trata de una explicación exhaustiva de cómo acceder a los registros en as a Cloud Service, incluyendo cómo acceder a ellos a través de la interfaz de usuario, así como desde las API de, y cómo acceder a ellos desde la interfaz de usuario de.
+Se trata de una explicación exhaustiva de cómo acceder a los registros en AEM as a Cloud Service, incluido cómo acceder a ellos a través de la interfaz de usuario, así como desde las API.
 
 >[!VIDEO](https://video.tv.adobe.com/v/341156?quality=12&learn=on)
 

@@ -27,14 +27,14 @@ AEM Se utiliza un paso de proceso en un flujo de trabajo de cuando queremos que 
 
 Los datos enviados tienen el siguiente formato. El valor del elemento businessUnits es una cadena separada por comas, que debe convertirse en una matriz de cadenas.
 
-![submitted-data](assets/submitted-data-string.png)
+![datos enviados](assets/submitted-data-string.png)
 
 Los datos de entrada para el resto del extremo asociado con el modelo de datos de formulario esperan una matriz de cadenas como se muestra en esta captura de pantalla. El código personalizado del paso de proceso convierte los datos enviados en al formato correcto.
 
 ![fdm-string-array](assets/string-array-fdm.png)
 
 Pasamos la ruta del objeto JSON y el nombre del elemento al paso del proceso. El código del paso de proceso reemplaza los valores separados por comas del elemento en una matriz de cadenas.
-![paso del proceso](assets/create-string-array.png)
+![paso-proceso](assets/create-string-array.png)
 
 >[!NOTE]
 >
@@ -142,4 +142,4 @@ public class CreateStringArray implements WorkflowProcess {
 }
 ```
 
-El paquete de muestra puede ser [descargado desde aquí](assets/CreateStringArray.CreateStringArray.core-1.0-SNAPSHOT.jar)
+El paquete de muestra se puede [descargar desde aquí](assets/CreateStringArray.CreateStringArray.core-1.0-SNAPSHOT.jar)

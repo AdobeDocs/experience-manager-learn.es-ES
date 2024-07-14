@@ -48,8 +48,8 @@ La URL del conjunto de imágenes anterior puede aparecer de la siguiente manera:
 
 ![imagen](assets/media-sets/image-set-url-1.png)
 
-- Obtenga más información sobre los conjuntos de imágenes con [Inicio rápido para conjuntos de imágenes](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sets/quick-start-image-sets.html).
-- Obtenga información sobre cómo [Crear un conjunto de imágenes](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sets/creating-image-set.html#creating-an-image-set).
+- Obtenga más información sobre los conjuntos de imágenes con [Inicio rápido para los conjuntos de imágenes](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sets/quick-start-image-sets.html).
+- Aprenda a [crear un conjunto de imágenes](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sets/creating-image-set.html#creating-an-image-set).
 
 ### Conjunto de muestras
 
@@ -61,14 +61,14 @@ Los conjuntos de muestras no colorean las imágenes (una idea errónea común). 
 
 ![imagen](assets/media-sets/image-set-2.jpg)
 
-_Ejemplo de un conjunto de muestras_
+_Ejemplo de conjunto de muestras_
 
 La URL del conjunto de muestras anterior podría aparecer como:
 
 ![imagen](assets/media-sets/image-set_url.png)
 
-- Obtenga más información acerca de los conjuntos de muestras con [Inicio rápido para conjuntos de muestras](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/swatch-sets/quick-start-swatch-sets.html).
-- Obtenga información sobre cómo [Crear un conjunto de muestras](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/swatch-sets/creating-swatch-set.html#creating-a-swatch-set).
+- Obtenga más información sobre los conjuntos de muestras con [Inicio rápido para los conjuntos de muestras](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/swatch-sets/quick-start-swatch-sets.html).
+- Aprenda a [crear un conjunto de muestras](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/swatch-sets/creating-swatch-set.html#creating-a-swatch-set).
 
 ### Conjunto de giros
 
@@ -84,8 +84,8 @@ La dirección URL del conjunto de giros anterior puede aparecer de la siguiente 
 
 ![imagen](assets/media-sets/spin-set.png)
 
-- Obtenga más información sobre los conjuntos de giros con la variable [Inicio rápido para conjuntos de giros](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/spin-sets/quick-start-spin-sets.html).
-- Obtenga información sobre cómo [Creación de un conjunto de giros](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/spin-sets/creating-spin-set.html#creating-a-spin-set).
+- Obtenga más información sobre los conjuntos de giros con [Inicio rápido para los conjuntos de giros](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/spin-sets/quick-start-spin-sets.html).
+- Aprenda a [crear un conjunto de giros](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/spin-sets/creating-spin-set.html#creating-a-spin-set).
 
 ## Conjunto de medios mixtos
 
@@ -99,9 +99,9 @@ La URL del conjunto de medios mixtos anterior podría aparecer como:
 
 ![imagen](assets/media-sets/image-set-url-1.png)
 
-- Obtenga más información acerca de los conjuntos de medios mixtos con [Inicio rápido para conjuntos de medios mixtos](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/mixed-media-sets/quick-start-mixed-media-sets.html).
+- Obtenga más información sobre los conjuntos de medios mixtos con [Inicio rápido para los conjuntos de medios mixtos](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/mixed-media-sets/quick-start-mixed-media-sets.html).
 
-- Obtenga información sobre cómo [Crear un conjunto de medios mixtos](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/mixed-media-sets/creating-mixed-media-set.html#creating-a-mixed-media-set).
+- Aprenda a [crear un conjunto de medios mixtos](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/mixed-media-sets/creating-mixed-media-set.html#creating-a-mixed-media-set).
 
 Para mostrar una imagen para zoom, un conjunto o un vídeo en el sitio web, lo llama en un &quot;visualizador&quot; de Dynamic Media Classic. Dynamic Media Classic incluye visores para recursos de medios enriquecidos como conjuntos de muestras, conjuntos de giros, vídeo y muchos otros.
 
@@ -113,7 +113,7 @@ Hasta ahora hemos estado hablando de cómo construir conjuntos manualmente usand
 
 Cada ajuste preestablecido es un conjunto de instrucciones independientes con un nombre único que define cómo construir el conjunto mediante imágenes que coinciden con las convenciones de nomenclatura definidas. En el ajuste preestablecido, primero debe definir las convenciones de nomenclatura de los recursos que desea agrupar en un conjunto. A continuación, se puede crear un ajuste preestablecido de conjunto por lotes para hacer referencia a estas imágenes.
 
-Aunque es posible crear el ajuste preestablecido usted mismo (se encuentran debajo de **Configuración > Configuración de aplicación > Ajustes preestablecidos de conjuntos de lotes** ), como práctica recomendada, debe hacer que su equipo de consultoría o soporte técnico lo configure por usted. He aquí la razón:
+Aunque es posible crear el ajuste preestablecido usted mismo (se encuentran en **Configuración > Configuración de aplicación > Ajustes preestablecidos de conjunto de lotes** ), se recomienda que pida a su equipo de consultoría o a su equipo de soporte técnico que lo configuren. He aquí la razón:
 
 - La configuración de los ajustes preestablecidos de conjuntos de lotes puede ser compleja: utilizan expresiones regulares y, a menos que sea un desarrollador, esta sintaxis puede resultar desconocida o confusa.
 - Una vez creados, se activan de forma predeterminada. No hay función &quot;deshacer&quot;. Si empieza a cargar miles de imágenes y el ajuste preestablecido no está configurado correctamente, puede acabar teniendo cientos o miles de conjuntos rotos que debe buscar y eliminar manualmente.
@@ -124,15 +124,15 @@ Los ajustes preestablecidos de conjunto de lotes solo se aplican durante la carg
 
 Una vez creados los ajustes preestablecidos, el administrador de la empresa puede elegir si están activos o inactivos. Activo significa que aparecerán en la página de carga en **Opciones de trabajo**, mientras que los ajustes preestablecidos inactivos permanecerán ocultos.
 
-Obtenga información sobre cómo [Crear un ajuste preestablecido de conjunto de lotes](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#creating-a-batch-set-preset).
+Aprenda a [Crear un ajuste preestablecido de conjunto de lotes](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#creating-a-batch-set-preset).
 
 ### Uso de ajustes preestablecidos de conjunto por lotes al cargar
 
 Así se utilizan los ajustes preestablecidos de conjunto de lotes en la carga después de crearlos:
 
-1. Clic **Cargar** y elija **Desde el escritorio** o **A través de FTP**.
-2. Clic **Opciones de trabajo**.
-3. Abra el **Ajustes preestablecidos del conjunto de lotes** y marque o desmarque el ajuste preestablecido para utilizarlo con la carga.
+1. Haga clic en **Cargar** y elija **Desde el escritorio** o **Mediante FTP**.
+2. Haga clic en **Opciones de trabajo**.
+3. Abra la opción **Ajustes preestablecidos por lotes** y marque o desmarque el ajuste preestablecido para utilizarlo con la carga.
 4. Una vez completada la carga, busque en la carpeta los conjuntos finalizados.
 
-Más información sobre [Ajustes preestablecidos del conjunto de lotes](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#batch-set-presets).
+Más información sobre [Ajustes preestablecidos por lotes](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#batch-set-presets).

@@ -22,16 +22,16 @@ ht-degree: 1%
 # Personalizar notificación de asignación de tarea
 
 El componente Asignar tarea se utiliza para asignar tareas a los participantes del flujo de trabajo. Cuando se asigna una tarea a un usuario o grupo, se envía una notificación por correo electrónico al usuario o a los miembros del grupo definidos.
-Esta notificación por correo electrónico generalmente contiene datos dinámicos relacionados con la tarea. Estos datos dinámicos se recuperan mediante el sistema generado [propiedades de metadatos](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/use-metadata-in-email-notifications.html#using-system-generated-metadata-in-an-email-notification).
+Esta notificación por correo electrónico generalmente contiene datos dinámicos relacionados con la tarea. Estos datos dinámicos se obtienen usando las [propiedades de metadatos](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/use-metadata-in-email-notifications.html#using-system-generated-metadata-in-an-email-notification) generadas por el sistema.
 Para incluir valores de los datos de formulario enviados en la notificación por correo electrónico, es necesario crear una propiedad de metadatos personalizada y, a continuación, utilizar estas propiedades de metadatos personalizadas en la plantilla de correo electrónico
 
 
 
 ## Crear una propiedad de metadatos personalizada
 
-El método recomendado es crear un componente OSGI que implemente el método getUserMetadata del [WorkitemUserMetadataService](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/workspace/service/external/WorkitemUserMetadataService.html#getUserMetadataMap--)
+El método recomendado es crear un componente OSGI que implemente el método getUserMetadata de [WorkitemUserMetadataService](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/workspace/service/external/WorkitemUserMetadataService.html#getUserMetadataMap--)
 
-El siguiente código crea 4 propiedades de metadatos (_firstName_,_lastName_,_razonar_ y _amountRequested_) y establece su valor a partir de los datos enviados. Por ejemplo, la propiedad metadata _firstName_ El valor de se establece en el valor del elemento llamado firstName de los datos enviados. El siguiente código supone que los datos enviados del formulario adaptable están en formato xml. Los Forms adaptables basados en el esquema JSON o en el modelo de datos de formulario generan datos en formato JSON.
+El siguiente código crea 4 propiedades de metadatos (_firstName_,_lastName_,_reason_ y _amountRequested_) y establece su valor a partir de los datos enviados. Por ejemplo, el valor de la propiedad de metadatos _firstName_ se establece en el valor del elemento llamado firstName de los datos enviados. El siguiente código supone que los datos enviados del formulario adaptable están en formato xml. Los Forms adaptables basados en el esquema JSON o en el modelo de datos de formulario generan datos en formato JSON.
 
 
 ```java
@@ -130,10 +130,10 @@ AEM Una vez que el componente OSGi se haya creado e implementado en el servidor,
 
 * [Configurar el servicio Day CQ Mail](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)
 * Asocie un ID de correo electrónico válido con [usuario administrador](http://localhost:4502/security/users.html)
-* Descargue e instale [Workflow-and-notification-template](assets/workflow-and-task-notification-template.zip) usando [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
-* Descargar [Formulario adaptable](assets/request-travel-authorization.zip) AEM e importar a la desde el [iu de formularios y documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
-* Implementación e inicio de [Paquete personalizado](assets/work-items-user-service-bundle.jar) uso del [consola web](http://localhost:4502/system/console/bundles)
-* [Vista previa y envío del formulario](http://localhost:4502/content/dam/formsanddocuments/requestfortravelauhtorization/jcr:content?wcmmode=disabled)
+* Descargue e instale [Workflow-and-notification-template](assets/workflow-and-task-notification-template.zip) con [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
+* AEM Descargue [Formulario adaptable](assets/request-travel-authorization.zip) e impórtelo a la interfaz de usuario de [formularios y documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) para que pueda importarlo a la interfaz de usuario de formularios y documentos.
+* Implementar e iniciar el [paquete personalizado](assets/work-items-user-service-bundle.jar) mediante la [consola web](http://localhost:4502/system/console/bundles)
+* [Previsualizar y enviar el formulario](http://localhost:4502/content/dam/formsanddocuments/requestfortravelauhtorization/jcr:content?wcmmode=disabled)
 
 Al enviar el formulario, se envía una notificación de asignación de tareas al ID de correo electrónico asociado al usuario administrador. La siguiente captura de pantalla muestra una notificación de asignación de tareas de ejemplo
 
@@ -200,4 +200,4 @@ public class CaptureTaskComments implements WorkitemUserMetadataService {
 }
 ```
 
-El paquete con el código anterior puede ser [descargado desde aquí](assets/samples.aemforms.taskcomments.taskcomments.core-1.0-SNAPSHOT.jar)
+El paquete con el código anterior se puede [descargar desde aquí](assets/samples.aemforms.taskcomments.taskcomments.core-1.0-SNAPSHOT.jar)

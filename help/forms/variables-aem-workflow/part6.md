@@ -179,5 +179,5 @@ public class LogWorkflowVariables implements WorkflowProcess {
 
 ## Implementar el paquete de muestra
 
-[Implementación del paquete de registrador de variables](assets/VariableLogger.core-1.0.0-SNAPSHOT.jar) mediante la consola web de Felix.
+[Implementar el paquete de registrador de variables](assets/VariableLogger.core-1.0.0-SNAPSHOT.jar) mediante la consola web Felix.
 AEM Asocie este paquete con un paso del proceso en el flujo de trabajo de la para registrar el valor de las variables String y Document.

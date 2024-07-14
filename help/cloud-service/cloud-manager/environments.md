@@ -1,6 +1,6 @@
 ---
-title: Uso de entornos de Adobe Cloud Manager
-description: AEM AEM Los entornos de Cloud Manager están compuestos por los servicios de autor de datos, publicación de datos y Dispatcher de la de trabajo. Los distintos entornos admiten diferentes funciones y se pueden utilizar con diferentes canalizaciones de CD/CI. Los entornos de Cloud Manager suelen tener un entorno de producción, un entorno de ensayo y un entorno de desarrollo.
+title: 'Uso de Adobe Cloud Manager: Entornos'
+description: Los entornos de Cloud Manager AEM AEM están compuestos por los servicios de autor de, de Publish y de Dispatcher de la. Los distintos entornos admiten diferentes funciones y se pueden utilizar con diferentes canalizaciones de CD/CI. Los entornos de Cloud Manager suelen tener un entorno de producción, un entorno de ensayo y un entorno de desarrollo.
 doc-type: feature video
 version: Cloud Service
 jira: KT-6871
@@ -18,8 +18,8 @@ ht-degree: 0%
 
 ---
 
-# Uso de entornos de Adobe Cloud Manager
+# Uso de Adobe Cloud Manager: Entornos
 
-[Entornos de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html) AEM AEM están compuestos por los servicios de autor de, publicación de la y Dispatcher. Los distintos entornos admiten diferentes funciones y se pueden utilizar con diferentes canalizaciones de CD/CI. Los entornos de Cloud Manager suelen tener un entorno de producción, un entorno de ensayo y un entorno de desarrollo.
+[Los Entornos Cloud Manager AEM AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html) están compuestos por los servicios de autor de, de Publish y de Dispatcher de la de trabajo. Los distintos entornos admiten diferentes funciones y se pueden utilizar con diferentes canalizaciones de CD/CI. Los entornos de Cloud Manager suelen tener un entorno de producción, un entorno de ensayo y un entorno de desarrollo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26318?quality=12&learn=on)

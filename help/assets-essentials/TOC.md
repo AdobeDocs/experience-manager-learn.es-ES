@@ -30,7 +30,7 @@ ht-degree: 20%
    + [Colaboración](basics/collaborating.md)
    + [Vínculos compartidos](basics/link-sharing.md)
 
-+ Configuración{#configuring}
++ Configurando {#configuring}
    + [Mi espacio de trabajo](configuring/my-workspace.md)
    + [Formularios de metadatos](configuring/metadata-forms.md)
    + [Administración de permisos](configuring/permissions-management.md)

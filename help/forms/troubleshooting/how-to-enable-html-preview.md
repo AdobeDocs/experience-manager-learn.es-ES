@@ -1,6 +1,6 @@
 ---
 title: 'Vista previa del HTML de vista previa de Designer: cómo habilitar el HTML de vista previa'
-description: Pasos para configurar la vista previa del HTML en Designer
+description: Pasos para configurar la previsualización de HTML en Designer
 type: Troubleshooting
 role: Developer
 level: Intermediate

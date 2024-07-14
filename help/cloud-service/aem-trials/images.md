@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # AEM Índice de imagen de trials
 
-Los archivos de imagen deben colocarse en `assets` que reside junto a este archivo.
+Los archivos de imagen deben colocarse en la carpeta `assets` que reside junto a este archivo.
 
 Cada archivo de imagen que se publique debe vincularse desde este archivo con la sintaxis:
 

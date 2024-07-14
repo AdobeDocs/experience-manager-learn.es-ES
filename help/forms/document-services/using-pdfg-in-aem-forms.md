@@ -23,7 +23,7 @@ Demostración de la capacidad de arrastrar y soltar para crear un PDF con AEM Fo
 PDFG significa Generación de PDF. Esto significa que puede convertir una variedad de formatos de archivo en PDF. Los más comunes son los documentos de Microsoft Office. PDFG forma parte de AEM Forms desde la versión 6.1.
 [El javadoc para la API de PDFG se enumera aquí](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html)
 
-Los recursos asociados con este artículo le permiten arrastrar y soltar documentos de MS Office o archivos de JPG en el área de colocación de la página de HTML. Una vez colocado el documento, se invoca el servicio PDFG, se convierte el documento en PDF AEM y se guarda en el sistema de archivos de Servidor de.
+JPG Los recursos asociados con este artículo le permiten arrastrar y soltar documentos de MS Office o archivos de en el área de colocación de la página del HTML. Una vez colocado el documento, se invoca el servicio PDFG, se convierte el documento en PDF AEM y se guarda en el sistema de archivos de Servidor de.
 
 Para instalar los recursos de demostración, realice los siguientes pasos
 
@@ -33,7 +33,7 @@ Para instalar los recursos de demostración, realice los siguientes pasos
 1. [Vaya a post.jsp](http://localhost:4502/apps/AemFormsSamples/components/createPDF/POST.jsp) en su CRX
 1. Cambie la ubicación de guardado según sus preferencias (línea 9)
 1. Guarde los cambios.
-1. Abra el [página html](http://localhost:4502/content/DocumentServices/CreatePDFG.html) para arrastrar y soltar archivos para la conversión.
+1. Abra la [página html](http://localhost:4502/content/DocumentServices/CreatePDFG.html) para arrastrar y soltar archivos para la conversión.
 1. Coloque un archivo de texto o jpg en la zona de colocación.
 1. El documento de entrada se convierte en PDF y se guarda en la misma ubicación especificada en el punto 4.
 

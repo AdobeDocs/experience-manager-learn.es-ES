@@ -20,7 +20,7 @@ ht-degree: 0%
 
 AEM Dado que un formulario adaptable se enruta a diferentes usuarios en el flujo de trabajo de, existen requisitos para ocultar o deshabilitar determinados campos o paneles en función de la persona que revisa el formulario. Para satisfacer estos casos de uso, normalmente se establece el valor de un campo oculto. En función del valor de este campo oculto, se pueden crear reglas empresariales para ocultar o deshabilitar los paneles o campos adecuados.
 
-![Configurar el valor de un elemento en los datos json](assets/capture-3.gif)
+![Estableciendo valor de un elemento en los datos json](assets/capture-3.gif)
 
 En AEM Forms OSGi: debemos crear un paquete OSGi personalizado para establecer el valor del elemento de datos JSON. El paquete se proporciona como parte de este tutorial.
 
@@ -45,14 +45,14 @@ Para implementar los recursos en el sistema local:
 * [Descargue e implemente el paquete setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Este es el paquete OSGI personalizado que le permite establecer los valores de un elemento en los datos json enviados.
 
 * [Descargue y extraiga el contenido del archivo zip](assets/set-value-jsondata.zip)
-   * Dirija el explorador a [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
+   * Dirija su navegador a [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
       * Importe e instale SetValueOfElementInJSONDataWorkflow.zip. Este paquete tiene el modelo de flujo de trabajo de ejemplo y el modelo de datos de formulario asociados al formulario.
 
-* Dirija el explorador a [Forms y documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Dirija su navegador a [Forms y documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Haga clic en Crear | Carga de archivos
 * Cargar archivo TimeOffRequestForm.zip
-  **Este formulario se creó con AEM Forms 6.4. Asegúrese de que está en AEM Forms 6.4 o superior**
-* Abra el [formulario](http://localhost:4502/content/dam/formsanddocuments/timeoffrequest/jcr:content?wcmmode=disabled)
+  **Este formulario se creó con AEM Forms 6.4. Asegúrese de usar AEM Forms 6.4 o superior**
+* Abrir [formulario](http://localhost:4502/content/dam/formsanddocuments/timeoffrequest/jcr:content?wcmmode=disabled)
 * Complete las Fechas de inicio y finalización y envíe el formulario.
 * Ir a [&quot;Bandeja de entrada&quot;](http://localhost:4502/aem/inbox)
 * Abra el formulario asociado a la tarea.
@@ -61,7 +61,7 @@ Para implementar los recursos en el sistema local:
 
 >[!NOTE]
 >
->Dado que estamos rellenando previamente el formulario adaptable mediante un perfil de usuario, asegúrese de que el administrador [información de perfil de usuario](http://localhost:4502/security/users.html). Como mínimo, asegúrese de haber establecido los valores de los campos Nombre, Apellidos y Correo electrónico.
+>Dado que estamos rellenando previamente el formulario adaptable mediante el perfil de usuario, asegúrese de proporcionar al administrador [información de perfil de usuario](http://localhost:4502/security/users.html). Como mínimo, asegúrese de haber establecido los valores de los campos Nombre, Apellidos y Correo electrónico.
 >Puede habilitar el registro de depuración habilitando el registrador para com.aemforms.setvalue.core.SetValueInJson [desde aquí](http://localhost:4502/system/console/slinglog)
 
 >[!NOTE]

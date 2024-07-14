@@ -1,6 +1,6 @@
 ---
 title: Migración de contenido mediante la herramienta de transferencia de contenido
-description: AEM Descubra cómo la herramienta de transferencia de contenido le ayuda a migrar contenido a la as a Cloud Service AEM desde el 6.
+description: Descubra cómo la herramienta de transferencia de contenido le ayuda a migrar contenido a AEM as a Cloud Service AEM desde el.
 version: Cloud Service
 topic: Migration, Upgrade
 feature: Migration
@@ -20,26 +20,26 @@ ht-degree: 3%
 
 # Herramienta de transferencia de contenido
 
-AEM Descubra cómo la herramienta de transferencia de contenido le ayuda a migrar contenido a la as a Cloud Service AEM desde la versión 6.3 o una posterior de.
+Descubra cómo la herramienta de transferencia de contenido le ayuda a migrar contenido a AEM as a Cloud Service AEM desde la versión 6.3 o posterior de la versión de.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336970?quality=12&learn=on)
 
 ## Uso de la herramienta de transferencia de contenido
 
-![Ciclo de la herramienta de transferencia de contenido](../assets/content-transfer-tool.png)
+![Ciclo de vida de herramienta de transferencia de contenido](../assets/content-transfer-tool.png)
 
-AEM AEM La herramienta de transferencia de contenido está instalada en la versión 6.3 o posterior de la versión de y transfiere contenido a la versión as a Cloud Service.
+AEM La herramienta de transferencia de contenido está instalada en la versión 6.3 o posterior de la y transfiere contenido a AEM as a Cloud Service.
 
 ## Actividades clave
 
-+ Descargue la [Última herramienta de transferencia de contenido](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=Content*+Transfer*+Tool*&amp;1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=2).
-+ AEM AEM Transfiera el contenido final de Author 6.3+ al servicio de creación as a Cloud Service de la aplicación.
++ Descargar la [última herramienta de transferencia de contenido](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=Content*+Transfer*+Tool*&amp;1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=2).
++ AEM Transfiera el contenido final de AppMeasurement 6.3 o posterior al servicio de AEM as a Cloud Service Author.
    + AEM Instale la herramienta de transferencia de contenido en el autor de la versión 6.3 (o posterior) que contenga el contenido final que desea transferir.
    + Ejecute la herramienta de transferencia de contenido por lotes transfiriendo conjuntos de contenido.
-+ AEM AEM Transferir contenido final de Publicación 6.3 o posterior a la publicación as a Cloud Service de la a un servicio de publicación.
-   + AEM Instale la herramienta de transferencia de contenido en la versión 6.3 o posterior de publicación de que contenga el contenido final que desea transferir.
++ AEM Transfiera el contenido final de Publish 6.3 o posterior al servicio AEM as a Cloud Service Publish.
+   + AEM Instale la herramienta de transferencia de contenido en Publish de la versión 6.3 (o posterior) de que contenga el contenido final que desea transferir.
    + Ejecute la herramienta de transferencia de contenido por lotes transfiriendo conjuntos de contenido.
-+ AEM De forma opcional, &quot;recargar&quot; contenido en el as a Cloud Service de la, transfiriendo contenido nuevo desde la última transferencia de contenido
++ De forma opcional, puede añadir contenido en AEM as a Cloud Service transfiriendo contenido nuevo desde la última transferencia de contenido
 
 ## Ejercicio práctico
 
@@ -66,12 +66,12 @@ Además, asegúrese de haber completado el ejercicio práctico anterior:
         <td style="width:100%;margin-bottom:1rem;">
             <div style="font-size:1.25rem;font-weight:400;">Prácticas con la herramienta de transferencia de contenido</div>
             <p style="margin:1rem 0">
-                AEM AEM Explore cómo la herramienta de transferencia de contenido puede mover automáticamente el contenido de la versión 6 a la versión as a Cloud Service de la.
+                AEM Explore cómo la herramienta de transferencia de contenido puede mover automáticamente el contenido de 6 a AEM as a Cloud Service.
             </p>
             <a  rel="noreferrer"
                 target="_blank"
                 href="https://github.com/adobe/aem-cloud-engineering-video-series-exercises/tree/session6-transfercontent#cloud-acceleration-bootcamp---session-6-content" class="spectrum-Button spectrum-Button--primary spectrum-Button--sizeM">
-                <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Pruebe la herramienta de transferencia de contenido</span>
+                <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Probar la herramienta de transferencia de contenido</span>
             </a>
         </td>
     </tr>
@@ -80,5 +80,5 @@ Además, asegúrese de haber completado el ejercicio práctico anterior:
 ## Otros recursos
 
 + [Descargar herramienta de transferencia de contenido](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=Content*+Transfer*+Tool*&amp;1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=2)
-+ [Vídeo explicativo del servicio de importación por lotes](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/bulk-import.html)
++ [Vídeo de procedimientos del servicio de importación en lotes](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/bulk-import.html)
 

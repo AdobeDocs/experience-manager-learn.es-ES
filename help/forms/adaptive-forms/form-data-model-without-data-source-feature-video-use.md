@@ -1,5 +1,5 @@
 ---
-title: Crear un modelo de datos de formulario sin fuente de datos
+title: Crear un modelo de datos de formulario sin Data Source
 description: A partir de AEM Forms 6.4, ahora podemos definir el modelo de datos de formulario (FDM) sin asociarlo a una fuente de datos. El siguiente vídeo explica los pasos para crear FDM sin ninguna fuente de datos.
 feature: Workflow
 version: 6.4,6.5
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ---
 
-# Crear un modelo de datos de formulario sin fuente de datos {#creating-form-data-model-without-data-source}
+# Crear un modelo de datos de formulario sin Data Source {#creating-form-data-model-without-data-source}
 
 A partir de AEM Forms 6.4, ahora podemos definir el modelo de datos de formulario (FDM) sin asociarlo a una fuente de datos. El siguiente vídeo explica los pasos para crear FDM sin ninguna fuente de datos.
 

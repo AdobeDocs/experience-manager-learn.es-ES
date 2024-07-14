@@ -22,7 +22,7 @@ ht-degree: 1%
 
 En este artículo se explican los pasos necesarios para insertar datos en la lista de SharePoint AEM mediante el paso para invocar FDM en el flujo de trabajo de.
 
-Este artículo presupone que tiene [el formulario adaptable se ha configurado correctamente para enviar datos a la lista de SharePoint.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html?lang=en#connect-af-sharepoint-list)
+Este artículo supone que ha [configurado correctamente el formulario adaptable para enviar datos a la lista de SharePoint.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html?lang=en#connect-af-sharepoint-list)
 
 
 ## Crear un modelo de datos de formulario basado en la fuente de datos de lista de SharePoint
@@ -37,7 +37,7 @@ Este artículo presupone que tiene [el formulario adaptable se ha configurado co
 
 * Cree un flujo de trabajo sencillo con el paso para invocar FDM.
 * Configure el paso para invocar FDM para utilizar el modelo de datos de formulario creado en el paso anterior.
-* ![associated-fdm](assets/fdm-insert-1.png)
+* ![asociado-fdm](assets/fdm-insert-1.png)
 
 ## Formulario adaptable basado en componentes principales
 
@@ -96,7 +96,7 @@ Los datos enviados tienen el siguiente formato. Extraiga el objeto JSON de Conta
 * Crear un formulario adaptable mediante el modelo de datos de formulario creado en el paso anterior.
 * Arrastre y suelte algunos campos del origen de datos en el formulario.
 * Configure la acción de envío del formulario como se muestra a continuación
-* ![submit-action](assets/configure-af.png)
+* ![acción de envío](assets/configure-af.png)
 
 
 

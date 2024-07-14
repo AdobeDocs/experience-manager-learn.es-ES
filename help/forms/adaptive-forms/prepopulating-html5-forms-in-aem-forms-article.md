@@ -23,9 +23,9 @@ Las plantillas XDP procesadas en formato de HTML mediante AEM Forms se denominan
 
 Existen dos formas de combinar los datos con la plantilla xdp cuando se representan como HTML.
 
-**dataRef**: Puede utilizar el parámetro dataRef en la dirección URL. Este parámetro especifica la ruta absoluta del archivo de datos que se combina con la plantilla. Este parámetro puede ser una URL a un servicio REST que devuelva los datos en formato XML.
+**dataRef**: puede usar el parámetro dataRef en la dirección URL. Este parámetro especifica la ruta absoluta del archivo de datos que se combina con la plantilla. Este parámetro puede ser una URL a un servicio REST que devuelva los datos en formato XML.
 
-**datos**: Este parámetro especifica los bytes de datos codificados UTF-8 que se combinan con la plantilla. Si se especifica este parámetro, el formulario HTML 5 ignorará el parámetro dataRef. Como práctica recomendada, recomendamos utilizar el enfoque de datos.
+**data**: este parámetro especifica los bytes de datos codificados UTF-8 que se combinan con la plantilla. Si se especifica este parámetro, el formulario HTML 5 ignorará el parámetro dataRef. Como práctica recomendada, recomendamos utilizar el enfoque de datos.
 
 El método recomendado es establecer el atributo de datos en la solicitud con los datos con los que desea rellenar previamente el formulario.
 
@@ -33,18 +33,18 @@ slingRequest.setAttribute(&quot;data&quot;, contenido);
 
 En este ejemplo, configuramos el atributo de datos con el contenido. El contenido representa los datos con los que desea rellenar previamente el formulario. Normalmente, recuperaría el &quot;contenido&quot; realizando una llamada de REST a un servicio interno.
 
-Para aplicar este caso de uso, debe crear un perfil personalizado. Los detalles sobre la creación de perfiles personalizados se documentan claramente en [Documentación de AEM Forms aquí](https://helpx.adobe.com/aem-forms/6/html5-forms/custom-profile.html).
+Para aplicar este caso de uso, debe crear un perfil personalizado. Los detalles sobre cómo crear un perfil personalizado están claramente documentados en [Documentación de AEM Forms aquí](https://helpx.adobe.com/aem-forms/6/html5-forms/custom-profile.html).
 
 Una vez creado el perfil personalizado, creará un archivo JSP que recuperará los datos realizando llamadas a su sistema back-end. Una vez recuperados los datos, utilizará slingRequest.setAttribute(&quot;data&quot;, content); para rellenar previamente el formulario
 
 Cuando se procesa el XDP, también puede pasar algunos parámetros al xdp y, en función del valor del parámetro, puede recuperar los datos del sistema backend.
 
-[Por ejemplo, esta URL tiene un parámetro de nombre](http://localhost:4502/content/dam/formsanddocuments/PrepopulateMobileForm.xdp/jcr:content?name=john)
+[Por ejemplo, esta dirección URL tiene un parámetro de nombre](http://localhost:4502/content/dam/formsanddocuments/PrepopulateMobileForm.xdp/jcr:content?name=john)
 
 El JSP que escriba tendrá acceso al parámetro name mediante request.getParameter(&quot;name&quot;) A continuación, puede pasar el valor de este parámetro al proceso backend para recuperar los datos necesarios.
 Para que esta capacidad funcione en su sistema, siga los pasos que se mencionan a continuación:
 
-* [AEM Descarga e importación de recursos en el administrador de paquetes mediante el uso de un administrador de paquetes](assets/prepopulatemobileform.zip)
+* AEM [Descargar e importar los recursos en el administrador de paquetes con el administrador de paquetes de](assets/prepopulatemobileform.zip)
 El paquete instalará lo siguiente
 
    * CustomProfile

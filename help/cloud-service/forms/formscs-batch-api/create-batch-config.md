@@ -22,7 +22,7 @@ ht-degree: 12%
 Para utilizar un API por lotes, cree una configuración por lotes y realice una ejecución basada en esa configuración. El siguiente vídeo muestra una demostración de la creación de la configuración por lotes mediante la API
 
 >[!NOTE]
->AEM Asegúrese de que el usuario de la pertenezca a ```forms-users``` para realizar llamadas de API.
+>AEM Asegúrese de que el usuario de la pertenezca al grupo ```forms-users``` para realizar llamadas a la API.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/340241?quality=12&learn=on)

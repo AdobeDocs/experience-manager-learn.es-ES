@@ -24,7 +24,9 @@ Los servlets de enlace por rutas tienen varias desventajas en comparación con l
 
 * Los servlets enlazados a rutas no pueden controlar el acceso mediante las ACL de repositorio JCR predeterminadas
 * Los servlets enlazados a rutas solo se pueden registrar en una ruta y no en un tipo de recurso (es decir, sin control de sufijos)
-* Si un servlet enlazado a una ruta no está activo, por ejemplo, si el paquete falta o no se inicia, un POST puede dar como resultado resultados inesperados. normalmente, se crea un nodo en `/bin/xyz` que posteriormente superpone la ruta de los servlets enlazar la asignación no es transparente para un desarrollador que solo mire el repositorio. Dados estos inconvenientes, se recomienda encarecidamente enlazar los servlets a tipos de recursos en lugar de rutas
+* Si un servlet enlazado a una ruta no está activo, por ejemplo, si el paquete falta o no se inicia, un POST puede dar como resultado resultados inesperados. normalmente se crea un nodo en `/bin/xyz` que posteriormente se superpone al enlace de ruta de los servlets
+la asignación no es transparente para un desarrollador que solo busque en el repositorio
+Dados estos inconvenientes, se recomienda enfáticamente enlazar los servlets a tipos de recursos en lugar de rutas
 
 ## Crear servlet
 
@@ -33,7 +35,7 @@ Inicie el proyecto de banca aem en IntelliJ. Cree un servlet denominado GetField
 
 ## Servlet de ejemplo
 
-El siguiente servlet está enlazado al tipo de recurso de Sling: _**azure/fetchchoices**_
+El siguiente servlet está enlazado al tipo de recurso Sling: _**azure/fetchchoices**_
 
 
 
@@ -79,13 +81,13 @@ public class GetFieldChoices extends SlingAllMethodsServlet implements Serializa
 }
 ```
 
-## Crear recursos en CRX
+## Creación de recursos en CRX
 
 * AEM Inicie sesión en el SDK local de la.
-* Cree un recurso con el nombre `fetchchoices` (puede asignar un nombre a este nodo de todos modos que desee) de tipo `cq:Page` en el nodo de contenido.
+* Cree un recurso con el nombre `fetchchoices` (puede asignar el nombre a este nodo de todos modos que desee) del tipo `cq:Page` en el nodo de contenido.
 * Guarde los cambios
-* Cree un nodo llamado `jcr:content` de tipo `cq:PageContent` y guarde los cambios
-* Añada las siguientes propiedades a `jcr:content` nodo
+* Cree un nodo denominado `jcr:content` de tipo `cq:PageContent` y guarde los cambios
+* Agregue las siguientes propiedades al nodo `jcr:content`
 
 | Nombre de la propiedad | Valor de propiedad |
 |--------------------|--------------------|
@@ -93,7 +95,7 @@ public class GetFieldChoices extends SlingAllMethodsServlet implements Serializa
 | sling:resourceType | `azure/fetchchoices` |
 
 
-El `sling:resourceType` el valor debe coincidir con resourceTypes=&quot;azure/fetchchoices especificado en el servlet.
+El valor `sling:resourceType` debe coincidir con resourceTypes=&quot;azure/fetchchoices especificado en el servlet.
 
 Ahora puede invocar el servlet solicitando el recurso con `sling:resourceType` = `azure/fetchchoices` en su ruta completa, con cualquier selector o extensión registrado en el servlet Sling.
 
@@ -101,25 +103,25 @@ Ahora puede invocar el servlet solicitando el recurso con `sling:resourceType` =
 http://localhost:4502/content/fetchchoices/jcr:content.json?formPath=/content/forms/af/forrahul/jcr:content/guideContainer
 ```
 
-La ruta `/content/fetchchoices/jcr:content` es la ruta del recurso y la extensión `.json` es lo que se especifica en el servlet
+La ruta de acceso `/content/fetchchoices/jcr:content` es la ruta de acceso del recurso y la extensión `.json` es la especificada en el servlet
 
 ## AEM Sincronizar el proyecto de
 
 1. AEM Abra el proyecto de en su editor favorito. He usado intelliJ para esto.
-1. Cree una carpeta llamada `fetchchoices` bajo `\aem-banking-application\ui.content\src\main\content\jcr_root\content`
-1. Clic derecho `fetchchoices` carpeta y seleccione `repo | Get Command` (Este elemento de menú se configura en un capítulo anterior de este tutorial).
+1. Cree una carpeta llamada `fetchchoices` en `\aem-banking-application\ui.content\src\main\content\jcr_root\content`
+1. Haga clic con el botón derecho en la carpeta `fetchchoices` y seleccione `repo | Get Command` (este elemento de menú está configurado en un capítulo anterior de este tutorial).
 
 AEM AEM Esto debe sincronizar este nodo desde el al proyecto local de la.
 
 AEM La estructura del proyecto de la aplicación debería tener este aspecto
-![resource-resolver](assets/mapping-servlet-resource.png)
+![solucionador de recursos](assets/mapping-servlet-resource.png)
 Actualice el archivo filter.xml en la carpeta aem-banking-application\ui.content\src\main\content\META-INF\vault con la siguiente entrada
 
 ```xml
 <filter root="/content/fetchchoices" mode="merge"/>
 ```
 
-AEM Ahora puede insertar los cambios en un entorno as a Cloud Service mediante Cloud Manager.
+Ahora puede insertar los cambios en un entorno de AEM as a Cloud Service con Cloud Manager.
 
 ## Siguientes pasos
 

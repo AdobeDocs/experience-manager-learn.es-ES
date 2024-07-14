@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # AEM Cómo investigar los problemas relacionados con la indexación en el
 
-*AEM Este vídeo explica los pasos para investigar los problemas relacionados con la indexación en los informes de.*
+AEM *Este vídeo explica los pasos para investigar los problemas relacionados con la indexación en el espacio de trabajo de*.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335465?quality=12&learn=on)

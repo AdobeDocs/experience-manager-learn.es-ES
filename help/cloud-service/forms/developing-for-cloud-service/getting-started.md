@@ -27,14 +27,14 @@ Este tutorial le guiará a través de los pasos necesarios para crear un proyect
 
 Este tutorial hará referencia a esta estructura de carpetas a partir de ahora.
 
-* [Instalación de JDK 11](https://www.oracle.com/java/technologies/downloads/#java11-windows). He descargado jdk-11.0.6_windows-x64_bin.zip
-* [Maven](https://maven.apache.org/guides/getting-started/windows-prerequisites.html).Por ejemplo, si ha instalado Maven en la carpeta c:\maven, deberá crear una variable de entorno llamada M2_HOME con el valor C:\maven\apache-maven-3.6.0. A continuación, agregue M2_HOME\bin a la ruta y guarde la configuración.
+* [Instalar JDK 11](https://www.oracle.com/java/technologies/downloads/#java11-windows). He descargado jdk-11.0.6_windows-x64_bin.zip
+* [Maven](https://maven.apache.org/guides/getting-started/windows-prerequisites.html). Por ejemplo, si ha instalado Maven en la carpeta c:\maven, deberá crear una variable de entorno llamada M2_HOME con el valor C:\maven\apache-maven-3.6.0. A continuación, agregue M2_HOME\bin a la ruta y guarde la configuración.
 
 ## AEM Creación de un proyecto de Maven mediante el tipo de archivo del proyecto de
 
-* Cree una carpeta llamada **cloudmanager**(puede darle cualquier nombre) en su unidad c
+* Cree una carpeta llamada **cloudmanager** (puede ponerle cualquier nombre) en su unidad C
 * Abra la ventana del símbolo del sistema y vaya a **c:\cloudmanager**
-* Copie y pegue el contenido del [archivo de texto](assets/creating-maven-project.txt) en la ventana del símbolo del sistema. Es posible que tenga que cambiar DarchetypeVersion=30 según la variable [última versión](https://github.com/adobe/aem-project-archetype/releases). La última versión tenía 30 años en el momento de escribir este artículo.
+* Copie y pegue el contenido del [archivo de texto](assets/creating-maven-project.txt) en la ventana del símbolo del sistema. Es posible que tenga que cambiar DarchetypeVersion=30 dependiendo de la [última versión](https://github.com/adobe/aem-project-archetype/releases). La última versión tenía 30 años en el momento de escribir este artículo.
 * Ejecute el comando pulsando la tecla Intro. Si todo funciona correctamente, debería ver el mensaje de éxito de la versión.
 
 ## Siguientes pasos

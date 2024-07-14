@@ -51,7 +51,7 @@ En esta parte, agregaremos gráficos circulares para mostrar la combinación de 
 
 * Observe el objeto del modelo de datos enlazado a los ejes X e Y. Debe seleccionar el elemento raíz del modelo de datos de formulario y, a continuación, explorar en profundidad para seleccionar el elemento adecuado.
 
-* ![assettype](assets/modelassettypechart.png)
+* ![tipo de recurso](assets/modelassettypechart.png)
 
 ## Siguientes pasos
 

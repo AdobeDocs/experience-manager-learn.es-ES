@@ -24,7 +24,7 @@ AEM El editor de reglas permite a los usuarios añadir lógica a los Forms adapt
 
 >[!VIDEO](https://video.tv.adobe.com/v/19653?quality=12&learn=on)
 
-**Algunas de las mejoras del Editor de reglas son las siguientes:**
+**Algunas de las mejoras realizadas en el Editor de reglas incluyen:**
 
 * Los componentes de formulario de varios valores muestran automáticamente las opciones del componente
 * Capacidad para especificar un servicio web WSDL en el editor visual

@@ -86,10 +86,10 @@ if(guid!=null&&!guid.isEmpty())
 
 * [Importar el formulario adaptable de ejemplo](./assets/bank-account-sample-form.zip)
 
-* [Especifique los valores adecuados en la configuración de Azure Portal mediante la consola de configuración OSGi.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/some-useful-integrations/store-form-data-in-azure-storage.html?lang=en#provide-the-blob-sas-token-and-storage-uri)
+* [Especifique los valores apropiados en la configuración de Azure Portal mediante la consola de configuración de OSGi.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/some-useful-integrations/store-form-data-in-azure-storage.html?lang=en#provide-the-blob-sas-token-and-storage-uri)
 
-* [Vista previa y envío del formulario BankAccount](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled)
+* [Previsualizar y enviar el formulario de BankAccount](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled)
 
 * Compruebe que los datos están almacenados en el contenedor de almacenamiento de Azure que elija. Copie el ID de blob.
 
-* [Vista previa del formulario BankAccount](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled&amp;guid=dba8ac0b-8be6-41f2-9929-54f627a649f6) y especifique el ID del blob como parámetro de guid en la URL para que el formulario se rellene previamente con los datos del almacenamiento de Azure
+* [Obtenga una vista previa del formulario de BankAccount](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled&amp;guid=dba8ac0b-8be6-41f2-9929-54f627a649f6) y especifique el ID del blob como parámetro de GUID en la dirección URL para que el formulario se rellene previamente con los datos del almacenamiento de Azure

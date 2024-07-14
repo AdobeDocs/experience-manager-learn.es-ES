@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Crear biblioteca de cliente
 
-AEM La biblioteca de clientes de administra todo el código JavaScript del lado del cliente. Para este artículo, he creado un JavaScript simple para recuperar los datos del formulario adaptable mediante la API de Guide Bridge. Una vez recuperados los datos del formulario adaptable, se realiza la llamada al POST al servlet para insertar o actualizar los datos del formulario adaptable en la base de datos. La función getALLUrlParams devuelve los parámetros de la dirección URL. Si el parámetro guid está presente en la dirección URL, es necesario realizar la operación de actualización; en caso contrario, se trata de una operación de inserción. El resto de la funcionalidad se controla en el código asociado con el evento de clic de la clase .savebutton.
+AEM La biblioteca de clientes de administra todo el código JavaScript del lado del cliente. Para este artículo, he creado una JavaScript sencilla para recuperar los datos del formulario adaptable mediante la API de Guide Bridge. Una vez recuperados los datos del formulario adaptable, se realiza la llamada al POST al servlet para insertar o actualizar los datos del formulario adaptable en la base de datos. La función getALLUrlParams devuelve los parámetros de la dirección URL. Si el parámetro guid está presente en la dirección URL, es necesario realizar la operación de actualización; en caso contrario, se trata de una operación de inserción. El resto de la funcionalidad se controla en el código asociado con el evento de clic de la clase .savebutton.
 
 >[!NOTE]
 >

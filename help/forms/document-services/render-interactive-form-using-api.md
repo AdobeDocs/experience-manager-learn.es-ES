@@ -24,7 +24,7 @@ En este artículo echaremos un vistazo al siguiente servicio
 
 * FormsService: se trata de un servicio muy versátil que le permite exportar e importar datos desde y hacia archivos de PDF, así como generar PDF interactivos combinando datos xml en plantillas xdp
 
-El funcionario [la API de javadoc para AEM Forms se enumera aquí](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/package-summary.html)
+El [javadoc oficial para la API de AEM Forms se enumera aquí](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/package-summary.html)
 
 El siguiente fragmento de código procesa el PDF interactivo mediante la operación renderPDFForm de FormsService. El archivo schengen.xdp es una plantilla que se utiliza para combinar los datos xml.
 
@@ -55,17 +55,17 @@ Línea 11: Devuelve el PDF interactivo generado a la aplicación que realiza la 
 1. [Descargue e instale el paquete de ejemplo DocumentServices mediante la consola web Felix](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 1. [AEM Descargue e instale el paquete mediante el administrador de paquetes de la](assets/downloadinteractivepdffrommobileform.zip)
 
-1. [Inicie sesión en configMgr](http://localhost:4502/system/console/configMgr)
+1. [Iniciar sesión en configMgr](http://localhost:4502/system/console/configMgr)
 1. Búsqueda de Adobe Granite CSRF Filter
 1. Añada la siguiente ruta en las secciones excluidas y guarde
 1. /bin/generateinteractivepdf
-1. Buscar por _Servicio de asignador de usuarios del servicio Apache Sling_ y haga clic en para abrir las propiedades
-   1. Haga clic en *+* icono (más) para añadir la siguiente asignación de servicio
+1. Busque _Servicio de asignador de usuarios del servicio Apache Sling_ y haga clic para abrir las propiedades
+   1. Haga clic en el icono *+* (más) para agregar la siguiente asignación de servicio
       * DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
    1. Haga clic en Guardar
-1. [Abra el formulario móvil](http://localhost:4502/content/dam/formsanddocuments/schengen.xdp/jcr:content)
-1. Rellene un par de campos y haga clic en el botón ***Descargar y rellenar ....*** botón
+1. [Abrir el formulario móvil](http://localhost:4502/content/dam/formsanddocuments/schengen.xdp/jcr:content)
+1. Rellene un par de campos y, a continuación, haga clic en el .... ***Descargar y rellenar*** botón
 1. El PDF interactivo debe descargarse en el sistema local
 
 
-El paquete de ejemplo contiene el perfil personalizado asociado al formulario móvil. Explore la [customtoolbar.jsp](http://localhost:4502/apps/AEMFormsDemoListings/customprofiles/addImageToMobileForm/demo/customtoolbar.jsp) archivo. Este jsp extrae los datos del formulario móvil y realiza una solicitud de POST al servlet montado en ***/bin/generateinteractivepdf*** ruta. El servlet devuelve el PDF interactivo a la aplicación que realiza la llamada. A continuación, el código de customtoolbar.jsp descarga el archivo en el sistema local
+El paquete de ejemplo contiene el perfil personalizado asociado al formulario móvil. Explore el archivo [customtoolbar.jsp](http://localhost:4502/apps/AEMFormsDemoListings/customprofiles/addImageToMobileForm/demo/customtoolbar.jsp). Este jsp extrae los datos del formulario móvil y realiza una solicitud de POST al servlet montado en la ruta ***/bin/generateinteractivepdf***. El servlet devuelve el PDF interactivo a la aplicación que realiza la llamada. A continuación, el código de customtoolbar.jsp descarga el archivo en el sistema local

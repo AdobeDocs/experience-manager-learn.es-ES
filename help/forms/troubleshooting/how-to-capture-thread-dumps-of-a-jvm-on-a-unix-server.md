@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Cómo capturar los volcados de hilos de una JVM en un servidor Unix
 
-*Este vídeo explica los pasos para capturar los volcados de pila de una JVM en un servidor Unix.*
+*Este vídeo explica los pasos para capturar los volcados de la pila de una JVM en un servidor Unix.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335492?quality=12&learn=on)

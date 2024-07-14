@@ -33,13 +33,13 @@ Los tipos de archivo son ideas de funciones específicas de alto nivel que se as
 
 ### Flujos de operacionalización
 
-Existen dos flujos de operacionalización para [!DNL AEM Sites] y [!DNL AEM Assets]:
+Hay dos flujos de operacionalización para [!DNL AEM Sites] y [!DNL AEM Assets]:
 
 1. Ejecución básica y funcionamiento del trabajo diario (actualización de metadatos)
 
 1. Trabajo de estrategia y transformación, como grandes proyectos entre organizaciones
 
-![flujos de operacionalización](assets/streams-of-operationalization.png)
+![secuencias de operación](assets/streams-of-operationalization.png)
 
 ### AEM Funciones de recursos de alto nivel de la
 
@@ -81,11 +81,11 @@ Los siguientes son ejemplos de funciones para un escenario liviano (empresa de r
    * 4 SME de administradores principales por marca
    * 1 arquitecto técnico
 
-### De alto nivel [!DNL AEM Sites] funciones
+### Roles de alto nivel [!DNL AEM Sites]
 
 1. Ejecución y funcionamiento básicos
 
-   **Separación general:** Los desarrolladores de CSS crean nuevas apariencias para los componentes. El Adobe Sr Business Consultant, Joseph Van Buskirk, recomienda &quot;Descorchar componentes y sistemas de estilo. Esta es la función que impulsa el ahorro de costes. El 80 % de las experiencias creadas deben realizarse con los componentes principales o creados anteriormente&quot;. El objetivo es reutilizar los componentes principales o personalizados con nuevos estilos mediante un desarrollador de CSS (o equipo de desarrollo front-end)
+   **Separación general:** Los desarrolladores de CSS crean nuevas máscaras para los componentes. El Adobe Sr Business Consultant, Joseph Van Buskirk, recomienda &quot;Descorchar componentes y sistemas de estilo. Esta es la función que impulsa el ahorro de costes. El 80 % de las experiencias creadas deben realizarse con los componentes principales o creados anteriormente&quot;. El objetivo es reutilizar los componentes principales o personalizados con nuevos estilos mediante un desarrollador de CSS (o equipo de desarrollo front-end)
 
    Ejemplos de funciones:
 
@@ -126,12 +126,12 @@ Los siguientes son ejemplos de funciones para un escenario de cliente ligero y p
 
 ### Consideraciones clave
 
-**Comprender los arquetipos** — Empiece despacio, comprenda y analice los arquetipos. Sea creativo y flexible, teniendo en cuenta que no hay un modelo correcto a seguir.
+**Comprender los arquetipos**: empiece despacio, comprenda y analice los arquetipos. Sea creativo y flexible, teniendo en cuenta que no hay un modelo correcto a seguir.
 
-**Comprender la hoja de ruta** - Algunas organizaciones tienen muchos hitos que desean ejecutar. Prepárese para asignar más recursos técnicos de los que puede estimar.
+**Comprenda su hoja de ruta** - Algunas organizaciones tienen muchos hitos que desean ejecutar. Prepárese para asignar más recursos técnicos de los que puede estimar.
 
-**Aprovechamiento de los recursos internos** - Los huecos pueden producirse de forma inesperada. Es posible que pueda rellenarlos más rápidamente recurriendo a los integrantes del equipo interno, en lugar de buscar fuera de su organización.
+**Aprovechar recursos internos**: las lagunas pueden producirse de forma inesperada. Es posible que pueda rellenarlos más rápidamente recurriendo a los integrantes del equipo interno, en lugar de buscar fuera de su organización.
 
-Para un análisis más profundo de los modelos y tipos de archivo de gobernanza y asignación de personal, escuche esta discusión de panel de una hora: [Arquetipos de funciones y Creación de un marco operativo para [!DNL AEM Assets] y [!DNL Sites]](https://adobecustomersuccess.adobeconnect.com/p8ml5nmy0758mp4/)
+Para un análisis más detallado de los modelos y tipos de archivos de administración y asignación de personal, escuche esta discusión de panel de una hora: [Arquetipos de roles y Creación de un marco operativo para [!DNL AEM Assets] y [!DNL Sites]](https://adobecustomersuccess.adobeconnect.com/p8ml5nmy0758mp4/)
 
-Obtenga más información sobre estrategia y liderazgo mental en [Éxito del cliente](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html) hub.
+Obtenga más información sobre estrategia y liderazgo mental en el centro de [Éxito del cliente](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html).

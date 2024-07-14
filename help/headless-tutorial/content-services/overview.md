@@ -17,7 +17,7 @@ ht-degree: 4%
 
 # AEM Introducción a los servicios de contenido sin encabezado de
 
-AEM AEM AEM Los servicios de contenido aprovechan las páginas de tradicionales para componer puntos finales de API de REST sin encabezado y los componentes definen, o hacen referencia, al contenido que se va a exponer en estos puntos finales.
+AEM AEM AEM Content Services aprovecha las páginas de tradicionales para componer extremos de API de REST sin encabezado, y los componentes definen, o hacen referencia, al contenido que se va a exponer en estos extremos.
 
 AEM Los servicios de contenido permiten las mismas abstracciones de contenido utilizadas para crear páginas web en AEM Sites para definir el contenido y los esquemas de estas API HTTP. AEM AEM El uso de Páginas de y Componentes de permite a los especialistas en marketing componer y actualizar rápidamente API de JSON flexibles que pueden activar cualquier aplicación.
 
@@ -39,9 +39,9 @@ Este tutorial abarca los siguientes temas:
 
 ## Proyecto de GitHub
 
-El código fuente y los paquetes de contenido están disponibles en la [AEM Guías de - Proyecto WKND Mobile GitHub](https://github.com/adobe/aem-guides-wknd-mobile).
+El código fuente y los paquetes de contenido están disponibles en [AEM Guides - Proyecto WKND Mobile de GitHub](https://github.com/adobe/aem-guides-wknd-mobile).
 
-Si encuentra algún problema con el tutorial o el código, deje un [Problema de GitHub](https://github.com/adobe/aem-guides-wknd-mobile/issues).
+Si encuentra algún problema con el tutorial o el código, deje un [problema de GitHub](https://github.com/adobe/aem-guides-wknd-mobile/issues).
 
 ## AEM Servicios de contenido de GraphQL AEM vs.
 

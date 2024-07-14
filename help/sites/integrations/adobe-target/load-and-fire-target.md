@@ -28,19 +28,19 @@ Obtenga información sobre cómo cargar, pasar parámetros a una solicitud de p�
 
 ## Regla de carga de página
 
-La capa de datos del cliente de Adobe es una capa de datos impulsada por evento. AEM Cuando se carga la capa de datos de la página de, se produce un déclencheur de evento `cmp:show` . En el vídeo, la variable `tags Library Loaded` La regla de se invoca mediante un evento personalizado. A continuación, se pueden encontrar los fragmentos de código utilizados en el vídeo para el evento personalizado y para los elementos de datos.
+La capa de datos del cliente de Adobe es una capa de datos impulsada por evento. AEM Cuando se carga la capa de datos de la página de datos de la página de la, se déclencheur un evento `cmp:show` En el vídeo, la regla `tags Library Loaded` se invoca mediante un evento personalizado. A continuación, se pueden encontrar los fragmentos de código utilizados en el vídeo para el evento personalizado y para los elementos de datos.
 
 ### Evento personalizado de página mostrada{#page-event}
 
-![Página mostrada: configuración de evento y código personalizado](assets/load-and-fire-target-call.png)
+![Página mostrada con configuración de evento y código personalizado](assets/load-and-fire-target-call.png)
 
 En la propiedad de etiquetas, agregue un nuevo **Evento** a la **Regla**
 
-+ __Extensión:__ Núcleo
++ __Extensión:__ Core
 + __Tipo de evento:__ Código personalizado
-+ __Nombre:__ Controlador de eventos de Page Show (o algo descriptivo)
++ __Nombre:__ controlador de eventos de muestra de página (o algo descriptivo)
 
-Pulse el botón __Abrir editor__ y pegue el siguiente fragmento de código. Este código __debe__ se añadirá a __Configuración de eventos__ y un subsiguiente __Acción__.
+Pulse el botón __Abrir editor__ y pegue el siguiente fragmento de código. Este código __debe__ agregarse a la __Configuración de evento__ y a una __Acción__ posterior.
 
 ```javascript
 // Define the event handler function
@@ -80,20 +80,20 @@ window.adobeDataLayer.push(function (dataLayer) {
 });
 ```
 
-Una función personalizada define la variable `pageShownEventHandler`AEM , y escucha eventos emitidos por los componentes principales de la base de datos, deriva la información relevante del componente principal, la empaqueta en un objeto de evento y almacena en déclencheur el evento con la información de evento derivada en su carga útil.
+AEM Una función personalizada define `pageShownEventHandler` y escucha los eventos emitidos por los componentes principales, deriva la información relevante del componente principal, lo empaqueta en un objeto de evento y déclencheur el evento con la información de evento derivada en su carga útil.
 
-La regla de etiquetas se activa mediante la variable `trigger(...)` función que es __solamente__ disponible dentro de la definición de fragmento de código personalizado de un evento de regla.
+La regla de etiquetas se activa usando la función `trigger(...)` de las etiquetas, que es __solo__ disponible dentro de la definición de fragmento de código personalizado de un evento de regla.
 
-El `trigger(...)` toma un objeto de evento como parámetro que, a su vez, se expone en las etiquetas Elementos de datos, con otro nombre reservado en las etiquetas denominadas `event`. Los elementos de datos de las etiquetas ahora pueden hacer referencia a los datos de este objeto de evento desde el `event` objeto con sintaxis similar a `event.component['someKey']`.
+La función `trigger(...)` toma un objeto de evento como parámetro que, a su vez, se expone en elementos de datos de etiquetas con otro nombre reservado en etiquetas denominadas `event`. Los elementos de datos de las etiquetas ahora pueden hacer referencia a los datos de este objeto de evento del objeto `event` mediante sintaxis como `event.component['someKey']`.
 
-If `trigger(...)` se utiliza fuera del contexto del tipo de evento Custom Code de un evento (por ejemplo, en una acción), el error de JavaScript `trigger is undefined` se produce en el sitio web integrado con la propiedad tags.
+Si se usa `trigger(...)` fuera del contexto del tipo de evento Custom Code de un evento (por ejemplo, en una acción), se generará el error de JavaScript `trigger is undefined` en el sitio web integrado con la propiedad tags.
 
 
 ### Elementos de datos
 
 ![Elementos de datos](assets/data-elements.png)
 
-Los elementos de datos de etiquetas asignan los datos del objeto de evento [se activa en el evento personalizado Página mostrada](#page-event) a las variables disponibles en Adobe Target, a través del Tipo de elemento de datos de código personalizado de la extensión principal.
+Los elementos de datos de etiquetas asignan los datos del objeto de evento [activado en el evento personalizado Página mostrada](#page-event) a las variables disponibles en Adobe Target, a través del tipo de elemento de datos de código personalizado de la extensión principal.
 
 #### Elemento de datos de ID de página
 
@@ -105,7 +105,7 @@ if (event && event.id) {
 
 Este código devuelve el ID único generado del componente principal.
 
-![ID de página](assets/pageid.png)
+![Id. de página](assets/pageid.png)
 
 ### Elemento de datos de ruta de página
 
@@ -117,7 +117,7 @@ if (event && event.component && event.component.hasOwnProperty('repo:path')) {
 
 AEM Este código devuelve la ruta de acceso de la página de la.
 
-![Ruta de página](assets/pagepath.png)
+![Ruta de la página](assets/pagepath.png)
 
 ### Elemento de datos Page Title
 
@@ -146,7 +146,7 @@ AEM Este código devuelve el título de la página de la.
 #### Solución
 
 Los clientes de utilizan en ocasiones instancias basadas en la nube con Target para realizar pruebas o simplemente exponer conceptos. Estos dominios, y muchos otros, son parte de la Lista pública de sufijos .
-Los exploradores modernos no guardarán las cookies si utiliza estos dominios a menos que personalice el `cookieDomain` configuración mediante `targetGlobalSettings()`.
+Los exploradores modernos no guardarán las cookies si utiliza estos dominios a menos que personalice la configuración de `cookieDomain` mediante `targetGlobalSettings()`.
 
 ```
 window.targetGlobalSettings = {  
@@ -160,7 +160,7 @@ window.targetGlobalSettings = {
 
 ## Vínculos de soporte
 
-+ [Documentación de capa de datos del cliente de Adobe](https://github.com/adobe/adobe-client-data-layer/wiki)
-+ [Adobe Experience Cloud Debugger: Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
++ [Documentación de la capa de datos del cliente de Adobe](https://github.com/adobe/adobe-client-data-layer/wiki)
++ [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 + [Uso de la capa de datos del cliente de Adobe y la documentación de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=es)
 + [Introducción al Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)

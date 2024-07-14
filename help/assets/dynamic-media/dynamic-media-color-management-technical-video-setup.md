@@ -24,7 +24,7 @@ En este vídeo exploramos la gestión de color de Dynamic Media y cómo se puede
 
 >[!NOTE]
 >
->[Habilitar Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es) AEM para utilizar esta función, haga lo siguiente:
+>[Habilite Dynamic Media AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es) en la aplicación para usar esta función en el.
 
 AEM Esta función está disponible para las versiones 6.1 y 6.2 como paquete de funciones de.
 
@@ -125,4 +125,4 @@ A continuación se muestra la plantilla XML para el nodo de configuración de ge
 
 ## Recursos adicionales{#additional-resources}
 
-* [Configuración de la gestión de color Dynamic Media](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dynamic.html#ConfiguringDynamicMediaColorManagement)
+* [Configuración de la administración de color de Dynamic Media](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dynamic.html#ConfiguringDynamicMediaColorManagement)

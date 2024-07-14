@@ -21,7 +21,7 @@ ht-degree: 1%
 
 ## Obtener parámetro empID
 
-El siguiente paso es acceder al parámetro empID desde la dirección URL. El valor del parámetro de solicitud empID se pasa a continuación a **_get_** operación de servicio del modelo de datos de formulario.
+El siguiente paso es acceder al parámetro empID desde la dirección URL. A continuación, se pasa el valor del parámetro de solicitud empID a la operación de servicio **_get_** del modelo de datos de formulario.
 Para el propósito de este curso hemos creado y proporcionado lo siguiente
 
 * Plantilla de formulario adaptable llamada **_FDMDemo_**
@@ -31,8 +31,8 @@ Para el propósito de este curso hemos creado y proporcionado lo siguiente
 
 Al hacer esto, el código en el jsp personalizado solo se ejecutará cuando se procese el formulario adaptable basado en esta plantilla personalizada
 
-* [Importación del paquete](assets/template-page-component.zip) usando [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
-* [Abra fdmrequest.jsp](http://localhost:4502/crx/de/index.jsp#/apps/fdmdemo/component/page/fdmdemo/fdmrequest.jsp)
+* [Importe el paquete](assets/template-page-component.zip) con [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
+* [Abrir fdmrequest.jsp](http://localhost:4502/crx/de/index.jsp#/apps/fdmdemo/component/page/fdmdemo/fdmrequest.jsp)
 * Quitar comentarios de las líneas comentadas.
 * Guarde los cambios
 

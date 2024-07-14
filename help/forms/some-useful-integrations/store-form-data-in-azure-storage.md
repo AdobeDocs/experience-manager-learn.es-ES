@@ -28,13 +28,13 @@ Para poder almacenar los datos de formulario enviados en el almacenamiento de Az
 
 ## Crear cuenta de almacenamiento de Azure
 
-[Inicie sesión en su cuenta del portal de Azure y cree una cuenta de almacenamiento](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal#create-a-storage-account-1). Proporcione un nombre significativo a su cuenta de almacenamiento, haga clic en Revisar y, a continuación, haga clic en Crear. Esto crea su cuenta de almacenamiento con todos los valores predeterminados. Para el propósito de este artículo hemos nombrado nuestra cuenta de almacenamiento `aemformstutorial`.
+[Inicie sesión en su cuenta del portal de Azure y cree una cuenta de almacenamiento](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal#create-a-storage-account-1). Proporcione un nombre significativo a su cuenta de almacenamiento, haga clic en Revisar y, a continuación, haga clic en Crear. Esto crea su cuenta de almacenamiento con todos los valores predeterminados. A los efectos de este artículo, hemos asignado un nombre a nuestra cuenta de almacenamiento `aemformstutorial`.
 
 
 ## Crear contenedor
 
 Lo siguiente que debemos hacer es crear un contenedor para almacenar los datos de los envíos de formularios.
-En la página de cuenta de almacenamiento, haga clic en el elemento de menú Contenedores de la izquierda y cree un contenedor llamado `formssubmissions`. Asegúrese de que el nivel de acceso público está establecido en privado
+En la página Cuenta de almacenamiento, haga clic en el elemento de menú Contenedores de la izquierda y cree un contenedor denominado `formssubmissions`. Asegúrese de que el nivel de acceso público está establecido en privado
 ![contenedor](./assets/new-container.png)
 
 ## Crear SAS en el contenedor
@@ -43,12 +43,12 @@ Nos haremos con la firma de acceso compartido o el método SAS de autorización 
 Vaya al contenedor en la cuenta de almacenamiento, haga clic en los puntos suspensivos y seleccione la opción Generate SAS como se muestra en la captura de pantalla
 ![sas-on-container](./assets/sas-on-container.png)
 Asegúrese de especificar los permisos adecuados y la fecha de finalización adecuada, tal como se muestra en la captura de pantalla siguiente, y haga clic en Generar token SAS y URL. Copie el token SAS de blob y la URL de SAS de blob. Utilizaremos estos dos valores para realizar nuestras llamadas HTTP
-![shared-access-keys](./assets/shared-access-signature.png)
+![claves de acceso compartido](./assets/shared-access-signature.png)
 
 
 ## Proporcione el token SAS de blob y el URI de almacenamiento.
 
-Para que el código sea más genérico, las dos propiedades se pueden configurar utilizando la configuración OSGi como se muestra a continuación. El _**aemformstutorial**_ es el nombre de la cuenta de almacenamiento, _**formsubmissions**_ es el contenedor en el que se almacenan los datos.
+Para que el código sea más genérico, las dos propiedades se pueden configurar utilizando la configuración OSGi como se muestra a continuación. _**aemformstutorial**_ es el nombre de la cuenta de almacenamiento, _**formsubmissions**_ es el contenedor en el que se almacenarán los datos.
 Asegúrese de que tiene / al final del URI de almacenamiento y el token SAS empieza por?
 ![osgi-configuration](./assets/azure-portal-osgi-configuration.png)
 
@@ -56,8 +56,9 @@ Asegúrese de que tiene / al final del URI de almacenamiento y el token SAS empi
 ## Crear solicitud de PUT
 
 El siguiente paso es crear una solicitud de PUT para almacenar los datos de formulario enviados en Azure Storage. Cada envío de formulario debe identificarse con un ID de BLOB único. El ID único de BLOB se suele crear en el código e insertar en la dirección URL de la solicitud del PUT.
-La siguiente es la dirección URL parcial de la solicitud del PUT. El `aemformstutorial` es el nombre de la cuenta de Storage, formsubmissions es el contenedor en el que se almacenarán los datos con un ID de BLOB único. El resto de la URL seguirá siendo el mismo.
-https://aemformstutorial.blob.core.windows.net/formsubmissions/blobid/sastoken La siguiente es una función escrita para almacenar los datos de formulario enviados en Azure Storage mediante una solicitud del PUT. Observe el uso del nombre de contenedor y el uuid en la dirección URL. Puede crear un servicio OSGi o un servlet sling mediante el código de ejemplo que se muestra a continuación y almacenar los envíos de formularios en Azure Storage.
+La siguiente es la dirección URL parcial de la solicitud del PUT. `aemformstutorial` es el nombre de la cuenta de almacenamiento, formsubmissions es el contenedor en el que se almacenarán los datos con un ID de BLOB único. El resto de la URL seguirá siendo el mismo.
+https://aemformstutorial.blob.core.windows.net/formsubmissions/blobid/sastoken
+La siguiente es una función escrita para almacenar los datos de formulario enviados en Azure Storage mediante una solicitud del PUT. Observe el uso del nombre de contenedor y el uuid en la dirección URL. Puede crear un servicio OSGi o un servlet sling mediante el código de ejemplo que se muestra a continuación y almacenar los envíos de formularios en Azure Storage.
 
 ```java
  public String saveFormDatainAzure(String formData) {
@@ -103,10 +104,10 @@ https://aemformstutorial.blob.core.windows.net/formsubmissions/blobid/sastoken L
 
 * [Importar el formulario adaptable de ejemplo](./assets/bank-account-sample-form.zip)
 
-* [Especifique los valores adecuados en la configuración de Azure Portal mediante la consola de configuración OSGi](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/some-useful-integrations/store-form-data-in-azure-storage.html?lang=en#provide-the-blob-sas-token-and-storage-uri)
+* [Especifique los valores apropiados en la configuración de Azure Portal mediante la consola de configuración OSGi](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/some-useful-integrations/store-form-data-in-azure-storage.html?lang=en#provide-the-blob-sas-token-and-storage-uri)
 
-* [Vista previa y envío del formulario BankAccount](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled)
+* [Previsualizar y enviar el formulario de BankAccount](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled)
 
 * Compruebe que los datos están almacenados en el contenedor de almacenamiento de Azure que elija. Copie el ID de blob.
-* [Vista previa del formulario BankAccount](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled&amp;guid=dba8ac0b-8be6-41f2-9929-54f627a649f6) y especifique el ID del blob como parámetro de guid en la URL para que el formulario se rellene previamente con los datos del almacenamiento de Azure
+* [Obtenga una vista previa del formulario de BankAccount](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled&amp;guid=dba8ac0b-8be6-41f2-9929-54f627a649f6) y especifique el ID del blob como parámetro de GUID en la dirección URL para que el formulario se rellene previamente con los datos del almacenamiento de Azure
 

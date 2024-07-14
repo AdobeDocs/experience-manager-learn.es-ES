@@ -24,7 +24,7 @@ ht-degree: 6%
 
 SPA AEM AEM SPA Bienvenido al tutorial de varias partes para desarrolladores que buscan aumentar un contenido remoto basado en React (o Next.js) existente con contenido editable de la mediante el Editor de contenido de la aplicación.
 
-Este tutorial se basa en [Aplicación WKND GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=es)AEM AEM , una aplicación de React que consume contenido de fragmentos de contenido de la red de contenido de la red de contenido de la red de Internet (React) de la red de contenido de GraphQL SPA, pero que no proporciona ninguna creación en contexto de contenido de la red de.
+Este tutorial se basa en [WKND GraphQL App](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=es), una aplicación de React que consume contenido de fragmentos de contenido de la red de contenido (FDA) de la red de aplicaciones (API) de GraphQL SPA, pero que no proporciona ninguna creación de contenido en contexto de la red de aplicaciones (API) de la red de aplicaciones de AEM AEM de la red de.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333272?quality=12&learn=on)
 
@@ -32,16 +32,16 @@ Este tutorial se basa en [Aplicación WKND GraphQL](https://experienceleague.ado
 
 SPA SPA AEM AEM El tutorial tiene por objeto ilustrar cómo se puede actualizar un remoto, o una aplicación que se ejecuta fuera del contexto de la, para consumir y entregar contenido creado en la aplicación de la manera más rápida y sencilla. En este ejemplo, se puede crear un tutorial de.
 
-AEM La mayoría de las actividades del tutorial se centran en el desarrollo de JavaScript; sin embargo, se cubren aspectos críticos que giran en torno a la. AEM SPA AEM Estos aspectos incluyen la definición de dónde se crea el contenido y dónde se almacena en las rutas de acceso de la y la asignación de rutas de acceso a las páginas de la página de destino.
+La mayoría de las actividades del tutorial se centran en el desarrollo de JavaScript AEM; sin embargo, se cubren aspectos esenciales que giran en torno a la. AEM SPA AEM Estos aspectos incluyen la definición de dónde se crea el contenido y dónde se almacena en las rutas de acceso de la y la asignación de rutas de acceso a las páginas de la página de destino.
 
-El tutorial está diseñado para trabajar con **AEM as a Cloud Service** y se compone de dos proyectos:
+El tutorial está diseñado para funcionar con **AEM as a Cloud Service** y se compone de dos proyectos:
 
-1. El __AEM Proyecto de__ AEM contiene la configuración y el contenido que deben implementarse para la implementación de la configuración de la.
-1. __Aplicación WKND__ SPA AEM SPA El proyecto es el proyecto que se debe integrar con el Editor de la de trabajo
+1. AEM AEM El __Proyecto de__ contiene configuración y contenido que deben implementarse para la implementación de los elementos de la interfaz de usuario de la interfaz de usuario de la interfaz de usuario de.
+1. SPA AEM SPA El proyecto __WKND App__ es el proyecto que se va a integrar con el Editor de de la aplicación de
 
 ## Último código
 
-+ El punto de partida del código de este tutorial se encuentra en [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/remote-spa-tutorial) en el `remote-spa-tutorial` carpeta.
++ El punto de partida del código de este tutorial se encuentra en [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/remote-spa-tutorial), en la carpeta `remote-spa-tutorial`.
 
 ## Requisitos previos
 
@@ -60,8 +60,8 @@ Este tutorial supone lo siguiente:
 + [Microsoft® Visual Studio Code](https://visualstudio.microsoft.com/) como IDE
 + Un directorio de trabajo de `~/Code/aem-guides-wknd-graphql/remote-spa-tutorial`
 + AEM Ejecución del SDK de la como servicio de autor en `http://localhost:4502`
-+ AEM Ejecución del SDK de la con la variable local `admin` cuenta con contraseña `admin`
-+ SPA Ejecución de la `http://localhost:3000`
++ AEM Ejecutando el SDK de la con la cuenta `admin` local con la contraseña `admin`
++ SPA Ejecutando el recurso de la cuenta de usuario el `http://localhost:3000`
 
 >[!NOTE]
 >
@@ -99,4 +99,4 @@ Por último, utilice los conceptos explicados en capítulos anteriores para crea
 
 ## Recursos adicionales
 
-+ [AEM SPA React Editable Components](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
++ AEM SPA [Componentes editables de React de](https://www.npmjs.com/package/@adobe/aem-react-editable-components)

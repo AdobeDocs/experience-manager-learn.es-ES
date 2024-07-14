@@ -1,6 +1,6 @@
 ---
 title: Áreas de nombres personalizadas
-description: AEM Obtenga información sobre cómo definir e implementar áreas de nombres personalizadas para que se puedan usar en el as a Cloud Service de la.
+description: Obtenga información sobre cómo definir e implementar áreas de nombres personalizadas en AEM as a Cloud Service.
 version: Cloud Service
 topic: Development, Content Management
 feature: Metadata
@@ -20,30 +20,30 @@ ht-degree: 2%
 
 # Áreas de nombres personalizadas
 
-Obtenga información sobre cómo definir e implementar funciones personalizadas [áreas de nombres](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/4.5_Namespaces.html?lang=es) AEM a los as a Cloud Service.
+Obtenga información sobre cómo definir e implementar [áreas de nombres](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/4.5_Namespaces.html?lang=es) personalizadas en AEM as a Cloud Service.
 
-Las áreas de nombres personalizadas son la parte opcional de una propiedad JCR que precede a una `:`. AEM Utiliza varias áreas de nombres como:
+Las áreas de nombres personalizadas son la parte opcional de una propiedad JCR que precede a `:`. AEM Utiliza varias áreas de nombres como:
 
 + `jcr` para propiedades del sistema JCR
-+ `cq` AEM para propiedades (anteriormente conocidas como Adobe CQ) de la
-+ `dam` AEM para propiedades de la específicas de los recursos DAM
-+ `dc` para las propiedades principales de Dublín
++ AEM `cq` para propiedades (anteriormente conocidas como propiedades de Adobe CQ) de la
++ AEM `dam` para propiedades de específicas de los recursos DAM
++ `dc` para propiedades principales de Dublín
 
 ... y muchos otros.
 
 Las áreas de nombres se pueden utilizar para denotar el ámbito y la intención de una propiedad. AEM La creación de un área de nombres personalizada, a menudo el nombre de su empresa, ayuda a identificar claramente los nodos o las propiedades específicas de su implementación de y contiene datos específicos de su empresa.
 
-Las áreas de nombres personalizadas se administran en [Inicialización del repositorio de Sling (repoinit)](https://sling.apache.org/documentation/bundles/repository-initialization.html) AEM scripts, e implementaciones en configuraciones as a Cloud Service como OSGi, y se añaden a las [AEM de proyecto de](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) `ui.config` proyecto.
+Las áreas de nombres personalizadas se administran en [scripts de inicialización de repositorios de Sling (repoinit)](https://sling.apache.org/documentation/bundles/repository-initialization.html) y se implementan en AEM as a Cloud Service AEM como configuraciones OSGi. Además, se agregan a su proyecto [](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) `ui.config` del proyecto.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3412319?quality=12&learn=on)
 
 ## Recursos
 
-+ [Documentación de inicialización del repositorio de Sling (repoinit)](https://sling.apache.org/documentation/bundles/repository-initialization.html#repoinit-parser-test-scenarios)
++ [Documentación de inicialización del repositorio Sling (repoinit)](https://sling.apache.org/documentation/bundles/repository-initialization.html#repoinit-parser-test-scenarios)
 
 ## Código
 
-El siguiente código se utiliza para configurar un `wknd` namespace.
+El siguiente código se usa para configurar un área de nombres `wknd`.
 
 ### Configuración OSGi de RepositoryInitializer
 
@@ -58,4 +58,4 @@ El siguiente código se utiliza para configurar un `wknd` namespace.
 }
 ```
 
-Esto permite utilizar las propiedades personalizadas de `wknd` namespace, como se indica como el primer parámetro después de `register namespace` AEM instrucciones, para usar en el. Para ver definiciones de scripts más avanzadas, consulte los ejemplos en la [Documentación de inicialización del repositorio de Sling (repoinit)](https://sling.apache.org/documentation/bundles/repository-initialization.html#repoinit-parser-test-scenarios).
+AEM Esto permite utilizar propiedades personalizadas con el espacio de nombres `wknd`, como se indica como el primer parámetro después de la instrucción `register namespace`, en el espacio de nombres de la. Para obtener definiciones de scripts más avanzadas, consulte los ejemplos de la [documentación de inicialización del repositorio de Sling (repoinit)](https://sling.apache.org/documentation/bundles/repository-initialization.html#repoinit-parser-test-scenarios).

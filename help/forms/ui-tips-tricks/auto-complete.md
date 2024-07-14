@@ -79,8 +79,8 @@ minLength: 1, source: values, delay: 0
 );
 ```
 
-El [se puede descargar un formulario de ejemplo](assets/auto-complete-form.zip) desde aquí. Asegúrese de proporcionar su propio nombre de usuario/clave de API mediante el editor de código para que el código realice llamadas REST correctamente.
+El [formulario de ejemplo se puede descargar](assets/auto-complete-form.zip) desde aquí. Asegúrese de proporcionar su propio nombre de usuario/clave de API mediante el editor de código para que el código realice llamadas REST correctamente.
 
 >[!NOTE]
 >
-> Para que funcione el completado automático, asegúrese de que el formulario utiliza la siguiente biblioteca de cliente **cq.jquery.ui**. AEM Esta biblioteca de cliente viene con el código de acceso de la aplicación
+> Para que funcione el completado automático, asegúrese de que el formulario use la siguiente biblioteca de cliente **cq.jquery.ui**. AEM Esta biblioteca de cliente viene con el código de acceso de la aplicación

@@ -1,6 +1,6 @@
 ---
 title: Introducción a la temática en Asset Share Commons
-description: Materiales para la comprensión funcional y técnica de Assets Share Commons
+description: Materiales para la comprensión funcional y técnica Assets Share Commons
 version: 6.4, 6.5
 topic: Content Management
 feature: Asset Distribution
@@ -76,9 +76,9 @@ En este vídeo se crea un nuevo tema basado en el tema oscuro de Asset Share Com
 @msgWarningBackgroundColor: @yellow;
 ```
 
-Descargar [Tema de biblioteca de cliente personalizado](assets/asc-theme-demo.zip)
+Descargar [tema de biblioteca de cliente personalizado](assets/asc-theme-demo.zip)
 
 ## Recursos adicionales{#additional-resources}
 
-* [Descargas de la versión Asset Share Commons](https://github.com/Adobe-Marketing-Cloud/asset-share-commons/releases)
-* [AEM Descargas de la versión de ACS Commons 3.11.0+](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)
+* [Descargas de la versión de Asset Share Commons](https://github.com/Adobe-Marketing-Cloud/asset-share-commons/releases)
+* AEM [Descargas de versiones de ACS Commons 3.11.0+](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)

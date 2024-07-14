@@ -21,10 +21,10 @@ Adobe Experience Manager AEM () proporciona una solución fácil de usar para cr
 * **[Administrar mensajes de error en el paso para invocar el servicio de modelo de datos de formulario](./adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)**
   *Una variable en un modelo de flujo de trabajo es una forma de almacenar un valor basado en su tipo de datos*
 
-* **[Gráficos de varias series en documentos de comunicaciones interactivas (vídeo)](./interactive-communications/multiseriescharts.md)**
-  *Trazar varias series en el mismo gráfico. Los gráficos de varias series se suelen utilizar en asociación con el tipo de gráfico de líneas, barras y columnas.*
+* **[Gráficos de varias series en documentos de comunicación interactiva(vídeo)](./interactive-communications/multiseriescharts.md)**
+  *Trazar más de una serie en el mismo gráfico. Los gráficos de varias series se utilizan normalmente en asociación con el tipo de gráfico de líneas, barras y columnas.*
 
-* **[Creación de modelos de flujo de trabajo reutilizables](./adaptive-forms/re-usable-aem-forms-workflow-models-article.md)**
+* **[Creando modelos de flujo de trabajo reutilizables](./adaptive-forms/re-usable-aem-forms-workflow-models-article.md)**
   *Crear modelos de flujo de trabajo no vinculados a un formulario específico*
 
 ## Selección de personal
@@ -37,11 +37,11 @@ Adobe Experience Manager AEM () proporciona una solución fácil de usar para cr
     </a>
     <div>
       <a href="./creating-your-first-adaptive-form/introduction-and-setup.md">
-    <strong>Creación de su primer formulario adaptable</strong>
+    <strong>Cree su primer formulario adaptable</strong>
     </a>
     </div>
     <p>
-    <em>Los formularios adaptables son formularios de nueva generación dinámicos y adaptables. Puede utilizar formularios adaptables para ofrecer experiencias personalizadas</em>
+    <em>Los formularios adaptables son formularios de nueva generación dinámicos y adaptables. Puede usar formularios adaptables para ofrecer experiencias personalizadas</em>
     <p>
   </td>
    <td>
@@ -50,11 +50,11 @@ Adobe Experience Manager AEM () proporciona una solución fácil de usar para cr
     </a>
     <div>
       <a href="./ic-print-channel-tutorial/introduction.md">
-    <strong>Creación de su primer documento de canal de impresión</strong>
+    <strong>Cree su primer documento de canal de impresión</strong>
     </a>
     </div>
     <p>
-    <em>Interactive Communications centraliza y administra la creación, el ensamblado y el envío de correspondencia segura, personalizada e interactiva, como correspondencia comercial, documentos, declaraciones, avisos de beneficios, correos de marketing, facturas y kits de bienvenida. </em>
+    <em>Interactive Communications centraliza y administra la creación, la combinación y la entrega de correspondencia segura, personalizada e interactiva, como correspondencia comercial, documentos, declaraciones, avisos de beneficios, correos de marketing, facturas y kits de bienvenida. </em>
     <p>
   </td>
   <td>
@@ -63,11 +63,11 @@ Adobe Experience Manager AEM () proporciona una solución fácil de usar para cr
     </a>
     <div>
       <a href="./adaptive-forms/form-data-model-service-as-step-in-workflow-video-use.md">
-    <strong>AEM Uso del modelo de datos de formulario en flujo de trabajo de</strong>
+    AEM <strong>Uso del modelo de datos de formulario en el flujo de trabajo de la</strong>
     </a>
     </div>
     <p>
-    <em>AEM Invocar el servicio del modelo de datos de formulario como paso en el flujo de trabajo de la</em>
+    AEM <em>Invocar el servicio del modelo de datos de formulario como un paso en el flujo de trabajo de la</em>
     <p>
   </td>
 </tr>
@@ -88,11 +88,11 @@ Adobe Experience Manager AEM () proporciona una solución fácil de usar para cr
     </a>
     <div>
       <a href="https://forms.enablementadobe.com/content/forms/af/registerfornewsletter.html">
-    <strong>Captcha de Google en formularios adaptables</strong>
+    <strong>Google Captcha en formulario adaptable</strong>
     </a>
     </div>
     <p>
-    <em> Distinguir entre el acceso humano y automatizado a los formularios</em>
+    <em> Distinguir entre acceso humano y acceso automatizado a formularios</em>
     <p>
   </td>
   <td>
@@ -105,7 +105,7 @@ Adobe Experience Manager AEM () proporciona una solución fácil de usar para cr
     </a>
     </div>
     <p>
-    <em>Previsualice los datos del formulario antes de enviarlo.</em>
+    <em>Obtener una vista previa de los datos del formulario antes de enviarlo.</em>
     </p>
   </td>
   <td>
@@ -118,7 +118,7 @@ Adobe Experience Manager AEM () proporciona una solución fácil de usar para cr
       </a>
     </div>
     <p>
-    <em>Muestre la imagen agregada al formulario.</em>
+    <em>Mostrar la imagen agregada al formulario.</em>
     <p>
   </td>
 </tr>
@@ -134,11 +134,11 @@ Adobe Experience Manager AEM () proporciona una solución fácil de usar para cr
     </a>
     <div>
       <a href="https://forms.enablementadobe.com/content/forms/af/rentalagreement.html">
-    <strong>Formulario de acuerdo de alquiler de muestra</strong>
+    <strong>Formulario de ejemplo de contrato de alquiler</strong>
     </a>
     </div>
     <p>
-    <em>Contrato de alquiler entre el inquilino y el propietario rellenado y firmado con AEM Forms y Acrobat Sign</em>
+    <em>El contrato de alquiler entre el inquilino y el propietario se completó y firmó con AEM Forms y Acrobat Sign</em>
     <p>
   </td>
   <td>
@@ -151,7 +151,7 @@ Adobe Experience Manager AEM () proporciona una solución fácil de usar para cr
     </a>
     </div>
     <p>
-    <em>Crear un NDA de forma dinámica y enviar para firmar mediante Acrobat Sign</em>
+    <em>Crear un acuerdo de confidencialidad de forma dinámica y enviar para su firma mediante Acrobat Sign</em>
     </p>
   </td>
   <td>
@@ -164,7 +164,7 @@ Adobe Experience Manager AEM () proporciona una solución fácil de usar para cr
       </a>
     </div>
     <p>
-    <em>Firma sencilla de varios documentos con Forms y Acrobat Sign</em>
+    <em>Firma fácilmente múltiples documentos usando Forms y Acrobat Sign</em>
     <p>
   </td>
 </tr>
@@ -175,7 +175,7 @@ Adobe Experience Manager AEM () proporciona una solución fácil de usar para cr
 
 ## Recursos adicionales
 
-* [Experience League AEM - Explorar la](https://experienceleague.adobe.com/?lang=es#recommended/solutions/experience-manager)
+* [Experience League AEM - Explorar el](https://experienceleague.adobe.com/?lang=es#recommended/solutions/experience-manager)
 * [Documentación de creación de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
 * [Documentación de desarrollo de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
 * [Documentación de administración de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html)

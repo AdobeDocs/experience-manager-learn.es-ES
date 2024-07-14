@@ -103,19 +103,19 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 
 AEM Para que esta capacidad funcione en el servidor de la
 
-* Descargue la [AssembleMultipleFiles.zip](assets/assemble-multiple-files.zip) a su sistema local.
-* Cargue e instale el paquete utilizando [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
-* Descargar[Paquete de servicios de documentos personalizados](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
-* Descargar [Desarrollo con paquete de usuario de servicio](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-* Implementación e inicio de los paquetes mediante [consola web felix](http://localhost:4502/system/console/bundles)
-* Dirija el explorador a [AssemblePdfs.html](http://localhost:4502/content/DocumentServices/AssemblePdfs.html)
+* Descargue [AssembleMultipleFiles.zip](assets/assemble-multiple-files.zip) en su sistema local.
+* Cargue e instale el paquete con el [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
+* Descargar [paquete de servicios de documentos personalizados](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
+* Descargar [paquete de desarrollo con usuario de servicio](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+* Implemente e inicie los paquetes mediante la [consola web felix](http://localhost:4502/system/console/bundles)
+* Dirija su explorador a [AssemblePdfs.html](http://localhost:4502/content/DocumentServices/AssemblePdfs.html)
 * Arrastre y suelte un par de archivos de archivos de PDF
 
 >[!NOTE]
 >
 >Asegúrese de que la instalación de AEM Forms haya finalizado. Todos los paquetes deben estar en estado activo.
 >
->Asegúrese de haber agregado las bibliotecas RSA y BouncyCastle delegadas de arranque como se menciona en este [Instalación de AEM Forms](https://helpx.adobe.com/aem-forms/6-3/installing-configuring-aem-forms-osgi.html)
+>Asegúrese de haber agregado las bibliotecas RSA y BouncyCastle delegadas de arranque como se menciona en esta [Instalación de AEM Forms](https://helpx.adobe.com/aem-forms/6-3/installing-configuring-aem-forms-osgi.html)
 >
 >**Advertencias para esta demostración**
 >

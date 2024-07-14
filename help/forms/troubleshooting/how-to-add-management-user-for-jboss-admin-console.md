@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Cómo añadir un usuario de administración para la Admin Console de JBoss
 
-*Este vídeo muestra los pasos para agregar un usuario de administración para Admin Console de JBoss.*
+*Este vídeo explica los pasos para agregar un usuario de administración para Admin Console de JBoss.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335484?quality=12&learn=on)

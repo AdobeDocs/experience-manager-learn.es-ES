@@ -25,9 +25,9 @@ Un fragmento es una parte reutilizable de un formulario. Por ejemplo, un fragmen
 
 
 
-Consulte la [documentación de plantilla de formulario adaptable](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=es) para obtener más información
+Consulte [documentación de plantilla de formulario adaptable](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=es) para obtener más información
 
-Si es necesario, puede descargar el [Spouse-details-fragment](assets/spouse-details-fragment.zip) AEM e importarlos a la red de mediante el [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
+AEM Si es necesario, puede descargar [Spouse-details-fragment](assets/spouse-details-fragment.zip) e importarlo a la lista de distribución mediante el [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp).
 
 ## Siguientes pasos
 

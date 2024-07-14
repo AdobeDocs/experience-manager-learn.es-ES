@@ -1,5 +1,5 @@
 ---
-title: Usar El Modelo De Datos De Formulario Para Publicar Datos Binarios
+title: Uso Del Modelo De Datos De Formulario Para Almacenar Datos Binarios De Post
 description: AEM Publicar datos binarios en DAM de la mediante el modelo de datos de formulario
 feature: Workflow
 version: 6.4,6.5
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ---
 
-# Usar El Modelo De Datos De Formulario Para Publicar Datos Binarios{#using-form-data-model-to-post-binary-data}
+# Uso Del Modelo De Datos De Formulario Para Almacenar Datos Binarios De Post{#using-form-data-model-to-post-binary-data}
 
 A partir de AEM Forms AEM 6.4, ahora podemos invocar el servicio de modelo de datos de formulario como paso en el flujo de trabajo de la. Este artículo le guiará por un ejemplo de caso de uso para publicar un documento de registro mediante el servicio de modelo de datos de formulario.
 
@@ -26,7 +26,7 @@ El caso de uso es el siguiente:
 1. El formulario adaptable está configurado para generar el documento de registro.
 1. AEM Al enviar estos formularios adaptables, se activa el flujo de trabajo de la, que utilizará el servicio de invocación del modelo de datos de formulario para almacenar en POST AEM el documento de registro en DAM.
 
-![después de hoy](assets/posttodamshot1.png)
+![hoy](assets/posttodamshot1.png)
 
 Pestaña Modelo de datos de formulario: propiedades
 
@@ -42,24 +42,24 @@ Entrada de servicio
 
 >[!NOTE]
 >
->Consejos para la resolución de problemas: si, por alguna razón, el documento DOR.pdf no se crea en DAM, restablezca la configuración de autenticación de la fuente de datos haciendo clic en [aquí](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2Fglobal%2Fsettings%2Fcloudconfigs%2Ffdm%2Fpostdortodam). AEM Esta es la configuración de autenticación de la, que de forma predeterminada es admin/admin.
+>Consejos para solucionar problemas: si por alguna razón el documento DOR.pdf no se ha creado en DAM, restablezca la configuración de autenticación de la fuente de datos haciendo clic [aquí](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2Fglobal%2Fsettings%2Fcloudconfigs%2Ffdm%2Fpostdortodam). AEM Esta es la configuración de autenticación de la, que de forma predeterminada es admin/admin.
 
 Para probar esta capacidad en su servidor, siga los pasos que se mencionan a continuación:
 
 1.[Implementar el paquete Develingwithserviceuser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-1. [Descargue e implemente el paquete setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar).Este paquete OSGI personalizado se utiliza para crear la propiedad de metadatos y establecer su valor a partir de los datos del formulario enviado.
+1. [Descargue e implemente el paquete setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Este paquete OSGI personalizado se usa para crear la propiedad de metadatos y establecer su valor a partir de los datos del formulario enviado.
 
-1. [Importar los recursos](assets/postdortodam.zip) AEM asociado con este artículo en el uso del administrador de paquetes. Obtendrá lo siguiente:
+1. AEM [Importe los recursos](assets/postdortodam.zip) asociados con este artículo a los recursos mediante el administrador de paquetes. Recibirá lo siguiente
 
    1. Modelo de flujo de trabajo
    1. AEM Formulario adaptable configurado para enviarse al flujo de trabajo de
    1. Fuente de datos configurada para utilizar el archivo PostToDam.JSON
-   1. Modelo de datos de formulario que utiliza la fuente de datos
+   1. Modelo de datos de formulario que utiliza el Source de datos
 
-1. Apunte su [para abrir el formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
+1. Dirija su [explorador para abrir el formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
 1. Rellene el formulario y envíelo.
-1. Compruebe la aplicación Recursos si se ha creado y almacenado el documento de registro.
+1. Compruebe la aplicación de Assets si se ha creado y almacenado el documento de registro.
 
 
-[Archivo Swagger](http://localhost:4502/conf/global/settings/cloudconfigs/fdm/postdortodam/jcr:content/swaggerFile) que se utiliza para crear la fuente de datos y que está disponible para su referencia
+[El archivo Swagger](http://localhost:4502/conf/global/settings/cloudconfigs/fdm/postdortodam/jcr:content/swaggerFile) utilizado para crear el origen de datos está disponible para su referencia

@@ -20,7 +20,7 @@ ht-degree: 14%
 
 Crearemos un formulario adaptable basado en la plantilla creada en la lección anterior y configuraremos la barra de herramientas con los botones adecuados.
 
-**Creación de su primer formulario adaptable**
+**Cree su primer formulario adaptable**
 
 >[!VIDEO](https://video.tv.adobe.com/v/22173?quality=12&learn=on)
 

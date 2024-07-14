@@ -27,7 +27,7 @@ Una vez enviado el formulario, es importante proporcionar comentarios al usuario
 Para implementar correctamente esta funcionalidad, se recomienda estar familiarizado con lo siguiente
 
 * Experiencia con Git
-* AEM Experiencia con Cloud Manager
+* Experiencia con AEM Cloud Manager
 * Maven (este artículo se ha probado con 3.8.6)
 * Instancia de autor local preparada para AEM Forms Cloud
 * Acceso a AEM Forms como entorno de Cloud Service

@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Modifique el código para pasar la dirección URL de la plantilla como uno de los parámetros de solicitud del POST.
 
-El código de la variable `DocumentGeneration.java` debe modificarse para pasar la dirección URL de la plantilla.
+Se debe modificar el código de `DocumentGeneration.java` para pasar la dirección URL de la plantilla.

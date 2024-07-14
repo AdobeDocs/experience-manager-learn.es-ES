@@ -20,9 +20,9 @@ ht-degree: 3%
 
 Puede rellenar previamente los campos de un formulario adaptable mediante los datos existentes. Cuando un usuario abre un formulario, los valores de esos campos ya han sido rellenados. Existen varias formas de rellenar previamente los campos de formulario adaptables. En este artículo, veremos cómo rellenar previamente el formulario adaptable mediante el servicio de relleno previo de AEM Forms.
 
-Para obtener más información sobre los distintos métodos para rellenar previamente formularios adaptables, [siga esta documentación](https://helpx.adobe.com/experience-manager/6-4/forms/using/prepopulate-adaptive-form-fields.html#AEMFormsprefillservice)
+Para obtener más información acerca de varios métodos para rellenar previamente formularios adaptables, [siga esta documentación](https://helpx.adobe.com/experience-manager/6-4/forms/using/prepopulate-adaptive-form-fields.html#AEMFormsprefillservice)
 
-Para rellenar previamente un formulario adaptable mediante el servicio de relleno previo, debe crear una clase que implemente el `com.adobe.forms.common.service.DataXMLProvider` interfaz. El método `getDataXMLForDataRef` tendrá la lógica para generar y devolver los datos que consumirá el formulario adaptable para rellenar previamente los campos. Con este método, puede recuperar los datos de cualquier origen y devolver la secuencia de entrada del documento de datos. El siguiente código de ejemplo recupera la información de perfil del usuario que ha iniciado sesión y construye un documento XML cuya secuencia de entrada devuelve para que la consuman los formularios adaptables.
+Para rellenar previamente un formulario adaptable mediante el servicio de relleno previo, debe crear una clase que implemente la interfaz `com.adobe.forms.common.service.DataXMLProvider`. El método `getDataXMLForDataRef` tendrá la lógica para generar y devolver los datos que consumirá el formulario adaptable para rellenar previamente los campos. Con este método, puede recuperar los datos de cualquier origen y devolver la secuencia de entrada del documento de datos. El siguiente código de ejemplo recupera la información de perfil del usuario que ha iniciado sesión y construye un documento XML cuya secuencia de entrada devuelve para que la consuman los formularios adaptables.
 
 En el siguiente fragmento de código tenemos una clase que implementa la interfaz DataXMLProvider. Obtenemos acceso al usuario que ha iniciado sesión y, a continuación, recuperamos la información de perfil del usuario que ha iniciado sesión. A continuación, creamos un documento XML con un elemento de nodo raíz denominado &quot;data&quot; y anexamos los elementos adecuados a este nodo de datos. Una vez construido el documento XML, se devuelve la secuencia de entrada del documento XML.
 
@@ -139,12 +139,12 @@ public class PrefillAdaptiveForm implements DataXMLProvider {
 
 Para probar esta capacidad en el servidor, realice lo siguiente
 
-* Asegúrese de que el usuario ha iniciado sesión [perfil del usuario](http://localhost:4502/security/users.html) se rellena la información. El ejemplo busca las propiedades FirstName, LastName y Email del usuario que ha iniciado sesión.
+* Asegúrese de completar la información del perfil del [usuario](http://localhost:4502/security/users.html) que inició sesión. El ejemplo busca las propiedades FirstName, LastName y Email del usuario que ha iniciado sesión.
 * [Descargue y extraiga el contenido del archivo zip en su ordenador](assets/prefillservice.zip)
-* Implemente el paquete prefill.core-1.0.0-SNAPSHOT con el [AEM consola web de](http://localhost:4502/system/console/bundles)
-* Importe el formulario adaptable mediante la opción Crear | Carga de archivos desde [Sección Formularios y documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* Asegúrese de que la [formulario](http://localhost:4502/editor.html/content/forms/af/prefill.html) está utilizando **&quot;Servicio de prerrellenado de AEM Forms personalizado&quot;** como servicio de relleno previo. Esto se puede comprobar desde las propiedades de configuración del **Contenedor del formulario** sección.
-* [Previsualización del formulario](http://localhost:4502/content/dam/formsanddocuments/prefill/jcr:content?wcmmode=disabled). Debería ver el formulario rellenado con los valores correctos.
+* AEM Implemente el paquete prefill.core-1.0.0-SNAPSHOT con la [consola web de la aplicación](http://localhost:4502/system/console/bundles)
+* Importe el formulario adaptable mediante la opción Crear | Cargar archivos desde la sección [FormsAndDocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Asegúrese de que el [formulario](http://localhost:4502/editor.html/content/forms/af/prefill.html) use **&quot;Servicio de prerrellenado de AEM Forms personalizado&quot;** como servicio de prerrellenado. Esto se puede comprobar desde las propiedades de configuración de la sección **Contenedor de formulario**.
+* [Vista previa del formulario](http://localhost:4502/content/dam/formsanddocuments/prefill/jcr:content?wcmmode=disabled). Debería ver el formulario rellenado con los valores correctos.
 
 >[!NOTE]
 >

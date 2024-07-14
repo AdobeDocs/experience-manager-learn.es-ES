@@ -18,7 +18,7 @@ ht-degree: 7%
 
 # Prácticas recomendadas
 
-Los formularios de Adobe Experience Manager (AEM) pueden ayudarle a transformar transacciones complejas en experiencias digitales simples y atractivas. En el siguiente documento se describen algunas prácticas recomendadas adicionales que deben seguirse al desarrollar Forms adaptable. Este documento está diseñado para utilizarse junto con [este documento](https://helpx.adobe.com/experience-manager/6-3/forms/using/adaptive-forms-best-practices.html#Overview)
+Los formularios de Adobe Experience Manager (AEM) pueden ayudarle a transformar transacciones complejas en experiencias digitales simples y atractivas. En el siguiente documento se describen algunas prácticas recomendadas adicionales que deben seguirse al desarrollar Forms adaptable. Este documento debe usarse junto con [este documento](https://helpx.adobe.com/experience-manager/6-3/forms/using/adaptive-forms-best-practices.html#Overview)
 
 ## Convenciones de nomenclatura
 
@@ -32,11 +32,11 @@ Los formularios de Adobe Experience Manager (AEM) pueden ayudarle a transformar 
    * Los nombres pueden contener letras, dígitos, guiones bajos y signos de dólar.
    * Los nombres deben comenzar por una letra
    * Los nombres distinguen entre mayúsculas y minúsculas
-   * Las palabras reservadas (como las palabras clave de JavaScript) no se pueden usar como nombres. Tenga cuidado con otras palabras reservadas específicas de AF, como &quot;panel&quot; o &quot;nombre&quot;.
+   * Las palabras reservadas (como las palabras clave de JavaScript) no se pueden usar como nombres. Tenga cuidado con otras palabras reservadas específicas de AF, como   como &quot;panel&quot;,&quot;nombre&quot;.
    * No incluya guiones &quot;-&quot; en sus nombres
-* **Desarrollo de Forms**
-   * Los fragmentos de formulario deben tenerse en cuenta al desarrollar formularios grandes. Habilitar la carga diferida de fragmentos de formulario para tiempos de carga más rápidos
-   * **DataModel**
+* **Desarrollando Forms**
+   * Los fragmentos de formulario deben tenerse en cuenta al desarrollar formularios grandes. Habilitar la carga diferida de fragmentos de formulario para una carga más rápida   tiempos
+   * **Modelo de datos**
       * Se recomienda asociar el formulario adaptable con el modelo de datos adecuado
 
    * **Eventos de objeto**

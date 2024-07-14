@@ -19,7 +19,7 @@ ht-degree: 2%
 
 # AEM Implementaciones de componentes web sin encabezado
 
-AEM Sin encabezado [Componente web](https://developer.mozilla.org/en-US/docs/Web/Web_Components)AEM Las implementaciones de /JS son aplicaciones JavaScript puras que se ejecutan en un explorador web, que consumen contenido e interactúan con él de manera sin encabezado, de manera que se puede ejecutar sin encabezado. Las implementaciones de componentes web/JS difieren de [SPA implementaciones de](./spa.md) SPA AEM en el sentido de que no utilizan un marco de trabajo de robusto y se espera que estén incrustados en el contexto de cualquier sitio web, entreguen o surjan contenidos de la red de manera que puedan ser mostrados por los usuarios.
+AEM Las implementaciones de [Web Component](https://developer.mozilla.org/en-US/docs/Web/Web_Components)/JS sin encabezado son aplicaciones de JavaScript AEM puras que se ejecutan en un explorador web y que consumen contenido e interactúan con él de manera sin encabezado, de manera que no tienen encabezado. SPA SPA AEM Las implementaciones de componentes web/JS difieren de las [implementaciones de](./spa.md) en que no utilizan un marco de trabajo sólido y se espera que estén incrustadas en el contexto de cualquier sitio web, que entreguen y que surjan contenidos de las páginas de la página de la que se vaya a realizar el envío.
 
 
 ## Configuraciones de implementación
@@ -30,7 +30,7 @@ La siguiente configuración de implementación debe estar implementada para impl
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [Filtros de Dispatcher](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | [Uso compartido de recursos de origen cruzado (CORS)](./configurations/cors.md) | ✔ | ✔ | ✔ |
-| [AEM anfitriones de](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
+| AEM [hosts de la](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
 
 ## Ejemplo de componente web
 
@@ -50,7 +50,7 @@ El Adobe proporciona un ejemplo de componente web.
            <div class="card-content is-padded-small">
                <div class="content">
                    <p class="headline is-size-6 has-text-weight-bold"><a href="../example-apps/web-component.md" title="Componente web">Componente web</a></p>
-                   <p class="is-size-6">AEM Componente web de ejemplo, escrito en JavaScript puro, que consume contenido de las API de GraphQL sin encabezado, que se utilizan para la creación de contenido sin encabezado.</p>
+                   <p class="is-size-6">Componente web de ejemplo, escrito en JavaScript AEM puro, que consume contenido de las API de GraphQL sin encabezado de la red de aplicaciones de la interfaz de usuario de.</p>
                    <a href="../example-apps/web-component.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                        <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ver ejemplo</span>
                    </a>

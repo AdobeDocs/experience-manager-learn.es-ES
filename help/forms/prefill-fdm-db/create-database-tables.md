@@ -19,18 +19,18 @@ ht-degree: 1%
 
 # Crear tablas de base de datos
 
-El modelo de datos de formulario se puede basar en fuentes RDBMS, RESTfull, SOAP o OData. El objetivo de este curso es precumplimentar el formulario adaptable mediante el modelo de datos de formulario respaldado por la fuente de datos RDBMS. Para el propósito de este tutorial se utilizó la base de datos MYSQL. Hemos creado las dos tablas siguientes para mostrar el caso de uso
+SOAP El modelo de datos de formulario se puede basar en fuentes RDBMS, RESTfull, o OData. El objetivo de este curso es precumplimentar el formulario adaptable mediante el modelo de datos de formulario respaldado por la fuente de datos RDBMS. Para el propósito de este tutorial se utilizó la base de datos MYSQL. Hemos creado las dos tablas siguientes para mostrar el caso de uso
 
-* **nuevo hilo** tabla: esta tabla almacena la nueva información
+* Tabla **newhire**: esta tabla almacena la información nueva
 
-  ![nuevo hilo](assets/newhire-table.png)
+  ![nuevo](assets/newhire-table.png)
 
 
-* **beneficiarios** tabla: esto almacena nuevos beneficiarios de hardware
+* Tabla **beneficiarios**: esto almacena nuevos beneficiarios
 
   ![beneficiarios](assets/beneficiaries-table.png)
 
-Puede importar el [archivo sql](assets/db-schema.sql) uso de MySQL Workbench para crear dos tablas con algunos datos de ejemplo.
+Puede importar el [archivo sql](assets/db-schema.sql) mediante MySQL Workbench para crear tablas con algunos datos de ejemplo.
 
 ## Siguientes pasos
 

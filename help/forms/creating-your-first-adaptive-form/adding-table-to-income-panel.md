@@ -48,4 +48,4 @@ Agregaremos una tabla al panel Ingresos. Configure las filas de la tabla y utili
 
 ## Siguientes pasos
 
-[Configuración del panel Recursos](./configuring-assets-panel.md)
+[Configuración del panel Assets](./configuring-assets-panel.md)

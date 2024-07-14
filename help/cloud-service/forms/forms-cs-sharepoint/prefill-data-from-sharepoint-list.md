@@ -23,10 +23,10 @@ AEM En la versión anterior del formulario de datos de formulario (6.5), se ten�
 
 En este artículo se explican los pasos necesarios para rellenar previamente un formulario adaptable con datos recuperados de una lista de SharePoint mediante el servicio de prerrellenado del modelo de datos de formulario.
 
-Este artículo presupone que tiene [el formulario adaptable se ha configurado correctamente para enviar datos a la lista de SharePoint.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html?lang=en#connect-af-sharepoint-list)
+Este artículo supone que ha [configurado correctamente el formulario adaptable para enviar datos a la lista de SharePoint.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html?lang=en#connect-af-sharepoint-list)
 
 Los siguientes son los datos de la lista de SharePoint
-![sharepoint-list](assets/list-data.png)
+![lista de sharepoint](assets/list-data.png)
 
 Para rellenar previamente un formulario adaptable con los datos asociados a un GUID concreto, se deben realizar los siguientes pasos
 

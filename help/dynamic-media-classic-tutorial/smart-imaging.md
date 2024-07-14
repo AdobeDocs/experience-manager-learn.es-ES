@@ -33,7 +33,7 @@ Dado que las imágenes constituyen la mayor parte del tiempo de carga de una pá
 
 Como se ha indicado anteriormente, Imágenes inteligentes aprovecha las capacidades de IA de Adobe Sensei y funciona con los ajustes preestablecidos de imagen existentes para convertir automáticamente imágenes a formatos de imagen óptimos de próxima generación, como WebP, a la vez que mantiene la fidelidad visual.
 
-Más información sobre [Funcionamiento de las imágenes inteligentes](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/imaging-faq.html#how-does-smart-imaging-work), incluidos detalles como los formatos de imagen admitidos (y qué sucede si no utiliza esos formatos) y su impacto en los ajustes preestablecidos de imagen existentes que se están utilizando.
+Obtenga más información sobre [Funcionamiento de las imágenes inteligentes](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/imaging-faq.html#how-does-smart-imaging-work), incluidos detalles como los formatos de imagen admitidos (y qué sucede si no utiliza esos formatos) y su impacto en los ajustes preestablecidos de imagen existentes que se están utilizando.
 
 ## Impactos de las imágenes inteligentes
 
@@ -51,8 +51,8 @@ La activación de imágenes inteligentes comienza con el envío al servicio de a
 
 Una vez que haya habilitado Imágenes inteligentes, querrá comprobar que funciona según lo esperado.
 
-Probablemente tenga más preguntas sobre Imágenes inteligentes. Hemos compilado una lista de preguntas frecuentes (FAQ) con respuestas. Lea el [Preguntas frecuentes](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/imaging-faq.html?lang=es).
+Probablemente tenga más preguntas sobre Imágenes inteligentes. Hemos compilado una lista de preguntas frecuentes (FAQ) con respuestas. Lea las [preguntas frecuentes](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/imaging-faq.html?lang=es).
 
 ## Recursos adicionales
 
-Vea la [Dynamic Media Classic Optimización del rendimiento de la página Generador de habilidades](https://seminars.adobeconnect.com/pzc1gw0cihpv) Seminario web bajo demanda para obtener más información sobre imágenes inteligentes.
+Vea el seminario web [Generador de habilidades para optimizar el rendimiento de la página de Dynamic Media Classic](https://seminars.adobeconnect.com/pzc1gw0cihpv) bajo demanda para obtener más información sobre imágenes inteligentes.

@@ -39,11 +39,11 @@ Hay varios elementos que debe monitorizar para garantizar un funcionamiento sin 
 
 ### Mantenimiento habitual
 
-#### [mantenimiento de índice](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en)
+#### [mantenimiento del índice](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en)
 
 Los índices permiten que las consultas se ejecuten lo más rápido posible, lo que libera recursos para otras operaciones. Asegúrese de que los índices estén en forma de extremo superior. AEM AEM cancela las consultas que atraviesan en lugar de utilizar un índice para evitar que una consulta incorrecta afecte al rendimiento general de la.
 
-#### [Compactación Tar/Limpieza de revisión](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=en)
+#### [Compactación de tar/ Limpieza de revisión](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=en)
 
 Cada actualización del repositorio crea una nueva revisión de contenido. Como resultado, con cada actualización el tamaño del repositorio aumenta. Para evitar el crecimiento incontrolado del repositorio, es necesario limpiar las revisiones antiguas para liberar recursos de disco.
 
@@ -55,7 +55,7 @@ Purgue los binarios de Lucene y reduzca el requisito de tamaño del almacén de 
 
 AEM Cuando se elimina un recurso en, la referencia al registro del almacén de datos subyacente se puede eliminar de la jerarquía de nodos, pero el registro del almacén de datos en sí permanece. Este registro de almacén de datos al que no se hace referencia pasa a ser &quot;basura&quot; y no es necesario conservarlo. En los casos en los que existen una serie de recursos sin referencia, es beneficioso deshacerse de ellos para, conservar el espacio, optimizar la copia de seguridad y el rendimiento de mantenimiento del sistema de archivos.
 
-#### [Depuración de flujo de trabajo](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html)
+#### [Purga del flujo de trabajo](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html)
 
 Al minimizar el número de instancias de flujo de trabajo, aumenta el rendimiento del motor de flujo de trabajo, por lo que puede depurar con regularidad las instancias de flujo de trabajo completadas o en ejecución desde el repositorio.
 
@@ -73,9 +73,9 @@ Supervise el espacio en disco para asegurarse de que tiene suficiente espacio pa
 
 ## Desarrollador
 
-Intente no utilizar componentes personalizados: use [componentes principales](https://www.aemcomponents.dev/). El objetivo debe ser utilizar los componentes principales el 80-90 % de las veces y los componentes personalizados solo con moderación. Esto a menudo requiere una nueva forma de ver los componentes de una página: debe darse cuenta de que un desarrollador front-end que utiliza CSS puede rediseñar fácilmente los componentes. Además, tenga en cuenta que estos componentes principales pueden incrustarse entre sí para lograr resultados bastante complejos. ¡Sé creativo!
+Intente no usar componentes personalizados - use [componentes principales](https://www.aemcomponents.dev/). El objetivo debe ser utilizar los componentes principales el 80-90 % de las veces y los componentes personalizados solo con moderación. Esto a menudo requiere una nueva forma de ver los componentes de una página: debe darse cuenta de que un desarrollador front-end que utiliza CSS puede rediseñar fácilmente los componentes. Además, tenga en cuenta que estos componentes principales pueden incrustarse entre sí para lograr resultados bastante complejos. ¡Sé creativo!
 
-### [Sistemas de estilos](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=en)
+### [Sistemas de estilo](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=en)
 
 Los sistemas de estilos permiten que los componentes principales, e incluso los componentes personalizados, cambien de aspecto a discreción de los autores para crear componentes de aspecto completamente nuevos. Estos cambios de estilo generalmente solo implican a un diseñador front-end y a un autor experto (a menudo denominado &quot;superautor&quot;)
 
@@ -95,8 +95,8 @@ Piense con anticipación y vea lo que podría reutilizarse. ¿Un pie de página?
 
 ## General
 
-AEM Manténgase al día de los cambios a través del aprendizaje continuo, no se quede atascado en el pasado. Uso [Experience League](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=en) y [Adobe Digital Learning Services (ADLS)](https://learning.adobe.com/) para perfeccionar sus habilidades.
+AEM Manténgase al día de los cambios a través del aprendizaje continuo, no se quede atascado en el pasado. Use [Experience League](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=en) y [Servicios de aprendizaje digital de Adobe (ADLS)](https://learning.adobe.com/) para perfeccionar sus habilidades.
 
 ## Conclusión
 
-AEM Puede ser un sistema grande, y se necesitan muchos tipos de personas para hacerlo &quot;cantar&quot;. Desde administradores hasta desarrolladores (tanto desarrolladores de Java front-end como hardcore) y autores: ¡hay algo para todos! AEM Y si no tienes ganas de manejar el día a día de la Administración, siempre hay AMS y as a Cloud Service de la.
+AEM Puede ser un sistema grande, y se necesitan muchos tipos de personas para hacerlo &quot;cantar&quot;. Desde administradores hasta desarrolladores (tanto desarrolladores de Java front-end como hardcore) y autores: ¡hay algo para todos! Y si no tiene ganas de gestionar el día a día de la Administración, siempre están AMS y AEM as a Cloud Service.

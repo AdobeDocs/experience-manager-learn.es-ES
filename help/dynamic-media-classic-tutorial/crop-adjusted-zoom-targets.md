@@ -40,10 +40,10 @@ Dynamic Media Classic tiene varias herramientas de edición de imágenes disponi
 
 ### Uso de la herramienta Recortar
 
-Puede acceder a la herramienta Recortar en Dynamic Media Classic desde la página Detalles de un recurso o haciendo clic en **Editar** botón. Puede utilizar la herramienta para recortar de dos maneras:
+Puede acceder a la herramienta Recortar en Dynamic Media Classic desde la página Detalles de un recurso o haciendo clic en el botón **Editar**. Puede utilizar la herramienta para recortar de dos maneras:
 
-- Modo de recorte predeterminado en el que se arrastran los controladores de la ventana de recorte o se escriben los valores en el cuadro Tamaño. Obtenga información sobre cómo [Recorte manual](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html#select-an-area-to-crop).
-- Recortar. Utilice esta opción para eliminar espacios en blanco adicionales alrededor de la imagen calculando el número de píxeles que no coinciden con la imagen. Obtenga información sobre cómo [Recortar por recorte](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html#crop-to-remove-white-space-around-an-image).
+- Modo de recorte predeterminado en el que se arrastran los controladores de la ventana de recorte o se escriben los valores en el cuadro Tamaño. Aprenda a [Recortar](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html#select-an-area-to-crop) manualmente.
+- Recortar. Utilice esta opción para eliminar espacios en blanco adicionales alrededor de la imagen calculando el número de píxeles que no coinciden con la imagen. Aprenda a [recortar](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html#crop-to-remove-white-space-around-an-image).
 
 ### _Recorte manual_
 
@@ -63,19 +63,19 @@ La imagen de la derecha se hace mucho más prominente al eliminar el espacio adi
 
 >[!NOTE]
 >
->El recorte no crea transparencia en torno a la imagen. Para ello, deberá incrustar un trazado de recorte en la imagen y utilizar el **Crear máscara a partir de ruta de recorte** opción de carga.
+>El recorte no crea transparencia en torno a la imagen. Para ello, necesitaría incrustar una ruta de recorte en la imagen y usar la opción de carga **Crear máscara a partir de la ruta del clip**.
 >
->Además, para restaurar una imagen a su estado original después de recortarla cuando haya utilizado el **Guardar** , muestre la imagen en la pantalla del Editor de recorte y seleccione la opción **Restablecer** botón.
+>Además, para restaurar una imagen a su estado original después de haberla recortado cuando haya utilizado la opción **Guardar**, muestre la imagen en la pantalla del Editor de recortes y seleccione el botón **Restablecer**.
 
 ### _Recortar al cargar_
 
-Como se mencionó anteriormente, también puede optar por recortar las imágenes a medida que las carga. Para utilizar recortar recorte al cargar, haga clic en **Opciones de trabajo** y en Opciones de recorte, elija **Recortar**.
+Como se mencionó anteriormente, también puede optar por recortar las imágenes a medida que las carga. Para usar recortar recorte al cargar, haz clic en el botón **Opciones de trabajo** y, en Opciones de recorte, elige **Recortar**.
 
 Dynamic Media Classic recordará esta opción en la siguiente carga. Aunque es posible que desee recortar imágenes para esta carga, es posible que no desee recortarlas para cada carga. Otra opción sería establecer un trabajo especial de carga programado por FTP y colocar las opciones de recorte allí. De ese modo, solo ejecutaría el trabajo cuando necesitara recortar las imágenes.
 
 >[!IMPORTANT]
 >
->Si establece un recorte para la carga, Dynamic Media Classic colocará una cookie para recordar esa configuración la próxima vez. Haga clic en el vínculo **Restablecer valores predeterminados de la empresa** antes de la siguiente carga para borrar las opciones de recorte restantes en la última carga; de lo contrario, podría recortar accidentalmente el siguiente lote de imágenes.
+>Si establece un recorte para la carga, Dynamic Media Classic colocará una cookie para recordar esa configuración la próxima vez. Como práctica recomendada, haga clic en el botón **Restablecer valores predeterminados de la compañía** antes de la siguiente carga para borrar las opciones de recorte que queden de la última carga; de lo contrario, podría recortar accidentalmente el siguiente lote de imágenes.
 
 ### Recorte por dirección URL
 
@@ -90,7 +90,7 @@ _Modificadores de comandos de recorte en la parte inferior del Editor de recorte
 
 Dado que el tamaño debe calcularse por imagen cuando se utiliza el recorte mediante recorte, no se puede automatizar mediante la dirección URL. El recorte de recorte solo se puede ejecutar al cargar o al aplicarlo de imagen en imagen.
 
-### _Recorte en el ajuste preestablecido de imagen_
+### _Recortar en el ajuste preestablecido de imagen_
 
 Los ajustes preestablecidos de imagen tienen un campo en el que puede añadir comandos de servicio de imágenes adicionales. Para añadir el mismo recorte que se ha indicado arriba al ajuste preestablecido de imagen, edite el ajuste preestablecido, pegue o escriba los valores en el campo Modificadores de URL y, a continuación, guarde y publique.
 
@@ -101,9 +101,9 @@ El recorte ahora formará parte de ese ajuste preestablecido de imagen y se apli
 
 ## Imágenes ajustadas
 
-Al utilizar la herramienta Recortar, tiene la opción de **Guardar como vista adicional del Principal**. Cuando se guarda, se crea un nuevo tipo de recurso de Dynamic Media Classic: una imagen ajustada. Una imagen ajustada, también denominada derivada, es una imagen virtual. En realidad no es una imagen en absoluto; es una referencia de base de datos (como un alias o un acceso directo) a la imagen maestra física.
+Al usar la herramienta Recortar, tiene la opción de **Guardar como vista adicional del patrón**. Cuando se guarda, se crea un nuevo tipo de recurso de Dynamic Media Classic: una imagen ajustada. Una imagen ajustada, también denominada derivada, es una imagen virtual. En realidad no es una imagen en absoluto; es una referencia de base de datos (como un alias o un acceso directo) a la imagen maestra física.
 
-### Por favor, levántese la imagen real`?`
+### ¿La imagen real se pondrá de pie?`?`
 
 ¿Puedes saber cuál es el maestro y cuál es la imagen ajustada?
 
@@ -117,14 +117,14 @@ Una imagen ajustada no utiliza espacio en disco, ya que solo existe como element
 
 Normalmente, las imágenes ajustadas se crean con la herramienta Recortar; sin embargo, también se pueden crear con otros editores de imágenes: las herramientas Ajustar y Enfocar.
 
-Las imágenes ajustadas requieren un ID de recurso único. Cuando se publican (debe hacerlo como cualquier otro recurso), actúan como cualquier otra imagen y su ID de recurso llama a estas imágenes en una dirección URL. En la página Detalle, puede ver las imágenes ajustadas asociadas a una imagen principal en la **Creación y derivados** pestaña.
+Las imágenes ajustadas requieren un ID de recurso único. Cuando se publican (debe hacerlo como cualquier otro recurso), actúan como cualquier otra imagen y su ID de recurso llama a estas imágenes en una dirección URL. En la página Detalle, puede ver las imágenes ajustadas asociadas con una imagen principal en la pestaña **Creación y derivados**.
 
 ![imagen](assets/crop-adjusted-zoom-targets/derivatives.jpg)
 _Vistas ajustadas para la imagen principal ASIAN_BR_MAIN_
 
 ## Destinos de zoom
 
-Los destinos de zoom también se encuentran en **Editar** menú y **Detalles** página de una imagen. Permiten establecer &quot;puntos interactivos&quot; para resaltar características específicas de comercialización de una imagen de zoom. En lugar de crear imágenes independientes recortando un patrón grande, el visor de zoom puede mostrar los detalles encima de la imagen, junto con una etiqueta corta que usted cree.
+Los destinos de zoom también se encuentran en el menú **Editar** y en la página **Detalles** de una imagen. Permiten establecer &quot;puntos interactivos&quot; para resaltar características específicas de comercialización de una imagen de zoom. En lugar de crear imágenes independientes recortando un patrón grande, el visor de zoom puede mostrar los detalles encima de la imagen, junto con una etiqueta corta que usted cree.
 
 ![imagen](assets/crop-adjusted-zoom-targets/arm-with-watch.jpg)
 
@@ -134,7 +134,7 @@ El proceso es muy sencillo: haga clic en la función, asígnele un nombre descri
 
 Otro factor a la hora de decidir si utilizar destinos de zoom es la elección del visor. No todos los tipos de visualizador pueden mostrar Destinos de zoom (por ejemplo, el visualizador de salida flotante no los admite).
 
-Obtenga información sobre cómo [Crear destinos de zoom](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/zoom/creating-zoom-targets-guided-zoom.html#creating-and-editing-zoom-targets).
+Aprenda a [Crear destinos de zoom](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/zoom/creating-zoom-targets-guided-zoom.html#creating-and-editing-zoom-targets).
 
 ![imagen](assets/crop-adjusted-zoom-targets/zoom-targets.jpg)
 
@@ -142,15 +142,15 @@ Obtenga información sobre cómo [Crear destinos de zoom](https://experienceleag
 
 Este es el flujo de trabajo para crear destinos en Dynamic Media Classic.
 
-1. Navegue hasta la imagen y haga clic en **Editar** y elija **Destinos de zoom**.
+1. Examine su imagen, haga clic en el botón **Editar** y elija **Destinos de zoom**.
 2. Se cargará el editor de destinos de zoom. Verá la imagen en el centro, algunos botones en la parte superior y un panel de destino vacío a la derecha. En la parte inferior izquierda, verá un ajuste preestablecido de visualizador seleccionado. El valor predeterminado es &quot;Zoom1 guiado&quot;.
 3. Mueva el cuadro rojo con el ratón y haga clic en para crear un nuevo destino.
 
    - El cuadro rojo es el área de destino. Cuando un usuario hace clic en ese destino, se acerca al área dentro del cuadro.
-   - El tamaño de destino se determina por el tamaño de vista dentro del ajuste preestablecido de visor. Determina el tamaño de la imagen de zoom principal. Consulte _Configuración del tamaño de la vista_, más abajo.
+   - El tamaño de destino se determina por el tamaño de vista dentro del ajuste preestablecido de visor. Determina el tamaño de la imagen de zoom principal. Consulte _Configuración del tamaño de la vista_, a continuación.
 
 4. Verá que el objetivo que acaba de crear se vuelve azul y, a la derecha, verá una versión en miniatura de ese destino, así como el nombre predeterminado &quot;target-0&quot;.
-5. Para cambiar el nombre del destino, haga clic en su miniatura y escriba un nuevo **Nombre** y haga clic en **Entrar** o **Ficha** : si hace clic fuera, no se guardará su nombre.
+5. Para cambiar el nombre del destino, haz clic en su miniatura, escribe un nuevo **Nombre** y haz clic en **Introducir** o **Tabulación**; si simplemente haces clic fuera, tu nombre no se guardará.
 6. Mientras se selecciona el destino, el cuadro tendrá líneas discontinuas verdes alrededor y puede cambiarlo de tamaño y moverlo. Arrastre las esquinas para cambiar de tamaño o el cuadro de destino para moverlo.
 
    - Esto cargará la imagen dentro del visor de zoom personalizado predeterminado. Asegúrese de que el ajuste preestablecido del visor admite destinos de zoom: en general, todos los ajustes preestablecidos estándar que tienen la palabra &quot;-Guided&quot; se diseñaron para su uso con destinos de zoom. Para usar los destinos, pase el ratón sobre la miniatura de destino (o el icono de zona interactiva) para ver la etiqueta y haga clic en ella para ver cómo el visualizador se acerca a esa función.
@@ -158,9 +158,9 @@ Este es el flujo de trabajo para crear destinos en Dynamic Media Classic.
 
      ![imagen](assets/crop-adjusted-zoom-targets/zoom-target-green-box.jpg)
 
-7. Además, si necesita eliminar un destino, selecciónelo haciendo clic en su miniatura y presione la tecla **Eliminar destino** o pulse la tecla DELETE del teclado.
+7. Además, si necesitas quitar un destino, selecciónalo haciendo clic en su miniatura y presiona el botón **Eliminar destino** o presiona la tecla DELETE del teclado.
 8. Siga haciendo clic en para añadir nuevos destinos, cambiar el nombre o el tamaño después de añadir.
-9. Cuando haya terminado, haga clic en **Guardar** y luego **Previsualizar**.
+9. Cuando termine, haga clic en el botón **Guardar** y, a continuación, **Vista previa**.
 
 ### Configuración del tamaño de la vista en el ajuste preestablecido del visor de zoom
 
@@ -180,7 +180,7 @@ Se puede ver que el ajuste preestablecido incorporado tiene un tamaño de 900 x 
 
 Para establecer el tamaño de la vista, cree o edite un ajuste preestablecido de visor que admita destinos de zoom.
 
-1. En el ajuste preestablecido del visor, vaya a **Configuración de zoom** opción.
+1. En el ajuste preestablecido del visor, vaya a la opción **Configuración de zoom**.
 2. Defina un Ancho y un Alto.
 3. Guarde el ajuste preestablecido y cierre. Si desea utilizar ese ajuste preestablecido en el sitio activo, también deberá publicarlo más adelante.
 4. Vaya a la herramienta Destino de zoom y seleccione el ajuste preestablecido que ha editado en la parte inferior izquierda. Verá inmediatamente el nuevo tamaño de vista reflejado en sus destinos.

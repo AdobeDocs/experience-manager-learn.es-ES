@@ -30,16 +30,20 @@ Para corregir el error anterior, haga lo siguiente
 ## Cambio del tiempo de espera de aries
 
 * AEM Detener servidor
-* Cree una carpeta llamada **instalar** AEM en la carpeta crx-quickstart de la instalación de la
-* Cree un archivo llamado **org.apache.aries.transaction.config** con el siguiente contenido aries.transaction.timeout=&quot;1200&quot; en la carpeta de instalación. Puede cambiar el valor de tiempo de espera según sus necesidades. El valor de tiempo de espera es en segundos
+* AEM Cree una carpeta llamada **install** en la carpeta crx-quickstart de su instalación de la instalación de la aplicación de instalación de la aplicación de instalación de la aplicación
+* Cree un archivo llamado **org.apache.aries.transaction.config** con el siguiente contenido
+aries.transaction.timeout=&quot;1200&quot;
+en la carpeta de instalación. Puede cambiar el valor de tiempo de espera según sus necesidades. El valor de tiempo de espera es en segundos
 
 >[!NOTE]
-> Una vez creada la configuración org.apache.aries.transaction, puede editar los valores de tiempo de espera de transacción desde el [configMgr](http://localhost:4502/system/console/configMgr) en lugar de editar el archivo
+> Una vez que haya creado la configuración org.apache.aries.transaction, podrá editar los valores de tiempo de espera de la transacción desde [configMgr](http://localhost:4502/system/console/configMgr) en lugar de editar el archivo
 
 
 ## Cambiar la configuración del proveedor Jacorb ORB
 
-* [Abra el Configuration Manager de OSGi](http://localhost:4502/system/console/configMgr)
-* Buscar por **Jacorb ORB Provider**
-* Agregue la siguiente entrada jacorb.connection.client.pending_reply_timeout=600000 La configuración anterior establece el tiempo de espera de respuesta pendiente (también conocido como tiempo de espera del cliente CORBA) en 600 segundos.
+* [Abrir el Configuration Manager de OSGi](http://localhost:4502/system/console/configMgr)
+* Busque **Jacorb ORB Provider**
+* Añadir la siguiente entrada
+jacorb.connection.client.pending_reply_timeout=600000
+La configuración anterior establece el tiempo de espera de respuesta pendiente (también conocido como tiempo de espera del cliente CORBA) en 600 segundos.
 * Guarde los cambios

@@ -30,9 +30,9 @@ AEM Sites proporciona varias opciones para publicar y cancelar la publicación d
 AEM Sites proporciona varios métodos para publicar y cancelar la publicación de contenido, en función del flujo de trabajo del autor.
 
 * Publicar la página actual desde el Editor de páginas de AEM Sites
-   * Publicar la página actual y permite la selección opcional de referencias
+   * Publish abre la página actual y permite la selección opcional de referencias
    * Cancelar la publicación de la página actual
-* Publicación rápida desde el administrador de AEM Sites
+* Quick Publish desde el administrador de AEM Sites
    * Publicación con un clic de las páginas seleccionadas y publicación automática de todas las referencias sin publicar
 * Administrar publicación del administrador de AEM Sites
    * Sólida consola para una administración detallada del contenido publicado por lotes y cancelado la publicación.

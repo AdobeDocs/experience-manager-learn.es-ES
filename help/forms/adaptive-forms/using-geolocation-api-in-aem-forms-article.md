@@ -22,7 +22,7 @@ En este artículo, analizaremos el uso de la API de geolocalización de Google p
 
 Se han seguido los siguientes pasos para utilizar la API de geolocalización en Forms adaptable.
 
-1. [Obtener clave API](https://developers.google.com/maps/documentation/javascript/get-api-key) de Google para utilizar la plataforma Google Maps. Puede obtener una clave de prueba con una validez de 1 año.
+1. [Obtener clave API](https://developers.google.com/maps/documentation/javascript/get-api-key) de Google para usar la plataforma Google Maps. Puede obtener una clave de prueba con una validez de 1 año.
 
 1. El fragmento de formulario adaptable se creó con campos para contener la dirección actual
 
@@ -94,13 +94,13 @@ El JSON devuelto por la API se analiza a continuación para establecer los campo
 Para poner esta capacidad en su servidor, siga los siguientes pasos
 
 * Instale e inicie el servidor de AEM Forms.
-> Esta capacidad se ha probado en AEM Forms 6.3 y versiones posteriores
-* [Obtener clave de API de Google](https://developers.google.com/maps/documentation/javascript/get-api-key).
-* [AEM Importe los recursos relacionados con este artículo a la página de.](assets/geolocationapi.zip)
-* [Abra el fragmento del formulario adaptable en el modo Edición.](http://localhost:4502/editor.html/content/forms/af/currentaddressfragment.html)
+> Esta capacidad se probó en AEM Forms 6.3 y versiones posteriores
+* [Obtener clave API de Google](https://developers.google.com/maps/documentation/javascript/get-api-key).
+* AEM [Importe los recursos relacionados con este artículo en el sitio de trabajo de la cuenta de usuario de la cuenta de usuario de la cuenta de usuario](assets/geolocationapi.zip)
+* [Abrir el fragmento de formulario adaptable en modo de edición.](http://localhost:4502/editor.html/content/forms/af/currentaddressfragment.html)
 * Abra el editor de reglas para el componente Opción de imagen.
-* Reemplace el &lt;your_api_key> con la clave de API de Google.
+* Reemplace la &lt;your_api_key> por la clave de API de Google.
 * Guarde los cambios.
-* [Previsualización del formulario](http://localhost:4502/content/dam/formsanddocuments/currentaddressfragment/jcr:content?wcmmode=disabled).
+* [Vista previa del formulario](http://localhost:4502/content/dam/formsanddocuments/currentaddressfragment/jcr:content?wcmmode=disabled).
 * Haga clic en el icono &quot;geolocalización&quot;.
 * El formulario debe rellenarse con la ubicación actual.

@@ -27,22 +27,22 @@ AEM Descubra cómo se puede utilizar el servicio de importación masiva de as a 
 
 ## Uso del servicio de importación por lotes
 
-![Ciclo de vida del servicio de importación masiva](../assets/bulk-import-service.png)
+![Ciclo de vida del servicio de importación en lotes](../assets/bulk-import-service.png)
 
-El servicio de importación por lotes se utiliza para transferir archivos almacenados en Azure Blob Storage o en Amazon AEM S3 Storage a los archivos as a Cloud Service como recursos de.
+El servicio de importación por lotes se utiliza para transferir archivos almacenados en Azure Blob Storage o en Amazon S3 Storage a AEM as a Cloud Service como recursos.
 
 >[!TIP]
 >
-> Las fuentes de entrada de este vídeo solo muestran Azure Blob Storage y Amazon S3; sin embargo, las fuentes disponibles siguen creciendo con el tiempo. Para obtener una lista completa de las fuentes de entrada compatibles, consulte las opciones disponibles en el producto o [documentación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html#bulk-upload).
+> Las fuentes de entrada de este vídeo solo muestran Azure Blob Storage y Amazon S3; sin embargo, las fuentes disponibles siguen creciendo con el tiempo. Para obtener una lista completa de las fuentes de entrada admitidas, consulte las opciones disponibles en el producto o [documentación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html#bulk-upload).
 
 ## Actividades clave
 
 + Cargue los archivos que desea importar en su proveedor de almacenamiento en la nube.
-+ AEM Configure y ejecute el servicio de importación por lotes desde el servicio de autor de as a Cloud Service de la aplicación de.
++ Configure y ejecute el servicio de importación por lotes desde el servicio de autor de AEM as a Cloud Service.
 + Ejecute el Importador de servicios masivos como una importación única o programe una importación periódica.
 
 ## Otros recursos
 
 + [Opciones de configuración del servicio de importación masiva](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html#configure-bulk-ingestor-tool)
-+ [Sesión de Adobe Developers Live sobre ingesta de recursos](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/feb2021/asset-bulk-ingestion.html)
++ [Sesión de Adobe Developers Live sobre la ingesta de recursos](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/feb2021/asset-bulk-ingestion.html)
 

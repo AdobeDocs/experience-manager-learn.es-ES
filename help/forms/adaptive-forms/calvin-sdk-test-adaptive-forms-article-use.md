@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Pruebas automatizadas de Forms adaptable con el SDK de Calvin
 
-El SDK de Calvin es una API de utilidad para que los desarrolladores de Forms adaptables prueben Forms adaptable. Calvin SDK se basa en el [Marco de pruebas de Hobbes.js](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es). El SDK de Calvin está disponible a partir de AEM Forms 6.3.
+El SDK de Calvin es una API de utilidad para que los desarrolladores de Forms adaptables prueben Forms adaptable. El SDK de Calvin se basa en el [marco de pruebas Hobbes.js](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es). El SDK de Calvin está disponible a partir de AEM Forms 6.3.
 
 En este tutorial, creará lo siguiente:
 
@@ -31,7 +31,7 @@ En este tutorial, creará lo siguiente:
 
 ## Introducción {#getting-started}
 
-[Descargar e instalar los recursos mediante el administrador de paquetes](assets/testingadaptiveformsusingcalvinsdk1.zip)El paquete contiene secuencias de comandos de ejemplo y varios Forms adaptables. Estos Forms adaptables se crean con la versión 6.3 de AEM Forms. Se recomienda crear formularios nuevos específicos de la versión de AEM Forms si está probando esto en AEM Forms 6.4 o superior. Los scripts de ejemplo muestran varias API del SDK de Calvin disponibles para probar el Forms adaptable. AEM Los pasos generales para probar el Forms adaptable de la aplicación son:
+[Descargue e instale Assets mediante el administrador de paquetes](assets/testingadaptiveformsusingcalvinsdk1.zip)El paquete contiene secuencias de comandos de ejemplo y varios Forms adaptables. Estos Forms adaptables se han creado con la versión 6.3 de AEM Forms. Se recomienda crear formularios nuevos específicos de la versión de AEM Forms si está probando esto en AEM Forms 6.4 o superior. Los scripts de ejemplo muestran varias API del SDK de Calvin disponibles para probar el Forms adaptable. AEM Los pasos generales para probar el Forms adaptable de la aplicación son:
 
 * Desplácese hasta el formulario que necesite probar
 * Establecer el valor del campo
@@ -52,7 +52,7 @@ El código anterior crea un nuevo grupo de pruebas.
 
 * El nombre de TestSuite en este caso es &#39; `Mortgage Form Test` &#39;.
 * AEM Se proporciona la ruta absoluta en la que se encuentra el archivo js, que contiene el grupo de pruebas, en el que se indica la ruta de acceso absoluta.
-* El parámetro register cuando se establece en &#39; `true` &quot;, hace que el grupo de pruebas esté disponible en la interfaz de usuario de prueba.
+* El parámetro register cuando se establece en &#39; `true` &#39;, hace que el grupo de pruebas esté disponible en la interfaz de usuario de prueba.
 
 ```javascript
 .addTestCase(new hobs.TestCase("Calculate amount to borrow")
@@ -69,12 +69,12 @@ El código anterior crea un nuevo grupo de pruebas.
 
 Se pueden agregar casos de prueba al grupo de pruebas para ejecutarlos en un formulario adaptable.
 
-* Para añadir un caso de prueba al grupo de pruebas, utilice el `addTestCase` método del objeto TestSuite.
-* El `addTestCase` toma un objeto TestCase como parámetro.
-* Para crear TestCase, utilice el `hobs.TestCase(..)` método.
+* Para agregar un caso de prueba al grupo de pruebas, utilice el método `addTestCase` del objeto TestSuite.
+* El método `addTestCase` toma un objeto TestCase como parámetro.
+* Para crear TestCase, utilice el método `hobs.TestCase(..)`.
 * Nota: El primer parámetro es el nombre del caso de prueba que aparecerá en la interfaz de usuario.
 * Una vez que haya creado un caso de prueba, puede agregar acciones a dicho caso.
-* Acciones que incluyen `navigateTo`, `asserts.isTrue` se puede añadir como acciones al caso de prueba.
+* Las acciones, incluidas `navigateTo`, `asserts.isTrue`, se pueden agregar como acciones al caso de prueba.
 
 ## Ejecución de pruebas automatizadas {#running-the-automated-tests}
 

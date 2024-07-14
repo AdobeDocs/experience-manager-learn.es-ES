@@ -21,6 +21,6 @@ ht-degree: 5%
 
 # Acceso rápido
 
-Descubra cómo el widget de acceso rápido de Mi espacio de trabajo puede aumentar su productividad y optimizar su flujo de trabajo al servir como su lente personal en AEM Assets, manteniendo todos los activos que necesita para sus tareas asignadas al alcance de su mano.
+Descubra cómo el widget de acceso rápido de Mi Workspace puede aumentar su productividad y optimizar su flujo de trabajo al servir como su lente personal en AEM Assets, manteniendo todos los activos que necesita para sus tareas asignadas al alcance de su mano.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420975/?learn=on)

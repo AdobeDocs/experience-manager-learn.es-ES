@@ -19,17 +19,17 @@ ht-degree: 0%
 
 # AEM Extensibilidad de la IU
 
-Adobe Experience Manager AEM () ofrece una potente interfaz de usuario (IU) para crear experiencias digitales. Para personalizar y ampliar la interfaz de usuario, Adobe introdujo el Generador de aplicaciones. Esta herramienta permite a los desarrolladores mejorar la experiencia del usuario sin codificación compleja mediante JavaScript y React.
+Adobe Experience Manager AEM () ofrece una potente interfaz de usuario (IU) para crear experiencias digitales. Para personalizar y ampliar la interfaz de usuario, Adobe introdujo App Builder. Esta herramienta permite a los desarrolladores mejorar la experiencia del usuario sin codificaciones complejas mediante JavaScript y React.
 
-AEM El Generador de aplicaciones proporciona una capa de implementación para crear extensiones enlazadas a puntos de extensión bien definidos en los que se puede definir la aplicación de forma correcta. AEM El Generador de aplicaciones se integra perfectamente con el sistema de pruebas, lo que permite realizar pruebas y previsualizaciones en tiempo real. AEM La implementación de cambios en las es rápida y sencilla. Con App Builder, los desarrolladores ahorran tiempo y esfuerzo, lo que permite crear prototipos rápidamente y colaborar con las partes interesadas.
+App Builder AEM proporciona una capa de implementación para crear extensiones que están enlazadas a puntos de extensión bien definidos en los que se pueden definir los puntos de extensión de la aplicación de forma independiente. App Builder AEM se integra perfectamente con los servicios de pruebas, lo que permite realizar pruebas y previsualizaciones en tiempo real. AEM La implementación de cambios en las es rápida y sencilla. Al utilizar App Builder, los desarrolladores ahorran tiempo y esfuerzo, lo que permite crear prototipos rápidamente y colaborar con las partes interesadas.
 
 ## AEM Desarrollar una extensión de IU de
 
-AEM Las distintas IU de tienen diferentes puntos de extensión, aunque los conceptos básicos son los mismos.
+AEM varias IU tienen diferentes puntos de extensión, aunque los conceptos básicos son los mismos.
 
 Los vídeos y las visitas guiadas que se proporcionan vinculados a continuación muestran el uso de una extensión de la consola Fragmento de contenido para ilustrar varias actividades. AEM Sin embargo, es importante tener en cuenta que los conceptos cubiertos pueden aplicarse a todas las extensiones de la interfaz de usuario de la.
 
-1. [Creación de un proyecto de consola de Adobe Developer](./adobe-developer-console-project.md)
+1. [Creación de un proyecto de Adobe Developer Console](./adobe-developer-console-project.md)
 1. [Inicialización de una extensión](./app-initialization.md)
 1. [Registro de una extensión](./extension-registration.md)
 1. Implementación de un punto de extensión
@@ -45,4 +45,4 @@ Los vídeos y las visitas guiadas que se proporcionan vinculados a continuación
 
 ## Documentación de Adobe Developer
 
-Adobe Developer AEM contiene detalles del desarrollador sobre la extensibilidad de la IU de. Consulte la [Contenido de Adobe Developer para obtener más información técnica](https://developer.adobe.com/uix/docs/).
+Adobe Developer AEM contiene detalles del desarrollador sobre la extensibilidad de la IU de. Revise el [contenido de Adobe Developer para obtener más información técnica](https://developer.adobe.com/uix/docs/).

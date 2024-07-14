@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # AEM Solución de problemas relacionados con la configuración de Jetty en el
 
-*AEM Este vídeo explica los pasos para solucionar problemas relacionados con la configuración de Jetty en la aplicación de.*
+AEM *En este vídeo se explican los pasos para solucionar problemas relacionados con la configuración de Jetty en el espacio de trabajo de*.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335470?quality=12&learn=on)

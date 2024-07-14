@@ -1,6 +1,6 @@
 ---
 title: 'AEM Siguiente.js: Ejemplo de la versión sin encabezado de'
-description: Las aplicaciones de ejemplo son una buena manera de explorar las capacidades sin encabezado de Adobe Experience Manager AEM (). AEM Esta aplicación Next.js muestra cómo realizar consultas en el contenido mediante API de GraphQL de utilizando consultas persistentes.
+description: Las aplicaciones de ejemplo son una buena manera de explorar las capacidades sin encabezado de Adobe Experience Manager AEM (). AEM Esta aplicación Next.js muestra cómo consultar contenido utilizando las API de GraphQL que utilizan consultas persistentes, de manera que se pueda usar el contenido de la aplicación para la búsqueda de datos de manera predeterminada.
 version: Cloud Service
 mini-toc-levels: 1
 feature: Content Fragments, GraphQL API
@@ -22,9 +22,9 @@ ht-degree: 0%
 
 # Aplicación Next.js
 
-Las aplicaciones de ejemplo son una buena manera de explorar las capacidades sin encabezado de Adobe Experience Manager AEM (). AEM Esta aplicación Next.js muestra cómo realizar consultas en el contenido mediante API de GraphQL de utilizando consultas persistentes. AEM El cliente sin encabezado para JavaScript se utiliza para ejecutar las consultas persistentes de GraphQL que alimentan la aplicación.
+Las aplicaciones de ejemplo son una buena manera de explorar las capacidades sin encabezado de Adobe Experience Manager AEM (). AEM Esta aplicación Next.js muestra cómo consultar contenido utilizando las API de GraphQL que utilizan consultas persistentes, de manera que se pueda usar el contenido de la aplicación para la búsqueda de datos de manera predeterminada. AEM El cliente sin encabezado para JavaScript se utiliza para ejecutar las consultas persistentes de GraphQL que alimentan la aplicación.
 
-![AEM Aplicación Next.js con sin encabezado](./assets/next-js/next-js.png)
+AEM ![Aplicación Next.js con encabezado sin encabezado](./assets/next-js/next-js.png)
 
 Ver el [código fuente en GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/next-js)
 
@@ -37,23 +37,23 @@ Las siguientes herramientas deben instalarse localmente:
 
 ## AEM requisitos de
 
-AEM La aplicación Next.js funciona con las siguientes opciones de implementación de. Todas las implementaciones requieren [WKND compartido v3.0.0+](https://github.com/adobe/aem-guides-wknd-shared/releases/latest) o [Sitio WKND 3.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) AEM que se va a instalar en el entorno as a Cloud Service de la.
+AEM La aplicación Next.js funciona con las siguientes opciones de implementación de. Todas las implementaciones requieren que [WKND Shared v3.0.0+](https://github.com/adobe/aem-guides-wknd-shared/releases/latest) o [WKND Site v3.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) estén instalados en el entorno de AEM as a Cloud Service.
 
-Esta aplicación Next.js de ejemplo está diseñada para conectarse a __AEM Publicación de__ servicio.
+AEM Esta aplicación Next.js de ejemplo está diseñada para conectarse al servicio __Publish__.
 
 ### AEM Requisitos de autor de
 
-Next.js está diseñado para conectarse a __AEM Publicación de__ y acceder a contenido no protegido. AEM El archivo Next.js se puede configurar para que se conecte a la interfaz de usuario de Autor mediante la interfaz de usuario de la interfaz de usuario de. `.env` propiedades que se describen a continuación. AEM AEM Las imágenes proporcionadas desde Autor de la requieren autenticación y, por lo tanto, el usuario que acceda a la aplicación Next.js también debe iniciar sesión en Autor de la.
+AEM El archivo Next.js está diseñado para conectarse al servicio __Publish__ y tener acceso a contenido no protegido. AEM El archivo Next.js se puede configurar para que se conecte a la interfaz de usuario de Autor mediante las propiedades de `.env` que se describen a continuación. AEM AEM Las imágenes proporcionadas desde Autor de la requieren autenticación y, por lo tanto, el usuario que acceda a la aplicación Next.js también debe iniciar sesión en Autor de la.
 
 ## Cómo usar
 
-1. Clonar el `adobe/aem-guides-wknd-graphql` repositorio:
+1. Clonar el repositorio `adobe/aem-guides-wknd-graphql`:
 
    ```shell
    $ git clone git@github.com:adobe/aem-guides-wknd-graphql.git
    ```
 
-1. Edite el `aem-guides-wknd-graphql/next-js/.env.local` archivo y establecer `NEXT_PUBLIC_AEM_HOST` AEM al servicio de la.
+1. AEM Edite el archivo `aem-guides-wknd-graphql/next-js/.env.local` y establezca `NEXT_PUBLIC_AEM_HOST` en el servicio de.
 
    ```plain
    # AEM service
@@ -63,7 +63,7 @@ Next.js está diseñado para conectarse a __AEM Publicación de__ y acceder a co
 
    AEM AEM Si se conecta a servicio de Author, la autenticación debe proporcionarse ya que el servicio de Author es seguro de forma predeterminada.
 
-   AEM Para usar un conjunto de cuentas de la cuenta de local `AEM_AUTH_METHOD=basic` y proporcione el nombre de usuario y la contraseña en la `AEM_AUTH_USER` y `AEM_AUTH_PASSWORD` propiedades.
+   AEM Para usar un conjunto de cuentas de usuario local `AEM_AUTH_METHOD=basic` y proporcionar el nombre de usuario y la contraseña en las propiedades `AEM_AUTH_USER` y `AEM_AUTH_PASSWORD`.
 
    ```plain
    ...
@@ -73,7 +73,7 @@ Next.js está diseñado para conectarse a __AEM Publicación de__ y acceder a co
    AEM_AUTH_PASSWORD=password-for-the-aem-user-account
    ```
 
-   Para utilizar un [AEM Token de desarrollo local as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#generating-the-access-token) set `AEM_AUTH_METHOD=dev-token` y proporcione el valor de token de desarrollo completo en la variable `AEM_AUTH_DEV_TOKEN` propiedad.
+   Para usar un [token de desarrollo local de AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#generating-the-access-token), establezca `AEM_AUTH_METHOD=dev-token` y proporcione el valor completo del token de desarrollo en la propiedad `AEM_AUTH_DEV_TOKEN`.
 
    ```plain
    ...
@@ -82,9 +82,9 @@ Next.js está diseñado para conectarse a __AEM Publicación de__ y acceder a co
    AEM_AUTH_DEV_TOKEN=my-dev-token
    ```
 
-1. Edite el `aem-guides-wknd-graphql/next-js/.env.local` archivar y validar  `NEXT_PUBLIC_AEM_GRAPHQL_ENDPOINT` AEM se establece en el extremo de GraphQL de la aplicación correspondiente.
+1. AEM Edite el archivo `aem-guides-wknd-graphql/next-js/.env.local` y valide que `NEXT_PUBLIC_AEM_GRAPHQL_ENDPOINT` se ha establecido en el extremo de GraphQL de la cuenta de usuario correspondiente.
 
-   Al utilizar [WKND compartido](https://github.com/adobe/aem-guides-wknd-shared/releases/latest) o [Sitio WKND](https://github.com/adobe/aem-guides-wknd/releases/latest), use el `wknd-shared` Extremo de API de GraphQL.
+   Cuando use [WKND compartido](https://github.com/adobe/aem-guides-wknd-shared/releases/latest) o [Sitio WKND](https://github.com/adobe/aem-guides-wknd/releases/latest), use el extremo de la API de GraphQL `wknd-shared`.
 
    ```plain
    ...
@@ -111,7 +111,7 @@ AEM A continuación se muestra un resumen de cómo se crea la aplicación Next.j
 
 AEM AEM Siguiendo las prácticas recomendadas de sin encabezado de la aplicación, Next.js utiliza consultas persistentes de GraphQL de la aplicación para consultar los datos de aventura de la aplicación de la manera más rápida y sencilla. La aplicación utiliza dos consultas persistentes:
 
-+ `wknd/adventures-all` AEM consulta persistente, que devuelve todas las aventuras en con un conjunto abreviado de propiedades de, que se han guardado de forma predeterminada. Esta consulta persistente genera la lista de aventuras de la vista inicial.
++ AEM `wknd/adventures-all` persistió en la consulta, lo que devuelve todas las aventuras en la que se ha realizado un seguimiento con un conjunto abreviado de propiedades. Esta consulta persistente genera la lista de aventuras de la vista inicial.
 
 ```
 # Retrieves a list of all Adventures
@@ -153,7 +153,7 @@ query ($offset: Int, $limit: Int, $sort: String, $imageFormat: AssetTransformFor
 }
 ```
 
-+ `wknd/adventure-by-slug` consulta persistente, que devuelve una sola aventura de `slug` (una propiedad personalizada que identifica de forma exclusiva una aventura) con un conjunto completo de propiedades. Esta consulta persistente activa las vistas de detalles de aventura.
++ `wknd/adventure-by-slug` persistió en la consulta, lo que devuelve una sola aventura de `slug` (una propiedad personalizada que identifica de forma exclusiva una aventura) con un conjunto completo de propiedades. Esta consulta persistente activa las vistas de detalles de aventura.
 
 ```
 # Retrieves an Adventure Fragment based on it's unique slug.
@@ -224,11 +224,11 @@ query ($slug: String!, $imageFormat:AssetTransformFormat=JPG, $imageSeoName: Str
 
 ### Ejecutar consulta persistente de GraphQL
 
-AEM Las consultas persistentes se ejecutan a través de la GET HTTP y, por lo tanto, la variable [AEM Cliente sin encabezado para JavaScript](https://github.com/adobe/aem-headless-client-js) está acostumbrado a [ejecutar las consultas de GraphQL persistentes](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md#aemheadlessrunpersistedquerypath-variables-options--promiseany) AEM contra y cargar el contenido de la aventura en la aplicación.
+AEM consultas persistentes se ejecutan a través de la GET AEM HTTP y, por lo tanto, [Cliente sin encabezado para JavaScript](https://github.com/adobe/aem-headless-client-js) se usa para [ejecutar las consultas persistentes de GraphQL AEM](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md#aemheadlessrunpersistedquerypath-variables-options--promiseany) en contra de las consultas y cargar el contenido de aventura en la aplicación.
 
-Cada consulta persistente tiene una función correspondiente en `src/lib//aem-headless-client.js`AEM , que llama al punto final de GraphQL de la y devuelve los datos de la aventura.
+AEM Cada consulta persistente tiene una función correspondiente en `src/lib//aem-headless-client.js`, que llama al punto final de GraphQL de la y devuelve los datos de la aventura.
 
-Cada función, a su vez, invoca el `aemHeadlessClient.runPersistedQuery(...)`, ejecutando la consulta GraphQL persistente.
+A su vez, cada función invoca `aemHeadlessClient.runPersistedQuery(...)` y ejecuta la consulta de GraphQL persistente.
 
 ```js
 // src/lib/aem-headless-client.js
@@ -263,20 +263,20 @@ La aplicación Next.js utiliza dos páginas para presentar los datos de la avent
 
 + `src/pages/index.js`
 
-  Usos [getServerSideProps() de Next.js](https://nextjs.org/docs/basic-features/data-fetching/get-server-side-props) para llamar a `getAllAdventures()` y muestra cada aventura como una tarjeta.
+  Usa getServerSideProps()](https://nextjs.org/docs/basic-features/data-fetching/get-server-side-props) de [Next.js para llamar a `getAllAdventures()` y muestra cada aventura como una tarjeta.
 
   El uso de `getServerSiteProps()` permite la representación del lado del servidor de esta página Next.js.
 
 + `src/pages/adventures/[...slug].js`
 
-  A [Ruta dinámica de Next.js](https://nextjs.org/docs/routing/dynamic-routes) que muestra los detalles de una sola aventura. Esta ruta dinámica recupera previamente los datos de cada aventura mediante [getStaticProps() de Next.js](https://nextjs.org/docs/basic-features/data-fetching/get-static-props) mediante una llamada a `getAdventureBySlug(slug, queryVariables)` uso del `slug` parámetro pasado a través de la selección de aventuras en `adventures/index.js` página, y `queryVariables` para controlar el formato, anchura y calidad de la imagen.
+  Una ruta dinámica [Next.js](https://nextjs.org/docs/routing/dynamic-routes) que muestra los detalles de una sola aventura. Esta ruta dinámica recupera previamente los datos de cada aventura usando [Next.js&#39;s getStaticProps()](https://nextjs.org/docs/basic-features/data-fetching/get-static-props) mediante una llamada a `getAdventureBySlug(slug, queryVariables)` usando el parámetro `slug` pasado a través de la selección de aventuras en la página `adventures/index.js`, y `queryVariables` para controlar el formato, la anchura y la calidad de la imagen.
 
-  La ruta dinámica puede recuperar previamente los detalles de todas las aventuras utilizando [getStaticPaths() de Next.js](https://nextjs.org/docs/basic-features/data-fetching/get-static-paths) y rellenando todas las permutaciones de ruta posibles en función de la lista completa de aventuras devueltas por la consulta de GraphQL  `getAdventurePaths()`
+  La ruta dinámica puede recuperar previamente los detalles de todas las aventuras mediante [GetStaticPaths()](https://nextjs.org/docs/basic-features/data-fetching/get-static-paths) de Next.js y rellenando todas las permutaciones de ruta posibles en función de la lista completa de aventuras devuelta por la consulta de GraphQL `getAdventurePaths()`
 
-  El uso de `getStaticPaths()` y `getStaticProps(..)` permitía la generación estática del sitio de estas páginas de Next.js.
+  El uso de `getStaticPaths()` y `getStaticProps(..)` permitió la generación estática del sitio de estas páginas de Next.js.
 
 ## Configuración de implementación
 
 Las aplicaciones Next.js, especialmente en el contexto del procesamiento del lado del servidor (SSR) y la generación del lado del servidor (SSG), no requieren configuraciones de seguridad avanzadas como el uso compartido de recursos de origen cruzado (CORS).
 
-AEM AEM Sin embargo, si Next.js realiza solicitudes HTTP a las que se debe acceder desde el contexto del cliente, es posible que se requieran las configuraciones de seguridad en las que se realiza la petición de acceso desde el. Revise la [AEM Tutorial de implementación de aplicación de una sola página sin encabezado](../deployment/spa.md) para obtener más información.
+AEM AEM Sin embargo, si Next.js realiza solicitudes HTTP a las que se debe acceder desde el contexto del cliente, es posible que se requieran las configuraciones de seguridad en las que se realiza la petición de acceso desde el. AEM Revise el [tutorial de implementación de aplicación de una sola página sin encabezado](../deployment/spa.md) para obtener más detalles.

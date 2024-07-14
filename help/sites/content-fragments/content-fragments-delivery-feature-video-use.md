@@ -22,7 +22,7 @@ Los fragmentos de contenido de Adobe Experience Manager AEM () son contenidos ed
 
 Los fragmentos de contenido, independientemente del diseño, se pueden utilizar directamente en AEM Sites con los componentes principales o se pueden entregar sin encabezado a los canales descendentes.
 
-Esta serie de vídeos trata las opciones de envío para utilizar fragmentos de contenido. Detalles sobre la definición y [Creación de fragmentos de contenido se puede encontrar aquí](content-fragments-feature-video-use.md).
+Esta serie de vídeos trata las opciones de envío para utilizar fragmentos de contenido. Encontrará detalles sobre la definición y [creación de fragmentos de contenido aquí](content-fragments-feature-video-use.md).
 
 1. Uso de fragmentos de contenido en páginas web
 2. AEM Exposición de fragmentos de contenido como JSON mediante servicios de contenido de
@@ -32,7 +32,7 @@ Esta serie de vídeos trata las opciones de envío para utilizar fragmentos de c
 
 >[!VIDEO](https://video.tv.adobe.com/v/22449?quality=12&learn=on)
 
-Los fragmentos de contenido se pueden utilizar en páginas de AEM Sites AEM o, de forma similar, en Fragmentos de experiencias, utilizando los componentes principales de WCM de la manera más sencilla de usar, como los componentes principales de WCM de la página de la aplicación de la aplicación. [Componente Fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=es).
+Los fragmentos de contenido se pueden usar en páginas de AEM Sites AEM o, de manera similar, en Fragmentos de experiencias, usando el [componente de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=es) de los componentes principales de WCM de la manera de la manera de la manera de la misma, de la manera de la manera de la manera de.
 
 AEM Los componentes de fragmento de contenido se pueden diseñar con el sistema de estilos de para mostrar el contenido según sea necesario.
 
@@ -42,10 +42,10 @@ AEM Los componentes de fragmento de contenido se pueden diseñar con el sistema 
 
 AEM AEM Los servicios de contenido facilitan la creación de puntos finales HTTP basados en páginas de que representen el contenido en un formato JSON normalizado.
 
-El vídeo anterior utiliza el [Componente Fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=es) para exponer fragmentos de contenido individuales. El [Componente Lista de fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-list.html) es un nuevo componente que permite a un autor definir una consulta que rellenará dinámicamente la página con una lista de fragmentos de contenido. Se prefiere el componente Lista de fragmentos de contenido cuando es necesario exponer varios fragmentos de contenido.
+El vídeo anterior utiliza el [componente Fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=es) para exponer fragmentos de contenido individuales. El [componente Lista de fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-list.html) es un nuevo componente que permite a un autor definir una consulta que rellenará dinámicamente la página con una lista de fragmentos de contenido. Se prefiere el componente Lista de fragmentos de contenido cuando es necesario exponer varios fragmentos de contenido.
 
-*Ejemplo de carga útil JSON de extremo de Content Services:*\
-**[athletes.json](assets/athletes.json)**
+*Carga útil JSON de extremo de Content Services de ejemplo:*\
+**[atletas.json](assets/athletes.json)**
 
 ## Uso de la API HTTP de Assets
 
@@ -73,8 +73,8 @@ Existen dos opciones para exponer un fragmento de contenido como JSON para admit
 ## Recursos adicionales {#additional-resources}
 
 * [Creación de fragmentos de contenido](content-fragments-feature-video-use.md)
-* [Componentes principales de WCM de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
-* [AEM Componente de fragmento de contenido principal de WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=es)
+* [Componentes principales de WCM AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
+* AEM [Componente de fragmento de contenido principal de WCM de](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=es)
 
 AEM Para descargar e instalar el paquete siguiente en una instancia de la versión 6.4 o posterior de para el estado final de la serie de vídeos:\
-**[aem_demo_workflow-experiencescontent-fragments-100.zip](assets/aem_demo_fluid-experiencescontent-fragments-100.zip)**
+**[aem_demo_fluido-experiencescontent-fragments-100.zip](assets/aem_demo_fluid-experiencescontent-fragments-100.zip)**

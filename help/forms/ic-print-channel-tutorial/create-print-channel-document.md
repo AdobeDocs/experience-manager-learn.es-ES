@@ -23,7 +23,7 @@ ht-degree: 2%
 
 En esta parte, se crea un documento de comunicación interactiva para el canal Imprimir.
 
-Después de definir y configurar la fuente de datos y el modelo de datos de formulario, ahora crearemos nuestra comunicación interactiva para el canal de impresión
+Después de definir y configurar Data Source y el modelo de datos de formulario, ahora crearemos nuestra comunicación interactiva para el canal Imprimir
 
 >[!VIDEO](https://video.tv.adobe.com/v/37888?quality=12&learn=on)
 

@@ -21,9 +21,9 @@ ht-degree: 1%
 
 Para mostrar los datos del flujo de trabajo en la bandeja de entrada, es necesario definir y rellenar variables en el flujo de trabajo. El valor de la variable debe establecerse antes de asignar una tarea a un usuario. AEM Para ayudarle a empezar, hemos proporcionado un flujo de trabajo de ejemplo que está listo para implementarse en su servidor de.
 
-* [AEM Iniciar sesión en el](http://localhost:4502/crx/de/index.jsp)
+* AEM [Iniciar sesión en la cuenta de usuario de la cuenta de usuario](http://localhost:4502/crx/de/index.jsp)
 * [Importar el flujo de trabajo de revisión](assets/review-workflow.zip)
-* [Revisión del flujo de trabajo](http://localhost:4502/editor.html/conf/global/settings/workflow/models/reviewworkflow.html)
+* [Revisar el flujo de trabajo](http://localhost:4502/editor.html/conf/global/settings/workflow/models/reviewworkflow.html)
 
 Este flujo de trabajo tiene dos variables definidas (isMarried y revenue) y sus valores se establecen mediante el componente de variable set. AEM Estas variables están disponibles como columnas para añadirlas a la bandeja de entrada
 
@@ -79,20 +79,20 @@ return isMarried(inboxItem);
 
 ## Realizar pruebas en el servidor
 
-* [AEM Inicie sesión en la consola web de](http://localhost:4502/system/console/bundles)
+* AEM [Iniciar sesión en la consola web de la](http://localhost:4502/system/console/bundles)
 * [Implementar e iniciar el paquete de personalización de bandeja de entrada](assets/inboxcustomization.inboxcustomization.core-1.0-SNAPSHOT.jar)
 * [Abrir la bandeja de entrada](http://localhost:4502/aem/inbox)
-* Abra Control de administración haciendo clic en _Vista de lista_ junto a _Crear_ botón
+* Para abrir el Control de administración, haga clic en el icono _Vista de lista_ junto al botón _Crear_
 * Agregue la columna Casado a la bandeja de entrada y guarde los cambios
 * [Ir a la interfaz de usuario de FormsAndDocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* [Importar el formulario de ejemplo](assets/snap-form.zip) seleccionando _Carga de archivos_ de _Crear_ menú
-* [Previsualización del formulario](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
-* Seleccione el _estado civil_ y enviar el formulario
+* [Importe el formulario de ejemplo](assets/snap-form.zip) seleccionando _Cargar archivos_ en el menú _Crear_
+* [Vista previa del formulario](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
+* Seleccione _estado civil_ y envíe el formulario
   [ver bandeja de entrada](http://localhost:4502/aem/inbox)
 
 Al enviar el formulario, se almacenará en déclencheur el flujo de trabajo y se asignará una tarea al usuario &quot;administrador&quot;. Debería ver un valor en la columna Casado, como se muestra en esta captura de pantalla
 
-![de columna casada](assets/married-column.PNG)
+![columna-casada](assets/married-column.PNG)
 
 ## Siguientes pasos
 

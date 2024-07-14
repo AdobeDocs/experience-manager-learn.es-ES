@@ -25,7 +25,7 @@ El informe Ancho de banda y almacenamiento detalla la cantidad de ancho de banda
 
 ![imagen](assets/valuable-reports/reports-1.jpg)
 
-_El informe Ancho de banda y almacenamiento muestra esta cuenta como mucho más allá de su límite de almacenamiento de 30 GB._
+_El informe Ancho de banda y almacenamiento muestra esta cuenta por encima de su límite de almacenamiento de 30 GB._
 
 ## Informe de errores de imagen
 
@@ -41,7 +41,7 @@ Esperamos que el contenido de esta guía de prácticas recomendadas le haya resu
 
 Para obtener más información sobre Dynamic Media Classic, consulte los siguientes recursos:
 
-- [Dynamic Media Classic en Experience League: Obtener valor](https://guided.adobe.com/?launch=AEM-5a#recommended/solutions/experience-manager)
-- [Dynamic Media Classic en el Experience League: Más información](https://guided.adobe.com/?launch=AEM-6a#recommended/solutions/experience-manager)
-- [Archivos de newsletter de Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/dynamic-media-newsletter.html)
+- [Dynamic Media Classic en el Experience League - Obtener valor](https://guided.adobe.com/?launch=AEM-5a#recommended/solutions/experience-manager)
+- [Dynamic Media Classic en el Experience League: haga más](https://guided.adobe.com/?launch=AEM-6a#recommended/solutions/experience-manager)
+- [Archivos de la newsletter de Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/dynamic-media-newsletter.html)
 - [Documentación de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html?lang=es)

@@ -21,12 +21,12 @@ ht-degree: 0%
 
 # Crear cuenta de Cloud Service de Adobe Target {#adobe-target-cloud-service}
 
-AEM El siguiente vídeo proporciona información detallada sobre cómo conectarse a Adobe Target de forma as a Cloud Service con la de.
+El siguiente vídeo proporciona información general sobre cómo conectar AEM as a Cloud Service con Adobe Target.
 
-AEM Esta integración permite que el servicio de creación de se comunique directamente con Adobe Target AEM y envíe los fragmentos de experiencia de a Target como ofertas.  Esta integración sí lo hace *no* añada JavaScript de Adobe Target (AT.js) a las páginas web de AEM Sites para integrar [AEM Etiquetas y usando la extensión de Target](../experience-platform/data-collection/tags/connect-aem-tag-property-using-ims.md).
+AEM Esta integración permite que el servicio de creación de se comunique directamente con Adobe Target AEM y envíe los fragmentos de experiencia de a Target como ofertas.  Esta integración hace que *not* agregue Adobe Target JavaScript (AT.js) a las páginas web de AEM Sites AEM, para lo cual integra [las etiquetas y que utilizan la extensión de Target](../experience-platform/data-collection/tags/connect-aem-tag-property-using-ims.md).
 
 >[!VIDEO](https://video.tv.adobe.com/v/41244?quality=12&learn=on)
 
 >[!CAUTION]
 >
->Hay un problema conocido con la configuración de los Cloud Service de Adobe Target que se muestra en el vídeo. Hasta que se resuelva este problema, siga los mismos pasos que en el vídeo, pero use [configuración de Cloud Service de Adobe Target heredados](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-aem-cloud-services.html).
+>Hay un problema conocido con la configuración de los Cloud Service de Adobe Target que se muestra en el vídeo. Hasta que se resuelva este problema, siga los mismos pasos en el vídeo pero use la [configuración heredada de Cloud Service de Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-aem-cloud-services.html).

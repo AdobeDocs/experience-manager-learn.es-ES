@@ -20,7 +20,8 @@ ht-degree: 10%
 
 {{aem-headless-trials-promo}}
 
-AEM Las API de GraphQL AEM para fragmentos de contenido admiten escenarios de CMS sin encabezado en los que las aplicaciones cliente externas procesan experiencias mediante contenido administrado en.
+AEM de API de GraphQL para fragmentos de contenido
+AEM admite escenarios de CMS sin encabezado en los que las aplicaciones cliente externas procesan experiencias con contenido administrado en la aplicación de modo que se pueda administrar la aplicación de forma.
 
 Una API moderna de entrega de contenido es clave para la eficacia y el rendimiento de las aplicaciones de front-end basadas en Javascript. El uso de una API de REST presenta desafíos:
 
@@ -41,13 +42,13 @@ Este vídeo es una descripción general de la API de GraphQL AEM implementada en
 
 ## AEM Serie de vídeos GraphQL sin encabezado
 
-AEM Obtenga información acerca de las funcionalidades de GraphQL AEM de la aplicación mediante la explicación detallada de los fragmentos de contenido y las API de GraphQL y las herramientas de desarrollo de la aplicación de.
+AEM Obtenga información acerca de la capacidad de la GraphQL AEM de la a través de la explicación detallada de los fragmentos de contenido y el uso de las API de GraphQL y las herramientas de desarrollo de la manera de.
 
 * [AEM Serie de vídeos GraphQL sin encabezado](./video-series/modeling-basics.md)
 
 ## AEM Tutorial práctico de GraphQL sin encabezado
 
-AEM Explore las funcionalidades de GraphQL AEM de la manera más sencilla posible creando una aplicación de React que consume fragmentos de contenido a través de las API de GraphQL de la aplicación de.
+AEM Explore la capacidad de la GraphQL AEM de la forma de mediante la creación de una aplicación de React que consume fragmentos de contenido a través de las API de GraphQL de la aplicación de la aplicación de la aplicación de la aplicación de react.
 
 * [AEM Tutorial práctico de GraphQL sin encabezado](./multi-step/overview.md)
 

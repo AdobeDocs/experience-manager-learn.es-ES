@@ -20,19 +20,19 @@ ht-degree: 0%
 # Generación de documentos PDF con fragmentos mediante script ECMA{#developing-with-output-and-forms-services-in-aem-forms}
 
 
-En este artículo utilizaremos el servicio de salida para generar archivos pdf utilizando fragmentos xdp. El xdp principal y los fragmentos residen en el repositorio crx. AEM Es importante imitar la estructura de carpetas del sistema de archivos en la carpeta de archivos de la carpeta de la carpeta de la carpeta de la carpeta de la carpeta de la carpeta de archivos de la. Por ejemplo, si está utilizando un fragmento en la carpeta de fragmentos de su xdp, debe crear una carpeta llamada **fragmentos** AEM en la carpeta base en la que se encuentra el. La carpeta base contendrá la plantilla xdp base. Por ejemplo, si tiene la siguiente estructura en el sistema de archivos
+En este artículo utilizaremos el servicio de salida para generar archivos pdf utilizando fragmentos xdp. El xdp principal y los fragmentos residen en el repositorio crx. AEM Es importante imitar la estructura de carpetas del sistema de archivos en la carpeta de archivos de la carpeta de la carpeta de la carpeta de la carpeta de la carpeta de la carpeta de archivos de la. AEM Por ejemplo, si está usando un fragmento en la carpeta de fragmentos de su xdp, debe crear una carpeta llamada **fragmentos** bajo su carpeta base en el archivo de carpetas de la carpeta de la carpeta de la carpeta de la carpeta de la carpeta de base de la carpeta de la carpeta de la carpeta de la carpeta de la carpeta de la carpeta de la carpeta de la carpeta de la carpeta de la carpeta de la carpeta de la. La carpeta base contendrá la plantilla xdp base. Por ejemplo, si tiene la siguiente estructura en el sistema de archivos
 * c:\xdptemplates: contendrá la plantilla xdp base
 * c:\xdptemplates\fragments: esta carpeta contendrá fragmentos y la plantilla principal hará referencia al fragmento como se muestra a continuación
-  ![fragment-xdp](assets/survey-fragment.png).
-* La carpeta xdpdocuments contendrá la plantilla base y los fragmentos de **fragmentos** carpeta
+  ![fragmento-xdp](assets/survey-fragment.png).
+* La carpeta xdpdocuments contendrá su plantilla base y los fragmentos de la carpeta **fragments**
 
-Puede crear la estructura necesaria utilizando el [iu de formularios y documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+Puede crear la estructura necesaria con [forms y la interfaz de usuario del documento](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 
 La siguiente es la estructura de carpetas para el xdp de muestra, que utiliza 2 fragmentos
-![forms&amp;document](assets/fragment-folder-structure-ui.png)
+![formularios&amp;documento](assets/fragment-folder-structure-ui.png)
 
 
-* Servicio de salida: normalmente, este servicio se utiliza para combinar datos xml con una plantilla xdp o un pdf para generar un pdf aplanado. Para obtener más información, consulte la [javadoc](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) para el servicio Output. En este ejemplo utilizamos fragmentos que residen en el repositorio crx.
+* Servicio de salida: normalmente, este servicio se utiliza para combinar datos xml con una plantilla xdp o un pdf para generar un pdf aplanado. Para obtener más información, consulte [javadoc](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) para el servicio Output. En este ejemplo utilizamos fragmentos que residen en el repositorio crx.
 
 
 Se utilizó el siguiente script ECMA para generar el PDF. Observe el uso de ResourceResolver y ResourceResolverHelper en el código. ResourceResolver es necesario, ya que este código se ejecuta fuera de cualquier contexto de usuario.
@@ -67,11 +67,11 @@ resourceResolverHelper.callWith(resourceResolver, {call: function()
 
 **Para probar el paquete de muestra en el sistema**
 * [Implementar el paquete DesarrollandoConServicioUsuario](assets/DevelopingWithServiceUser.jar)
-* Agregar la entrada **DesarrollarWithServiceUser.core:getformsresourceresolver=fd-service** en la modificación del servicio de asignador de usuarios como se muestra en la captura de pantalla siguiente
+* Agregue la entrada **DesarrollandoConServicioUsuario.core:getformsresourceresolver=fd-service** en la modificación del servicio de asignación de usuarios como se muestra en la captura de pantalla siguiente
   ![modificación del asignador de usuarios](assets/user-mapper-service-amendment.png)
 * [Descargue e importe los archivos xdp de ejemplo y los scripts ECMA](assets/watched-folder-fragments-ecma.zip).
 Esto creará una estructura de carpetas vigilada en la carpeta c:/fragmentsandoutputservice
 
-* [Extraer el archivo de datos de muestra](assets/usingFragmentsSampleData.zip) y colóquelo en la carpeta de instalación de la carpeta vigilada (c:\fragmentsandoutputservice\install)
+* [Extraiga el archivo de datos de ejemplo](assets/usingFragmentsSampleData.zip) y colóquelo en la carpeta de instalación de la carpeta vigilada(c:\fragmentsandoutputservice\install)
 
 * Consulte la carpeta de resultados de la configuración de la carpeta inspeccionada para ver el archivo PDF generado

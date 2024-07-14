@@ -24,7 +24,7 @@ Aprovechamiento de las plantillas XDP existentes con la integración de AEM Form
 
 >[!VIDEO](https://video.tv.adobe.com/v/39705?quality=12&learn=on)
 
-Los recursos relacionados con este vídeo se pueden descargar desde los siguientes vínculos
+Assets relacionado con este vídeo se puede descargar desde los siguientes vínculos
 
 * [Plantilla de NDA](assets/nda-agreement-xdp-template.zip)
 * [Formulario adaptable](assets/nda-agreement-af-with-xdp-template.zip)

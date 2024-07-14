@@ -16,7 +16,7 @@ ht-degree: 5%
 
 ---
 
-# Adobe Manual de Managed Services Dispatcher
+# Adobe manual de Managed Services Dispatcher
 
 AEM Si la instalación de la está alojada en el servicio administrado de Adobe, le recomendamos leer este manual.
 A continuación, los documentos dados cubrirán los procesos de AMS para personalizar y trabajar correctamente con la configuración de Dispatcher proporcionada.
@@ -31,7 +31,7 @@ Estas son las páginas secundarias y los temas que componen el manual de Dispatc
 - [Explicación del almacenamiento en caché](./understanding-cache.md)
 - [Uso y comprensión de las variables](./variables.md)
 - [Vaciado de Dispatcher](./disp-flushing.md)
-- [URL mnemónica](./disp-vanity-url.md)
+- [URL de vanidad](./disp-vanity-url.md)
 - [Registro común](./common-logs.md)
 - [Archivos de solo lectura](./immutable-files.md)
 - [Comprobación de estado de Dispatcher](./health-check.md)

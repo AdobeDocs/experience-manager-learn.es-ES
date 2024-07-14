@@ -1,5 +1,5 @@
 ---
-title: Personalización mediante Adobe Target
+title: Personalization con Adobe Target
 description: Un tutorial completo que muestra cómo crear y ofrecer experiencias personalizadas con Adobe Target.
 feature: Experience Fragments
 topic: Personalization
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ---
 
-# Personalización de experiencias de página web completa con Adobe Target
+# Personalization de experiencias de página web completa con Adobe Target
 
 En el capítulo anterior, aprendimos a crear una actividad basada en la ubicación geográfica dentro de Adobe Target AEM utilizando contenido creado como Fragmentos de experiencias y exportado desde Ofertas de HTML de Adobe
 
@@ -36,52 +36,52 @@ Para este ejercicio, deben participar los siguientes usuarios y, para realizar a
 
 ### Página de inicio del sitio WKND
 
-![AEM Escenario 1 de Target de](assets/personalization-use-case-2/aem-target-use-case-2.png)
+AEM ![Escenario De Destino De La 1](assets/personalization-use-case-2/aem-target-use-case-2.png)
 
 ### Requisitos previos
 
-* **AEM**
-   * [AEM Instancia de autor y publicación de](./implementation.md#getting-aem) se ejecuta en localhost 4502 y 4503 respectivamente.
+* AEM ****
+   * AEM [instancia de autor y publicación de](./implementation.md#getting-aem) que se ejecuta en localhost 4502 y 4503 respectivamente.
    * [AEM Integración con Adobe Target mediante etiquetas de](./using-launch-adobe-io.md#aem-target-using-launch-by-adobe)
 * **Experience Cloud**
-   * Acceso a Adobe Experience Cloud de sus organizaciones: `https://<yourcompany>.experiencecloud.adobe.com`
+   * Acceso a Adobe Experience Cloud de sus organizaciones - `https://<yourcompany>.experiencecloud.adobe.com`
    * Experience Cloud aprovisionado con las siguientes soluciones
       * [Adobe Target](https://experiencecloud.adobe.com)
 
 ## Actividades del editor de contenido
 
 1. AEM El especialista en marketing inicia la conversación de rediseño de la página principal de WKND con el editor de contenido de la y detalla los requisitos.
-   * ***Requisito*** : rediseñe la página de inicio del sitio WKND con un diseño basado en tarjetas.
+   * ***Requisito***: rediseñar la página de inicio del sitio WKND con diseño basado en tarjetas.
 2. AEM En función de los requisitos, el Editor de contenido crea una nueva página de inicio del sitio WKND con un diseño basado en tarjetas y publica la nueva página principal.
 
 ## Actividades del experto en marketing
 
 1. El especialista en marketing crea una actividad de destinatario A/B con la oferta de redireccionamiento como una experiencia y el tráfico del sitio web asignado a la nueva página de inicio con el objetivo de éxito y las métricas añadidas.
-   1. En la ventana de Adobe Target, vaya a **Actividades** pestaña.
-   2. Clic **Crear actividad** y seleccione el tipo de actividad como **Prueba A/B**
+   1. En la ventana de Adobe Target, ve a la pestaña **Actividades**.
+   2. Haga clic en el botón **Crear actividad** y seleccione el tipo de actividad como **Prueba A/B**
       ![Adobe Target - Crear actividad](assets/personalization-use-case-2/create-ab-activity.png)
-   3. Seleccione el **Web** y seleccione la opción **Compositor de experiencias visuales**.
-   4. Introduzca el **URL de actividad** y haga clic en **Siguiente** para abrir el Compositor de experiencias visuales.
+   3. Seleccione el canal **Web** y elija **Compositor de experiencias visuales**.
+   4. Escriba la **URL de actividad** y haga clic en **Siguiente** para abrir el Compositor de experiencias visuales.
       ![Adobe Target - Crear actividad](assets/personalization-use-case-2/create-activity-ab-name.png)
-   5. Para **Compositor de experiencias visuales** para cargar, active **Permitir carga de scripts no seguros** en el explorador y vuelva a cargar la página.
+   5. Para que **Compositor de experiencias visuales** se cargue, habilita **Permitir la carga de scripts no seguros** en el explorador y vuelve a cargar la página.
       ![Actividad de segmentación de experiencias](assets/personalization-use-case-1/load-unsafe-scripts.png)
    6. Observe la página de inicio del sitio WKND abierta en el editor del Compositor de experiencias visuales.
       ![VEC](assets/personalization-use-case-2/vec.png)
-   7. Pase el ratón sobre **Experiencia B** y seleccione ver otras opciones.
+   7. Pase el ratón sobre la **experiencia B** y seleccione Ver otras opciones.
       ![Experiencia B](assets/personalization-use-case-2/redirect-url.png)
-   8. Seleccionar **Redirigir a URL** e introduzca la dirección URL de la nueva página principal de WKND. (http://localhost:4503/content/wknd/en1.html)
+   8. Seleccione la opción **Redirigir a URL** e introduzca la URL a la nueva página principal de WKND. (http://localhost:4503/content/wknd/en1.html)
       ![Experiencia B](assets/personalization-use-case-2/redirect-url-2.png)
-   9. **Guardar** Realice los cambios y continúe con los siguientes pasos de Creación de actividades.
-   10. Seleccione el **Método de asignación de tráfico** como manual y asignar el tráfico del 100 % a **Experiencia B**.
+   9. **Guarde** sus cambios y continúe con los siguientes pasos de la Creación de actividades.
+   10. Seleccione el **Método de asignación de tráfico** como manual y asigne el 100% del tráfico a la **Experiencia B**.
       ![Tráfico de experiencia B](assets/personalization-use-case-2/traffic.png)
    11. Haga clic en **Siguiente**.
-   12. Proporcionar **Métricas de objetivo** para su actividad y guarde y cierre la prueba A/B.
+   12. Proporcione **métricas de objetivo** para su actividad y guarde y cierre la prueba A/B.
       ![Métrica de objetivo de prueba A/B](assets/personalization-use-case-2/goal-metric.png)
    13. Proporcione un nombre (**Rediseño de la página principal de WKND**) para su actividad y guarde los cambios.
-   14. En la pantalla Detalles de la actividad, asegúrese de lo siguiente **Activar** su actividad de.
+   14. En la pantalla Detalles de la actividad, asegúrate de **Activar** tu actividad.
       ![Activar actividad](assets/personalization-use-case-2/ab-activate.png)
    15. Vaya a la página principal de WKND (http://localhost:4503/content/wknd/en.html) y se le redirigirá a la página principal del sitio WKND rediseñada (http://localhost:4503/content/wknd/en1.html).
-      ![Página principal de WKND rediseñada](assets/personalization-use-case-2/WKND-home-page-redesign.png)
+      ![Se rediseñó la página principal de WKND](assets/personalization-use-case-2/WKND-home-page-redesign.png)
 
 ## Resumen
 

@@ -18,11 +18,11 @@ ht-degree: 0%
 
 # Cloud 5: Modernizador de repositorios
 
-AEM Los chicos analizan cómo el modernizador de repositorios le ayuda a realizar la transición a un as a Cloud Service con información general útil sobre cómo funciona y por qué.
+Los chicos analizan cómo el modernizador de repositorios le ayuda a realizar la transición a AEM as a Cloud Service con información general útil sobre cómo funciona y por qué.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342865?quality=12&learn=on)
 
 ## Contenido cubierto en este vídeo
 
-+ [CLI DE AIO](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration)
++ [CLI de AIO](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration)
 + [Modernizador de repositorio](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)

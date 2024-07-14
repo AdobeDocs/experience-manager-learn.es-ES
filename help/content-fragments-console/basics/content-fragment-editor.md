@@ -1,6 +1,6 @@
 ---
 title: Editor de fragmentos de contenido
-description: AEM Breve introducción al editor de fragmentos de contenido de la.
+description: AEM Breve introducción al editor de fragmentos de contenido para la creación de.
 version: Cloud Service
 feature: Content Fragments
 topic: Content Management
@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # Editor de fragmentos de contenido
 
-AEM Breve introducción al editor de fragmentos de contenido de la.
+AEM Breve introducción al editor de fragmentos de contenido para la creación de.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424373/?learn=on)

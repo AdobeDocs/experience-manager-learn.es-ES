@@ -26,15 +26,15 @@ Este componente se identifica con la etiqueta Firmar formulario múltiple
 
 La siguiente captura de pantalla muestra el nuevo componente que se creó para mostrar el mensaje al finalizar la ceremonia de firma
 
-![componente resumen](assets/summary.PNG)
+![componente de resumen](assets/summary.PNG)
 
 El nuevo componente se basa en el componente de resumen predeterminado.
-![component-prop](assets/componentprop.PNG)
+![componente-prop](assets/componentprop.PNG)
 
 Se ha agregado un botón para ir al siguiente formulario que se debe firmar
-![template-code](assets/template-code.PNG)
+![código de plantilla](assets/template-code.PNG)
 
-summary.jsp tiene el siguiente código. Tiene referencia a la biblioteca de cliente identificada por el ID de categoría **getnextform**
+summary.jsp tiene el siguiente código. Tiene referencia a la biblioteca de cliente identificada por el id. de categoría **getnextform**
 
 ```java
 <%--
@@ -47,7 +47,7 @@ summary.jsp tiene el siguiente código. Tiene referencia a la biblioteca de clie
 
 ## Recursos
 
-El componente de resumen personalizado puede ser [descargado desde aquí](assets/custom-summary-step.zip)
+El componente de resumen personalizado se puede [descargar desde aquí](assets/custom-summary-step.zip)
 
 ## Siguientes pasos
 

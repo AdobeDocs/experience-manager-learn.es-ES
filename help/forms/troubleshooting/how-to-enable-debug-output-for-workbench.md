@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Cómo habilitar el resultado de depuración para Workbench
 
-*Este vídeo muestra el proceso para habilitar la salida de depuración para Workbench*
+*Este vídeo muestra el proceso para habilitar la salida de depuración para Workbench .*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335497?quality=12&learn=on)

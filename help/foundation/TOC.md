@@ -15,7 +15,7 @@ ht-degree: 14%
 # Vídeos y tutoriales de AEM Foundation {#foundation}
 
 + [Información general](./overview.md)
-+ Administration {#administration}
++ Administración {#administration}
    + [AEM Comprender las razones para actualizar el](./administration/understand-reasons-to-upgrade.md)
    + [Utilice oak-run.jar para administrar índices](./administration/use-oak-run-jar-to-manage-indexes.md)
    + [Utilizar Limpieza de revisión en línea](./administration/use-online-revision-clean-up.md)
@@ -36,7 +36,7 @@ ht-degree: 14%
    + [Configuración de la inclusión dinámica de Sling](./development/set-up-sling-dynamic-include.md)
    + [Prácticas recomendadas para la API de Java](./development/understand-java-api-best-practices.md)
    + [Explicación del exportador del modelo Sling](./development/understand-sling-model-exporter.md)
-   + [Comprender las prácticas recomendadas de indexación Oak](./development/understand-indexing-best-practices.md)
+   + [Comprender las prácticas recomendadas de indexación de Oak](./development/understand-indexing-best-practices.md)
 + Proyectos {#projects}
    + [AEM Desarrollar proyectos de](./projects/develop-aem-projects.md)
    + [Utilizar proyectos principales](./projects/use-project-masters.md)

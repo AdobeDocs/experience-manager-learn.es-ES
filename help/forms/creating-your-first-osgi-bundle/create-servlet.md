@@ -80,17 +80,17 @@ Para crear su proyecto, siga los siguientes pasos:
 * Ejecutar el comando `mvn clean install -PautoInstallBundle`
 * AEM El comando anterior crea e implementa automáticamente el paquete en la instancia de la instancia de la instancia de que se ejecuta en localhost:4502.
 
-El paquete también está disponible en la siguiente ubicación `C:\AEMFormsBundles\mysite\core\target`. AEM El paquete también se puede implementar en la configuración de la aplicación de la manera de usar la aplicación de la manera de [Consola web Felix.](http://localhost:4502/system/console/bundles)
+El paquete también está disponible en la siguiente ubicación `C:\AEMFormsBundles\mysite\core\target`. AEM El paquete también se puede implementar en los entornos de trabajo mediante la consola web [Felix.](http://localhost:4502/system/console/bundles)
 
 
 ## Prueba de la resolución de servlet
 
-Dirija el explorador a [URL de resolución de servlet](http://localhost:4502/system/console/servletresolver?url=%2Fbin%2FmergedataWithAcroform&amp;method=POST). Esto le indica el servlet que se invoca para una ruta determinada, como se ve en la captura de pantalla siguiente
+Dirija su navegador a la [URL de resolución de servlets](http://localhost:4502/system/console/servletresolver?url=%2Fbin%2FmergedataWithAcroform&amp;method=POST). Esto le indica el servlet que se invoca para una ruta determinada, como se ve en la captura de pantalla siguiente
 ![servlet-resolver](assets/servlet-resolver.JPG)
 
 ## Prueba del servlet con Postman
 
-![Prueba del servlet con Postman](assets/test-servlet-postman.JPG)
+![Probar el servlet mediante Postman](assets/test-servlet-postman.JPG)
 
 ## Siguientes pasos
 

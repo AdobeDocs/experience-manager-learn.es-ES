@@ -25,7 +25,7 @@ Agregue paneles secundarios al panel raíz.
 >[!VIDEO](https://video.tv.adobe.com/v/28536?quality=12&learn=on)
 
 >[!NOTE]
->Cuando agregue paneles secundarios al panel raíz, **Asegúrese de que está en el modo de edición. El botón de edición se encuentra en la parte superior derecha del explorador.**
+>Al agregar paneles secundarios al panel raíz, **Asegúrese de que se encuentra en el modo de edición. El botón de edición se encuentra en la parte superior derecha del explorador.**
 
 ## Siguientes pasos
 

@@ -22,11 +22,11 @@ ht-degree: 0%
 
 # Filtrado de la aplicación React
 
-AEM Explore la capacidad de las API de GraphQL sin encabezado de para filtrar datos mediante una [Reaccionar](https://reactjs.org/) aplicación. Esta aplicación de React crea una lista de las aventuras de WKND que se pueden filtrar por Tipo de actividad.
+AEM Explore la capacidad de las API de GraphQL sin encabezado para datos mediante la aplicación [React](https://reactjs.org/). Esta aplicación de React crea una lista de las aventuras de WKND que se pueden filtrar por Tipo de actividad.
 
-Este código muestra el uso de Adobe [AEM Cliente sin encabezado para JavaScript](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md) para invocar consultas de GraphQL persistentes desde React. Esta aplicación usa el `wknd-shared/adventures-all` consulta persistente para recopilar todas las aventuras y derivar una lista de tipos de actividades disponibles. Cuando un usuario selecciona un Tipo de actividad, el tipo seleccionado se pasa al `wknd-shared/adventures-by-activity` persistió en la consulta y recupera los detalles de la aventura solo para aquellas aventuras del tipo de actividad especificado.
+Este código muestra cómo usar el cliente sin encabezado [de Adobe AEM para JavaScript](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md) para invocar consultas de GraphQL persistentes desde React. Esta aplicación usa la consulta persistente `wknd-shared/adventures-all` para recopilar todas las aventuras y derivar una lista de tipos de actividades disponibles. Cuando un usuario selecciona un Tipo de actividad, el tipo seleccionado se pasa a la consulta persistente `wknd-shared/adventures-by-activity` y recupera los detalles de la aventura solo para aquellas aventuras del Tipo de actividad especificado.
 
 Este código:
 
-+ AEM Se conecta a un servicio de publicación de y no requiere autenticación
++ AEM Se conecta a un servicio de Publish de y no requiere autenticación
 + Utiliza las consultas persistentes de WKND: `wknd-shared/adventures-all` y `wknd-shared/adventures-by-activity`

@@ -116,8 +116,8 @@ Para probar esta capacidad en su propio servidor, siga los siguientes pasos:
 
 * [Descargue e instale el paquete asociado con este artículo.](assets/pdf-from-mobile-form-submission.zip)
 
-* Asegúrese de que la dirección URL de envío y el perfil de procesamiento del HTML estén correctamente configurados. Para ello, consulte la página de propiedades del  [xdp](http://localhost:4502/libs/fd/fm/gui/content/forms/formmetadataeditor.html/content/dam/formsanddocuments/schengen.xdp)
+* Asegúrese de que la dirección URL de envío y el perfil de procesamiento del HTML estén configurados correctamente al ver la página de propiedades de [xdp](http://localhost:4502/libs/fd/fm/gui/content/forms/formmetadataeditor.html/content/dam/formsanddocuments/schengen.xdp)
 
-* [Previsualice el XDP como HTML](http://localhost:4502/content/dam/formsanddocuments/schengen.xdp/jcr:content)
+* [Vista previa del XDP como html](http://localhost:4502/content/dam/formsanddocuments/schengen.xdp/jcr:content)
 
 * Agregue una imagen al formulario y envíela. Usted debe obtener PDF de nuevo con la imagen en ella.

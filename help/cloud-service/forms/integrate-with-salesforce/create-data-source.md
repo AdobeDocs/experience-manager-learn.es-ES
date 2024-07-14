@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ---
 
-# Crear fuente de datos
+# Crear Source de datos
 
 Cree una fuente de datos respaldada por REST utilizando el archivo swagger creado en el paso anterior
 

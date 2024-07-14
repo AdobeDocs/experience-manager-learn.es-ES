@@ -1,6 +1,6 @@
 ---
 title: AEM Cómo utilizar la bandeja de entrada en la
-description: AEM La bandeja de entrada facilita una mayor colaboración y visibilidad en las tareas y el flujo de trabajo.
+description: AEM La bandeja de entrada de facilita una mayor colaboración y visibilidad en las tareas y el flujo de trabajo.
 version: 6.4, 6.5, Cloud Service
 topic: Collaboration
 feature: Workflow

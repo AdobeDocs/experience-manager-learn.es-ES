@@ -9,7 +9,7 @@ team: TM
 source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '60'
-ht-degree: 6%
+ht-degree: 5%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 6%
    + [Explicación del almacenamiento en caché](./dispatcher/understanding-cache.md)
    + [Uso y comprensión de las variables](./dispatcher/variables.md)
    + [Vaciado de Dispatcher](./dispatcher/disp-flushing.md)
-   + [URL mnemónica](./dispatcher/disp-vanity-url.md)
+   + [URL de vanidad](./dispatcher/disp-vanity-url.md)
    + [Registro común](./dispatcher/common-logs.md)
    + [Archivos de solo lectura](./dispatcher/immutable-files.md)
    + [Comprobación de estado de Dispatcher](./dispatcher/health-check.md)

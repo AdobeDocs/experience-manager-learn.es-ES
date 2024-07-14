@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Introducción
 
-Las comunicaciones interactivas permiten a los agentes preparar correspondencias ad hoc para guardar correspondencias parcialmente completadas y recuperar las mismas para seguir trabajando. AEM Forms le proporciona el [Interfaz de proveedor de servicios](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html). Se espera que el cliente implemente esta interfaz para obtener la funcionalidad Guardar y reanudar.
+Las comunicaciones interactivas permiten a los agentes preparar correspondencias ad hoc para guardar correspondencias parcialmente completadas y recuperar las mismas para seguir trabajando. AEM Forms proporciona la [interfaz de proveedor de servicios](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html). Se espera que el cliente implemente esta interfaz para obtener la funcionalidad Guardar y reanudar.
 
 Este artículo utiliza la base de datos MySQL para almacenar los metadatos de la instancia de carta. Los datos de la carta se almacenan en el sistema de archivos.
 

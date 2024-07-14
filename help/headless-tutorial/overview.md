@@ -10,8 +10,8 @@ recommendations: disable, exclude
 exl-id: 57f88d79-9879-4bb9-a3db-9fec95e3a0bd
 source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
-source-wordcount: '503'
-ht-degree: 7%
+source-wordcount: '352'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +23,7 @@ Adobe Experience Manager AEM () tiene varias opciones para definir puntos finale
 
 >[!TIP]
 >
->Esta colección de tutoriales está diseñada para aquellos que prefieren **aprenda haciendo**. Si prefiere aprender conceptos desde cero, consulte el [AEM Recorrido de desarrollador sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/developer/overview.html). Este conjunto de tutoriales y el recorrido se complementan entre sí.
+>Esta colección de tutoriales está diseñada para aquellos que prefieren **aprender haciendo**. AEM Si prefiere aprender conceptos desde cero, consulte el [Recorrido para desarrolladores sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/developer/overview.html). Este conjunto de tutoriales y el recorrido se complementan entre sí.
 
 ## Tutorials por API
 
@@ -39,7 +39,7 @@ Adobe Experience Manager AEM () tiene varias opciones para definir puntos finale
     </a>
     </div>
     <p>
-    <em>AEM Descubra cómo una aplicación puede utilizar la API de GraphQL para consultar contenido.</em>
+    AEM <em>Aprenda cómo una aplicación puede usar la API de GraphQL para consultar el contenido de la aplicación de la aplicación de datos de la aplicación de datos de la aplicación de datos de usuario de la aplicación de datos de usuario</em>
     <p>
   </td>
   <td>
@@ -52,7 +52,7 @@ Adobe Experience Manager AEM () tiene varias opciones para definir puntos finale
     </a>
     </div>
     <p>
-    <em>AEM Aprenda cómo una aplicación puede autenticarse de forma segura con el servicio de autenticación de.</em>
+    AEM <em>Aprenda cómo una aplicación puede autenticarse de forma segura con el servicio de autenticación de la aplicación de forma segura con el servicio de autenticación de correo electrónico</em>.
     </p>
   </td>
   <td>
@@ -61,11 +61,11 @@ Adobe Experience Manager AEM () tiene varias opciones para definir puntos finale
     </a>
      <div>
       <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html">
-        <strong>Content Services</strong>
+        <strong>Servicios de contenido</strong>
       </a>
     </div>
     <p>
-    <em>Descubra cómo una aplicación puede utilizar una API de REST para consumir contenido.</em>
+    <em>Descubra cómo una aplicación puede usar una API de REST para consumir contenido.</em>
     <p>
   </td>
 </tr>
@@ -83,11 +83,11 @@ Las aplicaciones de ejemplo son una buena manera de explorar las capacidades sin
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/ios-swiftui-app.html">
-    <strong>Ejemplo de IU de iOS Swift</strong>
+    <strong>Ejemplo de SwiftUI de iOS</strong>
     </a>
     </div>
     <p>
-    <em>Una aplicación de iOS AEM con tecnología de API de GraphQL de.</em>
+    <em>Aplicación de iOS AEM con tecnología de API de GraphQL que se ejecuta a la hora de crear la aplicación</em>.
     <p>
   </td>
   <td>
@@ -100,7 +100,7 @@ Las aplicaciones de ejemplo son una buena manera de explorar las capacidades sin
     </a>
     </div>
     <p>
-    <em>AEM Una aplicación de Android™ con la tecnología de API de GraphQL de.</em>
+    <em>Aplicación de AndroidAEM ™ con tecnología de API de GraphQL que se encuentra en la de trabajo de la aplicación.</em>
     </p>
   </td>
   <td>
@@ -113,7 +113,7 @@ Las aplicaciones de ejemplo son una buena manera de explorar las capacidades sin
       </a>
     </div>
     <p>
-    <em>AEM Una aplicación de React con tecnología de API de GraphQL de.</em>
+    AEM <em>Una aplicación React con tecnología de API de GraphQL que se activa para la ejecución de la tarea.</em>
     <p>
   </td>
 </tr>
@@ -131,11 +131,11 @@ Examine los siguientes tutoriales en función de la tecnología utilizada. AEM D
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=es">
-    <strong>React: sin encabezado</strong>
+    <strong>React - Headless</strong>
     </a>
     </div>
     <p>
-    <em>Cree una aplicación JS de React con GraphQL en un escenario sin encabezado puro.</em>
+    <em>Cree una aplicación React JS usando GraphQL en un escenario sin encabezado puro.</em>
     <p>
   </td>
   <td>
@@ -144,11 +144,11 @@ Examine los siguientes tutoriales en función de la tecnología utilizada. AEM D
     </a>
     <div>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/remote-spa/overview.html">
-    <strong>React: editor remoto</strong>
+    <strong>React - Editor remoto</strong>
     </a>
     </div>
     <p>
-    <em>Crear en contexto una parte de una aplicación React alojada de forma remota.</em>
+    <em>Crear en contexto una parte de una aplicación React hospedada remotamente.</em>
     </p>
   </td>
   <td>
@@ -157,11 +157,11 @@ Examine los siguientes tutoriales en función de la tecnología utilizada. AEM D
     </a>
      <div>
       <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html">
-        <strong>SPA React: Editor de</strong>
+        SPA <strong>Reaccionar - Editor de</strong>
       </a>
     </div>
     <p>
-    <em>AEM SPA Utilice el editor de para administrar la experiencia completa de la aplicación React.</em>
+    AEM SPA <em>Use el editor de para administrar la experiencia completa de la aplicación React.</em>
     <p>
   </td>
 </tr>
@@ -172,11 +172,11 @@ Examine los siguientes tutoriales en función de la tecnología utilizada. AEM D
     </a>
     <div>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html">
-    <strong>Android: servicios de contenido</strong>
+    <strong>Android - Servicios de contenido</strong>
     </a>
     </div>
     <p>
-    <em>Utilice Content Services y REST para activar una aplicación móvil de Android™.</em>
+    <em>Use Content Services y REST para activar una aplicación móvil de Android™.</em>
     </p>
   </td>
   <td>
@@ -185,11 +185,11 @@ Examine los siguientes tutoriales en función de la tecnología utilizada. AEM D
     </a>
      <div>
       <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html">
-        <strong>Node.js: autenticación</strong>
+        <strong>Node.js - Authentication</strong>
       </a>
     </div>
     <p>
-    <em>Cree una aplicación Node.js mediante tokens de desarrollador y servicio para autenticarse.</em>
+    <em>Cree una aplicación Node.js usando tokens de desarrollador y servicio para autenticarse.</em>
     <p>
   </td>
   <td></td>

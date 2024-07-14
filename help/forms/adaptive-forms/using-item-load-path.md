@@ -30,6 +30,6 @@ Para crear un nodo de este tipo en crx, siga los pasos mencionados a continuaci�
 * Deberá crear una propiedad de tipo cadena denominada assettypes (puede asignarle un nombre según sus necesidades). Asegúrese de que la propiedad sea de varios valores. Proporcione los valores que desee y guárdelos.
   ![item-load-path](assets/item-load-path-crx.png)
 
-Para cargar estos valores en la lista desplegable, proporcione la siguiente ruta en la propiedad de ruta de carga del elemento  **/content/assets/assettypes**
+Para cargar estos valores en la lista desplegable, proporcione la siguiente ruta en la propiedad de ruta de carga del elemento **/content/assets/assettypes**
 
-El paquete de muestra puede ser [descargado desde aquí](assets/item-load-path-package.zip)
+El paquete de muestra se puede [descargar desde aquí](assets/item-load-path-package.zip)

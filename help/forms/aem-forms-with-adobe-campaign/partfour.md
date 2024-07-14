@@ -23,7 +23,7 @@ Pasos necesarios para crear un perfil de Adobe Campaign Standard mediante el mod
 
 ## Crear autenticación personalizada {#create-custom-authentication}
 
-Al crear una fuente de datos con el archivo swagger, AEM Forms admite los siguientes tipos de autenticación
+Al crear Data Source con el archivo swagger, AEM Forms admite los siguientes tipos de autenticación
 
 * Ninguno
 * OAuth 2.0
@@ -102,20 +102,21 @@ private Logger log = LoggerFactory.getLogger(CampaignAuthentication.class);
 }
 ```
 
-## Crear fuente de datos {#create-data-source}
+## Crear Source de datos {#create-data-source}
 
 El primer paso es crear el archivo swagger. El archivo swagger define la API de REST que se utilizará para crear un perfil en Adobe Campaign Standard. El archivo swagger define los parámetros de entrada y los parámetros de salida de la API de REST.
 
-Se crea una fuente de datos con el archivo swagger. Al crear la fuente de datos, puede especificar el tipo de autenticación. En este caso, utilizaremos la autenticación personalizada para autenticarnos con Adobe Campaign. El código mencionado anteriormente se utilizó para autenticarnos con Adobe Campaign.
+Se crea una fuente de datos con el archivo swagger. Al crear Data Source, puede especificar el tipo de autenticación. En este caso, utilizaremos la autenticación personalizada para autenticarnos con Adobe Campaign. El código mencionado anteriormente se utilizó para autenticarnos con Adobe Campaign.
 
-Se le proporciona un archivo swagger de muestra como parte de los recursos relacionados con este artículo.**Asegúrese de cambiar el host y la basePath en el archivo swagger para que coincida con su instancia de ACS**
+Se le proporciona un archivo swagger de muestra como parte de los recursos relacionados con este artículo.**Asegúrese de cambiar el host y la ruta base en el archivo swagger para que coincida con su instancia de ACS**
 
 ## Prueba de la solución {#test-the-solution}
 
 Para probar la solución, siga estos pasos:
 * [Asegúrese de haber seguido los pasos descritos aquí](aem-forms-with-campaign-standard-getting-started-tutorial.md)
 * [Descargue y descomprima este archivo para obtener el archivo swagger](assets/create-acs-profile-swagger-file.zip)
-* Crear fuente de datos con el archivo swagger Crear modelo de datos de formulario y basarlo en la fuente de datos creada en el paso anterior
+* Creación de Data Source con el archivo swagger
+Cree un modelo de datos de formulario y base en el Source de datos creado en el paso anterior
 * Cree un formulario adaptable basado en el modelo de datos de formulario creado en el paso anterior.
 * Arrastre y suelte los siguientes elementos de la pestaña fuentes de datos en el formulario adaptable
 

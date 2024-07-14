@@ -1,6 +1,6 @@
 ---
 title: Carril de búsqueda de administración de Assets
-description: El carril de búsqueda de administración de Assets permite buscar recursos utilizando criterios personalizados en Omnisearch.
+description: El carril de búsqueda de administración de Assets permite buscar recursos usando criterios personalizados en Omnisearch.
 sub-product: Experience Manager Assets
 feature: Search
 version: Cloud Service
@@ -22,6 +22,6 @@ ht-degree: 0%
 
 # Carril de búsqueda de administración de Assets
 
-El carril de búsqueda de administración de Assets permite buscar recursos utilizando criterios personalizados en Omnisearch.
+El carril de búsqueda de administración de Assets permite buscar recursos usando criterios personalizados en Omnisearch.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35842?quality=12&learn=on)

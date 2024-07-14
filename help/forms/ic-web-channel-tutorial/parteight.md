@@ -29,7 +29,7 @@ Abra 401KStatement en modo de edición.
 
 AEM Forms 6.4 ha simplificado considerablemente la visualización de datos mediante varios tipos de gráficos. Vamos a usar un gráfico de líneas para mostrar los saldos por año.
 
-Pulse en **Progreso de cuenta** área de destino en el lado derecho y haga clic en el icono &quot;+&quot; para que aparezca el cuadro de diálogo insertar componente.
+Pulse en el área de destino **Progreso de la cuenta** en el lado derecho y haga clic en el icono &quot;+&quot; para que aparezca el cuadro de diálogo Insertar componente.
 
 Seleccione Gráfico para insertar el componente de gráfico.
 
@@ -37,11 +37,11 @@ Configure el componente del gráfico según la configuración de la captura de p
 
 Asegúrese de seleccionar el elemento del modelo de datos de formulario correcto en los ejes X e Y.
 
-**Configuración del gráfico de líneas en AEM Forms 6.4**
+**Configuración de gráfico de líneas en AEM Forms 6.4**
 
 ![linechart64](assets/linechart.png)
 
-**Configuración del gráfico de líneas en AEM Forms 6.5**
+**Configuración de gráfico de líneas en AEM Forms 6.5**
 
 ![linechart64](assets/linechart65.PNG)
 

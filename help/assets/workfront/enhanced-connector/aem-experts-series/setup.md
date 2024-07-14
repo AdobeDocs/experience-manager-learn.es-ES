@@ -23,10 +23,10 @@ ht-degree: 1%
 
 # Configuración y configuración iniciales
 
-![AEM Serie de expertos de](./assets/banner.png)
+AEM ![Serie de expertos de](./assets/banner.png)
 
 Aprenda a configurar el conector mejorado de Workfront para Experience Manager, desbloqueando la potencia combinada de AEM Assets y Workfront.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340331?quality=12&learn=on)
 
-_Esta es la primera parte de un [serie de expertos de cuatro partes sobre el conector mejorado de Workfront para Experience Manager](./overview.md)_
+_Esto es parte uno de una serie de expertos de [cuatro partes en el conector mejorado de Workfront para Experience Manager](./overview.md)_

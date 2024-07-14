@@ -28,7 +28,7 @@ Los acroforms son formularios creados con Acrobat. Puede crear un nuevo formular
 
 >[!NOTE]
 >
->Si desea enviar el acroformulario rellenable para firmar mediante Acrobat Sign, asigne un nombre a los campos según corresponda. Por ejemplo, puede asignar un nombre a un campo **`Sig_es_:signer1:signature`**. Esta es la sintaxis que Acrobat Sign entiende.
+>Si desea enviar el acroformulario rellenable para firmar mediante Acrobat Sign, asigne un nombre a los campos según corresponda. Por ejemplo, podría asignar un nombre a un campo **`Sig_es_:signer1:signature`**. Esta es la sintaxis que Acrobat Sign entiende.
 
 >[!NOTE]
 >

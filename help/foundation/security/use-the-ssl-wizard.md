@@ -32,55 +32,55 @@ Aprenda a configurar SSL en Adobe Experience Manager para que se ejecute a trav�
 
 ## Uso del Asistente para configuración SSL
 
-Vaya a __AEM Autor de la > Herramientas > Seguridad > Configuración SSL__ y abra el __Asistente de configuración SSL__.
+AEM Vaya a __Autor de > Herramientas > Seguridad > Configuración SSL__ y abra el __Asistente para la configuración SSL__.
 
-![Asistente de configuración SSL](assets/use-the-ssl-wizard/ssl-config-wizard.png)
+![Asistente para configuración SSL](assets/use-the-ssl-wizard/ssl-config-wizard.png)
 
 ### Crear credenciales de tienda
 
-Para crear un _Almacén de claves_ asociado con el `ssl-service` usuario del sistema y una _Almacén de confianza_, use el __Credenciales de almacenamiento__ paso del asistente.
+Para crear un _almacén de claves_ asociado con el usuario del sistema `ssl-service` y un _almacén de confianza_ global, usa el paso del asistente __Credenciales de almacén__.
 
-1. Introduzca la contraseña y confírmela para __Almacén de claves__ asociado con el `ssl-service` usuario del sistema.
-1. Introduzca la contraseña y confírmela para el global __Almacén de confianza__. Tenga en cuenta que es un almacén de confianza de todo el sistema y, si ya se ha creado, se ignora la contraseña introducida.
+1. Escriba la contraseña y confírmela para el __almacén de claves__ asociado con el usuario del sistema `ssl-service`.
+1. Escriba la contraseña y confírmela para el __Almacén de confianza__ global. Tenga en cuenta que es un almacén de confianza de todo el sistema y, si ya se ha creado, se ignora la contraseña introducida.
 
-   ![Configuración de SSL: credenciales de almacenamiento](assets/use-the-ssl-wizard/store-credentials.png)
+   ![Configuración SSL - Credenciales de almacenamiento](assets/use-the-ssl-wizard/store-credentials.png)
 
 ### Cargar clave privada y certificado
 
-Para cargar el _clave privada_ y _Certificado SSL_, use el __Clave y certificado__ paso del asistente.
+Para cargar la _clave privada_ y el _certificado SSL_, usa el paso del asistente __Clave y certificado__.
 
-Normalmente, el departamento de TI proporciona el certificado y la clave de confianza de la CA, aunque se puede utilizar un certificado autofirmado para __desarrollo__ y __prueba__ fines.
+Normalmente, el departamento de TI proporciona el certificado y la clave de confianza de la CA; sin embargo, el certificado autofirmado se puede usar con fines de __desarrollo__ y __prueba__.
 
-Para crear o descargar el certificado autofirmado, consulte la [Certificado y clave privada firmados automáticamente](#self-signed-private-key-and-certificate).
+Para crear o descargar el certificado autofirmado, vea la clave privada [autofirmada y el certificado](#self-signed-private-key-and-certificate).
 
-1. Cargue el __Clave privada__ en el formato DER (Distinguished Encoding Rules). A diferencia de PEM, los archivos con codificación DER no contienen instrucciones de texto sin formato como `-----BEGIN CERTIFICATE-----`
-1. Cargar el asociado __Certificado SSL__ en el `.crt` formato.
+1. Cargue la __clave privada__ en el formato DER (reglas de codificación distintivas). A diferencia de PEM, los archivos con codificación DER no contienen instrucciones de texto sin formato como `-----BEGIN CERTIFICATE-----`
+1. Cargar el __certificado SSL__ asociado con el formato `.crt`.
 
-   ![Configuración de SSL: clave privada y certificado](assets/use-the-ssl-wizard/privatekey-and-certificate.png)
+   ![Configuración SSL - Clave privada y certificado](assets/use-the-ssl-wizard/privatekey-and-certificate.png)
 
 ### Actualización de detalles del conector SSL
 
-Para actualizar el _hostname_ y _puerto_ use el __Conector SSL__ paso del asistente.
+Para actualizar _hostname_ y _port_, use el paso del asistente __Conector SSL__.
 
-1. Actualice o verifique el __Nombre de host HTTPS__ debe coincidir con el valor de `Common Name (CN)` del certificado.
-1. Actualice o verifique el __Puerto HTTPS__ valor.
+1. Actualice o verifique el valor __HTTPS Hostname__, debe coincidir con el `Common Name (CN)` del certificado.
+1. Actualice o verifique el valor __Puerto HTTPS__.
 
-   ![Configuración de SSL: Detalles del conector SSL](assets/use-the-ssl-wizard/ssl-connector-details.png)
+   ![Configuración SSL - Detalles del conector SSL](assets/use-the-ssl-wizard/ssl-connector-details.png)
 
 ### Verificar la configuración SSL
 
-1. Para verificar el SSL, haga clic en el __Ir a URL HTTPS__ botón.
-1. Si utiliza un certificado firmado automáticamente, verá lo siguiente `Your connection is not private` error.
+1. Para comprobar el SSL, haga clic en el botón __Ir a la dirección URL HTTPS__.
+1. Si usa un certificado autofirmado, verá el error `Your connection is not private`.
 
-   ![AEM Configuración de SSL: Verificar el uso de HTTPS](assets/use-the-ssl-wizard/verify-aem-over-ssl.png)
+   AEM ![Configuración de SSL: Verificar la configuración a través de HTTPS](assets/use-the-ssl-wizard/verify-aem-over-ssl.png)
 
 ## Certificado y clave privada firmados automáticamente
 
-El siguiente zip contiene [!DNL DER] y [!DNL CRT] AEM archivos necesarios para configurar SSL localmente y destinados únicamente a fines de desarrollo local.
+AEM El siguiente zip contiene [!DNL DER] y [!DNL CRT] archivos necesarios para configurar SSL localmente y destinados únicamente a fines de desarrollo local.
 
-El [!DNL DER] y [!DNL CERT] Los archivos se proporcionan para su comodidad y se generan siguiendo los pasos descritos en la sección Generar clave privada y certificado firmado automáticamente a continuación.
+Los archivos [!DNL DER] y [!DNL CERT] se proporcionan para su comodidad y se generan siguiendo los pasos descritos en la sección Generar clave privada y certificado autofirmado a continuación.
 
-Si es necesario, la frase de contraseña del certificado es **administrador**.
+Si es necesario, la frase para pasar el certificado es **admin**.
 
 Este localhost: clave privada y certificado autofirmado.zip (caduca en julio de 2028)
 
@@ -88,7 +88,7 @@ Este localhost: clave privada y certificado autofirmado.zip (caduca en julio de 
 
 ### Generación de claves privadas y certificados autofirmados
 
-AEM El vídeo anterior muestra la instalación y configuración de SSL en una instancia de autor de mediante certificados firmados automáticamente. Los siguientes comandos utilizan [[!DNL OpenSSL]](https://www.openssl.org/) Puede generar una clave privada y un certificado para utilizarlos en el paso 2 del asistente.
+AEM El vídeo anterior muestra la instalación y configuración de SSL en una instancia de autor de mediante certificados firmados automáticamente. Los comandos siguientes que utilizan [[!DNL OpenSSL]](https://www.openssl.org/) pueden generar una clave privada y un certificado para usarlos en el paso 2 del asistente.
 
 ```shell
 ### Create Private Key

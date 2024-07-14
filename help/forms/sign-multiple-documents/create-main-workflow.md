@@ -19,15 +19,15 @@ ht-degree: 1%
 
 # Crear flujo de trabajo principal
 
-El flujo de trabajo principal se activa cuando el usuario envía el formulario inicial (**RefinanciarFormulario**). A continuación se muestra el flujo de trabajo
+El flujo de trabajo principal se activa cuando el usuario envía el formulario inicial (**RefinanceForm**). A continuación se muestra el flujo de trabajo
 
-![main-workflow](assets/main-workflow.PNG)
+![flujo de trabajo principal](assets/main-workflow.PNG)
 
-**Almacenar Forms Para Firmar** es un paso de proceso personalizado.
+**Almacenar Forms para firmar** es un paso de proceso personalizado.
 
-AEM La motivación para implementar un paso de proceso personalizado es ampliar un flujo de trabajo de. El siguiente código implementa un paso de proceso personalizado. El código extrae los nombres de los formularios que se van a firmar y pasa los datos del formulario enviado a `insertData` en el servicio SignMultipleForms. El `insertData` a continuación, inserta las filas en la base de datos identificada por el origen de datos **aemformstutorial**.
+AEM La motivación para implementar un paso de proceso personalizado es ampliar un flujo de trabajo de. El siguiente código implementa un paso de proceso personalizado. El código extrae los nombres de los formularios que se van a firmar y pasa los datos de formulario enviados al método `insertData` en el servicio SignMultipleForms. A continuación, el método `insertData` inserta las filas en la base de datos identificada por el origen de datos **aemformstutorial**.
 
-El código de este paso de proceso personalizado hace referencia a `SignMultipleForms` servicio.
+El código de este paso de proceso personalizado hace referencia al servicio `SignMultipleForms`.
 
 
 
@@ -118,7 +118,7 @@ public class StoreFormsToSignWorkflowStep implements WorkflowProcess {
 
 ## Recursos
 
-El flujo de trabajo Firmar varios Forms utilizado en este artículo se puede [descargado desde aquí](assets/sign-multiple-forms-workflows.zip)
+El flujo de trabajo Firmar varios Forms usado en este artículo se puede [descargar desde aquí](assets/sign-multiple-forms-workflows.zip)
 
 >[!NOTE]
 > Asegúrese de configurar Day CQ Mail Service para enviar notificaciones por correo electrónico. La plantilla de correo electrónico también se proporciona en el paquete anterior.

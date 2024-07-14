@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # Uso del Editor de flujo de trabajo
 
-El flujo de trabajo permite la administración de procesos empresariales en Experience Manager y se utiliza para el procesamiento automático de contenido, así como para facilitar el control y el proceso que requieren decisiones tomadas por personas. El flujo de trabajo se define mediante modelos de flujo de trabajo que se componen de una serie de pasos y que se crean y administran en [!UICONTROL Editor del modelo de flujo de trabajo].
+El flujo de trabajo permite la administración de procesos empresariales en Experience Manager y se utiliza para el procesamiento automático de contenido, así como para facilitar el control y el proceso que requieren decisiones tomadas por personas. El flujo de trabajo se define mediante modelos de flujo de trabajo que se componen de una serie de pasos y que se crean y administran en el [!UICONTROL Editor de modelos de flujo de trabajo].
 
 >[!VIDEO](https://video.tv.adobe.com/v/22201?quality=12&learn=on)

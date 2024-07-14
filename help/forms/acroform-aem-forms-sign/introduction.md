@@ -31,14 +31,14 @@ Las organizaciones tienen una amplia variedad de formularios. Algunos de estos f
 
 ### Para que esta capacidad funcione en su sistema, es necesario lo siguiente
 
-* Descargue e implemente los paquetes mediante [Consola web Felix](http://localhost:4502/system/console/bundles)
+* Descargue e implemente los paquetes usando la [Consola web Felix](http://localhost:4502/system/console/bundles)
 * [DocumentServicesBundle](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 * [DesarrollarConUsuarioDeServicio](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 * [AcroFormsToAEMFormsBundle](https://forms.enablementadobe.com/content/DemoServerBundles/AcroFormToAEMForm.core-1.0-SNAPSHOT.jar)
-* [AEM Descargue e importe este paquete en el servidor de correo](assets/acro-form-aem-form.zip). Este paquete contiene el flujo de trabajo de ejemplo y la página html para crear XSD a partir de un formulario
-* Abra el [configMgr](http://localhost:4502/system/console/configMgr)
+* AEM [Descargue e importe este paquete en el espacio de trabajo ](assets/acro-form-aem-form.zip) de la página de inicio de sesión. Este paquete contiene el flujo de trabajo de ejemplo y la página html para crear XSD a partir de un formulario
+* Abrir [configMgr](http://localhost:4502/system/console/configMgr)
    * Busque &quot;Servicio de asignador de usuarios del servicio Apache Sling&quot; y haga clic para abrir las propiedades
-   * Haga clic en `+` icono (más) para añadir la siguiente asignación de servicio
+   * Haga clic en el icono `+` (más) para agregar la siguiente asignación de servicio
       * `DevelopingWithServiceUser.core:getresourceresolver=data`
       * `DevelopingWithServiceUser.core:getformsresourceresolver=fd-service`
    * Haga clic en &quot;Guardar&quot;

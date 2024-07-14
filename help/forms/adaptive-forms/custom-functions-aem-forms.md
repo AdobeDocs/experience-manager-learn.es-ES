@@ -30,9 +30,9 @@ Para definir la primera función personalizada, siga los siguientes pasos:
 * Seleccione la carpeta clientlibs recién creada y agregue las propiedades allowProxy y categories como se muestra en la captura de pantalla y guarde los cambios.
 
 ![client-lib](assets/custom-functions.png)
-* Cree una carpeta llamada **js** en el **clientlibs** carpeta
-* Cree un archivo llamado **functions.js** en el **js** carpeta
-* Cree un archivo llamado **js.txt** en el **clientlibs** carpeta. Guarde los cambios.
+* Cree una carpeta llamada **js** en la carpeta **clientlibs**
+* Cree un archivo llamado **functions.js** en la carpeta **js**
+* Cree un archivo llamado **js.txt** en la carpeta **clientlibs**. Guarde los cambios.
 * La estructura de carpetas debe ser similar a la captura de pantalla siguiente.
 
 ![Editor de reglas](assets/folder-structure.png)
@@ -72,10 +72,10 @@ function convertUTC(strUTCString)
 }
 ```
 
-Por favor [consulte jsdoc](https://jsdoc.app/index.html)para obtener más información sobre cómo anotar funciones de javascript.
+[Consulte jsdoc](https://jsdoc.app/index.html)para obtener más información sobre cómo anotar funciones de javascript.
 El código anterior tiene dos funciones:
-**getCountyNamesList** - devuelve una matriz de cadena.
-**convertUTC** - Convierte la marca de tiempo UTC a la zona horaria local
+**getCountyNamesList** - devuelve una matriz de cadena
+**convertUTC**: convierte la marca de tiempo UTC a la zona horaria local.
 
 Abra el archivo js.txt, pegue el siguiente código y guarde los cambios.
 
@@ -87,7 +87,7 @@ functions.js
 La línea #base=js especifica en qué directorio se encuentran los archivos JavaScript.
 Las líneas siguientes indican la ubicación del archivo JavaScript en relación con la ubicación base.
 
-Si tiene problemas para crear las funciones personalizadas, no dude en [descargar e instalar este paquete](assets/custom-functions.zip) AEM en su instancia de la.
+AEM Si tienes problemas para crear las funciones personalizadas, no dudes en [descargar e instalar este paquete](assets/custom-functions.zip) en tu instancia de.
 
 ## Uso de las funciones personalizadas
 

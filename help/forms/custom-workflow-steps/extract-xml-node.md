@@ -22,7 +22,7 @@ ht-degree: 0%
 Este paso de proceso personalizado es crear un nuevo documento xml al extraer el nodo de otro documento xml. Debe utilizarlo cuando desee combinar los datos enviados con la plantilla xdp para generar un pdf. Por ejemplo, cuando envía un formulario adaptable, los datos que necesita combinar con la plantilla xdp se encuentran dentro del elemento de datos. En este caso, deberá crear otro documento xml extrayendo el elemento de datos correspondiente.
 
 La siguiente captura de pantalla muestra los argumentos que debe pasar al paso de proceso personalizado
-![paso del proceso](assets/create-xml-process-step.png)
+![paso-proceso](assets/create-xml-process-step.png)
 Los siguientes son los parámetros
 * Data.xml: el archivo XML del que desea extraer el nodo
 * datatomerge.xml: el nuevo xml creado con el nodo extraído

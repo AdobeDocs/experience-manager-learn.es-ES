@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Pasos para solucionar problemas específicos de HtmltoPDF en una configuración de Windows
 
-*Este vídeo muestra el proceso de resolución de problemas específicos de HtmltoPDF en una configuración de Windows.*
+*Este vídeo muestra el proceso de solución de problemas específicos de HtmltoPDF en una instalación de Windows.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335545?quality=12&learn=on)

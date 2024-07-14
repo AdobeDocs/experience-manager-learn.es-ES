@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Cómo investigar los problemas relacionados con SAML
 
-*AEM Este vídeo explica los pasos para investigar los problemas relacionados con SAML en la práctica de la.*
+AEM *En este vídeo se explican los pasos para investigar los problemas relacionados con SAML en la aplicación de la aplicación de código de seguridad de la aplicación de código de seguridad de la aplicación de código de.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335466?quality=12&learn=on)

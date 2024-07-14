@@ -1,6 +1,6 @@
 ---
 title: Herramientas de refactorización de código
-description: AEM AEM AEM as a Cloud Service Descubra cómo las herramientas de refactorización de código de la ayudan a automatizar la conversión de los proyectos existentes para que sean compatibles con la.
+description: AEM AEM Obtenga información sobre cómo las herramientas de refactorización de código de ayudan a automatizar la conversión de los proyectos existentes para que sean compatibles con AEM as a Cloud Service.
 version: Cloud Service
 feature: Migration
 topic: Migration, Upgrade
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Herramientas de refactorización de código
 
-AEM AEM AEM as a Cloud Service Descubra cómo las herramientas de refactorización de código de la ayudan a automatizar la conversión de los proyectos existentes para que sean compatibles con la.
+AEM AEM Obtenga información sobre cómo las herramientas de refactorización de código de ayudan a automatizar la conversión de los proyectos existentes para que sean compatibles con AEM as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336693?quality=12&learn=on)

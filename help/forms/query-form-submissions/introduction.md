@@ -33,9 +33,9 @@ Para seguir este tutorial, se recomienda tener acceso a lo siguiente
 
 
 
-Si es un desarrollador y desea comprender el código y otros detalles de esta implementación de caso de uso, importe esto [AEM proyecto en VSCode o IntelliJ.](assets/azuredemoproject.zip)
+AEM Si usted es un desarrollador y desea entender el código y otros detalles de esta implementación de caso de uso, importe este [proyecto en VSCode o IntelliJ.](assets/azuredemoproject.zip)
 
-Si solo desea que este ejemplo funcione en su sistema local, siga los pasos mencionados [parte 5 de este tutorial](./part5.md)
+Si solo desea que este ejemplo funcione en su sistema local, siga los pasos mencionados [parte5 de este tutorial](./part5.md)
 
 Se han utilizado los siguientes pasos para crear la solución
 

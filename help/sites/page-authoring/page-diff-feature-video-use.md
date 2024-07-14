@@ -28,12 +28,12 @@ Las funcionalidades de diferencia de página de AEM Sites muestran una vista rá
 
 >[!VIDEO](https://video.tv.adobe.com/v/32152?quality=12&learn=on)
 
-**Cambios del HTML**
+**cambios de HTML**
 
 * **Verde**: contenido nuevo
 * **Rojo**: contenido eliminado
 
-**Cambios de componentes**
+**Cambios de componente**
 
 * **Verde**: nuevo componente
 * **Rojo**: componente eliminado

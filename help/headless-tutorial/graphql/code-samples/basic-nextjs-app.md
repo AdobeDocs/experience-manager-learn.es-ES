@@ -23,15 +23,15 @@ ht-degree: 0%
 
 # Aplicación básica Next.js
 
-Esta [Next.js](https://nextjs.org/) AEM La aplicación muestra cómo consultar contenido mediante API de GraphQL de mediante consultas persistentes. Esta aplicación presenta un filtro de WKND Adventures, y al seleccionar una aventura, muestra las aventuras con todos los detalles.
+AEM Esta aplicación [Next.js](https://nextjs.org/) muestra cómo realizar consultas en el contenido usando API de GraphQL de uso de consultas persistentes de forma de. Esta aplicación presenta un filtro de WKND Adventures, y al seleccionar una aventura, muestra las aventuras con todos los detalles.
 
 Este código:
 
-+ AEM Se conecta a un servicio de publicación de y no requiere autenticación
++ AEM Se conecta a un servicio de Publish de y no requiere autenticación
 + Utiliza las consultas persistentes de WKND: `wknd-shared/adventures-all` y `wknd-shared/adventures-by-slug`
 
-Para obtener una descripción más detallada de cómo se crea esta aplicación Next.js, consulte la [ejemplo de documentación de la aplicación Next.js](../example-apps/next-js.md).
+Para obtener una revisión más detallada de cómo se crea esta aplicación Next.js, consulte [ejemplo de documentación de la aplicación Next.js](../example-apps/next-js.md).
 
 >[!IMPORTANT]
 >
-> Codesandbox.io no admite la edición de la aplicación Next.js en el IDE incrustado. Para editar este ejemplo de código, [abra la aplicación Next.js directamente en codesandbox.io.](https://codesandbox.io/s/wknd-next-js-app-u8x5f8).
+> Codesandbox.io no admite la edición de la aplicación Next.js en el IDE incrustado. Para editar este ejemplo de código, [abra la aplicación Next.js directamente en codesandbox.io](https://codesandbox.io/s/wknd-next-js-app-u8x5f8).

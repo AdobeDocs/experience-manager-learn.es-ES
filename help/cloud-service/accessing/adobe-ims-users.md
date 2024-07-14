@@ -26,11 +26,11 @@ ht-degree: 74%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=es#how-to-set-up" text="Incorporación de usuarios en Admin Console"
 >additional-url="https://helpx.adobe.com/es/enterprise/admin-guide.html/enterprise/using/identity.ug.html" text="Información general sobre la identidad de Adobe Admin Console"
 
-AEM Los usuarios que requieren acceso al servicio de autor de se administran como [Usuarios de IMS de Adobe](https://helpx.adobe.com/es/enterprise/using/set-up-identity.html) in [Admin Console del Adobe](https://adminconsole.adobe.com). Obtenga información sobre qué son los usuarios de Adobe IMS y cómo se accede a ellos y se administran en Admin Console.
+AEM Los usuarios que requieren acceso al servicio de autor de la se administran como [usuarios de IMS de Adobe](https://helpx.adobe.com/es/enterprise/using/set-up-identity.html) en el Admin Console de [Adobe](https://adminconsole.adobe.com). Obtenga información sobre qué son los usuarios de Adobe IMS y cómo se accede a ellos y se administran en Admin Console.
 
 >[!VIDEO](https://video.tv.adobe.com/v/39149?quality=12&learn=on)
 
 ## Recursos adicionales
 
-+ [Incorporación de usuarios en la documentación de Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#onboarding-users-in-admin-console)
-+ [Documentación general de Adobe Admin Console Identity](https://helpx.adobe.com/es/enterprise/using/identity.html)
++ [Incorporación de usuarios a la documentación de Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#onboarding-users-in-admin-console)
++ [Documentación de información general de identidad de Adobe Admin Console](https://helpx.adobe.com/es/enterprise/using/identity.html)

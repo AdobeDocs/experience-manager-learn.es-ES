@@ -32,9 +32,10 @@ Las variables de entorno estándar se pueden configurar y administrar mediante C
 
 
 La captura de pantalla siguiente muestra las variables de entorno azure_key y azure_connection_string definidas
-![environment_variables](assets/environment-variables.png)
+![variables_de_entorno](assets/environment-variables.png)
 
-Estas variables de entorno se pueden especificar en los archivos de configuración para utilizarlas en el entorno adecuado. Por ejemplo, si desea que todas las instancias de autor utilicen estas variables de entorno, definirá el archivo de configuración en la carpeta config.author como se especifica a continuación
+Estas variables de entorno se pueden especificar en los archivos de configuración para utilizarlas en el entorno adecuado
+Por ejemplo, si desea que todas las instancias de autor utilicen estas variables de entorno, defina el archivo de configuración en la carpeta config.author como se especifica a continuación
 
 ## Crear archivo de configuración
 
@@ -46,7 +47,7 @@ org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider-integr
 
 ![config.author](assets/config-author.png)
 
-Copie el siguiente texto en el archivo que creó en el paso anterior. El código de este archivo anula el valor de las propiedades accountName y accountKey por las variables de entorno **azure_connection_string** y **azure_key**.
+Copie el siguiente texto en el archivo que creó en el paso anterior. El código de este archivo está anulando el valor de las propiedades accountName y accountKey con las variables de entorno **azure_connection_string** y **azure_key**.
 
 ```json
 {

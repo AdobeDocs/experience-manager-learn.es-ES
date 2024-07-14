@@ -25,11 +25,11 @@ En esta parte, se crea un fragmento de documento para contener el nombre y la di
 
 >[!VIDEO](https://video.tv.adobe.com/v/22350?quality=12&learn=on)
 
-Los fragmentos de documento contienen el contenido de texto de los documentos de comunicaciones interactivas. Este contenido de texto puede ser texto estático o insertarse desde los valores de los elementos del modelo de datos subyacentes. Por ejemplo **Estimado _{name}_**, donde Estimado es texto estático y el nombre es el nombre del elemento del modelo de datos de formulario. En tiempo de ejecución, esto se resolverá en **Querida Gloria Ríos**o **Estimado John Jacobs:**en función del valor del elemento name.
+Los fragmentos de documento contienen el contenido de texto de los documentos de comunicaciones interactivas. Este contenido de texto puede ser texto estático o insertarse desde los valores de los elementos del modelo de datos subyacentes. Por ejemplo **Estimado _{name}_**, donde Estimado es texto estático y el nombre es el nombre del elemento del modelo de datos de formulario. En tiempo de ejecución, esto se resolverá en **Estimada Gloria Rios**o **Estimado John Jacobs**según el valor del elemento name.
 
 El editor de texto enriquecido es lo suficientemente intuitivo como para que un usuario empresarial cree texto e inserte elementos de datos de formulario. El editor de fragmentos de documento tiene la capacidad de dar formato al texto, especificar tipos de fuentes y estilos, insertar caracteres especiales y crear hipervínculos.
 
-El editor de fragmentos de documento también tiene la capacidad de insertar condiciones en línea en el texto como se muestra en este [video](https://helpx.adobe.com/experience-manager/kt/forms/using/editing-improvements-correspondence-mgmt-feature-video-use.html)
+El editor de fragmentos de documento también puede insertar condiciones dentro de la línea en el texto, como se muestra en este [vídeo](https://helpx.adobe.com/experience-manager/kt/forms/using/editing-improvements-correspondence-mgmt-feature-video-use.html)
 
 >[!NOTE]
 >

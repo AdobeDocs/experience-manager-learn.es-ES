@@ -29,7 +29,7 @@ Si el XDP y el formulario adaptable no están basados en ningún esquema, siga l
 
 Cree un formulario adaptable y asegúrese de que los nombres de los campos del formulario adaptable sean idénticos a los nombres de los campos de la plantilla xdp.
 Anote el nombre del elemento raíz de la plantilla xdp.
-![elemento-raíz](assets/xfa-root-element.png)
+![elemento raíz](assets/xfa-root-element.png)
 
 ### Biblioteca de cliente
 
@@ -78,11 +78,12 @@ Si su xdp no se basa en XSD, siga los siguientes pasos para crear el XSD (esquem
 
 ### Generar XSD a partir de los datos xml
 
-Puede utilizar cualquiera de las herramientas gratuitas en línea para [generar XSD](https://www.freeformatter.com/xsd-generator.html) a partir de los datos xml generados en el paso anterior.
+Puede usar cualquiera de las herramientas en línea gratuitas para [generar XSD](https://www.freeformatter.com/xsd-generator.html) a partir de los datos xml generados en el paso anterior.
 
 ### Crear formulario adaptable
 
-Cree un formulario adaptable basado en el XSD del paso anterior. Asocie el formulario para utilizar la biblioteca de cliente &quot;irs&quot;. Esta biblioteca de cliente tiene el código para realizar una llamada al POST al servlet que devuelve el PDF a la aplicación que realiza la llamada. El siguiente código se activa cuando se activa la función _Descargar PDF_ se hace clic
+Cree un formulario adaptable basado en el XSD del paso anterior. Asocie el formulario para utilizar la biblioteca de cliente &quot;irs&quot;. Esta biblioteca de cliente tiene el código para realizar una llamada al POST al servlet, que devuelve el PDF a la aplicación que realiza la llamada
+El siguiente código se activa cuando se hace clic en el _PDF de descarga_
 
 ```javascript
 $(document).ready(function() {
@@ -117,7 +118,7 @@ $(document).ready(function() {
 
 ## Crear servlet personalizado
 
-Cree un servlet personalizado que combine los datos con la plantilla XDP y devuelva el PDF. El código para lograrlo se enumera a continuación. El servlet personalizado forma parte del [Paquete AEMFormsDocumentServices.core-1.0-SNAPSHOT](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)).
+Cree un servlet personalizado que combine los datos con la plantilla XDP y devuelva el PDF. El código para lograrlo se enumera a continuación. El servlet personalizado forma parte del [paquete AEMFormsDocumentServices.core-1.0-SNAPSHOT](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)).
 
 ```java
 public class GenerateIInteractiveDor extends SlingAllMethodsServlet {
@@ -217,14 +218,15 @@ En el código de ejemplo, extraemos el nombre xdp y otros parámetros del objeto
 Para probar esto en el servidor local, siga los siguientes pasos:
 
 1. [Descargar e instalar el paquete DevelopersWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-1. Agregue la siguiente entrada en el servicio de asignador de usuarios del servicio Apache Sling DesarrolloConUsuarioServicio.core:getformsresourceresolver=fd-service
-1. [Descargar e instalar el paquete personalizado de Document Services](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar). Tiene el servlet para combinar los datos con la plantilla XDP y transmitir el PDF de vuelta
+1. Agregue la siguiente entrada en el servicio asignador de usuarios del servicio Apache Sling
+DesarrollarWithServiceUser.core:getformsresourceresolver=fd-service
+1. [Descargue e instale el paquete DocumentServices personalizado](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar). Tiene el servlet para combinar los datos con la plantilla XDP y transmitir el PDF de vuelta
 1. [Importar la biblioteca de cliente](assets/generate-interactive-dor-client-lib.zip)
-1. [Importar los recursos del artículo (formulario adaptable, plantillas XDP y XSD)](assets/generate-interactive-dor-sample-assets.zip)
-1. [Previsualizar formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/f8918complete/jcr:content?wcmmode=disabled)
+1. [Importar el artículo Assets(formulario adaptable, plantillas XDP y XSD)](assets/generate-interactive-dor-sample-assets.zip)
+1. [Vista previa de formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/f8918complete/jcr:content?wcmmode=disabled)
 1. Rellene algunos de los campos del formulario.
 1. Haga clic en Descargar PDF para obtener el PDF. Es posible que tenga que esperar unos segundos para que el PDF descargue.
 
 >[!NOTE]
 >
->Puede probar el mismo caso de uso con [formulario adaptable no basado en xsd](http://localhost:4502/content/dam/formsanddocuments/two/jcr:content?wcmmode=disabled). Asegúrese de pasar los parámetros adecuados al extremo posterior en streampdf.js, ubicado en irs clientlib.
+>Puede probar el mismo caso de uso con [formulario adaptable no basado en XSD](http://localhost:4502/content/dam/formsanddocuments/two/jcr:content?wcmmode=disabled). Asegúrese de pasar los parámetros adecuados al extremo posterior en streampdf.js, ubicado en irs clientlib.

@@ -20,25 +20,25 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->AEM Para que los recursos de ejemplo funcionen en el sistema, se da por hecho que tiene las instancias de autor y publicación en ejecución en el puerto 4502 y 4503, respectivamente, en el que se ha ejecutado la instancia de autor y de publicación, respectivamente. AEM También se da por hecho que el autor de la es accesible a través de `admin`/`admin`. Si se han cambiado los números de puerto o la contraseña de administrador, estos recursos de ejemplo no funcionarán. Debe crear sus propios recursos utilizando el código de ejemplo proporcionado.
+>AEM Para que los recursos de ejemplo funcionen en el sistema, se da por hecho que tiene las instancias de autor y Publish de la aplicación de ejemplo que se ejecutan en el puerto 4502 y 4503, respectivamente. AEM También se supone que el autor de la es accesible a través de `admin`/`admin`. Si se han cambiado los números de puerto o la contraseña de administrador, estos recursos de ejemplo no funcionarán. Debe crear sus propios recursos utilizando el código de ejemplo proporcionado.
 
 Para que este caso de uso funcione en el sistema local, siga estos pasos:
 
-* AEM AEM Instale la instancia de autor de la instalación en el puerto 4502 y la instancia de publicación de la en el puerto 4503
-* [Siga las instrucciones especificadas en Desarrollo con usuario de servicio en AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html). AEM Asegúrese de crear el usuario del servicio e implementar el paquete en la instancia de autor y publicación de la.
+* AEM AEM Instale la instancia de Autor de la en el puerto 4502 y la instancia de Publish de la en el puerto 4503
+* [Siga las instrucciones especificadas en Desarrollo con usuario de servicio en AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html). AEM Asegúrese de crear el usuario del servicio e implementar el paquete en la instancia de autor de la y en la instancia de Publish.
 * [Abra la configuración de osgi](http://localhost:4503/system/console/configMgr).
-* Buscar por  **Filtro de referente de Apache Sling**. Asegúrese de que la casilla de verificación Permitir vacío está seleccionada.
-* [Implementar el paquete personalizado de AEM FormsDocumentService](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)AEM . Este paquete debe implementarse en la instancia de publicación de la. Este paquete tiene el código para generar un PDF interactivo desde un formulario móvil.
+* Busque **Filtro de referente de Apache Sling**. Asegúrese de que la casilla de verificación Permitir vacío está seleccionada.
+* AEM [Implemente el paquete AEMFormDocumentService personalizado](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar). Este paquete debe implementarse en la instancia de Publish de su. Este paquete tiene el código para generar un PDF interactivo desde un formulario móvil.
 * [Descargue y descomprima los recursos relacionados con este artículo.](assets/offline-pdf-submission-assets.zip) Obtendrá lo siguiente
-   * **offline-submission-profile.zip** AEM - Este paquete de contiene el perfil personalizado que le permite descargar el pdf interactivo en su sistema de archivos local. AEM Implemente este paquete en la instancia de publicación de la.
-   * **xdp-form-and-workflow.zip** AEM : Este paquete de contiene XDP, un flujo de trabajo de ejemplo y un lanzador configurado en el contenido del nodo/envíos de archivos PDF. AEM Implemente este paquete tanto en la instancia de autor como en la instancia de publicación de la.
-   * **HandlePDFSubmission.HandlePDFSubmission.core-1.0-SNAPSHOT.jar** AEM - Este es el paquete de que hace la mayor parte del trabajo. Este paquete contiene el servlet montado en `/bin/startworkflow`. Este servlet guarda los datos de formulario enviados en `/content/pdfsubmissions` AEM nodo en el repositorio de. AEM Implemente este paquete tanto en la instancia de autor como en la instancia de publicación de la.
-* [Previsualización del formulario móvil](http://localhost:4503/content/dam/formsanddocuments/testsubmision.xdp/jcr:content)
+   * AEM **offline-submission-profile.zip**: este paquete de contiene el perfil personalizado que le permite descargar el PDF interactivo en su sistema de archivos local. AEM Implemente este paquete en la instancia de Publish de la.
+   * AEM **xdp-form-and-workflow.zip**: este paquete contiene XDP, un flujo de trabajo de ejemplo y un lanzador configurado en el contenido del nodo/envíos PDF. AEM Implemente este paquete tanto en la instancia de autor de la como en la de Publish.
+   * AEM **HandlePDFSubmission.HandlePDFSubmission.core-1.0-SNAPSHOT.jar**: este es el paquete de la que realiza la mayor parte del trabajo. Este paquete contiene el servlet montado en `/bin/startworkflow`. AEM Este servlet guarda los datos de formulario enviados en el nodo `/content/pdfsubmissions` en el repositorio de. AEM Implemente este paquete tanto en la instancia de autor de como en la de Publish.
+* [Vista previa del formulario móvil](http://localhost:4503/content/dam/formsanddocuments/testsubmision.xdp/jcr:content)
 * Rellene varios campos y, a continuación, haga clic en el botón de la barra de herramientas para descargar el PDF interactivo.
 * Rellene el PDF descargado con Acrobat y pulse el botón Enviar.
 * Debería recibir un mensaje de éxito
 * AEM Inicie sesión en la instancia de autor de como administrador
-* [AEM Compruebe la bandeja de entrada de](http://localhost:4502/aem/inbox)
+* AEM [Comprobar la bandeja de entrada de la](http://localhost:4502/aem/inbox)
 * Debe contar con un elemento de trabajo para revisar el PDF enviado
 
 >[!NOTE]

@@ -60,5 +60,5 @@ En este vídeo, se tratan las siguientes funciones o características:
 
 ## Recursos adicionales {#additional-resources}
 
-* [Edición de documentación de contenido de página](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=es)
+* [Editando documentación de contenido de página](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=es)
 * [Guía rápida para la creación de páginas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)

@@ -1,6 +1,6 @@
 ---
 title: Configuración del proyecto de BPA y CAM
-description: AEM Descubra cómo el Analizador de prácticas recomendadas y Cloud Acceleration Manager proporcionan una guía personalizada para migrar a la as a Cloud Service de la.
+description: Descubra cómo el Analizador de prácticas recomendadas y Cloud Acceleration Manager proporcionan una guía personalizada para migrar a AEM as a Cloud Service.
 version: Cloud Service
 feature: Developer Tools
 topic: Migration, Upgrade
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 # Analizador de prácticas recomendadas y Cloud Acceleration Manager
 
-AEM Descubra cómo el Analizador de prácticas recomendadas (BPA) y Cloud Acceleration Manager (CAM) proporcionan una guía personalizada para migrar a as a Cloud Service. 
+Descubra cómo el Analizador de prácticas recomendadas (BPA) y Cloud Acceleration Manager (CAM) proporcionan una guía personalizada para migrar a AEM as a Cloud Service. 
 
 >[!VIDEO](https://video.tv.adobe.com/v/336957?quality=12&learn=on)
 
@@ -27,14 +27,14 @@ AEM Descubra cómo el Analizador de prácticas recomendadas (BPA) y Cloud Accele
 
 ![Diagrama de alto nivel de BPA y CAM](assets/bpa-cam-diagram.png)
 
-AEM El paquete BPA debe instalarse en un clon del entorno de producción de la versión 6.x de la. AEM El BPA generará un informe que se puede cargar en el CAM, que proporcionará orientación sobre las actividades clave que deben llevarse a cabo para pasar a la fase as a Cloud Service de la.
+AEM El paquete BPA debe instalarse en un clon del entorno de producción de la versión 6.x de la. El BPA generará un informe que luego se podrá cargar en el CAM, el cual proporcionará orientación sobre las actividades clave que deben llevarse a cabo para poder pasar a AEM as a Cloud Service.
 
 ## Actividades clave
 
 + Cree un clon del entorno de producción 6.x. A medida que migra contenido y refactoriza código, tener un clon de un entorno de producción es valioso para probar varias herramientas y cambios.
-+ Descargue la herramienta BPA más reciente de [Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html) AEM e instale en su entorno clonado de 6.x.
++ AEM Descargue la herramienta BPA más reciente del [Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html) e instálela en su entorno clonado de la versión 6.x de la versión 6.x de la aplicación.
 + Utilice la herramienta BPA para generar un informe que se pueda cargar en Cloud Acceleration Manager (CAM). Se accede a CAM a través de [https://experience.adobe.com/](https://experience.adobe.com/) > **Experience Manager** > **Cloud Acceleration Manager**.
-+ AEM Utilice CAM para proporcionar orientación sobre las actualizaciones que se deben realizar en la base de código y el entorno actuales para pasar a la versión as a Cloud Service de la.
++ Utilice CAM para proporcionar orientación sobre las actualizaciones que se deben realizar en la base de código y el entorno actuales para poder pasar a AEM as a Cloud Service.
 
 ## Ejercicio práctico
 
@@ -42,11 +42,11 @@ Aplique sus conocimientos probando lo que ha aprendido con este ejercicio práct
 
 Antes de probar el ejercicio práctico, asegúrese de haber visto y entendido el vídeo anterior y los siguientes materiales:
 
-+ [AEM Pensar de manera diferente sobre el as a Cloud Service](./introduction.md)
-+ [AEM ¿Qué está as a Cloud Service?](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/what-is-aem-as-a-cloud-service.html?lang=en)
++ [Pensar de forma diferente sobre AEM as a Cloud Service](./introduction.md)
++ [¿Qué es AEM as a Cloud Service?](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/what-is-aem-as-a-cloud-service.html?lang=en)
 + [Arquitectura de AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=en)
 + [Contenido mutable e inmutable](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/basics/mutable-immutable.html?lang=en)
-+ [AEM Diferencias en el desarrollo para la as a Cloud Service AEM y la 6.x](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#developing)
++ [Diferencias en el desarrollo de AEM as a Cloud Service AEM y de la versión 6.x 1}](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#developing)
 
 <table style="border-width:0">
     <tr>

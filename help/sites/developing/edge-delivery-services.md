@@ -17,4 +17,4 @@ ht-degree: 0%
 
 # desarrollo de Edge Delivery Services
 
-El desarrollo de sitios web en Adobe Experience Manager AEM () para Edge Delivery Services AEM difiere del desarrollo tradicional de sitios web de la. Para obtener directrices específicas y prácticas recomendadas adaptadas a los Edge Delivery Services, consulte la [Documentación de desarrollo de Edge Delivery Services](../edge-delivery-services/developing/prerequisites.md). Este recurso proporciona información esencial y pasos para garantizar que el proceso de desarrollo se ajuste a los requisitos de los Edge Delivery Services.
+El desarrollo de sitios web en Adobe Experience Manager AEM () para Edge Delivery Services AEM difiere del desarrollo tradicional de sitios web de la. Para obtener directrices específicas y prácticas recomendadas adaptadas a los Edge Delivery Services, consulte la [documentación de desarrollo de Edge Delivery Services](../edge-delivery-services/developing/prerequisites.md). Este recurso proporciona información esencial y pasos para garantizar que el proceso de desarrollo se ajuste a los requisitos de los Edge Delivery Services.

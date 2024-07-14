@@ -27,11 +27,11 @@ Obtenga información acerca de la modernización de repositorios, el contenido m
 
 ![Modernizador de repositorio](./assets/repository-modernizer.png)
 
-Como parte de la refactorización del código base, utilice el [Herramienta Modernizador de repositorio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html?lang=es) para reestructurar una base de código 6.x a una estructura más moderna.
+Como parte de la refactorización de la base de código, use la [herramienta Modernizador de repositorio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html?lang=es) para reestructurar una base de código 6.x a una estructura más moderna.
 
 ## Actividades clave
 
-* Utilice el [Modernizador de repositorio de Adobe I/O](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationrepository-modernizer) AEM herramienta para reestructurar un proyecto de modo que coincida con la estructura esperada de un proyecto as a Cloud Service de la.
+* Use la herramienta [Modernizador de repositorio de Adobe I/O](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationrepository-modernizer) para reestructurar un proyecto de modo que coincida con la estructura esperada de un proyecto de AEM as a Cloud Service.
 * Ajuste y corrija manualmente cualquier error de compilación en la base de código actualizada.
-* Configuración de un [entorno de desarrollo local](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=es) e implementar la base de código actualizada. Itere hasta que el proyecto esté en un estado estable.
-* AEM Implemente la base de código actualizada en un entorno de desarrollo as a Cloud Service de y siga validando.
+* Configure un [entorno de desarrollo local](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=es) e implemente el código base actualizado. Itere hasta que el proyecto esté en un estado estable.
+* Implemente el código base actualizado en un entorno de desarrollo de AEM as a Cloud Service y continúe validando.

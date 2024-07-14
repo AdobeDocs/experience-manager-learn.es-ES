@@ -28,7 +28,7 @@ ht-degree: 19%
    + [Metadatos masivos](document-authoring/bulk-metadata.md)
    + [Metadatos de página](document-authoring/page-metadata.md)
    + [Autenticación de autor](document-authoring/author-authentication.md)
-   + Cómo:{#how-to}
+   + Cómo {#how-to}
       + [Auditoria de documentos](./document-authoring/how-to/document-audit.md)
       + [Permisos de documento](./document-authoring/how-to/document-permissions.md)
       + [Versiones de documento](./document-authoring/how-to/document-versions.md)
@@ -78,7 +78,7 @@ ht-degree: 19%
 + IA generativa {#generative-ai}
    + [Generar variaciones](./generative-ai/generate-variations.md)
 + Fragmentos de contenido {#content-fragments}
-   + [Consola Fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
+   + [Consola de fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
    + [Creación de fragmentos de contenido](content-fragments/content-fragments-feature-video-use.md)
    + [Entrega de fragmentos de contenido](content-fragments/content-fragments-delivery-feature-video-use.md)
    + [Traducción de fragmentos de contenido](content-fragments/content-fragments-translation-feature-video-use.md)
@@ -86,10 +86,10 @@ ht-degree: 19%
 + Fragmentos de experiencias {#experience-fragments}
    + [Uso de fragmentos de experiencias](experience-fragments/experience-fragments-feature-video-use.md)
    + [Componentes](experience-fragments/building-blocks.md)
-   + [Fragmentos de contenido frente a fragmentos de experiencias](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html){target=_blank}
+   + [Fragmentos de contenido vs. Fragmentos de experiencias](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html){target=_blank}
 + Edge Delivery Services{#edge-delivery-services}
    + [Información general](./edge-delivery-services/overview.md)
-   + Desarrollo{#developing}
+   + Desarrollando{#developing}
       + [Requisitos previos](edge-delivery-services/developing/prerequisites.md)
       + [AEM placa de caldera de](edge-delivery-services/developing/aem-boilerplate.md)
       + [Repositorio de contenido](edge-delivery-services/developing/content-repository.md)
@@ -98,7 +98,7 @@ ht-degree: 19%
       + [Estructura del documento](edge-delivery-services/developing/document-structure.md)
       + [Desarrollo local](edge-delivery-services/developing/local-development.md)
       + [Git](edge-delivery-services/developing/git.md)
-   + Procedimientos{#how-to}
+   + Cómo...{#how-to}
       + [Fuentes RSS](edge-delivery-services/how-to/rss.md)
       + [Compartir en redes sociales](edge-delivery-services/how-to/social-media-sharing.md)
       + [Eliminación de páginas](edge-delivery-services/how-to/delete-page.md)
@@ -106,8 +106,8 @@ ht-degree: 19%
    + [Edge Delivery Services](developing/edge-delivery-services.md)
    + [Tipo de archivo del proyecto AEM](developing/aem-project-archetype.md)
    + [Introducción a AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es){target=_blank}
-   + [AEM Introducción a la tecnología sin encabezado de](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es){target=_blank}
-   + [AEM SPA Introducción a Editor de y React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html){target=_blank}
+   + AEM [Introducción a la tecnología sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es){target=_blank} de la interfaz de usuario
+   + AEM SPA [Introducción al Editor de y React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html){target=_blank}
    + [Ampliación de las propiedades de página](developing/page-properties-technical-video-develop.md)
    + [Puntos de interrupción interactivos](developing/responsive-breakpoints.md)
    + [Desarrollo con el sistema de estilos](developing/style-system-technical-video-understand.md)
@@ -130,7 +130,7 @@ ht-degree: 19%
    + [Mapas del sitio](./seo/sitemaps.md)
 + Aplicaciones de una sola página {#spa-editor}
    + [SPA Uso del editor de](spa-editor/spa-editor-framework-feature-video-use.md)
-   + [AEM SPA Introducción a Editor de y React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html){target=_blank}
+   + AEM SPA [Introducción al Editor de y React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html){target=_blank}
 + Administración de varios sitios {#multi-site-management}
    + [Introducción a la copia de idioma](./multi-site-management/language-copy-overview.md)
    + [Live Copy y modelo](./multi-site-management/live-copy-and-blueprint.md)
@@ -176,8 +176,8 @@ ht-degree: 19%
       + [Crear cuenta de Cloud Service de Adobe Target](integrations/adobe-target/setup-aem-target-cloud-service.md)
       + [Exportar fragmentos de experiencias a Adobe Target](integrations/adobe-target/export-experience-fragment-target.md)
       + [Crear actividad de Target mediante ofertas de fragmentos de experiencias](integrations/adobe-target/create-target-activity.md)
-      + [Personalización mediante el Compositor de experiencias visuales](integrations/adobe-target/personalization-using-vec.md)
-      + [Personalización de la experiencia de página web completa](integrations/adobe-target/personalization-web-page.md)
+      + [Personalization con el Compositor de experiencias visuales](integrations/adobe-target/personalization-using-vec.md)
+      + [Personalization de experiencia de página web completa](integrations/adobe-target/personalization-web-page.md)
 + Aprenda De Sus Compañeros {#expert-resources}
    + [Información general](expert-resources/learn-from-your-peers-overview.md)
    + [Evaluación de madurez de AEM Sites](expert-resources/maturity-assessment.md)

@@ -1,6 +1,6 @@
 ---
 title: AEM Vaciado de Dispatcher
-description: AEM Comprender cómo invalida los archivos de caché antiguos de Dispatcher.
+description: AEM Obtenga información sobre cómo invalida los archivos de caché antiguos de Dispatcher.
 version: 6.5
 topic: Administration
 feature: Dispatcher
@@ -30,20 +30,20 @@ Este documento le mostrará cómo se produce el vaciado y le explicará el mecan
 
 ### Orden de las operaciones
 
-El flujo de trabajo habitual se describe de la mejor manera cuando los autores de contenido activan una página, cuando el editor recibe el nuevo contenido, se déclencheur una solicitud de vaciado para Dispatcher como se muestra en el siguiente diagrama:
-![El autor activa el contenido, lo que déclencheur al editor enviar una solicitud de vaciado a Dispatcher](assets/disp-flushing/dispatcher-flushing-order-of-events.png "dispatcher-flushing-order-of-events")
+El flujo de trabajo habitual se describe de la mejor manera cuando los autores de contenido activan una página, cuando el editor recibe el nuevo contenido, se déclencheur una solicitud de vaciado para la Dispatcher, como se muestra en el siguiente diagrama:
+![el autor activa el contenido, lo que déclencheur al editor enviar una solicitud de vaciado a Dispatcher](assets/disp-flushing/dispatcher-flushing-order-of-events.png "dispatcher-flushing-order-of-events")
 Esta sucesión de eventos demuestra que solo vaciamos elementos cuando son nuevos o han sido modificados.  Esto garantiza que el editor ha recibido el contenido antes de borrar la caché para evitar condiciones de carrera donde el vaciado podría ocurrir antes de que el editor pueda seleccionar los cambios.
 
 ## Agentes de replicación
 
 En el autor, hay un agente de replicación configurado para indicar al editor que cuando algo se activa, tiene el déclencheur de enviar el archivo y todas sus dependencias al editor.
 
-Cuando el editor recibe el archivo, tiene un agente de replicación configurado para indicar qué instancia de Dispatcher almacena en déclencheur el evento de recepción.  Luego serializa una solicitud de vaciado y la publica en Dispatcher.
+Cuando el editor recibe el archivo, tiene un agente de replicación configurado para indicar qué Dispatcher está en déclencheur con el evento de recepción.  Entonces, se serializa una solicitud de vaciado y se publica en Dispatcher.
 
 ### AGENTE DE REPLICACIÓN DE AUTOR
 
 Estas son algunas capturas de pantalla de un agente de replicación estándar configurado
-![AEM captura de pantalla de un agente de replicación estándar de la página web de la /etc/replication.html](assets/disp-flushing/author-rep-agent-example.png "author-rep-agent-example")
+AEM ![captura de pantalla de un agente de replicación estándar de la página web de /etc/replication.html](assets/disp-flushing/author-rep-agent-example.png "author-rep-agent-example")
 
 Normalmente, hay uno o dos agentes de replicación configurados en el autor para cada editor para el que replican contenido.
 
@@ -54,45 +54,45 @@ Segundo, el agente inverso.  Esto es opcional y está configurado para comproba
 ### AGENTE DE REPLICACIÓN DEL EDITOR
 
 Estas son algunas capturas de pantalla de un agente de replicación de vaciado estándar
-![AEM captura de pantalla de un agente de replicación de vaciado estándar de la página web de /etc/replication.html](assets/disp-flushing/publish-flush-rep-agent-example.png "publish-flush-rep-agent-example")
+AEM ![captura de pantalla de un agente de replicación de vaciado estándar de la página web de /etc/replication.html](assets/disp-flushing/publish-flush-rep-agent-example.png "publish-flush-rep-agent-example")
 
-### DISPATCHER VACÍA LA REPLICACIÓN RECIBIENDO HOST VIRTUAL
+### VACIAR REPLICACIÓN DE DISPATCHER RECIBIENDO HOST VIRTUAL
 
 El módulo de Dispatcher busca encabezados particulares para saber cuándo una solicitud de POST AEM se tiene que pasar a los procesamientos o si está serializada como una solicitud de vaciado y la debe administrar el propio controlador de Dispatcher.
 
 A continuación, se muestra una captura de pantalla de la página de configuración que muestra estos valores:
-![imagen de la pestaña de configuración principal con el tipo de serialización de vaciado del Dispatcher](assets/disp-flushing/disp-flush-agent1.png "disp-flush-agent1")
+![imagen de la pestaña de configuración principal con el tipo de serialización Dispatcher Flush](assets/disp-flushing/disp-flush-agent1.png "disp-flush-agent1")
 
-La página de configuración predeterminada muestra `Serialization Type` as `Dispatcher Flush` y establece el nivel de error
+La página de configuración predeterminada muestra `Serialization Type` como `Dispatcher Flush` y establece el nivel de error
 
-![Captura de pantalla de la pestaña de transporte del agente de replicación.  Esto muestra el URI para publicar solicitudes de vaciado en.  /dispatcher/invalidate.cache](assets/disp-flushing/disp-flush-agent2.png "disp-flush-agent2")
+![Captura de pantalla de la ficha de transporte del agente de replicación.  Esto muestra el URI para publicar solicitudes de vaciado en.  /dispatcher/invalidate.cache](assets/disp-flushing/disp-flush-agent2.png "disp-flush-agent2")
 
-En el `Transport` puede ver la pestaña `URI` está configurado para indicar la dirección IP de Dispatcher que recibirá las solicitudes de vaciado.  La ruta `/dispatcher/invalidate.cache` no es la forma en que el módulo determina si hay vaciado. Solo es un punto final obvio que se puede ver en el registro de acceso para saber si se produjo una solicitud de vaciado.  En el `Extended` vamos a revisar las cosas que están ahí para clasificar que esto es una solicitud de vaciado para el módulo de Dispatcher.
+En la ficha `Transport` puede ver que `URI` se ha configurado para que apunte a la dirección IP del Dispatcher que recibirá las solicitudes de vaciado.  La ruta de acceso `/dispatcher/invalidate.cache` no es la forma en que el módulo determina si hay vaciado. Solo es un punto final obvio que se puede ver en el registro de acceso para saber si se produjo una solicitud de vaciado.  En la ficha `Extended` veremos qué elementos permiten comprobar que se trata de una solicitud de vaciado para el módulo Dispatcher.
 
-![Captura de pantalla de la pestaña Ampliado del agente de replicación.  Tenga en cuenta los encabezados que se envían con la solicitud del POST para indicar al distribuidor que se debe vaciar](assets/disp-flushing/disp-flush-agent3.png "disp-flush-agent3")
+![Captura de pantalla de la ficha Ampliado del agente de replicación.  Observe los encabezados que se envían con la solicitud del POST enviada para indicar al Dispatcher que debe vaciar ](assets/disp-flushing/disp-flush-agent3.png "disp-flush-agent3")
 
-El `HTTP Method` para solicitudes de vaciado es solo una `GET` solicitud con algunos encabezados de solicitud especiales:
+El `HTTP Method` para solicitudes de vaciado es solo una solicitud de `GET` con algunos encabezados especiales:
 - CQ-Action
-   - AEM Esto utiliza una variable de basada en la solicitud y el valor es normalmente *activar o eliminar*
+   - AEM Utiliza una variable de basada en la solicitud y su valor es normalmente *activar o eliminar*
 - CQ-Handle
-   - AEM Esto utiliza una variable de basada en la solicitud y el valor es normalmente toda la ruta al elemento vaciado, por ejemplo `/content/dam/logo.jpg`
+   - AEM Utiliza una variable de basada en la solicitud y el valor es normalmente la ruta completa al elemento vaciado, por ejemplo `/content/dam/logo.jpg`
 - CQ-Path
-   - AEM Esto utiliza una variable de basada en la solicitud y el valor es normalmente toda la ruta al elemento que se está vaciando, por ejemplo `/content/dam`
+   - AEM Utiliza una variable de basada en la solicitud y el valor suele ser la ruta completa al elemento que se está vaciando, por ejemplo `/content/dam`
 - Host
-   - Aquí es donde la variable `Host` El encabezado se suplanta para dirigirse a un `VirtualHost` que está configurado en el servidor web Apache del distribuidor (`/etc/httpd/conf.d/enabled_vhosts/aem_flush.vhost`).  Es un valor codificado que coincide con una entrada de `aem_flush.vhost` del archivo `ServerName` o `ServerAlias`
+   - Aquí es donde el encabezado `Host` se suplanta para asignarse a un `VirtualHost` específico configurado en el servidor web Apache del distribuidor (`/etc/httpd/conf.d/enabled_vhosts/aem_flush.vhost`).  Es un valor codificado que coincide con una entrada en `ServerName` o `ServerAlias` del archivo `aem_flush.vhost`
 
-![Captura de pantalla de un agente de replicación que muestra que el agente de replicación reacciona y déclencheur cuando se reciben elementos nuevos de un evento de replicación desde el contenido de publicación del autor](assets/disp-flushing/disp-flush-agent4.png "disp-flush-agent4")
+![Pantalla de un agente de replicación que muestra que el agente de replicación reaccionó y generó déclencheur cuando se recibieron elementos nuevos de un evento de replicación desde el contenido de publicación del autor](assets/disp-flushing/disp-flush-agent4.png "disp-flush-agent4")
 
-En el `Triggers` pestaña tomaremos nota de los déclencheur alternados que utilizamos y de cuáles son
+En la ficha `Triggers` veremos cuáles son los déclencheur alternados que usamos y cuáles son
 
 - `Ignore default`
    - Esto está habilitado para que el agente de replicación no se active cuando se activa una página.  Esto es algo que, cuando una instancia de autor tenía que realizar un cambio en una página, almacenaba en déclencheur un vaciado.  Déclencheur Como este es un editor, no queremos desactivar ese tipo de evento.
 - `On Receive`
-   - Cuando se recibe un nuevo archivo, queremos almacenar en déclencheur un vaciado.  Así que cuando el autor nos envíe un archivo actualizado, almacenaremos en déclencheur y enviaremos una solicitud de vaciado a Dispatcher.
+   - Cuando se recibe un nuevo archivo, queremos almacenar en déclencheur un vaciado.  Por lo tanto, cuando el autor nos envíe un archivo actualizado, almacenaremos en déclencheur y enviaremos una solicitud de vaciado a Dispatcher.
 - `No Versioning`
    - Comprobamos esto para evitar que el editor genere nuevas versiones porque se recibió un nuevo archivo.  Solo reemplazaremos el archivo que tenemos y confiaremos en que el autor mantenga un seguimiento de las versiones en lugar del editor.
 
-Ahora, si miramos el aspecto habitual de una solicitud de vaciado en forma de `curl` mando
+Ahora, si miramos el aspecto habitual de una solicitud de vaciado en forma de comando `curl`
 
 ```
 $ curl \ 
@@ -105,13 +105,13 @@ $ curl \
 http://10.43.0.32:80/dispatcher/invalidate.cache
 ```
 
-Este ejemplo de vaciado vaciaría el `/content/dam` ruta actualizando el `.stat` en ese directorio.
+Este ejemplo vaciaría la ruta de acceso `/content/dam` al actualizar el archivo `.stat` en ese directorio.
 
-## El `.stat` archivo
+## El archivo `.stat`
 
-El mecanismo de vaciado es sencillo y queremos explicar la importancia de la `.stat` archivos que se generan en la raíz del documento donde se crean los archivos de caché.
+El mecanismo de vaciado es sencillo y nos gustaría explicar la importancia de los `.stat` archivos que se generan en la raíz del documento donde se crean los archivos de la caché.
 
-Dentro de `.vhost` y `_farm.any` archivos configuramos una directiva raíz de documento para especificar dónde se encuentra la caché y dónde almacenar o entregar los archivos cuando llega una solicitud de un usuario final.
+Dentro de los archivos `.vhost` y `_farm.any`, configuramos una directiva raíz de documento para especificar dónde se encuentra la caché y dónde almacenar o entregar los archivos cuando llega una solicitud de un usuario final.
 
 Si tuviera que ejecutar el siguiente comando en el servidor de Dispatcher, empezaría por buscar `.stat` archivos
 
@@ -121,27 +121,27 @@ $ find /mnt/var/www/html/ -type f -name ".stat"
 
 Este diagrama muestra el aspecto de la estructura de este archivo cuando tenga elementos en la caché y haya enviado una solicitud de vaciado y procesado el módulo de Dispatcher
 
-![archivos .stat mezclados con contenido y fechas que se muestran con los niveles de .stat](assets/disp-flushing/dispatcher-statfiles.png "dispatcher-statfiles")
+![archivos de estado mezclados con contenido y fechas que se muestran con los niveles de estado mostrados](assets/disp-flushing/dispatcher-statfiles.png "archivos de estado del distribuidor")
 
 ### NIVEL DE ARCHIVO ESTADÍSTICO
 
-Observe que en cada directorio había un `.stat` archivo presente.  Esto indica que se ha producido un vaciado.  En el ejemplo anterior, la variable `statfilelevel` la configuración se estableció en `3` dentro del archivo de configuración de granja correspondiente.
+Observe que en cada directorio había un archivo `.stat`.  Esto indica que se ha producido un vaciado.  En el ejemplo anterior, la configuración de `statfilelevel` se estableció en `3` dentro del archivo de configuración de granja correspondiente.
 
-El `statfilelevel` la configuración indica cuántas carpetas profundas atravesará el módulo y actualizará una `.stat` archivo.  El archivo .stat está vacío. No es más que un nombre de archivo con marca de fecha y podría crearse incluso manualmente ejecutando el comando táctil en la línea de comandos del servidor de Dispatcher.
+La configuración `statfilelevel` indica cuántas carpetas profundas en el módulo atravesarán y actualizarán un archivo `.stat`.  El archivo .stat está vacío. No es más que un nombre de archivo con marca de fecha y podría crearse incluso manualmente ejecutando el comando táctil en la línea de comandos del servidor de Dispatcher.
 
-Si la configuración del nivel del archivo .stat está establecida demasiado alta, cada solicitud de vaciado atravesará el árbol de directorios tocando los archivos .stat.  Esto puede convertirse en una gran disminución del rendimiento en árboles de caché grandes y afectar al rendimiento general de Dispatcher.
+Si la configuración del nivel del archivo .stat está establecida demasiado alta, cada solicitud de vaciado atravesará el árbol de directorios tocando los archivos .stat.  Esto puede convertirse en una gran disminución del rendimiento en árboles de caché grandes y afectar al rendimiento general de su Dispatcher.
 
 Configurar este nivel de archivo demasiado bajo puede provocar que una solicitud de vaciado limpie más de lo necesario.  Lo que, a su vez, haría que la caché se perdiera con más frecuencia, con menos solicitudes recibidas desde la caché y podría causar problemas de rendimiento.
 
 >[!BEGINSHADEBOX &quot;Nota&quot;]
 
-Configure las variables `statfilelevel` a un nivel razonable. Observe la estructura de carpetas y asegúrese de que está configurada para permitir vaciados concisos sin tener que atravesar demasiados directorios. Pruébelo y asegúrese de que se adapta a sus necesidades durante una prueba de rendimiento del sistema.
+Establezca `statfilelevel` en un nivel razonable. Observe la estructura de carpetas y asegúrese de que está configurada para permitir vaciados concisos sin tener que atravesar demasiados directorios. Pruébelo y asegúrese de que se adapta a sus necesidades durante una prueba de rendimiento del sistema.
 
 Un buen ejemplo es un sitio que admite diferentes idiomas. El típico árbol de contenido tendría los siguientes directorios
 
 `/content/brand1/en/us/`
 
-En este ejemplo, utilice una configuración de nivel de archivo .stat de 4. Esto le garantizará que cuando vacíe contenido que se encuentre debajo de **`us`** que no hará que las carpetas de idioma se vacíen también.
+En este ejemplo, utilice una configuración de nivel de archivo .stat de 4. Esto le asegurará al vaciar contenido que se encuentre debajo de la carpeta **`us`** que no se vaciarán también las carpetas de idioma.
 
 >[!ENDSHADEBOX]
 
@@ -149,39 +149,39 @@ En este ejemplo, utilice una configuración de nivel de archivo .stat de 4. Esto
 
 Cuando llega una solicitud de contenido, se repite el mismo proceso
 
-1. Marca de tiempo del `.stat` se compara con la marca de tiempo del archivo solicitado
-2. Si la variable `.stat` AEM El archivo es más reciente que el archivo solicitado. Elimina el contenido de la caché y obtiene uno nuevo de la caché de los archivos y los almacena en la caché de los archivos.  A continuación, se sirve el contenido
-3. Si la variable `.stat` es anterior al archivo solicitado, entonces sabe que el archivo es nuevo y puede servir el contenido.
+1. La marca de tiempo del archivo `.stat` se compara con la del archivo solicitado
+2. AEM Si el archivo `.stat` es más reciente que el archivo solicitado, se eliminará el contenido almacenado en caché, se recuperará uno nuevo de la caché y se almacenará en la caché de ese archivo en la caché de la base de datos de la base de datos y de la base de datos.  A continuación, se sirve el contenido
+3. Si el archivo `.stat` es más antiguo que el archivo solicitado, entonces se sabe que el archivo es reciente y se puede servir el contenido.
 
 ### PROTOCOLO DE ENLACE DE CACHÉ: EJEMPLO 1
 
 En el ejemplo anterior, una solicitud para el contenido `/content/index.html`
 
-La hora de la `index.html` file is 2019-11-01 @ 18:21 h
+La fecha del archivo `index.html` es 2019-11-01 @ 18:21 h
 
-La hora de la más cercana `.stat` file is 2019-11-01 @ 12:22 h
+La fecha del archivo `.stat` más cercano es 2019-11-01 @ 12:22 h
 
-Si tenemos en cuenta lo que hemos leído anteriormente, verá que el archivo de índice es más reciente que el `.stat` y el archivo se entregaría desde la caché al usuario final que lo solicitó
+Si tenemos en cuenta lo que hemos leído anteriormente, verá que el archivo de índice es más reciente que el archivo `.stat` y se entregará desde la caché al usuario final que lo solicitó
 
 ### PROTOCOLO DE ENLACE DE CACHÉ: EJEMPLO 2
 
 En el ejemplo anterior, una solicitud para el contenido `/content/dam/logo.jpg`
 
-La hora de la `logo.jpg` file is 2019-10-31 @ 13:13 h
+La fecha del archivo `logo.jpg` es 2019-10-31 @ 13:13 h
 
-La hora de la más cercana `.stat` file is 2019-11-01 @ 12:22 h
+La fecha del archivo `.stat` más cercano es 2019-11-01 @ 12:22 h
 
-Como puede ver en este ejemplo, el archivo es más antiguo que el `.stat` AEM y se eliminarán, y se extraerá uno nuevo de la caché para reemplazarlo, antes de que se envíe al usuario final que lo solicitó.
+AEM Como puede ver en este ejemplo, el archivo es más antiguo que el archivo `.stat` y se quitará y se sacará uno nuevo de la caché para reemplazarlo en la caché antes de entregárselo al usuario final que lo solicitó.
 
 ## Configuración de archivo de granja
 
-Puede acceder a toda la documentación sobre el conjunto completo de opciones de configuración aquí: [https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-dispatcher_configuring-the-dispatcher-cache-cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es)
+Toda la documentación está aquí para obtener el conjunto completo de opciones de configuración: [https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-dispatcher_configuring-the-dispatcher-cache-cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es)
 
 Nos gustaría destacar algunas de ellas que están relacionadas con el vaciado de caché
 
 ### Vaciar granjas
 
-Hay dos claves `document root` directorios que almacenarán en caché archivos del tráfico de autor y editor.  Para mantener esos directorios actualizados con contenido nuevo, tendremos que vaciar la caché.  Estas solicitudes de vaciado no desean enredarse con las configuraciones normales del conjunto de servidores de tráfico de clientes que podrían rechazar la solicitud o hacer algo no deseado.  En su lugar, proporcionamos dos granjas de vaciado para esta tarea:
+Hay dos directorios de claves `document root` que almacenarán en caché los archivos del tráfico de autores y editores.  Para mantener esos directorios actualizados con contenido nuevo, tendremos que vaciar la caché.  Estas solicitudes de vaciado no desean enredarse con las configuraciones normales del conjunto de servidores de tráfico de clientes que podrían rechazar la solicitud o hacer algo no deseado.  En su lugar, proporcionamos dos granjas de vaciado para esta tarea:
 
 - `/etc/httpd.conf.d/available_farms/001_ams_author_flush_farm.any`
 - `/etc/httpd.conf.d/available_farms/001_ams_publish_flush_farm.any`
@@ -226,7 +226,7 @@ Esta entrada de configuración se encuentra en la siguiente sección del archivo
         /docroot
 ```
 
-Especifique el directorio en el que desea que Dispatcher se propague y se administre como directorio de caché.
+Especifique el directorio en el que desea que Dispatcher se rellene y administre como directorio de caché.
 
 >[!NOTE]
 >
@@ -244,9 +244,9 @@ Esta entrada de configuración se encuentra en la siguiente sección del archivo
         /statfileslevel
 ```
 
-Esta configuración indica la profundidad `.stat` los archivos deberán generarse cuando aparezca una solicitud de vaciado.
+Esta configuración indica la profundidad con la que se deberán generar los archivos de `.stat` cuando aparezca una solicitud de vaciado.
 
-`/statfileslevel` establezca en el siguiente número con la raíz del documento de `/var/www/html/` tendría los siguientes resultados al vaciar `/content/dam/brand1/en/us/logo.jpg`
+`/statfileslevel` establecido en el siguiente número con la raíz del documento de `/var/www/html/` tendría los siguientes resultados al vaciar `/content/dam/brand1/en/us/logo.jpg`
 
 - 0: Se crearían los siguientes archivos .stat.
    - `/var/www/html/.stat`
@@ -278,9 +278,9 @@ Esta configuración indica la profundidad `.stat` los archivos deberán generars
 
 >[!NOTE]
 >
->Tenga en cuenta que cuando el protocolo de enlace de marca de tiempo se produce, busca lo más cercano `.stat` archivo.
+>Tenga en cuenta que cuando el protocolo de enlace de marca de tiempo se produce, busca el archivo `.stat` más cercano.
 >
->Tener un `.stat` nivel de archivo 0 y un archivo stat solo en `/var/www/html/.stat` significa que el contenido que se encuentra debajo de `/var/www/html/content/dam/brand1/en/us/` buscaría la más cercana `.stat` y atraviese 5 carpetas para encontrar la única `.stat` que existe en el nivel 0 y compare las fechas con eso. Lo que significa que un vaciado a un nivel tan alto sencillamente invalidaría todos los elementos almacenados en la caché.
+>Tener un archivo de `.stat` nivel 0 y un archivo .stat solamente en `/var/www/html/.stat` significa que el contenido que se encuentra por debajo de `/var/www/html/content/dam/brand1/en/us/` buscará el archivo de `.stat` más cercano y atravesará 5 carpetas para encontrar el único archivo de `.stat` que existe en el nivel 0 y comparará las fechas con eso. Lo que significa que un vaciado a un nivel tan alto sencillamente invalidaría todos los elementos almacenados en la caché.
 
 ### Invalidación permitida
 
@@ -347,7 +347,7 @@ $ curl -H "CQ-Action: Activate" \
 http://169.254.196.222/dispatcher/invalidate.cache
 ```
 
-Una vez que haya enviado el comando de solicitud a Dispatcher, querrá ver qué ha sucedido en los registros y en el `.stat files`.  Siga el archivo de registro y debería ver las siguientes entradas para confirmar que la solicitud de vaciado llegue al módulo del distribuidor
+Una vez que haya enviado el comando de solicitud a Dispatcher, querrá ver qué ha ocurrido en los registros y en `.stat files`.  Siga el archivo de registro y debería ver las siguientes entradas para confirmar que la solicitud de vaciado llegue al módulo de Dispatcher
 
 ```
 [Wed Nov 13 16:54:12 2019] [I] [pid 19173:tid 140542721578752] Activation detected: action=Activate [/content/dam/logo.jpg] 
@@ -357,13 +357,13 @@ Una vez que haya enviado el comando de solicitud a Dispatcher, querrá ver qué 
 [Wed Nov 13 16:54:12 2019] [I] [pid 19173:tid 140542721578752] "GET /dispatcher/invalidate.cache" 200 purge [publishfarm/-] 0ms
 ```
 
-Ahora que vemos que el módulo recibió y confirmó la solicitud de vaciado, necesitamos saber cómo afectó a la `.stat` archivos.  Ejecute el siguiente comando y observe cómo se actualizan las marcas de tiempo mientras emite otro vaciado:
+Ahora que vemos que el módulo recibió y confirmó la solicitud de vaciado, necesitamos saber de qué manera ha afectado a los `.stat` archivos.  Ejecute el siguiente comando y observe cómo se actualizan las marcas de tiempo mientras emite otro vaciado:
 
 ```
 $ watch -n 3 "find /mnt/var/www/html/ -type f -name ".stat" | xargs ls -la $1"
 ```
 
-Como puede ver en el resultado del comando, las marcas de tiempo del `.stat` archivos
+Como puede ver en el resultado del comando, las marcas de tiempo de los `.stat` archivos actuales
 
 ```
 -rw-r--r--. 1 apache apache 0 Nov 13 16:54 /mnt/var/www/html/content/dam/.stat 
@@ -379,7 +379,7 @@ Ahora, si volvemos a ejecutar el vaciado, verá cómo se actualizan las marcas d
 -rw-r--r--. 1 apache apache 0 Nov 13 17:17 /mnt/var/www/html/.stat
 ```
 
-Vamos a comparar las marcas de tiempo del contenido con nuestras `.stat` archivos marcas de tiempo
+Vamos a comparar las marcas de tiempo del contenido con las de nuestros `.stat` archivos
 
 ```
 $ stat /mnt/var/www/html/content/customer/en-us/.stat 
@@ -401,7 +401,7 @@ Modify: 2019-11-11 22:41:59.642450601 +0000
 Change: 2019-11-11 22:41:59.642450601 +0000
 ```
 
-Si mira cualquiera de las marcas de tiempo verá que el contenido tiene una hora más reciente que la `.stat` que indica al módulo que sirva el archivo desde la caché porque es más reciente que el `.stat` archivo.
+Si mira cualquiera de las marcas de tiempo verá que el contenido tiene una hora más reciente que el archivo `.stat`, lo que indica al módulo ofrecer el archivo de la caché porque es más reciente que el archivo `.stat`.
 
 En pocas palabras, algo actualizó las marcas de tiempo de este archivo que no cumple los requisitos para &quot;vaciarlo&quot; o reemplazarlo.
 

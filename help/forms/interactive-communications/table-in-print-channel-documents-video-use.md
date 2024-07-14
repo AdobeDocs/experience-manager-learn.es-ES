@@ -23,13 +23,13 @@ El siguiente vídeo muestra los pasos necesarios para utilizar el componente de 
 
 >[!VIDEO](https://video.tv.adobe.com/v/27769?quality=12&learn=on)
 
-Las tablas se utilizan para mostrar datos en forma de tabla. Las filas de la tabla deben aumentar o reducirse según los datos devueltos por el origen de datos. Para utilizar una tabla en un documento del canal de impresión, se debe crear un archivo de diseño (archivo xdp) con AEM Forms Designer. En este archivo de diseño, agregamos la tabla con el número requerido de columnas. Asegúrese de que el tipo de objeto del campo de columna sea TextField o Numeric Field según sus necesidades. Para cada una de las columnas, los campos garantizan que el enlace de datos esté configurado como Usar nombre.
+Las tablas se utilizan para mostrar datos en forma de tabla. Las filas de la tabla deben aumentar o reducirse según los datos devueltos por el origen de datos. Para utilizar una tabla en un documento del canal de impresión, es necesario crear un archivo de diseño (archivo xdp) con AEM Forms Designer. En este archivo de diseño, agregamos la tabla con el número requerido de columnas. Asegúrese de que el tipo de objeto del campo de columna sea TextField o Numeric Field según sus necesidades. Para cada una de las columnas, los campos garantizan que el enlace de datos esté configurado como Usar nombre.
 
 >[!NOTE]
 >
 >Para hacer que la tabla sea dinámica, asegúrese de haber marcado la fila como repetida.
 
-**Probar en su propio servidor**
+**Pruébelo en su propio servidor**
 
 * [Descargue y descomprima el archivo de recursos en el disco duro](assets/usingtablesinprintchannel.zip)
 

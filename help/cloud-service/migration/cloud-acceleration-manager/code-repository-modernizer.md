@@ -1,6 +1,6 @@
 ---
 title: Modernizador de repositorio de código
-description: AEM AEM Aprenda cómo el Modernizador de repositorios de código actualiza automáticamente los proyectos existentes de Maven de la para que sean compatibles con el as a Cloud Service.
+description: AEM Aprenda cómo el Modernizador de repositorios de código actualiza automáticamente los proyectos existentes de Maven de la para que sean compatibles con AEM as a Cloud Service.
 version: Cloud Service
 feature: Migration
 topic: Migration, Upgrade
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Modernizador de repositorio de código
 
-AEM AEM Aprenda cómo el Modernizador de repositorios de código actualiza automáticamente los proyectos existentes de Maven de la para que sean compatibles con el as a Cloud Service.
+AEM Aprenda cómo el Modernizador de repositorios de código actualiza automáticamente los proyectos existentes de Maven de la para que sean compatibles con AEM as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336694?quality=12&learn=on)

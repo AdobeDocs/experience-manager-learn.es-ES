@@ -35,7 +35,7 @@ Al final de este capítulo del tutorial, tendrá un componente de lista de imág
 
    ![create-imagelist-fragment](./assets/3/create-imagelist-fragment.png)
 
-   Queremos crear un fragmento del tipo. `imagelist` (el modelo es `imagelist`) y le daremos el título. `imagelist`.
+   Queremos crear un fragmento del tipo `imagelist` (el modelo es `imagelist`) y le daremos el título `imagelist`.
 
    En el editor de fragmentos de contenido tenemos la oportunidad de seleccionar un fragmento para incluir o crear uno.  Seleccione Crear un fragmento.
 
@@ -191,7 +191,7 @@ Al final de este capítulo del tutorial, tendrá un componente de lista de imág
    Eu facilisis sed odio morbi quis. Consequat semper viverra nam libero justo laoreet sit amet. Eget mi proin sed libero enim sed faucibus. Vitae tempus quam pellentesque nec nam aliquam sem. Justo donec enim diam vulputate ut pharetra sit. Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat. Mauris pellentesque pulvinar pellentesque habitant morbi. Iaculis at erat pellentesque adipiscing. Libero id faucibus nisl tincidunt eget nullam non nisi est. Interdum consectetur libero id faucibus nisl tincidunt. Volutpat odio facilisis mauris sit amet massa. Tristique senectus et netus et malesuada fames ac turpis egestas. Leo vel orci porta non pulvinar neque laoreet suspendisse interdum. Sapien et ligula ullamcorper malesuada proin libero. Interdum consectetur libero id faucibus nisl tincidunt.
    ```
 
-1. Volvamos al editor de consultas y recuperemos este nuevo componente.  Tenga en cuenta que hacemos referencia a la `OfferModel` en nuestra consulta y los metadatos, que utilizaremos para el título de la tarjeta.
+1. Volvamos al editor de consultas y recuperemos este nuevo componente.  Observe que hacemos referencia a `OfferModel` en nuestra consulta y en los metadatos, que utilizaremos para el título de la tarjeta.
 
    ```graphql
    query imageList {
@@ -227,13 +227,13 @@ Al final de este capítulo del tutorial, tendrá un componente de lista de imág
    }
    ```
 
-1. Ahora conéctelo a nuestra aplicación.  En nuestro `home.js`, haremos referencia a nuestra nueva consulta. Arriba `useEffect()` nosotros nos fijaremos `list` y `setList`.
+1. Ahora conéctelo a nuestra aplicación.  En nuestro `home.js`, haremos referencia a nuestra nueva consulta. Sobre `useEffect()` estableceremos `list` y `setList`.
 
    ```javascript
    const [list, setList] = useState({});
    ```
 
-   Interior `useEffect()` una nueva solicitud para la consulta de lista de imágenes.
+   Dentro de `useEffect()` una nueva solicitud para la consulta de lista de imágenes.
 
    ```javascript
    sdk.runPersistedQuery('pure-headless/imagelist')
@@ -295,7 +295,7 @@ Al final de este capítulo del tutorial, tendrá un componente de lista de imág
 
 ## Habilitar el editor universal
 
-1. Añadir `<meta />` a la aplicación.  Abrir `App.js` e inserte import en la parte superior del archivo.
+1. Agregar `<meta />` a la aplicación.  Abra `App.js` e inserte la importación en la parte superior del archivo.
 
    ```javascript
    import { Helmet } from 'react-helmet';
@@ -311,7 +311,7 @@ Al final de este capítulo del tutorial, tendrá un componente de lista de imág
 
    >[!TIP]
    >
-   > Estamos utilizando la biblioteca de Cascos para hacer esto dinámico basado en el `.env` , sin embargo, puede codificarlo en el archivo `index.html`.
+   > Estamos usando la biblioteca de casco para hacer que esto sea dinámico en función del archivo `.env`; sin embargo, puede codificarlo en el `index.html`.
 
 1. Ahora vamos a actualizar la Tarjeta para identificar el fragmento y el tipo de datos para editar cada tarjeta.
 
@@ -331,13 +331,13 @@ Al final de este capítulo del tutorial, tendrá un componente de lista de imág
 
 1. Ahora identifique lo que se puede editar.
 
-   A la `<h3 />` añadir:
+   Para agregar `<h3 />`:
 
    ```javascript
    itemProp="_metadata" itemType="text"
    ```
 
-   A nuestro `<div />` añadir:
+   A nuestro `<div />` agregue:
 
    ```javascript
    itemProp="description" itemType="richtext"
@@ -362,7 +362,7 @@ Al final de este capítulo del tutorial, tendrá un componente de lista de imág
    };
    ```
 
-Código final para `home.js`:
+Código final de `home.js`:
 
 ```javascript
 import React, { useContext, useEffect, useState } from 'react';

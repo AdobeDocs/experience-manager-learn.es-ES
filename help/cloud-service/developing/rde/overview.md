@@ -20,7 +20,7 @@ ht-degree: 10%
 
 # Entornos de desarrollo rápido
 
-AEM Obtenga información sobre el Entorno de desarrollo rápido (RDE) en el as a Cloud Service de la.
+Obtenga información sobre el Entorno de desarrollo rápido (RDE) en AEM as a Cloud Service.
 
 Descripción de este vídeo:
 
@@ -31,12 +31,12 @@ Descripción de este vídeo:
 
 ## Siguiente paso
 
-Aprender [cómo realizar la configuración](./how-to-setup.md) AEM un RDE en as a Cloud Service de la.
+Obtenga información sobre [cómo configurar](./how-to-setup.md) un RDE en AEM as a Cloud Service.
 
 ## Recursos adicionales
 
 [Introducción a la documentación de RDE](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html#introduction)
 
-[Canalizaciones de CI/CD de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html)
+[Canalizaciones de CD/CI de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html)
 
 [Configurar el IDE de desarrollo](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=es)

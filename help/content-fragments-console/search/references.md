@@ -1,6 +1,6 @@
 ---
 title: 'Referencias: fragmentos de contenido'
-description: AEM Descubra cómo la consola y el editor de fragmentos de contenido de la consola de facilitan la administración del contenido referenciado.
+description: AEM Descubra cómo la consola y el editor de fragmentos de contenido de facilitan la administración del contenido referenciado.
 version: Cloud Service
 feature: Content Fragments
 topic: Content Management
@@ -21,6 +21,6 @@ ht-degree: 2%
 
 # Referencias
 
-AEM Descubra cómo la consola y el editor de fragmentos de contenido de la consola de facilitan la comprensión y administración del contenido referenciado.
+AEM Descubra cómo la consola y el editor de fragmentos de contenido de facilitan la comprensión y administración del contenido referenciado.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420950/?learn=on)

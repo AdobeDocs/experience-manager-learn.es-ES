@@ -30,5 +30,5 @@ AEM 6.3 Forms AEM presenta la capacidad de permitir a los usuarios crear casos d
 >
 >**Vínculos útiles**
 >
->* [Espacio de nombres de Calvin SDK](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html)
+>* [Espacio de nombres del SDK de Calvin](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html)
 >* [Documentación de Hobbes.js](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es)

@@ -24,7 +24,7 @@ En este artículo, echamos un vistazo al correo electrónico como mecanismo de e
 
 Echemos un vistazo al siguiente fragmento de código. Este código forma parte de GET.jsp, que se activa cuando el usuario hace clic en el vínculo del correo electrónico para ver el documento del canal web. Obtenemos el usuario que inició sesión usando el jackrabbit UserManager. Una vez que obtenemos el usuario que ha iniciado sesión, obtenemos el valor de la propiedad accountNumber asociada al perfil del usuario.
 
-Luego asociamos el valor accountNumber con una clave denominada accountnumber en el mapa. La clave **accountnumber** se define en el modal de datos del formulario como un atributo de solicitud. El valor de este atributo se pasa como parámetro de entrada al método de servicio de lectura modal de datos de formulario.
+Luego asociamos el valor accountNumber con una clave denominada accountnumber en el mapa. La clave **accountnumber** se define en el modal de datos de formulario como atributo de solicitud. El valor de este atributo se pasa como parámetro de entrada al método de servicio de lectura modal de datos de formulario.
 
 Línea 7: estamos enviando la solicitud recibida a otro servlet, según el tipo de recurso identificado por la dirección URL del documento de comunicación interactiva. La respuesta devuelta por este segundo servlet se incluye en la respuesta del primer servlet.
 
@@ -38,12 +38,12 @@ CustomParameterRequest wrapperRequest = new CustomParameterRequest(slingRequest,
 wrapperRequest.getRequestDispatcher("/content/forms/af/401kstatement/irastatement/channels/web.html").include(wrapperRequest, response);
 ```
 
-![Método Include](assets/includemethod.jpg)
+![Incluir método](assets/includemethod.jpg)
 
 Representación visual del código de Línea 7
 
-![Solicitar configuración de parámetros](assets/requestparameter.png)
+![Solicitar configuración de parámetro](assets/requestparameter.png)
 
 Atributo de solicitud definido para el servicio de lectura del modal de datos de formulario
 
-[AEM Paquete de muestra](assets/webchanneldelivery.zip).
+AEM [Paquete De Ejemplo De La](assets/webchanneldelivery.zip).

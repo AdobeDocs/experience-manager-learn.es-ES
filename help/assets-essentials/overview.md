@@ -8,8 +8,8 @@ doc-type: Catalog
 exl-id: 6a8534fa-bc99-438b-9107-2a428e06619c
 source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
-source-wordcount: '134'
-ht-degree: 14%
+source-wordcount: '112'
+ht-degree: 4%
 
 ---
 
@@ -34,7 +34,7 @@ Consulte estos vídeos sobre cómo utilizar Assets Essentials para gestionar sus
       </a>
    </div>
    <p>
-      <em>Conozca los conceptos básicos de los Assets Essentials.</em>
+      <em>¡Conozca los conceptos básicos de los Assets Essentials!</em>
    </p>
 </td>
 <td>
@@ -43,7 +43,7 @@ Consulte estos vídeos sobre cómo utilizar Assets Essentials para gestionar sus
    </a>
    <div>
       <a href="https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html">
-      <strong>Documentación de Assets Essentials</strong>
+      <strong>Documentación para Assets Essentials</strong>
       </a>
    </div>
    <p>
@@ -60,7 +60,7 @@ Consulte estos vídeos sobre cómo utilizar Assets Essentials para gestionar sus
       </a>
    </div>
    <p>
-      <em>Descubra cómo se integran los Assets Essentials con Adobe Journey Optimizer.</em>
+      <em>Descubra cómo se integran los Assets Essentials con Adobe Journey Optimizer!</em>
    <p>
 </td>
 </table>

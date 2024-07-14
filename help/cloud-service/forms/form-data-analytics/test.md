@@ -28,13 +28,13 @@ Obtenga una vista previa y envíe el formulario con varias combinaciones de valo
 
 Los datos del formulario capturados en Adobe Analytics se presentan en formato de anillo
 
-**Envíos por Estado**
+**Envíos por estado**
 
 ![aplicantsbystate](assets/donut.png)
 
 Errores de validación de campo
 
-![field-validation-error](assets/donut-field-validation.png)
+![error de validación de campo](assets/donut-field-validation.png)
 
 ## Depuración
 
@@ -55,9 +55,9 @@ Interactúe con el formulario mientras mantiene abierta la ventana de la consola
 
 ## Usar Adobe Experience Platform Debugger
 
-Añada el [Extensión de AEP Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) en el explorador (debe iniciar sesión) para obtener más información sobre depuración
+Agregue la [extensión del depurador de AEP](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) a su explorador (debe iniciar sesión) para obtener más información sobre depuración
 
-![platform-debugger](assets/platform-debugger.png)
+![depurador de plataforma](assets/platform-debugger.png)
 
 ## Felicitaciones
 

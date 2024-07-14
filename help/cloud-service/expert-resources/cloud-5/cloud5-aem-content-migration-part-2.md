@@ -1,6 +1,6 @@
 ---
 title: 'AEM Cloud 5: Migración de contenido parte 2'
-description: AEM En el segundo vídeo que trata sobre la migración de contenido, James y Darin analizan el uso de la herramienta de transferencia de contenido (CTT) para ayudar a migrar a los as a Cloud Service.
+description: En el segundo vídeo que cubre la migración de contenido, James y Darin analizan el uso de la herramienta de transferencia de contenido (CTT) para ayudar a migrar a AEM as a Cloud Service.
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 # Migración a la nube: parte 2
 
-AEM En el segundo vídeo que trata sobre la migración de contenido, James y Darin analizan el uso de la herramienta de transferencia de contenido (CTT) para ayudar a migrar a los as a Cloud Service.
+En el segundo vídeo que cubre la migración de contenido, James y Darin analizan el uso de la herramienta de transferencia de contenido (CTT) para ayudar a migrar a AEM as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342268?quality=12&learn=on)
 
@@ -28,6 +28,6 @@ AEM En el segundo vídeo que trata sobre la migración de contenido, James y Dar
 + evaluación de las instancias que desea migrar
    + BPA: Analizador de prácticas recomendadas
    + CAM: cloud Acceleration Manager
-+ [repostatos](https://github.com/chetanmeh/oak-console-scripts/tree/master/src/main/groovy/repostats)
++ [informes](https://github.com/chetanmeh/oak-console-scripts/tree/master/src/main/groovy/repostats)
 + [Herramientas de modernización de AEM](https://opensource.adobe.com/aem-modernize-tools/)
 + [Herramientas de migración de Cloud Service](https://github.com/adobe/aem-cloud-service-source-migration)

@@ -53,7 +53,7 @@ Los sistemas de estilos vienen en algunos sabores diferentes:
 
 >[!NOTE]
 >
->Para ver una demostración de estas funciones, le recomendamos que consulte nuestra [Seminario web de éxito del cliente](https://adobecustomersuccess.adobeconnect.com/pob610c9mffjmp4/) con Will Brisbane y Joseph Van Buskirk.
+>Para ver una demostración de estas características, le recomendamos ver nuestro [seminario web sobre el éxito del cliente](https://adobecustomersuccess.adobeconnect.com/pob610c9mffjmp4/) con Will Brisbane y Joseph Van Buskirk.
 
 ## Prácticas recomendadas
 
@@ -91,6 +91,6 @@ Las cosas son simplemente más limpias. El HTML dentro de los componentes princi
 
 Por último, el uso de los sistemas de estilos es más arte que ciencia. Como hemos comentado, hay una serie de prácticas recomendadas, pero tendrá flexibilidad para personalizar la configuración de su organización.
 
-Para obtener más información, consulte nuestra [Seminario web de éxito de clientes](https://adobecustomersuccess.adobeconnect.com/pob610c9mffjmp4/) con Will Brisbane y Joseph Van Buskirk.
+Para obtener más información, vea nuestro [Seminario web sobre el éxito de los clientes](https://adobecustomersuccess.adobeconnect.com/pob610c9mffjmp4/) con Will Brisbane y Joseph Van Buskirk.
 
-Obtenga más información sobre estrategia y liderazgo mental en [Éxito del cliente](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html) hub.
+Obtenga más información sobre estrategia y liderazgo mental en el centro de [Éxito del cliente](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html).

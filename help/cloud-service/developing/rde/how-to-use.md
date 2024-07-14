@@ -20,21 +20,21 @@ ht-degree: 0%
 
 # Cómo utilizar el entorno de desarrollo rápido
 
-Aprender **cómo usar** AEM Entorno de Desarrollo Rápido (RDE) en as a Cloud Service. Implemente código y contenido para ciclos de desarrollo más rápidos de su código casi final en RDE, desde su entorno de desarrollo integrado (IDE) favorito.
+Aprenda **a utilizar** el entorno de desarrollo rápido (RDE) en AEM as a Cloud Service. Implemente código y contenido para ciclos de desarrollo más rápidos de su código casi final en RDE, desde su entorno de desarrollo integrado (IDE) favorito.
 
-Uso de [AEM Proyecto de sitios de WKND](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) AEM AEM aprenderá a implementar varios artefactos de la en el RDE ejecutando los de RDE de la `install` desde su IDE favorito.
+AEM AEM AEM Al usar [proyecto WKND Sites](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project), aprenderá a implementar varios artefactos de en el RDE ejecutando el comando `install` de-RDE desde su IDE favorito.
 
 - AEM implementación del paquete de contenido y código de (todo, ui.apps)
 - Implementación del paquete OSGi y el archivo de configuración
-- Apache y Dispatcher configuran la implementación como un archivo zip
-- Archivos individuales como HTL, `.content.xml` Implementación de (dialog XML)
-- Revise otros comandos de RDE como `status, reset and delete`
+- Apache y Dispatcher configuran la implementación como archivo zip
+- Archivos individuales como la implementación de HTL, `.content.xml` (XML de diálogo)
+- Revisar otros comandos de RDE como `status, reset and delete`
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415491?quality=12&learn=on)
 
 ## Requisitos previos
 
-Clonar el [Sitios WKND](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) AEM y ábralo en su IDE favorito para implementar los artefactos de la en el IDE.
+AEM Clone el proyecto [WKND Sites](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) y ábralo en su IDE favorito para implementar los artefactos de la en RDE.
 
 ```shell
 $ git clone git@github.com:adobe/aem-guides-wknd.git
@@ -49,11 +49,11 @@ $ mvn clean package
 
 ## AEM AEM Implementar artefactos de mediante el complemento de RDE de
 
-Uso del `aem:rde:install` AEM comando, vamos a implementar varios artefactos de la.
+AEM Usando el comando `aem:rde:install`, vamos a implementar varios artefactos de.
 
 ### Implementar `all` y `dispatcher` paquetes
 
-Un punto de partida común es implementar primero el `all` y `dispatcher` mediante la ejecución de los siguientes comandos.
+Un punto de partida común es implementar primero los paquetes `all` y `dispatcher` ejecutando los siguientes comandos.
 
 ```shell
 # Install the 'all' package
@@ -67,10 +67,10 @@ Una vez implementadas correctamente, compruebe el sitio WKND en los servicios de
 
 ### Mejora e implementación de un componente
 
-Vamos a mejorar la `Hello World Component` e implementarlo en el RDE.
+Vamos a mejorar `Hello World Component` e implementarlo en RDE.
 
-1. Abra el XML de diálogo (`.content.xml`) archivo de `ui.apps/src/main/content/jcr_root/apps/wknd/components/helloworld/_cq_dialog/` carpeta
-1. Añada el `Description` campo de texto después del existente `Text` campo de diálogo
+1. Abrir el archivo XML de diálogo (`.content.xml`) desde la carpeta `ui.apps/src/main/content/jcr_root/apps/wknd/components/helloworld/_cq_dialog/`
+1. Agregar el campo de texto `Description` después del campo de diálogo `Text` existente
 
    ```xml
    ...
@@ -82,8 +82,8 @@ Vamos a mejorar la `Hello World Component` e implementarlo en el RDE.
    ...
    ```
 
-1. Abra el `helloworld.html` archivo de `ui.apps/src/main/content/jcr_root/apps/wknd/components/helloworld` carpeta
-1. Procesar el `Description` después de la propiedad existente `<div>` elemento de la `Text` propiedad.
+1. Abrir el archivo `helloworld.html` de la carpeta `ui.apps/src/main/content/jcr_root/apps/wknd/components/helloworld`
+1. Procesar la propiedad `Description` después del elemento `<div>` existente de la propiedad `Text`.
 
    ```html
    ...
@@ -96,7 +96,7 @@ Vamos a mejorar la `Hello World Component` e implementarlo en el RDE.
 
 1. AEM Compruebe los cambios en el SDK de la aplicación local de realizando la compilación de Maven o sincronizando los archivos individuales.
 
-1. Implemente los cambios en RDE mediante `ui.apps` o implementando los archivos individuales Dialog y HTL.
+1. Implemente los cambios en RDE a través del paquete `ui.apps` o implementando los archivos individuales de Diálogo y HTL.
 
    ```shell
    # Using 'ui.apps' package
@@ -113,24 +113,24 @@ Vamos a mejorar la `Hello World Component` e implementarlo en el RDE.
    $ aio aem:rde:install ui.apps/src/main/content/jcr_root/apps/wknd/components/helloworld/_cq_dialog/.content.xml -t content-xml -p /apps/wknd/components/helloworld/_cq_dialog/.content.xml
    ```
 
-1. Verifique los cambios en el editor de texto enriquecido agregando o editando el `Hello World Component` en una página del sitio WKND.
+1. Compruebe los cambios en el RDE agregando o editando `Hello World Component` en una página del sitio WKND.
 
-### Revise la `install` opciones de comando
+### Revisar las opciones de comando `install`
 
-En el ejemplo de comando de implementación de archivo individual anterior, la variable `-t` y `-p` los indicadores se utilizan para indicar el tipo y el destino de la ruta JCR respectivamente. Vamos a revisar los disponibles `install` para ejecutar el siguiente comando.
+En el ejemplo de comando de implementación de archivo individual anterior, los indicadores `-t` y `-p` se utilizan para indicar el tipo y el destino de la ruta de acceso JCR respectivamente. Revisemos las opciones de comando `install` disponibles ejecutando el siguiente comando.
 
 ```shell
 $ aio aem:rde:install --help
 ```
 
-Las banderas se explican por sí mismas, la `-s` El indicador es útil para dirigir la implementación solo a los servicios de autor o publicación. Utilice el `-t` al implementar el **content-file o content-xml** archivos junto con el `-p` AEM Indicador para especificar la ruta JCR de destino en el entorno de RDE de la.
+Los indicadores se explican por sí mismos, el indicador `-s` es útil para dirigir la implementación solo a los servicios de autor o publicación. AEM Utilice el indicador `-t` al implementar los archivos **content-file o content-xml** junto con el indicador `-p` para especificar la ruta JCR de destino en el entorno de RDE de.
 
 ### Implementar el paquete OSGi
 
-Para aprender a implementar el paquete OSGi, vamos a mejorar el `HelloWorldModel` Clase Java™ e impleméntelo en el editor de texto enriquecido.
+Para obtener información sobre cómo implementar el paquete OSGi, vamos a mejorar la clase Java™ `HelloWorldModel` e implementarla en RDE.
 
-1. Abra el `HelloWorldModel.java` archivo de `core/src/main/java/com/adobe/aem/guides/wknd/core/models` carpeta
-1. Actualice el `init()` método como se muestra a continuación:
+1. Abrir el archivo `HelloWorldModel.java` de la carpeta `core/src/main/java/com/adobe/aem/guides/wknd/core/models`
+1. Actualice el método `init()` como se muestra a continuación:
 
    ```java
    ...
@@ -141,7 +141,7 @@ Para aprender a implementar el paquete OSGi, vamos a mejorar el `HelloWorldModel
    ...
    ```
 
-1. AEM Compruebe los cambios en el SDK de la aplicación local de la aplicación mediante la implementación de la variable `core` paquete mediante el comando maven
+1. AEM Compruebe los cambios en el SDK de local implementando el paquete `core` mediante el comando maven
 1. Implemente los cambios en RDE ejecutando el siguiente comando
 
    ```shell
@@ -150,7 +150,7 @@ Para aprender a implementar el paquete OSGi, vamos a mejorar el `HelloWorldModel
    $ aio aem:rde:install target/aem-guides-wknd.core-2.1.3-SNAPSHOT.jar
    ```
 
-1. Verifique los cambios en el editor de texto enriquecido agregando o editando el `Hello World Component` en una página del sitio WKND.
+1. Compruebe los cambios en el RDE agregando o editando `Hello World Component` en una página del sitio WKND.
 
 ### Implementar la configuración OSGi
 
@@ -168,14 +168,14 @@ $ aio aem:rde:install target/aem-guides-wknd.ui.config-2.1.3-SNAPSHOT.zip
 
 >[!TIP]
 >
->Para instalar una configuración OSGi solo en una instancia de autor o publicación, utilice el `-s` Indicador.
+>Para instalar una configuración OSGi solo en una instancia de autor o publicación, utilice el indicador `-s`.
 
 
 ### Implementar la configuración de Apache o Dispatcher
 
-Los archivos de configuración de Apache o Dispatcher **no se puede implementar individualmente**, pero toda la estructura de carpetas de Dispatcher debe implementarse en forma de archivo ZIP.
+Los archivos de configuración de Apache o Dispatcher **no se pueden implementar individualmente**, pero toda la estructura de carpetas de Dispatcher debe implementarse en forma de archivo ZIP.
 
-1. Realice un cambio deseado en el archivo de configuración de `dispatcher` para fines de demostración, actualice el módulo `dispatcher/src/conf.d/available_vhosts/wknd.vhost` para almacenar en caché el `html` solo durante 60 segundos.
+1. Realice un cambio deseado en el archivo de configuración del módulo `dispatcher`; con fines de demostración, actualice `dispatcher/src/conf.d/available_vhosts/wknd.vhost` para almacenar en caché los archivos de `html` solo durante 60 segundos.
 
    ```
    ...
@@ -188,7 +188,7 @@ Los archivos de configuración de Apache o Dispatcher **no se puede implementar 
    ...
    ```
 
-1. Compruebe los cambios localmente; consulte [Ejecutar Dispatcher localmente](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html#run-dispatcher-locally) para obtener más información.
+1. Verifique los cambios localmente; consulte [Ejecutar Dispatcher localmente](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html#run-dispatcher-locally) para obtener más información.
 1. Implemente los cambios en RDE ejecutando el siguiente comando:
 
    ```shell
@@ -223,7 +223,7 @@ Con los comandos anteriores, su RDE se puede administrar desde su IDE favorito p
 
 ## Siguiente paso
 
-Obtenga información acerca de [ciclo de vida de desarrollo/implementación mediante RDE](./development-life-cycle.md) para ofrecer funciones con rapidez.
+Obtenga información acerca del [ciclo de vida de desarrollo/implementación usando RDE](./development-life-cycle.md) para ofrecer características con rapidez.
 
 
 ## Recursos adicionales
@@ -232,4 +232,4 @@ Obtenga información acerca de [ciclo de vida de desarrollo/implementación medi
 
 [Complemento de CLI de Adobe I/O Runtime AEM para interacciones con entornos de desarrollo rápido de](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
 
-[AEM Configuración del proyecto de](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html)
+AEM [Configuración del proyecto de](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html)

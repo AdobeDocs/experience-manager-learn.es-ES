@@ -26,9 +26,9 @@ Aprenda a implementar estilos individuales y a reutilizar los componentes princi
 
 ## Requisitos previos {#prerequisites}
 
-Revise las herramientas y las instrucciones necesarias para configurar una [entorno de desarrollo local](overview.md#local-dev-environment).
+Revise las herramientas y las instrucciones necesarias para configurar un [entorno de desarrollo local](overview.md#local-dev-environment).
 
-También se recomienda revisar el [Bibliotecas del lado cliente y flujo de trabajo front-end](client-side-libraries.md) AEM tutorial para comprender los aspectos básicos de las bibliotecas del lado del cliente y las distintas herramientas front-end integradas en el proyecto de la.
+AEM También se recomienda revisar el tutorial de [Bibliotecas del lado del cliente y flujo de trabajo front-end](client-side-libraries.md) para comprender los aspectos básicos de las bibliotecas del lado del cliente y las diversas herramientas front-end integradas en el proyecto de.
 
 ### Proyecto de inicio
 
@@ -38,7 +38,7 @@ También se recomienda revisar el [Bibliotecas del lado cliente y flujo de traba
 
 Consulte el código de línea de base en el que se basa el tutorial:
 
-1. Consulte la `tutorial/style-system-start` bifurcar desde [GitHub](https://github.com/adobe/aem-guides-wknd)
+1. Consulte la rama `tutorial/style-system-start` de [GitHub](https://github.com/adobe/aem-guides-wknd)
 
    ```shell
    $ cd aem-guides-wknd
@@ -53,13 +53,13 @@ Consulte el código de línea de base en el que se basa el tutorial:
 
    >[!NOTE]
    >
-   > AEM Si se utiliza la versión 6.5 o 6.4, se debe anexar la variable `classic` de perfil a cualquier comando de Maven.
+   > AEM Si utiliza la versión 6.5 o 6.4 de la aplicación, anexe el perfil `classic` a cualquier comando de Maven.
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-Siempre puede ver el código terminado en [GitHub](https://github.com/adobe/aem-guides-wknd/tree/tutorial/style-system-solution) o compruebe el código localmente cambiando a la rama `tutorial/style-system-solution`.
+Siempre puede ver el código terminado en [GitHub](https://github.com/adobe/aem-guides-wknd/tree/tutorial/style-system-solution) o desprotegerlo localmente cambiando a la rama `tutorial/style-system-solution`.
 
 ## Objetivo
 
@@ -69,69 +69,69 @@ Siempre puede ver el código terminado en [GitHub](https://github.com/adobe/aem-
 
 ## Lo que va a generar {#what-build}
 
-Este capítulo utiliza las [Función Sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html?lang=es) para crear variaciones de **Título** y **Texto** componentes utilizados en la página Artículo.
+Este capítulo usa la característica [Sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html?lang=es) para crear variaciones de los componentes **Título** y **Texto** utilizados en la página de artículo.
 
 ![Estilos disponibles para el título](assets/style-system/styles-added-title.png)
 
-*Estilo de subrayado disponible para usar en el componente Título*
+*Estilo de subrayado disponible para el componente Título*
 
 ## Fondo {#background}
 
-El [Sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html) permite a los desarrolladores y editores de plantillas crear varias variaciones visuales de un componente. A su vez, los autores pueden decidir qué estilo utilizar al maquetar una página. El sistema de estilos se utiliza en el resto del tutorial para lograr varios estilos únicos mientras se utilizan los componentes principales en un enfoque de código bajo.
+El [sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html) permite a los desarrolladores y editores de plantillas crear múltiples variaciones visuales de un componente. A su vez, los autores pueden decidir qué estilo utilizar al maquetar una página. El sistema de estilos se utiliza en el resto del tutorial para lograr varios estilos únicos mientras se utilizan los componentes principales en un enfoque de código bajo.
 
 La idea general del sistema de estilos es que los autores pueden elegir varios estilos del aspecto que debe tener un componente. Los &quot;estilos&quot; están respaldados por clases CSS adicionales que se insertan en el div exterior de un componente. En las bibliotecas de cliente, se agregan reglas CSS basadas en estas clases de estilo para que el componente cambie de aspecto.
 
-Puede encontrar [documentación detallada para el sistema de estilos aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html?lang=es). También hay un gran [Vídeo técnico para comprender el sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/style-system-technical-video-understand.html).
+Encontrará [documentación detallada para el sistema de estilos aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html?lang=es). También hay un excelente [vídeo técnico para comprender el sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/style-system-technical-video-understand.html).
 
 ## Estilo de subrayado: título {#underline-style}
 
-El [Componente Título](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/title.html) se ha proxy en el proyecto en `/apps/wknd/components/title` como parte de **ui.apps** módulo. Estilos predeterminados de los elementos de encabezado (`H1`, `H2`, `H3`...) ya se han implementado en el **ui.frontend** módulo.
+El [componente Título](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/title.html) se ha procesado como proxy en el proyecto en `/apps/wknd/components/title` como parte del módulo **ui.apps**. Los estilos predeterminados de los elementos de encabezado (`H1`, `H2`, `H3`...) ya se han implementado en el módulo **ui.frontend**.
 
-El [Diseños de artículo de WKND](assets/pages-templates/wknd-article-design.xd) contener un estilo único para el componente Título con un subrayado. En lugar de crear dos componentes o modificar el cuadro de diálogo del componente, se puede utilizar el sistema de estilos para permitir a los autores añadir un estilo de subrayado.
+Los [diseños de artículo de WKND](assets/pages-templates/wknd-article-design.xd) contienen un estilo único para el componente Título con un subrayado. En lugar de crear dos componentes o modificar el cuadro de diálogo del componente, se puede utilizar el sistema de estilos para permitir a los autores añadir un estilo de subrayado.
 
-![Estilo de subrayado: componente Título](assets/style-system/title-underline-style.png)
+![Estilo de subrayado - Componente de título](assets/style-system/title-underline-style.png)
 
 ### Agregar una directiva de título
 
 Añadamos una política para los componentes Título para permitir que los autores de contenido elijan el estilo Subrayado que se aplicará a componentes específicos. AEM Esto se realiza mediante el Editor de plantillas dentro de la opción de.
 
-1. Vaya a **Página de artículo** plantilla de: [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html)
+1. Vaya a la plantilla **Página de artículo** desde: [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html)
 
-1. Entrada **Estructura** modo, en el **Contenedor de diseño**, seleccione la **Política** junto al icono **Título** componente enumerado en *Componentes permitidos*:
+1. En el modo **Estructura**, en el **Contenedor de diseño** principal, seleccione el icono **Directiva** junto al componente **Título** que aparece en *Componentes permitidos*:
 
-   ![Configuración de directiva de título](assets/style-system/article-template-title-policy-icon.png)
+   ![Configurar directiva de título](assets/style-system/article-template-title-policy-icon.png)
 
 1. Cree una política para el componente Título con los siguientes valores:
 
-   *Título de política&#42;*: **Título de WKND**
+   *Título de directiva&#42;*: **Título de WKND**
 
-   *Propiedades* > *Pestaña Estilos* > *Añadir un nuevo estilo*
+   *Propiedades* > *Pestaña Estilos* > *Agregar un nuevo estilo*
 
    **Subrayado** : `cmp-title--underline`
 
    ![Configuración de directiva de estilo para el título](assets/style-system/title-style-policy.png)
 
-   Clic **Listo** para guardar los cambios en la directiva Título.
+   Haga clic en **Listo** para guardar los cambios en la directiva de título.
 
    >[!NOTE]
    >
-   > El valor `cmp-title--underline` rellena la clase CSS en el div exterior del marcado del HTML del componente.
+   > El valor `cmp-title--underline` rellena la clase CSS en el div exterior del marcado de HTML del componente.
 
 ### Aplicar el estilo de subrayado
 
 Como autor, vamos a aplicar el estilo de subrayado a determinados componentes de título.
 
-1. Vaya a **La Skateparks** artículo en el editor de AEM Sites en: [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html)
-1. Entrada **Editar** , elija un componente Título. Haga clic en **pincel** y seleccione el icono **Subrayado** estilo:
+1. Vaya al artículo de **La Skateparks** en el editor de AEM Sites en: [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html)
+1. En el modo **Editar**, elija un componente Título. Haga clic en el icono **pincel** y seleccione el estilo **Subrayado**:
 
    ![Aplicar el estilo de subrayado](assets/style-system/apply-underline-style-title.png)
 
    >[!NOTE]
    >
-   > En este punto, no se produce ningún cambio visible ya que la variable `underline` no se ha implementado el estilo. En el siguiente ejercicio, se implementa este estilo.
+   > En este punto, no se produce ningún cambio visible ya que el estilo `underline` no se ha implementado. En el siguiente ejercicio, se implementa este estilo.
 
-1. Haga clic en **Información de página** icono > **Ver como aparece publicado** AEM para inspeccionar la página desde fuera del editor de.
-1. Utilice las herramientas para desarrolladores del explorador para comprobar que el marcado alrededor del componente Título tiene la clase CSS `cmp-title--underline` se aplica al div externo.
+1. AEM Haga clic en el icono **Información de la página** > **Ver tal y como se publicó** para inspeccionar la página fuera del editor que se va a.
+1. Utilice las herramientas para desarrolladores del explorador para comprobar que el marcado alrededor del componente Título tiene la clase CSS `cmp-title--underline` aplicada al div externo.
 
    ![Div con clase de subrayado aplicada](assets/style-system/div-underline-class-applied.png)
 
@@ -146,20 +146,20 @@ Como autor, vamos a aplicar el estilo de subrayado a determinados componentes de
 
 ### Implementar el estilo de subrayado: ui.frontend
 
-A continuación, implemente el estilo Subrayado utilizando **ui.frontend** AEM módulo del proyecto de. El servidor de desarrollo de Webpack que está empaquetado con **ui.frontend** para obtener una vista previa de los estilos *antes* AEM se utiliza la implementación en una instancia local de la.
+AEM A continuación, implemente el estilo Subrayado utilizando el módulo **ui.frontend** del proyecto de. AEM Se utiliza el servidor de desarrollo de Webpack empaquetado con el módulo **ui.frontend** para obtener una vista previa de los estilos *antes de* implementar en una instancia local de.
 
-1. Inicie el `watch` procesar desde el **ui.frontend** módulo:
+1. Iniciar el proceso `watch` desde el módulo **ui.frontend**:
 
    ```shell
    $ cd ~/code/aem-guides-wknd/ui.frontend/
    $ npm run watch
    ```
 
-   Esto inicia un proceso que supervisa los cambios en la `ui.frontend` AEM y sincronice los cambios en la instancia de.
+   AEM Esto inicia un proceso que supervisa los cambios en el módulo `ui.frontend` y los sincroniza con la instancia de la instancia de la.
 
 
-1. Devuelve el IDE y abre el archivo `_title.scss` de: `ui.frontend/src/main/webpack/components/_title.scss`.
-1. Introduzca una nueva regla para segmentar el `cmp-title--underline` clase:
+1. Devuelva su IDE y abra el archivo `_title.scss` desde: `ui.frontend/src/main/webpack/components/_title.scss`.
+1. Introduzca una nueva regla para la clase `cmp-title--underline`:
 
    ```scss
    /* Default Title Styles */
@@ -185,60 +185,60 @@ A continuación, implemente el estilo Subrayado utilizando **ui.frontend** AEM m
    >
    >Se considera una práctica recomendada aplicar siempre estilos de ámbito estrecho al componente de destino. Esto garantiza que los estilos adicionales no afecten a otras áreas de la página.
    >
-   >Todos los componentes principales se adhieren a **[Notación BEM](https://github.com/adobe/aem-core-wcm-components/wiki/css-coding-conventions)**. Se recomienda dirigirse a la clase CSS externa al crear un estilo predeterminado para un componente. Otra práctica recomendada es segmentar los nombres de clase especificados por la notación de BEM de componentes principales en lugar de los elementos de HTML.
+   >Todos los componentes principales cumplen con **[la notación BEM](https://github.com/adobe/aem-core-wcm-components/wiki/css-coding-conventions)**. Se recomienda dirigirse a la clase CSS externa al crear un estilo predeterminado para un componente. Otra práctica recomendada es segmentar los nombres de clase especificados por la notación de BEM de componentes principales en lugar de los elementos de HTML.
 
 1. AEM Vuelva al explorador y a la página de la. Debería ver que el estilo Subrayado ha agregado:
 
    ![Estilo de subrayado visible en el servidor de desarrollo de Webpack](assets/style-system/underline-implemented-webpack.png)
 
-1. AEM En el Editor de segmentos, debería poder activar y desactivar la opción de **Subrayado** y ver que los cambios se reflejaban visualmente.
+1. AEM En el Editor de la, debería poder activar y desactivar el estilo **Subrayado** y ver que los cambios se reflejen visualmente.
 
 ## Estilo del bloque de comillas: texto {#text-component}
 
-A continuación, repita pasos similares para aplicar un estilo único a la [Componente Texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html). El componente Texto se ha proxy al proyecto en `/apps/wknd/components/text` como parte de **ui.apps** módulo. Los estilos predeterminados de los elementos de párrafo ya se han implementado en **ui.frontend**.
+A continuación, repita pasos similares para aplicar un estilo único al [componente Texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html). El componente Texto se ha procesado como proxy en el proyecto en `/apps/wknd/components/text` como parte del módulo **ui.apps**. Los estilos predeterminados de los elementos de párrafo ya se han implementado en **ui.frontend**.
 
-El [Diseños de artículo de WKND](assets/pages-templates/wknd-article-design.xd) contener un estilo único para el componente Texto con un bloque de comillas:
+Los [diseños de artículo de WKND](assets/pages-templates/wknd-article-design.xd) contienen un estilo único para el componente Texto con un bloque de comillas:
 
-![Estilo de bloque de oferta: componente Texto](assets/style-system/quote-block-style.png)
+![Estilo de bloque de presupuesto - Componente de texto](assets/style-system/quote-block-style.png)
 
 ### Agregar una política de texto
 
 A continuación, añada una directiva para los componentes Texto.
 
-1. Vaya a **Plantilla de página de artículo** de: [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html).
+1. Vaya a la **Plantilla de página de artículo** desde: [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html).
 
-1. Entrada **Estructura** modo, en el **Contenedor de diseño**, seleccione la **Política** junto al icono **Texto** componente enumerado en *Componentes permitidos*:
+1. En el modo **Estructura**, en el **Contenedor de diseño** principal, seleccione el icono **Directiva** junto al componente **Texto** que aparece en *Componentes permitidos*:
 
    ![Configurar directiva de texto](assets/style-system/article-template-text-policy-icon.png)
 
 1. Actualice la directiva del componente Texto con los siguientes valores:
 
-   *Título de política&#42;*: **Texto de contenido**
+   *Título de directiva&#42;*: **Texto de contenido**
 
-   *Complementos* > *Estilos de párrafo* > *Activar estilos de párrafo*
+   *Complementos* > *Estilos de párrafo* > *Habilitar estilos de párrafo*
 
-   *Pestaña Estilos* > *Añadir un nuevo estilo*
+   *Pestaña Estilos* > *Agregar un nuevo estilo*
 
-   **Bloque de oferta** : `cmp-text--quote`
+   **Bloque de presupuesto** : `cmp-text--quote`
 
    ![Directiva de componente de texto](assets/style-system/text-policy-enable-paragraphstyles.png)
 
    ![Directiva de componente de texto 2](assets/style-system/text-policy-enable-quotestyle.png)
 
-   Clic **Listo** para guardar los cambios en la directiva de texto.
+   Haga clic en **Listo** para guardar los cambios en la directiva de texto.
 
 ### Aplicar el estilo de bloque de oferta
 
-1. Vaya a **La Skateparks** artículo en el editor de AEM Sites en: [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html)
-1. Entrada **Editar** , elija un componente Texto. Edite el componente para incluir un elemento de oferta:
+1. Vaya al artículo de **La Skateparks** en el editor de AEM Sites en: [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html)
+1. En el modo **Editar**, elija un componente Texto. Edite el componente para incluir un elemento de oferta:
 
    ![Configuración del componente Texto](assets/style-system/configure-text-component.png)
 
-1. Seleccione el componente de texto y haga clic en **pincel** y seleccione el icono **Bloque de oferta** estilo:
+1. Seleccione el componente de texto, haga clic en el icono **pincel** y seleccione el estilo **Bloque de comillas**:
 
    ![Aplicar el estilo de bloque de oferta](assets/style-system/quote-block-style-applied.png)
 
-1. Utilice las herramientas para desarrolladores del explorador para inspeccionar el marcado. Debería ver el nombre de la clase `cmp-text--quote` se ha añadido al div exterior del componente:
+1. Utilice las herramientas para desarrolladores del explorador para inspeccionar el marcado. Debería ver que el nombre de clase `cmp-text--quote` se ha agregado al div exterior del componente:
 
    ```html
    <!-- Quote Block style class added -->
@@ -252,15 +252,15 @@ A continuación, añada una directiva para los componentes Texto.
 
 ### Implementar el estilo de bloque de cotización: ui.frontend
 
-A continuación, vamos a implementar el estilo de bloque de cotización utilizando **ui.frontend** AEM módulo del proyecto de.
+AEM A continuación, vamos a implementar el estilo de bloque de cotización usando el módulo **ui.frontend** del proyecto de.
 
-1. Si no se está ejecutando, inicie el `watch` procesar desde el **ui.frontend** módulo:
+1. Si aún no se está ejecutando, inicie el proceso `watch` desde el módulo **ui.frontend**:
 
    ```shell
    $ npm run watch
    ```
 
-1. Actualizar el archivo `text.scss` de: `ui.frontend/src/main/webpack/components/_text.scss`:
+1. Actualizar el archivo `text.scss` desde: `ui.frontend/src/main/webpack/components/_text.scss`:
 
    ```css
    /* Default text style */
@@ -312,17 +312,17 @@ A continuación, vamos a implementar el estilo de bloque de cotización utilizan
 
 Los componentes de contenedor se han utilizado para crear la estructura básica de la plantilla de página de artículo y proporcionar las zonas de colocación para que los autores de contenido añadan contenido en una página. Los contenedores también pueden utilizar el sistema de estilos, lo que proporciona a los autores de contenido aún más opciones para diseñar diseños.
 
-El **Contenedor principal** de la plantilla Página de artículo contiene los dos contenedores que se pueden crear y tiene un ancho fijo.
+El **contenedor principal** de la plantilla de la página de artículos contiene los dos contenedores con capacidad de creación y tiene un ancho fijo.
 
 ![Contenedor principal](assets/style-system/main-container-article-page-template.png)
 
-*Contenedor principal en la plantilla de la página del artículo*.
+*Contenedor principal en la plantilla de página de artículo*.
 
-La política de la **Contenedor principal** establece el elemento predeterminado como `main`:
+La directiva del **contenedor principal** establece el elemento predeterminado como `main`:
 
 ![Política del contenedor principal](assets/style-system/main-container-policy.png)
 
-El CSS que hace que el **Contenedor principal** fijo se establece en la variable **ui.frontend** módulo en `ui.frontend/src/main/webpack/site/styles/container_main.scss` :
+El CSS que hace que el **Contenedor principal** se corrija se establece en el módulo **ui.frontend** en `ui.frontend/src/main/webpack/site/styles/container_main.scss`:
 
 ```SCSS
 main.container {
@@ -334,9 +334,9 @@ main.container {
 }
 ```
 
-En lugar de segmentar el `main` HTML, se podría utilizar el sistema de estilos para crear un **Anchura fija** estilo como parte de la política de contenedor. El sistema de estilos podría proporcionar a los usuarios la opción de alternar entre **Anchura fija** y **Anchura del líquido** contenedores.
+En lugar de segmentar el elemento HTML `main`, se podría usar el sistema de estilos para crear un estilo de **ancho fijo** como parte de la directiva de contenedor. El sistema de estilos podría dar a los usuarios la opción de alternar entre **contenedores de ancho fijo** y **ancho fluido**.
 
-1. **Desafío de bonificación** - utilizar las lecciones aprendidas de los ejercicios anteriores y utilizar el sistema de estilos para implementar un **Anchura fija** y **Anchura del líquido** estilos del componente Contenedor.
+1. **Desafío adicional**: usa las lecciones aprendidas de los ejercicios anteriores y usa el sistema de estilos para implementar los estilos **Anchura fija** y **Anchura fluida** para el componente Contenedor.
 
 ## Enhorabuena. {#congratulations}
 
@@ -344,9 +344,9 @@ AEM Enhorabuena, la página de artículos está casi diseñada y ha adquirido ex
 
 ### Siguientes pasos {#next-steps}
 
-Conozca los pasos de extremo a extremo para crear una [AEM Componente personalizado](custom-component.md) que muestra el contenido creado en un cuadro de diálogo y explora el desarrollo de un modelo Sling para encapsular la lógica empresarial que rellena el HTL del componente.
+AEM Conozca los pasos de extremo a extremo para crear un [componente de personalizado](custom-component.md) que muestre el contenido creado en un cuadro de diálogo y explore el desarrollo de un modelo Sling para encapsular la lógica empresarial que rellena el HTL del componente.
 
-Ver el código terminado en [GitHub](https://github.com/adobe/aem-guides-wknd) o revise e implemente el código localmente en la rama Git `tutorial/style-system-solution`.
+Vea el código terminado en [GitHub](https://github.com/adobe/aem-guides-wknd) o revise e implemente el código localmente en la rama Git `tutorial/style-system-solution`.
 
-1. Clonar el [github.com/adobe/aem-wknd-guides](https://github.com/adobe/aem-guides-wknd) repositorio.
-1. Consulte la `tutorial/style-system-solution` Rama.
+1. Clonar el repositorio [github.com/adobe/aem-wknd-guides](https://github.com/adobe/aem-guides-wknd).
+1. Consulte la rama `tutorial/style-system-solution`.

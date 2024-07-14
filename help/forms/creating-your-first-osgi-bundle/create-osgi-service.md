@@ -24,7 +24,7 @@ Un servicio OSGi se define semánticamente mediante su interfaz de servicio y se
 
 ## Definición de la interfaz
 
-Una interfaz sencilla con un método para combinar datos con <span class="x x-first x-last">XDP</span> plantilla.
+Una interfaz sencilla con un método para combinar datos con la plantilla <span class="x x-first x-last">XDP</span>.
 
 ```java
 package com.mysite.samples;
@@ -40,7 +40,7 @@ public interface MyfirstInterface
 
 ## Implementación de la interfaz
 
-Cree un nuevo paquete llamado `com.mysite.samples.impl` para mantener la implementación de la interfaz.
+Cree un nuevo paquete llamado `com.mysite.samples.impl` para hospedar la implementación de la interfaz.
 
 ```java
 package com.mysite.samples.impl;
@@ -80,7 +80,7 @@ public class MyfirstInterfaceImpl implements MyfirstInterface {
 
 La anotación `@Component(...)` en la línea 10 marca esta clase Java como un componente OSGi y la registra como un servicio OSGi.
 
-El `@Reference` La anotación forma parte de los servicios declarativos de OSGi y se utiliza para insertar una referencia de la variable [Outputservice](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) en la variable `outputService`.
+La anotación `@Reference` forma parte de los servicios declarativos de OSGi y se usa para insertar una referencia de [Outputservice](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) en la variable `outputService`.
 
 
 ## Creación e implementación del paquete
@@ -90,7 +90,7 @@ El `@Reference` La anotación forma parte de los servicios declarativos de OSGi 
 * Ejecutar el comando `mvn clean install -PautoInstallBundle`
 * AEM El comando anterior generará e implementará automáticamente el paquete en la instancia de que se ejecuta en localhost:4502
 
-El paquete también estará disponible en la siguiente ubicación `C:\AEMFormsBundles\mysite\core\target`. AEM El paquete también se puede implementar en la configuración de la aplicación de la manera de usar la aplicación de la manera de [Consola web Felix.](http://localhost:4502/system/console/bundles)
+El paquete también estará disponible en la siguiente ubicación `C:\AEMFormsBundles\mysite\core\target`. AEM El paquete también se puede implementar en los entornos de trabajo mediante la consola web [Felix.](http://localhost:4502/system/console/bundles)
 
 ## Usar el servicio
 
@@ -101,13 +101,13 @@ MyFirstAEMFormsService myFirstAEMFormsService = sling.getService(com.mysite.samp
 com.adobe.aemfd.docmanager.Document generatedDocument = myFirstAEMFormsService.mergeDataWithXDPTemplate(xdp_or_pdf_template,xmlDocument);
 ```
 
-El paquete de muestra que contiene la página JSP puede ser [descargado desde aquí](assets/learning_aem_forms.zip)
+El paquete de muestra que contiene la página JSP se puede [descargar desde aquí](assets/learning_aem_forms.zip)
 
 [El paquete completo está disponible para descargar](assets/mysite.core-1.0.0-SNAPSHOT.jar)
 
 ## Prueba del paquete
 
-AEM Importe e instale el paquete en mediante el uso de la opción de configuración de la interfaz de usuario de [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
+AEM Importe e instale el paquete en el servidor de correo electrónico con el [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp) en el servidor de correo electrónico
 
 Utilice postman para realizar una llamada al POST y proporcionar los parámetros de entrada como se muestra en la captura de pantalla siguiente
 ![cartero](assets/test-service-postman.JPG)

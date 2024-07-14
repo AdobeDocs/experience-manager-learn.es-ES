@@ -19,16 +19,16 @@ ht-degree: 0%
 
 El siguiente paso es crear un esquema a partir del AcroForm creado en el paso anterior. Se proporciona una aplicación de ejemplo para crear el esquema como parte de este tutorial. Para crear el esquema, siga las siguientes instrucciones:
 
-1. Inicie sesión en [CRXDE Lite](http://localhost:4502/crx/de)
+1. Iniciar sesión en [CRXDE Lite](http://localhost:4502/crx/de)
 2. Abrir en el archivo `/apps/AemFormsSamples/components/createxsd/POST.jsp`
-3. Cambie el `saveLocation` a una carpeta adecuada del disco duro. Asegúrese de que la carpeta en la que está guardando ya se ha creado.
-4. Dirija el explorador a [Crear XSD](http://localhost:4502/content/DocumentServices/CreateXsd.html) AEM página alojada en el servidor de correo electrónico de.
+3. Cambie `saveLocation` por una carpeta apropiada de su disco duro. Asegúrese de que la carpeta en la que está guardando ya se ha creado.
+4. AEM Dirija su explorador a [Crear XSD](http://localhost:4502/content/DocumentServices/CreateXsd.html) página hospedada en el servidor de correo electrónico de la.
 5. Arrastre y suelte el AcroForm.
 6. Compruebe la carpeta especificada en el paso 3. El archivo de esquema se guarda en esta ubicación.
 
 ## Cargar el AcroForm
 
-Para que esta demostración funcione en su sistema, debe crear una carpeta llamada `acroforms` en AEM Assets. Cargue AcroForm en esta `acroforms` carpeta.
+Para que esta demostración funcione en su sistema, deberá crear una carpeta llamada `acroforms` en AEM Assets. Cargue AcroForm en esta carpeta `acroforms`.
 
 >[!NOTE]
 >

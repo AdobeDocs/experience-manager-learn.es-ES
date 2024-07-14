@@ -23,17 +23,17 @@ ht-degree: 1%
 
 ![Ejemplo de extensión de menú de encabezado del Editor de fragmentos de contenido](./assets/export-to-xml/hero.png){align="center"}
 
-Se pueden añadir botones personalizados al menú de encabezado del Editor de fragmentos de contenido mediante la variable `headerMenu` punto de extensión. Este ejemplo muestra cómo añadir un botón al menú de encabezado y cómo gestionar el evento de clic para exportar el fragmento de contenido activo como XML o CSV.
+Se pueden agregar botones personalizados al menú del encabezado del Editor de fragmentos de contenido mediante el punto de extensión `headerMenu`. Este ejemplo muestra cómo añadir un botón al menú de encabezado y cómo gestionar el evento de clic para exportar el fragmento de contenido activo como XML o CSV.
 
 Los botones de encabezado pueden existir como un solo botón o como un botón con subelementos. Este ejemplo muestra cómo implementar un botón con subelementos, pero incluye el código comentado para implementar un solo botón.
 
 ## Punto de extensión
 
-Este ejemplo se extiende hasta el punto de extensión `headerBar` para agregar un botón personalizado al Editor de fragmentos de contenido.
+Este ejemplo se extiende al punto de extensión `headerBar` para agregar un botón personalizado al Editor de fragmentos de contenido.
 
 | AEM Interfaz de usuario extendida | Punto de extensión |
 | ------------------------ | --------------------- | 
-| [Editor de fragmentos de contenido](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [Menú de encabezado](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/header-menu/) |
+| [Editor de fragmentos de contenido](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [Menú Encabezado](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/header-menu/) |
 
 ## Extensión de ejemplo
 
@@ -43,9 +43,9 @@ El código muestra cómo se puede obtener el contenido del fragmento de contenid
 
 ### Registro de extensiones
 
-`ExtensionRegistration.js`AEM , asignado a la ruta index.html, es el punto de entrada para la extensión de la y define:
+AEM `ExtensionRegistration.js`, asignado a la ruta index.html, es el punto de entrada para la extensión de la y define:
 
-+ Aparecerá la ubicación del botón de extensión (`headerMenu`AEM ) en la experiencia de creación de
++ AEM La ubicación del botón de extensión aparece (`headerMenu`) en la experiencia de creación de la
 + Definición del botón de extensión en la función getButton()
 + El controlador de clic para el botón, en la función onClick(), o una lista de subelementos y sus controladores de clic.
 
@@ -148,13 +148,13 @@ export default ExtensionRegistration;
 
 #### Datos de fragmento de contenido
 
-El fragmento de contenido activo se puede recuperar mediante la variable `getContentFragment()` en el `guestConnection.host.contentFragment` objeto.
+El fragmento de contenido activo se puede recuperar mediante el método `getContentFragment()` en el objeto `guestConnection.host.contentFragment`.
 
 ```javascript
 const contentFragment = await guestConnection.host.contentFragment.getContentFragment();
 ```
 
-El `contentFragment` contiene toda la información acerca del fragmento de contenido, incluida la ruta, el modelo, los metadatos, el contenido principal y cualquier variante.
+El objeto `contentFragment` contiene toda la información acerca del fragmento de contenido, incluida la ruta de acceso, el modelo, los metadatos, el contenido principal y cualquier variante.
 
 ```json
 {

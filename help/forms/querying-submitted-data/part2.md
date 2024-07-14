@@ -27,7 +27,7 @@ Para almacenar los datos enviados en la base de datos, escribiremos un servlet p
 
 Hemos creado envíos personalizados para gestionar el envío del formulario. En el post.POST.jsp de este envío personalizado, reenviamos la solicitud a nuestro servlet.
 
-Para obtener más información sobre los envíos personalizados, lea esto [artículo](https://helpx.adobe.com/experience-manager/kt/forms/using/custom-submit-aem-forms-article.html)
+Para obtener más información acerca de los motivos de envío personalizados, lea este [artículo](https://helpx.adobe.com/experience-manager/kt/forms/using/custom-submit-aem-forms-article.html)
 
 com.adobe.aemds.guide.utils.GuideSubmitUtils.setForwardPath(slingRequest,&quot;/bin/storeafsubmission&quot;,null,null);
 
@@ -137,7 +137,7 @@ public class HandleAdaptiveFormSubmission extends SlingAllMethodsServlet {
 }
 ```
 
-![connectionpool](assets/connectionpooled.gif)
+![grupo de conexión](assets/connectionpooled.gif)
 
 Para que esto funcione en su sistema, siga los siguientes pasos
 

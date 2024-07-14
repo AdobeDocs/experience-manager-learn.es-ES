@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Pasos para solucionar los problemas de conversión de PDF Generator para varios usuarios en una configuración Unix
 
-*Este vídeo describe el proceso de resolución de problemas de conversión de PDF Generator para varios usuarios en una configuración Unix.*
+*Este vídeo describe el proceso de resolución de problemas de la conversión de PDF Generator para varios usuarios en una configuración Unix.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335549?quality=12&learn=on)

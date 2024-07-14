@@ -38,11 +38,11 @@ El servicio de imágenes es quizás la función más utilizada de Dynamic Media 
 
 En esta guía analizaremos las siguientes funciones principales de Dynamic Media Classic.
 
-- **Dynamic Imaging.** El término general para la edición, el formato y el tamaño en tiempo real, y el zoom y la panorámica interactivos; las muestras de color y textura; los giros de 360 grados; las plantillas de imagen y los visores multimedia.
-- **Vídeo.** Cargue los vídeos finales, publíquelos y descárguelos progresivamente en visores de vídeo configurables.
-- **Imágenes inteligentes.** Tecnología que aprovecha las capacidades de IA de Adobe Sensei y funciona con los &quot;ajustes preestablecidos de imagen&quot; existentes para mejorar el rendimiento de entrega de imágenes optimizando automáticamente el formato, el tamaño y la calidad de la imagen en función de las capacidades del explorador del cliente.
+- **Dynamic Imaging.** Término general para la edición, el formato y el tamaño en tiempo real, y el zoom y la panorámica interactivos; las muestras de color y textura; los giros de 360 grados; las plantillas de imagen y los visores multimedia.
+- **Vídeo.** Cargar los vídeos finales, publicarlos y descargarlos progresivamente en visores de vídeo configurables.
+- **Imágenes inteligentes.** Tecnología que aprovecha las capacidades de IA de Adobe Sensei y funciona con los &quot;ajustes preestablecidos de imagen&quot; existentes para mejorar el rendimiento de entrega de imágenes al optimizar automáticamente el formato, el tamaño y la calidad de la imagen en función de las capacidades del explorador del cliente.
 
-Para descubrir capacidades adicionales de la solución, visite la [Documentación de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/introduction.html).
+Para descubrir funcionalidades adicionales de la solución, visite la [Documentación de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/introduction.html).
 
 ## Interfaz de usuario de Dynamic Media Classic
 
@@ -50,26 +50,26 @@ La IU principal de Dynamic Media Classic consta de tres áreas principales: la b
 
 ![imagen](assets/overview/overview-dmc-ui-ew.png)
 
-_IU de Dynamic Media Classic_
+_IU DE Dynamic Media Classic_
 
-**Barra de navegación global.** Ubicada en la parte superior de la pantalla, usará los botones de esta barra para acceder a las áreas clave y a las capacidades de la solución. Por ejemplo, lo utilizará para acceder a las funciones de carga, abrir varias áreas de creación de recursos (conjunto de imágenes, conjunto de giros, etc.), realizar tareas importantes como la configuración de ajustes preestablecidos de imagen y de visualizador, y publicar sus recursos. Desde aquí también puede monitorizar sus trabajos, ver las actividades recientes y elegir entre una variedad de opciones de ayuda.
+**Barra de navegación global.** Se encuentra en la parte superior de la pantalla y usa los botones de esta barra para acceder a las áreas clave y a las capacidades de la solución. Por ejemplo, lo utilizará para acceder a las funciones de carga, abrir varias áreas de creación de recursos (conjunto de imágenes, conjunto de giros, etc.), realizar tareas importantes como la configuración de ajustes preestablecidos de imagen y de visualizador, y publicar sus recursos. Desde aquí también puede monitorizar sus trabajos, ver las actividades recientes y elegir entre una variedad de opciones de ayuda.
 
-**Biblioteca de recursos.** Situada en la parte izquierda de la pantalla, se encuentra la Biblioteca de recursos, un panel que se utiliza para organizar los recursos en las carpetas y subcarpetas que cree. En la parte superior del panel, encontrará filtros de búsqueda y búsqueda para ayudarle a localizar recursos. La búsqueda avanzada permite buscar especificando varias opciones como criterios para la búsqueda, incluidos los campos de metadatos ocultos adjuntos a ese recurso. En la parte inferior del panel, puede ver los elementos eliminados haciendo clic en el icono Papelera. Al principio, no se empieza con ninguna carpeta, excepto con la carpeta de nivel superior, que tiene el mismo nombre que el nombre de la cuenta.
+**Biblioteca de recursos.** En la parte izquierda de la pantalla se encuentra la Biblioteca de recursos, un panel que se utiliza para organizar los recursos en las carpetas y subcarpetas que se creen. En la parte superior del panel, encontrará filtros de búsqueda y búsqueda para ayudarle a localizar recursos. La búsqueda avanzada permite buscar especificando varias opciones como criterios para la búsqueda, incluidos los campos de metadatos ocultos adjuntos a ese recurso. En la parte inferior del panel, puede ver los elementos eliminados haciendo clic en el icono Papelera. Al principio, no se empieza con ninguna carpeta, excepto con la carpeta de nivel superior, que tiene el mismo nombre que el nombre de la cuenta.
 
 >[!NOTE]
 >
->Los recursos de la papelera se eliminarán automáticamente de forma permanente siete días después de que se hayan colocado allí, a menos que los restaure.
+>Assets in the Trash se eliminará automáticamente de forma permanente siete días después de que se colocaron allí, a menos que los restaure.
 
-**Panel Examinar/Generar.** Este es el centro de la interfaz de usuario, donde explorará los recursos en el modo Examinar o, si está en el modo Generar, lo utilizará como un lienzo para crear recursos como parte de un flujo de trabajo. Cuando inicie sesión por primera vez, verá el Panel de exploración. En el centro de la pantalla hay versiones en miniatura de las imágenes en una vista de cuadrícula. Puede cambiar a una vista de lista o seleccionar un recurso y ver los detalles sobre él mediante la vista de detalles.
+**Examinar/Generar panel.**: este es el centro de la interfaz de usuario, donde explorará los recursos en el modo Examinar o, si se encuentra en el modo Generar, lo utilizará como lienzo para generar recursos como parte de un flujo de trabajo. Cuando inicie sesión por primera vez, verá el Panel de exploración. En el centro de la pantalla hay versiones en miniatura de las imágenes en una vista de cuadrícula. Puede cambiar a una vista de lista o seleccionar un recurso y ver los detalles sobre él mediante la vista de detalles.
 
 >[!IMPORTANT]
 >
->Junto a cada ID de recurso se encuentra el **Marcar para publicación** cambiar. Cuando la opción está activada (verde), esto indica que el recurso está marcado para la publicación.
+>Junto a cada ID de recurso se encuentra el conmutador **Marcar para Publish**. Cuando la opción está activada (verde), esto indica que el recurso está marcado para la publicación.
 
 ![imagen](assets/overview/overview-mark-for-publish.png)
 
 >[!TIP]
 >
->Seleccione el **Publicar tras la carga** en el cuadro de diálogo Cargar para publicar recursos automáticamente al cargar.
+>Seleccione la casilla de verificación **Publish después de cargar** en el cuadro de diálogo Cargar para publicar los recursos automáticamente tras la carga.
 
-Más información sobre [Navegación por la IU de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/navigation-basics.html).
+Más información sobre [Cómo navegar por la interfaz de usuario de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/navigation-basics.html).

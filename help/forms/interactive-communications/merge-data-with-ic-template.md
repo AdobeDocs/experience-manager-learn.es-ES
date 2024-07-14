@@ -162,22 +162,22 @@ String params = arg2.get("PROCESS_ARGS","string").toString();
 
 Para probar esto en el servidor, siga los siguientes pasos:
 
-* [Configure el servicio Day CQ Mail.](https://helpx.adobe.com/experience-manager/6-5/communities/using/email.html) Esto es necesario para enviar un correo electrónico con el documento generado como archivo adjunto.
+* [Configurar el servicio Day CQ Mail.](https://helpx.adobe.com/experience-manager/6-5/communities/using/email.html) Esto es necesario para enviar un correo electrónico con el documento generado como datos adjuntos.
 * [Implementación del paquete de usuario Desarrollo con servicio](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 * Asegúrese de haber agregado la siguiente entrada en la configuración del servicio de asignación de usuarios del servicio Apache Sling
-* **DesarrollarWithServiceUser.core:getformsresourceresolver=fd-service**
+* **Desarrollo con ServiceUser.core:getformsresourceresolver=fd-service**
 * [Descargue y descomprima los recursos relacionados con este artículo en su sistema de archivos](assets/prefillservice.zip)
-* [AEM Importe los siguientes paquetes mediante el Administrador de paquetes de](http://localhost:4502/crx/packmgr/index.jsp)
+* AEM [Importe los siguientes paquetes mediante el Administrador de paquetes de la](http://localhost:4502/crx/packmgr/index.jsp)
    1. beneficiaryconfirmationic.zip
    2. changeofbeneficiaryform.zip
    3. generatebeneficiaryworkflow.zip
-* [AEM Implemente lo siguiente mediante la consola web de Félix de](http://localhost:4502/system/console/bundles)
+* AEM [Implemente lo siguiente mediante la consola web de Felix de la consola de usuario](http://localhost:4502/system/console/bundles)
 
    * GenerateIC.GenerateIC.core-1.0-SNAPSHOT.jar. Este paquete contiene el código mencionado en este artículo.
 
 * [Abrir formulario de cambio de beneficiario](http://localhost:4502/content/dam/formsanddocuments/changebeneficiary/jcr:content?wcmmode=disabled)
 * AEM Asegúrese de que el formulario adaptable está configurado para enviarse al flujo de trabajo de la como se muestra a continuación
   ![imagen](assets/generateic.PNG)
-* [Configure el modelo de flujo de trabajo.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/ChangesToBeneficiary.html)Asegúrese de que el paso Procesar y enviar componentes de correo electrónico estén configurados según su entorno
-* [Previsualice ChangeOfBeneficiaryForm.](http://localhost:4502/content/dam/formsanddocuments/changebeneficiary/jcr:content?wcmmode=disabled) Rellene algunos detalles y envíe
+* [Configurar el modelo de flujo de trabajo.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/ChangesToBeneficiary.html)Asegúrese de que el paso de proceso y los componentes de envío de correo electrónico estén configurados según su entorno
+* [Vista previa del formulario ChangeOfBeneficiaryForm.](http://localhost:4502/content/dam/formsanddocuments/changebeneficiary/jcr:content?wcmmode=disabled): complete algunos detalles y envíe
 * El flujo de trabajo debe invocarse y el documento del canal de impresión IC debe enviarse al destinatario especificado en el componente Enviar correo electrónico como archivo adjunto

@@ -19,7 +19,7 @@ ht-degree: 4%
 
 # Introducción
 
-En este tutorial, aprenderá a implementar un caso de uso sencillo de prerrellenado **componente principal** formulario basado en con datos enviados y adjuntos.
+En este tutorial, aprenderá a implementar un caso de uso sencillo de rellenar previamente un formulario basado en **componente principal** con datos enviados y archivos adjuntos.
 
 ## Requisitos previos
 

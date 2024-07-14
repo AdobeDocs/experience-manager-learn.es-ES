@@ -32,8 +32,8 @@ Puede personalizar una bandeja de entrada de Experience Manager para cambiar el 
 
 ## Personalización de columnas
 
-[AEM Abrir cuadro de inc.](http://localhost:4502/aem/inbox)
-Abra Admin Control haciendo clic en _Vista de lista_ y luego seleccione _Control de administración_ como se muestra en la captura de pantalla siguiente
+AEM [Abrir bandeja de entrada](http://localhost:4502/aem/inbox)
+Abra Admin Control haciendo clic en el icono _Vista de lista_ y, a continuación, seleccione _Admin Control_ como se muestra en la captura de pantalla siguiente
 
 ![admin-control](assets/open-customization.png)
 
@@ -52,7 +52,7 @@ En la personalización de marca puede hacer lo siguiente
 * Personalizar el vínculo de ayuda
 * Ocultar opciones de navegación
 
-![marca de bandeja de entrada](assets/branding-customization.PNG)
+![marca de la bandeja de entrada](assets/branding-customization.PNG)
 
 ## Siguientes pasos
 

@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Cómo habilitar el registro de rendimiento en AEM Forms para depurar los problemas relacionados con Forms y el servicio de salida
 
-*Este vídeo muestra el proceso para habilitar el registro de rendimiento en AEM Forms para depurar los problemas relacionados con el servicio Forms y Output*
+*Este vídeo muestra el proceso para habilitar el inicio de sesión de rendimiento en AEM Forms para depurar los problemas relacionados con Forms y el servicio de salida.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335499?quality=12&learn=on)

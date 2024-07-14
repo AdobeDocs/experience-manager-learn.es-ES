@@ -24,11 +24,11 @@ Un componente de página es un componente normal responsable de procesar una pá
 ## Crear componente de página
 
 Inicie sesión en la instancia local de AEM Forms lista para la nube. Cree la siguiente estructura en la carpeta de aplicaciones
-![página-componente](./assets/page-component1.png)
+![componente de página](./assets/page-component1.png)
 
 1. Haga clic con el botón derecho en la carpeta de página y cree un nodo llamado storeAndFetch de tipo cq:Component
 1. Guarde los cambios
-1. Añada las siguientes propiedades a `storeandfetch` nodo y guardar
+1. Agregue las siguientes propiedades al nodo `storeandfetch` y guarde
 
 | **Nombre de propiedad** | **Tipo de propiedad** | **Valor de propiedad** |
 |-------------------------|-------------------|----------------------------------------|
@@ -37,9 +37,9 @@ Inicie sesión en la instancia local de AEM Forms lista para la nube. Cree la si
 | jcr:title | Cadena | Página de plantilla de formulario adaptable |
 | sling:resourceSuperType | Cadena | `fd/af/components/page2/aftemplatedpage` |
 
-Copie el `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp` y péguelo en la etiqueta `storeandfetch` nodo. Cambie el nombre del `aftemplatedpage.jsp` hasta `storeandfetch.jsp`.
+Copie `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp` y péguelo en el nodo `storeandfetch`. Cambie el nombre de `aftemplatedpage.jsp` a `storeandfetch.jsp`.
 
-Abrir `storeandfetch.jsp` y añada la línea siguiente:
+Abra `storeandfetch.jsp` y agregue la línea siguiente:
 
 ```jsp
 <cq:include script="azureportal.jsp"/>
@@ -58,7 +58,8 @@ El código final debería ser el siguiente
 <cq:include script="azureportal.jsp"/>
 ```
 
-Cree un archivo llamado azureportal.jsp en el nodo storeandfetch, copie el siguiente código en azureportal.jsp y guarde los cambios
+Cree un archivo llamado azureportal.jsp en el nodo storeandfetch
+copie el siguiente código en azureportal.jsp y guarde los cambios
 
 ```jsp
 <%@page session="false" %>
@@ -78,7 +79,7 @@ Cree un archivo llamado azureportal.jsp en el nodo storeandfetch, copie el sigui
 %>
 ```
 
-En este código se obtiene el valor del parámetro de solicitud **guid** y almacenarlo en una variable llamada BlobId. A continuación, este BlobId se pasa a la solicitud de sling mediante el atributo paramMap. Para que este código funcione, se da por hecho que tiene un formulario basado en un modelo de datos de formulario respaldado por un almacenamiento de Azure y el servicio de lectura del modelo de datos de formulario está enlazado a un atributo de solicitud denominado BlobId, como se muestra en la captura de pantalla siguiente.
+En este código se obtiene el valor del parámetro de solicitud **guid** y se almacena en una variable denominada BlobId. A continuación, este BlobId se pasa a la solicitud de sling mediante el atributo paramMap. Para que este código funcione, se da por hecho que tiene un formulario basado en un modelo de datos de formulario respaldado por un almacenamiento de Azure y el servicio de lectura del modelo de datos de formulario está enlazado a un atributo de solicitud denominado BlobId, como se muestra en la captura de pantalla siguiente.
 
 ![fdm-request-attribute](./assets/fdm-request-attribute.png)
 

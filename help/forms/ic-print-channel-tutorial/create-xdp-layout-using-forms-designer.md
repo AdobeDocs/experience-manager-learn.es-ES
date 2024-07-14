@@ -1,6 +1,6 @@
 ---
-title: Crear diseños con Forms Designer
-description: Esta es la parte 4 del tutorial de varias partes para crear el primer documento de comunicación interactiva para el canal Imprimir. En esta parte, vemos el archivo de diseño creado con AEM Forms Designer.
+title: Crear un diseño con Forms Designer
+description: Esta es la parte 4 del tutorial de varias partes para crear su primer documento de comunicación interactiva para el canal Imprimir. En esta parte, vemos el archivo de diseño creado con AEM Forms Designer.
 feature: Interactive Communication
 doc-type: Tutorial
 version: 6.4,6.5
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ---
 
-# Crear diseños con Forms Designer {#create-layout-using-forms-designer}
+# Crear un diseño con Forms Designer {#create-layout-using-forms-designer}
 
 En esta parte, vemos el archivo de diseño creado con AEM Forms Designer.
 

@@ -49,9 +49,9 @@ El primer paso en la integración de Marketo con AEM Forms es obtener las creden
 1. identity_endpoint
 1. URL de autenticación
 
-[Siga la documentación oficial de Marketo para obtener las propiedades mencionadas anteriormente.](https://developers.marketo.com/rest-api/) También puede ponerse en contacto con el administrador de su instancia de Marketo.
+[Siga la documentación oficial de Marketo para obtener las propiedades mencionadas.](https://developers.marketo.com/rest-api/) También puede comunicarse con el administrador de su instancia de Marketo.
 
-**Antes de empezar**
+**Antes de comenzar**
 
 [Descargue y descomprima los recursos relacionados con este artículo.](assets/aemformsandmarketo.zip) El archivo zip contiene lo siguiente:
 

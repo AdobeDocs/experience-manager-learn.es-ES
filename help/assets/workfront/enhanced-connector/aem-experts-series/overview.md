@@ -22,7 +22,7 @@ ht-degree: 0%
 
 # Integración de Workfront y AEM Assets con el conector mejorado
 
-![AEM Serie de expertos de](./assets/banner.png)
+AEM ![Serie de expertos de](./assets/banner.png)
 
 Únase a los expertos de Workfront y Experience Manager Assets de Adobe en esta serie de vídeos de cuatro partes, mientras muestran y analizan los detalles de la integración de Workfront y AEM Assets mediante el conector mejorado.
 
@@ -40,7 +40,7 @@ Esta serie de cuatro partes de expertos sigue a un grupo de expertos en Adobe - 
              src="./assets/setup.png">
       </a>
       <div>
-         <a href="./setup.md"><strong>Configuración inicial y configuración</strong></a>
+         <a href="./setup.md"><strong>Configuración y configuración inicial</strong></a>
          <br/><em>Parte 1/4</em>
       </div>
       <p>
@@ -70,7 +70,7 @@ Esta serie de cuatro partes de expertos sigue a un grupo de expertos en Adobe - 
              src="./assets/aem-tags.png">
       </a>
       <div>
-         <a href="./aem-tags-project-linked-folders-and-folder-metadata.md"><strong>AEM Etiquetas, carpetas vinculadas a proyectos y metadatos de carpetas</strong></a>
+         AEM <a href="./aem-tags-project-linked-folders-and-folder-metadata.md"><strong>Etiquetas, carpetas vinculadas a proyectos y metadatos de carpetas de la</strong></a>
          <br/><em>Parte 3/4</em> 
       </div>
       <p>

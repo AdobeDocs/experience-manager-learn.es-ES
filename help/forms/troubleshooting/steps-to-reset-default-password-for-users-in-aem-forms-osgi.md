@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Pasos para restablecer la contraseña predeterminada del administrador en AEM Forms OSGi
 
-*Este vídeo muestra los pasos para restablecer la contraseña predeterminada del administrador en AEM Forms OSGi.*
+*Este vídeo explica los pasos para restablecer la contraseña predeterminada del administrador en AEM Forms OSGi.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335542?quality=12&learn=on)

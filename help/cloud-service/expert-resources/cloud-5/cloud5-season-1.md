@@ -1,6 +1,6 @@
 ---
 title: Cloud 5 - Temporada 1
-description: Obtenga información acerca de Adobe Experience Manager AEM () as a Cloud Service de los propios ingenieros expertos de Adobe que lo crearon y de los servicios expertos que lo proporcionan.
+description: Obtenga información acerca del as a Cloud Service de Adobe Experience Manager AEM () de los propios ingenieros expertos de Adobe que lo crearon y de los servicios expertos que lo proporcionan.
 sub-product: Experience Manager Sites, Experience Manager Cloud Manager, Experience Manager Assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 ## Introducción
 
-AEM Bienvenido a la serie Cloud 5 de Ingeniería de. Uno de los principales problemas en la fase de implementación de cualquier producto es tener suficientes muestras de código o demostraciones en directo de esas muestras, herramientas o API. AEM El objetivo de esta serie es proporcionar información útil acerca de las as a Cloud Service en 5 minutos o menos.
+AEM Bienvenido a la serie Cloud 5 de Ingeniería de. Uno de los principales problemas en la fase de implementación de cualquier producto es tener suficientes muestras de código o demostraciones en directo de esas muestras, herramientas o API. El objetivo de esta serie es ofrecer información útil sobre AEM as a Cloud Service en 5 minutos o menos.
 
-Visite la [Cuadro de sugerencias](https://forms.office.com/r/74P5Xz4UH0) para enviar ideas de temas.
+Visite [Cuadro de sugerencias](https://forms.office.com/r/74P5Xz4UH0) para enviar ideas sobre temas.
 
 ## Temporada 1
 
@@ -32,12 +32,12 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
       <img alt="AEM CDN CDN, parte 1" src="./imgs/001-thumb.png"/>
       </a>
       <div>
-         <a href="./cloud5-aem-cdn-part1.md"><strong>AEM CDN CDN Profundo (parte 1)</strong></a>         
+         AEM <a href="./cloud5-aem-cdn-part1.md"><strong>Análisis profundo de CDN (parte 1)</strong></a>         
          <br/><em>con Darin Kuntze y James Talbot, arquitectos sénior de la nube</em>
       </div>
       <p>
         <br/>
-         AEM La parte 1 es una presentación de la CDN de as a Cloud Service de la y cómo utilizarla en la implementación.
+         La parte 1 es una presentación de la CDN de AEM as a Cloud Service y cómo utilizarla en la implementación.
       </p>
      </td>   
      <td>
@@ -45,12 +45,12 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
          <img alt="AEM CDN CDN, parte 2" src="./imgs/002-thumb.png"/>
       </a>
       <div>
-         <a href="./cloud5-aem-cdn-part2.md"><strong>AEM CDN CDN Profundo (parte 2)</strong></a>
+         AEM <a href="./cloud5-aem-cdn-part2.md"><strong>Análisis profundo de CDN (parte 2)</strong></a>
          <br/><em>con Darin Kuntze y James Talbot, arquitectos sénior de la nube</em>
       </div>
       <p>
         <br/>
-         AEM La parte 2 es una continuación de nuestra visión de la CDN as a Cloud Service de la. Respondemos a algunas de las preguntas y mitos más comunes sobre las funciones que obtiene con la nueva CDN.
+         La parte 2 es una continuación de nuestro análisis de la CDN de AEM as a Cloud Service. Respondemos a algunas de las preguntas y mitos más comunes sobre las funciones que obtiene con la nueva CDN.
       </p>
    </td>
      <td>
@@ -63,7 +63,7 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
       </div>
       <p>
         <br/>
-         AEM Este es un vistazo rápido a cómo acceder a los registros en as a Cloud Service, incluyendo cómo acceder a ellos a través de la interfaz de usuario, así como desde las APIs.
+         Este es un vistazo rápido a cómo acceder a los registros en AEM as a Cloud Service, incluido cómo acceder a ellos a través de la interfaz de usuario, así como desde las API.
       </p>
    </td> 
   </tr>
@@ -91,7 +91,7 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
       </div>
       <p>
         <br/>
-        AEM Darin y James analizan Dispatcher en la nube de la, incluidas algunas prácticas recomendadas y diferencias con AMS/On-Prem. 
+        Darin y James analizan el Dispatcher AEM en la nube de, incluidas algunas prácticas recomendadas y diferencias con respecto a AMS/On-Prem. 
       </p>
    </td>
      <td>
@@ -124,7 +124,7 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
      </td>   
      <td>
         <a href="./cloud5-aem-dispatcher-validator.md">
-            <img alt="Validador de Dispatcher" src="./imgs/008-thumb.png"/>
+            <img alt="Dispatcher Validator" src="./imgs/008-thumb.png"/>
         </a>
       <div>
          <a href="./cloud5-aem-dispatcher-validator.md"><strong>Validador de Dispatcher</strong></a>
@@ -156,10 +156,10 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
             </a>
             <div>
                 <a href="./cloud5-adobe-app-builder.md"><strong>Adobe App Builder</strong></a><br/>        
-                <em>con Darin Kuntze y James Talbot, arquitectos sénior de la nube y Amol Anand</em>
+                <em>con Darin Kuntze y James Talbot, arquitectos de la nube sénior y Amol Anand</em>
             </div>
             <p><br/>
-                Eche un vistazo a algunas cosas interesantes que puede hacer con el Generador de aplicaciones de Adobe y aprenda algo nuevo sobre el futuro de las personalizaciones en la nube.
+                Eche un vistazo a algunas cosas interesantes que puede hacer con Adobe App Builder y aprenda algo nuevo sobre el futuro de las personalizaciones en la nube.
             </p>
         </td>
         <td></td>

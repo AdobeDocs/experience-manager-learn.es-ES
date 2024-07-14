@@ -1,6 +1,6 @@
 ---
 title: 'AEM Componente web/JS: Ejemplo sin encabezado'
-description: Las aplicaciones de ejemplo son una buena manera de explorar las capacidades sin encabezado de Adobe Experience Manager AEM (). AEM Esta aplicación Web Component/JS muestra cómo realizar consultas en el contenido mediante API de GraphQL de la aplicación de datos utilizando consultas persistentes.
+description: Las aplicaciones de ejemplo son una buena manera de explorar las capacidades sin encabezado de Adobe Experience Manager AEM (). AEM Esta aplicación Web Component/JS muestra cómo realizar consultas en el contenido utilizando API de GraphQL que utilizan consultas persistentes, de forma.
 version: Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
@@ -21,9 +21,9 @@ ht-degree: 3%
 
 # Componente web
 
-Las aplicaciones de ejemplo son una buena manera de explorar las capacidades sin encabezado de Adobe Experience Manager AEM (). AEM Esta aplicación de componente web muestra cómo realizar consultas en el contenido utilizando API de GraphQL de la aplicación, utilizando consultas persistentes y representando una parte de la interfaz de usuario, todo ello realizado utilizando código JavaScript puro.
+Las aplicaciones de ejemplo son una buena manera de explorar las capacidades sin encabezado de Adobe Experience Manager AEM (). AEM Esta aplicación de componente web muestra cómo realizar consultas en el contenido utilizando las API de GraphQL de la interfaz de usuario de la aplicación de datos de uso de consultas persistentes y representando una parte de la interfaz de usuario, todo ello realizado utilizando código JavaScript puro.
 
-![AEM Componente web con sin encabezado de](./assets/web-component/web-component.png)
+AEM ![Componente web con encabezado sin encabezado](./assets/web-component/web-component.png)
 
 Ver el [código fuente en GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/web-component)
 
@@ -40,32 +40,32 @@ AEM El componente web funciona con las siguientes opciones de implementación de
 
 + [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
 + Configuración local mediante [el SDK de AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=es)
-   + Requiere [JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14) AEM AEM (si se conecta al SDK local de la versión 6.5 o del SDK de la)
+   + AEM AEM Requiere [JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14) (si se conecta a la versión local de 6.5 o al SDK de la)
 
-Esta aplicación de ejemplo se basa en [basic-tutorial-solution.content.zip](../multi-step/assets/explore-graphql-api/basic-tutorial-solution.content.zip) que se va a instalar y los necesarios [configuraciones de implementación](../deployment/web-component.md) están en su lugar.
+Esta aplicación de ejemplo depende de [basic-tutorial-solution.content.zip](../multi-step/assets/explore-graphql-api/basic-tutorial-solution.content.zip) que se va a instalar y de que se hayan implementado las [configuraciones de implementación](../deployment/web-component.md) necesarias.
 
 
 >[!IMPORTANT]
 >
->El componente web está diseñado para conectarse a un __AEM Publicación de__ AEM , sin embargo, puede obtener contenido de Autor de la fuente si se proporciona autenticación en la interfaz de usuario del componente web. [`person.js`](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/web-component/src/person.js#L11) archivo.
+>AEM El componente web está diseñado para conectarse a un entorno de __Publish AEM__, pero puede obtener contenido de la fuente de Autor de la aplicación si se proporciona autenticación en el archivo [`person.js`](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/web-component/src/person.js#L11) del componente web.
 
 ## Cómo usar
 
-1. Clonar el `adobe/aem-guides-wknd-graphql` repositorio:
+1. Clonar el repositorio `adobe/aem-guides-wknd-graphql`:
 
    ```shell
    $ git clone git@github.com:adobe/aem-guides-wknd-graphql.git
    ```
 
-1. Vaya a `web-component` subdirectorio.
+1. Vaya al subdirectorio `web-component`.
 
    ```shell
    $ cd aem-guides-wknd-graphql/web-component
    ```
 
-1. Edite el `.../src/person.js` AEM para incluir los detalles de conexión de la:
+1. AEM Edite el archivo `.../src/person.js` para incluir los detalles de conexión de la:
 
-   En el `aemHeadlessService` objeto, actualice el `aemHost` AEM para que apunte a su servicio Publicación de la.
+   AEM En el objeto `aemHeadlessService`, actualice `aemHost` para que apunte a su servicio de Publish de.
 
    ```plain
    # AEM Server namespace
@@ -78,7 +78,7 @@ Esta aplicación de ejemplo se basa en [basic-tutorial-solution.content.zip](../
    queryParamName=name
    ```
 
-   AEM Si se conecta a un servicio de autor de la, en la variable `aemCredentials` AEM , proporcione las credenciales de usuario de la aplicación local.
+   AEM AEM Si se conecta a un servicio de autor de, en el objeto `aemCredentials`, proporcione las credenciales de usuario local de la cuenta de usuario de la cuenta de usuario.
 
    ```plain
    # For Basic auth, use AEM ['user','pass'] pair (for example, when connecting to local AEM Author instance)
@@ -86,7 +86,7 @@ Esta aplicación de ejemplo se basa en [basic-tutorial-solution.content.zip](../
    password=admin
    ```
 
-1. Abra un terminal y ejecute los comandos desde `aem-guides-wknd-graphql/web-component`:
+1. Abra un terminal y ejecute los comandos de `aem-guides-wknd-graphql/web-component`:
 
    ```shell
    $ npm install
@@ -94,7 +94,7 @@ Esta aplicación de ejemplo se basa en [basic-tutorial-solution.content.zip](../
    ```
 
 1. Una nueva ventana del explorador abre la página del HTML estático que incrusta el componente web en [http://localhost:8080](http://localhost:8080).
-1. El _Información de persona_ El componente web se muestra en la página web.
+1. El componente web _Información de persona_ se muestra en la página web.
 
 ## El código
 
@@ -102,7 +102,7 @@ AEM A continuación se muestra un resumen de cómo se crea el componente web, c�
 
 ### Etiqueta de HTML de componente web
 
-Un componente web reutilizable (también conocido como elemento personalizado) `<person-info>` se añade a `../src/assets/aem-headless.html` página del HTML. Admite `host` y `query-param-value` atributos para controlar el comportamiento del componente. El `host` anulaciones de valor del atributo `aemHost` valor de `aemHeadlessService` objeto en `person.js`, y `query-param-value` se utiliza para seleccionar la persona que se va a procesar.
+Se agrega un componente web reutilizable (también conocido como elemento personalizado) `<person-info>` a la página del HTML `../src/assets/aem-headless.html`. Admite los atributos `host` y `query-param-value` para controlar el comportamiento del componente. El valor del atributo `host` invalida el valor `aemHost` del objeto `aemHeadlessService` en `person.js`, y `query-param-value` se usa para seleccionar a la persona que se va a procesar.
 
 ```html
     <person-info 
@@ -113,11 +113,11 @@ Un componente web reutilizable (también conocido como elemento personalizado) `
 
 ### Implementación de componentes web
 
-El `person.js` define la funcionalidad del componente web y, a continuación, se muestran los aspectos destacados de la misma.
+`person.js` define la funcionalidad del componente web y a continuación se muestran los aspectos destacados de la misma.
 
 #### Implementación del elemento PersonInfo
 
-El `<person-info>` el objeto class del elemento personalizado define la funcionalidad mediante el uso del `connectedCallback()` métodos de ciclo de vida, adjuntar una raíz central, recuperar consultas persistentes de GraphQL y manipular DOM para crear la estructura DOM central interna del elemento personalizado.
+El objeto de clase del elemento personalizado `<person-info>` define la funcionalidad mediante los métodos de ciclo de vida `connectedCallback()`, adjuntando una raíz central, recuperando la consulta persistente de GraphQL y la manipulación DOM para crear la estructura DOM central interna del elemento personalizado.
 
 ```javascript
 // Create a Class for our Custom Element (person-info)
@@ -177,7 +177,7 @@ class PersonInfo extends HTMLElement {
 }
 ```
 
-#### Registre el `<person-info>` elemento
+#### Registrar el elemento `<person-info>`
 
 ```javascript
     // Define the person-info element
@@ -186,6 +186,6 @@ class PersonInfo extends HTMLElement {
 
 ### Uso compartido de recursos de origen cruzado (CORS)
 
-AEM AEM Este componente web se basa en una configuración CORS basada en el que se ejecuta en el entorno de destino de la aplicación y supone que la página host se ejecuta en `http://localhost:8080` AEM en el modo de desarrollo y a continuación se muestra una configuración OSGi de CORS de ejemplo para el servicio local de creación de.
+AEM AEM AEM Este componente web se basa en una configuración CORS basada en la que se ejecuta en el entorno de destino de la y supone que la página host se ejecuta en `http://localhost:8080` en modo de desarrollo y a continuación se muestra una configuración OSGi de CORS de ejemplo para el servicio de autor de la local.
 
-Consulte las [configuraciones de implementación](../deployment/web-component.md) AEM para el servicio respectivo de la.
+AEM Revise [configuraciones de implementación](../deployment/web-component.md) para obtener el servicio correspondiente de la aplicación de.
