@@ -10,20 +10,24 @@ badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: 6b44e6b2-15f7-45b2-8d21-d47f122c809d
 duration: 68
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 8bde459ae9a6e261cfc3aff308babe9de6e56059
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 0%
+source-wordcount: '278'
+ht-degree: 1%
 
 ---
 
-# Crear formularios adaptables mediante el modelo de datos de formulario
+# Prueba de la integración
 
-El siguiente paso es crear un formulario adaptable y basarlo en el modelo de datos de formulario creado en el paso anterior.
-El usuario introduce el ID de posible cliente y al tabular el servicio de Marketo para obtener los posibles clientes por ID se invoca. Los resultados de la operación de servicio se asignan a los campos adecuados de la Forms adaptable.
+Probaremos la integración creando una búsqueda de formulario sencilla y mostraremos un objeto de posible cliente de Market.
+>[!NOTE]
+>
+>Esta funcionalidad se probó en formularios basados en componentes de base.
+
+## Crear formulario adaptable
 
 1. Cree un formulario adaptable y base en &quot;Plantilla de formulario en blanco&quot;, asócielo al modelo de datos de formulario creado en el paso anterior.
-1. Abra el formulario en modo de edición
+1. Abra el formulario en modo de edición.
 1. Arrastre y suelte un componente TextField y un componente Panel en el formulario adaptable. Establezca el título del componente TextField &quot;Introducir ID de posible cliente&quot; y su nombre en &quot;LeadId&quot;
 1. Arrastre y suelte 2 componentes TextField en el componente Panel
 1. Establezca el Nombre y el Título de los 2 componentes Textfield como FirstName y LastName
@@ -35,12 +39,6 @@ La siguiente captura de pantalla explica la configuración del editor de reglas
 
 ![editor de reglas](assets/ruleeditor.png)
 
-## Depuración
-
-Si está usando los paquetes proporcionados con este artículo, quizá quiera habilitar [registros de depuración](http://localhost:4502/system/console/slinglog) para las siguientes clases:
-
-+ `com.marketoandforms.core.impl.MarketoServiceImpl`
-+ `com.marketoandforms.core.MarketoConfigurationService`
 
 ## Felicitaciones
 
