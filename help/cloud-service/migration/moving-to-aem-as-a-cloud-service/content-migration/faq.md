@@ -11,7 +11,7 @@ jira: KT-11200
 thumbnail: kt-11200.jpg
 exl-id: bdec6cb0-34a0-4a28-b580-4d8f6a249d01
 duration: 399
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: e29eaefb20d466126d0d31ad8eb598b63a0cebcd
 workflow-type: tm+mt
 source-wordcount: '1884'
 ht-degree: 0%
@@ -91,7 +91,7 @@ Sí, es posible, pero requiere una planificación cuidadosa con respecto a:
    + Compruebe si es aceptable migrar todos los recursos como parte de un conjunto de migración y, a continuación, traer los sitios que los utilizan por fases
 + En el estado actual, el proceso de inserción de autores hace que la instancia de creación no esté disponible para la creación de contenido aunque el nivel de publicación pueda seguir sirviendo el contenido
    + Esto significa que hasta que la ingesta se complete en Author, las actividades de creación de contenido se congelan
-+ Los usuarios ya no se migran, aunque los grupos sí lo hacen
++ Los usuarios ya no se migran, aunque los grupos sí.
 
 Revise el proceso de extracción e ingesta superior tal y como está documentado antes de planificar las migraciones.
 

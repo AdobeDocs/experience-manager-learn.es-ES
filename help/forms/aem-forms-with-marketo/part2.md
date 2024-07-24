@@ -10,10 +10,10 @@ badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: f8ba3d5c-0b9f-4eb7-8609-3e540341d5c2
 duration: 137
-source-git-commit: 8bde459ae9a6e261cfc3aff308babe9de6e56059
+source-git-commit: 7e0d7e87d72aa1e4450649afa6a962099ceb2db4
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 1%
+source-wordcount: '211'
+ht-degree: 3%
 
 ---
 
@@ -50,4 +50,4 @@ Las API de REST de Marketo están autenticadas con OAuth 2.0 de 2 patas. Podemos
 
 ## Siguientes pasos
 
-[Crear una fuente de datos basada en el servicio RESTful](./part3.md)
+[Crear modelo de datos de formulario](./part3.md)

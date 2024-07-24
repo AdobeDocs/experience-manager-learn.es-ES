@@ -10,31 +10,14 @@ badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: 7096340b-8ccf-4f5e-b264-9157232e96ba
 duration: 78
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 7e0d7e87d72aa1e4450649afa6a962099ceb2db4
 workflow-type: tm+mt
-source-wordcount: '379'
-ht-degree: 10%
+source-wordcount: '217'
+ht-degree: 3%
 
 ---
 
-# Configuración de Data Source
-
-La integración de datos de AEM Forms le permite configurar y conectarse a fuentes de datos diferentes. Los siguientes tipos son compatibles de forma predeterminada. Sin embargo, con un poco de personalización, también puede integrarse con otras fuentes de datos.
-
-1. Bases de datos relacionales: MySQL, Microsoft SQL Server, IBM DB2 y RDBMS de Oracle
-1. Perfil de usuario de AEM
-1. Servicios web RESTful
-1. Servicios web basados en SOAP
-1. Servicios OData
-
-Para integrar AEM Forms con Marketo, utilizamos los servicios web RESTful. El primer paso para integrar es configurar una fuente de datos [.](https://helpx.adobe.com/experience-manager/6-4/forms/using/configure-data-sources.html#ConfigureRESTfulwebservices) Utilice el archivo swagger proporcionado como parte de este tutorial. La siguiente captura de pantalla muestra las propiedades importantes que deben especificarse al configurar la fuente de datos.
-![origen de datos](assets/datasource.png)
-
-El &quot;marketo.json&quot; es el archivo swagger y se le proporciona como parte de los recursos de este tutorial.
-El host de propiedades es específico de la instancia de Marketo.
-El tipo de autenticación es personalizada y la implementación de autenticación debe coincidir con &quot;AemForms con Marketo&quot;. (A menos que haya cambiado esto en su código).
-
-## Crear modelo de datos de formulario
+# Crear modelo de datos de formulario
 
 Después de configurar la fuente de datos, el siguiente paso es crear un modelo de datos de formulario basado en la fuente de datos configurada en el paso anterior. Para crear un modelo de datos de formulario, siga estos pasos:
 

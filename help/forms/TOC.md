@@ -8,9 +8,9 @@ breadcrumb-title: Tutoriales de AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: 82ef2988d55012ae730e9bbc7adeea547863ba51
+source-git-commit: d440662bcfbc8fdea8c1b0e8af7f653b1f8667f9
 workflow-type: tm+mt
-source-wordcount: '2080'
+source-wordcount: '2086'
 ht-degree: 2%
 
 ---
@@ -100,7 +100,7 @@ ht-degree: 2%
    + [Modelo de datos de formulario basado en JDBC](adaptive-forms/jdbc-data-model-technical-video-use.md)
    + [Crear asociaciones entre dos entidades en el modelo de datos de formulario](adaptive-forms/association-data-model-technical-video-use.md)
    + [Usar el servicio de invocación del modelo de datos de formulario en el editor de reglas](adaptive-forms/service-data-model-technical-video-use.md)
-   + [Datos binarios de Post AEM que se van a DAM mediante el modelo de datos de formulario](adaptive-forms/form-data-model-to-post-binary-data-tutorial-use.md)
+   + [AEM Publicar datos binarios en DAM con el modelo de datos de formulario](adaptive-forms/form-data-model-to-post-binary-data-tutorial-use.md)
    + [Creación de modelos de flujo de trabajo reutilizables](adaptive-forms/re-usable-aem-forms-workflow-models-article.md)
    + [AEM Flujo de trabajo de pasos de procesos personalizados](adaptive-forms/custom-process-step-aem-workflow.md)
    + [Rellenado previo de HTML5 Forms](adaptive-forms/prepopulating-html5-forms-in-aem-forms-article.md)
@@ -240,8 +240,8 @@ ht-degree: 2%
    + [Parte 2: Creación de una plantilla personalizada](listing-custom-asset-types/part2.md)
 + AEM Forms Con Marketo{#aem-forms-with-marketo}
    + [Parte 1: Introducción](aem-forms-with-marketo/part1.md)
-   + [Parte 2: Autenticación personalizada](aem-forms-with-marketo/part2.md)
-   + [Parte 3: Source de datos](aem-forms-with-marketo/part3.md)
+   + [Parte 2: Source de datos](aem-forms-with-marketo/part2.md)
+   + [Parte 3: Modelo de datos de formulario](aem-forms-with-marketo/part3.md)
    + [Parte 4: Poniéndolo todo junto](aem-forms-with-marketo/part4.md)
 
 + AEM Forms con Adobe Campaign Standard{#aem-forms-with-adobe-campaign}
@@ -280,6 +280,7 @@ ht-degree: 2%
    + [Usar una carpeta inspeccionada en AEM Forms](document-services/watched-folders-document-services-article-use.md)
    + [Uso del servicio de código de barras en AEM Forms](document-services/barcode-service-adaptive-forms-article.md)
    + [Usar el servicio PDFG en AEM Forms](document-services/using-pdfg-in-aem-forms.md)
+   + [Cifrar PDF con contraseña de permisos](document-services/encrypt-pdf-permissions-password.md)
    + [Uso del servicio Output y Forms en AEM Forms](document-services/output-and-forms-services-article-develop.md)
    + [Usar fragmentos xdp en el servicio de salida](document-services/using-fragments-in-output-service.md)
    + [Script ECMA para generar pdf con fragmentos](document-services/using-fragments-in-output-service-watched-folder.md)
