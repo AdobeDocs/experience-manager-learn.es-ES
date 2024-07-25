@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: fe763bad61fba4230612d8ad46a6159e675e1529
+source-git-commit: 4903b0742dca59e621707691f487a430b91e832b
 workflow-type: tm+mt
-source-wordcount: '1229'
+source-wordcount: '1222'
 ht-degree: 17%
 
 ---
@@ -26,7 +26,6 @@ ht-degree: 17%
    + Estrategia y liderazgo mental{#strategy}
       + [Experience Manager - Modelos y arquetipos de gobernanza y personal](./introduction/experience-manager-governance-and-staffing-models.md)
       + [Cómo aumentar la velocidad del contenido con Adobe Experience Manager](./introduction/drive-content-velocity-for-sites.md)
-      + [AEM Acelerar la velocidad del contenido con sistemas de estilos de](./introduction/accelerate-content-velocity-aem.md)
 + integraciones de Experience Cloud{#integrations}
    + [Integraciones](./integrations/experience-cloud.md)
    + [Adobe Target](./integrations/target.md)
@@ -170,7 +169,7 @@ ht-degree: 17%
       + [Servicio de correo electrónico](./networking/examples/email-service.md)
 + Seguridad {#security}
    + [Bloqueo de ataques DoS/DDoS mediante reglas de filtro de tráfico](./security/blocking-dos-attack-using-traffic-filter-rules.md)
-   + Reglas de filtro de tráfico, incluidas las reglas WAF{#traffic-filter-and-waf-rules}
+   + Reglas de filtro de tráfico, incluidas las reglas de WAF{#traffic-filter-and-waf-rules}
       + [Información general](./security/traffic-filter-rules/overview.md)
       + [Cómo realizar la configuración](./security/traffic-filter-rules/how-to-setup.md)
       + [Ejemplos y análisis de resultados](./security/traffic-filter-rules/examples-and-analysis.md)
