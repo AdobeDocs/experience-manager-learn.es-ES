@@ -12,9 +12,9 @@ last-substantial-update: 2024-01-29T00:00:00Z
 jira: KT-14878
 thumbnail: KT-14878.jpeg
 exl-id: b1c127a8-24e7-4521-b535-60589a1391bf
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: efa0a16649c41fab8309786a766483cfeab98867
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '699'
 ht-degree: 0%
 
 ---
@@ -46,10 +46,6 @@ Para completar este tutorial, necesita lo siguiente:
 - Acceso a [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started/).
 
 - [CLI de Adobe Developer](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) instalado en el equipo local.
-
->[!IMPORTANT]
->
->Los eventos de AEM as a Cloud Service solo están disponibles para los usuarios registrados en el modo previo al lanzamiento. AEM Para habilitar la celebración de eventos en su entorno de AEM as a Cloud Service AEM, póngase en contacto con el [equipo de eventos-eventos](mailto:grp-aem-events@adobe.com).
 
 ## Creación de un proyecto en Adobe Developer Console
 

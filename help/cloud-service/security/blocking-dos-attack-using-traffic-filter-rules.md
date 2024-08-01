@@ -12,9 +12,9 @@ last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15184
 thumbnail: KT-15184.jpeg
 exl-id: 60c2306f-3cb6-4a6e-9588-5fa71472acf7
-source-git-commit: 4111ae0cf8777ce21c224991b8b1c66fb01041b3
+source-git-commit: 1b493d85303e539e07ba8b080ed55ef2af18bfcb
 workflow-type: tm+mt
-source-wordcount: '1968'
+source-wordcount: '1947'
 ht-degree: 1%
 
 ---
@@ -42,10 +42,6 @@ Veamos algunas medidas adicionales recomendadas que los clientes pueden tomar pa
 - Configure **alertas** en las reglas de filtro de tráfico de límite de velocidad mediante una &quot;acción de alerta&quot;, de modo que cuando se active la regla, se envíe una notificación al Centro de acciones.
 - Aumente la cobertura de caché declarando **transformaciones de solicitud** para omitir los parámetros de consulta.
 
->[!NOTE]
->
->La característica [alertas de regla de filtro de tráfico](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#traffic-filter-rules-alerts) aún no se ha lanzado. Para obtener acceso a través del programa de usuarios que lo adoptaron por primera vez, envíe un correo electrónico a **<aemcs-waf-adopter@adobe.com>**.
-
 ### Variaciones de reglas de tráfico de límite de velocidad {#rate-limit-variations}
 
 Existen dos variaciones en las reglas de tráfico de límite de velocidad:
@@ -72,7 +68,6 @@ Como se ha mencionado anteriormente, el Adobe de forma predeterminada bloquea el
 Lo ideal sería configurar las reglas antes de lanzarlas a producción. En la práctica, muchas organizaciones declaran las reglas de forma reactiva solo una vez alertadas de un pico de tráfico que indica un posible ataque.
 
 El Adobe envía un pico de tráfico en la alerta de origen como [Notificación del centro de acciones](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/actions-center) cuando se supera el umbral predeterminado de tráfico de una sola dirección IP, para un PoP determinado. Si ha recibido una alerta de este tipo, se recomienda configurar una regla de filtro de tráfico de límite de velocidad. Esta alerta predeterminada es diferente de las alertas que deben habilitar explícitamente los clientes al definir las reglas de filtro de tráfico, algo que se explicará en una sección futura.
-
 
 ## Análisis de patrones de tráfico {#analyze-traffic}
 

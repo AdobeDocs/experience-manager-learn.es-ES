@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 4903b0742dca59e621707691f487a430b91e832b
+source-git-commit: e7a85e8d072d808683580a201dd10b3a847efaaa
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1234'
 ht-degree: 17%
 
 ---
@@ -107,6 +107,7 @@ ht-degree: 17%
       + [Variantes de página en caché](./developing/advanced/variant-caching.md)
       + [Protección CSRF](./developing/advanced/csrf-protection.md)
       + [Áreas de nombres personalizadas](./developing/advanced/custom-namespaces.md)
+      + [Secretos](./developing/advanced/secrets.md)
       + [Usuarios del servicio](./developing/advanced/service-users.md)
       + [API de imagen optimizadas para la web](./developing/advanced/web-optimized-image-delivery-java-apis.md)
    + Entorno de desarrollo rápido{#rde}
@@ -283,6 +284,10 @@ ht-degree: 17%
       + [Utilidades de PDF/A](./forms/forms-cs-assembler/pdfa-utilities.md)
       + [Prueba de la solución](./forms/forms-cs-assembler/test.md)
       + [Desafío](./forms/forms-cs-assembler/challenge.md)
+   + Integrar con Marketo{#froms-cs-with-marketo}
+      + [Introducción](./forms/forms-cs-with-marketo/part1.md)
+      + [Crear Source de datos](./forms/forms-cs-with-marketo/part2.md)
+      + [Crear modelo de datos de formulario](./forms/forms-cs-with-marketo/part3.md)
    + Almacenar envíos de formularios con etiquetas de índice de blobs{#store-submiited-data-with-metadata-tags}
       + [Introducción](./forms/store-submiited-data-with-metadata-tags/introduction.md)
       + [Ampliar componente de grupo de opciones](./forms/store-submiited-data-with-metadata-tags/extend-choice-group-components.md)

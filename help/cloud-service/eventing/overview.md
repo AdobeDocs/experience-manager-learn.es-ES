@@ -12,9 +12,9 @@ last-substantial-update: 2023-12-07T00:00:00Z
 jira: KT-14649
 thumbnail: KT-14649.jpeg
 exl-id: 142ed6ae-1659-4849-80a3-50132b2f1a86
-source-git-commit: c0aa4049e846a0f24f8a5f5b014dbaf5bfc8eb2d
+source-git-commit: efa0a16649c41fab8309786a766483cfeab98867
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '910'
 ht-degree: 0%
 
 ---
@@ -24,10 +24,6 @@ ht-degree: 0%
 AEM Obtenga información acerca de la visualización de eventos, qué es, por qué y cuándo utilizarla, y ejemplos de ella.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3426686?quality=12&learn=on)
-
->[!IMPORTANT]
->
->Los eventos de AEM as a Cloud Service solo están disponibles para los usuarios registrados en el modo previo al lanzamiento. AEM Para habilitar la celebración de eventos en su entorno de AEM as a Cloud Service AEM, póngase en contacto con el <a href="mailto:grp-aem-events@adobe.com">equipo de eventos-eventos</a>.
 
 ## Qué es
 

@@ -12,9 +12,9 @@ last-substantial-update: 2024-01-30T00:00:00Z
 jira: KT-14879
 thumbnail: KT-14879.jpeg
 exl-id: c362011e-89e4-479c-9a6c-2e5caa3b6e02
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: efa0a16649c41fab8309786a766483cfeab98867
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
@@ -38,10 +38,6 @@ Para completar este tutorial, necesita lo siguiente:
 - [CLI de Adobe Developer](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) instalado en el equipo local.
 
 - Se inicializó localmente el proyecto del ejemplo anterior [Adobe I/O Runtime AEM Action y Eventos de](./runtime-action.md#initialize-project-for-local-development).
-
->[!IMPORTANT]
->
->Los eventos de AEM as a Cloud Service solo están disponibles para los usuarios registrados en el modo previo al lanzamiento. AEM Para habilitar la celebración de eventos en su entorno de AEM as a Cloud Service AEM, póngase en contacto con el [equipo de eventos-eventos](mailto:grp-aem-events@adobe.com).
 
 ## AEM Acción del procesador de eventos
 

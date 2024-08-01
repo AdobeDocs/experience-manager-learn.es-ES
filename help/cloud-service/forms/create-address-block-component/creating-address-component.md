@@ -9,10 +9,10 @@ feature: Adaptive Forms
 topic: Development
 jira: KT-15752
 exl-id: 280c9a30-e017-4bc0-9027-096aac82c22c
-source-git-commit: a12b1778413079646814cb25567abfc26a429340
+source-git-commit: b1de5c163607163bc702ea7b8ea4916c414f2a3a
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 1%
+source-wordcount: '297'
+ht-degree: 3%
 
 ---
 
@@ -68,6 +68,16 @@ Seleccione el nodo ``zip`` y establezca sus propiedades como se muestra a contin
 
 Seleccione el nodo ``state`` y establezca sus propiedades como se muestra a continuación. Observe el fieldType del estado: está configurado para ser un menú desplegable
 ![estado](assets/state.png)
+
+## Establecer valores predeterminados para el campo de estado
+
+Seleccione el nodo ``state`` y agregue las siguientes propiedades.
+
+| Nombre | Tipo | Valor  |
+|----------|----------|---------------------|
+| enum | Cadena [] | CA, NY |
+| enumNames | Cadena [] | California, Nueva York |
+
 
 El componente final de bloque de direcciones tendrá este aspecto
 
