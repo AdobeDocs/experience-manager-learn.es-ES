@@ -11,10 +11,10 @@ jira: KT-9359
 exl-id: f7c1f991-0486-4355-8502-cd5b038537e3
 last-substantial-update: 2019-07-07T00:00:00Z
 duration: 68
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 364d055b7b2e4f273f906c66328fc14f95321611
 workflow-type: tm+mt
 source-wordcount: '328'
-ht-degree: 16%
+ht-degree: 24%
 
 ---
 
@@ -38,14 +38,15 @@ Se encuentra en el estado predeterminado cuando abre el editor de estilos para l
 ![ficha de navegación](assets/navigation-tab.png)
 
 Establezca las propiedades CSS para el estado predeterminado como se muestra a continuación
-| Categoría | Nombre de propiedad  |  Valor de propiedad |
-|:—|:—|:—|
-| Dimension y posición | Ancho | 50 px |
-| Texto | Grosor de fuente| Negrita |
+
+| Categoría | Nombre de la propiedad | Valor de propiedad |
+|:---|:---|:---|
+| Dimensiones y posición | Anchura | 50 px |
+| Texto | Grosor de fuente | Negrita |
 | Texto | Color | #FFF |
-|Texto | Altura de línea| 3 |
-|Texto  | Alineación de texto | Izquierda |
-|Fondo| Color | #056dae |
+| Texto | Altura de la línea | 3 |
+| Texto | Alineación de texto | Izquierda |
+| Fondo | Color | #056dae |
 
 Guarde los cambios
 
