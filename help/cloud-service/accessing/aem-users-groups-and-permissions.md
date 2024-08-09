@@ -10,10 +10,10 @@ jira: KT-6060
 thumbnail: 39151.jpg
 exl-id: 7d7942ae-7e38-4abd-9900-5b8e3542f5e1
 duration: 315
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 1fcfbc85650d0eb6b6b184883c7178a3b1e0ed93
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 90%
+source-wordcount: '204'
+ht-degree: 74%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 90%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=es" text="Compatibilidad con IMS para Adobe Experience Manager as a Cloud Service"
 >additional-url="https://helpx.adobe.com/es/enterprise/admin-guide.html/enterprise/using/identity.ug.html" text="Grupos de usuarios proporcionados por AEM y sus permisos"
 
-Adobe Experience Manager se basa en los usuarios, los grupos de usuarios y los perfiles de productos de Adobe IMS para proporcionar a los usuarios un acceso personalizable a AEM. Obtenga información sobre cómo definir los grupos y permisos de AEM y cómo funcionan de forma combinada con las abstracciones de Adobe IMS para proporcionar un acceso fácil y personalizable a AEM.
+Adobe Experience Manager se basa en los usuarios, los grupos de usuarios y los perfiles de productos de Adobe IMS para proporcionar a los usuarios un acceso personalizable a AEM. AEM AEM AEM Obtenga información sobre cómo definir grupos de usuarios y permisos que se basen en [proporcionados por los grupos de usuarios](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/security#built-in-users-and-groups), y cómo funcionan de manera conjunta con las abstracciones de Adobe IMS para proporcionar acceso fácil y personalizable a los grupos de usuarios que se encuentran en la lista de usuarios de la red de distribución de contenido ().
 
 >[!VIDEO](https://video.tv.adobe.com/v/39151?quality=12&learn=on)
 

@@ -8,10 +8,10 @@ version: Cloud Service
 feature-set: Experience Manager Assets
 feature: Assets Essentials
 team: TM
-source-git-commit: a5eb7cb6ba9b806a57a27ad1a0e01609af713656
+source-git-commit: 27d4b552d270d92d032384aea0a0f4798d5eca8c
 workflow-type: tm+mt
-source-wordcount: '68'
-ht-degree: 20%
+source-wordcount: '69'
+ht-degree: 21%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 20%
    + [Acceso rápido](basics/quick-access.md)
    + [Colaboración](basics/collaborating.md)
    + [Vínculos compartidos](basics/link-sharing.md)
-
+   + [Informes](basics/reports.md)
 + Configurando {#configuring}
    + [Mi espacio de trabajo](configuring/my-workspace.md)
    + [Formularios de metadatos](configuring/metadata-forms.md)
