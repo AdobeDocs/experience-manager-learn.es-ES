@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: e7a85e8d072d808683580a201dd10b3a847efaaa
+source-git-commit: 13657903c37b90c6d854dcba317dc1801d869de0
 workflow-type: tm+mt
-source-wordcount: '1234'
+source-wordcount: '1254'
 ht-degree: 17%
 
 ---
@@ -45,7 +45,6 @@ ht-degree: 17%
    + [Canalización de producción de CI/CD](./cloud-manager/cicd-production-pipeline.md)
    + [Canalización de no producción de CI/CD](./cloud-manager/cicd-non-production-pipeline.md)
    + [Actividad](./cloud-manager/activity.md)
-   + [Nombres de dominio personalizados](./cloud-manager/custom-domain-names.md)
    + Operaciones de desarrollo {#devops}
       + [Implementación del código](./cloud-manager/devops/deploy-code.md)
       + [Combinar proyectos](./cloud-manager/devops/merge-projects.md)
@@ -107,6 +106,7 @@ ht-degree: 17%
       + [Variantes de página en caché](./developing/advanced/variant-caching.md)
       + [Protección CSRF](./developing/advanced/csrf-protection.md)
       + [Áreas de nombres personalizadas](./developing/advanced/custom-namespaces.md)
+      + [Parametrizar modelos Sling de HTL](./developing/advanced/sling-model-parameters.md)
       + [Secretos](./developing/advanced/secrets.md)
       + [Usuarios del servicio](./developing/advanced/service-users.md)
       + [API de imagen optimizadas para la web](./developing/advanced/web-optimized-image-delivery-java-apis.md)
@@ -138,6 +138,10 @@ ht-degree: 17%
       + Riesgos{#risks}
          + [Advertencias transversales](./debugging/cloud-service/risks/traversals.md)
 + Entrega de contenido{#content-delivery}
+   + [Nombre de dominio personalizado](./content-delivery/custom-domain-names.md)
+   + [Nombre de dominio personalizado con CDN administrada por Adobe](./content-delivery/custom-domain-name-with-adobe-managed-cdn.md)
+   + [Nombre de dominio personalizado con CDN del cliente](./content-delivery/custom-domain-names-with-customer-managed-cdn.md)
+   + [Almacenamiento en caché](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/overview){target=_blank}
    + [Redirecciones de URL](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html){target=_blank}
 + Almacenando en caché {#caching}
    + [Información general](./caching/overview.md)
