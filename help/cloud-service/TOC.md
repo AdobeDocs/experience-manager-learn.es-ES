@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 7ef37a71f1daefee484478c3194907d5ce918af4
+source-git-commit: cc7fa9bbaa775b0216c839be079504c2b5467878
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1279'
 ht-degree: 17%
 
 ---
@@ -143,6 +143,7 @@ ht-degree: 17%
    + [Nombre de dominio personalizado con CDN administrada por Adobe](./content-delivery/custom-domain-name-with-adobe-managed-cdn.md)
    + [Nombre de dominio personalizado con CDN del cliente](./content-delivery/custom-domain-names-with-customer-managed-cdn.md)
    + [Almacenamiento en caché](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/overview){target=_blank}
+   + [CDN de Adobe - más allá del almacenamiento en caché](./content-delivery/adobe-cdn-beyond-caching.md)
    + [Redirecciones de URL](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html){target=_blank}
 + Almacenando en caché {#caching}
    + [Información general](./caching/overview.md)
@@ -206,7 +207,7 @@ ht-degree: 17%
          + [Servicio de importación por lotes](./migration/moving-to-aem-as-a-cloud-service/content-migration/bulk-import-service.md)
          + [Herramienta de transferencia de contenido](./migration/moving-to-aem-as-a-cloud-service/content-migration/content-transfer-tool.md)
          + [Preguntas más frecuentes](./migration/moving-to-aem-as-a-cloud-service/content-migration/faq.md)
-      + [Resolución de problemas](./migration/moving-to-aem-as-a-cloud-service/troubleshooting.md)
+      + [Solución de problemas](./migration/moving-to-aem-as-a-cloud-service/troubleshooting.md)
       + AEM Forms as a Cloud Service {#aem-forms}
          + [Introducción](./migration/moving-to-aem-as-a-cloud-service/aem-forms/introduction.md)
          + [Inscripción digital](./migration/moving-to-aem-as-a-cloud-service/aem-forms/digital-enrollment.md)
@@ -376,7 +377,7 @@ ht-degree: 17%
       + [AEM Integrar con el](./asset-compute/deploy/processing-profiles.md)
    + Avanzado{#advanced}
       + [Trabajadores de metadatos](./asset-compute/advanced/metadata.md)
-   + [Resolución de problemas](./asset-compute/troubleshooting.md)
+   + [Solución de problemas](./asset-compute/troubleshooting.md)
 
 + Tutorials de varios pasos{#multi-step-tutorials}
    + [Desarrollo de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es){target=_blank}
