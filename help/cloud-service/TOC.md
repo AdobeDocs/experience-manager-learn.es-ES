@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 07225f1ae4455e2fa69c8e488851361c725fe9e8
+source-git-commit: 7ef37a71f1daefee484478c3194907d5ce918af4
 workflow-type: tm+mt
-source-wordcount: '1258'
+source-wordcount: '1275'
 ht-degree: 17%
 
 ---
@@ -152,6 +152,7 @@ ht-degree: 17%
    + Cómo {#how-to}
       + [Habilitar almacenamiento en caché](./caching/how-to/enable-caching.md)
       + [Deshabilitar almacenamiento en caché](./caching/how-to/disable-caching.md)
+      + [Purgar caché](./caching/how-to/purge-cache.md)
 + AEM Accediendo a {#accessing}
    + [Información general](./accessing/overview.md)
    + [Usuarios de Adobe IMS](./accessing/adobe-ims-users.md)
@@ -259,6 +260,10 @@ ht-degree: 17%
       + [2 - Configuración](./forms/create-address-block-component/set-up.md)
       + [3 - Crear componente](./forms/create-address-block-component/creating-address-component.md)
       + [4 - Implementar el componente](./forms/create-address-block-component/deploy-your-project.md)
+   + Crear componente de imagen en la que se puede hacer clic{#clickable-image-component}
+      + [1 - Introducción](./forms/clickable-image-component/introduction.md)
+      + [2 - Crear componente](./forms/clickable-image-component/create-component.md)
+      + [3 - Controlar el evento de clic](./forms/clickable-image-component/handle-click-event.md)
    + AEM Forms y Analytics{#forms-and-analytics}
       + [Introducción](./forms/form-data-analytics/introduction.md)
       + [Crear elementos de datos](./forms/form-data-analytics/data-elements.md)
@@ -421,3 +426,4 @@ ht-degree: 17%
          + [Integrar AEM Assets](./expert-resources/cloud-5/season-3/cloud5-integrate-assets.md)
          + [IA generativa para AEM Sites](./expert-resources/cloud-5/season-3/cloud5-generative-ai-for-aem-sites.md)
          + [Exploración del editor universal](./expert-resources/cloud-5/season-3/cloud5-exploring-universal-editor.md)
+         + [Importar sitios](./expert-resources/cloud-5/season-3/cloud5-import-sites-to-edge-delivery-services.md)
