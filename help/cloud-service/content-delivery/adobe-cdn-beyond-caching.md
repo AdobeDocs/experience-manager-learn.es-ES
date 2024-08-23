@@ -1,6 +1,6 @@
 ---
 title: 'CDN de Adobe: funciones avanzadas más allá del almacenamiento en caché'
-description: Obtenga información acerca de las funciones avanzadas de la CDN de Adobe más allá del almacenamiento en caché, como la configuración del tráfico en la CDN, las páginas de error de CDN y más.
+description: Obtenga información acerca de las funciones avanzadas de la CDN de Adobe más allá del almacenamiento en caché, como configurar el tráfico en la CDN, configurar tokens y credenciales, páginas de error de CDN y más.
 version: Cloud Service
 feature: Website Performance, CDN Cache
 topic: Architecture, Performance, Content Management
@@ -11,9 +11,9 @@ duration: 0
 last-substantial-update: 2024-08-21T00:00:00Z
 jira: KT-15123
 thumbnail: KT-15123.jpeg
-source-git-commit: cc7fa9bbaa775b0216c839be079504c2b5467878
+source-git-commit: 10f9ca66a1669e1207237128469852ec7514d110
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # CDN de Adobe: funciones avanzadas más allá del almacenamiento en caché
 
-Obtenga información acerca de las funciones avanzadas de la CDN de Adobe más allá del almacenamiento en caché, como la configuración del tráfico en la CDN, las páginas de error de CDN y más.
+Obtenga información acerca de las funciones avanzadas de la red de distribución de contenido (CDN) de Adobe más allá del almacenamiento en caché, como configurar el tráfico en la CDN, configurar tokens y credenciales, páginas de error de CDN y más.
 
 Más allá del almacenamiento en caché de contenido, la CDN de Adobe ofrece varias funciones avanzadas que pueden ayudar a optimizar el rendimiento de su sitio web. Estas funciones incluyen:
 
@@ -50,8 +50,7 @@ Vamos a comprender las funcionalidades clave relacionadas con _Configuración de
 
 - **Token de API de purga**: le permite crear su propia clave de purga para purgar un solo recurso, un grupo o todos los recursos de la caché.
 - **Autenticación básica**: Un mecanismo de autenticación ligero cuando desea restringir el acceso al sitio web o a una parte de él. Principalmente, se requiere como parte de varios procesos de revisión antes de entrar en funcionamiento.
-- **Validación de encabezado HTTP**: se usa cuando una CDN administrada por el cliente enruta el tráfico a una CDN de Adobe. La CDN de Adobe valida la solicitud entrante en función del valor del encabezado `X-AEM-Edge-Key`.
-Le permite crear su propio valor para el encabezado `X-AEM-Edge-Key`.
+- **Validación de encabezado HTTP**: se usa cuando una CDN administrada por el cliente enruta el tráfico a una CDN de Adobe. La CDN de Adobe valida la solicitud entrante en función del valor del encabezado `X-AEM-Edge-Key`. Le permite crear su propio valor para el encabezado `X-AEM-Edge-Key`.
 
 ## Páginas de error de CDN
 
@@ -87,7 +86,7 @@ data:
           location: /us/en/top3.html
 ```
 
-## Recursos adicionales
+## Tutorials relacionados
 
 [Protección de sitios web con reglas de filtro de tráfico](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview)
 
@@ -100,7 +99,3 @@ data:
 [Configurar credenciales y autenticación de CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication)
 
 [Configurar páginas de error de CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages)
-
-
-
-
