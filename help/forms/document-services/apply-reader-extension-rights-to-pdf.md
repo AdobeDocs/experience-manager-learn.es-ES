@@ -9,9 +9,9 @@ level: Experienced
 exl-id: ea433667-81db-40f7-870d-b16630128871
 last-substantial-update: 2020-07-07T00:00:00Z
 duration: 129
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: f3f5c4c4349c8d02c88e1cf91dbf18f58db1e67e
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
@@ -196,10 +196,18 @@ public class GetReaderExtendedPDF extends SlingAllMethodsServlet {
 
 Para probar esto en el servidor local, siga los siguientes pasos:
 1. [Descargar e instalar el paquete DevelopersWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-1. [Descargue e instale el paquete ares.ares.core-ares](assets/ares.ares.core-ares.jar). Tiene el servicio personalizado y el servlet para aplicar derechos de uso y transmitir el PDF de vuelta
+
+1. Agregue la siguiente entrada al servicio de asignación de usuarios de Apache Sling mediante la consola de configMgr como se muestra a continuación
+
+```
+       DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
+```
+
+![asignador de usuarios](assets/user-mapper-service.PNG)
+1. [Descargue e instale el paquete ares.ares.core-ares](assets/ares.ares.core-ares.jar). Tiene el servicio personalizado y el servlet para aplicar derechos de uso y transmitir el PDF de vuelta.
 1. [Importar las bibliotecas de cliente y el envío personalizado](assets/applyaresdemo.zip)
 1. [Importar el formulario adaptable](assets/applyaresform.zip)
-1. Agregue el certificado de Extensiones de Reader al usuario &quot;fd-service&quot;. Asegúrese de que el alias sea &quot;ares&quot;.
+1. Agregue el certificado de Extensiones de Reader al usuario &quot;fd-service&quot;. Asegúrese de que el alias sea &quot;**ares**&quot;.
 1. [Vista previa de formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/applyreaderextensions/jcr:content?wcmmode=disabled)
 1. Seleccione los derechos adecuados y cargue el archivo del PDF
 1. Haga clic en Enviar para obtener el PDF extendido de Reader
