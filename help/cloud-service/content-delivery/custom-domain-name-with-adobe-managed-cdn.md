@@ -12,9 +12,9 @@ last-substantial-update: 2024-08-12T00:00:00Z
 jira: KT-15121
 thumbnail: KT-15121.jpeg
 exl-id: 8936c3ae-2daf-4d0f-b260-28376ae28087
-source-git-commit: 07225f1ae4455e2fa69c8e488851361c725fe9e8
+source-git-commit: f92e66d6edc929bff1e8cae6adb7f408352aeb77
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '726'
 ht-degree: 1%
 
 ---
@@ -150,7 +150,7 @@ Sin embargo, si está usando el **dominio raíz**, debe agregar un tipo de regis
 
 Para comprobar que se puede acceder al sitio con el nombre de dominio personalizado, abra un explorador web y vaya a la dirección URL de dominio personalizado. Asegúrese de que el sitio es accesible y el navegador muestra una conexión segura con el icono de candado.
 
-## Vídeo de principio a fin
+## Vídeo de extremo a extremo
 
 También puede ver el vídeo completo que muestra la descripción general, los requisitos previos y los pasos anteriores para agregar un nombre de dominio personalizado al sitio alojado en AEM as a Cloud Service.
 
