@@ -7,13 +7,13 @@ feature: Sling Model
 role: Developer
 jira: KT-15923
 level: Intermediate, Experienced
-source-git-commit: f45d04b489771b9d3613cb4ce5e7b94d531ac783
+exl-id: 5d852617-720a-4a00-aecd-26d0ab77d9b3
+source-git-commit: ba744f95f8d1f0b982cd5430860f0cb0945a4cda
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 0%
 
 ---
-
 
 # Parametrizar modelos Sling de HTL
 
@@ -127,4 +127,3 @@ Con los parámetros `"Hello"` y `"World"`, el script HTL genera el siguiente res
 ```
 
 AEM Esto muestra cómo se puede influir en los modelos Sling parametrizados en los parámetros de entrada proporcionados a través de HTL.
-

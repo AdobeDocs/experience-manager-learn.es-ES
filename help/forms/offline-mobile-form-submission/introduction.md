@@ -1,5 +1,5 @@
 ---
-title: Déclencheur AEM de flujo de trabajo de en la introducción del envío de formularios HTM5
+title: Déclencheur AEM de flujo de trabajo de en la introducción al envío de formularios de HTML5
 description: Continúe rellenando el formulario móvil en el modo sin conexión y envíe el formulario móvil al flujo de trabajo de déclencheur AEM de la
 feature: Mobile Forms
 doc-type: article
@@ -9,10 +9,12 @@ role: Developer
 level: Experienced
 exl-id: 88295af5-3022-4462-9194-46d8c979bc8b
 last-substantial-update: 2021-04-07T00:00:00Z
+jira: kt-16133
+badgeVersions: label="AEM Forms 6.5" before-title="false"
 duration: 342
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 9545fae5a5f5edd6f525729e648b2ca34ddbfd9f
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
@@ -26,8 +28,12 @@ Para llevar a cabo este caso de uso, debemos realizar los siguientes pasos:
 * Gestionar el envío de PDF desde Acrobat/Reader
 * Flujo de trabajo de Adobe Experience Manager AEM de déclencheur () para revisar el PDF enviado
 
-Este tutorial recorre los pasos necesarios para realizar el caso de uso anterior. El código de muestra y los recursos relacionados con este tutorial están [disponibles aquí.](part-four.md)
+Este tutorial recorre los pasos necesarios para realizar el caso de uso anterior. El código de muestra y los recursos relacionados con este tutorial están [disponibles aquí.](./deploy-assets.md)
 
 El siguiente vídeo le ofrece una descripción general del caso de uso
 
 >[!VIDEO](https://video.tv.adobe.com/v/29677?quality=12&learn=on)
+
+## Siguientes pasos
+
+[Crear perfil personalizado](./custom-profile.md)
