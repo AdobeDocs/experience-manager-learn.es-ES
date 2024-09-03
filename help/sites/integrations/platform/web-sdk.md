@@ -14,20 +14,20 @@ badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service" before-title="false"
 exl-id: 47df99e6-6418-43c8-96fe-85e3c47034d6
 duration: 1303
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: b57fb7ce9483dbfe206de7b89e6cf8dba72429a7
 workflow-type: tm+mt
-source-wordcount: '1229'
+source-wordcount: '1248'
 ht-degree: 1%
 
 ---
 
 # Integración de AEM Sites y SDK web de Experience Platform
 
-Aprenda a integrar AEM as a Cloud Service con el Experience Platform [SDK web](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html). Este paso fundamental es esencial para integrar productos de Adobe Experience Cloud, como Adobe Analytics, Target o productos innovadores recientes como Real-time Customer Data Platform, Customer Journey Analytics y Journey Optimizer.
+Aprenda a integrar AEM as a Cloud Service con el Experience Platform [SDK web](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/home.html). Este paso fundamental es esencial para integrar productos de Adobe Experience Cloud, como Adobe Analytics, Target o productos innovadores recientes como Real-time Customer Data Platform, Customer Journey Analytics y Journey Optimizer.
 
-También aprenderá a recopilar y enviar [WKND: datos de vista de página del proyecto de Adobe Experience Manager de ejemplo](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) en el [Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html).
+También aprenderá a recopilar y enviar [WKND: datos de vista de página del proyecto de Adobe Experience Manager de ejemplo](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) en el [Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/landing/home).
 
-Después de completar esta configuración, ha implementado una base sólida. Además, está listo para avanzar en la implementación del Experience Platform mediante aplicaciones como [Real-time Customer Data Platform (Real-Time CDP)](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html?lang=es), [Customer Journey Analytics (CJA)](https://experienceleague.adobe.com/docs/customer-journey-analytics.html) y [Adobe Journey Optimizer (AJO)](https://experienceleague.adobe.com/docs/journey-optimizer.html). La implementación avanzada ayuda a mejorar la participación de los clientes mediante la estandarización de la web y los datos de los clientes.
+Después de completar esta configuración, ha implementado una base sólida. Además, está listo para avanzar en la implementación del Experience Platform mediante aplicaciones como [Real-time Customer Data Platform (Real-Time CDP)](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html?lang=es), [Customer Journey Analytics (CJA)](https://experienceleague.adobe.com/en/docs/customer-journey-analytics) y [Adobe Journey Optimizer (AJO)](https://experienceleague.adobe.com/en/docs/journey-optimizer). La implementación avanzada ayuda a mejorar la participación de los clientes mediante la estandarización de la web y los datos de los clientes.
 
 ## Requisitos previos
 
@@ -55,14 +55,14 @@ Si no cuenta con los permisos necesarios, el administrador del sistema que use [
 
 El esquema del modelo de datos de experiencia (XDM) le ayuda a estandarizar los datos de experiencia del cliente. Para recopilar los datos de **WKND pageview**, cree un esquema XDM y utilice los grupos de campos `AEP Web SDK ExperienceEvent` proporcionados por el Adobe para la recopilación de datos web.
 
-Existen modelos genéricos y específicos de sectores como, por ejemplo, minoristas, de servicios financieros, de atención sanitaria y muchos más, un conjunto de modelos de datos de referencia. Consulte [Descripción general de los modelos de datos de sector](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/industries/overview.html) para obtener más información.
+Existen modelos genéricos y específicos de sectores como, por ejemplo, minoristas, de servicios financieros, de atención sanitaria y muchos más, un conjunto de modelos de datos de referencia. Consulte [Descripción general de los modelos de datos de sector](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/industries/overview) para obtener más información.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418894?quality=12&learn=on)
 
-Obtenga información acerca del esquema XDM y conceptos relacionados, como grupos de campos, tipos, clases y tipos de datos de [XDM System overview](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html).
+Obtenga información acerca del esquema XDM y conceptos relacionados, como grupos de campos, tipos, clases y tipos de datos de la [descripción general del sistema XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home).
 
-La [descripción general del sistema XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) es un excelente recurso para obtener información sobre el esquema XDM y conceptos relacionados, como grupos de campos, tipos, clases y tipos de datos. Proporciona una comprensión completa del modelo de datos XDM y cómo crear y administrar esquemas XDM para estandarizar los datos en la empresa. Explórela para comprender mejor el esquema XDM y cómo puede beneficiar los procesos de recopilación y administración de datos.
+La [descripción general del sistema XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home) es un excelente recurso para obtener información sobre el esquema XDM y conceptos relacionados, como grupos de campos, tipos, clases y tipos de datos. Proporciona una comprensión completa del modelo de datos XDM y cómo crear y administrar esquemas XDM para estandarizar los datos en la empresa. Explórela para comprender mejor el esquema XDM y cómo puede beneficiar a los procesos de recopilación y administración de datos.
 
 ## Crear secuencia de datos: Experience Platform
 
@@ -71,14 +71,14 @@ Un flujo de datos indica al Edge Network de Platform a dónde enviar los datos r
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418895?quality=12&learn=on)
 
-Familiarícese con el concepto de flujos de datos y temas relacionados, como el control y la configuración de datos, en la página de [Información general de flujos de datos](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html).
+Familiarícese con el concepto de flujos de datos y temas relacionados, como el control y la configuración de datos, en la página de [Información general de flujos de datos](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html).
 
 ## Crear propiedad de etiqueta: Experience Platform
 
 Obtenga información sobre cómo crear una propiedad de etiqueta en Experience Platform para agregar la biblioteca JavaScript del SDK web al sitio web de WKND. La propiedad de etiquetas recién definida tiene los siguientes recursos:
 
 + Extensiones de etiquetas: [Core](https://exchange.adobe.com/apps/ec/100223/adobe-launch-core-extension) y [SDK web de Adobe Experience Platform](https://exchange.adobe.com/apps/ec/106387/aep-web-sdk)
-+ Elementos de datos: elementos de datos de tipo de código personalizado que extraen nombre de página, sección de sitio y nombre de host mediante la capa de datos del cliente de Adobe del sitio WKND. Además, el elemento de datos de tipo de objeto XDM que cumple con la incorporación del esquema XDM WKND recién creado anteriormente en el paso [Crear esquema XDM](#create-xdm-schema---experience-platform).
++ Elementos de datos: elementos de datos de tipo de código personalizado que extraen nombre de página, sección de sitio y nombre de host mediante la capa de datos del cliente de Adobe del sitio WKND. Además, el elemento de datos de tipo Objeto XDM que cumple con la compilación del esquema XDM WKND recién creado anteriormente del paso [Crear esquema XDM](#create-xdm-schema---experience-platform).
 + Regla: enviar datos al Edge Network de Platform cada vez que se visita una página web de WKND mediante el evento `cmp:show` activado por la capa de datos del cliente de Adobe.
 
 Al generar y publicar la biblioteca de etiquetas con **Flujo de publicación**, puede usar el botón **Agregar todos los recursos modificados**. Para seleccionar todos los recursos, como Data Element, Rule y Tag Extensions, en lugar de identificar y seleccionar un recurso individual. Además, durante la fase de desarrollo, puede publicar la biblioteca solo en el entorno _Development_ y luego verificarla y promocionarla al entorno _Stage_ o _Production_.
@@ -168,13 +168,17 @@ Al generar y publicar la biblioteca de etiquetas con **Flujo de publicación**, 
 +++
 
 
-La [descripción general de etiquetas](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) proporciona información detallada sobre conceptos importantes, como elementos de datos, reglas y extensiones.
+La [descripción general de etiquetas](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home) proporciona información detallada sobre conceptos importantes, como elementos de datos, reglas y extensiones.
 
-AEM Para obtener información adicional sobre la integración de componentes principales de con la capa de datos del cliente de Adobe, consulte la [Guía de uso de la capa de datos del cliente de Adobe AEM con componentes principales](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html?lang=es).
+AEM Para obtener información adicional sobre la integración de componentes principales de con la capa de datos del cliente de Adobe, consulte la [Guía de uso de la capa de datos del cliente de Adobe AEM con componentes principales](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview).
 
 ## AEM Conectar la propiedad de etiqueta a la
 
-AEM Descubra cómo vincular la propiedad de etiquetas creada recientemente a las etiquetas a través de Adobe IMS y a las etiquetas en Configuración de Adobe Experience Platform AEM en. Cuando se establece un entorno de AEM as a Cloud Service, se generan automáticamente varias configuraciones de cuenta técnica de IMS de Adobe, incluidas las etiquetas. AEM Sin embargo, para la versión 6.5 de la aplicación, debe configurar una manualmente.
+AEM Descubra cómo vincular la propiedad de etiquetas creada recientemente a las etiquetas a través de Adobe IMS y a las etiquetas en Configuración de Adobe Experience Platform AEM en. Cuando se establece un entorno de AEM as a Cloud Service, se generan automáticamente varias configuraciones de cuenta técnica de IMS de Adobe, incluidas las etiquetas. Para obtener instrucciones paso a paso, consulte [Conectar AEM Sites con la propiedad Tag mediante IMS](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/connect-aem-tag-property-using-ims).
+
+AEM Sin embargo, para la versión 6.5 de la aplicación, debe configurar una manualmente.
+
+
 
 Después de vincular la propiedad de etiqueta, el sitio WKND puede cargar la biblioteca de JavaScript de la propiedad de etiqueta en las páginas web mediante las etiquetas de la configuración del servicio en la nube de Adobe Experience Platform.
 
@@ -195,7 +199,7 @@ Los datos de vista de página recopilados mediante el SDK web se almacenan en el
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418898?quality=12&learn=on)
 
-La [descripción general de conjuntos de datos](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html) proporciona más información sobre conceptos, configuraciones y otras capacidades de ingesta.
+La [descripción general de conjuntos de datos](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) proporciona más información sobre conceptos, configuraciones y otras capacidades de ingesta.
 
 
 ## Datos de vista de página WKND en el Experience Platform
@@ -218,8 +222,8 @@ AEM Después de configurar el SDK web con el SDK de, sobre todo en el sitio WKND
 
 ## Recursos adicionales
 
-+ [Uso de la capa de datos del cliente de Adobe con los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html?lang=es)
-+ [Integración de etiquetas de recopilación de datos de Experience Platform AEM y el uso de etiquetas de](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/experience-platform-data-collection-tags/overview.html?lang=es)
-+ [Información general sobre el SDK web de Adobe Experience Platform y el Edge Network](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)
-+ [Tutoriales de recopilación de datos](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html)
-+ [descripción general del Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)
++ [Uso de la capa de datos del cliente de Adobe con los componentes principales](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview)
++ [Integración de etiquetas de recopilación de datos de Experience Platform AEM y el uso de etiquetas de](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview)
++ [Información general sobre el SDK web de Adobe Experience Platform y el Edge Network](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview)
++ [Tutoriales de recopilación de datos](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/overview)
++ [descripción general del Adobe Experience Platform Debugger](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview)
