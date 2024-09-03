@@ -12,9 +12,9 @@ last-substantial-update: 2024-08-13T00:00:00Z
 jira: KT-15963
 thumbnail: KT-15963.jpeg
 exl-id: 5d81f6ee-a7df-470f-84b9-12374c878a1b
-source-git-commit: ba744f95f8d1f0b982cd5430860f0cb0945a4cda
+source-git-commit: 0639217a3bab7799eec3bbcc40c1a69ed1b12682
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '924'
 ht-degree: 0%
 
 ---
@@ -68,6 +68,8 @@ data:
            type: authenticate # The type of the action, must be authenticate
            authenticator: purge-auth # The name of the authenticator to be used, must match the name from the above authenticators list               
 ```
+
+En la regla anterior, tanto `purgeKey1` como `purgeKey2` se agregan desde el principio para admitir la rotación de secretos sin interrupciones. Sin embargo, solo puede empezar con `purgeKey1` y agregar `purgeKey2` más adelante al girar los secretos.
 
 1. Guarde, confirme e inserte los cambios en el repositorio de flujo ascendente de Adobe.
 
