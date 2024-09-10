@@ -6,9 +6,9 @@ solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
 duration: 74
-source-git-commit: 177cddea03595b686ec75f129c8be7bb14e4c631
+source-git-commit: af962fa9ede0781929e4e7cbbd6b5f00a9dfb0d9
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '511'
 ht-degree: 0%
 
 ---
@@ -206,6 +206,21 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
                 <br/>                
                  Obtenga información sobre el uso de la API de administración en Edge Delivery Services para administrar el ciclo de vida del contenido y el código.
             </p>
-        </td>    
+        </td>   
+        <td>
+            <a href="./season-3/cloud5-lighthouse-score-optimization.md">
+                <img alt="Optimización de puntuación de Lighthouse" 
+                     src="https://video.tv.adobe.com/v/3433378?format=jpeg"/>
+            </a>
+            <div>
+                <a href="./season-3/cloud5-lighthouse-score-optimization.md">
+                <strong>Optimización de la puntuación de Lighthouse</strong></a>        
+                <br/><em>con James Talbot y Varun Mitra, arquitectos de la nube</em>
+            </div>
+            <p>
+                <br/>                
+                 Obtenga información sobre qué es una puntuación de faro y técnicas para obtener la mejor puntuación de faro posible.
+            </p>
+        </td>            
     </tr>    
 </table>
