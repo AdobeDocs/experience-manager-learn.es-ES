@@ -6,9 +6,9 @@ solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
 duration: 74
-source-git-commit: af962fa9ede0781929e4e7cbbd6b5f00a9dfb0d9
+source-git-commit: 285c652460ff00301d183defc56c07b3f74d8e5c
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '540'
 ht-degree: 0%
 
 ---
@@ -208,13 +208,13 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
             </p>
         </td>   
         <td>
-            <a href="./season-3/cloud5-lighthouse-score-optimization.md">
-                <img alt="Optimización de puntuación de Lighthouse" 
+            <a href="./season-3/cloud5-lighthouse-score-optimization-part1.md">
+                <img alt="Optimización de la puntuación de Lighthouse - Parte 1" 
                      src="https://video.tv.adobe.com/v/3433378?format=jpeg"/>
             </a>
             <div>
-                <a href="./season-3/cloud5-lighthouse-score-optimization.md">
-                <strong>Optimización de la puntuación de Lighthouse</strong></a>        
+                <a href="./season-3/cloud5-lighthouse-score-optimization-part1.md">
+                <strong>Optimización de la puntuación de Lighthouse - Parte 1</strong></a>
                 <br/><em>con James Talbot y Varun Mitra, arquitectos de la nube</em>
             </div>
             <p>
@@ -222,5 +222,22 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
                  Obtenga información sobre qué es una puntuación de faro y técnicas para obtener la mejor puntuación de faro posible.
             </p>
         </td>            
-    </tr>    
+    </tr> 
+    <tr>
+        <td>
+            <a href="./season-3/cloud5-lighthouse-score-optimization-part2.md">
+                <img alt="Optimización de la puntuación de Lighthouse - Parte 2"
+                     src="https://video.tv.adobe.com/v/3434042?format=jpeg"/>
+            </a>
+            <div>
+                <a href="./season-3/cloud5-lighthouse-score-optimization-part2.md">
+                <strong>Optimización de la puntuación de Lighthouse - Parte 2</strong></a>
+                <br/><em>con James Talbot y Varun Mitra, arquitectos de la nube</em>
+            </div>
+            <p>
+                <br/>                
+                 Conozca las técnicas para mejorar el tiempo total de bloqueo.
+            </p>
+        </td>            
+    </tr>        
 </table>
