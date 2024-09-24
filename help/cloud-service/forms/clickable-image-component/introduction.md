@@ -1,6 +1,6 @@
 ---
-title: Creación de componentes de imagen en los que se puede hacer clic
-description: Creación de un componente de imagen en el que se puede hacer clic en el Cloud Service AEM Forms
+title: Crear un componente de imagen en el que se puede hacer clic
+description: Cree componentes de imagen en los que se puede hacer clic en el Cloud Service AEM Forms.
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -10,14 +10,14 @@ topic: Development
 jira: KT-15968
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 exl-id: c451472f-d282-4662-9852-8a3e73c5c853
-source-git-commit: ba744f95f8d1f0b982cd5430860f0cb0945a4cda
+source-git-commit: 1fa202910e6c9d21532c6027647c5f3909931e0e
 workflow-type: tm+mt
-source-wordcount: '132'
+source-wordcount: '136'
 ht-degree: 0%
 
 ---
 
-# Introducción
+# Introducción a las imágenes en las que se puede hacer clic
 
 El uso de imágenes en las que se puede hacer clic en Forms puede crear una experiencia de usuario más atractiva, intuitiva y visual. Para el propósito de este artículo, utilizamos SVG para imágenes en las que se puede hacer clic, ya que ofrece varias ventajas, particularmente en términos de flexibilidad de diseño, rendimiento y experiencia del usuario.
 El SVG se puede crear con Adobe Illustrator o cualquiera de las herramientas en línea gratuitas. He usado el [mapa de EE. UU. de](https://simplemaps.com/resources/svg-us)simplemaps para mostrar el caso de uso.
