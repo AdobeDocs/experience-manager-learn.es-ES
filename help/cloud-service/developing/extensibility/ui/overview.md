@@ -1,5 +1,5 @@
 ---
-title: AEM Extensibilidad de la IU
+title: Extensibilidad de la IU de AEM
 description: AEM Obtenga información acerca de la extensibilidad de la IU de con App Builder para crear extensiones.
 feature: Developer Tools
 version: Cloud Service
@@ -13,11 +13,11 @@ duration: 50
 source-git-commit: 12d7f8f0afc1c19f289c847771cb9f4f965c650c
 workflow-type: tm+mt
 source-wordcount: '275'
-ht-degree: 0%
+ht-degree: 15%
 
 ---
 
-# AEM Extensibilidad de la IU {#aem-ui-extensibility}
+# Extensibilidad de la IU de AEM {#aem-ui-extensibility}
 
 Adobe Experience Manager AEM () ofrece una potente interfaz de usuario (IU) para crear experiencias digitales. Para personalizar y ampliar la interfaz de usuario, Adobe introdujo App Builder. Esta herramienta permite a los desarrolladores mejorar la experiencia del usuario sin codificaciones complejas mediante JavaScript y React.
 
@@ -25,8 +25,8 @@ App Builder AEM proporciona una capa de implementación para crear extensiones q
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_learn_extensibility_app_builder"
->title="Introducción a Adobe Developer App Builder AEM y sin encabezado"
->abstract="AEM Descubra cómo App Builder AEM permite a los desarrolladores personalizar y ampliar rápidamente las interfaces de usuario de la interfaz de usuario de la plataforma de trabajo con JavaScript y React, lo que permite una integración perfecta y una implementación rápida."
+>title="Introducción a Adobe Developer App Builder y AEM sin encabezado"
+>abstract="Descubra cómo AEM App Builder permite a los desarrolladores personalizar y ampliar rápidamente las interfaces de usuario de AEM con JavaScript y React, lo que permite una integración perfecta y una implementación rápida."
 
 ## AEM Desarrollar una extensión de IU de
 
