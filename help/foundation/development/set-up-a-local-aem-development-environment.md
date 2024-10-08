@@ -11,9 +11,9 @@ last-substantial-update: 2022-07-20T00:00:00Z
 doc-type: Tutorial
 thumbnail: aem-local-dev-env.jpg
 duration: 4537
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: d731a7131b997fa272013e8d62aa2251e25c08e4
 workflow-type: tm+mt
-source-wordcount: '2413'
+source-wordcount: '2423'
 ht-degree: 0%
 
 ---
@@ -29,13 +29,13 @@ La configuración de un entorno de desarrollo local es el primer paso al desarro
 * AEM Instancias locales de
 * [!DNL Apache Maven] proyecto
 * Entornos de desarrollo integrados (IDE)
-* Resolución de problemas
+* Solución de problemas
 
 ## AEM Instalar instancias locales de la
 
 AEM Cuando nos referimos a una instancia local de, estamos hablando de una copia de Adobe Experience Manager que se ejecuta en el equipo personal de un desarrollador. AEM AEM ***Todo*** el desarrollo de la debe comenzar escribiendo y ejecutando código en una instancia de la instancia de la instancia local de la aplicación de la aplicación de código de la aplicación de código de la aplicación de código de la aplicación de código de.
 
-AEM Si eres nuevo en el modo de ejecución, hay dos modos de ejecución básicos que se pueden instalar: ***Author*** y ***Publish***. El ***autor*** [modo de ejecución](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configure-runmodes.html?lang=en) es el entorno que los especialistas en marketing digital utilizan para crear y administrar contenido. Al desarrollar la mayor parte del tiempo, implementa un código en una instancia de autor. Esto le permite crear páginas y añadir y configurar componentes. AEM Sites es un CMS de creación WYSIWYG y, por lo tanto, la mayoría de CSS y JavaScript se pueden probar con una instancia de creación.
+AEM Si eres nuevo en el modo de ejecución, hay dos modos de ejecución básicos que se pueden instalar: ***Author*** y ***Publish***. El ***autor*** [modo de ejecución](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configure-runmodes.html?lang=en) es el entorno que los especialistas en marketing digital utilizan para crear y administrar contenido. Al desarrollar la mayor parte del tiempo, implementa un código en una instancia de autor. Esto le permite crear páginas y añadir y configurar componentes. AEM Sites es un CMS de creación de WYSIWYG y, por lo tanto, la mayoría de CSS y JavaScript se pueden probar con una instancia de creación.
 
 También es *crítico* código de prueba contra una instancia local de ***Publish***. La instancia de ***Publish AEM*** es el entorno de con el que interactúan los visitantes del sitio web. Aunque la instancia de ***Publish*** es la misma pila de tecnología que la instancia de ***Autor***, hay algunas distinciones importantes con configuraciones y permisos. El código debe probarse en una instancia local de ***Publish*** antes de promocionarse a entornos de nivel superior.
 
@@ -181,6 +181,7 @@ El **[[!DNL Eclipse] IDE](https://www.eclipse.org/ide/)** es uno de los IDE más
 * **[repo](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-visual-studio-code)**: herramienta similar a FTP para contenido JCR
 * AEM **[aemfed](https://aemfed.io/)**: Acelere el flujo de trabajo del front-end de la interfaz de usuario de la red de distribución de correo electrónico
 * AEM **[Sincronizar ](https://marketplace.visualstudio.com/items?itemName=Yinkai15.aemsync)** - Comunidad admitida&#42; extensión para código de Visual Studio
+* AEM **[Proyecto WKND](https://github.com/adobe/aem-guides-wknd)**: se muestra un ejemplo de proyecto de en este vídeo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25907?quality=12&learn=on)
 
@@ -199,7 +200,7 @@ El **[[!DNL Eclipse] IDE](https://www.eclipse.org/ide/)** es uno de los IDE más
 
 >[!VIDEO](https://video.tv.adobe.com/v/25917?quality=12&learn=on)
 
-## Resolución de problemas
+## Solución de problemas
 
 ***¡Ayuda!*** ¡Mi código no funciona! Al igual que con todo el desarrollo, hay momentos (probablemente muchos) en que el código no funciona como se espera. AEM Es una plataforma potente, pero con gran poder... viene una gran complejidad. A continuación se presentan algunos puntos de partida de alto nivel para la resolución de problemas y el seguimiento de problemas (pero lejos de una lista exhaustiva de cosas que pueden salir mal):
 
