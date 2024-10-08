@@ -6,9 +6,9 @@ solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
 duration: 74
-source-git-commit: 285c652460ff00301d183defc56c07b3f74d8e5c
+source-git-commit: 4806312931038cc31e6bcf67f242483f62723387
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '566'
 ht-degree: 0%
 
 ---
@@ -237,6 +237,21 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
             <p>
                 <br/>                
                  Conozca las técnicas para mejorar el tiempo total de bloqueo.
+            </p>
+        </td>            
+        <td>
+            <a href="./season-3/cloud5-lighthouse-score-optimization-part3.md">
+                <img alt="Optimización de la puntuación de Lighthouse: parte 3"
+                     src="https://video.tv.adobe.com/v/3435001?format=jpeg"/>
+            </a>
+            <div>
+                <a href="./season-3/cloud5-lighthouse-score-optimization-part3.md">
+                <strong>Optimización de la puntuación de Lighthouse - Parte 3</strong></a>
+                <br/><em>con James Talbot y Varun Mitra, arquitectos de la nube</em>
+            </div>
+            <p>
+                <br/>                
+                 Conozca las técnicas para mejorar la pintura de contenido más grande (LCP).
             </p>
         </td>            
     </tr>        
