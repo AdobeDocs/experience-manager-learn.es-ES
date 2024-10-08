@@ -1,6 +1,6 @@
 ---
-title: Uso de pestañas verticales en el Cloud Service AEM Forms
-description: Crear un formulario adaptable mediante pestañas verticales
+title: Uso de pestañas verticales en el Cloud Service de AEM Forms
+description: Crear un formulario adaptable mediante pestañas verticales.
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
@@ -12,14 +12,14 @@ thumbnail: 331891.jpg
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16023
 exl-id: 84c03212-47dc-4398-a197-e69e3f3bf77e
-source-git-commit: ba744f95f8d1f0b982cd5430860f0cb0945a4cda
+source-git-commit: b4f7d9762c009e16dc65f7134356edcf7ad7a45d
 workflow-type: tm+mt
-source-wordcount: '96'
-ht-degree: 6%
+source-wordcount: '99'
+ht-degree: 5%
 
 ---
 
-# Introducción
+# Introducción a las pestañas verticales
 
 Las pestañas verticales se utilizan para organizar y mostrar contenido en un formato compacto y fácil de navegar. Vertical proporciona las siguientes ventajas
 1. Eficiencia del espacio: las pestañas verticales utilizan el espacio vertical, que puede ser más eficiente cuando hay mucha información que capturar.
