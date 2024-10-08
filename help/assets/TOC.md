@@ -7,9 +7,9 @@ sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: e7692aceded07426a9c1afce9275e82a5af6b0fb
+source-git-commit: d31094c11a023e711f2b49801bb03200f919e8e8
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '431'
 ht-degree: 16%
 
 ---
@@ -79,6 +79,7 @@ ht-degree: 16%
    + [Configuración de Content Hub](./content-hub/settingup-content-hub.md)
    + [Cargar Assets y el proceso de aprobación](./content-hub/uploading-assets-and-approval-process.md)
    + [Acceso y descarga de Assets](./content-hub/accessing-and-downloading-assets.md)
+   + [Creación de variantes de imagen mediante el Adobe Express](./content-hub/creating-image-variants-using-adobe-express.md)
 
 + Compartir y distribuir{#sharing}
    + [Descargar Assets](./sharing/download.md)
