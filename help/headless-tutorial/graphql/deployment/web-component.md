@@ -10,7 +10,7 @@ jira: KT-10797
 thumbnail: kt-10797.jpg
 exl-id: 9d4aab4c-82af-4917-8c1b-3935f19691e6
 duration: 31
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 089bcf71f03bdbb6d21337cc23452afb33ce8098
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 2%
@@ -26,7 +26,7 @@ AEM Las implementaciones de [Web Component](https://developer.mozilla.org/en-US/
 
 La siguiente configuración de implementación debe estar implementada para implementaciones de componentes web/JS.
 
-| La aplicación web Component/JS se conecta a | AEM Author | Publicación de AEM | AEM Previsualización de |
+| La aplicación web Component/JS se conecta a → | AEM Author | Publicación de AEM | AEM Previsualización de |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [Filtros de Dispatcher](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | [Uso compartido de recursos de origen cruzado (CORS)](./configurations/cors.md) | ✔ | ✔ | ✔ |
