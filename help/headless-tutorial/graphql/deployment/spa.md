@@ -11,7 +11,7 @@ thumbnail: KT-10587.jpg
 mini-toc-levels: 2
 exl-id: 3fe175f7-6213-439a-a02c-af3f82b6e3b7
 duration: 136
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: f1b13bba9e83ac1d25f2af23ff2673554726eb19
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 1%
@@ -53,7 +53,7 @@ SPA AEM SPA AEM Depende de usted cómo se enrute el tráfico de la y la en el do
 
 SPA AEM A continuación, se indican las configuraciones de implementación necesarias para implementaciones de producción de la, cuando se hospedan en el mismo dominio que las implementaciones de.
 
-| SPA se conecta a | AEM Author | Publicación de AEM | AEM Previsualización de |
+| SPA se conecta a → | AEM Author | Publicación de AEM | AEM Previsualización de |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [Filtros de Dispatcher](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | Uso compartido de recursos de origen cruzado (CORS) | ✘ | ✘ | ✘ |
@@ -70,7 +70,7 @@ AEM SPA AEM Dado que se accede a los recursos de origen cruzado (CORS) [y a los 
 
 SPA AEM A continuación, se indican las configuraciones de implementación necesarias para implementaciones de producción de la, cuando se aloja en un dominio diferente al de la ubicación de la aplicación.
 
-| SPA se conecta a | AEM Author | Publicación de AEM | AEM Previsualización de |
+| SPA se conecta a → | AEM Author | Publicación de AEM | AEM Previsualización de |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [Filtros de Dispatcher](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | [Uso compartido de recursos de origen cruzado (CORS)](./configurations/cors.md) | ✔ | ✔ | ✔ |
