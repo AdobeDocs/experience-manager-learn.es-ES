@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 8d9e6bc44164ff3acfa2c7eadffc60bbc5e8306e
+source-git-commit: 86d282b426402c9ad6be84e9db92598d0dc54f85
 workflow-type: tm+mt
-source-wordcount: '1297'
+source-wordcount: '1307'
 ht-degree: 16%
 
 ---
@@ -269,6 +269,11 @@ ht-degree: 16%
       + [Crear elementos de datos](./forms/form-data-analytics/data-elements.md)
       + [Crear reglas](./forms/form-data-analytics/rules.md)
       + [Prueba de la solución](./forms/form-data-analytics/test.md)
+   + Creando variaciones de botón{#style-system}
+      + [Introducción](./forms/style-system/introduction.md)
+      + [Definir directiva](./forms/style-system/style-policy.md)
+      + [Definir variaciones](./forms/style-system/create-variations.md)
+      + [Variaciones de prueba](./forms/style-system/build.md)
    + Usando fichas verticales{#using-vertical-tabs}
       + [1. Introducción](./forms/using-vertical-tabs/introduction.md)
       + [2. Crear formulario](./forms/using-vertical-tabs/create-af.md)
