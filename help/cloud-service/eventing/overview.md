@@ -12,9 +12,9 @@ last-substantial-update: 2023-12-07T00:00:00Z
 jira: KT-14649
 thumbnail: KT-14649.jpeg
 exl-id: 142ed6ae-1659-4849-80a3-50132b2f1a86
-source-git-commit: 8d9e6bc44164ff3acfa2c7eadffc60bbc5e8306e
+source-git-commit: ede52c6c9feb0b35bc3729e28591cb4e7c7600f7
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '833'
 ht-degree: 0%
 
 ---
@@ -67,13 +67,12 @@ AEM La ventilación de los sistemas ofrece numerosas ventajas para la arquitectu
 AEM La evasión de eventos, aunque es potente, tiene ciertas limitaciones que se deben tener en cuenta:
 
 - **Disponibilidad restringida a AEM as a Cloud Service AEM**: Actualmente, el servicio de ventilación de la está disponible exclusivamente para AEM as a Cloud Service.
-- AEM **Compatibilidad con eventos limitados**: Por ahora, solo se admiten eventos de fragmento de contenido de la lista de distribución de contenido de la lista de distribución de contenido en la red. Sin embargo, se espera que el ámbito se amplíe con la adición de más eventos en el futuro.
+
+- **Tipos de eventos disponibles**: revise la lista actual de tipos de eventos disponibles [aquí](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#available-event-types).
 
 ## Cómo habilitar
 
-AEM La ventilación de la está habilitada para cada entorno de AEM as a Cloud Service y solo está disponible para los entornos en modo previo al lanzamiento. AEM AEM AEM Póngase en contacto con el <a href="mailto:grp-aem-events@adobe.com">equipo de eventos-eventos</a> para habilitar su entorno de con la ventilación de eventos-eventos-eventos-eventos-eventos-eventos.
-
-AEM Si ya está habilitado, consulte [Habilitar eventos de en su entorno de AEM Cloud Service](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment) para ver los pasos siguientes.
+AEM Consulte [Habilitar eventos en su entorno de AEM Cloud Service](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment) para ver los pasos siguientes.
 
 ## Cómo suscribirse
 
