@@ -1,6 +1,6 @@
 ---
 title: Creando componente de dirección
-description: Creación de un nuevo componente principal de dirección en AEM Forms Cloud Service
+description: Creación de un nuevo componente principal de dirección en AEM Forms as a Cloud Service
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -10,7 +10,7 @@ topic: Development
 jira: KT-15752
 exl-id: 21b6640e-5cfa-4902-9660-a2b1c91b285d
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
-source-git-commit: ed64dd303a384d48f76c9b8e8e925f5d3b8f3247
+source-git-commit: b4df652fcda0af5d01077b97aa7fa17cfe2abf4b
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 47%
@@ -27,7 +27,7 @@ En este tutorial, crearemos un componente de bloque de direcciones. El component
 
 ## Requisitos previos
 
-* Acceso a la instancia de Cloud Service de AEM Forms
+* Acceso a la instancia as a Cloud Service de AEM Forms
 * Cierta experiencia en el desarrollo de formularios mediante el módulo de AEM Forms
 * AEM Experiencia en la configuración del entorno de desarrollo para el/AEM Forms (Git, IntelliJ, etc.)
 

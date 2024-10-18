@@ -1,6 +1,6 @@
 ---
 title: Creando componente de dirección
-description: Creación de un nuevo componente principal de dirección en AEM Forms Cloud Service
+description: Creación de un nuevo componente principal de dirección en AEM Forms as a Cloud Service
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -9,16 +9,16 @@ feature: Adaptive Forms
 topic: Development
 jira: KT-15752
 exl-id: be25be52-2914-4820-9356-678a326f8edc
-source-git-commit: a12b1778413079646814cb25567abfc26a429340
+source-git-commit: b4df652fcda0af5d01077b97aa7fa17cfe2abf4b
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '200'
 ht-degree: 0%
 
 ---
 
 # Implemente su proyecto
 
-Antes de empezar a implementar el proyecto en el Cloud Service de AEM Forms, se recomienda implementar el proyecto en la instancia local de AEM Forms lista para la nube.
+Antes de empezar a implementar el proyecto en el as a Cloud Service de AEM Forms, se recomienda implementar el proyecto en la instancia local de AEM Forms lista para la nube.
 
 ## AEM Sincronización de cambios con el proyecto de
 
