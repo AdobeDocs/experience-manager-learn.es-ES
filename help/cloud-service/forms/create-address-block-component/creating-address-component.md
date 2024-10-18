@@ -9,9 +9,9 @@ feature: Adaptive Forms
 topic: Development
 jira: KT-15752
 exl-id: 280c9a30-e017-4bc0-9027-096aac82c22c
-source-git-commit: 426020f59c7103829b7b7b74acb0ddb7159b39fa
+source-git-commit: ed64dd303a384d48f76c9b8e8e925f5d3b8f3247
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '296'
 ht-degree: 3%
 
 ---
@@ -69,7 +69,7 @@ Seleccione el nodo ``zip`` y establezca sus propiedades como se muestra a contin
 Seleccione el nodo ``state`` y establezca sus propiedades como se muestra a continuación. Observe el fieldType del estado: está configurado para ser un menú desplegable
 ![estado](assets/state.png)
 
-## Establecer valores predeterminados para el campo de estado
+## Definir opciones para el campo de estado
 
 Seleccione el nodo ``state`` y agregue las siguientes propiedades.
 
