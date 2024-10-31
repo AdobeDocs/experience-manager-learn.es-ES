@@ -9,10 +9,10 @@ level: Beginner
 doc-type: Catalog
 duration: 45
 last-substantial-update: 2024-10-31T00:00:00Z
-source-git-commit: db8e776458879018fcfdd4d30c518cafc3a2ab14
+source-git-commit: 6aece3e46b486125e7270ddc094d8f2816db1257
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '481'
+ht-degree: 6%
 
 ---
 
@@ -26,7 +26,7 @@ Obtenga información sobre cómo cargar recursos, aplicar etiquetas y comprender
 
 ## Vídeos de Content Hub
 
-Esta serie de vídeos abarca todo lo que necesita para trabajar de forma eficaz con AEM Assets Content Hub. Desde la administración de recursos hasta la colaboración con su equipo, cada vídeo proporciona pasos claros y sugerencias prácticas para ayudarle a sacar el máximo partido a AEM Assets Content Hub en su trabajo diario.
+Esta serie de vídeos abarca todo lo que necesita para trabajar de forma eficaz con AEM Assets Content Hub. Desde la administración de recursos hasta la colaboración con su equipo, cada vídeo proporciona pasos claros y sugerencias prácticas para ayudarle a sacar el máximo partido a Content Hub de los AEM Assets en su trabajo diario.
 
 
 <!-- CARDS
@@ -148,7 +148,7 @@ Esta serie de vídeos abarca todo lo que necesita para trabajar de forma eficaz 
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/collections" title="Colecciones">Colecciones</a>
                     </p>
-                    <p class="is-size-6">Aprenda a crear y utilizar colecciones en AEM Assets Content Hub para optimizar el acceso a los recursos y promover el uso compartido colaborativo de recursos, lo que garantiza un trabajo en equipo eficiente y organizado en varios proyectos.</p>
+                    <p class="is-size-6">Aprenda a crear y utilizar colecciones en AEM Assets Content Hub para optimizar el acceso a los recursos y fomentar el uso compartido colaborativo de recursos, lo que garantiza un trabajo en equipo eficiente y organizado en varios proyectos.</p>
                 </div>
                 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/collections" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Vea el vídeo</span>
@@ -171,7 +171,7 @@ Esta serie de vídeos abarca todo lo que necesita para trabajar de forma eficaz 
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/share" title="Uso compartido">Uso compartido</a>
                     </p>
-                    <p class="is-size-6">Aprenda a compartir recursos y colecciones con los integrantes del equipo en AEM Assets Content Hub, promoviendo un trabajo en equipo eficaz y un uso compartido seguro de los recursos.</p>
+                    <p class="is-size-6">Aprenda a compartir recursos y colecciones con los integrantes del equipo en AEM Assets Content Hub, lo que promueve el trabajo en equipo efectivo y un uso compartido seguro de los recursos.</p>
                 </div>
                 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/share" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Vea el vídeo</span>
@@ -187,7 +187,7 @@ Esta serie de vídeos abarca todo lo que necesita para trabajar de forma eficaz 
 
 ## Documentación de Content Hub
 
-Explore la documentación del producto de Content Hub para ayudarle a comprender y utilizar AEM Assets Content Hub. Estos recursos proporcionan instrucciones detalladas sobre el uso de sus funciones y características, lo que garantiza que tenga la asistencia necesaria para una administración eficiente de los recursos.
+Explore la documentación del producto de Content Hub para ayudarle a comprender y utilizar Content Hub de AEM Assets. Estos recursos proporcionan instrucciones detalladas sobre el uso de sus funciones y características, lo que garantiza que tenga la asistencia necesaria para una administración eficiente de los recursos.
 
 
 <!-- CARDS
