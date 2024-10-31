@@ -9,7 +9,7 @@ level: Beginner
 doc-type: Catalog
 duration: 45
 last-substantial-update: 2024-10-31T00:00:00Z
-source-git-commit: 6aece3e46b486125e7270ddc094d8f2816db1257
+source-git-commit: 16bccf53b8f7507f64dd53a7152192630e3f8ec8
 workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 6%
@@ -46,7 +46,7 @@ Esta serie de vídeos abarca todo lo que necesita para trabajar de forma eficaz 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/set-up" title="Configuración de">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3433513/?format=jpeg" alt="Configuración de"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3433513/?format=jpeg&nocache=1730408523156" alt="Configuración de"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -69,7 +69,7 @@ Esta serie de vídeos abarca todo lo que necesita para trabajar de forma eficaz 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/add-assets" title="Añadir recursos">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3432980/?format=jpeg" alt="Añadir recursos"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3432980/?format=jpeg&nocache=1730408523136" alt="Añadir recursos"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -92,7 +92,7 @@ Esta serie de vídeos abarca todo lo que necesita para trabajar de forma eficaz 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/download-assets" title="Descarga de recursos">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3433135/?format=jpeg" alt="Descarga de recursos"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3433135/?format=jpeg&nocache=1730408523154" alt="Descarga de recursos"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -115,7 +115,7 @@ Esta serie de vídeos abarca todo lo que necesita para trabajar de forma eficaz 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/image-variants" title="Crear variantes de imagen">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435003/?format=jpeg" alt="Crear variantes de imagen"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435003/?format=jpeg&nocache=1730408523138" alt="Crear variantes de imagen"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -138,7 +138,7 @@ Esta serie de vídeos abarca todo lo que necesita para trabajar de forma eficaz 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/collections" title="Colecciones">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435687/?format=jpeg" alt="Colecciones"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435687/?format=jpeg&nocache=1730408523160" alt="Colecciones"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -161,7 +161,7 @@ Esta serie de vídeos abarca todo lo que necesita para trabajar de forma eficaz 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-hub/share" title="Uso compartido">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435685/?format=jpeg" alt="Uso compartido"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435685/?format=jpeg&nocache=1730408523158" alt="Uso compartido"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -185,6 +185,10 @@ Esta serie de vídeos abarca todo lo que necesita para trabajar de forma eficaz 
 
 
 
+
+
+
+
 ## Documentación de Content Hub
 
 Explore la documentación del producto de Content Hub para ayudarle a comprender y utilizar Content Hub de AEM Assets. Estos recursos proporcionan instrucciones detalladas sobre el uso de sus funciones y características, lo que garantiza que tenga la asistencia necesaria para una administración eficiente de los recursos.
@@ -194,7 +198,7 @@ Explore la documentación del producto de Content Hub para ayudarle a comprender
 
 * https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/product-overview {title=Content Hub documentation} {description=This documentation serves as your entry point to learn about Content Hub's key benefits, access methods, and how to provide feedback on the available options.}
 * https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/deploy-content-hub {description=Learn how to deploy and activate Content Hub, providing users with various privileges, including asset uploads and administrator access.}
-* https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/frequently-asked-questions-content-hub {title = Content Hub FAQ}
+* https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/frequently-asked-questions-content-hub {title = Content Hub FAQs}
 
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
@@ -245,7 +249,7 @@ Explore la documentación del producto de Content Hub para ayudarle a comprender
             </div>
         </div>
     </div>
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Content Hub FAQ">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Content Hub FAQs">
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
@@ -270,5 +274,9 @@ Explore la documentación del producto de Content Hub para ayudarle a comprender
     </div>
 </div>
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
+
+
+
+
 
 
