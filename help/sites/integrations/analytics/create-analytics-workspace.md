@@ -13,7 +13,7 @@ exl-id: b5722fe2-93bf-4b25-8e08-4cb8206771cb
 badgeIntegration: label="Integración" type="positive"
 last-substantial-update: 2022-06-15T00:00:00Z
 duration: 443
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 606607b85fae012e76d57b0b35820247a6862e32
 workflow-type: tm+mt
 source-wordcount: '2072'
 ht-degree: 0%
@@ -40,12 +40,12 @@ A continuación se muestran las variables de Analytics de las que se está reali
 * `event8` - `CTA Button Click event`
 * `prop8` - `CTA Button Id`
 
-![CTA Haz clic en Adobe Analytics](assets/create-analytics-workspace/page-analytics.png)
+![CTA Click Adobe Analytics](assets/create-analytics-workspace/page-analytics.png)
 
 ### Objetivos {#objective}
 
 1. Cree un grupo de informes o utilice uno existente.
-1. Configure [Variables de conversión (eVars)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html) y [Eventos de éxito (Events)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-events/success-event.html) en el grupo de informes.
+1. Configure [Variables de conversión (eVars)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html) y [Eventos de éxito (Events)](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-event) en el grupo de informes.
 1. Cree un [proyecto de Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) para analizar datos con la ayuda de herramientas que le permitan generar, analizar y compartir información rápidamente.
 1. Comparta el proyecto de Analysis Workspace con otros integrantes del equipo.
 
@@ -101,7 +101,7 @@ Los eventos de éxito son acciones de las que se puede llevar un seguimiento. Us
 
 ### Configurar eventos de éxito
 
-A continuación, vamos a crear un evento para rastrear el clic en el botón CTA.
+A continuación, vamos a crear un evento para rastrear el clic en el botón de CTA.
 
 1. En la ventana **Administrador del grupo de informes**, seleccione la **ID del grupo de informes** y haga clic en **Editar configuración**.
 1. Haga clic en **Conversión** > **Eventos de éxito**
@@ -116,7 +116,7 @@ A continuación, vamos a crear un evento para rastrear el clic en el botón CTA.
 
 Analysis Workspace es una herramienta de navegador flexible que le permite crear análisis y compartir perspectivas rápidamente. Con la interfaz de arrastrar y soltar, puede crear su análisis, agregar visualizaciones para dar vida a los datos, depurar un conjunto de datos, compartir y programar proyectos con cualquier persona de su organización.
 
-A continuación, cree un [proyecto](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/freeform-overview.html#analysis-workspace) para generar un panel que analice el rendimiento de los botones de CTA en todo el sitio.
+A continuación, cree un [proyecto](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/freeform-overview.html#analysis-workspace) para generar un panel con el fin de analizar el rendimiento de los botones de CTA en todo el sitio.
 
 1. En la barra de herramientas de Analytics, seleccione **Workspace** y haga clic para **Crear un nuevo proyecto**.
 
@@ -148,9 +148,9 @@ A continuación, genere una tabla para crear una representación visual de cómo
 
    ![Dimension de página](assets/create-analytics-workspace/evar9-dimension.png)
 
-1. Arrastre y suelte la métrica **Clic de CTA** (evento8) en la métrica Ocurrencias y reemplácela. Ahora puede ver una visualización que muestra el Nombre de página (eVar9) y un recuento correspondiente de eventos de clic CTA en una página.
+1. Arrastre y suelte la métrica **Clic en CTA** (evento8) en la métrica Ocurrencias y reemplácela. Ahora puede ver una visualización que muestra el Nombre de página (eVar9) y el recuento correspondiente de eventos de clic de CTA en una página.
 
-   ![Métrica de página - Clic CTA](assets/create-analytics-workspace/evar8-cta-click.png)
+   ![Métrica de página - CTA Click](assets/create-analytics-workspace/evar8-cta-click.png)
 
 1. Vamos a desglosar la página por tipo de plantilla. Seleccione la métrica de plantilla de página de los componentes y arrastre y suelte la métrica de plantilla de página en la dimensión Nombre de página. Ahora puede ver el nombre de página desglosado por su tipo de plantilla.
 
@@ -164,7 +164,7 @@ A continuación, genere una tabla para crear una representación visual de cómo
 
    ![eVar 8](assets/create-analytics-workspace/evar8.png)
 
-1. A continuación, puede ver una representación visual del sitio WKND desglosada por su plantilla de página y desglosada aún más por la interacción del usuario con los botones de clic para acción del sitio WKND (CTA).
+1. A continuación, puede ver una representación visual del sitio WKND desglosada por su plantilla de página y desglosada aún más por la interacción del usuario con los botones de clic en acción del sitio WKND (CTA).
 
    ![eVar 8](assets/create-analytics-workspace/evar8-metric.png)
 
@@ -240,17 +240,17 @@ A continuación, descarguemos la plantilla de clasificación para la variable de
 
    ![Id. de botón de Workspace](assets/create-analytics-workspace/workspace-report-button-id.png)
 
-1. A continuación, reemplace la métrica **Button Id** en su espacio de trabajo que muestra el ID de un botón de llamada a la acción (CTA) con el nombre de clasificación creado en el paso anterior.
+1. A continuación, reemplace la métrica **Button Id** del área de trabajo que muestra el ID de un botón de llamada a la acción (CTA) con el nombre de clasificación creado en el paso anterior.
 
-1. Desde el buscador de componentes, busque **Botones de CTA WKND** y arrastre y suelte la dimensión **Botones de CTA WKND (Id de botón)** en la métrica ID de botón y reemplácela.
+1. Desde el buscador de componentes, busque **Botones de WKND CTA** y arrastre y suelte la dimensión **Botones de WKND CTA (Id de botón)** en la métrica de Id de botón y reemplácela.
 
    * **Antes de**
      ![Botón De Workspace Antes De](assets/create-analytics-workspace/wknd-button-before.png)
    * **Después**
      ![Botón De Workspace Después De](assets/create-analytics-workspace/wknd-button-after.png)
 
-1. Puede ver que la métrica ID del botón que contenía el ID del botón de una llamada a la acción (CTA) ahora se reemplaza con el nombre correspondiente proporcionado en la plantilla de clasificación.
-1. Vamos a comparar la tabla de Workspace de Analytics con la página de inicio de WKND y comprender el recuento de clics en el botón CTA y su análisis. En función de los datos de la tabla de forma libre del espacio de trabajo, es evidente que 22 veces los usuarios han hecho clic en el botón **ESQUÍ AHORA** y cuatro veces en el botón **Leer más** de la página principal de WKND que acampa en Australia occidental.
+1. Puede ver que la métrica Id de botón que contenía el ID de botón de un botón Llamada a la acción (CTA) ahora se reemplaza con el nombre correspondiente proporcionado en la plantilla de clasificación.
+1. Vamos a comparar la tabla de Workspace de Analytics con la página de inicio de WKND y comprender el recuento de clics en el botón de CTA y su análisis. En función de los datos de la tabla de forma libre del espacio de trabajo, es evidente que 22 veces los usuarios han hecho clic en el botón **ESQUÍ AHORA** y cuatro veces en el botón **Leer más** de la página principal de WKND que acampa en Australia occidental.
 
    ![Informe de CTA](assets/create-analytics-workspace/workspace-report-buttons-wknd.png)
 
