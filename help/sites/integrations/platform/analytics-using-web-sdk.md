@@ -14,7 +14,7 @@ badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 0cc3d3bc-e4ea-4ab2-8878-adbcf0c914f5
 duration: 2252
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 774267b4f4c65c79f185fa3b33383ce9ddd136cb
 workflow-type: tm+mt
 source-wordcount: '1529'
 ht-degree: 0%
@@ -23,13 +23,13 @@ ht-degree: 0%
 
 # Integración de AEM Sites y Adobe Analytics con el SDK web de Platform
 
-Conozca el **enfoque moderno** sobre cómo integrar Adobe Experience Manager AEM () y Adobe Analytics mediante el SDK web de Platform. Este completo tutorial lo guiará a través del proceso de recopilar sin problemas la vista de página [WKND](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) y los datos de clics de CTA. Obtenga valiosas perspectivas visualizando los datos recopilados en Adobe Analysis Workspace, donde puede explorar varias métricas y dimensiones. Además, explore el conjunto de datos de Platform para comprobar y analizar los datos. Únase a nosotros en este recorrido AEM para aprovechar el poder de las soluciones de y de Adobe Analytics para la toma de decisiones basada en datos.
+Conozca el **enfoque moderno** sobre cómo integrar Adobe Experience Manager AEM () y Adobe Analytics mediante el SDK web de Platform. Este completo tutorial lo guiará a través del proceso de recopilar sin problemas [WKND](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) vista de página y datos de clics de CTA. Obtenga valiosas perspectivas visualizando los datos recopilados en Adobe Analysis Workspace, donde puede explorar varias métricas y dimensiones. Además, explore el conjunto de datos de Platform para comprobar y analizar los datos. Únase a nosotros en este recorrido AEM para aprovechar el poder de las soluciones de y de Adobe Analytics para la toma de decisiones basada en datos.
 
 ## Información general
 
-Obtener perspectivas sobre el comportamiento del usuario es un objetivo crucial para cada equipo de marketing. Al comprender cómo los usuarios interactúan con su contenido, los equipos pueden tomar decisiones informadas, optimizar estrategias e impulsar mejores resultados. El equipo de marketing de WKND, una entidad ficticia, ha puesto su mira en implementar Adobe Analytics en su sitio web para lograr este objetivo. El objetivo principal es recopilar datos en dos métricas clave: vistas de página y clics en la llamada a la acción (CTA) de la página principal.
+Obtener perspectivas sobre el comportamiento del usuario es un objetivo crucial para cada equipo de marketing. Al comprender cómo los usuarios interactúan con su contenido, los equipos pueden tomar decisiones informadas, optimizar estrategias e impulsar mejores resultados. El equipo de marketing de WKND, una entidad ficticia, ha puesto su mira en implementar Adobe Analytics en su sitio web para lograr este objetivo. El objetivo principal es recopilar datos en dos métricas clave: vistas de página y clics en la llamada a acción de la página de inicio (CTA).
 
-Al realizar un seguimiento de las vistas de página, el equipo puede analizar qué páginas reciben la mayor atención de los usuarios. Además, el seguimiento de los clics en CTA de la página de inicio proporciona información valiosa sobre la eficacia de los elementos de llamada a la acción del equipo. Estos datos pueden revelar qué CTA resuenan con los usuarios, cuáles necesitan ajustes y potencialmente descubrir nuevas oportunidades para mejorar la participación del usuario y dirigir las conversiones.
+Al realizar un seguimiento de las vistas de página, el equipo puede analizar qué páginas reciben la mayor atención de los usuarios. Además, el seguimiento de los clics en CTA de la página de inicio proporciona información valiosa sobre la eficacia de los elementos de llamada a acción del equipo. Estos datos pueden revelar qué CTA resuenan con los usuarios, cuáles necesitan ajustes y potencialmente descubrir nuevas oportunidades para mejorar la participación del usuario y dirigir las conversiones.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419872?quality=12&learn=on)
@@ -82,7 +82,7 @@ Para obtener más información sobre los conceptos y los diversos elementos que 
 
 El primer paso es configurar Adobe Analytics, específicamente un grupo de informes, con variables de conversión (o eVar) y eventos de éxito. Las variables de conversión se utilizan para medir causa y efecto. Los eventos de éxito se utilizan para rastrear acciones.
 
-En este tutorial, `eVar5, eVar6, and eVar7` rastrea _Nombre de página WKND, ID de CTA WKND y Nombre de CTA WKND_ respectivamente, y `event7` se usa para rastrear _Evento de clic de CTA WKND_.
+En este tutorial, `eVar5, eVar6, and eVar7` rastreará _WKND Page Name, WKND CTA ID y WKND CTA Name_ respectivamente, y `event7` se utilizará para rastrear _WKND CTA Click Event_.
 
 Para analizar, recopilar perspectivas y compartirlas con otros a partir de los datos recopilados, se crea un proyecto en Analysis Workspace.
 
@@ -92,7 +92,7 @@ Para obtener más información sobre la configuración y los conceptos de Analyt
 
 + [Grupo de informes](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite.html)
 + [Variables de conversión](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html)
-+ [Eventos de éxito](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-events/success-event.html)
++ [Eventos de éxito](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-event)
 + [Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html)
 
 ## Actualizar secuencia de datos - Agregar servicio de Analytics
@@ -239,9 +239,9 @@ Para generar una cantidad significativa de tráfico con fines de prueba, se desa
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419884?quality=12&learn=on)
 
-## Verificación del conjunto de datos: vista de página de WKND, datos de CTA
+## Verificación del conjunto de datos: vista de página WKND, datos de CTA
 
-El conjunto de datos es una construcción de almacenamiento y administración para una colección de datos, como una tabla de base de datos, que sigue un esquema. El conjunto de datos creado en el [tutorial anterior](./web-sdk.md) se reutiliza para comprobar que los datos de vista de página y clics de CTA se han introducido en el conjunto de datos del Experience Platform. En la interfaz de usuario del conjunto de datos, se muestran varios detalles, como los registros totales, el tamaño y los lotes ingeridos, junto con un gráfico de barras visualmente atractivo.
+El conjunto de datos es una construcción de almacenamiento y administración para una colección de datos, como una tabla de base de datos, que sigue un esquema. El conjunto de datos creado en el [tutorial anterior](./web-sdk.md) se reutiliza para comprobar que los datos de clic de CTA y vista de página se han introducido en el conjunto de datos de Experience Platform. En la interfaz de usuario del conjunto de datos, se muestran varios detalles, como los registros totales, el tamaño y los lotes ingeridos, junto con un gráfico de barras visualmente atractivo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419885?quality=12&learn=on)
 
@@ -249,7 +249,7 @@ El conjunto de datos es una construcción de almacenamiento y administración pa
 
 Analysis Workspace es una potente herramienta dentro de Adobe Analytics que permite explorar y visualizar datos de una manera flexible e interactiva. Proporciona una interfaz de arrastrar y soltar para crear informes personalizados, realizar una segmentación avanzada y aplicar varias visualizaciones de datos.
 
-Volvamos a abrir el proyecto de Analysis Workspace creado en el paso [Análisis de instalación](#setup-analytics---report-suite-analysis-workspace). En la sección **Páginas principales**, examine diversas métricas, como visitas, visitantes únicos, entradas, tasa de salida hacia otro sitio y más. Para evaluar el rendimiento de las páginas de WKND y de las CTA de la página principal, arrastre y suelte las dimensiones (nombre de página de WKND, nombre de CTA de WKND) y métricas (evento de clic de CTA de WKND) específicas. Estas perspectivas son valiosas para los especialistas en marketing, a fin de comprender qué CTA son más eficaces y tomar decisiones basadas en datos, alineadas con sus objetivos comerciales.
+Volvamos a abrir el proyecto de Analysis Workspace creado en el paso [Análisis de instalación](#setup-analytics---report-suite-analysis-workspace). En la sección **Páginas principales**, examine diversas métricas, como visitas, visitantes únicos, entradas, tasa de salida hacia otro sitio y más. Para evaluar el rendimiento de las páginas de WKND y de las CTA de la página de inicio, arrastre y suelte las dimensiones específicas de WKND (Nombre de página de WKND, Nombre de CTA de WKND) y las métricas (Evento de clic de CTA de WKND). Estas perspectivas son valiosas para los especialistas en marketing, a fin de comprender qué CTA son más eficaces y tomar decisiones basadas en datos, alineadas con sus objetivos comerciales.
 
 Para visualizar los recorridos del usuario, utilice la visualización de flujo, empezando por **WKND Page Name** y expandiéndose en varias rutas.
 
@@ -257,7 +257,7 @@ Para visualizar los recorridos del usuario, utilice la visualización de flujo, 
 
 ## Resumen
 
-¡Buen trabajo! AEM Ha completado la configuración de y Adobe Analytics mediante el SDK web de Platform para recopilar, analizar la vista de página y hacer clic en datos de CTA.
+¡Buen trabajo! AEM Ha completado la configuración de eVar de Adobe Analytics mediante el SDK web de Platform para recopilar, analizar la vista de página y hacer clic en datos de CTA.
 
 La implementación de Adobe Analytics es crucial para que los equipos de marketing obtengan perspectivas sobre el comportamiento del usuario, tomen decisiones informadas, permitiéndoles optimizar su contenido y tomar decisiones basadas en datos.
 
