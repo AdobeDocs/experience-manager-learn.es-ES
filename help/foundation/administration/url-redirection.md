@@ -12,9 +12,9 @@ index: y
 doc-type: Article
 exl-id: 8e64f251-e5fd-4add-880e-9d54f8e501a6
 duration: 164
-source-git-commit: d5dff9378f31acb0fbce0bb86e2d0022ee725f83
+source-git-commit: 50ddda35adbb3af0b66a6e24a135fd5b94a3fb3a
 workflow-type: tm+mt
-source-wordcount: '884'
+source-wordcount: '885'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ AEM Hay dos características disponibles en [ACS Commons](https://adobe-consulti
 
 #### Administrador de redireccionamiento de mapas
 
-AEM [El Administrador de mapas de redireccionamiento](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) ayuda a los administradores a mantener y publicar fácilmente los archivos de [Apache RewriteMap](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html) sin tener que acceder directamente al servidor web Apache ni requerir el reinicio de este. AEM AEM Esta función permite a los usuarios de permisos crear, actualizar y eliminar reglas de redireccionamiento de una consola en, sin la ayuda del equipo de desarrollo ni de una implementación de la aplicación. El Administrador de redireccionamiento es compatible con **AEM as a Cloud Service AEM** (consulte la estrategia [Redirecciones de URL sin canalizaciones](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects)) y con **.x**.
+AEM [El Administrador de mapas de redireccionamiento](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) ayuda a los administradores a mantener y publicar fácilmente los archivos de [Apache RewriteMap](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html) sin tener que acceder directamente al servidor web Apache ni requerir el reinicio de este. AEM AEM Esta función permite a los usuarios de permisos crear, actualizar y eliminar reglas de redireccionamiento de una consola en, sin la ayuda del equipo de desarrollo ni de una implementación de la aplicación. El administrador de mapas de redireccionamiento es compatible con **AEM as a Cloud Service AEM** (consulte la estrategia [Redirecciones de URL sin canalizaciones](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects)) y con **.x**.
 
 #### Administrador de redireccionamiento
 
