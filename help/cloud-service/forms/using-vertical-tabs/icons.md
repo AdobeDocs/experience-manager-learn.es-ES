@@ -1,5 +1,5 @@
 ---
-title: Uso de pestañas verticales en AEM Forms as a Cloud Service
+title: Adición de iconos personalizados
 description: Agregar iconos personalizados a pestañas verticales
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
@@ -11,9 +11,10 @@ feature: Adaptive Forms
 thumbnail: 331891.jpg
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16418
-source-git-commit: 1ed08d7784833b6c49139da525341af5ee587345
+exl-id: 20e44be0-5490-4414-9183-bb2d2a80bdf0
+source-git-commit: faa859897b6b9fbb0acff02000611de216ddda3e
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '676'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ Añadir iconos personalizados a las pestañas puede mejorar la experiencia del u
 
 * Facilidad de uso mejorada: los iconos pueden transmitir rápidamente el propósito de cada pestaña, lo que facilita a los usuarios encontrar lo que buscan de un vistazo. Las indicaciones visuales como los iconos ayudan a los usuarios a navegar de forma más intuitiva.
 
-* Jerarquía visual y enfoque: los iconos crean una separación más clara entre las pestañas, lo que mejora la jerarquía visual. Esto puede ayudar a que las pestañas importantes destaquen y guíen la atención de los usuarios de forma más eficaz.
+* Jerarquía visual y enfoque: los iconos crean una separación más clara entre las pestañas, lo que mejora la jerarquía visual. Esto puede ayudar a que las pestañas importantes destaquen y guíen de forma eficaz la atención de los usuarios.
 Siguiendo este artículo, debería poder colocar los iconos como se muestra a continuación
 
 ![iconos](assets/icons.png)
@@ -42,9 +43,9 @@ Los iconos marcados en rojo son los nuevos iconos añadidos.
 
 ## Cree un mapa de iconos para almacenar los iconos
 
-Cree el mapa de iconos para el archivo _variable.scss. El mapa $icon-map del SCSS es una colección de pares clave-valor, donde cada clave representa un nombre de icono (como hogar, familia, etc.) y cada valor es la ruta al archivo de imagen asociado con ese icono.
+Cree el mapa de iconos en el archivo _variable.scss. El mapa $icon-map del SCSS es una colección de pares clave-valor, donde cada clave representa un nombre de icono (como hogar, familia, etc.) y cada valor es la ruta al archivo de imagen asociado con ese icono.
 
-![variable-scss](assets/variable.scss)
+![variable-scss](assets/variable_scss.png)
 
 ```css
 $icon-map: (
@@ -81,8 +82,7 @@ Agregue el siguiente código al archivo _mixin.scss
 
 El mixin add-icon-to-vertical-tab está diseñado para añadir un icono personalizado junto al texto en una pestaña vertical. Permite incluir fácilmente una imagen como un icono en las pestañas, colocarla junto al texto y aplicarle estilo para garantizar la coherencia y la alineación.
 
-Desglose de Mixin
-Esto es lo que hace cada parte del mixin:
+Desglose del mixin, esto es lo que hace cada parte del mixin:
 
 Parámetros:
 
