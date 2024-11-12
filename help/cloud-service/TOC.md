@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 1ed08d7784833b6c49139da525341af5ee587345
+source-git-commit: 197f8b0d664971283cd893417a43e4e85e1b4923
 workflow-type: tm+mt
-source-wordcount: '1325'
+source-wordcount: '1328'
 ht-degree: 16%
 
 ---
@@ -19,6 +19,8 @@ ht-degree: 16%
 + [Información general](./overview.md)
 + AEM {#aem-trials}
    + [Imágenes](./aem-trials/images.md)
++ Listas de reproducción{#playlists}
+   + [AEM desarrollo de la](./playlists/development.md)
 + Introducción a AEM as a Cloud Service{#introduction}
    + [¿Qué es AEM as a Cloud Service?](./introduction/what-is-aem-as-a-cloud-service.md)
    + [Arquitectura](./introduction/architecture.md)
@@ -435,7 +437,7 @@ ht-degree: 16%
          + [Publish, cancelar la publicación de eventos en Edge Delivery Services](./expert-resources/cloud-5/season-3/cloud5-publish-events.md)
          + [Índices de consulta y fórmulas de Excel](./expert-resources/cloud-5/season-3/cloud5-query-indexes.md)
          + [Traiga su propia CDN de Cloudflare](./expert-resources/cloud-5/season-3/cloud5-byo-cloudflare-cdn.md)
-         + [Integrar AEM Assets](./expert-resources/cloud-5/season-3/cloud5-integrate-assets.md)
+         + [Integración de AEM Assets](./expert-resources/cloud-5/season-3/cloud5-integrate-assets.md)
          + [IA generativa para AEM Sites](./expert-resources/cloud-5/season-3/cloud5-generative-ai-for-aem-sites.md)
          + [Exploración del editor universal](./expert-resources/cloud-5/season-3/cloud5-exploring-universal-editor.md)
          + [Importar sitios](./expert-resources/cloud-5/season-3/cloud5-import-sites-to-edge-delivery-services.md)
