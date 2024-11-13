@@ -10,9 +10,9 @@ jira: KT-9226
 exl-id: d9618cc8-d399-4850-8714-c38991862045
 last-substantial-update: 2020-02-07T00:00:00Z
 duration: 177
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 2625a9127c36ee191eb67128546864c9f6901663
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '558'
 ht-degree: 1%
 
 ---
@@ -82,7 +82,7 @@ Puede usar cualquiera de las herramientas en línea gratuitas para [generar XSD]
 
 ### Crear formulario adaptable
 
-Cree un formulario adaptable basado en el XSD del paso anterior. Asocie el formulario para utilizar la biblioteca de cliente &quot;irs&quot;. Esta biblioteca de cliente tiene el código para realizar una llamada al POST al servlet, que devuelve el PDF a la aplicación que realiza la llamada
+Cree un formulario adaptable basado en el XSD del paso anterior. Asocie el formulario para utilizar la biblioteca de cliente &quot;irs&quot;. Esta biblioteca de cliente tiene el código para realizar una llamada al POST al servlet, que devuelve el PDF a la aplicación que realiza la llamada.
 El siguiente código se activa cuando se hace clic en el _PDF de descarga_
 
 ```javascript
@@ -211,7 +211,7 @@ public class GenerateIInteractiveDor extends SlingAllMethodsServlet {
 }
 ```
 
-En el código de ejemplo, extraemos el nombre xdp y otros parámetros del objeto de solicitud. Si el formulario no está basado en XSD, se crea el documento xml que se combinará con el xdp. Si el formulario se basa en XSD, simplemente extraemos el nodo correspondiente de los datos enviados del formulario adaptable para generar el documento xml que se combinará con la plantilla xdp.
+En este código de ejemplo, el nombre xdp y otros parámetros se extraen del objeto de solicitud. Si el formulario no está basado en un XSD, se crea un nuevo documento XML para combinarlo con el xdp. Sin embargo, si el formulario está basado en XSD, el nodo correspondiente se extrae directamente de los datos enviados del formulario adaptable y se genera un documento XML para combinarlo con la plantilla xdp en consecuencia.
 
 ## Implementar el ejemplo en el servidor
 
@@ -226,6 +226,11 @@ DesarrollarWithServiceUser.core:getformsresourceresolver=fd-service
 1. [Vista previa de formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/f8918complete/jcr:content?wcmmode=disabled)
 1. Rellene algunos de los campos del formulario.
 1. Haga clic en Descargar PDF para obtener el PDF. Es posible que tenga que esperar unos segundos para que el PDF descargue.
+
+>[!NOTE]
+>
+>Cuando abra el PDF descargado con el visualizador de PDF del explorador, no verá los datos en el PDF. Abra el PDF descargado mediante Adobe Acrobat o Adobe Reader.
+
 
 >[!NOTE]
 >
