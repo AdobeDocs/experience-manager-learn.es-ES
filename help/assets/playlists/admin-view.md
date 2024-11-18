@@ -9,14 +9,14 @@ last-substantial-update: 2024-11-01T00:00:00Z
 doc-type: Catalog
 duration: 60
 exl-id: 924b3bab-e0ed-4b07-bded-344aab61eac5
-source-git-commit: 74e9962dfb7f451d395a3ec1a56989e3cbc4295b
+source-git-commit: 0905e084001dafa5445d3ea9d42b07c592af9149
 workflow-type: tm+mt
 source-wordcount: '557'
 ht-degree: 0%
 
 ---
 
-# AEM Assets Admin ver listas de reproducción de vídeos
+# AEM Assets Admin Ver listas de reproducción de vídeo
 
 Explore estas listas de reproducción para dominar la vista de administración as a Cloud Service de los AEM Assets, que abarca la configuración, la optimización, el uso y la integración perfecta con los flujos de trabajo creativos. Obtenga la información que necesita para tener éxito con los AEM Assets as a Cloud Service.
 
