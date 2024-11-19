@@ -1,6 +1,6 @@
 ---
-title: Recursos AEM Assets vista listas de reproducción de vídeos
-description: Aprenda a usar Recursos AEM como Cloud Service en Assets vista con este colección de listas de reproducción de video diseñadas para aumentar su experiencia en productos.
+title: AEM Assets Assets ver listas de reproducción de vídeo
+description: Aprenda a utilizar AEM Assets as a Cloud Service en la vista de Assets con esta colección de listas de reproducción de vídeo diseñadas para mejorar su experiencia con los productos.
 version: Cloud Service
 topic: Content Management
 role: User
@@ -9,18 +9,18 @@ last-substantial-update: 2024-11-01T00:00:00Z
 doc-type: Catalog
 duration: 60
 exl-id: 76af4062-4d8d-4908-bd3d-ce5a8af2111a
-source-git-commit: d95c0cfc64f22efa1490fb1e0d787b8d76006add
+source-git-commit: 889d9a15041e23fa42d24c508a131690db58738a
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '406'
 ht-degree: 1%
 
 ---
 
-# Vídeo listas de reproducción para Assets vista
+# Listas de reproducción de vídeo para la vista Assets
 
-![Recursos AEM Assets vista](./assets/assets-view.png){align=center}
+![Vista Assets de AEM Assets](./assets/assets-view.png){align="center"}
 
-Explore estas listas de reproducción para dominar el Recursos AEM como un Cloud Service Assets vista, que abarca la configuración, optimización, uso y integración optimizada con creativa flujos de trabajo. Obtenga la información que necesita para tener éxito con los AEM Assets as a Cloud Service.
+Explore estas listas de reproducción para dominar la vista as a Cloud Service de Assets de los AEM Assets, que abarca la configuración, la optimización, el uso y la integración perfecta con los flujos de trabajo creativos. Obtenga la información que necesita para tener éxito con los AEM Assets as a Cloud Service.
 
 ## Configuración de la vista Assets
 
@@ -47,9 +47,9 @@ Empiece con la configuración y las configuraciones esenciales para que los AEM 
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-all-configure-administrative-access" target="_blank" rel="referrer" title="Configuración del acceso administrativo al Experience Manager">Configuración del acceso administrativo a Experience Manager</a>
+                        <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-all-configure-administrative-access" target="_blank" rel="referrer" title="Configuración del acceso administrativo al Experience Manager">Configuración del acceso administrativo al Experience Manager</a>
                     </p>
-                    <p class="is-size-6">Explore cómo se autentican los usuarios utilizando Adobe Systems IMS para AEM como Cloud Service y cómo se utilizan Adobe Systems usuarios, grupos de usuarios y perfiles de producto de IMS para controlar el acceso a AEM y sus características y funcionalidades.</p>
+                    <p class="is-size-6">Explore cómo se autentican los usuarios con Adobe IMS para AEM as a Cloud Service AEM y cómo se utilizan los usuarios de IMS de Adobe, los grupos de usuarios y los Perfiles de productos para controlar el acceso a las funciones y las funcionalidades de los.</p>
                 </div>
                 <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-all-configure-administrative-access" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ver</span>
@@ -75,7 +75,7 @@ Empiece con la configuración y las configuraciones esenciales para que los AEM 
                     <p class="is-size-6">Descubra cómo AEM Assets Essentials puede agilizar la administración de recursos de su departamento.</p>
                 </div>
                 <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-get-started-assets-essentials" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Reloj</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ver</span>
                 </a>
             </div>
         </div>
@@ -122,7 +122,7 @@ Navegue por la interfaz de la vista de Assets como un profesional, conozca las h
                     <p class="is-size-6">Descubra cómo los AEM Assets pueden aumentar la velocidad del contenido mediante Adobe Firefly y generación de IA.</p>
                 </div>
                 <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-generate-image-assets-with-adobe-firefly" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Reloj</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ver</span>
                 </a>
             </div>
         </div>
@@ -145,7 +145,7 @@ Navegue por la interfaz de la vista de Assets como un profesional, conozca las h
                     <p class="is-size-6">Descubra cómo la búsqueda de vistas de Assets de AEM Assets puede ayudarle a encontrar recursos de forma rápida y sencilla.</p>
                 </div>
                 <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-assets-view-search-use" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Reloj</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ver</span>
                 </a>
             </div>
         </div>
@@ -155,9 +155,9 @@ Navegue por la interfaz de la vista de Assets como un profesional, conozca las h
 
 
 
-## Conectar creativa flujos de trabajo con Recursos AEM
+## Conexión de flujos de trabajo creativos con AEM Assets
 
-Desbloquee colaboración fluidos integrando Recursos AEM como Cloud Service con sus herramientas de creativa, lo que garantiza un flujos de trabajo cohesivo y eficiente.
+Desbloquee la colaboración sin problemas integrando AEM Assets as a Cloud Service con sus herramientas creativas, lo que garantiza flujos de trabajo coherentes y eficientes.
 
 <!-- CARDS
 
@@ -171,7 +171,7 @@ Desbloquee colaboración fluidos integrando Recursos AEM como Cloud Service con 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-manage-creative-workflows-with-workfront-and-assets-essentials" title="Administrar flujos de trabajo creativos con Workfront y Assets Essentials" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_1781139425d77174a992697a33d097a8bd5b54d5b.jpeg?width=400&format=pjpg&optimize=medium" alt="Administrar flujos de trabajo de Creative con Workfront y Assets Essentials"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_1781139425d77174a992697a33d097a8bd5b54d5b.jpeg?width=400&format=pjpg&optimize=medium" alt="Administrar flujos de trabajo creativos con Workfront y Assets Essentials"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -179,9 +179,9 @@ Desbloquee colaboración fluidos integrando Recursos AEM como Cloud Service con 
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-manage-creative-workflows-with-workfront-and-assets-essentials" target="_blank" rel="referrer" title="Administrar flujos de trabajo de Creative con Workfront y Assets Essentials">Administrar flujos de trabajo de Creative con Workfront y Assets Essentials</a>
+                        <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-manage-creative-workflows-with-workfront-and-assets-essentials" target="_blank" rel="referrer" title="Administrar flujos de trabajo creativos con Workfront y Assets Essentials">Administrar flujos de trabajo creativos mediante Workfront y Assets Essentials</a>
                     </p>
-                    <p class="is-size-6">Descubra cómo Adobe Systems Workfront y Experience Manager Assets Essentials ayudan a su organización a administrar el creativa flujo de trabajo.</p>
+                    <p class="is-size-6">Descubra cómo Adobe Workfront y Experience Manager Assets Essentials ayudan a su organización a administrar el flujo de trabajo creativo.</p>
                 </div>
                 <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-manage-creative-workflows-with-workfront-and-assets-essentials" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ver</span>
