@@ -11,13 +11,13 @@ jira: KT-16515
 thumbnail: KT-16515.jpeg
 last-substantial-update: 2024-11-20T00:00:00Z
 duration: 0
-source-git-commit: 6b8a8dc5cdcddfa2d8572bfd195bc67906882f67
+exl-id: 23b2be0d-a8d4-4521-96ba-78b70f4e9cba
+source-git-commit: 316e08e6647d6fd731cd49ae1bc139ce57c3a7f4
 workflow-type: tm+mt
 source-wordcount: '880'
 ht-degree: 1%
 
 ---
-
 
 # AEM Información general de APIs{#aem-apis-overview}
 
@@ -71,7 +71,7 @@ AEM Veamos con más detalle las API de API de basadas en OpenAPI y los conceptos
 
 **Forms**
 
-- [Servicios de Forms Acrobat](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/): API para trabajar con formularios y documentos.
+- [API de comunicaciones de Forms](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/): API para trabajar con formularios y documentos.
 
 AEM En futuras versiones, se añadirán más API de API de basadas en OpenAPI para admitir casos de uso adicionales.
 
@@ -89,7 +89,7 @@ AEM Las API de basadas en OpenAPI admiten los siguientes métodos de autenticaci
 
 Antes de acceder a las API de Adobe, es esencial comprender estos conceptos clave:
 
-- **[Adobe Developer Console](https://developer.adobe.com/)**: el centro para desarrolladores para acceder a las API de Adobe, SDK, eventos en tiempo real, funciones sin servidor y mucho más. AEM Tenga en cuenta que esto es diferente del Developer Console AEM __, que se usa para depurar aplicaciones de la.
+- **[Adobe Developer Console](https://developer.adobe.com/)**: el centro para desarrolladores para acceder a las API de Adobe, SDK, eventos en tiempo real, funciones sin servidor y mucho más. AEM Tenga en cuenta que es diferente del Developer Console AEM __, que se usa para depurar aplicaciones de la.
 
 - **[Proyecto Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/projects/)**: Lugar central para administrar integraciones de API, eventos y funciones de tiempo de ejecución. Aquí puede configurar las API, establecer la autenticación y generar las credenciales necesarias.
 

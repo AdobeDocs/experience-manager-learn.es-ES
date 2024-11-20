@@ -1,6 +1,6 @@
 ---
 title: AEM Cómo invocar las API de datos basadas en la API de OpenAPI
-description: AEM Aprenda a invocar las API de API de datos basadas en OpenAPI desde la aplicación.
+description: AEM Aprenda a configurar e invocar las API de API de datos basadas en API de OpenAPI en AEM as a Cloud Service desde aplicaciones personalizadas.
 version: Cloud Service
 feature: Developing
 topic: Development, Architecture, Content Management
@@ -11,17 +11,17 @@ jira: KT-16516
 thumbnail: KT-16516.jpeg
 last-substantial-update: 2024-11-20T00:00:00Z
 duration: 0
-source-git-commit: 6b8a8dc5cdcddfa2d8572bfd195bc67906882f67
+exl-id: 24c641e7-ab4b-45ee-bbc7-bf6b88b40276
+source-git-commit: 316e08e6647d6fd731cd49ae1bc139ce57c3a7f4
 workflow-type: tm+mt
-source-wordcount: '1751'
+source-wordcount: '1761'
 ht-degree: 0%
 
 ---
 
-
 # AEM Cómo invocar las API de datos basadas en la API de OpenAPI{#invoke-openapi-based-aem-apis}
 
-AEM Aprenda a invocar las API de API de datos basadas en OpenAPI en AEM as a Cloud Service desde aplicaciones personalizadas.
+AEM Aprenda a configurar e invocar las API de API de datos basadas en API de OpenAPI en AEM as a Cloud Service desde aplicaciones personalizadas.
 
 >[!AVAILABILITY]
 >
@@ -501,4 +501,3 @@ Las llamadas clave desde el código de aplicación NodeJS de ejemplo son:
 
 AEM En este tutorial, ha aprendido a invocar las API de basadas en OpenAPI desde aplicaciones personalizadas. AEM Ha habilitado el acceso a las API de, ha creado y ha configurado un proyecto de Adobe Developer Console (ADC).
 AEM En el proyecto de ADC, ha añadido las API de, ha configurado su tipo de autenticación y ha asociado el perfil de producto. AEM También configuró la instancia de para habilitar la comunicación del proyecto ADC y desarrolló una aplicación NodeJS de ejemplo que llama a la API de autor de Assets.
-
