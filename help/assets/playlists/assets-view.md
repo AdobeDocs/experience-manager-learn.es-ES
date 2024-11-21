@@ -1,17 +1,17 @@
 ---
-title: AEM Assets Assets ver listas de reproducción de vídeo
-description: Aprenda a utilizar AEM Assets as a Cloud Service en la vista de Assets con esta colección de listas de reproducción de vídeo diseñadas para mejorar su experiencia con los productos.
+title: Listas de reproducción de vídeo para AEM Assets vista Assets
+description: Descubra cómo navegar por los AEM Assets as a Cloud Service en la vista de Assets con esta selección depurada de listas de reproducción de vídeo destinadas a mejorar su conocimiento del producto.
 version: Cloud Service
 topic: Content Management
 role: User
 level: Beginner
-last-substantial-update: 2024-11-01T00:00:00Z
+last-substantial-update: 2024-11-20T00:00:00Z
 doc-type: Catalog
 duration: 60
 exl-id: 76af4062-4d8d-4908-bd3d-ce5a8af2111a
-source-git-commit: 889d9a15041e23fa42d24c508a131690db58738a
+source-git-commit: b98f5321a4545d8b9d89d8d599723acc296cf0d4
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '409'
 ht-degree: 1%
 
 ---
