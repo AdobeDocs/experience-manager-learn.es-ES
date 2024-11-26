@@ -6,9 +6,9 @@ solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
 duration: 74
-source-git-commit: 4806312931038cc31e6bcf67f242483f62723387
+source-git-commit: e4a9ed215603e1a1726a5a031c1c18f93d438355
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
@@ -44,36 +44,6 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
             </p>
         </td>   
         <td>
-            <a href="./season-3/cloud5-rum.md">
-                <img alt="Monitorización de usuarios reales (RUM)" src="https://video.tv.adobe.com/v/3427495?format=jpeg"/>
-            </a>
-            <div>
-                <a href="./season-3/cloud5-rum.md">
-                <strong>Control de usuario real (RUM)</strong></a>        
-                AEM <br/><em>con James Talbot y Damian Langsweirdt, Ingeniería de la</em>
-            </div>
-            <p>
-                <br/>
-                Explore Real User Monitoring (RUM) funciona con Edge Delivery Services.
-            </p>
-        </td>   
-        <!--
-        <td>
-            <a href="./season-3/cloud5-rum-explorer.md">
-                <img alt="Real User Monitoring (RUM) Explorer" src="https://video.tv.adobe.com/v/3429772?format=jpeg"/>
-            </a>
-            <div>
-                <a href="./season-3/cloud5-rum-explorer.md">
-                <strong>Real User Monitoring (RUM) Explorer</strong></a>        
-                <br/><em>with James Talbot & Damian Langsweirdt, AEM Engineering</em>
-            </div>
-            <p>
-                <br/>
-                Learn about Real User Monitoring (RUM) Explorer and how to access it.
-            </p>
-        </td>   
-        -->
-        <td>
             <a href="./season-3/cloud5-edge-workers.md">
                 <img alt="Trabajadores de Edge" src="https://video.tv.adobe.com/v/3427589?format=jpeg"/>
             </a>
@@ -87,8 +57,6 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
                 Explore la importancia de los trabajadores de Edge con Edge Delivery Services.
             </p>
         </td>   
-    </tr>
-    <tr>
         <td>
             <a href="./season-3/cloud5-publish-events.md">
                 <img alt="Publish, cancelar la publicación de eventos en Edge Delivery Services" src="https://video.tv.adobe.com/v/3427681?format=jpeg"/>
@@ -103,6 +71,8 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
                 Explore los eventos que se activan al publicar y cancelar la publicación en los Edge Delivery Services, así como casos de uso y ejemplos de uso de estos eventos.
             </p>
         </td>  
+    </tr>
+    <tr>
         <td>
             <a href="./season-3/cloud5-query-indexes.md">
                 <img alt="Índices de consulta y fórmulas de Excel en Edge Delivery Services" src="https://video.tv.adobe.com/v/3427787?format=jpeg"/>
@@ -131,8 +101,6 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
                 Descubra cómo configurar su propia CDN de Cloudflare en Edge Delivery Services.
             </p>
         </td>           
-    </tr>  
-    <tr>
         <td>
             <a href="./season-3/cloud5-integrate-assets.md">
                 <img alt="Integración de AEM Assets con la creación de documentos" src="https://video.tv.adobe.com/v/3428302?format=jpeg"/>
@@ -144,9 +112,11 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
             </div>
             <p>
                 <br/>
-                Descubra cómo integrar AEM Assets con la creación de documentos.
+                Explore cómo integrar AEM Assets con la creación de documentos.
             </p>
-        </td>        
+        </td>
+    </tr>
+    <tr>
         <td>
             <a href="./season-3/cloud5-generative-ai-for-aem-sites.md">
                 <img alt="IA generativa en AEM Sites" src="https://video.tv.adobe.com/v/3428436?format=jpeg"/>
@@ -175,8 +145,6 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
                  AEM Obtenga información acerca de Universal Editor y la con Edge Delivery Services.
             </p>
         </td>
-    </tr>  
-    <tr>
         <td>
             <a href="./season-3/cloud5-import-sites-to-edge-delivery-services.md">
                 <img alt="Importación de sitios en AEM Sites con Edge Delivery Services" 
@@ -192,6 +160,8 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
                  Obtenga información sobre la importación de sitios a AEM Sites con Edge Delivery Services.
             </p>
         </td>
+    </tr>
+    <tr>
         <td>
             <a href="./season-3/cloud5-using-admin-api.md">
                 <img alt="Uso de la API de administración con Edge Delivery Services" 
@@ -222,8 +192,6 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
                  Obtenga información sobre qué es una puntuación de faro y técnicas para obtener la mejor puntuación de faro posible.
             </p>
         </td>            
-    </tr> 
-    <tr>
         <td>
             <a href="./season-3/cloud5-lighthouse-score-optimization-part2.md">
                 <img alt="Optimización de la puntuación de Lighthouse - Parte 2"
@@ -238,7 +206,9 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
                 <br/>                
                  Conozca las técnicas para mejorar el tiempo total de bloqueo.
             </p>
-        </td>            
+        </td>   
+    </tr>
+    <tr>
         <td>
             <a href="./season-3/cloud5-lighthouse-score-optimization-part3.md">
                 <img alt="Optimización de la puntuación de Lighthouse: parte 3"
