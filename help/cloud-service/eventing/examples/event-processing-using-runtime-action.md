@@ -12,7 +12,7 @@ last-substantial-update: 2024-01-30T00:00:00Z
 jira: KT-14879
 thumbnail: KT-14879.jpeg
 exl-id: c362011e-89e4-479c-9a6c-2e5caa3b6e02
-source-git-commit: efa0a16649c41fab8309786a766483cfeab98867
+source-git-commit: 315bc1029b133f2ae857196f65e39229caaecaa1
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 0%
@@ -259,3 +259,4 @@ Los requisitos de procesamiento de eventos difieren de un proyecto a otro, pero 
 - El procesamiento de eventos se puede realizar mediante la acción de Adobe I/O Runtime.
 - La acción de tiempo de ejecución puede comunicarse con sistemas como las aplicaciones internas, las soluciones de terceros y las soluciones de Adobe.
 - La acción de tiempo de ejecución sirve como punto de entrada a un proceso empresarial diseñado en torno a un cambio de contenido.
+
