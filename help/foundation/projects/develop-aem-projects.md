@@ -9,7 +9,7 @@ role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
 duration: 1417
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 54a7f93637545a4467c4c587bbc3d1d0de5c64a1
 workflow-type: tm+mt
 source-wordcount: '4441'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Este tutorial recorrerá paso a paso el código necesario para crear una plantil
 * [Paquete de tutorial finalizado](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [Repositorio de código completo en GitHub](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
 
-AEM AEM Este tutorial asume algunos conocimientos básicos de [prácticas de desarrollo de la](https://experienceleague.adobe.com/es_es/docs/experience-manager-65/content/implementing/developing/introduction/the-basics) y cierta familiaridad con la [configuración del proyecto Maven de la](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html?lang=en). AEM Todo el código mencionado está diseñado para utilizarse como referencia y solo debe implementarse en una [instancia de desarrollo local](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/implementing/deploying/deploying/deploy).
+AEM AEM Este tutorial asume algunos conocimientos básicos de [prácticas de desarrollo de la](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/implementing/developing/introduction/the-basics) y cierta familiaridad con la [configuración del proyecto Maven de la](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html). AEM Todo el código mencionado está diseñado para utilizarse como referencia y solo debe implementarse en una [instancia de desarrollo local](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/implementing/deploying/deploying/deploy).
 
 ## Estructura de una plantilla de proyecto
 
@@ -655,7 +655,7 @@ La creación de un asistente personalizado puede ser muy eficaz, ya que puede re
 
 1. También agregaremos un campo de selección de prioridad que determinará la prioridad de la primera tarea del flujo de trabajo (consulte [Crear el modelo de flujo de trabajo](#create-workflow-model): Paso 5).
 
-   Debajo de `/content-approval-start/jcr:content/items/column2/items` se crea un nuevo nodo de tipo `nt:unstructured` denominado **priority**. Utilizaremos [Granite UI Select component](https://experienceleague.adobe.com/es_es/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions) para rellenar el campo de formulario.
+   Debajo de `/content-approval-start/jcr:content/items/column2/items` se crea un nuevo nodo de tipo `nt:unstructured` denominado **priority**. Utilizaremos [Granite UI Select component](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions) para rellenar el campo de formulario.
 
    Debajo del nodo **priority** agregaremos un nodo **items** de **nt:unstructured**. Debajo del nodo **items**, agregue tres nodos más para rellenar las opciones de selección Alta, Medium y Baja. Cada nodo es de tipo **nt:unstructured** y debe tener una propiedad **text** y **value**. El texto y el valor deben tener el mismo valor:
 
