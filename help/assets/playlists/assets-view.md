@@ -9,9 +9,9 @@ last-substantial-update: 2024-11-20T00:00:00Z
 doc-type: Catalog
 duration: 60
 exl-id: 76af4062-4d8d-4908-bd3d-ce5a8af2111a
-source-git-commit: 9630faead73bf337c3a0f2b56c6d1173ed700dd6
+source-git-commit: cce071c22a14669344318ad00d57a4fccc956a33
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '405'
 ht-degree: 1%
 
 ---
@@ -162,6 +162,8 @@ Desbloquee la colaboración sin problemas integrando AEM Assets as a Cloud Servi
 <!-- CARDS
 
 * https://experienceleague.adobe.com/en/playlists/experience-manager-assets-manage-creative-workflows-with-workfront-and-assets-essentials
+  { title = Manage Creative Workflows Using Workfront and AEM Assets }
+  { description = Learn how Adobe Workfront and AEM Assets help your organization manage the creative workflow. }
 
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
@@ -179,9 +181,9 @@ Desbloquee la colaboración sin problemas integrando AEM Assets as a Cloud Servi
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-manage-creative-workflows-with-workfront-and-assets-essentials" target="_blank" rel="referrer" title="Administrar flujos de trabajo creativos con Workfront y Assets Essentials">Administrar flujos de trabajo creativos mediante Workfront y Assets Essentials</a>
+                        <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-manage-creative-workflows-with-workfront-and-assets-essentials" target="_blank" rel="referrer" title="Administrar flujos de trabajo creativos con Workfront y Assets Essentials">Administrar flujos de trabajo creativos mediante Workfront y AEM Assets</a>
                     </p>
-                    <p class="is-size-6">Descubra cómo Adobe Workfront y Experience Manager Assets Essentials ayudan a su organización a administrar el flujo de trabajo creativo.</p>
+                    <p class="is-size-6">Descubra cómo Adobe Workfront y los AEM Assets ayudan a su organización a administrar el flujo de trabajo creativo.</p>
                 </div>
                 <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-manage-creative-workflows-with-workfront-and-assets-essentials" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ver</span>
