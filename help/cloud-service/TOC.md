@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: f9a1fb40aabb6fdc1157e1f2576f9c0d9cf1b099
+source-git-commit: 891fd1cfdcb82a6d4f1bb031cfa11893a69d0546
 workflow-type: tm+mt
-source-wordcount: '1346'
+source-wordcount: '1356'
 ht-degree: 16%
 
 ---
@@ -59,7 +59,7 @@ ht-degree: 16%
 + Configuración del entorno de desarrollo local {#local-development-environment-set-up}
    + [Información general](./local-development-environment/overview.md)
    + [Herramientas de desarrollo](./local-development-environment/development-tools.md)
-   + [AEM SDK local de](./local-development-environment/aem-runtime.md)
+   + [AEM SDK local](./local-development-environment/aem-runtime.md)
    + [Herramientas locales de Dispatcher](./local-development-environment/dispatcher-tools.md)
 + Desarrollando{#developing}
    + Extensibilidad{#extensibility}
@@ -88,7 +88,7 @@ ht-degree: 16%
                + [Distintivos RTE](./developing/extensibility/ui/content-fragments/examples/editor-rte-badges.md)
                + [Campos personalizados](./developing/extensibility/ui/content-fragments/examples/editor-custom-field.md)
    + Conceptos básicos de desarrollo{#basics}
-      + [AEM SDK de](./developing/basics/aem-sdk.md)
+      + [AEM SDK](./developing/basics/aem-sdk.md)
       + [Entorno de desarrollo local](./developing/basics/local-development-environment.md)
       + [Tipo de archivo del proyecto AEM](./developing/basics/aem-project-archetype.md)
       + [Estructura del proyecto AEM](./developing/basics/project-structure.md)
@@ -124,9 +124,9 @@ ht-degree: 16%
          + [Información general](./developing/universal-editor/react-app/overview.md)
          + [Configuración de desarrollo local](./developing/universal-editor/react-app/local-development-setup.md)
          + [Aplicación React de Instrumento](./developing/universal-editor/react-app/instrument-to-edit-content.md)
-   + AEM [SDK API JavaDocs](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html){target=_blank}
+   + AEM [API de SDK JavaDocs](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html){target=_blank}
 + AEM Depuración de {#debugging}
-   + AEM Depurando el SDK de la {#debugging-aem-sdk}
+   + AEM Depurando el SDK {#debugging-aem-sdk} de la
       + [Información general](./debugging/aem-sdk-local-quickstart/overview.md)
       + [Registros](./debugging/aem-sdk-local-quickstart/logs.md)
       + [Depuración remota](./debugging/aem-sdk-local-quickstart/remote-debugging.md)
@@ -416,9 +416,10 @@ ht-degree: 16%
    + [AEM Serie de expertos de](./expert-resources/expert-series/aem-experts-series.md)
    + Nube 5{#cloud-5}
       + [Introducción](./expert-resources/cloud-5/cloud5-introduction.md)
+      + [Temporada 4](./expert-resources/cloud-5/cloud5-season-4.md)
       + [Temporada 1](./expert-resources/cloud-5/cloud5-season-1.md)
-      + [Temporada 2](./expert-resources/cloud-5/cloud5-season-2.md)
       + [Temporada 3](./expert-resources/cloud-5/cloud5-season-3.md)
+      + [Temporada 2](./expert-resources/cloud-5/cloud5-season-2.md)
       + [AEM CDN CDN, parte 1](./expert-resources/cloud-5/cloud5-aem-cdn-part1.md)
       + [AEM CDN CDN, parte 2](./expert-resources/cloud-5/cloud5-aem-cdn-part2.md)
       + [AEM Archivos de registro de](./expert-resources/cloud-5/cloud5-aem-log-files.md)
@@ -453,4 +454,7 @@ ht-degree: 16%
          + [Optimización de la puntuación de Lighthouse - Parte1](./expert-resources/cloud-5/season-3/cloud5-lighthouse-score-optimization-part1.md)
          + [Optimización de la puntuación de Lighthouse - Parte 2](./expert-resources/cloud-5/season-3/cloud5-lighthouse-score-optimization-part2.md)
          + [Optimización de la puntuación de Lighthouse - Parte3](./expert-resources/cloud-5/season-3/cloud5-lighthouse-score-optimization-part3.md)
-
+      + Temporada 4{#season-4}
+         + [Prácticas recomendadas](./expert-resources/cloud-5/season-4/cloud5-edge-delivery-services-best-practices.md)
+         + [Optimizaciones de búsqueda](./expert-resources/cloud-5/season-4/cloud5-search-optimization.md)
+         + [Mapas de Google](./expert-resources/cloud-5/season-4/cloud5-google-maps.md)
