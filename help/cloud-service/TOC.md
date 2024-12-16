@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 891fd1cfdcb82a6d4f1bb031cfa11893a69d0546
+source-git-commit: 9c0c0594d8bcecbf1e0daf7f3c5d7146adcdb08f
 workflow-type: tm+mt
 source-wordcount: '1356'
 ht-degree: 16%
@@ -417,9 +417,9 @@ ht-degree: 16%
    + Nube 5{#cloud-5}
       + [Introducción](./expert-resources/cloud-5/cloud5-introduction.md)
       + [Temporada 4](./expert-resources/cloud-5/cloud5-season-4.md)
-      + [Temporada 1](./expert-resources/cloud-5/cloud5-season-1.md)
       + [Temporada 3](./expert-resources/cloud-5/cloud5-season-3.md)
       + [Temporada 2](./expert-resources/cloud-5/cloud5-season-2.md)
+      + [Temporada 1](./expert-resources/cloud-5/cloud5-season-1.md)
       + [AEM CDN CDN, parte 1](./expert-resources/cloud-5/cloud5-aem-cdn-part1.md)
       + [AEM CDN CDN, parte 2](./expert-resources/cloud-5/cloud5-aem-cdn-part2.md)
       + [AEM Archivos de registro de](./expert-resources/cloud-5/cloud5-aem-log-files.md)
