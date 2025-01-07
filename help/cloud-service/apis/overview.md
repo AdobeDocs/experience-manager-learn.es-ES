@@ -12,10 +12,10 @@ thumbnail: KT-16515.jpeg
 last-substantial-update: 2024-11-20T00:00:00Z
 duration: 0
 exl-id: 23b2be0d-a8d4-4521-96ba-78b70f4e9cba
-source-git-commit: 316e08e6647d6fd731cd49ae1bc139ce57c3a7f4
+source-git-commit: d5745a17af6b72b1871925dd7c50cbbb152012fe
 workflow-type: tm+mt
-source-wordcount: '880'
-ht-degree: 1%
+source-wordcount: '1024'
+ht-degree: 2%
 
 ---
 
@@ -85,6 +85,16 @@ AEM Las API de basadas en OpenAPI admiten los siguientes métodos de autenticaci
 
 - SPA **Credencial de aplicación de una sola página de OAuth**: diseñada para ejecutarse en el explorador, que necesita acceder a las API en nombre de un usuario sin un servidor back-end. Utiliza el tipo de concesión _authorization_code_ y se basa en los mecanismos de seguridad del lado del cliente mediante PKCE (clave de prueba para intercambio de código) para proteger el flujo del código de autorización. Para obtener más información, consulte [Credencial de aplicación de una sola página de OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation/#oauth-single-page-app-credential).
 
+### Diferencia entre las credenciales de servidor a servidor de OAuth y aplicación web de OAuth/aplicación de una sola página{#difference-between-oauth-server-to-server-and-oauth-web-app-single-page-app-credentials}
+
+| | Servidor a servidor OAuth | Autenticación de usuario de OAuth (aplicación web) |
+| --- | --- | --- |
+| Objetivo de autenticación | Diseñado para interacciones máquina a máquina. | Diseñado para interacciones impulsadas por el usuario. |
+| Comportamiento del token | Emite tokens de acceso que representan la propia aplicación cliente. | Emite tokens de acceso en nombre de un usuario autenticado. |
+| Casos de uso | Servicios back-end que necesitan acceso a API sin interacción del usuario. | Las aplicaciones web con componentes de front-end y back-end acceden a las API en nombre de los usuarios. |
+| Consideraciones de seguridad | Almacene de forma segura credenciales confidenciales (`client_id`, `client_secret`) en sistemas back-end. | Los usuarios se autentican y obtienen su propio token de acceso temporal. Almacene de forma segura credenciales confidenciales (`client_id`, `client_secret`) en sistemas back-end. |
+| Tipo de concesión | _client_credentials_ | _código de autorización_ |
+
 ## Acceso a las API de Adobe y conceptos relacionados{#accessing-adobe-apis-and-related-concepts}
 
 Antes de acceder a las API de Adobe, es esencial comprender estos conceptos clave:
@@ -102,4 +112,7 @@ Antes de acceder a las API de Adobe, es esencial comprender estos conceptos clav
 AEM Con una comprensión de los diferentes tipos de API de, que incluyen
 AEM Las API basadas en API abiertas de, y los conceptos clave para acceder a las API de Adobe AEM de, ya están listos para empezar a crear aplicaciones personalizadas que interactúen con las API de.
 
-AEM Empecemos con el tutorial [Cómo invocar las API basadas en OpenAPIs](invoke-openapi-based-aem-apis.md) de las API de la aplicación de código abierto.
+Empecemos con lo siguiente:
+
+- AEM AEM [Invocar API de API de basadas en OpenAPI para la autenticación de servidor a servidor](invoke-openapi-based-aem-apis.md) tutorial que muestra cómo acceder a las API de API basadas en OpenAPI _mediante credenciales de servidor a servidor de OAuth_.
+- AEM AEM [Invocar las API de basadas en OpenAPI con autenticación de usuario desde una aplicación web](invoke-openapi-based-aem-apis-from-web-app.md) tutorial que muestra cómo acceder a las API de basadas en OpenAPI desde una _aplicación web mediante las credenciales de la aplicación web de OAuth_.
