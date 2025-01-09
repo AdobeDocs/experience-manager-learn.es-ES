@@ -1,5 +1,5 @@
 ---
-title: AEM Cómo invocar las API de AppMeasurement basadas en OpenAPI desde una aplicación web.
+title: AEM Invocar las API de AppMeasurement basadas en OpenAPI con autenticación de usuario desde una aplicación web.
 description: AEM Obtenga información sobre cómo invocar las API de OSGi basadas en API de OpenAPI en AEM as a Cloud Service desde una aplicación web personalizada mediante la autenticación de aplicación web de OAuth.
 version: Cloud Service
 feature: Developing
@@ -9,15 +9,15 @@ level: Intermediate
 doc-type: Tutorial
 jira: KT-16718
 thumbnail: KT-16718.jpeg
-last-substantial-update: 2024-12-17T00:00:00Z
+last-substantial-update: 2025-01-09T00:00:00Z
 duration: 0
-source-git-commit: d5745a17af6b72b1871925dd7c50cbbb152012fe
+exl-id: dc35256a-3873-413f-b282-90948efd5f31
+source-git-commit: 3e91387368943b1b0d62c57f8172a0306758b28f
 workflow-type: tm+mt
-source-wordcount: '2399'
+source-wordcount: '2433'
 ht-degree: 0%
 
 ---
-
 
 # AEM Invocar las API de AppMeasurement basadas en OpenAPI con autenticación de usuario desde una aplicación web.{#invoke-openapi-based-aem-apis-from-web-app}
 
@@ -36,6 +36,8 @@ Antes de comenzar, vamos a comprender la aplicación web de ejemplo, la administ
 La aplicación WKND PIM es una aplicación web de ejemplo diseñada para administrar atributos de producto y sus metadatos de recursos almacenados en AEM as a Cloud Service. Este ejemplo muestra cómo las aplicaciones web se pueden integrar perfectamente con las API de Adobe para ofrecer flujos de trabajo eficientes y centrados en el usuario.
 
 El proyecto de Adobe Developer Console (ADC) está configurado para acceder a la API de autor de Assets mediante la autenticación de la aplicación web de OAuth. Proporciona los _client_id_ y _client_secret_ necesarios a la aplicación web WKND-PIM para iniciar el flujo de concesión de _authorization_code_.
+
+>[!VIDEO](https://video.tv.adobe.com/v/34260?quality=12&learn=on)
 
 El diagrama siguiente ilustra el flujo funcional de la aplicación web WKND-PIM _que obtiene tokens de acceso específicos del usuario para interactuar con la API de autor de Assets_.
 
@@ -66,7 +68,7 @@ Antes de comenzar, asegúrese de revisar la sección [Acceso a las API de Adobe 
 
 ## Cómo utilizar este tutorial{#how-to-use-this-tutorial}
 
-Puede [revisar la sección de fragmentos de código de clave de aplicación web](#review-web-app-key-code-snippets) para comprender el flujo de autenticación de aplicación web de OAuth y los fragmentos de código de llamadas a la API utilizados en la aplicación web WKND-PIM. O bien, diríjase directamente a la sección [Configurar y ejecutar la aplicación web](#setup-run-web-app) para configurar y ejecutar la aplicación web WKND-PIM en su equipo local.
+Puede [Revisar los fragmentos de código de clave de la aplicación web](#review-web-app-key-code-snippets) para comprender el flujo de autenticación de la aplicación web de OAuth y los fragmentos de código de las llamadas a la API utilizados en la aplicación web WKND-PIM. O bien, vaya directamente a la sección [Configurar y ejecutar la aplicación web](#setup-run-web-app) para configurar y ejecutar la aplicación web WKND-PIM en el equipo local.
 
 ## Revisar fragmentos de código de clave de aplicación web{#review-web-app-key-code-snippets}
 
@@ -404,6 +406,11 @@ AEM Las llamadas a la API de basadas en OpenAPI se realizan desde el lado del se
 
 Para actualizar el token de acceso antes de que caduque, puede implementar el flujo del token de actualización. Sin embargo, para que el tutorial sea sencillo, la aplicación web WKND-PIM no implementa el flujo del token de actualización.
 
+
+>[!TIP]
+>
+>Puede seguir la siguiente sección para probar la aplicación web WKND-PIM en su equipo local y obtener experiencia práctica con el flujo de autenticación de la aplicación web de OAuth y las llamadas a la API.
+
 ## Configuración y ejecución de la aplicación web
 
 Vamos a configurar y ejecutar la aplicación web WKND-PIM en el equipo local para comprender el flujo de autenticación de la aplicación web de OAuth y las llamadas de API.
@@ -526,7 +533,7 @@ De forma predeterminada, el proyecto de WKND Sites no tiene el esquema de metada
 
    ![Vaya a la carpeta](assets/web-app/navigate-to-folder.png)
 
-1. Cree **PIM** y, dentro de él, cree la carpeta **Camping** y luego cargue [imágenes de muestra](./assets/web-app/camping-gear-imgs.zip) en la carpeta **Camping**.
+1. Cree un **PIM** y, dentro de él, cree la carpeta **Camping**, luego cargue [imágenes de muestra](./assets/web-app/camping-gear-imgs.zip) en la carpeta **Camping**.
 
    ![Carpeta PIM](assets/web-app/pim-folder.png)
 
@@ -644,7 +651,7 @@ Con los pasos anteriores, los recursos de la carpeta **PIM** están listos para 
 
 >[!IMPORTANT]
 >
->AEM Si el usuario autenticado carece de los permisos necesarios para revisar o actualizar los metadatos de los recursos, las API de recursos basadas en OpenAPI devuelven un error 403 prohibido. AEM Esto garantiza que, incluso si el usuario está autenticado y posee un token de acceso IMS válido, no pueda acceder a los recursos sin los permisos necesarios para el acceso a los recursos de la aplicación de IMS, que son válidos para todos los usuarios.
+>AEM Si el usuario autenticado carece de los permisos necesarios para revisar o actualizar los metadatos de los recursos, las API de recursos basadas en OpenAPI devuelven un error 403 prohibido. AEM Garantiza que, aunque el usuario esté autenticado y posea un token de acceso IMS válido, no pueda acceder a los recursos sin los permisos necesarios.
 
 
 ### Revisar el código de la aplicación
