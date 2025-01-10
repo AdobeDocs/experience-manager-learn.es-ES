@@ -12,7 +12,7 @@ thumbnail: KT-16718.jpeg
 last-substantial-update: 2025-01-09T00:00:00Z
 duration: 0
 exl-id: dc35256a-3873-413f-b282-90948efd5f31
-source-git-commit: 52749190860961ed2baf4c3c3cd7a6b55a87af58
+source-git-commit: 7fe1116de7cf69b3b7ce14ac0b97906f8986546b
 workflow-type: tm+mt
 source-wordcount: '2433'
 ht-degree: 0%
@@ -37,8 +37,8 @@ La aplicación WKND PIM es una aplicación web de ejemplo diseñada para adminis
 
 El proyecto de Adobe Developer Console (ADC) está configurado para acceder a la API de autor de Assets mediante la autenticación de la aplicación web de OAuth. Proporciona los _client_id_ y _client_secret_ necesarios a la aplicación web WKND-PIM para iniciar el flujo de concesión de _authorization_code_.
 
-
 >[!VIDEO](https://video.tv.adobe.com/v/3442757?quality=12&learn=on)
+
 
 El diagrama siguiente ilustra el flujo funcional de la aplicación web WKND-PIM _que obtiene tokens de acceso específicos del usuario para interactuar con la API de autor de Assets_.
 
