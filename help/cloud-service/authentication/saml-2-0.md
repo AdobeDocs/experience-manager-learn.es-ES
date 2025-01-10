@@ -11,9 +11,9 @@ thumbnail: 343040.jpeg
 last-substantial-update: 2024-05-15T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
 duration: 2200
-source-git-commit: 87dd4873152d4690abb1efcfebd43d10033afa0a
+source-git-commit: a1f7395cc5f83174259d7a993fefc9964368b4bc
 workflow-type: tm+mt
-source-wordcount: '3919'
+source-wordcount: '4037'
 ht-degree: 1%
 
 ---
@@ -43,7 +43,7 @@ AEM El flujo típico de una integración SAML de Publish de la siguiente manera 
    + El IDP solicita credenciales al usuario.
    + El usuario ya se ha autenticado con el IDP y no tiene que proporcionar más credenciales.
 1. IDP genera una afirmación de SAML que contiene los datos del usuario y la firma utilizando el certificado privado del IDP.
-1. IDP envía la afirmación de SAML a través del POST AEM HTTP, a través del explorador web del usuario, a Publish de la.
+1. IDP envía la afirmación de SAML a través del POST AEM HTTP, a través del explorador web del usuario (RESPECTIVE_PROTECTED_PATH/saml_login), a Publish de la.
 1. AEM Publish recibe la afirmación de SAML y valida la integridad y autenticidad de la afirmación de SAML utilizando el certificado público IDP.
 1. AEM Publish AEM administra el registro de usuario de en función de la configuración OSGi de SAML 2.0 y el contenido de la afirmación de SAML.
    + Crea un usuario
@@ -402,7 +402,7 @@ Durante el proceso de autenticación de SAML, el IDP inicia un POST AEM HTTP del
 
 El encabezado `Origin` de esta solicitud del POST AEM HTTP generalmente tiene un valor diferente al del host de Publish de la, por lo que requiere la configuración de CORS.
 
-AEM Al probar la autenticación SAML en el SDK local de la (`localhost:4503`), el IDP puede establecer el encabezado `Origin` en `null`. Si es así, agregue `"null"` a la lista `alloworigin`.
+AEM Al probar la autenticación SAML en el SDK local de (`localhost:4503`), el IDP puede establecer el encabezado `Origin` en `null`. Si es así, agregue `"null"` a la lista `alloworigin`.
 
 1. Cree un archivo de configuración OSGi en su proyecto en `/ui.config/src/main/content/jcr_root/wknd-examples/osgiconfig/config.publish/com.adobe.granite.cors.impl.CORSPolicyImpl~saml.cfg.json`
    + Cambiar `/wknd-examples/` a su nombre de proyecto
@@ -439,6 +439,9 @@ Después de autenticarse correctamente en el IDP, el IDP orquestará un POST AEM
 # Allow SAML HTTP POST to ../saml_login end points
 /0190 { /type "allow" /method "POST" /url "*/saml_login" }
 ```
+
+>[!NOTE]
+>AEM AEM Cuando implemente varias configuraciones de SAML en la administración de rutas protegidas para varias rutas y puntos finales de IDP distintos, asegúrese de que el IDP publique en el punto final RESPECTIVE_PROTECTED_PATH/saml_login para seleccionar la configuración de SAML adecuada en el lado del. Si hay configuraciones de SAML duplicadas para la misma ruta protegida, la selección de la configuración de SAML se producirá aleatoriamente.
 
 Si está configurada la reescritura de URL en el servidor web Apache (`dispatcher/src/conf.d/rewrites/rewrite.rules`), asegúrese de que las solicitudes a los puntos finales `.../saml_login` no se manipulen accidentalmente.
 
@@ -561,6 +564,12 @@ Implemente la rama de Git de Cloud Manager de destino (en este ejemplo, `develop
 ## Invocación de la autenticación SAML
 
 AEM El flujo de autenticación SAML se puede invocar desde una página web del sitio de, creando vínculos especialmente diseñados o botones. AEM Los parámetros que se describen a continuación se pueden configurar mediante programación según sea necesario, por ejemplo, un botón de inicio de sesión puede establecer `saml_request_path`, que es donde se lleva al usuario tras la autenticación SAML correcta, en diferentes páginas de la, según el contexto del botón.
+
+## Almacenamiento en caché seguro mientras se usa SAML
+
+AEM En la instancia de publicación de la, la mayoría de las páginas se almacenan generalmente en caché. Sin embargo, para las rutas protegidas con SAML, el almacenamiento en caché debe deshabilitarse o el almacenamiento en caché seguro debe habilitarse mediante la configuración auth_checker. Para obtener más información, consulte los detalles proporcionados [aquí](https://experienceleague.adobe.com/es/docs/experience-manager-dispatcher/using/configuring/permissions-cache)
+
+Tenga en cuenta que si almacena en caché rutas protegidas sin habilitar el auth_checker, puede experimentar un comportamiento impredecible.
 
 ### petición de GET
 
