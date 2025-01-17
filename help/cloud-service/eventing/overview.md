@@ -12,9 +12,9 @@ last-substantial-update: 2023-12-07T00:00:00Z
 jira: KT-14649
 thumbnail: KT-14649.jpeg
 exl-id: 142ed6ae-1659-4849-80a3-50132b2f1a86
-source-git-commit: ede52c6c9feb0b35bc3729e28591cb4e7c7600f7
+source-git-commit: 99aa43460a76460175123a5bfe5138767491252b
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '860'
 ht-degree: 0%
 
 ---
@@ -125,5 +125,14 @@ AEM Para obtener más información, consulte [Procesamiento de eventos mediante 
           AEM Obtenga información sobre cómo procesar eventos de recibidos mediante la acción de Adobe I/O Runtime. AEM SPA El procesamiento de eventos incluye llamadas de retorno de eventos, persistencia de datos de eventos y mostrarlos en la interfaz de usuario de.
         </p>
       </td>
-  </tr>    
+  </tr>
+  <tr>
+    <td>
+        <a  href="./examples/assets-pim-integration.md"><img alt="Eventos de AEM Assets para la integración con PIM" src="./assets/examples/assets-pim-integration/PIM-integration-tile.png"/></a>
+        <div><strong><a href="./examples/assets-pim-integration.md">Eventos de AEM Assets para la integración de PIM</a></strong></div>
+        <p>
+          Aprenda a integrar AEM Assets y sistemas de gestión de la información de productos (PIM) para actualizar los metadatos.
+        </p>
+      </td>
+  </tr> 
 </table>
