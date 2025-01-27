@@ -11,9 +11,9 @@ thumbnail: KT-11862.png
 last-substantial-update: 2023-02-15T00:00:00Z
 exl-id: 1d1bcb18-06cd-46fc-be2a-7a3627c1e2b2
 duration: 792
-source-git-commit: 60139d8531d65225fa1aa957f6897a6688033040
+source-git-commit: d199ff3b9f4d995614c193f52dc90270f2283adf
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '792'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ AEM AEM AEM Al usar [proyecto WKND Sites](https://github.com/adobe/aem-guides-wk
 
 - AEM implementación del paquete de contenido y código de (todo, ui.apps)
 - Implementación del paquete OSGi y el archivo de configuración
-- Apache y Dispatcher configuran la implementación como archivo zip
+- Implementación de configuraciones de Apache y Dispatcher como archivo zip
 - Archivos individuales como la implementación de HTL, `.content.xml` (XML de diálogo)
 - Revisar otros comandos de RDE como `status, reset and delete`
 
@@ -40,7 +40,7 @@ AEM Clone el proyecto [WKND Sites](https://github.com/adobe/aem-guides-wknd#aem-
 $ git clone git@github.com:adobe/aem-guides-wknd.git
 ```
 
-AEM A continuación, créelo e impleméntelo en el SDK de la aplicación local de la aplicación de la plataforma de desarrollo de software (SDK) ejecutando el siguiente comando de Maven.
+AEM A continuación, créelo e impleméntelo en el local de SDK-ejecutando el siguiente comando de Maven.
 
 ```
 $ cd aem-guides-wknd/
@@ -96,7 +96,7 @@ Vamos a mejorar `Hello World Component` e implementarlo en RDE.
    ...
    ```
 
-1. AEM Compruebe los cambios en el SDK de la local realizando la compilación de Maven o sincronizando los archivos individuales.
+1. AEM Compruebe los cambios en el SDK de la local realizando la compilación de Maven o sincronizando archivos individuales.
 
 1. Implemente los cambios en RDE a través del paquete `ui.apps` o implementando los archivos individuales de Diálogo y HTL:
 
@@ -144,7 +144,7 @@ Para obtener información sobre cómo implementar el paquete OSGi, vamos a mejor
    ...
    ```
 
-1. AEM Compruebe los cambios en el SDK de local implementando el paquete `core` mediante el comando maven
+1. AEM Compruebe los cambios en la configuración local de SDK-implementando el paquete `core` mediante el comando de Maven
 1. Implemente los cambios en RDE ejecutando el siguiente comando
 
    ```shell
@@ -191,7 +191,7 @@ Los archivos de configuración de Apache o Dispatcher **no se pueden implementar
    ...
    ```
 
-1. Verifique los cambios localmente; consulte [Ejecutar Dispatcher localmente](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html#run-dispatcher-locally) para obtener más información.
+1. Verifique los cambios localmente; consulte [Ejecutar Dispatcher localmente](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools) para obtener más información.
 1. Implemente los cambios en RDE ejecutando el siguiente comando:
 
    ```shell
@@ -200,7 +200,49 @@ Los archivos de configuración de Apache o Dispatcher **no se pueden implementar
    $ aio aem:rde:install target/aem-guides-wknd.dispatcher.cloud-2.1.3-SNAPSHOT.zip
    ```
 
+1. Verifique los cambios en el RDE.
+
+### Implementación de archivos de configuración (YAML)
+
+AEM La CDN, las tareas de mantenimiento, el reenvío de registros y los archivos de configuración de autenticación de API se pueden implementar en RDE mediante el comando `install`. AEM Estas configuraciones se administran como archivos YAML en la carpeta `config` del proyecto de; consulte [Configuraciones admitidas](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline#configurations) para obtener más información.
+
+Para aprender a implementar los archivos de configuración, vamos a mejorar el archivo de configuración de `cdn` e implementarlo en RDE.
+
+1. Abrir el archivo `cdn.yaml` desde la carpeta `config`
+1. Actualice la configuración deseada, por ejemplo, actualice el límite de velocidad a 200 solicitudes por segundo
+
+   ```yaml
+   kind: "CDN"
+   version: "1"
+   metadata:
+     envTypes: ["dev", "stage", "prod"]
+   data:
+     trafficFilters:
+       rules:
+       #  Block client for 5m when it exceeds an average of 100 req/sec to origin on a time window of 10sec
+       - name: limit-origin-requests-client-ip
+         when:
+           reqProperty: tier
+           equals: 'publish'
+         rateLimit:
+           limit: 200 # updated rate limit
+           window: 10
+           count: fetches
+           penalty: 300
+           groupBy:
+             - reqProperty: clientIp
+         action: log
+   ...
+   ```
+
+1. Implemente los cambios en RDE ejecutando el siguiente comando
+
+   ```shell
+   $ aio aem:rde:install -t env-config ./config/cdn.yaml
+   ```
+
 1. Verificar los cambios en el RDE
+
 
 ## AEM Comandos adicionales del complemento RDE
 
@@ -231,8 +273,8 @@ Obtenga información acerca del [ciclo de vida de desarrollo/implementación usa
 
 ## Recursos adicionales
 
-[Documentación de comandos RDE](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html#rde-cli-commands)
+[Documentación de comandos RDE](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments)
 
 [Complemento de CLI de Adobe I/O Runtime AEM para interacciones con entornos de desarrollo rápido de](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
 
-AEM [Configuración del proyecto de](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html)
+AEM [Configuración del proyecto de](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup)
