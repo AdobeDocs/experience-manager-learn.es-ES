@@ -9,13 +9,13 @@ level: Beginner
 doc-type: Tutorial
 jira: KT-15832
 duration: 900
-source-git-commit: e8ce91b0be577ec6cf8f3ab07ba9ff09c7e7a6ab
+exl-id: 9698c17a-0ac8-426d-bccb-729b048cabd1
+source-git-commit: fcd2d7ae7a0bddb0d80aada2f206be7629b676e3
 workflow-type: tm+mt
-source-wordcount: '1566'
+source-wordcount: '1705'
 ht-degree: 0%
 
 ---
-
 
 # Crear un bloque nuevo
 
@@ -136,6 +136,12 @@ El teaser consta de dos áreas lógicas: imagen y texto. Para simplificar el có
 - Agrupe los campos de contenido de texto mediante [agrupación de elementos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping) y [contracción de campos para CTA](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse).
 
 Si no está familiarizado con la [contracción de campos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse), la [agrupación de elementos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping) o la [inferencia de tipos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference), revise la documentación vinculada antes de continuar, ya que son esenciales para crear un modelo de bloques bien estructurado.
+
+En el siguiente ejemplo:
+
+- [Inferencia de tipo](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference) se usa para crear automáticamente un elemento HTML `<img>` a partir del campo `image`. La contracción de campos se utiliza con los campos `image` y `imageAlt` para crear un elemento HTML `<img>`. El atributo `src` se establece en el valor del campo `image`, mientras que el atributo `alt` se establece en el valor del campo `imageAlt`.
+- `textContent` es un nombre de grupo que se usa para categorizar campos. Debería ser semántico, pero puede ser cualquier cosa exclusiva de este bloque. Esto indica al editor universal que procese todos los campos con este prefijo dentro del mismo elemento `<div>` en la salida final del HTML.
+- El colapso de campos también se aplica dentro del grupo `textContent` para la llamada a la acción (CTA). El CTA se creó como `<a>` mediante [inferencia de tipo](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference). El campo `cta` se usa para establecer el atributo `href` del elemento `<a>`, y el campo `ctaText` proporciona el contenido de texto para el vínculo dentro de las etiquetas `<a ...>`.
 
 [!BADGE /blocks/teaser/_teaser.json]{type=Neutral tooltip="Nombre de archivo del ejemplo de código siguiente."}
 
