@@ -9,9 +9,10 @@ level: Beginner
 doc-type: Tutorial
 jira: KT-15832
 duration: 500
-source-git-commit: e8ce91b0be577ec6cf8f3ab07ba9ff09c7e7a6ab
+exl-id: d1ebcaf4-cea6-4820-8b05-3a0c71749d33
+source-git-commit: 567d2803c5cee274104b38f847820f7665320195
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -43,3 +44,4 @@ AEM Después de crear el sitio en el autor de la, publíquelo en la vista previa
 3. Elija **Vista previa** en **Destinos** y haga clic en **Siguiente**.
 4. En **Incluir configuración secundaria**, seleccione **Incluir elementos secundarios**, deseleccione otras opciones y haga clic en **Aceptar**.
 5. Haga clic en **Publish** para publicar el contenido del sitio y previsualizarlo.
+6. Una vez publicadas para previsualizarlas, las páginas estarán disponibles en el entorno de vista previa de los Edge Delivery Services AEM (las páginas no aparecerán en el servicio de vista previa de las páginas).
