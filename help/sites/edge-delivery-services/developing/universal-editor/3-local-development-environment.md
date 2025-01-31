@@ -10,7 +10,7 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 700
 exl-id: 187c305a-eb86-4229-9896-a74f5d9d822e
-source-git-commit: 6f0cbdd638ed909b5897521557b65dcf74ac1012
+source-git-commit: ecf37e1f964d0cda90eeca11b224ab950727d2ad
 workflow-type: tm+mt
 source-wordcount: '967'
 ht-degree: 1%
@@ -187,8 +187,8 @@ AEM Estos scripts no vienen preconfigurados con la plantilla XWalk de plantillas
 
 | Script NPM | Comando | Descripción |
 |------------------|------------------------------------------------|-------------------------------------------------------|
-| `lint:js:fix` | `npm run lint:js --fix` | Corrige automáticamente los problemas de vinculación de JavaScript. |
-| `lint:css:fix` | `stylelint blocks/**/*.css styles/*.css --fix` | Corrige automáticamente los problemas de vinculación de CSS. |
+| `lint:js:fix` | `npm run lint:js -- --fix` | Corrige automáticamente los problemas de vinculación de JavaScript. |
+| `lint:css:fix` | `stylelint blocks/**/*.css styles/*.css -- --fix` | Corrige automáticamente los problemas de vinculación de CSS. |
 | `lint:fix` | `npm run lint:js:fix && npm run lint:css:fix` | Ejecuta scripts de corrección de JS y CSS para realizar una limpieza rápida. |
 
 >[!TAB ejemplo de package.json]
@@ -200,8 +200,8 @@ Las siguientes entradas de script se pueden agregar a la matriz `package.json` `
   ...
   "scripts": [
     ...,
-    "lint:js:fix": "npm run lint:js --fix",
-    "lint:css:fix": "npm run lint:css --fix",
+    "lint:js:fix": "npm run lint:js -- --fix",
+    "lint:css:fix": "npm run lint:css -- --fix",
     "lint:fix": "npm run lint:js:fix && npm run lint:css:fix",
     ...
   ]
