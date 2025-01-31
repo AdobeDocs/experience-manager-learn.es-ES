@@ -9,13 +9,13 @@ level: Beginner
 doc-type: Tutorial
 jira: KT-15832
 duration: 700
-source-git-commit: e8ce91b0be577ec6cf8f3ab07ba9ff09c7e7a6ab
+exl-id: 187c305a-eb86-4229-9896-a74f5d9d822e
+source-git-commit: 6f0cbdd638ed909b5897521557b65dcf74ac1012
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '967'
 ht-degree: 1%
 
 ---
-
 
 # Configuración de un entorno de desarrollo local
 
@@ -65,7 +65,7 @@ Antes de iniciar el desarrollo, instale lo siguiente en su equipo:
 
 ## Clone el repositorio de GitHub
 
-AEM Clone el [repositorio de GitHub](./1-new-code-project.md) que contiene el proyecto de código de Edge Delivery Services de la en su entorno de desarrollo local.
+AEM Clone el [repositorio de GitHub creado en el nuevo capítulo del proyecto de código](./1-new-code-project.md) que contiene el proyecto de código para Edge Delivery Services de la aplicación de la en su entorno de desarrollo local.
 
 ![Clon del repositorio de GitHub](./assets/3-local-development-environment/github-clone.png)
 
@@ -120,6 +120,8 @@ info: Enabled reverse proxy to https://main--aem-wknd-eds-ue--<YOUR_ORG>.aem.pag
 ```
 
 AEM La CLI de la abre el sitio web en el explorador en `http://localhost:3000/`. Los cambios en el proyecto se vuelven a cargar automáticamente en el explorador web, mientras que los cambios de contenido [requieren la publicación en el entorno de vista previa](./6-author-block.md) y la actualización del explorador web.
+
+Si el sitio web se abre con una página 404, es probable que [fstab.yaml o paths.json](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started#create-github-project) actualizados en [nuevo proyecto de código](./1-new-code-project.md) estén configurados incorrectamente, o que los cambios no se hayan confirmado en la rama `main`.
 
 ## Generar fragmentos de JSON
 
@@ -208,4 +210,3 @@ Las siguientes entradas de script se pueden agregar a la matriz `package.json` `
 ```
 
 >[!ENDTABS]
-
