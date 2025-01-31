@@ -10,9 +10,9 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 500
 exl-id: d1ebcaf4-cea6-4820-8b05-3a0c71749d33
-source-git-commit: 567d2803c5cee274104b38f847820f7665320195
+source-git-commit: b40bf5afc28cb350c470336e38f8ca127fb05d79
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '302'
 ht-degree: 0%
 
 ---
@@ -25,15 +25,15 @@ AEM El sitio de la es donde se almacena y crea el contenido del sitio web. AEM L
 
 AEM ![Nuevo sitio para Edge Delivery Services y editor universal](./assets/2-new-aem-site/new-site.png) de la lista de distribución de contenido
 
-AEM Siga los pasos a continuación para crear un nuevo sitio de:
-
+AEM Siga los [pasos detallados descritos en la documentación](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started#create-aem-site) para crear un nuevo sitio de la lista de distribución de contenido  A continuación se muestra una lista resumida de los pasos, incluidos los valores utilizados en este tutorial.
 1. AEM **Crear un nuevo sitio** en el autor de la. Este tutorial utiliza el siguiente nombre de sitio:
    * Título del sitio: `WKND (Universal Editor)`
    * Nombre del sitio: `aem-wknd-eds-ue`
+
+      * El valor del nombre de sitio debe coincidir con el nombre de ruta de sitio [agregado a `paths.json`](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/path-mapping).
+
 2. **Importe la plantilla más reciente** de los [Edge Delivery Services AEM con la plantilla del sitio de creación de la plantilla de creación de la aplicación](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
 3. **Asigne un nombre al sitio** que coincida con el nombre del repositorio de GitHub y establezca la dirección URL de GitHub como dirección URL del repositorio.
-
-AEM Para obtener instrucciones detalladas, consulte [crear y editar una nueva sección de sitio de la lista de distribución de contenido](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started#create-aem-site) en la guía de introducción a la creación de sitios de la lista de distribución de contenido.
 
 ## Publish el nuevo sitio para previsualizar
 
