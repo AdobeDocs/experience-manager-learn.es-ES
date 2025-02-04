@@ -13,7 +13,7 @@ duration: 315
 source-git-commit: d5745a17af6b72b1871925dd7c50cbbb152012fe
 workflow-type: tm+mt
 source-wordcount: '204'
-ht-degree: 73%
+ht-degree: 74%
 
 ---
 
@@ -23,8 +23,8 @@ ht-degree: 73%
 >id="aemcloud_adobeims_aem_users_groups"
 >title="Usuarios, grupos y permisos de AEM"
 >abstract="Adobe Experience Manager se basa en los usuarios, los grupos de usuarios y los perfiles de productos de Adobe IMS para proporcionar a los usuarios un acceso personalizable a AEM. Obtenga información sobre cómo definir los grupos y permisos de AEM y cómo funcionan de forma combinada con las abstracciones de Adobe IMS para proporcionar un acceso fácil y personalizable a AEM."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=en" text="Compatibilidad con IMS para Adobe Experience Manager as a Cloud Service"
->additional-url="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/identity.html" text="Grupos de usuarios proporcionados por AEM y sus permisos"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=es" text="Compatibilidad con IMS para Adobe Experience Manager as a Cloud Service"
+>additional-url="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/identity.html?lang=es" text="Grupos de usuarios proporcionados por AEM y sus permisos"
 
 Adobe Experience Manager se basa en los usuarios, los grupos de usuarios y los perfiles de productos de Adobe IMS para proporcionar a los usuarios un acceso personalizable a AEM. AEM AEM AEM Obtenga información sobre cómo definir grupos de usuarios y permisos que se basen en [proporcionados por los grupos de usuarios](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/security#built-in-users-and-groups), y cómo funcionan de manera conjunta con las abstracciones de Adobe IMS para proporcionar acceso fácil y personalizable a los grupos de usuarios que se encuentran en la lista de usuarios de la red de distribución de contenido ().
 
