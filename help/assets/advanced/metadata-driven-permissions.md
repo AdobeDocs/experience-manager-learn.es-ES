@@ -11,22 +11,22 @@ doc-type: Tutorial
 last-substantial-update: 2024-05-03T00:00:00Z
 exl-id: 57478aa1-c9ab-467c-9de0-54807ae21fb1
 duration: 158
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 6e08e6830c4e2ab27e813d262f4f51c6aae2909b
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '770'
 ht-degree: 0%
 
 ---
 
 # Permisos impulsados por metadatos{#metadata-driven-permissions}
 
-Permisos impulsados por metadatos es una función que se utiliza para permitir que las decisiones de control de acceso en AEM Assets Author se basen en propiedades de metadatos de recursos en lugar de en la estructura de carpetas. Con esta capacidad, puede definir políticas de control de acceso que evalúen atributos como el estado del recurso, el tipo o cualquier propiedad de metadatos personalizada que defina.
+Permisos impulsados por metadatos es una función que se utiliza para permitir que las decisiones de control de acceso de los AEM Assets Autor se basen en el contenido del recurso o en las propiedades de los metadatos, en lugar de en la estructura de carpetas. Con esta capacidad, puede definir políticas de control de acceso que evalúen atributos como el estado del recurso, el tipo o cualquier propiedad personalizada que defina.
 
-Veamos un ejemplo... Los creativos cargan su trabajo en AEM Assets en la carpeta relacionada con la campaña, podría ser un recurso de trabajo en curso que no se haya aprobado para su uso. Queremos asegurarnos de que los especialistas en marketing solo vean los activos aprobados para esta campaña. Podemos utilizar la propiedad de metadatos para indicar que un recurso se ha aprobado y que los especialistas en marketing pueden utilizarlo.
+Veamos un ejemplo... Los creativos cargan su trabajo en los AEM Assets de la carpeta relacionada con la campaña; puede que sea un recurso de trabajo en curso que no se haya aprobado para su uso. Queremos asegurarnos de que los especialistas en marketing solo vean los activos aprobados para esta campaña. Podemos utilizar una propiedad de metadatos para indicar que un recurso se ha aprobado y que los especialistas en marketing pueden utilizarlo.
 
 ## Cómo funciona
 
-La activación de permisos impulsados por metadatos implica la definición de qué propiedades de metadatos de recurso generarán restricciones de acceso, como &quot;estado&quot; o &quot;marca&quot;. Estas propiedades se pueden utilizar para crear entradas de control de acceso que especifiquen qué grupos de usuarios tienen acceso a recursos con valores de propiedad específicos.
+La activación de permisos impulsados por metadatos implica la definición de qué contenido de recurso o propiedades de metadatos impulsarán las restricciones de acceso, como &quot;estado&quot; o &quot;marca&quot;. Estas propiedades se pueden utilizar para crear entradas de control de acceso que especifiquen qué grupos de usuarios tienen acceso a recursos con valores de propiedad específicos.
 
 ## Requisitos previos
 
@@ -34,9 +34,9 @@ Se requiere acceso a un entorno de AEM as a Cloud Service actualizado a la versi
 
 ## Configuración de OSGi {#configure-permissionable-properties}
 
-Para implementar Permisos impulsados por metadatos, un desarrollador debe implementar una configuración OSGi en AEM as a Cloud Service que permita propiedades de metadatos de recursos específicas para habilitar permisos impulsados por metadatos.
+Para implementar Permisos impulsados por metadatos, un desarrollador debe implementar una configuración OSGi en AEM as a Cloud Service que permita contenido de recursos específico o propiedades de metadatos para habilitar permisos impulsados por metadatos.
 
-1. Determine qué propiedades de metadatos de recurso se utilizarán para el control de acceso. Los nombres de propiedad son los nombres de propiedad JCR en el recurso `jcr:content/metadata` del recurso. En nuestro caso, será una propiedad llamada `status`.
+1. Determine qué propiedades de metadatos o contenido de recursos se utilizarán para el control de acceso. Los nombres de propiedad son los nombres de propiedad JCR en el recurso `jcr:content` o `jcr:content/metadata` del recurso. En nuestro caso, será una propiedad llamada `status`.
 1. AEM Cree una configuración de OSGi `com.adobe.cq.dam.assetmetadatarestrictionprovider.impl.DefaultRestrictionProviderConfiguration.cfg.json` en su proyecto de Maven de.
 1. Pegue el siguiente JSON en el archivo creado:
 
@@ -46,11 +46,12 @@ Para implementar Permisos impulsados por metadatos, un desarrollador debe implem
        "status",
        "brand"
      ],
+     "restrictionContentPropertyNames":[],
      "enabled":true
    }
    ```
 
-1. Reemplace los nombres de propiedad por los valores necesarios.
+1. Reemplace los nombres de propiedad por los valores necesarios.  La propiedad de configuración `restrictionContentPropertyNames` se usa para habilitar permisos en las propiedades de recursos `jcr:content`, mientras que la propiedad de configuración `restrictionPropertyNames` habilita permisos en las propiedades de recursos `jcr:content/metadata` para los recursos.
 
 ## Restablecer permisos de recursos base
 
@@ -90,7 +91,7 @@ La carpeta de ejemplo contiene un par de recursos.
 
 ![Vista de administrador](./assets/metadata-driven-permissions/admin-view.png)
 
-Una vez configurados los permisos y establecidas las propiedades de los metadatos del recurso según corresponda, los usuarios (usuario de marketing en nuestro caso) solo verán el recurso aprobado.
+Una vez configurados los permisos y establecidas las propiedades de los metadatos del recurso en consecuencia, los usuarios (usuario de marketing en nuestro caso) solo verán el recurso aprobado.
 
 ![Vista de experto en marketing](./assets/metadata-driven-permissions/marketeer-view.png)
 
@@ -100,13 +101,13 @@ Los beneficios de los permisos impulsados por metadatos incluyen:
 
 - Control preciso del acceso a los recursos en función de atributos específicos.
 - Desvinculación de las políticas de control de acceso de la estructura de carpetas, lo que permite una organización de recursos más flexible.
-- Capacidad para definir reglas de control de acceso complejas basadas en varias propiedades de metadatos.
+- Capacidad para definir reglas de control de acceso complejas basadas en múltiples propiedades de contenido o metadatos.
 
 >[!NOTE]
 >
 > Es importante tener en cuenta lo siguiente:
 > 
-> - Las propiedades de metadatos se evalúan en función de las restricciones que utilizan __igualdad de cadena__ (`=`) (no se admiten otros tipos de datos u operadores, para propiedades de fecha o superiores a (`>`))
+> - Las propiedades se evalúan teniendo en cuenta las restricciones con __igualdad de cadena__ (`=`) (otros tipos de datos u operadores aún no son compatibles, para propiedades de mayor que (`>`) o fecha)
 > - Para permitir varios valores para una propiedad de restricción, se pueden agregar restricciones adicionales a la Entrada de control de acceso seleccionando la misma propiedad en la lista desplegable &quot;Seleccionar tipo&quot; e introduciendo un nuevo valor de restricción (por ejemplo, `status=approved`, `status=wip`) y haciendo clic en &quot;+&quot; para agregar la restricción a la entrada
 > ![Permitir varios valores](./assets/metadata-driven-permissions/allow-multiple-values.png)
 > - Se admiten __restricciones AND__ mediante varias restricciones en una sola entrada de control de acceso con nombres de propiedad diferentes (por ejemplo, `status=approved`, `brand=Adobe`) que se evaluará como una condición AND; es decir, se concederá acceso de lectura al grupo de usuarios seleccionado a los recursos con `status=approved AND brand=Adobe`
