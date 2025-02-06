@@ -12,9 +12,9 @@ last-substantial-update: 2024-02-13T00:00:00Z
 jira: KT-14901
 thumbnail: KT-14901.jpeg
 exl-id: 070cbe54-2379-448b-bb7d-3756a60b65f0
-source-git-commit: 99aa43460a76460175123a5bfe5138767491252b
+source-git-commit: 2b5f7a033921270113eb7f41df33444c4f3d7723
 workflow-type: tm+mt
-source-wordcount: '1489'
+source-wordcount: '1517'
 ht-degree: 0%
 
 ---
@@ -38,8 +38,8 @@ El flujo de alto nivel de la integración es el siguiente:
 ![Eventos de AEM Assets para la integración de PIM](../assets/examples/assets-pim-integration/aem-assets-pim-integration.png)
 
 1. AEM El servicio de creación de recursos de déclencheur un evento _Procesamiento de recursos completado_ cuando se completa la carga de un recurso y también se completan todas las actividades de procesamiento de recursos. Esperar a que se complete el procesamiento de recursos garantiza que se haya completado cualquier procesamiento predeterminado, como la extracción de metadatos.
-1. El evento se enviará al servicio [Eventos de Adobe I/O](https://developer.adobe.com/events/).
-1. El servicio Eventos de Adobe I/O pasa el evento a [Adobe I/O Runtime Action](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/) para su procesamiento.
+1. El evento se enviará al servicio [Adobe I/O Events](https://developer.adobe.com/events/).
+1. El servicio Adobe I/O Events pasa el evento a [Adobe I/O Runtime Action](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/) para su procesamiento.
 1. La acción de Adobe I/O Runtime llama a la API del sistema PIM para recuperar metadatos adicionales, como el SKU, la información del proveedor u otros detalles.
 1. Los metadatos adicionales recuperados del PIM se actualizan en los AEM Assets mediante la [API de autor de Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/) basada en OpenAPI.
 
@@ -126,6 +126,11 @@ AEM Se realiza definiendo la configuración en el archivo `config.yaml` en el pr
   ```
 
   Reemplace `<ADC Project's OAuth Server-to-Server credential ClientID>` por el ClientID real de la credencial de servidor a servidor OAuth del proyecto ADC.
+
+  >[!CAUTION]
+  >
+  > Para fines de demostración, se utiliza el mismo ClientID para todos los entornos. Se recomienda utilizar ClientID independiente por entorno (dev, stage, prod) para mejorar la seguridad y el control.
+
 
 - Confirme los cambios de configuración en el repositorio de Git e inserte los cambios en el repositorio remoto.
 

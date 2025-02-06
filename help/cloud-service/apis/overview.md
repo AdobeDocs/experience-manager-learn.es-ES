@@ -12,7 +12,7 @@ thumbnail: KT-16515.jpeg
 last-substantial-update: 2024-11-20T00:00:00Z
 duration: 0
 exl-id: 23b2be0d-a8d4-4521-96ba-78b70f4e9cba
-source-git-commit: d5745a17af6b72b1871925dd7c50cbbb152012fe
+source-git-commit: 2b5f7a033921270113eb7f41df33444c4f3d7723
 workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 2%
@@ -75,7 +75,7 @@ AEM Veamos con más detalle las API de API de basadas en OpenAPI y los conceptos
 
 AEM En futuras versiones, se añadirán más API de API de basadas en OpenAPI para admitir casos de uso adicionales.
 
-## Compatibilidad con autenticación{#authentication-support}
+### Compatibilidad con autenticación{#authentication-support}
 
 AEM Las API de basadas en OpenAPI admiten los siguientes métodos de autenticación:
 
@@ -95,7 +95,7 @@ AEM Las API de basadas en OpenAPI admiten los siguientes métodos de autenticaci
 | Consideraciones de seguridad | Almacene de forma segura credenciales confidenciales (`client_id`, `client_secret`) en sistemas back-end. | Los usuarios se autentican y obtienen su propio token de acceso temporal. Almacene de forma segura credenciales confidenciales (`client_id`, `client_secret`) en sistemas back-end. |
 | Tipo de concesión | _client_credentials_ | _código de autorización_ |
 
-## Acceso a las API de Adobe y conceptos relacionados{#accessing-adobe-apis-and-related-concepts}
+### Acceso a las API de Adobe y conceptos relacionados{#accessing-adobe-apis-and-related-concepts}
 
 Antes de acceder a las API de Adobe, es esencial comprender estos conceptos clave:
 

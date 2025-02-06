@@ -11,9 +11,9 @@ duration: 0
 last-substantial-update: 2025-02-05T00:00:00Z
 jira: KT-15739
 thumbnail: KT-15739.jpeg
-source-git-commit: f3e1bef93e53de19cf917a915c0fb836f7d3c194
+source-git-commit: 2b5f7a033921270113eb7f41df33444c4f3d7723
 workflow-type: tm+mt
-source-wordcount: '954'
+source-wordcount: '962'
 ht-degree: 0%
 
 ---
@@ -236,10 +236,13 @@ Una vez implementada correctamente, las redirecciones URL están activas y el eq
 
 Probemos las redirecciones de URL usando el explorador o el comando `curl`. Acceda a la dirección URL `/ski/westcoast` y verifique que redirige a `/us/en/adventures/tahoe-skiing.html`.
 
-
 ## Resumen
 
 En este tutorial, ha aprendido a administrar las redirecciones URL mediante configuraciones sin canalización en el entorno de AEM as a Cloud Service.
 
 El equipo de marketing puede administrar las redirecciones URL como pares clave-valor en un archivo de texto y cargarlas en DAM o utilizar ACS Commons - Gestor de mapas de redireccionamiento o Gestor de redireccionamiento. Las configuraciones de Dispatcher se actualizan para cargar las redirecciones URL como un RewriteMap y aplicarlas a las solicitudes entrantes.
 
+## Recursos adicionales
+
+- [Redirecciones de URL sin canalización](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects)
+- [Redirecciones de URL](url-redirection.md)
