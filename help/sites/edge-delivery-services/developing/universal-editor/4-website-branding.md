@@ -10,9 +10,9 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 900
 exl-id: a5cd9906-7e7a-43dd-a6b2-e80f67d37992
-source-git-commit: ceb82c48af10191cece72fe5f53dd79287f805d0
+source-git-commit: ecd3ce33204fa6f3f2c27ebf36e20ec26e429981
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1315'
 ht-degree: 0%
 
 ---
@@ -292,6 +292,8 @@ Por último, actualice las variables CSS `styles/styles.css` para que utilicen l
 Las fuentes web suelen afectar al rendimiento debido a su tamaño, lo que aumenta potencialmente las puntuaciones del desplazamiento acumulativo de diseño (CLS) y reduce las puntuaciones generales de Lighthouse. Para garantizar la visualización instantánea del texto mientras se cargan las fuentes web, los proyectos de Edge Delivery Services utilizan fuentes de reserva nativas del explorador. Este método ayuda a mantener una experiencia de usuario suave mientras se aplica la fuente deseada.
 
 Para seleccionar la mejor fuente de reserva, use la [extensión Helix Font Fallback Chrome](https://www.aem.live/developer/font-fallback) de Adobe, que determina una fuente muy parecida para que los navegadores la usen antes de que se cargue la fuente personalizada. Las declaraciones de fuentes de reserva resultantes deben agregarse al archivo `styles/styles.css` para mejorar el rendimiento y garantizar una experiencia perfecta para los usuarios.
+
+![Extensión de Chrome de reserva de fuente Helix](./assets/4-website-branding/font-fallback-chrome-plugin.png){align=center}
 
 Para usar la extensión [Helix Font Fallback Chrome](https://www.aem.live/developer/font-fallback), asegúrate de que la página web tenga fuentes web aplicadas en las mismas variaciones usadas en el sitio web de los Edge Delivery Services. Este tutorial muestra la extensión en [wknd.site](http://wknd.site/us/en.html). Al desarrollar un sitio web, aplique la extensión al sitio en el que se está trabajando en lugar de a [wknd.site](http://wknd.site/us/en.html).
 
