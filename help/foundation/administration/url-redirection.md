@@ -12,9 +12,9 @@ index: y
 doc-type: Article
 exl-id: 8e64f251-e5fd-4add-880e-9d54f8e501a6
 duration: 164
-source-git-commit: 2b5f7a033921270113eb7f41df33444c4f3d7723
+source-git-commit: 515c4020e1c358b5ee044a81affc8d7e1e4ff4eb
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '949'
 ht-degree: 0%
 
 ---
@@ -76,14 +76,13 @@ AEM Hay dos características disponibles en [ACS Commons](https://adobe-consulti
 
 #### Administrador de redireccionamiento de mapas
 
-AEM [El Administrador de mapas de redireccionamiento](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) ayuda a los administradores a mantener y publicar fácilmente los archivos de [Apache RewriteMap](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html) sin tener que acceder directamente al servidor web Apache ni requerir el reinicio de este. AEM AEM Esta función permite a los usuarios de permisos crear, actualizar y eliminar reglas de redireccionamiento de una consola en, sin la ayuda del equipo de desarrollo ni de una implementación de la aplicación. El administrador de mapas de redireccionamiento es compatible con **AEM as a Cloud Service AEM** (consulte la estrategia de [redireccionamientos de URL sin canalizaciones](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) y el [tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/url-redirects-using-pipeline-free-configurations#acs-commons---redirect-map-manager) relacionado) y con **6.x**.
+AEM [El Administrador de mapas de redireccionamiento](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) ayuda a los administradores a mantener y publicar fácilmente los archivos de [Apache RewriteMap](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html) sin tener que acceder directamente al servidor web Apache ni requerir el reinicio de este. AEM AEM Esta función permite a los usuarios de permisos crear, actualizar y eliminar reglas de redireccionamiento de una consola en, sin la ayuda del equipo de desarrollo ni de una implementación de la aplicación. El administrador de mapas de redireccionamiento es compatible con **AEM as a Cloud Service AEM** (consulte la estrategia [Redirecciones de URL sin canalizaciones](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects)) y con **.x**.
 
 #### Administrador de redireccionamiento
 
 AEM AEM [Administrador de redireccionamiento](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/index.html) permite a los usuarios de la aplicación mantener y publicar fácilmente redirecciones desde los puntos de vista de los usuarios de la aplicación de redireccionamiento de la manera más sencilla La implementación se basa en el filtro de servlet Java™, por lo que el consumo de recursos de JVM es típico. AEM AEM Esta función también elimina la dependencia del equipo de desarrollo de la y de las implementaciones de la misma. El Administrador de redireccionamiento es compatible con **AEM as a Cloud Service AEM** y **6.x**. AEM Mientras que la solicitud de redirección inicial debe acceder al servicio de Publish de la para generar la caché 301/302 (la mayoría) de los CDN 301/302 de forma predeterminada, lo que permite que las solicitudes posteriores se redirijan al perímetro/CDN.
 
-[Redirect Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/index.html) también admite la estrategia [Redirecciones de URL sin canalizaciones](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) para **AEM as a Cloud Service** al [compilar las redirecciones en un archivo de texto](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/subpages/rewritemap.html) para [Apache RewriteMap](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html), de modo que permite actualizar las redirecciones usadas en el servidor web Apache sin tener que acceder directamente a él ni reiniciar. Consulte el [tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/url-redirects-using-pipeline-free-configurations#acs-commons---redirect-manager) para obtener más información.
-AEM En esta situación, la solicitud de redirección inicial afecta al servidor web Apache y no al servicio de Publish de la.
+[Redirect Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/index.html) también admite la estrategia [Redirecciones de URL sin canalizaciones](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) para **AEM as a Cloud Service** al [compilar las redirecciones en un archivo de texto](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/subpages/rewritemap.html) para [Apache RewriteMap](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html), de modo que permite actualizar las redirecciones usadas en el servidor web Apache sin tener que acceder directamente a él ni reiniciar. AEM En esta situación, la solicitud de redirección inicial afecta al servidor web Apache y no al servicio de Publish de la.
 
 ### La propiedad de página `Redirect`
 
