@@ -10,7 +10,7 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 900
 exl-id: 14cda9d4-752b-4425-a469-8b6f283ce1db
-source-git-commit: ecd3ce33204fa6f3f2c27ebf36e20ec26e429981
+source-git-commit: 2722a4d4a34172e2f418f571f9de3872872e682a
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Desarrollo de un bloque con CSS
 
-Los bloques de los Edge Delivery Services tienen un estilo CSS. El archivo CSS de un bloque se almacena en el directorio del bloque y tiene el mismo nombre que el bloque. Por ejemplo, el archivo CSS de un bloque denominado `teaser` se encuentra en `blocks/teaser/teaser.css`.
+Los bloques de Edge Delivery Services están diseñados con CSS. El archivo CSS de un bloque se almacena en el directorio del bloque y tiene el mismo nombre que el bloque. Por ejemplo, el archivo CSS de un bloque denominado `teaser` se encuentra en `blocks/teaser/teaser.css`.
 
 Lo ideal es que un bloque solo necesite CSS para el estilo, sin depender de JavaScript para modificar el DOM o agregar clases CSS. La necesidad de JavaScript depende del [modelado de contenido](./5-new-block.md#block-model) del bloque y de su complejidad. Si es necesario, se puede agregar [bloquear JavaScript](./7b-block-js-css.md).
 
@@ -27,7 +27,7 @@ Con un enfoque solo CSS, los elementos semánticos HTML (en su mayoría) vacíos
 
 ## Bloquear HTML
 
-Para comprender cómo aplicar estilo a un bloque, primero revise el DOM expuesto por los Edge Delivery Services, ya que es lo que está disponible para aplicar estilo. AEM El DOM se puede encontrar inspeccionando el bloque servido por el entorno de desarrollo local de la CLI de la. Evite utilizar el DOM del editor universal, ya que difiere ligeramente.
+Para comprender cómo aplicar estilo a un bloque, primero revise el DOM expuesto por Edge Delivery Services, ya que es lo que está disponible para el estilo. El DOM se puede encontrar inspeccionando el bloque servido por el entorno de desarrollo local de la CLI de AEM. Evite utilizar el DOM del editor universal, ya que difiere ligeramente.
 
 >[!BEGINTABS]
 
@@ -75,7 +75,7 @@ Observe `<p class="button-container">...`, que se [aumenta automáticamente](./4
 
 Para buscar el DOM al que aplicar estilo, abra la página con el bloque sin estilo en el entorno de desarrollo local, seleccione el bloque e inspeccione el DOM.
 
-![Inspect bloquea DOM](./assets/7a-block-css/inspect-block-dom.png)
+![Inspeccionar DOM de bloque](./assets/7a-block-css/inspect-block-dom.png)
 
 >[!ENDTABS]
 
@@ -83,7 +83,7 @@ Para buscar el DOM al que aplicar estilo, abra la página con el bloque sin esti
 
 Cree un nuevo archivo CSS en la carpeta del bloque, utilizando el nombre del bloque como nombre de archivo. Por ejemplo, para el bloque **teaser**, el archivo se encuentra en `/blocks/teaser/teaser.css`.
 
-Este archivo CSS se carga automáticamente cuando Edge Delivery Services JavaScript detecta un elemento DOM en la página que representa un bloque de teaser.
+Este archivo CSS se carga automáticamente cuando JavaScript de Edge Delivery Services detecta un elemento DOM en la página que representa un bloque de teaser.
 
 [!BADGE /blocks/teaser/teaser.css]{type=Neutral tooltip="Nombre de archivo del ejemplo de código siguiente."}
 
@@ -99,15 +99,16 @@ Este archivo CSS se carga automáticamente cuando Edge Delivery Services JavaScr
     left: 50%; 
     transform: translateX(-50%);
     height: 500px;
+    overflow: hidden; 
 
     /* The image is rendered to the first div in the block */
-    & picture {
+    picture {
         position: absolute;
         z-index: -1;
         inset: 0;
         box-sizing: border-box;
 
-        & img {
+        img {
             object-fit: cover;
             object-position: center;
             width: 100%;
@@ -143,53 +144,52 @@ Este archivo CSS se carga automáticamente cuando Edge Delivery Services JavaScr
         **/
 
         /* Regardless of the authored heading level, we only want one style the heading */
-        & h1,
-        & h2,
-        & h3,
-        & h4,
-        & h5,
-        & h6 {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
             font-size: var(--heading-font-size-xl);
             margin: 0;
         }
 
-        & h1::after,
-        & h2::after,
-        & h3::after,
-        & h4::after,
-        & h5::after,
-        & h6::after {
+        h1::after,
+        h2::after,
+        h3::after,
+        h4::after,
+        h5::after,
+        h6::after {
             border-bottom: 0;
         }
 
-        & p {
+        p {
             font-size: var(--body-font-size-s);
             margin-bottom: 1rem;
         }
 
         /* Add underlines to links in the text */
-        & a:hover {
+        a:hover {
             text-decoration: underline;
         }
 
         /* Add specific spacing to buttons. These button CSS classes are automatically added by Edge Delivery Services. */
-        & .button-container {
+        .button-container {
             margin: 0;
             padding: 0;
-        }
 
-        & .button {
-            background-color: var(--primary-color);
-            border-radius: 0;
-            color: var(--dark-color);
-            font-size: var(--body-font-size-xs);
-            font-weight: bold;
-            padding: 1em 2.5em;
-            margin: 0;
-            text-transform: uppercase;
+            .button {
+                background-color: var(--primary-color);
+                border-radius: 0;
+                color: var(--dark-color);
+                font-size: var(--body-font-size-xs);
+                font-weight: bold;
+                padding: 1em 2.5em;
+                margin: 0;
+                text-transform: uppercase;
+            }
         }
     }
-
 }
 
 /** Animations 
@@ -211,7 +211,7 @@ Este archivo CSS se carga automáticamente cuando Edge Delivery Services JavaScr
 
 ## Previsualización de desarrollo
 
-AEM A medida que el CSS se escribe en el proyecto de código, la recarga en caliente de la CLI es la que realiza los cambios, lo que facilita y agiliza la comprensión de cómo el CSS afecta al bloque.
+A medida que el CSS se escribe en el proyecto de código, la recarga en caliente de la CLI de AEM es la que realiza los cambios, lo que facilita y agiliza la comprensión de cómo el CSS afecta al bloque.
 
 ![Vista previa solo de CSS](./assets/7a-block-css/local-development-preview.png)
 
@@ -227,7 +227,7 @@ $ npm run lint:css
 
 ## Vista previa en el editor universal
 
-AEM Para ver los cambios en el Editor universal de Git de la aplicación, agregue, confirme e inserte los cambios en la rama del repositorio de Git utilizada por el Editor universal. Este paso ayuda a garantizar que la implementación de bloques no interrumpa la experiencia de creación.
+Para ver los cambios en el editor universal de AEM, añádalos, confírmelos y envíelos a la rama del repositorio de Git utilizada por el editor universal. Este paso ayuda a garantizar que la implementación de bloques no interrumpa la experiencia de creación.
 
 ```bash
 # ~/Code/aem-wknd-eds-ue

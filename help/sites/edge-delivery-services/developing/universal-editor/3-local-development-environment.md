@@ -10,22 +10,22 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 700
 exl-id: 187c305a-eb86-4229-9896-a74f5d9d822e
-source-git-commit: 66bc4cb6f992c64b1a7e32310ce3e26515f3d380
+source-git-commit: 2722a4d4a34172e2f418f571f9de3872872e682a
 workflow-type: tm+mt
-source-wordcount: '973'
+source-wordcount: '994'
 ht-degree: 1%
 
 ---
 
 # Configuración de un entorno de desarrollo local
 
-Un entorno de desarrollo local es esencial para el desarrollo rápido de sitios web ofrecidos por Edge Delivery Services. El entorno utiliza código desarrollado localmente mientras obtiene contenido de los Edge Delivery Services, lo que permite a los desarrolladores ver instantáneamente los cambios del código. Esta configuración admite pruebas y desarrollo rápidos e iterativos.
+Un entorno de desarrollo local es esencial para el rápido desarrollo de los sitios web que ofrece Edge Delivery Services. El entorno utiliza código desarrollado localmente mientras obtiene contenido de Edge Delivery Services, lo que permite a los desarrolladores ver instantáneamente los cambios del código. Esta configuración admite pruebas y desarrollo rápidos e iterativos.
 
 Las herramientas y los procesos de desarrollo de un proyecto de sitio web de Edge Delivery Services están diseñados para resultarles familiares a los desarrolladores web y proporcionar una experiencia de desarrollo rápida y eficaz.
 
 ## Topología de desarrollo
 
-Este vídeo proporciona información general sobre la topología de desarrollo de un proyecto de sitio web de Edge Delivery Services que se puede editar con el editor universal.
+Este vídeo proporciona información general sobre la topología de desarrollo para un proyecto de sitio web de Edge Delivery Services que se puede editar con el editor universal.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3443978/?learn=on&enablevpops)
 
@@ -36,27 +36,27 @@ Este vídeo proporciona información general sobre la topología de desarrollo d
    - **Estructura**: La **rama principal** contiene código listo para la producción, mientras que otras ramas contienen código en funcionamiento.
    - **Funcionalidad**: El código de cualquier rama se puede ejecutar en los entornos **production** o **preview** sin afectar el sitio web activo.
 
-- AEM **Servicio de autor de**:
+- **Servicio de autor de AEM**:
    - **Propósito**: sirve como repositorio de contenido canónico donde se edita y administra el contenido del sitio web.
-   - **Funcionalidad**: El contenido lo lee y escribe el **Editor universal**. El contenido editado se ha publicado en **Edge Delivery Services** en **entornos de producción** o **vista previa**.
+   - **Funcionalidad**: El contenido lo lee y escribe el **Editor universal**. El contenido editado se publica en **Edge Delivery Services** en **entornos de producción** o **vista previa**.
 
 - **Editor universal**:
    - **Propósito**: Proporciona una interfaz de WYSIWYG para editar el contenido del sitio web.
-   - AEM **Funcionalidad**: Lee y escribe en el servicio de **autor de la**. Se puede configurar para que use código de cualquier rama en el **repositorio de GitHub** para probar y validar cambios.
+   - **Funcionalidad**: Lee y escribe en el **servicio de autor de AEM**. Se puede configurar para que use código de cualquier rama en el **repositorio de GitHub** para probar y validar cambios.
 
 - **Edge Delivery Services**:
    - **Entorno de producción**:
       - **Propósito**: Envía el contenido y el código del sitio web activo a los usuarios finales.
-      - AEM **Funcionalidad**: Sirve el contenido publicado desde el **servicio de autor de** con código de la **rama principal** del **repositorio de GitHub**.
+      - **Funcionalidad**: Sirve contenido publicado desde el **servicio de autor de AEM** con código de la **rama principal** del **repositorio de GitHub**.
    - **Entorno de vista previa**:
       - **Propósito**: proporciona un entorno de ensayo para probar y previsualizar el contenido y el código antes de la implementación.
-      - AEM **Funcionalidad**: Sirve contenido publicado desde el servicio de autor de **** con código de cualquier rama del repositorio de **GitHub**, lo que permite realizar pruebas exhaustivas sin afectar al sitio web activo.
+      - **Funcionalidad**: Sirve contenido publicado desde el **servicio de autor de AEM** con código de cualquier rama del **repositorio de GitHub**, lo que permite realizar pruebas exhaustivas sin afectar al sitio web activo.
 
 - **Entorno de desarrollador local**:
    - **Propósito**: permite a los desarrolladores escribir y probar código (CSS y JavaScript) localmente.
    - **Estructura**:
       - Un clon local del **repositorio de GitHub** para desarrollo basado en ramas.
-      - AEM La **CLI de**, que actúa como servidor de desarrollo, aplica cambios de código local al **entorno de vista previa** para una experiencia de recarga en caliente.
+      - La **CLI de AEM**, que actúa como servidor de desarrollo, aplica cambios de código local al **entorno de vista previa** para una experiencia de recarga en caliente.
    - **Flujo de trabajo**: Los desarrolladores escriben código localmente, confirman cambios en una rama de trabajo, insertan la rama en GitHub, la validan en el **Editor universal** (utilizando la rama especificada) y la combinan en la **rama principal** cuando estén listos para la implementación de producción.
 
 +++
@@ -71,7 +71,7 @@ Antes de iniciar el desarrollo, instale lo siguiente en su equipo:
 
 ## Clone el repositorio de GitHub
 
-AEM Clone el [repositorio de GitHub creado en el nuevo capítulo del proyecto de código](./1-new-code-project.md) que contiene el proyecto de código para Edge Delivery Services de la aplicación de la en su entorno de desarrollo local.
+Clone el repositorio [GitHub creado en el nuevo capítulo del proyecto de código](./1-new-code-project.md) que contiene el proyecto de código Edge Delivery Services de AEM en su entorno de desarrollo local.
 
 ![Clon del repositorio de GitHub](./assets/3-local-development-environment/github-clone.png)
 
@@ -92,11 +92,11 @@ Vaya a la carpeta del proyecto e instale las dependencias necesarias con `npm in
 $ npm install
 ```
 
-## AEM Instalación de la CLI de
+## Instalación de la CLI de AEM
 
-AEM La CLI de es una herramienta de línea de comandos de Node.js diseñada para optimizar el desarrollo de sitios web basados en Edge Delivery Services AEM, lo que proporciona un servidor de desarrollo local para el rápido desarrollo y prueba de su sitio web.
+La CLI de AEM es una herramienta de línea de comandos de Node.js diseñada para optimizar el desarrollo de sitios web de AEM basados en Edge Delivery Services, proporcionando un servidor de desarrollo local para el rápido desarrollo y prueba de su sitio web.
 
-AEM Para instalar la CLI de, ejecute lo siguiente:
+Para instalar la CLI de AEM, ejecute lo siguiente:
 
 ```bash
 # ~/Code/aem-wknd-eds-ue
@@ -104,11 +104,11 @@ AEM Para instalar la CLI de, ejecute lo siguiente:
 $ npm install @adobe/aem-cli
 ```
 
-AEM También se puede instalar la CLI de la de forma global mediante `npm install --global @adobe/aem-cli`.
+La CLI de AEM también se puede instalar globalmente usando `npm install --global @adobe/aem-cli`.
 
-## AEM Inicio del servidor de desarrollo de la local
+## Inicie el servidor de desarrollo local de AEM
 
-El comando `aem up` inicia el servidor de desarrollo local y abre automáticamente una ventana del explorador a la dirección URL del servidor. Este servidor actúa como un proxy inverso al entorno de los Edge Delivery Services, sirviendo contenido desde allí mientras utiliza su base de código local para el desarrollo.
+El comando `aem up` inicia el servidor de desarrollo local y abre automáticamente una ventana del explorador a la dirección URL del servidor. Este servidor actúa como proxy inverso al entorno de Edge Delivery Services y sirve contenido desde allí mientras utiliza el código local base para el desarrollo.
 
 ```bash
 $ cd ~/Code/aem-wknd-eds-ue 
@@ -125,20 +125,23 @@ info: Local AEM dev server up and running: http://localhost:3000/
 info: Enabled reverse proxy to https://main--aem-wknd-eds-ue--<YOUR_ORG>.aem.page
 ```
 
-AEM La CLI de la abre el sitio web en el explorador en `http://localhost:3000/`. Los cambios en el proyecto se vuelven a cargar automáticamente en el explorador web, mientras que los cambios de contenido [requieren la publicación en el entorno de vista previa](./6-author-block.md) y la actualización del explorador web.
+La CLI de AEM abre el sitio web en el explorador en `http://localhost:3000/`. Los cambios en el proyecto se vuelven a cargar automáticamente en el explorador web, mientras que los cambios de contenido [requieren la publicación en el entorno de vista previa](./6-author-block.md) y la actualización del explorador web.
 
 Si el sitio web se abre con una página 404, es probable que [fstab.yaml o paths.json](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started#create-github-project) actualizados en [nuevo proyecto de código](./1-new-code-project.md) estén configurados incorrectamente, o que los cambios no se hayan confirmado en la rama `main`.
 
 ## Generar fragmentos de JSON
 
-Los proyectos de Edge Delivery Services AEM, creados con la [plantilla XWalk de plantillas de plantillas ](https://github.com/adobe-rnd/aem-boilerplate-xwalk), dependen de las configuraciones de JSON que habilitan la creación de bloques en el editor universal.
+Los proyectos de Edge Delivery Services, creados con la [plantilla XWalk para plantillas de AEM](https://github.com/adobe-rnd/aem-boilerplate-xwalk), dependen de las configuraciones de JSON que habilitan la creación de bloques en el editor universal.
 
 - **Fragmentos JSON**: almacenados con sus bloques asociados y definen los modelos de bloques, definiciones y filtros.
    - **Fragmentos de modelo**: almacenado en `/blocks/example/_example.json`.
    - **Fragmentos de definición**: almacenado en `/blocks/example/_example.json`.
    - **Fragmentos de filtro**: almacenado en `/blocks/example/_example.json`.
 
-Los scripts NPM compilan estos fragmentos JSON y los colocan en las ubicaciones adecuadas en la raíz del proyecto. Para crear archivos JSON, utilice los scripts NPM proporcionados. Por ejemplo, para compilar todos los fragmentos, ejecute:
+
+La [plantilla de proyecto XWalk de plantillas de AEM](https://github.com/adobe-rnd/aem-boilerplate-xwalk) incluye un vínculo previo a la confirmación de [Husky](https://typicode.github.io/husky/) que detecta cambios en fragmentos JSON y los compila en los archivos `component-*.json` correspondientes en `git commit`.
+
+Aunque los siguientes scripts NPM se pueden ejecutar manualmente a través de `npm run` para generar los archivos JSON, esto generalmente no es necesario ya que el enlace husky de preconfirmación lo gestiona automáticamente.
 
 ```bash
 # ~/Code/aem-wknd-eds-ue
@@ -185,7 +188,7 @@ Puede resolver automáticamente los problemas de vinculación agregando los(as) 
 $ npm run lint:fix
 ```
 
-AEM Estos scripts no vienen preconfigurados con la plantilla XWalk de plantillas de plantillas de plantillas, pero se pueden agregar al archivo `package.json`:
+Estos scripts no vienen preconfigurados con la plantilla XWalk de plantillas de AEM, pero se pueden agregar al archivo `package.json`:
 
 >[!BEGINTABS]
 

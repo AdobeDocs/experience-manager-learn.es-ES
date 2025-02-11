@@ -10,16 +10,16 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 900
 exl-id: 9698c17a-0ac8-426d-bccb-729b048cabd1
-source-git-commit: 775821f37df87905ea176b11ecf0ed4a42d00940
+source-git-commit: 2722a4d4a34172e2f418f571f9de3872872e682a
 workflow-type: tm+mt
-source-wordcount: '1742'
+source-wordcount: '1767'
 ht-degree: 0%
 
 ---
 
 # Crear un bloque nuevo
 
-Este capítulo cubre el proceso de creación de un nuevo bloque de teaser editable para un sitio web de Edge Delivery Services mediante el editor universal.
+Este capítulo cubre el proceso de creación de un nuevo bloque de teaser editable para un sitio web de Edge Delivery Services con el editor universal.
 
 ![Nuevo bloque de teaser](./assets//5-new-block/teaser-block.png)
 
@@ -70,7 +70,7 @@ El nombre de la carpeta del bloque actúa como ID del bloque y se utiliza para h
 El bloque JSON define tres aspectos clave del bloque:
 
 - **Definición**: Registra el bloque como un componente editable en el Editor universal y lo vincula a un modelo de bloque y, opcionalmente, a un filtro.
-- **Modelo**: Especifica los campos de creación del bloque y cómo se representan estos campos como HTML de Edge Delivery Services semánticos.
+- **Modelo**: Especifica los campos de creación del bloque y cómo se representan estos campos como Edge Delivery Services HTML semántico.
 - **Filtro**: configura reglas de filtrado para restringir los contenedores a los que se puede agregar el bloque mediante el Editor universal. La mayoría de los bloques no son contenedores, sino que sus ID se añaden a los filtros de otros bloques de contenedores.
 
 Cree un nuevo archivo en `/blocks/teaser/_teaser.json` con la siguiente estructura inicial, en el orden exacto. Si las claves están desordenadas, es posible que no se creen correctamente.
@@ -93,7 +93,7 @@ El modelo de bloque es una parte fundamental de la configuración del bloque, ya
 
    ![Campos de editor universal](./assets/5-new-block/fields-in-universal-editor.png)
 
-2. Cómo se representan los valores del campo en el HTML de Edge Delivery Services.
+2. Cómo se representan los valores del campo en Edge Delivery Services HTML.
 
 A los modelos se les asigna un `id` que corresponde a la definición del bloque [block](#block-definition) e incluyen una matriz `fields` para especificar los campos editables.
 
@@ -102,7 +102,7 @@ Cada campo de la matriz `fields` tiene un objeto JSON que incluye las siguientes
 | Propiedad JSON | Descripción |
 |---------------|-----------------------------------------------------------------------------------------------------------------------|
 | `component` | El [tipo de campo](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#component-types), como `text`, `reference` o `aem-content`. |
-| `name` | AEM El nombre del campo, que se asigna a la propiedad JCR en la que se almacena el valor en la propiedad de la propiedad de la propiedad de la. |
+| `name` | Nombre del campo, que se asigna a la propiedad JCR donde el valor se almacena en AEM. |
 | `label` | La etiqueta que se muestra a los autores en el editor universal. |
 
 Para obtener una lista completa de propiedades, incluidas las opcionales, revise la [documentación sobre los campos del editor universal](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#fields).
@@ -130,7 +130,7 @@ Defina los campos necesarios para el bloque: imagen, texto alternativo de imagen
 
 **Esta pestaña ilustra la manera correcta de modelar el bloque de teaser.**
 
-El teaser consta de dos áreas lógicas: imagen y texto. Para simplificar el código necesario para mostrar el HTML de Edge Delivery Services como la experiencia web deseada, el modelo de bloques debe reflejar esta estructura.
+El teaser consta de dos áreas lógicas: imagen y texto. Para simplificar el código necesario para mostrar Edge Delivery Services HTML como la experiencia web deseada, el modelo de bloques debe reflejar esta estructura.
 
 - Agrupe la **imagen** y el **texto alternativo de la imagen** mediante [contracción del campo](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse).
 - Agrupe los campos de contenido de texto mediante [agrupación de elementos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping) y [contracción de campos para CTA](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse).
@@ -139,8 +139,8 @@ Si no está familiarizado con la [contracción de campos](https://experienceleag
 
 En el siguiente ejemplo:
 
-- [Inferencia de tipo](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference) se usa para crear automáticamente un elemento HTML `<img>` a partir del campo `image`. La contracción de campos se utiliza con los campos `image` y `imageAlt` para crear un elemento HTML `<img>`. El atributo `src` se establece en el valor del campo `image`, mientras que el atributo `alt` se establece en el valor del campo `imageAlt`.
-- `textContent` es un nombre de grupo que se usa para categorizar campos. Debería ser semántico, pero puede ser cualquier cosa exclusiva de este bloque. Esto indica al editor universal que procese todos los campos con este prefijo dentro del mismo elemento `<div>` en la salida final del HTML.
+- [Inferencia de tipo](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference) se usa para crear automáticamente un elemento HTML `<img>` a partir del campo `image`. La contracción de campos se usa con los campos `image` y `imageAlt` para crear un elemento HTML `<img>`. El atributo `src` se establece en el valor del campo `image`, mientras que el atributo `alt` se establece en el valor del campo `imageAlt`.
+- `textContent` es un nombre de grupo que se usa para categorizar campos. Debería ser semántico, pero puede ser cualquier cosa exclusiva de este bloque. Esto indica al editor universal que procese todos los campos con este prefijo dentro del mismo elemento `<div>` en la salida final de HTML.
 - El colapso de campos también se aplica dentro del grupo `textContent` para la llamada a la acción (CTA). El CTA se creó como `<a>` mediante [inferencia de tipo](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference). El campo `cta` se usa para establecer el atributo `href` del elemento `<a>`, y el campo `ctaText` proporciona el contenido de texto para el vínculo dentro de las etiquetas `<a ...>`.
 
 [!BADGE /blocks/teaser/_teaser.json]{type=Neutral tooltip="Nombre de archivo del ejemplo de código siguiente."}
@@ -194,7 +194,7 @@ En el siguiente ejemplo:
 
 Este modelo define las entradas de creación en el editor universal para el bloque.
 
-El HTML de Edge Delivery Services resultante para este bloque coloca la imagen en el primer div y los campos del grupo de elementos `textContent` en el segundo div.
+El Edge Delivery Services HTML resultante para este bloque coloca la imagen en el primer div y los campos del grupo de elementos `textContent` en el segundo div.
 
 ```html
 <div>
@@ -276,7 +276,7 @@ Por ejemplo, el modelo de teaser se podría definir **sin contraer el campo** o 
 }
 ```
 
-El HTML de Edge Delivery Services del bloque procesa el valor de cada campo en un elemento `div` independiente, lo que complica la comprensión del contenido, la aplicación de estilos y los ajustes de estructura del HTML para lograr el diseño deseado.
+El HTML de Edge Delivery Services para el bloque procesa el valor de cada campo en un(a) `div` independiente, lo que complica la comprensión del contenido, la aplicación de estilo y los ajustes de estructura de HTML para lograr el diseño deseado.
 
 ```html
 <div>
@@ -322,7 +322,7 @@ La definición del bloque registra el bloque en el editor universal. Este es un 
 | `definition.plugins.xwalk.page.resourceType` | Define el tipo de recurso de Sling para procesar el componente en el editor universal. Usar siempre un tipo de recurso `core/franklin/components/block/v#/block`. |
 | `definition.plugins.xwalk.page.template.name` | El nombre del bloque. Debe escribirse en minúsculas y con guiones que coincidan con el nombre de la carpeta del bloque. Este valor también se utiliza para etiquetar la instancia del bloque en el editor universal. |
 | `definition.plugins.xwalk.page.template.model` | Vincula esta definición a su definición `model`, que controla los campos de creación mostrados para el bloque en el Editor universal. El valor aquí debe coincidir con un valor `model.id`. |
-| `definition.plugins.xwalk.page.template.classes` | Propiedad opcional, cuyo valor se agrega al atributo `class` del elemento del HTML de bloques. Esto permite usar variantes del mismo bloque. El valor `classes` se puede hacer editable al [agregar un campo de clases](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options) al [modelo](#block-model) del bloque. |
+| `definition.plugins.xwalk.page.template.classes` | Propiedad opcional, cuyo valor se agrega al atributo `class` del elemento de bloque HTML. Esto permite usar variantes del mismo bloque. El valor `classes` se puede hacer editable al [agregar un campo de clases](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options) al [modelo](#block-model) del bloque. |
 
 
 Este es un ejemplo de JSON para la definición del bloque:
@@ -379,7 +379,7 @@ El componente teaser no es un [bloque contenedor](https://experienceleague.adobe
 
 ![Filtros de bloque](./assets/5-new-block/filters.png)
 
-Los bloques proporcionados por el Adobe, como el bloque de sección, almacenan filtros en la carpeta `models` del proyecto. Para ajustarlo, busque el archivo JSON para el bloque proporcionado por el Adobe (por ejemplo, `/models/_section.json`) y agregue el identificador del teaser (`teaser`) a la lista de filtros. La configuración indica al editor universal que el componente teaser se puede agregar al bloque contenedor de sección.
+Los bloques proporcionados por Adobe, como el bloque de sección, almacenan filtros en la carpeta `models` del proyecto. Para ajustarlo, busque el archivo JSON para el bloque proporcionado por Adobe (por ejemplo, `/models/_section.json`) y agregue el identificador del teaser (`teaser`) a la lista de filtros. La configuración indica al editor universal que el componente teaser se puede agregar al bloque contenedor de sección.
 
 [!BADGE /models/_section.json]{type=Neutral tooltip="Nombre de archivo del ejemplo de código siguiente."}
 
@@ -420,15 +420,11 @@ $ npm run lint:js
 
 ## Creación del proyecto JSON
 
-Después de configurar los archivos JSON de bloque (`blocks/teaser/_teaser.json`, `models/_section.json`), se deben compilar en los archivos `component-models.json`, `component-definitions.json` y `component-filters.json` del proyecto. La compilación se realiza ejecutando los scripts [build JSON](./3-local-development-environment.md#build-json-fragments) npm del proyecto.
+Después de configurar los archivos JSON de bloque (por ejemplo, `blocks/teaser/_teaser.json`, `models/_section.json`), se compilan automáticamente en los archivos `component-models.json`, `component-definitions.json` y `component-filters.json` del proyecto. Esta compilación se administra automáticamente mediante un vínculo previo a la confirmación de [Husky](https://typicode.github.io/husky/) incluido en la [plantilla del proyecto XWalk de plantillas de AEM](https://github.com/adobe-rnd/aem-boilerplate-xwalk).
 
-```bash
-# ~/Code/aem-wknd-eds-ue
+Las compilaciones también se pueden activar manualmente o mediante programación con los scripts NPM [build JSON](./3-local-development-environment.md#build-json-fragments) del proyecto.
 
-$ npm run build:json
-```
-
-## Implementación de la definición de bloque
+## Implementar el bloque JSON
 
 Para que el bloque esté disponible en el editor universal, el proyecto debe confirmarse e insertarse en la rama de un repositorio de GitHub, en este caso la rama `teaser`.
 
@@ -439,7 +435,8 @@ El nombre exacto de la rama que utiliza el editor universal se puede ajustar, po
 
 $ git add .
 $ git commit -m "Add teaser block JSON files so it is available in Universal Editor"
+# JSON files are compiled automatically and added to the commit via a husky precommit hook
 $ git push origin teaser
 ```
 
-Cuando se abre el Editor universal con el parámetro de consulta `?ref=teaser`, el nuevo bloque `teaser` aparece en la paleta de bloques. Tenga en cuenta que el bloque no tiene estilo; procesa los campos del bloque como un HTML semántico, con estilo solo a través de [CSS global](./4-website-branding.md#global-css).
+Cuando se abre el Editor universal con el parámetro de consulta `?ref=teaser`, el nuevo bloque `teaser` aparece en la paleta de bloques. Tenga en cuenta que el bloque no tiene estilo; procesa los campos del bloque como HTML semántico, con estilo solo a través de [CSS global](./4-website-branding.md#global-css).
