@@ -1,21 +1,21 @@
 ---
 title: Bloquear opciones
-description: Desarrolle un bloque que se pueda alternar para que tenga una apariencia y un comportamiento diferentes.
+description: Aprenda a crear un bloque con varias opciones de visualización.
 version: Cloud Service
 feature: Edge Delivery Services
 topic: Development
 role: Developer
 level: Beginner
 doc-type: Tutorial
-jira: null
+jira: KT-17296
 duration: 700
-source-git-commit: 2722a4d4a34172e2f418f571f9de3872872e682a
+exl-id: f41dff22-bd47-4ea0-98cc-f5ca30b22c4b
+source-git-commit: ae3ade0f31846776aa9bdd3a615d6514b626f48d
 workflow-type: tm+mt
-source-wordcount: '1961'
+source-wordcount: '1958'
 ht-degree: 0%
 
 ---
-
 
 # Desarrollo de un bloque con opciones
 
