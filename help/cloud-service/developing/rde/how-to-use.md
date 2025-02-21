@@ -11,7 +11,7 @@ thumbnail: KT-11862.png
 last-substantial-update: 2023-02-15T00:00:00Z
 exl-id: 1d1bcb18-06cd-46fc-be2a-7a3627c1e2b2
 duration: 792
-source-git-commit: d199ff3b9f4d995614c193f52dc90270f2283adf
+source-git-commit: 98d67d5b624b386c6a579cd03117372bc9058acb
 workflow-type: tm+mt
 source-wordcount: '792'
 ht-degree: 0%
@@ -22,9 +22,9 @@ ht-degree: 0%
 
 Aprenda **a utilizar** el entorno de desarrollo rápido (RDE) en AEM as a Cloud Service. Implemente código y contenido para ciclos de desarrollo más rápidos de su código casi final en RDE, desde su entorno de desarrollo integrado (IDE) favorito.
 
-AEM AEM AEM Al usar [proyecto WKND Sites](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project), aprenderá a implementar varios artefactos de en el RDE ejecutando el comando `install` de-RDE desde su IDE favorito.
+Con [AEM WKND Sites Project](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) aprenderá a implementar varios artefactos de AEM en RDE ejecutando el comando `install` de AEM-RDE desde su IDE favorito.
 
-- AEM implementación del paquete de contenido y código de (todo, ui.apps)
+- implementación del paquete de contenido y código AEM (todos, ui.apps)
 - Implementación del paquete OSGi y el archivo de configuración
 - Implementación de configuraciones de Apache y Dispatcher como archivo zip
 - Archivos individuales como la implementación de HTL, `.content.xml` (XML de diálogo)
@@ -34,24 +34,24 @@ AEM AEM AEM Al usar [proyecto WKND Sites](https://github.com/adobe/aem-guides-wk
 
 ## Requisitos previos
 
-AEM Clone el proyecto [WKND Sites](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) y ábralo en su IDE favorito para implementar los artefactos de la en RDE.
+Clone el proyecto [WKND Sites](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) y ábralo en su IDE favorito para implementar los artefactos de AEM en RDE.
 
 ```shell
 $ git clone git@github.com:adobe/aem-guides-wknd.git
 ```
 
-AEM A continuación, créelo e impleméntelo en el local de SDK-ejecutando el siguiente comando de Maven.
+A continuación, créelo e impleméntelo en el AEM-SDK local ejecutando el siguiente comando de Maven.
 
 ```
 $ cd aem-guides-wknd/
 $ mvn clean package
 ```
 
-## AEM AEM Implementar artefactos de mediante el complemento de RDE de
+## Implementar artefactos de AEM mediante el complemento AEM-RDE
 
 Primero, asegúrese de que tiene instalado el [último módulo CLI de `aio`](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools#aio-cli).
 
-AEM A continuación, utilice el comando `aio aem:rde:install` para implementar varios artefactos de la. Ahora que debe
+A continuación, utilice el comando `aio aem:rde:install` para implementar varios artefactos de AEM. Ahora que debe
 
 ### Implementar `all` y `dispatcher` paquetes
 
@@ -96,7 +96,7 @@ Vamos a mejorar `Hello World Component` e implementarlo en RDE.
    ...
    ```
 
-1. AEM Compruebe los cambios en el SDK de la local realizando la compilación de Maven o sincronizando archivos individuales.
+1. Compruebe los cambios en el SDK local de AEM realizando la compilación de Maven o sincronizando archivos individuales.
 
 1. Implemente los cambios en RDE a través del paquete `ui.apps` o implementando los archivos individuales de Diálogo y HTL:
 
@@ -126,7 +126,7 @@ En el ejemplo de comando de implementación de archivo individual anterior, los 
 $ aio aem:rde:install --help
 ```
 
-Los indicadores se explican por sí mismos, el indicador `-s` es útil para dirigir la implementación solo a los servicios de autor o publicación. AEM Utilice el indicador `-t` al implementar los archivos **content-file o content-xml** junto con el indicador `-p` para especificar la ruta JCR de destino en el entorno de RDE de.
+Los indicadores se explican por sí mismos, el indicador `-s` es útil para dirigir la implementación solo a los servicios de autor o publicación. Utilice el indicador `-t` al implementar los archivos **content-file o content-xml** junto con el indicador `-p` para especificar la ruta JCR de destino en el entorno AEM RDE.
 
 ### Implementar el paquete OSGi
 
@@ -144,7 +144,7 @@ Para obtener información sobre cómo implementar el paquete OSGi, vamos a mejor
    ...
    ```
 
-1. AEM Compruebe los cambios en la configuración local de SDK-implementando el paquete `core` mediante el comando de Maven
+1. Compruebe los cambios en AEM-SDK local implementando el paquete `core` mediante el comando de Maven
 1. Implemente los cambios en RDE ejecutando el siguiente comando
 
    ```shell
@@ -204,7 +204,7 @@ Los archivos de configuración de Apache o Dispatcher **no se pueden implementar
 
 ### Implementación de archivos de configuración (YAML)
 
-AEM La CDN, las tareas de mantenimiento, el reenvío de registros y los archivos de configuración de autenticación de API se pueden implementar en RDE mediante el comando `install`. AEM Estas configuraciones se administran como archivos YAML en la carpeta `config` del proyecto de; consulte [Configuraciones admitidas](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline#configurations) para obtener más información.
+Los archivos de CDN, tareas de mantenimiento, reenvío de registros y configuración de autenticación de API de AEM se pueden implementar en RDE mediante el comando `install`. Estas configuraciones se administran como archivos YAML en la carpeta `config` del proyecto AEM. Consulte [Configuraciones admitidas](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline#configurations) para obtener más información.
 
 Para aprender a implementar los archivos de configuración, vamos a mejorar el archivo de configuración de `cdn` e implementarlo en RDE.
 
@@ -238,15 +238,15 @@ Para aprender a implementar los archivos de configuración, vamos a mejorar el a
 1. Implemente los cambios en RDE ejecutando el siguiente comando
 
    ```shell
-   $ aio aem:rde:install -t env-config ./config/cdn.yaml
+   $ aio aem:rde:install -t env-config ./config
    ```
 
 1. Verificar los cambios en el RDE
 
 
-## AEM Comandos adicionales del complemento RDE
+## Comandos adicionales del complemento AEM RDE
 
-AEM Revisemos los comandos adicionales del complemento RDE para administrar e interactuar con el RDE desde el equipo local.
+Revisemos los comandos adicionales del complemento AEM RDE para administrar e interactuar con el RDE desde el equipo local.
 
 ```shell
 $ aio aem:rde --help
@@ -275,6 +275,6 @@ Obtenga información acerca del [ciclo de vida de desarrollo/implementación usa
 
 [Documentación de comandos RDE](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments)
 
-[Complemento de CLI de Adobe I/O Runtime AEM para interacciones con entornos de desarrollo rápido de](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
+[Complemento CLI de Adobe I/O Runtime para interacciones con entornos de desarrollo rápido de AEM](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
 
-AEM [Configuración del proyecto de](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup)
+[Configuración del proyecto AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup)
