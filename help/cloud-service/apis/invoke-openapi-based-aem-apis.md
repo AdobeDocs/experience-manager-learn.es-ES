@@ -1,6 +1,6 @@
 ---
-title: AEM Invocar las API de autenticación de servidor a servidor basadas en las API de para
-description: AEM Obtenga información sobre cómo configurar e invocar las API de API de basadas en OpenAPI en AEM as a Cloud Service desde aplicaciones personalizadas mediante la autenticación de servidor a servidor OAuth.
+title: Invocar las API de AEM basadas en OpenAPI para la autenticación entre servidores
+description: Obtenga información sobre cómo configurar e invocar las API de AEM basadas en OpenAPI en AEM as a Cloud Service desde aplicaciones personalizadas mediante la autenticación de servidor a servidor OAuth.
 version: Cloud Service
 feature: Developing
 topic: Development, Architecture, Content Management
@@ -12,27 +12,27 @@ thumbnail: KT-16516.jpeg
 last-substantial-update: 2024-11-20T00:00:00Z
 duration: 0
 exl-id: 24c641e7-ab4b-45ee-bbc7-bf6b88b40276
-source-git-commit: 2b5f7a033921270113eb7f41df33444c4f3d7723
+source-git-commit: b3d053a09dfc8989441a21bf0d8c4771d816106f
 workflow-type: tm+mt
-source-wordcount: '1831'
+source-wordcount: '1855'
 ht-degree: 0%
 
 ---
 
-# AEM Invocar las API de autenticación de servidor a servidor basadas en las API de para{#invoke-openapi-based-aem-apis}
+# Invocar las API de AEM basadas en OpenAPI para la autenticación entre servidores{#invoke-openapi-based-aem-apis}
 
-AEM Aprenda a configurar e invocar las API de API de basadas en OpenAPI en AEM as a Cloud Service desde aplicaciones personalizadas mediante la autenticación _Servidor a servidor OAuth_.
+Aprenda a configurar e invocar las API de AEM basadas en OpenAPI en AEM as a Cloud Service desde aplicaciones personalizadas mediante la autenticación de _servidor a servidor OAuth_.
 
 La autenticación de servidor a servidor OAuth es ideal para los servicios back-end que necesitan acceso a API sin interacción del usuario. Utiliza el tipo de concesión OAuth 2.0 _client_credentials_ para autenticar la aplicación cliente.
 
 >[!AVAILABILITY]
 >
->AEM Las API de basadas en OpenAPI están disponibles como parte de un programa de acceso anticipado. Si está interesado en acceder a ellos, le recomendamos que envíe un correo electrónico a [aem-apis@adobe.com](mailto:aem-apis@adobe.com) con una descripción de su caso de uso.
+>Las API de AEM basadas en API abiertas están disponibles como parte de un programa de acceso anticipado. Si está interesado en acceder a ellos, le recomendamos que envíe un correo electrónico a [aem-apis@adobe.com](mailto:aem-apis@adobe.com) con una descripción de su caso de uso.
 
 En este tutorial, aprenderá a:
 
-- AEM Habilite el acceso a las API de basadas en OpenAPI para su entorno de AEM as a Cloud Service.
-- Cree y configure un proyecto de Adobe Developer Console AEM (ADC) para obtener acceso a las API de mediante la _autenticación de servidor a servidor OAuth_.
+- Habilite el acceso a las API de AEM basadas en OpenAPI para su entorno de AEM as a Cloud Service.
+- Cree y configure un proyecto de Adobe Developer Console (ADC) para acceder a las API de AEM mediante _autenticación de servidor a servidor OAuth_.
 - Desarrolle una aplicación NodeJS de ejemplo que llame a la API de autor de Assets para recuperar metadatos de un recurso específico.
 
 Antes de comenzar, asegúrese de revisar la sección [Acceso a las API de Adobe y conceptos relacionados](overview.md#accessing-adobe-apis-and-related-concepts).
@@ -42,7 +42,7 @@ Antes de comenzar, asegúrese de revisar la sección [Acceso a las API de Adobe 
 Para completar este tutorial, necesita lo siguiente:
 
 - Entorno de AEM as a Cloud Service modernizado con lo siguiente:
-   - AEM Lanzamiento de la versión `2024.10.18459.20241031T210302Z` o posterior de.
+   - Versión de AEM `2024.10.18459.20241031T210302Z` o posterior.
    - Nuevos perfiles de producto de estilo (si el entorno se creó antes de noviembre de 2024)
 
 - El proyecto de muestra [WKND Sites](https://github.com/adobe/aem-guides-wknd?#aem-wknd-sites-project) debe implementarse en él.
@@ -56,13 +56,13 @@ Para completar este tutorial, necesita lo siguiente:
 Los pasos de desarrollo de alto nivel son los siguientes:
 
 1. Modernización del entorno de AEM as a Cloud Service.
-1. AEM Habilite el acceso a las API de.
+1. Habilite el acceso a las API de AEM.
 1. Crear un proyecto de Adobe Developer Console (ADC).
 1. Configurar proyecto de ADC
-   1. AEM Añadir las API de deseadas
+   1. Añadir las API de AEM deseadas
    1. Configurar su autenticación
    1. Asociar el perfil de producto con la configuración de autenticación
-1. AEM Configuración de la instancia de para habilitar la comunicación del proyecto ADC
+1. Configure la instancia de AEM para habilitar la comunicación del proyecto de ADC
 1. Desarrollar una aplicación NodeJS de ejemplo
 1. Verificar el flujo de extremo a extremo
 
@@ -72,24 +72,24 @@ Empecemos por modernizar el entorno de AEM as a Cloud Service. Este paso solo es
 
 La modernización del entorno de AEM as a Cloud Service es un proceso de dos pasos,
 
-- AEM Actualización a la versión más reciente de la versión de
+- Actualice a la última versión de AEM
 - Añádale nuevos perfiles de producto.
 
-### AEM Actualizar instancia de
+### Actualizar instancia de AEM
 
-AEM Para actualizar la instancia de, en la sección _Entornos_ del Adobe [Cloud Manager](https://my.cloudmanager.adobe.com/), seleccione el icono _puntos suspensivos_ junto al nombre del entorno y seleccione la opción **Actualizar**.
+Para actualizar la instancia de AEM, en la sección _Entornos_ de Adobe [Cloud Manager](https://my.cloudmanager.adobe.com/), seleccione el icono de _puntos suspensivos_ junto al nombre del entorno y seleccione la opción **Actualizar**.
 
-AEM ![Actualizar instancia de](assets/update-aem-instance.png)
+![Actualizar instancia de AEM](assets/update-aem-instance.png)
 
 A continuación, haga clic en el botón **Enviar** y ejecute la canalización de pila completa sugerida.
 
-AEM ![Seleccionar la última versión de la versión de la versión](assets/select-latest-aem-release.png)
+![Seleccione la última versión de AEM](assets/select-latest-aem-release.png)
 
-AEM En mi caso, el nombre de la canalización Fullstack es _Dev :: Fullstack-Deploy_ y el nombre del entorno es _wknd-program-dev_; puede variar en tu caso.
+En mi caso, el nombre de la canalización de Fullstack es _Dev :: Fullstack-Deploy_ y el nombre del entorno de AEM es _wknd-program-dev_; puede variar en su caso.
 
 ### Añadir nuevos perfiles de producto
 
-AEM Para agregar nuevos perfiles de producto a la instancia de, en la sección _Entornos_ del Adobe [Cloud Manager](https://my.cloudmanager.adobe.com/), seleccione el icono _elipsis_ junto al nombre del entorno y seleccione la opción **Agregar perfiles de producto**.
+Para agregar nuevos perfiles de producto a la instancia de AEM, en la sección _Entornos_ de Adobe [Cloud Manager](https://my.cloudmanager.adobe.com/), seleccione el icono de _puntos suspensivos_ junto al nombre del entorno y seleccione la opción **Agregar perfiles de producto**.
 
 ![Agregar nuevos perfiles de producto](assets/add-new-product-profiles.png)
 
@@ -101,11 +101,11 @@ La ventana _Admin Console_ muestra los perfiles de producto agregados recienteme
 
 Los pasos anteriores completan la modernización del entorno de AEM as a Cloud Service.
 
-## AEM Habilitar el acceso a APIs
+## Habilitar el acceso a las API de AEM
 
-AEM Los nuevos perfiles de producto habilitan el acceso a la API de basado en OpenAPI en Adobe Developer Console (ADC).
+Los nuevos perfiles de producto permiten el acceso a la API de AEM basada en OpenAPI en Adobe Developer Console (ADC).
 
-AEM Los perfiles de producto agregados recientemente están asociados con los _servicios_ que representan grupos de usuarios con listas de control de acceso (ACL) predefinidas que representan a los grupos de usuarios. AEM Los _servicios_ se usan para controlar el nivel de acceso a las API de la.
+Los perfiles de producto agregados recientemente están asociados con _Servicios_ que representan grupos de usuarios de AEM con Listas de control de acceso (ACL) predefinidas. Los _servicios_ se utilizan para controlar el nivel de acceso a las API de AEM.
 
 También puede seleccionar o deseleccionar los _servicios_ asociados con el perfil de producto para reducir o aumentar el nivel de acceso.
 
@@ -113,15 +113,15 @@ Revise la asociación haciendo clic en el icono _Ver detalles_ junto al nombre d
 
 ![Revisar servicios asociados con el perfil de producto](assets/review-services-associated-with-product-profile.png)
 
-De manera predeterminada, el servicio **Usuarios de API de AEM Assets** no está asociado con ningún perfil de producto. AEM Vamos a asociarlo con los **Administradores - Autor - Programa XXX - Perfil del producto del entorno XXX** que se acaban de agregar. Después de esta asociación, la _API de autor de recursos_ del proyecto ADC puede configurar la autenticación de servidor a servidor OAuth y asociar la cuenta de autenticación con el perfil de producto.
+De manera predeterminada, el servicio **Usuarios de API de AEM Assets** no está asociado con ningún perfil de producto. Vamos a asociarlo con los **Administradores de AEM recién agregados: autor - Programa XXX - Entorno XXX** Perfil del producto. Después de esta asociación, la _API de autor de recursos_ del proyecto ADC puede configurar la autenticación de servidor a servidor OAuth y asociar la cuenta de autenticación con el perfil de producto.
 
 ![Asociar el servicio de usuarios de la API de AEM Assets con el perfil de producto](assets/associate-aem-assets-api-users-service-with-product-profile.png)
 
-AEM AEM AEM Es importante tener en cuenta que antes de la modernización, en la instancia de Autor de, había dos perfiles de producto disponibles, **Administradores-XXX** y **Usuarios-XXX**, respectivamente También es posible asociar estos perfiles de producto existentes con los nuevos servicios.
+Es importante tener en cuenta que antes de la modernización, en la instancia de autor de AEM, había dos perfiles de producto disponibles, **Administradores de AEM-XXX** y **Usuarios de AEM-XXX**. También es posible asociar estos perfiles de producto existentes con los nuevos servicios.
 
 ## Crear proyecto de Adobe Developer Console (ADC)
 
-AEM A continuación, cree un proyecto de ADC para acceder a las API de.
+A continuación, cree un proyecto de ADC para acceder a las API de AEM.
 
 1. Inicie sesión en [Adobe Developer Console](https://developer.adobe.com/console) con su Adobe ID.
 
@@ -141,15 +141,15 @@ AEM A continuación, cree un proyecto de ADC para acceder a las API de.
 
 ## Configurar proyecto de ADC
 
-AEM A continuación, configure el proyecto de ADC para añadir las API de, configurar su autenticación y asociar el perfil de producto.
+A continuación, configure el proyecto ADC para agregar las API de AEM, configurar su autenticación y asociar el perfil de producto.
 
-1. AEM Para agregar las API de, haga clic en el botón **Agregar API**.
+1. Para agregar las API de AEM, haga clic en el botón **Agregar API**.
 
    ![Agregar API](assets/add-api.png)
 
 1. En el cuadro de diálogo _Agregar API_, filtre por _Experience Cloud_, seleccione la tarjeta **API de autor de AEM Assets** y haga clic en **Siguiente**.
 
-   AEM ![Agregar API de](assets/add-aem-api.png)
+   ![Agregar API de AEM](assets/add-aem-api.png)
 
 1. A continuación, en el diálogo _Configurar API_, seleccione la opción de autenticación **Servidor a servidor** y haga clic en **Siguiente**. La autenticación de servidor a servidor es ideal para los servicios back-end que necesitan acceso a API sin interacción del usuario.
 
@@ -159,24 +159,28 @@ AEM A continuación, configure el proyecto de ADC para añadir las API de, confi
 
    ![Cambiar nombre de credencial](assets/rename-credential.png)
 
-1. AEM Seleccione el perfil de producto **Administradores - Autor - Programa XXX - Entorno XXX** y haga clic en **Guardar**. Como puede ver, solo está disponible para su selección el perfil de producto asociado al servicio de usuarios de la API de AEM Assets.
+1. Seleccione el perfil de producto **Administradores de AEM - Autor - Programa XXX - Entorno XXX** y haga clic en **Guardar**. Como puede ver, solo está disponible para su selección el perfil de producto asociado al servicio de usuarios de la API de AEM Assets.
 
    ![Seleccionar perfil de producto](assets/select-product-profile.png)
 
-1. AEM Revise la configuración de autenticación y la API de.
+   >[!CAUTION]
+   >
+   >    Tenga en cuenta que el usuario de la cuenta de servicio (también conocida como cuenta técnica) obtiene acceso COMPLETO ya que está asociado con el perfil de producto de **Administradores de AEM - XX - XX**.
 
-   AEM ![Configuración de API de](assets/aem-api-configuration.png)
+
+1. Revise la configuración de autenticación y la API de AEM.
+
+   ![Configuración de la API de AEM](assets/aem-api-configuration.png)
 
    ![Configuración de autenticación](assets/authentication-configuration.png)
 
+## Configuración de la instancia de AEM para habilitar la comunicación del proyecto ADC
 
-## AEM Configurar la instancia de para habilitar la comunicación del proyecto ADC
+Para habilitar el ID de cliente de la credencial de servidor a servidor OAuth del proyecto ADC para comunicarse con la instancia de AEM, debe configurar la instancia de AEM.
 
-AEM AEM Para habilitar la comunicación del ID de cliente de la credencial de servidor a servidor OAuth del proyecto ADC con la instancia de la instancia de la, debe configurar la instancia de la instancia de la aplicación.
+Se realiza definiendo la configuración en el archivo `config.yaml` en el proyecto de AEM. A continuación, implemente el archivo `config.yaml` mediante la canalización de configuración en Cloud Manager.
 
-AEM Se realiza definiendo la configuración en el archivo `config.yaml` en el proyecto de. A continuación, implemente el archivo `config.yaml` mediante la canalización de configuración en Cloud Manager.
-
-1. AEM En el proyecto de, busque o cree el archivo `config.yaml` en la carpeta `config`.
+1. En AEM Project, busque o cree el archivo `config.yaml` en la carpeta `config`.
 
    ![Localizar configuración YAML](assets/locate-config-yaml.png)
 
@@ -211,7 +215,7 @@ Desarrollemos una aplicación NodeJS de ejemplo que llame a la API de autor de A
 
 Puede utilizar otros lenguajes de programación como Java, Python, etc. para desarrollar la aplicación.
 
-Para hacer pruebas, puede usar [Postman AEM](https://www.postman.com/), [curl](https://curl.se/) o cualquier otro cliente REST para invocar las API de la.
+Para hacer pruebas, puede usar [Postman](https://www.postman.com/), [curl](https://curl.se/) o cualquier otro cliente REST para invocar las API de AEM.
 
 ### Revisión de la API
 
@@ -221,15 +225,15 @@ Antes de desarrollar la aplicación, vamos a revisar [el extremo ](https://devel
 GET https://{bucket}.adobeaemcloud.com/adobe/assets/{assetId}/metadata
 ```
 
-Para recuperar los metadatos de un recurso específico, necesita los valores `bucket` y `assetId`. AEM `bucket` es el nombre de instancia de la instancia de la instancia de la instancia de la instancia de la instancia sin el nombre de dominio de Adobe (.adobeaemcloud.com), por ejemplo, `author-p63947-e1420428`.
+Para recuperar los metadatos de un recurso específico, necesita los valores `bucket` y `assetId`. `bucket` es el nombre de instancia de AEM sin el nombre de dominio de Adobe (.adobeaemcloud.com), por ejemplo, `author-p63947-e1420428`.
 
 `assetId` es el UUID JCR del recurso con el prefijo `urn:aaid:aem:`, por ejemplo, `urn:aaid:aem:a200faf1-6d12-4abc-bc16-1b9a21f870da`. Existen varias formas de obtener `assetId`:
 
-- AEM Anexe la extensión de la ruta de acceso al recurso de la `.json` para obtener los metadatos del recurso. Por ejemplo, `https://author-p63947-e1420429.adobeaemcloud.com/content/dam/wknd-shared/en/adventures/cycling-southern-utah/adobestock-221043703.jpg.json` y busque la propiedad `jcr:uuid`.
+- Anexe la extensión de la ruta de acceso del recurso de AEM `.json` para obtener los metadatos del recurso. Por ejemplo, `https://author-p63947-e1420429.adobeaemcloud.com/content/dam/wknd-shared/en/adventures/cycling-southern-utah/adobestock-221043703.jpg.json` y busque la propiedad `jcr:uuid`.
 
 - También puede obtener `assetId` si inspecciona el recurso en el inspector de elementos del explorador. Busque el atributo `data-id="urn:aaid:aem:..."`.
 
-  ![recurso de Inspect](assets/inspect-asset.png)
+  ![Inspeccionar recurso](assets/inspect-asset.png)
 
 ### Invocar la API mediante el explorador
 
@@ -243,12 +247,12 @@ Antes de desarrollar la aplicación, invoquemos la API con la función **Probarl
    ![Documentación de API](assets/api-documentation.png)
 
 1. Introduzca los siguientes valores:
-   1. AEM El valor `bucket` es el nombre de instancia de sin el nombre de dominio de Adobe (.adobeaemcloud.com), por ejemplo, `author-p63947-e1420428`.
+   1. El valor `bucket` es el nombre de instancia de AEM sin el nombre de dominio de Adobe (.adobeaemcloud.com), por ejemplo, `author-p63947-e1420428`.
 
    1. Los valores `Bearer Token` y `X-Api-Key` relacionados con la sección **Security** se obtienen de la credencial de servidor a servidor OAuth del proyecto ADC. Haga clic en **Generar token de acceso** para obtener el valor `Bearer Token` y usar el valor `ClientID` como `X-Api-Key`.
       ![Generar token de acceso](assets/generate-access-token.png)
 
-   1. AEM El valor `assetId` relacionado con la sección **Parameters** es el identificador único del recurso en el que se encuentra el recurso en el que se ha realizado la acción de forma. `X-Adobe-Accept-Experimental` está establecido en 1.
+   1. El valor `assetId` relacionado con la sección **Parameters** es el identificador único del recurso en AEM. `X-Adobe-Accept-Experimental` está establecido en 1.
 
       ![Invocar API - valores de entrada](assets/invoke-api-input-values.png)
 
@@ -258,7 +262,7 @@ Antes de desarrollar la aplicación, invoquemos la API con la función **Probarl
 
    ![Invocar API - respuesta](assets/invoke-api-response.png)
 
-Los pasos anteriores confirman la modernización del entorno de AEM as a Cloud Service AEM, lo que permite el acceso a las API de. AEM También confirma la configuración correcta del proyecto ADC y la comunicación de ID de cliente de credenciales de servidor a servidor de OAuth con la instancia de autor de la instancia de.
+Los pasos anteriores confirman la modernización del entorno de AEM as a Cloud Service, lo que permite el acceso a las API de AEM. También confirma la configuración correcta del proyecto ADC y la comunicación de ID de cliente de credencial de servidor a servidor OAuth con la instancia de autor de AEM.
 
 ### Aplicación NodeJS de muestra
 
@@ -438,7 +442,7 @@ Una vez ejecutada correctamente, la respuesta de la API se muestra en la consola
 }
 ```
 
-¡Enhorabuena! AEM Ha invocado correctamente las API de basadas en OpenAPI desde la aplicación personalizada mediante la autenticación de servidor a servidor OAuth.
+¡Enhorabuena! Ha invocado correctamente las API de AEM basadas en OpenAPI desde la aplicación personalizada mediante la autenticación de servidor a servidor OAuth.
 
 ### Revisar el código de la aplicación
 
@@ -505,5 +509,5 @@ Las llamadas clave desde el código de aplicación NodeJS de ejemplo son:
 
 ## Resumen
 
-AEM En este tutorial, ha aprendido a invocar las API de basadas en OpenAPI desde aplicaciones personalizadas. AEM Ha habilitado el acceso a las API de, ha creado y ha configurado un proyecto de Adobe Developer Console (ADC).
-AEM En el proyecto de ADC, ha añadido las API de, ha configurado su tipo de autenticación y ha asociado el perfil de producto. AEM También configuró la instancia de para habilitar la comunicación del proyecto ADC y desarrolló una aplicación NodeJS de ejemplo que llama a la API de autor de Assets.
+En este tutorial, ha aprendido a invocar las API de AEM basadas en OpenAPI desde aplicaciones personalizadas. Ha habilitado el acceso a las API de AEM, y ha creado y configurado un proyecto de Adobe Developer Console (ADC).
+En el proyecto de ADC, ha añadido las API de AEM, ha configurado su tipo de autenticación y ha asociado el perfil de producto. También configuró la instancia de AEM para habilitar la comunicación del proyecto ADC y desarrolló una aplicación NodeJS de ejemplo que llama a la API de autor de Assets.
