@@ -1,6 +1,6 @@
 ---
 title: Usuarios del servicio
-description: AEM AEM Obtenga información sobre cómo crear y utilizar usuarios de servicio en el código de la para proporcionar acceso controlado y programático al repositorio de la.
+description: Aprenda a crear y utilizar usuarios de servicio en su código de AEM para proporcionar acceso controlado y programático al repositorio de AEM.
 version: Cloud Service
 topic: Development
 feature: OSGI, Security
@@ -11,16 +11,16 @@ thumbnail: 337530.jpeg
 last-substantial-update: 2022-10-10T00:00:00Z
 exl-id: 66f627e4-863d-45d7-bc68-7ec108a1c271
 duration: 1053
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 7d114e59c0fb975994540e0af2e3d31a09c5a38f
 workflow-type: tm+mt
-source-wordcount: '62'
-ht-degree: 12%
+source-wordcount: '96'
+ht-degree: 8%
 
 ---
 
 # Usuarios del servicio
 
-AEM AEM Obtenga información sobre cómo crear y utilizar usuarios de servicio en el código de la para proporcionar acceso controlado y programático al repositorio de la.
+Aprenda a crear y utilizar usuarios de servicio en su código de AEM para proporcionar acceso controlado y programático al repositorio de AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/337530?quality=12&learn=on)
 
@@ -121,6 +121,8 @@ public class ContentStatisticsImpl implements ContentStatistics {
 ```
 
 ### org.apache.sling.jcr.repoinit.RepositoryInitializer-wknd-examples-statistics.config
+
+No todas las directivas del Inicializador del repositorio de Sling son compatibles con la extensión `.config`, como `ACLOptions`. Para utilizar directivas avanzadas, utilice el formato `.cfg.json`, donde cada línea de la directiva Inicializador del repositorio de Sling es un literal de cadena independiente.
 
 `/ui.config/src/main/content/jcr_root/apps/wknd-examples/osgiconfig/config.author/org.apache.sling.jcr.repoinit.RepositoryInitializer-wknd-examples-statistics.config`
 
