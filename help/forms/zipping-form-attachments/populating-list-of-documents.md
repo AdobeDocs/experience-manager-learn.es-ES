@@ -1,6 +1,6 @@
 ---
 title: Paso de proceso personalizado para rellenar variables de lista
-description: Paso de proceso personalizado para rellenar variables de lista de tipo documento y cadena.
+description: Aprenda a crear un paso de proceso personalizado para rellenar variables de lista de tipo documento y cadena en Adobe Experience Manager.
 feature: Workflow
 topic: Development
 version: 6.5
@@ -9,28 +9,29 @@ level: Beginner
 kt: kt-8063
 exl-id: 09d9eabf-4815-4159-b6c7-cf2ebc8a2df5
 duration: 68
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 52b7e6afbfe448fd350e84c3e8987973c87c4718
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '170'
 ht-degree: 1%
 
 ---
 
+
 # Etapa de proceso personalizado
 
+Esta guía le guiará a través de la creación de un paso de proceso personalizado para rellenar variables de lista de tipo Lista de matriz con archivos adjuntos y nombres de archivos adjuntos en Adobe Experience Manager. Estas variables son esenciales para el componente de flujo de trabajo Enviar correo electrónico.
 
-Se implementó un paso de proceso personalizado para rellenar variables de flujo de trabajo de tipo Lista de matriz con los archivos adjuntos y los nombres de los archivos adjuntos. A continuación, esta variable se utiliza en el componente de flujo de trabajo Enviar correo electrónico. Si no está familiarizado con la creación del paquete OSGi, [siga estas instrucciones](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)
+Si no está familiarizado con la creación de un paquete OSGi, siga estas [instrucciones](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en).
 
-El código del paso de proceso personalizado hace lo siguiente
+El código del paso de proceso personalizado realiza las siguientes acciones:
 
-* Consulte todos los archivos adjuntos de los formularios adaptables de la carpeta de carga útil. El nombre de la carpeta se pasa como argumento de proceso al paso de proceso.
-
-* Rellenar `listOfDocuments` variable de flujo de trabajo
-* Rellenar `attachmentNames` variable de flujo de trabajo
-* Establecer el valor de la variable de flujo de trabajo (`no_of_attachments`)
+1. Consulta todos los archivos adjuntos de formularios adaptables de la carpeta de carga útil. El nombre de la carpeta se pasa como argumento de proceso al paso.
+2. Rellena la variable de flujo de trabajo `listOfDocuments`.
+3. Rellena la variable de flujo de trabajo `attachmentNames`.
+4. Establece el valor de la variable de flujo de trabajo `no_of_attachments`.
 
 ```java
- package com.aemforms.formattachments.core;
+package com.aemforms.formattachments.core;
 
 import java.io.InputStream;
 import java.util.HashMap;
@@ -57,9 +58,8 @@ import com.day.cq.search.result.SearchResult;
 
 @Component(property = {
         Constants.SERVICE_DESCRIPTION + "=PopulateListOfDocuments",
-        "process.label" + "=PopulateListOfDocuments"
+        "process.label=PopulateListOfDocuments"
 })
-
 public class PopulateListOfDocuments implements WorkflowProcess {
 
         private static final Logger log = LoggerFactory.getLogger(PopulateListOfDocuments.class);
@@ -70,7 +70,7 @@ public class PopulateListOfDocuments implements WorkflowProcess {
         public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments) throws WorkflowException
         {
                 String payloadPath = workItem.getWorkflowData().getPayload().toString();
-                log.debug("The payload path  is" + payloadPath);
+                log.debug("The payload path is" + payloadPath);
                 MetaDataMap metaDataMap = workItem.getWorkflow().getWorkflowData().getMetaDataMap();
                 Session session = workflowSession.adaptTo(Session.class);
                 Map < String, String > map = new HashMap < String, String > ();
@@ -112,10 +112,11 @@ public class PopulateListOfDocuments implements WorkflowProcess {
 
 >[!NOTE]
 >
-> Asegúrese de haber definido las siguientes variables en el flujo de trabajo para que el código funcione
-> *listOfDocuments* - variable de tipo ArrayList of Documents
-> *attachmentNames*: variable de tipo ArrayList de cadena
-> *no_of_attachments* - variable de tipo Double
+> Asegúrese de que las siguientes variables estén definidas en el flujo de trabajo para que el código funcione:
+> 
+> - `listOfDocuments`: variable de tipo ArrayList of Documents
+> - `attachmentNames`: variable de tipo ArrayList of String
+> - `no_of_attachments`: variable de tipo Double
 
 ## Siguientes pasos
 

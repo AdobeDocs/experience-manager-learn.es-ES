@@ -1,5 +1,5 @@
 ---
-title: Paso de proceso personalizado para comprimir archivos adjuntos
+title: Paso de proceso personalizado para archivos adjuntos Zip
 description: Paso de proceso personalizado para agregar los archivos adjuntos del formulario adaptable a un archivo zip y almacenar el archivo zip en una variable de flujo de trabajo
 feature: Adaptive Forms
 version: 6.5
@@ -9,31 +9,27 @@ level: Beginner
 kt: kt-8049
 exl-id: 1131dca8-882d-4904-8691-95468fb708b7
 duration: 75
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 52b7e6afbfe448fd350e84c3e8987973c87c4718
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '149'
 ht-degree: 1%
 
 ---
 
-# Etapa de proceso personalizado
 
+# Paso de proceso personalizado
 
-Se ha implementado un paso de proceso personalizado para crear el archivo zip que contiene los archivos adjuntos del formulario. Si no está familiarizado con la creación del paquete OSGi, [siga estas instrucciones](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)
+Se ha implementado un paso de proceso personalizado para crear el archivo zip que contiene los archivos adjuntos del formulario. Si no está familiarizado con la creación de un paquete OSGi, [siga estas instrucciones](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en).
 
-El código del paso de proceso personalizado hace lo siguiente
+El código del paso de proceso personalizado hace lo siguiente:
 
-* Consulte todos los archivos adjuntos de los formularios adaptables de la carpeta de carga útil. El nombre de la carpeta se pasa como argumento de proceso al paso de proceso.
-
-* Cree un archivo zip que contenga los archivos adjuntos del formulario y almacénelo en la carpeta de carga útil.
-* Establezca el valor de la variable del flujo de trabajo (no_of_attachments)
-
-
-
-
+- Consulte todos los archivos adjuntos de los formularios adaptables de la carpeta de carga útil. El nombre de la carpeta se pasa como argumento de proceso al paso de proceso.
+- Cree un archivo zip que contenga los archivos adjuntos del formulario y almacénelo en la carpeta de carga útil.
+- Establezca el valor de la variable del flujo de trabajo (no_of_attachments).
 
 ```java
- package com.aemforms.formattachments.core;
+package com.aemforms.formattachments.core;
+
 import javax.jcr.Binary;
 import javax.jcr.Node;
 import javax.jcr.RepositoryException;
@@ -58,16 +54,14 @@ import com.adobe.granite.workflow.metadata.MetaDataMap;
 import com.day.cq.search.PredicateGroup;
 import com.day.cq.search.Query;
 import com.day.cq.search.QueryBuilder;
-import com.day.cq.search.result.Hit
+import com.day.cq.search.result.Hit;
 import com.day.cq.search.result.SearchResult;
-
 
 @Component(property = {
         Constants.SERVICE_DESCRIPTION + "=Zip form attachments",
         Constants.SERVICE_VENDOR + "=Adobe Systems",
         "process.label" + "=Zip form attachments"
 })
-
 
 public class ZipFormAttachments implements WorkflowProcess {
 
@@ -76,13 +70,12 @@ public class ZipFormAttachments implements WorkflowProcess {
      QueryBuilder queryBuilder;
 
      @Override
-     public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments) throws WorkflowException
-     {
+     public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments) throws WorkflowException {
              String payloadPath = workItem.getWorkflowData().getPayload().toString();
-             log.debug("The payload path  is" + payloadPath);
+             log.debug("The payload path is " + payloadPath);
              MetaDataMap metaDataMap = workItem.getWorkflow().getWorkflowData().getMetaDataMap();
              Session session = workflowSession.adaptTo(Session.class);
-             Map < String, String > map = new HashMap < String, String > ();
+             Map<String, String> map = new HashMap<String, String>();
              map.put("path", workItem.getWorkflowData().getPayload().toString() + "/" + processArguments.get("PROCESS_ARGS", "string").toString());
              map.put("type", "nt:file");
              Query query = queryBuilder.createQuery(PredicateGroup.create(map), workflowSession.adaptTo(Session.class));
@@ -93,19 +86,16 @@ public class ZipFormAttachments implements WorkflowProcess {
              ByteArrayOutputStream baos = new ByteArrayOutputStream();
              ZipOutputStream zipOut = new ZipOutputStream(baos);
              int no_of_attachments = result.getHits().size();
-             for (Hit hit: result.getHits())
-             {
-                     try
-                     {
+             for (Hit hit: result.getHits()) {
+                     try {
                              String attachmentPath = hit.getPath();
-                             log.debug("The hit path is" + hit.getPath());
+                             log.debug("The hit path is " + hit.getPath());
                              Node attachmentNode = session.getNode(attachmentPath + "/jcr:content");
                              InputStream attachmentStream = attachmentNode.getProperty("jcr:data").getBinary().getStream();
                              ByteArrayOutputStream buffer = new ByteArrayOutputStream();
                              int nRead;
                              byte[] data = new byte[1024];
-                             while ((nRead = attachmentStream.read(data, 0, data.length)) != -1)
-                             {
+                             while ((nRead = attachmentStream.read(data, 0, data.length)) != -1) {
                                      buffer.write(data, 0, nRead);
                              }
 
@@ -116,19 +106,16 @@ public class ZipFormAttachments implements WorkflowProcess {
                              zipOut.write(byteArray);
                              zipOut.closeEntry();
 
-                     } 
-                     catch (Exception e)
-                     {
+                     } catch (Exception e) {
                              log.debug("The error message is " + e.getMessage());
                      }
              }
-             try
-             {
+             try {
                     zipOut.close();
                     Node payloadNode = session.getNode(payloadPath);
                     Node zippedFileNode =  payloadNode.addNode("zipped_attachments.zip", "nt:file");
                     javax.jcr.Node resNode = zippedFileNode.addNode("jcr:content", "nt:resource");
-                
+
                     ValueFactory valueFactory = session.getValueFactory();
                     Document zippedDocument = new Document(baos.toByteArray());
 
@@ -141,27 +128,19 @@ public class ZipFormAttachments implements WorkflowProcess {
                     session.save();
                     zippedDocument.close();
 
-
-
-             }
-             catch (IOException | RepositoryException e)
-             {
-                     
+             } catch (IOException | RepositoryException e) {
                      log.error("Error in closing zipout", e);
              }
-             
-            
-             
-
      }
-
 }
 ```
 
 >[!NOTE]
 >
-> Asegúrese de tener una variable denominada *no_of_attachments* de tipo Double en el flujo de trabajo para que este código funcione.
+> Asegúrese de tener una variable denominada _no_of_attachments_ de tipo Double en el flujo de trabajo para que este código funcione.
 
-## Siguientes pasos
+## Pasos siguientes
 
 [Rellenar variables de flujo de trabajo ArrayList con datos adjuntos y nombre de datos adjuntos](./custom-process-step.md)
+
+
