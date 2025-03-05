@@ -1,118 +1,307 @@
 ---
-title: AEM Información general de APIs
-description: Obtenga información acerca de los distintos tipos de API en Adobe Experience Manager AEM AEM () y obtenga una descripción general de las API basadas en la especificación OpenAPI, comúnmente conocidas como API basadas en OpenAPI.
+title: Resumen de API de AEM
+description: Obtenga información sobre los distintos tipos de API en Adobe Experience Manager (AEM) y comprenda qué API elegir para su integración.
 version: Cloud Service
 feature: Developing
 topic: Development, Architecture, Content Management
 role: Architect, Developer, Leader
 level: Beginner
 doc-type: Article
-jira: KT-16515
-thumbnail: KT-16515.jpeg
-last-substantial-update: 2024-11-20T00:00:00Z
+jira: KT-17425
+thumbnail: KT-17425.jpeg
+last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 23b2be0d-a8d4-4521-96ba-78b70f4e9cba
-source-git-commit: 2b5f7a033921270113eb7f41df33444c4f3d7723
+source-git-commit: e4cf47e14fa7dfc39ab4193d35ba9f604eabf99f
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '945'
 ht-degree: 2%
 
 ---
 
-# AEM Información general de APIs{#aem-apis-overview}
+# Resumen de API de AEM{#aem-apis-overview}
 
-Obtenga información acerca de los diferentes tipos de API en Adobe Experience Manager AEM () as a Cloud Service AEM AEM y obtenga información general sobre las [API de OpenAPI Specification (OAS)](https://swagger.io/specification/) basadas en API de, comúnmente conocidas como API de API basadas en OpenAPI.
+Obtenga información sobre los distintos tipos de API en Adobe Experience Manager (AEM) y comprenda qué API elegir para su integración.
 
-AEM as a Cloud Service proporciona una amplia gama de API para crear, leer, actualizar y eliminar contenido, recursos y formularios. AEM Estas API permiten a los desarrolladores crear aplicaciones personalizadas que interactúen con las API de.
+Para crear, leer, actualizar y eliminar contenido, recursos y formularios en AEM, los desarrolladores pueden utilizar una amplia gama de API. Estas API permiten a los desarrolladores crear aplicaciones personalizadas que interactúen con AEM.
 
-Exploremos los diferentes tipos de API en el ámbito de las API de Adobe y comprendamos los conceptos clave de acceso a las API de AEM.
+Vamos a explorar los diferentes tipos de API en AEM y comprender qué API elegir para su integración.
 
-## AEM Tipos de API de{#types-of-aem-apis}
+## Tipos de API de AEM{#types-of-aem-apis}
 
-AEM ofrece API heredadas y modernas para interactuar con sus tipos de servicio de autor y publicación.
+AEM ofrece las siguientes API para interactuar con sus tipos de servicio de autor y publicación.
 
-- AEM **API heredadas**: introducidas en versiones anteriores de la aplicación, las API heredadas siguen siendo compatibles con versiones anteriores por motivos de compatibilidad con versiones anteriores.
-
-- **API modernas**: Estas API siguen las prácticas recomendadas actuales de diseño de API y se recomiendan para nuevas integraciones, según las especificaciones de REST y OpenAPI.
-
-
-| AEM Tipo de API de | Especificaciones | Disponibilidad | Caso práctico | Ejemplos |
+| Tipo de API de AEM | Descripción | Disponibilidad | Caso práctico | Ejemplos de API |
 | --- | --- | --- | --- | --- |
-| API tradicionales (no RESTful) | Sling Servlets | AEM.X, AEM as a Cloud Service | Integraciones heredadas, compatibilidad con versiones anteriores | [API de Query Builder](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api) y otras |
-| API de RESTful | HTTP, JSON | AEM.X, AEM as a Cloud Service | Operaciones CRUD, aplicaciones modernas | [API HTTP de Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets), [API REST de flujo de trabajo](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-program-interaction#using-the-workflow-rest-api), [exportador JSON para servicios de contenido](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/json-exporter) y otros |
-| API de GraphQL | GraphQL | AEM.X, AEM as a Cloud Service | CMS SPA sin encabezado, aplicaciones móviles, aplicaciones para móviles | [API de GraphQL](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/graphql-api/content-fragments) |
-| AEM API de datos basadas en API de | REST, OpenAPI | **Solo AEM as a Cloud Service** | Desarrollo con API en primer lugar, aplicaciones modernas | [API de autor de Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/), [API de carpetas](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/), [API de AEM Sites](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/delivery/), [Servicios de Forms Acrobat](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) y otros |
+| API de AEM basadas en OpenAPI | API estandarizadas y legibles por el equipo para Assets, Sites y Forms. | **Solo AEM as a Cloud Service** | Desarrollo con API en primer lugar, aplicaciones modernas | [API de autor de Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/), [API de carpetas](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/), [API de AEM Sites](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/delivery/), [Servicios de Forms Acrobat](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) y otros |
+| API de RESTful | Puntos finales REST tradicionales para interactuar con recursos de AEM. | AEM 6.X, AEM as a Cloud Service | Operaciones CRUD, aplicaciones modernas | [API HTTP de Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets), [API REST de flujo de trabajo](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-program-interaction#using-the-workflow-rest-api), [exportador JSON para servicios de contenido](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/json-exporter) y otros |
+| API de GraphQL | Optimizado para recuperar contenido estructurado de forma eficaz con consultas flexibles. | AEM 6.X, AEM as a Cloud Service | CMS sin encabezado, SPA, aplicaciones móviles | [API de GraphQL](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/graphql-api/content-fragments) |
+| API tradicionales (no RESTful) | Las API más antiguas, como JCR, modelos Sling, Query Builder y otras. | AEM 6.X, AEM as a Cloud Service | Integraciones heredadas, compatibilidad con versiones anteriores | [API de Query Builder](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api) y otras |
 
->[!IMPORTANT]
->
->AEM Las API de basadas en OpenAPI solo están disponibles en AEM as a Cloud Service AEM y no son compatibles con la versión 6.X de.
+Para obtener más información, consulte la página [API de Adobe Experience Manager as a Cloud Service](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
 
-AEM Para obtener más información sobre las API de, consulte las [API de Adobe Experience Manager as a Cloud Service](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
+## Qué API elegir{#which-api-to-choose}
 
-AEM Veamos con más detalle las API de API de basadas en OpenAPI y los conceptos importantes de acceso a las API de Adobe.
+Al seleccionar una API para la integración, tenga en cuenta los siguientes factores:
 
-## AEM API de datos basadas en API de{#openapi-based-aem-apis}
+- **Caso de uso**: Determine si la API de AEM admite su caso de uso. Siempre que sea posible, _use las API de AEM basadas en OpenAPI_, ya que proporcionan un enfoque estandarizado y moderno para interactuar con AEM. Si las API basadas en OpenAPI no están disponibles, considere la posibilidad de utilizar las API de RESTful o las API de GraphQL y, como último recurso, las API tradicionales.
 
->[!AVAILABILITY]
->
->AEM Las API de basadas en OpenAPI están disponibles como parte de un programa de acceso anticipado. Si está interesado en acceder a ellos, le recomendamos que envíe un correo electrónico a [aem-apis@adobe.com](mailto:aem-apis@adobe.com) con una descripción de su caso de uso.
+- **Compatibilidad**: Asegúrese de que la API seleccionada sea compatible con su versión de AEM. Por ejemplo, _las API de AEM basadas en OpenAPI son exclusivas de AEM as a Cloud Service_ y no están disponibles en AEM 6.X.
 
-[Especificación de OpenAPI](https://swagger.io/specification/) (anteriormente conocida como Swagger) es un estándar ampliamente utilizado para definir las API de RESTful. AEM as a Cloud Service proporciona varias API basadas en la especificación OpenAPI (o simplemente API basadas en OpenAPI), lo que facilita la creación de aplicaciones personalizadas que interactúen con los tipos de servicio de autor o publicación de la publicación de los que se dispone en la documentación de AEM AEM. A continuación se muestran algunos ejemplos:
+- **Tipo de servicio de AEM: autor vs. publicación**: la elección de la API también depende de si se ejecuta en el servicio de autor o publicación, ya que sus modelos de acceso son diferentes. El servicio AEM Author se utiliza para crear contenido y siempre requiere autenticación. El servicio de publicación de AEM se utiliza para la entrega de contenido y es posible que no requiera autenticación, según el caso de uso.
 
-**Sitios**
+- **Autenticación**: Compruebe que la API admite el método de autenticación que planea usar. Por ejemplo:
+   - **API de AEM basadas en OpenAPI**: admiten la autenticación OAuth 2.0, incluidas las credenciales de cliente (servidor a servidor), el código de autorización (aplicación web) y la clave de revisión para los tipos de concesión de intercambio de código (aplicación de una sola página). Otras API de AEM no admiten la autenticación OAuth 2.0.
+   - **API RESTful**: admite la autenticación de token web JSON (JWT), también conocida como autenticación basada en token.
 
-- [API de sitios](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/delivery/): API para trabajar con fragmentos de contenido.
+## Diferencia entre el token web JSON (JWT) y OAuth 2.0{#difference-between-jwt-and-oauth}
 
-**Assets**
+Vamos a comparar el token web JSON (JWT) y OAuth 2.0, dos mecanismos de autenticación comunes utilizados en las API de AEM:
 
-- [API de carpetas](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/): API para trabajar con carpetas, como crear, mostrar y eliminar carpetas.
-
-- [API de autor de Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/): API para trabajar con recursos y sus metadatos.
-
-**Forms**
-
-- [API de comunicaciones de Forms](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/): API para trabajar con formularios y documentos.
-
-AEM En futuras versiones, se añadirán más API de API de basadas en OpenAPI para admitir casos de uso adicionales.
-
-### Compatibilidad con autenticación{#authentication-support}
-
-AEM Las API de basadas en OpenAPI admiten los siguientes métodos de autenticación:
-
-- **Credencial de servidor a servidor OAuth**: ideal para servicios back-end que necesitan acceso a API sin interacción del usuario. Utiliza el tipo de concesión _client_credentials_, lo que permite la administración segura del acceso en el nivel de servidor. Para obtener más información, consulte [Credencial de servidor a servidor de OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/#oauth-server-to-server-credential).
-
-- AEM **Credencial de la aplicación web OAuth**: Adecuado para aplicaciones web con componentes de front-end y _back-end_ que acceden a las API de en nombre de los usuarios. Utiliza el tipo de concesión _authorization_code_, donde el servidor backend administra secretos y tokens de forma segura. Para obtener más información, consulte [Credencial de la aplicación web OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation/#oauth-web-app-credential).
-
-- SPA **Credencial de aplicación de una sola página de OAuth**: diseñada para ejecutarse en el explorador, que necesita acceder a las API en nombre de un usuario sin un servidor back-end. Utiliza el tipo de concesión _authorization_code_ y se basa en los mecanismos de seguridad del lado del cliente mediante PKCE (clave de prueba para intercambio de código) para proteger el flujo del código de autorización. Para obtener más información, consulte [Credencial de aplicación de una sola página de OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation/#oauth-single-page-app-credential).
-
-### Diferencia entre las credenciales de servidor a servidor de OAuth y aplicación web de OAuth/aplicación de una sola página{#difference-between-oauth-server-to-server-and-oauth-web-app-single-page-app-credentials}
-
-| | Servidor a servidor OAuth | Autenticación de usuario de OAuth (aplicación web) |
+| Funcionalidad | Token web JSON (JWT) | OAuth 2.0 |
 | --- | --- | --- |
-| Objetivo de autenticación | Diseñado para interacciones máquina a máquina. | Diseñado para interacciones impulsadas por el usuario. |
-| Comportamiento del token | Emite tokens de acceso que representan la propia aplicación cliente. | Emite tokens de acceso en nombre de un usuario autenticado. |
-| Casos de uso | Servicios back-end que necesitan acceso a API sin interacción del usuario. | Las aplicaciones web con componentes de front-end y back-end acceden a las API en nombre de los usuarios. |
-| Consideraciones de seguridad | Almacene de forma segura credenciales confidenciales (`client_id`, `client_secret`) en sistemas back-end. | Los usuarios se autentican y obtienen su propio token de acceso temporal. Almacene de forma segura credenciales confidenciales (`client_id`, `client_secret`) en sistemas back-end. |
-| Tipo de concesión | _client_credentials_ | _código de autorización_ |
+| Utilizado en | API de RESTful | API de AEM basadas en OpenAPI (no admitidas en RESTful ni en otras API) |
+| Función | Autenticación de servicio | Autenticación de usuarios o servicios |
+| Interacción del usuario | No se requiere interacción del usuario | Interacción de usuario necesaria para los tipos de concesión de código de autorización y aplicación de una sola página |
+| Más Adecuado Para | Llamadas de API de servidor a servidor | Acceso seguro y permitido para aplicaciones y usuarios |
+| Información necesaria | Clave privada para firmar JWT | ID de cliente y secreto de cliente para OAuth 2.0 |
+| Caducidad del token | De corta duración, a menudo necesita actualización | El token de acceso es de corta duración. El token de actualización es de larga duración y se utiliza para obtener un nuevo token de acceso |
+| Administración de credenciales | [AEM Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) | [Adobe Developer Console](https://developer.adobe.com/developer-console/) |
 
-### Acceso a las API de Adobe y conceptos relacionados{#accessing-adobe-apis-and-related-concepts}
+## API de AEM basadas en OpenAPI
 
-Antes de acceder a las API de Adobe, es esencial comprender estos conceptos clave:
+Obtenga más información acerca de las API de AEM basadas en OpenAPI y los conceptos importantes para acceder a las API de Adobe en la guía [API de AEM basadas en OpenAPI](./openapis/overview.md).
 
-- **[Adobe Developer Console](https://developer.adobe.com/)**: el centro para desarrolladores para acceder a las API de Adobe, SDK, eventos en tiempo real, funciones sin servidor y mucho más. AEM Tenga en cuenta que es diferente del Developer Console AEM __, que se usa para depurar aplicaciones de la.
+### Casos de uso
 
-- **[Proyecto Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/projects/)**: Lugar central para administrar integraciones de API, eventos y funciones de tiempo de ejecución. Aquí puede configurar las API, establecer la autenticación y generar las credenciales necesarias.
+<!-- CARDS
+{target = _self}
 
-- **[Perfiles de producto](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html?lang=es)**: los perfiles de producto proporcionan un ajuste preestablecido de permisos que le permite controlar el acceso de usuarios o aplicaciones a productos de Adobe AEM como, por ejemplo,, Adobe Target, Adobe Analytics y otros. Cada producto de Adobe tiene perfiles de producto predefinidos asociados a él.
+* ./openapis/use-cases/invoke-api-using-oauth-s2s.md
+  {title = Invoke API using Server-to-Server authentication}
+  {description = Learn how to invoke OpenAPI-based AEM APIs from a custom NodeJS application using OAuth Server-to-Server authentication.}
+  {image = ./openapis/assets/s2s/OAuth-S2S.png}
+* ./openapis/use-cases/invoke-api-using-oauth-web-app.md
+  {title = Invoke API using Web App authentication}
+  {description = Learn how to invoke OpenAPI-based AEM APIs from a custom web application using OAuth Web App authentication.}
+  {image = ./openapis/assets/web-app/OAuth-WebApp.png}  
+-->
+<!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
+<div class="columns">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Invoke API using Server-to-Server authentication">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="./openapis/use-cases/invoke-api-using-oauth-s2s.md" title="Invocar la API mediante la autenticación de servidor a servidor" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="./openapis/assets/s2s/OAuth-S2S.png" alt="Invocar la API mediante la autenticación de servidor a servidor"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="./openapis/use-cases/invoke-api-using-oauth-s2s.md" target="_self" rel="referrer" title="Invocar la API mediante la autenticación de servidor a servidor">Invocar API mediante autenticación de servidor a servidor</a>
+                    </p>
+                    <p class="is-size-6">Obtenga información sobre cómo invocar las API de AEM basadas en OpenAPI desde una aplicación NodeJS personalizada mediante la autenticación de servidor a servidor OAuth.</p>
+                </div>
+                <a href="./openapis/use-cases/invoke-api-using-oauth-s2s.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Invoke API using Web App authentication">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="./openapis/use-cases/invoke-api-using-oauth-web-app.md" title="Invocar la API mediante la autenticación de aplicación web" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="./openapis/assets/web-app/OAuth-WebApp.png" alt="Invocar la API mediante la autenticación de aplicación web"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="./openapis/use-cases/invoke-api-using-oauth-web-app.md" target="_self" rel="referrer" title="Invocar la API mediante la autenticación de aplicación web">Invocar API mediante autenticación de aplicación web</a>
+                    </p>
+                    <p class="is-size-6">Obtenga información sobre cómo invocar las API de AEM basadas en OpenAPI desde una aplicación web personalizada mediante la autenticación de aplicación web de OAuth.</p>
+                </div>
+                <a href="./openapis/use-cases/invoke-api-using-oauth-web-app.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
 
-- **Servicios**: los servicios definen los permisos reales y están asociados al perfil del producto. Para reducir o aumentar el ajuste preestablecido de permisos, puede anular la selección de los servicios asociados con el perfil del producto o seleccionarlos. Por lo tanto, le permite controlar el nivel de acceso al producto y a sus API. En AEM as a Cloud Service, los servicios representan grupos de usuarios con Listas de control de acceso (ACL) predefinidas para nodos del repositorio, lo que permite la administración granular de permisos.
 
-## Pasos siguientes{#next-steps}
 
-AEM Con una comprensión de los diferentes tipos de API de, que incluyen
-AEM Las API basadas en API abiertas de, y los conceptos clave para acceder a las API de Adobe AEM de, ya están listos para empezar a crear aplicaciones personalizadas que interactúen con las API de.
+## API de GraphQL: ejemplos
 
-Empecemos con lo siguiente:
+Obtenga más información acerca de las API de GraphQL y cómo usarlas en [Introducción a AEM sin encabezado: GraphQL](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview)
 
-- AEM AEM [Invocar API de API de basadas en OpenAPI para la autenticación de servidor a servidor](invoke-openapi-based-aem-apis.md) tutorial que muestra cómo acceder a las API de API basadas en OpenAPI _mediante credenciales de servidor a servidor de OAuth_.
-- AEM AEM [Invocar las API de basadas en OpenAPI con autenticación de usuario desde una aplicación web](invoke-openapi-based-aem-apis-from-web-app.md) tutorial que muestra cómo acceder a las API de basadas en OpenAPI desde una _aplicación web mediante las credenciales de la aplicación web de OAuth_.
+### Casos de uso
+
+<!-- CARDS
+{target = _self}
+
+* https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/spa#example-single-page-app
+  {title = Single Page Application (SPA)}
+  {description = Learn how to build a Single Page Application (SPA) that fetches content from AEM using GraphQL APIs.}
+  {image = ./assets/react-app-card.png}
+* https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/mobile#example-mobile-apps
+  {title = Mobile App}
+  {description = Learn how to build a mobile app that fetches content from AEM using GraphQL APIs.}
+  {image = ./assets/ios-app-card.png}
+* https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/web-component#example-web-component
+  {title = Web Component}
+  {description = Learn how to build a web component that fetches content from AEM using GraphQL APIs.}
+  {image = ./assets/web-component-card.png}
+-->
+<!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
+<div class="columns">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Single Page Application (SPA)">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/spa#example-single-page-app" title="Aplicación de una sola página (SPA)" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="./assets/react-app-card.png" alt="Aplicación de una sola página (SPA)"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/spa#example-single-page-app" target="_self" rel="referrer" title="Aplicación de una sola página (SPA)">Aplicación de una sola página (SPA)</a>
+                    </p>
+                    <p class="is-size-6">Obtenga información sobre cómo crear una aplicación de una sola página (SPA) que obtenga contenido de AEM mediante las API de GraphQL.</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/spa#example-single-page-app" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Mobile App">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/mobile#example-mobile-apps" title="Aplicación móvil" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="./assets/ios-app-card.png" alt="Aplicación móvil"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/mobile#example-mobile-apps" target="_self" rel="referrer" title="Aplicación móvil">Aplicación móvil</a>
+                    </p>
+                    <p class="is-size-6">Obtenga información sobre cómo crear una aplicación móvil que recupere contenido de AEM mediante las API de GraphQL.</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/mobile#example-mobile-apps" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Web Component">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/web-component#example-web-component" title="Componente web" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="./assets/web-component-card.png" alt="Componente web"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/web-component#example-web-component" target="_self" rel="referrer" title="Componente web">Componente web</a>
+                    </p>
+                    <p class="is-size-6">Obtenga información sobre cómo crear un componente web que obtenga contenido de AEM mediante las API de GraphQL.</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/web-component#example-web-component" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
+
+## API de RESTful: ejemplos
+
+Obtenga más información acerca de las API de RESTful, como la [API HTTP de Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) y el [Exportador JSON](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/json-exporter).
+
+### Casos de uso
+
+<!-- CARDS
+{target = _self}
+
+* https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview
+  {title = Invoke API using Server-to-Server authentication}
+  {description = Learn how to build a native mobile app that fetches content from AEM using Content Services RESTful APIs.}
+  {image = ./assets/RESTful-Content-Service.png}
+* https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview
+  {title = Token-based Authentication for RESTful APIs}
+  {description = Learn how to invoke RESTful APIs using JSON Web Token (JWT) authentication.}
+  {image = ./assets/RESTful-TokenAuth.png}
+-->
+<!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
+<div class="columns">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Invoke API using Server-to-Server authentication">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview" title="Invocar la API mediante la autenticación de servidor a servidor" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="./assets/RESTful-Content-Service.png" alt="Invocar la API mediante la autenticación de servidor a servidor"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview" target="_self" rel="referrer" title="Invocar la API mediante la autenticación de servidor a servidor">Invocar API mediante autenticación de servidor a servidor</a>
+                    </p>
+                    <p class="is-size-6">Aprenda a crear una aplicación móvil nativa que recupere contenido de AEM mediante las API de RESTful de servicios de contenido.</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Token-based Authentication for RESTful APIs">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview" title="Autenticación basada en tokens para API de RESTful" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="./assets/RESTful-TokenAuth.png" alt="Autenticación basada en tokens para API de RESTful"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview" target="_self" rel="referrer" title="Autenticación basada en tokens para API de RESTful">Autenticación basada en tokens para API RESTful</a>
+                    </p>
+                    <p class="is-size-6">Obtenga información sobre cómo invocar las API de RESTful mediante la autenticación de token web JSON (JWT).</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
+
+

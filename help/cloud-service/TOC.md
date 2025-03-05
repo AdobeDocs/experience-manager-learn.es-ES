@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 99aa43460a76460175123a5bfe5138767491252b
+source-git-commit: e4cf47e14fa7dfc39ab4193d35ba9f604eabf99f
 workflow-type: tm+mt
-source-wordcount: '1366'
+source-wordcount: '1377'
 ht-degree: 16%
 
 ---
@@ -17,29 +17,29 @@ ht-degree: 16%
 # Tutoriales de Adobe Experience Manager as a Cloud Service {#cloud-service}
 
 + [Información general](./overview.md)
-+ AEM {#aem-trials}
++ Pruebas de AEM {#aem-trials}
    + [Imágenes](./aem-trials/images.md)
 + Listas de reproducción{#playlists}
-   + [AEM desarrollo de la](./playlists/development.md)
+   + [Desarrollo de AEM](./playlists/development.md)
 + Introducción a AEM as a Cloud Service{#introduction}
    + [¿Qué es AEM as a Cloud Service?](./introduction/what-is-aem-as-a-cloud-service.md)
    + [Arquitectura](./introduction/architecture.md)
    + [Cloud Manager](./introduction/cloud-manager.md)
    + Estrategia y liderazgo mental{#strategy}
-      + [Experience Manager - Modelos y arquetipos de gobernanza y personal](./introduction/experience-manager-governance-and-staffing-models.md)
+      + [Experience Manager: modelos y arquetipos de administración y dotación de personal](./introduction/experience-manager-governance-and-staffing-models.md)
       + [Cómo aumentar la velocidad del contenido con Adobe Experience Manager](./introduction/drive-content-velocity-for-sites.md)
-+ integraciones de Experience Cloud{#integrations}
++ Integraciones de Experience Cloud{#integrations}
    + [Integraciones](./integrations/experience-cloud.md)
    + [Adobe Target](./integrations/target.md)
 + Tecnología subyacente {#underlying-technology}
-   + [AEM Arquitectura de](./underlying-technology/introduction-architecture.md)
+   + [Arquitectura de AEM](./underlying-technology/introduction-architecture.md)
    + [OSGi](./underlying-technology/introduction-osgi.md)
    + [Repositorio de contenido Java](./underlying-technology/introduction-jcr.md)
    + [Sling](./underlying-technology/introduction-sling.md)
-   + [Creación y servicios de Publish](./underlying-technology/introduction-author-publish.md)
+   + [Servicios de creación y publicación](./underlying-technology/introduction-author-publish.md)
    + [Dispatcher](./underlying-technology/introduction-dispatcher.md)
 + Edge Delivery Services {#edge-delivery-services}
-   + [Complemento de Sidekick de AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/edge-delivery-services/sidekick-plugin.html){target=_blank}
+   + [Complemento de Sidekick para AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/edge-delivery-services/sidekick-plugin.html){target=_blank}
 + Cloud Manager {#cloud-manager}
    + [Programas](./cloud-manager/programs.md)
    + [Entornos](./cloud-manager/environments.md)
@@ -97,9 +97,9 @@ ht-degree: 16%
       + [Publicación de contenido](./developing/basics/content-publishing.md)
       + [Configuraciones de OSGi](./developing/basics/osgi-configurations.md)
       + [Migración de configuración de Dispatcher](./developing/basics/dispatcher-configuration.md)
-   + AEM Proyectos {#aem-projects}
-      + [AEM Proyecto de Maven](./developing/projects/maven-project-structure.md)
-      + [AEM Limpieza de un proyecto de Maven de](./developing/projects/remove-samples.md)
+   + Proyectos AEM{#aem-projects}
+      + [Proyecto Maven de AEM](./developing/projects/maven-project-structure.md)
+      + [Limpieza de un proyecto Maven de AEM](./developing/projects/remove-samples.md)
    + Servicios OSGi{#osgi-services}
       + [Conceptos básicos del servicio OSGi](./developing/osgi-services/basics.md)
       + [Ciclo de vida del componente OSGi](./developing/osgi-services/lifecycle.md)
@@ -113,7 +113,7 @@ ht-degree: 16%
       + [Secretos](./developing/advanced/secrets.md)
       + [Usuarios del servicio](./developing/advanced/service-users.md)
       + [API de imagen optimizadas para la web](./developing/advanced/web-optimized-image-delivery-java-apis.md)
-      + [AEM Ejecutar el trabajo en la instancia de líder en el autor de](./developing/advanced/run-job-on-leader-instance-in-aem-author.md)
+      + [Ejecutar trabajo en instancia de líder en AEM Author](./developing/advanced/run-job-on-leader-instance-in-aem-author.md)
    + Entorno de desarrollo rápido{#rde}
       + [Información general](./developing/rde/overview.md)
       + [Cómo realizar la configuración](./developing/rde/how-to-setup.md)
@@ -124,9 +124,9 @@ ht-degree: 16%
          + [Información general](./developing/universal-editor/react-app/overview.md)
          + [Configuración de desarrollo local](./developing/universal-editor/react-app/local-development-setup.md)
          + [Aplicación React de Instrumento](./developing/universal-editor/react-app/instrument-to-edit-content.md)
-   + AEM [API de SDK JavaDocs](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html){target=_blank}
-+ AEM Depuración de {#debugging}
-   + AEM Depurando el SDK {#debugging-aem-sdk} de la
+   + [AEM SDK API JavaDocs](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html){target=_blank}
++ Depurando AEM{#debugging}
+   + Depurando AEM SDK{#debugging-aem-sdk}
       + [Información general](./debugging/aem-sdk-local-quickstart/overview.md)
       + [Registros](./debugging/aem-sdk-local-quickstart/logs.md)
       + [Depuración remota](./debugging/aem-sdk-local-quickstart/remote-debugging.md)
@@ -141,10 +141,16 @@ ht-degree: 16%
       + [Explorador del repositorio](./debugging/cloud-service/repository-browser.md)
       + Riesgos{#risks}
          + [Advertencias transversales](./debugging/cloud-service/risks/traversals.md)
-+ AEM API de{#aem-apis}
++ API de AEM{#aem-apis}
    + [Información general](./apis/overview.md)
-   + [AEM API de datos basadas en API de OpenAPI (servidor a servidor)](./apis/invoke-openapi-based-aem-apis.md)
-   + [AEM API basadas en API de OpenAPI (autenticación de usuario)](./apis/invoke-openapi-based-aem-apis-from-web-app.md)
+   + OpenAPIs{#openapis}
+      + [Información general](./apis/openapis/overview.md)
+      + [Cómo realizar la configuración](./apis/openapis/setup.md)
+      + [Autenticación de servidor a servidor](./apis/openapis/use-cases/invoke-api-using-oauth-s2s.md)
+      + [Autenticación de usuario (aplicación web)](./apis/openapis/use-cases/invoke-api-using-oauth-web-app.md)
+      + Cómo {#how-to}
+         + [Administración de credenciales y perfiles de producto](./apis/openapis/how-to/credentials-and-product-profile-management.md)
+         + [Administración de permisos](./apis/openapis/how-to/services-user-group-permission-management.md)
 + Entrega de contenido{#content-delivery}
    + [Nombre de dominio personalizado](./content-delivery/custom-domain-names.md)
    + [Nombre de dominio personalizado con CDN administrada por Adobe](./content-delivery/custom-domain-name-with-adobe-managed-cdn.md)
@@ -155,19 +161,19 @@ ht-degree: 16%
    + [Redirecciones de URL](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html){target=_blank}
 + Almacenando en caché {#caching}
    + [Información general](./caching/overview.md)
-   + [AEM servicio de Publish de](./caching/publish.md)
-   + [AEM Servicio de autor de](./caching/author.md)
+   + [Servicio de publicación de AEM](./caching/publish.md)
+   + [Servicio de AEM Author](./caching/author.md)
    + [Análisis del índice de aciertos de caché CDN](./caching/cdn-cache-hit-ratio-analysis.md)
    + Cómo {#how-to}
       + [Habilitar almacenamiento en caché](./caching/how-to/enable-caching.md)
       + [Deshabilitar almacenamiento en caché](./caching/how-to/disable-caching.md)
       + [Purgar caché](./caching/how-to/purge-cache.md)
-+ AEM Accediendo a {#accessing}
++ Accediendo a AEM{#accessing}
    + [Información general](./accessing/overview.md)
    + [Usuarios de Adobe IMS](./accessing/adobe-ims-users.md)
    + [Grupos de usuarios de IMS de Adobe](./accessing/adobe-ims-user-groups.md)
    + [Perfiles del producto IMS de Adobe](./accessing/adobe-ims-product-profiles.md)
-   + [AEM usuarios, grupos y permisos de la](./accessing/aem-users-groups-and-permissions.md)
+   + [Usuarios, grupos y permisos de AEM](./accessing/aem-users-groups-and-permissions.md)
    + [Configuración del acceso a la guía de AEM](./accessing/walk-through.md)
 + Autenticación{#authentication}
    + [Información general](./authentication/authentication.md)
@@ -190,13 +196,13 @@ ht-degree: 16%
       + [Cómo realizar la configuración](./security/traffic-filter-rules/how-to-setup.md)
       + [Ejemplos y análisis de resultados](./security/traffic-filter-rules/examples-and-analysis.md)
       + [Prácticas recomendadas](./security/traffic-filter-rules/best-practices.md)
-+ AEM Eventing de la{#aem-eventing}
++ Eventos de AEM{#aem-eventing}
    + [Información general](./eventing/overview.md)
    + Ejemplos{#examples}
-      + [AEM Webhook: Recibir eventos](./eventing/examples/webhook.md)
-      + [AEM Diario: Cargar eventos de](./eventing/examples/journaling.md)
-      + [Acción De Adobe I/O Runtime AEM: Recibir Eventos De](./eventing/examples/runtime-action.md)
-      + [Acción de Adobe I/O Runtime AEM: eventos de proceso de](./eventing/examples/event-processing-using-runtime-action.md)
+      + [Webhook: recibir eventos de AEM](./eventing/examples/webhook.md)
+      + [Diario: cargar eventos de AEM](./eventing/examples/journaling.md)
+      + [Acción de Adobe I/O Runtime: recibir eventos de AEM](./eventing/examples/runtime-action.md)
+      + [Acción de Adobe I/O Runtime: procesar eventos de AEM](./eventing/examples/event-processing-using-runtime-action.md)
       + [Eventos de AEM Assets: integración de PIM](./eventing/examples/assets-pim-integration.md)
 + Migración {#migration}
    + [Herramienta de transferencia de contenido](./migration/content-transfer-tool.md)
@@ -206,9 +212,9 @@ ht-degree: 16%
       + [Incorporación](./migration/moving-to-aem-as-a-cloud-service/onboarding.md)
       + [Cloud Manager](./migration/moving-to-aem-as-a-cloud-service/cloud-manager.md)
       + [BPA y CAM](./migration/moving-to-aem-as-a-cloud-service/bpa-and-cam.md)
-      + [AEM Herramientas de modernización de](./migration/moving-to-aem-as-a-cloud-service/aem-modernization-tools.md)
+      + [Herramientas de modernización de AEM](./migration/moving-to-aem-as-a-cloud-service/aem-modernization-tools.md)
       + [Modernización del repositorio](./migration/moving-to-aem-as-a-cloud-service/repository-modernization.md)
-      + [Microservicios de Asset Compute](./migration/moving-to-aem-as-a-cloud-service/asset-compute-microservices.md)
+      + [Asset Compute Microservices](./migration/moving-to-aem-as-a-cloud-service/asset-compute-microservices.md)
       + [Dispatcher](./migration/moving-to-aem-as-a-cloud-service/dispatcher.md)
       + [Búsqueda e indexación](./migration/moving-to-aem-as-a-cloud-service/search-and-indexing.md)
       + Migración de contenido {#content-migration}
@@ -237,12 +243,12 @@ ht-degree: 16%
       + [1 - Introducción](./forms/developing-for-cloud-service/getting-started.md)
       + [2 - Instalar IntelliJ](./forms/developing-for-cloud-service/intellij-set-up.md)
       + [3 - Configurar Git](./forms/developing-for-cloud-service/setup-git.md)
-      + [AEM 4 - Sincronizar IntelliJ con la opción de sincronización con la](./forms/developing-for-cloud-service/intellij-and-aem-sync.md)
+      + [4 - Sincronizar IntelliJ con AEM](./forms/developing-for-cloud-service/intellij-and-aem-sync.md)
       + [5 - Crear un formulario](./forms/developing-for-cloud-service/deploy-your-first-form.md)
       + [6 - Controlador de envío personalizado](./forms/developing-for-cloud-service/custom-submit-to-servlet.md)
       + [7 - Registro del servlet mediante el tipo de recurso](./forms/developing-for-cloud-service/registering-servlet-using-resourcetype.md)
       + [8 - Habilitar los componentes del portal de Forms](./forms/developing-for-cloud-service/forms-portal-components.md)
-      + [9 - Incluir Cloud Service y FDM](./forms/developing-for-cloud-service/azure-storage-fdm.md)
+      + [9 - Incluir Cloud Services y FDM](./forms/developing-for-cloud-service/azure-storage-fdm.md)
       + [10 - Configuración de nube según el contexto](./forms/developing-for-cloud-service/context-aware-fdm.md)
       + [11 - Insertar en Cloud Manager](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
       + [12 - Implementar en el entorno de desarrollo](./forms/developing-for-cloud-service/deploy-to-dev-environment.md)
@@ -382,14 +388,14 @@ ht-degree: 16%
       + [Almacenar datos de formulario en SharePoint](./forms/forms-cs-sharepoint/store-form-submission-in-sharepoint.md)
       + [Rellenar previamente el formulario con datos de la lista de SharePoint](./forms/forms-cs-sharepoint/prefill-data-from-sharepoint-list.md)
       + [Inserción de datos en la lista de SharePoint mediante un flujo de trabajo](./forms/forms-cs-sharepoint/submit-data-sharepoint-list-workflow.md)
-+ Extensibilidad de la asset compute {#asset-compute}
++ Extensibilidad de Asset Compute{#asset-compute}
    + [Información general](./asset-compute/overview.md)
    + Configurar {#set-up}
       + [Aprovisionamiento de cuentas y servicios](./asset-compute/set-up/accounts-and-services.md)
       + [Entorno de desarrollo local](./asset-compute/set-up/development-environment.md)
       + [App Builder](./asset-compute/set-up/app-builder.md)
    + Desarrollar {#develop}
-      + [Creación de un proyecto de Asset compute](./asset-compute/develop/project.md)
+      + [Creación de un proyecto de Asset Compute](./asset-compute/develop/project.md)
       + [Configuración de variables de entorno](./asset-compute/develop/environment-variables.md)
       + [Configuración de manifest.yml](./asset-compute/develop/manifest.md)
       + [Desarrollo de un trabajador](./asset-compute/develop/worker.md)
@@ -399,32 +405,32 @@ ht-degree: 16%
       + [Depuración de un trabajador](./asset-compute/test-debug/debug.md)
    + Implementar {#deploy}
       + [Implementación en Adobe I/O Runtime](./asset-compute/deploy/runtime.md)
-      + [AEM Integrar con el](./asset-compute/deploy/processing-profiles.md)
+      + [Integración con AEM](./asset-compute/deploy/processing-profiles.md)
    + Avanzado{#advanced}
       + [Trabajadores de metadatos](./asset-compute/advanced/metadata.md)
    + [Solución de problemas](./asset-compute/troubleshooting.md)
 
-+ Tutorials de varios pasos{#multi-step-tutorials}
++ Tutoriales de varios pasos{#multi-step-tutorials}
    + [Desarrollo de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es){target=_blank}
    + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=es){target=_blank}
-   + SPA [Editor de (React)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html){target=_blank}
+   + [Editor de SPA (React)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html){target=_blank}
    + [AEM Sites y Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html){target=_blank}
    + [Autenticación basada en token](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html){target=_blank}
 + Recursos de expertos {#expert-resources}
-   + AEM Campeones de la {#aem-champions}
+   + AEM Champions {#aem-champions}
       + [Guía de incorporación de Cloud Manager](./expert-resources/aem-champions/onboarding-playbook.md)
       + [Tipos de entornos de Cloud Manager](./expert-resources/aem-champions/environment-types.md)
       + [IU de Cloud Manager](./expert-resources/aem-champions/cloud-manager-ui.md)
-   + [AEM Serie de expertos de](./expert-resources/expert-series/aem-experts-series.md)
+   + [AEM Experts Series](./expert-resources/expert-series/aem-experts-series.md)
    + Nube 5{#cloud-5}
       + [Introducción](./expert-resources/cloud-5/cloud5-introduction.md)
       + [Temporada 4](./expert-resources/cloud-5/cloud5-season-4.md)
       + [Temporada 3](./expert-resources/cloud-5/cloud5-season-3.md)
       + [Temporada 2](./expert-resources/cloud-5/cloud5-season-2.md)
       + [Temporada 1](./expert-resources/cloud-5/cloud5-season-1.md)
-      + [AEM CDN CDN, parte 1](./expert-resources/cloud-5/cloud5-aem-cdn-part1.md)
-      + [AEM CDN CDN, parte 2](./expert-resources/cloud-5/cloud5-aem-cdn-part2.md)
-      + [AEM Archivos de registro de](./expert-resources/cloud-5/cloud5-aem-log-files.md)
+      + [AEM CDN, parte 1](./expert-resources/cloud-5/cloud5-aem-cdn-part1.md)
+      + [AEM CDN, parte 2](./expert-resources/cloud-5/cloud5-aem-cdn-part2.md)
+      + [Archivos de registro de AEM](./expert-resources/cloud-5/cloud5-aem-log-files.md)
       + [Tokens de inicio de sesión](./expert-resources/cloud-5/cloud5-getting-login-token-integrations.md)
       + [Cloud Dispatcher](./expert-resources/cloud-5/cloud5-aem-dispatcher-cloud.md)
       + [Migración 1](./expert-resources/cloud-5/cloud5-aem-content-migration-part-1.md)
@@ -445,7 +451,7 @@ ht-degree: 16%
       + Temporada 3{#season-3}
          + [Búsqueda de terceros](./expert-resources/cloud-5/season-3/cloud5-3rd-party-search.md)
          + [Trabajadores de Edge](./expert-resources/cloud-5/season-3/cloud5-edge-workers.md)
-         + [Publish, cancelar la publicación de eventos en Edge Delivery Services](./expert-resources/cloud-5/season-3/cloud5-publish-events.md)
+         + [Publicar, cancelar la publicación de eventos en Edge Delivery Services](./expert-resources/cloud-5/season-3/cloud5-publish-events.md)
          + [Índices de consulta y fórmulas de Excel](./expert-resources/cloud-5/season-3/cloud5-query-indexes.md)
          + [Traiga su propia CDN de Cloudflare](./expert-resources/cloud-5/season-3/cloud5-byo-cloudflare-cdn.md)
          + [Integración de AEM Assets](./expert-resources/cloud-5/season-3/cloud5-integrate-assets.md)
