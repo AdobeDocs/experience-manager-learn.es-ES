@@ -12,7 +12,7 @@ last-substantial-update: 2024-06-21T00:00:00Z
 jira: KT-15945
 thumbnail: KT-15945.jpeg
 exl-id: fa9ee14f-130e-491b-91b6-594ba47a7278
-source-git-commit: ba744f95f8d1f0b982cd5430860f0cb0945a4cda
+source-git-commit: 98f1996dbeb6a683f98ae654e8fa13f6c7a2f9b2
 workflow-type: tm+mt
 source-wordcount: '1051'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Aprenda a agregar un nombre de dominio personalizado a un sitio web de AEM as a Cloud Service que use un **CDN administrado por el cliente**.
 
-AEM En este tutorial, la marca del sitio de muestra [WKND](https://github.com/adobe/aem-guides-wknd) se ha mejorado al agregar un nombre de dominio personalizado `wkndviaawscdn.enablementadobe.com` al que se puede dirigir mediante HTTPS con Seguridad de la capa de transporte (TLS) mediante una CDN administrada por el cliente. En este tutorial, AWS CloudFront se utiliza como CDN administrada por el cliente, pero cualquier proveedor de CDN debe ser compatible con AEM as a Cloud Service.
+En este tutorial, la marca del sitio de muestra [AEM WKND](https://github.com/adobe/aem-guides-wknd) se ha mejorado al agregar un nombre de dominio personalizado `wkndviaawscdn.enablementadobe.com` al que se puede dirigir mediante HTTPS con Seguridad de la capa de transporte (TLS) mediante una CDN administrada por el cliente. En este tutorial, AWS CloudFront se utiliza como CDN administrada por el cliente, pero cualquier proveedor de CDN debe ser compatible con AEM as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3432561?quality=12&learn=on)
 
@@ -40,8 +40,8 @@ Los pasos de alto nivel son los siguientes:
    - Autoridad de certificación (CA): para solicitar el certificado firmado para el dominio del sitio, como [DigitCert](https://www.digicert.com/)
    - CDN del cliente: para configurar la CDN del cliente y agregar certificados SSL y detalles de dominio, como AWS CloudFront, Azure CDN o Akamai.
    - Servicio de alojamiento del Sistema de nombres de dominio (DNS): para agregar registros DNS para su dominio personalizado, como Azure DNS o AWS Route 53.
-- Acceso a [Cloud Manager de Adobe](https://my.cloudmanager.adobe.com/) para implementar la regla de CDN de validación de encabezado HTTP en el entorno de AEM as a Cloud Service.
-- AEM El sitio de muestra [WKND](https://github.com/adobe/aem-guides-wknd) se ha implementado en el entorno de AEM as a Cloud Service del tipo [programa de producción](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs).
+- Acceso a [Adobe Cloud Manager](https://my.cloudmanager.adobe.com/) para implementar la regla de CDN de validación de encabezado HTTP en el entorno de AEM as a Cloud Service.
+- El sitio de muestra [AEM WKND](https://github.com/adobe/aem-guides-wknd) se ha implementado en el entorno AEM as a Cloud Service de tipo [programa de producción](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs).
 
 Si no tiene acceso a servicios de terceros, _colabore con su equipo de seguridad o de alojamiento para completar los pasos_.
 
@@ -76,7 +76,7 @@ $ openssl crl2pkcs7 -nocrl -certfile <YOUR-SIGNED-CERT>.crt | openssl pkcs7 -pri
 
 El certificado firmado puede contener la cadena de certificados, que incluye los certificados raíz e intermedios junto con el certificado de entidad final.
 
-El Cloud Manager de Adobe acepta el certificado de entidad final y la cadena de certificado _en campos de formulario independientes_, por lo que debe extraer el certificado de entidad final y la cadena de certificado del certificado firmado.
+Adobe Cloud Manager acepta el certificado de entidad final y la cadena de certificado _en campos de formulario independientes_, por lo que debe extraer el certificado de entidad final y la cadena de certificado del certificado firmado.
 
 En este tutorial, se usa como ejemplo el certificado firmado de [DigitCert](https://www.digicert.com/) emitido contra el dominio `*.enablementadobe.com`. La entidad final y la cadena de certificados se extraen abriendo el certificado firmado en un editor de texto y copiando el contenido entre los marcadores `-----BEGIN CERTIFICATE-----` y `-----END CERTIFICATE-----`.
 
@@ -113,7 +113,7 @@ Un paso de seguridad crucial es implementar la regla CDN de validación de encab
 
 >[!VIDEO](https://video.tv.adobe.com/v/3432565?quality=12&learn=on)
 
-Sin la regla de CDN de validación de encabezado HTTP, el valor del encabezado `Host` se establece en el dominio de AEM as a Cloud Service predeterminado que contiene el ID de programa y entorno y termina con `adobeaemcloud.com`. La CDN de Adobe transforma el valor del encabezado `Host` en el valor de `X-Forwarded-Host` recibido de la CDN del cliente solo si se implementa la regla CDN de validación de encabezado HTTP. De lo contrario, el valor del encabezado `Host` se pasa tal cual al entorno de AEM as a Cloud Service y no se utiliza el encabezado `X-Forwarded-Host`.
+Sin la regla de CDN de validación de encabezado HTTP, el valor del encabezado `Host` se establece en el dominio de AEM as a Cloud Service predeterminado que contiene el ID de programa y entorno y termina con `adobeaemcloud.com`. Adobe CDN transforma el valor del encabezado `Host` al valor de `X-Forwarded-Host` recibido de la CDN del cliente solo si se implementa la regla CDN de validación del encabezado HTTP. De lo contrario, el valor del encabezado `Host` se pasa tal cual al entorno de AEM as a Cloud Service y no se utiliza el encabezado `X-Forwarded-Host`.
 
 ### Código servlet de ejemplo para imprimir el valor del encabezado Host
 
@@ -201,16 +201,16 @@ Para configurar e implementar la regla CDN de validación de encabezado HTTP, si
   kind: "CDN"
   version: "1"
   metadata:
-  envTypes: ["prod"]
+    envTypes: ["prod"]
   data:
-  authentication:
+    authentication:
       authenticators:
-      - name: edge-auth
+        - name: edge-auth
           type: edge
           edgeKey1: ${{CDN_EDGEKEY_080124}}
           edgeKey2: ${{CDN_EDGEKEY_110124}}
       rules:
-      - name: edge-auth-rule
+        - name: edge-auth-rule
           when: { reqProperty: tier, equals: "publish" }
           action:
           type: authenticate
@@ -220,7 +220,7 @@ Para configurar e implementar la regla CDN de validación de encabezado HTTP, si
 - Cree variables de entorno de tipo secreto (CDN_EDGEKEY_080124, CDN_EDGEKEY_110124) mediante la interfaz de usuario de Cloud Manager.
 - Implemente la regla CDN de validación de encabezado HTTP en el entorno de AEM as a Cloud Service mediante la canalización de Cloud Manager.
 
-## AEM Pasar secreto en el encabezado HTTP X--Edge-Key
+## Pasar secreto en el encabezado HTTP X-AEM-Edge-Key
 
 >[!VIDEO](https://video.tv.adobe.com/v/3432567?quality=12&learn=on)
 
