@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: a72f533b36940ce735d5c01d1625c6f477ef4850
+source-git-commit: a11dd10cedbc8e77fa23d128562d6b3a3ae23c14
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1389'
 ht-degree: 16%
 
 ---
@@ -48,6 +48,7 @@ ht-degree: 16%
    + [Canalización de no producción de CI/CD](./cloud-manager/cicd-non-production-pipeline.md)
    + [Actividad](./cloud-manager/activity.md)
    + [Nombres de dominio personalizados](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names){target=_blank}
+   + [Restauración de contenido](./cloud-manager/content-restore.md)
    + Operaciones de desarrollo {#devops}
       + [Implementación del código](./cloud-manager/devops/deploy-code.md)
       + [Combinar proyectos](./cloud-manager/devops/merge-projects.md)
@@ -220,7 +221,7 @@ ht-degree: 16%
       + Migración de contenido {#content-migration}
          + [Servicio de importación por lotes](./migration/moving-to-aem-as-a-cloud-service/content-migration/bulk-import-service.md)
          + [Herramienta de transferencia de contenido](./migration/moving-to-aem-as-a-cloud-service/content-migration/content-transfer-tool.md)
-         + [Preguntas más frecuentes](./migration/moving-to-aem-as-a-cloud-service/content-migration/faq.md)
+         + [Preguntas frecuentes](./migration/moving-to-aem-as-a-cloud-service/content-migration/faq.md)
       + [Solución de problemas](./migration/moving-to-aem-as-a-cloud-service/troubleshooting.md)
       + AEM Forms as a Cloud Service {#aem-forms}
          + [Introducción](./migration/moving-to-aem-as-a-cloud-service/aem-forms/introduction.md)
