@@ -7,10 +7,10 @@ sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: efaf77a9f8e68f679be3469c39697b57366684b3
+source-git-commit: 77beb9f543bc6dc8c1ab4993c969375ce3e238e8
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 15%
+source-wordcount: '450'
+ht-degree: 16%
 
 ---
 
@@ -60,9 +60,9 @@ ht-degree: 15%
 
 + Funciones avanzadas{#advanced}
    + [recursos 3D](./advanced/3d-assets.md)
-   + [Salida del PDF Anotaciones](./advanced/customizing-annotations-pdf-output.md)
+   + [Salida de anotaciones de PDF](./advanced/customizing-annotations-pdf-output.md)
    + [Informes de Assets](./advanced/asset-reports.md)
-   + [Contentes credentials](./advanced/content-credentials.md)
+   + [Credenciales de contenido](./advanced/content-credentials.md)
    + [Etiquetas bloqueadas](./advanced/blocked-tags.md)
    + [Extraer archivo](./advanced/extract-archive.md)
    + [Permisos (CUG)](./advanced/closed-user-groups.md)
@@ -96,7 +96,7 @@ ht-degree: 15%
 + Uso compartido y distribución{#sharing}
    + [Descarga de recursos](./sharing/download.md)
    + [Exportar recursos](./sharing/export.md)
-   + [Recursos de Publish](./sharing/publish.md)
+   + [Publicar recursos](./sharing/publish.md)
 
    + Brand Portal{#brand-portal}
       + [Brand Portal](./sharing/brand-portal.md)
@@ -105,20 +105,20 @@ ht-degree: 15%
 
    + Recurso compartido{#assets-share}
       + [Uso compartido de recursos Commons](./sharing/asset-share-commons-user-experience-feature-video-understand.md)
-      + [AEM Configuración de Asset Share Commons en un entorno local](./sharing/asset-share-commons-technical-video-setup.md)
+      + [Configuración de Asset Share Commons en AEM local](./sharing/asset-share-commons-technical-video-setup.md)
       + [Uso compartido de recursos de temas](./sharing/asset-share-commons-feature-video-theming.md)
       + [Kits de recursos de Asset Share Commons](./sharing/asset-share/asset-share-commons-asset-kits.md)
 
-+ Flujos de trabajo creativos{#creative-workflows}
++ Flujos de trabajo de Creative{#creative-workflows}
    + [Integración de Adobe Express](./creative-workflows/adobe-express.md)
    + [ADOBE EXPRESS y AEM ASSETS](./creative-workflows/adobe-express-aem-assets.md)
-   + [AEM Aplicación de escritorio](./creative-workflows/aem-desktop-app.md)
+   + [Aplicación de escritorio de AEM](./creative-workflows/aem-desktop-app.md)
    + [Adobe Asset Link](./creative-workflows/adobe-asset-link.md)
    + [Adobe Stock](./creative-workflows/adobe-stock.md)
 
 + Vínculo de recurso de Adobe{#adobe-asset-link}
    + [Configuración de](./adobe-asset-link/setup.md)
-   + [Vínculo de recurso de Adobe de acceso](./adobe-asset-link/launch-adobe-asset-link.md)
+   + [Acceso a Adobe Asset Link](./adobe-asset-link/launch-adobe-asset-link.md)
    + [Información general del panel](./adobe-asset-link/panel-overview.md)
    + [Archivos y colecciones](./adobe-asset-link/files-and-collections.md)
    + [Descargar y cargar](./adobe-asset-link/download-and-upload.md)
@@ -131,14 +131,15 @@ ht-degree: 15%
 
 + Automatización de contenido{#content-automation}
    + [Información general](./content-automation/overview.md)
-   + [Operaciones creativas](./content-automation/creative-operations.md)
+   + [Operaciones de Creative](./content-automation/creative-operations.md)
    + [Acciones de Photoshop](./content-automation/photoshop-actions.md)
 
-+ Dynamic Media{#dynamic-media}
++ Medios dinámicos{#dynamic-media}
    + [Información general de Dynamic Media](dynamic-media/dynamic-media-overview-feature-video-use.md)
    + [aplicación Dynamic Media Classic Desktop](dynamic-media/dynamic-media-classic-desktop-application.md)
    + Imágenes {#images}
-      + [instantánea de Dynamic Media](dynamic-media/dynamic-media-snapshot.md)
+      + [Plantillas de Dynamic Media](dynamic-media/dynamic-media-templates.md)
+      + [Instantánea de Dynamic Media](dynamic-media/dynamic-media-snapshot.md)
       + [Recorte inteligente](dynamic-media/smart-crop-feature-video-use.md)
       + [Enfoque de imagen](dynamic-media/dynamic-media-image-sharpening-feature-video-use.md)
       + [Administración de color](dynamic-media/dynamic-media-color-management-technical-video-setup.md)
@@ -158,7 +159,7 @@ ht-degree: 15%
       + [Fragmentos de experiencias](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
       + [Componentes principales de Dynamic Media](dynamic-media/dynamic-media-core-components.md)
 
-   + Tutorials {#tutorials}
+   + Tutoriales {#tutorials}
       + [Creación de conjuntos de carrusel](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-carousel-sets.md)
       + [Creación de conjuntos de imágenes](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-image-sets.md)
       + [Creación de ajustes preestablecidos de imagen](dynamic-media/tutorials/creating-image-presets.md)
@@ -170,7 +171,7 @@ ht-degree: 15%
       + [Activación de un trabajo de exportación](dynamic-media/tutorials/how-to-trigger-export-job-in-dynamic-media-during-submit-job-operation-parameter.md)
       + [Invalidación de la caché de CDN](dynamic-media/tutorials/invalidating-the-cdn-cache-by-way-of-dynamic-media.md)
       + [Uso de componentes principales de Dynamic Media](dynamic-media/tutorials/using-dm-components-on-site-page.md)
-      + [Eliminando configuración de Dynamic Media](dynamic-media/tutorials/deleting-dynamic-media-configuration.md)
+      + [Eliminación de la configuración de Dynamic Media](dynamic-media/tutorials/deleting-dynamic-media-configuration.md)
       + [Descargar Assets en la aplicación de Dynamic Media Classic](dynamic-media/tutorials/how-to-download-asset-in-dynamic-media-classic-app.md)
       + [API de IPS de Dynamic Media Classic](dynamic-media/tutorials/introduction-to-dynamic-media-classic-ips-api.md)
 
@@ -178,10 +179,10 @@ ht-degree: 15%
    + Conector mejorado {#enhanced-connector}
       + [Conceptos básicos del conector mejorado](./workfront/enhanced-connector/basics.md)
       + [Carpetas de proyecto](./workfront/enhanced-connector/project-folders.md)
-      + AEM Serie de expertos de{#aem-experts-series}
+      + Serie de expertos de AEM{#aem-experts-series}
          + [Información general](./workfront/enhanced-connector/aem-experts-series/overview.md)
          + [Configuración de](./workfront/enhanced-connector/aem-experts-series/setup.md)
-         + [Formularios Workfront AEM y metadatos de la](./workfront/enhanced-connector/aem-experts-series/custom-forms.md)
+         + [Formularios Workfront y metadatos de AEM](./workfront/enhanced-connector/aem-experts-series/custom-forms.md)
          + [Etiquetas, carpetas vinculadas a proyectos y metadatos de carpetas](./workfront/enhanced-connector/aem-experts-series/aem-tags-project-linked-folders-and-folder-metadata.md)
          + [Configuración y flujos de trabajo avanzados](./workfront/enhanced-connector/aem-experts-series/advanced-settings-and-workflows.md)
 

@@ -9,27 +9,27 @@ level: Beginner
 doc-type: Tutorial
 jira: KT-15832
 duration: 500
-source-git-commit: e8ce91b0be577ec6cf8f3ab07ba9ff09c7e7a6ab
+exl-id: ca356d38-262d-4c30-83a0-01c8a1381ee6
+source-git-commit: 77beb9f543bc6dc8c1ab4993c969375ce3e238e8
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '376'
 ht-degree: 0%
 
 ---
 
-
 # Crear un bloque
 
-AEM Después de insertar el JSON](./5-new-block.md) del bloque de teaser [en la rama `teaser`, el bloque se vuelve editable en el Editor universal de la.
+Después de insertar el JSON](./5-new-block.md) del bloque de teaser [en la rama `teaser`, el bloque se vuelve editable en el Editor universal de AEM.
 
 Crear un bloque en desarrollo es importante por varias razones:
 
 1. Comprueba que la definición y el modelo del bloque son precisos.
-1. Permite a los desarrolladores revisar el HTML semántico del bloque, que sirve de base para el desarrollo.
-1. Permite la implementación del HTML semántico y de contenido en el entorno de vista previa, lo que permite un desarrollo de bloques más rápido.
+1. Permite a los desarrolladores revisar la HTML semántica del bloque, que sirve de base para el desarrollo.
+1. Permite la implementación del contenido y de la HTML semántica en el entorno de vista previa, lo que permite un desarrollo de bloques más rápido.
 
 ## Abra el Editor universal utilizando código de la rama `teaser`
 
-1. AEM Inicie sesión en el autor de la.
+1. Inicie sesión en AEM Author.
 2. Vaya a **Sitios** y seleccione el sitio (WKND (Editor universal)) creado en el [capítulo anterior](./2-new-aem-site.md).
 
    ![AEM Sites](./assets/6-author-block/open-new-site.png)
@@ -54,11 +54,11 @@ Crear un bloque en desarrollo es importante por varias razones:
 
    ![Editor universal: bloque de autor](./assets/6-author-block/author-block.png)
 
-8. Después de completar la creación, cambie a la pestaña del explorador anterior (Administrador de AEM Sites), seleccione la página Teaser, haga clic en **Administrar publicaciones**, elija **Vista previa** y publique los cambios en el entorno de vista previa. Los cambios se publican en el dominio `aem.page` del sitio web.
-   ![AEM Sites - Publish o vista previa](./assets/6-author-block/publish-to-preview.png)
+8. Después de completar la creación, seleccione el botón **Publicar** en la parte superior derecha del Editor universal, elija Publicar en **Vista previa** y publique los cambios en el entorno de vista previa. Los cambios se publican en el dominio `aem.page` del sitio web.
+   ![AEM Sites - Publicar o previsualizar](./assets/6-author-block/publish-to-preview.png)
 
-9. http://localhost:3000/branches/teaser AEM Espere a que se publiquen los cambios para obtener una vista previa y, a continuación, abra la página web mediante la [CLI](./3-local-development-environment.md#install-the-aem-cli) de [](http://localhost:3000/branches/teaser).
+9. Espere a que se publiquen los cambios para obtener una vista previa y, a continuación, abra la página web mediante la [CLI de AEM](./3-local-development-environment.md#install-the-aem-cli) en [http://localhost:3000/branches/teaser](http://localhost:3000/branches/teaser).
 
    ![Sitio local - Actualizar](./assets/6-author-block/preview.png)
 
-Ahora, el contenido y el HTML AEM semántico del bloque de teaser creado están disponibles en el sitio web de vista previa, listos para su desarrollo mediante la CLI de la en el entorno de desarrollo local.
+Ahora, el contenido y la HTML semántica del bloque de teaser creado están disponibles en el sitio web de vista previa, listos para su desarrollo mediante la CLI de AEM en el entorno de desarrollo local.
