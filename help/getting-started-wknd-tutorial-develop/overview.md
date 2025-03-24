@@ -1,7 +1,7 @@
 ---
 title: 'Introducción a AEM Sites: Tutorial de WKND'
 description: Aprenda a implementar un sitio de AEM para una marca ficticia de estilo de vida, WKND. Obtenga información detallada sobre temas fundamentales de Experience Manager, como la configuración de proyectos, los arquetipos de Maven, los componentes principales, las plantillas editables, las bibliotecas de cliente y el desarrollo de componentes.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 jira: KT-13565
 mini-toc-levels: 1
 index: y
@@ -13,7 +13,7 @@ level: Beginner
 doc-type: Catalog
 exl-id: 09a600f4-1ada-4fb7-ae44-586364cff389
 recommendations: disable
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '577'
 ht-degree: 100%

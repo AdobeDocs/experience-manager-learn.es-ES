@@ -1,30 +1,30 @@
 ---
-title: Uso del visualizador de imágenes panorámicas y verticales con AEM Assets Dynamic Media
-description: Las mejoras del visualizador de Dynamic Media AEM en la versión 6.4 incluyen la adición del visualizador de imágenes panorámicas, el visualizador de imágenes de realidad virtual panorámica y el visualizador de imágenes verticales. El visor panorámico es una forma sencilla de ofrecer una experiencia atractiva e inmersiva de la habitación, la propiedad, la ubicación o el paisaje sin ningún desarrollo personalizado.
+title: Uso del visualizador de imágenes panorámicas y verticales con Dynamic Media para AEM Assets
+description: Las mejoras del visualizador de Dynamic Media en AEM 6.4 incluyen la adición del visualizador de imágenes panorámicas, el visualizador de imágenes de realidad virtual panorámica y el visualizador de imágenes verticales. El visor panorámico es una forma sencilla de ofrecer una experiencia atractiva e inmersiva de la habitación, la propiedad, la ubicación o el paisaje sin ningún desarrollo personalizado.
 feature: Video Profiles, Video Profiles, 360 VR Video
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Content Management
 role: User
 level: Beginner
 doc-type: Feature Video
 exl-id: 6b2f7533-8ce0-4134-b1ae-b3c5d15a05e6
 duration: 535
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 0%
 
 ---
 
-# Uso del visualizador de imágenes panorámicas y verticales con AEM Assets Dynamic Media{#using-panorama-and-vertical-image-viewer-with-aem-assets-dynamic-media}
+# Uso del visualizador de imágenes panorámicas y verticales con Dynamic Media para AEM Assets{#using-panorama-and-vertical-image-viewer-with-aem-assets-dynamic-media}
 
-Las mejoras del visualizador de Dynamic Media AEM en la versión 6.4 incluyen la adición del visualizador de imágenes panorámicas, el visualizador de imágenes de realidad virtual panorámica y el visualizador de imágenes verticales. El visor panorámico es una forma sencilla de ofrecer una experiencia atractiva e inmersiva de la habitación, la propiedad, la ubicación o el paisaje sin ningún desarrollo personalizado.
+Las mejoras del visualizador de Dynamic Media en AEM 6.4 incluyen la adición del visualizador de imágenes panorámicas, el visualizador de imágenes de realidad virtual panorámica y el visualizador de imágenes verticales. El visor panorámico es una forma sencilla de ofrecer una experiencia atractiva e inmersiva de la habitación, la propiedad, la ubicación o el paisaje sin ningún desarrollo personalizado.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24156?quality=12&learn=on)
 
 >[!NOTE]
 >
->AEM En el vídeo se da por hecho que la instancia de se está ejecutando en el modo Dynamic Media S7. AEM [Aquí se pueden encontrar instrucciones para configurar la con Dynamic Media.](https://helpx.adobe.com/es/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
+>El vídeo supone que la instancia de AEM se está ejecutando en el modo Dynamic Media S7. [Aquí puede encontrar instrucciones para configurar AEM con Dynamic Media.](https://helpx.adobe.com/es/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
 
 ## Visor de RV panorámico y panorámico
 
@@ -65,7 +65,7 @@ Con las muestras horizontales, según el tamaño de pantalla de escritorio del c
  </tbody>
 </table>
 
-[Configuración de Dynamic Media en modo Scene7](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dms7.html)
+[Configuración de Dynamic Media en el modo Scene7](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dms7.html)
 
 [Configuración de Dynamic Media en modo híbrido](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dynamic.html)
 

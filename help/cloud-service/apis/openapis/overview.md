@@ -1,7 +1,7 @@
 ---
 title: API de AEM basadas en OpenAPI
 description: Obtenga información acerca de las API de AEM basadas en OpenAPI, incluida la compatibilidad con la autenticación, los conceptos clave y cómo acceder a las API de Adobe.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Developing
 topic: Development, Architecture, Content Management
 role: Architect, Developer, Leader
@@ -11,13 +11,13 @@ jira: KT-16515
 thumbnail: KT-16515.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
-source-git-commit: e4cf47e14fa7dfc39ab4193d35ba9f604eabf99f
+exl-id: 0eb0054d-0c0a-4ac0-b7b2-fdaceaa6479b
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '835'
 ht-degree: 1%
 
 ---
-
 
 # API de AEM basadas en OpenAPI
 
@@ -188,4 +188,3 @@ Aprenda a utilizar las API de AEM basadas en OpenAPI utilizando diferentes méto
     </div>
 </div>
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
-

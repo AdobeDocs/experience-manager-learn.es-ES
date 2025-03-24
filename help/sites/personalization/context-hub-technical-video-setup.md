@@ -1,15 +1,15 @@
 ---
 title: Configuración de ContextHub para Personalization con AEM Sites
-description: ContextHub es un marco de trabajo para almacenar, manipular y presentar datos de contexto. La API de JavaScript de ContextHub le permite acceder a las tiendas para crear, actualizar y eliminar datos según sea necesario. De este modo, ContextHub representa una capa de datos en las páginas. AEM En esta página se describe cómo agregar context hub a las páginas del sitio de la.
+description: ContextHub es un marco de trabajo para almacenar, manipular y presentar datos de contexto. La API de JavaScript de ContextHub le permite acceder a las tiendas para crear, actualizar y eliminar datos según sea necesario. De este modo, ContextHub representa una capa de datos en las páginas. En esta página se describe cómo agregar context hub a las páginas del sitio de AEM.
 feature: Context Hub
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Personalization
 role: Developer
 level: Intermediate
 doc-type: Technical Video
 exl-id: 89308dd3-a7e5-4fec-bffb-5f0974125c0a
 duration: 357
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 2%
@@ -18,13 +18,13 @@ ht-degree: 2%
 
 # Configuración de ContextHub para Personalization {#set-up-contexthub}
 
-ContextHub es un marco de trabajo para almacenar, manipular y presentar datos de contexto. La API de JavaScript de ContextHub le permite acceder a las tiendas para crear, actualizar y eliminar datos según sea necesario. De este modo, ContextHub representa una capa de datos en las páginas. AEM En esta página se describe cómo agregar context hub a las páginas del sitio de la.
+ContextHub es un marco de trabajo para almacenar, manipular y presentar datos de contexto. La API de JavaScript de ContextHub le permite acceder a las tiendas para crear, actualizar y eliminar datos según sea necesario. De este modo, ContextHub representa una capa de datos en las páginas. En esta página se describe cómo agregar context hub a las páginas del sitio de AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/23765?quality=12&learn=on)
 
 >[!NOTE]
 >
->AEM Utilizamos el sitio de referencia de WKND para este vídeo y no forma parte de la versión de la versión de la aplicación de la que se dispone en la actualidad. Puede descargar la [última versión aquí](https://github.com/adobe/aem-guides-wknd/releases).
+>Utilizamos el sitio de referencia de WKND para este vídeo y no forma parte de la versión de AEM. Puede descargar la [última versión aquí](https://github.com/adobe/aem-guides-wknd/releases).
 
 Agregue ContextHub a sus páginas para habilitar las funciones de ContextHub y para vincular a las bibliotecas de JavaScript de ContextHub. La API de JavaScript de ContextHub proporciona acceso a los datos de contexto que administra ContextHub.
 
@@ -43,7 +43,7 @@ ContextHub incluye un motor de segmentación que administra segmentos y determin
 
 ## Crear segmentos {#create-segments}
 
-AEM Cree segmentos de que actúen como reglas para los teasers. Es decir, definen cuándo aparece el contenido de un teaser en una página web. El contenido puede personalizarse específicamente para satisfacer las necesidades y los intereses del visitante, según los segmentos con los que coincidan.
+Cree segmentos de AEM que actúen como reglas para los teasers. Es decir, definen cuándo aparece el contenido de un teaser en una página web. El contenido puede personalizarse específicamente para satisfacer las necesidades y los intereses del visitante, según los segmentos con los que coincidan.
 
 ## Asignación de la configuración de nube, la ruta del segmento y la ruta de ContextHub al sitio {#assigning-cloud-configuration-segment-path-and-contexthub-path-to-your-site}
 

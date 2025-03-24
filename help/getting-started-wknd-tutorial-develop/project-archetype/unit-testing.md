@@ -1,7 +1,7 @@
 ---
 title: Pruebas unitarias
 description: Implemente una prueba unitaria que valide el comportamiento del modelo Sling del componente Byline, creado en el tutorial Componente personalizado.
-version: 6.5, Cloud Service
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: APIs, AEM Project Archetype
 topic: Content Management, Development
 role: Developer
@@ -13,7 +13,7 @@ doc-type: Tutorial
 exl-id: b926c35e-64ad-4507-8b39-4eb97a67edda
 recommendations: noDisplay, noCatalog
 duration: 706
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '2923'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Consulte el código de línea de base en el que se basa el tutorial:
    $ git checkout tutorial/unit-testing-start
    ```
 
-1. AEM Implemente una base de código en una instancia de local con sus habilidades con Maven:
+1. Implemente una base de código en una instancia de AEM local con sus habilidades con Maven:
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage
@@ -53,7 +53,7 @@ Consulte el código de línea de base en el que se basa el tutorial:
 
    >[!NOTE]
    >
-   > AEM Si utiliza la versión 6.5 o 6.4 de la aplicación, anexe el perfil `classic` a cualquier comando de Maven.
+   > Si utiliza AEM 6.5 o 6.4, anexe el perfil `classic` a cualquier comando de Maven.
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
@@ -64,22 +64,22 @@ Siempre puede ver el código terminado en [GitHub](https://github.com/adobe/aem-
 ## Objetivo
 
 1. Comprender los conceptos básicos de las pruebas unitarias.
-1. AEM Obtenga información sobre los marcos de trabajo y las herramientas que se utilizan normalmente para probar el código de.
-1. AEM Comprender las opciones para burlarse o simular recursos de la unidad al escribir pruebas de unidad.
+1. Obtenga información sobre los marcos de trabajo y las herramientas que se utilizan normalmente para probar el código de AEM.
+1. Comprenda las opciones para burlarse o simular recursos de AEM al escribir pruebas unitarias.
 
 ## Fondo {#unit-testing-background}
 
-AEM En este tutorial, exploraremos cómo escribir [Pruebas unitarias](https://en.wikipedia.org/wiki/Unit_testing) para el [Modelo Sling](https://sling.apache.org/documentation/bundles/models.html) de nuestro componente Byline (creado en [Creación de un componente de la unidad personalizado](custom-component.md)). Las pruebas unitarias son pruebas en tiempo de compilación escritas en Java™ que verifican el comportamiento esperado del código Java™. Cada prueba unitaria suele ser pequeña y valida el resultado de un método (o unidades de trabajo) con los resultados esperados.
+En este tutorial, exploraremos cómo escribir [pruebas unitarias](https://en.wikipedia.org/wiki/Unit_testing) para el [modelo Sling](https://sling.apache.org/documentation/bundles/models.html) de nuestro componente Byline (creado en [Creación de un componente AEM personalizado](custom-component.md)). Las pruebas unitarias son pruebas en tiempo de compilación escritas en Java™ que verifican el comportamiento esperado del código Java™. Cada prueba unitaria suele ser pequeña y valida el resultado de un método (o unidades de trabajo) con los resultados esperados.
 
-AEM Utilizamos las prácticas recomendadas de la y utilizamos:
+Utilizamos las prácticas recomendadas de AEM y utilizamos:
 
 * [JUnit 5](https://junit.org/junit5/)
 * [Marco de prueba Mockito](https://site.mockito.org/)
 * [wcm.io Test Framework](https://wcm.io/testing/) (que se basa en [Apache Sling Mocks](https://sling.apache.org/documentation/development/sling-mock.html))
 
-## Pruebas unitarias y Cloud Manager de Adobe {#unit-testing-and-adobe-cloud-manager}
+## Pruebas unitarias y Adobe Cloud Manager {#unit-testing-and-adobe-cloud-manager}
 
-[Cloud Manager AEM de Adobe](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=es) integra la ejecución de pruebas unitarias y la creación de informes de cobertura de código[ en su canalización de CD/CI para ayudar a alentar y promocionar las prácticas recomendadas del código de prueba de unidades.](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html)
+[Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=es) integra la ejecución de pruebas unitarias y la creación de informes de cobertura de código [3} en su canalización de CD/CI para ayudar a alentar y promover las prácticas recomendadas de prueba de unidades de código AEM.](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html)
 
 Aunque el código de prueba unitaria es una buena práctica para cualquier base de código, al utilizar Cloud Manager es importante aprovechar sus funciones de prueba de calidad de código y generación de informes al proporcionar pruebas unitarias para que Cloud Manager se ejecute.
 
@@ -90,11 +90,11 @@ El primer paso es inspeccionar las dependencias de Maven para que admitan la esc
 1. JUnit5
 1. Marco de prueba de Mockito
 1. Apache Sling se burla
-1. AEM Marco de prueba de Mocks (por io.wcm)
+1. AEM Mocks Test Framework (de io.wcm)
 
-AEM AEM Las dependencias de prueba **JUnit5**, **Mockito y **Mocks** se agregan automáticamente al proyecto durante la configuración mediante el [arquetipo Maven de tipo de archivo](project-setup.md).
+Las dependencias de prueba **JUnit5**, **Mockito y **AEM Mocks** se agregan automáticamente al proyecto durante la configuración mediante el [arquetipo de AEM Maven](project-setup.md).
 
-1. AEM Para ver estas dependencias, abra el POM del reactor principal en **aem-guides-wknd/pom.xml**, vaya a `<dependencies>..</dependencies>` y vea las dependencias de las pruebas JUnit, Mockito, Apache Sling Mocks y Mock de las pruebas de io.wcm en `<!-- Testing -->`.
+1. Para ver estas dependencias, abra el POM del reactor principal en **aem-guides-wknd/pom.xml**, vaya a `<dependencies>..</dependencies>` y vea las dependencias para las pruebas simuladas de JUnit, Mockito, Apache Sling y AEM de io.wcm en `<!-- Testing -->`.
 1. Asegúrese de que `io.wcm.testing.aem-mock.junit5` está establecido en **4.1.0**:
 
    ```xml
@@ -211,17 +211,17 @@ Al escribir pruebas unitarias, existen dos enfoques principales:
 * [Desarrollo controlado por pruebas o TDD](https://en.wikipedia.org/wiki/Test-driven_development), que implica escribir las pruebas unitarias de forma incremental, inmediatamente antes de que se desarrolle la implementación; escriba una prueba y escriba la implementación para que la prueba se apruebe.
 * Implementación: primero desarrollo, que implica desarrollar primero el código de trabajo y, a continuación, escribir pruebas que validen dicho código.
 
-En este tutorial, se usa el método más reciente (ya que hemos creado un **BylineImpl.java** en funcionamiento en un capítulo anterior). Debido a esto, debemos revisar y comprender los comportamientos de sus métodos públicos, pero también algunos de sus detalles de implementación. AEM Esto puede sonar contrario, ya que una buena prueba solo debe preocuparse por las entradas y salidas, sin embargo, cuando se trabaja en el área de la implementación, hay varias consideraciones de implementación que deben entenderse para construir pruebas de trabajo.
+En este tutorial, se usa el método más reciente (ya que hemos creado un **BylineImpl.java** en funcionamiento en un capítulo anterior). Debido a esto, debemos revisar y comprender los comportamientos de sus métodos públicos, pero también algunos de sus detalles de implementación. Esto puede sonar contrario, ya que una buena prueba solo debe preocuparse por las entradas y salidas, pero al trabajar en AEM, hay varias consideraciones de implementación que deben entenderse para construir pruebas de trabajo.
 
-AEM AEM AEM AEM La TDD en el contexto de la requiere un nivel de experiencia y la mejor manera de adoptarla es a través de desarrolladores de competentes en el desarrollo y prueba de unidades de código de la.
+TDD en el contexto de AEM requiere un nivel de experiencia y es mejor adoptado por los desarrolladores de AEM con experiencia en el desarrollo de AEM y pruebas de unidades de código AEM.
 
-## AEM Configuración del contexto de prueba de  {#setting-up-aem-test-context}
+## Configuración del contexto de prueba de AEM  {#setting-up-aem-test-context}
 
-AEM AEM AEM La mayoría del código escrito para la se basa en las API de JCR, Sling o, que a su vez requieren el contexto de una aplicación en ejecución para que se ejecute correctamente.
+La mayoría del código escrito para AEM se basa en las API de JCR, Sling o AEM, que a su vez requieren el contexto de una AEM en ejecución para ejecutarse correctamente.
 
-AEM Dado que las pruebas unitarias se ejecutan durante la compilación, no existe ese contexto fuera del contexto de una instancia de ejecución de la. AEM AEM Para facilitarle este proceso, [wcm.io&#39;s Mocks](https://wcm.io/testing/aem-mock/usage.html) crea un contexto ficticio que permite que estas API _en su mayoría_ actúen como si se estuvieran ejecutando en el espacio de trabajo de la red de la red de distribución de datos (API) de la red de datos .
+Dado que las pruebas unitarias se ejecutan durante la compilación, no existe ese contexto fuera del contexto de una instancia de AEM en ejecución. Para facilitarle esto, [wcm.io&#39;s AEM Mocks](https://wcm.io/testing/aem-mock/usage.html) crea contexto ficticio que permite que estas API _en su mayoría_ actúen como si se estuvieran ejecutando en AEM.
 
-1. AEM Cree un contexto de usando **wcm.io** `AemContext` en **BylineImplTest.java** agregándolo como una extensión JUnit decorada con `@ExtendWith` al archivo **BylineImplTest.java**. La extensión se encarga de todas las tareas de inicialización y limpieza necesarias. Cree una variable de clase para `AemContext` que se pueda usar para todos los métodos de prueba.
+1. Cree un contexto de AEM usando **wcm.io** `AemContext` en **BylineImplTest.java** agregándolo como una extensión JUnit decorada con `@ExtendWith` al archivo **BylineImplTest.java**. La extensión se encarga de todas las tareas de inicialización y limpieza necesarias. Cree una variable de clase para `AemContext` que se pueda usar para todos los métodos de prueba.
 
    ```java
    import org.junit.jupiter.api.extension.ExtendWith;
@@ -235,12 +235,12 @@ AEM Dado que las pruebas unitarias se ejecutan durante la compilación, no exist
        private final AemContext ctx = new AemContext();
    ```
 
-   AEM AEM Esta variable, `ctx`, expone un contexto de ficticio que proporciona algunas abstracciones de Sling y de la versión en inglés:
+   Esta variable, `ctx`, expone un contexto de AEM ficticio que proporciona algunas abstracciones de AEM y Sling:
 
    * El modelo Sling BylineImpl está registrado en este contexto
    * Las estructuras de contenido JCR simuladas se crean en este contexto
    * Los servicios OSGi personalizados se pueden registrar en este contexto
-   * AEM Proporciona varios objetos de prueba y ayudantes comunes necesarios, como objetos SlingHttpServletRequest, varios servicios de Sling y OSGi de prueba, como ModelFactory, PageManager, Page, Template, ComponentManager, Component, TagManager, Tag, etc.
+   * Proporciona varios objetos de prueba y ayudantes comunes necesarios, como objetos SlingHttpServletRequest, varios servicios OSGi de Sling y AEM de prueba, como ModelFactory, PageManager, Page, Template, ComponentManager, Component, TagManager, Tag, etc.
       * *No se han implementado todos los métodos para estos objetos.*
    * ¡Y [mucho más](https://wcm.io/testing/aem-mock/usage.html)!
 
@@ -256,7 +256,7 @@ AEM Dado que las pruebas unitarias se ejecutan durante la compilación, no exist
    }
    ```
 
-   * AEM **`addModelsForClasses`** registra el modelo Sling que se va a probar, en el contexto de ficticio, para que se pueda crear una instancia en los métodos `@Test`.
+   * **`addModelsForClasses`** registra el modelo Sling que se va a probar en el contexto de AEM ficticio para que se pueda crear una instancia en los métodos `@Test`.
    * **`load().json`** carga estructuras de recursos en el contexto ficticio, lo que permite que el código interactúe con estos recursos como si fueran proporcionados por un repositorio real. Las definiciones de recursos del archivo **`BylineImplTest.json`** se cargan en el contexto JCR ficticio en **/content**.
    * **`BylineImplTest.json`** aún no existe, así que vamos a crearlo y definir las estructuras de recursos JCR necesarias para la prueba.
 

@@ -1,7 +1,7 @@
 ---
 title: Servicio de correo electrónico
 description: Obtenga información sobre cómo configurar AEM as a Cloud Service para que se conecte con un servicio de correo electrónico mediante puertos de salida.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
 role: Architect, Developer
@@ -10,7 +10,7 @@ jira: KT-9353
 thumbnail: KT-9353.jpeg
 exl-id: 5f919d7d-e51a-41e5-90eb-b1f6a9bf77ba
 duration: 76
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Servicio de correo electrónico
 
-Envíe correos electrónicos desde AEM as a Cloud Service AEM configurando el uso de puertos de salida de red avanzados de `DefaultMailService` para que se utilicen.
+Envíe correos electrónicos desde AEM as a Cloud Service configurando `DefaultMailService` de AEM para usar puertos de salida de red avanzados.
 
 Como la mayoría de los servicios de correo no se ejecutan a través de HTTP/HTTPS, las conexiones a los servicios de correo de AEM as a Cloud Service deben procesarse como proxy de salida.
 
@@ -33,7 +33,7 @@ Dado que los secretos no deben almacenarse en el código, es mejor proporcionar 
 
 Normalmente, [salida de puerto flexible](../flexible-port-egress.md) se usa para satisfacer la integración con un servicio de correo electrónico a menos que sea necesario `allowlist` la IP de Adobe, en cuyo caso se puede usar [dirección IP de salida dedicada](../dedicated-egress-ip-address.md).
 
-AEM Además, revise la documentación de la sobre [envío de correo electrónico](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
+Además, revise la documentación de AEM sobre [enviar correo electrónico](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
 
 ## Compatibilidad avanzada con redes
 
@@ -47,7 +47,7 @@ Asegúrese de que la configuración avanzada de red [proper](../advanced-network
 
 ## Configuración de OSGi
 
-AEM En este ejemplo de configuración de OSGi se configura el servicio OSGi de correo electrónico de los usuarios para que utilicen un servicio de correo externo, mediante la siguiente regla de Cloud Manager `portForwards` de la operación [enableEnvironmentAdvancedNetworkingConfiguration](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration).
+Este ejemplo de configuración de OSGi configura el servicio OSGi de correo de AEM para que utilice un servicio de correo externo mediante la siguiente regla de Cloud Manager `portForwards` de la operación [enableEnvironmentAdvancedNetworkingConfiguration](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration).
 
 ```json
 ...
@@ -61,7 +61,7 @@ AEM En este ejemplo de configuración de OSGi se configura el servicio OSGi de c
 
 + `ui.config/src/jcr_root/apps/wknd-examples/osgiconfig/config/com.day.cq.mailer.DefaultMailService.cfg.json`
 
-AEM Configure la configuración de [DefaultMailService](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email) según lo requiera su proveedor de correo electrónico (por ejemplo, `smtp.ssl`, etc.).
+Configure [DefaultMailService](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email) de AEM según lo requiera su proveedor de correo electrónico (p. ej. `smtp.ssl`, etc.).
 
 ```json
 {

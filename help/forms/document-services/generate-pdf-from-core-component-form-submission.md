@@ -1,7 +1,7 @@
 ---
-title: Generar un PDF con datos de un formulario adaptable basado en componentes principales
+title: Generar PDF con datos de un formulario adaptable basado en componentes principales
 description: Combine datos del envío de formularios basados en componentes principales con la plantilla XDP en el flujo de trabajo
-version: 6.5
+version: Experience Manager 6.5
 feature: Forms Service
 topic: Development
 role: Developer
@@ -10,7 +10,7 @@ jira: KT-15025
 last-substantial-update: 2024-02-26T00:00:00Z
 exl-id: cae160f2-21a5-409c-942d-53061451b249
 duration: 97
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Este es el texto revisado con &quot;Componentes principales&quot; en mayúsculas:
 
-Un escenario típico implica generar un PDF a partir de los datos enviados mediante un formulario adaptable basado en componentes principales. Estos datos siempre están en formato JSON. Para generar un PDF mediante la API del PDF de procesamiento, es necesario convertir los datos JSON al formato XML. El método `toString` de `org.json.XML` se usa para esta conversión. Para obtener más información, consulte la [documentación del método `org.json.XML.toString`](https://www.javadoc.io/doc/org.json/json/20171018/org/json/XML.html#toString-java.lang.Object-).
+Un escenario típico implica generar una PDF a partir de los datos enviados mediante un formulario adaptable basado en componentes principales. Estos datos siempre están en formato JSON. Para generar una PDF utilizando la API de Render PDF, es necesario convertir los datos JSON al formato XML. El método `toString` de `org.json.XML` se usa para esta conversión. Para obtener más información, consulte la [documentación del método `org.json.XML.toString`](https://www.javadoc.io/doc/org.json/json/20171018/org/json/XML.html#toString-java.lang.Object-).
 
 ## Formulario adaptable basado en esquema JSON
 
@@ -110,7 +110,7 @@ public class ConvertJSONToXML implements WorkflowProcess {
 Para gestionar los envíos de formularios, cree un flujo de trabajo que incluya dos pasos:
 
 1. El paso inicial emplea un proceso personalizado para transformar los datos JSON enviados en XML.
-1. El paso siguiente genera un PDF al combinar los datos XML con la plantilla XDP.
+1. El paso siguiente genera una PDF combinando los datos XML con la plantilla XDP.
 
 ![json-to-xml](assets/json-to-xml-process-step.png)
 
@@ -119,10 +119,10 @@ Para gestionar los envíos de formularios, cree un flujo de trabajo que incluya 
 
 Para probar esto en el servidor local, siga estos pasos optimizados:
 
-1. AEM [Descargue e instale el paquete personalizado a través de la consola web de OSGi de la](assets/convertJsonToXML.core-1.0.0-SNAPSHOT.jar).
+1. [Descargue e instale el paquete personalizado a través de la consola web OSGi de AEM](assets/convertJsonToXML.core-1.0.0-SNAPSHOT.jar).
 1. [Importe el paquete de flujo de trabajo](assets/workflow_to_render_pdf.zip).
 1. [Importe el formulario adaptable y la plantilla XDP de ejemplo](assets/adaptive_form_and_xdp_template.zip).
 1. [Vista previa del formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/f23/jcr:content?wcmmode=disabled).
 1. Rellene algunos campos de formulario.
-1. AEM Envíe el formulario para iniciar el flujo de trabajo de.
+1. Envíe el formulario para iniciar el flujo de trabajo de AEM.
 1. Busque el PDF procesado en la carpeta de carga útil del flujo de trabajo.

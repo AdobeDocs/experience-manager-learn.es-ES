@@ -1,7 +1,7 @@
 ---
-title: Planificación de IU con Adobe XD | AEM Creación rápida de sitios de
+title: Planificación de IU con Adobe XD | Creación rápida de sitios de AEM
 description: Descubra cómo se pueden utilizar los kits de IU de Adobe XD para diseñar y acelerar la implementación de Adobe Experience Manager Sites.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Content Management
 feature: Core Components
 role: Developer
@@ -12,7 +12,7 @@ doc-type: Tutorial
 exl-id: 3155e0fa-56b7-4a52-8eef-fee488e95f68
 recommendations: noDisplay, noCatalog
 duration: 646
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 2%
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 # Planificación de IU con Adobe XD {#ui-planning-adobe-xd}
 
-En la mayoría de los casos, la planificación de un nuevo sitio web comienza con maquetas y diseños estáticos. [Adobe XD](https://www.adobe.com/products/xd.html) es la mejor herramienta de diseño de su clase para crear experiencias de usuario. El Adobe recomienda planificar la implementación de Sites mediante el uso de maquetas de interfaz de usuario con Adobe XD u otra herramienta.
+En la mayoría de los casos, la planificación de un nuevo sitio web comienza con maquetas y diseños estáticos. [Adobe XD](https://www.adobe.com/products/xd.html) es la mejor herramienta de diseño de su clase para crear experiencias de usuario. Adobe recomienda planificar la implementación de Sites mediante el uso de maquetas de interfaz de usuario con Adobe XD u otra herramienta.
 
 ## Requisitos previos {#prerequisites}
 
@@ -45,8 +45,8 @@ En este capítulo se inspeccionan dos archivos Adobe XD, uno para la [plantilla 
 
 Pasos de alto nivel:
 
-1. XD Descargar el [archivo de configuración de plantillas de sitio estándar](https://github.com/adobe/aem-site-template-standard/raw/main/files/wireframe.xd).
-1. Inspect usa el kit de IU en Adobe XD.
+1. Descargar el [archivo XD de plantilla de sitio estándar](https://github.com/adobe/aem-site-template-standard/raw/main/files/wireframe.xd).
+1. Inspeccione el kit de IU en Adobe XD.
 1. Simule la entrega de los diseños a un desarrollador front-end.
 
 ## Kit de IU de WKND {#wknd-ui-kit}
@@ -55,8 +55,8 @@ Pasos de alto nivel:
 
 Pasos de alto nivel:
 
-1. XD Descargar el [archivo de carpetas de artículos de WKND](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND-article-design.xd).
-1. Inspect muestra los diseños de la plantilla de artículo de WKND.
+1. Descargar el [archivo XD de artículo WKND](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND-article-design.xd).
+1. Inspeccione los diseños de la plantilla de artículo de WKND.
 
 ## Enhorabuena. {#congratulations}
 

@@ -1,7 +1,7 @@
 ---
 title: Agregar correctamente enlaces simbólicos a GIT
 description: Instrucciones sobre cómo y dónde añadir enlaces simbólicos al trabajar en las configuraciones de Dispatcher.
-version: 6.5
+version: Experience Manager 6.5
 topic: Administration
 feature: Dispatcher
 role: Admin
@@ -10,7 +10,7 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 6e751586-e92e-482d-83ce-6fcae4c1102c
 duration: 295
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1231'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Después de crear el primer archivo de `.vhost` o el archivo de nivel superior `
 
 ## Arquetipo de Dispatcher
 
-AEM AEM El desarrollador de la inicia su proyecto generalmente desde el [tipo de archivo de la](https://github.com/adobe/aem-project-archetype)
+El desarrollador de AEM inicia su proyecto normalmente desde el [arquetipo de AEM](https://github.com/adobe/aem-project-archetype)
 
 A continuación, se muestra un ejemplo del área del código fuente donde puede ver los enlaces simbólicos utilizados:
 
@@ -176,7 +176,7 @@ El valor predeterminado es true, excepto `git-clone[1]` o `git-init[1] will prob
 
 El comportamiento de Git en Windows se explica aquí: Vínculos simbólicos · Wiki de Git-for-windows/Git · GitHub
 
-> AEM `Info`: Las suposiciones enumeradas en la documentación vinculada arriba parecen ser correctas con una posible configuración de desarrollador de la aplicación en Windows, especialmente NTFS y el hecho de que solo tenemos enlaces simbólicos de archivos en lugar de enlaces simbólicos de directorios
+> `Info`: Las suposiciones enumeradas en la documentación enlazada arriba parecen ser correctas con una posible configuración de AEM Developer en Windows, sobre todo NTFS y el hecho de que solo tenemos enlaces simbólicos de archivo vs. enlaces simbólicos de directorio
 
 Estas son las buenas noticias: desde [Git para Windows versión 2.10.2](https://github.com/git-for-windows/git/releases/tag/v2.10.2.windows.1), el instalador tiene una opción [explícita para habilitar la compatibilidad con vínculos simbólicos.](https://github.com/git-for-windows/git/issues/921)
 
@@ -228,7 +228,7 @@ MSYS=winsymlinks:nativestrict ln -s test_vhost_symlink ../dispatcher/src/conf.d/
 
 #### Resumen
 
-AEM Para que Git administre los enlaces simbólicos correctamente (al menos para el ámbito de la línea de base de configuración actual de Dispatcher) en un sistema operativo Microsoft Windows, necesitará:
+Para que Git administre los enlaces simbólicos correctamente (al menos para el ámbito de la línea de base de la configuración actual de AEM Dispatcher) en un sistema operativo Microsoft Windows, necesitará:
 
 | Elemento | Versión/configuración mínima | Versión y configuración recomendadas |
 |------|---------------------------------|-------------------------------------|

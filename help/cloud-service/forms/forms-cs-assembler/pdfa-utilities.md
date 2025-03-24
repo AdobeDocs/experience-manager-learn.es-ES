@@ -1,16 +1,16 @@
 ---
-title: Convertir PDF en PDF/A.
-description: Cree y valide archivos de PDF/A en Forms CA utilizando los extremos HTTP
+title: Convierta PDF a PDF/A.
+description: Crear y validar archivos de PDF/A en Forms CA mediante los extremos HTTP
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Output Service
 topic: Development
 jira: KT-10105
 exl-id: a4955104-8a87-4add-85c7-c3e3395f5f1a
 duration: 65
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 3%
@@ -19,11 +19,11 @@ ht-degree: 3%
 
 # Creación y validación de documentos de PDF/A
 
-PDF/A es una versión normalizada por ISO del Portable Document Format (PDF) especializada en el archivo y conservación a largo plazo de documentos electrónicos. PDF/A se diferencia del PDF en que prohíbe funciones que no son adecuadas para el archivado a largo plazo, como la vinculación de fuentes (en lugar de la incrustación de fuentes) y el cifrado.
+PDF/A es una versión normalizada por ISO del Portable Document Format (PDF) especializada en el archivo y conservación a largo plazo de documentos electrónicos. PDF/A difiere de PDF en que prohíbe funciones que no son adecuadas para el archivado a largo plazo, como la vinculación de fuentes (en lugar de la incrustación de fuentes) y el cifrado.
 
 ## Convertir a PDF/A
 
-El siguiente código se utilizó para convertir PDF en PDF/A
+El siguiente código se utilizó para convertir PDF a PDF/A
 
 ```java
 package com.aemformscs.documentservices;

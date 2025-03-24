@@ -1,45 +1,45 @@
 ---
-title: AEM Depuración del SDK de
-description: AEM AEM SDK es el entorno de desarrollo principal utilizado por los desarrolladores y admite una gran variedad de formas de depurar aplicaciones e implementarlas
+title: Depuración de AEM SDK
+description: AEM SDK es el entorno de desarrollo principal que utilizan los desarrolladores y admite una gran variedad de formas de depurar AEM y las aplicaciones implementadas.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: Tutorial
 topic: Development
 role: Developer
 level: Beginner, Intermediate
 exl-id: e27cf3de-ef89-44d7-819b-157f85f5a80f
 duration: 41
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 0%
 
 ---
 
-# AEM Depuración del SDK de
+# Depuración de AEM SDK
 
-AEM AEM El inicio rápido local de SDK es el entorno de desarrollo principal que utilizan los desarrolladores y admite una gran variedad de formas de depurar aplicaciones implementadas y de depurar aplicaciones en las que se han implementado y se han utilizado varios métodos. AEM Esta guía del usuario le explica algunas de las consolas y herramientas de depuración más comunes para depurar la aplicación en el inicio rápido local del SDK de la.
+El inicio rápido local de AEM SDK es el entorno de desarrollo principal que utilizan los desarrolladores y admite una gran variedad de formas de depurar AEM y las aplicaciones implementadas. Esta guía del usuario le llevará por algunas de las consolas y herramientas de depuración más comunes para depurar la aplicación en el inicio rápido local de AEM SDK.
 
 ## Registros
 
-AEM AEM Los registros actúan como primera línea para la depuración de aplicaciones de, pero dependen del inicio de sesión adecuado en la aplicación de la aplicación de la aplicación de la aplicación implementada.
+Los registros actúan como primera línea para depurar aplicaciones de AEM, pero dependen del registro adecuado en la aplicación de AEM implementada.
 
-[AEM Depuración del SDK de mediante registros](./logs.md)
+[Depuración de AEM SDK mediante registros](./logs.md)
 
 ## Depuración remota
 
-AEM AEM La depuración remota del código Java que se ejecuta en el inicio rápido local del SDK de la permite avanzar en la ejecución de código en directo desde el entorno de desarrollo de aplicaciones (IDE) en su entorno de desarrollo (SDK).
+La depuración remota del código Java que se ejecuta en el inicio rápido local de AEM SDK permite ejecutar código en directo en AEM desde su IDE.
 
-[AEM Depuración remota del SDK de la](./remote-debugging.md)
+[Depuración remota de AEM SDK](./remote-debugging.md)
 
 ## Consolas web OSGi
 
-AEM AEM AEM El inicio rápido local del SDK de la tiene una consola web OSGi que proporciona una variedad de información e introspecciones en el tiempo de ejecución de la local que son útiles para comprender cómo la aplicación es reconocida por, y funciona dentro de las funciones de.
+El inicio rápido local de AEM SDK tiene una consola web OSGi que proporciona una variedad de información e introspecciones en el tiempo de ejecución local de AEM que son útiles para comprender cómo reconoce la aplicación, y cómo funciona dentro de AEM.
 
-[AEM Depuración del SDK de la mediante la consola web de OSGi](./osgi-web-consoles.md)
+[Depuración de AEM SDK mediante la consola web OSGi](./osgi-web-consoles.md)
 
 ## Otras herramientas
 
-AEM Hay otras herramientas que pueden ayudarle a depurar la aplicación en el inicio rápido local del SDK de la.
+Hay otras herramientas que pueden ayudarle a depurar la aplicación en el inicio rápido local de AEM SDK.
 
-[AEM Otras herramientas para depurar el SDK de la](./other-tools.md)
+[Otras herramientas para depurar AEM SDK](./other-tools.md)

@@ -3,14 +3,14 @@ title: Visualización del código QR en el formulario adaptable
 description: Mostrar código QR en un formulario adaptable
 feature: Adaptive Forms
 type: Tutorial
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 jira: KT-15603
 last-substantial-update: 2024-05-28T00:00:00Z
 exl-id: 0c6079f4-601e-4a82-976c-71dbb2faa671
-source-git-commit: 1977e5103de72a0db5f446eba539d4ae5b810e74
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 0%
@@ -23,7 +23,7 @@ La incrustación de un código QR en un formulario adaptable puede mejorar en gr
 
 El componente de ejemplo usa [QRCode.js](https://davidshimjs.github.io/qrcodejs/).
 
-QRCode.js es una biblioteca javascript para realizar QRCode. Es compatible con Cross-browser with HTML5 Canvas y table tag en DOM.
+QRCode.js es una biblioteca JavaScript para realizar QRCode. Es compatible con Cross-browser con HTML5 Canvas y table tag en DOM.
 
 El componente genera el código QR en función del valor especificado en la propiedad de configuración del componente.
 ![imagen](assets/qr-code-url.png)

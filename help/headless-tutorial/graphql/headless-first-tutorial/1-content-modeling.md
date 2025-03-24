@@ -1,7 +1,7 @@
 ---
-title: 'AEM Modelado de contenido: tutorial inicial sin encabezado'
-description: Aprenda a aprovechar los fragmentos de contenido, crear modelos de fragmentos y utilizar puntos de conexión de GraphQL AEM en la creación de segmentos de contenido de la lista de segmentos de la lista de distribución de contenido.
-version: Cloud Service
+title: 'Modelado de contenido: primer tutorial de AEM Headless'
+description: Aprenda a aprovechar los fragmentos de contenido, crear modelos de fragmentos y utilizar puntos de conexión de GraphQL en AEM.
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Development
 role: Developer
@@ -12,7 +12,7 @@ jira: KT-13270
 thumbnail: KT-13270.jpeg
 exl-id: 6e5e3cb4-9a47-42af-86af-da33fd80cb47
 duration: 175
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '785'
 ht-degree: 9%
@@ -21,19 +21,19 @@ ht-degree: 9%
 
 # Modelado de contenido
 
-Le damos la bienvenida al capítulo del tutorial sobre fragmentos de contenido y puntos finales de GraphQL en Adobe Experience Manager AEM (). Cubriremos el uso de los fragmentos de contenido, la creación de modelos de fragmentos y el uso de puntos finales de GraphQL AEM en la creación de segmentos de segmentos de contenido de la red de distribución de contenido ().
+Le damos la bienvenida al capítulo del tutorial sobre fragmentos de contenido y puntos finales de GraphQL en Adobe Experience Manager (AEM). Explicaremos el uso de los fragmentos de contenido, la creación de modelos de fragmentos y el uso de puntos de conexión de GraphQL en AEM.
 
-Los fragmentos de contenido ofrecen un enfoque estructurado para administrar el contenido en varios canales, lo que proporciona flexibilidad y reutilización. AEM Al habilitar los fragmentos de contenido en, se permite la creación de contenido modular en, lo que mejora la coherencia y la adaptabilidad.
+Los fragmentos de contenido ofrecen un enfoque estructurado para administrar el contenido en varios canales, lo que proporciona flexibilidad y reutilización. Al habilitar los fragmentos de contenido en AEM, se puede crear contenido modular, mejorar la coherencia y la adaptabilidad.
 
-AEM En primer lugar, le guiaremos a través de la activación de los fragmentos de contenido en la, que cubren las configuraciones y los ajustes necesarios para una integración sin problemas.
+En primer lugar, le guiaremos a través de la activación de los fragmentos de contenido en AEM, que cubren las configuraciones y ajustes necesarios para una integración perfecta.
 
 A continuación, se explica la creación de modelos de fragmento, que definen la estructura y los atributos. Aprenda a diseñar modelos alineados con los requisitos de contenido y a administrarlos de forma eficaz.
 
 A continuación, se mostrará la creación de fragmentos de contenido a partir de los modelos, con instrucciones paso a paso para la creación y publicación.
 
-AEM Además, exploraremos la definición de puntos finales de GraphQL de la. GraphQL AEM recupera de forma eficaz los datos de los usuarios y configuraremos los puntos de conexión para exponer los datos deseados. Las consultas persistentes optimizarán el rendimiento y el almacenamiento en caché.
+Además, exploraremos la definición de puntos finales de AEM GraphQL. GraphQL recupera datos de AEM de forma eficaz y configuraremos los puntos de conexión para exponer los datos deseados. Las consultas persistentes optimizarán el rendimiento y el almacenamiento en caché.
 
-A lo largo del tutorial, proporcionaremos explicaciones, ejemplos de código y sugerencias prácticas. AEM Al final, tendrá las habilidades para habilitar fragmentos de contenido, crear modelos de fragmentos, generar fragmentos y definir puntos finales de GraphQL y consultas persistentes de la forma más rápida y eficaz. ¡Vamos a empezar!
+A lo largo del tutorial, proporcionaremos explicaciones, ejemplos de código y sugerencias prácticas. Al final, tendrá las habilidades para habilitar fragmentos de contenido, crear modelos de fragmentos, generar fragmentos y definir puntos finales y consultas persistentes de AEM GraphQL. ¡Vamos a empezar!
 
 ## Configuración según el contexto
 
@@ -89,7 +89,7 @@ A lo largo del tutorial, proporcionaremos explicaciones, ejemplos de código y s
 1. Una vez creada la carpeta, selecciónela y abra sus __Propiedades__.
 1. En la ficha __Configuraciones en la nube__ de la carpeta, seleccione la configuración [creada anteriormente](#enable-content-fragments-and-graphql).
 
-   AEM ![Configuración de nube de la carpeta de recursos sin encabezado](./assets/1/cloud-config.png)
+   ![Configuración de nube sin encabezado de AEM de la carpeta de recursos](./assets/1/cloud-config.png)
 
    Haga clic en la carpeta nueva y cree un teaser. Haga clic en __Crear__ y en __Fragmento de contenido__ y seleccione el modelo __Teaser__. Asigne un nombre al modelo __Hero__ y haga clic en __Crear__.
 
@@ -107,11 +107,11 @@ A lo largo del tutorial, proporcionaremos explicaciones, ejemplos de código y s
 
 1. Vaya a __Herramientas > GraphQL__
 
-   AEM ![GraphiQL](./assets/1/endpoint-nav.png)
+   ![GraphiQL de AEM](./assets/1/endpoint-nav.png)
 
 1. Haga clic en __Crear__, asigne un nombre al nuevo extremo y elija la configuración recién creada.
 
-   AEM ![Extremo de GraphQL sin encabezado](./assets/1/endpoint.png)
+   ![Extremo GraphQL sin encabezado de AEM](./assets/1/endpoint.png)
 
 ## Consultas persistentes de GraphQL
 
@@ -132,7 +132,7 @@ A lo largo del tutorial, proporcionaremos explicaciones, ejemplos de código y s
 
    Debe obtener una lista que contenga el fragmento único creado [arriba](#create-content).
 
-   AEM Para este ejercicio, cree una consulta completa que utilice la aplicación sin encabezado de la aplicación de la. Cree una consulta que devuelva un solo teaser por ruta. En el editor de consultas, introduzca la siguiente consulta:
+   Para este ejercicio, cree una consulta completa que utilice la aplicación sin encabezado de AEM. Cree una consulta que devuelva un solo teaser por ruta. En el editor de consultas, introduzca la siguiente consulta:
 
    ```graphql
    query TeaserByPath($path: String!) {
@@ -193,6 +193,6 @@ A lo largo del tutorial, proporcionaremos explicaciones, ejemplos de código y s
 
 ## Pasos siguientes
 
-Enhorabuena. Ha configurado correctamente AEM as a Cloud Service para permitir la creación de fragmentos de contenido y extremos de GraphQL. También ha creado un modelo de fragmento de contenido y un fragmento de contenido, y ha definido un punto final de GraphQL y una consulta persistente. AEM Ya está listo para pasar al siguiente capítulo del tutorial, donde aprenderá a crear una aplicación de React sin encabezado que consuma los fragmentos de contenido y el punto de conexión de GraphQL creados en este capítulo.
+¡Enhorabuena! Ha configurado correctamente AEM as a Cloud Service para permitir la creación de fragmentos de contenido y extremos de GraphQL. También ha creado un modelo de fragmento de contenido y un fragmento de contenido, y ha definido un punto final de GraphQL y una consulta persistente. Ya está listo para pasar al siguiente capítulo del tutorial, donde aprenderá a crear una aplicación React de AEM sin encabezado que consuma los fragmentos de contenido y el extremo de GraphQL que ha creado en este capítulo.
 
-[AEM Capítulo siguiente: API sin encabezado de y React](./2-aem-headless-apis-and-react.md)
+[Capítulo siguiente: API de AEM sin encabezado y React](./2-aem-headless-apis-and-react.md)

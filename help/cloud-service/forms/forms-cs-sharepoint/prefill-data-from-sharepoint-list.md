@@ -5,13 +5,13 @@ feature: Adaptive Forms
 type: Documentation
 role: Developer
 level: Beginner
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Integrations
 jira: KT-14795
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 duration: 46
 exl-id: 9abe9f9d-8fb3-4e01-a830-1dad1c27274d
-source-git-commit: 426020f59c7103829b7b7b74acb0ddb7159b39fa
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '240'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Rellenar previamente formularios adaptables con datos de lista de puntos de uso compartido
 
-AEM En la versión anterior del formulario de datos de formulario (6.5), se tenía que escribir código personalizado para rellenar previamente el formulario adaptable respaldado por el modelo de datos de formulario mediante el atributo de solicitud. En AEM Forms as a Cloud Service, ya no es necesario escribir código personalizado.
+En la versión anterior de AEM Form(6.5), había que escribir código personalizado para rellenar previamente el formulario adaptable respaldado por el modelo de datos de formulario mediante el atributo de solicitud. En AEM Forms as a Cloud Service, ya no es necesario escribir código personalizado.
 
 En este artículo se explican los pasos necesarios para rellenar previamente un formulario adaptable con datos recuperados de una lista de SharePoint mediante el servicio de prerrellenado del modelo de datos de formulario.
 

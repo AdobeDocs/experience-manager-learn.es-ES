@@ -1,15 +1,15 @@
 ---
-title: AEM Uso del reproductor de vídeo en Dynamic Media
-description: AEM El reproductor de vídeo de Dynamic Media, que antes dependía del tiempo de ejecución del Flash para admitir el flujo de vídeo adaptable en los clientes y exploradores de equipos de escritorio, se volvió más agresivo con el flujo de contenido basado en flash. Con la introducción de HLS (HTTP Live Streaming video delivery protocol de Apple), el contenido ahora se puede transmitir sin depender del flash.
+title: Uso del reproductor de vídeo en Dynamic Media de AEM
+description: El reproductor de vídeo Dynamic Media de AEM, que antes dependía del tiempo de ejecución de Flash para admitir la transmisión de vídeo adaptable en clientes y exploradores de escritorio, se volvió más agresivo con la transmisión de contenido basada en Flash. Con la introducción de HLS (el protocolo de entrega de vídeo HTTP Live Streaming de Apple), el contenido ahora se puede transmitir sin depender de Flash.
 feature: Video Profiles
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Content Management
 role: User
 level: Beginner
 doc-type: Feature Video
 exl-id: 7e4cb782-836d-4ec0-97d0-645b91ea43e0
 duration: 568
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 5%
@@ -17,13 +17,13 @@ ht-degree: 5%
 ---
 
 
-# AEM Uso del reproductor de vídeo en Dynamic Media{#using-the-video-player-in-aem-dynamic-media}
+# Uso del reproductor de vídeo en Dynamic Media de AEM{#using-the-video-player-in-aem-dynamic-media}
 
-AEM El reproductor de vídeo de Dynamic Media, que antes dependía del tiempo de ejecución del Flash para admitir el flujo de vídeo adaptable en los clientes y exploradores de equipos de escritorio, se volvió más agresivo con el flujo de contenido basado en flash. Con la introducción de HLS (HTTP Live Streaming video delivery protocol de Apple), el contenido ahora se puede transmitir sin depender del flash.
+El reproductor de vídeo Dynamic Media de AEM, que antes dependía del tiempo de ejecución de Flash para admitir la transmisión de vídeo adaptable en clientes y exploradores de escritorio, se volvió más agresivo con la transmisión de contenido basada en Flash. Con la introducción de HLS (el protocolo de entrega de vídeo HTTP Live Streaming de Apple), el contenido ahora se puede transmitir sin depender de Flash.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16791?quality=12&learn=on)
 
-## Búsqueda rápida en el reproductor de vídeo sin Flash {#quick-look-into-non-flash-video-player}
+## Búsqueda rápida en el reproductor de vídeo no Flash {#quick-look-into-non-flash-video-player}
 
 >[!VIDEO](https://video.tv.adobe.com/v/17429?quality=12&learn=on)
 
@@ -50,8 +50,8 @@ La compatibilidad con el explorador HLS es la siguiente: para los exploradores n
   <tr>
    <td> <p>Escritorio</p> </td>
    <td> <p>Internet Explorer 11+</p> </td>
-   <td> <p>Dynamic Media - Modo Scene7: flujo de vídeo HLS</p> 
-        <p>Dynamic Media - Modo híbrido: descarga progresiva</p>
+   <td> <p>Dynamic Media - Modo Scene7: flujo de vídeo de HLS</p> 
+        <p>Dynamic Media: modo híbrido: descarga progresiva</p>
    </td>
   </tr>
   <tr>
@@ -62,47 +62,47 @@ La compatibilidad con el explorador HLS es la siguiente: para los exploradores n
   <tr> 
    <td> <p>Escritorio</p> </td>
    <td> <p>Firefox 45 o posterior</p> </td>
-   <td> <p>Flujo de vídeo HLS</p> </td>
+   <td> <p>Streaming de vídeo de HLS</p> </td>
   </tr>
   <tr> 
    <td> <p>Escritorio</p> </td>
    <td> <p>Chrome</p> </td>
-   <td> <p>Flujo de vídeo HLS</p> </td>
+   <td> <p>Streaming de vídeo de HLS</p> </td>
   </tr>
   <tr> 
    <td> <p>Escritorio</p> </td>
    <td> <p>Safari (Mac)</p> </td>
-   <td> <p>Flujo de vídeo HLS</p> </td>
+   <td> <p>Streaming de vídeo de HLS</p> </td>
   </tr>
   <tr> 
-   <td> <p>Mobile</p> </td>
+   <td> <p>Dispositivo móvil</p> </td>
    <td> <p>Chrome (Android 6 o anterior)</p> </td>
    <td> <p>Descarga progresiva</p> </td>
   </tr>
   <tr> 
-   <td> <p>Mobile</p> </td>
+   <td> <p>Dispositivo móvil</p> </td>
    <td> <p>Chrome (Android 7 o posterior)</p> </td>
-   <td> <p>Flujo de vídeo HLS</p> </td>
+   <td> <p>Streaming de vídeo de HLS</p> </td>
   </tr>
   <tr> 
-   <td> <p>Mobile</p> </td>
+   <td> <p>Dispositivo móvil</p> </td>
    <td> <p>Android (navegador predeterminado)</p> </td>
    <td> <p>Descarga progresiva</p> </td>
   </tr>
   <tr> 
-   <td> <p>Mobile</p> </td>
+   <td> <p>Dispositivo móvil</p> </td>
    <td> <p>Safari (iOS)</p> </td>
-   <td> <p>Flujo de vídeo HLS</p> </td>
+   <td> <p>Streaming de vídeo de HLS</p> </td>
   </tr>
   <tr> 
-   <td> <p>Mobile</p> </td>
+   <td> <p>Dispositivo móvil</p> </td>
    <td> <p>Chrome (iOS)</p> </td>
-   <td> <p>Flujo de vídeo HLS</p> </td>
+   <td> <p>Streaming de vídeo de HLS</p> </td>
   </tr>
   <tr> 
-   <td> <p>Mobile</p> </td>
+   <td> <p>Dispositivo móvil</p> </td>
    <td> <p>BlackBerry</p> </td>
-   <td> <p>Flujo de vídeo HLS</p> </td>
+   <td> <p>Streaming de vídeo de HLS</p> </td>
   </tr>
  </tbody>
 </table>

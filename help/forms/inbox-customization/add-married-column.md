@@ -3,14 +3,14 @@ title: Añadir columnas personalizadas
 description: Añadir columnas personalizadas para mostrar datos adicionales del flujo de trabajo
 feature: Adaptive Forms
 doc-type: article
-version: 6.5
+version: Experience Manager 6.5
 jira: KT-5830
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 0b141b37-6041-4f87-bd50-dade8c0fee7d
 duration: 75
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 1%
@@ -19,13 +19,13 @@ ht-degree: 1%
 
 # Añadir columnas personalizadas
 
-Para mostrar los datos del flujo de trabajo en la bandeja de entrada, es necesario definir y rellenar variables en el flujo de trabajo. El valor de la variable debe establecerse antes de asignar una tarea a un usuario. AEM Para ayudarle a empezar, hemos proporcionado un flujo de trabajo de ejemplo que está listo para implementarse en su servidor de.
+Para mostrar los datos del flujo de trabajo en la bandeja de entrada, es necesario definir y rellenar variables en el flujo de trabajo. El valor de la variable debe establecerse antes de asignar una tarea a un usuario. Para ayudarle a empezar, hemos proporcionado un flujo de trabajo de ejemplo listo para implementarlo en su servidor de AEM.
 
-* AEM [Iniciar sesión en la cuenta de usuario de la cuenta de usuario](http://localhost:4502/crx/de/index.jsp)
+* [Iniciar sesión en AEM](http://localhost:4502/crx/de/index.jsp)
 * [Importar el flujo de trabajo de revisión](assets/review-workflow.zip)
 * [Revisar el flujo de trabajo](http://localhost:4502/editor.html/conf/global/settings/workflow/models/reviewworkflow.html)
 
-Este flujo de trabajo tiene dos variables definidas (isMarried y revenue) y sus valores se establecen mediante el componente de variable set. AEM Estas variables están disponibles como columnas para añadirlas a la bandeja de entrada
+Este flujo de trabajo tiene dos variables definidas (isMarried y revenue) y sus valores se establecen mediante el componente de variable set. Estas variables están disponibles como columnas para añadirlas a la bandeja de entrada AEM
 
 ## Crear servicio
 
@@ -73,13 +73,13 @@ return isMarried(inboxItem);
 
 >[!NOTE]
 >
->AEM Debe incluir UberJar 6.5.5 en su proyecto de para que funcione el código de arriba
+>Debe incluir AEM 6.5.5 Uber.jar en su proyecto para que funcione el código anterior
 
 ![uber-jar](assets/uber-jar.PNG)
 
 ## Realizar pruebas en el servidor
 
-* AEM [Iniciar sesión en la consola web de la](http://localhost:4502/system/console/bundles)
+* [Iniciar sesión en la consola web de AEM](http://localhost:4502/system/console/bundles)
 * [Implementar e iniciar el paquete de personalización de bandeja de entrada](assets/inboxcustomization.inboxcustomization.core-1.0-SNAPSHOT.jar)
 * [Abrir la bandeja de entrada](http://localhost:4502/aem/inbox)
 * Para abrir el Control de administración, haga clic en el icono _Vista de lista_ junto al botón _Crear_

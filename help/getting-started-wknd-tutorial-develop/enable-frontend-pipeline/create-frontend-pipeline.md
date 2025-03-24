@@ -1,7 +1,7 @@
 ---
 title: Implementación mediante la canalización front-end
 description: Obtenga información sobre cómo crear y ejecutar una canalización front-end que genere recursos front-end e implemente en la CDN integrada en AEM as a Cloud Service.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: AEM Project Archetype, Cloud Manager, CI-CD Pipeline
 topic: Content Management, Development, Development, Architecture
 role: Developer, Architect, Admin
@@ -13,7 +13,7 @@ recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: d6da05e4-bd65-4625-b9a4-cad8eae3c9d7
 duration: 225
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 0%
@@ -36,7 +36,7 @@ En este capítulo, creamos y ejecutamos una canalización front-end en Adobe Clo
 
 ## Requisitos previos {#prerequisites}
 
-AEM Este es un tutorial de varias partes y se supone que se han completado los pasos descritos en [Actualizar proyecto estándar](./update-project.md).
+Este es un tutorial de varias partes y se da por hecho que los pasos descritos en [Actualizar proyecto estándar de AEM](./update-project.md) se han completado.
 
 Asegúrese de que tiene [privilegios para crear e implementar canalizaciones en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=en#role-definitions) y [acceso a un entorno de AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html).
 
@@ -70,7 +70,7 @@ Y __lo más importante__ para el campo __Ubicación del código__ el valor es `/
 
 ## Secuencia de implementación
 
-* AEM Ejecute primero la canalización __FullStack WKND Deploy to Dev__, cuyo nombre se acaba de cambiar, para quitar los archivos clientlib de WKND del repositorio de. AEM Y lo más importante, prepare el contrato de canalización de front-end para la preparación de la agregando __archivos de configuración de Sling__ (`SiteConfig`, `HtmlPageItemsConfig`).
+* Ejecute primero la canalización __FullStack WKND Deploy to Dev__, cuyo nombre se acaba de cambiar, para quitar los archivos clientlib de WKND del repositorio de AEM. Y lo más importante, prepare AEM para el contrato de canalización front-end agregando __archivos de configuración de Sling__ (`SiteConfig`, `HtmlPageItemsConfig`).
 
 ![Sitio WKND sin estilo](assets/unstyled-wknd-site.png)
 
@@ -87,7 +87,7 @@ Y __lo más importante__ para el campo __Ubicación del código__ el valor es `/
 
 ## Verificar cambios de estilo y nuevo paradigma de entrega
 
-* Abra cualquier página del sitio WKND y podrá ver el color del texto con __Adobe rojo__ y los archivos de recursos front-end (CSS, JS) se entregan desde la red de distribución de contenido (CDN). El nombre de host de solicitud de recursos comienza con `https://static-pXX-eYY.p123-e456.adobeaemcloud.com/$HASH_VALUE$/theme/site.css`, así como el site.js o cualquier otro recurso estático al que haga referencia en el archivo `HtmlPageItemsConfig`.
+* Abra cualquier página del sitio WKND y podrá ver el color del texto con __Adobe Red__ y los archivos de recursos front-end (CSS, JS) se entregan desde la red de distribución de contenido (CDN). El nombre de host de solicitud de recursos comienza con `https://static-pXX-eYY.p123-e456.adobeaemcloud.com/$HASH_VALUE$/theme/site.css`, así como el site.js o cualquier otro recurso estático al que haga referencia en el archivo `HtmlPageItemsConfig`.
 
 
 ![Sitio WKND de nuevo estilo](assets/newly-styled-wknd-site.png)
@@ -96,7 +96,7 @@ Y __lo más importante__ para el campo __Ubicación del código__ el valor es `/
 
 >[!TIP]
 >
->El `$HASH_VALUE$` aquí es el mismo que se ve en el campo __HASH DE CONTENIDO__ de la canalización __FrontEnd WKND Deploy to Dev__. AEM Se le notifica la dirección URL de CDN del recurso front-end, el valor se almacena en `/conf/wknd/sling:configs/com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig/jcr:content` en la propiedad __prefixPath__.
+>El `$HASH_VALUE$` aquí es el mismo que se ve en el campo __HASH DE CONTENIDO__ de la canalización __FrontEnd WKND Deploy to Dev__. Se notifica a AEM de la URL de CDN del recurso front-end. El valor se almacena en `/conf/wknd/sling:configs/com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig/jcr:content` en la propiedad __prefixPath__.
 
 
 ![Correlación de valor hash](assets/hash-value-correlartion.png)
@@ -105,7 +105,7 @@ Y __lo más importante__ para el campo __Ubicación del código__ el valor es `/
 
 ## Enhorabuena. {#congratulations}
 
-Ha creado, ejecutado y verificado la canalización front-end que solo crea e implementa el módulo &quot;ui.frontend&quot; del proyecto WKND Sites. AEM Ahora, su equipo front-end puede iterar rápidamente en el diseño y el comportamiento del front-end del sitio, fuera del ciclo de vida completo del proyecto de la.
+Ha creado, ejecutado y verificado la canalización front-end que solo crea e implementa el módulo &quot;ui.frontend&quot; del proyecto WKND Sites. Ahora, su equipo front-end puede iterar rápidamente en el diseño y el comportamiento del front-end del sitio, fuera del ciclo de vida completo del proyecto de AEM.
 
 ## Pasos siguientes {#next-steps}
 

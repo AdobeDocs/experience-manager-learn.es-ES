@@ -3,11 +3,11 @@ title: Acroforms con AEM Forms
 description: Parte 3 de un tutorial que integra AcroForms con AEM Forms. Pruebe el flujo de trabajo y el formulario adaptable en el sistema.
 feature: adaptive-forms
 doc-type: Tutorial
-version: 6.5
+version: Experience Manager 6.5
 badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 duration: 45
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 3%
@@ -17,8 +17,8 @@ ht-degree: 3%
 
 # Pruebe esta capacidad en su sistema
 
-AEM [Descargar e importar este paquete en el espacio de trabajo {10000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000
-Este paquete contiene el flujo de trabajo de ejemplo y la página html que le permite crear el esquema a partir del AcroForm cargado.](assets/acro-form-aem-form.zip)
+[Descargar e importar este paquete en AEM](assets/acro-form-aem-form.zip)
+Este paquete contiene el flujo de trabajo de ejemplo y la página html que le permite crear el esquema a partir del AcroForm cargado.
 
 ## Configurar flujo de trabajo
 
@@ -32,10 +32,10 @@ Este paquete contiene el flujo de trabajo de ejemplo y la página html que le pe
 
 1. Cree un formulario adaptable con el esquema creado en el paso anterior.
 2. Arrastre y suelte algunos elementos de esquema en el formulario adaptable.
-3. AEM Configure la acción de envío del formulario adaptable para enviarlo al flujo de trabajo de la (MergeAcroFormData).
+3. Configure la acción de envío del formulario adaptable para enviarlo al flujo de trabajo de AEM (MergeAcroFormData).
 4. **Asegúrese de especificar la ruta del archivo de datos como &quot;Data.xml&quot;. Esto es muy importante, ya que el código de ejemplo busca un archivo llamado Data.xml en la carga útil del flujo de trabajo.**
 5. Obtenga una vista previa del formulario adaptable, rellene el formulario y envíelo.
-6. Debería ver el PDF con los datos combinados guardados en la carpeta especificada en el paso 4 en el flujo de trabajo de configuración
+6. Debería ver PDF con los datos combinados guardados en la carpeta especificada en el paso 4 del flujo de trabajo de configuración
 
 >[!NOTE]
 >

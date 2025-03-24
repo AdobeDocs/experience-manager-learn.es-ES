@@ -1,7 +1,7 @@
 ---
-title: AEM Uso de texto enriquecido con sin encabezado
-description: Aprenda a crear contenido e incrustar contenido referenciado mediante un editor de texto enriquecido multilínea con fragmentos de contenido de Adobe Experience Manager AEM, y cómo se entrega el texto enriquecido mediante el uso de API de GraphQL como JSON para que las aplicaciones sin encabezado lo consuman.
-version: Cloud Service
+title: Uso de texto enriquecido con AEM sin encabezado
+description: Aprenda a crear contenido e incrustar contenido referenciado mediante un editor de texto enriquecido multilínea con fragmentos de contenido de Adobe Experience Manager, y cómo las API de GraphQL de AEM entregan el texto enriquecido como JSON para que lo consuman las aplicaciones sin encabezado.
+version: Experience Manager as a Cloud Service
 doc-type: article
 jira: KT-9985
 feature: Content Fragments, GraphQL API
@@ -10,18 +10,18 @@ level: Intermediate
 role: Developer
 exl-id: 790a33a9-b4f4-4568-8dfe-7e473a5b68b6
 duration: 785
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1409'
 ht-degree: 0%
 
 ---
 
-# AEM Texto enriquecido con sin encabezado de
+# Texto enriquecido con AEM sin encabezado
 
 El campo de texto multilínea es un tipo de datos de fragmentos de contenido que permite a los autores crear contenido de texto enriquecido. Las referencias a otro contenido, como imágenes u otros fragmentos de contenido, se pueden insertar dinámicamente en línea dentro del flujo del texto. El campo Texto de una sola línea es otro tipo de datos de fragmentos de contenido que deben utilizarse para elementos de texto simples.
 
-AEM API de GraphQL ofrece una sólida capacidad para devolver texto enriquecido como HTML, texto sin formato o como JSON puro. La representación JSON es potente, ya que proporciona a la aplicación cliente control total sobre cómo procesar el contenido.
+La API de GraphQL de AEM ofrece una sólida capacidad para devolver texto enriquecido como HTML, texto sin formato o como JSON puro. La representación JSON es potente, ya que proporciona a la aplicación cliente control total sobre cómo procesar el contenido.
 
 ## Editor de varias líneas
 
@@ -131,7 +131,7 @@ La variable `$path` utilizada en el filtro `_path` requiere la ruta de acceso co
 
 A continuación se muestran varios ejemplos de tipos de respuesta de un campo multilínea denominado `main` que contiene un párrafo: &quot;Este es un párrafo que incluye contenido **important**&quot;. donde &quot;important&quot; está marcado como **bold**.
 
-Ejemplo del HTML ++
+Ejemplo de +++HTML
 
 **Consulta persistente de GraphQL:**
 
@@ -247,9 +247,9 @@ La opción de procesamiento `plaintext` elimina cualquier formato.
 
 ## Procesar una respuesta JSON de texto enriquecido {#render-multiline-json-richtext}
 
-La respuesta JSON de texto enriquecido del campo de varias líneas está estructurada como un árbol jerárquico. Cada objeto o nodo representa un bloque de HTML diferente del texto enriquecido.
+La respuesta JSON de texto enriquecido del campo de varias líneas está estructurada como un árbol jerárquico. Cada objeto o nodo representa un bloque HTML diferente del texto enriquecido.
 
-A continuación se muestra una respuesta JSON de ejemplo de un campo de texto multilínea. Observe que cada objeto, o nodo, incluye un `nodeType` que representa el bloque de HTML del texto enriquecido como `paragraph`, `link` y `text`. Cada nodo contiene opcionalmente `content`, que es una submatriz que contiene los elementos secundarios del nodo actual.
+A continuación se muestra una respuesta JSON de ejemplo de un campo de texto multilínea. Observe que cada objeto, o nodo, incluye un `nodeType` que representa el bloque HTML del texto enriquecido como `paragraph`, `link` y `text`. Cada nodo contiene opcionalmente `content`, que es una submatriz que contiene los elementos secundarios del nodo actual.
 
 ```json
 "json": [// root "content" or child nodes
@@ -329,7 +329,7 @@ const nodeMap = {
 }
 ```
 
-`nodeMap` es un literal de objeto JavaScript que se usa como mapa. Cada una de las &quot;claves&quot; representa un(a) `nodeType` diferente. Los parámetros de `node` y `children` se pueden pasar a las funciones resultantes que representan el nodo. El tipo de valor devuelto utilizado en este ejemplo es JSX, pero el método se podría adaptar para crear un literal de cadena que represente el contenido del HTML.
+`nodeMap` es un literal de objeto JavaScript que se usa como mapa. Cada una de las &quot;claves&quot; representa un(a) `nodeType` diferente. Los parámetros de `node` y `children` se pueden pasar a las funciones resultantes que representan el nodo. El tipo de valor devuelto utilizado en este ejemplo es JSX, pero el método se podría adaptar para crear un literal de cadena que represente el contenido de HTML.
 
 ### Ejemplo de código completo
 
@@ -341,7 +341,7 @@ Se puede encontrar una utilidad de representación de texto enriquecido reutiliz
 
 ## Agregar referencias en línea a texto enriquecido {#insert-fragment-references}
 
-El campo Multiline permite a los autores insertar imágenes u otros recursos digitales de AEM Assets en el flujo del texto enriquecido.
+El campo Multiline permite a los autores insertar imágenes u otros recursos digitales de los AEM Assets en el flujo del texto enriquecido.
 
 ![insertar imagen](assets/rich-text/insert-image.png)
 
@@ -351,16 +351,16 @@ Las referencias a otros fragmentos de contenido también se pueden vincular o in
 
 ![Insertar referencia de fragmento de contenido](assets/rich-text/insert-contentfragment.png)
 
-La captura de pantalla anterior muestra otro fragmento de contenido, la guía definitiva para los parques de patinaje de Los Ángeles, insertándose en el campo de varias líneas. Los tipos de fragmentos de contenido que se pueden insertar en el campo están controlados por la configuración **Modelos de fragmentos de contenido permitidos** en el [tipo de datos multilínea](#multi-line-data-type) del modelo de fragmentos de contenido.
+La captura de pantalla anterior muestra otro fragmento de contenido, Ultimate Guide to LA Skate Parks, insertándose en el campo multilínea. Los tipos de fragmentos de contenido que se pueden insertar en el campo están controlados por la configuración **Modelos de fragmentos de contenido permitidos** en el [tipo de datos multilínea](#multi-line-data-type) del modelo de fragmentos de contenido.
 
 ## Consulta de referencias en línea con GraphQL
 
-La API de GraphQL permite a los desarrolladores crear una consulta que incluye propiedades adicionales sobre cualquier referencia insertada en un campo de varias líneas. La respuesta JSON incluye un objeto `_references` independiente que enumera estas propiedades adicionales. La respuesta JSON proporciona a los desarrolladores control total sobre cómo procesar las referencias o los vínculos en lugar de tener que lidiar con un HTML opinado.
+La API de GraphQL permite a los desarrolladores crear una consulta que incluye propiedades adicionales sobre cualquier referencia insertada en un campo de varias líneas. La respuesta JSON incluye un objeto `_references` independiente que enumera estas propiedades adicionales. La respuesta JSON proporciona a los desarrolladores control total sobre cómo procesar las referencias o los vínculos en lugar de tener que lidiar con HTML.
 
 Por ejemplo, es posible que desee:
 
 * Incluya lógica de enrutamiento personalizada para administrar vínculos a otros fragmentos de contenido al implementar una aplicación de una sola página, como React Router o Next.js
-* AEM Procesar una imagen en línea utilizando la ruta absoluta a un entorno de Publish de la como el valor `src`.
+* Procesar una imagen en línea utilizando la ruta absoluta a un entorno de publicación de AEM como el valor `src`.
 * Determine cómo procesar una referencia incrustada a otro fragmento de contenido con propiedades personalizadas adicionales.
 
 Utilice el tipo de valor devuelto `json` e incluya el objeto `_references` al construir una consulta GraphQL:
@@ -545,4 +545,4 @@ El vídeo anterior muestra un ejemplo completo:
 1. Actualización del campo de texto multilínea de un modelo de fragmento de contenido para permitir referencias a fragmento
 2. Uso del Editor de fragmentos de contenido para incluir una imagen y hacer referencia a otro fragmento en un campo de texto multilínea.
 3. Creando una consulta de GraphQL que incluya la respuesta de texto multilínea como JSON y cualquier `_references` utilizado.
-4. SPA Escribir una respuesta de React que procese las referencias en línea de la respuesta de texto enriquecido.
+4. Escribir un SPA de React que procese las referencias en línea de la respuesta de texto enriquecido.

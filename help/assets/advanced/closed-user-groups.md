@@ -1,7 +1,7 @@
 ---
 title: Grupos de usuarios cerrados en AEM Assets
 description: Grupos de usuarios cerrados (CUG) es una función que se utiliza para restringir el acceso al contenido a un grupo selecto de usuarios en un sitio publicado. Este vídeo muestra cómo se pueden utilizar los grupos de usuarios cerrados con Adobe Experience Manager Assets para restringir el acceso a una carpeta específica de recursos.
-version: 6.4, 6.5, Cloud Service
+version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 topic: Administration, Security
 feature: User and Groups
 role: Admin
@@ -12,7 +12,7 @@ last-substantial-update: 2022-06-06T00:00:00Z
 doc-type: Feature Video
 exl-id: a2bf8a82-15ee-478c-b7c3-de8a991dfeb8
 duration: 321
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 0%
@@ -21,13 +21,13 @@ ht-degree: 0%
 
 # Grupos de usuarios cerrados{#using-closed-user-groups-with-aem-assets}
 
-Grupos de usuarios cerrados (CUG) es una función que se utiliza para restringir el acceso al contenido a un grupo selecto de usuarios en un sitio publicado. Este vídeo muestra cómo se pueden utilizar los grupos de usuarios cerrados con Adobe Experience Manager Assets para restringir el acceso a una carpeta específica de recursos. La compatibilidad con Grupos de usuarios cerrados con AEM Assets AEM se introdujo por primera vez en la versión 6.4, a partir de la versión 6.4.
+Grupos de usuarios cerrados (CUG) es una función que se utiliza para restringir el acceso al contenido a un grupo selecto de usuarios en un sitio publicado. Este vídeo muestra cómo se pueden utilizar los grupos de usuarios cerrados con Adobe Experience Manager Assets para restringir el acceso a una carpeta específica de recursos. La compatibilidad con Grupos de usuarios cerrados con AEM Assets se introdujo por primera vez en AEM 6.4.
 
 >[!VIDEO](https://video.tv.adobe.com/v/22155?quality=12&learn=on)
 
 ## Grupo de usuarios cerrado (CUG) con AEM Assets
 
-* AEM Diseñado para restringir el acceso a los recursos de una instancia de Publish de la.
+* Diseñado para restringir el acceso a los recursos de una instancia de publicación de AEM.
 * Otorga acceso de lectura a un conjunto de usuarios/grupos.
 * El CUG solo se puede configurar en el nivel de carpeta. No se puede establecer un CUG en recursos individuales.
 * Las subcarpetas y los recursos aplicados heredan automáticamente las políticas de CUG.
@@ -35,11 +35,11 @@ Grupos de usuarios cerrados (CUG) es una función que se utiliza para restringir
 
 ## Grupos de usuarios cerrados frente a listas de control de acceso {#closed-user-groups-vs-access-control-lists}
 
-AEM AEM Tanto los Grupos de usuarios cerrados (CUG) como las Listas de control de acceso (ACL) se utilizan para controlar el acceso al contenido en los grupos de usuarios y grupos de seguridad de los usuarios y de los grupos de acceso en los que se realiza el control de acceso en los y en función de los usuarios y grupos de seguridad de los usuarios. Sin embargo, la aplicación e implementación de estas funciones es muy diferente. En la tabla siguiente se resumen las distinciones entre las dos funciones.
+Tanto los Grupos de usuarios cerrados (CUG) como las Listas de control de acceso (ACL) se utilizan para controlar el acceso al contenido en AEM y se basan en los usuarios y grupos de seguridad de AEM. Sin embargo, la aplicación e implementación de estas funciones es muy diferente. En la tabla siguiente se resumen las distinciones entre las dos funciones.
 
 |                   | ACL | CUG |
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| Uso previsto | AEM Configure y aplique permisos para el contenido en la instancia **actual** de la instancia de la aplicación de la. | AEM Configure las políticas de CUG para el contenido en la instancia de **autor** de la. AEM Aplicar políticas de CUG para el contenido en las instancias de **publicación** de la. |
+| Uso previsto | Configure y aplique permisos para el contenido en la instancia de AEM **current**. | Configure las políticas de CUG para el contenido en la instancia de AEM **author**. Aplicar directivas CUG para el contenido en las instancias de AEM **publish**. |
 | Niveles de permisos | Define permisos concedidos/denegados para usuarios/grupos para todos los niveles: Leer, Modificar, Crear, Eliminar, Leer ACL, Editar ACL, Replicar. | Otorga acceso de lectura a un conjunto de usuarios/grupos. Deniega el acceso de lectura a *todos los demás* usuarios/grupos. |
 | Publicación | Las ACL *no* se han publicado con contenido. | Las directivas de CUG *se han* publicado con contenido. |
 

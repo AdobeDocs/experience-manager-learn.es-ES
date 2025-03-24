@@ -4,12 +4,12 @@ description: Completar los ejercicios
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Adaptive Forms
 topic: Development
 exl-id: f150566f-33e5-48d3-b248-bd5602e96af8
 duration: 8
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '38'
 ht-degree: 0%
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Ejercicios
 
-Modifique el código para pasar la dirección URL de la plantilla como uno de los parámetros de solicitud del POST.
+Modifique el código para pasar la URL de la plantilla como uno de los parámetros de petición POST.
 
 Se debe modificar el código de `DocumentGeneration.java` para pasar la dirección URL de la plantilla.

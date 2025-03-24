@@ -4,13 +4,13 @@ description: Combinación de archivos xml grandes con plantillas en AEM Forms
 type: Troubleshooting
 role: Admin
 level: Intermediate
-version: 6.5
+version: Experience Manager 6.5
 feature: Output Service,Forms Service
 topic: Administration
 jira: KT-11091
 exl-id: 933ec5f6-3e9c-4271-bc35-4ecaf6dbc434
 duration: 37
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 1%
@@ -29,8 +29,8 @@ Para corregir el error anterior, haga lo siguiente
 
 ## Cambio del tiempo de espera de aries
 
-* AEM Detener servidor
-* AEM Cree una carpeta llamada **install** en la carpeta crx-quickstart de su instalación de la instalación de la aplicación de instalación de la aplicación de instalación de la aplicación
+* Detener AEM Server
+* Cree una carpeta llamada **install** en la carpeta crx-quickstart de la instalación de AEM
 * Cree un archivo llamado **org.apache.aries.transaction.config** con el siguiente contenido
 aries.transaction.timeout=&quot;1200&quot;
 en la carpeta de instalación. Puede cambiar el valor de tiempo de espera según sus necesidades. El valor de tiempo de espera es en segundos

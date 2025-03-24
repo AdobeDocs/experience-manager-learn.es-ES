@@ -1,7 +1,7 @@
 ---
 title: Archivos de solo lectura o inmutables de AMS Dispatcher
 description: Explicación de por qué algunos archivos son de solo lectura o no editables y cómo realizar los cambios funcionales deseados
-version: 6.5
+version: Experience Manager 6.5
 topic: Administration, Development
 feature: Dispatcher
 role: Admin
@@ -10,7 +10,7 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 7be6b3f9-cd53-41bc-918d-5ab9b633ffb3
 duration: 253
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '824'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Esto también le permite asegurarse de que cuando AMS aplique parches a Dispatch
 Como se ilustra en la imagen anterior, los archivos inmutables no le impiden jugar.  Simplemente evitan que se perjudique su rendimiento y lo mantienen en el carril.  Este método nos permite disponer de unas cuantas características muy clave:
 
 - Las personalizaciones se gestionan en sus propios espacios seguros
-- AEM La superposición de cambios personalizados refleja la de los métodos de superposición en los informes de estado de la aplicación
+- La superposición de cambios personalizados refleja la de los métodos de superposición en AEM
 - La aplicación de parches a las configuraciones de AMS se puede realizar sin alterar las personalizaciones
 - Se puede probar simultáneamente la instalación base frente a las configuraciones personalizadas para ayudar a discernir si los problemas son causados por las personalizaciones o por otra cosa.
 

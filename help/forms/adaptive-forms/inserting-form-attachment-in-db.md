@@ -1,8 +1,8 @@
 ---
 title: Insertar archivo adjunto de formulario en base de datos
-description: AEM Insertar archivo adjunto de formulario en la base de datos mediante flujo de trabajo de.
+description: Insertar datos adjuntos de formulario en la base de datos mediante el flujo de trabajo AEM.
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
@@ -10,7 +10,7 @@ jira: KT-10488
 exl-id: e8a6cab8-423b-4a8e-b2b7-9b24ebe23834
 last-substantial-update: 2020-06-09T00:00:00Z
 duration: 82
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 1%
@@ -33,12 +33,12 @@ Se ha creado una tabla denominada nueva para contener los datos del formulario. 
 
 Se creó un modelo de datos de formulario para comunicarse con la base de datos MySQL. Debe crear lo siguiente
 
-* [AEM Fuente de datos JDBC en el](./data-integration-technical-video-setup.md)
+* [Fuente de datos JDBC en AEM](./data-integration-technical-video-setup.md)
 * [Modelo de datos de formulario basado en la fuente de datos JDBC](./jdbc-data-model-technical-video-use.md)
 
 ## Crear flujo de trabajo
 
-AEM Al configurar el formulario adaptable para que se envíe a un flujo de trabajo de, tiene la opción de guardar los archivos adjuntos del formulario en una variable de flujo de trabajo o de guardarlos en una carpeta especificada debajo de la carga útil. Para este caso de uso, es necesario guardar los archivos adjuntos en una variable de flujo de trabajo de tipo ArrayList of Document. De esta ArrayList necesitamos extraer el primer elemento e inicializar una variable de documento. Se crearon las variables de flujo de trabajo **listOfDocuments** y **employeePhoto**.
+Al configurar el formulario adaptable para enviarlo a un flujo de trabajo de AEM, tiene la opción de guardar los archivos adjuntos del formulario en una variable de flujo de trabajo o de guardarlos en una carpeta especificada bajo la carga útil. Para este caso de uso, es necesario guardar los archivos adjuntos en una variable de flujo de trabajo de tipo ArrayList of Document. De esta ArrayList necesitamos extraer el primer elemento e inicializar una variable de documento. Se crearon las variables de flujo de trabajo **listOfDocuments** y **employeePhoto**.
 Cuando se envía el formulario adaptable al déclencheur del flujo de trabajo, un paso en el flujo de trabajo inicializa la variable employeePhoto mediante el script ECMA. El siguiente es el código de script ECMA
 
 ```javascript

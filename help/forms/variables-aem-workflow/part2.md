@@ -1,23 +1,23 @@
 ---
-title: AEM Variables en flujo de trabajo de la[Parte2]
-description: AEM Uso de variables de tipo XML, JSON, ArrayList o Document en un flujo de trabajo de
-version: 6.5
+title: Variables en el flujo de trabajo de AEM [Parte 2]
+description: Uso de variables de tipo XML, JSON, ArrayList o Document en un flujo de trabajo de AEM
+version: Experience Manager 6.5
 topic: Development
 feature: Adaptive Forms, Workflow
 role: Developer
 level: Beginner
 exl-id: e7d3e0be-5194-47c2-a668-ce78e727986e
 duration: 354
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 0%
 
 ---
 
-# AEM Variables de tipo JSON en el flujo de trabajo de
+# Variables de tipo JSON en el flujo de trabajo de AEM
 
-A partir de AEM Forms AEM 6.5, ahora podemos crear variables de tipo JSON en el flujo de trabajo de la. Normalmente, creará variables de tipo JSON si envía un Forms AEM adaptable basado en el esquema JSON a un flujo de trabajo de o si desea almacenar los resultados de una operación de invocación del modelo de datos de formulario. AEM El siguiente vídeo le guía por los pasos necesarios para crear y utilizar una variable de tipo JSON en el flujo de trabajo de la
+A partir de AEM Forms 6.5, ahora podemos crear variables de tipo JSON en AEM Workflow. Normalmente, creará variables de tipo JSON si envía un Forms adaptable basado en el esquema JSON a un flujo de trabajo de AEM o si desea almacenar los resultados de una operación de invocación del modelo de datos de formulario. El siguiente vídeo le guía por los pasos necesarios para crear y utilizar una variable de tipo JSON en el flujo de trabajo de AEM
 
 **Si usa AEM Forms 6.5.0**
 
@@ -34,7 +34,7 @@ Puede asignar el esquema con la variable de tipo JSON en el modelo de flujo de t
 
 Para que los recursos funcionen en el sistema, siga estos pasos:
 
-* [AEM Descargar e importar los recursos en el administrador de paquetes mediante el uso de un administrador de paquetes](assets/jsonandstringvariable.zip)
+* [Descargar e importar los recursos en AEM mediante el administrador de paquetes](assets/jsonandstringvariable.zip)
 * [Explore el modelo de flujo de trabajo](http://localhost:4502/editor.html/conf/global/settings/workflow/models/jsonvariable.html) para comprender las variables que se utilizan en el flujo de trabajo
 * [Configurar el servicio de correo electrónico](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html#ConfiguringtheMailService)
 * [Abrir el formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/afbasedonjson/jcr:content?wcmmode=disabled)

@@ -1,7 +1,7 @@
 ---
-title: 'AEM Creación de fragmentos de contenido: Introducción a la creación sin encabezado de la - GraphQL'
-description: Introducción a Adobe Experience Manager AEM () y GraphQL. Cree y edite un nuevo fragmento de contenido basado en un modelo de fragmento de contenido. Aprenda a crear variaciones de Fragmentos de contenido.
-version: Cloud Service
+title: 'Creación de fragmentos de contenido: Introducción a AEM sin encabezado, GraphQL'
+description: Introducción a Adobe Experience Manager (AEM) y GraphQL. Cree y edite un nuevo fragmento de contenido basado en un modelo de fragmento de contenido. Aprenda a crear variaciones de Fragmentos de contenido.
+version: Experience Manager as a Cloud Service
 mini-toc-levels: 1
 jira: KT-6713
 thumbnail: 22451.jpg
@@ -11,7 +11,7 @@ role: Developer
 level: Beginner
 exl-id: 701fae92-f740-4eb6-8133-1bc45a472d0f
 duration: 173
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '853'
 ht-degree: 2%
@@ -33,9 +33,9 @@ Este es un tutorial de varias partes y se supone que se han completado los pasos
 
 ## Crear una carpeta de recursos
 
-Los fragmentos de contenido se almacenan en carpetas en AEM Assets. Para crear fragmentos de contenido a partir de los modelos creados en el capítulo anterior, se debe crear una carpeta para almacenarlos. Se requiere una configuración en la carpeta para habilitar la creación de fragmentos de modelos específicos.
+Los fragmentos de contenido se almacenan en carpetas en los AEM Assets. Para crear fragmentos de contenido a partir de los modelos creados en el capítulo anterior, se debe crear una carpeta para almacenarlos. Se requiere una configuración en la carpeta para habilitar la creación de fragmentos de modelos específicos.
 
-1. AEM En la pantalla de inicio de la, vaya a **Assets** > **Archivos**.
+1. En la pantalla de inicio de AEM, vaya a **Assets** > **Archivos**.
 
    ![Vaya a los archivos de recursos](assets/author-content-fragments/navigate-assets-files.png)
 
@@ -50,7 +50,7 @@ Los fragmentos de contenido se almacenan en carpetas en AEM Assets. Para crear f
 
    ![Abrir propiedades de carpeta](assets/author-content-fragments/open-folder-properties.png)
 
-1. Pulse la ficha **Cloud Service**. En la pestaña Configuración de nube, use el buscador de rutas para seleccionar la configuración de **Mi proyecto**. El valor debe ser `/conf/my-project`.
+1. Pulse la pestaña **Cloud Services**. En la pestaña Configuración de nube, use el buscador de rutas para seleccionar la configuración de **Mi proyecto**. El valor debe ser `/conf/my-project`.
 
    ![Establecer configuración de nube](assets/author-content-fragments/set-cloud-config-my-project.png)
 
@@ -78,11 +78,11 @@ Los fragmentos de contenido se almacenan en carpetas en AEM Assets. Para crear f
 
 >[!TIP]
 >
->AEM Para usuarios locales del SDK de la: Utilice la interfaz de usuario de AEM Assets para crear fragmentos de contenido, en lugar de la interfaz de usuario de fragmentos de contenido que se describe a continuación. AEM Para obtener instrucciones detalladas, consulte la [documentación de la aplicación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html).
+>Para usuarios locales de AEM SDK: utilice la interfaz de usuario de AEM Assets para crear fragmentos de contenido, en lugar de la interfaz de usuario de fragmentos de contenido que se describe a continuación. Para obtener instrucciones detalladas, consulte la [documentación de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html).
 
 A continuación, se crean varios fragmentos de contenido basados en los modelos **Equipo** y **Persona**.
 
-1. AEM En la pantalla de inicio de la, pulse **Fragmentos de contenido** para abrir la interfaz de usuario de los fragmentos de contenido.
+1. En la pantalla de inicio de AEM, pulse **Fragmentos de contenido** para abrir la interfaz de usuario de los fragmentos de contenido.
 
    ![IU de fragmento de contenido](assets/author-content-fragments/cf-fragment-ui.png)
 
@@ -105,11 +105,11 @@ A continuación, se crean varios fragmentos de contenido basados en los modelos 
 
    Pulse **Crear** para crear el fragmento Persona.
 
-1. A continuación, repita los pasos para crear un fragmento de **Equipo** que represente a **Alpha del equipo**:
+1. A continuación, repita los pasos para crear un fragmento de **Equipo** que represente a **Equipo Alpha**:
 
    * Ubicación: `/content/dam/my-project/en`
    * Modelo de fragmento de contenido: **Equipo**
-   * Título: **Alpha de equipo**
+   * Título: **Team Alpha**
    * Nombre: `team-alpha`
 
    Pulse **Crear** para crear el fragmento de equipo.
@@ -126,7 +126,7 @@ A continuación, rellene los fragmentos recién creados con datos.
 
    ![Abrir fragmento de contenido](assets/author-content-fragments/open-fragment-for-editing.png)
 
-1. El editor de fragmentos de contenido contiene un formulario basado en el modelo de fragmento de contenido. Rellene los distintos campos para agregar contenido al fragmento **John Doe**. Para la imagen de perfil, cargue su propia imagen en AEM Assets.
+1. El editor de fragmentos de contenido contiene un formulario basado en el modelo de fragmento de contenido. Rellene los distintos campos para agregar contenido al fragmento **John Doe**. Para la imagen de perfil, cargue su propia imagen a los AEM Assets.
 
    ![Editor de fragmentos de contenido](assets/author-content-fragments/content-fragment-editor-jd.png)
 
@@ -136,7 +136,7 @@ A continuación, rellene los fragmentos recién creados con datos.
 
 ## Editar fragmento de contenido de equipo {#edit-team-content-fragment}
 
-1. Abra el fragmento de contenido **Alpha del equipo** mediante la interfaz de usuario del fragmento de contenido.
+1. Abra el fragmento de contenido **Team Alpha** mediante la interfaz de usuario del fragmento de contenido.
 1. Rellene los campos de **Título**, **Nombre corto** y **Descripción**.
 1. Seleccione los fragmentos de contenido **John Doe** y **Alison Smith** para rellenar el campo **Miembros del equipo**:
 
@@ -146,22 +146,22 @@ A continuación, rellene los fragmentos recién creados con datos.
    >
    >También puede crear fragmentos de contenido en línea con el botón **Nuevo fragmento de contenido**.
 
-1. Pulse **Guardar y cerrar** para guardar los cambios en el fragmento Alpha de equipo.
+1. Pulse **Guardar y cerrar** para guardar los cambios en el fragmento de Team Alpha.
 
-## Fragmentos de contenido de Publish
+## Publicar fragmentos de contenido
 
 >[!TIP]
 >
->AEM Para usuarios locales del SDK de la: Utilice la interfaz de usuario de AEM Assets para publicar fragmentos de contenido, en lugar de la interfaz de usuario de fragmentos de contenido que se describe a continuación. AEM Para obtener instrucciones detalladas, consulte la [documentación de la aplicación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html#publishing-and-referencing-a-fragment).
+>Para usuarios locales de AEM SDK: utilice la interfaz de usuario de AEM Assets para publicar fragmentos de contenido, en lugar de la interfaz de usuario de fragmentos de contenido que se describe a continuación. Para obtener instrucciones detalladas, consulte la [documentación de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html#publishing-and-referencing-a-fragment).
 
 Tras la revisión y verificación, publique el `Content Fragments` creado
 
-1. AEM En la pantalla de inicio de la, pulse **Fragmentos de contenido** para abrir la interfaz de usuario de los fragmentos de contenido.
+1. En la pantalla de inicio de AEM, pulse **Fragmentos de contenido** para abrir la interfaz de usuario de los fragmentos de contenido.
 
 1. En el carril izquierdo, expanda **Mi proyecto** y pulse **Inglés**.
 
-1. Puntee en la casilla que está junto a los fragmentos de contenido y luego en **Publish**.
-   ![Fragmento de contenido de Publish](assets/author-content-fragments/publish-content-fragment.png)
+1. Pulse la casilla que está junto a los fragmentos de contenido y pulse **Publicar**.
+   ![Publicar fragmento de contenido](assets/author-content-fragments/publish-content-fragment.png)
 
 ## Enhorabuena. {#congratulations}
 
@@ -169,7 +169,7 @@ Felicidades, ha creado varios fragmentos de contenido y una variación.
 
 ## Siguientes pasos {#next-steps}
 
-En el capítulo siguiente, [Explorar las API de GraphQL AEM](explore-graphql-api.md), explorará la manera de explorar las API de GraphQL mediante la herramienta integrada de GrapiQL. AEM Descubra cómo genera automáticamente un esquema de GraphQL basado en un modelo de fragmento de contenido. Experimentará construyendo consultas básicas usando la sintaxis de GraphQL.
+En el capítulo siguiente, [Explorar las API de GraphQL](explore-graphql-api.md), explorará las API de GraphQL de AEM mediante la herramienta GrapiQL integrada. Descubra cómo AEM genera automáticamente un esquema de GraphQL basado en un modelo de fragmento de contenido. Experimentará construyendo consultas básicas usando la sintaxis de GraphQL.
 
 ## Documentación relacionada
 

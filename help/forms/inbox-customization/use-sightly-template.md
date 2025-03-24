@@ -3,14 +3,14 @@ title: Usar sightly template para mostrar los datos de la bandeja de entrada
 description: Agregue columnas personalizadas para mostrar datos adicionales del flujo de trabajo mediante la plantilla sightly
 feature: Adaptive Forms
 doc-type: article
-version: 6.5
+version: Experience Manager 6.5
 jira: KT-5830
 topic: Development
 role: Developer
 level: Experienced
 exl-id: d09b46ed-3516-44cf-a616-4cb6e9dfdf41
 duration: 68
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Puede utilizar sightly template para dar formato a los datos que se van a mostra
 
 ## Plantilla de Sightly
 
-A continuación se muestra la plantilla de sightly. El código de la plantilla muestra un icono en función de los ingresos. AEM Los iconos están disponibles como parte de la [biblioteca de iconos de la interfaz de usuario de coral](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) que se incluye con el código de la interfaz de usuario de la biblioteca .
+A continuación se muestra la plantilla de sightly. El código de la plantilla muestra un icono en función de los ingresos. Los iconos están disponibles como parte de la [biblioteca de iconos de la interfaz de usuario de coral](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) que se incluye con AEM.
 
 ```java
 <template data-sly-template.incomeTemplate="${@ item}>">
@@ -84,7 +84,7 @@ return val;
 
 * [Inicie sesión en crx como usuario administrador](http://localhost:4502/crx/de/index.jsp)
 * [importar plantilla de sightly](assets/sightly-template.zip)
-* AEM [Iniciar sesión en la consola web de la](http://localhost:4502/system/console/bundles)
+* [Iniciar sesión en la consola web de AEM](http://localhost:4502/system/console/bundles)
 * [Implementar e iniciar el paquete de personalización de bandeja de entrada](assets/income-column-customization.jar)
 * [Abrir la bandeja de entrada](http://localhost:4502/aem/inbox)
 * Abra Control de administración haciendo clic en Vista de lista junto al botón Crear

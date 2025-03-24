@@ -1,8 +1,8 @@
 ---
-title: Ampliación de un componente principal | AEM SPA Introducción al Editor de y React
-description: AEM SPA Obtenga información sobre cómo ampliar el modelo JSON para un componente principal existente que se utilizará con el Editor de. AEM SPA Comprender cómo añadir propiedades y contenido a un componente existente es una técnica potente para ampliar las capacidades de una implementación de Editor de segmentos de tiempo de ejecución de la aplicación de un editor de segmentos de tiempo de ejecución de la aplicación de un editor de tiempo de ejecución de la. Aprenda a utilizar el patrón de delegación para ampliar los modelos Sling y las funciones de la fusión de recursos de Sling.
+title: Ampliación de un componente principal | Introducción al Editor de SPA de AEM y React
+description: Obtenga información sobre cómo ampliar el modelo JSON para un componente principal existente que se utilizará con el Editor de SPA de AEM. Entender cómo añadir propiedades y contenido a un componente existente es una técnica potente para expandir las capacidades de una implementación de AEM SPA Editor. Aprenda a utilizar el patrón de delegación para ampliar los modelos Sling y las funciones de la fusión de recursos de Sling.
 feature: SPA Editor, Core Components
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 jira: KT-5879
 thumbnail: 5879-spa-react.jpg
 topic: SPA
@@ -11,7 +11,7 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 44433595-08bc-4a82-9232-49d46c31b07b
 duration: 316
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1058'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Ampliación de un componente principal {#extend-component}
 
-AEM SPA Obtenga información sobre cómo ampliar un componente principal existente para utilizarlo con el Editor de. AEM SPA Comprender cómo ampliar un componente existente es una técnica potente para personalizar y ampliar las capacidades de una implementación de Editor de de trabajo.
+Obtenga información sobre cómo ampliar un componente principal existente para utilizarlo con AEM SPA Editor. Comprender cómo ampliar un componente existente es una técnica potente para personalizar y ampliar las capacidades de una implementación de AEM SPA Editor.
 
 ## Objetivo
 
@@ -36,11 +36,11 @@ Este capítulo ilustra el código adicional necesario para agregar una propiedad
 
 ## Requisitos previos
 
-Revise las herramientas y las instrucciones necesarias para configurar un [entorno de desarrollo local](overview.md#local-dev-environment). AEM SPA En este punto del tutorial se da por hecho que los usuarios tienen una comprensión sólida de la función de editor de contenido (Editor de contenido) de la.
+Revise las herramientas y las instrucciones necesarias para configurar un [entorno de desarrollo local](overview.md#local-dev-environment). Se supone que en este punto del tutorial los usuarios tienen una comprensión sólida de la función AEM SPA Editor.
 
 ## Herencia con el supertipo de recursos de Sling {#sling-resource-super-type}
 
-Para ampliar un componente existente, establezca una propiedad denominada `sling:resourceSuperType` en la definición del componente.  AEM `sling:resourceSuperType` es una [propiedad](https://sling.apache.org/documentation/the-sling-engine/resources.html#resource-properties) que se puede establecer en la definición de un componente de un componente de la red que señala a otro componente. Esto establece explícitamente que el componente heredará toda la funcionalidad del componente identificado como `sling:resourceSuperType`.
+Para ampliar un componente existente, establezca una propiedad denominada `sling:resourceSuperType` en la definición del componente.  `sling:resourceSuperType` es una [propiedad](https://sling.apache.org/documentation/the-sling-engine/resources.html#resource-properties) que se puede establecer en la definición de un componente de AEM que señala a otro componente. Esto establece explícitamente que el componente heredará toda la funcionalidad del componente identificado como `sling:resourceSuperType`.
 
 Si queremos extender el componente `Image` en `wknd-spa-react/components/image`, necesitamos actualizar el código en el módulo `ui.apps`.
 
@@ -60,7 +60,7 @@ Si queremos extender el componente `Image` en `wknd-spa-react/components/image`,
 
 ## cq:editConfig {#cq-edit-config}
 
-AEM El archivo `_cq_editConfig.xml` dicta el comportamiento de arrastrar y soltar en la interfaz de usuario de creación de. Al ampliar el componente de imagen, es importante que el tipo de recurso coincida con el propio componente.
+El archivo `_cq_editConfig.xml` dicta el comportamiento de arrastrar y soltar en la IU de creación de AEM. Al ampliar el componente de imagen, es importante que el tipo de recurso coincida con el propio componente.
 
 1. En el módulo `ui.apps`, cree otro archivo debajo de `banner` con el nombre `_cq_editConfig.xml`.
 1. Rellene `_cq_editConfig.xml` con el siguiente XML:
@@ -239,11 +239,11 @@ Nuestro componente `Banner` requiere un campo de texto adicional en el cuadro de
 
    Observe que no tuvimos que definir las fichas para **Asset** o **Metadata**. Se heredan mediante la propiedad `sling:resourceSuperType`.
 
-   SPA Antes de poder obtener una vista previa del cuadro de diálogo, es necesario implementar el Componente de y la función `MapTo`.
+   Antes de poder obtener una vista previa del cuadro de diálogo, es necesario implementar el componente SPA y la función `MapTo`.
 
-## SPA Implementar componente de {#implement-spa-component}
+## Implementación del componente SPA {#implement-spa-component}
 
-SPA SPA Para usar el componente Banner con el Editor de, se debe crear un nuevo componente de la que se asignará a `wknd-spa-react/components/banner`. Esto se hace en el módulo `ui.frontend`.
+Para utilizar el componente Banner con el Editor de SPA, se debe crear un nuevo componente de SPA que se asignará a `wknd-spa-react/components/banner`. Esto se hace en el módulo `ui.frontend`.
 
 1. En el módulo `ui.frontend`, cree una nueva carpeta para `Banner` en `ui.frontend/src/components/Banner`.
 1. Cree un nuevo archivo con el nombre `Banner.js` debajo de la carpeta `Banner`. Rellénelo con lo siguiente:
@@ -296,9 +296,9 @@ SPA SPA Para usar el componente Banner con el Editor de, se debe crear un nuevo 
    MapTo('wknd-spa-react/components/banner')(Banner, BannerEditConfig);
    ```
 
-   SPA AEM Este componente se asigna al componente de `wknd-spa-react/components/banner` creado anteriormente.
+   Este componente de SPA se asigna al componente de AEM `wknd-spa-react/components/banner` creado anteriormente.
 
-1. SPA Actualice `import-components.js` a las `ui.frontend/src/components/import-components.js` para incluir el nuevo componente de la aplicación `Banner` de la:
+1. Actualizar `import-components.js` a las `ui.frontend/src/components/import-components.js` para incluir el nuevo componente de SPA `Banner`:
 
    ```diff
      import './ExperienceFragment/ExperienceFragment';
@@ -306,26 +306,26 @@ SPA SPA Para usar el componente Banner con el Editor de, se debe crear un nuevo 
    + import './Banner/Banner';
    ```
 
-1. AEM En este punto, el proyecto se puede implementar para que se ejecute y el cuadro de diálogo se pueda probar. Implemente el proyecto con sus habilidades con Maven:
+1. En este punto, el proyecto se puede implementar en AEM y el cuadro de diálogo se puede probar. Implemente el proyecto con sus habilidades con Maven:
 
    ```shell
    $ cd aem-guides-wknd-spa.react
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-1. SPA Actualice la directiva de la plantilla de la plantilla de la plantilla de datos para agregar el componente `Banner` como un **componente permitido**.
+1. Actualice la directiva de la plantilla SPA para agregar el componente `Banner` como un **componente permitido**.
 
-1. SPA SPA Vaya a una página de la y agregue el componente `Banner` a una de las páginas de la:
+1. Vaya a una página de SPA y agregue el componente `Banner` a una de las páginas de SPA:
 
    ![Agregar componente de titular](assets/extend-component/add-banner-component.png)
 
    >[!NOTE]
    >
-   > SPA El cuadro de diálogo le permitirá guardar un valor para **Texto del titular**, pero este valor no se refleja en el componente de la. Para habilitarlo, necesitamos extender el modelo Sling para el componente.
+   > El cuadro de diálogo le permitirá guardar un valor para **Texto del titular**, pero este valor no se refleja en el componente SPA. Para habilitarlo, necesitamos extender el modelo Sling para el componente.
 
 ## Añadir interfaz de Java {#java-interface}
 
-Para exponer finalmente los valores del cuadro de diálogo del componente al componente React, debemos actualizar el modelo Sling que rellena el JSON para el componente `Banner`. SPA Esto se hace en el módulo `core` que contiene todo el código Java para nuestro proyecto de.
+Para exponer finalmente los valores del cuadro de diálogo del componente al componente React, debemos actualizar el modelo Sling que rellena el JSON para el componente `Banner`. Esto se hace en el módulo `core` que contiene todo el código Java para nuestro proyecto SPA.
 
 En primer lugar, crearemos una nueva interfaz Java para `Banner` que amplía la interfaz Java `Image`.
 
@@ -461,7 +461,7 @@ A continuación, implemente el modelo Sling para la interfaz `BannerModel`.
 
 ## En resumen {#put-together}
 
-1. AEM SPA Vuelva a la página de inicio y abra la página de la aplicación que tiene el componente `Banner`.
+1. Vuelva a AEM y abra la página de la SPA que tiene el componente `Banner`.
 1. Actualizar el componente `Banner` para incluir **Texto del titular**:
 
    ![Texto del titular](assets/extend-component/banner-text-dialog.png)
@@ -491,4 +491,4 @@ A continuación, implemente el modelo Sling para la interfaz `BannerModel`.
 
 ## Enhorabuena. {#congratulations}
 
-AEM ¡Enhorabuena! Ha aprendido a ampliar un componente de mediante y cómo funcionan los modelos Sling y los cuadros de diálogo con el modelo JSON.
+¡Enhorabuena! Ha aprendido a ampliar un componente de AEM mediante y cómo funcionan los modelos Sling y los cuadros de diálogo con el modelo JSON.

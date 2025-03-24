@@ -1,7 +1,7 @@
 ---
-title: Eventos de acción y de de Adobe I/O Runtime AEM
-description: AEM Obtenga información sobre cómo recibir eventos de mediante la acción de Adobe I/O Runtime y revise los detalles del evento, como la carga útil, los encabezados y los metadatos.
-version: Cloud Service
+title: Eventos de acción y AEM de Adobe I/O Runtime
+description: Obtenga información sobre cómo recibir eventos de AEM mediante la acción de Adobe I/O Runtime y revise la carga útil, los encabezados y los metadatos.
+version: Experience Manager as a Cloud Service
 feature: Developing, App Builder
 topic: Development, Architecture, Content Management
 role: Architect, Developer
@@ -12,22 +12,22 @@ last-substantial-update: 2024-01-29T00:00:00Z
 jira: KT-14878
 thumbnail: KT-14878.jpeg
 exl-id: b1c127a8-24e7-4521-b535-60589a1391bf
-source-git-commit: efa0a16649c41fab8309786a766483cfeab98867
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '699'
 ht-degree: 0%
 
 ---
 
-# Eventos de acción y de de Adobe I/O Runtime AEM
+# Eventos de acción y AEM de Adobe I/O Runtime
 
-AEM Obtenga información sobre cómo recibir eventos de con la acción [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/) y revisar los detalles del evento, como la carga útil, los encabezados y los metadatos.
+Aprenda a recibir eventos de AEM mediante la acción [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/) y a revisar los detalles del evento, como la carga útil, los encabezados y los metadatos.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427053?quality=12&learn=on)
 
-Adobe I/O Runtime es una plataforma sin servidor que permite ejecutar código en respuesta a eventos de Adobe I/O. De este modo, le ayuda a crear aplicaciones basadas en eventos sin tener que preocuparse por la infraestructura.
+Adobe I/O Runtime es una plataforma sin servidor que permite ejecutar código en respuesta a Adobe I/O Events. De este modo, le ayuda a crear aplicaciones basadas en eventos sin tener que preocuparse por la infraestructura.
 
-En este ejemplo, se crea una acción [Action](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/) de Adobe I/O Runtime AEM que recibe los eventos de la aplicación y registra los detalles del evento.
+En este ejemplo, crea una [Acción](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/) de Adobe I/O Runtime que recibe Eventos de AEM y registra los detalles del evento.
 https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/
 
 Los pasos de alto nivel son los siguientes:
@@ -35,13 +35,13 @@ Los pasos de alto nivel son los siguientes:
 - Creación de un proyecto en Adobe Developer Console
 - Inicializar proyecto para desarrollo local
 - Configuración de un proyecto en Adobe Developer Console
-- Déclencheur AEM de eventos de y verificación de la ejecución de acciones
+- Almacene en déclencheur el evento de AEM y compruebe la ejecución de la acción
 
 ## Requisitos previos
 
 Para completar este tutorial, necesita lo siguiente:
 
-- Entorno de AEM as a Cloud Service AEM con [ventilación de eventos habilitada](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment).
+- Entorno AEM as a Cloud Service con [evento de AEM habilitado](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment).
 
 - Acceso a [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started/).
 
@@ -80,7 +80,7 @@ Para agregar la acción de Adobe I/O Runtime al proyecto, debe inicializar el pr
 
 - Abra un proyecto en su IDE favorito, por ejemplo VSCode.
 
-- La _plantilla de extensibilidad_ (`@adobe/generator-app-excshell`) seleccionada proporciona una acción de tiempo de ejecución genérica; el código se encuentra en el archivo `src/dx-excshell-1/actions/generic/index.js`. Actualicémoslo para que sea sencillo, registremos los detalles del evento y devolvamos una respuesta de éxito. AEM Sin embargo, en el siguiente ejemplo, se mejora para procesar los eventos de recibidos.
+- La _plantilla de extensibilidad_ (`@adobe/generator-app-excshell`) seleccionada proporciona una acción de tiempo de ejecución genérica; el código se encuentra en el archivo `src/dx-excshell-1/actions/generic/index.js`. Actualicémoslo para que sea sencillo, registremos los detalles del evento y devolvamos una respuesta de éxito. Sin embargo, en el siguiente ejemplo, se mejora para procesar los eventos de AEM recibidos.
 
   ```javascript
   const fetch = require("node-fetch");
@@ -133,7 +133,7 @@ Para agregar la acción de Adobe I/O Runtime al proyecto, debe inicializar el pr
 
 ## Configuración de un proyecto en Adobe Developer Console
 
-AEM Para recibir eventos de y ejecutar la acción de Adobe I/O Runtime creada en el paso anterior, configure el proyecto en Adobe Developer Console.
+Para recibir eventos de AEM y ejecutar la acción de Adobe I/O Runtime creada en el paso anterior, configure el proyecto en Adobe Developer Console.
 
 - En Adobe Developer Console, vaya al [proyecto](https://developer.adobe.com/console/projects) creado en el paso anterior y haga clic en para abrirlo. Seleccione el área de trabajo `Stage`, aquí es donde se implementó la acción.
 
@@ -141,7 +141,7 @@ AEM Para recibir eventos de y ejecutar la acción de Adobe I/O Runtime creada en
 
   ![Agregar servicio - Configurar proyecto](../assets/examples/runtime-action/add-io-management-api.png)
 
-- Del mismo modo, haga clic en el botón **Agregar servicio** y seleccione la opción **Evento**. En el diálogo **Agregar eventos**, seleccione **Experience Cloud** > **AEM Sites** y haga clic en **Siguiente**. Siga los pasos de configuración adicionales, seleccione la instancia de AEM CS, los tipos de evento y otros detalles.
+- Del mismo modo, haga clic en el botón **Agregar servicio** y seleccione la opción **Evento**. En el cuadro de diálogo **Agregar eventos**, seleccione **Experience Cloud** > **AEM Sites** y haga clic en **Siguiente**. Siga los pasos de configuración adicionales, seleccione la instancia de AEM CS, los tipos de evento y otros detalles.
 
 - Finalmente, en el paso **Cómo recibir eventos**, expanda la opción **Acción en tiempo de ejecución** y seleccione la acción _genérica_ creada en el paso anterior. Haga clic en **Guardar eventos configurados**.
 
@@ -152,9 +152,9 @@ AEM Para recibir eventos de y ejecutar la acción de Adobe I/O Runtime creada en
   ![Detalles de registro de evento](../assets/examples/runtime-action/debug-tracing-challenge-probe.png)
 
 
-## Déclencheur AEM de eventos de
+## Déclencheur de eventos de AEM
 
-Para obtener un déclencheur AEM de eventos de la desde el entorno de AEM as a Cloud Service que se ha registrado en el proyecto de Adobe Developer Console anterior, siga estos pasos:
+Para almacenar en déclencheur eventos de AEM desde el entorno de AEM as a Cloud Service que se haya registrado en el proyecto de Adobe Developer Console anterior, siga estos pasos:
 
 - Acceda a su entorno de creación de AEM as a Cloud Service e inicie sesión a través de [Cloud Manager](https://my.cloudmanager.adobe.com/).
 
@@ -162,13 +162,13 @@ Para obtener un déclencheur AEM de eventos de la desde el entorno de AEM as a C
 
 ## Revisar detalles del evento
 
-AEM Después de completar los pasos anteriores, debería ver los eventos de la que se envían a la acción genérica.
+Después de completar los pasos anteriores, debería ver los eventos de AEM que se envían a la acción genérica.
 
 Puede revisar los detalles del evento en la ficha **Seguimiento de depuración** de los detalles de registro de eventos.
 
-AEM ![Detalles del evento de la](../assets/examples/runtime-action/aem-event-details.png)
+![Detalles de evento de AEM](../assets/examples/runtime-action/aem-event-details.png)
 
 
 ## Pasos siguientes
 
-AEM AEM En el siguiente ejemplo, vamos a mejorar esta acción para procesar eventos de, volver a llamar al servicio de creación de contenido para obtener detalles de contenido, almacenar detalles en el almacenamiento de Adobe I/O Runtime SPA y mostrarlos mediante la aplicación de una sola página ().
+En el siguiente ejemplo, vamos a mejorar esta acción para procesar eventos de AEM, volver a llamar al servicio de creación de AEM para obtener detalles de contenido, almacenar detalles en el almacenamiento de Adobe I/O Runtime y mostrarlos mediante la aplicación de una sola página (SPA).

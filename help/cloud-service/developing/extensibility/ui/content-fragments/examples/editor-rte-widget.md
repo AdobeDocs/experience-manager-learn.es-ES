@@ -1,8 +1,8 @@
 ---
 title: Añadir widgets al editor de texto enriquecido (RTE)
-description: AEM Aprenda a añadir widgets al editor de texto enriquecido (RTE) en el editor de fragmentos de contenido de la
+description: Aprenda a añadir widgets al editor de texto enriquecido (RTE) en el editor de fragmentos de contenido de AEM
 feature: Developer Tools, Content Fragments
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -12,7 +12,7 @@ doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
 exl-id: 167a4b11-1202-4c7a-b022-f3f996348a4e
 duration: 476
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Añadir widgets al editor de texto enriquecido (RTE)
 
-AEM Aprenda a añadir widgets al editor de texto enriquecido (RTE) en el editor de fragmentos de contenido de la aplicación de la aplicación de contenido de la.
+Aprenda a añadir widgets al editor de texto enriquecido (RTE) en el editor de fragmentos de contenido de AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420822?quality=12&learn=on)
 
@@ -39,7 +39,7 @@ Para simplificar las cosas, este ejemplo usa el módulo [Adobe React Spectrum](h
 
 Este ejemplo se extiende al punto de extensión `rte` para agregar un widget al RTE en el Editor de fragmentos de contenido.
 
-| AEM Interfaz de usuario extendida | Punto de extensión |
+| IU de AEM extendida | Punto de extensión |
 | ------------------------ | --------------------- | 
 | [Editor de fragmentos de contenido](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [Widgets del editor de texto enriquecido](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-widgets/) |
 
@@ -51,7 +51,7 @@ Los autores de contenido de WKND pueden buscar, seleccionar y agregar el código
 
 ### Registro de extensiones
 
-AEM `ExtensionRegistration.js`, asignado a la ruta index.html, es el punto de entrada para la extensión de la y define:
+`ExtensionRegistration.js`, asignado a la ruta index.html, es el punto de entrada para la extensión de AEM y define:
 
 + La definición del widget en la función `getWidgets()` con atributos `id, label and url`.
 + Valor de atributo `url`, una ruta de acceso URL relativa (`/index.html#/discountCodes`) para cargar la interfaz de usuario del cuadro de diálogo.
@@ -116,13 +116,13 @@ En el componente React principal `App.js`, agregue la ruta `discountCodes` para 
 
 ### Crear componente de React `DiscountCodes`{#create-widget-react-component}
 
-La interfaz de usuario del widget o cuadro de diálogo se crea con el módulo [Espectro de reacción de Adobe](https://react-spectrum.adobe.com/react-spectrum/index.html). El código del componente `DiscountCodes` es el siguiente, así que le presentamos algunos aspectos destacados:
+La interfaz de usuario del widget o cuadro de diálogo se crea con el marco de trabajo [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html). El código del componente `DiscountCodes` es el siguiente, así que le presentamos algunos aspectos destacados:
 
 + La interfaz de usuario se representa mediante componentes del espectro de React, como [ComboBox](https://react-spectrum.adobe.com/react-spectrum/ComboBox.html), [ButtonGroup](https://react-spectrum.adobe.com/react-spectrum/ButtonGroup.html), [Button](https://react-spectrum.adobe.com/react-spectrum/Button.html)
-+ La matriz `adventureDiscountCodes` tiene una asignación codificada del nombre de la aventura y el código de descuento. En situaciones reales, estos datos se pueden recuperar de la acción del AppBuilder de Adobe o de sistemas externos como PIM, OMS o la puerta de enlace de API casera o basada en el proveedor de la nube.
-+ El `guestConnection` se inicializó usando el `useEffect` [vínculo de React](https://react.dev/reference/react/useEffect) y se administró como estado de componente. AEM Se utiliza para comunicarse con el host de la.
++ La matriz `adventureDiscountCodes` tiene una asignación codificada del nombre de la aventura y el código de descuento. En situaciones reales, estos datos se pueden recuperar de la acción del Adobe AppBuilder o de sistemas externos como PIM, OMS o la puerta de enlace de API casera o basada en el proveedor de la nube.
++ El `guestConnection` se inicializó usando el `useEffect` [vínculo de React](https://react.dev/reference/react/useEffect) y se administró como estado de componente. Se utiliza para comunicarse con el host de AEM.
 + La función `handleDiscountCodeChange` obtiene el código de descuento del nombre de aventura seleccionado y actualiza la variable de estado.
-+ La función `addDiscountCode` que utiliza el objeto `guestConnection` proporciona una instrucción RTE para ejecutar. En este caso, `insertContent` instrucción y fragmento de código de HTML del código de descuento real que se insertará en RTE.
++ La función `addDiscountCode` que utiliza el objeto `guestConnection` proporciona una instrucción RTE para ejecutar. En este caso, la instrucción `insertContent` y el fragmento de código HTML del código de descuento real se insertarán en RTE.
 
 `src/aem-cf-editor-1/web-src/src/components/DiscountCodes.js`
 

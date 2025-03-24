@@ -1,14 +1,14 @@
 ---
-title: 'AEM Crear fragmentos de contenido: conceptos avanzados de la creación sin encabezado GraphQL'
-description: En este capítulo de Conceptos avanzados de Adobe Experience Manager AEM () sin encabezado, aprenda a trabajar con pestañas, fecha y hora, objetos JSON y referencias de fragmentos en fragmentos de contenido. Configure directivas de carpeta para limitar qué modelos de fragmentos de contenido se pueden incluir.
-version: Cloud Service
+title: 'Crear fragmentos de contenido: conceptos avanzados de AEM sin encabezado, GraphQL'
+description: En este capítulo de Conceptos avanzados de Adobe Experience Manager (AEM) sin encabezado, aprenda a trabajar con pestañas, fecha y hora, objetos JSON y referencias de fragmentos en fragmentos de contenido. Configure directivas de carpeta para limitar qué modelos de fragmentos de contenido se pueden incluir.
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: 998d3678-7aef-4872-bd62-0e6ea3ff7999
 duration: 609
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '2931'
 ht-degree: 1%
@@ -36,17 +36,17 @@ En este capítulo, aprenderá a:
 
 ## Instalación de contenido de muestra {#sample-content}
 
-AEM Instale un paquete de que contenga varias carpetas e imágenes de muestra utilizadas para acelerar el tutorial.
+Instale un paquete de AEM que contenga varias carpetas e imágenes de muestra utilizadas para acelerar el tutorial.
 
 1. Descargar [Advanced-GraphQL-Tutorial-Starter-Package-1.1.zip](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Starter-Package-1.1.zip)
-1. AEM En la barra de herramientas, vaya a **Herramientas** > **Implementación** > **Paquetes** para acceder al **Administrador de paquetes**.
+1. En AEM, vaya a **Herramientas** > **Implementación** > **Paquetes** para acceder al **Administrador de paquetes**.
 1. Cargue e instale el paquete (archivo zip) descargado en el paso anterior.
 
    ![Paquete cargado a través del administrador de paquetes](assets/author-content-fragments/install-starter-package.png)
 
 ## Crear carpetas y establecer límites mediante directivas de carpetas
 
-AEM En la página de inicio de la, seleccione **Assets** > **Archivos** > **WKND Compartido** > **Inglés**. Aquí puede ver las distintas categorías de fragmentos de contenido, incluidas Aventuras y Colaboradores.
+En la página de inicio de AEM, seleccione **Assets** > **Archivos** > **WKND Compartido** > **Inglés**. Aquí puede ver las distintas categorías de fragmentos de contenido, incluidas Aventuras y Colaboradores.
 
 ### Crear carpetas {#create-folders}
 
@@ -213,7 +213,7 @@ Vaya a la carpeta **Parque Nacional Yosemite**. Actualmente, solo contiene una f
 
 ### Marcadores de pestaña
 
-AEM le permite usar marcadores de posición de pestañas para agrupar diferentes tipos de contenido y facilitar la lectura y administración de los fragmentos de contenido. En el capítulo anterior, agregó marcadores de posición de tabulación al modelo Ubicación. Como resultado, el fragmento de contenido de ubicación ahora tiene dos secciones de pestañas: **Detalles de ubicación** y **Dirección de ubicación**.
+AEM le permite utilizar marcadores de posición de pestañas para agrupar diferentes tipos de contenido y facilitar la lectura y administración de los fragmentos de contenido. En el capítulo anterior, agregó marcadores de posición de tabulación al modelo Ubicación. Como resultado, el fragmento de contenido de ubicación ahora tiene dos secciones de pestañas: **Detalles de ubicación** y **Dirección de ubicación**.
 
 ![Marcadores de posición de ficha](assets/author-content-fragments/tabs.png)
 
@@ -318,7 +318,7 @@ Vamos a crear un fragmento de contenido utilizando el Modelo de fragmento de con
 
 ### Referencias de contenido y fragmentos en el editor de texto multilínea
 
-AEM le permite añadir contenido y referencias de fragmento directamente en el editor de texto multilínea y recuperarlas más tarde mediante consultas de GraphQL. Vamos a agregar referencias de contenido y fragmento al campo **Descripción**.
+AEM le permite añadir contenido y referencias de fragmento directamente en el editor de texto multilínea y recuperarlas más adelante mediante consultas de GraphQL. Vamos a agregar referencias de contenido y fragmento al campo **Descripción**.
 
 1. Primero, agregue el siguiente texto al campo **Descripción**: &quot;El equipo de aventureros profesionales e instructores de senderismo que trabajan en el Parque Nacional Yosemite&quot;.
 
@@ -394,7 +394,7 @@ Por último, vamos a añadir los fragmentos de contenido recién creados a una a
 
 ## Enhorabuena.
 
-Enhorabuena. Ahora ha creado fragmentos de contenido basados en los modelos de fragmentos de contenido avanzados creados en el capítulo anterior. También ha creado una directiva de carpeta para limitar qué modelos de fragmentos de contenido se pueden seleccionar dentro de una carpeta.
+¡Enhorabuena! Ahora ha creado fragmentos de contenido basados en los modelos de fragmentos de contenido avanzados creados en el capítulo anterior. También ha creado una directiva de carpeta para limitar qué modelos de fragmentos de contenido se pueden seleccionar dentro de una carpeta.
 
 ## Pasos siguientes
 

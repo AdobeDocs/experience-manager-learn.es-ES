@@ -1,10 +1,10 @@
 ---
 title: Desarrollo de estados de recursos en AEM Sites
-description: La API de estado de recursos de Adobe Experience Manager AEM es un marco conectable para exponer la mensajería de estado en la creación de varias IU web de editor de datos de usuario (IU) de la interfaz de usuario de Adobe.
+description: Las API de estado de recursos de Adobe Experience Manager son un marco conectable para exponer la mensajería de estado en las distintas IU web de editor de AEM.
 doc-type: Tutorial
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 duration: 88
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 2%
@@ -14,13 +14,13 @@ ht-degree: 2%
 
 # Desarrollo de estados de recursos {#developing-resource-statuses-in-aem-sites}
 
-La API de estado de recursos de Adobe Experience Manager AEM es un marco conectable para exponer la mensajería de estado en la creación de varias IU web de editor de datos de usuario (IU) de la interfaz de usuario de Adobe.
+Las API de estado de recursos de Adobe Experience Manager son un marco conectable para exponer la mensajería de estado en las distintas IU web de editor de AEM.
 
 ## Información general {#overview}
 
 El marco de trabajo Estado de los recursos para editores proporciona API del lado del servidor y del lado del cliente para mostrar e interactuar con los estados del editor, de una manera estándar y uniforme.
 
-AEM Las barras de estado del editor están disponibles de forma nativa en los editores de páginas, fragmentos de experiencias y plantillas de la página de.
+Las barras de estado del editor están disponibles de forma nativa en los editores de páginas, fragmentos de experiencias y plantillas de AEM.
 
 Casos de uso de ejemplo para proveedores de estado de recursos personalizados:
 
@@ -28,7 +28,7 @@ Casos de uso de ejemplo para proveedores de estado de recursos personalizados:
 * Notificar a los autores que una página se ha activado en los últimos 15 minutos
 * Notificar a los autores que una página se editó en los últimos 5 minutos y quién la editó
 
-AEM ![Resumen del estado del recurso del editor de la](assets/sample-editor-resource-status-screenshot.png)
+![descripción general del estado del recurso del editor de AEM](assets/sample-editor-resource-status-screenshot.png)
 
 ## Marco del proveedor de estado de recursos {#resource-status-provider-framework}
 

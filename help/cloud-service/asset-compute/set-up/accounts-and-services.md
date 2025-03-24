@@ -1,8 +1,8 @@
 ---
-title: Configuración de cuentas y servicios para la extensibilidad de la Asset compute
-description: Para desarrollar los trabajadores de la Asset compute, es necesario tener acceso a cuentas y servicios, incluido AEM as a Cloud Service, App Builder y el almacenamiento en la nube proporcionado por Microsoft o Amazon.
+title: Configuración de cuentas y servicios para la extensibilidad de Asset Compute
+description: El desarrollo de los trabajadores de Asset Compute requiere acceso a cuentas y servicios, incluido AEM as a Cloud Service, App Builder y almacenamiento en la nube, que proporciona Microsoft o Amazon.
 feature: Asset Compute Microservices
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: Tutorial
 jira: KT-6264
 thumbnail: 40377.jpg
@@ -11,7 +11,7 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: 707657ad-221e-4dab-ac2a-46a4fcbc55bc
 duration: 212
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '592'
 ht-degree: 2%
@@ -39,15 +39,15 @@ Todos los servicios de Adobe deben ser accesibles a través de la misma organiza
 
 ## AEM as a Cloud Service{#aem-as-a-cloud-service}
 
-Se requiere acceso a un entorno de AEM as a Cloud Service para configurar los perfiles de procesamiento de AEM Assets e invocar el trabajador de Asset compute personalizado.
+Se requiere acceso a un entorno de AEM as a Cloud Service para configurar los perfiles de procesamiento de los AEM Assets para invocar el trabajador de Asset Compute personalizado.
 
 Lo ideal es que haya disponible un programa de zona protegida o un entorno de desarrollo que no sea de zona protegida para su uso.
 
-AEM AEM Tenga en cuenta que un SDK de la local no es suficiente para completar este tutorial, ya que el SDK de la local no puede comunicarse con los microservicios de Asset compute, sino que se requiere un entorno de AEM as a Cloud Service verdadero.
+Tenga en cuenta que un SDK local de AEM no es suficiente para completar este tutorial, ya que el SDK local de AEM no se puede comunicar con los microservicios de Asset Compute, sino que se requiere un entorno de AEM as a Cloud Service verdadero.
 
 ## App Builder{#app-builder}
 
-El módulo [App Builder](https://developer.adobe.com/app-builder/) se usa para generar e implementar acciones personalizadas en la plataforma sin servidor de Adobe I/O Runtime, Adobe. AEM Los proyectos de Asset compute de recursos son proyectos de App Builder especialmente creados que se integran con AEM Assets a través de Perfiles de procesamiento y proporcionan la capacidad de acceder y procesar binarios de recursos.
+El módulo [App Builder](https://developer.adobe.com/app-builder/) se usa para generar e implementar acciones personalizadas en Adobe I/O Runtime, la plataforma sin servidor de Adobe. Los proyectos de AEM Asset Compute son proyectos de App Builder especialmente creados que se integran con los AEM Assets a través de Perfiles de procesamiento y proporcionan la capacidad de acceder y procesar binarios de recursos.
 
 Para obtener acceso a App Builder, regístrese en la vista previa.
 
@@ -57,9 +57,9 @@ Para obtener acceso a App Builder, regístrese en la vista previa.
 
 ## Almacenamiento en la nube
 
-Se requiere almacenamiento en la nube para el desarrollo local de proyectos de Asset compute.
+Se requiere almacenamiento en la nube para el desarrollo local de proyectos de Asset Compute.
 
-Cuando se implementan Assets computes en Adobe I/O Runtime para que los use directamente AEM as a Cloud Service AEM, este almacenamiento en la nube no es estrictamente necesario, ya que proporciona el almacenamiento en la nube desde el que se lee el recurso y en el que se escribe la representación.
+Cuando los trabajadores de Asset Compute se implementan en Adobe I/O Runtime para su uso directo por parte de AEM as a Cloud Service, este almacenamiento en la nube no es estrictamente necesario, ya que AEM proporciona el almacenamiento en la nube desde el que se lee el recurso y en el que se escribe la representación.
 
 ### Almacenamiento del Blob de Microsoft Azure{#azure-blob-storage}
 
@@ -76,7 +76,7 @@ _Clic en el aprovisionamiento del almacenamiento del blob de Azure (sin audio)_
 1. Pulse __+ Agregar__ para crear una nueva cuenta de almacenamiento de blob
 1. Cree un nuevo __grupo de recursos__ según sea necesario, por ejemplo: `aem-as-a-cloud-service`
 1. Proporcione un __nombre de cuenta de almacenamiento__, por ejemplo: `aemguideswkndassetcomput`
-   + El __nombre de cuenta de almacenamiento__ usado para [configurar el almacenamiento en la nube](../develop/environment-variables.md) en la herramienta de desarrollo de Assets computes local
+   + El __nombre de cuenta de almacenamiento__ usado para [configurar el almacenamiento en la nube](../develop/environment-variables.md) en la herramienta de desarrollo de Asset Compute local
    + Las __claves de acceso__ asociadas con la cuenta de almacenamiento también son necesarias al [configurar el almacenamiento en la nube](../develop/environment-variables.md).
 1. Deje todo lo demás como predeterminado y pulse el botón __Revisar + crear__
    + Si lo desea, seleccione la __ubicación__ cercana a usted.

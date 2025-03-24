@@ -1,8 +1,8 @@
 ---
-title: Integrar AEM Forms as a Cloud Service y Marketo
+title: Integración de AEM Forms as a Cloud Service y Marketo
 description: Aprenda a integrar AEM Forms y Marketo mediante el modelo de datos de formulario de AEM Forms.
 feature: Form Data Model,Integration
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Integrations, Development
 role: Developer
 level: Experienced
@@ -11,7 +11,7 @@ badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 last-substantial-update: 2024-07-24T00:00:00Z
 jira: KT-15876
 exl-id: c3145149-bfa4-4dcb-acde-c359e9348f99
-source-git-commit: b4df652fcda0af5d01077b97aa7fa17cfe2abf4b
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 1%
@@ -20,9 +20,9 @@ ht-degree: 1%
 
 # Integración de AEM Forms y Marketo
 
-Marketo, parte de Adobe, proporciona software de automatización de marketing centrado en el marketing basado en cuentas, que incluye correo electrónico, móvil, social, anuncios digitales, administración web y análisis.
+Marketo, que forma parte de Adobe, proporciona software de automatización de marketing centrado en el marketing basado en cuentas, que incluye correo electrónico, móvil, social, anuncios digitales, administración web y análisis.
 
-Con el modelo de datos de formulario de AEM Forms AEM, ahora podemos integrar fácilmente formularios de datos de formulario con de Marketo.
+Con el modelo de datos de formulario de AEM Forms, ahora podemos integrar fácilmente formularios de AEM con Marketo.
 
 [Más información sobre el modelo de datos de formulario](https://helpx.adobe.com/experience-manager/6-5/forms/using/data-integration.html)
 
@@ -34,7 +34,7 @@ Para empezar, es muy recomendable que esté familiarizado con los siguientes tem
 
 ## Requisitos previos
 
-1. Acceso a la instancia as a Cloud Service de AEM Forms
+1. Acceso a la instancia de AEM Forms as a Cloud Service
 1. Familiarizado con el modelo de datos de formulario
 1. Conocimientos básicos de los archivos Swagger
 1. Creación de Forms adaptable

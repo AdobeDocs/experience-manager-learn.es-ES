@@ -1,7 +1,7 @@
 ---
-title: AEM Primer tutorial sin encabezado de la
-description: AEM Aprenda a ser una aplicación de primera sin encabezado para la aplicación de la.
-version: Cloud Service
+title: Primer tutorial de AEM Headless
+description: Aprenda a ser la primera aplicación de AEM sin encabezado.
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Development
 role: Developer
@@ -12,30 +12,30 @@ jira: KT-13270
 thumbnail: KT-13270.jpeg
 exl-id: b0ac4b50-5fe5-41a1-9530-8e593d7000c9
 duration: 89
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 3%
 
 ---
 
-# AEM Primer tutorial sin encabezado de la
+# Primer tutorial de AEM Headless
 
 {{aem-headless-trials-promo}}
 
-AEM Le damos la bienvenida al tutorial sobre la creación de una experiencia web con React, totalmente equipado con API sin encabezado y GraphQL de. En este tutorial, le guiaremos a través del proceso de creación de una aplicación web dinámica e interactiva mediante la combinación de la potencia de React, las API sin encabezado de Adobe Experience Manager (AEM) y GraphQL.
+Bienvenido al tutorial sobre la creación de una experiencia web con React, totalmente equipado con las API de AEM sin encabezado y GraphQL. En este tutorial, le guiaremos a través del proceso de creación de una aplicación web dinámica e interactiva mediante la combinación de la potencia de React, las API sin encabezado de Adobe Experience Manager (AEM) y GraphQL.
 
-React es una popular biblioteca de JavaScript para la creación de interfaces de usuario, conocida por su simplicidad, reutilización y arquitectura basada en componentes. AEM AEM proporciona funciones sólidas de administración de contenido y expone las API sin encabezado que permiten a los desarrolladores acceder al contenido y a los datos almacenados en los archivos a través de una variedad de canales y aplicaciones.
+React es una popular biblioteca de JavaScript para la creación de interfaces de usuario, conocida por su simplicidad, reutilización y arquitectura basada en componentes. AEM ofrece funciones sólidas de administración de contenido y expone las API sin encabezado que permiten a los desarrolladores acceder al contenido y a los datos almacenados en AEM a través de una variedad de canales y aplicaciones.
 
-AEM AEM Al aprovechar las API sin encabezado de la, puede recuperar contenido, activos y datos de su instancia y utilizarlos para impulsar la aplicación React. GraphQL AEM AEM, un lenguaje de consulta flexible para las API, proporciona una forma eficaz y precisa de solicitar datos específicos a su instancia de, lo que permite una integración perfecta entre React y.
+Al aprovechar las API de AEM sin encabezado, puede recuperar contenido, recursos y datos de su instancia de AEM y utilizarlos para impulsar la aplicación React. GraphQL, un lenguaje de consulta flexible para las API, proporciona una forma eficaz y precisa de solicitar datos específicos de su instancia de AEM, lo que permite una integración perfecta entre React y AEM.
 
-AEM ![Primer tutorial sin encabezado](./assets/overview/overview.png)
+![Primer tutorial de AEM sin encabezado](./assets/overview/overview.png)
 
-AEM A lo largo de este tutorial, le guiaremos por el proceso paso a paso de creación de una experiencia web mediante las API de React y Headless con GraphQL. AEM Aprenderá a configurar su entorno de desarrollo, establecer una conexión entre React y, recuperar contenido mediante consultas de GraphQL y procesarlo dinámicamente en su aplicación web.
+A lo largo de este tutorial, le guiaremos por el proceso paso a paso de creación de una experiencia web mediante las API de React y AEM sin encabezado con GraphQL. Aprenderá a configurar su entorno de desarrollo, establecer una conexión entre React y AEM, recuperar contenido mediante consultas de GraphQL y procesarlo dinámicamente en su aplicación web.
 
-AEM AEM Cubriremos temas como la configuración del proyecto React, el establecimiento de la autenticación con la autenticación, la consulta de contenido desde el uso de GraphQL, la administración de datos en los componentes de React y la optimización del rendimiento mediante el uso del almacenamiento en caché y la paginación.
+Cubriremos temas como la configuración del proyecto React, el establecimiento de la autenticación con AEM, la consulta de contenido desde AEM mediante GraphQL, la administración de datos en los componentes React y la optimización del rendimiento mediante el uso del almacenamiento en caché y la paginación.
 
-AEM Al final de este tutorial, tendrá una comprensión sólida de cómo aprovechar React, las API sin encabezado y GraphQL para crear una experiencia web potente y atractiva. ¡Así que vamos a sumergirnos y comenzar a crear su próxima aplicación web!
+Al final de este tutorial, tendrá una comprensión sólida de cómo aprovechar React, las API sin encabezado de AEM y GraphQL para crear una experiencia web potente y atractiva. ¡Así que vamos a sumergirnos y comenzar a crear su próxima aplicación web!
 
 ## Requisitos previos
 

@@ -5,13 +5,13 @@ solution: Experience Manager
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Developer Tools
 jira: KT-14581
 duration: 90
 exl-id: 2a33a9a9-1eef-425d-aec5-465030ee9b74
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 3%
@@ -83,7 +83,7 @@ public class GetFieldChoices extends SlingAllMethodsServlet implements Serializa
 
 ## Creación de recursos en CRX
 
-* AEM Inicie sesión en el SDK local de la.
+* Inicie sesión en su SDK local de AEM.
 * Cree un recurso con el nombre `fetchchoices` (puede asignar el nombre a este nodo de todos modos que desee) del tipo `cq:Page` en el nodo de contenido.
 * Guarde los cambios
 * Cree un nodo denominado `jcr:content` de tipo `cq:PageContent` y guarde los cambios
@@ -105,15 +105,15 @@ http://localhost:4502/content/fetchchoices/jcr:content.json?formPath=/content/fo
 
 La ruta de acceso `/content/fetchchoices/jcr:content` es la ruta de acceso del recurso y la extensión `.json` es la especificada en el servlet
 
-## AEM Sincronizar el proyecto de
+## Sincronizar el proyecto de AEM
 
-1. AEM Abra el proyecto de en su editor favorito. He usado intelliJ para esto.
+1. Abra el proyecto de AEM en su editor favorito. He usado intelliJ para esto.
 1. Cree una carpeta llamada `fetchchoices` en `\aem-banking-application\ui.content\src\main\content\jcr_root\content`
 1. Haga clic con el botón derecho en la carpeta `fetchchoices` y seleccione `repo | Get Command` (este elemento de menú está configurado en un capítulo anterior de este tutorial).
 
-AEM AEM Esto debe sincronizar este nodo desde el al proyecto local de la.
+Esto debe sincronizar este nodo de AEM con el proyecto local de AEM.
 
-AEM La estructura del proyecto de la aplicación debería tener este aspecto
+La estructura del proyecto de AEM debería tener este aspecto
 ![solucionador de recursos](assets/mapping-servlet-resource.png)
 Actualice el archivo filter.xml en la carpeta aem-banking-application\ui.content\src\main\content\META-INF\vault con la siguiente entrada
 

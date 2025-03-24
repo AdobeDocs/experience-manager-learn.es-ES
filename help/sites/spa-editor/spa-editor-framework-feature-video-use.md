@@ -1,7 +1,7 @@
 ---
-title: SPA Uso del Editor de con AEM Sites
-description: AEM SPA El marco de trabajo del editor de aplicaciones de una sola página de permite a los autores editar el contenido de una aplicación de una sola página o de una sola página (o de una sola página. SPA SPA AEM Los desarrolladores que utilizan cualquiera de los marcos de React crean una y luego asignan áreas del a componentes de la, lo que permite a los autores utilizar herramientas de edición de AEM Sites familiares.
-version: 6.4, 6.5, Cloud Service
+title: Uso del Editor de SPA con AEM Sites
+description: El marco del editor de aplicaciones de una sola página de AEM permite a los autores editar contenido para una aplicación de una sola página o una SPA. Los desarrolladores que utilizan cualquiera de los marcos de React crean una SPA y luego asignan áreas de la SPA a componentes de AEM, lo que permite a los autores utilizar herramientas de edición de AEM Sites familiares.
+version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 topic: SPA
 feature: SPA Editor
 role: Developer
@@ -11,33 +11,33 @@ thumbnail: 22229.jpg
 doc-type: Feature Video
 exl-id: 645b6986-830f-4409-b46c-ddf15c33e84c
 duration: 473
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 1%
 
 ---
 
-# SPA Uso del Editor de con AEM Sites {#using-the-spa-editor-with-aem-sites}
+# Uso del Editor de SPA con AEM Sites {#using-the-spa-editor-with-aem-sites}
 
 Vídeo de descripción general de la creación de contenido para una aplicación de una sola página en AEM Sites.
 
-AEM SPA SPA El Editor de segmentos de proporciona a los autores la capacidad de editar contenido para una aplicación de una sola página o una sola página SPA SPA AEM Los desarrolladores que utilizan el marco de trabajo React crean un grupo de trabajo y, a continuación, asignan áreas de los componentes de la a los de la aplicación, lo que permite a los autores utilizar herramientas de edición de AEM Sites conocidas. SPA El siguiente vídeo muestra algunas de las funciones de edición en contexto con el sitio de muestra de WKND. SPA El proyecto de WKND incluye una implementación de React.
+El Editor de SPA de AEM permite a los autores editar contenido para una aplicación de una sola página o SPA. Los desarrolladores que utilizan el marco de React crean una SPA y luego asignan áreas de la SPA a componentes de AEM, lo que permite a los autores utilizar herramientas de edición de AEM Sites familiares. El siguiente vídeo muestra algunas de las funciones de edición en contexto con el sitio de muestra de SPA de WKND. El proyecto de la SPA de WKND incluye una implementación de React.
 
 >[!VIDEO](https://video.tv.adobe.com/v/22229?quality=12&learn=on)
 
 >[!NOTE]
 >
-> SPA AEM La función Editor de aplicaciones de una sola página () requiere el paquete de servicio 2 o posterior de 6.4, respectivamente.
+> La función Editor de aplicaciones de una sola página (SPA) requiere AEM 6.4 Service Pack 2 o posterior.
 >
-> SPA SPA El Editor de es la solución recomendada para proyectos que requieren un procesamiento del lado del cliente basado en el marco de trabajo de la.
+> El editor de SPA es la solución recomendada para proyectos que requieren un procesamiento del lado del cliente basado en el marco de SPA.
 
 ## Recursos adicionales {#additional-resources}
 
-SPA AEM AEM La implementación de WKND solo proporciona soporte para las versiones 6.4.8 (o posterior), 6.5.5 (o posterior), 6.4.8 (o posterior), y para AEM as a Cloud Service.
+La implementación de la SPA de WKND solo es compatible con AEM 6.4.8, versiones posteriores, AEM 6.5.5 y AEM as a Cloud Service.
 
-SPA AEM Descargue e instale el [paquete de WKND](https://github.com/adobe/aem-guides-wknd-spa/releases) apropiado basado en su versión de. Hay versiones independientes para **React**.
+Descargue e instale el [paquete de SPA de WKND](https://github.com/adobe/aem-guides-wknd-spa/releases) apropiado según su versión de AEM. Hay versiones independientes para **React**.
 
-SPA Para ver un tutorial detallado sobre el desarrollo con el Editor de la, consulte:
+Para ver un tutorial detallado sobre el desarrollo con el Editor de SPA, consulte:
 
-* AEM SPA [Introducción al Editor de y React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
+* [Introducción al Editor de SPA de AEM y React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)

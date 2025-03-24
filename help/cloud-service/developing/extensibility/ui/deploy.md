@@ -1,8 +1,8 @@
 ---
-title: AEM Implementación de una extensión de IU de
-description: AEM Obtenga información sobre cómo implementar una extensión de IU de.
+title: Implementación de una extensión de IU de AEM
+description: Obtenga información sobre cómo implementar una extensión de IU de AEM.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -11,7 +11,7 @@ jira: KT-11603
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: 2e37165d-c003-4206-8133-54e37ca35b8e
 duration: 166
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '765'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Hay que tener en cuenta varias consideraciones al implementar aplicaciones de Ap
 Los espacios de trabajo de Adobe Developer Console no tienen ninguna correlación directa con los tipos de entorno de AEM as a Cloud Service.
 + Una extensión implementada en el espacio de trabajo de producción se muestra en todos los entornos de AEM as a Cloud Service de la organización de Adobe en los que existe la extensión.
 Una extensión no se puede limitar a los entornos con los que está registrada agregando [lógica condicional que comprueba el nombre de host de AEM as a Cloud Service](https://developer.adobe.com/uix/docs/guides/publication/#enabling-extension-only-on-specific-aem-environments).
-+ Se pueden utilizar varias extensiones en AEM as a Cloud Service. El Adobe recomienda que cada aplicación de App Builder de extensión se utilice para solucionar un único objetivo empresarial. Dicho esto, una sola aplicación de App Builder de extensión puede implementar varios puntos de extensión que apoyen un objetivo comercial común.
++ Se pueden utilizar varias extensiones en AEM as a Cloud Service. Adobe recomienda que cada aplicación de App Builder de extensión se utilice para resolver un único objetivo empresarial. Dicho esto, una sola aplicación de App Builder de extensión puede implementar varios puntos de extensión que apoyen un objetivo comercial común.
 
 ## Despliegue inicial
 
@@ -89,7 +89,7 @@ La actualización y la extensión de la aplicación App Builder siguen el mismo 
 
 ### Revocar la extensión
 
-Para implementar una nueva versión de una extensión, primero debe revocarse (o eliminarse). AEM Mientras que la extensión es Revocada, no está disponible en consolas de.
+Para implementar una nueva versión de una extensión, primero debe revocarse (o eliminarse). Mientras que la extensión es Revocada, no está disponible en las consolas de AEM.
 
 1. Iniciar sesión en [Adobe Exchange](https://exchange.adobe.com/)
 1. Vaya a __Administrar__ > __Aplicaciones App Builder__
@@ -141,7 +141,7 @@ Una vez aprobada la solicitud de extensión, la extensión se activa inmediatame
 
 ![Quitar una extensión](./assets/deploy/revoke.png)
 
-Para eliminar una extensión, revoque (o elimine) su Adobe Exchange. Cuando se revoca la extensión, se elimina de todos los servicios de AEM as a Cloud Service Author.
+Para eliminar una extensión, revocarla (o eliminarla) de Adobe Exchange. Cuando se revoca la extensión, se elimina de todos los servicios de AEM as a Cloud Service Author.
 
 1. Iniciar sesión en [Adobe Exchange](https://exchange.adobe.com/)
 1. Vaya a __Administrar__ > __Aplicaciones App Builder__

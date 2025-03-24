@@ -1,7 +1,7 @@
 ---
 title: Plantillas de página
 description: Aprenda a crear y modificar plantillas de página. Comprenda la relación entre una plantilla de página y una página. Aprenda a configurar las políticas de una plantilla de página para proporcionar un control granular y coherencia de marca para el contenido.  Se crea una plantilla de artículo de revista bien estructurada basada en una maqueta de Adobe XD.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Content Management
 feature: Core Components, Editable Templates, Page Editor
 role: Developer
@@ -12,7 +12,7 @@ doc-type: Tutorial
 exl-id: 261ec68f-36f4-474f-a6e4-7a2f9cea691b
 recommendations: noDisplay, noCatalog
 duration: 1561
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '628'
 ht-degree: 1%
@@ -47,7 +47,7 @@ Hay 3 áreas principales de [Plantillas de página](https://experienceleague.ado
 1. **Contenido inicial**: define componentes con los que comienza la plantilla, que los autores de contenido pueden editar o eliminar
 1. **Directivas**: define configuraciones sobre cómo se comportan los componentes y qué opciones tendrán disponibles los autores.
 
-AEM A continuación, cree una nueva plantilla en la que se adapte a la estructura de las maquetas. AEM Esto ocurrirá en una instancia local de. Siga los pasos del siguiente vídeo:
+A continuación, cree una nueva plantilla en AEM que coincida con la estructura de las maquetas. Esto ocurrirá en una instancia local de AEM. Siga los pasos del siguiente vídeo:
 
 >[!VIDEO](https://video.tv.adobe.com/v/332915?quality=12&learn=on)
 

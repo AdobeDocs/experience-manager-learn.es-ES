@@ -2,14 +2,14 @@
 title: Buscar el JSON del formulario adaptable para incrustar
 description: Utilice la API para recuperar el json del formulario adaptable
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 jira: KT-13285
 topic: Development
 role: User
 level: Intermediate
 exl-id: ee534724-54ea-48e1-8c92-de1c56a928d4
 duration: 50
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # Recuperar el JSON del formulario
 
-Inicie sesión en la instancia de autor de AEM Forms y cree un nuevo formulario adaptable con la plantilla **En blanco con componentes principales**. Publish el formulario en la instancia de publicación.
+Inicie sesión en la instancia de autor de AEM Forms y cree un nuevo formulario adaptable con la plantilla **En blanco con componentes principales**. Publique el formulario en la instancia de publicación.
 
 Para incrustar el formulario, primero recuperamos el json del formulario adaptable realizando una llamada GET en el servidor de publicación.
 

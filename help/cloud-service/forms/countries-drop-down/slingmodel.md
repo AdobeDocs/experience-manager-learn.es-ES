@@ -5,23 +5,23 @@ solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Adaptive Forms
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16517
-source-git-commit: f9a1fb40aabb6fdc1157e1f2576f9c0d9cf1b099
+exl-id: f4a18f02-61a2-4fa3-bfbb-41bf696cd2a8
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 0%
 
 ---
 
-
 # Crear un modelo Sling para el componente
 
-AEM Un modelo de Sling en la es un marco de trabajo basado en Java que se utiliza para simplificar el desarrollo de la lógica back-end para los componentes. AEM Permite a los desarrolladores asignar datos de recursos de (nodos JCR) a objetos Java mediante anotaciones, lo que proporciona una forma limpia y eficaz de gestionar los datos dinámicos de los componentes.
-AEM Esta clase, PaísesDropDownImpl, es una implementación de la interfaz PaísesDropDown en un proyecto de (Adobe Experience Manager). Activa un componente desplegable en el que los usuarios pueden seleccionar un país en función de su continente seleccionado. AEM Los datos desplegables se cargan dinámicamente desde un archivo JSON almacenado en el DAM (Digital Asset Manager), que es un archivo de datos que se almacena en el DAM (Digital Asset Manager).
+Un modelo Sling en AEM es un marco basado en Java que se utiliza para simplificar el desarrollo de la lógica back-end para los componentes. Permite a los desarrolladores asignar datos de recursos de AEM (nodos JCR) a objetos Java mediante anotaciones, lo que proporciona una forma limpia y eficaz de gestionar datos dinámicos para componentes.
+Esta clase, PaísesDropDownImpl, es una implementación de la interfaz PaísesDropDown en un proyecto de AEM (Adobe Experience Manager). Activa un componente desplegable en el que los usuarios pueden seleccionar un país en función de su continente seleccionado. Los datos desplegables se cargan dinámicamente desde un archivo JSON almacenado en AEM DAM (Digital Asset Manager).
 
 **Campos de la clase**
 
@@ -30,7 +30,7 @@ Se inserta desde las propiedades del componente utilizando @ValueMapValue con un
 * **solicitud**: representa la solicitud HTTP actual. Útil para acceder a información específica del contexto.
 * **continente**: Almacena el continente seleccionado para el menú desplegable (por ejemplo, &quot;asia&quot;, &quot;europa&quot;).
 Se inserta desde el cuadro de diálogo de propiedades del componente, con un valor predeterminado de &quot;asia&quot; si no se proporciona ninguno.
-* AEM **resourceResolver**: se usa para acceder y manipular los recursos del repositorio de la.
+* **resourceResolver**:Se usa para acceder y manipular recursos en el repositorio de AEM.
 * **jsonData**: un objeto JSONbject que almacena los datos analizados del archivo JSON correspondiente al continente seleccionado.
 
 **Métodos de la clase**
@@ -38,7 +38,7 @@ Se inserta desde el cuadro de diálogo de propiedades del componente, con un val
 * **getContinent()** Un método sencillo para devolver el valor del campo continente.
 Registra el valor que se devuelve con fines de depuración.
 * **init()** Método de ciclo de vida anotado con @PostConstruct, ejecutado después de construir la clase y de insertar las dependencias. Construye dinámicamente la ruta de acceso al archivo JSON en función del valor de continente.
-AEM Obtiene el archivo JSON del DAM de la mediante resourceResolver.
+Obtiene el archivo JSON del DAM de AEM mediante resourceResolver.
 Adapta el archivo a un recurso, lee su contenido y lo analiza en un objeto JSON.
 Registra cualquier error o advertencia durante este proceso.
 * **getEnums()**: recupera todas las claves (códigos de país) de los datos JSON analizados.

@@ -1,7 +1,7 @@
 ---
-title: AEM Uso de contenido localizado con sin encabezado
-description: Aprenda a utilizar GraphQL AEM para consultar el contenido localizado en las listas de contenido de su sitio.
-version: Cloud Service
+title: Uso de contenido localizado con AEM Headless
+description: Aprenda a utilizar GraphQL para consultar contenido localizado en AEM.
+version: Experience Manager as a Cloud Service
 feature: GraphQL API
 topic: Headless
 role: Developer
@@ -10,28 +10,28 @@ jira: KT-10254
 thumbnail: KT-10254.jpeg
 exl-id: 5e3d115b-f3a1-4edc-86ab-3e0713a36d54
 duration: 130
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 1%
 
 ---
 
-# AEM Contenido localizado con sin encabezado
+# Contenido localizado con AEM sin encabezado
 
-AEM proporciona [Marco de trabajo de integración de traducciones](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/integration-framework.html) para contenido sin encabezado, lo que permite que los fragmentos de contenido y los recursos de soporte se traduzcan fácilmente para su uso en distintas configuraciones regionales. AEM Este es el mismo marco de trabajo que se utiliza para traducir otros contenidos, como páginas, fragmentos de experiencias, Assets y Forms. Una vez que se ha traducido [contenido sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=es) y se ha publicado, está listo para que lo consuman las aplicaciones sin encabezado.
+AEM proporciona un [Marco de trabajo de integración de traducciones](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/integration-framework.html) para contenido sin encabezado, lo que permite que los fragmentos de contenido y los recursos de soporte se traduzcan fácilmente para su uso en distintas configuraciones regionales. Este es el mismo marco de trabajo que se utiliza para traducir otro contenido de AEM, como páginas, fragmentos de experiencias, Assets y Forms. Una vez que se ha traducido [contenido sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=es) y se ha publicado, está listo para que lo consuman las aplicaciones sin encabezado.
 
 ## Estructura de carpetas de Assets{#assets-folder-structure}
 
-AEM Asegúrese de que los fragmentos de contenido localizados en la lista de distribución de contenido de la aplicación siguen la [estructura de localización recomendada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/getting-started.html#recommended-structure).
+Asegúrese de que los fragmentos de contenido localizados en AEM sigan la [estructura de localización recomendada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/getting-started.html#recommended-structure).
 
-AEM ![Carpetas de recursos localizadas de la](./assets/localized-content/asset-folders.jpg)
+![Carpetas de recursos localizadas de AEM](./assets/localized-content/asset-folders.jpg)
 
 Las carpetas de configuración regional deben ser elementos del mismo nivel y el nombre de la carpeta, en lugar del título, debe ser un [código ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) válido que represente la configuración regional del contenido incluido en la carpeta.
 
 El código de configuración regional también es el valor utilizado para filtrar los fragmentos de contenido devueltos por la consulta de GraphQL.
 
-| Código de configuración regional | AEM ruta de acceso de la | Configuración regional de contenido |
+| Código de configuración regional | Ruta de AEM | Configuración regional de contenido |
 |--------------------------------|----------|----------|
 | de | /content/dam/.../**de**/... | Contenido en alemán |
 | en | /content/dam/.../**en**/... | Contenido en inglés |
@@ -52,11 +52,11 @@ query($locale: String!) {
 }
 ```
 
-AEM La variable `$locale` utilizada en el filtro `_locale` requiere el código de configuración regional (por ejemplo, `en`, `en_us` o `de`) especificado en [Convenciones de localización basadas en carpetas de recursos de](#assets-folder-structure).
+La variable `$locale` utilizada en el filtro `_locale` requiere el código de configuración regional (por ejemplo `en`, `en_us` o `de`) especificado en la [convención de localización basada en carpetas de recursos de AEM](#assets-folder-structure).
 
 ## Ejemplo de React
 
-AEM Vamos a crear una aplicación React simple que controle desde qué contenido de Adventure se va a realizar la consulta en función de un selector de configuración regional usando el filtro `_locale`.
+Vamos a crear una aplicación React simple que controle qué contenido de Adventure consultar desde AEM en función de un selector de configuración regional usando el filtro `_locale`.
 
 Cuando se selecciona __English__ en el selector de configuración regional, se devuelven los fragmentos de contenido de aventura en inglés de `/content/dam/wknd/en`, cuando se selecciona __Spanish__, luego los fragmentos de contenido en español de `/content/dam/wknd/es`, etc., etc.
 
@@ -109,11 +109,11 @@ export default function LocaleSwitcher() {
 
 ### Consultar contenido mediante el filtro `_locale`{#adventures}
 
-AEM El componente Aventuras consulta las de todas las aventuras por configuración regional y enumera sus títulos. Esto se logra pasando el valor de configuración regional almacenado en el contexto de React a la consulta mediante el filtro `_locale`.
+El componente Aventuras consulta AEM todas las aventuras por configuración regional y enumera sus títulos. Esto se logra pasando el valor de configuración regional almacenado en el contexto de React a la consulta mediante el filtro `_locale`.
 
 Este método se puede ampliar a otras consultas de la aplicación, asegurándose de que todas las consultas incluyan únicamente el contenido especificado por la configuración regional seleccionada por el usuario.
 
-AEM AEM La consulta contra la configuración regional se realiza en el vínculo personalizado de React [getAdventuresByLocale, descrito con más detalle en la documentación de Consulta de GraphQL](./aem-headless-sdk.md).
+La consulta a AEM se realiza en el vínculo personalizado de React [getAdventuresByLocale, que se describe con más detalle en la sección Consulta de la documentación de AEM GraphQL](./aem-headless-sdk.md).
 
 ```javascript
 // src/Adventures.js

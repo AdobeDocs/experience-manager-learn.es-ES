@@ -1,7 +1,7 @@
 ---
-title: AEM Función URL de vanidad de Dispatcher
-description: AEM Comprenda cómo trata la con las URL de vanidad y las técnicas adicionales mediante el uso de reglas de reescritura para asignar contenido más cerca del borde del envío.
-version: 6.5
+title: Función URL mnemónicas de AEM Dispatcher
+description: Comprenda cómo AEM trata las URL de vanidad y las técnicas adicionales mediante el uso de reglas de reescritura para asignar contenido más cerca del límite de la entrega.
+version: Experience Manager 6.5
 topic: Administration, Performance
 feature: Dispatcher
 role: Admin
@@ -10,7 +10,7 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 53baef9c-aa4e-4f18-ab30-ef9f4f5513ee
 duration: 244
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1159'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## Información general
 
-AEM Este documento le ayuda a comprender cómo se trata el tema de las direcciones URL mnemónicas y algunas técnicas adicionales mediante el uso de reglas de reescritura para asignar contenido más cerca del borde del envío
+Este documento le ayuda a comprender cómo AEM trata las direcciones URL mnemónicas y algunas técnicas adicionales mediante el uso de reglas de reescritura para asignar contenido más cerca del borde del envío
 
 ## ¿Qué son las URL mnemónicas?
 
@@ -33,7 +33,7 @@ Cuando tiene contenido que se aloja en una estructura de carpetas lógica, no si
 
 Un ejemplo: `/aboutus` apuntó a `/content/we-retail/us/en/about-us.html`
 
-AEM AEM Los autores de tienen la opción de establecer propiedades de URL mnemónicas en un fragmento de contenido de y publicarlo.
+Los autores de AEM tienen la opción de establecer propiedades de URL mnemónicas en un fragmento de contenido en AEM y publicarlo.
 
 Para que funcione, debe ajustar los filtros de Dispatcher para permitir el elemento mnemónico. Esto no es razonable con el ajuste de los archivos de configuración de Dispatcher a la velocidad que los autores tendrían para configurar estas entradas de página mnemónicas.
 
@@ -44,19 +44,19 @@ Por este motivo, el módulo de Dispatcher tiene una función para permitir autom
 
 ### Creación de URL mnemónicas
 
-AEM El autor visita una página en la página en, hace clic en las propiedades de la página y agrega entradas en la sección _URL de vanidad_. Al guardar los cambios y activar la página, el elemento mnemónico se asigna a la página.
+El autor visita una página en AEM, hace clic en las propiedades de la página y agrega entradas en la sección _URL de vanidad_. Al guardar los cambios y activar la página, el elemento mnemónico se asigna a la página.
 
 Los autores también pueden seleccionar la casilla de verificación _Redirigir URL mnemónica_ al agregar _entradas de URL mnemónica_, esto hace que las URL mnemónicas se comporten como redirecciones 302. Significa que se le indica al explorador que vaya a la nueva URL (a través del encabezado de respuesta `Location`) y el explorador realiza una nueva solicitud a la nueva URL.
 
 #### IU táctil:
 
-AEM ![Menú desplegable del cuadro de diálogo para la interfaz de usuario de creación de la creación de la aplicación en la pantalla del editor del sitio](assets/disp-vanity-url/aem-page-properties-drop-down.png "aem-page-properties-drop-down")
+![Menú desplegable del cuadro de diálogo para la IU de creación de AEM en la pantalla del editor del sitio](assets/disp-vanity-url/aem-page-properties-drop-down.png "aem-page-properties-drop-down")
 
 ![página de diálogo de propiedades de página de aem](assets/disp-vanity-url/aem-page-properties.png "aem-page-properties")
 
 #### Buscador de contenido clásico:
 
-AEM ![propiedades de la página de la barra de tareas de la iu clásica de siteadmin ](assets/disp-vanity-url/aem-page-properties-sidekick.png "aem-page-properties-sidekick")
+![propiedades de página de la barra de tareas de la iu clásica de AEM siteadmin](assets/disp-vanity-url/aem-page-properties-sidekick.png "aem-page-properties-sidekick")
 
 ![Cuadro de diálogo de propiedades de página de IU clásica](assets/disp-vanity-url/aem-page-properties-classic.png "aem-page-properties-classic")
 
@@ -70,12 +70,12 @@ AEM ![propiedades de la página de la barra de tareas de la iu clásica de sitea
 
 Cada entrada mnemónica es una entrada de mapa sling para una redirección interna.
 
-AEM Los mapas se pueden ver en la consola Félix de instancias de ( `/system/console/jcrresolver` )
+Los mapas se pueden ver en la consola Felix de instancias de AEM ( `/system/console/jcrresolver` )
 
 Esta es una captura de pantalla de una entrada de mapa creada por una entrada mnemónica:
 ![captura de pantalla de consola de una entrada mnemónica en el recurso que resuelve reglas](assets/disp-vanity-url/vanity-resource-resolver-entry.png "vanity-resource-resolver-entry")
 
-AEM En el ejemplo anterior, cuando solicitamos a la instancia de que visite `/aboutus`, se resuelve en `/content/we-retail/us/en/about-us.html`
+En el ejemplo anterior, cuando solicitamos a la instancia de AEM que visite `/aboutus`, se resuelve en `/content/we-retail/us/en/about-us.html`
 
 ## Dispatcher permite filtros automáticamente
 
@@ -85,7 +85,7 @@ Es importante asegurarse de que los editores solo permiten contenido de `/conten
 
 Aquí están las URL mnemónicas activas en la carpeta base de `/`. ¿Cómo les permitimos llegar a los editores mientras se mantienen seguros?
 
-Dispatcher AEM simple tiene un mecanismo de autorización de filtro automático y debe instalar un paquete de y luego configurar Dispatcher para que apunte a esa página del paquete.
+Dispatcher simple tiene un mecanismo de autorización de filtro automático y debe instalar un paquete de AEM y luego configurar Dispatcher para que apunte a esa página del paquete.
 
 [https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/vanityurls-components](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/vanityurls-components)
 
@@ -118,7 +118,7 @@ Este método obliga a Dispatcher a actualizar `/file`, siempre que el intervalo 
 
 Almacena su caché de la respuesta en el argumento `/file`; en este ejemplo, `/tmp/vanity_urls`
 
-AEM Por lo tanto, si visita la instancia de en la URI, verá lo que arroja:
+Si visita la instancia de AEM en la URL, verá lo que arroja:
 
 ![captura de pantalla del contenido representado en /libs/granite/dispatcher/content/vanityUrls.html](assets/disp-vanity-url/vanity-url-component.png "vanity-url-component")
 
@@ -126,7 +126,7 @@ Es literalmente una lista, súper simple
 
 ## Reescribir reglas como reglas mnemónicas
 
-AEM ¿Por qué mencionamos el uso de reglas de reescritura en lugar del mecanismo predeterminado integrado en el código de tiempo de ejecución, tal como se describe más arriba?
+¿Por qué mencionamos el uso de reglas de reescritura en lugar del mecanismo predeterminado integrado en AEM como se describe más arriba?
 
 Se explican sencillamente los problemas de área de nombres, rendimiento y lógica de nivel superior que se pueden gestionar mejor.
 
@@ -140,7 +140,7 @@ Esta regla busca el elemento mnemónico `/aboutus` y obtiene la ruta de acceso c
 
 También detiene el procesamiento de todas las demás reglas del indicador L (Última), lo que significa que no tiene que atravesar una enorme lista de reglas como la resolución JCR.
 
-AEM Además de no tener que representar la solicitud y esperar a que el editor de la responda a estos dos elementos de este método, se hace mucho más eficaz.
+Además de no tener que representar la solicitud y esperar a que el editor de AEM responda a estos dos elementos de este método, se hace mucho más eficaz.
 
 A continuación, la cereza del pastel aquí es el indicador NC (sin distinción de mayúsculas y minúsculas), lo que significa que si un cliente escribe la URI con `/AboutUs` en lugar de `/aboutus`, aún funciona.
 
@@ -164,7 +164,7 @@ Este es un ejemplo de fragmento de código de inclusión dentro de `/etc/httpd/c
 
 ## Qué método y dónde
 
-AEM Usar para controlar las entradas mnemónicas tiene las siguientes ventajas
+El uso de AEM para controlar las entradas personales ofrece las siguientes ventajas
 
 - Los autores pueden crearlos sobre la marcha
 - Se alojan con el contenido y se pueden empaquetar con este
@@ -178,12 +178,12 @@ El uso de `mod_rewrite` para controlar las entradas personales ofrece las siguie
 
 Utilice ambos métodos, pero aquí están los consejos y criterios que debe utilizar cuando:
 
-- AEM Si el elemento mnemónico es temporal y tiene un tráfico planificado bajo, use la función integrada de la tarjeta de acceso de la plataforma de datos de la plataforma de datos de
+- Si el elemento mnemónico es temporal y tiene un tráfico planificado bajo, use la función integrada de AEM
 - Si el elemento mnemónico es un extremo básico que no cambia con frecuencia y tiene uso frecuente, use una regla `mod_rewrite`.
-- AEM Si el área de nombres mnemónica (por ejemplo: `/aboutus`) debe reutilizarse para muchas marcas en la misma instancia de, utilice reglas de reescritura.
+- Si el área de nombres mnemónica (por ejemplo: `/aboutus`) debe reutilizarse para muchas marcas en la misma instancia de AEM, utilice reglas de reescritura.
 
 >[!NOTE]
 >
->AEM Si desea utilizar la función mnemónica y evitar el área de nombres, puede crear una convención de nombres. Utilizando direcciones URL mnemónicas anidadas como `/brand1/aboutus`, `brand2/aboutus`, `brand3/aboutus`.
+>Si desea utilizar la función mnemónica de AEM y evitar el área de nombres, puede crear una convención de nombres. Utilizando direcciones URL mnemónicas anidadas como `/brand1/aboutus`, `brand2/aboutus`, `brand3/aboutus`.
 
 [Siguiente -> Registro común](./common-logs.md)

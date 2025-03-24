@@ -1,7 +1,7 @@
 ---
-title: AEM Instalación del IDE de GraphiQL en 6.5
-description: AEM Obtenga información sobre cómo instalar y configurar el IDE de GraphiQL en 6.5
-version: 6.5
+title: Instalación del IDE de GraphiQL en AEM 6.5
+description: Obtenga información sobre cómo instalar y configurar el IDE de GraphiQL en AEM 6.5
+version: Experience Manager 6.5
 topic: Headless
 feature: GraphQL API
 role: Developer
@@ -10,16 +10,16 @@ jira: KT-11614
 thumbnail: KT-10253.jpeg
 exl-id: 04fcc24c-7433-4443-a109-f01840ef1a89
 duration: 41
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 14%
 
 ---
 
-# AEM Instalación del IDE de GraphiQL en 6.5
+# Instalación del IDE de GraphiQL en AEM 6.5
 
-AEM En la versión 6.5, la herramienta IDE de GraphiQL debe instalarse de forma manual.
+En AEM 6.5, la herramienta IDE de GraphiQL debe instalarse manualmente.
 
 1. Vaya a **[Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html)** > **AEM as a Cloud Service**.
 1. Busque &quot;GraphiQL&quot; (asegúrese de incluir **i** en **GraphiQL**).
@@ -27,9 +27,9 @@ AEM En la versión 6.5, la herramienta IDE de GraphiQL debe instalarse de forma 
 
    ![Descargar paquete de GraphiQL](assets/graphiql/software-distribution.png)
 
-   AEM El archivo zip es un paquete de que se puede instalar directamente.
+   El archivo zip es un paquete de AEM que se puede instalar directamente.
 
-1. AEM En el menú Inicio de la, vaya a **Herramientas** > **Implementación** > **Paquetes**.
+1. En el menú Inicio de AEM, vaya a **Herramientas** > **Implementación** > **Paquetes**.
 1. Haga clic en **Cargar paquete** y elija el paquete descargado en el paso anterior. Haga clic en **Instalar** para instalar el paquete.
 
    ![Instalar paquete de GraphiQL](assets/graphiql/install-graphiql-package.png)

@@ -1,8 +1,8 @@
 ---
-title: Prueba de un trabajador de Asset compute
-description: El proyecto de Asset compute define un patrón para crear y ejecutar fácilmente pruebas de los trabajadores de Asset compute.
+title: Prueba de un trabajador de Asset Compute
+description: El proyecto Asset Compute define un patrón para crear y ejecutar fácilmente pruebas de los trabajadores de Asset Compute.
 feature: Asset Compute Microservices
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: Tutorial
 jira: KT-6284
 thumbnail: KT-6284.jpg
@@ -11,22 +11,22 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: 04992caf-b715-4701-94a8-6257e9bd300c
 duration: 142
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '613'
 ht-degree: 0%
 
 ---
 
-# Prueba de un trabajador de Asset compute
+# Prueba de un trabajador de Asset Compute
 
-El proyecto de Asset compute define un patrón para crear y ejecutar fácilmente [pruebas de Assets computes](https://experienceleague.adobe.com/docs/asset-compute/using/extend/test-custom-application.html).
+El proyecto de Asset Compute define un patrón para crear y ejecutar fácilmente [pruebas de los trabajadores de Asset Compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/test-custom-application.html).
 
 ## Anatomía de una prueba de trabajo
 
-Las pruebas de los trabajadores de asset compute se dividen en grupos de pruebas y, dentro de cada grupo de pruebas, en uno o más casos de prueba que afirman una condición para probar.
+Las pruebas de los trabajadores de Asset Compute se dividen en grupos de pruebas y, dentro de cada grupo de pruebas, en uno o más casos de prueba que afirman una condición que se debe probar.
 
-La estructura de las pruebas en un proyecto de Asset compute es la siguiente:
+La estructura de las pruebas en un proyecto de Asset Compute es la siguiente:
 
 ```
 /actions/<worker-name>/index.js
@@ -78,7 +78,7 @@ Este caso de prueba afirma que la entrada parametrizada (`params.json`) para el 
    }
    ```
 
-   Son los mismos valores o claves pasados a la [definición del perfil de Asset compute de la herramienta de desarrollo](../develop/development-tool.md), menos la clave `worker`.
+   Son los mismos valores o claves pasados a la [definición de perfil de Asset Compute de la herramienta de desarrollo](../develop/development-tool.md), menos la clave `worker`.
 
 1. Agregue el [archivo de representación](./assets/test/success-parameterized/rendition.png) esperado a este caso de prueba y asígnele el nombre `rendition.png`. Este archivo representa la salida esperada del trabajador para la entrada dada `file.jpg`.
 1. Desde la línea de comandos, ejecute las pruebas en la raíz del proyecto ejecutando `aio app test`
@@ -118,7 +118,7 @@ Los casos de prueba finales están disponibles en Github en:
 
 + [aem-guides-wknd-asset-compute/test/asset-compute/worker](https://github.com/adobe/aem-guides-wknd-asset-compute/tree/master/test/asset-compute/worker)
 
-## Resolución de problemas
+## Solución de problemas
 
 + [No se ha generado ninguna representación durante la ejecución de la prueba](../troubleshooting.md#test-no-rendition-generated)
 + [La prueba genera una representación incorrecta](../troubleshooting.md#tests-generates-incorrect-rendition)

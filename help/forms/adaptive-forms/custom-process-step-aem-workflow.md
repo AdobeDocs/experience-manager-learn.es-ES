@@ -2,14 +2,14 @@
 title: Implementación de pasos de proceso personalizados
 description: Escribir archivos adjuntos de formularios adaptables en el sistema de archivos mediante un paso de proceso personalizado
 feature: Workflow
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 879518db-3f05-4447-86e8-5802537584e5
 last-substantial-update: 2021-06-09T00:00:00Z
 duration: 203
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '758'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Este tutorial está diseñado para los clientes de AEM Forms que necesitan implementar un paso de proceso personalizado. Un paso del proceso puede ejecutar un script ECMA o llamar al código Java™ personalizado para realizar operaciones. Este tutorial explicará los pasos necesarios para implementar WorkflowProcess que ejecuta el paso del proceso.
 
-AEM El motivo principal para implementar un paso de proceso personalizado es ampliar el flujo de trabajo de la. Por ejemplo, si utiliza componentes de AEM Forms en el modelo de flujo de trabajo, puede que desee realizar las siguientes operaciones
+El motivo principal para implementar un paso de proceso personalizado es ampliar el flujo de trabajo de AEM. Por ejemplo, si utiliza componentes de AEM Forms en el modelo de flujo de trabajo, puede que desee realizar las siguientes operaciones
 
 * Guardar los archivos adjuntos de los formularios adaptables en el sistema de archivos
 * Manipulación de los datos enviados
@@ -29,7 +29,7 @@ Para aplicar el caso de uso anterior, normalmente escribirá un servicio OSGi qu
 
 ## Crear proyecto de Maven
 
-El primer paso es crear un proyecto de Maven utilizando el Arquetipo de Maven de Adobe adecuado. Los pasos detallados se enumeran en este [artículo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Una vez que haya importado el proyecto Maven en Eclipse, estará listo para empezar a escribir el primer componente OSGi que se pueda utilizar en el paso del proceso.
+El primer paso es crear un proyecto de Maven utilizando el arquetipo de Maven de Adobe adecuado. Los pasos detallados se enumeran en este [artículo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Una vez que haya importado el proyecto Maven en Eclipse, estará listo para empezar a escribir el primer componente OSGi que se pueda utilizar en el paso del proceso.
 
 
 ### Crear clase que implemente WorkflowProcess
@@ -48,7 +48,7 @@ El método execute proporciona acceso a las siguientes 3 variables:
 
 **MetaDataMap**: todos los metadatos asociados con el flujo de trabajo. Todos los argumentos de proceso que se pasan al paso de proceso están disponibles mediante el objeto MetaDataMap.[Documentación de API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)
 
-AEM En este tutorial, vamos a escribir los archivos adjuntos agregados al formulario adaptable en el sistema de archivos como parte del flujo de trabajo de la.
+En este tutorial, vamos a escribir los archivos adjuntos agregados al formulario adaptable en el sistema de archivos como parte del flujo de trabajo de AEM.
 
 Para aplicar este caso de uso, se escribió la siguiente clase Java™
 
@@ -137,9 +137,9 @@ Línea 1: define las propiedades del componente. La propiedad `process.label` es
 
 Líneas 13-15: los argumentos de proceso pasados a este componente OSGi se dividen mediante el separador &quot;,&quot;. A continuación, los valores de attachmentPath y saveToLocation se extraen de la matriz de cadenas.
 
-* AEM attachmentPath: Es la misma ubicación que especificó en el formulario adaptable cuando configuró la acción de envío del formulario adaptable para invocar el flujo de trabajo de. AEM Este es un nombre de la carpeta en la que desea que se guarden los archivos adjuntos en relación con la carga útil del flujo de trabajo.
+* attachmentPath: Es la misma ubicación que especificó en el formulario adaptable cuando configuró la acción de envío del formulario adaptable para invocar el flujo de trabajo de AEM. Este es un nombre de la carpeta en la que desea que se guarden los archivos adjuntos en AEM en relación con la carga útil del flujo de trabajo.
 
-* AEM saveToLocation: es la ubicación en la que desea que se guarden los archivos adjuntos en el sistema de archivos del servidor de la.
+* saveToLocation: es la ubicación en la que desea guardar los archivos adjuntos en el sistema de archivos del servidor de AEM.
 
 Estos dos valores se pasan como argumentos de proceso como se muestra en la captura de pantalla siguiente.
 

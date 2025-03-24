@@ -1,7 +1,7 @@
 ---
 title: Búsqueda contextual
 description: Aprenda a utilizar la búsqueda contextual en AEM Assets para encontrar recursos de forma eficaz con consultas de lenguaje natural.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Content Management
 feature: Search
 role: User
@@ -11,7 +11,7 @@ duration: 120
 last-substantial-update: 2024-05-08T00:00:00Z
 jira: KT-15377
 exl-id: 34e9186b-890f-4ffe-b158-171c42c563c5
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '85'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Aprenda a utilizar la búsqueda contextual en Adobe Experience Manager Assets pa
 
 ## Alternar búsqueda contextual
 
-AEM Para habilitar o deshabilitar la búsqueda contextual para todos los usuarios, los administradores de la aplicación pueden hacerlo si navegan hasta __Configuración general__ y cambian el conmutador __Búsqueda contextual__ a la configuración deseada.
+Para habilitar o deshabilitar la búsqueda contextual para todos los usuarios, los administradores de AEM pueden hacerlo si navegan a __Configuración general__ y cambian el conmutador __Búsqueda contextual__ a la configuración deseada.
 
 De forma predeterminada, la búsqueda contextual está habilitada para todos los usuarios.
 

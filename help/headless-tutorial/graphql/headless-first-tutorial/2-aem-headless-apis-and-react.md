@@ -1,7 +1,7 @@
 ---
-title: 'AEM AEM API sin encabezado y React: primer tutorial sin encabezado'
-description: AEM Obtenga información sobre cómo cubrir la recuperación de datos de fragmentos de contenido desde las API de GraphQL de la y mostrarlos en la aplicación React.
-version: Cloud Service
+title: 'API de AEM sin encabezado y React: primer tutorial de AEM sin encabezado'
+description: Obtenga información sobre cómo recuperar datos de fragmentos de contenido de las API de GraphQL de AEM y mostrarlos en la aplicación React.
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Development
 role: Developer
@@ -12,24 +12,24 @@ jira: KT-13270
 thumbnail: KT-13270.jpeg
 exl-id: 2b726473-5a32-4046-bce8-6da3c57a1b60
 duration: 225
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '856'
 ht-degree: 0%
 
 ---
 
-# AEM API sin encabezado y React
+# API sin encabezado de AEM y React
 
-Le damos la bienvenida a este capítulo del tutorial, en el que exploraremos la configuración de una aplicación de React para conectarse con las API de Adobe Experience Manager AEM AEM () sin encabezado mediante el SDK sin encabezado de la aplicación de. AEM Cubriremos la recuperación de datos de fragmentos de contenido desde las API de GraphQL de la aplicación de y su visualización en la aplicación de React.
+Le damos la bienvenida a este capítulo del tutorial, en el que exploraremos la configuración de una aplicación de React para conectarla con las API de Adobe Experience Manager (AEM) sin encabezado mediante AEM sin encabezado SDK. Cubriremos la recuperación de datos de fragmentos de contenido de las API de GraphQL de AEM y su visualización en la aplicación React.
 
-AEM AEM Las API sin encabezado de permiten acceder a contenido de la desde cualquier aplicación de cliente. AEM AEM Le guiaremos a través de la configuración de su aplicación React para conectarse a las API de sin encabezado de la red mediante el SDK sin encabezado de la interfaz de usuario de. AEM Esta configuración establece un canal de comunicación reutilizable entre la aplicación React y el usuario de la aplicación de la aplicación de.
+Las API sin encabezado de AEM permiten acceder al contenido de AEM desde cualquier aplicación cliente. Le guiaremos a través de la configuración de su aplicación React para conectarse a las API de AEM sin encabezado mediante AEM Headless SDK. Esta configuración establece un canal de comunicación reutilizable entre su aplicación React y AEM.
 
-AEM AEM A continuación, utilizaremos el SDK sin encabezado de la para recuperar datos de fragmentos de contenido de las API de GraphQL de la. AEM Los fragmentos de contenido en los que se proporciona la administración de contenido estructurada de los. AEM Al utilizar el SDK sin encabezado de, puede consultar y recuperar fácilmente datos de fragmentos de contenido mediante GraphQL.
+A continuación, utilizaremos la SDK sin encabezado de AEM para recuperar datos de fragmentos de contenido de las API de GraphQL de AEM. Los fragmentos de contenido en AEM proporcionan una administración de contenido estructurada. Al utilizar AEM Headless SDK, puede consultar y recuperar fácilmente datos de fragmentos de contenido mediante GraphQL.
 
 Una vez que tengamos los datos del fragmento de contenido, los integraremos en su aplicación React. Aprenderá a dar formato y mostrar los datos de una manera atractiva. Cubriremos las prácticas recomendadas para administrar y procesar datos de fragmentos de contenido en los componentes de React, lo que garantiza una integración perfecta con la interfaz de usuario de la aplicación.
 
-A lo largo del tutorial, proporcionaremos explicaciones, ejemplos de código y sugerencias prácticas. AEM AEM Al final, podrá configurar la aplicación React para conectarse a las API de sin encabezado, recuperar datos de fragmentos de contenido mediante el SDK sin encabezado de la aplicación React y mostrarlos sin problemas en la aplicación React. ¡Vamos a empezar!
+A lo largo del tutorial, proporcionaremos explicaciones, ejemplos de código y sugerencias prácticas. Al final, podrá configurar la aplicación React para conectarse a las API de AEM sin encabezado, recuperar datos de fragmentos de contenido mediante AEM Headless SDK y mostrarlos sin problemas en la aplicación React. ¡Vamos a empezar!
 
 
 ## Clonar la aplicación React
@@ -60,7 +60,7 @@ A lo largo del tutorial, proporcionaremos explicaciones, ejemplos de código y s
 
 1. Puede recuperar un token de desarrollador en Cloud Manager. Inicie sesión en [Adobe Cloud Manager](https://experience.adobe.com/). Haga clic en __Experience Manager > Cloud Manager__. Elija el Programa adecuado y, a continuación, haga clic en los puntos suspensivos junto al Entorno.
 
-   AEM ![Developer Console](./assets/2/developer-console.png)
+   ![AEM Developer Console](./assets/2/developer-console.png)
 
    1. Haga clic en la ficha __Integraciones__
    1. Haga clic en la ficha __Token local y obtenga el token de desarrollo local__
@@ -80,7 +80,7 @@ A lo largo del tutorial, proporcionaremos explicaciones, ejemplos de código y s
 
    La aplicación React se iniciará y abrirá una ventana del explorador a `http://localhost:3000`. Los cambios en la aplicación React se volverán a cargar automáticamente en el navegador.
 
-## AEM Conexión a las API sin encabezado de
+## Conexión a las API de AEM sin encabezado
 
 1. Para conectar la aplicación React a AEM as a Cloud Service, vamos a agregar algunas cosas a `App.js`. En la importación `React`, agregue `useContext`.
 
@@ -138,7 +138,7 @@ A lo largo del tutorial, proporcionaremos explicaciones, ejemplos de código y s
    export default App;
    ```
 
-1. Importe el SDK `AEMHeadless`. AEM Este SDK es una biblioteca de ayuda que utiliza la aplicación para interactuar con las API sin encabezado de la interfaz de usuario de la aplicación para interactuar con la interfaz de usuario sin encabezado
+1. Importe el SDK `AEMHeadless`. Esta SDK es una biblioteca de ayuda que la aplicación utiliza para interactuar con las API sin encabezado de AEM.
 
    Agregar esta instrucción de importación a `home.js`.
 
@@ -167,7 +167,7 @@ A lo largo del tutorial, proporcionaremos explicaciones, ejemplos de código y s
    }
    ```
 
-1. AEM AEM Inicialice el SDK sin encabezado de la dentro de `useEffect()`, ya que el SDK sin encabezado de la aplicación debe cambiar cuando cambia la variable `context`.
+1. Inicialice el SDK sin encabezado de AEM dentro de `useEffect()`, ya que el SDK sin encabezado de AEM debe cambiar cuando cambie la variable `context`.
 
    ```javascript
    useEffect(() => {
@@ -184,7 +184,7 @@ A lo largo del tutorial, proporcionaremos explicaciones, ejemplos de código y s
    > Hay un archivo `context.js` en `/utils` que está leyendo elementos del archivo `.env`. Como referencia, `context.url` es la dirección URL del entorno de AEM as a Cloud Service. `context.endpoint` es la ruta de acceso completa al extremo creado en la lección anterior. Por último, `context.token` es el token de desarrollador.
 
 
-1. AEM Cree el estado React que expone el contenido proveniente del SDK sin encabezado de.
+1. Cree el estado React que expone el contenido proveniente de AEM Headless SDK.
 
    ```javascript
    const Home = () => {
@@ -193,7 +193,7 @@ A lo largo del tutorial, proporcionaremos explicaciones, ejemplos de código y s
    }
    ```
 
-1. AEM Conecte la aplicación a la red de. Utilice la consulta persistente creada en la lección anterior. AEM Vamos a agregar el código siguiente dentro de `useEffect` después de inicializar el SDK sin encabezado de la. Haga que `useEffect` dependa de la variable `context` tal como se ve a continuación.
+1. Conecte la aplicación a AEM. Utilice la consulta persistente creada en la lección anterior. Vamos a agregar el siguiente código dentro de `useEffect` después de inicializar AEM Headless SDK. Haga que `useEffect` dependa de la variable `context` tal como se ve a continuación.
 
 
    ```javascript
@@ -217,7 +217,7 @@ A lo largo del tutorial, proporcionaremos explicaciones, ejemplos de código y s
 
    ![Herramientas de desarrollo de Chrome](./assets/2/dev-tools.png)
 
-   AEM El SDK sin encabezado de la codifica la solicitud de GraphQL y agrega los parámetros proporcionados. Puede abrir la solicitud en el explorador.
+   AEM Headless SDK codifica la solicitud de GraphQL y agrega los parámetros proporcionados. Puede abrir la solicitud en el explorador.
 
    >[!NOTE]
    >
@@ -257,8 +257,8 @@ A lo largo del tutorial, proporcionaremos explicaciones, ejemplos de código y s
 
 ## Siguientes pasos
 
-Enhorabuena. AEM AEM ¡Ha actualizado correctamente la aplicación React para integrarla con las API de sin encabezado de mediante el SDK sin encabezado
+¡Enhorabuena! ¡Ha actualizado correctamente la aplicación React para integrarla con las API de AEM sin encabezado mediante el SDK sin encabezado de AEM!
 
-AEM A continuación, vamos a crear un componente de lista de imágenes más complejo que procese dinámicamente los fragmentos de contenido referenciados a partir de los fragmentos de contenido que se han.
+A continuación, vamos a crear un componente de lista de imágenes más complejo que procese dinámicamente los fragmentos de contenido referenciados de AEM.
 
 [Capítulo siguiente: Creación de un componente de lista de imágenes](./3-complex-components.md)

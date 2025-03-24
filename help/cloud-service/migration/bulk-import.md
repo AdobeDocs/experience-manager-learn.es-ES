@@ -1,7 +1,7 @@
 ---
 title: Uso de la importación masiva con AEM Assets
 description: La herramienta Importación masiva de AEM as a Cloud Service permite a los administradores importar recursos de forma masiva desde el almacenamiento en la nube (Azure Blob Storage o Amazon S3) de forma segura y eficaz.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: technical-video
 feature: Migration
 jira: KT-6729, KT-14796
@@ -12,10 +12,10 @@ level: Beginner
 last-substantial-update: 2024-01-16T00:00:00Z
 exl-id: 28644af8-babc-467d-afdb-8538728dc176
 duration: 712
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '175'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -25,13 +25,13 @@ La herramienta Importación masiva de AEM as a Cloud Service permite a los admin
 
 >[!BEGINTABS]
 
->[!TAB Vista de Assets]
+>[!TAB Vista Recursos]
 
-Aprenda a importar numerosos archivos en AEM Assets mediante la [Vista de recursos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/assets-view-introduction.html) [Importación masiva](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view.html), con Dropbox como el proveedor de almacenamiento en la nube de ejemplo para un proceso de integración claro y fácil de seguir.
+Aprenda a importar numerosos archivos en los AEM Assets mediante [Asset view](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/assets-view-introduction.html) [Importación masiva](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view.html), con Dropbox como el proveedor de almacenamiento en la nube de ejemplo para un proceso de integración claro y fácil de seguir.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3426857/?learn=on)
 
->[!TAB Vista de administrador]
+>[!TAB Vista Administrador]
 
 >[!VIDEO](https://video.tv.adobe.com/v/329680?quality=12&learn=on)
 

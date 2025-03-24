@@ -1,7 +1,7 @@
 ---
-title: AEM Uso del SDK sin encabezado de la
-description: Obtenga información sobre cómo realizar consultas de GraphQL AEM mediante el SDK sin encabezado de.
-version: Cloud Service
+title: Uso de AEM Headless SDK
+description: Aprenda a hacer consultas de GraphQL con AEM sin encabezado SDK.
+version: Experience Manager as a Cloud Service
 topic: Headless
 feature: GraphQL API
 role: Developer
@@ -10,18 +10,18 @@ jira: KT-10269
 thumbnail: KT-10269.jpeg
 exl-id: 922a464a-2286-4132-9af8-f5a1fb5ce268
 duration: 200
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 6%
 
 ---
 
-# AEM SDK sin encabezado de
+# AEM Headless SDK
 
-AEM AEM El SDK sin encabezado de la aplicación es un conjunto de bibliotecas que los clientes pueden utilizar para interactuar rápida y fácilmente con las API sin encabezado de la aplicación a través de HTTP.
+AEM Headless SDK es un conjunto de bibliotecas que los clientes pueden utilizar para interactuar rápida y fácilmente con las API de AEM Headless a través de HTTP.
 
-AEM El SDK sin encabezado de la está disponible para varias plataformas:
+AEM Headless SDK está disponible para varias plataformas:
 
 + [SDK de AEM sin encabezado para exploradores del lado del cliente (JavaScript)](https://github.com/adobe/aem-headless-client-js)
 + [SDK de AEM sin encabezado del lado del servidor/Nodo.js (JavaScript)](https://github.com/adobe/aem-headless-client-nodejs)
@@ -29,13 +29,13 @@ AEM El SDK sin encabezado de la está disponible para varias plataformas:
 
 ## Consultas persistentes de GraphQL
 
-AEM Consultar el uso de GraphQL mediante consultas persistentes (a diferencia de las [consultas de GraphQL AEM definidas por el cliente](#graphl-queries)) permite a los desarrolladores mantener una consulta (pero no sus resultados) en el formato de consultas persistentes y, a continuación, solicitar que se ejecute la consulta por su nombre. Las consultas persistentes son similares al concepto de procedimientos almacenados en bases de datos SQL.
+Consultar AEM con GraphQL mediante consultas persistentes (a diferencia de [consultas de GraphQL definidas por el cliente](#graphl-queries)) permite a los desarrolladores mantener una consulta (pero no sus resultados) en AEM y, a continuación, solicitar que la consulta se ejecute por nombre. Las consultas persistentes son similares al concepto de procedimientos almacenados en bases de datos SQL.
 
-Las consultas persistentes tienen un mayor rendimiento que las consultas GraphQL definidas por el cliente, ya que las consultas persistentes se ejecutan mediante la GET AEM HTTP, que se puede almacenar en caché en los niveles CDN y Dispatcher de la. Las consultas persistentes también están en vigor, definen una API y desvinculan la necesidad de que el desarrollador comprenda los detalles de cada modelo de fragmento de contenido.
+Las consultas persistentes tienen un mayor rendimiento que las consultas GraphQL definidas por el cliente, ya que las consultas persistentes se ejecutan mediante HTTP GET, que puede almacenarse en caché en los niveles CDN y AEM Dispatcher. Las consultas persistentes también están en vigor, definen una API y desvinculan la necesidad de que el desarrollador comprenda los detalles de cada modelo de fragmento de contenido.
 
 ### Ejemplos de código{#persisted-graphql-queries-code-examples}
 
-A continuación se muestran ejemplos de código de cómo ejecutar una consulta persistente de GraphQL AEM contra los usuarios de la base de datos de.
+A continuación se muestran ejemplos de código de cómo ejecutar una consulta persistente de GraphQL contra AEM.
 
 +++ Ejemplo de JavaScript
 
@@ -45,9 +45,9 @@ Instale [@adobe/aem-headless-client-js](https://github.com/adobe/aem-headless-cl
 $ npm i @adobe/aem-headless-client-js
 ```
 
-AEM En este ejemplo de código se muestra cómo realizar consultas en el módulo [@adobe/aem-headless-client-js](https://github.com/adobe/aem-headless-client-js) npm utilizando la sintaxis `async/await`, con el fin de realizar consultas en el módulo . AEM El SDK sin encabezado de la para JavaScript también admite [sintaxis Promise](https://github.com/adobe/aem-headless-client-js#use-aemheadless-client).
+Este ejemplo de código muestra cómo consultar AEM usando el módulo [@adobe/aem-headless-client-js](https://github.com/adobe/aem-headless-client-js) npm con sintaxis `async/await`. AEM Headless SDK for JavaScript también admite [Sintaxis de promesas](https://github.com/adobe/aem-headless-client-js#use-aemheadless-client).
 
-AEM AEM Este código supone que se ha creado una consulta persistente con el nombre `wknd/adventureNames` en el autor de la y que se ha publicado en el Publish de la.
+Este código supone que se ha creado una consulta persistente con el nombre `wknd/adventureNames` en AEM Author y que se ha publicado en AEM Publish.
 
 ```javascript
 import AEMHeadless from '@adobe/aem-headless-client-js';
@@ -88,7 +88,7 @@ let { data, errors } = executePersistedQuery('wknd-shared/adventures-by-slug', {
 
 +++
 
-+++ React useEffect(..) ejemplo
++++ Ejemplo de React useEffect(..)
 
 Instale [@adobe/aem-headless-client-js](https://github.com/adobe/aem-headless-client-js) ejecutando el comando `npm install` desde la raíz del proyecto React.
 
@@ -96,14 +96,14 @@ Instale [@adobe/aem-headless-client-js](https://github.com/adobe/aem-headless-cl
 $ npm i @adobe/aem-headless-client-js
 ```
 
-En este ejemplo de código se muestra cómo utilizar [React useEffect(..) AEM hook](https://reactjs.org/docs/hooks-effect.html) para ejecutar una llamada asincrónica a GraphQL de la.
+En este ejemplo de código se muestra cómo utilizar el enlace [React useEffect(..)](https://reactjs.org/docs/hooks-effect.html) para ejecutar una llamada asincrónica a AEM GraphQL.
 
 El uso de `useEffect` para realizar la llamada asincrónica de GraphQL en React resulta útil porque:
 
-1. AEM Proporciona un envoltorio sincrónico para la llamada asincrónica a la red de servicios de soporte de datos de.
-1. AEM Reduce los problemas de acceso a la innecesariamente.
+1. Proporciona un contenedor sincrónico para la llamada asincrónica a AEM.
+1. Reduce la necesidad de volver a consultar AEM.
 
-AEM AEM Este código supone que se ha creado en el Autor una consulta persistente con el nombre `wknd-shared/adventure-by-slug` y que se ha publicado en el de Publish mediante GraphiQL.
+Este código supone que se ha creado una consulta persistente con el nombre `wknd-shared/adventure-by-slug` en AEM Author y que se ha publicado en AEM Publish mediante GraphiQL.
 
 ```javascript
 import AEMHeadless from '@adobe/aem-headless-client-js';
@@ -202,11 +202,11 @@ Se pueden crear nuevos vínculos `useEffect` para cada consulta persistente que 
 
 ## Consultas de GraphQL
 
-AEM admite consultas de GraphQL AEM definidas por el cliente, aunque es recomendable usar [consultas de GraphQL persistentes](#persisted-graphql-queries), aunque es recomendable usar este tipo de consultas de forma predeterminada.
+AEM admite consultas GraphQL AEM definidas por el cliente, pero es recomendable que use [consultas GraphQL persistentes](#persisted-graphql-queries).
 
 ## Webpack 5+
 
-AEM El SDK de JS sin encabezado de la tiene dependencias en `util` que no se incluye en Webpack 5+ de forma predeterminada. Si utiliza Webpack 5+ y recibe el siguiente error:
+El SDK de JS sin encabezado de AEM tiene dependencias en `util` que no se incluye en Webpack 5+ de forma predeterminada. Si utiliza Webpack 5+ y recibe el siguiente error:
 
 ```
 Compiled with problems:

@@ -1,7 +1,7 @@
 ---
 title: Cómo deshabilitar el almacenamiento en caché de CDN
 description: Obtenga información sobre cómo deshabilitar el almacenamiento en caché de respuestas HTTP en la CDN de AEM as a Cloud Service.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Operations, CDN Cache
 topic: Administration, Performance
 role: Admin, Architect, Developer
@@ -12,7 +12,7 @@ jira: KT-14224
 thumbnail: KT-14224.jpeg
 exl-id: 22b1869e-5bb5-437d-9cb5-2d27f704c052
 duration: 100
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 0%
@@ -23,11 +23,11 @@ ht-degree: 0%
 
 Obtenga información sobre cómo deshabilitar el almacenamiento en caché de respuestas HTTP en la CDN de AEM as a Cloud Service. El almacenamiento en caché de las respuestas está controlado por `Cache-Control`, `Surrogate-Control` o `Expires` encabezados de caché de respuestas HTTP.
 
-AEM Estos encabezados de caché generalmente se establecen en configuraciones de host de Dispatcher AEM usando `mod_headers`, pero también se pueden establecer en el código Java™ personalizado que se ejecuta en el propio Publish.
+Estos encabezados de caché generalmente se establecen en configuraciones vhost de AEM Dispatcher mediante `mod_headers`, pero también se pueden establecer en código Java™ personalizado que se ejecuta en AEM Publish.
 
 ## Comportamiento de almacenamiento en caché predeterminado
 
-AEM Revise el comportamiento de almacenamiento en caché predeterminado para el autor y el Publish AEM AEM de la de datos cuando se implemente un proyecto basado en [Arquetipo de proyecto de](./enable-caching.md#default-caching-behavior).
+Revise el comportamiento de almacenamiento en caché predeterminado para AEM Publish y Author cuando se implemente un proyecto de AEM basado en [AEM Project Archetype](./enable-caching.md#default-caching-behavior).
 
 ## Deshabilitar almacenamiento en caché
 
@@ -40,14 +40,14 @@ Sin embargo, hay algunos escenarios en los que puede que desee deshabilitar el a
 
 Para deshabilitar el almacenamiento en caché, puede actualizar los encabezados de caché de dos formas.
 
-1. **Configuración de vhost de Dispatcher AEM Publish:** Solo disponible para la configuración de vhost de.
-1. AEM **Código Java™ personalizado:** Disponible tanto para Publish como para Autor de la aplicación de la aplicación de manera personalizada.
+1. **Configuración de vhost de Dispatcher:** Solo disponible para publicación en AEM.
+1. **Código Java™ personalizado:** disponible tanto para publicación como para autor en AEM.
 
 Revisemos cada una de estas opciones.
 
 ### Configuración de vhost de Dispatcher
 
-AEM Esta opción es el método recomendado para deshabilitar el almacenamiento en caché; sin embargo, solo está disponible para el Publish de la. Para actualizar los encabezados de caché, utilice el módulo `mod_headers` y la directiva `<LocationMatch>` en el archivo vhost del servidor HTTP de Apache. La sintaxis general es la siguiente:
+Esta opción es el método recomendado para deshabilitar el almacenamiento en caché, pero solo está disponible para AEM Publish. Para actualizar los encabezados de caché, utilice el módulo `mod_headers` y la directiva `<LocationMatch>` en el archivo vhost del servidor HTTP de Apache. La sintaxis general es la siguiente:
 
 ```
 <LocationMatch "$URL$ || $URL_REGEX$">
@@ -66,7 +66,7 @@ Para deshabilitar el almacenamiento en caché de CDN de los **tipos de contenido
 
 Tenga en cuenta que, para omitir la caché CSS existente, se requiere un cambio en el archivo CSS para generar una nueva clave de caché para el archivo CSS.
 
-1. AEM En el proyecto de la, busque el archivo vhsot deseado en el directorio `dispatcher/src/conf.d/available_vhosts`.
+1. En su proyecto de AEM, busque el archivo vhost deseado en el directorio `dispatcher/src/conf.d/available_vhosts`.
 1. Actualice el archivo vhost (p. ej. `wknd.vhost`) de la siguiente manera:
 
    ```
@@ -85,7 +85,7 @@ Tenga en cuenta que, para omitir la caché CSS existente, se requiere un cambio 
 
 ### Código Java™ personalizado
 
-AEM Esta opción está disponible tanto para Publish como para Autor de la. Para actualizar los encabezados de caché, utilice el objeto `SlingHttpServletResponse` en el código Java™ personalizado (servlet Sling, filtro servlet Sling). La sintaxis general es la siguiente:
+Esta opción está disponible tanto para Publicación en AEM como para Autor. Para actualizar los encabezados de caché, utilice el objeto `SlingHttpServletResponse` en el código Java™ personalizado (servlet Sling, filtro servlet Sling). La sintaxis general es la siguiente:
 
 ```java
 response.setHeader("Cache-Control", "private");

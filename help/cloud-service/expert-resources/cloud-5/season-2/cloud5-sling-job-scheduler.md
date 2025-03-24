@@ -1,7 +1,7 @@
 ---
 title: 'Cloud 5: Planificador de trabajos de Sling'
-description: AEM Programación de trabajos en la nube de
-version: Cloud Service
+description: AEM Job Scheduling en la nube
+version: Experience Manager as a Cloud Service
 role: Admin, Developer
 level: Intermediate
 thumbnail: 343473.jpeg
@@ -9,7 +9,7 @@ hidefromtoc: true
 recommendations: noDisplay, noCatalog
 exl-id: 8784d77f-1c70-4694-bd08-79b71adbda48
 duration: 309
-source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '71'
 ht-degree: 2%
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 # Cloud 5: Planificador de trabajos de Sling
 
-AEM La programación y el consumo de trabajos son diferentes de una implementación de grupos de trabajo no agrupados en la. Este vídeo muestra algunos problemas y aspectos que hay que tener en cuenta al ejecutar estas tareas.
+La programación y el consumo de trabajos son diferentes de una implementación de AEM no agrupada. Este vídeo muestra algunos problemas y aspectos que hay que tener en cuenta al ejecutar estas tareas.
 
 >[!VIDEO](https://video.tv.adobe.com/v/343473?quality=12&learn=on)
 

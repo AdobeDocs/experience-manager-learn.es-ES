@@ -5,12 +5,13 @@ solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Adaptive Forms
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16517
-source-git-commit: f9a1fb40aabb6fdc1157e1f2576f9c0d9cf1b099
+exl-id: ab9bd406-e25e-4e3c-9f67-ad440a8db57e
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 0%
@@ -19,7 +20,7 @@ ht-degree: 0%
 
 # Creación, implementación y prueba del componente de países
 
-AEM Para generar todos los módulos e implementar el paquete `all` en una instancia local de, ejecute en el directorio raíz del proyecto el siguiente comando:
+Para generar todos los módulos e implementar el paquete `all` en una instancia local de AEM, ejecute el siguiente comando en el directorio raíz del proyecto:
 
 ```mvn clean install -PautoInstallSinglePackage```
 
@@ -39,4 +40,3 @@ String jsonPath = "/content/dam/mydata/" + getContinent() + ".json"; // Update p
 * Configure el componente Países mediante el editor de diálogos y establezca las distintas propiedades, incluido el continente
   ![contenido](assets/select-continent.png)
 * Previsualice el formulario y asegúrese de que la lista desplegable de países funciona según lo esperado
-

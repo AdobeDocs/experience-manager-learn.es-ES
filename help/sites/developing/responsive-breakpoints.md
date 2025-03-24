@@ -1,7 +1,7 @@
 ---
 title: Puntos de interrupción interactivos
-description: AEM Aprenda a configurar nuevos puntos de interrupción adaptables para el editor de páginas adaptable de la interfaz de usuario de.
-version: Cloud Service
+description: Aprenda a configurar nuevos puntos de interrupción adaptables para el editor de páginas adaptable de AEM.
+version: Experience Manager as a Cloud Service
 feature: Page Editor
 topic: Mobile, Development
 role: Developer
@@ -12,7 +12,7 @@ jira: KT-11664
 thumbnail: kt-11664.jpeg
 exl-id: 8b48c28f-ba7f-4255-be96-a7ce18ca208b
 duration: 52
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
@@ -21,13 +21,13 @@ ht-degree: 0%
 
 # Puntos de interrupción interactivos
 
-AEM Aprenda a configurar nuevos puntos de interrupción adaptables para el editor de páginas adaptable de la interfaz de usuario de.
+Aprenda a configurar nuevos puntos de interrupción adaptables para el editor de páginas adaptable de AEM.
 
 ## Crear puntos de interrupción CSS
 
-AEM AEM En primer lugar, cree puntos de interrupción de medios en el CSS de cuadrícula adaptable a la que se adhiere el sitio de la cuadrícula adaptable
+En primer lugar, cree puntos de interrupción de medios en la cuadrícula adaptable CSS de AEM a la que se adhiere el sitio de AEM adaptable.
 
-En el archivo `/ui.apps/src/main/content/jcr_root/apps/[app name]/clientlibs/clientlib-grid/less/grid.less`, cree los puntos de interrupción para usarlos junto con el emulador móvil. AEM Tome nota de `max-width` para cada punto de interrupción, ya que asigna los puntos de interrupción CSS a los puntos de interrupción adaptables del Editor de páginas.
+En el archivo `/ui.apps/src/main/content/jcr_root/apps/[app name]/clientlibs/clientlib-grid/less/grid.less`, cree los puntos de interrupción para usarlos junto con el emulador móvil. Tome nota de `max-width` para cada punto de interrupción, ya que asigna los puntos de interrupción CSS a los puntos de interrupción del editor de páginas adaptable de AEM.
 
 ![Crear nuevos puntos de interrupción adaptables](./assets/responsive-breakpoints/create-new-breakpoints.jpg)
 
@@ -39,17 +39,17 @@ Abra el archivo `ui.content/src/main/content/jcr_root/conf/<app name>/settings/w
 
 ## Creación de emuladores
 
-AEM Se deben definir emuladores de página que permitan a los autores seleccionar la vista adaptable para editarla en el Editor de páginas.
+Se deben definir emuladores de AEM que permitan a los autores seleccionar la vista adaptable para editarla en el Editor de páginas.
 
 Crear nodos de emuladores en `/ui.apps/src/main/content/jcr_root/apps/<app name>/emulators`
 
-Por ejemplo, `/ui.apps/src/main/content/jcr_root/apps/wknd-examples/emulators/phone-landscape`. Copie un nodo de emulador de referencia de `/libs/wcm/mobile/components/emulators` en el CRXDE Lite a y actualice la copia para acelerar la definición del nodo.
+Por ejemplo, `/ui.apps/src/main/content/jcr_root/apps/wknd-examples/emulators/phone-landscape`. Copie un nodo de emulador de referencia de `/libs/wcm/mobile/components/emulators` en CRXDE Lite y actualice la copia para acelerar la definición del nodo.
 
 ![Crear nuevos emuladores](./assets/responsive-breakpoints/create-new-emulators.jpg)
 
 ## Crear grupo de dispositivos
 
-AEM Agrupe los emuladores para [ponerlos a disposición en el Editor de páginas de la página de la página de la página de la página de](#update-the-templates-device-group).
+Agrupe los emuladores para [ponerlos a disposición en el editor de páginas de AEM](#update-the-templates-device-group).
 
 Crear la estructura de nodos `/apps/settings/mobile/groups/<name of device group>` en `/ui.apps/src/main/content/jcr_root`.
 

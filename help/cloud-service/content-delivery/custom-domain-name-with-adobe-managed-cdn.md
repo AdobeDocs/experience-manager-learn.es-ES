@@ -1,7 +1,7 @@
 ---
 title: Nombre de dominio personalizado con CDN administrada por Adobe
 description: Obtenga información sobre cómo implementar un nombre de dominio personalizado en el sitio web de AEM as a Cloud Service que utiliza una CDN administrada por Adobe.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Cloud Manager, Operations
 topic: Administration, Architecture
 role: Admin, Architect, Developer
@@ -12,7 +12,7 @@ last-substantial-update: 2024-08-12T00:00:00Z
 jira: KT-15121
 thumbnail: KT-15121.jpeg
 exl-id: 8936c3ae-2daf-4d0f-b260-28376ae28087
-source-git-commit: f92e66d6edc929bff1e8cae6adb7f408352aeb77
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '726'
 ht-degree: 1%
@@ -21,9 +21,9 @@ ht-degree: 1%
 
 # Nombre de dominio personalizado con CDN de Adobe
 
-Obtenga información sobre cómo implementar un nombre de dominio personalizado para un sitio web de AEM as a Cloud Service que utilice la red de distribución de contenido de Adobe (CDN).
+Obtenga información sobre cómo implementar un nombre de dominio personalizado para un sitio web de AEM as a Cloud Service que utilice la red de distribución de contenido (CDN) de Adobe.
 
-AEM En este tutorial, la marca del sitio de muestra [WKND](https://github.com/adobe/aem-guides-wknd) se ha mejorado al agregar un nombre de dominio personalizado `wknd.enablementadobe.com` al que se puede dirigir mediante HTTPS con Seguridad de la capa de transporte (TLS).
+En este tutorial, la marca del sitio de muestra [AEM WKND](https://github.com/adobe/aem-guides-wknd) se ha mejorado al agregar un nombre de dominio personalizado `wknd.enablementadobe.com` al que se puede dirigir mediante HTTPS con Seguridad de la capa de transporte (TLS).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427903?quality=12&learn=on)
 
@@ -39,8 +39,8 @@ Los pasos de alto nivel son los siguientes:
 - Acceso a servicios de terceros:
    - Autoridad de certificación (CA): para solicitar el certificado firmado para el dominio del sitio, como [DigitCert](https://www.digicert.com/)
    - Servicio de alojamiento del Sistema de nombres de dominio (DNS): para agregar registros DNS para su dominio personalizado, como Azure DNS o AWS Route 53.
-- Acceso a [Cloud Manager de Adobe](https://my.cloudmanager.adobe.com/) como **Propietario del negocio** o rol de **Administrador de implementación**.
-- AEM El sitio de muestra [WKND](https://github.com/adobe/aem-guides-wknd) se ha implementado en el entorno de AEM as a Cloud Service del tipo [programa de producción](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs).
+- Acceso a [Adobe Cloud Manager](https://my.cloudmanager.adobe.com/) como **Propietario del negocio** o rol de **Administrador de implementación**.
+- El sitio de muestra [AEM WKND](https://github.com/adobe/aem-guides-wknd) se ha implementado en el entorno AEM as a Cloud Service de tipo [programa de producción](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs).
 
 Si no tiene acceso a servicios de terceros, _colabore con su equipo de seguridad o de alojamiento para completar los pasos_.
 
@@ -92,7 +92,7 @@ Para agregar el certificado SSL en Cloud Manager, siga la documentación de [agr
 Para verificar el nombre de dominio, siga estos pasos:
 
 - Agregue un nombre de dominio en Cloud Manager siguiendo la [documentación para agregar un nombre de dominio personalizado](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name).
-- AEM Agregue un registro [TXT](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-text-record) específico de la en su servicio de hospedaje DNS.
+- Agregue un [registro TXT](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-text-record) específico de AEM a su servicio de alojamiento DNS.
 - Compruebe los pasos anteriores consultando los servidores DNS mediante el comando `dig`.
 
 ```bash

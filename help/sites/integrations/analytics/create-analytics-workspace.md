@@ -1,7 +1,7 @@
 ---
 title: Analizar datos con Analysis Workspace
 description: Obtenga información sobre cómo asignar datos capturados desde un sitio de Adobe Experience Manager a métricas y dimensiones en grupos de informes de Adobe Analytics. Obtenga información sobre cómo crear un tablero de informes detallado con la función Analysis Workspace de Adobe Analytics.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Integrations
 feature: Adobe Client Data Layer
 role: User
@@ -13,7 +13,7 @@ exl-id: b5722fe2-93bf-4b25-8e08-4cb8206771cb
 badgeIntegration: label="Integración" type="positive"
 last-substantial-update: 2022-06-15T00:00:00Z
 duration: 443
-source-git-commit: 606607b85fae012e76d57b0b35820247a6862e32
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '2072'
 ht-degree: 0%
@@ -55,13 +55,13 @@ Este tutorial es una continuación del componente [Seguimiento en el que se hizo
 
 * Una **propiedad de etiquetas** con la [extensión de Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html) habilitada
 * **Adobe Analytics**: ID del grupo de informes de prueba/desarrollo y servidor de seguimiento. Consulte la siguiente documentación para [crear un grupo de informes](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html).
-* Extensión de explorador [Experience Platform AEM Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) configurada con una propiedad de etiqueta cargada en el sitio [WKND Site](https://wknd.site/us/es.html) o un sitio de con la capa de datos de Adobe habilitada.
+* Extensión de explorador [Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) configurada con una propiedad de etiqueta cargada en el [sitio WKND](https://wknd.site/us/es.html) o un sitio AEM con la capa de datos de Adobe habilitada.
 
 ## Variables de conversión (eVars) y eventos de éxito (Event)
 
-La variable de conversión de Custom Insight (o eVar) se coloca en el código de Adobe de las páginas web seleccionadas del sitio. Su principal función es segmentar las métricas de éxito de conversión en los informes de marketing personalizados. Un eVar puede basarse en visitas y funcionar de manera similar a las cookies. Los valores pasados a las variables de eVar siguen al usuario durante un período predeterminado.
+La variable de conversión de Custom Insight (o eVar) se coloca en el código de Adobe en las páginas web seleccionadas del sitio. Su principal función es segmentar las métricas de éxito de conversión en los informes de marketing personalizados. Una eVar puede basarse en visitas y funciona de manera similar a las cookies. Los valores pasados a las variables de eVar siguen al usuario durante un período predeterminado.
 
-Cuando un eVar está establecido en el valor de un visitante, Adobe recuerda automáticamente ese valor hasta que caduque. Cualquier evento de éxito que encuentre un visitante mientras el valor de eVar está activo se cuenta hacia el valor de eVar.
+Cuando una eVar está establecida en el valor de un visitante, Adobe recuerda automáticamente ese valor hasta que caduque. Cualquier evento de éxito que encuentre un visitante mientras el valor de eVar está activo se cuenta hacia el valor de eVar.
 
 El mejor uso de las eVars es para medir causa y efecto, como:
 
@@ -122,7 +122,7 @@ A continuación, cree un [proyecto](https://experienceleague.adobe.com/docs/anal
 
    ![Workspace](assets/create-analytics-workspace/create-workspace.png)
 
-1. Elija el inicio de un **proyecto en blanco** o seleccione una de las plantillas generadas previamente, ya sea por Adobe o por plantillas personalizadas creadas por su organización. Hay varias plantillas disponibles, según el análisis o el caso de uso que tenga en mente. [Más información](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) acerca de las diferentes opciones de plantilla disponibles.
+1. Elija el inicio de un **proyecto en blanco** o seleccione una de las plantillas generadas previamente, ya sea proporcionadas por Adobe o creadas por su organización. Hay varias plantillas disponibles, según el análisis o el caso de uso que tenga en mente. [Más información](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) acerca de las diferentes opciones de plantilla disponibles.
 
    En el proyecto de Workspace, se accede a paneles, tablas, visualizaciones y componentes desde el carril izquierdo. Constituyen los componentes básicos del proyecto.
 
@@ -155,18 +155,18 @@ A continuación, genere una tabla para crear una representación visual de cómo
 1. Vamos a desglosar la página por tipo de plantilla. Seleccione la métrica de plantilla de página de los componentes y arrastre y suelte la métrica de plantilla de página en la dimensión Nombre de página. Ahora puede ver el nombre de página desglosado por su tipo de plantilla.
 
    * **Antes de**
-     ![eVar 5](assets/create-analytics-workspace/evar5.png)
+     ![eVar5](assets/create-analytics-workspace/evar5.png)
 
    * **Después**
-     ![Métricas de eVar 5](assets/create-analytics-workspace/evar5-metrics.png)
+     ![Métricas de eVar5](assets/create-analytics-workspace/evar5-metrics.png)
 
-1. Para comprender cómo interactúan los usuarios con los botones de CTA cuando están en las páginas del sitio WKND, se necesita un desglose adicional añadiendo la métrica ID de botón (eVar 8).
+1. Para comprender cómo interactúan los usuarios con los botones de CTA cuando están en las páginas del sitio WKND, se necesita un desglose adicional añadiendo la métrica ID del botón (eVar8).
 
-   ![eVar 8](assets/create-analytics-workspace/evar8.png)
+   ![eVar8](assets/create-analytics-workspace/evar8.png)
 
 1. A continuación, puede ver una representación visual del sitio WKND desglosada por su plantilla de página y desglosada aún más por la interacción del usuario con los botones de clic en acción del sitio WKND (CTA).
 
-   ![eVar 8](assets/create-analytics-workspace/evar8-metric.png)
+   ![eVar8](assets/create-analytics-workspace/evar8-metric.png)
 
 1. Puede reemplazar el valor del ID del botón con un nombre más descriptivo mediante las clasificaciones de Adobe Analytics. Puede leer más sobre cómo crear una clasificación para una métrica específica [aquí](https://experienceleague.adobe.com/docs/analytics/components/classifications/c-classifications.html). En este caso, tenemos una configuración de métrica de clasificación `Button Section (Button ID)` para `eVar8` que asigna el identificador de botón a un nombre descriptivo.
 
@@ -176,7 +176,7 @@ A continuación, genere una tabla para crear una representación visual de cómo
 
 ### Clasificaciones de conversión
 
-La clasificación de Analytics es una forma de categorizar los datos de variables de Analytics para luego mostrarlos de diferentes maneras cuando se generan los informes. Para mejorar la forma en que se muestra el ID de botón en el informe de Workspace de Analytics, vamos a crear una variable de clasificación para el ID de botón (eVar 8). Al clasificar, se establece una relación entre la variable y los metadatos relacionados con ella.
+La clasificación de Analytics es una forma de categorizar los datos de variables de Analytics para luego mostrarlos de diferentes maneras cuando se generan los informes. Para mejorar cómo se muestra el ID de botón en el informe de Workspace de Analytics, vamos a crear una variable de clasificación para el ID de botón (eVar8). Al clasificar, se establece una relación entre la variable y los metadatos relacionados con ella.
 
 A continuación, vamos a crear una variable Clasificación para Analytics.
 
@@ -185,7 +185,7 @@ A continuación, vamos a crear una variable Clasificación para Analytics.
 
    ![Clasificación de conversión](assets/create-analytics-workspace/conversion-classification.png)
 
-1. En la lista desplegable **Seleccionar tipo de clasificación**, seleccione la variable (ID de eVar 8 botones) para agregar una clasificación.
+1. En la lista desplegable **Seleccionar tipo de clasificación**, seleccione la variable (ID de botón de eVar8) para agregar una clasificación.
 1. Haga clic en la flecha situada justo al lado de la variable Clasificación que aparece en la sección Clasificaciones para agregar una nueva Clasificación.
 
    ![Tipo de clasificación de conversión](assets/create-analytics-workspace/select-classification-variable.png)
@@ -198,13 +198,13 @@ A continuación, vamos a crear una variable Clasificación para Analytics.
 
 ### Importador de clasificaciones
 
-Utilice el importador para cargar clasificaciones en Adobe Analytics. También puede exportar los datos para actualizarlos antes de importarlos. Los datos que se importan con la herramienta correspondiente deben tener un formato específico. Adobe permite descargar una plantilla de datos con todos los detalles de encabezado correctos en un archivo de datos delimitado por tabuladores. Puede agregar los nuevos datos a esta plantilla y, a continuación, importar el archivo de datos en el explorador a través del FTP.
+Utilice el importador para cargar clasificaciones en Adobe Analytics. También puede exportar los datos para actualizarlos antes de importarlos. Los datos que se importan con la herramienta correspondiente deben tener un formato específico. Adobe permite descargar una plantilla de datos con todos los detalles de encabezado adecuados en un archivo de datos delimitado por tabuladores. Puede agregar los nuevos datos a esta plantilla y, a continuación, importar el archivo de datos en el explorador a través del FTP.
 
 #### Plantilla de clasificación
 
 Antes de importar clasificaciones en informes de marketing, puede descargar una plantilla que le ayudará a crear un archivo de datos de clasificaciones. El archivo de datos utiliza las clasificaciones deseadas como encabezados de columna y, a continuación, organiza el conjunto de datos de informes con los encabezados de clasificación adecuados.
 
-A continuación, descarguemos la plantilla de clasificación para la variable de ID de botón (eVar 8)
+A continuación, descarguemos la plantilla de clasificación para la variable de ID de botón (eVar8)
 
 1. Vaya a **Administración** > **Importador de clasificaciones**
 1. Vamos a descargar una plantilla de clasificación para la variable de conversión desde la ficha **Descargar plantilla**.
@@ -217,15 +217,15 @@ A continuación, descarguemos la plantilla de clasificación para la variable de
 
 1. Haga clic en **Descargar** y guarde el archivo de plantilla en el sistema local. El archivo de plantilla es un archivo de datos delimitado por tabuladores (con la extensión de nombre de archivo.tab) compatible con la mayoría de las aplicaciones de hojas de cálculo.
 1. Abra el archivo de datos delimitado por tabuladores con un editor de su elección.
-1. Agregue el ID de botón (eVar 9) y un nombre de botón correspondiente al archivo delimitado por tabuladores para cada valor de eVar 9 del paso 9 de la sección.
+1. Agregue el ID de botón (eVar9) y un nombre de botón correspondiente al archivo delimitado por tabulaciones para cada valor de eVar9 del paso 9 de la sección.
 
    ![Valor de clave](assets/create-analytics-workspace/key-value.png)
 
 1. **Guardar** el archivo delimitado por tabuladores.
 1. Vaya a la pestaña **Importar archivo**.
 1. Configure el Destino para la importación de archivos.
-   * AEM **Seleccionar grupo de informes** : grupo de informes de sitio de WKND (grupo de informes)
-   * **Conjunto de datos a clasificar** : Id. de botón (eVar de variable de conversión8)
+   * **Seleccionar grupo de informes** : AEM del sitio WKND (grupo de informes)
+   * **Conjunto de datos a clasificar** : ID de botón (variable de conversión eVar8)
 1. Haga clic en la opción **Elegir archivo** para cargar el archivo delimitado por tabuladores desde el sistema y, a continuación, haga clic en **Importar archivo**
 
    ![Importador de archivos](assets/create-analytics-workspace/file-importer.png)

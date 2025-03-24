@@ -5,13 +5,13 @@ solution: Experience Manager
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Developer Tools
 jira: KT-8852
 exl-id: 983e0394-7142-481f-bd5e-6c9acefbfdd0
 duration: 52
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 0%
@@ -53,12 +53,12 @@ El siguiente código de post.POST.jsp simplemente reenvía la solicitud al servl
 com.adobe.aemds.guide.utils.GuideSubmitUtils.setForwardPath(slingRequest,"/bin/formstutorial",null,null);
 ```
 
-AEM En el proyecto de la en IntelliJ, haga clic con el botón secundario en la carpeta `apps/bankingapplication` y seleccione Nuevo | Empaquete y escriba SubmitToAEMervlet después de la aplicación apps.bank en el cuadro de diálogo Nuevo paquete. Haga clic con el botón derecho en el nodo SubmitToAEMervlet y seleccione repositorio | AEM AEM Get Command para sincronizar el proyecto de con el repositorio del servidor de la aplicación.
+En el proyecto de AEM en IntelliJ, haga clic con el botón secundario en la carpeta `apps/bankingapplication` y seleccione Nuevo | Empaquete y escriba SubmitToAEMervlet después de la aplicación apps.bank en el cuadro de diálogo Nuevo paquete. Haga clic con el botón derecho en el nodo SubmitToAEMervlet y seleccione repositorio | Get Command para sincronizar el proyecto de AEM con el repositorio del servidor de AEM.
 
 
 ## Configurar formulario adaptable
 
-AEM Ahora puede configurar cualquier formulario adaptable para enviarlo a este controlador de envío personalizado llamado **Enviar a servlet de**
+Ahora puede configurar cualquier formulario adaptable para enviarlo a este controlador de envío personalizado llamado **Enviar a AEM Servlet**
 
 ## Siguientes pasos
 

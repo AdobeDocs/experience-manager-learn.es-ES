@@ -1,7 +1,7 @@
 ---
 title: Personalización de iconos de componente en Adobe Experience Manager Sites
 description: Los iconos de componente permiten a los autores identificar rápidamente un componente con iconos o abreviaturas significativas. Los autores ahora pueden encontrar los componentes necesarios para crear sus experiencias web más rápido que nunca.
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Core Components
 topic: Development
 role: User
@@ -9,7 +9,7 @@ level: Intermediate
 doc-type: Technical Video
 exl-id: 37dc26aa-0773-4749-8c8b-4544bd4d5e5f
 duration: 379
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 0%
@@ -49,7 +49,7 @@ La abreviatura se puede personalizar mediante la propiedad **[cq:Component]@abbr
 
 ### Iconos de CoralUI {#coralui-icons}
 
-AEM Los iconos de CoralUI, proporcionados por el usuario de la interfaz de usuario de, se pueden utilizar para iconos de componente. Para configurar un icono de CoralUI, establezca una propiedad **[cq:Component]@cq:icon** en el valor de atributo HTML icon del icono de CoralUI deseado (enumerado en la [documentación de CoralUI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html)).
+Los iconos de CoralUI, proporcionados por AEM, se pueden utilizar para los iconos de componente. Para configurar un icono de CoralUI, establezca una propiedad **[cq:Component]@cq:icon** en el valor de atributo icon de HTML del icono de CoralUI deseado (enumerado en la [documentación de CoralUI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html)).
 
 ```plain
 /apps/.../components/content/my-component
@@ -74,7 +74,7 @@ Las imágenes PNG se han escalado a **20px por 20px**. Sin embargo, es preferibl
 
 ### Imágenes de SVG {#svg-images}
 
-Las imágenes de SVG (basadas en vectores) se pueden utilizar para los iconos de componente. Para configurar una imagen de SVG como un ícono de componente, agregue el SVG deseado como un **nt:file** con el nombre **cq:icon.svg** en **[cq:Component]**.
+Las imágenes de SVG (basadas en vectores) se pueden utilizar para iconos de componentes. Para configurar una imagen de SVG como un icono de componente, agregue la SVG deseada como **nt:file** con el nombre **cq:icon.svg** en **[cq:Component]**.
 
 Las imágenes de SVG deben tener un color de fondo establecido en **#707070** y un tamaño de **20 px por 20 px.**
 

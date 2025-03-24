@@ -5,7 +5,7 @@ solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Adaptive Forms
 topic: Integrations, Development
 jira: KT-12557
@@ -13,7 +13,7 @@ badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 exl-id: 43665a1e-4101-4b54-a6e0-d189e825073e
 duration: 38
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 1%
@@ -38,7 +38,7 @@ Errores de validación de campo
 
 ## Depuración
 
-Asegúrese de que el formulario adaptable utiliza el mismo contenedor de configuración que contiene la configuración de Launch de Adobe.
+Asegúrese de que el formulario adaptable utiliza el mismo contenedor de configuración que contiene la configuración de Adobe Launch.
 
 Para confirmar que el formulario está enviando datos a Adobe Analytics, haga lo siguiente
 
@@ -53,7 +53,7 @@ Interactúe con el formulario mientras mantiene abierta la ventana de la consola
 
 ![console-debug](assets/debug.png)
 
-## Usar Adobe Experience Platform Debugger
+## Uso de Adobe Experience Platform Debugger
 
 Agregue la [extensión del depurador de AEP](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) a su explorador (debe iniciar sesión) para obtener más información sobre depuración
 

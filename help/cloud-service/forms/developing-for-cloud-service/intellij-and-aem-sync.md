@@ -1,16 +1,16 @@
 ---
 title: Configurar IntelliJ con la herramienta Repositorio
-description: AEM Prepare su IntelliJ para sincronizarlo con la instancia preparada para la nube de
+description: Prepare su IntelliJ para sincronizar con la instancia de AEM preparada para la nube
 solution: Experience Manager
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 jira: KT-8844
 exl-id: 9a7ed792-ca0d-458f-b8dd-9129aba37df6
 duration: 92
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 0%
@@ -64,34 +64,34 @@ Agregue lo siguiente a la variable de entorno Path C:\cygwin64\bin;C:\CloudManag
 **Dir de trabajo**: \$ProjectFileDir\$
 ![comando diff](assets/diff-command.png)
 
-AEM Extraiga el archivo .repo de [repo.zip](assets/repo.zip) y colóquelo en la carpeta raíz de sus proyectos de. (C:\CloudManager\aem-banking-application). Abra el archivo .repo y asegúrese de que el servidor y la configuración de credenciales coinciden con su entorno.
+Extraiga el archivo .repo de [repo.zip](assets/repo.zip) y colóquelo en la carpeta raíz de sus proyectos de AEM. (C:\CloudManager\aem-banking-application). Abra el archivo .repo y asegúrese de que el servidor y la configuración de credenciales coinciden con su entorno.
 Abra el archivo .gitignore, agregue lo siguiente a la parte inferior del archivo y guarde los cambios
 \# repositorio
 .repo
 
 Seleccione cualquier proyecto dentro de su proyecto aem-banking-application, como ui.content y haga clic con el botón derecho, debería ver la opción repo y debajo de la opción repo verá los 4 comandos que agregamos anteriormente.
 
-## AEM Configuración de instancia de autor{#set-up-aem-author-instance}
+## Configurar instancia de autor de AEM{#set-up-aem-author-instance}
 
 Se pueden seguir los siguientes pasos para configurar rápidamente una instancia preparada para la nube en el sistema local.
-* AEM [Descargar el SDK más reciente de la aplicación de código abierto](https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html)
+* [Descargar el SDK de AEM más reciente](https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html)
 
 * [Descargar el último complemento de AEM Forms](https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html)
 
 * Cree la siguiente estructura de carpetas
 c:\aemformscs\aem-sdk\author
 
-* AEM Extraiga el archivo aem-sdk-quickstart-xxxxxxx.jar del archivo zip del SDK de la y colóquelo en la carpeta c:\aemformscs\aem-sdk\author. Cambie el nombre del archivo jar a aem-author-p4502.jar
+* Extraiga el archivo aem-sdk-quickstart-xxxxxxx.jar del archivo zip de AEM SDK y colóquelo en la carpeta c:\aemformscs\aem-sdk\author. Cambie el nombre del archivo jar a aem-author-p4502.jar
 
 * Abra el símbolo del sistema y vaya a c:\aemformscs\aem-sdk\author
-introduzca el siguiente comando java -jar aem-author-p4502.jar -gui. AEM Esto iniciará la instalación de la.
+introduzca el siguiente comando java -jar aem-author-p4502.jar -gui. Esto iniciará la instalación de AEM.
 * Iniciar sesión con credenciales de administrador/administrador
-* AEM Detener la instancia de
+* Detenga la instancia de AEM
 * Cree la siguiente estructura de carpetas.C:\aemformscs\aem-sdk\author\crx-quickstart\install
 * Copie aem-forms-addon-xxxxxx.far en la carpeta de instalación
 * Abra el símbolo del sistema y vaya a c:\aemformscs\aem-sdk\author
-introduzca el siguiente comando java -jar aem-author-p4502.jar -gui. AEM Esto implementará el paquete de complementos de formularios en la instancia de la.
+introduzca el siguiente comando java -jar aem-author-p4502.jar -gui. Esto implementará el paquete de complementos de formularios en la instancia de AEM.
 
 ## Siguientes pasos
 
-[AEM AEM Sincronizar los formularios y plantillas de la con el proyecto de](./deploy-your-first-form.md)
+[Sincronizar los formularios y las plantillas de AEM con el proyecto de AEM](./deploy-your-first-form.md)

@@ -1,8 +1,8 @@
 ---
 title: Información general sobre la creación en AEM Sites
-description: AEM En el siguiente vídeo se ofrece una descripción general de los conceptos básicos de la creación en un entorno de creación de documentos de. Utiliza la consola Sitios como base.
+description: El siguiente vídeo proporciona información general sobre los conceptos básicos de la creación en un entorno de creación de AEM. Utiliza la consola Sitios como base.
 feature: Page Editor, Editable Templates
-version: 6.4, 6.5, Cloud Service
+version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 jira: KT-4242
 thumbnail: 33594.jpg
 topic: Content Management
@@ -11,7 +11,7 @@ level: Beginner
 doc-type: Feature Video
 exl-id: e71b106d-a44b-44af-ba85-7fb5806cdb83
 duration: 214
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '65'
 ht-degree: 13%
@@ -22,7 +22,7 @@ ht-degree: 13%
 
 {{edge-delivery-services-and-page-editor}}
 
-AEM En el siguiente vídeo se ofrece una descripción general de los conceptos básicos de la creación en un entorno de creación de para AEM Sites.
+El siguiente vídeo proporciona información general sobre los conceptos básicos de la creación en un entorno de creación de AEM para AEM Sites.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33594?quality=12&learn=on)
 

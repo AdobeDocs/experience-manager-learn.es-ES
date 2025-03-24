@@ -1,12 +1,12 @@
 ---
-user-guide-title: Tutorials de Adobe Experience Manager Managed Services
+user-guide-title: Tutoriales de Adobe Experience Manager Managed Services
 user-guide-description: Una colección de tutoriales para Adobe Experience Manager Managed Services.
-breadcrumb-title: AEM Tutorials de Managed Services
+breadcrumb-title: Tutoriales de AEM Managed Services
 sub-product: Experience Manager
-version: 6.5
+version: Experience Manager 6.5
 feature: Dispatcher
 team: TM
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '60'
 ht-degree: 5%

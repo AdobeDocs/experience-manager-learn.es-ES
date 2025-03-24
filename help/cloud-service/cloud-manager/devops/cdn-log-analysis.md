@@ -1,7 +1,7 @@
 ---
 title: Herramientas de análisis de registro de CDN
-description: Obtenga información acerca de la herramienta de análisis de registro de CDN de AEM Cloud Service que proporciona Adobe AEM y cómo ayuda a obtener información sobre el rendimiento de CDN y la implementación de la.
-version: Cloud Service
+description: Obtenga información sobre la herramienta de análisis de registro de CDN de AEM Cloud Service que proporciona Adobe y cómo ayuda a obtener información sobre el rendimiento de CDN y la implementación de AEM.
+version: Experience Manager as a Cloud Service
 feature: Developer Tools
 topic: Development
 role: Developer, Architect, Admin
@@ -12,7 +12,7 @@ last-substantial-update: 2024-05-17T00:00:00Z
 jira: KT-15505
 thumbnail: KT-15505.jpeg
 exl-id: 830c2486-099b-454f-bc07-6bf36e81ac8d
-source-git-commit: 4111ae0cf8777ce21c224991b8b1c66fb01041b3
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Herramientas de análisis de registro de CDN
 
-Obtenga información acerca de la _Herramienta de análisis de registro de CDN de AEM Cloud Service_ que proporciona Adobe AEM y cómo le ayuda a obtener información sobre el rendimiento de CDN y la implementación de la.
+Obtenga información acerca de la _herramienta de análisis de registro de CDN de AEM Cloud Service_ que proporciona Adobe y cómo le ayuda a obtener información sobre el rendimiento de CDN y la implementación de AEM.
  
 >[!VIDEO](https://video.tv.adobe.com/v/3429177?quality=12&learn=on)
 
@@ -52,19 +52,19 @@ Para iniciar rápidamente el análisis de registro, Adobe proporciona paneles pr
 
   ![Tablero de tráfico de CDN](assets/Traffic-dashboard.png)
 
-- **Panel WAF**: proporciona información a través de solicitudes analizadas, marcadas y bloqueadas. También proporciona ataques principales por ID de indicador WAF, los 100 principales atacantes por IP del cliente, país y agente de usuario y más perspectivas para optimizar las configuraciones de WAF.
+- **Panel de WAF**: proporciona información a través de solicitudes analizadas, marcadas y bloqueadas. También proporciona ataques principales por parte del ID de WAF Flag, los 100 atacantes principales por parte de la IP del cliente, el país y el agente de usuario, así como más perspectivas para optimizar las configuraciones de WAF.
 
-  ![Tablero WAF](assets/WAF-Dashboard.png)
+  ![Tablero de WAF](assets/WAF-Dashboard.png)
 
 ## Integración de Splunk
 
-Para organizaciones que aprovechan [Splunk](https://www.splunk.com/en_us/products/observability-cloud.html) y que han habilitado el reenvío de registros de AEM CS a sus instancias de Splunk, pueden importar rápidamente paneles creados previamente. AEM Esta configuración facilita el análisis acelerado del registro y proporciona perspectivas procesables para optimizar las implementaciones de la y mitigar las amenazas a la seguridad, como los ataques DOS.
+Para organizaciones que aprovechan [Splunk](https://www.splunk.com/en_us/products/observability-cloud.html) y que han habilitado el reenvío de registros de AEM CS a sus instancias de Splunk, pueden importar rápidamente paneles creados previamente. Esta configuración facilita el análisis acelerado del registro, proporcionando perspectivas procesables para optimizar las implementaciones de AEM y mitigar las amenazas de seguridad como los ataques DOS.
 
 Puede empezar a utilizar la guía de [Paneles de Splunk para el análisis de registro de CDN de AEM CS](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/README.md#splunk-dashboards-for-aemcs-cdn-log-analysis).
 
 
 ## Integración de ELK
 
-La pila [ELK](https://www.elastic.co/elastic-stack), que incluye Elasticsearch, Logstash y Kibana, es otra opción poderosa para el análisis de registros. Resulta útil para las organizaciones que no tienen acceso a una configuración de Splunk o a las funcionalidades de reenvío de registros. La configuración de la pila ELK localmente es sencilla, la herramienta proporciona el archivo Docker Compose para comenzar rápidamente. A continuación, puede importar los paneles creados previamente e introducir los registros de CDN que se descargan mediante el Cloud Manager de Adobe.
+La pila [ELK](https://www.elastic.co/elastic-stack), que incluye Elasticsearch, Logstash y Kibana, es otra opción poderosa para el análisis de registros. Resulta útil para las organizaciones que no tienen acceso a una configuración de Splunk o a las funcionalidades de reenvío de registros. La configuración de la pila ELK localmente es sencilla, la herramienta proporciona el archivo Docker Compose para comenzar rápidamente. A continuación, puede importar los paneles creados previamente e introducir los registros de CDN que se descargan mediante Adobe Cloud Manager.
 
 Puede empezar a utilizar el contenedor de Docker [ELK para el análisis de registro de CDN de AEM CS](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md#elk-docker-container-for-aemcs-cdn-log-analysis).

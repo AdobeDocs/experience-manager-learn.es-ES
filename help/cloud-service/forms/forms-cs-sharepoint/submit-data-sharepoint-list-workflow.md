@@ -5,13 +5,13 @@ feature: Adaptive Forms
 type: Documentation
 role: Developer
 level: Beginner
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Integrations
 jira: KT-15126
 exl-id: b369ed05-ba25-4b0e-aa3b-e7fc1621067d
 duration: 52
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
-source-git-commit: b4df652fcda0af5d01077b97aa7fa17cfe2abf4b
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 # Inserción de datos en la lista de SharePoint mediante el paso de flujo de trabajo invocar FDM
 
 
-En este artículo se explican los pasos necesarios para insertar datos en la lista de SharePoint AEM mediante el paso para invocar FDM en el flujo de trabajo de.
+En este artículo se explican los pasos necesarios para insertar datos en la lista de SharePoint mediante el paso para invocar FDM en el flujo de trabajo de AEM.
 
 Este artículo supone que ha [configurado correctamente el formulario adaptable para enviar datos a la lista de SharePoint.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html?lang=en#connect-af-sharepoint-list)
 
@@ -92,7 +92,7 @@ Los datos enviados tienen el siguiente formato. Extraiga el objeto JSON de Conta
 
 ![foundation-based-form](assets/foundation-based-form.png)
 
-## Configuración del formulario adaptable para el flujo de trabajo de déclencheur AEM de
+## Configuración del formulario adaptable para el flujo de trabajo de déclencheur AEM
 
 * Crear un formulario adaptable mediante el modelo de datos de formulario creado en el paso anterior.
 * Arrastre y suelte algunos campos del origen de datos en el formulario.

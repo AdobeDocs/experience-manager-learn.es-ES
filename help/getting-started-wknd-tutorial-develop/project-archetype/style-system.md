@@ -1,7 +1,7 @@
 ---
 title: Desarrollo con el sistema de estilos
 description: Aprenda a implementar estilos individuales y a reutilizar los componentes principales mediante el sistema de estilos de Experience Manager. Este tutorial cubre el desarrollo para el sistema de estilos para ampliar los componentes principales con CSS específicos de la marca y configuraciones de directiva avanzadas del editor de plantillas.
-version: 6.5, Cloud Service
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Core Components, Style System
 topic: Content Management, Development
 role: Developer
@@ -13,7 +13,7 @@ doc-type: Tutorial
 exl-id: 5b490132-cddc-4024-92f1-e5c549afd6f1
 recommendations: noDisplay, noCatalog
 duration: 358
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1555'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Aprenda a implementar estilos individuales y a reutilizar los componentes princi
 
 Revise las herramientas y las instrucciones necesarias para configurar un [entorno de desarrollo local](overview.md#local-dev-environment).
 
-AEM También se recomienda revisar el tutorial de [Bibliotecas del lado del cliente y flujo de trabajo front-end](client-side-libraries.md) para comprender los aspectos básicos de las bibliotecas del lado del cliente y las diversas herramientas front-end integradas en el proyecto de.
+También se recomienda revisar el tutorial [Bibliotecas del lado del cliente y flujo de trabajo front-end](client-side-libraries.md) para comprender los aspectos básicos de las bibliotecas del lado del cliente y las diversas herramientas front-end integradas en el proyecto de AEM.
 
 ### Proyecto de inicio
 
@@ -45,7 +45,7 @@ Consulte el código de línea de base en el que se basa el tutorial:
    $ git checkout tutorial/style-system-start
    ```
 
-1. AEM Implemente una base de código en una instancia de local con sus habilidades con Maven:
+1. Implemente una base de código en una instancia de AEM local con sus habilidades con Maven:
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage
@@ -53,7 +53,7 @@ Consulte el código de línea de base en el que se basa el tutorial:
 
    >[!NOTE]
    >
-   > AEM Si utiliza la versión 6.5 o 6.4 de la aplicación, anexe el perfil `classic` a cualquier comando de Maven.
+   > Si utiliza AEM 6.5 o 6.4, anexe el perfil `classic` a cualquier comando de Maven.
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
@@ -63,7 +63,7 @@ Siempre puede ver el código terminado en [GitHub](https://github.com/adobe/aem-
 
 ## Objetivo
 
-1. AEM Aprenda a utilizar el sistema de estilos para aplicar CSS específicas de la marca a los componentes principales de la.
+1. Aprenda a utilizar el sistema de estilos para aplicar CSS específicas de la marca a los componentes principales de AEM.
 1. Obtenga información acerca de la notación de BEM y cómo se puede utilizar para definir con cuidado los estilos.
 1. Aplicar configuraciones de directiva avanzadas con plantillas editables.
 
@@ -93,7 +93,7 @@ Los [diseños de artículo de WKND](assets/pages-templates/wknd-article-design.x
 
 ### Agregar una directiva de título
 
-Añadamos una política para los componentes Título para permitir que los autores de contenido elijan el estilo Subrayado que se aplicará a componentes específicos. AEM Esto se realiza mediante el Editor de plantillas dentro de la opción de.
+Añadamos una política para los componentes Título para permitir que los autores de contenido elijan el estilo Subrayado que se aplicará a componentes específicos. Esto se realiza mediante el Editor de plantillas en AEM.
 
 1. Vaya a la plantilla **Página de artículo** desde: [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html)
 
@@ -115,7 +115,7 @@ Añadamos una política para los componentes Título para permitir que los autor
 
    >[!NOTE]
    >
-   > El valor `cmp-title--underline` rellena la clase CSS en el div exterior del marcado de HTML del componente.
+   > El valor `cmp-title--underline` rellena la clase CSS en el div exterior del marcado HTML del componente.
 
 ### Aplicar el estilo de subrayado
 
@@ -130,7 +130,7 @@ Como autor, vamos a aplicar el estilo de subrayado a determinados componentes de
    >
    > En este punto, no se produce ningún cambio visible ya que el estilo `underline` no se ha implementado. En el siguiente ejercicio, se implementa este estilo.
 
-1. AEM Haga clic en el icono **Información de la página** > **Ver tal y como se publicó** para inspeccionar la página fuera del editor que se va a.
+1. Haga clic en el icono **Información de la página** > **Ver como publicada** para inspeccionar la página fuera del editor de AEM.
 1. Utilice las herramientas para desarrolladores del explorador para comprobar que el marcado alrededor del componente Título tiene la clase CSS `cmp-title--underline` aplicada al div externo.
 
    ![Div con clase de subrayado aplicada](assets/style-system/div-underline-class-applied.png)
@@ -146,7 +146,7 @@ Como autor, vamos a aplicar el estilo de subrayado a determinados componentes de
 
 ### Implementar el estilo de subrayado: ui.frontend
 
-AEM A continuación, implemente el estilo Subrayado utilizando el módulo **ui.frontend** del proyecto de. AEM Se utiliza el servidor de desarrollo de Webpack empaquetado con el módulo **ui.frontend** para obtener una vista previa de los estilos *antes de* implementar en una instancia local de.
+A continuación, implemente el estilo Subrayado utilizando el módulo **ui.frontend** del proyecto AEM. Se usa el servidor de desarrollo de Webpack que está empaquetado con el módulo **ui.frontend** para obtener una vista previa de los estilos *antes de* implementar en una instancia local de AEM.
 
 1. Iniciar el proceso `watch` desde el módulo **ui.frontend**:
 
@@ -155,7 +155,7 @@ AEM A continuación, implemente el estilo Subrayado utilizando el módulo **ui.f
    $ npm run watch
    ```
 
-   AEM Esto inicia un proceso que supervisa los cambios en el módulo `ui.frontend` y los sincroniza con la instancia de la instancia de la.
+   Esto inicia un proceso que supervisa los cambios en el módulo `ui.frontend` y los sincroniza con la instancia de AEM.
 
 
 1. Devuelva su IDE y abra el archivo `_title.scss` desde: `ui.frontend/src/main/webpack/components/_title.scss`.
@@ -187,11 +187,11 @@ AEM A continuación, implemente el estilo Subrayado utilizando el módulo **ui.f
    >
    >Todos los componentes principales cumplen con **[la notación BEM](https://github.com/adobe/aem-core-wcm-components/wiki/css-coding-conventions)**. Se recomienda dirigirse a la clase CSS externa al crear un estilo predeterminado para un componente. Otra práctica recomendada es segmentar los nombres de clase especificados por la notación de BEM de componentes principales en lugar de los elementos de HTML.
 
-1. AEM Vuelva al explorador y a la página de la. Debería ver que el estilo Subrayado ha agregado:
+1. Vuelva al explorador y a la página de AEM. Debería ver que el estilo Subrayado ha agregado:
 
    ![Estilo de subrayado visible en el servidor de desarrollo de Webpack](assets/style-system/underline-implemented-webpack.png)
 
-1. AEM En el Editor de la, debería poder activar y desactivar el estilo **Subrayado** y ver que los cambios se reflejen visualmente.
+1. En el editor de AEM, debería poder activar y desactivar el estilo **Subrayado** y ver que los cambios se reflejen visualmente.
 
 ## Estilo del bloque de comillas: texto {#text-component}
 
@@ -252,7 +252,7 @@ A continuación, añada una directiva para los componentes Texto.
 
 ### Implementar el estilo de bloque de cotización: ui.frontend
 
-AEM A continuación, vamos a implementar el estilo de bloque de cotización usando el módulo **ui.frontend** del proyecto de.
+A continuación, implementemos el estilo de bloque de cotización utilizando el módulo **ui.frontend** del proyecto AEM.
 
 1. Si aún no se está ejecutando, inicie el proceso `watch` desde el módulo **ui.frontend**:
 
@@ -300,7 +300,7 @@ AEM A continuación, vamos a implementar el estilo de bloque de cotización usan
 
    >[!CAUTION]
    >
-   > En este caso, los elementos de HTML sin procesar se dirigen a los estilos. Esto se debe a que el componente Texto proporciona un Editor de texto enriquecido para los autores de contenido. La creación de estilos directamente contra el contenido RTE debe hacerse con cuidado y es aún más importante enmarcar de manera ajustada los estilos.
+   > En este caso, los elementos HTML sin procesar se dirigen a los estilos. Esto se debe a que el componente Texto proporciona un Editor de texto enriquecido para los autores de contenido. La creación de estilos directamente contra el contenido RTE debe hacerse con cuidado y es aún más importante enmarcar de manera ajustada los estilos.
 
 1. Vuelva al navegador una vez más y debería ver que el estilo de bloque de cotización ha añadido:
 
@@ -340,11 +340,11 @@ En lugar de segmentar el elemento HTML `main`, se podría usar el sistema de est
 
 ## Enhorabuena. {#congratulations}
 
-AEM Enhorabuena, la página de artículos está casi diseñada y ha adquirido experiencia práctica con el sistema de estilos de la.
+Enhorabuena, la página de artículos está casi diseñada y ha adquirido experiencia práctica con el sistema de estilos de AEM.
 
 ### Siguientes pasos {#next-steps}
 
-AEM Conozca los pasos de extremo a extremo para crear un [componente de personalizado](custom-component.md) que muestre el contenido creado en un cuadro de diálogo y explore el desarrollo de un modelo Sling para encapsular la lógica empresarial que rellena el HTL del componente.
+Conozca los pasos de extremo a extremo para crear un [componente personalizado de AEM](custom-component.md) que muestre el contenido creado en un cuadro de diálogo y explore el desarrollo de un modelo Sling para encapsular la lógica empresarial que rellena el HTL del componente.
 
 Vea el código terminado en [GitHub](https://github.com/adobe/aem-guides-wknd) o revise e implemente el código localmente en la rama Git `tutorial/style-system-solution`.
 

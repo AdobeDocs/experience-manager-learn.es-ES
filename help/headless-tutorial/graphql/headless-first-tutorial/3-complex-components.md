@@ -1,7 +1,7 @@
 ---
-title: 'AEM Creación de un componente de lista de imágenes complejo: primer tutorial sin encabezado'
+title: 'Creación de un componente complejo de lista de imágenes: primer tutorial de AEM sin encabezado'
 description: Aprenda a trabajar con fragmentos de contenido, referencias de contenido e imágenes.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Development
 role: Developer
@@ -12,7 +12,7 @@ jira: KT-13270
 thumbnail: KT-13270.jpeg
 exl-id: ad06b0f3-afa7-4661-aa66-0674d2e6bb43
 duration: 732
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 1%
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 Bienvenido a este capítulo del tutorial, en el que exploraremos la creación de un componente de lista de imágenes complejo que procesa fragmentos de contenido, referencias de fragmentos de contenido anidadas y recursos de imagen referenciados. Daremos un paso más haciendo que la aplicación React sea editable con el editor universal.
 
-Los fragmentos de contenido en Adobe Experience Manager AEM () proporcionan un enfoque estructurado para administrar el contenido. Aprovechamos los fragmentos de contenido para rellenar el componente Lista de imágenes, administrando las referencias anidadas y mostrando los recursos de imagen a los que se hace referencia.
+Los fragmentos de contenido en Adobe Experience Manager (AEM) proporcionan un enfoque estructurado para administrar el contenido. Aprovechamos los fragmentos de contenido para rellenar el componente Lista de imágenes, administrando las referencias anidadas y mostrando los recursos de imagen a los que se hace referencia.
 
 A lo largo de este tutorial, le guiaremos a través de la creación del componente Lista de imágenes, la administración de referencias anidadas, el procesamiento de recursos de imagen a los que se hace referencia y la integración del Editor universal. Aprenderá a configurar dependencias, diseñar la estructura del componente, recuperar y analizar fragmentos de contenido y hacer que la aplicación sea editable mediante el Editor universal.
 
@@ -422,4 +422,4 @@ export default Home;
 
 ## Enhorabuena.
 
-AEM AEM Ha creado correctamente una experiencia sin encabezado que cuenta con la tecnología completa de las API sin encabezado y que se puede editar con el Editor universal de.
+Ha creado correctamente una experiencia sin encabezado de AEM que funciona completamente con las API sin encabezado de AEM y se puede editar con el editor universal.

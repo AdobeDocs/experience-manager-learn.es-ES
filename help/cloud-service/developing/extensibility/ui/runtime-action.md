@@ -1,8 +1,8 @@
 ---
-title: AEM Acciones de Adobe I/O Runtime de extensión de IU
-description: AEM Obtenga información sobre cómo crear una extensión de interfaz de usuario de modal.
+title: Extensión de IU de AEM Acciones de Adobe I/O Runtime
+description: Obtenga información sobre cómo crear un modal de extensión de IU de AEM.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -11,7 +11,7 @@ jira: KT-11603
 last-substantial-update: 2024-01-26T00:00:00Z
 exl-id: 3062900a-0461-4c6f-81e6-c76a7f613804
 duration: 240
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 2%
@@ -20,11 +20,11 @@ ht-degree: 2%
 
 # Acción de Adobe I/O Runtime
 
-AEM ![Acciones de tiempo de ejecución de extensión de IU de](./assets/runtime-action/action-runtime-flow.png){align="center"}
+![Acciones de tiempo de ejecución de extensión de IU de AEM](./assets/runtime-action/action-runtime-flow.png){align="center"}
 
-AEM Las extensiones de interfaz de usuario pueden incluir opcionalmente cualquier número de [acciones de Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/).
+Las extensiones de la interfaz de usuario de AEM pueden incluir opcionalmente cualquier número de [acciones de Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/).
 
-Las acciones de Adobe I/O Runtime son funciones sin servidor que la extensión puede invocar. AEM Las acciones son útiles para realizar trabajos que requieren interactuar con los servicios web de, u otros servicios web de Adobe. AEM Las acciones suelen ser más útiles para realizar tareas de larga duración (más de unos segundos) o para realizar solicitudes HTTP a los servicios web o a otros servicios web.
+Las acciones de Adobe I/O Runtime son funciones sin servidor que la extensión puede invocar. Las acciones son útiles para realizar trabajo que requiera interactuar con AEM u otros servicios web de Adobe. Las acciones suelen ser más útiles para realizar tareas de larga duración (más de unos segundos) o realizar solicitudes HTTP a AEM u otros servicios web.
 
 Los beneficios de utilizar acciones de Adobe I/O Runtime para realizar trabajo son:
 
@@ -32,17 +32,17 @@ Los beneficios de utilizar acciones de Adobe I/O Runtime para realizar trabajo s
 + El usuario no puede interrumpir las acciones (por ejemplo, actualizar el explorador)
 + Las acciones son asincrónicas, por lo que pueden ejecutarse todo el tiempo que sea necesario sin bloquear al usuario
 
-AEM En el contexto de las extensiones de interfaz de usuario de la, las acciones suelen utilizarse para comunicarse directamente con AEM as a Cloud Service:
+En el contexto de las extensiones de IU de AEM, las acciones se utilizan a menudo para comunicarse directamente con AEM as a Cloud Service:
 
-+ AEM Recopilación de datos relacionados de los datos sobre el contenido seleccionado o actual a partir de la recopilación de datos de los que se puede acceder.
++ Recopilación de datos relacionados de AEM sobre el contenido seleccionado o actual
 + Realizar operaciones personalizadas en el contenido
 + Creación de contenido a medida
 
-AEM AEM AEM AEM Aunque la extensión de la interfaz de usuario de la aparece en determinadas IU de, las extensiones y sus acciones de compatibilidad, pueden invocar cualquier API de HTTP de la interfaz de usuario de la aplicación disponible, incluidos los extremos de la API de la API de la personalizada.
+Aunque la extensión de la interfaz de usuario de AEM aparece en interfaces de usuario de AEM específicas, las extensiones y sus acciones de compatibilidad pueden invocar cualquier API HTTP de AEM disponible, incluidos los extremos de la API de AEM personalizada.
 
 ## Invocar una acción
 
-Las acciones de Adobe I/O Runtime AEM se invocan principalmente desde dos lugares en una extensión de interfaz de usuario de:
+Las acciones de Adobe I/O Runtime se invocan principalmente desde dos lugares en una extensión de interfaz de usuario de AEM:
 
 1. Controlador `onClick(..)` del registro de extensión [de ](./extension-registration.md)
 1. Dentro de un [modal](./modal.md)
@@ -110,9 +110,9 @@ export default ExtensionRegistration;
 
 ### Desde modal
 
-Las acciones de Adobe I/O Runtime se pueden llamar directamente desde los modelos para realizar un trabajo más involucrado, especialmente trabajo que se basa en la comunicación con AEM as a Cloud Service, el servicio web de Adobe o incluso servicios de terceros.
+Las acciones de Adobe I/O Runtime se pueden llamar directamente desde los modelos para realizar un trabajo más involucrado, especialmente trabajo que depende de la comunicación con AEM as a Cloud Service, el servicio web de Adobe o incluso servicios de terceros.
 
-Las acciones de Adobe I/O Runtime son aplicaciones JavaScript basadas en Node.js que se ejecutan en el entorno de Adobe I/O Runtime sin servidor. SPA La extensión puede direccionar estas acciones a través de HTTP
+Las acciones de Adobe I/O Runtime son aplicaciones JavaScript basadas en Node.js que se ejecutan en el entorno de Adobe I/O Runtime sin servidor. Estas acciones se pueden dirigir a través de HTTP mediante la SPA de la extensión.
 
 + `./src/aem-ui-extension/web-src/src/components/MyModal.js`
 
@@ -302,18 +302,18 @@ async function main (params) {
 }
 ```
 
-## AEM API HTTP de
+## API HTTP de AEM
 
-AEM AEM Las siguientes API HTTP de la se utilizan comúnmente para interactuar con el recurso de la interfaz de usuario de las extensiones de:
+Las siguientes API HTTP de AEM se utilizan comúnmente para interactuar con AEM desde extensiones:
 
-+ AEM [API de GraphQLs](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)
-+ [API HTTP AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html)
++ [API de AEM GraphQL](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)
++ [API HTTP de AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html)
    + [Compatibilidad con fragmentos de contenido en la API HTTP de AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/assets-api-content-fragments.html?lang=es)
-+ AEM [API de QueryBuilder de](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html)
++ [API de AEM QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html)
 + [Referencia completa de la API de AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/reference-materials.html)
 
 
-## Adobe de módulos npm
+## Módulos npm de Adobe
 
 Los siguientes son módulos npm útiles para desarrollar acciones de Adobe I/O Runtime:
 
@@ -324,8 +324,8 @@ Los siguientes son módulos npm útiles para desarrollar acciones de Adobe I/O R
    + [Biblioteca de Adobe Target](https://github.com/adobe/aio-lib-target)
    + [Biblioteca de Adobe Analytics](https://github.com/adobe/aio-lib-analytics)
    + [Biblioteca de Adobe Campaign Standard](https://github.com/adobe/aio-lib-campaign-standard)
-   + [Biblioteca de perfiles de clientes de Adobe](https://github.com/adobe/aio-lib-customer-profile)
+   + [Biblioteca de perfiles del cliente de Adobe](https://github.com/adobe/aio-lib-customer-profile)
    + [Biblioteca de datos del cliente de Adobe Audience Manager](https://github.com/adobe/aio-lib-audience-manager-cd)
-   + [Eventos de Adobe I/O](https://github.com/adobe/aio-lib-events)
+   + [Adobe I/O Events](https://github.com/adobe/aio-lib-events)
 + [@adobe/aio-lib-core-networking](https://github.com/adobe/aio-lib-core-networking)
 + [@adobe/node-httptransfer](https://github.com/adobe/node-httptransfer)

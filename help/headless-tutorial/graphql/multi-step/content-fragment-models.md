@@ -1,7 +1,7 @@
 ---
-title: 'AEM Definición de modelos de fragmentos de contenido: introducción a la sin encabezado GraphQL'
-description: Introducción a Adobe Experience Manager AEM () y GraphQL. AEM Aprenda a modelar contenido y a crear un esquema con modelos de fragmentos de contenido en la creación de modelos de fragmentos de contenido en la. Revise los modelos existentes y cree uno. Obtenga información sobre los distintos tipos de datos que se pueden utilizar para definir un esquema.
-version: Cloud Service
+title: 'Definición de modelos de fragmentos de contenido: Introducción a AEM Headless - GraphQL'
+description: Introducción a Adobe Experience Manager (AEM) y GraphQL. Aprenda a modelar contenido y a crear un esquema con los modelos de fragmentos de contenido en AEM. Revise los modelos existentes y cree uno. Obtenga información sobre los distintos tipos de datos que se pueden utilizar para definir un esquema.
+version: Experience Manager as a Cloud Service
 mini-toc-levels: 1
 jira: KT-6712
 thumbnail: 22452.jpg
@@ -11,10 +11,10 @@ role: Developer
 level: Beginner
 exl-id: 9400d9f2-f828-4180-95a7-2ac7b74cd3c9
 duration: 228
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1110'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -28,7 +28,7 @@ También puede crear su propio modelo siguiendo los pasos básicos y modificar l
 
 ## Requisitos previos {#prerequisites}
 
-AEM Este es un tutorial de varias partes y se da por hecho que hay un [entorno de creación de disponible](./overview.md#prerequisites).
+Este es un tutorial de varias partes y se supone que hay un [entorno de creación de AEM disponible](./overview.md#prerequisites).
 
 ## Objetivos {#objectives}
 
@@ -40,8 +40,8 @@ AEM Este es un tutorial de varias partes y se da por hecho que hay un [entorno d
 
 Una configuración de proyecto contiene todos los modelos de fragmento de contenido asociados a un proyecto concreto y proporciona un medio para organizar los modelos. Debe crearse al menos un proyecto **antes de que** cree el modelo de fragmento de contenido.
 
-1. AEM Inicie sesión en el entorno **Autor** de la (p. ej. `https://author-pYYYY-eXXXX.adobeaemcloud.com/`)
-1. AEM En la pantalla Inicio de la, vaya a **Herramientas** > **General** > **Explorador de configuración**.
+1. Inicie sesión en el entorno de AEM **Author** (p. ej. `https://author-pYYYY-eXXXX.adobeaemcloud.com/`)
+1. En la pantalla de inicio de AEM, vaya a **Herramientas** > **General** > **Explorador de configuración**.
 
    ![Navegar al Explorador de configuración](assets/content-fragment-models/navigate-config-browser.png)
 1. Haga clic en **Crear**, en la esquina superior derecha
@@ -62,7 +62,7 @@ A continuación, crea dos modelos para un **equipo** y una **persona**.
 
 Cree un modelo para una **persona**, que es el modelo de datos que representa a una persona que forma parte de un equipo.
 
-1. AEM En la pantalla de inicio de la, vaya a **Herramientas** > **General** > **Modelos de fragmentos de contenido**.
+1. En la pantalla de inicio de AEM, vaya a **Herramientas** > **General** > **Modelos de fragmentos de contenido**.
 
    ![Navegar a los modelos de fragmentos de contenido](assets/content-fragment-models/navigate-cf-models.png)
 
@@ -78,7 +78,7 @@ Cree un modelo para una **persona**, que es el modelo de datos que representa a 
 
    ![Campo de propiedad Nombre completo](assets/content-fragment-models/full-name-property-field.png)
 
-   AEM El **Nombre de propiedad** define el nombre de la propiedad que se mantiene en el estado de la propiedad que se va a. El **Nombre de propiedad** también define el nombre de **clave** para esta propiedad como parte del esquema de datos. Esta clave **key** se usa cuando los datos del fragmento de contenido se exponen a través de las API de GraphQL.
+   **Nombre de propiedad** define el nombre de la propiedad que se mantiene en AEM. El **Nombre de propiedad** también define el nombre de **clave** para esta propiedad como parte del esquema de datos. Esta clave **key** se usa cuando los datos del fragmento de contenido se exponen a través de las API de GraphQL.
 
 1. Pulse la pestaña **Tipos de datos** y arrastre y suelte un campo de **Texto de varias líneas** debajo del campo **Nombre completo**. Introduzca las siguientes propiedades:
 
@@ -163,23 +163,23 @@ Cree un modelo para un **equipo**, que es el modelo de datos para un equipo de p
 
    ![Dos modelos](assets/content-fragment-models/two-new-models.png)
 
-## Modelos de fragmentos de contenido y configuración de proyectos de Publish
+## Publicar configuración de proyecto y modelos de fragmentos de contenido
 
 Tras la revisión y verificación, publique `Project Configuration` y `Content Fragment Model`
 
-1. AEM En la pantalla Inicio de la, vaya a **Herramientas** > **General** > **Explorador de configuración**.
+1. En la pantalla de inicio de AEM, vaya a **Herramientas** > **General** > **Explorador de configuración**.
 
-1. Puntee en la casilla que está junto a **Mi proyecto** y luego en **Publish**
+1. Puntee en la casilla que está junto a **Mi proyecto** y luego en **Publicar**
 
-   ![Configuración del proyecto Publish](assets/content-fragment-models/publish-project-config.png)
+   ![Publicar configuración de proyecto](assets/content-fragment-models/publish-project-config.png)
 
-1. AEM En la pantalla de inicio de la, vaya a **Herramientas** > **General** > **Modelos de fragmentos de contenido**.
+1. En la pantalla de inicio de AEM, vaya a **Herramientas** > **General** > **Modelos de fragmentos de contenido**.
 
 1. Vaya a la carpeta **Mi proyecto**.
 
-1. Pulse **Persona** y **Equipo** modelos y pulse **Publish**
+1. Pulse **Persona** y **Equipo** modelos y pulse **Publicar**
 
-   ![Modelos de fragmentos de contenido Publish](assets/content-fragment-models/publish-content-fragment-model.png)
+   ![Publicar modelos de fragmentos de contenido](assets/content-fragment-models/publish-content-fragment-model.png)
 
 ## Enhorabuena. {#congratulations}
 

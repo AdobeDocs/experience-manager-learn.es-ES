@@ -1,7 +1,7 @@
 ---
 title: Componente personalizado
 description: Abarca la creación de extremo a extremo de un componente de firma personalizado que muestra el contenido creado. Incluye el desarrollo de un modelo Sling para encapsular la lógica empresarial y rellenar el componente de firma y el HTL correspondiente para procesar el componente.
-version: 6.5, Cloud Service
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Core Components, APIs
 topic: Content Management, Development
 role: Developer
@@ -12,7 +12,7 @@ thumbnail: 30181.jpg
 doc-type: Tutorial
 exl-id: f54f3dc9-6ec6-4e55-9043-7a006840c905
 duration: 1039
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '3869'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Componente personalizado {#custom-component}
 
-AEM Este tutorial cubre la creación de extremo a extremo de un componente personalizado de `Byline` que muestra el contenido creado en un cuadro de diálogo, y explora el desarrollo de un modelo Sling para encapsular la lógica empresarial que rellena el HTL del componente.
+Este tutorial cubre la creación de extremo a extremo de un componente AEM `Byline` personalizado que muestra el contenido creado en un cuadro de diálogo, y explora el desarrollo de un modelo Sling para encapsular la lógica empresarial que rellena el HTL del componente.
 
 ## Requisitos previos {#prerequisites}
 
@@ -42,7 +42,7 @@ Consulte el código de línea de base en el que se basa el tutorial:
    $ git checkout tutorial/custom-component-start
    ```
 
-1. AEM Implemente una base de código en una instancia de local con sus habilidades con Maven:
+1. Implemente una base de código en una instancia de AEM local con sus habilidades con Maven:
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage
@@ -50,7 +50,7 @@ Consulte el código de línea de base en el que se basa el tutorial:
 
    >[!NOTE]
    >
-   > AEM Si utiliza la versión 6.5 o 6.4 de la aplicación, anexe el perfil `classic` a cualquier comando de Maven.
+   > Si utiliza AEM 6.5 o 6.4, anexe el perfil `classic` a cualquier comando de Maven.
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
@@ -60,7 +60,7 @@ Siempre puede ver el código terminado en [GitHub](https://github.com/adobe/aem-
 
 ## Objetivo
 
-1. AEM Obtenga información sobre cómo crear un componente de personalizado
+1. Obtenga información sobre cómo crear un componente de AEM personalizado
 1. Aprenda a encapsular la lógica empresarial con los modelos Sling
 1. Obtenga información sobre cómo utilizar un modelo Sling desde un script HTL
 
@@ -80,9 +80,9 @@ La implementación del componente Firma incluye un cuadro de diálogo que recopi
 
 ## Crear componente Firma {#create-byline-component}
 
-En primer lugar, cree la estructura de nodos Componente de firma y defina un cuadro de diálogo. AEM Representa el componente en el que se define de forma implícita el tipo de recurso del componente y lo define de manera implícita mediante su ubicación en el JCR.
+En primer lugar, cree la estructura de nodos Componente de firma y defina un cuadro de diálogo. Representa el componente en AEM y define implícitamente el tipo de recurso del componente por su ubicación en el JCR.
 
-El cuadro de diálogo expone la interfaz que los autores de contenido pueden proporcionar. AEM Para esta implementación, se usa el componente principal **Image** del WCM de la para administrar la creación y el procesamiento de la imagen del Byline, por lo que se debe establecer como `sling:resourceSuperType` de este componente.
+El cuadro de diálogo expone la interfaz que los autores de contenido pueden proporcionar. Para esta implementación, el componente principal **Image** del WCM de AEM se usa para administrar la creación y el procesamiento de la imagen del Byline, por lo que debe establecerse como `sling:resourceSuperType` de este componente.
 
 ### Crear definición del componente {#create-component-definition}
 
@@ -107,7 +107,7 @@ El cuadro de diálogo expone la interfaz que los autores de contenido pueden pro
 
 ### Creación del script HTL {#create-the-htl-script}
 
-1. Dentro de la carpeta `byline`, agregue un archivo `byline.html`, responsable de la presentación del componente por parte del HTML. Es importante asignar el mismo nombre al archivo que a la carpeta, ya que se convierte en el script predeterminado que utiliza Sling para procesar este tipo de recurso.
+1. Dentro de la carpeta `byline`, agregue un archivo `byline.html`, que es responsable de la presentación HTML del componente. Es importante asignar el mismo nombre al archivo que a la carpeta, ya que se convierte en el script predeterminado que utiliza Sling para procesar este tipo de recurso.
 
 1. Agregue el siguiente código a `byline.html`.
 
@@ -284,25 +284,25 @@ Siguiendo el mismo enfoque que con la creación del cuadro de diálogo, cree un 
 
 1. Sincronice los cambios de `ui.apps` con su IDE o con sus habilidades con Maven.
 
-   AEM ![Exportar a componente de línea de firma de servidor de](assets/custom-component/export-byline-component-aem.png)
+   ![Exportar al componente de firma del servidor de AEM](assets/custom-component/export-byline-component-aem.png)
 
 ## Añadir el componente a una página {#add-the-component-to-a-page}
 
-AEM Para que las cosas sean sencillas y se centren en el desarrollo de componentes de la, vamos a agregar el componente Byline en su estado actual a una página de artículo para comprobar que la definición del nodo `cq:Component` es correcta. AEM También para verificar que el usuario reconoce la nueva definición del componente y que el cuadro de diálogo del componente funciona durante la creación.
+Para que las cosas sean sencillas y se centren en el desarrollo de componentes de AEM, vamos a agregar el componente Byline en su estado actual a una página de artículo para comprobar que la definición del nodo `cq:Component` es correcta. Compruebe también que AEM reconoce la nueva definición del componente y que el cuadro de diálogo del componente funciona para la creación.
 
-### Añadir una imagen a AEM Assets
+### Añadir una imagen a los AEM Assets
 
-En primer lugar, cargue una captura de cabeza de muestra en AEM Assets para utilizarla para rellenar la imagen en el componente Firma.
+En primer lugar, cargue una captura de cabeza de muestra a los AEM Assets para utilizarla para rellenar la imagen en el componente Firma.
 
-1. Vaya a la carpeta LA Skateparks de AEM Assets: [http://localhost:4502/assets.html/content/dam/wknd/en/magazine/la-skateparks](http://localhost:4502/assets.html/content/dam/wknd/en/magazine/la-skateparks).
+1. Vaya a la carpeta LA Skateparks en AEM Assets: [http://localhost:4502/assets.html/content/dam/wknd/en/magazine/la-skateparks](http://localhost:4502/assets.html/content/dam/wknd/en/magazine/la-skateparks).
 
 1. Cargue la captura de pantalla de **[stacey-roswells.jpg](assets/custom-component/stacey-roswells.jpg)** en la carpeta.
 
-   ![Captura de encabezado cargada en AEM Assets](assets/custom-component/stacey-roswell-headshot-assets.png)
+   ![Captura de pantalla cargada a AEM Assets](assets/custom-component/stacey-roswell-headshot-assets.png)
 
 ### Crear el componente {#author-the-component}
 
-AEM A continuación, añada el componente Firma a una página de en la. Dado que el componente Firma se agrega al grupo de componentes **Proyecto de sitios WKND - Contenido**, a través de la definición `ui.apps/src/main/content/jcr_root/apps/wknd/components/byline/.content.xml`, estará disponible automáticamente para cualquier **contenedor** cuya **directiva** permita el grupo de componentes **Proyecto de sitios WKND - Contenido**. Por lo tanto, está disponible en el contenedor de diseño de la página de artículo
+A continuación, añada el componente Firma a una página de AEM. Dado que el componente Firma se agrega al grupo de componentes **Proyecto de sitios WKND - Contenido**, a través de la definición `ui.apps/src/main/content/jcr_root/apps/wknd/components/byline/.content.xml`, estará disponible automáticamente para cualquier **contenedor** cuya **directiva** permita el grupo de componentes **Proyecto de sitios WKND - Contenido**. Por lo tanto, está disponible en el contenedor de diseño de la página de artículo
 
 1. Vaya al artículo de LA Skatepark en: [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html)
 
@@ -326,9 +326,9 @@ AEM A continuación, añada el componente Firma a una página de en la. Dado que
 
    ![rellenar propiedades del componente de firma ](assets/custom-component/add-properties.png)
 
-   AEM Los autores de la configuran y crean componentes a través de los cuadros de diálogo. En este punto, en el desarrollo del componente Firma, se incluyen los cuadros de diálogo para recopilar los datos, pero aún no se ha añadido la lógica para procesar el contenido creado. Por lo tanto, solo se muestra el marcador de posición.
+   Los autores de AEM configuran y crean componentes a través de los cuadros de diálogo. En este punto, en el desarrollo del componente Firma, se incluyen los cuadros de diálogo para recopilar los datos, pero aún no se ha añadido la lógica para procesar el contenido creado. Por lo tanto, solo se muestra el marcador de posición.
 
-1. Después de guardar el cuadro de diálogo, vaya a [CRXDE Lite AEM](http://localhost:4502/crx/de/index.jsp#/content/wknd/us/en/magazine/guide-la-skateparks/jcr%3Acontent/root/container/container/byline) y revise cómo se almacena el contenido del componente en el nodo de contenido del componente de firma en la página de la.
+1. Después de guardar el cuadro de diálogo, vaya a [CRXDE Lite](http://localhost:4502/crx/de/index.jsp#/content/wknd/us/en/magazine/guide-la-skateparks/jcr%3Acontent/root/container/container/byline) y revise cómo se almacena el contenido del componente en el nodo de contenido del componente de firma en la página de AEM.
 
    Busque el nodo de contenido del componente Firma debajo de la página Parques de patinaje LA, por ejemplo `/content/wknd/us/en/magazine/guide-la-skateparks/jcr:content/root/container/container/byline`.
 
@@ -342,11 +342,11 @@ AEM A continuación, añada el componente Firma a una página de en la. Dado que
 
 A continuación, vamos a crear un Modelo Sling para que actúe como modelo de datos y aloje la lógica empresarial del componente Firma.
 
-AEM Los modelos Sling son objetos Java™ POJO (Java™ antiguos sin formato) impulsados por anotaciones que facilitan la asignación de datos desde el JCR a las variables Java™ y proporcionan eficacia al desarrollarse en el contexto de la.
+Los modelos Sling son objetos Java™ POJO (Java™ antiguos sin formato) impulsados por anotaciones que facilitan la asignación de datos desde el JCR a las variables Java™ y proporcionan eficacia al desarrollar en el contexto de AEM.
 
 ### Revisar dependencias de Maven {#maven-dependency}
 
-AEM El modelo Sling de firma se basa en varias API de Java™ proporcionadas por el usuario de. Estas API están disponibles a través de `dependencies` enumeradas en el archivo POM del módulo `core`. El proyecto utilizado para este tutorial se ha creado para AEM as a Cloud Service. AEM Sin embargo, es único, ya que es compatible con versiones anteriores, con la versión 6.5/6.4, que es compatible con la versión anterior de la aplicación. Por lo tanto, se incluyen ambas dependencias para Cloud Service AEM y 6.x.
+El modelo Sling de firma se basa en varias API de Java™ proporcionadas por AEM. Estas API están disponibles a través de `dependencies` enumeradas en el archivo POM del módulo `core`. El proyecto utilizado para este tutorial se ha creado para AEM as a Cloud Service. Sin embargo, es único, ya que es compatible con versiones anteriores de AEM 6.5/6.4. Por lo tanto, se incluyen ambas dependencias para Cloud Service y AEM 6.x.
 
 1. Abra el archivo de `pom.xml` debajo de `<src>/aem-guides-wknd/core/pom.xml`.
 1. Buscar la dependencia de `aem-sdk-api` - **Solo AEM as a Cloud Service**
@@ -358,9 +358,9 @@ AEM El modelo Sling de firma se basa en varias API de Java™ proporcionadas por
    </dependency>
    ```
 
-   AEM La [aem-sdk-api](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en) contiene todas las API de Java™ públicas expuestas por los usuarios de la red de área de nombres de. `aem-sdk-api` se usa de forma predeterminada al crear este proyecto. La versión se mantiene en el pom del reactor principal desde la raíz del proyecto en `aem-guides-wknd/pom.xml`.
+   [aem-sdk-api](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en) contiene todas las API de Java™ públicas expuestas por AEM. `aem-sdk-api` se usa de forma predeterminada al crear este proyecto. La versión se mantiene en el pom del reactor principal desde la raíz del proyecto en `aem-guides-wknd/pom.xml`.
 
-1. AEM Buscar la dependencia del(la) `uber-jar` - **Solo el(la) 6.5/6.4 del(la)**
+1. Busque la dependencia para `uber-jar` - **Solo AEM 6.5/6.4**
 
    ```xml
    ...
@@ -372,9 +372,9 @@ AEM El modelo Sling de firma se basa en varias API de Java™ proporcionadas por
    ...
    ```
 
-   `uber-jar` solo se incluye cuando se invoca el perfil `classic`, es decir `mvn clean install -PautoInstallSinglePackage -Pclassic`. De nuevo, esto es exclusivo de este proyecto. AEM AEM En un proyecto real, generado a partir del tipo de archivo del proyecto de, `uber-jar` es la versión predeterminada si la versión especificada de los proyectos es 6.5 o 6.4.
+   `uber-jar` solo se incluye cuando se invoca el perfil `classic`, es decir `mvn clean install -PautoInstallSinglePackage -Pclassic`. De nuevo, esto es exclusivo de este proyecto. En un proyecto real, generado a partir del tipo de archivo del proyecto de AEM, `uber-jar` es la versión predeterminada si la versión de AEM especificada es 6.5 o 6.4.
 
-   AEM [uber-jar](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html#experience-manager-api-dependencies) contiene todas las API de Java™ públicas expuestas por la versión 6.x de la biblioteca de datos de usuario de. La versión se mantiene en el pom del reactor principal desde la raíz del proyecto `aem-guides-wknd/pom.xml`.
+   [uber-jar](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html#experience-manager-api-dependencies) contiene todas las API de Java™ públicas expuestas por AEM 6.x. La versión se mantiene en el pom del reactor principal desde la raíz del proyecto `aem-guides-wknd/pom.xml`.
 
 1. Buscar la dependencia de `core.wcm.components.core`:
 
@@ -386,7 +386,7 @@ AEM El modelo Sling de firma se basa en varias API de Java™ proporcionadas por
        </dependency>
    ```
 
-   AEM Estas son las API públicas de Java™ completas expuestas por los componentes principales de la. AEM AEM Los componentes principales son un proyecto que se mantiene fuera de la aplicación y, por lo tanto, tiene un ciclo de lanzamiento independiente. Por este motivo, es una dependencia que debe incluirse por separado y que **no** se incluye con `uber-jar` o `aem-sdk-api`.
+   Estas son las API públicas de Java™ completas expuestas por los componentes principales de AEM. Los componentes principales de AEM son un proyecto que se mantiene fuera de AEM y, por lo tanto, tiene un ciclo de lanzamiento independiente. Por este motivo, es una dependencia que debe incluirse por separado y que **no** se incluye con `uber-jar` o `aem-sdk-api`.
 
    Al igual que uber-jar, la versión de esta dependencia se mantiene en el archivo pom del reactor principal de `aem-guides-wknd/pom.xml`.
 
@@ -508,7 +508,7 @@ Siempre que se realicen cambios en los archivos de este paquete, la [versión de
 
    Revisemos esta anotación y sus parámetros:
 
-   * AEM La anotación `@Model` registra BylineImpl como un modelo Sling cuando se implementa en el entorno de trabajo de la interfaz de usuario de.
+   * La anotación `@Model` registra BylineImpl como modelo Sling cuando se implementa en AEM.
    * El parámetro `adaptables` especifica que la solicitud puede adaptar este modelo.
    * El parámetro `adapters` permite registrar la clase de implementación en la interfaz Byline. Esto permite que el script HTL llame al modelo Sling a través de la interfaz (en lugar de la implementación directamente). [Encontrará más detalles sobre adaptadores aquí](https://sling.apache.org/documentation/bundles/models.html#specifying-an-alternate-adapter-class-since-110).
    * `resourceType` señala al tipo de recurso del componente Firma (creado anteriormente) y ayuda a resolver el modelo correcto si hay varias implementaciones. [Aquí puede encontrar más detalles acerca de cómo asociar una clase de modelo con un tipo de recurso](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130).
@@ -845,7 +845,7 @@ Usemos el enfoque de **segundo**. El primer enfoque es probablemente suficiente,
 
 ## Firma HTL {#byline-htl}
 
-AEM En el módulo `ui.apps`, abra `/apps/wknd/components/byline/byline.html` que se creó en la configuración anterior del componente de la.
+En el módulo `ui.apps`, abra `/apps/wknd/components/byline/byline.html` que se creó en la configuración anterior del componente AEM.
 
 ```html
 <div data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html">
@@ -861,7 +861,7 @@ Revisemos lo que hace esta secuencia de comandos HTL hasta ahora:
 
 ### Actualizar firma HTL
 
-1. Actualice **byline.html** con la siguiente estructura de HTML esquemático:
+1. Actualice **byline.html** con la siguiente estructura esquemática de HTML:
 
    ```html
    <div data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
@@ -923,7 +923,7 @@ Las expresiones se agregan mediante el operador `@` en la expresión HTL.
 
 ### Visualización condicional del marcador de posición {#conditionally-displaying-the-placeholder}
 
-AEM AEM La mayoría de los scripts HTL para componentes de utilizan el **paradigma de marcador de posición** para proporcionar una pista visual a los autores **que indica que un componente se ha creado incorrectamente y que no se muestra en Publish**. La convención para tomar esta decisión es implementar un método en el modelo Sling de respaldo del componente, en este caso: `Byline.isEmpty()`.
+La mayoría de los scripts HTL para componentes de AEM utilizan el **paradigma de marcador de posición** para proporcionar una pista visual a los autores **que indica que un componente se ha creado incorrectamente y que no se muestra en la publicación de AEM**. La convención para tomar esta decisión es implementar un método en el modelo Sling de respaldo del componente, en este caso: `Byline.isEmpty()`.
 
 El método `isEmpty()` se invoca en el modelo Sling de firma y el resultado (o mejor dicho, es negativo, a través del operador `!`) se guarda en una variable HTL llamada `hasContent`:
 
@@ -938,7 +938,7 @@ El método `isEmpty()` se invoca en el modelo Sling de firma y el resultado (o m
    </div>
    ```
 
-   Tenga en cuenta el uso de `data-sly-test`, el bloque HTL `test` es clave, establece una variable HTL y procesa/no procesa el elemento HTML en el que se encuentra. Se basa en el resultado de la evaluación de expresiones HTL. Si es &quot;true&quot;, el elemento HTML se procesa; de lo contrario, no se procesa.
+   Tenga en cuenta el uso de `data-sly-test`, el bloque HTL `test` es clave, establece una variable HTL y procesa/no procesa el elemento HTML en el que está. Se basa en el resultado de la evaluación de expresiones HTL. Si es &quot;true&quot;, el elemento HTML se procesa; de lo contrario, no se procesa.
 
    Esta variable HTL `hasContent` ahora se puede reutilizar para mostrar/ocultar condicionalmente el marcador de posición.
 
@@ -984,7 +984,7 @@ Para ello, vamos a incluir el recurso de firma actual, pero forzar el tipo de re
    <sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=!hasContent}"></sly>
    ```
 
-3. AEM Implemente el código base en una instancia de local. Debido a que se hicieron cambios en `core` y `ui.apps`, es necesario implementar ambos módulos.
+3. Implemente el código base en una instancia local de AEM. Debido a que se hicieron cambios en `core` y `ui.apps`, es necesario implementar ambos módulos.
 
    ```shell
    $ cd aem-guides-wknd/ui.apps
@@ -996,7 +996,7 @@ Para ello, vamos a incluir el recurso de firma actual, pero forzar el tipo de re
    $ mvn clean install -PautoInstallBundle
    ```
 
-   AEM Para implementar en la versión 6.5/6.4 de, invoque el perfil `classic`:
+   Para implementar en AEM 6.5/6.4, invoque el perfil `classic`:
 
    ```shell
    $ cd ../core
@@ -1005,11 +1005,11 @@ Para ello, vamos a incluir el recurso de firma actual, pero forzar el tipo de re
 
    >[!CAUTION]
    >
-   > También puede generar todo el proyecto a partir de la raíz mediante el perfil de Maven `autoInstallSinglePackage`, pero esto puede sobrescribir los cambios de contenido en la página. AEM Esto se debe a que `ui.content/src/main/content/META-INF/vault/filter.xml` se ha modificado para el código de inicio del tutorial a fin de sobrescribir sin problemas el contenido de la existente. En un escenario real, esto no es un problema.
+   > También puede generar todo el proyecto a partir de la raíz mediante el perfil de Maven `autoInstallSinglePackage`, pero esto puede sobrescribir los cambios de contenido en la página. Esto se debe a que `ui.content/src/main/content/META-INF/vault/filter.xml` se ha modificado para el código de inicio del tutorial a fin de sobrescribir sin problemas el contenido de AEM existente. En un escenario real, esto no es un problema.
 
 ### Revisión del componente Firma sin estilo {#reviewing-the-unstyled-byline-component}
 
-1. Después de implementar la actualización, vaya a la página [Guía definitiva de parques de patinaje de Los Ángeles](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html) o a donde haya agregado el componente Firma anteriormente en el capítulo.
+1. Después de implementar la actualización, vaya a la página [Guía de Ultimate para parques de patinaje de Los Ángeles](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html) o donde haya agregado el componente Firma anteriormente en el capítulo.
 
 1. Ahora aparecen las **imágenes**, **nombres** y **ocupaciones**, con un componente sin estilo, pero que funciona como Byline.
 
@@ -1017,7 +1017,7 @@ Para ello, vamos a incluir el recurso de firma actual, pero forzar el tipo de re
 
 ### Revisión del registro del modelo Sling {#reviewing-the-sling-model-registration}
 
-AEM AEM La vista [Estado de modelos Sling de la consola web de](http://localhost:4502/system/console/status-slingmodels) muestra todos los modelos Sling registrados en la vista de estado de la consola web. El modelo Sling de firma puede validarse como instalado y reconocido revisando esta lista.
+La [vista de estado de modelos Sling de la consola web de AEM](http://localhost:4502/system/console/status-slingmodels) muestra todos los modelos Sling registrados en AEM. El modelo Sling de firma puede validarse como instalado y reconocido revisando esta lista.
 
 Si **BylineImpl** no se muestra en esta lista, es probable que haya un problema con las anotaciones del modelo Sling o que el modelo no se haya agregado al paquete correcto (`com.adobe.aem.guides.wknd.core.models`) en el proyecto principal.
 
@@ -1096,9 +1096,9 @@ Agregue estilos predeterminados para el componente Firma.
 
 ### Pasos siguientes {#next-steps}
 
-AEM Continúe aprendiendo sobre el desarrollo de componentes de explorando cómo escribir pruebas JUnit para el código Java™ de Byline para garantizar que todo se desarrolle correctamente y que la lógica empresarial implementada sea correcta y completa.
+Continúe aprendiendo sobre el desarrollo de componentes de AEM explorando cómo escribir pruebas JUnit para el código Java™ de Byline para garantizar que todo se desarrolle correctamente y que la lógica empresarial implementada sea correcta y completa.
 
-* [AEM Escribir pruebas unitarias o componentes de la unidad de](unit-testing.md)
+* [Escribir pruebas unitarias para componentes de AEM](unit-testing.md)
 
 Vea el código terminado en [GitHub](https://github.com/adobe/aem-guides-wknd) o revise e implemente el código localmente en la rama Git `tutorial/custom-component-solution`.
 

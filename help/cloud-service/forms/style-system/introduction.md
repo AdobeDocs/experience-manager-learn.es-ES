@@ -5,21 +5,22 @@ solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Adaptive Forms
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16276
-source-git-commit: 86d282b426402c9ad6be84e9db92598d0dc54f85
+exl-id: f97a9aed-99d3-4cce-bc3b-c80638e4f1cb
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '231'
-ht-degree: 21%
+ht-degree: 26%
 
 ---
 
 # Introducción
 
-El sistema de estilos de Adobe Experience Manager AEM () permite a los usuarios crear varias variaciones visuales de un componente y, a continuación, seleccionar qué estilo utilizar al crear un formulario. Esto hace que los componentes sean más flexibles y reutilizables, sin necesidad de crear componentes personalizados para cada estilo.
+El sistema de estilos de Adobe Experience Manager (AEM) permite a los usuarios crear varias variaciones visuales de un componente y, a continuación, seleccionar qué estilo utilizar al crear un formulario. Esto hace que los componentes sean más flexibles y reutilizables, sin necesidad de crear componentes personalizados para cada estilo.
 
 Este artículo le ayudará a crear variaciones del componente botón y a probar las variaciones en su entorno local listo para la nube antes de insertar los cambios en la instancia de la nube mediante Cloud Manager.
 

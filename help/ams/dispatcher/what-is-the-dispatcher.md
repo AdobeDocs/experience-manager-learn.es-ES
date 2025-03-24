@@ -1,7 +1,7 @@
 ---
 title: ¿Qué es Dispatcher?
 description: Comprenda qué es realmente un Dispatcher.
-version: 6.5
+version: Experience Manager 6.5
 topic: Administration
 feature: Dispatcher
 role: Admin
@@ -10,7 +10,7 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 96c8dd09-e0a7-4abc-b04b-a805aaa67502
 duration: 73
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 2%
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 [Tabla de contenidos](./overview.md)
 
-AEM Empezando por la descripción básica de lo que implica un Dispatcher de la.
+Empezando por la descripción básica de lo que implica un Dispatcher de AEM.
 
 ## Servidor web Apache
 
@@ -35,24 +35,24 @@ Explicación básica de lo que hace un servidor Apache:
 
 
 
-## AEM archivo de módulo específico de la (`mod_dispatcher.so`)
+## Archivo de módulo específico de AEM (`mod_dispatcher.so`)
 
 A continuación, agregue un complemento al servidor web Apache llamado módulo Dispatcher
 
-Explicación básica de qué hace el Adobe AEM del módulo de Dispatcher:
+Explicación básica de qué hace el módulo Dispatcher de Adobe AEM:
 
 - Aumenta el controlador de archivos predeterminado
-- AEM Filtra las solicitudes incorrectas / Protege los puntos de conexión/vientre blando de la pantalla de protección de la
+- Filtra las solicitudes incorrectas / Protege el estómago o los extremos de AEM
 - Equilibrios de carga si hay más de un procesador
 - Permite un directorio de caché activo / Admite el vaciado de archivos estancados
 - Es la puerta principal de todas las instalaciones de AMS y ofrece sitios web y recursos al navegador del cliente
-- AEM Almacena en caché las solicitudes de reutilización a una velocidad mucho más rápida de lo que un servidor de correo electrónico podría realizar por sí solo en la caché de un servidor de
+- Almacena en caché las solicitudes para reabastecerlas a una velocidad mucho más rápida de lo que un servidor de AEM podría lograr por sí solo
 - Mucho más...
 
 ## Flujo de trabajo de tráfico web
 
 Comprender qué partes se instalan juntas para crear un servidor de Dispatcher básico nos lleva a comprender el flujo de trabajo básico de tráfico web para una configuración de Adobe Manager Services.
-AEM Esto le ayudará a comprender qué papel desempeña en la cadena de sistemas que ofrecen contenido a los visitantes de su contenido de la red de la red de la red de la red de la red de la red de la red de la red de la red de la red de la red de la red de la red de la red de la red de la red de la red de la red de la.
+Esto debería ayudarle a comprender qué papel desempeña en la cadena de sistemas que ofrecen contenido a los visitantes de su contenido de AEM.
 
 <b>Sirviendo contenido ya almacenado en caché</b>
 
@@ -65,7 +65,7 @@ End User's Browser request
                     → End User
 ```
 
-AEM <b>Proporcionando contenido nuevo desde el sitio de trabajo</b> de la página de servicio
+<b>Proporcionando contenido nuevo desde AEM</b>
 
 ```
 End User's Browser request 

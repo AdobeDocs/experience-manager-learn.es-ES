@@ -2,14 +2,14 @@
 title: Rellenar formularios adaptables mediante el método setData
 description: Envíe el archivo PDF cargado para extraer datos y rellenar el formulario adaptable con los datos extraídos
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 jira: KT-14196
 exl-id: f380d589-6520-4955-a6ac-2d0fcd5aaf3f
 duration: 32
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # Realizar llamada de Ajax
 
-Cuando el usuario ha cargado el archivo PDF, es necesario realizar una llamada al POST a un servlet y pasar el documento del PDF cargado en la solicitud del POST. La solicitud del POST devuelve una ruta a los datos exportados en el repositorio crx
+Cuando el usuario ha cargado el archivo PDF, necesitamos realizar una llamada de POST a un servlet y pasar el documento de PDF cargado en la solicitud de POST. La petición POST devuelve una ruta a los datos exportados en el repositorio crx
 
 ```javascript
 $("#fileElem").on('change', function (e) {

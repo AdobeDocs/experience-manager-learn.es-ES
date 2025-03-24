@@ -1,8 +1,8 @@
 ---
 title: Exportar fragmento de contenido a XML
-description: AEM Obtenga información sobre cómo se puede exportar un fragmento de contenido desde el Editor de fragmentos de contenido de la
+description: Descubra cómo se puede exportar un fragmento de contenido desde el Editor de fragmentos de contenido de AEM
 feature: Developer Tools, Content Fragments
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -12,7 +12,7 @@ doc-type: article
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: 70adb2c1-9e08-4a4b-b8f1-16bddd84c23d
 duration: 307
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 1%
@@ -31,7 +31,7 @@ Los botones de encabezado pueden existir como un solo botón o como un botón co
 
 Este ejemplo se extiende al punto de extensión `headerBar` para agregar un botón personalizado al Editor de fragmentos de contenido.
 
-| AEM Interfaz de usuario extendida | Punto de extensión |
+| IU de AEM extendida | Punto de extensión |
 | ------------------------ | --------------------- | 
 | [Editor de fragmentos de contenido](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [Menú Encabezado](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/header-menu/) |
 
@@ -43,9 +43,9 @@ El código muestra cómo se puede obtener el contenido del fragmento de contenid
 
 ### Registro de extensiones
 
-AEM `ExtensionRegistration.js`, asignado a la ruta index.html, es el punto de entrada para la extensión de la y define:
+`ExtensionRegistration.js`, asignado a la ruta index.html, es el punto de entrada para la extensión de AEM y define:
 
-+ AEM La ubicación del botón de extensión aparece (`headerMenu`) en la experiencia de creación de la
++ La ubicación del botón de extensión aparece (`headerMenu`) en la experiencia de creación de AEM
 + Definición del botón de extensión en la función getButton()
 + El controlador de clic para el botón, en la función onClick(), o una lista de subelementos y sus controladores de clic.
 

@@ -1,7 +1,7 @@
 ---
 title: Cómo ejecutar un trabajo en una instancia de líder en AEM as a Cloud Service
 description: Obtenga información sobre cómo ejecutar un trabajo en la instancia de líder en AEM as a Cloud Service.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: OSGI, Cloud Manager
 role: Architect, Developer
@@ -11,17 +11,17 @@ duration: 0
 last-substantial-update: 2024-10-23T00:00:00Z
 jira: KT-16399
 thumbnail: KT-16399.jpeg
-source-git-commit: 7dca86137d476418c39af62c3c7fa612635c0583
+exl-id: b8b88fc1-1de1-4b5e-8c65-d94fcfffc5a5
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '557'
 ht-degree: 0%
 
 ---
 
-
 # Cómo ejecutar un trabajo en una instancia de líder en AEM as a Cloud Service
 
-AEM Obtenga información sobre cómo ejecutar un trabajo en la instancia principal del servicio de creación de como parte de AEM as a Cloud Service y comprenda cómo configurarlo para que se ejecute una sola vez.
+Obtenga información sobre cómo ejecutar un trabajo en la instancia de líder en el servicio de AEM Author como parte de AEM as a Cloud Service y comprenda cómo configurarlo para que se ejecute una sola vez.
 
 Los trabajos de Sling son tareas asincrónicas que funcionan en segundo plano, diseñadas para controlar eventos activados por el sistema o el usuario. De forma predeterminada, estos trabajos se distribuyen de forma equitativa en todas las instancias (pods) del clúster.
 
@@ -128,15 +128,15 @@ Los puntos clave que se deben tener en cuenta en el código anterior son:
 
 ### Procesamiento de trabajo predeterminado
 
-Al implementar el código anterior en un entorno de AEM as a Cloud Service AEM AEM AEM y ejecutarlo en el servicio de autor de la, que funciona como un clúster con varias JVM de autor de la, el trabajo se ejecutará una vez en cada instancia de autor de la instancia (pod), lo que significa que el número de trabajos creados coincidirá con el número de pods. El número de pods siempre será mayor que uno (para entornos no RDE), pero fluctuará según la administración de recursos interna de AEM as a Cloud Service.
+Al implementar el código anterior en un entorno de AEM as a Cloud Service y ejecutarlo en el servicio de AEM Author, que funciona como un clúster con varias JVM de AEM Author, el trabajo se ejecutará una vez en cada instancia de AEM Author (pod), lo que significa que el número de trabajos creados coincidirá con el número de pods. El número de pods siempre será mayor que uno (para entornos no RDE), pero fluctuará según la administración de recursos interna de AEM as a Cloud Service.
 
-AEM AEM El trabajo se ejecuta en cada instancia de autor (pod) de la porque `wknd/simple/job/topic` está asociado con la cola principal de la misma, que distribuye los trabajos entre todas las instancias disponibles.
+El trabajo se ejecuta en cada instancia de autor (pod) de AEM porque `wknd/simple/job/topic` está asociado a la cola principal de AEM, que distribuye los trabajos entre todas las instancias disponibles.
 
 Esto suele resultar problemático si el trabajo es responsable de cambiar el estado, como crear o actualizar recursos o servicios externos.
 
-AEM Si desea que el trabajo se ejecute una sola vez en el servicio de creación de la, agregue la [configuración de cola de trabajos](#how-to-run-a-job-on-the-leader-instance) que se describe a continuación.
+Si desea que el trabajo se ejecute una sola vez en el servicio de AEM Author, agregue la [configuración de cola de trabajos](#how-to-run-a-job-on-the-leader-instance) que se describe a continuación.
 
-AEM Puede verificarlo si revisa los registros del servicio de autor de la en [Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#cloud-manager).
+Puede verificarlo si revisa los registros del servicio de AEM Author en [Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#cloud-manager).
 
 ![Trabajo procesado por todas las instancias](./assets/run-job-once/job-processed-by-all-instances.png)
 
@@ -151,13 +151,13 @@ Debería ver lo siguiente:
 <DD.MM.YYYY HH:mm:ss.SSS> INFO [com.adobe.aem.guides.wknd.core.sling.jobs.impl.SimpleJobConsumerImpl] Processing WKND Job, and Job metadata is: Created in activate method
 ```
 
-AEM Hay dos entradas de registro, una para cada instancia de autor de la (`68775db964-nxxcx` y `68775db964-r4zk7`), que indican que cada instancia (pod) ha procesado el trabajo.
+Hay dos entradas de registro, una para cada instancia de autor de AEM (`68775db964-nxxcx` y `68775db964-r4zk7`), que indican que cada instancia (pod) ha procesado el trabajo.
 
 ## Cómo ejecutar un trabajo en la instancia de líder
 
-AEM Para ejecutar un trabajo _solo una vez_ en el servicio de autor de la, cree una nueva cola de trabajos de Sling del tipo **Ordenado** y asocie el tema del trabajo (`wknd/simple/job/topic`) a esta cola. AEM Con esta configuración, solo se permitirá que la instancia de autor (pod) de la versión líder de la aplicación procese el trabajo.
+Para ejecutar un trabajo _solo una vez_ en el servicio de creación de AEM, cree una nueva cola de trabajos de Sling del tipo **Ordenado** y asocie el tema del trabajo (`wknd/simple/job/topic`) a esta cola. Con esta configuración, solo se permitirá que la instancia de autor (pod) de AEM principal procese el trabajo.
 
-AEM En el módulo `ui.config` de su proyecto de, cree un archivo de configuración OSGi (`org.apache.sling.event.jobs.QueueConfiguration~wknd.cfg.json`) y guárdelo en la carpeta `ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig/config.author`.
+En el módulo `ui.config` del proyecto AEM, cree un archivo de configuración OSGi (`org.apache.sling.event.jobs.QueueConfiguration~wknd.cfg.json`) y almacénelo en la carpeta `ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig/config.author`.
 
 ```json
 {
@@ -177,7 +177,7 @@ Los puntos clave que se deben tener en cuenta en la configuración anterior son:
 - El tipo de cola está establecido en `ORDERED`.
 - El número máximo de trabajos paralelos se ha establecido en `1`.
 
-AEM Una vez implementada la configuración anterior, el trabajo lo procesa exclusivamente la instancia principal, lo que garantiza que se ejecute una sola vez en todo el servicio de autor de la.
+Una vez implementada la configuración anterior, el trabajo lo procesará exclusivamente la instancia principal, lo que garantiza que se ejecute una sola vez en todo el servicio de AEM Author.
 
 ```
 <DD.MM.YYYY HH:mm:ss.SSS> [cm-pxxxx-exxxx-aem-author-7475cf85df-qdbq5] *INFO* [FelixLogListener] Events.Service.org.apache.sling.event Service [QueueMBean for queue WKND Queue - ORDERED,7755, [org.apache.sling.event.jobs.jmx.StatisticsMBean]] ServiceEvent REGISTERED

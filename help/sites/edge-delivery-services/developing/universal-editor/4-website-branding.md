@@ -1,7 +1,7 @@
 ---
 title: Agregar marca del sitio web
 description: Defina CSS global, variables CSS y fuentes web para un sitio de Edge Delivery Services.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
 role: Developer
@@ -10,7 +10,7 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 900
 exl-id: a5cd9906-7e7a-43dd-a6b2-e80f67d37992
-source-git-commit: ecd3ce33204fa6f3f2c27ebf36e20ec26e429981
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1315'
 ht-degree: 0%
@@ -48,7 +48,7 @@ $ git checkout -b wknd-styles
 
 ## CSS global
 
-Los Edge Delivery Services utilizan un archivo CSS global, ubicado en `styles/styles.css`, para configurar los estilos comunes de todo el sitio web. El `styles.css` controla aspectos como los colores, las fuentes y el espaciado, asegurándose de que todo se ve uniforme en el sitio.
+Edge Delivery Services usa un archivo CSS global, ubicado en `styles/styles.css`, para configurar los estilos comunes de todo el sitio web. El `styles.css` controla aspectos como los colores, las fuentes y el espaciado, asegurándose de que todo se ve uniforme en el sitio.
 
 CSS global debe ser agnóstico con construcciones de nivel inferior como bloques, centrándose en la apariencia general del sitio y tratamientos visuales compartidos.
 
@@ -96,7 +96,7 @@ A medida que desarrolla un sitio web y se encuentra repitiendo los mismos valore
 
 Los elementos vacíos se diseñan directamente a través de su nombre de elemento en lugar de utilizar una clase CSS. Por ejemplo, en lugar de aplicar estilo a una clase CSS `.page-heading`, los estilos se aplican al elemento `h1` mediante `h1 { ... }`.
 
-En el archivo `styles/styles.css`, se aplica un conjunto de estilos base a elementos HTML vacíos. Los sitios web de los Edge Delivery Services dan prioridad al uso de elementos vacíos porque se alinean con el HTML semántico nativo del servicio de Edge Delivery.
+En el archivo `styles/styles.css`, se aplica un conjunto de estilos base a los elementos HTML vacíos. Los sitios web de Edge Delivery Services dan prioridad al uso de elementos vacíos porque se alinean con la semántica nativa de HTML del servicio de Edge Delivery.
 
 Para alinearnos con la marca WKND, vamos a aplicar estilo a algunos elementos vacíos en `styles.css`:
 
@@ -123,7 +123,7 @@ Estos estilos garantizan que los elementos de `h2`, a menos que se anulen, tenga
 
 ### Elementos deducidos
 
-En los Edge Delivery Services, el código `scripts.js` y `aem.js` del proyecto mejoran automáticamente elementos HTML específicos basados en su contexto dentro del HTML.
+En Edge Delivery Services, el código `scripts.js` y `aem.js` del proyecto mejoran automáticamente elementos específicos de HTML desnudos en función de su contexto en HTML.
 
 Por ejemplo, los elementos de anclaje (`<a>`) creados en su propia línea, en lugar de estar alineados con el texto adyacente, se infieren como botones basados en este contexto. Estos anclajes se encapsulan automáticamente con un contenedor `div` con clase CSS `button-container` y el elemento de anclaje tiene agregada una clase CSS `button`.
 
@@ -291,11 +291,11 @@ Por último, actualice las variables CSS `styles/styles.css` para que utilicen l
 
 Las fuentes web suelen afectar al rendimiento debido a su tamaño, lo que aumenta potencialmente las puntuaciones del desplazamiento acumulativo de diseño (CLS) y reduce las puntuaciones generales de Lighthouse. Para garantizar la visualización instantánea del texto mientras se cargan las fuentes web, los proyectos de Edge Delivery Services utilizan fuentes de reserva nativas del explorador. Este método ayuda a mantener una experiencia de usuario suave mientras se aplica la fuente deseada.
 
-Para seleccionar la mejor fuente de reserva, use la [extensión Helix Font Fallback Chrome](https://www.aem.live/developer/font-fallback) de Adobe, que determina una fuente muy parecida para que los navegadores la usen antes de que se cargue la fuente personalizada. Las declaraciones de fuentes de reserva resultantes deben agregarse al archivo `styles/styles.css` para mejorar el rendimiento y garantizar una experiencia perfecta para los usuarios.
+Para seleccionar la mejor fuente de reserva, use la [extensión Helix Font Fallback Chrome](https://www.aem.live/developer/font-fallback) de Adobe, que determina la fuente más parecida que deben usar los exploradores antes de que se cargue la fuente personalizada. Las declaraciones de fuentes de reserva resultantes deben agregarse al archivo `styles/styles.css` para mejorar el rendimiento y garantizar una experiencia perfecta para los usuarios.
 
 ![Extensión de Chrome de reserva de fuente Helix](./assets/4-website-branding/font-fallback-chrome-plugin.png){align=center}
 
-Para usar la extensión [Helix Font Fallback Chrome](https://www.aem.live/developer/font-fallback), asegúrate de que la página web tenga fuentes web aplicadas en las mismas variaciones usadas en el sitio web de los Edge Delivery Services. Este tutorial muestra la extensión en [wknd.site](http://wknd.site/us/en.html). Al desarrollar un sitio web, aplique la extensión al sitio en el que se está trabajando en lugar de a [wknd.site](http://wknd.site/us/en.html).
+Para usar la extensión [Helix Font Fallback Chrome](https://www.aem.live/developer/font-fallback), asegúrate de que la página web tenga fuentes web aplicadas en las mismas variaciones usadas en el sitio web de Edge Delivery Services. Este tutorial muestra la extensión en [wknd.site](http://wknd.site/us/en.html). Al desarrollar un sitio web, aplique la extensión al sitio en el que se está trabajando en lugar de a [wknd.site](http://wknd.site/us/en.html).
 
 ```css
 /* styles/styles.css */
@@ -336,7 +336,7 @@ Agregue los nombres de las familias de fuentes de reserva a las variables CSS de
 
 ## Previsualización de desarrollo
 
-AEM A medida que agrega CSS, el entorno de desarrollo local de la CLI de la vuelve a cargar automáticamente los cambios, lo que facilita y agiliza la visualización de cómo el CSS afecta al bloque.
+A medida que agrega CSS, el entorno de desarrollo local de la CLI de AEM vuelve a cargar automáticamente los cambios, lo que facilita y agiliza la visualización de cómo el CSS afecta al bloque.
 
 ![Vista previa de desarrollo de WKND brand CSS](./assets/4-website-branding/preview.png)
 
@@ -385,10 +385,10 @@ Una vez insertados los cambios en la rama `wknd-styles`, cree una solicitud de e
    ```
 
    * `Fix #1` hace referencia al problema de GitHub creado anteriormente.
-   * AEM Las direcciones URL de prueba indican a la sincronización de código de la qué ramas utilizar para la validación y comparación. La dirección URL &quot;Después&quot; utiliza la rama de trabajo `wknd-styles` para comprobar cómo afectan los cambios de código al rendimiento del sitio web.
+   * Las direcciones URL de prueba indican a AEM Code Sync qué ramas utilizar para la validación y comparación. La dirección URL &quot;Después&quot; utiliza la rama de trabajo `wknd-styles` para comprobar cómo afectan los cambios de código al rendimiento del sitio web.
 
 6. Haga clic en **Crear solicitud de extracción**.
-7. AEM Espere a que [la aplicación GitHub de sincronización de código de ](./1-new-code-project.md) **complete las comprobaciones de calidad**. Si fallan, resuelva los errores y vuelva a ejecutar las comprobaciones.
+7. Espere a que la [aplicación AEM Code Sync de GitHub](./1-new-code-project.md) **complete las comprobaciones de calidad**. Si fallan, resuelva los errores y vuelva a ejecutar las comprobaciones.
 8. Una vez superadas las comprobaciones, **combine la solicitud de extracción** en `main`.
 
 Con los cambios combinados en `main`, no se consideran implementados en producción y el nuevo desarrollo puede continuar en función de estas actualizaciones.

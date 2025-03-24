@@ -1,7 +1,7 @@
 ---
 title: Salida de puerto flexible
 description: Obtenga información sobre cómo configurar y utilizar la salida de puerto flexible para admitir conexiones externas de AEM as a Cloud Service a servicios externos.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
 role: Architect, Developer
@@ -11,7 +11,7 @@ thumbnail: KT-9350.jpeg
 exl-id: 5c1ff98f-d1f6-42ac-a5d5-676a54ef683c
 last-substantial-update: 2024-04-26T00:00:00Z
 duration: 870
-source-git-commit: 29ac030f3774da2c514525f7cb85f6f48b84369f
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1275'
 ht-degree: 2%
@@ -24,7 +24,7 @@ Obtenga información sobre cómo configurar y utilizar la salida de puerto flexi
 
 ## ¿Qué es la salida de puerto flexible?
 
-La salida de puerto flexible permite adjuntar a AEM as a Cloud Service AEM reglas de reenvío de puerto específicas y personalizadas, lo que permite realizar conexiones desde el puerto a servicios externos.
+La salida de puerto flexible permite adjuntar reglas de reenvío de puerto personalizadas y específicas a AEM as a Cloud Service, lo que permite realizar conexiones desde AEM a servicios externos.
 
 Un programa Cloud Manager solo puede tener un tipo de infraestructura de red __single__. Asegúrese de que la salida de puerto flexible sea el tipo más [apropiado de infraestructura de red](./advanced-networking.md) para su AEM as a Cloud Service antes de ejecutar los siguientes comandos.
 
@@ -174,7 +174,7 @@ Con la salida de puerto flexible creada, ahora puede configurar las reglas de re
    |---------------------------------|----------|----------------|------------------|----------|
    | `AEM_PROXY_HOST` | `portForwards.portOrig` | → | `portForwards.name` | `portForwards.portDest` |
 
-   AEM Si la implementación de la __only__ requiere conexiones HTTP/HTTPS (puerto 80/443) al servicio externo, deje vacía la matriz `portForwards`, ya que estas reglas solo son necesarias para solicitudes que no sean HTTP/HTTPS.
+   Si su implementación de AEM __only__ requiere conexiones HTTP/HTTPS (puerto 80/443) al servicio externo, deje vacía la matriz `portForwards`, ya que estas reglas solo son necesarias para solicitudes que no sean HTTP/HTTPS.
 
 1. Para cada entorno, valide que las reglas de salida estén en vigor mediante la operación de la API de Cloud Manager [getEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/).
 
@@ -190,26 +190,26 @@ Con la salida de puerto flexible creada, ahora puede configurar las reglas de re
 
 1. Las configuraciones de salida de puerto flexible se pueden actualizar mediante la operación de la API de Cloud Manager [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/). Recuerde que `enableEnvironmentAdvancedNetworkingConfiguration` es una operación de `PUT`, por lo que todas las reglas deben proporcionarse con cada invocación de esta operación.
 
-1. AEM Ahora, puede utilizar la configuración flexible de salida de puerto en el código personalizado de la y en la configuración.
+1. Ahora puede utilizar la configuración flexible de salida de puerto en su código y configuración personalizados de AEM.
 
 
 ## Conexión a servicios externos mediante salida de puerto flexible
 
-AEM Con el proxy de salida de puerto flexible habilitado, el código y la configuración de la pueden utilizarlos para realizar llamadas a servicios externos. AEM Existen dos tipos de llamadas externas que se tratan de manera diferente en el modo que se hace:
+Con el proxy de salida de puerto flexible habilitado, el código y la configuración de AEM pueden utilizarlos para realizar llamadas a servicios externos. Hay dos tipos de llamadas externas que AEM trata de manera diferente:
 
 1. Llamadas HTTP/HTTPS a servicios externos en puertos no estándar
    + Incluye llamadas HTTP/HTTPS realizadas a servicios que se ejecutan en puertos que no son los puertos estándar 80 o 443.
 1. llamadas no HTTP/HTTPS a servicios externos
    + Incluye cualquier llamada que no sea HTTP, como conexiones con servidores de correo, bases de datos SQL o servicios que se ejecutan en otros protocolos que no son HTTP/HTTPS.
 
-AEM Las solicitudes HTTP/HTTPS de los puertos estándar (80/443) se permiten de forma predeterminada y no necesitan configuraciones ni consideraciones adicionales.
+Las solicitudes HTTP/HTTPS de AEM en puertos estándar (80/443) están permitidas de forma predeterminada y no necesitan configuraciones ni consideraciones adicionales.
 
 
 ### HTTP/HTTPS en puertos no estándar
 
-AEM Cuando se crean conexiones HTTP/HTTPS a puertos no estándar (no-80/443) desde la red de puertos, las conexiones deben realizarse a través de puertos y hosts especiales, proporcionados mediante marcadores de posición.
+Al crear conexiones HTTP/HTTPS a puertos no estándar (no-80/443) desde AEM, las conexiones deben realizarse a través de hosts y puertos especiales, proporcionados mediante marcadores de posición.
 
-AEM AEM proporciona dos conjuntos de variables de sistema Java™ especiales que se asignan a los proxies HTTP/HTTPS que se utilizan para la ejecución de un proceso de.
+AEM proporciona dos conjuntos de variables de sistema Java™ especiales que se asignan a los proxies HTTP/HTTPS de AEM.
 
 | Nombre de variable | Uso | Código Java™ | Configuración de OSGi |
 | - |  - | - | - |
@@ -241,14 +241,14 @@ Al realizar llamadas HTTP/HTTPS a servicios externos en puertos no estándar, no
 
 ### Conexiones no HTTP/HTTPS a servicios externos
 
-Al crear conexiones no HTTP/HTTPS (por ejemplo, AEM AEM SQL, SMTP, etc.) desde el punto de vista de la seguridad, la conexión debe realizarse a través de un nombre de host especial proporcionado por el usuario de la red de seguridad de la red de datos (SQL, SMTP, etc.) de la red de seguridad de la red de datos
+Al crear conexiones no HTTP/HTTPS (por ejemplo, SQL, SMTP, etc.) de AEM, la conexión debe realizarse mediante un nombre de host especial proporcionado por AEM.
 
 | Nombre de variable | Uso | Código Java™ | Configuración de OSGi |
 | - |  - | - | - |
 | `AEM_PROXY_HOST` | Host proxy para conexiones no HTTP/HTTPS | `System.getenv().getOrDefault("AEM_PROXY_HOST", "proxy.tunnel")` | `$[env:AEM_PROXY_HOST;default=proxy.tunnel]` |
 
 
-AEM A continuación, se llama a las conexiones a servicios externos a través de `AEM_PROXY_HOST` y del puerto asignado (`portForwards.portOrig`), que luego enruta al nombre de host externo asignado (`portForwards.name`) y al puerto (`portForwards.portDest`).
+A continuación, se llama a las conexiones a servicios externos a través de `AEM_PROXY_HOST` y del puerto asignado (`portForwards.portOrig`), que AEM enruta al nombre de host externo asignado (`portForwards.name`) y al puerto (`portForwards.portDest`).
 
 | Host de proxy | Puerto Proxy |  | Host externo | Puerto externo |
 |---------------------------------|----------|----------------|------------------|----------|
@@ -261,7 +261,7 @@ AEM A continuación, se llama a las conexiones a servicios externos a través de
       <a  href="./examples/sql-datasourcepool.md"><img alt="Conexión SQL con JDBC DataSourcePool" src="./assets/code-examples__sql-osgi.png"/></a>
       <div><strong><a href="./examples/sql-datasourcepool.md">Conexión SQL con el conjunto de datos JDBC</a></strong></div>
       <p>
-            AEM Ejemplo de código Java™ conectarse a bases de datos SQL externas configurando el grupo de fuentes de datos JDBC de la configuración de la aplicación de datos de JDBC de la.
+            Ejemplo de código Java™ conectarse a bases de datos SQL externas configurando el grupo de fuentes de datos JDBC de AEM.
       </p>
     </td>   
    <td>
@@ -275,7 +275,7 @@ AEM A continuación, se llama a las conexiones a servicios externos a través de
       <a  href="./examples/email-service.md"><img alt="Red privada virtual (VPN)" src="./assets/code-examples__email.png"/></a>
       <div><strong><a href="./examples/email-service.md">Servicio de correo electrónico</a></strong></div>
       <p>
-        AEM Ejemplo de configuración de OSGi que utiliza la conexión con los servicios de correo electrónico externos mediante el uso de la.
+        Ejemplo de configuración de OSGi que utiliza AEM para conectarse a servicios de correo electrónico externos.
       </p>
     </td>   
 </tr></table>

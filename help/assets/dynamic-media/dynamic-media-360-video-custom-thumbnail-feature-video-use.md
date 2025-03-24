@@ -1,15 +1,15 @@
 ---
 title: Uso de vídeos de Dynamic Media 360 y miniaturas de vídeo personalizadas con AEM Assets
-description: Las mejoras de Dynamic Media AEM Viewer en la versión 6.5 de incluyen la adición de compatibilidad con el procesamiento de vídeo 360, 360 visores de medios (video360Social y video360VR) y la capacidad de seleccionar miniaturas de vídeo personalizadas.
+description: Las mejoras del visualizador de Dynamic Media en AEM 6.5 incluyen la adición de compatibilidad con el procesamiento de vídeo 360, 360 visualizadores de medios (video360Social y video360VR) y la capacidad de seleccionar miniaturas de vídeo personalizadas.
 feature: Video Profiles
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Content Management
 role: User
 level: Beginner
 doc-type: Feature Video
 exl-id: 4ee0b68f-3897-4104-8615-9de8dbb8f327
 duration: 656
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 3%
@@ -18,17 +18,17 @@ ht-degree: 3%
 
 # Uso de vídeos de Dynamic Media 360 y miniaturas de vídeo personalizadas con AEM Assets
 
-Las mejoras de Dynamic Media AEM Viewer en la versión 6.5 de incluyen la adición de compatibilidad con el procesamiento de vídeo 360, 360 visores de medios (video360Social y video360VR) y la capacidad de seleccionar miniaturas de vídeo personalizadas.
+Las mejoras del visualizador de Dynamic Media en AEM 6.5 incluyen la adición de compatibilidad con el procesamiento de vídeo 360, 360 visualizadores de medios (video360Social y video360VR) y la capacidad de seleccionar miniaturas de vídeo personalizadas.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26391?quality=12&learn=on)
 
 >[!NOTE]
 >
->AEM En el vídeo se da por hecho que la instancia de se está ejecutando en el modo Dynamic Media S7.  AEM [Aquí se pueden encontrar instrucciones para configurar la con Dynamic Media](https://helpx.adobe.com/es/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html). De forma predeterminada, al cargar un vídeo, Dynamic Media procesa el material de archivo como un vídeo de 360, si tiene una relación de aspecto de 2:1. es decir, la relación entre anchura y altura es de 2:1.
+>El vídeo supone que la instancia de AEM se está ejecutando en el modo Dynamic Media S7.  [Aquí encontrará instrucciones para configurar AEM con Dynamic Media](https://helpx.adobe.com/es/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html). Al cargar un vídeo, Dynamic Media procesa el material de archivo como un vídeo de 360 de forma predeterminada si tiene una relación de aspecto de 2:1. es decir, la relación entre anchura y altura es de 2:1.
 
 >[!NOTE]
 >
->Los componentes multimedia de Dynamic Media 360 solo admiten vídeos de 360.
+>Los componentes de Dynamic Media 360 Media solo admiten vídeos de 360.
 
 ## Vídeos de Dynamic Media 360
 
@@ -36,7 +36,7 @@ Los vídeos de 360 grados, también conocidos como vídeos esféricos, son graba
 
 ## Vídeos de Dynamic Media 360
 
-El vídeo de Dynamic Media ahora admite la capacidad de seleccionar una miniatura personalizada para el vídeo. Un usuario puede seleccionar un recurso existente de AEM Assets o seleccionar un fotograma de vídeo como miniatura.
+El vídeo de Dynamic Media ahora admite la capacidad de seleccionar una miniatura personalizada para el vídeo. Un usuario puede seleccionar un recurso existente de los AEM Assets o seleccionar un fotograma de vídeo como miniatura.
 
 ## Visores de Dynamic 360 Media
 
@@ -50,7 +50,7 @@ El vídeo de Dynamic Media ahora admite la capacidad de seleccionar una miniatur
    <tr>
       <td>Modo de ejecución de Dynamic Media</td>
       <td>Solo modo Scene7 de Dynamic Media</td>
-      <td>Solo modo Scene7 de Dynamic Media<br>
+      <td>Solo modo Scene7 de medios dinámicos<br>
          <br>
       </td>
    </tr>
@@ -90,7 +90,7 @@ El vídeo de Dynamic Media ahora admite la capacidad de seleccionar una miniatur
       </td>
    </tr>
    <tr>
-      <td>Reproductor de HTML 5</td>
+      <td>Reproductor de HTML5</td>
       <td>Sí</td>
       <td>Sí</td>
    </tr>
@@ -104,4 +104,4 @@ El vídeo de Dynamic Media ahora admite la capacidad de seleccionar una miniatur
 
 ## Recursos adicionales{#additional-resources}
 
-[Configuración de Dynamic Media en modo Scene7](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dms7.html)
+[Configuración de Dynamic Media en el modo Scene7](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dms7.html)

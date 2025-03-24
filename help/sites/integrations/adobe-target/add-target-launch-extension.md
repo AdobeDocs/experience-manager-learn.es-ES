@@ -1,7 +1,7 @@
 ---
 title: Añadir la extensión de Target a una propiedad de etiquetas
 description: Obtenga información sobre cómo añadir la extensión de Adobe Target a una propiedad de etiquetas.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 jira: KT-6131
 thumbnail: 41247.jpg
 topic: Integrations
@@ -13,7 +13,7 @@ badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title=
 doc-type: Tutorial
 exl-id: aa48ffef-1105-4d0d-b4b4-12ac5d2eea23
 duration: 290
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 3%
@@ -22,9 +22,9 @@ ht-degree: 3%
 
 # Añadir la extensión de Target a una propiedad de etiquetas {#adobe-target-extension}
 
-Para continuar con este vídeo, ya debe tener [etiquetas integradas en Adobe Experience Platform AEM con {100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](../experience-platform/data-collection/tags/overview.md)
+Para continuar con este vídeo, ya debe tener [etiquetas integradas en Adobe Experience Platform con AEM](../experience-platform/data-collection/tags/overview.md).
 
-Obtenga información sobre cómo habilitar Adobe Target AEM en el sitio web de la mediante etiquetas.
+Obtenga información sobre cómo habilitar Adobe Target en el sitio web de AEM mediante etiquetas.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41247?quality=12&learn=on)
 
@@ -35,4 +35,4 @@ Obtenga información sobre cómo habilitar Adobe Target AEM en el sitio web de l
 ## Vínculos de soporte
 
 + [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
-+ [Introducción al Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)
++ [Introducción a Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)

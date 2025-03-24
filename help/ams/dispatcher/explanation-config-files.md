@@ -1,7 +1,7 @@
 ---
 title: Explicación de los archivos de configuración de Dispatcher
 description: Comprenda los archivos de configuración, las convenciones de nomenclatura y mucho más.
-version: 6.5
+version: Experience Manager 6.5
 topic: Administration
 feature: Dispatcher
 role: Admin
@@ -10,7 +10,7 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: ec8e2804-1fd6-4e95-af6d-07d840069c8b
 duration: 379
-source-git-commit: ef9c70e7895176e3cd535141a5de3c49886e666e
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1694'
 ht-degree: 0%
@@ -42,14 +42,14 @@ Al servidor web Apache no le importa realmente la extensión de archivo de un ar
 
 | Archivo | Destino del archivo | Descripción |
 | --- | --- | --- |
-| NOMBRE DE ARCHIVO`.any` | `/etc/httpd/conf.dispatcher.d/` | AEM El módulo Dispatcher Apache de la aplicación obtiene su configuración a partir de `*.any` archivos. El archivo de inclusión principal predeterminado es `conf.dispatcher.d/dispatcher.any` |
+| NOMBRE DE ARCHIVO`.any` | `/etc/httpd/conf.dispatcher.d/` | El módulo AEM Dispatcher Apache obtiene su configuración a partir de `*.any` archivos. El archivo de inclusión principal predeterminado es `conf.dispatcher.d/dispatcher.any` |
 | NOMBRE DE ARCHIVO`_farm.any` | Ensayado: `/etc/httpd/conf.dispatcher.d/available_farms/`<br>Activo: `/etc/httpd/conf.dispatcher.d/enabled_farms/`<br><br><b>Nota:</b> estos archivos de granja no se van a copiar en la carpeta `enabled_farms`, pero usan `symlinks` para establecer una ruta relativa al archivo `available_farms/*_farm.any`. Dentro del archivo `conf.dispatcher.d/dispatcher.any` se incluyen <br/>`*_farm.any` archivos. Estos archivos de granja principales existen para controlar el comportamiento del módulo para cada tipo de representación o sitio web. Los archivos se crean en el directorio `available_farms` y se habilitan con un `symlink` en el directorio `enabled_farms`.  <br/>Los incluye automáticamente por nombre del archivo `dispatcher.any`.<br/><b>Los archivos de granja de servidores de línea de base</b> comienzan por `000_` para asegurarse de que se cargan primero.Los archivos de granja <br><b>Custom</b> deben cargarse después de iniciar su esquema numérico en `100_` para garantizar el comportamiento correcto de inclusión. |
 | NOMBRE DE ARCHIVO`_filters.any` | `/etc/httpd/conf.dispatcher.d/filters/` | `*_filters.any` archivos se incluyen desde dentro de los `conf.dispatcher.d/enabled_farms/*_farm.any` archivos. Cada granja tiene un conjunto de reglas que cambian el tráfico que debe filtrarse y no llegar a los procesadores. |
 | NOMBRE DE ARCHIVO`_vhosts.any` | `/etc/httpd/conf.dispatcher.d/vhosts/` | `*_vhosts.any` archivos se incluyen desde dentro de los `conf.dispatcher.d/enabled_farms/*_farm.any` archivos. Estos archivos son una lista de nombres de host o rutas uri que deben coincidir con la coincidencia de blob para determinar qué procesador utilizar para atender esa solicitud |
 | NOMBRE DE ARCHIVO`_cache.any` | `/etc/httpd/conf.dispatcher.d/cache/` | `*_cache.any` archivos se incluyen desde dentro de los `conf.dispatcher.d/enabled_farms/*_farm.any` archivos. Estos archivos especifican qué elementos se almacenan en caché y cuáles no |
 | NOMBRE DE ARCHIVO`_invalidate_allowed.any` | `/etc/httpd/conf.dispatcher.d/cache/` | `*_invalidate_allowed.any` archivos se incluyen dentro de los `conf.dispatcher.d/enabled_farms/*_farm.any` archivos. Especifican qué direcciones IP pueden enviar solicitudes de vaciado e invalidación. |
 | NOMBRE DE ARCHIVO`_clientheaders.any` | `/etc/httpd/conf.dispatcher.d/clientheaders/` | `*_clientheaders.any` archivos se incluyen dentro de los `conf.dispatcher.d/enabled_farms/*_farm.any` archivos. Especifican los encabezados de cliente que deben pasarse a cada procesador. |
-| NOMBRE DE ARCHIVO`_renders.any` | `/etc/httpd/conf.dispatcher.d/renders/` | `*_renders.any` archivos se incluyen dentro de los `conf.dispatcher.d/enabled_farms/*_farm.any` archivos. Estos especifican la configuración de IP, puerto y tiempo de espera para cada procesador. AEM Un procesador adecuado puede ser un servidor de LiveCycle o cualquier sistema en el que el Dispatcher pueda recuperar o proxy las solicitudes de |
+| NOMBRE DE ARCHIVO`_renders.any` | `/etc/httpd/conf.dispatcher.d/renders/` | `*_renders.any` archivos se incluyen dentro de los `conf.dispatcher.d/enabled_farms/*_farm.any` archivos. Estos especifican la configuración de IP, puerto y tiempo de espera para cada procesador. Un procesador adecuado puede ser un servidor de LiveCycle o cualquier sistema AEM desde el que Dispatcher pueda recuperar o proxy las solicitudes |
 
 ## Problemas evitados
 

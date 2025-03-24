@@ -2,7 +2,7 @@
 title: Cómo configurar el entorno de desarrollo rápido
 description: Aprenda a configurar el entorno de desarrollo rápido para AEM as a Cloud Service.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -11,7 +11,7 @@ thumbnail: KT-11861.png
 last-substantial-update: 2024-06-04T00:00:00Z
 exl-id: ab9ee81a-176e-4807-ba39-1ea5bebddeb2
 duration: 485
-source-git-commit: f714adaa9bb637c0c7b17837c1d4b9f2be737c5c
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 2%
@@ -27,7 +27,7 @@ Este vídeo muestra:
 - Agregar un RDE al programa mediante Cloud Manager
 - Flujo de inicio de sesión RDE con Adobe IMS, por qué es similar a cualquier otro entorno de AEM as a Cloud Service
 - Configuración de [Adobe I/O Runtime Extensible CLI](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) también conocida como `aio CLI`
-- AEM Instalación y configuración del complemento de RDE y Cloud Manager `aio CLI` de mediante el modo no interactivo. Para ver el modo interactivo, consulte las [instrucciones de configuración](#setup-the-aem-rde-plugin)
+- Instalación y configuración del complemento AEM RDE y Cloud Manager `aio CLI` mediante el modo no interactivo. Para ver el modo interactivo, consulte las [instrucciones de configuración](#setup-the-aem-rde-plugin)
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415490?quality=12&learn=on)
 
@@ -58,16 +58,16 @@ La CLI de aio debe tener complementos instalados y configurados con el ID de ent
 
 >[!TAB Modo interactivo]
 
-AEM Instale y configure los complementos de RDE de la mediante el comando `plugins:install` de `aio cli`.
+Instale y configure los complementos de AEM RDE mediante el comando `plugins:install` de `aio cli`.
 
-1. AEM Instale el complemento RDE de la CLI de aio usando el comando `plugins:install` de `aio cli`.
+1. Instale el complemento AEM RDE de la CLI de aio mediante el comando `plugins:install` de `aio cli`.
 
    ```shell
    $ aio plugins:install @adobe/aio-cli-plugin-aem-rde    
    $ aio plugins:update
    ```
 
-   AEM El complemento de RDE, permite a los desarrolladores implementar código y contenido desde el equipo local.
+   El complemento AEM RDE permite a los desarrolladores implementar código y contenido desde el equipo local.
 
 2. Inicie sesión en la CLI extensible de Adobe I/O Runtime ejecutando el siguiente comando para obtener el token de acceso. Asegúrese de iniciar sesión en la misma organización de Adobe que su Cloud Manager.
 
@@ -102,7 +102,7 @@ AEM Instale y configure los complementos de RDE de la mediante el comando `plugi
 
 >[!TAB Modo no interactivo]
 
-Instale y configure los complementos de Cloud Manager AEM y RDE mediante el comando `plugins:install` de `aio cli`.
+Instale y configure los complementos de Cloud Manager y AEM RDE mediante el comando `plugins:install` de `aio cli`.
 
 ```shell
 $ aio plugins:install @adobe/aio-cli-plugin-cloudmanager
@@ -112,7 +112,7 @@ $ aio plugins:update
 
 El complemento de Cloud Manager permite a los desarrolladores interactuar con Cloud Manager desde la línea de comandos.
 
-AEM El complemento de RDE, permite a los desarrolladores implementar código y contenido desde el equipo local.
+El complemento AEM RDE permite a los desarrolladores implementar código y contenido desde el equipo local.
 
 Los complementos de CLI de aio deben configurarse para interactuar con su RDE.
 
@@ -154,13 +154,13 @@ Los complementos de CLI de aio deben configurarse para interactuar con su RDE.
 
 ## Verificar acceso de RDE
 
-AEM Compruebe la instalación y configuración del complemento RDE de la ejecutando el siguiente comando.
+Compruebe la instalación y configuración del complemento AEM RDE ejecutando el siguiente comando.
 
 ```shell
 $ aio aem:rde:status
 ```
 
-AEM La información de estado de RDE se muestra como el estado del entorno, la lista de _sus paquetes de proyecto_ y las configuraciones en los servicios de creación y publicación.
+La información de estado de RDE se muestra como el estado del entorno, la lista de _sus paquetes del proyecto AEM_ y las configuraciones en el servicio de creación y publicación.
 
 ## Siguiente paso
 
@@ -175,6 +175,6 @@ Configuración de [Adobe I/O Runtime Extensible CLI](https://developer.adobe.com
 
 [uso y comandos de CLI de aio](https://github.com/adobe/aio-cli#usage)
 
-[Complemento de CLI de Adobe I/O Runtime AEM para interacciones con entornos de desarrollo rápido de](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
+[Complemento CLI de Adobe I/O Runtime para interacciones con entornos de desarrollo rápido de AEM](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
 
 [Complemento Cloud Manager aio CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)

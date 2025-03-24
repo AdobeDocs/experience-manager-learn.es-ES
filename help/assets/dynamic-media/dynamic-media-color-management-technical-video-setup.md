@@ -1,36 +1,36 @@
 ---
-title: AEM Explicación de la administración de color con Dynamic Media de
-description: En este vídeo exploramos la gestión de color de Dynamic Media y cómo se puede utilizar para proporcionar funciones de previsualización de corrección de color en para AEM Assets.
+title: Explicación de la administración de color con AEM Dynamic Media
+description: En este vídeo exploramos la administración de color de Dynamic Media y cómo se puede utilizar para proporcionar funciones de previsualización de corrección de color en para AEM Assets.
 feature: Image Profiles, Video Profiles
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Content Management
 role: Developer
 level: Intermediate
 doc-type: Feature Video
 exl-id: a733532b-db64-43f6-bc43-f7d422d5071a
 duration: 274
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 11%
 
 ---
 
-# AEM Explicación de la administración de color con Dynamic Media de{#understanding-color-management-with-aem-dynamic-media}
+# Explicación de la administración de color con AEM Dynamic Media{#understanding-color-management-with-aem-dynamic-media}
 
-En este vídeo exploramos la gestión de color de Dynamic Media y cómo se puede utilizar para proporcionar funciones de previsualización de corrección de color en para AEM Assets.
+En este vídeo exploramos la administración de color de Dynamic Media y cómo se puede utilizar para proporcionar funciones de previsualización de corrección de color en para AEM Assets.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16792?quality=12&learn=on)
 
 >[!NOTE]
 >
->[Habilite Dynamic Media AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es) en la aplicación para usar esta función en el.
+>[Habilite Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es) en AEM para utilizar esta función.
 
-AEM Esta función está disponible para las versiones 6.1 y 6.2 como paquete de funciones de.
+Esta función está disponible para las versiones de AEM 6.1 y 6.2 como paquete de funciones.
 
 ## Plantilla XML para el nodo de configuración de gestión de color {#xml-template-for-the-color-management-configuration-node}
 
-A continuación se muestra la plantilla XML para el nodo de configuración de gestión de color. AEM Esta plantilla XML se puede copiar en el proyecto de desarrollo de y configurarse con las configuraciones adecuadas al proyecto.
+A continuación se muestra la plantilla XML para el nodo de configuración de gestión de color. Esta plantilla XML se puede copiar en el proyecto de desarrollo de AEM y configurarse con las configuraciones adecuadas al proyecto.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -86,17 +86,17 @@ A continuación se muestra la plantilla XML para el nodo de configuración de ge
 />
 ```
 
-### A continuación, se muestra la lista de perfiles de color de Adobe predeterminados {#list-of-default-adobe-color-profiles-are-listed-below}
+### A continuación, se muestra una lista de los perfiles de color predeterminados de Adobe {#list-of-default-adobe-color-profiles-are-listed-below}
 
 | Nombre | Espacio color | Descripción |
 | ------------------- | ---------- | ------------------------------------- |
 | AdobeRGB | RGB | Adobe RGB (1998) |
-| AppleRGB | RGB | RGB de Apple |
-| CIERGB | RGB | RGB CIE |
+| AppleRGB | RGB | Apple RGB |
+| CIERGB | RGB | CIE RGB |
 | CoatedFogra27 | CMYK | FOGRA27 recubierto (ISO 12647-2:2004) |
 | CoatedFogra39 | CMYK | FOGRA39 recubierto (ISO 12647-2:2004) |
 | CoatedGraCol | CMYK | Revestido GRACoL 2006 (ISO 12647-2:2004) |
-| ColorMatchRGB | RGB | RGB ColorMatch |
+| ColorMatchRGB | RGB | ColorMatch RGB |
 | EuropeISOCoated | CMYK | Europa ISO Coated FOGRA27 |
 | EuroscaleCoated | CMYK | Euroscale Coated v2 |
 | EuroscaleUncovered | CMYK | Euroscale Uncovered v2 |
@@ -108,7 +108,7 @@ A continuación se muestra la plantilla XML para el nodo de configuración de ge
 | NewsprintSNAP2007 | CMYK | Boletín de Estados Unidos (SNAP 2007) |
 | NTSC | RGB | NTSC (1953) |
 | AMIGO | RGB | PAL/SECAM |
-| ProPhoto | RGB | RGB ProPhoto |
+| ProPhoto | RGB | ProPhoto RGB |
 | PS4Predeterminado | CMYK | CMYK predeterminado de Photoshop 4 |
 | PS5Default | CMYK | CMYK predeterminado de Photoshop 5 |
 | Revestido Con Hojas | CMYK | U.S. Sheetfed Coated v2 |

@@ -1,7 +1,7 @@
 ---
-title: AEM Creación de flujos de trabajo en el entorno de
+title: Creación de flujos de trabajo en AEM
 description: El flujo de trabajo permite la administración de procesos empresariales en Experience Manager y se utiliza para el procesamiento automático de contenido, así como para facilitar el control y el proceso que requieren decisiones tomadas por personas.
-version: 6.4, 6.5, Cloud Service
+version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Workflow
 topic: Content Management
 level: Intermediate
@@ -12,7 +12,7 @@ exl-id: 8ec12629-3acd-4958-b25c-0ae0b97ce244
 last-substantial-update: 2022-08-10T00:00:00Z
 thumbnail: KT-657.jpg
 duration: 433
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '87'
 ht-degree: 0%

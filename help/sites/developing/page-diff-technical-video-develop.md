@@ -2,14 +2,14 @@
 title: Desarrollo para la diferencia de página en AEM Sites
 description: Este vídeo muestra cómo proporcionar estilos personalizados para la funcionalidad Diferencia de páginas de AEM Sites.
 feature: Authoring
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 doc-type: Technical Video
 exl-id: 7d600b16-bbb3-4f21-ae33-4df59b1bb39d
 duration: 281
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 1%
@@ -28,7 +28,7 @@ Este vídeo muestra cómo proporcionar estilos personalizados para la funcionali
 >
 >Este vídeo agrega CSS personalizado a la biblioteca de cliente de we.Retail, donde los cambios se deben realizar en el proyecto AEM Sites del personalizador; en el código de ejemplo siguiente: `my-project`.
 
-Al AEM la diferencia de la página, se obtiene el CSS OOTB mediante una carga directa de `/libs/cq/gui/components/common/admin/diffservice/clientlibs/diffservice/css/htmldiff.css`.
+La diferencia de página de AEM obtiene el CSS OOTB mediante una carga directa de `/libs/cq/gui/components/common/admin/diffservice/clientlibs/diffservice/css/htmldiff.css`.
 
 Debido a esta carga directa de CSS en lugar de utilizar una categoría de biblioteca de cliente, debemos encontrar otro punto de inyección para los estilos personalizados y este punto de inyección personalizado es la clientlib de creación del proyecto.
 
@@ -115,12 +115,12 @@ Estos estilos deben estar limitados a los modos WCM [!UICONTROL Editar] y [!UICO
 </head>
 ```
 
-El resultado final de una página de comparación con los estilos anteriores aplicados tendría este aspecto (HTML añadido y Componente cambiado).
+El resultado final de una página de comparación con los estilos anteriores aplicados tendría este aspecto (se ha añadido HTML y el componente ha cambiado).
 
 ![Diferencia de página](assets/page-diff.png)
 
 ## Recursos adicionales {#additional-resources}
 
 * [Descargar el sitio de muestra de we.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases)
-* AEM [Usando bibliotecas de cliente de](https://helpx.adobe.com/es/experience-manager/6-5/sites/developing/using/clientlibs.html)
+* [Uso de bibliotecas de cliente de AEM](https://helpx.adobe.com/es/experience-manager/6-5/sites/developing/using/clientlibs.html)
 * [Menos documentación de CSS](https://lesscss.org/)

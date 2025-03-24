@@ -1,7 +1,7 @@
 ---
-title: AEM Eliminación de muestras de un proyecto de Maven de
-description: AEM AEM Obtenga información sobre cómo limpiar y quitar código de ejemplo de un proyecto de generado por el tipo de archivo del proyecto de.
-version: Cloud Service
+title: Eliminación de muestras de un proyecto Maven de AEM
+description: Obtenga información sobre cómo limpiar y quitar código de ejemplo de un proyecto de AEM generado por el tipo de archivo del proyecto de AEM.
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: AEM Project Archetype
 role: Developer
@@ -10,27 +10,27 @@ jira: KT-9092
 thumbnail: 337263.jpeg
 exl-id: 4e10c2b7-41b6-41a0-b8d4-9207a9d3f9c8
 duration: 341
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '85'
 ht-degree: 3%
 
 ---
 
-# AEM Eliminación de muestras de un proyecto de Maven de
+# Eliminación de muestras de un proyecto Maven de AEM
 
-AEM AEM Obtenga información sobre cómo limpiar y quitar el código de ejemplo generado de un proyecto de generado por el tipo de archivo del proyecto de.
+Obtenga información sobre cómo limpiar y quitar el código de ejemplo generado de un proyecto de AEM generado por el tipo de archivo del proyecto de AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/337263?quality=12&learn=on)
 
 
 ## Recursos
 
-+ AEM [Arquetipo de proyecto de Maven de](https://github.com/adobe/aem-project-archetype)
++ [Arquetipo del proyecto AEM Maven](https://github.com/adobe/aem-project-archetype)
 
 ## Comandos
 
-AEM Los siguientes comandos se pueden ejecutar para eliminar los archivos de ejemplo generados del proyecto de Maven de:
+Se pueden ejecutar los siguientes comandos para eliminar los archivos de ejemplo generados del proyecto Maven de AEM:
 
 ```
 rm -rf core/src/main/java/com/adobe/aem/wknd/examples/core/filters \

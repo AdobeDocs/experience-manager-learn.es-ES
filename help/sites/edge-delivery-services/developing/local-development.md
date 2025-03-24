@@ -1,7 +1,7 @@
 ---
 title: Configuración de un entorno de desarrollo local para Edge Delivery Services
 description: Cómo configurar un entorno de desarrollo local para Edge Delivery Services.
-version: 6.5, Cloud Service
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
 role: Developer
@@ -12,7 +12,7 @@ jira: KT-14483
 thumbnail: 3425717.jpeg
 duration: 169
 exl-id: 0f3e50f0-88d8-46be-be8b-0f547c3633a6
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '87'
 ht-degree: 1%
@@ -28,20 +28,20 @@ Cómo configurar un entorno de desarrollo local para el desarrollo de Edge Deliv
 
 ## Pasos descritos en el vídeo
 
-1. AEM Instalación de la CLI de
+1. Instalación de la CLI de AEM
 
    ```
    $ sudo npm install -g @adobe/aem-cli
    ```
 
-1. AEM Cambie el directorio al directorio del proyecto que sea un repositorio de Git creado a partir de la plantilla [repetidor](https://github.com/adobe/aem-boilerplate).
+1. Cambie el directorio al directorio del proyecto que sea un repositorio git creado a partir de la plantilla [AEM boilerplate](https://github.com/adobe/aem-boilerplate).
 
    ```
    $ git clone git@github.com:my-org/my-project.git
    $ cd my-project
    ```
 
-1. AEM AEM Ejecute la CLI de la para iniciar la instancia local de la aplicación de la configuración de seguridad.
+1. Ejecute la CLI de AEM para iniciar la instancia local de AEM.
 
    ```
    $ pwd
@@ -60,4 +60,4 @@ Cómo configurar un entorno de desarrollo local para el desarrollo de Edge Deliv
    opening default browser: http://localhost:3000/
    ```
 
-1. AEM Abra http://localhost:3000/ su navegador web para ver su sitio web de la.
+1. Abra http://localhost:3000/ en su explorador web para ver el sitio web de AEM.

@@ -2,14 +2,14 @@
 title: Modelos de flujo de trabajo de AEM Forms reutilizables
 description: Aprenda a crear modelos de flujo de trabajo independientes de Forms adaptable.
 feature: Workflow
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 3354a58b-d58e-4ddb-8f90-648554a64db8
 last-substantial-update: 2020-06-09T00:00:00Z
 duration: 58
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 0%
@@ -22,7 +22,7 @@ A partir de la versión 6.5 de AEM Forms, ahora podemos crear modelos de flujo d
 
 Para diseñar un flujo de trabajo de este tipo, realice los siguientes pasos
 
-1. AEM Iniciar sesión en el sitio de
+1. Iniciar sesión en AEM
 1. Dirija su explorador a [modelo de flujo de trabajo](http://localhost:4502/libs/cq/workflow/admin/console/content/models.html)
 1. Haga clic en __Crear > Crear modelo__ para agregar un modelo de flujo de trabajo
 1. Proporcione el Nombre y el Título adecuados al modelo de flujo de trabajo y, a continuación, haga clic en Listo

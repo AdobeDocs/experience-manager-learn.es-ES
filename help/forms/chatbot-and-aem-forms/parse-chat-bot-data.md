@@ -2,14 +2,14 @@
 title: Uso de AEM Forms con el bot de chat
 description: Analizar datos de ChatBot
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 jira: KT-15344
 topic: Development
 role: User
 level: Intermediate
 exl-id: 3c304b0a-33f8-49ed-a576-883df4759076
 duration: 22
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 2%
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 # Analizar datos de ChatBot
 
-AEM Se usó un webhook de [ChatBot](https://www.chatbot.com/help/webhooks/what-are-webhooks/) para enviar los datos de ChatBot a un servlet de.
+Se usó un webhook de [ChatBot](https://www.chatbot.com/help/webhooks/what-are-webhooks/) para enviar los datos de ChatBot a un servlet de AEM.
 Los datos capturados en el ChatBot están en formato JSON con los datos introducidos por el usuario en el objeto de atributos como se muestra a continuación
 ![chatbot-data](assets/chat-bot-data.png)
 

@@ -1,7 +1,7 @@
 ---
-title: AEM Cómo trabajar con grandes conjuntos de resultados en el modo sin encabezado de la
-description: AEM Aprenda a trabajar con grandes conjuntos de resultados con sin encabezado de la.
-version: Cloud Service
+title: Cómo trabajar con grandes conjuntos de resultados en AEM Headless
+description: Aprenda a trabajar con grandes conjuntos de resultados con AEM sin encabezado.
+version: Experience Manager as a Cloud Service
 topic: Headless
 feature: GraphQL API
 role: Architect, Developer
@@ -12,18 +12,18 @@ jira: KT-13102
 thumbnail: 3418381.jpeg
 exl-id: 304b4d80-27bd-4336-b2ff-4b613a30f712
 duration: 308
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '843'
 ht-degree: 1%
 
 ---
 
-# AEM Conjuntos de resultados grandes en el modo sin encabezado de
+# Grandes conjuntos de resultados en AEM sin encabezado
 
-AEM Las consultas de GraphQL sin encabezado pueden devolver resultados grandes. AEM En este artículo se describe cómo trabajar con resultados grandes en sin encabezado para garantizar el mejor rendimiento para la aplicación de, y se explica cómo trabajar con resultados de gran tamaño en la aplicación sin encabezado para la aplicación.
+Las consultas de GraphQL sin encabezado de AEM pueden devolver resultados grandes. En este artículo se describe cómo trabajar con resultados grandes en AEM sin encabezado para garantizar el mejor rendimiento para su aplicación.
 
-AEM Sin encabezado admite consultas [offset/limit](#list-query) y [paginación basada en cursor](#paginated-query) a subconjuntos más pequeños de un conjunto de resultados más grande. Se pueden realizar varias solicitudes para recopilar tantos resultados como sea necesario.
+AEM Headless admite consultas [offset/limit](#list-query) y [paginación basada en cursor](#paginated-query) a subconjuntos más pequeños de un conjunto de resultados más grande. Se pueden realizar varias solicitudes para recopilar tantos resultados como sea necesario.
 
 Los ejemplos siguientes utilizan pequeños subconjuntos de resultados (cuatro registros por solicitud) para mostrar las técnicas. En una aplicación real, se utilizaría un número mayor de registros por solicitud para mejorar el rendimiento. 50 registros por solicitud es una buena línea de base.
 

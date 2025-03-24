@@ -2,14 +2,14 @@
 title: Verificación del webhook de Github.com
 description: Obtenga información sobre cómo comprobar una solicitud de webhook de Github.com en una acción de App Builder.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Intermediate
 jira: KT-15714
 last-substantial-update: 2023-06-06T00:00:00Z
 exl-id: 5492dc7b-f034-4a7f-924d-79e083349e26
-source-git-commit: 8f64864658e521446a91bb4c6475361d22385dc1
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Verificación del webhook de Github.com
 
-Los webhooks permiten crear o configurar integraciones que se suscriben a ciertos eventos en GitHub.com. Cuando se activa uno de esos eventos, GitHub envía una carga útil de POST HTTP a la dirección URL configurada del gancho web. Sin embargo, por motivos de seguridad, es importante comprobar que la solicitud de webhook entrante proviene en realidad de GitHub y no de un agente malintencionado. Este tutorial le guía para comprobar una solicitud de webhook GitHub.com en una acción de App Builder de Adobe mediante un secreto compartido.
+Los webhooks permiten crear o configurar integraciones que se suscriben a ciertos eventos en GitHub.com. Cuando se activa uno de esos eventos, GitHub envía una carga útil HTTP POST a la dirección URL configurada del gancho web. Sin embargo, por motivos de seguridad, es importante comprobar que la solicitud de webhook entrante proviene en realidad de GitHub y no de un agente malintencionado. Este tutorial le guía para comprobar una solicitud de webhook GitHub.com en una acción de Adobe App Builder mediante un secreto compartido.
 
 ## Configurar el secreto de Github en AppBuilder
 

@@ -1,7 +1,7 @@
 ---
 title: Previsualización del fragmento de contenido
-description: AEM Aprenda a utilizar la previsualización de fragmentos de contenido para todos los autores a fin de ver rápidamente cómo los cambios de contenido afectan a sus experiencias sin encabezado de la.
-version: Cloud Service
+description: Aprenda a utilizar la vista previa de fragmentos de contenido para todos los autores a fin de ver rápidamente cómo los cambios de contenido afectan a las experiencias sin encabezado de AEM.
+version: Experience Manager as a Cloud Service
 feature: Content Fragments
 topic: Headless, Content Management, Development
 role: Architect, Developer
@@ -12,7 +12,7 @@ jira: KT-10841
 thumbnail: 3416906.jpeg
 exl-id: 247d40a3-ff67-4c1f-86bf-3794d7ce3e32
 duration: 463
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 0%
@@ -21,14 +21,14 @@ ht-degree: 0%
 
 # Previsualización del fragmento de contenido
 
-AEM Las aplicaciones sin encabezado admiten la previsualización de creación integrada. AEM La experiencia de vista previa vincula el editor de fragmentos de contenido del autor con su aplicación personalizada (a la que se puede dirigir mediante HTTP), lo que permite establecer un vínculo profundo en la aplicación que procesa el fragmento de contenido que se está previsualizando.
+Las aplicaciones sin encabezado de AEM admiten la previsualización de creación integrada. La experiencia de vista previa vincula el editor de fragmentos de contenido del autor de AEM con su aplicación personalizada (a la que se puede dirigir mediante HTTP), lo que permite establecer un vínculo profundo en la aplicación que procesa el fragmento de contenido que se está previsualizando.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416906?quality=12&learn=on)
 
 Para utilizar la vista previa de fragmentos de contenido, se deben cumplir varias condiciones:
 
 1. La aplicación debe implementarse en una URL accesible para los autores
-1. AEM AEM La aplicación debe configurarse para conectarse a servicio de Author (en lugar de al servicio de Publish de la aplicación de la)
+1. La aplicación debe configurarse para conectarse al servicio de AEM Author (en lugar del servicio de publicación de AEM)
 1. La aplicación debe diseñarse con direcciones URL o rutas que puedan usar [Ruta de fragmento de contenido o ID](#url-expressions) para seleccionar los fragmentos de contenido que se mostrarán para su vista previa en la experiencia de la aplicación.
 
 ## Previsualizar direcciones URL
@@ -37,11 +37,11 @@ Las direcciones URL de vista previa, que usan [expresiones de URL](#url-expressi
 
 ![URL de vista previa del modelo de fragmento de contenido](./assets/preview/cf-model-preview-url.png)
 
-1. AEM Inicie sesión en el servicio de autor de como administrador
+1. Inicie sesión en el servicio de AEM Author como administrador
 1. Vaya a __Herramientas > General > Modelos de fragmentos de contenido__
 1. Seleccione __Modelo de fragmento de contenido__ y seleccione __Propiedades__ en la barra de acciones superior.
 1. Introduzca la URL de vista previa del modelo de fragmento de contenido mediante [expresiones de URL](#url-expressions)
-   + AEM La dirección URL de vista previa debe apuntar a una implementación de la aplicación que se conecta al servicio de autor de la aplicación de la aplicación de la que se dispone en el servicio de creación de.
+   + La URL de vista previa debe apuntar a una implementación de la aplicación que se conecta al servicio de AEM Author.
 
 ### Expresiones de URL
 
@@ -70,7 +70,7 @@ Realice una actualización automática (borrando la caché local del explorador)
 
 ## Ejemplo de React
 
-AEM AEM Vamos a explorar la aplicación WKND, una aplicación sencilla de React que muestra aventuras de los usuarios que utilizan las API de GraphQL sin encabezado de la aplicación de la aplicación de la manera más rápida y sencilla.
+Exploremos la aplicación WKND, una aplicación sencilla de React que muestra aventuras de AEM mediante las API de GraphQL sin encabezado de AEM.
 
 El código de ejemplo está disponible en [Github.com](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/preview-tutorial).
 

@@ -1,21 +1,21 @@
 ---
-title: AEM Variables en el flujo de trabajo de la[Part1]
-description: AEM Uso de variables de tipo XML, JSON, ArrayList o Document en un flujo de trabajo de
+title: Variables en el flujo de trabajo de AEM [Part1]
+description: Uso de variables de tipo XML, JSON, ArrayList o Document en un flujo de trabajo de AEM
 feature: Adaptive Forms, Workflow
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: f9782684-3a74-4080-9680-589d3f901617
 duration: 561
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%
 
 ---
 
-# AEM Variables XML en flujo de trabajo de
+# Variables XML en el flujo de trabajo de AEM
 
 Las variables de tipo XML se utilizan normalmente cuando tiene un formulario adaptable basado en XSD y desea extraer valores del envío del formulario adaptable en el flujo de trabajo.
 
@@ -55,7 +55,7 @@ Los datos del formulario adaptable se almacenan en el elemento de datos como se 
 
 Para que los recursos funcionen en el sistema, siga estos pasos:
 
-* [AEM Descargar e importar los recursos en el administrador de paquetes mediante el uso de un administrador de paquetes](assets/xmlandstringvariable.zip)
+* [Descargar e importar los recursos en AEM mediante el administrador de paquetes](assets/xmlandstringvariable.zip)
 * [Explore el modelo de flujo de trabajo](http://localhost:4502/editor.html/conf/global/settings/workflow/models/vacationrequest.html) para comprender las variables que se utilizan en el flujo de trabajo
 * [Configurar el servicio de correo electrónico](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html#ConfiguringtheMailService)
 * [Abrir el formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/applicationfortimeoff/jcr:content?wcmmode=disabled)

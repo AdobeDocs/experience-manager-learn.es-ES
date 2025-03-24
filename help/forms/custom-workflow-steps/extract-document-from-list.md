@@ -1,8 +1,8 @@
 ---
-title: AEM Extraer documento de la lista de documentos de un flujo de trabajo de
+title: Extraer documento de la lista de documentos de un flujo de trabajo de AEM
 description: Componente de flujo de trabajo personalizado para extraer un documento específico de una lista de documentos
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
@@ -10,7 +10,7 @@ kt: kt-13918
 last-substantial-update: 2023-09-12T00:00:00Z
 exl-id: b0baac71-3074-49d5-9686-c9955b096abb
 duration: 56
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Extraer documento de la lista de documentos
 
-AEM Un caso de uso común es enviar los datos del formulario y el archivo adjunto del formulario a un sistema externo mediante el paso para invocar el modelo de datos de formulario en un flujo de trabajo de. Por ejemplo, al crear un caso en ServiceNow, le interesa enviar los detalles del caso con un documento acreditativo. Los archivos adjuntos agregados al formulario adaptable se almacenan en una variable de tipo lista de matrices de documentos y para extraer un documento específico de esta lista de matrices, deberá escribir un código personalizado.
+Un caso de uso común es enviar los datos del formulario y el archivo adjunto del formulario a un sistema externo mediante el paso para invocar el modelo de datos de formulario en un flujo de trabajo de AEM. Por ejemplo, al crear un caso en ServiceNow, le interesa enviar los detalles del caso con un documento acreditativo. Los archivos adjuntos agregados al formulario adaptable se almacenan en una variable de tipo lista de matrices de documentos y para extraer un documento específico de esta lista de matrices, deberá escribir un código personalizado.
 
 En este artículo se explican los pasos para utilizar el componente de flujo de trabajo personalizado para extraer y almacenar el documento en una variable de documento.
 
@@ -35,7 +35,7 @@ Es necesario crear un flujo de trabajo para administrar el envío del formulario
 
 ## Configurar formulario adaptable
 
-* Configure la acción de envío del formulario adaptable para almacenar en déclencheur AEM el flujo de trabajo de la
+* Configure la acción de envío del formulario adaptable para almacenar en déclencheur el flujo de trabajo de AEM
   ![acción de envío](assets/store-attachments.png)
 
 ## Prueba de la solución

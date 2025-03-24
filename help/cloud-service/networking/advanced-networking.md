@@ -1,7 +1,7 @@
 ---
 title: Redes avanzadas
 description: Obtenga información acerca de las opciones avanzadas de red de AEM as a Cloud Service.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Integrations, Security
 role: Architect, Developer
@@ -11,7 +11,7 @@ thumbnail: KT-9354.png
 last-substantial-update: 2022-10-13T00:00:00Z
 exl-id: d1c1a3cf-989a-4693-9e0f-c1b545643e41
 duration: 85
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 3%
@@ -27,9 +27,9 @@ AEM as a Cloud Service proporciona funciones de red avanzadas que permiten una a
 | Admite redes avanzadas | ✔ | ✘ |
 
 
-AEM La conexión avanzada de redes se compone de tres opciones para administrar la conectividad con servicios externos. Un programa de Cloud Manager y sus entornos de AEM as a Cloud Service solo pueden utilizar un único tipo de configuración avanzada de red a la vez, por lo que debe asegurarse de seleccionar el tipo más adecuado.
+La red avanzada de AEM consta de tres opciones para administrar la conectividad con servicios externos. Un programa de Cloud Manager y sus entornos de AEM as a Cloud Service solo pueden utilizar un único tipo de configuración avanzada de red a la vez, por lo que debe asegurarse de seleccionar el tipo más adecuado.
 
-|                                   | HTTP/HTTPS en puertos estándar | HTTP/HTTPS en puertos no estándar | Conexiones que no son HTTP/HTTPS | IP de salida dedicada | Lista &quot;Hosts no proxy&quot; | Conexión a servicios protegidos por VPN | AEM Limitar tráfico de Publish por dirección IP |
+|                                   | HTTP/HTTPS en puertos estándar | HTTP/HTTPS en puertos no estándar | Conexiones que no son HTTP/HTTPS | IP de salida dedicada | Lista &quot;Hosts no proxy&quot; | Conexión a servicios protegidos por VPN | Limitar el tráfico de publicación de AEM por dirección IP |
 |-----------------------------------|:----------------------------:|:--------------------------------:|:--------------------------:|:-------------------:|:-------------------------------------:|:-------------------------------------:|:----:|
 | __Sin red avanzada__ | ✔ | ✘ | ✘ | ✘ | ✘ | ✘ | ✘ |
 | [__Salida de puerto flexible__](./flexible-port-egress.md) | ✔ | ✔ | ✔ | ✘ | ✘ | ✘ | ✘ |
@@ -80,7 +80,7 @@ Asegúrese de que la [configuración avanzada de red](#advanced-networking) adec
       <a  href="./examples/email-service.md"><img alt="Red privada virtual (VPN)" src="./assets/code-examples__email.png"/></a>
       <div><strong><a href="./examples/email-service.md">Servicio de correo electrónico</a></strong></div>
       <p>
-        AEM Ejemplo de configuración de OSGi que utiliza la conexión de los servicios de correo electrónico externos con el modo de conexión a los servicios de correo electrónico.
+        Ejemplo de configuración de OSGi que utiliza AEM para conectarse a servicios de correo electrónico externos.
       </p>
     </td>  
     <td>
@@ -94,7 +94,7 @@ Asegúrese de que la [configuración avanzada de red](#advanced-networking) adec
       <a  href="./examples/sql-datasourcepool.md"><img alt="Conexión SQL con JDBC DataSourcePool" src="./assets//code-examples__sql-osgi.png"/></a>
       <div><strong><a href="./examples/sql-datasourcepool.md">Conexión SQL con el conjunto de datos JDBC</a></strong></div>
       <p>
-            AEM Ejemplo de código Java™ conectarse a bases de datos SQL externas configurando el grupo de fuentes de datos JDBC de la configuración de la aplicación de datos de JDBC de la.
+            Ejemplo de código Java™ conectarse a bases de datos SQL externas configurando el grupo de fuentes de datos JDBC de AEM.
       </p>
     </td>   
     </tr><tr>
@@ -109,14 +109,14 @@ Asegúrese de que la [configuración avanzada de red](#advanced-networking) adec
       <a  href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list.html"><img alt="Aplicación de una lista de permitidos IP" src="./assets/code_examples__vpn-allow-list.png"/></a>
       <div><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list.html">Aplicando una lista de permitidos IP</a></strong></div>
       <p>
-            Configure una lista de permitidos AEM IP de modo que solo el tráfico VPN pueda acceder a los datos de acceso a la red de red (VPNs.
+            Configure una lista de permitidos IP de modo que solo el tráfico VPN pueda acceder a AEM.
       </p>
     </td>
    <td>
-      <a  href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#restrict-vpn-to-ingress-connections"><img alt="AEM Restricciones de acceso a VPN basadas en rutas a Publish de la" src="./assets/code_examples__vpn-path-allow-list.png"/></a>
-      <div>AEM <strong><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#restrict-vpn-to-ingress-connections">Restricciones de acceso VPN basadas en rutas a Publish de la</a></strong></div>
+      <a  href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#restrict-vpn-to-ingress-connections"><img alt="Restricciones de acceso VPN basadas en rutas a AEM Publish" src="./assets/code_examples__vpn-path-allow-list.png"/></a>
+      <div><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#restrict-vpn-to-ingress-connections">Restricciones de acceso VPN basadas en rutas a AEM Publish</a></strong></div>
       <p>
-            AEM Requerir acceso VPN para rutas específicas en Publish de.
+            Requerir acceso VPN para rutas específicas en AEM Publish.
       </p>
     </td>
 </tr>

@@ -1,7 +1,7 @@
 ---
 title: Migración de contenido mediante el servicio de importación masiva
-description: AEM Descubra cómo se puede utilizar el servicio de importación masiva de as a Cloud Service AEM para importar recursos desde fuentes que no sean de la misma clase
-version: Cloud Service
+description: Descubra cómo se puede utilizar el servicio de importación masiva de AEM as a Cloud Services para importar recursos de fuentes que no sean de AEM.
+version: Experience Manager as a Cloud Service
 topic: Migration, Upgrade
 feature: Migration
 role: Developer
@@ -10,7 +10,7 @@ jira: KT-8918
 thumbnail: 336969.jpeg
 exl-id: 4944d3d9-52a0-4255-9e6c-eb119160e400
 duration: 650
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Servicio de importación por lotes
 
-AEM Descubra cómo se puede utilizar el servicio de importación masiva de as a Cloud Service AEM para importar recursos desde fuentes que no sean de la misma clase
+Descubra cómo se puede utilizar el servicio de importación masiva de AEM as a Cloud Services para importar recursos de fuentes que no sean de AEM.
 
 
 

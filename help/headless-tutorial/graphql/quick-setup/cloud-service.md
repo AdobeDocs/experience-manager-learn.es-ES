@@ -1,7 +1,7 @@
 ---
-title: AEM Configuración rápida sin encabezado para AEM as a Cloud Service
-description: AEM AEM AEM La configuración rápida sin encabezado le permite ponerse en contacto con el sin encabezado mediante el contenido del proyecto de muestra del sitio WKND y con una aplicación de React que consume el contenido a través de las API de GraphQL sin encabezado, lo que le ayuda a utilizar el contenido sin encabezado.
-version: Cloud Service
+title: Configuración rápida de AEM sin encabezado para AEM as a Cloud Service
+description: La configuración rápida de AEM sin encabezado le permite ponerse en contacto con AEM sin encabezado mediante el contenido del proyecto de muestra del sitio WKND y una aplicación React que consume el contenido a través de las API de GraphQL sin encabezado de AEM.
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
@@ -10,16 +10,16 @@ jira: KT-9442
 thumbnail: 339073.jpg
 exl-id: 62e807b7-b1a4-4344-9b1e-2c626b869e10
 duration: 781
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1078'
 ht-degree: 0%
 
 ---
 
-# AEM Configuración rápida sin encabezado para AEM as a Cloud Service
+# Configuración rápida de AEM sin encabezado para AEM as a Cloud Service
 
-AEM AEM SPA AEM La configuración rápida sin encabezado le permite ponerse en contacto con el contenido sin encabezado mediante el contenido del proyecto de muestra del sitio WKND y una aplicación React de muestra (una aplicación de react) que consume el contenido a través de las API de GraphQL sin encabezado, lo que le ayuda a utilizar el contenido sin encabezado.
+La configuración rápida de AEM sin encabezado le permite ponerse en contacto con AEM sin encabezado mediante el contenido del proyecto de muestra del sitio WKND y una aplicación React de muestra (un SPA) que consume el contenido a través de las API de GraphQL sin encabezado de AEM.
 
 ## Requisitos previos
 
@@ -27,7 +27,7 @@ Se requiere lo siguiente para seguir esta configuración rápida:
 
 + Entorno de zona protegida de AEM as a Cloud Service (preferiblemente Desarrollo)
 + Acceso a AEM as a Cloud Service y Cloud Manager
-   + AEM Acceso de __administrador de__ a AEM as a Cloud Service
+   + Acceso de __administrador de AEM__ a AEM as a Cloud Service
    + __Cloud Manager - Administrador de implementación__ acceso a Cloud Manager
 + Las siguientes herramientas deben instalarse localmente:
    + [Node.js v18](https://nodejs.org/en/)
@@ -36,7 +36,7 @@ Se requiere lo siguiente para seguir esta configuración rápida:
 
 ## 1. Crear un repositorio de Git de Cloud Manager
 
-En primer lugar, cree un repositorio Git de Cloud Manager que se utilice para implementar el sitio WKND. AEM El sitio WKND es un ejemplo de proyecto de sitio web que contiene contenido (fragmentos de contenido) y un punto final de GraphQL AEM que utiliza la aplicación React de configuración rápida.
+En primer lugar, cree un repositorio Git de Cloud Manager que se utilice para implementar el sitio WKND. El sitio WKND es un proyecto de sitio web de AEM de ejemplo que contiene contenido (fragmentos de contenido) y un punto final AEM de GraphQL que utiliza la aplicación React de configuración rápida.
 
 _Screencast de pasos_
 >[!VIDEO](https://video.tv.adobe.com/v/339073?quality=12&learn=on)
@@ -87,7 +87,7 @@ _Screencast de pasos_
 
 Con el proyecto del sitio WKND insertado en el repositorio de Git de Cloud Manager, no se puede implementar en AEM as a Cloud Service mediante canalizaciones de Cloud Manager.
 
-AEM Tenga en cuenta que el proyecto del sitio WKND proporciona contenido de muestra que la aplicación React consume a través de las API de GraphQL sin encabezado de la red de distribución de contenido.
+Tenga en cuenta que el proyecto del sitio WKND proporciona contenido de muestra que la aplicación React consume a través de las API de GraphQL sin encabezado de AEM.
 
 _Screencast de pasos_
 >[!VIDEO](https://video.tv.adobe.com/v/339075?quality=12&learn=on)
@@ -118,7 +118,7 @@ _Screencast de pasos_
 
 ## 4. Descargue y ejecute la aplicación WKND React
 
-Con AEM as a Cloud Service AEM arrancado con el contenido del proyecto del sitio WKND, descargue e inicie la aplicación React de WKND de ejemplo que consume el contenido del sitio WKND a través de las API de GraphQL sin encabezado
+Con AEM as a Cloud Service arrancado con el contenido del proyecto del sitio WKND, descargue e inicie la aplicación React de WKND de ejemplo que consume el contenido del sitio WKND a través de las API de GraphQL sin encabezado de AEM.
 
 _Screencast de pasos_
 >[!VIDEO](https://video.tv.adobe.com/v/339076?quality=12&learn=on)
@@ -143,8 +143,8 @@ _Screencast de pasos_
 
    1. En Cloud Manager, seleccione __Entornos__ en la barra de navegación superior
    1. Seleccione el entorno __Development__
-   1. Busque la tabla __Servicio de Publish AEM (y Dispatcher)__ vínculo __Segmentos de entorno__
-   1. Copie la dirección del vínculo y utilícela como URI del servicio AEM as a Cloud Service Publish
+   1. Busque la tabla __Servicio de publicación (AEM y Dispatcher)__ vínculo __Segmentos de entorno__
+   1. Copie la dirección del vínculo y utilícela como URI del servicio de publicación de AEM as a Cloud Service
 
 1. En el IDE, guarde los cambios en `.env.development`
 1. Desde la línea de comandos, ejecute la aplicación React
@@ -155,11 +155,11 @@ _Screencast de pasos_
    $ npm start
    ```
 
-1. La aplicación React, que se ejecuta localmente, comienza en [http://localhost:3000](http://localhost:3000) y muestra un listado de aventuras, que provienen de AEM as a Cloud Service AEM usando API de GraphQL de sin encabezado.
+1. La aplicación React, que se ejecuta localmente, comienza en [http://localhost:3000](http://localhost:3000) y muestra una lista de aventuras, que provienen de AEM as a Cloud Service y que utilizan las API de GraphQL de AEM Headless.
 
-## AEM 5. Editar contenido en la
+## 5. Editar contenido en AEM
 
-AEM Con la aplicación React de WKND de ejemplo que se conecta a las API de GraphQL AEM sin encabezado y consume contenido de ellas, cree contenido en el servicio de autor de y vea cómo se actualiza de forma conjunta la experiencia de la aplicación React.
+Con la aplicación React de WKND de ejemplo que se conecta a las API de GraphQL sin encabezado de AEM y consume contenido, cree contenido en el servicio AEM Author y vea cómo se actualiza de forma conjunta la experiencia de la aplicación React.
 
 _Screencast de pasos_
 >[!VIDEO](https://video.tv.adobe.com/v/339077?quality=12&learn=on)
@@ -175,11 +175,11 @@ _Screencast de pasos_
    + Precio: `3500`
    + Imagen principal: `/content/dam/wknd-shared/en/activities/cycling/mountain-biking.jpg`
 1. Seleccione __Guardar__ en la barra de acciones superior
-1. Seleccione __Quick Publish__ de la barra de acciones superior __...__
+1. Seleccione __Publicación rápida__ en __de la barra de acciones superior...__
 1. Actualice la aplicación React que se ejecuta en [http://localhost:3000](http://localhost:3000).
 1. En la aplicación React, seleccione la aventura de ciclismo ahora actualizada y verifique los cambios de contenido realizados en el fragmento de contenido.
 
-1. AEM Con el mismo enfoque, en el servicio de autor de:
+1. Con el mismo enfoque, en el servicio de AEM Author:
    1. Cancele la publicación de un fragmento de contenido de aventura existente y compruebe que se ha eliminado de la experiencia de la aplicación React
    1. Cree y publique un nuevo fragmento de contenido de aventura y verifique que aparece en la experiencia de la aplicación React
 
@@ -189,10 +189,10 @@ _Screencast de pasos_
 
 ## Enhorabuena.
 
-Enhorabuena. AEM ¡Ha utilizado con éxito la tecnología sin encabezado para alimentar una aplicación de React!
+¡Enhorabuena! ¡Ha utilizado correctamente AEM sin encabezado para impulsar una aplicación de React!
 
-Para comprender en detalle cómo la aplicación React consume contenido de AEM as a Cloud Service AEM, consulte [el tutorial sin encabezado](../multi-step/overview.md). AEM El tutorial explora cómo se crean los fragmentos de contenido en los y cómo esta aplicación de React consume su contenido como JSON.
+Para comprender en detalle cómo la aplicación React consume contenido de AEM as a Cloud Service, consulte [el tutorial sin encabezado de AEM](../multi-step/overview.md). El tutorial explora cómo se crearon los fragmentos de contenido en AEM y cómo esta aplicación de React consume su contenido como JSON.
 
 ### Siguientes pasos
 
-+ [AEM Iniciar el tutorial sin encabezado de la](../multi-step/overview.md)
++ [Inicio del tutorial de AEM sin encabezado](../multi-step/overview.md)

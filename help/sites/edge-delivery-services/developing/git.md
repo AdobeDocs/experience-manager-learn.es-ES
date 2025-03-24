@@ -1,7 +1,7 @@
 ---
 title: Uso de Git
-description: Configuración del entorno de desarrollo de Edge Delivery Services con Git.
-version: 6.5, Cloud Service
+description: Cómo configurar su entorno de desarrollo de Edge Delivery Services con Git.
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
 role: Developer
@@ -12,7 +12,7 @@ jira: KT-14484
 thumbnail: 3425718.jpeg
 duration: 147
 exl-id: 68866a41-7790-49f9-bb9e-49b63ae3b3af
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '25'
 ht-degree: 0%
@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # Configurar Git
 
-Configure el entorno de desarrollo de los Edge Delivery Services con Git.
+Configure su entorno de desarrollo de Edge Delivery Services con Git.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425718/?learn=on)

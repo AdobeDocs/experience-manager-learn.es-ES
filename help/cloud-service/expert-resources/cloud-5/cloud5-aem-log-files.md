@@ -1,7 +1,7 @@
 ---
-title: 'AEM Cloud 5: Archivos de registro de'
+title: Archivos de registro de AEM de Cloud 5
 description: Se trata de una explicación exhaustiva de cómo acceder a los registros en AEM as a Cloud Service, incluido cómo acceder a ellos a través de la interfaz de usuario, así como desde las API.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 role: Admin, Developer
 level: Intermediate
 jira: KT-9927
@@ -9,14 +9,14 @@ hidefromtoc: true
 thumbnail: 341156.jpeg
 exl-id: 1d000b09-52e7-4828-a0b3-32a47131e66c
 duration: 314
-source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 5%
 
 ---
 
-# AEM Cloud 5: Archivos de registro de
+# Archivos de registro de AEM de Cloud 5
 
 Se trata de una explicación exhaustiva de cómo acceder a los registros en AEM as a Cloud Service, incluido cómo acceder a ellos a través de la interfaz de usuario, así como desde las API.
 

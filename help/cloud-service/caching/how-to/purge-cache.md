@@ -1,7 +1,7 @@
 ---
 title: Depuración de la caché de CDN
 description: Obtenga información sobre cómo depurar o eliminar la respuesta HTTP en caché de la CDN de AEM as a Cloud Service.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Operations, CDN Cache
 topic: Administration, Performance
 role: Admin, Architect, Developer
@@ -12,7 +12,7 @@ last-substantial-update: 2024-08-13T00:00:00Z
 jira: KT-15963
 thumbnail: KT-15963.jpeg
 exl-id: 5d81f6ee-a7df-470f-84b9-12374c878a1b
-source-git-commit: 0639217a3bab7799eec3bbcc40c1a69ed1b12682
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '924'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Obtenga información sobre cómo depurar o eliminar la respuesta HTTP en caché de la CDN de AEM as a Cloud Service. Mediante la característica de autoservicio **Purgar token de API**, puede purgar la caché de un recurso específico, un grupo de recursos y toda la caché.
 
-AEM En este tutorial, aprenderá a configurar y utilizar el token de API de purga para purgar la caché de CDN del sitio de muestra [WKND](https://github.com/adobe/aem-guides-wknd) mediante la función de autoservicio.
+En este tutorial, aprenderá a configurar y utilizar el token de API de purga para purgar la caché de CDN del sitio de muestra [AEM WKND](https://github.com/adobe/aem-guides-wknd) mediante la función de autoservicio.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3432948?quality=12&learn=on)
 
@@ -43,9 +43,9 @@ Vamos a aprender a configurar el token de API de purga para purgar la caché de 
 
 ### Configuración de la regla de CDN
 
-AEM El token de API de purga se crea configurando la regla de CDN en el código de proyecto de.
+El token de API de purga se crea configurando la regla de CDN en el código del proyecto de AEM.
 
-1. AEM Abra el archivo `cdn.yaml` desde la carpeta principal `config` de su proyecto de la. Por ejemplo, el archivo cdn.yaml](https://github.com/adobe/aem-guides-wknd/blob/main/config/cdn.yaml) del proyecto [WKND.
+1. Abra el archivo `cdn.yaml` de la carpeta principal `config` de su proyecto de AEM. Por ejemplo, el archivo cdn.yaml](https://github.com/adobe/aem-guides-wknd/blob/main/config/cdn.yaml) del proyecto [WKND.
 
 1. Agregue la siguiente regla de CDN al archivo `cdn.yaml`:
 
@@ -71,7 +71,7 @@ data:
 
 En la regla anterior, tanto `purgeKey1` como `purgeKey2` se agregan desde el principio para admitir la rotación de secretos sin interrupciones. Sin embargo, solo puede empezar con `purgeKey1` y agregar `purgeKey2` más adelante al girar los secretos.
 
-1. Guarde, confirme e inserte los cambios en el repositorio de flujo ascendente de Adobe.
+1. Guarde, confirme y envíe los cambios al repositorio de flujo ascendente de Adobe.
 
 ### Crear variable de entorno de Cloud Manager
 
@@ -112,7 +112,7 @@ Finalmente, implemente la regla de CDN configurada en el entorno de AEM as a Clo
 
 ## Uso del token de API de purga
 
-AEM Para purgar la caché de la CDN, invoque la URL de dominio específica del servicio de con Purge API Token. La sintaxis para purgar la caché es la siguiente:
+Para purgar la caché de CDN, invoque la URL de dominio específica del servicio AEM con el token de API de purga. La sintaxis para purgar la caché es la siguiente:
 
 ```
 PURGE <URL> HTTP/1.1
@@ -125,9 +125,9 @@ Surrogate-Key: <SURROGATE_KEY>
 Donde:
 
 - **PURGE`<URL>`**: al método `PURGE` le sigue la ruta de acceso URL del recurso que desea purgar.
-- AEM **Host:`<AEM_SERVICE_SPECIFIC_DOMAIN>`**: Especifica el dominio del servicio de la.
-- AEM **X--Purge-Key:`<PURGE_API_TOKEN>`**: Un encabezado personalizado que contiene el valor Purge API Token.
-- AEM **X--Purge:`<PURGE_TYPE>`**: un encabezado personalizado que especifica el tipo de operación de depuración. El valor puede ser `hard`, `soft` o `all`. En la tabla siguiente se describe cada tipo de depuración:
+- **Host:`<AEM_SERVICE_SPECIFIC_DOMAIN>`**: Especifica el dominio del servicio AEM.
+- **X-AEM-Purge-Key:`<PURGE_API_TOKEN>`**: Un encabezado personalizado que contiene el valor Purgar token de API.
+- **X-AEM-Purge:`<PURGE_TYPE>`**: un encabezado personalizado que especifica el tipo de operación de depuración. El valor puede ser `hard`, `soft` o `all`. En la tabla siguiente se describe cada tipo de depuración:
 
   | Tipo de purga | Descripción |
   |:------------:|:-------------:|

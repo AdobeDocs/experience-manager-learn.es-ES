@@ -2,7 +2,7 @@
 title: Carga y activación de una llamada de Target
 description: Obtenga información sobre cómo cargar, pasar parámetros a una solicitud de página y activar una llamada de Target desde la página del sitio mediante una regla de etiquetas.
 feature: Core Components, Adobe Client Data Layer
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 jira: KT-6133
 thumbnail: 41243.jpg
 topic: Integrations
@@ -13,7 +13,7 @@ badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title=
 doc-type: Tutorial
 exl-id: ec048414-2351-4e3d-b5f1-ade035c07897
 duration: 588
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 1%
@@ -28,7 +28,7 @@ Obtenga información sobre cómo cargar, pasar parámetros a una solicitud de p�
 
 ## Regla de carga de página
 
-La capa de datos del cliente de Adobe es una capa de datos impulsada por evento. AEM Cuando se carga la capa de datos de la página de datos de la página de la, se déclencheur un evento `cmp:show` En el vídeo, la regla `tags Library Loaded` se invoca mediante un evento personalizado. A continuación, se pueden encontrar los fragmentos de código utilizados en el vídeo para el evento personalizado y para los elementos de datos.
+La capa de datos del cliente de Adobe es una capa de datos impulsada por evento. Cuando se carga la capa de datos de la página de AEM, se déclencheur un evento `cmp:show` En el vídeo, la regla `tags Library Loaded` se invoca mediante un evento personalizado. A continuación, se pueden encontrar los fragmentos de código utilizados en el vídeo para el evento personalizado y para los elementos de datos.
 
 ### Evento personalizado de página mostrada{#page-event}
 
@@ -80,7 +80,7 @@ window.adobeDataLayer.push(function (dataLayer) {
 });
 ```
 
-AEM Una función personalizada define `pageShownEventHandler` y escucha los eventos emitidos por los componentes principales, deriva la información relevante del componente principal, lo empaqueta en un objeto de evento y déclencheur el evento con la información de evento derivada en su carga útil.
+Una función personalizada define `pageShownEventHandler` y escucha los eventos emitidos por los componentes principales de AEM, deriva la información relevante del componente principal, lo empaqueta en un objeto de evento y almacena en déclencheur el evento de etiquetas con la información de evento derivada en su carga útil.
 
 La regla de etiquetas se activa usando la función `trigger(...)` de las etiquetas, que es __solo__ disponible dentro de la definición de fragmento de código personalizado de un evento de regla.
 
@@ -115,7 +115,7 @@ if (event && event.component && event.component.hasOwnProperty('repo:path')) {
 }
 ```
 
-AEM Este código devuelve la ruta de acceso de la página de la.
+Este código devuelve la ruta de la página AEM.
 
 ![Ruta de la página](assets/pagepath.png)
 
@@ -127,11 +127,11 @@ if (event && event.component && event.component.hasOwnProperty('dc:title')) {
 }
 ```
 
-AEM Este código devuelve el título de la página de la.
+Este código devuelve el título de la página de AEM.
 
 ![Título de página](assets/pagetitle.png)
 
-## Resolución de problemas
+## Solución de problemas
 
 ### ¿Por qué no se activan los mboxes en mis páginas web?
 
@@ -160,7 +160,7 @@ window.targetGlobalSettings = {
 
 ## Vínculos de soporte
 
-+ [Documentación de la capa de datos del cliente de Adobe](https://github.com/adobe/adobe-client-data-layer/wiki)
++ [Documentación de la capa de datos del cliente Adobe](https://github.com/adobe/adobe-client-data-layer/wiki)
 + [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 + [Uso de la capa de datos del cliente de Adobe y la documentación de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=es)
-+ [Introducción al Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)
++ [Introducción a Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)

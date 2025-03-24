@@ -1,25 +1,25 @@
 ---
-title: AEM Pasos para resolver los problemas de replicación en la
+title: Pasos para resolver los problemas de replicación en AEM
 description: Pasos para investigar y resolver los problemas relacionados con la replicación
 type: Troubleshooting
 role: Admin
 level: Beginner
-version: 6.5
+version: Experience Manager 6.5
 feature: Developer Tools
 topic: Administration
 index: y
 doc-type: Technical Video
 exl-id: aa520806-3937-4100-b75a-78c2460c1b2f
 duration: 107
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '35'
 ht-degree: 0%
 
 ---
 
-# AEM Pasos para resolver los problemas de replicación en la
+# Pasos para resolver los problemas de replicación en AEM
 
-AEM *Este vídeo muestra los pasos para resolver los problemas de replicación en el sitio de trabajo de la aplicación de la replicación en el sitio de trabajo de la aplicación de la aplicación de datos*.
+*Este vídeo explica los pasos para resolver los problemas de replicación en AEM.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335471?quality=12&learn=on)

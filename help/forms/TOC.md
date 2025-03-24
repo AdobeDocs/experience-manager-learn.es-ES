@@ -6,9 +6,9 @@ user-guide-description: Recopilación de recursos de AEM Forms para principiante
 solution: Experience Manager, Experience Manager Forms
 breadcrumb-title: Tutoriales de AEM Forms
 sub-product: Experience Manager Forms
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 index: y
-source-git-commit: 5f42678502a785ead29982044d1f3f5ecf023e0f
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '2101'
 ht-degree: 2%
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 + [Información general](overview.md)
 + [Prácticas recomendadas a seguir](adaptive-forms/best-practices-adaptive-forms.md)
-+ [AEM Configuración de la autenticación OKTA con el autor de la](adaptive-forms/single-sign-on-with-okta.md)
++ [Configuración de la autenticación OKTA con AEM Author](adaptive-forms/single-sign-on-with-okta.md)
 + Creando su primer formulario adaptable {#creating-your-first-adaptive-form}
    + [1 - Introducción y configuración](creating-your-first-adaptive-form/introduction-and-setup.md)
    + [2 - Crear una plantilla de formulario adaptable](creating-your-first-adaptive-form/create-adaptive-form-template.md)
@@ -39,7 +39,7 @@ ht-degree: 2%
    + [Enviando a punto final externo](handling-form-submissions/submitting-adaptive-forms-to-external-server-article-use.md)
    + [Envío de correo electrónico](handling-form-submissions/sending-email-on-adaptive-form-submission.md)
    + [Flujo de trabajo de solicitud de tiempo libre pagado](handling-form-submissions/paid-time-off-request-workflow.md)
-   + [Configuración del formulario adaptable para el flujo de trabajo de déclencheur AEM de: vídeo](handling-form-submissions/configure-af-to-trigger-aem-workflow.md)
+   + [Configuración del formulario adaptable para el flujo de trabajo de AEM de déclencheur: vídeo](handling-form-submissions/configure-af-to-trigger-aem-workflow.md)
    + [Personalizar notificación de asignación de tarea](handling-form-submissions/customize-assign-task-notification.md)
 + Integraciones útiles{#some-useful-integrations}
    + [Dos factores de autenticación](some-useful-integrations/two-factor-authentication.md)
@@ -91,18 +91,18 @@ ht-degree: 2%
    + [Insertar datos adjuntos de formulario en la base de datos](adaptive-forms/inserting-form-attachment-in-db.md)
    + [Modificar configuración de Data Source](adaptive-forms/modify-data-source-configuration-settings-article.md)
    + [Omitir propiedades del modelo de datos de formulario](adaptive-forms/override-fdm-values.md)
-   + [AEM Servicio de modelo de datos de formulario en flujo de trabajo de 6.4](adaptive-forms/form-data-model-service-as-step-in-workflow-video-use.md)
+   + [Servicio de modelo de datos de formulario en el flujo de trabajo de AEM 6.4](adaptive-forms/form-data-model-service-as-step-in-workflow-video-use.md)
    + [Gestión de mensajes de error en el paso del servicio del modelo de datos de formulario](adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)
-   + [AEM Servicio de modelo de datos de formulario en flujo de trabajo de la versión 6.5.1 de](adaptive-forms/form-data-model-service-as-step-in-aem65-workflow-video-use.md)
+   + [Servicio de modelo de datos de formulario en el flujo de trabajo de AEM 6.5.1](adaptive-forms/form-data-model-service-as-step-in-aem65-workflow-video-use.md)
    + [Modelo de datos de formulario sin Data Source](adaptive-forms/form-data-model-without-data-source-feature-video-use.md)
    + [Elemento de modelo de datos de formulario calculado](adaptive-forms/computed-form-data-model-elements-aem-forms-feature-video.md)
    + [Configuración de JDBC Data Source en AEM Forms](adaptive-forms/data-integration-technical-video-setup.md)
    + [Modelo de datos de formulario basado en JDBC](adaptive-forms/jdbc-data-model-technical-video-use.md)
    + [Crear asociaciones entre dos entidades en el modelo de datos de formulario](adaptive-forms/association-data-model-technical-video-use.md)
    + [Usar el servicio de invocación del modelo de datos de formulario en el editor de reglas](adaptive-forms/service-data-model-technical-video-use.md)
-   + [AEM Publicar datos binarios en DAM con el modelo de datos de formulario](adaptive-forms/form-data-model-to-post-binary-data-tutorial-use.md)
+   + [Publicar datos binarios en AEM DAM mediante el modelo de datos de formulario](adaptive-forms/form-data-model-to-post-binary-data-tutorial-use.md)
    + [Creación de modelos de flujo de trabajo reutilizables](adaptive-forms/re-usable-aem-forms-workflow-models-article.md)
-   + [AEM Flujo de trabajo de pasos de procesos personalizados](adaptive-forms/custom-process-step-aem-workflow.md)
+   + [Flujo de trabajo de AEM de pasos de proceso personalizado](adaptive-forms/custom-process-step-aem-workflow.md)
    + [Rellenado previo de HTML5 Forms](adaptive-forms/prepopulating-html5-forms-in-aem-forms-article.md)
    + [Modelo de datos de formulario con Salesforce](adaptive-forms/using-adaptive-forms-with-sales-force-integration-tutorial.md)
    + [Adición dinámica de elementos al componente Opción](adaptive-forms/choice-group-items-adding-dynamically-article.md)
@@ -164,8 +164,8 @@ ht-degree: 2%
 + Exportando datos enviados en formato CSV{#export-submitted-data-csv-format}
    + [Exportar datos enviados](export-submitted-data-csv-format/export-submitted-data-csv.md)
 + HTML5 Forms{#html5-forms}
-   + [Crear formulario de HTML5](html5-forms/create-html5-form.md)
-   + [Controlar el envío de formularios de HTML 5](html5-forms/handle-html5-form-submission.md)
+   + [Crear formulario HTML5](html5-forms/create-html5-form.md)
+   + [Controlar el envío de formularios HTML5](html5-forms/handle-html5-form-submission.md)
 + AEM Forms y Acrobat Sign{#forms-and-sign}
    + [Introducción](aem-forms-and-adobe-sign/introduction.md)
    + [Configuración de SSL](aem-forms-and-adobe-sign/set-up-ssl.md)
@@ -175,8 +175,8 @@ ht-degree: 2%
    + [Crear y configurar formularios adaptables](aem-forms-and-adobe-sign/create-and-configure-adaptive-form.md)
    + [Configurar formulario adaptable para un solo firmante](aem-forms-and-adobe-sign/configure-adaptive-form-for-single-signer.md)
    + [Configuración del formulario adaptable para dos firmantes](aem-forms-and-adobe-sign/configure-adaptive-form-for-two-signers.md)
-   + [Configuración del servicio de Automated forms conversion](aem-forms-and-adobe-sign/configure-automated-forms-conversion-service.md)
-   + [Convertir formulario PDF en formulario adaptable](aem-forms-and-adobe-sign/convert-pdf-form-into-adaptive-form.md)
+   + [Configurar el servicio de conversión automatizada de formularios](aem-forms-and-adobe-sign/configure-automated-forms-conversion-service.md)
+   + [Conversión de un formulario PDF en un formulario adaptable](aem-forms-and-adobe-sign/convert-pdf-form-into-adaptive-form.md)
    + [Configurar formulario adaptable convertido](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
    + [Uso de plantillas XDP con Acrobat Sign](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
    + [Uso de métodos de ayuda de Acrobat Sign](aem-forms-and-adobe-sign/send-documents-signing-using-sign-api.md)
@@ -201,14 +201,14 @@ ht-degree: 2%
    + [1-Introducción](custom-workflow-component/introduction.md)
    + [código java de 2 escrituras](custom-workflow-component/custom-process-step-aem-workflow.md)
    + [3-Crear componente de flujo de trabajo](custom-workflow-component/custom-workflow-component.md)
-+ AEM Variables en el flujo de trabajo de {#variables-aem-workflow}
++ Variables en el flujo de trabajo de AEM{#variables-aem-workflow}
    + [Introducción: variables en el flujo de trabajo](variables-aem-workflow/introduction.md)
    + [Variables XML](variables-aem-workflow/part1.md)
    + [Variables JSON](variables-aem-workflow/part2.md)
    + [Variables de documento](variables-aem-workflow/part3.md)
    + [Variable ArrayList](variables-aem-workflow/part4.md)
    + [Variable de modelo de datos de formulario](variables-aem-workflow/form-data-model.md)
-   + [AEM Editor de reglas en flujo de trabajo de](variables-aem-workflow/part5.md)
+   + [Editor de reglas en AEM Workflow](variables-aem-workflow/part5.md)
    + [Variables de flujo de trabajo de registro](variables-aem-workflow/part6.md)
 + Revisar datos de formulario{#review-form-data}
    + [1 - Introducción](review-form-data/introduction.md)
@@ -222,14 +222,14 @@ ht-degree: 2%
    + [Biblioteca de cliente](storing-retrieving-form-data/part4.md)
    + [Plantilla de formulario adaptable](storing-retrieving-form-data/part5.md)
    + [Implementación de recursos de muestra](storing-retrieving-form-data/part6.md)
-+ AEM Activando el flujo de trabajo de en el envío de formularios de PDF{#offline-mobile-form-submission}
++ Activando flujo de trabajo de AEM en el envío de formularios PDF{#offline-mobile-form-submission}
    + [Parte - 1](offline-mobile-form-submission/introduction.md)
    + [Parte - 2](offline-mobile-form-submission/custom-profile.md)
    + [Parte - 3](offline-mobile-form-submission/handle-form-submission.md)
    + [Parte - 4](offline-mobile-form-submission/author-servlet.md)
    + [Parte - 5](offline-mobile-form-submission/review-workflow.md)
    + [Parte - 6](offline-mobile-form-submission/deploy-assets.md)
-+ Déclencheur AEM de flujo de trabajo de la en el envío de formularios móviles {#trigger-aem-workflow-on-mobile-form-submission}
++ Flujo de trabajo de AEM de déclencheur en el envío de formularios móviles{#trigger-aem-workflow-on-mobile-form-submission}
    + [Parte - 1](trigger-aem-workflow-on-mobile-form-submission/introduction.md)
    + [Parte - 2](trigger-aem-workflow-on-mobile-form-submission/handle-form-submission.md)
    + [Parte - 3](trigger-aem-workflow-on-mobile-form-submission/author-servlet.md)
@@ -293,12 +293,12 @@ ht-degree: 2%
    + [Script ECMA para generar pdf con fragmentos](document-services/using-fragments-in-output-service-watched-folder.md)
    + [Generación de varios PDF a partir de un archivo de datos](document-services/generate-multi-record-pdf.md)
    + [Generar PDF en el envío de formularios móviles](document-services/generate-pdf-from-mobile-form-submission-article.md)
-   + [Generar PDF en el envío de formulario basado en componentes principales](document-services/generate-pdf-from-core-component-form-submission.md)
+   + [Generar PDF en el envío de formularios basado en componentes principales](document-services/generate-pdf-from-core-component-form-submission.md)
    + [Generar PDF interactivo desde formulario móvil](document-services/render-interactive-form-using-api.md)
    + [Generar documento de registro interactivo a partir de formulario adaptable](document-services/generate-interactive-dor.md)
    + [Credencial de configuración de extensiones de Reader](document-services/configuring-reader-extension-osgi.md)
-   + [Aplicar derechos de uso al PDF en la representación XDP](document-services/rendering-and-reader-extending-xdp-templates-article.md)
-   + [Aplicar derechos de uso al PDF cargado](document-services/apply-reader-extension-rights-to-pdf.md)
+   + [Aplicar derechos de uso a PDF en la representación XDP](document-services/rendering-and-reader-extending-xdp-templates-article.md)
+   + [Aplicar derechos de uso a PDF cargado](document-services/apply-reader-extension-rights-to-pdf.md)
    + [Certificar documentos](document-services/certifying-documents-aem-forms-tutorial.md)
    + [Montar archivos adjuntos del formulario](document-services/assemble-form-attachments.md)
    + [Servicios de utilidad útiles](document-services/useful-utility-services.md)
@@ -311,7 +311,7 @@ ht-degree: 2%
    + [Enlace de base de datos](forms-designer/binding-to-mysql-db.md)
    + [Usar la firma manuscrita](forms-designer/scribble-signature-form.md)
    + [Usar la firma digital](forms-designer/adding-dig-signature-field.md)
-   + [Reader ampliar formulario](forms-designer/reader-extending-j2ee.md)
+   + [Formulario de ampliación de Reader](forms-designer/reader-extending-j2ee.md)
 + AEM Forms Workbench{#forms-workbench}
    + [Introducción a Workbench](aem-forms-workbench/workbench-introduction.md)
    + [Creación del proceso de formulario](aem-forms-workbench/workbench-creating-a-process.md)
@@ -400,8 +400,8 @@ ht-degree: 2%
    + [Workbench: Cómo modificar los parámetros de memoria de Workbench](troubleshooting/how-to-tweak-workbench-memory-parameters.md)
    + [Workbench: Cómo modificar los parámetros de rendimiento de Workbench](troubleshooting/how-to-tweak-workbench-performance-parameters.md)
    + [Designer: dependencia de Designer en C++ redistribuible](troubleshooting/dependency-of-vc-on-designer.md)
-   + [Designer: Cómo habilitar la vista previa para HTML](troubleshooting/how-to-enable-html-preview.md)
-   + [Designer: Cómo habilitar la vista previa para PDF](troubleshooting/how-to-enable-pdf-preview.md)
+   + [Designer: Cómo habilitar la vista previa de HTML](troubleshooting/how-to-enable-html-preview.md)
+   + [Designer: Cómo habilitar la vista previa de PDF](troubleshooting/how-to-enable-pdf-preview.md)
    + [Designer: Cómo instalar parches de Designer](troubleshooting/how-to-install-designer-patches.md)
    + [JEE Foundation: Cómo cambiar el valor de la entropía](troubleshooting/how-to-change-the-value-of-entropy.md)
    + [JEE Foundation: Cómo cambiar el tiempo de espera de transacción de cualquier servicio en AEM Forms JEE](troubleshooting/how-to-change-transaction-timeout-of-any-service-in-aem-forms-jee.md)
@@ -418,14 +418,14 @@ ht-degree: 2%
    + [General: Cómo capturar los volcados de hilos de una JVM en un servidor Unix](troubleshooting/how-to-capture-thread-dumps-of-a-jvm-on-a-unix-server.md)
    + [General: Cómo capturar los volcados de hilos de una JVM en un servidor Windows](troubleshooting/how-to-capture-thread-dumps-of-a-jvm-on-a-windows-server.md)
    + [General: Cómo generar un certificado autofirmado](troubleshooting/how-to-generate-a-self-signed-certificate.md)
-   + [General: Cómo hacer que el servicio web llame desde el formulario de HTML 5](troubleshooting/how-to-make-web-service-call-from-html5-form.md)
+   + [General: Cómo hacer una llamada al servicio web desde el formulario HTML5](troubleshooting/how-to-make-web-service-call-from-html5-form.md)
    + [General: Pasos para habilitar el registro de depuración para cualquier clase en AEM Forms OSGI](troubleshooting/steps-to-enable-debug-logging-for-any-classes-in-aem-forms-osgi.md)
    + [General: Pasos para habilitar el registro de depuración para cualquier clase en el servidor de aplicaciones JBOSS](troubleshooting/steps-to-enable-debug-logging-for-any-classes-in-jboss-application-server.md)
    + [General: Pasos para habilitar el registro de depuración para cualquier clase en el servidor de aplicaciones de Websphere](troubleshooting/steps-to-enable-debug-logging-for-any-classes-in-websphere-application-server.md)
    + [General: Pasos para habilitar SSL para AEM Forms OSGi](troubleshooting/steps-to-enable-ssl-for-aem-forms-osgi.md)
    + [General: Pasos para cifrar la contraseña del almacén de claves que se utilizará en lc_turnkey.xml](troubleshooting/steps-to-encrypt-keystore-password-to-be-used-in-lc-turnkey-xml.md)
-   + [AEM General: Pasos para restablecer la contraseña predeterminada para los usuarios en el entorno de trabajo de Forms-JEE de](troubleshooting/steps-to-reset-default-password-for-users-in-aem-forms-jee.md)
-   + [AEM General: Pasos para restablecer la contraseña predeterminada para los usuarios en la aplicación de Forms-OSGI en la aplicación de la.](troubleshooting/steps-to-reset-default-password-for-users-in-aem-forms-osgi.md)
+   + [General: Pasos para restablecer la contraseña predeterminada para los usuarios en AEM-Forms-JEE](troubleshooting/steps-to-reset-default-password-for-users-in-aem-forms-jee.md)
+   + [General: Pasos para restablecer la contraseña predeterminada para los usuarios en AEM-Forms-OSGI](troubleshooting/steps-to-reset-default-password-for-users-in-aem-forms-osgi.md)
    + [General: Pasos para configurar ubicaciones de gemfire en un clúster y realizar la configuración relacionada](troubleshooting/steps-to-set-up-gemfire-locators-in-a-cluster-and-perform-related-configuration.md)
 
 

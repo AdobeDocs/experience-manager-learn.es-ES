@@ -1,7 +1,7 @@
 ---
-title: AEM Compatibilidad con autenticación en 6.x
-description: AEM Una vista consolidada de los mecanismos de autenticación admitidos en la versión 6.x de la versión de.
-version: 6.4, 6.5
+title: Compatibilidad de autenticación en AEM 6.x
+description: Una vista consolidada de los mecanismos de autenticación admitidos por AEM 6.x.
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: User and Groups
 doc-type: Article
 jira: KT-406
@@ -12,18 +12,18 @@ exl-id: 96c542ae-6ab6-4d8a-94df-a58b03469320
 last-substantial-update: 2022-09-10T00:00:00Z
 thumbnail: KT-406.jpg
 duration: 22
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 8%
 
 ---
 
-# AEM Compatibilidad con autenticación en 6.x
+# Compatibilidad de autenticación en AEM 6.x
 
-AEM Una vista consolidada de los mecanismos de autenticación (y, ocasionalmente, de autorización) admitidos por los servicios de autenticación de los que se dispone en el.
+Una vista consolidada de los mecanismos de autenticación (y, ocasionalmente, de autorización) admitidos por AEM.
 
-AEM *En la tabla siguiente se describe cómo se pueden autenticar los usuarios en el servicio de autenticación de usuarios en el servicio de correo electrónico*.
+*En la tabla siguiente se describe cómo pueden autenticarse los usuarios en AEM.*
 
 <table>
     <tbody>
@@ -34,7 +34,7 @@ AEM *En la tabla siguiente se describe cómo se pueden autenticar los usuarios e
             <td><strong>AEM 6.5</strong></td>
         </tr>
         <tr>
-            <td><strong>AEM como proveedor de identidad canónica de</strong></td>
+            <td><strong>AEM como proveedor de identidad canónico</strong></td>
             <td></td>
             <td></td>
             <td></td>
@@ -58,7 +58,7 @@ AEM *En la tabla siguiente se describe cómo se pueden autenticar los usuarios e
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong>AEM Sistema no-como proveedor de identidad canónico</strong></td>
+            <td><strong>Sistema que no es AEM como proveedor de identidad canónico</strong></td>
             <td></td>
             <td></td>
             <td></td>
@@ -95,4 +95,4 @@ AEM *En la tabla siguiente se describe cómo se pueden autenticar los usuarios e
     </tbody>
 </table>
 
-⁕ *Se proporciona a través de proyectos de la comunidad, pero no es compatible directamente con el Adobe.*
+⁕ *Se proporciona a través de proyectos de la comunidad, pero no es compatible directamente con Adobe.*

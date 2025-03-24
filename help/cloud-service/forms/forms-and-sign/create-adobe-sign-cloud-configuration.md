@@ -5,7 +5,7 @@ solution: Experience Manager,Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Adaptive Forms
 topic: Development
 jira: KT-7428
@@ -14,7 +14,7 @@ badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 exl-id: a55773a5-0486-413f-ada6-bb589315f0b1
 duration: 222
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '155'
 ht-degree: 1%
@@ -23,13 +23,13 @@ ht-degree: 1%
 
 # Crear configuración de nube de Acrobat Sign
 
-AEM AEM La configuración de servicios en la nube de le permite crear servicios de integración entre y otras aplicaciones de la nube de.
+La configuración de servicios en la nube de AEM le permite crear integraciones entre AEM y otras aplicaciones de la nube.
 
-AEM El siguiente vídeo le guiará por los pasos necesarios para crear la configuración de servicios en la nube para la integración con Acrobat Sign para que se integre de forma rápida y sencilla con el servicio en la nube para su integración con la plataforma de datos de
+El siguiente vídeo le guiará para crear la configuración de servicios en la nube necesaria para integrar AEM con Acrobat Sign
 
 >[!VIDEO](https://video.tv.adobe.com/v/332437?quality=12&learn=on)
 
-## Resolución de problemas
+## Solución de problemas
 
 Si se produce un error al configurar la clonación de nube de Adobe Sign, se pueden realizar los siguientes pasos para solucionar los problemas
 * Asegúrese de que la URL de redireccionamiento especificada en la aplicación API de Acrobat Sign tenga el siguiente formato

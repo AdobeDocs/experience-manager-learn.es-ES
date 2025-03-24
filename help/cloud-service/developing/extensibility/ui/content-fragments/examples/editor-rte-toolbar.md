@@ -1,8 +1,8 @@
 ---
 title: Agregar un botón personalizado a la barra de herramientas del Editor de texto enriquecido (RTE)
-description: AEM Aprenda a añadir un botón personalizado a la barra de herramientas del Editor de texto enriquecido (RTE) en el Editor de fragmentos de contenido de la página de inicio de la página de trabajo de la página de
+description: Aprenda a añadir un botón personalizado a la barra de herramientas del Editor de texto enriquecido (RTE) en el Editor de fragmentos de contenido de AEM
 feature: Developer Tools, Content Fragments
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -12,7 +12,7 @@ doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
 exl-id: 6fd93d3b-6d56-43c5-86e6-2e2685deecc9
 duration: 345
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Agregar un botón personalizado a la barra de herramientas del Editor de texto enriquecido (RTE)
 
-AEM Aprenda a añadir un botón personalizado a la barra de herramientas del Editor de texto enriquecido (RTE) en el Editor de fragmentos de contenido de la.
+Aprenda a añadir un botón personalizado a la barra de herramientas del Editor de texto enriquecido (RTE) en el Editor de fragmentos de contenido de AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420768?quality=12&learn=on)
 
@@ -29,13 +29,13 @@ Se pueden agregar botones personalizados a la **barra de herramientas RTE** en e
 
 Utilizando el método `getCustomButtons()` del punto de extensión `rte`, se pueden agregar uno o varios botones personalizados a la **barra de herramientas RTE**. También es posible agregar o quitar botones RTE estándar como _Copiar, Pegar, Negrita y Cursiva_ utilizando los métodos `getCoreButtons()` y `removeButtons)` respectivamente.
 
-Este ejemplo muestra cómo insertar una nota o sugerencia resaltada mediante el botón personalizado _Agregar sugerencia_ de la barra de herramientas. El contenido de la nota o sugerencia resaltado tiene un formato especial aplicado mediante elementos HTML y las clases CSS asociadas. El contenido del marcador de posición y el código del HTML se insertan mediante el método de devolución de llamada `onClick()` de `getCustomButtons()`.
+Este ejemplo muestra cómo insertar una nota o sugerencia resaltada mediante el botón personalizado _Agregar sugerencia_ de la barra de herramientas. El contenido de la nota o sugerencia resaltado tiene un formato especial aplicado mediante elementos HTML y las clases CSS asociadas. El contenido del marcador de posición y el código HTML se insertan mediante el método de devolución de llamada `onClick()` de `getCustomButtons()`.
 
 ## Punto de extensión
 
 Este ejemplo se extiende al punto de extensión `rte` para agregar un botón personalizado a la barra de herramientas RTE del Editor de fragmentos de contenido.
 
-| AEM Interfaz de usuario extendida | Punto de extensión |
+| IU de AEM extendida | Punto de extensión |
 | ------------------------ | --------------------- | 
 | [Editor de fragmentos de contenido](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [Barra de herramientas del editor de texto enriquecido](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-toolbar/) |
 
@@ -47,12 +47,12 @@ El código muestra cómo añadir el botón personalizado con un icono y registra
 
 ### Registro de extensiones
 
-AEM `ExtensionRegistration.js`, asignado a la ruta index.html, es el punto de entrada para la extensión de la y define:
+`ExtensionRegistration.js`, asignado a la ruta index.html, es el punto de entrada para la extensión de AEM y define:
 
 + La definición del botón de barra de herramientas RTE en la función `getCustomButtons()` con atributos `id, tooltip and icon`.
 + Controlador de clic para el botón, en la función `onClick()`.
-+ La función del controlador de clic recibe el objeto `state` como argumento para obtener el contenido del RTE en formato de HTML o texto. Sin embargo, en este ejemplo no se utiliza.
-+ La función del controlador de clics devuelve una matriz de instrucciones. Esta matriz tiene un objeto con `type` y `value` atributos. Para insertar el contenido, el fragmento de código del HTML de atributos `value`, el atributo `type` utiliza `insertContent`. Si hay un caso de uso para reemplazar el contenido, use el tipo de instrucción `replaceContent`.
++ La función del controlador de clic recibe el objeto `state` como argumento para obtener el contenido del RTE en formato HTML o de texto. Sin embargo, en este ejemplo no se utiliza.
++ La función del controlador de clics devuelve una matriz de instrucciones. Esta matriz tiene un objeto con `type` y `value` atributos. Para insertar el contenido, los atributos `value` y el fragmento de código HTML, el atributo `type` utiliza `insertContent`. Si hay un caso de uso para reemplazar el contenido, use el tipo de instrucción `replaceContent`.
 
 El valor `insertContent` es una cadena de HTML, `<div class=\"cmp-contentfragment__element-tip\"><div>TIP</div><div>Add your tip text here...</div></div>`. Las clases CSS `cmp-contentfragment__element-tip` utilizadas para mostrar el valor no están definidas en el widget, sino implementadas en la experiencia web en la que se muestra este campo de fragmento de contenido.
 

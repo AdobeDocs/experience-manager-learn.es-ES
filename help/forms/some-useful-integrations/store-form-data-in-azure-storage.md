@@ -2,7 +2,7 @@
 title: Envío de formularios de tienda en Azure Storage
 description: Almacenar datos de formulario en Azure Storage mediante la API de REST
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
@@ -10,7 +10,7 @@ last-substantial-update: 2023-08-14T00:00:00Z
 jira: KT-13781
 exl-id: 2bec5953-2e0c-4ae6-ae98-34492d4cfbe4
 duration: 143
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '601'
 ht-degree: 0%
@@ -55,10 +55,10 @@ Asegúrese de que tiene / al final del URI de almacenamiento y el token SAS empi
 
 ## Crear solicitud de PUT
 
-El siguiente paso es crear una solicitud de PUT para almacenar los datos de formulario enviados en Azure Storage. Cada envío de formulario debe identificarse con un ID de BLOB único. El ID único de BLOB se suele crear en el código e insertar en la dirección URL de la solicitud del PUT.
-La siguiente es la dirección URL parcial de la solicitud del PUT. `aemformstutorial` es el nombre de la cuenta de almacenamiento, formsubmissions es el contenedor en el que se almacenarán los datos con un ID de BLOB único. El resto de la URL seguirá siendo el mismo.
+El siguiente paso es crear una solicitud de PUT para almacenar los datos de formulario enviados en Azure Storage. Cada envío de formulario debe identificarse con un ID de BLOB único. El ID único de BLOB se suele crear en el código e insertar en la dirección URL de la solicitud de PUT.
+La siguiente es la dirección URL parcial de la solicitud de PUT. `aemformstutorial` es el nombre de la cuenta de almacenamiento, formsubmissions es el contenedor en el que se almacenarán los datos con un ID de BLOB único. El resto de la URL seguirá siendo el mismo.
 https://aemformstutorial.blob.core.windows.net/formsubmissions/blobid/sastoken
-La siguiente es una función escrita para almacenar los datos de formulario enviados en Azure Storage mediante una solicitud del PUT. Observe el uso del nombre de contenedor y el uuid en la dirección URL. Puede crear un servicio OSGi o un servlet sling mediante el código de ejemplo que se muestra a continuación y almacenar los envíos de formularios en Azure Storage.
+La siguiente es una función escrita para almacenar los datos de formulario enviados en Azure Storage mediante una solicitud de PUT. Observe el uso del nombre de contenedor y el uuid en la dirección URL. Puede crear un servicio OSGi o un servlet sling mediante el código de ejemplo que se muestra a continuación y almacenar los envíos de formularios en Azure Storage.
 
 ```java
  public String saveFormDatainAzure(String formData) {

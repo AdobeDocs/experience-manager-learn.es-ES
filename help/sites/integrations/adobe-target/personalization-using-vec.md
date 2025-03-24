@@ -1,7 +1,7 @@
 ---
 title: Personalization con el Compositor de experiencias visuales
 description: Obtenga información sobre cómo crear una actividad de Adobe Target mediante el Compositor de experiencias visuales.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 jira: KT-6352
 thumbnail: 6352-personalization-using-vec.jpg
 topic: Integrations
@@ -13,7 +13,7 @@ badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title=
 doc-type: Tutorial
 exl-id: becf2bed-0541-45e8-9ce2-f9fb023234e0
 duration: 101
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 1%
@@ -26,9 +26,9 @@ Obtenga información sobre cómo crear una actividad de destinatario de prueba A
 
 ## Requisitos previos
 
-AEM Para utilizar el VEC en un sitio web de, se debe completar la siguiente configuración:
+Para utilizar VEC en un sitio web de AEM, se debe completar la siguiente configuración:
 
-1. [Añadir Adobe Target AEM al sitio web de la](./add-target-launch-extension.md)
+1. [Añadir Adobe Target al sitio web de AEM](./add-target-launch-extension.md)
 1. [Déclencheur de una llamada de Adobe Target desde etiquetas](./load-and-fire-target.md)
 
 ## Información general del escenario
@@ -39,7 +39,7 @@ La página de inicio del sitio WKND muestra las actividades locales o las mejore
 
 1. Inicie sesión en [Adobe Experience Cloud](https://experience.adobe.com/), pulse __Target__ y navegue hasta la pestaña __Actividades__
 
-   + Si no ve __Target__ en el panel del Experience Cloud, asegúrese de que la organización de Adobe correcta esté seleccionada en el conmutador de organización en la parte superior derecha y de que se haya concedido acceso a Target en [Adobe Admin Console](https://adminconsole.adobe.com/).
+   + Si no ve __Target__ en el panel de Experience Cloud, asegúrese de que la organización de Adobe correcta esté seleccionada en el conmutador de organización en la parte superior derecha y de que se haya concedido acceso a Target en [Adobe Admin Console](https://adminconsole.adobe.com/) a ese usuario.
 
 1. Haga clic en el botón **Crear actividad** y elija la actividad **Prueba A/B**
 

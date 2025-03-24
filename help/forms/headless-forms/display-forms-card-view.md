@@ -2,14 +2,14 @@
 title: Mostrar los formularios recuperados en la vista de tarjeta
 description: Utilice la API listforms para mostrar los formularios
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 jira: KT-13311
 topic: Development
 role: User
 level: Intermediate
 exl-id: c01ad68e-23c9-4564-8e3e-1924af34a493
 duration: 91
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 1%
@@ -27,7 +27,7 @@ En este artículo, utilizaremos la [API de listforms](https://opensource.adobe.c
 
 ## Plantilla de tarjeta
 
-El siguiente código se utilizó para diseñar la plantilla de tarjeta. La plantilla de tarjeta muestra el título y la descripción del formulario adaptable junto con el logotipo del Adobe. [Se han utilizado componentes de interfaz de usuario de material](https://mui.com/) para crear este diseño.
+El siguiente código se utilizó para diseñar la plantilla de tarjeta. La plantilla de tarjeta muestra el título y la descripción del formulario adaptable junto con el logotipo de Adobe. [Se han utilizado componentes de interfaz de usuario de material](https://mui.com/) para crear este diseño.
 
 
 
@@ -85,7 +85,7 @@ La siguiente ruta se definió en el archivo Main.js para ir a DisplayForm.js
 
 ## Buscar los formularios
 
-AEM La API de listforms se utilizaba para recuperar los formularios del servidor de. La API devuelve una matriz de objetos JSON, cada objeto JSON que representa un formulario.
+La API de listforms se utilizó para recuperar los formularios del servidor de AEM. La API devuelve una matriz de objetos JSON, cada objeto JSON que representa un formulario.
 
 ```javascript
 import { useState,useEffect } from "react";

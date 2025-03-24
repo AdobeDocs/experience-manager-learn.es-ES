@@ -2,7 +2,7 @@
 title: Columnas de cuadrícula personalizadas en la consola Fragmento de contenido
 description: Descubra cómo se puede agregar una columna de cuadrícula personalizada a la consola Fragmento de contenido.
 feature: Developer Tools, Content Fragments
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -12,7 +12,7 @@ doc-type: article
 last-substantial-update: 2023-06-07T00:00:00Z
 exl-id: 87143cf9-e932-4ad6-afe2-cce093c520f4
 duration: 198
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Las columnas de cuadrícula personalizadas se pueden agregar a la consola Fragme
 
 Este ejemplo se extiende al punto de extensión `contentFragmentGrid` para agregar una columna personalizada a la Consola de fragmento de contenido.
 
-| AEM Interfaz de usuario extendida | Punto de extensión |
+| IU de AEM extendida | Punto de extensión |
 | ------------------------ | --------------------- | 
 | [Consola de fragmento de contenido](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/) | [Columnas de cuadrícula](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/grid-columns/) |
 
@@ -43,9 +43,9 @@ Este ejemplo usa la biblioteca [Luxon](https://moment.github.io/luxon/) para cal
 
 ### Registro de extensiones
 
-AEM `ExtensionRegistration.js`, asignado a la ruta index.html, es el punto de entrada para la extensión de la y define:
+`ExtensionRegistration.js`, asignado a la ruta index.html, es el punto de entrada para la extensión de AEM y define:
 
-+ AEM La ubicación de la extensión se inserta a sí misma (`contentFragmentGrid`) en la experiencia de creación de la
++ La ubicación de la extensión se inserta a sí misma (`contentFragmentGrid`) en la experiencia de creación de AEM
 + Definición de la columna personalizada, en la función `getColumns()`
 + Los valores de cada columna personalizada, por fila
 
@@ -204,13 +204,13 @@ Ejemplo de fragmento de contenido JSON disponible como elemento del parámetro `
 }
 ```
 
-AEM Si se requieren otros datos para rellenar la columna personalizada, se pueden realizar solicitudes HTTP a Autor para recuperar los datos.
+Si se requieren otros datos para rellenar la columna personalizada, se pueden realizar solicitudes HTTP al autor de AEM para recuperar los datos.
 
 >[!IMPORTANT]
 >
-> AEM Asegúrese de que la instancia de autor de la esté configurada para permitir [solicitudes de origen cruzado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html) desde los orígenes en los que se está ejecutando la aplicación AppBuilder. Los orígenes permitidos incluyen `https://localhost:9080`, el origen de fase de AppBuilder y el origen de producción de AppBuilder.
+> Asegúrese de que la instancia de autor de AEM esté configurada para permitir [solicitudes de origen cruzado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html) desde los orígenes en los que se está ejecutando la aplicación AppBuilder. Los orígenes permitidos incluyen `https://localhost:9080`, el origen de fase de AppBuilder y el origen de producción de AppBuilder.
 >
-> AEM Como alternativa, la extensión puede llamar a una [acción de AppBuilder](../../runtime-action.md) personalizada que realice la solicitud al autor de la aplicación en nombre de la extensión.
+> Como alternativa, la extensión puede llamar a una [acción AppBuilder](../../runtime-action.md) personalizada que realice la solicitud al autor de AEM en nombre de la extensión.
 
 
 ```javascript

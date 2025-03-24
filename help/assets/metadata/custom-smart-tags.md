@@ -1,8 +1,8 @@
 ---
 title: Etiquetas inteligentes personalizadas para imágenes en AEM Assets
-description: Obtenga información sobre cómo entrenar las etiquetas inteligentes de AEM Assets para aplicar términos personalizados a los recursos.
+description: Obtenga información sobre cómo formar a los AEM Assets en etiquetas inteligentes para aplicar términos personalizados a los recursos.
 feature: Smart Tags
-version: 6.4, 6.5, Cloud Service
+version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 jira: KT-795
 thumbnail: 22254.jpg
 topic: Content Management
@@ -11,7 +11,7 @@ level: Intermediate
 doc-type: Feature Video
 exl-id: 06f2ae4d-c18e-45ed-96d7-ddc6f9c8d829
 duration: 751
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 1%
@@ -25,17 +25,17 @@ A continuación, se pueden aprovechar las etiquetas inteligentes personalizadas 
 
 >[!VIDEO](https://video.tv.adobe.com/v/22254?quality=12&learn=on)
 
-## AEM Configuración de etiquetas inteligentes personalizadas para imágenes para la versión 6.x de{#set-up}
+## Configuración de etiquetas inteligentes personalizadas para imágenes para AEM 6.x{#set-up}
 
 >[!NOTE]
 > Las etiquetas inteligentes personalizadas para imágenes se aprovisionan automáticamente para AEM as a Cloud Service.
 
 Etiquetas inteligentes personalizadas para imágenes requiere [Etiquetas inteligentes para configurar las imágenes](./image-smart-tags.md#set-up).
 
-Aprenda a configurar la formación sobre etiquetas inteligentes en AEM Assets mediante el servicio y el Adobe I/O de contenido inteligente. Etiquetas inteligentes personalizadas para imágenes
+Aprenda a configurar la formación sobre etiquetas inteligentes en AEM Assets mediante el servicio de contenido inteligente y Adobe I/O. Etiquetas inteligentes personalizadas para imágenes
 
 >[!VIDEO](https://video.tv.adobe.com/v/23405?quality=12&learn=on)
 
 ## Recursos adicionales
 
-* AEM.4 requiere el [paquete de servicio más reciente](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html#aem-64).
+* AEM 6.4 requiere el [paquete de servicio más reciente](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html#aem-64).

@@ -1,7 +1,7 @@
 ---
-title: AEM Grupos de usuarios y usuarios de IMS de
+title: Grupos de usuarios de IMS de Adobe y AEM
 description: Los grupos de usuarios de Adobe IMS establecen conjuntos lógicos de usuarios expuestos a AEM, donde se pueden aprovechar para definir permisos precisos para usuarios de AEM.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Administration, Security
 feature: User and Groups
 role: Admin
@@ -11,7 +11,7 @@ thumbnail: 39150.jpg
 last-substantial-update: 2023-05-19T00:00:00Z
 exl-id: 40ba2368-edb7-4348-9aff-91194200092e
 duration: 160
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 65%
@@ -25,6 +25,6 @@ ht-degree: 65%
 >title="Grupos de usuarios de Adobe IMS"
 >abstract="Los grupos de usuarios de Adobe IMS establecen conjuntos lógicos de usuarios expuestos a AEM, donde se pueden aprovechar para definir permisos precisos para usuarios de AEM."
 
- AEM AEM Los grupos de usuarios de IMS de Adobe establecen conjuntos lógicos de usuarios expuestos a la, donde se pueden aprovechar para definir permisos precisos para usuarios con experiencia en el uso de los recursos de la aplicación de aplicaciones para la administración de usuarios en el sector de la administración de correo electrónico.
+ Los grupos de usuarios de IMS de Adobe establecen conjuntos lógicos de usuarios expuestos a AEM, donde se pueden aprovechar para definir permisos precisos para usuarios de AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/39150?quality=12&learn=on)

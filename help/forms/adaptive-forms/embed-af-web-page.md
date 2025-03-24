@@ -1,9 +1,9 @@
 ---
 title: Incrustación de formularios adaptables Forms/HTML5 en una página web
-description: Pasos de configuración necesarios para incrustar formularios adaptables de Forms o HTMLAEM 5 en una página web no.
+description: Pasos de configuración necesarios para incrustar formularios adaptables de Forms o HTML5 en una página web que no sea de AEM.
 feature: Adaptive Forms
 type: Tutorial
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
@@ -11,14 +11,14 @@ jira: KT-8390
 exl-id: 068e38df-9c71-4f55-b6d6-e1486c29d0a9
 last-substantial-update: 2020-06-09T00:00:00Z
 duration: 398
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 29%
 
 ---
 
-# Incrustación de formularios adaptables o formularios de HTML5 en la página web
+# Incrustación de formularios adaptables o formularios HTML5 en una página web
 
 El formulario adaptable incrustado es completamente funcional, y los usuarios pueden rellenarlo y enviarlo sin abandonar la página. Esto permite al usuario mantenerse en el contexto de otros elementos de la página web e interactuar simultáneamente con el formulario.
 

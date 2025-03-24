@@ -1,7 +1,7 @@
 ---
-title: AEM Cloud 5 CDN, parte 2
-description: AEM segunda parte del uso de la CDN de y profundización en varias opciones.
-version: Cloud Service
+title: Cloud 5 AEM CDN, parte 2
+description: segunda parte del uso de la CDN de AEM y profundización en varias opciones.
+version: Experience Manager as a Cloud Service
 role: Admin, Developer
 level: Intermediate
 jira: KT-9904
@@ -9,16 +9,16 @@ thumbnail: 340994.jpeg
 hidefromtoc: true
 exl-id: 3d6f3506-e1ec-4eeb-869f-02db2821b8c6
 duration: 311
-source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '82'
 ht-degree: 2%
 
 ---
 
-# AEM Cloud 5 CDN Parte2
+# Cloud 5 AEM CDN Parte2
 
-AEM Segunda parte del uso de la CDN de y profundización en varias opciones.
+Segunda parte del uso de la CDN de AEM y profundización en varias opciones.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340994?quality=12&learn=on)
 

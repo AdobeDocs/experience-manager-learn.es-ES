@@ -1,14 +1,14 @@
 ---
-title: AEM Utilizar la vista Calendario con proyectos y bandeja de entrada de la
-description: AEM La Vista Calendario de realiza un seguimiento de los proyectos y las tareas en una vista de calendario para facilitar la administración y la programación de los proyectos. Con la vista Calendario, el usuario tendría una visibilidad general de los proyectos y las tareas que están actualmente en curso, planificados, con vencimiento pronto y con vencimiento anterior.
-version: 6.4, 6.5
+title: Utilizar la vista Calendario con los proyectos y la bandeja de entrada de AEM
+description: La vista Calendario de AEM realiza un seguimiento de los proyectos y las tareas en una vista Calendario para facilitar la gestión y la programación de los proyectos. Con la vista Calendario, el usuario tendría una visibilidad general de los proyectos y las tareas que están actualmente en curso, planificados, con vencimiento pronto y con vencimiento anterior.
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Workflow, Projects
 doc-type: Feature Video
 topic: Collaboration
 role: User
 level: Beginner
 duration: 478
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '185'
 ht-degree: 0%
@@ -16,9 +16,9 @@ ht-degree: 0%
 ---
 
 
-# AEM Utilizar la vista Calendario con proyectos y bandeja de entrada de la
+# Utilizar la vista Calendario con los proyectos y la bandeja de entrada de AEM
 
-AEM La Vista Calendario de realiza un seguimiento de los proyectos y las tareas en una vista de calendario para facilitar la administración y la programación de los proyectos. Con la vista Calendario, el usuario tendría una visibilidad general de los proyectos y las tareas que están actualmente en curso, planificados, con vencimiento pronto y con vencimiento anterior.
+La vista Calendario de AEM realiza un seguimiento de los proyectos y las tareas en una vista Calendario para facilitar la gestión y la programación de los proyectos. Con la vista Calendario, el usuario tendría una visibilidad general de los proyectos y las tareas que están actualmente en curso, planificados, con vencimiento pronto y con vencimiento anterior.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16804?quality=12&learn=on)
 

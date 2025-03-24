@@ -1,7 +1,7 @@
 ---
-title: AEM Webhooks y eventos de
-description: AEM Obtenga información sobre cómo recibir eventos de en un webhook y revisar los detalles del evento, como carga útil, encabezados y metadatos.
-version: Cloud Service
+title: Webhooks y eventos de AEM
+description: Obtenga información sobre cómo recibir eventos de AEM en un webhook y revisar los detalles del evento, como carga útil, encabezados y metadatos.
+version: Experience Manager as a Cloud Service
 feature: Developing, App Builder
 topic: Development, Architecture, Content Management
 role: Architect, Developer
@@ -12,33 +12,33 @@ last-substantial-update: 2023-01-29T00:00:00Z
 jira: KT-14732
 thumbnail: KT-14732.jpeg
 exl-id: 00954d74-c4c7-4dac-8d23-7140c49ae31f
-source-git-commit: efa0a16649c41fab8309786a766483cfeab98867
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 0%
 
 ---
 
-# AEM Webhooks y eventos de
+# Webhooks y eventos de AEM
 
-AEM Obtenga información sobre cómo recibir eventos de en un webhook y revisar los detalles del evento, como carga útil, encabezados y metadatos.
+Obtenga información sobre cómo recibir eventos de AEM en un webhook y revisar los detalles del evento, como carga útil, encabezados y metadatos.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427051?quality=12&learn=on)
 
-En este ejemplo, el uso de un _gancho web hospedado_ proporcionado por el Adobe AEM le permite recibir eventos de sin necesidad de configurar su propio gancho web. Este webhook proporcionado por el Adobe está hospedado en [Glitch](https://glitch.com/), una plataforma conocida por ofrecer un entorno basado en la web propicio para generar e implementar aplicaciones web. Sin embargo, la opción de usar su propio webhook también está disponible si se prefiere.
+En este ejemplo, el uso de un _gancho web hospedado_ proporcionado por Adobe le permite recibir eventos de AEM sin necesidad de configurar su propio gancho web. Este webhook proporcionado por Adobe está hospedado en [Glitch](https://glitch.com/), una plataforma conocida por ofrecer un entorno basado en la web propicio para generar e implementar aplicaciones web. Sin embargo, la opción de usar su propio webhook también está disponible si se prefiere.
 
 ## Requisitos previos
 
 Para completar este tutorial, necesita lo siguiente:
 
-- Entorno de AEM as a Cloud Service AEM con [ventilación de eventos habilitada](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment).
+- Entorno AEM as a Cloud Service con [evento de AEM habilitado](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment).
 
-- [Proyecto de Adobe Developer Console AEM configurado para eventos de](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#how-to-subscribe-to-aem-events-in-the-adobe-developer-console).
+- [Proyecto Adobe Developer Console configurado para eventos de AEM](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#how-to-subscribe-to-aem-events-in-the-adobe-developer-console).
 
 
 ## Acceso al webhook
 
-Para acceder al webhook proporcionado por el Adobe, siga estos pasos:
+Para acceder al webhook proporcionado por Adobe, siga estos pasos:
 
 - Verifique que puede acceder al [Glitch - webhook alojado](https://lovely-ancient-coaster.glitch.me/) en una nueva pestaña del navegador.
 
@@ -52,11 +52,11 @@ Para acceder al webhook proporcionado por el Adobe, siga estos pasos:
 
 ## Configuración del webhook en un proyecto de Adobe Developer Console
 
-AEM Para recibir eventos de en la URL del gancho web anterior, siga estos pasos:
+Para recibir eventos de AEM en la URL del gancho web anterior, siga estos pasos:
 
 - En [Adobe Developer Console](https://developer.adobe.com), navegue hasta el proyecto y haga clic para abrirlo.
 
-- AEM En la sección **Productos y servicios**, haga clic en los puntos suspensivos `...` junto a la tarjeta de eventos que desee que envíe eventos de la al gancho web y seleccione **Editar**.
+- En la sección **Productos y servicios**, haga clic en los puntos suspensivos `...` junto a la tarjeta de eventos que desee que envíe eventos de AEM al gancho web y seleccione **Editar**.
 
   ![Edición de proyecto de Adobe Developer Console](../assets/examples/webhook/adobe-developer-console-project-edit.png)
 
@@ -68,14 +68,14 @@ AEM Para recibir eventos de en la URL del gancho web anterior, siga estos pasos:
 
   ![Gancho web del proyecto Adobe Developer Console](../assets/examples/webhook/adobe-developer-console-project-webhook.png)
 
-- En la página de Glitch, debería ver una solicitud de GET, es una solicitud de desafío enviada por los Eventos de Adobe I/O para comprobar la URL del webhook.
+- En la página de Glitch, debería ver una petición GET, es una petición de desafío enviada por Adobe I/O Events para comprobar la URL del webhook.
 
   ![Problema - solicitud de desafío](../assets/examples/webhook/glitch-challenge-request.png)
 
 
-## Déclencheur AEM de eventos de
+## Déclencheur de eventos de AEM
 
-Para obtener un déclencheur AEM de eventos de la desde el entorno de AEM as a Cloud Service que se ha registrado en el proyecto de Adobe Developer Console anterior, siga estos pasos:
+Para almacenar en déclencheur eventos de AEM desde el entorno de AEM as a Cloud Service que se haya registrado en el proyecto de Adobe Developer Console anterior, siga estos pasos:
 
 - Acceda a su entorno de creación de AEM as a Cloud Service e inicie sesión a través de [Cloud Manager](https://my.cloudmanager.adobe.com/).
 
@@ -83,15 +83,15 @@ Para obtener un déclencheur AEM de eventos de la desde el entorno de AEM as a C
 
 ## Revisar detalles del evento
 
-AEM Después de completar los pasos anteriores, debería ver los eventos de la que se entregan al webhook. Busque la solicitud del POST en la página de gancho web de Glitch.
+Después de completar los pasos anteriores, debería ver los eventos de AEM que se envían al gancho web. Busque la petición POST en la página del webhook Glitch.
 
-![Problema - solicitud del POST](../assets/examples/webhook/glitch-post-request.png)
+![Problema - petición POST](../assets/examples/webhook/glitch-post-request.png)
 
-Estos son los detalles clave de la solicitud del POST:
+Estos son los detalles clave de la solicitud de POST:
 
 - ruta: `/webhook/${YOUR-WEBHOOK-URL}`, por ejemplo `/webhook/AdobeTM-aem-eventing`
 
-- encabezados: encabezados de solicitud enviados por los eventos de Adobe I/O, por ejemplo:
+- encabezados: encabezados de solicitud enviados por Adobe I/O Events, por ejemplo:
 
 ```json
 {
@@ -117,7 +117,7 @@ Estos son los detalles clave de la solicitud del POST:
 }
 ```
 
-- cuerpo/carga útil: cuerpo de la solicitud enviado por los eventos del Adobe I/O, por ejemplo:
+- cuerpo/carga útil: cuerpo de la solicitud enviado por Adobe I/O Events, por ejemplo:
 
 ```json
 {
@@ -151,7 +151,7 @@ Estos son los detalles clave de la solicitud del POST:
 }
 ```
 
-AEM Puede ver que los detalles del evento de la tienen toda la información necesaria para procesar el evento en el webhook. Por ejemplo, el tipo de evento (`type`), el origen de evento (`source`), el identificador de evento (`event_id`), la hora del evento (`time`) y los datos de evento (`data`).
+Puede ver que los detalles del evento de AEM tienen toda la información necesaria para procesar el evento en el webhook. Por ejemplo, el tipo de evento (`type`), el origen de evento (`source`), el identificador de evento (`event_id`), la hora del evento (`time`) y los datos de evento (`data`).
 
 ## Recursos adicionales
 

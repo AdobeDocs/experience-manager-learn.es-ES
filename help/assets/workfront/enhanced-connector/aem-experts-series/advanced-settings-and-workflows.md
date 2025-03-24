@@ -1,7 +1,7 @@
 ---
-title: Configuración y flujos de trabajo avanzados para Workfront AEM para el conector mejorado de la
-description: Obtenga información acerca de la configuración avanzada del conector mejorado de Workfront para la y cómo configurar flujos de trabajo avanzados e iniciadores en la administración de la sincronización de datos entre los flujos de trabajo de y el conector de la aplicación de datos de AEM AEM AEM para la administración de la sincronización de datos entre los flujos de trabajo y el conector de la aplicación de datos de la aplicación de datos de la plataforma de datos de Adobe y el conector de Workfront.
-version: Cloud Service
+title: Configuración y flujos de trabajo avanzados para el conector mejorado de Workfront para AEM
+description: Obtenga información acerca de la configuración avanzada del conector mejorado de Workfront para AEM y cómo configurar los flujos de trabajo avanzados y los iniciadores en AEM para administrar la sincronización de datos entre AEM y Workfront.
+version: Experience Manager as a Cloud Service
 topic: Content Management, Integrations
 feature: Asset Management
 role: Admin, Architect, Developer
@@ -14,7 +14,7 @@ badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM Assets as a Cloud Service, AEM Assets 6.5" before-title="false"
 exl-id: 7d44e1b7-7216-431d-b866-6adcc8673d53
 duration: 2844
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 0%
@@ -23,9 +23,9 @@ ht-degree: 0%
 
 # Configuración y flujos de trabajo avanzados
 
-AEM ![Serie de expertos de](./assets/banner.png)
+![Serie de expertos de AEM](./assets/banner.png)
 
-Obtenga información acerca de la configuración avanzada del conector mejorado de Workfront para la y cómo configurar flujos de trabajo avanzados e iniciadores en la administración de la sincronización de datos entre los flujos de trabajo de y el conector de la aplicación de datos de AEM AEM AEM para la administración de la sincronización de datos entre los flujos de trabajo y el conector de la aplicación de datos de la aplicación de datos de la plataforma de datos de Adobe y el conector de Workfront.
+Obtenga información acerca de la configuración avanzada del conector mejorado de Workfront para AEM y cómo configurar los flujos de trabajo avanzados y los iniciadores en AEM para administrar la sincronización de datos entre AEM y Workfront.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340397?quality=12&learn=on)
 

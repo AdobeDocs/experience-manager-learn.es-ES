@@ -1,14 +1,14 @@
 ---
-title: 'AEM Creación de modelos de fragmentos de contenido: conceptos avanzados de la creación de fragmentos de contenido sin encabezado GraphQL'
-description: En este capítulo de Conceptos avanzados de Adobe Experience Manager AEM () sin encabezado, aprenda a editar un modelo de fragmento de contenido añadiendo marcadores de posición de pestaña, fecha y hora, objetos JSON, referencias de fragmento y referencias de contenido.
-version: Cloud Service
+title: 'Creación de modelos de fragmentos de contenido: conceptos avanzados de AEM sin encabezado, GraphQL'
+description: En este capítulo de Conceptos avanzados de Adobe Experience Manager (AEM) sin encabezado, aprenda a editar un modelo de fragmento de contenido añadiendo marcadores de posición de pestaña, fecha y hora, objetos JSON, referencias de fragmento y referencias de contenido.
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: 2122ab13-f9df-4f36-9c7e-8980033c3b10
 duration: 757
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1991'
 ht-degree: 1%
@@ -230,11 +230,11 @@ Existen algunas prácticas recomendadas relacionadas con la creación de modelos
 
 ## Enhorabuena. {#congratulations}
 
-Enhorabuena. Ahora ha agregado pestañas, utilizado los tipos de datos de objeto JSON y fecha y hora, y ha aprendido más acerca de las referencias de fragmentos y contenido. También ha agregado reglas de validación de referencia de contenido.
+¡Enhorabuena! Ahora ha agregado pestañas, utilizado los tipos de datos de objeto JSON y fecha y hora, y ha aprendido más acerca de las referencias de fragmentos y contenido. También ha agregado reglas de validación de referencia de contenido.
 
 ## Siguientes pasos {#next-steps}
 
 El siguiente capítulo de esta serie abarcará [la creación de fragmentos de contenido](/help/headless-tutorial/graphql/advanced-graphql/author-content-fragments.md) a partir de los modelos que creó en este capítulo. Aprenda a utilizar los tipos de datos introducidos en este capítulo y a crear políticas de carpeta para limitar qué modelos de fragmentos de contenido se pueden crear en una carpeta de recursos.
 
-Aunque es opcional para este tutorial, asegúrese de publicar todo el contenido en situaciones de producción reales. Para obtener una revisión de los entornos de Author y Publish AEM en la, consulte la
-AEM [Serie de vídeos sin encabezado y de GraphQL](/help/headless-tutorial/graphql/video-series/author-publish-architecture.md).
+Aunque es opcional para este tutorial, asegúrese de publicar todo el contenido en situaciones de producción reales. Para obtener una revisión de los entornos de creación y publicación de AEM, consulte la
+[Serie de vídeos de AEM sin encabezado y GraphQL](/help/headless-tutorial/graphql/video-series/author-publish-architecture.md).

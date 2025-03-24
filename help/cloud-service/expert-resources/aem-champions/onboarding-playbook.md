@@ -1,7 +1,7 @@
 ---
-title: AEM Consejos y trucos para el campeón de la - Cloud Manager Onboarding Playbook
-description: Consulte estos consejos para la incorporación a Cloud Manager AEM y el manual de incorporación de Rakesh Pasupuleti, campeón y experto en.
-version: Cloud Service
+title: 'Consejos y trucos para el campeón de AEM: libro de estrategias de incorporación de Cloud Manager'
+description: Consulte estos consejos para la incorporación a Cloud Manager y el manual de incorporación del campeón y experto de AEM, Rakesh Pasupuleti.
+version: Experience Manager as a Cloud Service
 feature: Cloud Manager
 topic: Administration
 role: Admin, Architect
@@ -11,14 +11,14 @@ last-substantial-update: 2023-05-11T00:00:00Z
 jira: KT-13228
 exl-id: d1745cea-906b-46fa-adcc-7da6e7ee95db
 duration: 115
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 1%
 
 ---
 
-# AEM Consejos y trucos para el campeón de la - Cloud Manager Onboarding Playbook
+# Consejos y trucos para el campeón de AEM: libro de estrategias de incorporación de Cloud Manager
 
 El manual de incorporación le ayudará a asumir el cargo de nuevo administrador y desarrollador de AEM as a Cloud Service. En la hoja de cálculo descargable, le guiaremos por las actividades que debe realizar durante las tres primeras semanas de trabajo al iniciar el recorrido de incorporación.
 

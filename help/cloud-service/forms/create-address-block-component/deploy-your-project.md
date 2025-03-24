@@ -4,12 +4,12 @@ description: Creación de un nuevo componente principal de dirección en AEM For
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Adaptive Forms
 topic: Development
 jira: KT-15752
 exl-id: be25be52-2914-4820-9356-678a326f8edc
-source-git-commit: b4df652fcda0af5d01077b97aa7fa17cfe2abf4b
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 0%
@@ -18,9 +18,9 @@ ht-degree: 0%
 
 # Implemente su proyecto
 
-Antes de empezar a implementar el proyecto en el as a Cloud Service de AEM Forms, se recomienda implementar el proyecto en la instancia local de AEM Forms lista para la nube.
+Antes de empezar a implementar el proyecto en AEM Forms as a Cloud Service, se recomienda implementar el proyecto en la instancia local de AEM Forms lista para la nube.
 
-## AEM Sincronización de cambios con el proyecto de
+## Sincronizar cambios con el proyecto de AEM
 
 Inicie IntelliJ y navegue hasta la carpeta adaptiveForm bajo la carpeta ``ui.apps``, como se muestra a continuación
 ![intellij](assets/intellij.png)

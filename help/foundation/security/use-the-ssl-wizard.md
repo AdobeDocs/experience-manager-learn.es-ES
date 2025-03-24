@@ -1,7 +1,7 @@
 ---
-title: AEM Uso del Asistente para SSL en la
-description: Asistente de configuración de SSL de Adobe Experience Manager AEM para facilitar la configuración de una instancia de para que se ejecute en HTTPS.
-version: 6.5, Cloud Service
+title: Uso del Asistente para SSL en AEM
+description: Asistente de configuración SSL de Adobe Experience Manager para facilitar la configuración de una instancia de AEM para que se ejecute en HTTPS.
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 jira: KT-13839
 doc-type: Technical Video
 topic: Security
@@ -10,14 +10,14 @@ level: Beginner
 exl-id: 4e69e115-12a6-4a57-90da-b91e345c6723
 last-substantial-update: 2023-08-08T00:00:00Z
 duration: 564
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 0%
 
 ---
 
-# AEM Uso del Asistente para SSL en la
+# Uso del Asistente para SSL en AEM
 
 Aprenda a configurar SSL en Adobe Experience Manager para que se ejecute a través de HTTPS mediante el asistente de SSL integrado.
 
@@ -32,7 +32,7 @@ Aprenda a configurar SSL en Adobe Experience Manager para que se ejecute a trav�
 
 ## Uso del Asistente para configuración SSL
 
-AEM Vaya a __Autor de > Herramientas > Seguridad > Configuración SSL__ y abra el __Asistente para la configuración SSL__.
+Vaya a __AEM Author > Herramientas > Seguridad > Configuración SSL__ y abra el __Asistente para la configuración SSL__.
 
 ![Asistente para configuración SSL](assets/use-the-ssl-wizard/ssl-config-wizard.png)
 
@@ -72,11 +72,11 @@ Para actualizar _hostname_ y _port_, use el paso del asistente __Conector SSL__.
 1. Para comprobar el SSL, haga clic en el botón __Ir a la dirección URL HTTPS__.
 1. Si usa un certificado autofirmado, verá el error `Your connection is not private`.
 
-   AEM ![Configuración de SSL: Verificar la configuración a través de HTTPS](assets/use-the-ssl-wizard/verify-aem-over-ssl.png)
+   ![Configuración SSL: compruebe AEM a través de HTTPS](assets/use-the-ssl-wizard/verify-aem-over-ssl.png)
 
 ## Certificado y clave privada firmados automáticamente
 
-AEM El siguiente zip contiene [!DNL DER] y [!DNL CRT] archivos necesarios para configurar SSL localmente y destinados únicamente a fines de desarrollo local.
+El siguiente zip contiene [!DNL DER] y [!DNL CRT] archivos necesarios para configurar AEM SSL localmente y destinados únicamente a fines de desarrollo local.
 
 Los archivos [!DNL DER] y [!DNL CERT] se proporcionan para su comodidad y se generan siguiendo los pasos descritos en la sección Generar clave privada y certificado autofirmado a continuación.
 
@@ -88,7 +88,7 @@ Este localhost: clave privada y certificado autofirmado.zip (caduca en julio de 
 
 ### Generación de claves privadas y certificados autofirmados
 
-AEM El vídeo anterior muestra la instalación y configuración de SSL en una instancia de autor de mediante certificados firmados automáticamente. Los comandos siguientes que utilizan [[!DNL OpenSSL]](https://www.openssl.org/) pueden generar una clave privada y un certificado para usarlos en el paso 2 del asistente.
+El vídeo anterior muestra la configuración de SSL en una instancia de autor de AEM mediante certificados autofirmados. Los comandos siguientes que utilizan [[!DNL OpenSSL]](https://www.openssl.org/) pueden generar una clave privada y un certificado para usarlos en el paso 2 del asistente.
 
 ```shell
 ### Create Private Key

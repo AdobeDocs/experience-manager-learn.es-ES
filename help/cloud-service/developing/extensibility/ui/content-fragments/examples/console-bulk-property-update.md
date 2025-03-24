@@ -1,8 +1,8 @@
 ---
-title: AEM Ejemplo de actualización masiva de propiedades Extensión de la consola Fragmentos de contenido
-description: AEM Un ejemplo de extensión de la consola Fragmentos de contenido que actualiza de forma masiva una propiedad de fragmentos de contenido.
+title: Ejemplo de actualización masiva de propiedades Extensión de la consola de fragmentos de contenido de AEM
+description: Ejemplo de extensión de la consola Fragmentos de contenido de AEM que actualiza de forma masiva una propiedad de fragmentos de contenido.
 feature: Developer Tools, Content Fragments
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -12,7 +12,7 @@ doc-type: article
 last-substantial-update: 2024-01-26T00:00:00Z
 exl-id: fbfb5c10-95f8-4875-88dd-9a941d7a16fd
 duration: 1362
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '769'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3412296?quality=12&learn=on)
 
-AEM Este ejemplo de extensión de la consola de fragmentos de contenido es una extensión de [barra de acciones](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/action-bar/) que actualiza de forma masiva una propiedad de fragmentos de contenido a un valor común.
+Esta extensión de la consola de fragmentos de contenido de AEM de ejemplo es una extensión de [barra de acciones](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/action-bar/) que actualiza de forma masiva una propiedad de fragmentos de contenido a un valor común.
 
 El flujo funcional de la extensión de ejemplo es el siguiente:
 
@@ -31,9 +31,9 @@ El flujo funcional de la extensión de ejemplo es el siguiente:
 
 1. Seleccione Fragmentos de contenido y, al hacer clic en el botón de la extensión en la [barra de acciones](#extension-registration), se abrirá el [modal](#modal).
 2. El [modal](#modal) muestra un formulario de entrada personalizado creado con [React Spectrum](https://react-spectrum.adobe.com/react-spectrum/).
-3. AEM Al enviar el formulario, se enviará la lista de los fragmentos de contenido seleccionados y el host de a la [acción personalizada de Adobe I/O Runtime](#adobe-io-runtime-action).
-4. La [acción de Adobe I/O Runtime](#adobe-io-runtime-action) valida las entradas y realiza solicitudes de PUT AEM HTTP para que se puedan actualizar los fragmentos de contenido seleccionados.
-5. Una serie de PUT HTTP para cada fragmento de contenido para actualizar la propiedad especificada.
+3. Al enviar el formulario, se enviará la lista de fragmentos de contenido seleccionados y el host de AEM a la [acción personalizada de Adobe I/O Runtime](#adobe-io-runtime-action).
+4. La [acción de Adobe I/O Runtime](#adobe-io-runtime-action) valida las entradas y realiza solicitudes HTTP PUT a AEM para actualizar los fragmentos de contenido seleccionados.
+5. Una serie de HTTP PUT para cada fragmento de contenido para actualizar la propiedad especificada.
 6. AEM as a Cloud Service conserva las actualizaciones de la propiedad en el fragmento de contenido y devuelve respuestas correctas o de error a la acción de Adobe I/O Runtime.
 7. El modal recibió la respuesta de la acción de Adobe I/O Runtime y muestra una lista de actualizaciones masivas correctas.
 
@@ -41,7 +41,7 @@ El flujo funcional de la extensión de ejemplo es el siguiente:
 
 Este ejemplo se extiende al punto de extensión `actionBar` para agregar el botón personalizado a la consola Fragmento de contenido.
 
-| AEM Interfaz de usuario extendida | Punto de extensión |
+| IU de AEM extendida | Punto de extensión |
 | ------------------------ | --------------------- | 
 | [Consola de fragmento de contenido](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/) | [Barra de acciones](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/action-bar/) |
 
@@ -89,9 +89,9 @@ Existen dos conjuntos lógicos de rutas:
 
 ### Registro de extensiones
 
-AEM `ExtensionRegistration.js`, asignado a la ruta `index.html`, es el punto de entrada para la extensión de la y define:
+`ExtensionRegistration.js`, asignado a la ruta `index.html`, es el punto de entrada para la extensión de AEM y define:
 
-1. AEM La ubicación del botón de extensión aparece en la experiencia de creación de la (`actionBar` o `headerMenu`)
+1. La ubicación del botón de extensión aparece en la experiencia de creación de AEM (`actionBar` o `headerMenu`)
 1. Definición del botón de extensión en la función `getButtons()`
 1. Controlador de clic para el botón, en la función `onClick()`
 
@@ -168,10 +168,10 @@ En esta aplicación de ejemplo, hay un componente React modal (`BulkPropertyUpda
 1. El formulario de actualización masiva de propiedades que permite al usuario especificar el nombre y el valor de la propiedad que se va a actualizar
 1. La respuesta de la operación de actualización masiva de propiedades, que enumera los fragmentos de contenido que se actualizaron y los que no se pudieron actualizar
 
-AEM Es importante destacar que cualquier interacción con los de la extensión debe delegarse a una [acción de AppBuilder Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/), que es un proceso independiente sin servidor que se ejecuta en [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/).
-El uso de acciones de Adobe I/O Runtime AEM para comunicarse con los usuarios es para evitar problemas de conectividad de Intercambio de Recursos de Origen Cruzado (CORS).
+Es importante destacar que cualquier interacción con AEM desde la extensión debe delegarse a una [acción de AppBuilder Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/), que es un proceso independiente sin servidor que se ejecuta en [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/).
+El uso de acciones de Adobe I/O Runtime para comunicarse con AEM es para evitar problemas de conectividad de Intercambio de Recursos de Origen Cruzado (CORS).
 
-Cuando se envía el formulario de actualización masiva de propiedades, un elemento personalizado `onSubmitHandler()` invoca la acción de Adobe I/O Runtime AEM AEM AEM, pasando el host (dominio) actual y el token de acceso de la del usuario, que a su vez llama a la [API de fragmento de contenido de la](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html) para actualizar los fragmentos de contenido.
+Cuando se envía el formulario de actualización masiva de propiedades, un elemento personalizado `onSubmitHandler()` invoca la acción de Adobe I/O Runtime y pasa el host (dominio) de AEM actual y el token de acceso de AEM del usuario, que a su vez llama a la [API de fragmentos de contenido de AEM](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html) para actualizar los fragmentos de contenido.
 
 Cuando se recibe la respuesta de la acción Adobe I/O Runtime, el modal se actualiza para mostrar los resultados de la operación de actualización de propiedades por lotes.
 
@@ -433,12 +433,12 @@ export default function BulkPropertyUpdateModal() {
 
 ### Acción de Adobe I/O Runtime
 
-AEM Una aplicación App Builder de extensión puede definir o usar 0 o varias acciones de Adobe I/O Runtime.
-Las acciones de Adobe AEM en tiempo de ejecución deben ser un trabajo responsable que requiera interactuar con, o con otros servicios web de Adobe.
+Una aplicación App Builder de extensión de AEM puede definir o utilizar 0 o varias acciones de Adobe I/O Runtime.
+Las acciones de Adobe Runtime deben ser un trabajo responsable que requiera interactuar con AEM u otros servicios web de Adobe.
 
 En esta aplicación de ejemplo, la acción Adobe I/O Runtime, que usa el nombre predeterminado `generic`, es responsable de lo siguiente:
 
-1. AEM Realización de una serie de solicitudes HTTP a la API de fragmentos de contenido de la para actualizar los fragmentos de contenido.
+1. Realizar una serie de solicitudes HTTP a la API de fragmentos de contenido de AEM para actualizar los fragmentos de contenido.
 1. Recopilar las respuestas de estas solicitudes HTTP, clasificarlas en éxitos y errores
 1. Devolver la lista de éxitos y errores para que el modal los muestre (`BulkPropertyUpdateModal.js`)
 

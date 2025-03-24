@@ -1,7 +1,7 @@
 ---
 title: Integración de AEM Assets con la creación de documentos
 description: Explore cómo integrar AEM Assets con la creación de documentos.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Content Management
 role: Admin, Developer, Leader, User
@@ -12,7 +12,7 @@ jira: KT-15318
 hidefromtoc: true
 recommendations: noDisplay, noCatalog
 exl-id: ef7fdeb9-17c2-49a8-8335-5692f3a01d71
-source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '51'
 ht-degree: 3%

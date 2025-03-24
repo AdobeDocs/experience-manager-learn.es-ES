@@ -1,7 +1,7 @@
 ---
-title: AEM Desarrollar proyectos en el ámbito de la
-description: AEM Un tutorial de desarrollo que ilustra cómo desarrollar para proyectos de. AEM En este tutorial crearemos una plantilla de proyecto personalizada que se puede utilizar para crear nuevos proyectos dentro de para administrar flujos de trabajo y tareas de creación de contenido.
-version: 6.4, 6.5
+title: Desarrollar proyectos en AEM
+description: Un tutorial de desarrollo que ilustra cómo desarrollar para proyectos de AEM. En este tutorial crearemos una plantilla de proyecto personalizada que se puede utilizar para crear nuevos proyectos en AEM para administrar los flujos de trabajo y las tareas de creación de contenido.
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Projects, Workflow
 doc-type: Tutorial
 topic: Development
@@ -9,16 +9,16 @@ role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
 duration: 1417
-source-git-commit: 54a7f93637545a4467c4c587bbc3d1d0de5c64a1
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '4441'
 ht-degree: 0%
 
 ---
 
-# AEM Desarrollar proyectos en el ámbito de la
+# Desarrollar proyectos en AEM
 
-Este es un tutorial de desarrollo que ilustra cómo desarrollar para [!DNL AEM Projects]. AEM En este tutorial crearemos una plantilla de proyecto personalizada que se puede utilizar para crear proyectos en para administrar flujos de trabajo y tareas de creación de contenido.
+Este es un tutorial de desarrollo que ilustra cómo desarrollar para [!DNL AEM Projects]. En este tutorial crearemos una plantilla de proyecto personalizada que se puede utilizar para crear proyectos en AEM para administrar los flujos de trabajo y las tareas de creación de contenido.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16904?quality=12&learn=on)
 
@@ -26,9 +26,9 @@ Este es un tutorial de desarrollo que ilustra cómo desarrollar para [!DNL AEM P
 
 ## Introducción {#introduction}
 
-AEM [[!DNL AEM Projects]](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects) es una característica de la aplicación diseñada para facilitar la administración y la agrupación de todos los flujos de trabajo y tareas asociados con la creación de contenido como parte de una implementación de AEM Sites o Assets.
+[[!DNL AEM Projects]](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects) es una característica de AEM diseñada para facilitar la administración y el agrupamiento de todos los flujos de trabajo y tareas asociados con la creación de contenido como parte de una implementación de AEM Sites o Assets.
 
-AEM Los proyectos vienen con [plantillas de proyecto OOTB](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects). Al crear un proyecto, los autores pueden elegir entre estas plantillas disponibles. AEM Las implementaciones de grandes dimensiones con requisitos empresariales únicos querrán crear plantillas de proyecto personalizadas, adaptadas para satisfacer sus necesidades. Al crear una plantilla de proyecto personalizada, los desarrolladores pueden configurar el tablero del proyecto, vincularse a flujos de trabajo personalizados y crear funciones empresariales adicionales para un proyecto. Observaremos la estructura de una plantilla de proyecto y crearemos una de muestra.
+Proyectos AEM incluye varias [plantillas de proyecto OOTB](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects). Al crear un proyecto, los autores pueden elegir entre estas plantillas disponibles. Las implementaciones grandes de AEM con requisitos empresariales únicos querrán crear plantillas de proyecto personalizadas, adaptadas para satisfacer sus necesidades. Al crear una plantilla de proyecto personalizada, los desarrolladores pueden configurar el tablero del proyecto, vincularse a flujos de trabajo personalizados y crear funciones empresariales adicionales para un proyecto. Observaremos la estructura de una plantilla de proyecto y crearemos una de muestra.
 
 ![Tarjeta de proyecto personalizada](./assets/develop-aem-projects/custom-project-card.png)
 
@@ -39,7 +39,7 @@ Este tutorial recorrerá paso a paso el código necesario para crear una plantil
 * [Paquete de tutorial finalizado](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [Repositorio de código completo en GitHub](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
 
-AEM AEM Este tutorial asume algunos conocimientos básicos de [prácticas de desarrollo de la](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/implementing/developing/introduction/the-basics) y cierta familiaridad con la [configuración del proyecto Maven de la](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html). AEM Todo el código mencionado está diseñado para utilizarse como referencia y solo debe implementarse en una [instancia de desarrollo local](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/implementing/deploying/deploying/deploy).
+Este tutorial asume algunos conocimientos básicos de [prácticas de desarrollo de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/implementing/developing/introduction/the-basics) y cierta familiaridad con la [configuración del proyecto AEM Maven](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html). Todo el código mencionado está diseñado para utilizarse como referencia y solo debe implementarse en una [instancia de desarrollo local de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/implementing/deploying/deploying/deploy).
 
 ## Estructura de una plantilla de proyecto
 
@@ -63,7 +63,7 @@ La estructura del nodo completo:
 
 El nodo raíz de la plantilla de proyecto es del tipo **cq:Template**. En este nodo puede configurar las propiedades **jcr:title** y **jcr:description** que se muestran en el Asistente para crear proyectos. También hay una propiedad denominada **wizard** que señala a un formulario que rellenará las propiedades del proyecto. El valor predeterminado de: **/libs/cq/core/content/projects/wizard/steps/defaultproject.html** debería funcionar bien en la mayoría de los casos, ya que permite al usuario rellenar las propiedades básicas del proyecto y agregar miembros al grupo.
 
-*&#42;Tenga en cuenta que el Asistente para crear proyectos no utiliza el servlet del POST Sling. En su lugar, los valores se publican en un servlet personalizado:**com.adobe.cq.projects.impl.servlet.ProjectServlet**. Esto debe tenerse en cuenta al agregar campos personalizados.*
+*&#42;Tenga en cuenta que el Asistente para crear proyectos no utiliza el servlet Sling POST. En su lugar, los valores se publican en un servlet personalizado:**com.adobe.cq.projects.impl.servlet.ProjectServlet**. Esto debe tenerse en cuenta al agregar campos personalizados.*
 
 Se puede encontrar un ejemplo de asistente personalizado para la plantilla del proyecto de traducción: **/libs/cq/core/content/projects/wizard/translationproject/defaultproject**.
 
@@ -90,7 +90,7 @@ Una de las razones más atractivas para crear una plantilla de proyecto personal
 
 ## Creación de una plantilla de proyecto {#creating-project-template}
 
-Dado que principalmente copiamos/configuramos nodos, utilizaremos CRXDE Lite. AEM En la instancia de la cuenta local de, abra [CRXDE Lite](http://localhost:4502/crx/de/index.jsp).
+Como principalmente estamos copiando/configurando nodos, utilizaremos CRXDE Lite. En la instancia local de AEM, abre [CRXDE Lite](http://localhost:4502/crx/de/index.jsp).
 
 1. Comience creando una carpeta debajo de `/apps/&lt;your-app-folder&gt;` llamada `projects`. Cree otra carpeta debajo de la denominada `templates`.
 
@@ -177,7 +177,7 @@ Dado que principalmente copiamos/configuramos nodos, utilizaremos CRXDE Lite. AE
    ```
 
 1. Para facilitar a los autores de contenido la identificación de la plantilla de proyecto, puede agregar una miniatura personalizada. El tamaño recomendado sería de 319 x 319 píxeles.
-   1. En el CRXDE Lite, cree un archivo como secundario de los nodos de gadgets, funciones y flujos de trabajo llamados **thumbnail.png**.
+   1. En CRXDE Lite, cree un archivo como secundario de los nodos de gadgets, funciones y flujos de trabajo llamados **thumbnail.png**.
    1. Guarde, navegue hasta el nodo `jcr:content` y haga doble clic en la propiedad `jcr:data` (evite hacer clic en &quot;Ver&quot;).
       1. Esto le pedirá un cuadro de diálogo para editar el archivo `jcr:data` y podrá cargar una miniatura personalizada.
 
@@ -264,7 +264,7 @@ Ahora podemos probar nuestra plantilla de proyecto creando un proyecto.
 
 ## ¿Por qué Workflow?
 
-AEM Tradicionalmente, los flujos de trabajo que se centran en un proceso de aprobación han utilizado pasos del flujo de trabajo de participantes. AEM AEM La Bandeja de entrada de incluye detalles sobre Tareas y Flujo de trabajo, así como una integración mejorada con Proyectos de. Estas funciones hacen que el uso de los pasos del proceso de creación de tareas de proyectos sea una opción más atractiva.
+Tradicionalmente, los flujos de trabajo de AEM centrados en un proceso de aprobación han utilizado pasos del flujo de trabajo de participantes. La bandeja de entrada de AEM incluye detalles sobre tareas y flujos de trabajo, así como una integración mejorada con los proyectos de AEM. Estas funciones hacen que el uso de los pasos del proceso de creación de tareas de proyectos sea una opción más atractiva.
 
 ### ¿Por qué tareas?
 
@@ -302,7 +302,7 @@ El último paso del flujo de trabajo utiliza el paso ootb del proceso Activar p�
 
 ## Creación del modelo del flujo de trabajo
 
-1. AEM En el menú Inicio de la, vaya a Herramientas -> Flujo de trabajo -> Modelos. Haga clic en &quot;Crear&quot; en la esquina superior derecha para crear un modelo de flujo de trabajo.
+1. En el menú Inicio de AEM, vaya a Herramientas -> Flujo de trabajo -> Modelos. Haga clic en &quot;Crear&quot; en la esquina superior derecha para crear un modelo de flujo de trabajo.
 
    Asigne un título al nuevo modelo: &quot;Flujo de trabajo de aprobación de contenido&quot; y un nombre de URL: &quot;content-approval-workflow&quot;.
 
@@ -310,7 +310,7 @@ El último paso del flujo de trabajo utiliza el paso ootb del proceso Activar p�
 
    [Para obtener más información relacionada con la creación de flujos de trabajo, lea este enlace](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-models).
 
-1. Como práctica recomendada, los flujos de trabajo personalizados deben agruparse en su propia carpeta debajo de /etc/workflow/models. En el CRXDE Lite, cree una **&#39;nt:folder&#39;** debajo de /etc/workflow/models denominado **&quot;aem-guides&quot;**. Añadir una subcarpeta garantiza que los flujos de trabajo personalizados no se sobrescriban accidentalmente durante las actualizaciones o instalaciones del Service Pack.
+1. Como práctica recomendada, los flujos de trabajo personalizados deben agruparse en su propia carpeta debajo de /etc/workflow/models. En CRXDE Lite, cree una **&#39;nt:folder&#39;** debajo de /etc/workflow/models denominado **&quot;aem-guides&quot;**. Añadir una subcarpeta garantiza que los flujos de trabajo personalizados no se sobrescriban accidentalmente durante las actualizaciones o instalaciones del Service Pack.
 
    &#42;Tenga en cuenta que es importante nunca colocar la carpeta o los flujos de trabajo personalizados debajo de subcarpetas ootb como /etc/workflow/models/dam o /etc/workflow/models/projects, ya que toda la subcarpeta también se puede sobrescribir mediante actualizaciones o paquetes de servicio.
 
@@ -320,16 +320,16 @@ El último paso del flujo de trabajo utiliza el paso ootb del proceso Activar p�
 
    >[!NOTE]
    >
-   >AEM Si utiliza la versión 6.4 o posterior, la ubicación del flujo de trabajo ha cambiado. Vea [aquí para obtener más detalles.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-best-practices)
+   >Si utiliza AEM 6.4+, la ubicación del flujo de trabajo ha cambiado. Vea [aquí para obtener más detalles.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-best-practices)
 
-   AEM Si utiliza la versión 6.4 o posterior, el modelo de flujo de trabajo se crea en `/conf/global/settings/workflow/models`. Repita los pasos anteriores con el directorio /conf, agregue una subcarpeta denominada `aem-guides` y mueva `content-approval-workflow` debajo de ella.
+   Si utiliza AEM 6.4+, el modelo de flujo de trabajo se crea en `/conf/global/settings/workflow/models`. Repita los pasos anteriores con el directorio /conf, agregue una subcarpeta denominada `aem-guides` y mueva `content-approval-workflow` debajo de ella.
 
    ![Ubicación de definición de flujo de trabajo moderno](./assets/develop-aem-projects/modern-workflow-definition-location.png)
 Ubicación del modelo de flujo de trabajo en 6.4+
 
-1. AEM En la versión 6.3 de se ha introducido la capacidad de añadir fases de flujo de trabajo a un flujo de trabajo determinado. Las fases aparecerán al usuario en la bandeja de entrada de la pestaña Información del flujo de trabajo. Muestra al usuario la fase actual del flujo de trabajo, así como las fases anteriores y posteriores.
+1. En AEM 6.3 se introduce la capacidad de añadir fases de flujo de trabajo a un flujo de trabajo determinado. Las fases aparecerán al usuario en la bandeja de entrada de la pestaña Información del flujo de trabajo. Muestra al usuario la fase actual del flujo de trabajo, así como las fases anteriores y posteriores.
 
-   Para configurar las fases, abra el cuadro de diálogo Propiedades de página desde el Sidekick. La cuarta pestaña se denomina &quot;Fases&quot;. Añada los siguientes valores para configurar las tres fases de este flujo de trabajo:
+   Para configurar las fases, abra el cuadro de diálogo Propiedades de página desde Sidekick. La cuarta pestaña se denomina &quot;Fases&quot;. Añada los siguientes valores para configurar las tres fases de este flujo de trabajo:
 
    1. Editar contenido
    1. Aprobación
@@ -341,13 +341,13 @@ Ubicación del modelo de flujo de trabajo en 6.4+
 
    ![barra de progreso del flujo de trabajo](./assets/develop-aem-projects/workflow-info-progress.png)
 
-   AEM La barra de progreso del flujo de trabajo, tal como se ve desde la bandeja de entrada de.
+   La barra de progreso del flujo de trabajo, tal como se ve desde la bandeja de entrada AEM.
 
    Opcionalmente, puede cargar una **imagen** a las propiedades de página que se usan como miniatura de flujo de trabajo cuando los usuarios la seleccionan. Las dimensiones de la imagen deben ser de 319 x 319 píxeles. Agregar una **descripción** a las propiedades de página también se mostrará cuando un usuario seleccione el flujo de trabajo.
 
 1. El proceso de flujo de trabajo Crear tarea del proyecto está diseñado para crear una tarea como paso en el flujo de trabajo. El flujo de trabajo solo avanzará una vez completada la tarea. Un aspecto importante del paso Crear tarea de proyecto es que puede leer valores de metadatos de flujo de trabajo y utilizarlos para crear la tarea de forma dinámica.
 
-   En primer lugar, elimine el paso de participante que se crea de forma predeterminada. Desde el Sidekick en el menú de componentes, expanda el subencabezado **&quot;Proyectos&quot;** y arrastre y suelte **&quot;Crear tarea de proyecto&quot;** en el modelo.
+   En primer lugar, elimine el paso de participante que se crea de forma predeterminada. En Sidekick, en el menú de componentes, expanda el subencabezado **&quot;Proyectos&quot;** y arrastre y suelte **&quot;Crear tarea de proyecto&quot;** en el modelo.
 
    Haga doble clic en el paso &quot;Crear tarea del proyecto&quot; para abrir el cuadro de diálogo de flujo de trabajo. Configure las siguientes propiedades:
 
@@ -416,7 +416,7 @@ Ubicación del modelo de flujo de trabajo en 6.4+
    task.setProperty("taskPriority", taskPriority);
    ```
 
-1. Vuelva al flujo de trabajo de aprobación de contenido. Arrastre y suelte el componente **OR Split** (que se encuentra en el Sidekick debajo de la categoría &quot;Flujo de trabajo&quot;) debajo del paso **Iniciar tarea**. En el cuadro de diálogo Común, seleccione el botón de opción para 3 ramas. OR Split leerá el valor de metadatos de flujo de trabajo **&quot;lastTaskAction&quot;** para determinar la ruta del flujo de trabajo. La propiedad **&quot;lastTaskAction&quot;** se establece en uno de los valores de la ficha Enrutamiento configurada en el paso 4. Para cada una de las fichas de ramas, rellene el área de texto **Script** con los siguientes valores:
+1. Vuelva al flujo de trabajo de aprobación de contenido. Arrastre y suelte el componente **OR Split** (que se encuentra en Sidekick debajo de la categoría &quot;Flujo de trabajo&quot;) debajo del paso **Iniciar tarea**. En el cuadro de diálogo Común, seleccione el botón de opción para 3 ramas. OR Split leerá el valor de metadatos de flujo de trabajo **&quot;lastTaskAction&quot;** para determinar la ruta del flujo de trabajo. La propiedad **&quot;lastTaskAction&quot;** se establece en uno de los valores de la ficha Enrutamiento configurada en el paso 4. Para cada una de las fichas de ramas, rellene el área de texto **Script** con los siguientes valores:
 
    ```
    function check() {
@@ -478,7 +478,7 @@ Ubicación del modelo de flujo de trabajo en 6.4+
        "Send Back for Revision"
    ```
 
-   Dado que es la ruta de aprobación normal, la prioridad de la tarea se establece en Medium. Además, damos al grupo de aprobadores 5 días para completar la tarea. El usuario asignado se deja en blanco en la pestaña Tarea, ya que se asigna dinámicamente en la pestaña Configuración avanzada. Al completar esta tarea, proporcionamos al grupo de aprobadores dos posibles rutas: **&quot;Aprobar y Publish&quot;** si aprueban el contenido y se puede publicar y **&quot;Enviar de nuevo para revisión&quot;** si hay problemas que el editor original debe corregir. El aprobador puede dejar comentarios que el editor original verá si se le devuelve el flujo de trabajo.
+   Dado que es la ruta de aprobación normal, la prioridad de la tarea se establece en Medium. Además, damos al grupo de aprobadores 5 días para completar la tarea. El usuario asignado se deja en blanco en la pestaña Tarea, ya que se asigna dinámicamente en la pestaña Configuración avanzada. Al completar esta tarea, proporcionamos al grupo de aprobadores dos rutas posibles: **&quot;Aprobar y publicar&quot;** si aprueban el contenido y se puede publicar y **&quot;Enviar de nuevo para revisión&quot;** si hay problemas que el editor original debe corregir. El aprobador puede dejar comentarios que el editor original verá si se le devuelve el flujo de trabajo.
 
 Anteriormente en este tutorial creamos una plantilla de proyecto que incluía una función de aprobador. Cada vez que se crea un nuevo proyecto a partir de esta plantilla, se crea un grupo específico de proyecto para la función Aprobadores. Al igual que una Etapa de participante, una Tarea solo puede asignarse a un Usuario o Grupo. Queremos asignar esta tarea al grupo de proyecto que corresponda al grupo de aprobadores. Todos los flujos de trabajo que se inicien desde un proyecto tendrán metadatos que asignarán las funciones del proyecto al grupo específico del proyecto.
 
@@ -539,7 +539,7 @@ task.setCurrentAssignee(projectApproverGrp);
 
 1. Dado que el grupo de aprobadores tiene la opción de enviar el flujo de trabajo de vuelta al editor original para realizar más revisiones, confiaremos en el paso **Ir a** para leer la última acción realizada y enrutar el flujo de trabajo al principio o permitir que continúe.
 
-   Arrastre y suelte el componente Paso Ir a (que se encuentra en el Sidekick en Flujo de trabajo) debajo de la división O donde se vuelve a unir. Haga doble clic en y configure las siguientes propiedades en el cuadro de diálogo:
+   Arrastre y suelte el componente Paso Ir a (que se encuentra en Sidekick, en Flujo de trabajo) debajo de la división O donde se vuelve a unir. Haga doble clic en y configure las siguientes propiedades en el cuadro de diálogo:
 
    ```
    Common Tab
@@ -572,7 +572,7 @@ task.setCurrentAssignee(projectApproverGrp);
 
 1. Para publicar la carga útil usaremos el paso de proceso ootb **Activar página/recurso**. Este paso del proceso requiere poca configuración y agrega la carga útil del flujo de trabajo a la cola de replicación para su activación. Añadiremos el paso debajo del paso Ir a y de este modo solo se puede acceder a él si el grupo de aprobadores ha aprobado el contenido para su publicación o si el editor original eligió la ruta Omitir aprobación.
 
-   Arrastre y suelte el paso del proceso **Activar página/recurso** (que se encuentra en el Sidekick en Flujo de trabajo de WCM) debajo del paso Ir a del modelo.
+   Arrastre y suelte el paso del proceso **Activar página/recurso** (que se encuentra en Sidekick, en Flujo de trabajo de WCM) debajo del paso Ir a del modelo.
 
    ![modelo de flujo de trabajo completado](assets/develop-aem-projects/workflow-model-final.png)
 
@@ -660,7 +660,7 @@ La creación de un asistente personalizado puede ser muy eficaz, ya que puede re
    Debajo del nodo **priority** agregaremos un nodo **items** de **nt:unstructured**. Debajo del nodo **items**, agregue tres nodos más para rellenar las opciones de selección Alta, Medium y Baja. Cada nodo es de tipo **nt:unstructured** y debe tener una propiedad **text** y **value**. El texto y el valor deben tener el mismo valor:
 
    1. Alta
-   1. Mediana
+   1. Media
    1. Baja
 
    Para el nodo Medium, agregue una propiedad booleana adicional denominada &quot;**selected&quot;** con un valor establecido en **true**. Esto garantizará que Medium sea el valor predeterminado en el campo de selección.
@@ -735,7 +735,7 @@ La configuración del flujo de trabajo es un área de una plantilla de proyecto 
 
    >[!NOTE]
    >
-   >AEM Si se utiliza la versión 6.4 de la, la ubicación del flujo de trabajo ha cambiado. Señale la propiedad `modelId` a la ubicación del modelo de flujo de trabajo de tiempo de ejecución en `/var/workflow/models/aem-guides/content-approval-workflow`
+   >Si se utiliza AEM 6.4, la ubicación del flujo de trabajo ha cambiado. Señale la propiedad `modelId` a la ubicación del modelo de flujo de trabajo de tiempo de ejecución en `/var/workflow/models/aem-guides/content-approval-workflow`
    >
    >
    >Vea [aquí para obtener más detalles acerca del cambio en la ubicación del flujo de trabajo.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-best-practices)
@@ -754,4 +754,4 @@ La configuración del flujo de trabajo es un área de una plantilla de proyecto 
 
 * [Descargar paquete de tutorial finalizado](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [Repositorio de código completo en GitHub](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
-* AEM [Documentación de proyectos de](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects)
+* [Documentación de proyectos de AEM](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects)

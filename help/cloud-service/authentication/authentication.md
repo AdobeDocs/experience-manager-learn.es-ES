@@ -1,7 +1,7 @@
 ---
 title: Autenticación en AEM as a Cloud Service
 description: Obtenga información acerca de la autenticación en AEM as a Cloud Service.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Integrations, Security
 role: Architect, Developer
@@ -11,7 +11,7 @@ thumbnail: KT-10436.png
 last-substantial-update: 2022-10-14T00:00:00Z
 exl-id: 4dba6c09-2949-4153-a9bc-d660a740f8f7
 duration: 28
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 3%
@@ -42,21 +42,21 @@ Haga clic en el vínculo correspondiente a continuación para obtener más infor
       <a  href="../accessing/overview.md"><img alt="Adobe IMS" src="./assets/card--adobe-ims.png"/></a>
       <div><strong><a href="../accessing/overview.md">Adobe IMS</a></strong></div>
       <p>
-          AEM Administre el acceso de Autor de la mediante Adobe IMS a través de Adobe Admin Console.
+          Administre el acceso de Autor de AEM mediante Adobe IMS a través de Adobe Admin Console.
       </p>
     </td>   
    <td>
       <a  href="./saml-2-0.md"><img alt="SAML 2.0" src="./assets/card--saml-2-0.png"/></a>
       <div><strong><a href="./saml-2-0.md">SAML 2.0</a></strong></div>
       <p>
-        AEM Autentique al usuario de su sitio web con un IDP mediante la integración de SAML 2.0 del servicio de Publish de.
+        Autentique al usuario de su sitio web a un IDP mediante la integración de SAML 2.0 del servicio AEM Publish.
       </p>
     </td>   
    <td>
       <a  href="../../headless-tutorial/authentication/overview.md"><img alt="Token" src="./assets/card--token.png"/></a>
       <div><strong><a href="../../headless-tutorial/authentication/overview.md">Autenticación de token</a></strong></div>
       <p>
-        AEM Permitir que las aplicaciones y el middleware se autentiquen para usar un token de servicio de API para la autenticación de la aplicación.
+        Permitir que las aplicaciones y el middleware se autentifiquen en AEM mediante un token de servicio de API.
       </p>
     </td>   
   </tr>

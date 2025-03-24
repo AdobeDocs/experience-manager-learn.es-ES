@@ -2,14 +2,14 @@
 title: Explicación de las prácticas recomendadas del sistema de estilos con AEM Sites
 description: Artículo detallado que explica las prácticas recomendadas a la hora de implementar el sistema de estilos con Adobe Experience Manager Sites.
 feature: Style System
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate, Experienced
 doc-type: Article
 exl-id: c51da742-5ce7-499a-83da-227a25fb78c9
 duration: 328
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1522'
 ht-degree: 0%
@@ -20,9 +20,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->AEM Revise el contenido en [Explicación de cómo codificar para el sistema de estilos](style-system-technical-video-understand.md), para garantizar una comprensión de las convenciones de tipo BEM utilizadas por el sistema de estilos de la.
+>Revise el contenido en [Explicación de cómo codificar para el sistema de estilos](style-system-technical-video-understand.md), para garantizar una comprensión de las convenciones de tipo BEM utilizadas por el sistema de estilos de AEM.
 
-AEM Hay dos sabores o estilos principales que se implementan para el sistema de estilos de:
+Existen dos tipos o estilos principales implementados para el sistema de estilos de AEM:
 
 * **Estilos de diseño**
 * **Estilos de visualización**
@@ -33,7 +33,7 @@ AEM Hay dos sabores o estilos principales que se implementan para el sistema de 
 
 ## Prácticas recomendadas de organización de estilos {#style-organization-best-practices}
 
-AEM Al definir los nombres de estilo disponibles para los autores de la, lo mejor es:
+Al definir los nombres de estilo disponibles para los autores de AEM, lo mejor es:
 
 * Nombrar estilos utilizando un vocabulario comprendido por los autores
 * Minimizar el número de opciones de estilo
@@ -41,17 +41,17 @@ AEM Al definir los nombres de estilo disponibles para los autores de la, lo mejo
 * Exponer sólo las combinaciones de estilos que tienen un efecto
    * Si se exponen combinaciones ineficaces, hay que asegurarse de que al menos no tengan un efecto perjudicial
 
-AEM A medida que aumenta el número de combinaciones de estilos posibles disponibles para los autores de la, existen más permutaciones que deben someterse a un control de calidad y validarse en relación con los estándares de marca. Demasiadas opciones también pueden confundir a los autores, ya que puede resultar confuso qué opción o combinación se necesita para producir el efecto deseado.
+A medida que aumenta el número de combinaciones de estilos posibles disponibles para los autores de AEM, existen más permutaciones que deben someterse a un control de calidad y validarse frente a los estándares de marca. Demasiadas opciones también pueden confundir a los autores, ya que puede resultar confuso qué opción o combinación se necesita para producir el efecto deseado.
 
 ### Nombres de estilo frente a clases CSS {#style-names-vs-css-classes}
 
-AEM AEM Los nombres de estilo, o las opciones presentadas a los autores de la, y los nombres de clase CSS de implementación están disociados en las listas de nombres de clase de los distintos elementos de la.
+Los nombres de estilo, o las opciones presentadas a los autores de AEM, y los nombres de clase CSS de implementación están disociados en AEM.
 
-AEM Esto permite que las opciones de Estilo se etiqueten con un vocabulario claro y entendido por los autores de la, pero permite a los desarrolladores de CSS nombrar las clases CSS de una manera semántica y preparada para el futuro. Por ejemplo:
+Esto permite que las opciones de Estilo se etiqueten con un vocabulario claro y entendido por los autores de AEM, pero permite a los desarrolladores de CSS nombrar las clases CSS de una manera semántica y preparada para el futuro. Por ejemplo:
 
-AEM Un componente debe tener las opciones para que se le apliquen colores con los colores **principal** y **secundario** de la marca; sin embargo, los autores de la conocen los colores como **verde** y **amarillo**, en lugar del idioma de diseño principal y secundario.
+Un componente debe tener las opciones para que se le apliquen colores con los colores **principal** y **secundario** de la marca; sin embargo, los autores de AEM conocen los colores como **verde** y **amarillo**, en lugar del idioma de diseño principal y secundario.
 
-AEM El sistema de estilos de estilo de la puede exponer estos estilos de visualización para colorear usando etiquetas **verdes** y **amarillas** que admiten el autor, mientras que los desarrolladores de CSS pueden usar nombres semánticos de `.cmp-component--primary-color` y `.cmp-component--secondary-color` para definir la implementación de estilo real en CSS.
+El sistema de estilos de AEM puede exponer estos estilos de presentación para colorear mediante las etiquetas **Verde** y **Amarillo** que admiten el autor, a la vez que permite a los desarrolladores de CSS usar nombres semánticos de `.cmp-component--primary-color` y `.cmp-component--secondary-color` para definir la implementación de estilo real en CSS.
 
 El nombre de estilo de **Green** está asignado a `.cmp-component--primary-color` y **Yellow** a `.cmp-component--secondary-color`.
 
@@ -93,7 +93,7 @@ Incluso es posible asignar un estilo &quot;con nombre&quot; como estilo predeter
 
 >[!NOTE]
 >
->AEM Observe que el estilo de diseño predeterminado NO tiene un nombre de estilo de presentación, sin embargo, el autor puede seleccionar una opción de presentación en la herramienta de selección Sistema de estilos de la.
+>Observe que el estilo de diseño predeterminado NO tiene un nombre de estilo de visualización, sin embargo, el autor puede seleccionar una opción de visualización en la herramienta de selección Sistema de estilos de AEM.
 >
 >Esto infringe la práctica recomendada:
 >
@@ -117,7 +117,7 @@ Incluso es posible asignar un estilo &quot;con nombre&quot; como estilo predeter
 
 El **estilo de diseño de Promoción** se usa para promocionar contenido de alto valor en el sitio, se coloca horizontalmente para ocupar una banda de espacio en la página web y debe poder aplicar estilos con colores de marca, con el estilo de diseño de Promoción predeterminado que utiliza texto en negro.
 
-AEM Para conseguirlo, un **estilo de diseño** de **Promoción** y los **estilos de visualización** de **Verde** y **Amarillo** están configurados en el sistema de estilos de la para el componente Teaser.
+Para conseguirlo, un **estilo de diseño** de **Promoción** y los **estilos de visualización** de **Verde** y **Amarillo** están configurados en el sistema de estilos de AEM para el componente Teaser.
 
 #### Predeterminado de promoción
 
@@ -158,7 +158,7 @@ AEM Para conseguirlo, un **estilo de diseño** de **Promoción** y los **estilos
 
 El estilo de diseño **Promoción alineada a la derecha** es una variación del estilo Promoción que gira la ubicación de la imagen y el texto (imagen a la derecha, texto a la izquierda).
 
-AEM La alineación correcta, en su núcleo, es un estilo de visualización, podría introducirse en el sistema de estilos de como un estilo de visualización que se selecciona junto con el estilo de diseño Promoción. Esto infringe la práctica recomendada de:
+La alineación correcta, en su núcleo, es un estilo de visualización, podría introducirse en el sistema de estilos de AEM como un estilo de visualización que se selecciona junto con el estilo de diseño Promoción. Esto infringe la práctica recomendada de:
 
 **Exponer solo las combinaciones de estilos que tienen un efecto**
 
@@ -213,7 +213,7 @@ Para aplicar color al estilo Diseño principal con colores de marca, se pueden a
 
 Por componente, el nombre del estilo se asigna al único conjunto de clases CSS, lo que significa que los nombres de clase CSS que dan color al fondo del estilo del diseño Promoción deben dar color al texto y al vínculo del estilo del diseño Hero.
 
-AEM Esto se puede lograr trivialmente estableciendo ámbitos para las reglas CSS, sin embargo, esto requiere que los desarrolladores de CSS entiendan cómo se implementan estas permutaciones en los.
+Esto se puede lograr trivialmente estableciendo un ámbito para las reglas CSS, sin embargo, esto requiere que los desarrolladores de CSS entiendan cómo se implementan estas permutaciones en AEM.
 
 CSS para colorear el fondo del estilo de diseño **Promote** con el color principal (verde):
 
@@ -273,7 +273,7 @@ CSS para colorear el texto del estilo de diseño **Hero** con el color principal
 ## Recursos adicionales {#additional-resources}
 
 * [Documentación del sistema de estilos](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/style-system.html)
-* AEM [Creando bibliotecas de cliente de](https://helpx.adobe.com/es/experience-manager/6-5/sites/developing/using/clientlibs.html)
+* [Creando bibliotecas de cliente de AEM](https://helpx.adobe.com/es/experience-manager/6-5/sites/developing/using/clientlibs.html)
 * [Sitio web de documentación de BEM (Modificador de elementos de bloque)](https://getbem.com/)
 * [MENOS sitio web de documentación](https://lesscss.org/)
 * [sitio web jQuery](https://jquery.com/)

@@ -1,7 +1,7 @@
 ---
 title: Conexiones SQL con el conjunto de fuentes de datos JDBC
-description: Obtenga información sobre cómo conectarse a bases de datos SQL desde AEM as a Cloud Service AEM mediante el uso de los puertos de salida y el conjunto de datos de JDBC de los que se.
-version: Cloud Service
+description: Obtenga información sobre cómo conectarse a bases de datos SQL desde AEM as a Cloud Service mediante el grupo de fuentes de datos JDBC y los puertos de salida de AEM.
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
 role: Architect, Developer
@@ -10,7 +10,7 @@ jira: KT-9355
 thumbnail: KT-9355.jpeg
 exl-id: c1a26dcb-b2ae-4015-b865-2ce32f4fa869
 duration: 117
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Conexiones SQL con el conjunto de fuentes de datos JDBC
 
-AEM AEM Las conexiones a bases de datos SQL (y otros servicios no HTTP/HTTPS) deben procesarse como proxy fuera de las bases de datos, incluidos los que se realizan utilizando el servicio OSGi de DataSourcePool de datos de la administración de conexiones de datos para administrar las conexiones de datos de la base de datos de datos de la base de datos de la base de datos de la base de datos de la base de datos, incluyendo aquellos que se realizan usando el servicio OSGi de DataSourcePool de datos de la base de datos de la base de datos para administrar las conexiones.
+Las conexiones a bases de datos SQL (y otros servicios no HTTP/HTTPS) deben procesarse como proxy fuera de AEM, incluidos los que se realizan mediante el servicio OSGi DataSourcePool de AEM para administrar las conexiones.
 
 ## Compatibilidad avanzada con redes
 
@@ -60,7 +60,7 @@ $ aio cloudmanager:set-environment-variables --programId=<PROGRAM_ID> <ENVIRONME
 
 ## Ejemplo de código
 
-AEM Este ejemplo de código Java™ es de un servicio OSGi que realiza una conexión con una base de datos MySQL externa a través de un servicio OSGi de DataSourcePool de de datos en el que se realiza una.
+Este ejemplo de código Java™ es de un servicio OSGi que realiza una conexión con una base de datos MySQL externa a través del servicio OSGi de DataSourcePool de AEM.
 A su vez, la configuración de fábrica de DataSourcePool OSGi especifica un puerto (`30001`) que se asigna a través de la regla `portForwards` en la operación [enableEnvironmentAdvancedNetworkingConfiguration](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) al host y al puerto externos, `mysql.example.com:3306`.
 
 ```json
@@ -134,7 +134,7 @@ public class JdbcExternalServiceImpl implements ExternalService {
 
 ## Dependencias del controlador MySQL
 
-AEM as a Cloud Service suele requerir que proporcione controladores de base de datos Java™ para admitir las conexiones. AEM La mejor manera de proporcionar los controladores suele ser incrustar los artefactos del paquete OSGi que contienen estos controladores en el proyecto de la a través del paquete `all`.
+AEM as a Cloud Service suele requerir que proporcione controladores de base de datos Java™ para admitir las conexiones. La mejor manera de proporcionar los controladores suele ser incrustar los artefactos del paquete OSGi que contienen estos controladores en el proyecto de AEM a través del paquete `all`.
 
 ### Reactor pom.xml
 

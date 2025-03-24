@@ -1,7 +1,7 @@
 ---
 title: Permisos impulsados por metadatos en AEM Assets
 description: Los permisos impulsados por metadatos son una función que se utiliza para restringir el acceso en función de las propiedades de los metadatos de los recursos, en lugar de la estructura de carpetas.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Administration, Security
 feature: User and Groups
 role: Admin
@@ -11,7 +11,7 @@ doc-type: Tutorial
 last-substantial-update: 2024-05-03T00:00:00Z
 exl-id: 57478aa1-c9ab-467c-9de0-54807ae21fb1
 duration: 158
-source-git-commit: 6e08e6830c4e2ab27e813d262f4f51c6aae2909b
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Se requiere acceso a un entorno de AEM as a Cloud Service actualizado a la versi
 Para implementar Permisos impulsados por metadatos, un desarrollador debe implementar una configuración OSGi en AEM as a Cloud Service que permita contenido de recursos específico o propiedades de metadatos para habilitar permisos impulsados por metadatos.
 
 1. Determine qué propiedades de metadatos o contenido de recursos se utilizarán para el control de acceso. Los nombres de propiedad son los nombres de propiedad JCR en el recurso `jcr:content` o `jcr:content/metadata` del recurso. En nuestro caso, será una propiedad llamada `status`.
-1. AEM Cree una configuración de OSGi `com.adobe.cq.dam.assetmetadatarestrictionprovider.impl.DefaultRestrictionProviderConfiguration.cfg.json` en su proyecto de Maven de.
+1. Cree una configuración OSGi `com.adobe.cq.dam.assetmetadatarestrictionprovider.impl.DefaultRestrictionProviderConfiguration.cfg.json` en su proyecto de AEM Maven.
 1. Pegue el siguiente JSON en el archivo creado:
 
    ```json

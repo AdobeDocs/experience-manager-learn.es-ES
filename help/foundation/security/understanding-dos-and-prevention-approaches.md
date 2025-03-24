@@ -1,7 +1,7 @@
 ---
 title: Explicación de la prevención de DoS/DDoS
-description: AEM Aprenda a evitar y mitigar los ataques DoS y DDoS contra los ataques de tipo de ataque de tipo de contra de la.
-version: 6.5, Cloud Service
+description: Aprenda a evitar y mitigar los ataques DoS y DDoS contra AEM.
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Development
 role: Admin, Architect, Developer
@@ -11,16 +11,16 @@ duration: 75
 last-substantial-update: 2024-03-30T00:00:00Z
 jira: KT-15219
 exl-id: 1d7dd829-e235-4884-a13f-b6ea8f6b4b0b
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 1%
 
 ---
 
-# AEM Explicación de la prevención de DoS/DDoS en el ámbito de la
+# Explicación de la prevención de DoS/DDoS en AEM
 
-AEM Obtenga información acerca de las opciones disponibles para prevenir y mitigar los ataques DoS y DDoS en su entorno de trabajo de la comunidad de la que se está hablando. Antes de sumergirse en los mecanismos de prevención, obtenga información general sobre [DoS](https://developer.mozilla.org/en-US/docs/Glossary/DOS_attack) y [DDoS](https://developer.mozilla.org/en-US/docs/Glossary/Distributed_Denial_of_Service).
+Obtenga información acerca de las opciones disponibles para evitar y mitigar los ataques DoS y DDoS en su entorno de AEM. Antes de sumergirse en los mecanismos de prevención, obtenga información general sobre [DoS](https://developer.mozilla.org/en-US/docs/Glossary/DOS_attack) y [DDoS](https://developer.mozilla.org/en-US/docs/Glossary/Distributed_Denial_of_Service).
 
 - Los ataques DoS (Denegación de servicio) y DDoS (Denegación de servicio distribuida) son intentos malintencionados de interrumpir el funcionamiento normal de un servidor, servicio o red de destino, lo que hace que sea inaccesible para los usuarios a los que va dirigido.
 - Los ataques DoS suelen proceder de una sola fuente, mientras que los ataques DDoS proceden de varias fuentes.
@@ -35,8 +35,8 @@ En la tabla siguiente se describe cómo evitar y mitigar los ataques DoS y DDoS:
             <td><strong>Mecanismo de prevención</strong></td>
             <td><strong>Descripción</strong></td>
             <td><strong>AEM as a Cloud Service</strong></td>
-            <td><strong>AEM,5 (AMS)</strong></td>
-            <td><strong>AEM.5 (local)</strong></td>
+            <td><strong>AEM 6.5 (AMS)</strong></td>
+            <td><strong>AEM 6.5 (local)</strong></td>
         </tr>
         <tr>
             <td>Firewall de aplicaciones web (WAF)</td>
@@ -48,7 +48,7 @@ En la tabla siguiente se describe cómo evitar y mitigar los ataques DoS y DDoS:
         </tr>
         <tr>
             <td>ModSecurity</td>
-            <td>ModSecurity (también conocido como módulo Apache "mod_security") es una solución de código abierto y multiplataforma que proporciona protección contra una amplia gama de ataques contra aplicaciones web.<br/> En AEM as a Cloud Service AEM, esto solo es aplicable al servicio de Publish AEM, ya que no hay ningún servidor web Apache y no hay ningún servidor web de Apache que se encuentre frente a un servicio de autor de la aplicación, ya que no hay un servidor web de Apache que se encuentre frente a un servidor de Dispatcher AEM en el servicio de autor de la.</td>
+            <td>ModSecurity (también conocido como módulo Apache "mod_security") es una solución de código abierto y multiplataforma que proporciona protección contra una amplia gama de ataques contra aplicaciones web.<br/> En AEM as a Cloud Service, esto solo se aplica al servicio de publicación de AEM, ya que no hay ningún servidor web Apache ni AEM Dispatcher delante del servicio de creación de AEM.</td>
             <td colspan="3"><a href="https://experienceleague.adobe.com/es/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection" target="_blank">Habilitar ModSecurity </a></td>
         </tr>
         <tr>
@@ -61,7 +61,7 @@ En la tabla siguiente se describe cómo evitar y mitigar los ataques DoS y DDoS:
     </tbody>
 </table>
 
-## Análisis de incidentes y mejora continua de Post
+## Análisis post-incidente y mejora continua
 
 Aunque no hay un flujo estándar único para identificar y prevenir ataques DoS/DDoS y depende del proceso de seguridad de su organización. El **análisis posterior al incidente y la mejora continua** es un paso crucial en el proceso. Estas son algunas prácticas recomendadas que debe tener en cuenta:
 

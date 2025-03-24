@@ -3,14 +3,14 @@ title: Implementar los recursos de ejemplo en el servidor
 description: Prueba de la funcionalidad Guardar como borrador para comunicaciones interactivas
 feature: Interactive Communication
 doc-type: article
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 jira: KT-10208
 exl-id: 9053ee29-436a-439a-b592-c3fef9852ea4
 duration: 28
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 4%
@@ -19,7 +19,7 @@ ht-degree: 4%
 
 # Implementar los recursos de ejemplo en el servidor
 
-AEM Siga las instrucciones siguientes para que esta funcionalidad funcione en su servidor de
+Siga las instrucciones siguientes para que esta funcionalidad funcione en su servidor de AEM
 
 * [Creación del esquema de base de datos](assets/icdrafts.sql)
 * [Importar la biblioteca de cliente](assets/icdrafts.zip)
@@ -41,6 +41,6 @@ AEM Siga las instrucciones siguientes para que esta funcionalidad funcione en su
 * [Ver borradores guardados](http://localhost:4502/content/dam/formsanddocuments/saveddrafts/jcr:content?wcmmode=disabled)
 
 >[!NOTE]
->AEM Los archivos xml se almacenan en la carpeta raíz de la instalación del servidor de la instalación del servidor de la aplicación de. El proyecto Eclipse > se proporciona para personalizar la solución según sus necesidades.
+>Los archivos xml se almacenan en la carpeta raíz de la instalación del servidor de AEM. El proyecto Eclipse > se proporciona para personalizar la solución según sus necesidades.
 
 El proyecto Eclipse con implementación de ejemplo se puede [descargar desde aquí](assets/icdrafts-eclipse-project.zip)

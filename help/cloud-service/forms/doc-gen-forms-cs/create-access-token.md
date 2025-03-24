@@ -1,17 +1,17 @@
 ---
 title: Intercambio del JWT por un token de acceso
-description: AEM Intercambie el token web JSON (JWT) con las API de IMS de Adobe por un token de acceso de.
+description: Intercambie el token web JSON (JWT) con las API de IMS de Adobe por un token de acceso de AEM.
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Output Service
 topic: Development
 jira: KT-8185
 thumbnail: KT-8185.jpg
 exl-id: ab7b8a06-3009-477d-9e98-590912e8e176
 duration: 33
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '85'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 # Intercambio del JWT por un token de acceso
 
 
-El JWT creado en el paso anterior se intercambia con las API de IMS de Adobe por un token de acceso, que se puede utilizar para acceder a AEM as a Cloud Service. Para solicitar un token de acceso, envíe una solicitud de POST que contenga JWT, client_id, client_secret al servicio de autenticación IMS.
+El JWT creado en el paso anterior se intercambia con las API de IMS de Adobe por un token de acceso, que se puede utilizar para acceder a AEM as a Cloud Service. Para solicitar un token de acceso, envíe una petición POST que contenga JWT, client_id, client_secret al servicio de autenticación IMS.
 
 El siguiente código se utilizó para generar el intercambio JWT por token de acceso
 

@@ -1,8 +1,8 @@
 ---
-title: AEM Depuración del SDK de mediante registros
-description: AEM AEM Los registros actúan como primera línea para la depuración de aplicaciones de, pero dependen del inicio de sesión adecuado en la aplicación de la aplicación de la aplicación de la aplicación implementada.
+title: Depuración de AEM SDK mediante registros
+description: Los registros actúan como primera línea para depurar aplicaciones de AEM, pero dependen del registro adecuado en la aplicación de AEM implementada.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: Tutorial
 jira: KT-5252
 topic: Development
@@ -10,30 +10,30 @@ role: Developer
 level: Beginner, Intermediate
 exl-id: 91aa4a10-47fe-4313-acd2-ca753e5484d9
 duration: 411
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%
 
 ---
 
-# AEM Depuración del SDK de mediante registros
+# Depuración de AEM SDK mediante registros
 
-AEM AEM Al acceder a los registros del SDK de la, ya sea el Jar local de inicio rápido del SDK de la o las herramientas de Dispatcher AEM, puede proporcionar perspectivas clave en la depuración de aplicaciones de la.
+Al acceder a los registros de AEM SDK, tanto el Jar de inicio rápido local de AEM SDK como las herramientas de Dispatcher pueden proporcionar perspectivas clave en la depuración de aplicaciones de AEM.
 
-## AEM Registros de
+## Registros de AEM
 
 >[!VIDEO](https://video.tv.adobe.com/v/34334?quality=12&learn=on)
 
-AEM AEM Los registros actúan como primera línea para la depuración de aplicaciones de, pero dependen del inicio de sesión adecuado en la aplicación de la aplicación de la aplicación de la aplicación implementada. El Adobe recomienda mantener las configuraciones de desarrollo local y registro de desarrollo de AEM as a Cloud Service AEM lo más similares posible, ya que normaliza la visibilidad del registro en los entornos de inicio rápido local y desarrollo de AEM as a Cloud Service del SDK de la, lo que reduce la alternancia y la reimplementación de la configuración.
+Los registros actúan como primera línea para depurar aplicaciones de AEM, pero dependen del registro adecuado en la aplicación de AEM implementada. Adobe recomienda mantener las configuraciones de desarrollo local y registro de desarrollo de AEM as a Cloud Service lo más similares posible, ya que normaliza la visibilidad del registro en los entornos de inicio rápido local y desarrollo de AEM as a Cloud Service de AEM SDK, lo que reduce la alternancia y la reimplementación de la configuración.
 
-AEM AEM El [Arquetipo de proyecto de Sling](https://github.com/adobe/aem-project-archetype) configura el registro en el nivel de DEPURACIÓN para los paquetes Java de la aplicación de su para el desarrollo local mediante la configuración OSGi del registrador de Sling que se encuentra en
+El [tipo de archivo del proyecto de AEM](https://github.com/adobe/aem-project-archetype) configura el registro en el nivel DEBUG para los paquetes Java de la aplicación AEM para el desarrollo local mediante la configuración OSGi del registrador de Sling que se encuentra en
 
 `ui.apps/src/main/content/jcr_root/apps/example/config/org.apache.sling.commons.log.LogManager.factory.config-example.cfg.json`
 
 que registra a `error.log`.
 
-AEM Si el registro predeterminado no es suficiente para el desarrollo local, se puede configurar el registro ad hoc a través de la consola web de soporte de registros de Quickstart local del SDK, en ([/system/console/slinglog](http://localhost:4502/system/console/slinglog)); sin embargo, no se recomienda que se mantengan los cambios ad hoc en Git a menos que también se necesiten estas mismas configuraciones de registro en los entornos de desarrollo de AEM as a Cloud Service. AEM Tenga en cuenta que los cambios realizados a través de la consola de compatibilidad de registros se conservan directamente en el repositorio de inicio rápido local del SDK de la.
+Si el registro predeterminado no es suficiente para el desarrollo local, se puede configurar el registro ad hoc a través de la consola web de soporte de registros de Quickstart local de AEM SDK, en ([/system/console/slinglog](http://localhost:4502/system/console/slinglog)); sin embargo, no se recomienda que se mantengan los cambios ad hoc en Git a menos que también se necesiten estas mismas configuraciones de registro en los entornos de desarrollo de AEM as a Cloud Service. Tenga en cuenta que los cambios a través de la consola de Log Support se mantienen directamente en el repositorio de inicio rápido local de AEM SDK.
 
 Las instrucciones de registro de Java se pueden ver en el archivo `error.log`:
 

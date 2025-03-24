@@ -1,7 +1,7 @@
 ---
 title: Permisos personalizados de Cloud Manager
-description: Aprenda a utilizar los permisos personalizados de Cloud Manager AEM en la administración de proyectos para administrar de forma estratégica el acceso para diferentes equipos, lo que garantiza una administración e implementación de proyectos eficientes y seguras.
-version: Cloud Service
+description: Aprenda a utilizar los permisos personalizados de Cloud Manager en AEM para administrar estratégicamente el acceso para diferentes equipos, lo que garantiza una administración e implementación de proyectos eficientes y seguras.
+version: Experience Manager as a Cloud Service
 feature: Cloud Manager
 topic: Administration
 role: Admin
@@ -12,7 +12,7 @@ jira: KT-14608
 thumbnail: 3425892.jpeg
 duration: 358
 exl-id: d659fc1e-fb4b-4e15-8167-8b035d92eae1
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '59'
 ht-degree: 0%
@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # Permisos personalizados de Cloud Manager
 
-Aprenda a utilizar los [permisos personalizados](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/custom-permissions.html) de Cloud Manager AEM en la administración de permisos para administrar de forma estratégica el acceso para diferentes equipos, lo que garantiza una implementación y administración de proyectos eficientes y seguras.
+Aprenda a utilizar los [permisos personalizados](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/custom-permissions.html) de Cloud Manager en AEM para administrar estratégicamente el acceso de diferentes equipos, lo que garantiza una administración e implementación de proyectos eficiente y segura.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425892/?learn=on)

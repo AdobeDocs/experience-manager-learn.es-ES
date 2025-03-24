@@ -1,27 +1,27 @@
 ---
-title: Montar archivos de PDF utilizando la operación invocar DDX
-description: Realice una solicitud de POST para invocar el extremo DDX con los parámetros necesarios
+title: Montar archivos PDF mediante la operación invocar DDX
+description: Realice una petición POST para invocar el extremo DDX con los parámetros necesarios
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Output Service
 topic: Development
 jira: KT-9980
 exl-id: 693dac88-84f3-4051-8e46-3105093711a3
 duration: 56
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 16%
 
 ---
 
-# Hacer que el POST llame
+# Realizar la llamada de POST
 
 
-El siguiente paso es realizar una llamada del POST HTTP al extremo con los parámetros necesarios. Los archivos DDX y PDF se proporcionan como archivos de recursos. El punto final tiene autenticación basada en token. Pasamos el token de acceso en el encabezado de la solicitud.
-Al utilizar el servicio Assembler, use el lenguaje basado en XML denominado XML de descripción de documento (DDX) para describir la salida que desea. DDX es un lenguaje de marcado declarativo cuyos elementos representan componentes básicos de documentos. El siguiente DDX se utilizó para combinar los dos documentos PDF identificados en los elementos de origen del PDF.
+El siguiente paso es realizar una llamada de POST HTTP al extremo con los parámetros necesarios. Los archivos DDX y PDF se proporcionan como archivos de recursos. El punto final tiene autenticación basada en token. Pasamos el token de acceso en el encabezado de la solicitud.
+Al utilizar el servicio Assembler, use el lenguaje basado en XML denominado XML de descripción de documento (DDX) para describir la salida que desea. DDX es un lenguaje de marcado declarativo cuyos elementos representan componentes básicos de documentos. El siguiente DDX se utilizó para combinar los dos documentos PDF identificados en los elementos de origen de PDF.
 
 ```xml
 <DDX xmlns="http://ns.adobe.com/DDX/1.0/">

@@ -5,18 +5,18 @@ solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Adaptive Forms
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16276
-source-git-commit: 1ed08d7784833b6c49139da525341af5ee587345
+exl-id: 4a02f494-ca0e-42d4-bbb9-6223ff8685e3
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 0%
 
 ---
-
 
 # Prueba de los cambios
 
@@ -39,7 +39,7 @@ Una vez que el proyecto de tema se haya creado correctamente, los usuarios está
 
 * Abra el archivo theme.css ubicado en la carpeta Dist del proyecto de tema. Seleccione y copie todo el contenido del archivo.
 * Obtenga una vista previa del formulario creado en el paso anterior.
-* Haga clic con el botón derecho en uno de los botones y seleccione Inspect para abrir la consola de desarrollador.
+* Haga clic con el botón derecho en uno de los botones y seleccione Inspeccionar para abrir la consola del desarrollador.
 * En la consola del desarrollador, haga clic en theme.css para abrir theme.css.
 * Seleccione y elimine todo el contenido de theme.css mediante CTR-A y haga clic en el botón Eliminar.
 * Copie y pegue el contenido de theme.css que creó en el paso anterior.
@@ -50,4 +50,3 @@ Una vez que el proyecto de tema se haya creado correctamente, los usuarios está
 ## Insertar los cambios
 
 Si está satisfecho con los cambios, puede insertarlos en su instancia de nube mediante la [canalización front-end](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline)
-

@@ -1,7 +1,7 @@
 ---
 title: Red privada virtual (VPN)
-description: Aprenda a conectar AEM as a Cloud Service AEM con su VPN para crear canales de comunicación seguros entre los servicios internos y los de la red de servicios de comunicación de la red.
-version: Cloud Service
+description: Aprenda a conectar AEM as a Cloud Service con su VPN para crear canales de comunicación seguros entre AEM y los servicios internos.
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
 role: Architect, Developer
@@ -11,7 +11,7 @@ thumbnail: KT-9352.jpeg
 exl-id: 74cca740-bf5e-4cbd-9660-b0579301a3b4
 last-substantial-update: 2024-04-27T00:00:00Z
 duration: 919
-source-git-commit: 29ac030f3774da2c514525f7cb85f6f48b84369f
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1467'
 ht-degree: 2%
@@ -20,11 +20,11 @@ ht-degree: 2%
 
 # Red privada virtual (VPN)
 
-Aprenda a conectar AEM as a Cloud Service AEM con su VPN para crear canales de comunicación seguros entre los servicios internos y los de la red de servicios de comunicación de la red.
+Aprenda a conectar AEM as a Cloud Service con su VPN para crear canales de comunicación seguros entre AEM y los servicios internos.
 
 ## ¿Qué es la red privada virtual?
 
-La red privada virtual (VPN) permite que un cliente de AEM as a Cloud Service AEM conecte **los entornos de la red de seguridad** dentro de un programa de Cloud Manager a una VPN [admitida](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking) existente. La VPN permite conexiones seguras y controladas entre AEM as a Cloud Service y los servicios dentro de la red del cliente.
+La red privada virtual (VPN) permite que un cliente de AEM as a Cloud Service conecte **los entornos de AEM** dentro de un programa de Cloud Manager a una VPN existente [admitida](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking). La VPN permite conexiones seguras y controladas entre AEM as a Cloud Service y los servicios dentro de la red del cliente.
 
 Un programa Cloud Manager solo puede tener un tipo de infraestructura de red __single__. Asegúrese de que Virtual Private Network sea el tipo de infraestructura de red [más apropiado](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking) para su AEM as a Cloud Service antes de ejecutar los siguientes comandos.
 
@@ -240,7 +240,7 @@ Con la VPN creada, ahora puede configurarla mediante las API de Cloud Manager co
    }
    ```
 
-   `nonProxyHosts` declara un conjunto de hosts para los que el puerto 80 o 443 debe enrutarse a través de los intervalos de direcciones IP compartidos predeterminados en lugar de la IP de salida dedicada. `nonProxyHosts` puede resultar útil, ya que la salida de tráfico a través de direcciones IP compartidas se optimiza automáticamente mediante el Adobe.
+   `nonProxyHosts` declara un conjunto de hosts para los que el puerto 80 o 443 debe enrutarse a través de los intervalos de direcciones IP compartidos predeterminados en lugar de la IP de salida dedicada. `nonProxyHosts` puede resultar útil, ya que Adobe optimiza automáticamente la salida de tráfico a través de direcciones IP compartidas.
 
    Para cada asignación `portForwards`, la red avanzada define la siguiente regla de reenvío:
 
@@ -248,7 +248,7 @@ Con la VPN creada, ahora puede configurarla mediante las API de Cloud Manager co
    |---------------------------------|----------|----------------|------------------|----------|
    | `AEM_PROXY_HOST` | `portForwards.portOrig` | → | `portForwards.name` | `portForwards.portDest` |
 
-   AEM Si la implementación de la __only__ requiere conexiones HTTP/HTTPS con un servicio externo, deje vacía la matriz `portForwards`, ya que estas reglas solo son necesarias para solicitudes que no sean HTTP/HTTPS.
+   Si su implementación de AEM __only__ requiere conexiones HTTP/HTTPS con un servicio externo, deje vacía la matriz `portForwards`, ya que estas reglas solo son necesarias para solicitudes que no sean HTTP/HTTPS.
 
 
 2. Para cada entorno, valide que las reglas de enrutamiento VPN estén en vigor mediante la operación [getEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) de la API de Cloud Manager.
@@ -265,22 +265,22 @@ Con la VPN creada, ahora puede configurarla mediante las API de Cloud Manager co
 
 3. Las configuraciones de proxy de red privada virtual se pueden actualizar mediante la operación [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) de la API de Cloud Manager. Recuerde que `enableEnvironmentAdvancedNetworkingConfiguration` es una operación de `PUT`, por lo que todas las reglas deben proporcionarse con cada invocación de esta operación.
 
-4. AEM Ahora, puede utilizar la configuración de salida de red privada virtual en el código y la configuración personalizados de la.
+4. Ahora puede utilizar la configuración de salida de red privada virtual en su código y configuración personalizados de AEM.
 
 ## Conexión a servicios externos a través de la red privada virtual
 
-AEM Con la red privada virtual habilitada, el código y la configuración de la red privada virtual pueden utilizarlos para realizar llamadas a servicios externos a través de la VPN. AEM Existen dos tipos de llamadas externas que se tratan de manera diferente en el modo que se hace:
+Con la red privada virtual habilitada, el código y la configuración de AEM pueden utilizarlos para hacer llamadas a servicios externos a través de la VPN. Hay dos tipos de llamadas externas que AEM trata de manera diferente:
 
 1. Llamadas HTTP/HTTPS a servicios externos
    + Incluye llamadas HTTP/HTTPS realizadas a servicios que se ejecutan en puertos que no son los puertos estándar 80 o 443.
 1. llamadas no HTTP/HTTPS a servicios externos
    + Incluye cualquier llamada que no sea HTTP, como conexiones con servidores de correo, bases de datos SQL o servicios que se ejecutan en otros protocolos que no son HTTP/HTTPS.
 
-AEM Las solicitudes HTTP/HTTPS de los puertos estándar (80/443) se permiten de forma predeterminada, pero no utilizan la conexión VPN si no se configura correctamente como se describe a continuación.
+Las solicitudes HTTP/HTTPS de AEM en puertos estándar (80/443) están permitidas de forma predeterminada, pero no utilizan la conexión VPN si no se configura correctamente como se describe a continuación.
 
 ### HTTP/HTTPS
 
-AEM AEM Cuando se crean conexiones HTTP/HTTPS desde la red de redes privadas virtuales (HTTP/HTTPS) desde la red de redes privadas virtuales (HTTP/HTTPS), las conexiones HTTP/HTTPS se procesan automáticamente como proxy fuera de la red de conexiones de red de red de red de red de área de trabajo (). No se requiere código ni configuración adicional para admitir conexiones HTTP/HTTPS.
+Al crear conexiones HTTP/HTTPS desde AEM, al utilizar una VPN, las conexiones HTTP/HTTPS se procesan como proxy automáticamente fuera de AEM. No se requiere código ni configuración adicional para admitir conexiones HTTP/HTTPS.
 
 >[!TIP]
 >
@@ -304,14 +304,14 @@ AEM AEM Cuando se crean conexiones HTTP/HTTPS desde la red de redes privadas vir
 
 ### Ejemplos de código de conexiones no HTTP/HTTPS
 
-Al crear conexiones no HTTP/HTTPS (por ejemplo, AEM AEM SQL, SMTP, etc.) desde el punto de vista de la seguridad, la conexión debe realizarse a través de un nombre de host especial proporcionado por el usuario de la red de seguridad de la red de datos (SQL, SMTP, etc.) de la red de seguridad de la red de datos
+Al crear conexiones no HTTP/HTTPS (por ejemplo, SQL, SMTP, etc.) de AEM, la conexión debe realizarse mediante un nombre de host especial proporcionado por AEM.
 
 | Nombre de variable | Uso | Código Java™ | Configuración de OSGi |
 | - |  - | - | - |
 | `AEM_PROXY_HOST` | Host proxy para conexiones no HTTP/HTTPS | `System.getenv("AEM_PROXY_HOST")` | `$[env:AEM_PROXY_HOST]` |
 
 
-AEM A continuación, se llama a las conexiones a servicios externos a través de `AEM_PROXY_HOST` y del puerto asignado (`portForwards.portOrig`), que luego enruta al nombre de host externo asignado (`portForwards.name`) y al puerto (`portForwards.portDest`).
+A continuación, se llama a las conexiones a servicios externos a través de `AEM_PROXY_HOST` y del puerto asignado (`portForwards.portOrig`), que AEM enruta al nombre de host externo asignado (`portForwards.name`) y al puerto (`portForwards.portDest`).
 
 | Host de proxy | Puerto Proxy |  | Host externo | Puerto externo |
 |---------------------------------|----------|----------------|------------------|----------|
@@ -325,7 +325,7 @@ AEM A continuación, se llama a las conexiones a servicios externos a través de
       <a  href="./examples/sql-datasourcepool.md"><img alt="Conexión SQL con JDBC DataSourcePool" src="./assets//code-examples__sql-osgi.png"/></a>
       <div><strong><a href="./examples/sql-datasourcepool.md">Conexión SQL con el conjunto de datos JDBC</a></strong></div>
       <p>
-            AEM Ejemplo de código Java™ conectarse a bases de datos SQL externas configurando el grupo de fuentes de datos JDBC de la configuración de la aplicación de datos de JDBC de la.
+            Ejemplo de código Java™ conectarse a bases de datos SQL externas configurando el grupo de fuentes de datos JDBC de AEM.
       </p>
     </td>
    <td>
@@ -339,7 +339,7 @@ AEM A continuación, se llama a las conexiones a servicios externos a través de
       <a  href="./examples/email-service.md"><img alt="Red privada virtual (VPN)" src="./assets/code-examples__email.png"/></a>
       <div><strong><a href="./examples/email-service.md">Servicio de correo electrónico</a></strong></div>
       <p>
-        AEM Ejemplo de configuración de OSGi que utiliza la conexión con los servicios de correo electrónico externos mediante el uso de la.
+        Ejemplo de configuración de OSGi que utiliza AEM para conectarse a servicios de correo electrónico externos.
       </p>
     </td>
 </tr></table>
@@ -355,14 +355,14 @@ La configuración de Red privada virtual limita el acceso a los entornos de AEM 
       <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list"><img alt="Aplicación de una lista de permitidos IP" src="./assets/code_examples__vpn-allow-list.png"/></a>
       <div><strong><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list">Aplicando una lista de permitidos IP</a></strong></div>
       <p>
-            Configure una lista de permitidos AEM IP de modo que solo el tráfico VPN pueda acceder a los datos de acceso a la red de red (VPNs.
+            Configure una lista de permitidos IP de modo que solo el tráfico VPN pueda acceder a AEM.
       </p>
     </td>
    <td>
-      <a  href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking"><img alt="AEM Restricciones de acceso a VPN basadas en rutas a Publish de la" src="./assets/code_examples__vpn-path-allow-list.png"/></a>
-      <div>AEM <strong><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking">Restricciones de acceso VPN basadas en rutas a Publish de la</a></strong></div>
+      <a  href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking"><img alt="Restricciones de acceso VPN basadas en rutas a AEM Publish" src="./assets/code_examples__vpn-path-allow-list.png"/></a>
+      <div><strong><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking">Restricciones de acceso VPN basadas en rutas a AEM Publish</a></strong></div>
       <p>
-            AEM Requerir acceso VPN para rutas específicas en Publish de.
+            Requerir acceso VPN para rutas específicas en AEM Publish.
       </p>
     </td>
    <td></td>

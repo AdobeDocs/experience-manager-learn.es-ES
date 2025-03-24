@@ -1,8 +1,8 @@
 ---
-title: Integrar AEM Forms as a Cloud Service y Marketo (parte 2)
+title: Integración de AEM Forms as a Cloud Service y Marketo (parte 2)
 description: Aprenda a integrar AEM Forms y Marketo mediante el modelo de datos de formulario de AEM Forms.
 feature: Form Data Model,Integration
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Integrations, Development
 role: Developer
 level: Experienced
@@ -11,7 +11,7 @@ badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 last-substantial-update: 2024-07-24T00:00:00Z
 jira: KT-15876
 exl-id: 75e589fa-f7fc-4d0b-98c8-ce4d603ef2f7
-source-git-commit: b4df652fcda0af5d01077b97aa7fa17cfe2abf4b
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 3%
@@ -24,7 +24,7 @@ Las API de REST de Marketo están autenticadas con OAuth 2.0 de 2 patas. Podemos
 
 ## Crear contenedor de configuración
 
-* AEM Inicie sesión en el servicio de IDs.
+* Inicie sesión en AEM.
 * Haz clic en el menú de herramientas y luego en **Explorador de configuración**, como se muestra a continuación
 
 * ![menú de herramientas](assets/datasource3.png)

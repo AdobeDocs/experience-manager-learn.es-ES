@@ -1,7 +1,7 @@
 ---
 title: Comprobación de estado de AMS Dispatcher
-description: AEM AMS proporciona un script cgi-bin de comprobación de estado que los equilibradores de carga de la nube ejecutarán para ver si el estado de la es correcto y si debe permanecer en servicio para el tráfico público.
-version: 6.5
+description: AMS proporciona un script cgi-bin de comprobación de estado que los equilibradores de carga de la nube ejecutarán para ver si AEM está en buen estado y debe permanecer en servicio para el tráfico público.
+version: Experience Manager 6.5
 topic: Administration
 feature: Dispatcher
 role: Admin
@@ -10,7 +10,7 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 69b4e469-52cc-441b-b6e5-2fe7ef18da90
 duration: 247
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1143'
 ht-degree: 0%
@@ -24,13 +24,13 @@ ht-degree: 0%
 [&lt;- Anterior: Archivos de solo lectura](./immutable-files.md)
 
 Cuando tiene una línea de base de AMS instalada en Dispatcher, viene con algunas regalías.  Una de estas características es un conjunto de secuencias de comandos de comprobación de estado.
-AEM Estos scripts permiten al equilibrador de carga que se encuentra delante de la pila de la saber qué patas están en buen estado y mantenerlas en servicio.
+Estos scripts permiten al equilibrador de carga que se encuentra delante de la pila de AEM saber qué patas están en buen estado y mantenerlas en servicio.
 
 ![GIF animado que muestra el flujo de tráfico](assets/load-balancer-healthcheck/health-check.gif "Pasos de comprobación de estado")
 
 ## Comprobación del estado del equilibrador de carga básico
 
-AEM Cuando el tráfico de los clientes llega a través de Internet para llegar a su instancia de, pasará a través de un equilibrador de carga
+Cuando el tráfico de los clientes llegue a su instancia de AEM a través de Internet, pasará a través de un equilibrador de carga
 
 ![La imagen muestra el flujo de tráfico de Internet a aem a través de un equilibrador de carga](assets/load-balancer-healthcheck/load-balancer-traffic-flow.png "flujo de tráfico del equilibrador de carga")
 
@@ -38,11 +38,11 @@ Cada solicitud que llegue a través del equilibrador de carga se redondeará a c
 
 La comprobación predeterminada suele ser un puerto para ver si los servidores a los que se dirige el equilibrador de carga están escuchando cuando se enciende el tráfico del puerto (es decir, TCP 80 y 443)
 
-> AEM `Note:` Mientras que esto funciona, no tiene un indicador real de si la está en buen estado.  Solo prueba si Dispatcher (servidor web Apache) está en funcionamiento.
+> `Note:` Mientras que esto funciona, no tiene un indicador real de si AEM está en buen estado.  Solo prueba si Dispatcher (servidor web Apache) está en funcionamiento.
 
 ## AMS Health Check
 
-AEM Para evitar el envío de tráfico a un distribuidor en buen estado que se encuentra frente a una instancia de no saludable, AMS creó algunos extras que evalúan el estado de la pierna y no solo la Dispatcher.
+Para evitar el envío de tráfico a un distribuidor en buen estado que se encuentra frente a una instancia de AEM que no está en buen estado, AMS creó algunos extras que evalúan el estado de la pata y no solo la Dispatcher.
 
 ![La imagen muestra las diferentes partes para que funcione la comprobación de estado](assets/load-balancer-healthcheck/health-check-pieces.png "partes de comprobación de estado")
 
@@ -56,9 +56,9 @@ La comprobación de estado consta de los siguientes elementos
 
 Cubriremos para qué está configurada cada pieza y su importancia
 
-### AEM Paquete de
+### Paquete AEM
 
-AEM Para indicar si está funcionando, necesita que haga una compilación básica de la página y sirva a la página.  Adobe Managed Services ha creado un paquete básico que contiene la página de prueba.  La página prueba que el repositorio está activo y que los recursos y la plantilla de página se pueden procesar.
+Para indicar si AEM está funcionando, necesita que haga una compilación básica de la página y sirva a la página.  Adobe Managed Services ha creado un paquete básico que contiene la página de prueba.  La página prueba que el repositorio está activo y que los recursos y la plantilla de página se pueden procesar.
 
 ![La imagen muestra el paquete AMS en el administrador de paquetes de CRX](assets/load-balancer-healthcheck/health-check-package.png "health-check-package")
 
@@ -68,7 +68,7 @@ Esta es la página.  Muestra el ID del repositorio de la instalación
 
 > `Note:`: nos aseguramos de que la página no se pueda almacenar en caché.  No comprobaría el estado real si cada vez que devuelve una página en caché.
 
-AEM Este es el punto final de peso ligero que podemos probar para ver que el está funcionando.
+Este es el punto final ligero que podemos probar para ver que AEM está funcionando.
 
 ### Configuración del equilibrador de carga
 
@@ -101,9 +101,9 @@ Listen 81
 - `/etc/httpd/conf.d/available_vhosts/000_unhealthy_author.vhost`
 - `/etc/httpd/conf.d/available_vhosts/000_unhealthy_publish.vhost`
 
-Estos archivos se denominan `000_` como prefijo a propósito.  Se configura intencionadamente para utilizar el mismo nombre de dominio que el sitio activo.  AEM La intención es que este archivo se habilite cuando la comprobación de estado detecte un problema con uno de los backends de la interfaz de usuario de la interfaz de usuario de la interfaz de usuario de la interfaz de usuario de la interfaz de usuario.  A continuación, ofrezca una página de error en lugar de solo un código de respuesta HTTP 503 sin página.  Robará tráfico del archivo `.vhost` normal porque se ha cargado antes que ese archivo `.vhost` mientras se comparte el mismo archivo `ServerName` o `ServerAlias`.  Esto hace que las páginas destinadas a un dominio en particular vayan al vhost en mal estado en lugar del predeterminado por el que fluye su tráfico normal.
+Estos archivos se denominan `000_` como prefijo a propósito.  Se configura intencionadamente para utilizar el mismo nombre de dominio que el sitio activo.  La intención es que este archivo se active cuando la comprobación de estado detecte un problema con uno de los backends de AEM.  A continuación, ofrezca una página de error en lugar de solo un código de respuesta HTTP 503 sin página.  Robará tráfico del archivo `.vhost` normal porque se ha cargado antes que ese archivo `.vhost` mientras se comparte el mismo archivo `ServerName` o `ServerAlias`.  Esto hace que las páginas destinadas a un dominio en particular vayan al vhost en mal estado en lugar del predeterminado por el que fluye su tráfico normal.
 
-Cuando se ejecutan los scripts de comprobación de estado, cierran la sesión de su estado actual.  Una vez por minuto, se ejecuta un trabajo de comando en el servidor que busca entradas que no están en buen estado en el registro.  AEM Si detecta que la instancia del autor no está en buen estado, habilitará el enlace simbólico:
+Cuando se ejecutan los scripts de comprobación de estado, cierran la sesión de su estado actual.  Una vez por minuto, se ejecuta un trabajo de comando en el servidor que busca entradas que no están en buen estado en el registro.  Si detecta que la instancia de autor de AEM no está en buen estado, habilitará el enlace simbólico:
 
 Entrada de registro:
 
@@ -185,32 +185,32 @@ Hay 5 scripts diferentes que su CSE puede configurar en la configuración del eq
 
 #### /bin/checkauthor
 
-AEM Cuando se use este script, comprobará y registrará todas las instancias a las que se enfrente, pero solo devolverá un error si la instancia de `author` que se está usando no está en buen estado de salud.
+Cuando se use, este script comprobará y registrará todas las instancias a las que esté orientado, pero solo devolverá un error si la instancia de AEM `author` no está en buen estado
 
-> AEM AEM `Note:` Tenga en cuenta que si la instancia de publicación no estaba en buen estado, Dispatcher permanecería en servicio para permitir que el tráfico fluya a la instancia de creación de la instancia de la
+> `Note:` Tenga en cuenta que si la instancia de publicación de AEM no estaba en buen estado, Dispatcher permanecería en servicio para permitir que el tráfico fluya a la instancia de autor de AEM
 
 #### /bin/checkpublish (predeterminado)
 
-AEM Cuando se use este script, comprobará y registrará todas las instancias a las que se enfrente, pero solo devolverá un error si la instancia de `publish` que se está usando no está en buen estado de salud.
+Cuando se use, este script comprobará y registrará todas las instancias a las que esté orientado, pero solo devolverá un error si la instancia de AEM `publish` no está en buen estado
 
-> AEM AEM `Note:` Tenga en cuenta que si la instancia de la instancia de creación no estaba en buen estado, Dispatcher permanecería en servicio para permitir que el tráfico fluya a la instancia de publicación de la instancia de la
+> `Note:` Tenga en cuenta que si la instancia de autor de AEM no estaba en buen estado, Dispatcher permanecería en servicio para permitir que el tráfico fluya a la instancia de publicación de AEM
 
 #### /bin/checkEither
 
-AEM Cuando se use, este script comprobará y registrará todas las instancias a las que se enfrente, pero solo devolverá un error si la instancia de `author` o `publisher` no está en buen estado de conservación.
+Cuando se use, este script comprobará y registrará todas las instancias a las que esté orientado, pero solo devolverá un error si la instancia de AEM `author` o `publisher` no está en buen estado
 
-> AEM AEM `Note:` Tenga en cuenta que si la instancia de publicación o de la instancia de creación de la de publicación no se encuentra en buen estado, Dispatcher se retirará del servicio.  Lo que significa que si uno de ellos estaba en buen estado, tampoco recibiría tráfico
+> `Note:` Tenga en cuenta que si la instancia de publicación de AEM o la instancia de creación de AEM no estaba en buen estado, Dispatcher se retiraría del servicio.  Lo que significa que si uno de ellos estaba en buen estado, tampoco recibiría tráfico
 
 #### /bin/checkboth
 
-AEM Cuando se use, este script comprobará y registrará todas las instancias a las que se enfrente, pero solo devolverá un error si la instancia de `author` y la instancia de `publisher` no están en buen estado de conservación.
+Cuando se use, este script comprobará y registrará todas las instancias a las que se enfrente, pero solo devolverá un error si la instancia de AEM `author` y `publisher` no están en buen estado
 
-> AEM AEM `Note:` Tenga en cuenta que si la instancia de publicación o de creación de la instancia de de publicación no se encuentra en buen estado, Dispatcher no se retirará del servicio.  Lo que significa que si uno de ellos no estaba en buen estado, seguiría recibiendo tráfico y daría errores a las personas que solicitaban recursos.
+> `Note:` Tenga en cuenta que si la instancia de publicación de AEM o la instancia de creación de AEM no estaba en buen estado, Dispatcher no se retiraría del servicio.  Lo que significa que si uno de ellos no estaba en buen estado, seguiría recibiendo tráfico y daría errores a las personas que solicitaban recursos.
 
 #### /bin/healthy
 
-AEM Cuando se use, esta secuencia de comandos comprobará y registrará cualquier instancia que esté delante, pero devolverá un estado saludable independientemente de si se devuelve o no un error o no un error.
+Cuando se use, esta secuencia de comandos comprobará y registrará todas las instancias a las que esté dirigida, pero devuelve un estado correcto independientemente de si AEM devuelve o no un error.
 
-> AEM `Note:`: este script se usa cuando la comprobación de estado no funciona como se desea y permite que una anulación mantenga instancias de en el equilibrador de carga.
+> `Note:` Este script se usa cuando la comprobación de estado no funciona como se desea y permite que una anulación mantenga las instancias de AEM en el equilibrador de carga.
 
 [Siguiente -> GIT Symlinks](./git-symlinks.md)

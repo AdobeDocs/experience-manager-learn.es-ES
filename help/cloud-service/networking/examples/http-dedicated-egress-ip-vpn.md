@@ -1,7 +1,7 @@
 ---
 title: Conexiones HTTP/HTTPS para dirección IP de salida dedicada y VPN
 description: Obtenga información sobre cómo realizar solicitudes HTTP/HTTPS desde AEM as a Cloud Service a servicios web externos que se ejecutan para direcciones IP de salida dedicadas y VPN
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
 role: Architect, Developer
@@ -10,7 +10,7 @@ jira: KT-9354
 thumbnail: KT-9354.jpeg
 exl-id: a565bc3a-675f-4d5e-b83b-c14ad70a800b
 duration: 70
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 0%
@@ -40,7 +40,7 @@ Asegúrese de que la configuración avanzada de red de la dirección IP de salid
 Este ejemplo de código Java™ es de un servicio OSGi que se puede ejecutar en AEM as a Cloud Service y que realiza una conexión HTTP a un servidor web externo en 8080. Las conexiones HTTPS (o HTTP) se procesan como proxy automáticamente fuera de AEM as a Cloud Service y no requieren un desarrollo especial.
 
 >[!NOTE]
-> AEM Se recomienda usar las [API HTTP de Java™ 11](https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/package-summary.html) para hacer llamadas HTTP/HTTPS desde el servidor de correo electrónico de la red (HTTPs) de la red de llamadas de la red de área de servicio (HTTPs.
+> Se recomienda usar las [API HTTP de Java™ 11](https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/package-summary.html) para hacer llamadas HTTP/HTTPS desde AEM.
 
 + `core/src/com/adobe/aem/wknd/examples/connections/impl/HttpExternalServiceImpl.java`
 

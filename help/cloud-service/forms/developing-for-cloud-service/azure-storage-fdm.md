@@ -5,13 +5,13 @@ solution: Experience Manager
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Developer Tools
 jira: KT-9006
 exl-id: 77c00a35-43bf-485f-ac12-0fffb307dc16
 duration: 45
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 Cree un contenedor de configuración denominado &quot;FormTutorial&quot; para la configuración de los servicios en la nube
 Cree una configuración de servicios en la nube para el almacenamiento de Azure llamada &quot;FormsCSAndAzureBlob&quot; en el contenedor &quot;FormTutorial&quot; proporcionando los detalles de la cuenta de almacenamiento de Azure y la clave de acceso de Azure.
 
-AEM Abra el proyecto de la en IntelliJ. Asegúrese de añadir la carpeta FormTutorial como se muestra a continuación en el proyecto ui.content
+Abra el proyecto de AEM en IntelliJ. Asegúrese de añadir la carpeta FormTutorial como se muestra a continuación en el proyecto ui.content
 ![cloud-services-configuration](assets/cloud-services-configuration.png)
 
 Asegúrese de añadir la siguiente entrada en el archivo filter.xml del proyecto ui.content
@@ -36,7 +36,7 @@ Asegúrese de añadir la siguiente entrada en el archivo filter.xml del proyecto
 
 ## Incluir el modelo de datos de formulario en el proyecto
 
-Cree un modelo de datos de formulario basado en la configuración de servicios en la nube que creó en el paso anterior. AEM Para incluir el modelo de datos de formulario en el proyecto, cree la estructura de carpetas adecuada en el proyecto de en intelliJ. Por ejemplo, mi modelo de datos de formulario está en una carpeta llamada Registros
+Cree un modelo de datos de formulario basado en la configuración de servicios en la nube que creó en el paso anterior. Para incluir el modelo de datos de formulario en el proyecto, cree la estructura de carpetas adecuada en el proyecto de AEM en IntelliJ. Por ejemplo, mi modelo de datos de formulario está en una carpeta llamada Registros
 ![fdm-content](assets/ui-content-fdm.png)
 
 Incluya la entrada adecuada en el archivo filter.xml del proyecto ui.content

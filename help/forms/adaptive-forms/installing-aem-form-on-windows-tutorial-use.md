@@ -3,14 +3,14 @@ title: Pasos simplificados para instalar AEM Forms en Windows
 description: Pasos rápidos y sencillos para instalar AEM Forms en Windows
 feature: Adaptive Forms
 type: Tutorial
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Admin
 level: Beginner
 exl-id: 80288765-0b51-44a9-95d3-3bdb2da38615
 last-substantial-update: 2020-06-09T00:00:00Z
 duration: 113
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->AEM Nunca haga doble clic en el JAR de inicio rápido de la si desea utilizar AEM Forms.
+>Nunca haga doble clic en el JAR de inicio rápido de AEM si desea utilizar AEM Forms.
 >
 >Además, asegúrese de que no haya espacios en la ruta de la carpeta de instalación de AEM Forms.
 >
@@ -40,8 +40,8 @@ Aunque recomendamos seguir la [documentación oficial](https://helpx.adobe.com/e
 
 * Asegúrese de que tiene instalado el JDK adecuado
    * AEM 6.2 que necesita: Oracle SE 8 JDK 1.8.x (64 bits)
-   * AEM AEM 6.3 y 6.4 de la que usted necesita: Oracle SE 8 JDK 1.8.x (64bit)
-   * AEM.5 necesita JDK 8 o JDK 11
+   * AEM 6.3 y AEM 6.4 que necesita: Oracle SE 8 JDK 1.8.x (64 bits)
+   * AEM 6.5 necesita JDK 8 o JDK 11
    * [Los requisitos oficiales de JDK](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/introduction/technical-requirements.html?lang=es) se enumeran aquí
 * Asegúrese de que JAVA_HOME está configurado para que apunte al JDK instalado.
    * Para crear la variable JAVA_HOME en ventanas, siga los pasos a continuación:
@@ -54,7 +54,7 @@ Aunque recomendamos seguir la [documentación oficial](https://helpx.adobe.com/e
 * Copie el archivo license.properties en esta carpeta de AEM Forms
 * Cree un archivo por lotes llamado &quot;StartAemForms.bat&quot; con el siguiente contenido:
    * `java -d64 -Xmx2048M -jar AEM_6.5_Quickstart.jar -gui`
-      * AEM AEM Aquí 6.5_Quickstart.jar es el nombre de mi jar de inicio rápido de la aplicación de inicio rápido de la aplicación.
+      * Aquí AEM_6.5_Quickstart.jar es el nombre de mi JAR de inicio rápido de AEM.
    * Puede cambiar el nombre del JAR por cualquier nombre, pero asegúrese de que ese nombre se refleje en el archivo por lotes. Guarde el archivo por lotes en la carpeta de AEM Forms.
 
 * Abra un nuevo símbolo del sistema y vaya a _c:\aemforms_.

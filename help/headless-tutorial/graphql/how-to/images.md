@@ -1,7 +1,7 @@
 ---
-title: AEM Uso de imágenes optimizadas con sin encabezado
-description: AEM Obtenga información sobre cómo solicitar direcciones URL de imagen optimizada con sin encabezado de la.
-version: Cloud Service
+title: Uso de imágenes optimizadas con AEM Headless
+description: Obtenga información sobre cómo solicitar direcciones URL de imagen optimizada con AEM sin encabezado.
+version: Experience Manager as a Cloud Service
 topic: Headless
 feature: GraphQL API
 role: Developer
@@ -11,7 +11,7 @@ thumbnail: KT-10253.jpeg
 last-substantial-update: 2023-04-19T00:00:00Z
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
 duration: 300
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '843'
 ht-degree: 4%
@@ -20,23 +20,23 @@ ht-degree: 4%
 
 # Imágenes optimizadas con AEM Headless {#images-with-aem-headless}
 
-AEM Las imágenes son un aspecto crítico de [desarrollar experiencias enriquecidas, convincentes y sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=es). AEM Sin encabezado admite la administración de recursos de imagen y su entrega optimizada.
+Las imágenes son un aspecto crítico de [desarrollar experiencias sin encabezado de AEM enriquecidas y convincentes](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=es). AEM Headless admite la administración de recursos de imagen y su entrega optimizada.
 
-AEM Los fragmentos de contenido utilizados en el modelado de contenido sin encabezado, a menudo hacen referencia a recursos de imagen destinados a su visualización en la experiencia sin encabezado. AEM Se pueden escribir consultas de GraphQL de para proporcionar direcciones URL a imágenes en función de desde dónde se hace referencia a la imagen.
+Los fragmentos de contenido utilizados en el modelado de contenido sin encabezado de AEM suelen hacer referencia a recursos de imagen destinados a su visualización en la experiencia sin encabezado. Las consultas GraphQL de AEM se pueden escribir para proporcionar direcciones URL a imágenes en función de desde dónde se hace referencia a la imagen.
 
 El tipo `ImageRef` tiene cuatro opciones de URL para las referencias de contenido:
 
-+ AEM AEM `_path` es la ruta de acceso a la que se hace referencia en el código de acceso, y no incluye un origen de tipo de acceso (nombre de host) de la dirección de correo electrónico ()
++ `_path` es la ruta a la que se hace referencia en AEM y no incluye un origen de AEM (nombre de host)
 + `_dynamicUrl` es la dirección URL para la entrega optimizada para la web del recurso de imagen.
-   + AEM AEM AEM Publish El `_dynamicUrl` no incluye un origen de, por lo que la aplicación cliente debe proporcionar el dominio (servicio de autor o de).
-+ AEM `_authorUrl` es la dirección URL completa del recurso de imagen en el autor de la
-   + AEM Se puede usar [Author](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html) para proporcionar una experiencia de vista previa de la aplicación sin encabezado.
-+ AEM `_publishUrl` es la dirección URL completa del recurso de imagen en Publish de la
-   + AEM [Publish](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html) es normalmente el lugar desde el que la implementación de producción de la aplicación sin encabezado muestra las imágenes.
+   + `_dynamicUrl` no incluye un origen de AEM, por lo que la aplicación cliente debe proporcionar el dominio (autor de AEM o servicio de publicación de AEM).
++ `_authorUrl` es la dirección URL completa del recurso de imagen en AEM Author
+   + [AEM Author](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html) se puede usar para proporcionar una experiencia de vista previa de la aplicación sin encabezado.
++ `_publishUrl` es la dirección URL completa del recurso de imagen en AEM Publish
+   + [Publicación de AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html) es normalmente el lugar desde el que la implementación de producción de la aplicación sin encabezado muestra las imágenes.
 
 `_dynamicUrl` es la dirección URL recomendada que se debe usar para la entrega de recursos de imagen y debe reemplazar el uso de `_path`, `_authorUrl` y `_publishUrl` siempre que sea posible.
 
-|                                | AEM as a Cloud Service | AEM AS A CLOUD SERVICE RDE | AEM SDK de | AEM 6.5 |
+|                                | AEM as a Cloud Service | AEM AS A CLOUD SERVICE RDE | AEM SDK | AEM 6.5 |
 | ------------------------------ |:----------------------:|:--------------------------:|:-------:|:-------:|
 | ¿Admite imágenes optimizadas para la web? | ✔ | ✔ | ✘ | ✘ |
 
@@ -106,7 +106,7 @@ El `_assetTransform` define cómo se construye el `_dynamicUrl` para optimizar l
 | `flip` | Voltee la imagen. | ✘ | `HORIZONTAL`, `VERTICAL`, `HORIZONTAL_AND_VERTICAL` |
 | `quality` | Calidad de imagen en porcentaje de la calidad original. | ✘ | 1-100 |
 | `width` | Ancho de la imagen de salida en píxeles. Cuando se proporciona `size`, se omite `width`. | ✘ | Entero positivo |
-| `preferWebP` | AEM Si `true` y el servidor de la aplicación de datos sirve un WebP, si el explorador lo admite, independientemente de `format`. | ✘ | `true`, `false` |
+| `preferWebP` | Si `true` y AEM proporcionan un WebP si el explorador lo admite, independientemente de `format`. | ✘ | `true`, `false` |
 
 
 ## Respuesta de GraphQL
@@ -131,7 +131,7 @@ La respuesta JSON resultante contiene los campos solicitados que contienen la UR
 
 Para cargar la imagen optimizada para la web de la imagen a la que se hace referencia en su aplicación, utilizó `_dynamicUrl` de `primaryImage` como dirección URL de origen de la imagen.
 
-AEM En React, la visualización de una imagen optimizada para la web desde la aplicación de Publish tiene el siguiente aspecto:
+En React, la visualización de una imagen optimizada para la web desde AEM Publish tiene este aspecto:
 
 ```jsx
 // The AEM host is usually read from a environment variable of the SPA.
@@ -142,7 +142,7 @@ let dynamicUrl = AEM_HOST + data.adventureByPath.item.primaryImage._dynamicUrl;
 <img src={dynamicUrl} alt={data.adventureByPath.item.title}/>
 ```
 
-AEM Recuerde que `_dynamicUrl` no incluye el dominio de la, por lo que debe proporcionar el origen deseado para que se resuelva la dirección URL de la imagen.
+Recuerde que `_dynamicUrl` no incluye el dominio de AEM, por lo que debe proporcionar el origen deseado para que se resuelva la dirección URL de la imagen.
 
 ## URL interactivas
 
@@ -196,9 +196,9 @@ Los elementos [Img con srcset](https://css-tricks.com/a-guide-to-the-responsive-
 
 ### Código de ejemplo
 
-AEM AEM Esta sencilla aplicación React usa el [SDK sin encabezado](./aem-headless-sdk.md) para consultar las API sin encabezado de para el contenido de Aventura, y muestra la imagen optimizada para la web usando el [elemento img con srcset](#img-element-with-srcset) y [elemento picture](#picture-element). `srcset` y `sources` utilizan una función `setParams` personalizada para anexar el parámetro de consulta de entrega optimizado para la web a `_dynamicUrl` de la imagen, de modo que se debe cambiar la representación de la imagen entregada según las necesidades del cliente web.
+Esta sencilla aplicación React usa [AEM Headless SDK](./aem-headless-sdk.md) para consultar las API de AEM Headless en busca de contenido de Adventure y muestra la imagen optimizada para la web usando [elemento img con srcset](#img-element-with-srcset) y [elemento picture](#picture-element). `srcset` y `sources` utilizan una función `setParams` personalizada para anexar el parámetro de consulta de entrega optimizado para la web a `_dynamicUrl` de la imagen, de modo que se debe cambiar la representación de la imagen entregada según las necesidades del cliente web.
 
-AEM AEM La consulta de la información sobre el acceso se realiza en el vínculo personalizado de React [useAdventureByPath que usa el SDK sin encabezado de la](./aem-headless-sdk.md#graphql-persisted-queries).
+La consulta de AEM se realiza en el vínculo personalizado de React [useAdventureByPath que usa AEM Headless SDK](./aem-headless-sdk.md#graphql-persisted-queries).
 
 ```javascript
 // src/App.js

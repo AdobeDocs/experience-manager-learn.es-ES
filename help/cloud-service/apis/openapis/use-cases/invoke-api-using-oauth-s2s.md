@@ -1,7 +1,7 @@
 ---
 title: Invocar las API de AEM basadas en OpenAPI mediante la autenticación de servidor a servidor OAuth
 description: Obtenga información sobre cómo invocar las API de AEM basadas en OpenAPI en AEM as a Cloud Service desde aplicaciones personalizadas mediante la autenticación de servidor a servidor OAuth.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Developing
 topic: Development, Architecture, Content Management
 role: Architect, Developer, Leader
@@ -11,10 +11,11 @@ jira: KT-16516
 thumbnail: KT-16516.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
-source-git-commit: e4cf47e14fa7dfc39ab4193d35ba9f604eabf99f
+exl-id: 8338a905-c4a2-4454-9e6f-e257cb0db97c
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1692'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 

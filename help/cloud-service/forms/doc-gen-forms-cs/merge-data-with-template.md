@@ -1,27 +1,27 @@
 ---
 title: Combinar datos con la plantilla XDP
-description: Realice una solicitud del POST al punto final con los parámetros necesarios
+description: Realice una petición POST al punto final con los parámetros necesarios
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Output Service
 topic: Development
 jira: KT-8185
 thumbnail: 332439.jpg
 exl-id: d144b3f6-7c7a-46a7-bc5f-1767895749d0
 duration: 49
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 0%
 
 ---
 
-# Hacer que el POST llame
+# Realizar la llamada de POST
 
 
-El siguiente paso es realizar una llamada del POST HTTP al extremo con los parámetros necesarios. La plantilla y los archivos de datos se proporcionan como archivos de recursos. Las propiedades del PDF generado se especifican mediante el parámetro de la opción en la solicitud. La propiedad embedFonts se utiliza para incrustar fuentes personalizadas en el PDF generado.[Siga esta documentación para implementar fuentes personalizadas en la instancia de nube de Forms.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-set-up.html?lang=en) Las propiedades se especifican en el archivo de recursos options.json. Desde, el punto final tiene autenticación basada en token. Pasamos el token de acceso en el encabezado de la solicitud.
+El siguiente paso es realizar una llamada de POST HTTP al extremo con los parámetros necesarios. La plantilla y los archivos de datos se proporcionan como archivos de recursos. Las propiedades del PDF generado se especifican mediante el parámetro de la opción en la solicitud. La propiedad embedFonts se utiliza para incrustar fuentes personalizadas en el PDF generado.[Siga esta documentación para implementar fuentes personalizadas en la instancia de nube de Forms.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-set-up.html?lang=en) Las propiedades se especifican en el archivo de recursos options.json. Desde, el punto final tiene autenticación basada en token. Pasamos el token de acceso en el encabezado de la solicitud.
 
 El siguiente código se utilizó para generar el PDF combinando datos con la plantilla
 

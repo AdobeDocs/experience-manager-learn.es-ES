@@ -1,7 +1,7 @@
 ---
 title: Migración de contenido mediante la herramienta de transferencia de contenido
-description: Descubra cómo la herramienta de transferencia de contenido le ayuda a migrar contenido a AEM as a Cloud Service AEM desde el.
-version: Cloud Service
+description: Descubra cómo la herramienta de transferencia de contenidos le ayuda a migrar contenidos a AEM as a Cloud Service desde AEM 6.
+version: Experience Manager as a Cloud Service
 topic: Migration, Upgrade
 feature: Migration
 role: Developer
@@ -10,7 +10,7 @@ jira: KT-8919
 thumbnail: 336970.jpeg
 exl-id: c51ce8e3-e83c-4f8b-a835-70335ed3a5b9
 duration: 1362
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 3%
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 # Herramienta de transferencia de contenido
 
-Descubra cómo la herramienta de transferencia de contenido le ayuda a migrar contenido a AEM as a Cloud Service AEM desde la versión 6.3 o posterior de la versión de.
+Descubra cómo la herramienta de transferencia de contenido le ayuda a migrar contenido a AEM as a Cloud Service desde AEM 6.3+.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336970?quality=12&learn=on)
 
@@ -28,16 +28,16 @@ Descubra cómo la herramienta de transferencia de contenido le ayuda a migrar co
 
 ![Ciclo de vida de herramienta de transferencia de contenido](../assets/content-transfer-tool.png)
 
-AEM La herramienta de transferencia de contenido está instalada en la versión 6.3 o posterior de la y transfiere contenido a AEM as a Cloud Service.
+La herramienta de transferencia de contenido está instalada en AEM 6.3+ y transfiere contenido a AEM as a Cloud Service.
 
 ## Actividades clave
 
 + Descargar la [última herramienta de transferencia de contenido](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=Content*+Transfer*+Tool*&amp;1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=2).
-+ AEM Transfiera el contenido final de AppMeasurement 6.3 o posterior al servicio de AEM as a Cloud Service Author.
-   + AEM Instale la herramienta de transferencia de contenido en el autor de la versión 6.3 (o posterior) que contenga el contenido final que desea transferir.
++ Transfiera el contenido final de AEM Author 6.3+ al servicio AEM as a Cloud Service Author.
+   + Instale la herramienta de transferencia de contenido en AEM 6.3 o posterior Author con el contenido final que desea transferir.
    + Ejecute la herramienta de transferencia de contenido por lotes transfiriendo conjuntos de contenido.
-+ AEM Transfiera el contenido final de Publish 6.3 o posterior al servicio AEM as a Cloud Service Publish.
-   + AEM Instale la herramienta de transferencia de contenido en Publish de la versión 6.3 (o posterior) de que contenga el contenido final que desea transferir.
++ Transfiera el contenido final de AEM Publish 6.3+ al servicio AEM as a Cloud Service Publish.
+   + Instale la herramienta de transferencia de contenido en AEM 6.3+ Publish que contenga el contenido final que desea transferir.
    + Ejecute la herramienta de transferencia de contenido por lotes transfiriendo conjuntos de contenido.
 + De forma opcional, puede añadir contenido en AEM as a Cloud Service transfiriendo contenido nuevo desde la última transferencia de contenido
 
@@ -66,7 +66,7 @@ Además, asegúrese de haber completado el ejercicio práctico anterior:
         <td style="width:100%;margin-bottom:1rem;">
             <div style="font-size:1.25rem;font-weight:400;">Prácticas con la herramienta de transferencia de contenido</div>
             <p style="margin:1rem 0">
-                AEM Explore cómo la herramienta de transferencia de contenido puede mover automáticamente el contenido de 6 a AEM as a Cloud Service.
+                Explore cómo la herramienta de transferencia de contenido puede mover automáticamente el contenido de AEM 6 a AEM as a Cloud Service.
             </p>
             <a  rel="noreferrer"
                 target="_blank"

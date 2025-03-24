@@ -1,7 +1,7 @@
 ---
 title: Integración de Workfront y AEM Assets mediante el conector mejorado
 description: Obtenga información acerca de los conceptos básicos de la integración de conectores mejorados de Adobe Workfront y Experience Manager Assets.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Content Management, Integrations
 feature: Asset Management
 role: Admin, User
@@ -13,7 +13,7 @@ badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM Assets as a Cloud Service, AEM Assets 6.5" before-title="false"
 exl-id: 4f279c0d-270f-433e-b047-88c02f5b1e78
 duration: 49
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 0%
@@ -22,16 +22,16 @@ ht-degree: 0%
 
 # Integración de Workfront y AEM Assets con el conector mejorado
 
-AEM ![Serie de expertos de](./assets/banner.png)
+![Serie de expertos de AEM](./assets/banner.png)
 
-Únase a los expertos de Workfront y Experience Manager Assets de Adobe en esta serie de vídeos de cuatro partes, mientras muestran y analizan los detalles de la integración de Workfront y AEM Assets mediante el conector mejorado.
+Únase a los expertos de Adobe en Workfront y Experience Manager Assets en esta serie de vídeos de cuatro partes, mientras muestran y analizan los detalles de la integración de Workfront y AEM Assets mediante el conector mejorado.
 
-Esta serie de cuatro partes de expertos sigue a un grupo de expertos en Adobe - desde gestores de productos, hasta consultores y socios de Adobe - discutiendo:
+Esta serie de expertos de cuatro partes sigue a un grupo de expertos de Adobe, desde gestores de producto, hasta consultores y socios de Adobe, que analizan lo siguiente:
 
-1. [Realización de las configuraciones de configuración iniciales en Workfront AEM y](./setup.md)
-2. [Configuración de la sincronización de metadatos entre formularios personalizados de Workfront AEM y el servicio de asistencia](./custom-forms.md)
-3. [AEM Uso de etiquetas de, carpetas vinculadas a proyectos, vínculos de recursos de Adobe y esquemas de metadatos de carpetas para maximizar el valor](./aem-tags-project-linked-folders-and-folder-metadata.md)
-4. [AEM AEM Uso del flujo de trabajo de la avanzada para optimizar los procesos empresariales en los entornos de y Workfront, y en otras configuraciones avanzadas.](./advanced-settings-and-workflows.md)
+1. [Realización de las configuraciones iniciales en Workfront y AEM](./setup.md)
+2. [Configuración de la sincronización de metadatos entre formularios personalizados de Workfront y AEM](./custom-forms.md)
+3. [Uso de etiquetas de AEM, carpetas vinculadas a proyectos, esquemas de metadatos de carpetas y vínculos de recursos de Adobe para maximizar el valor](./aem-tags-project-linked-folders-and-folder-metadata.md)
+4. [Uso del flujo de trabajo avanzado de AEM para optimizar los procesos empresariales en AEM, Workfront y otras configuraciones avanzadas](./advanced-settings-and-workflows.md)
 
 <table>
   <td>
@@ -66,16 +66,16 @@ Esta serie de cuatro partes de expertos sigue a un grupo de expertos en Adobe - 
     <!-- AEM Tags, project linked folders, and folder metadata -->
     <td>
       <a href="./aem-tags-project-linked-folders-and-folder-metadata.md">
-        <img alt="AEM Etiquetas, carpetas vinculadas a proyectos y metadatos de carpetas" 
+        <img alt="Etiquetas de AEM, carpetas vinculadas a proyectos y metadatos de carpetas" 
              src="./assets/aem-tags.png">
       </a>
       <div>
-         AEM <a href="./aem-tags-project-linked-folders-and-folder-metadata.md"><strong>Etiquetas, carpetas vinculadas a proyectos y metadatos de carpetas de la</strong></a>
+         <a href="./aem-tags-project-linked-folders-and-folder-metadata.md"><strong>Etiquetas de AEM, carpetas vinculadas a proyectos y metadatos de carpetas</strong></a>
          <br/><em>Parte 3/4</em> 
       </div>
       <p>
         <br/>
-            AEM Obtenga información sobre cómo dirigir la taxonomía de la desde Workfront AEM, utilizar carpetas vinculadas a proyectos y datos para crear metadatos de carpetas de recursos con el fin de crear carpetas de recursos de la.
+            Obtenga información sobre cómo dirigir la taxonomía de AEM desde Workfront, utilizar carpetas vinculadas a proyectos y enviar datos a metadatos de carpetas de recursos de AEM.
       </p>
    </td>   
    <!-- Advanced workflows -->
@@ -90,7 +90,7 @@ Esta serie de cuatro partes de expertos sigue a un grupo de expertos en Adobe - 
       </div>
       <p>
         <br/>
-            Obtenga información acerca de la configuración avanzada del conector mejorado de Workfront AEM para la y administre la sincronización de datos mediante flujos de trabajo avanzados.
+            Obtenga información acerca de la configuración avanzada del conector mejorado de Workfront para AEM y administre la sincronización de datos mediante flujos de trabajo avanzados.
       </p>
    </td>
   </tr>  

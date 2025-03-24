@@ -2,14 +2,14 @@
 title: Explicación del multiinquilino y el desarrollo simultáneo
 description: Obtenga información sobre las ventajas, los desafíos y las técnicas para administrar una implementación de varios inquilinos con Adobe Experience Manager Assets.
 feature: Connected Assets
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 doc-type: Article
 exl-id: c9ee29d4-a8a5-4e61-bc99-498674887da5
 duration: 437
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 0%
@@ -20,11 +20,11 @@ ht-degree: 0%
 
 ## Introducción {#introduction}
 
-AEM Cuando varios equipos implementan su código en los mismos entornos de trabajo, hay prácticas que deben seguir para garantizar que los equipos puedan trabajar de forma lo más independiente posible, sin pisar los dedos de los pies de otros equipos. Aunque nunca se pueden eliminar por completo, estas técnicas minimizarán las dependencias entre equipos. Para que un modelo de desarrollo simultáneo tenga éxito, es fundamental que haya una buena comunicación entre los equipos de desarrollo.
+Cuando varios equipos implementan su código en los mismos entornos de AEM, hay prácticas que deben seguir para garantizar que los equipos puedan trabajar de la forma más independiente posible, sin pisar los dedos de los pies de otros equipos. Aunque nunca se pueden eliminar por completo, estas técnicas minimizarán las dependencias entre equipos. Para que un modelo de desarrollo simultáneo tenga éxito, es fundamental que haya una buena comunicación entre los equipos de desarrollo.
 
-AEM Además, cuando varios equipos de desarrollo trabajan en el mismo entorno de, es probable que haya cierto grado de multiinquilinos en juego. AEM Se ha escrito mucho sobre las consideraciones prácticas de intentar apoyar a múltiples inquilinos en un entorno de la vida cotidiana, especialmente en torno a los desafíos que enfrentan al momento de administrar la gobernanza, las operaciones y el desarrollo. AEM En este documento se exploran algunos de los desafíos técnicos relacionados con la implementación de la en un entorno de varios inquilinos, pero muchas de estas recomendaciones se aplicarán a cualquier organización con varios equipos de desarrollo.
+Además, cuando varios equipos de desarrollo trabajan en el mismo entorno de AEM, es probable que haya algún grado de multiinquilino en juego. Se ha escrito mucho sobre las consideraciones prácticas de intentar apoyar a varios inquilinos en un entorno de AEM, especialmente en torno a los desafíos que se enfrentan al administrar la gobernanza, las operaciones y el desarrollo. En este documento se analizan algunos de los desafíos técnicos relacionados con la implementación de AEM en un entorno de varios inquilinos, pero muchas de estas recomendaciones se aplicarán a cualquier organización con varios equipos de desarrollo.
 
-AEM Es importante tener en cuenta por adelantado que, si bien puede admitir varios sitios e incluso varias marcas que se implementen en un solo entorno, no ofrece una verdadera capacidad de inquilino múltiple. Algunas configuraciones de entorno y recursos de sistemas siempre se compartirán en todos los sitios implementados en un entorno. Este documento proporciona orientación para minimizar los efectos de estos recursos compartidos y ofrece sugerencias para racionalizar la comunicación y la colaboración en estas áreas.
+Es importante tener en cuenta por adelantado que, aunque AEM puede admitir la implementación de varios sitios e incluso varias marcas en un solo entorno, no ofrece múltiples inquilinos reales. Algunas configuraciones de entorno y recursos de sistemas siempre se compartirán en todos los sitios implementados en un entorno. Este documento proporciona orientación para minimizar los efectos de estos recursos compartidos y ofrece sugerencias para racionalizar la comunicación y la colaboración en estas áreas.
 
 ## Ventajas y desafíos {#benefits-and-challenges}
 
@@ -76,7 +76,7 @@ Algunos ejemplos de código que suelen incluirse en un módulo principal son:
    * Filtros Servlet
    * Asignaciones de ResourceResolver
    * Canalizaciones del transformador Sling
-   * AEM Controladores de error (o use el Controlador de página de error 1 de ACS Commons)
+   * Controladores de error (o use el Controlador de página de error 1 de ACS AEM Commons)
    * Servlets de autorización para el almacenamiento en caché con permisos confidenciales
 * Clases de utilidad
 * Lógica empresarial principal
@@ -94,7 +94,7 @@ Para garantizar que los cambios realizados en este paquete principal no interrum
 
 ## Administrar el ámbito de implementación {#managing-deployment-scope}
 
-A medida que diferentes equipos implementan su código en el mismo repositorio, es importante que no sobrescriban los cambios de los demás. AEM tiene un mecanismo para controlar esto al implementar paquetes de contenido, el filtro. archivo xml. Es importante que no haya superposición entre filtros.  archivos xml; de lo contrario, la implementación de un equipo podría borrar la implementación anterior de otro equipo. Para ilustrar este punto, consulte los siguientes ejemplos de archivos de filtro bien diseñados o problemáticos:
+A medida que diferentes equipos implementan su código en el mismo repositorio, es importante que no sobrescriban los cambios de los demás. AEM tiene un mecanismo para controlar esto cuando implementa paquetes de contenido: el filtro. archivo xml. Es importante que no haya superposición entre filtros.  archivos xml; de lo contrario, la implementación de un equipo podría borrar la implementación anterior de otro equipo. Para ilustrar este punto, consulte los siguientes ejemplos de archivos de filtro bien diseñados o problemáticos:
 
 /apps/my-company vs. /apps/my-company/my-site
 
@@ -110,7 +110,7 @@ Como es una ruta del sistema global y no es específica de un sitio, el siguient
 
 ### Superposiciones {#overlays}
 
-AEM AEM Las superposiciones se utilizan frecuentemente para ampliar o reemplazar la funcionalidad de la aplicación de forma predeterminada, pero el uso de una superposición afecta a toda la aplicación de la aplicación (es decir, cualquier cambio de funcionalidad superpuesta está disponible para todos los inquilinos). Esto sería aún más complicado si los inquilinos tuvieran diferentes requisitos para la superposición. AEM Lo ideal sería que los grupos empresariales trabajaran juntos para acordar la funcionalidad y el aspecto de las consolas administrativas de las que se dispone en la administración de los usuarios de la red de distribución de la información y las comunicaciones.
+Las superposiciones se utilizan frecuentemente para ampliar o reemplazar la funcionalidad AEM predeterminada, pero el uso de una superposición afecta a toda la aplicación de AEM (es decir, cualquier cambio de funcionalidad superpuesta está disponible para todos los inquilinos). Esto sería aún más complicado si los inquilinos tuvieran diferentes requisitos para la superposición. Lo ideal es que los grupos de trabajo trabajen juntos para acordar la funcionalidad y el aspecto de las consolas administrativas de AEM.
 
 Si no se puede llegar a un consenso entre las distintas unidades de negocio, una posible solución sería simplemente no utilizar superposiciones. En su lugar, cree una copia personalizada de la funcionalidad y expóngala a través de una ruta diferente para cada inquilino. Esto permite que cada inquilino tenga una experiencia de usuario completamente diferente, pero este método también aumenta el coste de la implementación y los esfuerzos de actualización posteriores.
 
@@ -120,7 +120,7 @@ AEM utiliza iniciadores de flujo de trabajo para almacenar automáticamente en d
 
 ### URL de vanidad {#vanity-urls}
 
-AEM proporciona funcionalidad de URL de vanidad que se puede configurar por página. AEM La preocupación con este enfoque en un escenario de varios inquilinos es que no se garantiza la exclusividad entre las URL de vanidad configuradas de esta manera. Si dos usuarios diferentes configuran la misma ruta de vanidad para páginas diferentes, se puede encontrar un comportamiento inesperado. Por este motivo, recomendamos utilizar reglas mod_rewrite en las instancias de Apache Dispatcher, que permiten un punto central de configuración junto con las reglas de resolución de recursos de solo salida.
+AEM proporciona funcionalidad de URL de vanidad que se puede configurar por página. El problema con este enfoque en un escenario de varios inquilinos es que AEM no garantiza la exclusividad entre las URL de vanidad configuradas de esta manera. Si dos usuarios diferentes configuran la misma ruta de vanidad para páginas diferentes, se puede encontrar un comportamiento inesperado. Por este motivo, recomendamos utilizar reglas mod_rewrite en las instancias de Apache Dispatcher, que permiten un punto central de configuración junto con las reglas de resolución de recursos de solo salida.
 
 ### Grupos de componentes {#component-groups}
 
@@ -134,15 +134,15 @@ Si bien una buena arquitectura y canales de comunicación abiertos pueden ayudar
 
 ### Recursos compartidos {#shared-resources}
 
-AEM AEM AEM se ejecuta dentro de una sola JVM; todas las aplicaciones de la aplicación de la implementación comparten recursos entre sí de forma inherente, además de los recursos que ya se consumen durante la ejecución normal de las aplicaciones de la implementación de la aplicación de la plataforma de administración de recursos (JVMs). AEM Dentro del propio espacio JVM, no hay una separación lógica de subprocesos y los recursos finitos disponibles para los usuarios, como la memoria, la CPU y la E/S del disco, también se comparten. Cualquier inquilino que consuma recursos afectará inevitablemente a otros inquilinos del sistema.
+AEM se ejecuta dentro de una sola JVM; todas las aplicaciones de AEM implementadas comparten recursos inherentemente entre sí, además de los recursos ya consumidos en la ejecución normal de AEM. Dentro del propio espacio JVM, no hay separación lógica de subprocesos y los recursos finitos disponibles para AEM, como memoria, CPU y E/S de disco, también se comparten. Cualquier inquilino que consuma recursos afectará inevitablemente a otros inquilinos del sistema.
 
 ### Rendimiento {#performance}
 
-AEM Si no se siguen las prácticas recomendadas de la aplicación, es posible desarrollar aplicaciones que consuman recursos superiores a los que se consideran normales. Algunos ejemplos de esto son la activación de muchas operaciones de flujo de trabajo pesadas (como el recurso de actualización DAM), el uso de operaciones push-on-modify de MSM en muchos nodos o el uso de consultas JCR costosas para procesar contenido en tiempo real. Esto inevitablemente tendrá un impacto en el rendimiento de otras aplicaciones de inquilino.
+Si no sigue las prácticas recomendadas de AEM, es posible desarrollar aplicaciones que consuman recursos que superen lo que se considera normal. Algunos ejemplos de esto son la activación de muchas operaciones de flujo de trabajo pesadas (como el recurso de actualización DAM), el uso de operaciones push-on-modify de MSM en muchos nodos o el uso de consultas JCR costosas para procesar contenido en tiempo real. Esto inevitablemente tendrá un impacto en el rendimiento de otras aplicaciones de inquilino.
 
 ### Registro {#logging}
 
-AEM proporciona interfaces listas para usar para una configuración de registrador sólida que se puede utilizar en nuestra ventaja en escenarios de desarrollo compartidos. Al especificar registradores independientes para cada marca, por nombre de paquete, podemos lograr cierto grado de separación de registros. Aunque las operaciones de todo el sistema, como la replicación y la autenticación, se registrarán en una ubicación central, el código personalizado no compartido se puede registrar por separado, lo que facilita los esfuerzos de monitorización y depuración del equipo técnico de cada marca.
+AEM proporciona interfaces listas para usar para una configuración de registrador sólida que se puede utilizar para nuestro beneficio en escenarios de desarrollo compartidos. Al especificar registradores independientes para cada marca, por nombre de paquete, podemos lograr cierto grado de separación de registros. Aunque las operaciones de todo el sistema, como la replicación y la autenticación, se registrarán en una ubicación central, el código personalizado no compartido se puede registrar por separado, lo que facilita los esfuerzos de monitorización y depuración del equipo técnico de cada marca.
 
 ### Copia de seguridad y restauración {#backup-and-restore}
 

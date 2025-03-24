@@ -1,7 +1,7 @@
 ---
-title: AEM Registros comunes de Dispatcher
+title: Registros comunes de AEM Dispatcher
 description: Eche un vistazo a las entradas de registro comunes de Dispatcher y conozca su significado y cómo solucionarlas.
-version: 6.5
+version: Experience Manager 6.5
 topic: Administration, Performance
 feature: Dispatcher
 role: Admin
@@ -10,7 +10,7 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 7fe1b4a5-6813-4ece-b3da-40af575ea0ed
 duration: 229
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 0%
@@ -109,9 +109,9 @@ Fri Jul 20 22:31:15 2018 W pid 3648 Unable to connect socket to 10.43.3.40:4502:
 Fri Jul 20 22:31:15 2018 W pid 3648 Unable to connect to any backend in farm authorfarm
 ```
 
-Esto ocurre cuando tiene la dirección IP incorrecta configurada en la sección de procesamiento de la granja. AEM Esa instancia o la instancia de dejaron de responder o escuchar y Dispatcher no puede acceder a ella.
+Esto ocurre cuando tiene la dirección IP incorrecta configurada en la sección de procesamiento de la granja. También, es posible que la instancia de AEM haya dejado de responder o escuchar y Dispatcher no pueda acceder a ella.
 
-AEM Compruebe las reglas del cortafuegos y que la instancia de la se esté ejecutando y en buen estado.
+Compruebe las reglas del cortafuegos y que la instancia de AEM esté en ejecución y en buen estado.
 
 Ejemplo de entradas de registro de tiempo de espera de puerta:
 
@@ -120,7 +120,7 @@ Fri Jul 20 22:32:42 2018 I pid 3648 "GET /favicon.ico" 502 - 54034ms authorfarm/
 Fri Jul 20 22:35:45 2018 I pid 3648 "GET /favicon.ico" 503 - 54234ms authorfarm/-
 ```
 
-AEM Esto significa que la instancia de tenía un socket abierto al que se podía acceder y se agotó el tiempo de espera para la respuesta. AEM Esto significa que la instancia de era demasiado lenta o no estaba en buen estado y Dispatcher alcanzó el tiempo de espera establecido en la sección de procesamiento de la granja. AEM Aumente la configuración de tiempo de espera o arregle la instancia de la.
+Esto significa que la instancia de AEM tenía un socket abierto al que se podía acceder y se agotó el tiempo de espera para la respuesta. Esto significa que la instancia de AEM era demasiado lenta o no estaba en buen estado y Dispatcher alcanzó el tiempo de espera establecido en la sección de procesamiento de la granja. Aumente la configuración de tiempo de espera o arregle la instancia de AEM.
 
 ## Nivel de almacenamiento en caché
 
@@ -167,9 +167,9 @@ Thu Sep 27 17:35:11 2018 D pid 18936 Vanity URL file (/tmp/vanity_urls) not foun
 Thu Sep 27 17:35:11 2018 W pid 18936 Unable to fetch vanity URLs from 10.43.0.42:4503/libs/granite/dispatcher/content/vanityUrls.html: remote server returned: HTTP/1.1 404 Not Found
 ```
 
-Este error se produce cuando se configura el Dispatcher AEM para que utilice el filtro automático dinámico para admitir direcciones URL de vanidad, pero no se ha finalizado la configuración instalando el paquete en el procesador de.
+Este error se produce cuando se configura el Dispatcher para que utilice el filtro automático dinámico para admitir direcciones URL de vanidad, pero no se ha finalizado la configuración instalando el paquete en el procesador de AEM.
 
-AEM Para solucionarlo, instale el paquete de funciones de la URL mnemónica en la instancia de y permita que lo pueda preparar un usuario anónimo. Detalles [aquí](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17463.html)
+Para solucionarlo, instale el paquete de funciones de la URL de vanidad en la instancia de AEM y permita que lo pueda preparar un usuario anónimo. Detalles [aquí](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17463.html)
 
 La configuración de una URL de vanidad en funcionamiento es la siguiente:
 
@@ -201,6 +201,6 @@ Ejemplo de entrada de registro:
 Tue Nov 26 16:41:34 2019 I pid 9208 (tid 140112092391168) "GET /content/we-retail/us/en.html" - + 24034ms publishfarm/0
 ```
 
-La página se obtuvo mediante el método GET http para el contenido `/content/we-retail/us/en.html` y tardó 24034 milisegundos en obtenerse. La parte a la que queremos prestar atención se encuentra al final de `publishfarm/0`. Verá que se ha dirigido a `publishfarm` y que coincide con ella. La solicitud se obtuvo del procesamiento 0. AEM Esto significa que se tuvo que solicitar la página a los usuarios y, a continuación, se almacenó en caché la. Vamos a volver a solicitar esta página para ver qué sucede con el registro.
+La página se obtuvo mediante el método GET http para el contenido `/content/we-retail/us/en.html` y tardó 24034 milisegundos en obtenerse. La parte a la que queremos prestar atención se encuentra al final de `publishfarm/0`. Verá que se ha dirigido a `publishfarm` y que coincide con ella. La solicitud se obtuvo del procesamiento 0. Esto significa que se tuvo que solicitar la página a AEM y, a continuación, se almacenó en caché. Vamos a volver a solicitar esta página para ver qué sucede con el registro.
 
 [Siguiente -> Archivos de solo lectura](./immutable-files.md)

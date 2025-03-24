@@ -1,14 +1,14 @@
 ---
 title: Vídeos y tutoriales de AEM Assets
-description: AEM Vea nuestros vídeos para obtener asistencia y soporte de recursos de la.
+description: Vea nuestros vídeos para obtener asistencia y soporte de AEM Asset.
 sub-product: Experience Manager Assets
-version: 6.4, 6.5, Cloud Service
+version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 doc-type: Catalog
 exl-id: 1d0b0183-25ee-4cb4-82a5-3506e7c1c908
-source-git-commit: d0e1513b4e6ea536b40f3dbb69a0f512f7521164
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '177'
-ht-degree: 20%
+ht-degree: 21%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 20%
 
 {{edge-delivery-services}}
 
-Adobe Experience Manager AEM () Assets AEM es una herramienta de administración de recursos digitales de la plataforma de que permite a los usuarios crear, administrar y compartir sus recursos digitales (imágenes, vídeos, documentos y clips de audio) en un repositorio basado en web. Esta guía del usuario contiene vídeos y tutoriales sobre las numerosas funciones y funcionalidades de AEM Assets.
+Adobe Experience Manager (AEM) Assets es una herramienta de administración de recursos digitales de AEM Platform que permite a los usuarios crear, administrar y compartir sus recursos digitales (imágenes, vídeos, documentos y clips de audio) en un repositorio basado en web. Esta guía del usuario contiene vídeos y tutoriales sobre las numerosas funciones y funcionalidades de los AEM Assets de.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_assets_overview"
@@ -26,7 +26,7 @@ Adobe Experience Manager AEM () Assets AEM es una herramienta de administración
 
 ## Introducción a AEM Assets
 
-Descubra qué es AEM Assets y cómo se puede utilizar para lograr los objetivos empresariales de su organización.
+Descubra qué son los AEM Assets y cómo se pueden utilizar para lograr los objetivos empresariales de su organización.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427944?learn=on)
 
@@ -48,11 +48,11 @@ Descubra qué es AEM Assets y cómo se puede utilizar para lograr los objetivos 
    </a>
    <div>
       <a href="./creative-workflows/aem-desktop-app.md">
-      AEM <strong>Uso de la aplicación de escritorio de</strong>
+      <strong>Uso de la aplicación de escritorio de AEM</strong>
       </a>
    </div>
    <p>
-      AEM <em>Acceder a recursos en el escritorio directamente desde el equipo de escritorio</em>
+      <em>Acceda a recursos en AEM directamente desde el escritorio</em>
    </p>
 </td>
 <td>
@@ -61,7 +61,7 @@ Descubra qué es AEM Assets y cómo se puede utilizar para lograr los objetivos 
    </a>
    <div>
       <a href="../assets-essentials/overview.md">
-      <strong>Introducción a los Assets Essentials</strong>
+      <strong>Introducción a Assets Essentials</strong>
       </a>
    </div>
    <p>
@@ -91,4 +91,4 @@ Descubra qué es AEM Assets y cómo se puede utilizar para lograr los objetivos 
 * [Tutoriales de AEM as a Cloud Service](/help/cloud-service/overview.md)
 * [Tutoriales de AEM Sites](/help/sites/overview.md)
 * [Tutoriales de AEM Forms](/help/forms/overview.md)
-* [AEM Tutoriales de fundaciones de](/help/foundation/overview.md)
+* [Tutoriales de AEM Foundation](/help/foundation/overview.md)

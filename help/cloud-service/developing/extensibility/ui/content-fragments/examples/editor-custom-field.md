@@ -1,8 +1,8 @@
 ---
 title: 'Consola de fragmento de contenido: campos personalizados'
-description: AEM Obtenga información sobre cómo crear un campo personalizado en el Editor de fragmentos de contenido de.
+description: Obtenga información sobre cómo crear un campo personalizado en el Editor de fragmentos de contenido de AEM.
 feature: Developer Tools, Content Fragments
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 role: Developer
 level: Intermediate
 doc-type: Tutorial
@@ -11,7 +11,7 @@ last-substantial-update: 2024-02-27T00:00:00Z
 jira: KT-14903
 thumbnail: KT-14903.jpeg
 exl-id: 563bab0e-21e3-487c-9bf3-de15c3a81aba
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 1%
@@ -20,17 +20,17 @@ ht-degree: 1%
 
 # Campos personalizados
 
-AEM Obtenga información sobre cómo crear campos personalizados en el Editor de fragmentos de contenido de.
+Aprenda a crear campos personalizados en el Editor de fragmentos de contenido de AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427585?learn=on)
 
-AEM Las extensiones de interfaz de usuario se deben desarrollar con el módulo [Adobe AEM React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html), ya que mantiene una apariencia coherente con el resto de los recursos, y también tiene una extensa biblioteca de funcionalidades prediseñadas, lo que reduce el tiempo de desarrollo.
+Las extensiones de la interfaz de usuario de AEM deben desarrollarse con el marco de trabajo [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html), ya que mantiene una apariencia coherente con el resto de AEM y también tiene una amplia biblioteca de funcionalidades prediseñadas, lo que reduce el tiempo de desarrollo.
 
 ## Punto de extensión
 
 Este ejemplo reemplaza un campo existente en el Editor de fragmentos de contenido con una implementación personalizada.
 
-| AEM Interfaz de usuario extendida | Punto de extensión |
+| IU de AEM extendida | Punto de extensión |
 | ------------------------ | --------------------- | 
 | [Editor de fragmentos de contenido](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [Procesamiento de elementos de formulario personalizado](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/custom-fields/) |
 
@@ -89,7 +89,7 @@ Esta ruta personalizada de `/sku-field` se asigna al componente `SkuField` y se 
 
 ### Registro de extensiones
 
-AEM `ExtensionRegistration.js`, asignado a la ruta index.html, es el punto de entrada para la extensión de la y define:
+`ExtensionRegistration.js`, asignado a la ruta index.html, es el punto de entrada para la extensión de AEM y define:
 
 + La definición del widget en la función `getDefinitions()` con los atributos `fieldNameExp` y `url`. La lista completa de atributos disponibles está disponible en la [Referencia de la API de procesamiento de elementos de formulario personalizados](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/custom-fields/#api-reference).
 + Valor de atributo `url`, una ruta de acceso URL relativa (`/index.html#/skuField`) para cargar la interfaz de usuario del campo.
@@ -132,10 +132,10 @@ export default ExtensionRegistration;
 
 ### Campo personalizado
 
-El componente React `SkuField` actualiza el Editor de fragmentos de contenido con una interfaz de usuario personalizada, usando el Espectro React de Adobe para su formulario selector. Los aspectos destacados incluyen:
+El componente React `SkuField` actualiza el Editor de fragmentos de contenido con una interfaz de usuario personalizada, usando React Spectrum de Adobe para su formulario de selector. Los aspectos destacados incluyen:
 
-+ AEM Se está utilizando `useEffect` para la inicialización y conexión con el Editor de fragmentos de contenido de la, con un estado de carga que se muestra hasta que se completa la instalación.
-+ Al procesarse dentro de un iFrame, ajusta dinámicamente el alto del iFrame mediante la función `onOpenChange` para dar cabida a la lista desplegable del Selector de espectro de reacción de Adobe.
++ Se está utilizando `useEffect` para la inicialización y conexión con el Editor de fragmentos de contenido de AEM, con un estado de carga que se muestra hasta que se completa la instalación.
++ Al procesarse dentro de un iFrame, ajusta dinámicamente el alto del iFrame mediante la función `onOpenChange` para dar cabida a la lista desplegable del Selector de espectro de React de Adobe.
 + Comunique las selecciones de campo de nuevo al host mediante `connection.host.field.onChange(value)` en la función `onSelectionChange`, asegurándose de que el valor seleccionado se valide y se guarde automáticamente según las directrices del modelo de fragmento de contenido.
 
 Los campos personalizados se representan dentro de un iFrame insertado en el Editor de fragmentos de contenido. La comunicación entre el código de campo personalizado y el editor de fragmentos de contenido se establece exclusivamente a través del objeto `connection`, establecido por la función `attach` desde el paquete `@adobe/uix-guest`.

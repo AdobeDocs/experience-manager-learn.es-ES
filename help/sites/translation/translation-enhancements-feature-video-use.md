@@ -1,7 +1,7 @@
 ---
-title: AEM Mejoras en la traducción de los informes de
-description: AEM AEM El marco de trabajo de traducción robusto de la permite que los proveedores de traducción admitidos traduzcan el contenido sin problemas. Obtenga información sobre las mejoras más recientes.
-version: 6.4, 6.5
+title: Mejoras de traducción en AEM
+description: El sólido marco de trabajo de traducción de AEM permite que los proveedores de traducción admitidos traduzcan sin problemas el contenido de AEM. Obtenga información sobre las mejoras más recientes.
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Localization
 feature: Multi Site Manager, Language Copy
 role: User
@@ -9,7 +9,7 @@ level: Beginner
 doc-type: Feature Video
 exl-id: 21633308-ffe4-4023-affe-59269504da69
 duration: 677
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 0%
@@ -18,23 +18,23 @@ ht-degree: 0%
 
 # Mejoras de traducción con Multi-Site Manager {#translation-enhancements}
 
-AEM AEM El marco de trabajo de traducción robusto de la permite que los proveedores de traducción admitidos traduzcan el contenido sin problemas.
+El sólido marco de trabajo de traducción de AEM permite que los proveedores de traducción admitidos traduzcan sin problemas el contenido de AEM.
 
-## AEM Mejoras en la traducción en 6.5
+## Mejoras de traducción en AEM 6.5
 
 >[!VIDEO](https://video.tv.adobe.com/v/27405?quality=12&learn=on)
 
-AEM Las mejoras en la traducción de.5 incluyen:
+Las mejoras en la traducción de AEM 6.5 incluyen:
 
 **Aprobar automáticamente los trabajos de traducción**: el indicador de aprobación en el trabajo de traducción es una propiedad binaria. No impulsa ni integra flujos de trabajo de revisión y aprobación predeterminados. Para que el número de pasos de un trabajo de traducción sea mínimo, está establecido de forma predeterminada en &quot;aprobar automáticamente&quot; en [!UICONTROL Propiedades avanzadas] de un proyecto de traducción. Si su organización requiere aprobación para un trabajo de traducción, puede desmarcar la opción &quot;aprobar automáticamente&quot; en [!UICONTROL Propiedades avanzadas] de un proyecto de traducción.
 
 **Eliminar automáticamente los lanzamientos de traducción**: en lugar de eliminar manualmente los lanzamientos de traducción en la administración de lanzamientos después del hecho, ahora es posible eliminar automáticamente los lanzamientos de traducción después de promocionarlos.
 
-AEM **Exportar objetos de traducción en formato JSON**: la versión 6.4 y las versiones anteriores de los objetos de traducción admiten los formatos XML y XLIFF. Ahora puede configurar el formato de exportación al formato JSON mediante la consola del sistema [!UICONTROL Administrador de configuración]. Busque [!UICONTROL Configuración de la plataforma de traducción] y, a continuación, podrá seleccionar el formato de exportación como JSON.
+**Exportar objetos de traducción en formato JSON**: AEM 6.4 y versiones anteriores admiten los formatos XML y XLIFF de los objetos de traducción. Ahora puede configurar el formato de exportación al formato JSON mediante la consola del sistema [!UICONTROL Administrador de configuración]. Busque [!UICONTROL Configuración de la plataforma de traducción] y, a continuación, podrá seleccionar el formato de exportación como JSON.
 
-AEM AEM AEM AEM AEM **Actualizar el contenido de la traducción traducida en la memoria de traducción (TMS)**: el autor local que no tenga acceso a la traducción puede realizar actualizaciones en el contenido traducido, que ya se ha vuelto a introducir en la memoria de traducción (TMS), directamente en la memoria de traducción (TM), y actualizar las traducciones en la memoria de traducción (TMS) al volver a enviar el trabajo de traducción de TMS a la memoria de traducción (TMS), lo que significa que el autor no tiene acceso a la memoria de traducción (TMS). Para ello, debe actualizar las traducciones en la memoria de traducción ()
+**Actualizar contenido traducido de AEM en la memoria de traducción (TMS)**: un autor local que no tenga acceso a AEM puede realizar actualizaciones en el contenido traducido, que ya se ha introducido de nuevo en AEM, directamente en la memoria de traducción (TMS) y actualizar las traducciones en AEM reenviando el trabajo de traducción de TMS a AEM
 
-## AEM Mejoras en la traducción en 6.4
+## Mejoras de traducción en AEM 6.4
 
 >[!VIDEO](https://video.tv.adobe.com/v/21309?quality=12&learn=on)
 

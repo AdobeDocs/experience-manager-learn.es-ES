@@ -3,7 +3,7 @@ title: Espaciar los botones siguiente y anterior de la barra de herramientas
 description: Espaciar los botones de la barra de herramientas
 feature: Adaptive Forms
 type: Tutorial
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
@@ -11,7 +11,7 @@ jira: KT-9291
 exl-id: 1b55b6d2-3bab-4907-af89-c81a3b1a44cb
 last-substantial-update: 2019-07-07T00:00:00Z
 duration: 39
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 3%
@@ -27,7 +27,7 @@ Cuando se agregan botones Siguiente y Anterior a la barra de herramientas de AEM
 
 ## Aplicar estilo a la barra de herramientas
 
-El caso de uso anterior se puede realizar fácilmente mediante el editor de estilos. Una vez añadido el botón Anterior/Siguiente a la barra de herramientas, asegúrese de haber seleccionado la capa Estilo en el menú de edición. Con el modo de estilo seleccionado, seleccione la barra de herramientas para abrir su hoja de propiedades de estilo. Expanda la sección Dimension y posición y asegúrese de ver todas las propiedades. Establezca las siguientes propiedades
+El caso de uso anterior se puede realizar fácilmente mediante el editor de estilos. Una vez añadido el botón Anterior/Siguiente a la barra de herramientas, asegúrese de haber seleccionado la capa Estilo en el menú de edición. Con el modo de estilo seleccionado, seleccione la barra de herramientas para abrir su hoja de propiedades de estilo. Expanda la sección Dimensiones y posición y asegúrese de ver todas las propiedades. Establezca las siguientes propiedades
 * Dimensiones y posición
    * Anchura: 100%
    * Posición: relativa
@@ -39,7 +39,7 @@ Guarde los cambios
 Seleccione el botón Siguiente y asegúrese de abrir la hoja de propiedades de estilo del botón siguiente (no el texto del botón siguiente). Establezca las siguientes propiedades
 * Dimensiones y posición
    * posición: absoluta superior 1px derecha 1px
-* Borde
+* Border
    * Radio de borde: 4 px (superior, derecha, inferior, izquierda)
 
 Guarde los cambios

@@ -1,7 +1,7 @@
 ---
 title: Mapas del sitio
 description: Aprenda a impulsar su SEO creando mapas del sitio para AEM Sites.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Core Components
 topic: Content Management
 role: Developer
@@ -12,7 +12,7 @@ last-substantial-update: 2022-10-03T00:00:00Z
 doc-type: Technical Video
 exl-id: 40bb55f9-011d-4261-9f44-b1104a591252
 duration: 937
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 5%
@@ -33,7 +33,7 @@ Aprenda a impulsar su SEO creando mapas del sitio para AEM Sites.
 
 ### URL absolutas de mapa del sitio{#absolute-sitemap-urls}
 
-AEM El mapa del sitio que se está usando admite direcciones URL absolutas usando [Sling mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html). AEM AEM Para ello, cree nodos de asignación en los servicios de que generen mapas del sitio (normalmente, el servicio de Publish de).
+El mapa del sitio de AEM admite direcciones URL absolutas mediante [asignación de Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html). Para ello, cree nodos de asignación en los servicios de AEM que generan mapas del sitio (normalmente, el servicio Publicación de AEM).
 
 Un ejemplo de definición de nodo de asignación de Sling para `https://wknd.com` se puede definir en `/etc/map/https` de la siguiente manera:
 
@@ -50,7 +50,7 @@ La captura de pantalla siguiente ilustra una configuración similar para `http:/
 
 ### Configuración de OSGi del programador de mapa del sitio
 
-AEM Define la [configuración de fábrica de OSGi](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) para la frecuencia (mediante [expresiones cron](https://cron.help/)) en la que los mapas del sitio se vuelven a generar y se almacenan en caché en la caché de la.
+Define la [configuración de fábrica de OSGi](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) para la frecuencia (mediante [expresiones cron](https://cron.help/)) con la que los mapas del sitio se vuelven a generar y se almacenan en caché en AEM.
 
 `ui.config/src/main/jcr_content/apps/wknd/osgiconfig/config.publish`
 
@@ -77,7 +77,7 @@ Permitir solicitudes HTTP para los archivos de índice y mapa del sitio.
 
 ### Regla de reescritura del servidor web Apache
 
-AEM Asegúrese de que `.xml` solicitudes HTTP de mapa del sitio se enruten a la página de datos subyacente correcta. Si no se utiliza el acortamiento de URL, o si se utilizan asignaciones de Sling para lograr el acortamiento de URL, esta configuración no es necesaria.
+Asegúrese de que `.xml` solicitudes HTTP de mapa del sitio se enruten a la página de AEM subyacente correcta. Si no se utiliza el acortamiento de URL, o si se utilizan asignaciones de Sling para lograr el acortamiento de URL, esta configuración no es necesaria.
 
 `dispatcher/src/conf.d/rewrites/rewrite.rules`
 
@@ -89,7 +89,7 @@ RewriteRule ^/(.*)$ /content/${CONTENT_FOLDER_NAME}/$1 [PT,L]
 
 ## Recursos
 
-+ AEM [Documentación de mapa del sitio de](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html?lang=en)
++ [Documentación de mapa del sitio AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html?lang=en)
 + [Documentación de mapa del sitio Apache Sling](https://github.com/apache/sling-org-apache-sling-sitemap#readme)
 + [Documentación de mapa del sitio de Sitemap.org](https://www.sitemaps.org/protocol.html)
 + [Documentación del archivo de índice de mapa de sitios Sitemap.org](https://www.sitemaps.org/protocol.html#index)

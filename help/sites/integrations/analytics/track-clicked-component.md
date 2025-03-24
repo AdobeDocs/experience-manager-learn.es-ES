@@ -1,7 +1,7 @@
 ---
 title: Seguimiento de componentes en los que se hizo clic con Adobe Analytics
 description: Utilice la capa de datos del cliente de Adobe impulsada por evento para rastrear clics de componentes específicos en un sitio de Adobe Experience Manager. Aprenda a utilizar las reglas de etiquetas para detectar estos eventos y enviar datos a un grupo de informes de Adobe Analytics mediante una señalización de seguimiento de vínculos.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Integrations
 feature: Adobe Client Data Layer
 role: Developer
@@ -12,7 +12,7 @@ badgeIntegration: label="Integración" type="positive"
 doc-type: Tutorial
 exl-id: ab051363-d3e8-4c07-b1fa-3a5d24757496
 duration: 394
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1750'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 # Seguimiento de componentes en los que se hizo clic con Adobe Analytics
 
-Use la capa de datos del cliente de Adobe AEM [con componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=es) impulsada por eventos para rastrear clics de componentes específicos en un sitio de Adobe Experience Manager. Obtenga información sobre cómo utilizar las reglas en la propiedad tag para detectar eventos de clic, filtrar por componente y enviar los datos a un Adobe Analytics con una señalización de seguimiento de vínculos.
+Utilice la capa de datos del cliente de Adobe [impulsada por evento con componentes principales de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=es) para rastrear clics de componentes específicos en un sitio de Adobe Experience Manager. Obtenga información sobre cómo utilizar las reglas en la propiedad tag para detectar eventos de clic, filtrar por componente y enviar los datos a un Adobe Analytics con una señalización de seguimiento de vínculos.
 
 ## Lo que va a generar {#what-build}
 
@@ -41,9 +41,9 @@ Este tutorial es una continuación de [Recopilar datos de página con Adobe Anal
 
 * Una **propiedad de etiquetas** con la [extensión de Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html) habilitada
 * **Adobe Analytics**: ID del grupo de informes de prueba/desarrollo y servidor de seguimiento. Consulte la siguiente documentación para [crear un grupo de informes](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html).
-* Extensión de explorador [Experience Platform AEM Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) configurada con su propiedad de etiquetas cargada en el [sitio WKND](https://wknd.site/us/es.html) o un sitio de con la capa de datos de Adobe habilitada.
+* Extensión de explorador [Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) configurada con su propiedad de etiquetas cargada en el [sitio WKND](https://wknd.site/us/es.html) o un sitio AEM con la capa de datos de Adobe habilitada.
 
-## Inspect: Esquema de botón y teaser
+## Inspeccionar el esquema de Botón y Teaser
 
 Antes de crear reglas en la propiedad de etiqueta, es útil revisar el esquema [para Button y Teaser](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#item) e inspeccionarlos en la implementación de la capa de datos.
 
@@ -83,17 +83,17 @@ Antes de crear reglas en la propiedad de etiqueta, es útil revisar el esquema [
 
    Los detalles de los datos anteriores se basan en el [Esquema de componente/elemento del contenedor](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#item). La nueva regla de etiquetas utiliza este esquema.
 
-## Crear una regla en la que se hizo clic
+## Crear una regla en la que se hizo clic CTA
 
 La capa de datos del cliente de Adobe es una capa de datos impulsada por **event**. Cada vez que se hace clic en un componente principal, se envía un evento `cmp:click` a través de la capa de datos. Para escuchar el evento `cmp:click`, vamos a crear una regla
 
-1. Vaya a Experience Platform AEM y luego a la propiedad de etiquetas integrada con el sitio de.
+1. Vaya a Experience Platform y a la propiedad de etiquetas integrada con el sitio de AEM.
 1. Vaya a la sección **Reglas** en la interfaz de usuario de la propiedad de etiquetas y haga clic en **Agregar regla**.
-1. Asigne un nombre a la regla **CTA en la que se hizo clic**.
+1. Asigne un nombre a la regla **CTA donde se hizo clic**.
 1. Haga clic en **Eventos** > **Agregar** para abrir el asistente de **Configuración de eventos**.
 1. Para el campo **Tipo de evento**, seleccione **Código personalizado**.
 
-   ![Asigne un nombre a la regla CTA en la que se hizo clic y agregue el evento de código personalizado](assets/track-clicked-component/custom-code-event.png)
+   ![Asigne un nombre a la regla en la que CTA hizo clic y agregue el evento de código personalizado](assets/track-clicked-component/custom-code-event.png)
 
 1. Haga clic en **Abrir editor** en el panel principal e introduzca el siguiente fragmento de código:
 
@@ -147,21 +147,21 @@ La capa de datos del cliente de Adobe es una capa de datos impulsada por **event
 
    El objeto `event` se ha pasado desde el método `trigger()` llamado en el evento personalizado. El objeto `component` es el estado actual del componente derivado del método de la capa de datos `getState()` y es el elemento que activó el clic.
 
-1. AEM Guarde los cambios y ejecute una [compilación](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) en la propiedad de etiquetas para promocionar el código al [entorno](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=es) utilizado en el sitio de la.
+1. Guarde los cambios y ejecute una [compilación](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) en la propiedad de etiquetas para promocionar el código al [entorno](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=es) utilizado en su sitio de AEM.
 
    >[!NOTE]
    >
-   > Puede resultar útil usar el [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) para cambiar el código incrustado a un entorno **Development**.
+   > Puede resultar útil usar [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) para cambiar el código incrustado a un entorno **Development**.
 
 1. Vaya al [sitio WKND](https://wknd.site/us/es.html) y abra las herramientas para desarrolladores para ver la consola. Seleccione también la casilla de verificación **Conservar registro**.
 
 1. Haga clic en uno de los botones de CTA **Teaser** o **Button** para desplazarse a otra página.
 
-   ![Botón CTA para hacer clic](assets/track-clicked-component/cta-button-to-click.png)
+   ![Botón de CTA donde hacer clic](assets/track-clicked-component/cta-button-to-click.png)
 
 1. Observe en la consola del desarrollador que la regla **CTA Clicked** se ha activado:
 
-   ![Se hizo clic en el botón CTA](assets/track-clicked-component/cta-button-clicked-log.png)
+   ![Se Hizo Clic En El Botón CTA](assets/track-clicked-component/cta-button-clicked-log.png)
 
 ## Crear elementos de datos
 
@@ -169,7 +169,7 @@ A continuación, cree elementos de datos para capturar el ID y el título del co
 
 ### ID de componente
 
-1. Vaya a Experience Platform AEM y luego a la propiedad de etiquetas integrada con el sitio de.
+1. Vaya a Experience Platform y a la propiedad de etiquetas integrada con el sitio de AEM.
 1. Vaya a la sección **Elementos de datos** y haga clic en **Agregar nuevo elemento de datos**.
 1. Para el campo **Nombre**, escriba **ID de componente**.
 1. Para el campo **Tipo de elemento de datos**, seleccione **Código personalizado**.
@@ -207,15 +207,15 @@ A continuación, cree elementos de datos para capturar el ID y el título del co
 
 1. Guarde los cambios.
 
-## Añadir una condición a la regla en la que se hizo clic en la CTA
+## Añadir una condición a la regla en la que se hizo clic en CTA
 
-A continuación, actualice la regla **CTA Clicked** para asegurarse de que la regla solo se active cuando el evento `cmp:click` se active para un **Teaser** o un **Botón**. Dado que la CTA del teaser se considera un objeto independiente en la capa de datos, es importante comprobar que el elemento principal para verificar que proviene de un teaser.
+A continuación, actualice la regla **CTA Clicked** para asegurarse de que la regla solo se active cuando el evento `cmp:click` se active para un **Teaser** o un **Botón**. Dado que CTA del teaser se considera un objeto independiente en la capa de datos, es importante comprobar que el elemento principal para comprobar que proviene de un teaser.
 
-1. En la interfaz de usuario de la propiedad Tag, navegue hasta la regla **CTA en la que se hizo clic** creada anteriormente.
+1. En la interfaz de usuario de la propiedad Etiqueta, navegue hasta la regla **CTA en la que se hizo clic** creada anteriormente.
 1. En **Condiciones**, haga clic en **Agregar** para abrir el asistente de **Configuración de condición**.
 1. Para el campo **Tipo de condición**, seleccione **Código personalizado**.
 
-   ![Código personalizado de condición en la que se hizo clic](assets/track-clicked-component/custom-code-condition.png)
+   ![Código personalizado de condición en la que se hizo clic en CTA](assets/track-clicked-component/custom-code-condition.png)
 
 1. Haga clic en **Abrir editor** e introduzca lo siguiente en el editor de código personalizado:
 
@@ -233,15 +233,15 @@ A continuación, actualice la regla **CTA Clicked** para asegurarse de que la re
    return false;
    ```
 
-   El código anterior primero comprueba si el tipo de recurso era de **Button** o si el tipo de recurso era de una CTA dentro de un **Teaser**.
+   El código anterior primero comprueba si el tipo de recurso era de un **Button** o si el tipo de recurso era de un CTA dentro de un **Teaser**.
 
 1. Guarde los cambios.
 
 ## Establecer variables de Analytics y señalización de seguimiento de vínculos de déclencheur
 
-Actualmente, la regla **CTA en la que se hizo clic** simplemente genera una instrucción de consola. A continuación, use los elementos de datos y la extensión de Analytics para establecer las variables de Analytics como una **acción**. Vamos a definir una acción adicional para almacenar en déclencheur el **vínculo de seguimiento** y enviar los datos recopilados a Adobe Analytics.
+Actualmente, la regla **CTA Clicked** simplemente genera una instrucción de consola. A continuación, use los elementos de datos y la extensión de Analytics para establecer las variables de Analytics como una **acción**. Vamos a definir una acción adicional para almacenar en déclencheur el **vínculo de seguimiento** y enviar los datos recopilados a Adobe Analytics.
 
-1. En la regla **CTA Clicked**, **quitar** la acción **Core - Custom Code** (las instrucciones de la consola):
+1. En la regla **CTA Clicked**, **quite** la acción **Core - Custom Code** (las instrucciones de la consola):
 
    ![Quitar acción de código personalizado](assets/track-clicked-component/remove-console-statements.png)
 
@@ -254,7 +254,7 @@ Actualmente, la regla **CTA en la que se hizo clic** simplemente genera una inst
    * `prop8` - `%Component ID%`
    * `event8`
 
-   ![Definir prop. y eventos de eVar](assets/track-clicked-component/set-evar-prop-event.png)
+   ![Establecer prop y eventos de eVar](assets/track-clicked-component/set-evar-prop-event.png)
 
    >[!NOTE]
    >
@@ -270,7 +270,7 @@ Actualmente, la regla **CTA en la que se hizo clic** simplemente genera una inst
 
    ![Configuración de la señalización de vínculo de envío](assets/track-clicked-component/analytics-send-beacon-link-track.png)
 
-   La configuración anterior combina la variable dinámica del elemento de datos **Título del componente** y la cadena estática **CTA en la que se hizo clic**.
+   La configuración anterior combina la variable dinámica del elemento de datos **Component Title** y la cadena estática **CTA Clicked**.
 
 1. Guarde los cambios. La regla **CTA en la que se hizo clic** debe tener la configuración siguiente:
 
@@ -278,14 +278,14 @@ Actualmente, la regla **CTA en la que se hizo clic** simplemente genera una inst
 
    * **1.** Escuche el evento `cmp:click`.
    * **2.** Compruebe que el evento se activó mediante un **botón** o un **teaser**.
-   * **3.** configuró variables de Analytics para que hicieran un seguimiento de **ID de componente** como **eVar**, **prop** y **evento**.
+   * **3.** configuró variables de Analytics para rastrear el **ID de componente** como **eVar**, **prop** y un **evento**.
    * **4.** envía la señalización de seguimiento de vínculos de Analytics (y **no** la trata como una vista de página).
 
 1. Guarde todos los cambios y cree su biblioteca de etiquetas, promocionando al entorno adecuado.
 
 ## Validación de la señalización de seguimiento de vínculos y la llamada de Analytics
 
-Ahora que la regla **CTA en la que se hizo clic** envía la señalización de Analytics, debería poder ver las variables de seguimiento de Analytics mediante Experience Platform Debugger.
+Ahora que la regla **CTA ha hecho clic** envía la señalización de Analytics, debería poder ver las variables de seguimiento de Analytics mediante Experience Platform Debugger.
 
 1. Abra el [sitio WKND](https://wknd.site/us/es.html) en su explorador.
 1. Haga clic en el icono de Debugger ![Experience Platform Debugger](assets/track-clicked-component/experience-cloud-debugger.png) para abrir Experience Platform Debugger.
@@ -296,9 +296,9 @@ Ahora que la regla **CTA en la que se hizo clic** envía la señalización de An
 
 1. En el explorador, haga clic en uno de los botones de CTA **Teaser** o **Button** para desplazarse a otra página.
 
-   ![Botón CTA para hacer clic](assets/track-clicked-component/cta-button-to-click.png)
+   ![Botón de CTA donde hacer clic](assets/track-clicked-component/cta-button-to-click.png)
 
-1. Vuelva a Experience Platform Debugger y desplácese hacia abajo para expandir **Solicitudes de red** > *Su grupo de informes*. Debería poder encontrar el conjunto **eVar**, **prop** y **evento**.
+1. Vuelva a Experience Platform Debugger y desplácese hacia abajo para expandir **Solicitudes de red** > *Su grupo de informes*. Debería poder encontrar el conjunto **eVar**, **prop** y **event**.
 
    ![Eventos, evar y prop de Analytics rastreados al hacer clic](assets/track-clicked-component/evar-prop-link-clicked-tracked-debugger.png)
 
@@ -306,7 +306,7 @@ Ahora que la regla **CTA en la que se hizo clic** envía la señalización de An
 
    ![Haga clic en Vínculo de navegación en el pie de página](assets/track-clicked-component/click-navigation-link-footer.png)
 
-1. Observe que en la consola del explorador no se cumplió el mensaje *&quot;Código personalizado&quot; para la regla &quot;CTA en la que se hizo clic&quot;*.
+1. Observe que en la consola del explorador no se cumplió el mensaje *&quot;Código personalizado&quot; para la regla &quot;CTA en el que se hizo clic&quot;*.
 
    El mensaje anterior se debe a que el componente de navegación no almacena en déclencheur un evento `cmp:click` *pero* debido a [Condición de la regla](#add-a-condition-to-the-cta-clicked-rule) que comprueba el tipo de recurso para la que no se realiza ninguna acción.
 
@@ -316,4 +316,4 @@ Ahora que la regla **CTA en la que se hizo clic** envía la señalización de An
 
 ## Enhorabuena.
 
-Acaba de utilizar el Adobe impulsado por evento Capa de datos del cliente y Experience Platform AEM en para rastrear los clics de componentes específicos en un sitio de.
+Acaba de utilizar la capa de datos del cliente de Adobe impulsada por evento y la etiqueta de Experience Platform para rastrear los clics de componentes específicos en un sitio de AEM.

@@ -1,25 +1,25 @@
 ---
-title: AEM Explicación del visualizador de recursos con Dynamic Media de la
-description: AEM Las mejoras del visualizador de Dynamic Media AEM permiten a los autores de la definir y personalizar el modo en que se presentan los recursos a los usuarios del sitio web.
+title: Explicación del visualizador de recursos con AEM Dynamic Media
+description: Las mejoras del visualizador de Dynamic Media de AEM permiten a los autores de AEM definir y personalizar cómo se presentan los recursos a los usuarios del sitio web.
 sub-product: Experience Manager Assets
 feature: Viewer Presets, Image Profiles
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Content Management
 role: Developer
 level: Intermediate
 doc-type: Feature Video
 exl-id: db4fc561-2368-4df8-9b02-fc08afa00805
 duration: 254
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 0%
 
 ---
 
-# AEM Explicación del visualizador de recursos con Dynamic Media de la{#understanding-the-asset-viewer-with-aem-dynamic-media}
+# Explicación del visualizador de recursos con AEM Dynamic Media{#understanding-the-asset-viewer-with-aem-dynamic-media}
 
-AEM Las mejoras del visualizador de Dynamic Media AEM permiten a los autores de la definir y personalizar el modo en que se presentan los recursos a los usuarios del sitio web.
+Las mejoras del visualizador de Dynamic Media de AEM permiten a los autores de AEM definir y personalizar cómo se presentan los recursos a los usuarios del sitio web.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17783?quality=12&learn=on)
 

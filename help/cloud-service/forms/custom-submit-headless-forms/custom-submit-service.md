@@ -5,13 +5,13 @@ solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Adaptive Forms
 topic: Development
 jira: KT-13520
 exl-id: c23275d7-daf7-4a42-83b6-4d04b297c470
 duration: 115
-source-git-commit: b4df652fcda0af5d01077b97aa7fa17cfe2abf4b
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 0%
@@ -24,9 +24,9 @@ AEM Forms proporciona una serie de opciones de envío listas para usar que satis
 
 Para escribir un servicio de envío personalizado, se siguieron los siguientes pasos
 
-## AEM Crear proyecto de
+## Crear proyecto de AEM
 
-Si ya tiene un proyecto as a Cloud Service de AEM Forms, [puede pasar a escribir un servicio de envío personalizado](#Write-the-custom-submit-service)
+Si ya tiene un proyecto de AEM Forms as a Cloud Service, puede [ir directamente a escribir el servicio de envío personalizado](#Write-the-custom-submit-service)
 
 * Cree una carpeta llamada cloudmanager en la unidad c.
 * Vaya a la carpeta recién creada
@@ -35,7 +35,7 @@ Si ya tiene un proyecto as a Cloud Service de AEM Forms, [puede pasar a escribir
 
 ## Escribir el servicio de envío personalizado{#Write-the-custom-submit-service}
 
-AEM Inicie IntelliJ y abra el proyecto de. Cree una nueva clase Java llamada **HandleRegistrationFormSubmission**, como se muestra en la captura de pantalla siguiente
+Inicie IntelliJ y abra el proyecto de AEM. Cree una nueva clase Java llamada **HandleRegistrationFormSubmission**, como se muestra en la captura de pantalla siguiente
 ![servicio de envío personalizado](./assets/custom-submit-service.png)
 
 El siguiente código se escribió para implementar el servicio
@@ -107,7 +107,7 @@ El valor del elemento **submitService** debe coincidir con **serviceName = &quot
 ## Implemente el código en la instancia local de AEM Forms
 
 Antes de insertar los cambios en el repositorio de Cloud Manager, se recomienda implementar el código en la instancia de autor local preparada para la nube para probar el código. Asegúrese de que la instancia de autor se esté ejecutando.
-AEM Para implementar el código en la instancia de autor preparada para la nube, vaya a la carpeta raíz del proyecto de la y ejecute el siguiente comando
+Para implementar el código en la instancia de autor lista para la nube, vaya a la carpeta raíz del proyecto de AEM y ejecute el siguiente comando
 
 ```
 mvn clean install -PautoInstallSinglePackage
@@ -118,7 +118,7 @@ Esto implementará el código como un paquete único en la instancia de autor
 ## Inserte el código en Cloud Manager e implemente el código
 
 Después de comprobar el código en la instancia local, insértelo en la instancia de la nube.
-Inserte los cambios en el repositorio local de Git y luego en el repositorio de Cloud Manager. AEM Puede hacer referencia a los artículos [Configuración de Git](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/setup-git.html), [inserción del proyecto de la en el repositorio de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/push-project-to-cloud-manager-git.html) e [implementación en el entorno de desarrollo](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/deploy-to-dev-environment.html).
+Inserte los cambios en el repositorio local de Git y luego en el repositorio de Cloud Manager. Puede consultar los artículos [Configuración de Git](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/setup-git.html), [inserción del proyecto AEM en el repositorio de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/push-project-to-cloud-manager-git.html) e [implementación en el entorno de desarrollo](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/deploy-to-dev-environment.html).
 
 Una vez que la canalización se haya ejecutado correctamente, debe poder asociar la acción de envío del formulario al controlador de envío personalizado, como se muestra en la captura de pantalla siguiente
 ![acción de envío](./assets/configure-submit-action.png)

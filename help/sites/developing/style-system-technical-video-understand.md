@@ -1,15 +1,15 @@
 ---
-title: AEM Explicación de cómo codificar para el sistema de estilos de
-description: En este vídeo analizaremos la anatomía de CSS (o LESS) y JavaScript Adobe utilizados para aplicar estilo al componente de título principal de Experience Manager mediante el sistema de estilos, así como la forma en que se aplican estos estilos al HTML y al DOM.
+title: Cómo codificar para el sistema de estilos de AEM
+description: En este vídeo analizaremos la anatomía de CSS (o LESS) y JavaScript utilizados para aplicar estilo al componente de título principal de Adobe Experience Manager mediante el sistema de estilos, así como la forma en que estos estilos se aplican al HTML y al DOM.
 feature: Style System
-version: 6.4, 6.5, Cloud Service
+version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Intermediate, Experienced
 doc-type: Technical Video
 exl-id: 8fbc3819-3214-4c58-8629-a27eb6f0c545
 duration: 1005
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 0%
@@ -25,7 +25,7 @@ En este vídeo analizaremos la estructura del CSS (o [!DNL LESS]) y JavaScript u
 
 >[!VIDEO](https://video.tv.adobe.com/v/21538?quality=12&learn=on)
 
-AEM El paquete de proporcionado (**technical-review.sites.style-system-1.0.0.zip**) instala el estilo de título de ejemplo, las directivas de ejemplo para los componentes Contenedor de diseño y Título de We.Retail y una página de muestra.
+El paquete de AEM proporcionado (**technical-review.sites.style-system-1.0.0.zip**) instala el estilo de título de ejemplo, las directivas de ejemplo para los componentes Contenedor de diseño y Título de We.Retail y una página de muestra.
 
 [technical-review.sites.style-system-1.0.0.zip](assets/technical-review.sites.style-system-1.0.0.zip)
 
@@ -63,7 +63,7 @@ Para aquellos que prefieren CSS, debajo de este fragmento de código está el CS
 }
 ```
 
-El Experience Manager ha compilado de forma nativa el elemento [!DNL LESS] anterior en el siguiente CSS.
+Experience Manager compila de forma nativa el [!DNL LESS] anterior en el CSS siguiente.
 
 ```css
 /* CSS */
@@ -146,10 +146,10 @@ jQuery(function ($) {
 
 ## Prácticas recomendadas de desarrollo {#development-best-practices}
 
-### Prácticas recomendadas para HTML {#html-best-practices}
+### Prácticas recomendadas de HTML {#html-best-practices}
 
-* El HTML (generado mediante HTL) debe ser lo más estructuralmente semántico posible, evitando la agrupación/anidación innecesaria de elementos.
-* Los elementos HTML deben poder direccionarse mediante clases CSS de estilo BEM.
+* HTML (generado mediante HTL) debe ser lo más estructuralmente semántico posible; evitando la agrupación/anidación innecesaria de elementos.
+* Los elementos de HTML deben poder direccionarse mediante clases CSS de estilo BEM.
 
 **Bueno**: todos los elementos del componente se pueden dirigir mediante la notación BEM:
 
@@ -175,7 +175,7 @@ jQuery(function ($) {
 
 * Es mejor exponer más datos y ocultarlos que exponer demasiado pocos datos que requieran un futuro desarrollo back-end para exponerlos.
 
-   * La implementación de alternancias de contenido con capacidad de creación puede ayudar a mantener este HTML ágil, por lo que los autores pueden seleccionar qué elementos de contenido se escriben en el HTML. El puede ser especialmente importante a la hora de escribir imágenes en el HTML que pueden no utilizarse para todos los estilos.
+   * La implementación de alternancias de contenido con capacidad de creación puede ayudar a mantener esta HTML ágil, mediante la cual los autores pueden seleccionar qué elementos de contenido se escriben en HTML. puede ser especialmente importante a la hora de escribir imágenes en HTML que pueden no utilizarse en todos los estilos.
    * La excepción a esta regla se produce cuando los recursos caros, como las imágenes, se exponen de forma predeterminada, ya que las imágenes de evento ocultas por CSS se recuperan, en este caso, de forma innecesaria.
 
       * Los componentes de imagen modernos suelen utilizar JavaScript para seleccionar y cargar la imagen más adecuada para el caso de uso (ventanilla).
@@ -190,7 +190,7 @@ jQuery(function ($) {
 >
 >Todos los demás inquilinos de [BEM](https://en.bem.info/) deben estar alineados con.
 
-* AEM Use preprocesadores como [LESS](https://lesscss.org/) (compatible con el sistema de generación nativa) o [SCSS](https://sass-lang.com/) (requiere un sistema de generación personalizado) para permitir una definición CSS clara y la reutilización.
+* Use preprocesadores como [LESS](https://lesscss.org/) (compatible con AEM de forma nativa) o [SCSS](https://sass-lang.com/) (requiere un sistema de compilación personalizado) para permitir una definición CSS clara y la reutilización.
 
 * Mantenga la uniformidad en cuanto a peso/especificidad del selector. Esto ayuda a evitar y resolver conflictos en cascada de CSS difíciles de identificar.
 * Organice cada estilo en un archivo discreto.
@@ -239,12 +239,12 @@ Las prácticas recomendadas definidas en esta sección pertenecen a &quot;style-
 * Style-JavaScript debe utilizarse con prudencia y es un caso de uso minoritario.
 * Style-JavaScript debe utilizarse principalmente para manipular el DOM del componente para admitir el estilo mediante CSS.
 * Vuelva a evaluar el uso de Javascript si los componentes aparecerán muchas veces en una página y comprenda el coste de cálculo/extracción y de volver a dibujar.
-* AJAX Vuelva a evaluar el uso de Javascript si extrae nuevos datos o contenido de forma asíncrona (a través de la función de búsqueda) cuando el componente puede aparecer muchas veces en una página.
-* Gestionar las experiencias de Publish y Autor.
+* Vuelva a evaluar el uso de Javascript si extrae nuevos datos o contenido de forma asíncrona (mediante AJAX) cuando el componente puede aparecer muchas veces en una página.
+* Gestionar las experiencias de publicación y creación.
 * Vuelva a utilizar style-Javascript cuando sea posible.
    * Por ejemplo, si varios estilos de un componente requieren que su imagen se mueva a una imagen de fondo, el style-JavaScript se puede implementar una vez y adjuntarse a varios `BLOCK--MODIFIERs`.
 * Separe style-JavaScript de JavaScript funcional cuando sea posible.
-* Evalúe el coste de JavaScript frente a la manifestación de estos cambios DOM en el HTML directamente a través de HTL.
+* Evalúe el coste de JavaScript frente a la manifestación de estos cambios de DOM en HTML directamente a través de HTL.
    * Cuando un componente que utiliza style-JavaScript requiera una modificación del lado del servidor, evalúe si la manipulación de JavaScript se puede realizar en este momento y cuáles son los efectos/ramificaciones para el rendimiento y la compatibilidad del componente.
 
 #### Consideraciones de rendimiento {#performance-considerations}
@@ -257,7 +257,7 @@ Las prácticas recomendadas definidas en esta sección pertenecen a &quot;style-
 ## Recursos adicionales {#additional-resources}
 
 * [Documentación del sistema de estilos](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/style-system.html)
-* AEM [Creando bibliotecas de cliente de](https://helpx.adobe.com/es/experience-manager/6-5/sites/developing/using/clientlibs.html)
+* [Creando bibliotecas de cliente de AEM](https://helpx.adobe.com/es/experience-manager/6-5/sites/developing/using/clientlibs.html)
 * [Sitio web de documentación de BEM (Modificador de elementos de bloque)](https://getbem.com/)
 * [MENOS sitio web de documentación](https://lesscss.org/)
 * [sitio web jQuery](https://jquery.com/)

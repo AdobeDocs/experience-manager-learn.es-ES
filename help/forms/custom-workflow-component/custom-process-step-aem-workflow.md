@@ -2,14 +2,14 @@
 title: Implementación del paso de proceso personalizado con cuadro de diálogo
 description: Escribir archivos adjuntos de formularios adaptables en el sistema de archivos mediante el paso de proceso personalizado
 feature: Workflow
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 last-substantial-update: 2021-06-09T00:00:00Z
 exl-id: 149d2c8c-bf44-4318-bba8-bec7e25da01b
 duration: 135
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Se requieren los siguientes pasos para escribir la clase java e implementarla co
 
 ## Crear proyecto de Maven
 
-El primer paso es crear un proyecto de Maven utilizando el Arquetipo de Maven de Adobe adecuado. Los pasos detallados se enumeran en este [artículo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Una vez que tenga el proyecto de Maven importado en Eclipse, estará listo para empezar a escribir el primer componente OSGi que se pueda utilizar en el paso del proceso.
+El primer paso es crear un proyecto de Maven utilizando el arquetipo de Maven de Adobe adecuado. Los pasos detallados se enumeran en este [artículo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Una vez que tenga el proyecto de Maven importado en Eclipse, estará listo para empezar a escribir el primer componente OSGi que se pueda utilizar en el paso del proceso.
 
 
 ### Crear clase que implemente WorkflowProcess
@@ -32,7 +32,7 @@ El primer paso es crear un proyecto de Maven utilizando el Arquetipo de Maven de
 Abra el proyecto de Maven en el IDE de Eclipse. Expandir la carpeta **projectname** > **core**. Expanda la carpeta src/main/java. Debería ver un paquete que termina con &quot;core&quot;. Cree una clase Java que implemente WorkflowProcess en este paquete. Deberá anular el método de ejecución. La firma del método execute es la siguiente
 public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments)throws WorkflowException
 
-AEM En este tutorial, vamos a escribir los archivos adjuntos agregados al formulario adaptable en el sistema de archivos como parte del flujo de trabajo de la.
+En este tutorial, vamos a escribir los archivos adjuntos agregados al formulario adaptable en el sistema de archivos como parte del flujo de trabajo de AEM.
 
 Para aplicar este caso de uso, se escribió la siguiente clase java
 
@@ -118,9 +118,9 @@ public class WriteFormAttachmentsToFileSystem implements WorkflowProcess {
 ```
 
 
-* AEM attachmentsPath: es la misma ubicación que especificó en el formulario adaptable cuando configuró la acción de envío del formulario adaptable para invocar el flujo de trabajo de la. AEM Este es un nombre de la carpeta en la que desea que se guarden los archivos adjuntos en relación con la carga útil del flujo de trabajo.
+* attachmentsPath: es la misma ubicación que especificó en el formulario adaptable cuando configuró la acción de envío del formulario adaptable para invocar el flujo de trabajo de AEM. Este es un nombre de la carpeta en la que desea que se guarden los archivos adjuntos en AEM en relación con la carga útil del flujo de trabajo.
 
-* AEM saveToLocation: es la ubicación en la que desea que se guarden los archivos adjuntos en el sistema de archivos del servidor de la.
+* saveToLocation: es la ubicación en la que desea guardar los archivos adjuntos en el sistema de archivos del servidor de AEM.
 
 Estos dos valores se pasan como argumentos de proceso mediante el cuadro de diálogo del componente de flujo de trabajo
 

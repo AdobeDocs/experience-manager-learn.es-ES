@@ -1,7 +1,7 @@
 ---
 title: Uso compartido de recursos Commons Asset Kit
 description: Aprenda a utilizar el kit de recursos de Asset Share Common para generar páginas web personalizadas y compartibles que enumeran recursos de carpetas o colecciones de AEM Assets.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Content Management
 feature: Asset Distribution
 role: Admin, Architect, Developer, User
@@ -12,7 +12,7 @@ jira: KT-11868
 thumbnail: 3415467.jpeg
 exl-id: fb8adf75-02d7-44e5-a84e-e0731100dc58
 duration: 643
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '71'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Uso compartido de recursos Commons Asset Kit
 
-Aprenda a utilizar [kit de recursos](https://opensource.adobe.com/asset-share-commons/pages/asset-kit/overview/) de Asset Share Common para generar páginas web personalizadas y compartibles que enumeran recursos de carpetas o colecciones de AEM Assets.
+Aprenda a utilizar [kit de recursos](https://opensource.adobe.com/asset-share-commons/pages/asset-kit/overview/) de Asset Share Common para generar páginas web personalizadas que se pueden compartir y que enumeran recursos de colecciones o carpetas de AEM Assets.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415467?quality=12&learn=on)
 

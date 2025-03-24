@@ -1,7 +1,7 @@
 ---
 title: Análisis de proporción de aciertos de caché de CDN
 description: Obtenga información sobre cómo analizar los registros de CDN proporcionados por AEM as a Cloud Service. Obtenga información, como la proporción de visitas en caché y las direcciones URL principales de los tipos de caché MISS y PASS para fines de optimización.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Operations, CDN Cache
 topic: Administration, Performance
 role: Admin, Architect, Developer
@@ -12,7 +12,7 @@ jira: KT-13312
 thumbnail: KT-13312.jpeg
 exl-id: 43aa7133-7f4a-445a-9220-1d78bb913942
 duration: 276
-source-git-commit: 4111ae0cf8777ce21c224991b8b1c66fb01041b3
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1476'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Análisis de proporción de aciertos de caché de CDN
 
-AEM El contenido almacenado en caché en la CDN reduce la latencia experimentada por los usuarios del sitio web, que no necesitan esperar a que la solicitud vuelva a Apache/Dispatcher o a publicar en el servidor de correo electrónico o en la interfaz de usuario de la red (CDN). Con esto en mente, vale la pena optimizar la proporción de visitas de caché de CDN para maximizar la cantidad de contenido almacenable en caché en la CDN.
+El contenido almacenado en caché en la CDN reduce la latencia experimentada por los usuarios del sitio web, que no necesitan esperar a que la solicitud vuelva a Apache/Dispatcher o a AEM Publish. Con esto en mente, vale la pena optimizar la proporción de visitas de caché de CDN para maximizar la cantidad de contenido almacenable en caché en la CDN.
 
 Aprenda a analizar los **registros de CDN** proporcionados por AEM as a Cloud Service y a obtener perspectivas como **proporción de visitas en caché** y **URL principales de _MISS_ y _PASS_ tipos de caché**, con fines de optimización.
 
@@ -30,11 +30,11 @@ Los registros de CDN están disponibles en formato JSON, que contiene varios cam
 
 | Valor posible de estado de caché </br> | Descripción |
 |------------------------------------|:-----------------------------------------------------:|
-| VISITA | AEM Los datos solicitados están _encontrados en la caché de la CDN y no requiere realizar una solicitud fetch_ al servidor de la. |
-| SEÑORITA | AEM Los datos solicitados son _no encontrados en la caché de la red de distribución de contenido (CDN) y deben solicitarse_ al servidor de la red de distribución de contenido (). |
-| PASE | AEM Los datos solicitados están _explícitamente configurados para no almacenarse en caché_ y siempre se recuperarán del servidor de la. |
+| VISITA | Los datos solicitados están _encontrados en la caché de CDN y no requiere realizar una solicitud fetch_ al servidor de AEM. |
+| SEÑORITA | Los datos solicitados son _no se encontraron en la caché de CDN y deben solicitarse_ al servidor de AEM. |
+| PASE | Los datos solicitados están _explícitamente configurados para no almacenarse en caché_ y siempre se recuperarán del servidor de AEM. |
 
-AEM Para los fines de este tutorial, el [proyecto WKND de](https://github.com/adobe/aem-guides-wknd) se implementa en el entorno de AEM as a Cloud Service y se activa una pequeña prueba de rendimiento con [Apache JMeter](https://jmeter.apache.org/).
+Para los fines de este tutorial, el [proyecto WKND de AEM](https://github.com/adobe/aem-guides-wknd) se ha implementado en el entorno de AEM as a Cloud Service y se ha activado una pequeña prueba de rendimiento con [Apache JMeter](https://jmeter.apache.org/).
 
 Este tutorial está estructurado para guiarle a través del siguiente proceso:
 
@@ -52,7 +52,7 @@ Para descargar los registros de CDN, siga estos pasos:
 
    ![Descargar registros - Cloud Manager](assets/cdn-logs-analysis/download-logs.png){width="500" zoomable="yes"}
 
-1. En el cuadro de diálogo **Descargar registros**, seleccione el servicio **Publish** del menú desplegable y, a continuación, haga clic en el icono de descarga situado junto a la fila **CDN**.
+1. En el cuadro de diálogo **Descargar registros**, seleccione el servicio **Publicar** del menú desplegable y, a continuación, haga clic en el icono de descarga situado junto a la fila **CDN**.
 
    ![Registros de CDN: Cloud Manager](assets/cdn-logs-analysis/download-cdn-logs.png){width="500" zoomable="yes"}
 
@@ -61,7 +61,7 @@ Si el archivo de registro descargado es de _today_, la extensión de archivo es 
 
 ## Analizar registros de CDN descargados
 
-Para obtener información, como la proporción de visitas en caché y las direcciones URL principales de los tipos de caché MISS y PASS, analice el archivo de registro de CDN descargado. Estas perspectivas ayudan a optimizar la [configuración de caché de CDN](https://experienceleague.adobe.com/es_es/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching) y a mejorar el rendimiento del sitio.
+Para obtener información, como la proporción de visitas en caché y las direcciones URL principales de los tipos de caché MISS y PASS, analice el archivo de registro de CDN descargado. Estas perspectivas ayudan a optimizar la [configuración de caché de CDN](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching) y a mejorar el rendimiento del sitio.
 
 Para analizar los registros de CDN, este tutorial presenta tres opciones:
 
@@ -71,7 +71,7 @@ Para analizar los registros de CDN, este tutorial presenta tres opciones:
 
 ### Opción 1: Uso de herramientas de tablero ELK
 
-La pila [ELK](https://www.elastic.co/elastic-stack) es un conjunto de herramientas que proporcionan una solución escalable para buscar, analizar y visualizar los datos. Consiste en Elasticsearch, Logstash y Kibana.
+La pila [ELK](https://www.elastic.co/elastic-stack) es un conjunto de herramientas que proporcionan una solución escalable para buscar, analizar y visualizar los datos. Consta de Elasticsearch, Logstash y Kibana.
 
 Para identificar los detalles clave, usemos el proyecto [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling). Este proyecto proporciona un contenedor Docker de la pila ELK y un panel preconfigurado de Kibana para analizar los registros de CDN.
 
@@ -153,18 +153,18 @@ Para aquellos que prefieren no instalar software localmente (es decir, la herram
 
 #### Descarga del archivo interactivo de Python Notebook
 
-AEM En primer lugar, descargue el archivo [Análisis de registros de CDN - Jupyter Notebook](./assets/cdn-logs-analysis/aemcs_cdn_logs_analysis.ipynb) de -as-a-CloudService, que le ayudará con el análisis de registros de CDN. Este archivo &quot;Interactive Python Notebook&quot; se explica por sí mismo, sin embargo, los aspectos destacados de cada sección son:
+En primer lugar, descargue el archivo [AEM-as-a-CloudService - Análisis de registros de CDN - Jupyter Notebook](./assets/cdn-logs-analysis/aemcs_cdn_logs_analysis.ipynb), que le ayudará con el análisis de registros de CDN. Este archivo &quot;Interactive Python Notebook&quot; se explica por sí mismo, sin embargo, los aspectos destacados de cada sección son:
 
 - **Instalar bibliotecas adicionales**: instala las bibliotecas de `termcolor` y `tabulate` Python.
 - **Cargar registros de CDN**: carga el archivo de registro de CDN usando el valor de variable `log_file`; asegúrese de actualizar su valor. También transforma este registro de CDN en [Pandas DataFrame](https://pandas.pydata.org/docs/reference/frame.html).
-- **Realizar análisis**: el primer bloque de código es _Mostrar resultado del análisis para el total, el HTML, JS/CSS y las solicitudes de imagen_; proporciona gráficos circulares, de barras y de porcentaje de proporción de aciertos de caché.
-El segundo bloque de código es _Las cinco direcciones URL principales de solicitud MISS y PASS para HTML, JS/CSS e imagen_; muestra las direcciones URL y sus recuentos en formato de tabla.
+- **Realizar análisis**: el primer bloque de código es _Mostrar resultado del análisis para el total, HTML, JS/CSS y solicitudes de imagen_; proporciona gráficos circulares, de barras y de porcentaje de proporción de aciertos de caché.
+El segundo bloque de código es _Las cinco direcciones URL principales de solicitud MISS y PASS para HTML, JS/CSS e Image_; muestra las direcciones URL y sus recuentos en formato de tabla.
 
 #### Ejecución de Jupyter Notebook
 
 A continuación, ejecute Jupyter Notebook en Adobe Experience Platform siguiendo estos pasos:
 
-1. Inicie sesión en [Adobe Experience Cloud](https://experience.adobe.com/), en la página de inicio > sección **Acceso rápido** > haga clic en el **Experience Platform**
+1. Inicie sesión en [Adobe Experience Cloud](https://experience.adobe.com/), en la página de inicio > sección **Acceso rápido** > haga clic en **Experience Platform**
 
    ![Experience Platform](assets/cdn-logs-analysis/experience-platform.png){width="500" zoomable="yes"}
 
@@ -186,11 +186,11 @@ A continuación, ejecute Jupyter Notebook en Adobe Experience Platform siguiendo
 
    ![Actualización del valor del archivo de registro del bloc de notas](assets/cdn-logs-analysis/notebook-run-cell.png){width="500" zoomable="yes"}
 
-1. Después de ejecutar **Mostrar resultado del análisis para las celdas de código de Total, HTML, JS/CSS y Solicitudes de imagen**, el resultado muestra los gráficos circulares, de barras y de porcentaje de proporción de aciertos de caché.
+1. Después de ejecutar **Mostrar resultado del análisis para las celdas de código de Total, HTML, JS/CSS y Solicitudes de imagen**, el resultado muestra los gráficos de porcentaje, barras y circulares de la proporción de visitas de caché.
 
    ![Actualización del valor del archivo de registro del bloc de notas](assets/cdn-logs-analysis/output-cache-hit-ratio.png){width="500" zoomable="yes"}
 
-1. Después de ejecutar las **5 principales URL de solicitud MISS y PASS para HTML, JS/CSS y celda de código Image**, el resultado muestra las 5 principales URL de solicitud MISS y PASS.
+1. Después de ejecutar las **5 principales URL de solicitud MISS y PASS para las celdas de código HTML, JS/CSS e Image**, el resultado muestra las 5 principales URL de solicitud MISS y PASS.
 
    ![Actualización del valor del archivo de registro del bloc de notas](assets/cdn-logs-analysis/output-top-urls.png){width="500" zoomable="yes"}
 
@@ -198,8 +198,8 @@ Puede mejorar Jupyter Notebook para analizar los registros de CDN en función de
 
 ## Optimizando la configuración de caché de CDN
 
-Después de analizar los registros de CDN, puede optimizar la configuración de la caché de CDN para mejorar el rendimiento del sitio. AEM La práctica recomendada es tener una proporción de visitas de caché del 90 % o superior.
+Después de analizar los registros de CDN, puede optimizar la configuración de la caché de CDN para mejorar el rendimiento del sitio. La práctica recomendada de AEM es tener una proporción de visitas de caché del 90 % o superior.
 
-Para obtener más información, consulte [Optimizar la configuración de la caché de CDN](https://experienceleague.adobe.com/es_es/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching).
+Para obtener más información, consulte [Optimizar la configuración de la caché de CDN](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching).
 
-AEM El proyecto de WKND tiene una configuración de CDN de referencia; para obtener más información, consulte [Configuración de CDN](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/available_vhosts/wknd.vhost#L137-L190) del archivo `wknd.vhost`.
+El proyecto WKND de AEM tiene una configuración CDN de referencia. Para obtener más información, consulte [Configuración CDN](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/available_vhosts/wknd.vhost#L137-L190) del archivo `wknd.vhost`.

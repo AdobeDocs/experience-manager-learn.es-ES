@@ -1,7 +1,7 @@
 ---
-title: Microservicios de AEM Assets y paso a AEM as a Cloud Service
-description: Descubra cómo los microservicios de asset compute AEM de AEM Assets as a Cloud Service le permiten generar de forma automática y eficaz cualquier representación de sus recursos, sustituyendo esta función del flujo de trabajo tradicional de la.
-version: Cloud Service
+title: AEM Assets Microservicios y paso a AEM as a Cloud Service
+description: AEM Assets Descubra cómo los microservicios de Asset Compute de as a Cloud Service le permiten generar de forma automática y eficaz cualquier representación de sus recursos, sustituyendo esta función del flujo de trabajo tradicional de AEM.
+version: Experience Manager as a Cloud Service
 feature: Asset Compute Microservices
 topic: Migration, Upgrade
 role: Developer
@@ -10,7 +10,7 @@ jira: KT-8635
 thumbnail: 336990.jpeg
 exl-id: 327e8663-086b-4b31-b159-a0cf30480b45
 duration: 973
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # Microservicios de AEM Assets: paso a AEM as a Cloud Service
 
-Descubra cómo los microservicios de asset compute AEM de AEM Assets as a Cloud Service le permiten generar de forma automática y eficaz cualquier representación de sus recursos, sustituyendo esta función del flujo de trabajo tradicional de la.
+AEM Assets Descubra cómo los microservicios de Asset Compute de as a Cloud Service le permiten generar de forma automática y eficaz cualquier representación de sus recursos, sustituyendo esta función del flujo de trabajo tradicional de AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336990?quality=12&learn=on)
 
@@ -27,13 +27,13 @@ Descubra cómo los microservicios de asset compute AEM de AEM Assets as a Cloud 
 
 ![Herramienta de migración del flujo de trabajo de recursos](./assets/asset-workflow-migration.png)
 
-Como parte de la refactorización del código base, use la [herramienta de migración del flujo de trabajo de recursos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/asset-workflow-migration-tool.html?lang=es) para migrar los flujos de trabajo existentes y usar los microservicios de Asset compute en AEM as a Cloud Service.
+Como parte de la refactorización del código base, use la [herramienta de migración del flujo de trabajo de recursos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/asset-workflow-migration-tool.html?lang=es) para migrar los flujos de trabajo existentes y usar los microservicios de Asset Compute en AEM as a Cloud Service.
 
 ## Actividades clave
 
-+ Utilice la herramienta [Migrador de flujo de trabajo de Adobe I/O](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationworkflow-migrator) para migrar flujos de trabajo de procesamiento de recursos y utilizar los microservicios de Asset compute.
++ Utilice la herramienta [Adobe I/O Workflow Migrator](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationworkflow-migrator) para migrar flujos de trabajo de procesamiento de recursos y utilizar los microservicios de Asset Compute.
 + Configure un [entorno de desarrollo local](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=es) e implemente los flujos de trabajo actualizados. Puede ser necesario un ajuste manual para flujos de trabajo complejos.
-+ AEM Siga iterando en un entorno de desarrollo local mediante el SDK de la hasta que el flujo de trabajo actualizado coincida con la paridad de características.
++ Continúe iterando en un entorno de desarrollo local utilizando AEM SDK hasta que el flujo de trabajo actualizado coincida con la paridad de características.
 + Implemente el código base actualizado en un entorno de desarrollo de AEM as a Cloud Service y continúe validando.
 
 ## Ejercicio práctico
@@ -60,7 +60,7 @@ Además, asegúrese de haber completado el ejercicio práctico anterior:
         <td style="width:100%;margin-bottom:1rem;">
             <div style="font-size:1.25rem;font-weight:400;">Prácticas con la carga de recursos</div>
             <p style="margin:1rem 0">
-                Explore cómo definir y asignar perfiles de procesamiento de AEM Assets AEM a carpetas y cargar recursos a las carpetas mediante el módulo CLI de npm de carga de Aem.
+                Explore cómo definir y asignar perfiles de procesamiento de AEM Assets a carpetas y cargar recursos en AEM mediante el módulo CLI aem-upload.
             </p>
             <a  rel="noreferrer"
                 target="_blank"

@@ -4,23 +4,23 @@ description: Utilice la operación invokeDDX para manipular los archivos PDF.
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Output Service
 topic: Development
 jira: KT-9958
 thumbnail: 332439.jpg
 duration: 50
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '126'
 ht-degree: 0%
 
 ---
 
-# Manipular archivos de PDF mediante el extremo DDX de invocación
+# Manipular archivos PDF mediante el extremo DDX de invocación
 
 
-El siguiente paso es realizar una llamada del POST HTTP al extremo con los parámetros necesarios. La plantilla y los archivos de datos se proporcionan como archivos de recursos. Las propiedades del PDF generado se especifican mediante el parámetro de la opción en la solicitud. La propiedad embedFonts se utiliza para incrustar fuentes personalizadas en el PDF generado. Siga [esta documentación](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-set-up.html) para implementar fuentes personalizadas en la instancia de nube de Forms. Las propiedades se especifican en el archivo de recursos options.json. Desde, el punto final tiene autenticación basada en token. Pasamos el token de acceso en el encabezado de la solicitud.
+El siguiente paso es realizar una llamada de POST HTTP al extremo con los parámetros necesarios. La plantilla y los archivos de datos se proporcionan como archivos de recursos. Las propiedades del PDF generado se especifican mediante el parámetro de la opción en la solicitud. La propiedad embedFonts se utiliza para incrustar fuentes personalizadas en el PDF generado. Siga [esta documentación](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-set-up.html) para implementar fuentes personalizadas en la instancia de nube de Forms. Las propiedades se especifican en el archivo de recursos options.json. Desde, el punto final tiene autenticación basada en token. Pasamos el token de acceso en el encabezado de la solicitud.
 
 El siguiente código se utilizó para generar el PDF combinando datos con la plantilla
 

@@ -2,14 +2,14 @@
 title: Dispatcher comprensión del almacenamiento en caché
 description: Comprenda cómo funciona el módulo de Dispatcher en su caché.
 topic: Administration, Performance
-version: 6.5
+version: Experience Manager 6.5
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
 doc-type: Article
 exl-id: 66ce0977-1b0d-4a63-a738-8a2021cf0bd5
 duration: 407
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1708'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Cuando cada solicitud atraviesa Dispatcher, las solicitudes siguen las reglas co
 
 >[!NOTE]
 >
->AEM Intencionalmente, mantenemos la carga de trabajo publicada separada de la carga de trabajo de autor porque cuando Apache busca un archivo en DocumentRoot, no sabe de qué instancia vino. Por lo tanto, aunque tenga la caché deshabilitada en el conjunto de servidores de creación, si el DocumentRoot del autor es el mismo que el editor, servirá los archivos de la caché cuando esté presente. Esto significa que servirá archivos de autor para desde la caché publicada y creará una experiencia de coincidencia de mezcla realmente horrible para sus visitantes.
+>Intencionalmente, mantenemos la carga de trabajo publicada separada de la carga de trabajo de autor porque cuando Apache busca un archivo en DocumentRoot, no sabe de qué instancia de AEM provino. Por lo tanto, aunque tenga la caché deshabilitada en el conjunto de servidores de creación, si el DocumentRoot del autor es el mismo que el editor, servirá los archivos de la caché cuando esté presente. Esto significa que servirá archivos de autor para desde la caché publicada y creará una experiencia de coincidencia de mezcla realmente horrible para sus visitantes.
 >
 >Mantener directorios DocumentRoot separados para contenido publicado diferente también es una muy mala idea. Tendrá que crear varios elementos en caché que no difieran entre sitios, como clientlibs, así como tener que configurar un agente de vaciado de replicación para cada DocumentRoot que configure. Aumentar la cantidad de vaciado con cada activación de página. Confíe en el área de nombres de los archivos y sus rutas de acceso en caché completas y evite varios DocumentRoot para los sitios publicados.
 
@@ -132,11 +132,11 @@ Las reglas de caché incluyen una instrucción que incluye el archivo `/etc/http
 ```
 
 En el caso de un autor, el contenido cambia todo el tiempo y a propósito. Solo desea almacenar en caché elementos que no cambiarán con frecuencia.
-AEM Tenemos reglas para almacenar en caché `/libs` porque forman parte de la instalación de línea de base de la aplicación y cambiarían hasta que haya instalado un paquete de servicio, un paquete de correcciones acumulativas, una actualización o una revisión. Por lo tanto, el almacenamiento en caché de estos elementos tiene mucho sentido y realmente tiene grandes beneficios de la experiencia de creación de los usuarios finales que utilizan el sitio.
+Tenemos reglas para almacenar en caché `/libs` porque forman parte de la instalación de AEM de línea de base y cambiarían hasta que haya instalado un paquete de servicio, un paquete de correcciones acumulativas, una actualización o una revisión. Por lo tanto, el almacenamiento en caché de estos elementos tiene mucho sentido y realmente tiene grandes beneficios de la experiencia de creación de los usuarios finales que utilizan el sitio.
 
 >[!NOTE]
 >
->Tenga en cuenta que estas reglas también almacenan en caché <b>`/apps`</b>. Aquí es donde se encuentra el código de aplicación personalizado. Si está desarrollando su código en esta instancia, resultará muy confuso cuando guarde el archivo y no vea si se refleja en la interfaz de usuario debido a que sirve una copia en caché. AEM La intención aquí es que si realiza una implementación del código en la que también lo haga con poca frecuencia y parte de los pasos de implementación deberían ser borrar la caché de creación. Una vez más, la ventaja es enorme, lo que hace que su código almacenable en caché se ejecute más rápido para los usuarios finales.
+>Tenga en cuenta que estas reglas también almacenan en caché <b>`/apps`</b>. Aquí es donde se encuentra el código de aplicación personalizado. Si está desarrollando su código en esta instancia, resultará muy confuso cuando guarde el archivo y no vea si se refleja en la interfaz de usuario debido a que sirve una copia en caché. La intención aquí es que si realiza una implementación del código en AEM, también sería poco frecuente y parte de los pasos de implementación deberían ser borrar la caché de creación. Una vez más, la ventaja es enorme, lo que hace que su código almacenable en caché se ejecute más rápido para los usuarios finales.
 
 ## ServeOnStale (también conocido como Serve on Stale / SOS)
 
@@ -144,7 +144,7 @@ Esta es una de esas joyas de una funcionalidad de Dispatcher. Si el editor está
 
 >[!NOTE]
 >
->Tenga en cuenta que si el procesador del editor tiene un tiempo de espera de socket o un mensaje de error 500, esta función no se almacenará en déclencheur. AEM Si no se puede acceder a la aplicación, esta función no hace nada
+>Tenga en cuenta que si el procesador del editor tiene un tiempo de espera de socket o un mensaje de error 500, esta función no se almacenará en déclencheur. Si AEM simplemente no está disponible, esta función no hace nada
 
 Esta configuración se puede establecer en cualquier conjunto de servidores, pero solo tiene sentido aplicarla en los archivos del conjunto de servidores de publicación. Este es un ejemplo de sintaxis de la función habilitada en un archivo de granja:
 
@@ -157,7 +157,7 @@ Esta configuración se puede establecer en cualquier conjunto de servidores, per
 
 >[!NOTE]
 >
->Uno de los comportamientos normales del módulo de Dispatcher AEM es que si una solicitud tiene un parámetro de consulta en el URI (que generalmente se muestra como `/content/page.html?myquery=value`), se omitirá el almacenamiento en caché del archivo y se dirigirá directamente a la instancia de. Está considerando esta solicitud como una página dinámica y no debería almacenarse en la caché. Esto puede causar efectos adversos en la eficacia de la caché.
+>Uno de los comportamientos normales del módulo de Dispatcher es que si una solicitud tiene un parámetro de consulta en el URI (que generalmente se muestra como `/content/page.html?myquery=value`), se omitirá el almacenamiento en caché del archivo y se dirigirá directamente a la instancia de AEM. Está considerando esta solicitud como una página dinámica y no debería almacenarse en la caché. Esto puede causar efectos adversos en la eficacia de la caché.
 
 Vea este [artículo](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-its-ignoreurlparams-rules-configured-in-an-allow-list-manner) que muestra la importancia de los parámetros de consulta para afectar el rendimiento del sitio.
 
@@ -232,7 +232,7 @@ Por lo tanto, esta es la fuente html de cada búsqueda:
 Si visitó `/search.html?q=fruit` primero, almacenaría en caché el HTML con resultados que muestran la fruta.
 
 Luego se visita `/search.html?q=vegetables` segundo, pero se muestran los resultados de la fruta.
-Esto se debe a que el parámetro de consulta de `q` se está omitiendo con respecto al almacenamiento en caché.  Para evitar este problema, tendrá que tomar nota de las páginas que representan diferentes HTML según los parámetros de la consulta y deniegan el almacenamiento en caché para ellos.
+Esto se debe a que el parámetro de consulta de `q` se está omitiendo con respecto al almacenamiento en caché.  Para evitar este problema, tendrá que tomar nota de las páginas que representan HTML diferentes según los parámetros de consulta y deniegan el almacenamiento en caché para ellos.
 
 Ejemplo:
 
@@ -254,7 +254,7 @@ Las páginas que utilizan parámetros de consulta a través de Javascript seguir
 
 Es bastante obvio que Dispatcher almacena en caché `.html` páginas y clientlibs (es decir, `.js`, `.css`), pero ¿sabía que también puede almacenar en caché encabezados de respuesta particulares junto al contenido en un archivo con el mismo nombre pero con una extensión de archivo `.h`? Esto permite la siguiente respuesta no solo al contenido, sino a los encabezados de respuesta que deben ir con él desde la caché.
 
-AEM Puede gestionar algo más que la codificación UTF-8
+AEM puede gestionar algo más que la codificación UTF-8
 
 A veces, los elementos tienen encabezados especiales que ayudan a controlar los detalles de codificación del TTL de la caché y las marcas de tiempo de la última modificación.
 
@@ -278,7 +278,7 @@ Este es un ejemplo de una granja con los encabezados para almacenar en caché es
 ```
 
 
-AEM En el ejemplo, se han configurado las para servir encabezados que la CDN busca para saber cuándo invalidar su caché. AEM Lo que significa que ahora puede dictar correctamente qué archivos se invalidan en función de los encabezados.
+En el ejemplo, han configurado AEM para que sirva encabezados que la CDN busca para saber cuándo invalidar su caché. Esto significa que ahora AEM puede dictar correctamente qué archivos se invalidan en función de los encabezados.
 
 >[!NOTE]
 >
@@ -286,7 +286,7 @@ AEM En el ejemplo, se han configurado las para servir encabezados que la CDN bus
 
 ## Invalidar automáticamente el período de gracia
 
-AEM En los sistemas que tienen mucha actividad de los autores que realizan muchas activaciones de la página, puede tener una condición de carrera en la que se producen invalidaciones repetidas. Las solicitudes de vaciado muy repetidas no son necesarias y se puede incorporar cierta tolerancia para no repetir un vaciado hasta que se haya borrado el período de gracia.
+En sistemas AEM con mucha actividad de autores que realizan muchas activaciones de página, puede tener una condición de carrera en la que se produzcan invalidaciones repetidas. Las solicitudes de vaciado muy repetidas no son necesarias y se puede incorporar cierta tolerancia para no repetir un vaciado hasta que se haya borrado el período de gracia.
 
 ### Ejemplo de cómo funciona esto:
 
@@ -316,7 +316,7 @@ Este es un ejemplo de la función que se está configurando en el archivo de con
 
 >[!NOTE]
 >
->AEM Tenga en cuenta que aún debe configurarse el envío de encabezados TTL para que Dispatcher los respete. Al alternar esta función, solo se permite que Dispatcher AEM sepa cuándo quitar los archivos para los que se han enviado encabezados de control de caché. AEM Si no empieza a enviar encabezados TTL, Dispatcher no hará nada especial aquí.
+>Tenga en cuenta que AEM aún debe configurarse para enviar encabezados TTL para que Dispatcher los respete. Alternar esta función solo permite a Dispatcher saber cuándo quitar los archivos para los que AEM tiene encabezados de control de caché de envío. Si AEM no empieza a enviar encabezados TTL, Dispatcher no hará nada especial aquí.
 
 ## Reglas de filtro de caché
 

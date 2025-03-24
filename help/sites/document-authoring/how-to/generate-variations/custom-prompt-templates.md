@@ -1,7 +1,7 @@
 ---
-title: 'Generate Variations: plantillas de solicitud personalizadas en Edge Delivery Services'
-description: Explore cómo crear las plantillas de solicitud personalizadas para Generar variaciones en la creación de documentos de Edge Delivery Services.
-version: Cloud Service
+title: 'Generar variaciones: plantillas de solicitud personalizadas en Edge Delivery Services'
+description: Aprenda a crear las plantillas de solicitud personalizadas para Generar variaciones en la creación de documentos de Edge Delivery Services.
+version: Experience Manager as a Cloud Service
 feature: Authoring
 topic: Content Management
 role: Admin, Developer, Leader, User
@@ -11,18 +11,18 @@ duration: 100
 last-substantial-update: 2024-04-11T00:00:00Z
 jira: KT-15325
 exl-id: 1d7acd03-9ad1-4e58-a3b5-58c03faeea9d
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '52'
 ht-degree: 0%
 
 ---
 
-# Generate Variations: plantillas de solicitud personalizadas en Edge Delivery Services
+# Generar variaciones: plantillas de solicitud personalizadas en Edge Delivery Services
 
 {{edge-delivery-services}}
 
-Explore cómo crear las plantillas de solicitud personalizadas para Generar variaciones en la creación de documentos de Edge Delivery Services.
+Aprenda a crear las plantillas de solicitud personalizadas para Generar variaciones en la creación de documentos de Edge Delivery Services.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428316/?learn=on)
 

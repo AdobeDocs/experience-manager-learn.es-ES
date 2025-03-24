@@ -1,7 +1,7 @@
 ---
-title: AEM Vaciado de Dispatcher
-description: AEM Obtenga información sobre cómo invalida los archivos de caché antiguos de Dispatcher.
-version: 6.5
+title: Vaciado de AEM Dispatcher
+description: Comprenda cómo AEM invalida los archivos de caché antiguos de Dispatcher.
+version: Experience Manager 6.5
 topic: Administration
 feature: Dispatcher
 role: Admin
@@ -10,7 +10,7 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 461873a1-1edf-43a3-b4a3-14134f855d86
 duration: 520
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '2225'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Cuando el editor recibe el archivo, tiene un agente de replicación configurado 
 ### AGENTE DE REPLICACIÓN DE AUTOR
 
 Estas son algunas capturas de pantalla de un agente de replicación estándar configurado
-AEM ![captura de pantalla de un agente de replicación estándar de la página web de /etc/replication.html](assets/disp-flushing/author-rep-agent-example.png "author-rep-agent-example")
+![captura de pantalla del agente de replicación estándar de la página web de AEM /etc/replication.html](assets/disp-flushing/author-rep-agent-example.png "author-rep-agent-example")
 
 Normalmente, hay uno o dos agentes de replicación configurados en el autor para cada editor para el que replican contenido.
 
@@ -54,11 +54,11 @@ Segundo, el agente inverso.  Esto es opcional y está configurado para comproba
 ### AGENTE DE REPLICACIÓN DEL EDITOR
 
 Estas son algunas capturas de pantalla de un agente de replicación de vaciado estándar
-AEM ![captura de pantalla de un agente de replicación de vaciado estándar de la página web de /etc/replication.html](assets/disp-flushing/publish-flush-rep-agent-example.png "publish-flush-rep-agent-example")
+![captura de pantalla del agente de replicación de vaciado estándar de la página web de AEM /etc/replication.html](assets/disp-flushing/publish-flush-rep-agent-example.png "publish-flush-rep-agent-example")
 
 ### VACIAR REPLICACIÓN DE DISPATCHER RECIBIENDO HOST VIRTUAL
 
-El módulo de Dispatcher busca encabezados particulares para saber cuándo una solicitud de POST AEM se tiene que pasar a los procesamientos o si está serializada como una solicitud de vaciado y la debe administrar el propio controlador de Dispatcher.
+El módulo de Dispatcher busca encabezados particulares para saber cuándo una solicitud de POST se tiene que pasar a los procesamientos de AEM o si está serializada como una solicitud de vaciado y la debe administrar el propio controlador de Dispatcher.
 
 A continuación, se muestra una captura de pantalla de la página de configuración que muestra estos valores:
 ![imagen de la pestaña de configuración principal con el tipo de serialización Dispatcher Flush](assets/disp-flushing/disp-flush-agent1.png "disp-flush-agent1")
@@ -69,15 +69,15 @@ La página de configuración predeterminada muestra `Serialization Type` como `D
 
 En la ficha `Transport` puede ver que `URI` se ha configurado para que apunte a la dirección IP del Dispatcher que recibirá las solicitudes de vaciado.  La ruta de acceso `/dispatcher/invalidate.cache` no es la forma en que el módulo determina si hay vaciado. Solo es un punto final obvio que se puede ver en el registro de acceso para saber si se produjo una solicitud de vaciado.  En la ficha `Extended` veremos qué elementos permiten comprobar que se trata de una solicitud de vaciado para el módulo Dispatcher.
 
-![Captura de pantalla de la ficha Ampliado del agente de replicación.  Observe los encabezados que se envían con la solicitud del POST enviada para indicar al Dispatcher que debe vaciar ](assets/disp-flushing/disp-flush-agent3.png "disp-flush-agent3")
+![Captura de pantalla de la ficha Ampliado del agente de replicación.  Observe los encabezados que se envían con la petición POST enviada para indicar a Dispatcher que vacíe ](assets/disp-flushing/disp-flush-agent3.png "disp-flush-agent3")
 
 El `HTTP Method` para solicitudes de vaciado es solo una solicitud de `GET` con algunos encabezados especiales:
 - CQ-Action
-   - AEM Utiliza una variable de basada en la solicitud y su valor es normalmente *activar o eliminar*
+   - Utiliza una variable de AEM basada en la solicitud y su valor es normalmente *activar o eliminar*
 - CQ-Handle
-   - AEM Utiliza una variable de basada en la solicitud y el valor es normalmente la ruta completa al elemento vaciado, por ejemplo `/content/dam/logo.jpg`
+   - Esto utiliza una variable de AEM basada en la solicitud y el valor es normalmente toda la ruta al elemento vaciado, por ejemplo `/content/dam/logo.jpg`
 - CQ-Path
-   - AEM Utiliza una variable de basada en la solicitud y el valor suele ser la ruta completa al elemento que se está vaciando, por ejemplo `/content/dam`
+   - Esto utiliza una variable de AEM basada en la solicitud y el valor es normalmente toda la ruta al elemento que se está vaciando, por ejemplo `/content/dam`
 - Host
    - Aquí es donde el encabezado `Host` se suplanta para asignarse a un `VirtualHost` específico configurado en el servidor web Apache del distribuidor (`/etc/httpd/conf.d/enabled_vhosts/aem_flush.vhost`).  Es un valor codificado que coincide con una entrada en `ServerName` o `ServerAlias` del archivo `aem_flush.vhost`
 
@@ -150,7 +150,7 @@ En este ejemplo, utilice una configuración de nivel de archivo .stat de 4. Esto
 Cuando llega una solicitud de contenido, se repite el mismo proceso
 
 1. La marca de tiempo del archivo `.stat` se compara con la del archivo solicitado
-2. AEM Si el archivo `.stat` es más reciente que el archivo solicitado, se eliminará el contenido almacenado en caché, se recuperará uno nuevo de la caché y se almacenará en la caché de ese archivo en la caché de la base de datos de la base de datos y de la base de datos.  A continuación, se sirve el contenido
+2. Si el archivo `.stat` es más reciente que el archivo solicitado, se eliminará el contenido de la caché y se recuperará uno nuevo de AEM, que se almacenará en la caché.  A continuación, se sirve el contenido
 3. Si el archivo `.stat` es más antiguo que el archivo solicitado, entonces se sabe que el archivo es reciente y se puede servir el contenido.
 
 ### PROTOCOLO DE ENLACE DE CACHÉ: EJEMPLO 1
@@ -171,7 +171,7 @@ La fecha del archivo `logo.jpg` es 2019-10-31 @ 13:13 h
 
 La fecha del archivo `.stat` más cercano es 2019-11-01 @ 12:22 h
 
-AEM Como puede ver en este ejemplo, el archivo es más antiguo que el archivo `.stat` y se quitará y se sacará uno nuevo de la caché para reemplazarlo en la caché antes de entregárselo al usuario final que lo solicitó.
+Como puede ver en este ejemplo, el archivo es más antiguo que el archivo de `.stat` y se eliminará. Uno más reciente se sacará de AEM para reemplazarlo en la caché antes de entregárselo al usuario final que lo solicitó.
 
 ## Configuración de archivo de granja
 

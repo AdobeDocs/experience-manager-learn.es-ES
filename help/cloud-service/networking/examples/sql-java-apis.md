@@ -1,7 +1,7 @@
 ---
 title: Conexiones SQL con API de Java™
 description: Obtenga información sobre cómo conectarse a bases de datos SQL desde AEM as a Cloud Service mediante las API de Java™ SQL y los puertos de salida.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
 role: Architect, Developer
@@ -10,7 +10,7 @@ jira: KT-9356
 thumbnail: KT-9356.jpeg
 exl-id: ec9d37cb-70b6-4414-a92b-3b84b3f458ab
 duration: 124
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 0%
@@ -19,9 +19,9 @@ ht-degree: 0%
 
 # Conexiones SQL con API de Java™
 
-AEM Las conexiones a bases de datos SQL (y otros servicios que no sean HTTP/HTTPS) deben procesarse como proxy fuera de las bases de datos de.
+Las conexiones a bases de datos SQL (y otros servicios no HTTP/HTTPS) deben procesarse como proxy fuera de AEM.
 
-La excepción a esta regla es cuando [dirección IP de salida dedicada](../dedicated-egress-ip-address.md) está en uso y el servicio está en Adobe o Azure.
+La excepción a esta regla se produce cuando la [dirección IP de salida dedicada](../dedicated-egress-ip-address.md) está en uso y el servicio se encuentra en Adobe o Azure.
 
 ## Compatibilidad avanzada con redes
 
@@ -151,7 +151,7 @@ public class MySqlExternalServiceImpl implements ExternalService {
 
 ## Dependencias del controlador MySQL
 
-AEM as a Cloud Service suele requerir que proporcione controladores de base de datos Java™ para admitir las conexiones. AEM La mejor manera de proporcionar los controladores suele ser incrustar los artefactos del paquete OSGi que contienen estos controladores en el proyecto de la a través del paquete `all`.
+AEM as a Cloud Service suele requerir que proporcione controladores de base de datos Java™ para admitir las conexiones. La mejor manera de proporcionar los controladores suele ser incrustar los artefactos del paquete OSGi que contienen estos controladores en el proyecto de AEM a través del paquete `all`.
 
 ### Reactor pom.xml
 

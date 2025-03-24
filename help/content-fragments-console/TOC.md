@@ -1,16 +1,16 @@
 ---
-user-guide-title: AEM Vídeos de la consola Fragmentos de contenido
+user-guide-title: Vídeos de la consola Fragmento de contenido de AEM
 user-guide-description: Una colección de vídeos para la consola de fragmentos de contenido de Adobe Experience Manager.
-breadcrumb-title: AEM Vídeos de la consola Fragmentos de contenido
+breadcrumb-title: Vídeos de la consola Fragmento de contenido de AEM
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature-set: Experience Manager Sites
 feature: Content Fragments
 topic: Content Management
 role: User
 team: TM
-source-git-commit: 0c95df469885b84aa7585975a89811efab0ae5e7
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '54'
 ht-degree: 9%
@@ -18,7 +18,7 @@ ht-degree: 9%
 ---
 
 
-# AEM Vídeos de la consola Fragmentos de contenido {#content-fragments-console}
+# Vídeos de la consola Fragmento de contenido de AEM {#content-fragments-console}
 
 + [Información general](overview.md)
 + Conceptos básicos{#basics}

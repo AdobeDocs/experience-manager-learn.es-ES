@@ -1,8 +1,8 @@
 ---
 title: Añadir insignias al editor de texto enriquecido (RTE)
-description: AEM Aprenda a añadir insignias al Editor de texto enriquecido (RTE) en el Editor de fragmentos de contenido de la
+description: Aprenda a añadir insignias al Editor de texto enriquecido (RTE) en el Editor de fragmentos de contenido de AEM
 feature: Developer Tools, Content Fragments
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -12,7 +12,7 @@ doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
 exl-id: 83acbddb-9168-4d8b-84b5-97577d8a1ead
 duration: 538
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '729'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Añadir insignias al editor de texto enriquecido (RTE)
 
-AEM Aprenda a añadir insignias al Editor de texto enriquecido (RTE) en el Editor de fragmentos de contenido de la.
+Aprenda a añadir insignias al Editor de texto enriquecido (RTE) en el Editor de fragmentos de contenido de AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420831?quality=12&learn=on)
 
@@ -37,13 +37,13 @@ Este ejemplo muestra cómo agregar un widget llamado _Servicio al cliente de res
 
 Además, el **número de teléfono** tiene un estilo diferente (azul), lo cual es un caso de uso adicional de la funcionalidad de distintivos.
 
-Para simplificar las cosas, este ejemplo usa el módulo [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) para desarrollar la interfaz de usuario del widget o cuadro de diálogo y los números de teléfono del servicio de atención al cliente de WKND codificados. Para controlar la no edición y el aspecto de estilo diferente del contenido, se utiliza el carácter `#` en el atributo `prefix` y `suffix` de la definición de distintivos.
+Para simplificar las cosas, este ejemplo usa el módulo [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) para desarrollar la interfaz de usuario del widget o cuadro de diálogo y los números de teléfono del servicio de atención al cliente de WKND predefinidos. Para controlar la no edición y el aspecto de estilo diferente del contenido, se utiliza el carácter `#` en el atributo `prefix` y `suffix` de la definición de distintivos.
 
 ## Puntos de extensión
 
 Este ejemplo se extiende al punto de extensión `rte` para agregar un distintivo al RTE en el editor de fragmentos de contenido.
 
-| AEM Interfaz de usuario extendida | Puntos de extensión |
+| IU de AEM extendida | Puntos de extensión |
 | ------------------------ | --------------------- | 
 | [Editor de fragmentos de contenido](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [Insignias del editor de texto enriquecido](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-badges/) y [Widgets del editor de texto enriquecido](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-widgets/) |
 
@@ -55,7 +55,7 @@ Una vez que el número de servicio de atención al cliente deseado se agrega des
 
 ### Registro de extensiones
 
-AEM `ExtensionRegistration.js`, asignado a la ruta `index.html`, es el punto de entrada para la extensión de la y define:
+`ExtensionRegistration.js`, asignado a la ruta `index.html`, es el punto de entrada para la extensión de AEM y define:
 
 + La definición del distintivo se define en `getBadges()` mediante los atributos de configuración `id`, `prefix`, `suffix`, `backgroundColor` y `textColor`.
 + En este ejemplo, el carácter `#` se usa para definir los límites de este distintivo, lo que significa que cualquier cadena del RTE que esté rodeada por `#` se trata como una instancia de este distintivo.
@@ -137,17 +137,17 @@ En el componente React principal `App.js`, agregue la ruta `largeBookingsCustome
 
 ### Crear componente de React `LargeBookingsCustomerService`{#create-widget-react-component}
 
-La interfaz de usuario del widget o cuadro de diálogo se crea con el módulo [Espectro de reacción de Adobe](https://react-spectrum.adobe.com/react-spectrum/index.html).
+La interfaz de usuario del widget o cuadro de diálogo se crea con el marco de trabajo [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html).
 
 El código del componente React al agregar los detalles del servicio de atención al cliente, rodee la variable del número de teléfono con el carácter de distintivos registrados `#` para convertirla en distintivos, como `#${phoneNumber}#`, de modo que no se pueda editar.
 
 Estos son los aspectos destacados del código `LargeBookingsCustomerService`:
 
 + La interfaz de usuario se representa mediante componentes del espectro de React, como [ComboBox](https://react-spectrum.adobe.com/react-spectrum/ComboBox.html), [ButtonGroup](https://react-spectrum.adobe.com/react-spectrum/ButtonGroup.html), [Button](https://react-spectrum.adobe.com/react-spectrum/Button.html)
-+ La matriz `largeGroupCustomerServiceList` tiene una asignación codificada del nombre del representante y el número de teléfono. En situaciones reales, estos datos se pueden recuperar de la acción del AppBuilder de Adobe, de sistemas externos o de puertas de enlace de API caseras o basadas en proveedores de la nube.
-+ El `guestConnection` se inicializó usando el `useEffect` [vínculo de React](https://react.dev/reference/react/useEffect) y se administró como estado de componente. AEM Se utiliza para comunicarse con el host de la.
++ La matriz `largeGroupCustomerServiceList` tiene una asignación codificada del nombre del representante y el número de teléfono. En situaciones reales, estos datos se pueden recuperar de la acción del Adobe AppBuilder, de sistemas externos o de puertas de enlace de API caseras o basadas en proveedores en la nube.
++ El `guestConnection` se inicializó usando el `useEffect` [vínculo de React](https://react.dev/reference/react/useEffect) y se administró como estado de componente. Se utiliza para comunicarse con el host de AEM.
 + La función `handleCustomerServiceChange` obtiene un nombre representativo y un número de teléfono, y actualiza las variables de estado del componente.
-+ La función `addCustomerServiceDetails` que utiliza el objeto `guestConnection` proporciona una instrucción RTE para ejecutar. En este caso `insertContent` instrucción y fragmento de código de HTML.
++ La función `addCustomerServiceDetails` que utiliza el objeto `guestConnection` proporciona una instrucción RTE para ejecutar. En este caso, instrucción `insertContent` y fragmento de código HTML.
 + Para que el número de teléfono **no se pueda editar** con distintivos, se agrega el carácter especial `#` antes y después de la variable `phoneNumber`, como `...<div><p>Phone Number: #${phoneNumber}#</strong></p></div>`.
 
 `src/aem-cf-editor-1/web-src/src/components/LargeBookingsCustomerService.js`

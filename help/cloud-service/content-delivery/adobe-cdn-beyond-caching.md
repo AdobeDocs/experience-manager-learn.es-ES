@@ -1,7 +1,7 @@
 ---
 title: 'CDN de Adobe: funciones avanzadas más allá del almacenamiento en caché'
-description: Obtenga información acerca de las funciones avanzadas de la CDN de Adobe más allá del almacenamiento en caché, como configurar el tráfico en la CDN, configurar tokens y credenciales, páginas de error de CDN y más.
-version: Cloud Service
+description: Obtenga información acerca de las funciones avanzadas de Adobe CDN más allá del almacenamiento en caché, como configurar el tráfico en la CDN, configurar tokens y credenciales, páginas de error de CDN y más.
+version: Experience Manager as a Cloud Service
 feature: Website Performance, CDN Cache
 topic: Architecture, Performance, Content Management
 role: Developer, Architect, User, Leader
@@ -12,7 +12,7 @@ last-substantial-update: 2024-08-21T00:00:00Z
 jira: KT-15123
 thumbnail: KT-15123.jpeg
 exl-id: 8948a900-01e9-49ed-9ce5-3a057f5077e4
-source-git-commit: 0e8b76b6e870978c6db9c9e7a07a6259e931bdcc
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 0%
@@ -23,13 +23,13 @@ ht-degree: 0%
 
 Obtenga información acerca de las funciones avanzadas de la red de distribución de contenido (CDN) de Adobe más allá del almacenamiento en caché, como configurar el tráfico en la CDN, configurar tokens y credenciales, páginas de error de CDN y más.
 
-Más allá del almacenamiento en caché de contenido, la CDN de Adobe ofrece varias funciones avanzadas que pueden ayudar a optimizar el rendimiento de su sitio web. Estas funciones incluyen:
+Más allá del almacenamiento en caché de contenido, Adobe CDN ofrece varias funciones avanzadas que pueden ayudar a optimizar el rendimiento de su sitio web. Estas funciones incluyen:
 
 - Configuración del tráfico en la CDN
 - Configuración de las credenciales y la autenticación de CDN
 - Páginas de error de CDN
 
-Estas características son **características de autoservicio**. AEM Configurado en el archivo `cdn.yaml` de su proyecto de e implementado mediante la canalización de configuración de Cloud Manager.
+Estas características son **características de autoservicio**. Configurado en el archivo `cdn.yaml` de su proyecto de AEM e implementado mediante la canalización de configuración de Cloud Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3433104?quality=12&learn=on)
 
@@ -37,7 +37,7 @@ Estas características son **características de autoservicio**. AEM Configurado
 
 Vamos a comprender las funcionalidades clave relacionadas con _Configurar el tráfico en CDN_:
 
-- **Prevención de ataques DoS:** La CDN de Adobe absorbe los ataques DoS en el nivel de red, lo que impide que lleguen al servidor de origen.
+- **Prevención de ataques DoS:** Adobe CDN absorbe los ataques DoS en el nivel de red, lo que impide que lleguen al servidor de origen.
 - **Limitación de velocidad:** Para proteger el servidor de origen de que se vea abrumado por demasiadas solicitudes, puede configurar la limitación de velocidad en la CDN.
 - **Firewall de aplicaciones web (WAF):** WAF protege su sitio web de vulnerabilidades comunes de aplicaciones web, como inyección de SQL, scripts entre sitios y mucho más. Se requiere la licencia de seguridad mejorada o la licencia de protección WAF-DDoS para utilizar esta función.
 - **Transformación de solicitudes:** Modifique las solicitudes entrantes, como la configuración o desconfiguración de encabezados, la modificación de parámetros de consulta, las cookies y mucho más.
@@ -51,7 +51,7 @@ Vamos a comprender las funcionalidades clave relacionadas con _Configuración de
 
 - **Token de API de purga**: le permite crear su propia clave de purga para purgar un solo recurso, un grupo o todos los recursos de la caché.
 - **Autenticación básica**: Un mecanismo de autenticación ligero cuando desea restringir el acceso al sitio web o a una parte de él. Principalmente, se requiere como parte de varios procesos de revisión antes de entrar en funcionamiento.
-- **Validación de encabezado HTTP**: se usa cuando una CDN administrada por el cliente enruta el tráfico a una CDN de Adobe. La CDN de Adobe valida la solicitud entrante en función del valor del encabezado `X-AEM-Edge-Key`. Le permite crear su propio valor para el encabezado `X-AEM-Edge-Key`.
+- **Validación de encabezado HTTP**: se usa cuando una CDN administrada por el cliente enruta el tráfico a Adobe CDN. La CDN de Adobe valida la solicitud entrante en función del valor del encabezado `X-AEM-Edge-Key`. Le permite crear su propio valor para el encabezado `X-AEM-Edge-Key`.
 
 ## Páginas de error de CDN
 
@@ -63,7 +63,7 @@ Vamos a comprender las funcionalidades clave relacionadas con _páginas de error
 
 La implementación de estas funciones avanzadas implica dos pasos:
 
-1. AEM **Actualizar archivo de configuración de CDN**: actualice el archivo `cdn.yaml` en su proyecto de con las configuraciones requeridas. Las configuraciones se añaden como reglas y siguen una sintaxis de regla. Los tres componentes principales de la regla: `name`, `when` y `action`.
+1. **Actualizar archivo de configuración de CDN**: actualice el archivo `cdn.yaml` en su proyecto de AEM con las configuraciones requeridas. Las configuraciones se añaden como reglas y siguen una sintaxis de regla. Los tres componentes principales de la regla: `name`, `when` y `action`.
 
 2. **Implementar archivo de configuración de CDN**: Implemente el archivo `cdn.yaml` actualizado mediante la canalización de configuración de Cloud Manager. Para obtener más información, consulte [Implementar reglas a través de Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager).
 
@@ -87,7 +87,7 @@ data:
           location: /us/en/top3.html
 ```
 
-## Tutorials relacionados
+## Tutoriales relacionados
 
 [Protección de sitios web con reglas de filtro de tráfico](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview)
 

@@ -1,7 +1,7 @@
 ---
-title: AEM Comprender el Intercambio de Recursos de Origen Cruzado (CORS) con los usuarios de la red de
-description: El Intercambio de Recursos de Origen Cruzado (CORS) de Adobe Experience Manager AEM AEM AEM facilita las propiedades web que no son de origen cruzado para hacer llamadas del lado del cliente a los usuarios, tanto a los que se autentican como a los que no se autentican, para recuperar contenido o interactuar directamente con los usuarios de la web de forma directa con los que no se puede acceder a la página de inicio de sesión de la página de inicio de la página de inicio de sesión.
-version: 6.4, 6.5
+title: Comprensión del Intercambio de Recursos de Origen Cruzado (CORS) con AEM
+description: El Intercambio de Recursos de Origen Cruzado (CORS) de Adobe Experience Manager facilita las propiedades web que no son de AEM para hacer llamadas del lado del cliente a AEM, tanto autenticadas como no autenticadas, para recuperar contenido o interactuar directamente con AEM.
+version: Experience Manager 6.4, Experience Manager 6.5
 sub-product: Experience Manager, Experience Manager Sites
 feature: Security, APIs
 doc-type: Article
@@ -10,7 +10,7 @@ role: Developer
 level: Intermediate
 exl-id: 6009d9cf-8aeb-4092-9e8c-e2e6eec46435
 duration: 240
-source-git-commit: 6922d885c25d0864560ab3b8e38907060ff3cc70
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1011'
 ht-degree: 1%
@@ -19,18 +19,18 @@ ht-degree: 1%
 
 # Comprender el intercambio de recursos de origen cruzado ([!DNL CORS])
 
-El Intercambio de Recursos de Origen Cruzado ([!DNL CORS]) de Adobe Experience Manager AEM AEM AEM facilita las propiedades web que no son de origen cruzado para hacer llamadas del lado del cliente a los usuarios, tanto a los que se han autenticado como a los que no se han autenticado, para recuperar contenido o interactuar directamente con los usuarios de la web de manera directa con los que no se ha podido realizar la autenticación.
+El Intercambio de Recursos de Origen Cruzado ([!DNL CORS]) de Adobe Experience Manager facilita las propiedades web que no son de AEM para hacer llamadas del lado del cliente a AEM, tanto autenticadas como no autenticadas, para recuperar contenido o interactuar directamente con AEM.
 
 La configuración OSGI descrita en este documento es suficiente para lo siguiente:
 
-1. AEM Uso compartido de recursos de un solo origen en Publish
-2. AEM Acceso de CORS a Autor de
+1. Uso compartido de recursos de un solo origen en AEM Publish
+2. Acceso CORS a AEM Author
 
-AEM Si se requiere acceso CORS de varios orígenes en Publish, consulte [esta documentación](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=en#dispatcher-configuration).
+Si se requiere acceso CORS de varios orígenes en la publicación de AEM, consulte [esta documentación](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=en#dispatcher-configuration).
 
 ## Configuración de OSGi de la política de uso compartido de recursos de origen cruzado de Adobe Granite
 
-AEM Las configuraciones de CORS se administran como fábricas de configuración OSGi en la práctica, y cada directiva se representa como una instancia de la fábrica.
+Las configuraciones de CORS se administran como fábricas de configuración OSGi en AEM, y cada directiva se representa como una instancia de la fábrica.
 
 * `http://<host>:<port>/system/console/configMgr > Adobe Granite Cross Origin Resource Sharing Policy`
 
@@ -181,13 +181,13 @@ Por lo general, se pueden aplicar las mismas consideraciones para almacenar en c
 
 | Almacenable en caché | Entorno | Estado de autenticación | Explicación |
 |-----------|-------------|-----------------------|-------------|
-| No | Publicación de AEM | Autenticado | El almacenamiento en caché de Dispatcher AEM en el Autor de la se limita a recursos estáticos no creados. AEM Esto hace que sea difícil e impráctico almacenar en caché la mayoría de los recursos en Autor de, incluidos los encabezados de respuesta HTTP. |
+| No | Publicación de AEM | Autenticado | El almacenamiento en caché de Dispatcher en AEM Author está limitado a recursos estáticos no creados. Esto dificulta y hace poco práctico almacenar en caché la mayoría de los recursos en AEM Author, incluidos los encabezados de respuesta HTTP. |
 | No | Publicación de AEM | Autenticado | Evite almacenar en caché los encabezados CORS en solicitudes autenticadas. Esto se ajusta a la guía común de no almacenar en caché las solicitudes autenticadas, ya que es difícil determinar cómo afectará el estado de autenticación/autorización del usuario solicitante al recurso enviado. |
-| Sí | Publicación de AEM | Anónimo | Las solicitudes anónimas que se pueden almacenar en caché en Dispatcher también pueden tener sus encabezados de respuesta en caché, lo que garantiza que las futuras solicitudes CORS puedan acceder al contenido almacenado en caché. AEM Cualquier cambio en la configuración CORS en el Publish **debe** ser seguido por la invalidación de los recursos en caché afectados. Las prácticas recomendadas dictan sobre las implementaciones de código o configuración cuando se purga la caché de Dispatcher, ya que es difícil determinar qué contenido en caché puede verse afectado. |
+| Sí | Publicación de AEM | Anónimo | Las solicitudes anónimas que se pueden almacenar en caché en Dispatcher también pueden tener sus encabezados de respuesta en caché, lo que garantiza que las futuras solicitudes CORS puedan acceder al contenido almacenado en caché. Cualquier cambio en la configuración CORS en la publicación de AEM **debe** ir seguido de una invalidación de los recursos en caché afectados. Las prácticas recomendadas dictan sobre las implementaciones de código o configuración cuando se purga la caché de Dispatcher, ya que es difícil determinar qué contenido en caché puede verse afectado. |
 
 ### Permitir encabezados de solicitud CORS
 
-AEM Para permitir que los [encabezados de solicitud HTTP necesarios pasen a los para el procesamiento](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders), deben estar permitidos en la configuración `/clientheaders` de Dispatcher.
+Para permitir que los [encabezados de solicitud HTTP necesarios pasen a AEM para el procesamiento](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders), deben estar permitidos en la configuración `/clientheaders` de Dispatcher.
 
 ```
 /clientheaders {
@@ -200,7 +200,7 @@ AEM Para permitir que los [encabezados de solicitud HTTP necesarios pasen a los 
 
 ### Almacenamiento en caché de encabezados de respuesta CORS
 
-AEM Para permitir el almacenamiento en caché y el servicio de encabezados CORS en contenido almacenado en caché, agregue la siguiente configuración [/cache /headers](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es#caching-http-response-headers) al archivo de Publish `dispatcher.any` de la.
+Para permitir el almacenamiento en caché y el servicio de encabezados CORS en contenido almacenado en caché, agregue la siguiente configuración [/cache /headers](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es#caching-http-response-headers) al archivo `dispatcher.any` de publicación de AEM.
 
 ```
 /publishfarm {
@@ -247,6 +247,6 @@ El registro está disponible en `com.adobe.granite.cors`:
 
 ## Materiales de apoyo
 
-* AEM [Fábrica de configuración de OSGi para políticas de uso compartido de recursos de origen cruzado](http://localhost:4502/system/console/configMgr/com.adobe.granite.cors.impl.CORSPolicyImpl)
+* [Fábrica de configuración de AEM OSGi para políticas de intercambio de recursos de origen cruzado](http://localhost:4502/system/console/configMgr/com.adobe.granite.cors.impl.CORSPolicyImpl)
 * [Uso Compartido De Recursos De Origen Cruzado (W3C)](https://www.w3.org/TR/cors/)
 * [Control de acceso HTTP (Mozilla MDN)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)

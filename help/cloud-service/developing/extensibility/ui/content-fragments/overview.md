@@ -1,8 +1,8 @@
 ---
-title: AEM Extensiones de fragmentos de contenido
+title: Extensiones de fragmentos de contenido de AEM
 description: Obtenga información sobre cómo crear e implementar extensiones de fragmentos de contenido de AEM as a Cloud Service
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -12,24 +12,24 @@ thumbnail: KT-11603.png
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: 9164423b-a609-4bc5-9777-112d229ae748
 duration: 126
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '773'
 ht-degree: 1%
 
 ---
 
-# AEM Extensibilidad de fragmentos de contenido
+# Extensibilidad de fragmentos de contenido de AEM
 
-AEM La interfaz de usuario de fragmentos de contenido es una potente interfaz de usuario ampliable para administrar la creación, administración y edición de fragmentos de contenido. Hay varios puntos de extensión disponibles para personalizar la interfaz de usuario según sus necesidades. Hay diferentes puntos de extensión disponibles en función de la interfaz de usuario que amplíe.
+La interfaz de usuario de fragmentos de contenido de AEM es una potente interfaz de usuario ampliable para administrar la creación, administración y edición de fragmentos de contenido. Hay varios puntos de extensión disponibles para personalizar la interfaz de usuario según sus necesidades. Hay diferentes puntos de extensión disponibles en función de la interfaz de usuario que amplíe.
 
 ## Puntos de extensión de la consola Fragmentos de contenido
 
-AEM La Consola de fragmento de contenido en (Adobe Experience Manager) es una interfaz de usuario que proporciona una ubicación centralizada para administrar y organizar fragmentos de contenido. Ofrece un completo conjunto de herramientas y funciones para crear, editar, publicar y rastrear fragmentos de contenido, lo que permite a los usuarios administrar de forma eficaz el contenido estructurado en varios canales y puntos de contacto.
+La Consola de fragmento de contenido en AEM (Adobe Experience Manager) es una interfaz de usuario que proporciona una ubicación centralizada para administrar y organizar fragmentos de contenido. Ofrece un completo conjunto de herramientas y funciones para crear, editar, publicar y rastrear fragmentos de contenido, lo que permite a los usuarios administrar de forma eficaz el contenido estructurado en varios canales y puntos de contacto.
 
 ![Consola Fragmentos de contenido](./assets/overview/cfc.png)
 
-AEM [Consola de fragmentos de contenido de](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=es) es la interfaz de usuario ampliable para enumerar y administrar fragmentos de contenido. AEM [Se han creado extensiones de la consola de fragmentos de contenido de](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/code-generation) mediante la plantilla de App Builder `@adobe/aem-cf-admin-ui-ext-tpl`.
+[La consola Fragmentos de contenido de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=es) es la interfaz de usuario ampliable para enumerar y administrar fragmentos de contenido. [Se crean extensiones de la consola de fragmentos de contenido de AEM](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/code-generation) con la plantilla de App Builder `@adobe/aem-cf-admin-ui-ext-tpl`.
 
 Los siguientes puntos de extensión de la consola Fragmentos de contenido están disponibles:
 
@@ -98,11 +98,11 @@ Los siguientes puntos de extensión de la consola Fragmentos de contenido están
 
 ## Puntos de extensión del Editor de fragmentos de contenido
 
-AEM El Editor de fragmentos de contenido en (Adobe Experience Manager) es un componente de interfaz de usuario que permite a los usuarios crear, editar y administrar fragmentos de contenido. Proporciona un entorno visualmente intuitivo y fácil de usar para trabajar con contenido estructurado, lo que permite a los usuarios definir y organizar elementos de contenido, aplicar plantillas, administrar variaciones y previsualizar cómo aparece el contenido en diferentes canales. El editor de fragmentos de contenido optimiza el proceso de creación de contenido reutilizable y modular que se puede distribuir y publicar fácilmente en varias experiencias digitales.
+El Editor de fragmentos de contenido en AEM (Adobe Experience Manager) es un componente de interfaz de usuario que permite a los usuarios crear, editar y administrar fragmentos de contenido. Proporciona un entorno visualmente intuitivo y fácil de usar para trabajar con contenido estructurado, lo que permite a los usuarios definir y organizar elementos de contenido, aplicar plantillas, administrar variaciones y previsualizar cómo aparece el contenido en diferentes canales. El editor de fragmentos de contenido optimiza el proceso de creación de contenido reutilizable y modular que se puede distribuir y publicar fácilmente en varias experiencias digitales.
 
 ![Editor de fragmentos de contenido](./assets/overview/cfe.png)
 
-AEM El Editor de fragmentos de contenido es la interfaz de usuario ampliable para editar fragmentos de contenido. AEM [Se han creado extensiones del Editor de fragmentos de contenido de la](https://developer.adobe.com/uix/docs/services/aem-cf-editor/code-generation/) con la plantilla de App Builder `@adobe/aem-cf-editor-ui-ext-tpl`.
+El Editor de fragmentos de contenido de AEM es la interfaz de usuario ampliable para editar fragmentos de contenido. [Se crean extensiones del Editor de fragmentos de contenido de AEM](https://developer.adobe.com/uix/docs/services/aem-cf-editor/code-generation/) con la plantilla de App Builder `@adobe/aem-cf-editor-ui-ext-tpl`.
 
 Los siguientes puntos de extensión del Editor de fragmentos de contenido están disponibles:
 
@@ -192,7 +192,7 @@ Los siguientes puntos de extensión del Editor de fragmentos de contenido están
 
 ## Ejemplos de extensiones
 
-AEM Le damos la bienvenida a una colección de ejemplos de código de extensibilidad de la interfaz de usuario de. Este recurso está diseñado para proporcionarle demostraciones prácticas y perspectivas sobre la ampliación de la interfaz de usuario de Adobe Experience Manager AEM (). AEM Tanto si es un desarrollador que busca mejorar la funcionalidad de la aplicación, estos ejemplos de código sirven como una valiosa referencia.
+Bienvenido a una colección de ejemplos de código de extensibilidad de la IU de AEM. Este recurso está diseñado para proporcionarle demostraciones prácticas y perspectivas sobre la ampliación de la interfaz de usuario de Adobe Experience Manager (AEM). Tanto si es un desarrollador que busca mejorar la funcionalidad de AEM, estos ejemplos de código sirven como referencia valiosa.
 
 <div class="columns is-multiline">
   <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Bulk property update">
@@ -219,15 +219,15 @@ AEM Le damos la bienvenida a una colección de ejemplos de código de extensibil
         <div class="card" style="height: 100%">
             <div class="card-image">
                 <figure class="image is-16by9">
-                    <a href="./examples/console-image-generation-and-image-upload.md" title="AEM Generación y carga de imágenes basadas en OpenAI a la extensión de la" tabindex="-1">
-                        <img class="is-bordered-r-small" src="./examples/assets/digital-image-generation/card.png" alt="AEM Generación y carga de imágenes basadas en OpenAI a la extensión de la">
+                    <a href="./examples/console-image-generation-and-image-upload.md" title="Generación y carga de imágenes basadas en OpenAI en la extensión de AEM" tabindex="-1">
+                        <img class="is-bordered-r-small" src="./examples/assets/digital-image-generation/card.png" alt="Generación y carga de imágenes basadas en OpenAI en la extensión de AEM">
                     </a>
                 </figure>
             </div>
             <div class="card-content is-padded-small">
                 <div class="content">
-                    <p class="headline is-size-6 has-text-weight-bold"><a href="./examples/console-image-generation-and-image-upload.md" title="AEM Generación y carga de imágenes basadas en OpenAI a la extensión de la">Generación de imágenes de OpenAPI</a></p>
-                    <p class="is-size-6">AEM Explore un ejemplo de extensión de barra de acciones que genera una imagen mediante OpenAI, la carga en la propiedad de imagen y la actualiza en el fragmento de contenido seleccionado.</p>
+                    <p class="headline is-size-6 has-text-weight-bold"><a href="./examples/console-image-generation-and-image-upload.md" title="Generación y carga de imágenes basadas en OpenAI en la extensión de AEM">Generación de imágenes de OpenAPI</a></p>
+                    <p class="is-size-6">Explore un ejemplo de extensión de barra de acciones que genera una imagen mediante OpenAI, la carga en AEM y actualiza la propiedad de imagen en el fragmento de contenido seleccionado.</p>
                     <a href="./examples/console-image-generation-and-image-upload.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                         <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ver el ejemplo</span>
                     </a>

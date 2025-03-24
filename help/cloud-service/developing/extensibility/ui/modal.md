@@ -1,8 +1,8 @@
 ---
-title: AEM Modo de extensión de IU
-description: AEM Obtenga información sobre cómo crear una extensión de interfaz de usuario de modal.
+title: Modo de extensión de IU de AEM
+description: Obtenga información sobre cómo crear un modal de extensión de IU de AEM.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -11,7 +11,7 @@ jira: KT-11603
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: e7376eaf-f7d7-48fe-9387-a0e4089806c2
 duration: 127
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 0%
@@ -20,9 +20,9 @@ ht-degree: 0%
 
 # Modo de extensión
 
-AEM ![modal de extensión de IU de](./assets/modal/modal.png){align="center"}
+![Modo de extensión de IU de AEM](./assets/modal/modal.png){align="center"}
 
-AEM AEM El modal de extensión de la interfaz de usuario de proporciona una forma de adjuntar una interfaz de usuario personalizada a las extensiones de la interfaz de usuario.
+El modal de extensiones de IU de AEM proporciona una forma de adjuntar una interfaz de usuario personalizada a las extensiones de IU de AEM.
 
 Los modelos son aplicaciones React, basadas en [React Spectrum](https://react-spectrum.adobe.com/react-spectrum/), y pueden crear cualquier interfaz de usuario personalizada que requiera la extensión, incluyendo, entre otras:
 
@@ -185,7 +185,7 @@ export default function MyModal() {
 
 ## Cerrar el modal
 
-AEM ![Botón Cerrar modal de la extensión de IU de](./assets/modal/close.png){align="center"}
+![Botón de cierre modal de la extensión de IU de AEM](./assets/modal/close.png){align="center"}
 
 Los modelos deben proporcionar su propio control estricto. Esto se completó al invocar `guestConnection.host.modal.close()`.
 

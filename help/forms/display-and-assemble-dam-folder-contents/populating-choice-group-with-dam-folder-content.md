@@ -2,17 +2,17 @@
 title: Adición de elementos de carpeta DAM al componente de grupo de opciones
 description: Agregar elementos al componente del grupo de opciones de forma dinámica
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: User
 level: Beginner
 last-substantial-update: 2023-01-01T00:00:00Z
 exl-id: 29f56d13-c2e2-4bc2-bfdc-664c848dd851
 duration: 80
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '230'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 

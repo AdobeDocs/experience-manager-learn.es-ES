@@ -1,7 +1,7 @@
 ---
-title: AEM Registro de variables en el flujo de trabajo de[Parte6]
-description: AEM Registra el valor de las variables de flujo de trabajo de la
-version: 6.5
+title: Registro de variables en el flujo de trabajo de AEM[Parte6]
+description: Registrar el valor de las variables del flujo de trabajo de AEM
+version: Experience Manager 6.5
 topic: Development
 feature: Adaptive Forms, Workflow
 role: Developer
@@ -9,16 +9,16 @@ level: Beginner
 jira: KT-13783
 exl-id: 6afb3a52-9879-4393-8efd-ec3e5c303063
 duration: 84
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '125'
 ht-degree: 0%
 
 ---
 
-# AEM Registrar el valor de las variables en el flujo de trabajo de
+# Registrar el valor de las variables en el flujo de trabajo de AEM
 
-El registro del valor de las variables es una práctica común en el desarrollo de software. AEM AEM Ayuda a los desarrolladores a realizar un seguimiento y comprender cómo se está ejecutando un flujo de trabajo de, diagnosticar problemas y monitorizar el flujo de datos dentro de un flujo de trabajo de.
+El registro del valor de las variables es una práctica común en el desarrollo de software. Ayuda a los desarrolladores a realizar un seguimiento y comprender cómo se ejecuta un flujo de trabajo de AEM, diagnosticar problemas y monitorizar el flujo de datos dentro de un flujo de trabajo de AEM.
 
 
 
@@ -175,9 +175,9 @@ public class LogWorkflowVariables implements WorkflowProcess {
 
 >[!NOTE]
 >
->AEM Los documentos se guardan en la carpeta raíz de la instalación del servidor de la instalación del servidor de la.
+>Los documentos se guardan en la carpeta raíz de la instalación del servidor de AEM.
 
 ## Implementar el paquete de muestra
 
 [Implementar el paquete de registrador de variables](assets/VariableLogger.core-1.0.0-SNAPSHOT.jar) mediante la consola web Felix.
-AEM Asocie este paquete con un paso del proceso en el flujo de trabajo de la para registrar el valor de las variables String y Document.
+Asocie este paquete con un paso del proceso en el flujo de trabajo de AEM para registrar el valor de la variable String y Document.

@@ -4,13 +4,13 @@ description: Creación de un portal de AEM Forms con componentes principales
 solution: Experience Manager
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Core Components
 jira: KT-10373
 exl-id: ab01573a-e95f-4041-8ccf-16046d723aba
 duration: 78
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 10%
@@ -31,7 +31,7 @@ AEM Forms proporciona los siguientes componentes listos para usar del portal:
 
 Inicie IntelliJ y abra el proyecto BankingApplication creado en el paso [ anterior.](./getting-started.md) Expanda ui.apps->src->main->content->jcr_root->apps.bankingapplication->components
 
-Para utilizar cualquier componente principal (incluidos los componentes de portal predeterminados) en un sitio de Adobe Experience Manager AEM (), debe crear un componente proxy y habilitarlo para su sitio.
+Para utilizar cualquier componente principal (incluidos los componentes de portal predeterminados) en un sitio de Adobe Experience Manager (AEM), debe crear un componente proxy y habilitarlo para su sitio.
 El componente proxy recién creado debe apuntar al componente de formularios predeterminado para que herede todo de ellos. Para ello, cambie resourceSuperType en el content.xml del componente proxy. En el archivo content.xml también especificamos el título y el grupo de componentes.
 >[!NOTE]
 >
@@ -83,7 +83,7 @@ Reemplazar el contenido de `.content.xml` por el siguiente XML:
           componentGroup="BankingApplication - Content"/>
 ```
 
-AEM Una vez implementado el proyecto, debe poder utilizar estos componentes en la página de para crear el portal de Forms.
+Una vez implementado el proyecto, debe poder utilizar estos componentes en la página de AEM para crear el portal de Forms.
 
 ## Siguientes pasos
 

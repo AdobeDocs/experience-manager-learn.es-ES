@@ -3,11 +3,11 @@ title: Acroforms con AEM Forms
 description: Parte 2 de la integración de Acroforms con AEM Forms. Cree un esquema a partir de un AcroForm.
 feature: adaptive-forms
 doc-type: Tutorial
-version: 6.5
+version: Experience Manager 6.5
 badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 duration: 34
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 0%
@@ -22,7 +22,7 @@ El siguiente paso es crear un esquema a partir del AcroForm creado en el paso an
 1. Iniciar sesión en [CRXDE Lite](http://localhost:4502/crx/de)
 2. Abrir en el archivo `/apps/AemFormsSamples/components/createxsd/POST.jsp`
 3. Cambie `saveLocation` por una carpeta apropiada de su disco duro. Asegúrese de que la carpeta en la que está guardando ya se ha creado.
-4. AEM Dirija su explorador a [Crear XSD](http://localhost:4502/content/DocumentServices/CreateXsd.html) página hospedada en el servidor de correo electrónico de la.
+4. Dirija su explorador a [Crear página XSD](http://localhost:4502/content/DocumentServices/CreateXsd.html) alojada en AEM.
 5. Arrastre y suelte el AcroForm.
 6. Compruebe la carpeta especificada en el paso 3. El archivo de esquema se guarda en esta ubicación.
 

@@ -1,7 +1,7 @@
 ---
 title: 'Generación de variaciones: uso de audiencias de archivo CSV en Edge Delivery Services'
-description: Aprenda a utilizar las audiencias de archivo CSV para dirigirse a la audiencia correcta con el contenido relevante en la creación de documentos para Edge Delivery Services.
-version: Cloud Service
+description: Aprenda a utilizar las audiencias de archivo CSV para dirigirse a la audiencia correcta con el contenido relevante en la creación de documentos de Edge Delivery Services.
+version: Experience Manager as a Cloud Service
 feature: Authoring
 topic: Content Management
 role: Admin, Developer, Leader, User
@@ -11,7 +11,7 @@ duration: 62
 last-substantial-update: 2024-05-08T00:00:00Z
 jira: KT-15431
 exl-id: 13cd9302-bee4-46b7-adb6-5716dc5d3844
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '66'
 ht-degree: 0%
@@ -22,6 +22,6 @@ ht-degree: 0%
 
 {{edge-delivery-services}}
 
-Aprenda a utilizar las audiencias de archivo CSV para dirigirse a la audiencia correcta con el contenido relevante en la creación de documentos para Edge Delivery Services.
+Aprenda a utilizar las audiencias de archivo CSV para dirigirse a la audiencia correcta con el contenido relevante en la creación de documentos de Edge Delivery Services.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428793/?learn=on)

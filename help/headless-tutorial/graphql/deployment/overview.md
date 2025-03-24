@@ -1,7 +1,7 @@
 ---
-title: AEM Implementaciones sin encabezado de
-description: AEM Obtenga información acerca de las distintas consideraciones de implementación para aplicaciones sin encabezado de.
-version: Cloud Service
+title: Implementaciones sin encabezado de AEM
+description: Obtenga información acerca de las distintas consideraciones de implementación para aplicaciones sin encabezado de AEM.
+version: Experience Manager as a Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
 role: Developer, Architect
@@ -11,32 +11,32 @@ thumbnail: kt-10794.jpg
 last-substantial-update: 2022-08-26T00:00:00Z
 exl-id: 6de58ca0-9444-4272-9487-15a9e3c89231
 duration: 59
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
 
 ---
 
-# AEM Implementaciones sin encabezado de
+# Implementaciones sin encabezado de AEM
 
-AEM AEM SPA SPA Las implementaciones de cliente sin encabezado toman muchos formularios; las implementaciones de cliente alojadas en la interfaz de usuario, las de servidor a servidor, las de sitio web, las de aplicación móvil o incluso las de servidor a servidor, entre otras, las de externas.
+Las implementaciones de cliente sin encabezado de AEM toman muchos formularios; SPA alojada en AEM, SPA externa, sitio web, aplicación móvil o incluso proceso de servidor a servidor.
 
-AEM En función del cliente y de cómo se implemente, las implementaciones sin encabezado de la tienen diferentes consideraciones.
+Según el cliente y cómo se implemente, las implementaciones sin encabezado de AEM tienen diferentes consideraciones.
 
-## AEM arquitectura de servicio de
+## Arquitectura de servicio de AEM
 
-AEM Antes de explorar las consideraciones de implementación, es imperativo comprender la arquitectura lógica de los servicios de AEM as a Cloud Service, así como la separación y las funciones de los niveles de servicio de los usuarios, y en qué consiste la implementación. AEM as a Cloud Service consta de dos servicios lógicos:
+Antes de explorar las consideraciones de implementación, es imperativo comprender la arquitectura lógica de AEM, y la separación y las funciones de los niveles de servicio de AEM as a Cloud Service. AEM as a Cloud Service consta de dos servicios lógicos:
 
-+ AEM __Autor de__ es el servicio donde los equipos crean, colaboran y publican fragmentos de contenido (y otros recursos).
-+ AEM __Publish__ es el servicio en el que se publicaron. Los fragmentos de contenido (y otros recursos) se replican para el consumo general.
-+ AEM AEM __Vista previa de la__ es el servicio que imita el comportamiento de Publish, pero tiene contenido publicado para su vista previa o revisión. AEM La vista previa de la versión se ha diseñado para audiencias internas y no para la publicación general de contenido. AEM El uso de la vista previa de la es opcional, según el flujo de trabajo deseado.
++ __Autor de AEM__ es el servicio donde los equipos crean, colaboran y publican fragmentos de contenido (y otros recursos).
++ __Publicación de AEM__ es el servicio en el que se publicaron Los fragmentos de contenido (y otros recursos) se replican para uso general.
++ __Vista previa de AEM__ es el servicio que imita la publicación de AEM en comportamiento, pero tiene contenido publicado para vista previa o revisión. La vista previa de AEM está destinada a audiencias internas y no a la entrega general de contenido. El uso de la vista previa de AEM es opcional, según el flujo de trabajo deseado.
 
-AEM ![Arquitectura de servicio de la](./assets/overview/aem-service-architecture.png)
+![Arquitectura de servicio de AEM](./assets/overview/aem-service-architecture.png)
 
 Arquitectura de implementación típica sin encabezado de AEM as a Cloud Service
 
-AEM AEM Los clientes sin encabezado que operan en una capacidad de producción suelen interactuar con Publish, que contiene el contenido publicado y aprobado, lo que se conoce como cliente sin encabezado AEM AEM Los clientes que interactúen con el autor de la comunicación deben tener especial cuidado, ya que el autor de la comunicación es seguro de forma predeterminada, requiere autorización para todas las solicitudes y también puede incluir trabajo en curso o contenido no aprobado.
+Los clientes sin encabezado de AEM que operan en una capacidad de producción suelen interactuar con AEM Publish, que contiene el contenido aprobado y publicado. Los clientes que interactúen con AEM Author deben tener especial cuidado, ya que AEM Author es seguro de forma predeterminada, y requiere autorización para todas las solicitudes. También puede incluir trabajo en curso o contenido no aprobado.
 
 ## Implementaciones de cliente sin encabezado
 
@@ -46,15 +46,15 @@ AEM AEM Los clientes sin encabezado que operan en una capacidad de producción s
        <div class="card">
            <div class="card-image">
                <figure class="image is-16by9">
-                   <a href="./spa.md" title="SPA Aplicación de una sola página ()" tabindex="-1">
-                       <img class="is-bordered-r-small" src="./assets/spa/spa-card.png" alt="SPA Aplicaciones de una sola página ()">
+                   <a href="./spa.md" title="Aplicación de una sola página (SPA)" tabindex="-1">
+                       <img class="is-bordered-r-small" src="./assets/spa/spa-card.png" alt="Aplicaciones de una sola página (SPA)">
                    </a>
                </figure>
            </div>
            <div class="card-content is-padded-small">
                <div class="content">
-                   <p class="headline is-size-6 has-text-weight-bold"><a href="./spa.md" title="SPA Aplicación de una sola página ()">SPA Aplicación de una sola página ()</a></p>
-                   <p class="is-size-6">SPA Obtenga información acerca de las consideraciones de implementación para aplicaciones de una sola página ().</p>
+                   <p class="headline is-size-6 has-text-weight-bold"><a href="./spa.md" title="Aplicación de una sola página (SPA)">Aplicación de una sola página (SPA)</a></p>
+                   <p class="is-size-6">Obtenga información acerca de las consideraciones de implementación para aplicaciones de una sola página (SPA).</p>
                    <a href="./spa.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                        <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Aprender</span>
                    </a>
@@ -95,7 +95,7 @@ AEM AEM Los clientes sin encabezado que operan en una capacidad de producción s
        </div>
        <div class="card-content is-padded-small">
            <div class="content">
-               <p class="headline is-size-6 has-text-weight-bold"><a href="./mobile.md" title="Aplicaciones móviles">aplicación móvil</a></p>
+               <p class="headline is-size-6 has-text-weight-bold"><a href="./mobile.md" title="Aplicaciones móviles">Aplicación móvil</a></p>
                <p class="is-size-6">Obtenga información sobre las consideraciones de implementación para aplicaciones móviles.</p>
                <a href="./mobile.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Aprender</span>

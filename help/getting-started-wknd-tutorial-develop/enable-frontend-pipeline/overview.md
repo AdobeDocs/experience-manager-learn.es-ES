@@ -1,7 +1,7 @@
 ---
-title: AEM Habilitación de la canalización front-end para el tipo de archivo del proyecto de estándar
-description: AEM Obtenga información sobre cómo habilitar una canalización front-end para un proyecto de estándar para una implementación más rápida de recursos estáticos como CSS, JavaScript, fuentes e iconos. AEM También separa el desarrollo front-end del desarrollo back-end completo en el desarrollo de la parte posterior de la pila de la parte superior de la.
-version: Cloud Service
+title: Habilitación de la canalización front-end para el tipo de archivo del proyecto de AEM estándar
+description: Obtenga información sobre cómo habilitar una canalización front-end para proyectos de AEM estándar para una implementación más rápida de recursos estáticos como CSS, JavaScript, Fonts, Icons. También la separación del desarrollo front-end del desarrollo back-end completo en AEM.
+version: Experience Manager as a Cloud Service
 feature: AEM Project Archetype, Cloud Manager, CI-CD Pipeline
 topic: Content Management, Development, Development, Architecture
 role: Developer, Architect, Admin
@@ -15,28 +15,28 @@ last-substantial-update: 2022-09-23T00:00:00Z
 doc-type: Tutorial
 exl-id: b795e7e8-f611-4fc3-9846-1d3f1a28ccbc
 duration: 206
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 1%
 
 ---
 
-# AEM Habilitación de la canalización front-end para el tipo de archivo del proyecto de estándar{#enable-front-end-pipeline-standard-aem-project}
+# Habilitación de la canalización front-end para el tipo de archivo del proyecto de AEM estándar{#enable-front-end-pipeline-standard-aem-project}
 
-AEM AEM AEM Aprenda a habilitar el [Proyecto de WKND Sites](https://github.com/adobe/aem-guides-wknd) (también conocido como Proyecto de estándar) creado con [Tipo de archivo del proyecto](https://github.com/adobe/aem-project-archetype) para implementar recursos front-end como CSS, JavaScript, Fuentes e Iconos mediante una canalización front-end para un ciclo más rápido de desarrollo a implementación. AEM La separación del desarrollo de front-end del desarrollo de back-end de pila completa en la creación de segmentos de la base de datos de la base de datos de la base de datos de. AEM También aprenderá cómo estos recursos front-end __no__ se proporcionan desde el repositorio de, sino desde la red de distribución de contenido (CDN), un cambio en el paradigma de entrega.
+Aprenda a habilitar el [Proyecto WKND Sites de AEM](https://github.com/adobe/aem-guides-wknd) (también conocido como Proyecto AEM estándar) creado con el [Arquetipo de proyecto de AEM](https://github.com/adobe/aem-project-archetype) para implementar recursos front-end como CSS, JavaScript, fuentes e iconos mediante una canalización front-end para un ciclo más rápido de desarrollo a implementación. La separación del desarrollo front-end del desarrollo back-end completo en AEM. También aprenderá cómo estos recursos front-end __no__ se proporcionan desde el repositorio de AEM, sino desde la red de distribución de contenido (CDN), un cambio en el paradigma de entrega.
 
 
-Se crea una nueva canalización front-end en Adobe Cloud Manager AEM que solo genera e implementa `ui.frontend` artefactos en la CDN integrada y que informa a los usuarios de la ubicación de la red de distribución de contenido (CDN) sobre su ubicación. AEM En las etiquetas `<link>` y `<script>` durante la generación del HTML de la página web, consulte esta ubicación del artefacto en el valor de atributo `href`.
+Se crea una nueva canalización front-end en Adobe Cloud Manager que solo genera e implementa `ui.frontend` artefactos en la CDN integrada e informa a AEM sobre su ubicación. En AEM durante la generación de HTML de la página web, las etiquetas `<link>` y `<script>` hacen referencia a esta ubicación de artefacto en el valor de atributo `href`.
 
-AEM AEM Sin embargo, después de la conversión del proyecto de WKND Sites, los desarrolladores de front-end pueden trabajar de forma independiente y paralela a cualquier desarrollo de back-end completo en el, que tiene sus propias canalizaciones de implementación.
+Sin embargo, después de la conversión del proyecto AEM de WKND Sites, los desarrolladores de front-end pueden trabajar de forma independiente y paralela a cualquier desarrollo back-end completo en AEM, que tiene sus propias canalizaciones de implementación.
 
 >[!IMPORTANT]
 >
->AEM En términos generales, la canalización front-end se utiliza generalmente con [Creación rápida de sitios](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/overview.html?lang=en), hay un tutorial relacionado [Introducción a AEM Sites: creación rápida de sitios](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/overview.html) para obtener más información al respecto. En este tutorial y en los vídeos asociados nos encontramos con referencias a él, para asegurarnos de que se destacan las diferencias sutiles y de que haya alguna comparación directa o indirecta para explicar conceptos cruciales.
+>En términos generales, la canalización front-end generalmente se utiliza con [Creación rápida de sitios de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/overview.html?lang=en), hay un tutorial relacionado [Introducción a AEM Sites - Creación rápida de sitios](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/overview.html) para obtener más información al respecto. En este tutorial y en los vídeos asociados nos encontramos con referencias a él, para asegurarnos de que se destacan las diferencias sutiles y de que haya alguna comparación directa o indirecta para explicar conceptos cruciales.
 
 
-AEM Un [tutorial de varios pasos](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/overview.html) relacionado recorre la implementación de un sitio de la aplicación para una marca ficticia de estilo de vida WKND mediante la característica Creación rápida de sitios. También resulta útil revisar el [flujo de trabajo de la temática](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/theming.html) para comprender el funcionamiento de la canalización front-end.
+Un [tutorial de varios pasos](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/overview.html) relacionado explica cómo implementar un sitio de AEM para una marca ficticia de estilo de vida WKND mediante la característica Creación rápida de sitios. También resulta útil revisar el [flujo de trabajo de la temática](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/theming.html) para comprender el funcionamiento de la canalización front-end.
 
 ## Información general, ventajas y consideraciones para la canalización front-end
 
@@ -45,7 +45,7 @@ AEM Un [tutorial de varios pasos](https://experienceleague.adobe.com/docs/experi
 
 >[!NOTE]
 >
->Esto solo se aplica a AEM as a Cloud Service y no a las implementaciones de Cloud Manager de Adobe basadas en AMS.
+>Esto solo se aplica a AEM as a Cloud Service y no a las implementaciones de Adobe Cloud Manager basadas en AMS.
 
 ## Requisitos previos
 
@@ -55,6 +55,6 @@ Asegúrese de usar el [programa de espacio aislado](https://experienceleague.ado
 
 ## Pasos siguientes {#next-steps}
 
-AEM Un tutorial paso a paso recorre la conversión del [Proyecto de sitios WKND de WKND de WKND](https://github.com/adobe/aem-guides-wknd) para habilitarlo para la canalización front-end.
+Un tutorial paso a paso muestra la conversión del [proyecto WKND Sites de AEM](https://github.com/adobe/aem-guides-wknd) para habilitarlo para la canalización front-end.
 
 ¿Qué estás esperando? Inicie el tutorial navegando hasta el capítulo [Revisar proyecto de pila completa](review-uifrontend-module.md) y vuelva a recapitular el ciclo de vida de desarrollo front-end en el contexto del proyecto estándar de AEM Sites.

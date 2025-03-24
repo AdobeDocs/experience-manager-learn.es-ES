@@ -1,7 +1,7 @@
 ---
 title: Consideraciones de desarrollo
 description: Tenga en cuenta el impacto en el proceso de desarrollo del front-end y del back-end una vez que habilite la canalización front-end.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: AEM Project Archetype, Cloud Manager, CI-CD Pipeline
 topic: Content Management, Development, Development, Architecture
 role: Developer, Architect, Admin
@@ -13,7 +13,7 @@ recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: a3b27d5b-b167-4c60-af49-8f2e8d814c86
 duration: 79
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 # Consideraciones de desarrollo
 
-Después de habilitar la canalización front-end para implementar únicamente los recursos front-end en el entorno de AEM as a Cloud Service AEM, se produce cierto impacto en el desarrollo local de las ramas y tiene que modificar el modelo de ramificación de Git.
+Después de habilitar la canalización front-end para implementar únicamente los recursos front-end en el entorno de AEM as a Cloud Service, se produce cierto impacto en el desarrollo local de AEM y tiene que modificar el modelo de ramificación de Git.
 
 ## Objetivo
 
@@ -37,9 +37,9 @@ Después de habilitar la canalización front-end para implementar únicamente lo
 
 ## Enfoque de desarrollo ajustado
 
-* AEM Para el desarrollo local mediante el SDK de la, el equipo de desarrollo del back-end todavía necesita la generación de clientlib a través del módulo `ui.frontend`, pero durante la implementación de Cloud Manager en el entorno de AEM as a Cloud Service debe omitirla. Esto presenta un desafío sobre cómo aislar los cambios de configuración del proyecto descritos en el capítulo [Actualizar proyecto](update-project.md).
+* Para el desarrollo local mediante AEM SDK, el equipo de desarrollo del back-end sigue necesitando la generación de clientlib mediante el módulo `ui.frontend`, pero durante la implementación de Cloud Manager en el entorno de AEM as a Cloud Service debe omitirla. Esto presenta un desafío sobre cómo aislar los cambios de configuración del proyecto descritos en el capítulo [Actualizar proyecto](update-project.md).
 
-AEM AEM Podría ser una __solución__ para ajustar su modelo de ramificación de Git y asegurarse de que los cambios de configuración del proyecto de Git nunca vuelvan a fluir a la rama de __desarrollo local__ que usan los desarrolladores del back-end de la rama de.
+Una __solución__ podría ser ajustar su modelo de ramificación de Git y asegurarse de que los cambios de configuración del proyecto de AEM nunca regresen a la rama de __desarrollo local__ que usan los desarrolladores del back-end de AEM.
 
 
-* AEM Como parte de la mejora continua de su proyecto de, si introduce nuevos componentes o actualiza un componente existente que tiene cambios en los módulos `ui.app` y `ui.frontend`, debe ejecutar canalizaciones full-stack y front-end.
+* Como parte de la mejora continua de su proyecto de AEM, si introduce nuevos componentes o actualiza un componente existente que tiene cambios en los módulos `ui.app` y `ui.frontend`, debe ejecutar canalizaciones full-stack y front-end.

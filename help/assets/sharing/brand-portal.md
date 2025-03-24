@@ -1,8 +1,8 @@
 ---
 title: Uso de Brand Portal
-description: AEM Vídeos introductorios sobre la integración de Autor y AEM Assets Brand Portal de.
+description: Tutoriales en vídeo sobre la integración de AEM Author y AEM Assets Brand Portal.
 feature: Brand Portal
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Content Management
 role: User
 level: Beginner
@@ -10,30 +10,30 @@ last-substantial-update: 2022-06-15T00:00:00Z
 doc-type: Feature Video
 exl-id: 42f13a19-52bf-413d-a141-63f1f0910dce
 duration: 2460
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
-source-wordcount: '1703'
+source-wordcount: '1702'
 ht-degree: 0%
 
 ---
 
 # Uso de Brand Portal con AEM Assets{#using-brand-portal-with-aem-assets}
 
-Guías de vídeo sobre la integración de Adobe Experience Manager AEM () con Assets Brand Portal.
+Guías de vídeo sobre la integración de Adobe Experience Manager (AEM) con Assets Brand Portal.
 
 ## Funciones y mejoras de Brand Portal de septiembre de 2019
 
-En septiembre de 2019, Brand Portal presenta de forma más destacada el abastecimiento de recursos, que aumenta la velocidad del contenido y permite un intercambio fácil y rápido de recursos entre los autores Experience Manager y los creativos y colaboradores de terceros.
+En septiembre de 2019, Brand Portal presenta de forma más destacada el abastecimiento de recursos, que aumenta la velocidad del contenido y permite un intercambio fácil y rápido de recursos entre los autores de Experience Manager y los creativos y colaboradores de terceros.
 
 ### Abastecimiento de recursos Brand Portal{#asset-sourcing}
 
-El abastecimiento de recursos de Brand Portal se utiliza para recopilar recursos de agencias y equipos de terceros, sincronizándolos sin problemas con el autor del Experience Manager para su revisión y uso.
+El abastecimiento de recursos de Brand Portal se utiliza para recopilar recursos de agencias y equipos de terceros, sincronizándolos sin problemas con el autor de Experience Manager para su revisión y uso.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29365?quality=12&learn=on)
 
 Se requiere *Experience Manager Author 6.5 SP2 (6.5.2) o superior para usar el Abastecimiento de recursos*
 
-Revise [Habilitar el autor de Experience Manager para el abastecimiento de recursos](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=es) para obtener instrucciones sobre cómo configurar el abastecimiento de recursos en el autor de Experience Manager.
+Revise [Habilitar el autor de Experience Manager para el abastecimiento de recursos](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=es) para obtener instrucciones sobre cómo configurar el abastecimiento de recursos en Experience Manager Author.
 
 ## Funciones y mejoras de Brand Portal de febrero de 2019{#brand-portal-features-and-enhancements-644}
 
@@ -84,7 +84,7 @@ Tenga en cuenta que la miniatura predeterminada de las carpetas virtuales es la 
 
 ### Compatibilidad con representaciones de vídeo de Dynamic Media
 
-AEM Los usuarios cuya instancia de autor de la esté en el modo híbrido de Dynamic Media pueden obtener una vista previa de las representaciones de medios dinámicos y descargarlas, además de los archivos de vídeo originales.
+Los usuarios cuya instancia de autor de AEM esté en modo híbrido de Dynamic Media pueden obtener una vista previa de las representaciones de medios dinámicos y descargarlas, además de los archivos de vídeo originales.
 
 Para permitir la previsualización y la descarga de representaciones de medios dinámicos en cuentas de inquilino específicas, los administradores deben especificar la configuración de Dynamic Media (URL del servicio de vídeo (URL de puerta de enlace DM) y el ID de registro para recuperar el vídeo dinámico) en la configuración de vídeo del panel de herramientas de administración.
 
@@ -101,20 +101,20 @@ Las codificaciones de vídeo de Dynamic Media se pueden descargar desde:
 
 ### Publicación programada en Brand Portal
 
-El flujo de trabajo de publicación de Assets AEM (y carpetas) desde [(6.4.2.0)](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html#main-pars_header_9658011) la instancia de autor a Brand Portal se puede programar para una fecha y hora posteriores.
+El flujo de trabajo de publicación de Assets (y carpetas) desde [AEM (6.4.2.0)](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html#main-pars_header_9658011) la instancia de autor a Brand Portal se puede programar para una fecha y hora posteriores.
 
 Del mismo modo, los recursos publicados se pueden eliminar del portal en una fecha (hora) posterior mediante la programación del flujo de trabajo Cancelar la publicación de Brand Portal.
 
 ### Alias de inquilino configurable en la URL
 
-Las organizaciones pueden personalizar la dirección URL de su portal si tienen un prefijo alternativo en la dirección URL. Para obtener un alias para el nombre del inquilino en la URL de su portal existente, las organizaciones deben ponerse en contacto con el servicio de asistencia del Adobe.
+Las organizaciones pueden personalizar la dirección URL de su portal si tienen un prefijo alternativo en la dirección URL. Para obtener un alias para el nombre del inquilino en la URL de su portal existente, las organizaciones deben ponerse en contacto con el soporte de Adobe.
 
 Tenga en cuenta que solo se puede personalizar el prefijo de la dirección URL de Brand Portal y no la dirección URL completa.
 Por ejemplo, una organización con dominio existente `wknd.brand-portal.adobe.com` puede obtener `wkndinc.brand-portal.adobe.com` creado a solicitud.
 
-AEM Sin embargo, la instancia de autor de la solo se puede [configurar](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html) con la URL del id de inquilino y no con la URL del alias de inquilino (alternativa).
+Sin embargo, la instancia de autor de AEM solo se puede [configurar](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html) con la dirección URL del identificador de inquilino y no con la dirección URL del alias de inquilino (alternativa).
 
-**Caso de uso**: las organizaciones pueden satisfacer sus necesidades de promoción de la marca personalizando la dirección URL del portal, en lugar de atenerse a la dirección URL proporcionada por el Adobe.
+**Caso de uso**: las organizaciones pueden satisfacer sus necesidades de promoción de la marca personalizando la dirección URL del portal, en lugar de atenerse a la dirección URL proporcionada por Adobe.
 
 ## Funciones y mejoras de Brand Portal de diciembre de 2018{#brand-portal-features-and-enhancements-642}
 
@@ -122,7 +122,7 @@ AEM Sin embargo, la instancia de autor de la solo se puede [configurar](https://
 
 ### Acceso de invitado
 
-AEM El portal de marca permite a los invitados acceder al portal. Un usuario invitado no necesita credenciales para entrar al portal y puede acceder y descargar todas las carpetas y colecciones públicas. Los usuarios invitados pueden agregar recursos a su light-box (colección privada) y descargarlos. También pueden ver la búsqueda de etiquetas inteligentes y los predicados de búsqueda establecidos por los administradores. La sesión de invitado no permite a los usuarios crear colecciones y búsquedas guardadas, ni compartirlas más, acceder a la configuración de carpetas y colecciones y compartir recursos como vínculos.
+AEM Brand Portal permite el acceso de invitados al portal. Un usuario invitado no necesita credenciales para entrar al portal y puede acceder y descargar todas las carpetas y colecciones públicas. Los usuarios invitados pueden agregar recursos a su light-box (colección privada) y descargarlos. También pueden ver la búsqueda de etiquetas inteligentes y los predicados de búsqueda establecidos por los administradores. La sesión de invitado no permite a los usuarios crear colecciones y búsquedas guardadas, ni compartirlas más, acceder a la configuración de carpetas y colecciones y compartir recursos como vínculos.
 
 ### Descarga acelerada
 
@@ -157,19 +157,19 @@ Se agregan seis nuevas configuraciones para que los administradores habiliten o 
 * *Ruta de jerarquía de carpetas en vistas de tarjetas y listas*: permite a los usuarios conocer la ubicación de las carpetas almacenadas en una instancia de Brand Portal. Ayuda a los usuarios a diferenciar las carpetas que tienen el mismo nombre en una jerarquía de carpetas diferente.
 * *Opción de información general*: proporciona metadatos sobre el recurso o la carpeta a los usuarios que no son administradores. Para ello, seleccione el recurso o la carpeta y, a continuación, seleccione la opción de información general en la barra de herramientas. Actualmente, muestra el título, la fecha de creación y la ruta
 
-### Adobe I/O aloja la interfaz de usuario para configurar las integraciones de autenticación
+### Adobe I/O aloja la interfaz de usuario para configurar integraciones de autenticación
 
-Brand Portal usa la interfaz del Adobe I/O [https://legacy-oauth.cloud.adobe.io/](https://legacy-oauth.cloud.adobe.io/) para crear la aplicación JWT, que permite configurar las integraciones de autenticación para permitir la integración de AEM Assets con Brand Portal. Anteriormente, la interfaz de usuario para configurar integraciones de OAuth se alojaba en `https://marketing.adobe.com/developer/`. Para obtener más información sobre la integración de AEM Assets con Brand Portal para publicar recursos y colecciones en Brand Portal, consulte [Configuración de la integración de AEM Assets con Brand Portal](https://helpx.adobe.com/experience-manager/6-4/assets/using/brand-portal-configuring-integration.html).
+Brand Portal usa la interfaz de Adobe I/O [https://legacy-oauth.cloud.adobe.io/](https://legacy-oauth.cloud.adobe.io/) para crear la aplicación JWT, que permite configurar integraciones de autenticación para permitir la integración de AEM Assets con Brand Portal. Anteriormente, la interfaz de usuario para configurar integraciones de OAuth se alojaba en `https://marketing.adobe.com/developer/`. Para obtener más información sobre la integración de AEM Assets con Brand Portal para publicar recursos y colecciones en Brand Portal, consulte [Configuración de la integración de AEM Assets con Brand Portal](https://helpx.adobe.com/experience-manager/6-4/assets/using/brand-portal-configuring-integration.html).
 
 ## Funciones y mejoras de Brand Portal de febrero de 2018{#brand-portal-features-and-enhancements-632}
 
-Las nuevas funciones mejoraron la funcionalidad orientada a alinear Brand Portal AEM con los recursos de la.
+Las nuevas funciones mejoraron la funcionalidad orientada a alinear Brand Portal con AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26354?quality=12&learn=on)
 
 ### Mejoras de navegación
 
-* AEM Interfaz de usuario actualizada que se alinea con la interfaz de usuario de Coral3 y que utiliza la interfaz de usuario de Coral3.
+* Interfaz de usuario actualizada que se alinea con AEM y usa la interfaz de usuario de Coral3.
 * Acceso rápido y sencillo a las herramientas administrativas a través del nuevo logotipo de Adobe.
 * Navegación de productos mediante una superposición
 * Navegación rápida a carpetas principales desde una carpeta secundaria.
@@ -184,7 +184,7 @@ Las nuevas funciones mejoraron la funcionalidad orientada a alinear Brand Portal
 * Sugerencias automáticas de palabras clave para facilitar la búsqueda
 * Mejore su Omnisearch con filtros adicionales. Opción para guardar el resultado de búsqueda en una colección inteligente para que vuelva a visitar la búsqueda más adelante.
 * Admite búsqueda de recursos con etiquetas inteligentes
-* AEM AEM Los recursos etiquetados inteligentes se pueden compartir desde la interfaz de usuario de Brand Portal y usar etiquetas inteligentes para la búsqueda de recursos en Brand Portal.
+* Los recursos etiquetados inteligentes de AEM se pueden compartir de AEM a Brand Portal y utilizar etiquetas inteligentes para la búsqueda de recursos en Brand Portal.
 
 ### Mejoras de uso compartido de archivos
 
@@ -195,7 +195,7 @@ Las nuevas funciones mejoraron la funcionalidad orientada a alinear Brand Portal
 
 ### Capacidades administrativas y de creación de informes
 
-* Ahora, el esquema de metadatos de AEM Assets AEM se puede publicar desde la publicación de metadatos a Brand Portal, desde la publicación en el sitio web de.
+* Ahora, el esquema de metadatos de los AEM Assets se puede publicar de AEM a Brand Portal.
 * Los administradores pueden crear y administrar tres tipos de informes: recursos descargados, caducados y publicados
 * Capacidad para configurar la columna que debe incluirse en el informe.
 * Cree ajustes preestablecidos de imagen para los recursos de Brand Portal.
@@ -206,9 +206,9 @@ Las nuevas funciones mejoraron la funcionalidad orientada a alinear Brand Portal
 ## Recursos adicionales{#additional-resources}
 
 * [Novedades de Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=es#introduction)
-* AEM [Agentes de replicación de autor de](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html)
+* [Agentes de replicación de autor de AEM](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html)
 * [Guía para la descarga acelerada](https://helpx.adobe.com/experience-manager/brand-portal/using/accelerated-download.html#main-pars_header)
-* [Documentos de Adobe de AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal.html)
-* [Documentos de Adobe de AEM Assets Dynamic Media](https://experienceleague.adobe.com/docs/)
+* [Documentos de AEM Assets Brand Portal Adobe](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal.html)
+* [Documentos de Adobe de Dynamic Media para AEM Assets](https://experienceleague.adobe.com/docs/)
 * [Descargar Aspera Connect](https://downloads.asperasoft.com/connect2/)
 * [Servidor de prueba de Aspera Connect](https://test-connect.asperasoft.com/)

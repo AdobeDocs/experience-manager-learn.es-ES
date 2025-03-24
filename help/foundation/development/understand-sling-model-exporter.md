@@ -1,7 +1,7 @@
 ---
-title: AEM Explicación del exportador de modelos Sling en el sector de la
+title: Explicación del exportador de modelos Sling en AEM
 description: Apache Sling Models 1.3.0 presenta el Exportador de modelos Sling, una forma elegante de exportar o serializar objetos del modelo Sling en abstracciones personalizadas. Este artículo yuxtapone el caso de uso tradicional de utilizar modelos Sling para rellenar scripts HTL, con el uso del marco del exportador de modelos Sling para serializar un modelo Sling en JSON.
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 sub-product: Experience Manager, Experience Manager Sites
 feature: APIs
 doc-type: Article
@@ -10,7 +10,7 @@ role: Developer
 level: Beginner
 exl-id: 03cdf5d1-3253-44c9-ae1f-ec5d3c562427
 duration: 133
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '568'
 ht-degree: 0%
@@ -25,13 +25,13 @@ Apache [!DNL Sling Models] 1.3.0 presenta [!DNL Sling Model Exporter], una forma
 
 El caso de uso tradicional de [!DNL Sling Models] es proporcionar una abstracción empresarial para un recurso o una solicitud, lo que proporciona secuencias de comandos HTL (o, anteriormente JSP) una interfaz para acceder a funciones empresariales.
 
-AEM Hay patrones comunes que desarrollan [!DNL Sling Models] que representan Componentes o Páginas de y que utilizan los objetos [!DNL Sling Model] para alimentar los scripts HTL con datos, con un resultado final de HTML que se muestra en el explorador.
+Hay patrones comunes que desarrollan [!DNL Sling Models] que representan componentes o páginas de AEM y que utilizan los objetos [!DNL Sling Model] para alimentar los scripts HTL con datos, con un resultado final de HTML que se muestra en el explorador.
 
 ### Flujo de solicitud HTTP del modelo Sling
 
 ![Flujo de solicitud del modelo Sling](./assets/understand-sling-model-exporter/sling-model-request-flow.png)
 
-1. AEM [!DNL HTTP GET]: se ha realizado una solicitud para un recurso en el área de trabajo de la.
+1. [!DNL HTTP GET]: se ha realizado una solicitud para un recurso en AEM.
 
    Ejemplo: `HTTP GET /content/my-resource.html`
 
@@ -39,7 +39,7 @@ AEM Hay patrones comunes que desarrollan [!DNL Sling Models] que representan Com
 
 1. El script adapta la solicitud o el recurso al [!DNL Sling Model] deseado.
 
-1. El script usa el objeto [!DNL Sling Model] para generar la representación del HTML.
+1. La secuencia de comandos utiliza el objeto [!DNL Sling Model] para generar la representación de HTML.
 
 1. El HTML generado por el script se devuelve en la respuesta HTTP.
 
@@ -55,7 +55,7 @@ La serialización directa de [!DNL Sling Models] les permite atender solicitudes
 
 *Este flujo describe el flujo utilizando el exportador Jackson proporcionado para generar la salida JSON. El uso de exportadores personalizados sigue el mismo flujo pero con su formato de salida.*
 
-1. La solicitud de GET AEM HTTP se realiza para un recurso en el que se encuentra el selector y la extensión registrados con el exportador de [!DNL Sling Model].
+1. La solicitud HTTP GET se realiza para un recurso de AEM con el selector y la extensión registrados en el exportador de [!DNL Sling Model].
 
    Ejemplo: `HTTP GET /content/my-resource.model.json`
 

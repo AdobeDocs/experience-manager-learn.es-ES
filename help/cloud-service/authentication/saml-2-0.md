@@ -1,7 +1,7 @@
 ---
 title: SAML 2.0 en AEM as a Cloud Service
 description: Obtenga información sobre cómo configurar la autenticación SAML 2.0 en el servicio AEM as a Cloud Service Publish.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
 role: Architect, Developer
@@ -11,7 +11,7 @@ thumbnail: 343040.jpeg
 last-substantial-update: 2024-05-15T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
 duration: 2200
-source-git-commit: 6f8d2bdd4ffb1c643cebcdd59fb529d8da1c44cf
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '4262'
 ht-degree: 1%
@@ -20,37 +20,37 @@ ht-degree: 1%
 
 # Autenticación SAML 2.0{#saml-2-0-authentication}
 
-AEM Obtenga información sobre cómo configurar y autenticar usuarios finales (no autores de) en un IDP compatible con SAML 2.0 de su elección.
+Aprenda a configurar y autenticar usuarios finales (no autores de AEM) en un IDP compatible con SAML 2.0 de su elección.
 
 ## ¿Qué es SAML para AEM as a Cloud Service?
 
-AEM La integración de SAML 2.0 con Publish AEM (o Vista previa) de la, permite a los usuarios finales de una experiencia web basada en la identidad de los usuarios finales autenticarse en un IDP (proveedor de identidad) que no es de Adobe AEM y acceder a los usuarios autorizados con nombre como los que se les ha asignado el acceso de forma exclusiva.
+La integración de SAML 2.0 con AEM Publish (o Preview) permite a los usuarios finales de una experiencia web basada en AEM autenticarse en un IDP (proveedor de identidad) que no es de Adobe y acceder a AEM como un usuario autorizado con nombre.
 
 |                       | AEM Author | Publicación de AEM |
 |-----------------------|:----------:|:-----------:|
 | Compatibilidad con SAML 2.0 | ✘ | ✔ |
 
-+++ AEM Comprender el flujo de SAML 2.0 con la ayuda de la aplicación de
++++ Comprensión del flujo de SAML 2.0 con AEM
 
-AEM El flujo típico de una integración SAML de Publish de la siguiente manera es:
+El flujo típico de una integración de AEM Publish SAML es el siguiente:
 
-1. AEM El usuario realiza una solicitud a Publish para que la autenticación sea necesaria.
+1. El usuario realiza una solicitud a AEM Publish que indica que se requiere autenticación.
    + El usuario solicita un recurso protegido por CUG/ACL.
    + El usuario solicita un recurso que está sujeto a un requisito de autenticación.
-   + AEM El usuario sigue un vínculo al punto de conexión de inicio de sesión de la aplicación (es decir, `/system/sling/login`) que solicita explícitamente la acción de inicio de sesión de la aplicación.
-1. AEM Hace una petición AuthnRequest al IDP, solicitando al IDP que inicie el proceso de autenticación.
+   + El usuario sigue un vínculo al extremo de inicio de sesión de AEM (es decir, `/system/sling/login`) que solicita explícitamente la acción de inicio de sesión.
+1. AEM realiza una AuthnRequest al IDP, en la que se solicita que el IDP inicie el proceso de autenticación.
 1. El usuario se autentica en IDP.
    + El IDP solicita credenciales al usuario.
    + El usuario ya se ha autenticado con el IDP y no tiene que proporcionar más credenciales.
 1. IDP genera una afirmación de SAML que contiene los datos del usuario y la firma utilizando el certificado privado del IDP.
-1. IDP envía la afirmación de SAML a través del POST AEM HTTP, a través del explorador web del usuario (RESPECTIVE_PROTECTED_PATH/saml_login), a Publish de la.
+1. IDP envía la afirmación de SAML a través de HTTP POST, a través del explorador web del usuario (RESPECTIVE_PROTECTED_PATH/saml_login), a AEM Publish.
 1. AEM Publish recibe la afirmación de SAML y valida la integridad y autenticidad de la afirmación de SAML utilizando el certificado público IDP.
-1. AEM Publish AEM administra el registro de usuario de en función de la configuración OSGi de SAML 2.0 y el contenido de la afirmación de SAML.
+1. AEM Publish administra el registro de usuario de AEM en función de la configuración OSGi de SAML 2.0 y el contenido de la aserción SAML.
    + Crea un usuario
    + Sincroniza atributos de usuario
-   + AEM Actualizaciones de miembros del grupo de usuarios
-1. AEM Publish AEM AEM establece la cookie `login-token` de la respuesta HTTP, que se utiliza para autenticar las solicitudes posteriores a la respuesta de Publish de la.
-1. AEM Publish AEM redirige al usuario a la dirección URL en el Publish de la forma especificada por la cookie `saml_request_path`, en la que se encuentra el usuario.
+   + Actualiza la pertenencia a grupos de usuarios de AEM
+1. AEM Publish establece la cookie `login-token` de AEM en la respuesta HTTP, que se utiliza para autenticar solicitudes posteriores en AEM Publish.
+1. AEM Publish redirige al usuario a la dirección URL en AEM Publish según se especifica en la cookie `saml_request_path`.
 
 +++
 
@@ -58,23 +58,23 @@ AEM El flujo típico de una integración SAML de Publish de la siguiente manera 
 
 >[!VIDEO](https://video.tv.adobe.com/v/343040?quality=12&learn=on)
 
-Este vídeo explica cómo configurar la integración de SAML 2.0 con el servicio AEM as a Cloud Service Publish y cómo utilizar Okta como IDP.
+Este vídeo explica cómo configurar la integración de SAML 2.0 con el servicio de publicación de AEM as a Cloud Service y cómo utilizar Okta como IDP.
 
 ## Requisitos previos
 
 Se requiere lo siguiente al configurar la autenticación SAML 2.0:
 
 + Acceso del administrador de implementación a Cloud Manager
-+ AEM Acceso de administrador a la configuración de AEM as a Cloud Service
++ Acceso de administrador de AEM al entorno de AEM as a Cloud Service
 + Acceso de administrador al IDP
 + Opcionalmente, acceso a un par de claves pública y privada utilizado para cifrar cargas SAML
 
-AEM SAML 2.0 solo se admite para autenticar a los usuarios para que se utilicen para la autenticación de Publish o la vista previa de la. AEM Para administrar la autenticación de Autor de que usa y IDP, [integre el IDP con Adobe IMS](https://helpx.adobe.com/es/enterprise/using/set-up-identity.html).
+SAML 2.0 solo se admite para autenticar usuarios en AEM Publish o Preview. Para administrar la autenticación del autor de AEM que usa y IDP, [integre el IDP con Adobe IMS](https://helpx.adobe.com/es/enterprise/using/set-up-identity.html).
 
 
-## AEM Instalación del certificado público IDP en el
+## Instalación del certificado público IDP en AEM
 
-AEM El certificado público del IDP se añade al Almacén de confianza global de y se utiliza para validar que la afirmación de SAML enviada por el IDP es válida.
+El certificado público del IDP se añade al repositorio de confianza global de AEM y se utiliza para validar que la afirmación de SAML enviada por el IDP es válida.
 
 Flujo de firma de aserción +++SAML
 
@@ -83,14 +83,14 @@ Flujo de firma de aserción +++SAML
 1. El usuario se autentica en IDP.
 1. IDP genera una afirmación de SAML que contiene los datos del usuario.
 1. IDP firma la afirmación de SAML usando el certificado privado de IDP.
-1. IDP inicia un POST AEM HTTP del lado del cliente para el extremo SAML (`.../saml_login`) de Publish que incluye la aserción de SAML firmada.
-1. AEM Publish recibe el POST HTTP que contiene la afirmación SAML firmada, puede validar la firma utilizando el certificado público IDP.
+1. IDP inicia un POST HTTP del lado del cliente en el extremo SAML de AEM Publish (`.../saml_login`) que incluye la afirmación de SAML firmada.
+1. AEM Publish recibe el POST HTTP que contiene la afirmación de SAML firmada, puede validar la firma mediante el certificado público IDP.
 
 +++
 
 ![Agregar el certificado público IDP al Almacén de confianza global](./assets/saml-2-0/global-trust-store.png)
 
-1. Obtenga el archivo de __certificado público__ del IDP. AEM AEM Este certificado le permite a los validar la afirmación de SAML proporcionada a los usuarios desplazados internos.
+1. Obtenga el archivo de __certificado público__ del IDP. Este certificado permite a AEM validar la afirmación de SAML proporcionada a AEM por el IDP.
 
    El certificado está en formato PEM y debe tener un aspecto similar al siguiente:
 
@@ -102,7 +102,7 @@ Flujo de firma de aserción +++SAML
    -----END CERTIFICATE-----
    ```
 
-1. AEM AEM Inicie sesión en el autor de la como administrador de la aplicación.
+1. Inicie sesión en AEM Author como administrador de AEM.
 1. Vaya a __Herramientas > Seguridad > Almacén de confianza__.
 1. Cree o abra el Almacén de confianza global. Si crea un almacén de confianza global, guarde la contraseña en un lugar seguro.
 1. Expandir __Agregar certificado del archivo CER__.
@@ -113,9 +113,9 @@ Flujo de firma de aserción +++SAML
 1. Tome nota del __alias__, ya que este valor se usa en la [configuración OSGi del Controlador de autenticación SAML 2.0](#saml-2-0-authentication-handler-osgi-configuration).
 1. Seleccione __Guardar y cerrar__.
 
-El repositorio de confianza global está configurado con el certificado público del IDP de Autor de la publicación, pero dado que SAML solo se utiliza en Publish AEM, el repositorio de confianza global debe replicarse en Publish para que el certificado público IDP sea accesible desde allí. El repositorio de confianza global debe replicarse en AEM AEM para que se pueda acceder a él desde el repositorio de confianza global.
+El repositorio de confianza global está configurado con el certificado público del IDP en AEM Author, pero como SAML solo se utiliza en AEM Publish, el repositorio de confianza global debe replicarse en AEM Publish para que el certificado público IDP sea accesible allí.
 
-AEM ![Replicar el Almacén de confianza global en el Publish de la](./assets/saml-2-0/global-trust-store-replicate.png)
+![Replicar el almacén de confianza global en AEM Publish](./assets/saml-2-0/global-trust-store-replicate.png)
 
 1. Vaya a __Herramientas > Implementación > Paquetes__.
 1. Creación de un paquete
@@ -126,13 +126,13 @@ AEM ![Replicar el Almacén de confianza global en el Publish de la](./assets/sam
 1. Seleccione la ficha __Filtros__ y agregue un filtro para la ruta raíz `/etc/truststore`.
 1. Seleccione __Listo__ y luego __Guardar__.
 1. Seleccione el botón __Generar__ para el paquete de __Almacén de confianza global__.
-1. AEM Una vez compilado, seleccione __Más__ > __Replicar__ para activar el nodo del Almacén de confianza global (`/etc/truststore`) para que se active en Publish de la forma que desee.
+1. Una vez generado, seleccione __Más__ > __Replicar__ para activar el nodo Almacén de confianza global (`/etc/truststore`) en AEM Publish.
 
 ## Crear almacén de claves del servicio de autenticación{#authentication-service-keystore}
 
 _Es necesario crear un almacén de claves para el servicio de autenticación cuando la propiedad de configuración OSGi del controlador de autenticación [SAML 2.0 `handleLogout` está establecida en `true`](#saml-20-authenticationsaml-2-0-authentication) o cuando se requiere [cifrado de firma AuthnRequest/aserción SAML](#install-aem-public-private-key-pair)_
 
-1. AEM AEM Inicie sesión en Author como administrador de para cargar la clave privada.
+1. Inicie sesión en AEM Author como administrador de AEM para cargar la clave privada.
 1. Vaya a __Herramientas > Seguridad > Usuarios__, seleccione el usuario __authentication-service__ y seleccione __Propiedades__ en la barra de acciones superior.
 1. Seleccione la pestaña __Keystore__.
 1. Cree o abra el repositorio de claves. Si crea un almacén de claves, mantenga la contraseña a salvo.
@@ -153,47 +153,47 @@ _Es necesario crear un almacén de claves para el servicio de autenticación cua
       + Para encontrar `<AUTHENTICATION SERVICE UUID>`, vaya a __Herramientas > Seguridad > Usuarios__ y seleccione el usuario __authentication-service__. El UUID es la última parte de la dirección URL.
    1. Seleccione __Listo__ y luego __Guardar__.
    1. Seleccione el botón __Generar__ para el paquete de __Almacenamiento de claves del servicio de autenticación__.
-   1. AEM Una vez compilada, seleccione __Más__ > __Replicar__ para activar el almacén de claves del servicio de autenticación en Publish de la.
+   1. Una vez compilado, seleccione __Más__ > __Replicar__ para activar el almacén de claves del servicio de autenticación en AEM Publish.
 
-## AEM Instalar par de claves pública y privada de la{#install-aem-public-private-key-pair}
+## Instalación del par de claves pública y privada de AEM{#install-aem-public-private-key-pair}
 
-AEM _La instalación del par de claves pública y privada de la es opcional_
+_La instalación del par de claves pública y privada de AEM es opcional_
 
-AEM Se puede configurar Publish AEM para que firme las solicitudes de autenticación (a IDP) y cifre las afirmaciones de SAML (a). AEM Esto se logra proporcionando una clave privada para el Publish, y está haciendo coincidir la clave pública con el IDP.
+AEM Publish se puede configurar para firmar solicitudes de autenticación (a IDP) y cifrar aserciones de SAML (a AEM). Esto se logra proporcionando una clave privada a AEM Publish y haciendo coincidir la clave pública con el IDP.
 
 +++ Comprender el flujo de firma de AuthnRequest (opcional)
 
-AEM La AuthnRequest (la solicitud al IDP desde Publish AEM que inicia el proceso de inicio de sesión) puede ser firmada por el usuario de Publish de la red de seguridad de la red (). AEM Para ello, Publish firma la petición de autenticación utilizando la clave privada, de modo que el IDP valide la firma utilizando la clave pública. AEM Esto garantiza al IDP que AuthnRequest se inició, y fue solicitado por el usuario de Publish, y no por un tercero malintencionado.
+AuthnRequest (la solicitud al IDP desde AEM Publish que inicia el proceso de inicio de sesión) puede firmarla AEM Publish. Para ello, AEM Publish firma AuthnRequest con la clave privada, de modo que el IDP valide la firma con la clave pública. Esto garantiza al IDP que AuthnRequest se inició y fue solicitado por AEM Publish, y no por un tercero malicioso.
 
 ![SAML 2.0 - SP AuthnRequest firma](./assets/saml-2-0/sp-authnrequest-signing-diagram.png)
 
-1. AEM El usuario realiza una solicitud HTTP a Publish que da lugar a una solicitud de autenticación SAML para el IDP.
-1. AEM Publish genera la solicitud de SAML para enviar al IDP.
-1. AEM Publish AEM firma la solicitud de SAML usando la clave privada de la clave de la cuenta de usuario que se encuentra en el.
+1. El usuario realiza una solicitud HTTP a AEM Publish que resulta en una solicitud de autenticación SAML al IDP.
+1. AEM Publish genera la solicitud SAML para enviarla al IDP.
+1. AEM Publish firma la solicitud SAML con la clave privada de AEM.
 1. AEM Publish inicia AuthnRequest, un redireccionamiento del lado del cliente HTTP al IDP que contiene la solicitud SAML firmada.
-1. AEM AEM IDP recibe la solicitud de autor y valida la firma utilizando la clave pública de la firma, lo que garantiza que Publish haya iniciado la solicitud de autor ().
-1. AEM A continuación, Publish valida la integridad y autenticidad de la afirmación de SAML descifrada utilizando el certificado público IDP.
+1. IDP recibe la AuthnRequest y valida la firma con la clave pública de AEM, lo que garantiza que AEM Publish inició la AuthnRequest.
+1. A continuación, AEM Publish valida la integridad y autenticidad de la afirmación de SAML descifrada mediante el certificado público IDP.
 
 +++
 
 +++ Comprender el flujo de cifrado de afirmación de SAML (opcional)
 
-AEM Toda la comunicación HTTP entre IDP y Publish debe ser a través de HTTPS, y por lo tanto segura de forma predeterminada. Sin embargo, según sea necesario, las afirmaciones de SAML pueden cifrarse en el caso de que se requiera confidencialidad adicional además de la proporcionada por HTTPS. Para ello, el IDP cifra los datos de la aserción de SAML utilizando la clave privada y, a la vez, Publish descifra la aserción de SAML utilizando la clave privada, lo que resulta en un descifrado por parte de los usuarios de AEM.
+Toda la comunicación HTTP entre IDP y AEM Publish debe ser a través de HTTPS y, por lo tanto, segura de forma predeterminada. Sin embargo, según sea necesario, las afirmaciones de SAML pueden cifrarse en el caso de que se requiera confidencialidad adicional además de la proporcionada por HTTPS. Para ello, el IDP cifra los datos de aserción de SAML utilizando la clave privada y AEM Publish descifra la aserción de SAML utilizando la clave privada.
 
 ![SAML 2.0: cifrado de aserción SP SAML](./assets/saml-2-0/sp-samlrequest-encryption-diagram.png)
 
 1. El usuario se autentica en IDP.
 1. IDP genera una afirmación de SAML que contiene los datos del usuario y la firma utilizando el certificado privado del IDP.
-1. AEM AEM A continuación, IDP cifra la afirmación de SAML con la clave pública que se encuentra en el proceso de cifrado, lo que requiere que la clave privada se descifre y se descifre con la clave pública que se encuentra en el proceso de descifrado.
-1. AEM La afirmación de SAML cifrada se envía a Publish a través del explorador web del usuario.
-1. AEM Publish AEM recibe la afirmación de SAML y la descifra utilizando la clave privada de la que dispone el usuario, que la descifra mediante el uso de la clave privada de la que se ha obtenido el.
+1. A continuación, IDP cifra la afirmación de SAML con la clave pública de AEM, que requiere la clave privada de AEM para descifrar.
+1. La afirmación de SAML cifrada se envía a AEM Publish a través del explorador web del usuario.
+1. AEM Publish recibe la afirmación de SAML y la descifra utilizando la clave privada de AEM.
 1. IDP solicita al usuario que se autentique.
 
 +++
 
 Tanto la firma de AuthnRequest como el cifrado de aserción de SAML son opcionales; sin embargo, ambos están habilitados mediante la propiedad de configuración OSGi del controlador de autenticación [SAML 2.0, lo que significa que se pueden usar ambos o ninguno.`useEncryption`](#saml-20-authenticationsaml-2-0-authentication)
 
-AEM ![almacén de claves del servicio de autenticación de la](./assets/saml-2-0/authentication-service-key-store.png)
+![Almacén de claves del servicio de autenticación de AEM](./assets/saml-2-0/authentication-service-key-store.png)
 
 1. Obtenga la clave pública, la clave privada (PKCS#8 en formato DER) y el archivo de cadena de certificados (puede ser la clave pública) utilizados para firmar AuthnRequest y cifre la afirmación de SAML. Las claves las suele proporcionar el equipo de seguridad de la organización de TI.
 
@@ -211,12 +211,12 @@ AEM ![almacén de claves del servicio de autenticación de la](./assets/saml-2-0
 
 1. Cargue la clave pública al IDP.
    + Utilizando el método `openssl` anterior, la clave pública es el archivo `aem-public.crt`.
-1. AEM AEM Inicie sesión en Author como administrador de para cargar la clave privada.
+1. Inicie sesión en AEM Author como administrador de AEM para cargar la clave privada.
 1. Vaya a __Herramientas > Seguridad > Almacén de confianza__, seleccione el usuario __servicio de autenticación__ y seleccione __Propiedades__ en la barra de acciones superior.
 1. Vaya a __Herramientas > Seguridad > Usuarios__, seleccione el usuario __authentication-service__ y seleccione __Propiedades__ en la barra de acciones superior.
 1. Seleccione la pestaña __Keystore__.
 1. Cree o abra el repositorio de claves. Si crea un almacén de claves, mantenga la contraseña a salvo.
-1. AEM Seleccione __Agregar clave privada desde el archivo DER__ y agregue la clave privada y el archivo de cadena a los siguientes elementos:
+1. Seleccione __Agregar clave privada desde el archivo DER__ y agregue la clave privada y el archivo de cadena a AEM:
    + __Alias__: proporcione un nombre significativo, a menudo el nombre del IDP.
    + __Archivo de clave privada__: Cargue el archivo de clave privada (PKCS#8 en formato DER).
       + Utilizando el método `openssl` anterior, este es el archivo `aem-private-pkcs8.der`
@@ -240,12 +240,12 @@ AEM ![almacén de claves del servicio de autenticación de la](./assets/saml-2-0
       + Para encontrar `<AUTHENTICATION SERVICE UUID>`, vaya a __Herramientas > Seguridad > Usuarios__ y seleccione el usuario __authentication-service__. El UUID es la última parte de la dirección URL.
    1. Seleccione __Listo__ y luego __Guardar__.
    1. Seleccione el botón __Generar__ para el paquete de __Almacenamiento de claves del servicio de autenticación__.
-   1. AEM Una vez compilada, seleccione __Más__ > __Replicar__ para activar el almacén de claves del servicio de autenticación en Publish de la.
+   1. Una vez compilado, seleccione __Más__ > __Replicar__ para activar el almacén de claves del servicio de autenticación en AEM Publish.
 
 ## Configurar el controlador de autenticación SAML 2.0{#configure-saml-2-0-authentication-handler}
 
-AEM La configuración de SAML de la se realiza a través de la configuración OSGi del Controlador de autenticación __Adobe Granite SAML 2.0__.
-La configuración es una configuración de fábrica de OSGi, lo que significa que un solo servicio de AEM as a Cloud Service Publish AEM puede tener varias configuraciones de SAML que cubran árboles de recursos discretos del repositorio; esto resulta útil para implementaciones de varios sitios de.
+La configuración de SAML de AEM se realiza a través de la configuración OSGi __Controlador de autenticación Adobe Granite SAML 2.0__.
+La configuración es una configuración de fábrica de OSGi, lo que significa que un solo servicio de publicación de AEM as a Cloud Service puede tener varias configuraciones de SAML que cubran árboles de recursos discretos del repositorio; esto resulta útil para implementaciones de AEM de varios sitios.
 
 +++ Glosario de configuración OSGi del Controlador de autenticación SAML 2.0
 
@@ -253,37 +253,37 @@ La configuración es una configuración de fábrica de OSGi, lo que significa qu
 
 |                                   | Propiedad OSGi | Requerido | Formato de valor | Valor predeterminado | Descripción |
 |-----------------------------------|-------------------------------|:--------:|:---------------------:|---------------------------|-------------|
-| Rutas | `path` | ✔ | Matriz de cadenas | `/` | AEM rutas de acceso de la autenticación para las que se utiliza este controlador. |
+| Rutas | `path` | ✔ | Matriz de cadenas | `/` | Rutas de AEM para las que se utiliza este controlador de autenticación. |
 | URL de IDP | `idpUrl` | ✔ | Cadena |                           | Dirección URL de IDP a la que se envía la solicitud de autenticación SAML. |
-| Alias de certificado IDP | `idpCertAlias` | ✔ | Cadena |                           | AEM Alias del certificado IDP encontrado en el almacén de confianza global de la organización de la |
+| Alias de certificado IDP | `idpCertAlias` | ✔ | Cadena |                           | Alias del certificado IDP encontrado en el repositorio de confianza global de AEM |
 | Redirección HTTP de IDP | `idpHttpRedirect` | ✘ | Booleano | `false` | Indica si hay un redireccionamiento HTTP a la URL de IDP en lugar de enviar una AuthnRequest. Se estableció en `true` para la autenticación iniciada por IDP. |
-| Identificador de IDP | `idpIdentifier` | ✘ | Cadena |                           | AEM ID de IDP único para garantizar la exclusividad de usuario y grupo de la. Si está vacío, se utiliza `serviceProviderEntityId` en su lugar. |
-| URL de servicio de consumidor de afirmación | `assertionConsumerServiceURL` | ✘ | Cadena |                           | AEM Atributo de dirección URL `AssertionConsumerServiceURL` en AuthnRequest que especifica a dónde debe enviarse el mensaje `<Response>` para su envío a la dirección de correo electrónico de la dirección de correo electrónico de la dirección de correo electrónico |
-| ID de entidad de SP | `serviceProviderEntityId` | ✔ | Cadena |                           | AEM AEM Identifica de forma exclusiva a los desplazados internos, por lo general el nombre de host de la. |
+| Identificador de IDP | `idpIdentifier` | ✘ | Cadena |                           | ID de IDP único para garantizar la exclusividad de usuarios y grupos de AEM. Si está vacío, se utiliza `serviceProviderEntityId` en su lugar. |
+| URL de servicio de consumidor de afirmación | `assertionConsumerServiceURL` | ✘ | Cadena |                           | Atributo de URL `AssertionConsumerServiceURL` en AuthnRequest que especifica dónde se debe enviar el mensaje `<Response>` a AEM. |
+| ID de entidad de SP | `serviceProviderEntityId` | ✔ | Cadena |                           | Identifica de forma exclusiva a AEM con el IDP; normalmente es el nombre de host de AEM. |
 | Cifrado SP | `useEncryption` | ✘ | Booleano | `true` | Indica si el IDP cifra las afirmaciones de SAML. Requiere que se establezcan `spPrivateKeyAlias` y `keyStorePassword`. |
 | Alias de clave privada SP | `spPrivateKeyAlias` | ✘ | Cadena |                           | Alias de la clave privada en el almacén de claves del usuario `authentication-service`. Obligatorio si `useEncryption` está establecido en `true`. |
 | Contraseña del almacén de claves SP | `keyStorePassword` | ✘ | Cadena |                           | La contraseña del almacén de claves del usuario del servicio de autenticación. Obligatorio si `useEncryption` está establecido en `true`. |
-| Redirección predeterminada | `defaultRedirectUrl` | ✘ | Cadena | `/` | La URL de redireccionamiento predeterminada después de la autenticación correcta. AEM Puede ser relativo al host de la (por ejemplo, `/content/wknd/us/en/html`). |
-| Atributo de ID de usuario | `userIDAttribute` | ✘ | Cadena | `uid` | AEM Nombre del atributo de aserción de SAML que contiene el ID de usuario del usuario de la. Dejar vacío para utilizar `Subject:NameId`. |
-| AEM Crear usuarios de forma automática | `createUser` | ✘ | Booleano | `true` | AEM Indica si los usuarios de la se crean con una autenticación correcta. |
-| AEM Ruta intermedia del usuario | `userIntermediatePath` | ✘ | Cadena |                           | AEM Al crear usuarios de la, este valor se usa como ruta intermedia (por ejemplo, `/home/users/<userIntermediatePath>/jane@wknd.com`). Requiere que `createUser` se establezca en `true`. |
-| AEM Atributos de usuario de | `synchronizeAttributes` | ✘ | Matriz de cadenas |                           | AEM Lista de asignaciones de atributos SAML que se almacenarán en el usuario de la, con el formato `[ "saml-attribute-name=path/relative/to/user/node" ]` (por ejemplo, `[ "firstName=profile/givenName" ]`). AEM Vea la [lista completa de atributos de la aplicación nativa de la](#aem-user-attributes). |
-| AEM Añadir usuario a grupos de | `addGroupMemberships` | ✘ | Booleano | `true` | AEM AEM Indica si se agrega automáticamente un usuario de a los grupos de usuarios después de una autenticación correcta. |
-| AEM atributo de pertenencia a grupo | `groupMembershipAttribute` | ✘ | Cadena | `groupMembership` | AEM Nombre del atributo de aserción SAML que contiene una lista de grupos de usuarios a los que se debe agregar el usuario. Requiere que `addGroupMemberships` se establezca en `true`. |
-| AEM Grupos predeterminados | `defaultGroups` | ✘ | Matriz de cadenas |                           | AEM Siempre se agrega una lista de usuarios autenticados de grupos de usuarios (por ejemplo, `[ "wknd-user" ]`). Requiere que `addGroupMemberships` se establezca en `true`. |
+| Redirección predeterminada | `defaultRedirectUrl` | ✘ | Cadena | `/` | La URL de redireccionamiento predeterminada después de la autenticación correcta. Puede ser relativo al host de AEM (por ejemplo, `/content/wknd/us/en/html`). |
+| Atributo de ID de usuario | `userIDAttribute` | ✘ | Cadena | `uid` | Nombre del atributo de afirmación de SAML que contiene el ID de usuario del usuario de AEM. Dejar vacío para utilizar `Subject:NameId`. |
+| Crear automáticamente usuarios de AEM | `createUser` | ✘ | Booleano | `true` | Indica si los usuarios de AEM se crean con una autenticación correcta. |
+| Ruta intermedia del usuario de AEM | `userIntermediatePath` | ✘ | Cadena |                           | Al crear usuarios de AEM, este valor se usa como ruta intermedia (por ejemplo, `/home/users/<userIntermediatePath>/jane@wknd.com`). Requiere que `createUser` se establezca en `true`. |
+| Atributos de usuario de AEM | `synchronizeAttributes` | ✘ | Matriz de cadenas |                           | Lista de asignaciones de atributos SAML que se almacenarán en el usuario de AEM, con el formato `[ "saml-attribute-name=path/relative/to/user/node" ]` (por ejemplo, `[ "firstName=profile/givenName" ]`). Ver la [lista completa de atributos nativos de AEM](#aem-user-attributes). |
+| Añadir usuario a grupos de AEM | `addGroupMemberships` | ✘ | Booleano | `true` | Indica si se agrega automáticamente un usuario de AEM a los grupos de usuarios de AEM después de la autenticación correcta. |
+| atributo de pertenencia a grupo de AEM | `groupMembershipAttribute` | ✘ | Cadena | `groupMembership` | Nombre del atributo de afirmación de SAML que contiene una lista de grupos de usuarios de AEM a los que se debe agregar el usuario. Requiere que `addGroupMemberships` se establezca en `true`. |
+| Grupos de AEM predeterminados | `defaultGroups` | ✘ | Matriz de cadenas |                           | Siempre se agrega una lista de usuarios autenticados de grupos de usuarios de AEM a (por ejemplo, `[ "wknd-user" ]`). Requiere que `addGroupMemberships` se establezca en `true`. |
 | Formato de directiva de IDP de nombre | `nameIdFormat` | ✘ | Cadena | `urn:oasis:names:tc:SAML:2.0:nameid-format:transient` | Valor del parámetro de formato NameIDPolicy que se enviará en el mensaje AuthnRequest. |
-| Almacenar respuesta de SAML | `storeSAMLResponse` | ✘ | Booleano | `false` | AEM Indica si el valor `samlResponse` está almacenado en el nodo `cq:User` de la. |
+| Almacenar respuesta de SAML | `storeSAMLResponse` | ✘ | Booleano | `false` | Indica si el valor `samlResponse` está almacenado en el nodo `cq:User` de AEM. |
 | Controlar cierre de sesión | `handleLogout` | ✘ | Booleano | `false` | Indica si este controlador de autenticación SAML administra la solicitud de cierre de sesión. Requiere que se establezca `logoutUrl`. |
 | URL de desconexión | `logoutUrl` | ✘ | Cadena |                           | URL de IDP a la que se envía la solicitud de cierre de sesión de SAML. Obligatorio si `handleLogout` está establecido en `true`. |
-| Tolerancia del reloj | `clockTolerance` | ✘ | Entero | `60` | AEM La tolerancia de sesgo de reloj de IDP y de (SP) al validar aserciones de SAML. |
+| Tolerancia del reloj | `clockTolerance` | ✘ | Entero | `60` | La tolerancia de sesgo de reloj de IDP y AEM (SP) al validar afirmaciones de SAML. |
 | Método de resumen | `digestMethod` | ✘ | Cadena | `http://www.w3.org/2001/04/xmlenc#sha256` | Algoritmo de resumen que utiliza el IDP al firmar un mensaje SAML. |
 | Método de firma | `signatureMethod` | ✘ | Cadena | `http://www.w3.org/2001/04/xmldsig-more#rsa-sha256` | Algoritmo de firma que utiliza el IDP al firmar un mensaje SAML. |
 | Tipo de sincronización de identidad | `identitySyncType` | ✘ | `default` o `idp` | `default` | No cambie el valor predeterminado `from` para AEM as a Cloud Service. |
 | Clasificación del servicio | `service.ranking` | ✘ | Entero | `5002` | Se prefieren configuraciones de clasificación más alta para el mismo `path`. |
 
-### AEM Atributos de usuario de{#aem-user-attributes}
+### Atributos de usuario de AEM{#aem-user-attributes}
 
-AEM utiliza los atributos de usuario siguientes, que se pueden rellenar mediante la propiedad `synchronizeAttributes` en la configuración OSGi del Controlador de autenticación SAML 2.0 de Granite de Adobe.  AEM AEM AEM Cualquier atributo de IDP se puede sincronizar con cualquier propiedad de usuario de, pero la asignación a propiedades de atributo de uso de la aplicación de datos (enumeradas a continuación) permite a los usuarios de la aplicación utilizarlas de forma natural.
+AEM utiliza los siguientes atributos de usuario, que se pueden rellenar mediante la propiedad `synchronizeAttributes` en la configuración OSGi del Controlador de autenticación SAML 2.0 de Adobe Granite.  Cualquier atributo IDP se puede sincronizar con cualquier propiedad de usuario de AEM, pero la asignación a las propiedades de atributo de uso de AEM (enumeradas a continuación) permite que AEM los utilice de forma natural.
 
 | Atributo de usuario | Ruta de propiedad relativa desde el nodo `rep:User` |
 |--------------------------------|--------------------------|
@@ -372,7 +372,7 @@ Al [cifrar AuthnRequest y la aserción SAML](#encrypting-the-authnrequest-and-sa
 
 ## Configurar el filtro de referente
 
-Durante el proceso de autenticación de SAML, el IDP inicia un POST AEM HTTP del lado del cliente para establecer el punto final `.../saml_login` de Publish de manera que se pueda establecer en un punto de conexión de. AEM Si el IDP y el Publish AEM de la existen en un origen diferente, el __Filtro de referente__ de Publish se configura mediante la configuración OSGi para permitir POST HTTP desde el origen del IDP.
+Durante el proceso de autenticación SAML, el IDP inicia un POST HTTP del lado del cliente en el punto final `.../saml_login` de AEM Publish. Si el IDP y AEM Publish existen en un origen diferente, el __Filtro de referente__ de AEM Publish se configura mediante la configuración OSGi para permitir HTTP POST desde el origen del IDP.
 
 1. Cree (o edite) un archivo de configuración OSGi en su proyecto en `/ui.config/src/main/content/jcr_root/wknd-examples/osgiconfig/config.publish/org.apache.sling.security.impl.ReferrerFilter.cfg.json`.
    + Cambiar `/wknd-examples/` a `/<project name>/`
@@ -398,11 +398,11 @@ Las configuraciones de OSGi por entorno (`config.publish.dev`, `config.publish.s
 
 ## Configuración del intercambio de recursos de origen cruzado (CORS)
 
-Durante el proceso de autenticación de SAML, el IDP inicia un POST AEM HTTP del lado del cliente para establecer el punto final `.../saml_login` de Publish de manera que se pueda establecer en un punto de conexión de. AEM Si el IDP y el Publish AEM de la existen en hosts o dominios diferentes, se debe configurar el __uso compartido de recursos CRoss-Origin (CORS)__ de Publish para permitir POST HTTP desde el host/dominio del IDP.
+Durante el proceso de autenticación SAML, el IDP inicia un POST HTTP del lado del cliente en el punto final `.../saml_login` de AEM Publish. Si el IDP y la publicación de AEM existen en hosts/dominios diferentes, el __intercambio de recursos de origen de CRoss (CORS)__ de AEM Publish debe configurarse para permitir HTTP POST desde el host/dominio del IDP.
 
-El encabezado `Origin` de esta solicitud del POST AEM HTTP generalmente tiene un valor diferente al del host de Publish de la, por lo que requiere la configuración de CORS.
+El encabezado `Origin` de esta solicitud HTTP POST suele tener un valor diferente al host de publicación de AEM, por lo que requiere la configuración CORS.
 
-AEM Al probar la autenticación SAML en el SDK local de (`localhost:4503`), el IDP puede establecer el encabezado `Origin` en `null`. Si es así, agregue `"null"` a la lista `alloworigin`.
+Al probar la autenticación SAML en AEM SDK local (`localhost:4503`), el IDP puede establecer el encabezado `Origin` en `null`. Si es así, agregue `"null"` a la lista `alloworigin`.
 
 1. Cree un archivo de configuración OSGi en su proyecto en `/ui.config/src/main/content/jcr_root/wknd-examples/osgiconfig/config.publish/com.adobe.granite.cors.impl.CORSPolicyImpl~saml.cfg.json`
    + Cambiar `/wknd-examples/` a su nombre de proyecto
@@ -426,9 +426,9 @@ AEM Al probar la autenticación SAML en el SDK local de (`localhost:4503`), el I
 
 Las configuraciones de OSGi por entorno (`config.publish.dev`, `config.publish.stage` y `config.publish.prod`) se pueden definir con atributos específicos si `alloworigin` y `allowedpaths` varían entre entornos.
 
-## AEM Configuración de Dispatcher para permitir POST HTTP de SAML
+## Configuración de AEM Dispatcher para permitir HTTP POST de SAML
 
-Después de autenticarse correctamente en el IDP, el IDP orquestará un POST AEM HTTP para volver a configurar el punto final registrado `/saml_login` de la sesión de trabajo (configurado en el IDP) de la sesión de trabajo de la sesión de trabajo de la sesión de trabajo de la sesión de trabajo de la sesión de trabajo. Este POST HTTP de `/saml_login` está bloqueado de forma predeterminada en Dispatcher, por lo que se debe permitir explícitamente usando la siguiente regla de Dispatcher:
+Después de autenticarse correctamente en el IDP, el IDP orquestará un POST HTTP de vuelta al punto final `/saml_login` registrado de AEM (configurado en el IDP). Este POST HTTP para `/saml_login` está bloqueado de forma predeterminada en Dispatcher, por lo que debe permitirse explícitamente usando la siguiente regla de Dispatcher:
 
 1. Abra `dispatcher/src/conf.dispatcher.d/filters/filters.any` en su IDE.
 1. Agregue al final del archivo una regla de permiso para POST HTTP a direcciones URL que terminen con `/saml_login`.
@@ -441,7 +441,7 @@ Después de autenticarse correctamente en el IDP, el IDP orquestará un POST AEM
 ```
 
 >[!NOTE]
->AEM AEM Cuando implemente varias configuraciones de SAML en la administración de rutas protegidas para varias rutas y puntos finales de IDP distintos, asegúrese de que el IDP publique en el punto final RESPECTIVE_PROTECTED_PATH/saml_login para seleccionar la configuración de SAML adecuada en el lado del. Si hay configuraciones de SAML duplicadas para la misma ruta protegida, la selección de la configuración de SAML se producirá aleatoriamente.
+>Cuando implemente varias configuraciones de SAML en AEM para varias rutas protegidas y diferentes puntos de conexión de IDP, asegúrese de que el IDP publique en el punto de conexión RESPECTIVE_PROTECTED_PATH/saml_login para seleccionar la configuración de SAML adecuada en el lado de AEM. Si hay configuraciones de SAML duplicadas para la misma ruta protegida, la selección de la configuración de SAML se producirá aleatoriamente.
 
 Si está configurada la reescritura de URL en el servidor web Apache (`dispatcher/src/conf.d/rewrites/rewrite.rules`), asegúrese de que las solicitudes a los puntos finales `.../saml_login` no se manipulen accidentalmente.
 
@@ -457,7 +457,7 @@ Para ello, agregue la siguiente propiedad al archivo de configuración OSGI:
 
 `/apps/example/osgiconfig/config.publish/com.adobe.granite.auth.saml.SamlAuthenticationHandler~example.cfg.json`
 
-Con esta configuración, los usuarios y grupos se crean como [usuarios externos de Oak](https://jackrabbit.apache.org/oak/docs/security/authentication/identitymanagement.html). AEM En la práctica, los usuarios y grupos externos tienen un valor predeterminado `rep:principalName` compuesto por `[user name];[idp]` o `[group name];[idp]`.
+Con esta configuración, los usuarios y grupos se crean como [usuarios externos de Oak](https://jackrabbit.apache.org/oak/docs/security/authentication/identitymanagement.html). En AEM, los usuarios y grupos externos tienen un(a) `rep:principalName` predeterminado compuesto(a) por `[user name];[idp]` o `[group name];[idp]`.
 Observe que las Listas de control de acceso (ACL) están asociadas al nombre principal de los usuarios o grupos.
 Al implementar esta configuración en una implementación existente en la que anteriormente `identitySyncType` no se especificaba ni se establecía en `default`, se crearán nuevos usuarios y grupos y se deberá aplicar ACL a estos nuevos usuarios y grupos. Tenga en cuenta que los grupos externos no pueden contener usuarios locales. [Repoinit](https://sling.apache.org/documentation/bundles/repository-initialization.html) se puede usar para crear ACL para grupos externos SAML, incluso si solo se crearán cuando el usuario inicie sesión.
 Para evitar esta refactorización en ACL, se ha implementado una [característica de migración estándar](#automatic-migration-to-dynamic-group-membership-for-existing-environments).
@@ -579,17 +579,17 @@ Implemente la rama de Git de Cloud Manager de destino (en este ejemplo, `develop
 
 ## Invocación de la autenticación SAML
 
-AEM El flujo de autenticación SAML se puede invocar desde una página web del sitio de, creando vínculos especialmente diseñados o botones. AEM Los parámetros que se describen a continuación se pueden configurar mediante programación según sea necesario, por ejemplo, un botón de inicio de sesión puede establecer `saml_request_path`, que es donde se lleva al usuario tras la autenticación SAML correcta, en diferentes páginas de la, según el contexto del botón.
+El flujo de autenticación SAML se puede invocar desde una página web del sitio de AEM, creando vínculos especialmente diseñados o botones. Los parámetros que se describen a continuación se pueden configurar mediante programación según sea necesario, por ejemplo, un botón de inicio de sesión puede establecer `saml_request_path`, que es donde se lleva al usuario tras la autenticación SAML correcta, en diferentes páginas de AEM, según el contexto del botón.
 
 ## Almacenamiento en caché seguro mientras se usa SAML
 
-AEM En la instancia de publicación de la, la mayoría de las páginas se almacenan generalmente en caché. Sin embargo, para las rutas protegidas con SAML, el almacenamiento en caché debe deshabilitarse o el almacenamiento en caché seguro debe habilitarse mediante la configuración auth_checker. Para obtener más información, consulte los detalles proporcionados [aquí](https://experienceleague.adobe.com/es/docs/experience-manager-dispatcher/using/configuring/permissions-cache)
+En la instancia de publicación de AEM, la mayoría de las páginas se almacenan generalmente en caché. Sin embargo, para las rutas protegidas con SAML, el almacenamiento en caché debe deshabilitarse o el almacenamiento en caché seguro debe habilitarse mediante la configuración auth_checker. Para obtener más información, consulte los detalles proporcionados [aquí](https://experienceleague.adobe.com/es/docs/experience-manager-dispatcher/using/configuring/permissions-cache)
 
 Tenga en cuenta que si almacena en caché rutas protegidas sin habilitar el auth_checker, puede experimentar un comportamiento impredecible.
 
-### petición de GET
+### petición GET
 
-La autenticación SAML se puede invocar creando una solicitud de GET HTTP con el formato:
+La autenticación SAML se puede invocar creando una petición HTTP GET con el formato:
 
 `HTTP GET /system/sling/login`
 
@@ -608,9 +608,9 @@ Por ejemplo, este vínculo de HTML almacenará en déclencheur el flujo de inici
 </a>
 ```
 
-## petición del POST
+## petición POST
 
-La autenticación SAML se puede invocar creando una solicitud de POST HTTP con el formato:
+La autenticación SAML se puede invocar creando una solicitud HTTP POST con el formato:
 
 `HTTP POST /system/sling/login`
 
@@ -634,9 +634,9 @@ Por ejemplo, este botón de HTML utilizará un POST HTTP para almacenar en décl
 
 ### Configuración de Dispatcher
 
-Tanto el método GET como el método POST AEM AEM de HTTP requieren acceso de cliente a los extremos de `/system/sling/login` que se van a usar, por lo que se deben permitir a través de la de Dispatcher.
+Tanto el método HTTP GET como el método POST requieren acceso de cliente a los extremos `/system/sling/login` de AEM y, por lo tanto, se deben permitir a través de AEM Dispatcher.
 
-Permitir los patrones de URL necesarios en función de si se utiliza el GET o el POST
+Permitir los patrones de URL necesarios en función de si se utiliza GET o POST
 
 ```
 # Allow GET-based SAML authentication invocation

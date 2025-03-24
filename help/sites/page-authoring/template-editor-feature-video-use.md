@@ -2,7 +2,7 @@
 title: Uso de plantillas de página editables con AEM Sites
 description: Las plantillas editables permiten a los autores especializados crear y actualizar plantillas de página y administrar configuraciones de directiva avanzadas con AEM Sites.
 feature: Editable Templates
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-193
 topic: Content Management
 role: User
@@ -10,10 +10,10 @@ level: Beginner
 doc-type: Feature Video
 exl-id: 2213d1f2-37ed-4897-a68d-04ef423395a3
 duration: 369
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '189'
-ht-degree: 1%
+ht-degree: 5%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 {{edge-delivery-services-and-page-editor}}
 
-Las plantillas editables permiten a los autores especializados crear y actualizar plantillas de página y administrar configuraciones de directiva avanzadas con Adobe Experience Manager AEM () Sites.
+Las plantillas editables permiten a los autores especializados crear y actualizar plantillas de página y administrar configuraciones de directiva avanzadas con Adobe Experience Manager (AEM) Sites.
 
 >[!VIDEO](https://video.tv.adobe.com/v/326784?quality=12&learn=on)
 
@@ -36,7 +36,7 @@ Las plantillas editables son la recomendación para crear una nueva AEM Sites.
 * **Componente de imagen**: capacidad para activar o desactivar características como el recorte, la carga de archivos en el escritorio con una nueva interfaz de usuario y la reutilización de directivas de imagen en todas las plantillas.
 
 Se pueden encontrar plantillas editables en **Herramientas** `>` **General** `>` **Plantillas**.\
-AEM URL de plantillas editables (instancia local de): [http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
+URL de plantillas editables (instancia local de AEM): [http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
 
 ## Recursos adicionales {#additional-resources}
 

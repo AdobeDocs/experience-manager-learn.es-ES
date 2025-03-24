@@ -1,7 +1,7 @@
 ---
-title: Flujo de trabajo de temas | AEM Creación rápida de sitios de
-description: Obtenga información sobre cómo actualizar las fuentes de temas de un sitio de Adobe Experience Manager para aplicar estilos específicos de marca. Aprenda a utilizar un servidor proxy para ver una vista previa activa de las actualizaciones de CSS y Javascript. AEM Este tutorial también explica cómo implementar actualizaciones de temas en un sitio de mediante la canalización front-end de Adobe Cloud Manager.
-version: Cloud Service
+title: Flujo de trabajo de temas | Creación rápida de sitios de AEM
+description: Obtenga información sobre cómo actualizar las fuentes de temas de un sitio de Adobe Experience Manager para aplicar estilos específicos de marca. Aprenda a utilizar un servidor proxy para ver una vista previa activa de las actualizaciones de CSS y Javascript. Este tutorial también explica cómo implementar actualizaciones de temas en un sitio de AEM mediante la canalización front-end de Adobe Cloud Manager.
+version: Experience Manager as a Cloud Service
 feature: Core Components
 topic: Content Management, Development
 role: Developer
@@ -12,7 +12,7 @@ doc-type: Tutorial
 exl-id: 98946462-1536-45f9-94e2-9bc5d41902d4
 recommendations: noDisplay, noCatalog
 duration: 1275
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 # Flujo de trabajo de temas {#theming}
 
-En este capítulo actualizamos las fuentes temáticas de un sitio Adobe Experience Manager para aplicar estilos específicos de marca. Aprendemos a utilizar un servidor proxy para ver una previsualización de las actualizaciones de CSS y Javascript a medida que codificamos en el sitio activo. AEM Este tutorial también explica cómo implementar actualizaciones de temas en un sitio de mediante la canalización front-end de Adobe Cloud Manager.
+En este capítulo actualizamos las fuentes temáticas de un sitio Adobe Experience Manager para aplicar estilos específicos de marca. Aprendemos a utilizar un servidor proxy para ver una previsualización de las actualizaciones de CSS y Javascript a medida que codificamos en el sitio activo. Este tutorial también explica cómo implementar actualizaciones de temas en un sitio de AEM mediante la canalización front-end de Adobe Cloud Manager.
 
 Al final, nuestro sitio se actualiza para incluir estilos que coincidan con la marca WKND.
 
@@ -43,8 +43,8 @@ A continuación, realice cambios en las fuentes de temas para que el sitio coinc
 
 Pasos de alto nivel para el vídeo:
 
-1. AEM Cree un usuario local en el entorno de trabajo para utilizarlo con un servidor de desarrollo de proxy.
-1. AEM Descargue las fuentes de temas desde el entorno de trabajo y ábralas con un IDE local, como VSCode.
+1. Cree un usuario local en AEM para utilizarlo con un servidor de desarrollo proxy.
+1. Descargue las fuentes de temas de AEM y ábralas con un IDE local, como VSCode.
 1. Modifique las fuentes de temas y utilice un servidor de desarrollo proxy para previsualizar los cambios de CSS y JavaScript en tiempo real.
 1. Actualice las fuentes del tema para que el artículo de la revista coincida con los estilos y maquetas de la marca WKND.
 
@@ -54,7 +54,7 @@ Descargar los estilos finalizados para el [Tema de muestra WKND](assets/theming/
 
 ## Implementar un tema mediante una canalización front-end {#deploy-theme}
 
-AEM Implementar actualizaciones de un tema en un entorno de mediante la canalización front-end de Cloud Manager.
+Implementar actualizaciones en un tema en un entorno de AEM mediante la canalización front-end de Cloud Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/338722?quality=12&learn=on)
 
@@ -72,7 +72,7 @@ Pasos de alto nivel para el vídeo:
    ```
 
 1. Configure una [canalización front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html) en Cloud Manager para implementar el código front-end.
-1. AEM Ejecute la canalización front-end para implementar actualizaciones en el entorno de destino de la aplicación de destino
+1. Ejecute la canalización front-end para implementar actualizaciones en el entorno de AEM de destino.
 
 ### Cesiones temporales de ejemplo
 
@@ -83,8 +83,8 @@ Hay un par de repositorios de GitHub de ejemplo que pueden utilizarse como refer
 
 ## Enhorabuena. {#congratulations}
 
-AEM ¡Enhorabuena, acaba de actualizar e implementar un tema para la creación de informes
+¡Felicidades, acaba de actualizar e implementar un tema en AEM!
 
 ### Siguientes pasos {#next-steps}
 
-AEM AEM Obtenga información más detallada sobre el desarrollo de la y comprenda mejor la tecnología subyacente creando un sitio con el [Arquetipo de proyecto de la comunidad](../project-archetype/overview.md).
+Obtenga información más detallada sobre el desarrollo de AEM y comprenda más sobre la tecnología subyacente creando un sitio con el [Arquetipo de proyecto de AEM](../project-archetype/overview.md).

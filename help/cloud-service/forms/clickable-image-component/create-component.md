@@ -4,12 +4,12 @@ description: Creación de un componente de imagen en el que se puede hacer clic 
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Adaptive Forms
 topic: Development
 jira: KT-15968
 exl-id: b635f171-775d-480e-bf7a-c92ab4af0aee
-source-git-commit: b4df652fcda0af5d01077b97aa7fa17cfe2abf4b
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 1%
@@ -47,7 +47,7 @@ Cree un archivo llamado .content.xml en el nodo svg. Añada el siguiente conteni
 
 ## Crear svg.html
 
-Cree un archivo llamado svg.html. Este archivo mostrará el SVG del mapa de EE. UU. Copie el contenido de [svg.html](assets/svg.html) en el archivo recién creado. Lo que ha copiado es el mapa del SVG de Estados Unidos. Guarde el archivo.
+Cree un archivo llamado svg.html. Este archivo procesará el SVG del mapa de EE. UU. Copie el contenido de [svg.html](assets/svg.html) en el archivo recién creado. Lo que has copiado es el mapa de SVG of USA. Guarde el archivo.
 
 ## Implemente el proyecto
 

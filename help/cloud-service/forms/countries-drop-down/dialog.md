@@ -5,12 +5,13 @@ solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Adaptive Forms
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16517
-source-git-commit: f9a1fb40aabb6fdc1157e1f2576f9c0d9cf1b099
+exl-id: e1e5745e-96fb-46c6-aa7f-43cdf2dfddbc
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 1%
@@ -23,10 +24,10 @@ El componente Países hereda la estructura de diálogo del componente desplegabl
 
 La forma más sencilla de crear este cuadro de diálogo es la siguiente:
 
-1. AEM En el proyecto de, cree una carpeta denominada _cq_dialog en la carpeta de componentes países.
+1. En el proyecto de AEM, cree una carpeta denominada _cq_dialog en la carpeta de componentes países.
 2. Dentro de la carpeta _cq_dialog, cree un archivo denominado .content.xml.
 3. Pegue el código XML proporcionado a continuación en este archivo.
-4. AEM Guarde los cambios y sincronice el proyecto con los recursos de la.
+4. Guarde los cambios y sincronice el proyecto con AEM.
 
 Esto añadirá la configuración del cuadro de diálogo para el componente Países.
 

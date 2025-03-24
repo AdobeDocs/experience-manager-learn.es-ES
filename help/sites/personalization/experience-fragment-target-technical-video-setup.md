@@ -1,8 +1,8 @@
 ---
-title: Configuración de la integración de fragmentos de experiencias y Adobe Target AEM en
-description: Adobe Experience Manager AEM 6.4 reimagina el flujo de trabajo de personalización entre Adobe y Target. AEM Ahora, las experiencias creadas dentro de los grupos de informes se pueden enviar directamente a Adobe Target como ofertas de HTML. Permite a los especialistas en marketing probar y personalizar el contenido sin problemas en diferentes canales.
+title: Configuración de la integración de fragmentos de experiencias y Adobe Target en AEM
+description: Adobe Experience Manager 6.4 reimagina el flujo de trabajo de personalización entre AEM y Target. Las experiencias creadas en AEM ahora se pueden enviar directamente a Adobe Target como ofertas de HTML. Permite a los especialistas en marketing probar y personalizar el contenido sin problemas en diferentes canales.
 feature: Experience Fragments
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 discoiquuid: 16cb0b92-9398-4fd2-b8c3-f4b7675ef72c
 topic: Personalization
 role: Admin, Developer
@@ -10,7 +10,7 @@ level: Intermediate
 doc-type: Technical Video
 exl-id: 9c139a36-e3c5-407e-af5d-b4fb8860f5a2
 duration: 238
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 2%
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 # Configuración de fragmentos de experiencias e integración con Adobe Target{#set-up-experience-fragments-and-adobe-target-integration}
 
-Adobe Experience Manager AEM 6.4 reimagina el flujo de trabajo de personalización entre Adobe y Target. AEM Ahora, las experiencias creadas dentro de los grupos de informes se pueden enviar directamente a Adobe Target como ofertas de HTML. Permite a los especialistas en marketing probar y personalizar el contenido sin problemas en diferentes canales.
+Adobe Experience Manager 6.4 reimagina el flujo de trabajo de personalización entre AEM y Target. Las experiencias creadas en AEM ahora se pueden enviar directamente a Adobe Target como ofertas de HTML. Permite a los especialistas en marketing probar y personalizar el contenido sin problemas en diferentes canales.
 
 >[!VIDEO](https://video.tv.adobe.com/v/22380?quality=12&learn=on)
 

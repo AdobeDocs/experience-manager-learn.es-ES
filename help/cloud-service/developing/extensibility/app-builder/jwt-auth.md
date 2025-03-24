@@ -2,7 +2,7 @@
 title: Generar token de acceso JWT en la acción de App Builder
 description: Obtenga información sobre cómo generar un token de acceso utilizando las credenciales de JWT para su uso en una acción de App Builder.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Intermediate
@@ -10,7 +10,7 @@ jira: KT-11743
 last-substantial-update: 2023-01-17T00:00:00Z
 exl-id: 9a3fed96-c99b-43d1-9dba-a4311c65e5b9
 duration: 151
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # Generar token de acceso JWT en la acción de App Builder
 
-Es posible que las acciones de App Builder tengan que interactuar con las API de Adobe asociadas con los proyectos de Adobe Developer Console en los que está implementada la aplicación de App Builder.
+Es posible que las acciones de App Builder deban interactuar con las API de Adobe asociadas con los proyectos de Adobe Developer Console en los que está implementada la aplicación de App Builder.
 
 Esto puede requerir que la acción de App Builder genere su propio token de acceso JWT asociado con el proyecto de Adobe Developer Console deseado.
 
@@ -50,7 +50,7 @@ Los valores de `JWT_CLIENT_ID`, `JWT_CLIENT_SECRET`, `JWT_TECHNICAL_ACCOUNT_ID`,
 
 ### Metascopios
 
-Determine las API de Adobe y sus metascopios con los que interactúa la acción App Builder. Enumerar metascopios con delimitadores de coma en la clave `JWT_METASCOPES`. Los metascopios válidos se enumeran en [Documentación del Metascopio JWT de Adobe](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/Scopes/).
+Determine las API de Adobe y sus metascopios con los que interactúa la acción de App Builder. Enumerar metascopios con delimitadores de coma en la clave `JWT_METASCOPES`. Los metascopios válidos se enumeran en [Documentación del Metascopio JWT de Adobe](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/Scopes/).
 
 
 Por ejemplo, el siguiente valor podría agregarse a la clave `JWT_METASCOPES` en `.env`:

@@ -2,7 +2,7 @@
 title: Generar token de acceso de servidor a servidor en la acción de App Builder
 description: Obtenga información sobre cómo generar un token de acceso mediante las credenciales de servidor a servidor de OAuth para su uso en una acción de App Builder.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Intermediate
@@ -10,7 +10,7 @@ jira: KT-14724
 last-substantial-update: 2024-02-29T00:00:00Z
 duration: 122
 exl-id: 919cb9de-68f8-4380-940a-17274183298f
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Generar token de acceso de servidor a servidor en la acción de App Builder
 
-Es posible que las acciones de App Builder deban interactuar con las API de Adobe que admiten **OAuth Server-to-Server credentials** y que están asociadas con proyectos de Adobe Developer Console en los que está implementada la aplicación de App Builder.
+Es posible que las acciones de App Builder deban interactuar con las API de Adobe que admiten **credenciales de servidor a servidor OAuth** y están asociadas a proyectos de Adobe Developer Console en los que está implementada la aplicación de App Builder.
 
 En esta guía se explica cómo generar un token de acceso utilizando _OAuth Server-to-Server credentials_ para su uso en una acción de App Builder.
 
@@ -87,9 +87,9 @@ Las claves definidas en `inputs` están disponibles en el objeto `params` propor
 
 ## Credenciales de servidor a servidor OAuth para el token de acceso
 
-En la acción App Builder, las credenciales de servidor a servidor OAuth están disponibles en el objeto `params`. Estas credenciales permiten generar el token de acceso con [bibliotecas OAuth 2.0](https://oauth.net/code/). O puede usar la [biblioteca de búsqueda de nodos](https://www.npmjs.com/package/node-fetch) para realizar una solicitud al POST al extremo del token de IMS de Adobe y obtener el token de acceso.
+En la acción App Builder, las credenciales de servidor a servidor OAuth están disponibles en el objeto `params`. Estas credenciales permiten generar el token de acceso con [bibliotecas OAuth 2.0](https://oauth.net/code/). O puede usar la [biblioteca de búsqueda de nodos](https://www.npmjs.com/package/node-fetch) para realizar una petición POST al extremo del token de Adobe IMS y obtener el token de acceso.
 
-En el ejemplo siguiente se muestra cómo utilizar la biblioteca `node-fetch` para realizar una solicitud de POST al extremo de token de IMS de Adobe a fin de obtener el token de acceso.
+En el siguiente ejemplo se muestra cómo utilizar la biblioteca `node-fetch` para realizar una petición POST al extremo del token de IMS de Adobe a fin de obtener el token de acceso.
 
 ```javascript
 const fetch = require("node-fetch");

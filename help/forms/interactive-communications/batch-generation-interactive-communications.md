@@ -3,14 +3,14 @@ title: Usar la API por lotes para generar documentos de comunicación interactiv
 description: Recursos de muestra para generar documentos de canal de impresión mediante API por lotes
 feature: Interactive Communication
 doc-type: article
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: 2cdf37e6-42ad-469a-a6e4-a693ab2ca908
 last-substantial-update: 2019-07-07T00:00:00Z
 duration: 77
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 16%
@@ -41,7 +41,7 @@ Este artículo proporciona recursos de ejemplo para generar documentos de comuni
 * Descargue y extraiga el contenido de [archivo zip](assets/jsonfile.zip). El archivo zip contiene la carpeta denominada `jsonfile`, que contiene el archivo `beneficiaries.json`. Este archivo tiene los datos para generar 3 documentos.
 
 * Coloque la carpeta `jsonfile` en la carpeta de entrada de la carpeta vigilada.
-* Una vez que la carpeta se recoja para procesarla, compruebe la carpeta de resultados de la carpeta vigilada. Debería ver 3 archivos de PDF generados
+* Una vez que la carpeta se recoja para procesarla, compruebe la carpeta de resultados de la carpeta vigilada. Debería ver 3 archivos PDF generados
 
 ## Generación por lotes mediante solicitudes REST
 
