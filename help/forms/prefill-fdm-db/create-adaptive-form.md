@@ -2,7 +2,7 @@
 title: Crear formulario adaptable
 description: Crear y configurar formularios adaptables para utilizar el servicio de rellenado previo del modelo de datos de formulario
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-5813
 thumbnail: kt-5813.jpg
 topic: Development
@@ -10,7 +10,7 @@ role: User
 level: Beginner
 exl-id: c8d4eed8-9e2b-458c-90d8-832fc9e0ad3f
 duration: 124
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '598'
 ht-degree: 2%
@@ -98,7 +98,7 @@ Ahora necesitamos abrir el formulario con el empID apropiado en la URL. Los dos 
 [Formulario con empID=207](http://localhost:4502/content/dam/formsanddocuments/fdmdemo/jcr:content?wcmmode=disabled&amp;empID=207)
 [Formulario con empID=208](http://localhost:4502/content/dam/formsanddocuments/fdmdemo/jcr:content?wcmmode=disabled&amp;empID=208)
 
-## Resolución de problemas
+## Solución de problemas
 
 Mi formulario está en blanco y no contiene datos
 

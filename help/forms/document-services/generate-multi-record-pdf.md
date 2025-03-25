@@ -2,7 +2,7 @@
 title: Generación de varios PDF a partir de un archivo de datos
 description: OutputService proporciona una serie de métodos para crear documentos utilizando un diseño de formulario y datos para combinarlos con el diseño de formulario. Aprenda a generar varios PDF a partir de un xml grande que contenga varios registros individuales.
 feature: Output Service
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
@@ -11,14 +11,14 @@ last-substantial-update: 2020-01-07T00:00:00Z
 duration: 138
 jira: KT-16142
 badgeVersions: label="AEM Forms 6.5" before-title="false"
-source-git-commit: 8cadbe92a7a2f47c33b0ca0fcf7313dc418ae7a4
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 0%
 
 ---
 
-# Generación de un conjunto de documentos de PDF a partir de un archivo de datos xml
+# Generar un conjunto de documentos de PDF a partir de un archivo de datos xml
 
 OutputService proporciona una serie de métodos para crear documentos utilizando un diseño de formulario y datos para combinarlos con el diseño de formulario. En el siguiente artículo se explica el caso de uso para generar varios pdf a partir de un xml grande que contiene varios registros individuales.
 A continuación se muestra la captura de pantalla del archivo xml que contiene varios registros.
@@ -37,7 +37,7 @@ La firma del método generatePDFOutputBatch emplea los parámetros siguientes
 
 ## Detalles del caso de uso{#use-case-details}
 
-En este caso de uso, proporcionaremos una interfaz web sencilla para cargar la plantilla y el archivo data(xml). Una vez finalizada la carga de los archivos y enviada la solicitud del POST AEM al servlet de la aplicación, se envía a los servidores de la aplicación. Este servlet extrae los documentos y llama al método generatePDFOutputBatch de OutputService. Los archivos PDF generados se comprimen en un archivo zip y se ponen a disposición del usuario final para que los descargue del explorador web.
+En este caso de uso, proporcionaremos una interfaz web sencilla para cargar la plantilla y el archivo data(xml). Una vez completada la carga de los archivos y enviada la petición POST al servlet de AEM. Este servlet extrae los documentos y llama al método generatePDFOutputBatch de OutputService. Los archivos PDF generados se comprimen en un archivo zip y se ponen a disposición del usuario final para que los descargue del explorador web.
 
 ## Código servlet{#servlet-code}
 

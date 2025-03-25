@@ -1,32 +1,32 @@
 ---
-title: AEM Uso de CAPTCHA con Forms adaptable de la
-description: AEM Adición y uso de un CAPTCHA con Forms adaptable de.
+title: Uso de CAPTCHA con Forms adaptable de AEM
+description: Agregar y usar un CAPTCHA con un Forms adaptable de AEM.
 feature: Adaptive Forms,Workflow
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: 7e5dcc6e-fe56-49af-97e3-7dfaa9c8738f
 last-substantial-update: 2019-06-09T00:00:00Z
 duration: 260
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 0%
 
 ---
 
-# AEM Uso de CAPTCHA con Forms adaptable de la{#using-captchas-with-aem-adaptive-forms}
+# Uso de CAPTCHA con Forms adaptable de AEM{#using-captchas-with-aem-adaptive-forms}
 
-AEM Adición y uso de un CAPTCHA con Forms adaptable de.
+Agregar y usar un CAPTCHA con un Forms adaptable de AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18336?quality=12&learn=on)
 
-AEM AEM *Este vídeo muestra el proceso de agregar un CAPTCHA a un formulario adaptable de la aplicación mediante un formulario adaptable de la aplicación que utiliza tanto el servicio integrado de CAPTCHA como el servicio reCAPTCHA de Google.*
+*Este vídeo muestra el proceso de agregar un CAPTCHA a un formulario adaptable de AEM mediante el servicio AEM CAPTCHA integrado y el servicio reCAPTCHA de Google.*
 
 >[!NOTE]
 >
->AEM Esta función solo está disponible a partir de la versión 6.3 de la versión de.
+>Esta función solo está disponible a partir de AEM 6.3.
 
 >[!NOTE]
 >
@@ -53,7 +53,7 @@ Vaya al ID del paquete en el sistema de archivos de la instancia de publicación
 * elimine los archivos HMAC y maestros existentes.
 * pegue los archivos HMAC y maestro copiados de la instancia de autor
 >
-AEM Reinicie el servidor de publicación de la
+Reinicie el servidor de publicación de AEM
 
 ## Materiales de apoyo {#supporting-materials}
 

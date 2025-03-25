@@ -3,13 +3,13 @@ title: 'Almacenar y recuperar datos de formulario de la base de datos MySQL: cre
 description: Tutorial de varias partes para guiarle por los pasos necesarios para almacenar y recuperar datos de formulario
 feature: Adaptive Forms
 type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: eef98a55-80d0-4598-abf2-02a6c5247b64
 duration: 90
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Crear biblioteca de cliente
 
-AEM La biblioteca de clientes de administra todo el código JavaScript del lado del cliente. Para este artículo, he creado una JavaScript sencilla para recuperar los datos del formulario adaptable mediante la API de Guide Bridge. Una vez recuperados los datos del formulario adaptable, se realiza la llamada al POST al servlet para insertar o actualizar los datos del formulario adaptable en la base de datos. La función getALLUrlParams devuelve los parámetros de la dirección URL. Si el parámetro guid está presente en la dirección URL, es necesario realizar la operación de actualización; en caso contrario, se trata de una operación de inserción. El resto de la funcionalidad se controla en el código asociado con el evento de clic de la clase .savebutton.
+La biblioteca de clientes de AEM administra todo el código JavaScript del lado del cliente. Para este artículo, he creado una JavaScript sencilla para recuperar los datos del formulario adaptable mediante la API de Guide Bridge. Una vez recuperados los datos del formulario adaptable, se realiza la llamada de POST al servlet para insertar o actualizar los datos del formulario adaptable en la base de datos. La función getALLUrlParams devuelve los parámetros de la dirección URL. Si el parámetro guid está presente en la dirección URL, es necesario realizar la operación de actualización; en caso contrario, se trata de una operación de inserción. El resto de la funcionalidad se controla en el código asociado con el evento de clic de la clase .savebutton.
 
 >[!NOTE]
 >

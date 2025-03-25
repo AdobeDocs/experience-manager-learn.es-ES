@@ -2,7 +2,7 @@
 title: Rellenado previo de formularios adaptables mediante el perfil ACS
 description: Relleno previo de Forms adaptable con el perfil ACS
 feature: Adaptive Forms, Form Data Model
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Integrations, Development
 role: Developer
 level: Experienced
@@ -10,7 +10,7 @@ badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: 502f4bdf-d4af-409f-a611-62b7a1a6065a
 duration: 144
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 1%
@@ -23,7 +23,7 @@ En esta parte, rellenamos previamente el formulario adaptable con información d
 
 Para obtener más información sobre cómo rellenar previamente formularios adaptables, lea este [tutorial](https://helpx.adobe.com/experience-manager/kt/forms/using/prefill-service-adaptive-forms-article-use.html).
 
-AEM Para rellenar previamente el formulario adaptable mediante la recuperación de datos de ACS, suponemos que hay un perfil en ACS que tiene el mismo correo electrónico que el usuario que ha iniciado sesión en el servicio de correo electrónico de. AEM Por ejemplo, si el ID de correo electrónico de la persona que ha iniciado sesión en es csimms@adobe.com, se espera encontrar un perfil en ACS cuyo correo electrónico es csimms@adobe.com.
+Para rellenar previamente el formulario adaptable recuperando datos de ACS, suponemos que hay un perfil en ACS que tiene el mismo correo electrónico que el usuario de AEM que ha iniciado sesión. Por ejemplo, si el ID de correo electrónico de la persona que ha iniciado sesión en AEM es csimms@adobe.com, se espera encontrar un perfil en ACS cuyo correo electrónico es csimms@adobe.com.
 
 Se necesitan los siguientes pasos para recuperar información de perfil de ACS mediante la API de REST
 
@@ -39,7 +39,7 @@ Asociar el servicio de rellenado previo con el formulario adaptable
 
 El siguiente es el código para recuperar y devolver información de perfil de ACS.
 
-AEM En la línea 68 recuperamos el ID de correo electrónico del usuario de la. Los detalles del perfil se recuperan realizando una llamada de REST a Adobe Campaign Standard. A partir de los detalles del perfil recuperado, el documento XML se construye de una manera que AEM Forms entiende. AEM Forms devuelve el flujo de entrada de este documento para que lo consuma.
+En la línea 68 recuperamos el ID de correo electrónico del usuario de AEM. Los detalles del perfil se recuperan realizando una llamada de REST a Adobe Campaign Standard. A partir de los detalles del perfil recuperado, el documento XML se construye de una manera que AEM Forms entiende. AEM Forms devuelve el flujo de entrada de este documento para que lo consuma.
 
 ```java
 package aemforms.campaign.core;
@@ -234,8 +234,8 @@ return "Pre Fill Forms Using Campaign Profile";
 Para que esto funcione en su sistema, siga las siguientes instrucciones:
 
 * [Asegúrese de haber seguido los pasos descritos aquí](aem-forms-with-campaign-standard-getting-started-tutorial.md)
-* [AEM Importación de formularios adaptables de muestra en mediante el administrador de paquetes](assets/pre-fill-af-from-campaign.zip)
-* AEM Asegúrese de iniciar sesión en el servicio de acceso con un usuario cuyo ID de correo electrónico haya sido compartido por un perfil en Adobe Campaign. AEM Por ejemplo, si el ID de correo electrónico del usuario de la es johndoe@adobe.com, debe tener un perfil en ACS cuyo correo electrónico sea johndoe@adobe.com.
+* [Importar formularios adaptables de muestra en AEM mediante el administrador de paquetes](assets/pre-fill-af-from-campaign.zip)
+* Asegúrese de iniciar sesión en AEM con un usuario cuyo ID de correo electrónico haya sido compartido por un perfil en Adobe Campaign. Por ejemplo, si el ID de correo electrónico del usuario de AEM es johndoe@adobe.com, debe tener un perfil en ACS cuyo correo electrónico sea johndoe@adobe.com.
 * [Vista previa del formulario](http://localhost:4502/content/dam/formsanddocuments/prefillfromcampaign/jcr:content?wcmmode=disabled).
 
 ## Siguientes pasos

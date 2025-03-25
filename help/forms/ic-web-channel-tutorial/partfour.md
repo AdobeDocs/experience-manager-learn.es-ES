@@ -3,14 +3,14 @@ title: Creación de AEM Forms de plantilla de documento de canal web
 description: Esta es la parte 4 del tutorial de varios pasos para crear su primer documento de comunicaciones interactivas. En esta parte, crearemos una plantilla para el documento del canal web.
 feature: Interactive Communication
 doc-type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 discoiquuid: 95ca401b-69ea-49e2-a9ae-e144444e481e
 topic: Development
 role: Developer
 level: Beginner
 exl-id: d742d77b-a064-46e8-862a-2d3e1cc56f63
 duration: 799
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '126'
 ht-degree: 1%

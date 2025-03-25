@@ -2,7 +2,7 @@
 title: Extracción de datos de OCR
 description: Extraer datos de documentos emitidos por el gobierno para rellenar formularios.
 feature: Barcoded Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6679
 topic: Development
 role: Developer
@@ -10,7 +10,7 @@ level: Intermediate
 exl-id: 1532a865-4664-40d9-964a-e64463b49587
 last-substantial-update: 2019-07-07T00:00:00Z
 duration: 145
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '661'
 ht-degree: 1%
@@ -33,7 +33,7 @@ Cree una cuenta de desarrollador con [ID Analyzer](https://portal.idanalyzer.com
 
 La especificación OpenAPI (anteriormente Especificación de Swagger) es un formato de descripción de API para las API de REST. Un archivo OpenAPI permite describir toda la API, lo que incluye:
 
-* Puntos finales (/users) y operaciones disponibles en cada punto final (GET /users, POST /users)
+* Extremos disponibles (/users) y operaciones en cada extremo (GET /users, POST /users)
 * Parámetros de operación Entrada y salida para cada operación
 Métodos de autenticación
 * Información de contacto, licencia, condiciones de uso y otra información.
@@ -83,7 +83,7 @@ Se admite lo siguiente con una referencia a la definición de requestBody
 
 ## Crear Source de datos
 
-AEM Para integrar el servicio de datos de AEM Forms/con aplicaciones de terceros, necesitamos [crear una fuente de datos](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) en la configuración de los servicios en la nube. Use [archivo swagger](assets/drivers-license-swagger.zip) para crear su fuente de datos.
+Para integrar AEM/AEM Forms con aplicaciones de terceros, necesitamos [crear una fuente de datos](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) en la configuración de los servicios en la nube. Use [archivo swagger](assets/drivers-license-swagger.zip) para crear su fuente de datos.
 
 ## Crear modelo de datos de formulario
 
@@ -98,17 +98,17 @@ La biblioteca de cliente se puede descargar [desde aquí.](assets/drivers-licens
 
 ## Crear formulario adaptable
 
-Integre las invocaciones del POST al modelo de datos de formulario con el formulario adaptable para extraer datos del documento cargado por el usuario en el formulario. Puede crear su propio formulario adaptable y utilizar la invocación del POST del modelo de datos de formulario para enviar la cadena codificada en base64 del documento cargado.
+Integre las invocaciones POST del modelo de datos de formulario con el formulario adaptable para extraer datos del documento cargado por el usuario en el formulario. Puede crear su propio formulario adaptable y utilizar la invocación POST del modelo de datos de formulario para enviar la cadena codificada en base64 del documento cargado.
 
 ## Implementación en el servidor
 
 Si desea utilizar los recursos de ejemplo con la clave de API, siga estos pasos:
 
-* AEM [Descargue la fuente de datos](assets/drivers-license-source.zip) e impórtela a los archivos de importación mediante el uso de [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp).
-* AEM [Descargue el modelo de datos de formulario](assets/drivers-license-fdm.zip) e impórtelo a las carpetas mediante el uso de [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp).
+* [Descargue el origen de datos](assets/drivers-license-source.zip) e impórtelo a AEM mediante [el administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
+* [Descargue el modelo de datos de formulario](assets/drivers-license-fdm.zip) e impórtelo a AEM mediante [el administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
 * [Descargar la biblioteca del cliente](assets/drivers-license-client-lib.zip)
 * Descargar el formulario adaptable de ejemplo [descargado desde aquí](assets/adaptive-form-dl.zip). Este formulario de ejemplo utiliza las invocaciones de servicio del modelo de datos de formulario que se proporciona como parte de este artículo.
-* AEM Importe el formulario a los recursos desde la interfaz de usuario de [Forms y el documento](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Importe el formulario en AEM desde [Forms y la interfaz de usuario del documento](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Abra el formulario en [modo de edición.](http://localhost:4502/editor.html/content/forms/af/driverslicenseandpassport.html)
 * Especifique la clave de API como valor predeterminado en el campo apikey y guarde los cambios
 * Abra el editor de reglas para el campo Base 64 String. Observe la invocación del servicio cuando se cambia el valor de este campo.

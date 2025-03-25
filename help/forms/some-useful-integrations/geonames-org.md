@@ -2,7 +2,7 @@
 title: Listas desplegables en cascada
 description: Rellene listas desplegables basadas en una selección de lista desplegable anterior.
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-9724
 topic: Development
 role: Developer
@@ -10,7 +10,7 @@ level: Intermediate
 exl-id: f1f2cacc-9ec4-46d6-a6af-dac3f663de78
 last-substantial-update: 2021-02-07T00:00:00Z
 duration: 185
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 1%
@@ -38,7 +38,7 @@ Cree una cuenta de desarrollador con [Geonames](https://www.geonames.org/login).
 
 La especificación OpenAPI (anteriormente Especificación de Swagger) es un formato de descripción de API para las API de REST. Un archivo OpenAPI permite describir toda la API, lo que incluye:
 
-* Puntos finales (/users) y operaciones disponibles en cada punto final (GET /users, POST /users)
+* Extremos disponibles (/users) y operaciones en cada extremo (GET /users, POST /users)
 * Parámetros de operación Entrada y salida para cada operación
 Métodos de autenticación
 * Información de contacto, licencia, condiciones de uso y otra información.
@@ -53,7 +53,7 @@ Use el [editor swagger](https://editor.swagger.io/) para crear su archivo swagge
 
 ## Creación de fuentes de datos
 
-AEM Para integrar el servicio de datos de AEM Forms/con aplicaciones de terceros, necesitamos [crear una fuente de datos](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) en la configuración de los servicios en la nube. Use los [archivos swagger](assets/geonames-swagger-files.zip) para crear sus fuentes de datos.
+Para integrar AEM/AEM Forms con aplicaciones de terceros, necesitamos [crear una fuente de datos](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) en la configuración de los servicios en la nube. Use los [archivos swagger](assets/geonames-swagger-files.zip) para crear sus fuentes de datos.
 Deberá crear 2 fuentes de datos (una para recuperar todos los países y otra para obtener los elementos secundarios)
 
 
@@ -66,7 +66,7 @@ La integración de datos de AEM Forms proporciona una interfaz de usuario intuit
 
 ## Crear formulario adaptable
 
-GET Integre las invocaciones del modelo de datos de formulario con el formulario adaptable para rellenar las listas desplegables.
+Integre las invocaciones de GET del modelo de datos de formulario con el formulario adaptable para rellenar las listas desplegables.
 Cree un formulario adaptable con 2 listas desplegables. Uno para enumerar los países y otro para enumerar los estados o provincias según el país seleccionado.
 
 ### Rellenar lista desplegable de países

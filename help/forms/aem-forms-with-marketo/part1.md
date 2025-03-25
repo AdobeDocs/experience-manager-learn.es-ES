@@ -2,7 +2,7 @@
 title: Integración de AEM Forms y Marketo
 description: Aprenda a integrar AEM Forms y Marketo mediante el modelo de datos de formulario de AEM Forms.
 feature: Adaptive Forms, Form Data Model
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Integrations, Development
 role: Developer
 level: Experienced
@@ -11,7 +11,7 @@ badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 last-substantial-update: 2020-03-20T00:00:00Z
 duration: 77
-source-git-commit: e02c3f66787c78152700b24236c29e9796f721de
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 1%
@@ -21,9 +21,9 @@ ht-degree: 1%
 # Integración de AEM Forms y Marketo
 
 
-Marketo, parte de Adobe, proporciona software de automatización de marketing centrado en el marketing basado en cuentas, que incluye correo electrónico, móvil, social, anuncios digitales, administración web y análisis.
+Marketo, que forma parte de Adobe, proporciona software de automatización de marketing centrado en el marketing basado en cuentas, que incluye correo electrónico, móvil, social, anuncios digitales, administración web y análisis.
 
-Con el modelo de datos de formulario de AEM Forms AEM, ahora podemos integrar fácilmente formularios de datos de formulario con de Marketo.
+Con el modelo de datos de formulario de AEM Forms, ahora podemos integrar fácilmente formularios de AEM con Marketo.
 
 [Más información sobre el modelo de datos de formulario](https://helpx.adobe.com/experience-manager/6-5/forms/using/data-integration.html)
 
@@ -39,8 +39,8 @@ Para empezar, es muy recomendable que esté familiarizado con los siguientes tem
 
 ## Requisitos previos
 
-1. [AEM Servidor de con el paquete AEM Forms Add on instalado](/help/forms/adaptive-forms/installing-aem-form-on-windows-tutorial-use.md)
-1. AEM Entorno de desarrollo local
+1. [Servidor de AEM con el paquete AEM Forms Add on instalado](/help/forms/adaptive-forms/installing-aem-form-on-windows-tutorial-use.md)
+1. Entorno de desarrollo local de AEM
 1. Familiarizado con el modelo de datos de formulario
 1. Conocimientos básicos de los archivos Swagger
 1. Creación de Forms adaptable

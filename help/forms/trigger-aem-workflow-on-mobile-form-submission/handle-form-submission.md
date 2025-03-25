@@ -1,15 +1,16 @@
 ---
-title: Déclencheur AEM de flujo de trabajo de la en el envío de formularios de HTML5
-description: Administrar el envío de formularios de HTML 5
+title: Déclencheur del flujo de trabajo de AEM en el envío de formularios HTML5
+description: Administrar el envío de formularios HTML5
 feature: Mobile Forms
 doc-type: article
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 jira: kt-16215
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 level: Experienced
-source-git-commit: 5f42678502a785ead29982044d1f3f5ecf023e0f
+exl-id: 5fbc0cb9-5b55-4269-9172-039414db89cc
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 1%
@@ -18,14 +19,14 @@ ht-degree: 1%
 
 # Administrar envío de formulario
 
-AEM En esta parte crearemos un servlet simple que se ejecuta en Publish para gestionar el envío del formulario de HTML5. Este servlet realiza una solicitud de POST AEM AEM HTTP a un servlet que se ejecuta en una instancia de autor de responsable de guardar los datos enviados como un nodo `nt:file` en el repositorio de Autor de la publicación de datos de.
+En esta parte crearemos un servlet simple que se ejecuta en AEM Publish para administrar el envío del formulario HTML5. Este servlet realiza una petición HTTP POST a un servlet que se ejecuta en una instancia de autor de AEM y que es responsable de guardar los datos enviados como un nodo `nt:file` en el repositorio del autor de AEM.
 
-El siguiente es el código del servlet que administra el envío del formulario de HTML 5. En este servlet realizamos una llamada al POST AEM a un servlet montado en **/bin/startworkflow** en una instancia de autor de la. AEM Este servlet guarda los datos del formulario en el repositorio del autor de la.
+El siguiente es el código del servlet que administra el envío del formulario HTML5. En este servlet realizamos una llamada de POST a un servlet montado en **/bin/startworkflow** en una instancia de autor de AEM. Este servlet guarda los datos del formulario en el repositorio del autor de AEM.
 
 
-## AEM servlet de Publish
+## Servlet de publicación de AEM
 
-El siguiente código administra el envío del formulario de HTML 5. Este código se ejecuta en la instancia de publicación.
+El siguiente código administra el envío del formulario HTML5. Este código se ejecuta en la instancia de publicación.
 
 ```java
 package com.aemforms.mobileforms.core.servlets;

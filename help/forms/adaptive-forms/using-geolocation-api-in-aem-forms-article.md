@@ -2,14 +2,14 @@
 title: Uso de las API de geolocalización en Forms adaptable
 description: Rellene los campos de dirección del formulario con las API de geolocalización
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 50db6155-ee83-4ddb-9e3a-56e8709222db
 last-substantial-update: 2020-03-20T00:00:00Z
 duration: 88
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%
@@ -87,7 +87,7 @@ El JSON devuelto por la API se analiza a continuación para establecer los campo
 >
 >Para realizar pruebas, puede utilizar el protocolo HTTP con localhost en la dirección URL.
 >
->AEM Para el servidor de producción, deberá habilitar SSL para que su servidor de obtenga esta capacidad.
+>Para el servidor de producción, deberá habilitar SSL en el servidor de AEM para obtener esta capacidad.
 >
 >La muestra asociada con este artículo se ha probado con la dirección de EE. UU. Si desea utilizar esta capacidad en otras ubicaciones geográficas, es posible que tenga que modificar el análisis de JSON.
 
@@ -96,7 +96,7 @@ Para poner esta capacidad en su servidor, siga los siguientes pasos
 * Instale e inicie el servidor de AEM Forms.
 > Esta capacidad se probó en AEM Forms 6.3 y versiones posteriores
 * [Obtener clave API de Google](https://developers.google.com/maps/documentation/javascript/get-api-key).
-* AEM [Importe los recursos relacionados con este artículo en el sitio de trabajo de la cuenta de usuario de la cuenta de usuario de la cuenta de usuario](assets/geolocationapi.zip)
+* [Importe los recursos relacionados con este artículo en AEM.](assets/geolocationapi.zip)
 * [Abrir el fragmento de formulario adaptable en modo de edición.](http://localhost:4502/editor.html/content/forms/af/currentaddressfragment.html)
 * Abra el editor de reglas para el componente Opción de imagen.
 * Reemplace la &lt;your_api_key> por la clave de API de Google.

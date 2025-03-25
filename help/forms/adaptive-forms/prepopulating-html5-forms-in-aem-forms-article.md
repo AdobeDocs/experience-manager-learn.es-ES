@@ -1,31 +1,31 @@
 ---
 title: Rellenar previamente HTML5 Forms mediante el atributo de datos.
-description: Rellene formularios de HTML 5 recuperando datos del origen del servidor.
+description: Rellene formularios HTML5 recuperando datos del origen del servidor.
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: ab0f5282-383b-4be6-9c57-cded6ab37528
 last-substantial-update: 2020-01-09T00:00:00Z
 duration: 94
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%
 
 ---
 
-# Rellenar previamente Forms de HTML5 mediante el atributo de datos {#prepopulate-html-forms-using-data-attribute}
+# Rellenar previamente HTML5 Forms mediante el atributo de datos {#prepopulate-html-forms-using-data-attribute}
 
 
-Las plantillas XDP procesadas en formato de HTML mediante AEM Forms se denominan HTML5 o Mobile Forms. Un caso de uso común es rellenar previamente estos formularios cuando se están procesando.
+Las plantillas XDP procesadas en formato HTML mediante AEM Forms se denominan HTML5 o Mobile Forms. Un caso de uso común es rellenar previamente estos formularios cuando se están procesando.
 
 Existen dos formas de combinar los datos con la plantilla xdp cuando se representan como HTML.
 
 **dataRef**: puede usar el parámetro dataRef en la dirección URL. Este parámetro especifica la ruta absoluta del archivo de datos que se combina con la plantilla. Este parámetro puede ser una URL a un servicio REST que devuelva los datos en formato XML.
 
-**data**: este parámetro especifica los bytes de datos codificados UTF-8 que se combinan con la plantilla. Si se especifica este parámetro, el formulario HTML 5 ignorará el parámetro dataRef. Como práctica recomendada, recomendamos utilizar el enfoque de datos.
+**data**: este parámetro especifica los bytes de datos codificados UTF-8 que se combinan con la plantilla. Si se especifica este parámetro, el formulario HTML5 ignorará el parámetro dataRef. Como práctica recomendada, recomendamos utilizar el enfoque de datos.
 
 El método recomendado es establecer el atributo de datos en la solicitud con los datos con los que desea rellenar previamente el formulario.
 
@@ -44,7 +44,7 @@ Cuando se procesa el XDP, también puede pasar algunos parámetros al xdp y, en 
 El JSP que escriba tendrá acceso al parámetro name mediante request.getParameter(&quot;name&quot;) A continuación, puede pasar el valor de este parámetro al proceso backend para recuperar los datos necesarios.
 Para que esta capacidad funcione en su sistema, siga los pasos que se mencionan a continuación:
 
-* AEM [Descargar e importar los recursos en el administrador de paquetes con el administrador de paquetes de](assets/prepopulatemobileform.zip)
+* [Descargar e importar los recursos en AEM mediante el administrador de paquetes](assets/prepopulatemobileform.zip)
 El paquete instalará lo siguiente
 
    * CustomProfile

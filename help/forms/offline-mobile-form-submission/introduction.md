@@ -1,9 +1,9 @@
 ---
-title: Déclencheur AEM de flujo de trabajo de en envío de formulario de PDF
-description: Continúe rellenando el formulario móvil en el modo sin conexión y envíe el formulario móvil al flujo de trabajo de déclencheur AEM de la
+title: Déclencheur del flujo de trabajo de AEM en el envío de formularios PDF
+description: Siga rellenando el formulario móvil en el modo sin conexión y envíe el formulario móvil al flujo de trabajo de AEM de déclencheur
 feature: Mobile Forms
 doc-type: article
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
@@ -12,21 +12,21 @@ last-substantial-update: 2021-04-07T00:00:00Z
 jira: kt-16133
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 duration: 342
-source-git-commit: 5f42678502a785ead29982044d1f3f5ecf023e0f
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '214'
 ht-degree: 0%
 
 ---
 
-# Descarga de un formulario móvil parcialmente completado y envío al déclencheur AEM de un flujo de trabajo de
+# Descarga de un formulario móvil parcialmente completado y envío al déclencheur de un flujo de trabajo de AEM
 
 Un caso de uso común es tener la capacidad de procesar el XDP como HTML para actividades de captura de datos. Esto funciona bien cuando los formularios son simples y se pueden rellenar y enviar en línea. Sin embargo, si el formulario es complejo, es posible que los usuarios no puedan completarlo en línea. Por ello, es necesario permitir que los usuarios que rellenan el formulario descarguen la versión interactiva del formulario que se va a rellenar con Acrobat/Reader sin conexión. Una vez rellenado el formulario, el usuario puede conectarse para enviarlo.
 Para llevar a cabo este caso de uso, debemos realizar los siguientes pasos:
 
-* Capacidad para generar PDF interactivos/rellenables con los datos introducidos en el formulario móvil
-* Gestionar el envío de PDF desde Acrobat/Reader
-* Flujo de trabajo de Adobe Experience Manager AEM de déclencheur () para revisar el PDF enviado
+* Capacidad para generar PDF interactivo/rellenables con los datos introducidos en el formulario móvil
+* Administrar el envío de PDF desde Acrobat/Reader
+* Flujo de trabajo de Déclencheur Adobe Experience Manager (AEM) para revisar el PDF enviado
 
 Este tutorial recorre los pasos necesarios para realizar el caso de uso anterior. El código de muestra y los recursos relacionados con este tutorial están [disponibles aquí.](./deploy-assets.md)
 

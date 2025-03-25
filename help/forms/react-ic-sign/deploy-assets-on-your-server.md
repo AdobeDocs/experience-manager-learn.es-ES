@@ -2,7 +2,7 @@
 title: Implementar los recursos de ejemplo en el servidor
 description: Ponga el caso de uso en funcionamiento en el servidor local
 feature: Adaptive Forms,Acrobat Sign
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
@@ -10,7 +10,7 @@ jira: KT-13099
 last-substantial-update: 2023-04-13T00:00:00Z
 exl-id: f12f83fa-673a-454c-aa52-6ea769a182b7
 duration: 36
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '157'
 ht-degree: 0%
@@ -57,8 +57,8 @@ Abra el archivo EmergencyContact.js y cambie la dirección URL en el método fet
  
 ```
 
-Para habilitar la realización de llamadas del POST AEM al punto de conexión de la aplicación REACT desde el punto de conexión de la aplicación, deberá especificar las entradas adecuadas en el campo Orígenes permitidos en la configuración de la política de uso compartido de recursos de origen cruzado de Granite de Adobe.
+Para habilitar la realización de llamadas de POST al extremo de AEM desde la aplicación REACT, deberá especificar las entradas adecuadas en el campo Orígenes permitidos en la configuración de la política de uso compartido de recursos de origen cruzado de Adobe Granite.
 
 ![configuración de cors](assets/cors-settings.png)
 
-AEM Consulte [Comprensión de CORS con](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html) para obtener más información sobre las opciones de configuración de CORS.
+Consulte [Comprensión de CORS con AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html) para obtener más información sobre las opciones de configuración de CORS.

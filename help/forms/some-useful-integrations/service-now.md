@@ -2,7 +2,7 @@
 title: Integrando con [!DNL ServiceNow]
 description: Cree y muestre todos los incidentes con el modelo de datos de formulario.
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-9957
 topic: Development
 role: Developer
@@ -10,7 +10,7 @@ level: Intermediate
 exl-id: 93a177b0-7852-44da-89cc-836d127be4e7
 last-substantial-update: 2022-07-07T00:00:00Z
 duration: 47
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 3%
@@ -39,7 +39,7 @@ Los recursos de ejemplo proporcionados con este artículo incluyen lo siguiente
 ## Implementación de los recursos en el servidor
 
 * Descargar [recursos de muestra](assets/service-now.zip)
-* AEM Importe los recursos a la cuenta de usuario mediante el uso de [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
+* Importe los recursos en AEM usando [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
 * El archivo swagger utilizado para esta integración se encuentra en la carpeta ```/conf/9957/settings/cloudconfigs/fdm``` del repositorio crx
 * Edite la [configuración del servicio en la nube CreateIncident](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2F9957%2Fsettings%2Fcloudconfigs%2Ffdm%2Fcreateincident)para que coincida con su instancia de ServiceNow.
 * Edite la configuración del servicio en la nube [GetAllIncidents](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2F9957%2Fsettings%2Fcloudconfigs%2Ffdm%2Fgetallincidents) para que coincida con su instancia de ServiceNow. Deberá cambiar el host, el nombre de usuario y la contraseña para que coincidan con las credenciales de la instancia de ServiceNow.

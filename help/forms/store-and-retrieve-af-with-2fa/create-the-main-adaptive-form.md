@@ -3,7 +3,7 @@ title: Crear el formulario adaptable principal
 description: Cree los formularios adaptables para capturar la información del solicitante y el formulario adaptable para recuperar el formulario adaptable guardado
 feature: Adaptive Forms
 type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6552
 thumbnail: 6552.jpg
 topic: Development
@@ -11,7 +11,7 @@ role: User
 level: Beginner
 exl-id: 73de0ac4-ada6-4b8e-90a8-33b976032135
 duration: 41
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 0%
@@ -24,14 +24,14 @@ El formulario **StoreAFWithAttachments** es el formulario adaptable principal. E
 
 ![formulario de solicitud principal](assets/6552.JPG)
 
-AEM Este formulario está asociado con **bootboxjs540,storeAFWithAttachments** bibliotecas de cliente creadas anteriormente en el curso y un flujo de trabajo de que se activa al enviar el formulario.
+Este formulario está asociado con **bootboxjs540,storeAFWithAttachments** bibliotecas de cliente creadas anteriormente en el curso y con un flujo de trabajo de AEM que se activa al enviar el formulario.
 
 
-* AEM Los formularios de ejemplo se basan en [plantilla de formulario adaptable personalizada](assets/custom-template-with-page-component.zip) que debe importarse en los formularios de ejemplo para que se procesen correctamente.
+* Los formularios de ejemplo se basan en [plantilla de formulario adaptable personalizada](assets/custom-template-with-page-component.zip) que debe importarse en AEM para que los formularios de ejemplo se representen correctamente.
 
-* AEM El [Formulario StoreAfWithAttachments](assets/store-af-with-attachments-form.zip) completado se puede descargar e importar en la instancia de la.
+* El [Formulario StoreAfWithAttachments](assets/store-af-with-attachments-form.zip) completado se puede descargar e importar en la instancia de AEM.
 
-* AEM AEM El flujo de trabajo [asociado con este formulario](assets/workflow-model-store-af-with-attachments.zip) debe importarse en la instancia de la instancia de la aplicación para que el formulario funcione.
+* El [flujo de trabajo de AEM asociado con este formulario](assets/workflow-model-store-af-with-attachments.zip) debe importarse en la instancia de AEM para que el formulario funcione.
 
 
 ## Pasos siguientes

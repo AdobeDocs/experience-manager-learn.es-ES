@@ -1,15 +1,15 @@
 ---
 title: Configurar el valor del elemento de datos Json en el flujo de trabajo de AEM Forms
-description: AEM Dado que un formulario adaptable se enruta a diferentes usuarios en el flujo de trabajo de, existen requisitos para ocultar o deshabilitar determinados campos o paneles en función de la persona que revisa el formulario. Para satisfacer estos casos de uso, normalmente se establece el valor de un campo oculto. En función del valor de este campo oculto, se pueden crear reglas empresariales para ocultar o deshabilitar los paneles o campos adecuados.
+description: Dado que un formulario adaptable se dirige a diferentes usuarios en el flujo de trabajo de AEM, existen requisitos para ocultar o deshabilitar determinados campos o paneles en función de la persona que revisa el formulario. Para satisfacer estos casos de uso, normalmente se establece el valor de un campo oculto. En función del valor de este campo oculto, se pueden crear reglas empresariales para ocultar o deshabilitar los paneles o campos adecuados.
 feature: Adaptive Forms
-version: 6.4
+version: Experience Manager 6.4
 topic: Development
 role: Developer
 level: Experienced
 exl-id: fbe6d341-7941-46f5-bcd8-58b99396d351
 last-substantial-update: 2021-06-09T00:00:00Z
 duration: 126
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '656'
 ht-degree: 0%
@@ -18,13 +18,13 @@ ht-degree: 0%
 
 # Configurar el valor del elemento de datos JSON en el flujo de trabajo de AEM Forms {#setting-value-of-json-data-element-in-aem-forms-workflow}
 
-AEM Dado que un formulario adaptable se enruta a diferentes usuarios en el flujo de trabajo de, existen requisitos para ocultar o deshabilitar determinados campos o paneles en función de la persona que revisa el formulario. Para satisfacer estos casos de uso, normalmente se establece el valor de un campo oculto. En función del valor de este campo oculto, se pueden crear reglas empresariales para ocultar o deshabilitar los paneles o campos adecuados.
+Dado que un formulario adaptable se dirige a diferentes usuarios en el flujo de trabajo de AEM, existen requisitos para ocultar o deshabilitar determinados campos o paneles en función de la persona que revisa el formulario. Para satisfacer estos casos de uso, normalmente se establece el valor de un campo oculto. En función del valor de este campo oculto, se pueden crear reglas empresariales para ocultar o deshabilitar los paneles o campos adecuados.
 
 ![Estableciendo valor de un elemento en los datos json](assets/capture-3.gif)
 
 En AEM Forms OSGi: debemos crear un paquete OSGi personalizado para establecer el valor del elemento de datos JSON. El paquete se proporciona como parte de este tutorial.
 
-AEM Utilizamos el paso Proceso en el flujo de trabajo de la. Asociamos el paquete OSGi &quot;Set Value of Element in Json&quot; con este paso del proceso.
+Utilizamos el paso de proceso en el flujo de trabajo de AEM. Asociamos el paquete OSGi &quot;Set Value of Element in Json&quot; con este paso del proceso.
 
 Necesitamos pasar dos argumentos al paquete de valor establecido. El primer argumento es la ruta al elemento cuyo valor debe establecerse. El segundo argumento es el valor que debe establecerse.
 

@@ -3,14 +3,14 @@ title: Agregando tabla al panel de saldo de cuenta
 description: Esta es la parte 9 del tutorial de varios pasos para crear su primer documento de comunicación interactivo. En esta parte, añadiremos una tabla al panel Saldo de cuenta.
 feature: Interactive Communication
 doc-type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 discoiquuid: 28a9d88d-635b-47a2-8a78-54ddeabc4406
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 1e43c459-8824-40e8-8f05-24b8b0646346
 duration: 454
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '159'
 ht-degree: 1%
@@ -37,7 +37,7 @@ La capacidad de mostrar datos tabulares mediante tablas en documentos de comunic
 
 >[!VIDEO](https://video.tv.adobe.com/v/22360?quality=12&learn=on)
 
-AEM Configuración de la tabla en el documento del canal web: formulario de 6.5
+Configuración de la tabla en el documento del canal web: formulario AEM 6.5
 
 >[!VIDEO](https://video.tv.adobe.com/v/27847?quality=12&learn=on)
 

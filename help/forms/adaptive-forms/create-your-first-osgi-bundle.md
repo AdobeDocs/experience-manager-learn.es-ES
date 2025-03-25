@@ -1,15 +1,15 @@
 ---
-title: AEM Creación de su primer paquete OSGi con formularios de
+title: Creación de su primer paquete OSGi con formularios AEM
 description: Cree su primer paquete OSGi con maven y eclipse
 feature: Adaptive Forms
 doc-type: article
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 last-substantial-update: 2021-06-09T00:00:00Z
 duration: 177
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '816'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Agregar %JAVA_HOME%/bin a la ruta de acceso
 ![origen de datos](assets/java-home.JPG)
 
 >[!NOTE]
-> No utilice JDK 15. AEM No es compatible con el servicio de asistencia de la aplicación
+> No utilice JDK 15. No es compatible con AEM.
 
 ### Prueba de la versión de JDK
 
@@ -118,7 +118,7 @@ Expanda `src/main/java` en la carpeta `learningaemforms.core`. Esta es la carpet
 
 ## Cree su proyecto
 
-Una vez que haya escrito el servicio OSGi, o servlet, debe crear el proyecto para generar el paquete OSGi que se puede implementar mediante la consola web Felix. Consulte [AEMFD Client SDK](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) para incluir el SDK de cliente apropiado en su proyecto Maven. AEM Debe incluir el SDK de cliente de FD de la en la sección de dependencias de `pom.xml` del proyecto principal, como se muestra a continuación.
+Una vez que haya escrito el servicio OSGi, o servlet, debe crear el proyecto para generar el paquete OSGi que se puede implementar mediante la consola web Felix. Consulte [SDK de cliente de AEMFD](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) para incluir el SDK de cliente apropiado en su proyecto Maven. Debe incluir AEM FD Client SDK en la sección de dependencias de `pom.xml` del proyecto principal, como se muestra a continuación.
 
 ```xml
 <dependency>
@@ -133,4 +133,4 @@ Para crear su proyecto, siga los siguientes pasos:
 * Abrir **ventana del símbolo del sistema**
 * Navegue hasta `c:\aemformsbundles\learningaemforms\core`
 * Ejecutar el comando `mvn clean install`
-Si todo va bien, debería ver el paquete en la siguiente ubicación `C:\AEMFormsBundles\learningaemforms\core\target`. AEM Este paquete ya está listo para implementarse en la aplicación mediante la consola web de Félix en la que se puede utilizar la aplicación de forma predeterminada para el uso de la consola web.
+Si todo va bien, debería ver el paquete en la siguiente ubicación `C:\AEMFormsBundles\learningaemforms\core\target`. Este paquete ya está listo para implementarse en AEM mediante la consola web de Felix.

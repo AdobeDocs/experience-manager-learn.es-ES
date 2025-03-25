@@ -1,7 +1,7 @@
 ---
 title: Aplicar derechos de uso al PDF cargado
 description: Aplicar derechos de uso a PDF
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Reader Extensions
 topic: Development
 role: Developer
@@ -9,7 +9,7 @@ level: Experienced
 exl-id: ea433667-81db-40f7-870d-b16630128871
 last-substantial-update: 2020-07-07T00:00:00Z
 duration: 129
-source-git-commit: f3f5c4c4349c8d02c88e1cf91dbf18f58db1e67e
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 0%
@@ -18,10 +18,10 @@ ht-degree: 0%
 
 # Aplicación de extensiones de Reader
 
-Extensiones de Reader permite manipular los derechos de uso en documentos de PDF. Los derechos de uso pertenecen a una funcionalidad que está disponible en Acrobat pero no en Adobe Reader. La funcionalidad controlada por Extensiones de Reader incluye la capacidad de agregar comentarios a un documento, rellenar formularios y guardarlo. Los documentos de PDF que tienen derechos de uso añadidos se denominan documentos con derechos activados. Un usuario que abre un documento de PDF con derechos activados en Adobe Reader puede realizar las operaciones que están habilitadas para ese documento.
+Las extensiones de Reader le permiten manipular los derechos de uso en documentos de PDF. Los derechos de uso pertenecen a una funcionalidad disponible en Acrobat, pero no en Adobe Reader. La funcionalidad controlada por las extensiones de Reader incluye la capacidad de agregar comentarios a un documento, rellenar formularios y guardarlo. Los documentos de PDF que tienen derechos de uso añadidos se denominan documentos con derechos activados. Un usuario que abre un documento de PDF con derechos activados en Adobe Reader puede realizar las operaciones que están habilitadas para ese documento.
 
 Para llevar a cabo este caso de uso, debemos hacer lo siguiente:
-* [Agregar el certificado de Extensiones de Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) al usuario `fd-service`.
+* [Agregar el certificado de extensiones de Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) al usuario `fd-service`.
 
 ## Crear servicio OSGi personalizado
 
@@ -71,9 +71,9 @@ public class ApplyUsageRights implements ReaderExtendPDF {
 }
 ```
 
-## Crear servlet para transmitir el PDF extendido de Reader
+## Cree un servlet para transmitir el PDF extendido de Reader
 
-El siguiente paso es crear un servlet con un método de POST para devolver el PDF de reader Extended al usuario. En este caso, se solicita al usuario que guarde el PDF en su sistema de archivos. Esto se debe a que el PDF se procesa como PDF dinámico y los visualizadores de PDF que vienen con los navegadores no gestionan los PDF dinámicos.
+El siguiente paso es crear un servlet con un método POST para devolver el PDF de Reader Extended al usuario. En este caso, se solicita al usuario que guarde el PDF en su sistema de archivos. Esto se debe a que PDF se procesa como un PDF dinámico y los visualizadores de PDF que vienen con los navegadores no administran los PDF dinámicos.
 
 A continuación se muestra el código del servlet. El servlet se invoca desde la acción de envío personalizada del formulario adaptable.
 Servlet crea un objeto UsageRights y le establece propiedades basadas en los valores introducidos por el usuario en el formulario adaptable. A continuación, el servlet llama al método applyUsageRights del servicio creado para este fin.
@@ -209,5 +209,5 @@ Para probar esto en el servidor local, siga los siguientes pasos:
 1. [Importar el formulario adaptable](assets/applyaresform.zip)
 1. Agregue el certificado de Extensiones de Reader al usuario &quot;fd-service&quot;. Asegúrese de que el alias sea &quot;**ares**&quot;.
 1. [Vista previa de formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/applyreaderextensions/jcr:content?wcmmode=disabled)
-1. Seleccione los derechos adecuados y cargue el archivo del PDF
-1. Haga clic en Enviar para obtener el PDF extendido de Reader
+1. Seleccione los derechos adecuados y cargue el archivo PDF
+1. Haga clic en Enviar para obtener Reader Extended PDF

@@ -3,7 +3,7 @@ title: Configurar el gráfico de líneas del primer documento de comunicación i
 description: Esta es la parte 8 del tutorial de varios pasos para crear el primer documento de comunicaciones interactivas para el canal Imprimir. En esta parte, agregaremos un gráfico de líneas para mostrar el saldo de la cuenta.
 feature: Interactive Communication
 doc-type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 discoiquuid: 9110e5c6-50ee-4c3e-a779-b680ff49ef23
 jira: KT-5993
 thumbnail: 22386.jpg
@@ -12,7 +12,7 @@ role: Developer
 level: Beginner
 exl-id: 86a955e2-2463-4973-8d3c-4c694db8c787
 duration: 140
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 0%

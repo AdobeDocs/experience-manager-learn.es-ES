@@ -2,7 +2,7 @@
 title: Crear flujo de trabajo principal para almacenar en déclencheur el proceso de firma
 description: Cree un flujo de trabajo para almacenar los formularios para su firma en la base de datos
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 thumbnail: 6887.jpg
 jira: KT-6887
 topic: Development
@@ -10,7 +10,7 @@ role: Developer
 level: Intermediate
 exl-id: 338d9522-f6da-4aa7-b5d8-b9fff39ea94b
 duration: 70
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 1%
@@ -25,7 +25,7 @@ El flujo de trabajo principal se activa cuando el usuario envía el formulario i
 
 **Almacenar Forms para firmar** es un paso de proceso personalizado.
 
-AEM La motivación para implementar un paso de proceso personalizado es ampliar un flujo de trabajo de. El siguiente código implementa un paso de proceso personalizado. El código extrae los nombres de los formularios que se van a firmar y pasa los datos de formulario enviados al método `insertData` en el servicio SignMultipleForms. A continuación, el método `insertData` inserta las filas en la base de datos identificada por el origen de datos **aemformstutorial**.
+La motivación para implementar un paso de proceso personalizado es ampliar un flujo de trabajo de AEM. El siguiente código implementa un paso de proceso personalizado. El código extrae los nombres de los formularios que se van a firmar y pasa los datos de formulario enviados al método `insertData` en el servicio SignMultipleForms. A continuación, el método `insertData` inserta las filas en la base de datos identificada por el origen de datos **aemformstutorial**.
 
 El código de este paso de proceso personalizado hace referencia al servicio `SignMultipleForms`.
 

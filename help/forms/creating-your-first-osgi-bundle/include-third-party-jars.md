@@ -1,7 +1,7 @@
 ---
 title: Inclusión de archivos .jar de terceros
-description: AEM Aprenda a utilizar archivos jar de terceros en su proyecto de
-version: 6.4,6.5
+description: Aprenda a utilizar archivos jar de terceros en su proyecto de AEM
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Adaptive Forms
 topic: Development
 role: Developer
@@ -11,16 +11,16 @@ last-substantial-update: 2022-10-15T00:00:00Z
 thumbnail: third-party.jpg
 exl-id: e8841c63-3159-4f13-89a1-d8592af514e3
 duration: 53
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 1%
 
 ---
 
-# AEM Inclusión de paquetes de terceros en el proyecto de la
+# Inclusión de paquetes de terceros en un proyecto de AEM
 
-AEM AEM En este artículo explicaremos los pasos necesarios para incluir el paquete OSGi de terceros en el proyecto.Para los fines de este artículo, vamos a incluir [jsch-0.1.55.jar](https://repo1.maven.org/maven2/com/jcraft/jsch/0.1.55/jsch-0.1.55.jar) en nuestro proyecto de.  SI el OSGi está disponible en el repositorio de Maven, incluya la dependencia del paquete en el archivo POM.xml del proyecto.
+En este artículo explicaremos los pasos necesarios para incluir el paquete OSGi de terceros en su proyecto de AEM. A efectos del presente artículo, incluiremos [jsch-0.1.55.jar](https://repo1.maven.org/maven2/com/jcraft/jsch/0.1.55/jsch-0.1.55.jar) en nuestro proyecto de AEM.  SI el OSGi está disponible en el repositorio de Maven, incluya la dependencia del paquete en el archivo POM.xml del proyecto.
 
 >[!NOTE]
 > Se supone que el JAR de terceros es un paquete OSGi
@@ -48,7 +48,7 @@ Si el paquete OSGi está en el sistema de archivos, cree una carpeta llamada **l
 
 ## Creación de la estructura de carpetas
 
-AEM Estamos agregando este paquete a nuestro proyecto de **AEMFormsProcessStep** que reside en la carpeta **c:\aemformsbundles**
+Estamos agregando este paquete a nuestro proyecto de AEM **AEMFormsProcessStep** que reside en la carpeta **c:\aemformsbundles**
 
 * Abra **filter.xml** desde la carpeta C:\aemformsbundles\AEMFormsProcessStep\all\src\main\content\META-INF\vault de su proyecto
 Tome nota del atributo root del elemento filter.
@@ -62,5 +62,5 @@ Tome nota del atributo root del elemento filter.
 mvn clean install -PautoInstallSinglePackage
 ```
 
-AEM Si todo sale bien, el paquete se instala junto con el paquete de terceros en la instancia de la instancia de la instancia de la instancia de la instancia de la instancia de la. Puede comprobar el paquete con [felix web console](http://localhost:4502/system/console/bundles). El paquete de terceros está disponible en la carpeta /apps del repositorio `crx`, como se muestra a continuación
+Si todo va bien, el paquete se instala junto con el paquete de terceros en la instancia de AEM. Puede comprobar el paquete con [felix web console](http://localhost:4502/system/console/bundles). El paquete de terceros está disponible en la carpeta /apps del repositorio `crx`, como se muestra a continuación
 ![terceros](assets/custom-bundle1.png)

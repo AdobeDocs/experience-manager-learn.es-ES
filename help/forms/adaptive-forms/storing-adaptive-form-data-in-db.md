@@ -1,15 +1,15 @@
 ---
 title: Almacenar datos de formularios adaptables
-description: AEM Almacenar datos de formulario adaptables en la base de datos como parte del flujo de trabajo de
+description: Almacenar datos de formulario adaptables en la base de datos como parte del flujo de trabajo de AEM
 feature: Adaptive Forms, Form Data Model
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 3dd552da-fc7c-4fc7-97ec-f20b6cc33df0
 last-substantial-update: 2020-03-20T00:00:00Z
 duration: 146
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%
@@ -18,8 +18,8 @@ ht-degree: 0%
 
 # Almacenar envíos de formularios adaptables en la base de datos
 
-Existen varias formas de almacenar los datos del formulario enviado en la base de datos que elija. Se puede utilizar una fuente de datos JDBC para almacenar directamente los datos en la base de datos. Se puede escribir un paquete OSGI personalizado para almacenar los datos en la base de datos. AEM Este artículo utiliza los pasos del proceso personalizado en el flujo de trabajo de la para almacenar los datos.
-El caso de uso es almacenar en déclencheur AEM un flujo de trabajo de en un envío de formulario adaptable, y un paso en el flujo de trabajo almacena los datos enviados en la base de datos.
+Existen varias formas de almacenar los datos del formulario enviado en la base de datos que elija. Se puede utilizar una fuente de datos JDBC para almacenar directamente los datos en la base de datos. Se puede escribir un paquete OSGI personalizado para almacenar los datos en la base de datos. Este artículo utiliza el paso de proceso personalizado del flujo de trabajo de AEM para almacenar los datos.
+El caso de uso es almacenar en déclencheur un flujo de trabajo de AEM en un envío de formulario adaptable y un paso del flujo de trabajo almacena los datos enviados en la base de datos.
 
 
 
@@ -213,9 +213,9 @@ public class InsertAfData implements WorkflowProcess {
 * Especifique los detalles de la base de datos mediante configMgr
 * [Descargue el archivo Zip y extraiga su contenido en el disco duro](assets/article-assets.zip)
 
-   * AEM Implemente el archivo jar mediante [consola web de la](http://localhost:4502/system/console/bundles). Este archivo jar contiene el código para almacenar los datos del formulario en la base de datos.
+   * Implemente el archivo jar mediante [la consola web de AEM](http://localhost:4502/system/console/bundles). Este archivo jar contiene el código para almacenar los datos del formulario en la base de datos.
 
-   * AEM Importe los dos archivos zip en [mediante el administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp). Esto le proporcionará [el flujo de trabajo de ejemplo](http://localhost:4502/editor.html/conf/global/settings/workflow/models/storeformdata.html) y [el formulario adaptable de ejemplo](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) que almacenará en déclencheur el flujo de trabajo al enviar el formulario. Observe los argumentos de proceso en el paso del flujo de trabajo. Estos argumentos indican el nombre del formulario y el nombre del archivo de datos que contendrá los datos del formulario adaptable. El archivo de datos se almacena en la carpeta de carga útil del repositorio crx. Observe cómo el [formulario adaptable](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) está configurado para almacenar en déclencheur AEM el flujo de trabajo de la al enviar y la configuración del archivo de datos (data.xml)
+   * Importe los dos archivos zip en [AEM mediante el administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp). Esto le proporcionará [el flujo de trabajo de ejemplo](http://localhost:4502/editor.html/conf/global/settings/workflow/models/storeformdata.html) y [el formulario adaptable de ejemplo](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) que almacenará en déclencheur el flujo de trabajo al enviar el formulario. Observe los argumentos de proceso en el paso del flujo de trabajo. Estos argumentos indican el nombre del formulario y el nombre del archivo de datos que contendrá los datos del formulario adaptable. El archivo de datos se almacena en la carpeta de carga útil del repositorio crx. Observe cómo el [formulario adaptable](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) está configurado para almacenar en déclencheur el flujo de trabajo de AEM al enviar y la configuración del archivo de datos (data.xml)
 
    * Obtenga una vista previa, rellene el formulario y envíelo. Debería ver una fila nueva creada en la base de datos
 

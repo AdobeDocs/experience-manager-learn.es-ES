@@ -3,7 +3,7 @@ title: Generar documentos de canal de impresión mediante carpeta inspeccionada
 description: Esta es la parte 10 del tutorial de varios pasos para crear el primer documento de comunicaciones interactivas para el canal Imprimir. En esta parte, generaremos documentos del canal de impresión utilizando el mecanismo de carpetas vigiladas.
 feature: Interactive Communication
 doc-type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 contentOwner: gbedekar
 discoiquuid: 23fbada3-d776-4b77-b381-22d3ec716ae9
 topic: Development
@@ -11,7 +11,7 @@ role: Developer
 level: Beginner
 exl-id: 9bb05c94-2a7b-4149-b567-186eb08b1c66
 duration: 70
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 0%
@@ -24,7 +24,7 @@ En esta parte, generaremos documentos del canal de impresión utilizando el meca
 
 Después de crear y probar el documento del canal de impresión, necesitamos un mecanismo para generar estos documentos en modo por lotes o bajo demanda. Normalmente, estos tipos de documentos se generan en modo por lotes y el mecanismo más común es utilizar una carpeta vigilada.
 
-AEM Cuando configura una carpeta inspeccionada en el, asocia un script ECMA o un código java que se ejecuta cuando se suelta un archivo en la carpeta inspeccionada. En este artículo, nos centraremos en el script ECMA que generará documentos del canal de impresión y los guardará en el sistema de archivos.
+Al configurar una carpeta inspeccionada en AEM, se asocia un script ECMA o código java que se ejecuta cuando se coloca un archivo en la carpeta inspeccionada. En este artículo, nos centraremos en el script ECMA que generará documentos del canal de impresión y los guardará en el sistema de archivos.
 
 La configuración de la carpeta inspeccionada y el script ECMA forman parte de los recursos importados al [principio de este tutorial](introduction.md)
 

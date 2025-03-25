@@ -2,14 +2,14 @@
 title: Usar fragmentos en el servicio de salida
 description: Generar documentos pdf con fragmentos que residan en el repositorio crx
 feature: Output Service
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 last-substantial-update: 2022-07-09T00:00:00Z
 exl-id: d7887e2e-c2d4-4f0c-b117-ba7c41ea539a
 duration: 106
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 # Generación de documentos pdf mediante fragmentos{#developing-with-output-and-forms-services-in-aem-forms}
 
 
-En este artículo utilizaremos el servicio de salida para generar archivos pdf utilizando fragmentos xdp. El xdp principal y los fragmentos residen en el repositorio crx. AEM Es importante imitar la estructura de carpetas del sistema de archivos en la carpeta de archivos de la carpeta de la carpeta de la carpeta de la carpeta de la carpeta de la carpeta de archivos de la. AEM Por ejemplo, si está usando un fragmento en la carpeta de fragmentos de su xdp, debe crear una carpeta llamada **fragmentos** bajo su carpeta base en el archivo de carpetas de la carpeta de la carpeta de la carpeta de la carpeta de la carpeta de base de la carpeta de la carpeta de la carpeta de la carpeta de la carpeta de la carpeta de la carpeta de la carpeta de la carpeta de la carpeta de la carpeta de la. La carpeta base contendrá la plantilla xdp base. Por ejemplo, si tiene la siguiente estructura en el sistema de archivos
+En este artículo utilizaremos el servicio de salida para generar archivos pdf utilizando fragmentos xdp. El xdp principal y los fragmentos residen en el repositorio crx. Es importante imitar la estructura de carpetas del sistema de archivos en AEM. Por ejemplo, si está usando un fragmento en la carpeta de fragmentos de su xdp, debe crear una carpeta llamada **fragmentos** bajo la carpeta base en AEM. La carpeta base contendrá la plantilla xdp base. Por ejemplo, si tiene la siguiente estructura en el sistema de archivos
 * c:\xdptemplates: contendrá la plantilla xdp base
 * c:\xdptemplates\fragments: esta carpeta contendrá fragmentos y la plantilla principal hará referencia al fragmento como se muestra a continuación
   ![fragmento-xdp](assets/survey-fragment.png).
@@ -66,24 +66,24 @@ out.println("Document genreated and saved to " + filePath);
 
 **Para probar el paquete de muestra en el sistema**
 
-* [AEM Descargue e importe los archivos xdp de muestra en el archivo de comandos de](assets/xdp-templates-fragments.zip)
-* [AEM Descargue e instale el paquete mediante el administrador de paquetes de la](assets/using-fragments-assets.zip)
+* [Descargue e importe los archivos xdp de ejemplo en AEM](assets/xdp-templates-fragments.zip)
+* [Descargue e instale el paquete mediante el administrador de paquetes de AEM](assets/using-fragments-assets.zip)
 * [El xdp de muestra y los fragmentos se pueden descargar desde aquí](assets/xdptemplates.zip)
 
 **Después de instalar el paquete, tendrá que lista de permitidos las siguientes direcciones URL en el filtro CSRF de Adobe Granite.**
 
 1. Siga los pasos que se mencionan a continuación para lista de permitidos las rutas mencionadas anteriormente.
 1. [Iniciar sesión en configMgr](http://localhost:4502/system/console/configMgr)
-1. Búsqueda de Adobe Granite CSRF Filter
+1. Búsqueda del filtro CSRF de Adobe Granite
 1. Añada la siguiente ruta en las secciones excluidas y guarde
 1. /content/AemFormsSamples/usingfragments
 
-Existen varias formas de probar el código de ejemplo. La forma más rápida y sencilla de usar una aplicación de Postman es. Postman le permite realizar solicitudes de POST al servidor. Instale la aplicación de Postman en su sistema.
+Existen varias formas de probar el código de ejemplo. La forma más rápida y sencilla de usar una aplicación de Postman es. Postman le permite realizar peticiones POST al servidor. Instale la aplicación de Postman en su sistema.
 Inicie la aplicación e introduzca la siguiente URL para probar la API de datos de exportación
 
 Asegúrese de haber seleccionado &quot;POST&quot; en la lista desplegable
 http://localhost:4502/content/AemFormsSamples/usingfragments.html
-Asegúrese de especificar &quot;Autorización&quot; como &quot;Autenticación básica&quot;. AEM Especifique el nombre de usuario y la contraseña del servidor de
+Asegúrese de especificar &quot;Autorización&quot; como &quot;Autenticación básica&quot;. Especifique el nombre de usuario y la contraseña del servidor de AEM
 Vaya a la pestaña &quot;Cuerpo&quot; y especifique los parámetros de solicitud como se muestra en la siguiente imagen
 ![exportar](assets/using-fragment-postman.png)
 A continuación, haga clic en el botón Send

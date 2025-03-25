@@ -1,16 +1,16 @@
 ---
 title: Usar el servicio de modelo de datos de formulario como paso en el flujo de trabajo
-description: A partir de AEM Forms AEM 6.4, ahora podemos utilizar el modelo de datos de formulario como parte del flujo de trabajo de la. AEM El siguiente vídeo explica los pasos necesarios para configurar el paso Modelo de datos de formulario en Flujo de trabajo de la aplicación de datos de formulario de la aplicación de.
+description: A partir de AEM Forms 6.4, ahora podemos utilizar el modelo de datos de formulario como parte del flujo de trabajo de AEM. El siguiente vídeo explica los pasos necesarios para configurar el paso Modelo de datos de formulario en el flujo de trabajo de AEM.
 feature: Workflow
 type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: 0c77a853-fa71-46ac-8626-99bc69d6222d
 last-substantial-update: 2020-06-09T00:00:00Z
 duration: 205
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Usar el servicio de modelo de datos de formulario como paso en el flujo de trabajo {#using-form-data-model-service-as-step-in-workflow}
 
-A partir de AEM Forms AEM 6.4, ahora podemos utilizar el modelo de datos de formulario como parte del flujo de trabajo de la. AEM El siguiente vídeo muestra los pasos necesarios para configurar el paso Modelo de datos de formulario en el flujo de trabajo de la aplicación de datos de formulario de la aplicación de la aplicación de flujo de trabajo de
+A partir de AEM Forms 6.4, ahora podemos utilizar el modelo de datos de formulario como parte del flujo de trabajo de AEM. El siguiente vídeo explica los pasos necesarios para configurar el paso del modelo de datos de formulario en el flujo de trabajo de AEM
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/21719?quality=12&learn=on)
@@ -30,7 +30,7 @@ Para probar esta capacidad en el servidor, siga las instrucciones siguientes
 
 * Configure tomcat con el archivo SampleRest.war como se describe [aquí](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html). El archivo war implementado en Tomcat tiene el código para devolver la puntuación crediticia del solicitante. La puntuación de crédito es un número aleatorio entre 200 y 800
 
-* AEM [Importe los recursos en la carpeta mediante el administrador de paquetes](assets/invoke-fdm-as-service-step.zip). El paquete contiene lo siguiente:
+* [Importe los recursos en AEM mediante el administrador de paquetes](assets/invoke-fdm-as-service-step.zip). El paquete contiene lo siguiente:
 
    * Modelo de flujo de trabajo que utiliza el paso FDM.
    * Modelo de datos de formulario que se utiliza en el paso FDM.

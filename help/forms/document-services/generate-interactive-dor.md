@@ -1,7 +1,7 @@
 ---
 title: Generación de DoR interactivo con datos de formulario adaptable
 description: Combinar datos de formulario adaptables con la plantilla XDP para generar un PDF descargable
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Forms Service
 topic: Development
 role: Developer
@@ -10,7 +10,7 @@ jira: KT-9226
 exl-id: d9618cc8-d399-4850-8714-c38991862045
 last-substantial-update: 2020-02-07T00:00:00Z
 duration: 177
-source-git-commit: 2625a9127c36ee191eb67128546864c9f6901663
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '558'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # Descargar documento de registro interactivo
 
-Un caso de uso común es poder descargar un DoR interactivo con los datos del formulario adaptable. El DoR descargado se completará usando Adobe Acrobat o Adobe Reader.
+Un caso de uso común es poder descargar un DoR interactivo con los datos del formulario adaptable. El DoR descargado se completará con Adobe Acrobat o Adobe Reader.
 
 ## El formulario adaptable no se basa en el esquema XSD
 
@@ -82,8 +82,8 @@ Puede usar cualquiera de las herramientas en línea gratuitas para [generar XSD]
 
 ### Crear formulario adaptable
 
-Cree un formulario adaptable basado en el XSD del paso anterior. Asocie el formulario para utilizar la biblioteca de cliente &quot;irs&quot;. Esta biblioteca de cliente tiene el código para realizar una llamada al POST al servlet, que devuelve el PDF a la aplicación que realiza la llamada.
-El siguiente código se activa cuando se hace clic en el _PDF de descarga_
+Cree un formulario adaptable basado en el XSD del paso anterior. Asocie el formulario para utilizar la biblioteca de cliente &quot;irs&quot;. Esta biblioteca de cliente tiene el código para realizar una llamada de POST al servlet que devuelve el PDF a la aplicación que realiza la llamada.
+El siguiente código se activa cuando se hace clic en _Descargar PDF_
 
 ```javascript
 $(document).ready(function() {
@@ -225,7 +225,7 @@ DesarrollarWithServiceUser.core:getformsresourceresolver=fd-service
 1. [Importar el artículo Assets(formulario adaptable, plantillas XDP y XSD)](assets/generate-interactive-dor-sample-assets.zip)
 1. [Vista previa de formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/f8918complete/jcr:content?wcmmode=disabled)
 1. Rellene algunos de los campos del formulario.
-1. Haga clic en Descargar PDF para obtener el PDF. Es posible que tenga que esperar unos segundos para que el PDF descargue.
+1. Haga clic en Descargar PDF para obtener PDF. Es posible que tenga que esperar unos segundos para que PDF se descargue.
 
 >[!NOTE]
 >

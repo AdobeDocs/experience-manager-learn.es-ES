@@ -2,14 +2,14 @@
 title: Desarrollo con servicios Output y Forms en AEM Forms
 description: Obtenga información sobre el desarrollo con la salida y la API de servicio de Forms en AEM Forms.
 feature: Output Service
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 last-substantial-update: 2024-01-29T00:00:00Z
 exl-id: d268d5d6-f24f-4db9-b8e0-07dd769c6005
 duration: 122
-source-git-commit: 12af84e3d9be24fabb01a64eced6279749668599
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 0%
@@ -26,7 +26,7 @@ En este artículo echaremos un vistazo a lo siguiente
 * [FormsService](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html): se trata de un servicio muy versátil que le permite procesar xdp como pdf y exportar/importar datos desde y hacia el archivo PDF.
 
 
-El siguiente fragmento de código exporta datos desde un archivo de PDF
+El siguiente fragmento de código exporta datos desde un archivo PDF
 
 ```java
 javax.servlet.http.Part pdfPart = request.getPart("pdffile");
@@ -43,11 +43,11 @@ La línea 2 extrae saveLocation de la solicitud
 
 La línea 5 se hace con FormsService
 
-La línea 6 exporta los xmlData desde el archivo del PDF
+La línea 6 exporta los xmlData desde el archivo PDF
 
 **Para probar el paquete de muestra en el sistema**
 
-[AEM Descargue e instale el paquete mediante el administrador de paquetes de la](assets/using-output-and-form-service-api.zip)
+[Descargue e instale el paquete mediante el administrador de paquetes de AEM](assets/using-output-and-form-service-api.zip)
 
 
 
@@ -56,7 +56,7 @@ La línea 6 exporta los xmlData desde el archivo del PDF
 
 1. Siga los pasos que se mencionan a continuación para lista de permitidos las rutas mencionadas anteriormente.
 1. [Iniciar sesión en configMgr](http://localhost:4502/system/console/configMgr)
-1. Búsqueda de Adobe Granite CSRF Filter
+1. Búsqueda del filtro CSRF de Adobe Granite
 1. Añada las 3 rutas siguientes en las secciones excluidas y guarde
 1. /content/AemFormsSamples/mergedata
 1. /content/AemFormsSamples/exportdata
@@ -67,12 +67,12 @@ La línea 6 exporta los xmlData desde el archivo del PDF
 
 ## Prueba de las muestras
 
-Existen varias formas de probar el código de ejemplo. La forma más rápida y sencilla de usar una aplicación de Postman es. Postman le permite realizar solicitudes de POST al servidor.
+Existen varias formas de probar el código de ejemplo. La forma más rápida y sencilla de usar una aplicación de Postman es. Postman le permite realizar peticiones POST al servidor.
 
 * Instale la aplicación de Postman en su sistema.
 * Inicie la aplicación e introduzca la dirección URL adecuada
 * Asegúrese de haber seleccionado &quot;POST&quot; en la lista desplegable
-* Asegúrese de especificar &quot;Autorización&quot; como &quot;Autenticación básica&quot;. AEM Especifique el nombre de usuario y la contraseña del servidor de
+* Asegúrese de especificar &quot;Autorización&quot; como &quot;Autenticación básica&quot;. Especifique el nombre de usuario y la contraseña del servidor de AEM
 * Especifique los parámetros de solicitud en la pestaña del cuerpo
 * Haga clic en el botón Send
 
@@ -81,7 +81,7 @@ El paquete contiene 4 muestras. En los siguientes párrafos se explica cuándo u
 ## Usar OutputService para combinar datos con la plantilla xdp
 
 * Utilice el servicio Output para combinar datos con documentos xdp o pdf para generar PDF aplanados
-* **URL DE POST**: http://localhost:4502/content/AemFormsSamples/outputservice.html
+* **URL DE PUBLICACIÓN**: http://localhost:4502/content/AemFormsSamples/outputservice.html
 * **Parámetros de solicitud -**
 
    * **xdp_or_pdf_file** : archivo xdp o pdf con el que desea combinar los datos
@@ -92,8 +92,8 @@ El paquete contiene 4 muestras. En los siguientes párrafos se explica cuándo u
 
 #### Importar datos
 
-* Utilice FormsService importData para importar datos en un archivo de PDF
-* **URL DE POST** - http://localhost:4502/content/AemFormsSamples/mergedata.html
+* Utilice importData de FormsService para importar datos en un archivo de PDF
+* **URL DE PUBLICACIÓN** - http://localhost:4502/content/AemFormsSamples/mergedata.html
 
 * **Parámetros de solicitud:**
 
@@ -103,8 +103,8 @@ El paquete contiene 4 muestras. En los siguientes párrafos se explica cuándo u
 
 #### Exportar datos
 
-* Utilice la API exportData de FormsService para exportar datos desde el archivo del PDF
-* **URL DE POST** - http://localhost:4502/content/AemFormsSamples/exportdata.html
+* Utilice la API exportData de FormsService para exportar datos desde el archivo de PDF
+* **URL DE PUBLICACIÓN** - http://localhost:4502/content/AemFormsSamples/exportdata.html
 * **Parámetros de solicitud:**
 
    * **archivo PDF** : El archivo PDF desde el que desea exportar los datos
@@ -114,7 +114,7 @@ El paquete contiene 4 muestras. En los siguientes párrafos se explica cuándo u
 
 * Procesar una plantilla XDP como PDF estático/dinámico
 * Utilice la API renderPDFForm de FormsService para procesar la plantilla xdp como PDF
-* **URL DE POST** - http://localhost:4502/content/AemFormsSamples/renderxdp?xdpName=f1040.xdp
+* **URL DE PUBLICACIÓN** - http://localhost:4502/content/AemFormsSamples/renderxdp?xdpName=f1040.xdp
 * Parámetro de solicitud:
    * xdpName: nombre del archivo xdp que se procesará como pdf
 

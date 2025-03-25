@@ -1,15 +1,15 @@
 ---
 title: Certificar documentos en AEM Forms
-description: Uso del servicio Docassurance para certificar documentos de PDF en AEM Forms
+description: Usar el servicio Docassurance para certificar documentos de PDF en AEM Forms
 feature: Document Security
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: 1471929f-d269-4adc-88ad-2ad3682305e1
 last-substantial-update: 2019-07-07T00:00:00Z
 duration: 75
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Certificar documentos en AEM Forms
 
-Un documento certificado proporciona a los destinatarios de formularios y documentos del PDF garantías adicionales de su autenticidad e integridad.
+Un documento certificado proporciona a los destinatarios de formularios y documentos de PDF garantías adicionales de su autenticidad e integridad.
 
 Para certificar un documento, puede utilizar Acrobat DC en el escritorio o AEM Forms Document Services como parte de un proceso automatizado en un servidor.
 
@@ -28,7 +28,7 @@ Para certificar documentos con AEM Forms, se deben seguir los siguientes pasos
 
 ## Agregando certificado al almacén de confianza {#adding-certificate-to-trust-store}
 
-AEM Siga los pasos que se mencionan a continuación para agregar el certificado al repositorio de claves en el área de nombres de la
+Siga los pasos que se mencionan a continuación para agregar el certificado al repositorio de claves en AEM
 
 * [Inicializar almacén de confianza global](http://localhost:4502/libs/granite/security/content/truststore.html)
 * [Buscar usuario de fd-service](http://localhost:4502/security/users.html)
@@ -40,7 +40,7 @@ AEM Siga los pasos que se mencionan a continuación para agregar el certificado 
 
 ## Creando servicio OSGI
 
-Puede escribir su propio paquete OSGi y utilizar el AEM Forms Client SDK para implementar un servicio para certificar documentos de PDF. Los siguientes vínculos serían útiles para escribir su propio paquete OSGi
+Puede escribir su propio paquete OSGi y utilizar AEM Forms Client SDK para implementar un servicio para certificar documentos de PDF. Los siguientes vínculos serían útiles para escribir su propio paquete OSGi
 
 * [Creando su primer paquete OSGi](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html?lang=es)
 * [Usar API de servicio de documentos](https://helpx.adobe.com/experience-manager/6-4/forms/using/aem-document-services-programmatically.html)
@@ -61,7 +61,7 @@ O puede utilizar el paquete de muestra incluido como parte de estos recursos de 
 * [Importar formulario adaptable de ejemplo](assets/certify-pdf-af.zip)
 * [Importar e instalar el envío personalizado](assets/custom-submit-certify.zip)
 * [Abrir el formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/certifypdf/jcr:content?wcmmode=disabled)
-* Cargar documento de PDF que debe certificarse
+* Cargar un documento de PDF que deba certificarse
   **opcional** - Especifique el campo de firma que desea utilizar para certificar el documento
 * Haga clic en enviar.
-* Se le debe devolver un PDF certificado.
+* PDF certificado debe devolverse a usted.

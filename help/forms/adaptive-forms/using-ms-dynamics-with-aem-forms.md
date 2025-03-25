@@ -2,14 +2,14 @@
 title: Uso de Microsoft Dynamics con AEM Forms
 description: Este vídeo muestra un flujo de trabajo que muestra cómo AEM Forms puede trabajar con Microsoft Dynamics como fuente de datos back-end para ofrecer comunicaciones interactivas y personalizadas.
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: 3e51767b-3571-4af7-8f01-5b6c5c74734c
 last-substantial-update: 2021-03-20T00:00:00Z
 duration: 225
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 27%
@@ -32,4 +32,4 @@ Este vídeo muestra un flujo de trabajo que muestra cómo AEM Forms puede trabaj
 
 >[!NOTE]
 >
->AEM Esta función solo está disponible con la versión 6.3 FP1 y versiones posteriores de la versión de. Asegúrese de instalar el complemento de AEM Forms antes de configurar.
+>Esta función solo está disponible con AEM 6.3 FP1 y versiones posteriores. Asegúrese de instalar el complemento de AEM Forms antes de configurar.

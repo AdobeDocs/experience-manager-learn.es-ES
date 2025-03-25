@@ -2,7 +2,7 @@
 title: Visualización de imágenes DAM en línea en Forms adaptable
 description: Mostrar imágenes DAM en línea en Forms adaptable
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
@@ -11,7 +11,7 @@ thumbnail: inline-dam.jpg
 kt: kt-11307
 exl-id: 339eb16e-8ad8-4b98-939c-b4b5fd04d67e
 duration: 60
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 0%
@@ -83,8 +83,8 @@ async function createFile(imageName){
 
 ### Implementación en el servidor
 
-* AEM AEM Descargue e instale la [biblioteca de cliente e imágenes de muestra](assets/InlineDAMImage.zip) en su instancia de la mediante el Administrador de paquetes de la aplicación.
-* AEM AEM Descargue e instale el [formulario de ejemplo](assets/FieldInspectionForm.zip) en su instancia de mediante el administrador de paquetes de la aplicación de ejemplo de la aplicación de.
+* Descargue e instale la [biblioteca de cliente e imágenes de ejemplo](assets/InlineDAMImage.zip) en su instancia de AEM mediante el Administrador de paquetes de AEM.
+* Descargue e instale [formulario de ejemplo](assets/FieldInspectionForm.zip) en su instancia de AEM mediante el administrador de paquetes de AEM.
 * Dirija su explorador a [FieldInspectionForm](http://localhost:4502/content/dam/formsanddocuments/fieldinspection/fieldinspection/jcr:content?wcmmode=disabled)
 * Seleccione uno de los accesorios
 * Debería ver la imagen en el formulario

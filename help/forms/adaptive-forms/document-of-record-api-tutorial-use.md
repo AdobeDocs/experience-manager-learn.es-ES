@@ -2,14 +2,14 @@
 title: Usar la API para generar el documento de registro con AEM Forms
 description: Generar documento de registro (DOR) mediante programación
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 9a3b2128-a383-46ea-bcdc-6015105c70cc
 last-substantial-update: 2023-01-26T00:00:00Z
 duration: 67
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Generar documento de registro (DOR) mediante programación
 
-Este artículo ilustra el uso de `com.adobe.aemds.guide.addon.dor.DoRService API` para generar **documento de registro** mediante programación. [Documento de registro](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/asynchronous-submissions-adaptive-forms.html?lang=es) es una versión PDF de los datos capturados en el formulario adaptable.
+Este artículo ilustra el uso de `com.adobe.aemds.guide.addon.dor.DoRService API` para generar **documento de registro** mediante programación. [Documento de registro](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/asynchronous-submissions-adaptive-forms.html?lang=es) es una versión de PDF de los datos capturados en el formulario adaptable.
 
 1. A continuación se muestra el fragmento de código. La primera línea obtiene el servicio DOR.
 1. Establezca DoROptions.
@@ -71,15 +71,15 @@ Para probar esto en su sistema local, siga los siguientes pasos
 1. Buscar el servicio de asignador de usuarios del servicio Apache Sling
 1. Asegúrese de incluir la siguiente entrada _DesarrollarConServiceUser.core:getformsresourceresolver=fd-service_ en la sección Asignaciones de servicios
 1. [Abrir el formulario](http://localhost:4502/content/dam/formsanddocuments/sandbox/1201-borrower-payments/jcr:content?wcmmode=disabled)
-1. Rellene el formulario y haga clic en &quot;Ver PDF&quot;
+1. Rellene el formulario y haga clic en &quot; Ver PDF &quot;
 1. Debe ver el documento de registro en la nueva pestaña del explorador
 
 
 **Sugerencias para solucionar problemas**
 
-El PDF no se muestra en la nueva pestaña del explorador:
+PDF no se muestra en la nueva pestaña del explorador:
 
 1. Asegúrese de que no está bloqueando las ventanas emergentes del explorador
-1. AEM Asegúrese de que está iniciando el servidor como administrador (al menos en Windows).
+1. Asegúrese de iniciar el servidor de AEM como administrador (al menos en Windows)
 1. Asegúrese de que el paquete &quot;DesarrollandoConUsuarioServicio&quot; esté en *estado activo*
 1. [Asegúrese de que el usuario del sistema ](http://localhost:4502/useradmin) &#39; fd-service&#39; tiene permisos de lectura, modificación y creación en el siguiente nodo `/content/usergenerated/content/aemformsenablement`

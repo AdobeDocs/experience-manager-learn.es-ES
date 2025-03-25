@@ -2,7 +2,7 @@
 title: Crear servicio OSGi
 description: Cree el servicio OSGi para almacenar los formularios que desea firmar
 feature: Workflow
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 thumbnail: 6886.jpg
 jira: KT-6886
 topic: Development
@@ -10,7 +10,7 @@ role: Developer
 level: Experienced
 exl-id: 49e7bd65-33fb-44d4-aaa2-50832dffffb0
 duration: 150
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 1%
@@ -131,7 +131,7 @@ public String getFormData(String guid) {
 
 ## Actualizar estado de firma
 
-La finalización correcta de la ceremonia de firma déclencheur AEM un flujo de trabajo de la asociado al formulario. El primer paso del flujo de trabajo es un paso del proceso que actualiza el estado de la base de datos para la fila identificada por el GUID y el ID de cliente. También establecemos el valor del elemento firmado en formdata en Y para indicar que el formulario se ha rellenado y firmado. El formulario adaptable se rellena con estos datos y el valor del elemento de datos firmado en los datos xml se utiliza para mostrar el mensaje correspondiente. El código updateSignatureStatus se invoca desde el paso de proceso personalizado.
+La finalización correcta de la ceremonia de firma déclencheur un flujo de trabajo de AEM asociado al formulario. El primer paso del flujo de trabajo es un paso del proceso que actualiza el estado de la base de datos para la fila identificada por el GUID y el ID de cliente. También establecemos el valor del elemento firmado en formdata en Y para indicar que el formulario se ha rellenado y firmado. El formulario adaptable se rellena con estos datos y el valor del elemento de datos firmado en los datos xml se utiliza para mostrar el mensaje correspondiente. El código updateSignatureStatus se invoca desde el paso de proceso personalizado.
 
 
 ```java

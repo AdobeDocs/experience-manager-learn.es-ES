@@ -2,14 +2,14 @@
 title: Uso de carpetas inspeccionadas en AEM Forms
 description: Configuración y uso de carpetas vigiladas en AEM Forms
 feature: Output Service
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: abb74d44-d1b9-44d6-a49f-36c01acfecb4
 last-substantial-update: 2020-07-07T00:00:00Z
 duration: 86
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 25%
@@ -33,7 +33,7 @@ Para configurar una carpeta vigilada en el sistema, siga los pasos a continuaci�
 * [Descargue y extraiga el contenido del archivo zip](assets/outputservicewatchedfolderkt.zip). Este archivo zip contiene un paquete para crear la carpeta vigilada y archivos de muestra para probar el servicio de salida mediante el mecanismo de carpetas vigiladas
    * Sistema Windows
 
-      * AEM Importe outputservicewatchedfolder.zip en mediante el administrador de paquetes para la creación de un grupo de informes
+      * Importe outputservicewatchedfolder.zip en AEM mediante el administrador de paquetes
       * Esto crea una carpeta vigilada llamada outputservicewatchedfolder en la unidad C.
    * Sistema que no es Windows
       * [Abrir la configuración de la carpeta vigilada](http://localhost:4502/crx/de/index.jsp#/etc/fd/watchfolder/config/outputservice)

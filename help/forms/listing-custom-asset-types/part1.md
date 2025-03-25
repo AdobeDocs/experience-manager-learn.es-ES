@@ -3,7 +3,7 @@ title: Registro de tipos de recursos personalizados
 description: Habilitar tipos de recursos personalizados para incluirlos en el portal de AEM Forms
 feature: Adaptive Forms
 doc-type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 discoiquuid: 99944f44-0985-4320-b437-06c5adfc60a1
 topic: Development
 role: Developer
@@ -11,7 +11,7 @@ level: Experienced
 exl-id: da613092-e03b-467c-9b9e-668142df4634
 last-substantial-update: 2019-07-11T00:00:00Z
 duration: 129
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 1%
@@ -24,7 +24,7 @@ Habilitar tipos de recursos personalizados para incluirlos en el portal de AEM F
 
 >[!NOTE]
 >
->AEM Asegúrese de que tiene instalado la versión 6.3 con el SP1 y el complemento de AEM Forms correspondiente. Esta función solo funciona con AEM Forms 6.3 SP1 y versiones posteriores
+>Asegúrese de que tiene instalado AEM 6.3 con SP1 y el correspondiente complemento de AEM Forms. Esta función solo funciona con AEM Forms 6.3 SP1 y versiones posteriores
 
 ## Especificar ruta base {#specify-base-path}
 

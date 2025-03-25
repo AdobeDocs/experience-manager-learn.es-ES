@@ -1,22 +1,22 @@
 ---
-title: Uso de la etapa del Forms Workflow Enviar correo electrónico
+title: Uso de los pasos de envío de correo electrónico de Forms Workflow
 description: Los pasos para enviar correo electrónico se introdujeron en AEM Forms 6.4. Con este paso podemos crear procesos o flujos de trabajo empresariales que le permitan enviar correos electrónicos con o sin archivos adjuntos. El siguiente vídeo muestra los pasos para configurar el componente Enviar correo electrónico
 feature: Workflow
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 21e58bbc-c1d6-4d41-a4d4-f522a3a5d4a7
 last-substantial-update: 2020-06-09T00:00:00Z
 duration: 314
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 2%
 
 ---
 
-# Uso de la etapa del Forms Workflow Enviar correo electrónico {#using-send-email-step-of-forms-workflow}
+# Uso de los pasos de envío de correo electrónico de Forms Workflow {#using-send-email-step-of-forms-workflow}
 
 Los pasos para enviar correo electrónico se introdujeron en AEM Forms 6.4. Con este paso podemos crear procesos o flujos de trabajo empresariales que le permitan enviar correos electrónicos con o sin archivos adjuntos. El siguiente vídeo muestra los pasos para configurar el componente Enviar correo electrónico.
 
@@ -25,8 +25,8 @@ Los pasos para enviar correo electrónico se introdujeron en AEM Forms 6.4. Con 
 Como parte de este artículo, le guiaremos por el siguiente caso de uso:
 
 1. Un usuario rellena el formulario de solicitud de días libres
-1. AEM Al enviar el formulario, se activa el flujo de trabajo de
-1. AEM El flujo de trabajo de utiliza el componente Enviar correo electrónico para enviar un correo electrónico con el DoR como archivo adjunto
+1. Al enviar el formulario, se activa el flujo de trabajo de AEM
+1. El flujo de trabajo de AEM utiliza el componente Enviar correo electrónico para enviar un correo electrónico con el DoR como archivo adjunto
 
 Antes de usar Enviar correo electrónico, asegúrese de configurar el servicio Day CQ Mail desde [configMgr](http://localhost:4502/system/console/configMgr). Proporcione los valores específicos de su entorno
 
@@ -54,7 +54,7 @@ Eche un vistazo al paso del proceso del flujo de trabajo. El código personaliza
 
 >[!NOTE]
 >
->En AEM Forms 6.5 y versiones posteriores, no necesita este código personalizado para crear propiedades de metadatos. AEM Utilice la capacidad de variables en el flujo de trabajo de
+>En AEM Forms 6.5 y versiones posteriores, no necesita este código personalizado para crear propiedades de metadatos. Utilice la capacidad de variables en el flujo de trabajo de AEM
 
 Asegúrese de que la pestaña Archivos adjuntos del componente Enviar correo electrónico esté configurada según la captura de pantalla siguiente
 ![Enviar ficha de datos adjuntos de correo electrónico](assets/sendemailcomponentconfigure.jpg)El valor &quot;DOR.pdf&quot; debe coincidir con el valor especificado en la ruta de documento de registro especificada en las opciones de envío del formulario adaptable.

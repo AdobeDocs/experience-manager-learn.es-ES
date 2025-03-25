@@ -2,14 +2,14 @@
 title: Rellenar tabla de formulario adaptable
 description: Rellenar una tabla de formulario adaptable con los resultados de las invocaciones del servicio del modelo de datos de formulario
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: User
 level: Intermediate
 exl-id: 6e4b901a-6534-4c34-b315-2f2620b74247
 last-substantial-update: 2019-06-09T00:00:00Z
 duration: 45
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Row1 está configurado para crecer según los datos devueltos por la llamada de 
 
 [Instalar Tomcat como se especifica aquí](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md)
 [Implemente el archivo SampleRest.war contenido en este archivo zip en su Tomcat](assets/sample-rest.zip)
-AEM [Instale los recursos](assets/amortizationschedule.zip) mediante el administrador de paquetes de la aplicación de la
+[Instalar los recursos](assets/amortizationschedule.zip) mediante el administrador de paquetes de AEM
 [Abrir el formulario de horario de amortización](http://localhost:4502/content/dam/formsanddocuments/amortization/jcr:content?wcmmode=disabled)
 Introduzca el valor adecuado y haga clic en calcular
 El horario de amortización debe rellenarse en el formulario.

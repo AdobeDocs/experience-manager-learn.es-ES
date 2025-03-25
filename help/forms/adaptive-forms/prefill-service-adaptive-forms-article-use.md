@@ -2,14 +2,14 @@
 title: Servicio de relleno previo en Forms adaptable
 description: Rellene previamente formularios adaptables recuperando datos de fuentes de datos back-end.
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: f2c324a3-cbfa-4942-b3bd-dc47d8a3f7b5
 last-substantial-update: 2021-11-27T00:00:00Z
 duration: 129
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 3%
@@ -26,7 +26,7 @@ Para rellenar previamente un formulario adaptable mediante el servicio de rellen
 
 En el siguiente fragmento de código tenemos una clase que implementa la interfaz DataXMLProvider. Obtenemos acceso al usuario que ha iniciado sesión y, a continuación, recuperamos la información de perfil del usuario que ha iniciado sesión. A continuación, creamos un documento XML con un elemento de nodo raíz denominado &quot;data&quot; y anexamos los elementos adecuados a este nodo de datos. Una vez construido el documento XML, se devuelve la secuencia de entrada del documento XML.
 
-AEM A continuación, esta clase se convierte en un paquete OSGi y se implementa en la interfaz de usuario de. Una vez implementado el paquete, este servicio de rellenado previo está disponible para utilizarse como servicio de rellenado previo del formulario adaptable.
+A continuación, esta clase se convierte en paquete OSGi y se implementa en AEM. Una vez implementado el paquete, este servicio de rellenado previo está disponible para utilizarse como servicio de rellenado previo del formulario adaptable.
 
 >[!NOTE]
 >
@@ -141,12 +141,12 @@ Para probar esta capacidad en el servidor, realice lo siguiente
 
 * Asegúrese de completar la información del perfil del [usuario](http://localhost:4502/security/users.html) que inició sesión. El ejemplo busca las propiedades FirstName, LastName y Email del usuario que ha iniciado sesión.
 * [Descargue y extraiga el contenido del archivo zip en su ordenador](assets/prefillservice.zip)
-* AEM Implemente el paquete prefill.core-1.0.0-SNAPSHOT con la [consola web de la aplicación](http://localhost:4502/system/console/bundles)
+* Implemente el paquete prefill.core-1.0.0-SNAPSHOT con la [consola web de AEM](http://localhost:4502/system/console/bundles)
 * Importe el formulario adaptable mediante la opción Crear | Cargar archivos desde la sección [FormsAndDocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Asegúrese de que el [formulario](http://localhost:4502/editor.html/content/forms/af/prefill.html) use **&quot;Servicio de prerrellenado de AEM Forms personalizado&quot;** como servicio de prerrellenado. Esto se puede comprobar desde las propiedades de configuración de la sección **Contenedor de formulario**.
 * [Vista previa del formulario](http://localhost:4502/content/dam/formsanddocuments/prefill/jcr:content?wcmmode=disabled). Debería ver el formulario rellenado con los valores correctos.
 
 >[!NOTE]
 >
->AEM Si ha habilitado la depuración para com.aem.prefill.core.PrefillAdaptiveForm, el archivo de datos xml generado se escribirá en la carpeta de instalación del servidor de la.
+>Si ha habilitado la depuración para com.aem.prefill.core.PrefillAdaptiveForm, el archivo de datos xml generado se escribirá en la carpeta de instalación del servidor de AEM.
 

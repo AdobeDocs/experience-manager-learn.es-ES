@@ -2,7 +2,7 @@
 title: Integrar AEM Forms con SendGrid
 description: Aproveche la plataforma de envío de correo electrónico basada en la nube de SengGrid mediante AEM Forms.
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-13605
 topic: Development
 role: Developer
@@ -10,7 +10,7 @@ level: Intermediate
 last-substantial-update: 2023-07-14T00:00:00Z
 exl-id: 62b73f4b-69d8-4ede-9d57-3d6472d25d5a
 duration: 118
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 0%
@@ -52,7 +52,7 @@ Para probar la funcionalidad descrita en esta guía, siga estos pasos:
 1. Descargue el [archivo swagger](assets/SendGridWithDynamicTemplate.yaml) proporcionado en la carpeta de recursos.
 2. Cree un origen de datos Restful utilizando el archivo swagger descargado y las credenciales de SendGrid.
 3. Cree un modelo de datos de formulario basado en la fuente de datos Restful.
-4. Invoque la operación del POST `mail/send` del modelo de datos de formulario según sus necesidades. Por ejemplo, puede almacenar en déclencheur el correo electrónico al hacer clic en el botón o incluirlo como parte del flujo de trabajo de AEM Forms.
+4. Invoque la operación POST `mail/send` del modelo de datos de formulario según sus necesidades. Por ejemplo, puede almacenar en déclencheur el correo electrónico al hacer clic en el botón o incluirlo como parte del flujo de trabajo de AEM Forms.
 
 La carga útil de ejemplo para el servicio es la siguiente: Reemplace los valores de marcador de posición con sus propios datos:
 

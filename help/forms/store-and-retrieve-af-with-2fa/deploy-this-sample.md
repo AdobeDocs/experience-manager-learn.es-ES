@@ -3,7 +3,7 @@ title: Implementar el ejemplo
 description: Ejecute el caso de uso en su instancia local de AEM Forms.
 feature: Adaptive Forms
 type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6602
 thumbnail: 6602.jpg
 topic: Development
@@ -11,7 +11,7 @@ role: Developer
 level: Intermediate
 exl-id: cdfae631-86d7-438f-9baf-afd621802723
 duration: 186
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 1%
@@ -50,15 +50,15 @@ Implemente el archivo DevelopersWithServiceUser.jar mediante la consola web de F
 
 ## Implementar la biblioteca de cliente
 
-El ejemplo utiliza 2 bibliotecas de cliente. AEM Importe estas [bibliotecas de cliente](assets/store-af-with-attachments-client-lib.zip) a las que se ha realizado la.
+El ejemplo utiliza 2 bibliotecas de cliente. Importe estas [bibliotecas de cliente](assets/store-af-with-attachments-client-lib.zip) en AEM.
 
 ## Importar la plantilla de formulario adaptable personalizada
 
-Los formularios de ejemplo utilizados en esta demostración se basan en una plantilla personalizada. AEM Importar la plantilla personalizada [en el elemento de trabajo ](assets/custom-template-with-page-component.zip)
+Los formularios de ejemplo utilizados en esta demostración se basan en una plantilla personalizada. Importar la plantilla personalizada [en AEM](assets/custom-template-with-page-component.zip)
 
 ## Importar los formularios adaptables de ejemplo
 
-AEM Los dos formularios que componen este ejemplo deben importarse en el archivo de datos de tipo de datos. Los formularios de ejemplo se pueden [descargar desde aquí](assets/sample-forms.zip)
+Los dos formularios que componen este ejemplo deben importarse en AEM. Los formularios de ejemplo se pueden [descargar desde aquí](assets/sample-forms.zip)
 
 Abra [MyAccountForm](http://localhost:4502/editor.html/content/forms/af/myaccountform.html) en modo de edición. Especifique los valores Clave de API de Vonage y Secreto de API en los campos correspondientes del formulario adaptable.
 

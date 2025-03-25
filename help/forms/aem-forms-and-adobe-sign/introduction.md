@@ -2,7 +2,7 @@
 title: Integración de AEM Forms con Acrobat Sign
 description: Integre Acrobat Sign y AEM Forms para automatizar transacciones complejas e incluir firmas electrónicas legales como parte de una experiencia digital perfecta.
 feature: Adaptive Forms, Acrobat Sign
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Integrations, Development
 role: Developer
 level: Beginner
@@ -11,7 +11,7 @@ badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 last-substantial-update: 2020-03-20T00:00:00Z
 duration: 31
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 12%
@@ -20,12 +20,12 @@ ht-degree: 12%
 
 # Integración de AEM Forms con Acrobat Sign
 
-AEM Obtenga información sobre cómo integrar formularios de con Acrobat Sign, lo que permite flujos de trabajo de firma electrónica para formularios adaptables. Las firmas electrónicas mejoran los flujos de trabajo para procesar documentos para el área legal, ventas, nóminas, administración de recursos humanos y muchas más.
+Obtenga información sobre cómo integrar formularios de AEM con Acrobat Sign, lo que permite flujos de trabajo de firma electrónica para formularios adaptables. Las firmas electrónicas mejoran los flujos de trabajo para procesar documentos para el área legal, ventas, nóminas, administración de recursos humanos y muchas más.
 
 La integración entre AEM Forms y Acrobat Sign permite lo siguiente:
 
 * Utilizar Forms adaptable para capturar datos y presentar el documento de registro (DoR) generado automáticamente para las firmas.
-* Cree un Forms adaptable basado en la plantilla de PDF de. Combine los datos con la plantilla pdf y presente la misma plantilla para las firmas
+* Cree un Forms adaptable basado en la plantilla de PDF. Combine los datos con la plantilla pdf y presente la misma plantilla para las firmas
 * Enviar documentos para firmar mediante el componente de flujo de trabajo Firmar documento
 
 ## Requisitos previos

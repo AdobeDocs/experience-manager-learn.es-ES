@@ -1,8 +1,8 @@
 ---
 title: Crear un formulario web para presentarlo al usuario para su firma
-description: AEM Cree un paquete de informes para exponer los métodos de Acrobat Sign necesarios para el caso de uso.
+description: Cree un paquete de AEM para exponer los métodos de Acrobat Sign necesarios para el caso de uso.
 feature: Adaptive Forms,Acrobat Sign
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
@@ -10,7 +10,7 @@ jira: KT-13099
 last-substantial-update: 2023-04-13T00:00:00Z
 exl-id: 15364571-070c-4497-a256-f0483d6f9585
 duration: 118
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Creación de un contenedor para la API de REST de Acrobat Sign
 
-AEM Se ha desarrollado un paquete de personalizado para crear y devolver el formulario web al usuario final
+Se desarrolló un paquete personalizado de AEM para crear y devolver el formulario web al usuario final
 
 * [Crear documento transitorio](https://secure.na1.echosign.com/public/docs/restapi/v6#!/transientDocuments/createTransientDocument). El documento cargado a través de esta llamada se denomina transitorio, ya que solo está disponible durante 7 días después de la carga. El ID de documento transitorio devuelto se puede utilizar en las llamadas a la API donde se debe hacer referencia al archivo cargado. La solicitud de documento transitoria es una solicitud de varias partes que consta de tres partes: nombre de archivo, tipo MIME y el flujo de archivos. En esta solicitud, solo se puede cargar un archivo a la vez.
 * [Crear formulario web](https://secure.na1.echosign.com/public/docs/restapi/v6#!/widgets/createWidget). Este es un extremo principal que se usa para crear un nuevo formulario web. El formulario web se creó en un estado ACTIVO para alojar inmediatamente el formulario web.

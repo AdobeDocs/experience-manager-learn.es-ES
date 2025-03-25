@@ -2,7 +2,7 @@
 title: Aplicación React con AEM Forms y Acrobat Sign
 description: Acrobat Sign y AEM Forms permiten automatizar transacciones complejas e incluir firmas electrónicas legales como parte de una experiencia digital sin fisuras.
 feature: Adaptive Forms,Acrobat Sign
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
@@ -10,7 +10,7 @@ jira: KT-13099
 last-substantial-update: 2023-04-13T00:00:00Z
 exl-id: 64172af3-2905-4bc8-8311-68c2a70fb39e
 duration: 31
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 1%
@@ -33,7 +33,7 @@ A continuación se muestra el flujo del caso de uso
 
 Necesitará lo siguiente para que funcione el caso de uso:
 
-* AEM Un servidor de con el paquete de complementos de Forms
+* Un servidor de AEM con el paquete de complementos de Forms
 * Una clave de integración [para una aplicación de Acrobat Sign](https://helpx.adobe.com/sign/kb/how-to-create-an-integration-key.html)
 
 ## Siguientes pasos

@@ -1,15 +1,16 @@
 ---
-title: 'Déclencheur AEM de flujo de trabajo de la en el envío de formularios de HTML5: revisar y aprobar el PDF'
+title: 'Déclencheur del flujo de trabajo de AEM en el envío de formularios HTML5: revisar y aprobar PDF'
 description: Flujo de trabajo para revisar el PDF enviado
 feature: Mobile Forms
 doc-type: article
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 jira: kt-16215
 badgeVersions: label="AEM Forms 6.5" before-title="false"
-source-git-commit: 5f42678502a785ead29982044d1f3f5ecf023e0f
+exl-id: ec60d017-8b29-4185-a097-d809e18df4a7
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 3%
@@ -18,7 +19,7 @@ ht-degree: 3%
 
 # Flujo de trabajo para revisar y aprobar el PDF enviado
 
-AEM El último y último paso es crear un flujo de trabajo que genere un PDF estático o no interactivo para su revisión y aprobación. AEM El flujo de trabajo se activa mediante un lanzador de configurado en el nodo `/content/formsubmissions`.
+El último y último paso es crear un flujo de trabajo de AEM que genere un PDF estático o no interactivo para su revisión y aprobación. El flujo de trabajo se activa mediante un lanzador de AEM configurado en el nodo `/content/formsubmissions`.
 
 La siguiente captura de pantalla muestra los pasos involucrados en el flujo de trabajo.
 
@@ -26,7 +27,7 @@ La siguiente captura de pantalla muestra los pasos involucrados en el flujo de t
 
 ## Paso Generar flujo de trabajo de PDF no interactivo
 
-La plantilla XDP y los datos que se van a combinar con la plantilla se especifican aquí. Los datos que se van a combinar son los datos enviados desde el PDF. Estos datos enviados se almacenan en el nodo ```/content/formsubmissions```
+La plantilla XDP y los datos que se van a combinar con la plantilla se especifican aquí. Los datos que se van a combinar son los datos enviados desde PDF. Estos datos enviados se almacenan en el nodo ```/content/formsubmissions```
 
 ![flujo de trabajo](assets/generate-pdf1.PNG)
 

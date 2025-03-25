@@ -2,7 +2,7 @@
 title: Solución de problemas de firmar varios documentos
 description: Prueba y solución de problemas
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6960
 thumbnail: 6960.jpg
 topic: Development
@@ -10,7 +10,7 @@ role: Developer
 level: Intermediate
 exl-id: 99cba29e-4ae3-4160-a4c7-a5b6579618c0
 duration: 81
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Las notificaciones por correo electrónico se envían mediante el componente Env
 
 ### El vínculo de la notificación por correo electrónico no funciona
 
-Los vínculos de las notificaciones por correo electrónico se generan dinámicamente. AEM Si el servidor de la no se está ejecutando en localhost:4502, proporcione el nombre de servidor y el puerto correctos en los argumentos del paso Almacenar Forms para firmar del flujo de trabajo Firmar varios Forms
+Los vínculos de las notificaciones por correo electrónico se generan dinámicamente. Si el servidor de AEM no se está ejecutando en localhost:4502, proporcione el nombre de servidor y el puerto correctos en los argumentos del paso Almacenar Forms para firmar del flujo de trabajo Firmar varios Forms
 
 ### No se puede firmar el formulario
 

@@ -2,14 +2,14 @@
 title: Usar el servicio Assembler en AEM Forms
 description: Uso del servicio Assembler en AEM Forms para montar varios archivos PDF
 feature: Assembler
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 18da12ea-b1ea-48e4-979e-3cb59584dfbd
 last-substantial-update: 2020-07-07T00:00:00Z
 duration: 76
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Usar el servicio Assembler en AEM Forms{#using-assembler-service-in-aem-forms}
 
-Este artículo proporciona recursos para mostrar la capacidad de arrastrar y soltar varios archivos de PDF en el explorador y guardar el archivo PDF ensamblado en el sistema de archivos. El siguiente es el código del servlet que monta los archivos PDF cargados mediante el explorador.
+Este artículo proporciona recursos para mostrar la capacidad de arrastrar y soltar varios archivos PDF en el explorador y guardar el archivo PDF ensamblado en el sistema de archivos. El siguiente es el código del servlet que monta los archivos PDF cargados mediante el explorador.
 
 ```java
 protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse response) {
@@ -101,7 +101,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 }
 ```
 
-AEM Para que esta capacidad funcione en el servidor de la
+Para que esta capacidad funcione en el servidor de AEM
 
 * Descargue [AssembleMultipleFiles.zip](assets/assemble-multiple-files.zip) en su sistema local.
 * Cargue e instale el paquete con el [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
@@ -109,7 +109,7 @@ AEM Para que esta capacidad funcione en el servidor de la
 * Descargar [paquete de desarrollo con usuario de servicio](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 * Implemente e inicie los paquetes mediante la [consola web felix](http://localhost:4502/system/console/bundles)
 * Dirija su explorador a [AssemblePdfs.html](http://localhost:4502/content/DocumentServices/AssemblePdfs.html)
-* Arrastre y suelte un par de archivos de archivos de PDF
+* Arrastre y suelte un par de archivos de PDF
 
 >[!NOTE]
 >
@@ -121,6 +121,6 @@ AEM Para que esta capacidad funcione en el servidor de la
 >
 > * El código no gestiona documentos de PDF basados en XFA
 >
-> * Asegúrese de arrastrar y soltar solo los archivos del PDF
+> * Asegúrese de arrastrar y soltar solo los archivos de PDF
 >
 >

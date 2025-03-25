@@ -2,14 +2,14 @@
 title: Visualización de imágenes en línea en Forms adaptable
 description: Mostrar las imágenes cargadas en línea en el Forms adaptable
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 4a69513d-992c-435a-a520-feb9085820e7
 last-substantial-update: 2020-06-09T00:00:00Z
 duration: 58
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 0%
@@ -65,7 +65,7 @@ function consumeImage (file) {
 
 ### Implementación en el servidor
 
-* AEM AEM Descargue e instale la [biblioteca de cliente](assets/inline-image-client-library.zip) en su instancia de la mediante el administrador de paquetes de la aplicación de la aplicación de seguridad de la aplicación de seguridad de.
-* AEM AEM Descargue e instale el [formulario de ejemplo](assets/inline-image-af.zip) en su instancia de mediante el administrador de paquetes de la aplicación de ejemplo de la aplicación de.
+* Descargue e instale la [biblioteca de cliente](assets/inline-image-client-library.zip) en su instancia de AEM mediante el administrador de paquetes de AEM.
+* Descargue e instale [formulario de ejemplo](assets/inline-image-af.zip) en su instancia de AEM mediante el administrador de paquetes de AEM.
 * Dirija su navegador a [Agregar imagen en línea](http://localhost:4502/content/dam/formsanddocuments/addinlineimage/jcr:content?wcmmode=disabled)
 * Haga clic en el botón &quot;Adjuntar su foto&quot; para añadir la imagen

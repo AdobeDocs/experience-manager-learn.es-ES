@@ -3,7 +3,7 @@ title: Personalizar notificación de asignación de tarea
 description: Incluir datos de formulario en los correos electrónicos de notificación de asignación de tarea
 feature: Workflow
 doc-type: article
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6279
 thumbnail: KT-6279.jpg
 topic: Development
@@ -12,7 +12,7 @@ level: Experienced
 exl-id: 0cb74afd-87ff-4e79-a4f4-a4634ac48c51
 last-substantial-update: 2020-07-07T00:00:00Z
 duration: 144
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 1%
@@ -117,7 +117,7 @@ En la plantilla de correo electrónico puede incluir la propiedad de metadatos m
 
 ## Configurar la asignación de tareas para utilizar la propiedad de metadatos personalizada
 
-AEM Una vez que el componente OSGi se haya creado e implementado en el servidor, configure el componente Asignar tarea, tal y como se muestra a continuación, para usar propiedades de metadatos personalizadas.
+Una vez que el componente OSGi se haya creado e implementado en el servidor de AEM, configure el componente Asignar tarea como se muestra a continuación para utilizar las propiedades de metadatos personalizadas.
 
 
 ![Notificación de tarea](assets/task-notification.PNG)
@@ -131,7 +131,7 @@ AEM Una vez que el componente OSGi se haya creado e implementado en el servidor,
 * [Configurar el servicio Day CQ Mail](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)
 * Asocie un ID de correo electrónico válido con [usuario administrador](http://localhost:4502/security/users.html)
 * Descargue e instale [Workflow-and-notification-template](assets/workflow-and-task-notification-template.zip) con [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
-* AEM Descargue [Formulario adaptable](assets/request-travel-authorization.zip) e impórtelo a la interfaz de usuario de [formularios y documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) para que pueda importarlo a la interfaz de usuario de formularios y documentos.
+* Descargue [Formulario adaptable](assets/request-travel-authorization.zip) e impórtelo a AEM desde la interfaz de usuario de [formularios y documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
 * Implementar e iniciar el [paquete personalizado](assets/work-items-user-service-bundle.jar) mediante la [consola web](http://localhost:4502/system/console/bundles)
 * [Previsualizar y enviar el formulario](http://localhost:4502/content/dam/formsanddocuments/requestfortravelauhtorization/jcr:content?wcmmode=disabled)
 

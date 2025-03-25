@@ -2,7 +2,7 @@
 title: Generación del token web JSON y el token de acceso
 description: Este artículo explica el código necesario para generar el JWT y el token de acceso para realizar llamadas REST a Adobe Campaign Standard
 feature: Adaptive Forms, Form Data Model
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Integrations, Development
 role: Developer
 level: Experienced
@@ -10,7 +10,7 @@ badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: a5e5aad4-064f-4638-a53a-88dfb1d27c8f
 duration: 151
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 1%
@@ -244,7 +244,7 @@ public class CampaignServiceImpl implements CampaignService {
 
 ## Generar token de acceso {#generate-access-token}
 
-A continuación, intercambiamos el JWT generado por un token de acceso realizando una llamada al POST. Este token de acceso se enviará como una clave de autorización en el encabezado HTTP para las llamadas REST posteriores
+A continuación, intercambiamos el JWT generado por un token de acceso realizando una llamada de POST. Este token de acceso se enviará como una clave de autorización en el encabezado HTTP para las llamadas REST posteriores
 
 ## Siguientes pasos
 

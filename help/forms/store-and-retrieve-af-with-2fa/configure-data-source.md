@@ -3,7 +3,7 @@ title: Configuración de Data Source
 description: Crear DataSource apuntando a la base de datos MySQL
 feature: Adaptive Forms
 type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6541
 thumbnail: 6541.jpg
 topic: Development
@@ -11,7 +11,7 @@ role: Developer
 level: Beginner
 exl-id: a87ff428-15f7-43c9-ad03-707eab6216a9
 duration: 64
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 5%
@@ -20,8 +20,8 @@ ht-degree: 5%
 
 # Configuración de Data Source
 
-AEM Existen muchas maneras de habilitar la integración con una base de datos externa mediante el uso de la. Una de las prácticas más comunes y estándar de la integración de bases de datos es usar las propiedades de configuración de la fuente de datos obtenida de una conexión Apache Sling a través de [configMgr](http://localhost:4502/system/console/configMgr).
-AEM El primer paso es descargar e implementar los [controladores MySQL](https://mvnrepository.com/artifact/mysql/mysql-connector-java) apropiados para su uso en el.
+AEM permite de muchas maneras la integración con una base de datos externa. Una de las prácticas más comunes y estándar de la integración de bases de datos es usar las propiedades de configuración de la fuente de datos obtenida de una conexión Apache Sling a través de [configMgr](http://localhost:4502/system/console/configMgr).
+El primer paso es descargar e implementar los [controladores MySQL](https://mvnrepository.com/artifact/mysql/mysql-connector-java) apropiados en AEM.
 A continuación, establezca las propiedades del origen de datos agrupado de la conexión de Sling específicas de la base de datos. La siguiente captura de pantalla muestra la configuración utilizada para este tutorial. El esquema de la base de datos se proporciona como parte de estos recursos de tutorial.
 
 >[!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: Mostrar documento de registro en línea
-description: Combine datos de formulario adaptables con la plantilla XDP y muestre el PDF en línea mediante la API de PDF incrustado de Document Cloud.
-version: 6.4,6.5
+description: Combine datos de formulario adaptables con la plantilla XDP y muestre el PDF en línea de PDF mediante la API de PDF incrustada de Document Cloud.
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Forms Service
 topic: Development
 role: Developer
@@ -10,7 +10,7 @@ jira: KT-9411
 exl-id: 327ffe26-e88e-49f0-9f5a-63e2a92e1c8a
 last-substantial-update: 2021-07-07T00:00:00Z
 duration: 165
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 1%
@@ -27,7 +27,7 @@ Se han realizado los siguientes pasos para completar la integración
 
 ## Crear un componente personalizado para mostrar el PDF en línea
 
-Se ha creado un componente personalizado (incrustado-pdf) para incrustar el PDF devuelto por la llamada del POST.
+Se ha creado un componente personalizado (incrustado-pdf) para incrustar el PDF devuelto por la llamada de POST.
 
 ## Biblioteca de cliente
 
@@ -108,13 +108,13 @@ Asegúrese de asignar un nombre a la casilla de verificación viewPDF.
 Configure el componente incrustado-pdf como se muestra en la captura de pantalla siguiente
 ![incrustar-pdf](assets/embed-pdf-configuration.png)
 
-**Clave de API de PDF incrustado**: esta es la clave que puede utilizar para incrustar el PDF. Esta clave solo funcionará con localhost. Puede crear [su propia clave](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) y asociarla a otro dominio.
+**Incrustar clave de API de PDF**: esta es la clave que puede usar para incrustar el PDF. Esta clave solo funcionará con localhost. Puede crear [su propia clave](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) y asociarla a otro dominio.
 
 **El extremo devuelve el pdf**: Este es el servlet personalizado que combinará los datos con la plantilla xdp y devolverá el pdf.
 
 **Nombre de plantilla**: esta es la ruta al xdp. Normalmente, se almacena en la carpeta formsanddocuments.
 
-**Nombre de archivo del PDF**: esta es la cadena que aparecerá en el componente incrustado de PDF.
+**Nombre de archivo PDF**: esta es la cadena que aparecerá en el componente incrustar pdf.
 
 ## Crear servlet personalizado
 
@@ -230,7 +230,7 @@ Para probar esto en el servidor local, siga los siguientes pasos:
 
 1. [Descargar e instalar el paquete incrupdf](assets/embedpdf.core-1.0-SNAPSHOT.jar).
 Tiene el servlet para combinar los datos con la plantilla XDP y transmitir el PDF de vuelta.
-1. Agregue la ruta /bin/getPDFToEmbed en la sección de rutas excluidas del filtro CSRF de Adobe AEM Granite usando [ConfigMgr](http://localhost:4502/system/console/configMgr). En su entorno de producción se recomienda usar el [marco de protección CSRF](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html?lang=en)
+1. Agregue la ruta /bin/getPDFToEmbed en la sección de rutas excluidas del filtro CSRF de Adobe Granite usando [AEM ConfigMgr](http://localhost:4502/system/console/configMgr). En su entorno de producción se recomienda usar el [marco de protección CSRF](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html?lang=en)
 1. [Importar la biblioteca de cliente y el componente personalizado](assets/embed-pdf.zip)
 1. [Importar el formulario adaptable y la plantilla](assets/embed-pdf-form-and-xdp.zip)
 1. [Vista previa de formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/from1040/jcr:content?wcmmode=disabled)

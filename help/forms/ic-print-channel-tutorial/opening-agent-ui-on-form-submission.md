@@ -1,9 +1,9 @@
 ---
-title: Abrir La Interfaz De Usuario Del Agente Al Enviar El POST
+title: Abrir la interfaz de usuario del agente tras el envío
 description: Esta es la parte 11 del tutorial de varios pasos para crear el primer documento de comunicaciones interactivas para el canal Imprimir. En esta parte, iniciaremos la interfaz de la interfaz de usuario del agente para crear correspondencia ad-hoc sobre el envío de formularios.
 feature: Interactive Communication
 doc-type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6168
 thumbnail: 40122.jpg
 topic: Development
@@ -11,14 +11,14 @@ role: Developer
 level: Intermediate
 exl-id: 509b4d0d-9f3c-46cb-8ef7-07e831775086
 duration: 170
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 0%
 
 ---
 
-# Abrir La Interfaz De Usuario Del Agente Al Enviar El POST
+# Abrir la interfaz de usuario del agente tras el envío
 
 En esta parte, iniciaremos la interfaz de la interfaz de usuario del agente para crear correspondencia ad-hoc sobre el envío de formularios.
 
@@ -58,7 +58,7 @@ Para probar esta capacidad en el servidor
 
 * [Importe e instale los recursos relacionados con este artículo mediante el administrador de paquetes.](assets/launch-agent-ui.zip)
 * [Iniciar sesión en configMgr](http://localhost:4502/system/console/configMgr)
-* Buscar _Adobe Granite CSRF Filter_
+* Busque _Filtro CSRF de Adobe Granite_
 * Agregar _/content/getprintchannel_ en las rutas excluidas
 * Guarde los cambios.
 * [Abrir POST.jsp](http://localhost:4502/apps/AEMForms/openprintchannel/POST.jsp). Asegúrese de que la cadena pasada a FormFieldRequestParameter sea un documentId válido.(Línea 19).

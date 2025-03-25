@@ -2,7 +2,7 @@
 title: Usar fragmentos en el servicio de salida con la carpeta vigilada
 description: Generar documentos pdf con fragmentos que residan en el repositorio crx
 feature: Output Service
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
@@ -10,7 +10,7 @@ last-substantial-update: 2022-09-07T00:00:00Z
 thumbnail: ecma-fragments.jpg
 exl-id: 6b0bd2f1-b8ee-4f96-9813-8c11aedd3621
 duration: 84
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 # Generación de documentos PDF con fragmentos mediante script ECMA{#developing-with-output-and-forms-services-in-aem-forms}
 
 
-En este artículo utilizaremos el servicio de salida para generar archivos pdf utilizando fragmentos xdp. El xdp principal y los fragmentos residen en el repositorio crx. AEM Es importante imitar la estructura de carpetas del sistema de archivos en la carpeta de archivos de la carpeta de la carpeta de la carpeta de la carpeta de la carpeta de la carpeta de archivos de la. AEM Por ejemplo, si está usando un fragmento en la carpeta de fragmentos de su xdp, debe crear una carpeta llamada **fragmentos** bajo su carpeta base en el archivo de carpetas de la carpeta de la carpeta de la carpeta de la carpeta de la carpeta de base de la carpeta de la carpeta de la carpeta de la carpeta de la carpeta de la carpeta de la carpeta de la carpeta de la carpeta de la carpeta de la carpeta de la. La carpeta base contendrá la plantilla xdp base. Por ejemplo, si tiene la siguiente estructura en el sistema de archivos
+En este artículo utilizaremos el servicio de salida para generar archivos pdf utilizando fragmentos xdp. El xdp principal y los fragmentos residen en el repositorio crx. Es importante imitar la estructura de carpetas del sistema de archivos en AEM. Por ejemplo, si está usando un fragmento en la carpeta de fragmentos de su xdp, debe crear una carpeta llamada **fragmentos** bajo la carpeta base en AEM. La carpeta base contendrá la plantilla xdp base. Por ejemplo, si tiene la siguiente estructura en el sistema de archivos
 * c:\xdptemplates: contendrá la plantilla xdp base
 * c:\xdptemplates\fragments: esta carpeta contendrá fragmentos y la plantilla principal hará referencia al fragmento como se muestra a continuación
   ![fragmento-xdp](assets/survey-fragment.png).
@@ -35,7 +35,7 @@ La siguiente es la estructura de carpetas para el xdp de muestra, que utiliza 2 
 * Servicio de salida: normalmente, este servicio se utiliza para combinar datos xml con una plantilla xdp o un pdf para generar un pdf aplanado. Para obtener más información, consulte [javadoc](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) para el servicio Output. En este ejemplo utilizamos fragmentos que residen en el repositorio crx.
 
 
-Se utilizó el siguiente script ECMA para generar el PDF. Observe el uso de ResourceResolver y ResourceResolverHelper en el código. ResourceResolver es necesario, ya que este código se ejecuta fuera de cualquier contexto de usuario.
+El siguiente script ECMA se utilizó para generar PDF. Observe el uso de ResourceResolver y ResourceResolverHelper en el código. ResourceResolver es necesario, ya que este código se ejecuta fuera de cualquier contexto de usuario.
 
 ```java
 var inputMap = processorContext.getInputMap();

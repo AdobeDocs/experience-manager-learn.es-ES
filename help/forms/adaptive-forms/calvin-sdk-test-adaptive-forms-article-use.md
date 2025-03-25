@@ -1,27 +1,27 @@
 ---
-title: AEM Uso de pruebas automatizadas con Forms adaptable de
-description: Pruebas automatizadas de Forms adaptable con el SDK de Calvin
+title: Uso de pruebas automatizadas con AEM Adaptive Forms
+description: Pruebas automatizadas de Forms adaptable con Calvin SDK
 feature: Adaptive Forms
 doc-type: article
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 5a1364f3-e81c-4c92-8972-4fdc24aecab1
 last-substantial-update: 2020-09-10T00:00:00Z
 duration: 101
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '436'
 ht-degree: 0%
 
 ---
 
-# AEM Uso de pruebas automatizadas con Forms adaptable de {#using-automated-tests-with-aem-adaptive-forms}
+# Uso de pruebas automatizadas con AEM Adaptive Forms {#using-automated-tests-with-aem-adaptive-forms}
 
-Pruebas automatizadas de Forms adaptable con el SDK de Calvin
+Pruebas automatizadas de Forms adaptable con Calvin SDK
 
-El SDK de Calvin es una API de utilidad para que los desarrolladores de Forms adaptables prueben Forms adaptable. El SDK de Calvin se basa en el [marco de pruebas Hobbes.js](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es). El SDK de Calvin está disponible a partir de AEM Forms 6.3.
+Calvin SDK es una API de utilidad para que los desarrolladores de Forms adaptables prueben Forms adaptable. Calvin SDK se basa en el [marco de pruebas Hobbes.js](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es). Calvin SDK está disponible con AEM Forms 6.3 en adelante.
 
 En este tutorial, creará lo siguiente:
 
@@ -31,7 +31,7 @@ En este tutorial, creará lo siguiente:
 
 ## Introducción {#getting-started}
 
-[Descargue e instale Assets mediante el administrador de paquetes](assets/testingadaptiveformsusingcalvinsdk1.zip)El paquete contiene secuencias de comandos de ejemplo y varios Forms adaptables. Estos Forms adaptables se han creado con la versión 6.3 de AEM Forms. Se recomienda crear formularios nuevos específicos de la versión de AEM Forms si está probando esto en AEM Forms 6.4 o superior. Los scripts de ejemplo muestran varias API del SDK de Calvin disponibles para probar el Forms adaptable. AEM Los pasos generales para probar el Forms adaptable de la aplicación son:
+[Descargue e instale Assets mediante el administrador de paquetes](assets/testingadaptiveformsusingcalvinsdk1.zip)El paquete contiene secuencias de comandos de ejemplo y varios Forms adaptables. Estos Forms adaptables se han creado con la versión 6.3 de AEM Forms. Se recomienda crear formularios nuevos específicos de la versión de AEM Forms si está probando esto en AEM Forms 6.4 o superior. Los scripts de ejemplo muestran varias API de SDK de Calvin disponibles para probar el Forms adaptable. Los pasos generales para probar AEM Adaptive Forms son:
 
 * Desplácese hasta el formulario que necesite probar
 * Establecer el valor del campo
@@ -51,7 +51,7 @@ var mortgageFormTS = new hobs.TestSuite("Mortgage Form Test", {
 El código anterior crea un nuevo grupo de pruebas.
 
 * El nombre de TestSuite en este caso es &#39; `Mortgage Form Test` &#39;.
-* AEM Se proporciona la ruta absoluta en la que se encuentra el archivo js, que contiene el grupo de pruebas, en el que se indica la ruta de acceso absoluta.
+* Se proporciona la ruta absoluta en AEM al archivo js que contiene el grupo de pruebas.
 * El parámetro register cuando se establece en &#39; `true` &#39;, hace que el grupo de pruebas esté disponible en la interfaz de usuario de prueba.
 
 ```javascript

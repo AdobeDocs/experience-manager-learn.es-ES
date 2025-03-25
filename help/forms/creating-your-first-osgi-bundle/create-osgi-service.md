@@ -2,14 +2,14 @@
 title: Creación de su primer servicio OSGi con AEM Forms
 description: Cree su primer servicio OSGi con AEM Forms
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 2f15782e-b60d-40c6-b95b-6c7aa8290691
 last-substantial-update: 2021-04-23T00:00:00Z
 duration: 87
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 2%
@@ -88,9 +88,9 @@ La anotación `@Reference` forma parte de los servicios declarativos de OSGi y s
 * Abrir **ventana del símbolo del sistema**
 * Navegue hasta `c:\aemformsbundles\mysite\core`
 * Ejecutar el comando `mvn clean install -PautoInstallBundle`
-* AEM El comando anterior generará e implementará automáticamente el paquete en la instancia de que se ejecuta en localhost:4502
+* El comando anterior creará e implementará automáticamente el paquete en la instancia de AEM que se ejecuta en localhost:4502
 
-El paquete también estará disponible en la siguiente ubicación `C:\AEMFormsBundles\mysite\core\target`. AEM El paquete también se puede implementar en los entornos de trabajo mediante la consola web [Felix.](http://localhost:4502/system/console/bundles)
+El paquete también estará disponible en la siguiente ubicación `C:\AEMFormsBundles\mysite\core\target`. El paquete también se puede implementar en AEM mediante la consola web [Felix.](http://localhost:4502/system/console/bundles)
 
 ## Usar el servicio
 
@@ -107,9 +107,9 @@ El paquete de muestra que contiene la página JSP se puede [descargar desde aqu�
 
 ## Prueba del paquete
 
-AEM Importe e instale el paquete en el servidor de correo electrónico con el [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp) en el servidor de correo electrónico
+Importe e instale el paquete en AEM mediante [el administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
 
-Utilice postman para realizar una llamada al POST y proporcionar los parámetros de entrada como se muestra en la captura de pantalla siguiente
+Utilice postman para realizar una llamada de POST y proporcionar los parámetros de entrada como se muestra en la captura de pantalla siguiente
 ![cartero](assets/test-service-postman.JPG)
 
 ## Siguientes pasos

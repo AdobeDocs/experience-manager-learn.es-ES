@@ -1,26 +1,26 @@
 ---
-title: 'Déclencheur AEM de flujo de trabajo de la en el envío de formularios de HTML5: administrar el envío de formularios'
-description: Obtenga información sobre cómo almacenar en déclencheur AEM el flujo de trabajo de cuando se envía el formulario de HTML5 y se almacenan los datos enviados en el repositorio.
+title: 'Déclencheur del flujo de trabajo de AEM en el envío de formularios HTML5: administrar el envío de formularios'
+description: Obtenga información sobre cómo almacenar en déclencheur el flujo de trabajo de AEM cuando se envía el formulario HTML5 y se almacenan los datos enviados en el repositorio.
 feature: Mobile Forms
 doc-type: article
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 level: Experienced
 jira: kt-16215
-source-git-commit: 5f42678502a785ead29982044d1f3f5ecf023e0f
+exl-id: e0bde892-1da0-4b72-a408-ad7b84086939
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 1%
 
 ---
 
-
 # Almacenar datos enviados
 
-AEM El siguiente paso es almacenar los datos enviados en el repositorio del autor de la. El servlet montado en `/bin/startworkflow` guarda los datos enviados.
-AEM Se configura un lanzador de flujo de trabajo de para que se almacene en déclencheur cada vez que se cree un nuevo recurso de tipo `nt:file` en el nodo &lt;node_to_store_submit_data>. Este flujo de trabajo creará un PDF estático o no interactivo combinando los datos enviados con la plantilla xdp. A continuación, el PDF generado se asigna a un usuario para su revisión y aprobación.
+El siguiente paso es almacenar los datos enviados en el repositorio del autor de AEM. El servlet montado en `/bin/startworkflow` guarda los datos enviados.
+Se configura un iniciador de flujo de trabajo de AEM para que se almacene en déclencheur cada vez que se cree un nuevo recurso de tipo `nt:file` en el nodo &lt;node_to_store_submit_data>. Este flujo de trabajo creará un PDF estático o no interactivo combinando los datos enviados con la plantilla xdp. A continuación, el PDF generado se asigna a un usuario para su revisión y aprobación.
 
 Para almacenar los datos enviados en el nodo &lt;node_to_store_submitted_data>, utilizamos el servicio OSGi `GetResolver`, que nos permite guardar los datos enviados mediante el usuario del sistema `fd-service`, que está disponible en cada instalación de AEM Forms.
 
@@ -124,4 +124,3 @@ public class StartWorkflow extends SlingAllMethodsServlet {
 ## Siguientes pasos
 
 [Iniciador y flujo de trabajo de flujo](./review-workflow.md)
-

@@ -1,9 +1,9 @@
 ---
-title: Información general sobre la configuración del formulario adaptable a déclencheur AEM flujo de trabajo
-description: AEM Configurar las opciones de carga útil al activar el flujo de trabajo de la al enviar el formulario
+title: Información general sobre la configuración del formulario adaptable al flujo de trabajo AEM de déclencheur
+description: Configurar las opciones de carga útil al activar el flujo de trabajo de AEM al enviar el formulario
 feature: Workflow
 doc-type: article
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-5407
 thumbnail: 40258.jpg
 topic: Development
@@ -12,18 +12,18 @@ level: Beginner
 exl-id: 9f1dbd02-774a-4b84-90fa-02d4e468cbac
 last-substantial-update: 2020-07-07T00:00:00Z
 duration: 573
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '148'
 ht-degree: 2%
 
 ---
 
-# Configuración del formulario adaptable para el flujo de trabajo de déclencheur AEM
+# Configurar formularios adaptables para almacenar en déclencheur el flujo de trabajo de AEM
 
 ## Requisitos previos
 
-AEM El formulario de ejemplo que se utiliza en este flujo de trabajo se basa en una plantilla de formulario adaptable personalizada que debe importarse en el servidor de la. El formulario de ejemplo proporcionado debe importarse después de importar la plantilla.
+El formulario de ejemplo utilizado en este flujo de trabajo se basa en una plantilla de formulario adaptable personalizada que debe importarse en el servidor de AEM. El formulario de ejemplo proporcionado debe importarse después de importar la plantilla.
 
 ### Obtener las plantillas de formulario adaptable
 
@@ -38,7 +38,7 @@ AEM El formulario de ejemplo que se utiliza en este flujo de trabajo se basa en 
 * Haga clic en Crear -> Cargar archivo
 * El formulario adaptable de ejemplo se coloca en una carpeta llamada [Application Forms](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments/applicationforms)
 
-En el siguiente vídeo, se explica cómo configurar un formulario adaptable para almacenar en déclencheur AEM un flujo de trabajo de
+En el siguiente vídeo se explica cómo configurar un formulario adaptable para almacenar en déclencheur un flujo de trabajo de AEM
 >[!VIDEO](https://video.tv.adobe.com/v/40258?quality=12&learn=on)
 
 El siguiente vídeo muestra la carga útil del flujo de trabajo y otros detalles en el repositorio crx

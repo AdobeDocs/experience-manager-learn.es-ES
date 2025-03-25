@@ -1,7 +1,7 @@
 ---
 title: Creación de su primer paquete OSGi con AEM Forms
 description: Cree su primer paquete OSGi con Maven y Eclipse
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Adaptive Forms
 topic: Development
 role: Developer
@@ -9,7 +9,7 @@ level: Beginner
 exl-id: 307cc3b2-87e5-4429-8f21-5266cf03b78f
 last-substantial-update: 2021-04-23T00:00:00Z
 duration: 145
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Agregar %JAVA_HOME%/bin a la ruta de acceso
 ![origen de datos](assets/java-home.JPG)
 
 >[!NOTE]
-> No utilice JDK 15. AEM No es compatible con el servicio de asistencia de la aplicación
+> No utilice JDK 15. No es compatible con AEM.
 
 ### Prueba de la versión de JDK
 
@@ -101,9 +101,9 @@ Expanda `src/main/java` en la carpeta `mysite.core`. Esta es la carpeta en la qu
 
 ![origen de datos](assets/mysite-core-project.png)
 
-## Incluir el SDK de cliente de AEMFD
+## Incluir SDK de cliente de AEMFD
 
-Debe incluir el SDK de cliente de AEMFD en el proyecto para aprovechar los distintos servicios que se incluyen con AEM Forms. Consulte [AEMFD Client SDK](https://mvnrepository.com/artifact/com.adobe.aemfd/aemfd-client-sdk) para incluir el SDK de cliente apropiado en su proyecto Maven. AEM Tiene que incluir el SDK de cliente de FD de en la sección de dependencias de `pom.xml` del proyecto principal, como se muestra a continuación.
+Debe incluir el SDK de cliente de AEMFD en el proyecto para aprovechar los distintos servicios que se incluyen con AEM Forms. Consulte [SDK de cliente de AEMFD](https://mvnrepository.com/artifact/com.adobe.aemfd/aemfd-client-sdk) para incluir el SDK de cliente apropiado en su proyecto Maven. Debe incluir AEM FD Client SDK en la sección de dependencias de `pom.xml` del proyecto principal, como se muestra a continuación.
 
 ```xml
 <dependency>
@@ -118,7 +118,7 @@ Para crear su proyecto, siga los siguientes pasos:
 * Abrir **ventana del símbolo del sistema**
 * Navegue hasta `c:\aemformsbundles\mysite\core`
 * Ejecutar el comando `mvn clean install -PautoInstallBundle`
-AEM El comando anterior crea e instala el paquete en el servidor de la que se ejecuta en `http://localhost:4502`. El paquete también está disponible en el sistema de archivos en
+El comando anterior crea e instala el paquete en el servidor de AEM que se ejecuta en `http://localhost:4502`. El paquete también está disponible en el sistema de archivos en
   `C:\AEMFormsBundles\mysite\core\target` y se pueden implementar mediante la [consola web Felix](http://localhost:4502/system/console/bundles)
 
 ## Siguientes pasos

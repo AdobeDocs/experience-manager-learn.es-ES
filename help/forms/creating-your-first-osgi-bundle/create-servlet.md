@@ -2,14 +2,14 @@
 title: Creación del primer servlet en AEM Forms
 description: Cree su primer servlet sling para combinar datos con la plantilla de formulario.
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 72728ed7-80a2-48b5-ae7f-d744db8a524d
 last-substantial-update: 2021-04-23T00:00:00Z
 duration: 55
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 1%
@@ -22,7 +22,7 @@ Un servlet es una clase que se utiliza para ampliar las capacidades de los servi
 Todos los servlets deben implementar la interfaz Servlet, que define los métodos de ciclo de vida.
 
 
-AEM Un servlet en la se puede registrar como servicio OSGi: puede ampliar SlingSafeMethodsServlet para la implementación de solo lectura o SlingAllMethodsServlet para implementar todas las operaciones RESTful.
+Un servlet en AEM se puede registrar como servicio OSGi: puede ampliar SlingSafeMethodsServlet para la implementación de solo lectura o SlingAllMethodsServlet para implementar todas las operaciones RESTful.
 
 ## Código servlet
 
@@ -78,9 +78,9 @@ Para crear su proyecto, siga los siguientes pasos:
 * Abrir **ventana del símbolo del sistema**
 * Navegue hasta `c:\aemformsbundles\mysite\core`
 * Ejecutar el comando `mvn clean install -PautoInstallBundle`
-* AEM El comando anterior crea e implementa automáticamente el paquete en la instancia de la instancia de la instancia de que se ejecuta en localhost:4502.
+* El comando anterior crea e implementa automáticamente el paquete en la instancia de AEM que se ejecuta en localhost:4502
 
-El paquete también está disponible en la siguiente ubicación `C:\AEMFormsBundles\mysite\core\target`. AEM El paquete también se puede implementar en los entornos de trabajo mediante la consola web [Felix.](http://localhost:4502/system/console/bundles)
+El paquete también está disponible en la siguiente ubicación `C:\AEMFormsBundles\mysite\core\target`. El paquete también se puede implementar en AEM mediante la consola web [Felix.](http://localhost:4502/system/console/bundles)
 
 
 ## Prueba de la resolución de servlet

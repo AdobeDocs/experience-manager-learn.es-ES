@@ -3,7 +3,7 @@ title: Verificar usuarios con OTP
 description: Compruebe el número de móvil asociado al número de aplicación mediante OTP.
 feature: Adaptive Forms
 type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6594
 thumbnail: 6594.jpg
 topic: Development
@@ -11,7 +11,7 @@ role: Developer
 level: Experienced
 exl-id: d486d5de-efd9-4dd3-9d9c-1bef510c6073
 duration: 84
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 1%
@@ -34,7 +34,7 @@ Cree una cuenta de desarrollador con [Nexmo](https://dashboard.nexmo.com/sign-in
 
 La especificación OpenAPI (anteriormente Especificación de Swagger) es un formato de descripción de API para las API de REST. Un archivo OpenAPI permite describir toda la API, lo que incluye:
 
-* Puntos finales (/users) y operaciones disponibles en cada punto final (GET /users, POST /users)
+* Extremos disponibles (/users) y operaciones en cada extremo (GET /users, POST /users)
 * Parámetros de operación Entrada y salida para cada operación
 Métodos de autenticación
 * Información de contacto, licencia, condiciones de uso y otra información.
@@ -49,7 +49,7 @@ Use el [editor swagger](https://editor.swagger.io/) para crear su archivo swagge
 
 ## Crear Source de datos
 
-AEM Para integrar los servicios de nube/AEM Forms con aplicaciones de terceros, necesitamos usar la fuente de datos basada en [REST mediante el archivo swagger](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) en la configuración de los servicios de nube. La fuente de datos completada se le proporciona como parte de estos recursos del curso.
+Para integrar AEM/AEM Forms con aplicaciones de terceros, necesitamos [una fuente de datos basada en REST usando el archivo swagger](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) en la configuración de los servicios en la nube. La fuente de datos completada se le proporciona como parte de estos recursos del curso.
 
 ## Crear modelo de datos de formulario
 

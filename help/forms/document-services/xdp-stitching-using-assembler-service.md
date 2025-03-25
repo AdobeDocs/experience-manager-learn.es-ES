@@ -2,14 +2,14 @@
 title: Vinculación XDP mediante el servicio de ensamblador
 description: Usar el servicio Assembler en AEM Forms para unir xdp
 feature: Assembler
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 last-substantial-update: 2022-12-19T00:00:00Z
 exl-id: e116038f-7d86-41ee-b1b0-7b8569121d6d
 duration: 91
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 # Configuración XDP mediante el servicio de ensamblador
 
 Este artículo proporciona los recursos para mostrar la capacidad de unir documentos xdp mediante el servicio Assembler.
-El siguiente código jsp se escribió para insertar un subformulario denominado **dirección** del documento xdp denominado dirección.xdp en un punto de inserción denominado **dirección** en el documento master.xdp. AEM El xdp resultante se guardó en la carpeta raíz de la instalación de la.
+El siguiente código jsp se escribió para insertar un subformulario denominado **dirección** del documento xdp denominado dirección.xdp en un punto de inserción denominado **dirección** en el documento master.xdp. El xdp resultante se guardó en la carpeta raíz de la instalación de AEM.
 
 El servicio Assembler se basa en documentos DDX válidos para describir la manipulación de documentos de PDF. Puede consultar el [documento de referencia DDX aquí](assets/ddxRef.pdf). La página 40 contiene información sobre la vinculación xdp.
 
@@ -66,7 +66,7 @@ A continuación, se muestra el archivo DDX para insertar fragmentos en otro xdp.
 </DDX>
 ```
 
-AEM Para que esta capacidad funcione en el servidor de la
+Para que esta capacidad funcione en el servidor de AEM
 
 * Descargue el [paquete de vinculación XDP](assets/xdp-stitching.zip) en su sistema local.
 * Cargue e instale el paquete con el [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
@@ -76,11 +76,11 @@ AEM Para que esta capacidad funcione en el servidor de la
 
 1. Siga los pasos que se mencionan a continuación para lista de permitidos las rutas mencionadas anteriormente.
 1. [Iniciar sesión en configMgr](http://localhost:4502/system/console/configMgr)
-1. Búsqueda de Adobe Granite CSRF Filter
+1. Búsqueda del filtro CSRF de Adobe Granite
 1. Agregue la siguiente ruta en las secciones excluidas y guarde `/content/AemFormsSamples/assemblerservice`
 1. Busque &quot;Filtro de referente de Sling&quot;
 1. Marque la casilla &quot;Permitir vacío&quot;. (Esta configuración solo debe ser para fines de prueba)
-Existen varias formas de probar el código de ejemplo. La forma más rápida y sencilla de usar una aplicación de Postman es. Postman le permite realizar solicitudes de POST al servidor. Instale la aplicación de Postman en su sistema.
+Existen varias formas de probar el código de ejemplo. La forma más rápida y sencilla de usar una aplicación de Postman es. Postman le permite realizar peticiones POST al servidor. Instale la aplicación de Postman en su sistema.
 Inicie la aplicación e introduzca la siguiente URL para probar la API de datos de exportación
 http://localhost:4502/content/AemFormsSamples/assemblerservice.html
 

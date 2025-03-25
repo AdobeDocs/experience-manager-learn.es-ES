@@ -2,7 +2,7 @@
 title: Crear el formulario inicial para almacenar en Déclencheur el proceso
 description: Cree el formulario inicial para almacenar en déclencheur la notificación por correo electrónico e iniciar el proceso de firma.
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: User
 level: Intermediate
@@ -10,16 +10,16 @@ jira: KT-6892
 thumbnail: 6892.jpg
 exl-id: d7c55dc8-d886-4629-bb50-d927308d12e3
 duration: 35
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '177'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
 # Crear formulario inicial
 
-El formulario inicial (formulario de refinanciación) se utiliza para firmar varios formularios activando el flujo de trabajo de **Firmar varios Forms AEM** de la. Puede introducir los valores que desee, pero asegúrese de que se añaden los campos siguientes al formulario.
+El formulario inicial (formulario de refinanciación) se utiliza para firmar varios formularios activando el flujo de trabajo de AEM **Firmar varios Forms**. Puede introducir los valores que desee, pero asegúrese de que se añaden los campos siguientes al formulario.
 
 | Tipo de campo | Nombre | Función | Oculto | Valor predeterminado |
 | ------------------------|---------------------------------------|--------------------|--------|----------------- |
@@ -29,7 +29,7 @@ El formulario inicial (formulario de refinanciación) se utiliza para firmar var
 | TextField | customerEmail | Correo electrónico del cliente para enviar la notificación | N |
 | CheckBox | formsToSign | Los elementos identifican los formularios del paquete | N |
 
-El formulario inicial debe configurarse para almacenar en déclencheur AEM un flujo de trabajo de denominado **signmultipleforms**
+El formulario inicial debe configurarse para almacenar en déclencheur un flujo de trabajo de AEM llamado **signmultipleforms**
 Asegúrese de que la ruta del archivo de datos esté establecida en **Data.xml**. Esto es muy importante, ya que el código de ejemplo busca un archivo llamado Data.xml en la carga útil del proceso de envío del formulario.
 
 ## Recursos

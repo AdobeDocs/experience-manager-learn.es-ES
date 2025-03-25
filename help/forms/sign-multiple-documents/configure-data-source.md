@@ -1,16 +1,16 @@
 ---
-title: AEM Configurar datos de Source
+title: Configuración de AEM Data Source
 description: Configurar la fuente de datos respaldada por MySQL para almacenar y recuperar datos de formulario
 feature: Adaptive Forms
 topic: Development
 role: Developer
 level: Beginner
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6899
 thumbnail: 6899.jpg
 exl-id: 2e851ae5-6caa-42e3-8af2-090766a6f36a
 duration: 39
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 3%
@@ -19,8 +19,8 @@ ht-degree: 3%
 
 # Configurar fuente de datos
 
-AEM Existen muchas maneras de habilitar la integración con una base de datos externa mediante el uso de la. Una de las formas más comunes de integrar una base de datos es usando las propiedades de configuración de la fuente de datos obtenida de una conexión Apache Sling a través de [configMgr](http://localhost:4502/system/console/configMgr).
-AEM El primer paso es descargar e implementar los [controladores MySql](https://mvnrepository.com/artifact/mysql/mysql-connector-java) adecuados en el servidor de correo de.
+Existen muchas maneras en que AEM permite la integración con una base de datos externa. Una de las formas más comunes de integrar una base de datos es usando las propiedades de configuración de la fuente de datos obtenida de una conexión Apache Sling a través de [configMgr](http://localhost:4502/system/console/configMgr).
+El primer paso es descargar e implementar los [controladores MySql](https://mvnrepository.com/artifact/mysql/mysql-connector-java) adecuados en AEM.
 Cree la fuente de datos obtenida de una conexión Apache Sling y proporcione las propiedades que se especifican en la captura de pantalla siguiente. El esquema de la base de datos se proporciona como parte de estos recursos de tutorial.
 
 ![origen de datos](assets/data-source.PNG)

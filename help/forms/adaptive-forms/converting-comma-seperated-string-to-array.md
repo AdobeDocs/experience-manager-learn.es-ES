@@ -2,7 +2,7 @@
 title: Conversión de una cadena separada por comas en una matriz de cadenas en AEM Forms Workflow
 description: cuando el modelo de datos de formulario tiene una matriz de cadenas como uno de los parámetros de entrada, deberá aplicar un masaje a los datos generados a partir de la acción de envío de un formulario adaptable antes de invocar la acción de envío del modelo de datos de formulario.
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
@@ -10,7 +10,7 @@ jira: KT-8507
 exl-id: 9ad69407-2413-416f-9cec-43f88989b31d
 last-substantial-update: 2021-06-09T00:00:00Z
 duration: 115
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Cuando el formulario se basa en un modelo de datos de formulario que tiene una m
 
 ## Creación de una etapa de proceso
 
-AEM Se utiliza un paso de proceso en un flujo de trabajo de cuando queremos que el flujo de trabajo ejecute una lógica determinada. El paso del proceso se puede asociar a un script ECMA o a un servicio OSGi. Nuestro paso de proceso personalizado ejecuta el servicio OSGi.
+Se utiliza un paso de proceso en un flujo de trabajo de AEM cuando queremos que el flujo de trabajo ejecute una lógica determinada. El paso del proceso se puede asociar a un script ECMA o a un servicio OSGi. Nuestro paso de proceso personalizado ejecuta el servicio OSGi.
 
 Los datos enviados tienen el siguiente formato. El valor del elemento businessUnits es una cadena separada por comas, que debe convertirse en una matriz de cadenas.
 
