@@ -11,7 +11,7 @@ level: Beginner
 last-substantial-update: 2022-09-02T00:00:00Z
 exl-id: 19f72254-2087-450b-909d-2d90c9821486
 duration: 411
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 99e3cadc71ca4e26f9e4034085788dfc5407d1bb
 workflow-type: tm+mt
 source-wordcount: '1696'
 ht-degree: 9%
@@ -66,7 +66,7 @@ $ java --version
 
 AEM as a Cloud Service SDK, o AEM SDK, contiene el Jar de inicio rápido que se utiliza para ejecutar AEM Author y Publish localmente para el desarrollo, así como la versión compatible de las herramientas de Dispatcher.
 
-1. Inicie sesión en [https://experience.adobe.com/#/downloads](https://experience.adobe.com/#/downloads) con su Adobe ID
+1. Inicie sesión en [https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html](https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html) con su Adobe ID
    + Tenga en cuenta que su organización de Adobe __debe__ estar aprovisionada para que AEM as a Cloud Service descargue AEM as a Cloud Service SDK.
 1. Vaya a la pestaña __AEM as a Cloud Service__
 1. Ordenar por __Fecha de publicación__ en orden __Descendente__
@@ -96,7 +96,7 @@ El servicio de creación de AEM local proporciona a los desarrolladores una expe
 
 ```shell
 $ mkdir -p ~/aem-sdk/author
-$ cp aem-sdk-Quickstart-XXX.jar ~/aem-sdk/author/aem-author-p4502.jar
+$ cp aem-sdk-quickstart-XXX.jar ~/aem-sdk/author/aem-author-p4502.jar
 $ cd ~/aem-sdk/author
 $ java -jar aem-author-p4502.jar
 ```
@@ -105,7 +105,7 @@ $ java -jar aem-author-p4502.jar
 
 ```shell
 $ mkdir -p c:\Users\<My User>\aem-sdk\author
-$ copy aem-sdk-Quickstart-XXX.jar c:\Users\<My User>\aem-sdk\author\aem-author-p4502.jar
+$ copy aem-sdk-quickstart-XXX.jar c:\Users\<My User>\aem-sdk\author\aem-author-p4502.jar
 $ cd c:\Users\<My User>\aem-sdk\author
 $ java -jar aem-author-p4502.jar
 ```
@@ -114,7 +114,7 @@ $ java -jar aem-author-p4502.jar
 
 ```shell
 $ mkdir -p ~/aem-sdk/author
-$ cp aem-sdk-Quickstart-XXX.jar ~/aem-sdk/author/aem-author-p4502.jar
+$ cp aem-sdk-quickstart-XXX.jar ~/aem-sdk/author/aem-author-p4502.jar
 $ cd ~/aem-sdk/author
 $ java -jar aem-author-p4502.jar
 ```
@@ -141,7 +141,7 @@ El servicio local de publicación de AEM proporciona a los desarrolladores la ex
 
 ```shell
 $ mkdir -p ~/aem-sdk/publish
-$ cp aem-sdk-Quickstart-XXX.jar ~/aem-sdk/publish/aem-publish-p4503.jar
+$ cp aem-sdk-quickstart-XXX.jar ~/aem-sdk/publish/aem-publish-p4503.jar
 $ cd ~/aem-sdk/publish
 $ java -jar aem-publish-p4503.jar
 ```
@@ -150,7 +150,7 @@ $ java -jar aem-publish-p4503.jar
 
 ```shell
 $ mkdir -p c:\Users\<My User>\aem-sdk\publish
-$ copy aem-sdk-Quickstart-XXX.jar c:\Users\<My User>\aem-sdk\publish\aem-publish-p4503.jar
+$ copy aem-sdk-quickstart-XXX.jar c:\Users\<My User>\aem-sdk\publish\aem-publish-p4503.jar
 $ cd c:\Users\<My User>\aem-sdk\publish
 $ java -jar aem-publish-p4503.jar
 ```
@@ -159,7 +159,7 @@ $ java -jar aem-publish-p4503.jar
 
 ```shell
 $ mkdir -p ~/aem-sdk/publish
-$ cp aem-sdk-Quickstart-XXX.jar ~/aem-sdk/publish/aem-publish-p4503.jar
+$ cp aem-sdk-quickstart-XXX.jar ~/aem-sdk/publish/aem-publish-p4503.jar
 $ cd ~/aem-sdk/publish
 $ java -jar aem-publish-p4503.jar
 ```
