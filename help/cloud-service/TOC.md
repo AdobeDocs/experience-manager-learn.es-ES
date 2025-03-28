@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Experience Manager as a Cloud Service
 team: TM
-source-git-commit: 4412e1aca73290bbcf35161db754dab65144c3c9
+source-git-commit: 52aad0b0e568ff7e4acd23742fc70f10b1dd14ee
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1383'
 ht-degree: 16%
 
 ---
@@ -148,6 +148,7 @@ ht-degree: 16%
       + [Cómo realizar la configuración](./apis/openapis/setup.md)
       + [Autenticación de servidor a servidor](./apis/openapis/use-cases/invoke-api-using-oauth-s2s.md)
       + [Autenticación de usuario (aplicación web)](./apis/openapis/use-cases/invoke-api-using-oauth-web-app.md)
+      + [Autenticación de usuario (SPA)](./apis/openapis/use-cases/invoke-api-using-oauth-single-page-app.md)
       + Cómo {#how-to}
          + [Administración de credenciales y perfiles de producto](./apis/openapis/how-to/credentials-and-product-profile-management.md)
          + [Administración de permisos](./apis/openapis/how-to/services-user-group-permission-management.md)
