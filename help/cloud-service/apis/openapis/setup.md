@@ -12,7 +12,7 @@ thumbnail: KT-17426.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 1df4c816-b354-4803-bb6c-49aa7d7404c6
-source-git-commit: 52aad0b0e568ff7e4acd23742fc70f10b1dd14ee
+source-git-commit: 34aaecb7b82d7fae068549fad3ec9a4895fb9ec7
 workflow-type: tm+mt
 source-wordcount: '1253'
 ht-degree: 0%
@@ -123,7 +123,7 @@ Después de crear el proyecto de ADC, debe agregar las API de AEM deseadas, conf
 
    ![Seleccionar autenticación](./assets/s2s/select-authentication.png)
 
-   La autenticación de servidor a servidor es ideal para los servicios back-end que necesitan acceso a API sin interacción del usuario. Las opciones de autenticación Aplicación web y Aplicación de una sola página son adecuadas para las aplicaciones que necesitan acceso a la API en nombre de los usuarios. Para obtener más información, consulte [Diferencia entre las credenciales de servidor a servidor de OAuth y aplicación web de OAuth/aplicación de una sola página](./overview.md#difference-between-oauth-server-to-server-and-oauth-web-app-single-page-app-credentials).
+   La autenticación de servidor a servidor es ideal para los servicios back-end que necesitan acceso a API sin interacción del usuario. Las opciones de autenticación Aplicación web y Aplicación de una sola página son adecuadas para las aplicaciones que necesitan acceso a la API en nombre de los usuarios. Para obtener más información, consulte [Diferencia entre OAuth servidor a servidor vs aplicación web vs. credenciales de aplicación de una sola página](./overview.md#difference-between-oauth-server-to-server-vs-web-app-vs-single-page-app-credentials).
 
 1. Si es necesario, puede cambiar el nombre de la API para facilitar la identificación. Para fines de demostración, se utiliza el nombre predeterminado.
 
