@@ -11,10 +11,10 @@ thumbnail: KT-9352.jpeg
 exl-id: 74cca740-bf5e-4cbd-9660-b0579301a3b4
 last-substantial-update: 2024-04-27T00:00:00Z
 duration: 919
-source-git-commit: e1bea4320ed7a8b6d45f674649ba9ba946054b17
+source-git-commit: 5f547d9a721c2072559e877d1c4a08fcd11327b7
 workflow-type: tm+mt
-source-wordcount: '1556'
-ht-degree: 1%
+source-wordcount: '1531'
+ht-degree: 2%
 
 ---
 
@@ -368,12 +368,6 @@ La configuración de Red privada virtual limita el acceso a los entornos de AEM 
             Configure una lista de permitidos IP de modo que solo el tráfico VPN pueda acceder a AEM.
       </p>
     </td>
-   <td>
-      <a  href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking"><img alt="Restricciones de acceso VPN basadas en rutas a AEM Publish" src="./assets/code_examples__vpn-path-allow-list.png"/></a>
-      <div><strong><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking">Restricciones de acceso VPN basadas en rutas a AEM Publish</a></strong></div>
-      <p>
-            Requerir acceso VPN para rutas específicas en AEM Publish.
-      </p>
     </td>
    <td></td>
 </tr></table>
