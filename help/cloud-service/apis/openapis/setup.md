@@ -12,9 +12,9 @@ thumbnail: KT-17426.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 1df4c816-b354-4803-bb6c-49aa7d7404c6
-source-git-commit: 34aaecb7b82d7fae068549fad3ec9a4895fb9ec7
+source-git-commit: b17e228c33ff2e3f2ee2d7e13da65a648c5df79d
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1291'
 ht-degree: 0%
 
 ---
@@ -68,12 +68,11 @@ La ventana _Admin Console_ muestra los perfiles de producto agregados recienteme
 
 Los pasos anteriores completan la modernización del entorno de AEM as a Cloud Service.
 
-## Habilitar el acceso a las API de AEM
+## Habilitar el acceso a las API de AEM{#enable-aem-apis-access}
 
 La presencia de _nuevos perfiles de producto_ habilita el acceso a la API de AEM basada en OpenAPI en Adobe Developer Console (ADC). Recuerde que [Adobe Developer Console (ADC)](./overview.md#accessing-adobe-apis-and-related-concepts) es el centro para desarrolladores para acceder a las API de Adobe, los SDK, los eventos en tiempo real, las funciones sin servidor y más.
 
-Los perfiles de producto agregados recientemente están asociados con _Servicios_ que representan _grupos de usuarios de AEM con Listas de control de acceso (ACL) predefinidas_.
-Los _servicios_ se utilizan para controlar el nivel de acceso a las API de AEM.
+Los perfiles de producto agregados recientemente están asociados con _Servicios_ que representan _grupos de usuarios de AEM con Listas de control de acceso (ACL) predefinidas_. Los _servicios_ se utilizan para controlar el nivel de acceso a las API de AEM.
 
 También puede seleccionar o deseleccionar los _servicios_ asociados con el perfil de producto para reducir o aumentar el nivel de acceso.
 
@@ -81,9 +80,13 @@ Revise la asociación haciendo clic en el icono _Ver detalles_ junto al nombre d
 
 ![Revisar servicios asociados con el perfil de producto](./assets/setup/review-services-associated-with-product-profile.png)
 
-De manera predeterminada, el servicio **Usuarios de API de AEM Assets** no está asociado con ningún perfil de producto. Asociémoslo con los **Usuarios colaboradores de AEM Assets recién agregados - autor - Programa XXX - Entorno XXX** Perfil del producto. Después de esta asociación, la _API de autor de recursos_ del proyecto ADC puede configurar la autenticación deseada y asociar la cuenta de autenticación con el perfil de producto.
+De manera predeterminada, el servicio **Usuarios de API de AEM Assets** no está asociado con ningún perfil de producto. Asociémoslo con los **Usuarios colaboradores de AEM Assets recién agregados - autor - Programa XXX - Entorno XXX** Perfil del producto. Después de esta asociación, la _API de autor de recursos_ del proyecto ADC puede configurar la autenticación de servidor a servidor deseada y asociar la cuenta de autenticación del proyecto ADC (creada en el paso siguiente) con el perfil del producto.
 
 ![Asociar el servicio de usuarios de la API de AEM Assets con el perfil de producto](./assets/setup/associate-aem-assets-api-users-service-with-product-profile.png)
+
+>[!IMPORTANT]
+>
+>El paso anterior es fundamental para habilitar la autenticación de servidor a servidor para la API de AEM Assets. Sin esta asociación, la API de AEM Assets no se puede utilizar con el método de autenticación de servidor a servidor.
 
 ## Crear proyecto de Adobe Developer Console (ADC)
 
@@ -217,8 +220,8 @@ Una vez configurada la instancia de AEM para habilitar la comunicación del proy
                     <p class="is-size-6">Obtenga información sobre cómo invocar las API de AEM basadas en OpenAPI desde una aplicación NodeJS personalizada mediante la autenticación de servidor a servidor OAuth.</p>
                 </div>
                 <a href="./use-cases/invoke-api-using-oauth-s2s.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
-                </a>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
+                </a>
             </div>
         </div>
     </div>
@@ -240,8 +243,8 @@ Una vez configurada la instancia de AEM para habilitar la comunicación del proy
                     <p class="is-size-6">Obtenga información sobre cómo invocar las API de AEM basadas en OpenAPI desde una aplicación web personalizada mediante la autenticación de aplicación web de OAuth.</p>
                 </div>
                 <a href="./use-cases/invoke-api-using-oauth-web-app.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
-                </a>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
+                </a>
             </div>
         </div>
     </div>
@@ -263,8 +266,8 @@ Una vez configurada la instancia de AEM para habilitar la comunicación del proy
                     <p class="is-size-6">Aprenda a invocar las API de AEM basadas en OpenAPI desde una aplicación de una sola página (SPA) personalizada mediante el flujo PKCE de OAuth 2.0.</p>
                 </div>
                 <a href="./use-cases/invoke-api-using-oauth-single-page-app.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
-                </a>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
+                </a>
             </div>
         </div>
     </div>
