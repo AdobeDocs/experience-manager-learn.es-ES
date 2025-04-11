@@ -12,10 +12,10 @@ thumbnail: KT-17426.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 1df4c816-b354-4803-bb6c-49aa7d7404c6
-source-git-commit: b17e228c33ff2e3f2ee2d7e13da65a648c5df79d
+source-git-commit: 7ec2db883ba485b4062db84630cf94c8ed0967ee
 workflow-type: tm+mt
 source-wordcount: '1291'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -27,6 +27,9 @@ Aprenda a configurar su entorno de AEM as a Cloud Service para habilitar el acce
 >
 >Las API de AEM basadas en API abiertas están disponibles como parte de un programa de acceso anticipado. Si está interesado en acceder a ellos, le recomendamos que envíe un correo electrónico a [aem-apis@adobe.com](mailto:aem-apis@adobe.com) con una descripción de su caso de uso.
 
+>[!VIDEO](https://video.tv.adobe.com/v/3457510?quality=12&learn=on)
+
+
 El proceso de configuración de alto nivel incluye los siguientes pasos:
 
 1. Modernización del entorno de AEM as a Cloud Service.
@@ -35,14 +38,14 @@ El proceso de configuración de alto nivel incluye los siguientes pasos:
 1. Configurar proyecto de ADC
 1. Configure la instancia de AEM para habilitar la comunicación del proyecto ADC.
 
-## Modernización del entorno de AEM as a Cloud Service
+## Modernización del entorno de AEM as a Cloud Service{#modernization-of-aem-as-a-cloud-service-environment}
 
 La modernización del entorno de AEM as a Cloud Service es una actividad única por entorno que implica los siguientes pasos:
 
 - Actualización a la versión de AEM **2024.10.18459.20241031T210302Z** o posterior.
 - Añádale nuevos perfiles de producto si el entorno se ha creado antes de la versión 2024.10.18459.20241031T210302Z.
 
-### Actualizar instancia de AEM
+### Actualizar instancia de AEM{#update-aem-instance}
 
 Para actualizar la instancia de AEM, en la sección _Entornos_ de Adobe [Cloud Manager](https://my.cloudmanager.adobe.com/), seleccione el icono de _puntos suspensivos_ junto al nombre del entorno y seleccione la opción **Actualizar**.
 
@@ -54,9 +57,9 @@ Luego haga clic en el botón **Enviar** y ejecute la canalización de pila compl
 
 En mi caso, la canalización Fullstack se llama **Dev :: Fullstack-Deploy**, y el entorno AEM se llama **wknd-program-dev**. Sus nombres pueden ser diferentes.
 
-### Añadir nuevos perfiles de producto
+### añadir nuevos perfiles de producto{#add-new-product-profiles}
 
-Para agregar nuevos perfiles de producto a la instancia de AEM, en la sección _Entornos_ de Adobe [Cloud Manager](https://my.cloudmanager.adobe.com/), seleccione el icono de _puntos suspensivos_ junto al nombre del entorno y seleccione la opción **Agregar perfiles de producto**.
+Para añadir nuevos perfiles de producto al instancia de AEM, en la sección Entornos de Adobe Systems [Cloud Manager](https://my.cloudmanager.adobe.com/), seleccione el icono de _puntos suspensivos_ junto al nombre del entorno y seleccione la opción añadir perfiles **de** producto.__
 
 ![Agregar nuevos perfiles de producto](./assets/setup/add-new-product-profiles.png)
 
@@ -70,7 +73,7 @@ Los pasos anteriores completan la modernización del entorno de AEM as a Cloud S
 
 ## Habilitar el acceso a las API de AEM{#enable-aem-apis-access}
 
-La presencia de _nuevos perfiles de producto_ habilita el acceso a la API de AEM basada en OpenAPI en Adobe Developer Console (ADC). Recuerde que [Adobe Developer Console (ADC)](./overview.md#accessing-adobe-apis-and-related-concepts) es el centro para desarrolladores para acceder a las API de Adobe, los SDK, los eventos en tiempo real, las funciones sin servidor y más.
+La presencia de los nuevos perfiles _de producto permite el acceso a API_ de AEM basadas en OpenAPI en la consola de desarrollador de Adobe Systems (ADC). Recuerde que [Adobe Systems Developer Console (ADC)](./overview.md#accessing-adobe-apis-and-related-concepts) es el centro de desarrolladores para acceder a API de Adobe Systems, SDK, eventos en tiempo real, funciones sin servidor y más.
 
 Los perfiles de producto agregados recientemente están asociados con _Servicios_ que representan _grupos de usuarios de AEM con Listas de control de acceso (ACL) predefinidas_. Los _servicios_ se utilizan para controlar el nivel de acceso a las API de AEM.
 
@@ -78,17 +81,17 @@ También puede seleccionar o deseleccionar los _servicios_ asociados con el perf
 
 Revise la asociación haciendo clic en el icono _Ver detalles_ junto al nombre del perfil del producto.
 
-![Revisar servicios asociados con el perfil de producto](./assets/setup/review-services-associated-with-product-profile.png)
+![Analizar los servicios asociados con el perfil de producto](./assets/setup/review-services-associated-with-product-profile.png)
 
-De manera predeterminada, el servicio **Usuarios de API de AEM Assets** no está asociado con ningún perfil de producto. Asociémoslo con los **Usuarios colaboradores de AEM Assets recién agregados - autor - Programa XXX - Entorno XXX** Perfil del producto. Después de esta asociación, la _API de autor de recursos_ del proyecto ADC puede configurar la autenticación de servidor a servidor deseada y asociar la cuenta de autenticación del proyecto ADC (creada en el paso siguiente) con el perfil del producto.
+De forma predeterminada, el servicio de usuarios de API **de Recursos AEM no está asociado a ningún perfil de** producto. Vamos a asociarlo con el recién agregado **Recursos AEM Usuarios colaboradores - autor - Programa XXX - Entorno XXX** Perfil de producto. Después de esta asociación, la API _de Autor de recursos del_ proyecto ADC puede configurar la autenticación de servidor a servidor deseada y asociar el cuenta de autenticación del proyecto ADC (creado en el paso siguiente) con el perfil de producto.
 
-![Asociar el servicio de usuarios de la API de AEM Assets con el perfil de producto](./assets/setup/associate-aem-assets-api-users-service-with-product-profile.png)
+![Asociar Recursos AEM servicio de usuarios de API con el perfil de producto](./assets/setup/associate-aem-assets-api-users-service-with-product-profile.png)
 
 >[!IMPORTANT]
 >
->El paso anterior es fundamental para habilitar la autenticación de servidor a servidor para la API de AEM Assets. Sin esta asociación, la API de AEM Assets no se puede utilizar con el método de autenticación de servidor a servidor.
+>El paso anterior es esencial para habilitar la autenticación de servidor a servidor para la API de Recursos AEM. Sin esta asociación, la API Recursos AEM no se puede utilizar con el método de autenticación de servidor a servidor.
 
-## Crear proyecto de Adobe Developer Console (ADC)
+## Crear proyecto de Adobe Developer Console (ADC){#adc-project}
 
 El proyecto ADC se utiliza para agregar las API deseadas, configurar su autenticación y asociar la cuenta de autenticación con el perfil de producto.
 
@@ -108,17 +111,17 @@ Para crear un proyecto de ADC:
 
 1. Edite el nombre del proyecto haciendo clic en el botón **Editar proyecto** en la esquina superior derecha. Proporcione un nombre descriptivo y haga clic en **Guardar**.
 
-   ![Editar nombre de proyecto](./assets/setup/edit-project-name.png)
+   ![Editar nombre del proyecto](./assets/setup/edit-project-name.png)
 
-## Configurar proyecto de ADC
+## Configurar proyecto de ADC{#configure-adc-project}
 
-Después de crear el proyecto de ADC, debe agregar las API de AEM deseadas, configurar su autenticación y asociar la cuenta de autenticación con el perfil de producto.
+Después de crear el proyecto ADC, debe agregar las API de AEM deseadas, configurar su autenticación y asociar el cuenta de autenticación con el perfil de producto.
 
-1. Para agregar las API de AEM, haga clic en el botón **Agregar API**.
+1. Para agregar AEM API, haga clic en el botón API **de** añadir.
 
-   ![Agregar API](./assets/s2s/add-api.png)
+   ![Añadir API](./assets/s2s/add-api.png)
 
-1. En el cuadro de diálogo _Agregar API_, filtre por _Experience Cloud_ y seleccione la API de AEM que desee. Por ejemplo, en este caso, la _API de autor de recursos_ está seleccionada.
+1. En el cuadro de _diálogo API_ añadir, filtre por _Experience Cloud_ y seleccione la API AEM que desee. Por ejemplo, en este caso, la _API de autor de recursos_ está seleccionada.
 
    ![Agregar API de AEM](./assets/s2s/add-aem-api.png)
 
@@ -144,7 +147,7 @@ Después de crear el proyecto de ADC, debe agregar las API de AEM deseadas, conf
 
 Si elige el método de autenticación **OAuth Web App** o **OAuth Single Page App**, no se solicita la asociación del perfil de producto, pero se requiere el URI de redireccionamiento de la aplicación. El URI de redireccionamiento de la aplicación se utiliza para redirigir al usuario a la aplicación después de la autenticación con un código de autorización. Los tutoriales de casos de uso relevantes describen estas configuraciones específicas de autenticación.
 
-## Configure la instancia de AEM para habilitar la comunicación del proyecto de ADC
+## Configure la instancia de AEM para habilitar la comunicación del proyecto de ADC{#configure-aem-instance}
 
 Para habilitar la comunicación del ID de cliente del proyecto ADC con la instancia de AEM, debe configurar la instancia de AEM.
 
@@ -172,11 +175,11 @@ Abra el proyecto de AEM e impleméntelo usando la canalización de configuració
 
    >[!CAUTION]
    >
-   > Para fines de demostración, se utiliza el mismo ClientID para todos los entornos. Se recomienda utilizar ClientID independiente por entorno (dev, stage, prod) para mejorar la seguridad y el control.
+   > Para fines de demostración, se utiliza el mismo ClientID para todos los entornos. Se recomienda utilizar ClientID separado por entorno (dev, fase, prod) para mejorar la seguridad y el control.
 
-1. Confirme los cambios de configuración e inserte los cambios en el repositorio Git remoto al que está conectada la canalización de Cloud Manager.
+1. Confirme los cambios de configuración y envíelos al Git remoto al repositorio al que está conectada la canalización de Cloud Manager.
 
-1. Implemente los cambios anteriores mediante la canalización de configuración en Cloud Manager. Tenga en cuenta que el archivo `config.yaml` también se puede instalar en un RDE mediante herramientas de la línea de comandos.
+1. Implemente los cambios anteriores mediante la canalización de configuración de Cloud Manager. Tenga en cuenta que el `config.yaml` archivo también se puede instalar en un RDE, utilizando herramientas de línea de comandos.
 
    ![Implementar config.yaml](./assets/setup/config-pipeline.png)
 
@@ -215,7 +218,7 @@ Una vez configurada la instancia de AEM para habilitar la comunicación del proy
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./use-cases/invoke-api-using-oauth-s2s.md" target="_self" rel="referrer" title="Invocar la API mediante la autenticación de servidor a servidor">Invocar API mediante autenticación de servidor a servidor</a>
+                        <a href="./use-cases/invoke-api-using-oauth-s2s.md" target="_self" rel="referrer" title="Invocar API mediante la autenticación de servidor a servidor">Invocar API mediante autenticación de servidor a servidor</a>
                     </p>
                     <p class="is-size-6">Obtenga información sobre cómo invocar las API de AEM basadas en OpenAPI desde una aplicación NodeJS personalizada mediante la autenticación de servidor a servidor OAuth.</p>
                 </div>
@@ -230,7 +233,7 @@ Una vez configurada la instancia de AEM para habilitar la comunicación del proy
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./use-cases/invoke-api-using-oauth-web-app.md" title="Invocar la API mediante la autenticación de aplicación web" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="./assets/web-app/OAuth-WebApp.png" alt="Invocar la API mediante la autenticación de aplicación web"
+                        <img class="is-bordered-r-small" src="./assets/web-app/OAuth-WebApp.png" alt="Invocar API mediante la autenticación aplicación web"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
