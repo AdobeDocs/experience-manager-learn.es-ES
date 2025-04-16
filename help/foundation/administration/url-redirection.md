@@ -12,7 +12,7 @@ index: y
 doc-type: Article
 exl-id: 8e64f251-e5fd-4add-880e-9d54f8e501a6
 duration: 164
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 62887c6251b09ac22664cfeb9c5513363efb555e
 workflow-type: tm+mt
 source-wordcount: '961'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Las siguientes son opciones de solución en el orden de estar más cerca del exp
 
 Esta opción solo está disponible para clientes de AEM as a Cloud Service.
 
-La [CDN administrada por AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn) proporciona una solución de redirección en el nivel de Edge, lo que reduce los viajes de ida y vuelta al origen. La función [Redirecciones del lado del cliente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#client-side-redirectors) le permite configurar las reglas de redireccionamiento en el código del proyecto de AEM e implementarlas mediante la [Canalización de configuración](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager). El tamaño del archivo de configuración de CDN (`cdn.yaml`) no debe exceder los 100 KB.
+La [CDN administrada por AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn) proporciona una solución de redirección en el nivel de Edge, lo que reduce los viajes de ida y vuelta al origen. La función [Redirecciones del lado del servidor](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#server-side-redirectors) le permite configurar las reglas de redireccionamiento en el código del proyecto de AEM e implementarlas mediante la [Canalización de configuración](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager). El tamaño del archivo de configuración de CDN (`cdn.yaml`) no debe exceder los 100 KB.
 
 La administración de redirecciones en el nivel de Edge o CDN tiene ventajas de rendimiento.
 
