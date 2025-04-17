@@ -14,7 +14,7 @@ badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM Headless as a Cloud Service" before-title="false"
 exl-id: be886c64-9b8e-498d-983c-75f32c34be4b
 duration: 1549
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: adc2f352544b4718522073642c6bf971b3600616
 workflow-type: tm+mt
 source-wordcount: '1618'
 ht-degree: 0%
@@ -42,9 +42,7 @@ El tutorial cubre los pasos necesarios para configurar AEM y Adobe Target:
 
 Una configuración de IMS de Adobe que facilita la autenticación entre AEM y Adobe Target.
 
-Revise [la documentación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integration-adobe-target-ims.html) para obtener instrucciones paso a paso sobre cómo crear una configuración de IMS de Adobe.
-
->[!VIDEO](https://video.tv.adobe.com/v/3416495/?quality=12&learn=on)
+Revise [la documentación](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/integrations/target#adobe-target-cloud-service) para obtener instrucciones paso a paso sobre cómo crear una configuración de IMS de Adobe.
 
 ## Adobe Target Cloud Service{#adobe-target-cloud-service}
 
