@@ -12,10 +12,10 @@ thumbnail: KT-16515.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 0eb0054d-0c0a-4ac0-b7b2-fdaceaa6479b
-source-git-commit: 34aaecb7b82d7fae068549fad3ec9a4895fb9ec7
+source-git-commit: 182d7b76411ab885ab93b7724b97bf75cc52323c
 workflow-type: tm+mt
-source-wordcount: '1015'
-ht-degree: 0%
+source-wordcount: '1002'
+ht-degree: 1%
 
 ---
 
@@ -45,10 +45,6 @@ Obtenga información acerca de las API de AEM basadas en OpenAPI, incluida la co
 
 En futuras versiones, se agregarán más API de AEM basadas en OpenAPI para admitir casos de uso adicionales.
 
->[!AVAILABILITY]
->
->Las API de AEM basadas en API abiertas están disponibles como parte de un programa de acceso anticipado. Si está interesado en acceder a ellos, le recomendamos que envíe un correo electrónico a [aem-apis@adobe.com](mailto:aem-apis@adobe.com) con una descripción de su caso de uso.
-
 ## Compatibilidad con autenticación{#authentication-support}
 
 Las API de AEM basadas en OpenAPI admiten la autenticación OAuth 2.0, incluidos los siguientes tipos de concesión:
@@ -71,6 +67,7 @@ La siguiente tabla resume las diferencias entre los tres métodos de autenticaci
 | **Consideraciones de seguridad** | Almacene de forma segura credenciales confidenciales (`client_id`, `client_secret`) en sistemas back-end. | Después de la autenticación del usuario, se le concede su propio _token de acceso temporal a través de una llamada back-end_. Almacene de forma segura credenciales confidenciales (`client_id`, `client_secret`) en sistemas back-end para intercambiar código de autorización por token de acceso. | Después de la autenticación del usuario, se le concede su propio _token de acceso temporal a través de una llamada de front-end_. No utiliza `client_secret`, ya que no es seguro almacenarlo en aplicaciones de front-end. Se basa en PKCE para intercambiar el código de autorización por el token de acceso. |
 | **Tipo de concesión** | _client_credentials_ | _código de autorización_ | _authorization_code_ con **PKCE** |
 | **Tipo de credencial de Adobe Developer Console** | Servidor a servidor OAuth | Aplicación web de OAuth | Aplicación de una sola página OAuth |
+| **Tutorial** | [Invocar API mediante autenticación de servidor a servidor](./use-cases/invoke-api-using-oauth-s2s.md) | [Invocar API mediante autenticación de aplicación web](./use-cases/invoke-api-using-oauth-web-app.md) | [Invocar API mediante autenticación de aplicación de una sola página](./use-cases/invoke-api-using-oauth-single-page-app.md) |
 
 ## Acceso a las API de Adobe y conceptos relacionados{#accessing-adobe-apis-and-related-concepts}
 
