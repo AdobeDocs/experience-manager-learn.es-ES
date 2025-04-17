@@ -12,9 +12,9 @@ thumbnail: KT-17430.jpg
 last-substantial-update: 2025-03-28T00:00:00Z
 duration: 0
 exl-id: 9fb92127-9dea-4a1d-b1f7-8fb98cabf188
-source-git-commit: 3d42029f193f293631585314983956618d707244
+source-git-commit: 610fe6fc91a400baa9d7f5d40a6a5c2084f93ed0
 workflow-type: tm+mt
-source-wordcount: '2113'
+source-wordcount: '2081'
 ht-degree: 0%
 
 ---
@@ -26,10 +26,6 @@ Aprenda a invocar las API de AEM basadas en OpenAPI en AEM as a Cloud Service me
 La autenticación de aplicación de una sola página de OAuth es ideal para aplicaciones basadas en JavaScript que se ejecutan en el explorador. Si carecen de un servidor back-end o necesitan recuperar tokens de acceso para interactuar con las API de AEM en nombre de un usuario.
 
 El flujo PKCE amplía el tipo de concesión OAuth 2.0 _authorization_code_, lo que mejora la seguridad al evitar la interceptación del código de autorización. Para obtener más información, consulte la sección [Diferencia entre OAuth Server-to-Server vs Web App vs Single Page App credentials](../overview.md#difference-between-oauth-server-to-server-vs-web-app-vs-single-page-app-credentials).
-
->[!AVAILABILITY]
->
->Las API de AEM basadas en API abiertas están disponibles como parte de un programa de acceso anticipado. Si está interesado en acceder a ellos, le recomendamos que envíe un correo electrónico a [aem-apis@adobe.com](mailto:aem-apis@adobe.com) con una descripción de su caso de uso.
 
 ## Lo que aprende{#what-you-learn}
 
@@ -383,7 +379,7 @@ El paso para configurar el proyecto ADC está _repetido_ desde las [API de confi
 
 1. Para agregar las API de AEM, haga clic en el botón **Agregar API**.
 
-   ![Agregar API](../assets/spa/add-api.png)
+   ![Añadir API](../assets/spa/add-api.png)
 
 1. En el cuadro de diálogo _Agregar API_, filtre por _Experience Cloud_, seleccione la tarjeta de administración de contenido de **AEM CS Sites** y haga clic en **Siguiente**.
 

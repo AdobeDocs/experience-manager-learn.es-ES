@@ -12,9 +12,9 @@ thumbnail: KT-16718.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 9cf7c318-2be4-4b26-bd6f-0c80d002db45
-source-git-commit: 34aaecb7b82d7fae068549fad3ec9a4895fb9ec7
+source-git-commit: 610fe6fc91a400baa9d7f5d40a6a5c2084f93ed0
 workflow-type: tm+mt
-source-wordcount: '2245'
+source-wordcount: '2213'
 ht-degree: 0%
 
 ---
@@ -24,10 +24,6 @@ ht-degree: 0%
 Obtenga información sobre cómo invocar las API de AEM basadas en OpenAPI en AEM as a Cloud Service mediante la autenticación basada en usuario desde una aplicación web personalizada que utiliza OAuth Web App.
 
 La autenticación de la aplicación web de OAuth es ideal para aplicaciones web con componentes de front-end y _backend_ que necesitan **acceder a las API de AEM en nombre de un usuario**. Utiliza el tipo de concesión OAuth 2.0 _authorization_code_ para obtener un token de acceso de parte del usuario para acceder a las API de AEM. Para obtener más información, consulte [Diferencia entre OAuth Server-to-Server vs Web App vs Single Page App credentials](../overview.md#difference-between-oauth-server-to-server-vs-web-app-vs-single-page-app-credentials).
-
->[!AVAILABILITY]
->
->Las API de AEM basadas en API abiertas están disponibles como parte de un programa de acceso anticipado. Si está interesado en acceder a ellos, le recomendamos que envíe un correo electrónico a [aem-apis@adobe.com](mailto:aem-apis@adobe.com) con una descripción de su caso de uso.
 
 ## Lo que aprende{#what-you-learn}
 
@@ -459,7 +455,7 @@ El paso para configurar el proyecto ADC está _repetido_ desde las [API de confi
 
 1. Para agregar las API de AEM, haga clic en el botón **Agregar API**.
 
-   ![Agregar API](../assets/s2s/add-api.png)
+   ![Añadir API](../assets/s2s/add-api.png)
 
 1. En el cuadro de diálogo _Agregar API_, filtre por _Experience Cloud_, seleccione la tarjeta **API de autor de AEM Assets** y haga clic en **Siguiente**.
 
