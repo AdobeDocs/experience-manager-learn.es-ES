@@ -7,10 +7,10 @@ sub-product: Experience Manager Assets
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: ebc609ae621ea5d4d0eba0e28202448b6eaeb8cc
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 16%
+source-wordcount: '454'
+ht-degree: 21%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 16%
    + [Vista de recursos](playlists/assets-view.md)
    + [Vista de administrador](playlists/admin-view.md)
 
-+ Configurando {#configuring}
++ Configuración{#configuring}
    + [Carpetas de línea base](configuring/baseline-folders.md)
    + [Permisos de línea base](configuring/baseline-permissions.md)
    + [Etiquetado](configuring/tagging.md)
@@ -34,7 +34,7 @@ ht-degree: 16%
    + [Perfiles de procesamiento](configuring/processing-profiles.md)
    + [Flujos de trabajo de inicio automático](configuring/auto-start-workflows.md)
 
-+ Creación {#authoring}
++ Creación{#authoring}
    + [Cambiar vistas](./authoring/switch-views.md)
    + [Navegación](./authoring/navigation.md)
    + [Operaciones básicas](./authoring/basic-operations.md)
@@ -42,7 +42,7 @@ ht-degree: 16%
    + [Representaciones](./authoring/renditions.md)
    + [Relacionar y desrelacionar](./authoring/relate-unrelate.md)
 
-+ Collaboration{#collaboration}
++ Colaboración{#collaboration}
    + [Ver](./collaboration/watch.md)
    + [Cronología y bandeja de entrada](./collaboration/timeline-and-inbox.md)
    + [Comentarios y anotaciones](./collaboration/comments-and-annotations.md)
@@ -86,6 +86,8 @@ ht-degree: 16%
    + [Variantes de imagen con Adobe Express](./content-hub/image-variants.md)
    + [Colecciones](./content-hub/collections.md)
    + [Uso compartido](./content-hub/share.md)
+   + Casos de uso{#use-cases}
+      + [Administración de recursos](./content-hub/use-cases/manage-assets.md)
 
 + Edge Delivery Services{#edge-delivery-services}
    + [Complemento de Sidekick](./edge-delivery-services/sidekick-plugin.md)
@@ -103,20 +105,20 @@ ht-degree: 16%
       + [Configuración del abastecimiento de recursos](brand-portal/configure-asset-sourcing.md)
       + [Habilitar descargas de representación](brand-portal/enable-renditions-download.md)
 
-   + Recurso compartido{#assets-share}
+   + Uso compartido de recursos{#assets-share}
       + [Uso compartido de recursos Commons](./sharing/asset-share-commons-user-experience-feature-video-understand.md)
       + [Configuración de Asset Share Commons en AEM local](./sharing/asset-share-commons-technical-video-setup.md)
       + [Uso compartido de recursos de temas](./sharing/asset-share-commons-feature-video-theming.md)
       + [Kits de recursos de Asset Share Commons](./sharing/asset-share/asset-share-commons-asset-kits.md)
 
-+ Flujos de trabajo de Creative{#creative-workflows}
++ Flujos de trabajo Creative{#creative-workflows}
    + [Integración de Adobe Express](./creative-workflows/adobe-express.md)
    + [ADOBE EXPRESS y AEM ASSETS](./creative-workflows/adobe-express-aem-assets.md)
    + [Aplicación de escritorio de AEM](./creative-workflows/aem-desktop-app.md)
    + [Adobe Asset Link](./creative-workflows/adobe-asset-link.md)
    + [Adobe Stock](./creative-workflows/adobe-stock.md)
 
-+ Vínculo de recurso de Adobe{#adobe-asset-link}
++ Adobe Asset Link{#adobe-asset-link}
    + [Configuración de](./adobe-asset-link/setup.md)
    + [Acceso a Adobe Asset Link](./adobe-asset-link/launch-adobe-asset-link.md)
    + [Información general del panel](./adobe-asset-link/panel-overview.md)
@@ -134,7 +136,7 @@ ht-degree: 16%
    + [Operaciones de Creative](./content-automation/creative-operations.md)
    + [Acciones de Photoshop](./content-automation/photoshop-actions.md)
 
-+ Medios dinámicos{#dynamic-media}
++ Dynamic Media{#dynamic-media}
    + [Información general de Dynamic Media](dynamic-media/dynamic-media-overview-feature-video-use.md)
    + [aplicación Dynamic Media Classic Desktop](dynamic-media/dynamic-media-classic-desktop-application.md)
    + Imágenes {#images}
@@ -149,13 +151,13 @@ ht-degree: 16%
       + [Flujo adaptable DASH](dynamic-media/dynamic-media-dash.md)
       + [Recorte inteligente de Dynamic Media](dynamic-media/dynamic-media-smart-crop-video.md)
       + [Reproductor de vídeo](dynamic-media/dynamic-media-video-player-feature-video-use.md)
-   + Visualizadores {#viewers}
+   + Visores {#viewers}
       + [Visores](dynamic-media/dynamic-media-viewer-feature-video-understand.md)
       + [Visualizadores de imágenes panorámicas y verticales](dynamic-media/panorama-vertical-image-viewer-feature-video-use.md)
       + [Visualizadores con Adobe Analytics](dynamic-media/dynamic-media-viewer-extension-use.md)
    + 3D {#3d}
       + [Dynamic Media 3D](dynamic-media/dynamic-media-3d-feature-video.md)
-   + Usando con AEM Sites {#dm-with-aem-sites}
+   + Uso de con AEM Sites {#dm-with-aem-sites}
       + [Fragmentos de experiencias](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
       + [Componentes principales de Dynamic Media](dynamic-media/dynamic-media-core-components.md)
 
@@ -176,7 +178,7 @@ ht-degree: 16%
       + [API de IPS de Dynamic Media Classic](dynamic-media/tutorials/introduction-to-dynamic-media-classic-ips-api.md)
 
 + Integración de Workfront{#workfront}
-   + Conector mejorado {#enhanced-connector}
+   + Conector mejorado{#enhanced-connector}
       + [Conceptos básicos del conector mejorado](./workfront/enhanced-connector/basics.md)
       + [Carpetas de proyecto](./workfront/enhanced-connector/project-folders.md)
       + Serie de expertos de AEM{#aem-experts-series}
@@ -195,7 +197,7 @@ ht-degree: 16%
    + [Configurar plantillas de recursos](asset-templates/asset-templates-technical-video-setup.md)
    + [Uso de catálogos de recursos](asset-templates/asset-catalog-template-feature-video-use.md)
 
-+ Implementación {#deployment}
++ Implementación{#deployment}
    + [Desarrollo concurrente y de múltiples alquileres](deployment/multitenancy-concurrent-article-understand.md)
 
 + [Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/overview.html?lang=es){target=_blank}
