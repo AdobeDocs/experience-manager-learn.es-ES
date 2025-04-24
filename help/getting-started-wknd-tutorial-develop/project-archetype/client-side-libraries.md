@@ -12,10 +12,10 @@ doc-type: Tutorial
 exl-id: 8d3026e9-a7e2-4a76-8a16-a8197a5e04e3
 recommendations: noDisplay, noCatalog
 duration: 557
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 3ad201aad77e71b42d46d69fdda50bcc77316151
 workflow-type: tm+mt
-source-wordcount: '2554'
-ht-degree: 0%
+source-wordcount: '2432'
+ht-degree: 1%
 
 ---
 
@@ -394,14 +394,6 @@ Esta técnica es práctica si la mayoría de los estilos y el código front-end 
    > El origen de la imagen del marcado estático apunta a un componente de imagen en directo en una instancia de AEM local. Las imágenes aparecen rotas si cambia la ruta a la imagen, si AEM no se ha iniciado o si el explorador no ha iniciado sesión en la instancia local de AEM. Si se transfiere a un recurso externo, también es posible reemplazar las imágenes con referencias estáticas.
 
 1. Puede **detener** el servidor de Webpack desde la línea de comandos escribiendo `CTRL+C`.
-
-### aemfed {#develop-aemfed}
-
-**[aemfed](https://aemfed.io/)** es una herramienta de línea de comandos de código abierto que se puede usar para acelerar el desarrollo front-end. Funciona con [aemsync](https://www.npmjs.com/package/aemsync), [Browsersync](https://browsersync.io/) y [Sling Log Tracer](https://sling.apache.org/documentation/bundles/log-tracers.html).
-
-En un nivel superior, `aemfed` está diseñado para escuchar los cambios de archivo dentro del módulo **ui.apps** y sincronizarlos automáticamente directamente con una instancia de AEM en ejecución. En función de los cambios, un explorador local se actualiza automáticamente, lo que acelera el desarrollo del front-end. También está diseñado para funcionar con el rastreador de registros de Sling a fin de mostrar automáticamente cualquier error del lado del servidor directamente en el terminal.
-
-Si está trabajando mucho en el módulo **ui.apps**, modificando los scripts HTL y creando componentes personalizados, **aemfed** puede ser una herramienta poderosa. [Encontrará toda la documentación aquí](https://github.com/abmaonline/aemfed).
 
 ### Depuración de bibliotecas del lado del cliente {#debugging-clientlibs}
 
