@@ -11,7 +11,7 @@ level: Intermediate, Experienced
 doc-type: Tutorial
 exl-id: 63c23f22-533d-486c-846b-fae22a4d68db
 duration: 253
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
 workflow-type: tm+mt
 source-wordcount: '621'
 ht-degree: 0%
@@ -73,5 +73,5 @@ Las credenciales de servicio son las credenciales de confianza utilizadas en cua
 
 + [Descargue la aplicación de ejemplo](./assets/aem-guides_token-authentication-external-application.zip)
 + Otros ejemplos de código de creación e intercambio de JWT
-   + [Ejemplos de código de Node.js, Java, Python, C#.NET y PHP](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/samples/)
+   + [Ejemplos de código de Node.js, Java, Python, C#.NET y PHP](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/samples)
    + [Ejemplo de código basado en JavaScript/Axios](https://github.com/adobe/aemcs-api-client-lib)

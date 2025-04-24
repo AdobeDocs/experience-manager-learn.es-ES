@@ -12,7 +12,7 @@ thumbnail: KT-17430.jpg
 last-substantial-update: 2025-03-28T00:00:00Z
 duration: 0
 exl-id: 9fb92127-9dea-4a1d-b1f7-8fb98cabf188
-source-git-commit: 610fe6fc91a400baa9d7f5d40a6a5c2084f93ed0
+source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
 workflow-type: tm+mt
 source-wordcount: '2081'
 ht-degree: 0%
@@ -354,7 +354,7 @@ Para completar este tutorial, necesita lo siguiente:
 
 - El proyecto de muestra [WKND Sites](https://github.com/adobe/aem-guides-wknd?#aem-wknd-sites-project) debe implementarse en él.
 
-- Acceso a [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started/).
+- Acceso a [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started).
 
 - Instale [Node.js](https://nodejs.org/en/) en el equipo local para ejecutar la aplicación NodeJS de ejemplo.
 
@@ -566,6 +566,6 @@ En este tutorial, ha aprendido a invocar las API de AEM basadas en OpenAPI en AE
 ## Recursos adicionales{#additional-resources}
 
 - [API de Adobe Experience Manager as a Cloud Service](https://developer.adobe.com/experience-cloud/experience-manager-apis/)
-- [Guía de implementación de autenticación de usuario](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation/)
-- [Solicitud de autorización](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/IMS/#authorize-request)
-- [Obteniendo tokens de acceso](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/IMS/#fetching-access-tokens)
+- [Guía de implementación de autenticación de usuario](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation)
+- [Solicitud de autorización](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/ims#authorize-request)
+- [Obteniendo tokens de acceso](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/ims#fetching-access-tokens)

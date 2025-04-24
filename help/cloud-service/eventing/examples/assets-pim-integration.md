@@ -12,7 +12,7 @@ last-substantial-update: 2024-02-13T00:00:00Z
 jira: KT-14901
 thumbnail: KT-14901.jpeg
 exl-id: 070cbe54-2379-448b-bb7d-3756a60b65f0
-source-git-commit: 610fe6fc91a400baa9d7f5d40a6a5c2084f93ed0
+source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
 workflow-type: tm+mt
 source-wordcount: '1518'
 ht-degree: 0%
@@ -49,7 +49,7 @@ Para completar este tutorial, necesita lo siguiente:
 
 - Entorno AEM as a Cloud Service con [evento de AEM habilitado](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment). Además, el proyecto de muestra [WKND Sites](https://github.com/adobe/aem-guides-wknd?#aem-wknd-sites-project) debe implementarse en él.
 
-- Acceso a [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started/).
+- Acceso a [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started).
 
 - [CLI de Adobe Developer](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) instalado en el equipo local.
 
@@ -335,6 +335,6 @@ La sincronización de metadatos de recursos entre AEM y otros sistemas como PIM 
 
 - El código de recuperación de metadatos de recursos se ejecuta fuera de AEM, lo que evita la carga en el servicio de AEM Author; por lo tanto, se trata de una arquitectura impulsada por eventos que se escala de forma independiente.
 - La recién introducida API de autor de Assets se utiliza para actualizar los metadatos de los recursos en AEM.
-- La autenticación de la API usa OAuth servidor a servidor (también conocido como flujo de credenciales de cliente). Consulte [Guía de implementación de credenciales de servidor a servidor OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/).
+- La autenticación de la API usa OAuth servidor a servidor (también conocido como flujo de credenciales de cliente). Consulte [Guía de implementación de credenciales de servidor a servidor OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation).
 - En lugar de Acciones de Adobe I/O Runtime, se pueden utilizar otros webhooks o Amazon EventBridge para recibir el evento de los AEM Assets y procesar la actualización de metadatos.
 - Los eventos de recursos a través de AEM Event permiten a las empresas automatizar y optimizar procesos críticos, fomentando la eficacia y la coherencia en todo el ecosistema de contenido.

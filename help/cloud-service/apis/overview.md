@@ -12,10 +12,10 @@ thumbnail: KT-17425.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 23b2be0d-a8d4-4521-96ba-78b70f4e9cba
-source-git-commit: b7cd1bb9584359e8bf8a168f8c062be54399f5ac
+source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
 workflow-type: tm+mt
 source-wordcount: '998'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -33,7 +33,7 @@ AEM ofrece las siguientes API para interactuar con sus tipos de servicio de auto
 
 | Tipo de API de AEM | Descripción | Disponibilidad | Caso práctico | Ejemplos de API |
 | --- | --- | --- | --- | --- |
-| API de AEM basadas en OpenAPI | API estandarizadas y legibles por el equipo para Assets, Sites y Forms. | **Solo AEM as a Cloud Service** | Desarrollo con API en primer lugar, aplicaciones modernas | [API de autor de Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/), [API de carpetas](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/), [API de AEM Sites](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/delivery/), [Servicios de Forms Acrobat](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) y otros |
+| API de AEM basadas en OpenAPI | API estandarizadas y legibles por el equipo para Assets, Sites y Forms. | **Solo AEM as a Cloud Service** | Desarrollo con API en primer lugar, aplicaciones modernas | [API de autor de Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/), [API de carpetas](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/), [API de AEM Sites](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/), [Servicios de Forms Acrobat](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) y otros |
 | API de RESTful | Puntos finales REST tradicionales para interactuar con recursos de AEM. | AEM 6.X, AEM as a Cloud Service | Operaciones CRUD, aplicaciones modernas | [API HTTP de Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets), [API REST de flujo de trabajo](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-program-interaction#using-the-workflow-rest-api), [exportador JSON para servicios de contenido](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/json-exporter) y otros |
 | API de GraphQL | Optimizado para recuperar contenido estructurado de forma eficaz con consultas flexibles. | AEM 6.X, AEM as a Cloud Service | CMS sin encabezado, SPA, aplicaciones móviles | [API de GraphQL](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/graphql-api/content-fragments) |
 | API tradicionales (no RESTful) | Las API más antiguas, como JCR, modelos Sling, Query Builder y otras. | AEM 6.X, AEM as a Cloud Service | Integraciones heredadas, compatibilidad con versiones anteriores | [API de Query Builder](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api) y otras |
@@ -58,7 +58,7 @@ Al seleccionar una API para la integración, tenga en cuenta los siguientes fact
 
 Vamos a comparar el token web JSON (JWT) y OAuth 2.0, dos mecanismos de autenticación comunes utilizados en las API de AEM:
 
-| Funcionalidad | Token web JSON (JWT) | OAuth 2.0 |
+| Función | Token web JSON (JWT) | OAuth 2.0 |
 | --- | --- | --- |
 | Utilizado en | API de RESTful | API de AEM basadas en OpenAPI (no admitidas en RESTful ni en otras API) |
 | Función | Autenticación de servicio | Autenticación de usuarios o servicios |
