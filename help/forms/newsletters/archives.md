@@ -1,9 +1,12 @@
 ---
 title: Archivo de boletines mensuales de Experience League.
 description: Descargar versiones archivadas de la newsletter.
-source-git-commit: 8ae09d66b856a15f48977aeef7580b65368014e2
+hidefromtoc: true
+hide: true
+exl-id: 16133400-b4c6-4d86-9c28-d5e230d55839
+source-git-commit: a1fe6f64894a63efadabd0fcd8910a2156e8fa64
 workflow-type: tm+mt
-source-wordcount: '45'
+source-wordcount: '46'
 ht-degree: 0%
 
 ---
@@ -17,3 +20,4 @@ Nuestros boletines mensuales de contenido de Experience League están disponible
 | [Enero](assets/Jan-Newsletter.pdf) |
 | [Febrero](assets/Feb-Newsletter.pdf) |
 | [Marzo](assets/March-Newsletter.pdf) |
+| [Abril](assets/April-Newsletter.pdf) |
