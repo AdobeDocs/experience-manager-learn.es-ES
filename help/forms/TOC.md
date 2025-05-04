@@ -8,9 +8,9 @@ breadcrumb-title: Tutoriales de AEM Forms
 sub-product: Experience Manager Forms
 version: Experience Manager 6.4, Experience Manager 6.5
 index: y
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: c4b5a015f1c0d5e3877886052476871548ec9b0e
 workflow-type: tm+mt
-source-wordcount: '2101'
+source-wordcount: '2104'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 2%
 + [Información general](overview.md)
 + [Prácticas recomendadas a seguir](adaptive-forms/best-practices-adaptive-forms.md)
 + [Configuración de la autenticación OKTA con AEM Author](adaptive-forms/single-sign-on-with-okta.md)
-+ Creando su primer formulario adaptable {#creating-your-first-adaptive-form}
++ Creación de su primer formulario adaptable {#creating-your-first-adaptive-form}
    + [1 - Introducción y configuración](creating-your-first-adaptive-form/introduction-and-setup.md)
    + [2 - Crear una plantilla de formulario adaptable](creating-your-first-adaptive-form/create-adaptive-form-template.md)
    + [3 - Crear fragmento de formulario](creating-your-first-adaptive-form/create-form-fragment.md)
@@ -110,26 +110,26 @@ ht-degree: 2%
    + [1 - Introducción](chatbot-and-aem-forms/introduction.md)
    + [2 - Analizar los datos de ChatBot](chatbot-and-aem-forms/parse-chat-bot-data.md)
    + [3 - Crear PDF](chatbot-and-aem-forms/merge-data-with-template.md)
-+ Componentes principales: formularios basados en {#core-component-based-forms}
++ Componentes principales: formularios basados en componentes{#core-component-based-forms}
    + [Acceso a datos de formulario mediante la API de GuideBridge](core-components/submit-data-using-guidebridge-api.md)
 + Seleccionar y combinar contenido de carpeta DAM{#select-dam-folder-content}
    + [1- Introducción](display-and-assemble-dam-folder-contents/introduction.md)
    + [2 - Rellenar grupo de opciones](display-and-assemble-dam-folder-contents/populating-choice-group-with-dam-folder-content.md)
    + [3 - Montar los recursos seleccionados](display-and-assemble-dam-folder-contents/assemble-selected-newsletters.md)
    + [4 - Implementar los recursos localmente](display-and-assemble-dam-folder-contents/deploy-on-your-system.md)
-+ Rellenar previamente formularios adaptables mediante el modelo de datos de formulario {#prefill-fdm-db}
++ Rellenado previo de formularios adaptables mediante el modelo de datos de formulario{#prefill-fdm-db}
    + [1 - Introducción](prefill-fdm-db/introduction.md)
    + [2 - Crear tablas de base de datos](prefill-fdm-db/create-database-tables.md)
    + [3 - Configuración del modelo de datos de formulario](prefill-fdm-db/configuring-form-data-model.md)
    + [4 - Obtener parámetro de solicitud](prefill-fdm-db/get-request-parameter.md)
    + [5 - Crear formulario adaptable](prefill-fdm-db/create-adaptive-form.md)
-+ Sugerencias y trucos para la interfaz de usuario{#ui-tips-and-tricks}
++ Sugerencias y trucos para la IU{#ui-tips-and-tricks}
    + [Alternar texto del campo de contraseña](ui-tips-tricks/toggle-password.md)
    + [Botones de barra de herramientas del espacio](ui-tips-tricks/toolbar-buttons.md)
    + [Desplazamiento por pestañas con paneles anidados](ui-tips-tricks/nested-panels.md)
    + [Añadir iconos a las pestañas de navegación](ui-tips-tricks/active-complete.md)
    + [Completar automáticamente campos](ui-tips-tricks/auto-complete.md)
-+ Personalizando bandeja de entrada{#inbox-customization}
++ Personalizar bandeja de entrada{#inbox-customization}
    + [1 - Introducción](inbox-customization/introduction.md)
    + [2 - Añadir columna personalizada](inbox-customization/add-married-column.md)
    + [3 - Uso de la plantilla Sightly](inbox-customization/use-sightly-template.md)
@@ -138,12 +138,12 @@ ht-degree: 2%
    + [2 - Archivos adjuntos de formularios Zip](zipping-form-attachments/custom-process-step.md)
    + [3 - Archivos adjuntos del formulario de correo electrónico](zipping-form-attachments/populating-list-of-documents.md)
    + [4 - Prueba de la solución](zipping-form-attachments/test.md)
-+ Rellenando previamente el formulario con datos y datos adjuntos{#prefill-form-with-data-attachments}
++ Rellenado previo de formularios con datos y archivos adjuntos{#prefill-form-with-data-attachments}
    + [1 - Introducción](prefill-form-with-data-attachments/introduction.md)
    + [2 - Crear envío personalizado](prefill-form-with-data-attachments/create-custom-submit.md)
    + [3 - Crear la configuración de OSGi](prefill-form-with-data-attachments/create-osgi-configuration.md)
    + [4 - Crear servicio de relleno previo](prefill-form-with-data-attachments/create-prefill-service.md)
-+ Almacenando y recuperando formulario adaptable{#store-and-retrieve-af-with-2fa}
++ Almacenar y recuperar formularios adaptables{#store-and-retrieve-af-with-2fa}
    + [1 - Introducción](store-and-retrieve-af-with-2fa/introduction.md)
    + [2 - Configuración de Data Source](store-and-retrieve-af-with-2fa/configure-data-source.md)
    + [3 - Almacenar archivos adjuntos del formulario](store-and-retrieve-af-with-2fa/store-form-attachments.md)
@@ -155,18 +155,18 @@ ht-degree: 2%
    + [9 - Crear el formulario principal](store-and-retrieve-af-with-2fa/create-the-main-adaptive-form.md)
    + [10 - Crear el formulario Mi cuenta](store-and-retrieve-af-with-2fa/create-the-myaccount-form.md)
    + [11 - Implementar la muestra](store-and-retrieve-af-with-2fa/deploy-this-sample.md)
-+ Importar datos del archivo PDF {#import-data-from-pdf-form}
++ Importación de datos desde archivo PDF{#import-data-from-pdf-form}
    + [1 - Introducción](import-data-from-pdf-form/introduction.md)
    + [2 - Crear formulario adaptable](import-data-from-pdf-form/create-adaptive-form.md)
    + [3 - Crear servicio OSGi](import-data-from-pdf-form/create-osgi-service.md)
    + [4 - Rellenar formulario adaptable](import-data-from-pdf-form/populate-adaptive-form.md)
    + [5 - Prueba de la solución](import-data-from-pdf-form/test-the-solution.md)
-+ Exportando datos enviados en formato CSV{#export-submitted-data-csv-format}
++ Exportación de datos enviados en formato CSV{#export-submitted-data-csv-format}
    + [Exportar datos enviados](export-submitted-data-csv-format/export-submitted-data-csv.md)
-+ HTML5 Forms{#html5-forms}
++ Formularios HTML5{#html5-forms}
    + [Crear formulario HTML5](html5-forms/create-html5-form.md)
    + [Controlar el envío de formularios HTML5](html5-forms/handle-html5-form-submission.md)
-+ AEM Forms y Acrobat Sign{#forms-and-sign}
++ AEM FORMS y ACROBAT SIGN{#forms-and-sign}
    + [Introducción](aem-forms-and-adobe-sign/introduction.md)
    + [Configuración de SSL](aem-forms-and-adobe-sign/set-up-ssl.md)
    + [Crear aplicación API de Acrobat Sign](aem-forms-and-adobe-sign/create-adobe-sign-api-application.md)
@@ -180,7 +180,7 @@ ht-degree: 2%
    + [Configurar formulario adaptable convertido](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
    + [Uso de plantillas XDP con Acrobat Sign](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
    + [Uso de métodos de ayuda de Acrobat Sign](aem-forms-and-adobe-sign/send-documents-signing-using-sign-api.md)
-+ Firmar varios Forms{#sign-multiple-documents}
++ Firma de varios Forms{#sign-multiple-documents}
    + [1 - Introducción](sign-multiple-documents/introduction.md)
    + [2 - Configurar la fuente de datos](sign-multiple-documents/configure-data-source.md)
    + [3 - Crear un servicio OSGi](sign-multiple-documents/create-osgi-service.md)
@@ -192,12 +192,12 @@ ht-degree: 2%
    + [9 - Creación del formulario inicial](sign-multiple-documents/create-initial-form.md)
    + [10 - Crear formularios para firmar](sign-multiple-documents/create-forms-for-signing.md)
    + [11 - Prueba de la solución](sign-multiple-documents/testing-and-trouble-shooting.md)
-+ Pasos personalizados del flujo de trabajo {#custom-workflow-steps}
++ Pasos personalizados del flujo de trabajo{#custom-workflow-steps}
    + [Extraer nodo del documento xml](custom-workflow-steps/extract-xml-node.md)
    + [Guardar documento en el sistema de archivos](custom-workflow-steps/write-payload-document.md)
    + [Guardar datos enviados en variable de cadena](custom-workflow-steps/save-submitted-data-in-string-variable.md)
    + [Extraer documento de la lista de documentos](custom-workflow-steps/extract-document-from-list.md)
-+ Componente de flujo de trabajo personalizado {#custom-workflow-component}
++ Componente de flujo de trabajo personalizado{#custom-workflow-component}
    + [1-Introducción](custom-workflow-component/introduction.md)
    + [código java de 2 escrituras](custom-workflow-component/custom-process-step-aem-workflow.md)
    + [3-Crear componente de flujo de trabajo](custom-workflow-component/custom-workflow-component.md)
@@ -222,27 +222,27 @@ ht-degree: 2%
    + [Biblioteca de cliente](storing-retrieving-form-data/part4.md)
    + [Plantilla de formulario adaptable](storing-retrieving-form-data/part5.md)
    + [Implementación de recursos de muestra](storing-retrieving-form-data/part6.md)
-+ Activando flujo de trabajo de AEM en el envío de formularios PDF{#offline-mobile-form-submission}
++ Activación del flujo de trabajo de AEM en el envío de formularios PDF{#offline-mobile-form-submission}
    + [Parte - 1](offline-mobile-form-submission/introduction.md)
    + [Parte - 2](offline-mobile-form-submission/custom-profile.md)
    + [Parte - 3](offline-mobile-form-submission/handle-form-submission.md)
    + [Parte - 4](offline-mobile-form-submission/author-servlet.md)
    + [Parte - 5](offline-mobile-form-submission/review-workflow.md)
    + [Parte - 6](offline-mobile-form-submission/deploy-assets.md)
-+ Flujo de trabajo de AEM de déclencheur en el envío de formularios móviles{#trigger-aem-workflow-on-mobile-form-submission}
++ Déclencheur del flujo de trabajo de AEM en el envío de formularios móviles{#trigger-aem-workflow-on-mobile-form-submission}
    + [Parte - 1](trigger-aem-workflow-on-mobile-form-submission/introduction.md)
    + [Parte - 2](trigger-aem-workflow-on-mobile-form-submission/handle-form-submission.md)
    + [Parte - 3](trigger-aem-workflow-on-mobile-form-submission/author-servlet.md)
    + [Parte - 4](trigger-aem-workflow-on-mobile-form-submission/review-workflow.md)
    + [Parte - 5](trigger-aem-workflow-on-mobile-form-submission/deploy-assets.md)
-+ Consultando envíos de formularios{#query-form-submissions}
++ Consulta de envíos de formularios{#query-form-submissions}
    + [Introducción](query-form-submissions/introduction.md)
    + [Crear campos en los que buscar](query-form-submissions/part1.md)
    + [Crear envío personalizado](query-form-submissions/part2.md)
    + [Interfaz de consulta de compilación](query-form-submissions/part3.md)
    + [Escribir servicio de relleno previo](query-form-submissions/part4.md)
    + [Implementar el ejemplo](query-form-submissions/part5.md)
-+ Enumerando tipos de recursos personalizados en el portal de Forms{#listing-custom-asset-types}
++ Listado de tipos de recursos personalizados en Forms Portal{#listing-custom-asset-types}
    + [Parte 1: Registro de tipos de recursos personalizados](listing-custom-asset-types/part1.md)
    + [Parte 2: Creación de una plantilla personalizada](listing-custom-asset-types/part2.md)
 + AEM Forms Con Marketo{#aem-forms-with-marketo}
@@ -278,7 +278,7 @@ ht-degree: 2%
    + [3 - Envoltura de API de Acrobat Sign](react-ic-sign/wrapper-sign-api.md)
    + [4 - Generar widget de firma](react-ic-sign/create-servlet-to-expose-endpoint.md)
    + [5 - Implementar los recursos de muestra](react-ic-sign/deploy-assets-on-your-server.md)
-+ Document Services {#document-services}
++ Servicios de documentos {#document-services}
    + [Tipos de PDF forms](document-services/pdf-forms-and-documents.md)
    + [Incrustar PDF en formularios adaptables](document-services/embed-pdf-inline.md)
    + [PDF en el componente de carrusel](document-services/display-pdf-in-carousel.md)
@@ -316,7 +316,7 @@ ht-degree: 2%
    + [Introducción a Workbench](aem-forms-workbench/workbench-introduction.md)
    + [Creación del proceso de formulario](aem-forms-workbench/workbench-creating-a-process.md)
    + [Proceso de depuración](aem-forms-workbench/workbench-recording-and-testing-process.md)
-+ Comunicaciones interactivas para el canal de impresión
++ Comunicaciones interactivas para el canal de impresión 
 {#ic-print-channel-tutorial}
    + [1 - Introducción](ic-print-channel-tutorial/introduction.md)
    + [2 - Configuración de Tomcat](ic-print-channel-tutorial/set-up-tomcat.md)
@@ -343,7 +343,8 @@ ht-degree: 2%
    + [Uso del componente Tabla en el documento del canal de impresión de AEM Forms](interactive-communications/table-in-print-channel-documents-video-use.md)
    + [Generar documentos de comunicaciones interactivas para el canal Imprimir mediante carpetas de inspección](interactive-communications/generating-interactive-communications-print-document-using-api-tutorial-use.md)
    + [Personalizar el editor de texto](interactive-communications/customize-text-editor.md)
-
++ Noticias ExL{#exl-newsletters}
+   + [Archivos](./newsletters/archives.md)
 + Comunicaciones Interactivas Para El Canal Web {#ic-web-channel-tutorial}
    + [1 - Introducción](ic-web-channel-tutorial/introduction.md)
    + [2 - Configuración de Tomcat](ic-web-channel-tutorial/partone.md)

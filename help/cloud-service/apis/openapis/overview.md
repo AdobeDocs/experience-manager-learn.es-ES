@@ -12,9 +12,9 @@ thumbnail: KT-16515.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 0eb0054d-0c0a-4ac0-b7b2-fdaceaa6479b
-source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
+source-git-commit: 58ae9e503bd278479d78d4df6ffe39356d5ec59b
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1100'
 ht-degree: 1%
 
 ---
@@ -54,6 +54,15 @@ Las API de AEM basadas en OpenAPI admiten la autenticación OAuth 2.0, incluidos
 - **Credencial de la aplicación web OAuth**: Adecuado para aplicaciones web con componentes de front-end y back-end _3} que acceden a las API de AEM en nombre de los usuarios._ Utiliza el tipo de concesión _authorization_code_, donde el servidor backend administra secretos y tokens de forma segura. Para obtener más información, consulte [Credencial de la aplicación web OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation#oauth-web-app-credential).
 
 - **Credencial de aplicación de una sola página de OAuth**: diseñada para las SPA que se ejecutan en el explorador y que necesitan acceder a las API en nombre de un usuario sin un servidor back-end. Utiliza el tipo de concesión _authorization_code_ y se basa en los mecanismos de seguridad del lado del cliente mediante PKCE (clave de prueba para intercambio de código) para proteger el flujo del código de autorización. Para obtener más información, consulte [Credencial de aplicación de una sola página de OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation#oauth-single-page-app-credential).
+
+## Qué método de autenticación utilizar{#auth-method-decision}
+
+Al decidir qué método de autenticación utilizar, tenga en cuenta lo siguiente:
+
+![¿Qué método de autenticación utilizar?](./assets/overview/which-authentication-method-to-use.png)
+
+La autenticación de usuario (aplicación web o aplicación de una sola página) debe ser la opción predeterminada siempre que se trate de un contexto de usuario de AEM. Esto garantiza que todas las acciones del repositorio se atribuyan correctamente al usuario autenticado y que el usuario esté restringido únicamente a los permisos a los que tiene derecho.
+El uso de la cuenta de servidor a servidor (o de sistema técnico) para realizar acciones en nombre de un usuario individual evita el modelo de seguridad e introduce riesgos como la escalación de privilegios y la auditoría inexacta.
 
 ## Diferencia entre OAuth servidor a servidor frente a aplicación web frente a credenciales de aplicación de una sola página{#difference-between-oauth-server-to-server-vs-web-app-vs-single-page-app-credentials}
 
