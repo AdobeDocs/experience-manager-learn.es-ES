@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Explore el marco de trabajo de experimentación que permite a los especialistas en marketing probar qué variaciones de contenido son más efectivas en la creación de documentos de Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429061/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437857/?learn=on&captions=spa)

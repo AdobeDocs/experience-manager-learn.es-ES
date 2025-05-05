@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Descubra cómo la IU de Fragmentos de contenido de AEM facilita la localización de fragmentos de contenido mediante un filtrado rápido. Con esta función, la búsqueda de fragmentos de contenido específicos se vuelve rápida y sencilla.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419310/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3436699/?learn=on&captions=spa)

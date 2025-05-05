@@ -20,4 +20,4 @@ ht-degree: 0%
 
 *Este vídeo muestra los pasos para capturar los registros de red y las herramientas que se van a utilizar.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335491?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417826?quality=12&learn=on&captions=spa)

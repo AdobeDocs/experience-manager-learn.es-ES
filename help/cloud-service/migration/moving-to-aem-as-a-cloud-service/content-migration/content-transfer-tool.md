@@ -22,7 +22,7 @@ ht-degree: 3%
 
 Descubra cómo la herramienta de transferencia de contenido le ayuda a migrar contenido a AEM as a Cloud Service desde AEM 6.3+.
 
->[!VIDEO](https://video.tv.adobe.com/v/336970?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454750?quality=12&learn=on&captions=spa)
 
 ## Uso de la herramienta de transferencia de contenido
 

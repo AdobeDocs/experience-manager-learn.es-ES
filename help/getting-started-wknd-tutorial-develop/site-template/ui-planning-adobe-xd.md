@@ -41,7 +41,7 @@ En este capítulo se inspeccionan dos archivos Adobe XD, uno para la [plantilla 
 
 ## Kit de IU de plantilla de sitio estándar {#standard-site-template-uikit}
 
->[!VIDEO](https://video.tv.adobe.com/v/338680?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448433?quality=12&learn=on&captions=spa)
 
 Pasos de alto nivel:
 
@@ -51,7 +51,7 @@ Pasos de alto nivel:
 
 ## Kit de IU de WKND {#wknd-ui-kit}
 
->[!VIDEO](https://video.tv.adobe.com/v/30214?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36009?quality=12&learn=on&captions=spa)
 
 Pasos de alto nivel:
 

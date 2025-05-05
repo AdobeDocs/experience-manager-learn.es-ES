@@ -28,15 +28,15 @@ Normalmente, una biblioteca de cliente consta de un archivo CSS y un archivo Jav
 
 ## Función para rellenar la lista desplegable {#function-to-populate-drop-down-list}
 
->[!VIDEO](https://video.tv.adobe.com/v/22282?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326878?quality=12&learn=on&captions=spa)
 
 ### Definir título de resumen del panel {#set-the-summary-title-of-panels}
 
->[!VIDEO](https://video.tv.adobe.com/v/28387?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33129?quality=12&learn=on&captions=spa)
 
 #### Validar panel {#validate-panels-using-rule-editor}
 
->[!VIDEO](https://video.tv.adobe.com/v/28409?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33128?quality=12&learn=on&captions=spa)
 
 El siguiente es el código utilizado para validar los campos del panel
 

@@ -22,7 +22,7 @@ ht-degree: 8%
 
 En el vídeo se explican los distintos pasos necesarios para configurar un formulario adaptable con 2 firmantes.
 
->[!VIDEO](https://video.tv.adobe.com/v/39294?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327744?quality=12&learn=on&captions=spa)
 
 Assets relacionado con este vídeo se puede descargar desde los siguientes vínculos
 

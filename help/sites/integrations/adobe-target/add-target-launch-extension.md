@@ -26,7 +26,7 @@ Para continuar con este vídeo, ya debe tener [etiquetas integradas en Adobe Exp
 
 Obtenga información sobre cómo habilitar Adobe Target en el sitio web de AEM mediante etiquetas.
 
->[!VIDEO](https://video.tv.adobe.com/v/41247?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329006?quality=12&learn=on&captions=spa)
 
 ## Siguientes pasos
 

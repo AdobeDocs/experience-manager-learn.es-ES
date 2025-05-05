@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Obtenga información sobre cómo configurar la autenticación de autor a través de AEM Sidekick en la creación de documentos con Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429594/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438181/?learn=on&captions=spa)

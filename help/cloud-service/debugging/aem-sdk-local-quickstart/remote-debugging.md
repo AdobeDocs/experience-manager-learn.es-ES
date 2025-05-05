@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # AEM Depuración remota del SDK de la
 
->[!VIDEO](https://video.tv.adobe.com/v/34338?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38119?quality=12&learn=on&captions=spa)
 
 AEM AEM El inicio rápido local del SDK de la permite la depuración remota de Java desde su IDE, lo que le permite avanzar en la ejecución de código en directo en la práctica para comprender el flujo de ejecución exacto.
 

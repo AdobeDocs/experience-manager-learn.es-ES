@@ -22,7 +22,7 @@ ht-degree: 3%
 Tanto si solicita una hipoteca como si abre una nueva cuenta bancaria, deberá rellenar y firmar varios formularios. La integración entre AEM Forms y Acrobat Sign facilita la cumplimentación y firma de varios formularios.
 El siguiente vídeo lo acompaña en el caso de uso de firmar varios formularios.
 
->[!VIDEO](https://video.tv.adobe.com/v/330165?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444971?quality=12&learn=on&captions=spa)
 
 ## Requisitos previos
 

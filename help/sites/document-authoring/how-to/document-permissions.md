@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Obtenga información sobre cómo autorizar documentos con la creación de documentos de AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425724/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438104/?learn=on&captions=spa)

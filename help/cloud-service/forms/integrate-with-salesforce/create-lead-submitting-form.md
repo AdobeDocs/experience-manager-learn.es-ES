@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Cree un formulario adaptable basado en el modelo de datos de formulario de la fuerza de ventas y pruebe la creación de un posible cliente en Salesforce enviando el formulario
 
->[!VIDEO](https://video.tv.adobe.com/v/331758?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3411561?quality=12&learn=on&captions=spa)

@@ -24,7 +24,7 @@ ht-degree: 7%
 
 Adobe Experience Manager Sites permite a un autor administrar la anchura de un componente en función de la anchura del dispositivo para facilitar un diseño de sitio interactivo. Con el modo Diseño y el contenedor de diseño, los usuarios pueden crear contenido adaptable para diferentes dispositivos y previsualizar la experiencia del usuario final sin salir de la interfaz de usuario de AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/32012?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37168?quality=12&learn=on&captions=spa)
 
 ## Recursos adicionales {#additional-resources}
 

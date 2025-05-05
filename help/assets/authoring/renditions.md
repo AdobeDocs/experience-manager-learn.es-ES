@@ -23,4 +23,4 @@ ht-degree: 7%
 
 Obtenga información sobre las representaciones en los AEM Assets y cómo se pueden previsualizar.
 
->[!VIDEO](https://video.tv.adobe.com/v/32047?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36965?quality=12&learn=on&captions=spa)

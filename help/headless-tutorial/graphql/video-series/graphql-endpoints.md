@@ -28,4 +28,4 @@ En este vídeo:
 + Obtenga información sobre cómo ejecutar consultas de GraphQL en puntos finales
 + Obtenga información sobre cómo publicar extremos de GraphQL
 
->[!VIDEO](https://video.tv.adobe.com/v/333339?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445026?quality=12&learn=on&captions=spa)

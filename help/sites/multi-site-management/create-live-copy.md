@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Obtenga información sobre cómo crear una Live Copy para su sitio desde un modelo mediante el asistente de Creación de Live Copy.
 
->[!VIDEO](https://video.tv.adobe.com/v/36677?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41582?quality=12&learn=on&captions=spa)

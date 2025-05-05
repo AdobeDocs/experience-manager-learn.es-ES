@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Cree el modelo de datos de formulario back-end de Azure Blob Storage.
 
->[!VIDEO](https://video.tv.adobe.com/v/335423?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3419009?quality=12&learn=on&captions=spa)

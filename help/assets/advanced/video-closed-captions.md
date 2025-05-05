@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Los subtítulos opcionales se generan automáticamente una vez que se carga un archivo de vídeo en AEM Assets con Dynamic Media.
 
->[!VIDEO](https://video.tv.adobe.com/v/3432627/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446390/?learn=on&captions=spa)

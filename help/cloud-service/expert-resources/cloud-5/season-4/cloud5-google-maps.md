@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Tales from the trenches: explore cómo integrar servicios de envío de Edge con Google Maps y cómo optimizar el rendimiento con integraciones.
 
->[!VIDEO](https://video.tv.adobe.com/v/3440977/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3440992/?learn=on&enablevpops&captions=spa)

@@ -22,7 +22,7 @@ ht-degree: 2%
 Agregue paneles secundarios al panel raíz.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/28536?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326914?quality=12&learn=on&captions=spa)
 
 >[!NOTE]
 >Al agregar paneles secundarios al panel raíz, **Asegúrese de que se encuentra en el modo de edición. El botón de edición se encuentra en la parte superior derecha del explorador.**

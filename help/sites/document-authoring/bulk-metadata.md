@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Explore cómo se gestionan los metadatos masivos en la creación de documentos y cómo los autores pueden actualizar los metadatos masivos sin conocimientos técnicos.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425705/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438412/?learn=on&captions=spa)

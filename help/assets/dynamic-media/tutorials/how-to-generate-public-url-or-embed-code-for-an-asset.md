@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Este vídeo muestra los pasos para generar una URL pública o un código incrustado para un recurso.
 
->[!VIDEO](https://video.tv.adobe.com/v/335364?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417841?quality=12&learn=on&captions=spa)

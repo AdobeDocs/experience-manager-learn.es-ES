@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Aprenda a utilizar las funciones de protección y desprotección de AEM para facilitar la colaboración de varios usuarios en los recursos.
 
->[!VIDEO](https://video.tv.adobe.com/v/32048?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36901?quality=12&learn=on&captions=spa)

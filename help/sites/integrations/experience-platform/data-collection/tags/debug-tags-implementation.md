@@ -24,7 +24,7 @@ ht-degree: 1%
 
 Introducción a las herramientas y técnicas comunes utilizadas para depurar una implementación de etiquetas. Obtenga información sobre cómo utilizar la consola para desarrolladores del explorador y la extensión de Experience Platform Debugger para identificar y solucionar problemas relacionados con aspectos clave de una implementación de etiquetas.
 
->[!VIDEO](https://video.tv.adobe.com/v/38567?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327409?quality=12&learn=on&captions=spa)
 
 ## Depuración del lado del cliente mediante un objeto Satellite
 

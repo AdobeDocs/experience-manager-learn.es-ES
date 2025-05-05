@@ -45,7 +45,7 @@ Este tutorial abarca los siguientes temas:
 
 El siguiente vídeo proporciona información general de alto nivel sobre los conceptos que se tratan en este tutorial. El tutorial incluye la definición de modelos de fragmentos de contenido con tipos de datos más avanzados, el anidamiento de fragmentos de contenido y la persistencia de consultas de GraphQL en AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/340035?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446130?quality=12&learn=on&captions=spa)
 
 >[!CAUTION]
 >

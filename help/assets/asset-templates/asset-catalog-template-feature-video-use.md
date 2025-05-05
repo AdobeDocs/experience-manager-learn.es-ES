@@ -20,7 +20,7 @@ ht-degree: 0%
 
 La mejora del catálogo de AEM 6.4 permite crear páginas de catálogo con plantillas de recursos de AEM y InDesign Server.  Un usuario puede crear una página de catálogo con la plantilla de InDesign y asignar propiedades de producto a campos editables, que se pueden utilizar posteriormente para crear páginas similares para diferentes productos.
 
->[!VIDEO](https://video.tv.adobe.com/v/22540?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/39302?quality=12&learn=on&captions=spa)
 
 >[!NOTE]
 >

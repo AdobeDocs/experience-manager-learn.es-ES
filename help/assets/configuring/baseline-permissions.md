@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Administrar el acceso de los usuarios a las [carpetas de recursos de línea de base](./baseline-folders.md) es un aspecto crítico del control y garantiza que los procesos sean compatibles.
 
->[!VIDEO](https://video.tv.adobe.com/v/37696?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327034?quality=12&learn=on&captions=spa)

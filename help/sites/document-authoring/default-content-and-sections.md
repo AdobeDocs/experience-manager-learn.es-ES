@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Realice una explicación detallada de los conceptos de creación de documentos de contenido y secciones predeterminadas y cómo estos le ayudan a crear un mejor sitio.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425702/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437978/?learn=on&captions=spa)

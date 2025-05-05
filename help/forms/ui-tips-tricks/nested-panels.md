@@ -36,7 +36,7 @@ El comportamiento predeterminado de este formulario sería mostrar todos los pan
 
 Para cambiar este comportamiento predeterminado, debemos hacer lo siguiente
 
->[!VIDEO](https://video.tv.adobe.com/v/338369?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438634?quality=12&learn=on&captions=spa)
 
 
 Agregue el código siguiente al evento de clic del botón **Next** mediante el editor de código
@@ -57,7 +57,7 @@ El código anterior le ayudará a desplazarse entre las pestañas y los paneles 
 
 Utilice el editor de estilos para ocultar el título de las pestañas de los paneles secundarios.
 
->[!VIDEO](https://video.tv.adobe.com/v/338370?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439128?quality=12&learn=on&captions=spa)
 
 >[!NOTE]
 >

@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Familiarícese con las consolas web clave en los AEM Assets que se utilizan para la colaboración.
 
->[!VIDEO](https://video.tv.adobe.com/v/32051?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36772?quality=12&learn=on&captions=spa)

@@ -23,4 +23,4 @@ ht-degree: 41%
 
 Una plantilla de formulario adaptable es una plantilla de la página de AEM especializada, con determinadas propiedades y estructura de contenido que se utiliza para crear el formulario adaptable. La plantilla tiene diseños, estilos y estructuras de contenido inicial básicas preconfigurados. Cada formulario adaptable se basa en una plantilla.
 
->[!VIDEO](https://video.tv.adobe.com/v/332223?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446152?quality=12&learn=on&captions=spa)

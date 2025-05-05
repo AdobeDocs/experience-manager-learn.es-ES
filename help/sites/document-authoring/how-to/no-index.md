@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Explore cómo evitar que los motores de búsqueda indexen las páginas web creadas con la creación de documentos de AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425726/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438116/?learn=on&captions=spa)

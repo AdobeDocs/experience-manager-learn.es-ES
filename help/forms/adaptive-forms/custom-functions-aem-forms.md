@@ -85,4 +85,4 @@ Si tienes problemas para crear las funciones personalizadas, [descarga e instala
 ## Uso de las funciones personalizadas
 
 El siguiente vídeo le guía por los pasos necesarios para utilizar la función personalizada en el editor de reglas de un formulario adaptable
->[!VIDEO](https://video.tv.adobe.com/v/340305?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445844?quality=12&learn=on&captions=spa)

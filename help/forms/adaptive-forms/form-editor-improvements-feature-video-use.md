@@ -20,7 +20,7 @@ ht-degree: 0%
 
 AEM 6.3 presenta varias funciones y mejoras nuevas en esta versión para simplificar la experiencia de creación de formularios y documentos adaptables. Las mejoras ayudan a reducir el tiempo de comercialización y permiten a los usuarios empresariales trabajar con formularios y documentos
 
->[!VIDEO](https://video.tv.adobe.com/v/19500?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38447?quality=12&learn=on&captions=spa)
 
 **Algunas de las mejoras más importantes para el Editor de formularios adaptables incluyen:**
 

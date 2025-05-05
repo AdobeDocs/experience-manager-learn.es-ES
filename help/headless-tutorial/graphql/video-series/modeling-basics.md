@@ -28,4 +28,4 @@ En este vídeo:
 + Obtenga información acerca de los distintos tipos de datos utilizados para crear el modelo de fragmento de contenido
 + Comprender cómo el modelo de fragmentos de contenido impulsa la API de GraphQL
 
->[!VIDEO](https://video.tv.adobe.com/v/332858?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3412904?quality=12&learn=on&captions=spa)

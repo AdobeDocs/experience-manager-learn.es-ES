@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Conozca los conceptos básicos de la creación de una estructura de carpetas, las operaciones básicas como mover, copiar y cambiar nombre, y las colecciones.
 
->[!VIDEO](https://video.tv.adobe.com/v/335733?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3413849?quality=12&learn=on&captions=spa)

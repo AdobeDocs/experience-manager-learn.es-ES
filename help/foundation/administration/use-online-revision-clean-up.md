@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Una breve introducción a Limpieza de revisiones en línea que mitiga la necesidad de realizar limpiezas frecuentes de revisiones sin conexión.
 
->[!VIDEO](https://video.tv.adobe.com/v/17004?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/30120?quality=12&learn=on&captions=spa)
 
 ## Materiales de apoyo
 

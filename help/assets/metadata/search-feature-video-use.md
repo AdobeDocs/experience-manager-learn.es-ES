@@ -18,10 +18,10 @@ En estos vídeos, analizamos algunas mejoras en la búsqueda de Assets introduci
 
 ## Aumento de la búsqueda con metadatos de recursos {#search-boost-asset}
 
->[!VIDEO](https://video.tv.adobe.com/v/16766?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410335?quality=12&learn=on&captions=spa)
 
 ## Configuración avanzada de predicados de búsqueda de etiquetas y varios valores {#multi-value-tag-predicates}
 
 El **predicado de búsqueda de varios valores** está disponible para facilitar la coincidencia de texto en los resultados de búsqueda. También se han realizado varias mejoras en el predicado de etiquetas para filtrar de forma más eficaz los resultados de búsqueda de recursos.
 
->[!VIDEO](https://video.tv.adobe.com/v/16457?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/39502?quality=12&learn=on&captions=spa)

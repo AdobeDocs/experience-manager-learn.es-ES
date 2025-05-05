@@ -23,7 +23,7 @@ Al acceder a los registros de AEM SDK, tanto el Jar de inicio rápido local de A
 
 ## Registros de AEM
 
->[!VIDEO](https://video.tv.adobe.com/v/34334?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38118?quality=12&learn=on&captions=spa)
 
 Los registros actúan como primera línea para depurar aplicaciones de AEM, pero dependen del registro adecuado en la aplicación de AEM implementada. Adobe recomienda mantener las configuraciones de desarrollo local y registro de desarrollo de AEM as a Cloud Service lo más similares posible, ya que normaliza la visibilidad del registro en los entornos de inicio rápido local y desarrollo de AEM as a Cloud Service de AEM SDK, lo que reduce la alternancia y la reimplementación de la configuración.
 

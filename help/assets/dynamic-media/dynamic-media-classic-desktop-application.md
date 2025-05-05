@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Adobe presenta una aplicación de escritorio para Dynamic Media Classic que proporciona una experiencia similar a un explorador y una interfaz funcionalmente equivalente que no depende del reproductor Adobe Flash.
 
->[!VIDEO](https://video.tv.adobe.com/v/36645?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327760?quality=12&learn=on&captions=spa)
 
 >[!NOTE]
 >

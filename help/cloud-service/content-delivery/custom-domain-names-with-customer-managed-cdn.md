@@ -47,7 +47,7 @@ Si no tiene acceso a servicios de terceros, _colabore con su equipo de seguridad
 
 ## Generar certificado SSL
 
->[!VIDEO](https://video.tv.adobe.com/v/3427908?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441477?quality=12&learn=on&captions=spa)
 
 Tiene dos opciones:
 
@@ -222,7 +222,7 @@ Para configurar e implementar la regla CDN de validación de encabezado HTTP, si
 
 ## Pasar secreto en el encabezado HTTP X-AEM-Edge-Key
 
->[!VIDEO](https://video.tv.adobe.com/v/3432567?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445048?quality=12&learn=on&captions=spa)
 
 Actualice la CDN del cliente para pasar el secreto en el encabezado HTTP `X-AEM-Edge-Key`. El secreto lo utiliza la CDN de Adobe para validar que la solicitud proviene de la CDN del cliente y transformar el valor del encabezado `Host` al valor de `X-Forwarded-Host` recibido de la CDN del cliente.
 

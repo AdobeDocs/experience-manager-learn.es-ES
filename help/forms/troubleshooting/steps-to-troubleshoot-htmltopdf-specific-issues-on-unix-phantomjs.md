@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Este vídeo explica los pasos para solucionar problemas específicos de HtmltoPDF en una configuración Unix (PhantomJS).*
 
->[!VIDEO](https://video.tv.adobe.com/v/335546?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417810?quality=12&learn=on&captions=spa)

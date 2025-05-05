@@ -20,4 +20,4 @@ ht-degree: 0%
 
 *Este vídeo explica los pasos para configurar los localizadores de gemfire en un clúster y realizar la configuración relacionada.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335544?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417179?quality=12&learn=on&captions=spa)

@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Las funciones de marca de agua de AEM as a Cloud Service permiten que las representaciones de imágenes personalizadas se marquen con agua con cualquier imagen PNG.
 
->[!VIDEO](https://video.tv.adobe.com/v/41536?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329455?quality=12&learn=on&captions=spa)

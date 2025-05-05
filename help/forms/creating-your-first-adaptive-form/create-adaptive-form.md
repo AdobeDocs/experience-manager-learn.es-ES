@@ -22,7 +22,7 @@ Crearemos un formulario adaptable basado en la plantilla creada en la lección a
 
 **Cree su primer formulario adaptable**
 
->[!VIDEO](https://video.tv.adobe.com/v/22173?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327844?quality=12&learn=on&captions=spa)
 
 ## Siguientes pasos
 

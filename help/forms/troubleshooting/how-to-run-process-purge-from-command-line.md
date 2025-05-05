@@ -20,4 +20,4 @@ ht-degree: 0%
 
 *Este vídeo muestra los pasos para ejecutar la herramienta de depuración de procesos desde la línea de comandos.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335508?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438370?quality=12&learn=on&captions=spa)

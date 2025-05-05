@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Obtenga información sobre cómo administrar los datos heredados entre una Live Copy y su modelo a nivel de componente.
 
->[!VIDEO](https://video.tv.adobe.com/v/36678?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41599?quality=12&learn=on&captions=spa)

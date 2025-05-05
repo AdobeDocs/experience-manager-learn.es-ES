@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Breve vídeo que explica la creación de un proceso de formulario sencillo en Workbench
 
->[!VIDEO](https://video.tv.adobe.com/v/3429494/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3440228/?learn=on&captions=spa)

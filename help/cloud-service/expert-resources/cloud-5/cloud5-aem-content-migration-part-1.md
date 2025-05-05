@@ -21,7 +21,7 @@ ht-degree: 6%
 
 Darin y James analizan Dispatcher en AEM Cloud, incluidas algunas prácticas recomendadas y diferencias con respecto a AMS/On-Prem. También se refieren a la migración a la nube.
 
->[!VIDEO](https://video.tv.adobe.com/v/342133?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448731?quality=12&learn=on&captions=spa)
 
 ## Contenido cubierto en este vídeo
 

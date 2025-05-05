@@ -22,7 +22,7 @@ ht-degree: 0%
 
 El flujo de trabajo de AEM proporciona una forma de colaborar, administrar y procesar contenido en AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/27848?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410286?quality=12&learn=on&captions=spa)
 
 >[!NOTE]
 >

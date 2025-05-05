@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Este vídeo muestra los pasos para habilitar la descarga de representaciones en Brand Portal.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335449?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417805?quality=12&learn=on&captions=spa)

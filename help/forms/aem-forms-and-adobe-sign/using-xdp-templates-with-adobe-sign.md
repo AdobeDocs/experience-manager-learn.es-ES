@@ -22,7 +22,7 @@ ht-degree: 4%
 
 Aprovechamiento de las plantillas XDP existentes con la integración de AEM Forms y Sign.
 
->[!VIDEO](https://video.tv.adobe.com/v/39705?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327804?quality=12&learn=on&captions=spa)
 
 Assets relacionado con este vídeo se puede descargar desde los siguientes vínculos
 

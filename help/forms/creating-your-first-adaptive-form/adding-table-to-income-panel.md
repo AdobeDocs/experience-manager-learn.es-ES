@@ -23,7 +23,7 @@ Agregaremos una tabla al panel Ingresos. Configure las filas de la tabla y utili
 
 **Agregar y configurar el componente Tabla**
 
->[!VIDEO](https://video.tv.adobe.com/v/22198?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326905?quality=12&learn=on&captions=spa)
 
 
 
@@ -44,7 +44,7 @@ Agregaremos una tabla al panel Ingresos. Configure las filas de la tabla y utili
 ## Crear regla para calcular el total general {#create-rule-to-calculate-grand-total}
 
 
->[!VIDEO](https://video.tv.adobe.com/v/22197?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326894?quality=12&learn=on&captions=spa)
 
 ## Siguientes pasos
 

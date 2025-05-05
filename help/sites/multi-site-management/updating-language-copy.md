@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Obtenga información sobre cómo actualizar, revisar y aprobar cambios en una copia de idioma con los lanzamientos.
 
->[!VIDEO](https://video.tv.adobe.com/v/36683?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41631?quality=12&learn=on&captions=spa)

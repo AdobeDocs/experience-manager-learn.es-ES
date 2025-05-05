@@ -24,7 +24,7 @@ ht-degree: 3%
 
 Explore los índices de consultas y cómo escribir fórmulas de Excel para manipular y ordenar conjuntos de datos con Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427787/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453766/?learn=on&captions=spa)
 
 ## Recursos adicionales
 

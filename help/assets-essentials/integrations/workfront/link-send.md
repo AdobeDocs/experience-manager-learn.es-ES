@@ -25,4 +25,4 @@ ht-degree: 7%
 
 Obtenga información sobre cómo enviar documentos de Workfront a Assets Essentials y vincular los recursos de Assets Essentials a Workfront.
 
->[!VIDEO](https://video.tv.adobe.com/v/336255?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3423889?quality=12&learn=on&captions=spa)

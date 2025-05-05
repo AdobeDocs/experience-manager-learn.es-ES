@@ -25,7 +25,7 @@ AEM proporciona muchas consolas OSGi, cada una de las cuales proporciona perspec
 
 ## Paquetes
 
->[!VIDEO](https://video.tv.adobe.com/v/34335?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38117?quality=12&learn=on&captions=spa)
 
 La consola Paquetes es un catálogo de los paquetes OSGi y sus detalles implementados en AEM, junto con la capacidad ad hoc para iniciarlos y detenerlos.
 
@@ -42,7 +42,7 @@ Al hacer clic en cada paquete, se proporcionan detalles que ayudan a depurar la 
 
 ## Componentes
 
->[!VIDEO](https://video.tv.adobe.com/v/34336?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38116?quality=12&learn=on&captions=spa)
 
 La consola Componentes es un catálogo de todos los componentes OSGi implementados en AEM y proporciona toda la información sobre ellos, desde el ciclo de vida definido del componente OSGi, hasta a qué servicios OSGi pueden hacer referencia
 
@@ -61,7 +61,7 @@ Aspectos clave que ayudan con las actividades de depuración:
 
 ## Modelos Sling
 
->[!VIDEO](https://video.tv.adobe.com/v/34337?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38115?quality=12&learn=on&captions=spa)
 
 La consola Modelos de Sling se encuentra en:
 

@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Aprenda a utilizar comentarios y anotaciones en AEM para comunicarse y colaborar en recursos.
 
->[!VIDEO](https://video.tv.adobe.com/v/32049?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36918?quality=12&learn=on&captions=spa)

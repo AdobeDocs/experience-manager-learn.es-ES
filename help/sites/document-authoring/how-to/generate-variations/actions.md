@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Explore las acciones que se pueden utilizar en una variación de contenido generada, incluidos guardar, copiar, clasificar y mucho más, en la creación de documentos de Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428795/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437279/?learn=on&captions=spa)

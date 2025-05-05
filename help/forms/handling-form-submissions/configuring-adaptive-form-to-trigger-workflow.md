@@ -39,8 +39,8 @@ El formulario de ejemplo utilizado en este flujo de trabajo se basa en una plant
 * El formulario adaptable de ejemplo se coloca en una carpeta llamada [Application Forms](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments/applicationforms)
 
 En el siguiente vídeo se explica cómo configurar un formulario adaptable para almacenar en déclencheur un flujo de trabajo de AEM
->[!VIDEO](https://video.tv.adobe.com/v/40258?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329439?quality=12&learn=on&captions=spa)
 
 El siguiente vídeo muestra la carga útil del flujo de trabajo y otros detalles en el repositorio crx
 
->[!VIDEO](https://video.tv.adobe.com/v/40259?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329447?quality=12&learn=on&captions=spa)

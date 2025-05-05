@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Aprenda a crear una copia de idioma para su sitio de AEM mediante el asistente Crear copia de idioma.
 
->[!VIDEO](https://video.tv.adobe.com/v/36483?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41607?quality=12&learn=on&captions=spa)

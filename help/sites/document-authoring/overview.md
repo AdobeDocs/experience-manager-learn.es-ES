@@ -36,7 +36,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <a href="set-up.md" title="Configuración de creación de documentos"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425699/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438865/?format=jpeg&captions=spa"
                 alt="Resumen de creación de documentos">
             </a>
           </figure>
@@ -68,7 +68,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <a href="preview-and-publish.md" title="Previsualización y publicación de contenido"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425700/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3441341/?format=jpeg&captions=spa"
                 alt="Previsualización y publicación de contenido">
             </a>
           </figure>
@@ -100,7 +100,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <a href="document-structure.md" title="Estructura del documento"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425701/?format=jpeg" alt="Estructura del documento">
+                src="https://video.tv.adobe.com/v/3438811/?format=jpeg&captions=spa" alt="Estructura del documento">
             </a>
           </figure>
         </div>
@@ -131,7 +131,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <a href="default-content-and-sections.md" title="Contenido y secciones predeterminados"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425702/?format=jpeg" alt="Contenido y secciones predeterminados">
+                src="https://video.tv.adobe.com/v/3437978/?format=jpeg&captions=spa" alt="Contenido y secciones predeterminados">
             </a>
           </figure>
         </div>
@@ -161,7 +161,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
           <figure class="image is-16by9">
             <a href="blocks-and-autoblocks.md" title="Bloques y bloques automáticos" tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425703/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3439504/?format=jpeg&captions=spa"
                 alt="Bloques y bloques automáticos">
             </a>
           </figure>
@@ -194,7 +194,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <a href="redirects.md" title="Redireccionamientos"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425704/?format=jpeg" alt="Redireccionamientos">
+                src="https://video.tv.adobe.com/v/3438546/?format=jpeg&captions=spa" alt="Redireccionamientos">
             </a>
           </figure>
         </div>
@@ -225,7 +225,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <a href="bulk-metadata.md" title="Metadatos por lotes"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425705/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438412/?format=jpeg&captions=spa"
                 alt="Metadatos por lotes">
             </a>
           </figure>
@@ -258,7 +258,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <a href="page-metadata.md" title="Metadatos de página"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425706/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438068/?format=jpeg&captions=spa"
                 alt="Metadatos de página">
             </a>
           </figure>
@@ -290,7 +290,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <a href="author-authentication.md" title="Autenticación de autor"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3429594/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438181/?format=jpeg&captions=spa"
                 alt="Autenticación de autor">
             </a>
           </figure>
@@ -327,7 +327,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <a href="./how-to/responsive-navigation.md" title="Navegación interactiva"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425707/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438167/?format=jpeg&captions=spa"
                 alt="Navegación interactiva">
             </a>
           </figure>
@@ -359,7 +359,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <a href="./how-to/document-audit.md" title="Auditoria de documentos"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425722/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3437714/?format=jpeg&captions=spa"
                 alt="Auditoria de documentos">
             </a>
           </figure>
@@ -391,7 +391,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <a href="./how-to/document-permissions.md" title="Permisos de documento"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425724/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438104/?format=jpeg&captions=spa"
                 alt="Permisos de documento">
             </a>
           </figure>
@@ -423,7 +423,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <a href="./how-to/document-versions.md" title="Versiones de documento"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425728/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438798/?format=jpeg&captions=spa"
                 alt="Versiones de documento">
             </a>
           </figure>
@@ -455,7 +455,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <a href="./how-to/document-workflows.md" title="Flujos de trabajo de documentos"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425720/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438293/?format=jpeg&captions=spa"
                 alt="Flujos de trabajo de documentos">
             </a>
           </figure>
@@ -487,7 +487,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <a href="./how-to/iframes.md" title="Uso de iFrames"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425719/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438392/?format=jpeg&captions=spa"
                 alt="Uso de iFrames">
             </a>
           </figure>
@@ -519,7 +519,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <a href="./how-to/image-alt-text.md" title="Uso de texto alternativo"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425721/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438678/?format=jpeg&captions=spa"
                 alt="Uso de texto alternativo">
             </a>
           </figure>
@@ -551,7 +551,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <a href="./how-to/no-index.md" title="Prevención de indexación"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425726/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438116/?format=jpeg&captions=spa"
                 alt="Prevención de indexación">
             </a>
           </figure>
@@ -583,7 +583,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <a href="./how-to/using-dynamic-media.md" title="Dynamic Media"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3429593/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438902/?format=jpeg&captions=spa"
                 alt="Dynamic Media">
             </a>
           </figure>
@@ -615,7 +615,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <a href="./how-to/migration-using-importer.md" title="Migración de sitios mediante el importador"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3429595/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3443699/?format=jpeg&captions=spa"
                 alt="Migración de sitios mediante el importador">
             </a>
           </figure>
@@ -647,7 +647,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <a href="./how-to/customizing-importer.md" title="Personalización del importador"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3429596/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3444248/?format=jpeg&captions=spa"
                 alt="Personalización del importador">
             </a>
           </figure>
@@ -679,7 +679,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <a href="./how-to/bulk-importing-using-importer.md" title="Importación masiva mediante el importador"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3429597/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3445888/?format=jpeg&captions=spa"
                 alt="Importación masiva mediante el importador">
             </a>
           </figure>
@@ -716,7 +716,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <a href="./how-to/generate-variations/overview.md" title="Generar variaciones"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3428307/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3441333/?format=jpeg&captions=spa"
                 alt="Generar variaciones">
             </a>
           </figure>
@@ -748,7 +748,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <a href="./how-to/generate-variations/configure-sidekick.md" title="Generar variaciones: Configuración de Sidekick"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3428306/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3436990/?format=jpeg&captions=spa"
                 alt="Generar variaciones: Configuración de Sidekick">
             </a>
           </figure>
@@ -780,7 +780,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <a href="./how-to/generate-variations/prompt-templates.md" title="Generar variaciones: consultar plantillas"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3428307/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3441333/?format=jpeg&captions=spa"
                 alt="Generar variaciones: consultar plantillas">
             </a>
           </figure>
@@ -812,7 +812,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <a href="./how-to/generate-variations/custom-prompt-templates.md" title="Generar variaciones: plantillas de petición de datos personalizadas"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3428316/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438502/?format=jpeg&captions=spa"
                 alt="Generar variaciones: plantillas de petición de datos personalizadas">
             </a>
           </figure>
@@ -844,7 +844,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <a href="./how-to/generate-variations/custom-prompt-templates.md" title="Generar variaciones: guardar plantillas de solicitud personalizadas"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3428317/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3437505/?format=jpeg&captions=spa"
                 alt="Generar variaciones: guardar plantillas de solicitud personalizadas">
             </a>
           </figure>
@@ -876,7 +876,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <a href="./how-to/generate-variations/using-target-audiences.md" title="Generar variaciones: uso de audiencias de Adobe Target"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3428792/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3437758/?format=jpeg&captions=spa"
                 alt="Generar variaciones: uso de audiencias de Adobe Target">
             </a>
           </figure>
@@ -908,7 +908,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <a href="./how-to/generate-variations/using-csv-file-audiences.md" title="Generación de variaciones: uso de audiencias de archivo CSV"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3428793/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3436890/?format=jpeg&captions=spa"
                 alt="Generación de variaciones: uso de audiencias de archivo CSV">
             </a>
           </figure>
@@ -940,7 +940,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <a href="./how-to/generate-variations/using-adobe-firefly-for-images.md" title="Generar variaciones: Uso de Adobe Firefly"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3428794/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438359/?format=jpeg&captions=spa"
                 alt="Generar variaciones: Uso de Adobe Firefly">
             </a>
           </figure>
@@ -972,7 +972,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <a href="./how-to/generate-variations/actions.md" title="Generar variaciones: acciones en una variación generada"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3428795/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3437279/?format=jpeg&captions=spa"
                 alt="Generar variaciones: acciones en una variación generada">
             </a>
           </figure>
@@ -1004,7 +1004,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <a href="./how-to/generate-variations/trust-privacy.md" title="Generar variaciones: confianza y privacidad"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3429060/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3440017/?format=jpeg&captions=spa"
                 alt="Generar variaciones: confianza y privacidad">
             </a>
           </figure>
@@ -1036,7 +1036,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <a href="./how-to/experimentation-framework.md" title="Resumen del marco de experimentación"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3429061/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3437857/?format=jpeg&captions=spa"
                 alt="Resumen del marco de experimentación">
             </a>
           </figure>
@@ -1068,7 +1068,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <a href="./how-to/setup-experimentation-framework.md" title="Configuración del marco de experimentación"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3429062/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438931/?format=jpeg&captions=spa"
                 alt="Configuración del marco de experimentación">
             </a>
           </figure>
@@ -1100,7 +1100,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <a href="./how-to/experimentation-add-metadata.md" title="Añadir metadatos para la experimentación"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3428796/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3440108/?format=jpeg&captions=spa"
                 alt="Añadir metadatos para la experimentación">
             </a>
           </figure>

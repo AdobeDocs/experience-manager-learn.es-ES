@@ -23,6 +23,6 @@ ht-degree: 0%
 
 Describa la API de REST de Salesforce usando la [especificación de API ABIERTA 2.0](https://swagger.io/docs/specification/2-0/basic-structure/)
 
->[!VIDEO](https://video.tv.adobe.com/v/331754?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3411567?quality=12&learn=on&captions=spa)
 
 El archivo Swagger que se puede descargar está [disponible aquí](assets/sfdc-rest-swagger.zip)

@@ -26,7 +26,7 @@ SPA AEM AEM SPA Bienvenido al tutorial de varias partes para desarrolladores que
 
 Este tutorial se basa en [WKND GraphQL App](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=es), una aplicación de React que consume contenido de fragmentos de contenido de la red de contenido (FDA) de la red de aplicaciones (API) de GraphQL SPA, pero que no proporciona ninguna creación de contenido en contexto de la red de aplicaciones (API) de la red de aplicaciones de AEM AEM de la red de.
 
->[!VIDEO](https://video.tv.adobe.com/v/333272?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444850?quality=12&learn=on&captions=spa)
 
 ## Información sobre el tutorial
 

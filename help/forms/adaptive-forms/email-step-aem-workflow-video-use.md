@@ -20,7 +20,7 @@ ht-degree: 2%
 
 Los pasos para enviar correo electrónico se introdujeron en AEM Forms 6.4. Con este paso podemos crear procesos o flujos de trabajo empresariales que le permitan enviar correos electrónicos con o sin archivos adjuntos. El siguiente vídeo muestra los pasos para configurar el componente Enviar correo electrónico.
 
->[!VIDEO](https://video.tv.adobe.com/v/21499?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38532?quality=12&learn=on&captions=spa)
 
 Como parte de este artículo, le guiaremos por el siguiente caso de uso:
 

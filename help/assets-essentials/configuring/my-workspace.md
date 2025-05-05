@@ -23,4 +23,4 @@ ht-degree: 7%
 
 Aprenda a trabajar de forma más eficaz mediante los widgets configurables por el usuario de Mi Workspace.
 
->[!VIDEO](https://video.tv.adobe.com/v/3413809?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418578?quality=12&learn=on&captions=spa)

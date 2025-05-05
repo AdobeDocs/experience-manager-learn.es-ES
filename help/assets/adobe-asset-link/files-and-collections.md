@@ -22,5 +22,5 @@ ht-degree: 0%
 
 Obtenga información sobre cómo acceder rápida y fácilmente a archivos y colecciones de AEM Assets desde el panel de Asset Link.
 
->[!VIDEO](https://video.tv.adobe.com/v/33884?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38661?quality=12&learn=on&captions=spa)
 

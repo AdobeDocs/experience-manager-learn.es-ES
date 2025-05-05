@@ -23,7 +23,7 @@ Descubra cómo se puede utilizar el servicio de importación masiva de AEM as a 
 
 
 
->[!VIDEO](https://video.tv.adobe.com/v/336969?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453282?quality=12&learn=on&captions=spa)
 
 ## Uso del servicio de importación por lotes
 

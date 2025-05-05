@@ -23,7 +23,7 @@ ht-degree: 0%
 
 En esta parte, se crea un fragmento de documento para contener el nombre y la dirección del destinatario.
 
->[!VIDEO](https://video.tv.adobe.com/v/22350?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36368?quality=12&learn=on&captions=spa)
 
 Los fragmentos de documento contienen el contenido de texto de los documentos de comunicaciones interactivas. Este contenido de texto puede ser texto estático o insertarse desde los valores de los elementos del modelo de datos subyacentes. Por ejemplo **Estimado _{name}_**, donde Estimado es texto estático y el nombre es el nombre del elemento del modelo de datos de formulario. En tiempo de ejecución, esto se resolverá en **Estimada Gloria Rios**&#x200B;o **Estimado John Jacobs**&#x200B;según el valor del elemento name.
 

@@ -21,7 +21,7 @@ ht-degree: 5%
 
 El reproductor de vídeo Dynamic Media de AEM, que antes dependía del tiempo de ejecución de Flash para admitir la transmisión de vídeo adaptable en clientes y exploradores de escritorio, se volvió más agresivo con la transmisión de contenido basada en Flash. Con la introducción de HLS (el protocolo de entrega de vídeo HTTP Live Streaming de Apple), el contenido ahora se puede transmitir sin depender de Flash.
 
->[!VIDEO](https://video.tv.adobe.com/v/16791?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38008?quality=12&learn=on&captions=spa)
 
 ## Búsqueda rápida en el reproductor de vídeo no Flash {#quick-look-into-non-flash-video-player}
 

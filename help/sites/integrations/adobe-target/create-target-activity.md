@@ -24,7 +24,7 @@ ht-degree: 1%
 
 Obtenga información sobre cómo crear y probar una actividad de Adobe Target mediante ofertas de fragmentos de experiencias de AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/41246?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/328965?quality=12&learn=on&captions=spa)
 
 ## Requisitos previos
 

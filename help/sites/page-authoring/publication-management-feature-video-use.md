@@ -25,7 +25,7 @@ ht-degree: 1%
 
 AEM Sites proporciona varias opciones para publicar y cancelar la publicación de contenido. Este vídeo explora los distintos métodos y sus funcionalidades.
 
->[!VIDEO](https://video.tv.adobe.com/v/32193?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36777?quality=12&learn=on&captions=spa)
 
 AEM Sites proporciona varios métodos para publicar y cancelar la publicación de contenido, en función del flujo de trabajo del autor.
 

@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Inicialice una aplicación para App Builder con la extensión de la interfaz de usuario de AEM que defina dónde aparece la extensión y el trabajo que realiza.
 
->[!VIDEO](https://video.tv.adobe.com/v/3412876?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447079?quality=12&learn=on&captions=spa)
 
 >[!IMPORTANT]
 >

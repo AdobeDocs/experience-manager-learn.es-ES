@@ -21,7 +21,7 @@ ht-degree: 2%
 
 Para los clientes con Dynamic Media y Adobe Analytics, ahora puede realizar un seguimiento del uso de visores de Dynamic Media en su sitio web mediante la extensión de visor de Dynamic Media.
 
->[!VIDEO](https://video.tv.adobe.com/v/29308?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32895?quality=12&learn=on&captions=spa)
 
 >[!NOTE]
 >

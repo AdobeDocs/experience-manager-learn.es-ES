@@ -22,4 +22,4 @@ ht-degree: 0%
 
 La bandeja de entrada de AEM facilita una mayor colaboración y visibilidad en las tareas y el flujo de trabajo. La vista Calendario de la Bandeja de entrada realiza un seguimiento de los proyectos y las tareas en una vista basada en el tiempo para facilitar la administración y la programación de los proyectos. Con la vista Calendario, el usuario tendría una visibilidad general de los proyectos y las tareas que están actualmente en curso, planificados, con vencimiento pronto y con vencimiento anterior.
 
->[!VIDEO](https://video.tv.adobe.com/v/16827?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410096?quality=12&learn=on&captions=spa)

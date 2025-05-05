@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Invoque sus flujos de Power Automate en un envío de formulario adaptable. El siguiente vídeo muestra los pasos necesarios para configurar e integrar Forms CS con Microsoft power automate.
 
->[!VIDEO](https://video.tv.adobe.com/v/345675?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3412129?quality=12&learn=on&captions=spa)

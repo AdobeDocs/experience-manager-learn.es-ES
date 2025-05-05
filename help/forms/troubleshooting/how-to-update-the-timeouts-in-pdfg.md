@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *En este vídeo se describe el proceso de actualización de la conversión del servidor y el tiempo de espera global del servidor en el servicio Forms PDFG.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335514?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417605?quality=12&learn=on&captions=spa)

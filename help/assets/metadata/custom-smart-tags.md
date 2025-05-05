@@ -23,7 +23,7 @@ ht-degree: 1%
 Las etiquetas inteligentes personalizadas para imágenes permiten que el etiquetado inteligente se entrene con términos específicos del cliente.
 A continuación, se pueden aprovechar las etiquetas inteligentes personalizadas o las etiquetas inteligentes mejoradas para mejorar la experiencia de búsqueda del usuario y ayudar a encontrar los recursos en el momento adecuado.
 
->[!VIDEO](https://video.tv.adobe.com/v/22254?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410909?quality=12&learn=on&captions=spa)
 
 ## Configuración de etiquetas inteligentes personalizadas para imágenes para AEM 6.x{#set-up}
 
@@ -34,7 +34,7 @@ Etiquetas inteligentes personalizadas para imágenes requiere [Etiquetas intelig
 
 Aprenda a configurar la formación sobre etiquetas inteligentes en AEM Assets mediante el servicio de contenido inteligente y Adobe I/O. Etiquetas inteligentes personalizadas para imágenes
 
->[!VIDEO](https://video.tv.adobe.com/v/23405?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35555?quality=12&learn=on&captions=spa)
 
 ## Recursos adicionales
 

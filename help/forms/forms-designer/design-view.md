@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Breve vídeo sobre la vista de diseñador en AEM Forms Designer
 
->[!VIDEO](https://video.tv.adobe.com/v/3427615/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3436820/?learn=on&captions=spa)

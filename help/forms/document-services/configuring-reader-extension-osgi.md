@@ -37,7 +37,7 @@ La credencial de Extensiones de Reader está asociada al usuario de fd-service. 
 
 Siga el vídeo para agregar las credenciales al usuario de fd-service
 
->[!VIDEO](https://video.tv.adobe.com/v/335849?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447290?quality=12&learn=on&captions=spa)
 
 
 El comando para enumerar los detalles del archivo pfx es. El siguiente comando supone que está en el mismo directorio que el archivo pfx

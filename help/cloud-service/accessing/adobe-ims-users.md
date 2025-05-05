@@ -28,7 +28,7 @@ ht-degree: 75%
 
 Los usuarios que requieren acceso al servicio AEM Author se administran como [usuarios de IMS de Adobe](https://helpx.adobe.com/es/enterprise/using/set-up-identity.html) en [Admin Console de Adobe](https://adminconsole.adobe.com). Obtenga información sobre qué son los usuarios de Adobe IMS y cómo se accede a ellos y se administran en Admin Console.
 
->[!VIDEO](https://video.tv.adobe.com/v/39149?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327561?quality=12&learn=on&captions=spa)
 
 ## Recursos adicionales
 

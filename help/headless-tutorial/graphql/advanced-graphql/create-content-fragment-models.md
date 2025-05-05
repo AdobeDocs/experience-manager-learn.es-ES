@@ -43,7 +43,7 @@ Este es un tutorial avanzado. Antes de continuar con este capítulo, asegúrese 
 
 El siguiente vídeo proporciona una breve introducción a los modelos de fragmentos de contenido y a cómo se utilizan en este tutorial.
 
->[!VIDEO](https://video.tv.adobe.com/v/340037?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449522?quality=12&learn=on&captions=spa)
 
 ## Crear los modelos de fragmentos de contenido {#create-models}
 

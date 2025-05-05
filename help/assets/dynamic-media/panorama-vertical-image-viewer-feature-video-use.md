@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Las mejoras del visualizador de Dynamic Media en AEM 6.4 incluyen la adición del visualizador de imágenes panorámicas, el visualizador de imágenes de realidad virtual panorámica y el visualizador de imágenes verticales. El visor panorámico es una forma sencilla de ofrecer una experiencia atractiva e inmersiva de la habitación, la propiedad, la ubicación o el paisaje sin ningún desarrollo personalizado.
 
->[!VIDEO](https://video.tv.adobe.com/v/24156?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40212?quality=12&learn=on&captions=spa)
 
 >[!NOTE]
 >

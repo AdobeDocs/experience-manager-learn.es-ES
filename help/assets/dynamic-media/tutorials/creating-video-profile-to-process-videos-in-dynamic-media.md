@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Este vídeo muestra el proceso de creación de un perfil de vídeo para procesar vídeos en Dynamic Media.
 
->[!VIDEO](https://video.tv.adobe.com/v/335382?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417800?quality=12&learn=on&captions=spa)

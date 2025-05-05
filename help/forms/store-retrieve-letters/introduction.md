@@ -26,7 +26,7 @@ Este artículo utiliza la base de datos MySQL para almacenar los metadatos de la
 
 El siguiente vídeo muestra el caso de uso:
 
->[!VIDEO](https://video.tv.adobe.com/v/342129?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441443?quality=12&learn=on&captions=spa)
 
 ## Requisitos previos
 

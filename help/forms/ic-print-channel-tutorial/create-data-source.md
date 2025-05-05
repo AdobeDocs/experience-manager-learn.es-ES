@@ -23,7 +23,7 @@ ht-degree: 1%
 
 En esta parte, crearemos una fuente de datos respaldada por REST.  El siguiente vídeo muestra los pasos para crear la fuente de datos.
 
->[!VIDEO](https://video.tv.adobe.com/v/27765?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34441?quality=12&learn=on&captions=spa)
 
 Utilice el archivo swagger que se le ha proporcionado como parte de los recursos relacionados con este tutorial. Los recursos están disponibles en [introducción](introduction.md) de este tutorial.
 

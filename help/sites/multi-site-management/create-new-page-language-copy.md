@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Aprenda a crear una página en una copia de idioma existente y, a continuación, traduzca el contenido a otra copia de idioma.
 
->[!VIDEO](https://video.tv.adobe.com/v/36682?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41549?quality=12&learn=on&captions=spa)

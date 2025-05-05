@@ -23,7 +23,7 @@ En este vídeo analizaremos la estructura del CSS (o [!DNL LESS]) y JavaScript u
 
 ## Explicación de cómo codificar para el sistema de estilos {#understanding-how-to-code-for-the-style-system}
 
->[!VIDEO](https://video.tv.adobe.com/v/21538?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40162?quality=12&learn=on&captions=spa)
 
 El paquete de AEM proporcionado (**technical-review.sites.style-system-1.0.0.zip**) instala el estilo de título de ejemplo, las directivas de ejemplo para los componentes Contenedor de diseño y Título de We.Retail y una página de muestra.
 

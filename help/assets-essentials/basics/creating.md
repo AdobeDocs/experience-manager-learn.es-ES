@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Obtenga información sobre cómo cargar recursos, crear versiones e incluso editar recursos mediante Adobe Photoshop Express.
 
->[!VIDEO](https://video.tv.adobe.com/v/335746?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418449?quality=12&learn=on&captions=spa)

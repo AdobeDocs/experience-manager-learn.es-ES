@@ -31,4 +31,4 @@ Obtenga información acerca de los conceptos básicos del conector mejorado de A
 + Recursos de versión
 + Publicar recursos automáticamente
 
->[!VIDEO](https://video.tv.adobe.com/v/337575?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454297?quality=12&learn=on&captions=spa)

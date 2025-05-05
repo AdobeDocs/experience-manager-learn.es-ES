@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Configuración del formulario adaptable para almacenar en déclencheur el flujo de trabajo de revisión
 
->[!VIDEO](https://video.tv.adobe.com/v/332435?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446504?quality=12&learn=on&captions=spa)

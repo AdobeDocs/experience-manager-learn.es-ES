@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Obtenga información sobre cómo navegar por las pestañas disponibles y personalizar las opciones de configuración para satisfacer las necesidades de su organización. Este vídeo ayudará a los administradores a comprender las diferentes configuraciones y a proporcionar instrucciones de alto nivel sobre cómo adaptarlas para obtener un rendimiento óptimo y una alineación con los objetivos de la organización.
 
->[!VIDEO](https://video.tv.adobe.com/v/3439311/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3439314/?learn=on&enablevpops&captions=spa)

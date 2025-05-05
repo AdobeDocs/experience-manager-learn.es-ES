@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Extraiga los archivos adjuntos del formulario y envíelos en un correo electrónico en el flujo de trabajo de Power Automate.
 En el siguiente vídeo se explican los pasos necesarios para formar archivos adjuntos a partir de los datos enviados.
->[!VIDEO](https://video.tv.adobe.com/v/3409017?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3413027?quality=12&learn=on&captions=spa)
 
 A continuación se muestra el esquema del objeto attachment que debe utilizar en el paso Analizar esquema JSON
 

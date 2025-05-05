@@ -22,7 +22,7 @@ ht-degree: 6%
 
 La capa de datos del cliente de Adobe presenta un método estándar para recopilar y almacenar datos sobre la experiencia de un visitante en una página web y, a continuación, facilitar el acceso a estos datos. La capa de datos del cliente de Adobe no depende de la plataforma, pero está completamente integrada en los componentes principales para su uso con AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/41195?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330111?quality=12&learn=on&captions=spa)
 
 >[!NOTE]
 >

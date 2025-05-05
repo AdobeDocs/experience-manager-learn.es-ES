@@ -23,4 +23,4 @@ ht-degree: 5%
 
 Obtenga información sobre cómo descargar recursos y sus representaciones en el equipo local para usarlos y compartirlos.
 
->[!VIDEO](https://video.tv.adobe.com/v/35090?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/39507?quality=12&learn=on&captions=spa)

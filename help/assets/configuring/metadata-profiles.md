@@ -23,4 +23,4 @@ ht-degree: 6%
 
 Los perfiles de metadatos permiten la aplicación automática de metadatos predeterminados a los recursos de las carpetas de recursos, lo que ayuda a reducir la carga que supone la administración de metadatos para los usuarios de AEM y aumenta la coherencia de los metadatos.
 
->[!VIDEO](https://video.tv.adobe.com/v/33974?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37279?quality=12&learn=on&captions=spa)

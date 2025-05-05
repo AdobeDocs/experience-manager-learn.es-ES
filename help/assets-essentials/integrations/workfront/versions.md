@@ -24,4 +24,4 @@ ht-degree: 7%
 
 Descubra cómo Adobe Workfront y Experience Manager Assets Essentials le ayudan a mantener las versiones de los documentos de Workfront y los recursos de Assets Essentials.
 
->[!VIDEO](https://video.tv.adobe.com/v/336314?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3422616?quality=12&learn=on&captions=spa)

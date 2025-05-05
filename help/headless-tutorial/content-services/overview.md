@@ -25,7 +25,7 @@ AEM Los servicios de contenido permiten las mismas abstracciones de contenido ut
 
 AEM Un tutorial completo que ilustra cómo crear y exponer contenido mediante y consumido por una aplicación móvil nativa, en un escenario de CMS sin encabezado.
 
->[!VIDEO](https://video.tv.adobe.com/v/28315?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33125?quality=12&learn=on&captions=spa)
 
 AEM Este tutorial explora cómo se pueden utilizar los servicios de contenido de la para potenciar la experiencia de una aplicación móvil que muestra información de eventos (música, rendimiento, arte, etc.) que está depurado por el equipo de WKND.
 

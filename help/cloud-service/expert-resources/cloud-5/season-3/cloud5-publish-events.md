@@ -24,7 +24,7 @@ ht-degree: 2%
 
 Explore los eventos que se activan al publicar y cancelar la publicación en Edge Delivery Services, así como casos de uso y ejemplos de uso de estos eventos.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427681?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446659?learn=on&captions=spa)
 
 ## Recursos adicionales
 

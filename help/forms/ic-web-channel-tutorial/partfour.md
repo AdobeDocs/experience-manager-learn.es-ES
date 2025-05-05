@@ -24,7 +24,7 @@ Creación de una plantilla de documento de canal web en AEM Forms 6.4
 >[!VIDEO](https://video.tv.adobe.com/v/22342?quality=12&learn=on)
 
 Creación de una plantilla de documento de canal web en AEM Forms 6.5
->[!VIDEO](https://video.tv.adobe.com/v/27807?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34442?quality=12&learn=on&captions=spa)
 
 La plantilla tendrá áreas de destino o marcadores de posición que albergarán varios tipos de fragmentos de documento. Por ejemplo, una plantilla puede tener áreas de destino para logotipos y otra área de destino para contenido de texto.
 

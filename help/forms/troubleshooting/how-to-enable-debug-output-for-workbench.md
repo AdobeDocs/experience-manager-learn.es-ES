@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Este vídeo muestra el proceso para habilitar la salida de depuración para Workbench .*
 
->[!VIDEO](https://video.tv.adobe.com/v/335497?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417689?quality=12&learn=on&captions=spa)

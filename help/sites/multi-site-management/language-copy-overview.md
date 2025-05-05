@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Obtenga información general sobre cómo crear un sitio multilingüe con Copias de idioma en AEM Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/36487?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41615?quality=12&learn=on&captions=spa)

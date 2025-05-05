@@ -29,11 +29,11 @@ Para crear gráficos de varias series en AEM Forms, debe crear un modelo de dato
 
 ## Crear un modelo de datos de formulario para gráficos de varias series
 
->[!VIDEO](https://video.tv.adobe.com/v/26352?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33114?quality=12&learn=on&captions=spa)
 
 ### Configurar gráficos de series de líneas
 
->[!VIDEO](https://video.tv.adobe.com/v/26353?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33115?quality=12&learn=on&captions=spa)
 
 Para probar esto en su sistema, siga los siguientes pasos
 

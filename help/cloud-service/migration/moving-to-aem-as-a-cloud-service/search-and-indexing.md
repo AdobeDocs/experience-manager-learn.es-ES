@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Obtenga información sobre los índices de búsqueda de AEM as a Cloud Service, cómo convertir las definiciones de índice de AEM 6 para que sean compatibles con AEM as a Cloud Service y cómo implementar índices en AEM as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/336963?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454717?quality=12&learn=on&captions=spa)
 
 ## Herramienta Conversor de índices
 

@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Conozca los casos de uso y las funciones que admite AEM Forms as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/336968?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3443370?quality=12&learn=on&captions=spa)

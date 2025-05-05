@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Obtenga información sobre cómo crear páginas de sitio mediante plantillas de página en Adobe Experience Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/31827?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37209?quality=12&learn=on&captions=spa)

@@ -20,4 +20,4 @@ ht-degree: 0%
 
 *Este vídeo muestra los pasos para habilitar el registro de depuración para cualquier clase en el servidor de aplicaciones de Websphere.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335523?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418364?quality=12&learn=on&captions=spa)

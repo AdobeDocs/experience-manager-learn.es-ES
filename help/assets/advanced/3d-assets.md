@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Obtenga información acerca de la compatibilidad con recursos 3D en AEM Assets as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/3420690/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3423679/?learn=on&captions=spa)

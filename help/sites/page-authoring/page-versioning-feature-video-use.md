@@ -24,7 +24,7 @@ ht-degree: 5%
 
 El control de versiones de página ayuda a los autores de contenido a realizar un seguimiento de los cambios asociados a una página creando una versión de la página y proporciona una opción para obtener una vista previa de una versión, restaurar una versión y comparar una versión con la versión actual de una página.
 
->[!VIDEO](https://video.tv.adobe.com/v/32151?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36835?quality=12&learn=on&captions=spa)
 
 El control de versiones crea una instantánea de una página en un momento específico. Con las versiones, se pueden realizar las siguientes operaciones:
 * Creación de una nueva versión para una página

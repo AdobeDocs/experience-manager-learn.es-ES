@@ -23,7 +23,7 @@ ht-degree: 4%
 
 En el vídeo se explican los distintos pasos necesarios para configurar un formulario adaptable con un solo firmante.
 
->[!VIDEO](https://video.tv.adobe.com/v/39475?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327732?quality=12&learn=on&captions=spa)
 
 Assets relacionado con este vídeo se puede descargar desde el siguiente vínculo
 

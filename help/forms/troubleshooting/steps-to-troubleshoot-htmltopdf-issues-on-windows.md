@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Este vídeo muestra el proceso de solución de problemas específicos de HtmltoPDF en una instalación de Windows.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335545?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417244?quality=12&learn=on&captions=spa)

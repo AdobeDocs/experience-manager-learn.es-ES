@@ -22,4 +22,4 @@ ht-degree: 0%
 
 *Este vídeo describe el proceso de resolución de problemas de la conversión de PDF Generator para varios usuarios en una configuración Unix.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335549?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417610?quality=12&learn=on&captions=spa)

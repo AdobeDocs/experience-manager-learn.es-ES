@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Explore cómo la creación de documentos trata los metadatos de nivel de página y cómo los autores pueden actualizarlos sin tener conocimientos técnicos.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425706/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438068/?learn=on&captions=spa)

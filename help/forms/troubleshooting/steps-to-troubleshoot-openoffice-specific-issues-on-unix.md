@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Este vídeo muestra el proceso de solución de problemas de errores específicos de OpenOffice en una configuración Unix para AEM Forms PDFG.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335551?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417249?quality=12&learn=on&captions=spa)

@@ -22,4 +22,4 @@ ht-degree: 0%
 
 La compatibilidad con Dynamic Media 3D para Adobe Experience Manager le permite personalizar fácilmente y ofrecer experiencias interactivas a escala tridimensional.
 
->[!VIDEO](https://video.tv.adobe.com/v/35156?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/39524?quality=12&learn=on&captions=spa)

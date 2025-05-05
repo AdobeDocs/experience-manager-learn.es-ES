@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Este vídeo muestra el proceso de creación de conjuntos de imágenes con AEM Dynamic Media.
 
->[!VIDEO](https://video.tv.adobe.com/v/335581?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418209?quality=12&learn=on&captions=spa)

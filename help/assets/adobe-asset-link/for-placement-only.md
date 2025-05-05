@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Descubra cómo crear y utilizar una representación de Solo para ubicación (FPO) para recursos de AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/34259?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38598?quality=12&learn=on&captions=spa)

@@ -23,7 +23,7 @@ ht-degree: 0%
 
 AEM Assets proporciona un sistema de informes de nivel empresarial que se adapta a repositorios grandes mediante una experiencia de usuario intuitiva.
 
->[!VIDEO](https://video.tv.adobe.com/v/22140?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410280?quality=12&learn=on&captions=spa)
 
 
 >[!IMPORTANT]

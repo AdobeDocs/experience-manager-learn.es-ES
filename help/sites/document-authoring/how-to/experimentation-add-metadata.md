@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Explore la adición de metadatos para la experimentación en la creación de documentos de Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428796/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3440108/?learn=on&captions=spa)

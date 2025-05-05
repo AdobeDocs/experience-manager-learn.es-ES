@@ -23,4 +23,4 @@ ht-degree: 9%
 
 Descubra cómo las colecciones proporcionan una vista alternativa a los AEM Assets.
 
->[!VIDEO](https://video.tv.adobe.com/v/32053?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36874?quality=12&learn=on&captions=spa)

@@ -20,7 +20,7 @@ ht-degree: 1%
 
 AEM 6.3 Forms presenta la capacidad de permitir a los usuarios crear casos de prueba en AEM para Forms adaptable mediante Calvin SDK creado sobre el marco de trabajo hobbes.js.
 
->[!VIDEO](https://video.tv.adobe.com/v/19700?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40153?quality=12&learn=on&captions=spa)
 
 >[!NOTE]
 >

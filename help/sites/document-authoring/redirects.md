@@ -25,4 +25,4 @@ ht-degree: 4%
 
 Una profundización en cómo funcionan las redirecciones en la creación de documentos y cómo los autores pueden configurar fácilmente redirecciones sin experiencia técnica.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425704/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438546/?learn=on&captions=spa)

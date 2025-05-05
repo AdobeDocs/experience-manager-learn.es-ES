@@ -30,7 +30,7 @@ Cuando esté creando una variable de tipo JSON para capturar los datos enviados 
 
 Puede asignar el esquema con la variable de tipo JSON en el modelo de flujo de trabajo. A continuación, puede utilizar el explorador de esquemas para asignar los elementos de esquema con las variables de cadena/número del modelo de flujo de trabajo
 
->[!VIDEO](https://video.tv.adobe.com/v/28097?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35331?quality=12&learn=on&captions=spa)
 
 Para que los recursos funcionen en el sistema, siga estos pasos:
 

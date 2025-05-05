@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Explore cómo utilizar flujos de trabajo de documentos con la creación de documentos de AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425720/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438293/?learn=on&captions=spa)

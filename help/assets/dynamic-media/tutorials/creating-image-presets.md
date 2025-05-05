@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Este vídeo muestra los pasos para crear ajustes preestablecidos de imagen en Dynamic Media.
 
->[!VIDEO](https://video.tv.adobe.com/v/335459?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418239?quality=12&learn=on&captions=spa)

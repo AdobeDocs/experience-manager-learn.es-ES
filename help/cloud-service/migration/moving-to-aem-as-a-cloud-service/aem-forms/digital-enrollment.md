@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Descubra cómo AEM Forms as a Cloud Service es compatible con el caso de uso de la inscripción digital.
 
->[!VIDEO](https://video.tv.adobe.com/v/336966?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3455137?quality=12&learn=on&captions=spa)

@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Consiga una puntuación de 100 compras con la optimización de consultas y búsquedas cuando se trata de grandes cantidades de registros. Trabaje con técnicas para optimizar el índice de consultas, mejorar la funcionalidad de búsqueda y dividir los índices de consultas para obtener la mejor optimización del rendimiento
 
->[!VIDEO](https://video.tv.adobe.com/v/3440976/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3440981/?learn=on&enablevpops&captions=spa)

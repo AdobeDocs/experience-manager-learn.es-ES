@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Agregue paneles secundarios al panel raíz y configure el diseño de los paneles secundarios.
 
->[!VIDEO](https://video.tv.adobe.com/v/332238?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447279?quality=12&learn=on&captions=spa)

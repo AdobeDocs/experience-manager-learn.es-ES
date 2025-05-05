@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Explore cómo se pueden combinar varios proyectos en uno único para su implementación en AEM as a Cloud Service mediante Cloud Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/330535?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345856?quality=12&learn=on&captions=spa)

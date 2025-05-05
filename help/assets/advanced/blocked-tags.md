@@ -23,4 +23,4 @@ ht-degree: 6%
 
 Aprenda a mejorar la administración de recursos en AEM as a Cloud Service mediante el uso de etiquetas bloqueadas para evitar la aplicación de etiquetas inteligentes culturalmente sensibles, irrelevantes o controvertidas.
 
->[!VIDEO](https://video.tv.adobe.com/v/3426839/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448503/?learn=on&captions=spa)

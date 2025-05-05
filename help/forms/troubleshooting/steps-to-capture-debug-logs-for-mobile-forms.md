@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Este vídeo explica los pasos para capturar los registros de depuración de los formularios móviles.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335516?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438590?quality=12&learn=on&captions=spa)

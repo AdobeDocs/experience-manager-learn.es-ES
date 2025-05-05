@@ -22,4 +22,4 @@ ht-degree: 0%
 
 *Este vídeo muestra los pasos para modificar los parámetros de la consola JMX.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335554?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438403?quality=12&learn=on&captions=spa)

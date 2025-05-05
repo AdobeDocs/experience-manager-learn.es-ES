@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Explore técnicas para desarrollar en Edge Delivery Services con un arquitecto experimentado. Kiran te guiará por muchos de los problemas que ha enfrentado en los proyectos y cómo resolverlos.
 
->[!VIDEO](https://video.tv.adobe.com/v/3440978/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3441003/?learn=on&enablevpops&captions=spa)

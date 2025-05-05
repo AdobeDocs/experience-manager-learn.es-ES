@@ -21,4 +21,4 @@ ht-degree: 0%
 
 AEM AEM AEM Explore cómo crear un nuevo proyecto de aplicación de utilizando el tipo de archivo del proyecto Maven, para alinearse con las prácticas recomendadas y acelerar el inicio del desarrollo de la.
 
->[!VIDEO](https://video.tv.adobe.com/v/330551?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345908?quality=12&learn=on&captions=spa)

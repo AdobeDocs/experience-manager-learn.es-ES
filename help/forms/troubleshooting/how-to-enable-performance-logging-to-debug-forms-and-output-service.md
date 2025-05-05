@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Este vídeo muestra el proceso para habilitar el inicio de sesión de rendimiento en AEM Forms para depurar los problemas relacionados con Forms y el servicio de salida.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335499?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439718?quality=12&learn=on&captions=spa)

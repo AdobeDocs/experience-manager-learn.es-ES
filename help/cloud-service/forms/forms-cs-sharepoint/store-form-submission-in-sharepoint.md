@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Obtenga información sobre cómo configurar y almacenar datos de formularios adaptables en Microsoft Sharepoint.
 
->[!VIDEO](https://video.tv.adobe.com/v/3415793/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3452527/?quality=12&learn=on&captions=spa)

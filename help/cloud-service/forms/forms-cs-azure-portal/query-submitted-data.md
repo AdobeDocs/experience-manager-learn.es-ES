@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Obtenga información sobre cómo consultar datos de formularios adaptables en Azure Blob Storage mediante el servicio de metadatos de AEM Forms.
 
->[!VIDEO](https://video.tv.adobe.com/v/335717?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3419014?quality=12&learn=on&captions=spa)

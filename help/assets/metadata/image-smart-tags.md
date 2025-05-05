@@ -23,14 +23,14 @@ ht-degree: 6%
 
 Las etiquetas inteligentes para imágenes de los AEM Assets aumentan la búsqueda de los AEM Assets al añadir automáticamente etiquetas de metadatos derivadas a los recursos de imagen, lo que mejora la experiencia de creación al facilitar y acelerar la búsqueda de la imagen correcta.
 
->[!VIDEO](https://video.tv.adobe.com/v/17019?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444057?quality=12&learn=on&captions=spa)
 
 ## Configuración para AEM 6.x{#set-up}
 
 >[!NOTE]
 > Las etiquetas inteligentes para imágenes se aprovisionan automáticamente para AEM as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/17023?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444168?quality=12&learn=on&captions=spa)
 
 Antes de utilizar el servicio de contenido inteligente, asegúrese de lo siguiente para crear una integración en Adobe I/O:
 

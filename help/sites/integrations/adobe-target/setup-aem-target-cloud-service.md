@@ -25,7 +25,7 @@ El siguiente vídeo proporciona información general sobre cómo conectar AEM as
 
 AEM Esta integración permite que el servicio de creación de se comunique directamente con Adobe Target AEM y envíe los fragmentos de experiencia de a Target como ofertas.  Esta integración hace que *not* agregue Adobe Target JavaScript (AT.js) a las páginas web de AEM Sites AEM, para lo cual integra [las etiquetas y que utilizan la extensión de Target](../experience-platform/data-collection/tags/connect-aem-tag-property-using-ims.md).
 
->[!VIDEO](https://video.tv.adobe.com/v/41244?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329015?quality=12&learn=on&captions=spa)
 
 >[!CAUTION]
 >

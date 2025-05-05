@@ -24,5 +24,5 @@ ht-degree: 0%
 
 Aprenda a utilizar plantillas de solicitud para Generar variaciones en la creación de documentos de Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428307/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441333/?learn=on&captions=spa)
 

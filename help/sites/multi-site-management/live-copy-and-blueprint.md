@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Comprenda la relación entre una Live Copy y su modelo en AEM Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/36676?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41574?quality=12&learn=on&captions=spa)

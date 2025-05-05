@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Este vídeo explica los pasos para habilitar el seguimiento de seguimiento en la configuración de Unix para AEM Forms PDFG.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335525?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417635?quality=12&learn=on&captions=spa)

@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Descubra cómo el vínculo de uso compartido de AEM Assets permite a los usuarios compartir recursos con partes interesadas internas y externas, al mismo tiempo que minimiza el riesgo de compartir recursos o información incorrectos.
 
->[!VIDEO](https://video.tv.adobe.com/v/341025?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345005?quality=12&learn=on&captions=spa)

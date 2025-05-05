@@ -23,7 +23,7 @@ ht-degree: 3%
 
 Explore cómo integrar AEM Assets con la creación de documentos para ofrecer experiencias excepcionales con Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428302/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448943/?quality=12&learn=on&captions=spa)
 
 
 ## Recursos adicionales

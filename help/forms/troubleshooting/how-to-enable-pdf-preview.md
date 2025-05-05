@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Este vídeo muestra los pasos para habilitar la vista previa de PDF en Designer.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335500?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417684?quality=12&learn=on&captions=spa)

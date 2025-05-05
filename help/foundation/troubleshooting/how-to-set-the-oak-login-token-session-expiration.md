@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Este vídeo muestra los pasos para establecer la caducidad de la sesión del token de inicio de sesión de Oak.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335468?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418251?quality=12&learn=on&captions=spa)

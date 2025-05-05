@@ -22,4 +22,4 @@ ht-degree: 0%
 
 [Los entornos de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=es) están compuestos por los servicios de AEM Author, AEM Publish y Dispatcher. Los distintos entornos admiten diferentes funciones y se pueden utilizar con diferentes canalizaciones de CD/CI. Los entornos de Cloud Manager suelen tener un entorno de producción, un entorno de ensayo y un entorno de desarrollo.
 
->[!VIDEO](https://video.tv.adobe.com/v/26318?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34623?quality=12&learn=on&captions=spa)

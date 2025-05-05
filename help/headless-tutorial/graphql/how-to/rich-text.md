@@ -533,7 +533,7 @@ Se puede encontrar un ejemplo completo de cómo escribir un procesador de refere
 
 ## Ejemplo de extremo a extremo
 
->[!VIDEO](https://video.tv.adobe.com/v/342105?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449703?quality=12&learn=on&captions=spa)
 
 >[!NOTE]
 >

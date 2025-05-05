@@ -22,4 +22,4 @@ ht-degree: 0%
 
 *Este vídeo muestra los pasos para modificar el tamaño del grupo bmc para XMLFormService(1 de 2).*
 
->[!VIDEO](https://video.tv.adobe.com/v/335552?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438667?quality=12&learn=on&captions=spa)

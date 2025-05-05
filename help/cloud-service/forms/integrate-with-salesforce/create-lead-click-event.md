@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Cree un formulario adaptable basado en el modelo de datos de formulario de la fuerza de ventas y pruebe la creación de un posible cliente en Salesforce con el evento de clic de un botón
 
->[!VIDEO](https://video.tv.adobe.com/v/331892?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3411579?quality=12&learn=on&captions=spa)

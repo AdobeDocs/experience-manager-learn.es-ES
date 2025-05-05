@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Obtenga información sobre cómo solucionar problemas y depurar el SDK de AEM, AEM as a Cloud Service y el proceso de compilación e implementación.
 
->[!VIDEO](https://video.tv.adobe.com/v/336964?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454662?quality=12&learn=on&captions=spa)

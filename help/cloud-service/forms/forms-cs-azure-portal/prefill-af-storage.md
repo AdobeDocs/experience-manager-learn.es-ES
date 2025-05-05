@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Aprenda a utilizar el servicio de relleno previo de AEM Forms para rellenar formularios adaptables desde el almacenamiento del blob de Azure.
 
->[!VIDEO](https://video.tv.adobe.com/v/335714?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418944?quality=12&learn=on&captions=spa)

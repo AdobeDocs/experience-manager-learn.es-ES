@@ -24,7 +24,7 @@ ht-degree: 14%
 
 Obtenga información sobre cómo realizar operaciones básicas de administración de páginas en una página de Adobe Experience Manager Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/32147?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37201?quality=12&learn=on&captions=spa)
 
 
 ## Recursos adicionales {#additional-resources}

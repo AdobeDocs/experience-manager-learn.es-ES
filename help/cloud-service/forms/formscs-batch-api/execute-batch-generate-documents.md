@@ -32,4 +32,4 @@ Una solicitud GET a esta URL única le indicará el estado de ejecución del lot
 
 El siguiente vídeo muestra la activación de la configuración por lotes
 
->[!VIDEO](https://video.tv.adobe.com/v/340242?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343705?quality=12&learn=on&captions=spa)

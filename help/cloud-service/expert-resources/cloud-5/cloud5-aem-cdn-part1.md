@@ -22,7 +22,7 @@ ht-degree: 3%
 
 Se trata de una explicación exhaustiva de la CDN proporcionada como parte de AEM as a Cloud Service, incluido de lo que es capaz y si debe traer su propia CDN. Esta es la parte 1 de 2.
 
->[!VIDEO](https://video.tv.adobe.com/v/340760?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447840?quality=12&learn=on&captions=spa)
 
 ## Contenido cubierto en la primera parte de esta serie
 

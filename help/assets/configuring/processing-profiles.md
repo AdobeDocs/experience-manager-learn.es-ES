@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Los perfiles de procesamiento definen las representaciones que se crearán para los recursos en AEM as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/35597?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40081?quality=12&learn=on&captions=spa)

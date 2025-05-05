@@ -28,4 +28,4 @@ En este vídeo:
 + Obtenga información sobre cómo vincular profundamente a otros fragmentos de contenido dentro de un campo de texto enriquecido
 + Crear consultas de GraphQL que devuelvan datos de fragmentos de contenido referenciados
 
->[!VIDEO](https://video.tv.adobe.com/v/332859?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3412898?quality=12&learn=on&captions=spa)

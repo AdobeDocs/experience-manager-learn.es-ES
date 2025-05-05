@@ -47,11 +47,11 @@ Los datos del formulario adaptable se almacenan en el elemento de datos como se 
 
 **Asignación de una variable XML con esquema. Usar esta capacidad con AEM Forms 6.5.1 y versiones posteriores**
 
->[!VIDEO](https://video.tv.adobe.com/v/28098?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35333?quality=12&learn=on&captions=spa)
 
 #### Uso de la variable en el correo electrónico de envío
 
->[!VIDEO](https://video.tv.adobe.com/v/26441?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35334?quality=12&learn=on&captions=spa)
 
 Para que los recursos funcionen en el sistema, siga estos pasos:
 

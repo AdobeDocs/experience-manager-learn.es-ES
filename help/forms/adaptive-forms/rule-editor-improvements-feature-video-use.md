@@ -22,7 +22,7 @@ ht-degree: 0%
 
 El editor de reglas permite a los usuarios añadir lógica al Forms adaptable de AEM. AEM 6.3 mejora el editor de reglas de varias formas, lo que facilita y acelera que los usuarios técnicos y no técnicos añadan inteligencia.
 
->[!VIDEO](https://video.tv.adobe.com/v/19653?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/39210?quality=12&learn=on&captions=spa)
 
 **Algunas de las mejoras realizadas en el Editor de reglas incluyen:**
 

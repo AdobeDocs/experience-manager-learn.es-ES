@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Obtenga información acerca de la modernización de repositorios, el contenido mutable e inmutable, la estructura de los paquetes y la herramienta CLI de modernización de repositorios.
 
->[!VIDEO](https://video.tv.adobe.com/v/336958?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454795?quality=12&learn=on&captions=spa)
 
 ## Herramienta Modernizador de repositorio
 

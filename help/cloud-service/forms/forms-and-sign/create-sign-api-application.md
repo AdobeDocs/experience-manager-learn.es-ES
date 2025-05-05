@@ -25,4 +25,4 @@ ht-degree: 1%
 
 Debe crear una aplicación API en el Acrobat Sign para integrarla con la plataforma del Acrobat Sign. La aplicación API actúa como representante de una aplicación cliente e interactúa con la plataforma de Acrobat Sign. Puede crear la aplicación API en el dominio del cliente o del socio.
 
->[!VIDEO](https://video.tv.adobe.com/v/332436?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3411761?quality=12&learn=on&captions=spa)

@@ -20,4 +20,4 @@ ht-degree: 0%
 
 *Este vídeo explica los pasos para habilitar el registro de depuración para cualquier clase en el servidor de aplicaciones JBoss.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335522?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417706?quality=12&learn=on&captions=spa)

@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Obtenga información sobre cómo utilizar recursos de AEM Assets mediante la operación Colocar vínculo.
 
->[!VIDEO](https://video.tv.adobe.com/v/34839?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38607?quality=12&learn=on&captions=spa)

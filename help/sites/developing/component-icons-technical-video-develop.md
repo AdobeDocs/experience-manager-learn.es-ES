@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Los iconos de componente permiten a los autores identificar rápidamente un componente con iconos o abreviaturas significativas. Los autores ahora pueden encontrar los componentes necesarios para crear sus experiencias web más rápido que nunca.
 
->[!VIDEO](https://video.tv.adobe.com/v/16778?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38291?quality=12&learn=on&captions=spa)
 
 El navegador de componentes ahora se muestra en un tema gris coherente, que muestra lo siguiente:
 

@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Este vídeo muestra los pasos adicionales para comprobar el permiso de carpeta en Windows Server 2016.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335519?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417209?quality=12&learn=on&captions=spa)

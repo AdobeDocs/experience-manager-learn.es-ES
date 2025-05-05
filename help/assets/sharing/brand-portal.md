@@ -29,7 +29,7 @@ En septiembre de 2019, Brand Portal presenta de forma más destacada el abasteci
 
 El abastecimiento de recursos de Brand Portal se utiliza para recopilar recursos de agencias y equipos de terceros, sincronizándolos sin problemas con el autor de Experience Manager para su revisión y uso.
 
->[!VIDEO](https://video.tv.adobe.com/v/29365?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32891?quality=12&learn=on&captions=spa)
 
 Se requiere *Experience Manager Author 6.5 SP2 (6.5.2) o superior para usar el Abastecimiento de recursos*
 
@@ -37,7 +37,7 @@ Revise [Habilitar el autor de Experience Manager para el abastecimiento de recur
 
 ## Funciones y mejoras de Brand Portal de febrero de 2019{#brand-portal-features-and-enhancements-644}
 
->[!VIDEO](https://video.tv.adobe.com/v/26354?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41093?quality=12&learn=on&captions=spa)
 
 La versión de febrero de 2019 de Brand Portal se centra en las mejoras en la búsqueda de texto y en las solicitudes de los clientes principales.
 
@@ -165,7 +165,7 @@ Brand Portal usa la interfaz de Adobe I/O [https://legacy-oauth.cloud.adobe.io/]
 
 Las nuevas funciones mejoraron la funcionalidad orientada a alinear Brand Portal con AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/26354?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41093?quality=12&learn=on&captions=spa)
 
 ### Mejoras de navegación
 

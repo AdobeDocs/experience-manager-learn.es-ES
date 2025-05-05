@@ -21,4 +21,4 @@ ht-degree: 0%
 
 AEM Un vistazo rápido a la estructura y los subproyectos de un proyecto de Maven de la y para qué se utilizan.
 
->[!VIDEO](https://video.tv.adobe.com/v/334280?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417164?quality=12&learn=on&captions=spa)

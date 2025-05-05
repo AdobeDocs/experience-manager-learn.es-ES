@@ -22,4 +22,4 @@ ht-degree: 0%
 
 El siguiente vídeo lo acompaña durante los pasos para crear y configurar el modelo de datos de formulario.
 
->[!VIDEO](https://video.tv.adobe.com/v/340790?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444795?quality=12&learn=on&captions=spa)

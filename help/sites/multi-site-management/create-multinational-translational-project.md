@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Aprenda a crear, editar y administrar un proyecto de traducción en varios idiomas para su copia de idioma desde la consola Proyecto de AEM
 
->[!VIDEO](https://video.tv.adobe.com/v/36485?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326743?quality=12&learn=on&captions=spa)

@@ -23,4 +23,4 @@ ht-degree: 9%
 
 Aprenda a utilizar Omnisearch de AEM para descubrir recursos rápidamente.
 
->[!VIDEO](https://video.tv.adobe.com/v/32054?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37014?quality=12&learn=on&captions=spa)

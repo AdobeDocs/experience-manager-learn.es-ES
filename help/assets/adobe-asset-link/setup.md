@@ -26,7 +26,7 @@ Lleve el impacto rápido a su organización, facilitando a los equipos creativos
 
 Obtenga información sobre cómo configurar Adobe Asset Link para AEM as a Cloud Service, configurar las autorizaciones de usuario y AEM as a Cloud Service, y cómo instalar y utilizar Adobe Asset Link.
 
->[!VIDEO](https://video.tv.adobe.com/v/338824?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343258?quality=12&learn=on&captions=spa)
 
 No se muestra en el vídeo anterior, Adobe Asset Link se puede agregar a través de la opción __Paquete administrado__ del administrador de paquetes de Creative Cloud:
 
@@ -37,11 +37,11 @@ No se muestra en el vídeo anterior, Adobe Asset Link se puede agregar a través
 
 Obtenga información sobre cómo configurar Adobe Asset Link para AEM 6 y ejecutarlo en Adobe Managed Services o On-Premise, configurar las autorizaciones de usuario y AEM as a Cloud Service, y cómo instalar y utilizar Adobe Asset Link.
 
->[!VIDEO](https://video.tv.adobe.com/v/338823?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3434112?quality=12&learn=on&captions=spa)
 
 
 ## Configuración de Asset Link para la confianza de dominio
 
 Descubra qué es la confianza de dominio, qué significa para utilizar Adobe Asset Link con Experience Manager Assets y cómo configurar la confianza de dominio.
 
->[!VIDEO](https://video.tv.adobe.com/v/338825?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454146?quality=12&learn=on&captions=spa)

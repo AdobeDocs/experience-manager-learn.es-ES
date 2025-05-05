@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Mejoras en el editor de temáticas para formularios adaptables en AEM 6.3
 
->[!VIDEO](https://video.tv.adobe.com/v/19497?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/39215?quality=12&learn=on&captions=spa)
 
 >[!NOTE]
 >

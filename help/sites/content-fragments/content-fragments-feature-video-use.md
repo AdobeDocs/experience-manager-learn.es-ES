@@ -36,13 +36,13 @@ Esta serie de vídeos cubre el ciclo de vida de creación de fragmentos de conte
 
 ## Definición de los modelos de fragmento de contenido {#defining-content-fragment-models}
 
->[!VIDEO](https://video.tv.adobe.com/v/22452?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38047?quality=12&learn=on&captions=spa)
 
 Los modelos de fragmentos de contenido de AEM, los esquemas de datos de los fragmentos de contenido, deben habilitarse mediante el [[!UICONTROL Explorador de configuración]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html?lang=es) de AEM, que permite definir los modelos de fragmentos de contenido según la configuración.
 
 ## Creación de fragmentos de contenido {#creating-content-fragments}
 
->[!VIDEO](https://video.tv.adobe.com/v/22451?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38052?quality=12&learn=on&captions=spa)
 
 Las configuraciones de AEM se aplican a las jerarquías de carpetas de los AEM Assets para permitir que sus modelos de fragmentos de contenido se creen como fragmentos de contenido. Los fragmentos de contenido admiten una experiencia de creación enriquecida basada en formularios que permite modelar el contenido como una colección de elementos.
 
@@ -53,7 +53,7 @@ Los fragmentos de contenido pueden tener varias variantes, cada una de las cuale
 
 ## Descarga de fragmentos de contenido {#downloading-content-fragments}
 
->[!VIDEO](https://video.tv.adobe.com/v/22450?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38056?quality=12&learn=on&captions=spa)
 
 Los fragmentos de contenido de AEM se pueden descargar desde AEM Author como archivo Zip que contiene variantes, elementos y metadatos.
 
@@ -62,7 +62,7 @@ Los fragmentos de contenido de AEM se pueden descargar desde AEM Author como arc
 
 ## Funciones editoriales de fragmentos de contenido {#editorial-capabilities}
 
->[!VIDEO](https://video.tv.adobe.com/v/25891?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/39653?quality=12&learn=on&captions=spa)
 
 >[!NOTE]
 >

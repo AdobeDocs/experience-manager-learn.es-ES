@@ -22,4 +22,4 @@ ht-degree: 0%
 
 El siguiente vídeo lo acompaña durante los pasos para crear una configuración de servicios en la nube para conectarse con Microsoft Dynamics.
 
->[!VIDEO](https://video.tv.adobe.com/v/340758?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448301?quality=12&learn=on&captions=spa)

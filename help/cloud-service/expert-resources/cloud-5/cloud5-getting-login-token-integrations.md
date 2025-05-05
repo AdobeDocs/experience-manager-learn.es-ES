@@ -20,7 +20,7 @@ ht-degree: 1%
 
 Una guía detallada sobre cómo obtener un token de inicio de sesión para integraciones de Cloud Service y algunos casos de uso para hacerlo.
 
->[!VIDEO](https://video.tv.adobe.com/v/341277?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448640?quality=12&learn=on&captions=spa)
 
 ## Contenido cubierto en este vídeo
 

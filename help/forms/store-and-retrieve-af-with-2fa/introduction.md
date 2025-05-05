@@ -31,7 +31,7 @@ Este tutorial le guiará por los pasos necesarios para guardar y recuperar datos
 
 ## Muestra del caso de uso
 
->[!VIDEO](https://video.tv.adobe.com/v/327122?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/346928?quality=12&learn=on&captions=spa)
 
 ## Requisitos previos
 

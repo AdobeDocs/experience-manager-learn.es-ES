@@ -18,6 +18,6 @@ ht-degree: 0%
 
 Obtenga información sobre cómo instalar y ejecutar una instancia local de Adobe Experience Manager en solo unos minutos con el Jar de inicio rápido de AEM. El JAR de inicio rápido de AEM es un motor en tiempo de ejecución de AEM que se puede instalar y ejecutar en un equipo local.
 
->[!VIDEO](https://video.tv.adobe.com/v/32551?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36899?quality=12&learn=on&captions=spa)
 
 Para una configuración más detallada

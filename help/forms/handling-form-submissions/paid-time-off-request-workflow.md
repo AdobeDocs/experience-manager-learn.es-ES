@@ -31,11 +31,11 @@ Para cumplir el requisito anterior, se utiliza un campo oculto denominado **init
 
 **Configurar formulario para almacenar en Déclencheur el flujo de trabajo de AEM**
 
->[!VIDEO](https://video.tv.adobe.com/v/28406?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33132?quality=12&learn=on&captions=spa)
 
 **Recorrido del flujo de trabajo**
 
->[!VIDEO](https://video.tv.adobe.com/v/28407?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33133?quality=12&learn=on&captions=spa)
 
 **Vista del remitente del formulario de solicitud de tiempo libre**
 

@@ -24,7 +24,7 @@ ht-degree: 1%
 
 Obtenga información sobre cómo crear una propiedad Tag con la configuración mínima para integrarla con Adobe Experience Manager. Los usuarios se familiarizan con la interfaz de usuario de etiquetas y con las extensiones, las reglas y los flujos de trabajo de publicación.
 
->[!VIDEO](https://video.tv.adobe.com/v/38553?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327457?quality=12&learn=on&captions=spa)
 
 ## Creación de propiedades de etiquetas
 

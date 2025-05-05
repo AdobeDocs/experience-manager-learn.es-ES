@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Obtenga información sobre cómo auditar documentos creados con la creación de documentos de AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425722/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437714/?learn=on&captions=spa)

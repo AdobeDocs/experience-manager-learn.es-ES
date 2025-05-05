@@ -36,7 +36,7 @@ Revise las herramientas y las instrucciones necesarias para configurar un [entor
 
 ## Lo que va a generar {#what-build}
 
->[!VIDEO](https://video.tv.adobe.com/v/30152?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35883?quality=12&learn=on&captions=spa)
 
 En este capítulo, se genera un nuevo proyecto de Adobe Experience Manager con el [Arquetipo de proyecto de AEM](https://github.com/adobe/aem-project-archetype). El proyecto de AEM contiene código, contenido y configuraciones completos utilizados para una implementación de Sites. El proyecto generado en este capítulo sirve de base para una implementación del sitio WKND y se basa en capítulos futuros.
 

@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Este vídeo muestra el proceso de agregar usuarios y grupos en Administración de usuarios.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335485?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417655?quality=12&learn=on&captions=spa)

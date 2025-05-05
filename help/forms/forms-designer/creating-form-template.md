@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Hay varias plantillas listas para usar que puede usar tal cual o personalizar a su gusto. Las plantillas también se pueden crear y administrar dentro de AEM Forms Designer. Puede empezar con una página, plantilla, hoja de cálculo, PDF o archivo de Microsoft Word en blanco. Este vídeo abarca todas estas opciones y lo que está disponible de forma predeterminada
 
->[!VIDEO](https://video.tv.adobe.com/v/3427678/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439151/?learn=on&captions=spa)

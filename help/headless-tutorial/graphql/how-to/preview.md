@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Las aplicaciones sin encabezado de AEM admiten la previsualización de creación integrada. La experiencia de vista previa vincula el editor de fragmentos de contenido del autor de AEM con su aplicación personalizada (a la que se puede dirigir mediante HTTP), lo que permite establecer un vínculo profundo en la aplicación que procesa el fragmento de contenido que se está previsualizando.
 
->[!VIDEO](https://video.tv.adobe.com/v/3416906?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449591?quality=12&learn=on&captions=spa)
 
 Para utilizar la vista previa de fragmentos de contenido, se deben cumplir varias condiciones:
 

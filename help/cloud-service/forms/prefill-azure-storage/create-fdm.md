@@ -22,7 +22,7 @@ ht-degree: 6%
 El siguiente paso es crear la integración entre AEM Forms CS y Azure Storage mediante el modelo de datos de formulario.
 El siguiente vídeo lo acompaña durante los pasos necesarios para crear la integración.
 
->[!VIDEO](https://video.tv.adobe.com/v/335385?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3419019?quality=12&learn=on&captions=spa)
 
 Para los fines de este tutorial, se creó un modelo de datos de formulario denominado SaveAndRetrieveFromAzurePortal con una entidad denominada CreditApplications
 ![fdm-entity](./assets/fdm-entity.png)

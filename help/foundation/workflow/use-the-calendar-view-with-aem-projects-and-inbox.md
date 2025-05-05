@@ -20,7 +20,7 @@ ht-degree: 0%
 
 La vista Calendario de AEM realiza un seguimiento de los proyectos y las tareas en una vista Calendario para facilitar la gestión y la programación de los proyectos. Con la vista Calendario, el usuario tendría una visibilidad general de los proyectos y las tareas que están actualmente en curso, planificados, con vencimiento pronto y con vencimiento anterior.
 
->[!VIDEO](https://video.tv.adobe.com/v/16804?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37989?quality=12&learn=on&captions=spa)
 
 La vista de calendario ayuda a administrar mejor los proyectos y las tareas con las siguientes capacidades:
 

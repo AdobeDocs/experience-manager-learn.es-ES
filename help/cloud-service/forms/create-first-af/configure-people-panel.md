@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Agregue el fragmento de detalles del cónyuge al panel personas.
 
->[!VIDEO](https://video.tv.adobe.com/v/332234?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3424912?quality=12&learn=on&captions=spa)

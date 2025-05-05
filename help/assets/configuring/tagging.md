@@ -23,4 +23,4 @@ ht-degree: 3%
 
 Las etiquetas son una herramienta integral para administrar recursos en la jerarquía de carpetas de Assets. El establecimiento de una taxonomía de etiquetado es fundamental para que los usuarios puedan descubrir y organizar los recursos en AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/34073?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37312?quality=12&learn=on&captions=spa)

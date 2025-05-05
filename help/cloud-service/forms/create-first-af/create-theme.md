@@ -23,4 +23,4 @@ ht-degree: 18%
 
 Una temática contiene detalles de estilo para componentes y paneles y se puede reutilizar en diferentes formularios. Los estilos incluyen propiedades como colores de fondo, colores de estado, transparencia, alineación y tamaño. Al aplicar la temática al formulario, el estilo especificado se refleja en los componentes correspondientes del formulario.
 
->[!VIDEO](https://video.tv.adobe.com/v/332229?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3424880?quality=12&learn=on&captions=spa)

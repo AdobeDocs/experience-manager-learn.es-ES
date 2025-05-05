@@ -25,7 +25,7 @@ En esta parte, crearemos el modelo de datos de formulario. El modelo de datos de
 
 **Creando modelo de datos de formulario en AEM Forms 6.5 y versiones posteriores**
 
->[!VIDEO](https://video.tv.adobe.com/v/27765?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34441?quality=12&learn=on&captions=spa)
 
 El modelo de datos de formulario depende de un Source de datos configurado correctamente. Utilizaremos la Source de datos configurada en el paso anterior como base para este modelo de datos de formulario.
 

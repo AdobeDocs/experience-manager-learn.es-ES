@@ -30,19 +30,19 @@ Una introducción rápida a los programas de Cloud Manager y Cloud Manager.
 >
 >A lo largo de estos vídeos, los tiempos de compilación, prueba e implementación se han acelerado para reducir el tiempo del vídeo. AEM Una ejecución completa de la canalización suele tardar 45 minutos o más (incluidas las pruebas de rendimiento obligatorias de 30 minutos), según el tamaño del proyecto, el número de instancias de y los procesos de UAT.
 
->[!VIDEO](https://video.tv.adobe.com/v/23082?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/39312?quality=12&learn=on&captions=spa)
 
 ## Configuración de la canalización de CI/CD
 
 En este vídeo se explica la configuración de la canalización para el programa en Cloud Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/23083?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/39344?quality=12&learn=on&captions=spa)
 
 ## Ejecución fallida de una canalización
 
 Este vídeo explora la ejecución de la canalización de CI/CD mediante código que falla en las comprobaciones de calidad requeridas por Cloud Manager, utilizando la rama del repositorio **[!DNL yellow]**.
 
->[!VIDEO](https://video.tv.adobe.com/v/23084?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/39354?quality=12&learn=on&captions=spa)
 
 ## Una ejecución correcta de la canalización
 
@@ -50,7 +50,7 @@ En este vídeo se analiza la ejecución correcta de la canalización de CI/CD me
 
 Este vídeo también trata sobre la consola [!UICONTROL Activity] en Cloud Manager, que permite volver a entrar en ejecuciones activas o revisar las ejecuciones completadas o fallidas.
 
->[!VIDEO](https://video.tv.adobe.com/v/23085?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/39359?quality=12&learn=on&captions=spa)
 
 ## Materiales de apoyo
 

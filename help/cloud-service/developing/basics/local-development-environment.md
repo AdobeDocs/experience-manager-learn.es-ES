@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Obtenga información sobre cómo descargar y configurar un entorno de desarrollo local con el SDK de AEM as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/330558?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345879?quality=12&learn=on&captions=spa)
 
 AEM _El `license.properties` que se muestra en este vídeo ya no es necesario para ejecutar el SDK de la._
 

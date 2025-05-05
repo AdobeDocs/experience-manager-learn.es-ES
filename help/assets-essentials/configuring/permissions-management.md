@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Descubra cómo la administración de permisos de AEM Assets permite a las organizaciones controlar el acceso a los recursos, proteger su marca y garantizar el cumplimiento de las normas.
 
->[!VIDEO](https://video.tv.adobe.com/v/342113?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345458?quality=12&learn=on&captions=spa)

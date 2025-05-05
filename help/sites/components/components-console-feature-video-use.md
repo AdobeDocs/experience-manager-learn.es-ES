@@ -20,7 +20,7 @@ ht-degree: 1%
 
 La consola Componentes proporciona a los desarrolladores y administradores una ubicación central para administrar todos los componentes de una implementación de Sites. El siguiente vídeo detalla las funciones de la consola Componentes.
 
->[!VIDEO](https://video.tv.adobe.com/v/17417?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38281?quality=12&learn=on&captions=spa)
 
 La consola Componentes proporciona las siguientes funciones:
 

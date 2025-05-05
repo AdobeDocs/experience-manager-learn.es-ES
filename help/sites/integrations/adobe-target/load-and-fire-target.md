@@ -24,7 +24,7 @@ ht-degree: 1%
 
 Obtenga información sobre cómo cargar, pasar parámetros a una solicitud de página y activar una llamada de Target desde la página del sitio mediante una regla de etiquetas. La información de la página web se recupera y pasa como parámetros mediante la capa de datos del cliente de Adobe, que permite recopilar y almacenar datos sobre la experiencia de los visitantes en una página web y, a continuación, facilitar el acceso a estos datos.
 
->[!VIDEO](https://video.tv.adobe.com/v/41243?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/328998?quality=12&learn=on&captions=spa)
 
 ## Regla de carga de página
 

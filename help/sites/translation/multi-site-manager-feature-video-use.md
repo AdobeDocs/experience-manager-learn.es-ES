@@ -22,13 +22,13 @@ Información general de Live Copy y Administrador de configuración de modelo so
 
 ## Información general de Live Copy {#live-copy-overview}
 
->[!VIDEO](https://video.tv.adobe.com/v/17054?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38319?quality=12&learn=on&captions=spa)
 
 *Información general de Live Copy es una interfaz de usuario táctil que se usa para administrar Live Copies y sus respectivos modelos. Esta característica, presentada en AEM 6.3, reemplaza al Centro de control del modelo de la interfaz de usuario clásica.*
 
 ## Administrador de configuración de modelo: IU táctil {#blueprint-config-mgr}
 
->[!VIDEO](https://video.tv.adobe.com/v/17056?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37984?quality=12&learn=on&captions=spa)
 
 *AEM 6.3 presenta una interfaz de usuario táctil para administrar las configuraciones del modelo que se usarán en el Administrador de varios sitios.*
 

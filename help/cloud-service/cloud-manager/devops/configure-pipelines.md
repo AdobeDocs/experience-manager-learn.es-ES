@@ -27,4 +27,4 @@ ht-degree: 74%
 
 Explore los diferentes tipos de canalizaciones en Cloud Manager y cómo configurarlas para que su proyecto tenga éxito.
 
->[!VIDEO](https://video.tv.adobe.com/v/330539?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345835?quality=12&learn=on&captions=spa)

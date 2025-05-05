@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Obtenga información sobre cómo ver o administrar la herencia en un sitio o realizar operaciones de despliegue mediante la consola Información general de Live Copy.
 
->[!VIDEO](https://video.tv.adobe.com/v/36680?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326735?quality=12&learn=on&captions=spa)

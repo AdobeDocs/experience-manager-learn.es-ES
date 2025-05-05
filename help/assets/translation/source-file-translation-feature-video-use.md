@@ -25,7 +25,7 @@ Adobe Experience Manager (AEM) Assets permite identificar recursos que comparten
 
 ## Administración de archivos de Source de recursos multisitio {#multisite-asset-source-file-management}
 
->[!VIDEO](https://video.tv.adobe.com/v/18331?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38550?quality=12&learn=on&captions=spa)
 
 Assets relacionado ayuda a los usuarios a administrar mejores recursos de vínculos cruzados con características compartidas, propiedades y flujos de trabajo optimizados:
 

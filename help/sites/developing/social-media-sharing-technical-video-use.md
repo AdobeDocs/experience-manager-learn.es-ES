@@ -20,7 +20,7 @@ ht-degree: 2%
 
 Explore la configuración y el uso del componente Compartir en redes sociales.
 
->[!VIDEO](https://video.tv.adobe.com/v/18897?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/328358?quality=12&learn=on&captions=spa)
 
 Este vídeo explora las siguientes funciones del componente Compartir en redes sociales (parte de [Componentes principales de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)) mediante el sitio web de muestra [We.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail#weretail).
 

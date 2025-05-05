@@ -24,7 +24,7 @@ Las extensiones de la interfaz de usuario de AEM se pueden comprobar con cualqui
 
 La prueba de una extensión se realiza mediante una dirección URL especialmente diseñada que indica a AEM que cargue la extensión, solo para esa solicitud.
 
->[!VIDEO](https://video.tv.adobe.com/v/3412877?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417479?quality=12&learn=on&captions=spa)
 
 >[!IMPORTANT]
 >

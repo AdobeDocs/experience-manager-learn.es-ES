@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Este vídeo muestra los pasos para almacenar en déclencheur el trabajo de exportación en Dynamic Media durante el envío del parámetro de operación de trabajo.
 
->[!VIDEO](https://video.tv.adobe.com/v/335454?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417836?quality=12&learn=on&captions=spa)

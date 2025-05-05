@@ -24,7 +24,7 @@ ht-degree: 2%
 
 Explore las nuevas funciones de IA generativa disponibles en la creación de documentos de AEM Sites. Cubrimos la funcionalidad, la integración con Adobe Firefly y Adobe Express, así como la tecnología utilizada en el back-end, los modelos de datos utilizados y cómo se entrenan estos modelos.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428436/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3451118/?learn=on&captions=spa)
 
 ## Recursos adicionales
 

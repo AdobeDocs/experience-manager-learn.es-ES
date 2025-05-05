@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Explore cómo se crea la creación de documentos utilizando contenido, bloques y mucho más predeterminados.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425701/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438811/?learn=on&captions=spa)

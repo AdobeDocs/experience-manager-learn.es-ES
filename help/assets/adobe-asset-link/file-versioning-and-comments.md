@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Con el panel Adobe Asset Link, puede acceder desde el mismo panel a los detalles de los archivos para los recursos en los AEM Assets como, por ejemplo, miniaturas, metadatos básicos y versiones. Explore cómo crear, previsualizar y comparar versiones de archivos.
 
->[!VIDEO](https://video.tv.adobe.com/v/34048?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38627?quality=12&learn=on&captions=spa)

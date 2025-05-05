@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Breve vídeo que describe cómo agregar una firma manuscrita a AEM Forms
 
->[!VIDEO](https://video.tv.adobe.com/v/3427626/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437323/?learn=on&captions=spa)

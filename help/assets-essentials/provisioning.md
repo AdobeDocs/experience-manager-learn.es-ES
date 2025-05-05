@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Obtenga información sobre cómo implementar Assets Essentials mediante Cloud Manager y proporcionar acceso al usuario.
 
->[!VIDEO](https://video.tv.adobe.com/v/335952?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418813?quality=12&learn=on&captions=spa)

@@ -29,4 +29,4 @@ Obtenga información acerca de las carpetas de proyecto al utilizar el conector 
 + Asignación de metadatos de carpeta
 + Herencia de metadatos de carpeta
 
->[!VIDEO](https://video.tv.adobe.com/v/337586?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454762?quality=12&learn=on&captions=spa)

@@ -27,7 +27,7 @@ Mientras que en AEM 6.x se utilizaban procesos de flujo de trabajo de AEM person
 
 ## Qué va a hacer
 
->[!VIDEO](https://video.tv.adobe.com/v/40965?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410020?quality=12&learn=on&captions=spa)
 
 Este tutorial recorre la creación de un sencillo trabajador de Asset Compute que crea una representación de recursos recortando el recurso original en un círculo y aplica un contraste y un brillo configurables. Aunque el propio trabajador es básico, este tutorial lo utiliza para explorar la creación, el desarrollo y la implementación de un trabajador de Asset Compute personalizado para utilizarlo con AEM as a Cloud Service.
 

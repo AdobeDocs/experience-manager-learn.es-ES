@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Explore cómo configurar el marco de experimentación en la creación de documentos de Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429062/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438931/?learn=on&captions=spa)

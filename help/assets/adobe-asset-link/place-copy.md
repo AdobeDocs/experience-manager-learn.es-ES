@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Obtenga información sobre cómo utilizar recursos de AEM Assets mediante la operación Colocar copia.
 
->[!VIDEO](https://video.tv.adobe.com/v/34049?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38616?quality=12&learn=on&captions=spa)

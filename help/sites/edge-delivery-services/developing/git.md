@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Configure su entorno de desarrollo de Edge Delivery Services con Git.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425718/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441829/?learn=on&captions=spa)

@@ -21,4 +21,4 @@ ht-degree: 0%
 # Administración de la herencia de Live Copy en una página {#manage-live-copy-page}
 
 Obtenga información sobre cómo administrar los datos heredados entre una Live Copy y su modelo a nivel de página.
->[!VIDEO](https://video.tv.adobe.com/v/36679?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41591?quality=12&learn=on&captions=spa)

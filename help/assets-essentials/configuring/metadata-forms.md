@@ -21,4 +21,4 @@ ht-degree: 10%
 
 Descubra cómo se puede configurar Forms de forma rápida y sencilla para adaptar los metadatos de recursos disponibles en los AEM Assets.
 
->[!VIDEO](https://video.tv.adobe.com/v/3431686?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3452050?quality=12&learn=on&captions=spa)

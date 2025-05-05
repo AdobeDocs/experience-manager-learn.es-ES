@@ -28,5 +28,5 @@ En este vídeo:
 + Descubra cómo se pueden utilizar las variaciones en un escenario real
 + Revise la sintaxis de GraphQL para solicitar una variación específica
 
->[!VIDEO](https://video.tv.adobe.com/v/333295?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449323?quality=12&learn=on&captions=spa)
 

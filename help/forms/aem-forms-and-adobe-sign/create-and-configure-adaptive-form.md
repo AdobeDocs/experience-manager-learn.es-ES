@@ -22,7 +22,7 @@ ht-degree: 3%
 
 El siguiente vídeo resalta los pasos necesarios para crear y configurar un formulario adaptable para generar automáticamente el DoR. El vídeo también le guiará por los pasos necesarios para configurar el formulario adaptable para almacenar en déclencheur AEM un flujo de trabajo de.
 
->[!VIDEO](https://video.tv.adobe.com/v/38348?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327812?quality=12&learn=on&captions=spa)
 
 ## Pasos siguientes
 

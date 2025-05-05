@@ -27,7 +27,7 @@ La configuración de servicios en la nube de AEM le permite crear integraciones 
 
 El siguiente vídeo le guiará para crear la configuración de servicios en la nube necesaria para integrar AEM con Acrobat Sign
 
->[!VIDEO](https://video.tv.adobe.com/v/332437?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3411767?quality=12&learn=on&captions=spa)
 
 ## Solución de problemas
 

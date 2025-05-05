@@ -23,7 +23,7 @@ ht-degree: 12%
 
 Obtenga información sobre cómo recibir notificaciones cada vez que se cambia un recurso, una carpeta o una colección vigilados en los AEM Assets.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427646/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439628/?learn=on&captions=spa)
 
 >[!TIP]
 >

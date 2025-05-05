@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Agregar el componente de tabla al panel de ingresos para capturar las fuentes de ingresos del solicitante.
 
->[!VIDEO](https://video.tv.adobe.com/v/332233?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3424923?quality=12&learn=on&captions=spa)

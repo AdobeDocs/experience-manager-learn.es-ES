@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Obtenga información sobre cómo crear versiones de documentos creados con la creación de documentos de AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425728/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438798/?learn=on&captions=spa)

@@ -22,4 +22,4 @@ ht-degree: 0%
 
 *Este vídeo muestra los pasos para habilitar el informe de descarga de recursos.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335463?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418281?quality=12&learn=on&captions=spa)

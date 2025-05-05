@@ -22,7 +22,7 @@ ht-degree: 0%
 
 El Explorador de repositorios es una potente herramienta que proporciona visibilidad sobre el almacén de datos subyacente de AEM, lo que permite depurar fácilmente el entorno de AEM as a Cloud Service. El Explorador de repositorios admite una vista de solo lectura de los recursos y las propiedades de AEM en Producción, Ensayo y Desarrollo, así como los servicios de autor, publicación y vista previa.
 
->[!VIDEO](https://video.tv.adobe.com/v/341464?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447057?quality=12&learn=on&captions=spa)
 
 El Explorador de repositorios está __SOLAMENTE__ disponible en entornos AEM as a Cloud Service (use [CRXDE Lite](../aem-sdk-local-quickstart/other-tools.md#crxde-lite) para depurar el SDK local de AEM).
 

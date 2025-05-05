@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *En este vídeo se describe el proceso de solución de problemas de conversión de PDF Generator para varios usuarios en una instalación de Windows.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335550?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417224?quality=12&learn=on&captions=spa)

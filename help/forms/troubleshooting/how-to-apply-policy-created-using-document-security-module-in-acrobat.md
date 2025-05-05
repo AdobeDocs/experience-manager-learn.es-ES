@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Este vídeo muestra el proceso de aplicación de la directiva creada mediante el módulo de seguridad de documentos en Acrobat.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335486?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417199?quality=12&learn=on&captions=spa)

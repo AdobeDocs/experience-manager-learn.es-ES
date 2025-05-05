@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Aprenda a utilizar las audiencias de archivo CSV para dirigirse a la audiencia correcta con el contenido relevante en la creación de documentos de Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428793/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3436890/?learn=on&captions=spa)

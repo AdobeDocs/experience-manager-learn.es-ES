@@ -23,4 +23,4 @@ ht-degree: 0%
 
 AEM Forms CS tiene la nueva capacidad de almacenar los datos de flujo de trabajo, como variables, archivos adjuntos, etc., en una cuenta de almacenamiento externa. Este vídeo muestra cómo almacenar los datos de flujo de trabajo en Azure Storage
 
->[!VIDEO](https://video.tv.adobe.com/v/339610?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342960?quality=12&learn=on&captions=spa)

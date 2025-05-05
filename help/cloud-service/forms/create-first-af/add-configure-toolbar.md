@@ -23,4 +23,4 @@ ht-degree: 0%
 
 La barra de herramientas se suele agregar en el nivel del contenedor de formularios. La barra de herramientas puede contener botones para desplazarse a los paneles siguiente y anterior del formulario, enviarlo, guardar los datos del formulario, etc.
 
->[!VIDEO](https://video.tv.adobe.com/v/332236?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3424954?quality=12&learn=on&captions=spa)

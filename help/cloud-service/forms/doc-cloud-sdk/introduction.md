@@ -23,4 +23,4 @@ ht-degree: 2%
 
 Introducción al caso de uso para integrar las API de Adobe Experience Manager Forms as a Cloud Service y Document Cloud.
 
->[!VIDEO](https://video.tv.adobe.com/v/333241?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3413003?quality=12&learn=on&captions=spa)

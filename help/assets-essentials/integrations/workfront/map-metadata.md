@@ -25,4 +25,4 @@ ht-degree: 6%
 
 Obtenga información sobre cómo configurar la asignación de metadatos entre campos de Workfront y propiedades de Assets Essentials, así como la configuración de Assets Essentials para mostrar los valores asignados.
 
->[!VIDEO](https://video.tv.adobe.com/v/336458?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3422621?quality=12&learn=on&captions=spa)

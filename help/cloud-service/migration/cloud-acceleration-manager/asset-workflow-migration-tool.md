@@ -21,4 +21,4 @@ ht-degree: 16%
 
 Descubra cómo la herramienta Migración de flujos de trabajo de recursos ayuda a migrar los flujos de trabajo de AEM Assets existentes a AEM as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/336697?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438975?quality=12&learn=on&captions=spa)

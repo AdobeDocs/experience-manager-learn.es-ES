@@ -24,5 +24,5 @@ ht-degree: 0%
 
 Descubra cómo configurar la barra de tareas para Generar variaciones en la creación de documentos de Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428306/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3436990/?learn=on&captions=spa)
 

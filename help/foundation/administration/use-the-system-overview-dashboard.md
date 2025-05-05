@@ -20,7 +20,7 @@ ht-degree: 0%
 
 [!UICONTROL Información general del sistema] de Adobe Experience Manager (AEM) proporciona una vista de alto nivel de la configuración, el hardware y el estado de la instancia de AEM desde un solo tablero.
 
->[!VIDEO](https://video.tv.adobe.com/v/21340?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40159?quality=12&learn=on&captions=spa)
 
 1. Se puede acceder a la Información general del sistema desde: **Inicio de AEM** > **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Información general del sistema]**
 

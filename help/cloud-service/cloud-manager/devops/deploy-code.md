@@ -28,4 +28,4 @@ ht-degree: 68%
 
 Integre el repositorio Git de Cloud Manager con un repositorio Git externo e implemente un proyecto en AEM as a Cloud Service
 
->[!VIDEO](https://video.tv.adobe.com/v/330534?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345863?quality=12&learn=on&captions=spa)

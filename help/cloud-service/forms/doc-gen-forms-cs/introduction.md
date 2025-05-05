@@ -28,4 +28,4 @@ En este curso, utilizaremos los microservicios de generación de documentos para
 1. Configuración del acceso para la cuenta técnica en AEM
 1. Realizar llamadas HTTP mediante el token de acceso
 
->[!VIDEO](https://video.tv.adobe.com/v/334859?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342218?quality=12&learn=on&captions=spa)

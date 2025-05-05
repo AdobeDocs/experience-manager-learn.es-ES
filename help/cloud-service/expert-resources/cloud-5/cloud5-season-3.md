@@ -31,7 +31,7 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
     <tr>
         <td>
             <a href="./season-3/cloud5-3rd-party-search.md">
-                <img alt="Búsqueda de terceros" src="https://video.tv.adobe.com/v/3427040?format=jpeg"/>
+                <img alt="Búsqueda de terceros" src="https://video.tv.adobe.com/v/3452601?format=jpeg&captions=spa"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-3rd-party-search.md">
@@ -45,7 +45,7 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
         </td>   
         <td>
             <a href="./season-3/cloud5-edge-workers.md">
-                <img alt="Trabajadores de Edge" src="https://video.tv.adobe.com/v/3427589?format=jpeg"/>
+                <img alt="Trabajadores de Edge" src="https://video.tv.adobe.com/v/3448120?format=jpeg&captions=spa"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-edge-workers.md">
@@ -59,7 +59,7 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
         </td>   
         <td>
             <a href="./season-3/cloud5-publish-events.md">
-                <img alt="Publish, cancelar la publicación de eventos en Edge Delivery Services" src="https://video.tv.adobe.com/v/3427681?format=jpeg"/>
+                <img alt="Publish, cancelar la publicación de eventos en Edge Delivery Services" src="https://video.tv.adobe.com/v/3446659?format=jpeg&captions=spa"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-publish-events.md">
@@ -75,7 +75,7 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
     <tr>
         <td>
             <a href="./season-3/cloud5-query-indexes.md">
-                <img alt="Índices de consulta y fórmulas de Excel en Edge Delivery Services" src="https://video.tv.adobe.com/v/3427787?format=jpeg"/>
+                <img alt="Índices de consulta y fórmulas de Excel en Edge Delivery Services" src="https://video.tv.adobe.com/v/3453766?format=jpeg&captions=spa"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-query-indexes.md">
@@ -89,7 +89,7 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
         </td>  
         <td>
             <a href="./season-3/cloud5-byo-cloudflare-cdn.md">
-                <img alt="Traiga su propia CDN de Cloudflare" src="https://video.tv.adobe.com/v/3428100?format=jpeg"/>
+                <img alt="Traiga su propia CDN de Cloudflare" src="https://video.tv.adobe.com/v/3452539?format=jpeg&captions=spa"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-byo-cloudflare-cdn.md">
@@ -103,7 +103,7 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
         </td>           
         <td>
             <a href="./season-3/cloud5-integrate-assets.md">
-                <img alt="Integración de AEM Assets con la creación de documentos" src="https://video.tv.adobe.com/v/3428302?format=jpeg"/>
+                <img alt="Integración de AEM Assets con la creación de documentos" src="https://video.tv.adobe.com/v/3448943?format=jpeg&captions=spa"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-integrate-assets.md">
@@ -119,7 +119,7 @@ Cada temporada tiene una duración variable y se lanza según un horario fijo. L
     <tr>
         <td>
             <a href="./season-3/cloud5-generative-ai-for-aem-sites.md">
-                <img alt="IA generativa en AEM Sites" src="https://video.tv.adobe.com/v/3428436?format=jpeg"/>
+                <img alt="IA generativa en AEM Sites" src="https://video.tv.adobe.com/v/3451118?format=jpeg&captions=spa"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-generative-ai-for-aem-sites.md">

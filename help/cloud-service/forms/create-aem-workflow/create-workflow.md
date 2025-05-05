@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Cree un modelo de flujo de trabajo con componentes de flujo de trabajo de AEM Forms. utilice el componente OR-Split para bifurcar el flujo de trabajo en función del valor de la variable de estado.
 
->[!VIDEO](https://video.tv.adobe.com/v/332434?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453194?quality=12&learn=on&captions=spa)

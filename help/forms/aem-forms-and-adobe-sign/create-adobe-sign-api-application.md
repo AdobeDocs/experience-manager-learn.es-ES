@@ -24,7 +24,7 @@ Debe crear una aplicación API en el Acrobat Sign para integrarla con la platafo
 
 En el siguiente vídeo se explican los pasos necesarios para crear una aplicación de API de Acrobat Sign
 
->[!VIDEO](https://video.tv.adobe.com/v/38178?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327836?quality=12&learn=on&captions=spa)
 
 ## Pasos siguientes
 

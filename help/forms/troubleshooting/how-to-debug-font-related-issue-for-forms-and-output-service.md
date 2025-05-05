@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Este vídeo muestra el proceso de captura de elementos colaterales para depurar problemas relacionados con Fonts con Forms y las conversiones del servicio Output.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335487?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439907?quality=12&learn=on&captions=spa)

@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Breve vídeo que describe cómo enlazar un formulario AEM Forms a un Source de datos XML
 
->[!VIDEO](https://video.tv.adobe.com/v/3427625/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439829/?learn=on&captions=spa)

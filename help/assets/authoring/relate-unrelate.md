@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Obtenga información sobre cómo establecer y administrar relaciones entre recursos en AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/331107?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/346823?quality=12&learn=on&captions=spa)

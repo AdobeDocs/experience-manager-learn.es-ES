@@ -24,7 +24,7 @@ ht-degree: 3%
 Uno de los requisitos previos para integrar AEM Forms con Acrobat Sign es tener la instancia de AEM configurada para utilizar SSL. Asistente de configuración SSL de Adobe Experience Manager para facilitar la configuración de una instancia de AEM para que se ejecute en HTTPS.
 En el siguiente vídeo se explican los pasos necesarios para configurar SSL mediante el asistente
 
->[!VIDEO](https://video.tv.adobe.com/v/17993?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33680?learn=on&captions=spa)
 
 ## Pasos siguientes
 

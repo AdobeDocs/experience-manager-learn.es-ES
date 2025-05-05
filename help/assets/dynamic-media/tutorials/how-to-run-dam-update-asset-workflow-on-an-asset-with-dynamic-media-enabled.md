@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Este vídeo muestra el proceso para ejecutar el flujo de trabajo de recursos de actualización de DAM en un recurso con Dynamic Media habilitado.
 
->[!VIDEO](https://video.tv.adobe.com/v/335456?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418269?quality=12&learn=on&captions=spa)

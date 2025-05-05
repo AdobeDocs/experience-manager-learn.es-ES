@@ -20,7 +20,7 @@ ht-degree: 0%
 
 A partir de AEM Forms 6.4, ahora podemos definir el modelo de datos de formulario (FDM) sin asociarlo a una fuente de datos. El siguiente vídeo explica los pasos para crear FDM sin ninguna fuente de datos.
 
->[!VIDEO](https://video.tv.adobe.com/v/21414?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/39406?quality=12&learn=on&captions=spa)
 
 Esto le ofrece las siguientes ventajas:
 

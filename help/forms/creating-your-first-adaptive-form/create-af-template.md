@@ -22,7 +22,7 @@ Cada formulario adaptable se basa en una plantilla de formulario adaptable. La p
 La plantilla creada aquí es la base del formulario adaptable a partir de ahora.
 El siguiente vídeo muestra el proceso básico de creación de plantillas de formulario adaptable
 
->[!VIDEO](https://video.tv.adobe.com/v/37324?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326692?quality=12&learn=on&captions=spa)
 
 Consulte [documentación de plantilla de formulario adaptable](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html?lang=es) para obtener más información
 

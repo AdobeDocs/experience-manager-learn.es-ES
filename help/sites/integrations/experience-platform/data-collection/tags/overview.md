@@ -27,7 +27,7 @@ Obtenga información sobre cómo integrar las etiquetas en Adobe Experience Plat
 
 Las etiquetas son la nueva generación de tecnología de administración de etiquetas de Adobe Experience Platform. Las etiquetas proporcionan la forma más sencilla de implementar Adobe Analytics, Target, Audience Manager y muchas más soluciones. Obtenga información general sobre las etiquetas y la integración recomendada con Adobe Experience Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/3417061?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445203?quality=12&learn=on&captions=spa)
 
 ## Requisitos previos
 

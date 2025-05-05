@@ -21,4 +21,4 @@ ht-degree: 0%
 
 AEM Utilice prácticas recomendadas y ejemplos para explorar cómo funciona Dispatcher con los servicios de Dispatcher, como Cloud Service y Cloud Manager, con los que también puede trabajar de forma.
 
->[!VIDEO](https://video.tv.adobe.com/v/330538?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345842?quality=12&learn=on&captions=spa)

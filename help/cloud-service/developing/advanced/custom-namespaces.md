@@ -35,7 +35,7 @@ Las áreas de nombres se pueden utilizar para denotar el ámbito y la intención
 
 Las áreas de nombres personalizadas se administran en [scripts de inicialización de repositorios de Sling (repoinit)](https://sling.apache.org/documentation/bundles/repository-initialization.html) y se implementan en AEM as a Cloud Service como configuraciones OSGi, y se agregan al proyecto [AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) `ui.config` del proyecto.
 
->[!VIDEO](https://video.tv.adobe.com/v/3412319?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3416844?quality=12&learn=on&captions=spa)
 
 ## Recursos
 

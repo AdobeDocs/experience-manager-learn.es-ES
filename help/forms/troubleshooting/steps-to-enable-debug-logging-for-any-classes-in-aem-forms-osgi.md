@@ -20,4 +20,4 @@ ht-degree: 0%
 
 *Este vídeo explica los pasos para habilitar el registro de depuración para cualquier clase en AEM Forms OSGi.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335521?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418245?quality=12&learn=on&captions=spa)

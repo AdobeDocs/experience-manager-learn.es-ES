@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Este vídeo describe el proceso de actualización del tiempo de espera de CORBA en Forms PDFG para mitigar los problemas de reversión de transacciones.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335512?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417229?quality=12&learn=on&captions=spa)

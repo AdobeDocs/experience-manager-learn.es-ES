@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Defina un estilo para el texto en el componente de texto estático mediante el editor de texto enriquecido.
 
->[!VIDEO](https://video.tv.adobe.com/v/332235?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3440115?quality=12&learn=on&captions=spa)

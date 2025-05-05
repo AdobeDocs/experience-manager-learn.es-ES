@@ -23,4 +23,4 @@ ht-degree: 12%
 
 Explore los conceptos básicos para los AEM Assets de navegación.
 
->[!VIDEO](https://video.tv.adobe.com/v/32046?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37095?quality=12&learn=on&captions=spa)

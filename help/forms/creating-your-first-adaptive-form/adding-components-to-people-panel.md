@@ -23,15 +23,15 @@ Configure el panel Personas agregando el fragmento de detalles del cónyuge. Se 
 
 **Configurar el panel Personas en AEM Forms 6.3 y 6.4**
 
->[!VIDEO](https://video.tv.adobe.com/v/22193?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326922?quality=12&learn=on&captions=spa)
 
 **Configurar el panel Personas en AEM Forms 6.5 y versiones posteriores**
 
->[!VIDEO](https://video.tv.adobe.com/v/28385?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326938?quality=12&learn=on&captions=spa)
 
 **Reglas de detalles del cónyuge**
 
->[!VIDEO](https://video.tv.adobe.com/v/22195?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326930?quality=12&learn=on&captions=spa)
 
 ## Siguientes pasos
 

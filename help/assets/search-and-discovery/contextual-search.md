@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Aprenda a utilizar la búsqueda contextual en Adobe Experience Manager Assets para encontrar recursos de forma eficaz con consultas de lenguaje natural.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428667/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438953/?learn=on&captions=spa)
 
 ## Alternar búsqueda contextual
 

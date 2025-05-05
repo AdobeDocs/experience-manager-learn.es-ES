@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Explore cómo Adobe gestiona la confianza y la privacidad para Generar variaciones en la creación de documentos de Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429060/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3440017/?learn=on&captions=spa)

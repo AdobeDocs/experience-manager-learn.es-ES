@@ -23,10 +23,10 @@ Configure el diseño del acordeón para el panel de Assets. El diseño del acord
 
 **Configurar el panel de Assets**
 
->[!VIDEO](https://video.tv.adobe.com/v/22200?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326886?quality=12&learn=on&captions=spa)
 
 **Establecer título de resumen**
->[!VIDEO](https://video.tv.adobe.com/v/28387?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33129?quality=12&learn=on&captions=spa)
 
 ## Siguientes pasos
 

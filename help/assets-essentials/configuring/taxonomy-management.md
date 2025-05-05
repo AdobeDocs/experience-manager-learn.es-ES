@@ -22,4 +22,4 @@ ht-degree: 6%
 
 Obtenga información sobre cómo administrar la taxonomía de etiquetado en la vista de AEM Assets Assets.
 
->[!VIDEO](https://video.tv.adobe.com/v/3431081/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447369/?learn=on&captions=spa)

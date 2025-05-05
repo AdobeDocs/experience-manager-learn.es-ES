@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Los esquemas de carpeta de metadatos permiten a los usuarios administrar y revisar los metadatos asociados a las propias carpetas de recursos, en lugar de hacerlo directamente en los recursos.
 
->[!VIDEO](https://video.tv.adobe.com/v/34071?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37294?quality=12&learn=on&captions=spa)

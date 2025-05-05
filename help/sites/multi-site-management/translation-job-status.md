@@ -22,4 +22,4 @@ ht-degree: 16%
 
 Comprenda los diferentes estados asociados a un trabajo de traducción o a un elemento de este tipo de trabajo.
 
->[!VIDEO](https://video.tv.adobe.com/v/36685?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41557?quality=12&learn=on&captions=spa)

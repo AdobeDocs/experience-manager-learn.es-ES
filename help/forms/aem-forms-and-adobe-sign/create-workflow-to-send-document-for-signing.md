@@ -23,7 +23,7 @@ ht-degree: 2%
 AEM Crear un flujo de trabajo de la mediante el componente Firmar documento. Utilice el DoR generado automáticamente para enviar firmas mediante el componente de firma.
 En el vídeo se explican los distintos pasos necesarios para crear un flujo de trabajo eficaz para enviar documentos para su firma.
 
->[!VIDEO](https://video.tv.adobe.com/v/38182?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327820?quality=12&learn=on&captions=spa)
 
 ## Pasos siguientes
 

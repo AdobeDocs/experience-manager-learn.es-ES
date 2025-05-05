@@ -23,4 +23,4 @@ ht-degree: 8%
 
 Obtenga información sobre cómo acceder a los metadatos e interactuar con ellos en AEM Assets.
 
->[!VIDEO](https://video.tv.adobe.com/v/32045?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37113?quality=12&learn=on&captions=spa)

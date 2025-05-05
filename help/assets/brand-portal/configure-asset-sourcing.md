@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Este vídeo muestra el proceso de configuración del abastecimiento de recursos con Brand Portal.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335451?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418293?quality=12&learn=on&captions=spa)

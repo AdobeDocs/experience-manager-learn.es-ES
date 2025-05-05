@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Obtenga información sobre cómo filtrar, buscar y descargar recursos en AEM Assets.
 
->[!VIDEO](https://video.tv.adobe.com/v/335861?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418459?quality=12&learn=on&captions=spa)

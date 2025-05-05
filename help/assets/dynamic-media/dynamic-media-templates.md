@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Explore las plantillas de Dynamic Media, un recurso de imagen componible, sus prácticas recomendadas y cómo satisfacer la demanda de entrega de contenido personalizado. Aprenda a crear y administrar plantillas, y a utilizarlas para ofrecer contenido personalizado a escala.
 
->[!VIDEO](https://video.tv.adobe.com/v/3451727/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3451730/?learn=on&enablevpops&captions=spa)

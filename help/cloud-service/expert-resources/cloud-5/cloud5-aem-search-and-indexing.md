@@ -21,7 +21,7 @@ ht-degree: 3%
 
 Una rápida inmersión en las profundas aguas de la búsqueda y la indexación. Un tema difícil que esperamos ayudar a educarlo para que cumpla con más eficacia.
 
->[!VIDEO](https://video.tv.adobe.com/v/342374?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448109?quality=12&learn=on&captions=spa)
 
 ## Contenido cubierto en este vídeo
 

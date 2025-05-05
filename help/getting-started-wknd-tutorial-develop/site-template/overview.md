@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Aprenda a utilizar un método de código bajo para crear su primer sitio en Adobe Experience Manager con Creación rápida del sitio y una plantilla de sitio predefinida. Utilice componentes y plantillas listas para usar para poner en marcha rápidamente un sitio. Utilice un flujo de trabajo de temas impulsado por Adobe XD para aplicar estilos y personalizaciones específicos de la marca solo con CSS y JavaScript. Recomendado para nuevos proyectos y desarrolladores.
 
->[!VIDEO](https://video.tv.adobe.com/v/333477?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343264?quality=12&learn=on&captions=spa)
 
 * [Kit de IU de Adobe XD](https://github.com/adobe/aem-site-template-basic/blob/main/files/wireframe.xd)
 * [Plantilla del sitio AEM](https://github.com/adobe/aem-site-template-basic)

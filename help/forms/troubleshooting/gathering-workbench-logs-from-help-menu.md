@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Este vídeo muestra el proceso para recopilar registros de Workbench del menú Ayuda.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335501?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417219?quality=12&learn=on&captions=spa)

@@ -24,4 +24,4 @@ ht-degree: 0%
 
 El carril de búsqueda de administración de Assets permite buscar recursos usando criterios personalizados en Omnisearch.
 
->[!VIDEO](https://video.tv.adobe.com/v/35842?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40073?quality=12&learn=on&captions=spa)

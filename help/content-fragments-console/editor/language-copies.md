@@ -20,4 +20,4 @@ ht-degree: 3%
 
 Descubra cómo el editor de fragmentos de contenido de AEM facilita la localización de fragmentos de contenido mediante un filtrado rápido. Con esta función, la búsqueda de fragmentos de contenido específicos se vuelve rápida y sencilla.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419311/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3436959/?learn=on&captions=spa)

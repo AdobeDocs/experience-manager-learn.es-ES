@@ -24,7 +24,7 @@ Después de convertir un formulario de PDF en un formulario adaptable, normalmen
 
 En el siguiente vídeo se explican los pasos necesarios para configurar el formulario para la experiencia de firma in situ
 
->[!VIDEO](https://video.tv.adobe.com/v/39574?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327706?quality=12&learn=on&captions=spa)
 
 ## Felicitaciones
 

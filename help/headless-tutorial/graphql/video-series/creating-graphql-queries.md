@@ -28,5 +28,5 @@ En este vídeo:
 + Obtenga información sobre cómo consultar una lista de fragmentos de contenido y un solo fragmento de contenido
 + Obtenga información sobre cómo filtrar y solicitar atributos de datos específicos
 
->[!VIDEO](https://video.tv.adobe.com/v/332860?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3412896?quality=12&learn=on&captions=spa)
 

@@ -23,4 +23,4 @@ ht-degree: 2%
 
 Obtenga información sobre cómo almacenar datos de envío de AEM Forms as a Cloud Service en una cuenta de almacenamiento de Azure.
 
->[!VIDEO](https://video.tv.adobe.com/v/336028?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418718?quality=12&learn=on&captions=spa)

@@ -26,7 +26,7 @@ Para el propósito de este tutorial, combinaremos los datos capturados en el Cha
 
 El siguiente vídeo muestra el caso de uso.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428432?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441795?learn=on&captions=spa)
 
 ## Requisitos previos
 

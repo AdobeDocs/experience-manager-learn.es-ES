@@ -20,7 +20,7 @@ ht-degree: 11%
 
 En este vídeo exploramos la administración de color de Dynamic Media y cómo se puede utilizar para proporcionar funciones de previsualización de corrección de color en para AEM Assets.
 
->[!VIDEO](https://video.tv.adobe.com/v/16792?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37988?quality=12&learn=on&captions=spa)
 
 >[!NOTE]
 >

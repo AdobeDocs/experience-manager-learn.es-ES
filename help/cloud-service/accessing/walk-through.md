@@ -27,4 +27,4 @@ ht-degree: 42%
 
 Una explicación abreviada de cómo configurar usuarios de IMS de Adobe, grupos de usuarios y perfiles de productos en Admin Console de Adobe, y cómo aprovechar estas abstracciones de IMS de Adobe en AEM Author para definir y administrar permisos específicos basados en grupos.
 
->[!VIDEO](https://video.tv.adobe.com/v/39155?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327376?quality=12&learn=on&captions=spa)

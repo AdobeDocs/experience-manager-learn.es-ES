@@ -26,7 +26,7 @@ Para utilizar un API por lotes, cree una configuración por lotes y realice una 
 >Asegúrese de que el usuario de AEM pertenezca al grupo ```forms-users``` para realizar llamadas a la API.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/340241?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343698?quality=12&learn=on&captions=spa)
 
 ## Crear configuración por lotes
 

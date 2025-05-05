@@ -22,4 +22,4 @@ ht-degree: 0%
 
 El siguiente vídeo lo acompaña durante los pasos para crear y configurar un formulario adaptable para crear y mostrar objetos de posible cliente.
 
->[!VIDEO](https://video.tv.adobe.com/v/340791?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449311?quality=12&learn=on&captions=spa)

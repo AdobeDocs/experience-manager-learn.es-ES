@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Explore cómo funciona la publicación de contenido en AEM as a Cloud Service, incluidos los conceptos de distribución de contenido y la canalización de Adobe.
 
->[!VIDEO](https://video.tv.adobe.com/v/330554?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/346187?quality=12&learn=on&captions=spa)

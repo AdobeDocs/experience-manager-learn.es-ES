@@ -22,7 +22,7 @@ El sólido marco de trabajo de traducción de AEM permite que los proveedores de
 
 ## Mejoras de traducción en AEM 6.5
 
->[!VIDEO](https://video.tv.adobe.com/v/27405?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34381?quality=12&learn=on&captions=spa)
 
 Las mejoras en la traducción de AEM 6.5 incluyen:
 
@@ -36,7 +36,7 @@ Las mejoras en la traducción de AEM 6.5 incluyen:
 
 ## Mejoras de traducción en AEM 6.4
 
->[!VIDEO](https://video.tv.adobe.com/v/21309?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38296?quality=12&learn=on&captions=spa)
 
 Los autores ahora pueden crear rápida y fácilmente proyectos de traducción multilingües directamente desde el administrador de Sites o el administrador de proyectos, configurar esos proyectos para promocionar automáticamente los lanzamientos e incluso establecer programaciones para la automatización.
 

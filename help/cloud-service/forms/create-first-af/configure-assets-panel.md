@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Capture los recursos del solicitante utilizando un panel repetible con un diseño de acordeón
 
->[!VIDEO](https://video.tv.adobe.com/v/336473?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445181?quality=12&learn=on&captions=spa)

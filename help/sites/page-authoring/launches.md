@@ -24,4 +24,4 @@ ht-degree: 1%
 
 Los lanzamientos en AEM Sites proporcionan una forma de crear y revisar el contenido del sitio web para futuras versiones. Durante la creación del lanzamiento, el sitio web de producción puede seguir evolucionando y cambiando día a día como lo haría normalmente.
 
->[!VIDEO](https://video.tv.adobe.com/v/331285?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/346837?quality=12&learn=on&captions=spa)

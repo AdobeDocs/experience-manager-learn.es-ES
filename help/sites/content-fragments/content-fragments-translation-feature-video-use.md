@@ -22,7 +22,7 @@ ht-degree: 2%
 
 Descubra cómo se pueden localizar y traducir los fragmentos de contenido con Adobe Experience Manager. Los recursos de medios mixtos asociados a un fragmento de contenido también pueden extraerse y traducirse.
 
->[!VIDEO](https://video.tv.adobe.com/v/18131?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410323?quality=12&learn=on&captions=spa)
 
 ## Casos de uso de traducción de fragmentos de contenido {#content-fragment-translation-use-cases}
 

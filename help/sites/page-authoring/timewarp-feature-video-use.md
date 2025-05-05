@@ -24,7 +24,7 @@ ht-degree: 2%
 
 Deformación de tiempo es una función de Adobe Experience Manager Sites que proporciona a los autores una forma rápida de revisar el estado de una página en un momento específico en el pasado.
 
->[!VIDEO](https://video.tv.adobe.com/v/17453?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410304?quality=12&learn=on&captions=spa)
 
 ## Más recursos {#more-resources}
 

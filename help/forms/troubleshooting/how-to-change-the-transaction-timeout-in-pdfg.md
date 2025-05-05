@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *En este vídeo se describe el proceso de cambiar el tiempo de espera de transacción de un servidor de aplicaciones en el servicio Forms PDFG.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335555?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417600?quality=12&learn=on&captions=spa)

@@ -24,7 +24,7 @@ ht-degree: 18%
 
 Obtenga información sobre cómo crear una página en Adobe Experience Manager Sites mediante la interfaz de usuario del editor del sitio.
 
->[!VIDEO](https://video.tv.adobe.com/v/31828?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36942?quality=12&learn=on&captions=spa)
 
 En este vídeo, se tratan las siguientes funciones o características:
 

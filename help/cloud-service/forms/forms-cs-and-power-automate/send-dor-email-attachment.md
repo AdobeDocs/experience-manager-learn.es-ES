@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Extraiga el documento de registro y envíelo como un archivo adjunto de correo electrónico en el flujo de trabajo de Power Automate.
 En el siguiente vídeo se explican los pasos necesarios para extraer el DoR de los datos enviados
->[!VIDEO](https://video.tv.adobe.com/v/346731?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3413033?quality=12&learn=on&captions=spa)

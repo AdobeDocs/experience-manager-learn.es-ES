@@ -21,7 +21,7 @@ ht-degree: 2%
 
 Un ejemplo rápido de cómo puede utilizar el validador de Dispatcher en los flujos de trabajo de desarrollo de AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/342358?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448422?quality=12&learn=on&captions=spa)
 
 ## Contenido cubierto en este vídeo
 

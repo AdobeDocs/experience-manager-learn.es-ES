@@ -22,4 +22,4 @@ ht-degree: 12%
 
 Aprenda a crear, editar y administrar un proyecto de traducción para su copia de idioma.
 
->[!VIDEO](https://video.tv.adobe.com/v/36486?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41623?quality=12&learn=on&captions=spa)

@@ -24,7 +24,7 @@ La interfaz de usuario de configuración de traducción permite al usuario admin
 >
 > El siguiente vídeo se grabó en AEM 6.3. AEM 6.4+ presenta una nueva estructura de repositorio para almacenar el archivo XML de reglas de traducción. Al utilizar la interfaz de usuario de configuración de traducción en AEM 6.4+, las reglas se guardan en la ubicación `/conf/global/settings/translation/rules/translation_rules.xml`. Consulte [Identificación del contenido para traducir](https://helpx.adobe.com/es/experience-manager/6-5/sites/administering/using/tc-rules.html) para obtener más información.
 
->[!VIDEO](https://video.tv.adobe.com/v/18135?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38439?quality=12&learn=on&captions=spa)
 
 Las reglas de traducción identifican el contenido de AEM que se va a extraer para su traducción. Las reglas de traducción listas para usar abarcan casos de uso comunes, como componentes de texto y texto alternativo para componentes de imagen. Según los requisitos de traducción de un proyecto, pueden ser necesarias reglas adicionales. En general, las reglas de traducción permiten a los usuarios especificar:
 

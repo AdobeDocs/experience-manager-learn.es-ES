@@ -59,4 +59,4 @@ Por ejemplo, podemos utilizar las funciones de reducción para mostrar el númer
 
 El siguiente vídeo muestra los pasos necesarios para utilizar las funciones de reductor.
 
->[!VIDEO](https://video.tv.adobe.com/v/21368?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38222?quality=12&learn=on&captions=spa)

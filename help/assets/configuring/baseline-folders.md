@@ -23,4 +23,4 @@ ht-degree: 0%
 
 La definición de carpetas de línea de base en los AEM Assets ayuda a establecer una arquitectura de contenido sólida y una base para la administración de recursos digitales.
 
->[!VIDEO](https://video.tv.adobe.com/v/33496?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37330?quality=12&learn=on&captions=spa)

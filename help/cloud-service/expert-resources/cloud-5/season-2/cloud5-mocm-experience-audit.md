@@ -20,7 +20,7 @@ ht-degree: 7%
 
 En la primera parte de una serie de tres partes, exploramos los conceptos básicos de Cloud Manager y sumergimos los dedos en las funcionalidades de auditoría de experiencias.
 
->[!VIDEO](https://video.tv.adobe.com/v/343620?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449180?quality=12&learn=on&captions=spa)
 
 ## Contenido cubierto en este vídeo
 

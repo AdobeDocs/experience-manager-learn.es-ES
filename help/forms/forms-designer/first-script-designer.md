@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Vídeo corto que describe la creación y prueba de secuencias de comandos en AEM Forms Designer
 
->[!VIDEO](https://video.tv.adobe.com/v/3427627/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3443710/?learn=on&captions=spa)

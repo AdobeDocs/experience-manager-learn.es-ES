@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Obtenga información acerca de las operaciones básicas de los AEM Assets, incluido cómo crear carpetas, así como cómo cargar, copiar, mover y eliminar recursos.
 
->[!VIDEO](https://video.tv.adobe.com/v/32044?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37152?quality=12&learn=on&captions=spa)

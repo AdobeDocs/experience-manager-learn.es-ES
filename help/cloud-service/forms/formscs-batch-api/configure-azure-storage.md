@@ -23,4 +23,4 @@ ht-degree: 1%
 Una cuenta de Azure Storage contiene todos los objetos de datos de Azure Storage, incluidos blobs, recursos compartidos de archivos, colas, tablas y discos. La cuenta de almacenamiento proporciona un área de nombres única para los datos de almacenamiento de Azure a la que se puede acceder desde cualquier lugar del mundo a través de HTTP o HTTPS. Los datos de su cuenta de almacenamiento son duraderos, tienen una alta disponibilidad, son seguros y se pueden escalar en gran medida.
 El siguiente vídeo lo acompaña durante el proceso de configuración de la cuenta de almacenamiento de Azure.
 
->[!VIDEO](https://video.tv.adobe.com/v/340127?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343719?quality=12&learn=on&captions=spa)

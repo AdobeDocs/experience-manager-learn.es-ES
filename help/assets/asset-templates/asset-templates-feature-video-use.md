@@ -30,10 +30,10 @@ La plantilla de AEM Assets permite a los especialistas en marketing crear, admin
 
 Este vídeo explica los conceptos y pasos para generar recursos listos para imprimir en AEM mediante Adobe InDesign, Adobe InDesign Server y AEM Assets.
 
->[!VIDEO](https://video.tv.adobe.com/v/25170?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35337?quality=12&learn=on&captions=spa)
 
 ## Resumen técnico {#technical-overview}
 
 Este vídeo proporciona información general más técnica sobre la funcionalidad de las plantillas de afirmación de AEM Assets y cómo AEM facilita la composición de AEM Assets y contenido mediante InDesign para crear experiencias de impresión enriquecidas y atractivas.
 
->[!VIDEO](https://video.tv.adobe.com/v/17071?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38228?quality=12&learn=on&captions=spa)

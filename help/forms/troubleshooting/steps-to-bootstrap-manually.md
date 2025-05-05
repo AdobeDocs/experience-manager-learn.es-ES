@@ -20,4 +20,4 @@ ht-degree: 0%
 
 *Este vídeo muestra el proceso para arrancar manualmente si la inicialización de la base de datos no funciona.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335515?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3436272?quality=12&learn=on&captions=spa)

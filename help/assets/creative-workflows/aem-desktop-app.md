@@ -23,7 +23,7 @@ ht-degree: 4%
 
 Utilice la aplicación de escritorio de AEM para simplificar el acceso a cualquier recurso administrado en AEM en el escritorio, para cualquier aplicación y formato de archivo.
 
->[!VIDEO](https://video.tv.adobe.com/v/28868?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32778?quality=12&learn=on&captions=spa)
 
 + Descubra los recursos de AEM mediante la exploración y búsqueda con una aplicación de escritorio específica
 + La administración optimizada del ancho de banda permite cargar y descargar muchos recursos de gran tamaño

@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Descubra cómo la función Buscar imagen similar de los AEM Assets facilita la búsqueda de la mejor imagen para sus necesidades.
 
->[!VIDEO](https://video.tv.adobe.com/v/3426796/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438480/?learn=on&captions=spa)

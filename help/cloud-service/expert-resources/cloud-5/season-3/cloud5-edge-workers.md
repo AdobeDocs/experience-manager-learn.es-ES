@@ -21,7 +21,7 @@ ht-degree: 3%
 
 Explore la importancia de los trabajadores de Edge en AEM Sites y Edge Delivery Services y cómo integrarlos con sus sistemas back-end.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427589?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448120?learn=on&captions=spa)
 
 ## Recursos adicionales
 

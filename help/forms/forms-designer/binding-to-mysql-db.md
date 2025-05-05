@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Breve vídeo que describe cómo enlazar un formulario AEM Forms a una base de datos MySql
 
->[!VIDEO](https://video.tv.adobe.com/v/3427624/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439562/?learn=on&captions=spa)

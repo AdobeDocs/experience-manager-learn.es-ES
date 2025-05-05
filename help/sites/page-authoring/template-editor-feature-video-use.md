@@ -23,7 +23,7 @@ ht-degree: 5%
 
 Las plantillas editables permiten a los autores especializados crear y actualizar plantillas de página y administrar configuraciones de directiva avanzadas con Adobe Experience Manager (AEM) Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/326784?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449614?quality=12&learn=on&captions=spa)
 
 Las plantillas editables son la recomendación para crear una nueva AEM Sites.
 

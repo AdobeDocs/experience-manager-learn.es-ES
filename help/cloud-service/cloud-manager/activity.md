@@ -24,4 +24,4 @@ Cloud Manager proporciona una vista consolidada de la actividad de un programa, 
 
 Cloud Manager también se integra por usuario con [Notificaciones de Adobe Experience Cloud](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/notifications.html?lang=es), lo que proporciona una vista omnipresente de los eventos y las acciones de interés.
 
->[!VIDEO](https://video.tv.adobe.com/v/26319?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34626?quality=12&learn=on&captions=spa)

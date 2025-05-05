@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Aprenda a crear y utilizar colecciones en AEM Assets Content Hub para optimizar el acceso a los recursos y fomentar el uso compartido colaborativo de recursos, lo que garantiza un trabajo en equipo eficiente y organizado en varios proyectos.
 
->[!VIDEO](https://video.tv.adobe.com/v/3435687/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445303/?learn=on&captions=spa)

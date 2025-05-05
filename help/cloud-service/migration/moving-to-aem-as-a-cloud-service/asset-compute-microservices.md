@@ -21,7 +21,7 @@ ht-degree: 1%
 
 AEM Assets Descubra cómo los microservicios de Asset Compute de as a Cloud Service le permiten generar de forma automática y eficaz cualquier representación de sus recursos, sustituyendo esta función del flujo de trabajo tradicional de AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/336990?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454287?quality=12&learn=on&captions=spa)
 
 ## Herramienta de migración de flujos de trabajo
 

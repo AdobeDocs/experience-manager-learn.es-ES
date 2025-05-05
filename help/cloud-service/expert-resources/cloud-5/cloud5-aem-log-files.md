@@ -20,7 +20,7 @@ ht-degree: 5%
 
 Se trata de una explicación exhaustiva de cómo acceder a los registros en AEM as a Cloud Service, incluido cómo acceder a ellos a través de la interfaz de usuario, así como desde las API.
 
->[!VIDEO](https://video.tv.adobe.com/v/341156?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448481?quality=12&learn=on&captions=spa)
 
 ## Contenido cubierto en este vídeo
 

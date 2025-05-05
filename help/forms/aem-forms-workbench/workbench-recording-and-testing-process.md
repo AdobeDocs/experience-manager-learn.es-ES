@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Breve vídeo que explica la depuración del proceso de formularios en Workbench
 
->[!VIDEO](https://video.tv.adobe.com/v/3429495/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439818/?learn=on&captions=spa)
