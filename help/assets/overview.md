@@ -87,7 +87,7 @@ Descubra qué son los AEM Assets y cómo se pueden utilizar para lograr los obje
 
 ## Recursos adicionales
 
-* [Documentación de AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=en)
+* [Documentación de AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=es)
 * [Tutoriales de AEM as a Cloud Service](/help/cloud-service/overview.md)
 * [Tutoriales de AEM Sites](/help/sites/overview.md)
 * [Tutoriales de AEM Forms](/help/forms/overview.md)
