@@ -30,9 +30,9 @@ El tipo `ImageRef` tiene cuatro opciones de URL para las referencias de contenid
 + `_dynamicUrl` es la dirección URL para la entrega optimizada para la web del recurso de imagen.
    + `_dynamicUrl` no incluye un origen de AEM, por lo que la aplicación cliente debe proporcionar el dominio (autor de AEM o servicio de publicación de AEM).
 + `_authorUrl` es la dirección URL completa del recurso de imagen en AEM Author
-   + [AEM Author](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html) se puede usar para proporcionar una experiencia de vista previa de la aplicación sin encabezado.
+   + [AEM Author](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html?lang=es) se puede usar para proporcionar una experiencia de vista previa de la aplicación sin encabezado.
 + `_publishUrl` es la dirección URL completa del recurso de imagen en AEM Publish
-   + [Publicación de AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html) es normalmente el lugar desde el que la implementación de producción de la aplicación sin encabezado muestra las imágenes.
+   + [Publicación de AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html?lang=es) es normalmente el lugar desde el que la implementación de producción de la aplicación sin encabezado muestra las imágenes.
 
 `_dynamicUrl` es la dirección URL recomendada que se debe usar para la entrega de recursos de imagen y debe reemplazar el uso de `_path`, `_authorUrl` y `_publishUrl` siempre que sea posible.
 
@@ -50,7 +50,7 @@ El tipo `ImageRef` tiene cuatro opciones de URL para las referencias de contenid
 
 Asegúrese de que el campo Fragmento de contenido que contiene la referencia de imagen sea del tipo de datos __referencia de contenido__.
 
-Los tipos de campo se revisan en el [Modelo de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-models.html), seleccionando el campo e inspeccionando la pestaña __Propiedades__ a la derecha.
+Los tipos de campo se revisan en el [Modelo de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-models.html?lang=es), seleccionando el campo e inspeccionando la pestaña __Propiedades__ a la derecha.
 
 ![Modelo de fragmento de contenido con referencia de contenido a una imagen](./assets/images/content-fragment-model.jpeg)
 

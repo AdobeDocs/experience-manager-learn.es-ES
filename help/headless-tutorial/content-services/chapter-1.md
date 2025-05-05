@@ -23,7 +23,7 @@ AEM AEM Siempre se recomienda la versión más reciente de los componentes princ
 * AEM Componentes principales de WCM 2.4.0 o posterior
    * AEM Incluido en el [paquete de contenido de la aplicación WKND Mobile a continuación](#wknd-mobile-application-packages)
 
-AEM Antes de iniciar este tutorial, asegúrese de que las siguientes instancias de la estén [instaladas y ejecutándose en el equipo local](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#Default%20Local%20Install):
+AEM Antes de iniciar este tutorial, asegúrese de que las siguientes instancias de la estén [instaladas y ejecutándose en el equipo local](https://helpx.adobe.com/es/experience-manager/6-5/sites/deploying/using/deploy.html#Default%20Local%20Install):
 
 * AEM **Autor de** en el **puerto 4502**
 * AEM **Publish** en el **puerto 4503**

@@ -23,7 +23,7 @@ Un ejemplo breve de cómo aprovechar [!DNL CORS] para acceder al contenido de AE
 * Un solo origen accede al contenido de publicación de AEM
 * Se requiere acceso CORS para AEM Author
 
-Si se requiere acceso de varios orígenes a AEM Publish, consulte [esta documentación](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=en#dispatcher-configuration).
+Si se requiere acceso de varios orígenes a AEM Publish, consulte [esta documentación](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=es#dispatcher-configuration).
 
 >[!VIDEO](https://video.tv.adobe.com/v/18837?quality=12&learn=on)
 
@@ -103,7 +103,7 @@ Access-Control-Request-Method,Access-Control-Request-Headers]"
 
 ### Permitir encabezados de solicitud CORS
 
-Para permitir que los [encabezados de solicitud HTTP necesarios pasen a AEM para el procesamiento](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders), deben estar permitidos en la configuración `/clientheaders` de Dispatcher.
+Para permitir que los [encabezados de solicitud HTTP necesarios pasen a AEM para el procesamiento](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es#specifying-the-http-headers-to-pass-through-clientheaders), deben estar permitidos en la configuración `/clientheaders` de Dispatcher.
 
 ```
 /clientheaders {

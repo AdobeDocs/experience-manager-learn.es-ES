@@ -65,9 +65,9 @@ Con las muestras horizontales, según el tamaño de pantalla de escritorio del c
  </tbody>
 </table>
 
-[Configuración de Dynamic Media en el modo Scene7](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dms7.html)
+[Configuración de Dynamic Media en el modo Scene7](https://helpx.adobe.com/es/experience-manager/6-5/assets/using/config-dms7.html)
 
-[Configuración de Dynamic Media en modo híbrido](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dynamic.html)
+[Configuración de Dynamic Media en modo híbrido](https://helpx.adobe.com/es/experience-manager/6-5/assets/using/config-dynamic.html)
 
 >[!NOTE]
 >

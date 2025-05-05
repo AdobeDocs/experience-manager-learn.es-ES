@@ -171,7 +171,7 @@ En esta aplicación de ejemplo, hay un componente React modal (`BulkPropertyUpda
 Es importante destacar que cualquier interacción con AEM desde la extensión debe delegarse a una [acción de AppBuilder Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/), que es un proceso independiente sin servidor que se ejecuta en [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/).
 El uso de acciones de Adobe I/O Runtime para comunicarse con AEM es para evitar problemas de conectividad de Intercambio de Recursos de Origen Cruzado (CORS).
 
-Cuando se envía el formulario de actualización masiva de propiedades, un elemento personalizado `onSubmitHandler()` invoca la acción de Adobe I/O Runtime y pasa el host (dominio) de AEM actual y el token de acceso de AEM del usuario, que a su vez llama a la [API de fragmentos de contenido de AEM](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html) para actualizar los fragmentos de contenido.
+Cuando se envía el formulario de actualización masiva de propiedades, un elemento personalizado `onSubmitHandler()` invoca la acción de Adobe I/O Runtime y pasa el host (dominio) de AEM actual y el token de acceso de AEM del usuario, que a su vez llama a la [API de fragmentos de contenido de AEM](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html?lang=es) para actualizar los fragmentos de contenido.
 
 Cuando se recibe la respuesta de la acción Adobe I/O Runtime, el modal se actualiza para mostrar los resultados de la operación de actualización de propiedades por lotes.
 

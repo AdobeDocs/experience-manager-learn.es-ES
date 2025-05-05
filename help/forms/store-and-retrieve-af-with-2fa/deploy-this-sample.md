@@ -45,7 +45,7 @@ Cree una cuenta de desarrollador con [Nexmo](https://dashboard.nexmo.com/) para 
 ## Implemente los siguientes paquetes OSGi
 
 Implemente el paquete que tiene el [código para almacenar y recuperar datos de la base de datos](assets/SaveAndResume.core-1.0.0-SNAPSHOT.jar)
-Descargue y descomprima [developerswithserviceuser.zip](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip).
+Descargue y descomprima [developerswithserviceuser.zip](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip?lang=es).
 Implemente el archivo DevelopersWithServiceUser.jar mediante la consola web de Felix.
 
 ## Implementar la biblioteca de cliente

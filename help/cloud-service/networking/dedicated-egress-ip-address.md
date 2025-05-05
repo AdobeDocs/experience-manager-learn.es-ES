@@ -30,7 +30,7 @@ Un programa Cloud Manager solo puede tener un tipo de infraestructura de red __s
 
 >[!MORELIKETHIS]
 >
-> Lea la AEM como Cloud Service [documentación](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking) de configuración de red avanzada para obtener más detalles sobre la dirección IP de salida dedicada.
+> Lea la AEM como Cloud Service [documentación](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking) de configuración de red avanzada para obtener más detalles sobre la dirección IP de salida dedicada.
 
 ## Requisitos previos
 
@@ -44,7 +44,7 @@ Se requiere lo siguiente al configurar la dirección IP de salida dedicada media
 + ID del programa Cloud Manager
 + Los ID de entorno de Cloud Manager
 
-Para obtener más información [revise cómo configurar y obtener las credenciales de la API de Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/app-builder/server-to-server-auth) para utilizarlas en una llamada de la API de Cloud Manager.
+Para obtener más información [revise cómo configurar y obtener las credenciales de la API de Cloud Manager](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/developing/extensibility/app-builder/server-to-server-auth) para utilizarlas en una llamada de la API de Cloud Manager.
 
 Este tutorial utiliza `curl` para realizar las configuraciones de la API de Cloud Manager. Los comandos `curl` proporcionados suponen una sintaxis Linux/macOS. Si usa el símbolo del sistema de Windows, reemplace el carácter de salto de línea `\` por `^`.
 
@@ -86,7 +86,7 @@ La dirección IP de salida dedicada se puede habilitar mediante las API de Cloud
 
 1. En primer lugar, determine la área geográfica en la que se necesita la red de Avanzadas mediante la operación listRegions[&#128279;](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) de la API de Cloud Manager. Es necesario para realizar llamadas a la `region name` API de Cloud Manager subsiguientes. Normalmente, se utiliza el área geográfica en el que reside el entorno de producción.
 
-   Busque la región de su entorno de AEM as a Cloud Service en [Cloud Manager](https://my.cloudmanager.adobe.com) en los [detalles del entorno](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments). El nombre de región mostrado en Cloud Manager se puede [asignar al código de región](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) utilizado en la API de Cloud Manager.
+   Busque la región de su entorno de AEM as a Cloud Service en [Cloud Manager](https://my.cloudmanager.adobe.com) en los [detalles del entorno](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments). El nombre de región mostrado en Cloud Manager se puede [asignar al código de región](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) utilizado en la API de Cloud Manager.
 
    __solicitud HTTP listRegions__
 
@@ -221,7 +221,7 @@ Las solicitudes HTTP/HTTPS de AEM en puertos estándar (80/443) están permitida
 
 >[!TIP]
 >
-> Consulte la documentación de la dirección IP de salida dedicada de AEM as a Cloud Service para [el conjunto completo de reglas de enrutamiento](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking).
+> Consulte la documentación de la dirección IP de salida dedicada de AEM as a Cloud Service para [el conjunto completo de reglas de enrutamiento](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking).
 
 
 ### HTTP/HTTPS

@@ -23,7 +23,7 @@ ht-degree: 0%
 
 {{edge-delivery-services-and-page-editor}}
 
-En este capítulo, vamos a explorar la relación entre un componente de página base y las plantillas editables. Aprenda a crear una plantilla de artículo sin estilo basada en algunas maquetas de [Adobe XD](https://helpx.adobe.com/support/xd.html). En el proceso de creación de la plantilla, se tratan los componentes principales y las configuraciones de política avanzadas de las plantillas editables.
+En este capítulo, vamos a explorar la relación entre un componente de página base y las plantillas editables. Aprenda a crear una plantilla de artículo sin estilo basada en algunas maquetas de [Adobe XD](https://helpx.adobe.com/es/support/xd.html). En el proceso de creación de la plantilla, se tratan los componentes principales y las configuraciones de política avanzadas de las plantillas editables.
 
 ## Requisitos previos {#prerequisites}
 
@@ -74,7 +74,7 @@ En esta parte del tutorial, creará una nueva plantilla de página de artículo 
 
 ## Planificación de IU con Adobe XD {#adobexd}
 
-Por lo general, la planificación de un nuevo sitio web comienza con maquetas y diseños estáticos. [Adobe XD](https://helpx.adobe.com/support/xd.html) es una herramienta de diseño para mejorar la experiencia del usuario. A continuación, vamos a inspeccionar un kit de interfaz de usuario y maquetas para ayudar a planificar la estructura de la plantilla de página de artículo.
+Por lo general, la planificación de un nuevo sitio web comienza con maquetas y diseños estáticos. [Adobe XD](https://helpx.adobe.com/es/support/xd.html) es una herramienta de diseño para mejorar la experiencia del usuario. A continuación, vamos a inspeccionar un kit de interfaz de usuario y maquetas para ayudar a planificar la estructura de la plantilla de página de artículo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/30214?quality=12&learn=on)
 
@@ -82,7 +82,7 @@ Por lo general, la planificación de un nuevo sitio web comienza con maquetas y 
 
 >[!NOTE]
 >
-> AEM También hay disponible un kit genérico de interfaz de usuario de [componentes principales](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/AEM-CoreComponents-UI-Kit.xd) como punto de partida para proyectos personalizados.
+> AEM También hay disponible un kit genérico de interfaz de usuario de [componentes principales](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/AEM-CoreComponents-UI-Kit.xd?lang=es) como punto de partida para proyectos personalizados.
 
 ## Crear la plantilla de página de artículo
 
@@ -160,7 +160,7 @@ Pasos de alto nivel para el vídeo anterior:
 
 ## Actualizar el encabezado y el pie de página con fragmentos de experiencias {#experience-fragments}
 
-Una práctica común al crear contenido global, como un encabezado o pie de página, es usar un [Fragmento de experiencia](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html). Los fragmentos de experiencias permiten a los usuarios combinar varios componentes para crear un único componente referenciable. Los fragmentos de experiencias tienen la ventaja de admitir la administración de varios sitios y la [localización](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html?lang=en).
+Una práctica común al crear contenido global, como un encabezado o pie de página, es usar un [Fragmento de experiencia](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=es). Los fragmentos de experiencias permiten a los usuarios combinar varios componentes para crear un único componente referenciable. Los fragmentos de experiencias tienen la ventaja de admitir la administración de varios sitios y la [localización](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html?lang=es).
 
 AEM El tipo de archivo del proyecto de generó un encabezado y un pie de página. A continuación, actualice los fragmentos de experiencias para que coincidan con las maquetas. Siga los pasos del siguiente vídeo:
 
@@ -262,7 +262,7 @@ AEM Utilice la herramienta CRXDE-Lite en una instancia de local para ver la estr
 
    Solo hay dos scripts HTL, `customfooterlibs.html` y `customheaderlibs.html`, debajo del componente de página. *¿Cómo procesa este componente la página?*
 
-   La propiedad `sling:resourceSuperType` señala a `core/wcm/components/page/v2/page`. Esta propiedad permite que el componente de página de WKND herede **all** la funcionalidad del componente de página del componente principal. Este es el primer ejemplo de algo llamado [Patrón de componentes proxy](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html#ProxyComponentPattern). Encontrará más información [aquí](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html).
+   La propiedad `sling:resourceSuperType` señala a `core/wcm/components/page/v2/page`. Esta propiedad permite que el componente de página de WKND herede **all** la funcionalidad del componente de página del componente principal. Este es el primer ejemplo de algo llamado [Patrón de componentes proxy](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html?lang=es#ProxyComponentPattern). Encontrará más información [aquí](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html?lang=es).
 
 1. Inspect otro componente dentro de los componentes WKND, el componente `Breadcrumb` de: `/apps/wknd/components/breadcrumb`. Observe que se puede encontrar la misma propiedad `sling:resourceSuperType`, pero esta vez apunta a `core/wcm/components/breadcrumb/v2/breadcrumb`. Este es otro ejemplo de uso del patrón de componentes proxy para incluir un componente principal. AEM De hecho, todos los componentes de la base de código de WKND son proxies de los componentes principales de la (excepto el componente HelloWorld de demostración personalizado). Se recomienda reutilizar tanta funcionalidad de los componentes principales como sea posible *antes de* escribir código personalizado.
 

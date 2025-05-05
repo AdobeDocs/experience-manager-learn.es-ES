@@ -77,15 +77,15 @@ Este capítulo usa la característica [Sistema de estilos](https://experiencelea
 
 ## Fondo {#background}
 
-El [sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html) permite a los desarrolladores y editores de plantillas crear múltiples variaciones visuales de un componente. A su vez, los autores pueden decidir qué estilo utilizar al maquetar una página. El sistema de estilos se utiliza en el resto del tutorial para lograr varios estilos únicos mientras se utilizan los componentes principales en un enfoque de código bajo.
+El [sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=es) permite a los desarrolladores y editores de plantillas crear múltiples variaciones visuales de un componente. A su vez, los autores pueden decidir qué estilo utilizar al maquetar una página. El sistema de estilos se utiliza en el resto del tutorial para lograr varios estilos únicos mientras se utilizan los componentes principales en un enfoque de código bajo.
 
 La idea general del sistema de estilos es que los autores pueden elegir varios estilos del aspecto que debe tener un componente. Los &quot;estilos&quot; están respaldados por clases CSS adicionales que se insertan en el div exterior de un componente. En las bibliotecas de cliente, se agregan reglas CSS basadas en estas clases de estilo para que el componente cambie de aspecto.
 
-Encontrará [documentación detallada para el sistema de estilos aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html?lang=es). También hay un excelente [vídeo técnico para comprender el sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/style-system-technical-video-understand.html).
+Encontrará [documentación detallada para el sistema de estilos aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html?lang=es). También hay un excelente [vídeo técnico para comprender el sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/style-system-technical-video-understand.html?lang=es).
 
 ## Estilo de subrayado: título {#underline-style}
 
-El [componente Título](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/title.html) se ha procesado como proxy en el proyecto en `/apps/wknd/components/title` como parte del módulo **ui.apps**. Los estilos predeterminados de los elementos de encabezado (`H1`, `H2`, `H3`...) ya se han implementado en el módulo **ui.frontend**.
+El [componente Título](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/title.html?lang=es) se ha procesado como proxy en el proyecto en `/apps/wknd/components/title` como parte del módulo **ui.apps**. Los estilos predeterminados de los elementos de encabezado (`H1`, `H2`, `H3`...) ya se han implementado en el módulo **ui.frontend**.
 
 Los [diseños de artículo de WKND](assets/pages-templates/wknd-article-design.xd) contienen un estilo único para el componente Título con un subrayado. En lugar de crear dos componentes o modificar el cuadro de diálogo del componente, se puede utilizar el sistema de estilos para permitir a los autores añadir un estilo de subrayado.
 
@@ -195,7 +195,7 @@ A continuación, implemente el estilo Subrayado utilizando el módulo **ui.front
 
 ## Estilo del bloque de comillas: texto {#text-component}
 
-A continuación, repita pasos similares para aplicar un estilo único al [componente Texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html). El componente Texto se ha procesado como proxy en el proyecto en `/apps/wknd/components/text` como parte del módulo **ui.apps**. Los estilos predeterminados de los elementos de párrafo ya se han implementado en **ui.frontend**.
+A continuación, repita pasos similares para aplicar un estilo único al [componente Texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=es). El componente Texto se ha procesado como proxy en el proyecto en `/apps/wknd/components/text` como parte del módulo **ui.apps**. Los estilos predeterminados de los elementos de párrafo ya se han implementado en **ui.frontend**.
 
 Los [diseños de artículo de WKND](assets/pages-templates/wknd-article-design.xd) contienen un estilo único para el componente Texto con un bloque de comillas:
 

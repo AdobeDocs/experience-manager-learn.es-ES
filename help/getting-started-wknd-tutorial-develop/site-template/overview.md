@@ -31,7 +31,7 @@ Aprenda a utilizar un método de código bajo para crear su primer sitio en Adob
 
 ## Entorno de AEM as a Cloud Service {#environment}
 
-Los pasos de este tutorial se realizarán en un entorno de Adobe Experience Manager as a Cloud Service. Asegúrese de que tiene acceso administrativo al entorno de AEM. Se recomienda usar un [programa de espacio aislado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/sandbox-programs/introduction-sandbox-programs.html) y [entorno de desarrollo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html) al completar este tutorial.
+Los pasos de este tutorial se realizarán en un entorno de Adobe Experience Manager as a Cloud Service. Asegúrese de que tiene acceso administrativo al entorno de AEM. Se recomienda usar un [programa de espacio aislado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/sandbox-programs/introduction-sandbox-programs.html?lang=es) y [entorno de desarrollo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=es) al completar este tutorial.
 
 ## Siguientes pasos {#next-steps}
 

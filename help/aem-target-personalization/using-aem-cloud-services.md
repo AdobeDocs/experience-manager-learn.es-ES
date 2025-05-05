@@ -40,7 +40,7 @@ AEM AEM Para utilizar ofertas de fragmentos de experiencias de para potenciar su
 
      >[!NOTE]
      >
-     > Es necesario que el cliente reciba la recopilación de datos y el Adobe I/O de [Soporte técnico para Adobes](https://helpx.adobe.com/contact/enterprise-support.ec.html) o que se ponga en contacto con el administrador del sistema
+     > Es necesario que el cliente reciba la recopilación de datos y el Adobe I/O de [Soporte técnico para Adobes](https://helpx.adobe.com/es/contact/enterprise-support.ec.html) o que se ponga en contacto con el administrador del sistema
 
 ### AEM Integración de los usuarios de con Adobe Target
 

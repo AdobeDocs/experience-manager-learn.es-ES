@@ -117,11 +117,11 @@ Para acelerar el tutorial, se proporciona una aplicación React JS de inicio.
 
 ## Revisar el código
 
-En el [Tutorial básico - Crear una aplicación de React que use las API de GraphQL de AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/graphql-and-react-app.html#review-the-aemheadless-object), hemos revisado y mejorado algunos archivos clave para obtener experiencia práctica. Antes de mejorar la aplicación WKND, revise los archivos clave.
+En el [Tutorial básico - Crear una aplicación de React que use las API de GraphQL de AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/graphql-and-react-app.html?lang=es#review-the-aemheadless-object), hemos revisado y mejorado algunos archivos clave para obtener experiencia práctica. Antes de mejorar la aplicación WKND, revise los archivos clave.
 
-* [Revisar el objeto sin encabezado AEMH](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/graphql-and-react-app.html#review-the-aemheadless-object)
+* [Revisar el objeto sin encabezado AEMH](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/graphql-and-react-app.html?lang=es#review-the-aemheadless-object)
 
-* [Implementar para ejecutar consultas persistentes de AEM GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/graphql-and-react-app.html#implement-to-run-aem-graphql-persisted-queries)
+* [Implementar para ejecutar consultas persistentes de AEM GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/graphql-and-react-app.html?lang=es#implement-to-run-aem-graphql-persisted-queries)
 
 ### Revisar componente de React `Adventures`
 

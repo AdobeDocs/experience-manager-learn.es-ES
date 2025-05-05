@@ -62,7 +62,7 @@ Se puede descargar e instalar una [solución de la plantilla Magazine](assets/pa
 
 ## Actualizar el encabezado y el pie de página con fragmentos de experiencias {#experience-fragments}
 
-Una práctica común al crear contenido global, como un encabezado o pie de página, es usar un [Fragmento de experiencia](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html). Los fragmentos de experiencias permiten a los usuarios combinar varios componentes para crear un único componente referenciable. Los fragmentos de experiencias tienen la ventaja de admitir la administración de varios sitios y la [localización](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=en#localized-site-structure).
+Una práctica común al crear contenido global, como un encabezado o pie de página, es usar un [Fragmento de experiencia](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=es). Los fragmentos de experiencias permiten a los usuarios combinar varios componentes para crear un único componente referenciable. Los fragmentos de experiencias tienen la ventaja de admitir la administración de varios sitios y la [localización](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=es#localized-site-structure).
 
 La plantilla del sitio generó un encabezado y un pie de página. A continuación, actualice los fragmentos de experiencias para que coincidan con las maquetas. Siga los pasos del siguiente vídeo:
 

@@ -34,6 +34,6 @@ Información general de Live Copy y Administrador de configuración de modelo so
 
 ## Recursos adicionales {#additional-resources}
 
-* [Consola de información general de Live Copy](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-livecopy-overview.html)
-* [Creación y sincronización de Live Copies](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-livecopy.html)
-* [Prácticas recomendadas de MSM](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-best-practices.html)
+* [Consola de información general de Live Copy](https://helpx.adobe.com/es/experience-manager/6-5/sites/administering/using/msm-livecopy-overview.html)
+* [Creación y sincronización de Live Copies](https://helpx.adobe.com/es/experience-manager/6-5/sites/administering/using/msm-livecopy.html)
+* [Prácticas recomendadas de MSM](https://helpx.adobe.com/es/experience-manager/6-5/sites/administering/using/msm-best-practices.html)

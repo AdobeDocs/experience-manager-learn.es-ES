@@ -29,4 +29,4 @@ Para utilizar la API de operación por lotes de AEM Forms CS, se necesitan las s
 1. Crear configuración del almacén de datos por lotes
 1. Ejecución de la API por lotes
 
-Se recomienda que se familiarice con la [documentación de la API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/batch-api.yaml?lang=en) antes de continuar usando este tutorial.
+Se recomienda que se familiarice con la [documentación de la API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/batch-api.yaml?lang=es) antes de continuar usando este tutorial.

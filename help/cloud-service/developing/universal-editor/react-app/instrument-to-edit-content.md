@@ -178,7 +178,7 @@ export default App;
 
 ## Instrumentación de los componentes de React
 
-Para editar el contenido de la aplicación WKND Teams React, como _título y descripción del equipo_, debe instrumentar los componentes React. La instrumentación significa agregar atributos de datos relevantes (`data-aue-*`) a los elementos de HTML que desea hacer editables mediante el Editor universal. Para obtener más información sobre los atributos de datos, vea [Atributos y tipos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types).
+Para editar el contenido de la aplicación WKND Teams React, como _título y descripción del equipo_, debe instrumentar los componentes React. La instrumentación significa agregar atributos de datos relevantes (`data-aue-*`) a los elementos de HTML que desea hacer editables mediante el Editor universal. Para obtener más información sobre los atributos de datos, vea [Atributos y tipos](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types).
 
 ### Definir elementos editables
 

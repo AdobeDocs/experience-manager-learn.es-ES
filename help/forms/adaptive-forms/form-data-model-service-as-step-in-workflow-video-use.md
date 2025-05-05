@@ -28,7 +28,7 @@ Para probar esta capacidad en el servidor, siga las instrucciones siguientes
 * [Descargue e implemente el paquete setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Este es el paquete OSGI personalizado que establece las propiedades de los metadatos.
 >En AEM Forms 6.5 y versiones posteriores, esta funcionalidad está disponible de forma predeterminada, tal como [se describe aquí](form-data-model-service-as-step-in-aem65-workflow-video-use.md)
 
-* Configure tomcat con el archivo SampleRest.war como se describe [aquí](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html). El archivo war implementado en Tomcat tiene el código para devolver la puntuación crediticia del solicitante. La puntuación de crédito es un número aleatorio entre 200 y 800
+* Configure tomcat con el archivo SampleRest.war como se describe [aquí](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html?lang=es). El archivo war implementado en Tomcat tiene el código para devolver la puntuación crediticia del solicitante. La puntuación de crédito es un número aleatorio entre 200 y 800
 
 * [Importe los recursos en AEM mediante el administrador de paquetes](assets/invoke-fdm-as-service-step.zip). El paquete contiene lo siguiente:
 

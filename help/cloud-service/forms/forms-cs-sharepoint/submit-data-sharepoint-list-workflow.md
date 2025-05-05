@@ -23,7 +23,7 @@ ht-degree: 1%
 
 En este artículo se explican los pasos necesarios para insertar datos en la lista de SharePoint mediante el paso para invocar FDM en el flujo de trabajo de AEM.
 
-Este artículo supone que ha [configurado correctamente el formulario adaptable para enviar datos a la lista de SharePoint.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html?lang=en#connect-af-sharepoint-list)
+Este artículo supone que ha [configurado correctamente el formulario adaptable para enviar datos a la lista de SharePoint.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html?lang=es#connect-af-sharepoint-list)
 
 
 ## Crear un modelo de datos de formulario basado en la fuente de datos de lista de SharePoint

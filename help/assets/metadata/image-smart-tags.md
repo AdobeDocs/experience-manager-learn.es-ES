@@ -46,4 +46,4 @@ En el vídeo se detallan las siguientes tareas necesarias para configurar el ser
 
 ## Recursos adicionales
 
-* [Documentación sobre etiquetas inteligentes de AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/smart-tags.html)
+* [Documentación sobre etiquetas inteligentes de AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/smart-tags.html?lang=es)

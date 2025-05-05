@@ -25,7 +25,7 @@ Crearemos una nueva plantilla de formulario adaptable para los fines de este tut
 
 >[!VIDEO](https://video.tv.adobe.com/v/27828?quality=12&learn=on)
 
-[Puede seguir este artículo para comprender el proceso de creación de una plantilla de formulario adaptable y un componente de página](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/storing-and-retrieving-form-data/part5.html?lang=en#storing-and-retrieving-form-data)
+[Puede seguir este artículo para comprender el proceso de creación de una plantilla de formulario adaptable y un componente de página](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/storing-and-retrieving-form-data/part5.html?lang=es#storing-and-retrieving-form-data)
 
 
 ## Recursos

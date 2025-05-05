@@ -88,7 +88,7 @@ Tenga en cuenta que, para omitir la caché CSS existente, se requiere un cambio 
    ```
 
    Los archivos vhost del directorio `dispatcher/src/conf.d/enabled_vhosts` son **symlinks** a los archivos del directorio `dispatcher/src/conf.d/available_vhosts`, así que asegúrese de crear enlaces simbólicos si no los hay.
-1. Implemente los cambios de vhost en el entorno de AEM as a Cloud Service deseado mediante [Cloud Manager - Canalización de configuración de nivel web](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?#web-tier-config-pipelines) o [Comandos RDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=en#deploy-apache-or-dispatcher-configuration).
+1. Implemente los cambios de vhost en el entorno de AEM as a Cloud Service deseado mediante [Cloud Manager - Canalización de configuración de nivel web](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?lang=es&#web-tier-config-pipelines) o [Comandos RDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=es#deploy-apache-or-dispatcher-configuration).
 
 ### Código Java™ personalizado
 

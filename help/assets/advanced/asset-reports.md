@@ -28,4 +28,4 @@ AEM Assets proporciona un sistema de informes de nivel empresarial que se adapta
 
 >[!IMPORTANT]
 >
->AEM 6.5 proporciona la capacidad de configurar [informes de recursos](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html#prerequisite-for-reporting), lo que permite a los administradores definir qué se rastrea e incluye en los informes.
+>AEM 6.5 proporciona la capacidad de configurar [informes de recursos](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=es#prerequisite-for-reporting), lo que permite a los administradores definir qué se rastrea e incluye en los informes.

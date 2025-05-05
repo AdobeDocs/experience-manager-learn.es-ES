@@ -55,7 +55,7 @@ ht-degree: 0%
 
 * Haga clic en el icono de Assets y aplique el filtro para mostrar recursos de tipo &quot;Fragmentos de documento&quot;. Arrastre y suelte el fragmento de documento RetirementIncomeOutlook en el área de destino del panel izquierdo.
 
-* Puede hacer referencia a [esta página](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/partseven.html) al agregar fragmento de documento a las áreas de contenido.
+* Puede hacer referencia a [esta página](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/partseven.html?lang=es) al agregar fragmento de documento a las áreas de contenido.
 
 ## Agregar gráfico de ingresos mensuales estimados {#adding-estimated-monthly-income-chart}
 

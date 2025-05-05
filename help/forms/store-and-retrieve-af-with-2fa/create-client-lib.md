@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # Crear biblioteca de cliente
 
-Cree [client lib](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html) que incluirá el código para invocar el método `doAjaxSubmitWithFileAttachment` de la API `guideBridge` en el evento de clic del botón identificado por la clase CSS **botón de guardado**.  Pasamos los datos del formulario adaptable `fileMap` y `mobileNumber` al extremo que escucha en `**/bin/storeafdatawithattachments`
+Cree [client lib](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=es) que incluirá el código para invocar el método `doAjaxSubmitWithFileAttachment` de la API `guideBridge` en el evento de clic del botón identificado por la clase CSS **botón de guardado**.  Pasamos los datos del formulario adaptable `fileMap` y `mobileNumber` al extremo que escucha en `**/bin/storeafdatawithattachments`
 
 Una vez guardados los datos del formulario, se genera un ID de aplicación único que se presenta al usuario en un cuadro de diálogo. Al cerrar el cuadro de diálogo, el usuario se dirige al formulario, que le permite recuperar el formulario adaptable guardado mediante el ID de aplicación único.
 

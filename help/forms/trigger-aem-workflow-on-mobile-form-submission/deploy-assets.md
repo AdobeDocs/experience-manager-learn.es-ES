@@ -29,7 +29,7 @@ Para que este caso de uso funcione en el sistema local, siga estos pasos:
 
 * [Instalación del paquete MobileFormToWorkflow](assets/MobileFormToWorkflow.core-1.0.0-SNAPSHOT.jar)
 
-* [Implementar el paquete de desarrollo con usuario de servicio](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip?lang=en)
+* [Implementar el paquete de desarrollo con usuario de servicio](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip?lang=es)
 Añada la siguiente entrada en el servicio del asignador de usuarios del servicio Apache Sling mediante configMgr
 
 ```
@@ -49,7 +49,7 @@ DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
 * Especifique el nombre de usuario/contraseña para la instancia de autor y una **ubicación existente en su repositorio de AEM** para almacenar los datos enviados en las credenciales de AEM Server mediante [configMgr](http://localhost:4503/system/console/configMgr). Puede dejar la dirección URL del extremo en el servidor de flujo de trabajo de AEM tal cual. Este es el extremo que extrae y almacena los datos del envío en el nodo especificado.
   ![publish-config](assets/publish-config.png)
 
-* [Implementar el paquete de desarrollo con usuario de servicio](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip?lang=en)
+* [Implementar el paquete de desarrollo con usuario de servicio](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip?lang=es)
 * [Abra la configuración de osgi](http://localhost:4503/system/console/configMgr).
 * Busque **Filtro de referente de Apache Sling**. Asegúrese de que la casilla de verificación Permitir vacío está seleccionada.
 

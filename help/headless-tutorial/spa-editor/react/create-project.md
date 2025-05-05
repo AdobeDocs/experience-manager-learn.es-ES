@@ -64,7 +64,7 @@ Revise las herramientas y las instrucciones necesarias para configurar un [entor
    >
    > Si se usa AEM 6.5.5+, reemplace `aemVersion="cloud"` por `aemVersion="6.5.5"`. Si el objetivo es 6.4.8+, utilice `aemVersion="6.4.8"`.
 
-   Observe la propiedad `frontendModule=react`. Esto indica al tipo de archivo del proyecto de AEM que arranque el proyecto con un [código React base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html) inicial que se utilizará con el Editor de SPA de AEM. Propiedades como `appTitle`, `appId`, `artifactId` y `groupId` se utilizan para identificar el proyecto y el propósito.
+   Observe la propiedad `frontendModule=react`. Esto indica al tipo de archivo del proyecto de AEM que arranque el proyecto con un [código React base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html?lang=es) inicial que se utilizará con el Editor de SPA de AEM. Propiedades como `appTitle`, `appId`, `artifactId` y `groupId` se utilizan para identificar el proyecto y el propósito.
 
    Encontrará una lista completa de las propiedades disponibles para configurar un proyecto [aquí](https://github.com/adobe/aem-project-archetype#available-properties).
 

@@ -34,7 +34,7 @@ La siguiente captura de pantalla muestra un formulario de contacto incrustado en
 
 * Instancia de ejecución de AEM Forms 6.5.16
 
-* [Habilitar formularios sin encabezado en la instancia de autor y publicación](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=en)
+* [Habilitar formularios sin encabezado en la instancia de autor y publicación](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=es)
 
 ## Siguientes pasos
 

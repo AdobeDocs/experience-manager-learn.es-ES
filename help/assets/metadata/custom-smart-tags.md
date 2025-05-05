@@ -38,4 +38,4 @@ Aprenda a configurar la formación sobre etiquetas inteligentes en AEM Assets me
 
 ## Recursos adicionales
 
-* AEM 6.4 requiere el [paquete de servicio más reciente](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html#aem-64).
+* AEM 6.4 requiere el [paquete de servicio más reciente](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=es#aem-64).

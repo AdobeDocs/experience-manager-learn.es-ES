@@ -52,7 +52,7 @@ Una vista consolidada de los mecanismos de autenticación (y, ocasionalmente, de
             <td>✔</td>
         </tr>
         <tr>
-            <td>Basado en token (con <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encapsulated-token.html" target="_blank">token encapsulado</a>)</td>
+            <td>Basado en token (con <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encapsulated-token.html?lang=es" target="_blank">token encapsulado</a>)</td>
             <td>✔</td>
             <td>✔</td>
             <td>✔</td>
@@ -63,7 +63,7 @@ Una vista consolidada de los mecanismos de autenticación (y, ocasionalmente, de
             <td></td>
             <td></td>
             <tr>
-                <td><a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/ldap-config.html" target="_blank">LDAP</a></td>
+                <td><a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/ldap-config.html?lang=es" target="_blank">LDAP</a></td>
                 <td>✔</td>
                 <td>✔</td>
                 <td>✔</td>
@@ -81,7 +81,7 @@ Una vista consolidada de los mecanismos de autenticación (y, ocasionalmente, de
                 <td>✔</td>
             </tr>
             <tr>
-                <td><a href="https://experienceleague.adobe.com/docs/events/assets/oauth-server-functionality-in-aem-7-23-14.pdf" target="_blank">OAuth 1.0a y 2.0</a></td>
+                <td><a href="https://experienceleague.adobe.com/docs/events/assets/oauth-server-functionality-in-aem-7-23-14.pdf?lang=es" target="_blank">OAuth 1.0a y 2.0</a></td>
                 <td>✔</td>
                 <td>✔</td>
                 <td>✔</td>

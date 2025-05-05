@@ -29,7 +29,7 @@ ht-degree: 53%
 
 ## Configuración
 
-La configuración de [Canalización de producción de CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/pipelines/configuring-production-pipelines.html) define el déclencheur que iniciará la canalización, parámetros que controlan la implementación de la producción y parámetros de prueba de rendimiento.
+La configuración de [Canalización de producción de CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/pipelines/configuring-production-pipelines.html?lang=es) define el déclencheur que iniciará la canalización, parámetros que controlan la implementación de la producción y parámetros de prueba de rendimiento.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26314?quality=12&learn=on)
 

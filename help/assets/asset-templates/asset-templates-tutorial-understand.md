@@ -39,7 +39,7 @@ En este tutorial de vídeo se explica cómo definir un archivo InDesign, junto c
 
    * **Haga clic con el botón derecho en** y seleccione **Ajuste > Opciones de ajuste de marco... > Ajuste de contenido > Rellenar marco proporcionalmente**
 
-   [Obtenga más información acerca de las opciones de ajuste de marco](https://helpx.adobe.com/indesign/using/frames-objects.html#fitting_objects_to_frames) y cuál es la adecuada para su caso de uso.
+   [Obtenga más información acerca de las opciones de ajuste de marco](https://helpx.adobe.com/es/indesign/using/frames-objects.html#fitting_objects_to_frames) y cuál es la adecuada para su caso de uso.
 
 5. Copie el encabezado (logotipo y nombre de la empresa) de la plantilla Patrón en Página y Página mediante Pegar en contexto.
 

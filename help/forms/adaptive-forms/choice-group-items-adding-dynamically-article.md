@@ -89,7 +89,7 @@ Para probar esto en el sistema:
 **Usar el editor visual para agregar elementos**
 
 * [Descargar los recursos](assets/usingthevisualeditor.zip)
-* Instale Tomcat si todavía no lo tiene. [Las instrucciones para instalar tomcat están disponibles aquí](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html)
+* Instale Tomcat si todavía no lo tiene. [Las instrucciones para instalar tomcat están disponibles aquí](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html?lang=es)
 * [Implemente el archivo SampleRest.war contenido en este archivo zip en su Tomcat](assets/sample-rest.zip)
 * [Abrir Forms Y Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Haga clic en &quot;Crear&quot; | Carga de archivos&quot; y cargue el archivo que descargó en el paso anterior

@@ -21,7 +21,7 @@ ht-degree: 1%
 
 # Bibliotecas de cliente y flujo de trabajo front-end {#client-side-libraries}
 
-Descubra cómo se utilizan las bibliotecas del lado del cliente o clientlibs para implementar y administrar CSS y JavaScript para una implementación de sitios de Adobe Experience Manager (AEM). Este tutorial también explica cómo se puede integrar el módulo [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html), un proyecto [webpack](https://webpack.js.org/) disociado, en el proceso de compilación de extremo a extremo.
+Descubra cómo se utilizan las bibliotecas del lado del cliente o clientlibs para implementar y administrar CSS y JavaScript para una implementación de sitios de Adobe Experience Manager (AEM). Este tutorial también explica cómo se puede integrar el módulo [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=es), un proyecto [webpack](https://webpack.js.org/) disociado, en el proceso de compilación de extremo a extremo.
 
 ## Requisitos previos {#prerequisites}
 
@@ -82,7 +82,7 @@ Las bibliotecas del lado del cliente proporcionan un mecanismo para organizar y 
 1. Administrar dependencias en marcos de terceros de forma organizada
 1. Minimice el número de solicitudes del lado del cliente concatenando CSS/JS en una o dos solicitudes.
 
-Encontrará más información sobre el uso de [Bibliotecas del lado del cliente aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html)
+Encontrará más información sobre el uso de [Bibliotecas del lado del cliente aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=es)
 
 Las bibliotecas del lado del cliente tienen algunas limitaciones. Lo más destacable es la compatibilidad limitada con los lenguajes de front-end populares como Sass, LESS y TypeScript. En el tutorial, veamos cómo el módulo **ui.frontend** puede ayudar a resolver esto.
 
@@ -107,12 +107,12 @@ A continuación, vamos a explorar la organización de clientlibs generados por e
 
    En la sección siguiente, estos clientlibs se revisan con más detalle.
 
-1. La siguiente tabla resume las bibliotecas de cliente. Encontrará más detalles sobre [incluidas las bibliotecas de clientes aquí](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html?lang=en#developing).
+1. La siguiente tabla resume las bibliotecas de cliente. Encontrará más detalles sobre [incluidas las bibliotecas de clientes aquí](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html?lang=es#developing).
 
    | Nombre | Descripción | Notas |
    |-------------------| ------------| ------|
    | `clientlib-base` | Nivel base de CSS y JavaScript necesario para que funcione el sitio WKND | incrusta las bibliotecas de cliente de componentes principales |
-   | `clientlib-grid` | Genera el CSS necesario para que funcione [Modo de diseño](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html). | Los puntos de interrupción para móviles o tabletas se pueden configurar aquí |
+   | `clientlib-grid` | Genera el CSS necesario para que funcione [Modo de diseño](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html?lang=es). | Los puntos de interrupción para móviles o tabletas se pueden configurar aquí |
    | `clientlib-site` | Contiene el tema específico del sitio para el sitio WKND | Generado por el módulo `ui.frontend` |
    | `clientlib-dependencies` | Incrusta cualquier dependencia de terceros | Generado por el módulo `ui.frontend` |
 
@@ -120,7 +120,7 @@ A continuación, vamos a explorar la organización de clientlibs generados por e
 
 ## Actualizar estilos base {#base-styles}
 
-A continuación, actualice los estilos base definidos en el módulo **[ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)**. Los archivos del módulo `ui.frontend` generan las bibliotecas `clientlib-site` y `clientlib-dependecies` que contienen el tema del sitio y cualquier dependencia de terceros.
+A continuación, actualice los estilos base definidos en el módulo **[ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=es)**. Los archivos del módulo `ui.frontend` generan las bibliotecas `clientlib-site` y `clientlib-dependecies` que contienen el tema del sitio y cualquier dependencia de terceros.
 
 Las bibliotecas del lado cliente no admiten idiomas más avanzados como [Sass](https://sass-lang.com/) o [TypeScript](https://www.typescriptlang.org/). Hay varias herramientas de código abierto como [NPM](https://www.npmjs.com/) y [webpack](https://webpack.js.org/) que aceleran y optimizan el desarrollo front-end. El objetivo del módulo **ui.frontend** es poder usar estas herramientas para administrar la mayoría de los archivos de origen front-end.
 
@@ -143,7 +143,7 @@ Las bibliotecas del lado cliente no admiten idiomas más avanzados como [Sass](h
 
    ![Archivos Sass de componente](assets/client-side-libraries/component-sass-files.png)
 
-   Cada archivo se asigna a un componente principal como el [componente de acordeón](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/accordion.html?lang=en). Cada componente principal se crea con la notación [Modificador de elemento de bloque](https://getbem.com/) o BEM para facilitar la segmentación de clases CSS específicas con reglas de estilo. El tipo de archivo del proyecto de AEM ha tachado los archivos situados debajo de `/components` con las distintas reglas de BEM para cada componente.
+   Cada archivo se asigna a un componente principal como el [componente de acordeón](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/accordion.html?lang=es). Cada componente principal se crea con la notación [Modificador de elemento de bloque](https://getbem.com/) o BEM para facilitar la segmentación de clases CSS específicas con reglas de estilo. El tipo de archivo del proyecto de AEM ha tachado los archivos situados debajo de `/components` con las distintas reglas de BEM para cada componente.
 
 1. Descargue los estilos base de WKND **[wknd-base-styles-src-v3.zip](/help/getting-started-wknd-tutorial-develop/project-archetype/assets/client-side-libraries/wknd-base-styles-src-v3.zip)** y **descomprima** el archivo.
 
@@ -220,7 +220,7 @@ El tipo de archivo del proyecto de AEM configura automáticamente esta integraci
 
    >[!NOTE]
    >
-   >También hay un perfil `npm run prod` que minimiza el JS y el CSS. Esta es la compilación estándar cada vez que la generación del Webpack se activa mediante Maven. Encontrará más detalles sobre el módulo [ui.frontend aquí](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html).
+   >También hay un perfil `npm run prod` que minimiza el JS y el CSS. Esta es la compilación estándar cada vez que la generación del Webpack se activa mediante Maven. Encontrará más detalles sobre el módulo [ui.frontend aquí](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=es).
 
 1. Inspeccione el archivo `site.css` debajo de `ui.frontend/dist/clientlib-site/site.css`. Este es el CSS compilado basado en los archivos fuente Sass.
 
@@ -324,11 +324,11 @@ A continuación, vamos a revisar cómo se hace referencia a los clientlibs en la
 
    >[!NOTE]
    >
-   > En AEM 6.5/6.4, las bibliotecas del lado del cliente no se minifican automáticamente. Consulte la documentación sobre [HTML Library Manager para habilitar la minificación (recomendado)](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=en#using-preprocessors).
+   > En AEM 6.5/6.4, las bibliotecas del lado del cliente no se minifican automáticamente. Consulte la documentación sobre [HTML Library Manager para habilitar la minificación (recomendado)](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=es#using-preprocessors).
 
    >[!WARNING]
    >
-   >Es fundamental en la publicación que las bibliotecas de cliente **no** se proporcionen desde **/aplicaciones**, ya que esta ruta debe restringirse por motivos de seguridad mediante la [sección de filtros de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#example-filter-section). La propiedad [allowProxy](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) de la biblioteca de cliente garantiza que CSS y JS se proporcionen desde **/etc.clientlibs**.
+   >Es fundamental en la publicación que las bibliotecas de cliente **no** se proporcionen desde **/aplicaciones**, ya que esta ruta debe restringirse por motivos de seguridad mediante la [sección de filtros de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es#example-filter-section). La propiedad [allowProxy](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=es#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) de la biblioteca de cliente garantiza que CSS y JS se proporcionen desde **/etc.clientlibs**.
 
 ### Siguientes pasos {#next-steps}
 

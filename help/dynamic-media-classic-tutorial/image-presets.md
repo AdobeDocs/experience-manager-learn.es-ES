@@ -37,8 +37,8 @@ Un ajuste preestablecido de imagen tiene un signo de dólar ($) a ambos lados de
 >
 >Cree un ajuste preestablecido de imagen por cada tamaño de imagen único en el sitio. Por ejemplo, si necesita una imagen de 350 x 350 para la página de detalles del producto, una imagen de 120 x 120 para las páginas de exploración/búsqueda y una imagen de 90 x 90 para un artículo de venta cruzada/con funciones, necesitará tres ajustes preestablecidos de imagen, tanto si tiene 500 imágenes como 500 000.
 
-- Más información sobre [Ajustes preestablecidos de imagen](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sizing/setting-image-presets.html).
-- Aprenda a [crear un ajuste preestablecido de imagen](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sizing/setting-image-presets.html#creating-an-image-preset).
+- Más información sobre [Ajustes preestablecidos de imagen](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sizing/setting-image-presets.html?lang=es).
+- Aprenda a [crear un ajuste preestablecido de imagen](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sizing/setting-image-presets.html?lang=es#creating-an-image-preset).
 
 ## Ajustes preestablecidos y enfoque de imagen
 
@@ -60,7 +60,7 @@ El siguiente gráfico muestra tres niveles de enfoque. De derecha a izquierda no
 
 Dynamic Media Classic permite tres tipos de enfoque: enfoque simple, modo de remuestreo y máscara de enfoque.
 
-Más información acerca de [Opciones de enfoque de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/sharpening-image.html#sharpening_an_image).
+Más información acerca de [Opciones de enfoque de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/sharpening-image.html?lang=es#sharpening_an_image).
 
 ## Recursos adicionales
 

@@ -33,7 +33,7 @@ El servicio de importación por lotes se utiliza para transferir archivos almace
 
 >[!TIP]
 >
-> Las fuentes de entrada de este vídeo solo muestran Azure Blob Storage y Amazon S3; sin embargo, las fuentes disponibles siguen creciendo con el tiempo. Para obtener una lista completa de las fuentes de entrada admitidas, consulte las opciones disponibles en el producto o [documentación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html#bulk-upload).
+> Las fuentes de entrada de este vídeo solo muestran Azure Blob Storage y Amazon S3; sin embargo, las fuentes disponibles siguen creciendo con el tiempo. Para obtener una lista completa de las fuentes de entrada admitidas, consulte las opciones disponibles en el producto o [documentación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=es#bulk-upload).
 
 ## Actividades clave
 
@@ -43,6 +43,6 @@ El servicio de importación por lotes se utiliza para transferir archivos almace
 
 ## Otros recursos
 
-+ [Opciones de configuración del servicio de importación masiva](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html#configure-bulk-ingestor-tool)
-+ [Sesión de Adobe Developers Live sobre la ingesta de recursos](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/feb2021/asset-bulk-ingestion.html)
++ [Opciones de configuración del servicio de importación masiva](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=es#configure-bulk-ingestor-tool)
++ [Sesión de Adobe Developers Live sobre la ingesta de recursos](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/feb2021/asset-bulk-ingestion.html?lang=es)
 

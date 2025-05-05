@@ -87,7 +87,7 @@ Existen varias opciones para crear un proyecto de módulo múltiple de Maven par
 
    >[!NOTE]
    >
-   > Observe la propiedad `frontendModule=angular`. Esto indica al tipo de archivo del proyecto de AEM que arranque el proyecto con un [código base de Angular](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html) inicial que se utilizará con el editor de SPA de AEM.
+   > Observe la propiedad `frontendModule=angular`. Esto indica al tipo de archivo del proyecto de AEM que arranque el proyecto con un [código base de Angular](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html?lang=es) inicial que se utilizará con el editor de SPA de AEM.
 
 ## Creación del proyecto
 

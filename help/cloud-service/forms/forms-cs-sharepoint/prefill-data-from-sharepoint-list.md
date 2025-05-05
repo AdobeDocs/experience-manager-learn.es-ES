@@ -24,7 +24,7 @@ En la versión anterior de AEM Form(6.5), había que escribir código personaliz
 
 En este artículo se explican los pasos necesarios para rellenar previamente un formulario adaptable con datos recuperados de una lista de SharePoint mediante el servicio de prerrellenado del modelo de datos de formulario.
 
-Este artículo supone que ha [configurado correctamente el formulario adaptable para enviar datos a la lista de SharePoint.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html?lang=en#connect-af-sharepoint-list)
+Este artículo supone que ha [configurado correctamente el formulario adaptable para enviar datos a la lista de SharePoint.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html?lang=es#connect-af-sharepoint-list)
 
 Los siguientes son los datos de la lista de SharePoint
 ![lista de sharepoint](assets/list-data.png)

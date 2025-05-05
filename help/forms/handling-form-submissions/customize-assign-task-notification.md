@@ -22,14 +22,14 @@ ht-degree: 1%
 # Personalizar notificación de asignación de tarea
 
 El componente Asignar tarea se utiliza para asignar tareas a los participantes del flujo de trabajo. Cuando se asigna una tarea a un usuario o grupo, se envía una notificación por correo electrónico al usuario o a los miembros del grupo definidos.
-Esta notificación por correo electrónico generalmente contiene datos dinámicos relacionados con la tarea. Estos datos dinámicos se obtienen usando las [propiedades de metadatos](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/use-metadata-in-email-notifications.html#using-system-generated-metadata-in-an-email-notification) generadas por el sistema.
+Esta notificación por correo electrónico generalmente contiene datos dinámicos relacionados con la tarea. Estos datos dinámicos se obtienen usando las [propiedades de metadatos](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/use-metadata-in-email-notifications.html?lang=es#using-system-generated-metadata-in-an-email-notification) generadas por el sistema.
 Para incluir valores de los datos de formulario enviados en la notificación por correo electrónico, es necesario crear una propiedad de metadatos personalizada y, a continuación, utilizar estas propiedades de metadatos personalizadas en la plantilla de correo electrónico
 
 
 
 ## Crear una propiedad de metadatos personalizada
 
-El método recomendado es crear un componente OSGI que implemente el método getUserMetadata de [WorkitemUserMetadataService](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/workspace/service/external/WorkitemUserMetadataService.html#getUserMetadataMap--)
+El método recomendado es crear un componente OSGI que implemente el método getUserMetadata de [WorkitemUserMetadataService](https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/fd/workspace/service/external/WorkitemUserMetadataService.html#getUserMetadataMap--)
 
 El siguiente código crea 4 propiedades de metadatos (_firstName_,_lastName_,_reason_ y _amountRequested_) y establece su valor a partir de los datos enviados. Por ejemplo, el valor de la propiedad de metadatos _firstName_ se establece en el valor del elemento llamado firstName de los datos enviados. El siguiente código supone que los datos enviados del formulario adaptable están en formato xml. Los Forms adaptables basados en el esquema JSON o en el modelo de datos de formulario generan datos en formato JSON.
 
@@ -128,7 +128,7 @@ Una vez que el componente OSGi se haya creado e implementado en el servidor de A
 
 ## Para probar esto en el servidor
 
-* [Configurar el servicio Day CQ Mail](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)
+* [Configurar el servicio Day CQ Mail](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=es#configuring-the-mail-service)
 * Asocie un ID de correo electrónico válido con [usuario administrador](http://localhost:4502/security/users.html)
 * Descargue e instale [Workflow-and-notification-template](assets/workflow-and-task-notification-template.zip) con [administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
 * Descargue [Formulario adaptable](assets/request-travel-authorization.zip) e impórtelo a AEM desde la interfaz de usuario de [formularios y documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).

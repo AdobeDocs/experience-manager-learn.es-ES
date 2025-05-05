@@ -104,7 +104,7 @@ Finalmente, implemente la regla de CDN configurada en el entorno de AEM as a Clo
 
 1. En Cloud Manager, vaya a la sección **Canalizaciones**.
 
-1. Cree una nueva canalización o seleccione la canalización existente que implemente solamente los archivos **Config**. Para ver los pasos detallados, consulte [Crear una canalización de configuración](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager).
+1. Cree una nueva canalización o seleccione la canalización existente que implemente solamente los archivos **Config**. Para ver los pasos detallados, consulte [Crear una canalización de configuración](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager).
 
 1. Haga clic en el botón **Ejecutar** para implementar la regla de CDN.
 

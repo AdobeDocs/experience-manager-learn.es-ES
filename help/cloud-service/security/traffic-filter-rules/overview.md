@@ -33,7 +33,7 @@ Las reglas de filtro de tráfico se implementan en la [CDN integrada](https://ex
 
 Este tutorial le guía a través del proceso de creación, implementación, prueba y análisis de los resultados de las reglas de filtro de tráfico, incluidas las reglas de WAF.
 
-Puede obtener más información sobre las reglas de filtro de tráfico en [este artículo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=en).
+Puede obtener más información sobre las reglas de filtro de tráfico en [este artículo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=es).
 
 >[!IMPORTANT]
 >

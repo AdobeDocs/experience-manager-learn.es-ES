@@ -54,6 +54,6 @@ El Adobe proporciona la extensión de Adobe Experience Platform Debugger [Chrome
 
 ## Recursos adicionales {#additional-resources}
 
-+ [Introducción al Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)
++ [Introducción al Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=es)
 
-+ [Referencia de objeto satélite](https://experienceleague.adobe.com/docs/experience-platform/tags/client-side/satellite-object.html)
++ [Referencia de objeto satélite](https://experienceleague.adobe.com/docs/experience-platform/tags/client-side/satellite-object.html?lang=es)

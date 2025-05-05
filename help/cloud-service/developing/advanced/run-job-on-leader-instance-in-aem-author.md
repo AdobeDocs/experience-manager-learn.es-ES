@@ -136,7 +136,7 @@ Esto suele resultar problemático si el trabajo es responsable de cambiar el est
 
 Si desea que el trabajo se ejecute una sola vez en el servicio de AEM Author, agregue la [configuración de cola de trabajos](#how-to-run-a-job-on-the-leader-instance) que se describe a continuación.
 
-Puede verificarlo si revisa los registros del servicio de AEM Author en [Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#cloud-manager).
+Puede verificarlo si revisa los registros del servicio de AEM Author en [Cloud Manager](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#cloud-manager).
 
 ![Trabajo procesado por todas las instancias](./assets/run-job-once/job-processed-by-all-instances.png)
 

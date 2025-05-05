@@ -79,7 +79,7 @@ Utilizamos las prácticas recomendadas de AEM y utilizamos:
 
 ## Pruebas unitarias y Adobe Cloud Manager {#unit-testing-and-adobe-cloud-manager}
 
-[Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=es) integra la ejecución de pruebas unitarias y la creación de informes de cobertura de código [3&rbrace; en su canalización de CD/CI para ayudar a alentar y promover las prácticas recomendadas de prueba de unidades de código AEM.](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html)
+[Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=es) integra la ejecución de pruebas unitarias y la creación de informes de cobertura de código [3&rbrace; en su canalización de CD/CI para ayudar a alentar y promover las prácticas recomendadas de prueba de unidades de código AEM.](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html?lang=es)
 
 Aunque el código de prueba unitaria es una buena práctica para cualquier base de código, al utilizar Cloud Manager es importante aprovechar sus funciones de prueba de calidad de código y generación de informes al proporcionar pruebas unitarias para que Cloud Manager se ejecute.
 

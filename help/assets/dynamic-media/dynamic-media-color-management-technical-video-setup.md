@@ -125,4 +125,4 @@ A continuación se muestra la plantilla XML para el nodo de configuración de ge
 
 ## Recursos adicionales{#additional-resources}
 
-* [Configuración de la administración de color de Dynamic Media](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dynamic.html#ConfiguringDynamicMediaColorManagement)
+* [Configuración de la administración de color de Dynamic Media](https://helpx.adobe.com/es/experience-manager/6-5/assets/using/config-dynamic.html#ConfiguringDynamicMediaColorManagement)

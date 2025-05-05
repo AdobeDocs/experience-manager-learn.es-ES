@@ -34,4 +34,4 @@ URL de la consola del componente (autor local de AEM): [http://localhost:4502/li
 
 ## Recursos adicionales {#additional-resources}
 
-* [Documentación de la consola Componentes](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/default-components-console.html)
+* [Documentación de la consola Componentes](https://helpx.adobe.com/es/experience-manager/6-5/sites/authoring/using/default-components-console.html)

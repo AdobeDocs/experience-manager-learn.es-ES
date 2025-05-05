@@ -56,7 +56,7 @@ Los detalles del equipo, como el título, la descripción y los integrantes del 
 
 AEM proporciona el contenido para la aplicación React mediante las API de GraphQL y la interfaz de usuario se ha creado mediante dos componentes React, `Teams` y `Person`.
 
-Hay disponible un tutorial correspondiente para aprender a crear la aplicación React de **WKND Teams**. Puede encontrar el tutorial [aquí](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview).
+Hay disponible un tutorial correspondiente para aprender a crear la aplicación React de **WKND Teams**. Puede encontrar el tutorial [aquí](https://experienceleague.adobe.com/es/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview).
 
 ## Siguiente paso
 

@@ -358,7 +358,7 @@ El modelo Sling de firma se basa en varias API de Java™ proporcionadas por AEM
    </dependency>
    ```
 
-   [aem-sdk-api](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en) contiene todas las API de Java™ públicas expuestas por AEM. `aem-sdk-api` se usa de forma predeterminada al crear este proyecto. La versión se mantiene en el pom del reactor principal desde la raíz del proyecto en `aem-guides-wknd/pom.xml`.
+   [aem-sdk-api](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=es) contiene todas las API de Java™ públicas expuestas por AEM. `aem-sdk-api` se usa de forma predeterminada al crear este proyecto. La versión se mantiene en el pom del reactor principal desde la raíz del proyecto en `aem-guides-wknd/pom.xml`.
 
 1. Busque la dependencia para `uber-jar` - **Solo AEM 6.5/6.4**
 
@@ -374,7 +374,7 @@ El modelo Sling de firma se basa en varias API de Java™ proporcionadas por AEM
 
    `uber-jar` solo se incluye cuando se invoca el perfil `classic`, es decir `mvn clean install -PautoInstallSinglePackage -Pclassic`. De nuevo, esto es exclusivo de este proyecto. En un proyecto real, generado a partir del tipo de archivo del proyecto de AEM, `uber-jar` es la versión predeterminada si la versión de AEM especificada es 6.5 o 6.4.
 
-   [uber-jar](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html#experience-manager-api-dependencies) contiene todas las API de Java™ públicas expuestas por AEM 6.x. La versión se mantiene en el pom del reactor principal desde la raíz del proyecto `aem-guides-wknd/pom.xml`.
+   [uber-jar](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html?lang=es#experience-manager-api-dependencies) contiene todas las API de Java™ públicas expuestas por AEM 6.x. La versión se mantiene en el pom del reactor principal desde la raíz del proyecto `aem-guides-wknd/pom.xml`.
 
 1. Buscar la dependencia de `core.wcm.components.core`:
 

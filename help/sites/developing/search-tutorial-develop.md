@@ -77,7 +77,7 @@ La implementación de búsqueda simple es el material de **Adobe Summit lab AEM 
 * [Repositorio de GitHub](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/master/simple-search-guide)
 * [Modelos de Sling](https://sling.apache.org/documentation/bundles/models.html)
 * [Exportador de modelos Sling](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130)
-* [API de QueryBuilder](https://experienceleague.adobe.com/docs/)
+* [API de QueryBuilder](https://experienceleague.adobe.com/docs/?lang=es)
 * [Complemento de AEM Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode) ([Página de documentación](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/))
 
 ## Correcciones y seguimiento {#corrections-and-follow-up}

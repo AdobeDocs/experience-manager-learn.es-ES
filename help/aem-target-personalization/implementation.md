@@ -22,7 +22,7 @@ ht-degree: 1%
 En esta sección, analizaremos cómo configurar Adobe Experience Manager Sites con Adobe Target para diferentes escenarios. En función de su escenario y de los requisitos de la organización.
 
 * **Agregar biblioteca JavaScript de Adobe Target (necesaria para todos los escenarios)**
-AEM Para los sitios alojados en el, puede agregar bibliotecas de Target a su sitio usando las etiquetas [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html). Las etiquetas ofrecen una alternativa sencilla para implementar y gestionar todas las etiquetas necesarias para potenciar las importantes experiencias del cliente.
+AEM Para los sitios alojados en el, puede agregar bibliotecas de Target a su sitio usando las etiquetas [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=es). Las etiquetas ofrecen una alternativa sencilla para implementar y gestionar todas las etiquetas necesarias para potenciar las importantes experiencias del cliente.
 * **Agregar los Cloud Service de Adobe Target (requerido para el escenario de Fragmentos de experiencias)**
 AEM Para los clientes de, que desean utilizar ofertas de fragmentos de experiencias para crear una actividad en Adobe Target, deberán integrar Adobe Target AEM con los Cloud Service de. AEM Esta integración es necesaria para insertar los fragmentos de experiencias de en Target como ofertas de HTML AEM/JSON, y para mantener las ofertas sincronizadas con la. *Esta integración es necesaria para implementar el escenario 1.*
 
@@ -50,7 +50,7 @@ AEM Para los clientes de, que desean utilizar ofertas de fragmentos de experienc
 
 >[!NOTE]
 >
-> Es necesario que el cliente reciba la recopilación de datos y el Adobe I/O de [Soporte técnico para Adobes](https://helpx.adobe.com/contact/enterprise-support.ec.html) o que se ponga en contacto con el administrador del sistema
+> Es necesario que el cliente reciba la recopilación de datos y el Adobe I/O de [Soporte técnico para Adobes](https://helpx.adobe.com/es/contact/enterprise-support.ec.html) o que se ponga en contacto con el administrador del sistema
 
 ### AEM Configuración de la{#set-up-aem}
 
@@ -58,7 +58,7 @@ AEM Se necesita una instancia de autor y publicación para completar este tutori
 
 #### AEM Configuración de instancias de autor y de Publish de
 
-1. AEM Obtenga una copia del [Jar de Quickstart de Quickstart y una licencia.](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#GettingtheSoftware)
+1. AEM Obtenga una copia del [Jar de Quickstart de Quickstart y una licencia.](https://helpx.adobe.com/es/experience-manager/6-5/sites/deploying/using/deploy.html#GettingtheSoftware)
 2. Cree una estructura de carpetas en el equipo como la siguiente:
    ![Estructura de carpetas](assets/implementation/aem-setup-1.png)
 3. Cambie el nombre del JAR de inicio rápido a `aem-author-p4502.jar` y colóquelo debajo del directorio `/author`. Agregue el archivo `license.properties` debajo del directorio `/author`.

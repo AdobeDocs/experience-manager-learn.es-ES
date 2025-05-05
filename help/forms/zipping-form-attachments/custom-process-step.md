@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # Paso de proceso personalizado
 
-Se ha implementado un paso de proceso personalizado para crear el archivo zip que contiene los archivos adjuntos del formulario. Si no está familiarizado con la creación de un paquete OSGi, [siga estas instrucciones](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en).
+Se ha implementado un paso de proceso personalizado para crear el archivo zip que contiene los archivos adjuntos del formulario. Si no está familiarizado con la creación de un paquete OSGi, [siga estas instrucciones](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=es).
 
 El código del paso de proceso personalizado hace lo siguiente:
 

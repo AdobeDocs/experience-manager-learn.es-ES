@@ -27,8 +27,8 @@ Requisitos previos para este tutorial:
 * Desplácese hasta la parte inferior de esta página, descargue el archivo swagger y guárdelo en el disco duro.
 * AEM Forms con SSL habilitado
 
-   * [Documentación oficial para habilitar SSL en AEM 6.3](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/ssl-by-default.html)
-   * [Documentación oficial para habilitar SSL en AEM 6.4](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/ssl-by-default.html)
+   * [Documentación oficial para habilitar SSL en AEM 6.3](https://helpx.adobe.com/es/experience-manager/6-3/sites/administering/using/ssl-by-default.html)
+   * [Documentación oficial para habilitar SSL en AEM 6.4](https://helpx.adobe.com/es/experience-manager/6-4/sites/administering/using/ssl-by-default.html)
 
 * Necesita tener una cuenta de Salesforce
 * Debe crear una aplicación conectada. La documentación oficial de Salesforce para crear la aplicación se encuentra [aquí](https://help.salesforce.com/articleView?id=connected_app_create.htm&amp;type=0).
@@ -73,7 +73,7 @@ El siguiente paso es crear Data Source en AEM Forms. Siga estos pasos según su 
 * Controlador de autenticación: portador de autorización
 * Haga clic en &quot;Conectarse a OAUTH&quot;. Si todo va bien, no debería ver ningún error
 
-Una vez que haya creado el modelo de datos de formulario con Salesforce, puede crear la integración de datos de formulario con el Source de datos que acaba de crear. La documentación oficial para crear la integración de datos de formulario es [aquí](https://helpx.adobe.com/aem-forms/6-3/data-integration.html).
+Una vez que haya creado el modelo de datos de formulario con Salesforce, puede crear la integración de datos de formulario con el Source de datos que acaba de crear. La documentación oficial para crear la integración de datos de formulario es [aquí](https://helpx.adobe.com/es/aem-forms/6-3/data-integration.html).
 
 Asegúrese de configurar el modelo de datos de formulario para incluir el servicio POST para crear un objeto de posible cliente en SFDC.
 
@@ -106,7 +106,7 @@ Después de crear el modelo de datos de formulario, puede crear un Forms adaptab
    * Controlador de autenticación: portador de autorización
    * Haga clic en el botón &quot;Conectarse a OAuth&quot;. En caso de que vea algún error, revise los pasos anteriores para asegurarse de que toda la información se ingresó con precisión.
 
-Una vez que haya creado su Source de datos con Salesforce, puede crear la integración de datos de formulario con el Source de datos que acaba de crear. El enlace de documentación para esto es [aquí](https://helpx.adobe.com/experience-manager/6-4/forms/using/create-form-data-models.html)
+Una vez que haya creado su Source de datos con Salesforce, puede crear la integración de datos de formulario con el Source de datos que acaba de crear. El enlace de documentación para esto es [aquí](https://helpx.adobe.com/es/experience-manager/6-4/forms/using/create-form-data-models.html)
 
 Asegúrese de configurar el modelo de datos de formulario para incluir el servicio POST para crear un objeto de posible cliente en SFDC.
 

@@ -42,7 +42,7 @@ Para crear una propiedad Tag, complete los siguientes pasos.
 
 ## Crear una nueva regla
 
-Abra la propiedad Tag recién creada haciendo clic en su nombre en la vista **Propiedades de la etiqueta**. También bajo el encabezado _Mi actividad reciente_ debería ver que la extensión principal se le agregó. La extensión de etiquetas Core es la extensión predeterminada y proporciona tipos de eventos básicos como carga de página, explorador, formulario y otros tipos de eventos. Consulte [Información general sobre la extensión Core](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html) para obtener más información.
+Abra la propiedad Tag recién creada haciendo clic en su nombre en la vista **Propiedades de la etiqueta**. También bajo el encabezado _Mi actividad reciente_ debería ver que la extensión principal se le agregó. La extensión de etiquetas Core es la extensión predeterminada y proporciona tipos de eventos básicos como carga de página, explorador, formulario y otros tipos de eventos. Consulte [Información general sobre la extensión Core](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=es) para obtener más información.
 
 AEM Las reglas permiten especificar lo que debe suceder a medida que el visitante interactúa con el sitio de la. Para simplificar las cosas, vamos a registrar dos mensajes en la consola del explorador para mostrar cómo la integración de etiquetas de recopilación de datos puede insertar código de JavaScript AEM AEM en el sitio de la sin actualizar el código de proyecto de la aplicación.
 
@@ -93,4 +93,4 @@ El paso anterior completa la creación de la propiedad de etiqueta simple que ti
 
 ## Recursos adicionales {#additional-resources}
 
-* [Crear una propiedad de etiqueta](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html)
+* [Crear una propiedad de etiqueta](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html?lang=es)

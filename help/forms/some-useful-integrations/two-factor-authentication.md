@@ -48,7 +48,7 @@ Use el [editor swagger](https://editor.swagger.io/) para crear su archivo swagge
 
 ## Crear Source de datos
 
-Para integrar AEM/AEM Forms con aplicaciones de terceros, necesitamos [crear una fuente de datos](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) en la configuración de los servicios en la nube.
+Para integrar AEM/AEM Forms con aplicaciones de terceros, necesitamos [crear una fuente de datos](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html?lang=es) en la configuración de los servicios en la nube.
 
 ## Crear modelo de datos de formulario
 

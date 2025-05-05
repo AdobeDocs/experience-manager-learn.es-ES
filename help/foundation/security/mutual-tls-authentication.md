@@ -122,7 +122,7 @@ Para importar el certificado de AEM, siga los siguientes pasos:
 
    ![Certificado y clave privada de AEM importados](assets/mutual-tls-authentication/aem-privatekey-cert-imported.png)
 
-Si el proveedor de API utiliza un certificado de CA autofirmado, importe el certificado recibido en el TrustStore de AEM y siga los pasos de [aquí](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/call-internal-apis-having-private-certificate.html#httpclient-and-load-aem-truststore-material).
+Si el proveedor de API utiliza un certificado de CA autofirmado, importe el certificado recibido en el TrustStore de AEM y siga los pasos de [aquí](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/call-internal-apis-having-private-certificate.html?lang=es#httpclient-and-load-aem-truststore-material).
 
 Del mismo modo, si AEM utiliza un certificado de CA autofirmado, solicite al proveedor de API que lo importe.
 
@@ -217,7 +217,7 @@ private KeyStore getAEMTrustStore(KeyStoreService keyStoreService, ResourceResol
 - Si el proveedor de API utiliza un certificado de CA autofirmado, obtenga el almacén de confianza de AEM global, el método `getAEMTrustStore(...)` lo hace.
 - Cree un objeto de `SSLContextBuilder`, consulte Java™ [Detalles de la API](https://javadoc.io/static/org.apache.httpcomponents/httpcore/4.4.8/index.html?org/apache/http/ssl/SSLContextBuilder.html).
 - Cargue el almacén de claves AEM del usuario en `SSLContextBuilder` mediante el método `loadKeyMaterial(final KeyStore keystore,final char[] keyPassword)`.
-- La contraseña del almacén de claves es la contraseña que se estableció al crear el almacén de claves; debe almacenarse en la configuración OSGi; consulte [Valores de configuración secreta](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values).
+- La contraseña del almacén de claves es la contraseña que se estableció al crear el almacén de claves; debe almacenarse en la configuración OSGi; consulte [Valores de configuración secreta](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=es#secret-configuration-values).
 
 ## Evitar cambios en el almacén de claves JVM
 

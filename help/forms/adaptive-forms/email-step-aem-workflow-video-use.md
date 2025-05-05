@@ -43,7 +43,7 @@ Para que el ejemplo se ejecute en el sistema, haga lo siguiente:
 1. [Implementar el paquete Develingwithserviceuser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
 1. [Descargue e instale el paquete setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)Este paquete contiene el código para crear las propiedades de metadatos como parte del paso de proceso del flujo de trabajo.
-1. [Configurar el servicio Day CQ Mail](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html)
+1. [Configurar el servicio Day CQ Mail](https://helpx.adobe.com/es/experience-manager/6-5/sites/administering/using/notification.html)
 1. [Importe e instale los recursos asociados con este artículo mediante el administrador de paquetes en CRX](assets/emaildoraemformskt.zip)
 1. Iniciar [formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled). Rellene los campos obligatorios y envíe.
 1. Debe recibir un correo electrónico con DocumentOfRecord como archivo adjunto

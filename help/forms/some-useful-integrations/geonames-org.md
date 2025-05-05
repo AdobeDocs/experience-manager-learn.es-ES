@@ -53,7 +53,7 @@ Use el [editor swagger](https://editor.swagger.io/) para crear su archivo swagge
 
 ## Creación de fuentes de datos
 
-Para integrar AEM/AEM Forms con aplicaciones de terceros, necesitamos [crear una fuente de datos](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) en la configuración de los servicios en la nube. Use los [archivos swagger](assets/geonames-swagger-files.zip) para crear sus fuentes de datos.
+Para integrar AEM/AEM Forms con aplicaciones de terceros, necesitamos [crear una fuente de datos](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html?lang=es) en la configuración de los servicios en la nube. Use los [archivos swagger](assets/geonames-swagger-files.zip) para crear sus fuentes de datos.
 Deberá crear 2 fuentes de datos (una para recuperar todos los países y otra para obtener los elementos secundarios)
 
 

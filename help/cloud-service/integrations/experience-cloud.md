@@ -52,8 +52,8 @@ Adobe Acrobat Sign (anteriormente Acrobat Sign) habilita los flujos de trabajo d
 
 ### AEM Forms
 
-+ [Configurar la integración de Adobe Acrobat Sign](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adobe-sign-integration-adaptive-forms.html)
-+ [Tutorial de AEM Forms y Adobe Acrobat Sign](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/forms-and-sign/introduction.html)
++ [Configurar la integración de Adobe Acrobat Sign](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adobe-sign-integration-adaptive-forms.html?lang=es)
++ [Tutorial de AEM Forms y Adobe Acrobat Sign](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/forms-and-sign/introduction.html?lang=es)
 
 ## API de Rest
 
@@ -61,29 +61,29 @@ La integración de Adobe Analytics con AEM as a Cloud Service le permite realiza
 
 ### AEM Sites
 
-+ [Configurar la integración de Adobe Analytics](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-analytics.html)
++ [Configurar la integración de Adobe Analytics](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-analytics.html?lang=es)
 + [Tutorial de AEM Sites y Analytics](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/analytics/collect-data-analytics.html?lang=es)
 + Capa de datos del cliente de Adobe (ACDL)
 
-   + [Ampliar ACDL en componentes principales de WCM de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/extending.html)
-   + [Integrar ACDL con componentes principales de WCM de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html)
-   + [Tratamiento de datos impulsado por eventos con ACDL](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/adobe-client-data-layer.html)
+   + [Ampliar ACDL en componentes principales de WCM de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/extending.html?lang=es)
+   + [Integrar ACDL con componentes principales de WCM de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html?lang=es)
+   + [Tratamiento de datos impulsado por eventos con ACDL](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/adobe-client-data-layer.html?lang=es)
    + [Tutorial de capa de datos del cliente de Adobe (ACDL)](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html?lang=es)
 
 ### AEM Assets
 
-+ [Información general de Assets Insights](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html)
-+ [Configurar Assets Insights](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html#configure-asset-insights)
-+ [Tutorial de Assets Insights](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html)
++ [Información general de Assets Insights](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html?lang=es)
++ [Configurar Assets Insights](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html?lang=es#configure-asset-insights)
++ [Tutorial de Assets Insights](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html?lang=es)
 
 ### AEM Forms
 
-+ [Configurar la integración de Adobe Analytics](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate-aem-forms-with-adobe-analytics.html)
++ [Configurar la integración de Adobe Analytics](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate-aem-forms-with-adobe-analytics.html?lang=es)
 
 ### AEM Sites
 
-+ [Integración con Adobe Campaign Classic](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-campaign-classic.html#configure-user)
-+ [Creando una newsletter de Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/creating-newsletter.html)
++ [Integración con Adobe Campaign Classic](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-campaign-classic.html?lang=es#configure-user)
++ [Creando una newsletter de Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/creating-newsletter.html?lang=es)
 + [Documentación de componentes principales de correo electrónico de AEM](https://github.com/adobe/aem-core-email-components#aem-email-core-components)
 
 ## Adobe Commerce
@@ -101,12 +101,12 @@ Las etiquetas de Adobe Experience Platform se integran perfectamente con AEM y o
 
 ### AEM Sites
 
-+ [Guía del usuario de etiquetas de Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
++ [Guía del usuario de etiquetas de Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=es)
 + [Tutorial de etiquetas de Experience Platform](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=es)
 
 ### AEM Forms
 
-+ [Guía del usuario de etiquetas de Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
++ [Guía del usuario de etiquetas de Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=es)
 + [Tutorial de etiquetas de Experience Platform](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=es)
 
 ## Adobe Journey Optimizer
@@ -123,7 +123,7 @@ Adobe Learning Manager (anteriormente Adobe Captivate Prime) ofrece aprendizaje 
 
 ### AEM Sites
 
-+ [Integrar AEM Sites con Adobe Learning Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-learning-manager.html)
++ [Integrar AEM Sites con Adobe Learning Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-learning-manager.html?lang=es)
 
 ## Adobe Sensei
 
@@ -132,15 +132,15 @@ Recorte, búsqueda visual y mucho más.
 
 ### AEM Sites
 
-+ [Resumir texto en fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html#summarizing-text)
++ [Resumir texto en fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html?lang=es#summarizing-text)
 
 ### AEM Assets
 
-+ [Etiquetas inteligentes para imágenes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
-+ [Etiquetas inteligentes personalizadas para imágenes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/custom-smart-tags.html)
-+ [Etiquetas inteligentes para vídeos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/video-smart-tags.html)
-+ [Recorte inteligente](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html)
-+ [Búsqueda visual](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search.html)
++ [Etiquetas inteligentes para imágenes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=es)
++ [Etiquetas inteligentes personalizadas para imágenes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/custom-smart-tags.html?lang=es)
++ [Etiquetas inteligentes para vídeos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/video-smart-tags.html?lang=es)
++ [Recorte inteligente](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html?lang=es)
++ [Búsqueda visual](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search.html?lang=es)
 
 ### AEM Forms
 
@@ -153,14 +153,14 @@ Adobe Target se integra con AEM as a Cloud Service para ofrecer una experiencia 
 
 ### AEM Sites
 
-+ [Configurar la integración de Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html)
++ [Configurar la integración de Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html?lang=es)
 + Fragmentos de experiencias a destino
 
-   + [Publicar fragmentos de experiencias en Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html)
-   + [Publicar fragmentos de experiencias como JSON en Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html)
+   + [Publicar fragmentos de experiencias en Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html?lang=es)
+   + [Publicar fragmentos de experiencias como JSON en Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html?lang=es)
 
-+ [Usar AEM Context Hub con Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/audiences.html#creating-an-adobe-target-audience-using-the-audience-console)
-+ [Tutorial de AEM Sites y Target](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/target/overview.html)
++ [Usar AEM Context Hub con Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/audiences.html?lang=es#creating-an-adobe-target-audience-using-the-audience-console)
++ [Tutorial de AEM Sites y Target](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/target/overview.html?lang=es)
 
 ## Adobe Workfront
 
@@ -169,7 +169,7 @@ Las integraciones de Adobe Workfront con AEM as a Cloud Service optimizan el pro
 ### AEM Assets
 
 + [Configurar el conector mejorado de Workfront](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/workfront/configure.html?lang=es)
-+ [Vídeos de conector mejorado de Workfront](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/workfront/enhanced-connector/basics.html)
++ [Vídeos de conector mejorado de Workfront](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/workfront/enhanced-connector/basics.html?lang=es)
 + AEM Assets Essentials
 
    + [Guía del usuario de Adobe Workfront para Assets Essentials](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FDocuments%2FAdobe_Workfront_for_Experience_Manager_Assets_Essentials%2F_workfront-for-aem-asset-essentials.htm)

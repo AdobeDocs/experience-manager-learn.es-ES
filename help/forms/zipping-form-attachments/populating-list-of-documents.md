@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Esta guía le guiará a través de la creación de un paso de proceso personalizado para rellenar variables de lista de tipo Lista de matriz con archivos adjuntos y nombres de archivos adjuntos en Adobe Experience Manager. Estas variables son esenciales para el componente de flujo de trabajo Enviar correo electrónico.
 
-Si no está familiarizado con la creación de un paquete OSGi, siga estas [instrucciones](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en).
+Si no está familiarizado con la creación de un paquete OSGi, siga estas [instrucciones](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=es).
 
 El código del paso de proceso personalizado realiza las siguientes acciones:
 

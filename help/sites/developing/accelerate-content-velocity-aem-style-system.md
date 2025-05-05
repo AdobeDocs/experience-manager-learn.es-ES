@@ -93,4 +93,4 @@ Por último, el uso de los sistemas de estilos es más arte que ciencia. Como he
 
 Para obtener más información, vea nuestro [Seminario web sobre el éxito de los clientes](https://adobecustomersuccess.adobeconnect.com/pob610c9mffjmp4/) con Will Brisbane y Joseph Van Buskirk.
 
-Obtenga más información sobre estrategia y liderazgo mental en el centro de [Éxito del cliente](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html).
+Obtenga más información sobre estrategia y liderazgo mental en el centro de [Éxito del cliente](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html?lang=es).

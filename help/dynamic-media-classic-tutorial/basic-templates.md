@@ -63,8 +63,8 @@ Dado que las plantillas básicas suelen diseñarse en Photoshop pero se implemen
 
 Los proyectos de plantilla pueden ser relativamente simples o extremadamente complejos según las reglas y necesidades empresariales de la aplicación. Las plantillas básicas se llaman desde el servidor de imágenes; sin embargo, debido a la flexibilidad del entorno de Dynamic Media Classic, incluso puede anidar plantillas dentro de otras plantillas, lo que le permite crear imágenes bastante complejas que se pueden vincular mediante variables con nombres comunes.
 
-- Más información sobre [Conceptos básicos de plantilla](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html).
-- Aprenda a crear una [plantilla básica](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template.html#creating_a_template).
+- Más información sobre [Conceptos básicos de plantilla](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html?lang=es).
+- Aprenda a crear una [plantilla básica](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template.html?lang=es#creating_a_template).
 
 ## Creación de una plantilla básica
 
@@ -186,7 +186,7 @@ Para agregar un efecto, haga clic en **Agregar efecto** y elija un efecto en el 
 
 Los efectos de sombreado se desplazan horizontal o verticalmente fuera de la capa, mientras que los efectos de resplandor se aplican uniformemente en todas las direcciones. Los efectos internos actúan sobre las partes opacas de la capa, mientras que los efectos externos sólo afectan a las áreas transparentes.
 
-Más información sobre[Agregar efectos de capa](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template.html#using-shadow-and-glow-effects-on-layers).
+Más información sobre[Agregar efectos de capa](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template.html?lang=es#using-shadow-and-glow-effects-on-layers).
 
 ### Adición de parámetros
 
@@ -223,7 +223,7 @@ Este es el flujo de trabajo para crear parámetros:
 >
 >¿No puede agregar un parámetro porque no ve la propiedad? Simplemente cambie la propiedad de la capa de su predeterminada (moviendo, cambiando de tamaño, ocultando, etc.). Ahora debería ver esa propiedad expuesta.
 
-Más información sobre [Parámetros de plantilla](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template-parameters.html).
+Más información sobre [Parámetros de plantilla](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template-parameters.html?lang=es).
 
 ## Creación de una plantilla con capas de texto
 
@@ -312,7 +312,7 @@ Pueden ver la frase Sandalia de menta de chocolate — ese es el texto mismo.
 - Se puede ver un valor de RGB: \red56\green53\blue4 — este es el color del texto.
 - Aunque el tamaño de fuente es 20, no se ve el número 20. Sin embargo, sí ve un comando \fs40: por alguna extraña razón, RTF mide las fuentes como medias puntas. Por lo tanto, \fs40 es el tamaño de fuente.
 
-Tiene suficiente información para crear los parámetros, pero hay una referencia completa de todos los comandos RTF en la documentación del servicio de imágenes. Visite la [Documentación para servicio de imágenes](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/c-text-formatting.html#concept-0d3136db7f6f49668274541cd4b6364c).
+Tiene suficiente información para crear los parámetros, pero hay una referencia completa de todos los comandos RTF en la documentación del servicio de imágenes. Visite la [Documentación para servicio de imágenes](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/c-text-formatting.html?lang=es#concept-0d3136db7f6f49668274541cd4b6364c).
 
 #### Adición de parámetros a capas de texto
 
@@ -330,7 +330,7 @@ Estos son los pasos para agregar parámetros a las capas de texto.
 >
 >Para agregar parámetros al color del texto, agregue por separado los parámetros de rojo, verde y azul. Por ejemplo, si el RTF es `\red56\green53\blue46`, agregaría parámetros rojos, verdes y azules independientes para los valores 56, 53 y 46. En la dirección URL, cambiaría el color llamando a los tres: `&$red=56&$green=53&$blue=46`.
 
-Aprenda a [Crear parámetros de texto dinámico](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template-parameters.html#creating-dynamic-text-parameters).
+Aprenda a [Crear parámetros de texto dinámico](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template-parameters.html?lang=es#creating-dynamic-text-parameters).
 
 ## Publicación y creación de direcciones URL de plantilla
 
@@ -344,7 +344,7 @@ No hay nada de especial en un ajuste preestablecido de imagen para una plantilla
 
 Deberá ejecutar una publicación para ver los cambios insertados en el servidor de imágenes. Tenga en cuenta lo que debe publicarse: las distintas capas de recursos de imagen, las fuentes para el texto dinámico y la propia plantilla. Al igual que otros recursos de medios enriquecidos de Dynamic Media Classic, como conjuntos de imágenes y conjuntos de giros, una plantilla básica es una construcción artificial: es un elemento de línea de la base de datos que hace referencia a las imágenes y fuentes mediante una serie de comandos del servicio de imágenes. Por lo tanto, al publicar la plantilla, lo único que hace es actualizar los datos en el servidor de imágenes.
 
-Más información sobre [Publicación de tu plantilla](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/publishing-templates.html).
+Más información sobre [Publicación de tu plantilla](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/publishing-templates.html?lang=es).
 
 ### Construcción de URL de plantilla
 

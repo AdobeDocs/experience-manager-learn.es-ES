@@ -36,4 +36,4 @@ Utilice la aplicación de escritorio de AEM para simplificar el acceso a cualqui
 
 ## Recursos adicionales
 
-+ [Descargar la aplicación de escritorio de AEM más reciente](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html)
++ [Descargar la aplicación de escritorio de AEM más reciente](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=es)

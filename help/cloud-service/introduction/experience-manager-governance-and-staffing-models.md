@@ -134,4 +134,4 @@ Los siguientes son ejemplos de funciones para un escenario de cliente ligero y p
 
 Para un análisis más detallado de los modelos y tipos de archivos de administración y asignación de personal, escuche esta discusión de panel de una hora: [Arquetipos de roles y Creación de un marco operativo para [!DNL AEM Assets] y [!DNL Sites]](https://adobecustomersuccess.adobeconnect.com/p8ml5nmy0758mp4/)
 
-Obtenga más información sobre estrategia y liderazgo mental en el centro de [Éxito del cliente](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html).
+Obtenga más información sobre estrategia y liderazgo mental en el centro de [Éxito del cliente](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html?lang=es).

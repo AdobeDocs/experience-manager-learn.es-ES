@@ -24,7 +24,7 @@ Crear y mostrar incidencias en [!DNL ServiceNow] mediante el modelo de datos de 
 ## Requisitos previos
 
 * Cuenta de [!DNL ServiceNow].
-* Familiarizado con [crear orígenes de datos](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html)
+* Familiarizado con [crear orígenes de datos](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html?lang=es)
 * Familiarizado con [Modelo de datos de formulario](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=es)
 
 ## Assets de muestra

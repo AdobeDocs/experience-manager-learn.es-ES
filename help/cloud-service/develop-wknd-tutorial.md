@@ -43,4 +43,4 @@ El vídeo muestra cómo puede ser el proyecto del sitio WKND:
 2. Se inserta en un repositorio de Git de Cloud Manager de Adobe ascendente registrado con un programa de AEM as a Cloud Service
 3. Implementado mediante canalizaciones de Cloud Manager en entornos de AEM as a Cloud Service
 
-AEM AEM Para obtener una descripción general completa de cómo implementar el proyecto de as a Cloud Service, vea los vídeos sobre cómo [integrar Git con Adobe Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html).
+AEM AEM Para obtener una descripción general completa de cómo implementar el proyecto de as a Cloud Service, vea los vídeos sobre cómo [integrar Git con Adobe Cloud Manager](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html).

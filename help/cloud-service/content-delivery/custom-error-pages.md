@@ -80,7 +80,7 @@ Las siguientes opciones están disponibles para personalizar las páginas de err
 
 En este tutorial, aprenderá a personalizar las páginas de error utilizando la directiva _ErrorDocument_, el _Controlador de páginas de error de ACS AEM Commons_ y las opciones _Páginas de error de CDN_. Para seguir este tutorial, necesita lo siguiente:
 
-- El [entorno de desarrollo local de AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) o el entorno de AEM as a Cloud Service. La opción _Páginas de error de CDN_ se aplica al entorno de AEM as a Cloud Service.
+- El [entorno de desarrollo local de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) o el entorno de AEM as a Cloud Service. La opción _Páginas de error de CDN_ se aplica al entorno de AEM as a Cloud Service.
 
 - [Proyecto WKND de AEM](https://github.com/adobe/aem-guides-wknd) para personalizar páginas de error.
 
@@ -95,7 +95,7 @@ En este tutorial, aprenderá a personalizar las páginas de error utilizando la 
   $ mvn clean install -PautoInstallSinglePackage -PautoInstallSinglePackagePublish
   ```
 
-- Para el entorno AEM as a Cloud Service, implemente el proyecto WKND de AEM ejecutando la [canalización de pila completa](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline); consulte el ejemplo de la [canalización que no es de producción](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/cloud-manager/cicd-non-production-pipeline).
+- Para el entorno AEM as a Cloud Service, implemente el proyecto WKND de AEM ejecutando la [canalización de pila completa](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline); consulte el ejemplo de la [canalización que no es de producción](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/cloud-manager/cicd-non-production-pipeline).
 
 - Compruebe que las páginas del sitio WKND se representan correctamente.
 
@@ -375,7 +375,7 @@ Finalmente, implemente la regla de CDN configurada en el entorno de AEM as a Clo
 
 1. En Cloud Manager, vaya a la sección **Canalizaciones**.
 
-1. Cree una nueva canalización o seleccione la canalización existente que implemente solamente los archivos **Config**. Para ver los pasos detallados, consulte [Crear una canalización de configuración](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager).
+1. Cree una nueva canalización o seleccione la canalización existente que implemente solamente los archivos **Config**. Para ver los pasos detallados, consulte [Crear una canalización de configuración](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager).
 
 1. Haga clic en el botón **Ejecutar** para implementar la regla de CDN.
 
@@ -401,6 +401,6 @@ En este tutorial, ha aprendido acerca de las páginas de error predeterminadas, 
 
 ## Recursos adicionales
 
-- [Configurar páginas de error de CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages)
+- [Configurar páginas de error de CDN](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages)
 
-- [Cloud Manager - Canalizaciones de configuración](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#config-deployment-pipeline)
+- [Cloud Manager - Canalizaciones de configuración](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#config-deployment-pipeline)

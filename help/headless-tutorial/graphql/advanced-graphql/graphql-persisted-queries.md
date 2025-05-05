@@ -207,9 +207,9 @@ Al ejecutar la consulta `getAllAdventureDetailsBySlug` desde el terminal de lín
 
 >[!TIP]
 >
->    Si se ejecuta la consulta anterior en el entorno de creación de AEM, debe enviar las credenciales. Consulte [Token de acceso de desarrollo local](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/local-development-access-token.html) para ver una demostración del mismo y [Llamar a la API de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#calling-the-aem-api) para obtener información detallada sobre la documentación.
+>    Si se ejecuta la consulta anterior en el entorno de creación de AEM, debe enviar las credenciales. Consulte [Token de acceso de desarrollo local](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/local-development-access-token.html?lang=es) para ver una demostración del mismo y [Llamar a la API de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=es#calling-the-aem-api) para obtener información detallada sobre la documentación.
 
-Además, revise [Cómo ejecutar una consulta persistente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#execute-persisted-query), [Usar variables de consulta](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#query-variables) y [Codificar la URL de consulta para que la use una aplicación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#encoding-query-url) para aprender la ejecución de consultas persistentes por aplicaciones cliente.
+Además, revise [Cómo ejecutar una consulta persistente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?lang=es#execute-persisted-query), [Usar variables de consulta](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?lang=es#query-variables) y [Codificar la URL de consulta para que la use una aplicación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?lang=es#encoding-query-url) para aprender la ejecución de consultas persistentes por aplicaciones cliente.
 
 ## Actualizar parámetros de control de caché en consultas persistentes {#cache-control-all-adventures}
 
@@ -231,7 +231,7 @@ Utilice la consulta `adventures-all` para actualizar los parámetros de control 
    ![Conservar configuración de caché de GraphQL](assets/graphql-persisted-queries/persist-graphql-cache-config.png)
 
 
-Revise [Almacenamiento en caché de las consultas persistentes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#caching-persisted-queries) para obtener más información sobre los parámetros predeterminados de control de caché.
+Revise [Almacenamiento en caché de las consultas persistentes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?lang=es#caching-persisted-queries) para obtener más información sobre los parámetros predeterminados de control de caché.
 
 
 ## Enhorabuena.

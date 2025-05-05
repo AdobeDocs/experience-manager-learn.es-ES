@@ -27,7 +27,7 @@ Se recomienda completar los tutoriales anteriores de [tutorial básico](../multi
 
 >[!CAUTION]
 >
->Si no tiene acceso al entorno de AEM as a Cloud Service, puede completar la configuración rápida de [AEM sin encabezado mediante SDK local](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/quick-setup/local-sdk.html). Sin embargo, es importante tener en cuenta que algunas páginas de la interfaz de usuario del producto, como la navegación por fragmentos de contenido, son diferentes.
+>Si no tiene acceso al entorno de AEM as a Cloud Service, puede completar la configuración rápida de [AEM sin encabezado mediante SDK local](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/quick-setup/local-sdk.html?lang=es). Sin embargo, es importante tener en cuenta que algunas páginas de la interfaz de usuario del producto, como la navegación por fragmentos de contenido, son diferentes.
 
 
 
@@ -49,7 +49,7 @@ El siguiente vídeo proporciona información general de alto nivel sobre los con
 
 >[!CAUTION]
 >
->Este vídeo (a las 2:25) menciona cómo instalar el editor de consultas de GraphiQL a través del Administrador de paquetes para explorar consultas de GraphQL. Sin embargo, en las versiones más recientes de AEM as a Cloud Service se proporciona un explorador integrado **GraphiQL Explorer**, por lo que no se requiere la instalación del paquete. Consulte [Uso del IDE de GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) para obtener más información.
+>Este vídeo (a las 2:25) menciona cómo instalar el editor de consultas de GraphiQL a través del Administrador de paquetes para explorar consultas de GraphQL. Sin embargo, en las versiones más recientes de AEM as a Cloud Service se proporciona un explorador integrado **GraphiQL Explorer**, por lo que no se requiere la instalación del paquete. Consulte [Uso del IDE de GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html?lang=es) para obtener más información.
 
 
 ## Configuración del proyecto

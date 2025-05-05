@@ -38,7 +38,7 @@ En este capítulo, aprenderá a hacer lo siguiente:
 ## Uso del Explorador de GraphiQL
 
 
-La herramienta [Explorador de GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) permite a los desarrolladores crear y probar consultas con contenido en el entorno de AEM actual. La herramienta GraphiQL también permite a los usuarios **mantener o guardar** consultas para que las usen las aplicaciones cliente en una configuración de producción.
+La herramienta [Explorador de GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html?lang=es) permite a los desarrolladores crear y probar consultas con contenido en el entorno de AEM actual. La herramienta GraphiQL también permite a los usuarios **mantener o guardar** consultas para que las usen las aplicaciones cliente en una configuración de producción.
 
 A continuación, explore la potencia de la API de GraphQL de AEM mediante el Explorador de GraphiQL integrado.
 

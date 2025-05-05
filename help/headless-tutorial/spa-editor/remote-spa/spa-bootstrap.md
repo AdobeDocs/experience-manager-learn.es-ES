@@ -67,7 +67,7 @@ SPA AEM Varias variables de entorno deben exponerse al entorno remoto para que s
       + AEM Necesario para su uso con el autor de la
       + AEM Posiblemente se requiera para su uso con Publish (si el contenido está protegido).
       + AEM El desarrollo con el SDK de admite cuentas locales a través de la autenticación básica. Este es el método que se utiliza en este tutorial.
-      + Al integrarse con AEM as a Cloud Service, utilice [tokens de acceso](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)
+      + Al integrarse con AEM as a Cloud Service, utilice [tokens de acceso](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=es)
    + AEM SPA AEM `REACT_APP_BASIC_AUTH_USER`: el __nombre de usuario__ de la para la autenticación al recuperar el contenido de la recuperación.
    + AEM SPA AEM `REACT_APP_BASIC_AUTH_PASS`: la __contraseña__ de la para la autenticación durante la recuperación de contenido de la.
 

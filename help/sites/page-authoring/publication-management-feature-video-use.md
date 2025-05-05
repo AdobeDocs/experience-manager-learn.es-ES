@@ -39,4 +39,4 @@ AEM Sites proporciona varios métodos para publicar y cancelar la publicación d
 
 ## Recursos adicionales {#additional-resources}
 
-* [Documentación de páginas de publicación](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/publishing-pages.html)
+* [Documentación de páginas de publicación](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/publishing-pages.html?lang=es)

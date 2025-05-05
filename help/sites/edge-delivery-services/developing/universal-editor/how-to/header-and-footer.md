@@ -471,4 +471,4 @@ Ahora ha explorado cómo se administran y desarrollan los encabezados y pies de 
 
 Este patrón proporciona un enfoque flexible y mantenible para implementar componentes de navegación de todo el sitio.
 
-Para obtener más prácticas recomendadas y técnicas avanzadas, consulte la [documentación del editor universal](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options).
+Para obtener más prácticas recomendadas y técnicas avanzadas, consulte la [documentación del editor universal](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options).

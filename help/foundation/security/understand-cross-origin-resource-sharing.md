@@ -26,7 +26,7 @@ La configuración OSGI descrita en este documento es suficiente para lo siguient
 1. Uso compartido de recursos de un solo origen en AEM Publish
 2. Acceso CORS a AEM Author
 
-Si se requiere acceso CORS de varios orígenes en la publicación de AEM, consulte [esta documentación](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=en#dispatcher-configuration).
+Si se requiere acceso CORS de varios orígenes en la publicación de AEM, consulte [esta documentación](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=es#dispatcher-configuration).
 
 ## Configuración de OSGi de la política de uso compartido de recursos de origen cruzado de Adobe Granite
 
@@ -187,7 +187,7 @@ Por lo general, se pueden aplicar las mismas consideraciones para almacenar en c
 
 ### Permitir encabezados de solicitud CORS
 
-Para permitir que los [encabezados de solicitud HTTP necesarios pasen a AEM para el procesamiento](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders), deben estar permitidos en la configuración `/clientheaders` de Dispatcher.
+Para permitir que los [encabezados de solicitud HTTP necesarios pasen a AEM para el procesamiento](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es#specifying-the-http-headers-to-pass-through-clientheaders), deben estar permitidos en la configuración `/clientheaders` de Dispatcher.
 
 ```
 /clientheaders {

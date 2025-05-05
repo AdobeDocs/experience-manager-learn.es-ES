@@ -49,4 +49,4 @@ Una vez que el proyecto de tema se haya creado correctamente, los usuarios está
 
 ## Insertar los cambios
 
-Si está satisfecho con los cambios, puede insertarlos en su instancia de nube mediante la [canalización front-end](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline)
+Si está satisfecho con los cambios, puede insertarlos en su instancia de nube mediante la [canalización front-end](https://experienceleague.adobe.com/es/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline)

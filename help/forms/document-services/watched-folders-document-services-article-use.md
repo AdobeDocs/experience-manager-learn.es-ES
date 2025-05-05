@@ -20,7 +20,7 @@ ht-degree: 25%
 
 Un administrador puede configurar una carpeta de red, conocida como carpeta inspeccionada, de modo que cuando un usuario coloque un archivo (como un archivo PDF) en la carpeta inspeccionada, se inicie un flujo de trabajo preconfigurado, un servicio o una operación de script para procesar el archivo agregado. Una vez que el servicio realiza la operación especificada, guarda el archivo de resultados en una carpeta de salida especificada. Para obtener más información sobre el flujo de trabajo, servicio y script.
 
-Para obtener más información sobre cómo crear una carpeta vigilada, [haga clic aquí](https://helpx.adobe.com/experience-manager/6-4/forms/using/Creating-Configure-watched-folder.html)
+Para obtener más información sobre cómo crear una carpeta vigilada, [haga clic aquí](https://helpx.adobe.com/es/experience-manager/6-4/forms/using/Creating-Configure-watched-folder.html)
 
 Las carpetas inspeccionadas se utilizan para generar documentos en modo por lotes. Mediante el mecanismo de carpetas inspeccionadas, puede generar comunicaciones interactivas para el canal Imprimir o utilizar el servicio de salida para combinar datos con la plantilla.
 
@@ -28,7 +28,7 @@ Este artículo tratará el caso de uso de la combinación de datos con una plant
 
 El servicio Output es un servicio OSGi que forma parte de AEM Document Services. El servicio Output admite varios formatos de salida y funciones de diseño de salida de AEM Forms Designer. El servicio Output puede convertir plantillas XFA y datos XML para generar documentos de impresión en varios formatos.
 
-Para obtener más información sobre el servicio Output, [haga clic aquí](https://helpx.adobe.com/aem-forms/6/output-service.html).
+Para obtener más información sobre el servicio Output, [haga clic aquí](https://helpx.adobe.com/es/aem-forms/6/output-service.html).
 Para configurar una carpeta vigilada en el sistema, siga los pasos a continuación:
 * [Descargue y extraiga el contenido del archivo zip](assets/outputservicewatchedfolderkt.zip). Este archivo zip contiene un paquete para crear la carpeta vigilada y archivos de muestra para probar el servicio de salida mediante el mecanismo de carpetas vigiladas
    * Sistema Windows

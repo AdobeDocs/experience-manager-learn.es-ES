@@ -49,4 +49,4 @@ Las acciones como enviar un formulario PDF, utilizar la interfaz de usuario del 
 
 Si está viendo el informe de transacciones en la instancia de autor, asegúrese de que la replicación inversa esté configurada en todas las instancias de publicación.
 
-Para obtener más información acerca de los informes de transacciones [haga clic aquí](https://helpx.adobe.com/experience-manager/6-4/forms/using/transaction-reports-overview.html)
+Para obtener más información acerca de los informes de transacciones [haga clic aquí](https://helpx.adobe.com/es/experience-manager/6-4/forms/using/transaction-reports-overview.html)

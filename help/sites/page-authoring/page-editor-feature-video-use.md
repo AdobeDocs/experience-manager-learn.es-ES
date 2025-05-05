@@ -34,5 +34,5 @@ Consulte la [documentación de AEM para obtener una descripción general complet
 ## Recursos adicionales {#additional-resources}
 
 * [Documentación del editor de páginas de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/editing-content.html?lang=es)
-* [Editando documentación de contenido de página](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
-* [Guía del usuario para la creación de sitios](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
+* [Editando documentación de contenido de página](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html?lang=es)
+* [Guía del usuario para la creación de sitios](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html?lang=es)

@@ -208,7 +208,7 @@ $ java -jar aem-publish-p4503.jar -r prerelease
 
 ## Simular distribución de contenido {#content-distribution}
 
-En un entorno Cloud Service real, el contenido se distribuye desde el servicio de creación al de publicación mediante [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html) y la canalización de Adobe. La [Canalización de Adobe](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html?lang=en#content-distribution) es un microservicio aislado disponible solamente en el entorno de la nube.
+En un entorno Cloud Service real, el contenido se distribuye desde el servicio de creación al de publicación mediante [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html) y la canalización de Adobe. La [Canalización de Adobe](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html?lang=es#content-distribution) es un microservicio aislado disponible solamente en el entorno de la nube.
 
 Durante el desarrollo, puede ser deseable simular la distribución de contenido mediante el servicio local de creación y publicación. Esto se puede lograr habilitando los agentes de replicación heredados.
 
@@ -271,7 +271,7 @@ Para detener un tiempo de ejecución de AEM local, ya sea el servicio de AEM Aut
 
 ## Tareas de configuración del tiempo de ejecución local de AEM opcionales
 
-+ __Las variables de entorno de configuración OSGi y las variables secretas__ están [especialmente configuradas para el tiempo de ejecución local de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development), en lugar de administrarlas mediante la CLI de aio.
++ __Las variables de entorno de configuración OSGi y las variables secretas__ están [especialmente configuradas para el tiempo de ejecución local de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=es#local-development), en lugar de administrarlas mediante la CLI de aio.
 
 ## Cuándo actualizar el Jar de inicio rápido
 

@@ -28,4 +28,4 @@ Las miniaturas de vídeo personalizadas de AEM Assets permiten a los autores sel
 
 >[!NOTE]
 >
->Debería ejecutar su instancia de [AEM en modo Dynamic Media](https://experienceleague.adobe.com/docs/)
+>Debería ejecutar su instancia de [AEM en modo Dynamic Media](https://experienceleague.adobe.com/docs/?lang=es)

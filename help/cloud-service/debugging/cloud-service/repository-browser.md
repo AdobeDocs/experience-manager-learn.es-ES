@@ -30,7 +30,7 @@ El Explorador de repositorios está __SOLAMENTE__ disponible en entornos AEM as 
 
 Para acceder al Explorador de repositorios en AEM as a Cloud Service:
 
-1. Asegúrese de que el usuario tenga [el acceso necesario](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/repository-browser.html#access-prerequisites)
+1. Asegúrese de que el usuario tenga [el acceso necesario](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/repository-browser.html?lang=es#access-prerequisites)
 1. Iniciar sesión en [Cloud Manager](https://my.cloudmanager.adobe.com)
 1. Seleccione el programa que contiene el entorno de AEM as a Cloud Service que desea depurar
 1. Abra [Developer Console](./developer-console.md) correspondiente al entorno de AEM as a Cloud Service para depurar
@@ -45,4 +45,4 @@ El Explorador de repositorios se abre para el nivel de servicio seleccionado (au
 
 ## Acceso de publicación y previsualización
 
-De forma predeterminada, el acceso a Publicación o Vista previa es limitado, lo que reduce los recursos disponibles en el Explorador de repositorios. [Para ver todos los recursos en Publicar (o Vista previa), agregue usuarios a un rol de Administradores de Publicación (o Vista previa).](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/repository-browser.html#navigate-the-hierarchy)
+De forma predeterminada, el acceso a Publicación o Vista previa es limitado, lo que reduce los recursos disponibles en el Explorador de repositorios. [Para ver todos los recursos en Publicar (o Vista previa), agregue usuarios a un rol de Administradores de Publicación (o Vista previa).](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/repository-browser.html?lang=es#navigate-the-hierarchy)

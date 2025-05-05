@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Autenticar con AEM Author mediante OKTA
 
-> Consulte [Autenticación SAML 2.0](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html) para obtener instrucciones sobre cómo configurar OKTA con AEM as a Cloud Service.
+> Consulte [Autenticación SAML 2.0](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html?lang=es) para obtener instrucciones sobre cómo configurar OKTA con AEM as a Cloud Service.
 
 El primer paso es configurar la aplicación en el portal OKTA. Una vez que el administrador de OKTA apruebe la aplicación, tendrá acceso al certificado IdP y a la URL de inicio de sesión único. A continuación se indican las opciones que se suelen utilizar para registrar una nueva aplicación.
 

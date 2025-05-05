@@ -56,14 +56,14 @@ A continuación se muestra una representación de alto nivel del flujo de __desa
 
 Durante la fase de desarrollo, se realizan cambios en el front-end como el estilo y el cambio de marca mediante la actualización de los archivos CSS, JS de la carpeta `ui.frontend/src/main/webpack`. Luego, durante el tiempo de compilación, el módulo-bundler [webpack](https://webpack.js.org/) y el complemento maven convierten estos archivos en clientlibs de AEM optimizados bajo el módulo `ui.apps`.
 
-Los cambios del front-end se implementan en el entorno de AEM as a Cloud Service al ejecutar la canalización [__Full-stack__ en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html).
+Los cambios del front-end se implementan en el entorno de AEM as a Cloud Service al ejecutar la canalización [__Full-stack__ en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?lang=es).
 
 Los recursos front-end se entregan a los exploradores web a través de rutas URI que comienzan por `/etc.clientlibs/` y, por lo general, se almacenan en la caché en AEM Dispatcher y CDN.
 
 
 >[!NOTE]
 >
-> Del mismo modo, en el __Recorrido de creación rápida de sitios de AEM__, los [cambios del front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/customize-theme.html) se implementan en el entorno de AEM as a Cloud Service ejecutando la canalización __Front-End__, consulte [Configurar la canalización](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup.html)
+> Del mismo modo, en el __Recorrido de creación rápida de sitios de AEM__, los [cambios del front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/customize-theme.html?lang=es) se implementan en el entorno de AEM as a Cloud Service ejecutando la canalización __Front-End__, consulte [Configurar la canalización](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup.html?lang=es)
 
 ### Revisar las configuraciones de Webpack en el proyecto de WKND Sites {#development-frontend-webpack-clientlib}
 
@@ -134,7 +134,7 @@ Los recursos front-end se entregan a los exploradores web a través de rutas URI
 
 ### Implementación en AEM as a Cloud Service {#deployment-frontend-aemaacs}
 
-La canalización [__Full-stack__](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?#full-stack-pipeline) implementa estos cambios en un entorno de AEM as a Cloud Service.
+La canalización [__Full-stack__](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?lang=es&#full-stack-pipeline) implementa estos cambios en un entorno de AEM as a Cloud Service.
 
 
 ### Envío desde AEM as a Cloud Service {#delivery-frontend-aemaacs}

@@ -55,7 +55,7 @@ Copie el ID de cliente, el secreto de cliente y los ámbitos
 
 Si ya tiene un proyecto de AEM Forms, [siga estas instrucciones](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) para habilitar la credencial ClientID de servidor a servidor OAuth del proyecto de Adobe Developer Console para que se comunique con la instancia de AEM
 
-Si no tiene un proyecto de AEM Forms, cree un [proyecto de AEM Forms siguiendo esta documentación.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/getting-started) y, a continuación, habilite la credencial ClientID de servidor a servidor OAuth del proyecto de Adobe Developer Console para comunicarse con la instancia de AEM [mediante esta documentación.](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis)
+Si no tiene un proyecto de AEM Forms, cree un [proyecto de AEM Forms siguiendo esta documentación.](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/getting-started) y, a continuación, habilite la credencial ClientID de servidor a servidor OAuth del proyecto de Adobe Developer Console para comunicarse con la instancia de AEM [mediante esta documentación.](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis)
 
 
 ## Siguientes pasos

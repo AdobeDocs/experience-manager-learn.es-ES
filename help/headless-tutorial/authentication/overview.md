@@ -37,7 +37,7 @@ Asegúrese de que las siguientes opciones estén implementadas antes de seguir e
 
 ## Introducción a la aplicación externa
 
-Este tutorial utiliza una [aplicación Node.js simple](./assets/aem-guides_token-authentication-external-application.zip) que se ejecuta desde la línea de comandos para actualizar los metadatos de los recursos en AEM as a Cloud Service mediante la [API HTTP de Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html).
+Este tutorial utiliza una [aplicación Node.js simple](./assets/aem-guides_token-authentication-external-application.zip) que se ejecuta desde la línea de comandos para actualizar los metadatos de los recursos en AEM as a Cloud Service mediante la [API HTTP de Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=es).
 
 El flujo de ejecución de la aplicación Node.js es el siguiente:
 

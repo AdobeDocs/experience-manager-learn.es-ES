@@ -103,7 +103,7 @@ Además, asegúrese de haber completado el ejercicio práctico anterior:
 
 + [Descargar herramientas de modernización de AEM](https://github.com/adobe/aem-modernize-tools/releases/latest)
 + [Documentación de herramientas de modernización de AEM](https://opensource.adobe.com/aem-modernize-tools/)
-+ [Gems de AEM: presentación del conjunto de modernización de AEM](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/Introducing-the-AEM-Modernization-Suite.html)
++ [Gems de AEM: presentación del conjunto de modernización de AEM](https://helpx.adobe.com/es/experience-manager/kt/eseminars/gems/Introducing-the-AEM-Modernization-Suite.html)
 
 1. Implemente el sitio wknd-legacy recién modernizado en el SDK local de AEM. AEM PREGUNTAR se puede descargar aquí:
    + [Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html).

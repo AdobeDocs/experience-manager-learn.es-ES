@@ -26,4 +26,4 @@ El recorte inteligente de Dynamic Media para vídeo utiliza Adobe Sensei para ra
 
 >[!NOTE]
 >
->El vídeo anterior supone que el servicio AEM se está ejecutando en el modo Dynamic Media S7. [Aquí puede encontrar instrucciones para configurar AEM con Dynamic Media.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html)
+>El vídeo anterior supone que el servicio AEM se está ejecutando en el modo Dynamic Media S7. [Aquí puede encontrar instrucciones para configurar AEM con Dynamic Media.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html?lang=es)

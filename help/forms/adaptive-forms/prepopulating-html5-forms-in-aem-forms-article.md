@@ -33,7 +33,7 @@ slingRequest.setAttribute(&quot;data&quot;, contenido);
 
 En este ejemplo, configuramos el atributo de datos con el contenido. El contenido representa los datos con los que desea rellenar previamente el formulario. Normalmente, recuperaría el &quot;contenido&quot; realizando una llamada de REST a un servicio interno.
 
-Para aplicar este caso de uso, debe crear un perfil personalizado. Los detalles sobre cómo crear un perfil personalizado están claramente documentados en [Documentación de AEM Forms aquí](https://helpx.adobe.com/aem-forms/6/html5-forms/custom-profile.html).
+Para aplicar este caso de uso, debe crear un perfil personalizado. Los detalles sobre cómo crear un perfil personalizado están claramente documentados en [Documentación de AEM Forms aquí](https://helpx.adobe.com/es/aem-forms/6/html5-forms/custom-profile.html).
 
 Una vez creado el perfil personalizado, creará un archivo JSP que recuperará los datos realizando llamadas a su sistema back-end. Una vez recuperados los datos, utilizará slingRequest.setAttribute(&quot;data&quot;, content); para rellenar previamente el formulario
 

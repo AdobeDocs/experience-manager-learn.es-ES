@@ -54,7 +54,7 @@ Un vídeo explicativo de cómo instalar y usar [!DNL Apache Sling Dynamic Includ
    -->
    ```
 
-1. (Opcional) Repita el último paso para permitir que los componentes del contenido [bloqueado (inicial) de las plantillas editables](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/page-templates-editable.html) se proporcionen también a través de [!DNL SDI]. El motivo de la configuración adicional es que el contenido bloqueado de las plantillas editables se proporciona desde `/conf` en lugar de desde `/content`.
+1. (Opcional) Repita el último paso para permitir que los componentes del contenido [bloqueado (inicial) de las plantillas editables](https://helpx.adobe.com/es/experience-manager/6-5/sites/developing/using/page-templates-editable.html) se proporcionen también a través de [!DNL SDI]. El motivo de la configuración adicional es que el contenido bloqueado de las plantillas editables se proporciona desde `/conf` en lugar de desde `/content`.
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -148,7 +148,7 @@ Un vídeo explicativo de cómo instalar y usar [!DNL Apache Sling Dynamic Includ
 
 >[!NOTE]
 >
->Si usa [!DNL Sling Dynamic Includes] para servir inclusiones del lado del perímetro (ESI), asegúrese de almacenar en caché [los encabezados de respuesta relevantes en la caché de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#CachingHTTPResponseHeaders). Entre los posibles encabezados se incluyen los siguientes:
+>Si usa [!DNL Sling Dynamic Includes] para servir inclusiones del lado del perímetro (ESI), asegúrese de almacenar en caché [los encabezados de respuesta relevantes en la caché de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es#CachingHTTPResponseHeaders). Entre los posibles encabezados se incluyen los siguientes:
 >
 >* &quot;Cache-Control&quot;
 >* &quot;Content-Disposition&quot;

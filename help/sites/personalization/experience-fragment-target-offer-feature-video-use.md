@@ -35,5 +35,5 @@ Adobe Experience Manager vuelve a imaginar el flujo de trabajo de personalizaci�
 
 ## Recursos adicionales {#additional-resources}
 
-* [Documentación de fragmentos de experiencias](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html)
+* [Documentación de fragmentos de experiencias](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html?lang=es)
 * [Uso de fragmentos de experiencias](/help/sites/experience-fragments/experience-fragments-feature-video-use.md)

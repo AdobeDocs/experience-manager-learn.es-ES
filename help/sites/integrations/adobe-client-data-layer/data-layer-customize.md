@@ -21,13 +21,13 @@ ht-degree: 1%
 
 # Personalizar la capa de datos del cliente de Adobe con componentes de AEM {#customize-data-layer}
 
-Obtenga información sobre cómo personalizar la capa de datos del cliente de Adobe con contenido de componentes de AEM personalizados. Aprenda a utilizar las API proporcionadas por [Componentes principales de AEM para ampliar](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/extending.html) y personalizar la capa de datos.
+Obtenga información sobre cómo personalizar la capa de datos del cliente de Adobe con contenido de componentes de AEM personalizados. Aprenda a utilizar las API proporcionadas por [Componentes principales de AEM para ampliar](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/extending.html?lang=es) y personalizar la capa de datos.
 
 ## Lo que va a generar
 
 ![Capa de datos de firma](assets/adobe-client-data-layer/byline-data-layer-html.png)
 
-En este tutorial, vamos a explorar varias opciones para ampliar la capa de datos del cliente de Adobe al actualizar el componente WKND [Byline](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/custom-component.html). El componente _Byline_ es un **componente personalizado** y las lecciones aprendidas en este tutorial se pueden aplicar a otros componentes personalizados.
+En este tutorial, vamos a explorar varias opciones para ampliar la capa de datos del cliente de Adobe al actualizar el componente WKND [Byline](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/custom-component.html?lang=es). El componente _Byline_ es un **componente personalizado** y las lecciones aprendidas en este tutorial se pueden aplicar a otros componentes personalizados.
 
 ### Objetivos {#objective}
 
@@ -173,7 +173,7 @@ Para insertar datos sobre el componente en la capa de datos, primero vamos a act
 
 ## Actualizar el HTL de firma {#htl}
 
-A continuación, actualice `Byline` [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html?lang=en). HTL (lenguaje de plantilla de HTML) es la plantilla utilizada para procesar el HTML del componente.
+A continuación, actualice `Byline` [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html?lang=es). HTL (lenguaje de plantilla de HTML) es la plantilla utilizada para procesar el HTML del componente.
 
 Se utiliza un atributo de datos especial `data-cmp-data-layer` en cada componente de AEM para exponer su capa de datos. JavaScript proporcionado por los componentes principales de AEM busca este atributo de datos. El valor de este atributo de datos se rellena con la cadena JSON devuelta por el método `getData()` del modelo Byline Sling y se inserta en la capa de datos del cliente de Adobe.
 

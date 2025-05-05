@@ -145,7 +145,7 @@ Hay partes adicionales que son subsecciones de las configuraciones de archivos d
 
 #### Directorio de caché
 
-Este directorio contiene todos los `_cache.any`, `_invalidate.any` archivos que ha creado y que contienen sus reglas sobre cómo desea que el módulo administre los elementos de almacenamiento en caché que provienen de AEM, así como la sintaxis de reglas de invalidación.  Encontrará más detalles sobre esta sección aquí [aquí](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)
+Este directorio contiene todos los `_cache.any`, `_invalidate.any` archivos que ha creado y que contienen sus reglas sobre cómo desea que el módulo administre los elementos de almacenamiento en caché que provienen de AEM, así como la sintaxis de reglas de invalidación.  Encontrará más detalles sobre esta sección aquí [aquí](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es#configuring-the-dispatcher-cache-cache)
 
 - `/etc/httpd/conf.dispatcher.d/cache/`
 

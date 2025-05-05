@@ -28,4 +28,4 @@ Deformación de tiempo es una función de Adobe Experience Manager Sites que pro
 
 ## Más recursos {#more-resources}
 
-* [Trabajo con versiones de página - Deformación de tiempo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/page-versions.html)
+* [Trabajo con versiones de página - Deformación de tiempo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/page-versions.html?lang=es)

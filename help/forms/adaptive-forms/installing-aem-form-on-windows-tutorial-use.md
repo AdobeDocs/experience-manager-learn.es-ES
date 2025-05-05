@@ -86,4 +86,4 @@ Aunque recomendamos seguir la [documentación oficial](https://helpx.adobe.com/e
 1. Guarde los cambios.
 
 Felicitaciones!!! Ya ha instalado y configurado AEM Forms en su sistema.
-Según sus necesidades, puede configurar [Extensiones de Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) o [PDFG](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html) en su servidor
+Según sus necesidades, puede configurar [Extensiones de Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html?lang=es) o [PDFG](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=es) en su servidor

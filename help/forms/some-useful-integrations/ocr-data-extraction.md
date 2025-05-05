@@ -83,7 +83,7 @@ Se admite lo siguiente con una referencia a la definición de requestBody
 
 ## Crear Source de datos
 
-Para integrar AEM/AEM Forms con aplicaciones de terceros, necesitamos [crear una fuente de datos](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) en la configuración de los servicios en la nube. Use [archivo swagger](assets/drivers-license-swagger.zip) para crear su fuente de datos.
+Para integrar AEM/AEM Forms con aplicaciones de terceros, necesitamos [crear una fuente de datos](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html?lang=es) en la configuración de los servicios en la nube. Use [archivo swagger](assets/drivers-license-swagger.zip) para crear su fuente de datos.
 
 ## Crear modelo de datos de formulario
 

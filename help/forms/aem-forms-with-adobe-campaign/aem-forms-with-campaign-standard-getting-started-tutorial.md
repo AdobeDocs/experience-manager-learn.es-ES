@@ -28,7 +28,7 @@ ACS tiene un completo conjunto de API expuestas, lo que permite a ACS interconec
 
 Para integrar AEM Forms con ACS deberá seguir los siguientes pasos:
 
-* [Configure el acceso a la API en su instancia de ACS.](https://experienceleague.adobe.com/docs/campaign-standard/using/working-with-apis/get-started-apis.html?lang=en)
+* [Configure el acceso a la API en su instancia de ACS.](https://experienceleague.adobe.com/docs/campaign-standard/using/working-with-apis/get-started-apis.html?lang=es)
 * Cree el token web JSON.
 * Intercambie el token web JSON con el servicio de Adobe Identity Management por un token de acceso.
 * Incluya este token de acceso en el encabezado HTTP de autorización, junto con X-API-Key en cada solicitud a la instancia de ACS.

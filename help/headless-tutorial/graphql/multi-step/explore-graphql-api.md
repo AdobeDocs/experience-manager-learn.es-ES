@@ -65,7 +65,7 @@ Se debe configurar un punto de conexión de GraphQL para habilitar las consultas
 
 ## Uso del IDE de GraphiQL
 
-La herramienta [GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) permite a los desarrolladores crear y probar consultas de contenido en el entorno de AEM actual. La herramienta GraphiQL también permite a los usuarios **mantener o guardar** consultas para que las usen las aplicaciones cliente en una configuración de producción.
+La herramienta [GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html?lang=es) permite a los desarrolladores crear y probar consultas de contenido en el entorno de AEM actual. La herramienta GraphiQL también permite a los usuarios **mantener o guardar** consultas para que las usen las aplicaciones cliente en una configuración de producción.
 
 A continuación, explore la potencia de la API de GraphQL de AEM mediante el IDE integrado de GraphiQL.
 
@@ -216,7 +216,7 @@ A continuación, veamos cómo es posible filtrar los resultados a un subconjunto
 
    ![Usar variables de consulta para filtrar](assets/explore-graphql-api/using-query-variables-filter.png)
 
-   Hay muchas otras opciones para filtrar y crear consultas complejas. Vea [Aprender a usar GraphQL con AEM: contenido de muestra y consultas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html).
+   Hay muchas otras opciones para filtrar y crear consultas complejas. Vea [Aprender a usar GraphQL con AEM: contenido de muestra y consultas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html?lang=es).
 
 1. Mejore la consulta anterior para recuperar la imagen del perfil
 
@@ -280,7 +280,7 @@ También es posible consultar directamente un solo fragmento de contenido. El co
 
 ## Persistir consultas {#persist-queries}
 
-Una vez que el desarrollador esté satisfecho con la consulta y los datos de resultados devueltos por la consulta, el siguiente paso es almacenar o mantener la consulta en AEM. Las [consultas persistentes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html) son el mecanismo preferido para exponer la API de GraphQL a aplicaciones cliente. Una vez que una consulta ha persistido, se puede solicitar mediante una petición GET y se puede almacenar en caché en las capas Dispatcher y CDN. El rendimiento de las consultas persistentes es mucho mejor. Además de las ventajas de rendimiento, las consultas persistentes garantizan que los datos adicionales no se expongan accidentalmente a las aplicaciones cliente. Encontrará más detalles sobre [consultas persistentes aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html).
+Una vez que el desarrollador esté satisfecho con la consulta y los datos de resultados devueltos por la consulta, el siguiente paso es almacenar o mantener la consulta en AEM. Las [consultas persistentes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?lang=es) son el mecanismo preferido para exponer la API de GraphQL a aplicaciones cliente. Una vez que una consulta ha persistido, se puede solicitar mediante una petición GET y se puede almacenar en caché en las capas Dispatcher y CDN. El rendimiento de las consultas persistentes es mucho mejor. Además de las ventajas de rendimiento, las consultas persistentes garantizan que los datos adicionales no se expongan accidentalmente a las aplicaciones cliente. Encontrará más detalles sobre [consultas persistentes aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?lang=es).
 
 A continuación, mantenga dos consultas simples, que se utilizan en el capítulo siguiente.
 
@@ -396,7 +396,7 @@ Descargue el contenido, los modelos y las consultas persistentes creados en los 
 
 ## Recursos adicionales
 
-Obtenga más información sobre las consultas de GraphQL en [Aprender a usar GraphQL con AEM: contenido de muestra y consultas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html).
+Obtenga más información sobre las consultas de GraphQL en [Aprender a usar GraphQL con AEM: contenido de muestra y consultas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html?lang=es).
 
 ## Enhorabuena. {#congratulations}
 

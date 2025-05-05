@@ -73,7 +73,7 @@ El archivo Next.js está diseñado para conectarse al servicio __AEM Publish__ y
    AEM_AUTH_PASSWORD=password-for-the-aem-user-account
    ```
 
-   Para usar un [token de desarrollo local de AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#generating-the-access-token), establezca `AEM_AUTH_METHOD=dev-token` y proporcione el valor completo del token de desarrollo en la propiedad `AEM_AUTH_DEV_TOKEN`.
+   Para usar un [token de desarrollo local de AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=es#generating-the-access-token), establezca `AEM_AUTH_METHOD=dev-token` y proporcione el valor completo del token de desarrollo en la propiedad `AEM_AUTH_DEV_TOKEN`.
 
    ```plain
    ...

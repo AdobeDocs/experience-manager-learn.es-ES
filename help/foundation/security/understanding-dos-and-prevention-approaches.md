@@ -42,7 +42,7 @@ En la tabla siguiente se describe cómo evitar y mitigar los ataques DoS y DDoS:
             <td>Firewall de aplicaciones web (WAF)</td>
             <td>Una solución de seguridad diseñada para proteger las aplicaciones web de diversos tipos de ataques.</td>
             <td>
-            <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/examples-and-analysis#waf-rules" target="_blank">Licencia de protección WAF-DDoS</a></td>
+            <a href="https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/examples-and-analysis#waf-rules" target="_blank">Licencia de protección WAF-DDoS</a></td>
             <td><a href="https://docs.aws.amazon.com/waf/" target="_blank">AWS</a> o <a href="https://azure.microsoft.com/en-us/products/web-application-firewall" target="_blank">Azure</a> WAF mediante contrato AMS.</td>
             <td>Su WAF preferido</td>
         </tr>
@@ -54,7 +54,7 @@ En la tabla siguiente se describe cómo evitar y mitigar los ataques DoS y DDoS:
         <tr>
             <td>Reglas de filtro de tráfico</td>
             <td>Las reglas de filtro de tráfico se pueden utilizar para bloquear o permitir solicitudes en la capa de CDN.</td>
-            <td><a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/examples-and-analysis" target="_blank">Ejemplo de reglas de filtro de tráfico</a></td>
+            <td><a href="https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/examples-and-analysis" target="_blank">Ejemplo de reglas de filtro de tráfico</a></td>
             <td>Funciones de limitación de reglas de <a href="https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-statement-type-rate-based.html" target="_blank">AWS</a> o <a href="https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/rate-limiting-overview" target="_blank">Azure</a>.</td>
             <td>Su solución preferida</td>
         </tr>

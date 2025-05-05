@@ -115,7 +115,7 @@ Hay disponible una descripción completa de los archivos de configuración en la
 
 ## Validar configuraciones
 
-Opcionalmente, las configuraciones del servidor web Dispatcher y Apache (a través de `httpd -t`) se pueden validar utilizando el script `validate` (no confundirlo con el ejecutable `validator`). El script `validate` proporciona una forma cómoda de ejecutar las [tres fases](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/validation-debug.html?lang=en) de `validator`.
+Opcionalmente, las configuraciones del servidor web Dispatcher y Apache (a través de `httpd -t`) se pueden validar utilizando el script `validate` (no confundirlo con el ejecutable `validator`). El script `validate` proporciona una forma cómoda de ejecutar las [tres fases](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/validation-debug.html?lang=es) de `validator`.
 
 
 >[!BEGINTABS]

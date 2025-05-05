@@ -41,4 +41,4 @@ URL de plantillas editables (instancia local de AEM): [http://localhost:4502/lib
 ## Recursos adicionales {#additional-resources}
 
 * [Plantillas de página editables: documentación](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=es)
-* [Creando plantillas de página - Documentación](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/templates.html)
+* [Creando plantillas de página - Documentación](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/templates.html?lang=es)

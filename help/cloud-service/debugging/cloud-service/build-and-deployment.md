@@ -70,11 +70,11 @@ Los errores identificados en esta fase deben ser reproducibles generando el proy
 
 El análisis de código realiza un análisis de código estático mediante una combinación de prácticas recomendadas específicas de Java y AEM.
 
-El análisis del código provoca un error de compilación si existen vulnerabilidades de seguridad críticas en el código. Las infracciones menores se pueden anular, pero se recomienda corregirlas. Tenga en cuenta que el análisis de código es imperfecto y puede dar como resultado [falsos positivos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/overview-test-results.html#dealing-with-false-positives).
+El análisis del código provoca un error de compilación si existen vulnerabilidades de seguridad críticas en el código. Las infracciones menores se pueden anular, pero se recomienda corregirlas. Tenga en cuenta que el análisis de código es imperfecto y puede dar como resultado [falsos positivos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/overview-test-results.html?lang=es#dealing-with-false-positives).
 
 Para resolver los problemas de digitalización de código, descargue el informe en formato CSV proporcionado por Cloud Manager mediante el botón **Descargar detalles** y revise las entradas.
 
-Para obtener más información, consulte Reglas específicas de AEM, consulte las [reglas de análisis de código personalizadas específicas de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/custom-code-quality-rules.html) de la documentación de Cloud Manager.
+Para obtener más información, consulte Reglas específicas de AEM, consulte las [reglas de análisis de código personalizadas específicas de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/custom-code-quality-rules.html?lang=es) de la documentación de Cloud Manager.
 
 ## Generar imágenes
 
@@ -102,7 +102,7 @@ set the 'mergeConfigurations' flag to 'true' if you want to merge multiple confi
 #### Causa 2
 
 + __Causa:__ El del proyecto de AEM incluye incorrectamente el mismo paquete de código dos veces, lo que da como resultado la duplicación de cualquier configuración OSGi contenida en dicho paquete.
-+ __Resolución:__ Revise todos los pom.xml de paquetes incrustados en el proyecto all y asegúrese de que tienen `filevault-package-maven-plugin` [configuración](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#cloud-manager-target) establecida en `<cloudManagerTarget>none</cloudManagerTarget>`.
++ __Resolución:__ Revise todos los pom.xml de paquetes incrustados en el proyecto all y asegúrese de que tienen `filevault-package-maven-plugin` [configuración](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=es#cloud-manager-target) establecida en `<cloudManagerTarget>none</cloudManagerTarget>`.
 
 ### Script de repoinit mal formado
 
@@ -230,8 +230,8 @@ Para validar este problema, la causa del comportamiento fallido es:
 + __Causa:__ El usuario del servicio de replicación de AEM que se utilizó para implementar paquetes de contenido en el servicio de publicación de AEM no puede escribir en `/var` en AEM Publish. Esto provoca que la implementación del paquete de contenido en el servicio de publicación de AEM falle.
 + __Resolución:__ Las siguientes maneras de resolver estos problemas se enumeran en el orden de preferencia:
    1. Si los recursos de `/var` no son necesarios, quite los recursos de `/var` de los paquetes de contenido que se implementan como parte de la aplicación.
-   2. Si los recursos de `/var` son necesarios, defina las estructuras de nodos mediante [repoinit](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#repoinit). Los scripts Repoinit se pueden dirigir a AEM Author, AEM Publish o ambos mediante los modos de ejecución OSGi.
-   3. Si los recursos de `/var` solo son necesarios para el autor de AEM y no se pueden modelar razonablemente con [repoinit](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#repoinit), muévalos a un paquete de contenido discreto que solo esté instalado en el autor de AEM al [incrustarlo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=es#embeddeds) en el paquete `all` en una carpeta de modo de ejecución de autor de AEM (`<target>/apps/example-packages/content/install.author</target>`).
+   2. Si los recursos de `/var` son necesarios, defina las estructuras de nodos mediante [repoinit](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=es#repoinit). Los scripts Repoinit se pueden dirigir a AEM Author, AEM Publish o ambos mediante los modos de ejecución OSGi.
+   3. Si los recursos de `/var` solo son necesarios para el autor de AEM y no se pueden modelar razonablemente con [repoinit](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=es#repoinit), muévalos a un paquete de contenido discreto que solo esté instalado en el autor de AEM al [incrustarlo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=es#embeddeds) en el paquete `all` en una carpeta de modo de ejecución de autor de AEM (`<target>/apps/example-packages/content/install.author</target>`).
    4. Proporcione ACL apropiados al usuario de servicio `sling-distribution-importer` tal como se describe en este [Adobe KB](https://helpx.adobe.com/in/experience-manager/kb/cm/cloudmanager-deploy-fails-due-to-sling-distribution-aem.html).
 
 ### Creación de un caso de soporte de Adobe

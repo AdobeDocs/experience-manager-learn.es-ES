@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Pasos necesarios para probar los dos enfoques
 
-* Configure el servicio de correo CQ de [Day](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=en#configuring-the-mail-service) para enviar correos electrónicos desde el servidor de AEM Forms
+* Configure el servicio de correo CQ de [Day](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=es#configuring-the-mail-service) para enviar correos electrónicos desde el servidor de AEM Forms
 * Implementar el paquete [formattachments](assets/formattachments.formattachments.core-1.0-SNAPSHOT.jar) mediante la consola web [felix](http://localhost:4502/system/console/bundles)
 
 ## Enviar archivo zip como archivo adjunto de correo electrónico

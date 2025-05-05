@@ -21,7 +21,7 @@ ht-degree: 16%
 
 Puede utilizar la API por lotes para generar varias comunicaciones interactivas a partir de una plantilla. La plantilla es una comunicación interactiva sin ningún tipo de datos. La API por lotes combina datos con una plantilla para generar una comunicación interactiva. La API resulta muy útil a la hora de producir comunicaciones interactivas de forma masiva, como facturas telefónicas y extractos de tarjetas de crédito para varios clientes.
 
-[Más información sobre la API de generación por lotes](https://experienceleague.adobe.com/docs/experience-manager-65/forms/interactive-communications/generate-multiple-interactive-communication-using-batch-api.html)
+[Más información sobre la API de generación por lotes](https://experienceleague.adobe.com/docs/experience-manager-65/forms/interactive-communications/generate-multiple-interactive-communication-using-batch-api.html?lang=es)
 
 Este artículo proporciona recursos de ejemplo para generar documentos de comunicaciones interactivas mediante la API por lotes.
 

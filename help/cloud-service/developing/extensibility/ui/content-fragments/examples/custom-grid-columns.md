@@ -208,7 +208,7 @@ Si se requieren otros datos para rellenar la columna personalizada, se pueden re
 
 >[!IMPORTANT]
 >
-> Asegúrese de que la instancia de autor de AEM esté configurada para permitir [solicitudes de origen cruzado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html) desde los orígenes en los que se está ejecutando la aplicación AppBuilder. Los orígenes permitidos incluyen `https://localhost:9080`, el origen de fase de AppBuilder y el origen de producción de AppBuilder.
+> Asegúrese de que la instancia de autor de AEM esté configurada para permitir [solicitudes de origen cruzado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=es) desde los orígenes en los que se está ejecutando la aplicación AppBuilder. Los orígenes permitidos incluyen `https://localhost:9080`, el origen de fase de AppBuilder y el origen de producción de AppBuilder.
 >
 > Como alternativa, la extensión puede llamar a una [acción AppBuilder](../../runtime-action.md) personalizada que realice la solicitud al autor de AEM en nombre de la extensión.
 

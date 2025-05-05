@@ -256,7 +256,7 @@ Las prácticas recomendadas definidas en esta sección pertenecen a &quot;style-
 
 ## Recursos adicionales {#additional-resources}
 
-* [Documentación del sistema de estilos](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/style-system.html)
+* [Documentación del sistema de estilos](https://helpx.adobe.com/es/experience-manager/6-5/sites/authoring/using/style-system.html)
 * [Creando bibliotecas de cliente de AEM](https://helpx.adobe.com/es/experience-manager/6-5/sites/developing/using/clientlibs.html)
 * [Sitio web de documentación de BEM (Modificador de elementos de bloque)](https://getbem.com/)
 * [MENOS sitio web de documentación](https://lesscss.org/)

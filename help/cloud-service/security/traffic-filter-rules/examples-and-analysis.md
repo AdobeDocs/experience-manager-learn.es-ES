@@ -163,7 +163,7 @@ Sin embargo, esta vez debería ver las **solicitudes bloqueadas** y los valores 
 
 Vamos a **evitar ataques DoS** bloqueando solicitudes desde una dirección IP haciendo 100 solicitudes por segundo, causando que se bloquee durante 5 minutos.
 
-- Agregue la siguiente regla de filtro de tráfico de límite de tasa [rate limit](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#ratelimit-structure) al archivo `/config/cdn.yaml` del proyecto WKND.
+- Agregue la siguiente regla de filtro de tráfico de límite de tasa [rate limit](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=es#ratelimit-structure) al archivo `/config/cdn.yaml` del proyecto WKND.
 
 ```yaml
 kind: CDN
@@ -227,7 +227,7 @@ Todos los clientes de Sites y Forms pueden configurar los ejemplos de reglas de 
 
 A continuación, vamos a explorar la experiencia de un cliente que ha adquirido una licencia de seguridad mejorada o de protección WAF-DDoS, que le permite configurar reglas avanzadas para proteger los sitios web de ataques más sofisticados.
 
-Antes de continuar, habilite la protección WAF-DDoS para su programa, tal como se describe en la documentación de reglas de filtro de tráfico [pasos de configuración](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=en#setup).
+Antes de continuar, habilite la protección WAF-DDoS para su programa, tal como se describe en la documentación de reglas de filtro de tráfico [pasos de configuración](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=es#setup).
 
 #### Sin indicadores WAFF
 
@@ -264,7 +264,7 @@ Observe cómo los paneles **WAF Flags distribution** y **Ataques principales** m
 
 Ahora vamos a agregar una regla de WAF que contenga la propiedad `wafFlags` como parte de la propiedad `action` y **bloquear las solicitudes de ataques simulados**.
 
-Desde una perspectiva de sintaxis, las reglas de WAF son similares a las vistas anteriormente, sin embargo, la propiedad `action` hace referencia a uno o más valores `wafFlags`. Para obtener más información sobre `wafFlags`, consulte la sección [Lista de marcas de WAF](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#waf-flags-list).
+Desde una perspectiva de sintaxis, las reglas de WAF son similares a las vistas anteriormente, sin embargo, la propiedad `action` hace referencia a uno o más valores `wafFlags`. Para obtener más información sobre `wafFlags`, consulte la sección [Lista de marcas de WAF](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=es#waf-flags-list).
 
 - Agregue la siguiente regla al archivo `/config/cdn.yaml` del proyecto WKND. Observe cómo la regla `block-waf-flags` incluye algunos de los wafFlags que aparecieron en la herramienta de tablero cuando se atacaron con tráfico malintencionado simulado. De hecho, es una buena práctica con el tiempo analizar los registros para determinar qué nuevas reglas declarar, a medida que evoluciona el panorama de amenazas.
 
@@ -352,7 +352,7 @@ Familiarícese con las [prácticas recomendadas](./best-practices.md) para reduc
 
 ## Recursos adicionales
 
-[Sintaxis de reglas de filtro de tráfico](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#rules-syntax)
+[Sintaxis de reglas de filtro de tráfico](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=es#rules-syntax)
 
-[Formato de registro de CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#cdn-log-format)
+[Formato de registro de CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=es#cdn-log-format)
 

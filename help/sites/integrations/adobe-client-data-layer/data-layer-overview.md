@@ -26,7 +26,7 @@ La capa de datos del cliente de Adobe presenta un método estándar para recopil
 
 >[!NOTE]
 >
-> ¿Desea habilitar la capa de datos del cliente de Adobe AEM en el sitio de la? [Vea las instrucciones aquí](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation).
+> ¿Desea habilitar la capa de datos del cliente de Adobe AEM en el sitio de la? [Vea las instrucciones aquí](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=es#installation-activation).
 
 ## Exploración de la capa de datos
 

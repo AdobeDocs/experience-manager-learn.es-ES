@@ -20,7 +20,7 @@ ht-degree: 0%
 # Manipular archivos PDF mediante el extremo DDX de invocación
 
 
-El siguiente paso es realizar una llamada de POST HTTP al extremo con los parámetros necesarios. La plantilla y los archivos de datos se proporcionan como archivos de recursos. Las propiedades del PDF generado se especifican mediante el parámetro de la opción en la solicitud. La propiedad embedFonts se utiliza para incrustar fuentes personalizadas en el PDF generado. Siga [esta documentación](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-set-up.html) para implementar fuentes personalizadas en la instancia de nube de Forms. Las propiedades se especifican en el archivo de recursos options.json. Desde, el punto final tiene autenticación basada en token. Pasamos el token de acceso en el encabezado de la solicitud.
+El siguiente paso es realizar una llamada de POST HTTP al extremo con los parámetros necesarios. La plantilla y los archivos de datos se proporcionan como archivos de recursos. Las propiedades del PDF generado se especifican mediante el parámetro de la opción en la solicitud. La propiedad embedFonts se utiliza para incrustar fuentes personalizadas en el PDF generado. Siga [esta documentación](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-set-up.html?lang=es) para implementar fuentes personalizadas en la instancia de nube de Forms. Las propiedades se especifican en el archivo de recursos options.json. Desde, el punto final tiene autenticación basada en token. Pasamos el token de acceso en el encabezado de la solicitud.
 
 El siguiente código se utilizó para generar el PDF combinando datos con la plantilla
 

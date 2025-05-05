@@ -22,7 +22,7 @@ Asignar una tarea de flujo de trabajo de AEM Forms al administrador del emisor.
 
 Cuando se utiliza un formulario adaptable en el flujo de trabajo de AEM, es posible que desee asignar dinámicamente una tarea al administrador del remitente del formulario. Para aplicar este caso de uso, tendremos que configurar AEM con LDAP.
 
-Los pasos necesarios para configurar AEM con LDAP se explican en [detalle aquí.](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ldap-config.html)
+Los pasos necesarios para configurar AEM con LDAP se explican en [detalle aquí.](https://helpx.adobe.com/es/experience-manager/6-5/sites/administering/using/ldap-config.html)
 
 A los efectos de este artículo, adjunto archivos de configuración utilizados en la configuración de AEM con Adobe Ldap. Estos archivos se incluyen en el paquete, que se puede importar mediante el administrador de paquetes.
 

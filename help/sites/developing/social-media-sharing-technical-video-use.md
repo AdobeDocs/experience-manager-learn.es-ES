@@ -35,12 +35,12 @@ Este vídeo explora las siguientes funciones del componente Compartir en redes s
 
 [http://localhost:4502/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl](http://localhost:4502/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl)
 
-El externalizador de [AEM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html) debe configurarse tanto en AEM Author como en AEM Publish para asignar el modo de ejecución de publicación al dominio de acceso público que se usa para acceder a AEM Publish.
+El externalizador de [AEM](https://helpx.adobe.com/es/experience-manager/6-5/sites/developing/using/externalizer.html) debe configurarse tanto en AEM Author como en AEM Publish para asignar el modo de ejecución de publicación al dominio de acceso público que se usa para acceder a AEM Publish.
 
-En este vídeo utilizamos `/etc/hosts` para suplantar *www.example.com* y resolver en localhost, y usamos una [configuración básica de AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html) para permitir que www.example.com inicie AEM Publish.
+En este vídeo utilizamos `/etc/hosts` para suplantar *www.example.com* y resolver en localhost, y usamos una [configuración básica de AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=es) para permitir que www.example.com inicie AEM Publish.
 
 ## Materiales de apoyo {#supporting-materials}
 
 * [Descargar los componentes principales de AEM](https://github.com/adobe/aem-core-wcm-components/releases)
 * [Descargar We.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases)
-* [Instalación de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html)
+* [Instalación de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=es)

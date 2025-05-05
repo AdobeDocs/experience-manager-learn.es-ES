@@ -25,7 +25,7 @@ Las pruebas unitarias, un paso que a menudo se pasa por alto en el desarrollo de
 ## Contenido cubierto en este vídeo
 
 + Información general de comprobaciones automatizadas
-+ [Reglas de calidad de código personalizadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/custom-code-quality-rules.html)
++ [Reglas de calidad de código personalizadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/custom-code-quality-rules.html?lang=es)
 
 ## Recursos adicionales
 

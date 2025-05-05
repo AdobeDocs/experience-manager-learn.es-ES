@@ -127,7 +127,7 @@ public class GeneratePDFFromMobileFormData extends SlingAllMethodsServlet implem
 
 ### Procesar PDF interactivo
 
-El siguiente código utiliza la [API de servicio de Forms](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/forms/api/FormsService.html) para procesar PDF interactivo con los datos del formulario móvil.
+El siguiente código utiliza la [API de servicio de Forms](https://helpx.adobe.com/es/aem-forms/6/javadocs/com/adobe/fd/forms/api/FormsService.html) para procesar PDF interactivo con los datos del formulario móvil.
 
 ```java
 package com.aemforms.mobileforms.core.documentservices.impl;

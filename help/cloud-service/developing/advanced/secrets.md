@@ -29,7 +29,7 @@ En AEM as a Cloud Service, la administración de secretos mediante los servicios
 
 ### Implementación del servicio OSGi
 
-Analizaremos el desarrollo de un servicio OSGi personalizado que [expone secretos de las configuraciones de OSGi](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi#secret-configuration-values).
+Analizaremos el desarrollo de un servicio OSGi personalizado que [expone secretos de las configuraciones de OSGi](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi#secret-configuration-values).
 
 La implementación lee secretos de la configuración de OSGi a través del método `@Activate` y los expone a través del método `getSecret(String secretName)`. También puede crear métodos discretos como `getApiKey()` para cada secreto, pero este método requiere más mantenimiento a medida que se agregan o eliminan secretos.
 
@@ -80,7 +80,7 @@ public interface SecretsManager {
 
 ## Asignar secretos a la configuración de OSGi
 
-Para exponer valores secretos en el servicio OSGi, asígnelos a configuraciones OSGi usando [valores de configuración secreta OSGi](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi#secret-configuration-values). Defina el nombre de la propiedad OSGi como la clave para recuperar el valor secreto del método `SecretsManager.getSecret()`.
+Para exponer valores secretos en el servicio OSGi, asígnelos a configuraciones OSGi usando [valores de configuración secreta OSGi](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi#secret-configuration-values). Defina el nombre de la propiedad OSGi como la clave para recuperar el valor secreto del método `SecretsManager.getSecret()`.
 
 Defina los secretos en el archivo de configuración OSGi `/apps/example/osgiconfig/config/com.example.core.util.impl.SecretsManagerImpl.cfg.json` en su proyecto de AEM Maven. Cada propiedad representa un secreto expuesto en AEM, con el valor establecido mediante Cloud Manager. La clave es el nombre de la propiedad OSGi, que se utiliza para recuperar el valor secreto del servicio `SecretsManager`.
 
@@ -151,7 +151,7 @@ public class ExampleSecretConsumerImpl implements ExampleSecretConsumer {
 
 Con el servicio y la configuración OSGi en su lugar, el paso final es establecer los valores secretos en Cloud Manager.
 
-Los valores de los secretos se pueden establecer mediante la [API de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Variables) o, más comúnmente, mediante la [IU de Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables#overview). Para aplicar una variable secreta a través de la interfaz de usuario de Cloud Manager:
+Los valores de los secretos se pueden establecer mediante la [API de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Variables) o, más comúnmente, mediante la [IU de Cloud Manager](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables#overview). Para aplicar una variable secreta a través de la interfaz de usuario de Cloud Manager:
 
 ![Configuración de secretos Cloud Manager](./assets/secrets/cloudmanager-configuration.png)
 

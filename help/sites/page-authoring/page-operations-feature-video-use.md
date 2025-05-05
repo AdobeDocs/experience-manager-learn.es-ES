@@ -29,5 +29,5 @@ Obtenga información sobre cómo realizar operaciones básicas de administració
 
 ## Recursos adicionales {#additional-resources}
 
-* [Editando documentación de contenido de página](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
-* [Guía rápida para la creación de páginas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)
+* [Editando documentación de contenido de página](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html?lang=es)
+* [Guía rápida para la creación de páginas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=es)

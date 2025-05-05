@@ -93,7 +93,7 @@ ht-degree: 21%
    + [Complemento de Sidekick](./edge-delivery-services/sidekick-plugin.md)
 
 + Adobe GenStudio{#adobe-genstudio}
-   + [AEM Assets y GenStudio for Performance Marketing](https://experienceleague.adobe.com/en/docs/integrations-learn/experience-cloud/tutorials/genstudio-for-performance-marketing-experience-manager/overview)
+   + [AEM Assets y GenStudio for Performance Marketing](https://experienceleague.adobe.com/es/docs/integrations-learn/experience-cloud/tutorials/genstudio-for-performance-marketing-experience-manager/overview)
 
 + Uso compartido y distribución{#sharing}
    + [Descarga de recursos](./sharing/download.md)

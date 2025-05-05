@@ -27,7 +27,7 @@ La extensión Adobe Asset Link para Adobe Creative Cloud para empresas amplía l
 
 >[!TIP]
 >
-> Obtenga más información sobre cómo el [Programa de formación de Adobe XD Premium](https://helpx.adobe.com/support/xd.html) puede ayudarle a integrar Asset Link con su flujo de trabajo de Adobe Experience Manager.
+> Obtenga más información sobre cómo el [Programa de formación de Adobe XD Premium](https://helpx.adobe.com/es/support/xd.html) puede ayudarle a integrar Asset Link con su flujo de trabajo de Adobe Experience Manager.
 
 ## Flujos de trabajo creativos de Adobe Asset Link y AEM
 

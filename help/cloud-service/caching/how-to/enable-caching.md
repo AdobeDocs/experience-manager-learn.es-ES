@@ -31,7 +31,7 @@ Cuando NO hay configuraciones personalizadas presentes, se utilizan los valores 
 
 ![Comportamiento de almacenamiento en caché predeterminado](../assets/how-to/aem-publish-default-cache-headers.png){width="800" zoomable="yes"}
 
-Revise [Publicación de AEM - Duración predeterminada de la caché](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/publish.html#cdn-cache-life) y [Autor de AEM - Duración predeterminada de la caché](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/author.html?#default-cache-life) para obtener más información.
+Revise [Publicación de AEM - Duración predeterminada de la caché](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/publish.html?lang=es#cdn-cache-life) y [Autor de AEM - Duración predeterminada de la caché](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/author.html?lang=es&#default-cache-life) para obtener más información.
 
 En resumen, AEM as a Cloud Service almacena en caché la mayoría de los tipos de contenido (HTML, JSON, JS, CSS y Assets) en AEM Publish y algunos tipos de contenido (JS, CSS) en AEM Author.
 
@@ -99,7 +99,7 @@ Para aumentar la duración de la caché del explorador web y la red de distribuc
    ```
 
    Los archivos vhost del directorio `dispatcher/src/conf.d/enabled_vhosts` son **symlinks** a los archivos del directorio `dispatcher/src/conf.d/available_vhosts`, así que asegúrese de crear enlaces simbólicos si no los hay.
-1. Implemente los cambios de vhost en el entorno de AEM as a Cloud Service deseado mediante [Cloud Manager - Canalización de configuración de nivel web](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?#web-tier-config-pipelines) o [Comandos RDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=en#deploy-apache-or-dispatcher-configuration).
+1. Implemente los cambios de vhost en el entorno de AEM as a Cloud Service deseado mediante [Cloud Manager - Canalización de configuración de nivel web](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?lang=es&#web-tier-config-pipelines) o [Comandos RDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=es#deploy-apache-or-dispatcher-configuration).
 
 Sin embargo, para tener valores diferentes para la duración de la caché del explorador web y la CDN, puede utilizar el encabezado `Surrogate-Control` del ejemplo anterior. Del mismo modo, para que la caché caduque en una fecha y hora específicas, puede utilizar el encabezado `Expires`. Además, con los atributos `stale-while-revalidate` y `stale-if-error`, puede controlar el tratamiento del estado antiguo del contenido de la respuesta. El proyecto WKND de AEM tiene una configuración de caché de CDN [tratamiento de estado obsoleto de referencia](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/available_vhosts/wknd.vhost#L150-L155).
 

@@ -36,7 +36,7 @@ En este capítulo, se crea un nuevo componente `Card`. El componente `Card` ampl
 
 >[!NOTE]
 >
-> En una implementación real, puede ser más apropiado usar simplemente el [componente teaser](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/teaser.html) que ampliar el [componente principal de imagen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=es) para hacer un componente `Card` según los requisitos del proyecto. Siempre se recomienda usar [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) directamente cuando sea posible.
+> En una implementación real, puede ser más apropiado usar simplemente el [componente teaser](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/teaser.html?lang=es) que ampliar el [componente principal de imagen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=es) para hacer un componente `Card` según los requisitos del proyecto. Siempre se recomienda usar [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) directamente cuando sea posible.
 
 ## Requisitos previos
 
@@ -103,7 +103,7 @@ El código de inicio del capítulo ha proporcionado un componente de tarjeta ini
 
    Observe que `sling:resourceSuperType` señala a `core/wcm/components/image/v2/image`. Esto indica que el componente de imagen de SPA de WKND hereda la funcionalidad de la imagen del componente principal.
 
-   La herencia de recursos de Sling también conocida como [Patrón proxy](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html#proxy-component-pattern) es un patrón de diseño potente que permite que los componentes secundarios hereden la funcionalidad y amplíen/anulen el comportamiento cuando lo deseen. La herencia de Sling admite varios niveles de herencia, por lo que, en última instancia, el nuevo componente `Card` hereda la funcionalidad de la imagen del componente principal.
+   La herencia de recursos de Sling también conocida como [Patrón proxy](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html?lang=es#proxy-component-pattern) es un patrón de diseño potente que permite que los componentes secundarios hereden la funcionalidad y amplíen/anulen el comportamiento cuando lo deseen. La herencia de Sling admite varios niveles de herencia, por lo que, en última instancia, el nuevo componente `Card` hereda la funcionalidad de la imagen del componente principal.
 
    Muchos equipos de desarrollo se esfuerzan por ser D.R.Y. (no te repitas). La herencia de Sling lo hace posible con AEM.
 
@@ -293,7 +293,7 @@ Vuelva al IDE de su elección y abra el módulo `core`.
    }
    ```
 
-   Se llama al `@PostConstruct initModel()` cuando se inicializa el modelo Sling, por lo que es una buena oportunidad para inicializar objetos que otros métodos del modelo pueden utilizar. `pageManager` es uno de varios [objetos globales respaldados por Java™](https://experienceleague.adobe.com/docs/experience-manager-htl/content/global-objects.html) disponibles para los modelos Sling a través de la anotación `@ScriptVariable`. El método [getPage](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) toma una ruta y devuelve un objeto [Page](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/Page.html) de AEM o un valor nulo si la ruta no apunta a una página válida.
+   Se llama al `@PostConstruct initModel()` cuando se inicializa el modelo Sling, por lo que es una buena oportunidad para inicializar objetos que otros métodos del modelo pueden utilizar. `pageManager` es uno de varios [objetos globales respaldados por Java™](https://experienceleague.adobe.com/docs/experience-manager-htl/content/global-objects.html?lang=es) disponibles para los modelos Sling a través de la anotación `@ScriptVariable`. El método [getPage](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) toma una ruta y devuelve un objeto [Page](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/Page.html) de AEM o un valor nulo si la ruta no apunta a una página válida.
 
    Esto inicializa la variable `cardPage`, que utilizan los otros métodos nuevos para devolver datos sobre la página vinculada subyacente.
 

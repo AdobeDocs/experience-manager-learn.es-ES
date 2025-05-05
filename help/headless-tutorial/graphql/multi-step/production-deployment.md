@@ -61,7 +61,7 @@ Al final, se están ejecutando tres servidores locales:
 
 Actualmente tenemos una instancia en ejecución de SDK en modo **Author**. SDK también se puede iniciar en modo **Publish** para simular un entorno de publicación de AEM.
 
-Puede encontrar una guía más detallada para configurar un entorno de desarrollo local [aquí](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=en#local-development-environment-set-up).
+Puede encontrar una guía más detallada para configurar un entorno de desarrollo local [aquí](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=es#local-development-environment-set-up).
 
 1. En el sistema de archivos local, cree una carpeta dedicada para instalar la instancia de publicación, con el nombre `~/aem-sdk/publish`.
 1. Copie el archivo jar de inicio rápido utilizado para la instancia de autor en capítulos anteriores y péguelo en el directorio `publish`. También puede navegar hasta [Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html), descargar la última versión de SDK y extraer el archivo jar de Quickstart.
@@ -312,7 +312,7 @@ A continuación, permite simular la publicación de contenido entre las instanci
 1. Inicie la instancia de autor (si no se ha iniciado ya) y vaya al Administrador de paquetes en [http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp)
 1. Descargue el paquete [EnableReplicationAgent.zip](./assets/publish-deployment/EnableReplicationAgent.zip) e instálelo mediante el Administrador de paquetes.
 
-   Este paquete instala una configuración que permite a la instancia de autor publicar contenido en la instancia de publicación. Pasos manuales para [esta configuración se encuentra aquí](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=en#content-distribution).
+   Este paquete instala una configuración que permite a la instancia de autor publicar contenido en la instancia de publicación. Pasos manuales para [esta configuración se encuentra aquí](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=es#content-distribution).
 
    >[!NOTE]
    >
@@ -410,5 +410,5 @@ Para obtener más información sobre los fragmentos de contenido y GraphQL, cons
 
 * [Entrega de contenido sin encabezado mediante fragmentos de contenido con GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html?lang=es)
 * [API de GraphQL de AEM para su uso con fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html?lang=es)
-* [Autenticación basada en token](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication)
-* [Implementando código en AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=en#cloud-manager)
+* [Autenticación basada en token](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=es#authentication)
+* [Implementando código en AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=es#cloud-manager)

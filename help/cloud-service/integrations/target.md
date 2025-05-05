@@ -23,7 +23,7 @@ ht-degree: 0%
 
 # Integración de AEM sin encabezado y Target
 
-Obtenga información sobre cómo integrar AEM sin encabezado con Adobe Target mediante la exportación de fragmentos de contenido de AEM a Adobe Target y utilícelos para personalizar experiencias sin encabezado mediante alloy.js de Adobe Experience Platform Web SDK. La aplicación [React WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html) se usa para explorar cómo se puede agregar a la experiencia una actividad de Target personalizada mediante Ofertas de fragmentos de contenido para promocionar una aventura WKND.
+Obtenga información sobre cómo integrar AEM sin encabezado con Adobe Target mediante la exportación de fragmentos de contenido de AEM a Adobe Target y utilícelos para personalizar experiencias sin encabezado mediante alloy.js de Adobe Experience Platform Web SDK. La aplicación [React WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html?lang=es) se usa para explorar cómo se puede agregar a la experiencia una actividad de Target personalizada mediante Ofertas de fragmentos de contenido para promocionar una aventura WKND.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416585/?quality=12&learn=on)
 
@@ -42,13 +42,13 @@ El tutorial cubre los pasos necesarios para configurar AEM y Adobe Target:
 
 Una configuración de IMS de Adobe que facilita la autenticación entre AEM y Adobe Target.
 
-Revise [la documentación](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/integrations/target#adobe-target-cloud-service) para obtener instrucciones paso a paso sobre cómo crear una configuración de IMS de Adobe.
+Revise [la documentación](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/integrations/target#adobe-target-cloud-service) para obtener instrucciones paso a paso sobre cómo crear una configuración de IMS de Adobe.
 
 ## Adobe Target Cloud Service{#adobe-target-cloud-service}
 
 Se crea un Cloud Service de Adobe Target en AEM para facilitar la exportación de fragmentos de contenido a Adobe Target.
 
-Revise [la documentación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html) para obtener instrucciones paso a paso sobre cómo crear un Cloud Service de Adobe Target.
+Revise [la documentación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html?lang=es) para obtener instrucciones paso a paso sobre cómo crear un Cloud Service de Adobe Target.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416499/?quality=12&learn=on)
 
@@ -164,7 +164,7 @@ La actividad de Adobe Target dirigida a la ubicación `wknd-adventure-promo` aho
 
 ## ID de flujo de datos Experience Platform{#datastream-id}
 
-Se requiere un identificador de [Adobe Experience Platform Datastream](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-datastream.html) para que las aplicaciones sin encabezado de AEM interactúen con Adobe Target mediante [Adobe Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html).
+Se requiere un identificador de [Adobe Experience Platform Datastream](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-datastream.html?lang=es) para que las aplicaciones sin encabezado de AEM interactúen con Adobe Target mediante [Adobe Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=es).
 
 +++Amplíe para obtener instrucciones paso a paso
 
@@ -184,7 +184,7 @@ Se requiere un identificador de [Adobe Experience Platform Datastream](https://e
       + El entorno de destino se puede establecer en Adobe Target en __Administración > Hosts__.
    + Espacio de nombres de ID de terceros de destino: __Dejar en blanco__
 1. Seleccionar __Guardar__
-1. En el lado derecho, copie la __ID de secuencia de datos__ para usarla en la llamada de configuración de [Adobe Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html).
+1. En el lado derecho, copie la __ID de secuencia de datos__ para usarla en la llamada de configuración de [Adobe Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=es).
 
 +++
 
@@ -194,7 +194,7 @@ Se requiere un identificador de [Adobe Experience Platform Datastream](https://e
 
 ## Añadir personalización en una aplicación sin encabezado de AEM{#code}
 
-Este tutorial explora la personalización de una aplicación React simple mediante Ofertas de fragmentos de contenido en Adobe Target a través de [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html). Este método se puede utilizar para personalizar cualquier experiencia web basada en JavaScript.
+Este tutorial explora la personalización de una aplicación React simple mediante Ofertas de fragmentos de contenido en Adobe Target a través de [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=es). Este método se puede utilizar para personalizar cualquier experiencia web basada en JavaScript.
 
 Las experiencias móviles de Android™ y iOS se pueden personalizar siguiendo patrones similares con [Adobe Mobile SDK](https://developer.adobe.com/client-sdks/documentation/).
 
@@ -230,7 +230,7 @@ Las experiencias móviles de Android™ y iOS se pueden personalizar siguiendo p
    $ npm run start
    ```
 
-1. Instale [Adobe Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html#option-3%3A-using-the-npm-package) como paquete NPM.
+1. Instale [Adobe Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=es#option-3%3A-using-the-npm-package) como paquete NPM.
 
    ```shell
    $ cd ~/Code/aem-guides-wknd-graphql/personalization-tutorial

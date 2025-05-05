@@ -51,6 +51,6 @@ Se requiere lo siguiente al integrar las etiquetas de recopilación de datos de 
 
 ## Recursos adicionales {#additional-resources}
 
-+ [Integraciones de Experience Platform con aplicaciones de Experience Cloud](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/integrations-with-experience-cloud-applications.html)
-+ [Resumen de etiquetas](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
-+ [Implementación del Experience Cloud en sitios web con etiquetas](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html)
++ [Integraciones de Experience Platform con aplicaciones de Experience Cloud](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/integrations-with-experience-cloud-applications.html?lang=es)
++ [Resumen de etiquetas](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=es)
++ [Implementación del Experience Cloud en sitios web con etiquetas](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html?lang=es)

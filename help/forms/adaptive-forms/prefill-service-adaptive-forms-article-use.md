@@ -20,7 +20,7 @@ ht-degree: 3%
 
 Puede rellenar previamente los campos de un formulario adaptable mediante los datos existentes. Cuando un usuario abre un formulario, los valores de esos campos ya han sido rellenados. Existen varias formas de rellenar previamente los campos de formulario adaptables. En este artículo, veremos cómo rellenar previamente el formulario adaptable mediante el servicio de relleno previo de AEM Forms.
 
-Para obtener más información acerca de varios métodos para rellenar previamente formularios adaptables, [siga esta documentación](https://helpx.adobe.com/experience-manager/6-4/forms/using/prepopulate-adaptive-form-fields.html#AEMFormsprefillservice)
+Para obtener más información acerca de varios métodos para rellenar previamente formularios adaptables, [siga esta documentación](https://helpx.adobe.com/es/experience-manager/6-4/forms/using/prepopulate-adaptive-form-fields.html#AEMFormsprefillservice)
 
 Para rellenar previamente un formulario adaptable mediante el servicio de relleno previo, debe crear una clase que implemente la interfaz `com.adobe.forms.common.service.DataXMLProvider`. El método `getDataXMLForDataRef` tendrá la lógica para generar y devolver los datos que consumirá el formulario adaptable para rellenar previamente los campos. Con este método, puede recuperar los datos de cualquier origen y devolver la secuencia de entrada del documento de datos. El siguiente código de ejemplo recupera la información de perfil del usuario que ha iniciado sesión y construye un documento XML cuya secuencia de entrada devuelve para que la consuman los formularios adaptables.
 

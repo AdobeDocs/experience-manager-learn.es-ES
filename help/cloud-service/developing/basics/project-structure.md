@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # AEM estructura del proyecto de
 
-AEM Explore las prácticas recomendadas para estructurar un [proyecto de Maven de](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#developing) para AEM as a Cloud Service.
+AEM Explore las prácticas recomendadas para estructurar un [proyecto de Maven de](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=es#developing) para AEM as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330557?quality=12&learn=on)

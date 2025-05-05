@@ -21,7 +21,7 @@ ht-degree: 0%
 Las extensiones de Reader le permiten manipular los derechos de uso en documentos de PDF. Los derechos de uso pertenecen a una funcionalidad disponible en Acrobat, pero no en Adobe Reader. La funcionalidad controlada por las extensiones de Reader incluye la capacidad de agregar comentarios a un documento, rellenar formularios y guardarlo. Los documentos de PDF que tienen derechos de uso añadidos se denominan documentos con derechos activados. Un usuario que abre un documento de PDF con derechos activados en Adobe Reader puede realizar las operaciones que están habilitadas para ese documento.
 
 Para llevar a cabo este caso de uso, debemos hacer lo siguiente:
-* [Agregar el certificado de extensiones de Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) al usuario `fd-service`.
+* [Agregar el certificado de extensiones de Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html?lang=es) al usuario `fd-service`.
 
 ## Crear servicio OSGi personalizado
 

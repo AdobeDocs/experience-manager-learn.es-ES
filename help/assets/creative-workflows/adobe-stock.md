@@ -110,6 +110,6 @@ AEM 6.4.2 permite a los usuarios buscar, previsualizar, guardar y obtener licenc
 
 * [Plan de Stock Empresarial](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html)
 * [Notas de la versión de AEM 6.4 Service Pack 2](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=es)
-* [Integrar AEM y Adobe Stock](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/aem-assets-adobe-stock.html)
+* [Integrar AEM y Adobe Stock](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/aem-assets-adobe-stock.html?lang=es)
 * [API de integración de la consola Adobe I/O](https://www.adobe.io/apis/cloudplatform/console/authentication/gettingstarted.html)
 * [Documentos de API de Adobe Stock](https://www.adobe.io/apis/creativecloud/stock/docs.html)

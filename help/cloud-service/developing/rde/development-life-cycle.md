@@ -41,8 +41,8 @@ Los beneficios clave de RDE para mantener el impulso del desarrollo.
 
 ## Recursos adicionales
 
-[Escenario de colaboración de varios desarrolladores](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html#multiple-developers-collaborating-on-the-same-rde)
+[Escenario de colaboración de varios desarrolladores](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html?lang=es#multiple-developers-collaborating-on-the-same-rde)
 
 [Configuración del entorno de desarrollo local](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=es)
 
-[Uso de Adobe Cloud Manager - Canalización de producción de CI/CD](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/cicd-production-pipeline.html)
+[Uso de Adobe Cloud Manager - Canalización de producción de CI/CD](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/cicd-production-pipeline.html?lang=es)

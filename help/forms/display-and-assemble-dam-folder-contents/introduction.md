@@ -28,7 +28,7 @@ Necesitará lo siguiente:
 
 * Una instancia de trabajo de AEM con el paquete de complementos de formulario instalado
 
-* [Entorno de desarrollo configurado según este documento](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)
+* [Entorno de desarrollo configurado según este documento](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=es)
 
 ## Siguientes pasos
 

@@ -24,7 +24,7 @@ Los siguientes activos/configuraciones se implementaron en un servidor de public
 * [Paquete de envoltorio de Adobe Sign](assets/AcrobatSign.core-1.0.0-SNAPSHOT.jar)
 
 * [Plantilla de comunicación interactiva de ejemplo](assets/waiver-interactive-communication.zip)
-* [Implementar el paquete DevelopersWithServiceUser](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip)
+* [Implementar el paquete DevelopersWithServiceUser](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip?lang=es)
 * Agregue la siguiente entrada en el servicio del asignador de usuarios del servicio Apache Sling mediante OSGi configMgr
   **Desarrollo con ServiceUser.core:getformsresourceresolver=fd-service**
 
@@ -61,4 +61,4 @@ Para habilitar la realización de llamadas de POST al extremo de AEM desde la ap
 
 ![configuración de cors](assets/cors-settings.png)
 
-Consulte [Comprensión de CORS con AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html) para obtener más información sobre las opciones de configuración de CORS.
+Consulte [Comprensión de CORS con AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=es) para obtener más información sobre las opciones de configuración de CORS.

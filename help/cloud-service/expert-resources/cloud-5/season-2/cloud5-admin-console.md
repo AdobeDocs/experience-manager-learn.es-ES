@@ -24,7 +24,7 @@ ht-degree: 3%
 
 ## Contenido cubierto en este vídeo
 
-+ [Comprender el Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/admin-console.html)
++ [Comprender el Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/admin-console.html?lang=es)
 + [Información general de Admin Console](https://helpx.adobe.com/es/enterprise/using/admin-console.html)
 
 ## Recursos adicionales

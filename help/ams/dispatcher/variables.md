@@ -178,7 +178,7 @@ Define WERETAIL_DOMAIN www.weretail.com
 Define WERETAIL_ALT_DOMAIN www..weretail.net
 ```
 
-Al crear sus propias variables, asigne nombres a los archivos en función de su contenido y siga los estándares de nomenclatura proporcionados en el manual [aquí](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17477.html#naming-convention).  En el ejemplo anterior puede ver que el archivo de variables aloja las diferentes entradas DNS como variables para usarlas en los archivos de configuración.
+Al crear sus propias variables, asigne nombres a los archivos en función de su contenido y siga los estándares de nomenclatura proporcionados en el manual [aquí](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17477.html?lang=es#naming-convention).  En el ejemplo anterior puede ver que el archivo de variables aloja las diferentes entradas DNS como variables para usarlas en los archivos de configuración.
 
 ## Uso de variables
 

@@ -30,7 +30,7 @@ Descubra cómo se pueden admitir varias vistas en la SPA asignando a páginas de
 
 ## Qué va a generar
 
-Este capítulo añadirá navegación a un SPA en AEM. El menú de navegación está gobernado por la jerarquía de páginas de AEM y utilizará el modelo JSON proporcionado por el [componente principal de navegación](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html).
+Este capítulo añadirá navegación a un SPA en AEM. El menú de navegación está gobernado por la jerarquía de páginas de AEM y utilizará el modelo JSON proporcionado por el [componente principal de navegación](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html?lang=es).
 
 ![Navegación agregada](assets/navigation-routing/navigation-added.png)
 

@@ -307,10 +307,10 @@ async function main (params) {
 Las siguientes API HTTP de AEM se utilizan comúnmente para interactuar con AEM desde extensiones:
 
 + [API de AEM GraphQL](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)
-+ [API HTTP de AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html)
++ [API HTTP de AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html?lang=es)
    + [Compatibilidad con fragmentos de contenido en la API HTTP de AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/assets-api-content-fragments.html?lang=es)
-+ [API de AEM QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html)
-+ [Referencia completa de la API de AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/reference-materials.html)
++ [API de AEM QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=es)
++ [Referencia completa de la API de AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/reference-materials.html?lang=es)
 
 
 ## Módulos npm de Adobe

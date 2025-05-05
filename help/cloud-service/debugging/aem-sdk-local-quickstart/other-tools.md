@@ -83,7 +83,7 @@ Explicar consulta se encuentra en:
 
 ![Depurador de QueryBuilder](./assets/other-tools/query-debugger.png)
 
-QueryBuilder Debugger es una herramienta basada en la web que le ayuda a depurar y comprender las consultas de búsqueda mediante la sintaxis [QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html) de AEM.
+QueryBuilder Debugger es una herramienta basada en la web que le ayuda a depurar y comprender las consultas de búsqueda mediante la sintaxis [QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html?lang=es) de AEM.
 
 QueryBuilder Debugger se encuentra en:
 

@@ -34,4 +34,4 @@ La [aplicación WKND](https://github.com/adobe/aem-guides-wknd) proporciona los 
 
 ¿Quiere aprender a desarrollar con el sistema de estilos? Consulte los siguientes tutoriales:
 
-* [Desarrollo con el sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)
+* [Desarrollo con el sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html?lang=es)

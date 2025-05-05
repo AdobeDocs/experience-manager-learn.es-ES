@@ -175,7 +175,7 @@ Como puede ver en este ejemplo, el archivo es más antiguo que el archivo de `.s
 
 ## Configuración de archivo de granja
 
-Toda la documentación está aquí para obtener el conjunto completo de opciones de configuración: [https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-dispatcher_configuring-the-dispatcher-cache-cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es)
+Toda la documentación está aquí para obtener el conjunto completo de opciones de configuración: [https://docs.adobe.com/content/help/es-ES/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-dispatcher_configuring-the-dispatcher-cache-cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es)
 
 Nos gustaría destacar algunas de ellas que están relacionadas con el vaciado de caché
 

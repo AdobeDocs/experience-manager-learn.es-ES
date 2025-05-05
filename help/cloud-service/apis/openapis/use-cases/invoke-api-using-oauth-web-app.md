@@ -493,7 +493,7 @@ Siga las instrucciones del artículo [Configuración de las API de AEM basadas e
 
 De forma predeterminada, el proyecto de WKND Sites no tiene el esquema de metadatos de recurso necesario para mostrar los atributos del producto. Vamos a crear y aplicar el esquema de metadatos del recurso a una carpeta de recursos en la instancia de AEM.
 
-1. Inicie sesión en la instancia de AEM as a Cloud Service Asset. Con la [vista de recursos](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/authoring/switch-views), vaya a la carpeta `/content/dam/wknd-shared/en`.
+1. Inicie sesión en la instancia de AEM as a Cloud Service Asset. Con la [vista de recursos](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/authoring/switch-views), vaya a la carpeta `/content/dam/wknd-shared/en`.
 
    ![Vaya a la carpeta](../assets/web-app/navigate-to-folder.png)
 

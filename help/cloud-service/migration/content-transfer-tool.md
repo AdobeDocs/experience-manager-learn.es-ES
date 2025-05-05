@@ -26,4 +26,4 @@ La herramienta de transferencia de contenido es la forma recomendada de migrar e
 
 ## Recursos adicionales {#additional-resources}
 
-* [Información general de la herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html)
+* [Información general de la herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=es)

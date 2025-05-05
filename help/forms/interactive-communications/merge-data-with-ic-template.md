@@ -162,7 +162,7 @@ String params = arg2.get("PROCESS_ARGS","string").toString();
 
 Para probar esto en el servidor, siga los siguientes pasos:
 
-* [Configurar el servicio Day CQ Mail.](https://helpx.adobe.com/experience-manager/6-5/communities/using/email.html) Esto es necesario para enviar un correo electrónico con el documento generado como datos adjuntos.
+* [Configurar el servicio Day CQ Mail.](https://helpx.adobe.com/es/experience-manager/6-5/communities/using/email.html) Esto es necesario para enviar un correo electrónico con el documento generado como datos adjuntos.
 * [Implementación del paquete de usuario Desarrollo con servicio](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 * Asegúrese de haber agregado la siguiente entrada en la configuración del servicio de asignación de usuarios del servicio Apache Sling
 * **Desarrollo con ServiceUser.core:getformsresourceresolver=fd-service**

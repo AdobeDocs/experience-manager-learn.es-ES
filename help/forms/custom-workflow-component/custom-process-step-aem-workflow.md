@@ -24,7 +24,7 @@ Se requieren los siguientes pasos para escribir la clase java e implementarla co
 
 ## Crear proyecto de Maven
 
-El primer paso es crear un proyecto de Maven utilizando el arquetipo de Maven de Adobe adecuado. Los pasos detallados se enumeran en este [artículo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Una vez que tenga el proyecto de Maven importado en Eclipse, estará listo para empezar a escribir el primer componente OSGi que se pueda utilizar en el paso del proceso.
+El primer paso es crear un proyecto de Maven utilizando el arquetipo de Maven de Adobe adecuado. Los pasos detallados se enumeran en este [artículo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=es). Una vez que tenga el proyecto de Maven importado en Eclipse, estará listo para empezar a escribir el primer componente OSGi que se pueda utilizar en el paso del proceso.
 
 
 ### Crear clase que implemente WorkflowProcess
@@ -143,7 +143,7 @@ El servicio QueryBuilder se utiliza para consultar nodos de tipo nt:file en la c
 
 #### Creación e implementación
 
-[Genere el paquete como se describe aquí](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)
+[Genere el paquete como se describe aquí](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=es)
 [Asegúrese de que el paquete esté implementado y en estado activo](http://localhost:4502/system/console/bundles)
 
 ## Siguientes pasos

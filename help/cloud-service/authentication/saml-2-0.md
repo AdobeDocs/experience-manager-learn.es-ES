@@ -333,7 +333,7 @@ Las configuraciones de OSGi por entorno (`config.publish.dev`, `config.publish.s
 
 ### Usar cifrado
 
-Al [cifrar AuthnRequest y la aserción SAML](#encrypting-the-authnrequest-and-saml-assertion), se requieren las siguientes propiedades: `useEncryption`, `spPrivateKeyAlias` y `keyStorePassword`. El `keyStorePassword` contiene una contraseña; por lo tanto, el valor no debe almacenarse en el archivo de configuración OSGi, sino insertarse usando [valores de configuración secretos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values)
+Al [cifrar AuthnRequest y la aserción SAML](#encrypting-the-authnrequest-and-saml-assertion), se requieren las siguientes propiedades: `useEncryption`, `spPrivateKeyAlias` y `keyStorePassword`. El `keyStorePassword` contiene una contraseña; por lo tanto, el valor no debe almacenarse en el archivo de configuración OSGi, sino insertarse usando [valores de configuración secretos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=es#secret-configuration-values)
 
 +++Opcionalmente, actualice la configuración de OSGi para utilizar el cifrado
 
@@ -366,7 +366,7 @@ Al [cifrar AuthnRequest y la aserción SAML](#encrypting-the-authnrequest-and-sa
 
 + `useEncryption` se estableció en `true`
 + `spPrivateKeyAlias` contiene el alias de entrada del almacén de claves para la clave privada utilizada por la integración de SAML.
-+ `keyStorePassword` contiene una [variable de configuración secreta OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values) que contiene la contraseña del almacén de claves de usuario `authentication-service`.
++ `keyStorePassword` contiene una [variable de configuración secreta OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=es#secret-configuration-values) que contiene la contraseña del almacén de claves de usuario `authentication-service`.
 
 +++
 
@@ -452,7 +452,7 @@ La pertenencia a grupos dinámicos es una característica de [Apache Jackrabbit 
 ### Cómo habilitar la pertenencia a grupos dinámicos para usuarios de SAML en nuevos entornos
 
 Para mejorar significativamente el rendimiento de la evaluación de grupos en nuevos entornos de AEM as a Cloud Service, se recomienda activar la función de pertenencia a grupos dinámicos en nuevos entornos.
-También es un paso necesario cuando se activa la sincronización de datos. Más detalles [aquí](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier) .
+También es un paso necesario cuando se activa la sincronización de datos. Más detalles [aquí](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier) .
 Para ello, agregue la siguiente propiedad al archivo de configuración OSGI:
 
 `/apps/example/osgiconfig/config.publish/com.adobe.granite.auth.saml.SamlAuthenticationHandler~example.cfg.json`

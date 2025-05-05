@@ -27,7 +27,7 @@ Darin y James analizan Dispatcher en AEM Cloud, incluidas algunas prácticas rec
 ## Contenido cubierto en este vídeo
 
 + implementar archivos de dispatcher en un entorno de servicios en la nube
-   + [Documentos de migración](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)
+   + [Documentos de migración](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html?lang=es)
    + [Blog](https://medium.com/adobetech/migrating-a-dispatcher-configuration-from-managed-services-to-aem-as-a-cloud-service-fa8a80d242ee)
 + [Herramientas de migración](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration)
 

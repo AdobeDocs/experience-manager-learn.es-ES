@@ -51,7 +51,7 @@ AEM as a Cloud Service CDN almacena en caché lo siguiente:
 + cuerpo de respuesta HTTP
 + Encabezados de respuesta HTTP
 
-Normalmente, una solicitud/respuesta HTTP para una sola URL se almacena en caché como un solo objeto. Sin embargo, la CDN puede administrar el almacenamiento en caché de varios objetos para una sola dirección URL, cuando el encabezado `Vary` está establecido en la respuesta HTTP. Evite especificar `Vary` en encabezados cuyos valores no tengan un conjunto de valores estrictamente controlados, ya que esto puede provocar muchos errores de caché, lo que reduce la proporción de visitas de caché. Para admitir el almacenamiento en caché de distintas solicitudes en AEM Dispatcher, [revise la documentación de almacenamiento en caché de variantes](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/advanced/variant-caching.html).
+Normalmente, una solicitud/respuesta HTTP para una sola URL se almacena en caché como un solo objeto. Sin embargo, la CDN puede administrar el almacenamiento en caché de varios objetos para una sola dirección URL, cuando el encabezado `Vary` está establecido en la respuesta HTTP. Evite especificar `Vary` en encabezados cuyos valores no tengan un conjunto de valores estrictamente controlados, ya que esto puede provocar muchos errores de caché, lo que reduce la proporción de visitas de caché. Para admitir el almacenamiento en caché de distintas solicitudes en AEM Dispatcher, [revise la documentación de almacenamiento en caché de variantes](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/advanced/variant-caching.html?lang=es).
 
 ### Duración de caché{#cdn-cache-life}
 
@@ -71,15 +71,15 @@ Si una respuesta HTTP cumple los requisitos para el almacenamiento en caché de 
 
 | Tipo de contenido | Duración predeterminada de la caché de CDN |
 |:------------ |:---------- |
-| [HTML/JSON/XML](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#html-text) | 5 minutos |
-| [Assets (imágenes, vídeos, documentos, etc.)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#images) | 10 minutos |
-| [Consultas persistentes (JSON)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?publish-instances) | 2 horas |
-| [Bibliotecas de cliente (JS/CSS)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#client-side-libraries) | 30 días |
-| [Otros](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#other-content) | No almacenado en caché |
+| [HTML/JSON/XML](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=es#html-text) | 5 minutos |
+| [Assets (imágenes, vídeos, documentos, etc.)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=es#images) | 10 minutos |
+| [Consultas persistentes (JSON)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?lang=es&publish-instances) | 2 horas |
+| [Bibliotecas de cliente (JS/CSS)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=es#client-side-libraries) | 30 días |
+| [Otros](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=es#other-content) | No almacenado en caché |
 
 ### Personalizar las reglas de caché
 
-[Configurar cómo la CDN almacena en caché el contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#disp) se limita a establecer encabezados de caché en respuestas HTTP. Estos encabezados de caché se suelen establecer en configuraciones de AEM Dispatcher `vhost` mediante `mod_headers`, pero también se pueden establecer en código Java™ personalizado que se ejecuta en AEM Publish.
+[Configurar cómo la CDN almacena en caché el contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=es#disp) se limita a establecer encabezados de caché en respuestas HTTP. Estos encabezados de caché se suelen establecer en configuraciones de AEM Dispatcher `vhost` mediante `mod_headers`, pero también se pueden establecer en código Java™ personalizado que se ejecuta en AEM Publish.
 
 ## Dispatcher de AEM
 
@@ -95,10 +95,10 @@ Las respuestas HTTP para las solicitudes HTTP correspondientes se almacenan en c
 + La respuesta HTTP NO es para un archivo binario.
 + La ruta de la dirección URL de la solicitud HTTP termina con una extensión, por ejemplo: `.html`, `.json`, `.css`, `.js`, etc.
 + La solicitud HTTP no contiene autorización y AEM no la autentica.
-   + Sin embargo, el almacenamiento en caché de las solicitudes autenticadas [se puede habilitar globalmente](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#caching-when-authentication-is-used) o selectivamente mediante el almacenamiento en caché con permisos confidenciales [3&rbrace;.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=es)
+   + Sin embargo, el almacenamiento en caché de las solicitudes autenticadas [se puede habilitar globalmente](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es#caching-when-authentication-is-used) o selectivamente mediante el almacenamiento en caché con permisos confidenciales [3&rbrace;.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=es)
 + La solicitud HTTP no contiene parámetros de consulta.
    + Sin embargo, configurar [Parámetros de consulta ignorados](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es#ignoring-url-parameters) permite que las solicitudes HTTP con los parámetros de consulta ignorados se almacenen en caché o se proporcionen desde la caché.
-+ La ruta de acceso de la solicitud HTTP [ coincide con una regla de permiso de Dispatcher y no coincide con una regla de denegación ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-documents-to-cache).
++ La ruta de acceso de la solicitud HTTP [ coincide con una regla de permiso de Dispatcher y no coincide con una regla de denegación ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es#specifying-the-documents-to-cache).
 + La respuesta HTTP no tiene ninguno de los siguientes encabezados de respuesta HTTP establecidos por AEM Publish:
 
    + `no-cache`
@@ -110,7 +110,7 @@ Las respuestas HTTP para las solicitudes HTTP correspondientes se almacenan en c
 AEM Dispatcher almacena en caché lo siguiente:
 
 + cuerpo de respuesta HTTP
-+ Encabezados de respuesta HTTP especificados en la [configuración de encabezados de caché](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#caching-http-response-headers) de Dispatcher. Consulte la configuración predeterminada que se incluye con el [Arquetipo de proyecto de AEM](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/available_farms/default.farm#L106-L113).
++ Encabezados de respuesta HTTP especificados en la [configuración de encabezados de caché](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es#caching-http-response-headers) de Dispatcher. Consulte la configuración predeterminada que se incluye con el [Arquetipo de proyecto de AEM](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/available_farms/default.farm#L106-L113).
    + `Cache-Control`
    + `Content-Disposition`
    + `Content-Type`
@@ -123,7 +123,7 @@ AEM Dispatcher almacena en caché lo siguiente:
 AEM Dispatcher almacena en caché las respuestas HTTP mediante los siguientes métodos:
 
 + Hasta que la invalidación se active mediante mecanismos como la publicación o cancelación de la publicación del contenido.
-+ TTL (tiempo de vida) cuando se [configura explícitamente en la configuración de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl). Vea la configuración predeterminada en [Arquetipo de proyecto de AEM](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/available_farms/default.farm#L122-L127) revisando la configuración de `enableTTL`.
++ TTL (tiempo de vida) cuando se [configura explícitamente en la configuración de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es#configuring-time-based-cache-invalidation-enablettl). Vea la configuración predeterminada en [Arquetipo de proyecto de AEM](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/available_farms/default.farm#L122-L127) revisando la configuración de `enableTTL`.
 
 #### Duración predeterminada de la caché
 
@@ -131,15 +131,15 @@ Si una respuesta HTTP cumple los requisitos para el almacenamiento en caché de 
 
 | Tipo de contenido | Duración predeterminada de la caché de CDN |
 |:------------ |:---------- |
-| [HTML/JSON/XML](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#html-text) | Hasta la invalidación |
-| [Assets (imágenes, vídeos, documentos, etc.)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#images) | Nunca |
-| [Consultas persistentes (JSON)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?publish-instances) | 1 minuto |
-| [Bibliotecas de cliente (JS/CSS)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#client-side-libraries) | 30 días |
-| [Otros](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#other-content) | Hasta la invalidación |
+| [HTML/JSON/XML](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=es#html-text) | Hasta la invalidación |
+| [Assets (imágenes, vídeos, documentos, etc.)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=es#images) | Nunca |
+| [Consultas persistentes (JSON)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?lang=es&publish-instances) | 1 minuto |
+| [Bibliotecas de cliente (JS/CSS)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=es#client-side-libraries) | 30 días |
+| [Otros](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=es#other-content) | Hasta la invalidación |
 
 ### Personalizar las reglas de caché
 
-La memoria caché de AEM Dispatcher se puede configurar mediante la [configuración de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache), que incluye:
+La memoria caché de AEM Dispatcher se puede configurar mediante la [configuración de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es#configuring-the-dispatcher-cache-cache), que incluye:
 
 + Qué se almacena en caché
 + Qué partes de la caché se invalidan al publicar/cancelar la publicación

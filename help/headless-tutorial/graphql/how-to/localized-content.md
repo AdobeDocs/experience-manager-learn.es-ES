@@ -19,11 +19,11 @@ ht-degree: 1%
 
 # Contenido localizado con AEM sin encabezado
 
-AEM proporciona un [Marco de trabajo de integración de traducciones](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/integration-framework.html) para contenido sin encabezado, lo que permite que los fragmentos de contenido y los recursos de soporte se traduzcan fácilmente para su uso en distintas configuraciones regionales. Este es el mismo marco de trabajo que se utiliza para traducir otro contenido de AEM, como páginas, fragmentos de experiencias, Assets y Forms. Una vez que se ha traducido [contenido sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=es) y se ha publicado, está listo para que lo consuman las aplicaciones sin encabezado.
+AEM proporciona un [Marco de trabajo de integración de traducciones](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/integration-framework.html?lang=es) para contenido sin encabezado, lo que permite que los fragmentos de contenido y los recursos de soporte se traduzcan fácilmente para su uso en distintas configuraciones regionales. Este es el mismo marco de trabajo que se utiliza para traducir otro contenido de AEM, como páginas, fragmentos de experiencias, Assets y Forms. Una vez que se ha traducido [contenido sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=es) y se ha publicado, está listo para que lo consuman las aplicaciones sin encabezado.
 
 ## Estructura de carpetas de Assets{#assets-folder-structure}
 
-Asegúrese de que los fragmentos de contenido localizados en AEM sigan la [estructura de localización recomendada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/getting-started.html#recommended-structure).
+Asegúrese de que los fragmentos de contenido localizados en AEM sigan la [estructura de localización recomendada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/getting-started.html?lang=es#recommended-structure).
 
 ![Carpetas de recursos localizadas de AEM](./assets/localized-content/asset-folders.jpg)
 

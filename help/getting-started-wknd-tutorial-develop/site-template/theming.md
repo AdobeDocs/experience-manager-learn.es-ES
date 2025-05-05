@@ -60,7 +60,7 @@ Implementar actualizaciones en un tema en un entorno de AEM mediante la canaliza
 
 Pasos de alto nivel para el vídeo:
 
-1. Crear un nuevo repositorio de Git [en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/cloud-manager-repositories.html)
+1. Crear un nuevo repositorio de Git [en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/cloud-manager-repositories.html?lang=es)
 1. Añada el proyecto de fuentes temáticas al repositorio de Git de Cloud Manager:
 
    ```shell
@@ -71,7 +71,7 @@ Pasos de alto nivel para el vídeo:
    $ git remote add origin <CLOUD_MANAGER_GIT_REPOSITORY_URL>
    ```
 
-1. Configure una [canalización front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html) en Cloud Manager para implementar el código front-end.
+1. Configure una [canalización front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?lang=es) en Cloud Manager para implementar el código front-end.
 1. Ejecute la canalización front-end para implementar actualizaciones en el entorno de AEM de destino.
 
 ### Cesiones temporales de ejemplo

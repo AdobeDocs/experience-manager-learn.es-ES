@@ -115,7 +115,7 @@ Para que esta capacidad funcione en el servidor de AEM
 >
 >Asegúrese de que la instalación de AEM Forms haya finalizado. Todos los paquetes deben estar en estado activo.
 >
->Asegúrese de haber agregado las bibliotecas RSA y BouncyCastle delegadas de arranque como se menciona en esta [Instalación de AEM Forms](https://helpx.adobe.com/aem-forms/6-3/installing-configuring-aem-forms-osgi.html)
+>Asegúrese de haber agregado las bibliotecas RSA y BouncyCastle delegadas de arranque como se menciona en esta [Instalación de AEM Forms](https://helpx.adobe.com/es/aem-forms/6-3/installing-configuring-aem-forms-osgi.html)
 >
 >**Advertencias para esta demostración**
 >

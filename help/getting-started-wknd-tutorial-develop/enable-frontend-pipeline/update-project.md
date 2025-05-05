@@ -195,7 +195,7 @@ Finalmente, inserte estos cambios en el repositorio de Git de Adobe de su progra
 
 ## Precaución: _Botón Habilitar canalización front-end_
 
-La opción [Sitio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html) del selector de carril [1&rbrace; muestra el botón **Habilitar canalización front-end** al seleccionar la raíz del sitio o la página del sitio. ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html) Al hacer clic en el botón **Habilitar canalización front-end**, se anularán las **configuraciones de Sling** anteriores. Asegúrese de **no hacer clic** en este botón después de implementar los cambios anteriores a través de la ejecución de la canalización de Cloud Manager.
+La opción [Sitio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html?lang=es) del selector de carril [1&rbrace; muestra el botón **Habilitar canalización front-end** al seleccionar la raíz del sitio o la página del sitio. ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html?lang=es) Al hacer clic en el botón **Habilitar canalización front-end**, se anularán las **configuraciones de Sling** anteriores. Asegúrese de **no hacer clic** en este botón después de implementar los cambios anteriores a través de la ejecución de la canalización de Cloud Manager.
 
 ![Botón Habilitar canalización front-end](assets/enable-front-end-Pipeline-button.png)
 

@@ -38,8 +38,8 @@ Las siguientes herramientas deben instalarse localmente:
 
 La aplicación Node.js funciona con las siguientes opciones de implementación de AEM. Todas las implementaciones requieren que esté instalado [WKND Site v3.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest).
 
-+ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
-+ Opcionalmente, [credenciales de servicio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html) si autoriza solicitudes (por ejemplo, si se conecta al servicio de autor de AEM).
++ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=es)
++ Opcionalmente, [credenciales de servicio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=es) si autoriza solicitudes (por ejemplo, si se conecta al servicio de autor de AEM).
 
 Esta aplicación Node.js puede conectarse a AEM Author o AEM Publish según los parámetros de la línea de comandos.
 

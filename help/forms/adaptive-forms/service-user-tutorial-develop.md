@@ -21,7 +21,7 @@ Este artículo lo acompaña durante el proceso de creación de un usuario de ser
 
 En versiones anteriores de Adobe Experience Manager AEM (), el solucionador de recursos administrativos se utilizaba para el procesamiento back-end, que requería acceso al repositorio. AEM El uso del solucionador de recursos administrativos está obsoleto en la versión 6.3 de. En su lugar, se utiliza un usuario del sistema con permisos específicos en el repositorio.
 
-AEM Obtenga más información acerca de los detalles de [crear y usar usuarios de servicio en el sitio de trabajo de &lbrace;100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/advanced/service-users.html)
+AEM Obtenga más información acerca de los detalles de [crear y usar usuarios de servicio en el sitio de trabajo de &lbrace;100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/advanced/service-users.html?lang=es)
 
 Este artículo explica la creación de un usuario del sistema y la configuración de las propiedades del asignador de usuarios.
 

@@ -34,7 +34,7 @@ A continuación se muestra el flujo del caso de uso
 Necesitará lo siguiente para que funcione el caso de uso:
 
 * Un servidor de AEM con el paquete de complementos de Forms
-* Una clave de integración [para una aplicación de Acrobat Sign](https://helpx.adobe.com/sign/kb/how-to-create-an-integration-key.html)
+* Una clave de integración [para una aplicación de Acrobat Sign](https://helpx.adobe.com/es/sign/kb/how-to-create-an-integration-key.html)
 
 ## Siguientes pasos
 

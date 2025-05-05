@@ -230,7 +230,7 @@ Para probar esto en el servidor local, siga los siguientes pasos:
 
 1. [Descargar e instalar el paquete incrupdf](assets/embedpdf.core-1.0-SNAPSHOT.jar).
 Tiene el servlet para combinar los datos con la plantilla XDP y transmitir el PDF de vuelta.
-1. Agregue la ruta /bin/getPDFToEmbed en la sección de rutas excluidas del filtro CSRF de Adobe Granite usando [AEM ConfigMgr](http://localhost:4502/system/console/configMgr). En su entorno de producción se recomienda usar el [marco de protección CSRF](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html?lang=en)
+1. Agregue la ruta /bin/getPDFToEmbed en la sección de rutas excluidas del filtro CSRF de Adobe Granite usando [AEM ConfigMgr](http://localhost:4502/system/console/configMgr). En su entorno de producción se recomienda usar el [marco de protección CSRF](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html?lang=es)
 1. [Importar la biblioteca de cliente y el componente personalizado](assets/embed-pdf.zip)
 1. [Importar el formulario adaptable y la plantilla](assets/embed-pdf-form-and-xdp.zip)
 1. [Vista previa de formulario adaptable](http://localhost:4502/content/dam/formsanddocuments/from1040/jcr:content?wcmmode=disabled)

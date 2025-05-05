@@ -202,7 +202,7 @@ AEM **Ha completado el tutorial sin encabezado de la aplicación de la aplicaci�
 
 AEM AEM Para obtener más información acerca de los servicios de contenido de la y la configuración de un CMS sin encabezado, visite otra documentación y materiales de habilitación de Adobe:
 
-* [Uso de fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
+* [Uso de fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=es)
 * AEM [Guía del usuario de componentes principales de WCM de](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
 * AEM [Biblioteca de componentes principales de WCM de](https://opensource.adobe.com/aem-core-wcm-components/library.html)
 * AEM [Proyecto de GitHub de componentes principales de WCM de](https://github.com/adobe/aem-core-wcm-components)

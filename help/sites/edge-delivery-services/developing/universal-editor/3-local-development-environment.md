@@ -127,7 +127,7 @@ info: Enabled reverse proxy to https://main--aem-wknd-eds-ue--<YOUR_ORG>.aem.pag
 
 La CLI de AEM abre el sitio web en el explorador en `http://localhost:3000/`. Los cambios en el proyecto se vuelven a cargar automáticamente en el explorador web, mientras que los cambios de contenido [requieren la publicación en el entorno de vista previa](./6-author-block.md) y la actualización del explorador web.
 
-Si el sitio web se abre con una página 404, es probable que [fstab.yaml o paths.json](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started#create-github-project) actualizados en [nuevo proyecto de código](./1-new-code-project.md) estén configurados incorrectamente, o que los cambios no se hayan confirmado en la rama `main`.
+Si el sitio web se abre con una página 404, es probable que [fstab.yaml o paths.json](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started#create-github-project) actualizados en [nuevo proyecto de código](./1-new-code-project.md) estén configurados incorrectamente, o que los cambios no se hayan confirmado en la rama `main`.
 
 ## Generar fragmentos de JSON
 

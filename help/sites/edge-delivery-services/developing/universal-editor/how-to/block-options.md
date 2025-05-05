@@ -792,4 +792,4 @@ Ahora, los cambios están visibles en el Editor universal al usar el parámetro 
 
 Ahora ha explorado las opciones de bloques en Edge Delivery Services y el editor universal, lo que le ofrece las herramientas para personalizar y optimizar la edición de contenido con una mayor flexibilidad. Empiece a aplicar estas opciones en sus proyectos para mejorar la eficacia y mantener la coherencia.
 
-Para obtener más prácticas recomendadas y técnicas avanzadas, consulte la [documentación del editor universal](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options).
+Para obtener más prácticas recomendadas y técnicas avanzadas, consulte la [documentación del editor universal](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options).

@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Prueba de un trabajador de Asset Compute
 
-El proyecto de Asset Compute define un patrón para crear y ejecutar fácilmente [pruebas de los trabajadores de Asset Compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/test-custom-application.html).
+El proyecto de Asset Compute define un patrón para crear y ejecutar fácilmente [pruebas de los trabajadores de Asset Compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/test-custom-application.html?lang=es).
 
 ## Anatomía de una prueba de trabajo
 

@@ -78,10 +78,10 @@ Adobe Experience Manager AEM () proporciona una solución fácil de usar para cr
 
 ## Recursos adicionales
 
-* [Documentación de creación de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
-* [Documentación de desarrollo de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
-* [Documentación de administración de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html)
-* [Documentación de implementación de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/home.html)
+* [Documentación de creación de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html?lang=es)
+* [Documentación de desarrollo de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html?lang=es)
+* [Documentación de administración de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html?lang=es)
+* [Documentación de implementación de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/home.html?lang=es)
 * [Tutoriales de AEM as a Cloud Service](/help/cloud-service/overview.md)
 * [Tutoriales de AEM Assets](/help/assets/overview.md)
 * [Tutoriales de AEM Forms](/help/forms/overview.md)

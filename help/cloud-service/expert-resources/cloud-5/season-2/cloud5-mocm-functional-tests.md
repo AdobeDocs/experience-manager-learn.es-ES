@@ -24,7 +24,7 @@ AEM as a Cloud Service completa muchas pruebas funcionales de forma predetermina
 
 ## Contenido cubierto en este vídeo
 
-+ [Pruebas funcionales](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/functional-testing.html)
++ [Pruebas funcionales](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/functional-testing.html?lang=es)
 + [Pruebas de humo en AEM](https://github.com/adobe/aem-test-samples/)
 + [Clientes de prueba de AEM](https://github.com/adobe/aem-testing-clients/)
 

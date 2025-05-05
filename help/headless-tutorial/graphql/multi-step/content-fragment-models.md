@@ -191,5 +191,5 @@ En el capítulo siguiente, [Creación de modelos de fragmentos de contenido](aut
 
 ## Documentación relacionada
 
-* [Modelos de fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-models.html)
+* [Modelos de fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-models.html?lang=es)
 

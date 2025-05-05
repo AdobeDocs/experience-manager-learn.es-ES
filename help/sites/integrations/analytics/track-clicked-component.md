@@ -39,13 +39,13 @@ El equipo de marketing de WKND está interesado en saber qué botones de `Call t
 
 Este tutorial es una continuación de [Recopilar datos de página con Adobe Analytics](./collect-data-analytics.md) y supone que tiene lo siguiente:
 
-* Una **propiedad de etiquetas** con la [extensión de Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html) habilitada
-* **Adobe Analytics**: ID del grupo de informes de prueba/desarrollo y servidor de seguimiento. Consulte la siguiente documentación para [crear un grupo de informes](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html).
-* Extensión de explorador [Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) configurada con su propiedad de etiquetas cargada en el [sitio WKND](https://wknd.site/us/es.html) o un sitio AEM con la capa de datos de Adobe habilitada.
+* Una **propiedad de etiquetas** con la [extensión de Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html?lang=es) habilitada
+* **Adobe Analytics**: ID del grupo de informes de prueba/desarrollo y servidor de seguimiento. Consulte la siguiente documentación para [crear un grupo de informes](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html?lang=es).
+* Extensión de explorador [Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=es) configurada con su propiedad de etiquetas cargada en el [sitio WKND](https://wknd.site/us/es.html) o un sitio AEM con la capa de datos de Adobe habilitada.
 
 ## Inspeccionar el esquema de Botón y Teaser
 
-Antes de crear reglas en la propiedad de etiqueta, es útil revisar el esquema [para Button y Teaser](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#item) e inspeccionarlos en la implementación de la capa de datos.
+Antes de crear reglas en la propiedad de etiqueta, es útil revisar el esquema [para Button y Teaser](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=es#item) e inspeccionarlos en la implementación de la capa de datos.
 
 1. Navegar a [página principal de WKND](https://wknd.site/us/es.html)
 1. Abra las herramientas para desarrolladores del explorador y vaya a la **Consola**. Ejecute el siguiente comando:
@@ -81,7 +81,7 @@ Antes de crear reglas en la propiedad de etiqueta, es útil revisar el esquema [
        xdm:linkURL: "/content/wknd/us/en/magazine/san-diego-surf.html"
    ```
 
-   Los detalles de los datos anteriores se basan en el [Esquema de componente/elemento del contenedor](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#item). La nueva regla de etiquetas utiliza este esquema.
+   Los detalles de los datos anteriores se basan en el [Esquema de componente/elemento del contenedor](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=es#item). La nueva regla de etiquetas utiliza este esquema.
 
 ## Crear una regla en la que se hizo clic CTA
 
@@ -147,11 +147,11 @@ La capa de datos del cliente de Adobe es una capa de datos impulsada por **event
 
    El objeto `event` se ha pasado desde el método `trigger()` llamado en el evento personalizado. El objeto `component` es el estado actual del componente derivado del método de la capa de datos `getState()` y es el elemento que activó el clic.
 
-1. Guarde los cambios y ejecute una [compilación](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) en la propiedad de etiquetas para promocionar el código al [entorno](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=es) utilizado en su sitio de AEM.
+1. Guarde los cambios y ejecute una [compilación](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html?lang=es) en la propiedad de etiquetas para promocionar el código al [entorno](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=es) utilizado en su sitio de AEM.
 
    >[!NOTE]
    >
-   > Puede resultar útil usar [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) para cambiar el código incrustado a un entorno **Development**.
+   > Puede resultar útil usar [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=es) para cambiar el código incrustado a un entorno **Development**.
 
 1. Vaya al [sitio WKND](https://wknd.site/us/es.html) y abra las herramientas para desarrolladores para ver la consola. Seleccione también la casilla de verificación **Conservar registro**.
 

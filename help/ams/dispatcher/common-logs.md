@@ -33,7 +33,7 @@ Ejemplo de entrada de registro:
 
 ```
 Fri Jul 20 03:35:09 2018 W pid 8300 (tid 139937910880384) /etc/httpd/conf/publish-filters.any:5: Allowing requests with globs is considered unsafe.
-Please consult the documentation at 'https://www.adobe.com/go/docs_dispatcher_config_en' on how to use attributes 
+Please consult the documentation at 'https://www.adobe.com/go/docs_dispatcher_config_es' on how to use attributes 
 method/url/query/protocol/path/selectors/extension/suffix instead.
 ```
 
@@ -169,7 +169,7 @@ Thu Sep 27 17:35:11 2018 W pid 18936 Unable to fetch vanity URLs from 10.43.0.42
 
 Este error se produce cuando se configura el Dispatcher para que utilice el filtro automático dinámico para admitir direcciones URL de vanidad, pero no se ha finalizado la configuración instalando el paquete en el procesador de AEM.
 
-Para solucionarlo, instale el paquete de funciones de la URL de vanidad en la instancia de AEM y permita que lo pueda preparar un usuario anónimo. Detalles [aquí](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17463.html)
+Para solucionarlo, instale el paquete de funciones de la URL de vanidad en la instancia de AEM y permita que lo pueda preparar un usuario anónimo. Detalles [aquí](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17463.html?lang=es)
 
 La configuración de una URL de vanidad en funcionamiento es la siguiente:
 

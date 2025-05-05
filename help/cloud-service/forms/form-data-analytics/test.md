@@ -55,7 +55,7 @@ Interactúe con el formulario mientras mantiene abierta la ventana de la consola
 
 ## Uso de Adobe Experience Platform Debugger
 
-Agregue la [extensión del depurador de AEP](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) a su explorador (debe iniciar sesión) para obtener más información sobre depuración
+Agregue la [extensión del depurador de AEP](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=es) a su explorador (debe iniciar sesión) para obtener más información sobre depuración
 
 ![depurador de plataforma](assets/platform-debugger.png)
 
