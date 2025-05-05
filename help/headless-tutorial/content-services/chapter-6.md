@@ -32,7 +32,7 @@ AEM Debido a que los servicios de contenido de la se crean a partir de la config
    * [http://localhost:4503/crx/packmgr](http://localhost:4503/crx/packmgr)
 
 1. Publish la plantilla editable **[!DNL WKND Mobile Events API]**
-   1. AEM Vaya a ** > [!UICONTROL Herramientas] > [!UICONTROL General] > [!UICONTROL Plantillas] >[!DNL WKND Mobile]**
+   1. AEM Vaya a **&#x200B; > [!UICONTROL Herramientas] > [!UICONTROL General] > [!UICONTROL Plantillas] >[!DNL WKND Mobile]**
    1. Seleccionar la plantilla **[!DNL Event API]**
    1. Pulse **[!UICONTROL Publish]** en la barra de acciones superior
    1. Publish usa la **plantilla** y **todas las referencias** (directivas de contenido, asignaciones de directivas de contenido y plantillas)
@@ -41,7 +41,7 @@ AEM Debido a que los servicios de contenido de la se crean a partir de la config
 
    Tenga en cuenta que esto es necesario, ya que la API de eventos utiliza el componente Lista de fragmentos de contenido, que no hace referencia específica a los fragmentos de contenido.
 
-   1. AEM Vaya a ** > [!UICONTROL Assets] > [!UICONTROL Archivos] > [!DNL WKND Mobile] > [!DNL English] >[!DNL Events]**
+   1. AEM Vaya a **&#x200B; > [!UICONTROL Assets] > [!UICONTROL Archivos] > [!DNL WKND Mobile] > [!DNL English] >[!DNL Events]**
    1. Seleccionar todos los **[!DNL Event]** fragmentos de contenido
    1. Pulse **[!UICONTROL Administrar publicación]** en la barra de acciones superior
    1. Dejando la acción predeterminada **Publish** tal cual, pulse **[!UICONTROL Siguiente]** en la barra de acciones superior
@@ -50,7 +50,7 @@ AEM Debido a que los servicios de contenido de la se crean a partir de la config
       * *El modelo de fragmento de contenido [!DNL Events] y las referencias a imágenes de evento se publicarán automáticamente junto con los fragmentos de contenido.*
 
 1. Publish la página **[!DNL Events API]**.
-   1. AEM Vaya a ** > [!UICONTROL Sitios] > [!DNL WKND Mobile] > [!DNL English] >[!DNL API]**
+   1. AEM Vaya a **&#x200B; > [!UICONTROL Sitios] > [!DNL WKND Mobile] > [!DNL English] >[!DNL API]**
    1. Seleccionar la página **[!DNL Events]**
    1. Pulse **[!UICONTROL Administrar publicación]** en la barra de acciones superior
    1. Dejando la acción predeterminada **Publish** tal cual, pulse **[!UICONTROL Siguiente]** en la barra de acciones superior

@@ -27,7 +27,7 @@ El uso de [Android](https://developer.android.com/) no es muy importante, y la a
 
 Android se utiliza para el tutorial debido a la capacidad de ejecutar un Android AEM Emulator en Windows, macOs y Linux, su popularidad y que puede escribirse como Java, un lenguaje bien entendido por los desarrolladores de.
 
-*La aplicación móvil de Android del tutorial **no está**pensada para indicar cómo generar aplicaciones móviles de Android o transmitir las prácticas recomendadas de desarrollo de Android AEM, sino para ilustrar cómo se pueden consumir los servicios de contenido de la aplicación móvil.*
+*La aplicación móvil de Android del tutorial **no está**&#x200B;pensada para indicar cómo generar aplicaciones móviles de Android o transmitir las prácticas recomendadas de desarrollo de Android AEM, sino para ilustrar cómo se pueden consumir los servicios de contenido de la aplicación móvil.*
 
 ### AEM Cómo impulsan los servicios de contenido la experiencia de la aplicación móvil
 

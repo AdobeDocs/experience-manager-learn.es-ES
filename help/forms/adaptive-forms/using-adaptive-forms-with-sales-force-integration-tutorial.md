@@ -37,7 +37,7 @@ Requisitos previos para este tutorial:
 
    * Si usa **AEM Forms 6.3**, la URL de devolución de llamada es https://gbedekar-w7-1:6443/etc/cloudservices/fdm/createlead.html. En esta URL, createlead es el nombre de mi modelo de datos de formulario.
 
-   * Si utiliza** AEM Forms 6.4**, la URL de devolución de llamada es https://gbedekar-w7-:6443/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
+   * Si utiliza **&#x200B; AEM Forms 6.4**, la URL de devolución de llamada es https://gbedekar-w7-:6443/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
 
 En este ejemplo, gbedekar -w7-1:6443 es el nombre de mi servidor y el puerto en el que se está ejecutando AEM.
 
@@ -61,7 +61,7 @@ El siguiente paso es crear Data Source en AEM Forms. Siga estos pasos según su 
 
 * Haga clic en &quot;Crear&quot;
 
-**En el siguiente ** de pantalla
+**En el siguiente &#x200B;** de pantalla
 
 * Seleccione &quot;Archivo&quot; como opción para el archivo de origen Swagger. Busque el archivo que descargó anteriormente
 * Seleccione el tipo de autenticación como OAuth2.0
@@ -69,7 +69,7 @@ El siguiente paso es crear Data Source en AEM Forms. Siga estos pasos según su 
 * La URL de OAuth es: **https://login.salesforce.com/services/oauth2/authorize**
 * URL de token de actualización: **https://na5.salesforce.com/services/oauth2/token**
 * **URL de token de acceso: https://na5.salesforce.com/services/oauth2/token**
-* Ámbito de autorización: API de **   id completo de api_de_conversación   opénido   refresh_token visualforce web**
+* Ámbito de autorización: API de **&#x200B;   id completo de api_de_conversación   opénido   refresh_token visualforce web**
 * Controlador de autenticación: portador de autorización
 * Haga clic en &quot;Conectarse a OAUTH&quot;. Si todo va bien, no debería ver ningún error
 
@@ -102,7 +102,7 @@ Después de crear el modelo de datos de formulario, puede crear un Forms adaptab
    * La URL de OAuth es: **https://login.salesforce.com/services/oauth2/authorize**
    * URL de token de actualización: **https://na5.salesforce.com/services/oauth2/token**
    * Token de acceso Ur **l - https://na5.salesforce.com/services/oauth2/token**
-   * Ámbito de autorización: ** api chapter_api full id openid refresh_token visualforce web**
+   * Ámbito de autorización: **&#x200B; api chapter_api full id openid refresh_token visualforce web**
    * Controlador de autenticación: portador de autorización
    * Haga clic en el botón &quot;Conectarse a OAuth&quot;. En caso de que vea algún error, revise los pasos anteriores para asegurarse de que toda la información se ingresó con precisión.
 

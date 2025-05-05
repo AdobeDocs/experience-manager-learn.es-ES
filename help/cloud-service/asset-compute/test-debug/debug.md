@@ -98,6 +98,7 @@ _Clic en la depuración de un trabajador de Asset Compute mediante wskdebug (sin
 1. Asegúrese de que las [variables de entorno específicas del espacio de trabajo](../deploy/runtime.md) se establecen a través de `AIO_runtime_namespace` y `AIO_runtime_auth`, en función del espacio de trabajo que requiere depuración.
 1. Desde la línea de comandos, ejecute `aio app logs`
    + Si el área de trabajo está sufriendo mucho tráfico, expanda el número de registros de activación a través del indicador `--limit`:
+
      `$ aio app logs --limit=25`
 1. Los registros de activaciones más recientes (hasta el `--limit` proporcionado) se devuelven como salida del comando para su revisión.
 

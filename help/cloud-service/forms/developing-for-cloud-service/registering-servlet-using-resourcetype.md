@@ -35,7 +35,7 @@ Inicie el proyecto de banca aem en IntelliJ. Cree un servlet denominado GetField
 
 ## Servlet de ejemplo
 
-El siguiente servlet está enlazado al tipo de recurso Sling: _**azure/fetchchoices**_
+El siguiente servlet está enlazado al tipo de recurso Sling: _&#x200B;**azure/fetchchoices**&#x200B;_
 
 
 

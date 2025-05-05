@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Crear un bloque
 
-Después de insertar el JSON](./5-new-block.md) del bloque de teaser [en la rama `teaser`, el bloque se vuelve editable en el Editor universal de AEM.
+Después de insertar el JSON[&#128279;](./5-new-block.md) del bloque de teaser en la rama `teaser`, el bloque se vuelve editable en el Editor universal de AEM.
 
 Crear un bloque en desarrollo es importante por varias razones:
 

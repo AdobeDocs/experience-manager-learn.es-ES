@@ -30,7 +30,7 @@ Los fragmentos de contenido, que son un tipo de recurso, deben organizarse y adm
 
 En este paso, cree un nuevo [!DNL Event] para `Punkrock Fest` en la carpeta de recursos `/content/dam/wknd-mobile/en/events`.
 
-1. AEM Vaya a ** > [!UICONTROL Assets] > [!UICONTROL Archivos] > [!DNL WKND Mobile] >[!DNL English]** y cree carpetas de recursos **[!DNL Events]**.
+1. AEM Vaya a **&#x200B; > [!UICONTROL Assets] > [!UICONTROL Archivos] > [!DNL WKND Mobile] >[!DNL English]** y cree carpetas de recursos **[!DNL Events]**.
 1. En **[!UICONTROL Assets] > [!UICONTROL Archivos] > [!DNL WKND Mobile] > [!DNL English] >[!DNL Events]**, cree un nuevo fragmento de contenido de tipo **[!DNL Event]** con el título **[!DNL Punkrock Fest]**.
 1. Cree el fragmento de contenido [!DNL Event] recién creado.
 

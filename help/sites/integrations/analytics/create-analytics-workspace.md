@@ -155,9 +155,11 @@ A continuación, genere una tabla para crear una representación visual de cómo
 1. Vamos a desglosar la página por tipo de plantilla. Seleccione la métrica de plantilla de página de los componentes y arrastre y suelte la métrica de plantilla de página en la dimensión Nombre de página. Ahora puede ver el nombre de página desglosado por su tipo de plantilla.
 
    * **Antes de**
+
      ![eVar5](assets/create-analytics-workspace/evar5.png)
 
    * **Después**
+
      ![Métricas de eVar5](assets/create-analytics-workspace/evar5-metrics.png)
 
 1. Para comprender cómo interactúan los usuarios con los botones de CTA cuando están en las páginas del sitio WKND, se necesita un desglose adicional añadiendo la métrica ID del botón (eVar8).
@@ -245,8 +247,10 @@ A continuación, descarguemos la plantilla de clasificación para la variable de
 1. Desde el buscador de componentes, busque **Botones de WKND CTA** y arrastre y suelte la dimensión **Botones de WKND CTA (Id de botón)** en la métrica de Id de botón y reemplácela.
 
    * **Antes de**
+
      ![Botón De Workspace Antes De](assets/create-analytics-workspace/wknd-button-before.png)
    * **Después**
+
      ![Botón De Workspace Después De](assets/create-analytics-workspace/wknd-button-after.png)
 
 1. Puede ver que la métrica Id de botón que contenía el ID de botón de un botón Llamada a la acción (CTA) ahora se reemplaza con el nombre correspondiente proporcionado en la plantilla de clasificación.

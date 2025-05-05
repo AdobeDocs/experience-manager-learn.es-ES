@@ -31,7 +31,7 @@ Los flujos de trabajo de inicio automático amplían el procesamiento de recurso
 
 ## Personalización del flujo de trabajo de posprocesamiento
 
-Para personalizar el flujo de trabajo de posprocesamiento, copie el modelo predeterminado de flujo de trabajo de posprocesamiento de Assets Cloud [1}.](../../foundation/workflow/use-the-workflow-editor.md)
+Para personalizar el flujo de trabajo de posprocesamiento, copie el modelo predeterminado de flujo de trabajo de posprocesamiento de Assets Cloud [1&rbrace;.](../../foundation/workflow/use-the-workflow-editor.md)
 
 1. Comience en la pantalla Modelos de flujo de trabajo navegando hasta _Herramientas_ > _Flujo de trabajo_ > _Modelos_
 2. Busque y seleccione el modelo de flujo de trabajo _Procesamiento posterior de Assets Cloud_<br/>

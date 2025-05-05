@@ -79,7 +79,7 @@ Utilizamos las prácticas recomendadas de AEM y utilizamos:
 
 ## Pruebas unitarias y Adobe Cloud Manager {#unit-testing-and-adobe-cloud-manager}
 
-[Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=es) integra la ejecución de pruebas unitarias y la creación de informes de cobertura de código [3} en su canalización de CD/CI para ayudar a alentar y promover las prácticas recomendadas de prueba de unidades de código AEM.](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html)
+[Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=es) integra la ejecución de pruebas unitarias y la creación de informes de cobertura de código [3&rbrace; en su canalización de CD/CI para ayudar a alentar y promover las prácticas recomendadas de prueba de unidades de código AEM.](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html)
 
 Aunque el código de prueba unitaria es una buena práctica para cualquier base de código, al utilizar Cloud Manager es importante aprovechar sus funciones de prueba de calidad de código y generación de informes al proporcionar pruebas unitarias para que Cloud Manager se ejecute.
 
@@ -92,7 +92,7 @@ El primer paso es inspeccionar las dependencias de Maven para que admitan la esc
 1. Apache Sling se burla
 1. AEM Mocks Test Framework (de io.wcm)
 
-Las dependencias de prueba **JUnit5**, **Mockito y **AEM Mocks** se agregan automáticamente al proyecto durante la configuración mediante el [arquetipo de AEM Maven](project-setup.md).
+Las dependencias de prueba **JUnit5**, **Mockito y &#x200B;** AEM Mocks** se agregan automáticamente al proyecto durante la configuración mediante el [arquetipo de AEM Maven](project-setup.md).
 
 1. Para ver estas dependencias, abra el POM del reactor principal en **aem-guides-wknd/pom.xml**, vaya a `<dependencies>..</dependencies>` y vea las dependencias para las pruebas simuladas de JUnit, Mockito, Apache Sling y AEM de io.wcm en `<!-- Testing -->`.
 1. Asegúrese de que `io.wcm.testing.aem-mock.junit5` está establecido en **4.1.0**:

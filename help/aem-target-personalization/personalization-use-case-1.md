@@ -40,7 +40,7 @@ Para este ejercicio, deben participar los siguientes usuarios y, para realizar a
 
 ### Requisitos previos
 
-* AEM ****
+* AEM **&#x200B;**
    * AEM [instancia de autor y publicación de](./implementation.md#getting-aem) que se ejecuta en localhost 4502 y 4503 respectivamente.
 * **Experience Cloud**
    * Acceso a Adobe Experience Cloud de sus organizaciones - `https://<yourcompany>.experiencecloud.adobe.com`

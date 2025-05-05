@@ -207,6 +207,7 @@ Para validar este problema, la causa del comportamiento fallido es:
 1. Determinando que al menos un paquete de contenido que forma parte de la implementación escribe en `/var`.
 1. Compruebe que la cola de distribución principal (en negrita) está bloqueada en:
    + AEM Author > Herramientas > Implementación > Distribución
+
      ![Cola de distribución bloqueada](./assets/build-and-deployment/deploy-to__var--distribution.png)
 1. En las implementaciones posteriores que produzcan errores, descargue los registros &quot;Implementar en&quot; de Cloud Manager con el botón Descargar registro:
 

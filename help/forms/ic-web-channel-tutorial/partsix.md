@@ -37,7 +37,7 @@ En esta parte, crearemos la comunicación interactiva para el canal Web.
    1. Desmarque la casilla de verificación Canal de impresión. No se está creando el documento para el canal Imprimir.
    1. Web: seleccione esta opción para generar el documento para el canal Web
    1. Comunicación interactiva: Plantilla: **global>RetirementAccountStatement** t(Esta es la plantilla creada en el paso anterior)
-   1. Tema:** Tema de referencia ->Lienzo 2.0**
+   1. Tema:**&#x200B; Tema de referencia ->Lienzo 2.0**
 
 1. Pulse Crear
 1. Puede pulsar en Listo (Done) o Editar (Edit) para cerrar el cuadro de diálogo.

@@ -263,7 +263,7 @@ La aplicación Next.js utiliza dos páginas para presentar los datos de la avent
 
 + `src/pages/index.js`
 
-  Usa getServerSideProps()](https://nextjs.org/docs/basic-features/data-fetching/get-server-side-props) de [Next.js para llamar a `getAllAdventures()` y muestra cada aventura como una tarjeta.
+  Usa getServerSideProps() [&#128279;](https://nextjs.org/docs/basic-features/data-fetching/get-server-side-props) de Next.js para llamar a `getAllAdventures()` y muestra cada aventura como una tarjeta.
 
   El uso de `getServerSiteProps()` permite la representación del lado del servidor de esta página Next.js.
 

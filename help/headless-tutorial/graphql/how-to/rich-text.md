@@ -131,7 +131,7 @@ La variable `$path` utilizada en el filtro `_path` requiere la ruta de acceso co
 
 A continuación se muestran varios ejemplos de tipos de respuesta de un campo multilínea denominado `main` que contiene un párrafo: &quot;Este es un párrafo que incluye contenido **important**&quot;. donde &quot;important&quot; está marcado como **bold**.
 
-Ejemplo de +++HTML
++++Ejemplo de HTML
 
 **Consulta persistente de GraphQL:**
 
@@ -168,7 +168,7 @@ query ($path: String!) {
 
 +++
 
-Ejemplo de +++Markdown
++++Ejemplo de Markdown
 
 **Consulta persistente de GraphQL:**
 

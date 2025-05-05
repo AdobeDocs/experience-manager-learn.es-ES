@@ -59,7 +59,7 @@ AEM Cuando se elimina un recurso en, la referencia al registro del almacén de d
 
 Al minimizar el número de instancias de flujo de trabajo, aumenta el rendimiento del motor de flujo de trabajo, por lo que puede depurar con regularidad las instancias de flujo de trabajo completadas o en ejecución desde el repositorio.
 
-#### [Mantenimiento del registro de auditoría](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/operations-audit-log.html
+#### [Mantenimiento del registro de auditoría] (https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/operations-audit-log.html
 
 AEM Los eventos de que cumplen los requisitos para el registro de auditoría generan muchos datos archivados. Estos datos pueden crecer rápidamente con el tiempo debido a las replicaciones, las cargas de recursos y otras actividades del sistema.
 

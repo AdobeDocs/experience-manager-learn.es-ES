@@ -63,7 +63,7 @@ public String getFormData(Document pdfForm) {
 }
 ```
 
-A continuación se muestra la función de utilidad escrita para extraer _**topSubForm**_ con los espacios de nombres apropiados
+A continuación se muestra la función de utilidad escrita para extraer _&#x200B;**topSubForm**&#x200B;_ con los espacios de nombres apropiados
 
 ```java
 private static org.w3c.dom.Node getChildByTagName(org.w3c.dom.Node parent, String tagName) {

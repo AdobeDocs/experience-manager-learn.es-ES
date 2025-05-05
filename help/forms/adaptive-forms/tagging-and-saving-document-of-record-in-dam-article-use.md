@@ -28,7 +28,7 @@ El caso de uso es el siguiente:
 * Al enviar el formulario, se activa un flujo de trabajo de AEM. Este flujo de trabajo etiqueta el documento con el estado civil (soltero) y el estado laboral (retirado) y almacena el documento en DAM.
 * Una vez almacenado el documento en DAM, el administrador debe poder buscar en el documento mediante estas etiquetas. Por ejemplo, la búsqueda en Individual o Retirado recuperaría los DoR adecuados.
 
-Para satisfacer este caso de uso, se ha escrito un paso de proceso personalizado. En este paso recuperamos los valores de los elementos de datos adecuados de los datos enviados. Luego construimos el mosaico de etiqueta usando este valor. Por ejemplo, si el valor del elemento de estado civil es &quot;Single&quot; (soltero), el título de la etiqueta se convierte en **Peak:EmployStatus/Single (soltero o soltera). **Con la API de TagManager , encontramos la etiqueta y la aplicamos al DoR.
+Para satisfacer este caso de uso, se ha escrito un paso de proceso personalizado. En este paso recuperamos los valores de los elementos de datos adecuados de los datos enviados. Luego construimos el mosaico de etiqueta usando este valor. Por ejemplo, si el valor del elemento de estado civil es &quot;Single&quot; (soltero), el título de la etiqueta se convierte en **Peak:EmployStatus/Single (soltero o soltera). &#x200B;** Con la API de TagManager , encontramos la etiqueta y la aplicamos al DoR.
 
 El siguiente es el código completo para etiquetar y almacenar el documento de registro en AEM DAM.
 

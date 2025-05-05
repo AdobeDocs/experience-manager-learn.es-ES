@@ -31,7 +31,7 @@ En este vídeo:
 
 * **www.example.com** se asigna a localhost mediante `/etc/hosts`
 * **aem-publish.local** se asigna a localhost mediante `/etc/hosts`
-* SimpleHTTPServer (un contenedor para SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html) de [[!DNL Python]) sirve la página de HTML a través del puerto 8000.
+* SimpleHTTPServer (un contenedor para SimpleHTTPServer[&#128279;](https://docs.python.org/2/library/simplehttpserver.html) de [!DNL Python]) sirve la página de HTML a través del puerto 8000.
    * _Ya no está disponible en Mac App Store. Usar elementos similares como [Jeeves](https://apps.apple.com/us/app/jeeves-local-http-server/id980824182?mt=12)._
 * [!DNL AEM Dispatcher] se está ejecutando en [!DNL Apache HTTP Web Server] 2.4 y la solicitud de proxy inverso de `aem-publish.local` a `localhost:4503`.
 

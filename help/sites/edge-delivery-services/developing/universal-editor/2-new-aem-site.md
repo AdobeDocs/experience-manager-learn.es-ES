@@ -21,7 +21,7 @@ ht-degree: 0%
 
 En el sitio de AEM es donde se edita, administra y publica el contenido del sitio web. Para crear un sitio de AEM enviado a través de Edge Delivery Services y creado con el editor universal, usa [Edge Delivery Services con la plantilla del sitio de creación de AEM](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases) para crear un nuevo sitio en AEM Author.
 
-El sitio de AEM es donde se almacena y crea el contenido del sitio web. La experiencia final es una combinación del contenido del sitio AEM con el código del sitio web [1}.](./1-new-code-project.md)
+El sitio de AEM es donde se almacena y crea el contenido del sitio web. La experiencia final es una combinación del contenido del sitio AEM con el código del sitio web [1&rbrace;.](./1-new-code-project.md)
 
 ![Nuevo sitio de AEM para Edge Delivery Services y el editor universal](./assets/2-new-aem-site/new-site.png)
 

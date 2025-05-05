@@ -403,7 +403,7 @@ Le recomendamos que estudie detenidamente la documentación de SDI. Hay algunas 
 * [docs.oracle.com - Cómo escribir etiquetas JSP personalizadas](https://docs.oracle.com/cd/E11035_01/wls100/taglib/quickstart.html)
 * [Dominik Süß: creación y uso de filtros de componentes](https://www.slideshare.net/connectwebex/prsentation-dominik-suess)
 * [sling.apache.org - Sling Dynamic Includes](https://sling.apache.org/documentation/bundles/dynamic-includes.html)
-* AEM [helpx.adobe.com - Configurando Sling Dynamic Includes en el código de tiempo de la aplicación {10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/sling-dynamic-include-technical-video-setup.html)
+* AEM [helpx.adobe.com - Configurando Sling Dynamic Includes en el código de tiempo de la aplicación &lbrace;10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/sling-dynamic-include-technical-video-setup.html)
 
 
 #### Almacenamiento en caché de modelo

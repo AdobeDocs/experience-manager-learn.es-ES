@@ -134,7 +134,7 @@ Implemente el componente de pestañas verticales actualizado en la instancia de 
 Implemente el tema actualizado mediante la canalización de front-end.
 Cree una variación de estilo para los componentes de la pestaña vertical como se muestra a continuación
 ![variación de estilo](assets/verticaltab-style-variation.png)
-Hemos creado una variación de estilo llamada Marketing asociada a la clase css _**cmp-verticaltabs—marketing**_.
+Hemos creado una variación de estilo llamada Marketing asociada a la clase css _&#x200B;**cmp-verticaltabs—marketing**&#x200B;_.
 Crear un formulario adaptable con un componente de pestaña vertical. Asocie el componente Pestaña vertical con la variación de estilo de marketing.
 Agregue un par de pestañas a las pestañas verticales y asígneles un nombre que coincida con las imágenes definidas en el mapa del icono, como hogar, familia.
 ![icono-de-inicio](assets/tab-name.png)

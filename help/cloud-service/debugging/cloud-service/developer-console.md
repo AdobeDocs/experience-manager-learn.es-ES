@@ -54,7 +54,7 @@ Para acceder y utilizar Developer Console, se deben otorgar los siguientes permi
 Asegúrese de lo siguiente:
 
 + Ha seleccionado la URL de Developer Console correcta haciendo clic en los tres puntos para el entorno seleccionado a través de Cloud Manager y seleccione Developer Console.
-+ O bien tiene __Desarrollador del producto Cloud Manager - Perfil del producto Cloud Service__](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-cloud-manager.html#assign-developer) para ver la lista completa de entornos, o bien forma parte del perfil del producto [__Administradores de AEM__ en __Autor de AEM__](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html#aem-product-profiles) para el entorno que no encuentra.[
++ O bien tiene __Desarrollador del producto Cloud Manager - Perfil del producto Cloud Service__[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-cloud-manager.html#assign-developer) para ver la lista completa de entornos, o bien forma parte del perfil del producto [__Administradores de AEM__ en __Autor de AEM__](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html#aem-product-profiles) para el entorno que no encuentra.
 
 #### 401 Error no autorizado al descargar el estado
 

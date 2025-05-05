@@ -28,7 +28,7 @@ Este capítulo cubre la activación y definición de modelos de fragmentos de co
 
 ## Habilitar modelos de fragmentos de contenido
 
-AEM Los modelos de fragmento de contenido **deben** habilitarse a través de **[explorador de configuración]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html?lang=es)** que se está usando para la configuración de [!UICONTROL .
+AEM Los modelos de fragmento de contenido **deben** habilitarse a través de **[explorador de configuración](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html?lang=es)** que se está usando para la configuración de .
 
 AEM Si los modelos de fragmento de contenido **no** están habilitados para una configuración, el botón **[!UICONTROL Crear] > [!UICONTROL Fragmento de contenido]** no aparecerá para la configuración de la correspondiente.
 
@@ -52,7 +52,7 @@ AEM Si los modelos de fragmento de contenido **no** están habilitados para una 
 
    >[!NOTE]
    >
-   >AEM Este cambio de configuración no es reversible desde la interfaz de usuario web de [!UICONTROL Configuración de la configuración ]. Para deshacer esta configuración:
+   >AEM Este cambio de configuración no es reversible desde la interfaz de usuario web de [!UICONTROL Configuración de la configuración &#x200B;]. Para deshacer esta configuración:
    >    
    >    1. Abrir [CRXDE Lite](http://localhost:4502/crx/de)
    >    1. Navegue hasta `/conf/wknd-mobile/settings/dam/cfm`
@@ -62,7 +62,7 @@ AEM Si los modelos de fragmento de contenido **no** están habilitados para una 
 
 1. Aplique la configuración **[!DNL WKND Mobile]** a la carpeta **[!DNL WKND Mobile]de Assets** para permitir que se creen fragmentos de contenido de modelos de fragmentos de contenido dentro de esa jerarquía de carpetas de Assets:
 
-   1. AEM Vaya a ** > [!UICONTROL Assets] > [!UICONTROL Archivos]**
+   1. AEM Vaya a **&#x200B; > [!UICONTROL Assets] > [!UICONTROL Archivos]**
    1. Seleccione la carpeta **[!UICONTROL WKND Mobile]**
    1. Pulse el botón **[!UICONTROL Propiedades]** en la barra de acciones superior para abrir [!UICONTROL Propiedades de carpeta]
    1. En [!UICONTROL Propiedades de carpeta], pulse la pestaña **[!UICONTROL Cloud Service]**
@@ -181,6 +181,6 @@ Después de completar la creación del modelo de fragmento de contenido, debe te
 
 ## Siguiente paso
 
-AEM AEM De forma opcional, instale el paquete de contenido [com.adobe.aem.guides.wknd-mobile.content.chapter-2.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) en Author o a través del Administrador de paquetes de [](http://localhost:4502/crx/packmgr/index.jsp). Este paquete contiene las configuraciones y el contenido descritos en esta parte del tutorial.
+AEM AEM De forma opcional, instale el paquete de contenido [com.adobe.aem.guides.wknd-mobile.content.chapter-2.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) en Author o a través del Administrador de paquetes de [&#128279;](http://localhost:4502/crx/packmgr/index.jsp). Este paquete contiene las configuraciones y el contenido descritos en esta parte del tutorial.
 
 * [Capítulo 3: Creación de fragmentos de contenido de eventos](./chapter-3.md)

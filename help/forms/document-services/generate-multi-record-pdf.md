@@ -145,7 +145,7 @@ DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
 * [Implementar paquete AEMFormsDocumentServices personalizado](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar).Paquete personalizado que genera los archivos PDF mediante la API OutputService
 * [Dirija su explorador al administrador de paquetes](http://localhost:4502/crx/packmgr/index.jsp)
 * [Importe e instale el paquete](assets/generate-multiple-pdf-from-xml.zip). Este paquete contiene la página html que le permite soltar la plantilla y los archivos de datos.
-* [Dirija su explorador a MultiRecords.html](¿http://localhost:4502/content/DocumentServices/Multirecord.html?)
+* [Dirija su explorador a MultiRecords.html] (¿http://localhost:4502/content/DocumentServices/Multirecord.html?)
 * Arrastre y suelte la plantilla y el archivo de datos xml juntos
 * Descargue el archivo zip creado. Este archivo zip contiene los archivos pdf generados por el servicio de salida.
 

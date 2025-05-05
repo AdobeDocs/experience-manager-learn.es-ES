@@ -220,6 +220,7 @@ A veces, es posible que necesite un ajuste preestablecido de vídeo especial que
 
    - Cada cuenta de vídeo de streaming tiene docenas de ajustes preestablecidos listos para usar y, si crea sus propios ajustes preestablecidos personalizados, también los verá aquí.
    - Puede filtrar por tipo mediante el menú desplegable. Los ajustes preestablecidos se dividen en Equipo, Móvil y Tablet.
+
      ![imagen](assets/video-overview/video-overview-4.jpg)
 
 2. La columna Activo permite elegir si desea mostrar todos los ajustes preestablecidos al cargar o solo los que elija. Si se encuentra en EE.UU., puede que desee desmarcar los ajustes preestablecidos de PAL europeo, y si se encuentra en Reino Unido/ EMEA, desmarque los ajustes preestablecidos de NTSC.

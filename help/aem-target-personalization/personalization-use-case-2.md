@@ -40,7 +40,7 @@ AEM ![Escenario De Destino De La 1](assets/personalization-use-case-2/aem-target
 
 ### Requisitos previos
 
-* AEM ****
+* AEM **&#x200B;**
    * AEM [instancia de autor y publicación de](./implementation.md#getting-aem) que se ejecuta en localhost 4502 y 4503 respectivamente.
    * [AEM Integración con Adobe Target mediante etiquetas de](./using-launch-adobe-io.md#aem-target-using-launch-by-adobe)
 * **Experience Cloud**
@@ -59,28 +59,38 @@ AEM ![Escenario De Destino De La 1](assets/personalization-use-case-2/aem-target
 1. El especialista en marketing crea una actividad de destinatario A/B con la oferta de redireccionamiento como una experiencia y el tráfico del sitio web asignado a la nueva página de inicio con el objetivo de éxito y las métricas añadidas.
    1. En la ventana de Adobe Target, ve a la pestaña **Actividades**.
    2. Haga clic en el botón **Crear actividad** y seleccione el tipo de actividad como **Prueba A/B**
+
       ![Adobe Target - Crear actividad](assets/personalization-use-case-2/create-ab-activity.png)
    3. Seleccione el canal **Web** y elija **Compositor de experiencias visuales**.
    4. Escriba la **URL de actividad** y haga clic en **Siguiente** para abrir el Compositor de experiencias visuales.
+
       ![Adobe Target - Crear actividad](assets/personalization-use-case-2/create-activity-ab-name.png)
    5. Para que **Compositor de experiencias visuales** se cargue, habilita **Permitir la carga de scripts no seguros** en el explorador y vuelve a cargar la página.
+
       ![Actividad de segmentación de experiencias](assets/personalization-use-case-1/load-unsafe-scripts.png)
    6. Observe la página de inicio del sitio WKND abierta en el editor del Compositor de experiencias visuales.
+
       ![VEC](assets/personalization-use-case-2/vec.png)
    7. Pase el ratón sobre la **experiencia B** y seleccione Ver otras opciones.
+
       ![Experiencia B](assets/personalization-use-case-2/redirect-url.png)
    8. Seleccione la opción **Redirigir a URL** e introduzca la URL a la nueva página principal de WKND. (http://localhost:4503/content/wknd/en1.html)
+
       ![Experiencia B](assets/personalization-use-case-2/redirect-url-2.png)
    9. **Guarde** sus cambios y continúe con los siguientes pasos de la Creación de actividades.
    10. Seleccione el **Método de asignación de tráfico** como manual y asigne el 100% del tráfico a la **Experiencia B**.
-      ![Tráfico de experiencia B](assets/personalization-use-case-2/traffic.png)
+
+       ![Tráfico de experiencia B](assets/personalization-use-case-2/traffic.png)
    11. Haga clic en **Siguiente**.
    12. Proporcione **métricas de objetivo** para su actividad y guarde y cierre la prueba A/B.
-      ![Métrica de objetivo de prueba A/B](assets/personalization-use-case-2/goal-metric.png)
+
+       ![Métrica de objetivo de prueba A/B](assets/personalization-use-case-2/goal-metric.png)
    13. Proporcione un nombre (**Rediseño de la página principal de WKND**) para su actividad y guarde los cambios.
    14. En la pantalla Detalles de la actividad, asegúrate de **Activar** tu actividad.
-      ![Activar actividad](assets/personalization-use-case-2/ab-activate.png)
+
+       ![Activar actividad](assets/personalization-use-case-2/ab-activate.png)
    15. Vaya a la página principal de WKND (http://localhost:4503/content/wknd/en.html) y se le redirigirá a la página principal del sitio WKND rediseñada (http://localhost:4503/content/wknd/en1.html).
+
       ![Se rediseñó la página principal de WKND](assets/personalization-use-case-2/WKND-home-page-redesign.png)
 
 ## Resumen

@@ -58,8 +58,8 @@ El primer paso para crear un modelo de datos de formulario respaldado por RDBMS 
 * ![get-service](assets/get-service.png)
 >[!NOTE]
 > El servicio de obtención espera un valor asignado a la columna empID de la nueva entidad. Existen varias formas de pasar este valor y, en este tutorial, el empID se pasa a través del parámetro de solicitud denominado empID.
-* Haga clic en _Listo_ para guardar los argumentos del servicio conseguir
-* Haga clic en _Listo_ para guardar los cambios del modelo de datos de formulario
+>* Haga clic en _Listo_ para guardar los argumentos del servicio conseguir
+>* Haga clic en _Listo_ para guardar los cambios del modelo de datos de formulario
 
 ## Agregar asociación entre 2 entidades
 

@@ -76,7 +76,7 @@ SAML 2.0 solo se admite para autenticar usuarios en AEM Publish o Preview. Para 
 
 El certificado público del IDP se añade al repositorio de confianza global de AEM y se utiliza para validar que la afirmación de SAML enviada por el IDP es válida.
 
-Flujo de firma de aserción +++SAML
++++Flujo de firma de aserción SAML
 
 ![SAML 2.0 - Firma de aserción SAML IDP](./assets/saml-2-0/idp-signing-diagram.png)
 

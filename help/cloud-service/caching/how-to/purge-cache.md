@@ -45,7 +45,7 @@ Vamos a aprender a configurar el token de API de purga para purgar la caché de 
 
 El token de API de purga se crea configurando la regla de CDN en el código del proyecto de AEM.
 
-1. Abra el archivo `cdn.yaml` de la carpeta principal `config` de su proyecto de AEM. Por ejemplo, el archivo cdn.yaml](https://github.com/adobe/aem-guides-wknd/blob/main/config/cdn.yaml) del proyecto [WKND.
+1. Abra el archivo `cdn.yaml` de la carpeta principal `config` de su proyecto de AEM. Por ejemplo, el archivo cdn.yaml[&#128279;](https://github.com/adobe/aem-guides-wknd/blob/main/config/cdn.yaml) del proyecto WKND.
 
 1. Agregue la siguiente regla de CDN al archivo `cdn.yaml`:
 

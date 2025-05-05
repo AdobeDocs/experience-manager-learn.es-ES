@@ -29,7 +29,7 @@ AEM AEM Para utilizar ofertas de fragmentos de experiencias de para potenciar su
 
 ## Requisitos previos
 
-* AEM ****
+* AEM **&#x200B;**
 
    * AEM Para completar este tutorial se necesita una instancia de autor y publicación de. AEM Si aún no ha configurado la instancia de la instancia de la, puede seguir los pasos [aquí](./implementation.md#set-up-aem).
 

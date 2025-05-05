@@ -261,7 +261,7 @@ Con la VPN creada, ahora puede configurarla mediante las API de Cloud Manager co
    Si su implementación de AEM __only__ requiere conexiones HTTP/HTTPS con un servicio externo, deje vacía la matriz `portForwards`, ya que estas reglas solo son necesarias para solicitudes que no sean HTTP/HTTPS.
 
 
-2. Para cada entorno, valide que las reglas de enrutamiento VPN estén en vigor mediante la operación [getEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) de la API de Cloud Manager.
+&#x200B;2. Para cada entorno, valide que las reglas de enrutamiento VPN estén en vigor mediante la operación [getEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) de la API de Cloud Manager.
 
    __petición HTTP getEnvironmentAdvancedNetworkingConfiguration__
 
@@ -273,9 +273,9 @@ Con la VPN creada, ahora puede configurarla mediante las API de Cloud Manager co
        -H 'Content-Type: application/json'
    ```
 
-3. Las configuraciones de proxy de red privada virtual se pueden actualizar mediante la operación [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) de la API de Cloud Manager. Recuerde que `enableEnvironmentAdvancedNetworkingConfiguration` es una operación de `PUT`, por lo que todas las reglas deben proporcionarse con cada invocación de esta operación.
+&#x200B;3. Las configuraciones de proxy de red privada virtual se pueden actualizar mediante la operación [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) de la API de Cloud Manager. Recuerde que `enableEnvironmentAdvancedNetworkingConfiguration` es una operación de `PUT`, por lo que todas las reglas deben proporcionarse con cada invocación de esta operación.
 
-4. Ahora puede utilizar la configuración de salida de red privada virtual en su código y configuración personalizados de AEM.
+&#x200B;4. Ahora puede utilizar la configuración de salida de red privada virtual en su código y configuración personalizados de AEM.
 
 ## Conexión a servicios externos a través de la red privada virtual
 

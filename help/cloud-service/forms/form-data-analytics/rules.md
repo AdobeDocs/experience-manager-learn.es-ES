@@ -31,7 +31,7 @@ En la propiedad Tags creamos 2 nuevas [reglas](https://experienceleague.adobe.co
 
 La regla **Error de validación de campo** se activa cada vez que hay un error de validación en el campo del formulario adaptable. Por ejemplo, en nuestro formulario si el número de teléfono o el correo electrónico no tienen el formato esperado, se muestra un mensaje de error de validación.
 
-La regla de error de validación de campo se configura al establecer el evento en _**Adobe Experience Manager Forms-Error**_, como se muestra en la captura de pantalla
+La regla de error de validación de campo se configura al establecer el evento en _&#x200B;**Adobe Experience Manager Forms-Error**&#x200B;_, como se muestra en la captura de pantalla
 
 
 
@@ -45,11 +45,11 @@ Adobe Analytics - Set Variables está configurado de la siguiente manera
 
 La regla de envío de formulario se activa cada vez que se envía correctamente un formulario adaptable.
 
-La regla de envío de formulario se ha configurado con el evento _**Adobe Experience Manager Forms - Submit**_
+La regla de envío de formulario se ha configurado con el evento _&#x200B;**Adobe Experience Manager Forms - Submit**&#x200B;_
 
 ![form-submit-rule](assets/form-submit-rule.png)
 
-En la regla de envío de formulario, el valor del elemento de datos _**ApplicantsStateOfResidence**_ se asigna a prop5 y el valor del elemento de datos FormTitle se asigna a prop8.
+En la regla de envío de formulario, el valor del elemento de datos _&#x200B;**ApplicantsStateOfResidence**&#x200B;_ se asigna a prop5 y el valor del elemento de datos FormTitle se asigna a prop8.
 
 Las variables Adobe Analytics - Set se configuran de la siguiente manera.
 ![form-submit-rule-set-variables](assets/form-submit-set-variable.png)

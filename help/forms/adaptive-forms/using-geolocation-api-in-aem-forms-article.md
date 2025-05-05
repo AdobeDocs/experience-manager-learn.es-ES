@@ -95,12 +95,12 @@ Para poner esta capacidad en su servidor, siga los siguientes pasos
 
 * Instale e inicie el servidor de AEM Forms.
 > Esta capacidad se probó en AEM Forms 6.3 y versiones posteriores
-* [Obtener clave API de Google](https://developers.google.com/maps/documentation/javascript/get-api-key).
-* [Importe los recursos relacionados con este artículo en AEM.](assets/geolocationapi.zip)
-* [Abrir el fragmento de formulario adaptable en modo de edición.](http://localhost:4502/editor.html/content/forms/af/currentaddressfragment.html)
-* Abra el editor de reglas para el componente Opción de imagen.
-* Reemplace la &lt;your_api_key> por la clave de API de Google.
-* Guarde los cambios.
-* [Vista previa del formulario](http://localhost:4502/content/dam/formsanddocuments/currentaddressfragment/jcr:content?wcmmode=disabled).
-* Haga clic en el icono &quot;geolocalización&quot;.
-* El formulario debe rellenarse con la ubicación actual.
+>* [Obtener clave API de Google](https://developers.google.com/maps/documentation/javascript/get-api-key).
+>* [Importe los recursos relacionados con este artículo en AEM.](assets/geolocationapi.zip)
+>* [Abrir el fragmento de formulario adaptable en modo de edición.](http://localhost:4502/editor.html/content/forms/af/currentaddressfragment.html)
+>* Abra el editor de reglas para el componente Opción de imagen.
+>* Reemplace la &lt;your_api_key> por la clave de API de Google.
+>* Guarde los cambios.
+>* [Vista previa del formulario](http://localhost:4502/content/dam/formsanddocuments/currentaddressfragment/jcr:content?wcmmode=disabled).
+>* Haga clic en el icono &quot;geolocalización&quot;.
+>* El formulario debe rellenarse con la ubicación actual.

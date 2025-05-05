@@ -25,7 +25,7 @@ AEM El capítulo 5 del tutorial sin encabezado de trata la creación de la pági
 
 ## Creación de la página de API de eventos
 
-1. AEM Vaya a ** > [!UICONTROL Sitios] > [!DNL WKND Mobile] > [!DNL English] >[!DNL API]**.
+1. AEM Vaya a **&#x200B; > [!UICONTROL Sitios] > [!DNL WKND Mobile] > [!DNL English] >[!DNL API]**.
 1. **Puntee en la etiqueta de la página API** y, a continuación, pulse el botón **Crear** en la barra de acciones superior y cree una nueva página de API de eventos en la página de la API.
    1. Pulse **Crear** en la barra de acciones superior
    1. Seleccione la plantilla **API de eventos**
@@ -88,6 +88,6 @@ AEM ![Salida JSON de servicios de contenido de](assets/chapter-5/json-output.png
 
 ## Siguiente paso
 
-AEM AEM De forma opcional, instale el paquete de contenido [com.adobe.aem.guides.wknd-mobile.content.chapter-5.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) en Author o a través del Administrador de paquetes de [](http://localhost:4502/crx/packmgr/index.jsp). Este paquete contiene las configuraciones y el contenido descritos en este y en los capítulos anteriores del tutorial.
+AEM AEM De forma opcional, instale el paquete de contenido [com.adobe.aem.guides.wknd-mobile.content.chapter-5.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) en Author o a través del Administrador de paquetes de [&#128279;](http://localhost:4502/crx/packmgr/index.jsp). Este paquete contiene las configuraciones y el contenido descritos en este y en los capítulos anteriores del tutorial.
 
 * [AEM Capítulo 6: Exposición del contenido en Publish como JSON de la interfaz de usuario de la interfaz de usuario de](./chapter-6.md)

@@ -179,7 +179,7 @@ Los siguientes puntos de extensión del Editor de fragmentos de contenido están
       </div>
       <div class="card-content is-padded-small">
         <div class="content">
-          <p class="headline is-size-6 has-text-weight-bold"><a href="https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-badges/ " title="Distintivos del Editor de texto enriquecido" target="_blank" rel="referrer">Distintivos del Editor de texto enriquecido</a></p>
+          <p class="headline is-size-6 has-text-weight-bold"><a href="https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-badges/" title="Distintivos del Editor de texto enriquecido" target="_blank" rel="referrer">Distintivos del Editor de texto enriquecido</a></p>
           <p class="is-size-6">Personalice bloques de estilo no editables dentro de RTE.</p>
           <a href="https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-badges/" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" target="_blank" rel="referrer">
             <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ver los documentos</span>

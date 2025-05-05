@@ -69,7 +69,7 @@ Se puede encontrar un ejemplo de asistente personalizado para la plantilla del p
 
 ### Gadgets {#gadgets}
 
-No hay propiedades adicionales en este nodo, pero los elementos secundarios del nodo de gadgets controlan qué mosaicos de proyecto rellenan el panel del proyecto cuando se crea un nuevo proyecto. [Los mosaicos del proyecto](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects) (también conocidos como gadgets o pods) son tarjetas simples que rellenan el área de trabajo de un proyecto. Puede encontrar una lista completa de los mosaicos de ootb en: **/libs/cq/gui/components/projects/admin/pod. **Los propietarios de proyectos siempre pueden agregar o quitar mosaicos después de crear un proyecto.
+No hay propiedades adicionales en este nodo, pero los elementos secundarios del nodo de gadgets controlan qué mosaicos de proyecto rellenan el panel del proyecto cuando se crea un nuevo proyecto. [Los mosaicos del proyecto](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects) (también conocidos como gadgets o pods) son tarjetas simples que rellenan el área de trabajo de un proyecto. Puede encontrar una lista completa de los mosaicos de ootb en: **/libs/cq/gui/components/projects/admin/pod. &#x200B;** Los propietarios de proyectos siempre pueden agregar o quitar mosaicos después de crear un proyecto.
 
 ### Funciones {#roles}
 
@@ -77,7 +77,7 @@ Hay tres [roles predeterminados](https://experienceleague.adobe.com/en/docs/expe
 
 ### Flujos de trabajo {#workflows}
 
-Una de las razones más atractivas para crear una plantilla de proyecto personalizada es que le ofrece la capacidad de configurar los flujos de trabajo disponibles para utilizarlos con el proyecto. Pueden ser flujos de trabajo OOTB o flujos de trabajo personalizados. Debajo del nodo **workflows** debe haber un nodo **models** (también `nt:unstructured`) y nodos secundarios debajo de especifique los modelos de flujo de trabajo disponibles. La propiedad **modelId **apunta al modelo de flujo de trabajo en /etc/workflow y la propiedad **wizard** apunta al cuadro de diálogo utilizado al iniciar el flujo de trabajo. Una ventaja significativa de los proyectos es la capacidad de agregar un cuadro de diálogo personalizado (asistente) para capturar metadatos específicos de la empresa al principio del flujo de trabajo que puedan dirigir más acciones dentro del flujo de trabajo.
+Una de las razones más atractivas para crear una plantilla de proyecto personalizada es que le ofrece la capacidad de configurar los flujos de trabajo disponibles para utilizarlos con el proyecto. Pueden ser flujos de trabajo OOTB o flujos de trabajo personalizados. Debajo del nodo **workflows** debe haber un nodo **models** (también `nt:unstructured`) y nodos secundarios debajo de especifique los modelos de flujo de trabajo disponibles. La propiedad **modelId &#x200B;** apunta al modelo de flujo de trabajo en /etc/workflow y la propiedad **wizard** apunta al cuadro de diálogo utilizado al iniciar el flujo de trabajo. Una ventaja significativa de los proyectos es la capacidad de agregar un cuadro de diálogo personalizado (asistente) para capturar metadatos específicos de la empresa al principio del flujo de trabajo que puedan dirigir más acciones dentro del flujo de trabajo.
 
 ```shell
 <projects-template-root> (cq:Template)
@@ -290,7 +290,7 @@ El primer paso es crear una tarea para terminar de editar un fragmento de conten
 
 Una vez completada la primera tarea, el usuario asignado tendrá tres opciones para enrutar el flujo de trabajo:
 
-**Normal **: el enrutamiento normal crea una tarea asignada al grupo de aprobadores del proyecto para su revisión y aprobación. La prioridad de la tarea es Normal y la fecha de vencimiento es cinco días a partir de la fecha de creación.
+**Normal &#x200B;**: el enrutamiento normal crea una tarea asignada al grupo de aprobadores del proyecto para su revisión y aprobación. La prioridad de la tarea es Normal y la fecha de vencimiento es cinco días a partir de la fecha de creación.
 
 **Enviar** - el enrutamiento de envío también crea una tarea asignada al grupo de aprobadores del proyecto. La prioridad de la tarea es Alta y la fecha de vencimiento es solo un día.
 
@@ -391,7 +391,7 @@ Ubicación del modelo de flujo de trabajo en 6.4+
       Pre-Create Task Script = "/apps/aem-guides/projects/scripts/start-task-config.ecma"
    ```
 
-1. En el paso anterior hicimos referencia a un script anterior a la creación de la tarea. Crearemos ese script ahora en el cual estableceremos el usuario asignado de la tarea en función del valor de un valor de metadatos de flujo de trabajo &quot;**asignado**&quot;. El valor **&quot;usuario asignado&quot;** se establece cuando se inicia el flujo de trabajo. También leeremos los metadatos del flujo de trabajo para elegir dinámicamente la prioridad de la tarea al leer el valor &quot;**taskPriority&quot;** de los metadatos del flujo de trabajo, así como el ** **&quot;taskDueDate&quot; que se establecerá dinámicamente cuando venza la primera tarea.
+1. En el paso anterior hicimos referencia a un script anterior a la creación de la tarea. Crearemos ese script ahora en el cual estableceremos el usuario asignado de la tarea en función del valor de un valor de metadatos de flujo de trabajo &quot;**asignado**&quot;. El valor **&quot;usuario asignado&quot;** se establece cuando se inicia el flujo de trabajo. También leeremos los metadatos del flujo de trabajo para elegir dinámicamente la prioridad de la tarea al leer el valor &quot;**taskPriority&quot;** de los metadatos del flujo de trabajo, así como el **&#x200B; **&quot;taskDueDate&quot; que se establecerá dinámicamente cuando venza la primera tarea.
 
    Por motivos de organización, hemos creado una carpeta debajo de la carpeta de la aplicación para guardar todos los scripts relacionados con el proyecto: **/apps/aem-guides/projects-tasks/projects/scripts**. Cree un archivo debajo de esta carpeta denominado **&quot;start-task-config.ecma&quot;**. &#42;Tenga en cuenta que la ruta al archivo start-task-config.ecma coincide con la ruta establecida en la pestaña Configuración avanzada del paso 4.
 
@@ -482,7 +482,7 @@ Ubicación del modelo de flujo de trabajo en 6.4+
 
 Anteriormente en este tutorial creamos una plantilla de proyecto que incluía una función de aprobador. Cada vez que se crea un nuevo proyecto a partir de esta plantilla, se crea un grupo específico de proyecto para la función Aprobadores. Al igual que una Etapa de participante, una Tarea solo puede asignarse a un Usuario o Grupo. Queremos asignar esta tarea al grupo de proyecto que corresponda al grupo de aprobadores. Todos los flujos de trabajo que se inicien desde un proyecto tendrán metadatos que asignarán las funciones del proyecto al grupo específico del proyecto.
 
-Copie y pegue el código siguiente en el área de texto **Script** de la pestaña **Configuración avanzada **. Este código leerá los metadatos del flujo de trabajo y asignará la tarea al grupo de aprobadores del proyecto. Si no encuentra el valor del grupo de aprobadores, volverá a asignar la tarea al grupo de administradores.
+Copie y pegue el código siguiente en el área de texto **Script** de la pestaña **Configuración avanzada &#x200B;**. Este código leerá los metadatos del flujo de trabajo y asignará la tarea al grupo de aprobadores del proyecto. Si no encuentra el valor del grupo de aprobadores, volverá a asignar la tarea al grupo de administradores.
 
 ```
 var projectApproverGrp = workflowData.getMetaDataMap().get("project.group.approvers","administrators");
@@ -514,7 +514,7 @@ task.setCurrentAssignee(projectApproverGrp);
 
    Dado que esta es la ruta de aprobación de Rush, la prioridad de la tarea se establece en High. Además, le damos al grupo de aprobadores solo un día para completar la tarea. El usuario asignado se deja en blanco en la pestaña Tarea, ya que se asigna dinámicamente en la pestaña Configuración avanzada.
 
-   Podemos reutilizar el mismo fragmento de script que en el paso 7 para rellenar el área de texto **Script** en la pestaña** Configuración avanzada **. Copie y pegue el siguiente código:
+   Podemos reutilizar el mismo fragmento de script que en el paso 7 para rellenar el área de texto **Script** en la pestaña **&#x200B; Configuración avanzada &#x200B;**. Copie y pegue el siguiente código:
 
    ```
    var projectApproverGrp = workflowData.getMetaDataMap().get("project.group.approvers","administrators");
@@ -522,7 +522,7 @@ task.setCurrentAssignee(projectApproverGrp);
    task.setCurrentAssignee(projectApproverGrp);
    ```
 
-1. Arrastre y suelte un componente ** Sin operación** en la rama derecha (rama 3). El componente Sin operación no realiza ninguna acción y avanzará inmediatamente, lo que representa el deseo del editor original de omitir el paso de aprobación. Técnicamente, podríamos dejar esta rama sin ningún paso de flujo de trabajo, pero como práctica recomendada, añadiremos un paso Sin operación. Esto deja claro a otros desarrolladores cuál es el propósito de la Rama 3.
+1. Arrastre y suelte un componente **&#x200B; Sin operación** en la rama derecha (rama 3). El componente Sin operación no realiza ninguna acción y avanzará inmediatamente, lo que representa el deseo del editor original de omitir el paso de aprobación. Técnicamente, podríamos dejar esta rama sin ningún paso de flujo de trabajo, pero como práctica recomendada, añadiremos un paso Sin operación. Esto deja claro a otros desarrolladores cuál es el propósito de la Rama 3.
 
    Haga doble clic en el paso del flujo de trabajo y configure el Título y la Descripción:
 

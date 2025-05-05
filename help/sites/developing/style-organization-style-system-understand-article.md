@@ -87,7 +87,7 @@ El estilo predeterminado suele ser el estilo más utilizado del componente y la 
 
 Según lo común del estilo predeterminado, CSS se puede aplicar directamente en `.cmp-teaser` (sin ningún modificador) o en `.cmp-teaser--default`.
 
-Si las reglas de estilo predeterminadas se aplican con mayor frecuencia que no a todas las variaciones, es mejor utilizar `.cmp-teaser` como las clases CSS del estilo predeterminado, ya que todas las variaciones deben heredarlas implícitamente, suponiendo que se sigan convenciones de tipo BEM. Si no es así, se deben aplicar mediante el modificador predeterminado, como `.cmp-teaser--default`, que a su vez debe agregarse al campo Clases CSS predeterminadas](#component-styles-configuration) de la configuración de estilo del componente [de lo contrario, estas reglas de estilo deberán anularse en cada variación.
+Si las reglas de estilo predeterminadas se aplican con mayor frecuencia que no a todas las variaciones, es mejor utilizar `.cmp-teaser` como las clases CSS del estilo predeterminado, ya que todas las variaciones deben heredarlas implícitamente, suponiendo que se sigan convenciones de tipo BEM. Si no es así, se deben aplicar mediante el modificador predeterminado, como `.cmp-teaser--default`, que a su vez debe agregarse al campo Clases CSS predeterminadas[&#128279;](#component-styles-configuration) de la configuración de estilo del componente de lo contrario, estas reglas de estilo deberán anularse en cada variación.
 
 Incluso es posible asignar un estilo &quot;con nombre&quot; como estilo predeterminado, por ejemplo, el estilo Hero `(.cmp-teaser--hero)` definido a continuación, aunque es más claro implementar el estilo predeterminado en las implementaciones de clase CSS `.cmp-teaser` o `.cmp-teaser--default`.
 

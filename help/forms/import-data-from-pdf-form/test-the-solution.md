@@ -23,4 +23,4 @@ Puede implementar los recursos de ejemplo para que esta solución funcione en su
 * Descargue e implemente el paquete usando la consola web de OSGi [Paquete de servicios de documentos personalizados](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 * Descargue e implemente el paquete usando la consola web de OSGi [Desarrollo con el paquete de usuario de servicio](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 * Descargue e implemente el paquete usando la consola web de OSGi[importar datos del archivo pdf](./assets/onlineToOffline.core-1.0.0-SNAPSHOT.jar)
-* Agregue la entrada _**DesarrollandoConUsuarioServicio.core:getresourceresolver=data**_ en el _**Servicio de asignador de usuarios de Apache Sling Service**_ consola de configuración de OSGi
+* Agregue la entrada _&#x200B;**DesarrollandoConUsuarioServicio.core:getresourceresolver=data**&#x200B;_ en el _&#x200B;**Servicio de asignador de usuarios de Apache Sling Service**&#x200B;_ consola de configuración de OSGi

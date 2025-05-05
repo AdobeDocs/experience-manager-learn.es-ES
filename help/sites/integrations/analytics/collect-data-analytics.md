@@ -214,7 +214,7 @@ Los elementos de datos se asignan a las propiedades `@type`, `dc:title` y `xdm:t
 
    >[!NOTE]
    >
-   > Recuerde que el objeto `event` está disponible y con ámbito en función del evento que activó la **regla** en la propiedad de etiqueta. No se establece el valor de un elemento de datos hasta que se haga referencia al elemento de datos *1} en una regla.* Por lo tanto, es seguro usar este elemento de datos dentro de una regla como la regla **Page Loaded** creada en el paso anterior *pero* no sería seguro usarla en otros contextos.
+   > Recuerde que el objeto `event` está disponible y con ámbito en función del evento que activó la **regla** en la propiedad de etiqueta. No se establece el valor de un elemento de datos hasta que se haga referencia al elemento de datos *1&rbrace; en una regla.* Por lo tanto, es seguro usar este elemento de datos dentro de una regla como la regla **Page Loaded** creada en el paso anterior *pero* no sería seguro usarla en otros contextos.
 
 ### Nombre de página
 
