@@ -12,9 +12,9 @@ thumbnail: KT-16516.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 8338a905-c4a2-4454-9e6f-e257cb0db97c
-source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
+source-git-commit: 34a22580db6dc32b5c4c5945af83600be2e0a852
 workflow-type: tm+mt
-source-wordcount: '1687'
+source-wordcount: '1727'
 ht-degree: 2%
 
 ---
@@ -88,6 +88,10 @@ El paso para configurar el proyecto ADC está _repetido_ desde las [API de confi
 1. A continuación, en el diálogo _Configurar API_, seleccione la opción de autenticación **Servidor a servidor** y haga clic en **Siguiente**. La autenticación de servidor a servidor es ideal para los servicios back-end que necesitan acceso a API sin interacción del usuario.
 
    ![Seleccionar autenticación](../assets/s2s/select-authentication.png)
+
+   >[!TIP]
+   >
+   >Si no ve la opción Autenticación de servidor a servidor, significa que el usuario que configura la integración no se agrega como Desarrollador al Perfil de producto donde está asociado el servicio. Consulte [Habilitar la autenticación de servidor a servidor](../setup.md#enable-server-to-server-authentication) para obtener más información.
 
 1. Cambie el nombre de la credencial para facilitar la identificación (si es necesario) y haga clic en **Siguiente**. Para fines de demostración, se utiliza el nombre predeterminado.
 
