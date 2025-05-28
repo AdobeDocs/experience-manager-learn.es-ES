@@ -60,5 +60,5 @@ A continuación se muestran las direcciones URL de ejemplo del servidor de imág
 
 ## API del servidor de imágenes de Dynamic Media
 
-* [API de servicio y procesamiento de imágenes de Dynamic Media](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/c-http-protocol-reference)
+* [API de servicio y procesamiento de imágenes de Dynamic Media](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/c-http-protocol-reference)
 * [Vista previa de instantánea de Dynamic Media](https://snapshot.scene7.com/)
