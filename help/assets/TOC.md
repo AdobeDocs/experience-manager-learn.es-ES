@@ -7,9 +7,9 @@ sub-product: Experience Manager Assets
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: ebc609ae621ea5d4d0eba0e28202448b6eaeb8cc
+source-git-commit: 2ffe4706856f0dbf63f2916af010f23bdb7b0045
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '456'
 ht-degree: 21%
 
 ---
@@ -93,7 +93,7 @@ ht-degree: 21%
    + [Complemento de Sidekick](./edge-delivery-services/sidekick-plugin.md)
 
 + Adobe GenStudio{#adobe-genstudio}
-   + [AEM Assets y GenStudio for Performance Marketing](https://experienceleague.adobe.com/es/docs/integrations-learn/experience-cloud/tutorials/genstudio-for-performance-marketing-experience-manager/overview)
+   + [AEM Assets y GenStudio for Performance Marketing](https://experienceleague.adobe.com/en/docs/integrations-learn/experience-cloud/tutorials/genstudio-for-performance-marketing-experience-manager/overview)
 
 + Uso compartido y distribución{#sharing}
    + [Descarga de recursos](./sharing/download.md)
@@ -140,6 +140,7 @@ ht-degree: 21%
    + [Información general de Dynamic Media](dynamic-media/dynamic-media-overview-feature-video-use.md)
    + [aplicación Dynamic Media Classic Desktop](dynamic-media/dynamic-media-classic-desktop-application.md)
    + Imágenes {#images}
+      + [Automatización de imágenes](dynamic-media/dynamic-media-image-automation.md)
       + [Plantillas de Dynamic Media](dynamic-media/dynamic-media-templates.md)
       + [Instantánea de Dynamic Media](dynamic-media/dynamic-media-snapshot.md)
       + [Recorte inteligente](dynamic-media/smart-crop-feature-video-use.md)
