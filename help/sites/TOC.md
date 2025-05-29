@@ -6,9 +6,9 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
-source-git-commit: 17aa4aeb053a0bc0beca5e005185c49cf7a06a67
+source-git-commit: d138fd849f8d82228b48b0f5b21f1198388e82af
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '588'
 ht-degree: 22%
 
 ---
@@ -78,7 +78,7 @@ ht-degree: 22%
 + IA generativa  {#generative-ai}
    + [Generar variaciones](./generative-ai/generate-variations.md)
 + Fragmentos de contenido {#content-fragments}
-   + [Consola Fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html?lang=es){target=_blank}
+   + [Consola Fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
    + [Creación de fragmentos de contenido](content-fragments/content-fragments-feature-video-use.md)
    + [Entrega de fragmentos de contenido](content-fragments/content-fragments-delivery-feature-video-use.md)
    + [Traducción de fragmentos de contenido](content-fragments/content-fragments-translation-feature-video-use.md)
@@ -86,7 +86,7 @@ ht-degree: 22%
 + Fragmentos de experiencias {#experience-fragments}
    + [Uso de fragmentos de experiencias](experience-fragments/experience-fragments-feature-video-use.md)
    + [Componentes](experience-fragments/building-blocks.md)
-   + [Fragmentos de contenido vs. Fragmentos de experiencias](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=es){target=_blank}
+   + [Fragmentos de contenido vs. Fragmentos de experiencias](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html){target=_blank}
 + Edge Delivery Services{#edge-delivery-services}
    + [Información general](./edge-delivery-services/overview.md)
    + El desarrollo de{#developing}
@@ -120,7 +120,7 @@ ht-degree: 22%
    + [Tipo de archivo del proyecto AEM](developing/aem-project-archetype.md)
    + [Introducción a AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es){target=_blank}
    + [Introducción a AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es){target=_blank}
-   + [Introducción al Editor de SPA de AEM y React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=es){target=_blank}
+   + [Introducción al Editor de SPA de AEM y React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html){target=_blank}
    + [Ampliación de las propiedades de página](developing/page-properties-technical-video-develop.md)
    + [Puntos de interrupción interactivos](developing/responsive-breakpoints.md)
    + [Desarrollo con el sistema de estilos](developing/style-system-technical-video-understand.md)
@@ -131,7 +131,7 @@ ht-degree: 22%
    + [Compartir en redes sociales](developing/social-media-sharing-technical-video-use.md)
    + [Personalización de iconos de componente](developing/component-icons-technical-video-develop.md)
 + Personalización {#personalization}
-   + [Integración con Adobe Target](https://helpx.adobe.com/es/marketing-cloud/how-to/aem-target.html){target=_blank}
+   + [Integración con Adobe Target](https://helpx.adobe.com/marketing-cloud/how-to/aem-target.html){target=_blank}
    + [Configuración de fragmentos de experiencias y Adobe Target](personalization/experience-fragment-target-technical-video-setup.md)
    + [Uso de fragmentos de experiencias con Adobe Target](personalization/experience-fragment-target-offer-feature-video-use.md)
    + [Configurar ContextHub](personalization/context-hub-technical-video-setup.md)
@@ -144,7 +144,7 @@ ht-degree: 22%
    + [Mapas del sitio](./seo/sitemaps.md)
 + Aplicaciones de una sola página {#spa-editor}
    + [Uso del Editor de SPA](spa-editor/spa-editor-framework-feature-video-use.md)
-   + [Introducción al Editor de SPA de AEM y React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=es){target=_blank}
+   + [Introducción al Editor de SPA de AEM y React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html){target=_blank}
 + Administración de varios sitios {#multi-site-management}
    + [Introducción a la copia de idioma](./multi-site-management/language-copy-overview.md)
    + [Live Copy y modelo](./multi-site-management/live-copy-and-blueprint.md)
@@ -194,7 +194,6 @@ ht-degree: 22%
       + [Personalization de experiencia de página web completa](integrations/adobe-target/personalization-web-page.md)
 + Aprenda De Sus Compañeros {#expert-resources}
    + [Información general](expert-resources/learn-from-your-peers-overview.md)
-   + [Creación De Una Guía De Creación En AEM Sites](expert-resources/authoring-guide-in-sites.md)
    + [Evaluación de madurez de AEM Sites](expert-resources/maturity-assessment.md)
    + [Mantenimiento del sitio](expert-resources/site-maintenance.md)
    + [Consejos y trucos para el campeón de AEM: Sesión 1](expert-resources/champion-tips-1.md)
