@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Descubra cómo BambooHR utilizó la IA para identificar y corregir los backlinks rotos, lo que provocó un aumento del 4 % en el tráfico orgánico.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459238/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3461990/?learn=on&enablevpops&captions=spa)

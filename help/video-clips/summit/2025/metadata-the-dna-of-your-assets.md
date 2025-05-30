@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Descubra cómo los metadatos generan flujos de trabajo, búsquedas y perspectivas, y cómo la automatización puede enriquecer los metadatos para alinearse con los estándares de la marca.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459218/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3461968/?learn=on&enablevpops&captions=spa)

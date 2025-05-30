@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Descubra cómo el asistente de IA de AEM simplifica la búsqueda de conocimientos del producto y automatiza la creación de vales de soporte.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459225/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3461915/?learn=on&enablevpops&captions=spa)
