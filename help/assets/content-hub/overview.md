@@ -221,7 +221,7 @@ AEM Assets Explore casos de uso y escenarios que muestren cómo se puede utiliza
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./use-cases/manage-assets.md" title="Administración de recursos con AEM Assets Content Hub" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3457638/?format=jpeg&nocache=1744751770120" alt="Administración de recursos con AEM Assets Content Hub"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3463059/?format=jpeg&nocache=1744751770120&captions=spa" alt="Administración de recursos con AEM Assets Content Hub"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
