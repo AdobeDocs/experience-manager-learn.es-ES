@@ -12,10 +12,10 @@ thumbnail: KT-16516.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 8338a905-c4a2-4454-9e6f-e257cb0db97c
-source-git-commit: 34a22580db6dc32b5c4c5945af83600be2e0a852
+source-git-commit: 9a5d811cf92a09da27057f99e1b6b2ed8df2a414
 workflow-type: tm+mt
 source-wordcount: '1727'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -139,9 +139,9 @@ Para recuperar los metadatos de un recurso específico, necesita los valores `bu
 
 ### Invocar la API mediante el explorador
 
-Antes de desarrollar la aplicación, invoquemos la API con la función **Probarla** en la [documentación de la API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/).
+Antes de desarrollar la aplicación, invoquemos la API con la función **Probarla** en la [documentación de la API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/author/).
 
-1. Abra [la documentación de la API de autor de Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/) en el explorador.
+1. Abra [la documentación de la API de autor de Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/author/) en el explorador.
 
 1. Expanda la sección _Metadatos_ y haga clic en la opción **Entrega los metadatos del recurso especificado**.
 
