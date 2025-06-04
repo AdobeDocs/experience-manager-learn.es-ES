@@ -1,6 +1,6 @@
 ---
 title: Introducción a AEM Architecture Stack
-description: Presenta las tecnologías de OSGi, JCR, Oak y Sling como parte del conjunto de tecnología de Adobe Experience Manager.
+description: Presenta las tecnologías de OSGi, JCR, Oak y Sling como parte de la pila tecnológica de Adobe Experience Manager.
 doc-type: technical video
 version: Experience Manager as a Cloud Service
 jira: KT-4260
@@ -11,14 +11,14 @@ level: Beginner
 exl-id: bb13fc39-fcb7-4241-8504-8ff999a6caa2
 duration: 190
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '42'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Introducción a AEM Architecture Stack {#introduction-architecture}
 
-Presenta las tecnologías de [!DNL OSGi], [!DNL JCR], [!DNL Oak] y [!DNL Sling] como parte de la pila de tecnología de Adobe Experience Manager.
+Presenta las tecnologías de [!DNL OSGi], [!DNL JCR], [!DNL Oak] y [!DNL Sling] como parte de la pila tecnológica de Adobe Experience Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/36910?quality=12&learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/32034?quality=12&learn=on)

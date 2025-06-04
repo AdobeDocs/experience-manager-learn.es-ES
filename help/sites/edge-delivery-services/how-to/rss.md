@@ -13,14 +13,14 @@ thumbnail: 3425725.jpeg
 duration: 88
 exl-id: fe6f5262-05c3-4078-b25e-702d830350b2
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '28'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Personalizar Sidekick
+# Personalización de Sidekick
 
 Obtenga información sobre cómo personalizar Edge Delivery Services Sidekick.
 
->[!VIDEO](https://video.tv.adobe.com/v/3438002/?learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3425725/?learn=on)

@@ -1,18 +1,18 @@
 ---
-title: AEM Vídeos y tutoriales de la fundación
+title: Vídeos y tutoriales de AEM Foundation
 description: Vea nuestros vídeos y tutoriales para obtener ayuda con Adobe Experience Manager Foundation.
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
 doc-type: Catalog
 exl-id: af0fe7fb-873b-4d2d-a5a3-59a5a3da9b96
 source-git-commit: 6825b0a4c9770f77e5078c81154080e94d3fd5f4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '154'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
-# AEM Vídeos y tutoriales de la fundación {#overview}
+# Vídeos y tutoriales de AEM Foundation {#overview}
 
 {{edge-delivery-services}}
 
@@ -27,21 +27,21 @@ Adobe Experience Manager proporciona un conjunto común de funcionalidades dispo
 
 <div id="staff-picks-section">
 
-## Selección de personal
+## Selecciones del personal
 
 <table>
 <tr>
   <td>
     <a href="./cloud-manager/understand-cloud-manager-for-aem.md">
-    <img alt="Comprensión de Cloud Manager AEM para la" src="./cloud-manager/assets/understand-cloud-manager-for-aem/thumbnail.png" />
+    <img alt="Comprender Cloud Manager para AEM" src="./cloud-manager/assets/understand-cloud-manager-for-aem/thumbnail.png" />
     </a>
     <div>
      <a href="./cloud-manager/understand-cloud-manager-for-aem.md">
-    <strong>Comprender Cloud Manager AEM para la aplicación de la</strong>
+    <strong>Comprender Cloud Manager para AEM</strong>
     </a>
     </div>
     <p>
-    <em>Cloud Manager AEM AEM para el servicio de seguridad proporciona una solución simple pero sólida que permite administrar, inspeccionar y autoadministrar fácilmente los entornos de la red de trabajo de la red de trabajo de la red de trabajo de la red de seguridad </em>.
+    <em>Cloud Manager para AEM proporciona una solución simple pero sólida que permite administrar, inspeccionar y autoadministrar fácilmente los entornos de AEM.</em>
     <p>
   </td>
    <td>
@@ -54,20 +54,20 @@ Adobe Experience Manager proporciona un conjunto común de funcionalidades dispo
     </a>
     </div>
     <p>
-    AEM <em>Explore cómo configurar Sling Dynamic Include (SDI) y permitir que los componentes dinámicos de la siempre proporcionen contenido nuevo.</em>
+    <em>Explore cómo configurar Sling Dynamic Include (SDI) y permitir que los componentes dinámicos de AEM siempre proporcionen contenido nuevo.</em>
     <p>
   </td>
   <td>
     <a href="./administration/understand-reasons-to-upgrade.md">
-    <img alt="AEM Explicación de los motivos para actualizar el" src="./administration/assets/understand-reasons-to-upgrade/thumbnail.png" />
+    <img alt="Entender las razones para actualizar AEM" src="./administration/assets/understand-reasons-to-upgrade/thumbnail.png" />
     </a>
     <div>
     <a href="./administration/understand-reasons-to-upgrade.md">
-    AEM <strong>Comprender las razones para actualizar a la versión de la aplicación</strong>
+    <strong>Entender las razones para actualizar AEM</strong>
     </a>
     </div>
     <p>
-    AEM <em>Un desglose de alto nivel de las características clave que se deben entender, cuando se considere la posibilidad de actualizar a la versión más reciente de la versión de la aplicación.</em>
+    <em>Un desglose de alto nivel de las características clave que se deben entender cuando se considere la posibilidad de actualizar a la versión más reciente de AEM.</em>
     </p>
   </td>
 </tr>

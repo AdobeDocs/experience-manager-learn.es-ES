@@ -7,22 +7,22 @@ sub-product: Experience Manager Assets
 version: Experience Manager 6.4, Experience Manager 6.5
 index: y
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '75'
-ht-degree: 49%
+ht-degree: 100%
 
 ---
 
 
 # Introducción a Dynamic Media Classic {#dynamic-media-classic-tutorial}
 
-+ [Información general de Dynamic Media Classic](./overview.md)
-+ [Flujo de trabajo de recursos y previsualización](./main-workflow.md)
-+ [Determine la estructura de carpetas y la convención de nombres de archivos](./folder-structure-filenaming.md)
++ [Información general sobre Dynamic Media Classic](./overview.md)
++ [Flujo de trabajo de recursos y visualización previa](./main-workflow.md)
++ [Determinar la estructura de carpetas y la convención de nomenclatura de los archivos](./folder-structure-filenaming.md)
 + [Ajustes preestablecidos de imagen](./image-presets.md)
 + [Conjuntos de imágenes, muestras, giros y medios mixtos](./media-sets.md)
 + [Recorte, imágenes ajustadas y destinos de zoom](./crop-adjusted-zoom-targets.md)
 + [Introducción a las plantillas básicas](./basic-templates.md)
 + [Información general en vídeo](./video-overview.md)
 + [Imágenes inteligentes](./smart-imaging.md)
-+ [Informes valiosos para administradores](./valuable-reports.md)
++ [Informes valiosos para los administradores](./valuable-reports.md)

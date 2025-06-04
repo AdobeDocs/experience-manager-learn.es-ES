@@ -1,6 +1,6 @@
 ---
-title: Agregar marca del sitio web
-description: Defina CSS global, variables CSS y fuentes web para un sitio de Edge Delivery Services.
+title: Añadir promoción de la marca en el sitio web
+description: Defina las variables CSS globales y CSS, y las fuentes web para un sitio de Edge Delivery Services.
 version: Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -11,30 +11,30 @@ jira: KT-15832
 duration: 900
 exl-id: a5cd9906-7e7a-43dd-a6b2-e80f67d37992
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
-source-wordcount: '1315'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1313'
+ht-degree: 100%
 
 ---
 
-# Agregar marca del sitio web
+# Añadir promoción de la marca en el sitio web
 
-Para empezar, configure la marca general, actualice los estilos globales, defina las variables CSS y añada fuentes web. Estos elementos básicos garantizan que el sitio web sea coherente y se pueda mantener, y que se aplique de forma coherente en todo el sitio.
+Para empezar, configure la promoción de la marca general, actualizando los estilos globales, definiendo variables CSS y añadiendo fuentes web. Estos elementos básicos garantizan que el sitio web sea coherente y se pueda mantener, y deben aplicarse de forma coherente en todo el sitio.
 
-## Crear un problema de GitHub
+## Creación de un problema de GitHub
 
-Para mantener todo organizado, utilice GitHub para hacer un seguimiento del trabajo. En primer lugar, cree una incidencia de GitHub para este cuerpo de trabajo:
+Para mantener todo organizado, utilice GitHub para hacer un seguimiento del trabajo. En primer lugar, cree un problema de GitHub para este cuerpo de trabajo:
 
 1. Vaya al repositorio de GitHub (consulte el capítulo [Crear un proyecto de código](./1-new-code-project.md) para obtener más información).
-2. Haz clic en la ficha **Problemas** y luego en **Nuevo problema**.
-3. Escribe un **título** y **descripción** para que se haga el trabajo.
+2. Haga clic en la pestaña **Problemas** y luego en **Nuevo problema**.
+3. Escriba un **título** y una **descripción** para el trabajo que se ha de realizar.
 4. Haga clic en **Enviar nuevo problema**.
 
 El problema de GitHub se usa más adelante al [crear una solicitud de extracción](#merge-code-changes).
 
-![GitHub crea un nuevo problema](./assets/4-website-branding/github-issues.png)
+![Creación de un nuevo problema de GitHub](./assets/4-website-branding/github-issues.png)
 
-## Crear una rama de trabajo
+## Creación de una rama de trabajo
 
 Para mantener la organización y garantizar la calidad del código, cree una nueva rama para cada cuerpo de trabajo. Esta práctica evita que el nuevo código afecte negativamente al rendimiento y garantiza que los cambios no estén activos antes de completarse.
 
@@ -48,15 +48,15 @@ $ git checkout -b wknd-styles
 
 ## CSS global
 
-Edge Delivery Services usa un archivo CSS global, ubicado en `styles/styles.css`, para configurar los estilos comunes de todo el sitio web. El `styles.css` controla aspectos como los colores, las fuentes y el espaciado, asegurándose de que todo se ve uniforme en el sitio.
+Edge Delivery Services usa un archivo CSS global ubicado en `styles/styles.css`, para configurar los estilos comunes de todo el sitio web. `styles.css` controla aspectos como los colores, las fuentes y el espaciado para asegurarse de que todo sea uniforme en el sitio.
 
-CSS global debe ser agnóstico con construcciones de nivel inferior como bloques, centrándose en la apariencia general del sitio y tratamientos visuales compartidos.
+CSS global debe ser independiente de las construcciones de nivel inferior como, por ejemplo, bloques, centrándose en la apariencia general del sitio y en los tratamientos visuales compartidos.
 
 Tenga en cuenta que los estilos CSS globales se pueden anular cuando sea necesario.
 
 ### Variables CSS
 
-Las [variables CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) son una buena manera de almacenar configuraciones de diseño como colores, fuentes y tamaños. Mediante variables, puede cambiar estos elementos en un lugar y hacer que se actualicen en todo el sitio.
+Las [variables CSS](https://developer.mozilla.org/es-ES/docs/Web/CSS/Using_CSS_custom_properties) son una buena manera de almacenar configuraciones de diseño como colores, fuentes y tamaños. Mediante las variables, puede cambiar estos elementos en un lugar y hacer que se actualicen en todo el sitio.
 
 Para empezar a personalizar las variables CSS, siga estos pasos:
 
@@ -64,7 +64,7 @@ Para empezar a personalizar las variables CSS, siga estos pasos:
 2. Busque la declaración `:root`, donde se almacenan las variables CSS globales.
 3. Modifique las variables de color y fuente para que coincidan con la marca WKND.
 
-A continuación se muestra un ejemplo:
+A continuación, se muestra un ejemplo:
 
 
 ```css
@@ -90,15 +90,15 @@ A continuación se muestra un ejemplo:
 
 Explore las demás variables de la sección `:root` y revise la configuración predeterminada.
 
-A medida que desarrolla un sitio web y se encuentra repitiendo los mismos valores CSS, considere la posibilidad de crear nuevas variables para que los estilos sean más fáciles de administrar. Algunos ejemplos de otras propiedades CSS que pueden beneficiarse de las variables CSS son: `border-radius`, `padding`, `margin` y `box-shadow`.
+A medida que desarrolla un sitio web y detecta que repite los mismos valores CSS, considere la posibilidad de crear nuevas variables para que los estilos sean más fáciles de administrar. Algunos ejemplos de otras propiedades CSS que pueden beneficiarse de las variables CSS son las siguientes: `border-radius`, `padding`, `margin` y `box-shadow`.
 
-### Elementos desnudos
+### Elementos básicos
 
-Los elementos vacíos se diseñan directamente a través de su nombre de elemento en lugar de utilizar una clase CSS. Por ejemplo, en lugar de aplicar estilo a una clase CSS `.page-heading`, los estilos se aplican al elemento `h1` mediante `h1 { ... }`.
+Los elementos básicos se diseñan directamente a través de su nombre de elemento en lugar de utilizar una clase CSS. Por ejemplo, en lugar de aplicar estilo a una clase CSS `.page-heading`, los estilos se aplican al elemento `h1` mediante `h1 { ... }`.
 
-En el archivo `styles/styles.css`, se aplica un conjunto de estilos base a los elementos HTML vacíos. Los sitios web de Edge Delivery Services dan prioridad al uso de elementos vacíos porque se alinean con la semántica nativa de HTML del servicio de Edge Delivery.
+En el archivo `styles/styles.css`, se aplica un conjunto de estilos base a los elementos HTML básicos. Los sitios web de Edge Delivery Services dan prioridad al uso de elementos básicos porque se alinean con la semántica nativa HTML del servicio de Edge Delivery.
 
-Para alinearnos con la marca WKND, vamos a aplicar estilo a algunos elementos vacíos en `styles.css`:
+Para alinearnos con la marca WKND, vamos a aplicar estilo a algunos elementos básicos en `styles.css`:
 
 ```css
 /* styles/styles.css */
@@ -119,13 +119,13 @@ h2::after {
 ...
 ```
 
-Estos estilos garantizan que los elementos de `h2`, a menos que se anulen, tengan un estilo coherente con la marca WKND, lo que ayuda a crear una jerarquía visual clara. El subrayado amarillo parcial debajo de cada `h2` agrega un toque distintivo a los encabezados.
+Estos estilos garantizan que los elementos `h2`, a menos que se anulen, tengan un estilo coherente con la marca WKND, lo que ayuda a crear una jerarquía visual clara. El subrayado amarillo parcial debajo de cada `h2` añade un toque distintivo a los encabezados.
 
-### Elementos deducidos
+### Elementos inferidos
 
-En Edge Delivery Services, el código `scripts.js` y `aem.js` del proyecto mejoran automáticamente elementos específicos de HTML desnudos en función de su contexto en HTML.
+En Edge Delivery Services, los códigos `scripts.js` y `aem.js` del proyecto mejoran automáticamente elementos específicos de HTML desnudos en función de su contexto en HTML.
 
-Por ejemplo, los elementos de anclaje (`<a>`) creados en su propia línea, en lugar de estar alineados con el texto adyacente, se infieren como botones basados en este contexto. Estos anclajes se encapsulan automáticamente con un contenedor `div` con clase CSS `button-container` y el elemento de anclaje tiene agregada una clase CSS `button`.
+Por ejemplo, los elementos de anclaje (`<a>`) creados en su propia línea, en lugar de estar alineados con el texto adyacente, se infieren como botones basados en este contexto. Estos anclajes se encapsulan automáticamente con un contenedor `div` con clase CSS `button-container` y el elemento de anclaje tiene añadida una clase CSS `button`.
 
 Por ejemplo, cuando un vínculo se crea en su propia línea, Edge Delivery Services JavaScript actualiza su DOM de la siguiente manera:
 
@@ -137,7 +137,7 @@ Por ejemplo, cuando un vínculo se crea en su propia línea, Edge Delivery Servi
 
 Estos botones se pueden personalizar para que coincidan con la marca WKND, que dicta que los botones aparezcan como rectángulos amarillos con texto negro.
 
-A continuación se muestra un ejemplo de cómo aplicar estilo a los &quot;botones deducidos&quot; de `styles.css`:
+A continuación se muestra un ejemplo de cómo aplicar estilo a los &quot;botones inferidos&quot; de `styles.css`:
 
 ```css
 /* styles/styles.css */
@@ -178,10 +178,10 @@ Los proyectos de Edge Delivery Services optimizan el uso de fuentes web para man
 
 ### Caras de fuente
 
-Agregar fuentes web personalizadas mediante declaraciones CSS `@font-face` en el archivo `styles/fonts.css`. Agregar `@font-faces` a `fonts.css` garantiza que las fuentes web se carguen en el momento óptimo y ayudan a mantener las puntuaciones de Lighthouse.
+Añadir fuentes web personalizadas mediante declaraciones CSS `@font-face` en el archivo `styles/fonts.css`. Añadir `@font-faces` a `fonts.css` garantiza que las fuentes web se carguen en el momento óptimo y ayuda a mantener las puntuaciones de Lighthouse.
 
 1. Abra `styles/fonts.css`.
-2. Agregue las siguientes declaraciones `@font-face` para incluir las fuentes de marca WKND: `Asar` y `Source Sans Pro`.
+2. Añada las siguientes declaraciones `@font-face` para incluir las fuentes de marca WKND: `Asar` y `Source Sans Pro`.
 
 ```css
 /* styles/fonts.css */
@@ -289,13 +289,13 @@ Por último, actualice las variables CSS `styles/styles.css` para que utilicen l
 
 ### Fuentes de reserva
 
-Las fuentes web suelen afectar al rendimiento debido a su tamaño, lo que aumenta potencialmente las puntuaciones del desplazamiento acumulativo de diseño (CLS) y reduce las puntuaciones generales de Lighthouse. Para garantizar la visualización instantánea del texto mientras se cargan las fuentes web, los proyectos de Edge Delivery Services utilizan fuentes de reserva nativas del explorador. Este método ayuda a mantener una experiencia de usuario suave mientras se aplica la fuente deseada.
+Las fuentes web suelen afectar al rendimiento debido a su tamaño, lo que aumenta potencialmente las puntuaciones del desplazamiento acumulativo de diseño (CLS) y reduce las puntuaciones generales de Lighthouse. Para garantizar la visualización instantánea del texto mientras se cargan las fuentes web, los proyectos de Edge Delivery Services utilizan fuentes de reserva nativas del explorador. Este método ayuda a mantener una experiencia de usuario fluida mientras se aplica la fuente deseada.
 
-Para seleccionar la mejor fuente de reserva, use la [extensión Helix Font Fallback Chrome](https://www.aem.live/developer/font-fallback) de Adobe, que determina la fuente más parecida que deben usar los exploradores antes de que se cargue la fuente personalizada. Las declaraciones de fuentes de reserva resultantes deben agregarse al archivo `styles/styles.css` para mejorar el rendimiento y garantizar una experiencia perfecta para los usuarios.
+Para seleccionar la mejor fuente de reserva, use la [extensión Helix Font Fallback Chrome]( https://www.aem.live/developer/font-fallback) de Adobe, que determina la fuente más parecida que deben usar los exploradores antes de que se cargue la fuente personalizada. Las declaraciones de fuentes de reserva resultantes deben añadirse al archivo `styles/styles.css` para mejorar el rendimiento y garantizar una experiencia perfecta para los usuarios.
 
 ![Extensión de Chrome de reserva de fuente Helix](./assets/4-website-branding/font-fallback-chrome-plugin.png){align=center}
 
-Para usar la extensión [Helix Font Fallback Chrome](https://www.aem.live/developer/font-fallback), asegúrate de que la página web tenga fuentes web aplicadas en las mismas variaciones usadas en el sitio web de Edge Delivery Services. Este tutorial muestra la extensión en [wknd.site](http://wknd.site/us/en.html). Al desarrollar un sitio web, aplique la extensión al sitio en el que se está trabajando en lugar de a [wknd.site](http://wknd.site/us/en.html).
+Para usar la extensión [Helix Font Fallback de Chrome]( https://www.aem.live/developer/font-fallback), asegúrese de que la página web tenga fuentes web aplicadas en las mismas variaciones usadas en el sitio web de Edge Delivery Services. Este tutorial muestra la extensión en [wknd.site](http://wknd.site/us/en.html?lang=es). Al desarrollar un sitio web, aplique la extensión al sitio en el que se está trabajando en lugar de a [wknd.site](http://wknd.site/us/en.html?lang=es).
 
 ```css
 /* styles/styles.css */
@@ -320,7 +320,7 @@ Para usar la extensión [Helix Font Fallback Chrome](https://www.aem.live/develo
 ...
 ```
 
-Agregue los nombres de las familias de fuentes de reserva a las variables CSS de las fuentes en `styles/styles.css` después de los nombres de las familias de fuentes &quot;reales&quot;.
+Añada los nombres de las familias de fuentes de reserva a las variables CSS de las fuentes en `styles/styles.css` después de los nombres de las familias de fuentes &quot;reales&quot;.
 
 ```css
 /* styles/styles.css */
@@ -336,9 +336,9 @@ Agregue los nombres de las familias de fuentes de reserva a las variables CSS de
 
 ## Previsualización de desarrollo
 
-A medida que agrega CSS, el entorno de desarrollo local de la CLI de AEM vuelve a cargar automáticamente los cambios, lo que facilita y agiliza la visualización de cómo el CSS afecta al bloque.
+A medida que añade CSS, el entorno de desarrollo local de la CLI de AEM vuelve a cargar automáticamente los cambios, lo que facilita y agiliza la visualización de cómo el CSS afecta al bloque.
 
-![Vista previa de desarrollo de WKND brand CSS](./assets/4-website-branding/preview.png)
+![Vista previa del desarrollo del CSS de la marca WKND](./assets/4-website-branding/preview.png)
 
 
 ## Descargar archivos CSS finales
@@ -348,9 +348,9 @@ Puede descargar los archivos CSS actualizados desde los vínculos siguientes:
 * [`styles.css`](https://raw.githubusercontent.com/davidjgonzalez/aem-wknd-eds-ue/refs/heads/main/styles/styles.css)
 * [`fonts.css`](https://raw.githubusercontent.com/davidjgonzalez/aem-wknd-eds-ue/refs/heads/main/styles/fonts.css)
 
-## Vincular los archivos CSS
+## Limpiar los archivos CSS
 
-Asegúrate de [pelar con frecuencia](./3-local-development-environment.md#linting) los cambios de tu código para asegurarte de que estén limpios y sean consistentes. La vinculación regular ayuda a detectar los problemas de forma temprana y reduce el tiempo de desarrollo general. Recuerde que no puede combinar su trabajo con la rama principal hasta que se resuelvan todos los problemas de vinculación.
+Asegúrese de [limpiar con frecuencia](./3-local-development-environment.md#linting) los cambios de su código para asegurarse de que estén limpios y sean consistentes. La limpieza periódica ayuda a detectar los problemas de forma temprana y reduce el tiempo de desarrollo general. Recuerde que no puede combinar su trabajo con la rama principal hasta que se resuelvan todos los problemas de vinculación.
 
 ```bash
 $ npm run lint:css
@@ -372,7 +372,7 @@ Una vez insertados los cambios en la rama `wknd-styles`, cree una solicitud de e
 2. Haga clic en la ficha **Solicitudes de extracción** y seleccione **Nueva solicitud de extracción**.
 3. Establezca `wknd-styles` como la rama de origen y `main` como la rama de destino.
 4. Revise los cambios y haga clic en **Crear solicitud de extracción**.
-5. En los detalles de la solicitud de extracción, **agregue lo siguiente**:
+5. En los detalles de la solicitud de extracción, **añada lo siguiente**:
 
    ```
    Add basic global CSS, CSS variables, and web fonts (including fallback fonts) to support the WKND brand.

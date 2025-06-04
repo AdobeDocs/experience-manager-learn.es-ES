@@ -14,7 +14,7 @@ doc-type: Catalog
 exl-id: 09a600f4-1ada-4fb7-ae44-586364cff389
 recommendations: disable
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '577'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ Bienvenido al tutorial de varias partes diseñado para desarrolladores que se in
 
 El objetivo de este tutorial en varias partes es enseñar a los desarrolladores a implementar un sitio web utilizando los últimos estándares y tecnologías de Adobe Experience Manager (AEM).  Después de completar este tutorial, los desarrolladores deberán comprender los fundamentos básicos de la plataforma y los patrones de diseño habituales de AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/35876?quality=12&learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/30476?quality=12&learn=on)
 
 ## Opciones para iniciar un proyecto de Sites
 

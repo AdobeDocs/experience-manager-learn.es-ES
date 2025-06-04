@@ -1,5 +1,5 @@
 ---
-title: Configuración de un entorno de desarrollo local para Edge Delivery Services
+title: Configurar un entorno de desarrollo local para Edge Delivery Services
 description: Cómo configurar un entorno de desarrollo local para Edge Delivery Services.
 version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Edge Delivery Services
@@ -13,9 +13,9 @@ thumbnail: 3425717.jpeg
 duration: 169
 exl-id: 0f3e50f0-88d8-46be-be8b-0f547c3633a6
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '87'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 Cómo configurar un entorno de desarrollo local para el desarrollo de Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3434734/?learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3425717/?learn=on)
 
 
 ## Pasos descritos en el vídeo
@@ -34,7 +34,7 @@ Cómo configurar un entorno de desarrollo local para el desarrollo de Edge Deliv
    $ sudo npm install -g @adobe/aem-cli
    ```
 
-1. Cambie el directorio al directorio del proyecto que sea un repositorio git creado a partir de la plantilla [AEM boilerplate](https://github.com/adobe/aem-boilerplate).
+1. Cambie el directorio al directorio del proyecto que sea un repositorio git creado a partir de la plantilla [elemento repetitivo de AEM](https://github.com/adobe/aem-boilerplate).
 
    ```
    $ git clone git@github.com:my-org/my-project.git

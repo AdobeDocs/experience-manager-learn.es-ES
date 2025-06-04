@@ -1,6 +1,6 @@
 ---
 title: Vídeos de la consola Fragmentos de contenido
-description: Obtenga información acerca de la consola Fragmentos de contenido de AEM que facilita la administración y la creación de fragmentos de contenido.
+description: Obtenga información sobre la consola Fragmentos de contenido de AEM que facilita la administración y creación de fragmentos de contenido.
 version: Experience Manager as a Cloud Service
 feature: Content Fragments
 topic: Content Management
@@ -11,9 +11,9 @@ last-substantial-update: 2023-05-12T00:00:00Z
 doc-type: Catalog
 exl-id: d92c36e2-fbfa-43a3-8c5f-0371cc99f352
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '241'
-ht-degree: 12%
+ht-degree: 100%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 12%
 
 ![Editor de fragmentos de contenido de AEM](./assets/main.png)
 
-La consola Fragmentos de contenido de Adobe Experience Manager facilita la administración y la creación de fragmentos de contenido. Aprenda a sacar el máximo partido a la consola Fragmentos de contenido con estos vídeos.
+La consola Fragmentos de contenido de Adobe Experience Manager facilita la administración y creación de fragmentos de contenido. Aprenda a sacar el máximo partido a la consola Fragmentos de contenido con estos vídeos.
 
-Revise la [documentación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=es) para obtener detalles completos de la Consola Fragmentos de contenido y sus capacidades.
+Revise la [documentación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=es) para obtener detalles completos de la Consola Fragmentos de contenido y sus funcionalidades.
 
 ## Vídeos
 
@@ -35,11 +35,11 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./basics/content-fragments-console.md" title="Información general de consola"
+            <a href="./basics/content-fragments-console.md" title="Información general de la consola"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3449334?format=jpeg&captions=spa"
-                alt="Información general de consola">
+                src="https://video.tv.adobe.com/v/3409492?format=jpeg"
+                alt="Información general de la consola">
             </a>
           </figure>
         </div>
@@ -50,8 +50,8 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="./basics/content-fragments-console.md" title="Información general">Información general de la consola</a>
             </p>
-            <p class="is-size-6">Una breve descripción general de los fragmentos de contenido
-              consola.</p>
+            <p class="is-size-6">Una breve descripción general de la consola de fragmentos
+ de contenido.</p>
             <a href="./basics/content-fragments-console.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -68,11 +68,11 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./basics/content-fragment-editor.md" title="Resumen del editor"
+            <a href="./basics/content-fragment-editor.md" title="Información general del editor"
               tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3424373?format=jpeg"
-                alt="Resumen del editor">
+                alt="Información general del editor">
             </a>
           </figure>
         </div>
@@ -81,10 +81,10 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">4 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./basics/content-fragment-editor.md" title="Información general">Resumen del editor</a>
+              <a href="./basics/content-fragment-editor.md" title="Información general">Información general del editor</a>
             </p>
-            <p class="is-size-6">Una breve descripción general de los fragmentos de contenido
-              editor.</p>
+            <p class="is-size-6">Una breve descripción general de editor de
+              fragmentos de contenido.</p>
             <a href="./basics/content-fragment-editor.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -104,8 +104,8 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
             <a href="./search/fast-filtering.md" title="Filtrado rápido"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3436699?format=jpeg&captions=spa" alt="Rápido
-                filtrado">
+                src="https://video.tv.adobe.com/v/3419310?format=jpeg" alt="Filtrado
+                rápido">
             </a>
           </figure>
         </div>
@@ -114,11 +114,11 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./search/fast-filtering.md" title="Filtrado rápido">Rápido
-                filtrando</a>
+              <a href="./search/fast-filtering.md" title="Filtrado rápido">Filtrado
+                rápido</a>
             </p>
-            <p class="is-size-6">Localización rápida de fragmentos de contenido en línea
-              filtrado.</p>
+            <p class="is-size-6">Localice rápidamente los fragmentos de contenido con
+filtrado en línea.</p>
             <a href="./search/fast-filtering.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -135,11 +135,11 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./editor/new-editor-toggle.md" title="Alternar nuevo editor"
+            <a href="./editor/new-editor-toggle.md" title="Conmutador al nuevo editor"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3419312?format=jpeg" alt="Nuevo
-                Alternar editor">
+                src="https://video.tv.adobe.com/v/3419312?format=jpeg" alt="Conmutador al
+                nuevo editor">
             </a>
           </figure>
         </div>
@@ -148,11 +148,11 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./editor/new-editor-toggle.md" title="Alternar nuevo editor">Nuevo
-                Alternar editor</a>
+              <a href="./editor/new-editor-toggle.md" title="Conmutador al nuevo editor">Conmutador al
+                nuevo editor</a>
             </p>
-            <p class="is-size-6">Transición perfecta del clásico al nuevo
-              editor.</p>
+            <p class="is-size-6">Transición perfecta del editor clásico al
+              nuevo.</p>
             <a href="./editor/new-editor-toggle.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -169,11 +169,11 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./editor/non-asset-content-references.md" title="No es un activo
-              referencias de contenido" tabindex="-1">
+            <a href="./editor/non-asset-content-references.md" title="Referencias de contenido
+              sin recursos" tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3436765?format=jpeg&captions=spa"
-                alt="Referencias de contenido que no son recursos">
+                src="https://video.tv.adobe.com/v/3419313?format=jpeg"
+                alt="Referencias de contenido sin recursos">
             </a>
           </figure>
         </div>
@@ -182,11 +182,11 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./editor/non-asset-content-references.md" title="No es un activo
-                referencias de contenido">Referencias de contenido que no son recursos</a>
+              <a href="./editor/non-asset-content-references.md" title="Referencias de contenido
+                sin recursos">Referencias de contenido sin recursos</a>
             </p>
-            <p class="is-size-6">Incorporación de fragmentos de experiencias y páginas en
-              sus Fragmentos de contenido.</p>
+            <p class="is-size-6">Incorpore fragmentos de experiencias y páginas en
+              sus fragmentos de contenido.</p>
             <a href="./editor/non-asset-content-references.md"
               class="spectrum-Button spectrum-Button--outline
               spectrum-Button--primary spectrum-Button--sizeM">
@@ -203,11 +203,11 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./editor/rte-variant-compare.md" title="Comparación de variante RTE"
+            <a href="./editor/rte-variant-compare.md" title="Comparación de variantes RTE"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3437549?format=jpeg&captions=spa" alt="RTE
-                comparación de variantes">
+                src="https://video.tv.adobe.com/v/3419314?format=jpeg" alt="Comparación
+                de variantes RTE">
             </a>
           </figure>
         </div>
@@ -216,8 +216,8 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./editor/rte-variant-compare.md" title="variante RTE
-                comparar">Comparación de variante RTE</a>
+              <a href="./editor/rte-variant-compare.md" title="Comparación de variantes
+                RTE">Comparación de variantes RTE</a>
             </p>
             <p class="is-size-6">Alinee fácilmente el contenido de texto enriquecido entre
               canales.</p>
@@ -240,7 +240,7 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
             <a href="./editor/language-copies.md" title="Copias de idioma"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3436959?format=jpeg&captions=spa"
+                src="https://video.tv.adobe.com/v/3419311?format=jpeg"
                 alt="Copias de idioma">
             </a>
           </figure>
@@ -250,16 +250,16 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./editor/language-copies.md" title="Copias de idioma">Idioma
-                copias</a>
+              <a href="./editor/language-copies.md" title="Copias de idioma">Copias de
+                idioma</a>
             </p>
-            <p class="is-size-6">Administrar fácilmente el idioma del fragmento de contenido
-              Copias</p>
+            <p class="is-size-6">Administrar fácilmente las copias de idioma del fragmento de
+ contenido</p>
             <a href="./editor/language-copies.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">Vea el vídeo</span>
+                has-text-weight-bold">Ver el vídeo</span>
             </a>
           </div>
         </div>
@@ -274,7 +274,7 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
             <a href="./search/references.md" title="Referencias"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3423643?format=jpeg&captions=spa"
+                src="https://video.tv.adobe.com/v/3420950?format=jpeg"
                 alt="Referencias">
             </a>
           </figure>
@@ -291,7 +291,7 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">Vea el vídeo</span>
+                has-text-weight-bold">Ver el vídeo</span>
             </a>
           </div>
         </div>

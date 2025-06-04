@@ -13,14 +13,14 @@ doc-type: Feature Video
 exl-id: a0accb94-ceef-4ecf-b1f6-f47751114242
 duration: 251
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '37'
-ht-degree: 5%
+ht-degree: 100%
 
 ---
 
 # Introducción
 
-Obtenga información sobre cómo acceder a los AEM Assets y explorar las principales funciones de su interfaz de usuario.
+Obtenga información sobre cómo acceder a AEM Assets y explorar las principales funciones de su interfaz de usuario.
 
->[!VIDEO](https://video.tv.adobe.com/v/3418818?quality=12&learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/336005?quality=12&learn=on)

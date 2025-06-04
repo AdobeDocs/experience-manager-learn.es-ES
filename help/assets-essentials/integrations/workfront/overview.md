@@ -14,9 +14,9 @@ last-substantial-update: 2022-10-13T00:00:00Z
 doc-type: Catalog
 exl-id: b8d9b213-867e-457d-932d-1fedc4e1b1d7
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '80'
-ht-degree: 5%
+ht-degree: 100%
 
 ---
 
@@ -31,5 +31,5 @@ Para integrar Workfront con AEM Assets Essentials, siga estos pasos:
 
 Una vez configurada la integración, puede:
 
-1. [Uso compartido de archivos entre Workfront y AEM Assets Essentials](./link-send.md)
+1. [Compartir archivos entre Workfront y AEM Assets Essentials](./link-send.md)
 1. [Archivos de versión](./versions.md)

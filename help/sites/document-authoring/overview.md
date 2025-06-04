@@ -12,9 +12,9 @@ duration: 40
 last-substantial-update: 2023-12-01T00:00:00Z
 exl-id: 172a477f-d277-43c1-8e47-68870b02203c
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1047'
-ht-degree: 9%
+ht-degree: 100%
 
 ---
 
@@ -33,11 +33,11 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="set-up.md" title="Configuración de creación de documentos"
+            <a href="set-up.md" title="Configuración de la creación de documentos"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438865/?format=jpeg&captions=spa"
-                alt="Resumen de creación de documentos">
+                src="https://video.tv.adobe.com/v/3425699/?format=jpeg"
+                alt="Información general sobre la creación de documentos">
             </a>
           </figure>
         </div>
@@ -65,11 +65,11 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="preview-and-publish.md" title="Previsualización y publicación de contenido"
+            <a href="preview-and-publish.md" title="Vista previa y publicación de contenido"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3441341/?format=jpeg&captions=spa"
-                alt="Previsualización y publicación de contenido">
+                src="https://video.tv.adobe.com/v/3425700/?format=jpeg"
+                alt="Vista previa y publicación de contenido">
             </a>
           </figure>
         </div>
@@ -78,9 +78,9 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">4 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="preview-and-publish.md" title="Previsualización y publicación de contenido">Resumen del editor</a>
+              <a href="preview-and-publish.md" title="Vista previa y publicación de contenido">Información general sobre el editor</a>
             </p>
-            <p class="is-size-6">Breve descripción general de la vista previa y publicación de contenido mediante AEM Sidekick.</p>
+            <p class="is-size-6">Breve descripción general de la vista previa y la publicación de contenido mediante AEM Sidekick.</p>
             <a href="preview-and-publish.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -100,7 +100,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <a href="document-structure.md" title="Estructura del documento"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438811/?format=jpeg&captions=spa" alt="Estructura del documento">
+                src="https://video.tv.adobe.com/v/3425701/?format=jpeg" alt="Estructura del documento">
             </a>
           </figure>
         </div>
@@ -109,9 +109,9 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="document-structure.md" title="Estructura del documento">Estructura de documento</a>
+              <a href="document-structure.md" title="Estructura del documento">Estructura del documento</a>
             </p>
-            <p class="is-size-6">Explorar la estructura de los documentos.</p>
+            <p class="is-size-6">Explore la estructura de los documentos.</p>
             <a href="document-structure.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -131,7 +131,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <a href="default-content-and-sections.md" title="Contenido y secciones predeterminados"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3437978/?format=jpeg&captions=spa" alt="Contenido y secciones predeterminados">
+                src="https://video.tv.adobe.com/v/3425702/?format=jpeg" alt="Contenido y secciones predeterminados">
             </a>
           </figure>
         </div>
@@ -140,14 +140,14 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="default-content-and-sections.md" title="Contenido y secciones predeterminados">Nueva opción de editor</a>
+              <a href="default-content-and-sections.md" title="Contenido y secciones predeterminados">Conmutador al nuevo editor</a>
             </p>
             <p class="is-size-6">Explore los conceptos de creación de documentos del contenido y las secciones predeterminados.</p>
             <a href="default-content-and-sections.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">Vea el vídeo</span>
+                has-text-weight-bold">Ver el vídeo</span>
             </a>
           </div>
         </div>
@@ -161,7 +161,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
           <figure class="image is-16by9">
             <a href="blocks-and-autoblocks.md" title="Bloques y bloques automáticos" tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3439504/?format=jpeg&captions=spa"
+                src="https://video.tv.adobe.com/v/3425703/?format=jpeg"
                 alt="Bloques y bloques automáticos">
             </a>
           </figure>
@@ -171,15 +171,15 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="blocks-and-autoblocks.md" title="Bloques y bloqueos automáticos">
-                Bloques y autoblocantes</a>
+              <a href="blocks-and-autoblocks.md" title="Bloques y bloques automáticos">
+                Bloques y bloques automáticos</a>
             </p>
-            <p class="is-size-6">Explore los conceptos de la creación de documentos de bloques y autobloques.</p>
+            <p class="is-size-6">Explore los conceptos de la creación de documentos de bloques y bloques automáticos.</p>
             <a href="blocks-and-autoblocks.md"
               class="spectrum-Button spectrum-Button--outline
               spectrum-Button--primary spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">Vea el vídeo</span>
+                has-text-weight-bold">Ver el vídeo</span>
             </a>
           </div>
         </div>
@@ -194,7 +194,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <a href="redirects.md" title="Redireccionamientos"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438546/?format=jpeg&captions=spa" alt="Redireccionamientos">
+                src="https://video.tv.adobe.com/v/3425704/?format=jpeg" alt="Redireccionamientos">
             </a>
           </figure>
         </div>
@@ -210,7 +210,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">Vea el vídeo</span>
+                has-text-weight-bold">Ver el vídeo</span>
             </a>
           </div>
         </div>
@@ -222,11 +222,11 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="bulk-metadata.md" title="Metadatos por lotes"
+            <a href="bulk-metadata.md" title="Metadatos masivos"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438412/?format=jpeg&captions=spa"
-                alt="Metadatos por lotes">
+                src="https://video.tv.adobe.com/v/3425705/?format=jpeg"
+                alt="Metadatos masivos">
             </a>
           </figure>
         </div>
@@ -235,15 +235,15 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="bulk-metadata.md" title="Metadatos por lotes">Idioma
-                copias</a>
+              <a href="bulk-metadata.md" title="Metadatos masivos">Copias de
+                idioma</a>
             </p>
             <p class="is-size-6">Explore cómo se gestionan los metadatos masivos en la creación de documentos.</p>
             <a href="bulk-metadata.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">Vea el vídeo</span>
+                has-text-weight-bold">Ver el vídeo</span>
             </a>
           </div>
         </div>
@@ -255,11 +255,11 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="page-metadata.md" title="Metadatos de página"
+            <a href="page-metadata.md" title="Metadatos de la página"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438068/?format=jpeg&captions=spa"
-                alt="Metadatos de página">
+                src="https://video.tv.adobe.com/v/3425706/?format=jpeg"
+                alt="Metadatos de la página">
             </a>
           </figure>
         </div>
@@ -268,14 +268,14 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="page-metadata.md" title="Metadatos de página">Metadatos de página</a>
+              <a href="page-metadata.md" title="Metadatos de la página">Metadatos de la página</a>
             </p>
             <p class="is-size-6">Explore cómo la creación de documentos administra los metadatos de la página.</p>
             <a href="page-metadata.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">Vea el vídeo</span>
+                has-text-weight-bold">Ver el vídeo</span>
             </a>
           </div>
         </div>
@@ -290,7 +290,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <a href="author-authentication.md" title="Autenticación de autor"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438181/?format=jpeg&captions=spa"
+                src="https://video.tv.adobe.com/v/3429594/?format=jpeg"
                 alt="Autenticación de autor">
             </a>
           </figure>
@@ -302,12 +302,12 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="author-authentication.md" title="Autenticación de autor">Autenticación de autor</a>
             </p>
-            <p class="is-size-6">Obtenga información sobre cómo configurar la autenticación de autor.</p>
+            <p class="is-size-6">Aprenda a configurar la autenticación de autor. </p>
             <a href="author-authentication.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">Vea el vídeo</span>
+                has-text-weight-bold">Ver el vídeo</span>
             </a>
           </div>
         </div>
@@ -315,7 +315,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
     </div>    
 </div>
 
-## Vídeos de presentación
+## Vídeos explicativos
 
 <div class="columns is-multiline">
     <!-- Responsive Navigation -->
@@ -324,11 +324,11 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/responsive-navigation.md" title="Navegación interactiva"
+            <a href="./how-to/responsive-navigation.md" title="Navegación adaptable"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438167/?format=jpeg&captions=spa"
-                alt="Navegación interactiva">
+                src="https://video.tv.adobe.com/v/3425707/?format=jpeg"
+                alt="Navegación adaptable">
             </a>
           </figure>
         </div>
@@ -337,14 +337,14 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/responsive-navigation.md" title="Navegación interactiva">Navegación interactiva</a>
+              <a href="./how-to/responsive-navigation.md" title="Navegación adaptable">Navegación adaptable</a>
             </p>
             <p class="is-size-6">Explore cómo la creación de documentos puede definir la navegación adaptable.</p>
             <a href="page-metadata.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">Vea el vídeo</span>
+                has-text-weight-bold">Ver el vídeo</span>
             </a>
           </div>
         </div>
@@ -356,11 +356,11 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/document-audit.md" title="Auditoria de documentos"
+            <a href="./how-to/document-audit.md" title="Auditoría de documentos"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3437714/?format=jpeg&captions=spa"
-                alt="Auditoria de documentos">
+                src="https://video.tv.adobe.com/v/3425722/?format=jpeg"
+                alt="Auditoría de documentos">
             </a>
           </figure>
         </div>
@@ -369,14 +369,14 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/document-audit.md" title="Auditoria de documentos">Auditoría de documentos</a>
+              <a href="./how-to/document-audit.md" title="Auditoría de documentos">Auditoría de documentos</a>
             </p>
-            <p class="is-size-6">Explore cómo la creación de documentos administra la auditoría de documentos.</p>
+            <p class="is-size-6">Explore cómo la creación de documentos gestiona la auditoría de documentos.</p>
             <a href="page-metadata.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">Vea el vídeo</span>
+                has-text-weight-bold">Ver el vídeo</span>
             </a>
           </div>
         </div>
@@ -388,11 +388,11 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/document-permissions.md" title="Permisos de documento"
+            <a href="./how-to/document-permissions.md" title="Permisos de documentos"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438104/?format=jpeg&captions=spa"
-                alt="Permisos de documento">
+                src="https://video.tv.adobe.com/v/3425724/?format=jpeg"
+                alt="Permisos de documentos">
             </a>
           </figure>
         </div>
@@ -401,14 +401,14 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/document-permissions.md" title="Permisos de documento">Permisos de documentos </a>
+              <a href="./how-to/document-permissions.md" title="Permisos de documentos">Permisos de documentos </a>
             </p>
-            <p class="is-size-6">Explore cómo la creación de documentos administra los permisos de los documentos.</p>
+            <p class="is-size-6">Explore cómo la creación de documentos gestiona los permisos de los documentos.</p>
             <a href="./how-to/document-permissions.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">Vea el vídeo</span>
+                has-text-weight-bold">Ver el vídeo</span>
             </a>
           </div>
         </div>
@@ -420,11 +420,11 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/document-versions.md" title="Versiones de documento"
+            <a href="./how-to/document-versions.md" title="Versiones de documentos"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438798/?format=jpeg&captions=spa"
-                alt="Versiones de documento">
+                src="https://video.tv.adobe.com/v/3425728/?format=jpeg"
+                alt="Versiones de documentos">
             </a>
           </figure>
         </div>
@@ -433,14 +433,14 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/document-versions.md" title="Versiones de documento">Versiones de documento</a>
+              <a href="./how-to/document-versions.md" title="Versiones de documentos">Versiones de documentos</a>
             </p>
             <p class="is-size-6">Explore cómo la creación de documentos gestiona las versiones de los documentos.</p>
             <a href="./how-to/document-versions.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">Vea el vídeo</span>
+                has-text-weight-bold">Ver el vídeo</span>
             </a>
           </div>
         </div>
@@ -455,7 +455,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <a href="./how-to/document-workflows.md" title="Flujos de trabajo de documentos"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438293/?format=jpeg&captions=spa"
+                src="https://video.tv.adobe.com/v/3425720/?format=jpeg"
                 alt="Flujos de trabajo de documentos">
             </a>
           </figure>
@@ -472,7 +472,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">Vea el vídeo</span>
+                has-text-weight-bold">Ver el vídeo</span>
             </a>
           </div>
         </div>
@@ -487,7 +487,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <a href="./how-to/iframes.md" title="Uso de iFrames"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438392/?format=jpeg&captions=spa"
+                src="https://video.tv.adobe.com/v/3425719/?format=jpeg"
                 alt="Uso de iFrames">
             </a>
           </figure>
@@ -497,9 +497,9 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/iframes.md" title="Uso de iFrames">Usando iFrames</a>
+              <a href="./how-to/iframes.md" title="Uso de iFrames">Uso de iFrames</a>
             </p>
-            <p class="is-size-6">Descubra cómo la creación de documentos gestiona los vídeos y los iFrames.</p>
+            <p class="is-size-6">Descubra cómo la creación de documentos gestiona los vídeos e iFrames.</p>
             <a href="./how-to/iframes.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -516,11 +516,11 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/image-alt-text.md" title="Uso de texto alternativo"
+            <a href="./how-to/image-alt-text.md" title="Uso del texto alternativo"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438678/?format=jpeg&captions=spa"
-                alt="Uso de texto alternativo">
+                src="https://video.tv.adobe.com/v/3425721/?format=jpeg"
+                alt="Uso del texto alternativo">
             </a>
           </figure>
         </div>
@@ -529,7 +529,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/image-alt-text.md" title="Uso de texto alternativo">Texto alternativo de la imagen de creación</a>
+              <a href="./how-to/image-alt-text.md" title="Uso del texto alternativo">Texto alternativo de la imagen de creación</a>
             </p>
             <p class="is-size-6">Explore cómo la creación de documentos gestiona el texto alternativo de la imagen.</p>
             <a href="./how-to/image-alt-text.md" class="spectrum-Button
@@ -548,11 +548,11 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/no-index.md" title="Prevención de indexación"
+            <a href="./how-to/no-index.md" title="Impedir la indexación"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438116/?format=jpeg&captions=spa"
-                alt="Prevención de indexación">
+                src="https://video.tv.adobe.com/v/3425726/?format=jpeg"
+                alt="Impedir la indexación">
             </a>
           </figure>
         </div>
@@ -561,7 +561,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/no-index.md" title="Prevención de indexación">Impedir la indexación del motor de búsqueda</a>
+              <a href="./how-to/no-index.md" title="Impedir la indexación">Impedir la indexación del motor de búsqueda</a>
             </p>
             <p class="is-size-6">Explore cómo evitar la indexación por motores de búsqueda.</p>
             <a href="./how-to/no-index.md" class="spectrum-Button
@@ -583,7 +583,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <a href="./how-to/using-dynamic-media.md" title="Dynamic Media"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438902/?format=jpeg&captions=spa"
+                src="https://video.tv.adobe.com/v/3429593/?format=jpeg"
                 alt="Dynamic Media">
             </a>
           </figure>
@@ -615,7 +615,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <a href="./how-to/migration-using-importer.md" title="Migración de sitios mediante el importador"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3443699/?format=jpeg&captions=spa"
+                src="https://video.tv.adobe.com/v/3429595/?format=jpeg"
                 alt="Migración de sitios mediante el importador">
             </a>
           </figure>
@@ -644,11 +644,11 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/customizing-importer.md" title="Personalización del importador"
+            <a href="./how-to/customizing-importer.md" title="Personalizar el importador"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3444248/?format=jpeg&captions=spa"
-                alt="Personalización del importador">
+                src="https://video.tv.adobe.com/v/3429596/?format=jpeg"
+                alt="Personalizar el importador">
             </a>
           </figure>
         </div>
@@ -657,7 +657,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">3 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/customizing-importer.md" title="Personalización del importador">Personalización del importador</a>
+              <a href="./how-to/customizing-importer.md" title="Personalizar el importador">Personalización del Importador</a>
             </p>
             <p class="is-size-6">Descubra cómo personalizar la herramienta Importador de AEM para la migración de sitios.</p>
             <a href="./how-to/customizing-importer.md" class="spectrum-Button
@@ -676,11 +676,11 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/bulk-importing-using-importer.md" title="Importación masiva mediante el importador"
+            <a href="./how-to/bulk-importing-using-importer.md" title="Importación masiva mediante el Importador"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3445888/?format=jpeg&captions=spa"
-                alt="Importación masiva mediante el importador">
+                src="https://video.tv.adobe.com/v/3429597/?format=jpeg"
+                alt="Importación masiva mediante el Importador">
             </a>
           </figure>
         </div>
@@ -689,7 +689,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">3 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/bulk-importing-using-importer.md" title="Importación masiva mediante el importador">Importación masiva mediante el importador</a>
+              <a href="./how-to/bulk-importing-using-importer.md" title="Importación masiva mediante el Importador">Importación masiva mediante el Importador</a>
             </p>
             <p class="is-size-6">Descubra cómo importar páginas web de forma masiva mediante la herramienta Importador de AEM durante la migración del sitio.</p>
             <a href="./how-to/bulk-importing-using-importer.md" class="spectrum-Button
@@ -704,7 +704,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
     </div>                
   </div>
 
-### Vídeos Generar variaciones
+### Vídeos para generar variaciones
 
 <div class="columns is-multiline">
     <!-- Intro Generate Variation -->
@@ -716,7 +716,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <a href="./how-to/generate-variations/overview.md" title="Generar variaciones"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3441333/?format=jpeg&captions=spa"
+                src="https://video.tv.adobe.com/v/3428307/?format=jpeg"
                 alt="Generar variaciones">
             </a>
           </figure>
@@ -745,22 +745,22 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/generate-variations/configure-sidekick.md" title="Generar variaciones: Configuración de Sidekick"
+            <a href="./how-to/generate-variations/configure-sidekick.md" title="Generar variaciones: configurar barra de tareas"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3436990/?format=jpeg&captions=spa"
-                alt="Generar variaciones: Configuración de Sidekick">
+                src="https://video.tv.adobe.com/v/3428306/?format=jpeg"
+                alt="Generar variaciones: configurar barra de tareas">
             </a>
           </figure>
         </div>
         <div class="card-content is-padded-small">
           <div class="content">
             <p style="float: right;font-style: italic; color: #363636"
-              class="is-size-6">1 minutos</p>
+              class="is-size-6">Un minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/configure-sidekick.md" title="Generar variaciones: Configuración de Sidekick">Generar variaciones - Configurar Sidekick</a>
+              <a href="./how-to/generate-variations/configure-sidekick.md" title="Generar variaciones: configurar barra de tareas">Generar variaciones: configurar barra de herramientas</a>
             </p>
-            <p class="is-size-6">Descubra cómo configurar la barra de tareas para Generar variaciones en la creación de documentos de Edge Delivery Services.</p>
+            <p class="is-size-6">Descubra cómo configurar la barra de tareas para generar variaciones en la creación de documentos de Edge Delivery Services.</p>
             <a href="./how-to/generate-variations/configure-sidekick.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -777,11 +777,11 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/generate-variations/prompt-templates.md" title="Generar variaciones: consultar plantillas"
+            <a href="./how-to/generate-variations/prompt-templates.md" title="Generar variaciones: plantillas de indicación"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3441333/?format=jpeg&captions=spa"
-                alt="Generar variaciones: consultar plantillas">
+                src="https://video.tv.adobe.com/v/3428307/?format=jpeg"
+                alt="Generar variaciones: plantillas de indicación">
             </a>
           </figure>
         </div>
@@ -790,9 +790,9 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/prompt-templates.md" title="Generar variaciones: consultar plantillas">Generar variaciones - Pedir plantillas</a>
+              <a href="./how-to/generate-variations/prompt-templates.md" title="Generar variaciones: plantillas de indicación">Generar variaciones: plantillas de indicación</a>
             </p>
-            <p class="is-size-6">Aprenda a utilizar plantillas de solicitud para Generar variaciones.</p>
+            <p class="is-size-6">Aprenda a utilizar plantillas de indicación para generar variaciones.</p>
             <a href="./how-to/generate-variations/prompt-templates.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -809,11 +809,11 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/generate-variations/custom-prompt-templates.md" title="Generar variaciones: plantillas de petición de datos personalizadas"
+            <a href="./how-to/generate-variations/custom-prompt-templates.md" title="Generar variaciones: plantillas de indicación personalizadas"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438502/?format=jpeg&captions=spa"
-                alt="Generar variaciones: plantillas de petición de datos personalizadas">
+                src="https://video.tv.adobe.com/v/3428316/?format=jpeg"
+                alt="Generar variaciones: plantillas de indicación personalizadas">
             </a>
           </figure>
         </div>
@@ -822,9 +822,9 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/custom-prompt-templates.md" title="Generar variaciones: plantillas de petición de datos personalizadas">Generar variaciones - Plantillas de mensajes personalizados</a>
+              <a href="./how-to/generate-variations/custom-prompt-templates.md" title="Generar variaciones: plantillas de indicación personalizadas">Generar variaciones: plantillas de indicación personalizadas</a>
             </p>
-            <p class="is-size-6">Explore cómo crear las plantillas de solicitud personalizadas para Generar variaciones.</p>
+            <p class="is-size-6">Explore cómo crear las plantillas de indicación personalizadas para generar variaciones.</p>
             <a href="./how-to/generate-variations/custom-prompt-templates.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -841,11 +841,11 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/generate-variations/custom-prompt-templates.md" title="Generar variaciones: guardar plantillas de solicitud personalizadas"
+            <a href="./how-to/generate-variations/custom-prompt-templates.md" title="Generar variaciones: guardar plantillas de indicación personalizadas"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3437505/?format=jpeg&captions=spa"
-                alt="Generar variaciones: guardar plantillas de solicitud personalizadas">
+                src="https://video.tv.adobe.com/v/3428317/?format=jpeg"
+                alt="Generar variaciones: guardar plantillas de indicación personalizadas">
             </a>
           </figure>
         </div>
@@ -854,9 +854,9 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/custom-prompt-templates.md" title="Generar variaciones: guardar plantillas de solicitud personalizadas">Generar variaciones - Guardar plantillas de solicitud personalizadas</a>
+              <a href="./how-to/generate-variations/custom-prompt-templates.md" title="Generar variaciones: guardar plantillas de indicación personalizadas">Generar variaciones: guardar plantillas de indicación personalizadas</a>
             </p>
-            <p class="is-size-6">Aprenda a guardar las plantillas de solicitud personalizadas para Generar variaciones.</p>
+            <p class="is-size-6">Aprenda a guardar las plantillas de indicación personalizadas para generar variaciones.</p>
             <a href="./how-to/generate-variations/custom-prompt-templates.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -873,11 +873,11 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/generate-variations/using-target-audiences.md" title="Generar variaciones: uso de audiencias de Adobe Target"
+            <a href="./how-to/generate-variations/using-target-audiences.md" title="Generar variaciones: uso de públicos de Adobe Target"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3437758/?format=jpeg&captions=spa"
-                alt="Generar variaciones: uso de audiencias de Adobe Target">
+                src="https://video.tv.adobe.com/v/3428792/?format=jpeg"
+                alt="Generar variaciones: uso de públicos de Adobe Target">
             </a>
           </figure>
         </div>
@@ -886,9 +886,9 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/using-target-audiences.md" title="Generar variaciones: uso de audiencias de Adobe Target">Generar variaciones - Uso de audiencias de Adobe Target</a>
+              <a href="./how-to/generate-variations/using-target-audiences.md" title="Generar variaciones: uso de públicos de Adobe Target">Generar variaciones: uso de públicos de Adobe Target</a>
             </p>
-            <p class="is-size-6">Aprenda a utilizar las audiencias de Adobe Target para dirigirse a la audiencia adecuada para sus variaciones de contenido.</p>
+            <p class="is-size-6">Aprenda a utilizar los públicos de Adobe Target para dirigirse al público adecuado para sus variaciones de contenido.</p>
             <a href="./how-to/generate-variations/using-target-audiences.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -905,22 +905,22 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/generate-variations/using-csv-file-audiences.md" title="Generación de variaciones: uso de audiencias de archivo CSV"
+            <a href="./how-to/generate-variations/using-csv-file-audiences.md" title="Generación de variaciones: uso de públicos de archivo CSV"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3436890/?format=jpeg&captions=spa"
-                alt="Generación de variaciones: uso de audiencias de archivo CSV">
+                src="https://video.tv.adobe.com/v/3428793/?format=jpeg"
+                alt="Generación de variaciones: uso de públicos de archivo CSV">
             </a>
           </figure>
         </div>
         <div class="card-content is-padded-small">
           <div class="content">
             <p style="float: right;font-style: italic; color: #363636"
-              class="is-size-6">1 minutos</p>
+              class="is-size-6">Un minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/using-csv-file-audiences.md" title="Generación de variaciones: uso de audiencias de archivo CSV">Generar variaciones - Usando audiencias de archivo CSV</a>
+              <a href="./how-to/generate-variations/using-csv-file-audiences.md" title="Generación de variaciones: uso de públicos de archivo CSV">Generación de variaciones: uso de públicos de archivo CSV</a>
             </p>
-            <p class="is-size-6">Aprenda a utilizar archivos CSV para dirigirse a la audiencia correcta según sus variaciones de contenido.</p>
+            <p class="is-size-6">Aprenda a utilizar archivos CSV de público para dirigirse al público correcto según sus variaciones de contenido.</p>
             <a href="./how-to/generate-variations/using-csv-file-audiences.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -937,22 +937,22 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/generate-variations/using-adobe-firefly-for-images.md" title="Generar variaciones: Uso de Adobe Firefly"
+            <a href="./how-to/generate-variations/using-adobe-firefly-for-images.md" title="Generar variaciones: uso de Adobe Firefly"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438359/?format=jpeg&captions=spa"
-                alt="Generar variaciones: Uso de Adobe Firefly">
+                src="https://video.tv.adobe.com/v/3428794/?format=jpeg"
+                alt="Generar variaciones: uso de Adobe Firefly">
             </a>
           </figure>
         </div>
         <div class="card-content is-padded-small">
           <div class="content">
             <p style="float: right;font-style: italic; color: #363636"
-              class="is-size-6">1 minutos</p>
+              class="is-size-6">Un minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/using-adobe-firefly-for-images.md" title="Generar variaciones: Uso de Adobe Firefly">Generar variaciones - Usar Adobe Firefly</a>
+              <a href="./how-to/generate-variations/using-adobe-firefly-for-images.md" title="Generar variaciones: uso de Adobe Firefly">Generar variaciones: uso de Adobe Firefly</a>
             </p>
-            <p class="is-size-6">Aprenda a utilizar Adobe Firefly para crear imágenes utilizadas en las variaciones de contenido.</p>
+            <p class="is-size-6">Aprenda a utilizar Adobe Firefly para crear imágenes que se utilizan en las variaciones de contenido.</p>
             <a href="./how-to/generate-variations/using-adobe-firefly-for-images.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -972,7 +972,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <a href="./how-to/generate-variations/actions.md" title="Generar variaciones: acciones en una variación generada"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3437279/?format=jpeg&captions=spa"
+                src="https://video.tv.adobe.com/v/3428795/?format=jpeg"
                 alt="Generar variaciones: acciones en una variación generada">
             </a>
           </figure>
@@ -980,9 +980,9 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
         <div class="card-content is-padded-small">
           <div class="content">
             <p style="float: right;font-style: italic; color: #363636"
-              class="is-size-6">1 minutos</p>
+              class="is-size-6">Un minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/actions.md" title="Generar variaciones: acciones en una variación generada">Generar variaciones - Acciones en una variación generada</a>
+              <a href="./how-to/generate-variations/actions.md" title="Generar variaciones: acciones en una variación generada">Generar variaciones: acciones en una variación generada</a>
             </p>
             <p class="is-size-6">Explore las acciones que se pueden utilizar en una variación de contenido generada.</p>
             <a href="./how-to/generate-variations/actions.md" class="spectrum-Button
@@ -1004,7 +1004,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <a href="./how-to/generate-variations/trust-privacy.md" title="Generar variaciones: confianza y privacidad"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3440017/?format=jpeg&captions=spa"
+                src="https://video.tv.adobe.com/v/3429060/?format=jpeg"
                 alt="Generar variaciones: confianza y privacidad">
             </a>
           </figure>
@@ -1014,9 +1014,9 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/trust-privacy.md" title="Generar variaciones: confianza y privacidad">Generar variaciones - Confianza y privacidad</a>
+              <a href="./how-to/generate-variations/trust-privacy.md" title="Generar variaciones: confianza y privacidad">Generar variaciones: confianza y privacidad</a>
             </p>
-            <p class="is-size-6">Exploración de cómo Adobe gestiona la confianza y la privacidad para Generar variaciones.</p>
+            <p class="is-size-6">Exploración de cómo Adobe gestiona la confianza y la privacidad para generar variaciones.</p>
             <a href="./how-to/generate-variations/trust-privacy.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -1033,11 +1033,11 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/experimentation-framework.md" title="Resumen del marco de experimentación"
+            <a href="./how-to/experimentation-framework.md" title="Información general sobre el marco de trabajo de experimentación"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3437857/?format=jpeg&captions=spa"
-                alt="Resumen del marco de experimentación">
+                src="https://video.tv.adobe.com/v/3429061/?format=jpeg"
+                alt="Información general sobre el marco de trabajo de experimentación">
             </a>
           </figure>
         </div>
@@ -1046,7 +1046,7 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/experimentation-framework.md" title="Resumen del marco de experimentación">Descripción general del marco de experimentación</a>
+              <a href="./how-to/experimentation-framework.md" title="Información general sobre el marco de trabajo de experimentación">Información general sobre el marco de trabajo de experimentación</a>
             </p>
             <p class="is-size-6">Explore el marco de trabajo de experimentación que permite a los especialistas en marketing probar cuáles son las variaciones de contenido más efectivas.</p>
             <a href="./how-to/experimentation-framework.md" class="spectrum-Button
@@ -1065,11 +1065,11 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/setup-experimentation-framework.md" title="Configuración del marco de experimentación"
+            <a href="./how-to/setup-experimentation-framework.md" title="Configuración del marco de trabajo de experimentación"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438931/?format=jpeg&captions=spa"
-                alt="Configuración del marco de experimentación">
+                src="https://video.tv.adobe.com/v/3429062/?format=jpeg"
+                alt="Configuración del marco de trabajo de experimentación">
             </a>
           </figure>
         </div>
@@ -1078,9 +1078,9 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/setup-experimentation-framework.md" title="Configuración del marco de experimentación">Configurando el marco de experimentación</a>
+              <a href="./how-to/setup-experimentation-framework.md" title="Configuración del marco de trabajo de experimentación">Configuración del marco de trabajo de experimentación</a>
             </p>
-            <p class="is-size-6">Explore cómo configurar el marco de experimentación en la creación de documentos de Edge Delivery Services.</p>
+            <p class="is-size-6">Explore cómo configurar el marco de trabajo de experimentación en la creación de documentos de Edge Delivery Services.</p>
             <a href="./how-to/setup-experimentation-framework.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -1097,11 +1097,11 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/experimentation-add-metadata.md" title="Añadir metadatos para la experimentación"
+            <a href="./how-to/experimentation-add-metadata.md" title="Adición de metadatos para la experimentación"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3440108/?format=jpeg&captions=spa"
-                alt="Añadir metadatos para la experimentación">
+                src="https://video.tv.adobe.com/v/3428796/?format=jpeg"
+                alt="Adición de metadatos para la experimentación">
             </a>
           </figure>
         </div>
@@ -1110,9 +1110,9 @@ Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/experimentation-add-metadata.md" title="Añadir metadatos para la experimentación">Agregando metadatos para experimentación</a>
+              <a href="./how-to/experimentation-add-metadata.md" title="Adición de metadatos para la experimentación">Adición de metadatos para la experimentación</a>
             </p>
-            <p class="is-size-6">Explorar la adición de metadatos para la experimentación</p>
+            <p class="is-size-6">Explore la adición de metadatos para la experimentación</p>
             <a href="./how-to/experimentation-add-metadata.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">

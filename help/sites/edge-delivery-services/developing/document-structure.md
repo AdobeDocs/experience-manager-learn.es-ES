@@ -13,9 +13,9 @@ thumbnail: 3425716.jpeg
 duration: 194
 exl-id: f6e9822b-1803-4aff-aac4-714146568f91
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '40'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Explore cómo se crea un documento de Edge Delivery Services mediante secciones, contenido predeterminado y mucho más.
 
->[!VIDEO](https://video.tv.adobe.com/v/3445192/?learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3425716/?learn=on)

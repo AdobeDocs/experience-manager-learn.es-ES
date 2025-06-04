@@ -14,9 +14,9 @@ badgeVersions: label="AEM Assets as a Cloud Service, AEM Assets 6.5" before-titl
 exl-id: 4f279c0d-270f-433e-b047-88c02f5b1e78
 duration: 49
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '280'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
@@ -30,8 +30,8 @@ Esta serie de expertos de cuatro partes sigue a un grupo de expertos de Adobe, d
 
 1. [Realización de las configuraciones iniciales en Workfront y AEM](./setup.md)
 2. [Configuración de la sincronización de metadatos entre formularios personalizados de Workfront y AEM](./custom-forms.md)
-3. [Uso de etiquetas de AEM, carpetas vinculadas a proyectos, esquemas de metadatos de carpetas y vínculos de recursos de Adobe para maximizar el valor](./aem-tags-project-linked-folders-and-folder-metadata.md)
-4. [Uso del flujo de trabajo avanzado de AEM para optimizar los procesos empresariales en AEM, Workfront y otras configuraciones avanzadas](./advanced-settings-and-workflows.md)
+3. [Uso de etiquetas de AEM, carpetas vinculadas a proyectos, esquemas de metadatos de carpetas y de Adobe Asset Link para maximizar el valor](./aem-tags-project-linked-folders-and-folder-metadata.md)
+4. [Uso del flujo de trabajo avanzado de AEM para optimizar los procesos empresariales en AEM y Workfront, y otras configuraciones avanzadas](./advanced-settings-and-workflows.md)
 
 <table>
   <td>
@@ -81,7 +81,7 @@ Esta serie de expertos de cuatro partes sigue a un grupo de expertos de Adobe, d
    <!-- Advanced workflows -->
     <td>
       <a href="./advanced-settings-and-workflows.md">
-        <img alt="Configuración y flujos de trabajo avanzados" 
+        <img alt="Flujos de trabajo y ajustes avanzados" 
              src="./assets/advanced.png">
       </a>
       <div>

@@ -12,15 +12,15 @@ last-substantial-update: 2024-03-30T00:00:00Z
 jira: KT-15219
 exl-id: 1d7dd829-e235-4884-a13f-b6ea8f6b4b0b
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '370'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 # Explicación de la prevención de DoS/DDoS en AEM
 
-Obtenga información acerca de las opciones disponibles para evitar y mitigar los ataques DoS y DDoS en su entorno de AEM. Antes de sumergirse en los mecanismos de prevención, obtenga información general sobre [DoS](https://developer.mozilla.org/en-US/docs/Glossary/DOS_attack) y [DDoS](https://developer.mozilla.org/en-US/docs/Glossary/Distributed_Denial_of_Service).
+Obtenga información acerca de las opciones disponibles para evitar y mitigar los ataques DoS y DDoS en su entorno de AEM. Antes de sumergirse en los mecanismos de prevención, obtenga información general sobre [DoS](https://developer.mozilla.org/es-es/docs/Glossary/DOS_attack) y [DDoS](https://developer.mozilla.org/es-es/docs/Glossary/Distributed_Denial_of_Service).
 
 - Los ataques DoS (Denegación de servicio) y DDoS (Denegación de servicio distribuida) son intentos malintencionados de interrumpir el funcionamiento normal de un servidor, servicio o red de destino, lo que hace que sea inaccesible para los usuarios a los que va dirigido.
 - Los ataques DoS suelen proceder de una sola fuente, mientras que los ataques DDoS proceden de varias fuentes.
@@ -39,23 +39,23 @@ En la tabla siguiente se describe cómo evitar y mitigar los ataques DoS y DDoS:
             <td><strong>AEM 6.5 (local)</strong></td>
         </tr>
         <tr>
-            <td>Firewall de aplicaciones web (WAF)</td>
+            <td>Estado del cortafuegos de la aplicación web (WAF)</td>
             <td>Una solución de seguridad diseñada para proteger las aplicaciones web de diversos tipos de ataques.</td>
             <td>
             <a href="https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/examples-and-analysis#waf-rules" target="_blank">Licencia de protección WAF-DDoS</a></td>
-            <td><a href="https://docs.aws.amazon.com/waf/" target="_blank">AWS</a> o <a href="https://azure.microsoft.com/en-us/products/web-application-firewall" target="_blank">Azure</a> WAF mediante contrato AMS.</td>
+            <td><a href="https://docs.aws.amazon.com/waf/" target="_blank">AWS</a> o <a href="https://azure.microsoft.com/es-es/products/web-application-firewall" target="_blank">Azure</a> WAF mediante contrato AMS.</td>
             <td>Su WAF preferido</td>
         </tr>
         <tr>
             <td>ModSecurity</td>
-            <td>ModSecurity (también conocido como módulo Apache "mod_security") es una solución de código abierto y multiplataforma que proporciona protección contra una amplia gama de ataques contra aplicaciones web.<br/> En AEM as a Cloud Service, esto solo se aplica al servicio de publicación de AEM, ya que no hay ningún servidor web Apache ni AEM Dispatcher delante del servicio de creación de AEM.</td>
+            <td>ModSecurity (también conocido como módulo Apache "mod_security") es una solución de código abierto y multiplataforma que proporciona protección contra una amplia gama de ataques contra aplicaciones web.<br/> En AEM as a Cloud Service, esto solo se aplica al servicio de publicación de AEM, ya que no hay ningún servidor web Apache ni AEM Dispatcher delante del servicio de AEM Author.</td>
             <td colspan="3"><a href="https://experienceleague.adobe.com/es/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection" target="_blank">Habilitar ModSecurity </a></td>
         </tr>
         <tr>
             <td>Reglas de filtro de tráfico</td>
             <td>Las reglas de filtro de tráfico se pueden utilizar para bloquear o permitir solicitudes en la capa de CDN.</td>
-            <td><a href="https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/examples-and-analysis" target="_blank">Ejemplo de reglas de filtro de tráfico</a></td>
-            <td>Funciones de limitación de reglas de <a href="https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-statement-type-rate-based.html" target="_blank">AWS</a> o <a href="https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/rate-limiting-overview" target="_blank">Azure</a>.</td>
+            <td><a href="https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/examples-and-analysis" target="_blank">Reglas de filtro de tráfico de ejemplo</a></td>
+            <td>Funciones de limitación de reglas de <a href="https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-statement-type-rate-based.html?lang=es" target="_blank">AWS</a> o <a href="https://learn.microsoft.com/es-es/azure/web-application-firewall/ag/rate-limiting-overview" target="_blank">Azure</a>.</td>
             <td>Su solución preferida</td>
         </tr>
     </tbody>

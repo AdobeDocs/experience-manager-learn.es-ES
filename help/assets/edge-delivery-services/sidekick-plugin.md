@@ -1,6 +1,6 @@
 ---
-title: Complemento de Sidekick para AEM Assets y Edge Delivery Services
-description: Descubra cómo se puede utilizar el complemento AEM Assets Sidekick para incorporar recursos administrados en experiencias de alto impacto entregadas a través de Edge Delivery Services.
+title: Complemento Sidekick de AEM Assets y Edge Delivery Services
+description: Descubra cómo se puede utilizar el complemento Sidekick de AEM Assets para incorporar recursos administrados en experiencias de alto impacto distribuidas a través de Edge Delivery Services.
 version: Experience Manager as a Cloud Service
 feature: Edge Delivery Services, Selectors
 topic: Content Management
@@ -13,16 +13,16 @@ thumbnail: 3424615.jpeg
 exl-id: e8ed49a5-4ad2-4759-bf0f-1dae8478d996
 duration: 149
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '61'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Complemento de Sidekick para AEM Assets y Edge Delivery Services
+# Complemento Sidekick de AEM Assets y Edge Delivery Services
 
 {{edge-delivery-services}}
 
-Descubra cómo se puede utilizar el complemento de Sidekick [AEM Assets](https://www.hlx.live/developer/configuring-aem-assets-sidekick-plugin) para incorporar recursos administrados en experiencias de alto impacto que se entregan mediante Edge Delivery Services.
+Descubra cómo se puede utilizar el [complemento Sidekick de AEM Assets](https://www.hlx.live/developer/configuring-aem-assets-sidekick-plugin) para incorporar recursos administrados en experiencias de alto impacto que se distribuyen mediante Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3435825/?learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3424615/?learn=on)

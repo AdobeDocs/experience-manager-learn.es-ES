@@ -7,15 +7,15 @@ sub-product: Experience Manager Forms
 exl-id: c1972937-56c5-47af-9232-f31bdf69dfbe
 duration: 36
 source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '203'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Tutoriales y vídeos de AEM Forms {#overview}
 
-Adobe Experience Manager AEM () proporciona una solución fácil de usar para crear, administrar, publicar y actualizar formularios digitales complejos a la vez que se integra con procesos back-end, reglas empresariales y datos. Esta guía del usuario contiene vídeos y tutoriales sobre las numerosas funciones y funcionalidades de AEM Forms
+Adobe Experience Manager (AEM) ofrece una solución fácil de usar para crear, administrar, publicar y actualizar formularios digitales complejos a la vez que se integra con procesos back-end, reglas empresariales y datos. Esta guía del usuario contiene vídeos y tutoriales sobre las numerosas funciones y funcionalidades de AEM Forms
 
 
 <div id="recs-overview-body-1"></div>
@@ -27,7 +27,7 @@ Adobe Experience Manager AEM () proporciona una solución fácil de usar para cr
 
 <div id="staff-picks-section">
 
-## Selección de personal
+## Selecciones del personal
 
 <table>
 <tr>
@@ -37,11 +37,11 @@ Adobe Experience Manager AEM () proporciona una solución fácil de usar para cr
     </a>
     <div>
       <a href="./creating-your-first-adaptive-form/introduction-and-setup.md">
-    <strong>Cree su primer formulario adaptable</strong>
+    <strong>Creación de su primer formulario adaptable</strong>
     </a>
     </div>
     <p>
-    <em>Los formularios adaptables son formularios de nueva generación dinámicos y adaptables. Puede usar formularios adaptables para ofrecer experiencias personalizadas</em>
+    <em>Los formularios adaptables son formularios de nueva generación dinámicos y adaptables. Puede utilizar formularios adaptables para ofrecer experiencias personalizadas</em>
     <p>
   </td>
    <td>
@@ -54,20 +54,20 @@ Adobe Experience Manager AEM () proporciona una solución fácil de usar para cr
     </a>
     </div>
     <p>
-    <em>Interactive Communications centraliza y administra la creación, la combinación y la entrega de correspondencia segura, personalizada e interactiva, como correspondencia comercial, documentos, declaraciones, avisos de beneficios, correos de marketing, facturas y kits de bienvenida. </em>
+    <em>Comunicaciones interactivas centraliza y administra la creación, el ensamblado y el envío de correspondencia segura, personalizada e interactiva, como correspondencia comercial, documentos, declaraciones, avisos de beneficios, correos de marketing, facturas y kits de bienvenida. </em>
     <p>
   </td>
   <td>
     <a href="./adaptive-forms/form-data-model-service-as-step-in-workflow-video-use.md">
-      <img alt="AEM Uso del modelo de datos de formulario en flujo de trabajo de" src="./assets/fdmlogo.png" />
+      <img alt="Usar el modelo de datos de formulario en el flujo de trabajo de AEM" src="./assets/fdmlogo.png" />
     </a>
     <div>
       <a href="./adaptive-forms/form-data-model-service-as-step-in-workflow-video-use.md">
-    AEM <strong>Uso del modelo de datos de formulario en el flujo de trabajo de la</strong>
+    <strong>Uso del modelo de datos de formulario en el flujo de trabajo de AEM</strong>
     </a>
     </div>
     <p>
-    AEM <em>Invocar el servicio del modelo de datos de formulario como un paso en el flujo de trabajo de la</em>
+    <em>Invocar el servicio del modelo de datos de formulario como paso en el flujo de trabajo de AEM</em>
     <p>
   </td>
 </tr>
@@ -78,11 +78,11 @@ Adobe Experience Manager AEM () proporciona una solución fácil de usar para cr
 
 ## Recursos adicionales
 
-* [Documentación de creación de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html?lang=es)
-* [Documentación de desarrollo de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html?lang=es)
-* [Documentación de administración de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html?lang=es)
-* [Documentación de implementación de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/home.html?lang=es)
+* [Documentación de AEM Sites Authoring](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html?lang=es)
+* [Documentación de AEM Sites Developing](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html?lang=es)
+* [Documentación de AEM Sites Administering](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html?lang=es)
+* [Documentación de AEM Sites Deploying](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/home.html?lang=es)
 * [Tutoriales de AEM as a Cloud Service](/help/cloud-service/overview.md)
 * [Tutoriales de AEM Assets](/help/assets/overview.md)
 * [Tutoriales de AEM Forms](/help/forms/overview.md)
-* [AEM Tutoriales de fundaciones de](/help/foundation/overview.md)
+* [Tutoriales de AEM Foundation](/help/foundation/overview.md)

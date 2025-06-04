@@ -1,5 +1,5 @@
 ---
-title: AEM SIDEKICK y EDGE DELIVERY SERVICES
+title: AEM Sidekick y Edge Delivery Services
 description: Uso de Sidekick en Edge Delivery Services para publicar contenido.
 version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Edge Delivery Services
@@ -13,9 +13,9 @@ thumbnail: 3425715.jpeg
 duration: 136
 exl-id: 47fc8774-43c1-4e0b-8101-cff628059b09
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '31'
-ht-degree: 6%
+ht-degree: 100%
 
 ---
 
@@ -23,4 +23,4 @@ ht-degree: 6%
 
 Utilice AEM Sidekick en Edge Delivery Services para publicar contenido.
 
->[!VIDEO](https://video.tv.adobe.com/v/3441286/?learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3425715/?learn=on)

@@ -1,5 +1,5 @@
 ---
-title: Bloquear opciones
+title: Opciones de bloque
 description: Aprenda a crear un bloque con varias opciones de visualización.
 version: Experience Manager as a Cloud Service
 feature: Edge Delivery Services
@@ -11,19 +11,19 @@ jira: KT-17296
 duration: 700
 exl-id: f41dff22-bd47-4ea0-98cc-f5ca30b22c4b
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1961'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Desarrollo de un bloque con opciones
 
-Este tutorial se basa en el tutorial de Edge Delivery Services y editor universal que le guía a través del proceso de añadir opciones de bloque a un bloque. Al definir las opciones de bloque, puede personalizar el aspecto y la funcionalidad de un bloque, lo que permite diferentes variaciones para adaptarlas a diversas necesidades de contenido. Esto permite una mayor flexibilidad y reutilización dentro del sistema de diseño del sitio.
+Este tutorial se basa en la guía de Edge Delivery Services y del editor universal que incluye el proceso de añadir opciones de bloque a otro bloque. Al definir las opciones de bloque, puede personalizar el aspecto y la funcionalidad de un bloque, lo que permite diferentes variaciones para adaptarlas a diversas necesidades de contenido. Esto permite una mayor flexibilidad y reutilización dentro del sistema de diseño del sitio.
 
 ![Opción de bloque en paralelo](./assets/block-options/main.png){align="center"}
 
-En este tutorial, agregará opciones de bloque al bloque Teaser, lo que permite a los autores elegir entre dos opciones de visualización: **Predeterminado** y **En paralelo**. La opción **Default** muestra la imagen encima y detrás del texto, mientras que la opción **Side-by-side** muestra la imagen y el texto uno al lado del otro.
+En este tutorial, añadirá opciones de bloque al bloque Teaser, lo que permite a los autores elegir entre dos opciones de visualización: **Predeterminado** y **En paralelo**. La opción **Predeterminado** muestra la imagen encima y detrás del texto, mientras que la opción **En paralelo** muestra la imagen y el texto uno al lado del otro.
 
 ## Casos de uso comunes
 
@@ -35,11 +35,11 @@ Los casos de uso comunes para usar **Opciones de bloque** en el desarrollo de **
 
 Estas opciones ofrecen flexibilidad y eficiencia para crear bloques dinámicos y adaptables.
 
-Este tutorial muestra el caso de uso de las variaciones de diseño, en el que el bloque Teaser se puede mostrar en dos diseños diferentes: **Default** y **Side-by-side**.
+Este tutorial muestra el caso de uso de las variaciones de diseño, en el que el bloque Teaser se puede mostrar en dos diseños diferentes: **Predeterminado** y **En paralelo**.
 
 ## Modelo de bloque
 
-Para agregar opciones de bloque al bloque Teaser, abra su fragmento JSON en `/block/teaser/_teaser.json` y agregue un nuevo campo a la definición del modelo. Este campo establece su propiedad `name` en `classes`, que es un campo protegido utilizado por AEM para almacenar opciones de bloque, que se aplican al HTML de Edge Delivery Services del bloque.
+Para añadir opciones de bloque al bloque Teaser, abra su fragmento JSON en `/block/teaser/_teaser.json` y añada un nuevo campo a la definición del modelo. Este campo establece su propiedad `name` en `classes` un campo protegido utilizado por AEM para almacenar opciones de bloque, que se aplican al bloque HTML de Edge Delivery Services.
 
 ### Configuraciones de campo
 
@@ -55,7 +55,7 @@ Este tutorial muestra cómo utilizar un tipo de entrada `select` (desplegable) p
 
 #### Modelo de bloque
 
-La opción **Default** está representada por una cadena vacía (`""`), mientras que la opción **Side-by-Side** usa `"side-by-side"`. **name** y **value** de la opción no tienen por qué ser iguales, pero **value** determina las clases CSS aplicadas al HTML del bloque. Por ejemplo, el valor de la opción **lado a lado** podría ser `layout-10` en lugar de `side-by-side`. Sin embargo, es mejor utilizar nombres semánticamente significativos para las clases CSS, lo que garantiza la claridad y coherencia en los valores de las opciones.
+La opción **Predeterminado** está representada por una cadena vacía (`""`), mientras que la opción **En paralelo** usa `"side-by-side"`. El **nombre** y **valor** de la opción no tienen por qué ser iguales, pero el **valor** determina las clases CSS aplicadas al HTML del bloque. Por ejemplo, el valor de la opción **en paralelo** podría ser `layout-10` en lugar de `side-by-side`. Sin embargo, es mejor utilizar nombres semánticamente significativos para las clases CSS, lo que garantiza la claridad y coherencia en los valores de las opciones.
 
 [!BADGE /blocks/teaser/_teaser.json]{type=Neutral tooltip="Nombre de archivo del ejemplo de código siguiente."}
 
@@ -85,7 +85,7 @@ La opción **Default** está representada por una cadena vacía (`""`), mientras
 
 #### Bloquear HTML
 
-Cuando el autor selecciona una opción, el valor correspondiente se agrega como clase CSS a la HTML del bloque:
+Cuando el autor selecciona una opción, el valor correspondiente se añade como clase CSS a la HTML del bloque:
 
 - Si se selecciona **Predeterminado**:
 
@@ -160,7 +160,7 @@ Cuando el autor selecciona una opción, el valor correspondiente se aplica como 
   </div>
   ```
 
-- Si **está seleccionado en paralelo con la imagen a la izquierda**:
+- Si se selecciona **En paralelo con la imagen a la izquierda**:
 
   ```html
   <div class="block teaser side-by-side left">
@@ -168,7 +168,7 @@ Cuando el autor selecciona una opción, el valor correspondiente se aplica como 
   </div>
   ```
 
-- Si **está seleccionado en paralelo con la imagen a la derecha**:
+- Si se selecciona **En paralelo con la imagen a la derecha**:
 
   ```html
   <div class="block teaser side-by-side right">
@@ -189,7 +189,7 @@ El tipo de entrada de `"component": "multiselect"` permite al autor seleccionar 
 
 ### Modelo de bloque
 
-Por ejemplo, **en paralelo**, **Imagen a la izquierda** e **Imagen a la derecha** pueden admitir variaciones en las que la imagen se coloque a la izquierda (`side-by-side left`) o a la derecha (`side-by-side right`).
+Por ejemplo, **En paralelo**, **Imagen a la izquierda** e **Imagen a la derecha** pueden admitir variaciones en las que la imagen se coloque a la izquierda (`side-by-side left`) o a la derecha (`side-by-side right`).
 
 [!BADGE /blocks/teaser/_teaser.json]{type=Neutral tooltip="Nombre de archivo del ejemplo de código siguiente."}
 
@@ -225,7 +225,7 @@ Por ejemplo, **en paralelo**, **Imagen a la izquierda** e **Imagen a la derecha*
 
 Cuando el autor selecciona varias opciones, los valores correspondientes se aplican como clases CSS separadas por espacios en la HTML del bloque:
 
-- Si se seleccionan **uno al lado del otro** y **Imagen a la izquierda**:
+- Si se seleccionan **En paralelo** e **Imagen a la izquierda**:
 
   ```html{highlight="1"}
   <div class="block teaser side-by-side left">
@@ -233,7 +233,7 @@ Cuando el autor selecciona varias opciones, los valores correspondientes se apli
   </div>
   ```
 
-- Si se seleccionan **una al lado de la otra** y **Imagen a la derecha**:
+- Si se seleccionan **En paralelo** e **Imagen a la derecha**:
 
   ```html{highlight="1"}
   <div class="block teaser side-by-side right">
@@ -245,9 +245,9 @@ Aunque la selección múltiple ofrece flexibilidad, introduce complejidad en la 
 
 Por ejemplo:
 
-- **Imagen a la izquierda** o **Imagen a la derecha** sin seleccionar **Lado a lado** los aplica implícitamente a **Predeterminado**, que siempre establece la imagen como fondo, por lo que la alineación izquierda y derecha son irrelevantes.
-- Seleccionar **Imagen a la izquierda** e **Imagen a la derecha es** contradictorio.
-- Seleccionar **uno al lado del otro** sin **Imagen a la izquierda** o **Imagen a la derecha** puede considerarse ambiguo, ya que la posición de la imagen no está especificada.
+- **Imagen a la izquierda** o **Imagen a la derecha** sin seleccionar **En paralelo** los aplica implícitamente a **Predeterminado**, que siempre establece la imagen como fondo, por lo que la alineación izquierda y derecha son irrelevantes.
+- Seleccionar tanto **Imagen a la izquierda** como **Imagen a la derecha es** contradictorio.
+- Seleccionar **En paralelo** sin **Imagen a la izquierda** o **Imagen a la derecha** puede considerarse ambiguo, ya que la posición de la imagen no está especificada.
 
 Para evitar problemas y confusión de autores al utilizar la selección múltiple, asegúrese de que las opciones estén bien planificadas y que todas las permutaciones se hayan probado. La selección múltiple funciona mejor para mejoras sencillas y sin conflictos, como &quot;grande&quot; o &quot;resaltado&quot;, en lugar de para opciones que modifican el diseño.
 
@@ -256,13 +256,13 @@ Para evitar problemas y confusión de autores al utilizar la selección múltipl
 
 **Este método no se usa en este tutorial, pero ilustra un método alternativo y opciones de bloque avanzadas.**
 
-Las opciones de bloque se pueden establecer como predeterminadas al agregar una nueva instancia de bloque a una página en el Editor universal. Esto se hace estableciendo el valor predeterminado de la propiedad `classes` en la definición del bloque [block](../5-new-block.md#block-definition).
+Las opciones de bloque se pueden establecer como predeterminadas al añadir una nueva instancia de bloque a una página en el editor universal. Esto se hace estableciendo el valor predeterminado de la propiedad `classes` en la [definición del bloque](../5-new-block.md#block-definition).
 
 #### Definición de bloque
 
 En el ejemplo siguiente, la opción predeterminada se establece en **En paralelo** al asignar la propiedad `value` del campo `classes` a `side-by-side`. La entrada de la opción de bloque correspondiente en el modelo de bloque es opcional.
 
-También puede definir varias entradas para el mismo bloque, cada una con un nombre y una clase diferentes. Esto permite al editor universal mostrar distintas entradas de bloque, cada una preconfigurada con una opción de bloque específica. Aunque estos aparecen como bloques independientes en el editor, la base de código contiene un solo bloque que se procesa dinámicamente en función de la opción seleccionada.
+También puede definir varias entradas para el mismo bloque, cada una con un nombre y una clase diferentes. Esto permite al Editor universal mostrar distintas entradas de bloque, cada una preconfigurada con una opción de bloque específica. Aunque estos aparecen como bloques independientes en el editor, la base de código contiene un solo bloque que se procesa dinámicamente en función de la opción seleccionada.
 
 [!BADGE /blocks/teaser/_teaser.json]{type=Neutral tooltip="Nombre de archivo del ejemplo de código siguiente."}
 
@@ -369,9 +369,9 @@ En la definición del modelo dentro del fragmento JSON del bloque, añada un sol
 }
 ```
 
-## Actualizar bloque en el editor universal
+## Actualizar bloque en el Editor universal
 
-Para que la entrada de opciones de bloque actualizadas esté disponible en el Editor universal, implemente los cambios de código JSON en GitHub, cree una nueva página, agregue y cree el bloque Teaser con la opción **Side-by-Side** y, a continuación, publique la página para previsualizarla. Una vez publicada, cargue la página en el entorno de desarrollo local para codificarla.
+Para que la entrada de opciones de bloque actualizadas esté disponible en el editor universal, implemente los cambios de código JSON en GitHub, cree una nueva página, añada y cree el bloque Teaser con la opción **En paralelo** y, a continuación, publique la página para previsualizarla. Una vez publicada, cargue la página en el entorno de desarrollo local para codificarla.
 
 ### Insertar cambios en GitHub
 
@@ -390,21 +390,21 @@ $ git push origin teaser
 
 ### Creación de una página de prueba
 
-En el servicio de AEM Author, cree una nueva página para agregar el bloque Teaser para desarrollo. Siguiendo la convención del capítulo [Crear un bloque](../6-author-block.md) del tutorial para desarrolladores de [Edge Delivery Services y Universal Editor](../0-overview.md), cree una página de prueba en una página `branches`, poniéndole el nombre de la rama Git en la que esté trabajando (en este caso, `block-options`).
+En el servicio de AEM Author, cree una nueva página para añadir el bloque Teaser para desarrollo. Siguiendo las convenciones en el capítulo [Crear un bloque](../6-author-block.md) del tutorial para desarrolladores de [Edge Delivery Services y editor universal](../0-overview.md), cree una página de prueba en `branches`, y nómbrela como la rama Git en la que esté trabajando (en este caso, `block-options`).
 
-### Crear el bloque
+### Crear el formulario
 
-Edite la nueva página **Opciones de bloque** en el editor universal y agregue el bloque **Teaser**. Asegúrese de agregar el parámetro de consulta `?ref=block-options` a la dirección URL para cargar la página con el código de la rama de GitHub `block-options`,
+Edite la nueva página **Opciones de bloque** en el Editor universal y añada el bloque **Teaser**. Asegúrese de añadir el parámetro de consulta `?ref=block-options` a la dirección URL para cargar la página con el código de la rama de GitHub `block-options`,
 
-El cuadro de diálogo de bloque ahora incluye una lista desplegable de **Opciones de teaser** con **Opciones predeterminadas** y **selecciones en paralelo**. Elija **en paralelo** y complete el resto de la creación de contenido.
+El cuadro de diálogo de bloque ahora incluye la lista desplegable de **Opciones de teaser** con **Opciones predeterminadas** y **selecciones en paralelo**. Elija **En paralelo** y complete el resto de la creación de contenido.
 
 ![Teaser con diálogo de bloque de opciones](./assets/block-options/block-dialog.png){align="center"}
 
-Opcionalmente, agregue dos bloques de **Teaser**: uno establecido en **Predeterminado** y el otro en **En paralelo**. Esto le permite obtener una vista previa de ambas opciones en paralelo durante el desarrollo y garantiza que la implementación de **Side-by-Side** no afecte a la opción **Default**.
+Opcionalmente, añada dos bloques de **teaser**: uno establecido en **predeterminado** y el otro **en paralelo**. Esto le permite obtener una vista previa de ambas opciones en paralelo durante el desarrollo y garantiza que la implementación **En paralelo** no afecte a la opción **Predeterminado**.
 
-### Publicar para previsualización
+### Publicar en vista previa
 
-Una vez agregado el bloque Teaser a la página, [publique la página para obtener una vista previa](../6-author-block.md) con el botón **Publicar** y elija Publicar en **Vista previa** en el editor universal.
+Una vez añadido el bloque Teaser a la página, [publique la página para obtener una vista previa](../6-author-block.md) con el botón **Publicar** y elija Publicar en **Vista previa** en el Editor universal.
 
 ## Bloquear HTML
 
@@ -414,7 +414,7 @@ Para comenzar el desarrollo del bloque, comience por revisar la estructura DOM e
 
 >[!TAB DOM para decorar]
 
-El siguiente es el DOM del bloque Teaser, con la opción de bloque **Side-by-side** seleccionada, que es el destino a decorar usando JavaScript y CSS.
+El siguiente es el DOM del bloque Teaser, con la opción de bloque **En paralelo** seleccionada, que es el destino a decorar usando JavaScript y CSS.
 
 ```html{highlight="7"}
 ...
@@ -453,7 +453,7 @@ El siguiente es el DOM del bloque Teaser, con la opción de bloque **Side-by-sid
 
 >[!TAB Cómo encontrar el DOM]
 
-Para encontrar el DOM que decorar, abra la página con el bloque en su entorno de desarrollo local, seleccione el bloque con las herramientas para desarrolladores del explorador web e inspeccione el DOM. Esto le permitirá identificar los elementos relevantes para decorar.
+Para encontrar el DOM para decorar, abra la página con el bloque en su entorno de desarrollo local, seleccione el bloque con las herramientas para desarrolladores del explorador web e inspeccione el DOM. Esto le permitirá identificar los elementos relevantes para decorar.
 
 ![Inspeccionar DOM de bloque](./assets/block-options/dom.png){align="center"}
 
@@ -461,9 +461,9 @@ Para encontrar el DOM que decorar, abra la página con el bloque en su entorno d
 
 ## Bloquear CSS
 
-Edite `blocks/teaser/teaser.css` para agregar estilos CSS específicos para la opción **En paralelo**. Este archivo contiene el CSS predeterminado para el bloque.
+Edite `blocks/teaser/teaser.css` para añadir estilos CSS específicos para la opción **En paralelo**. Este archivo contiene el CSS predeterminado para el bloque.
 
-Para modificar los estilos de la opción **Side-by-Side**, agregue una nueva regla CSS de ámbito en el archivo `teaser.css` que identifica los bloques de teaser configurados con la clase `side-by-side`.
+Para modificar los estilos de la opción **Side-by-Side**, añada una nueva regla CSS de ámbito en el archivo `teaser.css` que identifica los bloques de teaser configurados con la clase `side-by-side`.
 
 ```css
 .block.teaser.side-by-side { ... }
@@ -481,9 +481,9 @@ También puede utilizar el anidamiento CSS para una versión más concisa:
 }
 ```
 
-En la regla `&.side-by-side`, agregue las propiedades CSS necesarias para aplicar estilo al bloque cuando se aplique la clase `side-by-side`.
+En la regla `&.side-by-side`, añada las propiedades CSS necesarias para aplicar estilo al bloque cuando se aplique la clase `side-by-side`.
 
-Un enfoque común es restablecer los estilos predeterminados aplicando `all: initial` a los selectores compartidos y, a continuación, agregando los estilos necesarios para la variante `side-by-side`. Si la mayoría de los estilos se comparten entre opciones, puede que sea más fácil anular propiedades específicas. Sin embargo, si varios selectores necesitan cambios, restablecer todos los estilos y volver a aplicar solo los necesarios puede hacer que el código sea más claro y fácil de mantener.
+Un enfoque común es restablecer los estilos predeterminados aplicando `all: initial` a los selectores compartidos y, a continuación, añadiendo los estilos necesarios para la variante `side-by-side`. Si la mayoría de los estilos se comparten entre opciones, puede que sea más fácil anular propiedades específicas. Sin embargo, si varios selectores necesitan cambios, restablecer todos los estilos y volver a aplicar solo los necesarios puede hacer que el código sea más claro y fácil de mantener.
 [!BADGE /blocks/teaser/teaser.css]{type=Neutral tooltip="Nombre de archivo del ejemplo de código siguiente."}
 
 ```css
@@ -685,7 +685,7 @@ if (getOptions(block).includes('side-by-side')) {
 }
 ```
 
-El archivo JavaScript completo actualizado para el bloque de teaser con las opciones Predeterminada y Simultáneo es el siguiente:
+El archivo JavaScript completo actualizado para el bloque de teaser con las opciones Predeterminado y En paralelo es el siguiente:
 
 [!BADGE /blocks/teaser/teaser.js]{type=Neutral tooltip="Nombre de archivo del ejemplo de código siguiente."}
 
@@ -756,13 +756,13 @@ export default function decorate(block) {
 
 ## Previsualización de desarrollo
 
-A medida que se agregan CSS y JavaScript, el entorno de desarrollo local de la CLI de AEM vuelve a cargar los cambios, lo que permite una visualización rápida y sencilla del impacto del código en el bloque. Pase el ratón sobre CTA y compruebe que la imagen del teaser se amplía y reduce.
+A medida que se añaden CSS y JavaScript, el entorno de desarrollo local de la CLI de AEM vuelve a cargar los cambios, lo que permite una visualización rápida y sencilla del impacto del código en el bloque. Pase el ratón sobre el CTA y compruebe que la imagen del teaser se amplía y reduce.
 
 ![Vista previa de desarrollo local del teaser mediante CSS y JS](./assets/block-options//local-development-preview.png)
 
-## Vincular el código
+## Limpie su código
 
-Asegúrate de [pelar con frecuencia](../3-local-development-environment.md#linting) los cambios de tu código para mantenerlo limpio y consistente. La identificación regular ayuda a detectar los problemas de forma temprana, lo que reduce el tiempo de desarrollo general. Recuerde, no puede combinar su trabajo de desarrollo en la rama `main` hasta que se resuelvan todos los problemas de vinculación.
+Asegúrese de [limpiar con frecuencia](../3-local-development-environment.md#linting) los cambios de su código para mantenerlo limpio y consistente. La limpieza regular ayuda a detectar los problemas de forma temprana, lo que reduce el tiempo de desarrollo general. Recuerde, no puede combinar su trabajo de desarrollo en la rama `main` hasta que se resuelvan todos los problemas de vinculación.
 
 ```bash
 # ~/Code/aem-wknd-eds-ue
@@ -770,9 +770,9 @@ Asegúrate de [pelar con frecuencia](../3-local-development-environment.md#linti
 $ npm run lint
 ```
 
-## Vista previa en el editor universal
+## Vista previa en el Editor universal
 
-Para ver los cambios en el editor universal de AEM, añádalos, confírmelos y envíelos a la rama del repositorio de Git utilizada por el editor universal. Al hacerlo, se garantiza que la implementación de bloques no interrumpa la experiencia de creación.
+Para ver los cambios en el editor universal de AEM, añádalos, confírmelos y envíelos a la rama del repositorio de Git utilizada por el editor universal. De esta manera se garantiza que la implementación de bloques no interrumpa la experiencia de creación.
 
 ```bash
 # ~/Code/aem-wknd-eds-ue
@@ -785,11 +785,11 @@ $ git push origin block-options
 
 Ahora, los cambios están visibles en el Editor universal al usar el parámetro de consulta `?ref=block-options`.
 
-![Teaser en el editor universal](./assets/block-options/universal-editor-preview.png){align="center"}
+![Teaser en el Editor universal](./assets/block-options/universal-editor-preview.png){align="center"}
 
 
 ## Enhorabuena.
 
-Ahora ha explorado las opciones de bloques en Edge Delivery Services y el editor universal, lo que le ofrece las herramientas para personalizar y optimizar la edición de contenido con una mayor flexibilidad. Empiece a aplicar estas opciones en sus proyectos para mejorar la eficacia y mantener la coherencia.
+Ahora ha explorado las opciones de bloques en Edge Delivery Services y el Editor universal, lo que le ofrece las herramientas para personalizar y optimizar la edición de contenido con una mayor flexibilidad. Empiece a aplicar estas opciones en sus proyectos para mejorar la eficacia y mantener la coherencia.
 
-Para obtener más prácticas recomendadas y técnicas avanzadas, consulte la [documentación del editor universal](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options).
+Para obtener más prácticas recomendadas y técnicas avanzadas, consulte la [documentación del Editor universal](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options).

@@ -11,9 +11,9 @@ jira: KT-15832
 duration: 900
 exl-id: 14cda9d4-752b-4425-a469-8b6f283ce1db
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '437'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
@@ -21,17 +21,17 @@ ht-degree: 0%
 
 Los bloques de Edge Delivery Services están diseñados con CSS. El archivo CSS de un bloque se almacena en el directorio del bloque y tiene el mismo nombre que el bloque. Por ejemplo, el archivo CSS de un bloque denominado `teaser` se encuentra en `blocks/teaser/teaser.css`.
 
-Lo ideal es que un bloque solo necesite CSS para el estilo, sin depender de JavaScript para modificar el DOM o agregar clases CSS. La necesidad de JavaScript depende del [modelado de contenido](./5-new-block.md#block-model) del bloque y de su complejidad. Si es necesario, se puede agregar [bloquear JavaScript](./7b-block-js-css.md).
+Lo ideal es que un bloque solo necesite CSS para el estilo, sin depender de JavaScript para modificar el DOM o añadir clases CSS. La necesidad de JavaScript depende del [modelado de contenido](./5-new-block.md#block-model) del bloque y de su complejidad. Si es necesario, se puede añadir [bloquear JavaScript](./7b-block-js-css.md).
 
 Con un enfoque solo CSS, los elementos semánticos HTML (en su mayoría) vacíos del bloque están dirigidos y diseñados.
 
 ## Bloquear HTML
 
-Para comprender cómo aplicar estilo a un bloque, primero revise el DOM expuesto por Edge Delivery Services, ya que es lo que está disponible para el estilo. El DOM se puede encontrar inspeccionando el bloque servido por el entorno de desarrollo local de la CLI de AEM. Evite utilizar el DOM del editor universal, ya que difiere ligeramente.
+Para comprender cómo aplicar estilo a un bloque, primero revise el DOM expuesto por Edge Delivery Services, ya que es lo que está disponible para el estilo. El DOM se puede encontrar inspeccionando el bloque servido por el entorno de desarrollo local de la CLI de AEM. Evite utilizar el DOM del Editor universal, ya que difiere ligeramente.
 
 >[!BEGINTABS]
 
->[!TAB DOM al estilo]
+>[!TAB DOM para el estilo]
 
 El siguiente es el DOM del bloque de teaser que es el destino para el estilo.
 
@@ -215,9 +215,9 @@ A medida que el CSS se escribe en el proyecto de código, la recarga en caliente
 
 ![Vista previa solo de CSS](./assets/7a-block-css/local-development-preview.png)
 
-## Vincular el código
+## Limpie su código
 
-Asegúrate de [pelar con frecuencia](./3-local-development-environment.md#linting) los cambios de tu código para asegurarte de que esté limpio y sea consistente. La vinculación ayuda a detectar los problemas de forma temprana y reduce el tiempo de desarrollo general. Recuerde, no puede combinar su trabajo de desarrollo con `main` hasta que se resuelvan todos los problemas de vinculación.
+Asegúrese de [limpiar con frecuencia](./3-local-development-environment.md#linting) los cambios de su código para asegurarse de que esté limpio y sea consistente. La limpieza ayuda a detectar los problemas de forma temprana y reduce el tiempo de desarrollo general. Recuerde, no puede combinar su trabajo de desarrollo con `main` hasta que se resuelvan todos los problemas de vinculación.
 
 ```bash
 # ~/Code/aem-wknd-eds-ue
@@ -225,7 +225,7 @@ Asegúrate de [pelar con frecuencia](./3-local-development-environment.md#lintin
 $ npm run lint:css
 ```
 
-## Vista previa en el editor universal
+## Vista previa en el Editor universal
 
 Para ver los cambios en el editor universal de AEM, añádalos, confírmelos y envíelos a la rama del repositorio de Git utilizada por el editor universal. Este paso ayuda a garantizar que la implementación de bloques no interrumpa la experiencia de creación.
 
@@ -237,6 +237,6 @@ $ git commit -m "Add CSS-only implementation for teaser block"
 $ git push origin teaser
 ```
 
-Ahora puede obtener una vista previa de los cambios en el Editor universal al agregar el parámetro de consulta `?ref=teaser`.
+Ahora puede obtener una vista previa de los cambios en el Editor universal al añadir el parámetro de consulta `?ref=teaser`.
 
-![Teaser en el editor universal](./assets/7a-block-css/universal-editor-preview.png)
+![Teaser en el Editor universal](./assets/7a-block-css/universal-editor-preview.png)

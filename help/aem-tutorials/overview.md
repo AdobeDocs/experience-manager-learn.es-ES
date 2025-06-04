@@ -1,12 +1,12 @@
 ---
 title: Tutoriales de AEM
-description: Una colección de vídeos y tutoriales para Adobe Experience Manager.
+description: Recopilación de vídeos y tutoriales de Adobe Experience Manager.
 exl-id: fe83a2dc-b43a-4e71-9b03-d31ec4f6a6ff
 doc-type: Catalog
 source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '110'
-ht-degree: 10%
+ht-degree: 100%
 
 ---
 
@@ -14,22 +14,22 @@ ht-degree: 10%
 
 {{edge-delivery-services}}
 
-Adobe Experience Manager AEM () es la plataforma líder de administración de experiencias. AEM Esta guía del usuario contiene vídeos y tutoriales que le ayudarán a sacar el máximo partido a las ventajas de la tecnología de la.
+Adobe Experience Manager (AEM) es la plataforma líder de administración de experiencias. Esta guía del usuario contiene vídeos y tutoriales que le ayudarán a sacar el máximo partido a AEM.
 
-## AEM tutoriales de
+## Tutoriales de AEM
 
 + [AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=es)
 + [AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html?lang=es)
-+ [AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/overview.html?lang=es)
-+ AEM [como Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=es)
-+ AEM [Fundamento de](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/overview.html?lang=es)
-+ [Tutorials para AEM Guides](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/tutorials/overview.html?lang=es)
++ [AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/overview.html?lang=es)
++ [AEM as Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=es)
++ [AEM Foundation](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/overview.html?lang=es)
++ [Tutoriales para AEM Guides](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/tutorials/overview.html?lang=es)
 
-## AEM Tutoriales de varios pasos de
+## Tutoriales de AEM en varios pasos
 
-+ [Introducción a AEM Sites: Tutorial de WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es)
-+ AEM [Introducción a la tecnología sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es)
-+ AEM SPA [Introducción al Editor de y React](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html?lang=es)
-+ AEM [Introducción a la configuración de la aplicación y a la configuración de Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html?lang=es)
-+ AEM [Tutorial de caché de Dispatcher de.x](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html?lang=es)
-+ AEM [Tutorial de Dynamic Media Classic de.x](https://experienceleague.adobe.com/docs/experience-manager-learn/dynamic-media-classic-tutorial/overview.html?lang=es)
++ [Tutorial de WKND para comenzar a desarrollar con AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es)
++ [Introducción a AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es)
++ [Introducción al editor de SPA de AEM y React](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html?lang=es)
++ [Introducción a AEM y Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html?lang=es)
++ [Tutorial de caché de AEM Dispatcher AEM 6.x](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html?lang=es)
++ [Tutorial de AEM 6.x Dynamic Media Classic](https://experienceleague.adobe.com/docs/experience-manager-learn/dynamic-media-classic-tutorial/overview.html?lang=es)

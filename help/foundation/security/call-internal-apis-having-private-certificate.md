@@ -13,9 +13,9 @@ last-substantial-update: 2023-08-25T00:00:00Z
 exl-id: c88aa724-9680-450a-9fe8-96e14c0c6643
 duration: 332
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '467'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderExce
 
 Este problema suele ocurrir cuando el certificado SSL de la **API no es emitido por una entidad de certificación (CA) reconocida** y la aplicación Java™ no puede validar el certificado SSL/TLS.
 
-Vamos a aprender a llamar correctamente a las API que tienen certificados privados o autofirmados mediante [Apache HttpClient](https://hc.apache.org/httpcomponents-client-4.5.x/index.html) y **TrustStore global de AEM**.
+Vamos a aprender a llamar correctamente a las API que tienen certificados privados o autofirmados mediante [Apache HttpClient](https://hc.apache.org/httpcomponents-client-4.5.x/index.html?lang=es) y **TrustStore global de AEM**.
 
 
 ## Código de invocación de API prototípico mediante HttpClient
@@ -57,21 +57,21 @@ CloseableHttpResponse closeableHttpResponse = httpClient.execute(new HttpGet(API
 ...
 ```
 
-El código usa las clases de biblioteca [HttpClient](https://hc.apache.org/httpcomponents-client-4.5.x/index.html) de [Apache HttpComponent](https://hc.apache.org/) y sus métodos.
+El código usa las clases de biblioteca [HttpClient](https://hc.apache.org/httpcomponents-client-4.5.x/index.html?lang=es) de [Apache HttpComponent](https://hc.apache.org/) y sus métodos.
 
 
 ## HttpClient y cargar material de AEM TrustStore
 
-Para llamar a un extremo de API que tiene _certificado privado o autofirmado_, [HttpClient](https://hc.apache.org/httpcomponents-client-4.5.x/index.html) debe cargarse con TrustStore de AEM y usarse para facilitar la conexión.`SSLContextBuilder`
+Para llamar a un punto final de API que tiene un _certificado privado o autofirmado_, [HttpClient](https://hc.apache.org/httpcomponents-client-4.5.x/index.html?lang=es) debe cargarse con TrustStore de AEM y usarse para facilitar la conexión.`SSLContextBuilder`
 
 Siga estos pasos:
 
 1. Inicie sesión en **AEM Author** como **administrador**.
-1. Vaya a **AEM Author > Herramientas > Seguridad > Almacén de confianza** y abra el **Almacén de confianza global**. Si accede a la primera vez, establezca una contraseña para el Almacén de confianza global.
+1. Vaya a **AEM Author > Herramientas > Seguridad > Almacén de confianza** y abra el **Almacén de confianza global**. Si accede la primera vez, establezca una contraseña para el Almacén de confianza global.
 
    ![Almacén de confianza global](assets/internal-api-call/global-trust-store.png)
 
-1. Para importar un certificado privado, haga clic en el botón **Seleccionar archivo de certificado** y seleccione el archivo de certificado deseado con la extensión `.cer`. Importarlo haciendo clic en el botón **Enviar**.
+1. Para importar un certificado privado, haga clic en el botón **Seleccionar archivo de certificado** y seleccione el archivo de certificado deseado con la extensión `.cer`. Impórtelo haciendo clic en el botón **Enviar**.
 
 1. Actualice el código Java™ como se muestra a continuación. Tenga en cuenta que para usar `@Reference` para obtener `KeyStoreService` de AEM, el código de llamada debe ser un componente o servicio OSGi o un modelo Sling (y `@OsgiService` se usa allí).
 
@@ -134,8 +134,8 @@ Siga estos pasos:
    ```
 
    * Inserte el servicio OSGi OOTB `com.adobe.granite.keystore.KeyStoreService` en su componente OSGi.
-   * Si se obtiene el almacén de confianza global de AEM mediante `KeyStoreService` y `ResourceResolver`, el método `getAEMTrustStore(...)` lo hace.
-   * Cree un objeto de `SSLContextBuilder`, consulte Java™ [Detalles de la API](https://javadoc.io/static/org.apache.httpcomponents/httpcore/4.4.8/index.html?org/apache/http/ssl/SSLContextBuilder.html).
+   * Si se obtiene el AEM TrustStore mediante `KeyStoreService` y `ResourceResolver`, el método `getAEMTrustStore(...)` lo hace.
+   * Cree un objeto de `SSLContextBuilder`, consulte Java™ [Detalles de la API](https://javadoc.io/static/org.apache.httpcomponents/httpcore/4.4.8/index.html?org/apache/http/ssl/SSLContextBuilder.html?lang=es).
    * Cargue el AEM TrustStore global en `SSLContextBuilder` mediante el método `loadTrustMaterial(KeyStore truststore,TrustStrategy trustStrategy)`.
    * Pase `null` para `TrustStrategy` en el método anterior, se garantiza que solo los certificados de confianza de AEM se ejecuten correctamente durante la ejecución de la API.
 
@@ -148,13 +148,13 @@ Siga estos pasos:
 
 ## Evitar cambios en el almacén de claves JVM
 
-Un enfoque convencional para invocar de forma eficaz las API internas con certificados privados implica la modificación del repositorio de claves JVM. Se logra importando los certificados privados mediante el comando Java™ [keytool](https://docs.oracle.com/en/java/javase/11/tools/keytool.html#GUID-5990A2E4-78E3-47B7-AE75-6D1826259549).
+Un enfoque convencional para invocar de forma eficaz las API internas con certificados privados implica la modificación del repositorio de claves JVM. Se logra importando los certificados privados mediante el comando Java™ [keytool](https://docs.oracle.com/en/java/javase/11/tools/keytool.html?lang=es#GUID-5990A2E4-78E3-47B7-AE75-6D1826259549).
 
-Sin embargo, este método no está alineado con las prácticas recomendadas de seguridad y AEM ofrece una opción superior mediante el uso del **Almacén de confianza global** y [KeyStoreService](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/adobe/granite/keystore/KeyStoreService.html).
+Sin embargo, este método no está alineado con las prácticas recomendadas de seguridad y AEM ofrece una opción superior mediante el uso del **Almacén de confianza global** y [KeyStoreService](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/adobe/granite/keystore/KeyStoreService.html?lang=es).
 
 
 ## Paquete de soluciones
 
-El proyecto Node.js de muestra que se muestra en el vídeo se puede descargar desde [aquí](assets/internal-api-call/REST-APIs.zip).
+El proyecto Node.js de muestra que aparece en el vídeo se puede descargar desde [aquí](assets/internal-api-call/REST-APIs.zip).
 
 El código de servlet de AEM está disponible en la rama `tutorial/web-api-invocation` del proyecto WKND Sites, [véase](https://github.com/adobe/aem-guides-wknd/tree/tutorial/web-api-invocation/core/src/main/java/com/adobe/aem/guides/wknd/core/servlets).

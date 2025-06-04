@@ -1,6 +1,6 @@
 ---
-title: Implementaciones sin encabezado de AEM
-description: Obtenga información acerca de las distintas consideraciones de implementación para aplicaciones sin encabezado de AEM.
+title: Implementaciones de AEM Headless
+description: Obtenga información acerca de las distintas consideraciones de implementación para aplicaciones de AEM Headless.
 version: Experience Manager as a Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
@@ -12,31 +12,31 @@ last-substantial-update: 2022-08-26T00:00:00Z
 exl-id: 6de58ca0-9444-4272-9487-15a9e3c89231
 duration: 59
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '315'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Implementaciones sin encabezado de AEM
+# Implementaciones de AEM Headless
 
-Las implementaciones de cliente sin encabezado de AEM toman muchos formularios; SPA alojada en AEM, SPA externa, sitio web, aplicación móvil o incluso proceso de servidor a servidor.
+Las implementaciones de AEM sin encabezado toman muchas formas; SPA alojada en AEM, SPA externa, sitio web, aplicación móvil o incluso proceso de servidor a servidor.
 
-Según el cliente y cómo se implemente, las implementaciones sin encabezado de AEM tienen diferentes consideraciones.
+Según el cliente y cómo se implemente, las implementaciones de AEM Headless tienen diferentes consideraciones.
 
 ## Arquitectura de servicio de AEM
 
 Antes de explorar las consideraciones de implementación, es imperativo comprender la arquitectura lógica de AEM, y la separación y las funciones de los niveles de servicio de AEM as a Cloud Service. AEM as a Cloud Service consta de dos servicios lógicos:
 
 + __Autor de AEM__ es el servicio donde los equipos crean, colaboran y publican fragmentos de contenido (y otros recursos).
-+ __Publicación de AEM__ es el servicio en el que se publicaron Los fragmentos de contenido (y otros recursos) se replican para uso general.
-+ __Vista previa de AEM__ es el servicio que imita la publicación de AEM en comportamiento, pero tiene contenido publicado para vista previa o revisión. La vista previa de AEM está destinada a audiencias internas y no a la entrega general de contenido. El uso de la vista previa de AEM es opcional, según el flujo de trabajo deseado.
++ __Publicación de AEM__ es el servicio en el que se publicaron los fragmentos de contenido (y otros recursos) que se replican para uso general.
++ __Vista previa de AEM__ es el servicio que imita AEM Publish en comportamiento, pero tiene contenido publicado para vista previa o revisión. La vista previa de AEM está destinada a audiencias internas y no a la entrega general de contenido. El uso de la vista previa de AEM es opcional, según el flujo de trabajo deseado.
 
 ![Arquitectura de servicio de AEM](./assets/overview/aem-service-architecture.png)
 
-Arquitectura de implementación típica sin encabezado de AEM as a Cloud Service
+Arquitectura de implementación típica sin encabezado de AEM as a Cloud Service_
 
-Los clientes sin encabezado de AEM que operan en una capacidad de producción suelen interactuar con AEM Publish, que contiene el contenido aprobado y publicado. Los clientes que interactúen con AEM Author deben tener especial cuidado, ya que AEM Author es seguro de forma predeterminada, y requiere autorización para todas las solicitudes. También puede incluir trabajo en curso o contenido no aprobado.
+Los clientes de AEM Headless que operan en una capacidad de producción suelen interactuar con AEM Publish, que contiene el contenido aprobado y publicado. Los clientes que interactúen con AEM Author deben tener especial cuidado, ya que AEM Author es seguro de forma predeterminada, y requiere autorización para todas las solicitudes. También puede incluir trabajo en curso o contenido no aprobado.
 
 ## Implementaciones de cliente sin encabezado
 

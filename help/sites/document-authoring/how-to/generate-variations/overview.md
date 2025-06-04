@@ -12,9 +12,9 @@ last-substantial-update: 2024-04-11T00:00:00Z
 jira: KT-15320
 exl-id: f8bfffb5-f8fd-4d24-822b-687b849efc10
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '46'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Introducción a la generación de variaciones en Edge Delivery Services y comprensión de cómo puede resultar útil para los especialistas en marketing.
 
->[!VIDEO](https://video.tv.adobe.com/v/3438557/?learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3428304/?learn=on)

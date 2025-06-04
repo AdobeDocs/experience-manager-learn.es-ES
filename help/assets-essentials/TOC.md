@@ -9,9 +9,9 @@ feature-set: Experience Manager Assets
 feature: Assets Essentials
 team: TM
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '69'
-ht-degree: 21%
+ht-degree: 100%
 
 ---
 
@@ -25,12 +25,12 @@ ht-degree: 21%
 + Conceptos básicos{#basics}
    + [Administración](basics/managing.md)
    + [Utilización](basics/using.md)
-   + [Creación de contenido](basics/creating.md)
+   + [Creación de contenido ](basics/creating.md)
    + [Acceso rápido](basics/quick-access.md)
    + [Colaboración](basics/collaborating.md)
-   + [Vínculos compartidos](basics/link-sharing.md)
+   + [Uso compartido de vínculos](basics/link-sharing.md)
    + [Informes](basics/reports.md)
-+ Configurando {#configuring}
++ Configuración{#configuring}
    + [Mi espacio de trabajo](configuring/my-workspace.md)
    + [Formularios de metadatos](configuring/metadata-forms.md)
    + [Administración de permisos](configuring/permissions-management.md)
@@ -41,7 +41,7 @@ ht-degree: 21%
 + Integración de Adobe Workfront{#workfront}
    + [Información general](./integrations/workfront/overview.md)
    + [Configuración](./integrations/workfront/configure.md)
-   + [Asignación de metadatos](./integrations/workfront/map-metadata.md)
+   + [Metadatos de asignación](./integrations/workfront/map-metadata.md)
    + [Envío de documentos y vinculación de recursos](./integrations/workfront/link-send.md)
    + [Historial de versiones](./integrations/workfront/versions.md)
 
