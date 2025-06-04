@@ -21,4 +21,4 @@ ht-degree: 100%
 
 Presenta las tecnologías de [!DNL OSGi], [!DNL JCR], [!DNL Oak] y [!DNL Sling] como parte de la pila tecnológica de Adobe Experience Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/32034?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36910?quality=12&learn=on&captions=spa)

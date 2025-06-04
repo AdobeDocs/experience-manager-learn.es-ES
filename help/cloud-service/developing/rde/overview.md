@@ -27,7 +27,7 @@ Descripción de este vídeo:
 - ¿Qué son las RDE?
 - ¿Cómo ayudan a acelerar el desarrollo de los ciclos de implementación?
 
->[!VIDEO](https://video.tv.adobe.com/v/3414128?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453601?quality=12&learn=on&captions=spa)
 
 ## Siguiente paso
 

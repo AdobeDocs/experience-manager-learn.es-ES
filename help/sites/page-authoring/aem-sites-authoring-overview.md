@@ -24,7 +24,7 @@ ht-degree: 100%
 
 El siguiente vídeo proporciona información general sobre los conceptos básicos de creación en un entorno de autor de AEM para AEM Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/33594?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36774?quality=12&learn=on&captions=spa)
 
 ## Recursos adicionales {#additional-resources}
 

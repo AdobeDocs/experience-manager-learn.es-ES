@@ -26,7 +26,7 @@ Bienvenido al tutorial de varias partes para desarrolladores que buscan aumentar
 
 Este tutorial se basa en la [aplicación WKND GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=es) React, esta consume contenido de fragmentos de contenido de AEM a través de las API de GraphQL de AEM; sin embargo, no proporciona ninguna creación contextual de contenido de SPA.
 
->[!VIDEO](https://video.tv.adobe.com/v/333272?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444850?quality=12&learn=on&captions=spa)
 
 ## Información sobre el tutorial
 

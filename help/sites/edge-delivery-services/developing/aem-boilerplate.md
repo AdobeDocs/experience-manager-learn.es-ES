@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Configurar el repositorio Git de código con la [plantilla de elemento repetitivo de AEM](https://github.com/adobe/aem-boilerplate) para Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425713/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3434614/?learn=on&captions=spa)

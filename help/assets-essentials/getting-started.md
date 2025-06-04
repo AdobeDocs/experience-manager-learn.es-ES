@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Obtenga información sobre cómo acceder a AEM Assets y explorar las principales funciones de su interfaz de usuario.
 
->[!VIDEO](https://video.tv.adobe.com/v/336005?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418818?quality=12&learn=on&captions=spa)

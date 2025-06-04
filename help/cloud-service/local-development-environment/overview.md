@@ -30,7 +30,7 @@ ht-degree: 100%
 
 En este tutorial se explica cómo configurar un entorno de desarrollo local para Adobe Experience Manager (AEM) mediante el SDK de AEM as a Cloud Service. Se incluyen las herramientas de desarrollo necesarias para desarrollar, crear y compilar proyectos AEM, así como los tiempos de ejecución locales, lo que permite a los desarrolladores validar rápidamente las nuevas funciones localmente antes de implementarlas en AEM as a Cloud Service mediante Adobe Cloud Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/32565?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36463?quality=12&learn=on&captions=spa)
 
 ![Pila tecnológica del entorno de desarrollo local de AEM as a Cloud Service](./assets/overview/aem-sdk-technology-stack.png)
 

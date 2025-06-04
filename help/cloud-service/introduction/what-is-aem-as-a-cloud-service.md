@@ -24,4 +24,4 @@ ht-degree: 100%
 
 Explore AEM as a Cloud Service y Edge Delivery Services y los valores que ofrecen.
 
->[!VIDEO](https://video.tv.adobe.com/v/330546?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/346159?quality=12&learn=on&captions=spa)

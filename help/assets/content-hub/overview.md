@@ -69,7 +69,7 @@ En estos vídeos se explican las funciones principales de Content Hub para AEM A
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/content-hub/configure" title="Configuración" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3439311/?format=jpeg&nocache=1744751768916" alt="Configuración"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3439314/?format=jpeg&nocache=1744751768916&captions=spa" alt="Configuración"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -92,7 +92,7 @@ En estos vídeos se explican las funciones principales de Content Hub para AEM A
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/content-hub/add-assets" title="Añadir recursos" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3432980/?format=jpeg&nocache=1744751769952" alt="Añadir recursos"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3450285/?format=jpeg&nocache=1744751769952&captions=spa" alt="Añadir recursos"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -161,7 +161,7 @@ En estos vídeos se explican las funciones principales de Content Hub para AEM A
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/content-hub/collections" title="Colecciones" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435687/?format=jpeg&nocache=1744751769136" alt="Colecciones"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3445303/?format=jpeg&nocache=1744751769136&captions=spa" alt="Colecciones"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -184,7 +184,7 @@ En estos vídeos se explican las funciones principales de Content Hub para AEM A
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/content-hub/share" title="Uso compartido" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435685/?format=jpeg&nocache=1744751769933" alt="Uso compartido"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3445358/?format=jpeg&nocache=1744751769933&captions=spa" alt="Uso compartido"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -221,7 +221,7 @@ Explore casos de uso y escenarios que muestran cómo se puede utilizar AEM Asset
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./use-cases/manage-assets.md" title="Cómo administrar recursos con AEM Assets Content Hub" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3457638/?format=jpeg&nocache=1744751770120" alt="Cómo administrar recursos con AEM Assets Content Hub"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3463059/?format=jpeg&nocache=1744751770120&captions=spa" alt="Cómo administrar recursos con AEM Assets Content Hub"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

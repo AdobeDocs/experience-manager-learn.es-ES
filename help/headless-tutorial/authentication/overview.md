@@ -24,7 +24,7 @@ AEM expone una variedad de puntos finales HTTP con los que se puede interactuar 
 
 En este tutorial, exploraremos cómo una aplicación externa puede autenticarse mediante programación e interactuar con AEM as a Cloud Service a través de HTTP mediante tókenes de acceso.
 
->[!VIDEO](https://video.tv.adobe.com/v/330460?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410079?quality=12&learn=on&captions=spa)
 
 ## Requisitos previos
 

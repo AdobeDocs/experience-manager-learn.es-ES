@@ -24,4 +24,4 @@ ht-degree: 100%
 
 Introducción a la generación de variaciones en Edge Delivery Services y comprensión de cómo puede resultar útil para los especialistas en marketing.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428304/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438557/?learn=on&captions=spa)

@@ -27,7 +27,7 @@ Las herramientas y los procesos de desarrollo de un proyecto de sitio web de Edg
 
 En este vídeo se ofrece información general sobre la topología de desarrollo para un proyecto de sitio web de Edge Delivery Services que se puede editar con el editor universal.
 
->[!VIDEO](https://video.tv.adobe.com/v/3443978/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3443981/?learn=on&enablevpops&captions=spa)
 
 +++Consulte los detalles adicionales de la topología de desarrollo
 

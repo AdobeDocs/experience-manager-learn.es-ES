@@ -341,7 +341,7 @@ Le damos la bienvenida a una colección de ejemplos de código de extensibilidad
       <div class="card-image">
         <figure class="image is-16by9">
           <a href="./examples/editor-custom-field.md" title="Campos personalizados" tabindex="-1">
-            <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3427585?format=jpeg" alt="Campos personalizados">
+            <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3437637?format=jpeg&captions=spa" alt="Campos personalizados">
           </a>
         </figure>
       </div>

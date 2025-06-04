@@ -27,7 +27,7 @@ Mientras que en AEM 6.x se utilizaban procesos de flujo de trabajo de AEM person
 
 ## Lo que puede hacer
 
->[!VIDEO](https://video.tv.adobe.com/v/40965?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410020?quality=12&learn=on&captions=spa)
 
 Este tutorial muestra la creación de una sencilla herramienta de Asset Compute que crea un renderizado de un activo recortando el activo original en un círculo y aplicando contraste y brillo configurables. Aunque la herramienta en sí es básica, este tutorial la utiliza para explorar la creación, el desarrollo y la implementación de una herramienta de Asset Compute personalizada para su uso con AEM as a Cloud Service.
 

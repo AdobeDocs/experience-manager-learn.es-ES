@@ -38,7 +38,7 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
             <a href="./basics/content-fragments-console.md" title="Información general de la consola"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3409492?format=jpeg"
+                src="https://video.tv.adobe.com/v/3449334?format=jpeg&captions=spa"
                 alt="Información general de la consola">
             </a>
           </figure>
@@ -104,7 +104,7 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
             <a href="./search/fast-filtering.md" title="Filtrado rápido"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3419310?format=jpeg" alt="Filtrado
+                src="https://video.tv.adobe.com/v/3436699?format=jpeg&captions=spa" alt="Filtrado
                 rápido">
             </a>
           </figure>
@@ -172,7 +172,7 @@ filtrado en línea.</p>
             <a href="./editor/non-asset-content-references.md" title="Referencias de contenido
               sin recursos" tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3419313?format=jpeg"
+                src="https://video.tv.adobe.com/v/3436765?format=jpeg&captions=spa"
                 alt="Referencias de contenido sin recursos">
             </a>
           </figure>
@@ -206,7 +206,7 @@ filtrado en línea.</p>
             <a href="./editor/rte-variant-compare.md" title="Comparación de variantes RTE"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3419314?format=jpeg" alt="Comparación
+                src="https://video.tv.adobe.com/v/3437549?format=jpeg&captions=spa" alt="Comparación
                 de variantes RTE">
             </a>
           </figure>
@@ -240,7 +240,7 @@ filtrado en línea.</p>
             <a href="./editor/language-copies.md" title="Copias de idioma"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3419311?format=jpeg"
+                src="https://video.tv.adobe.com/v/3436959?format=jpeg&captions=spa"
                 alt="Copias de idioma">
             </a>
           </figure>
@@ -274,7 +274,7 @@ filtrado en línea.</p>
             <a href="./search/references.md" title="Referencias"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3420950?format=jpeg"
+                src="https://video.tv.adobe.com/v/3423643?format=jpeg&captions=spa"
                 alt="Referencias">
             </a>
           </figure>
