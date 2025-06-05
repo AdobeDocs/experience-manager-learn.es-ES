@@ -12,7 +12,7 @@ doc-type: Tutorial
 exl-id: 63c23f22-533d-486c-846b-fae22a4d68db
 duration: 253
 source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '621'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ AEM expone una variedad de puntos finales HTTP con los que se puede interactuar 
 
 En este tutorial, exploraremos cómo una aplicación externa puede autenticarse mediante programación e interactuar con AEM as a Cloud Service a través de HTTP mediante tókenes de acceso.
 
->[!VIDEO](https://video.tv.adobe.com/v/3410079?quality=12&learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/330460?quality=12&learn=on)
 
 ## Requisitos previos
 
@@ -33,7 +33,7 @@ Asegúrese de que cumple los siguientes requisitos antes de seguir este tutorial
 1. Acceso a un entorno de AEM as a Cloud Service (preferiblemente, un entorno de desarrollo o un programa de zona protegida)
 1. Abono en el perfil de producto del administrador de AEM a los servicios de Author del entorno de AEM as a Cloud Service. 
 1. Ser miembro o tener acceso a su administrador de IMS de Adobe Org (deberá realizar una inicialización única de las [Credenciales de servicio](./service-credentials.md))
-1. El [sitio WKND]( https://github.com/adobe/aem-guides-wknd) más reciente implementado en su entorno Cloud Service
+1. El [sitio WKND](https://github.com/adobe/aem-guides-wknd) más reciente implementado en su entorno Cloud Service
 
 ## Información general sobre la aplicación externa
 

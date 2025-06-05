@@ -13,7 +13,7 @@ thumbnail: KT-13148.jpeg
 exl-id: 49becbcb-7965-4378-bb8e-b662fda716b7
 duration: 532
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1472'
 ht-degree: 100%
 
@@ -235,7 +235,7 @@ Veamos primero la experiencia incluso antes de declarar las reglas de WAF. Cuand
 
 Empecemos atacando el sitio WKND sin añadir una regla de WAF (o utilizando la propiedad `wafFlags`) y analicemos los resultados.
 
-- Para simular un ataque, use el siguiente comando [Nikto]( https://github.com/sullo/nikto), que envía alrededor de 700 solicitudes malintencionadas en 6 minutos.
+- Para simular un ataque, use el siguiente comando [Nikto](https://github.com/sullo/nikto), que envía alrededor de 700 solicitudes malintencionadas en 6 minutos.
 
   ```shell
   $ ./nikto.pl -useragent "AttackSimulationAgent (Demo/1.0)" -D V -Tuning 9 -ssl -h https://publish-pXXXX-eYYYY.adobeaemcloud.com/us/en.html
@@ -309,7 +309,7 @@ data:
 
 - Confirme, inserte e implemente los cambios tal como se menciona en [ejemplos anteriores](#logging-requests).
 
-- Para simular un ataque, use el mismo comando [Nikto]( https://github.com/sullo/nikto) que antes.
+- Para simular un ataque, use el mismo comando [Nikto](https://github.com/sullo/nikto) que antes.
 
   ```shell
   $ ./nikto.pl -useragent "AttackSimulationAgent (Demo/1.0)" -D V -Tuning 9 -ssl -h https://publish-pXXXX-eYYYY.adobeaemcloud.com/us/en.html

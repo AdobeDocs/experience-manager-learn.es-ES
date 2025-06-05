@@ -15,7 +15,7 @@ doc-type: Tutorial
 exl-id: bdae56d8-96e7-4b05-9b8b-3c6c2e998bd8
 duration: 230
 source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 100%
 
@@ -27,14 +27,14 @@ Obtenga información sobre cómo integrar las etiquetas en Adobe Experience Plat
 
 Las etiquetas son la tecnología de administración de etiquetas de última generación de Adobe Experience Platform. Las etiquetas proporcionan la forma más sencilla de implementar Adobe Analytics, Target, Audience Manager y muchas más soluciones. Obtenga información general sobre las etiquetas y la integración recomendada con Adobe Experience Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/3445203?quality=12&learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3417061?quality=12&learn=on)
 
 ## Requisitos previos
 
 Se requiere lo siguiente al integrar etiquetas de recopilación de datos de Experience Platform.
 
 + Acceso de administrador de AEM a AEM as a Cloud Service
-+ Se ha implementado un sitio de referencia como [WKND]( https://github.com/adobe/aem-guides-wknd).
++ Se ha implementado un sitio de referencia como [WKND](https://github.com/adobe/aem-guides-wknd).
 + Acceso a la solución de recopilación de datos de Adobe Experience Platform
 + Acceso del administrador del sistema a [Adobe Developer Console](https://developer.adobe.com/developer-console/)
 

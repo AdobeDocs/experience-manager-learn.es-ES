@@ -13,7 +13,7 @@ thumbnail: KT-13148.jpeg
 exl-id: b67bf642-3341-48d0-8ea9-5f262febf414
 duration: 292
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 100%
 
@@ -101,7 +101,7 @@ Para probar las reglas, dispone de varias herramientas de terceros y es posible 
 
 - [Vegeta](https://github.com/tsenart/vegeta) para ejecutar la denegación de servicio (DOS). Siga las instrucciones de instalación de [Vegeta GitHub](https://github.com/tsenart/vegeta#install).
 
-- [Nikto]( https://github.com/sullo/nikto/wiki) para encontrar posibles problemas y vulnerabilidades de seguridad como XSS, inyección de SQL, etc. Siga las instrucciones de instalación de [Nikto GitHub]( https://github.com/sullo/nikto).
+- [Nikto](https://github.com/sullo/nikto/wiki) para encontrar posibles problemas y vulnerabilidades de seguridad como XSS, inyección de SQL, etc. Siga las instrucciones de instalación de [Nikto GitHub](https://github.com/sullo/nikto).
 
 - Compruebe que las herramientas están instaladas y disponibles en el terminal ejecutando los siguientes comandos:
 

@@ -13,7 +13,7 @@ jira: KT-15184
 thumbnail: KT-15184.jpeg
 exl-id: 60c2306f-3cb6-4a6e-9588-5fa71472acf7
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1924'
 ht-degree: 100%
 
@@ -240,7 +240,7 @@ En esta sección se describen los métodos para simular un ataque DoS, que se pu
 >
 >Si ha recibido una alerta que indica un pico en el tráfico, continúe con la sección [Análisis de patrones de tráfico](#analyzing-traffic-patterns).
 
-Para simular un ataque, se pueden usar herramientas como [Apache Benchmark]( https://httpd.apache.org/docs/2.4/programs/ab.html?lang=es), [Apache JMeter](https://jmeter.apache.org/), [Vegeta](https://github.com/tsenart/vegeta) y otras.
+Para simular un ataque, se pueden usar herramientas como [Apache Benchmark](https://httpd.apache.org/docs/2.4/programs/ab.html?lang=es), [Apache JMeter](https://jmeter.apache.org/), [Vegeta](https://github.com/tsenart/vegeta) y otras.
 
 ### Solicitudes Edge
 

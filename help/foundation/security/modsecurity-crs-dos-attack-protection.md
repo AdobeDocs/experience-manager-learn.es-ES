@@ -13,7 +13,7 @@ last-substantial-update: 2023-08-18T00:00:00Z
 exl-id: 9f689bd9-c846-4c3f-ae88-20454112cf9a
 duration: 783
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1171'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 Aprenda a habilitar ModSecurity para proteger el sitio de ataques de denegación de servicio (DoS) mediante el **conjunto de reglas principales (CRS) de OWASP ModSecurity** en Publish Dispatcher de Adobe Experience Manager (AEM).
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3452127?quality=12&learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3422976?quality=12&learn=on)
 
 ## Información general
 
@@ -55,7 +55,7 @@ Este tutorial muestra cómo habilitar y configurar la regla CRS **DOS-PROTECTION
    $ tar -xvzf coreruleset-3.3.5.tar.gz
    ```
 
-1. Cree las carpetas `modsec/crs` dentro de `dispatcher/src/conf.d/` en el código de su proyecto de AEM. Por ejemplo, en la copia local del [proyecto del sitio WKND de AEM]( https://github.com/adobe/aem-guides-wknd).
+1. Cree las carpetas `modsec/crs` dentro de `dispatcher/src/conf.d/` en el código de su proyecto de AEM. Por ejemplo, en la copia local del [proyecto del sitio WKND de AEM](https://github.com/adobe/aem-guides-wknd).
 
    ![Carpeta de CRS dentro del código de proyecto de AEM - ModSecurity](assets/modsecurity-crs/crs-folder-in-aem-dispatcher-module.png){width="200" zoomable="yes"}
 
@@ -240,7 +240,7 @@ $ ./validate.sh <YOUR-AEM-PROJECT-CODE-DIR>/dispatcher/src
 
 ## Implementación
 
-Implemente las configuraciones de Dispatcher validadas localmente mediante la canalización de Cloud Manager [nivel web](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=es#web-tier-config) o [pila completa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=es#full-stack-code). También puede usar el [Entorno de desarrollo rápido]( https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html?lang=es) para obtener un tiempo de respuesta más rápido.
+Implemente las configuraciones de Dispatcher validadas localmente mediante la canalización de Cloud Manager [nivel web](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=es#web-tier-config) o [pila completa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=es#full-stack-code). También puede usar el [Entorno de desarrollo rápido](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html?lang=es) para obtener un tiempo de respuesta más rápido.
 
 ## Verificar
 
@@ -248,7 +248,7 @@ Para verificar la protección del DoS, en este ejemplo, enviemos más de 50 soli
 
 Una técnica para lograr el paso a través de CDN es añadir un parámetro de consulta con un **nuevo valor aleatorio en cada solicitud de página de sitio**.
 
-Para activar un mayor número de solicitudes (50 o más) en un período corto (unos 60 segundos), se puede usar Apache [JMeter](https://jmeter.apache.org/) o [Benchmark o una herramienta AB]( https://httpd.apache.org/docs/2.4/programs/ab.html?lang=es).
+Para activar un mayor número de solicitudes (50 o más) en un período corto (unos 60 segundos), se puede usar Apache [JMeter](https://jmeter.apache.org/) o [Benchmark o una herramienta AB](https://httpd.apache.org/docs/2.4/programs/ab.html?lang=es).
 
 ### Simulación de un ataque DoS mediante un script JMeter
 

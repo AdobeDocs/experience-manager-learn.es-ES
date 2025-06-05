@@ -12,7 +12,7 @@ doc-type: Tutorial
 exl-id: f2cf4063-0b08-4b4f-91e6-70e5a148f931
 duration: 123
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 100%
 
@@ -37,7 +37,7 @@ El tutorial está diseñado para trabajar con **AEM as a Cloud Service**, ademá
 * El [Arquetipo del proyecto Maven de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es)
 * y el [editor de SPA de AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-walkthrough.html?lang=es#content-editing-experience-with-spa)
 * [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
-* [Angular]( https://angular.io/)
+* [Angular](https://angular.io/)
 
 *Calcule entre 1 y 2 horas para completar cada parte del tutorial.*
 
@@ -45,14 +45,14 @@ El tutorial está diseñado para trabajar con **AEM as a Cloud Service**, ademá
 
 Todo el código del tutorial se encuentra en [GitHub](https://github.com/adobe/aem-guides-wknd-spa).
 
-La [base de código más reciente](https://github.com/adobe/aem-guides-wknd-spa/releases) está disponible en forma de paquetes descargables de AEM.
+La [base de código más reciente](https://github.com/adobe/aem-guides-wknd-spa/releases) está disponible como paquetes descargables de AEM.
 
 ## Requisitos previos
 
 Antes de iniciar este tutorial, necesita lo siguiente:
 
 * Comprender los conceptos básicos de HTML, CSS y JavaScript
-* Familiaridad básica con [Angular]( https://angular.io/)
+* Familiaridad básica con [Angular](https://angular.io/)
 * [SDK de AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=es#download-the-aem-as-a-cloud-service-sdk), [AEM 6.5.4+](https://helpx.adobe.com/experience-manager/aem-releases-updates.html?lang=es#65) o [AEM 6.4.8+](https://helpx.adobe.com/experience-manager/aem-releases-updates.html?lang=es#64)
 * [Java](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 * [Apache Maven](https://maven.apache.org/) (3.3.9 o posterior)
@@ -62,13 +62,13 @@ Antes de iniciar este tutorial, necesita lo siguiente:
 
 ## Entorno de desarrollo local {#local-dev-environment}
 
-Se necesita un entorno de desarrollo local para completar este tutorial. Las capturas de pantalla y los vídeos se capturan mediante el SDK de AEM as a Cloud Service, que se ejecuta en un entorno de sistema operativo Mac con [Visual Studio Code](https://code.visualstudio.com/) como IDE. Los comandos y el código deben ser independientes del sistema operativo local, a menos que se indique lo contrario.
+Se necesita un entorno de desarrollo local para completar este tutorial. Las capturas de pantalla y los vídeos se capturan con el SDK de AEM as a Cloud Service, que se ejecuta en el entorno del SO de Mac con [Visual Studio Code](https://code.visualstudio.com/) como IDE. Los comandos y el código deben ser independientes del sistema operativo local, a menos que se indique lo contrario.
 
 >[!NOTE]
 >
 > **¿Es novato en el uso de AEM as a Cloud Service?** Consulte la [siguiente guía para configurar un entorno de desarrollo local con el SDK de AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=es).
 >
-> **¿Primera vez con AEM 6.5?** Consulte la [siguiente guía para configurar un entorno de desarrollo local](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=es).
+> **¿Es nuevo en AEM 6.5?** Consulte la [siguiente guía para configurar un entorno de desarrollo local](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=es).
 
 ## Siguientes pasos {#next-steps}
 

@@ -13,7 +13,7 @@ last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 0eb0054d-0c0a-4ac0-b7b2-fdaceaa6479b
 source-git-commit: 58ae9e503bd278479d78d4df6ffe39356d5ec59b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1100'
 ht-degree: 100%
 
@@ -84,7 +84,7 @@ Antes de acceder a las API de Adobe, es esencial comprender estas construcciones
 
 - **[Adobe Developer Console](https://developer.adobe.com/)**: es el centro para desarrolladores para acceder a las API de Adobe, SDK, eventos en tiempo real, funciones sin servidor y mucho más. Tenga en cuenta que es diferente de _AEM_ Developer Console, que se utiliza para depurar aplicaciones de AEM.
 
-- **[Proyecto de Adobe Developer Console]( https://developer.adobe.com/developer-console/docs/guides/projects/)**: lugar central para administrar las integraciones de la API, eventos y funciones de tiempo de ejecución. Aquí puede configurar las API, establecer la autenticación y generar las credenciales necesarias.
+- **[Proyecto de Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/projects/)**: lugar central para administrar las integraciones de la API, eventos y funciones de tiempo de ejecución. Aquí puede configurar las API, establecer la autenticación y generar las credenciales necesarias.
 
 - **[Perfiles de producto](https://helpx.adobe.com/es/enterprise/using/manage-product-profiles.html?lang=es)**: los perfiles de producto proporcionan un ajuste preestablecido de permisos que le permite controlar el acceso de los usuarios o las aplicaciones a productos de Adobe como AEM, Adobe Target, Adobe Analytics y otros. Todos los productos de Adobe tienen perfiles de producto predefinidos asociados a ellos.
 
