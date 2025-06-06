@@ -84,7 +84,7 @@ Configure las herramientas del panel de control mediante _una de las siguientes 
 Las herramientas del panel de control de **Elasticsearch, Logstash y Kibana (ELK)** proporcionadas por Adobe se pueden usar para analizar los registros de CDN. Estas herramientas incluyen un panel de control que visualiza los patrones de tráfico, lo que facilita establecer los umbrales óptimos para las reglas de filtro de tráfico de límite de frecuencia.
 
 - Clone el repositorio de GitHub [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling).
-- Configure las herramientas siguiendo los pasos que se indican en [Cómo configurar el contenedor de ELK Docker](ttps://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md#how-to-set-up-the-elk-docker-containerhow-to-setup-the-elk-docker-container).
+- Configure las herramientas siguiendo los pasos que se indican en [Cómo configurar el contenedor de ELK Docker](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md#how-to-set-up-the-elk-docker-containerhow-to-setup-the-elk-docker-container).
 - Como parte de la configuración, importe el archivo `traffic-filter-rules-analysis-dashboard.ndjson` para visualizar los datos. El panel de control _Tráfico de CDN_ incluye visualizaciones que muestran el número máximo de solicitudes por cada IP/POP en el Edge y Origen de CDN.
 - Desde la tarjeta _Entornos_ de [Cloud Manager](https://my.cloudmanager.adobe.com/), descargue los registros de CDN del servicio de AEMCS Publish. 
 
