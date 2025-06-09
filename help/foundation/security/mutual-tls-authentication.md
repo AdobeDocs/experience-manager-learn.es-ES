@@ -122,7 +122,7 @@ Para importar el certificado de AEM, siga estos pasos:
 
    ![Clave privada de AEM y certificados importados](assets/mutual-tls-authentication/aem-privatekey-cert-imported.png)
 
-Si el proveedor de API utiliza un certificado de CA autofirmado, importe el certificado recibido en el TrustStore de AEM y siga los pasos desde [aquí](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/call-internal-apis-having-private-certificate.html#httpclient-and-load-aem-truststore-material).
+Si el proveedor de API utiliza un certificado de CA autofirmado, importe el certificado recibido en el TrustStore de AEM y siga los pasos desde [aquí](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/call-internal-apis-having-private-certificate.html?lang=es#httpclient-and-load-aem-truststore-material).
 
 Del mismo modo, si AEM utiliza un certificado de CA autofirmado, solicite al proveedor de API que lo importe.
 

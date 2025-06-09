@@ -55,7 +55,7 @@ Adobe Asset Link proporciona compatibilidad con la vinculación directa de InDes
 
 >[!NOTE]
 >
->Utilice solo su Adobe Creative Cloud Enterprise ID o Federated ID. Asegúrese de [configurar AEM para Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html?lang=es).
+>Utilice solo su Adobe Creative Cloud Enterprise ID o Federated ID. Asegúrese de [configurar AEM para Adobe Asset Link](https://helpx.adobe.com/es/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html?lang=es).
 
 Puede colocar un recurso en el diseño de InDesign mediante una de las siguientes opciones:
 
