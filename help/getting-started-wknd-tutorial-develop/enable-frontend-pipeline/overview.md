@@ -35,10 +35,10 @@ Sin embargo, después de la conversión del proyecto AEM de WKND Sites, los desa
 
 >[!IMPORTANT]
 >
->En términos generales, la canalización front-end generalmente se utiliza con [Creación rápida de sitios de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/overview.html?lang=en), hay un tutorial relacionado [Introducción a AEM Sites - Creación rápida de sitios](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/overview.html) para obtener más información al respecto. En este tutorial y en los vídeos asociados nos encontramos con referencias a él, para asegurarnos de que se destacan las diferencias sutiles y de que haya alguna comparación directa o indirecta para explicar conceptos cruciales.
+>En términos generales, la canalización front-end generalmente se utiliza con [Creación rápida de sitios de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/overview.html?lang=es), hay un tutorial relacionado [Introducción a AEM Sites - Creación rápida de sitios](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/overview.html?lang=es) para obtener más información al respecto. En este tutorial y en los vídeos asociados nos encontramos con referencias a él, para asegurarnos de que se destacan las diferencias sutiles y de que haya alguna comparación directa o indirecta para explicar conceptos cruciales.
 
 
-Un [tutorial de varios pasos](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/overview.html) relacionado explica cómo implementar un sitio de AEM para una marca ficticia de estilo de vida WKND mediante la característica Creación rápida de sitios. También resulta útil revisar el [flujo de trabajo de la temática](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/theming.html) para comprender el funcionamiento de la canalización front-end.
+Un [tutorial de varios pasos](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/overview.html?lang=es) relacionado explica cómo implementar un sitio de AEM para una marca ficticia de estilo de vida WKND mediante la característica Creación rápida de sitios. También resulta útil revisar el [flujo de trabajo de la temática](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/theming.html?lang=es) para comprender el funcionamiento de la canalización front-end.
 
 ## Información general, ventajas y consideraciones para la canalización front-end
 
@@ -51,9 +51,9 @@ Un [tutorial de varios pasos](https://experienceleague.adobe.com/docs/experience
 
 ## Requisitos previos
 
-El paso de implementación de este tutorial tiene lugar en un Cloud Manager de Adobe. Asegúrese de que tiene la función __Administrador de implementación__; consulte Cloud Manager [Definiciones de funciones](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=en#role-definitions).
+El paso de implementación de este tutorial tiene lugar en un Cloud Manager de Adobe. Asegúrese de que tiene la función __Administrador de implementación__; consulte Cloud Manager [Definiciones de funciones](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=es#role-definitions).
 
-Asegúrese de usar el [programa de espacio aislado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html) y el [entorno de desarrollo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html) al completar este tutorial.
+Asegúrese de usar el [programa de espacio aislado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html?lang=es) y el [entorno de desarrollo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=es) al completar este tutorial.
 
 ## Siguientes pasos {#next-steps}
 
