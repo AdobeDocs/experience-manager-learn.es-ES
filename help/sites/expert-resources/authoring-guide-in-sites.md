@@ -1,6 +1,6 @@
 ---
-title: Creación De Una Guía De Creación Activa En Sites
-description: El campeón de AEM, Brett Birschbach, comparte prácticas recomendadas para crear una guía de creación en directo en Adobe Experience Manager Sites
+title: Creación de una guía de creación activa en Sites
+description: El campeón de AEM, Brett Birschbach, comparte prácticas recomendadas para crear una guía de creación en directo en Adobe Experience Manager Sites.
 version: Experience Manager as a Cloud Service, Experience Manager 6.5
 feature: Learn From Your Peers
 topic: Collaboration, Content Management
@@ -10,16 +10,16 @@ doc-type: Technical Video
 duration: 847
 last-substantial-update: 2025-05-28T00:00:00Z
 jira: KT-18192
-source-git-commit: 7e13dda1303e33181bdb6845c8274b0e59ea5505
+exl-id: 8efe69a9-32d2-4b9e-8b8a-c7b7520f968a
+source-git-commit: cbcfd53ac2cde0f0d8a62ea5821d586fd1f36808
 workflow-type: tm+mt
 source-wordcount: '52'
 ht-degree: 0%
 
 ---
 
-
-# Creación De Una Guía De Creación Activa En AEM Sites
+# Creación de una guía de creación activa en AEM Sites
 
 El campeón de AEM, Brett Birschbach, comparte prácticas recomendadas para crear una guía de creación en directo en Adobe Experience Manager (AEM) Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/3463136/?learn=on&enablevpops&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3459572/?learn=on&enablevpops)
