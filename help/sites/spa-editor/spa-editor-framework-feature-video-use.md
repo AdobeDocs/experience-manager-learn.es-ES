@@ -27,7 +27,7 @@ Vídeo de descripción general de la creación de contenido para una aplicación
 
 El Editor de SPA de AEM permite a los autores editar contenido para una aplicación de una sola página o SPA. Los desarrolladores que utilizan el marco de React crean una SPA y luego asignan áreas de la SPA a componentes de AEM, lo que permite a los autores utilizar herramientas de edición de AEM Sites familiares. El siguiente vídeo muestra algunas de las funciones de edición en contexto con el sitio de muestra de SPA de WKND. El proyecto de la SPA de WKND incluye una implementación de React.
 
->[!VIDEO](https://video.tv.adobe.com/v/22229?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326771?quality=12&learn=on&captions=spa)
 
 >[!NOTE]
 >
