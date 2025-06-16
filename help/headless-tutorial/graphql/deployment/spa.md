@@ -11,10 +11,10 @@ thumbnail: KT-10587.jpg
 mini-toc-levels: 2
 exl-id: 3fe175f7-6213-439a-a02c-af3f82b6e3b7
 duration: 136
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 6425188da75f789b0661ec9bfb79624b5704c92b
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 1%
+source-wordcount: '640'
+ht-degree: 5%
 
 ---
 
@@ -53,7 +53,7 @@ Depende de usted cómo se enrute el tráfico de SPA y AEM en el dominio comparti
 
 A continuación se indican las configuraciones de implementación necesarias para las implementaciones de producción de SPA, cuando se alojan en el mismo dominio que AEM.
 
-| SPA se conecta a → | AEM Author | Publicación de AEM | Previsualización de AEM |
+| SPA se conecta a → | AEM Author | AEM Publish | Previsualización de AEM |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [Filtros de Dispatcher](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | Uso compartido de recursos de origen cruzado (CORS) | ✘ | ✘ | ✘ |
@@ -70,7 +70,7 @@ Dado que se accede a AEM y a la SPA desde dominios diferentes, los exploradores 
 
 A continuación se indican las configuraciones de implementación necesarias para las implementaciones de producción de SPA, cuando se alojan en un dominio diferente al de AEM.
 
-| SPA se conecta a → | AEM Author | Publicación de AEM | Previsualización de AEM |
+| SPA se conecta a → | AEM Author | AEM Publish | Previsualización de AEM |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [Filtros de Dispatcher](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | [Uso compartido de recursos de origen cruzado (CORS)](./configurations/cors.md) | ✔ | ✔ | ✔ |
@@ -94,47 +94,37 @@ En este ejemplo, la SPA se implementa en un dominio de Netlify (`https://main--s
 
 Adobe proporciona una aplicación de una sola página de ejemplo codificada en React.
 
-<div class="columns is-multiline">
-<!-- React app -->
-<div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="React app" tabindex="0">
-   <div class="card">
-       <div class="card-image">
-           <figure class="image is-16by9">
-               <a href="../example-apps/react-app.md" title="Aplicación React" tabindex="-1">
-                   <img class="is-bordered-r-small" src="../example-apps/assets/react-app/react-app-card.png" alt="Aplicación React">
-               </a>
-           </figure>
-       </div>
-       <div class="card-content is-padded-small">
-           <div class="content">
-               <p class="headline is-size-6 has-text-weight-bold"><a href="../example-apps/react-app.md" title="Aplicación React">Aplicación React</a></p>
-               <p class="is-size-6">Aplicación de ejemplo de una sola página, escrita en React, que consume contenido de las API de GraphQL sin encabezado de AEM.</p>
-               <a href="../example-apps/react-app.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ver ejemplo</span>
-               </a>
-           </div>
-       </div>
-   </div>
+<!-- CARDS 
+
+* ../example-apps/react-app.md
+
+-->
+<!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
+<div class="columns">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="React App - AEM Headless Example">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="../example-apps/react-app.md" title="Aplicación React: ejemplo de AEM sin encabezado" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="../example-apps/assets/react-app/react-app.png" alt="Aplicación React: ejemplo de AEM sin encabezado"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="../example-apps/react-app.md" target="_blank" rel="referrer" title="Aplicación React: ejemplo de AEM sin encabezado">Aplicación React: ejemplo sin encabezado de AEM</a>
+                    </p>
+                    <p class="is-size-6">Las aplicaciones de ejemplo son una buena manera de explorar las capacidades sin encabezado de Adobe Experience Manager (AEM). Esta aplicación de React muestra cómo consultar contenido mediante las API de GraphQL de AEM utilizando consultas persistentes.</p>
+                </div>
+                <a href="../example-apps/react-app.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
+                </a>
+            </div>
+        </div>
+    </div>
 </div>
-<!-- Next.js app -->
-<div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Next.js app" tabindex="0">
-   <div class="card">
-       <div class="card-image">
-           <figure class="image is-16by9">
-               <a href="../example-apps/next-js.md" title="Aplicación Next.js" tabindex="-1">
-                   <img class="is-bordered-r-small" src="../example-apps/assets/next-js/next-js-card.png" alt="Aplicación Next.js">
-               </a>
-           </figure>
-       </div>
-       <div class="card-content is-padded-small">
-           <div class="content">
-               <p class="headline is-size-6 has-text-weight-bold"><a href="../example-apps/next-js.md" title="Aplicación Next.js">Aplicación Next.js</a></p>
-               <p class="is-size-6">Aplicación de ejemplo de una sola página, escrita en Next.js, que consume contenido de las API de GraphQL sin encabezado de AEM.</p>
-               <a href="../example-apps/next-js.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ver ejemplo</span>
-               </a>
-           </div>
-       </div>
-   </div>
-</div>
-</div>
+<!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
+
+
