@@ -214,7 +214,7 @@ La asignación de Sling afecta a la ejecución de AEM en `http` y `localhost`, d
 
 ## Políticas de seguridad de Intercambio de recursos de origen cruzado
 
-A continuación, configure AEM para proteger el contenido de modo que solo esta SPA pueda acceder al contenido de AEM. Configure [Intercambio de recursos de origen cruzado en AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html).
+A continuación, configure AEM para proteger el contenido de modo que solo esta SPA pueda acceder al contenido de AEM. Configure [Intercambio de recursos de origen cruzado en AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=es).
 
 1. En su IDE, abra el subproyecto Maven `ui.config`
 1. Navegar `src/main/content/jcr_root/apps/wknd-app/osgiconfig/config`

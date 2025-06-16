@@ -31,7 +31,7 @@ ht-degree: 79%
 
 >[!IMPORTANT]
 >
->El editor de SPA [ha quedado obsoleto](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/hybrid/spa-editor-deprecation) para nuevos proyectos. Sigue siendo compatible con Adobe para los proyectos existentes, pero no debe utilizarse para nuevos proyectos. Los editores preferidos para administrar contenido en AEM ahora son:
+>El editor de SPA [ha quedado obsoleto](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developing/hybrid/spa-editor-deprecation) para nuevos proyectos. Sigue siendo compatible con Adobe para los proyectos existentes, pero no debe utilizarse para nuevos proyectos. Los editores preferidos para administrar contenido en AEM ahora son:
 >
 >* [El Editor universal](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring) para editar contenido sin encabezado de forma visual.
->* [El Editor de fragmentos de contenido](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing) para la edición de contenido sin encabezado basada en formularios.
+>* [El Editor de fragmentos de contenido](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing) para la edición de contenido sin encabezado basada en formularios.
