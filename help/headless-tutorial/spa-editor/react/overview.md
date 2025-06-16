@@ -12,8 +12,9 @@ doc-type: Tutorial
 exl-id: 38802296-8988-4300-a04a-fcbbe98ac810
 last-substantial-update: 2022-08-25T00:00:00Z
 duration: 71
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+workflow-type: tm+mt
 source-wordcount: '417'
 ht-degree: 100%
 
@@ -21,7 +22,7 @@ ht-degree: 100%
 
 # Creación de su primer SPA de React en AEM {#overview}
 
-{{edge-delivery-services}}
+{{spa-editor-deprecation}}
 
 Bienvenido a un tutorial en varias partes diseñado para desarrolladores que se inician en la función **Editor SPA** de Adobe Experience Manager (AEM). Este tutorial explica la implementación de una aplicación de React para una marca ficticia de estilo de vida, WKND. La aplicación React se ha desarrollado y diseñado para implementarse con el Editor de SPA de AEM, que asigna los componentes React a los componentes de AEM. La SPA completada, implementada en AEM, se puede crear dinámicamente con las herramientas tradicionales de edición en línea de AEM.
 

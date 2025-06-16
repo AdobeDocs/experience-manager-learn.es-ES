@@ -11,7 +11,8 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 497ce6d7-cd39-4fb3-b5e0-6c60845f7648
 duration: 477
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
 workflow-type: tm+mt
 source-wordcount: '2123'
 ht-degree: 0%
@@ -19,6 +20,8 @@ ht-degree: 0%
 ---
 
 # Asignación de componentes de SPA a componentes de AEM {#map-components}
+
+{{spa-editor-deprecation}}
 
 Obtenga información sobre cómo asignar componentes de React a componentes de Adobe Experience Manager (AEM) con AEM SPA Editor JS SDK. La asignación de componentes permite a los usuarios realizar actualizaciones dinámicas de los componentes de la SPA en el Editor de SPA de AEM, de forma similar a la creación tradicional de AEM.
 
@@ -50,7 +53,7 @@ El concepto básico es asignar un componente de SPA a un componente de AEM. Los 
 
 ## Inspeccionar el componente Texto
 
-El [tipo de archivo del proyecto AEM](https://github.com/adobe/aem-project-archetype) proporciona un componente `Text` asignado al [componente Texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=es) de AEM. Este es un ejemplo de un componente **content**, ya que procesa *content* de AEM.
+El [tipo de archivo del proyecto AEM](https://github.com/adobe/aem-project-archetype) proporciona un componente `Text` asignado al [componente Texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html) de AEM. Este es un ejemplo de un componente **content**, ya que procesa *content* de AEM.
 
 Veamos cómo funciona el componente.
 
@@ -221,7 +224,7 @@ Vamos a inspeccionar más el contenedor de diseño.
 
    El componente **Contenedor de diseño** tiene un `sling:resourceType` de `wcm/foundation/components/responsivegrid` y el Editor de la SPA lo reconoce usando la propiedad `:type`, al igual que los componentes `Text` y `Image`.
 
-   Las mismas capacidades para cambiar el tamaño de un componente mediante [Modo de diseño](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html?lang=es#defining-layouts-layout-mode) están disponibles con el Editor de SPA.
+   Las mismas capacidades para cambiar el tamaño de un componente mediante [Modo de diseño](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html#defining-layouts-layout-mode) están disponibles con el Editor de SPA.
 
 2. Volver a [http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html). Agregue componentes adicionales de **Image** e intente cambiar su tamaño con la opción **Diseño**:
 

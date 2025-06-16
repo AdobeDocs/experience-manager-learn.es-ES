@@ -11,7 +11,8 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 57c8fc16-fed5-4af4-b98b-5c3f0350b240
 duration: 250
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 1%
@@ -19,6 +20,8 @@ ht-degree: 1%
 ---
 
 # Crear proyecto {#spa-editor-project}
+
+{{spa-editor-deprecation}}
 
 Obtenga información sobre cómo generar un proyecto Maven de Adobe Experience Manager (AEM) como punto de partida para una aplicación React integrada con AEM SPA Editor.
 
@@ -64,7 +67,7 @@ Revise las herramientas y las instrucciones necesarias para configurar un [entor
    >
    > Si se usa AEM 6.5.5+, reemplace `aemVersion="cloud"` por `aemVersion="6.5.5"`. Si el objetivo es 6.4.8+, utilice `aemVersion="6.4.8"`.
 
-   Observe la propiedad `frontendModule=react`. Esto indica al tipo de archivo del proyecto de AEM que arranque el proyecto con un [código React base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html?lang=es) inicial que se utilizará con el Editor de SPA de AEM. Propiedades como `appTitle`, `appId`, `artifactId` y `groupId` se utilizan para identificar el proyecto y el propósito.
+   Observe la propiedad `frontendModule=react`. Esto indica al tipo de archivo del proyecto de AEM que arranque el proyecto con un [código React base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html) inicial que se utilizará con el Editor de SPA de AEM. Propiedades como `appTitle`, `appId`, `artifactId` y `groupId` se utilizan para identificar el proyecto y el propósito.
 
    Encontrará una lista completa de las propiedades disponibles para configurar un proyecto [aquí](https://github.com/adobe/aem-project-archetype#available-properties).
 

@@ -1,6 +1,6 @@
 ---
-title: SPA Agregar componentes editables del contenedor de React a un grupo de informes remoto
-description: SPA AEM Obtenga información sobre cómo agregar componentes de contenedor editables a una aplicación remota que permite a los autores de la arrastrar y soltar componentes en ellos.
+title: Añadir componentes editables del contenedor de React a una SPA remota
+description: Aprenda a añadir componentes de contenedor editables a una SPA remota que permitan a los autores de AEM arrastrar y soltar componentes en ellos.
 topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
 role: Developer, Architect
@@ -12,7 +12,8 @@ recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: e5e6204c-d88c-4e79-a7f4-0cfc140bc51c
 duration: 306
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
 workflow-type: tm+mt
 source-wordcount: '1112'
 ht-degree: 1%
@@ -21,18 +22,20 @@ ht-degree: 1%
 
 # Componentes de contenedor editables
 
-SPA [Los componentes fijos](./spa-fixed-component.md) proporcionan cierta flexibilidad para la creación de contenido de la aplicación, pero este enfoque es rígido y requiere que los desarrolladores definan la composición exacta del contenido editable. SPA SPA Para admitir la creación de experiencias excepcionales por parte de los autores, Editor de la admite el uso de componentes de contenedor en la creación de experiencias de los autores. Los componentes de contenedor permiten a los autores arrastrar y soltar los componentes permitidos en el contenedor y crearlos, tal como lo pueden hacer en la creación tradicional de AEM Sites.
+{{spa-editor-deprecation}}
+
+[Los componentes fijos](./spa-fixed-component.md) proporcionan cierta flexibilidad para la creación de contenido de SPA; sin embargo, este enfoque es rígido y requiere que los desarrolladores definan la composición exacta del contenido editable. Para admitir la creación de experiencias excepcionales por parte de los autores, el Editor de SPA admite el uso de componentes de contenedor en la SPA. Los componentes de contenedor permiten a los autores arrastrar y soltar los componentes permitidos en el contenedor y crearlos, tal como lo pueden hacer en la creación tradicional de AEM Sites.
 
 ![Componentes de contenedor editables](./assets/spa-container-component/intro.png)
 
-SPA En este capítulo, agregamos un contenedor editable a la vista de inicio que permite a los autores componer y diseñar experiencias de contenido enriquecido mediante componentes de React editables directamente en la.
+En este capítulo, agregamos un contenedor editable a la vista de inicio que permite a los autores componer y diseñar experiencias de contenido enriquecido mediante componentes de React editables directamente en la SPA.
 
 ## Actualización de la aplicación WKND
 
 Para agregar un componente de contenedor a la vista Inicio:
 
-+ AEM Importar el componente `ResponsiveGrid` del componente editable de React de la
-+ Importar y registrar componentes React editables personalizados (texto e imagen) para utilizarlos en el componente Cuadrícula interactiva
+* Importar el componente `ResponsiveGrid` del componente editable React de AEM
+* Importar y registrar componentes React editables personalizados (texto e imagen) para utilizarlos en el componente Cuadrícula interactiva
 
 ### Uso del componente Cuadrícula interactiva
 
@@ -41,14 +44,14 @@ Para agregar un área editable a la vista Inicio:
 1. Abrir y editar `react-app/src/components/Home.js`
 1. Importar el componente `ResponsiveGrid` desde `@adobe/aem-react-editable-components` y agregarlo al componente `Home`.
 1. Establezca los siguientes atributos en el componente `<ResponsiveGrid...>`
-   + `pagePath = '/content/wknd-app/us/en/home'`
-   + `itemPath = 'root/responsivegrid'`
+   1. `pagePath = '/content/wknd-app/us/en/home'`
+   1. `itemPath = 'root/responsivegrid'`
 
-   AEM Esto indica al componente `ResponsiveGrid` que recupere su contenido del recurso de la:
+   Esto indica al componente `ResponsiveGrid` que recupere su contenido del recurso de AEM:
 
-   + `/content/wknd-app/us/en/home/jcr:content/root/responsivegrid`
+   1. `/content/wknd-app/us/en/home/jcr:content/root/responsivegrid`
 
-   AEM AEM AEM El elemento `itemPath` se asigna al nodo `responsivegrid` definido en la plantilla de `Remote SPA Page` y se crea automáticamente en las nuevas páginas de creadas a partir de la plantilla de publicación `Remote SPA Page`.
+   `itemPath` se asigna al nodo `responsivegrid` definido en la plantilla de AEM `Remote SPA Page` y se crea automáticamente en las nuevas páginas de AEM creadas a partir de la plantilla de AEM `Remote SPA Page`.
 
    Actualice `Home.js` para agregar el componente `<ResponsiveGrid...>`.
 
@@ -80,13 +83,13 @@ El archivo `Home.js` debe tener el siguiente aspecto:
 
 ## Crear componentes editables
 
-SPA Para obtener el máximo efecto de la flexibilidad que ofrecen los contenedores de experiencia de creación en el Editor de. Ya hemos creado un componente Título editable, pero vamos a hacer algunos más que permitan a los autores utilizar componentes Texto e Imagen editables en el componente Cuadrícula interactiva recién agregado.
+Para obtener el efecto completo de la flexibilidad que ofrecen los contenedores de experiencia de creación en el Editor de SPA. Ya hemos creado un componente Título editable, pero vamos a hacer algunos más que permitan a los autores utilizar componentes Texto e Imagen editables en el componente Cuadrícula interactiva recién agregado.
 
 Los nuevos componentes Texto editable y Reacción de imagen se crean utilizando el patrón de definición de componente editable exportado en [componentes fijos editables](./spa-fixed-component.md).
 
 ### Componente de texto editable
 
-1. SPA Abra el proyecto de la en su IDE
+1. Abra el proyecto SPA en su IDE
 1. Crear un componente de React en `src/components/editable/core/Text.js`
 1. Agregar el siguiente código a `Text.js`
 
@@ -151,7 +154,7 @@ La implementación del componente Texto editable debería tener un aspecto simil
 
 ### Componente de imagen
 
-1. SPA Abra el proyecto de la en su IDE
+1. Abra el proyecto SPA en su IDE
 1. Crear un componente de React en `src/components/editable/core/Image.js`
 1. Agregar el siguiente código a `Image.js`
 
@@ -260,9 +263,9 @@ La implementación del componente Imagen editable debe tener un aspecto similar 
 
 ### Importar los componentes editables
 
-SPA AEM Se hace referencia en el documento a los componentes `EditableText` y `EditableImage` React recién creados y se crean instancias de manera dinámica en función del JSON devuelto por los componentes de React. SPA Para asegurarse de que estos componentes están disponibles para los usuarios, cree instrucciones de importación para ellos en `Home.js`
+Se hace referencia en la SPA a los componentes `EditableText` y `EditableImage` React recién creados y se crean instancias de forma dinámica en función del JSON devuelto por AEM. Para asegurarse de que estos componentes están disponibles para la SPA, cree instrucciones de importación para ellos en `Home.js`
 
-1. SPA Abra el proyecto de la en su IDE
+1. Abra el proyecto SPA en su IDE
 1. Abrir el archivo `src/Home.js`
 1. Agregar instrucciones de importación para `AEMText` y `AEMImage`
 
@@ -278,21 +281,21 @@ El resultado debería ser similar al siguiente:
 
 ![Home.js](./assets/spa-container-component/home-js-imports.png)
 
-SPA Si se agregan estas importaciones _no_, el código `EditableText` y `EditableImage` no se invocará por parte de los usuarios, y por lo tanto, los componentes no se asignan a los tipos de recursos proporcionados.
+Si se agregan estas importaciones _no_, la SPA no invocará el código `EditableText` y `EditableImage` y, por lo tanto, los componentes no están asignados a los tipos de recursos proporcionados.
 
-## AEM Configuración del contenedor en la
+## Configuración del contenedor en AEM
 
-AEM Los componentes de contenedor de utilizan directivas para dictar los componentes permitidos. SPA AEM SPA SPA Se trata de una configuración esencial al utilizar el Editor de componentes, ya que solo los componentes de la aplicación que tienen asignados componentes de la interfaz de usuario de la aplicación de componentes se pueden procesar mediante el Editor de componentes de la. SPA Asegúrese de que solo se permiten los componentes para los que hemos proporcionado implementaciones de la:
+Los componentes de contenedor de AEM utilizan directivas para dictar los componentes permitidos. Esta configuración es crítica al utilizar el Editor de SPA, ya que solo los componentes de AEM que tienen equivalentes de componentes de SPA asignados se pueden procesar mediante la SPA. Asegúrese de que solo se permiten los componentes para los que hemos proporcionado implementaciones de SPA:
 
-+ `EditableTitle` se asignó a `wknd-app/components/title`
-+ `EditableText` se asignó a `wknd-app/components/text`
-+ `EditableImage` se asignó a `wknd-app/components/image`
+* `EditableTitle` se asignó a `wknd-app/components/title`
+* `EditableText` se asignó a `wknd-app/components/text`
+* `EditableImage` se asignó a `wknd-app/components/image`
 
-SPA Para configurar el contenedor de cuadrícula adaptable de la plantilla de página de remoto:
+Para configurar el contenedor de cuadrícula adaptable de la plantilla de la SPA remota:
 
-1. AEM Iniciar sesión en el autor de la
+1. Iniciar sesión en AEM Author
 1. Vaya a __Herramientas > General > Plantillas > Aplicación WKND__
-1. SPA Editar __Página de informes__
+1. Editar __página de SPA de informe__
 
    ![Políticas de cuadrícula adaptable](./assets/spa-container-component/templates-remote-spa-page.png)
 
@@ -304,28 +307,28 @@ SPA Para configurar el contenedor de cuadrícula adaptable de la plantilla de p�
 
 1. A la derecha, en la ficha __Componentes permitidos__, expanda __WKND APP - CONTENT__
 1. Asegúrese de que solo están seleccionadas las siguientes opciones:
-   + Imagen
-   + Texto
-   + Título
+   1. Imagen
+   1. Texto
+   1. Título
 
-   SPA ![Página de acceso remoto](./assets/spa-container-component/templates-allowed-components.png)
+   ![Página de SPA remota](./assets/spa-container-component/templates-allowed-components.png)
 
 1. Pulse __Listo__
 
-## AEM Creación del contenedor en la
+## Creación del contenedor en AEM
 
-SPA AEM Después de actualizar el elemento para incrustar el elemento `<ResponsiveGrid...>`, los contenedores para tres componentes editables de React (`EditableTitle`, `EditableText` y `EditableImage`), y de actualizar el elemento con una directiva de plantilla coincidente, se puede empezar a crear contenido en el componente contenedor, lo cual se actualiza de forma independiente.
+Después de actualizar el SPA para incrustar `<ResponsiveGrid...>`, los contenedores de tres componentes React editables (`EditableTitle`, `EditableText` y `EditableImage`) y de actualizar AEM con una directiva de plantilla coincidente, se puede empezar a crear contenido en el componente contenedor.
 
-1. AEM Iniciar sesión en el autor de la
+1. Iniciar sesión en AEM Author
 1. Vaya a __Sitios > Aplicación WKND__
 1. Pulse __Inicio__ y seleccione __Editar__ en la barra de acciones superior
-   + AEM Se muestra un componente de texto &quot;Hello World&quot;, ya que este se añadió automáticamente al generar el proyecto a partir del arquetipo de proyecto de la lista de tipos de archivo
+   1. Se muestra un componente de texto &quot;Hello World&quot;, ya que este se agregó automáticamente al generar el proyecto a partir del arquetipo de proyecto de AEM
 1. Seleccione __Editar__ en el selector de modo en la parte superior derecha del Editor de páginas
 1. Busque el área editable __Contenedor de diseño__ debajo del título
 1. Abra la __barra lateral del editor de páginas__ y seleccione la __vista Componentes__
 1. Arrastre los siguientes componentes al __contenedor de diseño__
-   + Imagen
-   + Título
+   1. Imagen
+   1. Título
 1. Arrastre los componentes para reordenarlos al siguiente orden:
    1. Título
    1. Imagen
@@ -333,8 +336,8 @@ SPA AEM Después de actualizar el elemento para incrustar el elemento `<Responsi
 1. __Autor__ del componente __Título__
    1. Pulse el componente Título y pulse el icono __llave inglesa__ para __editar__ el componente Título
    1. Añada el siguiente texto:
-      + Título: __Se acerca el verano, aprovechemos al máximo__
-      + Tipo: __H1__
+      1. Título: __Se acerca el verano, aprovechemos al máximo__
+      1. Tipo: __H1__
    1. Pulse __Listo__
 1. __Autor__ del componente __Imagen__
    1. Arrastre una imagen desde la barra lateral (después de cambiar a la vista de Assets) en el componente Imagen
@@ -344,38 +347,38 @@ SPA AEM Después de actualizar el elemento para incrustar el elemento `<Responsi
 1. __Autor__ del componente __Texto__
    1. Edite el componente Texto tocando el componente Texto y pulsando el icono __wrench__
    1. Añada el siguiente texto:
-      + _Ahora mismo, puedes obtener un 15% de descuento en todas las aventuras de una semana y un 20% de descuento en todas las aventuras de dos semanas o más. Al finalizar la compra, agrega el código de campaña SUMMERISCOMING para obtener tus descuentos._
+      1. _Ahora mismo, puedes obtener un 15% de descuento en todas las aventuras de una semana y un 20% de descuento en todas las aventuras de dos semanas o más. Al finalizar la compra, agrega el código de campaña SUMMERISCOMING para obtener tus descuentos._
    1. Pulse __Listo__
 
 1. Los componentes ya se han creado, pero se apilan verticalmente.
 
    ![Componentes creados](./assets/spa-container-component/authored-components.png)
 
-AEM Utilice el modo Diseño de la para permitirnos ajustar el tamaño y el diseño de los componentes.
+   Utilice el modo Diseño de AEM para permitirnos ajustar el tamaño y el diseño de los componentes.
 
 1. Cambie a __Modo de diseño__ con el selector de modo en la esquina superior derecha
 1. __Cambiar el tamaño__ de los componentes Imagen y Texto, de manera que estén uno al lado del otro
-   + El componente __Image__ debe tener __8 columnas de ancho__
-   + El componente __Texto__ debe tener __3 columnas de ancho__
+   1. El componente __Image__ debe tener __8 columnas de ancho__
+   1. El componente __Texto__ debe tener __3 columnas de ancho__
 
    ![Componentes de diseño](./assets/spa-container-component/layout-components.png)
 
-1. AEM __Vista previa__ de sus cambios en el Editor de páginas de la página de la
+1. __Vista previa__ de sus cambios en el editor de páginas de AEM
 1. Actualice la aplicación WKND que se ejecuta localmente en [http://localhost:3000](http://localhost:3000) para ver los cambios creados.
 
-   SPA ![Componente de contenedor en el código de tiempo ](./assets/spa-container-component/localhost-final.png)
+   ![Componente de contenedor en la SPA](./assets/spa-container-component/localhost-final.png)
 
 
 ## Enhorabuena.
 
 Ha agregado un componente contenedor que permite a los autores agregar componentes editables a la aplicación WKND. Ahora ya sabe cómo:
 
-+ AEM SPA Usar el componente `ResponsiveGrid` del componente editable de React de la
-+ SPA Cree y registre componentes React editables (texto e imagen) para usarlos en la lista de componentes a través del componente de contenedor de
-+ SPA SPA Configure la plantilla Página de administración remota de para permitir los componentes habilitados para la creación de informes
-+ Agregar componentes editables al componente contenedor
-+ SPA Componentes de autor y diseño en el editor de
+* Usar el componente `ResponsiveGrid` del componente editable React de AEM en la SPA
+* Crear y registrar componentes React editables (texto e imagen) para utilizarlos en la SPA a través del componente contenedor
+* Configure la plantilla Página de la SPA remota para permitir los componentes con SPA habilitada
+* Agregar componentes editables al componente contenedor
+* Creación y componentes de diseño en el Editor de SPA
 
 ## Siguientes pasos
 
-SPA El siguiente paso usa esta misma técnica para [agregar un componente editable a una ruta de detalles de aventura](./spa-dynamic-routes.md) en el.
+El siguiente paso usa esta misma técnica para [agregar un componente editable a una ruta de detalles de aventura](./spa-dynamic-routes.md) en la SPA.

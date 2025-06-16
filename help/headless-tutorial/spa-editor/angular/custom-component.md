@@ -11,7 +11,8 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 6c1c7f2b-f574-458c-b744-b92419c46f23
 duration: 308
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
 workflow-type: tm+mt
 source-wordcount: '1321'
 ht-degree: 0%
@@ -19,6 +20,8 @@ ht-degree: 0%
 ---
 
 # Crear un componente personalizado {#custom-component}
+
+{{spa-editor-deprecation}}
 
 Obtenga información sobre cómo crear un componente personalizado para utilizarlo con el Editor de SPA de AEM. Aprenda a desarrollar cuadros de diálogo de autor y modelos Sling para ampliar el modelo JSON y rellenar un componente personalizado.
 
@@ -74,7 +77,7 @@ Un componente de AEM se define como un nodo y propiedades. En el proyecto, estos
 
 >[!NOTE]
 >
-> Un repaso rápido de los [conceptos básicos de los componentes de AEM puede ser útil](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html?lang=es).
+> Un repaso rápido de los [conceptos básicos de los componentes de AEM puede ser útil](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html).
 
 1. Abra la carpeta `ui.apps` en el IDE que desee.
 2. Vaya a `ui.apps/src/main/content/jcr_root/apps/wknd-spa-angular/components` y cree una carpeta llamada `custom-component`.
@@ -160,7 +163,7 @@ Un componente de AEM se define como un nodo y propiedades. En el proyecto, estos
 
 ## Creación del modelo Sling
 
-Los modelos Sling son objetos Java™ &quot;POJO&quot; (Plain Old Java™ Objects) impulsados por anotaciones que facilitan la asignación de datos de las variables JCR a Java™. [Los modelos Sling](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html?lang=es#sling-models) suelen funcionar para encapsular lógica empresarial compleja del lado del servidor para componentes de AEM.
+Los modelos Sling son objetos Java™ &quot;POJO&quot; (Plain Old Java™ Objects) impulsados por anotaciones que facilitan la asignación de datos de las variables JCR a Java™. [Los modelos Sling](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html#sling-models) suelen funcionar para encapsular lógica empresarial compleja del lado del servidor para componentes de AEM.
 
 En el contexto del editor de SPA, los modelos Sling exponen el contenido de un componente a través del modelo JSON mediante una función que utiliza [Exportador de modelos Sling](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=es).
 

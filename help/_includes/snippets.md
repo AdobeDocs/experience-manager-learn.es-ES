@@ -1,8 +1,8 @@
 ---
-source-git-commit: dbf63f30ccfd06e4f4d7883c2f7bc4ac78245364
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
 workflow-type: tm+mt
-source-wordcount: '108'
-ht-degree: 69%
+source-wordcount: '168'
+ht-degree: 79%
 
 ---
 # Fragmentos
@@ -19,10 +19,19 @@ ht-degree: 69%
 
 [!BADGE Para publicar desde AEM Sites usando Edge Delivery Services, haga clic aquí.]{type=Positive url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=es" tooltip="Publicar desde AEM en Edge Delivery Services"}
 
-## AEM tradicional {#traditional-aem}
+## AEM tradicional{#traditional-aem}
 
 >[!TIP]
 >
 >**¿Ha considerado Edge Delivery Services para AEM?**
 >
 >Puede seguir utilizando los métodos descritos en este documento para proyectos existentes. Sin embargo, para nuevos proyectos, Adobe recomienda aprovechar [Edge Delivery Services.](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/edge-delivery/overview)
+
+## Finalización del soporte para el editor de SPA{#spa-editor-deprecation}
+
+>[!IMPORTANT]
+>
+>El editor de SPA [ha quedado obsoleto](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/hybrid/spa-editor-deprecation) para nuevos proyectos. Sigue siendo compatible con Adobe para los proyectos existentes, pero no debe utilizarse para nuevos proyectos. Los editores preferidos para administrar contenido en AEM ahora son:
+>
+>* [El Editor universal](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring) para editar contenido sin encabezado de forma visual.
+>* [El Editor de fragmentos de contenido](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing) para la edición de contenido sin encabezado basada en formularios.

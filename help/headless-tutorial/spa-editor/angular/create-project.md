@@ -11,7 +11,8 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 49fcd603-ab1a-4f1e-ae1f-49d3ff373439
 duration: 252
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
 workflow-type: tm+mt
 source-wordcount: '1002'
 ht-degree: 1%
@@ -19,6 +20,8 @@ ht-degree: 1%
 ---
 
 # Proyecto de SPA Editor {#create-project}
+
+{{spa-editor-deprecation}}
 
 Aprenda a utilizar un proyecto Maven de Adobe Experience Manager (AEM) como punto de partida para una aplicación de Angular integrada con AEM SPA Editor.
 
@@ -87,7 +90,7 @@ Existen varias opciones para crear un proyecto de módulo múltiple de Maven par
 
    >[!NOTE]
    >
-   > Observe la propiedad `frontendModule=angular`. Esto indica al tipo de archivo del proyecto de AEM que arranque el proyecto con un [código base de Angular](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html?lang=es) inicial que se utilizará con el editor de SPA de AEM.
+   > Observe la propiedad `frontendModule=angular`. Esto indica al tipo de archivo del proyecto de AEM que arranque el proyecto con un [código base de Angular](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html) inicial que se utilizará con el editor de SPA de AEM.
 
 ## Creación del proyecto
 

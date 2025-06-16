@@ -11,7 +11,8 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 197a0c1f-4d0a-4b99-ba89-cdff2e6ac4ec
 duration: 669
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
 workflow-type: tm+mt
 source-wordcount: '2531'
 ht-degree: 0%
@@ -19,6 +20,8 @@ ht-degree: 0%
 ---
 
 # Agregar navegación y enrutamiento {#navigation-routing}
+
+{{spa-editor-deprecation}}
 
 Descubra cómo se admiten varias vistas en la SPA mediante páginas de AEM y el Editor de SPA de SDK. La navegación dinámica se implementa mediante rutas de Angular y se añade a un componente de encabezado existente.
 
@@ -30,7 +33,7 @@ Descubra cómo se admiten varias vistas en la SPA mediante páginas de AEM y el 
 
 ## Qué va a generar
 
-Este capítulo agrega un menú de navegación a un componente `Header` existente. El menú de navegación está gobernado por la jerarquía de páginas de AEM y usa el modelo JSON proporcionado por el [componente principal de navegación](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html?lang=es).
+Este capítulo agrega un menú de navegación a un componente `Header` existente. El menú de navegación está gobernado por la jerarquía de páginas de AEM y usa el modelo JSON proporcionado por el [componente principal de navegación](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html).
 
 ![Navegación implementada](assets/navigation-routing/final-navigation-implemented.gif)
 
@@ -113,7 +116,7 @@ En capítulos anteriores, el componente `HeaderComponent` se agregó como un com
        componentGroup="WKND SPA Angular - Structure"/>
    ```
 
-   El componente `Header` de AEM heredará toda la funcionalidad del [componente principal de navegación](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html?lang=es) a través de la propiedad `sling:resourceSuperType`.
+   El componente `Header` de AEM heredará toda la funcionalidad del [componente principal de navegación](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html) a través de la propiedad `sling:resourceSuperType`.
 
 ## Añadir el componente HeaderComponent a la plantilla de la SPA {#add-header-template}
 

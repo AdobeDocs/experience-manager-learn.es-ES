@@ -11,7 +11,8 @@ level: Beginner
 doc-type: Tutorial
 exl-id: e9386885-86de-4e43-933c-2f0a2c04a2f2
 duration: 536
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
 workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 0%
@@ -19,6 +20,8 @@ ht-degree: 0%
 ---
 
 # Integración de una SPA {#integrate-spa}
+
+{{spa-editor-deprecation}}
 
 Comprenda cómo el código fuente de una aplicación de una sola página (SPA) escrita en Angular se puede integrar en un proyecto de Adobe Experience Manager (AEM). Aprenda a utilizar herramientas front-end modernas, como un servidor de desarrollo de Webpack, para desarrollar rápidamente la SPA con la API del modelo JSON de AEM.
 
@@ -74,13 +77,13 @@ El módulo `ui.frontend` es un proyecto [webpack](https://webpack.js.org/) que c
 
 *Representación de alto nivel de la integración de SPA.*
 
-Encontrará información adicional sobre la versión del front-end [aquí](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html?lang=es).
+Encontrará información adicional sobre la versión del front-end [aquí](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html).
 
 ## Inspeccione la integración de SPA {#inspect-spa-integration}
 
-A continuación, inspeccione el módulo `ui.frontend` para comprender la SPA que ha generado automáticamente el [arquetipo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html?lang=es).
+A continuación, inspeccione el módulo `ui.frontend` para comprender la SPA que ha generado automáticamente el [arquetipo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html).
 
-1. En el IDE de su elección, abra el proyecto de AEM para la SPA de WKND. Este tutorial usará el [IDE de código de Visual Studio](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=es#microsoft-visual-studio-code).
+1. En el IDE de su elección, abra el proyecto de AEM para la SPA de WKND. Este tutorial usará el [IDE de código de Visual Studio](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
 
    ![VSCode - Proyecto de la SPA de AEM WKND](./assets/integrate-spa/vscode-ide-openproject.png)
 
@@ -109,7 +112,7 @@ A continuación, inspeccione el módulo `ui.frontend` para comprender la SPA que
    "@adobe/cq-spa-page-model-manager": "^1.1.3",
    ```
 
-   Los módulos anteriores conforman [AEM SPA Editor JS SDK](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-blueprint.html?lang=es) y proporcionan la funcionalidad para que sea posible asignar componentes SPA a componentes AEM.
+   Los módulos anteriores conforman [AEM SPA Editor JS SDK](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-blueprint.html) y proporcionan la funcionalidad para que sea posible asignar componentes SPA a componentes AEM.
 
 5. En el archivo `package.json` se han definido varios `scripts`:
 
@@ -129,7 +132,7 @@ A continuación, inspeccione el módulo `ui.frontend` para comprender la SPA que
 
    `build`: compila la aplicación de Angular para la distribución de producción. La adición de `&& clientlib` es responsable de copiar el SPA compilado en el módulo `ui.apps` como una biblioteca del lado del cliente durante una compilación. El módulo npm [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator) se usa para facilitar esto.
 
-   Encontrará más detalles sobre los scripts disponibles [aquí](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html?lang=es).
+   Encontrará más detalles sobre los scripts disponibles [aquí](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html).
 
 6. Inspeccione el archivo `ui.frontend/clientlib.config.js`. [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator#clientlibconfigjs) utiliza este archivo de configuración para determinar cómo generar la biblioteca de cliente.
 

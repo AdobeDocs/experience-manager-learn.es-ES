@@ -11,7 +11,8 @@ level: Beginner
 doc-type: Tutorial
 exl-id: f2cf4063-0b08-4b4f-91e6-70e5a148f931
 duration: 123
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 100%
@@ -20,7 +21,7 @@ ht-degree: 100%
 
 # Creación de su primera SPA de Angular en AEM {#introduction}
 
-{{edge-delivery-services}}
+{{spa-editor-deprecation}}
 
 Bienvenido a un tutorial en varias partes diseñado para desarrolladores que se inician en la función **Editor SPA** de Adobe Experience Manager (AEM). Este tutorial explica la implementación de la aplicación Angular para la marca ficticia de estilo de vida, WKND. La aplicación de Angular se ha desarrollado y diseñado para implementarse con el editor de SPA de AEM, que asigna componentes de Angular a componentes de AEM. La SPA completada, implementada en AEM, se puede crear dinámicamente con las herramientas tradicionales de edición en línea de AEM.
 
@@ -53,7 +54,7 @@ Antes de iniciar este tutorial, necesita lo siguiente:
 
 * Comprender los conceptos básicos de HTML, CSS y JavaScript
 * Familiaridad básica con [Angular](https://angular.io/)
-* [SDK de AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=es#download-the-aem-as-a-cloud-service-sdk), [AEM 6.5.4+](https://helpx.adobe.com/es/experience-manager/aem-releases-updates.html?lang=es#65) o [AEM 6.4.8+](https://helpx.adobe.com/es/experience-manager/aem-releases-updates.html?lang=es#64)
+* [SDK de AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=es#download-the-aem-as-a-cloud-service-sdk), [AEM 6.5.4+](https://helpx.adobe.com/experience-manager/aem-releases-updates.html?lang=es#65) o [AEM 6.4.8+](https://helpx.adobe.com/experience-manager/aem-releases-updates.html?lang=es#64)
 * [Java](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 * [Apache Maven](https://maven.apache.org/) (3.3.9 o posterior)
 * [Node.js](https://nodejs.org/es/) y [npm](https://www.npmjs.com/)

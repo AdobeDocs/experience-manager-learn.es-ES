@@ -1,6 +1,6 @@
 ---
-title: AEM SPA SPA Configuración de la para el Editor de y el Control remoto
-description: AEM AEM SPA SPA Se requiere un proyecto de para configurar la compatibilidad con los requisitos de configuración y contenido a fin de permitir que el Editor de la cree un elemento remoto de la configuración de la aplicación de la.
+title: Configuración de AEM para el Editor de SPA y SPA remota
+description: Se requiere un proyecto de AEM para configurar los requisitos de configuración y contenido compatibles con la instalación a fin de permitir que el Editor de SPA de AEM cree un SPA remoto.
 topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
 role: Developer, Architect
@@ -12,23 +12,26 @@ recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: 0bdb93c9-5070-483c-a34c-f2b348bfe5ae
 duration: 297
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
 workflow-type: tm+mt
-source-wordcount: '1230'
+source-wordcount: '1229'
 ht-degree: 0%
 
 ---
 
-# AEM SPA Configuración de la para el editor de segmentos
+# Configuración de AEM para el Editor de SPA
 
-SPA AEM AEM Aunque la base de código de la se administra fuera de la base de datos, se requiere un proyecto de la para configurar los requisitos de configuración y contenido de soporte. AEM En este capítulo se explica la creación de un proyecto de que contiene las configuraciones necesarias:
+{{spa-editor-deprecation}}
 
-+ AEM Proxies de componentes principales de WCM
-+ AEM SPA Proxy de página de remoto
-+ AEM SPA Plantillas de página de remoto
-+ SPA AEM Páginas de remotas de línea base
-+ SPA AEM Subproyecto para definir la a las asignaciones de URL de la
-+ Carpetas de configuración de OSGi
+Aunque el código base de la SPA se administra fuera de AEM, se necesita un proyecto de AEM para configurar los requisitos de configuración y contenido de soporte. Este capítulo explica la creación de un proyecto de AEM que contiene las configuraciones necesarias:
+
+* Proxy de componentes principales de AEM WCM
+* Proxy de página de SPA remota de AEM
+* Plantillas de página de SPA remota de AEM
+* Páginas de AEM de la SPA remota de línea base
+* Subproyecto para definir asignaciones de SPA a URL de AEM
+* Carpetas de configuración de OSGi
 
 ## Descargar el proyecto base desde GitHub
 
@@ -40,11 +43,11 @@ $ git clone https://github.com/adobe/aem-guides-wknd-graphql.git
 $ cd remote-spa-tutorial
 ```
 
-## AEM Creación de un proyecto de
+## Creación de un proyecto de AEM
 
-AEM Cree un proyecto de en el que se administren las configuraciones y el contenido de línea de base. Este proyecto se generará dentro de la carpeta `remote-spa-tutorial` del proyecto `aem-guides-wknd-graphql` clonado.
+Cree un proyecto de AEM en el que se administren configuraciones y contenido de línea de base. Este proyecto se generará dentro de la carpeta `remote-spa-tutorial` del proyecto `aem-guides-wknd-graphql` clonado.
 
-AEM _Use siempre la última versión del [tipo de archivo de la](https://github.com/adobe/aem-project-archetype)._
+_Utilice siempre la última versión del [tipo de archivo de AEM](https://github.com/adobe/aem-project-archetype)._
 
 ```
 $ cd ~/Code/aem-guides-wknd-graphql/remote-spa-tutorial
@@ -60,26 +63,26 @@ $ mvn -B archetype:generate \
 $ mv ~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/wknd-app ~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/com.adobe.aem.guides.wknd-app
 ```
 
-AEM AEM SPA _El último comando simplemente cambia el nombre de la carpeta de proyecto de la para que quede claro que se trata del proyecto de la lista de proyectos, y no se debe confundir con el proyecto de la lista de proyectos de la lista de proyectos de la lista de proyectos de la lista de proyectos de la lista de comandos de la lista de proyectos remotos__
+_El último comando simplemente cambia el nombre de la carpeta del proyecto de AEM para que esté claro que es el proyecto de AEM y no se debe confundir con el SPA remoto**
 
-SPA Mientras se especifica `frontendModule="react"`, el proyecto `ui.frontend` no se usa para el caso de uso de la remota. SPA AEM AEM La se desarrolla y administra de forma externa para que se pueda usar en la forma de un solo como API de contenido. AEM SPA Se requiere el indicador `frontendModule="react"` para el proyecto, que incluye las dependencias `spa-project` de Java™ y configura las plantillas de página de remoto.
+Mientras se especifica `frontendModule="react"`, el proyecto `ui.frontend` no se usa para el caso de uso de SPA remoto. El SPA se desarrolla y administra de forma externa a AEM y solo utiliza AEM como API de contenido. Se requiere el indicador `frontendModule="react"` para el proyecto, que incluye las dependencias de AEM Java™ `spa-project` y configura las plantillas de página de SPA remotas.
 
-AEM AEM SPA El tipo de archivo del proyecto de genera los siguientes elementos que se utilizan para configurar la integración de los proyectos de con el.
+El tipo de archivo del proyecto de AEM genera los siguientes elementos que se utilizan para configurar AEM para su integración con la SPA.
 
-+ AEM __Proxies de componentes principales de WCM de__ en `ui.apps/src/.../apps/wknd-app/components`
-+ AEM SPA __proxy de página remota__ en `ui.apps/src/.../apps/wknd-app/components/remotepage`
-+ AEM __Plantillas de página de__ a las `ui.content/src/.../conf/wknd-app/settings/wcm/templates`
-+ __Subproyecto para definir asignaciones de contenido__ en `ui.content/src/...`
-+ SPA AEM __Páginas de remoto de línea base__ a las `ui.content/src/.../content/wknd-app`
-+ __carpetas de configuración de OSGi__ en `ui.config/src/.../apps/wknd-app/osgiconfig`
+* **Proxies de componentes principales de AEM WCM** en `ui.apps/src/.../apps/wknd-app/components`
+* **Proxy de página remota SPA de AEM** en `ui.apps/src/.../apps/wknd-app/components/remotepage`
+* **Plantillas de página AEM** a las `ui.content/src/.../conf/wknd-app/settings/wcm/templates`
+* **Subproyecto para definir asignaciones de contenido** en `ui.content/src/...`
+* **Páginas de AEM de SPA remota de línea de base** a las `ui.content/src/.../content/wknd-app`
+* **carpetas de configuración de OSGi** en `ui.config/src/.../apps/wknd-app/osgiconfig`
 
-AEM SPA SPA Con el proyecto de base de datos generado, algunos ajustes garantizan la compatibilidad del Editor de la con el Editor de elementos de la interfaz de usuario de la interfaz de usuario remota
+Con el proyecto base de AEM generado, algunos ajustes garantizan la compatibilidad del Editor SPA con las SPA remotas.
 
 ## Eliminar proyecto ui.frontend
 
-SPA SPA AEM Dado que la es un proyecto remoto, asuma que se desarrolla y administra fuera del proyecto de la. Para evitar conflictos, quite la implementación del proyecto `ui.frontend`. SPA SPA SPA AEM SPA Si no se quita el proyecto `ui.frontend`, se cargarán al mismo tiempo en el Editor de recursos de la comunidad dos, el valor predeterminado proporcionado en el proyecto `ui.frontend` y el valor de la propiedad remota, en el Editor de recursos de la comunidad de la comunidad de.
+Dado que la SPA es una SPA remota, supongamos que se desarrolla y administra fuera del proyecto de AEM. Para evitar conflictos, quite la implementación del proyecto `ui.frontend`. Si no se quita el proyecto `ui.frontend`, dos SPA, el SPA predeterminado proporcionado en el proyecto `ui.frontend` y el SPA remoto, se cargarán al mismo tiempo en el Editor de SPA de AEM.
 
-1. AEM Abra el proyecto de la (`~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/com.adobe.aem.guides.wknd-app`) en su IDE
+1. Abra el proyecto de AEM (`~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/com.adobe.aem.guides.wknd-app`) en su IDE
 1. Abrir la raíz `pom.xml`
 1. Comentar `<module>ui.frontend</module` fuera de la lista `<modules>`
 
@@ -126,11 +129,11 @@ SPA SPA AEM Dado que la es un proyecto remoto, asuma que se desarrolla y adminis
 
    ![Quitar la dependencia ui.frontend de ui.apps](./assets/aem-project/uifrontend-uiapps-pom.png)
 
-AEM Si el proyecto de cliente se creó antes de estos cambios, elimine manualmente la biblioteca de cliente generada por `ui.frontend` del proyecto `ui.apps` en `ui.apps/src/main/content/jcr_root/apps/wknd-app/clientlibs/clientlib-react`.
+Si el proyecto de AEM se creó antes de estos cambios, elimine manualmente la biblioteca de cliente generada por `ui.frontend` del proyecto `ui.apps` en `ui.apps/src/main/content/jcr_root/apps/wknd-app/clientlibs/clientlib-react`.
 
-## AEM Asignación de contenido de
+## Asignación de contenido de AEM
 
-AEM SPA SPA SPA AEM Para cargar de forma remota la remota en el Editor de, se deben establecer asignaciones entre las rutas de la y las Páginas de la página utilizadas para abrir y crear contenido.
+Para que AEM cargue el SPA remoto en el Editor de SPA, se deben establecer asignaciones entre las rutas del SPA y las páginas de AEM utilizadas para abrir y crear contenido.
 
 La importancia de esta configuración se analiza más adelante.
 
@@ -182,7 +185,7 @@ La asignación se puede realizar con [la asignación de Sling](https://sling.apa
        sling:internalRedirect="/content/wknd-app/us/en/home/adventure/$1"/>
    ```
 
-1. AEM Agregue los nodos de asignación a `ui.content/src/main/content/META-INF/vault/filter.xml` para que se incluyan en el paquete de la.
+1. Agregue los nodos de asignación a `ui.content/src/main/content/META-INF/vault/filter.xml` para que se incluyan en el paquete de AEM.
 
    ```
    <?xml version="1.0" encoding="UTF-8"?>
@@ -205,13 +208,13 @@ El archivo `filter.xml` debe tener el siguiente aspecto:
 
 ![Asignación de Sling](./assets/aem-project/sling-mapping-filter.png)
 
-AEM Ahora, cuando se implementa el proyecto de la, estas configuraciones se incluyen automáticamente.
+Ahora, cuando se implementa el proyecto de AEM, estas configuraciones se incluyen automáticamente.
 
-AEM Los efectos de la asignación de Sling se ejecutan en `http` y `localhost`, por lo que solo admite el desarrollo local. Al implementar en AEM as a Cloud Service, se deben agregar asignaciones de Sling similares para ese destino `https` y los dominios de AEM as a Cloud Service correspondientes. Para obtener más información, consulte la [Documentación de asignación de Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html).
+La asignación de Sling afecta a la ejecución de AEM en `http` y `localhost`, de modo que solo admite el desarrollo local. Al implementar en AEM as a Cloud Service, se deben agregar asignaciones de Sling similares para ese destino `https` y los dominios de AEM as a Cloud Service correspondientes. Para obtener más información, consulte la [Documentación de asignación de Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html).
 
 ## Políticas de seguridad de Intercambio de recursos de origen cruzado
 
-AEM SPA AEM A continuación, configure la protección del contenido para que solo este pueda acceder al contenido de la de forma que solo pueda acceder a él. AEM Configurar el uso compartido de recursos de origen cruzado de [en el recurso de origen cruzado de &lbrace;1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=es)
+A continuación, configure AEM para proteger el contenido de modo que solo esta SPA pueda acceder al contenido de AEM. Configure [Intercambio de recursos de origen cruzado en AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html).
 
 1. En su IDE, abra el subproyecto Maven `ui.config`
 1. Navegar `src/main/content/jcr_root/apps/wknd-app/osgiconfig/config`
@@ -254,24 +257,24 @@ AEM SPA AEM A continuación, configure la protección del contenido para que sol
 
 El archivo `com.adobe.granite.cors.impl.CORSPolicyImpl~wknd-app_remote-spa.cfg.json` debe tener el siguiente aspecto:
 
-SPA ![Configuración de CORS del editor de](./assets/aem-project/cors-configuration.png)
+![Configuración CORS del editor de SPA](./assets/aem-project/cors-configuration.png)
 
 Los elementos clave de la configuración son:
 
-+ AEM `alloworigin` especifica los hosts de los que se permite recuperar contenido de los archivos de datos de los que se puede hacer un seguimiento de la.
-   + SPA `localhost:3000` se ha agregado para admitir la ejecución local de la
-   + SPA `https://external-hosted-app` actúa como un marcador de posición para reemplazarse con el dominio en el que está alojado el servicio de acceso remoto (RDAs) en el que está alojado el usuario.
-+ AEM `allowedpaths` especifica qué rutas de acceso de los recursos en los que está cubierta la configuración de CORS en la. AEM SPA El valor predeterminado permite el acceso a todo el contenido en el contenido, aunque esto solo se puede definir como ámbito para las rutas específicas a las que el usuario puede tener acceso, por ejemplo: `/content/wknd-app`.
+* `alloworigin` especifica qué hosts pueden recuperar contenido de AEM.
+   * `localhost:3000` se ha agregado para admitir que la SPA se ejecute localmente
+   * `https://external-hosted-app` actúa como un marcador de posición para reemplazarse con el dominio en el que se aloja el SPA remoto.
+* `allowedpaths` especifica qué rutas en AEM están cubiertas por esta configuración CORS. El valor predeterminado permite el acceso a todo el contenido en AEM; sin embargo, esto solo se puede vincular a las rutas específicas a las que puede acceder la SPA, por ejemplo: `/content/wknd-app`.
 
-## AEM SPA Establecer página de como plantilla de página de remoto
+## Establecer página de AEM como plantilla de página de SPA remota
 
-AEM AEM SPA AEM El tipo de archivo del proyecto de genera un proyecto preparado para la integración de los usuarios con un tipo de archivo remoto, pero que requiere un ajuste pequeño pero importante de la estructura de la página generado automáticamente, en el que el usuario puede acceder a la página de inicio de sesión de un proyecto de. AEM SPA SPA Se debe cambiar el tipo de la página de la generada automáticamente a __Página de la conexión remota__, en lugar de a __Página de la conexión remota__.
+El tipo de archivo del proyecto de AEM genera un proyecto preparado para la integración de AEM con una SPA remota, pero requiere un pequeño pero importante ajuste de la estructura de páginas de AEM generada automáticamente. Se debe cambiar el tipo de la página de AEM generada automáticamente a **página de SPA remota**, en lugar de a **página de SPA**.
 
 1. En su IDE, abra el subproyecto `ui.content`
 1. Abrir en `src/main/content/jcr_root/content/wknd-app/us/en/home/.content.xml`
 1. Actualizar este archivo de `.content.xml` con:
 
-   ```
+   ```xml
    <?xml version="1.0" encoding="UTF-8"?>
    <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
            jcr:primaryType="cq:Page">
@@ -301,26 +304,26 @@ AEM AEM SPA AEM El tipo de archivo del proyecto de genera un proyecto preparado 
 
 Los cambios clave son actualizaciones en el nodo `jcr:content`:
 
-+ `cq:template` a `/conf/wknd-app/settings/wcm/templates/spa-remote-page`
-+ `sling:resourceType` a `wknd-app/components/remotepage`
+* `cq:template` a `/conf/wknd-app/settings/wcm/templates/spa-remote-page`
+* `sling:resourceType` a `wknd-app/components/remotepage`
 
 El archivo `src/main/content/jcr_root/content/wknd-app/us/en/home/.content.xml` debe tener el siguiente aspecto:
 
 ![Actualizaciones del archivo .content.xml de la página de inicio](./assets/aem-project/home-content-xml.png)
 
-SPA AEM SPA SPA Estos cambios permiten que esta página, que actúa como raíz de la en la que se realiza la acción, cargue el control remoto en el Editor de.
+Estos cambios permiten que esta página, que actúa como raíz de la SPA en AEM, cargue la SPA remota en el Editor de SPA.
 
 >[!NOTE]
 >
->AEM AEM Si este proyecto se implementó anteriormente para la, asegúrese de eliminar la página de la como __Sites > Aplicación WKND > us > en > Página de inicio de la aplicación WKND__, ya que el proyecto `ui.content` se establece en __combinar__ nodos, en lugar de __actualizar__.
+>Si este proyecto se implementó anteriormente en AEM, asegúrese de eliminar la página de AEM como **Sitios > Aplicación WKND > us > en > Página de inicio de la aplicación WKND**, ya que el proyecto `ui.content` se establece en **combinar** nodos, en lugar de **actualizar**.
 
-SPA AEM Esta página también se puede eliminar y volver a crear como una página de remoto en sí misma; sin embargo, dado que esta página se crea automáticamente en el proyecto `ui.content`, es mejor actualizarla en la base de código.
+Esta página también se puede eliminar y volver a crear como una página de SPA remota en AEM, pero como esta página se crea automáticamente en el proyecto `ui.content`, es mejor actualizarla en la base de código.
 
-## AEM AEM Implementar el proyecto de en el SDK de la
+## Implementar el proyecto de AEM en AEM SDK
 
-1. AEM Asegúrese de que el servicio de autor de la se esté ejecutando en el puerto 4502
-1. AEM Desde la línea de comandos, vaya a la raíz del proyecto de Maven, que se encuentra en la parte superior de la lista de proyectos de Maven.
-1. AEM Utilice Maven para implementar el proyecto en el servicio local de creación de SDK de la
+1. Asegúrese de que el servicio AEM Author se está ejecutando en el puerto 4502
+1. Desde la línea de comandos, vaya a la raíz del proyecto Maven de AEM
+1. Utilice Maven para implementar el proyecto en el servicio local de AEM SDK Author
 
    ```
    $ mvn clean install -PautoInstallSinglePackage
@@ -328,39 +331,39 @@ SPA AEM Esta página también se puede eliminar y volver a crear como una págin
 
    ![instalación limpia de mvn -PautoInstallSinglePackage](./assets/aem-project/mvn-install.png)
 
-## AEM Configuración de la página raíz de la
+## Configuración de la página raíz de AEM
 
-AEM SPA SPA Con el proyecto de implementado, hay un último paso para preparar a Editor de la para cargar nuestro proyecto de forma remota. AEM AEM SPA AEM En la, marque la página de la que corresponde a la raíz de la aplicación, `/content/wknd-app/us/en/home`, generada por el arquetipo del proyecto que se va a crear.
+Con el proyecto de AEM implementado, hay un último paso para preparar el Editor de SPA para cargar nuestro SPA remoto. En AEM, marque la página de AEM que corresponde a la raíz de la SPA, `/content/wknd-app/us/en/home`, generada por el tipo de archivo del proyecto de AEM.
 
-1. AEM Iniciar sesión en el autor de la
-1. Vaya a __Sitios > Aplicación WKND > us > en__
-1. Seleccione la __página de inicio de la aplicación WKND__ y pulse __Propiedades__
+1. Iniciar sesión en AEM Author
+1. Vaya a **Sitios > Aplicación WKND > us > en**
+1. Seleccione la **página de inicio de la aplicación WKND** y pulse **Propiedades**
 
    ![Página principal de la aplicación WKND: propiedades](./assets/aem-content/edit-home-properties.png)
 
-1. SPA Vaya a la pestaña ____
-1. SPA Rellene la __configuración remota del servicio de configuración de la red__
-   + SPA __URL del host de__: `http://localhost:3000`
-      + SPA La dirección URL a la raíz de la interfaz de usuario de la aplicación remota
+1. Vaya a la pestaña **SPA**
+1. Rellene la **configuración remota de SPA**
+   1. **URL de host SPA**: `http://localhost:3000`
+      1. La URL a la raíz de la SPA remota
 
-   SPA ![Página de inicio de la aplicación WKND - Configuración de la aplicación remota](./assets/aem-content/remote-spa-configuration.png)
+   ![Página de inicio de la aplicación WKND: configuración remota de SPA](./assets/aem-content/remote-spa-configuration.png)
 
-1. Pulse __Guardar y cerrar__
+1. Pulse **Guardar y cerrar**
 
-SPA SPA Recuerde que cambiamos el tipo de esta página por el de una __Página remota de la__, que es lo que nos permite ver la ficha ____ en sus __Propiedades de la página__.
+Recuerde que hemos cambiado el tipo de esta página al de una **página de SPA remota**, que es lo que nos permite ver la ficha **SPA** en sus **propiedades de página**.
 
-AEM SPA Esta configuración solo debe configurarse en la página de que corresponda a la raíz de la. AEM Todas las páginas de la página que se encuentran debajo de esta página heredan el valor.
+Esta configuración solo debe establecerse en la página de AEM que corresponda a la raíz de la SPA. Todas las páginas de AEM debajo de esta página heredan el valor.
 
 ## Felicitaciones
 
-AEM AEM Ya ha preparado las configuraciones de la versión de la aplicación y las ha implementado en su creador local de la aplicación de. Ahora ya sabe cómo:
+Ya ha preparado las configuraciones de AEM y las ha implementado en el autor local de AEM. Ahora ya sabe cómo:
 
-+ AEM SPA Elimine el archivo generado por el tipo de archivo del proyecto de, comentando las dependencias en `ui.frontend`
-+ AEM SPA AEM Agregue asignaciones de Sling para que las asignaciones de los recursos de Sling se asignen a las rutas de los recursos de la de trabajo.
-+ AEM SPA AEM Configurar políticas de seguridad de uso compartido de recursos de origen cruzado de los recursos que permiten al usuario remoto consumir contenido de los recursos de origen
-+ AEM AEM Implemente el proyecto de en el servicio local de creación de SDK de
-+ AEM SPA SPA Marcar una página de como raíz de la remota mediante la propiedad de la página URL del host de la aplicación
+* Elimine la SPA generada por el tipo de archivo del proyecto de AEM, comentando las dependencias de `ui.frontend`
+* Añadir asignaciones de Sling a AEM que asignen las rutas de SPA a los recursos de AEM
+* Configure las políticas de seguridad de Intercambio de recursos de origen cruzado de AEM que permiten que la SPA remota consuma contenido de AEM
+* Implemente el proyecto de AEM en el servicio local de AEM SDK Author
+* Marcar una página de AEM como raíz de la SPA remota mediante la propiedad de página URL del host de la SPA
 
 ## Siguientes pasos
 
-AEM SPA AEM SPA Con la configuración, podemos centrarnos en [arrancar el control remoto de la aplicación](./spa-bootstrap.md) con compatibilidad con áreas editables mediante el Editor de la.
+Con AEM configurado, podemos centrarnos en [arrancar el SPA remoto](./spa-bootstrap.md) con soporte para áreas editables usando AEM SPA Editor.

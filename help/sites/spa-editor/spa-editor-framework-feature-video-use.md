@@ -11,20 +11,23 @@ thumbnail: 22229.jpg
 doc-type: Feature Video
 exl-id: 645b6986-830f-4409-b46c-ddf15c33e84c
 duration: 473
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 1%
 
 ---
 
-# Uso del Editor de SPA con AEM Sites {#using-the-spa-editor-with-aem-sites}
+# Uso del Editor de SPA con AEM Sites
+
+{{spa-editor-deprecation}}
 
 Vídeo de descripción general de la creación de contenido para una aplicación de una sola página en AEM Sites.
 
 El Editor de SPA de AEM permite a los autores editar contenido para una aplicación de una sola página o SPA. Los desarrolladores que utilizan el marco de React crean una SPA y luego asignan áreas de la SPA a componentes de AEM, lo que permite a los autores utilizar herramientas de edición de AEM Sites familiares. El siguiente vídeo muestra algunas de las funciones de edición en contexto con el sitio de muestra de SPA de WKND. El proyecto de la SPA de WKND incluye una implementación de React.
 
->[!VIDEO](https://video.tv.adobe.com/v/326771?quality=12&learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/22229?quality=12&learn=on)
 
 >[!NOTE]
 >

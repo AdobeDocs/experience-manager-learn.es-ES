@@ -1,6 +1,6 @@
 ---
-title: SPA Agregar componentes fijos editables a un grupo de informes remoto
-description: SPA Obtenga información sobre cómo agregar componentes fijos editables a un grupo de informes.
+title: Adición de componentes fijos editables a una SPA remota
+description: Aprenda a añadir componentes fijos editables a una SPA remota.
 topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
 role: Developer, Architect
@@ -12,7 +12,8 @@ recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: edd18f2f-6f24-4299-a31a-54ccc4f6d86e
 duration: 164
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 1%
@@ -21,7 +22,9 @@ ht-degree: 1%
 
 # Componentes fijos editables
 
-SPA Los componentes de React editables pueden ser &quot;fijos&quot; o codificados en las vistas de la. SPA SPA AEM SPA Esto permite a los desarrolladores colocar componentes compatibles con el Editor de la en las vistas de componentes y permitir a los usuarios crear el contenido de los componentes en el Editor de la.
+{{spa-editor-deprecation}}
+
+Los componentes de React editables pueden ser &quot;fijos&quot; o codificados en las vistas de la SPA. Esto permite a los desarrolladores colocar componentes compatibles con el Editor de SPA en las vistas de SPA y a los usuarios crear el contenido de los componentes en el Editor de SPA de AEM.
 
 ![Componentes fijos](./assets/spa-fixed-component/intro.png)
 
@@ -31,12 +34,12 @@ En este capítulo, reemplazamos el título de la vista Inicio, &quot;Aventuras a
 
 Para agregar un componente __Fixed__ a la vista Inicio:
 
-+ Cree un componente de título editable personalizado y regístrelo en el tipo de recurso Título del proyecto
-+ SPA Coloque el componente Título editable en la vista Inicio de la
+* Cree un componente de título editable personalizado y regístrelo en el tipo de recurso Título del proyecto
+* Coloque el componente Título editable en la vista Inicio de la SPA
 
 ### Crear un componente de título de React editable
 
-SPA En la vista Página de inicio de la, reemplace el texto predefinido `<h2>Current Adventures</h2>` por un componente de título editable personalizado. Para poder utilizar el componente Título, debemos hacer lo siguiente:
+En la vista Inicio de la SPA, reemplace el texto predefinido `<h2>Current Adventures</h2>` por un componente de título editable personalizado. Para poder utilizar el componente Título, debemos hacer lo siguiente:
 
 1. Crear un componente React de título personalizado
 1. Decore el componente Título personalizado con los métodos de `@adobe/aem-react-editable-components` para que se pueda editar.
@@ -44,7 +47,7 @@ SPA En la vista Página de inicio de la, reemplace el texto predefinido `<h2>Cur
 
 Para ello, haga lo siguiente:
 
-1. SPA Abrir el proyecto de Remote en `~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/react-app` en su IDE
+1. Abrir proyecto de SPA remoto en `~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/react-app` en su IDE
 1. Crear un componente de React en `react-app/src/components/editable/core/Title.js`
 1. Agregue el siguiente código a `Title.js`.
 
@@ -91,7 +94,7 @@ Para ello, haga lo siguiente:
    export const titleIsEmpty = (props) => props.text == null || props.text.trim().length === 0
    ```
 
-   AEM SPA Tenga en cuenta que este componente de React aún no se puede editar con el Editor de. Este componente base se podrá editar en el siguiente paso.
+   Tenga en cuenta que este componente de React aún no se puede editar con AEM SPA Editor. Este componente base se podrá editar en el siguiente paso.
 
    Lea los comentarios del código para obtener más información sobre la implementación.
 
@@ -132,7 +135,7 @@ Para ello, haga lo siguiente:
    export default EditableTitle;
    ```
 
-   AEM SPA Este componente de React `EditableTitle` ajusta el componente de React `Title`, ajustándolo y decorándolo para que pueda editarse en el Editor de.
+   Este componente de React `EditableTitle` ajusta el componente de React `Title`, ajustándolo y decorándolo para que pueda editarse en el Editor de SPA de AEM.
 
 ### Uso del componente React EditableTitle
 
@@ -163,9 +166,9 @@ El archivo `Home.js` debe tener el siguiente aspecto:
 
 ![Home.js](./assets/spa-fixed-component/home-js-update.png)
 
-## AEM Cree el componente Título en el menú de
+## Crear el componente Título en AEM
 
-1. AEM Iniciar sesión en el autor de la
+1. Iniciar sesión en AEM Author
 1. Vaya a __Sitios > Aplicación WKND__
 1. Pulse __Inicio__ y seleccione __Editar__ en la barra de acciones superior
 1. Seleccione __Editar__ del selector de modo de edición en la parte superior derecha del Editor de páginas
@@ -175,25 +178,25 @@ El archivo `Home.js` debe tener el siguiente aspecto:
    ![Barra de acciones del componente Título](./assets/spa-fixed-component/title-action-bar.png)
 
 1. Cree el componente Título:
-   + Título: __WKND Adventures__
-   + Tipo/Tamaño: __H2__
+   1. Título: __WKND Adventures__
+   1. Tipo/Tamaño: __H2__
 
-     ![Cuadro de diálogo del componente Título](./assets/spa-fixed-component/title-dialog.png)
+      ![Cuadro de diálogo del componente Título](./assets/spa-fixed-component/title-dialog.png)
 
 1. Pulse __Listo__ para guardar
-1. AEM SPA Previsualice los cambios en el editor de
+1. Previsualice los cambios en el Editor de SPA de AEM
 1. Actualice la aplicación WKND que se ejecuta localmente en [http://localhost:3000](http://localhost:3000) y vea los cambios de título creados inmediatamente reflejados.
 
-   SPA ![Componente de título en el código de tiempo de trabajo ](./assets/spa-fixed-component/title-final.png)
+   ![Componente de título en la SPA](./assets/spa-fixed-component/title-final.png)
 
 ## Enhorabuena.
 
 ¡Ha agregado un componente fijo editable a la aplicación WKND! Ahora ya sabe cómo:
 
-+ SPA Se ha creado un componente fijo, pero editable, para el grupo de informes de
-+ AEM Creación del componente fijo en el entorno de trabajo de
-+ SPA Ver el contenido creado en la interfaz de usuario de la aplicación remota
+* Se ha creado un componente fijo, pero editable, en la SPA
+* Crear el componente fijo en AEM
+* Ver el contenido creado en la SPA remota
 
-## Pasos siguientes
+## Siguientes pasos
 
-AEM SPA SPA Los siguientes pasos son [agregar un componente contenedor de cuadrícula adaptable ](./spa-container-component.md) para la que permita al autor agregar y editar los componentes a la plantilla de elementos de la lista de elementos de la lista de elementos de la lista de elementos de la lista de elementos de la lista de elementos de la lista de elementos de la lista de elementos de la lista de elementos de la lista de elementos de la lista de elementos de la lista de elementos de la lista de elementos de la lista de elementos de la lista de elementos de la lista de elementos de la lista de elementos de.
+Los siguientes pasos son [agregar un componente contenedor de AEM ResponsiveGrid](./spa-container-component.md) a la SPA que permita al autor agregar y editar componentes a la SPA.
