@@ -12,10 +12,10 @@ thumbnail: KT-17426.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 1df4c816-b354-4803-bb6c-49aa7d7404c6
-source-git-commit: 34a22580db6dc32b5c4c5945af83600be2e0a852
+source-git-commit: 723c439202b8e00e7b3236a50641ee1f2f6a4d9c
 workflow-type: tm+mt
-source-wordcount: '1440'
-ht-degree: 0%
+source-wordcount: '1493'
+ht-degree: 12%
 
 ---
 
@@ -40,7 +40,7 @@ El proceso de configuración de alto nivel incluye los siguientes pasos:
 La modernización del entorno de AEM as a Cloud Service es una actividad única por entorno que implica los siguientes pasos:
 
 - Actualización a la versión de AEM **2024.10.18459.20241031T210302Z** o posterior.
-- Añádale nuevos perfiles de producto si el entorno se ha creado antes de la versión 2024.10.18459.20241031T210302Z.
+- Añádale nuevos perfiles de producto si el entorno se creó antes de la versión 2024.10.18459.20241031T210302Z.
 
 ### Actualizar instancia de AEM{#update-aem-instance}
 
@@ -70,7 +70,7 @@ Los pasos anteriores completan la modernización del entorno de AEM as a Cloud S
 
 ## Habilitar el acceso a las API de AEM{#enable-aem-apis-access}
 
-La presencia de _nuevos perfiles de producto_ habilita el acceso a la API de AEM basada en OpenAPI en Adobe Developer Console (ADC). Recuerde que [Adobe Developer Console (ADC)](./overview.md#accessing-adobe-apis-and-related-concepts) es el centro para desarrolladores para acceder a las API de Adobe, los SDK, los eventos en tiempo real, las funciones sin servidor y más.
+La presencia de _nuevos perfiles de producto_ habilita el acceso a la API de AEM basada en OpenAPI en Adobe Developer Console (ADC). Recuerde que [Adobe Developer Console (ADC)](./overview.md#accessing-adobe-apis-and-related-concepts) es el centro para desarrolladores para acceder a las API de Adobe, los SDK, los eventos en tiempo real, las funciones sin servidor y mucho más.
 
 Los perfiles de producto agregados recientemente están asociados con _Servicios_ que representan _grupos de usuarios de AEM con Listas de control de acceso (ACL) predefinidas_. Los _servicios_ se utilizan para controlar el nivel de acceso a las API de AEM.
 
@@ -94,7 +94,7 @@ Por ejemplo, para habilitar la autenticación de servidor a servidor para la API
 
 ![Asociar desarrollador al perfil del producto](./assets/setup/associate-developer-to-product-profile.png)
 
-Después de esta asociación, la _API de autor de recursos_ del proyecto ADC puede configurar la autenticación de servidor a servidor deseada y asociar la cuenta de autenticación del proyecto ADC (creada en el paso siguiente) con el perfil del producto.
+Después de esta asociación, la _API de autor de recursos_ del proyecto ADC puede configurar la autenticación de servidor a servidor deseada y asociar la cuenta de autenticación del proyecto ADC (creada en el siguiente paso) con el perfil de producto.
 
 >[!IMPORTANT]
 >
@@ -133,6 +133,10 @@ Después de crear el proyecto de ADC, debe agregar las API de AEM deseadas, conf
 1. En el cuadro de diálogo _Agregar API_, filtre por _Experience Cloud_ y seleccione la API de AEM que desee. Por ejemplo, en este caso, la _API de autor de recursos_ está seleccionada.
 
    ![Agregar API de AEM](./assets/s2s/add-aem-api.png)
+
+   >[!TIP]
+   >
+   >    Si la **tarjeta de la API de AEM** deseada está deshabilitada y _¿Por qué está deshabilitada?La información de_ muestra el mensaje **Se requiere licencia**. Una de las razones podría ser que NO ha modernizado su entorno de AEM as a Cloud Service. Consulte [Modernización del entorno de AEM as a Cloud Service](#modernization-of-aem-as-a-cloud-service-environment) para obtener más información.
 
 1. A continuación, en el cuadro de diálogo _Configurar API_, seleccione la opción de autenticación que desee. Por ejemplo, en este caso, la opción de autenticación **Servidor a servidor** está seleccionada.
 
@@ -196,7 +200,7 @@ Se realiza definiendo la configuración de la API en un archivo YAML e implement
 
    ![Implementar YAML](./assets/setup/config-pipeline.png)
 
-## Pasos siguientes
+## Siguientes pasos
 
 Una vez configurada la instancia de AEM para habilitar la comunicación del proyecto ADC, puede empezar a utilizar las API de AEM basadas en OpenAPI. Aprenda a utilizar las API de AEM basadas en OpenAPI utilizando diferentes métodos de autenticación de OAuth:
 
@@ -231,9 +235,9 @@ Una vez configurada la instancia de AEM para habilitar la comunicación del proy
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./use-cases/invoke-api-using-oauth-s2s.md" target="_self" rel="referrer" title="Invocar la API mediante la autenticación de servidor a servidor">Invocar API mediante autenticación de servidor a servidor</a>
+                        <a href="./use-cases/invoke-api-using-oauth-s2s.md" target="_self" rel="referrer" title="Invocar la API mediante la autenticación de servidor a servidor">Invocar la API mediante la autenticación de servidor a servidor</a>
                     </p>
-                    <p class="is-size-6">Obtenga información sobre cómo invocar las API de AEM basadas en OpenAPI desde una aplicación NodeJS personalizada mediante la autenticación de servidor a servidor OAuth.</p>
+                    <p class="is-size-6">Obtenga información sobre cómo invocar las API de AEM basadas en OpenAPI desde una aplicación NodeJS personalizada mediante la autenticación de servidor a servidor de OAuth.</p>
                 </div>
                 <a href="./use-cases/invoke-api-using-oauth-s2s.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
@@ -254,7 +258,7 @@ Una vez configurada la instancia de AEM para habilitar la comunicación del proy
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./use-cases/invoke-api-using-oauth-web-app.md" target="_self" rel="referrer" title="Invocar la API mediante la autenticación de aplicación web">Invocar API mediante autenticación de aplicación web</a>
+                        <a href="./use-cases/invoke-api-using-oauth-web-app.md" target="_self" rel="referrer" title="Invocar la API mediante la autenticación de aplicación web">Invocar la API mediante la autenticación de aplicación web</a>
                     </p>
                     <p class="is-size-6">Obtenga información sobre cómo invocar las API de AEM basadas en OpenAPI desde una aplicación web personalizada mediante la autenticación de aplicación web de OAuth.</p>
                 </div>
@@ -277,7 +281,7 @@ Una vez configurada la instancia de AEM para habilitar la comunicación del proy
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./use-cases/invoke-api-using-oauth-single-page-app.md" target="_self" rel="referrer" title="Invocar la API mediante la autenticación de aplicación de una sola página">Invocar API mediante autenticación de aplicación de una sola página</a>
+                        <a href="./use-cases/invoke-api-using-oauth-single-page-app.md" target="_self" rel="referrer" title="Invocar la API mediante la autenticación de aplicación de una sola página">Invocar la API mediante la autenticación de aplicación de una sola página</a>
                     </p>
                     <p class="is-size-6">Aprenda a invocar las API de AEM basadas en OpenAPI desde una aplicación de una sola página (SPA) personalizada mediante el flujo PKCE de OAuth 2.0.</p>
                 </div>

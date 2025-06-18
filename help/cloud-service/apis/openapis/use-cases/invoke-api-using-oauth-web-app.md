@@ -12,9 +12,9 @@ thumbnail: KT-16718.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 9cf7c318-2be4-4b26-bd6f-0c80d002db45
-source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
+source-git-commit: 723c439202b8e00e7b3236a50641ee1f2f6a4d9c
 workflow-type: tm+mt
-source-wordcount: '2213'
+source-wordcount: '2262'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Obtenga información sobre cómo invocar las API de AEM basadas en OpenAPI en AE
 
 La autenticación de la aplicación web de OAuth es ideal para aplicaciones web con componentes de front-end y _backend_ que necesitan **acceder a las API de AEM en nombre de un usuario**. Utiliza el tipo de concesión OAuth 2.0 _authorization_code_ para obtener un token de acceso de parte del usuario para acceder a las API de AEM. Para obtener más información, consulte [Diferencia entre OAuth Server-to-Server vs Web App vs Single Page App credentials](../overview.md#difference-between-oauth-server-to-server-vs-web-app-vs-single-page-app-credentials).
 
-## Lo que aprende{#what-you-learn}
+## Qué aprenderá{#what-you-learn}
 
 En este tutorial, aprenderá a:
 
@@ -49,7 +49,7 @@ La aplicación WKND PIM es una aplicación web de ejemplo diseñada para adminis
 
 El proyecto de Adobe Developer Console (ADC) está configurado para acceder a la API de autor de Assets mediante la autenticación de la aplicación web de OAuth. Proporciona los _client_id_ y _client_secret_ necesarios a la aplicación web WKND-PIM para iniciar el flujo de concesión de _authorization_code_.
 
->[!VIDEO](https://video.tv.adobe.com/v/3442760?quality=12&learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3442757?quality=12&learn=on)
 
 
 El diagrama siguiente ilustra el flujo funcional de la aplicación web WKND-PIM _que obtiene tokens de acceso específicos del usuario para interactuar con la API de autor de Assets_.
@@ -430,7 +430,7 @@ Para completar este tutorial, necesita lo siguiente:
 
 - Acceso a [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started).
 
-- Instale [Node.js](https://nodejs.org/en/) en el equipo local para ejecutar la aplicación NodeJS de ejemplo.
+- Instale [Node.js](https://nodejs.org/es/) en el equipo local para ejecutar la aplicación NodeJS de ejemplo.
 
 - Instale un [proxy-ssl-local](https://www.npmjs.com/package/local-ssl-proxy#local-ssl-proxy) en su equipo local para crear un proxy HTTP SSL local usando un certificado autofirmado.
 
@@ -460,6 +460,10 @@ El paso para configurar el proyecto ADC está _repetido_ desde las [API de confi
 1. En el cuadro de diálogo _Agregar API_, filtre por _Experience Cloud_, seleccione la tarjeta **API de autor de AEM Assets** y haga clic en **Siguiente**.
 
    ![Agregar API de AEM](../assets/s2s/add-aem-api.png)
+
+   >[!TIP]
+   >
+   >Si la **tarjeta de la API de AEM** deseada está deshabilitada y _¿Por qué está deshabilitada?La información de_ muestra el mensaje **Se requiere licencia**. Una de las razones podría ser que NO ha modernizado su entorno de AEM as a Cloud Service. Consulte [Modernización del entorno de AEM as a Cloud Service](../setup.md#modernization-of-aem-as-a-cloud-service-environment) para obtener más información.
 
 1. A continuación, en el diálogo _Configurar API_, seleccione la opción de autenticación **Autenticación de usuario** y haga clic en **Siguiente**.
 
@@ -493,7 +497,7 @@ Siga las instrucciones del artículo [Configuración de las API de AEM basadas e
 
 De forma predeterminada, el proyecto de WKND Sites no tiene el esquema de metadatos de recurso necesario para mostrar los atributos del producto. Vamos a crear y aplicar el esquema de metadatos del recurso a una carpeta de recursos en la instancia de AEM.
 
-1. Inicie sesión en la instancia de AEM as a Cloud Service Asset. Con la [vista de recursos](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/authoring/switch-views), vaya a la carpeta `/content/dam/wknd-shared/en`.
+1. Inicie sesión en la instancia de AEM as a Cloud Service Asset. Con la [vista de recursos](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/authoring/switch-views), vaya a la carpeta `/content/dam/wknd-shared/en`.
 
    ![Vaya a la carpeta](../assets/web-app/navigate-to-folder.png)
 
