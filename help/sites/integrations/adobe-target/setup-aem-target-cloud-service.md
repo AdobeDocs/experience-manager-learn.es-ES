@@ -34,4 +34,4 @@ Esta integración permite que el servicio de creación de AEM se comunique direc
 
 >[!CAUTION]
 >
->Hay un problema conocido con la configuración de Adobe Target Cloud Services que se muestra en el vídeo. Hasta que se resuelva este problema, siga los mismos pasos en el vídeo pero use la [configuración heredada de Adobe Target Cloud Services](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-aem-cloud-services.html).
+>Hay un problema conocido con la configuración de Adobe Target Cloud Services que se muestra en el vídeo. Hasta que se resuelva este problema, siga los mismos pasos en el vídeo pero use la [configuración heredada de Adobe Target Cloud Services](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-aem-cloud-services.html?lang=es).
