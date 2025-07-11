@@ -12,10 +12,10 @@ last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15359
 thumbnail: KT-15359.png
 exl-id: 47bef697-5253-493a-b9f9-b26c27d2db56
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 7c58c5cb6a3d99a9577206b3e5e0b8dcd55a850e
 workflow-type: tm+mt
 source-wordcount: '787'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
@@ -28,20 +28,20 @@ Aprenda a configurar un entorno de desarrollo local para editar el contenido de 
 Se requiere lo siguiente para seguir este tutorial:
 
 - Aptitudes básicas de HTML y JavaScript.
-- Las siguientes herramientas deben instalarse localmente:
+- Las siguientes herramientas deben estar instaladas localmente:
    - [Nodo.js](https://nodejs.org/es/download/)
    - [Git](https://git-scm.com/downloads)
    - Un IDE o editor de código, como [Visual Studio Code](https://code.visualstudio.com/)
 - Descargue e instale lo siguiente:
-   - [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#download-the-aem-as-a-cloud-service-sdk): contiene el Jar de inicio rápido utilizado para ejecutar AEM Author y Publish localmente con fines de desarrollo.
-   - [Servicio de editor universal](https://experienceleague.adobe.com/es/docs/experience-cloud/software-distribution/home): una copia local del servicio de editor universal, tiene un subconjunto de características y se puede descargar desde el portal de distribución de software.
+   - [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#download-the-aem-as-a-cloud-service-sdk): contiene el Jar de inicio rápido utilizado para ejecutar AEM Author y Publish localmente con fines de desarrollo.
+   - [Servicio de editor universal](https://experienceleague.adobe.com/en/docs/experience-cloud/software-distribution/home): una copia local del servicio de editor universal, tiene un subconjunto de características y se puede descargar desde el portal de distribución de software.
    - [local-ssl-proxy](https://www.npmjs.com/package/local-ssl-proxy#local-ssl-proxy): Un proxy HTTP SSL local simple que usa un certificado autofirmado para el desarrollo local. El editor universal de AEM requiere la URL HTTPS de la aplicación React para cargarla en el editor.
 
 ## Configuración local
 
 Siga los pasos a continuación para configurar el entorno de desarrollo local:
 
-### AEM SDK
+### SDK de AEM
 
 Para proporcionar el contenido para la aplicación WKND Teams React, instale los siguientes paquetes en el SDK local de AEM.
 
@@ -98,9 +98,9 @@ Para configurar el servicio de editor universal **local**, siga los pasos a cont
 
    ```bash
    # The port on which the Universal Editor service runs
-   EXPRESS_PORT=8000
+   UES_PORT=8000
    # Disable SSL verification
-   NODE_TLS_REJECT_UNAUTHORIZED=0
+   UES_TLS_REJECT_UNAUTHORIZED=false
    ```
 
 1. Inicie el servicio local de Universal Editor.
