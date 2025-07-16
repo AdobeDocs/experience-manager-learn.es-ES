@@ -38,7 +38,7 @@ En este capítulo, creamos y ejecutamos una canalización front-end en Adobe Clo
 
 Este es un tutorial de varias partes y se da por hecho que los pasos descritos en [Actualizar proyecto estándar de AEM](./update-project.md) se han completado.
 
-Asegúrese de que tiene [privilegios para crear e implementar canalizaciones en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=en#role-definitions) y [acceso a un entorno de AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html).
+Asegúrese de que tiene [privilegios para crear e implementar canalizaciones en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=es#role-definitions) y [acceso a un entorno de AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=es).
 
 ## Cambiar nombre de canalización existente
 
