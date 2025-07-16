@@ -13,7 +13,7 @@ recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: d6da05e4-bd65-4625-b9a4-cad8eae3c9d7
 duration: 225
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 293157c296676ef1496e6f861ed8c2c24da7e068
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 0%
@@ -38,7 +38,7 @@ En este capítulo, creamos y ejecutamos una canalización front-end en Adobe Clo
 
 Este es un tutorial de varias partes y se da por hecho que los pasos descritos en [Actualizar proyecto estándar de AEM](./update-project.md) se han completado.
 
-Asegúrese de que tiene [privilegios para crear e implementar canalizaciones en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=es#role-definitions) y [acceso a un entorno de AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=es).
+Asegúrese de que tiene [privilegios para crear e implementar canalizaciones en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=en#role-definitions) y [acceso a un entorno de AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html).
 
 ## Cambiar nombre de canalización existente
 
@@ -107,6 +107,6 @@ Y __lo más importante__ para el campo __Ubicación del código__ el valor es `/
 
 Ha creado, ejecutado y verificado la canalización front-end que solo crea e implementa el módulo &quot;ui.frontend&quot; del proyecto WKND Sites. Ahora, su equipo front-end puede iterar rápidamente en el diseño y el comportamiento del front-end del sitio, fuera del ciclo de vida completo del proyecto de AEM.
 
-## Pasos siguientes {#next-steps}
+## Siguientes pasos {#next-steps}
 
 En el capítulo siguiente, [Consideraciones](considerations.md), revisará el impacto en el proceso de desarrollo del front-end y del back-end.
