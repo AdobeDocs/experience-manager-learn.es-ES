@@ -38,7 +38,7 @@ Conozca las prácticas recomendadas para configurar reglas de filtro de tráfico
 
 ## Prácticas recomendadas para reglas de filtros de tráfico
 
-- Use las reglas de filtro de tráfico estándar recomendadas por Adobe [1} como línea de base, que incluye reglas para Edge, protección de origen y restricciones basadas en OFAC.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#recommended-starter-rules)
+- Use las reglas de filtro de tráfico estándar recomendadas por Adobe [1&rbrace; como línea de base, que incluye reglas para Edge, protección de origen y restricciones basadas en OFAC.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#recommended-starter-rules)
 - Revise las alertas y los registros regularmente para identificar patrones de abuso o configuración incorrecta.
 - Ajuste los valores de umbral para los límites de tasa en función de los patrones de tráfico de la aplicación y el comportamiento del usuario.
 
