@@ -10,13 +10,13 @@ doc-type: Tutorial
 last-substantial-update: 2025-06-04T00:00:00Z
 jira: KT-13148
 thumbnail: null
-source-git-commit: 293157c296676ef1496e6f861ed8c2c24da7e068
+exl-id: e6d67204-2f76-441c-a178-a34798fe266d
+source-git-commit: 22a35b008de380bf2f2ef5dfde6743261346df89
 workflow-type: tm+mt
 source-wordcount: '1185'
 ht-degree: 1%
 
 ---
-
 
 # Información general: Protección de sitios web de AEM
 
@@ -27,6 +27,9 @@ También puede obtener información sobre las diferencias entre el filtro de tr�
 >[!IMPORTANT]
 >
 > Las reglas de filtro de tráfico de WAF requieren una licencia adicional de **Protección WAF-DDoS** o de **Seguridad mejorada**. Las reglas estándar de filtro de tráfico están disponibles para los clientes de Sites y Forms de forma predeterminada.
+
+
+>[!VIDEO](https://video.tv.adobe.com/v/3469394/?quality=12&learn=on)
 
 ## Introducción a la seguridad del tráfico en AEM as a Cloud Service
 
@@ -52,7 +55,7 @@ Los conjuntos de reglas ayudan a los clientes a evitar amenazas web comunes y so
 
 Las reglas estándar de filtro de tráfico son útiles para aplicar directivas específicas de la empresa, como límites de velocidad o bloqueo de regiones específicas, así como para bloquear el tráfico en función de propiedades de solicitud y encabezados como dirección IP, ruta o agente de usuario.
 Las reglas del filtro de tráfico de WAF, por otro lado, proporcionan una protección proactiva completa para las vulnerabilidades web conocidas y los vectores de ataque, y tienen inteligencia avanzada para limitar los falsos positivos (es decir, bloquear el tráfico legítimo).
-Para definir ambos tipos de reglas, utilice la sintaxis YAML; consulte [Sintaxis de reglas de filtro de tráfico](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#rules-syntax) para obtener más información.
+Para definir ambos tipos de reglas, utilice la sintaxis YAML; consulte [Sintaxis de reglas de filtro de tráfico](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#rules-syntax) para obtener más información.
 
 ## Cuándo y por qué utilizarlas
 
