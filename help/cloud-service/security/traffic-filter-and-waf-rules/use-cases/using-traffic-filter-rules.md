@@ -11,7 +11,7 @@ last-substantial-update: 2025-06-04T00:00:00Z
 jira: KT-18307
 thumbnail: null
 exl-id: 5e235220-82f6-46e4-b64d-315f027a7024
-source-git-commit: 22a35b008de380bf2f2ef5dfde6743261346df89
+source-git-commit: b7f567da159865ff04cb7e9bd4dae0b140048e7d
 workflow-type: tm+mt
 source-wordcount: '1780'
 ht-degree: 7%
@@ -20,10 +20,10 @@ ht-degree: 7%
 
 # Protección de sitios web de AEM mediante reglas estándar de filtro de tráfico
 
-Aprenda a proteger los sitios web de AEM de ataques de denegación de servicio (DoS), ataques distribuidos de denegación de servicio (DDoS) y abusos de bots mediante _reglas estándar de filtro de tráfico recomendadas por Adobe_&#x200B;**en AEM as a Cloud Service.**
+Aprenda a proteger los sitios web de AEM de ataques de denegación de servicio (DoS), ataques distribuidos de denegación de servicio (DDoS) y abusos de bots mediante _reglas estándar de filtro de tráfico recomendadas por Adobe_**en AEM as a Cloud Service.**
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3469395/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3469396/?quality=12&learn=on)
 
 ## Objetivos de aprendizaje
 
@@ -391,4 +391,4 @@ Para escenarios más avanzados, puede explorar los siguientes casos de uso que m
 
 ## Recursos adicionales
 
-- [Reglas de inicio recomendadas](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#recommended-starter-rules)
+- [Reglas de inicio recomendadas](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#recommended-starter-rules)
