@@ -20,7 +20,7 @@ ht-degree: 7%
 
 # Protección de sitios web de AEM mediante reglas estándar de filtro de tráfico
 
-Aprenda a proteger los sitios web de AEM de ataques de denegación de servicio (DoS), ataques distribuidos de denegación de servicio (DDoS) y abusos de bots mediante _reglas estándar de filtro de tráfico recomendadas por Adobe_**en AEM as a Cloud Service.**
+Aprenda a proteger los sitios web de AEM de ataques de denegación de servicio (DoS), ataques distribuidos de denegación de servicio (DDoS) y abusos de bots mediante _reglas estándar de filtro de tráfico recomendadas por Adobe_&#x200B;**en AEM as a Cloud Service.**
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3469395/?quality=12&learn=on)
