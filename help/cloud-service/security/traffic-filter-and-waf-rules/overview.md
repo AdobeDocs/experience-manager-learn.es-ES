@@ -55,7 +55,7 @@ Los conjuntos de reglas ayudan a los clientes a evitar amenazas web comunes y so
 
 Las reglas estándar de filtro de tráfico son útiles para aplicar directivas específicas de la empresa, como límites de velocidad o bloqueo de regiones específicas, así como para bloquear el tráfico en función de propiedades de solicitud y encabezados como dirección IP, ruta o agente de usuario.
 Las reglas del filtro de tráfico de WAF, por otro lado, proporcionan una protección proactiva completa para las vulnerabilidades web conocidas y los vectores de ataque, y tienen inteligencia avanzada para limitar los falsos positivos (es decir, bloquear el tráfico legítimo).
-Para definir ambos tipos de reglas, utilice la sintaxis YAML; consulte [Sintaxis de reglas de filtro de tráfico](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#rules-syntax) para obtener más información.
+Para definir ambos tipos de reglas, utilice la sintaxis YAML; consulte [Sintaxis de reglas de filtro de tráfico](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#rules-syntax) para obtener más información.
 
 ## Cuándo y por qué utilizarlas
 
