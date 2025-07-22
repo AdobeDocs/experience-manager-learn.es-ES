@@ -32,8 +32,8 @@ Dentro del proyecto Adobe Developer Console, cada registro de evento se activa a
 >[!IMPORTANT]
 >
 >Los extremos de demostración en directo de este tutorial se alojaron anteriormente en [Glitch](https://glitch.com/). Desde julio de 2025, Glitch ha interrumpido su servicio de alojamiento y los puntos de conexión ya no son accesibles.
->>Estamos trabajando activamente en migrar las demostraciones a una plataforma alternativa. El contenido del tutorial sigue siendo preciso y pronto se proporcionarán vínculos actualizados.
->>Gracias por su comprensión y paciencia.
+>&#x200B;>Estamos trabajando activamente en migrar las demostraciones a una plataforma alternativa. El contenido del tutorial sigue siendo preciso y pronto se proporcionarán vínculos actualizados.
+>&#x200B;>Gracias por su comprensión y paciencia.
 
 Utilice su propia aplicación hasta que los extremos de demostración en directo vuelvan a estar disponibles.
 

@@ -30,8 +30,8 @@ Obtenga información sobre cómo recibir eventos de AEM en un webhook y revisar 
 >[!IMPORTANT]
 >
 >Los extremos de demostración en directo de este tutorial se alojaron anteriormente en [Glitch](https://glitch.com/). Desde julio de 2025, Glitch ha interrumpido su servicio de alojamiento y los puntos de conexión ya no son accesibles.
->>Estamos trabajando activamente en migrar las demostraciones a una plataforma alternativa. El contenido del tutorial sigue siendo preciso y pronto se proporcionarán vínculos actualizados.
->>Gracias por su comprensión y paciencia.
+>&#x200B;>Estamos trabajando activamente en migrar las demostraciones a una plataforma alternativa. El contenido del tutorial sigue siendo preciso y pronto se proporcionarán vínculos actualizados.
+>&#x200B;>Gracias por su comprensión y paciencia.
 
 Utilice su propio webhook hasta que los puntos finales de demostración en directo vuelvan a estar disponibles.
 
