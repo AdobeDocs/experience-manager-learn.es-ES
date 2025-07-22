@@ -12,10 +12,10 @@ last-substantial-update: 2023-01-29T00:00:00Z
 jira: KT-14732
 thumbnail: KT-14732.jpeg
 exl-id: 00954d74-c4c7-4dac-8d23-7140c49ae31f
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: e01eb7ff050321a70d84f8a613705799017dbf5d
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 0%
+source-wordcount: '533'
+ht-degree: 1%
 
 ---
 
@@ -23,9 +23,17 @@ ht-degree: 0%
 
 Obtenga información sobre cómo recibir eventos de AEM en un webhook y revisar los detalles del evento, como carga útil, encabezados y metadatos.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449751?quality=12&learn=on&captions=spa)
 
-En este ejemplo, el uso de un _gancho web hospedado_ proporcionado por Adobe le permite recibir eventos de AEM sin necesidad de configurar su propio gancho web. Este webhook proporcionado por Adobe está hospedado en [Glitch](https://glitch.com/), una plataforma conocida por ofrecer un entorno basado en la web propicio para generar e implementar aplicaciones web. Sin embargo, la opción de usar su propio webhook también está disponible si se prefiere.
+>[!VIDEO](https://video.tv.adobe.com/v/3427051?quality=12&learn=on)
+
+
+>[!IMPORTANT]
+>
+>Los extremos de demostración en directo de este tutorial se alojaron anteriormente en [Glitch](https://glitch.com/). Desde julio de 2025, Glitch ha interrumpido su servicio de alojamiento y los puntos de conexión ya no son accesibles.
+>>Estamos trabajando activamente en migrar las demostraciones a una plataforma alternativa. El contenido del tutorial sigue siendo preciso y pronto se proporcionarán vínculos actualizados.
+>>Gracias por su comprensión y paciencia.
+
+Utilice su propio webhook hasta que los puntos finales de demostración en directo vuelvan a estar disponibles.
 
 ## Requisitos previos
 
@@ -155,4 +163,4 @@ Puede ver que los detalles del evento de AEM tienen toda la información necesar
 
 ## Recursos adicionales
 
-- [El código fuente del gancho web Glitch](https://glitch.com/edit/#!/precioso-antiguo-montaña rusa) está disponible para consulta.
+- El código fuente de [AEM-Eventing Webhook](../assets/examples/webhook/aemeventing-webhook.tgz) está disponible para su referencia.

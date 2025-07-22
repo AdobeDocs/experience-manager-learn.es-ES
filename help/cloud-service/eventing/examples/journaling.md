@@ -12,10 +12,10 @@ last-substantial-update: 2023-01-29T00:00:00Z
 jira: KT-14734
 thumbnail: KT-14734.jpeg
 exl-id: 33eb0757-f0ed-4c2d-b8b9-fa6648e87640
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: e01eb7ff050321a70d84f8a613705799017dbf5d
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 0%
+source-wordcount: '579'
+ht-degree: 1%
 
 ---
 
@@ -29,7 +29,13 @@ El diario es un método de extracción para consumir eventos de AEM y un diario 
 
 Dentro del proyecto Adobe Developer Console, cada registro de evento se activa automáticamente para el registro en diario, lo que permite una integración perfecta.
 
-En este ejemplo, el uso de una _aplicación web alojada_ proporcionada por Adobe le permite recuperar el primer lote de eventos de AEM del historial sin necesidad de configurar la aplicación. Esta aplicación web proporcionada por Adobe está alojada en [Glitch](https://glitch.com/), una plataforma conocida por ofrecer un entorno basado en web propicio para generar e implementar aplicaciones web. Sin embargo, la opción de usar su propia aplicación también está disponible si se prefiere.
+>[!IMPORTANT]
+>
+>Los extremos de demostración en directo de este tutorial se alojaron anteriormente en [Glitch](https://glitch.com/). Desde julio de 2025, Glitch ha interrumpido su servicio de alojamiento y los puntos de conexión ya no son accesibles.
+>>Estamos trabajando activamente en migrar las demostraciones a una plataforma alternativa. El contenido del tutorial sigue siendo preciso y pronto se proporcionarán vínculos actualizados.
+>>Gracias por su comprensión y paciencia.
+
+Utilice su propia aplicación hasta que los extremos de demostración en directo vuelvan a estar disponibles.
 
 ## Requisitos previos
 
@@ -67,7 +73,7 @@ Para recuperar los eventos de AEM del diario, se requieren credenciales como _ID
 
   ![Tarjeta de eventos de proyecto de Adobe Developer Console](../assets/examples/journaling/adobe-developer-console-project-events-card.png)
 
-## Cargar diario de eventos de AEM
+## Carga del diario de AEM Events
 
 Para simplificar las cosas, esta aplicación web alojada solo obtiene el primer lote de eventos de AEM del historial. Estos son los eventos disponibles más antiguos del historial. Para obtener más información, consulte [primer lote de eventos](https://developer.adobe.com/events/docs/guides/api/journaling_api/#fetching-your-first-batch-of-events-from-the-journal).
 
@@ -82,7 +88,5 @@ Para simplificar las cosas, esta aplicación web alojada solo obtiene el primer 
   ![Completar carga útil de evento de AEM](../assets/examples/journaling/complete-journal-data.png)
 
 ## Recursos adicionales
-
-- [El código fuente del gancho web Glitch](https://glitch.com/edit/#!/indigo-speckle-antler) está disponible para consulta. Es una aplicación React simple que usa los componentes [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) para procesar la interfaz de usuario.
 
 - [La API de diario de Adobe I/O Events](https://developer.adobe.com/events/docs/guides/api/journaling_api/) proporciona información detallada sobre la API, como el primer, el siguiente y el último lote de eventos, la paginación y mucho más.
