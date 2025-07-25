@@ -13,7 +13,7 @@ jira: KT-18308
 thumbnail: null
 exl-id: b87c27e9-b6ab-4530-b25c-a98c55075aef
 source-git-commit: 22a35b008de380bf2f2ef5dfde6743261346df89
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1376'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ Los sofisticados ataques se caracterizan por altas tasas de solicitud, patrones 
 > Las reglas de filtro de tráfico WAF requieren una licencia adicional de **Protección WAF-DDoS** o **Seguridad mejorada**. Las reglas de filtro de tráfico estándar están disponibles para los clientes de Sites y Forms de forma predeterminada.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3469433/?quality=12&learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3469397/?quality=12&learn=on)
 
 ## Objetivos de aprendizaje
 
