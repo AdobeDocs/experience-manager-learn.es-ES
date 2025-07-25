@@ -1,6 +1,6 @@
 ---
-title: Bloqueo de DoS, DDoS y ataques sofisticados mediante reglas de filtro de tráfico
-description: Aprenda a bloquear DoS, DDoS y ataques sofisticados mediante las reglas de filtro de tráfico en AEM as a Cloud Service.
+title: Bloqueo de ataques DoS, DDoS y ataques sofisticados mediante reglas de filtro de tráfico
+description: Obtenga información sobre cómo bloquear ataques DoS, DDoS y sofisticados mediante las reglas de filtro de tráfico en AEM as a Cloud Service.
 version: Experience Manager as a Cloud Service
 feature: Security, Operations
 topic: Security, Administration, Performance
@@ -13,19 +13,19 @@ jira: KT-15184
 thumbnail: KT-15184.jpeg
 exl-id: 60c2306f-3cb6-4a6e-9588-5fa71472acf7
 source-git-commit: 293157c296676ef1496e6f861ed8c2c24da7e068
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '609'
-ht-degree: 32%
+ht-degree: 100%
 
 ---
 
-# Bloqueo de DoS, DDoS y ataques sofisticados mediante reglas de filtro de tráfico
+# Bloqueo de ataques DoS, DDoS y ataques sofisticados mediante reglas de filtro de tráfico
 
-Aprenda a bloquear denegaciones de servicio (DoS), denegaciones de servicio distribuidas (DDoS) y ataques sofisticados mediante **reglas de filtro de tráfico** en la CDN administrada por AEM as a Cloud Service (AEMCS).
+Aprenda a bloquear los ataques de denegación de servicio (DoS), denegación de servicio distribuido (DDoS) y ataques sofisticados mediante las **reglas de filtro de tráfico** en la CDN administrada por AEM as a Cloud Service (AEMCS).
 
-Estos ataques causan picos de tráfico en la CDN y potencialmente en el servicio de AEM Publish (origen aka) y pueden afectar a la capacidad de respuesta y disponibilidad del sitio.
+Estos ataques causan picos de tráfico en la CDN y potencialmente en el servicio de AEM Publish (el origen) y pueden afectar a la capacidad de respuesta y disponibilidad del sitio.
 
-Este artículo proporciona información general sobre las protecciones predeterminadas para su sitio web de AEM y cómo ampliar esas protecciones mediante la configuración del cliente. También describe cómo analizar los patrones de tráfico y configurar las reglas estándar de filtro de tráfico para bloquear esos ataques.
+Este artículo proporciona información general sobre las protecciones predeterminadas de su sitio web de AEM y cómo ampliar esas protecciones mediante la configuración del cliente. También describe cómo analizar los patrones de tráfico y configurar las reglas de filtro de tráfico estándar para bloquear esos ataques.
 
 ## Protecciones predeterminadas en AEM as a Cloud Service
 
@@ -36,15 +36,15 @@ Conozcamos las protecciones predeterminadas DDoS de su sitio web de AEM:
 - **Bloqueo:** la CDN de Adobe bloquea el tráfico en el origen si supera una frecuencia definida por Adobe desde una dirección IP en particular, por cada PoP (punto de presencia) de la CDN.
 - **Alertas:** el Centro de acciones envía un pico de tráfico en la notificación de alerta de origen cuando el tráfico supera una determinada frecuencia. Esta alerta se activa cuando el tráfico a cualquier PoP de CDN determinada supera una frecuencia de solicitud _definida por Adobe_ por cada dirección IP. Consulte [Alertas sobre reglas de filtro de tráfico](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#traffic-filter-rules-alerts) para obtener más información.
 
-Estas protecciones integradas deben considerarse una línea de base para que una organización pueda minimizar el impacto de un ataque DDoS en el rendimiento. Dado que cada sitio web tiene diferentes características de rendimiento y puede ver la degradación del rendimiento antes de que se cumpla el límite de tasa definido por Adobe, se recomienda ampliar las protecciones predeterminadas mediante _configuración del cliente_.
+Estas protecciones integradas deben considerarse una línea de base para que una organización pueda minimizar el impacto de un ataque DDoS en el rendimiento. Dado que cada sitio web presenta diferentes características de rendimiento y puede detectar esa degradación del rendimiento antes de que se cumpla el límite de frecuencia definido por Adobe, se recomienda ampliar las protecciones predeterminadas mediante la _configuración del cliente_.
 
 ## Ampliación de la protección con reglas de filtro de tráfico
 
 Examinemos algunas medidas adicionales recomendadas que los clientes pueden tomar para proteger sus sitios web frente a ataques DDoS:
 
-- Implemente [reglas estándar de filtro de tráfico](./traffic-filter-and-waf-rules/use-cases/using-traffic-filter-rules.md) recomendadas por Adobe para identificar patrones de tráfico potencialmente maliciosos mediante el registro y las alertas de comportamientos sospechosos.
-- Use el complemento **Protección WAF-DDoS** o **Seguridad mejorada** e implemente las [Reglas de filtro de tráfico de WAF](./traffic-filter-and-waf-rules/use-cases/using-waf-rules.md) recomendadas por Adobe para defenderse de ataques sofisticados, incluidos los que utilizan técnicas avanzadas basadas en protocolos o cargas útiles.
-- Aumente la cobertura de caché configurando [transformaciones de solicitud](./traffic-filter-and-waf-rules/how-to/request-transformation.md) para omitir parámetros de consulta innecesarios.
+- Implemente las [reglas de filtro de tráfico estándar](./traffic-filter-and-waf-rules/use-cases/using-traffic-filter-rules.md) recomendadas por Adobe para identificar patrones de tráfico potencialmente maliciosos mediante el registro y las alertas de comportamientos sospechosos.
+- Use el complemento **Protección WAF-DDoS** o **Seguridad mejorada** e implemente las [reglas de filtro de tráfico WAF](./traffic-filter-and-waf-rules/use-cases/using-waf-rules.md) recomendadas por Adobe para defenderse de ataques sofisticados, incluidos los que utilizan técnicas avanzadas basadas en protocolos o cargas útiles.
+- Aumente la cobertura de la caché configurando las [transformaciones de solicitud](./traffic-filter-and-waf-rules/how-to/request-transformation.md) para omitir los parámetros de consulta que no son necesarios.
 
 ## Introducción
 
@@ -78,8 +78,8 @@ Explore los siguientes tutoriales para configurar las reglas recomendadas por Ad
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./traffic-filter-and-waf-rules/setup.md" title="Configuración de reglas de filtro de tráfico, incluidas las reglas de WAF" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="./traffic-filter-and-waf-rules/assets/setup/rules-setup.png" alt="Configuración de reglas de filtro de tráfico, incluidas las reglas de WAF"
+                    <a href="./traffic-filter-and-waf-rules/setup.md" title="Cómo configurar las reglas de filtro de tráfico, incluidas las reglas WAF" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="./traffic-filter-and-waf-rules/assets/setup/rules-setup.png" alt="Cómo configurar las reglas de filtro de tráfico, incluidas las reglas WAF"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -87,13 +87,13 @@ Explore los siguientes tutoriales para configurar las reglas recomendadas por Ad
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./traffic-filter-and-waf-rules/setup.md" target="_self" rel="referrer" title="Configuración de reglas de filtro de tráfico, incluidas las reglas de WAF">Cómo configurar reglas de filtro de tráfico, incluidas las reglas de WAF</a>
+                        <a href="./traffic-filter-and-waf-rules/setup.md" target="_self" rel="referrer" title="Cómo configurar las reglas de filtro de tráfico, incluidas las reglas WAF">Cómo configurar las reglas de filtro de tráfico, incluidas las reglas WAF</a>
                     </p>
-                    <p class="is-size-6">Obtenga información sobre cómo configurar para crear, implementar, probar y analizar los resultados de las reglas de filtro de tráfico, incluidas las reglas de WAF.</p>
+                    <p class="is-size-6">Obtenga información sobre cómo crear, implementar, probar y analizar los resultados de las reglas de filtro de tráfico, incluidas las reglas WAF.</p>
                 </div>
                 <a href="./traffic-filter-and-waf-rules/setup.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Empiece ahora</span>
-                </a>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Iniciar ahora</span>
+                </a>
             </div>
         </div>
     </div>
@@ -101,8 +101,8 @@ Explore los siguientes tutoriales para configurar las reglas recomendadas por Ad
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./traffic-filter-and-waf-rules/use-cases/using-traffic-filter-rules.md" title="Protección de sitios web de AEM mediante reglas estándar de filtro de tráfico" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="./traffic-filter-and-waf-rules/assets/use-cases/using-traffic-filter-rules.png" alt="Protección de sitios web de AEM mediante reglas estándar de filtro de tráfico"
+                    <a href="./traffic-filter-and-waf-rules/use-cases/using-traffic-filter-rules.md" title="Protección de sitios web de AEM mediante reglas de filtro de tráfico estándar" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="./traffic-filter-and-waf-rules/assets/use-cases/using-traffic-filter-rules.png" alt="Protección de sitios web de AEM mediante reglas de filtro de tráfico estándar"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -110,13 +110,13 @@ Explore los siguientes tutoriales para configurar las reglas recomendadas por Ad
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./traffic-filter-and-waf-rules/use-cases/using-traffic-filter-rules.md" target="_self" rel="referrer" title="Protección de sitios web de AEM mediante reglas estándar de filtro de tráfico">Protección de sitios web de AEM mediante reglas estándar de filtro de tráfico</a>
+                        <a href="./traffic-filter-and-waf-rules/use-cases/using-traffic-filter-rules.md" target="_self" rel="referrer" title="Protección de sitios web de AEM mediante reglas de filtro de tráfico estándar">Protección de sitios web de AEM mediante reglas de filtro de tráfico estándar</a>
                     </p>
-                    <p class="is-size-6">Obtenga información sobre cómo proteger los sitios web de AEM del abuso de DoS, DDoS y bots mediante las reglas de filtro de tráfico estándar recomendadas por Adobe en AEM as a Cloud Service.</p>
+                    <p class="is-size-6">Obtenga información sobre cómo proteger los sitios web de AEM frente a ataques DoS, DDoS y el abuso de bots mediante las reglas de filtro de tráfico estándar recomendadas por Adobe en AEM as a Cloud Service.</p>
                 </div>
                 <a href="./traffic-filter-and-waf-rules/use-cases/using-traffic-filter-rules.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Aplicar reglas</span>
-                </a>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Aplicar reglas</span>
+                </a>
             </div>
         </div>
     </div>
@@ -124,8 +124,8 @@ Explore los siguientes tutoriales para configurar las reglas recomendadas por Ad
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./traffic-filter-and-waf-rules/use-cases/using-waf-rules.md" title="Protección de sitios web de AEM mediante las reglas de filtro de tráfico de WAF" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="./traffic-filter-and-waf-rules/assets/use-cases/using-waf-rules.png" alt="Protección de sitios web de AEM mediante las reglas de filtro de tráfico de WAF"
+                    <a href="./traffic-filter-and-waf-rules/use-cases/using-waf-rules.md" title="Protección de sitios web de AEM mediante las reglas de filtro de tráfico WAF" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="./traffic-filter-and-waf-rules/assets/use-cases/using-waf-rules.png" alt="Protección de sitios web de AEM mediante las reglas de filtro de tráfico WAF"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -133,9 +133,9 @@ Explore los siguientes tutoriales para configurar las reglas recomendadas por Ad
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./traffic-filter-and-waf-rules/use-cases/using-waf-rules.md" target="_self" rel="referrer" title="Protección de sitios web de AEM mediante las reglas de filtro de tráfico de WAF">Protección de sitios web de AEM mediante reglas de filtro de tráfico de WAF</a>
+                        <a href="./traffic-filter-and-waf-rules/use-cases/using-waf-rules.md" target="_self" rel="referrer" title="Protección de sitios web de AEM mediante las reglas de filtro de tráfico WAF">Protección de sitios web de AEM mediante las reglas de filtro de tráfico WAF</a>
                     </p>
-                    <p class="is-size-6">Obtenga información sobre cómo proteger los sitios web de AEM de amenazas sofisticadas, como denegaciones de servicio, ataques DDoS y abusos de bots, mediante las reglas de filtro de tráfico del cortafuegos de aplicaciones web (WAF) recomendadas por Adobe en AEM as a Cloud Service.</p>
+                    <p class="is-size-6">Obtenga información sobre cómo proteger los sitios web de AEM frente a amenazas sofisticadas, como DoS, DDoS y el abuso de bots, mediante las reglas de filtro de tráfico WAF (Web Application Firewall) recomendadas por Adobe en AEM as a Cloud Service.</p>
                 </div>
                 <a href="./traffic-filter-and-waf-rules/use-cases/using-waf-rules.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Activar WAF</span>

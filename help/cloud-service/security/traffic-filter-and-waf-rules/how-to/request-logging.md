@@ -1,6 +1,6 @@
 ---
-title: Supervisión de solicitudes confidenciales
-description: Obtenga información sobre cómo monitorizar solicitudes confidenciales registrándolas mediante reglas de filtro de tráfico en AEM as a Cloud Service.
+title: Monitorización de solicitudes confidenciales
+description: Obtenga información sobre cómo monitorizar solicitudes confidenciales registrándolas mediante las reglas de filtro de tráfico de AEM as a Cloud Service.
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Administration, Architecture
@@ -11,39 +11,39 @@ last-substantial-update: 2025-06-04T00:00:00Z
 jira: KT-18311
 thumbnail: null
 source-git-commit: 293157c296676ef1496e6f861ed8c2c24da7e068
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '520'
-ht-degree: 34%
+ht-degree: 100%
 
 ---
 
-# Supervisión de solicitudes confidenciales
+# Monitorización de solicitudes confidenciales
 
-Obtenga información sobre cómo monitorizar solicitudes confidenciales registrándolas mediante reglas de filtro de tráfico en AEM as a Cloud Service.
+Obtenga información sobre cómo monitorizar solicitudes confidenciales registrándolas mediante las reglas de filtro de tráfico de AEM as a Cloud Service.
 
-El registro le permite observar los patrones de tráfico sin afectar a los usuarios o servicios finales y es un primer paso crucial antes de implementar reglas de bloqueo.
+El registro le permite observar los patrones de tráfico sin que afecte a los usuarios o servicios finales y es un primer paso crucial antes de implementar las reglas de bloqueo.
 
-Este tutorial muestra cómo **registrar solicitudes de rutas de inicio y cierre de sesión de WKND** con el servicio de publicación de AEM.
+Este tutorial muestra cómo **registrar solicitudes de rutas de inicio y cierre de sesión de WKND** con el servicio de AEM Publish.
 
-## Cuándo y por qué registrar solicitudes
+## Por qué y cuándo registrar solicitudes
 
-El registro de solicitudes específicas es una práctica de alto valor y bajo riesgo para comprender cómo los usuarios (y los actores potencialmente maliciosos) interactúan con la aplicación de AEM. Resulta especialmente útil antes de aplicar reglas de bloqueo, lo que le proporciona la confianza para refinar su postura de seguridad sin interrumpir el tráfico legítimo.
+Registrar solicitudes específicas es una práctica de alto valor y bajo riesgo para comprender cómo los usuarios (y los actores potencialmente maliciosos) interactúan con la aplicación de AEM. Resulta especialmente útil antes de aplicar reglas de bloqueo, ya que le da la confianza para perfeccionar su postura de seguridad sin interrumpir el tráfico legítimo.
 
-Los escenarios comunes para el registro incluyen:
+Los escenarios habituales para el registro incluyen:
 
-- Validando el impacto y el alcance de una regla antes de promoverla al modo `block`.
-- Monitorización de rutas de inicio de sesión/cierre de sesión y puntos finales de autenticación para patrones inusuales o intentos de fuerza bruta.
-- Seguimiento del acceso de alta frecuencia a puntos finales de API para un posible abuso o actividad DoS.
+- Validar el impacto y el alcance de una regla antes de promoverla al modo `block`.
+- Monitorizar las rutas de inicio de sesión/cierre de sesión y puntos finales de autenticación para patrones inusuales o intentos de fuerza bruta.
+- Realizar el seguimiento del acceso de alta frecuencia a puntos finales de la API para detectar posibles abusos o actividades DoS.
 - Establecer líneas de base para el comportamiento de bots antes de aplicar controles más estrictos.
-- En caso de incidentes de seguridad, proporcione datos forenses para comprender la naturaleza del ataque y los recursos afectados.
+- En caso de incidentes de seguridad, proporcionar datos forenses para comprender la naturaleza del ataque y los recursos afectados.
 
 ## Requisitos previos
 
-Antes de continuar, asegúrese de completar la configuración necesaria tal como se describe en el tutorial [Cómo configurar el filtro de tráfico y las reglas de WAF](../setup.md). Además, ten en cuenta que has clonado e implementado el [Proyecto WKND Sites de AEM](https://github.com/adobe/aem-guides-wknd) en tu entorno de AEM.
+Antes de continuar, asegúrese de completar la configuración necesaria tal como se describe en el tutorial [Cómo configurar el filtro de tráfico y las reglas WAF](../setup.md). Además, tenga en cuenta que ha clonado e implementado el [proyecto WKND Sites de AEM](https://github.com/adobe/aem-guides-wknd) en su entorno de AEM.
 
-## Ejemplo: Registrar solicitudes de inicio y cierre de sesión de WKND
+## Ejemplo: registrar solicitudes de inicio y cierre de sesión de WKND
 
-En este ejemplo, se crea una regla de filtro de tráfico para registrar las solicitudes realizadas en las rutas de inicio y cierre de sesión de WKND en el servicio de publicación de AEM. Ayuda a supervisar los intentos de autenticación e identificar posibles problemas de seguridad.
+En este ejemplo, se crea una regla de filtro de tráfico para registrar las solicitudes realizadas en las rutas de inicio y cierre de sesión de WKND en el servicio de AEM Publish. Le ayuda a monitorizar los intentos de autenticación e identificar posibles problemas de seguridad.
 
 - Añada la siguiente regla al archivo `/config/cdn.yaml` del proyecto WKND.
 
@@ -68,17 +68,17 @@ data:
       action: log   
 ```
 
-- Confirme y envíe los cambios al repositorio de Git de Cloud Manager.
+- Confirme e inserte los cambios en el repositorio de Git de Cloud Manager.
 
 - Implemente los cambios en el entorno de AEM mediante la canalización de configuración de Cloud Manager [creada anteriormente](../setup.md#deploy-rules-using-adobe-cloud-manager).
 
-- Para probar la regla, inicie sesión y cierre la sesión del sitio WKND del programa (por ejemplo, `https://publish-pXXXX-eYYYY.adobeaemcloud.com/us/en.html`). Puede usar `asmith/asmith` como nombre de usuario y contraseña.
+- Pruebe la regla iniciando sesión y cerrando sesión en el sitio WKND del programa (por ejemplo, `https://publish-pXXXX-eYYYY.adobeaemcloud.com/us/en.html`). Puede usar `asmith/asmith` como nombre de usuario y contraseña.
 
   ![Inicio de sesión WKND](../assets/how-to/wknd-login.png)
 
 ## Análisis
 
-Analicemos los resultados de la regla `publish-auth-requests` descargando los registros de CDN de AEMCS de Cloud Manager y utilizando [Herramientas de análisis de registro de CDN de AEMCS](../setup.md#setup-the-elastic-dashboard-tool).
+Analicemos los resultados de la regla `publish-auth-requests` descargando los registros de CDN de AEMCS desde Cloud Manager y utilizando las [herramientas de análisis de registro de CDN de AEMCS](../setup.md#setup-the-elastic-dashboard-tool).
 
 - Desde la tarjeta **Entornos** de [Cloud Manager](https://my.cloudmanager.adobe.com/), descargue los registros de CDN del servicio **Publish** de AEMCS.
 
