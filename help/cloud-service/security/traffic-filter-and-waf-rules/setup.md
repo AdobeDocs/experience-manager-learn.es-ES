@@ -1,6 +1,6 @@
 ---
-title: Configuración de reglas de filtro de tráfico, incluidas las reglas de WAF
-description: Obtenga información sobre cómo configurar para crear, implementar, probar y analizar los resultados de las reglas de filtro de tráfico, incluidas las reglas de WAF.
+title: Cómo configurar las reglas de filtro de tráfico, incluidas las reglas WAF
+description: Obtenga información sobre cómo crear, implementar, probar y analizar los resultados de las reglas de filtro de tráfico, incluidas las reglas WAF.
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Administration, Architecture
@@ -14,36 +14,36 @@ exl-id: 0a738af8-666b-48dc-8187-9b7e6a8d7e1b
 source-git-commit: b7f567da159865ff04cb7e9bd4dae0b140048e7d
 workflow-type: tm+mt
 source-wordcount: '1125'
-ht-degree: 14%
+ht-degree: 100%
 
 ---
 
-# Configuración de reglas de filtro de tráfico, incluidas las reglas de WAF
+# Cómo configurar las reglas de filtro de tráfico, incluidas las reglas WAF
 
-Obtenga información sobre **cómo configurar** reglas de filtro de tráfico, incluidas las reglas de Firewall de aplicaciones web (WAF). En este tutorial, establecemos las bases para tutoriales posteriores, donde configurará e implementará reglas, seguidas de pruebas y análisis de los resultados.
+Obtenga información sobre **cómo configurar** las reglas de filtro de tráfico, incluidas las reglas WAF (Web Application Firewall). En este tutorial, sentamos las bases para los tutoriales posteriores, donde configurará e implementará reglas, seguidas de pruebas y análisis de los resultados.
 
-Para mostrar el proceso de configuración, el tutorial utiliza el [Proyecto WKND Sites de AEM](https://github.com/adobe/aem-guides-wknd).
+Para mostrar el proceso de configuración, el tutorial utiliza el [proyecto de AEM WKND Sites](https://github.com/adobe/aem-guides-wknd).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3469395/?quality=12&learn=on)
 
-## Resumen de configuración
+## Información general sobre la configuración
 
 La base para los tutoriales posteriores incluye los siguientes pasos:
 
-- _Creando reglas_ dentro de su proyecto de AEM en la carpeta `config`
-- _Implementando reglas_ mediante la canalización de configuración de Adobe Cloud Manager.
+- _Crear reglas_ dentro de su proyecto de AEM en la carpeta `config`
+- _Implementar reglas_ mediante la canalización de configuración de Adobe Cloud Manager.
 - _Probar reglas_ con herramientas como Curl, Vegeta y Nikto
-- _Analizando resultados_ mediante la herramienta de análisis de registro de CDN de AEM CS
+- _Analizar resultados_ mediante las herramientas de análisis de registros de CDN de AEMCS
 
 ## Creación de reglas en el proyecto de AEM
 
-Para definir las reglas de filtro de tráfico **standard** y **WAF** en su proyecto de AEM, siga estos pasos:
+Para definir las reglas de filtro de tráfico **estándar** y **WAF** en su proyecto de AEM, siga estos pasos:
 
-1. Cree una carpeta con el nombre `config` en el nivel superior del proyecto de AEM.
+1. En el nivel superior del proyecto de AEM, cree una carpeta denominada `config`.
 
-2. Dentro de la carpeta `config`, cree un archivo denominado `cdn.yaml`.
+2. En la carpeta `config`, cree un nuevo archivo con el nombre `cdn.yaml`.
 
-3. Usar la siguiente estructura de metadatos en `cdn.yaml`:
+3. Use la siguiente estructura de metadatos en `cdn.yaml`:
 
 ```yaml
 kind: "CDN"
@@ -57,7 +57,7 @@ data:
 
 ![Archivo y carpeta de reglas del proyecto WKND de AEM](./assets/setup/wknd-rules-file-and-folder.png)
 
-En el [siguiente tutorial](#next-steps), aprenderá a agregar el filtro de tráfico estándar **recomendado por Adobe y las reglas de WAF** al archivo anterior como una base sólida para su implementación.
+En el [siguiente tutorial](#next-steps), aprenderá a añadir el **filtro de tráfico estándar recomendado por Adobe y las reglas WAF** al archivo anterior como una base sólida para su implementación.
 
 ## Implementación de reglas mediante Adobe Cloud Manager
 
@@ -65,7 +65,7 @@ Para preparar la implementación de las reglas, siga estos pasos:
 
 1. Inicie sesión en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione su programa.
 
-2. Desde la página **Resumen del programa**, vaya a la tarjeta **Canalizaciones** y haga clic en **+Agregar** para crear una nueva canalización.
+2. Desde la página **Resumen del programa**, vaya a la tarjeta **Canalizaciones** y haga clic en **+Añadir** para crear una nueva canalización.
 
    ![Tarjeta de canalizaciones de Cloud Manager](./assets/setup/cloud-manager-pipelines-card.png)
 
@@ -76,30 +76,30 @@ Para preparar la implementación de las reglas, siga estos pasos:
 
    ![Cuadro de diálogo de canalización de configuración de Cloud Manager](./assets/setup/cloud-manager-config-pipeline-step1-dialog.png)
 
-4. Configuración del código Source:
+4. Configuración del código fuente:
 
    - **Código para implementar**: implementación específica
    - **Incluye**: config
    - **Entorno de implementación**: por ejemplo, `wknd-program-dev`
-   - **Repositorio**: repositorio Git (por ejemplo, `wknd-site`)
+   - **Repositorio**: repositorio de Git (por ejemplo, `wknd-site`)
    - **Rama de Git**: su rama de trabajo
-   - **Ubicación de código**: `/config`
+   - **Ubicación del código**: `/config`
 
    ![Cuadro de diálogo de canalización de configuración de Cloud Manager](./assets/setup/cloud-manager-config-pipeline-step2-dialog.png)
 
-5. Revise la configuración de la canalización y haga clic en **Guardar**.
+5. Revise la configuración y haga clic en **Guardar**.
 
 En el [siguiente tutorial](#next-steps), aprenderá a implementar la canalización en su entorno de AEM.
 
-## Prueba de reglas con herramientas
+## Comprobación de las reglas con herramientas
 
-Para probar la eficacia del filtro de tráfico estándar y las reglas de WAF, puede utilizar varias herramientas para simular solicitudes y analizar cómo responden las reglas.
+Para probar la eficacia del filtro de tráfico estándar y las reglas WAF, puede utilizar varias herramientas para simular solicitudes y analizar cómo responden las reglas.
 
 Compruebe que tiene instaladas las siguientes herramientas en el equipo local o siga las instrucciones para instalarlas:
 
-- [Curl](https://curl.se/): Probar flujo de solicitud/respuesta.
-- [Vegeta](https://github.com/tsenart/vegeta): simular carga de solicitud alta (prueba DoS).
-- [Nikto](https://github.com/sullo/nikto/wiki): Analice en busca de vulnerabilidades.
+- [Curl](https://curl.se/): probar flujo de solicitud/respuesta.
+- [Vegeta](https://github.com/tsenart/vegeta): simular una carga de solicitud elevada (prueba DoS).
+- [Nikto](https://github.com/sullo/nikto/wiki): analizar en busca de vulnerabilidades.
 
 Puede verificar la instalación mediante los siguientes comandos:
 
@@ -115,35 +115,35 @@ $ cd <PATH-OF-CLONED-REPO>/program
 $ ./nikto.pl -Version
 ```
 
-En el [siguiente tutorial](#next-steps), aprenderá a utilizar estas herramientas para simular cargas de solicitudes altas y solicitudes malintencionadas con el fin de probar la efectividad del filtro de tráfico y las reglas de WAF.
+En el [siguiente tutorial](#next-steps), aprenderá a utilizar estas herramientas para simular cargas de solicitudes altas y solicitudes malintencionadas con el fin de probar la eficacia del filtro de tráfico y las reglas WAF.
 
-## Analizar resultados
+## Análisis de resultados
 
 Para prepararse para analizar los resultados, siga estos pasos:
 
-1. Instale **Herramientas de análisis de registro de CDN de AEM CS** para visualizar y analizar los patrones mediante paneles creados previamente.
+1. Instale las **herramientas de análisis de registros de CDN de AEMCS** para visualizar y analizar los patrones mediante los paneles de control creados previamente.
 
-2. Realice **ingesta de registros de CDN** descargando registros de la interfaz de usuario de Cloud Manager. También puede reenviar registros directamente a un destino de registro alojado compatible, como Splunk o Elasticsearch.
+2. Realice la **ingesta de registros de CDN** descargando registros desde la interfaz de usuario de Cloud Manager. También puede reenviar registros directamente a un destino de registro alojado compatible, como Splunk o Elasticsearch.
 
 ### Herramientas de análisis de registro de CDN de AEMCS
 
-Para analizar los resultados del filtro de tráfico y las reglas de WAF, puede usar la **Herramienta de análisis de registro de CDN de AEM CS**. Esta herramienta proporciona paneles creados previamente para visualizar el tráfico de CDN y la actividad de WAF mediante los registros recopilados de CDN de AEM CS.
+Para analizar los resultados del filtro de tráfico y las reglas WAF, puede usar las **herramientas de análisis de registro de CDN de AEMCS**. Estas herramientas proporcionan paneles de control creados previamente para visualizar el tráfico de CDN y la actividad de WAF mediante los registros recopilados de CDN de AEMCS.
 
-La herramienta de análisis de registro de CDN de AEMCS admite dos plataformas de observabilidad, **ELK** (Elasticsearch, Logstash, Kibana) y **Splunk**.
+Las herramientas de análisis de registros de CDN de AEMCS son compatibles con dos plataformas de observabilidad, **ELK** (Elasticsearch, Logstash, Kibana) y **Splunk**.
 
-Es posible utilizar la función de reenvío de registros para transmitir los registros a un servicio de registro ELK o Splunk alojado, donde puede instalar un panel para visualizar y analizar el filtro de tráfico estándar y las reglas de filtro de tráfico de WAF. Sin embargo, para este tutorial, configurará el tablero en una instancia de ELK local instalada en el equipo.
+Es posible utilizar la función de reenvío de registros para transmitir los registros a un servicio de registro ELK o Splunk alojado, donde puede instalar un panel de control para visualizar y analizar el filtro de tráfico estándar y las reglas de filtro de tráfico WAF. Sin embargo, para este tutorial, configurará el panel de control en una instancia de ELK local instalada en el equipo.
 
 1. Clone el repositorio [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling).
 
 2. Siga la [guía de configuración del contenedor ELK Docker](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md) para instalar y configurar la pila ELK localmente.
 
-3. Con los paneles ELK, puede explorar métricas como solicitudes de IP, tráfico bloqueado, patrones de URI y alertas de seguridad.
+3. Con los paneles de control ELK, puede explorar métricas como las solicitudes de IP, el tráfico bloqueado, los patrones de URI y las alertas de seguridad.
 
    ![Panel de control de reglas de filtro de tráfico ELK](./assets/setup/elk-dashboard.png)
 
 >[!NOTE]
 > 
-> Si los registros aún no se han introducido desde AEM CS CDN, los paneles aparecerán vacíos.
+> Si los registros aún no se han introducido desde la CDN de AEMCS, los paneles aparecerán vacíos.
 
 ### Ingesta de registros de CDN
 
@@ -168,13 +168,13 @@ Para introducir registros de CDN en la pila ELK, siga estos pasos:
 
    - Para cambiar el intervalo de tiempo, haga clic en el icono de calendario en la esquina superior derecha y seleccione el intervalo de tiempo deseado.
 
-- En el [siguiente tutorial](#next-steps), aprenderá a analizar los resultados de las reglas estándar de filtro de tráfico y filtro de tráfico de WAF usando los paneles creados previamente en la pila ELK.
+- En el [siguiente tutorial](#next-steps), aprenderá a analizar los resultados de las reglas de filtro de tráfico estándar y filtro de tráfico WAF usando los paneles de control creados previamente en la pila ELK.
 
-  ![Paneles creados previamente con la herramienta ELK](./assets/setup/elk-tool-pre-built-dashboards.png)
+  ![Paneles de control creados previamente con la herramienta ELK](./assets/setup/elk-tool-pre-built-dashboards.png)
 
 ## Resumen
 
-Ha establecido correctamente las bases para implementar reglas de filtro de tráfico, incluidas las reglas de WAF en AEM as a Cloud Service. Ha creado una estructura de archivos de configuración, una canalización para la implementación y herramientas preparadas para probar y analizar los resultados.
+Ha configurado correctamente las bases para implementar reglas de filtro de tráfico, incluidas las reglas WAF en AEM as a Cloud Service. Ha creado una estructura de archivos de configuración, una canalización para la implementación y herramientas preparadas para probar y analizar los resultados.
 
 ## Siguientes pasos
 
@@ -201,8 +201,8 @@ Obtenga información sobre cómo implementar las reglas recomendadas por Adobe m
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./use-cases/using-traffic-filter-rules.md" title="Protección de sitios web de AEM mediante reglas estándar de filtro de tráfico" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="./assets/use-cases/using-traffic-filter-rules.png" alt="Protección de sitios web de AEM mediante reglas estándar de filtro de tráfico"
+                    <a href="./use-cases/using-traffic-filter-rules.md" title="Protección de sitios web de AEM mediante reglas de filtro de tráfico estándar" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="./assets/use-cases/using-traffic-filter-rules.png" alt="Protección de sitios web de AEM mediante reglas de filtro de tráfico estándar"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -210,13 +210,13 @@ Obtenga información sobre cómo implementar las reglas recomendadas por Adobe m
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./use-cases/using-traffic-filter-rules.md" target="_self" rel="referrer" title="Protección de sitios web de AEM mediante reglas estándar de filtro de tráfico">Protección de sitios web de AEM mediante reglas estándar de filtro de tráfico</a>
+                        <a href="./use-cases/using-traffic-filter-rules.md" target="_self" rel="referrer" title="Protección de sitios web de AEM mediante reglas de filtro de tráfico estándar">Protección de sitios web de AEM mediante reglas de filtro de tráfico estándar</a>
                     </p>
-                    <p class="is-size-6">Obtenga información sobre cómo proteger los sitios web de AEM del abuso de DoS, DDoS y bots mediante las reglas de filtro de tráfico estándar recomendadas por Adobe en AEM as a Cloud Service.</p>
+                    <p class="is-size-6">Obtenga información sobre cómo proteger los sitios web de AEM frente a ataques DoS, DDoS y el abuso de bots mediante las reglas de filtro de tráfico estándar recomendadas por Adobe en AEM as a Cloud Service.</p>
                 </div>
                 <a href="./use-cases/using-traffic-filter-rules.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Aplicar reglas</span>
-                </a>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Aplicar reglas</span>
+                </a>
             </div>
         </div>
     </div>
@@ -224,8 +224,8 @@ Obtenga información sobre cómo implementar las reglas recomendadas por Adobe m
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./use-cases/using-waf-rules.md" title="Protección de sitios web de AEM mediante las reglas de filtro de tráfico de WAF" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="./assets/use-cases/using-waf-rules.png" alt="Protección de sitios web de AEM mediante las reglas de filtro de tráfico de WAF"
+                    <a href="./use-cases/using-waf-rules.md" title="Protección de sitios web de AEM mediante las reglas de filtro de tráfico WAF" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="./assets/use-cases/using-waf-rules.png" alt="Protección de sitios web de AEM mediante las reglas de filtro de tráfico WAF"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -233,9 +233,9 @@ Obtenga información sobre cómo implementar las reglas recomendadas por Adobe m
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./use-cases/using-waf-rules.md" target="_self" rel="referrer" title="Protección de sitios web de AEM mediante las reglas de filtro de tráfico de WAF">Protección de sitios web de AEM mediante reglas de filtro de tráfico de WAF</a>
+                        <a href="./use-cases/using-waf-rules.md" target="_self" rel="referrer" title="Protección de sitios web de AEM mediante las reglas de filtro de tráfico WAF">Protección de sitios web de AEM mediante reglas de filtro de tráfico WAF</a>
                     </p>
-                    <p class="is-size-6">Obtenga información sobre cómo proteger los sitios web de AEM de amenazas sofisticadas, como denegaciones de servicio, ataques DDoS y abusos de bots, mediante las reglas de filtro de tráfico del cortafuegos de aplicaciones web (WAF) recomendadas por Adobe en AEM as a Cloud Service.</p>
+                    <p class="is-size-6">Obtenga información sobre cómo proteger los sitios web de AEM frente a amenazas sofisticadas, como DoS, DDoS y el abuso de bots, mediante las reglas de filtro de tráfico WAF (Web Application Firewall) recomendadas por Adobe en AEM as a Cloud Service.</p>
                 </div>
                 <a href="./use-cases/using-waf-rules.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Activar WAF</span>
@@ -248,7 +248,7 @@ Obtenga información sobre cómo implementar las reglas recomendadas por Adobe m
 
 ## Casos de uso avanzados
 
-Más allá del filtro de tráfico estándar recomendado por Adobe y las reglas de WAF, puede implementar escenarios avanzados para lograr requisitos comerciales específicos. Estos escenarios incluyen:
+Más allá del filtro de tráfico estándar recomendado por Adobe y las reglas WAF, puede implementar escenarios avanzados para lograr requisitos comerciales específicos. Estas operaciones incluyen:
 
 <!-- CARDS
 {target = _self}
@@ -265,8 +265,8 @@ Más allá del filtro de tráfico estándar recomendado por Adobe y las reglas d
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./how-to/request-logging.md" title="Supervisión de solicitudes confidenciales" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="assets/how-to/wknd-login.png" alt="Supervisión de solicitudes confidenciales"
+                    <a href="./how-to/request-logging.md" title="Monitorización de solicitudes confidenciales" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="assets/how-to/wknd-login.png" alt="Monitorización de solicitudes confidenciales"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -274,9 +274,9 @@ Más allá del filtro de tráfico estándar recomendado por Adobe y las reglas d
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./how-to/request-logging.md" target="_self" rel="referrer" title="Supervisión de solicitudes confidenciales">Supervisión de solicitudes confidenciales</a>
+                        <a href="./how-to/request-logging.md" target="_self" rel="referrer" title="Monitorización de solicitudes confidenciales">Monitorización de solicitudes confidenciales</a>
                     </p>
-                    <p class="is-size-6">Obtenga información sobre cómo monitorizar solicitudes confidenciales registrándolas mediante reglas de filtro de tráfico en AEM as a Cloud Service.</p>
+                    <p class="is-size-6">Obtenga información sobre cómo monitorizar solicitudes confidenciales registrándolas mediante las reglas de filtro de tráfico de AEM as a Cloud Service.</p>
                 </div>
                 <a href="./how-to/request-logging.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
@@ -320,7 +320,7 @@ Más allá del filtro de tráfico estándar recomendado por Adobe y las reglas d
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./how-to/request-transformation.md" target="_self" rel="referrer" title="Normalización de solicitudes">Normalizando solicitudes</a>
+                        <a href="./how-to/request-transformation.md" target="_self" rel="referrer" title="Normalización de solicitudes">Normalización de solicitudes</a>
                     </p>
                     <p class="is-size-6">Obtenga información sobre cómo normalizar solicitudes transformándolas mediante reglas de filtro de tráfico en AEM as a Cloud Service.</p>
                 </div>
@@ -335,4 +335,4 @@ Más allá del filtro de tráfico estándar recomendado por Adobe y las reglas d
 
 ## Recursos adicionales
 
-- [Reglas De Filtro De Tráfico Que Incluyen Reglas De WAF](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf)
+- [Reglas de filtro de tráfico, incluidas las reglas WAF](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf)
