@@ -6,10 +6,10 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
-source-git-commit: 7e13dda1303e33181bdb6845c8274b0e59ea5505
-workflow-type: ht
-source-wordcount: '594'
-ht-degree: 100%
+source-git-commit: bc1c7a96a3d5dbc23fb7d34343cee0cfc2853be9
+workflow-type: tm+mt
+source-wordcount: '597'
+ht-degree: 99%
 
 ---
 
@@ -111,6 +111,7 @@ ht-degree: 100%
          + Procedimientos{#how-to}
             + [Opciones de bloque](./edge-delivery-services/developing/universal-editor/how-to/block-options.md)
             + [Encabezado y pie de página](./edge-delivery-services/developing/universal-editor/how-to/header-and-footer.md)
+            + [Previsualización de extensión local](./edge-delivery-services/developing/universal-editor/how-to/local-extension-preview.md)
    + Procedimientos{#how-to}
       + [Fuentes RSS](edge-delivery-services/how-to/rss.md)
       + [Uso compartido en redes sociales](edge-delivery-services/how-to/social-media-sharing.md)
@@ -131,7 +132,7 @@ ht-degree: 100%
    + [Uso compartido en redes sociales](developing/social-media-sharing-technical-video-use.md)
    + [Personalización de iconos de componente](developing/component-icons-technical-video-develop.md)
 + Personalización {#personalization}
-   + [Integración con Adobe Target](https://helpx.adobe.com/es/marketing-cloud/how-to/aem-target.html?lang=es){target=_blank}
+   + [Integración con Adobe Target](https://helpx.adobe.com/marketing-cloud/how-to/aem-target.html?lang=es){target=_blank}
    + [Configurar fragmentos de experiencia y Adobe Target](personalization/experience-fragment-target-technical-video-setup.md)
    + [Uso de fragmentos de experiencia con Adobe Target](personalization/experience-fragment-target-offer-feature-video-use.md)
    + [Configurar ContextHub](personalization/context-hub-technical-video-setup.md)
