@@ -10,10 +10,10 @@ doc-type: Catalog
 jira: KT-15832
 duration: 88
 exl-id: aeac08a2-75a0-4adb-b32e-0e7f85e7eb1d
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
-source-wordcount: '586'
-ht-degree: 100%
+source-git-commit: f0ad5d66549970337118220156d7a6b0fd30fd57
+workflow-type: tm+mt
+source-wordcount: '620'
+ht-degree: 94%
 
 ---
 
@@ -100,7 +100,7 @@ Aprenda a configurar su entorno de desarrollo local para permitir un desarrollo 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./3-local-development-environment.md" title="Configuración de un entorno de desarrollo local" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443981/?format=jpeg&nocache=1741027443737&captions=spa" alt="Configuración de un entorno de desarrollo local"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443978/?format=jpeg&nocache=1753811862249" alt="Configuración de un entorno de desarrollo local"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -261,6 +261,7 @@ Ahora que ha completado este tutorial, aproveche lo que ha aprendido con estas g
 
 * ./how-to/block-options.md
 * ./how-to/header-and-footer.md
+* ./how-to/local-extension-preview.md {image = ./how-to/assets/local-extension-preview/extension-loaded.png}
 
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
@@ -303,9 +304,32 @@ Ahora que ha completado este tutorial, aproveche lo que ha aprendido con estas g
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="./how-to/header-and-footer.md" target="_blank" rel="referrer" title="Encabezado y pie de página">Encabezado y pie de página</a>
                     </p>
-                    <p class="is-size-6">Descubra cómo se utilizan el encabezado y los pies de página en Edge Delivery Services y el editor universal.</p>
+                    <p class="is-size-6">Descubra cómo se desarrollan los encabezados y pies de página en Edge Delivery Services y el editor universal.</p>
                 </div>
                 <a href="./how-to/header-and-footer.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Preview a Universal Editor extension">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="./how-to/local-extension-preview.md" title="Previsualización de una extensión de editor universal" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="./how-to/assets/local-extension-preview/extension-loaded.png" alt="Previsualización de una extensión de editor universal"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="./how-to/local-extension-preview.md" target="_blank" rel="referrer" title="Previsualización de una extensión de editor universal">Vista previa de una extensión de editor universal</a>
+                    </p>
+                    <p class="is-size-6">Obtenga información sobre cómo previsualizar una extensión de editor universal que se ejecuta localmente durante el desarrollo.</p>
+                </div>
+                <a href="./how-to/local-extension-preview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
                 </a>
             </div>
