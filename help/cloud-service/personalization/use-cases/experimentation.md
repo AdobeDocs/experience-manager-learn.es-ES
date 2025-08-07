@@ -250,7 +250,7 @@ Para ver la prueba A/B en acción, visite el [sitio web de habilitación de WKND
 
 ## Recursos adicionales
 
-- [Información general sobre pruebas A/B](https://experienceleague.adobe.com/en/docs/target/using/activities/abtest/test-ab)
-- [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)
-- [Resumen de flujos de datos](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)
-- [Compositor de experiencias visuales (VEC)](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/visual-experience-composer)
+- [Información general sobre pruebas A/B](https://experienceleague.adobe.com/es/docs/target/using/activities/abtest/test-ab)
+- [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/es/docs/experience-platform/web-sdk/home)
+- [Resumen de flujos de datos](https://experienceleague.adobe.com/es/docs/experience-platform/datastreams/overview)
+- [Compositor de experiencias visuales (VEC)](https://experienceleague.adobe.com/es/docs/target/using/experiences/vec/visual-experience-composer)

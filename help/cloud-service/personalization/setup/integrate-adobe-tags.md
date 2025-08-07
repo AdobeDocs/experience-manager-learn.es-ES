@@ -127,5 +127,5 @@ Para confirmar que la configuración de Etiquetas funciona correctamente, puede:
 
 ## Recursos adicionales
 
-- [Información general de Adobe Experience Platform Debugger](https://experienceleague.adobe.com/en/docs/experience-platform/debugger/home)
+- [Información general de Adobe Experience Platform Debugger](https://experienceleague.adobe.com/es/docs/experience-platform/debugger/home)
 - [Información general sobre las etiquetas](https://experienceleague.adobe.com/es/docs/experience-platform/tags/home)
