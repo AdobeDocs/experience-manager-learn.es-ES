@@ -5,9 +5,9 @@ sub-product: Experience Manager Assets
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 doc-type: Catalog
 exl-id: 1d0b0183-25ee-4cb4-82a5-3506e7c1c908
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
-source-wordcount: '177'
+source-git-commit: 82437ad5d395c5261b3a913b168e4068abb55206
+workflow-type: tm+mt
+source-wordcount: '128'
 ht-degree: 100%
 
 ---
@@ -22,13 +22,13 @@ Adobe Experience Manager (AEM) Assets es una herramienta de administración de r
 >id="aemcloud_assets_overview"
 >title="AEM Assets"
 >abstract="Aprenda a buscar y editar rápidamente los recursos que necesita."
->additional-url="https://video.tv.adobe.com/v/3454806?captions=spa" text="Guía de AEM Assets"
+>additional-url="https://video.tv.adobe.com/v/3427944" text="Guía de AEM Assets"
 
 ## Guía de AEM Assets
 
 Descubra qué es AEM Assets y cómo puede utilizarlo para lograr los objetivos empresariales de su organización.
 
->[!VIDEO](https://video.tv.adobe.com/v/3454806?learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3427944?learn=on)
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
@@ -36,55 +36,6 @@ Descubra qué es AEM Assets y cómo puede utilizarlo para lograr los objetivos e
 <div id="recs-overview-body-4"></div>
 <div id="recs-overview-body-5"></div>
 <div id="recs-overview-body-6"></div>
-
-<div id="staff-picks-section">
-
-## Selecciones del personal
-
-<table>
-<td>
-   <a href="./creative-workflows/aem-desktop-app.md">
-   <img alt="Etiquetas inteligentes mejoradas" src="./assets/overview/desktop-app.png" />
-   </a>
-   <div>
-      <a href="./creative-workflows/aem-desktop-app.md">
-      <strong>Uso de la aplicación de escritorio de AEM</strong>
-      </a>
-   </div>
-   <p>
-      <em>Acceso a recursos en AEM directamente desde el escritorio</em>
-   </p>
-</td>
-<td>
-   <a href="../assets-essentials/overview.md">
-   <img alt="AEM Assets Essentials" src="../assets-essentials/assets/overview/getting-started.png"/>
-   </a>
-   <div>
-      <a href="../assets-essentials/overview.md">
-      <strong>Introducción a Assets Essentials</strong>
-      </a>
-    
-   </div>
-   <p>
-      <em>Acelere la creación de experiencias desde el concepto hasta el diseño y la distribución.</em>
-   <p>
-</td>
-<td>
-   <a href="./dynamic-media/dynamic-media-overview-feature-video-use.md">
-   <img alt="Información general de Dynamic Media" src="./assets/overview/dynamic-media.png" />
-   </a>
-   <div>
-      <a href="./dynamic-media/dynamic-media-overview-feature-video-use.md">
-      <strong>Información general de Dynamic Media</strong>
-      </a>
-   </div>
-   <p>
-      <em>Administrar y acceder al contenido multimedia mediante Dynamic Media</em>
-   <p>
-</td>
-</table>
-
-</div>
 
 ## Recursos adicionales
 
