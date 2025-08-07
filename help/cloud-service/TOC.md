@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Experience Manager as a Cloud Service
 team: TM
-source-git-commit: 293157c296676ef1496e6f861ed8c2c24da7e068
-workflow-type: ht
-source-wordcount: '1400'
-ht-degree: 100%
+source-git-commit: 70665c019f63df1e736292ad24c47624a3a80d49
+workflow-type: tm+mt
+source-wordcount: '1414'
+ht-degree: 99%
 
 ---
 
@@ -141,6 +141,13 @@ ht-degree: 100%
       + [Explorador del repositorio](./debugging/cloud-service/repository-browser.md)
       + Riesgos{#risks}
          + [Advertencias transversales](./debugging/cloud-service/risks/traversals.md)
++ Personalización {#personalization}
+   + [Información general](./personalization/overview.md)
+   + Configuración{#setup}
+      + [Integración con Adobe Target](./personalization/setup/integrate-adobe-target.md)
+      + [Integrar etiquetas](./personalization/setup/integrate-adobe-tags.md)
+   + Casos de uso {#use-cases}
+      + [Experimentación (prueba A/B)](./personalization/use-cases/experimentation.md)
 + API DE AEM{#aem-apis}
    + [Información general](./apis/overview.md)
    + OpenAPI{#openapis}
@@ -280,7 +287,7 @@ ht-degree: 100%
       + [2 - Configuración](./forms/create-address-block-component/set-up.md)
       + [3 - Crear componente](./forms/create-address-block-component/creating-address-component.md)
       + [4 - Implementar el componente](./forms/create-address-block-component/deploy-your-project.md)
-   + Crear componente de imagen activa{#clickable-image-component}
+   + Crear componente de imagen en el que se pueda hacer clic{#clickable-image-component}
       + [1 - Introducción](./forms/clickable-image-component/introduction.md)
       + [2 - Crear componente](./forms/clickable-image-component/create-component.md)
       + [3 - Controlar el evento de clic](./forms/clickable-image-component/handle-click-event.md)
