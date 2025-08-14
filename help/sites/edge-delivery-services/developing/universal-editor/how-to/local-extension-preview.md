@@ -9,14 +9,14 @@ level: Beginner, Intermediate, Experienced
 doc-type: Tutorial
 jira: KT-18658
 source-git-commit: f0ad5d66549970337118220156d7a6b0fd30fd57
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '306'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Previsualización de una extensión local de Universal Editor
+# Previsualización de una extensión local de editor universal
 
 >[!TIP]
 > Aprenda a [crear una extensión de editor universal](https://developer.adobe.com/uix/docs/services/aem-universal-editor/).
@@ -25,14 +25,14 @@ Para obtener una vista previa de una extensión de editor universal durante el d
 
 1. Ejecute la extensión localmente.
 2. Acepte el certificado autofirmado.
-3. Abra una página en el Editor universal.
+3. Abra una página en el editor universal.
 4. Actualice la dirección URL de ubicación para cargar la extensión local.
 
-## Ejecutar la extensión localmente
+## Ejecute la extensión localmente
 
 Se supone que ya ha creado una [extensión de editor universal](https://developer.adobe.com/uix/docs/services/aem-universal-editor/) y que desea previsualizarla mientras realiza pruebas y desarrolla tareas de desarrollo a nivel local.
 
-Inicie la extensión de Universal Editor con:
+Inicie la extensión de editor universal con:
 
 ```bash
 $ aio app run
@@ -50,7 +50,7 @@ To view your deployed application in the Experience Cloud shell:
 Esto ejecuta su extensión en `https://localhost:9080` de manera predeterminada.
 
 
-## Aceptar el certificado firmado automáticamente
+## Aceptar el certificado autofirmado
 
 El editor universal requiere HTTPS para cargar extensiones. Dado que el desarrollo local utiliza un certificado autofirmado, el explorador debe confiar explícitamente en él.
 
@@ -62,23 +62,23 @@ https://localhost:9080
 
 El explorador mostrará una advertencia de certificado. Acepte el certificado para continuar.
 
-![Acepte el certificado firmado automáticamente](./assets/local-extension-preview/accept-certificate.png)
+![Acepte el certificado autofirmado](./assets/local-extension-preview/accept-certificate.png)
 
 Una vez aceptado, verá la página del marcador de posición de la extensión local:
 
 ![Se puede acceder a la extensión](./assets/local-extension-preview/extension-accessible.png)
 
 
-## Abrir una página en el editor universal
+## Abra una página en el editor universal
 
-Abra el Editor universal a través de la [consola del Editor universal](https://experience.adobe.com/#/@myOrg/aem/editor/canvas/) o editando una página en AEM Sites que use el Editor universal:
+Abra el editor universal a través de la [consola del editor universal](https://experience.adobe.com/#/@myOrg/aem/editor/canvas/) o editando una página en AEM Sites que use el editor universal:
 
-![Abrir una página en el editor universal](./assets/local-extension-preview/open-page-in-ue.png)
+![Abra una página en el editor universal](./assets/local-extension-preview/open-page-in-ue.png)
 
 
-## Carga de la extensión
+## Cargar la extensión
 
-En el Editor universal, ubique el campo **Ubicación** en la parte superior central de la interfaz. Expanda la dirección URL **en el campo Ubicación**, **no en la barra de direcciones del explorador**.
+En el editor universal, ubique el campo **Ubicación** en la parte superior central de la interfaz. Expanda y actualice la **URL en el campo Ubicación**, **no en la barra de direcciones del explorador**.
 
 Anexe los siguientes parámetros de consulta:
 
@@ -94,7 +94,7 @@ https://author-pXXX-eXXX.adobeaemcloud.com/content/aem-ue-wknd/index.html?devMod
 ![Actualizar la dirección URL de la ubicación del editor universal](./assets/local-extension-preview/update-location-url.png)
 
 
-## Previsualización de la extensión
+## Previsualizar la extensión
 
 Realice una **recarga brusca** del explorador para asegurarse de que se utiliza la dirección URL actualizada.
 

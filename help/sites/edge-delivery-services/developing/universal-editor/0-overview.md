@@ -11,9 +11,9 @@ jira: KT-15832
 duration: 88
 exl-id: aeac08a2-75a0-4adb-b32e-0e7f85e7eb1d
 source-git-commit: f0ad5d66549970337118220156d7a6b0fd30fd57
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '620'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -100,7 +100,7 @@ Aprenda a configurar su entorno de desarrollo local para permitir un desarrollo 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./3-local-development-environment.md" title="Configuración de un entorno de desarrollo local" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443981/?format=jpeg&nocache=1753811862249&captions=spa" alt="Configuración de un entorno de desarrollo local"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443978/?format=jpeg&nocache=1753811862249" alt="Configuración de un entorno de desarrollo local"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
