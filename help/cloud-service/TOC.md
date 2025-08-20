@@ -46,7 +46,7 @@ ht-degree: 99%
    + [Canalización de producción de CI/CD](./cloud-manager/cicd-production-pipeline.md)
    + [Canalización de no producción de CI/CD](./cloud-manager/cicd-non-production-pipeline.md)
    + [Actividad](./cloud-manager/activity.md)
-   + [Nombres de dominio personalizados ](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names){target=_blank}
+   + [Nombres de dominio personalizados](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names){target=_blank}
    + [Restauración de contenido](./cloud-manager/content-restore.md)
    + Operaciones de desarrollo{#devops}
       + [Implementación de código](./cloud-manager/devops/deploy-code.md)
