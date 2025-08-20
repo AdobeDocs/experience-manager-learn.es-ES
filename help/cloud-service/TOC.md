@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Experience Manager as a Cloud Service
 team: TM
-source-git-commit: 70665c019f63df1e736292ad24c47624a3a80d49
+source-git-commit: 7d6f6d710f7ecbe01359f54e0f51d3e84ec64373
 workflow-type: tm+mt
-source-wordcount: '1414'
+source-wordcount: '1403'
 ht-degree: 99%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 99%
    + [Canalización de producción de CI/CD](./cloud-manager/cicd-production-pipeline.md)
    + [Canalización de no producción de CI/CD](./cloud-manager/cicd-non-production-pipeline.md)
    + [Actividad](./cloud-manager/activity.md)
-   + [Nombres de dominio personalizados](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names){target=_blank}
+   + [Nombres de dominio personalizados ](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names){target=_blank}
    + [Restauración de contenido](./cloud-manager/content-restore.md)
    + Operaciones de desarrollo{#devops}
       + [Implementación de código](./cloud-manager/devops/deploy-code.md)
@@ -343,10 +343,6 @@ ht-degree: 99%
       + [Utilidades de PDF/A](./forms/forms-cs-assembler/pdfa-utilities.md)
       + [Prueba de la solución](./forms/forms-cs-assembler/test.md)
       + [Desafío](./forms/forms-cs-assembler/challenge.md)
-   + Integración con Marketo{#froms-cs-with-marketo}
-      + [Introducción](./forms/forms-cs-with-marketo/part1.md)
-      + [Crear fuente de datos](./forms/forms-cs-with-marketo/part2.md)
-      + [Crear modelo de datos de formulario](./forms/forms-cs-with-marketo/part3.md)
    + Almacenar envíos de formularios con etiquetas de índice de blob{#store-submiited-data-with-metadata-tags}
       + [Introducción](./forms/store-submiited-data-with-metadata-tags/introduction.md)
       + [Ampliar componente de grupo de opciones](./forms/store-submiited-data-with-metadata-tags/extend-choice-group-components.md)
