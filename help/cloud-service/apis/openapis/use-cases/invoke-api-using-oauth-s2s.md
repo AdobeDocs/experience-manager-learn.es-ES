@@ -12,9 +12,9 @@ thumbnail: KT-16516.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 8338a905-c4a2-4454-9e6f-e257cb0db97c
-source-git-commit: 723c439202b8e00e7b3236a50641ee1f2f6a4d9c
+source-git-commit: 57da04874cfb37dcccbf605c65fbcba8f12849fb
 workflow-type: tm+mt
-source-wordcount: '1776'
+source-wordcount: '1811'
 ht-degree: 2%
 
 ---
@@ -82,6 +82,9 @@ El paso para configurar el proyecto ADC está _repetido_ desde las [API de confi
    ![Añadir API](../assets/s2s/add-api.png)
 
 1. En el cuadro de diálogo _Agregar API_, filtre por _Experience Cloud_, seleccione la tarjeta **API de autor de AEM Assets** y haga clic en **Siguiente**.
+Si necesita una API de AEM basada en OpenAPI diferente, consulte la [Documentación de Adobe Developer](https://developer.adobe.com/experience-cloud/experience-manager-apis/#openapi-based-apis) para encontrar la que coincida con su caso de uso.
+
+   El ejemplo siguiente muestra cómo agregar la API de autor de **AEM Assets**.
 
    ![Agregar API de AEM](../assets/s2s/add-aem-api.png)
 
@@ -480,3 +483,4 @@ En el proyecto de ADC, ha añadido las API de AEM, ha configurado su tipo de aut
 ## Recursos adicionales
 
 - [Guía de implementación de credenciales de servidor a servidor de OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)
+
