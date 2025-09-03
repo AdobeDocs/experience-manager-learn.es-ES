@@ -11,15 +11,15 @@ duration: 432
 last-substantial-update: 2024-11-19T00:00:00Z
 jira: KT-15990
 exl-id: d04d584e-ecad-498d-a94d-36ac60b7f2c0
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 4a4334047f600cd64a6f6be82974f280b786d0c1
 workflow-type: tm+mt
-source-wordcount: '67'
-ht-degree: 0%
+source-wordcount: '64'
+ht-degree: 25%
 
 ---
 
 # Configuración de AEM Assets en Content Hub
 
-Obtenga información sobre cómo navegar por las pestañas disponibles y personalizar las opciones de configuración para satisfacer las necesidades de su organización. Este vídeo ayudará a los administradores a comprender las diferentes configuraciones y a proporcionar instrucciones de alto nivel sobre cómo adaptarlas para obtener un rendimiento óptimo y una alineación con los objetivos de la organización.
+Aprenda a configurar Content Hub para AEM Assets con el fin de satisfacer las necesidades de su organización. Este vídeo ayuda a los administradores a comprender los ajustes de configuración de Content Hub y a proporcionar instrucciones de alto nivel sobre cómo adaptarlos para obtener un rendimiento óptimo y una alineación con los objetivos de la organización.
 
->[!VIDEO](https://video.tv.adobe.com/v/3439314/?learn=on&enablevpops&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3472917/?learn=on&enablevpops)
