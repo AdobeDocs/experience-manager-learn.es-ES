@@ -1,5 +1,5 @@
 ---
-title: Experimentación (prueba A/B)
+title: Experimentación (Pruebas A/B)
 description: Obtenga información sobre cómo probar diferentes variaciones de contenido en AEM as a Cloud Service (AEM CS) mediante Adobe Target para pruebas A/B.
 version: Experience Manager as a Cloud Service
 feature: Personalization
@@ -10,15 +10,15 @@ doc-type: Tutorial
 last-substantial-update: 2025-08-07T00:00:00Z
 jira: KT-18720
 thumbnail: null
-source-git-commit: 70665c019f63df1e736292ad24c47624a3a80d49
+exl-id: c8a4f0bf-1f80-4494-abe6-9fbc138e4039
+source-git-commit: d81c657daa0b572076a4dcc0813d204e4bea77b0
 workflow-type: tm+mt
-source-wordcount: '1467'
-ht-degree: 0%
+source-wordcount: '1493'
+ht-degree: 1%
 
 ---
 
-
-# Experimentación (prueba A/B)
+# Experimentación (Pruebas A/B)
 
 Obtenga información sobre cómo probar diferentes variaciones de contenido en un sitio web de AEM as a Cloud Service (AEM CS) mediante Adobe Target.
 
@@ -34,11 +34,17 @@ En este tutorial, configurará la prueba A/B para el **Camping en Australia Occi
 
 Las variaciones se muestran en la página de inicio de WKND, lo que le permite medir el rendimiento y determinar qué versión genera una mejor participación y conversiones.
 
-Visite el [sitio web de habilitación de WKND](https://wknd.enablementadobe.com/us/en.html) para ver la prueba A/B en acción.
+![Prueba A/B](../assets/use-cases/experiment/view-ab-test-variations.png)
+
+### Demostración en directo
+
+Visite el [sitio web de habilitación de WKND](https://wknd.enablementadobe.com/us/en.html) para ver la prueba A/B en acción. En el siguiente vídeo, verá las tres variaciones de **Camping in Western Australia** que se muestran en la página principal a través de diferentes navegadores.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3473005/?learn=on&enablevpops)
 
 ## Requisitos previos
 
-Antes de continuar con este caso de uso de experimentación, asegúrese de haber completado lo siguiente:
+Antes de continuar con el caso de uso de experimentación, asegúrese de completar lo siguiente:
 
 - [Integrar Adobe Target](../setup/integrate-adobe-target.md): permite a su equipo crear y administrar contenido personalizado de forma centralizada en AEM y activarlo como ofertas en Adobe Target.
 - [Integrar etiquetas en Adobe Experience Platform](../setup/integrate-adobe-tags.md): permite a su equipo administrar e implementar JavaScript para la personalización y la recopilación de datos sin necesidad de volver a implementar el código de AEM.
@@ -250,7 +256,7 @@ Para ver la prueba A/B en acción, visite el [sitio web de habilitación de WKND
 
 ## Recursos adicionales
 
-- [Información general sobre pruebas A/B](https://experienceleague.adobe.com/es/docs/target/using/activities/abtest/test-ab)
-- [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/es/docs/experience-platform/web-sdk/home)
-- [Resumen de flujos de datos](https://experienceleague.adobe.com/es/docs/experience-platform/datastreams/overview)
-- [Compositor de experiencias visuales (VEC)](https://experienceleague.adobe.com/es/docs/target/using/experiences/vec/visual-experience-composer)
+- [Información general sobre pruebas A/B](https://experienceleague.adobe.com/en/docs/target/using/activities/abtest/test-ab)
+- [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)
+- [Resumen de flujos de datos](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)
+- [Compositor de experiencias visuales (VEC)](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/visual-experience-composer)
