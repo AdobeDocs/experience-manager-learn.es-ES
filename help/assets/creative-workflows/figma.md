@@ -22,6 +22,6 @@ ht-degree: 0%
 
 Aprenda a integrar Experience Manager Assets con Figma para optimizar los flujos de trabajo de diseño, garantizar la coherencia de la marca y proporcionar a los equipos creativos acceso directo a los recursos aprobados mientras diseñan.
 
->[!VIDEO](https://video.tv.adobe.com/v/3472903/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3472907/?learn=on&enablevpops&captions=spa)
 
 * [Descargue el archivo de muestra WKND Figma](./assets/figma/WKND-Summer-Campaign.fig)
