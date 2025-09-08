@@ -1,6 +1,6 @@
 ---
-title: Instrumentar la aplicación React para editar contenido mediante el editor universal
-description: Aprenda a instrumentar la aplicación React para editar el contenido mediante el Editor universal.
+title: Instrumentación de la aplicación de React para editar contenido mediante el editor universal
+description: Aprenda a instrumentar la aplicación de React para editar el contenido mediante el editor universal.
 version: Experience Manager as a Cloud Service
 feature: Developer Tools, Headless
 topic: Development, Content Management
@@ -12,39 +12,39 @@ last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15359
 thumbnail: KT-15359.png
 exl-id: 2a25cd44-cbd1-465e-ae3f-d3876e915114
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 252d7045ba43c0998e9bb98fa86c399812ce92e9
 workflow-type: tm+mt
 source-wordcount: '1606'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Instrumentar la aplicación React para editar contenido mediante el editor universal
+# Instrumentación de la aplicación de React para editar contenido mediante el editor universal
 
-Aprenda a instrumentar la aplicación React para editar el contenido mediante el Editor universal.
+Aprenda a instrumentar la aplicación de React para editar el contenido mediante el editor universal.
 
 ## Requisitos previos
 
 Ha configurado el entorno de desarrollo local como se describe en el paso anterior [Configuración de desarrollo local](./local-development-setup.md).
 
-## Incluir la biblioteca principal del editor universal
+## Inclusión de la biblioteca principal del editor universal.
 
-Empecemos por incluir la biblioteca principal del Editor universal en la aplicación WKND Teams React. Es una biblioteca de JavaScript que proporciona el nivel de comunicación entre la aplicación editada y el editor universal.
+Empecemos por incluir la biblioteca principal del editor universal en la aplicación WKND Teams de React. Es una biblioteca de JavaScript que proporciona la capa de comunicación entre la aplicación editada y el editor universal.
 
-Existen dos formas de incluir la biblioteca principal del editor universal en la aplicación React:
+Existen dos formas de incluir la biblioteca principal del editor universal en la aplicación de React:
 
 1. Dependencia del módulo del nodo del registro npm, consulte [@adobe/universal-editor-cors](https://www.npmjs.com/package/@adobe/universal-editor-cors).
 1. Etiqueta de script (`<script>`) dentro del archivo HTML.
 
 Para este tutorial, vamos a utilizar el método de etiqueta Script.
 
-1. Instale el paquete `react-helmet-async` para administrar la etiqueta `<script>` en la aplicación React.
+1. Instale el paquete `react-helmet-async` para administrar la etiqueta `<script>` en la aplicación de React.
 
    ```bash
    $ npm install react-helmet-async
    ```
 
-1. Actualice el archivo `src/App.js` de la aplicación WKND Teams React para incluir la biblioteca principal del Editor universal.
+1. Actualice el archivo `src/App.js` de la aplicación WKND Teams de React para incluir la biblioteca principal del editor universal.
 
    ```javascript
    ...
@@ -59,7 +59,7 @@ Para este tutorial, vamos a utilizar el método de etiqueta Script.
                      Loads the LATEST Universal Editor library
                    */}
                    <script
-                       src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"
+                       src="https://universal-editor-service.adobe.io/cors.js"
                        async
                    />
                </Helmet>
@@ -83,17 +83,17 @@ Para este tutorial, vamos a utilizar el método de etiqueta Script.
    export default App;
    ```
 
-## Añadir metadatos: fuente de contenido
+## Añadir metadatos: origen de contenido
 
-Para conectar la aplicación WKND Teams React _con el origen de contenido_ para su edición, debe proporcionar metadatos de conexión. El servicio de editor universal utiliza estos metadatos para establecer una conexión con el origen de contenido.
+Para conectar la aplicación WKND Teams de React _con el origen de contenido_ para su edición, debe proporcionar metadatos de conexión. El servicio del editor universal utiliza estos metadatos para establecer una conexión con el origen de contenido.
 
-Los metadatos de la conexión se almacenan como etiquetas `<meta>` en el archivo HTML. La sintaxis de los metadatos de la conexión es la siguiente:
+Los metadatos de la conexión se almacenan como etiquetas `<meta>` en el archivo HTML. La sintaxis de los metadatos de conexión es la siguiente:
 
 ```html
 <meta name="urn:adobe:aue:<category>:<referenceName>" content="<protocol>:<url>">
 ```
 
-Vamos a agregar los metadatos de conexión a la aplicación WKND Teams React dentro del componente `<Helmet>`. Actualice el archivo `src/App.js` con la siguiente etiqueta `<meta>`. En este ejemplo, el origen de contenido es una instancia local de AEM que se ejecuta en `https://localhost:8443`.
+Vamos a añadir los metadatos de conexión a la aplicación WKND Teams de React dentro del componente `<Helmet>`. Actualice el archivo `src/App.js` con la siguiente etiqueta `<meta>`. En este ejemplo, el origen de contenido es una instancia local de AEM que se ejecuta en `https://localhost:8443`.
 
 ```javascript
 ...
@@ -106,7 +106,7 @@ return (
                     Loads the LATEST Universal Editor library
                 */}
                 <script
-                    src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"
+                    src="https://universal-editor-service.adobe.io/cors.js"
                     async
                 />
                 {/* AEM Universal Editor :: Connection metadata 
@@ -125,19 +125,19 @@ return (
 export default App;
 ```
 
-`aemconnection` proporciona un nombre corto del origen de contenido. La instrumentación posterior utiliza el nombre corto para hacer referencia al origen de contenido.
+`aemconnection` proporciona un nombre abreviado para el origen de contenido. La instrumentación posterior utiliza el nombre abreviado para hacer referencia al origen de contenido.
 
-## Añadir metadatos: configuración del servicio Editor universal local
+## Añadir metadatos: configuración del servicio del editor universal local
 
-En lugar del servicio de editor universal alojado en Adobe, se utiliza una copia local del servicio de editor universal para el desarrollo local. El servicio local enlaza el editor universal y el SDK de AEM, por lo que vamos a añadir los metadatos del servicio del editor universal local a la aplicación React de WKND Teams.
+En lugar del servicio del editor universal alojado en Adobe, se utiliza una copia local del servicio del editor universal para el desarrollo local. El servicio local enlaza el editor universal y el SDK de AEM, por lo que vamos a añadir los metadatos del servicio del editor universal local a la aplicación de React WKND Teams.
 
-Estas opciones de configuración también se almacenan como etiquetas `<meta>` en el archivo HTML. La sintaxis de los metadatos del servicio Editor universal local es la siguiente:
+Estos ajustes de configuración también se almacenan como etiquetas `<meta>` en el archivo HTML. La sintaxis de los metadatos del servicio del editor universal local es la siguiente:
 
 ```html
 <meta name="urn:adobe:aue:config:service" content="<url>">
 ```
 
-Vamos a agregar los metadatos de conexión a la aplicación WKND Teams React dentro del componente `<Helmet>`. Actualice el archivo `src/App.js` con la siguiente etiqueta `<meta>`. En este ejemplo, el servicio de editor universal local se está ejecutando en `https://localhost:8001`.
+Vamos a añadir los metadatos de conexión a la aplicación WKND Teams de React dentro del componente `<Helmet>`. Actualice el archivo `src/App.js` con la siguiente etiqueta `<meta>`. En este ejemplo, el servicio de editor universal local se está ejecutando en `https://localhost:8001`.
 
 ```javascript
 ...
@@ -151,7 +151,7 @@ function App() {
               Loads the LATEST Universal Editor library
           */}
           <script
-            src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"
+            src="https://universal-editor-service.adobe.io/cors.js"
             async
           />
           {/* AEM Universal Editor :: Connection metadata 
@@ -178,16 +178,16 @@ export default App;
 
 ## Instrumentación de los componentes de React
 
-Para editar el contenido de la aplicación WKND Teams React, como _título y descripción del equipo_, debe instrumentar los componentes React. La instrumentación significa agregar atributos de datos relevantes (`data-aue-*`) a los elementos de HTML que desea hacer editables mediante el Editor universal. Para obtener más información sobre los atributos de datos, vea [Atributos y tipos](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types).
+Para editar el contenido de la aplicación WKND Teams de React, como _el título y la descripción del equipo_, debe instrumentar los componentes de React. La instrumentación significa añadir atributos de datos relevantes (`data-aue-*`) a los elementos de HTML que desea hacer editables mediante el editor universal. Para obtener más información sobre los atributos de datos, consulte [Atributos y tipos](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types).
 
-### Definir elementos editables
+### Definición de los elementos editables
 
-Empecemos por definir los elementos que desea editar con el Editor universal. En la aplicación WKND Teams React, el título y la descripción del equipo se almacenan en el fragmento de contenido del equipo en AEM, por lo tanto, los mejores candidatos para la edición.
+Empecemos por definir los elementos que desea editar con el editor universal. En la aplicación WKND Teams de React, el título y la descripción del equipo se almacenan en el fragmento de contenido del equipo en AEM, por lo tanto, son los mejores candidatos para la edición.
 
-Instrumentemos el componente React de `Teams` para poder editar el título y la descripción del equipo.
+Vamos a instrumentar el componente React de `Teams` para poder editar el título y la descripción del equipo.
 
-1. Abra el archivo `src/components/Teams.js` de la aplicación WKND Teams React.
-1. Agregue el atributo `data-aue-prop`, `data-aue-type` y `data-aue-label` a los elementos de título y descripción del equipo.
+1. Abra el archivo `src/components/Teams.js` de la aplicación WKND Teams de React.
+1. Añada el atributo `data-aue-prop`, `data-aue-type` y `data-aue-label` a los elementos de título y descripción del equipo.
 
    ```javascript
    ...
@@ -208,23 +208,23 @@ Instrumentemos el componente React de `Teams` para poder editar el título y la 
    export default Teams;
    ```
 
-1. Actualice la página Editor universal en el explorador que carga la aplicación WKND Teams React. Ahora puede ver que el título del equipo y los elementos de descripción son editables.
+1. Actualice la página del editor universal en el explorador que carga la aplicación WKND Teams de React. Ahora puede ver que el título del equipo y los elementos de descripción son editables.
 
    ![Editor universal: título y descripción editables de WKND Teams](./assets/universal-editor-wknd-teams-title-desc-editable.png)
 
-1. Si intenta editar el título o la descripción del equipo mediante la edición en línea o el carril de propiedades, se mostrará un indicador de carga, pero no le permitirá editar el contenido. Debido a que el editor universal no tiene en cuenta los detalles de recursos de AEM para cargar y guardar el contenido.
+1. Si intenta editar el título o la descripción del equipo mediante la edición en línea o el carril de propiedades, se mostrará un indicador giratorio de carga, pero no le permitirá editar el contenido. Esto se debe a que el editor universal no tiene en cuenta los detalles de recursos de AEM para cargar y guardar el contenido.
 
-   ![Editor universal: WKND Teams Title and Desc loading](./assets/universal-editor-wknd-teams-title-desc-editable-loading.png)
+   ![Editor universal: carga de título y descripción de WKND Teams](./assets/universal-editor-wknd-teams-title-desc-editable-loading.png)
 
-En resumen, los cambios anteriores marcan los elementos de título y descripción del equipo como editables en el editor universal. Sin embargo, **no puede editar (a través del carril en línea o de propiedades) y guardar los cambios todavía**, por lo que necesita agregar los detalles del recurso de AEM usando el atributo `data-aue-resource`. Vamos a hacer eso en el siguiente paso.
+En resumen, los cambios anteriores marcan los elementos de título y descripción del equipo como editables en el editor universal. Sin embargo, **no puede editar (a través del carril en línea o de propiedades) y guardar los cambios todavía**. Para ello necesita añadir los detalles del recurso de AEM usando el atributo `data-aue-resource`. Lo haremos en el siguiente paso.
 
 ### Definición de detalles de recursos de AEM
 
 Para guardar el contenido editado de nuevo en AEM y también para cargar el contenido en el carril de propiedades, debe proporcionar los detalles del recurso de AEM al editor universal.
 
-En este caso, el recurso de AEM es la ruta del fragmento de contenido del equipo, así que vamos a agregar los detalles del recurso al componente React de `Teams` en el elemento de nivel superior `<div>`.
+En este caso, el recurso de AEM es la ruta del fragmento de contenido del equipo, así que vamos a añadir los detalles del recurso al componente React de `Teams` en el elemento de nivel superior `<div>`.
 
-1. Actualice el archivo `src/components/Teams.js` para agregar los atributos `data-aue-resource`, `data-aue-type` y `data-aue-label` al elemento `<div>` de nivel superior.
+1. Actualice el archivo `src/components/Teams.js` para añadir los atributos `data-aue-resource`, `data-aue-type` y `data-aue-label` al elemento `<div>` de nivel superior.
 
    ```javascript
    ...
@@ -250,25 +250,25 @@ En este caso, el recurso de AEM es la ruta del fragmento de contenido del equipo
    export default Teams;
    ```
 
-   El valor del atributo `data-aue-resource` es la ruta de recursos de AEM del fragmento de contenido del equipo. El prefijo `urn:aemconnection:` utiliza el nombre corto del origen de contenido definido en los metadatos de conexión.
+   El valor del atributo `data-aue-resource` es la ruta de recursos de AEM del fragmento de contenido del equipo. El prefijo `urn:aemconnection:` utiliza el nombre abreviado del origen de contenido definido en los metadatos de conexión.
 
-1. Actualice la página Editor universal en el explorador que carga la aplicación WKND Teams React. Ahora puede ver que el elemento Equipo de nivel superior es editable, pero el carril de propiedades sigue sin cargar el contenido. En la pestaña de red del explorador, puede ver el error 401 No autorizado para la solicitud `details` que carga el contenido. Está intentando utilizar el token de IMS para la autenticación, pero el AEM SDK local no admite la autenticación IMS.
+1. Actualice la página del editor universal en el explorador que carga la aplicación WKND Teams de React. Ahora puede ver que el elemento Equipo de nivel superior es editable, pero el carril de propiedades sigue sin cargar el contenido. En la pestaña de red del explorador, puede ver el error 401 No autorizado para la solicitud `details` que carga el contenido. Está intentando utilizar el token de IMS para la autenticación, pero el SDK de AEM local no admite la autenticación IMS.
 
    ![Editor universal: equipo de WKND Teams editable](./assets/universal-editor-wknd-teams-team-editable.png)
 
-1. Para corregir el error 401 Unauthorized, debe proporcionar los detalles de autenticación locales de AEM SDK al editor universal mediante la opción **Encabezados de autenticación** en el editor universal. Como SDK local de AEM, establezca el valor en `Basic YWRtaW46YWRtaW4=` para las credenciales de `admin:admin`.
+1. Para corregir el error 401 No autorizado, debe proporcionar los detalles de autenticación locales del SDK de AEM al editor universal mediante la opción **Encabezados de autenticación** en el editor universal. Al igual que el SDK local de AEM, establezca el valor en `Basic YWRtaW46YWRtaW4=` para las credenciales de `admin:admin`.
 
-   ![Editor universal: agregar encabezados de autenticación](./assets/universal-editor-wknd-teams-team-editable-auth.png)
+   ![Editor universal: añadir encabezados de autenticación](./assets/universal-editor-wknd-teams-team-editable-auth.png)
 
-1. Actualice la página Editor universal en el explorador que carga la aplicación WKND Teams React. Ahora puede ver que el carril de propiedades está cargando el contenido y puede editar el título y la descripción del equipo en línea o mediante el carril de propiedades.
+1. Actualice la página del editor universal en el explorador que carga la aplicación WKND Teams de React. Ahora puede ver que el carril de propiedades está cargando el contenido y puede editar el título y la descripción del equipo en línea o mediante el carril de propiedades.
 
    ![Editor universal: equipo de WKND Teams editable](./assets/universal-editor-wknd-teams-team-editable-props.png)
 
-#### Bajo el capó
+#### Internamente
 
-El carril de propiedades carga el contenido del recurso de AEM mediante el servicio de editor universal local. Mediante la ficha de red del explorador, puede ver la petición POST al servicio Universal Editor local (`https://localhost:8001/details`) para cargar el contenido.
+El carril de propiedades carga el contenido del recurso de AEM mediante el servicio de editor universal local. Mediante la pestaña de la red del explorador, puede ver la petición POST en el servicio del editor universal local (`https://localhost:8001/details`) para cargar el contenido.
 
-Cuando edita el contenido mediante la edición en línea o el carril de propiedades, los cambios se guardan de nuevo en el recurso de AEM mediante el servicio de editor universal local. Con la ficha de red del explorador, puede ver la petición POST al servicio Universal Editor local (`https://localhost:8001/update` o `https://localhost:8001/patch`) para guardar el contenido.
+Cuando edita el contenido mediante la edición en línea o el carril de propiedades, los cambios se guardan de nuevo en el recurso de AEM mediante el servicio del editor universal local. Mediante la pestaña de red del explorador, puede ver la petición POST en el servicio del editor universal (`https://localhost:8001/update` o `https://localhost:8001/patch`) para guardar el contenido.
 
 ![Editor universal: equipo de WKND Teams editable](./assets/universal-editor-under-the-hood-request.png)
 
@@ -276,13 +276,13 @@ El objeto JSON de carga útil de solicitud contiene los detalles necesarios, com
 
 ![Editor universal: equipo de WKND Teams editable](./assets/universal-editor-under-the-hood-payload.png)
 
-### Expandir el contenido editable
+### Expansión del contenido editable
 
 Vamos a expandir el contenido editable y aplicar la instrumentación a los **integrantes del equipo** para que pueda editar los integrantes del equipo mediante el carril de propiedades.
 
-Como en el caso anterior, vamos a agregar los atributos `data-aue-*` relevantes a los integrantes del equipo en el componente React `Teams`.
+Como en el caso anterior, vamos a añadir los atributos `data-aue-*` relevantes a los integrantes del equipo en el componente `Teams` de React.
 
-1. Actualice el archivo `src/components/Teams.js` para agregar atributos de datos al elemento `<li key={index} className="team__member">`.
+1. Actualice el archivo `src/components/Teams.js` para añadir atributos de datos al elemento `<li key={index} className="team__member">`.
 
    ```javascript
    ...
@@ -311,23 +311,23 @@ Como en el caso anterior, vamos a agregar los atributos `data-aue-*` relevantes 
    export default Teams;
    ```
 
-   El valor del atributo `data-aue-type` es `component`, ya que los integrantes del equipo se almacenan como `Person` fragmentos de contenido en AEM y ayudan a indicar las partes movibles o eliminables del contenido.
+   El valor del atributo `data-aue-type` es `component`, ya que los integrantes del equipo se almacenan como fragmentos de contenido `Person` en AEM y ayudan a indicar las partes movibles o eliminables del contenido.
 
-1. Actualice la página Editor universal en el explorador que carga la aplicación WKND Teams React. Ahora puede ver que los integrantes del equipo se pueden editar mediante el carril de propiedades.
+1. Actualice la página del editor universal en el explorador que carga la aplicación WKND Teams de React. Ahora puede ver que los integrantes del equipo se pueden editar mediante el carril de propiedades.
 
-   ![Editor universal: miembros del equipo de equipos de WKND editables](./assets/universal-editor-wknd-teams-team-members-editable.png)
+   ![Editor universal: integrantes del equipo de WKND Teams editables](./assets/universal-editor-wknd-teams-team-members-editable.png)
 
-#### Bajo el capó
+#### Internamente
 
-Como en el caso anterior, la recuperación y el guardado del contenido se realizan mediante el servicio de editor universal local. Las solicitudes `/details`, `/update` o `/patch` se realizan al servicio de Universal Editor local para cargar y guardar el contenido.
+Al igual que en el caso anterior, la recuperación y el almacenamiento de contenido se realizan mediante el servicio del editor universal local. Las solicitudes `/details`, `/update` o `/patch` se realizan en el servicio del editor universal local para cargar y guardar el contenido.
 
-### Definición de adición y eliminación de contenido
+### Definición de la adición y eliminación de contenido
 
-Hasta ahora, ha hecho que el contenido existente sea editable, pero ¿qué sucede si desea agregar contenido nuevo? Vamos a añadir la capacidad de añadir o eliminar miembros del equipo al equipo de WKND mediante el Editor universal. Por lo tanto, los autores de contenido no necesitan ir a AEM para agregar o eliminar miembros del equipo.
+Hasta ahora, ha hecho que el contenido existente sea editable, pero ¿qué sucede si desea añadir contenido nuevo? Vamos a añadir la posibilidad de añadir o eliminar integrantes del equipo al equipo de WKND mediante el editor universal. Por lo tanto, los autores de contenido no necesitan ir a AEM para añadir o eliminar integrantes del equipo.
 
-Sin embargo, como resumen rápido, los miembros del equipo WKND se almacenan como `Person` fragmentos de contenido en AEM y se asocian al fragmento de contenido del equipo mediante la propiedad `teamMembers`. Para revisar la definición del modelo en AEM, visite [my-project](http://localhost:4502/libs/dam/cfm/models/console/content/models.html/conf/my-project).
+Sin embargo, como resumen rápido, los integrantes del equipo WKND se almacenan como fragmentos de contenido `Person` en AEM y se asocian al fragmento de contenido del equipo mediante la propiedad `teamMembers`. Para revisar la definición del modelo en AEM, visite [my-project](http://localhost:4502/libs/dam/cfm/models/console/content/models.html/conf/my-project).
 
-1. Primero, cree el archivo de definición de componente `/public/static/component-definition.json`. Este archivo contiene la definición del componente para el fragmento de contenido `Person`. El complemento `aem/cf` permite insertar fragmentos de contenido, basados en un modelo y una plantilla que proporcionan los valores predeterminados que se pueden aplicar.
+1. Primero, cree el archivo de definición del componente `/public/static/component-definition.json`. Este archivo contiene la definición del componente para el fragmento de contenido `Person`. El complemento `aem/cf` permite insertar fragmentos de contenido, basados en un modelo y una plantilla que proporcionan los valores predeterminados que aplique.
 
    ```json
    {
@@ -360,7 +360,7 @@ Sin embargo, como resumen rápido, los miembros del equipo WKND se almacenan com
    }
    ```
 
-1. A continuación, consulte el archivo de definición de componente anterior en `index.html` de la aplicación WKND Team React. Actualice la sección `<head>` del archivo `public/index.html` para incluir el archivo de definición del componente.
+1. A continuación, consulte el archivo de definición del componente anterior en el archivo `index.html` de la aplicación WKND Team de React. Actualice la sección `public/index.html` del archivo `<head>` para incluir el archivo de definición del componente.
 
    ```html
    ...
@@ -373,7 +373,7 @@ Sin embargo, como resumen rápido, los miembros del equipo WKND se almacenan com
    ...
    ```
 
-1. Finalmente, actualice el archivo `src/components/Teams.js` para agregar atributos de datos. La sección **MEMBERS** para que actúe como contenedor para los integrantes del equipo, vamos a agregar los atributos `data-aue-prop`, `data-aue-type` y `data-aue-label` al elemento `<div>`.
+1. Finalmente, actualice el archivo `src/components/Teams.js` para añadir atributos de datos. Para que la sección **MEMBERS** actúe como un contenedor de los integrantes del equipo, vamos a añadir los atributos `data-aue-prop`, `data-aue-type` y `data-aue-label` al elemento `<div>`.
 
    ```javascript
    ...
@@ -403,24 +403,24 @@ Sin embargo, como resumen rápido, los miembros del equipo WKND se almacenan com
    export default Teams;
    ```
 
-1. Actualice la página Editor universal en el explorador que carga la aplicación WKND Teams React. Ahora puede ver que la sección **MEMBERS** actúa como un contenedor. Puede insertar nuevos integrantes del equipo mediante el carril de propiedades y el icono **+**.
+1. Actualice la página del editor universal en el explorador que carga la aplicación WKND Teams de React. Ahora puede ver que la sección **MEMBERS** actúa como un contenedor. Puede insertar nuevos integrantes del equipo mediante el carril de propiedades y el icono **+**.
 
-   ![Editor universal: inserción de miembros del equipo de equipos de WKND](./assets/universal-editor-wknd-teams-add-team-members.png)
+   ![Editor universal: inserción de miembros del equipo de WKND Teams](./assets/universal-editor-wknd-teams-add-team-members.png)
 
 1. Para eliminar un miembro del equipo, selecciónelo y haga clic en el icono **Eliminar**.
 
    ![Editor universal: los integrantes del equipo de WKND Teams eliminan](./assets/universal-editor-wknd-teams-delete-team-members.png)
 
-#### Bajo el capó
+#### Internamente
 
-Las operaciones de adición y eliminación de contenido las realiza el servicio de editor universal local. La petición POST para `/add` o `/remove` con una carga útil detallada se realiza al servicio Universal Editor local para agregar o eliminar el contenido en AEM.
+Las operaciones de adición y eliminación de contenido las realiza el servicio de editor universal local. La petición POST para `/add` o `/remove` con una carga útil detallada se realiza al servicio del editor universal local para añadir o eliminar el contenido en AEM.
 
 ## Archivos de solución
 
-Para comprobar los cambios de implementación o si no puede hacer que la aplicación WKND Teams React funcione con el editor universal, consulte la rama de solución [basic-tutorial-instrumented-for-UE](https://github.com/adobe/aem-guides-wknd-graphql/tree/solution/basic-tutorial-instrumented-for-UE).
+Para comprobar los cambios de implementación o si no puede hacer que la aplicación WKND Teams de React funcione con el editor universal, consulte la rama de la solución [basic-tutorial-instrumented-for-UE](https://github.com/adobe/aem-guides-wknd-graphql/tree/solution/basic-tutorial-instrumented-for-UE).
 
 La comparación archivo por archivo con la rama de **basic-tutorial** en funcionamiento está disponible [aquí](https://github.com/adobe/aem-guides-wknd-graphql/compare/solution/basic-tutorial...solution/basic-tutorial-instrumented-for-UE?expand=1).
 
-## Felicitaciones
+## Enhorabuena.
 
-La aplicación WKND Teams React se ha instrumentado correctamente para añadir, editar y eliminar contenido mediante el editor universal. Ha aprendido a incluir la biblioteca principal, agregar conexión y los metadatos del servicio de editor universal local, e instrumentar el componente React mediante varios atributos de datos (`data-aue-*`).
+La aplicación WKND Teams de React se ha instrumentado correctamente para añadir, editar y eliminar contenido mediante el editor universal. Ha aprendido a incluir la biblioteca principal, añadir conexión y los metadatos del servicio de editor universal local, e instrumentar el componente React mediante varios atributos de datos (`data-aue-*`).
