@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Experience Manager Assets etiqueta de forma inteligente los recursos de vídeo con palabras clave que describen elementos clave del vídeo, lo que permite a los usuarios de AEM descubrirlos fácilmente mediante la búsqueda de palabras clave.
 
->[!VIDEO](https://video.tv.adobe.com/v/327005?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/340535?quality=12&learn=on&captions=spa)

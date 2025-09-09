@@ -22,7 +22,7 @@ ht-degree: 0%
 
 El recorte inteligente de Dynamic Media para vídeo rastrea de forma inteligente el punto de interés del vídeo, lo que garantiza que los vídeos tengan el mejor aspecto en todos los tamaños de pantalla.
 
->[!VIDEO](https://video.tv.adobe.com/v/37958?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326474?quality=12&learn=on&captions=spa)
 
 >[!NOTE]
 >

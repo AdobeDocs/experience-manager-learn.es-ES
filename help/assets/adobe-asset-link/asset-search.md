@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Con el panel Adobe Asset Link, los usuarios creativos pueden buscar recursos almacenados en AEM Assets mediante palabras clave o realizar una búsqueda en una ubicación específica. Además de las opciones de búsqueda básicas, Adobe Asset Link también le permite utilizar un recurso para buscar visualmente resultados similares dentro de los AEM Assets. La búsqueda visual muestra resultados con características estéticas relacionadas con la imagen de destino.
 
->[!VIDEO](https://video.tv.adobe.com/v/34260?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38590?quality=12&learn=on&captions=spa)

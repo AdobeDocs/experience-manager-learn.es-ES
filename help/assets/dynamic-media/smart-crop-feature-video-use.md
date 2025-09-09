@@ -21,7 +21,7 @@ ht-degree: 0%
 
 El recorte inteligente elimina las costosas y laboriosas tareas de recortar contenido para lograr un diseño interactivo.
 
->[!VIDEO](https://video.tv.adobe.com/v/21519?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40209?quality=12&learn=on&captions=spa)
 
 >[!NOTE]
 >

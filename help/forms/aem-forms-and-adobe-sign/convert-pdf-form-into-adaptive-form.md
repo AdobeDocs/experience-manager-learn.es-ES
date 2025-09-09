@@ -24,7 +24,7 @@ El servicio de conversión automatizada de formularios de AEM Forms convierte au
 
 En el siguiente vídeo se explican los pasos necesarios para convertir un formulario de PDF en un formulario adaptable mediante el servicio de conversión automatizada de formularios
 
->[!VIDEO](https://video.tv.adobe.com/v/39495?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327715?quality=12&learn=on&captions=spa)
 
 ## Próximos pasos
 
