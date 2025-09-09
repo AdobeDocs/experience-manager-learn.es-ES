@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Experience Manager as a Cloud Service
 team: TM
-source-git-commit: 7d6f6d710f7ecbe01359f54e0f51d3e84ec64373
+source-git-commit: 5b91e7409ff0735bab40d78ad98410ac2ab006ed
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1405'
 ht-degree: 99%
 
 ---
@@ -105,7 +105,7 @@ ht-degree: 99%
       + [Ciclo de vida del componente OSGi](./developing/osgi-services/lifecycle.md)
       + [Conceptos básicos de configuraciones de OSGi](./developing/osgi-services/configurations.md)
       + [Configuraciones de OSGi mediante OCD](./developing/osgi-services/configurations-ocd.md)
-   + Avanzado {#advanced}
+   + Avanzado{#advanced}
       + [Variantes de página en almacenamiento en caché](./developing/advanced/variant-caching.md)
       + [Protección CSRF](./developing/advanced/csrf-protection.md)
       + [Espacios de nombres personalizados](./developing/advanced/custom-namespaces.md)
@@ -122,7 +122,7 @@ ht-degree: 99%
    + Editor universal{#universal-editor}
       + Edición de la aplicación React{#react-app-editing}
          + [Información general](./developing/universal-editor/react-app/overview.md)
-         + [Configuración de desarrollo local](./developing/universal-editor/react-app/local-development-setup.md)
+         + [Configuración del desarrollo local](./developing/universal-editor/react-app/local-development-setup.md)
          + [Instrumentalizar la aplicación React](./developing/universal-editor/react-app/instrument-to-edit-content.md)
    + [JavDocs de la API del SDK de AEM](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html){target=_blank}
 + Depuración de AEM{#debugging}
@@ -147,7 +147,8 @@ ht-degree: 99%
       + [Integración con Adobe Target](./personalization/setup/integrate-adobe-target.md)
       + [Integrar etiquetas](./personalization/setup/integrate-adobe-tags.md)
    + Casos de uso {#use-cases}
-      + [Experimentación (prueba A/B)](./personalization/use-cases/experimentation.md)
+      + [Experimentación (Pruebas A/B)](./personalization/use-cases/experimentation.md)
+      + [Direccionamiento de comportamiento](./personalization/use-cases/behavioral-targeting.md)
 + API DE AEM{#aem-apis}
    + [Información general](./apis/overview.md)
    + OpenAPI{#openapis}
@@ -157,7 +158,7 @@ ht-degree: 99%
       + [Autenticación de usuario (aplicación web)](./apis/openapis/use-cases/invoke-api-using-oauth-web-app.md)
       + [Autenticación de usuario (SPA)](./apis/openapis/use-cases/invoke-api-using-oauth-single-page-app.md)
       + Cómo{#how-to}
-         + [Administración de perfiles de producto y credenciales ](./apis/openapis/how-to/credentials-and-product-profile-management.md)
+         + [Administración de perfiles de producto y credenciales](./apis/openapis/how-to/credentials-and-product-profile-management.md)
          + [Administración de permisos](./apis/openapis/how-to/services-user-group-permission-management.md)
 + Entrega de contenido{#content-delivery}
    + [Nombre de dominio personalizado](./content-delivery/custom-domain-names.md)
@@ -234,7 +235,7 @@ ht-degree: 99%
          + [Servicio de importación masiva](./migration/moving-to-aem-as-a-cloud-service/content-migration/bulk-import-service.md)
          + [Herramienta de transferencia de contenido](./migration/moving-to-aem-as-a-cloud-service/content-migration/content-transfer-tool.md)
          + [Preguntas frecuentes](./migration/moving-to-aem-as-a-cloud-service/content-migration/faq.md)
-      + [Solución de problemas](./migration/moving-to-aem-as-a-cloud-service/troubleshooting.md)
+      + [Resolución de problemas](./migration/moving-to-aem-as-a-cloud-service/troubleshooting.md)
       + AEM Forms as a Cloud Service {#aem-forms}
          + [Introducción](./migration/moving-to-aem-as-a-cloud-service/aem-forms/introduction.md)
          + [Inscripción digital](./migration/moving-to-aem-as-a-cloud-service/aem-forms/digital-enrollment.md)
@@ -243,13 +244,13 @@ ht-degree: 99%
       + [Introducción](./migration/cloud-acceleration-manager/introduction.md)
       + [Analizador de preparación y prácticas recomendadas](./migration/cloud-acceleration-manager/readiness-and-best-practice-analyzer.md)
       + [Fase de implementación](./migration/cloud-acceleration-manager/implementation-phase.md)
-      + [Herramientas de refactorización de código ](./migration/cloud-acceleration-manager/code-refactoring-tools.md)
+      + [Herramientas de refactorización de código](./migration/cloud-acceleration-manager/code-refactoring-tools.md)
       + [Modernizador de repositorio de código](./migration/cloud-acceleration-manager/code-repository-modernizer.md)
       + [Dispatcher Converter](./migration/cloud-acceleration-manager/dispatcher-converter.md)
       + [Conversor de índices](./migration/cloud-acceleration-manager/index-converter.md)
       + [Herramienta de migración del flujo de trabajo de recursos](./migration/cloud-acceleration-manager/asset-workflow-migration-tool.md)
       + [Navegación por Cloud Acceleration Manager](./migration/cloud-acceleration-manager/navigating.md)
-      + [Uso de Cloud Acceleration Manager ](./migration/cloud-acceleration-manager/using.md)
+      + [Uso de Cloud Acceleration Manager](./migration/cloud-acceleration-manager/using.md)
 + [Fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html?lang=es){target=_blank}
 + Formularios{#forms}
    + Desarrollo para Forms as a Cloud Service{#developing-for-cloud-service}
@@ -257,10 +258,10 @@ ht-degree: 99%
       + [2 - Instalar IntelliJ](./forms/developing-for-cloud-service/intellij-set-up.md)
       + [3 - Configurar Git](./forms/developing-for-cloud-service/setup-git.md)
       + [4 - Sincronizar IntelliJ con AEM](./forms/developing-for-cloud-service/intellij-and-aem-sync.md)
-      + [&#x200B;3. Generar un formulario](./forms/developing-for-cloud-service/deploy-your-first-form.md)
+      + [&#x200B;5. Generar un formulario](./forms/developing-for-cloud-service/deploy-your-first-form.md)
       + [6 - Controlador de envío personalizado](./forms/developing-for-cloud-service/custom-submit-to-servlet.md)
       + [7 - Registro del servlet mediante el tipo de recurso](./forms/developing-for-cloud-service/registering-servlet-using-resourcetype.md)
-      + [Habilitar componentes del portal de formularios](./forms/developing-for-cloud-service/forms-portal-components.md)
+      + [8 - Habilitar componentes del portal de formularios](./forms/developing-for-cloud-service/forms-portal-components.md)
       + [9 - Incluir Cloud Services y FDM](./forms/developing-for-cloud-service/azure-storage-fdm.md)
       + [10 - Configuración de nube según el contexto](./forms/developing-for-cloud-service/context-aware-fdm.md)
       + [11 - Insertar en Cloud Manager](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
@@ -419,14 +420,14 @@ ht-degree: 99%
    + Implementación{#deploy}
       + [Implementación en Adobe I/O Runtime](./asset-compute/deploy/runtime.md)
       + [Integrar con AEM](./asset-compute/deploy/processing-profiles.md)
-   + Avanzado {#advanced}
+   + Avanzado{#advanced}
       + [Trabajadores de metadatos](./asset-compute/advanced/metadata.md)
-   + [Solución de problemas](./asset-compute/troubleshooting.md)
+   + [Resolución de problemas](./asset-compute/troubleshooting.md)
 
 + Tutoriales en varios pasos{#multi-step-tutorials}
    + [Desarrollo de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es){target=_blank}
    + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=es){target=_blank}
-   + [Editor de SPA (React)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html?lang=es){target=_blank}
+   + [Editor de SPA (React)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html){target=_blank}
    + [AEM Sites y Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html?lang=es){target=_blank}
    + [Autenticación basada en token](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=es){target=_blank}
 + Recursos de expertos {#expert-resources}
