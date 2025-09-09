@@ -42,7 +42,7 @@ En esta guía analizaremos las siguientes funciones principales de Dynamic Media
 - **Vídeo.** Cargar los vídeos finales, publicarlos y descargarlos progresivamente en visores de vídeo configurables.
 - **Imágenes inteligentes.** Tecnología que funciona con los &quot;ajustes preestablecidos de imagen&quot; existentes para mejorar el rendimiento de entrega de imágenes al optimizar automáticamente el formato, el tamaño y la calidad de la imagen en función de las capacidades del explorador del cliente.
 
-Para descubrir funcionalidades adicionales de la solución, visite la [Documentación de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/introduction.html).
+Para descubrir funcionalidades adicionales de la solución, visite la [Documentación de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/introduction.html?lang=es).
 
 ## Interfaz de usuario de Dynamic Media Classic
 
@@ -72,4 +72,4 @@ _IU DE Dynamic Media Classic_
 >
 >Seleccione la casilla de verificación **Publicar después de cargar** en el cuadro de diálogo Cargar para publicar los recursos automáticamente tras la carga.
 
-Más información sobre [Cómo navegar por la interfaz de usuario de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/navigation-basics.html).
+Más información sobre [Cómo navegar por la interfaz de usuario de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/navigation-basics.html?lang=es).
