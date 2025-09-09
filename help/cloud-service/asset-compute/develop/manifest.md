@@ -11,7 +11,7 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: 766bfaff-ade0-41c8-a395-e79dfb4b3d76
 duration: 115
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 0%
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 Los trabajadores se definen como entradas de acción de Adobe I/O Runtime en `actions` y se componen de un conjunto de configuraciones.
 
-Los trabajadores que tengan acceso a otras integraciones de Adobe I/O deben establecer la propiedad de `annotations -> require-adobe-auth` en `true`, ya que este(a) [expone las credenciales de Adobe I/O del trabajador](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html?lang=es#access-adobe-apis) a través del objeto `params.auth`. Esto suele ser necesario cuando el trabajador llama a las API de Adobe I/O, como las API de Adobe Photoshop, Lightroom o Sensei, y se puede alternar por trabajador.
+Los trabajadores que tengan acceso a otras integraciones de Adobe I/O deben establecer la propiedad de `annotations -> require-adobe-auth` en `true`, ya que este(a) [expone las credenciales de Adobe I/O del trabajador](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#access-adobe-apis) a través del objeto `params.auth`. Esto suele ser necesario cuando el trabajador llama a las API de Adobe I/O, como las de Adobe Photoshop o Lightroom, y se puede alternar por trabajador.
 
 1. Abra y revise el trabajador `manifest.yml` generado automáticamente. Los proyectos que contienen varios trabajadores de Asset Compute deben definir una entrada para cada trabajador en la matriz `actions`.
 
@@ -44,14 +44,14 @@ packages:
         limits:
           concurrency: 10
         annotations:
-          require-adobe-auth: true # set to true, to pass through Adobe I/O access token/client id via params.auth in the worker, typically required when the worker calls out to Adobe I/O APIs such as the Adobe Photoshop, Lightroom or Sensei APIs.
+          require-adobe-auth: true # set to true, to pass through Adobe I/O access token/client id via params.auth in the worker, typically required when the worker calls out to Adobe I/O APIs such as the Adobe Photoshop, or Lightroom.
 ```
 
 ## Definición de límites
 
 Cada trabajador puede configurar los [límites](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/system_settings.md) para su contexto de ejecución en Adobe I/O Runtime. Estos valores deben ajustarse para proporcionar un tamaño óptimo para el trabajador, en función del volumen, la tasa y el tipo de recursos que calculará, así como el tipo de trabajo que realiza.
 
-Revise [las instrucciones de tamaño de Adobe](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html?lang=es#sizing-workers) antes de establecer límites. Los trabajadores de Asset Compute pueden quedarse sin memoria al procesar los recursos, lo que provoca que se elimine la ejecución de Adobe I/O Runtime, por lo que asegúrese de que el tamaño del trabajador sea adecuado para gestionar todos los recursos candidatos.
+Revise [las instrucciones de tamaño de Adobe](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#sizing-workers) antes de establecer límites. Los trabajadores de Asset Compute pueden quedarse sin memoria al procesar los recursos, lo que provoca que se elimine la ejecución de Adobe I/O Runtime, por lo que asegúrese de que el tamaño del trabajador sea adecuado para gestionar todos los recursos candidatos.
 
 1. Agregar una sección `inputs` a la nueva entrada de acciones `wknd-asset-compute`. Esto permite ajustar el rendimiento general y la asignación de recursos del trabajador de Asset Compute.
 
@@ -113,14 +113,14 @@ Para iniciar la herramienta de desarrollo de Asset Compute para el proyecto de A
    $ aio app run
    ```
 
-1. La herramienta de desarrollo de Asset Compute local se abrirá en el explorador web predeterminado en __http://localhost:9000__.
+1. La herramienta de desarrollo de Asset Compute local se abrirá en el explorador web predeterminado en __http://localhost :9000__.
 
    ![ejecución de aplicación aio](assets/environment-variables/aio-app-run.png)
 
 1. Observe la salida de la línea de comandos y el explorador Web en busca de mensajes de error cuando se inicializa la herramienta de desarrollo.
 1. Para detener la herramienta de desarrollo de Asset Compute, pulse `Ctrl-C` en la ventana que ejecutó `aio app run` para finalizar el proceso.
 
-## Solución de problemas
+## Resolución de problemas
 
 + [Sangría YAML incorrecta](../troubleshooting.md#incorrect-yaml-indentation)
 + [El límite memorySize se ha establecido en un valor demasiado bajo](../troubleshooting.md#memorysize-limit-is-set-too-low)

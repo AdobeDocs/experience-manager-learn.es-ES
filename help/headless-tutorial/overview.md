@@ -8,10 +8,10 @@ level: Beginner
 doc-type: Catalog
 recommendations: disable, exclude
 exl-id: 57f88d79-9879-4bb9-a3db-9fec95e3a0bd
-source-git-commit: 46d65df60ce7a4cda7ff3aa3fb21c1ee60f59bc6
-workflow-type: ht
-source-wordcount: '375'
-ht-degree: 100%
+source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
+workflow-type: tm+mt
+source-wordcount: '372'
+ht-degree: 96%
 
 ---
 
@@ -41,6 +41,19 @@ Adobe Experience Manager (AEM) tiene varias opciones para definir puntos finales
     <p>
   </td>
   <td>
+    <a href="./open-api/basic/overview.md">
+      <img alt="OpenAPI" src="./assets/content-services.png" />
+    </a>
+     <div>
+      <a href="./open-api/basic/overview.md">
+        <strong>OpenAPI</strong>
+      </a>
+    </div>
+    <p>
+    <em>Descubra cómo una aplicación puede usar una API de REST basada en OpenAPI para consumir contenido.</em>
+    <p>
+  </td>
+  <td>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=es">
     <img alt="Autenticación basada en tókenes" src="./assets/token-auth-icon.png" />
     </a>
@@ -52,20 +65,7 @@ Adobe Experience Manager (AEM) tiene varias opciones para definir puntos finales
     <p>
     <em>Descubra cómo una aplicación puede autenticarse de forma segura con AEM.</em>
     </p>
-  </td>
-  <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=es">
-      <img alt="Servicios de contenido" src="./assets/content-services.png" />
-    </a>
-     <div>
-      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=es">
-        <strong>Servicios de contenido</strong>
-      </a>
-    </div>
-    <p>
-    <em>Descubra cómo una aplicación puede usar una API de REST para consumir contenido.</em>
-    <p>
-  </td>
+  </td>  
 </tr>
 </table>
 
