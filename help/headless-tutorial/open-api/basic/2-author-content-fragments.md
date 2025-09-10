@@ -10,14 +10,14 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 duration: 700
-source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
+source-git-commit: 01f51a3556cfbcc22bbe31c4c05c11caaab71708
 workflow-type: tm+mt
 source-wordcount: '1274'
 ht-degree: 1%
 
 ---
 
-# Creación de fragmentos de contenido
+# Crear fragmentos de contenido
 
 En este capítulo, crea y edita nuevos fragmentos de contenido basados en los [modelos de fragmentos de contenido de persona y equipo](./1-content-fragment-models.md). Estos fragmentos de contenido son el contenido que consume la aplicación React mediante la Entrega de fragmentos de contenido de AEM con API de OpenAPI.
 
@@ -50,7 +50,7 @@ AEM admite la organización de carpetas &quot;plana&quot;, lo que significa que 
    * Título: **inglés**
    * Nombre: **en**
 
-   Se crea una carpeta de idioma raíz para colocar el proyecto de modo que admita las capacidades de localización nativas de AEM. Una práctica recomendada es configurar proyectos para la asistencia multilingüe, incluso si no requiere localización hoy en día. Consulte [la siguiente página de documentos para obtener más información](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html?lang=es).
+   Se crea una carpeta de idioma raíz para colocar el proyecto de modo que admita las capacidades de localización nativas de AEM. Una práctica recomendada es configurar proyectos para la asistencia multilingüe, incluso si no requiere localización hoy en día. Consulte [la siguiente página de documentos para obtener más información](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html).
 
 1. Cree dos subcarpetas en la nueva carpeta **Mi proyecto > Inglés** con los siguientes valores:
 
