@@ -50,7 +50,7 @@ AEM admite la organización de carpetas &quot;plana&quot;, lo que significa que 
    * Título: **inglés**
    * Nombre: **en**
 
-   Se crea una carpeta de idioma raíz para colocar el proyecto de modo que admita las capacidades de localización nativas de AEM. Una práctica recomendada es configurar proyectos para la asistencia multilingüe, incluso si no requiere localización hoy en día. Consulte [la siguiente página de documentos para obtener más información](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html).
+   Se crea una carpeta de idioma raíz para colocar el proyecto de modo que admita las capacidades de localización nativas de AEM. Una práctica recomendada es configurar proyectos para la asistencia multilingüe, incluso si no requiere localización hoy en día. Consulte [la siguiente página de documentos para obtener más información](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html?lang=es).
 
 1. Cree dos subcarpetas en la nueva carpeta **Mi proyecto > Inglés** con los siguientes valores:
 
