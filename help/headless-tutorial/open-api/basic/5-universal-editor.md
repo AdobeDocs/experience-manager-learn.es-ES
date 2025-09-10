@@ -1,5 +1,5 @@
 ---
-title: Hacer editable la aplicación de React con el editor universal | Tutorial Headless, parte 5
+title: Edición de la aplicación React con el editor universal | Tutorial Headless, parte 5
 description: Aprenda a hacer que la aplicación de React se pueda editar en el Editor universal de AEM añadiendo la instrumentación y configuración necesarias.
 version: Experience Manager as a Cloud Service
 mini-toc-levels: 1
@@ -8,15 +8,15 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 duration: 800
-source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
+source-git-commit: da3bfa25a424e3176fb7d53189169515db225228
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '759'
 ht-degree: 2%
 
 ---
 
 
-# Hacer que la aplicación de React sea editable con el editor universal
+# Edición de la aplicación React con el editor universal
 
 En este capítulo, aprenderá a hacer que la aplicación React creada en el [capítulo anterior](./4-react-app.md) sea editable mediante el Editor universal de AEM. El editor universal permite a los autores de contenido editar contenido directamente en el contexto de la experiencia de la aplicación React, a la vez que mantiene la experiencia perfecta de una aplicación sin encabezado.
 
@@ -46,7 +46,7 @@ El editor universal requiere [atributos de HTML y metaetiquetas](https://experie
 En primer lugar, añada las metaetiquetas necesarias para identificar la aplicación React como compatible con el editor universal.
 
 1. Abra `public/index.html` en la aplicación React.
-1. Agregue las [metaetiquetas del editor universal y el script CORS](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started) en la sección `<head>` de la aplicación React:
+1. Agregue las [metaetiquetas del editor universal y el script CORS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started) en la sección `<head>` de la aplicación React:
 
    ```html
    <!DOCTYPE html>
