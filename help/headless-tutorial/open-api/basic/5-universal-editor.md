@@ -46,7 +46,7 @@ El editor universal requiere [atributos de HTML y metaetiquetas](https://experie
 En primer lugar, añada las metaetiquetas necesarias para identificar la aplicación React como compatible con el editor universal.
 
 1. Abra `public/index.html` en la aplicación React.
-1. Agregue las [metaetiquetas del editor universal y el script CORS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started) en la sección `<head>` de la aplicación React:
+1. Agregue las [metaetiquetas del editor universal y el script CORS](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started) en la sección `<head>` de la aplicación React:
 
    ```html
    <!DOCTYPE html>
