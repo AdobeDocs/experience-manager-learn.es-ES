@@ -7,9 +7,9 @@ sub-product: Experience Manager Assets
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: 4a4334047f600cd64a6f6be82974f280b786d0c1
+source-git-commit: 16b106d88d51d68819470758abd536ad42b019db
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '461'
 ht-degree: 99%
 
 ---
@@ -71,6 +71,7 @@ ht-degree: 99%
    + [Marcas de agua](./advanced/watermarks.md)
 
 + Administración avanzada de metadatos{#metadata}
+   + [Metadatos de GenAI](metadata/genai-metadata.md)
    + [Metadatos en cascada](metadata/cascade-metadata-feature-video-use.md)
    + [Etiquetas inteligentes para imágenes](metadata/image-smart-tags.md)
    + [Etiquetas inteligentes para imágenes](metadata/custom-smart-tags.md)
