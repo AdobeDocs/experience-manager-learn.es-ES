@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Descubra cómo as a Cloud Service utiliza Adobe GenAI para generar y aumentar los metadatos de los AEM Assets para ayudar en la administración y el descubrimiento de contenido.
 
->[!VIDEO](https://video.tv.adobe.com/v/3474891/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3474906/?learn=on&enablevpops&captions=spa)

@@ -22,4 +22,4 @@ ht-degree: 77%
 
 Aprenda a compartir recursos y colecciones con los integrantes del equipo en AEM Assets Content Hub, lo que promueve el trabajo en equipo efectivo y un uso compartido seguro de los recursos.
 
->[!VIDEO](https://video.tv.adobe.com/v/3474890/?learn=on&enablevpops=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3474922/?learn=on&enablevpops=on&captions=spa)
