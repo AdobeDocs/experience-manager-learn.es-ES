@@ -6,7 +6,7 @@ sub-product: Experience Manager Sites
 topic: Content Management
 doc-type: Catalog
 exl-id: cde4ce7f-0afe-4632-8c1c-354586f296d5
-source-git-commit: 14ca2ba3d5b6c116e3fa8b437aa9ed90375ae468
+source-git-commit: 999bbe542e5c71ae537f93a4c89acf6d304a4292
 workflow-type: tm+mt
 source-wordcount: '786'
 ht-degree: 38%
@@ -31,7 +31,7 @@ Las tres opciones son enfoques sólidos y la mejor opción depende de su caso de
 
 >[!IMPORTANT]
 >
-> **Edge Delivery Services** es la forma más reciente y avanzada de distribuir sitios web con AEM. Combina la velocidad y la escalabilidad del Edge Network de Adobe con las modernas opciones de creación. Aunque se recomienda Edge Delivery Services para nuevos proyectos, AEM Sites sigue admitiendo enfoques tradicionales y sin encabezado, para que pueda elegir la ruta que mejor se adapte a sus necesidades.
+> **Edge Delivery Services** es la forma más reciente y avanzada de distribuir sitios web con AEM. Combina la velocidad y la escalabilidad del Edge Network de Adobe con modernas opciones de creación. Aunque se recomienda Edge Delivery Services para nuevos proyectos, AEM Sites sigue admitiendo enfoques tradicionales y sin encabezado, para que pueda elegir la ruta que mejor se adapte a sus necesidades.
 
 El diagrama siguiente muestra las diferentes opciones para crear experiencias con AEM Sites:
 
@@ -54,7 +54,7 @@ En la siguiente tabla se proporciona una comparación de alto nivel de las tres 
 
 ## Migración desde AMS o locales
 
-Si está migrando de AMS o local (OTP) a AEM as a Cloud Service, Adobe le recomienda evaluar el paso directamente a Edge Delivery Services. Normalmente, el esfuerzo no es mayor que migrar a AEM as a Cloud Service Publish, ya que ofrece un rendimiento más rápido y una mayor escalabilidad. Si decide que Edge Delivery Services no es la opción correcta para usted en este momento, o si los demás enfoques satisfacen mejor sus necesidades, siguen siendo opciones totalmente compatibles y válidas para su proyecto.
+Si está migrando de AMS o local (OTP) a AEM as a Cloud Service, Adobe le recomienda evaluar el paso directamente a Edge Delivery Services. Normalmente, el esfuerzo no es mayor que migrar a AEM as a Cloud Service Publish, ya que ofrece un rendimiento más rápido y una mayor escalabilidad. Si decide que Edge Delivery Services no es la opción correcta para usted en este momento o si los demás enfoques satisfacen mejor sus necesidades, siguen siendo opciones totalmente compatibles y válidas para su proyecto.
 
 ## Tutoriales
 
@@ -67,12 +67,12 @@ Explore los tres métodos para crear con AEM Sites con más detalle. Los tutoria
   {description = Explore Edge Delivery Services with comprehensive guides. The Build, Publish, and Launch guides cover everything you need to get started with Edge Delivery Services.}
   {image = ./assets/edge-delivery-services.png}
   {target = _blank}
-* https://experienceleague.adobe.com/es/docs/experience-manager-learn/getting-started-with-aem-headless/overview
+* https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/overview
   {title = Headless/API-First - Tutorials}
   {description = Learn how to build headless applications powered by AEM content. Tutorials cover frameworks like iOS, Android, and React—choose what fits your stack.}
   {image = ./assets/headless.png}
   {target = _self}
-* https://experienceleague.adobe.com/es/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview
+* https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview
   {title = Traditional AEM - WKND Tutorial}
   {description = Learn how to build a sample AEM Sites project using the WKND tutorial. This guide walks you through project setup, Core Components, Editable Templates, client-side libraries, and component development.}
   {image = ./assets/aem-wknd-spa-editor-tutorial.png}
