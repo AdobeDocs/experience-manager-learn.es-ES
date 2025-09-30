@@ -11,10 +11,10 @@ thumbnail: KT-11862.png
 last-substantial-update: 2023-02-15T00:00:00Z
 exl-id: 1d1bcb18-06cd-46fc-be2a-7a3627c1e2b2
 duration: 792
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 2f7e10680c7211da836e33fdd241cd7f5d633d5f
 workflow-type: tm+mt
-source-wordcount: '792'
-ht-degree: 0%
+source-wordcount: '788'
+ht-degree: 1%
 
 ---
 
@@ -49,9 +49,9 @@ $ mvn clean package
 
 ## Implementar artefactos de AEM mediante el complemento AEM-RDE
 
-Primero, asegúrese de que tiene instalado el [último módulo CLI de `aio`](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools#aio-cli).
+Primero, asegúrese de que tiene instalado el [último módulo CLI de `aio`](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools#aio-cli).
 
-A continuación, utilice el comando `aio aem:rde:install` para implementar varios artefactos de AEM. Ahora que debe
+A continuación, utilice el comando `aio aem:rde:install` para implementar varios artefactos de AEM.
 
 ### Implementar `all` y `dispatcher` paquetes
 
@@ -204,7 +204,7 @@ Los archivos de configuración de Apache o Dispatcher **no se pueden implementar
 
 ### Implementación de archivos de configuración (YAML)
 
-Los archivos de CDN, tareas de mantenimiento, reenvío de registros y configuración de autenticación de API de AEM se pueden implementar en RDE mediante el comando `install`. Estas configuraciones se administran como archivos YAML en la carpeta `config` del proyecto AEM. Consulte [Configuraciones admitidas](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/operations/config-pipeline#configurations) para obtener más información.
+Los archivos de CDN, tareas de mantenimiento, reenvío de registros y configuración de autenticación de API de AEM se pueden implementar en RDE mediante el comando `install`. Estas configuraciones se administran como archivos YAML en la carpeta `config` del proyecto AEM. Consulte [Configuraciones admitidas](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline#configurations) para obtener más información.
 
 Para aprender a implementar los archivos de configuración, vamos a mejorar el archivo de configuración de `cdn` e implementarlo en RDE.
 
@@ -273,8 +273,8 @@ Obtenga información acerca del [ciclo de vida de desarrollo/implementación usa
 
 ## Recursos adicionales
 
-[Documentación de comandos RDE](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments)
+[Documentación de comandos RDE](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments)
 
 [Complemento CLI de Adobe I/O Runtime para interacciones con entornos de desarrollo rápido de AEM](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
 
-[Configuración del proyecto AEM](https://experienceleague.adobe.com/es/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup)
+[Configuración del proyecto AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup)

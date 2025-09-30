@@ -4,9 +4,9 @@ description: Descargar versiones archivadas de la newsletter.
 hidefromtoc: true
 hide: true
 exl-id: 16133400-b4c6-4d86-9c28-d5e230d55839
-source-git-commit: 95b83dcf232492858b57741f960b0a35c609d76a
+source-git-commit: 150272efe062cfbabdad4f1987be80a89b4bbd4c
 workflow-type: tm+mt
-source-wordcount: '50'
+source-wordcount: '51'
 ht-degree: 0%
 
 ---
@@ -25,4 +25,5 @@ Nuestros boletines mensuales de contenido de Experience League están disponible
 | [Junio](assets/June-Newsletter.pdf) |
 | [Julio](assets/July-Newsletter.pdf) |
 | [Agosto](assets/August-Newsletter.pdf) |
+| [Septiembre](assets/Sept-Newsletter.pdf) |
 
