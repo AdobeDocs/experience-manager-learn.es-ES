@@ -10,10 +10,10 @@ doc-type: Feature Video
 duration: 323
 last-substantial-update: 2025-10-01T00:00:00Z
 jira: KT-19332
-source-git-commit: 4d17b28ed67d7e5b03caa5fb57701ab7ddbcb77f
+source-git-commit: 51b9fd68590c6f0b7f21d322063f1e9e5049b1c6
 workflow-type: tm+mt
-source-wordcount: '49'
-ht-degree: 0%
+source-wordcount: '67'
+ht-degree: 1%
 
 ---
 
@@ -23,3 +23,5 @@ ht-degree: 0%
 Obtenga información sobre cómo configurar y controlar el acceso a los recursos en el centro de contenido de AEM Assets mediante el control de acceso basado en atributos (ABAC).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3475413/?learn=on&enablevpops)
+
+[Descargue la hoja de cálculo de definición de control de acceso basado en atributos](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/content-hub/attribute-based-access-control) de la documentación de control de acceso basado en atributos de Content Hub para AEM Assets.
