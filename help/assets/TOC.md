@@ -7,9 +7,9 @@ sub-product: Experience Manager Assets
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: 16b106d88d51d68819470758abd536ad42b019db
+source-git-commit: 4d17b28ed67d7e5b03caa5fb57701ab7ddbcb77f
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '464'
 ht-degree: 99%
 
 ---
@@ -87,6 +87,7 @@ ht-degree: 99%
    + [Variantes de imagen con Adobe Express](./content-hub/image-variants.md)
    + [Colecciones](./content-hub/collections.md)
    + [Uso compartido](./content-hub/share.md)
+   + [Control de acceso basado en atributos](./content-hub/attribute-based-access-control.md)
    + Casos de uso{#use-cases}
       + [Administración de recursos](./content-hub/use-cases/manage-assets.md)
 
