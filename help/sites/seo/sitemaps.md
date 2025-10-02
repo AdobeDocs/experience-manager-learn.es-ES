@@ -12,7 +12,7 @@ last-substantial-update: 2022-10-03T00:00:00Z
 doc-type: Technical Video
 exl-id: 40bb55f9-011d-4261-9f44-b1104a591252
 duration: 937
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: d2714443fa644ba17afdfbed5e6da8091425aeab
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 5%
@@ -27,7 +27,7 @@ Aprenda a impulsar su SEO creando mapas del sitio para AEM Sites.
 >
 >Este vídeo muestra el uso de direcciones URL relativas en el mapa del sitio. Los mapas del sitio [deben usar direcciones URL absolutas](https://sitemaps.org/protocol.html). Consulte [Configuraciones](#absolute-sitemap-urls) para ver cómo habilitar las direcciones URL absolutas, ya que esto no se trata en el siguiente vídeo.
 
->[!VIDEO](https://video.tv.adobe.com/v/3454364?quality=12&learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/337960?quality=12&learn=on)
 
 ## Configuraciones
 
@@ -52,7 +52,7 @@ La captura de pantalla siguiente ilustra una configuración similar para `http:/
 
 Define la [configuración de fábrica de OSGi](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) para la frecuencia (mediante [expresiones cron](https://cron.help/)) con la que los mapas del sitio se vuelven a generar y se almacenan en caché en AEM.
 
-`ui.config/src/main/jcr_content/apps/wknd/osgiconfig/config.publish`
+`ui.config/src/main/jcr_content/apps/wknd/osgiconfig/config.author`
 
 ```json
 {
@@ -89,7 +89,7 @@ RewriteRule ^/(.*)$ /content/${CONTENT_FOLDER_NAME}/$1 [PT,L]
 
 ## Recursos
 
-+ [Documentación de mapa del sitio AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html?lang=es)
++ [Documentación de mapa del sitio AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html?lang=en)
 + [Documentación de mapa del sitio Apache Sling](https://github.com/apache/sling-org-apache-sling-sitemap#readme)
 + [Documentación de mapa del sitio de Sitemap.org](https://www.sitemaps.org/protocol.html)
 + [Documentación del archivo de índice de mapa de sitios Sitemap.org](https://www.sitemaps.org/protocol.html#index)
