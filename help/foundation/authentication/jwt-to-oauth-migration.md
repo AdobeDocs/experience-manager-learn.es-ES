@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Obtenga información sobre cómo migrar otras soluciones de Adobe a las nuevas credenciales de servidor a servidor OAuth desde las credenciales de cuenta de servicio (JWT) obsoletas.
 
->[!VIDEO](https://video.tv.adobe.com/v/3432960/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449241/?learn=on&captions=spa)
