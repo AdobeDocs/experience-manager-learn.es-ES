@@ -98,7 +98,7 @@ Las respuestas HTTP para las solicitudes HTTP correspondientes se almacenan en c
    + Sin embargo, el almacenamiento en caché de las solicitudes autenticadas [se puede habilitar globalmente](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es#caching-when-authentication-is-used) o selectivamente mediante el almacenamiento en caché con permisos confidenciales [3&rbrace;.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=es)
 + La solicitud HTTP no contiene parámetros de consulta.
    + Sin embargo, configurar [Parámetros de consulta ignorados](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es#ignoring-url-parameters) permite que las solicitudes HTTP con los parámetros de consulta ignorados se almacenen en caché o se proporcionen desde la caché.
-+ La ruta de acceso de la solicitud HTTP [ coincide con una regla de permiso de Dispatcher y no coincide con una regla de denegación ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es#specifying-the-documents-to-cache).
++ La ruta de acceso de la solicitud HTTP [&#x200B; coincide con una regla de permiso de Dispatcher y no coincide con una regla de denegación &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es#specifying-the-documents-to-cache).
 + La respuesta HTTP no tiene ninguno de los siguientes encabezados de respuesta HTTP establecidos por AEM Publish:
 
    + `no-cache`

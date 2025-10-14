@@ -56,7 +56,7 @@ Comience el tutorial con la [Definición de modelos de fragmento de contenido](1
 
 El código fuente y los paquetes de contenido están disponibles en el repositorio de GitHub [AEM Headless tutorials](https://github.com/adobe/aem-tutorials).
 
-La rama [`main` contiene el código fuente final ](https://github.com/adobe/aem-tutorials/tree/main/headless/open-api/basic) para este tutorial.
+La rama [`main` contiene el código fuente final &#x200B;](https://github.com/adobe/aem-tutorials/tree/main/headless/open-api/basic) para este tutorial.
 Las instantáneas del código al final de cada paso están disponibles como etiquetas Git.
 
 * Inicio del capítulo 4 - Aplicación React: [`headless_open-api_basic`](https://github.com/adobe/aem-tutorials/tree/headless_open-api_basic//headless/open-api/basic)

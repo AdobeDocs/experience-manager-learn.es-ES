@@ -82,4 +82,4 @@ PDF no se muestra en la nueva pestaña del explorador:
 1. Asegúrese de que no está bloqueando las ventanas emergentes del explorador
 1. Asegúrese de iniciar el servidor de AEM como administrador (al menos en Windows)
 1. Asegúrese de que el paquete &quot;DesarrollandoConUsuarioServicio&quot; esté en *estado activo*
-1. [Asegúrese de que el usuario del sistema ](http://localhost:4502/useradmin) &#39; fd-service&#39; tiene permisos de lectura, modificación y creación en el siguiente nodo `/content/usergenerated/content/aemformsenablement`
+1. [Asegúrese de que el usuario del sistema &#x200B;](http://localhost:4502/useradmin) &#39; fd-service&#39; tiene permisos de lectura, modificación y creación en el siguiente nodo `/content/usergenerated/content/aemformsenablement`

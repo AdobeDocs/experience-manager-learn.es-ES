@@ -55,7 +55,7 @@ Se requiere lo siguiente:
 En lugar de configurar un entorno de AEM e instalar la base de código WKND, puede usar el depurador de Experience Platform para **cambiar** el [sitio WKND](https://wknd.site/us/es.html) activo a *su propiedad de etiquetas*. Sin embargo, puede usar su propio sitio de AEM si ya tiene habilitada la [capa de datos del cliente de Adobe](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=es#installation-activation).
 
 1. Inicie sesión en Experience Platform y [cree una propiedad de etiquetas](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html?lang=es) (si aún no lo ha hecho).
-1. Asegúrese de que se ha creado una biblioteca [JavaScript ](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html?lang=es#create-a-library) de etiquetas inicial y de que se ha promocionado a la etiqueta [entorno](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=es).
+1. Asegúrese de que se ha creado una biblioteca [JavaScript &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html?lang=es#create-a-library) de etiquetas inicial y de que se ha promocionado a la etiqueta [entorno](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=es).
 1. Copie el código incrustado de JavaScript del entorno de etiquetas en el que se ha publicado la biblioteca.
 
    ![Copiar código incrustado de propiedad de etiqueta](assets/collect-data-analytics/launch-environment-copy.png)

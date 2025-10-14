@@ -44,7 +44,7 @@ Aunque la extensión de la interfaz de usuario de AEM aparece en interfaces de u
 
 Las acciones de Adobe I/O Runtime se invocan principalmente desde dos lugares en una extensión de interfaz de usuario de AEM:
 
-1. Controlador `onClick(..)` del registro de extensión [de ](./extension-registration.md)
+1. Controlador `onClick(..)` del registro de extensión [de &#x200B;](./extension-registration.md)
 1. Dentro de un [modal](./modal.md)
 
 ### Desde el registro de extensión

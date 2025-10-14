@@ -28,7 +28,7 @@ El comando index de [!DNL oak-run.jar] consolida una serie de características p
 
 >[!VIDEO](https://video.tv.adobe.com/v/40115?quality=12&learn=on&captions=spa)
 
-* La versión de [[!DNL oak-run.jar]](https://repository.apache.org/service/local/artifact/maven/redirect?r=releases&amp;g=org.apache.jackrabbit&amp;a=oak-run&amp;v=1.8.0) utilizada debe coincidir con la versión de Oak utilizada en la instancia de AEM.
+* La versión de [[!DNL oak-run.jar]](https://repository.apache.org/service/local/artifact/maven/redirect?r=releases&g=org.apache.jackrabbit&a=oak-run&v=1.8.0) utilizada debe coincidir con la versión de Oak utilizada en la instancia de AEM.
 * Al administrar índices mediante [!DNL oak-run.jar], se aprovecha el comando **[!DNL index]** con varios indicadores para admitir distintas operaciones.
 
    * `java -jar oak-run*.jar index ...`

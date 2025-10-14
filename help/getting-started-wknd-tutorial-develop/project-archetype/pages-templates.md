@@ -324,7 +324,7 @@ AEM A menudo, sobre todo al principio de un proyecto de, es importante mantener 
 Por ahora, las plantillas se tratan como otros fragmentos de código y sincronizan la **plantilla de página de artículo** como parte del proyecto.
 AEM AEM Hasta ahora, el código se insertaba desde el proyecto de a una instancia local de. AEM AEM La plantilla de página de artículo **Article Page Template** se creó directamente en una instancia local de, por lo que necesita **importar** la plantilla en el proyecto de. AEM El módulo **ui.content** está incluido en el proyecto de la para este propósito específico.
 
-AEM Los siguientes pasos se realizan en el IDE de VSCode mediante el complemento [VSCode Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync&amp;ssr=false#overview). AEM Pero podrían estar utilizando cualquier IDE que haya configurado para **importar** o importar contenido desde una instancia local de.
+AEM Los siguientes pasos se realizan en el IDE de VSCode mediante el complemento [VSCode Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync&ssr=false#overview). AEM Pero podrían estar utilizando cualquier IDE que haya configurado para **importar** o importar contenido desde una instancia local de.
 
 1. En, el VSCode abre el proyecto `aem-guides-wknd`.
 

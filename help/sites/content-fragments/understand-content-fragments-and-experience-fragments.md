@@ -131,7 +131,7 @@ Los fragmentos de contenido y los fragmentos de experiencias de Adobe Experience
 </td>
 </tr><tr><td><strong>Documentación</strong></td>
 <td><ul>
-<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=es&amp;topic=/experience-manager/6-5/assets/morehelp/content-fragments.ug.js" target="_blank">Guía del usuario de fragmentos de contenido de AEM</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=es&topic=/experience-manager/6-5/assets/morehelp/content-fragments.ug.js" target="_blank">Guía del usuario de fragmentos de contenido de AEM</a></li>
 <li><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/content-fragments-feature-video-use.html?lang=es" target="_blank">Uso de fragmentos de contenido en AEM</a></li>
 </ul>
 </td>
@@ -172,7 +172,7 @@ El diagrama siguiente ilustra la arquitectura general de los fragmentos de conte
 
 ## Recurso de apoyo para fragmentos de contenido
 
-+ [Guía del usuario sobre fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=es&amp;topic=/experience-manager/6-5/assets/morehelp/content-fragments.ug.js)
++ [Guía del usuario sobre fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=es&topic=/experience-manager/6-5/assets/morehelp/content-fragments.ug.js)
 + [Introducción a Adobe Experience Manager as a Headless CMS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=es)
 + [Uso de fragmentos de contenido en AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/content-fragments-feature-video-use.html?lang=es)
 + [Componente de fragmento de contenido de los componentes principales de AEM WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=es)

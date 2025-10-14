@@ -85,7 +85,7 @@ Este caso de prueba afirma que la entrada parametrizada (`params.json`) para el 
    + Asegúrese de que [Docker Desktop](../set-up/development-environment.md#docker) y las imágenes de Docker compatibles estén instalados e iniciados
    + Finalice cualquier instancia de la herramienta de desarrollo en ejecución
 
-![Prueba - Correcta ](./assets/test/success-parameterized/result.png)
+![Prueba - Correcta &#x200B;](./assets/test/success-parameterized/result.png)
 
 ## Escribir un caso de prueba de comprobación de errores
 

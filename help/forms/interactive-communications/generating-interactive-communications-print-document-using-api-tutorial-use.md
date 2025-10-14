@@ -109,7 +109,7 @@ resourceResolverHelper.callWith(resourceResolver, {call: function()
 
 **Para probar esto en su sistema local, siga las siguientes instrucciones:**
 
-* Configure Tomcat como se describe en este [ artículo.](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md) Tomcat tiene el archivo WAR que genera los datos de ejemplo.
+* Configure Tomcat como se describe en este [&#x200B; artículo.](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md) Tomcat tiene el archivo WAR que genera los datos de ejemplo.
 * Configure el usuario del sistema alias de servicio como se describe en este [artículo](/help/forms/adaptive-forms/service-user-tutorial-develop.md).
 Asegúrese de que este usuario del sistema tiene permisos de lectura en el siguiente nodo. Para conceder los permisos, inicie sesión en [user admin](https://localhost:4502/useradmin), busque los &quot;datos&quot; del usuario del sistema y conceda los permisos de lectura en el siguiente nodo presionando la pestaña Permisos
    * /content/dam/formsanddocuments

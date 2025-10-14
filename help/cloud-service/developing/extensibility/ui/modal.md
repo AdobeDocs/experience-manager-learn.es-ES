@@ -109,7 +109,7 @@ function ExtensionRegistration() {
 
 ## Componente modal
 
-Cada ruta de la extensión [ que no es la ruta `index` ](./extension-registration.md#app-routes) se asigna a un componente React que puede representarse en el modal de la extensión.
+Cada ruta de la extensión [&#x200B; que no es la ruta `index` &#x200B;](./extension-registration.md#app-routes) se asigna a un componente React que puede representarse en el modal de la extensión.
 
 Un modal puede estar compuesto por cualquier número de rutas de React, desde un modal simple de una ruta a un modal complejo de varias rutas.
 

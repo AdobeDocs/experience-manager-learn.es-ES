@@ -42,7 +42,7 @@ También es código de prueba *crítico* con una instancia ***Publish*** local. 
 ### Etapas
 
 1. Asegúrese de que Java™ está instalado.
-   * Preferir [Java™ JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14) para AEM 6.5+
+   * Preferir [Java™ JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=14) para AEM 6.5+
    * [Java™ JDK 8](https://www.oracle.com/java/technologies/downloads/) para versiones de AEM anteriores a AEM 6.5
 1. Obtener una copia del [Jar de inicio rápido de AEM y un [!DNL license.properties]](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=es).
 1. Cree una estructura de carpetas en el equipo como la siguiente:

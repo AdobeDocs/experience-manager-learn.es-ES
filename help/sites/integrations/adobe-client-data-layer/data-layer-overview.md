@@ -173,7 +173,7 @@ Se recomienda almacenar en déclencheur cualquier código personalizado basado e
 
 ## Siguientes pasos
 
-Hay dos opciones para continuar el aprendizaje: la primera es desproteger los datos de la página [recopilarlos y enviarlos a Adobe Analytics](../analytics/collect-data-analytics.md). Este tutorial muestra el uso de la capa de datos del cliente de Adobe. La segunda opción es, para aprender a [personalizar la capa de datos del cliente de Adobe AEM con componentes de la interfaz de usuario de la interfaz de usuario ](./data-layer-customize.md) de la interfaz de usuario 
+Hay dos opciones para continuar el aprendizaje: la primera es desproteger los datos de la página [recopilarlos y enviarlos a Adobe Analytics](../analytics/collect-data-analytics.md). Este tutorial muestra el uso de la capa de datos del cliente de Adobe. La segunda opción es, para aprender a [personalizar la capa de datos del cliente de Adobe AEM con componentes de la interfaz de usuario de la interfaz de usuario &#x200B;](./data-layer-customize.md) de la interfaz de usuario 
 
 
 ## Recursos adicionales {#additional-resources}

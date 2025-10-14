@@ -106,4 +106,4 @@ export default function Contact(){
 }
 ```
 
-El código anterior utiliza componentes html nativos asignados a los componentes utilizados en el formulario adaptable. Por ejemplo, se asigna el componente de formulario adaptable de entrada de texto al componente TextField. Los componentes nativos utilizados en el artículo [ se pueden descargar desde aquí](./assets/native-components.zip)
+El código anterior utiliza componentes html nativos asignados a los componentes utilizados en el formulario adaptable. Por ejemplo, se asigna el componente de formulario adaptable de entrada de texto al componente TextField. Los componentes nativos utilizados en el artículo [&#x200B; se pueden descargar desde aquí](./assets/native-components.zip)

@@ -45,7 +45,7 @@ Para utilizar este enfoque, agregue `granite.csrf.standalone` como dependencia a
 
 ## Envío de formulario personalizado con protección CSRF
 
-Si el uso de la biblioteca de cliente [`granite.csrf.standalone` ](#csrf-client-library) no se ajusta a su caso de uso, puede agregar manualmente un token CSRF a un envío de formulario. El siguiente ejemplo muestra cómo agregar un token CSRF a un envío de formulario.
+Si el uso de la biblioteca de cliente [`granite.csrf.standalone` &#x200B;](#csrf-client-library) no se ajusta a su caso de uso, puede agregar manualmente un token CSRF a un envío de formulario. El siguiente ejemplo muestra cómo agregar un token CSRF a un envío de formulario.
 
 Este fragmento de código muestra cómo, en el envío del formulario, se puede recuperar el token CSRF desde AEM y agregarlo a una entrada de formulario denominada `:cq_csrf_token`. Dado que el token CSRF tiene una duración corta, es mejor recuperar y establecer el token CSRF inmediatamente antes de enviar el formulario, lo que garantiza su validez.
 
@@ -74,7 +74,7 @@ document.querySelector('form').addEventListener('submit', async (event) => {
 
 ## Recuperar con protección CSRF
 
-Si el uso de la biblioteca de cliente [`granite.csrf.standalone` ](#csrf-client-library) no se puede permitir para su caso de uso, puede agregar manualmente un token CSRF a un XHR o a las solicitudes de recuperación. El siguiente ejemplo muestra cómo añadir un token CSRF a un XHR realizado con fetch.
+Si el uso de la biblioteca de cliente [`granite.csrf.standalone` &#x200B;](#csrf-client-library) no se puede permitir para su caso de uso, puede agregar manualmente un token CSRF a un XHR o a las solicitudes de recuperación. El siguiente ejemplo muestra cómo añadir un token CSRF a un XHR realizado con fetch.
 
 Este fragmento de código muestra cómo recuperar un token CSRF de AEM y añadirlo al encabezado de solicitud HTTP `CSRF-Token` de una solicitud de captura. Dado que el token CSRF tiene una corta duración, es mejor recuperarlo y configurarlo inmediatamente antes de realizar la solicitud de captura, lo que garantiza su validez.
 

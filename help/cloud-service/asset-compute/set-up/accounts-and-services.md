@@ -29,7 +29,7 @@ Todos los servicios de Adobe deben ser accesibles a través de la misma organiza
    + El aprovisionamiento puede tardar entre 2 y 10 días
 + Almacenamiento en la nube
    + [Almacenamiento de blob de Azure](https://azure.microsoft.com/en-us/services/storage/blobs/)
-   + o [Amazon S3](https://aws.amazon.com/s3/?did=ft_card&amp;trk=ft_card)
+   + o [Amazon S3](https://aws.amazon.com/s3/?did=ft_card&trk=ft_card)
 
 >[!WARNING]
 >
@@ -84,7 +84,7 @@ _Clic en el aprovisionamiento del almacenamiento del blob de Azure (sin audio)_
 
 ### Amazon S3{#amazon-s3}
 
-Se recomienda usar [Microsoft Azure Blob Storage](#azure-blob-storage) para completar este tutorial, aunque también se puede usar [Amazon S3](https://aws.amazon.com/s3/?did=ft_card&amp;trk=ft_card).
+Se recomienda usar [Microsoft Azure Blob Storage](#azure-blob-storage) para completar este tutorial, aunque también se puede usar [Amazon S3](https://aws.amazon.com/s3/?did=ft_card&trk=ft_card).
 
 Si usa el almacenamiento de Amazon S3, especifique las credenciales del almacenamiento en la nube de Amazon S3 al [configurar las variables de entorno del proyecto](../develop/environment-variables.md#amazon-s3).
 

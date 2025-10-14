@@ -91,6 +91,6 @@ Puede descargar los siguientes recursos para empezar a crear el ejemplo de la li
 Los archivos Swagger completados se pueden descargar desde [aquí](assets/geonames-swagger-files.zip)
 Los archivos swagger describen la siguiente API de REST
 * [Obtener todos los países](https://secure.geonames.org/countryInfoJSON?username=yourusername)
-* [Obtener elementos secundarios del objeto Geoname](https://secure.geonames.org/children?formatted=true&amp;geonameId=6252001&amp;username=yourusername)
+* [Obtener elementos secundarios del objeto Geoname](https://secure.geonames.org/children?formatted=true&geonameId=6252001&username=yourusername)
 
 El modelo de datos de formulario [completado se puede descargar desde aquí](assets/geonames-api-form-data-model.zip)

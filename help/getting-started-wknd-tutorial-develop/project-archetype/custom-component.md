@@ -324,7 +324,7 @@ A continuación, añada el componente Firma a una página de AEM. Dado que el co
 
    Pulse el botón **Listo** en la parte inferior derecha para guardar los cambios.
 
-   ![rellenar propiedades del componente de firma ](assets/custom-component/add-properties.png)
+   ![rellenar propiedades del componente de firma &#x200B;](assets/custom-component/add-properties.png)
 
    Los autores de AEM configuran y crean componentes a través de los cuadros de diálogo. En este punto, en el desarrollo del componente Firma, se incluyen los cuadros de diálogo para recopilar los datos, pero aún no se ha añadido la lógica para procesar el contenido creado. Por lo tanto, solo se muestra el marcador de posición.
 

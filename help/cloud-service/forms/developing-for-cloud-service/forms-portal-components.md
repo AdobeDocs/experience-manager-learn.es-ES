@@ -29,7 +29,7 @@ AEM Forms proporciona los siguientes componentes listos para usar del portal:
 
 ## Habilitar componentes del portal de Forms
 
-Inicie IntelliJ y abra el proyecto BankingApplication creado en el paso [ anterior.](./getting-started.md) Expanda ui.apps->src->main->content->jcr_root->apps.bankingapplication->components
+Inicie IntelliJ y abra el proyecto BankingApplication creado en el paso [&#x200B; anterior.](./getting-started.md) Expanda ui.apps->src->main->content->jcr_root->apps.bankingapplication->components
 
 Para utilizar cualquier componente principal (incluidos los componentes de portal predeterminados) en un sitio de Adobe Experience Manager (AEM), debe crear un componente proxy y habilitarlo para su sitio.
 El componente proxy recién creado debe apuntar al componente de formularios predeterminado para que herede todo de ellos. Para ello, cambie resourceSuperType en el content.xml del componente proxy. En el archivo content.xml también especificamos el título y el grupo de componentes.

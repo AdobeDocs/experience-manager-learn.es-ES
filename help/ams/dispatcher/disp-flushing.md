@@ -69,7 +69,7 @@ La página de configuración predeterminada muestra `Serialization Type` como `D
 
 En la ficha `Transport` puede ver que `URI` se ha configurado para que apunte a la dirección IP del Dispatcher que recibirá las solicitudes de vaciado.  La ruta de acceso `/dispatcher/invalidate.cache` no es la forma en que el módulo determina si hay vaciado. Solo es un punto final obvio que se puede ver en el registro de acceso para saber si se produjo una solicitud de vaciado.  En la ficha `Extended` veremos qué elementos permiten comprobar que se trata de una solicitud de vaciado para el módulo Dispatcher.
 
-![Captura de pantalla de la ficha Ampliado del agente de replicación.  Observe los encabezados que se envían con la petición POST enviada para indicar a Dispatcher que vacíe ](assets/disp-flushing/disp-flush-agent3.png "disp-flush-agent3")
+![Captura de pantalla de la ficha Ampliado del agente de replicación.  Observe los encabezados que se envían con la petición POST enviada para indicar a Dispatcher que vacíe &#x200B;](assets/disp-flushing/disp-flush-agent3.png "disp-flush-agent3")
 
 El `HTTP Method` para solicitudes de vaciado es solo una solicitud de `GET` con algunos encabezados especiales:
 - CQ-Action

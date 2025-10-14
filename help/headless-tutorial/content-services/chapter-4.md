@@ -51,7 +51,7 @@ AEM AEM Para ello, podemos asignar estos requisitos a Componentes de la (y, en n
 >
 >AEM AEM Para admitir la exportación de páginas y componentes JSON del servicio de contenido de la, las páginas y los componentes deben **derivarse de los componentes principales de WCM de la página de destino**.
 >
->AEM [Los componentes principales de WCM de ](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components) tienen funcionalidad integrada para admitir un esquema JSON normalizado de páginas y componentes exportados. AEM Todos los componentes de WKND Mobile utilizados en este tutorial (página, imagen, texto y lista de fragmentos de contenido) se derivan de los componentes principales de WCM en uso para la creación de la aplicación de la manera más sencilla posible.
+>AEM [Los componentes principales de WCM de &#x200B;](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components) tienen funcionalidad integrada para admitir un esquema JSON normalizado de páginas y componentes exportados. AEM Todos los componentes de WKND Mobile utilizados en este tutorial (página, imagen, texto y lista de fragmentos de contenido) se derivan de los componentes principales de WCM en uso para la creación de la aplicación de la manera más sencilla posible.
 
 ## Definición de la plantilla de API de eventos
 
