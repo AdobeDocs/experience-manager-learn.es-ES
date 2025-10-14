@@ -18,6 +18,6 @@ ht-degree: 8%
 
 # Asistente de IA de AEM
 
-Descubra cómo el [Asistente de IA de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/ai-in-aem/ai-assistant/ai-assistant-in-aem#) simplifica sus flujos de trabajo de Adobe Experience Manager. Encontrará funciones, aprenderá prácticas recomendadas, solucionará problemas e incluso creará vales de asistencia, y será su compañero inteligente en AEM. Aumente la productividad con orientación, perspectivas y asistencia impulsadas por IA, todo en un solo lugar.
+Descubra cómo el [Asistente de IA de AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/ai-assistant/ai-assistant-in-aem#) simplifica sus flujos de trabajo de Adobe Experience Manager. Encontrará funciones, aprenderá prácticas recomendadas, solucionará problemas e incluso creará vales de asistencia, y será su compañero inteligente en AEM. Aumente la productividad con orientación, perspectivas y asistencia impulsadas por IA, todo en un solo lugar.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475361/?learn=on&enablevpops&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3475357/?learn=on&enablevpops)
