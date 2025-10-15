@@ -207,7 +207,7 @@ El método anterior puede utilizarse únicamente para medir la duración de la m
 
 ## Recursos adicionales
 
-+ [Sugerencias y trucos para migrar a Experience Manager en la nube ( Cumbre 2022)](https://business.adobe.com/summit/2022/sessions/tips-and-tricks-for-migrating-to-experience-manage-tw109.html)
++ [Sugerencias y trucos para migrar a Experience Manager en la nube ( Cumbre 2022)](https://business.adobe.com/es/summit/2022/sessions/tips-and-tricks-for-migrating-to-experience-manage-tw109.html)
 
 + [Vídeo de la serie Expert de CTT](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/content-migration/content-transfer-tool.html?lang=es)
 
