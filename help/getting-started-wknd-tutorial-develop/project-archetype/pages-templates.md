@@ -76,7 +76,7 @@ En esta parte del tutorial, creará una nueva plantilla de página de artículo 
 
 Por lo general, la planificación de un nuevo sitio web comienza con maquetas y diseños estáticos. [Adobe XD](https://helpx.adobe.com/es/support/xd.html) es una herramienta de diseño para mejorar la experiencia del usuario. A continuación, vamos a inspeccionar un kit de interfaz de usuario y maquetas para ayudar a planificar la estructura de la plantilla de página de artículo.
 
->[!VIDEO](https://video.tv.adobe.com/v/30214?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36009?captions=spa&quality=12&learn=on)
 
 **Descargar el archivo de diseño de artículo de [WKND](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND-article-design.xd)**.
 
@@ -96,7 +96,7 @@ Hay tres áreas principales de [plantillas editables](https://experienceleague.a
 
 A continuación, cree una plantilla en AEM que coincida con la estructura de las maquetas. Esto ocurre en una instancia local de AEM. Siga los pasos del siguiente vídeo:
 
->[!VIDEO](https://video.tv.adobe.com/v/330991?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36008?captions=spa&quality=12&learn=on)
 
 Pasos de alto nivel para el vídeo anterior:
 
@@ -164,7 +164,7 @@ Una práctica común al crear contenido global, como un encabezado o pie de pág
 
 El arquetipo del proyecto de AEM generó un encabezado y un pie de página. A continuación, actualice los fragmentos de experiencia para que coincidan con las maquetas. Siga los pasos del siguiente vídeo:
 
->[!VIDEO](https://video.tv.adobe.com/v/330992?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447492?captions=spa&quality=12&learn=on)
 
 Pasos de alto nivel para el vídeo anterior:
 
@@ -210,7 +210,7 @@ Pasos de alto nivel para el vídeo anterior:
 
 A continuación, cree una página con la plantilla Página de artículo. Cree el contenido de la página para que coincida con las maquetas del sitio. Siga los pasos del siguiente vídeo:
 
->[!VIDEO](https://video.tv.adobe.com/v/330993?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446445?captions=spa&quality=12&learn=on)
 
 Pasos de alto nivel para el vídeo anterior:
 

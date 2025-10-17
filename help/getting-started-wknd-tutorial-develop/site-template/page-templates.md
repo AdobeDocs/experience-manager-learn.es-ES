@@ -49,7 +49,7 @@ Hay 3 áreas principales de [Plantillas de página](https://experienceleague.ado
 
 A continuación, cree una nueva plantilla en AEM que coincida con la estructura de las maquetas. Esto ocurrirá en una instancia local de AEM. Siga los pasos del siguiente vídeo:
 
->[!VIDEO](https://video.tv.adobe.com/v/332915?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3412997?captions=spa&quality=12&learn=on)
 
 Puede utilizar la siguiente miniatura para identificar su plantilla (o cargar la suya propia).
 
@@ -66,7 +66,7 @@ Una práctica común al crear contenido global, como un encabezado o pie de pág
 
 La plantilla Sitio generó un encabezado y un pie de página. A continuación, actualice los fragmentos de experiencia para que coincidan con las maquetas. Siga los pasos del siguiente vídeo:
 
->[!VIDEO](https://video.tv.adobe.com/v/332916?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447802?captions=spa&quality=12&learn=on)
 
 Pasos de alto nivel para el siguiente vídeo:
 
@@ -78,7 +78,7 @@ Pasos de alto nivel para el siguiente vídeo:
 
 A continuación, cree una nueva página con la plantilla Página de artículo de la revista. Cree el contenido de la página para que coincida con las maquetas del sitio. Siga los pasos del siguiente vídeo:
 
->[!VIDEO](https://video.tv.adobe.com/v/332917?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343311?captions=spa&quality=12&learn=on)
 
 Utilice el [texto proporcionado](./assets/page-templates/la-skateparks-copy.txt) para rellenar el cuerpo del artículo.
 
