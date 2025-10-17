@@ -23,7 +23,7 @@ ht-degree: 100%
 
 {{edge-delivery-services-and-page-editor}}
 
-En este capítulo, vamos a explorar la relación entre un componente de página base y las plantillas editables. Aprenda a crear una plantilla de artículo sin estilo basada en algunas maquetas de [Adobe XD](https://helpx.adobe.com/support/xd.html). En el proceso de creación de la plantilla, se tratan los componentes principales y las configuraciones de política avanzadas de las plantillas editables.
+En este capítulo, vamos a explorar la relación entre un componente de página base y las plantillas editables. Aprenda a crear una plantilla de artículo sin estilo basada en algunas maquetas de [Adobe XD](https://helpx.adobe.com/es/support/xd.html). En el proceso de creación de la plantilla, se tratan los componentes principales y las configuraciones de política avanzadas de las plantillas editables.
 
 ## Requisitos previos {#prerequisites}
 
@@ -74,7 +74,7 @@ En esta parte del tutorial, creará una nueva plantilla de página de artículo 
 
 ## Planificación de la IU con Adobe XD {#adobexd}
 
-Por lo general, la planificación de un nuevo sitio web comienza con maquetas y diseños estáticos. [Adobe XD](https://helpx.adobe.com/support/xd.html) es una herramienta de diseño para mejorar la experiencia del usuario. A continuación, vamos a inspeccionar un kit de interfaz de usuario y maquetas para ayudar a planificar la estructura de la plantilla de página de artículo.
+Por lo general, la planificación de un nuevo sitio web comienza con maquetas y diseños estáticos. [Adobe XD](https://helpx.adobe.com/es/support/xd.html) es una herramienta de diseño para mejorar la experiencia del usuario. A continuación, vamos a inspeccionar un kit de interfaz de usuario y maquetas para ayudar a planificar la estructura de la plantilla de página de artículo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/30214?quality=12&learn=on)
 
@@ -82,7 +82,7 @@ Por lo general, la planificación de un nuevo sitio web comienza con maquetas y 
 
 >[!NOTE]
 >
-> También hay disponible [un kit de interfaz de usuario para componentes principales de AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/AEM-CoreComponents-UI-Kit.xd) genérico como punto de partida para proyectos personalizados.
+> También hay disponible [un kit de interfaz de usuario para componentes principales de AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/AEM-CoreComponents-UI-Kit.xd?lang=es) genérico como punto de partida para proyectos personalizados.
 
 ## Crear la plantilla de página de artículo
 

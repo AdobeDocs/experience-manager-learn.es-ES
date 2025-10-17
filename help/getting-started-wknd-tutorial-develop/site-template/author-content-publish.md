@@ -60,7 +60,7 @@ Un sitio web generalmente se divide en páginas para crear una experiencia de va
 
 Los componentes de AEM se pueden considerar como pequeños componentes modulares de una página web. Al dividir la interfaz de usuario en fragmentos lógicos o componentes, resulta mucho más fácil administrarla. Para reutilizar componentes, estos deben poder configurarse. Esto se realiza a través del cuadro de diálogo de autor.
 
-AEM proporciona un conjunto de [componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) que están listos para su uso en producción. Los **componentes principales** son elementos básicos como [Texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html) e [Imagen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=es) o elementos de IU más complejos como un [Carrusel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=es).
+AEM proporciona un conjunto de [componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) que están listos para su uso en producción. Los **componentes principales** son elementos básicos como [Texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=es) e [Imagen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=es) o elementos de IU más complejos como un [Carrusel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=es).
 
 A continuación, cree algunos componentes con el Editor de páginas de AEM.
 
@@ -90,7 +90,7 @@ A continuación, cree algunos componentes con el Editor de páginas de AEM.
 
 1. Observe que hay componentes en la página, como **Título**, **Navegación**, **Búsqueda**, que son fijos. Estas áreas se configuran como parte de la plantilla de la página y no se pueden modificar en una página individual. Esto se analiza con más detalle en el siguiente capítulo.
 
-No dude en experimentar con algunos de los otros componentes. La documentación sobre cada [componente principal se encuentra aquí](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es). Encontrará una serie de vídeos detallada sobre la [creación de páginas aquí](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/aem-sites-authoring-overview.html).
+No dude en experimentar con algunos de los otros componentes. La documentación sobre cada [componente principal se encuentra aquí](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es). Encontrará una serie de vídeos detallada sobre la [creación de páginas aquí](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/aem-sites-authoring-overview.html?lang=es).
 
 ## Publicación de las actualizaciones {#publish-updates}
 
@@ -156,9 +156,9 @@ A continuación, vaya al servicio Publicación para ver los cambios.
 
    ![publicar directamente](assets/author-content-publish/page-editor-publish.png)
 
-1. Vuelva al **Servicio de publicación de AEM** para ver los cambios. Lo más probable es que **no** vea inmediatamente las actualizaciones. Esto se debe a que el **Servicio de publicación de AEM** incluye el [almacenamiento en caché de mediante un servidor web Apache y CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/caching.html). De forma predeterminada, el contenido de HTML se almacena en caché durante 5 minutos aproximadamente.
+1. Vuelva al **Servicio de publicación de AEM** para ver los cambios. Lo más probable es que **no** vea inmediatamente las actualizaciones. Esto se debe a que el **Servicio de publicación de AEM** incluye el [almacenamiento en caché de mediante un servidor web Apache y CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/caching.html?lang=es). De forma predeterminada, el contenido de HTML se almacena en caché durante 5 minutos aproximadamente.
 
-1. Para omitir la caché con fines de prueba o depuración, simplemente añada un parámetro de consulta como `?nocache=true`. La URL tendría el siguiente aspecto: `https://publish-pYYYY-eXXXX.adobeaemcloud.com/content/wknd/en/article/hello-world.html?nocache=true`. Se pueden encontrar más detalles acerca de la estrategia del almacenamiento en caché y de las configuraciones disponibles [aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/overview.html).
+1. Para omitir la caché con fines de prueba o depuración, simplemente añada un parámetro de consulta como `?nocache=true`. La URL tendría el siguiente aspecto: `https://publish-pYYYY-eXXXX.adobeaemcloud.com/content/wknd/en/article/hello-world.html?nocache=true`. Se pueden encontrar más detalles acerca de la estrategia del almacenamiento en caché y de las configuraciones disponibles [aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/overview.html?lang=es).
 
 1. También puede encontrar la dirección URL del servicio de publicación en Cloud Manager. Vaya a **Programa de Cloud Manager** > **Entornos** > **Entorno**.
 
