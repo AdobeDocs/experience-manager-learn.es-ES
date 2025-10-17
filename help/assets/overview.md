@@ -6,7 +6,7 @@ version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a
 doc-type: Catalog
 exl-id: 1d0b0183-25ee-4cb4-82a5-3506e7c1c908
 source-git-commit: 82437ad5d395c5261b3a913b168e4068abb55206
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '128'
 ht-degree: 100%
 
@@ -22,13 +22,13 @@ Adobe Experience Manager (AEM) Assets es una herramienta de administración de r
 >id="aemcloud_assets_overview"
 >title="AEM Assets"
 >abstract="Aprenda a buscar y editar rápidamente los recursos que necesita."
->additional-url="https://video.tv.adobe.com/v/3454806?captions=spa" text="Guía de AEM Assets"
+>additional-url="https://video.tv.adobe.com/v/3427944" text="Guía de AEM Assets"
 
 ## Guía de AEM Assets
 
 Descubra qué es AEM Assets y cómo puede utilizarlo para lograr los objetivos empresariales de su organización.
 
->[!VIDEO](https://video.tv.adobe.com/v/3454806?learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3427944?learn=on)
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>

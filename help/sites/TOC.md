@@ -7,9 +7,9 @@ solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 source-git-commit: bc1c7a96a3d5dbc23fb7d34343cee0cfc2853be9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '597'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -58,7 +58,7 @@ ht-degree: 99%
 + Creación de páginas {#page-authoring}
    + [Creación](page-authoring/aem-sites-authoring-overview.md)
    + [Navegación](page-authoring/basic-handling-sites-feature-video-use.md)
-   + [Estructura del sitio   &#x200B;](page-authoring/content-hierarchy-feature-video-use.md)
+   + [Estructura del sitio](page-authoring/content-hierarchy-feature-video-use.md)
    + [Creación de páginas](page-authoring/creating-page-feature-video-use.md)
    + [Creación de páginas](page-authoring/page-authoring-overview-feature-video-use.md)
    + [Editor de páginas](page-authoring/page-editor-feature-video-use.md)
@@ -71,11 +71,11 @@ ht-degree: 99%
    + [Publicación](page-authoring/publication-management-feature-video-use.md)
    + [Plantillas editables](page-authoring/template-editor-feature-video-use.md)
    + [Sistema de estilos](page-authoring/style-system-feature-video-use.md)
-   + [Deformación de tiempo  &#x200B;](page-authoring/timewarp-feature-video-use.md)
+   + [Deformación de tiempo](page-authoring/timewarp-feature-video-use.md)
    + [Lanzamientos](page-authoring/launches.md)
    + Aprender de sus compañeros {#expert-advice}
       + [Consejos sobre la jerarquía del sitio](page-authoring/expert-advice/site-hierarchy.md)
-+ IA generativa  {#generative-ai}
++ IA generativa {#generative-ai}
    + [Generar variaciones](./generative-ai/generate-variations.md)
 + Fragmentos de contenido {#content-fragments}
    + [Consola Fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html?lang=es){target=_blank}
@@ -111,7 +111,7 @@ ht-degree: 99%
          + Procedimientos{#how-to}
             + [Opciones de bloque](./edge-delivery-services/developing/universal-editor/how-to/block-options.md)
             + [Encabezado y pie de página](./edge-delivery-services/developing/universal-editor/how-to/header-and-footer.md)
-            + [Previsualización de extensión local](./edge-delivery-services/developing/universal-editor/how-to/local-extension-preview.md)
+            + [Vista previa de extensión local](./edge-delivery-services/developing/universal-editor/how-to/local-extension-preview.md)
    + Procedimientos{#how-to}
       + [Fuentes RSS](edge-delivery-services/how-to/rss.md)
       + [Uso compartido en redes sociales](edge-delivery-services/how-to/social-media-sharing.md)
@@ -132,7 +132,7 @@ ht-degree: 99%
    + [Uso compartido en redes sociales](developing/social-media-sharing-technical-video-use.md)
    + [Personalización de iconos de componente](developing/component-icons-technical-video-develop.md)
 + Personalización {#personalization}
-   + [Integración con Adobe Target](https://helpx.adobe.com/es/marketing-cloud/how-to/aem-target.html?lang=es){target=_blank}
+   + [Integración con Adobe Target](https://helpx.adobe.com/marketing-cloud/how-to/aem-target.html?lang=es){target=_blank}
    + [Configurar fragmentos de experiencia y Adobe Target](personalization/experience-fragment-target-technical-video-setup.md)
    + [Uso de fragmentos de experiencia con Adobe Target](personalization/experience-fragment-target-offer-feature-video-use.md)
    + [Configurar ContextHub](personalization/context-hub-technical-video-setup.md)
