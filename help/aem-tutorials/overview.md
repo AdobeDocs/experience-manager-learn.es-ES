@@ -29,9 +29,9 @@ Adobe Experience Manager (AEM) es la plataforma líder de administración de exp
 
 + [Tutorial de WKND para comenzar a desarrollar con AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es)
 + [Introducción a AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es)
-+ [Introducción a la entrega de fragmentos de contenido de AEM con API de OpenAPI](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/open-api/basic/overview)
++ [Introducción a la entrega de fragmentos de contenido de AEM con API de OpenAPI](https://experienceleague.adobe.com/es/docs/experience-manager-learn/getting-started-with-aem-headless/open-api/basic/overview)
 + [Reaccionar al editar la aplicación mediante el editor universal](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/developing/universal-editor/react-app-editing/overview)
-+ [Introducción a Personalization](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/overview)
-+ [Introducción a RDE](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/overview)
-+ [Introducción a las API de AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/overview)
++ [Introducción a Personalization](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/personalization/overview)
++ [Introducción a RDE](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/developing/rde/overview)
++ [Introducción a las API de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/aem-apis/overview)
 + [Protegiendo sitios web de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview)
