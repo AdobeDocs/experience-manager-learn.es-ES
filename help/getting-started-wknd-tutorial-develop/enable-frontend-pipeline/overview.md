@@ -16,7 +16,7 @@ doc-type: Tutorial
 exl-id: b795e7e8-f611-4fc3-9846-1d3f1a28ccbc
 duration: 206
 source-git-commit: dbf63f30ccfd06e4f4d7883c2f7bc4ac78245364
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 100%
 
@@ -51,7 +51,7 @@ Un [tutorial de varios pasos](https://experienceleague.adobe.com/docs/experience
 
 ## Requisitos previos
 
-El paso de implementación de este tutorial tiene lugar en un Cloud Manager de Adobe. Asegúrese de que tiene la función __Administrador de implementación__; consulte Cloud Manager [Definiciones de funciones](ttps://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=es#role-definitions).
+El paso de implementación de este tutorial tiene lugar en un Cloud Manager de Adobe. Asegúrese de que tiene la función __Administrador de implementación__; consulte Cloud Manager [Definiciones de funciones](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=es#role-definitions).
 
 Asegúrese de usar el [Programa de zona protegida](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html?lang=es) y el [Entorno de desarrollo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=es) al completar este tutorial.
 
