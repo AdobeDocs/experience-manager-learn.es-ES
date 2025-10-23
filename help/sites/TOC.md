@@ -6,10 +6,10 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
-source-git-commit: bc1c7a96a3d5dbc23fb7d34343cee0cfc2853be9
-workflow-type: ht
-source-wordcount: '597'
-ht-degree: 100%
+source-git-commit: e5a1ab5fcc5314bddfbc4ad900127804bc019009
+workflow-type: tm+mt
+source-wordcount: '564'
+ht-degree: 98%
 
 ---
 
@@ -44,9 +44,9 @@ ht-degree: 100%
       + Generar variaciones{#generate-variations}
          + [Información general](./document-authoring/how-to/generate-variations/overview.md)
          + [Configurar barra de tareas](./document-authoring/how-to/generate-variations/configure-sidekick.md)
-         + [Plantillas de solicitudes](./document-authoring/how-to/generate-variations/prompt-templates.md)
-         + [Plantillas de solicitudes personalizadas](./document-authoring/how-to/generate-variations/custom-prompt-templates.md)
-         + [Guardar plantillas de solicitudes personalizadas](./document-authoring/how-to/generate-variations/save-custom-prompt-template.md)
+         + [Plantillas de indicaciones](./document-authoring/how-to/generate-variations/prompt-templates.md)
+         + [Plantillas de indicaciones personalizadas](./document-authoring/how-to/generate-variations/custom-prompt-templates.md)
+         + [Guardar plantillas de indicaciones personalizadas](./document-authoring/how-to/generate-variations/save-custom-prompt-template.md)
          + [Públicos de Adobe Target](./document-authoring/how-to/generate-variations/using-target-audiences.md)
          + [Públicos del archivo CSV](./document-authoring/how-to/generate-variations/using-csv-file-audiences.md)
          + [Adobe Firefly](./document-authoring/how-to/generate-variations/using-adobe-firefly-for-images.md)
@@ -132,7 +132,7 @@ ht-degree: 100%
    + [Uso compartido en redes sociales](developing/social-media-sharing-technical-video-use.md)
    + [Personalización de iconos de componente](developing/component-icons-technical-video-develop.md)
 + Personalización {#personalization}
-   + [Integración con Adobe Target](https://helpx.adobe.com/es/marketing-cloud/how-to/aem-target.html?lang=es){target=_blank}
+   + [Integración con Adobe Target](https://helpx.adobe.com/marketing-cloud/how-to/aem-target.html?lang=es){target=_blank}
    + [Configurar fragmentos de experiencia y Adobe Target](personalization/experience-fragment-target-technical-video-setup.md)
    + [Uso de fragmentos de experiencia con Adobe Target](personalization/experience-fragment-target-offer-feature-video-use.md)
    + [Configurar ContextHub](personalization/context-hub-technical-video-setup.md)
@@ -171,6 +171,7 @@ ht-degree: 100%
       + [Generar FPID](integrations/platform/fpid.md)
       + [SDK web](integrations/platform/web-sdk.md)
       + [Análisis mediante el SDK web de Platform](integrations/platform/analytics-using-web-sdk.md)
+      + [Adobe Target](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/overview)
    + Etiquetas de Adobe Experience Platform {#experience-platform-data-collection-tags}
       + [Información general](integrations/experience-platform/data-collection/tags/overview.md)
       + [Crear una propiedad de etiqueta](integrations/experience-platform/data-collection/tags/create-tag-property.md)
@@ -185,14 +186,9 @@ ht-degree: 100%
       + [Seguimiento del componente en el que se hizo clic con Adobe Analytics](integrations/analytics/track-clicked-component.md)
       + [Analizar datos con Analysis Workspace](integrations/analytics/create-analytics-workspace.md)
    + Adobe Target {#target}
-      + [Información general](integrations/adobe-target/overview.md)
-      + [Añadir extensión de grupo de destinatarios a la propiedad de etiquetas](integrations/adobe-target/add-target-launch-extension.md)
-      + [Cargar y activar una llamada de Target](integrations/adobe-target/load-and-fire-target.md)
-      + [Crear cuenta de Adobe Target Cloud Service](integrations/adobe-target/setup-aem-target-cloud-service.md)
-      + [Exportación de fragmentos de experiencias a Adobe Target](integrations/adobe-target/export-experience-fragment-target.md)
-      + [Crear actividad de Target mediante ofertas de fragmentos de experiencia](integrations/adobe-target/create-target-activity.md)
-      + [Personalization con el Compositor de experiencias visuales](integrations/adobe-target/personalization-using-vec.md)
-      + [Personalización de la experiencia de página web completa](integrations/adobe-target/personalization-web-page.md)
+      + [Información general](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/overview)
+      + [Configuración](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/setup/integrate-adobe-tags)
+      + [Casos de uso](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/overview#use-cases)
 + Aprender de sus compañeros {#expert-resources}
    + [Información general](expert-resources/learn-from-your-peers-overview.md)
    + [Creación de una guía de creación en AEM Sites](expert-resources/authoring-guide-in-sites.md)
