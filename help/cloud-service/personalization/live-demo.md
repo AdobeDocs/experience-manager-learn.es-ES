@@ -26,7 +26,7 @@ Esta página le guía a través de demostraciones prácticas de cada escenario d
 >[!IMPORTANT]
 >
 > Abra el sitio de demostración en varias ventanas del explorador o en modo de exploración incógnito/privada para experimentar diferentes variaciones personalizadas simultáneamente.
-> > Al utilizar el modo de exploración privada, Firefox y Safari pueden bloquear la cookie de ECID o, alternativamente, utilizar el modo de exploración normal o borrar las cookies antes de intentar un nuevo escenario de personalización.
+> &#x200B;> Al utilizar el modo de exploración privada, Firefox y Safari pueden bloquear la cookie de ECID o, alternativamente, utilizar el modo de exploración normal o borrar las cookies antes de intentar un nuevo escenario de personalización.
 
 ## Casos de uso de demostración
 
