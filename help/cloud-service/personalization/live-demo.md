@@ -7,10 +7,10 @@ topic: Personalization, Integrations
 role: Developer, Architect, Leader, User
 level: Beginner
 doc-type: Tutorial
-last-substantial-update: 2025-11-01T00:00:00Z
+last-substantial-update: 2025-11-03T00:00:00Z
 jira: KT-19546
 thumbnail: KT-19546.jpeg
-source-git-commit: 055dc7d666d082244d73d3494bac54d7eb4bb886
+source-git-commit: 9e99936fb03e085f6bc276c7d6ef5cc08e34d1e5
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 1%
@@ -21,12 +21,14 @@ ht-degree: 1%
 
 Visite el [sitio web de habilitación de WKND](https://wknd.enablementadobe.com/us/en.html){target="wknd"} para ver ejemplos reales de pruebas A/B, segmentación basada en el comportamiento y personalización de usuarios conocidos.
 
+>[!VIDEO](https://video.tv.adobe.com/v/3476461/?learn=on&enablevpops)
+
 Esta página le guía a través de demostraciones prácticas de cada escenario de personalización. Utilícelo para explorar las posibilidades antes de crear estas funciones en su propio sitio de AEM.
 
 >[!IMPORTANT]
 >
 > Abra el sitio de demostración en varias ventanas del explorador o en modo de exploración incógnito/privada para experimentar diferentes variaciones personalizadas simultáneamente.
-> &#x200B;> Al utilizar el modo de exploración privada, Firefox y Safari pueden bloquear la cookie de ECID o, alternativamente, utilizar el modo de exploración normal o borrar las cookies antes de intentar un nuevo escenario de personalización.
+> Al utilizar el modo de exploración privada, Firefox y Safari pueden bloquear la cookie de ECID o, alternativamente, utilizar el modo de exploración normal o borrar las cookies antes de intentar un nuevo escenario de personalización.
 
 ## Casos de uso de demostración
 
