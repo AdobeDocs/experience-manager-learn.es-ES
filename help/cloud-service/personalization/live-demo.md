@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Visite el [sitio web de habilitación de WKND](https://wknd.enablementadobe.com/us/en.html){target="wknd"} para ver ejemplos reales de pruebas A/B, segmentación basada en el comportamiento y personalización de usuarios conocidos.
 
->[!VIDEO](https://video.tv.adobe.com/v/3476461/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3476464/?captions=spa&learn=on&enablevpops)
 
 Esta página le guía a través de demostraciones prácticas de cada escenario de personalización. Utilícelo para explorar las posibilidades antes de crear estas funciones en su propio sitio de AEM.
 
