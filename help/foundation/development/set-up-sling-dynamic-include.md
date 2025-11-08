@@ -131,7 +131,7 @@ Un vídeo explicativo de cómo instalar y usar [!DNL Apache Sling Dynamic Includ
 
    >[!TIP]
    >
-   > Si se deja el `*` final en la regla glob `*.nocache.html*` anterior, pueden producirse [problemas en las solicitudes de subrecursos](https://github.com/AdobeDocs/experience-manager-learn.en/issues/16).
+   > Si se deja el `*` final en la regla glob `*.nocache.html*` anterior, pueden producirse [problemas en las solicitudes de subrecursos](https://github.com/AdobeDocs/experience-manager-learn.es-ES/issues/16).
 
    ```shell
    /cache {
