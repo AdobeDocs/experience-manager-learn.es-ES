@@ -37,7 +37,7 @@ La implementación de búsqueda simple es el material de **Adobe Summit lab AEM 
 * [Explicar consulta](http://localhost:4502/libs/granite/operations/content/diagnosis/tool.html/granite_queryperformance)
 * [CRXDE Lite](http://localhost:4502/crx/de/index.jsp#/oak%3Aindex/cqPageLucene) > /oak:index/cqPageLucene
 * [Administrador de paquetes CRX](http://localhost:4502/crx/packmgr/index.jsp)
-* [Depurador de QueryBuilder](¿http://localhost:4502/libs/cq/search/content/querydebug.html?)
+* [Depurador de QueryBuilder] (¿http://localhost:4502/libs/cq/search/content/querydebug.html?)
 * [Generador de definiciones de índice de Oak](https://thomasmueller.github.io/oakTools/indexDefGenerator.html)
 
 ### Capítulos {#chapters}
