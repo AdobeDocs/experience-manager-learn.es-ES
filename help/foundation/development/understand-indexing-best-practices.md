@@ -13,10 +13,10 @@ last-substantial-update: 2024-01-04T00:00:00Z
 jira: KT-14745
 thumbnail: KT-14745.jpeg
 exl-id: 3fd4c404-18e9-44e5-958f-15235a3091d5
-source-git-commit: 7ada3c2e7deb414b924077a5d2988db16f28712c
+source-git-commit: 1048beba42011eccb1ebdd43458591c8e953fb8a
 workflow-type: tm+mt
-source-wordcount: '1693'
-ht-degree: 1%
+source-wordcount: '1706'
+ht-degree: 0%
 
 ---
 
@@ -41,7 +41,7 @@ A veces, debe crear índices personalizados para satisfacer los requisitos de b�
 
 - Comprenda los requisitos de búsqueda y compruebe si los índices OOTB pueden admitir los requisitos de búsqueda. Use la **Herramienta de rendimiento de consultas**, disponible en [SDK local](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) y AEM CS a través de Developer Console o `https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell`.
 
-- Defina una consulta óptima, use el diagrama de flujo [optimizando consultas](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices) y la [Hoja de referencia de consultas JCR](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=es) como referencia.
+- Defina una consulta óptima, use el diagrama de flujo [optimizando consultas](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices) y la [Hoja de referencia de consultas JCR](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf) como referencia.
 
 - Si los índices OOTB no admiten los requisitos de búsqueda, tiene dos opciones. Sin embargo, revise las [sugerencias para crear índices eficientes](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing)
    - Personalice el índice OOTB: opción preferida ya que es fácil de mantener y actualizar.
@@ -112,7 +112,7 @@ La forma correcta es personalizar el índice OOTB y agregar las propiedades nece
 
 La siguiente imagen muestra el índice personalizado para el tipo de nodo `dam:Asset` con la propiedad `includedPaths` establecida en una ruta de acceso específica.
 
-![Índice en dam:Asset nodetype](./assets/understand-indexing-best-practices/index-for-damAsset-type.png)
+![Índice en el tipo de nodo dam:Asset](./assets/understand-indexing-best-practices/index-for-damAsset-type.png)
 
 ##### Análisis
 
@@ -243,17 +243,17 @@ Para deshabilitar Apache Tika por completo, siga los siguientes pasos:
 
 Revisemos algunas herramientas que pueden ayudarle a definir, analizar y optimizar los índices.
 
-### Herramienta de creación de índices
+### Herramientas de creación de índices y Oak
 
-La herramienta [Generador de definiciones de índice de Oak](https://oakutils.appspot.com/generate/index) ayuda a **generar la definición de índice** basada en las consultas de entrada. Es un buen punto de partida para crear un índice personalizado.
+La herramienta [Generador de definiciones de índice de Oak](https://thomasmueller.github.io/oakTools/indexDefGenerator.html) ayuda a **generar la definición de índice** basada en las consultas de entrada. Es un buen punto de partida para crear un índice personalizado.
 
-### Herramienta Analizar índice
-
-La herramienta [Analizador de definición de índice](https://oakutils.appspot.com/analyze/index) ayuda a **analizar la definición de índice** y proporciona recomendaciones para mejorar la definición de índice.
+Las [Herramientas de Oak](https://thomasmueller.github.io/oakTools/index.html) también contienen otros
+utilidades relacionadas con la indexación y la consulta, por ejemplo para convertir índices entre el formato JSON y el formato XML,
+para convertir consultas XPath a SQL-2 y comparar índices.
 
 ### Herramienta de rendimiento de consultas
 
-La _herramienta de rendimiento de consultas OOTB_ disponible en [SDK local](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) y AEMCS a través de Developer Console o `https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell` ayuda a **analizar el rendimiento de las consultas** y [Hoja de características clave de consultas JCR](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=es) para definir la consulta óptima.
+La _herramienta de rendimiento de consultas OOTB_ disponible en [SDK local](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) y AEMCS a través de Developer Console o `https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell` ayuda a **analizar el rendimiento de las consultas** y [Hoja de características clave de consultas JCR](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=en) para definir la consulta óptima.
 
 ### Herramientas y sugerencias para la resolución de problemas
 
@@ -274,6 +274,6 @@ La mayoría de lo siguiente es aplicable a AEM 6.X y a la resolución de problem
 Consulte la siguiente documentación para obtener más información:
 
 - [Consultas e indexación de Oak](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/implementing/deploying/deploying/queries-and-indexing)
-- [Prácticas recomendadas de consulta e indexación](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices)
+- [Prácticas recomendadas de consulta e indexación](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices)
 - [Prácticas recomendadas para consultas e indexación](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing)
 

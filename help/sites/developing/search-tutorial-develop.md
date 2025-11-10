@@ -11,9 +11,9 @@ exl-id: aa268c5f-d29e-4868-a58b-444379cb83be
 last-substantial-update: 2022-08-10T00:00:00Z
 thumbnail: 32090.jpg
 duration: 138
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 1048beba42011eccb1ebdd43458591c8e953fb8a
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '630'
 ht-degree: 2%
 
 ---
@@ -37,8 +37,8 @@ La implementación de búsqueda simple es el material de **Adobe Summit lab AEM 
 * [Explicar consulta](http://localhost:4502/libs/granite/operations/content/diagnosis/tool.html/granite_queryperformance)
 * [CRXDE Lite](http://localhost:4502/crx/de/index.jsp#/oak%3Aindex/cqPageLucene) > /oak:index/cqPageLucene
 * [Administrador de paquetes CRX](http://localhost:4502/crx/packmgr/index.jsp)
-* [Depurador de QueryBuilder] (¿http://localhost:4502/libs/cq/search/content/querydebug.html?)
-* [Generador de definiciones de índice de Oak](https://oakutils.appspot.com/generate/index)
+* [Depurador de QueryBuilder](¿http://localhost:4502/libs/cq/search/content/querydebug.html?)
+* [Generador de definiciones de índice de Oak](https://thomasmueller.github.io/oakTools/indexDefGenerator.html)
 
 ### Capítulos {#chapters}
 
@@ -75,9 +75,9 @@ La implementación de búsqueda simple es el material de **Adobe Summit lab AEM 
 ## Materiales de referencia {#reference-materials}
 
 * [Repositorio de GitHub](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/master/simple-search-guide)
-* [Modelos de Sling](https://sling.apache.org/documentation/bundles/models.html)
+* [Modelos de Sling](https://sling.apache.org/documentation/bundles/models.html?lang=es)
 * [Exportador de modelos Sling](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130)
-* [API de QueryBuilder](https://experienceleague.adobe.com/docs/?lang=es)
+* [API de QueryBuilder](https://experienceleague.adobe.com/docs/)
 * [Complemento de AEM Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode) ([Página de documentación](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/))
 
 ## Correcciones y seguimiento {#corrections-and-follow-up}
@@ -88,7 +88,7 @@ Correcciones y aclaraciones de las discusiones del laboratorio y respuestas a la
 
    La reindexación se puede detener mediante el MBean IndexStats disponible a través de [Consola web de AEM > JMX](http://localhost:4502/system/console/jmx)
 
-   * [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
+   * [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Name%3Dasync%2Ctype%3DIndexStats](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
       * Ejecute `abortAndPause()` para anular la reindexación. Esto bloqueará el índice para volver a indexarlo hasta que se invoque `resume()`.
       * Ejecutar `resume()` reiniciará el proceso de indización.
    * Documentación: [https://jackrabbit.apache.org/oak/docs/query/indexing.html#async-index-mbean](https://jackrabbit.apache.org/oak/docs/query/indexing.html#async-index-mbean)
@@ -138,7 +138,7 @@ Correcciones y aclaraciones de las discusiones del laboratorio y respuestas a la
    PLAN: [cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) *:* */ union [dam:Asset] as [a] /* lucene:damAssetLucene(/oak:index/damAssetLucene) *:* */
    ```
 
-   Explore la consulta y los resultados a través de [QueryBuilder Debugger](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Ddam%3AAsset%0D%0A%23+add+all+asset+restrictions+to+this+group) y [complemento de AEM Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US).
+   Explore la consulta y los resultados a través de [QueryBuilder Debugger](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Ddam%3AAsset%0D%0A%23+add+all+asset+restrictions+to+this+group) y [complemento de AEM Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US).
 
 5. **¿Cómo buscar en varias rutas de acceso en la misma consulta?**
 
@@ -162,4 +162,4 @@ Correcciones y aclaraciones de las discusiones del laboratorio y respuestas a la
    PLAN: [cq:Page] as [a] /* traverse "/content/docs/en/6-2//*" where isdescendantnode([a], [/content/docs/en/6-2]) */ union [cq:Page] as [a] /* traverse "/content/docs/en/6-3//*" where isdescendantnode([a], [/content/docs/en/6-3]) */
    ```
 
-   Explore la consulta y los resultados a través de [QueryBuilder Debugger](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0Agroup.1_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-2%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Dcq%3APage%0D%0Agroup.2_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-3%0D%0A%23+add+all+asset+restrictions+to+this+group) y [complemento de AEM Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US).
+   Explore la consulta y los resultados a través de [QueryBuilder Debugger](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0Agroup.1_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-2%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Dcq%3APage%0D%0Agroup.2_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-3%0D%0A%23+add+all+asset+restrictions+to+this+group) y [complemento de AEM Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US).
