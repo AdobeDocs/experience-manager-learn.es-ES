@@ -99,7 +99,7 @@ La biblioteca _aem-upload_ Node.js admite [varios métodos de autenticación](ht
 
 | | Autenticación básica | [Token de desarrollo local](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/local-development-access-token) | [Credenciales de servicio](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) | [OAuth S2S](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/) | [Aplicación web OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation#oauth-web-app-credential) | [SPA de OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation#oauth-single-page-app-credential) |
 |---|---|---|---|---|---|---|
-| ¿Es compatible? | &amp;check; | &amp;check; | &amp;check; | &amp;cross; | &amp;cross; | &amp;cross; |
+| ¿Es compatible? | &check; | &check; | &check; | &cross; | &cross; | &cross; |
 | Función | Desarrollo local | Desarrollo local | Producción | N/D | N/D | N/D |
 
 Para configurar la aplicación de ejemplo, siga los pasos a continuación:
