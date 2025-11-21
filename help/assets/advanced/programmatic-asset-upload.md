@@ -23,7 +23,7 @@ ht-degree: 1%
 Aprenda a cargar recursos en el entorno de AEM as a Cloud Service mediante la aplicación cliente que usa la biblioteca [aem-upload](https://github.com/adobe/aem-upload) Node.js.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3476952?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3476955?captions=spa&quality=12&learn=on)
 
 
 ## Qué aprenderá
