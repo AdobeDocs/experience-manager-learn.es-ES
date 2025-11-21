@@ -9,7 +9,7 @@ sub-product: Experience Manager Forms
 version: Experience Manager 6.4, Experience Manager 6.5
 index: y
 source-git-commit: c4b5a015f1c0d5e3877886052476871548ec9b0e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2104'
 ht-degree: 100%
 
@@ -90,7 +90,7 @@ ht-degree: 100%
    + [Almacenar datos de formularios enviados en la base de datos](adaptive-forms/storing-adaptive-form-data-in-db.md)
    + [Insertar archivos adjuntos del formulario en la base de datos](adaptive-forms/inserting-form-attachment-in-db.md)
    + [Modificar configuración de fuente de datos](adaptive-forms/modify-data-source-configuration-settings-article.md)
-   + [Reemplazar las propiedades del modelo de datos del formulario](adaptive-forms/override-fdm-values.md)
+   + [Reemplazar las propiedades del modelo de datos de formulario](adaptive-forms/override-fdm-values.md)
    + [Servicio de modelo de datos de formulario en el flujo de trabajo de AEM 6.4](adaptive-forms/form-data-model-service-as-step-in-workflow-video-use.md)
    + [Gestión de mensajes de error en el paso del servicio del modelo de datos de formulario](adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)
    + [Servicio de modelo de datos de formulario en el flujo de trabajo de AEM 6.5.1](adaptive-forms/form-data-model-service-as-step-in-aem65-workflow-video-use.md)
