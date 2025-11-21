@@ -132,7 +132,7 @@ ht-degree: 98%
    + [Uso compartido en redes sociales](developing/social-media-sharing-technical-video-use.md)
    + [Personalización de iconos de componente](developing/component-icons-technical-video-develop.md)
 + Personalización {#personalization}
-   + [Integración con Adobe Target](https://helpx.adobe.com/marketing-cloud/how-to/aem-target.html?lang=es){target=_blank}
+   + [Integración con Adobe Target](https://helpx.adobe.com/es/marketing-cloud/how-to/aem-target.html?lang=es){target=_blank}
    + [Configurar fragmentos de experiencia y Adobe Target](personalization/experience-fragment-target-technical-video-setup.md)
    + [Uso de fragmentos de experiencia con Adobe Target](personalization/experience-fragment-target-offer-feature-video-use.md)
    + [Configurar ContextHub](personalization/context-hub-technical-video-setup.md)
@@ -171,7 +171,7 @@ ht-degree: 98%
       + [Generar FPID](integrations/platform/fpid.md)
       + [SDK web](integrations/platform/web-sdk.md)
       + [Análisis mediante el SDK web de Platform](integrations/platform/analytics-using-web-sdk.md)
-      + [Adobe Target](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/overview)
+      + [Adobe Target](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/personalization/overview)
    + Etiquetas de Adobe Experience Platform {#experience-platform-data-collection-tags}
       + [Información general](integrations/experience-platform/data-collection/tags/overview.md)
       + [Crear una propiedad de etiqueta](integrations/experience-platform/data-collection/tags/create-tag-property.md)
@@ -186,9 +186,9 @@ ht-degree: 98%
       + [Seguimiento del componente en el que se hizo clic con Adobe Analytics](integrations/analytics/track-clicked-component.md)
       + [Analizar datos con Analysis Workspace](integrations/analytics/create-analytics-workspace.md)
    + Adobe Target {#target}
-      + [Información general](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/overview)
-      + [Configuración](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/setup/integrate-adobe-tags)
-      + [Casos de uso](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/overview#use-cases)
+      + [Información general](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/personalization/overview)
+      + [Configuración](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/personalization/setup/integrate-adobe-tags)
+      + [Casos de uso](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/personalization/overview#use-cases)
 + Aprender de sus compañeros {#expert-resources}
    + [Información general](expert-resources/learn-from-your-peers-overview.md)
    + [Creación de una guía de creación en AEM Sites](expert-resources/authoring-guide-in-sites.md)
