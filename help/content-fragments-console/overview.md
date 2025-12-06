@@ -71,7 +71,7 @@ Revise la [documentación](https://experienceleague.adobe.com/docs/experience-ma
             <a href="./basics/content-fragment-editor.md" title="Información general del editor"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3424373?format=jpeg"
+                src="https://video.tv.adobe.com/v/3477330?captions=spa&format=jpeg"
                 alt="Información general del editor">
             </a>
           </figure>
@@ -138,7 +138,7 @@ filtrado en línea.</p>
             <a href="./editor/new-editor-toggle.md" title="Conmutador al nuevo editor"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3419312?format=jpeg" alt="Conmutador al
+                src="https://video.tv.adobe.com/v/3477319?captions=spa&format=jpeg" alt="Conmutador al
                 nuevo editor">
             </a>
           </figure>

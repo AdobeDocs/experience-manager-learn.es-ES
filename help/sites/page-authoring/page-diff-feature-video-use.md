@@ -41,7 +41,7 @@ Las funcionalidades de diferencia de página de AEM Sites muestran una vista rá
 
 ## Comparación de páginas de lanzamiento {#comparing-launch-pages}
 
->[!VIDEO](https://video.tv.adobe.com/v/17746?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3477341?captions=spa&quality=12&learn=on)
 
 La función Diferencia de página también se puede utilizar para identificar la diferencia entre modelos y Live Copies, y modelos y copias de idioma.
 

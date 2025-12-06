@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Descubra cómo la opción Nuevo editor le permite cambiar entre el nuevo editor de fragmentos de contenido predeterminado y el editor clásico sin esfuerzo.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419312/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3477319/?captions=spa&learn=on)

@@ -27,4 +27,4 @@ En este vídeo:
 + Comprender la arquitectura de creación y publicación de AEM y cómo se publica el contenido
 + Conozca las prácticas recomendadas para la entrega sin encabezado con un entorno de publicación de AEM
 
->[!VIDEO](https://video.tv.adobe.com/v/333296?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3450952?captions=spa&quality=12&learn=on)
