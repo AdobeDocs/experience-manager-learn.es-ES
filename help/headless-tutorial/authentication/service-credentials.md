@@ -25,7 +25,7 @@ Las integraciones con Adobe Experience Manager (AEM) as a Cloud Service deben po
 
 AEM se integra con otros productos de Adobe mediante [S2S OAuth administrado mediante Adobe Developer Console](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service). Para integraciones personalizadas con cuentas de servicio, las credenciales de JWT se utilizan y administran en AEM Developer Console.
 
->[!VIDEO](https://video.tv.adobe.com/v/330519?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/344047?captions=spa&quality=12&learn=on)
 
 Las credenciales del servicio pueden aparecer similares a [Tokens de acceso de desarrollo local](./local-development-access-token.md), pero difieren en varias formas clave:
 
