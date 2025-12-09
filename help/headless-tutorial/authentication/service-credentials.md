@@ -153,7 +153,7 @@ Esta aplicación de ejemplo está basada en Node.js, por lo que es mejor utiliza
 
 1. Actualice `getAccessToken(..)` para inspeccionar el contenido del archivo JSON y determinar si representa un token de acceso de desarrollo local o credenciales de servicio. Esto se puede lograr fácilmente comprobando la existencia de la propiedad `.accessToken`, que solo existe para el token de acceso de desarrollo local JSON.
 
-   Si se proporcionan credenciales de servicio, la aplicación genera un JWT e lo intercambia con Adobe IMS por un token de acceso. Utilice la función [ de ](https://www.npmjs.com/package/@adobe/jwt-auth)@adobe/jwt-auth`auth(...)` que genera un JWT y lo intercambia por un token de acceso en una sola llamada de función. Los parámetros del método `auth(..)` son un objeto [JSON compuesto de información específica](https://www.npmjs.com/package/@adobe/jwt-auth#config-object) disponible del JSON de credenciales de servicio, tal como se describe a continuación en el código.
+   Si se proporcionan credenciales de servicio, la aplicación genera un JWT e lo intercambia con Adobe IMS por un token de acceso. Utilice la función [&#x200B; de &#x200B;](https://www.npmjs.com/package/@adobe/jwt-auth)@adobe/jwt-auth`auth(...)` que genera un JWT y lo intercambia por un token de acceso en una sola llamada de función. Los parámetros del método `auth(..)` son un objeto [JSON compuesto de información específica](https://www.npmjs.com/package/@adobe/jwt-auth#config-object) disponible del JSON de credenciales de servicio, tal como se describe a continuación en el código.
 
 ```javascript
  async function getAccessToken(developerConsoleCredentials) {
