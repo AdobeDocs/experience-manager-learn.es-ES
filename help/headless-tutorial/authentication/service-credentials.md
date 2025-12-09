@@ -12,9 +12,9 @@ last-substantial-update: 2023-01-12T00:00:00Z
 doc-type: Tutorial
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
 duration: 881
-source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
+source-git-commit: dc29a4b7857ee8d1405c9ef8d14f09374c2bfd01
 workflow-type: tm+mt
-source-wordcount: '1963'
+source-wordcount: '1962'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,9 @@ ht-degree: 0%
 
 Las integraciones con Adobe Experience Manager (AEM) as a Cloud Service deben poder autenticarse de forma segura en el servicio de AEM. Developer Console de AEM concede acceso a las credenciales de servicio, que se utilizan para facilitar que las aplicaciones, los sistemas y los servicios externos interactúen mediante programación con los servicios de AEM Author o Publish a través de HTTP.
 
-AEM se integra con otros productos de Adobe mediante [S2S OAuth administrado mediante Adobe Developer Console](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service). Para integraciones personalizadas con cuentas de servicio, las credenciales de JWT se utilizan y administran en AEM Developer Console.
+AEM se integra con otros productos de Adobe mediante [S2S OAuth administrado mediante Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service). Para integraciones personalizadas con cuentas de servicio, las credenciales de JWT se utilizan y administran en AEM Developer Console.
 
->[!VIDEO](https://video.tv.adobe.com/v/344047?quality=12&learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/330519?quality=12&learn=on)
 
 Las credenciales del servicio pueden aparecer similares a [Tokens de acceso de desarrollo local](./local-development-access-token.md), pero difieren en varias formas clave:
 
@@ -124,7 +124,7 @@ Para acceder a AEM as a Cloud Service mediante las credenciales del servicio, la
 
 + Cuando hay credenciales de servicio, la aplicación externa utiliza este token de acceso en lugar del token de acceso de desarrollo local al acceder a AEM as a Cloud Service
 
-En este tutorial, se utiliza el módulo npm de `@adobe/jwt-auth` de Adobe para: (1) generar el JWT a partir de las credenciales del servicio y (2) cambiarlo por un token de acceso, en una sola llamada de función. Si su aplicación no está basada en JavaScript, revise el [código de ejemplo en otros idiomas](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/samples/) para ver cómo crear un JWT a partir de las credenciales del servicio y cámbielo por un token de acceso con Adobe IMS.
+En este tutorial, se utiliza el módulo npm de `@adobe/jwt-auth` de Adobe para: (1) generar el JWT a partir de las credenciales del servicio y (2) cambiarlo por un token de acceso, en una sola llamada de función. Si la aplicación no está basada en JavaScript, puede desarrollar código personalizado en el idioma que elija que cree el JWT a partir de las credenciales del servicio e intercambiarlo por un token de acceso con Adobe IMS.
 
 ## Leer las credenciales del servicio
 
@@ -153,7 +153,7 @@ Esta aplicación de ejemplo está basada en Node.js, por lo que es mejor utiliza
 
 1. Actualice `getAccessToken(..)` para inspeccionar el contenido del archivo JSON y determinar si representa un token de acceso de desarrollo local o credenciales de servicio. Esto se puede lograr fácilmente comprobando la existencia de la propiedad `.accessToken`, que solo existe para el token de acceso de desarrollo local JSON.
 
-   Si se proporcionan credenciales de servicio, la aplicación genera un JWT e lo intercambia con Adobe IMS por un token de acceso. Utilice la función `auth(...)` de [@adobe/jwt-auth](https://www.npmjs.com/package/@adobe/jwt-auth) que genera un JWT y lo intercambia por un token de acceso en una sola llamada de función. Los parámetros del método `auth(..)` son un objeto [JSON compuesto de información específica](https://www.npmjs.com/package/@adobe/jwt-auth#config-object) disponible del JSON de credenciales de servicio, tal como se describe a continuación en el código.
+   Si se proporcionan credenciales de servicio, la aplicación genera un JWT e lo intercambia con Adobe IMS por un token de acceso. Utilice la función [ de ](https://www.npmjs.com/package/@adobe/jwt-auth)@adobe/jwt-auth`auth(...)` que genera un JWT y lo intercambia por un token de acceso en una sola llamada de función. Los parámetros del método `auth(..)` son un objeto [JSON compuesto de información específica](https://www.npmjs.com/package/@adobe/jwt-auth#config-object) disponible del JSON de credenciales de servicio, tal como se describe a continuación en el código.
 
 ```javascript
  async function getAccessToken(developerConsoleCredentials) {
@@ -224,7 +224,7 @@ Una vez que el usuario de AEM de la cuenta técnica existe en AEM (después de l
 1. Vaya a __Herramientas__ > __Seguridad__ > __Usuarios__
 1. Busque el usuario de AEM con el __Nombre de inicio de sesión__ identificado en el paso 1 y abra sus __Propiedades__
 1. Vaya a la pestaña __Grupos__ y agregue el grupo __Usuarios de DAM__ (que tiene acceso de escritura a los recursos)
-   + [Consulte la lista de grupos de usuarios proporcionados por AEM](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=es#built-in-users-and-groups) a los que agregar el usuario del servicio para obtener los permisos óptimos. Si ningún grupo de usuarios proporcionado por AEM es suficiente, cree el suyo propio y agregue los permisos adecuados.
+   + [Consulte la lista de grupos de usuarios proporcionados por AEM](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#built-in-users-and-groups) a los que agregar el usuario del servicio para obtener los permisos óptimos. Si ningún grupo de usuarios proporcionado por AEM es suficiente, cree el suyo propio y agregue los permisos adecuados.
 1. Pulse __Guardar y cerrar__
 
 Con la cuenta técnica permitida en AEM para tener permisos de escritura en los recursos, vuelva a ejecutar la aplicación:
