@@ -6,9 +6,9 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
-source-git-commit: e5a1ab5fcc5314bddfbc4ad900127804bc019009
+source-git-commit: 6acf7f1d5c91b29a64b372b678f04b7cb880039b
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '566'
 ht-degree: 98%
 
 ---
@@ -98,6 +98,7 @@ ht-degree: 98%
       + [Estructura del documento](edge-delivery-services/developing/document-structure.md)
       + [Desarrollo local](edge-delivery-services/developing/local-development.md)
       + [Git](edge-delivery-services/developing/git.md)
+      + [Canalización de configuración](edge-delivery-services/developing/cloud-manager-configuration-pipeline.md)
       + Editor universal {#universal-editor}
          + [Información general](./edge-delivery-services/developing/universal-editor/0-overview.md)
          + [Nuevo proyecto de código](./edge-delivery-services/developing/universal-editor/1-new-code-project.md)
@@ -132,7 +133,7 @@ ht-degree: 98%
    + [Uso compartido en redes sociales](developing/social-media-sharing-technical-video-use.md)
    + [Personalización de iconos de componente](developing/component-icons-technical-video-develop.md)
 + Personalización {#personalization}
-   + [Integración con Adobe Target](https://helpx.adobe.com/es/marketing-cloud/how-to/aem-target.html?lang=es){target=_blank}
+   + [Integración con Adobe Target](https://helpx.adobe.com/marketing-cloud/how-to/aem-target.html?lang=es){target=_blank}
    + [Configurar fragmentos de experiencia y Adobe Target](personalization/experience-fragment-target-technical-video-setup.md)
    + [Uso de fragmentos de experiencia con Adobe Target](personalization/experience-fragment-target-offer-feature-video-use.md)
    + [Configurar ContextHub](personalization/context-hub-technical-video-setup.md)
@@ -171,7 +172,7 @@ ht-degree: 98%
       + [Generar FPID](integrations/platform/fpid.md)
       + [SDK web](integrations/platform/web-sdk.md)
       + [Análisis mediante el SDK web de Platform](integrations/platform/analytics-using-web-sdk.md)
-      + [Adobe Target](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/personalization/overview)
+      + [Adobe Target](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/overview)
    + Etiquetas de Adobe Experience Platform {#experience-platform-data-collection-tags}
       + [Información general](integrations/experience-platform/data-collection/tags/overview.md)
       + [Crear una propiedad de etiqueta](integrations/experience-platform/data-collection/tags/create-tag-property.md)
@@ -186,9 +187,9 @@ ht-degree: 98%
       + [Seguimiento del componente en el que se hizo clic con Adobe Analytics](integrations/analytics/track-clicked-component.md)
       + [Analizar datos con Analysis Workspace](integrations/analytics/create-analytics-workspace.md)
    + Adobe Target {#target}
-      + [Información general](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/personalization/overview)
-      + [Configuración](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/personalization/setup/integrate-adobe-tags)
-      + [Casos de uso](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/personalization/overview#use-cases)
+      + [Información general](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/overview)
+      + [Configuración](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/setup/integrate-adobe-tags)
+      + [Casos de uso](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/overview#use-cases)
 + Aprender de sus compañeros {#expert-resources}
    + [Información general](expert-resources/learn-from-your-peers-overview.md)
    + [Creación de una guía de creación en AEM Sites](expert-resources/authoring-guide-in-sites.md)
