@@ -24,4 +24,4 @@ Descubra cómo crear y ejecutar una canalización de configuración de Edge Deli
 
 >[!VIDEO](https://video.tv.adobe.com/v/3458975/?learn=on&enablevpops)
 
-Consulte la [documentación de canalización de configuración de Edge Delivery](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline#yamls-for-eds) para obtener una descripción general completa de las opciones y formatos de configuración.
+Consulte la [documentación de canalización de configuración de Edge Delivery](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/operations/config-pipeline#yamls-for-eds) para obtener una descripción general completa de las opciones y formatos de configuración.
