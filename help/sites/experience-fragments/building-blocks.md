@@ -25,7 +25,7 @@ ht-degree: 0%
 
 Los bloques de creación son una subfunción de los fragmentos de experiencias. Los bloques de creación permiten a los autores de contenido reutilizar componentes en diferentes variaciones de fragmentos de experiencias.
 
->[!VIDEO](https://video.tv.adobe.com/v/331786?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410268?captions=spa&quality=12&learn=on)
 
 >[!NOTE]
 >

@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Introducción a [!DNL Sling], un marco web de código abierto [!DNL RESTful] que forma parte de la pila tecnológica subyacente de Adobe Experience Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/32032?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36914?captions=spa&quality=12&learn=on)

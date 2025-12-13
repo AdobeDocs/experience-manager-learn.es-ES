@@ -46,7 +46,7 @@ Visite el [sitio web de habilitación de WKND](https://wknd.enablementadobe.com/
 
 - **Página de la revista**: Cuando los usuarios leen _tres o más_ artículos, se clasifican como audiencia de **Lectores de la revista** y ven una sección personalizada en la página de la revista.
 
->[!VIDEO](https://video.tv.adobe.com/v/3474001/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3474004/?captions=spa&learn=on&enablevpops)
 
 >[!TIP]
 >

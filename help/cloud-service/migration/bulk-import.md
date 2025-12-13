@@ -29,11 +29,11 @@ La herramienta Importación masiva de AEM as a Cloud Service permite a los admin
 
 Aprenda a importar numerosos archivos en los AEM Assets mediante [Asset view](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/assets-view-introduction.html?lang=es) [Importación masiva](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view.html?lang=es), con Dropbox como el proveedor de almacenamiento en la nube de ejemplo para un proceso de integración claro y fácil de seguir.
 
->[!VIDEO](https://video.tv.adobe.com/v/3426857/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3451962/?captions=spa&learn=on)
 
 >[!TAB Vista Administrador]
 
->[!VIDEO](https://video.tv.adobe.com/v/329680?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/341381?captions=spa&quality=12&learn=on)
 
 >[!TIP]
 >

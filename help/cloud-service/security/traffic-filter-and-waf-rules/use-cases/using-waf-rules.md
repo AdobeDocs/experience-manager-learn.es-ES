@@ -30,7 +30,7 @@ Los sofisticados ataques se caracterizan por altas tasas de solicitud, patrones 
 > Las reglas de filtro de tráfico WAF requieren una licencia adicional de **Protección WAF-DDoS** o **Seguridad mejorada**. Las reglas de filtro de tráfico estándar están disponibles para los clientes de Sites y Forms de forma predeterminada.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3469397/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3469433/?captions=spa&quality=12&learn=on)
 
 ## Objetivos de aprendizaje
 

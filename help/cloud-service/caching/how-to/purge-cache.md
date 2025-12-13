@@ -25,7 +25,7 @@ Obtenga información sobre cómo depurar o eliminar la respuesta HTTP en caché 
 
 En este tutorial, aprenderá a configurar y utilizar el token de API de purga para purgar la caché de CDN del sitio de muestra [AEM WKND](https://github.com/adobe/aem-guides-wknd) mediante la función de autoservicio.
 
->[!VIDEO](https://video.tv.adobe.com/v/3432948?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3436929?captions=spa&quality=12&learn=on)
 
 ## Invalidación de caché frente a purga explícita
 

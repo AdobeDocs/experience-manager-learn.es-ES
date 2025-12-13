@@ -21,4 +21,4 @@ ht-degree: 12%
 
 Descubra cómo las Herramientas de refactorización de código de AEM ayudan a automatizar la conversión de los proyectos de AEM existentes para que sean compatibles con AEM as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/336693?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444718?captions=spa&quality=12&learn=on)

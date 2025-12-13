@@ -39,19 +39,19 @@ Para obtener una descripción general completa, consulte la [Guía del usuario d
 
 [Programas de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html?lang=es) representan conjuntos de entornos de AEM que admiten conjuntos lógicos de iniciativas empresariales, que normalmente corresponden a un Service level agreement (SLA) adquirido. Por ejemplo, un programa puede representar los recursos de AEM para apoyar los sitios web públicos globales, mientras que otro programa representa un DAM central interno.
 
->[!VIDEO](https://video.tv.adobe.com/v/26313?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34622?captions=spa&quality=12&learn=on)
 
 ## Entornos {#environments}
 
 [Los entornos de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/managing-environments.html?lang=es) están compuestos por instancias de AEM Author, AEM Publish y Dispatcher. Los distintos entornos admiten diferentes funciones y se pueden utilizar con diferentes canalizaciones de CD/CI (descritas a continuación). Los entornos de Cloud Manager suelen tener un entorno de producción y un entorno de ensayo.
 
->[!VIDEO](https://video.tv.adobe.com/v/26318?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34623?captions=spa&quality=12&learn=on)
 
 ## Informes {#reports}
 
 [Informes de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/monitoring-environments.html?lang=es) proporcionan una vista de los entornos del programa y de las instancias de AEM a través de un conjunto de gráficos que informan y hacen un seguimiento de varias métricas para cada instancia de AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/26315?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34624?captions=spa&quality=12&learn=on)
 
 ## Canalización de producción de CI/CD {#cicd-production-pipeline}
 
@@ -65,19 +65,19 @@ Para obtener una descripción general completa, consulte la [Guía del usuario d
 
 La configuración de [Canalización de producción de CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/pipelines/production-pipelines.html?lang=es) define el déclencheur que inicia la canalización y los parámetros que controlan la implementación de la producción y los parámetros de prueba de rendimiento.
 
->[!VIDEO](https://video.tv.adobe.com/v/26314?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327603?captions=spa&quality=12&learn=on)
 
 ### Ejecución de canalización
 
 La [canalización de producción de CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=es) se usa para generar e implementar código a través de Stage en el entorno de producción, lo que reduce el tiempo de respuesta al valor.
 
->[!VIDEO](https://video.tv.adobe.com/v/26317?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327610?captions=spa&quality=12&learn=on)
 
 ## Canalizaciones de no producción de CI/CD {#cicd-non-production-pipeline}
 
 [Las canalizaciones de no producción de CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/pipelines/production-pipelines.html?lang=es) se dividen en dos categorías: canalizaciones de calidad de código y canalizaciones de implementación. La calidad del código canaliza todo el código de una rama Git para crearlo y evaluarlo con el análisis de calidad del código de Cloud Manager. Las canalizaciones de implementación admiten la implementación automatizada de código desde el repositorio Git a cualquier entorno que no sea de producción, es decir, cualquier entorno de AEM aprovisionado que no sea de ensayo o producción.
 
->[!VIDEO](https://video.tv.adobe.com/v/26316?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327617?captions=spa&quality=12&learn=on)
 
 ## Actividad {#activity}
 
@@ -85,4 +85,4 @@ Cloud Manager proporciona una vista consolidada de la actividad de un programa, 
 
 Cloud Manager también se integra por usuario con [Notificaciones de Adobe Experience Cloud](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/notifications.html?lang=es), lo que proporciona una vista omnipresente de los eventos y las acciones de interés.
 
->[!VIDEO](https://video.tv.adobe.com/v/26319?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34626?captions=spa&quality=12&learn=on)

@@ -46,7 +46,7 @@ Si no tiene acceso a servicios de terceros, _colabore con su equipo de seguridad
 
 ## Generar certificado SSL
 
->[!VIDEO](https://video.tv.adobe.com/v/3427908?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441477?captions=spa&quality=12&learn=on)
 
 Tiene dos opciones:
 

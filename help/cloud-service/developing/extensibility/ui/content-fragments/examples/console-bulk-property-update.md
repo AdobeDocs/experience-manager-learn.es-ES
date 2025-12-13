@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Extensión de ejemplo de actualización masiva de propiedades
 
->[!VIDEO](https://video.tv.adobe.com/v/3412296?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454452?captions=spa&quality=12&learn=on)
 
 Esta extensión de la consola de fragmentos de contenido de AEM de ejemplo es una extensión de [barra de acciones](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/action-bar) que actualiza de forma masiva una propiedad de fragmentos de contenido a un valor común.
 

@@ -19,4 +19,4 @@ ht-degree: 0%
 
 El siguiente vídeo proporciona información general sobre los conceptos básicos de la administración de varios sitios en AEM Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/33594?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36774?captions=spa&quality=12&learn=on)

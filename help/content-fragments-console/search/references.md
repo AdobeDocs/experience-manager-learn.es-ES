@@ -23,4 +23,4 @@ ht-degree: 2%
 
 Descubra cómo la consola y el editor de fragmentos de contenido de AEM facilitan la comprensión y administración del contenido referenciado.
 
->[!VIDEO](https://video.tv.adobe.com/v/3420950/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3423643/?captions=spa&learn=on)

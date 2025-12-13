@@ -21,4 +21,4 @@ ht-degree: 100%
 
 Información general sobre la aplicación de las funciones de Photoshop y Lightroom con la automatización de contenido de Adobe Experience Manager Assets.
 
->[!VIDEO](https://video.tv.adobe.com/v/333197?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3416628?captions=spa&quality=12&learn=on)

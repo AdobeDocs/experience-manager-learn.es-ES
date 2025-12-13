@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Introducción a los niveles Author y Publish como parte de la arquitectura en Adobe Experience Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/32033?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36911?captions=spa&quality=12&learn=on)

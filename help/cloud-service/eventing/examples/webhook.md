@@ -24,7 +24,7 @@ ht-degree: 1%
 Obtenga información sobre cómo recibir eventos de AEM en un webhook y revisar los detalles del evento, como carga útil, encabezados y metadatos.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3427051?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449751?captions=spa&quality=12&learn=on)
 
 
 >[!IMPORTANT]

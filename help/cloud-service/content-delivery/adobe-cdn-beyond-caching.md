@@ -31,7 +31,7 @@ Más allá del almacenamiento en caché de contenido, Adobe CDN ofrece varias fu
 
 Estas características son **características de autoservicio**. Configurado en el archivo `cdn.yaml` de su proyecto de AEM e implementado mediante la canalización de configuración de Cloud Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/3433104?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3440272?captions=spa&quality=12&learn=on)
 
 ## Configuración del tráfico en la CDN
 

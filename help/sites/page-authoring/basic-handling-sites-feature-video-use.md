@@ -24,7 +24,7 @@ ht-degree: 15%
 
 El siguiente vídeo proporciona información general sobre la administración básica al utilizar el entorno de creación de AEM. Utiliza la consola de Sites como base. 
 
->[!VIDEO](https://video.tv.adobe.com/v/31784?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36996?captions=spa&quality=12&learn=on)
 
 En este vídeo, se tratan las siguientes funciones o características:
 

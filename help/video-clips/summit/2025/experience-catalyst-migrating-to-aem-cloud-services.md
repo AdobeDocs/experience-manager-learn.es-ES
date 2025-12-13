@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Descubra cómo Experience Catalyst aprovecha la IA para migrar un sitio de WordPress a AEM Cloud Services sin esfuerzo.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459228/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3461979/?captions=spa&learn=on&enablevpops)
